@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Frontpage.ec51d0e5917bf640a3fd.js
-// Retrieved at 6/2/2022, 5:10:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Frontpage.c6ae55e8b7324df8ba21.js
+// Retrieved at 6/6/2022, 2:00:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Frontpage"], {
 		"./node_modules/intersection-observer/intersection-observer.js": function(e, t) {
@@ -3173,12 +3173,17 @@
 			e.exports = {
 				scroller: "YfUlQeQY0xbmCv-So3isP",
 				item: "_9GZxo1SLUa-LvmEn4U5Xa",
+				iconContainer: "_1blYXnT3rP64f1wDQoqftL",
+				rings: "_2QdJep1LuwwAxw9Gb5Qajm",
 				subredditIcon: "_1qAfI1NS84Sv0KV8HS4ZMU",
 				plus: "_3XJXX67pIfEYbp5OWAsfc4",
 				details: "i4hFKXk9MEN439yI7iD3U",
 				detailsInnerContainer: "AOLrpHxDhzqO46idwzgfq",
 				roomTitle: "_2ixX--0rHhk0pShklscsT6",
-				participantCount: "_2HCcacJIOCWDbzI3FV1jf5"
+				participantRow: "_2hvzPK71zlbnEi-OAEaCKk",
+				participantCount: "_2HCcacJIOCWDbzI3FV1jf5",
+				userIconContainer: "_1Hqugp2Ai93zj2Vv4u-o_d",
+				userIcon: "_1cCYzFmQVzNnY_MKRLTzyv"
 			}
 		},
 		"./src/reddit/components/LiveBar/index.tsx": function(e, t, s) {
@@ -3187,22 +3192,23 @@
 				n = s.n(a),
 				r = s("./src/config.ts"),
 				c = s("./src/reddit/components/SubredditIcon/index.tsx"),
-				i = s("./src/reddit/components/LiveBar/index.m.less"),
-				o = s.n(i),
-				l = s("./node_modules/fbt/lib/FbtPublic.js"),
-				d = s("./src/lib/classNames/index.ts"),
-				u = s("./src/lib/constants/icons.ts"),
-				m = s("./src/reddit/icons/fonts/index.tsx"),
-				p = s("./src/reddit/components/LiveBar/LiveBarCarousel/index.m.less"),
-				b = s.n(p);
-			var h = e => {
+				i = s("./src/reddit/components/UserIcon/index.tsx"),
+				o = s("./src/reddit/components/LiveBar/index.m.less"),
+				l = s.n(o),
+				d = s("./node_modules/fbt/lib/FbtPublic.js"),
+				u = s("./src/lib/classNames/index.ts"),
+				m = s("./src/lib/constants/icons.ts"),
+				p = s("./src/reddit/icons/fonts/index.tsx"),
+				b = s("./src/reddit/components/LiveBar/LiveBarCarousel/index.m.less"),
+				h = s.n(b);
+			var g = e => {
 				let {
 					children: t
 				} = e;
 				const s = Object(a.createRef)(),
 					[r, c] = Object(a.useState)(null),
 					[i, o] = Object(a.useState)(null),
-					[p, h] = Object(a.useState)(!1),
+					[l, b] = Object(a.useState)(!1),
 					[g, f] = Object(a.useState)(!1);
 				Object(a.useEffect)(() => {
 					const e = s.current;
@@ -3225,7 +3231,7 @@
 						e.removeEventListener("scroll", t)
 					}
 				}, [s]), Object(a.useEffect)(() => {
-					h(Boolean(r)), f(Boolean(i))
+					b(Boolean(r)), f(Boolean(i))
 				}, [r, i]);
 				const _ = Object(a.useCallback)(e => {
 						const t = s.current;
@@ -3239,103 +3245,119 @@
 					v = Object(a.useCallback)(() => _(i), [_, i]),
 					y = Object(a.useCallback)(() => _(r), [_, r]);
 				return n.a.createElement("div", {
-					className: Object(d.a)(b.a.container),
+					className: Object(u.a)(h.a.container),
 					role: "region",
 					"aria-label": "carousel"
 				}, n.a.createElement("div", {
-					className: Object(d.a)(b.a.inner),
+					className: Object(u.a)(h.a.inner),
 					ref: s
 				}, a.Children.map(t, (e, t) => n.a.createElement("div", {
-					className: Object(d.a)(b.a.carouselItem),
+					className: Object(u.a)(h.a.carouselItem),
 					key: t
 				}, e))), n.a.createElement("button", {
-					className: Object(d.a)(b.a.arrowButton, b.a.leftArrow, {
-						[b.a.arrowVisible]: p
+					className: Object(u.a)(h.a.arrowButton, h.a.leftArrow, {
+						[h.a.arrowVisible]: l
 					}),
 					onClick: y,
-					"aria-label": l.fbt._("previous items", null, {
+					"aria-label": d.fbt._("previous items", null, {
 						hk: "44uTrz"
 					})
-				}, n.a.createElement(m.a, {
-					name: u.a.caret_left
+				}, n.a.createElement(p.a, {
+					name: m.a.caret_left
 				})), n.a.createElement("button", {
-					className: Object(d.a)(b.a.arrowButton, b.a.rightArrow, {
-						[b.a.arrowVisible]: g
+					className: Object(u.a)(h.a.arrowButton, h.a.rightArrow, {
+						[h.a.arrowVisible]: g
 					}),
 					onClick: v,
-					"aria-label": l.fbt._("next items", null, {
+					"aria-label": d.fbt._("next items", null, {
 						hk: "4EEfgp"
 					})
-				}, n.a.createElement(m.a, {
-					name: u.a.caret_right
+				}, n.a.createElement(p.a, {
+					name: m.a.caret_right
 				})))
 			};
 			const {
-				fbt: g
+				fbt: f
 			} = s("./node_modules/fbt/lib/FbtPublic.js");
-			var f;
+			var _;
 			! function(e) {
 				e[e.Inside = 0] = "Inside", e[e.Outside = 1] = "Outside"
-			}(f || (f = {}));
+			}(_ || (_ = {}));
 			t.a = e => {
 				let {
 					talks: t
 				} = e;
 				var s;
-				const [i, l] = Object(a.useState)(null === (s = t[0]) || void 0 === s ? void 0 : s.id), d = Object(a.useRef)(f.Outside), u = Object(a.useRef)(void 0), m = () => {
-					d.current = f.Outside, clearTimeout(u.current)
+				const [o, d] = Object(a.useState)(null === (s = t[0]) || void 0 === s ? void 0 : s.id), u = Object(a.useRef)(_.Outside), m = Object(a.useRef)(void 0), p = () => {
+					u.current = _.Outside, clearTimeout(m.current)
 				};
-				Object(a.useEffect)(() => () => clearTimeout(u.current));
-				const p = t.map(e => {
+				Object(a.useEffect)(() => () => clearTimeout(m.current));
+				const b = t.map(e => {
 					let {
 						id: t,
 						audioRoom: s,
 						subreddit: a
 					} = e;
-					var p, b, h, _, v, y;
-					return i === t ? n.a.createElement("a", {
+					var b, h, g, v;
+					const y = null === (b = s.topUsers) || void 0 === b ? void 0 : b.slice(0, 3),
+						E = n.a.createElement("div", {
+							className: l.a.iconContainer
+						}, n.a.createElement("div", {
+							className: l.a.rings
+						}, n.a.createElement(c.b, {
+							className: l.a.subredditIcon,
+							iconUrl: (null === (h = a.styles) || void 0 === h ? void 0 : h.icon) || (null === (v = null === (g = a.styles) || void 0 === g ? void 0 : g.legacyIcon) || void 0 === v ? void 0 : v.url)
+						})));
+					return o === t ? n.a.createElement("a", {
 						key: `talk--${s.roomId}`,
 						target: "_blank",
 						rel: "noopener noreferrer",
 						href: `${r.a.redditUrl}/talk/${s.roomId}`,
-						className: o.a.details
-					}, n.a.createElement(c.b, {
-						className: o.a.subredditIcon,
-						iconUrl: (null === (p = a.styles) || void 0 === p ? void 0 : p.icon) || (null === (h = null === (b = a.styles) || void 0 === b ? void 0 : b.legacyIcon) || void 0 === h ? void 0 : h.url)
-					}), n.a.createElement("div", {
-						className: o.a.detailsInnerContainer
+						className: l.a.details
+					}, E, n.a.createElement("div", {
+						className: l.a.detailsInnerContainer
 					}, n.a.createElement("p", {
-						className: o.a.roomTitle
-					}, s.roomTitle), n.a.createElement("p", {
-						className: o.a.participantCount
-					}, g._("{participantCount} in {subredditName}", [g._param("participantCount", s.participantCount), g._param("subredditName", a.name)], {
+						className: l.a.roomTitle
+					}, s.roomTitle), n.a.createElement("div", {
+						className: l.a.participantRow
+					}, y.map((e, t) => {
+						var s;
+						return n.a.createElement("div", {
+							key: `topuser--${t}`,
+							className: l.a.userIconContainer
+						}, n.a.createElement(i.a, {
+							userName: "",
+							iconUrl: (null === (s = e.icon) || void 0 === s ? void 0 : s.url) || "",
+							className: l.a.userIcon,
+							isNSFW: !1
+						}))
+					}), n.a.createElement("p", {
+						className: l.a.participantCount
+					}, f._("{participantCount} in {subredditName}", [f._param("participantCount", s.participantCount), f._param("subredditName", a.name)], {
 						hk: "2pp9CZ"
-					})))) : n.a.createElement("button", {
+					}))))) : n.a.createElement("button", {
 						key: `talk--${s.roomId}`,
 						onClick: () => (e => {
-							l(e)
+							d(e)
 						})(t),
-						className: o.a.circle,
+						className: l.a.circle,
 						onMouseEnter: () => {
 							(e => {
-								d.current = f.Inside;
+								u.current = _.Inside;
 								const t = window.setTimeout(() => {
-									d.current === f.Inside && e && l(e)
+									u.current === _.Inside && e && d(e)
 								}, 750);
-								u.current = t
+								m.current = t
 							})(t)
 						},
-						onMouseLeave: m
-					}, n.a.createElement(c.b, {
-						className: o.a.subredditIcon,
-						iconUrl: (null === (_ = a.styles) || void 0 === _ ? void 0 : _.icon) || (null === (y = null === (v = a.styles) || void 0 === v ? void 0 : v.legacyIcon) || void 0 === y ? void 0 : y.url)
-					}))
+						onMouseLeave: p
+					}, E)
 				});
-				return t.length > 0 && i ? n.a.createElement("div", {
-					className: o.a.outer
+				return t.length > 0 && o ? n.a.createElement("div", {
+					className: l.a.outer
 				}, n.a.createElement("div", {
-					className: o.a.scroller
-				}, n.a.createElement(h, null, p))) : null
+					className: l.a.scroller
+				}, n.a.createElement(g, null, b))) : null
 			}
 		},
 		"./src/reddit/components/MiniPost/index.m.less": function(e, t, s) {
@@ -7895,7 +7917,7 @@
 				}
 		},
 		"./src/redditGQL/operations/Frontpage.json": function(e) {
-			e.exports = JSON.parse('{"id":"17b8a761442c"}')
+			e.exports = JSON.parse('{"id":"3a00428dcf19"}')
 		},
 		"./src/redditGQL/operations/GetNearbySubreddits.json": function(e) {
 			e.exports = JSON.parse('{"id":"aff6d12aa0c2"}')
@@ -7905,4 +7927,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Frontpage.ec51d0e5917bf640a3fd.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Frontpage.c6ae55e8b7324df8ba21.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/runtime~Reddit.ad56b410281899d96e4f.js
-// Retrieved at 6/6/2022, 1:30:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/runtime~Reddit.b1a0ffebd4d23044219a.js
+// Retrieved at 6/6/2022, 2:00:04 PM by Reddit Dataminer v1.0.0
 ! function(e) {
 	function o(o) {
 		for (var a, n, r = o[0], s = o[1], c = o[2], l = 0, P = []; l < r.length; l++) n = r[l], Object.prototype.hasOwnProperty.call(d, n) && d[n] && P.push(d[n][0]), d[n] = 0;
@@ -713,7 +713,7 @@
 					PostDraft: "de92ff15b557ca793695",
 					ProfileSnoobuilder: "b59a7d2c0ffcc2abc9d5",
 					"Frontpage~ModListing~Subreddit": "1dcb331f0f950474769c",
-					Frontpage: "aa7888ae062ca55d5282",
+					Frontpage: "47124a0370bb59b90ca7",
 					Topic: "a05b4a57def60878e450",
 					CommunityAwards: "31d6cfe0d16ae931b73c",
 					CommunityPointsLearnMore: "4e09b461924aa8fe1b6c",
@@ -1362,7 +1362,7 @@
 						"reddit-components-Governance-TransactionModals-ConvertToCoinsModal": "bb290a7a66f07680f432",
 						"vendors~RealtimeGQLSubscriptionAsync": "3d46ab9136aace60953b",
 						RealtimeGQLSubscriptionAsync: "226119a9ae841bb563eb",
-						OnboardingModal: "b4fdf06ec0d81058bfeb",
+						OnboardingModal: "cd5ae3f27152d16e87a7",
 						AchievementsActions: "08e5ef3760730eda67a2",
 						Acknowledgements: "d11ad709b1b01d27180c",
 						Appeal: "c93f68e1677d468a5064",
@@ -1411,7 +1411,7 @@
 						PostDraft: "9d613f6e3fc9f9cbb299",
 						ProfileSnoobuilder: "e6848a3619fcd69bd190",
 						"Frontpage~ModListing~Subreddit": "3ecdd3c70bb4f84a1ead",
-						Frontpage: "ec51d0e5917bf640a3fd",
+						Frontpage: "c6ae55e8b7324df8ba21",
 						Topic: "de8464ecf4e46d42f08e",
 						CommunityAwards: "c7c259d49a34d596ab5d",
 						CommunityPointsLearnMore: "481fc5aa2006a36c6439",
@@ -1746,4 +1746,4 @@
 	var m = c;
 	t()
 }([]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/runtime~Reddit.ad56b410281899d96e4f.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/runtime~Reddit.b1a0ffebd4d23044219a.js.map
