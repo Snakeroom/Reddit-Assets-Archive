@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModerationPages.00492a34bcba2ffff342.js
-// Retrieved at 6/6/2022, 3:30:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModerationPages.834907c793b1bb078773.js
+// Retrieved at 6/6/2022, 5:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModerationPages"], {
 		"./node_modules/lodash/_arrayAggregator.js": function(e, t) {
@@ -6880,7 +6880,7 @@
 						sendEvent: Ie,
 						shouldShowGalleryTileOption: we,
 						showPromotedCTA: Me
-					} = this.props, Re = !!he.media && he.media.type === f.o.RTJSON, Ae = fe && Re, Fe = Object(Q.b)(he.id, y), De = Object(pe.a)(X), Le = Object(me.a)(X), Ue = Object(ue.a)(X), Be = `-mod-actions-menu-${he.id}`, He = `voting-arrows-${he.id}`, We = !!a && Object(x.e)(a) === he.author, ze = Object(B.a)(he), Ve = Object(W.c)(he), qe = Object(F.a)("View--Reports", he.id, Ne), Ge = Object(W.a)(he), Ke = !(y || E || v), Qe = he.media && he.media.type === f.o.LIVEVIDEO, Ye = e => Ie(Object(g.h)(he.id, e)), Xe = Object(l.t)(he, m), {
+					} = this.props, Re = !!he.media && he.media.type === f.o.RTJSON, Ae = fe && Re, Fe = Object(Q.b)(he.id, y), De = Object(pe.a)(X), Le = Object(me.a)(X), Ue = Object(ue.a)(X), Be = `-mod-actions-menu-${he.id}`, He = `voting-arrows-${he.id}`, We = !!a && Object(x.e)(a) === he.author, ze = Object(B.a)(he), Ve = Object(W.c)(he), qe = Object(F.a)("View--Reports", he.id, Ne), Ge = Object(W.a)(he), Ke = !(y || E || v), Qe = he.media && he.media.type === f.o.LIVEVIDEO, Ye = e => Ie(Object(g.k)(he.id, e)), Xe = Object(l.t)(he, m), {
 						source: Ze
 					} = Xe, Je = o.a.createElement(K.a, {
 						className: Object(c.a)(Ce.a.compactPostStyles, ye.a.postContainer, Object(h.a)(this.props), t),
@@ -23452,4 +23452,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.00492a34bcba2ffff342.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.834907c793b1bb078773.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfilePrivate.a221e0762c9814f2e83e.js
-// Retrieved at 6/6/2022, 2:30:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfilePrivate.bb372cfdc18b6d486d70.js
+// Retrieved at 6/6/2022, 5:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfilePrivate"], {
 		"./src/reddit/actions/pages/profilePrivate/index.ts": function(e, t, s) {
@@ -4279,7 +4279,7 @@
 				...e,
 				...t,
 				...s,
-				postClickEventFactory: (e, t) => Object(j.h)(e, t)
+				postClickEventFactory: (e, t) => Object(j.k)(e, t)
 			}));
 			var H = s("./src/reddit/featureFlags/index.ts"),
 				K = s("./src/reddit/actions/pages/profilePrivate/constants.ts"),
@@ -4364,7 +4364,7 @@
 					...e,
 					...t,
 					...s,
-					postClickEventFactory: (e, t) => Object(j.h)(e, t)
+					postClickEventFactory: (e, t) => Object(j.k)(e, t)
 				})),
 				oe = Object(i.b)(ee, e => ({
 					...te(e),
@@ -4375,7 +4375,7 @@
 					...e,
 					...t,
 					...s,
-					postClickEventFactory: (e, t) => Object(j.h)(e, t),
+					postClickEventFactory: (e, t) => Object(j.k)(e, t),
 					postComponentForLayout: g.b
 				}));
 			var ne = s("./src/reddit/helpers/makeProfileListingKey/index.ts"),
@@ -4494,4 +4494,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfilePrivate.a221e0762c9814f2e83e.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfilePrivate.bb372cfdc18b6d486d70.js.map

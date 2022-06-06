@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage.abcd3ef3e3a8fced56ec.js
-// Retrieved at 6/6/2022, 2:30:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage.e5e295606f6b4f046bac.js
+// Retrieved at 6/6/2022, 5:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage", "CommentsPage"], {
 		"./node_modules/lodash/_baseDelay.js": function(e, t) {
@@ -5877,7 +5877,7 @@
 					})
 				}), x && g && o.a.createElement(d.a, {
 					className: h.a.subscribeButton,
-					getEventFactory: e => Object(m.h)(s.id, e ? "unsubscribe" : "subscribe"),
+					getEventFactory: e => Object(m.k)(s.id, e ? "unsubscribe" : "subscribe"),
 					identifier: {
 						name: g.name,
 						type: Object(u.i)(g) ? l.a.PROFILE : l.a.SUBREDDIT
@@ -7177,7 +7177,7 @@
 					Jt = De.removedByCategory && De.removedByCategory !== F.g.Reddit || zt,
 					Xt = !Jt && !De.isArchived,
 					Zt = Object(r.useCallback)(() => {
-						he(A ? F.f.UNFOLLOWED : F.f.FOLLOWED), ze(A ? Object(j.n)(De.id) : Object(j.c)(De.id))
+						he(A ? F.f.UNFOLLOWED : F.f.FOLLOWED), ze(A ? Object(j.q)(De.id) : Object(j.c)(De.id))
 					}, [he, ze, A, De.id]),
 					$t = i.a.createElement(It, {
 						post: De,
@@ -7502,7 +7502,7 @@
 					isTypingIndicatorsReadLoadTest: J,
 					postId: De.id
 				}), !ot && es)));
-				const rs = Object(r.useCallback)((e, t) => Object(j.h)(e, t), []);
+				const rs = Object(r.useCallback)((e, t) => Object(j.k)(e, t), []);
 				return i.a.createElement(ue.a, {
 					className: Object(p.a)(s, jt.a.postContainer, {
 						[jt.a.hasEventMeta]: Object(Le.a)(De)
@@ -7909,7 +7909,7 @@
 					tooltipType: R ? p.c.Lightbox : void 0
 				})), W && Q && V && B && !T && r.a.createElement(h.a, {
 					className: k.a.SubscribeButton,
-					getEventFactory: e => Object(C.h)(A.id, e ? "unsubscribe" : "subscribe", "post", F, I),
+					getEventFactory: e => Object(C.k)(A.id, e ? "unsubscribe" : "subscribe", "post", F, I),
 					identifier: {
 						name: W.name,
 						type: Y ? x.a.PROFILE : x.a.SUBREDDIT
@@ -8620,18 +8620,68 @@
 				i = s("./node_modules/react-redux/es/index.js"),
 				a = s("./node_modules/reselect/es/index.js"),
 				d = s("./src/lib/makeLinkedPostsListingKey/index.ts"),
-				c = s("./src/reddit/components/Widgets/ThemedWidget/index.tsx"),
-				l = s("./src/reddit/selectors/posts.ts"),
-				m = s("./src/lib/isUrl/index.ts"),
-				p = s("./src/lib/prettyPrintNumber/index.ts"),
-				u = s("./src/lib/timeAgo/index.ts"),
-				b = s("./src/lib/truncateText/index.ts"),
-				h = s("./src/reddit/components/SubredditIcon/index.tsx"),
-				x = s("./src/reddit/icons/fonts/Comment/index.tsx"),
-				g = s("./src/reddit/icons/fonts/Upvote/index.tsx"),
-				f = s("./src/reddit/components/Widgets/Recommendations/index.m.less"),
-				C = s.n(f);
-			var v = Object(i.b)((e, t) => {
+				c = s("./src/reddit/components/TrackingHelper/index.tsx"),
+				l = s("./src/reddit/components/Widgets/ThemedWidget/index.tsx"),
+				m = s("./src/reddit/selectors/telemetry.ts");
+			const p = e => ({
+					...m.n(e),
+					source: "global",
+					noun: "discovery_unit",
+					action: "view"
+				}),
+				u = e => ({
+					...m.n(e),
+					source: "post",
+					noun: "upvote",
+					action: "click"
+				}),
+				b = e => ({
+					...m.n(e),
+					source: "post",
+					noun: "comments",
+					action: "click"
+				});
+			var h = s("./src/reddit/selectors/posts.ts"),
+				x = s("./node_modules/lodash/once.js"),
+				g = s.n(x),
+				f = s("./src/lib/isUrl/index.ts"),
+				C = s("./src/lib/prettyPrintNumber/index.ts"),
+				v = s("./src/lib/timeAgo/index.ts"),
+				O = s("./src/lib/truncateText/index.ts"),
+				E = s("./src/reddit/components/SubredditIcon/index.tsx"),
+				y = s("./src/reddit/helpers/trackers/post.ts"),
+				j = s("./src/reddit/icons/fonts/Comment/index.tsx"),
+				k = s("./src/reddit/icons/fonts/Upvote/index.tsx"),
+				P = s("./src/reddit/components/Widgets/Recommendations/index.m.less"),
+				I = s.n(P);
+			const _ = 2e3;
+			class w {
+				constructor(e, t) {
+					this.intersectingRatio = -1, this.consumed = !1, this.maybeConsume = () => {
+						this.clearConsumeTimeout(), this.isConsuming() && (this.onConsume(), this.consumed = !0, this.disconnect())
+					}, this.handleIntersectionEvent = e => {
+						this.intersectingRatio = e[0].intersectionRatio, this.isViewing() && this.onView(), !this.isConsuming() || this.consumed || this.consumeTimeoutId || (this.consumeTimeoutId = setTimeout(this.maybeConsume, _))
+					}, this.onConsume = g()(t), this.onView = g()(e), this.observer = new IntersectionObserver(this.handleIntersectionEvent, {
+						threshold: [0, 1]
+					})
+				}
+				isConsuming() {
+					return this.intersectingRatio >= 1
+				}
+				isViewing() {
+					return this.intersectingRatio > 0
+				}
+				clearConsumeTimeout() {
+					this.consumeTimeoutId && (clearTimeout(this.consumeTimeoutId), this.consumeTimeoutId = void 0)
+				}
+				connect(e) {
+					this.observer.observe(e)
+				}
+				disconnect() {
+					this.clearConsumeTimeout(), this.observer.disconnect()
+				}
+			}
+			var S = Object(i.b)((e, t) => {
 					const {
 						post: s
 					} = t;
@@ -8639,78 +8689,104 @@
 						subreddit: e.subreddits.models[s.belongsTo.id],
 						post: s
 					}
-				})(e => {
-					const {
-						post: t,
-						subreddit: s
-					} = e, {
-						created: n,
-						numComments: o,
-						thumbnail: i,
-						upvoteRatio: a
-					} = t, d = a ? `${Math.round(100*a)}%` : "";
+				})(Object(c.c)(e => {
+					const t = Object(o.useRef)(null),
+						s = Object(o.useRef)(null),
+						{
+							post: n,
+							sendEvent: i,
+							subreddit: a
+						} = e;
+					Object(o.useEffect)(() => {
+						var e;
+						null === (e = s.current) || void 0 === e || e.disconnect(), s.current = new w(() => {
+							i(Object(y.g)(n.id))
+						}, () => {
+							i(Object(y.d)(n.id, _))
+						}), s.current.connect(t.current)
+					}, [n, i]);
+					const d = Object(o.useCallback)(() => {
+							i(Object(y.e)(n.id, "post"))
+						}, [n, i]),
+						c = Object(o.useCallback)(() => {
+							i(u)
+						}, [i]),
+						l = Object(o.useCallback)(() => {
+							i(b)
+						}, [i]),
+						{
+							created: m,
+							numComments: p,
+							thumbnail: h,
+							upvoteRatio: x
+						} = n,
+						g = x ? `${Math.round(100*x)}%` : "";
 					return r.a.createElement("li", {
-						className: C.a.postPreview
+						className: I.a.postPreview,
+						ref: t,
+						onClick: d
 					}, r.a.createElement("a", {
-						href: t.permalink
-					}, i && Object(m.a)(i.url) && r.a.createElement("img", {
-						className: C.a.thumbnail,
-						src: t.thumbnail.url
+						href: n.permalink
+					}, h && Object(f.a)(h.url) && r.a.createElement("img", {
+						className: I.a.thumbnail,
+						src: n.thumbnail.url
 					}), r.a.createElement("div", {
-						className: C.a.subredditTitle
-					}, r.a.createElement(h.b, {
-						className: C.a.subredditIcon,
-						subredditOrProfile: s
+						className: I.a.subredditTitle
+					}, r.a.createElement(E.b, {
+						className: I.a.subredditIcon,
+						subredditOrProfile: a
 					}), r.a.createElement("span", {
-						className: C.a.subredditName
-					}, e.subreddit && `r/${s.name}`)), r.a.createElement("div", {
-						className: C.a.postTitle
-					}, Object(b.a)(e.post.title, 80, "...")), r.a.createElement("div", {
-						className: C.a.postMeta
+						className: I.a.subredditName
+					}, a && `r/${a.name}`)), r.a.createElement("div", {
+						className: I.a.postTitle
+					}, Object(O.a)(n.title, 80, "...")), r.a.createElement("div", {
+						className: I.a.postMeta
 					}, r.a.createElement("div", {
-						className: C.a.metaSection
-					}, r.a.createElement(g.a, {
-						className: C.a.icon
-					}), r.a.createElement("span", null, d)), r.a.createElement("div", {
-						className: C.a.metaSection
-					}, r.a.createElement(x.a, {
-						className: C.a.icon
+						className: I.a.metaSection,
+						onClick: c
+					}, r.a.createElement(k.a, {
+						className: I.a.icon
+					}), r.a.createElement("span", null, g)), r.a.createElement("div", {
+						className: I.a.metaSection,
+						onClick: l
+					}, r.a.createElement(j.a, {
+						className: I.a.icon
 					}), r.a.createElement("span", {
-						className: C.a.meta
-					}, Object(p.b)(o))), r.a.createElement("div", {
-						className: C.a.metaSection
-					}, r.a.createElement("span", null, Object(u.a)(n / 1e3, !0))))))
-				}),
-				O = s("./src/lib/classNames/index.ts");
-			var E = e => r.a.createElement("div", {
-				className: Object(O.a)(C.a.placeholderWrapper)
+						className: I.a.meta
+					}, Object(C.b)(p))), r.a.createElement("div", {
+						className: I.a.metaSection
+					}, r.a.createElement("span", null, Object(v.a)(m / 1e3, !0))))))
+				})),
+				N = s("./src/lib/classNames/index.ts");
+			var T = e => r.a.createElement("div", {
+				className: Object(N.a)(I.a.placeholderWrapper)
 			}, r.a.createElement("div", {
-				className: C.a.header
+				className: I.a.header
 			}, r.a.createElement("span", {
-				className: C.a.subredditIconLoading
+				className: I.a.subredditIconLoading
 			}), r.a.createElement("span", {
-				className: C.a.subredditNameLoading
+				className: I.a.subredditNameLoading
 			})), r.a.createElement("div", {
-				className: C.a.postTitleLoading
+				className: I.a.postTitleLoading
 			}), r.a.createElement("div", {
-				className: C.a.postMetaSectionLoading
+				className: I.a.postMetaSectionLoading
 			}));
-			const y = () => n.fbt._("Similar to this post", null, {
+			const L = () => n.fbt._("Similar to this post", null, {
 					hk: "XKYGj"
 				}),
-				j = [];
-			for (let _ = 0; _ < 15; _++) j.push(r.a.createElement(E, {
-				key: _
+				R = [];
+			for (let B = 0; B < 15; B++) R.push(r.a.createElement(T, {
+				key: B
 			}));
-			const k = (e, t) => {
+			const M = (e, t) => {
 					const {
 						post: s
 					} = t;
 					return Object(d.a)(s.id, !s.isEligibleForLinkedPosts)
 				},
-				P = Object(a.a)(k, (e, t) => {
-					const s = k(0, t);
-					return Object(l.z)(e, {
+				F = Object(a.a)(M, (e, t) => {
+					const s = M(0, t);
+					return Object(h.z)(e, {
 						listingKey: s
 					})
 				}, e => e.posts.models, (e, t, s) => {
@@ -8726,20 +8802,23 @@
 						posts: n
 					}
 				});
-			class I extends r.a.Component {
+			class A extends r.a.Component {
+				componentDidMount() {
+					this.props.sendEvent(p)
+				}
 				render() {
 					const {
 						posts: e
-					} = this.props, t = this.props.posts && this.props.posts.length ? e.map((e, t) => r.a.createElement(v, {
+					} = this.props, t = this.props.posts && this.props.posts.length ? e.map((e, t) => r.a.createElement(S, {
 						post: e,
 						key: t
-					})) : j;
-					return r.a.createElement(c.a, {
-						title: y()
+					})) : R;
+					return r.a.createElement(l.a, {
+						title: L()
 					}, r.a.createElement("ul", null, t))
 				}
 			}
-			t.a = Object(i.b)(P)(I)
+			t.a = Object(i.b)(F)(Object(c.c)(A))
 		},
 		"./src/reddit/components/Widgets/ReredditLink/ImageBlock/index.m.less": function(e, t, s) {
 			e.exports = {
@@ -9044,7 +9123,7 @@
 						hostPostData: r,
 						listingBelowVariant: i
 					} = n;
-					return Object(h.h)(e, t, "post", o, r, i, void 0)
+					return Object(h.k)(e, t, "post", o, r, i, void 0)
 				},
 				S = Object(n.b)(P, I, (e, t, s) => ({
 					...e,
@@ -9916,7 +9995,7 @@
 					"data-testid": "view_all_comments_link",
 					isOverlay: y,
 					to: Object(p.b)(I),
-					onClick: () => f(Object(h.i)(j, i, s))
+					onClick: () => f(Object(h.l)(j, i, s))
 				}, O._("View all comments", null, {
 					hk: "3I5IX9"
 				})), i && null !== i.parentId && o.a.createElement(l.a, {
@@ -11586,4 +11665,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage.abcd3ef3e3a8fced56ec.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage.e5e295606f6b4f046bac.js.map

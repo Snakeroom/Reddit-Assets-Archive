@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~CountryPage~Frontpage~GovernanceReleaseNotesModal~ModListing~Mod~adaf0b02.882e55f4652799339054.js
-// Retrieved at 5/31/2022, 11:30:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~CountryPage~Frontpage~GovernanceReleaseNotesModal~ModListing~Mod~adaf0b02.80300d28c37c8824cb5f.js
+// Retrieved at 6/6/2022, 5:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~CountryPage~Frontpage~GovernanceReleaseNotesModal~ModListing~Mod~adaf0b02"], {
 		"./src/lib/intersectionObserver/index.ts": function(e, t, s) {
@@ -728,7 +728,7 @@
 						}
 					}, [o, l, u, d]);
 					const C = Object(h.useCallback)(() => {
-							a.current = !0, c(x.a.ThankYouView), r(Object(L.j)(u))
+							a.current = !0, c(x.a.ThankYouView), r(Object(L.m)(u))
 						}, [u, r, c]),
 						v = Object(h.useCallback)(() => {
 							H({
@@ -746,7 +746,7 @@
 								setRecommendationFooterView: c,
 								similar: !0,
 								subredditId: b
-							}), a.current = !0, r(Object(L.m)(u)))
+							}), a.current = !0, r(Object(L.p)(u)))
 						}, [o, t, u, b, r, c]);
 					return d && d !== x.a.None ? m.a.createElement("div", {
 						className: Object(g.a)(N.a.Footer, {
@@ -1172,7 +1172,7 @@
 						for (; s < b.length;) {
 							const i = b[s++],
 								n = p[i];
-							t >= u && !n.belongsTo || "subreddit" !== n.belongsTo.type ? e.push(i) : t < u && "subreddit" === n.belongsTo.type ? t += 1 : e.push(i)
+							t < u ? "subreddit" === n.belongsTo.type && (t += 1) : e.push(i)
 						}
 						b = e
 					}
@@ -2204,4 +2204,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~CountryPage~Frontpage~GovernanceReleaseNotesModal~ModListing~Mod~adaf0b02.882e55f4652799339054.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~CountryPage~Frontpage~GovernanceReleaseNotesModal~ModListing~Mod~adaf0b02.80300d28c37c8824cb5f.js.map
