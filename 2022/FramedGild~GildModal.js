@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/FramedGild~GildModal.32450da71fe3c5c848c0.js
-// Retrieved at 6/6/2022, 2:30:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/FramedGild~GildModal.4d12256b853fdf230fb0.js
+// Retrieved at 6/6/2022, 7:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["FramedGild~GildModal", "gildActions"], {
 		"./node_modules/@stripe/react-stripe-js/dist/react-stripe.umd.js": function(e, t, r) {
@@ -942,10 +942,10 @@
 				W = r("./src/telemetry/index.ts"),
 				V = r("./src/reddit/endpoints/profile/info.ts"),
 				q = r("./src/reddit/actions/gold/awardKarma.ts"),
-				K = r("./src/reddit/actions/gold/constants.ts"),
-				z = r("./src/reddit/actions/gold/econPurchase.ts");
-			const J = Object(s.a)(K.r),
-				Y = Object(s.a)(K.v),
+				z = r("./src/reddit/actions/gold/constants.ts"),
+				K = r("./src/reddit/actions/gold/econPurchase.ts");
+			const J = Object(s.a)(z.r),
+				Y = Object(s.a)(z.v),
 				X = (e, t) => async (r, s, a) => {
 					let {
 						gqlContext: o
@@ -1015,17 +1015,17 @@
 					} finally {
 						Object(F.b)(F.a.GildingFlow)
 					}
-				}, Q = Object(s.a)(K.u), Z = Object(s.a)(K.q), $ = () => async (e, t) => {
+				}, Q = Object(s.a)(z.u), Z = Object(s.a)(z.q), $ = () => async (e, t) => {
 					e(Z()), window.setTimeout(() => {
 						t().gild.api.pending && e(Q())
 					}, 2e3)
-				}, ee = Object(s.a)(K.p), te = e => async (t, r) => {
+				}, ee = Object(s.a)(z.p), te = e => async (t, r) => {
 					await t(ee(e)), t(Object(l.f)({
 						kind: j.b.Error,
 						duration: l.a,
 						text: e
 					}))
-				}, re = Object(s.a)(K.s), ne = (e, t) => {
+				}, re = Object(s.a)(z.s), ne = (e, t) => {
 					const {
 						id: r
 					} = t, n = Object(U.a)(r) ? Object(P.G)(e, {
@@ -1149,7 +1149,7 @@
 					});
 					if (R && Object(C.a)(s, {
 							subredditId: R.id
-						}) && t(Object(z.a)(R.id, R.name, {
+						}) && t(Object(K.a)(R.id, R.name, {
 							force: !0
 						})), 0 === T && R) {
 						t(Object(o.a)(R.id, m, void 0, !0));
@@ -2038,12 +2038,12 @@
 				W = r("./src/lib/loadWithRetries/index.ts"),
 				V = r("./src/reddit/helpers/loadThirdPartyScript.ts");
 			const q = () => Object(W.a)(() => Promise.all([r.e("PennyPurchaseModal").then(r.bind(null, "./src/reddit/components/PennyPurchaseModal/index.tsx")), Object(V.d)().catch(() => {})])).then(e => e[0].default);
-			var K = Object(H.a)({
+			var z = Object(H.a)({
 					getComponent: q,
 					ErrorComponent: () => null,
 					LoadingComponent: () => null
 				}),
-				z = r("./src/reddit/components/TrackingHelper/index.tsx"),
+				K = r("./src/reddit/components/TrackingHelper/index.tsx"),
 				J = r("./src/reddit/components/GildModalContent/AwardDetailsPane/index.m.less"),
 				Y = r.n(J),
 				X = r("./src/reddit/helpers/awards/message.ts"),
@@ -2701,7 +2701,7 @@
 					userCoins: n
 				} = e;
 				const o = Object(Fe.a)(),
-					i = Object(z.b)(),
+					i = Object(K.b)(),
 					c = Object(a.e)(e => !n && Boolean(Object(M.h)(e)) && Object(Ue.o)(e)),
 					d = c ? He._("Get free Coins with Premium", null, {
 						hk: "3fzsqq"
@@ -2723,8 +2723,8 @@
 			};
 			const Ve = (e, t) => e.length > h.l.length && !e.find(e => e.award.id === t.id);
 			var qe = r("./src/reddit/components/GildModalContent/index.m.less"),
-				Ke = r.n(qe);
-			const ze = (e, t) => {
+				ze = r.n(qe);
+			const Ke = (e, t) => {
 					let {
 						thingId: r,
 						subredditId: n
@@ -2749,7 +2749,7 @@
 							thingId: r,
 							subredditId: n
 						} = t;
-						const s = ze(e, {
+						const s = Ke(e, {
 								thingId: r,
 								subredditId: n
 							}),
@@ -2764,7 +2764,7 @@
 							thingId: r,
 							subredditId: n
 						} = t;
-						const s = ze(e, {
+						const s = Ke(e, {
 								thingId: r,
 								subredditId: n
 							}),
@@ -2862,7 +2862,7 @@
 					},
 					userCoins: (e, t) => {
 						const r = Object(F.e)(e),
-							n = ze(e, t);
+							n = Ke(e, t);
 						return r + Object(T.a)(e, {
 							subredditId: n
 						})
@@ -3018,7 +3018,7 @@
 						showPurchaseModalInThisInstance: _
 					} = this.state, C = O && _, k = C && !f.pennyPrice, P = C && !!f.pennyPrice, N = (k || P) && !d;
 					if (k && N) return null;
-					if (P && N) return s.a.createElement(K, null);
+					if (P && N) return s.a.createElement(z, null);
 					const S = v ? v.name : j,
 						A = !(!o || !o.isGold),
 						T = {
@@ -3032,13 +3032,13 @@
 							thingId: y
 						};
 					return s.a.createElement("div", {
-						className: Object(c.a)(n, Ke.a.gildModalContent)
+						className: Object(c.a)(n, ze.a.gildModalContent)
 					}, s.a.createElement(We, {
 						onCancel: a,
 						thingId: y,
 						userCoins: E
 					}), s.a.createElement("div", {
-						className: Ke.a.modalMainContent
+						className: ze.a.modalMainContent
 					}, s.a.createElement(Te, {
 						awardIcons: t,
 						awardTotals: e,
@@ -3064,7 +3064,7 @@
 						gildButtonProps: T,
 						subredditName: S,
 						subredditCoins: x
-					})), P && s.a.createElement(K, null))
+					})), P && s.a.createElement(z, null))
 				}
 			}
 			t.a = Object(a.b)(Je, (e, t) => {
@@ -3107,7 +3107,7 @@
 					subredditLockedCoinsRequested: (t, r) => e(Object(v.a)(t, r)),
 					updateMessage: t => e(Object(x.updateMessage)(t))
 				}
-			})(Object(z.c)(Ye))
+			})(Object(K.c)(Ye))
 		},
 		"./src/reddit/components/Gold/AwardKarmaToastMessage/index.m.less": function(e, t, r) {
 			e.exports = {
@@ -4797,12 +4797,12 @@
 						rtJsonElementProps: o
 					});
 					switch (a) {
-						case h.yf.SmIcon:
+						case h.zf.SmIcon:
 							return s.a.createElement(p, {
 								subredditName: n,
 								rtJsonElementProps: o
 							});
-						case h.yf.SmIconHc:
+						case h.zf.SmIconHc:
 							return s.a.createElement(p, {
 								subredditName: n,
 								isHoverable: !0,
@@ -5909,12 +5909,12 @@
 				c = e => {
 					return Object(a.c)(e, {
 						experimentEligibilitySelector: i,
-						experimentName: n.rf
+						experimentName: n.sf
 					}) || ""
 				},
 				d = e => {
 					const t = c(e);
-					return t === n.yf.SmIcon || t === n.yf.SmIconHc
+					return t === n.zf.SmIcon || t === n.zf.SmIconHc
 				},
 				l = (e, t) => {
 					let {
@@ -5952,4 +5952,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/FramedGild~GildModal.32450da71fe3c5c848c0.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/FramedGild~GildModal.4d12256b853fdf230fb0.js.map
