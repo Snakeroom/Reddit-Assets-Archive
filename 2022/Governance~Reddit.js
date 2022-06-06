@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~Reddit.815f4cd5c6d4987165b7.js
-// Retrieved at 6/6/2022, 3:30:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~Reddit.2143f1e6cd090ac7240d.js
+// Retrieved at 6/6/2022, 6:40:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~Reddit"], {
 		"./assets/fonts/NotoMono/font.less": function(e, t, n) {},
@@ -4997,7 +4997,7 @@
 						searchQuery: f.searchQuery,
 						structureType: I.c.Recent
 					};
-					k(Object(E.y)(E.a.RECENT, e, T, T, f))
+					k(Object(E.x)(E.a.RECENT, e, T, T, f))
 				}, []);
 				const M = e => e.subredditOrProfileRestrictedName ? `${e.subredditOrProfileRestrictedName} ${e.searchQuery}` : e.searchQuery,
 					{
@@ -5197,7 +5197,7 @@
 						searchQuery: a.searchQuery,
 						structureType: I.c.Search
 					};
-					w(Object(E.y)(E.a.TYPEAHEAD, e, o, S, a))
+					w(Object(E.x)(E.a.TYPEAHEAD, e, o, S, a))
 				}, []);
 				return s.a.createElement(i.a, {
 					"aria-label": a.searchQuery,
@@ -26053,4 +26053,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit.815f4cd5c6d4987165b7.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit.2143f1e6cd090ac7240d.js.map
