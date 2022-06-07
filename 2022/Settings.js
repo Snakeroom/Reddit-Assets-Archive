@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Settings.0a3a96f46f35846ae3de.js
-// Retrieved at 6/7/2022, 10:10:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Settings.15e88401e6879bec0ada.js
+// Retrieved at 6/7/2022, 11:00:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Settings"], {
 		"./node_modules/moment/locale sync recursive ^\\.\\/.*$": function(e, t, n) {
@@ -6002,7 +6002,7 @@
 		"./src/reddit/components/Settings/PremiumForm.tsx": function(e, t, n) {
 			"use strict";
 			n.d(t, "a", (function() {
-				return we
+				return Oe
 			}));
 			var s = n("./node_modules/fbt/lib/FbtPublic.js"),
 				r = n("./node_modules/moment/moment.js"),
@@ -6374,28 +6374,26 @@
 				ye = n("./src/reddit/models/Toast/index.ts"),
 				xe = n("./src/reddit/pages/Premium/PremiumButtons/index.tsx"),
 				Ce = n("./src/reddit/selectors/activeModalId.ts"),
-				je = n("./src/reddit/selectors/experiments/econ/index.ts"),
-				ke = n("./src/reddit/selectors/user.ts"),
-				Ee = n("./src/reddit/components/Settings/index.m.less"),
-				Oe = n.n(Ee);
-			const we = "update_card_modal_id",
-				Se = Object(k.c)({
+				je = n("./src/reddit/selectors/user.ts"),
+				ke = n("./src/reddit/components/Settings/index.m.less"),
+				Ee = n.n(ke);
+			const Oe = "update_card_modal_id",
+				we = Object(k.c)({
 					cancelSubscriptionModalIsOpen: Object(Ce.b)("settings_optout_modal_id"),
 					premiumBenefitsModalIsOpen: Object(Ce.b)("premium_benefits_modal_id"),
 					premiumFeedbackModalIsOpen: Object(Ce.b)("premium_feedback_modal_id"),
-					isPremiumImprovedCancellationEnabled: je.q,
-					goldExpiration: ke.r,
-					hasAndroidSubscription: ke.s,
-					hasIosSubscription: ke.y,
-					hasStripeSubscription: ke.B,
-					hasPaypalSubscription: ke.z,
-					isGold: ke.v,
-					isPremiumSubscriber: ke.w,
+					goldExpiration: je.r,
+					hasAndroidSubscription: je.s,
+					hasIosSubscription: je.y,
+					hasStripeSubscription: je.B,
+					hasPaypalSubscription: je.z,
+					isGold: je.v,
+					isPremiumSubscriber: je.w,
 					premiumProductOfferSubscription: _.i,
 					premiumProductOfferSubscriptionIsCanceled: _.h,
-					updateCardModalIsOpen: Object(Ce.b)(we)
+					updateCardModalIsOpen: Object(Ce.b)(Oe)
 				}),
-				Pe = Object(c.b)(Se, e => ({
+				Se = Object(c.b)(we, e => ({
 					navigateToPurchasePremium: () => e(Object(l.b)("/premium")),
 					toggleCancelSubscriptionModal: () => e(Object(S.i)("settings_optout_modal_id")),
 					togglePremiumBenefitsModal: () => e(Object(S.i)("premium_benefits_modal_id")),
@@ -6404,7 +6402,7 @@
 						forceLoad: !0
 					})),
 					premiumProductOffersRequested: () => e(Object(m.d)(_e.c.Premium)),
-					toggleUpdateCardModal: () => e(Object(S.i)(we)),
+					toggleUpdateCardModal: () => e(Object(S.i)(Oe)),
 					onPurchasePremium: (t, n) => e(Object(O.openWithBlob)({
 						correlationId: n,
 						packageId: t
@@ -6426,12 +6424,12 @@
 						}))
 					}
 				})),
-				Ne = (e, t, n) => e && !n ? s.fbt._("Your Premium subscription will automatically renew at the beginning of your next billing cycle. If your subscription ends, you will have Premium until {date}.", [s.fbt._param("date", t)], {
+				Pe = (e, t, n) => e && !n ? s.fbt._("Your Premium subscription will automatically renew at the beginning of your next billing cycle. If your subscription ends, you will have Premium until {date}.", [s.fbt._param("date", t)], {
 					hk: "jOodQ"
 				}) : s.fbt._("Your Premium membership is valid until {date}.", [s.fbt._param("date", t)], {
 					hk: "4m4zaE"
 				});
-			class Ie extends i.a.PureComponent {
+			class Ne extends i.a.PureComponent {
 				constructor() {
 					super(...arguments), this.handleStripeCardUpdate = () => {
 						var e;
@@ -6447,11 +6445,9 @@
 					}, this.onCancelClick = () => {
 						const {
 							sendEvent: e,
-							toggleCancelSubscriptionModal: t,
-							togglePremiumBenefitsModal: n,
-							isPremiumImprovedCancellationEnabled: s
+							togglePremiumBenefitsModal: t
 						} = this.props;
-						e(Object(g.a)()), s ? n() : t()
+						e(Object(g.a)()), t()
 					}, this.onHideAdsToggle = () => {
 						const {
 							update: e,
@@ -6548,19 +6544,19 @@
 						}
 					} = this.props, _ = Boolean(u), y = p, x = r || o, C = a()(null == u ? void 0 : u.expiresAt).format("MMMM DD, YYYY.");
 					return i.a.createElement(ce.a, null, i.a.createElement(ie.b, {
-						className: Oe.a.premiumHeading,
+						className: Ee.a.premiumHeading,
 						isResponsiveSettingsEnabled: b
 					}, s.fbt._("Reddit Premium", null, {
 						hk: "34acNx"
 					})), i.a.createElement(ie.a, {
-						className: Oe.a.premiumExpirationString
+						className: Ee.a.premiumExpirationString
 					}, s.fbt._("Reddit Premium is a subscription membership that upgrades your account with extra features.", null, {
 						hk: "2UySlA"
 					})), i.a.createElement(le.a, null, s.fbt._("subscription status", null, {
 						hk: "1tsk15"
 					})), i.a.createElement(ie.a, {
-						className: Oe.a.premiumExpirationString
-					}, d ? Ne(_, C, p) : s.fbt._("Get Reddit Premium and help support Reddit.", null, {
+						className: Ee.a.premiumExpirationString
+					}, d ? Pe(_, C, p) : s.fbt._("Get Reddit Premium and help support Reddit.", null, {
 						hk: "MOt6K"
 					})), !_ && i.a.createElement(de.g, {
 						label: d ? s.fbt._("Subscribe", null, {
@@ -6574,7 +6570,7 @@
 					}), y && i.a.createElement(i.a.Fragment, null, i.a.createElement(le.a, null, s.fbt._("resubscribe", null, {
 						hk: "1lySF"
 					})), i.a.createElement("div", {
-						className: Oe.a.resubscribeButtons
+						className: Ee.a.resubscribeButtons
 					}, i.a.createElement(xe.a, {
 						onClickPackage: this.onClickPrice,
 						onClickManagePremium: () => {}
@@ -6646,8 +6642,8 @@
 					}), i.a.createElement(X, null))
 				}
 			}
-			const Ae = Object(he.u)();
-			t.b = Ae(Pe(Object(p.c)(Ie)))
+			const Ie = Object(he.u)();
+			t.b = Ie(Se(Object(p.c)(Ne)))
 		},
 		"./src/reddit/components/Settings/PrivacyForm.m.less": function(e, t, n) {
 			e.exports = {
@@ -13524,7 +13520,7 @@
 						return Object(re.c)(e, {
 							experimentName: se.Jc,
 							experimentEligibilitySelector: re.a
-						}) === se.rd
+						}) === se.qd
 					}
 				}),
 				ho = Object(ge.u)(),
@@ -14060,7 +14056,7 @@
 			const o = e => Object(r.c)(e, {
 				experimentName: s.G,
 				experimentEligibilitySelector: () => Object(a.P)(e)
-			}) === s.rd
+			}) === s.qd
 		},
 		"./src/reddit/selectors/experiments/econ/marketplace.ts": function(e, t, n) {
 			"use strict";
@@ -14074,13 +14070,13 @@
 			const a = e => {
 					return !(Object(r.c)(e, {
 						experimentEligibilitySelector: r.a,
-						experimentName: s.Yd
-					}) === s.rd)
+						experimentName: s.Xd
+					}) === s.qd)
 				},
 				o = e => Object(r.c)(e, {
 					experimentEligibilitySelector: r.a,
-					experimentName: s.Zd
-				}) === s.rd
+					experimentName: s.Yd
+				}) === s.qd
 		},
 		"./src/reddit/selectors/gold/productOffers.ts": function(e, t, n) {
 			"use strict";
@@ -14250,4 +14246,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Settings.0a3a96f46f35846ae3de.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Settings.15e88401e6879bec0ada.js.map
