@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CrowdControlModal.0869aba759350088d6c3.js
-// Retrieved at 6/1/2022, 6:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CrowdControlModal.0a60c2172098498c2b38.js
+// Retrieved at 6/7/2022, 5:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CrowdControlModal"], {
 		"./node_modules/lodash/_baseRange.js": function(e, t) {
@@ -831,7 +831,8 @@
 						indent: e.indent,
 						last: e.last
 					}, a.a.createElement(q, null, a.a.createElement(M.a, null, a.a.createElement("label", {
-						htmlFor: t
+						htmlFor: t,
+						className: e.labelClassname
 					}, a.a.createElement(V, null, e.label))), a.a.createElement(Q, null, e.subtext)), a.a.createElement(Y, null, a.a.createElement(U, null, e.tooltip && a.a.createElement(z, {
 						tooltipContentClass: e.tooltipContentClassName,
 						text: e.tooltip
@@ -863,7 +864,9 @@
 					style: {
 						flex: 5
 					}
-				}, !e.inModal && a.a.createElement(M.a, null, a.a.createElement(V, null, e.label)), !e.hideSubtext && a.a.createElement(Q, null, " ", a.a.createElement(me, {
+				}, !e.inModal && a.a.createElement(M.a, null, a.a.createElement(V, {
+					className: e.labelClassname
+				}, e.label)), !e.hideSubtext && a.a.createElement(Q, null, " ", a.a.createElement(me, {
 					style: {
 						color: e.ticks[e.value].color
 					}
@@ -1718,4 +1721,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CrowdControlModal.0869aba759350088d6c3.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CrowdControlModal.0a60c2172098498c2b38.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-ModHub-ContentControls.995532cb66fbe7354bc0.js
-// Retrieved at 6/1/2022, 6:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-ModHub-ContentControls.d20f479ac83203cbdb2a.js
+// Retrieved at 6/7/2022, 5:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-ModHub-ContentControls"], {
 		"./src/reddit/components/ModHub/ContentControls/FormPlaceholder/index.m.less": function(e, t, n) {
@@ -134,11 +134,11 @@
 				F = n("./src/config.ts"),
 				N = n("./src/reddit/models/HatefulContentFilters/index.ts");
 			const P = `${F.a.redditModHelpUrl}/hc/en-us/articles/360010322091`,
-				O = 2,
-				M = 300,
+				M = 2,
+				O = 300,
 				D = 400,
-				j = 90,
-				I = 1e5,
+				I = 90,
+				j = 1e5,
 				A = 15,
 				H = 40,
 				W = 5,
@@ -527,8 +527,8 @@
 						onChange: this.onTitleLengthChange,
 						min: e.titleLength.min,
 						max: e.titleLength.max,
-						minLimit: O,
-						maxLimit: M,
+						minLimit: M,
+						maxLimit: O,
 						errors: e.titleLength.clientErrors
 					})), d.a.createElement(xe, {
 						on: e.titleRegexes.enabled,
@@ -639,20 +639,20 @@
 			}
 			var Ne = n("./node_modules/lodash/clamp.js"),
 				Pe = n.n(Ne),
-				Oe = n("./src/reddit/controls/DiscreteSlideSelector/Bars/index.m.less"),
-				Me = n.n(Oe);
+				Me = n("./src/reddit/controls/DiscreteSlideSelector/Bars/index.m.less"),
+				Oe = n.n(Me);
 
 			function De(e) {
 				const t = Array.from({
 					length: e.optionColors.length - 1
 				});
 				return d.a.createElement("div", {
-					className: Object(K.a)(Me.a.container, e.className),
+					className: Object(K.a)(Oe.a.container, e.className),
 					style: {
 						gridTemplateColumns: `repeat(${t.length}, 1fr)`
 					}
 				}, t.map((t, n) => d.a.createElement("div", {
-					className: Me.a.segment,
+					className: Oe.a.segment,
 					key: n,
 					style: {
 						backgroundColor: n < e.currentStop ? e.optionColors[e.currentStop] : void 0
@@ -660,19 +660,19 @@
 				})))
 			}
 
-			function je(e) {
+			function Ie(e) {
 				return ["0.5fr", ...Array.from({
 					length: e - 2
 				}).map(e => "1fr"), "0.5fr"].join(" ")
 			}
-			var Ie = n("./src/reddit/controls/DiscreteSlideSelector/Labels/index.m.less"),
-				Ae = n.n(Ie);
+			var je = n("./src/reddit/controls/DiscreteSlideSelector/Labels/index.m.less"),
+				Ae = n.n(je);
 
 			function He(e) {
 				return d.a.createElement("div", {
 					className: Object(K.a)(Ae.a.container, e.className),
 					style: {
-						gridTemplateColumns: je(e.options.length)
+						gridTemplateColumns: Ie(e.options.length)
 					}
 				}, e.options.map(t => d.a.createElement("div", {
 					className: Object(K.a)(Ae.a.label, {
@@ -698,7 +698,7 @@
 				return d.a.createElement("div", {
 					className: Object(K.a)(Ve.a.container, e.className),
 					style: {
-						gridTemplateColumns: je(e.numStops)
+						gridTemplateColumns: Ie(e.numStops)
 					},
 					onMouseUp: e => {
 						t.current = !1
@@ -1024,8 +1024,8 @@
 						return ce({
 							min: t,
 							max: n,
-							minLimit: O,
-							maxLimit: M
+							minLimit: M,
+							maxLimit: O
 						})
 					})(t.titleLength), t.bodyBlacklistedStrings.clientErrors = Rt(t), t.bodyRequiredStrings.clientErrors = Et(t), t.titleBlacklistedStrings.clientErrors = (e => {
 						const t = St(e);
@@ -1202,7 +1202,7 @@
 					}, this.onRepostFrequencyChange = e => {
 						const {
 							formState: t
-						} = this.props, n = le(e.target.value, 1, j);
+						} = this.props, n = le(e.target.value, 1, I);
 						this.props.onChange({
 							repostFrequency: {
 								...t.repostFrequency,
@@ -1355,7 +1355,7 @@
 					}, d.a.createElement("textarea", {
 						"aria-invalid": !!n.length,
 						className: fe.a.domainsTextarea,
-						maxLength: I,
+						maxLength: j,
 						onBlur: this.onLinkDomainsBlur,
 						onChange: this.onLinkDomainsTextChange,
 						placeholder: s.fbt._("Example: website.com", null, {
@@ -1381,7 +1381,7 @@
 						label: s.fbt._("number of days", null, {
 							hk: "1sPFop"
 						}),
-						max: j,
+						max: I,
 						min: 1,
 						onChange: this.onRepostFrequencyChange,
 						type: "number",
@@ -1405,7 +1405,7 @@
 			var Pt = Object(c.b)(Nt)(e => d.a.createElement(d.a.Fragment, null, (e => [...e.hatefulContentFiltersEnabled ? [dt] : [], Lt, Ee])(e).map((t, n) => d.a.createElement(t, Ft({
 					key: n
 				}, e))))),
-				Ot = e => {
+				Mt = e => {
 					const {
 						bodyBlacklistedStrings: t,
 						bodyRegexes: n,
@@ -1489,7 +1489,7 @@
 						}
 					}
 				};
-			const Mt = {
+			const Ot = {
 					bodyBlacklistedStrings: [],
 					bodyRegexes: [],
 					bodyRequiredStrings: [],
@@ -1507,9 +1507,9 @@
 					titleTextMinLength: null
 				},
 				Dt = e => e.filter(e => !!e);
-			var jt = e => {
+			var It = e => {
 					const t = {
-							...Mt,
+							...Ot,
 							bodyRestrictionPolicy: e.bodyRequirement.restrictionPolicy,
 							guidelinesText: e.guidelines.enabled ? e.guidelines.guidelineText : null,
 							isFlairRequired: e.flairRequirement.enabled,
@@ -1529,15 +1529,15 @@
 					}
 					return t
 				},
-				It = n("./node_modules/lodash/isEqual.js"),
-				At = n.n(It),
+				jt = n("./node_modules/lodash/isEqual.js"),
+				At = n.n(jt),
 				Ht = (e, t) => {
 					if (At()(e, t)) return {
 						hatefulContentFilters: {},
 						postRequirements: {}
 					};
-					const n = jt(e),
-						s = jt(t),
+					const n = It(e),
+						s = It(t),
 						i = S()(n, (e, t) => At()(e, s[t])),
 						o = {};
 					return Object.keys(t.hatefulContentFilters).forEach(n => {
@@ -1605,7 +1605,7 @@
 						if (!this.isUnmounted)
 							if (this.setState({
 									isSavePending: !1
-								}), r.success) this.props.sendEvent(w(jt(s))), this.setState({
+								}), r.success) this.props.sendEvent(w(It(s))), this.setState({
 								formState: s,
 								initialFormState: s,
 								hasJustSaved: !0
@@ -1655,7 +1655,7 @@
 							}
 						})
 					};
-					const n = e.contentControls ? Ot(e.contentControls) : U;
+					const n = e.contentControls ? Mt(e.contentControls) : U;
 					this.state = {
 						areContentControlsLoaded: !!e.contentControls,
 						formState: n,
@@ -1673,7 +1673,7 @@
 						contentControls: n
 					} = this.props;
 					if (n && !this.state.areContentControlsLoaded) {
-						const e = Ot(n);
+						const e = Mt(n);
 						this.setState({
 							areContentControlsLoaded: !0,
 							formState: e,
@@ -1773,23 +1773,7 @@
 				bars: "_33xYQEVEBWja4Lcl2AqexN",
 				thumbRail: "_14n6xNgIdrQJj4PhadXZYO"
 			}
-		},
-		"./src/reddit/hooks/useExperimentVariant.ts": function(e, t, n) {
-			"use strict";
-			n.d(t, "a", (function() {
-				return o
-			}));
-			var s = n("./node_modules/react-redux/es/index.js"),
-				i = n("./src/reddit/helpers/chooseVariant/index.ts");
-
-			function o(e) {
-				let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : i.a;
-				return Object(s.e)(n => Object(i.c)(n, {
-					experimentName: e,
-					experimentEligibilitySelector: t
-				}))
-			}
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ModHub-ContentControls.995532cb66fbe7354bc0.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ModHub-ContentControls.d20f479ac83203cbdb2a.js.map

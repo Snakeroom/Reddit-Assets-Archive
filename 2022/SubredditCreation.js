@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditCreation.69e9f12e64e84290970d.js
-// Retrieved at 6/7/2022, 3:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditCreation.2f498747b4b54a6e1176.js
+// Retrieved at 6/7/2022, 5:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditCreation"], {
 		"./node_modules/lodash/_baseRange.js": function(e, t) {
@@ -311,8 +311,8 @@
 				}).apply(this, arguments)
 			}
 			const _ = C.a.span("Wrapper", f.a),
-				w = C.a.select("Inner", f.a),
-				N = C.a.wrapped(v.b, "Caret", f.a);
+				N = C.a.select("Inner", f.a),
+				w = C.a.wrapped(v.b, "Caret", f.a);
 
 			function y(e) {
 				let {
@@ -325,9 +325,9 @@
 				} : {};
 				return r.a.createElement(_, {
 					className: t
-				}, r.a.createElement(w, g({
+				}, r.a.createElement(N, g({
 					className: n
-				}, a)), r.a.createElement(N, g({
+				}, a)), r.a.createElement(w, g({
 					isSubreddit: !0
 				}, s)))
 			}
@@ -422,7 +422,8 @@
 						indent: e.indent,
 						last: e.last
 					}, r.a.createElement(K, null, r.a.createElement(D.a, null, r.a.createElement("label", {
-						htmlFor: t
+						htmlFor: t,
+						className: e.labelClassname
 					}, r.a.createElement(V, null, e.label))), r.a.createElement(Y, null, e.subtext)), r.a.createElement(z, null, r.a.createElement(Q, null, e.tooltip && r.a.createElement(J, {
 						tooltipContentClass: e.tooltipContentClassName,
 						text: e.tooltip
@@ -454,7 +455,9 @@
 					style: {
 						flex: 5
 					}
-				}, !e.inModal && r.a.createElement(D.a, null, r.a.createElement(V, null, e.label)), !e.hideSubtext && r.a.createElement(Y, null, " ", r.a.createElement(me, {
+				}, !e.inModal && r.a.createElement(D.a, null, r.a.createElement(V, {
+					className: e.labelClassname
+				}, e.label)), !e.hideSubtext && r.a.createElement(Y, null, " ", r.a.createElement(me, {
 					style: {
 						color: e.ticks[e.value].color
 					}
@@ -906,8 +909,8 @@
 				f = n("./src/reddit/components/TrackingHelper/index.tsx"),
 				g = n("./src/reddit/constants/modals.ts"),
 				_ = n("./src/reddit/controls/Button/index.tsx"),
-				w = n("./src/reddit/controls/CheckboxInput/index.tsx"),
-				N = n("./src/reddit/controls/ErrorText/index.tsx"),
+				N = n("./src/reddit/controls/CheckboxInput/index.tsx"),
+				w = n("./src/reddit/controls/ErrorText/index.tsx"),
 				y = n("./src/reddit/controls/RadioInput/index.tsx"),
 				k = n("./src/reddit/controls/RadioInput/RadioOption/index.tsx"),
 				O = n("./src/reddit/controls/TextButton/index.tsx"),
@@ -970,7 +973,7 @@
 				te = K.a.wrapped(F.a, "Private", Q.a),
 				ne = K.a.wrapped(j.a, "Employee", Q.a),
 				ae = K.a.wrapped(B.a, "CloseButton", Q.a),
-				re = K.a.wrapped(N.b, "ErrorText", Q.a),
+				re = K.a.wrapped(w.b, "ErrorText", Q.a),
 				se = Object(o.c)({
 					error: W.f,
 					isCreatePending: W.j,
@@ -1203,7 +1206,7 @@
 						className: Q.a.subtitle
 					}, a.fbt._("Adult content", null, {
 						hk: "20arB"
-					})), s.a.createElement(w.a, {
+					})), s.a.createElement(N.a, {
 						name: "over18",
 						value: h,
 						onChange: this.onUpdateOver18,
@@ -1856,4 +1859,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditCreation.69e9f12e64e84290970d.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditCreation.2f498747b4b54a6e1176.js.map
