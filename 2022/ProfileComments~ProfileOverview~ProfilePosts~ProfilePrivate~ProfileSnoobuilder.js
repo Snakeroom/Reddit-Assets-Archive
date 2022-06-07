@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfileComments~ProfileOverview~ProfilePosts~ProfilePrivate~ProfileSnoobuilder.71b4d0ab11498f44af57.js
-// Retrieved at 6/7/2022, 11:00:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfileComments~ProfileOverview~ProfilePosts~ProfilePrivate~ProfileSnoobuilder.54b6de8c6768dc34ebc6.js
+// Retrieved at 6/7/2022, 11:50:07 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfileComments~ProfileOverview~ProfilePosts~ProfilePrivate~ProfileSnoobuilder"], {
 		"./node_modules/lodash/take.js": function(e, t, n) {
@@ -944,7 +944,8 @@
 						fr: "Français",
 						es: "Español",
 						en: "USA/Global",
-						it: "Italiano"
+						it: "Italiano",
+						pt: "Português"
 					};
 					return n.includes(t) || "en" === t ? r.a.createElement(v, {
 						href: "en" === t ? "/" : `/${t}/`,
@@ -1047,7 +1048,7 @@
 					className: E.a.Column
 				}, s("en"), s("fr"), s("it")), r.a.createElement("div", {
 					className: E.a.Column
-				}, s("de"), s("es"))), r.a.createElement("div", {
+				}, s("de"), s("es"), s("pt"))), r.a.createElement("div", {
 					className: E.a.Copyright
 				}, _._("Reddit Inc © {year}. All rights reserved", [_._param("year", (new Date).getFullYear().toString())], {
 					hk: "4BrCkA"
@@ -2438,4 +2439,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileComments~ProfileOverview~ProfilePosts~ProfilePrivate~ProfileSnoobuilder.71b4d0ab11498f44af57.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileComments~ProfileOverview~ProfilePosts~ProfilePrivate~ProfileSnoobuilder.54b6de8c6768dc34ebc6.js.map

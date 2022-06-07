@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~Subreddit~SubredditWiki.45ade8b78b38a14152a6.js
-// Retrieved at 6/7/2022, 11:00:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~Subreddit~SubredditWiki.4696ff69a33b2301990f.js
+// Retrieved at 6/7/2022, 11:50:07 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~Subreddit~SubredditWiki"], {
 		"./node_modules/lodash/random.js": function(e, t, r) {
@@ -1639,7 +1639,8 @@
 						fr: "Français",
 						es: "Español",
 						en: "USA/Global",
-						it: "Italiano"
+						it: "Italiano",
+						pt: "Português"
 					};
 					return r.includes(t) || "en" === t ? s.a.createElement(E, {
 						href: "en" === t ? "/" : `/${t}/`,
@@ -1742,7 +1743,7 @@
 					className: v.a.Column
 				}, n("en"), n("fr"), n("it")), s.a.createElement("div", {
 					className: v.a.Column
-				}, n("de"), n("es"))), s.a.createElement("div", {
+				}, n("de"), n("es"), n("pt"))), s.a.createElement("div", {
 					className: v.a.Copyright
 				}, _._("Reddit Inc © {year}. All rights reserved", [_._param("year", (new Date).getFullYear().toString())], {
 					hk: "4BrCkA"
@@ -4205,4 +4206,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~Subreddit~SubredditWiki.45ade8b78b38a14152a6.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~Subreddit~SubredditWiki.4696ff69a33b2301990f.js.map

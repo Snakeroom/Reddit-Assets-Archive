@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CountryPage~Multireddit.5d50b97900828e646e20.js
-// Retrieved at 6/7/2022, 11:00:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CountryPage~Multireddit.45b9eb5551280d8ca2fe.js
+// Retrieved at 6/7/2022, 11:50:07 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CountryPage~Multireddit", "reddit-components-ContentGate"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -4312,7 +4312,8 @@
 						fr: "Français",
 						es: "Español",
 						en: "USA/Global",
-						it: "Italiano"
+						it: "Italiano",
+						pt: "Português"
 					};
 					return n.includes(t) || "en" === t ? s.a.createElement(v, {
 						href: "en" === t ? "/" : `/${t}/`,
@@ -4415,7 +4416,7 @@
 					className: w.a.Column
 				}, r("en"), r("fr"), r("it")), s.a.createElement("div", {
 					className: w.a.Column
-				}, r("de"), r("es"))), s.a.createElement("div", {
+				}, r("de"), r("es"), r("pt"))), s.a.createElement("div", {
 					className: w.a.Copyright
 				}, E._("Reddit Inc © {year}. All rights reserved", [E._param("year", (new Date).getFullYear().toString())], {
 					hk: "4BrCkA"
@@ -6435,4 +6436,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CountryPage~Multireddit.5d50b97900828e646e20.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CountryPage~Multireddit.45b9eb5551280d8ca2fe.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Geotagging.054404f743b53ccf2377.js
-// Retrieved at 6/7/2022, 11:00:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Geotagging.eca40074870ad20435c4.js
+// Retrieved at 6/7/2022, 11:50:07 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Geotagging"], {
 		"./node_modules/p-debounce/index.js": function(e, t, n) {
@@ -440,7 +440,8 @@
 						fr: "Français",
 						es: "Español",
 						en: "USA/Global",
-						it: "Italiano"
+						it: "Italiano",
+						pt: "Português"
 					};
 					return n.includes(t) || "en" === t ? r.a.createElement(k, {
 						href: "en" === t ? "/" : `/${t}/`,
@@ -543,7 +544,7 @@
 					className: y.a.Column
 				}, s("en"), s("fr"), s("it")), r.a.createElement("div", {
 					className: y.a.Column
-				}, s("de"), s("es"))), r.a.createElement("div", {
+				}, s("de"), s("es"), s("pt"))), r.a.createElement("div", {
 					className: y.a.Copyright
 				}, S._("Reddit Inc © {year}. All rights reserved", [S._param("year", (new Date).getFullYear().toString())], {
 					hk: "4BrCkA"
@@ -1829,4 +1830,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Geotagging.054404f743b53ccf2377.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Geotagging.eca40074870ad20435c4.js.map
