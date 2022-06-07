@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/EconPowerupsMarketingModal.ab8a6fb04137ae2c8aba.js
-// Retrieved at 6/6/2022, 7:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/EconPowerupsMarketingModal.cc0bfbabc114c64b7442.js
+// Retrieved at 6/7/2022, 10:10:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["EconPowerupsMarketingModal"], {
 		"./node_modules/@researchgate/react-intersection-observer/lib/es/index.js": function(e, t, r) {
@@ -1040,31 +1040,31 @@
 			}));
 			var n = r("./src/reddit/constants/experiments.ts"),
 				o = r("./src/reddit/selectors/experiments/econ/simpleExperiment.ts");
-			const s = Object(o.a)(n.fd),
-				a = Object(o.a)(n.dd),
-				c = Object(o.a)(n.gd),
-				i = Object(o.a)(n.cd),
-				l = Object(o.a)(n.bd),
-				d = Object(o.a)(n.jd),
-				u = Object(o.a)(n.hd),
-				m = Object(o.a)(n.id),
-				p = Object(o.a)(n.Yc),
-				b = Object(o.a)(n.Wc),
+			const s = Object(o.a)(n.ed),
+				a = Object(o.a)(n.cd),
+				c = Object(o.a)(n.fd),
+				i = Object(o.a)(n.bd),
+				l = Object(o.a)(n.ad),
+				d = Object(o.a)(n.id),
+				u = Object(o.a)(n.gd),
+				m = Object(o.a)(n.hd),
+				p = Object(o.a)(n.Xc),
+				b = Object(o.a)(n.Vc),
 				h = Object(o.a)(n.Pc),
 				f = Object(o.a)(n.Qc),
 				w = Object(o.a)(n.Nc),
 				v = Object(o.a)(n.Oc),
 				_ = Object(o.a)(n.Sc),
 				g = Object(o.a)(n.Mc),
-				x = Object(o.a)(n.Zc),
-				E = Object(o.a)(n.ad),
-				j = Object(o.a)(n.ed),
-				O = Object(o.a)(n.kd),
-				k = Object(o.a)(n.md),
-				y = Object(o.a)(n.pd),
-				N = Object(o.a)(n.od),
-				P = Object(o.a)(n.nd)
+				x = Object(o.a)(n.Yc),
+				E = Object(o.a)(n.Zc),
+				j = Object(o.a)(n.dd),
+				O = Object(o.a)(n.jd),
+				k = Object(o.a)(n.ld),
+				y = Object(o.a)(n.od),
+				N = Object(o.a)(n.nd),
+				P = Object(o.a)(n.md)
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EconPowerupsMarketingModal.ab8a6fb04137ae2c8aba.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EconPowerupsMarketingModal.cc0bfbabc114c64b7442.js.map

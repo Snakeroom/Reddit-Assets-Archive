@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ChatPost~CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~Post~38f39fb8.22623f599a9aec1f6f6d.js
-// Retrieved at 6/6/2022, 7:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ChatPost~CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~Post~38f39fb8.7f093b99b5bc8fdd7859.js
+// Retrieved at 6/7/2022, 10:10:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ChatPost~CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~Post~38f39fb8"], {
 		"./src/reddit/actions/economics/subredditPremium/actionCreators.ts": function(e, t, r) {
@@ -59,43 +59,6 @@
 					await t(d({
 						id: e
 					})), t(Object(o.h)(n.a.GOLD_GILD_ANIMATION_OVERLAY))
-				}
-		},
-		"./src/reddit/actions/gold/reportAward.ts": function(e, t, r) {
-			"use strict";
-			r.d(t, "a", (function() {
-				return l
-			}));
-			var s = r("./node_modules/fbt/lib/FbtPublic.js"),
-				o = r("./src/lib/makeActionCreator/index.ts"),
-				n = r("./src/reddit/actions/toaster.ts"),
-				a = r("./src/reddit/models/Toast/index.ts"),
-				i = r("./src/reddit/endpoints/gold/communityAwards.ts"),
-				d = r("./src/reddit/actions/gold/constants.ts");
-			const c = Object(o.a)(d.lb),
-				l = e => async (t, r, o) => {
-					let {
-						apiContext: d
-					} = o;
-					t(c());
-					try {
-						if ((await Object(i.e)(d(), e.id)).error) throw new Error;
-						await t(Object(n.f)({
-							kind: a.b.SuccessAward,
-							duration: n.a,
-							text: s.fbt._("{award name} Award successfully reported for review.", [s.fbt._param("award name", e.name)], {
-								hk: "1fHb5Q"
-							})
-						}))
-					} catch (l) {
-						await t(Object(n.f)({
-							kind: a.b.Error,
-							duration: n.a,
-							text: s.fbt._("Something went wrong. The report could not be created at this time.", null, {
-								hk: "1ewigu"
-							})
-						}))
-					}
 				}
 		},
 		"./src/reddit/actions/gold/topAwarded.ts": function(e, t, r) {
@@ -824,7 +787,7 @@
 					className: Ee.a.icon
 				}))
 			};
-			var Ie, Ce = e => {
+			var Ie = e => {
 					const {
 						awards: t,
 						className: r,
@@ -886,45 +849,69 @@
 						onClick: E
 					}))
 				},
-				Te = r("./src/reddit/actions/gold/reportAward.ts"),
-				_e = r("./src/reddit/controls/Button/index.tsx"),
-				Pe = r("./src/reddit/components/AwardBadges/FlagAwardModal/index.m.less"),
-				Ne = r.n(Pe);
+				Ce = r("./src/reddit/endpoints/gold/communityAwards.ts");
+			const Te = Object(l.a)(m.lb);
+			var _e, Pe = r("./src/reddit/controls/Button/index.tsx"),
+				Ne = r("./src/reddit/components/AwardBadges/FlagAwardModal/index.m.less"),
+				Se = r.n(Ne);
 			! function(e) {
 				e[e.BEGIN = 0] = "BEGIN", e[e.REPORT_COMMUNITY_AWARD = 1] = "REPORT_COMMUNITY_AWARD", e[e.FLAG_USAGE = 2] = "FLAG_USAGE"
-			}(Ie || (Ie = {}));
-			var Se = e => {
+			}(_e || (_e = {}));
+			var ke = e => {
 				const t = Object(oe.a)(),
-					[r, i] = Object(o.useState)(e.award.awardType === y.f.Global ? Ie.FLAG_USAGE : Ie.BEGIN),
+					[r, i] = Object(o.useState)(e.award.awardType === y.f.Global ? _e.FLAG_USAGE : _e.BEGIN),
 					d = Object(a.d)(),
 					c = () => {
-						r === Ie.BEGIN ? t(Object(A.clickCancelAwardReportFlow)(e.award, e.thing.id)) : r === Ie.REPORT_COMMUNITY_AWARD ? t(Object(A.clickCancelReportAward)(e.award, e.thing.id)) : r === Ie.FLAG_USAGE && t(Object(A.clickCancelFlagAwardUsage)(e.award, e.thing.id)), e.onClose()
+						r === _e.BEGIN ? t(Object(A.clickCancelAwardReportFlow)(e.award, e.thing.id)) : r === _e.REPORT_COMMUNITY_AWARD ? t(Object(A.clickCancelReportAward)(e.award, e.thing.id)) : r === _e.FLAG_USAGE && t(Object(A.clickCancelFlagAwardUsage)(e.award, e.thing.id)), e.onClose()
 					},
 					l = () => {
-						t(Object(A.clickConfirmReportAward)(e.award, e.thing.id)), d(Object(Te.a)(e.award)), e.onClose()
+						t(Object(A.clickConfirmReportAward)(e.award, e.thing.id)), d((e => async (t, r, o) => {
+							let {
+								apiContext: n
+							} = o;
+							t(Te());
+							try {
+								if ((await Object(Ce.e)(n(), e.id)).error) throw new Error;
+								await t(Object(p.f)({
+									kind: h.b.SuccessAward,
+									duration: p.a,
+									text: s.fbt._("{award name} Award successfully reported for review.", [s.fbt._param("award name", e.name)], {
+										hk: "1fHb5Q"
+									})
+								}))
+							} catch (a) {
+								await t(Object(p.f)({
+									kind: h.b.Error,
+									duration: p.a,
+									text: s.fbt._("Something went wrong. The report could not be created at this time.", null, {
+										hk: "1ewigu"
+									})
+								}))
+							}
+						})(e.award)), e.onClose()
 					},
 					u = () => {
 						t(Object(A.clickConfirmFlagAwardUsage)(e.award, e.thing.id)), d(Object(p.f)(Object(p.e)(s.fbt._("{award name} Award successfully flagged for review.", [s.fbt._param("award name", e.award.name)], {
 							hk: "24QeOL"
 						}), h.b.SuccessAward))), e.onClose()
 					},
-					m = n.a.createElement(n.a.Fragment, null, n.a.createElement(_e.o, {
+					m = n.a.createElement(n.a.Fragment, null, n.a.createElement(Pe.o, {
 						onClick: () => {
-							t(Object(A.clickReportAward)(e.award, e.thing.id)), i(Ie.REPORT_COMMUNITY_AWARD)
+							t(Object(A.clickReportAward)(e.award, e.thing.id)), i(_e.REPORT_COMMUNITY_AWARD)
 						},
-						className: Ne.a.reportStepButton
+						className: Se.a.reportStepButton
 					}, s.fbt._("This community award violates Reddit's rules.", null, {
 						hk: "2ObuGq"
-					})), n.a.createElement(_e.o, {
+					})), n.a.createElement(Pe.o, {
 						onClick: () => {
-							t(Object(A.clickFlagAwardUsage)(e.award, e.thing.id)), i(Ie.FLAG_USAGE)
+							t(Object(A.clickFlagAwardUsage)(e.award, e.thing.id)), i(_e.FLAG_USAGE)
 						},
-						className: Ne.a.reportStepButton
+						className: Se.a.reportStepButton
 					}, s.fbt._("This award is being used inappropriately.", null, {
 						hk: "Y8giW"
 					})));
 				switch (r) {
-					case Ie.BEGIN:
+					case _e.BEGIN:
 						return n.a.createElement(j.a, {
 							withOverlay: !0,
 							hideCancelButton: !0,
@@ -939,7 +926,7 @@
 							}),
 							modalText: m
 						});
-					case Ie.REPORT_COMMUNITY_AWARD:
+					case _e.REPORT_COMMUNITY_AWARD:
 						return n.a.createElement(j.a, {
 							withOverlay: !0,
 							onConfirm: l,
@@ -955,7 +942,7 @@
 								hk: "4by1t"
 							})
 						});
-					case Ie.FLAG_USAGE:
+					case _e.FLAG_USAGE:
 						return n.a.createElement(j.a, {
 							withOverlay: !0,
 							onConfirm: u,
@@ -973,25 +960,25 @@
 						})
 				}
 			};
-			const ke = [32, 128],
-				Me = Object(i.c)({
+			const Me = [32, 128],
+				Be = Object(i.c)({
 					allAwards: C.b,
 					claimedFreeAward: P.b,
 					isConfirmModalOpen: e => "AwardBadges--Modal--HideAwardConfirmation" === Object(I.a)(e),
 					isInEconLeaderboardsExperiment: T.b
 				}),
-				Be = e => Object(x.a)(e.id) ? e.postId : e.id,
-				Le = Object(a.b)(Me, (e, t) => {
+				Le = e => Object(x.a)(e.id) ? e.postId : e.id,
+				Fe = Object(a.b)(Be, (e, t) => {
 					let {
 						thing: r
 					} = t;
 					return {
 						hideAward: t => e(f({
 							awardId: t,
-							thingId: Be(r)
+							thingId: Le(r)
 						})),
 						onAddAward: (t, s) => {
-							const o = Be(r);
+							const o = Le(r);
 							return e(Object(v.d)({
 								awardId: s,
 								correlationId: t,
@@ -1003,10 +990,10 @@
 							tooltipId: t
 						})),
 						onToggleHideAwardModal: () => e(Object(w.i)("AwardBadges--Modal--HideAwardConfirmation")),
-						triggerOverlayAnimation: () => e(Object(d.b)(Be(r)))
+						triggerOverlayAnimation: () => e(Object(d.b)(Le(r)))
 					}
 				});
-			class Fe extends n.a.Component {
+			class He extends n.a.Component {
 				constructor(e) {
 					super(e), this.handleAddAward = async e => {
 						const t = Object(O.d)(O.a.GildingFlow, !0),
@@ -1101,7 +1088,7 @@
 					} = this.props, {
 						showAllAwards: O
 					} = this.state, A = f.reduceAnimationsFromAwards || "undefined" != typeof window && !!window.matchMedia("(prefers-reduced-motion)").matches, E = Object.keys(v.awardCountsById || {}), I = Object(y.r)(E.map(t => e[t]).filter(Boolean)), C = {};
-					for (const s of ke) {
+					for (const s of Me) {
 						const e = {};
 						C[`icon${s}`] = e;
 						for (const t of I) e[t.id] = Object(_.c)({
@@ -1130,7 +1117,7 @@
 						prefersReducedMotion: A,
 						tooltipType: g,
 						triggerOverlayAnimation: w
-					}) : n.a.createElement(Ce, {
+					}) : n.a.createElement(Ie, {
 						awards: I,
 						className: o,
 						hideBadgeButton: i || !u,
@@ -1163,7 +1150,7 @@
 						onCancel: this.handleHideAwardCanceled,
 						toggleModal: b,
 						withOverlay: !0
-					}), this.state.reportingAward && n.a.createElement(Se, {
+					}), this.state.reportingAward && n.a.createElement(ke, {
 						award: this.state.reportingAward,
 						thing: v,
 						onClose: () => this.setState({
@@ -1172,7 +1159,7 @@
 					}))
 				}
 			}
-			t.a = Object(S.c)(Object(N.e)(Le(Object(E.c)(Fe))))
+			t.a = Object(S.c)(Object(N.e)(Fe(Object(E.c)(He))))
 		},
 		"./src/reddit/components/Badges/UserDisplay/index.m.less": function(e, t, r) {
 			e.exports = {
@@ -3673,15 +3660,15 @@
 			const a = e => {
 					const t = Object(o.c)(e, {
 						experimentEligibilitySelector: n.Q,
-						experimentName: s.Uc
+						experimentName: s.Tc
 					});
-					return !(!t || Object(s.Vf)(t))
+					return !(!t || Object(s.Tf)(t))
 				},
 				i = e => {
 					return Object(o.c)(e, {
 						experimentEligibilitySelector: n.Q,
-						experimentName: s.Uc
-					}) === s.xd.ListingEnabled
+						experimentName: s.Tc
+					}) === s.vd.ListingEnabled
 				}
 		},
 		"./src/reddit/selectors/gold/topAwarded.ts": function(e, t, r) {
@@ -3741,4 +3728,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatPost~CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~Post~38f39fb8.22623f599a9aec1f6f6d.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatPost~CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~Post~38f39fb8.7f093b99b5bc8fdd7859.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Frontpage.28a9085f2fbe735c2c63.js
-// Retrieved at 6/6/2022, 7:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Frontpage.0b20c7b2558cf9d47a06.js
+// Retrieved at 6/7/2022, 10:10:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Frontpage"], {
 		"./node_modules/intersection-observer/intersection-observer.js": function(e, t) {
@@ -487,7 +487,7 @@
 						},
 						forceGeopopular: !0,
 						includeCommunityDUs: !1,
-						includeInterestTopics: !!p && !Object(b.Vf)(p),
+						includeInterestTopics: !!p && !Object(b.Tf)(p),
 						includeFeaturedAnnouncements: !0,
 						includeLiveEvents: !0,
 						includeIdentity: f && !(null === (a = null === (s = e.user.account) || void 0 === s ? void 0 : s.karma) || void 0 === a ? void 0 : a.total),
@@ -2657,10 +2657,10 @@
 			}
 			var qe = s("./src/reddit/selectors/experiments/utils.ts");
 			const Ue = Object(u.a)(e => Object(De.c)(e, {
-					experimentName: Be.Xd,
+					experimentName: Be.Vd,
 					experimentEligibilitySelector: De.a
 				}), qe.a),
-				Ve = Object(u.a)(Ue, e => e === Be.Yd.Enabled);
+				Ve = Object(u.a)(Ue, e => e === Be.Wd.Enabled);
 			var We = s("./src/reddit/selectors/experiments/loggedOutOneFeed.ts"),
 				He = s("./src/reddit/selectors/experiments/publicAccessNetwork.ts"),
 				Ge = s("./src/reddit/selectors/user.ts");
@@ -2693,7 +2693,7 @@
 							return Object(De.c)(e, {
 								experimentEligibilitySelector: Ge.Q,
 								experimentName: Be.qc
-							}) === Be.sd
+							}) === Be.rd
 						}(e)
 					},
 					isNavbarLikeMwebEnabled: d.a,
@@ -7706,8 +7706,8 @@
 					return Object(n.c)(e, {
 						experimentEligibilitySelector: o,
 						experimentName: a.Kc
-					}) === a.ud.Enabled
-				}(e) ? l.Achievements : t === a.vd.ControlBanner ? l.CommunitySpacesControl : t === a.vd.EnabledBanner ? l.CommunitySpaces : null
+					}) === a.td.Enabled
+				}(e) ? l.Achievements : t === a.ud.ControlBanner ? l.CommunitySpacesControl : t === a.ud.EnabledBanner ? l.CommunitySpaces : null
 			}! function(e) {
 				e.Achievements = "achievements", e.CommunitySpaces = "communitySpaces", e.CommunitySpacesControl = "communitySpaces--control"
 			}(l || (l = {}))
@@ -7724,13 +7724,13 @@
 			const r = e => {
 					return !(Object(n.c)(e, {
 						experimentEligibilitySelector: n.a,
-						experimentName: a.ae
-					}) === a.sd)
+						experimentName: a.Yd
+					}) === a.rd)
 				},
 				c = e => Object(n.c)(e, {
 					experimentEligibilitySelector: n.a,
-					experimentName: a.be
-				}) === a.sd
+					experimentName: a.Zd
+				}) === a.rd
 		},
 		"./src/reddit/selectors/experiments/inAppNotification.ts": function(e, t, s) {
 			"use strict";
@@ -7922,4 +7922,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Frontpage.28a9085f2fbe735c2c63.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Frontpage.0b20c7b2558cf9d47a06.js.map

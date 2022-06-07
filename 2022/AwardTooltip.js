@@ -1,13 +1,12 @@
-// https://www.redditstatic.com/desktop2x/AwardTooltip.df8f08d23448842a75db.js
-// Retrieved at 6/6/2022, 7:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/AwardTooltip.d7c0b4edced3d963875f.js
+// Retrieved at 6/7/2022, 10:10:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["AwardTooltip"], {
-		"./src/reddit/components/AwardTooltip/index.m.less": function(e, t, r) {
+		"./src/reddit/components/AwardTooltip/index.m.less": function(e, t, o) {
 			e.exports = {
 				headerBar: "_1upk7O0Nror_rUzpKtAT82",
 				headerBarPremium: "_3iVwVnDtNqAO4iQPvemgLZ",
 				awardReport: "_3NL-lAvdtp1f08B73D3P-U",
-				isReported: "_2Pk3ujKwQr9ilRsjN0MDqJ",
 				awardReportIcon: "_1l-7KCSHWOZOMW8AwEn6sF",
 				awardHide: "_1patTLuP2Q2dYP-nfZqRMK",
 				awardHideIcon: "_3d9osmgMyOwl58hB2eaqZl",
@@ -23,36 +22,32 @@
 				premiumCta: "_2waCkZfG0i3CbaZeqk9dw3"
 			}
 		},
-		"./src/reddit/components/AwardTooltip/index.tsx": function(e, t, r) {
+		"./src/reddit/components/AwardTooltip/index.tsx": function(e, t, o) {
 			"use strict";
-			r.r(t);
-			var s = r("./node_modules/fbt/lib/FbtPublic.js"),
-				o = r("./node_modules/react/index.js"),
-				n = r.n(o),
-				a = r("./node_modules/react-redux/es/index.js"),
-				i = r("./node_modules/react-router-redux/es/index.js"),
-				d = r("./node_modules/reselect/es/index.js"),
-				c = r("./src/lib/classNames/index.ts"),
-				l = r("./src/reddit/helpers/hasModPostPermissions/index.ts"),
-				m = r("./src/reddit/constants/colors.ts"),
-				p = r("./src/reddit/actions/gold/reportAward.ts"),
-				u = r("./src/reddit/actions/tooltip.ts"),
-				h = r("./src/reddit/models/Gold/Award.ts"),
-				w = r("./src/reddit/constants/experiments.ts"),
-				x = r("./src/reddit/helpers/chooseVariant/index.ts");
-			var b = r("./src/reddit/selectors/gold/awardIcon.ts"),
-				C = r("./src/reddit/selectors/moderatorPermissions.ts"),
-				f = r("./src/reddit/selectors/subreddit.ts"),
-				g = r("./src/reddit/selectors/user.ts"),
-				O = r("./src/reddit/components/ContentTooltip/index.tsx"),
-				_ = r("./src/reddit/components/SubredditIcon/index.tsx"),
-				P = r("./src/reddit/controls/Button/index.tsx"),
-				v = r("./src/reddit/icons/svgs/CircleCheck/index.tsx"),
-				E = r("./src/reddit/icons/svgs/Hide/index.tsx"),
-				j = r("./src/reddit/icons/svgs/Moderate/index.tsx"),
-				N = r("./src/reddit/icons/svgs/Report/index.tsx"),
-				I = r("./src/reddit/icons/fonts/Coin/index.tsx");
-			const y = e => {
+			o.r(t);
+			var r = o("./node_modules/fbt/lib/FbtPublic.js"),
+				s = o("./node_modules/react/index.js"),
+				n = o.n(s),
+				i = o("./node_modules/react-redux/es/index.js"),
+				a = o("./node_modules/react-router-redux/es/index.js"),
+				d = o("./node_modules/reselect/es/index.js"),
+				c = o("./src/lib/classNames/index.ts"),
+				l = o("./src/reddit/helpers/hasModPostPermissions/index.ts"),
+				m = o("./src/reddit/constants/colors.ts"),
+				p = o("./src/reddit/actions/tooltip.ts"),
+				u = o("./src/reddit/models/Gold/Award.ts"),
+				h = o("./src/reddit/selectors/gold/awardIcon.ts"),
+				w = o("./src/reddit/selectors/moderatorPermissions.ts"),
+				b = o("./src/reddit/selectors/subreddit.ts"),
+				x = o("./src/reddit/selectors/user.ts"),
+				f = o("./src/reddit/components/ContentTooltip/index.tsx"),
+				C = o("./src/reddit/components/SubredditIcon/index.tsx"),
+				g = o("./src/reddit/controls/Button/index.tsx"),
+				O = o("./src/reddit/icons/svgs/Hide/index.tsx"),
+				P = o("./src/reddit/icons/svgs/Moderate/index.tsx"),
+				_ = o("./src/reddit/icons/svgs/Report/index.tsx"),
+				E = o("./src/reddit/icons/fonts/Coin/index.tsx");
+			const v = e => {
 				const {
 					award: t
 				} = e;
@@ -60,94 +55,70 @@
 					const e = t.description.split("%{coin_symbol}");
 					return n.a.createElement(n.a.Fragment, null, e.map((e, t) => 0 === t ? e : n.a.createElement(n.a.Fragment, {
 						key: e
-					}, n.a.createElement(I.a, null), e)))
+					}, n.a.createElement(E.a, null), e)))
 				}
 				return null
 			};
-			var T = r("./src/reddit/components/AwardTooltip/index.m.less"),
-				L = r.n(T);
-			const k = Object(d.c)({
-					canFlagAwards: e => Object(x.c)(e, {
-						experimentEligibilitySelector: x.a,
-						experimentName: w.Tc
-					}) === w.wd.Enabled,
-					currentUser: g.k,
+			var j = o("./src/reddit/components/AwardTooltip/index.m.less"),
+				I = o.n(j);
+			const N = Object(d.c)({
+					currentUser: x.k,
 					moderatorPermissions: (e, t) => {
 						let {
-							postOrComment: r
+							postOrComment: o
 						} = t;
-						const s = Object(f.K)(e, {
-							thingId: r.id
+						const r = Object(b.K)(e, {
+							thingId: o.id
 						});
-						return s ? Object(C.n)(e, {
-							subredditId: s.id
+						return r ? Object(w.n)(e, {
+							subredditId: r.id
 						}) : null
 					},
 					subreddit: (e, t) => {
 						let {
-							postOrComment: r
+							postOrComment: o
 						} = t;
-						return Object(f.K)(e, {
-							thingId: r.id
+						return Object(b.K)(e, {
+							thingId: o.id
 						})
 					},
 					awardIcon: (e, t) => {
 						let {
-							award: r,
-							postOrComment: s
+							award: o,
+							postOrComment: r
 						} = t;
-						return Object(b.a)(e, {
-							award: r,
+						return Object(h.a)(e, {
+							award: o,
 							minSize: 64,
-							postOrCommentId: s.id
+							postOrCommentId: r.id
 						})
 					}
 				}),
-				A = Object(a.b)(k, (e, t) => {
+				y = Object(i.b)(N, (e, t) => {
 					let {
-						award: r,
-						tooltipId: s
+						tooltipId: o
 					} = t;
 					return {
-						close: () => e(Object(u.h)({
-							tooltipId: s
+						close: () => e(Object(p.h)({
+							tooltipId: o
 						})),
-						onClickPremium: () => e(Object(i.b)("/premium")),
-						reportAward: () => e(Object(p.a)(r))
+						onClickPremium: () => e(Object(a.b)("/premium"))
 					}
 				});
-			class R extends n.a.Component {
-				constructor(e) {
-					super(e), this.state = {
-						isReported: !1
-					}
-				}
+			class T extends n.a.Component {
 				renderReporterButton() {
 					const {
-						isReported: e
-					} = this.state, {
-						award: t,
-						canFlagAwards: r,
-						close: o,
-						onOpenReportFlow: a,
-						reportAward: i
+						close: e,
+						onOpenReportFlow: t
 					} = this.props;
-					return t.awardType !== h.f.Global || r ? n.a.createElement("button", {
-						className: Object(c.a)(L.a.awardReport, {
-							[L.a.isReported]: e
-						}),
+					return n.a.createElement("button", {
+						className: Object(c.a)(I.a.awardReport),
 						onClick: () => {
-							r ? (a(), o()) : e || (i(), this.setState({
-								isReported: !0
-							}))
+							t(), e()
 						}
-					}, e ? s.fbt._("Reported", null, {
-						hk: "4C0VOl"
-					}) : null, e ? n.a.createElement(v.a, {
-						className: L.a.awardReportIcon
-					}) : n.a.createElement(N.a, {
-						className: L.a.awardReportIcon
-					})) : null
+					}, n.a.createElement(_.a, {
+						className: I.a.awardReportIcon
+					}))
 				}
 				renderHideButton() {
 					const {
@@ -155,13 +126,13 @@
 						onHideAward: t
 					} = this.props;
 					return n.a.createElement("button", {
-						className: L.a.awardHide,
+						className: I.a.awardHide,
 						onClick: () => {
 							t(), e()
 						}
-					}, n.a.createElement(E.a, {
-						className: L.a.awardHideIcon
-					}), s.fbt._("Hide", null, {
+					}, n.a.createElement(O.a, {
+						className: I.a.awardHideIcon
+					}), r.fbt._("Hide", null, {
 						hk: "4kciEW"
 					}))
 				}
@@ -169,19 +140,19 @@
 					const {
 						award: e,
 						currentUser: t,
-						onClickPremium: r
-					} = this.props, o = e.awardSubType === h.d.Premium, a = !!t && t.isGold;
-					return o ? a ? null : n.a.createElement(P.k, {
-						className: L.a.premiumCta,
-						onClick: r
-					}, s.fbt._("Get Premium", null, {
+						onClickPremium: o
+					} = this.props, s = e.awardSubType === u.d.Premium, i = !!t && t.isGold;
+					return s ? i ? null : n.a.createElement(g.k, {
+						className: I.a.premiumCta,
+						onClick: o
+					}, r.fbt._("Get Premium", null, {
 						hk: "Yapo5"
 					})) : n.a.createElement("a", {
-						className: L.a.howToLink,
+						className: I.a.howToLink,
 						href: "https://www.reddithelp.com/en/categories/reddit-101/reddit-basics/what-are-awards",
 						target: "_blank",
 						rel: "noopener noreferrer"
-					}, s.fbt._("How do I award?", null, {
+					}, r.fbt._("How do I award?", null, {
 						hk: "RgVTd"
 					}))
 				}
@@ -189,13 +160,13 @@
 					const {
 						award: e,
 						awardIcon: t,
-						currentUser: r,
-						moderatorPermissions: o,
-						postOrComment: a,
-						subreddit: i,
+						currentUser: o,
+						moderatorPermissions: s,
+						postOrComment: i,
+						subreddit: a,
 						tooltipId: d
-					} = this.props, p = e.awardSubType === h.d.Premium, u = r && a.authorId === r.id || Object(l.a)(o);
-					return n.a.createElement(O.a, {
+					} = this.props, p = e.awardSubType === u.d.Premium, h = o && i.authorId === o.id || Object(l.a)(s);
+					return n.a.createElement(f.a, {
 						caretColor: {
 							top: p ? m.a.orangered : m.a.alienblue
 						},
@@ -206,43 +177,43 @@
 						tooltipId: d,
 						defaultTooltipPosition: "top"
 					}, n.a.createElement("div", {
-						className: Object(c.a)(L.a.headerBar, {
-							[L.a.headerBarPremium]: p
+						className: Object(c.a)(I.a.headerBar, {
+							[I.a.headerBarPremium]: p
 						})
-					}, u && this.renderHideButton(), this.renderReporterButton()), n.a.createElement("div", {
-						className: L.a.awardDetails
+					}, h && this.renderHideButton(), this.renderReporterButton()), n.a.createElement("div", {
+						className: I.a.awardDetails
 					}, n.a.createElement("div", {
-						className: L.a.awardIconContainer
+						className: I.a.awardIconContainer
 					}, n.a.createElement("div", {
-						className: L.a.awardIcon,
+						className: I.a.awardIcon,
 						style: {
 							backgroundImage: `url("${t}")`
 						}
 					})), n.a.createElement("div", {
-						className: L.a.awardName
-					}, s.fbt._("{award-name} Award", [s.fbt._param("award-name", e.name)], {
+						className: I.a.awardName
+					}, r.fbt._("{award-name} Award", [r.fbt._param("award-name", e.name)], {
 						hk: "2QpjYF"
 					})), n.a.createElement("p", {
-						className: L.a.awardDescription
-					}, n.a.createElement(y, {
+						className: I.a.awardDescription
+					}, n.a.createElement(v, {
 						award: e
-					})), e.awardType === h.f.Community && i && n.a.createElement("div", {
-						className: L.a.subreddit
-					}, n.a.createElement(_.b, {
-						className: L.a.subredditIcon,
-						subredditOrProfile: i
-					}), `r/${i.name}`), e.awardType === h.f.Moderator && n.a.createElement("div", {
-						className: L.a.subreddit
-					}, n.a.createElement(j.a, {
-						className: Object(c.a)(L.a.subredditIcon, L.a.modShield)
-					}), s.fbt._("Exclusive mod-given Award", null, {
+					})), e.awardType === u.f.Community && a && n.a.createElement("div", {
+						className: I.a.subreddit
+					}, n.a.createElement(C.b, {
+						className: I.a.subredditIcon,
+						subredditOrProfile: a
+					}), `r/${a.name}`), e.awardType === u.f.Moderator && n.a.createElement("div", {
+						className: I.a.subreddit
+					}, n.a.createElement(P.a, {
+						className: Object(c.a)(I.a.subredditIcon, I.a.modShield)
+					}), r.fbt._("Exclusive mod-given Award", null, {
 						hk: "1VGGho"
 					})), this.renderCta()))
 				}
 			}
-			t.default = A(R)
+			t.default = y(T)
 		},
-		"./src/reddit/components/ContentTooltip/index.m.less": function(e, t, r) {
+		"./src/reddit/components/ContentTooltip/index.m.less": function(e, t, o) {
 			e.exports = {
 				StyledTooltipContainer: "_2uSuNRa3OeptFDJCKQ3vU6",
 				styledTooltipContainer: "_2uSuNRa3OeptFDJCKQ3vU6",
@@ -254,36 +225,36 @@
 				caretOnRight: "KRVDnoE1RIC5qyqQLXxGG"
 			}
 		},
-		"./src/reddit/components/ContentTooltip/index.tsx": function(e, t, r) {
+		"./src/reddit/components/ContentTooltip/index.tsx": function(e, t, o) {
 			"use strict";
-			var s = r("./src/higherOrderComponents/addOverlayEvents.tsx"),
-				o = r("./node_modules/react/index.js"),
-				n = r.n(o),
-				a = r("./node_modules/react-redux/es/index.js"),
-				i = r("./node_modules/reselect/es/index.js"),
-				d = r("./src/lib/classNames/index.ts"),
-				c = r("./src/lib/CSSVariableProvider/withTheme.tsx"),
-				l = r("./src/lib/fastdom/index.ts"),
-				m = r("./src/reddit/components/OverlayAwareTooltip/index.tsx"),
-				p = r("./src/reddit/models/Theme/NewColorSystem/index.ts"),
-				u = r("./src/reddit/selectors/tooltip.ts"),
-				h = r("./src/reddit/components/ContentTooltip/index.m.less"),
-				w = r.n(h);
+			var r = o("./src/higherOrderComponents/addOverlayEvents.tsx"),
+				s = o("./node_modules/react/index.js"),
+				n = o.n(s),
+				i = o("./node_modules/react-redux/es/index.js"),
+				a = o("./node_modules/reselect/es/index.js"),
+				d = o("./src/lib/classNames/index.ts"),
+				c = o("./src/lib/CSSVariableProvider/withTheme.tsx"),
+				l = o("./src/lib/fastdom/index.ts"),
+				m = o("./src/reddit/components/OverlayAwareTooltip/index.tsx"),
+				p = o("./src/reddit/models/Theme/NewColorSystem/index.ts"),
+				u = o("./src/reddit/selectors/tooltip.ts"),
+				h = o("./src/reddit/components/ContentTooltip/index.m.less"),
+				w = o.n(h);
 
-			function x() {
-				return (x = Object.assign || function(e) {
+			function b() {
+				return (b = Object.assign || function(e) {
 					for (var t = 1; t < arguments.length; t++) {
-						var r = arguments[t];
-						for (var s in r) Object.prototype.hasOwnProperty.call(r, s) && (e[s] = r[s])
+						var o = arguments[t];
+						for (var r in o) Object.prototype.hasOwnProperty.call(o, r) && (e[r] = o[r])
 					}
 					return e
 				}).apply(this, arguments)
 			}
-			const b = {
+			const x = {
 					height: 200,
 					width: 200
 				},
-				C = e => {
+				f = e => {
 					switch (e) {
 						case "top":
 							return "bottom";
@@ -296,72 +267,72 @@
 							return "top"
 					}
 				},
-				f = Object(c.a)(e => {
+				C = Object(c.a)(e => {
 					const {
 						children: t,
-						className: r,
-						style: s,
-						caretPosition: o,
-						caretColor: a,
-						onClick: i,
+						className: o,
+						style: r,
+						caretPosition: s,
+						caretColor: i,
+						onClick: a,
 						hideCaret: c
 					} = e;
 					return n.a.createElement("div", {
-						onClick: i,
-						className: Object(d.a)(r, w.a.StyledTooltipContainer, {
-							[w.a.caretOnTop]: "top" === o,
-							[w.a.caretOnLeft]: "left" === o,
-							[w.a.caretOnRight]: "right" === o,
-							[w.a.caretOnBottom]: "bottom" === o,
+						onClick: a,
+						className: Object(d.a)(o, w.a.StyledTooltipContainer, {
+							[w.a.caretOnTop]: "top" === s,
+							[w.a.caretOnLeft]: "left" === s,
+							[w.a.caretOnRight]: "right" === s,
+							[w.a.caretOnBottom]: "bottom" === s,
 							[w.a.hideCaret]: c
 						}),
 						style: {
-							...s,
-							"--contentTooltip-caretColor": a && a[o] ? a[o] : Object(p.a)(e).body
+							...r,
+							"--contentTooltip-caretColor": i && i[s] ? i[s] : Object(p.a)(e).body
 						}
 					}, t)
 				}),
-				g = Object(i.c)({
+				g = Object(a.c)({
 					isOpen: (e, t) => {
 						let {
-							tooltipId: r
+							tooltipId: o
 						} = t;
-						return Object(u.b)(r)(e)
+						return Object(u.b)(o)(e)
 					}
 				}),
-				O = Object(m.a)(f, [s.a.Click, s.a.Keydown]),
-				_ = Object(a.b)(g);
-			class P extends n.a.Component {
+				O = Object(m.a)(C, [r.a.Click, r.a.Keydown]),
+				P = Object(i.b)(g);
+			class _ extends n.a.Component {
 				constructor(e) {
 					super(e), this.checkAndSetPosition = () => {
 						const {
 							tooltipId: e,
-							tooltipSizeEstimate: t = b
+							tooltipSizeEstimate: t = x
 						} = this.props;
 						l.a.read(() => {
-							const r = document.getElementById(e);
-							if (!r) return;
-							const s = r.getBoundingClientRect();
+							const o = document.getElementById(e);
+							if (!o) return;
+							const r = o.getBoundingClientRect();
 							if (!("undefined" != typeof window)) return void this.setState({
 								position: this.props.defaultTooltipPosition
 							});
-							let o = !0;
+							let s = !0;
 							switch (this.props.defaultTooltipPosition) {
 								case "bottom":
-									o = window.innerHeight - s.bottom > t.height;
+									s = window.innerHeight - r.bottom > t.height;
 									break;
 								case "left":
-									o = s.left > t.width;
+									s = r.left > t.width;
 									break;
 								case "right":
-									o = s.right <= window.innerWidth - t.width;
+									s = r.right <= window.innerWidth - t.width;
 									break;
 								case "top":
 								default:
-									o = s.top > t.height
+									s = r.top > t.height
 							}
 							this.setState({
-								position: o ? this.props.defaultTooltipPosition : C(this.props.defaultTooltipPosition)
+								position: s ? this.props.defaultTooltipPosition : f(this.props.defaultTooltipPosition)
 							})
 						})
 					}, this.state = {
@@ -399,42 +370,42 @@
 						position: e
 					} = this.state, {
 						targetPosition: t,
-						tooltipPosition: r,
-						caretPosition: s
+						tooltipPosition: o,
+						caretPosition: r
 					} = this.getPositions(e);
-					return n.a.createElement(O, x({}, this.props, {
-						caretPosition: s,
+					return n.a.createElement(O, b({}, this.props, {
+						caretPosition: r,
 						targetPosition: t,
-						tooltipPosition: r
+						tooltipPosition: o
 					}))
 				}
 			}
-			t.a = _(P)
+			t.a = P(_)
 		},
-		"./src/reddit/components/OverlayAwareTooltip/index.tsx": function(e, t, r) {
+		"./src/reddit/components/OverlayAwareTooltip/index.tsx": function(e, t, o) {
 			"use strict";
-			r.d(t, "a", (function() {
+			o.d(t, "a", (function() {
 				return c
 			}));
-			var s = r("./node_modules/react/index.js"),
-				o = r.n(s),
-				n = r("./src/higherOrderComponents/asTooltip.tsx"),
-				a = r("./src/reddit/constants/elementIds.ts"),
-				i = r("./src/reddit/contexts/InsideOverlay.tsx");
+			var r = o("./node_modules/react/index.js"),
+				s = o.n(r),
+				n = o("./src/higherOrderComponents/asTooltip.tsx"),
+				i = o("./src/reddit/constants/elementIds.ts"),
+				a = o("./src/reddit/contexts/InsideOverlay.tsx");
 
 			function d() {
 				return (d = Object.assign || function(e) {
 					for (var t = 1; t < arguments.length; t++) {
-						var r = arguments[t];
-						for (var s in r) Object.prototype.hasOwnProperty.call(r, s) && (e[s] = r[s])
+						var o = arguments[t];
+						for (var r in o) Object.prototype.hasOwnProperty.call(o, r) && (e[r] = o[r])
 					}
 					return e
 				}).apply(this, arguments)
 			}
 
 			function c(e, t) {
-				const r = Object(n.a)(e, t);
-				class s extends o.a.PureComponent {
+				const o = Object(n.a)(e, t);
+				class r extends s.a.PureComponent {
 					constructor() {
 						super(...arguments), this.state = {
 							container: null
@@ -442,115 +413,102 @@
 					}
 					componentDidMount() {
 						if (this.props.isOverlay) {
-							const e = document.getElementById(a.e);
+							const e = document.getElementById(i.e);
 							this.setState({
 								container: e
 							})
 						}
 					}
 					render() {
-						return o.a.createElement(r, d({}, this.props, {
+						return s.a.createElement(o, d({}, this.props, {
 							container: this.state.container,
 							excludeContainerPosition: this.props.isOverlay
 						}))
 					}
 				}
-				return Object(i.b)(s)
+				return Object(a.b)(r)
 			}
 		},
-		"./src/reddit/helpers/hasModPostPermissions/index.ts": function(e, t, r) {
+		"./src/reddit/helpers/hasModPostPermissions/index.ts": function(e, t, o) {
 			"use strict";
 			t.a = e => !!e && !!e.posts
 		},
-		"./src/reddit/icons/fonts/Coin/index.m.less": function(e, t, r) {
+		"./src/reddit/icons/fonts/Coin/index.m.less": function(e, t, o) {
 			e.exports = {
 				CoinIcon: "_12xlue8dQ1odPw1J81FIGQ",
 				coinIcon: "_12xlue8dQ1odPw1J81FIGQ"
 			}
 		},
-		"./src/reddit/icons/fonts/Coin/index.tsx": function(e, t, r) {
+		"./src/reddit/icons/fonts/Coin/index.tsx": function(e, t, o) {
 			"use strict";
-			var s = r("./node_modules/react/index.js"),
-				o = r.n(s),
-				n = r("./src/lib/classNames/index.ts"),
-				a = r("./src/reddit/constants/colors.ts"),
-				i = r("./src/reddit/icons/fonts/helpers.tsx"),
-				d = r("./src/reddit/icons/fonts/Coin/index.m.less"),
-				c = r.n(d);
-			const l = r("./src/lib/lessComponent.tsx").a.wrapped(e => o.a.createElement("i", {
-				className: Object(n.a)(e.className, Object(i.b)("coins", e.isFilled)),
+			var r = o("./node_modules/react/index.js"),
+				s = o.n(r),
+				n = o("./src/lib/classNames/index.ts"),
+				i = o("./src/reddit/constants/colors.ts"),
+				a = o("./src/reddit/icons/fonts/helpers.tsx"),
+				d = o("./src/reddit/icons/fonts/Coin/index.m.less"),
+				c = o.n(d);
+			const l = o("./src/lib/lessComponent.tsx").a.wrapped(e => s.a.createElement("i", {
+				className: Object(n.a)(e.className, Object(a.b)("coins", e.isFilled)),
 				style: {
-					color: e.fillColor || a.a.gold
+					color: e.fillColor || i.a.gold
 				}
 			}), "CoinIcon", c.a);
 			t.a = l
 		},
-		"./src/reddit/icons/svgs/CircleCheck/index.tsx": function(e, t, r) {
+		"./src/reddit/icons/svgs/Hide/index.tsx": function(e, t, o) {
 			"use strict";
-			var s = r("./node_modules/react/index.js"),
-				o = r.n(s);
-			t.a = e => o.a.createElement("svg", {
-				className: e.className,
-				viewBox: "0 0 21 21",
-				xmlns: "http://www.w3.org/2000/svg"
-			}, o.a.createElement("path", {
-				d: "M20.5 10.5C20.5 16.0228 16.0228 20.5 10.5 20.5C4.97715 20.5 0.5 16.0228 0.5 10.5C0.5 4.97715 4.97715 0.5 10.5 0.5C16.0228 0.5 20.5 4.97715 20.5 10.5ZM9.35975 14.8725L15.2398 8.71852L15.2418 8.72352C15.5868 8.36252 15.5868 7.77752 15.2418 7.41752C14.8968 7.05752 14.3388 7.05752 13.9938 7.41752L8.73675 12.9175L7.00675 11.1075C6.66175 10.7475 6.10375 10.7465 5.75875 11.1075C5.41375 11.4685 5.41375 12.0535 5.75875 12.4135L8.11175 14.8735C8.28475 15.0535 8.50975 15.1435 8.73675 15.1435C8.85356 15.143 8.96904 15.1187 9.07615 15.0721C9.18326 15.0256 9.27975 14.9576 9.35975 14.8725Z",
-				fill: "inherit"
-			}))
-		},
-		"./src/reddit/icons/svgs/Hide/index.tsx": function(e, t, r) {
-			"use strict";
-			var s = r("./node_modules/react/index.js"),
-				o = r.n(s);
-			t.a = e => o.a.createElement("svg", {
+			var r = o("./node_modules/react/index.js"),
+				s = o.n(r);
+			t.a = e => s.a.createElement("svg", {
 				className: e.className,
 				xmlns: "http://www.w3.org/2000/svg",
 				viewBox: "0 0 20 20"
-			}, o.a.createElement("g", null, o.a.createElement("path", {
+			}, s.a.createElement("g", null, s.a.createElement("path", {
 				d: "M10,16.25 C8.728,16.25 7.544,15.867 6.556,15.212 L15.212,6.556 C15.867,7.544 16.25,8.728 16.25,10 C16.25,13.4465 13.446,16.25 10,16.25 M3.75,10 C3.75,6.5535 6.554,3.75 10,3.75 C11.272,3.75 12.456,4.133 13.444,4.788 L4.788,13.444 C4.133,12.456 3.75,11.272 3.75,10 M10,1.25 C5.1675,1.25 1.25,5.1675 1.25,10 C1.25,14.8325 5.1675,18.75 10,18.75 C14.8325,18.75 18.75,14.8325 18.75,10 C18.75,5.1675 14.8325,1.25 10,1.25"
 			})))
 		},
-		"./src/reddit/icons/svgs/Moderate/index.tsx": function(e, t, r) {
+		"./src/reddit/icons/svgs/Moderate/index.tsx": function(e, t, o) {
 			"use strict";
-			var s = r("./node_modules/react/index.js"),
-				o = r.n(s),
-				n = r("./src/reddit/constants/colors.ts");
-			t.a = e => o.a.createElement("svg", {
+			var r = o("./node_modules/react/index.js"),
+				s = o.n(r),
+				n = o("./src/reddit/constants/colors.ts");
+			t.a = e => s.a.createElement("svg", {
 				className: e.className,
 				id: e.id,
 				onMouseEnter: e.onMouseEnter,
 				onMouseLeave: e.onMouseLeave,
 				viewBox: "0 0 20 20",
 				xmlns: "http://www.w3.org/2000/svg"
-			}, e.desc && o.a.createElement("desc", null, e.desc), o.a.createElement("path", {
+			}, e.desc && s.a.createElement("desc", null, e.desc), s.a.createElement("path", {
 				d: "M1.88,3.32V9a11.53,11.53,0,0,0,8,11L10,20l.08,0a11.53,11.53,0,0,0,8-11V3.32A11.57,11.57,0,0,1,10,0,11.57,11.57,0,0,1,1.88,3.32"
-			}), o.a.createElement("circle", {
+			}), s.a.createElement("circle", {
 				cx: "18",
 				cy: "3",
 				r: "5",
 				fill: e.isUnread ? "white" : "none"
-			}), o.a.createElement("circle", {
+			}), s.a.createElement("circle", {
 				cx: "18",
 				cy: "3",
 				r: "4",
 				fill: e.isUnread ? n.a.orangered : "none"
 			}))
 		},
-		"./src/reddit/icons/svgs/Report/index.tsx": function(e, t, r) {
+		"./src/reddit/icons/svgs/Report/index.tsx": function(e, t, o) {
 			"use strict";
-			var s = r("./node_modules/react/index.js"),
-				o = r.n(s);
-			t.a = e => o.a.createElement("svg", {
+			var r = o("./node_modules/react/index.js"),
+				s = o.n(r);
+			t.a = e => s.a.createElement("svg", {
 				className: e.className,
 				id: e.id,
 				onMouseEnter: e.onMouseEnter,
 				onMouseLeave: e.onMouseLeave,
 				viewBox: "0 0 20 20",
 				xmlns: "http://www.w3.org/2000/svg"
-			}, o.a.createElement("g", null, o.a.createElement("path", {
+			}, s.a.createElement("g", null, s.a.createElement("path", {
 				d: "M14.7861,8.4019 L16.8831,4.4709 C17.0481,4.1609 17.0381,3.7869 16.8571,3.4849 C16.6771,3.1839 16.3511,2.9999 16.0001,2.9999 L4.0001,2.9999 C3.4471,2.9999 3.0001,3.4479 3.0001,3.9999 L3.0001,8.5869 L3.0001,12.8039 L3.0001,16.8039 C3.0001,17.3569 3.4471,17.8039 4.0001,17.8039 C4.5531,17.8039 5.0001,17.3569 5.0001,16.8039 L5.0001,13.8039 L16.0001,13.8039 C16.3511,13.8039 16.6771,13.6199 16.8571,13.3189 C17.0381,13.0179 17.0481,12.6439 16.8831,12.3339 L14.7861,8.4019 Z"
 			})))
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/AwardTooltip.df8f08d23448842a75db.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/AwardTooltip.d7c0b4edced3d963875f.js.map

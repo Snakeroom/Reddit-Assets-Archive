@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-ModHub-Content-ModQueue.fac1f01b620cff724dff.js
-// Retrieved at 6/6/2022, 7:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-ModHub-Content-ModQueue.26d4f7d2176f50a70ab2.js
+// Retrieved at 6/7/2022, 10:10:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-ModHub-Content-ModQueue"], {
 		"./src/reddit/components/Comments/CompactUnthreadedComment/index.m.less": function(e, t, s) {
@@ -269,7 +269,7 @@
 						[a, i] = Object(b.a)(p.b.CROWD_CONTROL_CAMPAIGN_STORE, {}),
 						d = Object(c.e)(e => Object(g.W)(e, null == r ? void 0 : r.id)),
 						l = Object(h.a)(),
-						f = n === m.sd,
+						f = n === m.rd,
 						k = !(!r || !C.includes(r.name.toLowerCase())),
 						E = !1 === (null == d ? void 0 : d.crowdControlFilter) && 0 === (null == d ? void 0 : d.crowdControlPostLevel),
 						O = !o(a[t]);
@@ -1528,4 +1528,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ModHub-Content-ModQueue.fac1f01b620cff724dff.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ModHub-Content-ModQueue.26d4f7d2176f50a70ab2.js.map
