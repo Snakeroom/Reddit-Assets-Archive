@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SignupUpsell.cf7426fbd759bd8a845b.js
-// Retrieved at 6/7/2022, 11:00:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SignupUpsell.40d7497ecb38b9a55df1.js
+// Retrieved at 6/7/2022, 3:50:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SignupUpsell"], {
 		"./src/reddit/components/Upsell/SSOButton/index.m.less": function(e, t, s) {
@@ -39,9 +39,9 @@
 				r = s("./src/reddit/actions/modal.ts"),
 				a = s("./src/reddit/components/TrackingHelper/index.tsx"),
 				d = s("./src/lib/classNames/index.ts"),
-				u = s("./src/reddit/controls/Button/index.tsx"),
-				p = s("./src/reddit/components/Upsell/SSOButton/index.m.less"),
-				m = s.n(p);
+				p = s("./src/reddit/controls/Button/index.tsx"),
+				u = s("./src/reddit/components/Upsell/SSOButton/index.m.less"),
+				m = s.n(u);
 			var _ = function(e) {
 					let {
 						Icon: t,
@@ -51,14 +51,14 @@
 						iconClassName: o,
 						className: c
 					} = e;
-					return i.createElement(u.t, {
+					return i.createElement(p.t, {
 						className: Object(d.a)(m.a.button, c),
 						Icon: t,
 						iconClassName: Object(d.a)(m.a.icon, o),
-						iconPosition: u.h.L,
+						iconPosition: p.h.L,
 						isFullWidth: !0,
 						onClick: n,
-						priority: u.c.Secondary,
+						priority: p.c.Secondary,
 						redditStyle: !0,
 						size: l
 					}, i.createElement("span", {
@@ -124,10 +124,10 @@
 					onDismiss: t,
 					size: s
 				} = e;
-				const p = Object(a.b)();
+				const u = Object(a.b)();
 				i.useEffect(() => {
-					p(C())
-				}, [p]);
+					u(C())
+				}, [u]);
 				const m = Object(o.d)(),
 					g = () => {
 						m(Object(r.k)({
@@ -141,30 +141,30 @@
 						const e = Object(o.e)(w.b),
 							t = Object(o.e)(w.d),
 							s = Object(o.e)(w.f),
-							l = Object(E.a)(b.uc.Bottom_sheet),
-							i = Object(E.a)(b.uc.Bottom_cell),
-							c = Object(E.a)(b.uc.Bottom_cell_dismissible),
-							r = Object(E.a)(b.uc.Bottom_cell_dismissible_immediate_trigger),
-							a = Object(E.a)(b.uc.Bottom_cell_signup_upsell_copy),
-							d = Object(E.a)(b.uc.Bottom_cell_surprise_install_copy);
-						let u;
-						if (e) u = I;
-						else if (t) u = A;
+							l = Object(E.a)(b.sc.Bottom_sheet),
+							i = Object(E.a)(b.sc.Bottom_cell),
+							c = Object(E.a)(b.sc.Bottom_cell_dismissible),
+							r = Object(E.a)(b.sc.Bottom_cell_dismissible_immediate_trigger),
+							a = Object(E.a)(b.sc.Bottom_cell_signup_upsell_copy),
+							d = Object(E.a)(b.sc.Bottom_cell_surprise_install_copy);
+						let p;
+						if (e) p = I;
+						else if (t) p = A;
 						else {
 							if (!s) throw new Error("Not eligible for signup upsell");
-							u = U
+							p = U
 						}
-						const p = `${n.a.assetPath}/img/upsell/appQrCode/${u}/`;
-						if (l) return `${p}bottom_sheet.png`;
-						if (i) return `${p}bottom_cell.png`;
-						if (c) return `${p}bottom_cell_dismissible.png`;
-						if (e && r) return `${p}bottom_cell_immediate_trigger_dismissible.png`;
-						if (e && a) return `${p}bottom_cell_signup_upsell_copy.png`;
-						if (e && d) return `${p}bottom_cell_surprise_install_copy.png`;
+						const u = `${n.a.assetPath}/img/upsell/appQrCode/${p}/`;
+						if (l) return `${u}bottom_sheet.png`;
+						if (i) return `${u}bottom_cell.png`;
+						if (c) return `${u}bottom_cell_dismissible.png`;
+						if (e && r) return `${u}bottom_cell_immediate_trigger_dismissible.png`;
+						if (e && a) return `${u}bottom_cell_signup_upsell_copy.png`;
+						if (e && d) return `${u}bottom_cell_surprise_install_copy.png`;
 						throw new Error("Invalid variant for signup upsell")
 					}(),
-					y = Object(E.a)(b.uc.Bottom_cell_signup_upsell_copy),
-					D = Object(E.a)(b.uc.Bottom_cell_surprise_install_copy),
+					y = Object(E.a)(b.sc.Bottom_cell_signup_upsell_copy),
+					D = Object(E.a)(b.sc.Bottom_cell_surprise_install_copy),
 					H = y ? l.fbt._("Come join us, we have snacks", null, {
 						hk: "1LUl2W"
 					}) : l.fbt._("Log in or sign up for the best experience", null, {
@@ -186,7 +186,7 @@
 					}),
 					className: S.a.closeButton,
 					onClick: () => {
-						t(), p(h())
+						t(), u(h())
 					},
 					type: "button"
 				}, i.createElement(B.a, null)), i.createElement("div", {
@@ -198,40 +198,40 @@
 				}, i.createElement(_, {
 					Icon: N.a,
 					onClick: () => {
-						f(), p(j(x.Google))
+						f(), u(j(x.Google))
 					},
-					size: u.d.M,
+					size: p.d.M,
 					iconClassName: S.a.googleIcon
 				}, l.fbt._("Continue with Google", null, {
 					hk: "1jIIEZ"
 				})), i.createElement(_, {
 					Icon: O.a,
 					onClick: () => {
-						f(), p(j(x.Apple))
+						f(), u(j(x.Apple))
 					},
-					size: u.d.M,
+					size: p.d.M,
 					iconClassName: S.a.appleIcon,
 					className: S.a.appleButton
 				}, l.fbt._("Continue with Apple", null, {
 					hk: "2Jn3ON"
 				})), i.createElement("div", {
 					className: S.a.bottomWrapper
-				}, i.createElement(u.j, {
+				}, i.createElement(p.j, {
 					className: Object(d.a)(S.a.linkButton, S.a.emailButton),
 					onClick: () => {
-						f(), p(j(x.Reddit))
+						f(), u(j(x.Reddit))
 					},
 					redditStyle: !0,
-					size: u.d.XS
+					size: p.d.XS
 				}, l.fbt._("Continue with Email", null, {
 					hk: "2zvL1n"
-				})), i.createElement(u.j, {
+				})), i.createElement(p.j, {
 					className: S.a.linkButton,
 					onClick: () => {
-						g(), m(Object(c.i)()), p(v())
+						g(), m(Object(c.i)()), u(v())
 					},
 					redditStyle: !0,
-					size: u.d.XS
+					size: p.d.XS
 				}, l.fbt._("Log In", null, {
 					hk: "3HqaJR"
 				})))), i.createElement("div", {
@@ -313,9 +313,9 @@
 			s.d(t, "a", (function() {
 				return d
 			})), s.d(t, "c", (function() {
-				return u
-			})), s.d(t, "e", (function() {
 				return p
+			})), s.d(t, "e", (function() {
+				return u
 			})), s.d(t, "b", (function() {
 				return m
 			})), s.d(t, "d", (function() {
@@ -335,20 +335,20 @@
 					experimentName: e,
 					experimentEligibilitySelector: r,
 					throttledVariants: {
-						[l.uc.Bottom_cell_dismissible]: e,
-						[l.uc.Bottom_cell_dismissible_immediate_trigger]: e,
-						[l.uc.Bottom_sheet]: e
+						[l.sc.Bottom_cell_dismissible]: e,
+						[l.sc.Bottom_cell_dismissible_immediate_trigger]: e,
+						[l.sc.Bottom_sheet]: e
 					},
 					expEventOverride: t
 				})
 			}
-			const d = a(l.Ab, !0),
+			const d = a(l.zb, !0),
+				p = a(l.Ab, !0),
 				u = a(l.Bb, !0),
-				p = a(l.Cb, !0),
-				m = a(l.Ab, !1),
-				_ = a(l.Bb, !1),
-				b = a(l.Cb, !1)
+				m = a(l.zb, !1),
+				_ = a(l.Ab, !1),
+				b = a(l.Bb, !1)
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SignupUpsell.cf7426fbd759bd8a845b.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SignupUpsell.40d7497ecb38b9a55df1.js.map

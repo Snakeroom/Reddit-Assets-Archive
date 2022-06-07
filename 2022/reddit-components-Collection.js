@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Collection.c2f26f409140041c8dbf.js
-// Retrieved at 5/19/2022, 5:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Collection.35ae3b83f29ab26af8dd.js
+// Retrieved at 6/7/2022, 3:50:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Collection"], {
 		"./src/reddit/components/Collection/PostAndPostEventMeta/index.m.less": function(e, t, o) {
@@ -405,10 +405,10 @@
 				isAuthorDeleted: e.isDeleted,
 				isUnstyled: !0
 			}, `u/${e.author}`), te = 100, oe = e => {
-				return e.isOverlay ? h.n + h.b : h.f + h.b
+				return e.isOverlay ? h.m + h.b : h.f + h.b
 			}, se = e => ({
 				top: oe(e),
-				maxHeight: `calc(100vh - ${h.f+(e.isOverlay?h.n:0)+h.b+5}px)`
+				maxHeight: `calc(100vh - ${h.f+(e.isOverlay?h.m:0)+h.b+5}px)`
 			}), ne = Object(v.u)({
 				isProfilePage: v.J,
 				pageLayer: e => e
@@ -742,4 +742,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Collection.c2f26f409140041c8dbf.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Collection.35ae3b83f29ab26af8dd.js.map

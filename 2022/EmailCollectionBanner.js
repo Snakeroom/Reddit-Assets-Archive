@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/EmailCollectionBanner.2b4555ecd3dadb248587.js
-// Retrieved at 6/1/2022, 6:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/EmailCollectionBanner.a6b49e8f3826f47060c8.js
+// Retrieved at 6/7/2022, 3:50:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["EmailCollectionBanner"], {
 		"./src/reddit/components/EmailCollection/Banner/index.m.less": function(e, t, n) {
@@ -31,8 +31,8 @@
 				l = n("./src/reddit/components/EmailCollection/Envelope/index.tsx"),
 				d = n("./node_modules/reselect/es/index.js"),
 				m = n("./src/reddit/constants/componentSizes.ts"),
-				u = n("./src/reddit/helpers/toggleBodyScroll/index.ts"),
-				p = n("./src/reddit/layout/page/Listing/Content.tsx"),
+				p = n("./src/reddit/helpers/toggleBodyScroll/index.ts"),
+				u = n("./src/reddit/layout/page/Listing/Content.tsx"),
 				v = n("./src/reddit/selectors/structuredStyles.ts"),
 				b = n("./src/reddit/selectors/userPrefs.ts"),
 				f = n("./src/reddit/components/LayoutNavigation/ConsiderateNav.tsx"),
@@ -59,7 +59,7 @@
 							marginRight: e
 						} = document.body.style;
 						!!e != !!this.state.bodyScrollOffset && (e ? this.setState({
-							bodyScrollOffset: Object(u.d)(document.body)
+							bodyScrollOffset: Object(p.d)(document.body)
 						}) : this.setState({
 							bodyScrollOffset: 0
 						}))
@@ -85,12 +85,12 @@
 						onBlur: i
 					} = this.props;
 					let c = 0;
-					return s && !e && t && (c += m.u), 0 !== this.state.bodyScrollOffset && (c -= this.state.bodyScrollOffset), a.a.createElement("div", {
+					return s && !e && t && (c += m.t), 0 !== this.state.bodyScrollOffset && (c -= this.state.bodyScrollOffset), a.a.createElement("div", {
 						className: this.props.className
 					}, a.a.createElement(y, {
 						onFocus: r,
 						onBlur: i
-					}, a.a.createElement(p.a, {
+					}, a.a.createElement(u.a, {
 						fitPageToContent: !0
 					}, a.a.createElement(_, {
 						className: n
@@ -112,9 +112,9 @@
 				I = n("./src/reddit/selectors/experiments/emailEnablement.ts"),
 				H = n("./src/reddit/selectors/user.ts"),
 				D = n("./src/reddit/components/EmailCollection/Banner/index.m.less"),
-				M = n.n(D);
+				q = n.n(D);
 			const {
-				fbt: q
+				fbt: M
 			} = n("./node_modules/fbt/lib/FbtPublic.js");
 			t.default = e => {
 				let {
@@ -123,58 +123,58 @@
 				const n = Object(o.d)(),
 					d = Object(j.b)(),
 					m = Object(o.e)(H.k),
-					u = Object(o.e)(I.b);
+					p = Object(o.e)(I.b);
 				Object(s.useEffect)(() => {
 					d(Object(w.f)("banner"))
 				}, [d]);
-				const p = () => {
+				const u = () => {
 					n(Object(c.h)(S.h)), d(Object(w.a)("banner"))
 				};
 				return m ? a.a.createElement("div", {
-					className: Object(r.a)(M.a.wrapper, t)
+					className: Object(r.a)(q.a.wrapper, t)
 				}, a.a.createElement("div", {
-					className: M.a.topLine
+					className: q.a.topLine
 				}), a.a.createElement(L, {
-					containerClassName: M.a.innerContainer,
+					containerClassName: q.a.innerContainer,
 					considerSidebar: !0,
 					render: () => {
 						if (!m) return null;
-						const e = u ? q._("Verify your account", null, {
+						const e = p ? M._("Verify your account", null, {
 								hk: "3lQEit"
-							}) : q._("{username}, add your email to verify your Reddit account.", [q._param("username", Object(P.e)(m))], {
+							}) : M._("{username}, add your email to verify your Reddit account.", [M._param("username", Object(P.e)(m))], {
 								hk: "1WZjMk"
 							}),
-							t = u ? q._("Add an email address to protect access to your account.", null, {
+							t = p ? M._("Add an email address to protect access to your account.", null, {
 								hk: "48ivhL"
-							}) : q._("Verify your email to prevent being locked out of your account.", null, {
+							}) : M._("Verify your email to prevent being locked out of your account.", null, {
 								hk: "27IsZu"
 							});
 						return a.a.createElement("div", {
-							className: M.a.layout
+							className: q.a.layout
 						}, a.a.createElement(l.a, {
-							className: M.a.envelope
+							className: q.a.envelope
 						}), a.a.createElement("div", {
-							className: M.a.text
+							className: q.a.text
 						}, a.a.createElement("div", {
-							className: M.a.header
+							className: q.a.header
 						}, a.a.createElement("h2", {
-							className: M.a.title
+							className: q.a.title
 						}, e), a.a.createElement(k.a, {
-							onClick: p,
+							onClick: u,
 							priority: k.c.Secondary
-						}, q._("Add email", null, {
+						}, M._("Add email", null, {
 							hk: "3kllGi"
 						}))), a.a.createElement("p", {
-							className: M.a.description
+							className: q.a.description
 						}, t)))
 					}
 				}), a.a.createElement("button", {
-					className: M.a.close,
+					className: q.a.close,
 					onClick: () => {
 						n(Object(i.a)()), d(Object(w.e)("banner"))
 					}
 				}, a.a.createElement(B.a, {
-					className: M.a.closeIcon
+					className: q.a.closeIcon
 				}))) : null
 			}
 		},
@@ -226,8 +226,8 @@
 				l = n("./src/reddit/constants/postLayout.ts"),
 				d = n("./src/reddit/constants/screenWidths.ts"),
 				m = n("./src/reddit/contexts/PageLayer/index.tsx"),
-				u = n("./src/reddit/components/LayoutNavigation/ConsiderateNav.m.less"),
-				p = n.n(u),
+				p = n("./src/reddit/components/LayoutNavigation/ConsiderateNav.m.less"),
+				u = n.n(p),
 				v = n("./src/lib/lessComponent.tsx");
 			const b = Object(m.u)(),
 				f = Object(r.c)({
@@ -266,27 +266,27 @@
 				getDynamicStyleTags() {
 					return a.a.createElement(a.a.Fragment, null, a.a.createElement("style", {
 						dangerouslySetInnerHTML: {
-							__html: `\n          .${p.a.Component} {\n            --layoutNavigation-considerateNav-offsetLeft: ${this.props.offsetLeft}px;\n          }\n        `
+							__html: `\n          .${u.a.Component} {\n            --layoutNavigation-considerateNav-offsetLeft: ${this.props.offsetLeft}px;\n          }\n        `
 						}
 					}), this.getLargeLayoutStyle())
 				}
 				getLargeLayoutStyle() {
-					const e = this.props.offsetLeft + 2 * c.m + c.q + c.r,
+					const e = this.props.offsetLeft + 2 * c.l + c.p + c.q,
 						t = d.a - e,
 						n = c.g - t,
 						s = d.a + n + (this.props.bladeOpen ? c.a : 0);
 					return this.props.layout !== l.g.Large ? null : a.a.createElement("style", {
 						dangerouslySetInnerHTML: {
-							__html: `\n            @media (min-width: ${s}px) {\n              .${p.a.Component} {\n                left: calc((100% + var(--layoutNavigation-considerateNav-offsetLeft) - ${c.g+c.q+c.r}px) / 2);\n                right: calc(((100% - var(--layoutNavigation-considerateNav-offsetLeft)) - ${c.r}px) / 2);\n              }\n\n              .${p.a.Component}.${p.a["m-consider-sidebar"]} {\n                right: calc(((100% - var(--layoutNavigation-considerateNav-offsetLeft)) - ${c.g+c.q+c.r}px) / 2);\n              }\n            }\n          `
+							__html: `\n            @media (min-width: ${s}px) {\n              .${u.a.Component} {\n                left: calc((100% + var(--layoutNavigation-considerateNav-offsetLeft) - ${c.g+c.p+c.q}px) / 2);\n                right: calc(((100% - var(--layoutNavigation-considerateNav-offsetLeft)) - ${c.q}px) / 2);\n              }\n\n              .${u.a.Component}.${u.a["m-consider-sidebar"]} {\n                right: calc(((100% - var(--layoutNavigation-considerateNav-offsetLeft)) - ${c.g+c.p+c.q}px) / 2);\n              }\n            }\n          `
 						}
 					})
 				}
 				render() {
-					const e = Object(i.a)(this.props.className, p.a.Component, {
-						[p.a["m-consider-sidebar"]]: this.props.considerSidebar
+					const e = Object(i.a)(this.props.className, u.a.Component, {
+						[u.a["m-consider-sidebar"]]: this.props.considerSidebar
 					});
 					return a.a.createElement("div", {
-						className: p.a.Container
+						className: u.a.Container
 					}, a.a.createElement("div", {
 						className: e,
 						onMouseEnter: this.onMouseEnter,
@@ -300,7 +300,7 @@
 					}, this.getDynamicStyleTags(), this.props.render(this.onClickIcon)))
 				}
 			}
-			t.a = b(h(v.a.wrapped(x, "Component", p.a)))
+			t.a = b(h(v.a.wrapped(x, "Component", u.a)))
 		},
 		"./src/reddit/components/LayoutNavigation/Container.m.less": function(e, t, n) {
 			e.exports = {
@@ -360,4 +360,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EmailCollectionBanner.2b4555ecd3dadb248587.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EmailCollectionBanner.a6b49e8f3826f47060c8.js.map

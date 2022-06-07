@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Premium.1a56ba872f460b90b15d.js
-// Retrieved at 6/7/2022, 11:00:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Premium.478f726e8b4c2cfd01d1.js
+// Retrieved at 6/7/2022, 3:50:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Premium"], {
 		"./src/reddit/endpoints/gold/productCatalog/old.index.ts": function(e, r, t) {
@@ -33,9 +33,9 @@
 			})), t.d(r, "d", (function() {
 				return p
 			})), t.d(r, "c", (function() {
-				return m
-			})), t.d(r, "e", (function() {
 				return b
+			})), t.d(r, "e", (function() {
+				return m
 			})), t.d(r, "f", (function() {
 				return g
 			})), t.d(r, "b", (function() {
@@ -71,15 +71,15 @@
 						pennies: u,
 						rememberCard: l,
 						token: p,
-						savedCardId: m
+						savedCardId: b
 					} = e;
-					const b = {
+					const m = {
 							token: p ? p.id : void 0,
 							coins: r,
 							offer_context: i,
 							pennies: u,
 							remember_card: l,
-							card_id: m,
+							card_id: b,
 							correlation_id: a
 						},
 						g = `${t.apiUrl}/api/v2/gold/stripe/buy_coins`,
@@ -87,9 +87,9 @@
 					return Object(d.a)(Object(s.a)(t, [c.a]), {
 						method: n.jb.POST,
 						endpoint: h,
-						data: b
+						data: m
 					}).then(f)
-				}, m = async e => {
+				}, b = async e => {
 					let {
 						coins: r,
 						context: t,
@@ -98,8 +98,8 @@
 						isOldReddit: u,
 						offerContext: l,
 						pennies: p,
-						rememberCard: m,
-						thingId: b,
+						rememberCard: b,
+						thingId: m,
 						token: g,
 						savedCardId: h
 					} = e;
@@ -112,11 +112,11 @@
 						coins: r,
 						offer_context: l,
 						pennies: p,
-						thing_id: b,
+						thing_id: m,
 						gild_type: O,
 						message: P ? P.trim() : "",
 						is_anonymous: j,
-						remember_card: m,
+						remember_card: b,
 						card_id: h,
 						correlation_id: a
 					}, _ = `${t.apiUrl}/api/v2/gold/stripe/buy_coins_and_gild`, x = u ? _ : Object(o.a)(_);
@@ -125,7 +125,7 @@
 						endpoint: x,
 						data: y
 					}).then(f)
-				}, b = async e => {
+				}, m = async e => {
 					let {
 						context: r,
 						correlationId: t,
@@ -134,22 +134,22 @@
 						pennies: u,
 						rememberCard: l,
 						thingId: p,
-						token: m,
-						savedCardId: b
+						token: b,
+						savedCardId: m
 					} = e;
 					const {
 						gildType: g,
 						isAnonymous: h,
 						message: O
 					} = a, j = {
-						token: m ? m.id : void 0,
+						token: b ? b.id : void 0,
 						thing_id: p,
 						award_id: g,
 						message: O ? O.trim() : "",
 						is_anonymous: h,
 						pennies: u,
 						remember_card: l,
-						card_id: b,
+						card_id: m,
 						correlation_id: t
 					}, P = `${r.apiUrl}/api/v2/gold/stripe/buy_award`, y = i ? P : Object(o.a)(P);
 					return Object(d.a)(Object(s.a)(r, [c.a]), {
@@ -227,9 +227,9 @@
 			})), t.d(r, "h", (function() {
 				return p
 			})), t.d(r, "e", (function() {
-				return m
-			})), t.d(r, "d", (function() {
 				return b
+			})), t.d(r, "d", (function() {
+				return m
 			})), t.d(r, "b", (function() {
 				return g
 			})), t.d(r, "c", (function() {
@@ -257,29 +257,29 @@
 			}));
 			var n = t("./src/reddit/constants/experiments.ts"),
 				d = t("./src/reddit/selectors/experiments/econ/simpleExperiment.ts");
-			const a = Object(d.a)(n.ed),
-				s = Object(d.a)(n.cd),
-				i = Object(d.a)(n.fd),
-				c = Object(d.a)(n.bd),
-				o = Object(d.a)(n.ad),
-				u = Object(d.a)(n.hd),
-				l = Object(d.a)(n.gd),
-				f = Object(d.a)(n.Xc),
-				p = Object(d.a)(n.Vc),
-				m = Object(d.a)(n.Pc),
-				b = Object(d.a)(n.Qc),
-				g = Object(d.a)(n.Nc),
-				h = Object(d.a)(n.Oc),
-				O = Object(d.a)(n.Sc),
-				j = Object(d.a)(n.Mc),
-				P = Object(d.a)(n.Yc),
-				y = Object(d.a)(n.Zc),
-				_ = Object(d.a)(n.dd),
-				x = Object(d.a)(n.id),
-				v = Object(d.a)(n.kd),
-				k = Object(d.a)(n.nd),
-				C = Object(d.a)(n.md),
-				I = Object(d.a)(n.ld)
+			const a = Object(d.a)(n.cd),
+				s = Object(d.a)(n.ad),
+				i = Object(d.a)(n.dd),
+				c = Object(d.a)(n.Zc),
+				o = Object(d.a)(n.Yc),
+				u = Object(d.a)(n.fd),
+				l = Object(d.a)(n.ed),
+				f = Object(d.a)(n.Vc),
+				p = Object(d.a)(n.Tc),
+				b = Object(d.a)(n.Nc),
+				m = Object(d.a)(n.Oc),
+				g = Object(d.a)(n.Lc),
+				h = Object(d.a)(n.Mc),
+				O = Object(d.a)(n.Qc),
+				j = Object(d.a)(n.Kc),
+				P = Object(d.a)(n.Wc),
+				y = Object(d.a)(n.Xc),
+				_ = Object(d.a)(n.bd),
+				x = Object(d.a)(n.gd),
+				v = Object(d.a)(n.id),
+				k = Object(d.a)(n.ld),
+				C = Object(d.a)(n.kd),
+				I = Object(d.a)(n.jd)
 		},
 		"./src/reddit/selectors/goldPurchaseModals.ts": function(e, r, t) {
 			"use strict";
@@ -300,9 +300,9 @@
 			})), t.d(r, "a", (function() {
 				return p
 			})), t.d(r, "n", (function() {
-				return m
-			})), t.d(r, "o", (function() {
 				return b
+			})), t.d(r, "o", (function() {
+				return m
 			})), t.d(r, "c", (function() {
 				return g
 			})), t.d(r, "h", (function() {
@@ -330,9 +330,9 @@
 			})), t.d(r, "m", (function() {
 				return w
 			})), t.d(r, "e", (function() {
-				return S
-			})), t.d(r, "d", (function() {
 				return M
+			})), t.d(r, "d", (function() {
+				return S
 			}));
 			var n = t("./src/reddit/selectors/gold/purchaseCatalog.ts"),
 				d = t("./src/lib/initializeClient/installReducer.ts"),
@@ -354,8 +354,8 @@
 						t = (e => e.features.goldPurchase.premiumPurchaseModal.packageId)(e);
 					return r.length && t && r.find(e => e.mobileId === t) || null
 				},
-				m = e => e.features.goldPurchase.premiumPurchaseModal.activePage,
-				b = e => e.features.goldPurchase.premiumPurchaseModal.showModal,
+				b = e => e.features.goldPurchase.premiumPurchaseModal.activePage,
+				m = e => e.features.goldPurchase.premiumPurchaseModal.showModal,
 				g = e => e.features.goldPurchase.payment.paymentMethod,
 				h = e => e.features.goldPurchase.payment.cardName,
 				O = e => e.features.goldPurchase.payment.postalCode,
@@ -369,8 +369,8 @@
 				C = e => e.features.goldPurchase.payment.cardValidation.nameOnCard,
 				I = e => e.features.goldPurchase.payment.stripeToken.errorMessage,
 				w = e => e.features.goldPurchase.payment.stripeToken.pending,
-				S = e => e.features.goldPurchase.payment.paypal.passthrough,
-				M = e => e.features.goldPurchase.payment.paypal.errorMessage
+				M = e => e.features.goldPurchase.payment.paypal.passthrough,
+				S = e => e.features.goldPurchase.payment.paypal.errorMessage
 		},
 		"./src/redditGQL/operations/ChangeStripePaymentMethod.json": function(e) {
 			e.exports = JSON.parse('{"id":"ce700fb9b230"}')
@@ -383,4 +383,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Premium.1a56ba872f460b90b15d.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Premium.478f726e8b4c2cfd01d1.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~ModerationPages~PostCreation~Profile~9a5d9fab.cf146513de3bd884a8f5.js
-// Retrieved at 6/7/2022, 11:00:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~ModerationPages~PostCreation~Profile~9a5d9fab.88a94443fd963b7a9342.js
+// Retrieved at 6/7/2022, 3:50:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~ModerationPages~PostCreation~Profile~9a5d9fab"], {
 		"./src/higherOrderComponents/withClickTracking/index.tsx": function(e, t, s) {
@@ -85,16 +85,16 @@
 			const p = Object(r.a)(e => {
 				const t = Object(m.c)(e, {
 					experimentEligibilitySelector: m.a,
-					experimentName: u.ee
+					experimentName: u.ce
 				});
-				return Object(u.Sf)(t) ? void 0 : t
+				return Object(u.Qf)(t) ? void 0 : t
 			}, e => {
 				const t = Object(m.c)(e, {
 					experimentEligibilitySelector: m.a,
-					experimentName: u.fe
+					experimentName: u.de
 				});
-				return Object(u.Sf)(t) ? void 0 : t
-			}, (e, t) => e === u.je.Enabled && t === u.je.Enabled);
+				return Object(u.Qf)(t) ? void 0 : t
+			}, (e, t) => e === u.he.Enabled && t === u.he.Enabled);
 			var h = s("./src/config.ts");
 			var b = s("./src/reddit/selectors/user.ts");
 			const g = e => {
@@ -1175,7 +1175,7 @@
 				Ee = 1200,
 				ye = 75,
 				Oe = "player.js",
-				we = G.r + G.q,
+				we = G.q + G.p,
 				Ce = e => u.a.createElement("div", {
 					className: Object(x.a)(he.a.visibilityWrapper, {
 						[he.a.displayNone]: !e.isVisible
@@ -1417,7 +1417,7 @@
 				getVideoExpandoMaxDimensions() {
 					let e, t = Math.max(ee.j, this.state.viewportHeight),
 						s = Math.min(Ee, 16 * t / 9);
-					s === Ee && (t = 9 * Ee / 16), e = this.state.viewportWidth >= $.c ? this.state.viewportWidth < G.l ? this.state.viewportWidth - we - 2 * ye : this.state.viewportWidth - we - G.e - 2 * ye : this.state.viewportWidth - 2 * ye;
+					s === Ee && (t = 9 * Ee / 16), e = this.state.viewportWidth >= $.c ? this.state.viewportWidth < G.k ? this.state.viewportWidth - we - 2 * ye : this.state.viewportWidth - we - G.e - 2 * ye : this.state.viewportWidth - 2 * ye;
 					const i = this.state.viewportHeight - 2 * ye;
 					if (s > e) {
 						t *= e / s, s = e
@@ -2277,8 +2277,8 @@
 				const d = (e => {
 					return Object(n.c)(e, {
 						experimentEligibilitySelector: n.a,
-						experimentName: i.Mb
-					}) === i.qd
+						experimentName: i.Lb
+					}) === i.od
 				})(e);
 				if (!d) return !1;
 				const l = Object(a.f)(e),
@@ -2356,4 +2356,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~ModerationPages~PostCreation~Profile~9a5d9fab.cf146513de3bd884a8f5.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~ModerationPages~PostCreation~Profile~9a5d9fab.88a94443fd963b7a9342.js.map

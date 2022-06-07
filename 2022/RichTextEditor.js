@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/RichTextEditor.f3d6358776bbe59e51f8.js
-// Retrieved at 6/7/2022, 11:00:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/RichTextEditor.592562d84be5cfbf46ae.js
+// Retrieved at 6/7/2022, 3:50:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["RichTextEditor", "ContributorRequestButton"], {
 		"./node_modules/autosize/dist/autosize.js": function(e, t, n) {
@@ -577,8 +577,8 @@
 				re = n("./node_modules/reselect/es/index.js");
 			const ie = Object(re.a)(e => Object(se.c)(e, {
 				experimentEligibilitySelector: se.a,
-				experimentName: oe.Db
-			}), e => e === oe.qd);
+				experimentName: oe.Cb
+			}), e => e === oe.od);
 			var ae = n("./src/reddit/selectors/experiments/contributeBeforeSignUp.ts"),
 				de = n("./src/reddit/selectors/experiments/emailEnablement.ts"),
 				ce = n("./src/reddit/selectors/platform.ts"),
@@ -1852,7 +1852,7 @@
 				getWrapperHeight() {
 					if (!this.textAreaRef) return;
 					const e = Object(l.findDOMNode)(this.textAreaRef);
-					return e instanceof Element ? e.getBoundingClientRect().height + fe + ge + V.o : void 0
+					return e instanceof Element ? e.getBoundingClientRect().height + fe + ge + V.n : void 0
 				}
 				render() {
 					const {
@@ -4907,29 +4907,29 @@
 					if (Object(i.a)(e)) return !1;
 					return Object(s.c)(e, {
 						experimentEligibilitySelector: r.e,
-						experimentName: o.Of
-					}) === o.qd
+						experimentName: o.Mf
+					}) === o.od
 				},
 				d = e => {
 					return Object(s.c)(e, {
 						experimentEligibilitySelector: r.e,
-						experimentName: o.Pf
-					}) === o.qd
+						experimentName: o.Nf
+					}) === o.od
 				},
 				c = e => {
 					if (Object(i.a)(e)) return !1;
 					const t = Object(s.c)(e, {
 						experimentEligibilitySelector: r.e,
-						experimentName: o.Nf
+						experimentName: o.Lf
 					});
-					return t === o.Ef.TypingIndicators || t === o.Ef.IndicatorsPlusCTA
+					return t === o.Cf.TypingIndicators || t === o.Cf.IndicatorsPlusCTA
 				},
 				l = e => {
 					if (Object(i.a)(e)) return !1;
 					const t = Object(r.d)(e, {
-						experimentName: o.Nf
+						experimentName: o.Lf
 					});
-					return (null == t ? void 0 : t.variant) === o.Ef.IndicatorsPlusCTA
+					return (null == t ? void 0 : t.variant) === o.Cf.IndicatorsPlusCTA
 				}
 		},
 		"./src/redditGQL/operations/CommentToxicity.json": function(e) {
@@ -4946,4 +4946,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RichTextEditor.f3d6358776bbe59e51f8.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RichTextEditor.592562d84be5cfbf46ae.js.map
