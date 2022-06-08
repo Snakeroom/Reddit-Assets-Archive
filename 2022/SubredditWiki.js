@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditWiki.0385cb91dae5fac1e1b6.js
-// Retrieved at 6/7/2022, 3:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditWiki.20a4b6af7b5614fdfc34.js
+// Retrieved at 6/8/2022, 10:20:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditWiki"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -3721,12 +3721,12 @@
 						rtJsonElementProps: o
 					});
 					switch (i) {
-						case h.uf.SmIcon:
+						case h.vf.SmIcon:
 							return n.a.createElement(p, {
 								subredditName: r,
 								rtJsonElementProps: o
 							});
-						case h.uf.SmIconHc:
+						case h.vf.SmIconHc:
 							return n.a.createElement(p, {
 								subredditName: r,
 								isHoverable: !0,
@@ -4152,7 +4152,7 @@
 						} = t;
 						return Object(Me.c)(e, s)
 					},
-					isInNewModuleNCPV3Experiment: e => Object(Fe.a)(e) === Pe.te.NewModule,
+					isInNewModuleNCPV3Experiment: e => Object(Fe.a)(e) === Pe.ue.NewModule,
 					showGovernance: Te.d.spPoints,
 					showLeaderboard: Te.d.spLeaderboard,
 					showPredictionsLeaderboard: (e, t) => {
@@ -4348,7 +4348,7 @@
 				flairStyleTemplate: c.W,
 				hideNSFWPref: b.F,
 				isActive: p.j,
-				moderatorPermissions: u.m,
+				moderatorPermissions: u.n,
 				modModeEnabled: c.U,
 				showEditFlair: m.a
 			}), (e, t) => {
@@ -5215,12 +5215,12 @@
 				a = e => {
 					return Object(i.c)(e, {
 						experimentEligibilitySelector: d,
-						experimentName: r.nf
+						experimentName: r.of
 					}) || ""
 				},
 				c = e => {
 					const t = a(e);
-					return t === r.uf.SmIcon || t === r.uf.SmIconHc
+					return t === r.vf.SmIcon || t === r.vf.SmIconHc
 				},
 				l = (e, t) => {
 					let {
@@ -5246,4 +5246,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditWiki.0385cb91dae5fac1e1b6.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditWiki.20a4b6af7b5614fdfc34.js.map

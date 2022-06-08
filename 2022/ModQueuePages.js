@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModQueuePages.94c61bc5561560177c4c.js
-// Retrieved at 6/7/2022, 3:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModQueuePages.0324ecafa71e06c8b194.js
+// Retrieved at 6/8/2022, 10:20:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModQueuePages"], {
 		"./node_modules/lodash/includes.js": function(e, t, s) {
@@ -2339,7 +2339,7 @@
 					currentPageUrl: N.f
 				}),
 				F = Object(d.c)({
-					moderatingSubreddits: R.o,
+					moderatingSubreddits: R.p,
 					origin: S.j
 				}),
 				B = Object(i.b)(F),
@@ -3008,7 +3008,7 @@
 					dropdownIsOpen: Object(st.b)(ht),
 					flairData: et.d,
 					isApiPending: _e.a,
-					moderatorPermissions: $e.n,
+					moderatorPermissions: $e.o,
 					posts: tt.J,
 					selectedItems: _e.g
 				}),
@@ -4722,12 +4722,12 @@
 						rtJsonElementProps: a
 					});
 					switch (o) {
-						case h.uf.SmIcon:
+						case h.vf.SmIcon:
 							return r.a.createElement(p, {
 								subredditName: n,
 								rtJsonElementProps: a
 							});
-						case h.uf.SmIconHc:
+						case h.vf.SmIconHc:
 							return r.a.createElement(p, {
 								subredditName: n,
 								isHoverable: !0,
@@ -5566,7 +5566,7 @@
 						return r()([...Object(c.a)(s.search)])
 					}
 				}),
-				V = Object(d.a)(H, b.S, x.o, (e, t) => {
+				V = Object(d.a)(H, b.S, x.p, (e, t) => {
 					let {
 						match: s
 					} = t;
@@ -5742,12 +5742,12 @@
 				d = e => {
 					return Object(o.c)(e, {
 						experimentEligibilitySelector: i,
-						experimentName: n.nf
+						experimentName: n.of
 					}) || ""
 				},
 				c = e => {
 					const t = d(e);
-					return t === n.uf.SmIcon || t === n.uf.SmIconHc
+					return t === n.vf.SmIcon || t === n.vf.SmIconHc
 				},
 				l = (e, t) => {
 					let {
@@ -5773,4 +5773,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModQueuePages.94c61bc5561560177c4c.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModQueuePages.0324ecafa71e06c8b194.js.map

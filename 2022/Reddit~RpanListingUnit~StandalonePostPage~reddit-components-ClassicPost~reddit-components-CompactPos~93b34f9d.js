@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Reddit~RpanListingUnit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPos~93b34f9d.189e2922870529be967d.js
-// Retrieved at 6/7/2022, 3:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Reddit~RpanListingUnit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPos~93b34f9d.17dddcdc3552daec060b.js
+// Retrieved at 6/8/2022, 10:20:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Reddit~RpanListingUnit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPos~93b34f9d"], {
 		"./src/lib/memoizeByReference/index.ts": function(e, t, n) {
@@ -593,7 +593,7 @@
 			const I = Object(d.a)(e => e && Object(u.c)(e)),
 				E = Object(c.c)({
 					areFlairRestrictionsEnabled: l.d.flairRestrictions,
-					isModerator: f.g
+					isModerator: f.h
 				}),
 				S = Object(a.b)(E);
 			t.a = S(e => {
@@ -2322,7 +2322,7 @@
 					});
 					return !(!n || n.isSponsored || n.removedByCategory) && (Object(c.Db)(e, {
 						postId: t
-					}) || !!Object(s.m)(e, {
+					}) || !!Object(s.n)(e, {
 						postId: t
 					}))
 				}
@@ -2342,17 +2342,17 @@
 					return Object(o.c)(e, {
 						experimentEligibilitySelector: e => ((e, t) => Object(a.Db)(e, {
 							postId: t
-						}) || !!Object(s.m)(e, {
+						}) || !!Object(s.n)(e, {
 							postId: t
 						}) || Object(a.N)(e))(e, t),
-						experimentName: r.R
-					}) === r.od
+						experimentName: r.S
+					}) === r.pd
 				},
 				i = e => {
 					return Object(o.c)(e, {
 						experimentEligibilitySelector: a.Q,
-						experimentName: r.Ge
-					}) === r.od
+						experimentName: r.He
+					}) === r.pd
 				}
 		},
 		"./src/reddit/selectors/gild.ts": function(e, t, n) {
@@ -2589,4 +2589,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit~RpanListingUnit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPos~93b34f9d.189e2922870529be967d.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit~RpanListingUnit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPos~93b34f9d.17dddcdc3552daec060b.js.map

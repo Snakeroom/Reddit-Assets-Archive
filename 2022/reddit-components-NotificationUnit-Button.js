@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-NotificationUnit-Button.7354e6c8204e320855a1.js
-// Retrieved at 6/7/2022, 3:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-NotificationUnit-Button.b7d5513c982ec6bca438.js
+// Retrieved at 6/8/2022, 10:20:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-NotificationUnit-Button"], {
 		"./src/lib/scroll/index.ts": function(t, e, n) {
@@ -226,8 +226,8 @@
 				it = n("./node_modules/reselect/es/index.js");
 			const st = Object(it.a)(t => Object(rt.c)(t, {
 				experimentEligibilitySelector: rt.a,
-				experimentName: ot.Cb
-			}), t => t === ot.od);
+				experimentName: ot.Db
+			}), t => t === ot.pd);
 			var ct = n("./src/reddit/selectors/experiments/contributeBeforeSignUp.ts"),
 				at = n("./src/reddit/selectors/experiments/emailEnablement.ts"),
 				dt = n("./src/reddit/selectors/platform.ts"),
@@ -1235,7 +1235,7 @@
 						let {
 							postId: n
 						} = e;
-						const o = Object(U.m)(t, {
+						const o = Object(U.n)(t, {
 							postId: n
 						});
 						return !!o && o.posts
@@ -1247,7 +1247,7 @@
 							postId: n
 						} = e;
 						const o = Object(B.v)(t),
-							r = !!Object(U.m)(t, {
+							r = !!Object(U.n)(t, {
 								postId: n
 							}),
 							i = Object(F.G)(t, {
@@ -2817,11 +2817,11 @@
 				l = Object(o.a)(d, t => !!t),
 				u = t => {
 					const e = d(t);
-					return !!e && a(t, e) === r.Z.SkipOnboarding
+					return !!e && a(t, e) === r.ab.SkipOnboarding
 				},
 				m = t => {
 					const e = d(t);
-					return !!e && a(t, e) === r.Z.RegOnboarding
+					return !!e && a(t, e) === r.ab.RegOnboarding
 				}
 		},
 		"./src/redditGQL/operations/CommentToxicity.json": function(t) {
@@ -2838,4 +2838,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-NotificationUnit-Button.7354e6c8204e320855a1.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-NotificationUnit-Button.b7d5513c982ec6bca438.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Settings.6c2cd494bb9fddca5aee.js
-// Retrieved at 6/7/2022, 5:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Settings.b9b7c1d3f0fe3696e3a3.js
+// Retrieved at 6/8/2022, 10:20:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Settings"], {
 		"./node_modules/moment/locale sync recursive ^\\.\\/.*$": function(e, t, n) {
@@ -2878,7 +2878,7 @@
 			const {
 				fbt: te
 			} = n("./node_modules/fbt/lib/FbtPublic.js"), ne = Object(o.c)({
-				hasModMailPermissions: Object(u.b)(Z.c.mail),
+				hasModMailPermissions: Object(u.c)(Z.c.mail),
 				isUserBanned: (e, t) => !!Object(X.b)(e, {
 					subredditId: t.subredditId,
 					username: t.username
@@ -3191,7 +3191,7 @@
 						let {
 							subredditId: n
 						} = t;
-						return n ? Object(u.n)(e, {
+						return n ? Object(u.o)(e, {
 							subredditId: n
 						}) : void 0
 					},
@@ -3236,7 +3236,7 @@
 						} = t;
 						const s = Object(C.e)(e),
 							r = n || s && Object(g.F)(e, s.name);
-						return !!r && Object(u.i)(e, r)
+						return !!r && Object(u.j)(e, r)
 					},
 					trophyCase: (e, t) => Object(h.r)(e, Object(h.m)(e, t.userName)),
 					isNightMode: _.db,
@@ -10473,8 +10473,8 @@
 				re = n("./src/reddit/helpers/chooseVariant/index.ts");
 			const ae = Object(c.a)(e => Object(re.c)(e, {
 				experimentEligibilitySelector: I.Q,
-				experimentName: se.N
-			}), e => e === se.X.Enabled);
+				experimentName: se.O
+			}), e => e === se.Y.Enabled);
 			var oe = n("./src/reddit/selectors/meta.ts"),
 				ie = n("./src/reddit/components/Settings/AccountPrefsSection/index.m.less"),
 				ce = n.n(ie);
@@ -12298,8 +12298,8 @@
 				}), e => e === se.c.Enabled),
 				dr = Object(c.a)(e => Object(re.c)(e, {
 					experimentEligibilitySelector: I.Q,
-					experimentName: se.M
-				}), e => e === se.V.Enabled);
+					experimentName: se.N
+				}), e => e === se.W.Enabled);
 			var mr = n("./src/lib/hooks/usePrevious.ts"),
 				ur = n("./src/telemetry/models/Event.ts");
 			const pr = Se.a.span("SubheaderLink", an.a),
@@ -13521,9 +13521,9 @@
 					},
 					isDspEnabled: e => {
 						return Object(re.c)(e, {
-							experimentName: se.Hc,
+							experimentName: se.Ic,
 							experimentEligibilitySelector: re.a
-						}) === se.od
+						}) === se.pd
 					}
 				}),
 				ho = Object(ge.u)(),
@@ -14059,7 +14059,7 @@
 			const o = e => Object(r.c)(e, {
 				experimentName: s.G,
 				experimentEligibilitySelector: () => Object(a.P)(e)
-			}) === s.od
+			}) === s.pd
 		},
 		"./src/reddit/selectors/experiments/econ/marketplace.ts": function(e, t, n) {
 			"use strict";
@@ -14073,13 +14073,13 @@
 			const a = e => {
 					return !(Object(r.c)(e, {
 						experimentEligibilitySelector: r.a,
-						experimentName: s.Vd
-					}) === s.od)
+						experimentName: s.Wd
+					}) === s.pd)
 				},
 				o = e => Object(r.c)(e, {
 					experimentEligibilitySelector: r.a,
-					experimentName: s.Wd
-				}) === s.od
+					experimentName: s.Xd
+				}) === s.pd
 		},
 		"./src/reddit/selectors/gold/productOffers.ts": function(e, t, n) {
 			"use strict";
@@ -14249,4 +14249,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Settings.6c2cd494bb9fddca5aee.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Settings.b9b7c1d3f0fe3696e3a3.js.map

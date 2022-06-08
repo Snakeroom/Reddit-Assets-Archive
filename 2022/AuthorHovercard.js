@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/AuthorHovercard.15400dfb892f4a969869.js
-// Retrieved at 6/7/2022, 3:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/AuthorHovercard.2f313d2355739a9ac0aa.js
+// Retrieved at 6/8/2022, 10:20:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["AuthorHovercard"], {
 		"./src/lib/constants/colors.ts": function(e, t, n) {
@@ -1437,7 +1437,7 @@
 			const {
 				fbt: te
 			} = n("./node_modules/fbt/lib/FbtPublic.js"), ne = Object(s.c)({
-				hasModMailPermissions: Object(m.b)(X.c.mail),
+				hasModMailPermissions: Object(m.c)(X.c.mail),
 				isUserBanned: (e, t) => !!Object(Y.b)(e, {
 					subredditId: t.subredditId,
 					username: t.username
@@ -1750,7 +1750,7 @@
 						let {
 							subredditId: n
 						} = t;
-						return n ? Object(m.n)(e, {
+						return n ? Object(m.o)(e, {
 							subredditId: n
 						}) : void 0
 					},
@@ -1795,7 +1795,7 @@
 						} = t;
 						const r = Object(g.e)(e),
 							a = n || r && Object(v.F)(e, r.name);
-						return !!a && Object(m.i)(e, a)
+						return !!a && Object(m.j)(e, a)
 					},
 					trophyCase: (e, t) => Object(f.r)(e, Object(f.m)(e, t.userName)),
 					isNightMode: I.db,
@@ -3051,9 +3051,9 @@
 						}) : void 0),
 						h = !!(null == f ? void 0 : f.templateIds) && (null === (t = null == f ? void 0 : f.templateIds) || void 0 === t ? void 0 : t.length) > 0,
 						v = !!(null === (n = null == f ? void 0 : f.displaySettings) || void 0 === n ? void 0 : n.isEnabled),
-						x = Object(o.e)(t => Object(ft.b)(bt.c.access)(t, e)),
-						I = Object(o.e)(t => Object(ft.b)(bt.c.mail)(t, e)),
-						_ = Object(o.e)(t => Object(ft.b)(bt.c.flair)(t, e)),
+						x = Object(o.e)(t => Object(ft.c)(bt.c.access)(t, e)),
+						I = Object(o.e)(t => Object(ft.c)(bt.c.mail)(t, e)),
+						_ = Object(o.e)(t => Object(ft.c)(bt.c.flair)(t, e)),
 						O = Object(o.e)(e => Object(N.Ab)(e, {
 							userName: u
 						})),
@@ -5895,13 +5895,13 @@
 			const o = e => {
 					return !(Object(a.c)(e, {
 						experimentEligibilitySelector: a.a,
-						experimentName: r.Vd
-					}) === r.od)
+						experimentName: r.Wd
+					}) === r.pd)
 				},
 				s = e => Object(a.c)(e, {
 					experimentEligibilitySelector: a.a,
-					experimentName: r.Wd
-				}) === r.od
+					experimentName: r.Xd
+				}) === r.pd
 		},
 		"./src/reddit/selectors/experiments/hotPotato.ts": function(e, t, n) {
 			"use strict";
@@ -5925,7 +5925,7 @@
 					if (!u(e)) return;
 					const t = Object(s.c)(e, {
 						experimentEligibilitySelector: l,
-						experimentName: o.Hd,
+						experimentName: o.Id,
 						expEventOverride: !1
 					});
 					return null == t ? void 0 : t.toLocaleLowerCase()
@@ -5948,9 +5948,9 @@
 				},
 				p = e => !!m(e) && Object(s.c)(e, {
 					experimentEligibilitySelector: u,
-					experimentName: o.Id,
+					experimentName: o.Jd,
 					expEventOverride: !1
-				}) !== o.Jd.Readonly
+				}) !== o.Kd.Readonly
 		},
 		"./src/reddit/selectors/notificationPrefs.ts": function(e, t, n) {
 			"use strict";
@@ -6110,4 +6110,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/AuthorHovercard.15400dfb892f4a969869.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/AuthorHovercard.2f313d2355739a9ac0aa.js.map

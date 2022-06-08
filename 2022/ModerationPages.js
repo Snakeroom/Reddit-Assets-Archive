@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModerationPages.2999d9dbb5632098d4b7.js
-// Retrieved at 6/7/2022, 5:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModerationPages.d3f6c45ce9461367de54.js
+// Retrieved at 6/8/2022, 10:20:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModerationPages"], {
 		"./node_modules/lodash/_arrayAggregator.js": function(e, t) {
@@ -1204,7 +1204,7 @@
 				me && !Object(xe.b)(G, me) && await t(Object(A.g)(me));
 				const _e = !!me && Object(xe.c)(ae, me),
 					ke = Object(ue.t)(G),
-					ye = Object(pe.n)(ae, {
+					ye = Object(pe.o)(ae, {
 						subredditId: Ce
 					}),
 					Oe = k && Object(y.w)(ae, {
@@ -6813,7 +6813,7 @@
 					isExpanded: S.m,
 					showPromotedCTA: ve.a,
 					layout: ie.S,
-					moderatorPermissions: y.m,
+					moderatorPermissions: y.n,
 					poll: (e, t) => {
 						const s = e.posts.metaMap[t.postId];
 						if (s) return e.polls.models[s]
@@ -6823,7 +6823,7 @@
 						let {
 							subreddit: s
 						} = t;
-						return !!s && Object(y.i)(e, s.id)
+						return !!s && Object(y.j)(e, s.id)
 					}
 				}),
 				Ne = (e, t) => {
@@ -7398,12 +7398,12 @@
 					setValueOnDismiss: s,
 					checkIfDismissed: n
 				} = e;
-				const a = Object(l.a)(i.S),
+				const a = Object(l.a)(i.T),
 					r = Object(o.e)(u.e),
 					[b, g] = Object(c.a)(d.b.CROWD_CONTROL_CAMPAIGN_STORE, {}),
 					f = Object(o.e)(e => Object(p.W)(e, null == r ? void 0 : r.id)),
 					x = Object(m.a)(),
-					E = a === i.od,
+					E = a === i.pd,
 					v = !(!r || !h.includes(r.name.toLowerCase())),
 					C = !1 === (null == f ? void 0 : f.crowdControlFilter) && 0 === (null == f ? void 0 : f.crowdControlPostLevel),
 					_ = !n(b[t]);
@@ -13028,8 +13028,8 @@
 							});
 						case "chat_config":
 						case F.c.chatConfig:
-							return a.fbt._("Manage Chats", null, {
-								hk: "3U1O8t"
+							return a.fbt._("Create Live Chats", null, {
+								hk: "2OsHBQ"
 							});
 						case "chat_operator":
 						case F.c.chatOperator:
@@ -13151,7 +13151,7 @@
 					const {
 						props: e,
 						state: t
-					} = this, s = ["all", ...Object.keys(t.permissions).filter(e => "all" !== e)];
+					} = this, s = ["all", ...Object.keys(t.permissions).filter(t => !["all", ...e.isLivePostCreatorModRoleEnabled ? ["chat_operator", F.c.chatOperator] : []].includes(t))];
 					return r.a.createElement(V, null, r.a.createElement(I.i, null, r.a.createElement(A.a, null, r.a.createElement(I.q, null, e.isEditingPerms ? a.fbt._("Edit", null, {
 						hk: "1nftDt"
 					}) : a.fbt._("Invite Moderators", null, {
@@ -13405,14 +13405,15 @@
 				}
 			}
 			var Re = Object(w.a)(Te(Pe)),
-				Ae = s("./src/reddit/components/ModeratorsList/index.m.less"),
-				Fe = s.n(Ae);
-			const De = c.a.div("ListContainer", Fe.a),
-				Le = c.a.wrapped(C.o, "SecondaryButton", Fe.a),
-				Ue = Object(v.u)({
+				Ae = s("./src/reddit/selectors/experiments/chat.ts"),
+				Fe = s("./src/reddit/components/ModeratorsList/index.m.less"),
+				De = s.n(Fe);
+			const Le = c.a.div("ListContainer", De.a),
+				Ue = c.a.wrapped(C.o, "SecondaryButton", De.a),
+				Be = Object(v.u)({
 					currentPageUrl: v.f
 				}),
-				Be = Object(d.c)({
+				He = Object(d.c)({
 					currentUser: N.k,
 					nextAfterToken: j.k,
 					nextAfterEditableToken: j.c,
@@ -13423,10 +13424,11 @@
 					isInvitePending: j.h,
 					moderators: j.o,
 					moderatorsList: j.j,
-					moderatorPermissions: S.n,
+					moderatorPermissions: S.o,
 					isAddUserModalOpen: Object(y.b)("ModerationPage--Modal--AddModerator"),
 					isEditableListPending: j.a,
 					isInvitePendingModalOpen: Object(y.b)("ModerationPage--Modal--InvitePending"),
+					isLivePostCreatorModRoleEnabled: Ae.c,
 					isModeratorListPending: j.i,
 					isResignAsModeratorModalOpen: Object(y.b)("ModerationPage--Modal--Resign"),
 					origin: O.j,
@@ -13436,10 +13438,10 @@
 						let {
 							subredditId: s
 						} = t;
-						return Object(S.i)(e, s)
+						return Object(S.j)(e, s)
 					}
 				}),
-				He = Object(i.b)(Be, (e, t) => {
+				We = Object(i.b)(He, (e, t) => {
 					let {
 						subredditId: s
 					} = t;
@@ -13450,9 +13452,9 @@
 						toggleResignAsModModal: () => e(Object(u.i)("ModerationPage--Modal--Resign"))
 					}
 				}),
-				We = c.a.div("EditableTitle", Fe.a),
-				Ve = c.a.wrapped(E.a, "UsersLoading", Fe.a);
-			class ze extends r.a.Component {
+				Ve = c.a.div("EditableTitle", De.a),
+				ze = c.a.wrapped(E.a, "UsersLoading", De.a);
+			class qe extends r.a.Component {
 				constructor() {
 					super(...arguments), this.state = k.a, this.toggleModal = (e, t) => () => {
 						this.setState({
@@ -13468,7 +13470,7 @@
 					}), this.isButtonEnabled = (e, t) => !!(e && e.length > 0 && t), this.isModeratorsListPaginated = () => !(!this.props.nextBeforeToken && !this.props.nextAfterToken), this.renderEditableList = e => {
 						const t = !(!e.nextBeforeEditableToken && !e.nextAfterEditableToken),
 							s = e.isEditableListPending || e.isModeratorListPending;
-						return r.a.createElement(r.a.Fragment, null, r.a.createElement(We, null, a.fbt._("You can edit these moderators", null, {
+						return r.a.createElement(r.a.Fragment, null, r.a.createElement(Ve, null, a.fbt._("You can edit these moderators", null, {
 							hk: "1KTZtm"
 						})), t && r.a.createElement(x.a, null, r.a.createElement(h.a, {
 							prevButtonEnabled: this.isButtonEnabled(e.editableModeratorsList, e.nextBeforeEditableToken),
@@ -13483,13 +13485,13 @@
 								afterEditable: e.nextAfterEditableToken,
 								before: e.before
 							})
-						})), r.a.createElement(De, null, e.editableModeratorsList && e.editableModeratorsList.length > 0 ? e.editableModeratorsList.map(e => r.a.createElement(de, {
+						})), r.a.createElement(Le, null, e.editableModeratorsList && e.editableModeratorsList.length > 0 ? e.editableModeratorsList.map(e => r.a.createElement(de, {
 							key: e.id,
 							moderator: e,
 							moderatorType: k.c.Editable,
 							onClick: this.toggleModal(e.id, e.username),
 							subredditId: this.props.subredditId
-						})) : s ? r.a.createElement(Ve, null) : null))
+						})) : s ? r.a.createElement(ze, null) : null))
 					}
 				}
 				componentDidMount() {
@@ -13500,7 +13502,7 @@
 						props: e,
 						state: t
 					} = this, s = !!e.moderatorPermissions, o = Object(_.a)(e.moderatorPermissions);
-					return r.a.createElement(r.a.Fragment, null, s && r.a.createElement(g.c, null, r.a.createElement(Le, {
+					return r.a.createElement(r.a.Fragment, null, s && r.a.createElement(g.c, null, r.a.createElement(Ue, {
 						onClick: e.toggleResignAsModModal
 					}, a.fbt._("Leave as mod", null, {
 						hk: "3TwqTg"
@@ -13538,11 +13540,11 @@
 						moderatorType: e.searchResult.isEditable ? k.c.Editable : void 0,
 						onClick: e.searchResult.isEditable ? this.toggleModal(e.searchResult.id, e.searchResult.username) : void 0,
 						subredditId: e.subredditId
-					})) : r.a.createElement(r.a.Fragment, null, r.a.createElement(De, null, e.moderatorsList && e.moderatorsList.length > 0 ? e.moderatorsList.map(e => r.a.createElement(de, {
+					})) : r.a.createElement(r.a.Fragment, null, r.a.createElement(Le, null, e.moderatorsList && e.moderatorsList.length > 0 ? e.moderatorsList.map(e => r.a.createElement(de, {
 						key: e.id,
 						moderator: e,
 						subredditId: this.props.subredditId
-					})) : e.isModeratorListPending ? r.a.createElement(Ve, null) : null), o && r.a.createElement(r.a.Fragment, null, this.renderEditableList(e), r.a.createElement(he, {
+					})) : e.isModeratorListPending ? r.a.createElement(ze, null) : null), o && r.a.createElement(r.a.Fragment, null, this.renderEditableList(e), r.a.createElement(he, {
 						sendEventWithName: e.sendEventWithName,
 						subredditId: e.subredditId
 					})))), e.isAddUserModalOpen && r.a.createElement(q, {
@@ -13557,7 +13559,8 @@
 						username: t.username,
 						user: t.userId && e.editableModerators ? e.editableModerators[t.userId] : null,
 						withOverlay: !0,
-						isModWithUserNotesPermissions: e.isModWithUserNotesPermissions
+						isModWithUserNotesPermissions: e.isModWithUserNotesPermissions,
+						isLivePostCreatorModRoleEnabled: e.isLivePostCreatorModRoleEnabled
 					}), e.currentUser && e.isResignAsModeratorModalOpen && r.a.createElement(Re, {
 						sendEventWithName: e.sendEventWithName,
 						subredditId: e.subredditId,
@@ -13572,7 +13575,7 @@
 					}))
 				}
 			}
-			t.a = Ue(He(ze))
+			t.a = Be(We(qe))
 		},
 		"./src/reddit/components/MultiOptionSelect/OptionSearchBar/index.m.less": function(e, t, s) {
 			e.exports = {
@@ -19628,7 +19631,7 @@
 					key: e
 				}))),
 				Ce = Object(u.c)({
-					hasModConfigPerms: (e, t) => Object(V.b)(B.c.config)(e, {
+					hasModConfigPerms: (e, t) => Object(V.c)(B.c.config)(e, {
 						subredditId: t.subreddit.id
 					}),
 					isConfirmModalOpen: e => "SubredditRule--Modal--DeleteConfirmation" === Object(W.a)(e),
@@ -19911,7 +19914,7 @@
 					isExpanded: h.m,
 					isLoggedIn: f.Q,
 					showPromotedCTA: g.a,
-					moderatorPermissions: p.m,
+					moderatorPermissions: p.n,
 					modModeEnabled: l.U,
 					poll: (e, t) => {
 						const s = e.posts.metaMap[t.postId];
@@ -23216,7 +23219,7 @@
 						} = t.match.params, o = n ? Object(w.F)(e, n) : null === (s = Object(j.j)(e, {
 							profileName: a
 						})) || void 0 === s ? void 0 : s.id;
-						if (o) return Object(O.n)(e, {
+						if (o) return Object(O.o)(e, {
 							subredditId: o
 						})
 					}
@@ -23355,6 +23358,21 @@
 			}
 			t.default = Ze(Je(Object(f.c)($e)))
 		},
+		"./src/reddit/selectors/experiments/chat.ts": function(e, t, s) {
+			"use strict";
+			s.d(t, "b", (function() {
+				return o
+			})), s.d(t, "a", (function() {
+				return r
+			})), s.d(t, "c", (function() {
+				return i
+			}));
+			var n = s("./src/reddit/constants/experiments.ts"),
+				a = s("./src/reddit/selectors/experiments/econ/simpleExperiment.ts");
+			const o = Object(a.a)(n.I),
+				r = Object(a.a)(n.H),
+				i = Object(a.a)(n.J)
+		},
 		"./src/reddit/selectors/experiments/emailInvite.ts": function(e, t, s) {
 			"use strict";
 			s.d(t, "a", (function() {
@@ -23365,9 +23383,9 @@
 			const o = e => {
 				const t = Object(a.c)(e, {
 					experimentEligibilitySelector: a.a,
-					experimentName: n.nd
+					experimentName: n.od
 				});
-				return !(!t || Object(n.Qf)(t))
+				return !(!t || Object(n.Rf)(t))
 			}
 		},
 		"./src/reddit/selectors/showPromotedCTA.ts": function(e, t, s) {
@@ -23380,10 +23398,10 @@
 				o = s("./src/reddit/helpers/chooseVariant/index.ts"),
 				r = s("./src/reddit/selectors/posts.ts");
 			const i = e => Object(o.c)(e, {
-					experimentName: a.He,
+					experimentName: a.Ie,
 					experimentEligibilitySelector: o.a
 				}),
-				d = (e, t) => t === a.Pe.Enabled && (null == e ? void 0 : e.isCreatedFromAdsUi) || (null == e ? void 0 : e.isSponsored),
+				d = (e, t) => t === a.Qe.Enabled && (null == e ? void 0 : e.isCreatedFromAdsUi) || (null == e ? void 0 : e.isSponsored),
 				l = Object(n.a)(r.G, i, (e, t) => d(e, t));
 			Object(n.a)((e, t) => t, i, (e, t) => d(e, t))
 		},
@@ -23641,4 +23659,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.2999d9dbb5632098d4b7.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.d3f6c45ce9461367de54.js.map

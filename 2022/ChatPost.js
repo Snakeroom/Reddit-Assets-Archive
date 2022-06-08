@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ChatPost.5e09982d878b47215f4a.js
-// Retrieved at 6/7/2022, 3:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ChatPost.2b2823e7fb42669d8094.js
+// Retrieved at 6/8/2022, 10:20:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ChatPost"], {
 		"./node_modules/lodash/_baseDelay.js": function(e, t) {
@@ -720,7 +720,7 @@
 						let {
 							comment: n
 						} = t;
-						return Object(Le.i)(e, n.subredditId)
+						return Object(Le.j)(e, n.subredditId)
 					}
 				}));
 			t.a = He(e => {
@@ -1745,7 +1745,7 @@
 											commentId: n
 										}),
 										i = (s.user.account && s.user.account.id) === (a && a.authorId),
-										c = !!e && !!Object(q.m)(s, {
+										c = !!e && !!Object(q.n)(s, {
 											postId: e
 										});
 									!a || a.isRemoved && a.isDeleted || i || c ? Q[n] = A.REMOVE_COMMENT : o(X({
@@ -1976,7 +1976,7 @@
 						let {
 							comment: n
 						} = t;
-						return !!Object(q.m)(e, {
+						return !!Object(q.n)(e, {
 							postId: n.postId
 						})
 					},
@@ -2465,7 +2465,7 @@
 						let {
 							comment: n
 						} = t;
-						return !!Object(q.m)(e, {
+						return !!Object(q.n)(e, {
 							postId: n.postId
 						})
 					},
@@ -2490,6 +2490,15 @@
 							comment: n
 						} = t;
 						return Object(at.c)(e, n.authorId)
+					},
+					isLivePostCreatorModRoleEnabled: e => Object(te.c)(e),
+					isChatCreateOnlyPerm: (e, t) => {
+						let {
+							comment: n
+						} = t;
+						return Object(q.b)(e, {
+							postId: n.postId
+						})
 					}
 				});
 			var Qt = Object(l.b)(Zt, (e, t) => {
@@ -2519,25 +2528,27 @@
 					isDeleteModalOpen: i,
 					isLivestreaming: l,
 					isMod: d,
-					onReplyClick: m,
-					reportFlowIsOpen: u,
-					replyTooltipId: p,
-					toggleDeleteCommentModal: h
+					isChatCreateOnlyPerm: m,
+					isLivePostCreatorModRoleEnabled: u,
+					onReplyClick: p,
+					reportFlowIsOpen: h,
+					replyTooltipId: b,
+					toggleDeleteCommentModal: C
 				} = e;
-				const b = !!o && o.id === t.authorId,
-					C = Object(_t.a)(),
-					v = c.a.useCallback(() => {
-						C(Object(Pe.d)("other_options", t.id, n))
-					}, [C, t.id, n]);
+				const v = !!o && o.id === t.authorId,
+					g = Object(_t.a)(),
+					f = c.a.useCallback(() => {
+						g(Object(Pe.d)("other_options", t.id, n))
+					}, [g, t.id, n]);
 				return c.a.createElement("div", {
 					className: Object(re.a)(Ot.a.menu, s, {
 						[Ot.a.livestreaming]: l
 					})
 				}, !t.isLocked && !a && Boolean(t.authorId) && c.a.createElement(wt, {
-					onClick: m,
+					onClick: p,
 					commentId: t.id,
 					commentsPageKey: n,
-					tooltipId: p,
+					tooltipId: b,
 					tooltipText: ne.fbt._("Reply", null, {
 						hk: "14j3OR"
 					}),
@@ -2545,7 +2556,7 @@
 					"data-testid": "comment-reply"
 				}, c.a.createElement(yt.a, {
 					className: Ot.a.icon
-				})), d && c.a.createElement(St, {
+				})), d && !(m && u) && c.a.createElement(St, {
 					dropdownId: zt(t.id),
 					icon: c.a.createElement(kt.a, {
 						className: Ot.a.icon
@@ -2553,18 +2564,18 @@
 				}, c.a.createElement(Ht, {
 					comment: t,
 					commentsPageKey: n,
-					isCommentAuthor: b
+					isCommentAuthor: v
 				})), c.a.createElement(St, {
 					dropdownId: Gt(t.id),
 					icon: c.a.createElement(It.a, {
 						className: Ot.a.icon
 					}),
-					onClick: v
+					onClick: f
 				}, c.a.createElement(Jt, {
 					comment: t,
 					isLivestreaming: l,
 					commentsPageKey: n
-				})), u && c.a.createElement(Je.a, {
+				})), h && c.a.createElement(Je.a, {
 					withOverlay: !0,
 					overlayCustomStyles: Ge.b,
 					postId: t.postId,
@@ -2583,7 +2594,7 @@
 						hk: "227ya0"
 					}),
 					onConfirm: r,
-					toggleModal: h,
+					toggleModal: C,
 					withOverlay: !0
 				}))
 			});
@@ -2673,9 +2684,9 @@
 				vn = n("./src/reddit/constants/experiments.ts"),
 				gn = n("./src/reddit/helpers/chooseVariant/index.ts");
 			const fn = e => Object(gn.c)(e, {
-				experimentName: vn.ub,
+				experimentName: vn.vb,
 				experimentEligibilitySelector: gn.a
-			}) === vn.pb.Enabled;
+			}) === vn.qb.Enabled;
 			var xn = n("./src/reddit/selectors/communityAwards.ts");
 			const En = (e, t) => {
 				let {
@@ -4570,4 +4581,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatPost.5e09982d878b47215f4a.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatPost.2b2823e7fb42669d8094.js.map

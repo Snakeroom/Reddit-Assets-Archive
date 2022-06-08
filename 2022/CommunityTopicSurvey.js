@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CommunityTopicSurvey.65f5fc513f8bb80f3d8e.js
-// Retrieved at 6/7/2022, 3:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CommunityTopicSurvey.5928a866a76cc7ae0f19.js
+// Retrieved at 6/8/2022, 10:20:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CommunityTopicSurvey"], {
 		"./node_modules/react-uid/dist/es2015/hooks.js": function(e, t, n) {
@@ -128,9 +128,9 @@
 				});
 			var h = n("./src/reddit/hooks/useGqlContext.ts"),
 				g = n("./src/reddit/hooks/useTracking.ts"),
-				S = n("./src/reddit/models/Subreddit/index.ts"),
-				E = n("./src/reddit/models/Toast/index.ts"),
-				v = n("./src/reddit/actions/subreddit/constants.ts"),
+				v = n("./src/reddit/models/Subreddit/index.ts"),
+				S = n("./src/reddit/models/Toast/index.ts"),
+				E = n("./src/reddit/actions/subreddit/constants.ts"),
 				I = n("./src/lib/classNames/index.ts"),
 				C = n("./src/reddit/components/StructuredStyles/StyledComponents/index.tsx"),
 				y = n("./src/reddit/controls/Button/index.tsx"),
@@ -196,7 +196,7 @@
 				return 0 === n.length ? o.a.createElement(o.a.Fragment, null, t) : o.a.createElement(o.a.Fragment, null, n[0], o.a.createElement(N.a, {
 					isFeatureFlagEnabled: !0,
 					isUserInTreatment: !0,
-					userVariant: B.uf.SmIconHc,
+					userVariant: B.vf.SmIconHc,
 					subredditName: n[1].split("/")[1],
 					rtJsonElementProps: {}
 				}), n[2])
@@ -308,13 +308,13 @@
 							skip: !0
 						}
 					}).catch(), I({
-						type: v.d,
+						type: E.d,
 						payload: {
 							subredditId: n,
 							questionId: e
 						}
 					}), u(x(O, n)), y(!0), I({
-						type: v.e,
+						type: E.e,
 						payload: {}
 					})
 				}
@@ -326,7 +326,7 @@
 							skip: !1
 						}
 					}), I({
-						type: v.d,
+						type: E.d,
 						payload: {
 							subredditId: n,
 							questionId: e
@@ -335,7 +335,7 @@
 						text: r.fbt._("Thank you for your help!", null, {
 							hk: "1asBUQ"
 						}),
-						kind: E.b.SuccessCommunityGreen
+						kind: S.b.SuccessCommunityGreen
 					}))
 				}
 
@@ -343,7 +343,7 @@
 					u(_(O, t, n))
 				}
 				switch (O.type) {
-					case S.e.Multi:
+					case v.e.Multi:
 						return o.a.createElement(R, {
 							key: O.id,
 							questionId: O.id,
@@ -354,7 +354,7 @@
 							onClose: T,
 							inFeed: a
 						});
-					case S.e.SingleWithSubmit:
+					case v.e.SingleWithSubmit:
 						return o.a.createElement(F, {
 							key: O.id,
 							questionId: O.id,
@@ -365,7 +365,7 @@
 							onClose: T,
 							inFeed: a
 						});
-					case S.e.SingleNoSubmit:
+					case v.e.SingleNoSubmit:
 						return o.a.createElement(F, {
 							key: O.id,
 							questionId: O.id,
@@ -518,11 +518,11 @@
 			})), n.d(t, "b", (function() {
 				return g
 			})), n.d(t, "f", (function() {
-				return S
-			})), n.d(t, "u", (function() {
-				return E
-			})), n.d(t, "d", (function() {
 				return v
+			})), n.d(t, "u", (function() {
+				return S
+			})), n.d(t, "d", (function() {
+				return E
 			})), n.d(t, "l", (function() {
 				return I
 			})), n.d(t, "m", (function() {
@@ -563,9 +563,9 @@
 				x = c.a.ul("Ul", d.a),
 				h = c.a.ol("Ol", d.a),
 				g = c.a.strong("B", d.a),
-				S = c.a.em("I", d.a),
-				E = c.a.span("U", d.a),
-				v = e => s.a.createElement("del", e),
+				v = c.a.em("I", d.a),
+				S = c.a.span("U", d.a),
+				E = e => s.a.createElement("del", e),
 				I = c.a.sub("Sub", d.a),
 				C = c.a.sup("Sup", d.a),
 				y = c.a.table("Table", d.a),
@@ -624,11 +624,11 @@
 			})), n.d(t, "f", (function() {
 				return g
 			})), n.d(t, "e", (function() {
-				return S
-			})), n.d(t, "d", (function() {
-				return E
-			})), n.d(t, "c", (function() {
 				return v
+			})), n.d(t, "d", (function() {
+				return S
+			})), n.d(t, "c", (function() {
+				return E
 			})), n.d(t, "h", (function() {
 				return I
 			}));
@@ -666,9 +666,9 @@
 				x = i.a.wrapped(l.a, "ThemedChevron", p.a),
 				h = i.a.wrapped(d.l, "Button", p.a),
 				g = i.a.wrapped(d.r, "TertiaryButton", p.a),
-				S = i.a.div("SubFormTitle", p.a),
-				E = i.a.wrapped(d.o, "SecondaryButton", p.a),
-				v = i.a.wrapped(g, "DeleteButton", p.a),
+				v = i.a.div("SubFormTitle", p.a),
+				S = i.a.wrapped(d.o, "SecondaryButton", p.a),
+				E = i.a.wrapped(g, "DeleteButton", p.a),
 				I = (i.a.section("ModalBody", p.a), i.a.header("ModalHeader", p.a), i.a.h2("ModalTitle", p.a), i.a.div("ModalMain", p.a), i.a.p("ModalText", p.a), i.a.footer("ModalFooter", p.a), e => s.a.createElement(u, _({}, e, {
 					className: Object(o.a)(p.a.ToggleInput, {
 						[p.a.selected]: !!e.selected
@@ -713,7 +713,7 @@
 		"./src/reddit/components/SubredditMention/index.tsx": function(e, t, n) {
 			"use strict";
 			n.d(t, "a", (function() {
-				return v
+				return E
 			}));
 			var r = n("./node_modules/react/index.js"),
 				s = n.n(r),
@@ -770,13 +770,13 @@
 				}
 			}
 			const g = Object(p.c)(h),
-				S = Object(i.c)({
+				v = Object(i.c)({
 					isFeatureFlagEnabled: x.b,
 					isUserInTreatment: x.e,
 					userVariant: x.a
 				}),
-				E = Object(o.b)(S),
-				v = e => {
+				S = Object(o.b)(v),
+				E = e => {
 					let {
 						isFeatureFlagEnabled: t,
 						isUserInTreatment: n,
@@ -789,12 +789,12 @@
 						rtJsonElementProps: i
 					});
 					switch (o) {
-						case _.uf.SmIcon:
+						case _.vf.SmIcon:
 							return s.a.createElement(b, {
 								subredditName: r,
 								rtJsonElementProps: i
 							});
-						case _.uf.SmIconHc:
+						case _.vf.SmIconHc:
 							return s.a.createElement(b, {
 								subredditName: r,
 								isHoverable: !0,
@@ -807,7 +807,7 @@
 							})
 					}
 				};
-			t.b = E(v)
+			t.b = S(E)
 		},
 		"./src/reddit/controls/ButtonGroup/index.m.less": function(e, t, n) {
 			e.exports = {
@@ -872,11 +872,11 @@
 			})), n.d(t, "b", (function() {
 				return g
 			})), n.d(t, "c", (function() {
-				return S
-			})), n.d(t, "d", (function() {
-				return E
-			})), n.d(t, "e", (function() {
 				return v
+			})), n.d(t, "d", (function() {
+				return S
+			})), n.d(t, "e", (function() {
+				return E
 			}));
 			var r, s, o = n("./src/reddit/constants/tracking.ts"),
 				i = n("./src/reddit/helpers/isComment.ts"),
@@ -980,21 +980,21 @@
 					subreddit: l.ib(n, e),
 					screen: l.Y(n)
 				}),
-				S = e => t => ({
+				v = e => t => ({
 					...b(t),
 					subreddit: l.hb(t, e) || null,
 					source: s.DISCOVERY_UNIT,
 					action: o.c.CLICK,
 					noun: r.HEADER_SUBREDDIT
 				}),
-				E = e => t => ({
+				S = e => t => ({
 					...b(t),
 					subreddit: l.hb(t, e) || null,
 					source: s.DISCOVERY_UNIT,
 					action: o.c.CLICK,
 					noun: r.HEADER_SUBREDDIT_SUBSCRIBE
 				}),
-				v = e => t => ({
+				E = e => t => ({
 					...b(t),
 					subreddit: l.hb(t, e) || null,
 					source: s.DISCOVERY_UNIT,
@@ -1066,12 +1066,12 @@
 				c = e => {
 					return Object(o.c)(e, {
 						experimentEligibilitySelector: d,
-						experimentName: r.nf
+						experimentName: r.of
 					}) || ""
 				},
 				a = e => {
 					const t = c(e);
-					return t === r.uf.SmIcon || t === r.uf.SmIconHc
+					return t === r.vf.SmIcon || t === r.vf.SmIconHc
 				},
 				u = (e, t) => {
 					let {
@@ -1100,4 +1100,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommunityTopicSurvey.65f5fc513f8bb80f3d8e.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommunityTopicSurvey.5928a866a76cc7ae0f19.js.map

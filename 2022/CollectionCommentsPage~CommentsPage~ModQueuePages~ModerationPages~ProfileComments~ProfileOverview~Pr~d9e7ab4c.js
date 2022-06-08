@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ModQueuePages~ModerationPages~ProfileComments~ProfileOverview~Pr~d9e7ab4c.4f29ed4d83cbbd2125ca.js
-// Retrieved at 6/1/2022, 6:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ModQueuePages~ModerationPages~ProfileComments~ProfileOverview~Pr~d9e7ab4c.af74583611d550b7074b.js
+// Retrieved at 6/8/2022, 10:20:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~ModQueuePages~ModerationPages~ProfileComments~ProfileOverview~Pr~d9e7ab4c"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -823,7 +823,7 @@
 						const {
 							comment: n
 						} = t;
-						return Object(h.h)(e, t) || Object(g.n)(e, {
+						return Object(h.h)(e, t) || Object(g.o)(e, {
 							subredditId: n.subredditId
 						})
 					},
@@ -1598,7 +1598,7 @@
 						let {
 							comment: n
 						} = t;
-						return Object(Ne.i)(e, n.subredditId)
+						return Object(Ne.j)(e, n.subredditId)
 					}
 				}));
 			t.a = He(e => {
@@ -2473,4 +2473,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ModQueuePages~ModerationPages~ProfileComments~ProfileOverview~Pr~d9e7ab4c.4f29ed4d83cbbd2125ca.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ModQueuePages~ModerationPages~ProfileComments~ProfileOverview~Pr~d9e7ab4c.af74583611d550b7074b.js.map

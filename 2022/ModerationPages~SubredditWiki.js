@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModerationPages~SubredditWiki.56e6058bf8e11b9f3622.js
-// Retrieved at 6/7/2022, 3:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModerationPages~SubredditWiki.88eb1e2ab7826feab632.js
+// Retrieved at 6/8/2022, 10:20:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModerationPages~SubredditWiki", "reddit-components-ContentGate"], {
 		"./node_modules/lodash/_baseRange.js": function(e, t) {
@@ -3168,7 +3168,7 @@
 			const {
 				fbt: te
 			} = r("./node_modules/fbt/lib/FbtPublic.js"), re = Object(i.c)({
-				hasModMailPermissions: Object(m.b)(Z.c.mail),
+				hasModMailPermissions: Object(m.c)(Z.c.mail),
 				isUserBanned: (e, t) => !!Object(V.b)(e, {
 					subredditId: t.subredditId,
 					username: t.username
@@ -3481,7 +3481,7 @@
 						let {
 							subredditId: r
 						} = t;
-						return r ? Object(m.n)(e, {
+						return r ? Object(m.o)(e, {
 							subredditId: r
 						}) : void 0
 					},
@@ -3526,7 +3526,7 @@
 						} = t;
 						const n = Object(w.e)(e),
 							s = r || n && Object(g.F)(e, n.name);
-						return !!s && Object(m.i)(e, s)
+						return !!s && Object(m.j)(e, s)
 					},
 					trophyCase: (e, t) => Object(f.r)(e, Object(f.m)(e, t.userName)),
 					isNightMode: k.db,
@@ -4567,13 +4567,13 @@
 			const a = e => {
 					return !(Object(s.c)(e, {
 						experimentEligibilitySelector: s.a,
-						experimentName: n.Vd
-					}) === n.od)
+						experimentName: n.Wd
+					}) === n.pd)
 				},
 				i = e => Object(s.c)(e, {
 					experimentEligibilitySelector: s.a,
-					experimentName: n.Wd
-				}) === n.od
+					experimentName: n.Xd
+				}) === n.pd
 		},
 		"./src/reddit/selectors/subredditWiki.ts": function(e, t, r) {
 			"use strict";
@@ -4741,4 +4741,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages~SubredditWiki.56e6058bf8e11b9f3622.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages~SubredditWiki.88eb1e2ab7826feab632.js.map

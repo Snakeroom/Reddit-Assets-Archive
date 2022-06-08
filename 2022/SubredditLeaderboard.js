@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditLeaderboard.68c00052e1064ee8d30a.js
-// Retrieved at 6/7/2022, 3:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditLeaderboard.30eafc4af9222ae6bd84.js
+// Retrieved at 6/8/2022, 10:20:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditLeaderboard"], {
 		"./node_modules/lodash/times.js": function(e, t, r) {
@@ -73,7 +73,7 @@
 									icon: e.category_icon,
 									id: e.category_id,
 									name: e.category_name,
-									displayText: Object(u.Pf)(e.category_name)
+									displayText: Object(u.Qf)(e.category_name)
 								};
 								r.push(s.id), t[s.id] = s
 							}), {
@@ -428,7 +428,7 @@
 					}, n[t]) : null
 				};
 				if (e.isD2xPdpSideRailRecsEnabled) {
-					const t = e.d2xPdpSideRailRecsVariant === u.yc.GreyRereddit ? e.reredditButtons : [];
+					const t = e.d2xPdpSideRailRecsVariant === u.zc.GreyRereddit ? e.reredditButtons : [];
 					return s.a.createElement(w, {
 						reredditContent: t,
 						countryCode: e.countryCode
@@ -786,7 +786,7 @@
 			}), T = Object(d.c)({
 				isEditing: y.i,
 				isSubscriptionsPinned: f.b,
-				moderatorPermissions: h.n
+				moderatorPermissions: h.o
 			});
 			t.a = Object(o.b)(T)(e => {
 				const t = e.moderatorPermissions && s()(e.moderatorPermissions).some(e => e);
@@ -2370,7 +2370,7 @@
 				z = Object(o.b)(H, e => ({
 					fetchMoreSubreddits: (t, r) => e(Object(P.b)(t, r))
 				}));
-			class J extends i.a.Component {
+			class Q extends i.a.Component {
 				constructor() {
 					super(...arguments), this.fetchMoreSubreddits = e => {
 						const t = this.makeFetchVariables(),
@@ -2445,7 +2445,7 @@
 					})))))
 				}
 			}
-			var Q = Object(u.c)(z(J)),
+			var J = Object(u.c)(z(Q)),
 				q = r("./node_modules/react-router-dom/esm/react-router-dom.js"),
 				K = r("./src/reddit/components/CategoryPickerWidget/index.m.less"),
 				U = r.n(K);
@@ -2632,7 +2632,7 @@
 					} = t;
 					return Object(g.b)(r.params.categoryName || "")
 				},
-				Ee = Object(m.Of)(p.i),
+				Ee = Object(m.Pf)(p.i),
 				_e = Object(d.c)({
 					categories: e => Object(ye.b)(e, {
 						categoriesOrder: Ee
@@ -2644,7 +2644,7 @@
 						}) : p.c
 					},
 					categoryName: xe,
-					isMod: fe.k,
+					isMod: fe.l,
 					shouldShowLocalRecommendations: e => !1 !== e.user.prefs.showLocationBasedRecommendations
 				}),
 				Ce = Object(o.b)(_e),
@@ -2706,7 +2706,7 @@
 						m = (null === (e = a.find(e => e.id === u)) || void 0 === e ? void 0 : e.displayText) || "";
 					return i.a.createElement(l.a, null, i.a.createElement(k.a, {
 						className: Object(c.a)(t, _.a.mainContent),
-						content: i.a.createElement(Q, {
+						content: i.a.createElement(J, {
 							categoryId: u,
 							categoryName: d,
 							categoryDisplayText: m
@@ -2743,11 +2743,11 @@
 				d = r("./node_modules/reselect/es/index.js");
 			const c = Object(d.a)(e => Object(s.c)(e, {
 					experimentEligibilitySelector: e => Object(o.g)(e) && Object(a.f)(e),
-					experimentName: n.ec
+					experimentName: n.fc
 				}), i.a),
 				l = Object(d.a)(e => Object(s.c)(e, {
 					experimentEligibilitySelector: e => !Object(o.g)(e) && Object(a.f)(e),
-					experimentName: n.dc
+					experimentName: n.ec
 				}), i.a),
 				u = Object(d.a)(c, l, (e, t) => e || t),
 				m = Object(d.a)(c, l, (e, t) => !(!e && !t))
@@ -2785,4 +2785,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditLeaderboard.68c00052e1064ee8d30a.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditLeaderboard.30eafc4af9222ae6bd84.js.map

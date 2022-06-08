@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/NotificationUnit.22b1d2e25b269490bf74.js
-// Retrieved at 6/7/2022, 3:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/NotificationUnit.0a5e5f23ba4b31b34087.js
+// Retrieved at 6/8/2022, 10:20:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["NotificationUnit"], {
 		"./src/reddit/components/NotificationUnit/Avatar.tsx": function(e, t, i) {
@@ -442,7 +442,7 @@
 				w = "",
 				h = .5,
 				y = e => {
-					var t, i, n, s, C, y, S, U, k, M, j, L;
+					var t, i, n, s, C, y, S, U, k, j, M, L;
 					const P = Object(f.a)(),
 						R = Object(E.d)(),
 						D = Object(E.e)(g.db),
@@ -487,10 +487,10 @@
 						isClicked: !!ue,
 						isViewed: !0,
 						type: me
-					}, ye = ne.messageType === x.a.AwardReceived, Se = me === x.a.LifecyclePostSuggestions, Ue = ye ? null === (C = null == ne ? void 0 : ne.awarding) || void 0 === C ? void 0 : C.id : "", ke = null === (S = null === (y = null == ne ? void 0 : ne.awarding) || void 0 === y ? void 0 : y.target) || void 0 === S ? void 0 : S.permalink, Me = null === (k = null === (U = null == ne ? void 0 : ne.awarding) || void 0 === U ? void 0 : U.award) || void 0 === k ? void 0 : k.id;
-					let je = (null === (M = null == ne ? void 0 : ne.post) || void 0 === M ? void 0 : M.permalink) || oe;
-					ye && ke ? je = ke : Se && oe && (je = oe);
-					const Le = null === (L = null === (j = null == ne ? void 0 : ne.awarding) || void 0 === j ? void 0 : j.awarder) || void 0 === L ? void 0 : L.isAcceptingChats,
+					}, ye = ne.messageType === x.a.AwardReceived, Se = me === x.a.LifecyclePostSuggestions, Ue = ye ? null === (C = null == ne ? void 0 : ne.awarding) || void 0 === C ? void 0 : C.id : "", ke = null === (S = null === (y = null == ne ? void 0 : ne.awarding) || void 0 === y ? void 0 : y.target) || void 0 === S ? void 0 : S.permalink, je = null === (k = null === (U = null == ne ? void 0 : ne.awarding) || void 0 === U ? void 0 : U.award) || void 0 === k ? void 0 : k.id;
+					let Me = (null === (j = null == ne ? void 0 : ne.post) || void 0 === j ? void 0 : j.permalink) || oe;
+					ye && ke ? Me = ke : Se && oe && (Me = oe);
+					const Le = null === (L = null === (M = null == ne ? void 0 : ne.awarding) || void 0 === M ? void 0 : M.awarder) || void 0 === L ? void 0 : L.isAcceptingChats,
 						Pe = e => {
 							P(Object(m.m)({
 								...he,
@@ -533,7 +533,7 @@
 							isToggleLowUpdateFromSubredditEligible: se,
 							sendInboxClickOverflow: () => P(Object(m.l)({
 								...he,
-								awardId: Me
+								awardId: je
 							})),
 							sentAt: pe,
 							setActiveOverflowMenuId: X,
@@ -557,7 +557,7 @@
 							isInboxCTAsV2All2Enabled: B,
 							isInboxCTAsV2ReplyPcEnabled: K,
 							isInboxCTAsV2SeePostEnabled: H,
-							deeplinkUrl: je,
+							deeplinkUrl: Me,
 							isNightMode: D,
 							isInAppNotification: G
 						})), G && (null == ne ? void 0 : ne.post) ? c.a.createElement(p.b, {
@@ -578,7 +578,7 @@
 								}))) : Q && ee && ee(), Ve({
 									postId: xe,
 									subredditId: Ee,
-									awardId: Me,
+									awardId: je,
 									position: m.d.FIRST
 								})
 							},
@@ -588,7 +588,7 @@
 					return c.a.createElement(c.a.Fragment, null, c.a.createElement("li", {
 						className: Ae
 					}, c.a.createElement("a", _({}, Fe, {
-						href: je,
+						href: Me,
 						target: "_blank",
 						rel: "noopener noreferrer"
 					}), He)), G ? null : c.a.createElement(u.a, {
@@ -1277,20 +1277,20 @@
 				a = i("./src/reddit/selectors/experiments/index.ts"),
 				s = i("./src/reddit/selectors/experiments/utils.ts");
 			const r = e => Object(o.c)(e, {
-					experimentName: n.Mb,
+					experimentName: n.Nb,
 					experimentEligibilitySelector: a.e
-				}) === n.ab.topOfFeedWithCTAs,
+				}) === n.bb.topOfFeedWithCTAs,
 				c = e => (e => Object(o.c)(e, {
-					experimentName: n.Mb,
+					experimentName: n.Nb,
 					experimentEligibilitySelector: a.e
-				}) === n.ab.topOfFeedNoCTAs)(e) || r(e),
+				}) === n.bb.topOfFeedNoCTAs)(e) || r(e),
 				d = e => Object(o.c)(e, {
-					experimentName: n.Mb,
+					experimentName: n.Nb,
 					experimentEligibilitySelector: a.e
-				}) === n.ab.floatInFeed,
+				}) === n.bb.floatInFeed,
 				l = e => {
 					const t = Object(o.c)(e, {
-						experimentName: n.Mb,
+						experimentName: n.Nb,
 						experimentEligibilitySelector: a.e
 					});
 					return Object(s.a)(t)
@@ -1316,15 +1316,15 @@
 				r = i("./src/reddit/selectors/user.ts");
 			const c = e => Object(r.P)(e) || Object(r.Q)(e),
 				d = Object(n.a)(e => Object(a.c)(e, {
-					experimentName: o.Ib,
+					experimentName: o.Jb,
 					experimentEligibilitySelector: c
 				}), s.a),
-				l = Object(n.a)(d, e => e === o.Nd.SeePostCTAs),
-				u = Object(n.a)(d, e => e === o.Nd.ReplyCTAs),
-				p = Object(n.a)(d, e => e === o.Nd.AllCTAs1),
-				b = Object(n.a)(d, e => e === o.Nd.AllCTAs2),
-				m = Object(n.a)(d, e => e === o.Nd.ReplyPc)
+				l = Object(n.a)(d, e => e === o.Od.SeePostCTAs),
+				u = Object(n.a)(d, e => e === o.Od.ReplyCTAs),
+				p = Object(n.a)(d, e => e === o.Od.AllCTAs1),
+				b = Object(n.a)(d, e => e === o.Od.AllCTAs2),
+				m = Object(n.a)(d, e => e === o.Od.ReplyPc)
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/NotificationUnit.22b1d2e25b269490bf74.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/NotificationUnit.0a5e5f23ba4b31b34087.js.map
