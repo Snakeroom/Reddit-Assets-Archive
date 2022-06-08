@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Frontpage.73942e42e07c1e88a329.js
-// Retrieved at 6/8/2022, 2:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Frontpage.7868829b796aec01e298.js
+// Retrieved at 6/8/2022, 6:40:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Frontpage"], {
 		"./node_modules/intersection-observer/intersection-observer.js": function(e, t) {
@@ -594,7 +594,7 @@
 									})
 								}
 							} else if (Object(f.c)(k) && !m) m = k;
-							else if (Object(_.f)(k)) {
+							else if (Object(_.g)(k)) {
 								const e = null === (i = null == k ? void 0 : k.interestTopicRecommendations) || void 0 === i ? void 0 : i.recommendationTopics;
 								if (e) {
 									const t = Object(y.a)(e);
@@ -3682,11 +3682,11 @@
 					C = function() {
 						let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : null;
 						e ? (j(e), o(Object(p.u)(null == e ? void 0 : e.name, null == e ? void 0 : e.id))) : o(Object(p.s)()), s(Object(c.c)({
-							type: g.c.REONBOARDING,
+							type: g.d.REONBOARDING,
 							selectedInterests: e ? {
 								[e.id]: []
 							} : {}
-						})), Object(u.b)(g.e.Popover, v)
+						})), Object(u.b)(g.f.Popover, v)
 					},
 					A = Object(a.useCallback)(() => {
 						Object(m.a)(), o(Object(p.t)()), O(!0)
@@ -3746,7 +3746,7 @@
 						id: "interest-topic-recommendations",
 						estHeight: 300,
 						trackOnEnteredViewport: () => {
-							Object(m.d)(), Object(u.b)(g.e.Feed, c), r(Object(p.v)())
+							Object(m.d)(), Object(u.b)(g.f.Feed, c), r(Object(p.v)())
 						},
 						render: () => n.a.createElement(x, {
 							interests: a
@@ -8050,4 +8050,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Frontpage.73942e42e07c1e88a329.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Frontpage.7868829b796aec01e298.js.map

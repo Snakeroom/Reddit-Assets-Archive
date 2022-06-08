@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Subreddit.c592ecdd55c70f576231.js
-// Retrieved at 6/8/2022, 12:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Subreddit.9fe095d90b406d1fed25.js
+// Retrieved at 6/8/2022, 6:40:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Subreddit", "reddit-components-ContentGate", "reddit-components-Econ-PredictionLeaderboard-Sidebar"], {
 		"./node_modules/@researchgate/react-intersection-observer/lib/es/index.js": function(e, t, n) {
@@ -5797,11 +5797,11 @@
 					k = function() {
 						let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : null;
 						e ? (N(e), c(Object(p.u)(null == e ? void 0 : e.name, null == e ? void 0 : e.id))) : c(Object(p.s)()), n(Object(i.c)({
-							type: f.c.REONBOARDING,
+							type: f.d.REONBOARDING,
 							selectedInterests: e ? {
 								[e.id]: []
 							} : {}
-						})), Object(u.b)(f.e.Popover, v)
+						})), Object(u.b)(f.f.Popover, v)
 					},
 					P = Object(s.useCallback)(() => {
 						Object(m.a)(), c(Object(p.t)()), j(!0)
@@ -5861,7 +5861,7 @@
 						id: "interest-topic-recommendations",
 						estHeight: 300,
 						trackOnEnteredViewport: () => {
-							Object(m.d)(), Object(u.b)(f.e.Feed, i), o(Object(p.v)())
+							Object(m.d)(), Object(u.b)(f.f.Feed, i), o(Object(p.v)())
 						},
 						render: () => r.a.createElement(_, {
 							interests: s
@@ -13899,4 +13899,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Subreddit.c592ecdd55c70f576231.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Subreddit.9fe095d90b406d1fed25.js.map

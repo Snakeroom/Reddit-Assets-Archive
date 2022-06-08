@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/runtime~Reddit.4e3fe32516aa027bf578.js
-// Retrieved at 6/8/2022, 5:30:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/runtime~Reddit.83ab3e27f8c008c65650.js
+// Retrieved at 6/8/2022, 6:40:06 PM by Reddit Dataminer v1.0.0
 ! function(e) {
 	function o(o) {
 		for (var a, n, r = o[0], s = o[1], c = o[2], l = 0, b = []; l < r.length; l++) n = r[l], Object.prototype.hasOwnProperty.call(d, n) && d[n] && b.push(d[n][0]), d[n] = 0;
@@ -1362,7 +1362,7 @@
 						"reddit-components-Governance-TransactionModals-ConvertToCoinsModal": "c2f0c55498fb3a93009f",
 						"vendors~RealtimeGQLSubscriptionAsync": "3d46ab9136aace60953b",
 						RealtimeGQLSubscriptionAsync: "226119a9ae841bb563eb",
-						OnboardingModal: "b0baffc5ac296f8b8d9a",
+						OnboardingModal: "4add0ae3ac4ba61d1401",
 						AchievementsActions: "016943a7df07e67d49c5",
 						Acknowledgements: "d11ad709b1b01d27180c",
 						Appeal: "c93f68e1677d468a5064",
@@ -1411,7 +1411,7 @@
 						PostDraft: "896ed87d25e016c7135c",
 						ProfileSnoobuilder: "4a4b74106060bf954336",
 						"Frontpage~ModListing~Subreddit": "ab12180afa003258b7be",
-						Frontpage: "73942e42e07c1e88a329",
+						Frontpage: "7868829b796aec01e298",
 						Topic: "0f30a35dbdbb51ca5414",
 						CommunityAwards: "d925840bfc5419ca49f7",
 						CommunityPointsLearnMore: "85c56d786457b4e0e6d4",
@@ -1519,7 +1519,7 @@
 						ExportTheme: "fba93d918b220f151980",
 						ImportTheme: "ffa092f19a1ee16c7439",
 						ModListing: "e364ef712ffafdbf6d8a",
-						Subreddit: "c592ecdd55c70f576231",
+						Subreddit: "9fe095d90b406d1fed25",
 						"vendors~LiveVideoPlayer~PublicAccessNetwork~RpanListingUnit": "b1b748750a6395dcc18f",
 						"LiveVideoPlayer~PublicAccessNetwork~RpanListingUnit": "7525f54b0337f9566b7a",
 						PublicAccessNetwork: "7fa8bdbdb99573d25d15",
@@ -1746,4 +1746,4 @@
 	var m = c;
 	t()
 }([]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/runtime~Reddit.4e3fe32516aa027bf578.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/runtime~Reddit.83ab3e27f8c008c65650.js.map
