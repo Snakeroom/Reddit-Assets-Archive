@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModQueuePages.109ed779445445483361.js
-// Retrieved at 6/8/2022, 11:40:06 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModQueuePages.f10c3bd059494bf6c830.js
+// Retrieved at 6/8/2022, 12:30:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModQueuePages"], {
 		"./node_modules/lodash/includes.js": function(e, t, s) {
@@ -4722,12 +4722,12 @@
 						rtJsonElementProps: a
 					});
 					switch (o) {
-						case h.wf.SmIcon:
+						case h.xf.SmIcon:
 							return r.a.createElement(p, {
 								subredditName: n,
 								rtJsonElementProps: a
 							});
-						case h.wf.SmIconHc:
+						case h.xf.SmIconHc:
 							return r.a.createElement(p, {
 								subredditName: n,
 								isHoverable: !0,
@@ -5742,12 +5742,12 @@
 				d = e => {
 					return Object(o.c)(e, {
 						experimentEligibilitySelector: i,
-						experimentName: n.pf
+						experimentName: n.qf
 					}) || ""
 				},
 				c = e => {
 					const t = d(e);
-					return t === n.wf.SmIcon || t === n.wf.SmIconHc
+					return t === n.xf.SmIcon || t === n.xf.SmIconHc
 				},
 				l = (e, t) => {
 					let {
@@ -5773,4 +5773,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModQueuePages.109ed779445445483361.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModQueuePages.f10c3bd059494bf6c830.js.map

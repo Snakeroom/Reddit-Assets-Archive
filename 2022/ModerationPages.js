@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModerationPages.93339b529ad8bfc5fa10.js
-// Retrieved at 6/8/2022, 11:40:06 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModerationPages.0012b7be7baa86606ef8.js
+// Retrieved at 6/8/2022, 12:30:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModerationPages"], {
 		"./node_modules/lodash/_arrayAggregator.js": function(e, t) {
@@ -7403,7 +7403,7 @@
 					[b, g] = Object(c.a)(d.b.CROWD_CONTROL_CAMPAIGN_STORE, {}),
 					f = Object(o.e)(e => Object(p.W)(e, null == r ? void 0 : r.id)),
 					x = Object(m.a)(),
-					E = a === i.qd,
+					E = a === i.rd,
 					v = !(!r || !h.includes(r.name.toLowerCase())),
 					C = !1 === (null == f ? void 0 : f.crowdControlFilter) && 0 === (null == f ? void 0 : f.crowdControlPostLevel),
 					_ = !n(b[t]);
@@ -23386,9 +23386,9 @@
 			const o = e => {
 				const t = Object(a.c)(e, {
 					experimentEligibilitySelector: a.a,
-					experimentName: n.pd
+					experimentName: n.qd
 				});
-				return !(!t || Object(n.Sf)(t))
+				return !(!t || Object(n.Tf)(t))
 			}
 		},
 		"./src/reddit/selectors/showPromotedCTA.ts": function(e, t, s) {
@@ -23401,10 +23401,10 @@
 				o = s("./src/reddit/helpers/chooseVariant/index.ts"),
 				r = s("./src/reddit/selectors/posts.ts");
 			const i = e => Object(o.c)(e, {
-					experimentName: a.Je,
+					experimentName: a.Ke,
 					experimentEligibilitySelector: o.a
 				}),
-				d = (e, t) => t === a.Re.Enabled && (null == e ? void 0 : e.isCreatedFromAdsUi) || (null == e ? void 0 : e.isSponsored),
+				d = (e, t) => t === a.Se.Enabled && (null == e ? void 0 : e.isCreatedFromAdsUi) || (null == e ? void 0 : e.isSponsored),
 				l = Object(n.a)(r.G, i, (e, t) => d(e, t));
 			Object(n.a)((e, t) => t, i, (e, t) => d(e, t))
 		},
@@ -23662,4 +23662,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.93339b529ad8bfc5fa10.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.0012b7be7baa86606ef8.js.map

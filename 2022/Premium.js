@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Premium.ca5eb99c1335244b725f.js
-// Retrieved at 6/8/2022, 11:40:06 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Premium.c278d73eab423d062c71.js
+// Retrieved at 6/8/2022, 12:30:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Premium"], {
 		"./src/reddit/endpoints/gold/productCatalog/old.index.ts": function(e, r, t) {
@@ -257,29 +257,29 @@
 			}));
 			var n = t("./src/reddit/constants/experiments.ts"),
 				d = t("./src/reddit/selectors/experiments/econ/simpleExperiment.ts");
-			const a = Object(d.a)(n.ed),
-				s = Object(d.a)(n.cd),
-				i = Object(d.a)(n.fd),
-				c = Object(d.a)(n.bd),
-				o = Object(d.a)(n.ad),
-				u = Object(d.a)(n.hd),
-				l = Object(d.a)(n.gd),
-				f = Object(d.a)(n.Xc),
-				p = Object(d.a)(n.Vc),
-				m = Object(d.a)(n.Pc),
-				b = Object(d.a)(n.Qc),
-				g = Object(d.a)(n.Nc),
-				h = Object(d.a)(n.Oc),
-				O = Object(d.a)(n.Sc),
-				j = Object(d.a)(n.Mc),
-				P = Object(d.a)(n.Yc),
-				y = Object(d.a)(n.Zc),
-				_ = Object(d.a)(n.dd),
-				x = Object(d.a)(n.id),
-				v = Object(d.a)(n.kd),
-				k = Object(d.a)(n.nd),
-				C = Object(d.a)(n.md),
-				I = Object(d.a)(n.ld)
+			const a = Object(d.a)(n.fd),
+				s = Object(d.a)(n.dd),
+				i = Object(d.a)(n.gd),
+				c = Object(d.a)(n.cd),
+				o = Object(d.a)(n.bd),
+				u = Object(d.a)(n.id),
+				l = Object(d.a)(n.hd),
+				f = Object(d.a)(n.Yc),
+				p = Object(d.a)(n.Wc),
+				m = Object(d.a)(n.Qc),
+				b = Object(d.a)(n.Rc),
+				g = Object(d.a)(n.Oc),
+				h = Object(d.a)(n.Pc),
+				O = Object(d.a)(n.Tc),
+				j = Object(d.a)(n.Nc),
+				P = Object(d.a)(n.Zc),
+				y = Object(d.a)(n.ad),
+				_ = Object(d.a)(n.ed),
+				x = Object(d.a)(n.jd),
+				v = Object(d.a)(n.ld),
+				k = Object(d.a)(n.od),
+				C = Object(d.a)(n.nd),
+				I = Object(d.a)(n.md)
 		},
 		"./src/reddit/selectors/goldPurchaseModals.ts": function(e, r, t) {
 			"use strict";
@@ -383,4 +383,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Premium.ca5eb99c1335244b725f.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Premium.c278d73eab423d062c71.js.map

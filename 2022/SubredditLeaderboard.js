@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditLeaderboard.f08551e43710bb342bd0.js
-// Retrieved at 6/8/2022, 11:40:06 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditLeaderboard.030238bb6f001ff3799a.js
+// Retrieved at 6/8/2022, 12:30:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditLeaderboard"], {
 		"./node_modules/lodash/times.js": function(e, t, r) {
@@ -73,7 +73,7 @@
 									icon: e.category_icon,
 									id: e.category_id,
 									name: e.category_name,
-									displayText: Object(u.Rf)(e.category_name)
+									displayText: Object(u.Sf)(e.category_name)
 								};
 								r.push(s.id), t[s.id] = s
 							}), {
@@ -2370,7 +2370,7 @@
 				z = Object(o.b)(H, e => ({
 					fetchMoreSubreddits: (t, r) => e(Object(P.b)(t, r))
 				}));
-			class Q extends i.a.Component {
+			class J extends i.a.Component {
 				constructor() {
 					super(...arguments), this.fetchMoreSubreddits = e => {
 						const t = this.makeFetchVariables(),
@@ -2445,7 +2445,7 @@
 					})))))
 				}
 			}
-			var J = Object(u.c)(z(Q)),
+			var Q = Object(u.c)(z(J)),
 				q = r("./node_modules/react-router-dom/esm/react-router-dom.js"),
 				K = r("./src/reddit/components/CategoryPickerWidget/index.m.less"),
 				U = r.n(K);
@@ -2632,7 +2632,7 @@
 					} = t;
 					return Object(g.b)(r.params.categoryName || "")
 				},
-				Ee = Object(m.Qf)(p.i),
+				Ee = Object(m.Rf)(p.i),
 				_e = Object(d.c)({
 					categories: e => Object(ye.b)(e, {
 						categoriesOrder: Ee
@@ -2706,7 +2706,7 @@
 						m = (null === (e = a.find(e => e.id === u)) || void 0 === e ? void 0 : e.displayText) || "";
 					return i.a.createElement(l.a, null, i.a.createElement(k.a, {
 						className: Object(c.a)(t, _.a.mainContent),
-						content: i.a.createElement(J, {
+						content: i.a.createElement(Q, {
 							categoryId: u,
 							categoryName: d,
 							categoryDisplayText: m
@@ -2785,4 +2785,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditLeaderboard.f08551e43710bb342bd0.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditLeaderboard.030238bb6f001ff3799a.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CountryPage~Multireddit.38ed1c5b9c2c7e6549be.js
-// Retrieved at 6/8/2022, 11:40:06 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CountryPage~Multireddit.afb870d5a3fb62fc069f.js
+// Retrieved at 6/8/2022, 12:30:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CountryPage~Multireddit", "reddit-components-ContentGate"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -4712,12 +4712,12 @@
 						rtJsonElementProps: o
 					});
 					switch (i) {
-						case b.wf.SmIcon:
+						case b.xf.SmIcon:
 							return s.a.createElement(p, {
 								subredditName: r,
 								rtJsonElementProps: o
 							});
-						case b.wf.SmIconHc:
+						case b.xf.SmIconHc:
 							return s.a.createElement(p, {
 								subredditName: r,
 								isHoverable: !0,
@@ -6249,15 +6249,15 @@
 			const o = e => {
 					const t = Object(s.c)(e, {
 						experimentEligibilitySelector: i.Q,
-						experimentName: r.Tc
+						experimentName: r.Uc
 					});
-					return !(!t || Object(r.Sf)(t))
+					return !(!t || Object(r.Tf)(t))
 				},
 				a = e => {
 					return Object(s.c)(e, {
 						experimentEligibilitySelector: i.Q,
-						experimentName: r.Tc
-					}) === r.ud.ListingEnabled
+						experimentName: r.Uc
+					}) === r.vd.ListingEnabled
 				}
 		},
 		"./src/reddit/selectors/focusedVerticalSuggestion.ts": function(e, t, n) {
@@ -6390,12 +6390,12 @@
 				c = e => {
 					return Object(i.c)(e, {
 						experimentEligibilitySelector: a,
-						experimentName: r.pf
+						experimentName: r.qf
 					}) || ""
 				},
 				d = e => {
 					const t = c(e);
-					return t === r.wf.SmIcon || t === r.wf.SmIconHc
+					return t === r.xf.SmIcon || t === r.xf.SmIconHc
 				},
 				l = (e, t) => {
 					let {
@@ -6436,4 +6436,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CountryPage~Multireddit.38ed1c5b9c2c7e6549be.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CountryPage~Multireddit.afb870d5a3fb62fc069f.js.map
