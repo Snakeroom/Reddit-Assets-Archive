@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/AuthorHovercard~Reddit.3aecc3e7d9883203cdaf.js
-// Retrieved at 6/8/2022, 12:30:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/AuthorHovercard~Reddit.050c4fbeb67a1e10b871.js
+// Retrieved at 6/8/2022, 12:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["AuthorHovercard~Reddit"], {
 		"./src/lib/browser/isIncognito.ts": function(e, t, n) {
@@ -142,9 +142,9 @@
 				k = n("./src/reddit/constants/experiments.ts"),
 				I = n("./src/reddit/helpers/chooseVariant/index.ts");
 			const N = e => Object(I.c)(e, {
-				experimentName: k.Yb,
+				experimentName: k.Zb,
 				experimentEligibilitySelector: I.a
-			}) === k.rd;
+			}) === k.sd;
 			var x = n("./src/reddit/selectors/meta.ts"),
 				E = n("./src/reddit/selectors/user.ts");
 			let w = !1;
@@ -743,8 +743,8 @@
 					}, s.a.createElement("div", null)))
 				}
 			}
-			var Y = n("./src/reddit/constants/localStorage.ts"),
-				Z = n("./src/reddit/hooks/useLocalStorage.ts");
+			var Z = n("./src/reddit/constants/localStorage.ts"),
+				Y = n("./src/reddit/hooks/useLocalStorage.ts");
 			var X = n("./src/reddit/hooks/useDesktopNotificationsPromptSeen.ts"),
 				$ = n("./src/reddit/hooks/useInboxPrivacyPolicyBannerSeen.ts");
 
@@ -845,12 +845,12 @@
 								key: t,
 								userId: n
 							} = e;
-							const [r, a] = Object(Z.a)(t, []);
+							const [r, a] = Object(Y.a)(t, []);
 							return [-1 !== r.indexOf(n), () => {
 								a([...r, n])
 							}]
 						}({
-							key: Y.b.HOT_POTATO_BANNER_SEEN,
+							key: Z.b.HOT_POTATO_BANNER_SEEN,
 							userId: h
 						}),
 						k = !(!l || !l.length),
@@ -1825,24 +1825,24 @@
 				q = n("./src/reddit/helpers/chooseVariant/index.ts");
 			const V = e => Object(q.c)(e, {
 					experimentEligibilitySelector: q.a,
-					experimentName: G.zb
-				}) === G.yd.MemesNoBadge,
+					experimentName: G.Ab
+				}) === G.zd.MemesNoBadge,
 				K = e => Object(q.c)(e, {
 					experimentEligibilitySelector: q.a,
-					experimentName: G.zb
-				}) === G.yd.PnEmailNoBadge,
+					experimentName: G.Ab
+				}) === G.zd.PnEmailNoBadge,
 				J = e => Object(q.c)(e, {
 					experimentEligibilitySelector: q.a,
-					experimentName: G.zb
-				}) === G.yd.KarmaNoBadge,
+					experimentName: G.Ab
+				}) === G.zd.KarmaNoBadge,
 				Q = e => Object(q.c)(e, {
 					experimentEligibilitySelector: q.a,
-					experimentName: G.zb
-				}) === G.yd.PopularNoBadge,
-				Y = e => Object(q.c)(e, {
+					experimentName: G.Ab
+				}) === G.zd.PopularNoBadge,
+				Z = e => Object(q.c)(e, {
 					experimentEligibilitySelector: q.a,
-					experimentName: G.zb
-				}) === G.yd.CatsNoBadge;
+					experimentName: G.Ab
+				}) === G.zd.CatsNoBadge;
 			t.a = e => {
 				let {
 					isBannerEnabled: t,
@@ -1858,7 +1858,7 @@
 					p = Object(s.e)(K),
 					m = Object(s.e)(J),
 					b = Object(s.e)(Q),
-					f = Object(s.e)(Y);
+					f = Object(s.e)(Z);
 				return u ? a.a.createElement(E, {
 					inTooltip: r,
 					onBtnClick: d(o.b.Memes)
@@ -2365,11 +2365,11 @@
 							return e
 					}
 				},
-				Y = Object(r.c)({
+				Z = Object(r.c)({
 					error: J,
 					pending: Q
 				});
-			var Z = function() {
+			var Y = function() {
 					let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : null,
 						t = arguments.length > 1 ? arguments[1] : void 0;
 					switch (t.type) {
@@ -2390,8 +2390,8 @@
 					}
 				},
 				X = Object(r.c)({
-					api: Y,
-					result: Z
+					api: Z,
+					result: Y
 				});
 			const $ = {};
 			var ee = function() {
@@ -2981,9 +2981,9 @@
 					api: qe,
 					result: Je
 				});
-			const Ye = {};
-			var Ze = function() {
-				let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : Ye,
+			const Ze = {};
+			var Ye = function() {
+				let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : Ze,
 					t = arguments.length > 1 ? arguments[1] : void 0;
 				switch (t.type) {
 					case a.M:
@@ -3043,7 +3043,7 @@
 					}
 				},
 				et = Object(r.c)({
-					error: Ze,
+					error: Ye,
 					pending: $e
 				});
 			n("./node_modules/core-js/modules/web.dom.iterable.js");
@@ -3556,9 +3556,9 @@
 					error: Kt,
 					pending: Jt
 				});
-			const Yt = {};
-			var Zt = function() {
-				let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : Yt,
+			const Zt = {};
+			var Yt = function() {
+				let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : Zt,
 					t = arguments.length > 1 ? arguments[1] : void 0;
 				switch (t.type) {
 					case it.p: {
@@ -3604,7 +3604,7 @@
 				},
 				en = Object(r.c)({
 					api: Qt,
-					itemOrder: Zt,
+					itemOrder: Yt,
 					loadMore: $t
 				});
 			var tn = function() {
@@ -4053,4 +4053,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/AuthorHovercard~Reddit.3aecc3e7d9883203cdaf.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/AuthorHovercard~Reddit.050c4fbeb67a1e10b871.js.map

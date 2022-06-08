@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditWiki.8b06540c85ca228ec3a5.js
-// Retrieved at 6/8/2022, 12:30:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditWiki.731ec2abbd59ad02d015.js
+// Retrieved at 6/8/2022, 12:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditWiki"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -3721,12 +3721,12 @@
 						rtJsonElementProps: o
 					});
 					switch (i) {
-						case h.xf.SmIcon:
+						case h.yf.SmIcon:
 							return n.a.createElement(p, {
 								subredditName: r,
 								rtJsonElementProps: o
 							});
-						case h.xf.SmIconHc:
+						case h.yf.SmIconHc:
 							return n.a.createElement(p, {
 								subredditName: r,
 								isHoverable: !0,
@@ -4152,7 +4152,7 @@
 						} = t;
 						return Object(Me.c)(e, s)
 					},
-					isInNewModuleNCPV3Experiment: e => Object(Fe.a)(e) === Pe.we.NewModule,
+					isInNewModuleNCPV3Experiment: e => Object(Fe.a)(e) === Pe.xe.NewModule,
 					showGovernance: Te.d.spPoints,
 					showLeaderboard: Te.d.spLeaderboard,
 					showPredictionsLeaderboard: (e, t) => {
@@ -4911,7 +4911,7 @@
 					let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : o,
 						t = arguments.length > 1 ? arguments[1] : void 0;
 					switch (t.type) {
-						case n.pb:
+						case n.ob:
 							const {
 								subredditId: s, subredditAchievementFlairs: r
 							} = t.payload;
@@ -5215,12 +5215,12 @@
 				a = e => {
 					return Object(i.c)(e, {
 						experimentEligibilitySelector: d,
-						experimentName: r.qf
+						experimentName: r.rf
 					}) || ""
 				},
 				c = e => {
 					const t = a(e);
-					return t === r.xf.SmIcon || t === r.xf.SmIconHc
+					return t === r.yf.SmIcon || t === r.yf.SmIconHc
 				},
 				l = (e, t) => {
 					let {
@@ -5246,4 +5246,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditWiki.8b06540c85ca228ec3a5.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditWiki.731ec2abbd59ad02d015.js.map

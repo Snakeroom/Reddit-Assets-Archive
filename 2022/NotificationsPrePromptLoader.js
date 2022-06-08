@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/NotificationsPrePromptLoader.a540a4461f33cf1385a7.js
-// Retrieved at 6/8/2022, 12:30:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/NotificationsPrePromptLoader.5c7361638683c4a136ef.js
+// Retrieved at 6/8/2022, 12:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["NotificationsPrePromptLoader"], {
 		"./src/reddit/components/NotificationsPrePrompt/index.m.less": function(e, t, c) {
@@ -24,9 +24,9 @@
 			function m(e) {
 				const t = Object(u.c)(e, {
 					experimentEligibilitySelector: u.a,
-					experimentName: d.yb
+					experimentName: d.zb
 				});
-				return !Object(d.Tf)(t) && t
+				return !Object(d.Uf)(t) && t
 			}
 			var O, b = c("./src/reddit/components/NotificationsPrePrompt/index.m.less"),
 				p = c.n(b);
@@ -48,7 +48,7 @@
 					c = Object(i.d)(),
 					[s, u] = Object(n.useState)(),
 					b = Object(i.e)(m),
-					_ = Object(n.useCallback)(() => b === d.Kc.ThreeSeconds ? O.ThreeSec : b === d.Kc.FiveSeconds ? O.FiveSec : O.TenSec, [b]);
+					_ = Object(n.useCallback)(() => b === d.Lc.ThreeSeconds ? O.ThreeSec : b === d.Lc.FiveSeconds ? O.FiveSec : O.TenSec, [b]);
 				return Object(n.useEffect)(() => {
 					if (b) {
 						const e = _();
@@ -68,4 +68,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/NotificationsPrePromptLoader.a540a4461f33cf1385a7.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/NotificationsPrePromptLoader.5c7361638683c4a136ef.js.map

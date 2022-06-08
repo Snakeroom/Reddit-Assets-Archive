@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Settings.ecf12362d657c883ec06.js
-// Retrieved at 6/8/2022, 12:30:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Settings.08a35e2b3d9b7daa67e2.js
+// Retrieved at 6/8/2022, 12:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Settings"], {
 		"./node_modules/moment/locale sync recursive ^\\.\\/.*$": function(e, t, n) {
@@ -1092,12 +1092,12 @@
 				_ = Object(r.a)(h.Z),
 				y = Object(r.a)(h.Y),
 				x = Object(r.a)(h.X),
-				C = Object(r.a)(h.Eb),
-				j = Object(r.a)(h.Cb),
-				k = Object(r.a)(h.Db),
-				E = Object(r.a)(h.Hb),
-				O = Object(r.a)(h.Gb),
-				w = Object(r.a)(h.Fb),
+				C = Object(r.a)(h.Db),
+				j = Object(r.a)(h.Bb),
+				k = Object(r.a)(h.Cb),
+				E = Object(r.a)(h.Gb),
+				O = Object(r.a)(h.Fb),
+				w = Object(r.a)(h.Eb),
 				S = e => async t => {
 					t(Object(o.f)({
 						kind: c.b.Error,
@@ -10473,8 +10473,8 @@
 				re = n("./src/reddit/helpers/chooseVariant/index.ts");
 			const ae = Object(c.a)(e => Object(re.c)(e, {
 				experimentEligibilitySelector: I.Q,
-				experimentName: se.P
-			}), e => e === se.Z.Enabled);
+				experimentName: se.Q
+			}), e => e === se.ab.Enabled);
 			var oe = n("./src/reddit/selectors/meta.ts"),
 				ie = n("./src/reddit/components/Settings/AccountPrefsSection/index.m.less"),
 				ce = n.n(ie);
@@ -12298,8 +12298,8 @@
 				}), e => e === se.c.Enabled),
 				dr = Object(c.a)(e => Object(re.c)(e, {
 					experimentEligibilitySelector: I.Q,
-					experimentName: se.O
-				}), e => e === se.X.Enabled);
+					experimentName: se.P
+				}), e => e === se.Y.Enabled);
 			var mr = n("./src/lib/hooks/usePrevious.ts"),
 				ur = n("./src/telemetry/models/Event.ts");
 			const pr = Se.a.span("SubheaderLink", an.a),
@@ -13521,9 +13521,9 @@
 					},
 					isDspEnabled: e => {
 						return Object(re.c)(e, {
-							experimentName: se.Jc,
+							experimentName: se.Kc,
 							experimentEligibilitySelector: re.a
-						}) === se.rd
+						}) === se.sd
 					}
 				}),
 				ho = Object(ge.u)(),
@@ -14059,7 +14059,7 @@
 			const o = e => Object(r.c)(e, {
 				experimentName: s.G,
 				experimentEligibilitySelector: () => Object(a.P)(e)
-			}) === s.rd
+			}) === s.sd
 		},
 		"./src/reddit/selectors/experiments/econ/marketplace.ts": function(e, t, n) {
 			"use strict";
@@ -14073,13 +14073,13 @@
 			const a = e => {
 					return !(Object(r.c)(e, {
 						experimentEligibilitySelector: r.a,
-						experimentName: s.Yd
-					}) === s.rd)
+						experimentName: s.Zd
+					}) === s.sd)
 				},
 				o = e => Object(r.c)(e, {
 					experimentEligibilitySelector: r.a,
-					experimentName: s.Zd
-				}) === s.rd
+					experimentName: s.ae
+				}) === s.sd
 		},
 		"./src/reddit/selectors/gold/productOffers.ts": function(e, t, n) {
 			"use strict";
@@ -14249,4 +14249,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Settings.ecf12362d657c883ec06.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Settings.08a35e2b3d9b7daa67e2.js.map

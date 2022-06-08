@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/RpanListingUnit.b5321b109ec087565dfd.js
-// Retrieved at 6/8/2022, 12:30:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/RpanListingUnit.bac7e17663cd0a5d0c95.js
+// Retrieved at 6/8/2022, 12:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["RpanListingUnit"], {
 		"./node_modules/lodash/_arrayEvery.js": function(e, t) {
@@ -44,16 +44,16 @@
 			const p = Object(o.a)(e => {
 				const t = Object(m.c)(e, {
 					experimentEligibilitySelector: m.a,
-					experimentName: u.fe
+					experimentName: u.ge
 				});
-				return Object(u.Tf)(t) ? void 0 : t
+				return Object(u.Uf)(t) ? void 0 : t
 			}, e => {
 				const t = Object(m.c)(e, {
 					experimentEligibilitySelector: m.a,
-					experimentName: u.ge
+					experimentName: u.he
 				});
-				return Object(u.Tf)(t) ? void 0 : t
-			}, (e, t) => e === u.ke.Enabled && t === u.ke.Enabled);
+				return Object(u.Uf)(t) ? void 0 : t
+			}, (e, t) => e === u.le.Enabled && t === u.le.Enabled);
 			var h = s("./src/config.ts");
 			var b = s("./src/reddit/selectors/user.ts");
 			const E = e => {
@@ -114,8 +114,8 @@
 					playerName: g,
 					playerVersion: y,
 					respectDoNotTrack: D,
-					saltLength: T,
-					saltTimeToLive: N,
+					saltLength: N,
+					saltTimeToLive: T,
 					viewerUserIdLength: A
 				} = {
 					...I,
@@ -268,7 +268,7 @@
 						}
 					}
 				}
-				x.displayName = C(e), x.ANONYMOUS_USER_ID = s, x.DEBUG = d, x.DISABLE_COOKIES = u, x.DURATION_LIVE = 1 / 0, x.ENV_KEY = m, x.LOCAL_STORAGE_SALT_KEY = _, x.LOCAL_STORAGE_VIEWER_USER_ID_KEY = f, x.PLAYER_NAME = g, x.PLAYER_VERSION = y, x.RESPECT_DO_NOT_TRACK = D, x.SALT_LENGTH = T, x.SALT_TIME_TO_LIVE = N, x.STREAM_TYPE_LIVE = "live", x.STREAM_TYPE_ON_DEMAND = "on-demand", x.VIEWER_USER_ID_LENGTH = A;
+				x.displayName = C(e), x.ANONYMOUS_USER_ID = s, x.DEBUG = d, x.DISABLE_COOKIES = u, x.DURATION_LIVE = 1 / 0, x.ENV_KEY = m, x.LOCAL_STORAGE_SALT_KEY = _, x.LOCAL_STORAGE_VIEWER_USER_ID_KEY = f, x.PLAYER_NAME = g, x.PLAYER_VERSION = y, x.RESPECT_DO_NOT_TRACK = D, x.SALT_LENGTH = N, x.SALT_TIME_TO_LIVE = T, x.STREAM_TYPE_LIVE = "live", x.STREAM_TYPE_ON_DEMAND = "on-demand", x.VIEWER_USER_ID_LENGTH = A;
 				const L = Object(n.forwardRef)((e, t) => r.a.createElement(x, O({}, e, {
 						forwardedRef: t
 					}))),
@@ -384,9 +384,9 @@
 			})), s.d(t, "g", (function() {
 				return D
 			})), s.d(t, "h", (function() {
-				return T
-			})), s.d(t, "i", (function() {
 				return N
+			})), s.d(t, "i", (function() {
+				return T
 			}));
 			var n = s("./node_modules/react/index.js"),
 				r = s.n(n),
@@ -614,7 +614,7 @@
 					} : {}
 				}
 			}));
-			var T = Object(i.b)(() => Object(o.c)({
+			var N = Object(i.b)(() => Object(o.c)({
 				subredditOrProfile: (e, t) => Object(E.M)(e, {
 					identifier: t
 				})
@@ -629,7 +629,7 @@
 					url: e.subredditOrProfile.title
 				}
 			}));
-			var N = Object(i.b)(() => Object(o.c)({
+			var T = Object(i.b)(() => Object(o.c)({
 				subreddit: (e, t) => {
 					let {
 						subredditId: s
@@ -683,8 +683,8 @@
 				g = s("./src/reddit/helpers/trackers/rpan.ts"),
 				y = s("./src/reddit/models/PublicAccessNetwork/index.ts"),
 				D = s("./src/reddit/models/Vote/index.ts"),
-				T = s("./src/reddit/selectors/experiments/publicAccessNetwork.ts"),
-				N = s("./src/reddit/selectors/platform.ts"),
+				N = s("./src/reddit/selectors/experiments/publicAccessNetwork.ts"),
+				T = s("./src/reddit/selectors/platform.ts"),
 				A = s("./src/reddit/selectors/PublicAccessNetwork/streams.ts"),
 				x = s("./src/reddit/selectors/user.ts"),
 				L = s("./src/reddit/components/ClassicPost/Placeholder.tsx"),
@@ -711,7 +711,7 @@
 			}), Q = Object(i.b)(() => Object(o.c)({
 				autoplay: x.b,
 				isLoggedIn: x.Q,
-				isOverlayOpen: N.i,
+				isOverlayOpen: T.i,
 				location: (e, t) => {
 					let {
 						listingName: s
@@ -737,9 +737,9 @@
 					})
 				},
 				streamById: e => t => Object(A.l)(e, t),
-				rpanDuThresholdVariant: T.h,
-				inRpanDUPreloadExperiment: T.b,
-				inRpanDuTargetingExperiment: T.c
+				rpanDuThresholdVariant: N.h,
+				inRpanDUPreloadExperiment: N.b,
+				inRpanDuTargetingExperiment: N.c
 			}), (e, t) => ({
 				onHideRpanUnit: (s, n) => e(Object(h.E)(t.listingName, s, {
 					showToast: n.showToast
@@ -1095,7 +1095,7 @@
 							})
 						})
 					}, {
-						threshold: t ? Object(T.g)(t) : .01
+						threshold: t ? Object(N.g)(t) : .01
 					}), this.intersectionObserver.observe(e), this.loadingIntersectionObserver = new IntersectionObserver(e => {
 						e.forEach(e => {
 							this.setState({
@@ -1103,7 +1103,7 @@
 							})
 						})
 					}, {
-						threshold: t ? Object(T.g)(t) : .01,
+						threshold: t ? Object(N.g)(t) : .01,
 						rootMargin: s ? "400%" : "0px"
 					}), this.loadingIntersectionObserver.observe(e))
 				}
@@ -1413,9 +1413,9 @@
 			})), s.d(t, "e", (function() {
 				return D
 			})), s.d(t, "x", (function() {
-				return T
-			})), s.d(t, "u", (function() {
 				return N
+			})), s.d(t, "u", (function() {
+				return T
 			})), s.d(t, "a", (function() {
 				return A
 			})), s.d(t, "s", (function() {
@@ -1569,13 +1569,13 @@
 					noun: "edit_recurring_post",
 					...i(e)
 				}),
-				T = () => e => ({
+				N = () => e => ({
 					source: "recurring_post_composer",
 					action: "view",
 					noun: "recurring_post_composer",
 					...i(e)
 				}),
-				N = () => (e, t) => ({
+				T = () => (e, t) => ({
 					source: "recurring_post_composer",
 					action: "click",
 					noun: "update",
@@ -1863,14 +1863,14 @@
 				r = s("./src/reddit/helpers/chooseVariant/index.ts"),
 				i = s("./src/reddit/selectors/experiments/index.ts");
 			const o = e => Object(r.c)(e, {
-					experimentName: n.tb,
+					experimentName: n.ub,
 					experimentEligibilitySelector: i.e
-				}) === n.rd,
+				}) === n.sd,
 				a = e => Object(r.c)(e, {
-					experimentName: n.hc,
+					experimentName: n.ic,
 					experimentEligibilitySelector: r.a
-				}) === n.rd
+				}) === n.sd
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RpanListingUnit.b5321b109ec087565dfd.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RpanListingUnit.bac7e17663cd0a5d0c95.js.map

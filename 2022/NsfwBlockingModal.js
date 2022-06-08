@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/NsfwBlockingModal.0c129401c85e1e0afd54.js
-// Retrieved at 6/8/2022, 12:30:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/NsfwBlockingModal.65ae3e48c9edb0945500.js
+// Retrieved at 6/8/2022, 12:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["NsfwBlockingModal"], {
 		"./src/reddit/components/Footer/index.m.less": function(e, t, n) {
@@ -148,8 +148,8 @@
 				f = n("./src/reddit/controls/Button/index.tsx"),
 				g = n("./src/reddit/helpers/counters/nsfwblocking.ts"),
 				v = n("./src/reddit/selectors/telemetry.ts");
-			const x = "nsfw_dialog";
-			var h = e => o.a.createElement("svg", {
+			const h = "nsfw_dialog";
+			var x = e => o.a.createElement("svg", {
 					className: e.className,
 					fill: "none",
 					height: "60",
@@ -168,8 +168,8 @@
 				})),
 				j = n("./src/reddit/selectors/experiments/nsfwBlockingExperiment.ts"),
 				k = n("./src/reddit/components/Upsell/NsfwBlocking/index.m.less"),
-				E = n.n(k);
-			const y = {
+				y = n.n(k);
+			const E = {
 					d2x_nsfw_signup_blocking_de_v1: `${r.a.assetPath}/img/nsfw-blocking-promo/d2x_nsfw_signup_blocking_de_v1_QR-code.jpeg`,
 					d2x_nsfw_signup_blocking_non_us_v1: `${r.a.assetPath}/img/nsfw-blocking-promo/d2x_nsfw_signup_blocking_de_v1_QR-code.jpeg`
 				},
@@ -183,48 +183,48 @@
 							}))
 						}, [t, r]),
 						b = (e => e ? o.a.createElement("div", {
-							className: E.a.cta
+							className: y.a.cta
 						}, s.fbt._("To show mature content,", null, {
 							hk: "5xfDy"
 						}), o.a.createElement("br", null), s.fbt._("log in to confirm you're over 18", null, {
 							hk: "29imoi"
 						})) : o.a.createElement("div", {
-							className: E.a.cta
+							className: y.a.cta
 						}, s.fbt._("Log in to confirm you're over 18", null, {
 							hk: "RUR2Z"
 						})))(r === j.a.Blurred);
 					return Object(a.useEffect)(() => {
 						Object(g.c)(r)
 					}, [r]), o.a.createElement("div", {
-						className: Object(d.a)(E.a.mainCta)
-					}, o.a.createElement(h, null), b, o.a.createElement("div", {
-						className: E.a.contentTitle
+						className: Object(d.a)(y.a.mainCta)
+					}, o.a.createElement(x, null), b, o.a.createElement("div", {
+						className: y.a.contentTitle
 					}, e.contentTitle), o.a.createElement("div", {
-						className: E.a.warning
+						className: y.a.warning
 					}, (() => s.fbt._("This page may contain sensitive or adult content that's not for everyone. To view it, confirm your age.", null, {
 						hk: "3cUxXS"
 					}))()), o.a.createElement("div", {
-						className: E.a.buttonContainer
+						className: y.a.buttonContainer
 					}, o.a.createElement(f.j, {
-						className: Object(d.a)(E.a.logIn),
+						className: Object(d.a)(y.a.logIn),
 						onClick: () => {
 							n((() => e => ({
 								...Object(v.n)(e),
 								source: "xpromo",
 								action: "click",
-								noun: x
+								noun: h
 							}))()), m(), Object(g.b)(g.a.Login), t(Object(u.i)())
 						}
 					}, (() => s.fbt._("Log In", null, {
 						hk: "4BITk"
 					}))()), o.a.createElement(f.j, {
-						className: E.a.cancel,
+						className: y.a.cancel,
 						onClick: () => {
 							Object(i.b)(), n((() => e => ({
 								...Object(v.n)(e),
 								source: "xpromo",
 								action: "dismiss",
-								noun: x
+								noun: h
 							}))()), Object(g.b)(g.a.Dismiss), t(Object(l.b)("/"))
 						}
 					}, (() => s.fbt._("I'm not over 18", null, {
@@ -234,25 +234,25 @@
 				w = Object(m.a)(e => {
 					const t = `${r.a.assetPath}/img/nsfw-blocking-promo/snoovatar_anonymous_cropped.png`;
 					return o.a.createElement("div", {
-						className: E.a.qrCodeOuter
+						className: y.a.qrCodeOuter
 					}, o.a.createElement("div", {
-						className: E.a.qrCodeInner
+						className: y.a.qrCodeInner
 					}, o.a.createElement("img", {
-						className: E.a.qrCode,
+						className: y.a.qrCode,
 						alt: s.fbt._("QR Code to get the Reddit app", null, {
 							hk: "2uYhIL"
 						}),
 						src: e.qrCodeAsset
 					}), o.a.createElement("div", {
-						className: E.a.copyLine1
+						className: y.a.copyLine1
 					}, (() => s.fbt._("Download the app to use", null, {
 						hk: "4i9ZxV"
 					}))()), o.a.createElement("div", {
-						className: E.a.copyLine2
+						className: y.a.copyLine2
 					}, (() => s.fbt._("Anonymous Browsing", null, {
 						hk: "rTJ9j"
 					}))()), o.a.createElement("img", {
-						className: E.a.sneakySnoo,
+						className: y.a.sneakySnoo,
 						src: t
 					})))
 				}),
@@ -263,27 +263,27 @@
 							...Object(v.n)(e),
 							source: "xpromo",
 							action: "view",
-							noun: x
+							noun: h
 						}))())
 					}, [t]);
 					const {
 						contentTitle: n
 					} = e, r = Object(c.e)(j.g), s = Object(c.e)(j.h), a = Object(c.e)(j.f), l = a === j.a.Blurred ? b.a.White : a === j.a.NoPreview ? b.a.Grey : void 0;
 					return o.a.createElement("div", {
-						className: E.a.container
+						className: y.a.container
 					}, o.a.createElement(O, {
 						contentTitle: n
 					}), o.a.createElement("div", {
-						className: Object(d.a)(E.a.footerWrapper, {
-							[E.a.mIsModal]: a === j.a.Blurred
+						className: Object(d.a)(y.a.footerWrapper, {
+							[y.a.mIsModal]: a === j.a.Blurred
 						})
 					}, o.a.createElement(b.b, {
 						textColor: l
 					})), o.a.createElement(w, {
-						qrCodeAsset: (() => r === p.xc.Enabled || s === p.ob.BlurredPreview || s === p.ob.NoPreview ? y.d2x_nsfw_signup_blocking_de_v1 : y.d2x_nsfw_signup_blocking_non_us_v1)()
+						qrCodeAsset: (() => r === p.yc.Enabled || s === p.pb.BlurredPreview || s === p.pb.NoPreview ? E.d2x_nsfw_signup_blocking_de_v1 : E.d2x_nsfw_signup_blocking_non_us_v1)()
 					}))
 				}
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/NsfwBlockingModal.0c129401c85e1e0afd54.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/NsfwBlockingModal.65ae3e48c9edb0945500.js.map

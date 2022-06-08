@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModerationPages.0012b7be7baa86606ef8.js
-// Retrieved at 6/8/2022, 12:30:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModerationPages.84b264bcd858177ce5bd.js
+// Retrieved at 6/8/2022, 12:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModerationPages"], {
 		"./node_modules/lodash/_arrayAggregator.js": function(e, t) {
@@ -7398,12 +7398,12 @@
 					setValueOnDismiss: s,
 					checkIfDismissed: n
 				} = e;
-				const a = Object(l.a)(i.U),
+				const a = Object(l.a)(i.V),
 					r = Object(o.e)(u.e),
 					[b, g] = Object(c.a)(d.b.CROWD_CONTROL_CAMPAIGN_STORE, {}),
 					f = Object(o.e)(e => Object(p.W)(e, null == r ? void 0 : r.id)),
 					x = Object(m.a)(),
-					E = a === i.rd,
+					E = a === i.sd,
 					v = !(!r || !h.includes(r.name.toLowerCase())),
 					C = !1 === (null == f ? void 0 : f.crowdControlFilter) && 0 === (null == f ? void 0 : f.crowdControlPostLevel),
 					_ = !n(b[t]);
@@ -13428,7 +13428,7 @@
 					isAddUserModalOpen: Object(y.b)("ModerationPage--Modal--AddModerator"),
 					isEditableListPending: j.a,
 					isInvitePendingModalOpen: Object(y.b)("ModerationPage--Modal--InvitePending"),
-					isLivePostCreatorModRoleEnabled: Ae.c,
+					isLivePostCreatorModRoleEnabled: Ae.d,
 					isModeratorListPending: j.i,
 					isResignAsModeratorModalOpen: Object(y.b)("ModerationPage--Modal--Resign"),
 					origin: O.j,
@@ -23360,21 +23360,24 @@
 		},
 		"./src/reddit/selectors/experiments/chat.ts": function(e, t, s) {
 			"use strict";
-			s.d(t, "b", (function() {
+			s.d(t, "c", (function() {
 				return o
-			})), s.d(t, "a", (function() {
+			})), s.d(t, "b", (function() {
 				return r
-			})), s.d(t, "c", (function() {
-				return i
 			})), s.d(t, "d", (function() {
+				return i
+			})), s.d(t, "e", (function() {
 				return d
+			})), s.d(t, "a", (function() {
+				return l
 			}));
 			var n = s("./src/reddit/constants/experiments.ts"),
 				a = s("./src/reddit/selectors/experiments/econ/simpleExperiment.ts");
-			const o = Object(a.a)(n.I),
-				r = Object(a.a)(n.H),
-				i = Object(a.a)(n.J),
-				d = Object(a.a)(n.K)
+			const o = Object(a.a)(n.J),
+				r = Object(a.a)(n.I),
+				i = Object(a.a)(n.K),
+				d = Object(a.a)(n.L),
+				l = Object(a.a)(n.H)
 		},
 		"./src/reddit/selectors/experiments/emailInvite.ts": function(e, t, s) {
 			"use strict";
@@ -23386,9 +23389,9 @@
 			const o = e => {
 				const t = Object(a.c)(e, {
 					experimentEligibilitySelector: a.a,
-					experimentName: n.qd
+					experimentName: n.rd
 				});
-				return !(!t || Object(n.Tf)(t))
+				return !(!t || Object(n.Uf)(t))
 			}
 		},
 		"./src/reddit/selectors/showPromotedCTA.ts": function(e, t, s) {
@@ -23401,10 +23404,10 @@
 				o = s("./src/reddit/helpers/chooseVariant/index.ts"),
 				r = s("./src/reddit/selectors/posts.ts");
 			const i = e => Object(o.c)(e, {
-					experimentName: a.Ke,
+					experimentName: a.Le,
 					experimentEligibilitySelector: o.a
 				}),
-				d = (e, t) => t === a.Se.Enabled && (null == e ? void 0 : e.isCreatedFromAdsUi) || (null == e ? void 0 : e.isSponsored),
+				d = (e, t) => t === a.Te.Enabled && (null == e ? void 0 : e.isCreatedFromAdsUi) || (null == e ? void 0 : e.isSponsored),
 				l = Object(n.a)(r.G, i, (e, t) => d(e, t));
 			Object(n.a)((e, t) => t, i, (e, t) => d(e, t))
 		},
@@ -23662,4 +23665,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.0012b7be7baa86606ef8.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.84b264bcd858177ce5bd.js.map

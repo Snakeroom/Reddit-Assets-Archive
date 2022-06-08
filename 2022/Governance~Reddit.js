@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~Reddit.5a571be9c5ba68666cc6.js
-// Retrieved at 6/8/2022, 12:30:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~Reddit.d868f118541282a79148.js
+// Retrieved at 6/8/2022, 12:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~Reddit"], {
 		"./assets/fonts/NotoMono/font.less": function(e, t, n) {},
@@ -720,8 +720,8 @@
 			}), u = n("./node_modules/fbt/lib/FbtPublic.js"), l = n("./src/reddit/models/Toast/index.ts"), p = n("./node_modules/reselect/es/index.js"), b = n("./src/reddit/constants/experiments.ts"), f = n("./src/reddit/helpers/chooseVariant/index.ts"), h = n("./src/reddit/selectors/user.ts");
 			const y = Object(p.a)(e => Object(f.c)(e, {
 				experimentEligibilitySelector: h.Q,
-				experimentName: b.Vb
-			}), e => e === b.rd);
+				experimentName: b.Wb
+			}), e => e === b.sd);
 			var g = n("./src/reddit/actions/toaster.ts");
 			const m = "SUBREDDIT_COUNTRY_SITE__LOADED",
 				v = "SUBREDDIT_COUNTRY_SITE__CHANGED",
@@ -3078,7 +3078,7 @@
 			const w = e => _.d.reCaptchaEnterprise(e) && !Object(j.d)(e),
 				T = e => !!Object(S.c)(e, {
 					experimentEligibilitySelector: Object(I.d)(Object(I.b)(...a.d)),
-					experimentName: b.Ue
+					experimentName: b.Ve
 				}),
 				D = Object(r.b)("LOAD_RECAPTCHA_ENTERPRISE"),
 				P = () => u(e => p()([w, T, e => e.tracking.reCaptchaEnterprise.load === r.a.New], t => t(e)))(async e => {
@@ -3969,7 +3969,7 @@
 								postFieldValidationPending: Promise.resolve()
 							})), Object(l.b)(N)
 						}
-						await t(Object(r.b)(`${n.path}`)), f ? f === p.we.NewModule && t(Object(i.h)({
+						await t(Object(r.b)(`${n.path}`)), f ? f === p.xe.NewModule && t(Object(i.h)({
 							tooltipId: u.MOD_WELCOME_TOOLTIP_ID
 						})) : (t(Object(c.h)(b.a.POST_FLOW_UPSELL_MODAL_ID)), Object(D.a)(Object(_.g)()(A))), Object(E.b)(E.a.SubredditCreation), t(Object(P.f)(a, null !== (O = Object(T.bb)(A)) && void 0 !== O ? O : Object(S.i)(A)))
 					} else k.error && Object(D.a)(Object(_.h)(k.error.type, C)(A)), t(U({
@@ -5251,11 +5251,11 @@
 				Q = n("./src/reddit/selectors/experiments/utils.ts");
 			const $ = Object(W.a)(e => Object(V.c)(e, {
 					experimentEligibilitySelector: V.a,
-					experimentName: H.dc
+					experimentName: H.ec
 				}), Q.a),
-				K = Object(W.a)($, e => e === H.zc.Treatment1 || e === H.zc.Treatment2),
-				z = Object(W.a)($, e => e === H.zc.Treatment1);
-			Object(W.a)($, e => e === H.zc.Treatment2);
+				K = Object(W.a)($, e => e === H.Ac.Treatment1 || e === H.Ac.Treatment2),
+				z = Object(W.a)($, e => e === H.Ac.Treatment1);
+			Object(W.a)($, e => e === H.Ac.Treatment2);
 			var Y = n("./src/reddit/hooks/useLocalStorage.ts");
 			const X = () => {
 				const e = Object(a.e)(z),
@@ -8249,7 +8249,7 @@
 							[n.id]: xe(n)
 						} : e
 					}
-					case ee.kb: {
+					case ee.jb: {
 						const {
 							awardId: n
 						} = t.payload;
@@ -8320,7 +8320,7 @@
 							...e
 						}, n)
 					}
-					case ee.tb: {
+					case ee.sb: {
 						const n = {},
 							{
 								topAwardedPosts: r
@@ -11398,7 +11398,7 @@
 							[t.payload.subredditId]: Object.keys(s).map(e => s[e]).sort((e, t) => e.position - t.position)
 						}
 					}
-					case ee.pb: {
+					case ee.ob: {
 						const {
 							powerups: n,
 							subredditId: r
@@ -12357,7 +12357,7 @@
 					let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : gc,
 						t = arguments.length > 1 ? arguments[1] : void 0;
 					switch (t.type) {
-						case ee.mb:
+						case ee.lb:
 							return t.payload;
 						case ee.K: {
 							const {
@@ -16789,7 +16789,7 @@
 							}
 						} : e
 					}
-					case ee.tb: {
+					case ee.sb: {
 						const {
 							topAwardedPosts: n
 						} = t.payload;
@@ -17422,10 +17422,10 @@
 				let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : null,
 					t = arguments.length > 1 ? arguments[1] : void 0;
 				switch (t.type) {
-					case ee.sb:
+					case ee.rb:
 						return t.payload;
-					case ee.ub:
 					case ee.tb:
+					case ee.sb:
 						return null;
 					default:
 						return e
@@ -17435,10 +17435,10 @@
 					let e = arguments.length > 0 && void 0 !== arguments[0] && arguments[0],
 						t = arguments.length > 1 ? arguments[1] : void 0;
 					switch (t.type) {
-						case ee.tb:
 						case ee.sb:
+						case ee.rb:
 							return !1;
-						case ee.ub:
+						case ee.tb:
 							return !0;
 						default:
 							return e
@@ -17453,7 +17453,7 @@
 					let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : Yb,
 						t = arguments.length > 1 ? arguments[1] : void 0;
 					switch (t.type) {
-						case ee.tb: {
+						case ee.sb: {
 							const {
 								topAwardedPosts: e
 							} = t.payload;
@@ -17463,8 +17463,8 @@
 								score: e.score
 							}))
 						}
-						case ee.sb:
-						case ee.ub:
+						case ee.rb:
+						case ee.tb:
 							return Yb;
 						default:
 							return e
@@ -18340,7 +18340,7 @@
 							return {
 								...e, ...t.payload.profileAboutInfo
 							};
-						case nl.k: {
+						case nl.l: {
 							const n = t.payload;
 							return n.profile ? {
 								...e,
@@ -18406,7 +18406,7 @@
 					case ri.b:
 					case Ne.e:
 					case $.i:
-					case nl.m:
+					case nl.o:
 					case Q.b:
 					case Q.e:
 					case V.c:
@@ -18438,8 +18438,8 @@
 						} = t.payload, r = n && n.profiles;
 						return Object(N.merge)(e, r)
 					}
-					case nl.l:
-					case nl.k: {
+					case nl.n:
+					case nl.l: {
 						const {
 							profile: n
 						} = t.payload;
@@ -20058,7 +20058,7 @@
 								[n.subredditId]: r
 							}
 						}
-						case nl.k: {
+						case nl.l: {
 							const n = t.payload,
 								{
 									banner: r,
@@ -21213,7 +21213,7 @@
 					case De.PAGE_LOADED:
 					case Un.e:
 					case Dr.PAGE_LOADED:
-					case nl.m:
+					case nl.o:
 					case Q.b:
 					case Q.e:
 					case Ae.b:
@@ -21426,7 +21426,7 @@
 				let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : RO,
 					t = arguments.length > 1 ? arguments[1] : void 0;
 				switch (t.type) {
-					case ee.pb: {
+					case ee.ob: {
 						const {
 							recentSupporters: n,
 							subredditId: r
@@ -21475,8 +21475,8 @@
 					t = arguments.length > 1 ? arguments[1] : void 0;
 				var n;
 				switch (t.type) {
-					case ee.qb:
-					case ee.pb: {
+					case ee.pb:
+					case ee.ob: {
 						const {
 							powerups: n,
 							subredditId: r
@@ -21571,7 +21571,7 @@
 				let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : LO,
 					t = arguments.length > 1 ? arguments[1] : void 0;
 				switch (t.type) {
-					case ee.pb: {
+					case ee.ob: {
 						const {
 							powerups: n,
 							subredditId: r
@@ -21611,7 +21611,7 @@
 					let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : FO,
 						t = arguments.length > 1 ? arguments[1] : void 0;
 					switch (t.type) {
-						case ee.pb: {
+						case ee.ob: {
 							const {
 								topSupporters: n,
 								subredditId: r
@@ -21676,7 +21676,7 @@
 					t = arguments.length > 1 ? arguments[1] : void 0;
 				switch (t.type) {
 					case ee.cb:
-					case ee.pb: {
+					case ee.ob: {
 						const {
 							subredditId: n,
 							productOffers: r
@@ -22390,7 +22390,7 @@
 				let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : qE,
 					t = arguments.length > 1 ? arguments[1] : void 0;
 				switch (t.type) {
-					case nl.n: {
+					case nl.p: {
 						const {
 							profileOrder: n
 						} = t.payload;
@@ -22421,7 +22421,7 @@
 					let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : VE,
 						t = arguments.length > 1 ? arguments[1] : void 0;
 					switch (t.type) {
-						case nl.n: {
+						case nl.p: {
 							const {
 								subredditOrder: n
 							} = t.payload;
@@ -23543,7 +23543,7 @@
 					case Te.a:
 					case Te.b:
 					case W.SUBREDDIT_FAILED:
-					case nl.l:
+					case nl.n:
 					case B.b:
 					case B.a:
 					case B.e:
@@ -23609,7 +23609,7 @@
 						} : e
 					}
 					case ee.B:
-					case ee.s: {
+					case nl.j: {
 						const {
 							coins: n
 						} = t.payload;
@@ -23618,7 +23618,7 @@
 							coins: n
 						} : e
 					}
-					case ee.eb: {
+					case nl.m: {
 						const {
 							userName: n,
 							karma: r
@@ -24344,7 +24344,7 @@
 				let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : BS,
 					t = arguments.length > 1 ? arguments[1] : void 0;
 				switch (t.type) {
-					case ee.Ab: {
+					case ee.zb: {
 						const n = t.payload.powerups;
 						if (n) {
 							const {
@@ -24360,7 +24360,7 @@
 						}
 						return e
 					}
-					case ee.pb: {
+					case ee.ob: {
 						const {
 							userPowerups: n
 						} = t.payload, r = ((null == n ? void 0 : n.allocation) || []).filter(e => !!e.subredditInfo).reduce((e, t) => ({
@@ -24415,14 +24415,14 @@
 				let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : null,
 					t = arguments.length > 1 ? arguments[1] : void 0;
 				switch (t.type) {
-					case ee.Ab: {
+					case ee.zb: {
 						const n = t.payload.powerups;
 						return n ? Tr()({
 							...e,
 							...n
 						}, "allocation") : e
 					}
-					case ee.pb: {
+					case ee.ob: {
 						const {
 							userPowerups: n
 						} = t.payload;
@@ -24465,10 +24465,10 @@
 					let e = arguments.length > 0 && void 0 !== arguments[0] && arguments[0],
 						t = arguments.length > 1 ? arguments[1] : void 0;
 					switch (t.type) {
-						case ee.zb:
-						case ee.Bb:
-							return !1;
+						case ee.yb:
 						case ee.Ab:
+							return !1;
+						case ee.zb:
 							return !0;
 						default:
 							return e
@@ -24491,11 +24491,11 @@
 				let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : zS,
 					t = arguments.length > 1 ? arguments[1] : void 0;
 				switch (t.type) {
-					case ee.Eb:
+					case ee.Db:
 						return {
 							...e, status: WS.PENDING
 						};
-					case ee.Db: {
+					case ee.Cb: {
 						const {
 							subscriptions: n
 						} = t.payload;
@@ -24505,7 +24505,7 @@
 							status: WS.LOADED
 						} : e
 					}
-					case ee.Cb:
+					case ee.Bb:
 						return {
 							...e, status: WS.FAILED
 						};
@@ -24889,7 +24889,7 @@
 							} = t.payload;
 							return jj(e, n)
 						}
-						case nl.k: {
+						case nl.l: {
 							const {
 								user: n
 							} = t.payload;
@@ -24917,7 +24917,7 @@
 								}
 							}) : e
 						}
-						case ee.eb: {
+						case nl.m: {
 							const {
 								userName: n,
 								karma: r
@@ -25033,7 +25033,7 @@
 				let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : Aj,
 					t = arguments.length > 1 ? arguments[1] : void 0;
 				switch (t.type) {
-					case ee.gb: {
+					case ee.fb: {
 						const {
 							userId: n,
 							supportedSubreddits: r
@@ -25053,10 +25053,10 @@
 					let e = arguments.length > 0 && void 0 !== arguments[0] && arguments[0],
 						t = arguments.length > 1 ? arguments[1] : void 0;
 					switch (t.type) {
-						case ee.fb:
-						case ee.hb:
-							return !1;
+						case ee.eb:
 						case ee.gb:
+							return !1;
+						case ee.fb:
 							return !0;
 						default:
 							return e
@@ -25070,10 +25070,10 @@
 				let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : null,
 					t = arguments.length > 1 ? arguments[1] : void 0;
 				switch (t.type) {
-					case ee.vb:
+					case ee.ub:
 						return t.payload;
-					case ee.xb:
 					case ee.wb:
+					case ee.vb:
 						return null;
 					default:
 						return e
@@ -25083,10 +25083,10 @@
 					let e = arguments.length > 0 && void 0 !== arguments[0] && arguments[0],
 						t = arguments.length > 1 ? arguments[1] : void 0;
 					switch (t.type) {
-						case ee.wb:
 						case ee.vb:
+						case ee.ub:
 							return !1;
-						case ee.xb:
+						case ee.wb:
 							return !0;
 						default:
 							return e
@@ -25100,7 +25100,7 @@
 				let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : null,
 					t = arguments.length > 1 ? arguments[1] : void 0;
 				switch (t.type) {
-					case ee.yb:
+					case ee.xb:
 						return t.payload.postId;
 					default:
 						return e
@@ -25111,7 +25111,7 @@
 				let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : Mj,
 					t = arguments.length > 1 ? arguments[1] : void 0;
 				switch (t.type) {
-					case ee.wb: {
+					case ee.vb: {
 						const {
 							postId: n,
 							currentRank: r
@@ -25130,7 +25130,7 @@
 					let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : Fj,
 						t = arguments.length > 1 ? arguments[1] : void 0;
 					switch (t.type) {
-						case ee.wb: {
+						case ee.vb: {
 							const {
 								postId: n,
 								topAwardersRank: r
@@ -25807,8 +25807,8 @@
 				a = n("./node_modules/reselect/es/index.js");
 			const o = Object(a.a)(e => Object(s.c)(e, {
 				experimentEligibilitySelector: s.a,
-				experimentName: r.nc
-			}), e => e === r.rd)
+				experimentName: r.oc
+			}), e => e === r.sd)
 		},
 		"./src/reddit/selectors/scheduledPosts/index.ts": function(e, t, n) {
 			"use strict";
@@ -26080,4 +26080,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit.5a571be9c5ba68666cc6.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit.d868f118541282a79148.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Premium.c278d73eab423d062c71.js
-// Retrieved at 6/8/2022, 12:30:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Premium.297f77ebab9f829dc133.js
+// Retrieved at 6/8/2022, 12:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Premium"], {
 		"./src/reddit/endpoints/gold/productCatalog/old.index.ts": function(e, r, t) {
@@ -48,8 +48,8 @@
 				a = t("./src/lib/makeGqlRequest/index.ts"),
 				s = t("./src/lib/omitHeaders/index.ts"),
 				i = t("./src/redditGQL/operations/ChangeStripePaymentMethod.json"),
-				c = t("./src/reddit/constants/headers.ts"),
-				o = t("./src/reddit/helpers/addRedesignIdentifier/index.ts"),
+				o = t("./src/reddit/constants/headers.ts"),
+				c = t("./src/reddit/helpers/addRedesignIdentifier/index.ts"),
 				u = t("./src/reddit/helpers/genericServerError/index.ts"),
 				l = t("./src/reddit/helpers/r2/normalizeR2APIErrors/index.ts");
 			const f = e => e.ok ? e.body.json && e.body.json.errors.length ? {
@@ -83,8 +83,8 @@
 							correlation_id: a
 						},
 						g = `${t.apiUrl}/api/v2/gold/stripe/buy_coins`,
-						h = Object(o.a)(g);
-					return Object(d.a)(Object(s.a)(t, [c.a]), {
+						h = Object(c.a)(g);
+					return Object(d.a)(Object(s.a)(t, [o.a]), {
 						method: n.jb.POST,
 						endpoint: h,
 						data: b
@@ -119,8 +119,8 @@
 						remember_card: m,
 						card_id: h,
 						correlation_id: a
-					}, _ = `${t.apiUrl}/api/v2/gold/stripe/buy_coins_and_gild`, x = u ? _ : Object(o.a)(_);
-					return Object(d.a)(Object(s.a)(t, [c.a]), {
+					}, _ = `${t.apiUrl}/api/v2/gold/stripe/buy_coins_and_gild`, x = u ? _ : Object(c.a)(_);
+					return Object(d.a)(Object(s.a)(t, [o.a]), {
 						method: n.jb.POST,
 						endpoint: x,
 						data: y
@@ -151,8 +151,8 @@
 						remember_card: l,
 						card_id: b,
 						correlation_id: t
-					}, P = `${r.apiUrl}/api/v2/gold/stripe/buy_award`, y = i ? P : Object(o.a)(P);
-					return Object(d.a)(Object(s.a)(r, [c.a]), {
+					}, P = `${r.apiUrl}/api/v2/gold/stripe/buy_award`, y = i ? P : Object(c.a)(P);
+					return Object(d.a)(Object(s.a)(r, [o.a]), {
 						method: n.jb.POST,
 						endpoint: y,
 						data: j
@@ -170,8 +170,8 @@
 							correlation_id: t
 						},
 						l = `${r.apiUrl}/api/v2/gold/stripe/buy_premium_subscription`,
-						p = Object(o.a)(l);
-					return Object(d.a)(Object(s.a)(r, [c.a]), {
+						p = Object(c.a)(l);
+					return Object(d.a)(Object(s.a)(r, [o.a]), {
 						method: n.jb.POST,
 						endpoint: p,
 						data: u
@@ -215,9 +215,9 @@
 			})), t.d(r, "p", (function() {
 				return i
 			})), t.d(r, "m", (function() {
-				return c
-			})), t.d(r, "l", (function() {
 				return o
+			})), t.d(r, "l", (function() {
+				return c
 			})), t.d(r, "r", (function() {
 				return u
 			})), t.d(r, "q", (function() {
@@ -257,29 +257,29 @@
 			}));
 			var n = t("./src/reddit/constants/experiments.ts"),
 				d = t("./src/reddit/selectors/experiments/econ/simpleExperiment.ts");
-			const a = Object(d.a)(n.fd),
-				s = Object(d.a)(n.dd),
-				i = Object(d.a)(n.gd),
+			const a = Object(d.a)(n.gd),
+				s = Object(d.a)(n.ed),
+				i = Object(d.a)(n.hd),
+				o = Object(d.a)(n.dd),
 				c = Object(d.a)(n.cd),
-				o = Object(d.a)(n.bd),
-				u = Object(d.a)(n.id),
-				l = Object(d.a)(n.hd),
-				f = Object(d.a)(n.Yc),
-				p = Object(d.a)(n.Wc),
-				m = Object(d.a)(n.Qc),
-				b = Object(d.a)(n.Rc),
-				g = Object(d.a)(n.Oc),
-				h = Object(d.a)(n.Pc),
-				O = Object(d.a)(n.Tc),
-				j = Object(d.a)(n.Nc),
-				P = Object(d.a)(n.Zc),
-				y = Object(d.a)(n.ad),
-				_ = Object(d.a)(n.ed),
-				x = Object(d.a)(n.jd),
-				v = Object(d.a)(n.ld),
-				k = Object(d.a)(n.od),
-				C = Object(d.a)(n.nd),
-				I = Object(d.a)(n.md)
+				u = Object(d.a)(n.jd),
+				l = Object(d.a)(n.id),
+				f = Object(d.a)(n.Zc),
+				p = Object(d.a)(n.Xc),
+				m = Object(d.a)(n.Rc),
+				b = Object(d.a)(n.Sc),
+				g = Object(d.a)(n.Pc),
+				h = Object(d.a)(n.Qc),
+				O = Object(d.a)(n.Uc),
+				j = Object(d.a)(n.Oc),
+				P = Object(d.a)(n.ad),
+				y = Object(d.a)(n.bd),
+				_ = Object(d.a)(n.fd),
+				x = Object(d.a)(n.kd),
+				v = Object(d.a)(n.md),
+				k = Object(d.a)(n.pd),
+				C = Object(d.a)(n.od),
+				I = Object(d.a)(n.nd)
 		},
 		"./src/reddit/selectors/goldPurchaseModals.ts": function(e, r, t) {
 			"use strict";
@@ -288,9 +288,9 @@
 			})), t.d(r, "s", (function() {
 				return i
 			})), t.d(r, "r", (function() {
-				return c
-			})), t.d(r, "u", (function() {
 				return o
+			})), t.d(r, "u", (function() {
+				return c
 			})), t.d(r, "t", (function() {
 				return u
 			})), t.d(r, "b", (function() {
@@ -344,8 +344,8 @@
 			});
 			const s = e => e.features.goldPurchase.purchaseModal.activePage,
 				i = e => e.features.goldPurchase.purchaseModal.gildThingId || void 0,
-				c = e => e.features.goldPurchase.purchaseModal.correlationId || void 0,
-				o = e => e.features.goldPurchase.purchaseModal.showModal,
+				o = e => e.features.goldPurchase.purchaseModal.correlationId || void 0,
+				c = e => e.features.goldPurchase.purchaseModal.showModal,
 				u = e => e.features.goldPurchase.purchaseModal.packageId,
 				l = e => e.features.goldPurchase.packageOfferModal.packageId,
 				f = e => e.features.goldPurchase.premiumPurchaseModal.renewInterval,
@@ -383,4 +383,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Premium.c278d73eab423d062c71.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Premium.297f77ebab9f829dc133.js.map
