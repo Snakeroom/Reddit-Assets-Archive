@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ChatPost.2b2823e7fb42669d8094.js
-// Retrieved at 6/8/2022, 10:20:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ChatPost.bf473e7573d14e4542f4.js
+// Retrieved at 6/8/2022, 11:40:06 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ChatPost"], {
 		"./node_modules/lodash/_baseDelay.js": function(e, t) {
@@ -1913,7 +1913,7 @@
 						onMouseEnter: r.bind(void 0, i),
 						onMouseLeave: o.bind(void 0, i),
 						onClick: e => {
-							s(e), d && a(Object(Pe.d)(d, n.id))
+							s(e), d && a(Object(Pe.f)(d, n.id))
 						}
 					}, t, c.a.createElement(Ae.c, {
 						tooltipId: i
@@ -2019,7 +2019,7 @@
 						commentsPageKey: s
 					} = t;
 					return {
-						onReplyClick: () => e(Object(we.r)({
+						onReplyClick: () => e(Object(we.s)({
 							parentCommentId: n.id,
 							commentsPageKey: s,
 							singleOpen: !0
@@ -2033,7 +2033,7 @@
 						})),
 						onEditClick: () => {
 							const t = n.media && n.media.rteMode;
-							s && e(Object(we.d)({
+							s && e(Object(we.e)({
 								commentId: n.id,
 								draftKey: Object(ie.a)(ot.c.edit, n.id),
 								text: n.bodyMD || "",
@@ -2049,7 +2049,7 @@
 						onDistinguishClick: t => e(Object(Me.b)(n.id, t)),
 						onSpamClick: () => e(Object(Me.e)(n.id, !0)),
 						onRemoveClick: () => e(Object(Me.e)(n.id, !1)),
-						deleteComment: () => s && e(Object(we.i)(n.id, n.postId)),
+						deleteComment: () => s && e(Object(we.j)(n.id, n.postId)),
 						onDeleteClick: () => e(Object(Ne.i)(ft(n.id))),
 						toggleDeleteCommentModal: () => e(Object(Ne.i)(ft(n.id)))
 					}
@@ -2249,7 +2249,7 @@
 						m(Object(Re.i)())
 					},
 					onClick: e => {
-						null == o || o(e), i && n && s && u(Object(Pe.d)(i, n, s))
+						null == o || o(e), i && n && s && u(Object(Pe.f)(i, n, s))
 					}
 				}), t, c.a.createElement(Ae.c, {
 					tooltipId: r
@@ -2304,7 +2304,7 @@
 					p = Object(l.d)(),
 					h = Object(_t.a)(),
 					b = c.a.useCallback(e => {
-						h(Object(Pe.d)(e, o, n))
+						h(Object(Pe.f)(e, o, n))
 					}, [h, o, n]),
 					C = c.a.useCallback(() => {
 						p(Object(Me.a)(o)), b("approve")
@@ -2387,7 +2387,7 @@
 						d = Object(l.e)(e => Object(at.c)(e, t.authorId)),
 						m = i && i.id === t.authorId,
 						u = c.a.useCallback(e => {
-							a(Object(Pe.d)(e, o, n))
+							a(Object(Pe.f)(e, o, n))
 						}, [a, o, n]),
 						p = c.a.useCallback(() => {
 							r(Object(Le.c)(o, !1)), u("report")
@@ -2397,7 +2397,7 @@
 						}, [r, u, t]),
 						b = c.a.useCallback(() => {
 							const e = t.media && t.media.rteMode;
-							n && r(Object(we.d)({
+							n && r(Object(we.e)({
 								commentId: t.id,
 								draftKey: Object(ie.a)(ot.c.edit, t.id),
 								text: t.bodyMD || "",
@@ -2507,14 +2507,14 @@
 					commentsPageKey: s
 				} = t;
 				return {
-					onReplyClick: () => e(Object(we.r)({
+					onReplyClick: () => e(Object(we.s)({
 						parentCommentId: n.id,
 						commentsPageKey: s,
 						singleOpen: !0
 					})),
 					onUpvoteClick: () => e(Object(b.q)(n.id)),
 					onDownvoteClick: () => e(Object(b.j)(n.id)),
-					deleteComment: () => s && e(Object(we.i)(n.id, n.postId)),
+					deleteComment: () => s && e(Object(we.j)(n.id, n.postId)),
 					toggleDeleteCommentModal: () => e(Object(Ne.i)(qt(n.id)))
 				}
 			})(e => {
@@ -2538,7 +2538,7 @@
 				const v = !!o && o.id === t.authorId,
 					g = Object(_t.a)(),
 					f = c.a.useCallback(() => {
-						g(Object(Pe.d)("other_options", t.id, n))
+						g(Object(Pe.f)("other_options", t.id, n))
 					}, [g, t.id, n]);
 				return c.a.createElement("div", {
 					className: Object(re.a)(Ot.a.menu, s, {
@@ -2684,9 +2684,9 @@
 				vn = n("./src/reddit/constants/experiments.ts"),
 				gn = n("./src/reddit/helpers/chooseVariant/index.ts");
 			const fn = e => Object(gn.c)(e, {
-				experimentName: vn.vb,
+				experimentName: vn.wb,
 				experimentEligibilitySelector: gn.a
-			}) === vn.qb.Enabled;
+			}) === vn.rb.Enabled;
 			var xn = n("./src/reddit/selectors/communityAwards.ts");
 			const En = (e, t) => {
 				let {
@@ -3063,7 +3063,7 @@
 				}, c.a.createElement(ln, {
 					commentId: o.parentId,
 					onReplyClick: e => {
-						g(Object(Pe.a)(e)), _(e)
+						g(Object(Pe.b)(e)), _(e)
 					},
 					isLivestreaming: p,
 					isV2Enabled: !0
@@ -3501,14 +3501,14 @@
 						postId: n,
 						sendEvent: s
 					} = this.props;
-					t && !t.pending && (e(t.moreCommentId), s(Object(Pe.e)("history", n)))
+					t && !t.pending && (e(t.moreCommentId), s(Object(Pe.g)("history", n)))
 				}
 				sendViewLastMessageTelemetry() {
 					const {
 						chatCommentLinks: e,
 						sendEvent: t
 					} = this.props, n = a()(e);
-					(null == n ? void 0 : n.id) && t(Object(Pe.b)(n.id))
+					(null == n ? void 0 : n.id) && t(Object(Pe.c)(n.id))
 				}
 				scrollToTargetComment(e) {
 					if (e && this._refList[e] && this._refList[e].current && this._refScroller && this._refScroller.current) {
@@ -4581,4 +4581,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatPost.2b2823e7fb42669d8094.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatPost.bf473e7573d14e4542f4.js.map

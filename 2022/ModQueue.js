@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModQueue.6aa62860dd3aea9afd94.js
-// Retrieved at 6/1/2022, 6:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModQueue.7d42c064e6a3b75882c0.js
+// Retrieved at 6/8/2022, 11:40:06 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModQueue"], {
 		"./src/reddit/actions/bulkActions/index.ts": function(e, t, s) {
@@ -53,7 +53,7 @@
 				O = s("./src/reddit/selectors/user.ts"),
 				j = s("./src/reddit/actions/comment/index.ts"),
 				_ = s("./src/reddit/actions/comment/constants.ts");
-			const h = Object(n.a)(_.n),
+			const h = Object(n.a)(_.o),
 				v = e => async (t, s, o) => {
 					let {
 						apiContext: r
@@ -87,7 +87,7 @@
 							isLocked: a.isLocked
 						}
 					}))
-				}, S = Object(n.a)(_.G), g = e => async (t, s, r) => {
+				}, S = Object(n.a)(_.H), g = e => async (t, s, r) => {
 					let {
 						apiContext: n
 					} = r;
@@ -1229,7 +1229,7 @@
 												hasSortParam: !0
 											})), l === z.e.Post) {
 											const s = Object(x.a)(K.c.replyToPost, m);
-											n(Object(N.q)({
+											n(Object(N.r)({
 												...t,
 												headCommentId: Object(J.w)(i, {
 													commentsPageKey: r
@@ -1253,7 +1253,7 @@
 													commentId: m,
 													commentsPageKey: r
 												});
-											n(Object(N.o)({
+											n(Object(N.p)({
 												...t,
 												parentCommentId: m,
 												commentsPageKey: r,
@@ -1499,4 +1499,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModQueue.6aa62860dd3aea9afd94.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModQueue.7d42c064e6a3b75882c0.js.map

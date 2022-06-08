@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/removalReasonActions.8b0c8718c27316aff292.js
-// Retrieved at 6/8/2022, 10:20:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/removalReasonActions.93a53e0aeb66717d429b.js
+// Retrieved at 6/8/2022, 11:40:06 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["removalReasonActions"], {
 		"./src/lib/scroll/index.ts": function(e, t, o) {
@@ -50,50 +50,52 @@
 		},
 		"./src/reddit/actions/comment/authoring.ts": function(e, t, o) {
 			"use strict";
-			o.d(t, "e", (function() {
+			o.d(t, "f", (function() {
 				return Oe
-			})), o.d(t, "q", (function() {
-				return he
-			})), o.d(t, "o", (function() {
-				return ge
-			})), o.d(t, "s", (function() {
-				return _e
-			})), o.d(t, "v", (function() {
-				return xe
-			})), o.d(t, "p", (function() {
-				return ve
-			})), o.d(t, "u", (function() {
-				return Ee
-			})), o.d(t, "n", (function() {
-				return Ie
-			})), o.d(t, "m", (function() {
-				return we
-			})), o.d(t, "h", (function() {
-				return Ne
-			})), o.d(t, "a", (function() {
-				return Me
-			})), o.d(t, "b", (function() {
-				return Le
 			})), o.d(t, "r", (function() {
-				return Ke
-			})), o.d(t, "f", (function() {
-				return Ue
-			})), o.d(t, "g", (function() {
-				return Be
-			})), o.d(t, "k", (function() {
-				return Fe
-			})), o.d(t, "d", (function() {
-				return He
-			})), o.d(t, "c", (function() {
-				return We
-			})), o.d(t, "j", (function() {
-				return Qe
-			})), o.d(t, "i", (function() {
-				return Ye
-			})), o.d(t, "l", (function() {
-				return Ze
+				return he
+			})), o.d(t, "p", (function() {
+				return ge
 			})), o.d(t, "t", (function() {
+				return _e
+			})), o.d(t, "w", (function() {
+				return xe
+			})), o.d(t, "q", (function() {
+				return ve
+			})), o.d(t, "v", (function() {
+				return Ee
+			})), o.d(t, "o", (function() {
+				return Ie
+			})), o.d(t, "n", (function() {
+				return we
+			})), o.d(t, "i", (function() {
+				return Ne
+			})), o.d(t, "b", (function() {
+				return Me
+			})), o.d(t, "c", (function() {
+				return Le
+			})), o.d(t, "s", (function() {
+				return Ke
+			})), o.d(t, "g", (function() {
+				return Ue
+			})), o.d(t, "h", (function() {
+				return Be
+			})), o.d(t, "l", (function() {
+				return Fe
+			})), o.d(t, "e", (function() {
+				return He
+			})), o.d(t, "d", (function() {
+				return We
+			})), o.d(t, "a", (function() {
+				return Qe
+			})), o.d(t, "k", (function() {
+				return ze
+			})), o.d(t, "j", (function() {
+				return Ze
+			})), o.d(t, "m", (function() {
 				return et
+			})), o.d(t, "u", (function() {
+				return tt
 			}));
 			o("./node_modules/core-js/modules/web.dom.iterable.js");
 			var n = o("./node_modules/fbt/lib/FbtPublic.js"),
@@ -241,8 +243,8 @@
 				re = o("./node_modules/reselect/es/index.js");
 			const ie = Object(re.a)(e => Object(se.c)(e, {
 				experimentEligibilitySelector: se.a,
-				experimentName: ne.Db
-			}), e => e === ne.pd);
+				experimentName: ne.Eb
+			}), e => e === ne.qd);
 			var ce = o("./src/reddit/selectors/experiments/contributeBeforeSignUp.ts"),
 				ae = o("./src/reddit/selectors/experiments/emailEnablement.ts"),
 				de = o("./src/reddit/selectors/platform.ts"),
@@ -250,7 +252,7 @@
 				me = o("./src/reddit/selectors/user.ts"),
 				ue = o("./src/reddit/actions/comment/index.ts"),
 				pe = o("./src/reddit/actions/comment/constants.ts");
-			const be = Object(r.a)(pe.k),
+			const be = Object(r.a)(pe.l),
 				Oe = e => {
 					let {
 						hasFocus: t,
@@ -271,10 +273,10 @@
 							}))
 					}
 				},
-				fe = Object(r.a)(pe.I),
-				he = Object(r.a)(pe.K),
-				ge = Object(r.a)(pe.J),
-				je = Object(r.a)(pe.H),
+				fe = Object(r.a)(pe.J),
+				he = Object(r.a)(pe.L),
+				ge = Object(r.a)(pe.K),
+				je = Object(r.a)(pe.I),
 				Se = async (e, t, o, n) => {
 					const s = n.ok && n.body,
 						r = s && s.comment && s.comment.id;
@@ -506,7 +508,7 @@
 							parentCommentDepth: o
 						}, !0, r, i))
 					}
-				}, Ae = Object(r.a)(pe.q), Ne = Object(r.a)(pe.y), Me = Object(r.a)(pe.p), De = Object(r.a)(pe.l), Pe = (Object(r.a)(pe.g), Object(r.a)(pe.m)), Le = (Object(r.a)(pe.t), (e, t, o) => async (s, r, i) => {
+				}, Ae = Object(r.a)(pe.r), Ne = Object(r.a)(pe.z), Me = Object(r.a)(pe.q), De = Object(r.a)(pe.m), Pe = (Object(r.a)(pe.h), Object(r.a)(pe.n)), Le = (Object(r.a)(pe.u), (e, t, o) => async (s, r, i) => {
 					let {
 						apiContext: c
 					} = i;
@@ -620,7 +622,7 @@
 				}, Fe = (e, t) => o => o(De({
 					draftKey: e,
 					formData: t
-				})), Ge = Object(r.a)(pe.s), He = e => {
+				})), Ge = Object(r.a)(pe.t), He = e => {
 					let {
 						commentId: t,
 						commentMode: o,
@@ -643,7 +645,7 @@
 							}
 						})))
 					}
-				}, Ve = Object(r.a)(pe.D), qe = Object(r.a)(pe.C), Je = Object(r.a)(pe.E), We = Object(r.a)(pe.h), Qe = e => {
+				}, Ve = Object(r.a)(pe.E), qe = Object(r.a)(pe.D), Je = Object(r.a)(pe.F), We = Object(r.a)(pe.i), Qe = Object(r.a)(pe.e), ze = e => {
 					let {
 						id: t,
 						commentsPageKey: o,
@@ -749,12 +751,12 @@
 							error: p.error
 						}))
 					}
-				}, ze = Object(r.a)(pe.A), Xe = Object(r.a)(pe.z), $e = Object(r.a)(pe.B), Ye = (e, t) => async (o, n, r) => {
+				}, Xe = Object(r.a)(pe.B), $e = Object(r.a)(pe.A), Ye = Object(r.a)(pe.C), Ze = (e, t) => async (o, n, r) => {
 					let {
 						apiContext: i
 					} = r;
 					const c = n();
-					o(ze({
+					o(Xe({
 						id: e
 					})), z.a(e, c);
 					const a = await ((e, t) => Object(x.a)(Object(C.a)(e, [v.a]), {
@@ -774,14 +776,14 @@
 						...e,
 						error: e.error || Object(k.a)()
 					}))(i(), e);
-					a.ok ? o($e({
+					a.ok ? o(Ye({
 						id: e,
 						postId: t
-					})) : o(Xe({
+					})) : o($e({
 						id: e,
 						error: a.error
 					}))
-				}, Ze = e => async (t, o, n) => {
+				}, et = e => async (t, o, n) => {
 					let {
 						apiContext: s
 					} = n;
@@ -795,7 +797,7 @@
 							sendReplies: !r
 						}
 					}))
-				}, et = (e, t) => async (o, s, r) => {
+				}, tt = (e, t) => async (o, s, r) => {
 					let {
 						gqlContext: i
 					} = r;
@@ -873,7 +875,7 @@
 				f = o("./src/reddit/selectors/user.ts"),
 				h = o("./src/reddit/actions/comment/index.ts"),
 				g = o("./src/reddit/actions/comment/constants.ts");
-			const j = Object(r.a)(g.n),
+			const j = Object(r.a)(g.o),
 				S = e => async (t, o, n) => {
 					let {
 						apiContext: s
@@ -907,7 +909,7 @@
 							isLocked: i.isLocked
 						}
 					}))
-				}, x = Object(r.a)(g.G), y = e => async (t, o, s) => {
+				}, x = Object(r.a)(g.H), y = e => async (t, o, s) => {
 					let {
 						apiContext: r
 					} = s;
@@ -1585,7 +1587,7 @@
 												hasSortParam: !0
 											})), u === Q.e.Post) {
 											const o = Object(E.a)(W.c.replyToPost, m);
-											r(Object(w.q)({
+											r(Object(w.r)({
 												...t,
 												headCommentId: Object(X.w)(d, {
 													commentsPageKey: s
@@ -1609,7 +1611,7 @@
 													commentId: m,
 													commentsPageKey: s
 												});
-											r(Object(w.o)({
+											r(Object(w.p)({
 												...t,
 												parentCommentId: m,
 												commentsPageKey: s,
@@ -2789,11 +2791,11 @@
 				l = Object(n.a)(d, e => !!e),
 				m = e => {
 					const t = d(e);
-					return !!t && a(e, t) === s.ab.SkipOnboarding
+					return !!t && a(e, t) === s.bb.SkipOnboarding
 				},
 				u = e => {
 					const t = d(e);
-					return !!t && a(e, t) === s.ab.RegOnboarding
+					return !!t && a(e, t) === s.bb.RegOnboarding
 				}
 		},
 		"./src/redditGQL/operations/CommentToxicity.json": function(e) {
@@ -2810,4 +2812,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/removalReasonActions.8b0c8718c27316aff292.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/removalReasonActions.93a53e0aeb66717d429b.js.map

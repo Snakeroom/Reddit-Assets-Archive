@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/NsfwBlockingModal.46bb90d45adbbffc1177.js
-// Retrieved at 6/8/2022, 10:20:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/NsfwBlockingModal.9b216599cb96c9239ed9.js
+// Retrieved at 6/8/2022, 11:40:06 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["NsfwBlockingModal"], {
 		"./src/reddit/components/Footer/index.m.less": function(e, t, n) {
@@ -148,8 +148,8 @@
 				f = n("./src/reddit/controls/Button/index.tsx"),
 				g = n("./src/reddit/helpers/counters/nsfwblocking.ts"),
 				v = n("./src/reddit/selectors/telemetry.ts");
-			const h = "nsfw_dialog";
-			var x = e => o.a.createElement("svg", {
+			const x = "nsfw_dialog";
+			var h = e => o.a.createElement("svg", {
 					className: e.className,
 					fill: "none",
 					height: "60",
@@ -197,7 +197,7 @@
 						Object(g.c)(r)
 					}, [r]), o.a.createElement("div", {
 						className: Object(d.a)(E.a.mainCta)
-					}, o.a.createElement(x, null), b, o.a.createElement("div", {
+					}, o.a.createElement(h, null), b, o.a.createElement("div", {
 						className: E.a.contentTitle
 					}, e.contentTitle), o.a.createElement("div", {
 						className: E.a.warning
@@ -212,7 +212,7 @@
 								...Object(v.n)(e),
 								source: "xpromo",
 								action: "click",
-								noun: h
+								noun: x
 							}))()), m(), Object(g.b)(g.a.Login), t(Object(u.i)())
 						}
 					}, (() => s.fbt._("Log In", null, {
@@ -224,7 +224,7 @@
 								...Object(v.n)(e),
 								source: "xpromo",
 								action: "dismiss",
-								noun: h
+								noun: x
 							}))()), Object(g.b)(g.a.Dismiss), t(Object(l.b)("/"))
 						}
 					}, (() => s.fbt._("I'm not over 18", null, {
@@ -263,7 +263,7 @@
 							...Object(v.n)(e),
 							source: "xpromo",
 							action: "view",
-							noun: h
+							noun: x
 						}))())
 					}, [t]);
 					const {
@@ -280,10 +280,10 @@
 					}, o.a.createElement(b.b, {
 						textColor: l
 					})), o.a.createElement(w, {
-						qrCodeAsset: (() => r === p.wc.Enabled || s === p.nb.BlurredPreview || s === p.nb.NoPreview ? y.d2x_nsfw_signup_blocking_de_v1 : y.d2x_nsfw_signup_blocking_non_us_v1)()
+						qrCodeAsset: (() => r === p.xc.Enabled || s === p.ob.BlurredPreview || s === p.ob.NoPreview ? y.d2x_nsfw_signup_blocking_de_v1 : y.d2x_nsfw_signup_blocking_non_us_v1)()
 					}))
 				}
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/NsfwBlockingModal.46bb90d45adbbffc1177.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/NsfwBlockingModal.9b216599cb96c9239ed9.js.map

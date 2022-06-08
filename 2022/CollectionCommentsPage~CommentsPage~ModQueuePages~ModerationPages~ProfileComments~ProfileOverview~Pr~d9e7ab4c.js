@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ModQueuePages~ModerationPages~ProfileComments~ProfileOverview~Pr~d9e7ab4c.af74583611d550b7074b.js
-// Retrieved at 6/8/2022, 10:20:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ModQueuePages~ModerationPages~ProfileComments~ProfileOverview~Pr~d9e7ab4c.2c864d32b9a792fc1d3d.js
+// Retrieved at 6/8/2022, 11:40:06 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~ModQueuePages~ModerationPages~ProfileComments~ProfileOverview~Pr~d9e7ab4c"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -575,7 +575,7 @@
 				v = n("./src/reddit/selectors/user.ts"),
 				f = n("./src/reddit/actions/comment/index.ts"),
 				g = n("./src/reddit/actions/comment/constants.ts");
-			const y = Object(s.a)(g.n),
+			const y = Object(s.a)(g.o),
 				_ = e => async (t, n, o) => {
 					let {
 						apiContext: r
@@ -609,7 +609,7 @@
 							isLocked: i.isLocked
 						}
 					}))
-				}, k = Object(s.a)(g.G), I = e => async (t, n, r) => {
+				}, k = Object(s.a)(g.H), I = e => async (t, n, r) => {
 					let {
 						apiContext: s
 					} = r;
@@ -1197,12 +1197,12 @@
 					})), 5e3)
 				};
 			var Q = n("./src/reddit/components/Comments/Comment/TopMeta/crowdControl.m.less"),
-				G = n.n(Q);
+				K = n.n(Q);
 			const {
-				fbt: K
+				fbt: G
 			} = n("./node_modules/fbt/lib/FbtPublic.js"), Y = () => s.a.createElement(x.a, {
-				className: G.a.crowdControlText
-			}, K._("Crowd Control", null, {
+				className: K.a.crowdControlText
+			}, G._("Crowd Control", null, {
 				hk: "4WgEW"
 			}));
 			var Z = n("./src/reddit/components/Comments/Comment/TopMeta/edited.m.less"),
@@ -2473,4 +2473,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ModQueuePages~ModerationPages~ProfileComments~ProfileOverview~Pr~d9e7ab4c.af74583611d550b7074b.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ModQueuePages~ModerationPages~ProfileComments~ProfileOverview~Pr~d9e7ab4c.2c864d32b9a792fc1d3d.js.map

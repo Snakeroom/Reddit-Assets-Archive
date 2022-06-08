@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfileComments.91204134ab34db361b98.js
-// Retrieved at 6/8/2022, 10:20:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfileComments.812978177eeda1b1c6db.js
+// Retrieved at 6/8/2022, 11:40:06 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfileComments"], {
 		"./src/reddit/actions/pages/profileComments/index.ts": function(e, t, s) {
@@ -367,8 +367,8 @@
 				K = s("./src/reddit/connectors/ClassicPost/index.tsx"),
 				q = s("./src/reddit/constants/postLayout.ts"),
 				J = s("./src/reddit/helpers/hasModFlairPermissions/index.ts"),
-				Q = s("./src/reddit/helpers/hasModFullPermissions/index.ts"),
-				z = s("./src/reddit/helpers/hasModPostPermissions/index.ts"),
+				z = s("./src/reddit/helpers/hasModFullPermissions/index.ts"),
+				Q = s("./src/reddit/helpers/hasModPostPermissions/index.ts"),
 				Z = s("./src/reddit/helpers/localStorage/index.ts"),
 				Y = s("./src/reddit/helpers/search/renderMedia.tsx"),
 				X = s("./src/reddit/helpers/styles/mixins/index.tsx"),
@@ -433,10 +433,10 @@
 				}, [x, be, Ce.id, Me]);
 				const Le = ve ? void 0 : O,
 					Ne = s || void 0,
-					Te = Object(z.a)(le),
+					Te = Object(Q.a)(le),
 					Fe = Object(J.a)(le),
-					Re = Object(Q.a)(le),
-					Ae = me && z.a,
+					Re = Object(z.a)(le),
+					Ae = me && Q.a,
 					De = Object(_.a)(Ce),
 					Be = Object(M.c)(Ce),
 					We = !!Ce.media && Ce.media.type === H.o.RTJSON,
@@ -457,10 +457,10 @@
 					{
 						source: Je
 					} = qe,
-					[Qe, ze] = Object(o.useState)(!1),
+					[ze, Qe] = Object(o.useState)(!1),
 					Ze = Object(o.useCallback)(() => {
-						ze(!Qe), Object(Z.Kb)(), _e(Object($.d)(fe))
-					}, [Qe, fe, _e]);
+						Qe(!ze), Object(Z.Kb)(), _e(Object($.d)(fe))
+					}, [ze, fe, _e]);
 				let Ye = n.a.createElement(G.a, {
 					className: oe.a.classicThumbnail,
 					crosspost: Ne && Ce,
@@ -585,7 +585,7 @@
 						hide: !Ae,
 						report: !Ae
 					})
-				})), n.a.createElement(I.d, null))), Object(Y.a)(Ce, oe.a, Oe, x, Ie, re), we && Qe && n.a.createElement(h.a, {
+				})), n.a.createElement(I.d, null))), Object(Y.a)(Ce, oe.a, Oe, x, Ie, re), we && ze && n.a.createElement(h.a, {
 					className: oe.a.creatorStatsContainer,
 					post: Ce,
 					subreddit: we,
@@ -908,8 +908,8 @@
 				K = s("./src/reddit/helpers/trackers/lightbox.ts"),
 				q = s("./src/reddit/models/PostDraft/index.ts"),
 				J = s("./src/reddit/models/Comment/index.ts"),
-				Q = s("./src/reddit/selectors/activeModalId.ts"),
-				z = s("./src/reddit/selectors/comments.ts"),
+				z = s("./src/reddit/selectors/activeModalId.ts"),
+				Q = s("./src/reddit/selectors/comments.ts"),
 				Z = s("./src/reddit/selectors/moderatorPermissions.ts"),
 				Y = s("./src/reddit/selectors/posts.ts"),
 				X = s("./src/reddit/selectors/tooltip.ts"),
@@ -950,13 +950,13 @@
 						let {
 							comment: s
 						} = t;
-						return Object(Q.a)(e) === ye(s.id)
+						return Object(z.a)(e) === ye(s.id)
 					},
 					isPendingDeletion: (e, t) => {
 						let {
 							comment: s
 						} = t;
-						return Object(z.D)(e, {
+						return Object(Q.D)(e, {
 							commentId: s.postId
 						})
 					},
@@ -983,7 +983,7 @@
 						let {
 							comment: s
 						} = t;
-						return Object(z.m)(e, {
+						return Object(Q.m)(e, {
 							commentId: s.id
 						})
 					},
@@ -1197,7 +1197,7 @@
 						commentsPageKey: o
 					} = t;
 					return {
-						deleteComment: () => o && e(Object(y.i)(s.id, s.postId)),
+						deleteComment: () => o && e(Object(y.j)(s.id, s.postId)),
 						onDistinguishComment: (t, o) => e(Object(I.b)(s.id, t, o)),
 						onIgnoreReports: () => e(Object(I.g)(s.id)),
 						onGildClick: t => e(Object(P.d)({
@@ -1226,7 +1226,7 @@
 									commentMode: s.media && s.media.rteMode,
 									commentsPageKey: o
 								};
-							e(Object(G.a)(t)), e(Object(y.f)(n))
+							e(Object(G.a)(t)), e(Object(y.g)(n))
 						},
 						handleReply: t => {
 							const o = Object(j.a)(s.postId, s.id, {}),
@@ -1234,7 +1234,7 @@
 									parentCommentId: s.id,
 									commentsPageKey: o
 								};
-							e(Object(G.a)(t)), e(Object(y.g)(n))
+							e(Object(G.a)(t)), e(Object(y.h)(n))
 						},
 						toggleDeleteCommentModal: () => e(Object(_.i)(ye(s.id)))
 					}
@@ -1250,7 +1250,7 @@
 				Ve = xe.a.div("CommentBody", De.a),
 				Ue = Object(r.b)(() => Object(i.c)({
 					comment: (e, t) => Object(Re.b)(e, t),
-					flair: z.e
+					flair: Q.e
 				})),
 				He = Object(c.b)(e => ({
 					renderingObjectInfo: e.comment
@@ -3482,8 +3482,8 @@
 				K = s("./src/reddit/actions/post.ts"),
 				q = s("./src/reddit/components/TrackingHelper/index.tsx"),
 				J = s("./src/reddit/helpers/postComponentForLayout/index.tsx"),
-				Q = s("./src/reddit/helpers/trackers/post.ts"),
-				z = s("./src/reddit/featureFlags/index.ts"),
+				z = s("./src/reddit/helpers/trackers/post.ts"),
+				Q = s("./src/reddit/featureFlags/index.ts"),
 				Z = s("./src/reddit/selectors/comments.ts"),
 				Y = s("./src/reddit/selectors/posts.ts"),
 				X = s("./src/reddit/selectors/profileComments.ts"),
@@ -3495,7 +3495,7 @@
 					apiError: X.a,
 					apiPending: X.b,
 					currentUser: te.k,
-					measureScrollFPS: z.d.measureScrollFPS,
+					measureScrollFPS: Q.d.measureScrollFPS,
 					layout: P.S,
 					loadMore: X.d,
 					subredditsById: $.bb,
@@ -3541,7 +3541,7 @@
 					...e,
 					...t,
 					...s,
-					postClickEventFactory: (e, t) => Object(Q.k)(e, t),
+					postClickEventFactory: (e, t) => Object(z.k)(e, t),
 					postComponentForLayout: J.b
 				}));
 
@@ -3745,13 +3745,13 @@
 				r = s("./src/reddit/helpers/chooseVariant/index.ts"),
 				i = s("./src/reddit/selectors/posts.ts");
 			const a = e => Object(r.c)(e, {
-					experimentName: n.Ie,
+					experimentName: n.Je,
 					experimentEligibilitySelector: r.a
 				}),
-				d = (e, t) => t === n.Qe.Enabled && (null == e ? void 0 : e.isCreatedFromAdsUi) || (null == e ? void 0 : e.isSponsored),
+				d = (e, t) => t === n.Re.Enabled && (null == e ? void 0 : e.isCreatedFromAdsUi) || (null == e ? void 0 : e.isSponsored),
 				c = Object(o.a)(i.G, a, (e, t) => d(e, t));
 			Object(o.a)((e, t) => t, a, (e, t) => d(e, t))
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileComments.91204134ab34db361b98.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileComments.812978177eeda1b1c6db.js.map

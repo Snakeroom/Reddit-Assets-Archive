@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ChatMessageInput~ChatPost.a4d9c4d16ecce93cb135.js
-// Retrieved at 6/8/2022, 10:20:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ChatMessageInput~ChatPost.d7a150ca36e5937dc42d.js
+// Retrieved at 6/8/2022, 11:40:06 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ChatMessageInput~ChatPost"], {
 		"./node_modules/lodash/_baseReduce.js": function(e, t) {
@@ -1972,12 +1972,12 @@
 						rtJsonElementProps: i
 					});
 					switch (o) {
-						case b.vf.SmIcon:
+						case b.wf.SmIcon:
 							return r.a.createElement(h, {
 								subredditName: s,
 								rtJsonElementProps: i
 							});
-						case b.vf.SmIconHc:
+						case b.wf.SmIconHc:
 							return r.a.createElement(h, {
 								subredditName: s,
 								isHoverable: !0,
@@ -2187,16 +2187,20 @@
 		},
 		"./src/reddit/helpers/trackers/commentsChat.ts": function(e, t, n) {
 			"use strict";
-			n.d(t, "e", (function() {
+			n.d(t, "g", (function() {
 				return c
-			})), n.d(t, "d", (function() {
+			})), n.d(t, "f", (function() {
 				return d
-			})), n.d(t, "b", (function() {
-				return l
 			})), n.d(t, "c", (function() {
+				return l
+			})), n.d(t, "d", (function() {
 				return u
-			})), n.d(t, "a", (function() {
+			})), n.d(t, "b", (function() {
 				return m
+			})), n.d(t, "e", (function() {
+				return h
+			})), n.d(t, "a", (function() {
+				return p
 			}));
 			var s = n("./src/reddit/constants/tracking.ts"),
 				r = n("./src/reddit/selectors/comments.ts"),
@@ -2264,6 +2268,26 @@
 						reason: "live_post",
 						type: "live_post"
 					})
+				}),
+				h = e => t => ({
+					...a(t, e),
+					source: "chat_post",
+					action: s.c.VIEW,
+					noun: "warning",
+					post: Object(o.H)(t, e),
+					actionInfo: {
+						pageType: "spam_rate_countdown"
+					}
+				}),
+				p = e => t => ({
+					...a(t, e),
+					source: "chat_post",
+					action: s.c.CLOSE,
+					noun: "warning",
+					post: Object(o.H)(t, e),
+					actionInfo: {
+						pageType: "spam_rate_countdown"
+					}
 				})
 		},
 		"./src/reddit/helpers/trackers/getRichTextSourceElement.ts": function(e, t, n) {
@@ -2432,12 +2456,15 @@
 				return i
 			})), n.d(t, "c", (function() {
 				return a
+			})), n.d(t, "d", (function() {
+				return c
 			}));
 			var s = n("./src/reddit/constants/experiments.ts"),
 				r = n("./src/reddit/selectors/experiments/econ/simpleExperiment.ts");
 			const o = Object(r.a)(s.I),
 				i = Object(r.a)(s.H),
-				a = Object(r.a)(s.J)
+				a = Object(r.a)(s.J),
+				c = Object(r.a)(s.K)
 		},
 		"./src/reddit/selectors/subredditMention.ts": function(e, t, n) {
 			"use strict";
@@ -2462,12 +2489,12 @@
 				c = e => {
 					return Object(o.c)(e, {
 						experimentEligibilitySelector: a,
-						experimentName: s.of
+						experimentName: s.pf
 					}) || ""
 				},
 				d = e => {
 					const t = c(e);
-					return t === s.vf.SmIcon || t === s.vf.SmIconHc
+					return t === s.wf.SmIcon || t === s.wf.SmIconHc
 				},
 				l = (e, t) => {
 					let {
@@ -2493,4 +2520,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatMessageInput~ChatPost.a4d9c4d16ecce93cb135.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatMessageInput~ChatPost.d7a150ca36e5937dc42d.js.map

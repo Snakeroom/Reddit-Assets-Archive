@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/EconPowerupsMarketingModal.3fa022ae6f7dae631640.js
-// Retrieved at 6/8/2022, 10:20:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/EconPowerupsMarketingModal.83d6b29ab357e3f56d62.js
+// Retrieved at 6/8/2022, 11:40:06 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["EconPowerupsMarketingModal"], {
 		"./node_modules/@researchgate/react-intersection-observer/lib/es/index.js": function(e, t, r) {
@@ -1038,30 +1038,30 @@
 			}));
 			var n = r("./src/reddit/constants/experiments.ts"),
 				o = r("./src/reddit/selectors/experiments/econ/simpleExperiment.ts");
-			const s = Object(o.a)(n.dd),
-				a = Object(o.a)(n.bd),
-				c = Object(o.a)(n.ed),
-				i = Object(o.a)(n.ad),
-				l = Object(o.a)(n.Zc),
-				d = Object(o.a)(n.gd),
-				u = Object(o.a)(n.fd),
-				m = Object(o.a)(n.Wc),
-				p = Object(o.a)(n.Uc),
-				b = Object(o.a)(n.Oc),
-				h = Object(o.a)(n.Pc),
-				f = Object(o.a)(n.Mc),
-				w = Object(o.a)(n.Nc),
-				v = Object(o.a)(n.Rc),
-				_ = Object(o.a)(n.Lc),
-				g = Object(o.a)(n.Xc),
-				E = Object(o.a)(n.Yc),
-				x = Object(o.a)(n.cd),
-				j = Object(o.a)(n.hd),
-				O = Object(o.a)(n.jd),
-				k = Object(o.a)(n.md),
-				y = Object(o.a)(n.ld),
-				N = Object(o.a)(n.kd)
+			const s = Object(o.a)(n.ed),
+				a = Object(o.a)(n.cd),
+				c = Object(o.a)(n.fd),
+				i = Object(o.a)(n.bd),
+				l = Object(o.a)(n.ad),
+				d = Object(o.a)(n.hd),
+				u = Object(o.a)(n.gd),
+				m = Object(o.a)(n.Xc),
+				p = Object(o.a)(n.Vc),
+				b = Object(o.a)(n.Pc),
+				h = Object(o.a)(n.Qc),
+				f = Object(o.a)(n.Nc),
+				w = Object(o.a)(n.Oc),
+				v = Object(o.a)(n.Sc),
+				_ = Object(o.a)(n.Mc),
+				g = Object(o.a)(n.Yc),
+				E = Object(o.a)(n.Zc),
+				x = Object(o.a)(n.dd),
+				j = Object(o.a)(n.id),
+				O = Object(o.a)(n.kd),
+				k = Object(o.a)(n.nd),
+				y = Object(o.a)(n.md),
+				N = Object(o.a)(n.ld)
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EconPowerupsMarketingModal.3fa022ae6f7dae631640.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EconPowerupsMarketingModal.83d6b29ab357e3f56d62.js.map

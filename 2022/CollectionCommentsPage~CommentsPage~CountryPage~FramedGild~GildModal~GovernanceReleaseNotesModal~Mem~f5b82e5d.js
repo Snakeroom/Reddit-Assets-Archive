@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~CountryPage~FramedGild~GildModal~GovernanceReleaseNotesModal~Mem~f5b82e5d.164fb0066d5792cf9de8.js
-// Retrieved at 6/8/2022, 10:20:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~CountryPage~FramedGild~GildModal~GovernanceReleaseNotesModal~Mem~f5b82e5d.a566c433596b0393de5c.js
+// Retrieved at 6/8/2022, 11:40:06 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~CountryPage~FramedGild~GildModal~GovernanceReleaseNotesModal~Mem~f5b82e5d"], {
 		"./src/lib/colors/constants.ts": function(e, t, s) {
@@ -2666,10 +2666,10 @@
 				a = s("./src/reddit/constants/experiments.ts"),
 				n = s("./src/reddit/helpers/chooseVariant/index.ts");
 			const o = Object(i.a)(e => Object(n.c)(e, {
-					experimentName: a.If,
+					experimentName: a.Jf,
 					experimentEligibilitySelector: n.a
 				}), e => e),
-				r = Object(i.a)(o, e => e === a.Bf)
+				r = Object(i.a)(o, e => e === a.Cf)
 		},
 		"./src/reddit/selectors/experiments/videoReactions.ts": function(e, t, s) {
 			"use strict";
@@ -2682,14 +2682,14 @@
 				a = s("./src/reddit/helpers/chooseVariant/index.ts"),
 				n = s("./src/reddit/selectors/experiments/index.ts");
 			const o = e => Object(a.c)(e, {
-					experimentName: i.sb,
+					experimentName: i.tb,
 					experimentEligibilitySelector: n.e
-				}) === i.pd,
+				}) === i.qd,
 				r = e => Object(a.c)(e, {
-					experimentName: i.gc,
+					experimentName: i.hc,
 					experimentEligibilitySelector: a.a
-				}) === i.pd
+				}) === i.qd
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~CountryPage~FramedGild~GildModal~GovernanceReleaseNotesModal~Mem~f5b82e5d.164fb0066d5792cf9de8.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~CountryPage~FramedGild~GildModal~GovernanceReleaseNotesModal~Mem~f5b82e5d.a566c433596b0393de5c.js.map
