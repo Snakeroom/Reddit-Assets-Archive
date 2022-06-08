@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/runtime~Reddit.c0b660e51b0f2290d5a7.js
-// Retrieved at 6/8/2022, 12:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/runtime~Reddit.fc9a756f65b18773dff0.js
+// Retrieved at 6/8/2022, 1:20:04 PM by Reddit Dataminer v1.0.0
 ! function(e) {
 	function o(o) {
 		for (var a, n, r = o[0], s = o[1], c = o[2], l = 0, P = []; l < r.length; l++) n = r[l], Object.prototype.hasOwnProperty.call(d, n) && d[n] && P.push(d[n][0]), d[n] = 0;
@@ -1388,8 +1388,8 @@
 						"CollectionCommentsPage~CommentsPage~ModerationPages~PostCreation~ProfileComments~ProfileOverview~Pro~898a3d9b": "6c33a24e8179f756def1",
 						"CollectionCommentsPage~CommentsPage~ModProgressModule~NewCommunityProgress": "50fef937c9e262b7c82d",
 						"CollectionCommentsPage~CommentsPage~Subreddit~SubredditWiki": "79f04b770f399c9b9cd0",
-						CollectionCommentsPage: "f2a3f8171e146c77bce1",
-						CommentsPage: "8b2c8e0d3576ce4c4cb5",
+						CollectionCommentsPage: "5ba496c8abe9330cbe2f",
+						CommentsPage: "3c57b1ce1bf83e2a84f2",
 						"ProfileComments~ProfileOverview~ProfilePosts~ProfilePrivate~ProfileSnoobuilder": "c252a48f55d2a6ee1c52",
 						"ProfileComments~ProfileOverview~ProfilePosts": "30290b62e08148fd9433",
 						ProfileComments: "10ed161f178ff918855c",
@@ -1522,7 +1522,7 @@
 						Subreddit: "c592ecdd55c70f576231",
 						"vendors~LiveVideoPlayer~PublicAccessNetwork~RpanListingUnit": "b1b748750a6395dcc18f",
 						"LiveVideoPlayer~PublicAccessNetwork~RpanListingUnit": "7525f54b0337f9566b7a",
-						PublicAccessNetwork: "283ce8da27eac701ccf9",
+						PublicAccessNetwork: "7fa8bdbdb99573d25d15",
 						"vendors~xml2js": "8c40daee6c2bccb14296",
 						"reddit-components-Governance-TransactionModals-TransferTransactionModal": "81732a557b570f4e801f",
 						SignupUpsell: "af0cedea4a94521c2f55",
@@ -1746,4 +1746,4 @@
 	var m = c;
 	t()
 }([]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/runtime~Reddit.c0b660e51b0f2290d5a7.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/runtime~Reddit.fc9a756f65b18773dff0.js.map
