@@ -1,11 +1,11 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-ViewReportsDropdown-index.31acc692c5ba19f71455.js
-// Retrieved at 6/13/2022, 5:30:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-ViewReportsDropdown-index.1877407f9abae0111c68.js
+// Retrieved at 6/13/2022, 6:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-ViewReportsDropdown-index"], {
 		"./src/reddit/actions/comment/moderation.ts": function(e, t, o) {
 			"use strict";
 			o.d(t, "d", (function() {
-				return O
+				return v
 			})), o.d(t, "c", (function() {
 				return w
 			})), o.d(t, "f", (function() {
@@ -39,13 +39,13 @@
 				h = o("./src/reddit/selectors/user.ts"),
 				R = o("./src/reddit/actions/comment/index.ts"),
 				f = o("./src/reddit/actions/comment/constants.ts");
-			const v = Object(r.a)(f.o),
-				O = e => async (t, o, s) => {
+			const O = Object(r.a)(f.o),
+				v = e => async (t, o, s) => {
 					let {
 						apiContext: n
 					} = s;
-					o().features.comments.models[e] && (await Object(p.j)(n(), e)).ok && t((e => async t => {
-						t(v({
+					o().features.comments.models[e] && (await Object(p.k)(n(), e)).ok && t((e => async t => {
+						t(O({
 							commentId: e
 						}))
 					})(e))
@@ -56,7 +56,7 @@
 					if (!Object(h.Q)(o())) return void t(Object(d.i)(l.a.LOGIN_MODAL_ID));
 					const i = o().features.comments.models[e];
 					if (!i) return;
-					const c = i.isLocked ? p.l : p.f;
+					const c = i.isLocked ? p.m : p.f;
 					t(Object(R.i)({
 						[e]: {
 							isLocked: !i.isLocked
@@ -113,20 +113,21 @@
 					})), Object(c.d)())
 				}, _ = (e, t) => async (o, n, r) => {
 					let {
-						apiContext: i
+						apiContext: i,
+						gqlContext: d
 					} = r;
-					const d = n(),
-						l = d.features.comments.models[e],
-						m = d.user.account ? d.user.account.displayText : null;
-					l && m && (o(Object(R.i)({
+					const l = n(),
+						m = l.features.comments.models[e],
+						u = l.user.account ? l.user.account.displayText : null;
+					m && u && (o(Object(R.i)({
 						[e]: {
 							approvedBy: null,
-							bannedBy: m,
+							bannedBy: u,
 							isApproved: !1,
 							isRemoved: !t,
 							isSpam: t
 						}
-					})), (await Object(p.h)(i(), e, t)).ok ? o(Object(a.f)({
+					})), (Object(g.a)(l) ? await Object(p.h)(d(), e, t) : await Object(p.i)(i(), e, t)).ok ? o(Object(a.f)({
 						kind: b.b.SuccessMod,
 						text: t ? s.fbt._("comment has been marked as spam", null, {
 							hk: "4fQaFM"
@@ -135,11 +136,11 @@
 						})
 					})) : o(Object(R.i)({
 						[e]: {
-							approvedBy: l.approvedBy,
-							bannedBy: l.bannedBy,
-							isApproved: l.isApproved,
-							isRemoved: l.isRemoved,
-							isSpam: l.isSpam
+							approvedBy: m.approvedBy,
+							bannedBy: m.bannedBy,
+							isApproved: m.isApproved,
+							isRemoved: m.isRemoved,
+							isSpam: m.isSpam
 						}
 					})), Object(c.d)())
 				}, C = e => async (t, o, n) => {
@@ -148,7 +149,7 @@
 					} = n;
 					const i = o().features.comments.models[e];
 					if (!i) return;
-					const d = i.ignoreReports ? p.k : p.e;
+					const d = i.ignoreReports ? p.l : p.e;
 					t(Object(R.i)({
 						[e]: {
 							ignoreReports: !i.ignoreReports
@@ -287,8 +288,8 @@
 				h = o("./src/reddit/helpers/trackers/modTools.ts"),
 				R = o("./src/reddit/icons/svgs/ChevronDown/index.tsx"),
 				f = o("./src/reddit/icons/svgs/ChevronUp/index.tsx"),
-				v = o("./src/reddit/icons/svgs/Clock/index.tsx"),
-				O = o("./src/reddit/icons/svgs/Undo/index.tsx"),
+				O = o("./src/reddit/icons/svgs/Clock/index.tsx"),
+				v = o("./src/reddit/icons/svgs/Undo/index.tsx"),
 				w = o("./src/reddit/selectors/tooltip.ts"),
 				j = o("./src/reddit/components/Reports/SnoozableReport/index.m.less"),
 				k = o.n(j);
@@ -341,9 +342,9 @@
 						onClick: this.onSnoozeButtonClick
 					}, n.a.createElement("div", {
 						className: k.a.SnoozeButtonContent
-					}, i ? n.a.createElement(n.a.Fragment, null, n.a.createElement(O.a, null), _._("Undo snoozing reports from this user", null, {
+					}, i ? n.a.createElement(n.a.Fragment, null, n.a.createElement(v.a, null), _._("Undo snoozing reports from this user", null, {
 						hk: "4iqfWB"
-					})) : n.a.createElement(n.a.Fragment, null, n.a.createElement(v.a, null), _._("Snooze reports from this user for 7 days", null, {
+					})) : n.a.createElement(n.a.Fragment, null, n.a.createElement(O.a, null), _._("Snooze reports from this user for 7 days", null, {
 						hk: "4cRFyG"
 					}))))))
 				}
@@ -438,9 +439,9 @@
 						hk: "4dr3Qm"
 					})
 				}))),
-				v = o("./src/reddit/components/ViewReportsDropdown/index.m.less"),
-				O = o.n(v);
-			const w = d.a.wrapped(a.a, "StyledDropdown", O.a),
+				O = o("./src/reddit/components/ViewReportsDropdown/index.m.less"),
+				v = o.n(O);
+			const w = d.a.wrapped(a.a, "StyledDropdown", v.a),
 				j = Object(i.c)({
 					isDropdownOpen: (e, t) => {
 						let {
@@ -547,4 +548,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ViewReportsDropdown-index.31acc692c5ba19f71455.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ViewReportsDropdown-index.1877407f9abae0111c68.js.map

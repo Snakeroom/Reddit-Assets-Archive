@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ModQueuePages~ModerationPages~ProfileComments~ProfileOverview~Pr~d9e7ab4c.ed2843a5f97b1e2a839b.js
-// Retrieved at 6/13/2022, 5:30:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ModQueuePages~ModerationPages~ProfileComments~ProfileOverview~Pr~d9e7ab4c.779bfa83d40ed91ed54b.js
+// Retrieved at 6/13/2022, 6:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~ModQueuePages~ModerationPages~ProfileComments~ProfileOverview~Pr~d9e7ab4c"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -581,7 +581,7 @@
 					let {
 						apiContext: r
 					} = o;
-					n().features.comments.models[e] && (await Object(m.j)(r(), e)).ok && t((e => async t => {
+					n().features.comments.models[e] && (await Object(m.k)(r(), e)).ok && t((e => async t => {
 						t(x({
 							commentId: e
 						}))
@@ -593,7 +593,7 @@
 					if (!Object(f.Q)(n())) return void t(Object(a.i)(l.a.LOGIN_MODAL_ID));
 					const i = n().features.comments.models[e];
 					if (!i) return;
-					const d = i.isLocked ? m.l : m.f;
+					const d = i.isLocked ? m.m : m.f;
 					t(Object(g.i)({
 						[e]: {
 							isLocked: !i.isLocked
@@ -650,20 +650,21 @@
 					})), Object(d.d)())
 				}, E = (e, t) => async (n, r, s) => {
 					let {
-						apiContext: i
+						apiContext: i,
+						gqlContext: a
 					} = s;
-					const a = r(),
-						l = a.features.comments.models[e],
-						u = a.user.account ? a.user.account.displayText : null;
-					l && u && (n(Object(g.i)({
+					const l = r(),
+						u = l.features.comments.models[e],
+						p = l.user.account ? l.user.account.displayText : null;
+					u && p && (n(Object(g.i)({
 						[e]: {
 							approvedBy: null,
-							bannedBy: u,
+							bannedBy: p,
 							isApproved: !1,
 							isRemoved: !t,
 							isSpam: t
 						}
-					})), (await Object(m.h)(i(), e, t)).ok ? n(Object(c.f)({
+					})), (Object(v.a)(l) ? await Object(m.h)(a(), e, t) : await Object(m.i)(i(), e, t)).ok ? n(Object(c.f)({
 						kind: b.b.SuccessMod,
 						text: t ? o.fbt._("comment has been marked as spam", null, {
 							hk: "4fQaFM"
@@ -672,11 +673,11 @@
 						})
 					})) : n(Object(g.i)({
 						[e]: {
-							approvedBy: l.approvedBy,
-							bannedBy: l.bannedBy,
-							isApproved: l.isApproved,
-							isRemoved: l.isRemoved,
-							isSpam: l.isSpam
+							approvedBy: u.approvedBy,
+							bannedBy: u.bannedBy,
+							isApproved: u.isApproved,
+							isRemoved: u.isRemoved,
+							isSpam: u.isSpam
 						}
 					})), Object(d.d)())
 				}, C = e => async (t, n, r) => {
@@ -685,7 +686,7 @@
 					} = r;
 					const i = n().features.comments.models[e];
 					if (!i) return;
-					const a = i.ignoreReports ? m.k : m.e;
+					const a = i.ignoreReports ? m.l : m.e;
 					t(Object(g.i)({
 						[e]: {
 							ignoreReports: !i.ignoreReports
@@ -2478,4 +2479,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ModQueuePages~ModerationPages~ProfileComments~ProfileOverview~Pr~d9e7ab4c.ed2843a5f97b1e2a839b.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ModQueuePages~ModerationPages~ProfileComments~ProfileOverview~Pr~d9e7ab4c.779bfa83d40ed91ed54b.js.map

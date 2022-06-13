@@ -1,13 +1,13 @@
-// https://www.redditstatic.com/desktop2x/ModModeBanners.d98fe453322d78db5d1b.js
-// Retrieved at 6/13/2022, 5:30:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModModeBanners.3f8326eaa16cd9eefea7.js
+// Retrieved at 6/13/2022, 6:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModModeBanners"], {
 		"./src/reddit/actions/comment/moderation.ts": function(e, t, s) {
 			"use strict";
 			s.d(t, "d", (function() {
-				return v
-			})), s.d(t, "c", (function() {
 				return O
+			})), s.d(t, "c", (function() {
+				return v
 			})), s.d(t, "f", (function() {
 				return j
 			})), s.d(t, "a", (function() {
@@ -40,23 +40,23 @@
 				R = s("./src/reddit/actions/comment/index.ts"),
 				_ = s("./src/reddit/actions/comment/constants.ts");
 			const f = Object(r.a)(_.o),
-				v = e => async (t, s, o) => {
+				O = e => async (t, s, o) => {
 					let {
 						apiContext: n
 					} = o;
-					s().features.comments.models[e] && (await Object(m.j)(n(), e)).ok && t((e => async t => {
+					s().features.comments.models[e] && (await Object(m.k)(n(), e)).ok && t((e => async t => {
 						t(f({
 							commentId: e
 						}))
 					})(e))
-				}, O = e => async (t, s, n) => {
+				}, v = e => async (t, s, n) => {
 					let {
 						apiContext: r
 					} = n;
 					if (!Object(h.Q)(s())) return void t(Object(i.i)(l.a.LOGIN_MODAL_ID));
 					const a = s().features.comments.models[e];
 					if (!a) return;
-					const d = a.isLocked ? m.l : m.f;
+					const d = a.isLocked ? m.m : m.f;
 					t(Object(R.i)({
 						[e]: {
 							isLocked: !a.isLocked
@@ -113,20 +113,21 @@
 					})), Object(d.d)())
 				}, E = (e, t) => async (s, n, r) => {
 					let {
-						apiContext: a
+						apiContext: a,
+						gqlContext: i
 					} = r;
-					const i = n(),
-						l = i.features.comments.models[e],
-						p = i.user.account ? i.user.account.displayText : null;
-					l && p && (s(Object(R.i)({
+					const l = n(),
+						p = l.features.comments.models[e],
+						u = l.user.account ? l.user.account.displayText : null;
+					p && u && (s(Object(R.i)({
 						[e]: {
 							approvedBy: null,
-							bannedBy: p,
+							bannedBy: u,
 							isApproved: !1,
 							isRemoved: !t,
 							isSpam: t
 						}
-					})), (await Object(m.h)(a(), e, t)).ok ? s(Object(c.f)({
+					})), (Object(g.a)(l) ? await Object(m.h)(i(), e, t) : await Object(m.i)(a(), e, t)).ok ? s(Object(c.f)({
 						kind: b.b.SuccessMod,
 						text: t ? o.fbt._("comment has been marked as spam", null, {
 							hk: "4fQaFM"
@@ -135,11 +136,11 @@
 						})
 					})) : s(Object(R.i)({
 						[e]: {
-							approvedBy: l.approvedBy,
-							bannedBy: l.bannedBy,
-							isApproved: l.isApproved,
-							isRemoved: l.isRemoved,
-							isSpam: l.isSpam
+							approvedBy: p.approvedBy,
+							bannedBy: p.bannedBy,
+							isApproved: p.isApproved,
+							isRemoved: p.isRemoved,
+							isSpam: p.isSpam
 						}
 					})), Object(d.d)())
 				}, C = e => async (t, s, n) => {
@@ -148,7 +149,7 @@
 					} = n;
 					const a = s().features.comments.models[e];
 					if (!a) return;
-					const i = a.ignoreReports ? m.k : m.e;
+					const i = a.ignoreReports ? m.l : m.e;
 					t(Object(R.i)({
 						[e]: {
 							ignoreReports: !a.ignoreReports
@@ -491,14 +492,14 @@
 				R = s("./src/reddit/icons/svgs/ChevronDown/index.tsx"),
 				_ = s("./src/reddit/icons/svgs/ChevronUp/index.tsx"),
 				f = s("./src/reddit/icons/svgs/Clock/index.tsx"),
-				v = s("./src/reddit/icons/svgs/Undo/index.tsx"),
-				O = s("./src/reddit/selectors/tooltip.ts"),
+				O = s("./src/reddit/icons/svgs/Undo/index.tsx"),
+				v = s("./src/reddit/selectors/tooltip.ts"),
 				j = s("./src/reddit/components/Reports/SnoozableReport/index.m.less"),
 				k = s.n(j);
 			const {
 				fbt: E
 			} = s("./node_modules/fbt/lib/FbtPublic.js"), C = (e, t) => `SnoozableReport--${t}--${e}`, N = Object(a.b)(() => Object(i.c)({
-				isDropdownOpen: (e, t) => Object(O.b)(C(t.reason, t.reportedThingId))(e)
+				isDropdownOpen: (e, t) => Object(v.b)(C(t.reason, t.reportedThingId))(e)
 			}), (e, t) => ({
 				openDropdown: () => e(Object(m.h)({
 					tooltipId: C(t.reason, t.reportedThingId)
@@ -544,7 +545,7 @@
 						onClick: this.onSnoozeButtonClick
 					}, n.a.createElement("div", {
 						className: k.a.SnoozeButtonContent
-					}, a ? n.a.createElement(n.a.Fragment, null, n.a.createElement(v.a, null), E._("Undo snoozing reports from this user", null, {
+					}, a ? n.a.createElement(n.a.Fragment, null, n.a.createElement(O.a, null), E._("Undo snoozing reports from this user", null, {
 						hk: "4iqfWB"
 					})) : n.a.createElement(n.a.Fragment, null, n.a.createElement(f.a, null), E._("Snooze reports from this user for 7 days", null, {
 						hk: "4cRFyG"
@@ -682,4 +683,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModModeBanners.d98fe453322d78db5d1b.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModModeBanners.3f8326eaa16cd9eefea7.js.map

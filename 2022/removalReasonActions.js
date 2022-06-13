@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/removalReasonActions.1d71bbaac28f70241865.js
-// Retrieved at 6/13/2022, 5:30:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/removalReasonActions.7b1630280f5e7b27b9ba.js
+// Retrieved at 6/13/2022, 6:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["removalReasonActions"], {
 		"./src/lib/scroll/index.ts": function(e, t, n) {
@@ -792,7 +792,7 @@
 						[e]: {
 							sendReplies: r
 						}
-					})), (await Object(F.q)(s(), e, r)).ok || t(Object(ue.i)({
+					})), (await Object(F.r)(s(), e, r)).ok || t(Object(ue.i)({
 						[e]: {
 							sendReplies: !r
 						}
@@ -881,7 +881,7 @@
 					let {
 						apiContext: s
 					} = o;
-					n().features.comments.models[e] && (await Object(m.j)(s(), e)).ok && t((e => async t => {
+					n().features.comments.models[e] && (await Object(m.k)(s(), e)).ok && t((e => async t => {
 						t(S({
 							commentId: e
 						}))
@@ -893,7 +893,7 @@
 					if (!Object(h.Q)(n())) return void t(Object(c.i)(l.a.LOGIN_MODAL_ID));
 					const i = n().features.comments.models[e];
 					if (!i) return;
-					const a = i.isLocked ? m.l : m.f;
+					const a = i.isLocked ? m.m : m.f;
 					t(Object(g.i)({
 						[e]: {
 							isLocked: !i.isLocked
@@ -950,20 +950,21 @@
 					})), Object(a.d)())
 				}, v = (e, t) => async (n, s, r) => {
 					let {
-						apiContext: i
+						apiContext: i,
+						gqlContext: c
 					} = r;
-					const c = s(),
-						l = c.features.comments.models[e],
-						u = c.user.account ? c.user.account.displayText : null;
-					l && u && (n(Object(g.i)({
+					const l = s(),
+						u = l.features.comments.models[e],
+						p = l.user.account ? l.user.account.displayText : null;
+					u && p && (n(Object(g.i)({
 						[e]: {
 							approvedBy: null,
-							bannedBy: u,
+							bannedBy: p,
 							isApproved: !1,
 							isRemoved: !t,
 							isSpam: t
 						}
-					})), (await Object(m.h)(i(), e, t)).ok ? n(Object(d.f)({
+					})), (Object(f.a)(l) ? await Object(m.h)(c(), e, t) : await Object(m.i)(i(), e, t)).ok ? n(Object(d.f)({
 						kind: b.b.SuccessMod,
 						text: t ? o.fbt._("comment has been marked as spam", null, {
 							hk: "4fQaFM"
@@ -972,11 +973,11 @@
 						})
 					})) : n(Object(g.i)({
 						[e]: {
-							approvedBy: l.approvedBy,
-							bannedBy: l.bannedBy,
-							isApproved: l.isApproved,
-							isRemoved: l.isRemoved,
-							isSpam: l.isSpam
+							approvedBy: u.approvedBy,
+							bannedBy: u.bannedBy,
+							isApproved: u.isApproved,
+							isRemoved: u.isRemoved,
+							isSpam: u.isSpam
 						}
 					})), Object(a.d)())
 				}, R = e => async (t, n, s) => {
@@ -985,7 +986,7 @@
 					} = s;
 					const i = n().features.comments.models[e];
 					if (!i) return;
-					const c = i.ignoreReports ? m.k : m.e;
+					const c = i.ignoreReports ? m.l : m.e;
 					t(Object(g.i)({
 						[e]: {
 							ignoreReports: !i.ignoreReports
@@ -2814,4 +2815,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/removalReasonActions.1d71bbaac28f70241865.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/removalReasonActions.7b1630280f5e7b27b9ba.js.map

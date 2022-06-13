@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PublicAccessNetwork.58794c3b44039a4ce2e9.js
-// Retrieved at 6/13/2022, 5:30:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PublicAccessNetwork.f4530f9603f56c72f85b.js
+// Retrieved at 6/13/2022, 6:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PublicAccessNetwork"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -735,7 +735,7 @@
 					let {
 						apiContext: r
 					} = o;
-					s().features.comments.models[e] && (await Object(m.j)(r(), e)).ok && t((e => async t => {
+					s().features.comments.models[e] && (await Object(m.k)(r(), e)).ok && t((e => async t => {
 						t(S({
 							commentId: e
 						}))
@@ -747,7 +747,7 @@
 					if (!Object(g.Q)(s())) return void t(Object(i.i)(l.a.LOGIN_MODAL_ID));
 					const a = s().features.comments.models[e];
 					if (!a) return;
-					const d = a.isLocked ? m.l : m.f;
+					const d = a.isLocked ? m.m : m.f;
 					t(Object(f.i)({
 						[e]: {
 							isLocked: !a.isLocked
@@ -804,20 +804,21 @@
 					})), Object(d.d)())
 				}, C = (e, t) => async (s, r, n) => {
 					let {
-						apiContext: a
+						apiContext: a,
+						gqlContext: i
 					} = n;
-					const i = r(),
-						l = i.features.comments.models[e],
-						u = i.user.account ? i.user.account.displayText : null;
-					l && u && (s(Object(f.i)({
+					const l = r(),
+						u = l.features.comments.models[e],
+						p = l.user.account ? l.user.account.displayText : null;
+					u && p && (s(Object(f.i)({
 						[e]: {
 							approvedBy: null,
-							bannedBy: u,
+							bannedBy: p,
 							isApproved: !1,
 							isRemoved: !t,
 							isSpam: t
 						}
-					})), (await Object(m.h)(a(), e, t)).ok ? s(Object(c.f)({
+					})), (Object(v.a)(l) ? await Object(m.h)(i(), e, t) : await Object(m.i)(a(), e, t)).ok ? s(Object(c.f)({
 						kind: b.b.SuccessMod,
 						text: t ? o.fbt._("comment has been marked as spam", null, {
 							hk: "4fQaFM"
@@ -826,11 +827,11 @@
 						})
 					})) : s(Object(f.i)({
 						[e]: {
-							approvedBy: l.approvedBy,
-							bannedBy: l.bannedBy,
-							isApproved: l.isApproved,
-							isRemoved: l.isRemoved,
-							isSpam: l.isSpam
+							approvedBy: u.approvedBy,
+							bannedBy: u.bannedBy,
+							isApproved: u.isApproved,
+							isRemoved: u.isRemoved,
+							isSpam: u.isSpam
 						}
 					})), Object(d.d)())
 				}, x = e => async (t, s, r) => {
@@ -839,7 +840,7 @@
 					} = r;
 					const a = s().features.comments.models[e];
 					if (!a) return;
-					const i = a.ignoreReports ? m.k : m.e;
+					const i = a.ignoreReports ? m.l : m.e;
 					t(Object(f.i)({
 						[e]: {
 							ignoreReports: !a.ignoreReports
@@ -7913,4 +7914,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PublicAccessNetwork.58794c3b44039a4ce2e9.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PublicAccessNetwork.f4530f9603f56c72f85b.js.map

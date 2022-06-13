@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit~ReportFlow~Subreddit.1294a4d749d34c0d9aeb.js
-// Retrieved at 6/13/2022, 5:30:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit~ReportFlow~Subreddit.1e14cbf22d4b017b7f6f.js
+// Retrieved at 6/13/2022, 6:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~ModListing~Reddit~ReportFlow~Subreddit"], {
 		"./src/lib/assertNever.ts": function(e, t, r) {
@@ -929,7 +929,7 @@
 					}));
 					const o = r().features.comments.models[e];
 					if (!o) return;
-					const d = o.isSaved ? _.m : _.i;
+					const d = o.isSaved ? _.n : _.j;
 					if (t(N({
 							[e]: {
 								isSaved: !o.isSaved
@@ -8173,83 +8173,86 @@
 		},
 		"./src/reddit/endpoints/comment/index.tsx": function(e, t, r) {
 			"use strict";
-			r.d(t, "i", (function() {
-				return O
-			})), r.d(t, "m", (function() {
+			r.d(t, "j", (function() {
 				return j
-			})), r.d(t, "f", (function() {
+			})), r.d(t, "n", (function() {
 				return g
-			})), r.d(t, "l", (function() {
+			})), r.d(t, "f", (function() {
 				return I
-			})), r.d(t, "b", (function() {
+			})), r.d(t, "m", (function() {
 				return h
-			})), r.d(t, "a", (function() {
+			})), r.d(t, "b", (function() {
 				return y
-			})), r.d(t, "h", (function() {
+			})), r.d(t, "a", (function() {
 				return S
-			})), r.d(t, "e", (function() {
+			})), r.d(t, "i", (function() {
 				return E
-			})), r.d(t, "k", (function() {
+			})), r.d(t, "h", (function() {
 				return T
-			})), r.d(t, "j", (function() {
+			})), r.d(t, "e", (function() {
 				return v
-			})), r.d(t, "g", (function() {
+			})), r.d(t, "l", (function() {
 				return x
-			})), r.d(t, "c", (function() {
+			})), r.d(t, "k", (function() {
+				return k
+			})), r.d(t, "g", (function() {
 				return w
+			})), r.d(t, "c", (function() {
+				return N
 			})), r.d(t, "d", (function() {
-				return C
+				return D
 			}));
 			var n = r("./src/config.ts"),
 				s = r("./src/redditGQL/operations/ModApprove.json"),
-				i = r("./src/redditGQL/operations/UpdateCommentDistinguishState.json"),
-				o = r("./src/redditGQL/operations/UpdateCommentStickyState.json"),
-				d = r("./src/redditGQL/types.ts"),
-				c = r("./src/lib/constants/index.ts"),
-				a = r("./src/lib/makeApiRequest/index.ts"),
-				u = r("./src/lib/makeGqlRequest/index.ts"),
-				l = r("./src/lib/omitHeaders/index.ts"),
-				b = r("./src/reddit/constants/headers.ts"),
-				p = r("./src/reddit/helpers/addRedesignIdentifier/index.ts"),
-				f = r("./src/reddit/models/Comment/addProfileImgParam.ts"),
-				m = r("./src/reddit/models/RichTextJson/addEmotesAsImagesParam.ts"),
-				_ = r("./src/reddit/models/RichTextJson/addRTJParam.ts");
-			const O = (e, t) => Object(a.a)(Object(l.a)(e, [b.a]), {
-					endpoint: Object(p.a)(`${e.apiUrl}/api/save`),
-					method: c.jb.POST,
+				i = r("./src/redditGQL/operations/ModRemove.json"),
+				o = r("./src/redditGQL/operations/UpdateCommentDistinguishState.json"),
+				d = r("./src/redditGQL/operations/UpdateCommentStickyState.json"),
+				c = r("./src/redditGQL/types.ts"),
+				a = r("./src/lib/constants/index.ts"),
+				u = r("./src/lib/makeApiRequest/index.ts"),
+				l = r("./src/lib/makeGqlRequest/index.ts"),
+				b = r("./src/lib/omitHeaders/index.ts"),
+				p = r("./src/reddit/constants/headers.ts"),
+				f = r("./src/reddit/helpers/addRedesignIdentifier/index.ts"),
+				m = r("./src/reddit/models/Comment/addProfileImgParam.ts"),
+				_ = r("./src/reddit/models/RichTextJson/addEmotesAsImagesParam.ts"),
+				O = r("./src/reddit/models/RichTextJson/addRTJParam.ts");
+			const j = (e, t) => Object(u.a)(Object(b.a)(e, [p.a]), {
+					endpoint: Object(f.a)(`${e.apiUrl}/api/save`),
+					method: a.jb.POST,
 					data: {
 						id: t
 					}
 				}),
-				j = (e, t) => Object(a.a)(Object(l.a)(e, [b.a]), {
-					endpoint: Object(p.a)(`${e.apiUrl}/api/unsave`),
-					method: c.jb.POST,
+				g = (e, t) => Object(u.a)(Object(b.a)(e, [p.a]), {
+					endpoint: Object(f.a)(`${e.apiUrl}/api/unsave`),
+					method: a.jb.POST,
 					data: {
 						id: t
 					}
 				}),
-				g = (e, t) => Object(a.a)(Object(l.a)(e, [b.a]), {
-					endpoint: Object(p.a)(`${e.apiUrl}/api/lock`),
-					method: c.jb.POST,
+				I = (e, t) => Object(u.a)(Object(b.a)(e, [p.a]), {
+					endpoint: Object(f.a)(`${e.apiUrl}/api/lock`),
+					method: a.jb.POST,
 					data: {
 						id: t
 					}
 				}),
-				I = (e, t) => Object(a.a)(Object(l.a)(e, [b.a]), {
-					endpoint: Object(p.a)(`${e.apiUrl}/api/unlock`),
-					method: c.jb.POST,
+				h = (e, t) => Object(u.a)(Object(b.a)(e, [p.a]), {
+					endpoint: Object(f.a)(`${e.apiUrl}/api/unlock`),
+					method: a.jb.POST,
 					data: {
 						id: t
 					}
 				}),
-				h = (e, t) => Object(a.a)(Object(l.a)(e, [b.a]), {
-					endpoint: Object(p.a)(`${e.apiUrl}/api/approve`),
-					method: c.jb.POST,
+				y = (e, t) => Object(u.a)(Object(b.a)(e, [p.a]), {
+					endpoint: Object(f.a)(`${e.apiUrl}/api/approve`),
+					method: a.jb.POST,
 					data: {
 						id: t
 					}
 				}),
-				y = (e, t) => Object(u.a)(e, {
+				S = (e, t) => Object(l.a)(e, {
 					...s,
 					variables: {
 						input: {
@@ -8257,71 +8260,80 @@
 						}
 					}
 				}),
-				S = (e, t, r) => Object(a.a)(Object(l.a)(e, [b.a]), {
-					endpoint: Object(p.a)(`${e.apiUrl}/api/remove`),
-					method: c.jb.POST,
+				E = (e, t, r) => Object(u.a)(Object(b.a)(e, [p.a]), {
+					endpoint: Object(f.a)(`${e.apiUrl}/api/remove`),
+					method: a.jb.POST,
 					data: {
 						id: t,
 						spam: r
 					}
 				}),
-				E = (e, t) => Object(a.a)(Object(l.a)(e, [b.a]), {
+				T = (e, t, r) => Object(l.a)(e, {
+					...i,
+					variables: {
+						input: {
+							id: t,
+							isSpam: r
+						}
+					}
+				}),
+				v = (e, t) => Object(u.a)(Object(b.a)(e, [p.a]), {
 					endpoint: `${e.apiUrl}/api/ignore_reports`,
-					method: c.jb.POST,
+					method: a.jb.POST,
 					data: {
 						id: t
 					}
 				}),
-				T = (e, t) => Object(a.a)(Object(l.a)(e, [b.a]), {
+				x = (e, t) => Object(u.a)(Object(b.a)(e, [p.a]), {
 					endpoint: `${e.apiUrl}/api/unignore_reports`,
-					method: c.jb.POST,
+					method: a.jb.POST,
 					data: {
 						id: t
 					}
 				}),
-				v = (e, t) => Object(a.a)(Object(l.a)(e, [b.a]), {
+				k = (e, t) => Object(u.a)(Object(b.a)(e, [p.a]), {
 					endpoint: `${e.apiUrl}/api/show_comment`,
-					method: c.jb.POST,
+					method: a.jb.POST,
 					data: {
 						id: t
 					}
 				}),
-				x = (e, t, r, s) => {
-					let i = Object(p.a)(Object(_.a)(Object(m.a)(`${n.a.gatewayUrl}/desktopapi/v1/morecomments/${t}`)));
-					return s && (i = Object(f.a)(i)), Object(a.a)(e, {
+				w = (e, t, r, s) => {
+					let i = Object(f.a)(Object(O.a)(Object(_.a)(`${n.a.gatewayUrl}/desktopapi/v1/morecomments/${t}`)));
+					return s && (i = Object(m.a)(i)), Object(u.a)(e, {
 						data: r,
 						endpoint: i,
-						method: c.jb.POST,
+						method: a.jb.POST,
 						type: "json",
 						traceRequestName: "more_comments"
 					})
 				},
-				k = {
-					[c.G.NONE]: d.g.None,
-					[c.G.MODERATOR]: d.g.ModDistinguished,
-					[c.G.ADMIN]: d.g.AdminDistinguished,
-					[c.G.ALUMNI_ADMIN]: d.g.AlumniDistinguished
+				C = {
+					[a.G.NONE]: c.g.None,
+					[a.G.MODERATOR]: c.g.ModDistinguished,
+					[a.G.ADMIN]: c.g.AdminDistinguished,
+					[a.G.ALUMNI_ADMIN]: c.g.AlumniDistinguished
 				};
 
-			function w(e, t, r) {
+			function N(e, t, r) {
 				const n = function(e, t) {
 					return {
 						input: {
 							commentId: e,
-							distinguishState: t === c.G.NONE ? d.c.None : d.c.Distinguished,
-							distinguishType: k[t]
+							distinguishState: t === a.G.NONE ? c.c.None : c.c.Distinguished,
+							distinguishType: C[t]
 						}
 					}
 				}(t, r);
-				return Object(u.a)(e, {
-					...i,
+				return Object(l.a)(e, {
+					...o,
 					variables: n
 				})
 			}
 
-			function C(e, t, r) {
-				return Object(u.a)(e, {
-					...o,
+			function D(e, t, r) {
+				return Object(l.a)(e, {
+					...d,
 					variables: {
 						input: {
 							commentId: t,
@@ -15324,4 +15336,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit~ReportFlow~Subreddit.1294a4d749d34c0d9aeb.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit~ReportFlow~Subreddit.1e14cbf22d4b017b7f6f.js.map
