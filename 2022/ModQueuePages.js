@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModQueuePages.0f636df701a6c48819da.js
-// Retrieved at 6/13/2022, 12:30:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModQueuePages.1a9949365373379269d1.js
+// Retrieved at 6/13/2022, 1:00:03 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModQueuePages"], {
 		"./node_modules/lodash/includes.js": function(e, t, s) {
@@ -1316,7 +1316,7 @@
 					comment: s
 				})), r.a.createElement(w, null, r.a.createElement(u.a, {
 					comment: s
-				}, r.a.createElement(N, null, r.a.createElement(O.a, {
+				}, r.a.createElement(N, null, r.a.createElement(O.b, {
 					content: Object(E.a)(s),
 					mediaMetadata: s.media && s.media.mediaMetadata,
 					rtJsonElementProps: D(e)
@@ -2783,7 +2783,7 @@
 						comment: s
 					})), d.a.createElement($, null, d.a.createElement(L.a, {
 						comment: s
-					}, d.a.createElement(U.a, {
+					}, d.a.createElement(U.b, {
 						content: Object(Q.a)(s),
 						mediaMetadata: s.media && s.media.mediaMetadata,
 						rtJsonElementProps: se(e)
@@ -2841,7 +2841,7 @@
 						subredditOrProfile: m
 					}), s.postTitle && d.a.createElement(P.a, null, s.postTitle)), d.a.createElement(L.a, {
 						comment: s
-					}, d.a.createElement(me, null, d.a.createElement(U.a, {
+					}, d.a.createElement(me, null, d.a.createElement(U.b, {
 						content: Object(Q.a)(s),
 						mediaMetadata: s.media && s.media.mediaMetadata,
 						rtJsonElementProps: ue(e)
@@ -3890,11 +3890,13 @@
 		},
 		"./src/reddit/components/RichTextJson/index.tsx": function(e, t, s) {
 			"use strict";
-			s.d(t, "c", (function() {
+			s.d(t, "d", (function() {
 				return k
-			})), s.d(t, "b", (function() {
+			})), s.d(t, "c", (function() {
 				return S
 			})), s.d(t, "a", (function() {
+				return v
+			})), s.d(t, "b", (function() {
 				return y
 			}));
 			var n = s("./node_modules/fbt/lib/FbtPublic.js"),
@@ -5823,4 +5825,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModQueuePages.0f636df701a6c48819da.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModQueuePages.1a9949365373379269d1.js.map

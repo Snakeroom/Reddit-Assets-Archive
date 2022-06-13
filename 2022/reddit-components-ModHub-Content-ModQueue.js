@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-ModHub-Content-ModQueue.62ceb157cb4045dab215.js
-// Retrieved at 6/13/2022, 9:30:03 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-ModHub-Content-ModQueue.6ebf3d21f2d4877c82f2.js
+// Retrieved at 6/13/2022, 1:00:03 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-ModHub-Content-ModQueue"], {
 		"./src/reddit/components/Comments/CompactUnthreadedComment/index.m.less": function(e, t, s) {
@@ -783,7 +783,7 @@
 						comment: s
 					})), d.a.createElement($, null, d.a.createElement(F.a, {
 						comment: s
-					}, d.a.createElement(W.a, {
+					}, d.a.createElement(W.b, {
 						content: Object(H.a)(s),
 						mediaMetadata: s.media && s.media.mediaMetadata,
 						rtJsonElementProps: se(e)
@@ -841,7 +841,7 @@
 						subredditOrProfile: m
 					}), s.postTitle && d.a.createElement(N.a, null, s.postTitle)), d.a.createElement(F.a, {
 						comment: s
-					}, d.a.createElement(me, null, d.a.createElement(W.a, {
+					}, d.a.createElement(me, null, d.a.createElement(W.b, {
 						content: Object(H.a)(s),
 						mediaMetadata: s.media && s.media.mediaMetadata,
 						rtJsonElementProps: pe(e)
@@ -1443,4 +1443,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ModHub-Content-ModQueue.62ceb157cb4045dab215.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ModHub-Content-ModQueue.6ebf3d21f2d4877c82f2.js.map

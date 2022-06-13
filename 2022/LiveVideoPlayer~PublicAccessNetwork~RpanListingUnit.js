@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/LiveVideoPlayer~PublicAccessNetwork~RpanListingUnit.b56877f1d582157c8e40.js
-// Retrieved at 6/13/2022, 10:50:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/LiveVideoPlayer~PublicAccessNetwork~RpanListingUnit.4739a126927ef63ed09f.js
+// Retrieved at 6/13/2022, 1:00:03 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["LiveVideoPlayer~PublicAccessNetwork~RpanListingUnit"], {
 		"./src/lib/VideoSession/VideoSessionManager.ts": function(e, t, s) {
@@ -905,12 +905,12 @@
 				C = s("./src/reddit/constants/posts.ts"),
 				x = s("./src/reddit/controls/Dropdown/Row.tsx"),
 				E = s("./src/reddit/helpers/getSubredditIcon/index.ts"),
-				_ = s("./src/reddit/helpers/getSubredditUrl/index.ts"),
-				g = s("./src/reddit/helpers/userSnoovatar/index.ts"),
+				g = s("./src/reddit/helpers/getSubredditUrl/index.ts"),
+				_ = s("./src/reddit/helpers/userSnoovatar/index.ts"),
 				I = s("./src/reddit/icons/fonts/index.tsx"),
 				S = s("./src/reddit/icons/fonts/Downvote/index.tsx"),
-				k = s("./src/reddit/icons/fonts/Menu/index.tsx"),
-				y = s("./src/reddit/icons/fonts/Share/index.tsx"),
+				y = s("./src/reddit/icons/fonts/Menu/index.tsx"),
+				k = s("./src/reddit/icons/fonts/Share/index.tsx"),
 				R = s("./src/reddit/icons/fonts/Upvote/index.tsx"),
 				N = s("./src/reddit/icons/svgs/Checkmark/index.tsx"),
 				L = s("./src/reddit/icons/svgs/CircledPlanet/index.tsx"),
@@ -927,15 +927,15 @@
 				F = s("./src/reddit/selectors/subreddit.ts"),
 				W = s("./src/reddit/components/PublicAccessNetwork/Theater/Overlay/Buttons.tsx"),
 				U = s("./src/reddit/components/PublicAccessNetwork/Theater/Overlay/refresh.m.less"),
-				z = s.n(U);
+				Z = s.n(U);
 			const {
-				fbt: Z
+				fbt: z
 			} = s("./node_modules/fbt/lib/FbtPublic.js"), K = e => {
 				let {
 					children: t
 				} = e;
 				return a.a.createElement("div", {
-					className: z.a.broadcastStatus
+					className: Z.a.broadcastStatus
 				}, t)
 			}, Y = e => {
 				let {
@@ -944,13 +944,13 @@
 				return a.a.createElement("button", {
 					onClick: t
 				}, a.a.createElement(q, null))
-			}, q = () => Z._("{=Live}", [Z._param("=Live", a.a.createElement("span", {
-				className: z.a.live
-			}, Z._("Live", null, {
+			}, q = () => z._("{=Live}", [z._param("=Live", a.a.createElement("span", {
+				className: Z.a.live
+			}, z._("Live", null, {
 				hk: "8x90I"
 			})))], {
 				hk: "3ZBbO0"
-			}), J = () => Z._("Recorded live", null, {
+			}), J = () => z._("Recorded live", null, {
 				hk: "2seH5c"
 			}), Q = e => {
 				let {
@@ -964,17 +964,17 @@
 					}, 3e3);
 					return () => clearTimeout(e)
 				}, [n]), s ? n ? a.a.createElement(N.a, {
-					className: z.a.checkmarkIcon
+					className: Z.a.checkmarkIcon
 				}) : null : a.a.createElement("button", {
 					onClick: () => {
 						o(!0), t()
 					},
-					className: z.a.joinButton
+					className: Z.a.joinButton
 				}, a.a.createElement(O.a, {
-					className: z.a.plusIcon
+					className: Z.a.plusIcon
 				}), a.a.createElement("span", {
-					className: z.a.joinText
-				}, Z._("Join", null, {
+					className: Z.a.joinText
+				}, z._("Join", null, {
 					hk: "3n0zBz"
 				})))
 			}, G = e => {
@@ -990,7 +990,7 @@
 				return a.a.createElement(f.b, {
 					dropdownId: "rpan-recommended-viewer-subreddits-dropdown",
 					icon: a.a.createElement("span", {
-						className: z.a.subreddit
+						className: Z.a.subreddit
 					}, r || "RPAN"),
 					style: {
 						maxHeight: `${c}px`,
@@ -999,11 +999,11 @@
 					},
 					isFixed: !0
 				}, a.a.createElement("div", {
-					className: z.a.dropdownLabel
-				}, Z._("Pick a Community", null, {
+					className: Z.a.dropdownLabel
+				}, z._("Pick a Community", null, {
 					hk: "4AfDwd"
 				})), i.map(e => a.a.createElement(x.b, {
-					className: z.a.dropdownRow,
+					className: Z.a.dropdownRow,
 					displayText: e.prefixedName,
 					key: `rpan-recommended-viewer-subreddits-dropdown-${e.prefixedName}`,
 					onClick: () => t(e)
@@ -1013,7 +1013,7 @@
 					text: t
 				} = e;
 				return a.a.createElement("h1", {
-					className: z.a.title
+					className: Z.a.title
 				}, t)
 			}, X = e => {
 				let {
@@ -1021,7 +1021,7 @@
 					live: s
 				} = e;
 				return a.a.createElement("div", {
-					className: z.a.watchersCount
+					className: Z.a.watchersCount
 				}, s ? a.a.createElement(ee, {
 					count: Math.max(1, t.continuous_watchers)
 				}) : a.a.createElement(te, {
@@ -1031,10 +1031,10 @@
 				let {
 					count: t
 				} = e;
-				return Z._({
+				return z._({
 					"*": "{number of watchers} watchers",
 					_1: "1 watcher"
-				}, [Z._plural(t, "number of watchers", Object(l.b)(t, {
+				}, [z._plural(t, "number of watchers", Object(l.b)(t, {
 					displayFull: !0
 				}))], {
 					hk: "3F0Nj0"
@@ -1043,10 +1043,10 @@
 				let {
 					count: t
 				} = e;
-				return Z._({
+				return z._({
 					"*": "{number of views} views",
 					_1: "1 view"
-				}, [Z._plural(t, "number of views", Object(l.b)(t, {
+				}, [z._plural(t, "number of views", Object(l.b)(t, {
 					displayFull: !0
 				}))], {
 					hk: "tSTjT"
@@ -1060,46 +1060,46 @@
 				} = e;
 				const i = Object(n.e)(H.a);
 				return a.a.createElement(f.b, {
-					className: z.a.menuButton,
+					className: Z.a.menuButton,
 					defaultButtonOutline: !0,
 					dropdownId: se,
 					onClick: r,
-					icon: a.a.createElement(y.a, null)
+					icon: a.a.createElement(k.a, null)
 				}, a.a.createElement(x.b, {
-					className: z.a.menuOverflowItem,
-					displayText: Z._("Copy Link", null, {
+					className: Z.a.menuOverflowItem,
+					displayText: z._("Copy Link", null, {
 						hk: "2oo038"
 					}),
-					iconWrapperClassName: z.a.overflowItemShareIconWrapper,
+					iconWrapperClassName: Z.a.overflowItemShareIconWrapper,
 					key: `${oe}-share`,
 					onClick: s
 				}, a.a.createElement(I.a, {
 					name: "link_post",
-					className: z.a.linkIcon
+					className: Z.a.linkIcon
 				})), a.a.createElement(x.b, {
-					className: z.a.menuOverflowItem,
-					displayText: Z._("Crosspost", null, {
+					className: Z.a.menuOverflowItem,
+					displayText: z._("Crosspost", null, {
 						hk: "QSd6Z"
 					}),
-					iconWrapperClassName: z.a.overflowItemShareIconWrapper,
+					iconWrapperClassName: Z.a.overflowItemShareIconWrapper,
 					key: `${oe}-crosspost`,
 					onClick: t
 				}, a.a.createElement(I.a, {
 					name: "crosspost",
-					className: z.a.overflowItemIcon
+					className: Z.a.overflowItemIcon
 				})), i && a.a.createElement(x.b, {
-					className: z.a.menuOverflowItem,
-					displayText: Z._("Share to Chat", null, {
+					className: Z.a.menuOverflowItem,
+					displayText: z._("Share to Chat", null, {
 						hk: "2uVgxZ"
 					}),
-					iconWrapperClassName: z.a.overflowItemShareIconWrapper,
+					iconWrapperClassName: Z.a.overflowItemShareIconWrapper,
 					key: `${oe}-sharetochat`,
 					onClick: o
 				}, a.a.createElement(I.a, {
 					name: "chat",
-					className: z.a.overflowItemIcon
+					className: Z.a.overflowItemIcon
 				})))
-			}, ae = i.a.wrapped(k.a, "menuIcon", z.a), ne = e => {
+			}, ae = i.a.wrapped(y.a, "menuIcon", Z.a), ne = e => {
 				let t = 186;
 				if (e) {
 					t += 74 + 40
@@ -1118,7 +1118,7 @@
 					subreddit: m
 				} = e;
 				return a.a.createElement(f.b, {
-					className: z.a.menuButton,
+					className: Z.a.menuButton,
 					defaultButtonOutline: !0,
 					dropdownId: oe,
 					icon: a.a.createElement(ae, null),
@@ -1129,41 +1129,41 @@
 						bottom: "0px"
 					}
 				}, a.a.createElement(x.b, {
-					className: z.a.overflowItem,
-					displayText: Z._("View rules", null, {
+					className: Z.a.overflowItem,
+					displayText: z._("View rules", null, {
 						hk: "haY6r"
 					}),
-					iconWrapperClassName: z.a.overflowItemIconWrapper,
+					iconWrapperClassName: Z.a.overflowItemIconWrapper,
 					key: `${oe}-rules`,
 					onClick: () => Object(c.e)(d.S, c.d.BLANK)
 				}, a.a.createElement(V.a, {
-					className: z.a.overflowItemIcon
+					className: Z.a.overflowItemIcon
 				})), a.a.createElement(x.b, {
-					className: z.a.overflowItem,
-					displayText: Z._("Stream from desktop", null, {
+					className: Z.a.overflowItem,
+					displayText: z._("Stream from desktop", null, {
 						hk: "4dOdik"
 					}),
-					iconWrapperClassName: z.a.overflowItemIconWrapper,
+					iconWrapperClassName: Z.a.overflowItemIconWrapper,
 					key: `${oe}-rpanstudio`,
 					onClick: u
 				}, a.a.createElement(P.a, {
-					className: z.a.overflowItemIcon
+					className: Z.a.overflowItemIcon
 				})), a.a.createElement(x.b, {
-					className: z.a.overflowItem,
-					displayText: Z._("Visit community", null, {
+					className: Z.a.overflowItem,
+					displayText: z._("Visit community", null, {
 						hk: "2KViLk"
 					}),
-					iconWrapperClassName: z.a.overflowItemIconWrapper,
+					iconWrapperClassName: Z.a.overflowItemIconWrapper,
 					key: `${oe}-community`,
 					onClick: () => {
-						Object(c.e)(Object(_.a)(m), c.d.BLANK)
+						Object(c.e)(Object(g.a)(m), c.d.BLANK)
 					}
 				}, (e => {
 					const t = e && Object(E.a)({
 						subreddit: e
 					});
 					return t ? a.a.createElement("img", {
-						className: z.a.overflowItemIcon,
+						className: Z.a.overflowItemIcon,
 						style: {
 							borderRadius: "16px",
 							height: "16px",
@@ -1171,7 +1171,7 @@
 						},
 						src: t
 					}) : a.a.createElement(L.a, {
-						className: z.a.overflowItemIcon,
+						className: Z.a.overflowItemIcon,
 						style: {
 							borderRadius: "16px",
 							height: "16px",
@@ -1179,56 +1179,56 @@
 						}
 					})
 				})(m)), a.a.createElement(x.b, {
-					className: z.a.overflowItem,
-					displayText: Z._("Report", null, {
+					className: Z.a.overflowItem,
+					displayText: z._("Report", null, {
 						hk: "4oVcnd"
 					}),
-					iconWrapperClassName: z.a.overflowItemIconWrapper,
+					iconWrapperClassName: Z.a.overflowItemIconWrapper,
 					key: `${oe}-report`,
 					onClick: r
 				}, a.a.createElement(M.a, {
-					className: z.a.overflowItemIcon
+					className: Z.a.overflowItemIcon
 				})), a.a.createElement(x.b, {
-					className: z.a.overflowItem,
-					displayText: Z._("Hide", null, {
+					className: Z.a.overflowItem,
+					displayText: z._("Hide", null, {
 						hk: "15vs9C"
 					}),
-					iconWrapperClassName: z.a.overflowItemIconWrapper,
+					iconWrapperClassName: Z.a.overflowItemIconWrapper,
 					key: `${oe}-hide`,
 					onClick: s
 				}, a.a.createElement(T.a, {
-					className: z.a.overflowItemIcon
+					className: Z.a.overflowItemIcon
 				})), i && a.a.createElement(a.a.Fragment, null, a.a.createElement(x.b, {
-					className: z.a.headerItem,
-					displayText: Z._("Mod Actions", null, {
+					className: Z.a.headerItem,
+					displayText: z._("Mod Actions", null, {
 						hk: "19zCiw"
 					}),
 					key: `${oe}-modaction`,
 					onClick: () => {}
 				}), a.a.createElement(x.b, {
-					className: z.a.overflowItem,
-					displayText: o ? Z._("Unlock comments", null, {
+					className: Z.a.overflowItem,
+					displayText: o ? z._("Unlock comments", null, {
 						hk: "Btg6R"
-					}) : Z._("Lock comments", null, {
+					}) : z._("Lock comments", null, {
 						hk: "3Ew6q9"
 					}),
-					iconWrapperClassName: z.a.overflowItemIconWrapper,
+					iconWrapperClassName: Z.a.overflowItemIconWrapper,
 					key: `${oe}-lock`,
 					onClick: n
 				}, o ? a.a.createElement(D.a, {
-					className: z.a.overflowItemIcon
+					className: Z.a.overflowItemIcon
 				}) : a.a.createElement(A.a, {
-					className: z.a.overflowItemIcon
+					className: Z.a.overflowItemIcon
 				})), a.a.createElement(x.b, {
-					className: z.a.endBroadcastItem,
-					displayText: Z._("Remove broadcast", null, {
+					className: Z.a.endBroadcastItem,
+					displayText: z._("Remove broadcast", null, {
 						hk: "3GaDuI"
 					}),
-					iconWrapperClassName: z.a.overflowItemIconWrapper,
+					iconWrapperClassName: Z.a.overflowItemIconWrapper,
 					key: `${oe}-end`,
 					onClick: l
 				}, a.a.createElement(j.a, {
-					className: z.a.endBroadcastIcon
+					className: Z.a.endBroadcastIcon
 				}))))
 			}, ce = Object(n.b)(null, e => ({
 				vote: (t, s) => e(((e, t) => async (s, r, a) => {
@@ -1273,7 +1273,7 @@
 					const e = this.voteState === B.a.upvoted,
 						t = this.voteState === B.a.downvoted;
 					return a.a.createElement("div", {
-						className: z.a.votePanel
+						className: Z.a.votePanel
 					}, a.a.createElement(le, {
 						onClick: this.handleUpVote,
 						voted: e
@@ -1321,16 +1321,16 @@
 					voted: s
 				} = e;
 				return a.a.createElement("button", {
-					className: Object(o.a)(z.a.voteButton, z.a.upVoteButton, {
-						[z.a.voted]: s
+					className: Object(o.a)(Z.a.voteButton, Z.a.upVoteButton, {
+						[Z.a.voted]: s
 					}),
 					onClick: t,
 					value: "upvote",
-					"aria-label": Z._("Upvote", null, {
+					"aria-label": z._("Upvote", null, {
 						hk: "Ufd6r"
 					})
 				}, a.a.createElement(R.b, {
-					className: z.a.voteIcon
+					className: Z.a.voteIcon
 				}))
 			}, de = e => {
 				let {
@@ -1338,36 +1338,36 @@
 					voted: s
 				} = e;
 				return a.a.createElement("button", {
-					className: Object(o.a)(z.a.voteButton, z.a.downVoteButton, {
-						[z.a.voted]: s
+					className: Object(o.a)(Z.a.voteButton, Z.a.downVoteButton, {
+						[Z.a.voted]: s
 					}),
 					onClick: t,
 					value: "downvote",
-					"aria-label": Z._("Downvote", null, {
+					"aria-label": z._("Downvote", null, {
 						hk: "ZDRA3"
 					})
 				}, a.a.createElement(S.a, {
-					className: z.a.voteIcon
+					className: Z.a.voteIcon
 				}))
 			}, ue = e => {
 				let {
 					score: t
 				} = e;
 				return a.a.createElement("div", {
-					className: z.a.score
+					className: Z.a.score
 				}, Object(l.b)(t))
 			}, me = e => {
 				let {
 					children: t
 				} = e;
 				return a.a.createElement("div", {
-					className: z.a.prompt
+					className: Z.a.prompt
 				}, t)
-			}, he = () => a.a.createElement(me, null, Z._("Connection issues", null, {
+			}, he = () => a.a.createElement(me, null, z._("Connection issues", null, {
 				hk: "hIrnJ"
-			})), pe = () => a.a.createElement(me, null, Z._("Tuning...", null, {
+			})), pe = () => a.a.createElement(me, null, z._("Tuning...", null, {
 				hk: "3dG7Ks"
-			})), ve = () => a.a.createElement(me, null, Z._("Broadcast paused", null, {
+			})), ve = () => a.a.createElement(me, null, z._("Broadcast paused", null, {
 				hk: "jxvku"
 			})), be = e => {
 				let {
@@ -1376,7 +1376,7 @@
 					onClickShare: r
 				} = e;
 				return a.a.createElement(me, null, a.a.createElement("div", {
-					className: z.a.promptButtonSet
+					className: Z.a.promptButtonSet
 				}, a.a.createElement(W.e, {
 					onClick: s
 				}), a.a.createElement(W.f, {
@@ -1389,10 +1389,10 @@
 					onClickAward: t
 				} = e;
 				return a.a.createElement(me, null, a.a.createElement("div", {
-					className: z.a.awardPromptWrapper
+					className: Z.a.awardPromptWrapper
 				}, a.a.createElement("div", {
-					className: z.a.awardPromptLabel
-				}, Z._("Award this broadcast to give it more airtime", null, {
+					className: Z.a.awardPromptLabel
+				}, z._("Award this broadcast to give it more airtime", null, {
 					hk: "20jmEz"
 				})), a.a.createElement(W.a, {
 					onClick: t
@@ -1412,17 +1412,17 @@
 				} = e;
 				const {
 					name: n
-				} = t, o = xe(n), i = Ee(n), c = _e(n, !i), l = i ? Z._("Unfollow u/{name}", [Z._param("name", n)], {
+				} = t, o = xe(n), i = Ee(n), c = ge(n, !i), l = i ? z._("Unfollow u/{name}", [z._param("name", n)], {
 					hk: "2n0wqa"
-				}) : Z._("Follow u/{name}", [Z._param("name", n)], {
+				}) : z._("Follow u/{name}", [z._param("name", n)], {
 					hk: "20X8Bw"
 				}), d = a.a.createElement("button", {
-					className: z.a.subscribeToProfileButton,
+					className: Z.a.subscribeToProfileButton,
 					onClick: () => {
 						r(!i), c()
 					},
 					title: l
-				}, a.a.createElement(ge, {
+				}, a.a.createElement(_e, {
 					profile: t
 				}), a.a.createElement(Ie, {
 					isSubscribed: i
@@ -1435,7 +1435,7 @@
 					name: e,
 					type: C.a.PROFILE
 				}
-			})), _e = (e, t) => {
+			})), ge = (e, t) => {
 				const s = Object(n.d)();
 				return Object(r.useCallback)(() => {
 					s(Object(v.d)([{
@@ -1443,17 +1443,17 @@
 						type: C.a.PROFILE
 					}], t))
 				}, [s, e, t])
-			}, ge = e => {
+			}, _e = e => {
 				let {
 					profile: t
 				} = e;
 				const {
 					id: s,
 					name: r
-				} = t, n = xe(r), i = ye(n), c = i && Object(g.a)(n.accountIcon);
+				} = t, n = xe(r), i = ke(n), c = i && Object(_.a)(n.accountIcon);
 				return a.a.createElement("div", {
-					className: Object(o.a)(z.a.subscribeToProfileAvatar, {
-						[z.a.snoovatarHeadshot]: c
+					className: Object(o.a)(Z.a.subscribeToProfileAvatar, {
+						[Z.a.snoovatarHeadshot]: c
 					})
 				}, n ? i ? c ? a.a.createElement(w.a, {
 					headshot: n.accountIcon
@@ -1467,21 +1467,21 @@
 					isSubscribed: t
 				} = e;
 				return a.a.createElement("div", {
-					className: Object(o.a)(z.a.subscribeToProfileStatus, {
-						[z.a.isSubscribed]: t
+					className: Object(o.a)(Z.a.subscribeToProfileStatus, {
+						[Z.a.isSubscribed]: t
 					})
-				}, t ? a.a.createElement(Se, null) : a.a.createElement(ke, null))
+				}, t ? a.a.createElement(Se, null) : a.a.createElement(ye, null))
 			}, Se = () => a.a.createElement("svg", {
 				viewBox: "0 0 20 20",
 				xmlns: "http://www.w3.org/2000/svg"
 			}, a.a.createElement("path", {
 				d: "M17.7072 5.69337L16.3083 4.29337C16.1203 4.10537 15.8662 4.00037 15.6012 4.00037C15.3352 4.00037 15.0812 4.10537 14.8942 4.29337L7.90025 11.2864L5.10725 8.49337C4.71725 8.10237 4.08425 8.10237 3.69325 8.49337L2.29325 9.89337C1.90225 10.2844 1.90225 10.9174 2.29325 11.3074L7.19325 16.2074C7.38925 16.4024 7.64425 16.5004 7.90025 16.5004C8.15625 16.5004 8.41225 16.4024 8.60725 16.2074L17.7072 7.10737C18.0982 6.71637 18.0982 6.08437 17.7072 5.69337"
-			})), ke = () => a.a.createElement("svg", {
+			})), ye = () => a.a.createElement("svg", {
 				viewBox: "0 0 16 16",
 				xmlns: "http://www.w3.org/2000/svg"
 			}, a.a.createElement("path", {
 				d: "M12.8,6.4 L9.6,6.4 L9.6,3.2 C9.6,2.7576 9.2424,2.4 8.8,2.4 L7.2,2.4 C6.7576,2.4 6.4,2.7576 6.4,3.2 L6.4,6.4 L3.2,6.4 C2.7584,6.4 2.4,6.7576 2.4,7.2 L2.4,8.8 C2.4,9.2424 2.7584,9.6 3.2,9.6 L6.4,9.6 L6.4,12.8 C6.4,13.2424 6.7576,13.6 7.2,13.6 L8.8,13.6 C9.2424,13.6 9.6,13.2424 9.6,12.8 L9.6,9.6 L12.8,9.6 C13.2424,9.6 13.6,9.2424 13.6,8.8 L13.6,7.2 C13.6,6.7576 13.2424,6.4 12.8,6.4"
-			})), ye = e => {
+			})), ke = e => {
 				const t = Object(n.e)(h.k),
 					s = Object(n.e)(h.F),
 					r = Object(n.e)(h.kb);
@@ -1502,6 +1502,7 @@
 				className: `${Object(n.b)("menu",e.isFilled)} ${e.className}`
 			})
 		},
+		"./src/reddit/icons/fonts/commonStyles.m.less": function(e, t, s) {},
 		"./src/reddit/icons/svgs/CircledPlanet/index.tsx": function(e, t, s) {
 			"use strict";
 			var r = s("./node_modules/react/index.js"),
@@ -1522,6 +1523,29 @@
 				viewBox: "0 0 20 20"
 			}, e), a.a.createElement("path", {
 				d: "M15.8286,15.8998 C15.3466,16.3788 12.6326,15.5598 8.5516,11.4798 C4.4706,7.3968 3.6486,4.6858 4.1316,4.2038 C4.3566,3.9788 4.9286,3.9208 5.9126,4.3518 C5.6166,4.5678 5.3306,4.8008 5.0666,5.0658 C5.0536,5.0798 5.0416,5.0948 5.0266,5.1098 C5.5756,6.4268 6.8946,8.4088 9.2596,10.7728 C11.6206,13.1338 13.6046,14.4538 14.9246,15.0028 C14.9376,14.9898 14.9526,14.9778 14.9666,14.9638 C15.2316,14.6988 15.4646,14.4128 15.6786,14.1178 C16.1096,15.1028 16.0526,15.6748 15.8286,15.8998 M16.7526,11.8998 C17.4066,9.5458 16.8136,6.9138 14.9666,5.0658 C13.6436,3.7438 11.8866,3.0148 10.0166,3.0148 C9.3686,3.0148 8.7356,3.1078 8.1286,3.2768 C5.7306,1.7598 3.9176,1.5898 2.7176,2.7898 C1.4036,4.1028 2.0736,6.1918 3.2866,8.1688 C2.6446,10.5128 3.2276,13.1258 5.0666,14.9638 C6.3886,16.2868 8.1456,17.0148 10.0166,17.0148 C10.6536,17.0148 11.2746,16.9178 11.8736,16.7518 C13.0856,17.4938 14.3406,18.0318 15.4316,18.0318 C16.1156,18.0318 16.7366,17.8198 17.2426,17.3138 C18.4416,16.1138 18.2706,14.2988 16.7526,11.8998"
+			}))
+		},
+		"./src/reddit/icons/svgs/Crosspost/index.tsx": function(e, t, s) {
+			"use strict";
+			var r = s("./node_modules/react/index.js"),
+				a = s.n(r);
+
+			function n() {
+				return (n = Object.assign || function(e) {
+					for (var t = 1; t < arguments.length; t++) {
+						var s = arguments[t];
+						for (var r in s) Object.prototype.hasOwnProperty.call(s, r) && (e[r] = s[r])
+					}
+					return e
+				}).apply(this, arguments)
+			}
+			t.a = e => a.a.createElement("svg", n({
+				viewBox: "0 0 20 20",
+				xmlns: "http://www.w3.org/2000/svg"
+			}, e), a.a.createElement("path", {
+				d: "M9.06,8.64c1.12-1.26,2.2-2.45,4.44-2.6V7.5a1,1,0,0,0,.6.92,1,1,0,0,0,.41.09,1,1,0,0,0,.67-.26l3.16-2.9a.5.5,0,0,0,0-.74L15.18,1.7a1,1,0,0,0-1.68.74V4c-3.14.17-4.69,1.88-5.93,3.28C6.58,8.42,6,9,5,9H2a1,1,0,0,0,0,2H5C6.93,11,8,9.82,9.06,8.64Z"
+			}), a.a.createElement("path", {
+				d: "M15.18,11.76a1,1,0,0,0-1.68.74V14c-2.23-.16-3.29-1.32-4.39-2.56-.21-.24-.43-.48-.66-.72a5.63,5.63,0,0,1-1.77,1.06,13.34,13.34,0,0,1,.94,1A7.85,7.85,0,0,0,13.5,16v1.59a1,1,0,0,0,.6.92,1,1,0,0,0,.41.09,1,1,0,0,0,.67-.26l3.16-2.9a.5.5,0,0,0,0-.74Z"
 			}))
 		},
 		"./src/reddit/icons/svgs/Hide/index.tsx": function(e, t, s) {
@@ -1661,4 +1685,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/LiveVideoPlayer~PublicAccessNetwork~RpanListingUnit.b56877f1d582157c8e40.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/LiveVideoPlayer~PublicAccessNetwork~RpanListingUnit.4739a126927ef63ed09f.js.map

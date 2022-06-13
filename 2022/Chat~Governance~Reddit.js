@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.3f60a98b2ccac0fda4ec.js
-// Retrieved at 6/13/2022, 12:30:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.381d482809ef9c053f62.js
+// Retrieved at 6/13/2022, 1:00:03 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Chat~Governance~Reddit"], {
 		"./assets/fonts/IBMPlexSans/font.less": function(e, t, i) {},
@@ -3467,11 +3467,11 @@
 				apiPassThroughHeaders: Object(r.e)({}.API_PASS_THROUGH_HEADERS || ""),
 				appName: {}.APP_NAME || "desktop2x",
 				assetPath: "https://www.redditstatic.com/desktop2x",
-				buildNumber: Object(r.c)("166346"),
+				buildNumber: Object(r.c)("166355"),
 				chatHelpUrl: {}.CHAT_HELP_URL || "https://reddit.zendesk.com/hc/en-us/sections/360008805652-Chat",
 				hlsVersion: "hls 0.12.4",
 				dashVersion: "dash 3.2.0",
-				buildTimestamp: Object(r.b)("1655135857"),
+				buildTimestamp: Object(r.b)("1655137628"),
 				cookieDomain: ".reddit.com",
 				giphyApiKey: "k2kwyMA6VeyHM6ZRT96OXDGaersnx73Z",
 				mediaUrl: "https://www.redditmedia.com",
@@ -6078,14 +6078,14 @@
 					}))
 				},
 				Y = (e, t, i) => {
-					console.log("%cStarting Raven %crelease %c636274165cd53c5b4ed6ac2715e4455f03d24bd9-production" + ` %cpublic url %c${y.a.sentryClientPublicURL}`, "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
+					console.log("%cStarting Raven %crelease %ce4d1be1933d3134d7f30df108acfe099107731a7-production" + ` %cpublic url %c${y.a.sentryClientPublicURL}`, "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
 					let n = [];
 					n = [new RegExp(`^${y.a.assetPath}`, "i")];
 					o.e({
 						attachStacktrace: !0,
 						dsn: y.a.sentryClientPublicURL,
 						whitelistUrls: n,
-						release: "636274165cd53c5b4ed6ac2715e4455f03d24bd9-production",
+						release: "e4d1be1933d3134d7f30df108acfe099107731a7-production",
 						environment: "production",
 						ignoreErrors: ["$ is not defined"],
 						integrations: [...Object(L.d)(), new d.Integrations.Breadcrumbs({
@@ -6694,7 +6694,7 @@
 							settings: r,
 							statusCode: s,
 							type: o,
-							releaseClient: "636274165cd53c5b4ed6ac2715e4455f03d24bd9-production",
+							releaseClient: "e4d1be1933d3134d7f30df108acfe099107731a7-production",
 							appName: t.statsAppName,
 							error: n ? JSON.parse(Object(l.a)(n)) : void 0
 						},
@@ -23035,18 +23035,18 @@
 					} = e, y = (e => e.isSpoiler || e.isNsfw)(e) ? w && w.obfuscatedStill && w.obfuscatedStill.source && w.obfuscatedStill.source.url : null;
 					switch (t) {
 						case _.o.VIDEO: {
-							const i = 400,
-								n = F(w),
-								r = w && w.still && w.still.source && {
+							const e = 400,
+								i = F(w),
+								n = w && w.still && w.still.source && {
 									url: w.still.source.url,
 									...w.still.source.dimensions
 								};
-							let s;
-							if (n.length) {
-								s = n.reduce((e, t) => e.width > t.width ? e : t);
-								const e = n.reduce((e, t) => x(t) > i && r && x(t) < x(r) ? [...e, t] : e, []);
-								e.length && (s = e.reduce((e, t) => x(e) < x(t) ? e : t))
-							} else s = r;
+							let r;
+							if (i.length) {
+								r = i.reduce((e, t) => e.width > t.width ? e : t);
+								const t = i.reduce((t, i) => x(i) > e && n && x(i) < x(n) ? [...t, i] : t, []);
+								t.length && (r = t.reduce((e, t) => x(e) < x(t) ? e : t))
+							} else r = n;
 							return {
 								type: t,
 								obfuscated: y,
@@ -23056,8 +23056,8 @@
 								scrubberThumbSource: w && w.streaming && w.streaming.scrubberMediaUrl || "",
 								width: w && w.streaming ? w.streaming.dimensions.width : 0,
 								height: w && w.streaming ? w.streaming.dimensions.height : 0,
-								posterUrl: s && s.url || void 0,
-								markdownContent: e.content ? e.content.markdown : void 0
+								posterUrl: r && r.url || void 0,
+								richtextContent: (null == v ? void 0 : v.richtext) ? j(v.richtext) : void 0
 							}
 						}
 						case _.o.LIVEVIDEO:
@@ -23073,25 +23073,25 @@
 								type: t, obfuscated: null, markdownContent: e.content ? e.content.markdown : "", richtextContent: j(v.richtext), content: "", rteMode: P(e), mediaMetadata: W(e)
 							};
 						case _.o.IMAGE: {
-							const i = w && w.animated && w.animated.gif_source ? "gif" : null;
-							let n = "";
-							return "i.redd.it" === e.domain && e.url ? n = e.url : w && w.still && w.still.source && (n = w.still.source.url), {
+							const n = w && w.animated && w.animated.gif_source ? "gif" : null;
+							let r = "";
+							return "i.redd.it" === e.domain && e.url ? r = e.url : w && w.still && w.still.source && (r = w.still.source.url), {
 								type: t,
 								obfuscated: y,
-								resolutions: F(w, i),
+								resolutions: F(w, n),
 								width: w && w.still && w.still.source ? w.still.source.dimensions.width : 0,
 								height: w && w.still && w.still.source ? w.still.source.dimensions.height : 0,
-								markdownContent: e.content ? e.content.markdown : void 0,
-								content: n
+								richtextContent: (null === (i = e.content) || void 0 === i ? void 0 : i.richtext) ? j(e.content.richtext) : void 0,
+								content: r
 							}
 						}
 						case _.o.EMBED:
 							return {
-								type: t, obfuscated: y, width: (null === (n = null === (i = null == w ? void 0 : w.video) || void 0 === i ? void 0 : i.dimensions) || void 0 === n ? void 0 : n.width) || (null === (o = null === (s = null === (r = null == w ? void 0 : w.still) || void 0 === r ? void 0 : r.source) || void 0 === s ? void 0 : s.dimensions) || void 0 === o ? void 0 : o.width) || 0, height: (null === (a = null === (d = null == w ? void 0 : w.video) || void 0 === d ? void 0 : d.dimensions) || void 0 === a ? void 0 : a.height) || (null === (c = null === (u = null === (l = null == w ? void 0 : w.still) || void 0 === l ? void 0 : l.source) || void 0 === u ? void 0 : u.dimensions) || void 0 === c ? void 0 : c.height) || 0, provider: (null === (p = null === (m = null == w ? void 0 : w.video) || void 0 === m ? void 0 : m.attribution) || void 0 === p ? void 0 : p.providerName) || "", content: (null === (h = null == w ? void 0 : w.video) || void 0 === h ? void 0 : h.embedUrl) && !e.isSurveyAd ? w.video.embedUrl : (null === (b = null === (f = null == w ? void 0 : w.still) || void 0 === f ? void 0 : f.source) || void 0 === b ? void 0 : b.url) || ""
+								type: t, obfuscated: y, width: (null === (r = null === (n = null == w ? void 0 : w.video) || void 0 === n ? void 0 : n.dimensions) || void 0 === r ? void 0 : r.width) || (null === (d = null === (o = null === (s = null == w ? void 0 : w.still) || void 0 === s ? void 0 : s.source) || void 0 === o ? void 0 : o.dimensions) || void 0 === d ? void 0 : d.width) || 0, height: (null === (l = null === (a = null == w ? void 0 : w.video) || void 0 === a ? void 0 : a.dimensions) || void 0 === l ? void 0 : l.height) || (null === (m = null === (c = null === (u = null == w ? void 0 : w.still) || void 0 === u ? void 0 : u.source) || void 0 === c ? void 0 : c.dimensions) || void 0 === m ? void 0 : m.height) || 0, provider: (null === (h = null === (p = null == w ? void 0 : w.video) || void 0 === p ? void 0 : p.attribution) || void 0 === h ? void 0 : h.providerName) || "", content: (null === (f = null == w ? void 0 : w.video) || void 0 === f ? void 0 : f.embedUrl) && !e.isSurveyAd ? w.video.embedUrl : (null === (g = null === (b = null == w ? void 0 : w.still) || void 0 === b ? void 0 : b.source) || void 0 === g ? void 0 : g.url) || ""
 							};
 						case _.o.GIFVIDEO:
 							return {
-								type: t, obfuscated: y, resolutions: F(w, "mp4"), width: w && w.still && w.still.source ? w.still.source.dimensions.width : 0, height: w && w.still && w.still.source ? w.still.source.dimensions.height : 0, gifBackgroundImage: w && w.still && w.still.source ? w.still.source.url : "", content: w && w.animated && w.animated.mp4_source ? w.animated.mp4_source.url : "", markdownContent: e.content ? e.content.markdown : void 0
+								type: t, obfuscated: y, resolutions: F(w, "mp4"), width: w && w.still && w.still.source ? w.still.source.dimensions.width : 0, height: w && w.still && w.still.source ? w.still.source.dimensions.height : 0, gifBackgroundImage: w && w.still && w.still.source ? w.still.source.url : "", content: w && w.animated && w.animated.mp4_source ? w.animated.mp4_source.url : "", richtextContent: (null == v ? void 0 : v.richtext) ? j(v.richtext) : void 0
 							};
 						case _.o.GALLERY: {
 							const i = z(e.gallery);
@@ -23104,12 +23104,12 @@
 								crossPostParentId: Y(e.crosspostRoot),
 								numCrossposts: e.crosspostCount || 0,
 								isCrosspostable: e.isCrosspostable,
-								markdownContent: e.content ? e.content.markdown : void 0
+								richtextContent: (null == v ? void 0 : v.richtext) ? j(v.richtext) : void 0
 							}
 						}
 						default:
-							return (null === (g = e.content) || void 0 === g ? void 0 : g.markdown) ? {
-								markdownContent: e.content.markdown
+							return (null == v ? void 0 : v.richtext) ? {
+								richtextContent: j(v.richtext)
 							} : null
 					}
 				},
@@ -34506,7 +34506,7 @@
 						const t = this.resolve(e);
 						return !1 !== this.resolved[t] && !!i.m[t]
 					},
-					importAsync: () => Promise.all([i.e("vendors~Governance~ModListing~Reddit~Subreddit"), i.e("vendors~PostCreation~Subreddit"), i.e("CollectionCommentsPage~CommentsPage~CountryPage~FramedGild~GildModal~GovernanceReleaseNotesModal~Mem~f5b82e5d"), i.e("CollectionCommentsPage~CommentsPage~CountryPage~Frontpage~GovernanceReleaseNotesModal~ModListing~Mod~adaf0b02"), i.e("Governance~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compo~bd4baca2"), i.e("Governance~ModListing~Reddit~ReportFlow~Subreddit"), i.e("CollectionCommentsPage~CommentsPage~Subreddit~SubredditWiki"), i.e("Governance~Reddit~Subreddit"), i.e("Frontpage~ModListing~Subreddit"), i.e("Subreddit")]).then(i.bind(null, "./src/reddit/pages/Subreddit/index.tsx")),
+					importAsync: () => Promise.all([i.e("vendors~Governance~ModListing~Reddit~Subreddit"), i.e("vendors~PostCreation~Subreddit"), i.e("CollectionCommentsPage~CommentsPage~CountryPage~FramedGild~GildModal~GovernanceReleaseNotesModal~Mem~c8b748a6"), i.e("CollectionCommentsPage~CommentsPage~CountryPage~Frontpage~GovernanceReleaseNotesModal~ModListing~Mod~adaf0b02"), i.e("Governance~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compo~bd4baca2"), i.e("Governance~ModListing~Reddit~ReportFlow~Subreddit"), i.e("CollectionCommentsPage~CommentsPage~Subreddit~SubredditWiki"), i.e("Governance~Reddit~Subreddit"), i.e("Frontpage~ModListing~Subreddit"), i.e("Subreddit")]).then(i.bind(null, "./src/reddit/pages/Subreddit/index.tsx")),
 					requireAsync(e) {
 						const t = this.resolve(e);
 						return this.resolved[t] = !1, this.importAsync(e).then(e => (this.resolved[t] = !0, e))
@@ -34525,7 +34525,7 @@
 			_ = Object(d.a)(_);
 			const m = _,
 				p = {
-					action: Object(a.a)(() => Promise.all([i.e("vendors~Governance~ModListing~Reddit~Subreddit"), i.e("vendors~PostCreation~Subreddit"), i.e("CollectionCommentsPage~CommentsPage~CountryPage~FramedGild~GildModal~GovernanceReleaseNotesModal~Mem~f5b82e5d"), i.e("CollectionCommentsPage~CommentsPage~CountryPage~Frontpage~GovernanceReleaseNotesModal~ModListing~Mod~adaf0b02"), i.e("Governance~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compo~bd4baca2"), i.e("Governance~ModListing~Reddit~ReportFlow~Subreddit"), i.e("CollectionCommentsPage~CommentsPage~Subreddit~SubredditWiki"), i.e("Governance~Reddit~Subreddit"), i.e("Frontpage~ModListing~Subreddit"), i.e("Subreddit")]).then(i.bind(null, "./src/reddit/actions/pages/subreddit.ts")).then(e => e.subredditRequested)),
+					action: Object(a.a)(() => Promise.all([i.e("vendors~Governance~ModListing~Reddit~Subreddit"), i.e("vendors~PostCreation~Subreddit"), i.e("CollectionCommentsPage~CommentsPage~CountryPage~FramedGild~GildModal~GovernanceReleaseNotesModal~Mem~c8b748a6"), i.e("CollectionCommentsPage~CommentsPage~CountryPage~Frontpage~GovernanceReleaseNotesModal~ModListing~Mod~adaf0b02"), i.e("Governance~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compo~bd4baca2"), i.e("Governance~ModListing~Reddit~ReportFlow~Subreddit"), i.e("CollectionCommentsPage~CommentsPage~Subreddit~SubredditWiki"), i.e("Governance~Reddit~Subreddit"), i.e("Frontpage~ModListing~Subreddit"), i.e("Subreddit")]).then(i.bind(null, "./src/reddit/actions/pages/subreddit.ts")).then(e => e.subredditRequested)),
 					chunk: o.r.SUBREDDIT,
 					component: l,
 					exact: !0,
@@ -47786,4 +47786,4 @@
 		"ignored /drone/src/node_modules/readable-stream/lib/internal/streams util": function(e, t) {}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.3f60a98b2ccac0fda4ec.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.381d482809ef9c053f62.js.map

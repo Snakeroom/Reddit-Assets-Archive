@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-ModHub-ContentControls.d20f479ac83203cbdb2a.js
-// Retrieved at 6/7/2022, 5:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-ModHub-ContentControls.c3dab7f837460ef9baa0.js
+// Retrieved at 6/13/2022, 1:00:03 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-ModHub-ContentControls"], {
 		"./src/reddit/components/ModHub/ContentControls/FormPlaceholder/index.m.less": function(e, t, n) {
@@ -134,8 +134,8 @@
 				F = n("./src/config.ts"),
 				N = n("./src/reddit/models/HatefulContentFilters/index.ts");
 			const P = `${F.a.redditModHelpUrl}/hc/en-us/articles/360010322091`,
-				M = 2,
-				O = 300,
+				O = 2,
+				M = 300,
 				D = 400,
 				I = 90,
 				j = 1e5,
@@ -214,27 +214,27 @@
 				K = n("./src/lib/classNames/index.ts"),
 				J = n("./src/reddit/helpers/styles/mixins/loading.ts"),
 				Z = n("./src/reddit/components/ModHub/ContentControls/FormPlaceholder/index.m.less"),
-				z = n.n(Z);
-			var Q = e => {
+				Q = n.n(Z);
+			var z = e => {
 					let {
 						isLoading: t
 					} = e;
 					return a.createElement("div", {
-						className: Object(K.a)(z.a.container, Object(J.a)({
+						className: Object(K.a)(Q.a.container, Object(J.a)({
 							isLoading: !1
 						}))
 					}, V()(3).map(e => a.createElement("div", {
 						key: e,
-						className: z.a.section
+						className: Q.a.section
 					}, a.createElement("div", {
-						className: Object(K.a)(z.a.sectionTitle, Object(J.b)({
+						className: Object(K.a)(Q.a.sectionTitle, Object(J.b)({
 							isLoading: t
 						}))
 					}), a.createElement("div", {
-						className: z.a.line
+						className: Q.a.line
 					}), V()(2).map(e => a.createElement("div", {
 						key: e,
-						className: Object(K.a)(z.a.sectionBodyRow, Object(J.b)({
+						className: Object(K.a)(Q.a.sectionBodyRow, Object(J.b)({
 							isLoading: t
 						}))
 					})))))
@@ -481,11 +481,11 @@
 					}), d.a.createElement(Y.c, {
 						className: fe.a.bodyRestrictionSetting,
 						direction: "column",
-						label: s.fbt._("Text post body", null, {
-							hk: "1NjP8q"
+						label: s.fbt._("Post text body", null, {
+							hk: "1dh3pQ"
 						}),
-						subtext: s.fbt._("Allow text posts to have body text", null, {
-							hk: "2aqrIz"
+						subtext: s.fbt._("Allow posts to have body text", null, {
+							hk: "qytLU"
 						})
 					}, d.a.createElement(te.a, {
 						disabled: !1,
@@ -496,20 +496,20 @@
 						className: fe.a.radioOption,
 						showButton: !0,
 						value: E.a.None
-					}, s.fbt._("Post body is optional", null, {
-						hk: "33sNwD"
+					}, s.fbt._("Text body is optional", null, {
+						hk: "2MQ05g"
 					})), d.a.createElement(ne.a, {
 						className: fe.a.radioOption,
 						showButton: !0,
 						value: E.a.Required
-					}, s.fbt._("Post body is required", null, {
-						hk: "36DfJm"
+					}, s.fbt._("Text body is required", null, {
+						hk: "4DGOH5"
 					})), d.a.createElement(ne.a, {
 						className: fe.a.radioOption,
 						showButton: !0,
 						value: E.a.NotAllowed
-					}, s.fbt._("Post body is disabled", null, {
-						hk: "3MemfQ"
+					}, s.fbt._("Text body is disabled", null, {
+						hk: "JaeQ0"
 					})))), d.a.createElement(xe, {
 						on: e.titleLength.enabled,
 						onClick: this.onToggleTitleLength,
@@ -527,8 +527,8 @@
 						onChange: this.onTitleLengthChange,
 						min: e.titleLength.min,
 						max: e.titleLength.max,
-						minLimit: M,
-						maxLimit: O,
+						minLimit: O,
+						maxLimit: M,
 						errors: e.titleLength.clientErrors
 					})), d.a.createElement(xe, {
 						on: e.titleRegexes.enabled,
@@ -639,20 +639,20 @@
 			}
 			var Ne = n("./node_modules/lodash/clamp.js"),
 				Pe = n.n(Ne),
-				Me = n("./src/reddit/controls/DiscreteSlideSelector/Bars/index.m.less"),
-				Oe = n.n(Me);
+				Oe = n("./src/reddit/controls/DiscreteSlideSelector/Bars/index.m.less"),
+				Me = n.n(Oe);
 
 			function De(e) {
 				const t = Array.from({
 					length: e.optionColors.length - 1
 				});
 				return d.a.createElement("div", {
-					className: Object(K.a)(Oe.a.container, e.className),
+					className: Object(K.a)(Me.a.container, e.className),
 					style: {
 						gridTemplateColumns: `repeat(${t.length}, 1fr)`
 					}
 				}, t.map((t, n) => d.a.createElement("div", {
-					className: Oe.a.segment,
+					className: Me.a.segment,
 					key: n,
 					style: {
 						backgroundColor: n < e.currentStop ? e.optionColors[e.currentStop] : void 0
@@ -728,20 +728,20 @@
 				var n, s
 			}
 			var Ze = n("./src/reddit/controls/DiscreteSlideSelector/index.m.less"),
-				ze = n.n(Ze);
+				Qe = n.n(Ze);
 
-			function Qe(e) {
+			function ze(e) {
 				const t = Pe()(e.options.findIndex(t => t.value === e.value), 0, e.options.length - 1);
 				return d.a.createElement("div", {
-					className: Object(K.a)(ze.a.container, e.className)
+					className: Object(K.a)(Qe.a.container, e.className)
 				}, d.a.createElement("div", {
-					className: ze.a.barContainer
+					className: Qe.a.barContainer
 				}, d.a.createElement(De, {
-					className: ze.a.bars,
+					className: Qe.a.bars,
 					currentStop: t,
 					optionColors: e.options.map(e => e.color)
 				}), d.a.createElement(Je, {
-					className: ze.a.thumbRail,
+					className: Qe.a.thumbRail,
 					currentStop: t,
 					numStops: e.options.length,
 					onChange: t => e.onChange(e.options[t].value)
@@ -811,7 +811,7 @@
 				}, d.a.createElement(nt, {
 					className: it.a.levelLabel,
 					level: e.currentLevel
-				}), e.descriptions[e.currentLevel]()), d.a.createElement(Qe, {
+				}), e.descriptions[e.currentLevel]()), d.a.createElement(ze, {
 					options: [N.a.Off, N.a.Lenient, N.a.Moderate, N.a.Strict].map(e => ({
 						color: e === N.a.Off ? "var(--newRedditTheme-metaText)" : tt(e),
 						label: et(e),
@@ -1024,8 +1024,8 @@
 						return ce({
 							min: t,
 							max: n,
-							minLimit: M,
-							maxLimit: O
+							minLimit: O,
+							maxLimit: M
 						})
 					})(t.titleLength), t.bodyBlacklistedStrings.clientErrors = Rt(t), t.bodyRequiredStrings.clientErrors = Et(t), t.titleBlacklistedStrings.clientErrors = (e => {
 						const t = St(e);
@@ -1405,7 +1405,7 @@
 			var Pt = Object(c.b)(Nt)(e => d.a.createElement(d.a.Fragment, null, (e => [...e.hatefulContentFiltersEnabled ? [dt] : [], Lt, Ee])(e).map((t, n) => d.a.createElement(t, Ft({
 					key: n
 				}, e))))),
-				Mt = e => {
+				Ot = e => {
 					const {
 						bodyBlacklistedStrings: t,
 						bodyRegexes: n,
@@ -1489,7 +1489,7 @@
 						}
 					}
 				};
-			const Ot = {
+			const Mt = {
 					bodyBlacklistedStrings: [],
 					bodyRegexes: [],
 					bodyRequiredStrings: [],
@@ -1509,7 +1509,7 @@
 				Dt = e => e.filter(e => !!e);
 			var It = e => {
 					const t = {
-							...Ot,
+							...Mt,
 							bodyRestrictionPolicy: e.bodyRequirement.restrictionPolicy,
 							guidelinesText: e.guidelines.enabled ? e.guidelines.guidelineText : null,
 							isFlairRequired: e.flairRequirement.enabled,
@@ -1655,7 +1655,7 @@
 							}
 						})
 					};
-					const n = e.contentControls ? Mt(e.contentControls) : U;
+					const n = e.contentControls ? Ot(e.contentControls) : U;
 					this.state = {
 						areContentControlsLoaded: !!e.contentControls,
 						formState: n,
@@ -1673,7 +1673,7 @@
 						contentControls: n
 					} = this.props;
 					if (n && !this.state.areContentControlsLoaded) {
-						const e = Mt(n);
+						const e = Ot(n);
 						this.setState({
 							areContentControlsLoaded: !0,
 							formState: e,
@@ -1723,7 +1723,7 @@
 						formState: this.state.formState,
 						isLoading: t,
 						onChange: this.onFormStateChange
-					})) : d.a.createElement(Q, {
+					})) : d.a.createElement(z, {
 						isLoading: t
 					})), d.a.createElement(g.a, {
 						blockOnBeforeUnload: !0,
@@ -1776,4 +1776,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ModHub-ContentControls.d20f479ac83203cbdb2a.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ModHub-ContentControls.c3dab7f837460ef9baa0.js.map

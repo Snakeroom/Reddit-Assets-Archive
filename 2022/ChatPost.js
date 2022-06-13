@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ChatPost.6742565393de9c64ca4d.js
-// Retrieved at 6/13/2022, 10:50:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ChatPost.4882a1a0cbd5214a3a75.js
+// Retrieved at 6/13/2022, 1:00:03 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ChatPost"], {
 		"./node_modules/lodash/_baseDelay.js": function(e, t) {
@@ -1841,7 +1841,7 @@
 						className: Object(ae.a)(ge.a.backgroundAnimation, ge.a.backgroundSparkle, ge.a.sparkleBottomRight)
 					})), c.a.createElement("img", {
 						src: o
-					})), c.a.createElement(pe.a, {
+					})), c.a.createElement(pe.b, {
 						className: ge.a.awardCommentText,
 						content: Object(ue.a)(n),
 						key: `rich-text-${n.id}`,
@@ -2708,7 +2708,7 @@
 					const {
 						comment: t
 					} = e;
-					return void 0 === bn(e) ? null : c.a.createElement(pe.a, {
+					return void 0 === bn(e) ? null : c.a.createElement(pe.b, {
 						className: hn.a.SystemMessageText,
 						content: Object(ue.a)(t),
 						key: `rich-text-${t.id}`,
@@ -2923,7 +2923,7 @@
 					}) : p ? c.a.createElement(de.a, {
 						comment: o,
 						prediction: p
-					}) : c.a.createElement(c.a.Fragment, null, c.a.createElement(pe.a, {
+					}) : c.a.createElement(c.a.Fragment, null, c.a.createElement(pe.b, {
 						className: Object(ae.a)(wn.a.RichTextJson, {
 							[wn.a.Livestreaming]: m
 						}),
@@ -3285,7 +3285,7 @@
 				}) : v ? c.a.createElement(de.a, {
 					comment: s,
 					prediction: v
-				}) : c.a.createElement(c.a.Fragment, null, c.a.createElement(pe.a, {
+				}) : c.a.createElement(c.a.Fragment, null, c.a.createElement(pe.b, {
 					className: Object(ae.a)(oo.a.richTextJson, {
 						[oo.a.livestreaming]: h
 					}),
@@ -4928,4 +4928,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatPost.6742565393de9c64ca4d.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatPost.4882a1a0cbd5214a3a75.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModerationPages~SubredditWiki.50afe214508513ec3f33.js
-// Retrieved at 6/13/2022, 10:50:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModerationPages~SubredditWiki.2b986b624b0c9fc23606.js
+// Retrieved at 6/13/2022, 1:00:03 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModerationPages~SubredditWiki", "reddit-components-ContentGate"], {
 		"./node_modules/lodash/_baseRange.js": function(e, t) {
@@ -2726,7 +2726,7 @@
 							hk: "2XqfJa"
 						})))], {
 							hk: "2B9i8y"
-						}), a.a.createElement(se, null, I ? a.a.createElement(v.a, {
+						}), a.a.createElement(se, null, I ? a.a.createElement(v.b, {
 							content: I,
 							rtJsonElementProps: {
 								pageLayer: h
@@ -2763,7 +2763,7 @@
 					case E.a.GatedSubreddit:
 						return a.a.createElement("div", null, a.a.createElement(re, null, T._("Are you sure you want to view this community?", null, {
 							hk: "1K5UIm"
-						})), a.a.createElement(W, null, a.a.createElement(se, null, C ? a.a.createElement(v.a, {
+						})), a.a.createElement(W, null, a.a.createElement(se, null, C ? a.a.createElement(v.b, {
 							content: C,
 							rtJsonElementProps: {
 								pageLayer: h
@@ -4741,4 +4741,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages~SubredditWiki.50afe214508513ec3f33.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages~SubredditWiki.2b986b624b0c9fc23606.js.map

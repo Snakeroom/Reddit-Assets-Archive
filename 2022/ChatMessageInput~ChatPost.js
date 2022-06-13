@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ChatMessageInput~ChatPost.0c89e23eb4c9b43ba57b.js
-// Retrieved at 6/13/2022, 10:50:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ChatMessageInput~ChatPost.11bbdc495dc9bd1768b4.js
+// Retrieved at 6/13/2022, 1:00:03 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ChatMessageInput~ChatPost"], {
 		"./node_modules/lodash/_baseReduce.js": function(e, t) {
@@ -1052,11 +1052,13 @@
 		},
 		"./src/reddit/components/RichTextJson/index.tsx": function(e, t, n) {
 			"use strict";
-			n.d(t, "c", (function() {
+			n.d(t, "d", (function() {
 				return v
-			})), n.d(t, "b", (function() {
+			})), n.d(t, "c", (function() {
 				return y
 			})), n.d(t, "a", (function() {
+				return w
+			})), n.d(t, "b", (function() {
 				return I
 			}));
 			var s = n("./node_modules/fbt/lib/FbtPublic.js"),
@@ -1829,7 +1831,7 @@
 				const {
 					className: t,
 					content: n
-				} = e, s = n.document, a = [], c = Object(i.b)(s), p = Object(i.c)(s);
+				} = e, s = n.document, a = [], c = Object(i.c)(s), p = Object(i.d)(s);
 				if (-1 !== c)
 					for (let r = c; r <= p; r++) {
 						const e = s[r],
@@ -2526,4 +2528,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatMessageInput~ChatPost.0c89e23eb4c9b43ba57b.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatMessageInput~ChatPost.11bbdc495dc9bd1768b4.js.map

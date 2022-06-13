@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostDraft.6779eab9936ee0e62116.js
-// Retrieved at 6/13/2022, 10:50:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostDraft.57560d879f2ec2a32078.js
+// Retrieved at 6/13/2022, 1:00:03 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostDraft"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -1953,11 +1953,13 @@
 		},
 		"./src/reddit/components/RichTextJson/index.tsx": function(e, t, n) {
 			"use strict";
-			n.d(t, "c", (function() {
+			n.d(t, "d", (function() {
 				return j
-			})), n.d(t, "b", (function() {
+			})), n.d(t, "c", (function() {
 				return k
 			})), n.d(t, "a", (function() {
+				return C
+			})), n.d(t, "b", (function() {
 				return O
 			}));
 			var s = n("./node_modules/fbt/lib/FbtPublic.js"),
@@ -3560,7 +3562,7 @@
 						className: Object(a.a)({
 							[f.a.cleanStyle]: e.cleanStyle
 						})
-					}, e.rule.descriptionRichText ? o.a.createElement(l.a, {
+					}, e.rule.descriptionRichText ? o.a.createElement(l.b, {
 						content: JSON.parse(e.rule.descriptionRichText),
 						useExplicitTextColor: !0,
 						rtJsonElementProps: v
@@ -4620,7 +4622,7 @@
 				if (!t.body) return null;
 				switch (t.kind) {
 					case m.b.RichText:
-						return t.body ? r.a.createElement(u.a, {
+						return t.body ? r.a.createElement(u.b, {
 							content: t.body,
 							rtJsonElementProps: x(e)
 						}) : null;
@@ -4788,4 +4790,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostDraft.6779eab9936ee0e62116.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostDraft.57560d879f2ec2a32078.js.map

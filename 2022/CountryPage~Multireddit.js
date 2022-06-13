@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CountryPage~Multireddit.4416c85ca9d7eef0f717.js
-// Retrieved at 6/13/2022, 10:50:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CountryPage~Multireddit.ed4b328723e839f71d12.js
+// Retrieved at 6/13/2022, 1:00:03 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CountryPage~Multireddit", "reddit-components-ContentGate"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -1007,7 +1007,7 @@
 							hk: "2XqfJa"
 						})))], {
 							hk: "2B9i8y"
-						}), i.a.createElement(se, null, O ? i.a.createElement(x.a, {
+						}), i.a.createElement(se, null, O ? i.a.createElement(x.b, {
 							content: O,
 							rtJsonElementProps: {
 								pageLayer: f
@@ -1044,7 +1044,7 @@
 					case C.a.GatedSubreddit:
 						return i.a.createElement("div", null, i.a.createElement(ne, null, R._("Are you sure you want to view this community?", null, {
 							hk: "1K5UIm"
-						})), i.a.createElement(H, null, i.a.createElement(se, null, T ? i.a.createElement(x.a, {
+						})), i.a.createElement(H, null, i.a.createElement(se, null, T ? i.a.createElement(x.b, {
 							content: T,
 							rtJsonElementProps: {
 								pageLayer: f
@@ -3402,11 +3402,13 @@
 		},
 		"./src/reddit/components/RichTextJson/index.tsx": function(e, t, n) {
 			"use strict";
-			n.d(t, "c", (function() {
+			n.d(t, "d", (function() {
 				return k
-			})), n.d(t, "b", (function() {
+			})), n.d(t, "c", (function() {
 				return O
 			})), n.d(t, "a", (function() {
+				return S
+			})), n.d(t, "b", (function() {
 				return C
 			}));
 			var r = n("./node_modules/fbt/lib/FbtPublic.js"),
@@ -6063,7 +6065,7 @@
 					hk: "3AKmgH"
 				}))), a.a.createElement("div", {
 					className: Oe.a.descriptionContainer
-				}, e.multireddit.descriptionRtJson ? a.a.createElement(D.a, {
+				}, e.multireddit.descriptionRtJson ? a.a.createElement(D.b, {
 					content: e.multireddit.descriptionRtJson,
 					rtJsonElementProps: Ne
 				}) : a.a.createElement(R.a, {
@@ -6436,4 +6438,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CountryPage~Multireddit.4416c85ca9d7eef0f717.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CountryPage~Multireddit.ed4b328723e839f71d12.js.map

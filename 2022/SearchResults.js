@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SearchResults.a986650793990b740f82.js
-// Retrieved at 6/13/2022, 10:50:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SearchResults.3282e42afacad67b9e5e.js
+// Retrieved at 6/13/2022, 1:00:03 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SearchResults"], {
 		"./node_modules/lodash/_baseDelay.js": function(e, t) {
@@ -505,7 +505,7 @@
 						const t = this.resolve(e);
 						return !1 !== this.resolved[t] && !!s.m[t]
 					},
-					importAsync: () => Promise.all([s.e("vendors~ChatMessageInput~CommentRichUnit~FlairEdit~MembershipPaywallPage~PostCreation~PostRichUnit~R~9deab1a0"), s.e("ChatMessageInput~MembershipPaywallPage~PostCreation~RichTextEditor"), s.e("RichTextEditor")]).then(s.bind(null, "./src/reddit/components/CommentCreation/index.tsx")),
+					importAsync: () => Promise.all([s.e("vendors~ChatMessageInput~CommentRichUnit~FlairEdit~MembershipPaywallPage~PostCreation~PostRichUnit~R~9deab1a0"), s.e("ChatMessageInput~MembershipPaywallPage~RichTextEditor"), s.e("RichTextEditor")]).then(s.bind(null, "./src/reddit/components/CommentCreation/index.tsx")),
 					requireAsync(e) {
 						const t = this.resolve(e);
 						return this.resolved[t] = !1, this.importAsync(e).then(e => (this.resolved[t] = !0, e))
@@ -1742,7 +1742,7 @@
 					}, ee ? o.a.createElement(We.a, {
 						comment: m,
 						prediction: ee
-					}) : o.a.createElement(Ze.a, {
+					}) : o.a.createElement(Ze.b, {
 						content: Fe,
 						mediaMetadata: m.media && m.media.mediaMetadata,
 						redditStyle: re,
@@ -3878,11 +3878,13 @@
 		},
 		"./src/reddit/components/RichTextJson/index.tsx": function(e, t, s) {
 			"use strict";
-			s.d(t, "c", (function() {
+			s.d(t, "d", (function() {
 				return j
-			})), s.d(t, "b", (function() {
+			})), s.d(t, "c", (function() {
 				return _
 			})), s.d(t, "a", (function() {
+				return k
+			})), s.d(t, "b", (function() {
 				return w
 			}));
 			var n = s("./node_modules/fbt/lib/FbtPublic.js"),
@@ -10495,4 +10497,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SearchResults.a986650793990b740f82.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SearchResults.3282e42afacad67b9e5e.js.map

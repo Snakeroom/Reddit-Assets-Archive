@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/FramedGild~GildModal.b9453310eb5cf1b8e192.js
-// Retrieved at 6/13/2022, 10:50:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/FramedGild~GildModal.08158f7e1ba28cd77192.js
+// Retrieved at 6/13/2022, 1:00:03 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["FramedGild~GildModal", "gildActions"], {
 		"./node_modules/@stripe/react-stripe-js/dist/react-stripe.umd.js": function(e, t, r) {
@@ -2522,7 +2522,7 @@
 					}, s.a.createElement("div", {
 						className: ge.a.focusElement,
 						tabIndex: -1
-					}, s.a.createElement(je.a, {
+					}, s.a.createElement(je.b, {
 						className: Object(c.a)(ge.a.pillOption, {
 							[ge.a.selectedPillOption]: t === e.tag
 						}),
@@ -4051,11 +4051,13 @@
 		},
 		"./src/reddit/components/RichTextJson/index.tsx": function(e, t, r) {
 			"use strict";
-			r.d(t, "c", (function() {
+			r.d(t, "d", (function() {
 				return E
-			})), r.d(t, "b", (function() {
+			})), r.d(t, "c", (function() {
 				return I
 			})), r.d(t, "a", (function() {
+				return _
+			})), r.d(t, "b", (function() {
 				return C
 			}));
 			var n = r("./node_modules/fbt/lib/FbtPublic.js"),
@@ -6057,4 +6059,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/FramedGild~GildModal.b9453310eb5cf1b8e192.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/FramedGild~GildModal.08158f7e1ba28cd77192.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-ContentGate.b378ecb8f90abf31bd19.js
-// Retrieved at 6/1/2022, 6:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-ContentGate.5f7f5cef208f6af7b18c.js
+// Retrieved at 6/13/2022, 1:00:03 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-ContentGate"], {
 		"./src/chat/controls/Svg/index.m.less": function(e, t, n) {
@@ -301,7 +301,7 @@
 							hk: "2XqfJa"
 						})))], {
 							hk: "2B9i8y"
-						}), o.a.createElement(ae, null, C ? o.a.createElement(y.a, {
+						}), o.a.createElement(ae, null, C ? o.a.createElement(y.b, {
 							content: C,
 							rtJsonElementProps: {
 								pageLayer: _
@@ -338,7 +338,7 @@
 					case B.a.GatedSubreddit:
 						return o.a.createElement("div", null, o.a.createElement(ne, null, D._("Are you sure you want to view this community?", null, {
 							hk: "1K5UIm"
-						})), o.a.createElement(A, null, o.a.createElement(ae, null, T ? o.a.createElement(y.a, {
+						})), o.a.createElement(A, null, o.a.createElement(ae, null, T ? o.a.createElement(y.b, {
 							content: T,
 							rtJsonElementProps: {
 								pageLayer: _
@@ -617,4 +617,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ContentGate.b378ecb8f90abf31bd19.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ContentGate.5f7f5cef208f6af7b18c.js.map
