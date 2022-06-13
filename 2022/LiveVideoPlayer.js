@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/LiveVideoPlayer.4c8ef2eec84a3cf0f316.js
-// Retrieved at 6/13/2022, 2:20:03 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/LiveVideoPlayer.895fbc918d355a2daf3f.js
+// Retrieved at 6/13/2022, 5:30:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["LiveVideoPlayer"], {
 		"./node_modules/lodash/isUndefined.js": function(e, t) {
@@ -1330,7 +1330,7 @@
 			})), s.d(t, "e", (function() {
 				return H
 			})), s.d(t, "g", (function() {
-				return q
+				return K
 			}));
 			s("./node_modules/core-js/modules/web.dom.iterable.js");
 			var n = s("./node_modules/reselect/es/index.js"),
@@ -1535,7 +1535,7 @@
 				}),
 				U = Object(n.a)(M, B, m.b, c.b, c.o, (e, t, s, n, r) => s ? n : e ? t === F.LIVE || t === F.VOD ? e.stream.hls_url : r : void 0),
 				H = Object(n.a)(M, B, R, (e, t, s) => e ? t === F.LIVE ? e.broadcast_time : t === F.VOD && s < e.broadcast_time ? s : 0 : 0),
-				q = (e, t) => {
+				K = (e, t) => {
 					const s = h(e);
 					return !!s && s[t] && s[t].chat_disabled
 				}
@@ -1568,9 +1568,9 @@
 				i = s("./src/reddit/selectors/user.ts");
 			const a = Object(n.a)(e => Object(o.c)(e, {
 				experimentEligibilitySelector: i.Q,
-				experimentName: r.qc
-			}), e => e === r.sd)
+				experimentName: r.rc
+			}), e => e === r.td)
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/LiveVideoPlayer.4c8ef2eec84a3cf0f316.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/LiveVideoPlayer.895fbc918d355a2daf3f.js.map

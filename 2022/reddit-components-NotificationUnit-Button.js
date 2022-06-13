@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-NotificationUnit-Button.2fb001582807eec36877.js
-// Retrieved at 6/13/2022, 2:20:03 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-NotificationUnit-Button.34521d79be656d75fa22.js
+// Retrieved at 6/13/2022, 5:30:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-NotificationUnit-Button"], {
 		"./src/lib/scroll/index.ts": function(t, e, n) {
@@ -228,8 +228,8 @@
 				it = n("./node_modules/reselect/es/index.js");
 			const st = Object(it.a)(t => Object(rt.c)(t, {
 				experimentEligibilitySelector: rt.a,
-				experimentName: ot.Gb
-			}), t => t === ot.sd);
+				experimentName: ot.Hb
+			}), t => t === ot.td);
 			var ct = n("./src/reddit/selectors/experiments/contributeBeforeSignUp.ts"),
 				at = n("./src/reddit/selectors/experiments/emailEnablement.ts"),
 				dt = n("./src/reddit/selectors/platform.ts"),
@@ -777,7 +777,7 @@
 						[t]: {
 							sendReplies: i
 						}
-					})), (await Object(B.p)(r(), t, i)).ok || e(Object(mt.i)({
+					})), (await Object(B.q)(r(), t, i)).ok || e(Object(mt.i)({
 						[t]: {
 							sendReplies: !i
 						}
@@ -2840,4 +2840,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-NotificationUnit-Button.2fb001582807eec36877.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-NotificationUnit-Button.34521d79be656d75fa22.js.map

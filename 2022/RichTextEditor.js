@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/RichTextEditor.fc4ea26a57784fa623b7.js
-// Retrieved at 6/13/2022, 2:20:03 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/RichTextEditor.c191cc76c6c4ed5c73bc.js
+// Retrieved at 6/13/2022, 5:30:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["RichTextEditor", "ContributorRequestButton"], {
 		"./node_modules/autosize/dist/autosize.js": function(e, t, n) {
@@ -579,8 +579,8 @@
 				re = n("./node_modules/reselect/es/index.js");
 			const ie = Object(re.a)(e => Object(se.c)(e, {
 				experimentEligibilitySelector: se.a,
-				experimentName: oe.Gb
-			}), e => e === oe.sd);
+				experimentName: oe.Hb
+			}), e => e === oe.td);
 			var ae = n("./src/reddit/selectors/experiments/contributeBeforeSignUp.ts"),
 				de = n("./src/reddit/selectors/experiments/emailEnablement.ts"),
 				ce = n("./src/reddit/selectors/platform.ts"),
@@ -1128,7 +1128,7 @@
 						[e]: {
 							sendReplies: r
 						}
-					})), (await Object(H.p)(s(), e, r)).ok || t(Object(ue.i)({
+					})), (await Object(H.q)(s(), e, r)).ok || t(Object(ue.i)({
 						[e]: {
 							sendReplies: !r
 						}
@@ -4909,29 +4909,29 @@
 					if (Object(i.a)(e)) return !1;
 					return Object(s.c)(e, {
 						experimentEligibilitySelector: r.e,
-						experimentName: o.Rf
-					}) === o.sd
+						experimentName: o.Sf
+					}) === o.td
 				},
 				d = e => {
 					return Object(s.c)(e, {
 						experimentEligibilitySelector: r.e,
-						experimentName: o.Sf
-					}) === o.sd
+						experimentName: o.Tf
+					}) === o.td
 				},
 				c = e => {
 					if (Object(i.a)(e)) return !1;
 					const t = Object(s.c)(e, {
 						experimentEligibilitySelector: r.e,
-						experimentName: o.Qf
+						experimentName: o.Rf
 					});
-					return t === o.Hf.TypingIndicators || t === o.Hf.IndicatorsPlusCTA
+					return t === o.If.TypingIndicators || t === o.If.IndicatorsPlusCTA
 				},
 				l = e => {
 					if (Object(i.a)(e)) return !1;
 					const t = Object(r.d)(e, {
-						experimentName: o.Qf
+						experimentName: o.Rf
 					});
-					return (null == t ? void 0 : t.variant) === o.Hf.IndicatorsPlusCTA
+					return (null == t ? void 0 : t.variant) === o.If.IndicatorsPlusCTA
 				}
 		},
 		"./src/redditGQL/operations/CommentToxicity.json": function(e) {
@@ -4948,4 +4948,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RichTextEditor.fc4ea26a57784fa623b7.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RichTextEditor.c191cc76c6c4ed5c73bc.js.map
