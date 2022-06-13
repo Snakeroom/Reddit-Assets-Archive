@@ -1,12 +1,12 @@
-// https://www.redditstatic.com/desktop2x/SnoovatarModal.f78b76e2582db6a3bae1.js
-// Retrieved at 6/13/2022, 10:50:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SnoovatarModal.f780752852e44ec53877.js
+// Retrieved at 6/13/2022, 11:20:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SnoovatarModal"], {
 		"./src/reddit/components/SnoovatarModal/SnoovatarIframe.tsx": function(e, t, a) {
 			"use strict";
 			a("./node_modules/core-js/modules/web.dom.iterable.js");
-			var s = a("./node_modules/react/index.js"),
-				r = a.n(s),
+			var r = a("./node_modules/react/index.js"),
+				s = a.n(r),
 				n = a("./node_modules/react-redux/es/index.js"),
 				o = a("./node_modules/react-router/esm/react-router.js"),
 				c = a("./src/config.ts"),
@@ -30,8 +30,8 @@
 					return m.set(t, a)
 				}), u && m.set("source", u);
 				const v = Object(n.e)(e => e.user.session),
-					O = Object(s.useRef)(null),
-					p = Object(s.useCallback)(e => {
+					p = Object(r.useRef)(null),
+					O = Object(r.useCallback)(e => {
 						v && e && e.postMessage({
 							type: "injectAuth",
 							headers: {
@@ -40,18 +40,18 @@
 							expiration: new Date(v.expires).getTime()
 						}, c.a.snoovatarUrl)
 					}, [v]);
-				return Object(s.useEffect)(() => {
+				return Object(r.useEffect)(() => {
 					var e;
-					return p(null === (e = null == O ? void 0 : O.current) || void 0 === e ? void 0 : e.contentWindow)
-				}, [O, p]), Object(s.useEffect)(() => {
+					return O(null === (e = null == p ? void 0 : p.current) || void 0 === e ? void 0 : e.contentWindow)
+				}, [p, O]), Object(r.useEffect)(() => {
 					const e = e => {
-						"refreshAuth" === (null == e ? void 0 : e.data) && p(e.source)
+						"refreshAuth" === (null == e ? void 0 : e.data) && O(e.source)
 					};
 					return window.addEventListener("message", e), () => window.removeEventListener("message", e)
-				}, [p]), r.a.createElement("div", {
+				}, [O]), s.a.createElement("div", {
 					className: Object(i.a)(l.a.iframeContainer, t)
-				}, r.a.createElement("iframe", {
-					ref: O,
+				}, s.a.createElement("iframe", {
+					ref: p,
 					src: `${c.a.snoovatarUrl}/static/client/?${m.toString()}`
 				}))
 			})
@@ -68,9 +68,9 @@
 		"./src/reddit/components/SnoovatarModal/index.tsx": function(e, t, a) {
 			"use strict";
 			a.r(t);
-			var s = a("./src/config.ts"),
-				r = a("./node_modules/react/index.js"),
-				n = a.n(r),
+			var r = a("./src/config.ts"),
+				s = a("./node_modules/react/index.js"),
+				n = a.n(s),
 				o = a("./node_modules/react-redux/es/index.js"),
 				c = a("./src/lib/env/index.ts"),
 				i = a("./src/reddit/actions/snoovatarModal.ts"),
@@ -79,96 +79,98 @@
 				u = a("./src/reddit/hooks/useTracking.ts"),
 				m = a("./src/reddit/selectors/activeModal.ts"),
 				v = a("./src/reddit/selectors/experiments/econ/index.ts"),
-				O = a("./src/reddit/selectors/experiments/econ/paymentsSandbox.ts"),
-				p = a("./src/telemetry/index.ts"),
-				b = a("./src/reddit/components/SnoovatarModal/SnoovatarIframe.tsx"),
-				E = a("./src/higherOrderComponents/asModal/index.tsx"),
+				p = a("./src/reddit/selectors/experiments/econ/paymentsSandbox.ts"),
+				O = a("./src/telemetry/index.ts"),
+				E = a("./src/reddit/components/SnoovatarModal/SnoovatarIframe.tsx"),
+				b = a("./src/higherOrderComponents/asModal/index.tsx"),
 				f = a("./src/reddit/components/SnoovatarModal/index.m.less"),
-				_ = a.n(f);
+				S = a.n(f);
 
-			function h() {
-				return (h = Object.assign || function(e) {
+			function _() {
+				return (_ = Object.assign || function(e) {
 					for (var t = 1; t < arguments.length; t++) {
 						var a = arguments[t];
-						for (var s in a) Object.prototype.hasOwnProperty.call(a, s) && (e[s] = a[s])
+						for (var r in a) Object.prototype.hasOwnProperty.call(a, r) && (e[r] = a[r])
 					}
 					return e
 				}).apply(this, arguments)
 			}
-			const j = !(Object(c.c)() || Object(c.b)()),
-				x = {
-					GRAPHQL_URL: s.a.gqlUrl,
-					IS_DEVELOPMENT: j,
-					IS_PRODUCTION: !j,
+			const h = !(Object(c.c)() || Object(c.b)()),
+				j = {
+					GRAPHQL_URL: r.a.gqlUrl,
+					IS_DEVELOPMENT: h,
+					IS_PRODUCTION: !h,
 					MOCKING_ENABLED: !1,
-					SNOOVATAR_BASE_URL: s.a.snoovatarUrl,
-					SNOOVATAR_API_URL: `${s.a.snoovatarUrl}/api`
+					SNOOVATAR_BASE_URL: r.a.snoovatarUrl,
+					SNOOVATAR_API_URL: `${r.a.snoovatarUrl}/api`
 				},
-				S = n.a.lazy(() => Promise.all([a.e(0), a.e(1), a.e(2), a.e(4), a.e(3), a.e(5)]).then(a.bind(null, "./node_modules/@reddit/avatars/index.es.js")).then(e => ({
+				x = n.a.lazy(() => Promise.all([a.e(0), a.e(1), a.e(2), a.e(4), a.e(3), a.e(5)]).then(a.bind(null, "./node_modules/@reddit/avatars/index.es.js")).then(e => ({
 					default: e.DataWrapper
 				}))),
 				A = n.a.lazy(() => Promise.all([a.e(0), a.e(1), a.e(2), a.e(4), a.e(3), a.e(5)]).then(a.bind(null, "./node_modules/@reddit/avatars/index.es.js")).then(e => ({
 					default: e.Builder
 				}))),
-				M = Object(E.a)(e => {
+				M = Object(b.a)(e => {
 					const t = Object(o.e)(e => e.user.session),
-						[c, i] = Object(r.useState)(!1),
-						m = Object(o.e)(O.a),
-						E = Object(o.e)(v.d),
-						f = Object(r.useMemo)(() => ({
+						[c, i] = Object(s.useState)(!1),
+						m = Object(o.e)(p.a),
+						b = Object(o.e)(v.d),
+						f = Object(s.useMemo)(() => ({
 							headers: {
 								Authorization: `Bearer ${t.accessToken}`
 							},
 							expiration: new Date(t.expires).getTime()
 						}), [t]),
-						j = Object(u.a)(),
+						h = Object(u.a)(),
 						M = Object(o.e)(e => f && Object(v.e)(e));
-					Object(r.useEffect)(() => {
+					Object(s.useEffect)(() => {
 						(async () => {
 							await a.e(7).then(a.t.bind(null, "./node_modules/@reddit/avatars/style.css", 7))
-						})(), j(l.r), i(!0)
-					}, [j]);
+						})(), h(l.r), i(!0)
+					}, [h]);
 					const {
-						activeDetails: L,
-						activeTab: R,
-						activeMeSubpage: w
-					} = e, y = Object(r.useMemo)(() => {
-						const e = E ? d.a.SHOP : d.a.EXPLORE;
+						activeDetails: R,
+						activeTab: T,
+						activeMeSubpage: L,
+						shopTabState: P
+					} = e, g = Object(s.useMemo)(() => {
+						const e = b ? d.a.SHOP : d.a.EXPLORE;
 						return {
-							activeTab: R || e,
-							activeMeSubpage: w || void 0,
-							activeDetails: L || void 0
+							activeTab: T || e,
+							activeMeSubpage: L || void 0,
+							activeDetails: R || void 0,
+							shopTabState: P || void 0
 						}
-					}, [L, R, E, w]);
+					}, [R, T, b, L, P]);
 					if (!t || !c) return null;
-					let N;
-					return N = e.share ? {
-						...x,
-						STRIPE_API_KEY: s.a.stripe.apiKey(m),
+					let y;
+					return y = e.share ? {
+						...j,
+						STRIPE_API_KEY: r.a.stripe.apiKey(m),
 						COPY_SHARE_PARAMS: e.share
 					} : {
-						...x,
-						STRIPE_API_KEY: s.a.stripe.apiKey(m)
+						...j,
+						STRIPE_API_KEY: r.a.stripe.apiKey(m)
 					}, M ? n.a.createElement("div", {
-						className: _.a.snoovatarModalBuilderV2
-					}, n.a.createElement(r.Suspense, {
+						className: S.a.snoovatarModalBuilderV2
+					}, n.a.createElement(s.Suspense, {
 						fallback: n.a.createElement("div", null)
-					}, n.a.createElement(S, {
+					}, n.a.createElement(x, {
 						accessToken: t.accessToken,
 						authHeaders: f,
-						config: N,
-						sendEvent: p.a
+						config: y,
+						sendEvent: O.a
 					}, n.a.createElement(A, {
-						navState: y
-					})))) : n.a.createElement(b.a, h({
-						className: _.a.snoovatarModalIframeContainer
+						navState: g
+					})))) : n.a.createElement(E.a, _({
+						className: S.a.snoovatarModalIframeContainer
 					}, e))
 				});
 			t.default = () => {
 				const e = Object(o.d)(),
 					t = Object(o.e)(e => Object(m.a)(e));
-				return n.a.createElement(M, h({}, t, {
-					className: _.a.snoovatarModal,
+				return n.a.createElement(M, _({}, t, {
+					className: S.a.snoovatarModal,
 					withOverlay: !0,
 					onOverlayClick: () => e(Object(i.a)())
 				}))
@@ -176,26 +178,31 @@
 		},
 		"./src/reddit/helpers/avatarRouting.ts": function(e, t, a) {
 			"use strict";
-			var s, r;
+			var r, s, n;
 			a.d(t, "a", (function() {
-					return r
+					return s
+				})), a.d(t, "b", (function() {
+					return n
 				})),
 				function(e) {
 					e.BODY = "body", e.EYES = "eyes", e.HAIR = "hair", e.EXPRESSION = "expression", e.FACIAL_HAIR = "facial hair"
-				}(s || (s = {})),
+				}(r || (r = {})),
 				function(e) {
 					e.SHOP = "shop", e.EXPLORE = "explore", e.STYLE = "style", e.ME = "me", e.NFT = "nft"
-				}(r || (r = {}))
+				}(s || (s = {})),
+				function(e) {
+					e.FEATURED = "featured", e.POPULAR = "popular", e.GALLERY = "gallery", e.ARTISTS = "artists", e.ARTIST_PAGE = "artist_page"
+				}(n || (n = {}))
 		},
 		"./src/reddit/selectors/experiments/econ/paymentsSandbox.ts": function(e, t, a) {
 			"use strict";
 			a.d(t, "a", (function() {
 				return n
 			}));
-			var s = a("./src/reddit/constants/experiments.ts"),
-				r = a("./src/reddit/selectors/experiments/econ/simpleExperiment.ts");
-			const n = Object(r.a)(s.Wc)
+			var r = a("./src/reddit/constants/experiments.ts"),
+				s = a("./src/reddit/selectors/experiments/econ/simpleExperiment.ts");
+			const n = Object(s.a)(r.Wc)
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SnoovatarModal.f78b76e2582db6a3bae1.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SnoovatarModal.f780752852e44ec53877.js.map

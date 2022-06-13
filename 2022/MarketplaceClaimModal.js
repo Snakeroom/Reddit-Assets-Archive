@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/MarketplaceClaimModal.881e112e9926c0859a19.js
-// Retrieved at 6/1/2022, 8:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/MarketplaceClaimModal.30d6f40b549b898689d8.js
+// Retrieved at 6/13/2022, 11:20:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["MarketplaceClaimModal"], {
 		"./src/reddit/actions/economics/marketplace/constants.ts": function(e, t, n) {
@@ -104,13 +104,13 @@
 			var m = n("./src/reddit/actions/snoovatarModal.ts"),
 				p = n("./src/reddit/components/Crypto/CryptoComponentsConfigProvider.tsx"),
 				E = n("./src/reddit/helpers/avatarRouting.ts"),
-				v = n("./src/reddit/selectors/activeModal.ts"),
-				_ = n("./src/reddit/selectors/user.ts"),
+				_ = n("./src/reddit/selectors/activeModal.ts"),
+				v = n("./src/reddit/selectors/user.ts"),
 				O = n("./src/reddit/components/Econ/Marketplace/ClaimModal/index.m.less"),
-				C = n.n(O);
+				f = n.n(O);
 
-			function f() {
-				return (f = Object.assign || function(e) {
+			function C() {
+				return (C = Object.assign || function(e) {
 					for (var t = 1; t < arguments.length; t++) {
 						var n = arguments[t];
 						for (var r in n) Object.prototype.hasOwnProperty.call(n, r) && (e[r] = n[r])
@@ -122,15 +122,15 @@
 					let {
 						onClose: t
 					} = e;
-					const n = Object(s.e)(_.Cb),
+					const n = Object(s.e)(v.Cb),
 						r = Object(s.e)(e => {
 							var t;
-							return null === (t = Object(v.a)(e)) || void 0 === t ? void 0 : t.claimId
+							return null === (t = Object(_.a)(e)) || void 0 === t ? void 0 : t.claimId
 						}),
 						a = Object(s.d)();
 					if (!n || !r) return null;
 					return o.a.createElement("div", {
-						className: C.a.container
+						className: f.a.container
 					}, o.a.createElement(p.a, null, o.a.createElement(c.b, {
 						onClose: t,
 						userId: n,
@@ -162,26 +162,31 @@
 						}
 					})))
 				},
-				M = Object(r.a)(b);
-			t.default = e => o.a.createElement(M, f({
+				A = Object(r.a)(b);
+			t.default = e => o.a.createElement(A, C({
 				withOverlay: !0,
 				onOverlayClick: e.onClose,
-				className: C.a.modal
+				className: f.a.modal
 			}, e))
 		},
 		"./src/reddit/helpers/avatarRouting.ts": function(e, t, n) {
 			"use strict";
-			var r, a;
+			var r, a, o;
 			n.d(t, "a", (function() {
 					return a
+				})), n.d(t, "b", (function() {
+					return o
 				})),
 				function(e) {
 					e.BODY = "body", e.EYES = "eyes", e.HAIR = "hair", e.EXPRESSION = "expression", e.FACIAL_HAIR = "facial hair"
 				}(r || (r = {})),
 				function(e) {
 					e.SHOP = "shop", e.EXPLORE = "explore", e.STYLE = "style", e.ME = "me", e.NFT = "nft"
-				}(a || (a = {}))
+				}(a || (a = {})),
+				function(e) {
+					e.FEATURED = "featured", e.POPULAR = "popular", e.GALLERY = "gallery", e.ARTISTS = "artists", e.ARTIST_PAGE = "artist_page"
+				}(o || (o = {}))
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/MarketplaceClaimModal.881e112e9926c0859a19.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/MarketplaceClaimModal.30d6f40b549b898689d8.js.map

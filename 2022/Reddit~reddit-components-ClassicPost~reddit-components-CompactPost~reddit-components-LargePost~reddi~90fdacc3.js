@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddi~90fdacc3.6603ed99a71b7beb8029.js
-// Retrieved at 6/13/2022, 10:50:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddi~90fdacc3.b18afbb47e548eb5a6b4.js
+// Retrieved at 6/13/2022, 11:20:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddi~90fdacc3"], {
 		"./src/lib/constants/specialMembership.ts": function(e, t, n) {
@@ -457,14 +457,16 @@
 						source: l,
 						activeTab: m,
 						activeMeSubpage: p,
-						activeDetails: b
-					} = e, f = n();
-					o && Object(d.a)(Object(c.g)(o)(f)), Object(a.Q)(f) ? await t(Object(s.h)(i.a.SNOOVATAR_MODAL, {
+						activeDetails: b,
+						shopTabState: f
+					} = e, _ = n();
+					o && Object(d.a)(Object(c.g)(o)(_)), Object(a.Q)(_) ? await t(Object(s.h)(i.a.SNOOVATAR_MODAL, {
 						share: u,
 						source: l,
 						activeTab: m,
 						activeMeSubpage: p,
-						activeDetails: b
+						activeDetails: b,
+						shopTabState: f
 					})) : await t(Object(r.i)())
 				}
 			}
@@ -600,9 +602,9 @@
 				x = n("./src/reddit/components/FlairWrapper/index.tsx"),
 				A = n("./node_modules/fbt/lib/FbtPublic.js"),
 				N = n("./src/lib/prettyPrintNumber/index.ts"),
-				I = n("./src/reddit/components/Poll/PollExpiry/index.tsx"),
-				T = n("./src/reddit/components/Poll/PostTitleMetaData/index.m.less"),
-				D = n.n(T),
+				T = n("./src/reddit/components/Poll/PollExpiry/index.tsx"),
+				I = n("./src/reddit/components/Poll/PostTitleMetaData/index.m.less"),
+				D = n.n(I),
 				k = n("./src/reddit/hooks/useIsRemovedOrDeletedPost.ts");
 			const P = Object(a.c)({
 				poll: (e, t) => e.polls.models[t.pollId],
@@ -620,7 +622,7 @@
 						_1: "{count} vote"
 					}, [A.fbt._param("count", Object(N.a)(r)), A.fbt._plural(parseInt(r))], {
 						hk: "4rP1VK"
-					})), t && o.a.createElement(I.a, {
+					})), t && o.a.createElement(T.a, {
 						className: D.a.proposalExpiry,
 						poll: t
 					}))
@@ -1275,9 +1277,9 @@
 			})), n.d(t, "u", (function() {
 				return N
 			})), n.d(t, "a", (function() {
-				return I
-			})), n.d(t, "s", (function() {
 				return T
+			})), n.d(t, "s", (function() {
+				return I
 			})), n.d(t, "v", (function() {
 				return D
 			})), n.d(t, "w", (function() {
@@ -1440,13 +1442,13 @@
 					...o(e),
 					scheduledPost: i(t)
 				}),
-				I = () => e => ({
+				T = () => e => ({
 					source: "recurring_post_composer",
 					action: "click",
 					noun: "cancel",
 					...o(e)
 				}),
-				T = () => (e, t) => ({
+				I = () => (e, t) => ({
 					source: "recurring_post_composer",
 					action: "click",
 					noun: "delete",
@@ -1511,7 +1513,7 @@
 			})), n.d(t, "a", (function() {
 				return N
 			})), n.d(t, "o", (function() {
-				return I
+				return T
 			}));
 			var r = n("./src/reddit/models/Gold/ProductOffer.ts"),
 				s = n("./src/reddit/selectors/avatarMarketing.ts"),
@@ -1636,7 +1638,7 @@
 					snoovatar: o.eb(r)
 				}),
 				N = e => A("onboarding", "click", e),
-				I = () => A("avatar", "view", "onboarding")
+				T = () => A("avatar", "view", "onboarding")
 		},
 		"./src/reddit/hooks/useIsRemovedOrDeletedPost.ts": function(e, t, n) {
 			"use strict";
@@ -2631,4 +2633,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddi~90fdacc3.6603ed99a71b7beb8029.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddi~90fdacc3.b18afbb47e548eb5a6b4.js.map

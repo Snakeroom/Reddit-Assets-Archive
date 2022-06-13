@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-SidebarNativeAd.50f620052c6436ef72ce.js
-// Retrieved at 6/13/2022, 10:00:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-SidebarNativeAd.4b5ea4b8821409331e1b.js
+// Retrieved at 6/13/2022, 11:20:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-SidebarNativeAd"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -964,14 +964,16 @@
 						source: u,
 						activeTab: m,
 						activeMeSubpage: p,
-						activeDetails: f
-					} = e, h = n();
-					s && Object(d.a)(Object(i.g)(s)(h)), Object(c.Q)(h) ? await t(Object(o.h)(a.a.SNOOVATAR_MODAL, {
+						activeDetails: f,
+						shopTabState: h
+					} = e, b = n();
+					s && Object(d.a)(Object(i.g)(s)(b)), Object(c.Q)(b) ? await t(Object(o.h)(a.a.SNOOVATAR_MODAL, {
 						share: l,
 						source: u,
 						activeTab: m,
 						activeMeSubpage: p,
-						activeDetails: f
+						activeDetails: f,
+						shopTabState: h
 					})) : await t(Object(r.i)())
 				}
 			}
@@ -1151,9 +1153,9 @@
 			})), n.d(t, "u", (function() {
 				return T
 			})), n.d(t, "r", (function() {
-				return M
-			})), n.d(t, "a", (function() {
 				return S
+			})), n.d(t, "a", (function() {
+				return M
 			})), n.d(t, "s", (function() {
 				return P
 			})), n.d(t, "c", (function() {
@@ -1195,8 +1197,8 @@
 				C = o.a.div("ModalMain", u.a),
 				E = o.a.textarea("TextArea", u.a),
 				T = o.a.wrapped(i.l, "WarningButton", u.a),
-				M = o.a.wrapped(i.l, "PrimaryButton", u.a),
-				S = o.a.wrapped(i.o, "CancelButton", u.a),
+				S = o.a.wrapped(i.l, "PrimaryButton", u.a),
+				M = o.a.wrapped(i.o, "CancelButton", u.a),
 				P = o.a.wrapped(i.r, "RemoveButton", u.a),
 				A = e => {
 					let {
@@ -1460,8 +1462,8 @@
 				C = n("./node_modules/fbt/lib/FbtPublic.js"),
 				E = n("./src/lib/prettyPrintNumber/index.ts"),
 				T = n("./src/reddit/components/Poll/PollExpiry/index.tsx"),
-				M = n("./src/reddit/components/Poll/PostTitleMetaData/index.m.less"),
-				S = n.n(M),
+				S = n("./src/reddit/components/Poll/PostTitleMetaData/index.m.less"),
+				M = n.n(S),
 				P = n("./src/reddit/hooks/useIsRemovedOrDeletedPost.ts");
 			const A = Object(c.c)({
 				poll: (e, t) => e.polls.models[t.pollId],
@@ -1473,14 +1475,14 @@
 						resultsByVoters: n
 					} = e, r = n ? n.totalVotes : "0";
 					return Object(P.a)() ? null : s.a.createElement("div", {
-						className: Object(l.a)(e.className, S.a.proposalMetaData)
+						className: Object(l.a)(e.className, M.a.proposalMetaData)
 					}, s.a.createElement("span", null, C.fbt._({
 						"*": "{count} votes",
 						_1: "{count} vote"
 					}, [C.fbt._param("count", Object(E.a)(r)), C.fbt._plural(parseInt(r))], {
 						hk: "4rP1VK"
 					})), t && s.a.createElement(T.a, {
-						className: S.a.proposalExpiry,
+						className: M.a.proposalExpiry,
 						poll: t
 					}))
 				})),
@@ -1878,9 +1880,9 @@
 				C = n("./src/reddit/models/Theme/index.ts"),
 				E = n("./src/reddit/models/Theme/NewColorSystem/index.ts"),
 				T = n("./src/lib/constants/index.ts"),
-				M = n("./src/reddit/models/Media/index.ts"),
-				S = n("./src/reddit/components/NativeBannerAd/index.m.less"),
-				P = n.n(S);
+				S = n("./src/reddit/models/Media/index.ts"),
+				M = n("./src/reddit/components/NativeBannerAd/index.m.less"),
+				P = n.n(M);
 			const A = m.a.wrapped(e => s.a.createElement("img", {
 				className: e.className,
 				src: e.src
@@ -1891,7 +1893,7 @@
 						post: e
 					} = this.props;
 					if (!e.media) return null;
-					const t = !e.media || Object(M.N)(e.media) || Object(M.G)(e.media) || Object(M.H)(e.media) ? "" : e.media.content,
+					const t = !e.media || Object(S.N)(e.media) || Object(S.G)(e.media) || Object(S.H)(e.media) ? "" : e.media.content,
 						{
 							type: n
 						} = e.media;
@@ -2313,9 +2315,9 @@
 			})), n.d(t, "triggerAnonymousEvent", (function() {
 				return T
 			})), n.d(t, "clickMessageInputEvent", (function() {
-				return M
-			})), n.d(t, "typeMessageInputEvent", (function() {
 				return S
+			})), n.d(t, "typeMessageInputEvent", (function() {
+				return M
 			})), n.d(t, "clickLearnMoreLinkEvent", (function() {
 				return P
 			})), n.d(t, "clickQuestionMarkEvent", (function() {
@@ -2442,13 +2444,13 @@
 					action: e,
 					noun: "anonymous"
 				}),
-				M = e => t => ({
+				S = e => t => ({
 					...u(t, e),
 					source: "give_gold",
 					action: "click",
 					noun: "message_input"
 				}),
-				S = e => t => ({
+				M = e => t => ({
 					...u(t, e),
 					source: "give_gold",
 					action: "type",
@@ -3754,7 +3756,7 @@
 					pending: C
 				});
 			const T = {};
-			var M = function() {
+			var S = function() {
 				let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : T,
 					t = arguments.length > 1 ? arguments[1] : void 0;
 				switch (t.type) {
@@ -3772,9 +3774,9 @@
 						return e
 				}
 			};
-			const S = {};
+			const M = {};
 			var P = function() {
-				let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : S,
+				let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : M,
 					t = arguments.length > 1 ? arguments[1] : void 0;
 				switch (t.type) {
 					case o.m: {
@@ -3820,7 +3822,7 @@
 				},
 				R = Object(r.c)({
 					api: E,
-					fetchedTokens: M,
+					fetchedTokens: S,
 					loadMore: P,
 					models: N
 				}),
@@ -4327,9 +4329,9 @@
 					error: Ce,
 					pending: Ee
 				});
-			const Me = {};
-			var Se = function() {
-				let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : Me,
+			const Se = {};
+			var Me = function() {
+				let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : Se,
 					t = arguments.length > 1 ? arguments[1] : void 0;
 				switch (t.type) {
 					case o.E: {
@@ -4404,7 +4406,7 @@
 				},
 				Ne = Object(r.c)({
 					api: Te,
-					models: Se,
+					models: Me,
 					userOrder: Ae
 				});
 			const Re = {};
@@ -4941,13 +4943,13 @@
 							return e
 					}
 				},
-				Mt = Object(r.c)({
+				St = Object(r.c)({
 					after: jt,
 					data: Ct,
 					loaded: Et,
 					pending: Tt
 				});
-			var St = function() {
+			var Mt = function() {
 				let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : null,
 					t = arguments.length > 1 ? arguments[1] : void 0;
 				switch (t.type) {
@@ -4974,7 +4976,7 @@
 					}
 				},
 				At = Object(r.c)({
-					error: St,
+					error: Mt,
 					pending: Pt
 				});
 			const Nt = {};
@@ -5274,7 +5276,7 @@
 				ln = Object(r.c)({
 					bulkAction: ht,
 					edited: xt,
-					moderatedCommunitiesOrder: Mt,
+					moderatedCommunitiesOrder: St,
 					modqueue: Dt,
 					reports: zt,
 					spam: en,
@@ -5490,7 +5492,7 @@
 							return e
 					}
 				},
-				Mn = Object(r.c)({
+				Sn = Object(r.c)({
 					api: fn,
 					fetchedTokens: bn,
 					inContext: gn,
@@ -5506,7 +5508,7 @@
 				moderationLog: be,
 				moderators: ot,
 				modQueue: ln,
-				muted: Mn
+				muted: Sn
 			})
 		},
 		"./src/reddit/selectors/authorFlair.ts": function(e, t, n) {
@@ -5789,7 +5791,7 @@
 			})), n.d(t, "e", (function() {
 				return T
 			})), n.d(t, "d", (function() {
-				return M
+				return S
 			}));
 			var r = n("./src/reddit/selectors/gold/purchaseCatalog.ts"),
 				o = n("./src/lib/initializeClient/installReducer.ts"),
@@ -5827,7 +5829,7 @@
 				C = e => e.features.goldPurchase.payment.stripeToken.errorMessage,
 				E = e => e.features.goldPurchase.payment.stripeToken.pending,
 				T = e => e.features.goldPurchase.payment.paypal.passthrough,
-				M = e => e.features.goldPurchase.payment.paypal.errorMessage
+				S = e => e.features.goldPurchase.payment.paypal.errorMessage
 		},
 		"./src/reddit/selectors/removedPosts.ts": function(e, t, n) {
 			"use strict";
@@ -5894,4 +5896,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-SidebarNativeAd.50f620052c6436ef72ce.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-SidebarNativeAd.4b5ea4b8821409331e1b.js.map
