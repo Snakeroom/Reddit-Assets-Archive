@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PowerupsGifsTooltip.3ae574cdc65c6db8952e.js
-// Retrieved at 6/1/2022, 6:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PowerupsGifsTooltip.5136c009f3809225767f.js
+// Retrieved at 6/13/2022, 10:50:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PowerupsGifsTooltip"], {
 		"./src/reddit/components/RichTextEditor/media/GifTooltip/BaseTooltip.m.less": function(e, t, s) {
@@ -191,8 +191,8 @@
 				M = s("./src/reddit/controls/Button/index.tsx"),
 				L = s("./src/reddit/icons/fonts/index.tsx"),
 				q = s("./src/reddit/components/RichTextEditor/media/GifTooltip/GifTooltipBody.m.less"),
-				F = s.n(q);
-			const V = 4,
+				V = s.n(q);
+			const F = 4,
 				H = r()((function() {
 					const e = Object(b.a)("https://api.giphy.com/v1/gifs/trending", {
 						api_key: g.a.giphyApiKey,
@@ -297,7 +297,7 @@
 						if ("gif" !== e.type || "r" === e.rating || "pg-13" === e.rating) return;
 						const i = this.getSimplifiedResult(e),
 							o = s.reduce((e, t, i) => t < s[e] ? i : e, 0);
-						t[o].push(i), s[o] += i.fixedWidthHeight + V
+						t[o].push(i), s[o] += i.fixedWidthHeight + F
 					});
 					const i = e.pagination.offset + e.pagination.count;
 					this.setState({
@@ -327,23 +327,23 @@
 						showReload: s
 					} = this.state;
 					return l.a.createElement("div", {
-						className: F.a.tooltip
+						className: V.a.tooltip
 					}, l.a.createElement("div", {
-						className: F.a.header
+						className: V.a.header
 					}, l.a.createElement("div", {
-						className: F.a.searchLine
+						className: V.a.searchLine
 					}, l.a.createElement(U, {
 						autofocus: this.props.autofocus,
 						onChange: this.onQueryChange,
-						className: F.a.searchBox
+						className: V.a.searchBox
 					}), l.a.createElement(T.a, {
-						className: F.a.closeIcon,
+						className: V.a.closeIcon,
 						onClick: () => this.props.onClose(!0)
 					}))), l.a.createElement("div", {
-						className: F.a.body,
+						className: V.a.body,
 						onScroll: this.onScroll
 					}, s ? l.a.createElement("div", {
-						className: F.a.reloadContainer
+						className: V.a.reloadContainer
 					}, l.a.createElement(M.t, {
 						priority: M.c.Plain,
 						size: M.d.XS,
@@ -356,14 +356,14 @@
 						onClick: this.reloadGifs,
 						Icon: Object(L.b)(A.a.refresh)
 					})) : l.a.createElement(l.a.Fragment, null, l.a.createElement("div", {
-						className: Object(o.a)(F.a.results, {
-							[F.a.disabled]: this.props.disabled
+						className: Object(o.a)(V.a.results, {
+							[V.a.disabled]: this.props.disabled
 						})
 					}, e.map((e, t) => l.a.createElement("div", {
-						className: F.a.column,
+						className: V.a.column,
 						key: t
 					}, e.map(e => l.a.createElement("button", {
-						className: F.a.gifResult,
+						className: V.a.gifResult,
 						key: e.url,
 						onClick: () => this.onResultClick(e),
 						style: {
@@ -371,15 +371,15 @@
 						},
 						disabled: this.props.disabled
 					}, l.a.createElement("img", {
-						className: F.a.gifResultImage,
+						className: V.a.gifResultImage,
 						src: e.url
 					})))))), t && l.a.createElement("div", {
-						className: F.a.loadingSpinner
+						className: V.a.loadingSpinner
 					}, l.a.createElement(f.a, {
 						sizePx: 20,
 						center: !0
 					})), this.props.children), l.a.createElement("div", {
-						className: F.a.whiteScrim
+						className: V.a.whiteScrim
 					})))
 				}
 			}
@@ -427,7 +427,7 @@
 					s = Object(n.d)(),
 					[u, g] = Object(i.useState)(!1),
 					b = () => {
-						t(Object(d.F)()), s(Object(r.g)("gif_picker"))
+						t(Object(d.z)()), s(Object(r.g)("gif_picker"))
 					};
 				return o.a.createElement(h.a, {
 					editorState: e.editorState,
@@ -507,4 +507,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PowerupsGifsTooltip.3ae574cdc65c6db8952e.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PowerupsGifsTooltip.5136c009f3809225767f.js.map

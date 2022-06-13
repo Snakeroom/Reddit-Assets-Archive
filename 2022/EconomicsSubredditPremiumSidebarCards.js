@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/EconomicsSubredditPremiumSidebarCards.3653e89fac3423c51f2e.js
-// Retrieved at 6/8/2022, 12:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/EconomicsSubredditPremiumSidebarCards.a6771bdeccfcd175dd91.js
+// Retrieved at 6/13/2022, 10:50:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["EconomicsSubredditPremiumSidebarCards"], {
 		"./node_modules/lodash/_arrayShuffle.js": function(e, t, s) {
@@ -3629,7 +3629,7 @@
 					return !!s && s.hasGifProduct
 				},
 				W = (e, t, s) => {
-					if (Object(h.r)(e, {
+					if (Object(h.p)(e, {
 							subredditId: t
 						})) return !0;
 					const r = "replyToPost" !== s && Object(b.b)(e, {
@@ -3644,7 +3644,7 @@
 					if (!Object(f.b)(e, {
 							subredditId: t
 						})) return !1;
-					if (Object(h.s)(e, {
+					if (Object(h.q)(e, {
 							subredditId: t
 						})) return !0;
 					const n = "replyToPost" !== s && Object(b.b)(e, {
@@ -3697,4 +3697,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EconomicsSubredditPremiumSidebarCards.3653e89fac3423c51f2e.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EconomicsSubredditPremiumSidebarCards.a6771bdeccfcd175dd91.js.map

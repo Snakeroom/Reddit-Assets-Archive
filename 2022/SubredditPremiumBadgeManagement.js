@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditPremiumBadgeManagement.28110703443cdf74b227.js
-// Retrieved at 6/8/2022, 12:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditPremiumBadgeManagement.d7bf2af7d44ab5e3a124.js
+// Retrieved at 6/13/2022, 10:50:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditPremiumBadgeManagement"], {
 		"./node_modules/lodash/_LazyWrapper.js": function(e, t, s) {
@@ -3547,7 +3547,7 @@
 					return !!s && s.hasGifProduct
 				},
 				W = (e, t, s) => {
-					if (Object(g.r)(e, {
+					if (Object(g.p)(e, {
 							subredditId: t
 						})) return !0;
 					const n = "replyToPost" !== s && Object(p.b)(e, {
@@ -3562,7 +3562,7 @@
 					if (!Object(h.b)(e, {
 							subredditId: t
 						})) return !1;
-					if (Object(g.s)(e, {
+					if (Object(g.q)(e, {
 							subredditId: t
 						})) return !0;
 					const a = "replyToPost" !== s && Object(p.b)(e, {
@@ -3615,4 +3615,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditPremiumBadgeManagement.28110703443cdf74b227.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditPremiumBadgeManagement.d7bf2af7d44ab5e3a124.js.map

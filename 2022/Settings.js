@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Settings.6c8a5e5c7dac30abd129.js
-// Retrieved at 6/13/2022, 10:00:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Settings.ca549ab80843baa5ab56.js
+// Retrieved at 6/13/2022, 10:50:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Settings"], {
 		"./node_modules/moment/locale sync recursive ^\\.\\/.*$": function(e, t, n) {
@@ -6255,7 +6255,7 @@
 			var V = n("./src/reddit/components/Settings/Powerups/index.m.less"),
 				K = n.n(V);
 			const Z = Object(k.c)({
-				allocationByKey: I.y
+				allocationByKey: I.w
 			});
 			var X = Object(c.b)(Z)((function(e) {
 					const {
@@ -13524,7 +13524,7 @@
 						return Object(re.c)(e, {
 							experimentName: se.Kc,
 							experimentEligibilitySelector: re.a
-						}) === se.sd
+						}) === se.rd
 					}
 				}),
 				ho = Object(ge.u)(),
@@ -14015,7 +14015,7 @@
 					return !!n && n.hasGifProduct
 				},
 				W = (e, t, n) => {
-					if (Object(h.r)(e, {
+					if (Object(h.p)(e, {
 							subredditId: t
 						})) return !0;
 					const s = "replyToPost" !== n && Object(p.b)(e, {
@@ -14030,7 +14030,7 @@
 					if (!Object(f.b)(e, {
 							subredditId: t
 						})) return !1;
-					if (Object(h.s)(e, {
+					if (Object(h.q)(e, {
 							subredditId: t
 						})) return !0;
 					const r = "replyToPost" !== n && Object(p.b)(e, {
@@ -14060,7 +14060,7 @@
 			const o = e => Object(r.c)(e, {
 				experimentName: s.G,
 				experimentEligibilitySelector: () => Object(a.P)(e)
-			}) === s.sd
+			}) === s.rd
 		},
 		"./src/reddit/selectors/experiments/econ/marketplace.ts": function(e, t, n) {
 			"use strict";
@@ -14074,13 +14074,13 @@
 			const a = e => {
 					return !(Object(r.c)(e, {
 						experimentEligibilitySelector: r.a,
-						experimentName: s.Zd
-					}) === s.sd)
+						experimentName: s.Yd
+					}) === s.rd)
 				},
 				o = e => Object(r.c)(e, {
 					experimentEligibilitySelector: r.a,
-					experimentName: s.ae
-				}) === s.sd
+					experimentName: s.Zd
+				}) === s.rd
 		},
 		"./src/reddit/selectors/gold/productOffers.ts": function(e, t, n) {
 			"use strict";
@@ -14250,4 +14250,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Settings.6c8a5e5c7dac30abd129.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Settings.ca549ab80843baa5ab56.js.map

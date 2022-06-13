@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Powerups.6764eb4e4b24fe97c933.js
-// Retrieved at 6/2/2022, 9:50:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Powerups.2b8585e3478164cea24d.js
+// Retrieved at 6/13/2022, 10:50:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Powerups"], {
 		"./node_modules/lodash/_arraySampleSize.js": function(e, t, a) {
@@ -606,7 +606,7 @@
 					onClick: a,
 					disabled: n
 				} = e;
-				const c = Object(r.e)(l.w);
+				const c = Object(r.e)(l.u);
 				return s.a.createElement(o.t, {
 					priority: o.c.Primary,
 					className: t,
@@ -1784,7 +1784,7 @@
 					} = e;
 					var a;
 					const o = Object(w.a)(),
-						i = Object(r.e)(I.u),
+						i = Object(r.e)(I.s),
 						[_, k] = Object(n.useState)((null === (a = i[0]) || void 0 === a ? void 0 : a.displayText) || "");
 					Object(f.a)(m.a);
 					const v = i.length ? B._("{=Come together to unlock special perks and advanced features.}", [B._param("=Come together to unlock special perks and advanced features.", s.a.createElement("div", null, B._("Come together to unlock special perks and advanced features.", null, {
@@ -2352,4 +2352,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Powerups.6764eb4e4b24fe97c933.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Powerups.2b8585e3478164cea24d.js.map

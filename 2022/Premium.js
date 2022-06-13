@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Premium.424c1dad484849cb697d.js
-// Retrieved at 6/13/2022, 9:30:03 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Premium.5ca2bbab9369f5814efd.js
+// Retrieved at 6/13/2022, 10:50:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Premium"], {
 		"./src/reddit/endpoints/gold/productCatalog/old.index.ts": function(e, r, t) {
@@ -210,76 +210,73 @@
 			"use strict";
 			t.d(r, "g", (function() {
 				return a
-			})), t.d(r, "n", (function() {
-				return s
-			})), t.d(r, "p", (function() {
-				return i
 			})), t.d(r, "m", (function() {
-				return o
+				return s
+			})), t.d(r, "o", (function() {
+				return i
 			})), t.d(r, "l", (function() {
+				return o
+			})), t.d(r, "k", (function() {
 				return c
-			})), t.d(r, "r", (function() {
-				return u
 			})), t.d(r, "q", (function() {
+				return u
+			})), t.d(r, "p", (function() {
 				return l
-			})), t.d(r, "i", (function() {
-				return f
 			})), t.d(r, "h", (function() {
-				return p
+				return f
 			})), t.d(r, "e", (function() {
-				return m
+				return p
 			})), t.d(r, "d", (function() {
-				return b
+				return m
 			})), t.d(r, "b", (function() {
-				return g
+				return b
 			})), t.d(r, "c", (function() {
-				return h
+				return g
 			})), t.d(r, "f", (function() {
-				return O
+				return h
 			})), t.d(r, "a", (function() {
+				return O
+			})), t.d(r, "i", (function() {
 				return j
 			})), t.d(r, "j", (function() {
 				return P
-			})), t.d(r, "k", (function() {
+			})), t.d(r, "n", (function() {
 				return y
-			})), t.d(r, "o", (function() {
+			})), t.d(r, "r", (function() {
 				return _
 			})), t.d(r, "s", (function() {
 				return x
-			})), t.d(r, "t", (function() {
-				return v
-			})), t.d(r, "v", (function() {
-				return k
 			})), t.d(r, "u", (function() {
+				return v
+			})), t.d(r, "t", (function() {
+				return k
+			})), t.d(r, "v", (function() {
 				return C
-			})), t.d(r, "w", (function() {
-				return I
 			}));
 			var n = t("./src/reddit/constants/experiments.ts"),
 				d = t("./src/reddit/selectors/experiments/econ/simpleExperiment.ts");
-			const a = Object(d.a)(n.gd),
-				s = Object(d.a)(n.ed),
-				i = Object(d.a)(n.hd),
-				o = Object(d.a)(n.dd),
-				c = Object(d.a)(n.cd),
-				u = Object(d.a)(n.jd),
-				l = Object(d.a)(n.id),
-				f = Object(d.a)(n.Zc),
-				p = Object(d.a)(n.Xc),
-				m = Object(d.a)(n.Rc),
-				b = Object(d.a)(n.Sc),
-				g = Object(d.a)(n.Pc),
-				h = Object(d.a)(n.Qc),
-				O = Object(d.a)(n.Uc),
-				j = Object(d.a)(n.Oc),
+			const a = Object(d.a)(n.fd),
+				s = Object(d.a)(n.dd),
+				i = Object(d.a)(n.gd),
+				o = Object(d.a)(n.cd),
+				c = Object(d.a)(n.bd),
+				u = Object(d.a)(n.id),
+				l = Object(d.a)(n.hd),
+				f = Object(d.a)(n.Yc),
+				p = Object(d.a)(n.Rc),
+				m = Object(d.a)(n.Sc),
+				b = Object(d.a)(n.Pc),
+				g = Object(d.a)(n.Qc),
+				h = Object(d.a)(n.Uc),
+				O = Object(d.a)(n.Oc),
+				j = Object(d.a)(n.Zc),
 				P = Object(d.a)(n.ad),
-				y = Object(d.a)(n.bd),
-				_ = Object(d.a)(n.fd),
-				x = Object(d.a)(n.kd),
-				v = Object(d.a)(n.md),
-				k = Object(d.a)(n.pd),
-				C = Object(d.a)(n.od),
-				I = Object(d.a)(n.nd)
+				y = Object(d.a)(n.ed),
+				_ = Object(d.a)(n.jd),
+				x = Object(d.a)(n.ld),
+				v = Object(d.a)(n.od),
+				k = Object(d.a)(n.nd),
+				C = Object(d.a)(n.md)
 		},
 		"./src/reddit/selectors/goldPurchaseModals.ts": function(e, r, t) {
 			"use strict";
@@ -383,4 +380,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Premium.424c1dad484849cb697d.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Premium.5ca2bbab9369f5814efd.js.map

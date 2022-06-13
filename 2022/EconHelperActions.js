@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/EconHelperActions.aac07e8f53ab4fa62269.js
-// Retrieved at 6/8/2022, 12:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/EconHelperActions.5e11954ce3a12eeff277.js
+// Retrieved at 6/13/2022, 10:50:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["EconHelperActions"], {
 		"./node_modules/lodash/_LazyWrapper.js": function(e, t, r) {
@@ -1922,7 +1922,7 @@
 			})), r.d(t, "g", (function() {
 				return V
 			})), r.d(t, "m", (function() {
-				return Y
+				return q
 			}));
 			r("./node_modules/core-js/modules/web.dom.iterable.js");
 			var n = r("./src/reddit/featureFlags/index.ts"),
@@ -2136,7 +2136,7 @@
 					return !!r && r.hasGifProduct
 				},
 				H = (e, t, r) => {
-					if (Object(b.r)(e, {
+					if (Object(b.p)(e, {
 							subredditId: t
 						})) return !0;
 					const n = "replyToPost" !== r && Object(_.b)(e, {
@@ -2151,7 +2151,7 @@
 					if (!Object(f.b)(e, {
 							subredditId: t
 						})) return !1;
-					if (Object(b.s)(e, {
+					if (Object(b.q)(e, {
 							subredditId: t
 						})) return !0;
 					const s = "replyToPost" !== r && Object(_.b)(e, {
@@ -2168,7 +2168,7 @@
 						if (n && n.data) return !!n.data[r]
 					}
 				},
-				Y = e => e.economics.pointsCopy.data
+				q = e => e.economics.pointsCopy.data
 		},
 		"./src/reddit/selectors/products.ts": function(e, t, r) {
 			"use strict";
@@ -2204,4 +2204,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EconHelperActions.aac07e8f53ab4fa62269.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EconHelperActions.5e11954ce3a12eeff277.js.map

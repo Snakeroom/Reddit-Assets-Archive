@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CommunityPointsLearnMore.85c56d786457b4e0e6d4.js
-// Retrieved at 6/8/2022, 12:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CommunityPointsLearnMore.c4bb580f1e51aee34a11.js
+// Retrieved at 6/13/2022, 10:50:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CommunityPointsLearnMore"], {
 		"./src/reddit/components/Econ/Common/ModalCloseButton/index.m.less": function(e, t, o) {
@@ -2622,7 +2622,7 @@
 					return !!o && o.hasGifProduct
 				},
 				L = (e, t, o) => {
-					if (Object(y.r)(e, {
+					if (Object(y.p)(e, {
 							subredditId: t
 						})) return !0;
 					const n = "replyToPost" !== o && Object(h.b)(e, {
@@ -2637,7 +2637,7 @@
 					if (!Object(b.b)(e, {
 							subredditId: t
 						})) return !1;
-					if (Object(y.s)(e, {
+					if (Object(y.q)(e, {
 							subredditId: t
 						})) return !0;
 					const a = "replyToPost" !== o && Object(h.b)(e, {
@@ -2658,4 +2658,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommunityPointsLearnMore.85c56d786457b4e0e6d4.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommunityPointsLearnMore.c4bb580f1e51aee34a11.js.map

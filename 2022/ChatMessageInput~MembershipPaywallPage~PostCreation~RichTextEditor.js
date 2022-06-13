@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ChatMessageInput~MembershipPaywallPage~PostCreation~RichTextEditor.8e3396fdeaf6acddf4d7.js
-// Retrieved at 6/8/2022, 11:40:06 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ChatMessageInput~MembershipPaywallPage~PostCreation~RichTextEditor.3eca55c883ec52e056ae.js
+// Retrieved at 6/13/2022, 10:50:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ChatMessageInput~MembershipPaywallPage~PostCreation~RichTextEditor"], {
 		"./node_modules/draft-js/dist/Draft.css": function(e, t, n) {},
@@ -4613,7 +4613,7 @@
 				} = e, n = t.id, o = Object(h.e)(e => Object(_o.b)(e, {
 					subredditId: n
 				}));
-				return Object(h.e)(e => Object(Ro.h)(e, {
+				return Object(h.e)(e => Object(Ro.g)(e, {
 					subredditId: n
 				})) ? p.a.createElement(wo.a, e) : p.a.createElement(p.a.Fragment, null, o && p.a.createElement(Io, e))
 			};
@@ -8202,19 +8202,19 @@
 				r = n("./src/reddit/selectors/economics.ts"),
 				i = n("./src/reddit/selectors/gold/powerups/index.ts"),
 				c = n("./src/reddit/selectors/gold/powerups/benefitSettings.ts");
-			const a = Object(o.a)(s.d.spEmotes, r.b, i.h, (e, t, n) => {
+			const a = Object(o.a)(s.d.spEmotes, r.b, i.g, (e, t, n) => {
 					if (n) return !0;
 					const o = !(!t || !Object.keys(t).length);
 					return e && o
 				}),
-				l = Object(o.a)(r.b, i.i, i.j, i.h, (e, t, n, o) => {
+				l = Object(o.a)(r.b, i.h, i.i, i.g, (e, t, n, o) => {
 					if (o) return [...t, ...n].slice(0, 3);
 					let s = [];
 					for (const r of e || [])
 						if ((s = [...s, ...Object.values(r.emotes)]).length > 3) break;
 					return s.slice(0, 3)
 				}),
-				d = Object(o.a)(s.d.spGiphy, i.h, c.b, (e, t, n) => e || t && n)
+				d = Object(o.a)(s.d.spGiphy, i.g, c.b, (e, t, n) => e || t && n)
 		},
 		"./src/reddit/selectors/products.ts": function(e, t, n) {
 			"use strict";
@@ -8253,4 +8253,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatMessageInput~MembershipPaywallPage~PostCreation~RichTextEditor.8e3396fdeaf6acddf4d7.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatMessageInput~MembershipPaywallPage~PostCreation~RichTextEditor.3eca55c883ec52e056ae.js.map

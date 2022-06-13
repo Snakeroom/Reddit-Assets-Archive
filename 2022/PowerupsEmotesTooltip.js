@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PowerupsEmotesTooltip.d435c0a534d1b82d1436.js
-// Retrieved at 6/1/2022, 6:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PowerupsEmotesTooltip.29e41d43cd355246f32b.js
+// Retrieved at 6/13/2022, 10:50:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PowerupsEmotesTooltip"], {
 		"./src/reddit/actions/economics/powerups/constants.ts": function(e, t, o) {
@@ -440,14 +440,14 @@
 					g = Object(r.a)(),
 					[O, R] = Object(s.useState)(null),
 					P = () => R(null),
-					[v, N] = Object(s.useState)(!1),
-					S = Object(u.e)(e => Object(w.v)(e, {
+					[N, v] = Object(s.useState)(!1),
+					S = Object(u.e)(e => Object(w.t)(e, {
 						subredditId: o
 					})),
-					U = Object(u.e)(e => Object(w.i)(e, {
+					U = Object(u.e)(e => Object(w.h)(e, {
 						subredditId: o
 					})),
-					y = Object(u.e)(e => Object(w.j)(e, {
+					y = Object(u.e)(e => Object(w.i)(e, {
 						subredditId: o
 					})),
 					{
@@ -470,7 +470,7 @@
 					}, e => {
 						g(Object(i.a)(e, "powerups"))
 					}, e => {
-						g(Object(i.A)(e, "powerups")), d(Object(b.f)({
+						g(Object(i.u)(e, "powerups")), d(Object(b.f)({
 							duration: 5e3,
 							kind: f.b.SuccessMod,
 							text: l.fbt._({
@@ -566,7 +566,7 @@
 				}))))), !c && n.a.createElement(_.t, {
 					className: C.a.unlockButton,
 					onClick: () => {
-						g(Object(i.E)()), d(Object(E.g)("emote_picker"))
+						g(Object(i.y)()), d(Object(E.g)("emote_picker"))
 					},
 					priority: _.c.Primary
 				}, l.fbt._("Unlock Emojis", null, {
@@ -576,8 +576,8 @@
 					onCancel: P,
 					onClose: P,
 					onConfirm: async () => {
-						if (O && !v) try {
-							N(!0), await d(Object(p.a)({
+						if (O && !N) try {
+							v(!0), await d(Object(p.a)({
 								subredditId: o,
 								emojiId: O.id
 							})), P(), g(Object(i.d)(1, "powerups")), d(Object(b.f)({
@@ -596,7 +596,7 @@
 								})
 							}))
 						} finally {
-							N(!1)
+							v(!1)
 						}
 					}
 				}))
@@ -604,7 +604,7 @@
 			var R = o("./src/reddit/components/RichTextEditor/emotes/Powerups/tooltip.m.less"),
 				P = o.n(R);
 			const {
-				fbt: v
+				fbt: N
 			} = o("./node_modules/fbt/lib/FbtPublic.js");
 			t.default = e => {
 				let {
@@ -627,9 +627,9 @@
 					onSetApi: l,
 					title: n.a.createElement(() => n.a.createElement(n.a.Fragment, null, n.a.createElement(a.a, {
 						className: P.a.headingPowerupsBolt
-					}), m ? v._("Unlocked with Powerups", null, {
+					}), m ? N._("Unlocked with Powerups", null, {
 						hk: "4am2RN"
-					}) : v._("Unlock with Powerups", null, {
+					}) : N._("Unlock with Powerups", null, {
 						hk: "Dbu9T"
 					})), null)
 				}, n.a.createElement("div", {
@@ -813,4 +813,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PowerupsEmotesTooltip.d435c0a534d1b82d1436.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PowerupsEmotesTooltip.29e41d43cd355246f32b.js.map
