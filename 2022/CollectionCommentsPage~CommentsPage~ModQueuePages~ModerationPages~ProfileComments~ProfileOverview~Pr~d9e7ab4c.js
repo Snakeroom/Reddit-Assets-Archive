@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ModQueuePages~ModerationPages~ProfileComments~ProfileOverview~Pr~d9e7ab4c.47ffe41314a9a663b2e5.js
-// Retrieved at 6/8/2022, 12:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ModQueuePages~ModerationPages~ProfileComments~ProfileOverview~Pr~d9e7ab4c.0c047b6b69cff1ad8e88.js
+// Retrieved at 6/13/2022, 9:30:03 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~ModQueuePages~ModerationPages~ProfileComments~ProfileOverview~Pr~d9e7ab4c"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -175,8 +175,8 @@
 						name: n(/^(.*)\/(.*) /),
 						version: o(/^(.*)\/(.*) /)
 					}, !r.msedge && /(apple)?webkit/i.test(t) ? (/(apple)?webkit\/537\.36/i.test(t) ? (r.name = r.name || "Blink", r.blink = e) : (r.name = r.name || "Webkit", r.webkit = e), !r.version && y && (r.version = y)) : !r.opera && /gecko\//i.test(t) && (r.name = r.name || "Gecko", r.gecko = e, r.version = r.version || n(/gecko\/(\d+(\.\d+)?)/i)), r.windowsphone || !i && !r.silk ? !r.windowsphone && s ? (r[s] = e, r.ios = e, r.osname = "iOS") : v ? (r.mac = e, r.osname = "macOS") : k ? (r.xbox = e, r.osname = "Xbox") : h ? (r.windows = e, r.osname = "Windows") : f && (r.linux = e, r.osname = "Linux") : (r.android = e, r.osname = "Android");
-					var I = "";
-					r.windows ? I = function(e) {
+					var O = "";
+					r.windows ? O = function(e) {
 						switch (e) {
 							case "NT":
 								return "NT";
@@ -201,9 +201,9 @@
 							default:
 								return
 						}
-					}(n(/Windows ((NT|XP)( \d\d?.\d)?)/i)) : r.windowsphone ? I = n(/windows phone (?:os)?\s?(\d+(\.\d+)*)/i) : r.mac ? I = (I = n(/Mac OS X (\d+([_\.\s]\d+)*)/i)).replace(/[_\s]/g, ".") : s ? I = (I = n(/os (\d+([_\s]\d+)*) like mac os x/i)).replace(/[_\s]/g, ".") : i ? I = n(/android[ \/-](\d+(\.\d+)*)/i) : r.webos ? I = n(/(?:web|hpw)os\/(\d+(\.\d+)*)/i) : r.blackberry ? I = n(/rim\stablet\sos\s(\d+(\.\d+)*)/i) : r.bada ? I = n(/bada\/(\d+(\.\d+)*)/i) : r.tizen && (I = n(/tizen[\/\s](\d+(\.\d+)*)/i)), I && (r.osversion = I);
-					var O = !r.windows && I.split(".")[0];
-					return _ || d || "ipad" == s || i && (3 == O || O >= 4 && !x) || r.silk ? r.tablet = e : (x || "iphone" == s || "ipod" == s || i || a || r.blackberry || r.webos || r.bada) && (r.mobile = e), r.msedge || r.msie && r.version >= 10 || r.yandexbrowser && r.version >= 15 || r.vivaldi && r.version >= 1 || r.chrome && r.version >= 20 || r.samsungBrowser && r.version >= 4 || r.firefox && r.version >= 20 || r.safari && r.version >= 6 || r.opera && r.version >= 10 || r.ios && r.osversion && r.osversion.split(".")[0] >= 6 || r.blackberry && r.version >= 10.1 || r.chromium && r.version >= 20 ? r.a = e : r.msie && r.version < 10 || r.chrome && r.version < 20 || r.firefox && r.version < 20 || r.safari && r.version < 6 || r.opera && r.version < 10 || r.ios && r.osversion && r.osversion.split(".")[0] < 6 || r.chromium && r.version < 20 ? r.c = e : r.x = e, r
+					}(n(/Windows ((NT|XP)( \d\d?.\d)?)/i)) : r.windowsphone ? O = n(/windows phone (?:os)?\s?(\d+(\.\d+)*)/i) : r.mac ? O = (O = n(/Mac OS X (\d+([_\.\s]\d+)*)/i)).replace(/[_\s]/g, ".") : s ? O = (O = n(/os (\d+([_\s]\d+)*) like mac os x/i)).replace(/[_\s]/g, ".") : i ? O = n(/android[ \/-](\d+(\.\d+)*)/i) : r.webos ? O = n(/(?:web|hpw)os\/(\d+(\.\d+)*)/i) : r.blackberry ? O = n(/rim\stablet\sos\s(\d+(\.\d+)*)/i) : r.bada ? O = n(/bada\/(\d+(\.\d+)*)/i) : r.tizen && (O = n(/tizen[\/\s](\d+(\.\d+)*)/i)), O && (r.osversion = O);
+					var I = !r.windows && O.split(".")[0];
+					return _ || d || "ipad" == s || i && (3 == I || I >= 4 && !x) || r.silk ? r.tablet = e : (x || "iphone" == s || "ipod" == s || i || a || r.blackberry || r.webos || r.bada) && (r.mobile = e), r.msedge || r.msie && r.version >= 10 || r.yandexbrowser && r.version >= 15 || r.vivaldi && r.version >= 1 || r.chrome && r.version >= 20 || r.samsungBrowser && r.version >= 4 || r.firefox && r.version >= 20 || r.safari && r.version >= 6 || r.opera && r.version >= 10 || r.ios && r.osversion && r.osversion.split(".")[0] >= 6 || r.blackberry && r.version >= 10.1 || r.chromium && r.version >= 20 ? r.a = e : r.msie && r.version < 10 || r.chrome && r.version < 20 || r.firefox && r.version < 20 || r.safari && r.version < 6 || r.opera && r.version < 10 || r.ios && r.osversion && r.osversion.split(".")[0] < 6 || r.chromium && r.version < 20 ? r.c = e : r.x = e, r
 				}
 				var n = t("undefined" != typeof navigator && navigator.userAgent || "");
 
@@ -548,9 +548,9 @@
 			})), n.d(t, "f", (function() {
 				return k
 			})), n.d(t, "a", (function() {
-				return I
-			})), n.d(t, "e", (function() {
 				return O
+			})), n.d(t, "e", (function() {
+				return I
 			})), n.d(t, "g", (function() {
 				return E
 			})), n.d(t, "h", (function() {
@@ -609,7 +609,7 @@
 							isLocked: i.isLocked
 						}
 					}))
-				}, k = Object(s.a)(g.H), I = e => async (t, n, r) => {
+				}, k = Object(s.a)(g.H), O = e => async (t, n, r) => {
 					let {
 						apiContext: s
 					} = r;
@@ -646,7 +646,7 @@
 							numReports: a.numReports || null
 						}
 					})), Object(d.d)())
-				}, O = (e, t) => async (n, r, s) => {
+				}, I = (e, t) => async (n, r, s) => {
 					let {
 						apiContext: i
 					} = s;
@@ -795,8 +795,8 @@
 				_ = n("./src/reddit/selectors/user.ts"),
 				x = n("./src/reddit/icons/fonts/Approve/index.tsx"),
 				k = n("./src/reddit/icons/fonts/Lock/index.tsx"),
-				I = n("./src/reddit/icons/fonts/Remove/index.tsx"),
-				O = n("./src/reddit/icons/fonts/Spam/index.tsx"),
+				O = n("./src/reddit/icons/fonts/Remove/index.tsx"),
+				I = n("./src/reddit/icons/fonts/Spam/index.tsx"),
 				E = n("./src/reddit/icons/svgs/Show/index.tsx"),
 				C = n("./src/reddit/components/Comments/Comment/ModToolsFlatlist/RestrictedButton.tsx"),
 				T = n("./src/reddit/components/Comments/Comment/ModToolsFlatlist/index.m.less"),
@@ -862,45 +862,47 @@
 					onSpamComment: y,
 					onToggleDistinguishDropdown: _,
 					sendEvent: T,
-					...w
+					pageLayer: w,
+					...M
 				} = e;
-				const M = Object(p.b)(n),
-					A = n.isApproved && M,
-					N = !n.isRemoved || n.bannedBy === c.k,
-					R = a,
-					S = e => T(Object(v.a)(e, n.id));
+				const A = Object(p.b)(n),
+					N = n.isApproved && A,
+					R = !n.isRemoved || n.bannedBy === c.k,
+					S = a,
+					B = e => T(Object(v.b)(e, n.id)),
+					L = "chat_comments" === (null == w ? void 0 : w.queryParams.only);
 				return s.a.createElement("div", {
 					className: t
-				}, (n.bannedBy || M) && s.a.createElement(C.a, {
-					text: A ? o.fbt._("Reapprove", null, {
+				}, (n.bannedBy || A) && s.a.createElement(C.a, {
+					text: N ? o.fbt._("Reapprove", null, {
 						hk: "1XngBU"
 					}) : o.fbt._("Approve", null, {
 						hk: "2219Nh"
 					}),
 					onClick: () => {
-						u(), S("approve")
+						u(), L && T(Object(v.a)("approve", n.id)), B("approve")
 					}
 				}, s.a.createElement(x.a, {
 					className: j.a.icon
-				})), N && s.a.createElement(s.a.Fragment, null, s.a.createElement(C.a, {
+				})), R && s.a.createElement(s.a.Fragment, null, s.a.createElement(C.a, {
 					text: n.bannedBy === c.k ? o.fbt._("Confirm Removal", null, {
 						hk: "3JozXJ"
 					}) : o.fbt._("Remove", null, {
 						hk: "3tYl0U"
 					}),
 					onClick: () => {
-						f(), n.bannedBy === c.k ? S("confirm_remove") : S("remove")
+						f(), L && T(Object(v.a)("remove", n.id)), n.bannedBy === c.k ? B("confirm_remove") : B("remove")
 					}
-				}, s.a.createElement(I.a, {
+				}, s.a.createElement(O.a, {
 					className: j.a.icon
 				})), s.a.createElement(C.a, {
 					text: o.fbt._("Spam", null, {
 						hk: "1jEVwZ"
 					}),
 					onClick: () => {
-						y(), S("spam")
+						y(), B("spam")
 					}
-				}, s.a.createElement(O.a, {
+				}, s.a.createElement(I.a, {
 					className: j.a.icon
 				}))), s.a.createElement(C.a, {
 					text: n.isLocked ? o.fbt._("Unlock", null, {
@@ -909,11 +911,11 @@
 						hk: "3rDzwU"
 					}),
 					onClick: () => {
-						h(), S(n.isLocked ? "unlock" : "lock")
+						h(), B(n.isLocked ? "unlock" : "lock")
 					}
 				}, s.a.createElement(k.a, {
 					className: j.a.icon
-				})), R && s.a.createElement(C.a, {
+				})), S && s.a.createElement(C.a, {
 					text: o.fbt._("Show Comment", null, {
 						hk: "2ki02n"
 					}),
@@ -1063,8 +1065,8 @@
 				_ = n("./src/reddit/components/PostTopMeta/index.tsx"),
 				x = n("./src/reddit/controls/MetaData/index.tsx"),
 				k = n("./src/reddit/helpers/flair.ts"),
-				I = n("./src/reddit/helpers/trackers/features/powerupsFlair.ts"),
-				O = n("./src/reddit/hooks/useTracking.ts"),
+				O = n("./src/reddit/helpers/trackers/features/powerupsFlair.ts"),
+				I = n("./src/reddit/hooks/useTracking.ts"),
 				E = n("./src/reddit/models/Comment/index.ts"),
 				C = n("./src/reddit/selectors/gold/powerups/index.ts"),
 				T = n("./src/lib/constants/index.ts"),
@@ -1416,13 +1418,13 @@
 				xe = n.n(_e);
 			const {
 				fbt: ke
-			} = n("./node_modules/fbt/lib/FbtPublic.js"), Ie = () => s.a.createElement(x.a, {
+			} = n("./node_modules/fbt/lib/FbtPublic.js"), Oe = () => s.a.createElement(x.a, {
 				className: xe.a.stickiedText
 			}, ke._("Stickied comment", null, {
 				hk: "XUSav"
 			}));
-			var Oe = n("./src/reddit/components/Comments/Comment/TopMeta/PostCommentHeader/index.m.less"),
-				Ee = n.n(Oe);
+			var Ie = n("./src/reddit/components/Comments/Comment/TopMeta/PostCommentHeader/index.m.less"),
+				Ee = n.n(Ie);
 			const Ce = e => {
 				const {
 					className: t,
@@ -1440,7 +1442,7 @@
 					renderedInOverlay: M,
 					subredditDisplayText: A,
 					isAdmin: R
-				} = e, S = Object(O.a)(), B = a.subredditId, L = Object(i.e)(e => Object(C.h)(e, {
+				} = e, S = Object(I.a)(), B = a.subredditId, L = Object(i.e)(e => Object(C.h)(e, {
 					subredditId: B
 				}));
 				if (a.isDeleted && !R) return s.a.createElement("div", {
@@ -1503,7 +1505,7 @@
 					subredditId: a.subredditId,
 					userId: a.authorId,
 					onHover: () => {
-						S(Object(I.b)(a.id, a.subredditId, a.authorId))
+						S(Object(O.b)(a.id, a.subredditId, a.authorId))
 					},
 					showPopupOnHover: !0
 				}), s.a.createElement(g.a, {
@@ -1524,7 +1526,7 @@
 					renderedInOverlay: M
 				}), a.isStickied && s.a.createElement(s.a.Fragment, null, s.a.createElement(x.c, {
 					className: Ee.a.separator
-				}), s.a.createElement(Ie, null)), a.editedAt && s.a.createElement(s.a.Fragment, null, s.a.createElement(x.c, {
+				}), s.a.createElement(Oe, null)), a.editedAt && s.a.createElement(s.a.Fragment, null, s.a.createElement(x.c, {
 					className: Ee.a.separator
 				}), s.a.createElement(te, {
 					compact: !0,
@@ -1617,8 +1619,8 @@
 					hideAwards: h = !1,
 					ignoreFlairPosition: y,
 					ignoreLock: k,
-					isAdmin: I,
-					isBlockingInterstitialEnabled: O,
+					isAdmin: O,
+					isBlockingInterstitialEnabled: I,
 					isBlockingInterstitialV2Enabled: C,
 					isModWithUserNotesPermissions: T,
 					isLivestreaming: j,
@@ -1644,7 +1646,7 @@
 					comment: i,
 					flair: u || null,
 					ignoreLock: k,
-					isAdmin: I,
+					isAdmin: O,
 					isModWithUserNotesPermissions: T,
 					isLivestreaming: j,
 					onCommentAuthorClick: M,
@@ -1723,10 +1725,10 @@
 					comment: i,
 					permalink: a,
 					renderedInOverlay: S,
-					isBlockingInterstitialEnabled: O || C
+					isBlockingInterstitialEnabled: I || C
 				}), i.isStickied && s.a.createElement(s.a.Fragment, null, s.a.createElement(x.c, {
 					className: Le.a.separator
-				}), s.a.createElement(Ie, null)), i.editedAt && s.a.createElement(s.a.Fragment, null, s.a.createElement(x.c, {
+				}), s.a.createElement(Oe, null)), i.editedAt && s.a.createElement(s.a.Fragment, null, s.a.createElement(x.c, {
 					className: Le.a.separator
 				}), s.a.createElement(te, {
 					editedAt: i.editedAt
@@ -2474,4 +2476,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ModQueuePages~ModerationPages~ProfileComments~ProfileOverview~Pr~d9e7ab4c.47ffe41314a9a663b2e5.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ModQueuePages~ModerationPages~ProfileComments~ProfileOverview~Pr~d9e7ab4c.0c047b6b69cff1ad8e88.js.map

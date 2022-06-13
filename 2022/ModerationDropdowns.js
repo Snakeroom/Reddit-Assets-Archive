@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModerationDropdowns.898dbf0a3f43fc8f8efb.js
-// Retrieved at 5/19/2022, 5:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModerationDropdowns.c364b7d2d6759a186338.js
+// Retrieved at 6/13/2022, 9:30:03 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModerationDropdowns"], {
 		"./src/reddit/actions/economics/predictions/modTools.ts": function(e, t, o) {
@@ -315,7 +315,7 @@
 		"./src/reddit/components/PostFlairPicker/index.tsx": function(e, t, o) {
 			"use strict";
 			o.d(t, "b", (function() {
-				return v
+				return j
 			}));
 			var n, s = o("./node_modules/fbt/lib/FbtPublic.js"),
 				r = o("./node_modules/react/index.js"),
@@ -336,11 +336,11 @@
 				E = o("./src/reddit/selectors/subreddit.ts"),
 				C = o("./src/reddit/components/PostFlairPicker/helpers.ts"),
 				k = o("./src/reddit/components/PostFlairPicker/index.m.less"),
-				j = o.n(k);
+				v = o.n(k);
 			! function(e) {
 				e.UNSET = "unset", e.MOD_FLATLIST = "postModFlatlist", e.POST_OVERFLOW = "postOverlay"
 			}(n || (n = {}));
-			const v = function(e) {
+			const j = function(e) {
 					let t = arguments.length > 1 && void 0 !== arguments[1] && arguments[1],
 						o = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : n.UNSET;
 					return `PostFlair__Modal-[postId: ${e}]-isOverlay[${t}]-position[${o}]`
@@ -417,14 +417,14 @@
 						templateIds: d,
 						onChange: this.setSelectedFlair
 					}), a.a.createElement("div", {
-						className: j.a.buttonsRow
+						className: v.a.buttonsRow
 					}, a.a.createElement(x.l, {
 						disabled: !l,
 						onClick: this.onApply
 					}, s.fbt._("Apply", null, {
 						hk: "3mAjVQ"
 					})), a.a.createElement(x.o, {
-						className: j.a.clearButton,
+						className: v.a.clearButton,
 						onClick: this.onClear
 					}, s.fbt._("Clear Flair", null, {
 						hk: "3jvT0B"
@@ -463,9 +463,9 @@
 			})), o.d(t, "k", (function() {
 				return k
 			})), o.d(t, "d", (function() {
-				return j
-			})), o.d(t, "b", (function() {
 				return v
+			})), o.d(t, "b", (function() {
+				return j
 			})), o.d(t, "c", (function() {
 				return P
 			})), o.d(t, "e", (function() {
@@ -493,11 +493,11 @@
 				E = r.a.wrapped(p.a, "Icon", x.a),
 				C = r.a.wrapped(m.a, "Icon", x.a),
 				k = r.a.wrapped(u.a, "Icon", x.a),
-				j = () => s.a.createElement(i.a, {
+				v = () => s.a.createElement(i.a, {
 					name: "mod_mute",
 					className: x.a.Icon
 				}),
-				v = () => s.a.createElement(i.a, {
+				j = () => s.a.createElement(i.a, {
 					name: "calendar",
 					className: x.a.Icon
 				}),
@@ -535,8 +535,8 @@
 				E = o("./src/reddit/helpers/trackers/predictionsModTools.ts"),
 				C = o("./src/reddit/models/Prediction/Tournament/index.ts"),
 				k = o("./src/reddit/selectors/tooltip.ts"),
-				j = o("./node_modules/fbt/lib/FbtPublic.js"),
-				v = o("./src/reddit/components/ModModeReports/helpers.ts"),
+				v = o("./node_modules/fbt/lib/FbtPublic.js"),
+				j = o("./src/reddit/components/ModModeReports/helpers.ts"),
 				P = o("./src/reddit/components/ModToolsFlatlist/constants.ts"),
 				M = o("./src/reddit/components/ModToolsFlatlist/getModItemBreakpoints.ts"),
 				g = o("./src/reddit/controls/CheckboxMenuItem/index.tsx"),
@@ -585,106 +585,106 @@
 					const K = (null === (B = W.pollData) || void 0 === B ? void 0 : B.isPrediction) && !(null === (H = W.pollData) || void 0 === H ? void 0 : H.resolvedOptionId),
 						Q = (null === (V = W.pollData) || void 0 === V ? void 0 : V.isPrediction) && null !== W.pollData.resolvedOptionId,
 						Z = W.flair.filter(e => e.type !== D.f.Nsfw && e.type !== D.f.Spoiler).length > 0,
-						q = Object(v.b)(W),
+						q = Object(j.b)(W),
 						z = !(!W.approvedBy || !q),
 						Y = i ? void 0 : l,
 						J = Object(w.a)(W),
 						X = p ? L : T;
 					return s.a.createElement(S.g, null, n && s.a.createElement(s.a.Fragment, null, !W.isSponsored && s.a.createElement(s.a.Fragment, null, s.a.createElement(S.e, {
 						className: X(P.a.Approve, Y),
-						displayText: z ? j.fbt._("Reapprove", null, {
+						displayText: z ? v.fbt._("Reapprove", null, {
 							hk: "39rQqr"
-						}) : W.approvedBy ? j.fbt._("Approved", null, {
+						}) : W.approvedBy ? v.fbt._("Approved", null, {
 							hk: "1j7d8E"
-						}) : j.fbt._("Approve", null, {
+						}) : v.fbt._("Approve", null, {
 							hk: "29dW3F"
 						}),
 						onClick: m
 					}, s.a.createElement(S.a, null)), s.a.createElement(S.e, {
 						className: X(P.a.Remove, Y),
-						displayText: W.isRemoved ? j.fbt._("Removed", null, {
+						displayText: W.isRemoved ? v.fbt._("Removed", null, {
 							hk: "3rSb2M"
-						}) : j.fbt._("Remove", null, {
+						}) : v.fbt._("Remove", null, {
 							hk: "dflNO"
 						}),
 						onClick: M
 					}, s.a.createElement(S.i, null)), s.a.createElement(S.e, {
 						className: X(P.a.Spam, Y),
-						displayText: W.isSpam ? j.fbt._("Removed as spam", null, {
+						displayText: W.isSpam ? v.fbt._("Removed as spam", null, {
 							hk: "2olZT7"
-						}) : j.fbt._("Remove as spam", null, {
+						}) : v.fbt._("Remove as spam", null, {
 							hk: "4A9ZT8"
 						}),
 						onClick: I
 					}, s.a.createElement(S.j, null))), t && s.a.createElement(S.e, {
 						className: X(P.a.Flair, Y),
-						displayText: Z ? j.fbt._("Edit post flair", null, {
+						displayText: Z ? v.fbt._("Edit post flair", null, {
 							hk: "2oet1"
-						}) : j.fbt._("Add post flair", null, {
+						}) : v.fbt._("Add post flair", null, {
 							hk: "1iPNLQ"
 						}),
 						onClick: h
 					}, s.a.createElement(S.k, null))), a && o && s.a.createElement(S.e, {
-						displayText: j.fbt._("Share with members", null, {
+						displayText: v.fbt._("Share with members", null, {
 							hk: "2XMBQE"
 						}),
 						onClick: F
 					}, s.a.createElement(S.f, null)), !W.isRemoved && !d && s.a.createElement(g.a, {
 						isSelected: W.isStickied,
 						onClick: R,
-						text: j.fbt._("Sticky post", null, {
+						text: v.fbt._("Sticky post", null, {
 							hk: "3uXoIh"
 						})
 					}), Object(C.b)(W) && s.a.createElement(S.e, {
 						disabled: Boolean((null === (G = W.pollData) || void 0 === G ? void 0 : G.resolvedOptionId) || (null === (U = W.pollData) || void 0 === U ? void 0 : U.predictionStatus) === N.b.Cancelled),
-						displayText: j.fbt._("Cancel Prediction", null, {
+						displayText: v.fbt._("Cancel Prediction", null, {
 							hk: "hgWFW"
 						}),
 						onClick: u
 					}, s.a.createElement(S.i, null)), K && s.a.createElement(S.e, {
-						displayText: j.fbt._("Update the end date", null, {
+						displayText: v.fbt._("Update the end date", null, {
 							hk: "FjDpu"
 						}),
 						onClick: f
 					}, s.a.createElement(S.b, null)), Q && s.a.createElement(S.e, {
 						textClassName: y.a.text,
 						onClick: b,
-						displayText: j.fbt._("Change the outcome", null, {
+						displayText: v.fbt._("Change the outcome", null, {
 							hk: "2FH6j9"
 						})
 					}, s.a.createElement(S.c, null)), c && s.a.createElement(g.a, {
 						isSelected: r,
 						onClick: x,
-						text: j.fbt._("Distinguish as Mod", null, {
+						text: v.fbt._("Distinguish as Mod", null, {
 							hk: "3cCdJd"
 						})
 					}), s.a.createElement(g.a, {
 						isSelected: W.isLocked,
 						onClick: _,
-						text: j.fbt._("Lock comments", null, {
+						text: v.fbt._("Lock comments", null, {
 							hk: "YAV8n"
 						})
 					}), !J && s.a.createElement(g.a, {
 						isSelected: W.isOriginalContent,
 						onClick: E,
-						text: j.fbt._("Mark as OC", null, {
+						text: v.fbt._("Mark as OC", null, {
 							hk: "4yx2EO"
 						})
 					}), s.a.createElement(g.a, {
 						isSelected: W.isNSFW,
 						onClick: O,
-						text: j.fbt._("Mark as NSFW", null, {
+						text: v.fbt._("Mark as NSFW", null, {
 							hk: "8QQ2f"
 						})
 					}), n && "subreddit" === W.belongsTo.type && s.a.createElement(S.e, {
-						displayText: j.fbt._("Adjust crowd control", null, {
+						displayText: v.fbt._("Adjust crowd control", null, {
 							hk: "4Drg85"
 						}),
 						onClick: k
 					}, s.a.createElement(S.d, null)), s.a.createElement(g.a, {
 						isSelected: W.isSpoiler,
 						onClick: A,
-						text: j.fbt._("Mark as spoiler", null, {
+						text: v.fbt._("Mark as spoiler", null, {
 							hk: "3ef0MU"
 						})
 					}))
@@ -755,8 +755,8 @@
 					onEditPredictionEnd: h,
 					onDistinguishPost: _,
 					onFlairPost: k,
-					onLockPost: j,
-					onNsfwPost: v,
+					onLockPost: v,
+					onNsfwPost: j,
 					onOcPost: P,
 					onCcPost: M,
 					onRemovePost: g,
@@ -787,7 +787,7 @@
 					layout: p,
 					modModeEnabled: m,
 					onApprovePost: () => {
-						b(), y(Object(O.j)("approve", F.id))
+						b(), y(Object(O.l)("approve", F.id))
 					},
 					onCancelPrediction: () => {
 						f(), y(Object(E.a)(F.id))
@@ -799,37 +799,37 @@
 						h(), y(Object(E.c)(F.id))
 					},
 					onRemovePost: () => {
-						g(), Object(C.b)(F) ? y(Object(E.d)(F.id)) : y(Object(O.j)("remove", F.id))
+						g(), Object(C.b)(F) ? y(Object(E.d)(F.id)) : y(Object(O.l)("remove", F.id))
 					},
 					onSpamPost: () => {
-						D(), y(Object(O.j)("spam", F.id))
+						D(), y(Object(O.l)("spam", F.id))
 					},
 					onDistinguishPost: () => {
-						_(R), y(Object(O.j)(T ? "undistinguish" : "distinguish", F.id))
+						_(R), y(Object(O.l)(T ? "undistinguish" : "distinguish", F.id))
 					},
 					onFlairPost: () => {
-						k(W), y(Object(O.j)("post_flair", F.id))
+						k(W), y(Object(O.l)("post_flair", F.id))
 					},
 					onLockPost: () => {
-						j(), y(Object(O.j)(F.isLocked ? "unlock" : "lock", F.id))
+						v(), y(Object(O.l)(F.isLocked ? "unlock" : "lock", F.id))
 					},
 					onNsfwPost: () => {
-						v(), y(Object(O.j)(F.isNSFW ? "unmark_nsfw" : "mark_nsfw", F.id))
+						j(), y(Object(O.l)(F.isNSFW ? "unmark_nsfw" : "mark_nsfw", F.id))
 					},
 					onOcPost: () => {
-						P(), y(Object(O.j)(F.isOriginalContent ? "unmark_original_content" : "mark_original_content", F.id))
+						P(), y(Object(O.l)(F.isOriginalContent ? "unmark_original_content" : "mark_original_content", F.id))
 					},
 					onCcPost: () => {
 						M()
 					},
 					onModToMemberShareOpened: () => {
-						w(), y(Object(O.j)("mod_to_member_share", F.id))
+						w(), y(Object(O.l)("mod_to_member_share", F.id))
 					},
 					onSpoilerPost: () => {
-						N(), y(Object(O.j)(F.isSpoiler ? "unmark_spoiler" : "mark_spoiler", F.id))
+						N(), y(Object(O.l)(F.isSpoiler ? "unmark_spoiler" : "mark_spoiler", F.id))
 					},
 					onStickyPost: () => {
-						S(), y(Object(O.j)(F.isStickied ? "unsticky" : "sticky", F.id))
+						S(), y(Object(O.l)(F.isStickied ? "unsticky" : "sticky", F.id))
 					},
 					post: F
 				}))
@@ -1171,4 +1171,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationDropdowns.898dbf0a3f43fc8f8efb.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationDropdowns.c364b7d2d6759a186338.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModerationPages.84b264bcd858177ce5bd.js
-// Retrieved at 6/8/2022, 12:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModerationPages.4bc2513a5b660eaaa6d2.js
+// Retrieved at 6/13/2022, 9:30:03 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModerationPages"], {
 		"./node_modules/lodash/_arrayAggregator.js": function(e, t) {
@@ -422,7 +422,8 @@
 				},
 				y = {
 					comments: E.p.Comment,
-					links: E.p.Post
+					links: E.p.Post,
+					chat_comments: E.p.ChatComment
 				};
 
 			function O(e) {
@@ -23364,20 +23365,23 @@
 				return o
 			})), s.d(t, "b", (function() {
 				return r
-			})), s.d(t, "d", (function() {
+			})), s.d(t, "f", (function() {
 				return i
-			})), s.d(t, "e", (function() {
+			})), s.d(t, "d", (function() {
 				return d
-			})), s.d(t, "a", (function() {
+			})), s.d(t, "e", (function() {
 				return l
+			})), s.d(t, "a", (function() {
+				return c
 			}));
 			var n = s("./src/reddit/constants/experiments.ts"),
 				a = s("./src/reddit/selectors/experiments/econ/simpleExperiment.ts");
 			const o = Object(a.a)(n.J),
 				r = Object(a.a)(n.I),
-				i = Object(a.a)(n.K),
-				d = Object(a.a)(n.L),
-				l = Object(a.a)(n.H)
+				i = Object(a.a)(n.ee),
+				d = Object(a.a)(n.K),
+				l = Object(a.a)(n.L),
+				c = Object(a.a)(n.H)
 		},
 		"./src/reddit/selectors/experiments/emailInvite.ts": function(e, t, s) {
 			"use strict";
@@ -23391,7 +23395,7 @@
 					experimentEligibilitySelector: a.a,
 					experimentName: n.rd
 				});
-				return !(!t || Object(n.Uf)(t))
+				return !(!t || Object(n.Vf)(t))
 			}
 		},
 		"./src/reddit/selectors/showPromotedCTA.ts": function(e, t, s) {
@@ -23404,10 +23408,10 @@
 				o = s("./src/reddit/helpers/chooseVariant/index.ts"),
 				r = s("./src/reddit/selectors/posts.ts");
 			const i = e => Object(o.c)(e, {
-					experimentName: a.Le,
+					experimentName: a.Me,
 					experimentEligibilitySelector: o.a
 				}),
-				d = (e, t) => t === a.Te.Enabled && (null == e ? void 0 : e.isCreatedFromAdsUi) || (null == e ? void 0 : e.isSponsored),
+				d = (e, t) => t === a.Ue.Enabled && (null == e ? void 0 : e.isCreatedFromAdsUi) || (null == e ? void 0 : e.isSponsored),
 				l = Object(n.a)(r.G, i, (e, t) => d(e, t));
 			Object(n.a)((e, t) => t, i, (e, t) => d(e, t))
 		},
@@ -23665,4 +23669,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.84b264bcd858177ce5bd.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.4bc2513a5b660eaaa6d2.js.map

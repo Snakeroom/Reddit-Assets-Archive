@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ChatMessageInput~ChatPost.c8886d1580da3960bcea.js
-// Retrieved at 6/8/2022, 12:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ChatMessageInput~ChatPost.ff4f8bec2aa36e13d1b0.js
+// Retrieved at 6/13/2022, 9:30:03 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ChatMessageInput~ChatPost"], {
 		"./node_modules/lodash/_baseReduce.js": function(e, t) {
@@ -1972,12 +1972,12 @@
 						rtJsonElementProps: i
 					});
 					switch (o) {
-						case b.yf.SmIcon:
+						case b.zf.SmIcon:
 							return r.a.createElement(h, {
 								subredditName: s,
 								rtJsonElementProps: i
 							});
-						case b.yf.SmIconHc:
+						case b.zf.SmIconHc:
 							return r.a.createElement(h, {
 								subredditName: s,
 								isHoverable: !0,
@@ -2454,20 +2454,23 @@
 				return o
 			})), n.d(t, "b", (function() {
 				return i
-			})), n.d(t, "d", (function() {
+			})), n.d(t, "f", (function() {
 				return a
-			})), n.d(t, "e", (function() {
+			})), n.d(t, "d", (function() {
 				return c
-			})), n.d(t, "a", (function() {
+			})), n.d(t, "e", (function() {
 				return d
+			})), n.d(t, "a", (function() {
+				return l
 			}));
 			var s = n("./src/reddit/constants/experiments.ts"),
 				r = n("./src/reddit/selectors/experiments/econ/simpleExperiment.ts");
 			const o = Object(r.a)(s.J),
 				i = Object(r.a)(s.I),
-				a = Object(r.a)(s.K),
-				c = Object(r.a)(s.L),
-				d = Object(r.a)(s.H)
+				a = Object(r.a)(s.ee),
+				c = Object(r.a)(s.K),
+				d = Object(r.a)(s.L),
+				l = Object(r.a)(s.H)
 		},
 		"./src/reddit/selectors/subredditMention.ts": function(e, t, n) {
 			"use strict";
@@ -2492,12 +2495,12 @@
 				c = e => {
 					return Object(o.c)(e, {
 						experimentEligibilitySelector: a,
-						experimentName: s.rf
+						experimentName: s.sf
 					}) || ""
 				},
 				d = e => {
 					const t = c(e);
-					return t === s.yf.SmIcon || t === s.yf.SmIconHc
+					return t === s.zf.SmIcon || t === s.zf.SmIconHc
 				},
 				l = (e, t) => {
 					let {
@@ -2523,4 +2526,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatMessageInput~ChatPost.c8886d1580da3960bcea.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatMessageInput~ChatPost.ff4f8bec2aa36e13d1b0.js.map

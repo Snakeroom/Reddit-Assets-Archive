@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfileOverview.d1cc9cf7e7ec2e8c93e4.js
-// Retrieved at 6/8/2022, 12:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfileOverview.1ade6e852c4c1bcad622.js
+// Retrieved at 6/13/2022, 9:30:03 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfileOverview"], {
 		"./src/lib/makeOverviewConversationsItemKey/index.ts": function(e, t, s) {
@@ -1413,19 +1413,19 @@
 						tooltipId: l
 					}, n.a.createElement(C, {
 						onApproveComment: () => {
-							o(), c(Object(m.c)("approve", t.id))
+							o(), c(Object(m.d)("approve", t.id))
 						},
 						onRemoveComment: () => {
-							i(), c(Object(m.c)("remove", t.id))
+							i(), c(Object(m.d)("remove", t.id))
 						},
 						onSpamComment: () => {
-							a(), c(Object(m.c)("spam", t.id))
+							a(), c(Object(m.d)("spam", t.id))
 						},
 						onLockComment: () => {
-							r(), c(Object(m.c)(t.isLocked ? "unlock" : "lock", t.id))
+							r(), c(Object(m.d)(t.isLocked ? "unlock" : "lock", t.id))
 						},
 						onShowComment: () => {
-							d(), c(Object(m.c)("showComment", t.id))
+							d(), c(Object(m.d)("showComment", t.id))
 						},
 						comment: t
 					}))
@@ -1673,7 +1673,7 @@
 			class Ne extends n.a.PureComponent {
 				constructor() {
 					super(...arguments), this.handleDistinguishToggle = () => {
-						this.props.sendEvent(Object(de.a)("mod_distinguish_menu", this.props.comment.id)), this.props.onToggleDistinguishDropdown()
+						this.props.sendEvent(Object(de.b)("mod_distinguish_menu", this.props.comment.id)), this.props.onToggleDistinguishDropdown()
 					}, this.handleEdit = () => this.props.handleEdit(this.props.commentPermalink), this.handleIgnoreReports = () => {
 						this.props.onIgnoreReports(), this.sendCommentReportEvent(this.props.comment.ignoreReports ? "restore_reports" : "ignore_reports")
 					}, this.handleGild = async () => {
@@ -1683,11 +1683,11 @@
 							clickGildEvent: t
 						} = await Promise.resolve().then(s.bind(null, "./src/reddit/helpers/trackers/gild.ts"));
 						this.props.sendEvent(t(this.props.comment.id))
-					}, this.handleModActionsMenu = () => this.props.sendEvent(Object(de.a)("comment_mod_action_menu", this.props.comment.id)), this.handleOverflowMenuClick = () => this.props.sendEvent(Object(de.a)("comment_overflow_menu", this.props.comment.id)), this.handleDelete = () => this.props.handleDelete(), this.handleReply = () => this.props.handleReply(this.props.commentPermalink), this.handleRestrictedButtonClick = () => {
+					}, this.handleModActionsMenu = () => this.props.sendEvent(Object(de.b)("comment_mod_action_menu", this.props.comment.id)), this.handleOverflowMenuClick = () => this.props.sendEvent(Object(de.b)("comment_overflow_menu", this.props.comment.id)), this.handleDelete = () => this.props.handleDelete(), this.handleReply = () => this.props.handleReply(this.props.commentPermalink), this.handleRestrictedButtonClick = () => {
 						this.props.onToggleReportsDropdown(), this.sendCommentModEventWithName("comment_report_menu")
 					}, this.handleSave = () => {
-						this.props.comment.isSaved ? this.props.sendEvent(Object(de.a)("unsave", this.props.comment.id)) : this.props.sendEvent(Object(de.a)("save", this.props.comment.id)), this.props.onToggleSave()
-					}, this.sendCommentDistinguishEvent = e => this.props.sendEvent(Object(de.b)(e, this.props.comment.id)), this.sendCommentEventWithName = e => this.props.sendEvent(Object(K.b)(this.props.comment.postId, `comment_${e}`)), this.sendCommentEventWithNameShare = () => this.sendCommentEventWithName("share"), this.sendCommentModEventWithName = e => this.props.sendEvent(Object(de.a)(e, this.props.comment.id)), this.sendCommentReportEvent = e => this.props.sendEvent(Object(de.e)(e, this.props.comment.id)), this.renderReportFlow = () => this.props.reportingRevampEnabled ? n.a.createElement(ne.a, {
+						this.props.comment.isSaved ? this.props.sendEvent(Object(de.b)("unsave", this.props.comment.id)) : this.props.sendEvent(Object(de.b)("save", this.props.comment.id)), this.props.onToggleSave()
+					}, this.sendCommentDistinguishEvent = e => this.props.sendEvent(Object(de.c)(e, this.props.comment.id)), this.sendCommentEventWithName = e => this.props.sendEvent(Object(K.b)(this.props.comment.postId, `comment_${e}`)), this.sendCommentEventWithNameShare = () => this.sendCommentEventWithName("share"), this.sendCommentModEventWithName = e => this.props.sendEvent(Object(de.b)(e, this.props.comment.id)), this.sendCommentReportEvent = e => this.props.sendEvent(Object(de.f)(e, this.props.comment.id)), this.renderReportFlow = () => this.props.reportingRevampEnabled ? n.a.createElement(ne.a, {
 						withOverlay: !0,
 						commentId: this.props.comment.id,
 						overlayCustomStyles: oe.b,
@@ -2928,7 +2928,7 @@
 						postIds: We,
 						onceInViewport: Ve,
 						isAdblockAAMitigationEnabled: Ue
-					} = e, He = Object(O.a)(), Ge = !!e.redditStyle || !!e["data-redditstyle"], Ke = Ge ? void 0 : u, ze = Object(l.a)(Ce), qe = ge && ze, Je = Object(d.a)(Ce), Qe = Object(c.a)(Ce), Ze = Object(U.c)(ke), Xe = Object(W.a)(ke), Ye = !!ke.media && ke.media.type === C.o.RTJSON, $e = Be && Ye, et = s ? s - z.a : void 0, tt = !!ke.recommendationContext, st = !(X && ie || ue) || tt && ie, ot = (e => e === be.Oe.OnlyTitles)(Ie) && !Object(de.a)(ke), nt = (e => e === be.Oe.MediumHeight)(Ie) && !Object(de.a)(ke), rt = (e => {
+					} = e, He = Object(O.a)(), Ge = !!e.redditStyle || !!e["data-redditstyle"], Ke = Ge ? void 0 : u, ze = Object(l.a)(Ce), qe = ge && ze, Je = Object(d.a)(Ce), Qe = Object(c.a)(Ce), Ze = Object(U.c)(ke), Xe = Object(W.a)(ke), Ye = !!ke.media && ke.media.type === C.o.RTJSON, $e = Be && Ye, et = s ? s - z.a : void 0, tt = !!ke.recommendationContext, st = !(X && ie || ue) || tt && ie, ot = (e => e === be.Pe.OnlyTitles)(Ie) && !Object(de.a)(ke), nt = (e => e === be.Pe.MediumHeight)(Ie) && !Object(de.a)(ke), rt = (e => {
 						var t;
 						const {
 							post: s,
@@ -5717,7 +5717,7 @@
 					experimentEligibilitySelector: n.a,
 					experimentName: o.Tc
 				});
-				return !(!t || Object(o.Uf)(t))
+				return !(!t || Object(o.Vf)(t))
 			}
 		},
 		"./src/reddit/selectors/experiments/signupUpsellExperiment.ts": function(e, t, s) {
@@ -5881,7 +5881,7 @@
 				i = s("./src/reddit/selectors/experiments/nsfwListingBelow.ts");
 			const a = e => {
 					const t = Object(i.a)(e);
-					return Boolean(t) && !Object(n.Uf)(t)
+					return Boolean(t) && !Object(n.Vf)(t)
 				},
 				d = Object(o.a)(a, r.d, (e, t) => e && !t)
 		},
@@ -5895,10 +5895,10 @@
 				r = s("./src/reddit/helpers/chooseVariant/index.ts"),
 				i = s("./src/reddit/selectors/posts.ts");
 			const a = e => Object(r.c)(e, {
-					experimentName: n.Le,
+					experimentName: n.Me,
 					experimentEligibilitySelector: r.a
 				}),
-				d = (e, t) => t === n.Te.Enabled && (null == e ? void 0 : e.isCreatedFromAdsUi) || (null == e ? void 0 : e.isSponsored),
+				d = (e, t) => t === n.Ue.Enabled && (null == e ? void 0 : e.isCreatedFromAdsUi) || (null == e ? void 0 : e.isSponsored),
 				c = Object(o.a)(i.G, a, (e, t) => d(e, t));
 			Object(o.a)((e, t) => t, a, (e, t) => d(e, t))
 		},
@@ -5907,4 +5907,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileOverview.d1cc9cf7e7ec2e8c93e4.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileOverview.1ade6e852c4c1bcad622.js.map

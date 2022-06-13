@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModModeBanners.53d7521668a018834470.js
-// Retrieved at 6/8/2022, 12:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModModeBanners.181fdb89c1689c5a0d58.js
+// Retrieved at 6/13/2022, 9:30:03 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModModeBanners"], {
 		"./src/reddit/actions/comment/moderation.ts": function(e, t, s) {
@@ -11,9 +11,9 @@
 			})), s.d(t, "f", (function() {
 				return O
 			})), s.d(t, "a", (function() {
-				return k
-			})), s.d(t, "e", (function() {
 				return j
+			})), s.d(t, "e", (function() {
+				return k
 			})), s.d(t, "g", (function() {
 				return E
 			})), s.d(t, "h", (function() {
@@ -72,7 +72,7 @@
 							isLocked: a.isLocked
 						}
 					}))
-				}, O = Object(r.a)(R.H), k = e => async (t, s, n) => {
+				}, O = Object(r.a)(R.H), j = e => async (t, s, n) => {
 					let {
 						apiContext: r
 					} = n;
@@ -109,7 +109,7 @@
 							numReports: i.numReports || null
 						}
 					})), Object(d.d)())
-				}, j = (e, t) => async (s, n, r) => {
+				}, k = (e, t) => async (s, n, r) => {
 					let {
 						apiContext: a
 					} = r;
@@ -419,7 +419,7 @@
 					let e;
 					s();
 					const o = t.ignoreReports ? "restore_reports" : "ignore_reports";
-					e = Object(p.a)(t.id) ? Object(u.h)(o, t.id) : Object(u.g)(o, t.id), i(e)
+					e = Object(p.a)(t.id) ? Object(u.j)(o, t.id) : Object(u.i)(o, t.id), i(e)
 				}, c = (t.modReportsDismissed && t.modReportsDismissed.length || 0) + (t.userReportsDismissed && t.userReportsDismissed.length || 0);
 				return c ? r.a.createElement(_, {
 					collapseReports: o,
@@ -491,8 +491,8 @@
 				f = s("./src/reddit/icons/svgs/Clock/index.tsx"),
 				v = s("./src/reddit/icons/svgs/Undo/index.tsx"),
 				O = s("./src/reddit/selectors/tooltip.ts"),
-				k = s("./src/reddit/components/Reports/SnoozableReport/index.m.less"),
-				j = s.n(k);
+				j = s("./src/reddit/components/Reports/SnoozableReport/index.m.less"),
+				k = s.n(j);
 			const {
 				fbt: E
 			} = s("./node_modules/fbt/lib/FbtPublic.js"), C = (e, t) => `SnoozableReport--${t}--${e}`, N = Object(a.b)(() => Object(i.c)({
@@ -510,7 +510,7 @@
 					super(...arguments), this.tooltipTarget = null, this.setTooltipTargetRef = e => this.tooltipTarget = e, this.onSnoozeButtonClick = () => {
 						const e = this.props.isSnoozed ? d.ec.None : d.ec.Snoozed;
 						this.props.toggleSnooze(e);
-						const t = Object(h.l)(Object(g.a)(this.props.reportedThingId), this.props.isSnoozed, this.props.reportedThingId, this.props.reason);
+						const t = Object(h.n)(Object(g.a)(this.props.reportedThingId), this.props.isSnoozed, this.props.reportedThingId, this.props.reason);
 						this.props.sendEvent(t)
 					}
 				}
@@ -527,21 +527,21 @@
 						ref: this.setTooltipTargetRef
 					}, n.a.createElement(x.b, {
 						id: i,
-						className: j.a.DropdownLabelContainer,
+						className: k.a.DropdownLabelContainer,
 						onClick: o
 					}, n.a.createElement("label", {
 						htmlFor: i,
-						className: j.a.DropdownLabel
+						className: k.a.DropdownLabel
 					}, a ? "Reporter snoozed" : `${t}: ${e}`, r ? n.a.createElement(_.a, null) : n.a.createElement(R.a, null))), n.a.createElement(T, {
 						isOpen: r,
 						tooltipTarget: this.tooltipTarget,
 						renderContentsHidden: !0,
 						isOverlay: !1
 					}, n.a.createElement("button", {
-						className: j.a.SnoozeButton,
+						className: k.a.SnoozeButton,
 						onClick: this.onSnoozeButtonClick
 					}, n.a.createElement("div", {
-						className: j.a.SnoozeButtonContent
+						className: k.a.SnoozeButtonContent
 					}, a ? n.a.createElement(n.a.Fragment, null, n.a.createElement(v.a, null), E._("Undo snoozing reports from this user", null, {
 						hk: "4iqfWB"
 					})) : n.a.createElement(n.a.Fragment, null, n.a.createElement(f.a, null), E._("Snooze reports from this user for 7 days", null, {
@@ -680,4 +680,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModModeBanners.53d7521668a018834470.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModModeBanners.181fdb89c1689c5a0d58.js.map

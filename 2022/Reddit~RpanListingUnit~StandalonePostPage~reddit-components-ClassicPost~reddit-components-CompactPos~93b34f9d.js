@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Reddit~RpanListingUnit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPos~93b34f9d.78eb800eb8d3308c664a.js
-// Retrieved at 6/8/2022, 12:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Reddit~RpanListingUnit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPos~93b34f9d.65ec43094dbdf72efd50.js
+// Retrieved at 6/13/2022, 9:30:03 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Reddit~RpanListingUnit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPos~93b34f9d"], {
 		"./src/lib/memoizeByReference/index.ts": function(e, t, n) {
@@ -1874,30 +1874,34 @@
 		},
 		"./src/reddit/helpers/trackers/modTools.ts": function(e, t, n) {
 			"use strict";
-			n.d(t, "i", (function() {
+			n.d(t, "k", (function() {
 				return a
-			})), n.d(t, "j", (function() {
+			})), n.d(t, "l", (function() {
 				return c
-			})), n.d(t, "a", (function() {
-				return i
-			})), n.d(t, "f", (function() {
-				return d
-			})), n.d(t, "d", (function() {
-				return l
 			})), n.d(t, "b", (function() {
+				return i
+			})), n.d(t, "a", (function() {
+				return d
+			})), n.d(t, "g", (function() {
+				return l
+			})), n.d(t, "e", (function() {
 				return u
 			})), n.d(t, "c", (function() {
 				return m
-			})), n.d(t, "e", (function() {
+			})), n.d(t, "d", (function() {
 				return p
-			})), n.d(t, "k", (function() {
+			})), n.d(t, "f", (function() {
 				return f
-			})), n.d(t, "h", (function() {
+			})), n.d(t, "m", (function() {
 				return b
-			})), n.d(t, "g", (function() {
+			})), n.d(t, "j", (function() {
 				return h
-			})), n.d(t, "l", (function() {
+			})), n.d(t, "i", (function() {
 				return g
+			})), n.d(t, "n", (function() {
+				return v
+			})), n.d(t, "h", (function() {
+				return x
 			}));
 			var r = n("./src/reddit/constants/tracking.ts"),
 				o = n("./src/reddit/selectors/telemetry.ts");
@@ -1930,13 +1934,24 @@
 				}),
 				d = (e, t) => n => ({
 					source: "comment",
+					action: r.c.CLICK,
+					noun: e,
+					post: Object(o.H)(n, t),
+					comment: Object(o.h)(n, t),
+					actionInfo: {
+						pageType: "chat_live_post"
+					},
+					...s(n)
+				}),
+				l = (e, t) => n => ({
+					source: "comment",
 					action: r.c.UNDO,
 					noun: e,
 					post: Object(o.H)(n, t),
 					comment: Object(o.h)(n, t),
 					...s(n)
 				}),
-				l = (e, t) => n => ({
+				u = (e, t) => n => ({
 					source: "comment_overflow_menu",
 					action: "click",
 					noun: e,
@@ -1944,7 +1959,7 @@
 					comment: Object(o.h)(n, t),
 					...s(n)
 				}),
-				u = (e, t) => n => ({
+				m = (e, t) => n => ({
 					source: "mod_distinguish_menu",
 					action: "click",
 					noun: e,
@@ -1952,7 +1967,7 @@
 					comment: Object(o.h)(n, t),
 					...s(n)
 				}),
-				m = (e, t) => n => ({
+				p = (e, t) => n => ({
 					source: "comment_mod_action_menu",
 					action: "click",
 					noun: e,
@@ -1960,7 +1975,7 @@
 					comment: Object(o.h)(n, t),
 					...s(n)
 				}),
-				p = (e, t) => n => ({
+				f = (e, t) => n => ({
 					source: "comment_report_menu",
 					action: "click",
 					noun: e,
@@ -1968,21 +1983,21 @@
 					post: Object(o.H)(n, t),
 					...s(n)
 				}),
-				f = (e, t) => n => ({
+				b = (e, t) => n => ({
 					source: "post_report_menu",
 					action: "click",
 					noun: e,
 					post: Object(o.H)(n, t),
 					...s(n)
 				}),
-				b = (e, t) => n => ({
+				h = (e, t) => n => ({
 					source: "post",
 					action: "click",
 					noun: e,
 					post: Object(o.H)(n, t),
 					subreddit: Object(o.jb)(n, t)
 				}),
-				h = (e, t) => n => ({
+				g = (e, t) => n => ({
 					source: "comment",
 					action: "click",
 					noun: e,
@@ -1990,7 +2005,7 @@
 					post: Object(o.H)(n, t),
 					subreddit: Object(o.jb)(n, t)
 				}),
-				g = (e, t, n, r) => s => ({
+				v = (e, t, n, r) => s => ({
 					source: e ? "comment" : "post",
 					action: "click",
 					noun: t ? "unsnooze_reporter" : "snooze_reporter",
@@ -2001,6 +2016,15 @@
 					},
 					...e && {
 						comment: Object(o.h)(s, n)
+					}
+				}),
+				x = () => e => ({
+					...s(e),
+					source: "modqueue",
+					noun: "content_type_live_post",
+					action: "view",
+					actionInfo: {
+						pageType: "chat_live_post"
 					}
 				})
 		},
@@ -2351,7 +2375,7 @@
 				i = e => {
 					return Object(o.c)(e, {
 						experimentEligibilitySelector: a.Q,
-						experimentName: r.Ke
+						experimentName: r.Le
 					}) === r.sd
 				}
 		},
@@ -2589,4 +2613,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit~RpanListingUnit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPos~93b34f9d.78eb800eb8d3308c664a.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit~RpanListingUnit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPos~93b34f9d.65ec43094dbdf72efd50.js.map

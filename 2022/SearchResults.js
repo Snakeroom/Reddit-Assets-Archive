@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SearchResults.9d68cd847b206bd93678.js
-// Retrieved at 6/8/2022, 2:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SearchResults.2f4a7f652c4d8836dbc4.js
+// Retrieved at 6/13/2022, 9:30:03 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SearchResults"], {
 		"./node_modules/lodash/_baseDelay.js": function(e, t) {
@@ -627,19 +627,19 @@
 						tooltipId: l
 					}, r.a.createElement(O, {
 						onApproveComment: () => {
-							n(), d(Object(m.c)("approve", t.id))
+							n(), d(Object(m.d)("approve", t.id))
 						},
 						onRemoveComment: () => {
-							i(), d(Object(m.c)("remove", t.id))
+							i(), d(Object(m.d)("remove", t.id))
 						},
 						onSpamComment: () => {
-							a(), d(Object(m.c)("spam", t.id))
+							a(), d(Object(m.d)("spam", t.id))
 						},
 						onLockComment: () => {
-							o(), d(Object(m.c)(t.isLocked ? "unlock" : "lock", t.id))
+							o(), d(Object(m.d)(t.isLocked ? "unlock" : "lock", t.id))
 						},
 						onShowComment: () => {
-							c(), d(Object(m.c)("showComment", t.id))
+							c(), d(Object(m.d)("showComment", t.id))
 						},
 						comment: t
 					}))
@@ -1082,10 +1082,10 @@
 				});
 			class Pe extends o.a.Component {
 				constructor() {
-					super(...arguments), this.sendCommentEventWithName = e => this.props.sendEvent(Object(P.b)(this.props.comment.postId, `comment_${e}`)), this.sendCommentModEventWithName = e => this.props.sendEvent(Object(ae.a)(e, this.props.comment.id)), this.sendCommentReportEvent = e => this.props.sendEvent(Object(ae.e)(e, this.props.comment.id)), this.handleSave = () => {
+					super(...arguments), this.sendCommentEventWithName = e => this.props.sendEvent(Object(P.b)(this.props.comment.postId, `comment_${e}`)), this.sendCommentModEventWithName = e => this.props.sendEvent(Object(ae.b)(e, this.props.comment.id)), this.sendCommentReportEvent = e => this.props.sendEvent(Object(ae.f)(e, this.props.comment.id)), this.handleSave = () => {
 						this.props.comment.isSaved ? this.sendCommentModEventWithName("unsave") : this.sendCommentModEventWithName("save"), this.props.onToggleSave()
 					}, this.handleEdit = () => {
-						this.props.sendEvent(Object(ae.d)("edit", this.props.comment.id)), this.props.handleEdit()
+						this.props.sendEvent(Object(ae.e)("edit", this.props.comment.id)), this.props.handleEdit()
 					}, this.handleGild = async () => {
 						var e;
 						const t = Object(T.d)(T.a.GildingFlow, !0);
@@ -1095,11 +1095,11 @@
 						} = await Promise.resolve().then(s.bind(null, "./src/reddit/helpers/trackers/gild.ts"));
 						this.props.sendEvent(n(this.props.comment.id))
 					}, this.handleDelete = () => {
-						this.props.sendEvent(Object(ae.d)("delete", this.props.comment.id)), this.props.toggleDeleteCommentModal()
+						this.props.sendEvent(Object(ae.e)("delete", this.props.comment.id)), this.props.toggleDeleteCommentModal()
 					}, this.handleReportClick = () => {
-						this.props.sendEvent(Object(ae.a)("report", this.props.comment.id)), this.props.onReportClick()
+						this.props.sendEvent(Object(ae.b)("report", this.props.comment.id)), this.props.onReportClick()
 					}, this.handleDistinguishToggle = () => {
-						this.props.sendEvent(Object(ae.a)("mod_distinguish_menu", this.props.comment.id)), this.props.onToggleDistinguishDropdown()
+						this.props.sendEvent(Object(ae.b)("mod_distinguish_menu", this.props.comment.id)), this.props.onToggleDistinguishDropdown()
 					}, this.handleFollow = () => {
 						const {
 							onCommentFollow: e,
@@ -1107,8 +1107,8 @@
 							comment: s,
 							isFollowed: n
 						} = this.props;
-						e(n ? L.a.UNFOLLOWED : L.a.FOLLOWED), t(n ? Object(ae.f)("follow", s.id) : Object(ae.a)("follow", s.id))
-					}, this.sendCommentDistinguishEvent = e => this.props.sendEvent(Object(ae.b)(e, this.props.comment.id)), this.renderReportFlow = () => this.props.reportingRevampEnabled ? o.a.createElement(se.a, {
+						e(n ? L.a.UNFOLLOWED : L.a.FOLLOWED), t(n ? Object(ae.g)("follow", s.id) : Object(ae.b)("follow", s.id))
+					}, this.sendCommentDistinguishEvent = e => this.props.sendEvent(Object(ae.c)(e, this.props.comment.id)), this.renderReportFlow = () => this.props.reportingRevampEnabled ? o.a.createElement(se.a, {
 						withOverlay: !0,
 						commentId: this.props.comment.id,
 						overlayCustomStyles: te.b,
@@ -1259,7 +1259,7 @@
 						className: xe.a.overflowMenu,
 						disabled: b,
 						dropdownId: Ne(e.id),
-						onClick: () => S(Object(ae.a)("comment_overflow_menu", e.id))
+						onClick: () => S(Object(ae.b)("comment_overflow_menu", e.id))
 					}, pe, H && o.a.createElement(o.a.Fragment, null, o.a.createElement(ye, {
 						displayText: n.fbt._("Delete comment", null, {
 							hk: "4lMUDO"
@@ -1299,7 +1299,7 @@
 						className: g ? q(E.Moderator, v.HideIfVWLarger) : void 0,
 						dropdownId: `${e.id}-mod-actions-menu`,
 						inCommentFlatlist: !0,
-						onClick: () => S(Object(ae.a)("comment_mod_action_menu", e.id))
+						onClick: () => S(Object(ae.b)("comment_mod_action_menu", e.id))
 					}, o.a.createElement(be.a, null), o.a.createElement(W.a, {
 						comment: e,
 						tooltipId: `${e.id}-mod-actions-menu`
@@ -6132,10 +6132,10 @@
 				Ie = s("./src/reddit/selectors/experiments/utils.ts");
 			const Ne = Object(B.a)(e => Object(Se.c)(e, {
 					experimentEligibilitySelector: Se.a,
-					experimentName: we.hf
+					experimentName: we.if
 				}), Ie.a),
-				Te = Object(B.a)(Ne, e => e === we.wf.Variant1 || e === we.wf.Variant2),
-				Re = Object(B.a)(Ne, e => e === we.wf.Variant1);
+				Te = Object(B.a)(Ne, e => e === we.xf.Variant1 || e === we.xf.Variant2),
+				Re = Object(B.a)(Ne, e => e === we.xf.Variant1);
 			var Pe = s("./src/reddit/components/SearchResultsContent/NoResults/index.m.less"),
 				Le = s.n(Pe);
 			const {
@@ -8174,12 +8174,12 @@
 						rtJsonElementProps: i
 					});
 					switch (o) {
-						case C.yf.SmIcon:
+						case C.zf.SmIcon:
 							return r.a.createElement(p, {
 								subredditName: n,
 								rtJsonElementProps: i
 							});
-						case C.yf.SmIconHc:
+						case C.zf.SmIconHc:
 							return r.a.createElement(p, {
 								subredditName: n,
 								isHoverable: !0,
@@ -10419,10 +10419,10 @@
 				o = s("./src/reddit/helpers/chooseVariant/index.ts"),
 				i = s("./src/reddit/selectors/posts.ts");
 			const a = e => Object(o.c)(e, {
-					experimentName: r.Le,
+					experimentName: r.Me,
 					experimentEligibilitySelector: o.a
 				}),
-				c = (e, t) => t === r.Te.Enabled && (null == e ? void 0 : e.isCreatedFromAdsUi) || (null == e ? void 0 : e.isSponsored),
+				c = (e, t) => t === r.Ue.Enabled && (null == e ? void 0 : e.isCreatedFromAdsUi) || (null == e ? void 0 : e.isSponsored),
 				d = Object(n.a)(i.G, a, (e, t) => c(e, t));
 			Object(n.a)((e, t) => t, a, (e, t) => c(e, t))
 		},
@@ -10449,12 +10449,12 @@
 				c = e => {
 					return Object(o.c)(e, {
 						experimentEligibilitySelector: a,
-						experimentName: n.rf
+						experimentName: n.sf
 					}) || ""
 				},
 				d = e => {
 					const t = c(e);
-					return t === n.yf.SmIcon || t === n.yf.SmIconHc
+					return t === n.zf.SmIcon || t === n.zf.SmIconHc
 				},
 				l = (e, t) => {
 					let {
@@ -10495,4 +10495,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SearchResults.9d68cd847b206bd93678.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SearchResults.2f4a7f652c4d8836dbc4.js.map
