@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditInlineEditing.22030c5381d89a3e7a58.js
-// Retrieved at 5/18/2022, 12:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditInlineEditing.eff5c3d2e7e83090e112.js
+// Retrieved at 6/13/2022, 2:20:03 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditInlineEditing"], {
 		"./src/reddit/components/CommunityTopics/NumTopicsSelected.tsx": function(e, t, s) {
@@ -84,10 +84,10 @@
 			}
 			var f = Object(r.b)(void 0, e => ({
 				onDismissTooltip: () => {
-					e(Object(c.i)()), Object(u.yb)()
+					e(Object(c.i)()), Object(u.zb)()
 				},
 				onViewTooltip: () => {
-					Object(u.Ub)()
+					Object(u.Wb)()
 				}
 			}))(Object(p.c)(g));
 			const T = "editable-primary-topic-idcard";
@@ -819,7 +819,7 @@
 				onShowTooltip: t => e(Object(l.f)({
 					tooltipId: t
 				}))
-			})), V = "inline-editing-topics-tooltip-", W = {
+			})), W = "inline-editing-topics-tooltip-", V = {
 				top: N.a.alienblue,
 				bottom: N.a.alienblue
 			};
@@ -832,7 +832,7 @@
 					}
 				}
 				makeUniqueTooltipId() {
-					return `${V}${M()()}`
+					return `${W}${M()()}`
 				}
 				componentDidMount() {
 					this.setState({
@@ -854,7 +854,7 @@
 					}), o.a.createElement(L.a, {
 						tooltipId: this.state.tooltipId,
 						defaultTooltipPosition: "bottom",
-						caretColor: W
+						caretColor: V
 					}, o.a.createElement("div", {
 						className: A.a.container
 					}, U._("Adding community topics allow people to find your community. Add a primary topic and sub topics to be discovered more easily.", null, {
@@ -867,7 +867,7 @@
 				Q = s.n(X);
 			const {
 				fbt: Z
-			} = s("./node_modules/fbt/lib/FbtPublic.js"), Y = 4, z = Object(r.c)({
+			} = s("./node_modules/fbt/lib/FbtPublic.js"), z = 4, Y = Object(r.c)({
 				haveData: (e, t) => {
 					let {
 						subredditId: s
@@ -882,7 +882,7 @@
 				isLoading: e => Object(R.B)(e),
 				selectedPrimaryTag: R.x,
 				isPostUpsellModalOpen: Object(P.b)(j.a.POST_FLOW_UPSELL_MODAL_ID)
-			}), $ = Object(i.b)(z, (e, t) => {
+			}), $ = Object(i.b)(Y, (e, t) => {
 				let {
 					subredditId: s,
 					context: n
@@ -1019,7 +1019,7 @@
 						onBlur: this.onBlur,
 						childClassNames: ee,
 						readOnlyMode: t ? w.a.editable : w.a.focusableReadOnly,
-						maxTopicsToDisplay: t ? void 0 : Y
+						maxTopicsToDisplay: t ? void 0 : z
 					}, !t && o.a.createElement(_.a, {
 						name: "edit"
 					}), this.renderFocusGrabber()), t && this.renderControlRow())
@@ -1753,4 +1753,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditInlineEditing.22030c5381d89a3e7a58.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditInlineEditing.eff5c3d2e7e83090e112.js.map

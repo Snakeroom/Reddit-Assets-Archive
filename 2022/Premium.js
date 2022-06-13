@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Premium.5ca2bbab9369f5814efd.js
-// Retrieved at 6/13/2022, 10:50:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Premium.f099d9d4fd5a6378445f.js
+// Retrieved at 6/13/2022, 2:20:03 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Premium"], {
 		"./src/reddit/endpoints/gold/productCatalog/old.index.ts": function(e, r, t) {
@@ -255,28 +255,28 @@
 			}));
 			var n = t("./src/reddit/constants/experiments.ts"),
 				d = t("./src/reddit/selectors/experiments/econ/simpleExperiment.ts");
-			const a = Object(d.a)(n.fd),
-				s = Object(d.a)(n.dd),
-				i = Object(d.a)(n.gd),
-				o = Object(d.a)(n.cd),
-				c = Object(d.a)(n.bd),
-				u = Object(d.a)(n.id),
-				l = Object(d.a)(n.hd),
-				f = Object(d.a)(n.Yc),
-				p = Object(d.a)(n.Rc),
-				m = Object(d.a)(n.Sc),
-				b = Object(d.a)(n.Pc),
-				g = Object(d.a)(n.Qc),
-				h = Object(d.a)(n.Uc),
-				O = Object(d.a)(n.Oc),
-				j = Object(d.a)(n.Zc),
-				P = Object(d.a)(n.ad),
-				y = Object(d.a)(n.ed),
-				_ = Object(d.a)(n.jd),
-				x = Object(d.a)(n.ld),
-				v = Object(d.a)(n.od),
-				k = Object(d.a)(n.nd),
-				C = Object(d.a)(n.md)
+			const a = Object(d.a)(n.gd),
+				s = Object(d.a)(n.ed),
+				i = Object(d.a)(n.hd),
+				o = Object(d.a)(n.dd),
+				c = Object(d.a)(n.cd),
+				u = Object(d.a)(n.jd),
+				l = Object(d.a)(n.id),
+				f = Object(d.a)(n.Zc),
+				p = Object(d.a)(n.Sc),
+				m = Object(d.a)(n.Tc),
+				b = Object(d.a)(n.Qc),
+				g = Object(d.a)(n.Rc),
+				h = Object(d.a)(n.Vc),
+				O = Object(d.a)(n.Pc),
+				j = Object(d.a)(n.ad),
+				P = Object(d.a)(n.bd),
+				y = Object(d.a)(n.fd),
+				_ = Object(d.a)(n.kd),
+				x = Object(d.a)(n.md),
+				v = Object(d.a)(n.pd),
+				k = Object(d.a)(n.od),
+				C = Object(d.a)(n.nd)
 		},
 		"./src/reddit/selectors/goldPurchaseModals.ts": function(e, r, t) {
 			"use strict";
@@ -380,4 +380,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Premium.5ca2bbab9369f5814efd.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Premium.f099d9d4fd5a6378445f.js.map

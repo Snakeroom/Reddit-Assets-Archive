@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditWiki.3be7720c77f2d3c1da25.js
-// Retrieved at 6/13/2022, 1:00:03 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditWiki.86240f98fa70f8289f31.js
+// Retrieved at 6/13/2022, 2:20:03 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditWiki"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -662,7 +662,7 @@
 						o = Object(b.b)(y),
 						d = Object(b.b)(j),
 						[a, c] = function(e, t) {
-							const [s, n] = Object(r.useState)(Object(H.N)(e, t));
+							const [s, n] = Object(r.useState)(Object(H.O)(e, t));
 							return [s, Object(r.useCallback)(() => {
 								const s = Object(H.a)(e, t);
 								n(s)
@@ -692,7 +692,7 @@
 							e.stopPropagation(), o.visible ? f() : E()
 						}, [f, E, o.visible]),
 						S = Object(r.useCallback)(t => {
-							t === g.c.FREQUENT && Object(H.bb)(e.userId, e.subredditId)
+							t === g.c.FREQUENT && Object(H.cb)(e.userId, e.subredditId)
 						}, [e.subredditId, e.userId]),
 						P = Object(r.useCallback)(r => {
 							const {
@@ -741,8 +741,8 @@
 				G = s("./src/reddit/components/SubscribeButton/index.tsx"),
 				J = s("./src/reddit/constants/componentSizes.ts"),
 				q = s("./src/reddit/constants/postLayout.ts"),
-				Y = s("./src/reddit/constants/posts.ts"),
-				z = s("./src/reddit/featureFlags/index.ts"),
+				z = s("./src/reddit/constants/posts.ts"),
+				Y = s("./src/reddit/featureFlags/index.ts"),
 				K = s("./src/reddit/helpers/getSubredditIcon/index.ts"),
 				X = s("./src/reddit/constants/tracking.ts");
 			var Q = s("./src/reddit/hooks/useIntersectionObserver.ts"),
@@ -759,7 +759,7 @@
 				ae = Object(o.c)({
 					isNsfwBlurSubreddit: ee.e,
 					notificationLevel: se.H,
-					spPollsEnabled: z.d.spPolls,
+					spPollsEnabled: Y.d.spPolls,
 					subredditInlineEditingEnabled: (e, t) => {
 						let {
 							subredditId: s
@@ -922,12 +922,12 @@
 					},
 					identifier: {
 						name: s,
-						type: Y.a.SUBREDDIT
+						type: z.a.SUBREDDIT
 					},
 					small: !0,
 					isFullWidth: !0,
 					afterUnsubscribeAction: () => {
-						t && (Object(H.bb)(e.userId, t), e.updateSubredditInfo())
+						t && (Object(H.cb)(e.userId, t), e.updateSubredditInfo())
 					}
 				})), e.userIsSubscriber && t && e.notificationLevel && n.a.createElement("div", {
 					className: oe.a.notificationButtonContainer
@@ -3676,12 +3676,12 @@
 						rtJsonElementProps: o
 					});
 					switch (i) {
-						case h.yf.SmIcon:
+						case h.zf.SmIcon:
 							return n.a.createElement(p, {
 								subredditName: r,
 								rtJsonElementProps: o
 							});
-						case h.yf.SmIconHc:
+						case h.zf.SmIconHc:
 							return n.a.createElement(p, {
 								subredditName: r,
 								isHoverable: !0,
@@ -3765,9 +3765,9 @@
 				G = s("./src/reddit/models/Flair/index.ts"),
 				J = s("./src/reddit/models/Subreddit/index.ts"),
 				q = s("./src/reddit/components/SidebarPostList/SmallPost/index.m.less"),
-				Y = s.n(q);
+				z = s.n(q);
 			const {
-				fbt: z
+				fbt: Y
 			} = s("./node_modules/fbt/lib/FbtPublic.js"), K = e => e.type === G.f.Nsfw || e.type === G.f.Spoiler, X = Object(c.c)({
 				post: M.G,
 				subredditOrProfile: M.U
@@ -3800,40 +3800,40 @@
 						post: t
 					}, o = Object(U.a)(Object(V.b)(i)), a = t.flair.filter(K);
 					return d.a.createElement("div", {
-						className: Object(S.a)(Y.a.container, e, {
-							[Y.a.redditStyle]: s
+						className: Object(S.a)(z.a.container, e, {
+							[z.a.redditStyle]: s
 						}),
 						onClick: this.onClickContainer
 					}, d.a.createElement("div", {
-						className: Y.a.mainLine
+						className: z.a.mainLine
 					}, o && d.a.createElement("div", {
-						className: Y.a.thumbnailContainer,
+						className: z.a.thumbnailContainer,
 						onClick: this.onClickThumbnail
 					}, d.a.createElement(V.a, i)), d.a.createElement("div", {
-						className: Object(S.a)(Y.a.title, !o && Y.a.titleSingle),
+						className: Object(S.a)(z.a.title, !o && z.a.titleSingle),
 						title: t.title
 					}, a.length > 0 && d.a.createElement(A.a, {
-						className: Y.a.flair,
+						className: z.a.flair,
 						titleFlair: a,
 						nowrap: !0,
 						post: t
 					}), t.title)), d.a.createElement("div", {
-						className: Y.a.metaLine
+						className: z.a.metaLine
 					}, r && !!n && d.a.createElement("span", {
-						className: Y.a.meta
+						className: z.a.meta
 					}, Object(J.i)(n) ? Object(T.d)(n.displayText || n.name) : Object(T.c)(n.displayText || n.name)), d.a.createElement("span", {
-						className: Y.a.meta
-					}, z._({
+						className: z.a.meta
+					}, Y._({
 						"*": "{score} points",
 						_1: "1 point"
-					}, [z._plural(t.score, "score", Object(W.b)(t.score))], {
+					}, [Y._plural(t.score, "score", Object(W.b)(t.score))], {
 						hk: "1JZ0qm"
 					})), d.a.createElement("span", {
-						className: Y.a.meta
-					}, z._({
+						className: z.a.meta
+					}, Y._({
 						"*": "{numComments} comments",
 						_1: "1 comment"
-					}, [z._plural(t.numComments, "numComments", Object(W.b)(t.numComments))], {
+					}, [Y._plural(t.numComments, "numComments", Object(W.b)(t.numComments))], {
 						hk: "2UbjdS"
 					}))))
 				}
@@ -4107,7 +4107,7 @@
 						} = t;
 						return Object(Me.c)(e, s)
 					},
-					isInNewModuleNCPV3Experiment: e => Object(Fe.a)(e) === Pe.xe.NewModule,
+					isInNewModuleNCPV3Experiment: e => Object(Fe.a)(e) === Pe.ye.NewModule,
 					showGovernance: Te.d.spPoints,
 					showLeaderboard: Te.d.spLeaderboard,
 					showPredictionsLeaderboard: (e, t) => {
@@ -5170,12 +5170,12 @@
 				a = e => {
 					return Object(i.c)(e, {
 						experimentEligibilitySelector: d,
-						experimentName: r.rf
+						experimentName: r.sf
 					}) || ""
 				},
 				c = e => {
 					const t = a(e);
-					return t === r.yf.SmIcon || t === r.yf.SmIconHc
+					return t === r.zf.SmIcon || t === r.zf.SmIconHc
 				},
 				l = (e, t) => {
 					let {
@@ -5201,4 +5201,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditWiki.3be7720c77f2d3c1da25.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditWiki.86240f98fa70f8289f31.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/AuthorHovercard~Reddit.c524730d936b49bf12bf.js
-// Retrieved at 6/13/2022, 1:00:03 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/AuthorHovercard~Reddit.797b71507f2c8b351cd7.js
+// Retrieved at 6/13/2022, 2:20:03 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["AuthorHovercard~Reddit"], {
 		"./src/lib/browser/isIncognito.ts": function(e, t, n) {
@@ -115,9 +115,9 @@
 				O = n("./src/reddit/constants/experiments.ts"),
 				k = n("./src/reddit/helpers/chooseVariant/index.ts");
 			const E = e => Object(k.c)(e, {
-				experimentName: O.Zb,
+				experimentName: O.ac,
 				experimentEligibilitySelector: k.a
-			}) === O.rd;
+			}) === O.sd;
 			var j = n("./src/reddit/selectors/meta.ts"),
 				C = n("./src/reddit/selectors/user.ts");
 			let I = !1;
@@ -1346,7 +1346,7 @@
 			function s(e) {
 				const [t, n] = Object(a.useState)(Object(i.s)(e));
 				return [t, Object(a.useCallback)(() => {
-					n(!0), Object(i.nb)(e)
+					n(!0), Object(i.ob)(e)
 				}, [])]
 			}
 		},
@@ -1361,7 +1361,7 @@
 			function s(e) {
 				const [t, n] = Object(a.useState)(() => Object(i.t)(e));
 				return [t, Object(a.useCallback)(() => {
-					n(!0), Object(i.xb)(e)
+					n(!0), Object(i.yb)(e)
 				}, [e])]
 			}
 		},
@@ -1798,24 +1798,24 @@
 				V = n("./src/reddit/helpers/chooseVariant/index.ts");
 			const q = e => Object(V.c)(e, {
 					experimentEligibilitySelector: V.a,
-					experimentName: G.Ab
-				}) === G.yd.MemesNoBadge,
+					experimentName: G.Bb
+				}) === G.zd.MemesNoBadge,
 				K = e => Object(V.c)(e, {
 					experimentEligibilitySelector: V.a,
-					experimentName: G.Ab
-				}) === G.yd.PnEmailNoBadge,
+					experimentName: G.Bb
+				}) === G.zd.PnEmailNoBadge,
 				J = e => Object(V.c)(e, {
 					experimentEligibilitySelector: V.a,
-					experimentName: G.Ab
-				}) === G.yd.KarmaNoBadge,
+					experimentName: G.Bb
+				}) === G.zd.KarmaNoBadge,
 				Q = e => Object(V.c)(e, {
 					experimentEligibilitySelector: V.a,
-					experimentName: G.Ab
-				}) === G.yd.PopularNoBadge,
+					experimentName: G.Bb
+				}) === G.zd.PopularNoBadge,
 				Y = e => Object(V.c)(e, {
 					experimentEligibilitySelector: V.a,
-					experimentName: G.Ab
-				}) === G.yd.CatsNoBadge;
+					experimentName: G.Bb
+				}) === G.zd.CatsNoBadge;
 			t.a = e => {
 				let {
 					isBannerEnabled: t,
@@ -2011,4 +2011,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/AuthorHovercard~Reddit.c524730d936b49bf12bf.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/AuthorHovercard~Reddit.797b71507f2c8b351cd7.js.map

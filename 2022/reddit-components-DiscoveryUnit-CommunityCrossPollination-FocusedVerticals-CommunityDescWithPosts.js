@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-DiscoveryUnit-CommunityCrossPollination-FocusedVerticals-CommunityDescWithPosts.9e61a356a9c7d7e7e283.js
-// Retrieved at 5/19/2022, 5:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-DiscoveryUnit-CommunityCrossPollination-FocusedVerticals-CommunityDescWithPosts.c952f934126f45b99b7a.js
+// Retrieved at 6/13/2022, 2:20:03 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-DiscoveryUnit-CommunityCrossPollination-FocusedVerticals-CommunityDescWithPosts"], {
 		"./src/higherOrderComponents/withClickTracking/index.tsx": function(e, t, s) {
@@ -179,7 +179,7 @@
 							listingPosition: s
 						} = this.props;
 						this.props.sendEvent(Object(b.d)(t, e, s))
-					}, this.getLocalStorageDisabled = Object(u.R)(), this.setLocalStorageDisabled = Object(u.tb)()
+					}, this.getLocalStorageDisabled = Object(u.S)(), this.setLocalStorageDisabled = Object(u.ub)()
 				}
 				componentDidMount() {
 					const {
@@ -368,7 +368,7 @@
 				w = s.n(F);
 			const {
 				fbt: V
-			} = s("./node_modules/fbt/lib/FbtPublic.js"), R = Object(o.c)({
+			} = s("./node_modules/fbt/lib/FbtPublic.js"), A = Object(o.c)({
 				isFeatureFlag: m.d,
 				isPending: m.e,
 				subredditData: (e, t) => {
@@ -383,7 +383,7 @@
 					} = t;
 					return Object(m.k)(e, s)
 				}
-			}), A = Object(i.b)(R);
+			}), R = Object(i.b)(A);
 			class H extends r.a.PureComponent {
 				render() {
 					const {
@@ -431,7 +431,7 @@
 					})))
 				}
 			}
-			t.default = A(H)
+			t.default = R(H)
 		},
 		"./src/reddit/components/DiscoveryUnit/CommunityCrossPollination/FocusedVerticals/Wrapper/index.m.less": function(e, t, s) {
 			e.exports = {
@@ -1103,4 +1103,4 @@
 		"./src/reddit/icons/fonts/commonStyles.m.less": function(e, t, s) {}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-DiscoveryUnit-CommunityCrossPollination-FocusedVerticals-CommunityDescWithPosts.9e61a356a9c7d7e7e283.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-DiscoveryUnit-CommunityCrossPollination-FocusedVerticals-CommunityDescWithPosts.c952f934126f45b99b7a.js.map

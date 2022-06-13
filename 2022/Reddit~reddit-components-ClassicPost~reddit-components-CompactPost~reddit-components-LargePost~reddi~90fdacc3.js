@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddi~90fdacc3.c33201821f089cb0316b.js
-// Retrieved at 6/13/2022, 1:00:03 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddi~90fdacc3.8fdd116fc68d1dfa1895.js
+// Retrieved at 6/13/2022, 2:20:03 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddi~90fdacc3"], {
 		"./src/lib/combineRefs/index.tsx": function(e, t, n) {
@@ -497,18 +497,18 @@
 						})
 					}, []);
 				Object(c.a)(k, M);
-				const [U, B] = Object(r.useState)(!1), V = Object(r.useCallback)(e => {
+				const [U, V] = Object(r.useState)(!1), B = Object(r.useCallback)(e => {
 					e.forEach(e => {
 						const {
 							isIntersecting: t,
 							intersectionRatio: n
 						} = e, r = 1 !== n;
-						t ? B(!0) : r && B(!1)
+						t ? V(!0) : r && V(!1)
 					})
 				}, []), Y = Object(r.useRef)({
 					rootMargin: "2000px 0px 2000px 0px"
 				});
-				Object(c.a)(k, V, Y.current);
+				Object(c.a)(k, B, Y.current);
 				const q = Object(o.a)(t);
 				Object(r.useEffect)(() => {
 					if (void 0 !== q && q !== t) {
@@ -1097,8 +1097,8 @@
 				F = n("./src/reddit/selectors/experiments/loggedOutBlockingInterstitial.ts"),
 				M = n("./src/reddit/selectors/experiments/nsfwBlockingExperiment.ts"),
 				U = n("./src/reddit/selectors/user.ts"),
-				B = n("./src/reddit/components/PostTitle/index.m.less"),
-				V = n.n(B),
+				V = n("./src/reddit/components/PostTitle/index.m.less"),
+				B = n.n(V),
 				Y = n("./src/config.ts"),
 				q = n("./src/reddit/hooks/useClickSourceData.ts"),
 				H = n("./src/reddit/hooks/usePostContext.ts"),
@@ -1131,27 +1131,27 @@
 					let m = "";
 					switch (t) {
 						case P.ExtraLarge:
-							m = V.a.ExtraLarge;
+							m = B.a.ExtraLarge;
 							break;
 						case P.Large:
-							m = V.a.Large;
+							m = B.a.Large;
 							break;
 						case P.Medium:
-							m = V.a.Medium;
+							m = B.a.Medium;
 							break;
 						case P.Small:
-							m = V.a.Small;
+							m = B.a.Small;
 							break;
 						case P.ExtraSmall:
-							m = V.a.ExtraSmall;
+							m = B.a.ExtraSmall;
 							break;
 						case P.Metadata:
-							m = V.a.Metadata
+							m = B.a.Metadata
 					}
 					return o.a.createElement("div", {
-						className: Object(l.a)(V.a.Title, c, m, {
-							[V.a.isNoWrap]: s,
-							[V.a.blur]: d
+						className: Object(l.a)(B.a.Title, c, m, {
+							[B.a.isNoWrap]: s,
+							[B.a.blur]: d
 						}),
 						style: {
 							"--posttitletextcolor": n || Object(j.a)({
@@ -1172,8 +1172,8 @@
 						...i
 					} = e;
 					return o.a.createElement(c.a, z({}, i, {
-						className: Object(l.a)(t, V.a.styledLink, {
-							[V.a.isVisitedEnabled]: !n
+						className: Object(l.a)(t, B.a.styledLink, {
+							[B.a.isVisitedEnabled]: !n
 						})
 					}), s)
 				},
@@ -1185,9 +1185,9 @@
 						children: s
 					} = e;
 					return o.a.createElement("div", {
-						className: Object(l.a)(V.a.titleContainer, r, {
-							[V.a.isNoWrap]: n,
-							[V.a.isVisitedEnabled]: !t
+						className: Object(l.a)(B.a.titleContainer, r, {
+							[B.a.isNoWrap]: n,
+							[B.a.isVisitedEnabled]: !t
 						})
 					}, s)
 				},
@@ -1295,7 +1295,7 @@
 							sourceElement: i
 						}, Object(g.a)(r), !r.isSponsored && o.a.createElement(E.a, {
 							name: "external_link",
-							className: V.a.outboundLinkIcon
+							className: B.a.outboundLinkIcon
 						}))
 					} else if (r.source && !e.isCrosspost && e.size !== P.Large && e.size !== P.ExtraLarge) return o.a.createElement(b.a, {
 						className: e.outboundLinkClassName,
@@ -1306,7 +1306,7 @@
 						sourceElement: i
 					}, Object(g.a)(r), !r.isSponsored && o.a.createElement(E.a, {
 						name: "external_link",
-						className: V.a.outboundLinkIcon
+						className: B.a.outboundLinkIcon
 					}));
 					return null
 				};
@@ -1314,7 +1314,7 @@
 				getDynamicStyleTags() {
 					return o.a.createElement("style", {
 						dangerouslySetInnerHTML: {
-							__html: `\n        .${this.props.post.id}.${V.a.Component} {\n          --postTitle-VisitedLinkColor: ${Object(r.c)(.45,Object(j.a)(this.props).titleText,"#FFFFFF")};\n          --postTitleLink-VisitedLinkColor: ${Object(r.c)(.45,this.props.titleColor||Object(j.a)(this.props).titleText,Object(j.a)(this.props).body)};\n        }\n      `
+							__html: `\n        .${this.props.post.id}.${B.a.Component} {\n          --postTitle-VisitedLinkColor: ${Object(r.c)(.45,Object(j.a)(this.props).titleText,"#FFFFFF")};\n          --postTitleLink-VisitedLinkColor: ${Object(r.c)(.45,this.props.titleColor||Object(j.a)(this.props).titleText,Object(j.a)(this.props).body)};\n        }\n      `
 						}
 					})
 				}
@@ -1336,7 +1336,7 @@
 						_ = !t && p && p.length > 0 && f,
 						O = !t && b && b.length > 0 && f;
 					return o.a.createElement("div", {
-						className: Object(l.a)(V.a.Component, e, c.id),
+						className: Object(l.a)(B.a.Component, e, c.id),
 						ref: this.props.innerRef
 					}, !a && _ && o.a.createElement(y.a, {
 						isFlairFilter: !0,
@@ -1347,7 +1347,7 @@
 					}), !Object(x.b)(c) && o.a.createElement(J, z({}, this.props, {
 						leftFlair: a ? p : void 0
 					})), i && o.a.createElement(R, {
-						className: V.a.pollMeta,
+						className: B.a.pollMeta,
 						pollId: i.id
 					}), o.a.createElement(ee, this.props), O && o.a.createElement(y.a, {
 						isFlairFilter: !0,
@@ -1356,7 +1356,7 @@
 						post: c,
 						sendEvent: this.props.sendEvent
 					}), o.a.createElement("div", {
-						className: V.a.postTitleVisibility,
+						className: B.a.postTitleVisibility,
 						dangerouslySetInnerHTML: {
 							__html: `\n              <img alt="" src="${Y.a.assetPath}/img/renderTimingPixel.png" style="width: 1px; height: 1px;" onLoad="(__markFirstPostVisible || function(){})();" />\n            `
 						}
@@ -3109,13 +3109,13 @@
 							postId: t
 						}) || Object(i.N)(e))(e, t),
 						experimentName: r.U
-					}) === r.rd
+					}) === r.sd
 				},
 				a = e => {
 					return Object(s.c)(e, {
 						experimentEligibilitySelector: i.Q,
-						experimentName: r.Ke
-					}) === r.rd
+						experimentName: r.Le
+					}) === r.sd
 				}
 		},
 		"./src/reddit/selectors/experiments/econ/index.ts": function(e, t, n) {
@@ -3167,28 +3167,28 @@
 			}));
 			var r = n("./src/reddit/constants/experiments.ts"),
 				s = n("./src/reddit/selectors/experiments/econ/simpleExperiment.ts");
-			const o = Object(s.a)(r.fd),
-				i = Object(s.a)(r.dd),
-				c = Object(s.a)(r.gd),
-				a = Object(s.a)(r.cd),
-				d = Object(s.a)(r.bd),
-				l = Object(s.a)(r.id),
-				u = Object(s.a)(r.hd),
-				m = Object(s.a)(r.Yc),
-				p = Object(s.a)(r.Rc),
-				b = Object(s.a)(r.Sc),
-				f = Object(s.a)(r.Pc),
-				_ = Object(s.a)(r.Qc),
-				h = Object(s.a)(r.Uc),
-				O = Object(s.a)(r.Oc),
-				v = Object(s.a)(r.Zc),
-				E = Object(s.a)(r.ad),
-				S = Object(s.a)(r.ed),
-				C = Object(s.a)(r.jd),
-				x = Object(s.a)(r.ld),
-				j = Object(s.a)(r.od),
-				g = Object(s.a)(r.nd),
-				y = Object(s.a)(r.md)
+			const o = Object(s.a)(r.gd),
+				i = Object(s.a)(r.ed),
+				c = Object(s.a)(r.hd),
+				a = Object(s.a)(r.dd),
+				d = Object(s.a)(r.cd),
+				l = Object(s.a)(r.jd),
+				u = Object(s.a)(r.id),
+				m = Object(s.a)(r.Zc),
+				p = Object(s.a)(r.Sc),
+				b = Object(s.a)(r.Tc),
+				f = Object(s.a)(r.Qc),
+				_ = Object(s.a)(r.Rc),
+				h = Object(s.a)(r.Vc),
+				O = Object(s.a)(r.Pc),
+				v = Object(s.a)(r.ad),
+				E = Object(s.a)(r.bd),
+				S = Object(s.a)(r.fd),
+				C = Object(s.a)(r.kd),
+				x = Object(s.a)(r.md),
+				j = Object(s.a)(r.pd),
+				g = Object(s.a)(r.od),
+				y = Object(s.a)(r.nd)
 		},
 		"./src/reddit/selectors/experiments/loggedOutOneFeed.ts": function(e, t, n) {
 			"use strict";
@@ -3206,7 +3206,7 @@
 			const d = Object(r.a)(c.f, i.e, (e, t) => e && !t),
 				l = e => Object(o.c)(e, {
 					experimentEligibilitySelector: d,
-					experimentName: s.Yb
+					experimentName: s.Zb
 				}),
 				u = e => !!Object(a.a)(l(e))
 		},
@@ -3295,8 +3295,8 @@
 					if (Object(i.a)(e)) return !1;
 					return Object(s.c)(e, {
 						experimentEligibilitySelector: s.a,
-						experimentName: r.jc
-					}) === r.Cc.Enabled
+						experimentName: r.kc
+					}) === r.Dc.Enabled
 				}
 		},
 		"./src/reddit/selectors/experiments/presence.ts": function(e, t, n) {
@@ -3309,8 +3309,8 @@
 			const o = e => {
 				return Object(s.c)(e, {
 					experimentEligibilitySelector: s.a,
-					experimentName: r.He
-				}) === r.rd
+					experimentName: r.Ie
+				}) === r.sd
 			}
 		},
 		"./src/reddit/selectors/removedPosts.ts": function(e, t, n) {
@@ -3455,4 +3455,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddi~90fdacc3.c33201821f089cb0316b.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddi~90fdacc3.8fdd116fc68d1dfa1895.js.map

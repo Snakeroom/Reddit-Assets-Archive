@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/RpanListingUnit.2cde5778c9d0eb33651f.js
-// Retrieved at 6/13/2022, 1:00:03 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/RpanListingUnit.76c85c8d883e17c386e4.js
+// Retrieved at 6/13/2022, 2:20:03 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["RpanListingUnit"], {
 		"./node_modules/lodash/_arrayEvery.js": function(e, t) {
@@ -52,16 +52,16 @@
 			const p = Object(i.a)(e => {
 				const t = Object(m.c)(e, {
 					experimentEligibilitySelector: m.a,
-					experimentName: u.ge
+					experimentName: u.he
 				});
-				return Object(u.Uf)(t) ? void 0 : t
+				return Object(u.Vf)(t) ? void 0 : t
 			}, e => {
 				const t = Object(m.c)(e, {
 					experimentEligibilitySelector: m.a,
-					experimentName: u.he
+					experimentName: u.ie
 				});
-				return Object(u.Uf)(t) ? void 0 : t
-			}, (e, t) => e === u.le.Enabled && t === u.le.Enabled);
+				return Object(u.Vf)(t) ? void 0 : t
+			}, (e, t) => e === u.me.Enabled && t === u.me.Enabled);
 			var b = n("./src/config.ts");
 			var h = n("./src/reddit/selectors/user.ts");
 			const f = e => {
@@ -1652,7 +1652,7 @@
 				q = n.n(K);
 			const {
 				fbt: z
-			} = n("./node_modules/fbt/lib/FbtPublic.js"), J = 20, Z = l.rc, X = l.rc, Q = Object(c.a)(D.a, {
+			} = n("./node_modules/fbt/lib/FbtPublic.js"), Z = 20, J = l.rc, X = l.rc, Q = Object(c.a)(D.a, {
 				playerName: "RPAN DU Video Player"
 			}), $ = Object(o.b)(() => Object(i.c)({
 				autoplay: A.b,
@@ -1708,19 +1708,19 @@
 			class ne extends r.Component {
 				constructor(e) {
 					super(e), this.observableElement = s.a.createRef(), this.videoRef = s.a.createRef(), this.videoSessionManager = null, this.timerId = "rpan-du-active-watch-timer-id", this.handleSuccessfulPlayback = () => {
-						Object(x.Y)()
+						Object(x.Z)()
 					}, this.handleUnsuccessfulPlayback = () => {
-						const e = Number(Object(x.M)());
+						const e = Number(Object(x.N)());
 						if (e) {
-							if (Date.now() - e >= Z) {
-								Object(x.Y)();
+							if (Date.now() - e >= J) {
+								Object(x.Z)();
 								const e = 30 * l.B,
 									t = Date.now() - e + X;
 								this.props.onHideRpanUnit(t, {
 									showToast: !1
 								})
 							}
-						} else Object(x.Ob)(Date.now())
+						} else Object(x.Qb)(Date.now())
 					}, this.onResourceRemoved = () => {
 						this.subscribeStats()
 					}, this.onError = () => {
@@ -1815,7 +1815,7 @@
 				}
 				endTimeTracker() {
 					if (this.timerId && a.c.has(this.timerId)) {
-						Math.round(a.c.end(this.timerId)) / 1e3 >= J ? this.handleSuccessfulPlayback() : this.handleUnsuccessfulPlayback()
+						Math.round(a.c.end(this.timerId)) / 1e3 >= Z ? this.handleSuccessfulPlayback() : this.handleUnsuccessfulPlayback()
 					}
 				}
 				componentDidMount() {
@@ -4339,13 +4339,13 @@
 							postId: t
 						}) || Object(i.N)(e))(e, t),
 						experimentName: r.U
-					}) === r.rd
+					}) === r.sd
 				},
 				c = e => {
 					return Object(s.c)(e, {
 						experimentEligibilitySelector: i.Q,
-						experimentName: r.Ke
-					}) === r.rd
+						experimentName: r.Le
+					}) === r.sd
 				}
 		},
 		"./src/reddit/selectors/experiments/videoReactions.ts": function(e, t, n) {
@@ -4361,11 +4361,11 @@
 			const i = e => Object(s.c)(e, {
 					experimentName: r.ub,
 					experimentEligibilitySelector: o.e
-				}) === r.rd,
+				}) === r.sd,
 				a = e => Object(s.c)(e, {
-					experimentName: r.ic,
+					experimentName: r.jc,
 					experimentEligibilitySelector: s.a
-				}) === r.rd
+				}) === r.sd
 		},
 		"./src/reddit/selectors/gild.ts": function(e, t, n) {
 			"use strict";
@@ -4601,4 +4601,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RpanListingUnit.2cde5778c9d0eb33651f.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RpanListingUnit.76c85c8d883e17c386e4.js.map

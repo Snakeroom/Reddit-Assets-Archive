@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Econ-PowerupsInFeedUnit-index.f55fd4f40ddfb55363ac.js
-// Retrieved at 6/13/2022, 10:50:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Econ-PowerupsInFeedUnit-index.ae2a9d65f57a6eb30ef3.js
+// Retrieved at 6/13/2022, 2:20:03 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Econ-PowerupsInFeedUnit-index"], {
 		"./src/reddit/components/Econ/Common/JoinHeroes/index.m.less": function(e, t, s) {
@@ -262,7 +262,7 @@
 					I(e)
 				}, [t, P, N, I]), Object(n.useEffect)(() => {
 					if (O === r.HIDDEN) return;
-					(() => O === r.POWERUPS_DEFAULT ? E(Object(i.p)()) : O === r.UNLOCKED_UNAPPLIED_FROM_PREMIUM ? E(Object(i.o)()) : void 0)(), Object(d.S)(P, t)
+					(() => O === r.POWERUPS_DEFAULT ? E(Object(i.p)()) : O === r.UNLOCKED_UNAPPLIED_FROM_PREMIUM ? E(Object(i.o)()) : void 0)(), Object(d.T)(P, t)
 				}, [O, I, P, t, E, N]), O) {
 					case r.POWERUPS_DEFAULT:
 						return o.a.createElement(g, {
@@ -282,4 +282,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Econ-PowerupsInFeedUnit-index.f55fd4f40ddfb55363ac.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Econ-PowerupsInFeedUnit-index.ae2a9d65f57a6eb30ef3.js.map

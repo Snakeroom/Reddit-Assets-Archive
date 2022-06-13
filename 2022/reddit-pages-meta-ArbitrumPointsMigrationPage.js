@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-pages-meta-ArbitrumPointsMigrationPage.d8c23fd5885fd551c39f.js
-// Retrieved at 6/1/2022, 6:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-pages-meta-ArbitrumPointsMigrationPage.ef15de60f1a0d1e7018b.js
+// Retrieved at 6/13/2022, 2:20:03 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-pages-meta-ArbitrumPointsMigrationPage"], {
 		"./node_modules/lodash/uniqueId.js": function(e, t, n) {
@@ -1208,10 +1208,10 @@
 			const F = () => i.a.createElement(u.a, {
 					className: L.a.loading
 				}),
-				D = () => i.a.createElement(S.a, {
+				B = () => i.a.createElement(S.a, {
 					className: L.a.succeeded
 				}),
-				B = () => i.a.createElement(P.a, {
+				D = () => i.a.createElement(P.a, {
 					className: L.a.failed
 				}),
 				R = "5391184";
@@ -1252,15 +1252,15 @@
 						}()
 					}, [a]), d && w.push(i.a.createElement("p", {
 						key: "l1-success"
-					}, i.a.createElement(D, null), " L1-to-L2 transfer transaction completed.")), b && w.push(i.a.createElement("p", {
+					}, i.a.createElement(B, null), " L1-to-L2 transfer transaction completed.")), b && w.push(i.a.createElement("p", {
 						key: "l2-success"
-					}, i.a.createElement(D, null), " L2 tickets successfully redeemed.")), g) {
+					}, i.a.createElement(B, null), " L2 tickets successfully redeemed.")), g) {
 					const e = n.originalL2Balance || 0;
 					g.gt(e) && w.push(i.a.createElement("p", {
 						key: "balance"
-					}, i.a.createElement(D, null), " L2 balance of ", n.name, " went from", " ", s.ethers.utils.formatEther(e), " to", " ", s.ethers.utils.formatEther(g), ".")), w.push(i.a.createElement("p", {
+					}, i.a.createElement(B, null), " L2 balance of ", n.name, " went from", " ", s.ethers.utils.formatEther(e), " to", " ", s.ethers.utils.formatEther(g), ".")), w.push(i.a.createElement("p", {
 						key: "balance"
-					}, i.a.createElement(D, null), " Migration complete", p ? i.a.createElement("span", null, " ", "at", " ", i.a.createElement("a", {
+					}, i.a.createElement(B, null), " Migration complete", p ? i.a.createElement("span", null, " ", "at", " ", i.a.createElement("a", {
 						href: `https://testnet.redditspace.com/tx/${p}/token-transfers`,
 						target: "_blank",
 						rel: "noopener noreferrer"
@@ -1268,7 +1268,7 @@
 				}
 				return l ? w.push(i.a.createElement("p", {
 					key: "error"
-				}, i.a.createElement(B, null), " Encountered an error: ", l.toString())) : d ? b ? g || w.push(i.a.createElement("p", {
+				}, i.a.createElement(D, null), " Encountered an error: ", l.toString())) : d ? b ? g || w.push(i.a.createElement("p", {
 					key: "l2-pending"
 				}, i.a.createElement(F, null), " Loading L2 balance...")) : a !== R ? (w.push(i.a.createElement("p", {
 					key: "change-network"
@@ -1283,7 +1283,7 @@
 			const V = "arb-migration-l1";
 
 			function W(e) {
-				e ? Object(N.Db)(V, e) : window.localStorage && window.localStorage.removeItem(V)
+				e ? Object(N.Eb)(V, e) : window.localStorage && window.localStorage.removeItem(V)
 			}
 
 			function q() {
@@ -1385,4 +1385,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-pages-meta-ArbitrumPointsMigrationPage.d8c23fd5885fd551c39f.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-pages-meta-ArbitrumPointsMigrationPage.ef15de60f1a0d1e7018b.js.map

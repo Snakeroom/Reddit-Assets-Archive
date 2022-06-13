@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModerationPages.8a026a33968ccf05c38e.js
-// Retrieved at 6/13/2022, 1:00:03 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModerationPages.6a6ac588546785471f25.js
+// Retrieved at 6/13/2022, 2:20:03 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModerationPages"], {
 		"./node_modules/lodash/_arrayAggregator.js": function(e, t) {
@@ -3140,7 +3140,7 @@
 					} = Ge,
 					[Qe, Ye] = Object(n.useState)(!1),
 					Xe = Object(n.useCallback)(() => {
-						Ye(!Qe), Object(X.Kb)(), Te(Object($.d)(xe))
+						Ye(!Qe), Object(X.Mb)(), Te(Object($.d)(xe))
 					}, [Qe, xe, Te]);
 				let Je = a.a.createElement(V.a, {
 					className: ne.a.classicThumbnail,
@@ -5168,7 +5168,7 @@
 					update: c
 				} = e, m = Object(ie.a)(), u = Object(i.d)(), [p, b] = Object(o.useState)(s), [h, g] = Object(o.useState)(!1), [f, x] = Object(o.useState)(!0);
 				return Object(o.useEffect)(() => {
-					x(Object(re.F)("location")), Object(re.Gb)("location")
+					x(Object(re.F)("location")), Object(re.Hb)("location")
 				}, []), r.a.createElement(r.a.Fragment, null, r.a.createElement(Q.a, {
 					className: Se.a.noMarginHeading
 				}, W.fbt._("Community Location and main language", null, {
@@ -6220,10 +6220,10 @@
 			}
 			var E = Object(r.b)(void 0, e => ({
 				onDismissTooltip: () => {
-					e(Object(l.i)()), Object(p.yb)()
+					e(Object(l.i)()), Object(p.zb)()
 				},
 				onViewTooltip: () => {
-					Object(p.Ub)()
+					Object(p.Wb)()
 				}
 			}))(Object(m.c)(x));
 			const v = "editable-primary-topic-idcard";
@@ -7573,7 +7573,7 @@
 					[b, g] = Object(c.a)(d.b.CROWD_CONTROL_CAMPAIGN_STORE, {}),
 					f = Object(o.e)(e => Object(p.W)(e, null == r ? void 0 : r.id)),
 					x = Object(m.a)(),
-					E = a === i.rd,
+					E = a === i.sd,
 					v = !(!r || !h.includes(r.name.toLowerCase())),
 					C = !1 === (null == f ? void 0 : f.crowdControlFilter) && 0 === (null == f ? void 0 : f.crowdControlPostLevel),
 					_ = !n(b[t]);
@@ -15972,7 +15972,7 @@
 					super(e), this.onShowTooltip = () => {
 						Object(v.u)() || (this.props.onShowTooltip(ee), setTimeout(() => {
 							this.props.onHideTooltip()
-						}, te), Object(v.Nb)())
+						}, te), Object(v.Pb)())
 					}, this.onAddReason = () => {
 						this.setState({
 							reasonToEdit: null
@@ -23682,7 +23682,7 @@
 				a = s("./src/reddit/selectors/experiments/econ/simpleExperiment.ts");
 			const o = Object(a.a)(n.J),
 				r = Object(a.a)(n.I),
-				i = Object(a.a)(n.de),
+				i = Object(a.a)(n.ee),
 				d = Object(a.a)(n.K),
 				l = Object(a.a)(n.L),
 				c = Object(a.a)(n.H)
@@ -23697,9 +23697,9 @@
 			const o = e => {
 				const t = Object(a.c)(e, {
 					experimentEligibilitySelector: a.a,
-					experimentName: n.qd
+					experimentName: n.rd
 				});
-				return !(!t || Object(n.Uf)(t))
+				return !(!t || Object(n.Vf)(t))
 			}
 		},
 		"./src/reddit/selectors/showPromotedCTA.ts": function(e, t, s) {
@@ -23712,10 +23712,10 @@
 				o = s("./src/reddit/helpers/chooseVariant/index.ts"),
 				r = s("./src/reddit/selectors/posts.ts");
 			const i = e => Object(o.c)(e, {
-					experimentName: a.Le,
+					experimentName: a.Me,
 					experimentEligibilitySelector: o.a
 				}),
-				d = (e, t) => t === a.Te.Enabled && (null == e ? void 0 : e.isCreatedFromAdsUi) || (null == e ? void 0 : e.isSponsored),
+				d = (e, t) => t === a.Ue.Enabled && (null == e ? void 0 : e.isCreatedFromAdsUi) || (null == e ? void 0 : e.isSponsored),
 				l = Object(n.a)(r.G, i, (e, t) => d(e, t));
 			Object(n.a)((e, t) => t, i, (e, t) => d(e, t))
 		},
@@ -23973,4 +23973,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.8a026a33968ccf05c38e.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.6a6ac588546785471f25.js.map
