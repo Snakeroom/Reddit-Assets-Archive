@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-ModHub-ContentControls.c3dab7f837460ef9baa0.js
-// Retrieved at 6/13/2022, 1:00:03 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-ModHub-ContentControls.cfc2364aabe14d31f96b.js
+// Retrieved at 6/13/2022, 5:10:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-ModHub-ContentControls"], {
 		"./src/reddit/components/ModHub/ContentControls/FormPlaceholder/index.m.less": function(e, t, n) {
@@ -137,8 +137,8 @@
 				O = 2,
 				M = 300,
 				D = 400,
-				I = 90,
-				j = 1e5,
+				j = 90,
+				I = 1e5,
 				A = 15,
 				H = 40,
 				W = 5,
@@ -214,27 +214,27 @@
 				K = n("./src/lib/classNames/index.ts"),
 				J = n("./src/reddit/helpers/styles/mixins/loading.ts"),
 				Z = n("./src/reddit/components/ModHub/ContentControls/FormPlaceholder/index.m.less"),
-				Q = n.n(Z);
-			var z = e => {
+				z = n.n(Z);
+			var Q = e => {
 					let {
 						isLoading: t
 					} = e;
 					return a.createElement("div", {
-						className: Object(K.a)(Q.a.container, Object(J.a)({
+						className: Object(K.a)(z.a.container, Object(J.a)({
 							isLoading: !1
 						}))
 					}, V()(3).map(e => a.createElement("div", {
 						key: e,
-						className: Q.a.section
+						className: z.a.section
 					}, a.createElement("div", {
-						className: Object(K.a)(Q.a.sectionTitle, Object(J.b)({
+						className: Object(K.a)(z.a.sectionTitle, Object(J.b)({
 							isLoading: t
 						}))
 					}), a.createElement("div", {
-						className: Q.a.line
+						className: z.a.line
 					}), V()(2).map(e => a.createElement("div", {
 						key: e,
-						className: Object(K.a)(Q.a.sectionBodyRow, Object(J.b)({
+						className: Object(K.a)(z.a.sectionBodyRow, Object(J.b)({
 							isLoading: t
 						}))
 					})))))
@@ -496,20 +496,20 @@
 						className: fe.a.radioOption,
 						showButton: !0,
 						value: E.a.None
-					}, s.fbt._("Text body is optional", null, {
-						hk: "2MQ05g"
+					}, s.fbt._("Text body is optional for all post types", null, {
+						hk: "1Gm2zE"
 					})), d.a.createElement(ne.a, {
 						className: fe.a.radioOption,
 						showButton: !0,
 						value: E.a.Required
-					}, s.fbt._("Text body is required", null, {
-						hk: "4DGOH5"
+					}, s.fbt._("Text body is required for text-only posts", null, {
+						hk: "29jDhz"
 					})), d.a.createElement(ne.a, {
 						className: fe.a.radioOption,
 						showButton: !0,
 						value: E.a.NotAllowed
-					}, s.fbt._("Text body is disabled", null, {
-						hk: "JaeQ0"
+					}, s.fbt._("Text body is not allowed", null, {
+						hk: "2pY4Fl"
 					})))), d.a.createElement(xe, {
 						on: e.titleLength.enabled,
 						onClick: this.onToggleTitleLength,
@@ -660,19 +660,19 @@
 				})))
 			}
 
-			function Ie(e) {
+			function je(e) {
 				return ["0.5fr", ...Array.from({
 					length: e - 2
 				}).map(e => "1fr"), "0.5fr"].join(" ")
 			}
-			var je = n("./src/reddit/controls/DiscreteSlideSelector/Labels/index.m.less"),
-				Ae = n.n(je);
+			var Ie = n("./src/reddit/controls/DiscreteSlideSelector/Labels/index.m.less"),
+				Ae = n.n(Ie);
 
 			function He(e) {
 				return d.a.createElement("div", {
 					className: Object(K.a)(Ae.a.container, e.className),
 					style: {
-						gridTemplateColumns: Ie(e.options.length)
+						gridTemplateColumns: je(e.options.length)
 					}
 				}, e.options.map(t => d.a.createElement("div", {
 					className: Object(K.a)(Ae.a.label, {
@@ -698,7 +698,7 @@
 				return d.a.createElement("div", {
 					className: Object(K.a)(Ve.a.container, e.className),
 					style: {
-						gridTemplateColumns: Ie(e.numStops)
+						gridTemplateColumns: je(e.numStops)
 					},
 					onMouseUp: e => {
 						t.current = !1
@@ -728,20 +728,20 @@
 				var n, s
 			}
 			var Ze = n("./src/reddit/controls/DiscreteSlideSelector/index.m.less"),
-				Qe = n.n(Ze);
+				ze = n.n(Ze);
 
-			function ze(e) {
+			function Qe(e) {
 				const t = Pe()(e.options.findIndex(t => t.value === e.value), 0, e.options.length - 1);
 				return d.a.createElement("div", {
-					className: Object(K.a)(Qe.a.container, e.className)
+					className: Object(K.a)(ze.a.container, e.className)
 				}, d.a.createElement("div", {
-					className: Qe.a.barContainer
+					className: ze.a.barContainer
 				}, d.a.createElement(De, {
-					className: Qe.a.bars,
+					className: ze.a.bars,
 					currentStop: t,
 					optionColors: e.options.map(e => e.color)
 				}), d.a.createElement(Je, {
-					className: Qe.a.thumbRail,
+					className: ze.a.thumbRail,
 					currentStop: t,
 					numStops: e.options.length,
 					onChange: t => e.onChange(e.options[t].value)
@@ -811,7 +811,7 @@
 				}, d.a.createElement(nt, {
 					className: it.a.levelLabel,
 					level: e.currentLevel
-				}), e.descriptions[e.currentLevel]()), d.a.createElement(ze, {
+				}), e.descriptions[e.currentLevel]()), d.a.createElement(Qe, {
 					options: [N.a.Off, N.a.Lenient, N.a.Moderate, N.a.Strict].map(e => ({
 						color: e === N.a.Off ? "var(--newRedditTheme-metaText)" : tt(e),
 						label: et(e),
@@ -1202,7 +1202,7 @@
 					}, this.onRepostFrequencyChange = e => {
 						const {
 							formState: t
-						} = this.props, n = le(e.target.value, 1, I);
+						} = this.props, n = le(e.target.value, 1, j);
 						this.props.onChange({
 							repostFrequency: {
 								...t.repostFrequency,
@@ -1355,7 +1355,7 @@
 					}, d.a.createElement("textarea", {
 						"aria-invalid": !!n.length,
 						className: fe.a.domainsTextarea,
-						maxLength: j,
+						maxLength: I,
 						onBlur: this.onLinkDomainsBlur,
 						onChange: this.onLinkDomainsTextChange,
 						placeholder: s.fbt._("Example: website.com", null, {
@@ -1381,7 +1381,7 @@
 						label: s.fbt._("number of days", null, {
 							hk: "1sPFop"
 						}),
-						max: I,
+						max: j,
 						min: 1,
 						onChange: this.onRepostFrequencyChange,
 						type: "number",
@@ -1507,7 +1507,7 @@
 					titleTextMinLength: null
 				},
 				Dt = e => e.filter(e => !!e);
-			var It = e => {
+			var jt = e => {
 					const t = {
 							...Mt,
 							bodyRestrictionPolicy: e.bodyRequirement.restrictionPolicy,
@@ -1529,15 +1529,15 @@
 					}
 					return t
 				},
-				jt = n("./node_modules/lodash/isEqual.js"),
-				At = n.n(jt),
+				It = n("./node_modules/lodash/isEqual.js"),
+				At = n.n(It),
 				Ht = (e, t) => {
 					if (At()(e, t)) return {
 						hatefulContentFilters: {},
 						postRequirements: {}
 					};
-					const n = It(e),
-						s = It(t),
+					const n = jt(e),
+						s = jt(t),
 						i = S()(n, (e, t) => At()(e, s[t])),
 						o = {};
 					return Object.keys(t.hatefulContentFilters).forEach(n => {
@@ -1605,7 +1605,7 @@
 						if (!this.isUnmounted)
 							if (this.setState({
 									isSavePending: !1
-								}), r.success) this.props.sendEvent(w(It(s))), this.setState({
+								}), r.success) this.props.sendEvent(w(jt(s))), this.setState({
 								formState: s,
 								initialFormState: s,
 								hasJustSaved: !0
@@ -1723,7 +1723,7 @@
 						formState: this.state.formState,
 						isLoading: t,
 						onChange: this.onFormStateChange
-					})) : d.a.createElement(z, {
+					})) : d.a.createElement(Q, {
 						isLoading: t
 					})), d.a.createElement(g.a, {
 						blockOnBeforeUnload: !0,
@@ -1776,4 +1776,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ModHub-ContentControls.c3dab7f837460ef9baa0.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ModHub-ContentControls.cfc2364aabe14d31f96b.js.map
