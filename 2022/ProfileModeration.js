@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfileModeration.e65c6fd304a5ebf8ba9b.js
-// Retrieved at 6/7/2022, 5:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfileModeration.c0554965910c44c422aa.js
+// Retrieved at 6/13/2022, 4:40:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfileModeration"], {
 		"./node_modules/lodash/_baseRange.js": function(e, t) {
@@ -487,7 +487,7 @@
 				le = x.a.div("RangeSlider", D.a),
 				ce = x.a.div("Ticks", D.a),
 				de = x.a.div("TickText", D.a),
-				ue = x.a.div("PreSubText", D.a),
+				ue = x.a.span("PreSubText", D.a),
 				me = Object(i.c)({
 					isNightModeOn: H.db
 				}),
@@ -1734,4 +1734,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileModeration.e65c6fd304a5ebf8ba9b.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileModeration.c0554965910c44c422aa.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.45a90f92a9dd53be642c.js
-// Retrieved at 6/13/2022, 3:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.6d36ad9372636bda10af.js
+// Retrieved at 6/13/2022, 4:40:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Chat~Governance~Reddit"], {
 		"./assets/fonts/IBMPlexSans/font.less": function(e, t, i) {},
@@ -3467,11 +3467,11 @@
 				apiPassThroughHeaders: Object(r.e)({}.API_PASS_THROUGH_HEADERS || ""),
 				appName: {}.APP_NAME || "desktop2x",
 				assetPath: "https://www.redditstatic.com/desktop2x",
-				buildNumber: Object(r.c)("166396"),
+				buildNumber: Object(r.c)("166405"),
 				chatHelpUrl: {}.CHAT_HELP_URL || "https://reddit.zendesk.com/hc/en-us/sections/360008805652-Chat",
 				hlsVersion: "hls 0.12.4",
 				dashVersion: "dash 3.2.0",
-				buildTimestamp: Object(r.b)("1655148161"),
+				buildTimestamp: Object(r.b)("1655151174"),
 				cookieDomain: ".reddit.com",
 				giphyApiKey: "k2kwyMA6VeyHM6ZRT96OXDGaersnx73Z",
 				mediaUrl: "https://www.redditmedia.com",
@@ -6078,14 +6078,14 @@
 					}))
 				},
 				Y = (e, t, i) => {
-					console.log("%cStarting Raven %crelease %ca543f5ea6e36dfab5ab0d1f94880acbf66505a99-production" + ` %cpublic url %c${y.a.sentryClientPublicURL}`, "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
+					console.log("%cStarting Raven %crelease %cd29228f23fa2e756e9cb40ed73d705f417060af1-production" + ` %cpublic url %c${y.a.sentryClientPublicURL}`, "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
 					let n = [];
 					n = [new RegExp(`^${y.a.assetPath}`, "i")];
 					o.e({
 						attachStacktrace: !0,
 						dsn: y.a.sentryClientPublicURL,
 						whitelistUrls: n,
-						release: "a543f5ea6e36dfab5ab0d1f94880acbf66505a99-production",
+						release: "d29228f23fa2e756e9cb40ed73d705f417060af1-production",
 						environment: "production",
 						ignoreErrors: ["$ is not defined"],
 						integrations: [...Object(L.d)(), new d.Integrations.Breadcrumbs({
@@ -6694,7 +6694,7 @@
 							settings: r,
 							statusCode: s,
 							type: o,
-							releaseClient: "a543f5ea6e36dfab5ab0d1f94880acbf66505a99-production",
+							releaseClient: "d29228f23fa2e756e9cb40ed73d705f417060af1-production",
 							appName: t.statsAppName,
 							error: n ? JSON.parse(Object(l.a)(n)) : void 0
 						},
@@ -20329,6 +20329,7 @@
 					allowPredictions: e.allow_predictions,
 					allowPredictionsTournament: e.allow_predictions_tournament,
 					allowedMediaInComments: e.allowed_media_in_comments,
+					banEvasionThreshold: e.ban_evasion_threshold,
 					collapseDeletedComments: e.collapse_deleted_comments,
 					commentScoreHideMins: e.comment_score_hide_mins,
 					contentOptions: e.content_options,
@@ -20389,6 +20390,7 @@
 					allow_discovery: e.allowDiscovery,
 					allow_top: e.contentVisible,
 					api_type: "json",
+					ban_evasion_threshold: e.banEvasionThreshold,
 					collapse_deleted_comments: e.collapseDeletedComments,
 					comment_score_hide_mins: e.commentScoreHideMins,
 					crowd_control_filter: e.crowdControlFilter,
@@ -20444,6 +20446,7 @@
 					allowPolls: "allow_polls",
 					allowPredictionContributors: "allow_prediction_contributors",
 					allowGalleries: "allow_galleries",
+					banEvasionThreshold: "ban_evasion_threshold",
 					contentVisible: "allow_top",
 					collapseDeletedComments: "collapse_deleted_comments",
 					commentScoreHideMins: "comment_score_hide_mins",
@@ -20742,19 +20745,19 @@
 		"./src/reddit/featureFlags/index.ts": function(e, t, i) {
 			"use strict";
 			i.d(t, "d", (function() {
-				return T
-			})), i.d(t, "a", (function() {
 				return O
-			})), i.d(t, "f", (function() {
+			})), i.d(t, "a", (function() {
 				return I
+			})), i.d(t, "f", (function() {
+				return R
 			})), i.d(t, "g", (function() {
-				return F
-			})), i.d(t, "b", (function() {
 				return N
-			})), i.d(t, "c", (function() {
+			})), i.d(t, "b", (function() {
 				return C
+			})), i.d(t, "c", (function() {
+				return A
 			})), i.d(t, "e", (function() {
-				return j
+				return D
 			}));
 			i("./node_modules/core-js/modules/web.dom.iterable.js");
 			var n = i("./node_modules/lodash/isNil.js"),
@@ -20772,35 +20775,36 @@
 				h = i("./src/reddit/selectors/platform.ts"),
 				f = i("./src/reddit/selectors/subreddit.ts");
 			var b = i("./src/reddit/selectors/responsiveSettings.ts");
-			const g = new Set(["AntiEvilPlayground", "lgbt", "dccomics", "yurop", "muaonthecheap", "loveislandusa", "blackladiesdating", "stpetersburgfl", "pics", "canada", "askuk", "fortnitebr", "unitedkingdom", "stopdrinking", "casualconversation", "animalsonreddit", "bisexual", "liberalgunowners", "redditsweats", "orangetheory", "fortnite", "readwithme", "dndgreentext", "ukraine", "auntienetwork"].map(e => e.toLowerCase())),
-				w = new Set(["uzitest", "testingtesting127", "kpkrunal"]);
-			var v = i("./src/reddit/featureFlags/subredditPoints.ts");
-			const y = new Set(["askaliberal", "asktransgender", "askwomen", "bisexual", "blackladies", "exchristian", "exmormon", "gendercynical", "girlgamers", "neoliberal", "nothowgirlswork", "progresspics", "subredditdrama", "teenagers", "thegirlsurvivalguide", "thequickbrowncorgi", "traaaaaaannnnnnnnnns", "transpositive", "trollxchromosomes", "twoxchromosomes"]);
-			var E = i("./src/reddit/featureFlags/useProductionStreamingApi.ts");
-			const S = {
-					[E.a]: () => Object(E.b)(),
+			const g = new Set(["AntiEvilPlayground"].map(e => e.toLowerCase())),
+				w = new Set(["AntiEvilPlayground", "lgbt", "dccomics", "yurop", "muaonthecheap", "loveislandusa", "blackladiesdating", "stpetersburgfl", "pics", "canada", "askuk", "fortnitebr", "unitedkingdom", "stopdrinking", "casualconversation", "animalsonreddit", "bisexual", "liberalgunowners", "redditsweats", "orangetheory", "fortnite", "readwithme", "dndgreentext", "ukraine", "auntienetwork"].map(e => e.toLowerCase())),
+				v = new Set(["uzitest", "testingtesting127", "kpkrunal"]);
+			var y = i("./src/reddit/featureFlags/subredditPoints.ts");
+			const E = new Set(["askaliberal", "asktransgender", "askwomen", "bisexual", "blackladies", "exchristian", "exmormon", "gendercynical", "girlgamers", "neoliberal", "nothowgirlswork", "progresspics", "subredditdrama", "teenagers", "thegirlsurvivalguide", "thequickbrowncorgi", "traaaaaaannnnnnnnnns", "transpositive", "trollxchromosomes", "twoxchromosomes"]);
+			var S = i("./src/reddit/featureFlags/useProductionStreamingApi.ts");
+			const T = {
+					[S.a]: () => Object(S.b)(),
 					introModal: Object(u.d)(u.g),
 					markdownMode: u.g,
 					modQueue: Object(u.e)(u.g, u.h),
-					spBadges: v.c,
-					spBurnLinks: v.d,
-					spClaimablePoints: v.e,
-					spCustomBadgesAndEmotes: v.f,
-					spCustomCrypto: v.g,
-					spEmotes: v.h,
-					spGiphy: v.i,
-					spGovPolls: v.j,
-					spHarberger: v.k,
-					spLeaderboard: v.l,
-					spPoints: v.m,
-					spPointsCoinConversion: v.n,
-					spPolls: v.o,
-					spPublicPoints: v.p,
-					spSpecialMemberships: v.r,
-					spSpecialMembershipUpsells: v.q,
-					spSpinoffs: v.s,
-					spTipping: v.t,
-					spWalletRegistrationBanner: v.u,
+					spBadges: y.c,
+					spBurnLinks: y.d,
+					spClaimablePoints: y.e,
+					spCustomBadgesAndEmotes: y.f,
+					spCustomCrypto: y.g,
+					spEmotes: y.h,
+					spGiphy: y.i,
+					spGovPolls: y.j,
+					spHarberger: y.k,
+					spLeaderboard: y.l,
+					spPoints: y.m,
+					spPointsCoinConversion: y.n,
+					spPolls: y.o,
+					spPublicPoints: y.p,
+					spSpecialMemberships: y.r,
+					spSpecialMembershipUpsells: y.q,
+					spSpinoffs: y.s,
+					spTipping: y.t,
+					spWalletRegistrationBanner: y.u,
 					scheduledPosts: e => {
 						const t = Object(h.d)(e);
 						return !!t && Object(p.i)(e, {
@@ -20834,7 +20838,7 @@
 					},
 					enableToxicityWarning: e => {
 						const t = Object(h.d)(e);
-						return !!t && y.has(t.toLowerCase())
+						return !!t && E.has(t.toLowerCase())
 					},
 					snoovatar30: u.g,
 					geoSubredditRecommendationDULoggedIn: u.k,
@@ -20842,31 +20846,35 @@
 					subredditInlineEditing: u.l,
 					modToMemberShare: e => {
 						const t = Object(h.d)(e);
-						return !!t && w.has(t.toLowerCase())
+						return !!t && v.has(t.toLowerCase())
 					},
 					subredditMentionD2xExperiment: u.l,
 					privacySettingLocationBasedRecommendations: u.l,
 					reCaptchaEnterprise: Object(u.d)(Object(u.b)(...d.d)),
 					hatefulContentFiltersEnabled: e => {
 						const t = Object(h.d)(e);
+						return !!t && w.has(t.toLowerCase())
+					},
+					banEvasionProtectionEnabled: e => {
+						const t = Object(h.d)(e);
 						return !!t && g.has(t.toLowerCase())
 					},
 					__requiredDoNotRemove: u.k
 				},
-				T = o()(S, (e, t) => i => {
+				O = o()(T, (e, t) => i => {
 					const n = i.featureFlags.overrides[t];
 					return r()(n) ? e(i) : n
 				}),
-				O = Object.keys(S),
-				I = e => e.filter(e => "__requiredDoNotRemove" !== e),
-				R = /^feature_(.*)$/i,
-				F = e => {
-					const t = e.match(R);
+				I = Object.keys(T),
+				R = e => e.filter(e => "__requiredDoNotRemove" !== e),
+				F = /^feature_(.*)$/i,
+				N = e => {
+					const t = e.match(F);
 					if (null !== t) return t[1]
 				},
-				N = "FEATURES__FEATURE_SET",
-				C = "FEATURES__FEATURE_TOGGLED",
-				A = function(e) {
+				C = "FEATURES__FEATURE_SET",
+				A = "FEATURES__FEATURE_TOGGLED",
+				j = function(e) {
 					for (var t = arguments.length, i = new Array(t > 1 ? t - 1 : 0), n = 1; n < t; n++) i[n - 1] = arguments[n];
 					return function() {
 						for (var t = arguments.length, n = new Array(t), r = 0; r < t; r++) n[r] = arguments[r];
@@ -20879,20 +20887,20 @@
 						currentValue: i
 					} = e;
 					return {
-						type: C,
+						type: A,
 						payload: {
 							featureName: t,
 							currentValue: i
 						}
 					}
-				}, E.c),
-				j = e => {
+				}, S.c),
+				D = e => {
 					let {
 						featureName: t
 					} = e;
 					return (e, i) => {
-						const n = (0, T[t])(i());
-						e(A({
+						const n = (0, O[t])(i());
+						e(j({
 							featureName: t,
 							currentValue: n
 						}))
@@ -47795,4 +47803,4 @@
 		"ignored /drone/src/node_modules/readable-stream/lib/internal/streams util": function(e, t) {}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.45a90f92a9dd53be642c.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.6d36ad9372636bda10af.js.map

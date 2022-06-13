@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/OnboardingModal.8a8dec09def99a0d0028.js
-// Retrieved at 6/13/2022, 2:20:03 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/OnboardingModal.02e0aecfbb7866ce7daa.js
+// Retrieved at 6/13/2022, 4:40:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["OnboardingModal"], {
 		"./node_modules/lodash/_baseRange.js": function(e, t) {
@@ -2759,7 +2759,7 @@
 				ce = h.a.div("RangeSlider", B.a),
 				de = h.a.div("Ticks", B.a),
 				le = h.a.div("TickText", B.a),
-				ue = h.a.div("PreSubText", B.a),
+				ue = h.a.span("PreSubText", B.a),
 				me = Object(i.c)({
 					isNightModeOn: P.db
 				}),
@@ -4181,4 +4181,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/OnboardingModal.8a8dec09def99a0d0028.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/OnboardingModal.02e0aecfbb7866ce7daa.js.map
