@@ -1,9 +1,9 @@
-// https://www.redditstatic.com/desktop2x/ViewsTooltip.f441bf5387f6efdcb80a.js
-// Retrieved at 5/9/2022, 3:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ViewsTooltip.65733d5bc334c0ac1f5c.js
+// Retrieved at 6/13/2022, 12:00:03 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ViewsTooltip"], {
 		"./node_modules/moment/locale sync recursive ^\\.\\/.*$": function(e, o, l) {
-			var m = {
+			var s = {
 				"./af": "./node_modules/moment/locale/af.js",
 				"./af.js": "./node_modules/moment/locale/af.js",
 				"./ar": "./node_modules/moment/locale/ar.js",
@@ -270,167 +270,172 @@
 				"./zh-tw.js": "./node_modules/moment/locale/zh-tw.js"
 			};
 
-			function s(e) {
+			function m(e) {
 				var o = n(e);
 				return l(o)
 			}
 
 			function n(e) {
-				if (!l.o(m, e)) {
+				if (!l.o(s, e)) {
 					var o = new Error("Cannot find module '" + e + "'");
 					throw o.code = "MODULE_NOT_FOUND", o
 				}
-				return m[e]
+				return s[e]
 			}
-			s.keys = function() {
-				return Object.keys(m)
-			}, s.resolve = n, e.exports = s, s.id = "./node_modules/moment/locale sync recursive ^\\.\\/.*$"
+			m.keys = function() {
+				return Object.keys(s)
+			}, m.resolve = n, e.exports = m, m.id = "./node_modules/moment/locale sync recursive ^\\.\\/.*$"
 		},
 		"./src/reddit/components/CreatorStats/ViewsTooltip.tsx": function(e, o, l) {
 			"use strict";
 			l.r(o);
 			l("./node_modules/chartjs-adapter-moment/dist/chartjs-adapter-moment.esm.js");
-			var m = l("./node_modules/fbt/lib/FbtPublic.js"),
-				s = l("./node_modules/moment/moment.js"),
-				n = l.n(s),
+			var s = l("./node_modules/fbt/lib/FbtPublic.js"),
+				m = l("./node_modules/moment/moment.js"),
+				n = l.n(m),
 				d = l("./node_modules/react/index.js"),
 				t = l.n(d),
 				a = l("./node_modules/react-chartjs-2/dist/index.modern.js"),
-				c = l("./src/lib/constants/index.ts"),
-				j = l("./src/lib/CSSVariableProvider/withTheme.tsx"),
-				u = l("./src/lib/prettyPrintNumber/index.ts"),
-				_ = l("./src/reddit/models/Theme/NewColorSystem/index.ts"),
-				r = l("./src/reddit/components/CreatorStats/index.m.less"),
-				i = l.n(r),
-				h = l("./src/reddit/constants/colors.ts");
-			const b = {
+				c = l("./node_modules/react-redux/es/index.js"),
+				j = l("./src/lib/constants/index.ts"),
+				u = l("./src/lib/CSSVariableProvider/withTheme.tsx"),
+				_ = l("./src/lib/prettyPrintNumber/index.ts"),
+				r = l("./src/reddit/constants/colors.ts"),
+				i = l("./src/reddit/models/Theme/NewColorSystem/index.ts"),
+				h = l("./src/reddit/selectors/userPrefs.ts"),
+				b = l("./src/reddit/components/CreatorStats/index.m.less"),
+				p = l.n(b);
+			const k = {
 					icon: "https://i.redd.it/award_images/t5_22cerq/s5edqq9abef41_StonksRising.png",
 					text: [{
-						header: m.fbt._("This post is rising!", null, {
+						header: s.fbt._("This post is rising!", null, {
 							hk: "4mMoZi"
 						}),
-						description: m.fbt._("People are really into this", null, {
+						description: s.fbt._("People are really into this", null, {
 							hk: "4kYun5"
 						})
 					}, {
-						header: m.fbt._("On the rise!", null, {
+						header: s.fbt._("On the rise!", null, {
 							hk: "4uRxa6"
 						}),
-						description: m.fbt._("More people are seeing this", null, {
+						description: s.fbt._("More people are seeing this", null, {
 							hk: "2lrtHO"
 						})
 					}, {
-						header: m.fbt._("Moving on up!", null, {
+						header: s.fbt._("Moving on up!", null, {
 							hk: "1BCUpk"
 						}),
-						description: m.fbt._("This post is hot-hot-hot", null, {
+						description: s.fbt._("This post is hot-hot-hot", null, {
 							hk: "4kPP7S"
 						})
 					}, {
-						header: m.fbt._("Check it out!", null, {
+						header: s.fbt._("Check it out!", null, {
 							hk: "Wph3E"
 						}),
-						description: m.fbt._("A lot of eyes are on this post", null, {
+						description: s.fbt._("A lot of eyes are on this post", null, {
 							hk: "2gC2qH"
 						})
 					}]
 				},
-				p = {
+				f = {
 					icon: "https://i.redd.it/award_images/t5_22cerq/kqr00h8b7q161_BurningCash.png",
 					text: [{
-						header: m.fbt._("What?!", null, {
+						header: s.fbt._("What?!", null, {
 							hk: "4iAtQ6"
 						}),
-						description: m.fbt._("This post is on fire!", null, {
+						description: s.fbt._("This post is on fire!", null, {
 							hk: "2RAhI6"
 						})
 					}, {
-						header: m.fbt._("Woah!", null, {
+						header: s.fbt._("Woah!", null, {
 							hk: "1R2vAv"
 						}),
-						description: m.fbt._("This post has over 500 views!", null, {
+						description: s.fbt._("This post has over 500 views!", null, {
 							hk: "49uE2U"
 						})
 					}, {
-						header: m.fbt._("Unstoppable!", null, {
+						header: s.fbt._("Unstoppable!", null, {
 							hk: "jY9FE"
 						}),
-						description: m.fbt._("Over 500 views? What?!", null, {
+						description: s.fbt._("Over 500 views? What?!", null, {
 							hk: "2e1p7F"
 						})
 					}]
 				},
-				k = {
+				g = {
 					icon: "https://www.redditstatic.com/gold/awards/icon/Superheart_256.png",
+					staticIcon: "https://i.redd.it/award_images/t5_22cerq/trfyx0qv67g41_SuperHeartEyes.png",
 					text: [{
-						header: m.fbt._("Nice job!", null, {
+						header: s.fbt._("Nice job!", null, {
 							hk: "DYjf1"
 						}),
-						description: m.fbt._("This post is picking up steam", null, {
+						description: s.fbt._("This post is picking up steam", null, {
 							hk: "4qT5Ll"
 						})
 					}, {
-						header: m.fbt._("Well done!", null, {
+						header: s.fbt._("Well done!", null, {
 							hk: "3jFWil"
 						}),
-						description: m.fbt._("This post is getting seen", null, {
+						description: s.fbt._("This post is getting seen", null, {
 							hk: "KEEP7"
 						})
 					}, {
-						header: m.fbt._("Cool!", null, {
+						header: s.fbt._("Cool!", null, {
 							hk: "4mkKKI"
 						}),
-						description: m.fbt._("People are starting to see this post", null, {
+						description: s.fbt._("People are starting to see this post", null, {
 							hk: "1kvse2"
 						})
 					}, {
-						header: m.fbt._("Getting there!", null, {
+						header: s.fbt._("Getting there!", null, {
 							hk: "3AtMdZ"
 						}),
-						description: m.fbt._("This post is making the rounds", null, {
+						description: s.fbt._("This post is making the rounds", null, {
 							hk: "3CIkWf"
 						})
 					}]
 				},
-				f = (e, o) => o >= 10 ? b : e >= 500 ? p : k,
-				g = e => {
+				v = (e, o) => o >= 10 ? k : e >= 500 ? f : g,
+				y = e => {
 					const o = e.text.length,
 						l = Math.floor(Math.random() * o);
 					return e.text[l]
 				},
-				v = e => {
+				z = e => {
 					let {
 						views: o,
 						lastHourViews: l
 					} = e;
-					const [s, n] = Object(d.useState)(f(o, l)), [a, c] = Object(d.useState)(g(s));
+					const m = Object(c.e)(h.c),
+						[n, a] = Object(d.useState)(v(o, l)),
+						[j, u] = Object(d.useState)(y(n));
 					return Object(d.useEffect)(() => {
-						const e = f(o, l);
-						n(e)
+						const e = v(o, l);
+						a(e)
 					}, [o, l]), Object(d.useEffect)(() => {
-						const e = g(s);
-						c(e)
-					}, [s]), t.a.createElement("div", {
-						className: i.a.copyContainer
+						const e = y(n);
+						u(e)
+					}, [n]), t.a.createElement("div", {
+						className: p.a.copyContainer
 					}, t.a.createElement("div", null, t.a.createElement("span", {
-						className: i.a.copyHeader
-					}, a.header), t.a.createElement("span", {
-						className: i.a.copyDescription
-					}, " ", a.description)), t.a.createElement("div", null, t.a.createElement("img", {
-						src: s.icon,
-						alt: m.fbt._("copy award icon", null, {
+						className: p.a.copyHeader
+					}, j.header), t.a.createElement("span", {
+						className: p.a.copyDescription
+					}, " ", j.description)), t.a.createElement("div", null, t.a.createElement("img", {
+						src: m && n.staticIcon ? n.staticIcon : n.icon,
+						alt: s.fbt._("copy award icon", null, {
 							hk: "3rifVz"
 						}),
-						className: i.a.copyAwardIcon
+						className: p.a.copyAwardIcon
 					})))
 				},
-				y = 2 * c.B,
-				z = ["6AM", "12PM", "6PM"];
-			o.default = Object(j.a)(e => {
+				w = 2 * j.B,
+				E = ["6AM", "12PM", "6PM"];
+			o.default = Object(u.a)(e => {
 				let {
 					viewsData: o,
 					totalCount: l,
-					theme: s
+					theme: m
 				} = e;
 				const d = {
 						labels: o.map(e => {
@@ -446,7 +451,7 @@
 								} = e;
 								return o
 							}),
-							backgroundColor: h.a.op,
+							backgroundColor: r.a.op,
 							borderRadius: 2
 						}]
 					},
@@ -465,7 +470,7 @@
 									const e = new Date(o[0].at);
 									return {
 										min: e.getTime(),
-										max: e.getTime() + y
+										max: e.getTime() + w
 									}
 								})(),
 								type: "time",
@@ -479,13 +484,13 @@
 									font: {
 										size: 10
 									},
-									callback: (e, o, l) => "12AM" === e ? n()(l[o].value).format("DD MMM") : "string" == typeof e && z.includes(e) ? e : null
+									callback: (e, o, l) => "12AM" === e ? n()(l[o].value).format("DD MMM") : "string" == typeof e && E.includes(e) ? e : null
 								},
 								grid: {
 									color: e => {
 										var o;
-										return (null === (o = null == e ? void 0 : e.tick) || void 0 === o ? void 0 : o.label) ? Object(_.a)({
-											theme: s
+										return (null === (o = null == e ? void 0 : e.tick) || void 0 === o ? void 0 : o.label) ? Object(i.a)({
+											theme: m
 										}).placeholder : ""
 									},
 									drawBorder: !1,
@@ -496,49 +501,49 @@
 								ticks: {
 									count: 3,
 									stepSize: 10,
-									callback: e => Object(u.b)(e)
+									callback: e => Object(_.b)(e)
 								},
 								grid: {
-									color: e => 2 === (null == e ? void 0 : e.index) ? "" : Object(_.a)({
-										theme: s
+									color: e => 2 === (null == e ? void 0 : e.index) ? "" : Object(i.a)({
+										theme: m
 									}).placeholder,
 									drawBorder: !1
 								}
 							}
 						}
 					};
-				return t.a.createElement(t.a.Fragment, null, t.a.createElement(v, {
+				return t.a.createElement(t.a.Fragment, null, t.a.createElement(z, {
 					views: l,
 					lastHourViews: o[o.length - 1].value
 				}), t.a.createElement("div", {
-					className: i.a.graphTitle
-				}, m.fbt._("First 48 hours", null, {
+					className: p.a.graphTitle
+				}, s.fbt._("First 48 hours", null, {
 					hk: "1ynLLb"
 				})), t.a.createElement(a.a, {
 					height: 100,
 					data: d,
 					options: c
 				}), t.a.createElement("div", {
-					className: i.a.barContainerStats
+					className: p.a.barContainerStats
 				}, t.a.createElement("div", {
-					className: i.a.graphSingleStat
+					className: p.a.graphSingleStat
 				}, t.a.createElement("div", {
-					className: i.a.statNumber
-				}, Object(u.b)(l)), t.a.createElement("div", {
-					className: i.a.statDescription
-				}, m.fbt._("Total views", null, {
+					className: p.a.statNumber
+				}, Object(_.b)(l)), t.a.createElement("div", {
+					className: p.a.statDescription
+				}, s.fbt._("Total views", null, {
 					hk: "4sCYIU"
 				}))), t.a.createElement("div", {
-					className: `${i.a.graphSingleStat} ${i.a.pastHourStat}`
+					className: `${p.a.graphSingleStat} ${p.a.pastHourStat}`
 				}, o.length < 48 && t.a.createElement(t.a.Fragment, null, t.a.createElement("div", {
-					className: i.a.statNumber
-				}, Object(u.b)(o[o.length - 1].value)), t.a.createElement("div", {
-					className: i.a.statDescription
-				}, m.fbt._("In the past hour", null, {
+					className: p.a.statNumber
+				}, Object(_.b)(o[o.length - 1].value)), t.a.createElement("div", {
+					className: p.a.statDescription
+				}, s.fbt._("In the past hour", null, {
 					hk: "2B71ms"
 				}))))))
 			})
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ViewsTooltip.f441bf5387f6efdcb80a.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ViewsTooltip.65733d5bc334c0ac1f5c.js.map
