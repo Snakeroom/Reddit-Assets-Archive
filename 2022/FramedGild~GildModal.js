@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/FramedGild~GildModal.16096b7b1127b1c07118.js
-// Retrieved at 6/13/2022, 9:30:03 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/FramedGild~GildModal.57971e3187968edd6a9c.js
+// Retrieved at 6/13/2022, 10:00:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["FramedGild~GildModal", "gildActions"], {
 		"./node_modules/@stripe/react-stripe-js/dist/react-stripe.umd.js": function(e, t, r) {
@@ -2852,7 +2852,7 @@
 								thingId: r,
 								subredditId: n
 							}),
-							a = s ? Object(P.i)(e, {
+							a = s ? Object(P.h)(e, {
 								subredditId: s,
 								thingId: r
 							}) : [];
@@ -2867,7 +2867,7 @@
 								thingId: r,
 								subredditId: n
 							}),
-							a = (s ? Object(P.i)(e, {
+							a = (s ? Object(P.h)(e, {
 								subredditId: s,
 								thingId: r
 							}) : []).map(e => e.award);
@@ -2889,7 +2889,7 @@
 							if (!t) return !1;
 							s = t.id
 						}
-						return Object(P.h)(e, {
+						return Object(P.g)(e, {
 							subredditId: s,
 							thingId: r
 						})
@@ -2955,7 +2955,7 @@
 							});
 							s = t && t.belongsTo.id
 						}
-						return s ? Object(P.j)(e, {
+						return s ? Object(P.i)(e, {
 							subredditId: s
 						}) : []
 					},
@@ -6057,4 +6057,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/FramedGild~GildModal.16096b7b1127b1c07118.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/FramedGild~GildModal.57971e3187968edd6a9c.js.map

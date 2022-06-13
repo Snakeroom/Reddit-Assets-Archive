@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Settings.23fbefa5fe920d7800a7.js
-// Retrieved at 6/13/2022, 9:30:03 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Settings.6c8a5e5c7dac30abd129.js
+// Retrieved at 6/13/2022, 10:00:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Settings"], {
 		"./node_modules/moment/locale sync recursive ^\\.\\/.*$": function(e, t, n) {
@@ -3432,14 +3432,16 @@
 		},
 		"./src/reddit/components/Hovercards/HoverDiv/index.tsx": function(e, t, n) {
 			"use strict";
-			n.d(t, "a", (function() {
+			n.d(t, "b", (function() {
+				return v
+			})), n.d(t, "a", (function() {
+				return _
+			})), n.d(t, "c", (function() {
 				return y
-			})), n.d(t, "b", (function() {
-				return x
 			}));
 			var s = n("./node_modules/react/index.js"),
 				r = n.n(s),
-				a = n("./src/lib/lessComponent.tsx"),
+				a = n("./src/lib/classNames/index.ts"),
 				o = n("./node_modules/react-redux/es/index.js"),
 				i = n("./node_modules/reselect/es/index.js"),
 				c = n("./src/reddit/actions/profile/index.ts"),
@@ -3477,7 +3479,7 @@
 						this.isHovering = !0
 					}, this.onHoverElMouseLeave = () => {
 						this.isHovering = !1
-					}, this.onMouseEnter = e => {
+					}, this.onMouseEnter = () => {
 						this.closeHovercardTimeoutId && clearTimeout(this.closeHovercardTimeoutId), this.openHovercardTimeoutId = window.setTimeout(() => {
 							this.isHovering || this.props.dropdownIsOpen || this.props.onOpenUserDropdown()
 						}, 500)
@@ -3508,16 +3510,15 @@
 						className: t
 					} = this.props;
 					return r.a.createElement("div", {
-						className: t,
+						className: Object(a.a)(g.a.HoverDiv, t),
 						onMouseEnter: this.onMouseEnter,
 						onMouseLeave: this.onMouseLeave,
 						onClick: this.onClick
 					}, e)
 				}
 			}
-			const _ = a.a.wrapped(v, "HoverDiv", g.a),
-				y = u(_),
-				x = h(_)
+			const _ = u(v),
+				y = h(v)
 		},
 		"./src/reddit/components/Hovercards/helpers.m.less": function(e, t, n) {
 			e.exports = {
@@ -14249,4 +14250,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Settings.23fbefa5fe920d7800a7.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Settings.6c8a5e5c7dac30abd129.js.map

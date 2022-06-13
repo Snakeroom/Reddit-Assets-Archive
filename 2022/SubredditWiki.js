@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditWiki.ec10599e13e0587dc15a.js
-// Retrieved at 6/13/2022, 9:30:03 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditWiki.1389998deb09be402615.js
+// Retrieved at 6/13/2022, 10:00:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditWiki"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -1054,14 +1054,16 @@
 		},
 		"./src/reddit/components/Hovercards/HoverDiv/index.tsx": function(e, t, s) {
 			"use strict";
-			s.d(t, "a", (function() {
+			s.d(t, "b", (function() {
+				return x
+			})), s.d(t, "a", (function() {
+				return g
+			})), s.d(t, "c", (function() {
 				return O
-			})), s.d(t, "b", (function() {
-				return y
 			}));
 			var r = s("./node_modules/react/index.js"),
 				n = s.n(r),
-				i = s("./src/lib/lessComponent.tsx"),
+				i = s("./src/lib/classNames/index.ts"),
 				o = s("./node_modules/react-redux/es/index.js"),
 				d = s("./node_modules/reselect/es/index.js"),
 				a = s("./src/reddit/actions/profile/index.ts"),
@@ -1099,7 +1101,7 @@
 						this.isHovering = !0
 					}, this.onHoverElMouseLeave = () => {
 						this.isHovering = !1
-					}, this.onMouseEnter = e => {
+					}, this.onMouseEnter = () => {
 						this.closeHovercardTimeoutId && clearTimeout(this.closeHovercardTimeoutId), this.openHovercardTimeoutId = window.setTimeout(() => {
 							this.isHovering || this.props.dropdownIsOpen || this.props.onOpenUserDropdown()
 						}, 500)
@@ -1130,16 +1132,15 @@
 						className: t
 					} = this.props;
 					return n.a.createElement("div", {
-						className: t,
+						className: Object(i.a)(v.a.HoverDiv, t),
 						onMouseEnter: this.onMouseEnter,
 						onMouseLeave: this.onMouseLeave,
 						onClick: this.onClick
 					}, e)
 				}
 			}
-			const g = i.a.wrapped(x, "HoverDiv", v.a),
-				O = m(g),
-				y = h(g)
+			const g = m(x),
+				O = h(x)
 		},
 		"./src/reddit/components/Hovercards/helpers.m.less": function(e, t, s) {
 			e.exports = {
@@ -5246,4 +5247,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditWiki.ec10599e13e0587dc15a.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditWiki.1389998deb09be402615.js.map
