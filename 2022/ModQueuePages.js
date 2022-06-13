@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModQueuePages.361cfa15662697d58bb6.js
-// Retrieved at 6/13/2022, 10:50:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModQueuePages.0f636df701a6c48819da.js
+// Retrieved at 6/13/2022, 12:30:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModQueuePages"], {
 		"./node_modules/lodash/includes.js": function(e, t, s) {
@@ -208,7 +208,7 @@
 			}
 			var v;
 			! function(e) {
-				e.Comment = "ModQueueItemComment", e.Post = "ModQueueItemPost"
+				e.Comment = "ModQueueItemComment", e.Post = "ModQueueItemPost", e.ChatComment = "ModQueueItemChatComment"
 			}(v || (v = {}));
 			var y = s("./src/reddit/models/ModQueue/index.ts"),
 				I = s("./src/reddit/models/Toast/index.ts"),
@@ -324,7 +324,7 @@
 								const {
 									id: i
 								} = a;
-								if (o === v.Comment) {
+								if (o === v.Comment || o === v.ChatComment) {
 									const {
 										commentInfo: e
 									} = r;
@@ -5823,4 +5823,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModQueuePages.361cfa15662697d58bb6.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModQueuePages.0f636df701a6c48819da.js.map

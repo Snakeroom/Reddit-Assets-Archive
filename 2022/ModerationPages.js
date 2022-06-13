@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModerationPages.7c3f604a4034efed9a90.js
-// Retrieved at 6/13/2022, 10:50:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModerationPages.0f6f490337a32e11ce2d.js
+// Retrieved at 6/13/2022, 12:30:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModerationPages"], {
 		"./node_modules/lodash/_arrayAggregator.js": function(e, t) {
@@ -462,7 +462,7 @@
 			}
 			var S;
 			! function(e) {
-				e.Comment = "ModQueueItemComment", e.Post = "ModQueueItemPost"
+				e.Comment = "ModQueueItemComment", e.Post = "ModQueueItemPost", e.ChatComment = "ModQueueItemChatComment"
 			}(S || (S = {}));
 			var j = s("./src/reddit/models/ModQueue/index.ts"),
 				N = s("./src/reddit/models/Toast/index.ts"),
@@ -578,7 +578,7 @@
 								const {
 									id: i
 								} = r;
-								if (o === S.Comment) {
+								if (o === S.Comment || o === S.ChatComment) {
 									const {
 										commentInfo: e
 									} = a;
@@ -23669,4 +23669,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.7c3f604a4034efed9a90.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.0f6f490337a32e11ce2d.js.map
