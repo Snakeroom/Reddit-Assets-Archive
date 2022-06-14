@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~CountryPage~FramedGild~GildModal~GovernanceReleaseNotesModal~Mem~c8b748a6.2753a5f2ae4f0d54aee4.js
-// Retrieved at 6/13/2022, 5:30:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~CountryPage~FramedGild~GildModal~GovernanceReleaseNotesModal~Mem~c8b748a6.20ee9f4e25bd76ad6924.js
+// Retrieved at 6/14/2022, 10:30:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~CountryPage~FramedGild~GildModal~GovernanceReleaseNotesModal~Mem~c8b748a6"], {
 		"./src/lib/colors/constants.ts": function(e, t, s) {
@@ -2666,10 +2666,10 @@
 				a = s("./src/reddit/constants/experiments.ts"),
 				n = s("./src/reddit/helpers/chooseVariant/index.ts");
 			const o = Object(i.a)(e => Object(n.c)(e, {
-					experimentName: a.Nf,
+					experimentName: a.Mf,
 					experimentEligibilitySelector: n.a
 				}), e => e),
-				r = Object(i.a)(o, e => e === a.Gf)
+				r = Object(i.a)(o, e => e === a.Ff)
 		},
 		"./src/reddit/selectors/experiments/videoReactions.ts": function(e, t, s) {
 			"use strict";
@@ -2684,12 +2684,12 @@
 			const o = e => Object(a.c)(e, {
 					experimentName: i.ub,
 					experimentEligibilitySelector: n.e
-				}) === i.td,
+				}) === i.sd,
 				r = e => Object(a.c)(e, {
 					experimentName: i.kc,
 					experimentEligibilitySelector: a.a
-				}) === i.td
+				}) === i.sd
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~CountryPage~FramedGild~GildModal~GovernanceReleaseNotesModal~Mem~c8b748a6.2753a5f2ae4f0d54aee4.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~CountryPage~FramedGild~GildModal~GovernanceReleaseNotesModal~Mem~c8b748a6.20ee9f4e25bd76ad6924.js.map

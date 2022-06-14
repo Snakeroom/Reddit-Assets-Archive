@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Premium.7f278ebec41483ad6a22.js
-// Retrieved at 6/13/2022, 5:30:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Premium.ac8751877508e31c3593.js
+// Retrieved at 6/14/2022, 10:30:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Premium"], {
 		"./src/reddit/endpoints/gold/productCatalog/old.index.ts": function(e, r, t) {
@@ -273,10 +273,10 @@
 				P = Object(d.a)(n.cd),
 				y = Object(d.a)(n.gd),
 				_ = Object(d.a)(n.ld),
-				x = Object(d.a)(n.nd),
-				v = Object(d.a)(n.qd),
-				k = Object(d.a)(n.pd),
-				C = Object(d.a)(n.od)
+				x = Object(d.a)(n.md),
+				v = Object(d.a)(n.pd),
+				k = Object(d.a)(n.od),
+				C = Object(d.a)(n.nd)
 		},
 		"./src/reddit/selectors/goldPurchaseModals.ts": function(e, r, t) {
 			"use strict";
@@ -380,4 +380,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Premium.7f278ebec41483ad6a22.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Premium.ac8751877508e31c3593.js.map
