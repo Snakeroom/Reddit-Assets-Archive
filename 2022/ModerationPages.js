@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModerationPages.78876bf59f9983581ca3.js
-// Retrieved at 6/14/2022, 10:30:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModerationPages.0e2e800ac4e28f3ef13a.js
+// Retrieved at 6/14/2022, 5:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModerationPages"], {
 		"./node_modules/lodash/_arrayAggregator.js": function(e, t) {
@@ -1644,7 +1644,7 @@
 						m = e[0],
 						u = Object(z.a)(m) ? Q.e.Post : Q.e.Comment,
 						p = u === Q.e.Post ? d.posts.models[m] : d.features.comments.models[m],
-						h = u === Q.e.Post ? R.S : T.i;
+						h = u === Q.e.Post ? R.S : T.j;
 					if (!p || !c) return !1;
 					o(ge()), o(h({
 						[m]: {
@@ -1698,7 +1698,7 @@
 												id: e.id,
 												postId: e.postId,
 												commentsPageKey: a
-											})), n && n !== e.id && o(Object(T.i)({
+											})), n && n !== e.id && o(Object(T.j)({
 												[n]: {
 													isStickied: !1
 												}
@@ -3346,7 +3346,7 @@
 					return {
 						onIgnoreReports: () => e(Object(d.g)(s)),
 						onVoteClick: t => {
-							const [a, o] = t === _.a.upvoted ? [Object(l.q)(s), "upvote_comment"] : [Object(l.j)(s), "downvote_comment"];
+							const [a, o] = t === _.a.upvoted ? [Object(l.r)(s), "upvote_comment"] : [Object(l.k)(s), "downvote_comment"];
 							n(o)(), e(a)
 						}
 					}
@@ -7609,7 +7609,7 @@
 			}
 
 			function g() {
-				return Object(d.a)(i.V) === i.sd
+				return Object(d.a)(i.W) === i.td
 			}
 
 			function f() {
@@ -13641,7 +13641,7 @@
 					isAddUserModalOpen: Object(y.b)("ModerationPage--Modal--AddModerator"),
 					isEditableListPending: j.a,
 					isInvitePendingModalOpen: Object(y.b)("ModerationPage--Modal--InvitePending"),
-					isLivePostCreatorModRoleEnabled: Ae.d,
+					isLivePostCreatorModRoleEnabled: Ae.e,
 					isModeratorListPending: j.i,
 					isResignAsModeratorModalOpen: Object(y.b)("ModerationPage--Modal--Resign"),
 					origin: O.j,
@@ -23708,27 +23708,30 @@
 		},
 		"./src/reddit/selectors/experiments/chat.ts": function(e, t, s) {
 			"use strict";
-			s.d(t, "c", (function() {
+			s.d(t, "d", (function() {
 				return o
 			})), s.d(t, "b", (function() {
 				return r
-			})), s.d(t, "f", (function() {
+			})), s.d(t, "g", (function() {
 				return i
-			})), s.d(t, "d", (function() {
-				return l
 			})), s.d(t, "e", (function() {
+				return l
+			})), s.d(t, "f", (function() {
 				return d
 			})), s.d(t, "a", (function() {
 				return c
+			})), s.d(t, "c", (function() {
+				return m
 			}));
 			var n = s("./src/reddit/constants/experiments.ts"),
 				a = s("./src/reddit/selectors/experiments/econ/simpleExperiment.ts");
-			const o = Object(a.a)(n.J),
+			const o = Object(a.a)(n.K),
 				r = Object(a.a)(n.I),
-				i = Object(a.a)(n.ee),
-				l = Object(a.a)(n.K),
-				d = Object(a.a)(n.L),
-				c = Object(a.a)(n.H)
+				i = Object(a.a)(n.fe),
+				l = Object(a.a)(n.L),
+				d = Object(a.a)(n.M),
+				c = Object(a.a)(n.H),
+				m = Object(a.a)(n.J)
 		},
 		"./src/reddit/selectors/experiments/emailInvite.ts": function(e, t, s) {
 			"use strict";
@@ -23740,9 +23743,9 @@
 			const o = e => {
 				const t = Object(a.c)(e, {
 					experimentEligibilitySelector: a.a,
-					experimentName: n.rd
+					experimentName: n.sd
 				});
-				return !(!t || Object(n.Vf)(t))
+				return !(!t || Object(n.Wf)(t))
 			}
 		},
 		"./src/reddit/selectors/showPromotedCTA.ts": function(e, t, s) {
@@ -23755,10 +23758,10 @@
 				o = s("./src/reddit/helpers/chooseVariant/index.ts"),
 				r = s("./src/reddit/selectors/posts.ts");
 			const i = e => Object(o.c)(e, {
-					experimentName: a.Me,
+					experimentName: a.Ne,
 					experimentEligibilitySelector: o.a
 				}),
-				l = (e, t) => t === a.Ue.Enabled && (null == e ? void 0 : e.isCreatedFromAdsUi) || (null == e ? void 0 : e.isSponsored),
+				l = (e, t) => t === a.Ve.Enabled && (null == e ? void 0 : e.isCreatedFromAdsUi) || (null == e ? void 0 : e.isSponsored),
 				d = Object(n.a)(r.G, i, (e, t) => l(e, t));
 			Object(n.a)((e, t) => t, i, (e, t) => l(e, t))
 		},
@@ -24016,4 +24019,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.78876bf59f9983581ca3.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.0e2e800ac4e28f3ef13a.js.map

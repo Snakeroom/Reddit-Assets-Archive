@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-ModHub-Content-ModQueue.6ebf3d21f2d4877c82f2.js
-// Retrieved at 6/13/2022, 1:00:03 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-ModHub-Content-ModQueue.dc57339e3e732bcbadca.js
+// Retrieved at 6/14/2022, 5:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-ModHub-Content-ModQueue"], {
 		"./src/reddit/components/Comments/CompactUnthreadedComment/index.m.less": function(e, t, s) {
@@ -358,7 +358,7 @@
 				L = Object(d.c)({
 					currentPage: e => e.platform.currentPage,
 					origin: I.j,
-					isModQChatCommentsFilterEnabled: j.f
+					isModQChatCommentsFilterEnabled: j.g
 				});
 			var N = Object(i.b)(L)(e => a.a.createElement("div", null, a.a.createElement(y.default, {
 					onClick: e.sendEventWithName("content_type_both"),
@@ -531,7 +531,7 @@
 					isPostTypeFilterDropdownOpen: Object(k.b)(J),
 					isSubredditFilterDropdownOpen: Object(k.b)(Z),
 					isPostSortDropdownOpen: Object(k.b)($),
-					isModQChatCommentsFilterEnabled: j.f,
+					isModQChatCommentsFilterEnabled: j.g,
 					profile: (e, t) => {
 						let {
 							profileName: s
@@ -1443,4 +1443,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ModHub-Content-ModQueue.6ebf3d21f2d4877c82f2.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ModHub-Content-ModQueue.dc57339e3e732bcbadca.js.map

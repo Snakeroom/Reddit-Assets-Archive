@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModQueue.3c62c67181f95f1bda95.js
-// Retrieved at 6/14/2022, 9:30:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModQueue.68b2769dc83f5d3d5487.js
+// Retrieved at 6/14/2022, 5:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModQueue"], {
 		"./src/reddit/actions/bulkActions/index.ts": function(e, t, s) {
@@ -54,7 +54,7 @@
 				j = s("./src/reddit/selectors/user.ts"),
 				h = s("./src/reddit/actions/comment/index.ts"),
 				_ = s("./src/reddit/actions/comment/constants.ts");
-			const v = Object(n.a)(_.o),
+			const v = Object(n.a)(_.p),
 				R = e => async (t, s, o) => {
 					let {
 						apiContext: r
@@ -72,7 +72,7 @@
 					const a = s().features.comments.models[e];
 					if (!a) return;
 					const c = a.isLocked ? m.m : m.f;
-					t(Object(h.i)({
+					t(Object(h.j)({
 						[e]: {
 							isLocked: !a.isLocked
 						}
@@ -83,12 +83,12 @@
 						}) : o.fbt._("comment has been locked", null, {
 							hk: "1pBDQl"
 						})
-					})) : t(Object(h.i)({
+					})) : t(Object(h.j)({
 						[e]: {
 							isLocked: a.isLocked
 						}
 					}))
-				}, g = Object(n.a)(_.H), k = e => async (t, s, r) => {
+				}, g = Object(n.a)(_.I), k = e => async (t, s, r) => {
 					let {
 						apiContext: n,
 						gqlContext: a
@@ -96,7 +96,7 @@
 					const d = s(),
 						u = d.features.comments.models[e],
 						l = d.user.account ? d.user.account.displayText : null;
-					u && l && (t(Object(h.i)({
+					u && l && (t(Object(h.j)({
 						[e]: {
 							isApproved: !0,
 							approvedBy: l,
@@ -113,7 +113,7 @@
 						text: o.fbt._("comment has been approved", null, {
 							hk: "4GfKQi"
 						})
-					})) : t(Object(h.i)({
+					})) : t(Object(h.j)({
 						[e]: {
 							isApproved: u.isApproved,
 							approvedBy: null,
@@ -134,7 +134,7 @@
 					const u = r(),
 						l = u.features.comments.models[e],
 						b = u.user.account ? u.user.account.displayText : null;
-					l && b && (s(Object(h.i)({
+					l && b && (s(Object(h.j)({
 						[e]: {
 							approvedBy: null,
 							bannedBy: b,
@@ -149,7 +149,7 @@
 						}) : o.fbt._("comment has been removed", null, {
 							hk: "1qNTrD"
 						})
-					})) : s(Object(h.i)({
+					})) : s(Object(h.j)({
 						[e]: {
 							approvedBy: l.approvedBy,
 							bannedBy: l.bannedBy,
@@ -165,7 +165,7 @@
 					const a = s().features.comments.models[e];
 					if (!a) return;
 					const d = a.ignoreReports ? m.l : m.e;
-					t(Object(h.i)({
+					t(Object(h.j)({
 						[e]: {
 							ignoreReports: !a.ignoreReports
 						}
@@ -176,7 +176,7 @@
 						}) : o.fbt._("comment has had its reports ignored", null, {
 							hk: "2q4sCp"
 						})
-					})) : t(Object(h.i)({
+					})) : t(Object(h.j)({
 						[e]: {
 							ignoreReports: a.ignoreReports
 						}
@@ -197,7 +197,7 @@
 						};
 					if ((await Object(l.a)(c(), {
 							input: O
-						})).ok) n(Object(h.i)({
+						})).ok) n(Object(h.j)({
 						[e]: {
 							userReports: Object(b.a)(u.userReports, t, m)
 						}
@@ -218,14 +218,14 @@
 					if (!l) return;
 					const b = l.postId,
 						p = u.postStickiedComments.data[b];
-					o(Object(h.i)({
+					o(Object(h.j)({
 						[e]: {
 							distinguishType: t,
 							isAdmin: t === r.G.ADMIN,
 							isMod: t === r.G.MODERATOR,
 							isStickied: !!s
 						}
-					})), s && p && p !== e && o(Object(h.i)({
+					})), s && p && p !== e && o(Object(h.j)({
 						[p]: {
 							isStickied: !1
 						}
@@ -240,14 +240,14 @@
 							sort: r.t.CONFIDENCE,
 							...u.platform.currentPage.queryParams
 						})
-					})) : (o(Object(h.i)({
+					})) : (o(Object(h.j)({
 						[e]: {
 							distinguishType: l.distinguishType,
 							isAdmin: l.isAdmin,
 							isMod: l.isMod,
 							isStickied: l.isStickied
 						}
-					})), o(Object(h.i)({
+					})), o(Object(h.j)({
 						[p]: {
 							isStickied: u.features.comments.models[p].isStickied
 						}
@@ -1192,7 +1192,7 @@
 						m = e[0],
 						l = Object(H.a)(m) ? z.e.Post : z.e.Comment,
 						b = l === z.e.Post ? i.posts.models[m] : i.features.comments.models[m],
-						p = l === z.e.Post ? L.S : P.i;
+						p = l === z.e.Post ? L.S : P.j;
 					if (!b || !u) return !1;
 					n(Oe()), n(p({
 						[m]: {
@@ -1246,7 +1246,7 @@
 												id: e.id,
 												postId: e.postId,
 												commentsPageKey: r
-											})), o && o !== e.id && n(Object(P.i)({
+											})), o && o !== e.id && n(Object(P.j)({
 												[o]: {
 													isStickied: !1
 												}
@@ -1503,4 +1503,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModQueue.3c62c67181f95f1bda95.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModQueue.68b2769dc83f5d3d5487.js.map

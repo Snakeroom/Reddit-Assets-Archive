@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-NotificationUnit-Button.bbd5f46d501bc7e4998d.js
-// Retrieved at 6/14/2022, 10:30:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-NotificationUnit-Button.153605b106d5b8b6ff5d.js
+// Retrieved at 6/14/2022, 5:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-NotificationUnit-Button"], {
 		"./src/lib/scroll/index.ts": function(t, e, n) {
@@ -228,8 +228,8 @@
 				it = n("./node_modules/reselect/es/index.js");
 			const st = Object(it.a)(t => Object(rt.c)(t, {
 				experimentEligibilitySelector: rt.a,
-				experimentName: ot.Hb
-			}), t => t === ot.sd);
+				experimentName: ot.Ib
+			}), t => t === ot.td);
 			var ct = n("./src/reddit/selectors/experiments/contributeBeforeSignUp.ts"),
 				at = n("./src/reddit/selectors/experiments/emailEnablement.ts"),
 				dt = n("./src/reddit/selectors/platform.ts"),
@@ -237,7 +237,7 @@
 				ut = n("./src/reddit/selectors/user.ts"),
 				mt = n("./src/reddit/actions/comment/index.ts"),
 				pt = n("./src/reddit/actions/comment/constants.ts");
-			const bt = Object(i.a)(pt.l),
+			const bt = Object(i.a)(pt.m),
 				ft = t => {
 					let {
 						hasFocus: e,
@@ -258,10 +258,10 @@
 							}))
 					}
 				},
-				Ot = Object(i.a)(pt.J),
-				ht = Object(i.a)(pt.L),
-				gt = Object(i.a)(pt.K),
-				Ct = Object(i.a)(pt.I),
+				Ot = Object(i.a)(pt.K),
+				ht = Object(i.a)(pt.M),
+				gt = Object(i.a)(pt.L),
+				Ct = Object(i.a)(pt.J),
 				xt = async (t, e, n, o) => {
 					const r = o.ok && o.body,
 						i = r && r.comment && r.comment.id;
@@ -493,7 +493,7 @@
 							parentCommentDepth: n
 						}, !0, i, s))
 					}
-				}, Rt = Object(i.a)(pt.r), Pt = Object(i.a)(pt.z), Dt = Object(i.a)(pt.q), At = Object(i.a)(pt.m), Mt = (Object(i.a)(pt.h), Object(i.a)(pt.n)), Lt = (Object(i.a)(pt.u), (t, e, n) => async (r, i, s) => {
+				}, Rt = Object(i.a)(pt.s), Pt = Object(i.a)(pt.A), Dt = Object(i.a)(pt.r), At = Object(i.a)(pt.n), Mt = (Object(i.a)(pt.i), Object(i.a)(pt.o)), Lt = (Object(i.a)(pt.v), (t, e, n) => async (r, i, s) => {
 					let {
 						apiContext: c
 					} = s;
@@ -586,7 +586,7 @@
 						}))
 					}
 				}, Ft = t => async e => {
-					e(Object(mt.p)(t)), e(Vt(t))
+					e(Object(mt.q)(t)), e(Vt(t))
 				}, Kt = t => {
 					let {
 						parentCommentId: e,
@@ -599,7 +599,7 @@
 						})), t(Ut({
 							parentCommentId: e,
 							commentsPageKey: n
-						})), t(Object(mt.p)({
+						})), t(Object(mt.q)({
 							commentId: e,
 							commentsPageKey: n
 						}))
@@ -607,7 +607,7 @@
 				}, Bt = (t, e) => n => n(At({
 					draftKey: t,
 					formData: e
-				})), Ht = Object(i.a)(pt.t), Vt = t => {
+				})), Ht = Object(i.a)(pt.u), Vt = t => {
 					let {
 						commentId: e,
 						commentMode: n,
@@ -630,7 +630,7 @@
 							}
 						})))
 					}
-				}, Wt = Object(i.a)(pt.E), Gt = Object(i.a)(pt.D), qt = Object(i.a)(pt.F), Jt = Object(i.a)(pt.i), Qt = Object(i.a)(pt.e), Xt = t => {
+				}, Wt = Object(i.a)(pt.F), Gt = Object(i.a)(pt.E), qt = Object(i.a)(pt.G), Jt = Object(i.a)(pt.j), Qt = Object(i.a)(pt.f), Xt = t => {
 					let {
 						id: e,
 						commentsPageKey: n,
@@ -726,7 +726,7 @@
 								commentId: e,
 								commentsPageKey: n,
 								draftKey: o
-							})), t(Object(mt.i)({
+							})), t(Object(mt.j)({
 								[e]: {
 									...r.comment
 								}
@@ -736,7 +736,7 @@
 							error: p.error
 						}))
 					}
-				}, zt = Object(i.a)(pt.B), Yt = Object(i.a)(pt.A), $t = Object(i.a)(pt.C), Zt = (t, e) => async (n, o, i) => {
+				}, zt = Object(i.a)(pt.C), Yt = Object(i.a)(pt.B), $t = Object(i.a)(pt.D), Zt = (t, e) => async (n, o, i) => {
 					let {
 						apiContext: s
 					} = i;
@@ -773,11 +773,11 @@
 						apiContext: r
 					} = o;
 					const i = !n().features.comments.models[t].sendReplies;
-					e(Object(mt.i)({
+					e(Object(mt.j)({
 						[t]: {
 							sendReplies: i
 						}
-					})), (await Object(B.r)(r(), t, i)).ok || e(Object(mt.i)({
+					})), (await Object(B.r)(r(), t, i)).ok || e(Object(mt.j)({
 						[t]: {
 							sendReplies: !i
 						}
@@ -799,7 +799,7 @@
 								id: t,
 								expiresAt: Date.now() + 6048e5
 							};
-						if (n(Object(mt.n)(c)), (await ((t, e) => Object(j.a)(t, {
+						if (n(Object(mt.o)(c)), (await ((t, e) => Object(j.a)(t, {
 								...K,
 								variables: {
 									input: e
@@ -818,7 +818,7 @@
 								kind: tt.b.SuccessCommunityGreen,
 								text: t
 							})), Object(at.a)(b) && i && n(Object(d.c)("comment_follow"))
-						} else n(Object(mt.n)(c)), n(f(o.fbt._("Sorry, we had trouble doing that. Please try again.", null, {
+						} else n(Object(mt.o)(c)), n(f(o.fbt._("Sorry, we had trouble doing that. Please try again.", null, {
 							hk: "2N0vVk"
 						})))
 					}
@@ -2819,11 +2819,11 @@
 				l = Object(o.a)(d, t => !!t),
 				u = t => {
 					const e = d(t);
-					return !!e && a(t, e) === r.cb.SkipOnboarding
+					return !!e && a(t, e) === r.db.SkipOnboarding
 				},
 				m = t => {
 					const e = d(t);
-					return !!e && a(t, e) === r.cb.RegOnboarding
+					return !!e && a(t, e) === r.db.RegOnboarding
 				}
 		},
 		"./src/redditGQL/operations/CommentToxicity.json": function(t) {
@@ -2840,4 +2840,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-NotificationUnit-Button.bbd5f46d501bc7e4998d.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-NotificationUnit-Button.153605b106d5b8b6ff5d.js.map

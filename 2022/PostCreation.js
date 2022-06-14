@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostCreation.b5b07fce0e16fda2672a.js
-// Retrieved at 6/14/2022, 10:30:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostCreation.745d1378a226046bd8e1.js
+// Retrieved at 6/14/2022, 5:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostCreation", "ChatMessageInput~MembershipPaywallPage~RichTextEditor", "ContributorRequestButton"], {
 		"./node_modules/autosize/dist/autosize.js": function(e, t, n) {
@@ -1494,8 +1494,8 @@
 				re = n("./node_modules/reselect/es/index.js");
 			const ie = Object(re.a)(e => Object(se.c)(e, {
 				experimentEligibilitySelector: se.a,
-				experimentName: oe.Hb
-			}), e => e === oe.sd);
+				experimentName: oe.Ib
+			}), e => e === oe.td);
 			var ae = n("./src/reddit/selectors/experiments/contributeBeforeSignUp.ts"),
 				ce = n("./src/reddit/selectors/experiments/emailEnablement.ts"),
 				le = n("./src/reddit/selectors/platform.ts"),
@@ -1503,7 +1503,7 @@
 				ue = n("./src/reddit/selectors/user.ts"),
 				pe = n("./src/reddit/actions/comment/index.ts"),
 				me = n("./src/reddit/actions/comment/constants.ts");
-			const he = Object(r.a)(me.l),
+			const he = Object(r.a)(me.m),
 				be = e => {
 					let {
 						hasFocus: t,
@@ -1524,10 +1524,10 @@
 							}))
 					}
 				},
-				fe = Object(r.a)(me.J),
-				ge = Object(r.a)(me.L),
-				Ee = Object(r.a)(me.K),
-				Ce = Object(r.a)(me.I),
+				fe = Object(r.a)(me.K),
+				ge = Object(r.a)(me.M),
+				Ee = Object(r.a)(me.L),
+				Ce = Object(r.a)(me.J),
 				xe = async (e, t, n, o) => {
 					const s = o.ok && o.body,
 						r = s && s.comment && s.comment.id;
@@ -1759,7 +1759,7 @@
 							parentCommentDepth: n
 						}, !0, r, i))
 					}
-				}, Ne = Object(r.a)(me.r), Re = Object(r.a)(me.z), De = Object(r.a)(me.q), Me = Object(r.a)(me.m), Le = (Object(r.a)(me.h), Object(r.a)(me.n)), Ae = (Object(r.a)(me.u), (e, t, n) => async (s, r, i) => {
+				}, Ne = Object(r.a)(me.s), Re = Object(r.a)(me.A), De = Object(r.a)(me.r), Me = Object(r.a)(me.n), Le = (Object(r.a)(me.i), Object(r.a)(me.o)), Ae = (Object(r.a)(me.v), (e, t, n) => async (s, r, i) => {
 					let {
 						apiContext: a
 					} = i;
@@ -1852,7 +1852,7 @@
 						}))
 					}
 				}, Be = e => async t => {
-					t(Object(pe.p)(e)), t(He(e))
+					t(Object(pe.q)(e)), t(He(e))
 				}, Ue = e => {
 					let {
 						parentCommentId: t,
@@ -1865,7 +1865,7 @@
 						})), e(Fe({
 							parentCommentId: t,
 							commentsPageKey: n
-						})), e(Object(pe.p)({
+						})), e(Object(pe.q)({
 							commentId: t,
 							commentsPageKey: n
 						}))
@@ -1873,7 +1873,7 @@
 				}, Ke = (e, t) => n => n(Me({
 					draftKey: e,
 					formData: t
-				})), We = Object(r.a)(me.t), He = e => {
+				})), We = Object(r.a)(me.u), He = e => {
 					let {
 						commentId: t,
 						commentMode: n,
@@ -1896,7 +1896,7 @@
 							}
 						})))
 					}
-				}, ze = Object(r.a)(me.E), Ve = Object(r.a)(me.D), Ge = Object(r.a)(me.F), qe = Object(r.a)(me.i), Qe = Object(r.a)(me.e), Ye = e => {
+				}, ze = Object(r.a)(me.F), Ve = Object(r.a)(me.E), Ge = Object(r.a)(me.G), qe = Object(r.a)(me.j), Qe = Object(r.a)(me.f), Ye = e => {
 					let {
 						id: t,
 						commentsPageKey: n,
@@ -1992,7 +1992,7 @@
 								commentId: t,
 								commentsPageKey: n,
 								draftKey: o
-							})), e(Object(pe.i)({
+							})), e(Object(pe.j)({
 								[t]: {
 									...s.comment
 								}
@@ -2002,7 +2002,7 @@
 							error: m.error
 						}))
 					}
-				}, Je = Object(r.a)(me.B), Ze = Object(r.a)(me.A), Xe = Object(r.a)(me.C), $e = (e, t) => async (n, o, r) => {
+				}, Je = Object(r.a)(me.C), Ze = Object(r.a)(me.B), Xe = Object(r.a)(me.D), $e = (e, t) => async (n, o, r) => {
 					let {
 						apiContext: i
 					} = r;
@@ -2039,11 +2039,11 @@
 						apiContext: s
 					} = o;
 					const r = !n().features.comments.models[e].sendReplies;
-					t(Object(pe.i)({
+					t(Object(pe.j)({
 						[e]: {
 							sendReplies: r
 						}
-					})), (await Object(K.r)(s(), e, r)).ok || t(Object(pe.i)({
+					})), (await Object(K.r)(s(), e, r)).ok || t(Object(pe.j)({
 						[e]: {
 							sendReplies: !r
 						}
@@ -2065,7 +2065,7 @@
 								id: e,
 								expiresAt: Date.now() + 6048e5
 							};
-						if (n(Object(pe.n)(a)), (await ((e, t) => Object(O.a)(e, {
+						if (n(Object(pe.o)(a)), (await ((e, t) => Object(O.a)(e, {
 								...U,
 								variables: {
 									input: t
@@ -2084,7 +2084,7 @@
 								kind: ee.b.SuccessCommunityGreen,
 								text: e
 							})), Object(ce.a)(h) && r && n(Object(l.c)("comment_follow"))
-						} else n(Object(pe.n)(a)), n(b(o.fbt._("Sorry, we had trouble doing that. Please try again.", null, {
+						} else n(Object(pe.o)(a)), n(b(o.fbt._("Sorry, we had trouble doing that. Please try again.", null, {
 							hk: "2N0vVk"
 						})))
 					}
@@ -18817,7 +18817,7 @@
 					}, o[t]) : null
 				};
 				if (e.isD2xPdpSideRailRecsEnabled) {
-					const t = e.d2xPdpSideRailRecsVariant === u.Dc.GreyRereddit ? e.reredditButtons : [];
+					const t = e.d2xPdpSideRailRecsVariant === u.Ec.GreyRereddit ? e.reredditButtons : [];
 					return s.a.createElement(S, {
 						reredditContent: t,
 						countryCode: e.countryCode
@@ -33325,11 +33325,11 @@
 				d = Object(o.a)(l, e => !!e),
 				u = e => {
 					const t = l(e);
-					return !!t && c(e, t) === s.cb.SkipOnboarding
+					return !!t && c(e, t) === s.db.SkipOnboarding
 				},
 				p = e => {
 					const t = l(e);
-					return !!t && c(e, t) === s.cb.RegOnboarding
+					return !!t && c(e, t) === s.db.RegOnboarding
 				}
 		},
 		"./src/reddit/selectors/experiments/d2xPdpSideRailRecs.ts": function(e, t, n) {
@@ -33347,11 +33347,11 @@
 				c = n("./node_modules/reselect/es/index.js");
 			const l = Object(c.a)(e => Object(s.c)(e, {
 					experimentEligibilitySelector: e => Object(a.g)(e) && Object(r.f)(e),
-					experimentName: o.jc
+					experimentName: o.kc
 				}), i.a),
 				d = Object(c.a)(e => Object(s.c)(e, {
 					experimentEligibilitySelector: e => !Object(a.g)(e) && Object(r.f)(e),
-					experimentName: o.ic
+					experimentName: o.jc
 				}), i.a),
 				u = Object(c.a)(l, d, (e, t) => e || t),
 				p = Object(c.a)(l, d, (e, t) => !(!e && !t))
@@ -33405,28 +33405,28 @@
 			}));
 			var o = n("./src/reddit/constants/experiments.ts"),
 				s = n("./src/reddit/selectors/experiments/econ/simpleExperiment.ts");
-			const r = Object(s.a)(o.hd),
-				i = Object(s.a)(o.fd),
-				a = Object(s.a)(o.id),
-				c = Object(s.a)(o.ed),
-				l = Object(s.a)(o.dd),
-				d = Object(s.a)(o.kd),
-				u = Object(s.a)(o.jd),
-				p = Object(s.a)(o.ad),
-				m = Object(s.a)(o.Tc),
-				h = Object(s.a)(o.Uc),
-				b = Object(s.a)(o.Rc),
-				f = Object(s.a)(o.Sc),
-				g = Object(s.a)(o.Wc),
-				E = Object(s.a)(o.Qc),
-				C = Object(s.a)(o.bd),
-				x = Object(s.a)(o.cd),
-				y = Object(s.a)(o.gd),
-				v = Object(s.a)(o.ld),
-				O = Object(s.a)(o.md),
-				_ = Object(s.a)(o.pd),
-				k = Object(s.a)(o.od),
-				j = Object(s.a)(o.nd)
+			const r = Object(s.a)(o.id),
+				i = Object(s.a)(o.gd),
+				a = Object(s.a)(o.jd),
+				c = Object(s.a)(o.fd),
+				l = Object(s.a)(o.ed),
+				d = Object(s.a)(o.ld),
+				u = Object(s.a)(o.kd),
+				p = Object(s.a)(o.bd),
+				m = Object(s.a)(o.Uc),
+				h = Object(s.a)(o.Vc),
+				b = Object(s.a)(o.Sc),
+				f = Object(s.a)(o.Tc),
+				g = Object(s.a)(o.Xc),
+				E = Object(s.a)(o.Rc),
+				C = Object(s.a)(o.cd),
+				x = Object(s.a)(o.dd),
+				y = Object(s.a)(o.hd),
+				v = Object(s.a)(o.md),
+				O = Object(s.a)(o.nd),
+				_ = Object(s.a)(o.qd),
+				k = Object(s.a)(o.pd),
+				j = Object(s.a)(o.od)
 		},
 		"./src/reddit/selectors/experiments/loggedOutOneFeed.ts": function(e, t, n) {
 			"use strict";
@@ -33444,7 +33444,7 @@
 			const l = Object(o.a)(a.f, i.e, (e, t) => e && !t),
 				d = e => Object(r.c)(e, {
 					experimentEligibilitySelector: l,
-					experimentName: s.ac
+					experimentName: s.bc
 				}),
 				u = e => !!Object(c.a)(d(e))
 		},
@@ -33456,9 +33456,9 @@
 			var o = n("./src/reddit/constants/experiments.ts"),
 				s = n("./src/reddit/helpers/chooseVariant/index.ts");
 			const r = e => Object(s.c)(e, {
-				experimentName: o.ne,
+				experimentName: o.oe,
 				experimentEligibilitySelector: s.a
-			}) === o.we.Enabled
+			}) === o.xe.Enabled
 		},
 		"./src/reddit/selectors/experiments/presence.ts": function(e, t, n) {
 			"use strict";
@@ -33470,8 +33470,8 @@
 			const r = e => {
 				return Object(s.c)(e, {
 					experimentEligibilitySelector: s.a,
-					experimentName: o.Ie
-				}) === o.sd
+					experimentName: o.Je
+				}) === o.td
 			}
 		},
 		"./src/reddit/selectors/experiments/typingIndicators.ts": function(e, t, n) {
@@ -33493,29 +33493,29 @@
 					if (Object(i.a)(e)) return !1;
 					return Object(s.c)(e, {
 						experimentEligibilitySelector: r.e,
-						experimentName: o.Rf
-					}) === o.sd
+						experimentName: o.Sf
+					}) === o.td
 				},
 				c = e => {
 					return Object(s.c)(e, {
 						experimentEligibilitySelector: r.e,
-						experimentName: o.Sf
-					}) === o.sd
+						experimentName: o.Tf
+					}) === o.td
 				},
 				l = e => {
 					if (Object(i.a)(e)) return !1;
 					const t = Object(s.c)(e, {
 						experimentEligibilitySelector: r.e,
-						experimentName: o.Qf
+						experimentName: o.Rf
 					});
-					return t === o.Hf.TypingIndicators || t === o.Hf.IndicatorsPlusCTA
+					return t === o.If.TypingIndicators || t === o.If.IndicatorsPlusCTA
 				},
 				d = e => {
 					if (Object(i.a)(e)) return !1;
 					const t = Object(r.d)(e, {
-						experimentName: o.Qf
+						experimentName: o.Rf
 					});
-					return (null == t ? void 0 : t.variant) === o.Hf.IndicatorsPlusCTA
+					return (null == t ? void 0 : t.variant) === o.If.IndicatorsPlusCTA
 				}
 		},
 		"./src/reddit/selectors/gold/enabledFeatures.ts": function(e, t, n) {
@@ -33938,4 +33938,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.b5b07fce0e16fda2672a.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.745d1378a226046bd8e1.js.map

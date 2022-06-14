@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/RpanListingUnit.0356cc3aeea0423fd43c.js
-// Retrieved at 6/14/2022, 11:00:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/RpanListingUnit.ece9805aa8cd5d5a0c58.js
+// Retrieved at 6/14/2022, 5:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["RpanListingUnit"], {
 		"./node_modules/lodash/_arrayEvery.js": function(e, t) {
@@ -52,16 +52,16 @@
 			const p = Object(i.a)(e => {
 				const t = Object(m.c)(e, {
 					experimentEligibilitySelector: m.a,
-					experimentName: u.he
+					experimentName: u.ie
 				});
-				return Object(u.Vf)(t) ? void 0 : t
+				return Object(u.Wf)(t) ? void 0 : t
 			}, e => {
 				const t = Object(m.c)(e, {
 					experimentEligibilitySelector: m.a,
-					experimentName: u.ie
+					experimentName: u.je
 				});
-				return Object(u.Vf)(t) ? void 0 : t
-			}, (e, t) => e === u.me.Enabled && t === u.me.Enabled);
+				return Object(u.Wf)(t) ? void 0 : t
+			}, (e, t) => e === u.ne.Enabled && t === u.ne.Enabled);
 			var b = n("./src/config.ts");
 			var h = n("./src/reddit/selectors/user.ts");
 			const f = e => {
@@ -2609,24 +2609,28 @@
 		},
 		"./src/reddit/helpers/trackers/commentsChat.ts": function(e, t, n) {
 			"use strict";
-			n.d(t, "g", (function() {
+			n.d(t, "i", (function() {
 				return l
-			})), n.d(t, "h", (function() {
-				return u
-			})), n.d(t, "f", (function() {
+			})), n.d(t, "j", (function() {
 				return m
-			})), n.d(t, "c", (function() {
+			})), n.d(t, "f", (function() {
 				return p
-			})), n.d(t, "d", (function() {
+			})), n.d(t, "c", (function() {
 				return b
-			})), n.d(t, "b", (function() {
+			})), n.d(t, "d", (function() {
 				return h
-			})), n.d(t, "e", (function() {
+			})), n.d(t, "b", (function() {
 				return f
-			})), n.d(t, "a", (function() {
+			})), n.d(t, "e", (function() {
 				return v
-			})), n.d(t, "i", (function() {
+			})), n.d(t, "a", (function() {
 				return g
+			})), n.d(t, "k", (function() {
+				return _
+			})), n.d(t, "g", (function() {
+				return O
+			})), n.d(t, "h", (function() {
+				return x
 			}));
 			var r = n("./src/lib/makeCommentsPageKey/index.ts"),
 				s = n("./src/reddit/constants/tracking.ts"),
@@ -2656,14 +2660,18 @@
 						depth: d
 					})
 				},
-				u = (e, t) => n => ({
+				u = e => {
+					var t;
+					return null !== (t = e.split("chat_reaction_")[1]) && void 0 !== t ? t : ""
+				},
+				m = (e, t) => n => ({
 					action: "load",
 					noun: e,
 					post: Object(a.H)(n, t),
 					source: c.b.ChatView,
 					subreddit: Object(a.gb)(n)
 				}),
-				m = (e, t) => n => ({
+				p = (e, t) => n => ({
 					...d(n, t),
 					source: "live_post",
 					action: s.c.CLICK,
@@ -2674,13 +2682,13 @@
 					},
 					listing: l(n, t)
 				}),
-				p = e => t => ({
+				b = e => t => ({
 					...d(t, e),
 					source: "chat_post",
 					action: s.c.VIEW,
 					noun: "last_message"
 				}),
-				b = e => t => ({
+				h = e => t => ({
 					...d(t, e),
 					source: "chat_post",
 					action: s.c.SUBMIT,
@@ -2692,7 +2700,7 @@
 						type: "live_post"
 					})
 				}),
-				h = e => t => ({
+				f = e => t => ({
 					...d(t, e),
 					source: "chat_post",
 					action: s.c.CLICK,
@@ -2703,7 +2711,7 @@
 						type: "live_post"
 					})
 				}),
-				f = e => t => ({
+				v = e => t => ({
 					...d(t, e),
 					source: "chat_post",
 					action: s.c.VIEW,
@@ -2713,7 +2721,7 @@
 						pageType: "spam_rate_countdown"
 					}
 				}),
-				v = e => t => ({
+				g = e => t => ({
 					...d(t, e),
 					source: "chat_post",
 					action: s.c.CLOSE,
@@ -2723,7 +2731,7 @@
 						pageType: "spam_rate_countdown"
 					}
 				}),
-				g = e => t => ({
+				_ = e => t => ({
 					...d(t, e),
 					source: "global",
 					action: s.c.VIEW,
@@ -2733,6 +2741,34 @@
 						pageType: "given_awards_list"
 					},
 					listing: l(t, e)
+				}),
+				O = (e, t, n) => r => ({
+					...d(r, t),
+					source: c.b.Chat,
+					action: s.c.CLICK,
+					noun: "reaction",
+					actionInfo: {
+						pageType: n,
+						reason: u(e)
+					},
+					chat: {
+						type: "live_post"
+					},
+					listing: l(r, t)
+				}),
+				x = (e, t, n) => r => ({
+					...d(r, t),
+					source: c.b.Chat,
+					action: s.c.DELETE,
+					noun: "reaction",
+					actionInfo: {
+						pageType: n,
+						reason: u(e)
+					},
+					chat: {
+						type: "live_post"
+					},
+					listing: l(r, t)
 				})
 		},
 		"./src/reddit/helpers/trackers/communityAwards.ts": function(e, t, n) {
@@ -2962,7 +2998,7 @@
 						screen: i.Y(e),
 						subreddit: i.gb(e),
 						userSubreddit: i.qb(e),
-						listing: t ? Object(r.g)(e, t) : void 0
+						listing: t ? Object(r.i)(e, t) : void 0
 					}
 				},
 				b = (e, t) => n => ({
@@ -4478,14 +4514,14 @@
 						}) || !!Object(o.n)(e, {
 							postId: t
 						}) || Object(i.N)(e))(e, t),
-						experimentName: r.U
-					}) === r.sd
+						experimentName: r.V
+					}) === r.td
 				},
 				c = e => {
 					return Object(s.c)(e, {
 						experimentEligibilitySelector: i.Q,
-						experimentName: r.Le
-					}) === r.sd
+						experimentName: r.Me
+					}) === r.td
 				}
 		},
 		"./src/reddit/selectors/experiments/videoReactions.ts": function(e, t, n) {
@@ -4499,13 +4535,13 @@
 				s = n("./src/reddit/helpers/chooseVariant/index.ts"),
 				o = n("./src/reddit/selectors/experiments/index.ts");
 			const i = e => Object(s.c)(e, {
-					experimentName: r.ub,
+					experimentName: r.vb,
 					experimentEligibilitySelector: o.e
-				}) === r.sd,
+				}) === r.td,
 				a = e => Object(s.c)(e, {
-					experimentName: r.kc,
+					experimentName: r.lc,
 					experimentEligibilitySelector: s.a
-				}) === r.sd
+				}) === r.td
 		},
 		"./src/reddit/selectors/gild.ts": function(e, t, n) {
 			"use strict";
@@ -4741,4 +4777,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RpanListingUnit.0356cc3aeea0423fd43c.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RpanListingUnit.ece9805aa8cd5d5a0c58.js.map
