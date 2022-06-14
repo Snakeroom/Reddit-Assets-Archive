@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.85f3f84ab77a4562d0d8.js
-// Retrieved at 6/14/2022, 5:20:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.2bc51fa8ccb0f7b59898.js
+// Retrieved at 6/14/2022, 5:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Chat~Governance~Reddit"], {
 		"./assets/fonts/IBMPlexSans/font.less": function(e, t, i) {},
@@ -3467,11 +3467,11 @@
 				apiPassThroughHeaders: Object(r.e)({}.API_PASS_THROUGH_HEADERS || ""),
 				appName: {}.APP_NAME || "desktop2x",
 				assetPath: "https://www.redditstatic.com/desktop2x",
-				buildNumber: Object(r.c)("166509"),
+				buildNumber: Object(r.c)("166515"),
 				chatHelpUrl: {}.CHAT_HELP_URL || "https://reddit.zendesk.com/hc/en-us/sections/360008805652-Chat",
 				hlsVersion: "hls 0.12.4",
 				dashVersion: "dash 3.2.0",
-				buildTimestamp: Object(r.b)("1655238810"),
+				buildTimestamp: Object(r.b)("1655241712"),
 				cookieDomain: ".reddit.com",
 				giphyApiKey: "k2kwyMA6VeyHM6ZRT96OXDGaersnx73Z",
 				mediaUrl: "https://www.redditmedia.com",
@@ -6078,14 +6078,14 @@
 					}))
 				},
 				Y = (e, t, i) => {
-					console.log("%cStarting Raven %crelease %cc73f12631b73fde264a3ae8ef5f27017f8198e86-production" + ` %cpublic url %c${y.a.sentryClientPublicURL}`, "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
+					console.log("%cStarting Raven %crelease %caf064a9d8fefaa974306fffe1bff037c8b084797-production" + ` %cpublic url %c${y.a.sentryClientPublicURL}`, "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
 					let n = [];
 					n = [new RegExp(`^${y.a.assetPath}`, "i")];
 					o.e({
 						attachStacktrace: !0,
 						dsn: y.a.sentryClientPublicURL,
 						whitelistUrls: n,
-						release: "c73f12631b73fde264a3ae8ef5f27017f8198e86-production",
+						release: "af064a9d8fefaa974306fffe1bff037c8b084797-production",
 						environment: "production",
 						ignoreErrors: ["$ is not defined"],
 						integrations: [...Object(L.d)(), new d.Integrations.Breadcrumbs({
@@ -6694,7 +6694,7 @@
 							settings: r,
 							statusCode: s,
 							type: o,
-							releaseClient: "c73f12631b73fde264a3ae8ef5f27017f8198e86-production",
+							releaseClient: "af064a9d8fefaa974306fffe1bff037c8b084797-production",
 							appName: t.statsAppName,
 							error: n ? JSON.parse(Object(l.a)(n)) : void 0
 						},
@@ -20806,7 +20806,7 @@
 				h = i("./src/reddit/selectors/platform.ts"),
 				f = i("./src/reddit/selectors/subreddit.ts");
 			var b = i("./src/reddit/selectors/responsiveSettings.ts");
-			const g = new Set(["AntiEvilPlayground"].map(e => e.toLowerCase())),
+			const g = new Set(["AntiEvilPlayground", "offmychest", "amitheasshole", "lgbt", "politics", "worldnews", "pics", "askreddit", "relationship_advice", "casualuk", "pokemongo", "de", "humansbeingbros", "liberalgunowners", "advice", "nostupidquestions", "europe", "bisexual", "askwomen", "ukpolitics", "france", "canada", "justnomil", "florida", "mildlyinteresting", "fortnitebr", "unexpected", "fantasy", "unitedkingdom", "nursing", "tooafraidtoask", "explainlikeimfive", "corgi", "starwarskenobi", "muaonthecheap", "nintendoswitch", "askhistorians", "kpop", "dccomics", "askfrance", "virginia", "science", "yurop", "changemyview", "equestrian"].map(e => e.toLowerCase())),
 				w = new Set(["AntiEvilPlayground", "lgbt", "dccomics", "yurop", "muaonthecheap", "loveislandusa", "blackladiesdating", "stpetersburgfl", "pics", "canada", "askuk", "fortnitebr", "unitedkingdom", "stopdrinking", "casualconversation", "animalsonreddit", "bisexual", "liberalgunowners", "redditsweats", "orangetheory", "fortnite", "readwithme", "dndgreentext", "ukraine", "auntienetwork"].map(e => e.toLowerCase())),
 				v = new Set(["uzitest", "testingtesting127", "kpkrunal"]);
 			var y = i("./src/reddit/featureFlags/subredditPoints.ts");
@@ -47876,4 +47876,4 @@
 		"ignored /drone/src/node_modules/readable-stream/lib/internal/streams util": function(e, t) {}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.85f3f84ab77a4562d0d8.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.2bc51fa8ccb0f7b59898.js.map
