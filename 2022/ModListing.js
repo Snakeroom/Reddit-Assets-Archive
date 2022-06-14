@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModListing.d76ed7a1746baffcf3c4.js
-// Retrieved at 6/13/2022, 5:30:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModListing.59a3a5532e4d6d453850.js
+// Retrieved at 6/14/2022, 9:30:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModListing"], {
 		"./node_modules/classnames/index.js": function(e, t, n) {
@@ -3305,7 +3305,7 @@
 					subreddit: n
 				} = e;
 				let s = n && `r/${n}` || t && `u/${t}` || "all";
-				return "comments" !== e.onlyOfType && "links" !== e.onlyOfType || (s += `--[${e.onlyOfType}]`), e.sort === r.a.OldestFirst && (s += `--[${e.sort}]`), s
+				return "comments" !== e.onlyOfType && "links" !== e.onlyOfType && "chat_comments" !== e.onlyOfType || (s += `--[${e.onlyOfType}]`), e.sort === r.a.OldestFirst && (s += `--[${e.sort}]`), s
 			}
 		},
 		"./src/reddit/helpers/styles/postBackgroundColor.ts": function(e, t, n) {
@@ -7354,4 +7354,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModListing.d76ed7a1746baffcf3c4.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModListing.59a3a5532e4d6d453850.js.map

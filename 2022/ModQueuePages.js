@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModQueuePages.f5d24487bbd87ae1656e.js
-// Retrieved at 6/13/2022, 5:30:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModQueuePages.038d70a1d65db0e0fe78.js
+// Retrieved at 6/14/2022, 9:30:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModQueuePages"], {
 		"./node_modules/lodash/includes.js": function(e, t, s) {
@@ -5009,7 +5009,7 @@
 					subreddit: s
 				} = e;
 				let r = s && `r/${s}` || t && `u/${t}` || "all";
-				return "comments" !== e.onlyOfType && "links" !== e.onlyOfType || (r += `--[${e.onlyOfType}]`), e.sort === n.a.OldestFirst && (r += `--[${e.sort}]`), r
+				return "comments" !== e.onlyOfType && "links" !== e.onlyOfType && "chat_comments" !== e.onlyOfType || (r += `--[${e.onlyOfType}]`), e.sort === n.a.OldestFirst && (r += `--[${e.sort}]`), r
 			}
 		},
 		"./src/reddit/helpers/modTooltipTemplates/index.ts": function(e, t, s) {
@@ -5825,4 +5825,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModQueuePages.f5d24487bbd87ae1656e.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModQueuePages.038d70a1d65db0e0fe78.js.map
