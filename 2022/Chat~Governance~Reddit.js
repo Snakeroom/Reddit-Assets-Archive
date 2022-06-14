@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.5ac22606a85a62c19925.js
-// Retrieved at 6/14/2022, 10:30:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.79bd4905e783a147bd56.js
+// Retrieved at 6/14/2022, 11:00:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Chat~Governance~Reddit"], {
 		"./assets/fonts/IBMPlexSans/font.less": function(e, t, i) {},
@@ -3467,11 +3467,11 @@
 				apiPassThroughHeaders: Object(r.e)({}.API_PASS_THROUGH_HEADERS || ""),
 				appName: {}.APP_NAME || "desktop2x",
 				assetPath: "https://www.redditstatic.com/desktop2x",
-				buildNumber: Object(r.c)("166454"),
+				buildNumber: Object(r.c)("166455"),
 				chatHelpUrl: {}.CHAT_HELP_URL || "https://reddit.zendesk.com/hc/en-us/sections/360008805652-Chat",
 				hlsVersion: "hls 0.12.4",
 				dashVersion: "dash 3.2.0",
-				buildTimestamp: Object(r.b)("1655215051"),
+				buildTimestamp: Object(r.b)("1655217117"),
 				cookieDomain: ".reddit.com",
 				giphyApiKey: "k2kwyMA6VeyHM6ZRT96OXDGaersnx73Z",
 				mediaUrl: "https://www.redditmedia.com",
@@ -6078,14 +6078,14 @@
 					}))
 				},
 				Y = (e, t, i) => {
-					console.log("%cStarting Raven %crelease %c8250949a0a83a2b312015f264e8666ad5970f61c-production" + ` %cpublic url %c${y.a.sentryClientPublicURL}`, "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
+					console.log("%cStarting Raven %crelease %ca4ded0b4a908a15b0a1f3ca06f44cb856912793f-production" + ` %cpublic url %c${y.a.sentryClientPublicURL}`, "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
 					let n = [];
 					n = [new RegExp(`^${y.a.assetPath}`, "i")];
 					o.e({
 						attachStacktrace: !0,
 						dsn: y.a.sentryClientPublicURL,
 						whitelistUrls: n,
-						release: "8250949a0a83a2b312015f264e8666ad5970f61c-production",
+						release: "a4ded0b4a908a15b0a1f3ca06f44cb856912793f-production",
 						environment: "production",
 						ignoreErrors: ["$ is not defined"],
 						integrations: [...Object(L.d)(), new d.Integrations.Breadcrumbs({
@@ -6694,7 +6694,7 @@
 							settings: r,
 							statusCode: s,
 							type: o,
-							releaseClient: "8250949a0a83a2b312015f264e8666ad5970f61c-production",
+							releaseClient: "a4ded0b4a908a15b0a1f3ca06f44cb856912793f-production",
 							appName: t.statsAppName,
 							error: n ? JSON.parse(Object(l.a)(n)) : void 0
 						},
@@ -11576,13 +11576,13 @@
 				}, Ue = (e, t, i) => async (n, r) => {
 					const s = r();
 					te.t(s, e, t, i), ke[e] = t || 0, h.c.start(Be(e))
-				}, Ge = (e, t, i, r) => async (s, o) => {
+				}, Ge = (e, t, i) => async (r, s) => {
 					delete ke[e];
-					const d = o(),
-						a = Be(e);
-					if (h.c.has(a)) {
-						const s = h.c.end(`viewing-${e}`);
-						!t && s > n.a.telemetry.postConsumedThreshold && (te.b(d, e, s, i, r), Object(Q.b)(Object(ge.q)(d)))
+					const o = s(),
+						d = Be(e);
+					if (h.c.has(d)) {
+						const r = h.c.end(`viewing-${e}`);
+						!t && r > n.a.telemetry.postConsumedThreshold && (te.b(o, e, r, i), Object(Q.b)(Object(ge.q)(o)))
 					}
 				}, Ve = {
 					[T.a.Impression]: f.d,
@@ -26962,22 +26962,22 @@
 					subreddit: c.gb(e),
 					feed: c.q(e)
 				}),
-				w = (e, t, i, n) => r => ({
+				w = (e, t, i) => n => ({
 					source: "post",
 					action: "consume",
 					noun: "post",
-					...c.n(r),
-					actionInfo: c.d(r, {
+					...c.n(n),
+					actionInfo: c.d(n, {
 						position: i
 					}),
-					listing: c.y(r, void 0, void 0, n),
-					post: c.H(r, e, t),
-					media: c.A(r, e),
-					screen: c.Y(r),
-					subreddit: c.gb(r),
-					feed: c.q(r)
+					listing: c.y(n),
+					post: c.H(n, e, t),
+					media: c.A(n, e),
+					screen: c.Y(n),
+					subreddit: c.gb(n),
+					feed: c.q(n)
 				}),
-				v = (e, t, i, n, r) => Object(_.a)(w(t, i, n, r)(e)),
+				v = (e, t, i, n) => Object(_.a)(w(t, i, n)(e)),
 				y = (e, t, i, n) => ({
 					noun: n,
 					post: c.H(e, t),
@@ -40828,13 +40828,13 @@
 					const t = Object(k.a)(e);
 					return t ? tt(e, t.id) : null
 				},
-				st = (e, t, i, n) => {
-					const r = t && Object(le.a)(e.listings.postOrder.ids, t);
+				st = (e, t, i) => {
+					const n = t && Object(le.a)(e.listings.postOrder.ids, t);
 					return {
 						depth: i && i.depth,
 						geoFilter: Object(ie.k)(e),
-						length: r ? r.length : void 0,
-						links: r ? r.map(t => e.posts.models[t].id) : void 0,
+						length: n ? n.length : void 0,
+						links: n ? n.map(t => e.posts.models[t].id) : void 0,
 						oldSort: i && i.oldSort,
 						sort: i && i.sort,
 						sortTime: i && i.sortTime || void 0,
@@ -47856,4 +47856,4 @@
 		"ignored /drone/src/node_modules/readable-stream/lib/internal/streams util": function(e, t) {}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.5ac22606a85a62c19925.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.79bd4905e783a147bd56.js.map

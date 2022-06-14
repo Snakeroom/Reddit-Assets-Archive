@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage.2b38d0766c4312e8045d.js
-// Retrieved at 6/14/2022, 10:30:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage.871169d1750d393454a0.js
+// Retrieved at 6/14/2022, 11:00:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage", "CommentsPage"], {
 		"./node_modules/lodash/_baseDelay.js": function(e, t) {
@@ -9366,8 +9366,8 @@
 					trackOnPostEnteredViewport: (t, s, n, o) => {
 						e(c.O(t, n, o))
 					},
-					trackOnPostExitedViewport: (t, s, n, o, r) => {
-						e(c.P(t, n, o, r))
+					trackOnPostExitedViewport: (t, s, n, o) => {
+						e(c.P(t, n, o))
 					},
 					showModalOnScroll: () => e(c.cb()),
 					surveyTriggerScrollCounted: () => e(Object(m.l)())
@@ -11805,4 +11805,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage.2b38d0766c4312e8045d.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage.871169d1750d393454a0.js.map

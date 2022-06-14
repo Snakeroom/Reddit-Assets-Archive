@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~CountryPage~Frontpage~GovernanceReleaseNotesModal~ModListing~Mod~adaf0b02.964a84d865d709c92d1b.js
-// Retrieved at 6/13/2022, 1:00:03 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~CountryPage~Frontpage~GovernanceReleaseNotesModal~ModListing~Mod~adaf0b02.7949853e858f0c080611.js
+// Retrieved at 6/14/2022, 11:00:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~CountryPage~Frontpage~GovernanceReleaseNotesModal~ModListing~Mod~adaf0b02"], {
 		"./src/lib/intersectionObserver/index.ts": function(e, t, s) {
@@ -807,12 +807,12 @@
 				return void 0 === c && (c = () => {
 					s && r.onBottomViewed(i, n), r.trackOnPostEnteredViewport(e, t, a, l)
 				}, ce.set(d, c)), c
-			}, be = (e, t, s, i, n) => {
-				const o = `left-${e}-${t}`;
-				let r = he.get(o);
-				return void 0 === r && (r = o => {
-					s.trackOnPostExitedViewport(e, t, o, i, n)
-				}, he.set(o, r)), r
+			}, be = (e, t, s, i) => {
+				const n = `left-${e}-${t}`;
+				let o = he.get(n);
+				return void 0 === o && (o = n => {
+					s.trackOnPostExitedViewport(e, t, n, i)
+				}, he.set(n, o)), o
 			}, ge = function(e, t) {
 				let s = arguments.length > 2 && void 0 !== arguments[2] && arguments[2];
 				const i = `click-${e}`;
@@ -1032,7 +1032,7 @@
 						let N = `post-list-item-[layout: ${i}]-[postId: ${e}]`;
 						this.props.listingBelowVariant && v && (N += `--${v}`);
 						const A = ue(e, i, s, v, y, I, this.props, t, this.props.hostPostData),
-							H = be(e, i, this.props, t, w),
+							H = be(e, i, this.props, t),
 							W = ge(e, this.props, l),
 							B = V.media && V.media.type === $.o.EMBED ? V.media.provider : null,
 							K = u && !_.isSponsored,
@@ -2204,4 +2204,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~CountryPage~Frontpage~GovernanceReleaseNotesModal~ModListing~Mod~adaf0b02.964a84d865d709c92d1b.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~CountryPage~Frontpage~GovernanceReleaseNotesModal~ModListing~Mod~adaf0b02.7949853e858f0c080611.js.map
