@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/NotificationsPrePromptLoader.8466c0704ec44ad15004.js
-// Retrieved at 6/14/2022, 5:20:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/NotificationsPrePromptLoader.2052fbdb89bb238a6e1b.js
+// Retrieved at 6/15/2022, 1:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["NotificationsPrePromptLoader"], {
 		"./src/reddit/components/NotificationsPrePrompt/index.m.less": function(e, t, c) {
@@ -21,14 +21,14 @@
 				l = c("./src/reddit/helpers/trackers/notifications.ts"),
 				u = c("./src/reddit/helpers/chooseVariant/index.ts");
 
-			function O(e) {
+			function m(e) {
 				const t = Object(u.c)(e, {
 					experimentEligibilitySelector: u.a,
 					experimentName: d.Ab
 				});
-				return !Object(d.Wf)(t) && t
+				return !Object(d.Xf)(t) && t
 			}
-			var m, b = c("./src/reddit/components/NotificationsPrePrompt/index.m.less"),
+			var O, b = c("./src/reddit/components/NotificationsPrePrompt/index.m.less"),
 				p = c.n(b);
 
 			function f() {
@@ -41,14 +41,14 @@
 				}).apply(this, arguments)
 			}! function(e) {
 				e[e.ThreeSec = 3e3] = "ThreeSec", e[e.FiveSec = 5e3] = "FiveSec", e[e.TenSec = 1e4] = "TenSec"
-			}(m || (m = {}));
+			}(O || (O = {}));
 			const j = Object(s.a)(() => null);
 			t.default = e => {
 				const t = Object(a.b)(),
 					c = Object(i.d)(),
 					[s, u] = Object(n.useState)(),
-					b = Object(i.e)(O),
-					_ = Object(n.useCallback)(() => b === d.Oc.ThreeSeconds ? m.ThreeSec : b === d.Oc.FiveSeconds ? m.FiveSec : m.TenSec, [b]);
+					b = Object(i.e)(m),
+					_ = Object(n.useCallback)(() => b === d.Pc.ThreeSeconds ? O.ThreeSec : b === d.Pc.FiveSeconds ? O.FiveSec : O.TenSec, [b]);
 				return Object(n.useEffect)(() => {
 					if (b) {
 						const e = _();
@@ -68,4 +68,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/NotificationsPrePromptLoader.8466c0704ec44ad15004.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/NotificationsPrePromptLoader.2052fbdb89bb238a6e1b.js.map

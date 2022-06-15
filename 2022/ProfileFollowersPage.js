@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfileFollowersPage.91ad2f64c0a9269e7932.js
-// Retrieved at 6/14/2022, 5:20:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfileFollowersPage.268566c008da3db5c3ad.js
+// Retrieved at 6/15/2022, 1:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfileFollowersPage", "ProfileFollowersAction"], {
 		"./node_modules/lodash/take.js": function(e, t, r) {
@@ -910,7 +910,7 @@
 						const e = null == d ? void 0 : d.trim();
 						if (!(e && Object(m.g)(e) === m.d.Valid)) throw new Error(s.f);
 						t = e, r = null == a ? void 0 : a.trim()
-					} else if (i.socialLinkType === h.x.Reddit) {
+					} else if (i.socialLinkType === h.y.Reddit) {
 						const e = null == o ? void 0 : o.trim();
 						if (!(e && Object(u.e)(e) && e && e.length >= s.h && !/\s/.test(e))) throw new Error(s.e);
 						n = e
@@ -4345,7 +4345,7 @@
 					}, n[t]) : null
 				};
 				if (e.isD2xPdpSideRailRecsEnabled) {
-					const t = e.d2xPdpSideRailRecsVariant === u.Ec.GreyRereddit ? e.reredditButtons : [];
+					const t = e.d2xPdpSideRailRecsVariant === u.Fc.GreyRereddit ? e.reredditButtons : [];
 					return s.a.createElement(k, {
 						reredditContent: t,
 						countryCode: e.countryCode
@@ -5038,81 +5038,81 @@
 					}),
 					a = s.i;
 				switch (t) {
-					case n.x.BuyMeACoffee:
+					case n.y.BuyMeACoffee:
 						o = i._("Buy Me a Coffee", null, {
 							hk: "ZTbP7"
 						});
 						break;
-					case n.x.CashApp:
+					case n.y.CashApp:
 						o = i._("Cash App", null, {
 							hk: "1aorWN"
 						});
 						break;
-					case n.x.Custom:
+					case n.y.Custom:
 						o = i._("Custom URL", null, {
 							hk: "2gveOb"
 						}), a = s.c, r = i._("https://website.com", null, {
 							hk: "1Kp5fF"
 						});
 						break;
-					case n.x.Reddit:
+					case n.y.Reddit:
 						a = i._("r/community, u/user", null, {
 							hk: "45oRo"
 						});
 						break;
-					case n.x.Discord:
+					case n.y.Discord:
 						a = s.c, r = i._("https://discord.com", null, {
 							hk: "6gcLP"
 						});
 						break;
-					case n.x.Facebook:
+					case n.y.Facebook:
 						a = s.c, r = i._("https://facebook.com", null, {
 							hk: "2v99jB"
 						});
 						break;
-					case n.x.Kickstarter:
+					case n.y.Kickstarter:
 						a = s.c, r = i._("https://kickstarter.com", null, {
 							hk: "132LC7"
 						});
 						break;
-					case n.x.Shopify:
+					case n.y.Shopify:
 						a = s.c, r = i._("https://shopify.com", null, {
 							hk: "2X1G4f"
 						});
 						break;
-					case n.x.Spotify:
+					case n.y.Spotify:
 						a = s.c, r = i._("https://spotify.com", null, {
 							hk: "3dZORp"
 						});
 						break;
-					case n.x.Substack:
+					case n.y.Substack:
 						a = s.c, r = i._("https://substack.com", null, {
 							hk: "1zQgL1"
 						});
 						break;
-					case n.x.Youtube:
+					case n.y.Youtube:
 						o = i._("YouTube", null, {
 							hk: "12AQG6"
 						}), a = s.c, r = i._("https://youtube.com", null, {
 							hk: "4FZQ2O"
 						});
 						break;
-					case n.x.Onlyfans:
+					case n.y.Onlyfans:
 						o = i._("OnlyFans", null, {
 							hk: "1JRN4C"
 						});
 						break;
-					case n.x.Paypal:
+					case n.y.Paypal:
 						o = i._("PayPal", null, {
 							hk: "3n7Il"
 						});
 						break;
-					case n.x.Soundcloud:
+					case n.y.Soundcloud:
 						o = i._("SoundCloud", null, {
 							hk: "34Xo4u"
 						});
 						break;
-					case n.x.Tiktok:
+					case n.y.Tiktok:
 						o = i._("TikTok", null, {
 							hk: "tajib"
 						})
@@ -5124,16 +5124,16 @@
 					socialLinkType: t
 				}
 			}, a = () => {
-				return Object.keys(n.x).map(e => {
-					const t = n.x[e];
+				return Object.keys(n.y).map(e => {
+					const t = n.y[e];
 					return o(e, t)
-				}).filter(e => e.socialLinkType !== n.x.Indiegogo)
+				}).filter(e => e.socialLinkType !== n.y.Indiegogo)
 			}, d = e => {
 				const t = e.toLowerCase();
 				return `${s.d}${t}.png`
 			}, l = e => {
-				for (const t in n.x)
-					if (n.x[t] === e) return t;
+				for (const t in n.y)
+					if (n.y[t] === e) return t;
 				return ""
 			}, c = e => {
 				let t = s.b;
@@ -6691,11 +6691,11 @@
 				d = r("./node_modules/reselect/es/index.js");
 			const l = Object(d.a)(e => Object(s.c)(e, {
 					experimentEligibilitySelector: e => Object(a.g)(e) && Object(i.f)(e),
-					experimentName: n.kc
+					experimentName: n.lc
 				}), o.a),
 				c = Object(d.a)(e => Object(s.c)(e, {
 					experimentEligibilitySelector: e => !Object(a.g)(e) && Object(i.f)(e),
-					experimentName: n.jc
+					experimentName: n.kc
 				}), o.a),
 				u = Object(d.a)(l, c, (e, t) => e || t),
 				m = Object(d.a)(l, c, (e, t) => !(!e && !t))
@@ -6712,13 +6712,13 @@
 			const i = e => {
 					return !(Object(s.c)(e, {
 						experimentEligibilitySelector: s.a,
-						experimentName: n.ae
-					}) === n.td)
+						experimentName: n.be
+					}) === n.ud)
 				},
 				o = e => Object(s.c)(e, {
 					experimentEligibilitySelector: s.a,
-					experimentName: n.be
-				}) === n.td
+					experimentName: n.ce
+				}) === n.ud
 		},
 		"./src/reddit/selectors/followers.ts": function(e, t, r) {
 			"use strict";
@@ -6781,4 +6781,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileFollowersPage.91ad2f64c0a9269e7932.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileFollowersPage.268566c008da3db5c3ad.js.map
