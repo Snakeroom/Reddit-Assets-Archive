@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModerationPages.0e2e800ac4e28f3ef13a.js
-// Retrieved at 6/14/2022, 5:20:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModerationPages.22f7a83a5558d7f7d5bd.js
+// Retrieved at 6/15/2022, 11:10:24 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModerationPages"], {
 		"./node_modules/lodash/_arrayAggregator.js": function(e, t) {
@@ -4124,34 +4124,36 @@
 		},
 		"./src/reddit/components/CommunitySettings/helpers.ts": function(e, t, s) {
 			"use strict";
-			s.d(t, "c", (function() {
+			s.d(t, "d", (function() {
 				return a
-			})), s.d(t, "d", (function() {
-				return o
 			})), s.d(t, "e", (function() {
-				return r
+				return o
 			})), s.d(t, "f", (function() {
-				return i
-			})), s.d(t, "a", (function() {
-				return l
-			})), s.d(t, "k", (function() {
-				return d
-			})), s.d(t, "l", (function() {
-				return c
-			})), s.d(t, "n", (function() {
-				return m
-			})), s.d(t, "m", (function() {
-				return u
-			})), s.d(t, "h", (function() {
-				return p
+				return r
 			})), s.d(t, "g", (function() {
-				return h
-			})), s.d(t, "j", (function() {
-				return b
+				return i
 			})), s.d(t, "b", (function() {
-				return g
+				return l
+			})), s.d(t, "l", (function() {
+				return d
+			})), s.d(t, "m", (function() {
+				return c
+			})), s.d(t, "o", (function() {
+				return m
+			})), s.d(t, "n", (function() {
+				return u
 			})), s.d(t, "i", (function() {
+				return p
+			})), s.d(t, "h", (function() {
+				return h
+			})), s.d(t, "a", (function() {
+				return b
+			})), s.d(t, "k", (function() {
+				return g
+			})), s.d(t, "c", (function() {
 				return f
+			})), s.d(t, "j", (function() {
+				return x
 			}));
 			s("./node_modules/core-js/modules/web.dom.iterable.js");
 			var n = s("./node_modules/fbt/lib/FbtPublic.js");
@@ -4199,6 +4201,14 @@
 					hk: "3q3v14"
 				})],
 				b = {
+					mods: n.fbt._("Moderators", null, {
+						hk: "2rrkiT"
+					}),
+					anyone: n.fbt._("Anyone", null, {
+						hk: "Xp8Fs"
+					})
+				},
+				g = {
 					low: n.fbt._("Low", null, {
 						hk: "4k3iTe"
 					}),
@@ -4209,7 +4219,7 @@
 						hk: "gl6gc"
 					})
 				},
-				g = {
+				f = {
 					low: n.fbt._("Low (default)", null, {
 						hk: "2tqJd7"
 					}),
@@ -4220,7 +4230,7 @@
 						hk: "3bPDOM"
 					})
 				},
-				f = {
+				x = {
 					nullValue: n.fbt._("none (recommended)", null, {
 						hk: "2FMwQH"
 					}),
@@ -5322,7 +5332,7 @@
 					label: W.fbt._("Community name", null, {
 						hk: "260EEx"
 					}),
-					maxChars: te.d,
+					maxChars: te.e,
 					onChange: e => l(e.currentTarget.value, "title"),
 					textContainerClassName: Se.a.fullWidthTextContainer,
 					value: _ || ""
@@ -5362,7 +5372,7 @@
 						hk: "1XBKXj"
 					}),
 					onChange: e => l(e.currentTarget.value, "publicDescription", !1),
-					maxChars: te.c,
+					maxChars: te.d,
 					rows: 2,
 					subtext: W.fbt._("This is how new members come to understand your community.", null, {
 						hk: "llaA4"
@@ -5404,7 +5414,7 @@
 					placeholder: W.fbt._("Welcome to our community! We’re here to discuss our passion for all things related to grated cheese. (Heads up—we’re a text-only community, so sorry no image posts.) Get started by introducing yourself in our post for newbies, then check out our rules to learn more and dive in.", null, {
 						hk: "AnOYs"
 					}),
-					maxChars: te.e,
+					maxChars: te.f,
 					rows: 5,
 					value: k || ""
 				})), r.a.createElement(je, {
@@ -5572,8 +5582,9 @@
 				}))
 			}
 			var Ue = s("./src/reddit/models/Subreddit/index.ts"),
-				Be = s("./src/reddit/selectors/experiments/mediaInComments.ts");
-			var He = e => {
+				Be = s("./src/reddit/selectors/experiments/mediaInComments.ts"),
+				He = s("./src/reddit/selectors/experiments/chat.ts");
+			var We = e => {
 					const {
 						settings: t,
 						subredditName: s,
@@ -5597,7 +5608,7 @@
 						spamSelfposts: O,
 						spoilersEnabled: j,
 						suggestedCommentSort: w
-					} = t, N = Object(i.e)(Be.b) && l.showMediaInCommentsSetting, I = null === w ? "nullValue" : w, M = Object(o.useCallback)(() => n(!c, "archivePostsEnabled"), [c, n]);
+					} = t, N = Object(i.e)(Be.b), I = Object(i.e)(He.e), M = N && l.showMediaInCommentsSetting, P = null === w ? "nullValue" : w, R = Object(o.useCallback)(() => n(!c, "archivePostsEnabled"), [c, n]);
 					return r.a.createElement(S.a, null, r.a.createElement(y, null, r.a.createElement(S.b, null, W.fbt._("Post and Comment settings", null, {
 						hk: "14OI7p"
 					})), r.a.createElement(Q.a, null, W.fbt._("Posts", null, {
@@ -5606,13 +5617,13 @@
 						label: W.fbt._("Post type options", null, {
 							hk: "M9AdT"
 						}),
-						items: Object.keys(te.h),
-						displayItems: Object.values(te.h),
-						displayTitle: te.h[v],
+						items: Object.keys(te.i),
+						displayItems: Object.values(te.i),
+						displayTitle: te.i[v],
 						selected: v,
 						onClick: e => n(e, "contentOptions"),
 						id: "contentOptions",
-						descriptions: te.g
+						descriptions: te.h
 					}), r.a.createElement(X.p, {
 						on: b,
 						onClick: () => n(!b, "allowPostCrossposts"),
@@ -5621,14 +5632,25 @@
 						})
 					}), r.a.createElement(X.p, {
 						on: c,
-						onClick: M,
+						onClick: R,
 						label: W.fbt._("Archive posts", null, {
 							hk: "3FdbDg"
 						}),
 						subtext: W.fbt._("Don’t allow commenting or voting on posts older than 6 months", null, {
 							hk: "4tIS0"
 						})
-					}), a && r.a.createElement(X.p, {
+					}), a && I && r.a.createElement(X.d, {
+						label: W.fbt._("Live Chat Creators", null, {
+							hk: "2Yd8cb"
+						}),
+						selected: m ? te.a.anyone : te.a.mods,
+						items: Object.values(te.a),
+						onClick: e => n(e === te.a.anyone, "allowChatPostCreation"),
+						id: "chatPostOptions",
+						subtext: W.fbt._("Choose who can start live chat posts in your community", null, {
+							hk: "3F7D5k"
+						})
+					}), a && !I && r.a.createElement(X.p, {
 						on: m,
 						onClick: () => n(!m, "allowChatPostCreation"),
 						label: W.fbt._("Allow chat posts creation by users.", null, {
@@ -5686,9 +5708,9 @@
 						label: W.fbt._("Posts", null, {
 							hk: "1SdpTj"
 						}),
-						items: Object.keys(te.j),
-						displayItems: Object.values(te.j),
-						displayTitle: te.j[O],
+						items: Object.keys(te.k),
+						displayItems: Object.values(te.k),
+						displayTitle: te.k[O],
 						id: "spamSelfposts",
 						selected: O,
 						onClick: e => n(e, "spamSelfposts"),
@@ -5697,9 +5719,9 @@
 						label: W.fbt._("Links", null, {
 							hk: "Ia7TU"
 						}),
-						items: Object.keys(te.j),
-						displayItems: Object.values(te.j),
-						displayTitle: te.j[C],
+						items: Object.keys(te.k),
+						displayItems: Object.values(te.k),
+						displayTitle: te.k[C],
 						id: "spamLinks",
 						selected: C,
 						onClick: e => n(e, "spamLinks"),
@@ -5708,9 +5730,9 @@
 						label: W.fbt._("Comments", null, {
 							hk: "1X5Fv2"
 						}),
-						items: Object.keys(te.b),
-						displayItems: Object.values(te.b),
-						displayTitle: te.b[_],
+						items: Object.keys(te.c),
+						displayItems: Object.values(te.c),
+						displayTitle: te.c[_],
 						selected: _,
 						onClick: e => n(e, "spamComments"),
 						indent: !0,
@@ -5724,10 +5746,10 @@
 						subtext: W.fbt._("All comment feeds in community will default to this sort setting", null, {
 							hk: "4grj1W"
 						}),
-						items: Object.keys(te.i),
-						displayItems: Object.values(te.i),
-						displayTitle: te.i[I],
-						selected: I,
+						items: Object.keys(te.j),
+						displayItems: Object.values(te.j),
+						displayTitle: te.j[P],
+						selected: P,
 						onClick: e => n("nullValue" === e ? null : e, "suggestedCommentSort"),
 						id: "suggestedCommentSort"
 					}), r.a.createElement(X.p, {
@@ -5743,12 +5765,12 @@
 						direction: "column"
 					}, r.a.createElement(k, {
 						onChange: e => n(e.currentTarget.value, "commentScoreHideMins"),
-						isInvalid: !(E >= te.f && E <= te.a),
-						min: te.f,
-						max: te.a,
+						isInvalid: !(E >= te.g && E <= te.b),
+						min: te.g,
+						max: te.b,
 						type: "number",
 						value: E
-					})), N && r.a.createElement(r.a.Fragment, null, r.a.createElement(X.l, {
+					})), M && r.a.createElement(r.a.Fragment, null, r.a.createElement(X.l, {
 						label: W.fbt._("Media in comments", null, {
 							hk: "25YOda"
 						}),
@@ -5778,8 +5800,8 @@
 						last: !0
 					})))
 				},
-				We = s("./src/reddit/components/CrowdControlAdoptionCampaign/index.ts");
-			const ze = {
+				ze = s("./src/reddit/components/CrowdControlAdoptionCampaign/index.ts");
+			const Ve = {
 					0: {
 						text: W.fbt._("Off", null, {
 							hk: "30Jfc7"
@@ -5805,7 +5827,7 @@
 						color: "#EA0027"
 					}
 				},
-				Ve = {
+				qe = {
 					0: W.fbt._("Use Crowd Control to automatically collapse comments from users you’re not sure about.", null, {
 						hk: "n75Tc"
 					}),
@@ -5819,7 +5841,7 @@
 						hk: "4NqwJ"
 					})
 				},
-				qe = {
+				Ge = {
 					0: W.fbt._("Use Crowd Control to automatically filter posts from users you’re not sure about.", null, {
 						hk: "RFsOk"
 					}),
@@ -5833,7 +5855,7 @@
 						hk: "Syn69"
 					})
 				},
-				Ge = {
+				Ke = {
 					0: W.fbt._("No content posted from accounts suspected of ban evasion will automatically be held for review.", null, {
 						hk: "ziWwq"
 					}),
@@ -5848,7 +5870,7 @@
 					})
 				};
 
-			function Ke(e) {
+			function Qe(e) {
 				const {
 					banEvasionProtectionEnabled: t,
 					isChatPostsCreationEnabled: s,
@@ -5869,7 +5891,7 @@
 					toxicityThresholdChatLevel: x
 				} = a, {
 					showCrowdControlCampaign: E
-				} = Object(We.c)(), v = Math.max(m - 1, 0);
+				} = Object(ze.c)(), v = Math.max(m - 1, 0);
 				return r.a.createElement(S.a, null, r.a.createElement(y, null, r.a.createElement(S.b, null, W.fbt._("Safety & privacy settings", null, {
 					hk: "34ghQV"
 				})), r.a.createElement(Q.a, null, W.fbt._("Safety", null, {
@@ -5885,16 +5907,16 @@
 					})
 				}), r.a.createElement(X.j, {
 					className: Se.a.rangeSetting,
-					ticks: ze,
+					ticks: Ve,
 					min: 0,
-					max: Object.keys(ze).length - 1,
+					max: Object.keys(Ve).length - 1,
 					step: 1,
 					value: h,
 					onChange: e => l(e.target.value, "crowdControlLevel"),
 					label: W.fbt._("Adjust Crowd Control for Comments", null, {
 						hk: "4oWV2B"
 					}),
-					subtext: Ve[h]
+					subtext: qe[h]
 				}), r.a.createElement(X.p, {
 					indent: !0,
 					on: p,
@@ -5910,9 +5932,9 @@
 					})
 				}), r.a.createElement(X.j, {
 					className: Se.a.rangeSetting,
-					ticks: ze,
+					ticks: Ve,
 					min: 0,
-					max: Object.keys(ze).length - 1,
+					max: Object.keys(Ve).length - 1,
 					step: 1,
 					value: g,
 					onChange: e => l(e.target.value, "crowdControlPostLevel"),
@@ -5922,18 +5944,18 @@
 					}), E && r.a.createElement(ae.a, {
 						className: Se.a.labelNewTag
 					})),
-					subtext: qe[g]
+					subtext: Ge[g]
 				}), (s || n) && r.a.createElement(r.a.Fragment, null, r.a.createElement(X.j, {
-					ticks: ze,
+					ticks: Ve,
 					min: 0,
-					max: Object.keys(ze).length - 1,
+					max: Object.keys(Ve).length - 1,
 					step: 1,
 					value: b,
 					onChange: e => l(e.target.value, "crowdControlChatLevel"),
 					label: W.fbt._("Adjust Crowd Control for Chat Posts", null, {
 						hk: "vTy7k"
 					}),
-					subtext: Ve[b]
+					subtext: qe[b]
 				}), r.a.createElement(X.p, {
 					on: !!Number(x),
 					onClick: () => {
@@ -5947,16 +5969,16 @@
 					})
 				})), t && r.a.createElement(X.j, {
 					className: Se.a.rangeSetting,
-					ticks: ze,
+					ticks: Ve,
 					min: 0,
-					max: Object.keys(ze).length - 1,
+					max: Object.keys(Ve).length - 1,
 					step: 1,
 					value: v,
 					onChange: e => l((e => `${Math.min(parseInt(e,10)+1,4)}`)(e.target.value), "banEvasionThreshold"),
 					label: W.fbt._("Ban Evasion Protection", null, {
 						hk: "1TrdWv"
 					}),
-					subtext: Ge[v]
+					subtext: Ke[v]
 				}), r.a.createElement(Q.a, null, W.fbt._("Discover", null, {
 					hk: "1I53SY"
 				})), r.a.createElement(X.n, {
@@ -6004,7 +6026,7 @@
 				})))
 			}
 
-			function Qe(e) {
+			function Xe(e) {
 				const {
 					settings: t,
 					subredditName: s,
@@ -6022,13 +6044,13 @@
 					label: W.fbt._("Wikis can be edited by", null, {
 						hk: "3brAqG"
 					}),
-					displayItems: Object.values(te.n),
-					displayTitle: te.n[i],
-					items: Object.keys(te.n),
+					displayItems: Object.values(te.o),
+					displayTitle: te.o[i],
+					items: Object.keys(te.o),
 					selected: i,
 					onClick: e => n(e, "wikimode"),
 					id: "wikimode",
-					descriptions: te.m
+					descriptions: te.n
 				}), r.a.createElement(X.l, {
 					label: W.fbt._("Karma required to edit and create wiki pages", null, {
 						hk: "3OgR7v"
@@ -6036,9 +6058,9 @@
 					direction: "column"
 				}, r.a.createElement(k, {
 					onChange: e => n(e.currentTarget.value, "wikiEditKarma"),
-					isInvalid: !(o >= te.f && o <= te.l),
-					min: te.f,
-					max: te.l,
+					isInvalid: !(o >= te.g && o <= te.m),
+					min: te.g,
+					max: te.m,
 					type: "number",
 					value: o
 				})), r.a.createElement(X.l, {
@@ -6048,9 +6070,9 @@
 					direction: "column"
 				}, r.a.createElement(k, {
 					onChange: e => n(e.currentTarget.value, "wikiEditAge"),
-					isInvalid: !(a >= te.f && a <= te.k),
-					min: te.f,
-					max: te.k,
+					isInvalid: !(a >= te.g && a <= te.l),
+					min: te.g,
+					max: te.l,
 					type: "number",
 					value: a
 				})), r.a.createElement(Q.a, null, W.fbt._("Advanced Settings", null, {
@@ -6069,8 +6091,8 @@
 				})))
 			}
 			const {
-				fbt: Xe
-			} = s("./node_modules/fbt/lib/FbtPublic.js"), Ye = Object(l.c)({
+				fbt: Ye
+			} = s("./node_modules/fbt/lib/FbtPublic.js"), Je = Object(l.c)({
 				allowChatPostCreation: (e, t) => Object(P.b)(e, t.subredditId),
 				banEvasionProtectionEnabled: N.d.banEvasionProtectionEnabled,
 				isBroadcastingEnabled: (e, t) => Object(R.c)(e, t.subredditId),
@@ -6086,7 +6108,7 @@
 				subredditCountrySite: (e, t) => ((e, t) => e.subreddits.countrySiteSettings[t])(e, t.subredditId),
 				subredditCountryEditEnabled: (e, t) => Object(B.g)(e),
 				subredditLanguageEditEnabled: (e, t) => Object(B.h)(e)
-			}), Je = Object(i.b)(Ye, (e, t) => {
+			}), Ze = Object(i.b)(Je, (e, t) => {
 				let {
 					subredditId: s
 				} = t;
@@ -6111,7 +6133,7 @@
 					}
 				}
 			});
-			class Ze extends r.a.Component {
+			class $e extends r.a.Component {
 				constructor(e) {
 					var t;
 					super(e), t = this, this.saveSettings = () => {
@@ -6143,16 +6165,16 @@
 						if (!this.state.settings) return null;
 						switch (this.props.subpageName) {
 							case d.hc.Safety:
-								return r.a.createElement(Ke, e);
+								return r.a.createElement(Qe, e);
 							case d.hc.Notifications:
 								return r.a.createElement(S.a, null, r.a.createElement(y, null, r.a.createElement(O.a, {
 									subredditId: e.subredditId,
 									subredditName: e.subredditName
 								})));
 							case d.hc.Posts:
-								return r.a.createElement(He, e);
+								return r.a.createElement(We, e);
 							case d.hc.Wikis:
-								return r.a.createElement(Qe, e);
+								return r.a.createElement(Xe, e);
 							case d.hc.ContentTag:
 								return r.a.createElement(Le, {
 									subreddit: e.subreddit
@@ -6177,12 +6199,12 @@
 					return r.a.createElement(r.a.Fragment, null, this.props.subpageName !== d.hc.ContentTag && r.a.createElement(S.c, null, r.a.createElement(w.l, {
 						onClick: this.saveSettings,
 						"data-redditstyle": !0
-					}, Xe._("Save changes", null, {
+					}, Ye._("Save changes", null, {
 						hk: "8mSp0"
 					}))), this.renderSubpage())
 				}
 			}
-			t.a = Je(Object(j.c)(Ze))
+			t.a = Ze(Object(j.c)($e))
 		},
 		"./src/reddit/components/CommunityTopics/NumTopicsSelected.tsx": function(e, t, s) {
 			"use strict";
@@ -24019,4 +24041,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.0e2e800ac4e28f3ef13a.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.22f7a83a5558d7f7d5bd.js.map
