@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Subreddit.98f0e5d057bbc916cea9.js
-// Retrieved at 6/15/2022, 1:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Subreddit.201f85bf548dd94ef908.js
+// Retrieved at 6/15/2022, 1:40:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Subreddit", "reddit-components-ContentGate", "reddit-components-Econ-PredictionLeaderboard-Sidebar"], {
 		"./node_modules/@researchgate/react-intersection-observer/lib/es/index.js": function(e, t, n) {
@@ -5796,7 +5796,7 @@
 					[C, N] = Object(s.useState)(),
 					k = function() {
 						let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : null;
-						e ? (N(e), c(Object(p.u)(null == e ? void 0 : e.name, null == e ? void 0 : e.id))) : c(Object(p.s)()), n(Object(i.c)({
+						e ? (N(e), c(Object(p.u)(null == e ? void 0 : e.topic, null == e ? void 0 : e.id))) : c(Object(p.s)()), n(Object(i.c)({
 							type: f.d.REONBOARDING,
 							selectedInterests: e ? {
 								[e.id]: []
@@ -10392,7 +10392,7 @@
 					},
 					noun: t ? a.CATEGORY : a.SUB_CATEGORY,
 					onboarding: {
-						categoryName: n,
+						categoryName: w(n),
 						categoryId: o
 					}
 				}),
@@ -10406,7 +10406,7 @@
 					},
 					noun: a.SUBREDDIT,
 					onboarding: {
-						categoryName: t,
+						categoryName: w(t),
 						categoryId: n,
 						subredditName: o,
 						subredditId: c
@@ -10418,7 +10418,7 @@
 					action: s.c.CLICK,
 					noun: a.VIEW_MORE,
 					onboarding: {
-						categoryName: e,
+						categoryName: w(e),
 						categoryId: t
 					}
 				}),
@@ -10440,7 +10440,7 @@
 					action: s.c.SELECT,
 					noun: a.CATEGORY,
 					onboarding: {
-						categoryName: e,
+						categoryName: w(e),
 						categoryId: t
 					}
 				}),
@@ -10450,13 +10450,17 @@
 					action: s.c.DISMISS,
 					noun: a.TOPIC_PREVIEW
 				}),
-				P = (e, t, n) => o => ({
-					...Object(r.n)(o),
+				P = (e, t, n, o) => c => ({
+					...Object(r.n)(c),
 					source: i,
 					action: s.c.VIEW,
 					noun: e ? a.CATEGORY : a.SUB_CATEGORY,
+					actionInfo: {
+						...Object(r.d)(c),
+						reason: o
+					},
 					onboarding: {
-						categoryName: t,
+						categoryName: w(t),
 						categoryId: n
 					}
 				}),
@@ -10470,12 +10474,13 @@
 					},
 					noun: a.SUBREDDIT,
 					onboarding: {
-						categoryName: e,
+						categoryName: w(e),
 						categoryId: n,
 						subredditName: t,
 						subredditId: o
 					}
-				})
+				}),
+				w = e => e.toLowerCase().replace(new RegExp("&", "g"), "and").replace(new RegExp(" ", "g"), "_").replace(new RegExp("[^-_a-z0-9]", "g"), "")
 		},
 		"./src/reddit/helpers/trackers/predictionsLeaderboard.ts": function(e, t, n) {
 			"use strict";
@@ -13850,4 +13855,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Subreddit.98f0e5d057bbc916cea9.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Subreddit.201f85bf548dd94ef908.js.map

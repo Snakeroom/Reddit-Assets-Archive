@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Frontpage.3e4fea849322f01a0f22.js
-// Retrieved at 6/15/2022, 1:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Frontpage.4c2b4d6d46276e6f3e68.js
+// Retrieved at 6/15/2022, 1:40:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Frontpage"], {
 		"./node_modules/intersection-observer/intersection-observer.js": function(e, t) {
@@ -3725,7 +3725,7 @@
 					[N, j] = Object(s.useState)(),
 					C = function() {
 						let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : null;
-						e ? (j(e), o(Object(p.u)(null == e ? void 0 : e.name, null == e ? void 0 : e.id))) : o(Object(p.s)()), a(Object(c.c)({
+						e ? (j(e), o(Object(p.u)(null == e ? void 0 : e.topic, null == e ? void 0 : e.id))) : o(Object(p.s)()), a(Object(c.c)({
 							type: g.d.REONBOARDING,
 							selectedInterests: e ? {
 								[e.id]: []
@@ -7900,4 +7900,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Frontpage.3e4fea849322f01a0f22.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Frontpage.4c2b4d6d46276e6f3e68.js.map

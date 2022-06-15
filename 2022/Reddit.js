@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Reddit.d4cb968e0be9cb679f47.js
-// Retrieved at 6/15/2022, 1:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Reddit.5b2a30ea7fcbeb95a521.js
+// Retrieved at 6/15/2022, 1:40:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Reddit"], {
 		"./assets/fonts/BentonSans/font.less": function(e, t, n) {},
@@ -7739,7 +7739,7 @@
 					},
 					noun: t ? i.CATEGORY : i.SUB_CATEGORY,
 					onboarding: {
-						categoryName: n,
+						categoryName: N(n),
 						categoryId: o
 					}
 				}),
@@ -7753,7 +7753,7 @@
 					},
 					noun: i.SUBREDDIT,
 					onboarding: {
-						categoryName: t,
+						categoryName: N(t),
 						categoryId: n,
 						subredditName: o,
 						subredditId: c
@@ -7765,7 +7765,7 @@
 					action: s.c.CLICK,
 					noun: i.VIEW_MORE,
 					onboarding: {
-						categoryName: e,
+						categoryName: N(e),
 						categoryId: t
 					}
 				}),
@@ -7787,7 +7787,7 @@
 					action: s.c.SELECT,
 					noun: i.CATEGORY,
 					onboarding: {
-						categoryName: e,
+						categoryName: N(e),
 						categoryId: t
 					}
 				}),
@@ -7797,13 +7797,17 @@
 					action: s.c.DISMISS,
 					noun: i.TOPIC_PREVIEW
 				}),
-				k = (e, t, n) => o => ({
-					...Object(r.n)(o),
+				k = (e, t, n, o) => c => ({
+					...Object(r.n)(c),
 					source: a,
 					action: s.c.VIEW,
 					noun: e ? i.CATEGORY : i.SUB_CATEGORY,
+					actionInfo: {
+						...Object(r.d)(c),
+						reason: o
+					},
 					onboarding: {
-						categoryName: t,
+						categoryName: N(t),
 						categoryId: n
 					}
 				}),
@@ -7817,12 +7821,13 @@
 					},
 					noun: i.SUBREDDIT,
 					onboarding: {
-						categoryName: e,
+						categoryName: N(e),
 						categoryId: n,
 						subredditName: t,
 						subredditId: o
 					}
-				})
+				}),
+				N = e => e.toLowerCase().replace(new RegExp("&", "g"), "and").replace(new RegExp(" ", "g"), "_").replace(new RegExp("[^-_a-z0-9]", "g"), "")
 		},
 		"./src/reddit/helpers/trackers/shortcuts.ts": function(e, t, n) {
 			"use strict";
@@ -20365,4 +20370,4 @@
 		["./src/reddit/index.tsx", "runtime~Reddit", "vendors~Governance~ModListing~Reddit~Subreddit", "vendors~Chat~Governance~Reddit", "vendors~Reddit~StandalonePostPage", "vendors~Reddit", "PostCreation~Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~r~4c415e24", "Governance~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compo~bd4baca2", "Governance~ModListing~Reddit~ReportFlow~Subreddit", "Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddi~90fdacc3", "Chat~Governance~Reddit", "Governance~Reddit~Subreddit", "Governance~Reddit", "AuthorHovercard~Reddit"]
 	]
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit.d4cb968e0be9cb679f47.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit.5b2a30ea7fcbeb95a521.js.map

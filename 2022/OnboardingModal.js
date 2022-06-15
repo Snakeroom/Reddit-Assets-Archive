@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/OnboardingModal.240f3e4aab83466e1e70.js
-// Retrieved at 6/15/2022, 1:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/OnboardingModal.a7ee9fe6231815225836.js
+// Retrieved at 6/15/2022, 1:40:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["OnboardingModal"], {
 		"./node_modules/lodash/_baseRange.js": function(e, t) {
@@ -1355,8 +1355,8 @@
 					x = t.slice(0, f ? void 0 : 4),
 					O = "recommended" === i ? "" : d,
 					E = Object(o.useCallback)(() => {
-						g(!0), b(Object(R.f)(c, i))
-					}, [b, c, i]);
+						g(!0), b(Object(R.f)(d, i))
+					}, [b, d, i]);
 				return a.a.createElement(a.a.Fragment, null, x.map(e => {
 					const t = p.has(e.id);
 					return a.a.createElement(ee.a, {
@@ -1365,7 +1365,7 @@
 						viewportRoot: u,
 						threshold: 1,
 						rootMargin: "0px 0px -85px 0px",
-						onEnter: t ? void 0 : Object(R.h)(c, Q(e.prefixedName), i, e.id, r),
+						onEnter: t ? void 0 : Object(R.h)(d, Q(e.prefixedName), i, e.id, r),
 						onEnterHandler: t => {
 							m(new Set(p).add(e.id))
 						}
@@ -1406,8 +1406,8 @@
 				} = e;
 				const g = Object(v.a)(),
 					h = Object(o.useCallback)(() => {
-						g(Object(R.d)(!i, b, p, Q(l), t, u)), m(t)
-					}, [t, i, l, u, g, m, b, p]);
+						g(Object(R.d)(!i, f, p, Q(l), t, u)), m(t)
+					}, [t, i, l, u, g, m, f, p]);
 				return a.a.createElement("div", {
 					className: Object(d.a)(ne.a.CommunityRow, {
 						[s ? ne.a.SelectedImproved : ne.a.Selected]: i
@@ -1550,9 +1550,8 @@
 					var o;
 					const {
 						id: u,
-						name: p,
-						topic: b
-					} = e, f = !!r[u], g = null !== i, h = l.has(u);
+						topic: p
+					} = e, b = !!r[u], f = null !== i, g = l.has(u);
 					return a.a.createElement(a.a.Fragment, {
 						key: e.id
 					}, a.a.createElement(ee.a, {
@@ -1560,18 +1559,18 @@
 						viewportRoot: c,
 						threshold: 1,
 						rootMargin: "0px 0px -85px 0px",
-						onEnter: h ? void 0 : Object(R.m)(!g, p, u),
+						onEnter: g ? void 0 : Object(R.m)(!f, p, u),
 						onEnterHandler: e => {
-							h || d(new Set(l).add(u))
+							g || d(new Set(l).add(u))
 						}
 					}, a.a.createElement(me.a, {
-						colorIndex: g && null != i ? i : t,
-						isSelected: f,
-						isSubtopic: g,
+						colorIndex: f && null != i ? i : t,
+						isSelected: b,
+						isSubtopic: f,
 						key: u,
-						onClickHandler: () => m(e, f, g, p, u),
-						topic: b
-					}), f && !!(null === (o = e.children) || void 0 === o ? void 0 : o.length) && a.a.createElement(he, {
+						onClickHandler: () => m(e, b, f, p, u),
+						topic: p
+					}), b && !!(null === (o = e.children) || void 0 === o ? void 0 : o.length) && a.a.createElement(he, {
 						interests: e.children,
 						schemeName: n,
 						selected: r,
@@ -4181,4 +4180,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/OnboardingModal.240f3e4aab83466e1e70.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/OnboardingModal.a7ee9fe6231815225836.js.map
