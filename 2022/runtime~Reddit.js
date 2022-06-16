@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/runtime~Reddit.2869515265dbe89307ff.js
-// Retrieved at 6/16/2022, 6:00:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/runtime~Reddit.4dd9fe1f11c3ed147a6b.js
+// Retrieved at 6/16/2022, 6:30:05 PM by Reddit Dataminer v1.0.0
 ! function(e) {
 	function o(o) {
 		for (var a, n, r = o[0], s = o[1], c = o[2], l = 0, P = []; l < r.length; l++) n = r[l], Object.prototype.hasOwnProperty.call(d, n) && d[n] && P.push(d[n][0]), d[n] = 0;
@@ -691,8 +691,8 @@
 					"CollectionCommentsPage~CommentsPage~ModerationPages~ProfileComments~ProfileOverview~ProfilePrivate~R~969c2956": "28e689d83accece28802",
 					"CollectionCommentsPage~CommentsPage~ModProgressModule~NewCommunityProgress": "31d6cfe0d16ae931b73c",
 					"CollectionCommentsPage~CommentsPage~Subreddit~SubredditWiki": "ec4a52d0de4fa29d0b20",
-					CollectionCommentsPage: "76b0211e49a6e00ea8c0",
-					CommentsPage: "76b0211e49a6e00ea8c0",
+					CollectionCommentsPage: "580008fb023e824596e8",
+					CommentsPage: "580008fb023e824596e8",
 					"ProfileComments~ProfileOverview~ProfilePosts~ProfilePrivate~ProfileSnoobuilder": "8727ebf370d1215570c4",
 					"ProfileComments~ProfileOverview~ProfilePrivate": "b2904af8f1d4a14fdd6e",
 					ProfileComments: "04cab038f073c6734472",
@@ -1391,8 +1391,8 @@
 						"CollectionCommentsPage~CommentsPage~ModerationPages~ProfileComments~ProfileOverview~ProfilePrivate~R~969c2956": "5919c394985013947dbf",
 						"CollectionCommentsPage~CommentsPage~ModProgressModule~NewCommunityProgress": "50fef937c9e262b7c82d",
 						"CollectionCommentsPage~CommentsPage~Subreddit~SubredditWiki": "5e01396abd5b01d7d591",
-						CollectionCommentsPage: "af659024cdc6438b7c88",
-						CommentsPage: "3fbc2a7695f1d2847187",
+						CollectionCommentsPage: "4aeb682c7a0b4184544b",
+						CommentsPage: "bf7322a6485293825c6a",
 						"ProfileComments~ProfileOverview~ProfilePosts~ProfilePrivate~ProfileSnoobuilder": "9e9c50963f9b68c01353",
 						"ProfileComments~ProfileOverview~ProfilePrivate": "86d4302b8b0b06c60714",
 						ProfileComments: "b18169a704cf78703114",
@@ -1750,4 +1750,4 @@
 	var m = c;
 	t()
 }([]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/runtime~Reddit.2869515265dbe89307ff.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/runtime~Reddit.4dd9fe1f11c3ed147a6b.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CommentsPage.3fbc2a7695f1d2847187.js
-// Retrieved at 6/16/2022, 6:00:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CommentsPage.bf7322a6485293825c6a.js
+// Retrieved at 6/16/2022, 6:30:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CommentsPage"], {
 		"./node_modules/lodash/_baseDelay.js": function(e, t) {
@@ -8583,7 +8583,9 @@
 				subredditTitle: "WfSCvRO60bnRAHFf76dCJ",
 				subredditName: "_1AF1qgUDsTX_XHGNtb9eTD",
 				subredditIcon: "bl4ZZFlSdSp0651LqnPbO",
+				metaContainer: "BwvWQ18WXJeAju_oSfQGJ",
 				metaSection: "BBzDU1DzKBAtxEtIy16cO",
+				dotSpacer: "_2Dy7qlY8h2gM-idmKUvIwU",
 				icon: "_3JBKdIEBBJDr8ks2UAEKb6",
 				postTitle: "_16PE03zyTycZgJEtewpplw",
 				communityBannerPlaceholder: "_2D7zl_d54nzW6JddGmlL0v",
@@ -8722,8 +8724,8 @@
 						className: _.a.subredditName
 					}, a && `r/${a.name}`)), r.a.createElement("div", {
 						className: _.a.postTitle
-					}, Object(O.a)(n.title, 80, "...")), r.a.createElement("div", {
-						className: _.a.postMeta
+					}, Object(O.a)(n.title, 60, "...")), r.a.createElement("div", {
+						className: _.a.metaContainer
 					}, r.a.createElement("div", {
 						className: _.a.metaSection,
 						onClick: c
@@ -8736,7 +8738,9 @@
 						className: _.a.icon
 					}), r.a.createElement("span", {
 						className: _.a.meta
-					}, Object(C.b)(p))), r.a.createElement("div", {
+					}, Object(C.b)(p))), r.a.createElement("span", {
+						className: _.a.dotSpacer
+					}), r.a.createElement("div", {
 						className: _.a.metaSection
 					}, r.a.createElement("span", null, Object(v.a)(m / 1e3, !0))))))
 				})),
@@ -11443,4 +11447,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommentsPage.3fbc2a7695f1d2847187.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommentsPage.bf7322a6485293825c6a.js.map
