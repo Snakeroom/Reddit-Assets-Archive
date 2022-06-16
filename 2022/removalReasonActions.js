@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/removalReasonActions.6138b41e0b64d43dfa6b.js
-// Retrieved at 6/16/2022, 9:40:06 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/removalReasonActions.110d6659e02e6952d27f.js
+// Retrieved at 6/16/2022, 6:00:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["removalReasonActions"], {
 		"./src/lib/scroll/index.ts": function(e, t, o) {
@@ -244,7 +244,7 @@
 			const ie = Object(re.a)(e => Object(se.c)(e, {
 				experimentEligibilitySelector: se.a,
 				experimentName: ne.Ib
-			}), e => e === ne.td);
+			}), e => e === ne.ud);
 			var ce = o("./src/reddit/selectors/experiments/contributeBeforeSignUp.ts"),
 				ae = o("./src/reddit/selectors/experiments/emailEnablement.ts"),
 				de = o("./src/reddit/selectors/platform.ts"),
@@ -792,7 +792,7 @@
 						[e]: {
 							sendReplies: r
 						}
-					})), (await Object(F.r)(s(), e, r)).ok || t(Object(ue.j)({
+					})), (await Object(F.s)(s(), e, r)).ok || t(Object(ue.j)({
 						[e]: {
 							sendReplies: !r
 						}
@@ -2815,4 +2815,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/removalReasonActions.6138b41e0b64d43dfa6b.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/removalReasonActions.110d6659e02e6952d27f.js.map

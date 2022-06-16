@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModListing.110d1a91f8682f9d6157.js
-// Retrieved at 6/16/2022, 9:40:06 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModListing.5d9644c05cd72b958a19.js
+// Retrieved at 6/16/2022, 6:00:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModListing"], {
 		"./node_modules/classnames/index.js": function(e, t, n) {
@@ -1826,7 +1826,7 @@
 					}, r[t]) : null
 				};
 				if (e.isD2xPdpSideRailRecsEnabled) {
-					const t = e.d2xPdpSideRailRecsVariant === u.Fc.GreyRereddit ? e.reredditButtons : [];
+					const t = e.d2xPdpSideRailRecsVariant === u.Gc.GreyRereddit ? e.reredditButtons : [];
 					return s.a.createElement(C, {
 						reredditContent: t,
 						countryCode: e.countryCode
@@ -7163,11 +7163,11 @@
 				c = n("./node_modules/reselect/es/index.js");
 			const d = Object(c.a)(e => Object(s.c)(e, {
 					experimentEligibilitySelector: e => Object(a.g)(e) && Object(o.f)(e),
-					experimentName: r.lc
+					experimentName: r.mc
 				}), i.a),
 				l = Object(c.a)(e => Object(s.c)(e, {
 					experimentEligibilitySelector: e => !Object(a.g)(e) && Object(o.f)(e),
-					experimentName: r.kc
+					experimentName: r.lc
 				}), i.a),
 				u = Object(c.a)(d, l, (e, t) => e || t),
 				m = Object(c.a)(d, l, (e, t) => !(!e && !t))
@@ -7184,7 +7184,7 @@
 					experimentEligibilitySelector: s.a,
 					experimentName: e
 				});
-				return !(!n || Object(r.Wf)(n))
+				return !(!n || Object(r.Xf)(n))
 			}
 		},
 		"./src/reddit/selectors/experiments/navbarLikeMweb.ts": function(e, t, n) {
@@ -7195,9 +7195,9 @@
 			var r = n("./src/reddit/constants/experiments.ts"),
 				s = n("./src/reddit/helpers/chooseVariant/index.ts");
 			const o = e => Object(s.c)(e, {
-				experimentName: r.oe,
+				experimentName: r.pe,
 				experimentEligibilitySelector: s.a
-			}) === r.xe.Enabled
+			}) === r.ye.Enabled
 		},
 		"./src/reddit/selectors/experiments/newCommunityProgressV3.ts": function(e, t, n) {
 			"use strict";
@@ -7238,7 +7238,7 @@
 					return r ? r * s.Sb < 1639443600180 ? void 0 : f(e) : void 0
 				},
 				f = Object(r.a)(e => Object(a.c)(e, {
-					experimentName: o.qe,
+					experimentName: o.re,
 					experimentEligibilitySelector: c.e
 				}), d.a)
 		},
@@ -7354,4 +7354,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModListing.110d1a91f8682f9d6157.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModListing.5d9644c05cd72b958a19.js.map

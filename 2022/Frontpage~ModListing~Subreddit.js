@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Frontpage~ModListing~Subreddit.d79eaa93ef853415bf50.js
-// Retrieved at 6/16/2022, 9:40:06 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Frontpage~ModListing~Subreddit.d6bd87481fe7ce457645.js
+// Retrieved at 6/16/2022, 6:00:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Frontpage~ModListing~Subreddit"], {
 		"./src/reddit/actions/focusedVerticals/index.ts": function(e, t, n) {
@@ -907,8 +907,8 @@
 						hk: "1QaJzt"
 					})
 				};
-			var X = n("./src/reddit/components/StateSort/index.m.less"),
-				Z = n.n(X);
+			var Z = n("./src/reddit/components/StateSort/index.m.less"),
+				X = n.n(Z);
 
 			function $() {
 				return ($ = Object.assign || function(e) {
@@ -919,7 +919,7 @@
 					return e
 				}).apply(this, arguments)
 			}
-			const ee = R.a.wrapped(x.a, "_Dropdown", Z.a),
+			const ee = R.a.wrapped(x.a, "_Dropdown", X.a),
 				te = Object(_.a)(ee),
 				ne = e => {
 					return e.indexOf("_") > 0 && se(e) === b.z.UnitedStates
@@ -982,7 +982,7 @@
 						isSelected: e.sort === r
 					}))
 				}))))
-			})), "Component", Z.a);
+			})), "Component", X.a);
 			const le = {
 				[b.z.Everywhere]: () => w.fbt._("Everywhere", null, {
 					hk: "3ysAHX"
@@ -2068,7 +2068,7 @@
 						subredditId: n
 					})),
 					_ = Object(a.e)(m.a),
-					S = _ !== u.ze.NewModule;
+					S = _ !== u.Ae.NewModule;
 				return (null === (s = null == g ? void 0 : g.cards) || void 0 === s ? void 0 : s.length) > 0 && S ? o.a.createElement(f, {
 					closeModuleOnMount: !!t && t !== p.g.Large,
 					subredditId: n,
@@ -2096,15 +2096,15 @@
 			const a = e => {
 					const t = Object(s.c)(e, {
 						experimentEligibilitySelector: o.Q,
-						experimentName: r.Yc
+						experimentName: r.Zc
 					});
-					return !(!t || Object(r.Wf)(t))
+					return !(!t || Object(r.Xf)(t))
 				},
 				i = e => {
 					return Object(s.c)(e, {
 						experimentEligibilitySelector: o.Q,
-						experimentName: r.Yc
-					}) === r.xd.ListingEnabled
+						experimentName: r.Zc
+					}) === r.yd.ListingEnabled
 				}
 		},
 		"./src/reddit/selectors/focusedVerticalSuggestion.ts": function(e, t, n) {
@@ -2231,4 +2231,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Frontpage~ModListing~Subreddit.d79eaa93ef853415bf50.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Frontpage~ModListing~Subreddit.d6bd87481fe7ce457645.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/FrontpageSidebar.1cda39ae52e6b4e5be92.js
-// Retrieved at 6/16/2022, 12:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/FrontpageSidebar.7617ffc6c1cbeb35fe6d.js
+// Retrieved at 6/16/2022, 6:00:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["FrontpageSidebar"], {
 		"./node_modules/lodash/_arrayShuffle.js": function(e, t, n) {
@@ -285,11 +285,11 @@
 				Z = n("./src/reddit/contexts/ApiContext.tsx"),
 				H = n("./src/reddit/featureFlags/component.tsx"),
 				K = n("./src/reddit/helpers/localStorage/index.ts"),
-				X = n("./src/reddit/helpers/name/index.ts"),
-				z = n("./src/lib/makeApiRequest/index.ts"),
+				z = n("./src/reddit/helpers/name/index.ts"),
+				X = n("./src/lib/makeApiRequest/index.ts"),
 				V = n("./src/lib/omitHeaders/index.ts"),
 				Y = n("./src/reddit/constants/headers.ts");
-			const $ = e => Object(z.a)(Object(V.a)(e, [Y.a]), {
+			const $ = e => Object(X.a)(Object(V.a)(e, [Y.a]), {
 				endpoint: `${e.apiUrl}/api/multi/user/CommunityAdoptionBot/m/adoption_week/`,
 				method: Q.jb.GET,
 				type: "json"
@@ -340,7 +340,7 @@
 						hk: "487Ffc"
 					})), d.a.createElement("div", {
 						className: te.a.description
-					}, ne._("{subreddits list} and more are looking for moderators!", [ne._param("subreddits list", d.a.createElement("strong", null, e.map(X.c).join(", ") + (e.length > 1 ? "," : "")))], {
+					}, ne._("{subreddits list} and more are looking for moderators!", [ne._param("subreddits list", d.a.createElement("strong", null, e.map(z.c).join(", ") + (e.length > 1 ? "," : "")))], {
 						hk: "2Tb946"
 					}))), d.a.createElement(_.n, {
 						className: te.a.button,
@@ -685,16 +685,16 @@
 			}
 			var Ue = n("./src/reddit/selectors/experiments/utils.ts");
 			const Qe = Object(u.a)(e => Object(Ge.c)(e, {
-					experimentName: De.Xd,
+					experimentName: De.Yd,
 					experimentEligibilitySelector: Ge.a
 				}), Ue.a),
-				qe = Object(u.a)(Qe, e => e === De.Yd.Enabled);
+				qe = Object(u.a)(Qe, e => e === De.Zd.Enabled);
 			var Je = n("./src/reddit/selectors/experiments/loggedOutOneFeed.ts"),
 				Ze = n("./src/reddit/selectors/experiments/publicAccessNetwork.ts"),
 				He = n("./src/reddit/selectors/user.ts");
 			var Ke = n("./src/reddit/selectors/seo/linksModule.ts"),
-				Xe = n("./src/reddit/selectors/subreddit.ts"),
-				ze = n("./src/reddit/selectors/subredditLeaderboard.ts");
+				ze = n("./src/reddit/selectors/subreddit.ts"),
+				Xe = n("./src/reddit/selectors/subredditLeaderboard.ts");
 			n("./src/reddit/components/TopSubredditsWidget/index.tsx"), n("./src/reddit/components/TopSubredditsWidget/SubredditRankItemPlaceholder.tsx");
 			var Ve = n("./src/reddit/helpers/createBannerProperties/index.ts"),
 				Ye = n("./src/reddit/selectors/meta.ts");
@@ -713,15 +713,15 @@
 					},
 					bffsLeaderboardVariant: Me,
 					inRpanTopVideoEntrypointExperiment: Ze.e,
-					rankings: e => Object(Xe.P)(e, $e),
+					rankings: e => Object(ze.P)(e, $e),
 					shouldShowTopicsWidget: e => {
 						const t = Object(Ze.e)(e),
-							n = !!Object(Xe.P)(e, $e);
+							n = !!Object(ze.P)(e, $e);
 						return (!t || !n) && function(e) {
 							return Object(Ge.c)(e, {
 								experimentEligibilitySelector: He.Q,
-								experimentName: De.vc
-							}) === De.td
+								experimentName: De.wc
+							}) === De.ud
 						}(e)
 					},
 					isNavbarLikeMwebEnabled: l.a,
@@ -830,7 +830,7 @@
 							},
 							isOnlyModIncluded: !1
 						},
-						n = Object(ze.d)($e, et);
+						n = Object(Xe.d)($e, et);
 					e(Object(b.b)(t, n))
 				},
 				subredditAboutRequested: t => e(Object(m.u)(t))
@@ -2223,4 +2223,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/FrontpageSidebar.1cda39ae52e6b4e5be92.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/FrontpageSidebar.7617ffc6c1cbeb35fe6d.js.map

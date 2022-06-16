@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfileComments~ProfileOverview~ProfilePrivate.9855107fdcdfc4e37ef3.js
-// Retrieved at 6/16/2022, 9:40:06 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfileComments~ProfileOverview~ProfilePrivate.86d4302b8b0b06c60714.js
+// Retrieved at 6/16/2022, 6:00:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfileComments~ProfileOverview~ProfilePrivate"], {
 		"./node_modules/lodash/uniqueId.js": function(e, t, s) {
@@ -198,8 +198,8 @@
 				B = s("./src/reddit/components/PostTopMeta/index.tsx"),
 				W = s("./src/reddit/components/PublicAccessNetwork/LiveVideoPlayer/videoContext.tsx"),
 				H = s("./src/reddit/controls/OutboundLink/styled.tsx"),
-				V = s("./src/reddit/models/Audio/index.ts"),
-				U = s("./src/reddit/models/Media/index.ts"),
+				U = s("./src/reddit/models/Audio/index.ts"),
+				V = s("./src/reddit/models/Media/index.ts"),
 				G = s("./src/reddit/components/ClassicPost/Thumbnail.tsx"),
 				z = s("./src/reddit/connectors/ClassicPost/index.tsx"),
 				K = s("./src/reddit/constants/postLayout.ts"),
@@ -276,10 +276,10 @@
 					Fe = me && Z.a,
 					Ae = Object(I.a)(Ce),
 					Be = Object(T.c)(Ce),
-					We = !!Ce.media && Ce.media.type === U.o.RTJSON,
+					We = !!Ce.media && Ce.media.type === V.o.RTJSON,
 					He = we && We,
-					Ve = C && !_e,
-					Ue = !!Ce.media && Object(U.H)(Ce.media),
+					Ue = C && !_e,
+					Ve = !!Ce.media && Object(V.H)(Ce.media),
 					Ge = !!Ce.recommendationContext,
 					ze = {
 						flairStyleTemplate: Se,
@@ -305,9 +305,9 @@
 					post: Ne || Ce,
 					redditStyle: Ee,
 					templatePlaceholderImage: Se && Se.postPlaceholderImage,
-					removeLink: Ue
+					removeLink: Ve
 				});
-				Object(V.b)(Ce) && (Ye = o.a.createElement(_, {
+				Object(U.b)(Ce) && (Ye = o.a.createElement(_, {
 					post: Ce
 				}));
 				const Xe = o.a.createElement(L.a, {
@@ -342,8 +342,8 @@
 				}), o.a.createElement("div", {
 					className: ne.a.mainBody
 				}, o.a.createElement("div", {
-					className: Ve ? ne.a.expandoContainer : ne.a.thumbnailContainer
-				}, !Ve && Ye, o.a.createElement(j.a, {
+					className: Ue ? ne.a.expandoContainer : ne.a.thumbnailContainer
+				}, !Ue && Ye, o.a.createElement(j.a, {
 					crosspost: Ne,
 					className: ne.a.rightExpando,
 					isExpanded: !!h,
@@ -739,8 +739,8 @@
 				B = s("./src/reddit/components/ViewReportsDropdown/Loader.ts"),
 				W = s("./src/reddit/contexts/InsideOverlay.tsx"),
 				H = s("./src/reddit/contexts/PageLayer/index.tsx"),
-				V = s("./src/reddit/helpers/correlationIdTracker.ts"),
-				U = s("./src/reddit/helpers/hasModPostPermissions/index.ts"),
+				U = s("./src/reddit/helpers/correlationIdTracker.ts"),
+				V = s("./src/reddit/helpers/hasModPostPermissions/index.ts"),
 				G = s("./src/reddit/helpers/overlay/index.ts"),
 				z = s("./src/reddit/helpers/trackers/lightbox.ts"),
 				K = s("./src/reddit/models/PostDraft/index.ts"),
@@ -850,7 +850,7 @@
 					}, this.handleEdit = () => this.props.handleEdit(this.props.commentPermalink), this.handleIgnoreReports = () => {
 						this.props.onIgnoreReports(), this.sendCommentReportEvent(this.props.comment.ignoreReports ? "restore_reports" : "ignore_reports")
 					}, this.handleGild = async () => {
-						const e = Object(V.d)(V.a.GildingFlow, !0);
+						const e = Object(U.d)(U.a.GildingFlow, !0);
 						this.props.onGildClick(e);
 						const {
 							clickGildEvent: t
@@ -881,7 +881,7 @@
 						moderatorPermissions: s,
 						modModeEnabled: n,
 						showModTools: r
-					} = this.props, a = Object(U.a)(s), i = !!t && t.displayText === e.author;
+					} = this.props, a = Object(V.a)(s), i = !!t && t.displayText === e.author;
 					if (r && a) return n ? o.a.createElement(fe, {
 						comment: e,
 						isCommentAuthor: i
@@ -919,7 +919,7 @@
 						modModeEnabled: n,
 						onDistinguishComment: r,
 						showModTools: a
-					} = this.props, i = Object(U.a)(s), d = !!t && t.displayText === e.author, c = !!t && t.isEmployee;
+					} = this.props, i = Object(V.a)(s), d = !!t && t.displayText === e.author, c = !!t && t.isEmployee;
 					if (a && d && !e.bannedBy && (c || i && !n)) return o.a.createElement(L.a, {
 						onClick: this.handleDistinguishToggle,
 						selected: this.props.activeTooltipId === Pe(e.id)
@@ -951,7 +951,7 @@
 						subreddit: m,
 						toggleDeleteCommentModal: p,
 						isTrueblockPCBlockeeEnabled: u
-					} = this.props, x = Object(U.a)(c), b = !!r && r.displayText === e.author, h = (!l && !e.isLocked || x && i) && !(Object(J.g)(e) && u), C = r && e.isGildable && !(Object(J.g)(e) && u);
+					} = this.props, x = Object(V.a)(c), b = !!r && r.displayText === e.author, h = (!l && !e.isLocked || x && i) && !(Object(J.g)(e) && u), C = r && e.isGildable && !(Object(J.g)(e) && u);
 					return o.a.createElement("div", {
 						className: s
 					}, o.a.createElement(_e, null, h && o.a.createElement(ke, {
@@ -1085,14 +1085,14 @@
 			const Be = he.a.wrapped(Ne.a, "TopMeta", Ae.a),
 				We = he.a.div("ProfileCommentWrapper", Ae.a),
 				He = he.a.div("CommentBody", Ae.a),
-				Ve = Object(r.b)(() => Object(a.c)({
+				Ue = Object(r.b)(() => Object(a.c)({
 					comment: (e, t) => Object(Re.b)(e, t),
 					flair: Z.e
 				})),
-				Ue = Object(c.b)(e => ({
+				Ve = Object(c.b)(e => ({
 					renderingObjectInfo: e.comment
 				}));
-			t.a = Ve(e => {
+			t.a = Ue(e => {
 				const {
 					comment: t,
 					commentsPageKey: s,
@@ -1104,7 +1104,7 @@
 					className: s,
 					content: Object(De.a)(t),
 					mediaMetadata: t.media && t.media.mediaMetadata,
-					rtJsonElementProps: Ue(e)
+					rtJsonElementProps: Ve(e)
 				});
 				return o.a.createElement(We, {
 					className: Object(i.a)({
@@ -3007,10 +3007,10 @@
 				r = s("./src/reddit/helpers/chooseVariant/index.ts"),
 				a = s("./src/reddit/selectors/posts.ts");
 			const i = e => Object(r.c)(e, {
-					experimentName: o.Ne,
+					experimentName: o.Oe,
 					experimentEligibilitySelector: r.a
 				}),
-				d = (e, t) => t === o.Ve.Enabled && (null == e ? void 0 : e.isCreatedFromAdsUi) || (null == e ? void 0 : e.isSponsored),
+				d = (e, t) => t === o.We.Enabled && (null == e ? void 0 : e.isCreatedFromAdsUi) || (null == e ? void 0 : e.isSponsored),
 				c = Object(n.a)(a.G, i, (e, t) => d(e, t));
 			Object(n.a)((e, t) => t, i, (e, t) => d(e, t))
 		},
@@ -3028,4 +3028,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileComments~ProfileOverview~ProfilePrivate.9855107fdcdfc4e37ef3.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileComments~ProfileOverview~ProfilePrivate.86d4302b8b0b06c60714.js.map
