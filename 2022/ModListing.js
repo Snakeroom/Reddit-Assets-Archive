@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModListing.5d9644c05cd72b958a19.js
-// Retrieved at 6/16/2022, 6:00:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModListing.6ce0c2f3878fe11d863f.js
+// Retrieved at 6/16/2022, 7:40:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModListing"], {
 		"./node_modules/classnames/index.js": function(e, t, n) {
@@ -2386,39 +2386,40 @@
 					} = e;
 					return o.a.createElement("svg", {
 						className: t,
-						viewBox: "0 0 32 32",
 						fill: "none",
+						viewBox: "0 0 32 32",
 						xmlns: "http://www.w3.org/2000/svg"
-					}, o.a.createElement("path", {
-						d: "M17.3549 1.11694L29.9174 7.58431C30.7466 8.01123 31.2051 8.76743 31.2051 9.53214V22.4669C31.2051 23.2316 30.7466 23.9878 29.9174 24.4147L17.3549 30.8821C16.5197 31.3121 15.4803 31.3121 14.6451 30.8821L2.08264 24.4147C1.2534 23.9878 0.794926 23.2316 0.794926 22.4669V9.53214C0.794926 8.76743 1.25339 8.01123 2.08264 7.58431L14.6451 1.11694C15.4803 0.686936 16.5197 0.686936 17.3549 1.11694Z",
-						stroke: "url(#paint0_diamond_328_99361)",
-						strokeWidth: "1.58985",
-						strokeLinejoin: "round"
-					}), o.a.createElement("defs", null, o.a.createElement("radialGradient", {
-						id: "paint0_diamond_328_99361",
+					}, o.a.createElement("radialGradient", {
+						id: "a",
 						cx: "0",
 						cy: "0",
-						r: "1",
+						gradientTransform: "matrix(20.06268 6.0999 -3097.55815 10187.91225 -3.1 11.6)",
 						gradientUnits: "userSpaceOnUse",
-						gradientTransform: "translate(-3.29987 11.5994) rotate(15.9097) scale(22.2525 10703.3)"
+						r: "1"
 					}, o.a.createElement("stop", {
-						stopColor: "#1185B5"
+						offset: "0",
+						stopColor: "#1185b5"
 					}), o.a.createElement("stop", {
-						offset: "0.29452",
-						stopColor: "#D7F7FF"
+						offset: ".29",
+						stopColor: "#d7f7ff"
 					}), o.a.createElement("stop", {
-						offset: "0.526042",
-						stopColor: "#5EF6D8"
+						offset: ".53",
+						stopColor: "#5ef6d8"
 					}), o.a.createElement("stop", {
-						offset: "0.838434",
-						stopColor: "#5EF6D8"
+						offset: ".84",
+						stopColor: "#5ef6d8"
 					}), o.a.createElement("stop", {
-						offset: "0.867246",
-						stopColor: "#1990B9"
+						offset: ".87",
+						stopColor: "#1990b9"
 					}), o.a.createElement("stop", {
 						offset: "1",
-						stopColor: "#3F9FC6"
-					}))))
+						stopColor: "#3f9fc6"
+					})), o.a.createElement("path", {
+						d: "M13.77 1.1c.76-.41 1.7-.41 2.46 0L28 7.58c.75.42 1.2 1.17 1.2 1.96v12.94c0 .79-.45 1.54-1.2 1.95L16.23 30.9c-.76.42-1.7.42-2.46 0L2 24.42a2.25 2.25 0 0 1-1.2-1.95V9.53C.8 8.74 1.24 8 2 7.57z",
+						stroke: "url(#a)",
+						strokeLinejoin: "round",
+						strokeWidth: "1.59"
+					}))
 				},
 				b = n("./src/reddit/components/UserIcon/UserIcon.m.less"),
 				f = n.n(b);
@@ -7354,4 +7355,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModListing.5d9644c05cd72b958a19.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModListing.6ce0c2f3878fe11d863f.js.map
