@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PublicAccessNetwork.d8d6379a3c49b130f455.js
-// Retrieved at 6/16/2022, 9:40:06 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PublicAccessNetwork.bfa0b48884f84bc7bf01.js
+// Retrieved at 6/16/2022, 11:10:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PublicAccessNetwork"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -1436,7 +1436,7 @@
 						instanceId: w,
 						include_categories: !0
 					});
-					y && (P.sort = I), P.onOtherDiscussions = g, t(x.r(p)), Object(Ze.a)(s()) && t(Object(r.a)(e.queryParams, u)), await t(ft(p, b, P, I));
+					y && (P.sort = I), P.onOtherDiscussions = g, P.comment_awardings_by_current_user = !0, t(x.r(p)), Object(Ze.a)(s()) && t(Object(r.a)(e.queryParams, u)), await t(ft(p, b, P, I));
 					const A = s().posts.models[p],
 						V = Object(oe.Q)(s());
 					if (A && "subreddit" === A.belongsTo.type) {
@@ -7914,4 +7914,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PublicAccessNetwork.d8d6379a3c49b130f455.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PublicAccessNetwork.bfa0b48884f84bc7bf01.js.map

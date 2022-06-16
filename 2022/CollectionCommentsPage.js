@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage.7b404ae062d042703dd2.js
-// Retrieved at 6/16/2022, 9:40:06 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage.877fe4b88275075f1c30.js
+// Retrieved at 6/16/2022, 11:10:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage", "CommentsPage"], {
 		"./node_modules/lodash/_baseDelay.js": function(e, t) {
@@ -1093,7 +1093,7 @@
 						instanceId: v,
 						include_categories: !0
 					});
-					y && (T.sort = w), T.onOtherDiscussions = g, t(k.r(u)), Object(Ze.a)(s()) && t(Object(o.a)(e.queryParams, p)), await t(ft(u, b, T, w));
+					y && (T.sort = w), T.onOtherDiscussions = g, T.comment_awardings_by_current_user = !0, t(k.r(u)), Object(Ze.a)(s()) && t(Object(o.a)(e.queryParams, p)), await t(ft(u, b, T, w));
 					const F = s().posts.models[u],
 						W = Object(ne.Q)(s());
 					if (F && "subreddit" === F.belongsTo.type) {
@@ -11770,4 +11770,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage.7b404ae062d042703dd2.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage.877fe4b88275075f1c30.js.map
