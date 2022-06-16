@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.9329781d3bfd0a739bcc.js
-// Retrieved at 6/16/2022, 6:30:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.08b9db8390a3d6f1090b.js
+// Retrieved at 6/16/2022, 6:50:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Chat~Governance~Reddit"], {
 		"./assets/fonts/IBMPlexSans/font.less": function(e, t, i) {},
@@ -3467,11 +3467,11 @@
 				apiPassThroughHeaders: Object(r.e)({}.API_PASS_THROUGH_HEADERS || ""),
 				appName: {}.APP_NAME || "desktop2x",
 				assetPath: "https://www.redditstatic.com/desktop2x",
-				buildNumber: Object(r.c)("166689"),
+				buildNumber: Object(r.c)("166691"),
 				chatHelpUrl: {}.CHAT_HELP_URL || "https://reddit.zendesk.com/hc/en-us/sections/360008805652-Chat",
 				hlsVersion: "hls 0.12.4",
 				dashVersion: "dash 3.2.0",
-				buildTimestamp: Object(r.b)("1655416847"),
+				buildTimestamp: Object(r.b)("1655418386"),
 				cookieDomain: ".reddit.com",
 				giphyApiKey: "k2kwyMA6VeyHM6ZRT96OXDGaersnx73Z",
 				mediaUrl: "https://www.redditmedia.com",
@@ -4931,6 +4931,7 @@
 					COMMENTS_PAGE: "CommentsPage",
 					EMPTY: "Empty",
 					ECON_MANAGEMENT: "EconManagement",
+					ECON_MANAGEMENT_2: "NewEconManagement",
 					DASHBOARD: "UiDashboard",
 					FRONTPAGE: "Frontpage",
 					GEOTAGGING: "Geotagging",
@@ -5285,6 +5286,7 @@
 					DASHBOARD: "dashboard",
 					DUPLICATES: "duplicates",
 					ECON_MANAGEMENT: "econManagement",
+					ECON_MANAGEMENT_2: "newEconManagement",
 					EXPLORE: "explore",
 					EMAIL_VERIFICATION: "emailVerification",
 					FOLLOWERS: "followers",
@@ -6078,14 +6080,14 @@
 					}))
 				},
 				Y = (e, t, i) => {
-					console.log("%cStarting Raven %crelease %cf09ec6a3a70f206c292ba154a3170b3a60481310-production" + ` %cpublic url %c${y.a.sentryClientPublicURL}`, "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
+					console.log("%cStarting Raven %crelease %cd71ff49e910f2fe8ceebcdb1cae5aadbce6b5b02-production" + ` %cpublic url %c${y.a.sentryClientPublicURL}`, "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
 					let n = [];
 					n = [new RegExp(`^${y.a.assetPath}`, "i")];
 					o.e({
 						attachStacktrace: !0,
 						dsn: y.a.sentryClientPublicURL,
 						whitelistUrls: n,
-						release: "f09ec6a3a70f206c292ba154a3170b3a60481310-production",
+						release: "d71ff49e910f2fe8ceebcdb1cae5aadbce6b5b02-production",
 						environment: "production",
 						ignoreErrors: ["$ is not defined"],
 						integrations: [...Object(L.d)(), new d.Integrations.Breadcrumbs({
@@ -6694,7 +6696,7 @@
 							settings: r,
 							statusCode: s,
 							type: o,
-							releaseClient: "f09ec6a3a70f206c292ba154a3170b3a60481310-production",
+							releaseClient: "d71ff49e910f2fe8ceebcdb1cae5aadbce6b5b02-production",
 							appName: t.statsAppName,
 							error: n ? JSON.parse(Object(l.a)(n)) : void 0
 						},
@@ -40537,6 +40539,8 @@
 							return "meta_community_points_learn_more_page";
 						case "metaVaultBurn":
 							return "meta_vault_burn";
+						case "newEconManagement":
+							return "econ_management_2";
 						case "notificationsInbox":
 							return "notifications_inbox";
 						case "originalContentRedirect":
@@ -47939,4 +47943,4 @@
 		"ignored /drone/src/node_modules/readable-stream/lib/internal/streams util": function(e, t) {}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.9329781d3bfd0a739bcc.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.08b9db8390a3d6f1090b.js.map
