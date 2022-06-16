@@ -1,10 +1,10 @@
-// https://www.redditstatic.com/desktop2x/runtime~Reddit.5e90126c806be7f59edc.js
-// Retrieved at 6/16/2022, 5:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/runtime~Reddit.8ed06d22d01021dae849.js
+// Retrieved at 6/16/2022, 5:30:06 PM by Reddit Dataminer v1.0.0
 ! function(e) {
 	function o(o) {
-		for (var a, n, r = o[0], s = o[1], c = o[2], l = 0, b = []; l < r.length; l++) n = r[l], Object.prototype.hasOwnProperty.call(d, n) && d[n] && b.push(d[n][0]), d[n] = 0;
+		for (var a, n, r = o[0], s = o[1], c = o[2], l = 0, P = []; l < r.length; l++) n = r[l], Object.prototype.hasOwnProperty.call(d, n) && d[n] && P.push(d[n][0]), d[n] = 0;
 		for (a in s) Object.prototype.hasOwnProperty.call(s, a) && (e[a] = s[a]);
-		for (m && m(o); b.length;) b.shift()();
+		for (m && m(o); P.length;) P.shift()();
 		return i.push.apply(i, c || []), t()
 	}
 
@@ -714,7 +714,7 @@
 					PostDraft: "43e9feb3837299235053",
 					ProfileSnoobuilder: "3acb0e0090c400be04f4",
 					"Frontpage~ModListing~Subreddit": "1dcb331f0f950474769c",
-					Frontpage: "f39954bba7e3a75ebb64",
+					Frontpage: "a6176089e1a02fafc076",
 					Topic: "a05b4a57def60878e450",
 					CommunityAwards: "31d6cfe0d16ae931b73c",
 					CommunityPointsLearnMore: "4e09b461924aa8fe1b6c",
@@ -994,12 +994,12 @@
 				var m;
 				if ((c = (m = l[s]).getAttribute("data-href")) === a || c === d) return o()
 			}
-			var b = document.createElement("link");
-			b.rel = "stylesheet", b.type = "text/css", b.onload = o, b.onerror = function(o) {
+			var P = document.createElement("link");
+			P.rel = "stylesheet", P.type = "text/css", P.onload = o, P.onerror = function(o) {
 				var a = o && o.target && o.target.src || d,
 					i = new Error("Loading CSS chunk " + e + " failed.\n(" + a + ")");
-				i.code = "CSS_CHUNK_LOAD_FAILED", i.request = a, delete n[e], b.parentNode.removeChild(b), t(i)
-			}, b.href = d, document.getElementsByTagName("head")[0].appendChild(b)
+				i.code = "CSS_CHUNK_LOAD_FAILED", i.request = a, delete n[e], P.parentNode.removeChild(P), t(i)
+			}, P.href = d, document.getElementsByTagName("head")[0].appendChild(P)
 		})).then((function() {
 			n[e] = 0
 		})));
@@ -1414,7 +1414,7 @@
 						PostDraft: "f52a0384d538d8d6a919",
 						ProfileSnoobuilder: "f9c0748fd352170a49f3",
 						"Frontpage~ModListing~Subreddit": "d79eaa93ef853415bf50",
-						Frontpage: "088674c1dc7e93938f2f",
+						Frontpage: "2c4e28acf1e17eb0c34b",
 						Topic: "da526226067c2eee2627",
 						CommunityAwards: "b7c80f4213d68bc10aa9",
 						CommunityPointsLearnMore: "c4bb580f1e51aee34a11",
@@ -1750,4 +1750,4 @@
 	var m = c;
 	t()
 }([]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/runtime~Reddit.5e90126c806be7f59edc.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/runtime~Reddit.8ed06d22d01021dae849.js.map
