@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModQueuePages.b5603d925cd7b10201f0.js
-// Retrieved at 6/16/2022, 9:40:06 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModQueuePages.7b637d85a57f3e2fbd44.js
+// Retrieved at 6/16/2022, 5:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModQueuePages"], {
 		"./node_modules/lodash/includes.js": function(e, t, s) {
@@ -2339,8 +2339,8 @@
 						only: n.ChatPosts
 					})
 				}, a.a.createElement(w, {
-					displayText: r.fbt._("Live Chat Comments", null, {
-						hk: "17z3FM"
+					displayText: r.fbt._("Live Chat Messages", null, {
+						hk: "26ZmtR"
 					}),
 					isSelected: e.postTypeFilter === n.ChatPosts
 				})))),
@@ -2455,8 +2455,8 @@
 								hk: "2rRq64"
 							});
 						case "chat_comments":
-							return r.fbt._("Live Chat Comments", null, {
-								hk: "KygIX"
+							return r.fbt._("Live Chat Messages", null, {
+								hk: "4iL79y"
 							})
 					}
 				},
@@ -5828,4 +5828,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModQueuePages.b5603d925cd7b10201f0.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModQueuePages.7b637d85a57f3e2fbd44.js.map
