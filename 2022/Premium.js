@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Premium.c0f792cdaf53c1e75190.js
-// Retrieved at 6/15/2022, 1:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Premium.8961ba6021f628fa87b1.js
+// Retrieved at 6/16/2022, 9:40:06 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Premium"], {
 		"./src/reddit/endpoints/gold/productCatalog/old.index.ts": function(e, r, t) {
@@ -255,28 +255,28 @@
 			}));
 			var n = t("./src/reddit/constants/experiments.ts"),
 				d = t("./src/reddit/selectors/experiments/econ/simpleExperiment.ts");
-			const a = Object(d.a)(n.jd),
-				s = Object(d.a)(n.hd),
-				i = Object(d.a)(n.kd),
-				o = Object(d.a)(n.gd),
-				c = Object(d.a)(n.fd),
-				u = Object(d.a)(n.md),
-				l = Object(d.a)(n.ld),
-				f = Object(d.a)(n.cd),
+			const a = Object(d.a)(n.id),
+				s = Object(d.a)(n.gd),
+				i = Object(d.a)(n.jd),
+				o = Object(d.a)(n.fd),
+				c = Object(d.a)(n.ed),
+				u = Object(d.a)(n.ld),
+				l = Object(d.a)(n.kd),
+				f = Object(d.a)(n.bd),
 				p = Object(d.a)(n.Vc),
 				m = Object(d.a)(n.Wc),
 				b = Object(d.a)(n.Tc),
 				g = Object(d.a)(n.Uc),
-				h = Object(d.a)(n.Yc),
+				h = Object(d.a)(n.Xc),
 				O = Object(d.a)(n.Sc),
-				j = Object(d.a)(n.dd),
-				P = Object(d.a)(n.ed),
-				y = Object(d.a)(n.id),
-				_ = Object(d.a)(n.nd),
-				x = Object(d.a)(n.od),
-				v = Object(d.a)(n.rd),
-				k = Object(d.a)(n.qd),
-				C = Object(d.a)(n.pd)
+				j = Object(d.a)(n.cd),
+				P = Object(d.a)(n.dd),
+				y = Object(d.a)(n.hd),
+				_ = Object(d.a)(n.md),
+				x = Object(d.a)(n.nd),
+				v = Object(d.a)(n.qd),
+				k = Object(d.a)(n.pd),
+				C = Object(d.a)(n.od)
 		},
 		"./src/reddit/selectors/goldPurchaseModals.ts": function(e, r, t) {
 			"use strict";
@@ -380,4 +380,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Premium.c0f792cdaf53c1e75190.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Premium.8961ba6021f628fa87b1.js.map

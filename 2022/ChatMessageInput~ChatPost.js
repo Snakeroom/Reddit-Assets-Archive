@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ChatMessageInput~ChatPost.dd9c33b418e87706babf.js
-// Retrieved at 6/15/2022, 1:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ChatMessageInput~ChatPost.962b0941e5fa0029f016.js
+// Retrieved at 6/16/2022, 9:40:06 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ChatMessageInput~ChatPost"], {
 		"./node_modules/lodash/_baseReduce.js": function(e, t) {
@@ -742,11 +742,11 @@
 					})
 				}
 
-				function F(e) {
+				function A(e) {
 					s || R(e), o || H(e), N(Object(u.C)(p))
 				}
 
-				function A() {
+				function F() {
 					const e = {};
 					return T && (e.margin = "0 auto"), y || (e.maxHeight = `${h.e}px`), i.a.createElement(j, {
 						autoplay: S,
@@ -761,7 +761,7 @@
 						onLoadedData: R,
 						onLoadedMetadata: H,
 						onPause: M,
-						onPlaying: F,
+						onPlaying: A,
 						onTimeUpdate: D,
 						shouldLoad: b,
 						shouldPause: _,
@@ -772,7 +772,7 @@
 						width: O
 					})
 				}
-				return y ? A() : i.a.createElement("div", {
+				return y ? F() : i.a.createElement("div", {
 					className: Object(l.a)(C.a.container, w, {
 						[C.a.centered]: T
 					})
@@ -780,7 +780,7 @@
 					href: I,
 					target: "_blank",
 					rel: "noopener noreferrer"
-				}, A()))
+				}, F()))
 			}
 		},
 		"./src/reddit/components/Media/index.m.less": function(e, t, n) {
@@ -1450,9 +1450,9 @@
 			})), n.d(t, "h", (function() {
 				return H
 			})), n.d(t, "g", (function() {
-				return F
-			})), n.d(t, "i", (function() {
 				return A
+			})), n.d(t, "i", (function() {
+				return F
 			})), n.d(t, "e", (function() {
 				return U
 			}));
@@ -1613,7 +1613,7 @@
 						case h.p:
 							return R(e, t, n, s);
 						case h.u:
-							return F(e, t, n, s);
+							return A(e, t, n, s);
 						case h.z:
 							return H(e, t, n, s)
 					}
@@ -1637,7 +1637,7 @@
 							} = e;
 						l.push(a.a.createElement(s, {
 							key: c
-						}, A(i, t, n))), m[c] = r
+						}, F(i, t, n))), m[c] = r
 					}
 					for (let h = 0; h < i; h++) {
 						const e = r[h],
@@ -1650,7 +1650,7 @@
 								} = e[r];
 							o.push(a.a.createElement(s, {
 								key: r
-							}, A(i, t, n)))
+							}, F(i, t, n)))
 						}
 						u.push(a.a.createElement(c.t, {
 							key: h
@@ -1660,16 +1660,16 @@
 						key: s
 					}, a.a.createElement("thead", null, a.a.createElement(c.t, null, l)), a.a.createElement("tbody", null, u))
 				},
-				F = (e, t, n, s) => {
+				A = (e, t, n, s) => {
 					if (!e.c || !e.c.length) return (e => a.a.createElement(c.j, {
 						key: e
 					}, a.a.createElement("br", null)))(s);
 					const r = e.c[0];
 					return r.e !== h.m && r.e !== h.a || !Object(S.g)(r.id) ? a.a.createElement(c.j, {
 						key: s
-					}, A(e.c, t, n)) : Object(v.b)(r, s, t)
+					}, F(e.c, t, n)) : Object(v.b)(r, s, t)
 				},
-				A = (e, t, n) => {
+				F = (e, t, n) => {
 					const s = [],
 						r = e.length;
 					for (let o = 0; o < r; o++) {
@@ -1677,7 +1677,7 @@
 						if (r.e === h.A) s.push(W(r, o));
 						else if (r.e === h.x) s.push(a.a.createElement(y.a, {
 							key: o
-						}, A(r.c, t, n)));
+						}, F(r.c, t, n)));
 						else if (r.e === h.n) s.push(a.a.createElement("br", {
 							key: o
 						}));
@@ -1974,12 +1974,12 @@
 						rtJsonElementProps: i
 					});
 					switch (o) {
-						case b.Bf.SmIcon:
+						case b.Af.SmIcon:
 							return r.a.createElement(h, {
 								subredditName: s,
 								rtJsonElementProps: i
 							});
-						case b.Bf.SmIconHc:
+						case b.Af.SmIconHc:
 							return r.a.createElement(h, {
 								subredditName: s,
 								isHoverable: !0,
@@ -2366,7 +2366,7 @@
 				r = n("./src/reddit/selectors/experiments/econ/simpleExperiment.ts");
 			const o = Object(r.a)(s.K),
 				i = Object(r.a)(s.I),
-				a = Object(r.a)(s.ge),
+				a = Object(r.a)(s.fe),
 				c = Object(r.a)(s.L),
 				d = Object(r.a)(s.M),
 				l = Object(r.a)(s.H),
@@ -2395,12 +2395,12 @@
 				c = e => {
 					return Object(o.c)(e, {
 						experimentEligibilitySelector: a,
-						experimentName: s.uf
+						experimentName: s.tf
 					}) || ""
 				},
 				d = e => {
 					const t = c(e);
-					return t === s.Bf.SmIcon || t === s.Bf.SmIconHc
+					return t === s.Af.SmIcon || t === s.Af.SmIconHc
 				},
 				l = (e, t) => {
 					let {
@@ -2426,4 +2426,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatMessageInput~ChatPost.dd9c33b418e87706babf.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatMessageInput~ChatPost.962b0941e5fa0029f016.js.map
