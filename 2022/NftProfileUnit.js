@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/NftProfileUnit.c1e258c7448c3a9f1665.js
-// Retrieved at 6/14/2022, 10:00:09 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/NftProfileUnit.036ba79262fc6bbf87a7.js
+// Retrieved at 6/16/2022, 4:10:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["NftProfileUnit"], {
 		"./node_modules/classnames/index.js": function(t, e, n) {
@@ -290,33 +290,41 @@
 				l = n.n(f),
 				c = n("./node_modules/react-tilt/dist/tilt.js"),
 				h = n.n(c);
-			var p = "_nftIcon_vosnm_16",
-				d = "_naming_vosnm_27",
-				g = "_avatarImage_vosnm_43",
-				y = "_front_vosnm_71",
-				m = "_frontBackground_vosnm_77",
-				v = "_clickable_vosnm_87";
-			var b = "_card_4ivfc_1",
-				w = "_content_4ivfc_9";
-			const E = ({
+			var p = "_nftIcon_ryr9r_16",
+				d = "_naming_ryr9r_27",
+				g = "_avatarImage_ryr9r_43",
+				y = "_front_ryr9r_71",
+				m = "_frontBackground_ryr9r_77",
+				v = "_clickable_ryr9r_87";
+			var b = "_card_1tsp8_1",
+				w = "_noShadow_1tsp8_8",
+				E = "_content_1tsp8_11";
+			const _ = ({
 				children: t,
 				className: e,
-				onClick: n
+				onClick: n,
+				isShadowHidden: r
 			}) => i.a.createElement(h.a, {
 				gyroscope: !0,
-				className: l()(b, e),
+				options: {
+					max: 12.5,
+					scale: 1.05
+				},
+				className: l()(b, e, {
+					[w]: r
+				}),
 				onClick: n
 			}, i.a.createElement("div", {
 				className: b
 			}, i.a.createElement("div", {
-				className: w
+				className: E
 			}, t)));
-			var _ = "_container_1nucm_42",
-				B = "_range_1nucm_47",
-				I = "_rangeStart_1nucm_51",
-				A = "_rangeEnd_1nucm_52",
-				O = "_title_1nucm_75";
-			const N = ({
+			var B = "_container_3w2ay_42",
+				I = "_range_3w2ay_48",
+				A = "_rangeStart_3w2ay_54",
+				O = "_rangeEnd_3w2ay_55",
+				N = "_title_3w2ay_78";
+			const U = ({
 				title: t,
 				rarity: e,
 				collectionSize: n,
@@ -337,65 +345,69 @@
 					return null
 				}(n, e);
 				return i.a.createElement("div", {
-					className: l()(_, r)
+					className: l()(B, r)
 				}, o && i.a.createElement("div", {
-					className: B
-				}, i.a.createElement("div", {
 					className: I
-				}, "1"), i.a.createElement("div", {
+				}, i.a.createElement("div", {
 					className: A
-				}, o)), i.a.createElement("div", null, i.a.createElement("h2", {
+				}, "1"), i.a.createElement("div", {
 					className: O
-				}, t)))
+				}, o)), i.a.createElement("h2", {
+					className: N
+				}, t))
 			};
-			const U = ({
+			const k = ({
 				className: t,
 				nft: e,
-				onClick: n
+				onClick: n,
+				nftIconClassName: r,
+				titleClassName: o,
+				isShadowHidden: s
 			}) => {
 				const {
-					avatarImageUrl: r,
-					backgroundImageUrl: o,
-					nftImageUrl: s,
-					title: a,
-					collectionSize: u
-				} = e, f = r ? o : s;
-				return i.a.createElement(E, {
+					avatarImageUrl: a,
+					backgroundImageUrl: u,
+					nftImageUrl: f,
+					title: c,
+					collectionSize: h
+				} = e, b = a ? u : f;
+				return i.a.createElement(_, {
 					className: l()(t, y, {
 						[v]: !!n
-					})
+					}),
+					isShadowHidden: s
 				}, i.a.createElement("div", {
 					className: m,
 					style: {
-						backgroundImage: `url(${f})`
+						backgroundImage: `url(${b})`
 					}
 				}), i.a.createElement("img", {
 					src: "https://www.redditstatic.com/crypto-assets/v1/cards/nft-icon.svg",
-					className: p
-				}), r && i.a.createElement("img", {
-					src: r,
+					className: l()(p, r)
+				}), a && i.a.createElement("img", {
+					src: a,
 					className: g,
 					alt: "nft-asset"
-				}), i.a.createElement(N, {
-					title: a,
-					className: d,
-					collectionSize: u
+				}), i.a.createElement(U, {
+					title: c,
+					className: l()(d, o),
+					collectionSize: h
 				}))
 			};
-			var k = Object.defineProperty,
-				S = Object.getOwnPropertySymbols,
-				T = Object.prototype.hasOwnProperty,
+			var S = Object.defineProperty,
+				T = Object.getOwnPropertySymbols,
+				x = Object.prototype.hasOwnProperty,
 				M = Object.prototype.propertyIsEnumerable,
-				x = (t, e, n) => e in t ? k(t, e, {
+				j = (t, e, n) => e in t ? S(t, e, {
 					enumerable: !0,
 					configurable: !0,
 					writable: !0,
 					value: n
 				}) : t[e] = n,
-				j = (t, e) => {
-					for (var n in e || (e = {})) T.call(e, n) && x(t, n, e[n]);
-					if (S)
-						for (var n of S(e)) M.call(e, n) && x(t, n, e[n]);
+				C = (t, e) => {
+					for (var n in e || (e = {})) x.call(e, n) && j(t, n, e[n]);
+					if (T)
+						for (var n of T(e)) M.call(e, n) && j(t, n, e[n]);
 					return t
 				};
 			var R = {
@@ -427,30 +439,30 @@
 					t.exports ? (n.default = n, t.exports = n) : window.classNames = n
 				}()
 			}(R);
-			var C = R.exports;
-			const L = ({
+			var L = R.exports;
+			const P = ({
 				children: t,
 				desc: e
 			}) => {
 				const n = Object(u.c)();
 				return i.a.createElement(i.a.Fragment, null, n.singular(t, e))
 			};
-			var P = "_container_1a0am_1",
-				D = "_icon_1a0am_12";
-			const F = ({
+			var D = "_container_1a0am_1",
+				F = "_icon_1a0am_12";
+			const $ = ({
 				className: t,
 				onClick: e
 			}) => i.a.createElement(a.a, {
-				className: C(P, t),
+				className: L(D, t),
 				onClick: e,
 				theme: "grey"
 			}, i.a.createElement("img", {
 				src: "https://www.redditstatic.com/crypto-assets/v1/cards/nft-icon.svg",
-				className: D
-			}), i.a.createElement(L, {
+				className: F
+			}), i.a.createElement(P, {
 				desc: "Button: See details about this NFT"
 			}, "NFT Details"));
-			var $ = {
+			var z = {
 				kind: "Document",
 				definitions: [{
 					kind: "OperationDefinition",
@@ -563,7 +575,7 @@
 					end: 159
 				}
 			};
-			$.loc.source = {
+			z.loc.source = {
 				body: "query getNftDetails($ids: [ID!]!) {\n  inventoryItems(filter: { ids: $ids }) {\n    edges {\n      node {\n        ...NftInventoryItemFragment\n      }\n    }\n  }\n}\n",
 				name: "GraphQL request",
 				locationOffset: {
@@ -571,15 +583,15 @@
 					column: 1
 				}
 			};
-			var z, G, Y = {};
+			var G, Y, q = {};
 
-			function q(t, e) {
+			function V(t, e) {
 				for (var n = 0; n < t.definitions.length; n++) {
 					var r = t.definitions[n];
 					if (r.name && r.name.value == e) return r
 				}
 			}
-			$.definitions.forEach((function(t) {
+			z.definitions.forEach((function(t) {
 					if (t.name) {
 						var e = new Set;
 						! function t(e, n) {
@@ -595,16 +607,16 @@
 							})), e.definitions && e.definitions.forEach((function(e) {
 								t(e, n)
 							}))
-						}(t, e), Y[t.name.value] = e
+						}(t, e), q[t.name.value] = e
 					}
 				})),
 				function(t, e) {
 					var n = {
 						kind: t.kind,
-						definitions: [q(t, e)]
+						definitions: [V(t, e)]
 					};
 					t.hasOwnProperty("loc") && (n.loc = t.loc);
-					var r = Y[e] || new Set,
+					var r = q[e] || new Set,
 						i = new Set,
 						o = new Set;
 					for (r.forEach((function(t) {
@@ -612,57 +624,57 @@
 						})); o.size > 0;) {
 						var s = o;
 						o = new Set, s.forEach((function(t) {
-							i.has(t) || (i.add(t), (Y[t] || new Set).forEach((function(t) {
+							i.has(t) || (i.add(t), (q[t] || new Set).forEach((function(t) {
 								o.add(t)
 							})))
 						}))
 					}
 					i.forEach((function(e) {
-						var r = q(t, e);
+						var r = V(t, e);
 						r && n.definitions.push(r)
 					}))
-				}($, "getNftDetails"), (G = z || (z = {})).MINTED = "MINTED", G.MINTING = "MINTING", G.TRANSFERRING = "TRANSFERRING";
-			for (var V = {}, X = {
+				}(z, "getNftDetails"), (Y = G || (G = {})).MINTED = "MINTED", Y.MINTING = "MINTING", Y.TRANSFERRING = "TRANSFERRING";
+			for (var X = {}, H = {
 					byteLength: function(t) {
-						var e = tt(t),
+						var e = et(t),
 							n = e[0],
 							r = e[1];
 						return 3 * (n + r) / 4 - r
 					},
 					toByteArray: function(t) {
-						var e, n, r = tt(t),
+						var e, n, r = et(t),
 							i = r[0],
 							o = r[1],
-							s = new Q(function(t, e, n) {
+							s = new K(function(t, e, n) {
 								return 3 * (e + n) / 4 - n
 							}(0, i, o)),
 							a = 0,
 							u = o > 0 ? i - 4 : i;
-						for (n = 0; n < u; n += 4) e = H[t.charCodeAt(n)] << 18 | H[t.charCodeAt(n + 1)] << 12 | H[t.charCodeAt(n + 2)] << 6 | H[t.charCodeAt(n + 3)], s[a++] = e >> 16 & 255, s[a++] = e >> 8 & 255, s[a++] = 255 & e;
-						2 === o && (e = H[t.charCodeAt(n)] << 2 | H[t.charCodeAt(n + 1)] >> 4, s[a++] = 255 & e);
-						1 === o && (e = H[t.charCodeAt(n)] << 10 | H[t.charCodeAt(n + 1)] << 4 | H[t.charCodeAt(n + 2)] >> 2, s[a++] = e >> 8 & 255, s[a++] = 255 & e);
+						for (n = 0; n < u; n += 4) e = Q[t.charCodeAt(n)] << 18 | Q[t.charCodeAt(n + 1)] << 12 | Q[t.charCodeAt(n + 2)] << 6 | Q[t.charCodeAt(n + 3)], s[a++] = e >> 16 & 255, s[a++] = e >> 8 & 255, s[a++] = 255 & e;
+						2 === o && (e = Q[t.charCodeAt(n)] << 2 | Q[t.charCodeAt(n + 1)] >> 4, s[a++] = 255 & e);
+						1 === o && (e = Q[t.charCodeAt(n)] << 10 | Q[t.charCodeAt(n + 1)] << 4 | Q[t.charCodeAt(n + 2)] >> 2, s[a++] = e >> 8 & 255, s[a++] = 255 & e);
 						return s
 					},
 					fromByteArray: function(t) {
-						for (var e, n = t.length, r = n % 3, i = [], o = 0, s = n - r; o < s; o += 16383) i.push(et(t, o, o + 16383 > s ? s : o + 16383));
+						for (var e, n = t.length, r = n % 3, i = [], o = 0, s = n - r; o < s; o += 16383) i.push(nt(t, o, o + 16383 > s ? s : o + 16383));
 						1 === r ? (e = t[n - 1], i.push(W[e >> 2] + W[e << 4 & 63] + "==")) : 2 === r && (e = (t[n - 2] << 8) + t[n - 1], i.push(W[e >> 10] + W[e >> 4 & 63] + W[e << 2 & 63] + "="));
 						return i.join("")
 					}
-				}, W = [], H = [], Q = "undefined" != typeof Uint8Array ? Uint8Array : Array, K = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/", J = 0, Z = K.length; J < Z; ++J) W[J] = K[J], H[K.charCodeAt(J)] = J;
+				}, W = [], Q = [], K = "undefined" != typeof Uint8Array ? Uint8Array : Array, J = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/", Z = 0, tt = J.length; Z < tt; ++Z) W[Z] = J[Z], Q[J.charCodeAt(Z)] = Z;
 
-			function tt(t) {
+			function et(t) {
 				var e = t.length;
 				if (e % 4 > 0) throw new Error("Invalid string. Length must be a multiple of 4");
 				var n = t.indexOf("=");
 				return -1 === n && (n = e), [n, n === e ? 0 : 4 - n % 4]
 			}
 
-			function et(t, e, n) {
+			function nt(t, e, n) {
 				for (var r, i, o = [], s = e; s < n; s += 3) r = (t[s] << 16 & 16711680) + (t[s + 1] << 8 & 65280) + (255 & t[s + 2]), o.push(W[(i = r) >> 18 & 63] + W[i >> 12 & 63] + W[i >> 6 & 63] + W[63 & i]);
 				return o.join("")
 			}
-			H["-".charCodeAt(0)] = 62, H["_".charCodeAt(0)] = 63;
-			var nt = {
+			Q["-".charCodeAt(0)] = 62, Q["_".charCodeAt(0)] = 63;
+			var rt = {
 				read: function(t, e, n, r, i) {
 					var o, s, a = 8 * i - r - 1,
 						u = (1 << a) - 1,
@@ -694,8 +706,8 @@
 				}
 			};
 			! function(t) {
-				const e = X,
-					n = nt,
+				const e = H,
+					n = rt,
 					r = "function" == typeof Symbol && "function" == typeof Symbol.for ? Symbol.for("nodejs.util.inspect.custom") : null;
 				t.Buffer = s, t.SlowBuffer = function(t) {
 					+t != t && (t = 0);
@@ -728,15 +740,15 @@
 						return r
 					}(t, e);
 					if (ArrayBuffer.isView(t)) return function(t) {
-						if (W(t, Uint8Array)) {
+						if (X(t, Uint8Array)) {
 							const e = new Uint8Array(t);
 							return c(e.buffer, e.byteOffset, e.byteLength)
 						}
 						return l(t)
 					}(t);
 					if (null == t) throw new TypeError("The first argument must be one of type string, Buffer, ArrayBuffer, Array, or Array-like Object. Received type " + typeof t);
-					if (W(t, ArrayBuffer) || t && W(t.buffer, ArrayBuffer)) return c(t, e, n);
-					if ("undefined" != typeof SharedArrayBuffer && (W(t, SharedArrayBuffer) || t && W(t.buffer, SharedArrayBuffer))) return c(t, e, n);
+					if (X(t, ArrayBuffer) || t && X(t.buffer, ArrayBuffer)) return c(t, e, n);
+					if ("undefined" != typeof SharedArrayBuffer && (X(t, SharedArrayBuffer) || t && X(t.buffer, SharedArrayBuffer))) return c(t, e, n);
 					if ("number" == typeof t) throw new TypeError('The "value" argument must not be of type number. Received type number');
 					const r = t.valueOf && t.valueOf();
 					if (null != r && r !== t) return s.from(r, e, n);
@@ -746,7 +758,7 @@
 								n = o(e);
 							return 0 === n.length ? n : (t.copy(n, 0, 0, e), n)
 						}
-						if (void 0 !== t.length) return "number" != typeof t.length || H(t.length) ? o(0) : l(t);
+						if (void 0 !== t.length) return "number" != typeof t.length || W(t.length) ? o(0) : l(t);
 						if ("Buffer" === t.type && Array.isArray(t.data)) return l(t.data)
 					}(t);
 					if (i) return i;
@@ -784,7 +796,7 @@
 
 				function p(t, e) {
 					if (s.isBuffer(t)) return t.length;
-					if (ArrayBuffer.isView(t) || W(t, ArrayBuffer)) return t.byteLength;
+					if (ArrayBuffer.isView(t) || X(t, ArrayBuffer)) return t.byteLength;
 					if ("string" != typeof t) throw new TypeError('The "string" argument must be one of type string, Buffer, or ArrayBuffer. Received type ' + typeof t);
 					const n = t.length,
 						r = arguments.length > 2 && !0 === arguments[2];
@@ -849,7 +861,7 @@
 
 				function y(t, e, n, r, i) {
 					if (0 === t.length) return -1;
-					if ("string" == typeof n ? (r = n, n = 0) : n > 2147483647 ? n = 2147483647 : n < -2147483648 && (n = -2147483648), H(n = +n) && (n = i ? 0 : t.length - 1), n < 0 && (n = t.length + n), n >= t.length) {
+					if ("string" == typeof n ? (r = n, n = 0) : n > 2147483647 ? n = 2147483647 : n < -2147483648 && (n = -2147483648), W(n = +n) && (n = i ? 0 : t.length - 1), n < 0 && (n = t.length + n), n >= t.length) {
 						if (i) return -1;
 						n = t.length - 1
 					} else if (n < 0) {
@@ -899,7 +911,7 @@
 					let s;
 					for (r > o / 2 && (r = o / 2), s = 0; s < r; ++s) {
 						const r = parseInt(e.substr(2 * s, 2), 16);
-						if (H(r)) return s;
+						if (W(r)) return s;
 						t[n + s] = r
 					}
 					return s
@@ -1004,7 +1016,7 @@
 				}, s.isBuffer = function(t) {
 					return null != t && !0 === t._isBuffer && t !== s.prototype
 				}, s.compare = function(t, e) {
-					if (W(t, Uint8Array) && (t = s.from(t, t.offset, t.byteLength)), W(e, Uint8Array) && (e = s.from(e, e.offset, e.byteLength)), !s.isBuffer(t) || !s.isBuffer(e)) throw new TypeError('The "buf1", "buf2" arguments must be one of type Buffer or Uint8Array');
+					if (X(t, Uint8Array) && (t = s.from(t, t.offset, t.byteLength)), X(e, Uint8Array) && (e = s.from(e, e.offset, e.byteLength)), !s.isBuffer(t) || !s.isBuffer(e)) throw new TypeError('The "buf1", "buf2" arguments must be one of type Buffer or Uint8Array');
 					if (t === e) return 0;
 					let n = t.length,
 						r = e.length;
@@ -1040,7 +1052,7 @@
 					let i = 0;
 					for (n = 0; n < t.length; ++n) {
 						let e = t[n];
-						if (W(e, Uint8Array)) i + e.length > r.length ? (s.isBuffer(e) || (e = s.from(e)), e.copy(r, i)) : Uint8Array.prototype.set.call(r, e, i);
+						if (X(e, Uint8Array)) i + e.length > r.length ? (s.isBuffer(e) || (e = s.from(e)), e.copy(r, i)) : Uint8Array.prototype.set.call(r, e, i);
 						else {
 							if (!s.isBuffer(e)) throw new TypeError('"list" argument must be an Array of Buffers');
 							e.copy(r, i)
@@ -1074,7 +1086,7 @@
 					const n = t.INSPECT_MAX_BYTES;
 					return e = this.toString("hex", 0, n).replace(/(.{2})/g, "$1 ").trim(), this.length > n && (e += " ... "), "<Buffer " + e + ">"
 				}, r && (s.prototype[r] = s.prototype.inspect), s.prototype.compare = function(t, e, n, r, i) {
-					if (W(t, Uint8Array) && (t = s.from(t, t.offset, t.byteLength)), !s.isBuffer(t)) throw new TypeError('The "target" argument must be one of type Buffer or Uint8Array. Received type ' + typeof t);
+					if (X(t, Uint8Array) && (t = s.from(t, t.offset, t.byteLength)), !s.isBuffer(t)) throw new TypeError('The "target" argument must be one of type Buffer or Uint8Array. Received type ' + typeof t);
 					if (void 0 === e && (e = 0), void 0 === n && (n = t ? t.length : 0), void 0 === r && (r = 0), void 0 === i && (i = this.length), e < 0 || n > t.length || r < 0 || i > this.length) throw new RangeError("out of range index");
 					if (r >= i && e >= n) return 0;
 					if (r >= i) return -1;
@@ -1176,7 +1188,7 @@
 					if (n + r > t.length) throw new RangeError("Index out of range")
 				}
 
-				function M(t, e, n, r, i) {
+				function x(t, e, n, r, i) {
 					F(e, r, i, t, n, 7);
 					let o = Number(e & BigInt(4294967295));
 					t[n++] = o, o >>= 8, t[n++] = o, o >>= 8, t[n++] = o, o >>= 8, t[n++] = o;
@@ -1184,7 +1196,7 @@
 					return t[n++] = s, s >>= 8, t[n++] = s, s >>= 8, t[n++] = s, s >>= 8, t[n++] = s, n
 				}
 
-				function x(t, e, n, r, i) {
+				function M(t, e, n, r, i) {
 					F(e, r, i, t, n, 7);
 					let o = Number(e & BigInt(4294967295));
 					t[n + 7] = o, o >>= 8, t[n + 6] = o, o >>= 8, t[n + 5] = o, o >>= 8, t[n + 4] = o;
@@ -1197,11 +1209,11 @@
 					if (n < 0) throw new RangeError("Index out of range")
 				}
 
-				function R(t, e, r, i, o) {
+				function C(t, e, r, i, o) {
 					return e = +e, r >>>= 0, o || j(t, 0, r, 4), n.write(t, e, r, i, 23, 4), r + 4
 				}
 
-				function C(t, e, r, i, o) {
+				function R(t, e, r, i, o) {
 					return e = +e, r >>>= 0, o || j(t, 0, r, 8), n.write(t, e, r, i, 52, 8), r + 8
 				}
 				s.prototype.slice = function(t, e) {
@@ -1325,9 +1337,9 @@
 				}, s.prototype.writeUint32BE = s.prototype.writeUInt32BE = function(t, e, n) {
 					return t = +t, e >>>= 0, n || T(this, t, e, 4, 4294967295, 0), this[e] = t >>> 24, this[e + 1] = t >>> 16, this[e + 2] = t >>> 8, this[e + 3] = 255 & t, e + 4
 				}, s.prototype.writeBigUInt64LE = K((function(t, e = 0) {
-					return M(this, t, e, BigInt(0), BigInt("0xffffffffffffffff"))
-				})), s.prototype.writeBigUInt64BE = K((function(t, e = 0) {
 					return x(this, t, e, BigInt(0), BigInt("0xffffffffffffffff"))
+				})), s.prototype.writeBigUInt64BE = K((function(t, e = 0) {
+					return M(this, t, e, BigInt(0), BigInt("0xffffffffffffffff"))
 				})), s.prototype.writeIntLE = function(t, e, n, r) {
 					if (t = +t, e >>>= 0, !r) {
 						const r = Math.pow(2, 8 * n - 1);
@@ -1359,17 +1371,17 @@
 				}, s.prototype.writeInt32BE = function(t, e, n) {
 					return t = +t, e >>>= 0, n || T(this, t, e, 4, 2147483647, -2147483648), t < 0 && (t = 4294967295 + t + 1), this[e] = t >>> 24, this[e + 1] = t >>> 16, this[e + 2] = t >>> 8, this[e + 3] = 255 & t, e + 4
 				}, s.prototype.writeBigInt64LE = K((function(t, e = 0) {
-					return M(this, t, e, -BigInt("0x8000000000000000"), BigInt("0x7fffffffffffffff"))
-				})), s.prototype.writeBigInt64BE = K((function(t, e = 0) {
 					return x(this, t, e, -BigInt("0x8000000000000000"), BigInt("0x7fffffffffffffff"))
+				})), s.prototype.writeBigInt64BE = K((function(t, e = 0) {
+					return M(this, t, e, -BigInt("0x8000000000000000"), BigInt("0x7fffffffffffffff"))
 				})), s.prototype.writeFloatLE = function(t, e, n) {
-					return R(this, t, e, !0, n)
-				}, s.prototype.writeFloatBE = function(t, e, n) {
-					return R(this, t, e, !1, n)
-				}, s.prototype.writeDoubleLE = function(t, e, n) {
 					return C(this, t, e, !0, n)
-				}, s.prototype.writeDoubleBE = function(t, e, n) {
+				}, s.prototype.writeFloatBE = function(t, e, n) {
 					return C(this, t, e, !1, n)
+				}, s.prototype.writeDoubleLE = function(t, e, n) {
+					return R(this, t, e, !0, n)
+				}, s.prototype.writeDoubleBE = function(t, e, n) {
+					return R(this, t, e, !1, n)
 				}, s.prototype.copy = function(t, e, n, r) {
 					if (!s.isBuffer(t)) throw new TypeError("argument should be a Buffer");
 					if (n || (n = 0), r || 0 === r || (r = this.length), e >= t.length && (e = t.length), e || (e = 0), r > 0 && r < n && (r = n), r === n) return 0;
@@ -1526,11 +1538,11 @@
 					return i
 				}
 
-				function W(t, e) {
+				function X(t, e) {
 					return t instanceof e || null != t && null != t.constructor && null != t.constructor.name && t.constructor.name === e.name
 				}
 
-				function H(t) {
+				function W(t) {
 					return t != t
 				}
 				const Q = function() {
@@ -1549,26 +1561,28 @@
 				function J() {
 					throw new Error("BigInt not supported")
 				}
-			}(V);
-			const rt = /(?:\/|-)(?:nftv2)_([^_]+)_(\w+)_.*\.(?:png|svg)/,
-				it = t => {
-					const e = t.match(rt),
+			}(X);
+			const it = /(?:\/|-)(?:nftv2)_([^_]+)_(\w+)_.*\.(?:png|svg)/,
+				ot = t => {
+					const e = t.match(it),
 						n = null == e ? void 0 : e[1];
 					if (!n) return null;
 					const r = decodeURI(n);
-					return V.Buffer.from(r, "base64").toString()
+					return X.Buffer.from(r, "base64").toString()
 				};
-			var ot = "_container_120l6_49",
-				st = "_cardContainer_120l6_148",
-				at = "_cardFront_120l6_153";
-			const ut = (ft = ({
+			var st = "_container_1xtot_49",
+				at = "_cardContainer_1xtot_148",
+				ut = "_cardFront_1xtot_153",
+				ft = "_treatmentIcon_1xtot_158",
+				lt = "_treatmentTitle_1xtot_164";
+			const ct = (ht = ({
 				className: t,
 				imageUrl: e
 			}) => {
-				const n = it(e),
+				const n = ot(e),
 					[o, a] = Object(r.useState)({}),
 					[u] = Object(s.c)({
-						query: $,
+						query: z,
 						variables: {
 							ids: [n]
 						}
@@ -1589,7 +1603,7 @@
 							nftImageUrl: t.images[0].url,
 							contractAddress: `0x${t.nft.contractAddress}`,
 							tokenId: t.nft.tokenId,
-							serialNumber: t.nft.tokenId,
+							serialNumber: t.serialNumber,
 							collectionSize: t.drop.size,
 							outfitId: t.benefits.avatarOutfit.id,
 							backgroundImageUrl: t.benefits.avatarOutfit.backgroundImage.url,
@@ -1597,8 +1611,8 @@
 							ipfsUrl: t.nft.imageUrl,
 							metadataUrl: t.nft.tokenUrl,
 							mintDate: t.nft.mintedAt,
-							isMinting: (null == (e = null == t ? void 0 : t.tags) ? void 0 : e.includes(z.MINTING)) || !1,
-							isMinted: (null == (n = null == t ? void 0 : t.tags) ? void 0 : n.includes(z.MINTED)) || !1,
+							isMinting: (null == (e = null == t ? void 0 : t.tags) ? void 0 : e.includes(G.MINTING)) || !1,
+							isMinted: (null == (n = null == t ? void 0 : t.tags) ? void 0 : n.includes(G.MINTED)) || !1,
 							soldFor: null,
 							currentPrice: null,
 							vendor: t.nft.vendor,
@@ -1606,39 +1620,42 @@
 						}
 					}(n))
 				}, [f]);
-				const l = j({
+				const l = C({
 					title: "",
 					avatarImageUrl: e,
 					backgroundImageUrl: "",
 					collectionSize: null
 				}, o);
 				return i.a.createElement("div", {
-					className: C(ot, t)
+					className: L(st, t)
 				}, i.a.createElement("div", {
-					className: st
-				}, i.a.createElement(U, {
-					className: at,
-					nft: l
+					className: at
+				}, i.a.createElement(k, {
+					className: ut,
+					nft: l,
+					nftIconClassName: ft,
+					titleClassName: lt,
+					isShadowHidden: !0
 				})))
-			}, t => i.a.createElement(s.a, null, i.a.createElement(ft, j({}, t))));
-			var ft, lt = n("./src/reddit/actions/modal.ts"),
-				ct = n("./src/reddit/components/Crypto/CryptoComponentsConfigProvider.tsx"),
-				ht = n("./node_modules/@loadable/component/dist/loadable.esm.js"),
-				pt = n("./src/reddit/components/GlobalModalContainer/registry.ts"),
-				dt = n("./src/reddit/constants/modals.ts");
-			const gt = () => Promise.all([n.e(0), n.e(4), n.e("NftProductDetailsModal")]).then(n.bind(null, "./src/reddit/components/Econ/Marketplace/NftProductDetails/index.tsx")),
-				yt = Object(ht.a)(gt, {
+			}, t => i.a.createElement(s.a, null, i.a.createElement(ht, C({}, t))));
+			var ht, pt = n("./src/reddit/actions/modal.ts"),
+				dt = n("./src/reddit/components/Crypto/CryptoComponentsConfigProvider.tsx"),
+				gt = n("./node_modules/@loadable/component/dist/loadable.esm.js"),
+				yt = n("./src/reddit/components/GlobalModalContainer/registry.ts"),
+				mt = n("./src/reddit/constants/modals.ts");
+			const vt = () => Promise.all([n.e(0), n.e(4), n.e("NftProductDetailsModal")]).then(n.bind(null, "./src/reddit/components/Econ/Marketplace/NftProductDetails/index.tsx")),
+				bt = Object(gt.a)(vt, {
 					ssr: !1
 				});
-			Object(pt.b)(dt.a.ECON_NFT_PRODUCT_DETAILS, t => i.a.createElement(yt, {
+			Object(yt.b)(mt.a.ECON_NFT_PRODUCT_DETAILS, t => i.a.createElement(bt, {
 				onClose: t,
 				onOverlayClick: t
 			}));
-			var mt = n("./src/reddit/helpers/trackers/marketplace/claims.ts"),
-				vt = n("./src/reddit/hooks/usePreloadModal.ts"),
-				bt = n("./src/reddit/hooks/useTracking.ts"),
-				wt = n("./src/reddit/components/Econ/Marketplace/NftProfileUnit/index.m.less"),
-				Et = n.n(wt);
+			var wt = n("./src/reddit/helpers/trackers/marketplace/claims.ts"),
+				Et = n("./src/reddit/hooks/usePreloadModal.ts"),
+				_t = n("./src/reddit/hooks/useTracking.ts"),
+				Bt = n("./src/reddit/components/Econ/Marketplace/NftProfileUnit/index.m.less"),
+				It = n.n(Bt);
 			e.default = t => {
 				let {
 					className: e,
@@ -1646,17 +1663,17 @@
 					origin: r
 				} = t;
 				const s = Object(o.d)(),
-					a = Object(bt.a)();
-				Object(vt.a)(gt);
-				const u = it(n);
+					a = Object(_t.a)();
+				Object(Et.a)(vt);
+				const u = ot(n);
 				return u ? i.a.createElement("div", {
 					className: e
-				}, i.a.createElement(ct.a, null, i.a.createElement(ut, {
+				}, i.a.createElement(dt.a, null, i.a.createElement(ct, {
 					imageUrl: n
-				}), i.a.createElement(F, {
-					className: Et.a.detailsButton,
+				}), i.a.createElement($, {
+					className: It.a.detailsButton,
 					onClick: () => {
-						a(Object(mt.e)(r)), s(Object(lt.h)(dt.a.ECON_NFT_PRODUCT_DETAILS, {
+						a(Object(wt.e)(r)), s(Object(pt.h)(mt.a.ECON_NFT_PRODUCT_DETAILS, {
 							itemId: u
 						}))
 					}
@@ -1697,4 +1714,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/NftProfileUnit.c1e258c7448c3a9f1665.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/NftProfileUnit.036ba79262fc6bbf87a7.js.map

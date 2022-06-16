@@ -1,12 +1,12 @@
-// https://www.redditstatic.com/desktop2x/NftProductDetailsModal.de1a721110577f36fd53.js
-// Retrieved at 6/13/2022, 11:20:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/NftProductDetailsModal.e15b822e2adb104ea4e1.js
+// Retrieved at 6/16/2022, 4:10:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["NftProductDetailsModal"], {
 		"./node_modules/@reddit/crypto/core/wallets/index.es.js": function(e, t, r) {
 			"use strict";
 			var s, a, n = r("./node_modules/ethers/lib.esm/index.js");
 			(a = s || (s = {}))[a.Metamask = 1] = "Metamask", a[a.CoinbaseWallet = 2] = "CoinbaseWallet";
-			class c {
+			class o {
 				constructor(e, t) {
 					this.type = e, this.provider = t, this._cachedAddress = t.selectedAddress || ""
 				}
@@ -38,8 +38,8 @@
 			var s = r("./node_modules/@reddit/crypto/react/nft-product-card/index.es.js"),
 				a = r("./src/higherOrderComponents/asModal/index.tsx"),
 				n = r("./node_modules/react/index.js"),
-				c = r.n(n),
-				o = r("./node_modules/react-redux/es/index.js"),
+				o = r.n(n),
+				c = r("./node_modules/react-redux/es/index.js"),
 				d = r("./src/reddit/actions/snoovatarModal.ts"),
 				i = r("./src/reddit/components/Crypto/CryptoComponentsConfigProvider.tsx"),
 				l = r("./src/reddit/helpers/avatarRouting.ts"),
@@ -61,16 +61,16 @@
 					let {
 						onClose: t
 					} = e;
-					const r = Object(o.e)(p.Cb),
-						a = Object(o.e)(e => {
+					const r = Object(c.e)(p.Cb),
+						a = Object(c.e)(e => {
 							var t;
 							return null === (t = Object(u.a)(e)) || void 0 === t ? void 0 : t.itemId
 						}),
-						n = Object(o.d)();
+						n = Object(c.d)();
 					if (!r || !a) return null;
-					return c.a.createElement("div", {
+					return o.a.createElement("div", {
 						className: h.a.container
-					}, c.a.createElement(i.a, null, c.a.createElement(s.a, {
+					}, o.a.createElement(i.a, null, o.a.createElement(s.a, {
 						itemId: a,
 						onClose: t,
 						currentUserId: r,
@@ -102,8 +102,8 @@
 						}
 					})))
 				},
-				m = Object(a.a)(f);
-			t.default = e => c.a.createElement(m, v({
+				_ = Object(a.a)(f);
+			t.default = e => o.a.createElement(_, v({
 				withOverlay: !0,
 				className: h.a.modal
 			}, e))
@@ -120,7 +120,7 @@
 					e.BODY = "body", e.EYES = "eyes", e.HAIR = "hair", e.EXPRESSION = "expression", e.FACIAL_HAIR = "facial hair"
 				}(s || (s = {})),
 				function(e) {
-					e.SHOP = "shop", e.EXPLORE = "explore", e.STYLE = "style", e.ME = "me", e.NFT = "nft"
+					e.SHOP = "shop", e.EXPLORE = "explore", e.STYLE = "style", e.ME = "you", e.NFT = "nft"
 				}(a || (a = {})),
 				function(e) {
 					e.FEATURED = "featured", e.POPULAR = "popular", e.GALLERY = "gallery", e.ARTISTS = "artists", e.ARTIST_PAGE = "artist_page"
@@ -128,4 +128,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/NftProductDetailsModal.de1a721110577f36fd53.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/NftProductDetailsModal.e15b822e2adb104ea4e1.js.map
