@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModerationPages.dde9dffd3df905b30498.js
-// Retrieved at 6/16/2022, 6:00:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModerationPages.b5d84b8bad9c20378ea8.js
+// Retrieved at 6/17/2022, 4:30:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModerationPages"], {
 		"./node_modules/lodash/_arrayAggregator.js": function(e, t) {
@@ -11722,6 +11722,9 @@
 					CREATE_AWARD: () => a.fbt._("Create award", null, {
 						hk: "bWa9w"
 					}),
+					CREATE_REMOVAL_REASON: () => a.fbt._("Create removal reason", null, {
+						hk: "i1LIy"
+					}),
 					CREATE_RULE: () => a.fbt._("Create rule", null, {
 						hk: "28uE69"
 					}),
@@ -11730,6 +11733,9 @@
 					}),
 					DELETE_AWARD: () => a.fbt._("Delete award", null, {
 						hk: "3xYaZ7"
+					}),
+					DELETE_REMOVAL_REASON: () => a.fbt._("Delete removal reason", null, {
+						hk: "3FdYhk"
 					}),
 					DELETE_RULE: () => a.fbt._("Delete rule", null, {
 						hk: "2lWdRL"
@@ -11886,6 +11892,9 @@
 					}),
 					UNSTICKY: () => a.fbt._("Unsticky", null, {
 						hk: "U5tvd"
+					}),
+					UPDATE_REMOVAL_REASON: () => a.fbt._("Update removal reason", null, {
+						hk: "aDPHp"
 					}),
 					WIKI_BANNED: () => a.fbt._("Wiki banned", null, {
 						hk: "1nk4H7"
@@ -12601,6 +12610,9 @@
 								case "SUBMIT_CONTENT_RATING_SURVEY":
 								case "DELETE_OVERRIDDEN_CLASSIFICATION":
 								case "OVERRIDE_CLASSIFICATION":
+								case "CREATE_REMOVAL_REASON":
+								case "DELETE_REMOVAL_REASON":
+								case "UPDATE_REMOVAL_REASON":
 									return {
 										type: k.SETTINGS, treatment: y.NONE
 									};
@@ -23982,4 +23994,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.dde9dffd3df905b30498.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.b5d84b8bad9c20378ea8.js.map
