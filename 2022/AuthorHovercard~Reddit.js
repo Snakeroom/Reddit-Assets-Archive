@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/AuthorHovercard~Reddit.3495d50a35e63eb8e0cb.js
-// Retrieved at 6/21/2022, 2:10:03 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/AuthorHovercard~Reddit.ca89c0c668fdb1bb4e8a.js
+// Retrieved at 6/21/2022, 5:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["AuthorHovercard~Reddit"], {
 		"./src/lib/browser/isIncognito.ts": function(e, t, n) {
@@ -115,9 +115,9 @@
 				O = n("./src/reddit/constants/experiments.ts"),
 				k = n("./src/reddit/helpers/chooseVariant/index.ts");
 			const E = e => Object(k.c)(e, {
-				experimentName: O.dc,
+				experimentName: O.cc,
 				experimentEligibilitySelector: k.a
-			}) === O.td;
+			}) === O.sd;
 			var j = n("./src/reddit/selectors/meta.ts"),
 				C = n("./src/reddit/selectors/user.ts");
 			let I = !1;
@@ -417,10 +417,9 @@
 				modalCloseIcon: "_2BTQI8_1TIwwfdecOP_j6o",
 				modalListItem: "-sXLpWAGj2HMFvzRvH_bC",
 				modalListIcon: "_3UO2hA0CsOqKl1bYybPZGs",
+				hotPotatoBanner: "_2oy7Xi4NUleUcHtb8YDZh7",
 				bannerContainer: "V5Q75l1gWtGpBZEehJiGH",
 				bannerDataContainer: "SIz6ozr7aqewYGVSLfSf6",
-				bannerLogo: "_3vKs7F-vWpFg20NtGjjN62",
-				hotPotatoBanner: "_2oy7Xi4NUleUcHtb8YDZh7",
 				bannerImage: "_2zetWw7f4W-0OWrUYJHPQ-"
 			}
 		},
@@ -1799,23 +1798,23 @@
 			const q = e => Object(V.c)(e, {
 					experimentEligibilitySelector: V.a,
 					experimentName: G.Bb
-				}) === G.Ad.MemesNoBadge,
+				}) === G.zd.MemesNoBadge,
 				K = e => Object(V.c)(e, {
 					experimentEligibilitySelector: V.a,
 					experimentName: G.Bb
-				}) === G.Ad.PnEmailNoBadge,
+				}) === G.zd.PnEmailNoBadge,
 				J = e => Object(V.c)(e, {
 					experimentEligibilitySelector: V.a,
 					experimentName: G.Bb
-				}) === G.Ad.KarmaNoBadge,
+				}) === G.zd.KarmaNoBadge,
 				Q = e => Object(V.c)(e, {
 					experimentEligibilitySelector: V.a,
 					experimentName: G.Bb
-				}) === G.Ad.PopularNoBadge,
+				}) === G.zd.PopularNoBadge,
 				Y = e => Object(V.c)(e, {
 					experimentEligibilitySelector: V.a,
 					experimentName: G.Bb
-				}) === G.Ad.CatsNoBadge;
+				}) === G.zd.CatsNoBadge;
 			t.a = e => {
 				let {
 					isBannerEnabled: t,
@@ -2011,4 +2010,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/AuthorHovercard~Reddit.3495d50a35e63eb8e0cb.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/AuthorHovercard~Reddit.ca89c0c668fdb1bb4e8a.js.map

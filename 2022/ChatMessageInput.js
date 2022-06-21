@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ChatMessageInput.4830334b0347aa7a5c80.js
-// Retrieved at 6/15/2022, 11:10:24 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ChatMessageInput.8153c9f3ee894d39480c.js
+// Retrieved at 6/21/2022, 5:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ChatMessageInput"], {
 		"./node_modules/shallowequal/index.js": function(e, t) {
@@ -414,19 +414,19 @@
 					} = t;
 					return {
 						dispatchSubmit: async (t, i, u) => {
-							s && r ? await e(Object(b.k)({
+							s && r ? await e(Object(b.j)({
 								id: r.id,
 								commentsPageKey: n,
 								draftKey: a,
 								formData: t
-							})) : u ? e(Object(b.o)({
+							})) : u ? e(Object(b.n)({
 								commentsPageKey: n,
 								draftKey: a,
 								parentCommentDepth: u.depth,
 								parentCommentId: u.id,
 								formData: t,
 								editorMode: i
-							})) : await e(Object(b.q)({
+							})) : await e(Object(b.p)({
 								postId: o,
 								commentsPageKey: n,
 								draftKey: a,
@@ -1733,4 +1733,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatMessageInput.4830334b0347aa7a5c80.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatMessageInput.8153c9f3ee894d39480c.js.map

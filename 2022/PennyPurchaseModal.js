@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PennyPurchaseModal.01665eb7ebac8a1fbf0f.js
-// Retrieved at 6/21/2022, 2:10:03 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PennyPurchaseModal.a463195cb95ec675660b.js
+// Retrieved at 6/21/2022, 5:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PennyPurchaseModal"], {
 		"./node_modules/lodash/uniqueId.js": function(e, t, a) {
@@ -690,7 +690,7 @@
 				},
 				J = a("./src/reddit/components/PaymentMethodSelector/index.tsx"),
 				U = a("./src/reddit/components/StripePaymentForm/index.tsx"),
-				Z = a("./src/reddit/helpers/createEmojiText/index.tsx");
+				Y = a("./src/reddit/helpers/createEmojiText/index.tsx");
 			const X = e => {
 				const t = Object(Q.a)(),
 					a = Object(c.a)(),
@@ -750,7 +750,7 @@
 				})({
 					...e,
 					locale: t
-				}), Object(Z.a)(n.fbt._("By purchasing Coins and Awards, you agree to the :agreement:.", null, {
+				}), Object(Y.a)(n.fbt._("By purchasing Coins and Awards, you agree to the :agreement:.", null, {
 					hk: "1eCqza"
 				}), {
 					":agreement:": o.a.createElement("a", {
@@ -2014,7 +2014,7 @@
 			}));
 			var r = a("./src/reddit/constants/experiments.ts"),
 				n = a("./src/reddit/selectors/experiments/econ/simpleExperiment.ts");
-			const s = Object(n.a)(r.Zc)
+			const s = Object(n.a)(r.Yc)
 		},
 		"./src/redditGQL/operations/CancelEconRecurringPayment.json": function(e) {
 			e.exports = JSON.parse('{"id":"ac36f7489268"}')
@@ -2051,4 +2051,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PennyPurchaseModal.01665eb7ebac8a1fbf0f.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PennyPurchaseModal.a463195cb95ec675660b.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModQueue.a5b1c294c1ce88ba9a8e.js
-// Retrieved at 6/16/2022, 6:00:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModQueue.4f9e257179cbff80ee3a.js
+// Retrieved at 6/21/2022, 5:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModQueue"], {
 		"./src/reddit/actions/bulkActions/index.ts": function(e, t, s) {
@@ -88,7 +88,7 @@
 							isLocked: a.isLocked
 						}
 					}))
-				}, g = Object(n.a)(_.I), k = e => async (t, s, r) => {
+				}, g = Object(n.a)(_.H), k = e => async (t, s, r) => {
 					let {
 						apiContext: n,
 						gqlContext: a
@@ -1233,7 +1233,7 @@
 												hasSortParam: !0
 											})), l === z.e.Post) {
 											const s = Object(x.a)(K.c.replyToPost, m);
-											n(Object(N.r)({
+											n(Object(N.q)({
 												...t,
 												headCommentId: Object(J.w)(i, {
 													commentsPageKey: r
@@ -1257,7 +1257,7 @@
 													commentId: m,
 													commentsPageKey: r
 												});
-											n(Object(N.p)({
+											n(Object(N.o)({
 												...t,
 												parentCommentId: m,
 												commentsPageKey: r,
@@ -1503,4 +1503,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModQueue.a5b1c294c1ce88ba9a8e.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModQueue.4f9e257179cbff80ee3a.js.map

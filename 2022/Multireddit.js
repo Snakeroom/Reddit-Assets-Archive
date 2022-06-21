@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Multireddit.bc9498c43ebeac66bae7.js
-// Retrieved at 6/21/2022, 2:10:03 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Multireddit.59540d6024cc8b86ec92.js
+// Retrieved at 6/21/2022, 5:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Multireddit"], {
 		"./src/lib/forceHttps/index.ts": function(e, t, n) {
@@ -462,7 +462,7 @@
 				B = e => !e.textColor || e.textColor && !e.backgroundColor ? Object(S.a)(e).postFlairText : "transparent" === e.backgroundColor ? Object(O.a)(Object(S.a)(e).post, T.a.black, T.a.white) : e.textColor === I.e.Dark ? T.a.black : T.a.white,
 				W = p.a.wrapped(A, "TextFlair", y.a),
 				V = p.a.wrapped(P, "RichTextFlair", y.a),
-				Z = e => {
+				H = e => {
 					switch (e.type) {
 						case "spoiler":
 							return "#A4A7A8";
@@ -472,8 +472,8 @@
 							return Object(i.i)(.1, Object(S.a)(s()(e, "theme", "redditStyle", "data-redditstyle")).button)
 					}
 				},
-				H = p.a.wrapped(e => {
-					const t = Z(e),
+				Z = p.a.wrapped(e => {
+					const t = H(e),
 						n = a.a.createElement("span", {
 							className: e.className,
 							style: {
@@ -551,7 +551,7 @@
 						});
 					case I.f.Nsfw:
 					case I.f.Spoiler:
-						return a.a.createElement(H, {
+						return a.a.createElement(Z, {
 							className: t,
 							text: o.text,
 							type: o.type
@@ -1303,27 +1303,27 @@
 				s = n("./src/reddit/helpers/chooseVariant/index.ts"),
 				i = n("./src/reddit/selectors/experiments/index.ts");
 			const c = Object(r.a)(e => Object(s.c)(e, {
-					experimentName: o.Ub,
+					experimentName: o.Tb,
 					experimentEligibilitySelector: i.e
 				}), e => e === o.eb.Enabled),
 				a = Object(r.a)(e => Object(s.c)(e, {
-					experimentName: o.Vb,
+					experimentName: o.Ub,
 					experimentEligibilitySelector: i.e
 				}), e => e === o.fb.Enabled),
 				l = Object(r.a)(e => Object(s.c)(e, {
-					experimentName: o.Wb,
+					experimentName: o.Vb,
 					experimentEligibilitySelector: i.e
 				}), e => e === o.gb.Enabled),
 				d = Object(r.a)(e => Object(s.c)(e, {
-					experimentName: o.Xb,
+					experimentName: o.Wb,
 					experimentEligibilitySelector: i.e
 				}), e => e === o.hb.Enabled),
 				u = Object(r.a)(e => Object(s.c)(e, {
-					experimentName: o.Zb,
+					experimentName: o.Yb,
 					experimentEligibilitySelector: i.e
 				}), e => e === o.jb.Enabled),
 				m = Object(r.a)(e => Object(s.c)(e, {
-					experimentName: o.Yb,
+					experimentName: o.Xb,
 					experimentEligibilitySelector: i.e
 				}), e => e === o.ib.Enabled)
 		},
@@ -1332,4 +1332,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Multireddit.bc9498c43ebeac66bae7.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Multireddit.59540d6024cc8b86ec92.js.map

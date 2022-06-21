@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Settings.33be53b8a95a2af7e9c4.js
-// Retrieved at 6/21/2022, 2:10:03 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Settings.3a8e7a6931bcbfd162d3.js
+// Retrieved at 6/21/2022, 5:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Settings"], {
 		"./node_modules/moment/locale sync recursive ^\\.\\/.*$": function(e, t, n) {
@@ -12099,7 +12099,9 @@
 					const [i, c] = Object(r.useState)(Ts.a.Push), [l, d] = Object(r.useState)(null), m = Object(ke.a)(), u = i === Ts.a.Push, p = i === Ts.a.Email, b = i === Ts.a.ModCommunityAlerts, h = i === Ts.a.CommunityAlerts, f = e => {
 						c(e), e !== Ts.a.ModCommunityAlerts && d(null)
 					}, g = p || b || h;
-					return a.a.createElement(he.a, null, a.a.createElement("nav", {
+					return a.a.createElement("div", {
+						id: "notifications-settings"
+					}, a.a.createElement(he.a, null, a.a.createElement("nav", {
 						className: Bs.a.nav
 					}, a.a.createElement("button", {
 						onClick: () => f(g ? Ts.a.Push : Ts.a.Email)
@@ -12131,7 +12133,9 @@
 						handleCommunityNavClick: () => c(Ts.a.CommunityAlerts)
 					}), p && a.a.createElement(a.a.Fragment, null, a.a.createElement(Ps.b, {
 						isEmailSettings: p
-					}), a.a.createElement($.a, null), a.a.createElement(ee.p, {
+					}), a.a.createElement($.a, null), a.a.createElement("span", {
+						id: "unsubscribe-from-all-emails"
+					}, a.a.createElement(ee.p, {
 						on: !!n,
 						onClick: () => {
 							m(Object(Ns.a)(!!n)), o(!n, "emailUnsubscribe")
@@ -12139,12 +12143,12 @@
 						label: s.fbt._("Unsubscribe from all emails", null, {
 							hk: "Dx3k0"
 						})
-					})), b && l && a.a.createElement("div", {
+					}))), b && l && a.a.createElement("div", {
 						className: Bs.a.ModPnSettings
 					}, a.a.createElement(Ss.a, {
 						subredditId: l.subredditId,
 						subredditName: l.subredditName
-					})), h && a.a.createElement(Ps.a, null))
+					})), h && a.a.createElement(Ps.a, null)))
 				},
 				Ls = n("./src/reddit/components/Settings/Payments/Header/index.m.less"),
 				Fs = n.n(Ls);
@@ -13534,9 +13538,9 @@
 					},
 					isDspEnabled: e => {
 						return Object(re.c)(e, {
-							experimentName: se.Oc,
+							experimentName: se.Nc,
 							experimentEligibilitySelector: re.a
-						}) === se.td
+						}) === se.sd
 					}
 				}),
 				ho = Object(ge.u)(),
@@ -14072,7 +14076,7 @@
 			const o = e => Object(r.c)(e, {
 				experimentName: s.G,
 				experimentEligibilitySelector: () => Object(a.P)(e)
-			}) === s.td
+			}) === s.sd
 		},
 		"./src/reddit/selectors/experiments/econ/marketplace.ts": function(e, t, n) {
 			"use strict";
@@ -14086,13 +14090,13 @@
 			const a = e => {
 					return !(Object(r.c)(e, {
 						experimentEligibilitySelector: r.a,
-						experimentName: s.ae
-					}) === s.td)
+						experimentName: s.Yd
+					}) === s.sd)
 				},
 				o = e => Object(r.c)(e, {
 					experimentEligibilitySelector: r.a,
-					experimentName: s.be
-				}) === s.td
+					experimentName: s.Zd
+				}) === s.sd
 		},
 		"./src/reddit/selectors/gold/productOffers.ts": function(e, t, n) {
 			"use strict";
@@ -14262,4 +14266,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Settings.33be53b8a95a2af7e9c4.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Settings.3a8e7a6931bcbfd162d3.js.map

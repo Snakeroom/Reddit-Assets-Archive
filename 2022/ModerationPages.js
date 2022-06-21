@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModerationPages.131510c18e9f7c1532c8.js
-// Retrieved at 6/21/2022, 2:10:03 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModerationPages.79ff1198985aebc9f395.js
+// Retrieved at 6/21/2022, 5:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModerationPages"], {
 		"./node_modules/lodash/_arrayAggregator.js": function(e, t) {
@@ -1685,7 +1685,7 @@
 												hasSortParam: !0
 											})), u === Q.e.Post) {
 											const s = Object(w.a)(K.c.replyToPost, m);
-											o(Object(I.r)({
+											o(Object(I.q)({
 												...t,
 												headCommentId: Object(X.w)(d, {
 													commentsPageKey: a
@@ -1709,7 +1709,7 @@
 													commentId: m,
 													commentsPageKey: a
 												});
-											o(Object(I.p)({
+											o(Object(I.o)({
 												...t,
 												parentCommentId: m,
 												commentsPageKey: a,
@@ -7618,7 +7618,7 @@
 			}
 
 			function g() {
-				return Object(d.a)(i.V) === i.td
+				return Object(d.a)(i.V) === i.sd
 			}
 
 			function f() {
@@ -23702,7 +23702,7 @@
 				a = s("./src/reddit/selectors/experiments/econ/simpleExperiment.ts");
 			const o = Object(a.a)(n.K),
 				r = Object(a.a)(n.I),
-				i = Object(a.a)(n.fe),
+				i = Object(a.a)(n.de),
 				l = Object(a.a)(n.L),
 				d = Object(a.a)(n.M),
 				c = Object(a.a)(n.H),
@@ -23718,9 +23718,9 @@
 			const o = e => {
 				const t = Object(a.c)(e, {
 					experimentEligibilitySelector: a.a,
-					experimentName: n.sd
+					experimentName: n.rd
 				});
-				return !(!t || Object(n.Wf)(t))
+				return !(!t || Object(n.Uf)(t))
 			}
 		},
 		"./src/reddit/selectors/showPromotedCTA.ts": function(e, t, s) {
@@ -23733,10 +23733,10 @@
 				o = s("./src/reddit/helpers/chooseVariant/index.ts"),
 				r = s("./src/reddit/selectors/posts.ts");
 			const i = e => Object(o.c)(e, {
-					experimentName: a.Ne,
+					experimentName: a.Le,
 					experimentEligibilitySelector: o.a
 				}),
-				l = (e, t) => t === a.Ve.Enabled && (null == e ? void 0 : e.isCreatedFromAdsUi) || (null == e ? void 0 : e.isSponsored),
+				l = (e, t) => t === a.Te.Enabled && (null == e ? void 0 : e.isCreatedFromAdsUi) || (null == e ? void 0 : e.isSponsored),
 				d = Object(n.a)(r.G, i, (e, t) => l(e, t));
 			Object(n.a)((e, t) => t, i, (e, t) => l(e, t))
 		},
@@ -23994,4 +23994,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.131510c18e9f7c1532c8.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.79ff1198985aebc9f395.js.map

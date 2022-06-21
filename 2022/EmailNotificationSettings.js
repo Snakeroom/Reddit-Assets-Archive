@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/EmailNotificationSettings.447b2118149b3f77be75.js
-// Retrieved at 6/1/2022, 6:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/EmailNotificationSettings.7d9ed8c140fc83dd74d5.js
+// Retrieved at 6/21/2022, 5:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["EmailNotificationSettings"], {
 		"./node_modules/lodash/times.js": function(e, t, s) {
@@ -71,7 +71,7 @@
 		"./src/reddit/components/Settings/Notifications/NotificationToggles.tsx": function(e, t, s) {
 			"use strict";
 			s.d(t, "a", (function() {
-				return b
+				return p
 			}));
 			var n = s("./node_modules/fbt/lib/FbtPublic.js"),
 				i = s("./node_modules/react/index.js"),
@@ -85,14 +85,16 @@
 				u = s("./src/reddit/icons/fonts/index.tsx"),
 				g = s("./src/reddit/components/Settings/Notifications/index.m.less"),
 				f = s.n(g);
-			const b = e => {
+			const p = e => {
 				Object(i.useEffect)(() => {
 					e.fetchNotificationSettings()
 				}, []);
 				const t = Object(m.a)(),
 					s = (s, n, i) => {
 						const o = e.rows && e.rows.byId[s];
-						return o ? a.a.createElement(d.p, {
+						return o ? a.a.createElement("span", {
+							id: o.displayName.replace(/[^\w\s]|\s/gi, "").toLowerCase()
+						}, a.a.createElement(d.p, {
 							disabled: e.disabled,
 							forceOn: o.isEnabled && e.disabled,
 							key: o.displayName,
@@ -110,7 +112,7 @@
 								})
 							})(o),
 							subtext: o.description
-						}) : null
+						})) : null
 					},
 					g = a.a.createElement("span", {
 						className: "errorMessage",
@@ -118,8 +120,8 @@
 					}, n.fbt._("There was an issue fetching your notification settings. Please try again later.", null, {
 						hk: "4pmBD4"
 					})),
-					b = e.sections && e.sections.allIds,
-					_ = b && b.map(t => {
+					p = e.sections && e.sections.allIds,
+					b = p && p.map(t => {
 						const i = e.sections && e.sections.byId && e.sections.byId[t];
 						if (!i) return null;
 						const r = "Moderation" === i.title;
@@ -142,7 +144,7 @@
 							handleModPnSubredditClick: e.handleModPnClick
 						})))
 					});
-				return e.hasError ? g : b && b.length > 0 ? a.a.createElement(a.a.Fragment, null, _) : a.a.createElement(r.a, {
+				return e.hasError ? g : p && p.length > 0 ? a.a.createElement(a.a.Fragment, null, b) : a.a.createElement(r.a, {
 					rowsCount: 5
 				})
 			}
@@ -164,4 +166,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EmailNotificationSettings.447b2118149b3f77be75.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EmailNotificationSettings.7d9ed8c140fc83dd74d5.js.map
