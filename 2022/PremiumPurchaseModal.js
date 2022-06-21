@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PremiumPurchaseModal.03a74fdd726b5b76f1dd.js
-// Retrieved at 6/21/2022, 5:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PremiumPurchaseModal.5489581021efc800c03f.js
+// Retrieved at 6/21/2022, 7:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PremiumPurchaseModal"], {
 		"./node_modules/@stripe/react-stripe-js/dist/react-stripe.umd.js": function(e, t, r) {
@@ -1429,10 +1429,10 @@
 				D = r("./src/reddit/components/Econ/ProductOfferPurchaseButton/Paypal.tsx"),
 				U = r("./src/reddit/components/Econ/ProductOfferPurchaseButton/Stripe.tsx"),
 				q = r("./src/reddit/components/PaymentMethodSelector/index.tsx"),
-				H = r("./src/reddit/components/StripePaymentForm/index.tsx"),
-				Q = r("./src/reddit/hooks/useLocale.ts"),
-				W = r("./src/reddit/hooks/useStripePromise.ts"),
-				V = r("./src/reddit/models/Payments/index.ts");
+				Q = r("./src/reddit/components/StripePaymentForm/index.tsx"),
+				W = r("./src/reddit/hooks/useLocale.ts"),
+				V = r("./src/reddit/hooks/useStripePromise.ts"),
+				H = r("./src/reddit/models/Payments/index.ts");
 			var Y = e => a.a.createElement("div", {
 				className: R.a.premiumPurchaseHeader,
 				style: {
@@ -1460,8 +1460,8 @@
 				"data-redditstyle": !0
 			})));
 			var K = e => {
-				const t = Object(W.a)(),
-					r = Object(Q.b)(),
+				const t = Object(V.a)(),
+					r = Object(W.b)(),
 					n = Object(o.d)(),
 					c = Object(o.e)(P.k),
 					s = Object(B.b)(e.total, {
@@ -1469,10 +1469,10 @@
 						type: L.b.Real
 					}),
 					i = Object(o.e)(e => Object(j.f)(e, {
-						provider: V.b.Stripe
+						provider: H.b.Stripe
 					})),
 					d = Object(o.e)(e => Object(j.f)(e, {
-						provider: V.b.PayPal
+						provider: H.b.PayPal
 					})),
 					u = e.isAnnualPremium ? E.fbt._("yearly", null, {
 						hk: "10Ao7X"
@@ -1505,7 +1505,7 @@
 					let {
 						stripe: r
 					} = t;
-					return a.a.createElement(H.a, {
+					return a.a.createElement(Q.a, {
 						nightmode: e.nightmode,
 						className: R.a.stripeForm,
 						stripe: r
@@ -2546,9 +2546,9 @@
 				i = r("./src/telemetry/models/Event.ts");
 			const d = (e, t) => ({
 					...Object(s.n)(e),
-					subreddit: Object(s.gb)(e),
-					profile: Object(s.Q)(e),
-					post: Object(s.H)(e, t),
+					subreddit: Object(s.hb)(e),
+					profile: Object(s.R)(e),
+					post: Object(s.I)(e, t),
 					comment: Object(s.h)(e, t)
 				}),
 				l = (e, t) => {
@@ -2573,9 +2573,9 @@
 				m = (e, t) => r => ({
 					action: "load",
 					noun: e,
-					post: Object(s.H)(r, t),
+					post: Object(s.I)(r, t),
 					source: i.b.ChatView,
-					subreddit: Object(s.gb)(r)
+					subreddit: Object(s.hb)(r)
 				}),
 				p = (e, t) => r => ({
 					...d(r, t),
@@ -2599,7 +2599,7 @@
 					source: "chat_post",
 					action: a.c.SUBMIT,
 					noun: "reply",
-					post: Object(s.H)(t, e),
+					post: Object(s.I)(t, e),
 					comment: Object(s.h)(t, e),
 					actionInfo: Object(s.d)(t, {
 						reason: "live_post",
@@ -2622,7 +2622,7 @@
 					source: "chat_post",
 					action: a.c.VIEW,
 					noun: "warning",
-					post: Object(s.H)(t, e),
+					post: Object(s.I)(t, e),
 					actionInfo: {
 						pageType: "spam_rate_countdown"
 					}
@@ -2632,7 +2632,7 @@
 					source: "chat_post",
 					action: a.c.CLOSE,
 					noun: "warning",
-					post: Object(s.H)(t, e),
+					post: Object(s.I)(t, e),
 					actionInfo: {
 						pageType: "spam_rate_countdown"
 					}
@@ -2704,9 +2704,9 @@
 				c = r("./src/reddit/helpers/trackers/gild.ts");
 			const s = e => ({
 					...a.n(e),
-					screen: a.Y(e),
-					subreddit: a.gb(e),
-					userSubreddit: a.qb(e)
+					screen: a.Z(e),
+					subreddit: a.hb(e),
+					userSubreddit: a.rb(e)
 				}),
 				i = e => ({
 					awardId: e.id,
@@ -2800,8 +2800,8 @@
 					action: "click",
 					noun: r,
 					goldPurchase: i(e),
-					profile: a.R(n, t),
-					subreddit: a.hb(n, t)
+					profile: a.S(n, t),
+					subreddit: a.ib(n, t)
 				}),
 				y = (e, t) => b(e, t, "disable_in_community"),
 				h = (e, t) => b(e, t, "enable_in_community")
@@ -2867,9 +2867,9 @@
 			})), r.d(t, "clickFilterEvent", (function() {
 				return q
 			})), r.d(t, "clickNextFiltersEvent", (function() {
-				return H
-			})), r.d(t, "clickPreviousFiltersEvent", (function() {
 				return Q
+			})), r.d(t, "clickPreviousFiltersEvent", (function() {
+				return W
 			}));
 			var n = r("./src/reddit/helpers/trackers/commentsChat.ts"),
 				a = r("./src/reddit/models/Gold/Award.ts"),
@@ -2900,10 +2900,10 @@
 						}),
 						comment: t ? c.h(e, t) : void 0,
 						correlationId: Object(l.b)(e) || Object(i.d)(i.a.GildingFlow, !1),
-						post: t ? c.H(e, t) : void 0,
-						screen: c.Y(e),
-						subreddit: c.gb(e),
-						userSubreddit: c.qb(e),
+						post: t ? c.I(e, t) : void 0,
+						screen: c.Z(e),
+						subreddit: c.hb(e),
+						userSubreddit: c.rb(e),
 						listing: t ? Object(n.i)(e, t) : void 0
 					}
 				},
@@ -3080,13 +3080,13 @@
 						filterName: e.content.markdown
 					}
 				}),
-				H = () => e => ({
+				Q = () => e => ({
 					...p(e),
 					source: "give_gold",
 					action: "click",
 					noun: "next_filters"
 				}),
-				Q = () => e => ({
+				W = () => e => ({
 					...p(e),
 					source: "give_gold",
 					action: "click",
@@ -3137,9 +3137,9 @@
 						...i.n(e),
 						comment: r ? i.h(e, r) : null,
 						correlationId: s.r(e) || Object(m.d)(m.a.GoldPayment, !1),
-						post: r ? i.H(e, r) : null,
-						screen: i.Y(e),
-						subreddit: r ? i.gb(e) : null,
+						post: r ? i.I(e, r) : null,
+						screen: i.Z(e),
+						subreddit: r ? i.hb(e) : null,
 						goldPurchase: {
 							...y ? Object(f.a)(y) : null,
 							type: g,
@@ -3571,4 +3571,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PremiumPurchaseModal.03a74fdd726b5b76f1dd.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PremiumPurchaseModal.5489581021efc800c03f.js.map

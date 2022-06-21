@@ -1,11 +1,11 @@
-// https://www.redditstatic.com/desktop2x/ClaimFreeAwardModal.da323a4ccc3cff846356.js
-// Retrieved at 5/12/2022, 3:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ClaimFreeAwardModal.0edd001c3ce05064e96f.js
+// Retrieved at 6/21/2022, 7:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ClaimFreeAwardModal"], {
 		"./src/reddit/actions/goldPurchaseModals/purchaseCatalog.ts": function(e, t, r) {
 			"use strict";
 			r.d(t, "b", (function() {
-				return h
+				return j
 			})), r.d(t, "c", (function() {
 				return g
 			})), r.d(t, "a", (function() {
@@ -28,8 +28,8 @@
 			const w = Object(o.a)(b.o),
 				O = Object(o.a)(b.n),
 				v = Object(o.a)(b.i),
-				j = Object(o.a)(b.j),
-				h = e => async (t, r, o) => {
+				h = Object(o.a)(b.j),
+				j = e => async (t, r, o) => {
 					let {
 						gqlContext: d
 					} = o;
@@ -50,7 +50,7 @@
 								}
 								return t.body
 							})(d());
-							t(v(e.data.coinpacks.offers[0])), t(j(e.data.premium.offers[0]))
+							t(v(e.data.coinpacks.offers[0])), t(h(e.data.premium.offers[0]))
 						} catch (l) {
 							Object(a.b)() || console.error(l), s.c.captureException(l);
 							const e = n.fbt._("There was an error fetching available products", null, {
@@ -59,7 +59,7 @@
 							t(O(e))
 						}
 					}
-				}, g = () => async e => e(h()), P = Object(o.a)(b.h), y = () => async (e, t, r) => {
+				}, g = () => async e => e(j()), P = Object(o.a)(b.h), y = () => async (e, t, r) => {
 					let {
 						gqlContext: o
 					} = r;
@@ -119,9 +119,9 @@
 				w = r("./src/reddit/components/LottieAnimation/util.ts"),
 				O = r("./src/reddit/components/ModalStyledComponents/index.tsx"),
 				v = r("./src/reddit/components/Econ/ClaimFreeAwardModal/index.m.less"),
-				j = r.n(v);
+				h = r.n(v);
 			const {
-				fbt: h
+				fbt: j
 			} = r("./node_modules/fbt/lib/FbtPublic.js"), g = "https://www.redditstatic.com/gold/awards/animations/free_award", P = (e, t) => {
 				var r;
 				return (null === (r = null == e ? void 0 : e.assets) || void 0 === r ? void 0 : r.length) && (null == t ? void 0 : t.icon) && (e.assets[0].u = t.icon.url, e.assets[0].p = ""), e
@@ -141,41 +141,41 @@
 				};
 				let y = !1;
 				return s.a.createElement(O.e, {
-					className: j.a.body
+					className: h.a.body
 				}, s.a.createElement("button", {
 					onClick: v,
-					className: j.a.closeButton
+					className: h.a.closeButton
 				}, s.a.createElement(O.b, null)), !r && s.a.createElement(s.a.Fragment, null, s.a.createElement(b.a, {
 					assetUrl: `${g}/flying.json`,
 					loop: !0,
-					className: j.a.flyingAnimation,
+					className: h.a.flyingAnimation,
 					onClick: () => {
 						y || (e(Object(l.a)("redeem")), t(Object(f.a)()), y = !0, setTimeout(() => {
 							y = !1
 						}, 1e4))
 					}
 				}), s.a.createElement("p", {
-					className: j.a.description
-				}, h._("Open it! Open it! (Just click, it’s easy)", null, {
+					className: h.a.description
+				}, j._("Open it! Open it! (Just click, it’s easy)", null, {
 					hk: "2RWqvN"
 				}))), r && n && s.a.createElement(s.a.Fragment, null, s.a.createElement(b.a, {
 					assetData: P(n, r),
-					className: j.a.openingAnimation,
+					className: h.a.openingAnimation,
 					onClick: a.a
 				}), s.a.createElement("h2", {
-					className: j.a.awardTitle
-				}, h._("It's the {awardName} Award!", [h._param("awardName", r.name)], {
+					className: h.a.awardTitle
+				}, j._("It's the {awardName} Award!", [j._param("awardName", r.name)], {
 					hk: "41wWKZ"
 				})), r.endsAt && s.a.createElement("p", {
-					className: j.a.awardDescription
-				}, h._("Give it away in the next {awardEndDate} before it disappears.", [h._param("awardEndDate", Object(i.a)(new Date(r.endsAt)))], {
+					className: h.a.awardDescription
+				}, j._("Give it away in the next {awardEndDate} before it disappears.", [j._param("awardEndDate", Object(i.a)(new Date(r.endsAt)))], {
 					hk: "gmYKH"
 				})), s.a.createElement("div", {
-					className: j.a.awardMore
+					className: h.a.awardMore
 				}, s.a.createElement(O.r, {
-					className: j.a.awardButton,
+					className: h.a.awardButton,
 					onClick: v
-				}, h._("Go Forth and Award", null, {
+				}, j._("Go Forth and Award", null, {
 					hk: "1OuNXO"
 				})))))
 			}))
@@ -198,8 +198,8 @@
 						offerContext: o.a.StorefrontFreeAward
 					}),
 					correlationId: Object(n.d)(n.a.GoldPayment, !1),
-					profile: s.Q(e),
-					subreddit: s.gb(e)
+					profile: s.R(e),
+					subreddit: s.hb(e)
 				}),
 				c = () => e => ({
 					source: "free_award_offer",
@@ -264,9 +264,9 @@
 			})), r.d(t, "e", (function() {
 				return v
 			})), r.d(t, "i", (function() {
-				return j
-			})), r.d(t, "h", (function() {
 				return h
+			})), r.d(t, "h", (function() {
+				return j
 			}));
 			var n = r("./node_modules/reselect/es/index.js"),
 				a = r("./src/lib/makeProductOfferKey/index.ts"),
@@ -318,15 +318,15 @@
 					return (null === (r = e.requiredPaymentProviders) || void 0 === r ? void 0 : r[0]) === t
 				})),
 				v = Object(n.a)(w, e => (null == e ? void 0 : e[0].price) || null),
-				j = Object(n.a)(e => {
+				h = Object(n.a)(e => {
 					var t;
 					return null === (t = e.user.productOfferSubscriptions) || void 0 === t ? void 0 : t.subscriptions
 				}, e => null == e ? void 0 : e[0]),
-				h = Object(n.a)(j, e => Boolean(null == e ? void 0 : e.isCanceled))
+				j = Object(n.a)(h, e => Boolean(null == e ? void 0 : e.isCanceled))
 		},
 		"./src/redditGQL/operations/PurchaseCatalogProductOffers.json": function(e) {
 			e.exports = JSON.parse('{"id":"098518521d5b"}')
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ClaimFreeAwardModal.da323a4ccc3cff846356.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ClaimFreeAwardModal.0edd001c3ce05064e96f.js.map

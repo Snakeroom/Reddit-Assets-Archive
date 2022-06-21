@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~Subreddit~SubredditWiki.ddabc497c4a131639a2f.js
-// Retrieved at 6/21/2022, 5:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~Subreddit~SubredditWiki.619e5ebf1b4c291c5b04.js
+// Retrieved at 6/21/2022, 7:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~Subreddit~SubredditWiki"], {
 		"./node_modules/lodash/random.js": function(e, t, r) {
@@ -3686,7 +3686,7 @@
 						source: i,
 						action: "confirm",
 						noun: "predict",
-						poll: Object(s.G)(e, t, !1, void 0, r),
+						poll: Object(s.H)(e, t, !1, void 0, r),
 						goldPurchase: {
 							numberCoins: n
 						}
@@ -3702,7 +3702,7 @@
 						source: i,
 						action: "confirm",
 						noun: "predict",
-						poll: Object(s.G)(e, t, !1, void 0, void 0, r)
+						poll: Object(s.H)(e, t, !1, void 0, void 0, r)
 					})
 				},
 				m = e => {
@@ -3719,7 +3719,7 @@
 							source: i,
 							action: "close",
 							noun: "prediction_modal",
-							poll: Object(s.G)(e, t, !1, o, d)
+							poll: Object(s.H)(e, t, !1, o, d)
 						}
 					}
 				},
@@ -3790,7 +3790,7 @@
 						value: e ? "1" : "0",
 						oldValue: e ? "0" : "1"
 					},
-					subreddit: Object(s.gb)(t)
+					subreddit: Object(s.hb)(t)
 				}),
 				w = () => e => ({
 					...Object(s.n)(e),
@@ -3821,14 +3821,14 @@
 					source: "predictions_tab",
 					action: "view",
 					noun: "predictions_how_it_works",
-					subreddit: Object(s.gb)(e)
+					subreddit: Object(s.hb)(e)
 				}),
 				O = () => e => ({
 					...Object(s.n)(e),
 					source: "predictions_how_it_works",
 					action: "click",
 					noun: "learn_more",
-					subreddit: Object(s.gb)(e)
+					subreddit: Object(s.hb)(e)
 				})
 		},
 		"./src/reddit/helpers/trackers/subredditWiki.ts": function(e, t, r) {
@@ -3874,8 +3874,8 @@
 				s = r("./src/reddit/selectors/telemetry.ts");
 			const i = e => ({
 					...s.n(e),
-					subreddit: s.gb(e),
-					userSubreddit: s.qb(e)
+					subreddit: s.hb(e),
+					userSubreddit: s.rb(e)
 				}),
 				a = () => e => ({
 					source: "wiki",
@@ -3959,7 +3959,7 @@
 					source: s.COMMUNITY_WIDGETS,
 					action: i.c.CLICK,
 					noun: n.SEE_MORE,
-					widget: Object(a.ub)(r, {
+					widget: Object(a.vb)(r, {
 						subredditId: e,
 						widgetKind: t
 					}),
@@ -3969,8 +3969,8 @@
 					source: s.POST,
 					action: i.c.CLICK,
 					noun: n.REREDDIT_PROMO,
-					post: a.H(r, e),
-					subreddit: a.gb(r),
+					post: a.I(r, e),
+					subreddit: a.hb(r),
 					...t && {
 						banner: {
 							buttonText: t,
@@ -4257,4 +4257,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~Subreddit~SubredditWiki.ddabc497c4a131639a2f.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~Subreddit~SubredditWiki.619e5ebf1b4c291c5b04.js.map

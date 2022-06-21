@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ContributorRequestRequestModal.e0dd5c97b4d1c653fb27.js
-// Retrieved at 4/25/2022, 12:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ContributorRequestRequestModal.5a6335fcf7488c2b8459.js
+// Retrieved at 6/21/2022, 7:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ContributorRequestRequestModal"], {
 		"./src/reddit/components/ContributorRequestFlow/RequestModal/index.m.less": function(e, t, a) {
@@ -51,9 +51,9 @@
 				E = a("./src/reddit/models/Theme/index.ts"),
 				q = a("./src/reddit/selectors/platform.ts"),
 				R = a("./src/reddit/selectors/structuredStyles.ts"),
-				g = a("./src/reddit/selectors/subreddit.ts"),
-				y = a("./src/reddit/components/ContributorRequestFlow/RequestModal/index.m.less"),
-				F = a.n(y),
+				y = a("./src/reddit/selectors/subreddit.ts"),
+				g = a("./src/reddit/components/ContributorRequestFlow/RequestModal/index.m.less"),
+				F = a.n(g),
 				I = a("./src/lib/lessComponent.tsx");
 			const S = I.a.wrapped(m.e, "ModalBody", F.a),
 				j = I.a.wrapped(m.i, "ModalHeader", F.a),
@@ -130,8 +130,8 @@
 				}
 			}
 			t.default = I.a.wrapped(Object(s.a)(Object(d.a)(Object(i.b)(() => Object(l.c)({
-				subredditAboutInfo: g.g,
-				restrictions: g.o,
+				subredditAboutInfo: y.g,
+				restrictions: y.o,
 				subreddit: q.e,
 				subredditIcon: R.b
 			}), e => ({
@@ -294,16 +294,16 @@
 					source: e,
 					action: "click",
 					noun: "request_restricted_approval_button",
-					subreddit: r.gb(t)
+					subreddit: r.hb(t)
 				}),
 				n = e => t => ({
 					...r.n(t),
 					source: "request_restricted_approval_form",
 					action: "click",
 					noun: e,
-					subreddit: r.gb(t)
+					subreddit: r.hb(t)
 				})
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ContributorRequestRequestModal.e0dd5c97b4d1c653fb27.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ContributorRequestRequestModal.5a6335fcf7488c2b8459.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-SubredditContent-PredictionsContent.b09d28e927f0cbf941dc.js
-// Retrieved at 5/5/2022, 9:50:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-SubredditContent-PredictionsContent.16df152ba03d6196d014.js
+// Retrieved at 6/21/2022, 7:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-SubredditContent-PredictionsContent"], {
 		"./src/reddit/components/Econ/Prediction/hooks/useTournamentsQuery.ts": function(e, t, n) {
@@ -432,7 +432,7 @@
 						source: c,
 						action: "confirm",
 						noun: "predict",
-						poll: Object(r.G)(e, t, !1, void 0, n),
+						poll: Object(r.H)(e, t, !1, void 0, n),
 						goldPurchase: {
 							numberCoins: o
 						}
@@ -448,7 +448,7 @@
 						source: c,
 						action: "confirm",
 						noun: "predict",
-						poll: Object(r.G)(e, t, !1, void 0, void 0, n)
+						poll: Object(r.H)(e, t, !1, void 0, void 0, n)
 					})
 				},
 				m = e => {
@@ -465,7 +465,7 @@
 							source: c,
 							action: "close",
 							noun: "prediction_modal",
-							poll: Object(r.G)(e, t, !1, i, a)
+							poll: Object(r.H)(e, t, !1, i, a)
 						}
 					}
 				},
@@ -536,7 +536,7 @@
 						value: e ? "1" : "0",
 						oldValue: e ? "0" : "1"
 					},
-					subreddit: Object(r.gb)(t)
+					subreddit: Object(r.hb)(t)
 				}),
 				O = () => e => ({
 					...Object(r.n)(e),
@@ -567,16 +567,16 @@
 					source: "predictions_tab",
 					action: "view",
 					noun: "predictions_how_it_works",
-					subreddit: Object(r.gb)(e)
+					subreddit: Object(r.hb)(e)
 				}),
 				C = () => e => ({
 					...Object(r.n)(e),
 					source: "predictions_how_it_works",
 					action: "click",
 					noun: "learn_more",
-					subreddit: Object(r.gb)(e)
+					subreddit: Object(r.hb)(e)
 				})
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-SubredditContent-PredictionsContent.b09d28e927f0cbf941dc.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-SubredditContent-PredictionsContent.16df152ba03d6196d014.js.map

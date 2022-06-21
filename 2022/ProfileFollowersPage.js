@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfileFollowersPage.5b583a668c80026c4129.js
-// Retrieved at 6/21/2022, 5:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfileFollowersPage.8342c57d67bf2062dd21.js
+// Retrieved at 6/21/2022, 7:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfileFollowersPage", "ProfileFollowersAction"], {
 		"./node_modules/lodash/take.js": function(e, t, r) {
@@ -4972,7 +4972,7 @@
 							actionInfo: Object(c.d)(t, {
 								paneName: "profile_about"
 							}),
-							profile: c.Q(t),
+							profile: c.R(t),
 							trophy: e
 						}))({
 							id: t.id,
@@ -6039,7 +6039,7 @@
 					source: s.COMMUNITY_WIDGETS,
 					action: i.c.CLICK,
 					noun: n.SEE_MORE,
-					widget: Object(o.ub)(r, {
+					widget: Object(o.vb)(r, {
 						subredditId: e,
 						widgetKind: t
 					}),
@@ -6049,8 +6049,8 @@
 					source: s.POST,
 					action: i.c.CLICK,
 					noun: n.REREDDIT_PROMO,
-					post: o.H(r, e),
-					subreddit: o.gb(r),
+					post: o.I(r, e),
+					subreddit: o.hb(r),
 					...t && {
 						banner: {
 							buttonText: t,
@@ -6793,4 +6793,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileFollowersPage.5b583a668c80026c4129.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileFollowersPage.8342c57d67bf2062dd21.js.map

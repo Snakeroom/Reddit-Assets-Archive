@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Frontpage~ModListing~Subreddit.a307612e76779dba6908.js
-// Retrieved at 6/21/2022, 5:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Frontpage~ModListing~Subreddit.c394e87a58343cc7d40b.js
+// Retrieved at 6/21/2022, 7:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Frontpage~ModListing~Subreddit"], {
 		"./src/reddit/actions/focusedVerticals/index.ts": function(e, t, n) {
@@ -500,8 +500,8 @@
 							source: "layout_switch",
 							action: "click",
 							noun: e,
-							screen: Object(S.Y)(t),
-							subreddit: Object(S.gb)(t)
+							screen: Object(S.Z)(t),
+							subreddit: Object(S.hb)(t)
 						})))
 					}, this.renderItem = (e, t) => {
 						const {
@@ -2231,4 +2231,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Frontpage~ModListing~Subreddit.a307612e76779dba6908.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Frontpage~ModListing~Subreddit.c394e87a58343cc7d40b.js.map

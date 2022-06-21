@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CommentsPage.2748b4d8f5ec7bf351a3.js
-// Retrieved at 6/21/2022, 5:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CommentsPage.a110b315f9008da5eb39.js
+// Retrieved at 6/21/2022, 7:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CommentsPage"], {
 		"./node_modules/lodash/_baseDelay.js": function(e, t) {
@@ -8046,7 +8046,7 @@
 						post: s
 					} = t;
 					return s
-				}, I.b, w.c, T.W, T.gb, (e, t, s, n, o) => {
+				}, I.b, w.c, T.X, T.hb, (e, t, s, n, o) => {
 					const r = !!e && void 0 !== e.isEligibleForLinkedPosts;
 					let i, a = "";
 					if (e && (i = {
@@ -9442,22 +9442,22 @@
 			var n = s("./src/reddit/selectors/telemetry.ts");
 			const o = (e, t) => ({
 					...Object(n.n)(e),
-					media: Object(n.A)(e, t),
-					profile: Object(n.Q)(e),
-					subreddit: Object(n.gb)(e) || Object(n.jb)(e, t)
+					media: Object(n.B)(e, t),
+					profile: Object(n.R)(e),
+					subreddit: Object(n.hb)(e) || Object(n.kb)(e, t)
 				}),
 				r = e => t => ({
 					source: "post",
 					action: "click",
 					noun: "other_discussions",
-					post: Object(n.H)(t, e),
+					post: Object(n.I)(t, e),
 					...o(t, e)
 				}),
 				i = e => t => ({
 					source: "other_discussions",
 					action: "click",
 					noun: "dismiss",
-					post: Object(n.H)(t, e),
+					post: Object(n.I)(t, e),
 					...o(t, e)
 				})
 		},
@@ -11440,4 +11440,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommentsPage.2748b4d8f5ec7bf351a3.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommentsPage.a110b315f9008da5eb39.js.map

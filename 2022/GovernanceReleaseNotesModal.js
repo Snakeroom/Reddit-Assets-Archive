@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/GovernanceReleaseNotesModal.3f01c22f4c7c17c2cf2e.js
-// Retrieved at 6/21/2022, 5:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/GovernanceReleaseNotesModal.75bf859a6a26c66a9b69.js
+// Retrieved at 6/21/2022, 7:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["GovernanceReleaseNotesModal"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -2169,7 +2169,7 @@
 									...n.actionInfo,
 									reason: this.props.node.id
 								},
-								subreddit: p.gb(t)
+								subreddit: p.hb(t)
 							}
 						})
 					}
@@ -2700,7 +2700,7 @@
 				h = e => ({
 					...u.n(e),
 					source: r,
-					screen: u.Y(e),
+					screen: u.Z(e),
 					discoveryUnit: {
 						id: "xd_100",
 						name: s.SUBREDDIT_HOVERCARD,
@@ -2745,8 +2745,8 @@
 					if (!n || !Object(a.b)(n) && !Object(i.b)(n)) return {};
 					const s = Object(a.b)(n) ? n.belongsTo.id : n.subredditId;
 					return {
-						post: u.H(e, n.id),
-						subreddit: u.hb(e, s),
+						post: u.I(e, n.id),
+						subreddit: u.ib(e, s),
 						...p(e, t)
 					}
 				},
@@ -2759,44 +2759,44 @@
 					source: "global",
 					action: o.c.VIEW,
 					noun: s.SUBREDDIT_HOVERCARD,
-					subreddit: u.ib(t, e),
-					screen: u.Y(t)
+					subreddit: u.jb(t, e),
+					screen: u.Z(t)
 				}),
 				g = (e, t) => n => ({
 					...h(n),
 					source: r.DISCOVERY_UNIT,
 					action: o.c.VIEW,
 					noun: s.ITEM_POST,
-					post: u.H(n, t),
-					subreddit: u.ib(n, e),
-					screen: u.Y(n)
+					post: u.I(n, t),
+					subreddit: u.jb(n, e),
+					screen: u.Z(n)
 				}),
 				v = (e, t) => n => ({
 					...h(n),
 					source: r.DISCOVERY_UNIT,
 					action: o.c.CLICK,
 					noun: s.ITEM_POST,
-					post: u.H(n, t),
-					subreddit: u.ib(n, e),
-					screen: u.Y(n)
+					post: u.I(n, t),
+					subreddit: u.jb(n, e),
+					screen: u.Z(n)
 				}),
 				_ = e => t => ({
 					...h(t),
-					subreddit: u.hb(t, e) || null,
+					subreddit: u.ib(t, e) || null,
 					source: r.DISCOVERY_UNIT,
 					action: o.c.CLICK,
 					noun: s.HEADER_SUBREDDIT
 				}),
 				y = e => t => ({
 					...h(t),
-					subreddit: u.hb(t, e) || null,
+					subreddit: u.ib(t, e) || null,
 					source: r.DISCOVERY_UNIT,
 					action: o.c.CLICK,
 					noun: s.HEADER_SUBREDDIT_SUBSCRIBE
 				}),
 				E = e => t => ({
 					...h(t),
-					subreddit: u.hb(t, e) || null,
+					subreddit: u.ib(t, e) || null,
 					source: r.DISCOVERY_UNIT,
 					action: o.c.CLICK,
 					noun: s.HEADER_SUBREDDIT_UNSUBSCRIBE
@@ -2947,4 +2947,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/GovernanceReleaseNotesModal.3f01c22f4c7c17c2cf2e.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/GovernanceReleaseNotesModal.75bf859a6a26c66a9b69.js.map

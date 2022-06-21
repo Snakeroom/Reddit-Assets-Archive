@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compo~bd4baca2.bc73c8211b2a43198d01.js
-// Retrieved at 6/21/2022, 5:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compo~bd4baca2.13ce04451547c96622ee.js
+// Retrieved at 6/21/2022, 7:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compo~bd4baca2"], {
 		"./src/lib/addAllowQuarantinedParam/index.ts": function(e, t, s) {
@@ -3033,14 +3033,14 @@
 						...i.n(s),
 						actionInfo: i.d(s),
 						correlationId: Object(r.c)(r.a.SearchResults),
-						post: i.H(s, e),
+						post: i.I(s, e),
 						search: {
-							...i.L(s, t),
+							...i.M(s, t),
 							query: o,
-							queryId: i.ab(s, n.a.SERP),
+							queryId: i.bb(s, n.a.SERP),
 							impressionId: a.a.get(n.a.SERP)
 						},
-						subreddit: i.gb(s)
+						subreddit: i.hb(s)
 					}
 				},
 				d = e => t => ({
@@ -3050,8 +3050,8 @@
 					...i.n(t),
 					actionInfo: i.d(t),
 					correlationId: Object(r.c)(r.a.SearchResults),
-					search: i.L(t, e),
-					subreddit: i.gb(t)
+					search: i.M(t, e),
+					subreddit: i.hb(t)
 				}),
 				l = e => t => {
 					const s = Object(o.g)(e);
@@ -3060,7 +3060,7 @@
 						action: "click",
 						noun: "post_flair",
 						source: "post_flair_widget",
-						subreddit: i.gb(t),
+						subreddit: i.hb(t),
 						postFlair: {
 							id: e.templateId,
 							title: s
@@ -3072,7 +3072,7 @@
 					action: "click",
 					noun: "overflow",
 					source: "post_flair_widget",
-					subreddit: i.gb(e)
+					subreddit: i.hb(e)
 				}),
 				m = e => t => {
 					const s = Object(o.g)(e);
@@ -3081,7 +3081,7 @@
 						action: "click",
 						noun: "clear",
 						source: "post_flair_widget",
-						subreddit: i.gb(t),
+						subreddit: i.hb(t),
 						postFlair: {
 							id: e.templateId,
 							title: s
@@ -3090,14 +3090,14 @@
 				},
 				b = (e, t) => s => {
 					const r = Object(o.g)(e),
-						c = i.H(s, t),
+						c = i.I(s, t),
 						d = `flair_name:'${r}'`;
 					return {
 						...i.n(s),
 						action: "click",
 						noun: "post_flair",
 						source: "post",
-						subreddit: i.gb(s),
+						subreddit: i.hb(s),
 						postFlair: {
 							id: e.templateId,
 							title: r
@@ -3109,7 +3109,7 @@
 							subredditName: c ? c.subredditName : void 0,
 							postFlairName: r,
 							originElement: "post_flair",
-							queryId: i.ab(s, n.a.SERP),
+							queryId: i.bb(s, n.a.SERP),
 							impressionId: a.a.get(n.a.SERP),
 							originPageType: s.platform.currentPage ? i.u(s.platform.currentPage) : void 0
 						},
@@ -3745,4 +3745,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compo~bd4baca2.bc73c8211b2a43198d01.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compo~bd4baca2.13ce04451547c96622ee.js.map

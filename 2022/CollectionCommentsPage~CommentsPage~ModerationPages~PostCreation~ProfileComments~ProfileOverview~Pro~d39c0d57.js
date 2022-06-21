@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ModerationPages~PostCreation~ProfileComments~ProfileOverview~Pro~d39c0d57.f0738721fc8bbcd1985a.js
-// Retrieved at 6/21/2022, 5:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ModerationPages~PostCreation~ProfileComments~ProfileOverview~Pro~d39c0d57.8ca5ecb698e58fbe8d77.js
+// Retrieved at 6/21/2022, 7:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~ModerationPages~PostCreation~ProfileComments~ProfileOverview~Pro~d39c0d57"], {
 		"./src/lib/unicodeUtils/index.ts": function(e, t, s) {
@@ -540,14 +540,14 @@
 
 				function P(e) {
 					var t;
-					(o || H(e), c) || (t = e.timeStamp, w(Object(u.A)(h, t)))
+					(o || D(e), c) || (t = e.timeStamp, w(Object(u.A)(h, t)))
 				}
 
 				function F(e) {
 					w(Object(u.q)(h, e.timeStamp))
 				}
 
-				function H(e) {
+				function D(e) {
 					! function(e) {
 						w(Object(u.D)({
 							metadata: e,
@@ -561,8 +561,8 @@
 					})
 				}
 
-				function D(e) {
-					n || P(e), o || H(e), w(Object(u.C)(h))
+				function H(e) {
+					n || P(e), o || D(e), w(Object(u.C)(h))
 				}
 
 				function U() {
@@ -578,9 +578,9 @@
 						onBufferingChange: N,
 						onLoadStart: F,
 						onLoadedData: P,
-						onLoadedMetadata: H,
+						onLoadedMetadata: D,
 						onPause: M,
-						onPlaying: D,
+						onPlaying: H,
 						onTimeUpdate: R,
 						shouldLoad: b,
 						shouldPause: g,
@@ -692,11 +692,11 @@
 					const n = `PostBadges--${e}--${t}`;
 					return s ? `${n}--${s}` : n
 				},
-				H = Object(h.u)({
+				D = Object(h.u)({
 					isProfilePostListing: h.L,
 					isSubreddit: h.O
 				}),
-				D = Object(a.c)({
+				H = Object(a.c)({
 					isPinned: (e, t) => {
 						let {
 							post: s
@@ -707,7 +707,7 @@
 					},
 					modModeEnabled: h.U
 				}),
-				U = Object(i.b)(D, (e, t) => ({
+				U = Object(i.b)(H, (e, t) => ({
 					onHideTooltip: () => e(Object(l.i)()),
 					onOpenRemovalReasonModal: () => {
 						s.e("removalReasonActions").then(s.bind(null, "./src/reddit/actions/removalReasons/index.ts")).then(s => e(s.fetchReasonsAndOpenModal(t.post.belongsTo.id, [t.post.id])))
@@ -716,7 +716,7 @@
 						tooltipId: t
 					}))
 				}));
-			t.a = H(U(e => {
+			t.a = D(U(e => {
 				let {
 					className: t,
 					displayText: s,
@@ -726,8 +726,8 @@
 					isPinned: h,
 					isProfilePostListing: k,
 					modModeEnabled: C,
-					onHideTooltip: H,
-					onOpenRemovalReasonModal: D,
+					onHideTooltip: D,
+					onOpenRemovalReasonModal: H,
 					onShowTooltip: U,
 					post: A,
 					tooltipType: W
@@ -739,8 +739,8 @@
 					G = F("Approve", A.id, W),
 					X = F("Archived", A.id, W),
 					q = F("Lock", A.id, W),
-					Y = F("Mod", A.id, W),
-					K = F("Remove", A.id, W),
+					K = F("Mod", A.id, W),
+					Y = F("Remove", A.id, W),
 					z = F("Report", A.id, W),
 					Z = F("Spam", A.id, W),
 					$ = F("Sticky", A.id, W),
@@ -752,7 +752,7 @@
 					isFilled: !0,
 					className: Object(c.a)(L.a.icon, L.a.modIcon)
 				}), o.a.createElement(u.c, T({
-					tooltipId: Y,
+					tooltipId: K,
 					text: B(s)
 				}, V))), A.isArchived && o.a.createElement(r.Fragment, null, o.a.createElement(g.a, {
 					isFilled: !0,
@@ -760,7 +760,7 @@
 					desc: N(),
 					id: X,
 					onMouseEnter: U(X),
-					onMouseLeave: H
+					onMouseLeave: D
 				}), o.a.createElement(u.c, T({
 					tooltipId: X,
 					text: N()
@@ -770,7 +770,7 @@
 					desc: M(),
 					id: q,
 					onMouseEnter: U(q),
-					onMouseLeave: H
+					onMouseLeave: D
 				}), o.a.createElement(u.c, T({
 					tooltipId: q,
 					text: M()
@@ -780,7 +780,7 @@
 					desc: R(),
 					id: $,
 					onMouseEnter: U($),
-					onMouseLeave: H
+					onMouseLeave: D
 				}), o.a.createElement(u.c, T({
 					tooltipId: $,
 					text: R()
@@ -790,7 +790,7 @@
 					desc: P(),
 					id: Q,
 					onMouseEnter: U(Q),
-					onMouseLeave: H
+					onMouseLeave: D
 				}), o.a.createElement(u.c, T({
 					tooltipId: Q,
 					text: P()
@@ -800,7 +800,7 @@
 					desc: Object(x.a)(A),
 					id: G,
 					onMouseEnter: U(G),
-					onMouseLeave: H
+					onMouseLeave: D
 				}), o.a.createElement(u.c, T({
 					tooltipId: G,
 					text: Object(x.a)(A)
@@ -808,22 +808,22 @@
 					isFilled: !0,
 					className: Object(c.a)(L.a.icon, L.a.removeIcon),
 					desc: Object(x.b)(A),
-					id: K,
-					onMouseEnter: U(K),
-					onMouseLeave: H
+					id: Y,
+					onMouseEnter: U(Y),
+					onMouseLeave: D
 				}), J && o.a.createElement(m.a, {
 					className: L.a.addRemovalReason,
-					onClick: D,
+					onClick: H,
 					text: n.fbt._("Add a removal reason", null, {
 						hk: "1YDo3"
 					})
 				}), (A.modRemovalReason || A.modNote) && o.a.createElement(w, {
-					onMouseEnter: U(K),
-					onMouseLeave: H
+					onMouseEnter: U(Y),
+					onMouseLeave: D
 				}, n.fbt._("Removal reason", null, {
 					hk: "2DhKVZ"
 				})), o.a.createElement(u.c, T({
-					tooltipId: K,
+					tooltipId: Y,
 					text: Object(x.b)(A)
 				}, V))), A.bannedBy && A.isSpam && o.a.createElement(r.Fragment, null, o.a.createElement(y.a, {
 					isFilled: !0,
@@ -831,7 +831,7 @@
 					desc: Object(x.d)(A),
 					id: Z,
 					onMouseEnter: U(Z),
-					onMouseLeave: H
+					onMouseLeave: D
 				}), o.a.createElement(u.c, T({
 					tooltipId: Z,
 					text: Object(x.d)(A)
@@ -841,7 +841,7 @@
 					desc: Object(x.c)(A.numReports),
 					id: z,
 					onMouseEnter: U(z),
-					onMouseLeave: H
+					onMouseLeave: D
 				}), o.a.createElement(u.c, T({
 					tooltipId: z,
 					text: Object(x.c)(A.numReports)
@@ -1620,9 +1620,9 @@
 			})), s.d(t, "f", (function() {
 				return P
 			})), s.d(t, "h", (function() {
-				return H
-			})), s.d(t, "g", (function() {
 				return D
+			})), s.d(t, "g", (function() {
+				return H
 			})), s.d(t, "i", (function() {
 				return U
 			})), s.d(t, "e", (function() {
@@ -1682,7 +1682,7 @@
 									...s.actionInfo,
 									reason: this.props.node.id
 								},
-								subreddit: h.gb(t)
+								subreddit: h.hb(t)
 							}
 						})
 					}
@@ -1785,12 +1785,12 @@
 						case p.p:
 							return P(e, t, s, n);
 						case p.u:
-							return D(e, t, s, n);
+							return H(e, t, s, n);
 						case p.z:
-							return H(e, t, s, n)
+							return D(e, t, s, n)
 					}
 				},
-				H = (e, t, s, n) => {
+				D = (e, t, s, n) => {
 					const r = e.c,
 						o = e.h,
 						i = r.length,
@@ -1832,7 +1832,7 @@
 						key: n
 					}, a.a.createElement("thead", null, a.a.createElement(c.t, null, l)), a.a.createElement("tbody", null, u))
 				},
-				D = (e, t, s, n) => {
+				H = (e, t, s, n) => {
 					if (!e.c || !e.c.length) return (e => a.a.createElement(c.j, {
 						key: e
 					}, a.a.createElement("br", null)))(n);
@@ -2423,7 +2423,7 @@
 				p = e => ({
 					...u.n(e),
 					source: r,
-					screen: u.Y(e),
+					screen: u.Z(e),
 					discoveryUnit: {
 						id: "xd_100",
 						name: n.SUBREDDIT_HOVERCARD,
@@ -2468,8 +2468,8 @@
 					if (!s || !Object(a.b)(s) && !Object(i.b)(s)) return {};
 					const n = Object(a.b)(s) ? s.belongsTo.id : s.subredditId;
 					return {
-						post: u.H(e, s.id),
-						subreddit: u.hb(e, n),
+						post: u.I(e, s.id),
+						subreddit: u.ib(e, n),
 						...h(e, t)
 					}
 				},
@@ -2482,44 +2482,44 @@
 					source: "global",
 					action: o.c.VIEW,
 					noun: n.SUBREDDIT_HOVERCARD,
-					subreddit: u.ib(t, e),
-					screen: u.Y(t)
+					subreddit: u.jb(t, e),
+					screen: u.Z(t)
 				}),
 				v = (e, t) => s => ({
 					...p(s),
 					source: r.DISCOVERY_UNIT,
 					action: o.c.VIEW,
 					noun: n.ITEM_POST,
-					post: u.H(s, t),
-					subreddit: u.ib(s, e),
-					screen: u.Y(s)
+					post: u.I(s, t),
+					subreddit: u.jb(s, e),
+					screen: u.Z(s)
 				}),
 				E = (e, t) => s => ({
 					...p(s),
 					source: r.DISCOVERY_UNIT,
 					action: o.c.CLICK,
 					noun: n.ITEM_POST,
-					post: u.H(s, t),
-					subreddit: u.ib(s, e),
-					screen: u.Y(s)
+					post: u.I(s, t),
+					subreddit: u.jb(s, e),
+					screen: u.Z(s)
 				}),
 				g = e => t => ({
 					...p(t),
-					subreddit: u.hb(t, e) || null,
+					subreddit: u.ib(t, e) || null,
 					source: r.DISCOVERY_UNIT,
 					action: o.c.CLICK,
 					noun: n.HEADER_SUBREDDIT
 				}),
 				_ = e => t => ({
 					...p(t),
-					subreddit: u.hb(t, e) || null,
+					subreddit: u.ib(t, e) || null,
 					source: r.DISCOVERY_UNIT,
 					action: o.c.CLICK,
 					noun: n.HEADER_SUBREDDIT_SUBSCRIBE
 				}),
 				j = e => t => ({
 					...p(t),
-					subreddit: u.hb(t, e) || null,
+					subreddit: u.ib(t, e) || null,
 					source: r.DISCOVERY_UNIT,
 					action: o.c.CLICK,
 					noun: n.HEADER_SUBREDDIT_UNSUBSCRIBE
@@ -2774,4 +2774,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ModerationPages~PostCreation~ProfileComments~ProfileOverview~Pro~d39c0d57.f0738721fc8bbcd1985a.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ModerationPages~PostCreation~ProfileComments~ProfileOverview~Pro~d39c0d57.8ca5ecb698e58fbe8d77.js.map

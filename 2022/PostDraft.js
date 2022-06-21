@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostDraft.45d5517d680bce7241ff.js
-// Retrieved at 6/21/2022, 5:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostDraft.1b3ec08fdead4b20d772.js
+// Retrieved at 6/21/2022, 7:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostDraft"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -2473,7 +2473,7 @@
 									...n.actionInfo,
 									reason: this.props.node.id
 								},
-								subreddit: h.gb(t)
+								subreddit: h.hb(t)
 							}
 						})
 					}
@@ -3946,15 +3946,15 @@
 					const n = {
 						...c.n(e),
 						action: o.c.CLICK,
-						subreddit: c.gb(e)
+						subreddit: c.hb(e)
 					};
 					return void 0 === t ? n : {
 						...n,
-						post: c.H(e, t),
-						postCollection: c.J(e, {
+						post: c.I(e, t),
+						postCollection: c.K(e, {
 							postId: t
 						}),
-						postEvent: c.K(e, {
+						postEvent: c.L(e, {
 							postId: t
 						})
 					}
@@ -3981,7 +3981,7 @@
 				}),
 				x = e => ({
 					...c.n(e),
-					subreddit: c.gb(e),
+					subreddit: c.hb(e),
 					source: s.postComposer
 				}),
 				g = (e, t) => n => ({
@@ -4014,11 +4014,11 @@
 				}),
 				k = e => t => ({
 					...c.n(t),
-					subreddit: c.gb(t),
+					subreddit: c.hb(t),
 					source: s.collectionComposer,
 					action: o.c.CLICK,
 					noun: r.collectionDelete,
-					postCollection: c.I(t, {
+					postCollection: c.J(t, {
 						collectionId: e
 					})
 				}),
@@ -4026,7 +4026,7 @@
 					...m(t),
 					source: s.collectionComposer,
 					noun: r.collectionEdit,
-					postCollection: c.I(t, {
+					postCollection: c.J(t, {
 						collectionId: e
 					})
 				}),
@@ -4083,7 +4083,7 @@
 						source: s.postComposer,
 						action: a.c.CLICK,
 						noun: "event_create",
-						subreddit: u.gb(e)
+						subreddit: u.hb(e)
 					})
 				},
 				b = e => {
@@ -4092,7 +4092,7 @@
 						source: s.postComposer,
 						action: a.c.CLICK,
 						noun: "event_edit",
-						subreddit: u.gb(e),
+						subreddit: u.hb(e),
 						postEvent: E(e),
 						postComposer: w(e)
 					})
@@ -4146,15 +4146,15 @@
 					const n = {
 						source: s.eventComposer,
 						action: a.c.CLICK,
-						subreddit: u.gb(e)
+						subreddit: u.hb(e)
 					};
 					return t ? {
 						...n,
-						post: u.H(e, t),
-						postEvent: u.K(e, {
+						post: u.I(e, t),
+						postEvent: u.L(e, {
 							postId: t
 						}),
-						postCollection: u.J(e, {
+						postCollection: u.K(e, {
 							postId: t
 						})
 					} : n
@@ -4199,7 +4199,7 @@
 				p = e => ({
 					...u.n(e),
 					source: r,
-					screen: u.Y(e),
+					screen: u.Z(e),
 					discoveryUnit: {
 						id: "xd_100",
 						name: s.SUBREDDIT_HOVERCARD,
@@ -4244,8 +4244,8 @@
 					if (!n || !Object(a.b)(n) && !Object(i.b)(n)) return {};
 					const s = Object(a.b)(n) ? n.belongsTo.id : n.subredditId;
 					return {
-						post: u.H(e, n.id),
-						subreddit: u.hb(e, s),
+						post: u.I(e, n.id),
+						subreddit: u.ib(e, s),
 						...h(e, t)
 					}
 				},
@@ -4258,44 +4258,44 @@
 					source: "global",
 					action: o.c.VIEW,
 					noun: s.SUBREDDIT_HOVERCARD,
-					subreddit: u.ib(t, e),
-					screen: u.Y(t)
+					subreddit: u.jb(t, e),
+					screen: u.Z(t)
 				}),
 				g = (e, t) => n => ({
 					...p(n),
 					source: r.DISCOVERY_UNIT,
 					action: o.c.VIEW,
 					noun: s.ITEM_POST,
-					post: u.H(n, t),
-					subreddit: u.ib(n, e),
-					screen: u.Y(n)
+					post: u.I(n, t),
+					subreddit: u.jb(n, e),
+					screen: u.Z(n)
 				}),
 				_ = (e, t) => n => ({
 					...p(n),
 					source: r.DISCOVERY_UNIT,
 					action: o.c.CLICK,
 					noun: s.ITEM_POST,
-					post: u.H(n, t),
-					subreddit: u.ib(n, e),
-					screen: u.Y(n)
+					post: u.I(n, t),
+					subreddit: u.jb(n, e),
+					screen: u.Z(n)
 				}),
 				E = e => t => ({
 					...p(t),
-					subreddit: u.hb(t, e) || null,
+					subreddit: u.ib(t, e) || null,
 					source: r.DISCOVERY_UNIT,
 					action: o.c.CLICK,
 					noun: s.HEADER_SUBREDDIT
 				}),
 				w = e => t => ({
 					...p(t),
-					subreddit: u.hb(t, e) || null,
+					subreddit: u.ib(t, e) || null,
 					source: r.DISCOVERY_UNIT,
 					action: o.c.CLICK,
 					noun: s.HEADER_SUBREDDIT_SUBSCRIBE
 				}),
 				v = e => t => ({
 					...p(t),
-					subreddit: u.hb(t, e) || null,
+					subreddit: u.ib(t, e) || null,
 					source: r.DISCOVERY_UNIT,
 					action: o.c.CLICK,
 					noun: s.HEADER_SUBREDDIT_UNSUBSCRIBE
@@ -4324,7 +4324,7 @@
 					source: r.COMMUNITY_WIDGETS,
 					action: o.c.CLICK,
 					noun: s.SEE_MORE,
-					widget: Object(i.ub)(n, {
+					widget: Object(i.vb)(n, {
 						subredditId: e,
 						widgetKind: t
 					}),
@@ -4334,8 +4334,8 @@
 					source: r.POST,
 					action: o.c.CLICK,
 					noun: s.REREDDIT_PROMO,
-					post: i.H(n, e),
-					subreddit: i.gb(n),
+					post: i.I(n, e),
+					subreddit: i.hb(n),
 					...t && {
 						banner: {
 							buttonText: t,
@@ -4852,4 +4852,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostDraft.45d5517d680bce7241ff.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostDraft.1b3ec08fdead4b20d772.js.map

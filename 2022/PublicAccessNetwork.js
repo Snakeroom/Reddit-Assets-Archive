@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PublicAccessNetwork.54a366e3b5c9f856315e.js
-// Retrieved at 6/21/2022, 5:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PublicAccessNetwork.37868b4e8e75b4298d9f.js
+// Retrieved at 6/21/2022, 7:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PublicAccessNetwork"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -4331,9 +4331,9 @@
 			}(o || (o = {}));
 			const i = (e, t) => {
 					if (t) {
-						const s = a.A(e, t.post.id),
-							o = a.H(e, t.post.id),
-							r = a.gb(e);
+						const s = a.B(e, t.post.id),
+							o = a.I(e, t.post.id),
+							r = a.hb(e);
 						if (t.post.authorInfo && o && (o.authorId = t.post.authorInfo.id), s) {
 							s.streamPublicId = t.stream.stream_id, s.id = t.stream.stream_id;
 							const o = Object(n.j)(e, {
@@ -4348,7 +4348,7 @@
 						}
 					}
 					return {
-						subreddit: a.gb(e)
+						subreddit: a.hb(e)
 					}
 				},
 				d = (e, t, s) => {
@@ -4526,8 +4526,8 @@
 					source: "post",
 					action: "view",
 					noun: "post",
-					profile: a.Q(t),
-					screen: a.Y(t),
+					profile: a.R(t),
+					screen: a.Z(t),
 					...i(t, e)
 				}),
 				I = e => t => {
@@ -4536,8 +4536,8 @@
 						source: "post",
 						action: "consume",
 						noun: "post",
-						profile: a.Q(t),
-						screen: a.Y(t),
+						profile: a.R(t),
+						screen: a.Z(t),
 						...s
 					}
 				},
@@ -4558,7 +4558,7 @@
 					action: "click",
 					noun: "subscribe",
 					...i(t, e),
-					targetSubreddit: a.gb(t)
+					targetSubreddit: a.hb(t)
 				}),
 				T = (e, t) => s => ({
 					source: "stream_player",
@@ -4645,7 +4645,7 @@
 				source: "post",
 				action: o.c.CLICK,
 				noun: "share_chat",
-				subreddit: Object(r.gb)(e)
+				subreddit: Object(r.hb)(e)
 			})
 		},
 		"./src/reddit/icons/fonts/Gift/index.tsx": function(e, t, s) {
@@ -5157,9 +5157,9 @@
 							source: e,
 							action: "click",
 							noun: o,
-							post: s && Object(ge.H)(r, s),
-							screen: Object(ge.Y)(r),
-							subreddit: Object(ge.hb)(r, t)
+							post: s && Object(ge.I)(r, s),
+							screen: Object(ge.Z)(r),
+							subreddit: Object(ge.ib)(r, t)
 						})))("removal_reasons", this.props.subredditId, this.props.postId)
 					})
 				}
@@ -7914,4 +7914,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PublicAccessNetwork.54a366e3b5c9f856315e.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PublicAccessNetwork.37868b4e8e75b4298d9f.js.map

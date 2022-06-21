@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SpecialMembershipsGifsTooltip.5d10afb266c259c45e29.js
-// Retrieved at 6/1/2022, 6:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SpecialMembershipsGifsTooltip.6b760d2c2c48199740d3.js
+// Retrieved at 6/21/2022, 7:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SpecialMembershipsGifsTooltip"], {
 		"./src/reddit/components/RichTextEditor/media/GifTooltip/BaseTooltip.m.less": function(e, t, s) {
@@ -532,7 +532,7 @@
 						source: "meta",
 						action: e,
 						noun: "transaction",
-						subreddit: Object(i.hb)(r, s),
+						subreddit: Object(i.ib)(r, s),
 						actionInfo: {
 							settingValue: t,
 							reason: n
@@ -548,7 +548,7 @@
 					source: "meta",
 					action: "open",
 					noun: "gif_tooltip",
-					subreddit: t ? Object(i.hb)(s, t) : void 0,
+					subreddit: t ? Object(i.ib)(s, t) : void 0,
 					correlationId: e,
 					...Object(i.n)(s)
 				}),
@@ -556,7 +556,7 @@
 					source: "meta",
 					action: "open",
 					noun: "gif_upsell",
-					subreddit: t ? Object(i.hb)(s, t) : void 0,
+					subreddit: t ? Object(i.ib)(s, t) : void 0,
 					correlationId: e,
 					...Object(i.n)(s)
 				})
@@ -574,7 +574,7 @@
 					action: "change",
 					noun: "gif_tooltip_search",
 					correlationId: s,
-					subreddit: t ? i.hb(o, t) : void 0,
+					subreddit: t ? i.ib(o, t) : void 0,
 					post: i.j(o),
 					search: {
 						query: e
@@ -589,7 +589,7 @@
 						action: "select",
 						noun: "gif_tooltip_result",
 						correlationId: s,
-						subreddit: t ? i.hb(o, t) : void 0,
+						subreddit: t ? i.ib(o, t) : void 0,
 						post: i.j(o),
 						actionInfo: {
 							...n.actionInfo,
@@ -615,4 +615,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SpecialMembershipsGifsTooltip.5d10afb266c259c45e29.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SpecialMembershipsGifsTooltip.6b760d2c2c48199740d3.js.map

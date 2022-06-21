@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditPremiumBadgeHovercardTooltip.e5a2602a4ed8498c94c0.js
-// Retrieved at 6/13/2022, 10:50:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditPremiumBadgeHovercardTooltip.71ca3fa7d3ec2077f123.js
+// Retrieved at 6/21/2022, 7:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditPremiumBadgeHovercardTooltip"], {
 		"./node_modules/lodash/_arrayShuffle.js": function(e, t, r) {
@@ -1046,7 +1046,7 @@
 								action: "click",
 								noun: "subscription_badge_hover_open_learn_more",
 								...E.n(e),
-								subreddit: E.gb(e)
+								subreddit: E.hb(e)
 							})), e.onOpen()
 						};
 					return s.a.createElement("footer", {
@@ -1096,7 +1096,7 @@
 								action: "click",
 								noun: "subscription_badge_hover_open_gallery",
 								...E.n(e),
-								subreddit: E.gb(e)
+								subreddit: E.hb(e)
 							})), e.onOpen()
 						}
 					}, S.fbt._("Get", null, {
@@ -1125,7 +1125,7 @@
 								action: "click",
 								noun: "lfg_badge_start_chat",
 								...E.n(e),
-								subreddit: E.gb(e)
+								subreddit: E.hb(e)
 							})), e.onStartChat()
 						}
 					}, S.fbt._("start chat", null, {
@@ -1175,7 +1175,7 @@
 						noun: "badges_hover_card",
 						correlationId: this.correlationId,
 						...E.n(e),
-						subreddit: E.gb(e)
+						subreddit: E.hb(e)
 					}))
 				}
 				render() {
@@ -2950,4 +2950,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditPremiumBadgeHovercardTooltip.e5a2602a4ed8498c94c0.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditPremiumBadgeHovercardTooltip.71ca3fa7d3ec2077f123.js.map

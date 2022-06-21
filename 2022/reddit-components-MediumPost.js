@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-MediumPost.aff7df6466222dcb5e4f.js
-// Retrieved at 6/21/2022, 5:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-MediumPost.573e2d9618b0fc83f4ee.js
+// Retrieved at 6/21/2022, 7:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-MediumPost"], {
 		"./src/higherOrderComponents/withClickTracking/index.tsx": function(e, t, s) {
@@ -38,7 +38,7 @@
 						}
 						return {
 							...o,
-							actionInfo: Object(i.P)(s, n)
+							actionInfo: Object(i.Q)(s, n)
 						}
 					})), u(n.target, n.currentTarget, l.anchorsAndButtons) && o(n)
 				}
@@ -1581,7 +1581,7 @@
 				i = s("./src/reddit/selectors/telemetry.ts");
 			const d = (e, t, s) => ({
 					gallery: i.r(e, t, s),
-					post: i.H(e, t),
+					post: i.I(e, t),
 					...i.n(e)
 				}),
 				a = (e, t) => s => ({
@@ -1589,7 +1589,7 @@
 					action: o.c.VIEW,
 					noun: "media",
 					source: "gallery",
-					media: i.A(s, e)
+					media: i.B(s, e)
 				}),
 				c = (e, t) => s => {
 					const a = Object(n.a)(t),
@@ -1600,7 +1600,7 @@
 						noun: "outbound_url",
 						source: "gallery",
 						media: {
-							...i.A(s, e),
+							...i.B(s, e),
 							outboundUrl: t,
 							outboundDomain: a ? a.hostname : void 0
 						}
@@ -1775,4 +1775,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-MediumPost.aff7df6466222dcb5e4f.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-MediumPost.573e2d9618b0fc83f4ee.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModQueue.4f9e257179cbff80ee3a.js
-// Retrieved at 6/21/2022, 5:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModQueue.77c5286d8ec27c478f27.js
+// Retrieved at 6/21/2022, 7:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModQueue"], {
 		"./src/reddit/actions/bulkActions/index.ts": function(e, t, s) {
@@ -257,7 +257,7 @@
 		"./src/reddit/actions/modQueue/index.ts": function(e, t, s) {
 			"use strict";
 			s.d(t, "e", (function() {
-				return Y
+				return Z
 			})), s.d(t, "d", (function() {
 				return ee
 			})), s.d(t, "f", (function() {
@@ -370,7 +370,7 @@
 				z = Object(n.a)(w.w),
 				W = Object(n.a)(w.v),
 				J = Object(n.a)(w.u),
-				Y = (e, t, s) => async (n, a, c) => {
+				Z = (e, t, s) => async (n, a, c) => {
 					let {
 						apiContext: l,
 						gqlContext: b
@@ -542,7 +542,7 @@
 							hk: "16O2Sk"
 						})
 					}))
-				}, Z = Object(n.a)(w.k), X = Object(n.a)(w.b), ee = e => async (t, s, r) => {
+				}, Y = Object(n.a)(w.k), X = Object(n.a)(w.b), ee = e => async (t, s, r) => {
 					let {
 						apiContext: n
 					} = r;
@@ -560,7 +560,7 @@
 					});
 					if (p.ok) {
 						const e = p.body;
-						t(Z(e)), e.moderatedAfter ? t(ee()) : t(X())
+						t(Y(e)), e.moderatedAfter ? t(ee()) : t(X())
 					} else t(Object(i.f)({
 						kind: x.b.Error,
 						text: o.fbt._("Oh no! Something went wrong!", null, {
@@ -586,7 +586,7 @@
 							count: f.length,
 							paneName: p.platform.currentPage ? p.platform.currentPage.urlParams.pageName : void 0
 						}),
-						screen: N.Y(p),
+						screen: N.Z(p),
 						correlationId: h
 					});
 					for (let t = 0; t < f.length; t++) {
@@ -602,10 +602,10 @@
 								paneName: p.platform.currentPage ? p.platform.currentPage.urlParams.pageName : void 0
 							}),
 							comment: N.h(p, s),
-							post: N.H(p, s),
-							profile: N.S(p, s),
-							screen: N.Y(p),
-							subreddit: N.jb(p, s),
+							post: N.I(p, s),
+							profile: N.T(p, s),
+							screen: N.Z(p),
+							subreddit: N.kb(p, s),
 							correlationId: h
 						})
 					}
@@ -822,7 +822,7 @@
 		"./src/reddit/actions/removalReasons/index.ts": function(e, t, s) {
 			"use strict";
 			s.r(t), s.d(t, "removalReasonsPending", (function() {
-				return Z
+				return Y
 			})), s.d(t, "removalReasonsLoaded", (function() {
 				return X
 			})), s.d(t, "removalReasonsFailed", (function() {
@@ -1081,13 +1081,13 @@
 				z = s("./src/reddit/models/RemovalReason/index.ts"),
 				W = s("./src/reddit/models/Toast/index.ts"),
 				J = s("./src/reddit/selectors/comments.ts"),
-				Y = s("./src/reddit/selectors/platform.ts");
+				Z = s("./src/reddit/selectors/platform.ts");
 			Object(r.a)({
 				features: {
 					removalReasons: k
 				}
 			});
-			const Z = Object(y.a)("REMOVALREASONS__LOAD_PENDING"),
+			const Y = Object(y.a)("REMOVALREASONS__LOAD_PENDING"),
 				X = Object(y.a)(a),
 				ee = Object(y.a)("REMOVALREASONS__LOAD_FAILED"),
 				te = e => async (t, s, o) => {
@@ -1095,7 +1095,7 @@
 						apiContext: r
 					} = o;
 					const n = s().subreddits.models[e].name;
-					t(Z());
+					t(Y());
 					const a = await ((e, t) => Object(T.a)(Object(Q.a)(e, [F.a]), {
 						endpoint: `${e.apiUrl}/api/v1/${t}/removal_reasons.json`,
 						method: E.jb.GET
@@ -1225,7 +1225,7 @@
 												comment: e,
 												parentId: m
 											},
-											s = Object(Y.f)(i),
+											s = Object(Z.f)(i),
 											o = i.platform.currentPage && i.platform.currentPage.routeMatch;
 										let r = s && o && Object(G.a)(o, i, i.posts.models[e.postId]);
 										if (r || (r = Object(A.a)(e.postId, null, {
@@ -1503,4 +1503,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModQueue.4f9e257179cbff80ee3a.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModQueue.77c5286d8ec27c478f27.js.map

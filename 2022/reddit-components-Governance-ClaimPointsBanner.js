@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Governance-ClaimPointsBanner.71cf5d2ea7fba564c946.js
-// Retrieved at 6/13/2022, 10:50:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Governance-ClaimPointsBanner.0420bce92674016dc234.js
+// Retrieved at 6/21/2022, 7:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Governance-ClaimPointsBanner"], {
 		"./src/lib/constants/specialMembership.ts": function(A, e, t) {
@@ -805,7 +805,7 @@
 					source: "meta",
 					action: A,
 					noun: "feed_claim_points_banner",
-					subreddit: Object(n.gb)(e)
+					subreddit: Object(n.hb)(e)
 				}),
 				r = () => i("view"),
 				s = () => i("tap"),
@@ -815,7 +815,7 @@
 					source: "meta",
 					action: "click",
 					noun: "cancel_membership_with_points",
-					subreddit: Object(n.hb)(e, A)
+					subreddit: Object(n.ib)(e, A)
 				})
 		},
 		"./src/reddit/models/Badge/managementPage.ts": function(A, e, t) {
@@ -1631,4 +1631,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Governance-ClaimPointsBanner.71cf5d2ea7fba564c946.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Governance-ClaimPointsBanner.0420bce92674016dc234.js.map

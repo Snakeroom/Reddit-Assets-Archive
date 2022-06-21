@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/index~reddit-components-Econ-Prediction.0170d60e41d6f4a99626.js
-// Retrieved at 6/13/2022, 10:50:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/index~reddit-components-Econ-Prediction.75e61cbfef5dea911977.js
+// Retrieved at 6/21/2022, 7:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["index~reddit-components-Econ-Prediction"], {
 		"./node_modules/lodash/_LazyWrapper.js": function(e, t, n) {
@@ -1137,9 +1137,9 @@
 			const L = "prediction_sneak_peek",
 				B = (e, t) => ({
 					...M.n(e),
-					post: M.H(e, t),
-					subreddit: M.gb(e),
-					predictions: M.N(e, t)
+					post: M.I(e, t),
+					subreddit: M.hb(e),
+					predictions: M.O(e, t)
 				});
 			var U = n("./src/reddit/hooks/useTracking.ts"),
 				D = n("./src/reddit/layout/twoCol/ExpandLeft/index.tsx"),
@@ -2911,7 +2911,7 @@
 						source: s,
 						action: "confirm",
 						noun: "predict",
-						poll: Object(o.G)(e, t, !1, void 0, n),
+						poll: Object(o.H)(e, t, !1, void 0, n),
 						goldPurchase: {
 							numberCoins: a
 						}
@@ -2927,7 +2927,7 @@
 						source: s,
 						action: "confirm",
 						noun: "predict",
-						poll: Object(o.G)(e, t, !1, void 0, void 0, n)
+						poll: Object(o.H)(e, t, !1, void 0, void 0, n)
 					})
 				},
 				m = e => {
@@ -2944,7 +2944,7 @@
 							source: s,
 							action: "close",
 							noun: "prediction_modal",
-							poll: Object(o.G)(e, t, !1, c, d)
+							poll: Object(o.H)(e, t, !1, c, d)
 						}
 					}
 				},
@@ -3015,7 +3015,7 @@
 						value: e ? "1" : "0",
 						oldValue: e ? "0" : "1"
 					},
-					subreddit: Object(o.gb)(t)
+					subreddit: Object(o.hb)(t)
 				}),
 				O = () => e => ({
 					...Object(o.n)(e),
@@ -3046,14 +3046,14 @@
 					source: "predictions_tab",
 					action: "view",
 					noun: "predictions_how_it_works",
-					subreddit: Object(o.gb)(e)
+					subreddit: Object(o.hb)(e)
 				}),
 				N = () => e => ({
 					...Object(o.n)(e),
 					source: "predictions_how_it_works",
 					action: "click",
 					noun: "learn_more",
-					subreddit: Object(o.gb)(e)
+					subreddit: Object(o.hb)(e)
 				})
 		},
 		"./src/reddit/hooks/useToast.tsx": function(e, t, n) {
@@ -3238,4 +3238,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/index~reddit-components-Econ-Prediction.0170d60e41d6f4a99626.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/index~reddit-components-Econ-Prediction.75e61cbfef5dea911977.js.map

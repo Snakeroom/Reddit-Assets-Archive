@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~Reddit.c2bb692625f5bddefc6a.js
-// Retrieved at 6/21/2022, 5:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~Reddit.9be672667d5ba406dbb0.js
+// Retrieved at 6/21/2022, 7:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~Reddit"], {
 		"./assets/fonts/NotoMono/font.less": function(e, t, n) {},
@@ -2112,7 +2112,7 @@
 						source: g.b.Chat,
 						action: g.a.OptOut,
 						noun: "down_to_chat_subreddit",
-						subreddit: Object(y.gb)(e),
+						subreddit: Object(y.hb)(e),
 						setting: {
 							oldValue: t,
 							value: n
@@ -2281,9 +2281,9 @@
 				O = n("./src/telemetry/index.ts");
 			const E = e => ({
 				...v.n(e),
-				screen: v.Y(e),
-				profile: v.Q(e),
-				subreddit: v.gb(e)
+				screen: v.Z(e),
+				profile: v.R(e),
+				subreddit: v.hb(e)
 			});
 			var _ = n("./src/reddit/helpers/trackers/postComposer.ts"),
 				I = n("./src/reddit/models/Gold/Powerups/index.ts"),
@@ -7092,7 +7092,7 @@
 					noun: "bottom",
 					...s.n(e),
 					listing: s.y(e, t),
-					subreddit: s.gb(e)
+					subreddit: s.hb(e)
 				})
 			}
 		},
@@ -26156,4 +26156,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit.c2bb692625f5bddefc6a.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit.9be672667d5ba406dbb0.js.map

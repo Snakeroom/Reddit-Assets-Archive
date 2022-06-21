@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ContributorRequestPendingModal.275b5af9c4fee9ad8923.js
-// Retrieved at 4/25/2022, 12:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ContributorRequestPendingModal.32dd4331e16042bb325e.js
+// Retrieved at 6/21/2022, 7:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ContributorRequestPendingModal", "ContributorRequestRequestModal"], {
 		"./src/reddit/components/ContributorRequestFlow/PendingModal/index.m.less": function(e, t, n) {
@@ -65,12 +65,12 @@
 				f = n.n(C),
 				h = n("./src/lib/lessComponent.tsx");
 			const E = h.a.div("DescriptionPending", f.a),
-				g = h.a.wrapped(u.e, "ModalBody", f.a),
-				y = Object(i.c)({
+				y = h.a.wrapped(u.e, "ModalBody", f.a),
+				g = Object(i.c)({
 					restrictions: F.o,
 					subreddit: x.e
 				}),
-				k = Object(a.b)(y, e => ({
+				k = Object(a.b)(g, e => ({
 					openContributorRequestPendingModal: () => e(Object(d.i)(m.a.CONTRIBUTOR_REQUEST_PENDING))
 				}));
 			class q extends s.a.Component {
@@ -82,7 +82,7 @@
 					} = this.props;
 					if (!n) return null;
 					const r = t === _.e.Comment ? _.a.Create : _.a.Draft;
-					return s.a.createElement(g, null, s.a.createElement(c.ModalHeader, null, s.a.createElement(b.a, null, s.a.createElement(c.ModalTitle, null, o.fbt._("Request sent and pending...", null, {
+					return s.a.createElement(y, null, s.a.createElement(c.ModalHeader, null, s.a.createElement(b.a, null, s.a.createElement(c.ModalTitle, null, o.fbt._("Request sent and pending...", null, {
 						hk: "8x2US"
 					})), s.a.createElement(p.a, {
 						onClick: () => e()
@@ -144,8 +144,8 @@
 				f = n("./src/reddit/layout/twoCol/ExpandLeft/index.tsx"),
 				h = n("./src/reddit/models/SubredditRestrictions/index.ts"),
 				E = n("./src/reddit/models/Theme/index.ts"),
-				g = n("./src/reddit/selectors/platform.ts"),
-				y = n("./src/reddit/selectors/structuredStyles.ts"),
+				y = n("./src/reddit/selectors/platform.ts"),
+				g = n("./src/reddit/selectors/structuredStyles.ts"),
 				k = n("./src/reddit/selectors/subreddit.ts"),
 				q = n("./src/reddit/components/ContributorRequestFlow/RequestModal/index.m.less"),
 				R = n.n(q),
@@ -227,8 +227,8 @@
 			t.default = M.a.wrapped(Object(r.a)(Object(d.a)(Object(i.b)(() => Object(l.c)({
 				subredditAboutInfo: k.g,
 				restrictions: k.o,
-				subreddit: g.e,
-				subredditIcon: y.b
+				subreddit: y.e,
+				subredditIcon: g.b
 			}), e => ({
 				makeContributorRequest: (t, n, o) => e(Object(u.n)(t, n, o)),
 				toggleContributorRequestModal: () => e(Object(c.i)(x.a.CONTRIBUTOR_REQUEST))
@@ -389,16 +389,16 @@
 					source: e,
 					action: "click",
 					noun: "request_restricted_approval_button",
-					subreddit: o.gb(t)
+					subreddit: o.hb(t)
 				}),
 				s = e => t => ({
 					...o.n(t),
 					source: "request_restricted_approval_form",
 					action: "click",
 					noun: e,
-					subreddit: o.gb(t)
+					subreddit: o.hb(t)
 				})
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ContributorRequestPendingModal.275b5af9c4fee9ad8923.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ContributorRequestPendingModal.32dd4331e16042bb325e.js.map

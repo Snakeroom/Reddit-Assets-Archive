@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ModerationPages~ProfileComments~ProfileOverview~ProfilePrivate~R~969c2956.778d53287dd26438a963.js
-// Retrieved at 6/21/2022, 5:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ModerationPages~ProfileComments~ProfileOverview~ProfilePrivate~R~969c2956.1fded9acb4c277476c37.js
+// Retrieved at 6/21/2022, 7:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~ModerationPages~ProfileComments~ProfileOverview~ProfilePrivate~R~969c2956"], {
 		"./src/reddit/actions/eventPosts/index.ts": function(e, t, s) {
@@ -4286,8 +4286,8 @@
 						offerContext: r.a.StorefrontFreeAward
 					}),
 					correlationId: Object(o.d)(o.a.GoldPayment, !1),
-					profile: i.Q(e),
-					subreddit: i.gb(e)
+					profile: i.R(e),
+					subreddit: i.hb(e)
 				}),
 				c = () => e => ({
 					source: "free_award_offer",
@@ -4386,15 +4386,15 @@
 					const s = {
 						...c.n(e),
 						action: r.c.CLICK,
-						subreddit: c.gb(e)
+						subreddit: c.hb(e)
 					};
 					return void 0 === t ? s : {
 						...s,
-						post: c.H(e, t),
-						postCollection: c.J(e, {
+						post: c.I(e, t),
+						postCollection: c.K(e, {
 							postId: t
 						}),
-						postEvent: c.K(e, {
+						postEvent: c.L(e, {
 							postId: t
 						})
 					}
@@ -4421,7 +4421,7 @@
 				}),
 				f = e => ({
 					...c.n(e),
-					subreddit: c.gb(e),
+					subreddit: c.hb(e),
 					source: o.postComposer
 				}),
 				O = (e, t) => s => ({
@@ -4454,11 +4454,11 @@
 				}),
 				j = e => t => ({
 					...c.n(t),
-					subreddit: c.gb(t),
+					subreddit: c.hb(t),
 					source: o.collectionComposer,
 					action: r.c.CLICK,
 					noun: n.collectionDelete,
-					postCollection: c.I(t, {
+					postCollection: c.J(t, {
 						collectionId: e
 					})
 				}),
@@ -4466,7 +4466,7 @@
 					...m(t),
 					source: o.collectionComposer,
 					noun: n.collectionEdit,
-					postCollection: c.I(t, {
+					postCollection: c.J(t, {
 						collectionId: e
 					})
 				}),
@@ -4523,7 +4523,7 @@
 						source: o.postComposer,
 						action: a.c.CLICK,
 						noun: "event_create",
-						subreddit: p.gb(e)
+						subreddit: p.hb(e)
 					})
 				},
 				h = e => {
@@ -4532,7 +4532,7 @@
 						source: o.postComposer,
 						action: a.c.CLICK,
 						noun: "event_edit",
-						subreddit: p.gb(e),
+						subreddit: p.hb(e),
 						postEvent: v(e),
 						postComposer: g(e)
 					})
@@ -4586,15 +4586,15 @@
 					const s = {
 						source: o.eventComposer,
 						action: a.c.CLICK,
-						subreddit: p.gb(e)
+						subreddit: p.hb(e)
 					};
 					return t ? {
 						...s,
-						post: p.H(e, t),
-						postEvent: p.K(e, {
+						post: p.I(e, t),
+						postEvent: p.L(e, {
 							postId: t
 						}),
-						postCollection: p.J(e, {
+						postCollection: p.K(e, {
 							postId: t
 						})
 					} : s
@@ -4612,7 +4612,7 @@
 				source: "post",
 				action: o.c.CLICK,
 				noun: "share_chat",
-				subreddit: Object(n.gb)(e)
+				subreddit: Object(n.hb)(e)
 			})
 		},
 		"./src/reddit/icons/fonts/Comment/index.tsx": function(e, t, s) {
@@ -4851,4 +4851,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ModerationPages~ProfileComments~ProfileOverview~ProfilePrivate~R~969c2956.778d53287dd26438a963.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ModerationPages~ProfileComments~ProfileOverview~ProfilePrivate~R~969c2956.1fded9acb4c277476c37.js.map

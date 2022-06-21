@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~Reddit~Subreddit.1bc7e03fea2bf85f4377.js
-// Retrieved at 6/21/2022, 5:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~Reddit~Subreddit.71a892391ffd477f6c26.js
+// Retrieved at 6/21/2022, 7:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~Reddit~Subreddit"], {
 		"./src/lib/CSSVariableProvider/withTheme.tsx": function(e, t, n) {
@@ -343,15 +343,15 @@
 			})), n.d(t, "i", (function() {
 				return F
 			})), n.d(t, "f", (function() {
-				return H
-			})), n.d(t, "c", (function() {
 				return G
+			})), n.d(t, "c", (function() {
+				return H
 			})), n.d(t, "a", (function() {
 				return V
 			})), n.d(t, "h", (function() {
-				return q
-			})), n.d(t, "j", (function() {
 				return K
+			})), n.d(t, "j", (function() {
+				return q
 			})), n.d(t, "g", (function() {
 				return Q
 			}));
@@ -507,7 +507,7 @@
 					}), C.b.SuccessCommunityGreen)))) : n(Object(a.f)(Object(a.e)(r.fbt._("Failed to undo hiding notifications, please try again.", null, {
 						hk: "4jo7Pf"
 					}), C.b.Error)))
-				}, H = (e, t) => async (n, o, i) => {
+				}, G = (e, t) => async (n, o, i) => {
 					let {
 						gqlContext: s
 					} = i;
@@ -525,7 +525,7 @@
 					})()) : n(Object(a.f)(Object(a.e)(r.fbt._("Failed to hide notifications, please try again.", null, {
 						hk: "KEGcB"
 					}), C.b.Error)))
-				}, G = e => async (t, n, o) => {
+				}, H = e => async (t, n, o) => {
 					let {
 						apiContext: i
 					} = o;
@@ -553,7 +553,7 @@
 					}), C.b.SuccessCommunityGreen))) : t(Object(a.f)(Object(a.e)(r.fbt._("Failed to block awarder, please try again", null, {
 						hk: "2dxeA8"
 					}), C.b.Error)))
-				}, W = Object(o.a)(s.d), q = (e, t) => async (n, r, o) => {
+				}, W = Object(o.a)(s.d), K = (e, t) => async (n, r, o) => {
 					let s, {
 						apiContext: a
 					} = o;
@@ -589,7 +589,7 @@
 							now: t
 						}))
 					}
-				}, K = () => async (e, t, n) => {
+				}, q = () => async (e, t, n) => {
 					let {
 						gqlContext: r
 					} = n;
@@ -1340,7 +1340,7 @@
 					iconUrl: b && n ? "https://www.redditstatic.com/avatars/defaults/v2/avatar_default_3.png" : k,
 					isCurrentUser: U,
 					isNSFW: A
-				})), [F, H] = Object(o.useState)(!1), G = Object(o.useMemo)(() => ({
+				})), [F, G] = Object(o.useState)(!1), H = Object(o.useMemo)(() => ({
 					input: {
 						channel: {
 							teamOwner: "CONTENT_AND_COMMUNITIES",
@@ -1352,14 +1352,14 @@
 					const {
 						isOnline: t
 					} = e.subscribe.data;
-					H(t)
-				}, []), W = Object(o.useRef)(null), [q, K] = Object(o.useState)(!1), Y = Object(o.useCallback)(e => {
+					G(t)
+				}, []), W = Object(o.useRef)(null), [K, q] = Object(o.useState)(!1), Y = Object(o.useCallback)(e => {
 					e.forEach(e => {
 						const {
 							isIntersecting: t,
 							intersectionRatio: n
 						} = e, r = 1 !== n;
-						t ? K(!0) : r && K(!1)
+						t ? q(!0) : r && q(!1)
 					})
 				}, []), Q = Object(o.useRef)({
 					rootMargin: "750px 0px 1000px 0px"
@@ -1376,8 +1376,8 @@
 					showPresence: !0,
 					isHighlighted: f,
 					onceInViewport: v
-				}), (y || T) && !x && q && i.a.createElement(a.a, {
-					variables: G,
+				}), (y || T) && !x && K && i.a.createElement(a.a, {
+					variables: H,
 					onData: y ? V : h,
 					queryKey: "isUserOnline"
 				}))
@@ -1663,11 +1663,11 @@
 			})), n.d(t, "o", (function() {
 				return F
 			})), n.d(t, "r", (function() {
-				return H
+				return G
 			})), n.d(t, "m", (function() {
-				return q
-			})), n.d(t, "g", (function() {
 				return K
+			})), n.d(t, "g", (function() {
+				return q
 			})), n.d(t, "l", (function() {
 				return Y
 			})), n.d(t, "e", (function() {
@@ -1709,7 +1709,7 @@
 				_ = (e, t, n) => ({
 					...b.n(e),
 					source: O,
-					screen: b.Y(e),
+					screen: b.Z(e),
 					discoveryUnit: {
 						id: t.id,
 						type: t.unitType,
@@ -1732,9 +1732,9 @@
 				g = (e, t, n, r) => "unitName" in t ? _(e, t, r) : ((e, t, n) => ({
 					...b.n(e),
 					source: "search",
-					screen: b.Y(e),
+					screen: b.Z(e),
 					search: n ? {
-						...b.Z(e, n, c.a.SERP),
+						...b.ab(e, n, c.a.SERP),
 						structureType: b.c.Trending
 					} : null,
 					discoveryUnit: {
@@ -1748,7 +1748,7 @@
 					...g(e, t, o, i),
 					action: "view",
 					noun: r.ITEM_POST,
-					post: b.H(e, n)
+					post: b.I(e, n)
 				}),
 				h = e => {
 					let {
@@ -1819,7 +1819,7 @@
 							query: s.rawQuery,
 							structureType: b.c.Trending,
 							impressionId: I.a.get(i),
-							queryId: b.ab(o, i)
+							queryId: b.bb(o, i)
 						}
 					}
 				},
@@ -1859,7 +1859,7 @@
 						source: O,
 						action: s.c.CLICK,
 						noun: r.ITEM_POST,
-						post: b.H(i, t)
+						post: b.I(i, t)
 					}
 				},
 				A = function() {
@@ -1888,12 +1888,12 @@
 					source: O,
 					action: s.c.CLICK,
 					noun: r.ITEM_POST,
-					post: b.H(o, n)
+					post: b.I(o, n)
 				}),
-				H = (e, t, n, r) => {
-					Object(p.a)(G(t, n, r)(e))
+				G = (e, t, n, r) => {
+					Object(p.a)(H(t, n, r)(e))
 				},
-				G = (e, t, n, r) => o => {
+				H = (e, t, n, r) => o => {
 					const i = Object(l.c)(o, {
 							postId: t
 						}),
@@ -1904,7 +1904,7 @@
 						source: O,
 						action: s.c.CLICK,
 						noun: "item_post_subreddit",
-						post: b.H(o, t)
+						post: b.I(o, t)
 					}
 				},
 				V = () => ({
@@ -1921,15 +1921,15 @@
 				W = (e, t, n) => b.d(e, {
 					position: n
 				}),
-				q = (e, t, n) => {
+				K = (e, t, n) => {
 					const r = V();
 					return e => ({
 						...E(e, r),
 						actionInfo: W(e, 0, n),
-						subreddit: b.hb(e, t)
+						subreddit: b.ib(e, t)
 					})
 				},
-				K = (e, t, n) => {
+				q = (e, t, n) => {
 					const r = V();
 					return e => ({
 						...N(e, r, t),
@@ -1941,7 +1941,7 @@
 					return e => ({
 						..._(e, o),
 						actionInfo: W(e, 0, n),
-						subreddit: b.hb(e, t) || null,
+						subreddit: b.ib(e, t) || null,
 						source: O,
 						action: s.c.VIEW,
 						noun: r.ITEM_SUBREDDIT
@@ -1952,7 +1952,7 @@
 					return e => ({
 						..._(e, o),
 						actionInfo: W(e, 0, n),
-						post: b.H(e, t) || null,
+						post: b.I(e, t) || null,
 						source: O,
 						action: s.c.CLICK,
 						noun: r.ITEM_POST
@@ -1963,8 +1963,8 @@
 					return e => ({
 						..._(e, i),
 						actionInfo: W(e, 0, o),
-						subreddit: b.hb(e, n) || null,
-						post: b.H(e, t) || null,
+						subreddit: b.ib(e, n) || null,
+						post: b.I(e, t) || null,
 						source: O,
 						action: s.c.CLICK,
 						noun: r.ITEM_POST_SUBREDDIT
@@ -1975,7 +1975,7 @@
 					return e => ({
 						..._(e, o),
 						actionInfo: W(e, 0, n),
-						subreddit: b.hb(e, t) || null,
+						subreddit: b.ib(e, t) || null,
 						source: O,
 						action: s.c.CLICK,
 						noun: r.ITEM_SUBREDDIT
@@ -1986,8 +1986,8 @@
 					return e => ({
 						..._(e, i),
 						actionInfo: W(e, 0, n),
-						subreddit: b.hb(e, t) || null,
-						post: o ? b.H(e, o) : null,
+						subreddit: b.ib(e, t) || null,
+						post: o ? b.I(e, o) : null,
 						source: O,
 						action: s.c.CLICK,
 						noun: r.ITEM_SUBREDDIT_SUBSCRIBE
@@ -1998,8 +1998,8 @@
 					return e => ({
 						..._(e, i),
 						actionInfo: W(e, 0, n),
-						subreddit: b.hb(e, t) || null,
-						post: o ? b.H(e, o) : null,
+						subreddit: b.ib(e, t) || null,
+						post: o ? b.I(e, o) : null,
 						source: O,
 						action: s.c.CLICK,
 						noun: r.ITEM_SUBREDDIT_UNSUBSCRIBE
@@ -2010,7 +2010,7 @@
 					return e => ({
 						..._(e, o),
 						actionInfo: W(e, 0, n),
-						subreddit: b.hb(e, t) || null,
+						subreddit: b.ib(e, t) || null,
 						source: O,
 						action: s.c.CLICK,
 						noun: r.ITEM_SUBREDDIT_HIDE
@@ -2021,7 +2021,7 @@
 					return e => ({
 						..._(e, o),
 						actionInfo: W(e, 0, n),
-						subreddit: b.hb(e, t) || null,
+						subreddit: b.ib(e, t) || null,
 						source: O,
 						action: s.c.CLICK,
 						noun: r.HEADER_SUBREDDIT
@@ -2536,9 +2536,9 @@
 			})), n.d(t, "g", (function() {
 				return B
 			})), n.d(t, "b", (function() {
-				return H
-			})), n.d(t, "a", (function() {
 				return G
+			})), n.d(t, "a", (function() {
+				return H
 			})), n.d(t, "n", (function() {
 				return V
 			})), n.d(t, "m", (function() {
@@ -2694,7 +2694,7 @@
 							break;
 						case i.Nb.SETTINGS: {
 							const o = e;
-							Object(T.a)(K(n, r)(t)), o.match.params.page === i.dc.Profile && Object(b.l)(t);
+							Object(T.a)(q(n, r)(t)), o.match.params.page === i.dc.Profile && Object(b.l)(t);
 							break
 						}
 						case i.Nb.POST_CREATION:
@@ -2715,13 +2715,13 @@
 							Object(T.a)(X(n, r)(t));
 							break;
 						case i.Nb.COINS:
-							Object(T.a)(H(n, r)(t)), Object(T.a)(G()(t));
+							Object(T.a)(G(n, r)(t)), Object(T.a)(H()(t));
 							break;
 						case i.Nb.PREMIUM:
 							Object(T.a)(V(n, r)(t)), Object(T.a)(W()(t));
 							break;
 						case i.Nb.APPEAL:
-							Object(T.a)(q(n, r)(t));
+							Object(T.a)(K(n, r)(t));
 							break;
 						case i.Nb.INBOX_PAGES:
 							l && B(t);
@@ -2760,7 +2760,7 @@
 				},
 				j = e => ({
 					...h.n(e),
-					userPreferences: h.pb(e)
+					userPreferences: h.qb(e)
 				}),
 				v = e => {
 					let {
@@ -2793,14 +2793,14 @@
 								sort: n,
 								sortTime: i
 							}),
-							subreddit: h.gb(e),
-							timer: h.mb(r, o),
-							userSubreddit: h.qb(e),
+							subreddit: h.hb(e),
+							timer: h.nb(r, o),
+							userSubreddit: h.rb(e),
 							adblock: h.e(e),
 							postFlair: {
 								title: s
 							},
-							predictions: c ? Object(h.O)(e) : void 0
+							predictions: c ? Object(h.P)(e) : void 0
 						}
 					}
 				},
@@ -2819,11 +2819,11 @@
 						actionInfo: h.d(i, {
 							success: a
 						}),
-						profile: h.Q(i),
-						snoovatar: h.db(i),
-						subreddit: h.gb(i),
-						timer: h.mb(n, r),
-						userSubreddit: h.qb(i),
+						profile: h.R(i),
+						snoovatar: h.eb(i),
+						subreddit: h.hb(i),
+						timer: h.nb(n, r),
+						userSubreddit: h.rb(i),
 						adblock: h.e(i)
 					}
 				},
@@ -2842,15 +2842,15 @@
 						actionInfo: h.d(i, {
 							success: a
 						}),
-						profile: h.Q(i),
-						subreddit: h.gb(i),
-						timer: h.mb(n, r),
-						userSubreddit: h.qb(i),
+						profile: h.R(i),
+						subreddit: h.hb(i),
+						timer: h.nb(n, r),
+						userSubreddit: h.rb(i),
 						adblock: h.e(i)
 					}
 				},
 				D = (e, t, n, r, o) => i => {
-					const s = h.T(i, e);
+					const s = h.U(i, e);
 					s && (s.sort = t, o && (s.sortTime = o));
 					const {
 						api: c
@@ -2864,10 +2864,10 @@
 						actionInfo: h.d(i, {
 							success: a
 						}),
-						profile: h.Q(i),
-						subreddit: h.gb(i),
-						timer: h.mb(n, r),
-						userSubreddit: h.qb(i),
+						profile: h.R(i),
+						subreddit: h.hb(i),
+						timer: h.nb(n, r),
+						userSubreddit: h.rb(i),
 						adblock: h.e(i)
 					}
 				},
@@ -2881,10 +2881,10 @@
 						actionInfo: h.d(r, {
 							success: o
 						}),
-						profile: h.Q(r),
-						subreddit: h.gb(r),
-						timer: h.mb(n, t),
-						userSubreddit: h.qb(r),
+						profile: h.R(r),
+						subreddit: h.hb(r),
+						timer: h.nb(n, t),
+						userSubreddit: h.rb(r),
 						adblock: h.e(r)
 					}
 				},
@@ -2899,16 +2899,16 @@
 						actionInfo: h.d(s, {
 							success: a
 						}),
-						post: h.H(s, t),
-						profile: h.Q(s),
-						subreddit: h.gb(s),
-						timer: h.mb(r, o),
-						userSubreddit: h.qb(s),
+						post: h.I(s, t),
+						profile: h.R(s),
+						subreddit: h.hb(s),
+						timer: h.nb(r, o),
+						userSubreddit: h.rb(s),
 						adblock: h.e(s),
-						postEvent: h.K(s, {
+						postEvent: h.L(s, {
 							postId: t
 						}),
-						postCollection: h.J(s, {
+						postCollection: h.K(s, {
 							postId: t
 						}),
 						listing: h.y(s, void 0, {
@@ -2928,10 +2928,10 @@
 						actionInfo: h.d(r, {
 							success: o
 						}),
-						post: i ? h.H(r, i) : void 0,
-						subreddit: h.gb(r),
-						timer: h.mb(t, n),
-						userSubreddit: h.qb(r),
+						post: i ? h.I(r, i) : void 0,
+						subreddit: h.hb(r),
+						timer: h.nb(t, n),
+						userSubreddit: h.rb(r),
 						adblock: h.e(r)
 					}
 				},
@@ -2955,9 +2955,9 @@
 						actionInfo: h.d(e, {
 							success: t
 						}),
-						profile: h.R(e, Object(I.m)(e, r)),
-						subreddit: h.hb(e, Object(O.F)(e, n)),
-						userSubreddit: h.qb(e),
+						profile: h.S(e, Object(I.m)(e, r)),
+						subreddit: h.ib(e, Object(O.F)(e, n)),
+						userSubreddit: h.rb(e),
 						adblock: h.e(e)
 					})
 				},
@@ -2967,9 +2967,9 @@
 						action: "view",
 						noun: "screen",
 						...j(e),
-						profile: h.R(e, Object(I.m)(e, n)),
-						subreddit: h.hb(e, Object(O.F)(e, t)),
-						userSubreddit: h.qb(e),
+						profile: h.S(e, Object(I.m)(e, n)),
+						subreddit: h.ib(e, Object(O.F)(e, t)),
+						userSubreddit: h.rb(e),
 						adblock: h.e(e)
 					})
 				},
@@ -3003,23 +3003,23 @@
 						actionInfo: h.d(e, {
 							success: s
 						}),
-						subreddit: h.gb(e),
-						timer: h.mb(r, o),
-						userSubreddit: h.qb(e),
+						subreddit: h.hb(e),
+						timer: h.nb(r, o),
+						userSubreddit: h.rb(e),
 						adblock: h.e(e),
 						...c ? Object(l.r)(e, c) : {}
 					})
 				},
-				H = (e, t) => n => ({
+				G = (e, t) => n => ({
 					source: "coins_marketing",
 					action: "view",
 					noun: "page",
 					correlationId: Object(S.c)(S.a.GoldPayment),
 					...j(n),
-					timer: h.mb(e, t),
+					timer: h.nb(e, t),
 					adblock: h.e(n)
 				}),
-				G = () => e => ({
+				H = () => e => ({
 					source: "global",
 					action: "view",
 					noun: "screen",
@@ -3031,7 +3031,7 @@
 					noun: "page",
 					correlationId: Object(S.c)(S.a.GoldPayment),
 					...j(n),
-					timer: h.mb(e, t),
+					timer: h.nb(e, t),
 					adblock: h.e(n)
 				}),
 				W = () => e => ({
@@ -3040,25 +3040,25 @@
 					noun: "screen",
 					...j(e)
 				}),
-				q = (e, t) => n => ({
+				K = (e, t) => n => ({
 					source: "appeal",
 					action: "view",
 					noun: "page",
 					...j(n),
-					timer: h.mb(e, t)
+					timer: h.nb(e, t)
 				}),
-				K = (e, t) => n => ({
+				q = (e, t) => n => ({
 					source: "global",
 					action: "view",
 					noun: "screen",
 					...j(n),
-					timer: h.mb(e, t)
+					timer: h.nb(e, t)
 				}),
 				Y = () => e => ({
 					source: "global",
 					action: "view",
 					noun: "screen",
-					subreddit: h.gb(e),
+					subreddit: h.hb(e),
 					...j(e)
 				}),
 				Q = () => e => ({
@@ -3079,9 +3079,9 @@
 					noun: "screen",
 					...j(n),
 					customFeed: h.l(n),
-					subreddit: h.gb(n),
-					timer: h.mb(e, t),
-					userSubreddit: h.qb(n),
+					subreddit: h.hb(n),
+					timer: h.nb(e, t),
+					userSubreddit: h.rb(n),
 					adblock: h.e(n)
 				}),
 				J = () => e => ({
@@ -3113,7 +3113,7 @@
 						} = c.listings.postOrder;
 						u = u && !t.error[e] && !t.pending[e]
 					}
-					const l = h.F(c, o);
+					const l = h.G(c, o);
 					return {
 						...g.g(c, t),
 						...Z,
@@ -3122,14 +3122,14 @@
 							success: u,
 							paneName: l
 						}),
-						timer: h.mb(n, r),
+						timer: h.nb(n, r),
 						search: {
-							...h.Z(c, t, x.a.SERP, !0, o || void 0),
+							...h.ab(c, t, x.a.SERP, !0, o || void 0),
 							sort: null !== (a = t.sort) && void 0 !== a ? a : i.Qb,
 							range: null !== (d = t.t) && void 0 !== d ? d : i.Rb
 						},
 						...$(s),
-						userPreferences: h.bb(c)
+						userPreferences: h.cb(c)
 					}
 				},
 				te = (e, t, n) => r => ({
@@ -3140,10 +3140,10 @@
 						pageType: "search_dropdown"
 					},
 					search: {
-						...h.Z(r, e, x.a.Typeahead, !0, t || void 0)
+						...h.ab(r, e, x.a.Typeahead, !0, t || void 0)
 					},
 					...$(n),
-					userPreferences: h.bb(r)
+					userPreferences: h.cb(r)
 				}),
 				ne = (e, t) => {
 					Object(T.a)({
@@ -3685,4 +3685,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit~Subreddit.1bc7e03fea2bf85f4377.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit~Subreddit.71a892391ffd477f6c26.js.map

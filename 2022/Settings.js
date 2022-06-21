@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Settings.3a8e7a6931bcbfd162d3.js
-// Retrieved at 6/21/2022, 5:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Settings.22afd2b9b9d332bdb880.js
+// Retrieved at 6/21/2022, 7:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Settings"], {
 		"./node_modules/moment/locale sync recursive ^\\.\\/.*$": function(e, t, n) {
@@ -9243,7 +9243,7 @@
 					source: "meta",
 					action: e,
 					noun: "feed_claim_points_banner",
-					subreddit: Object(s.gb)(t)
+					subreddit: Object(s.hb)(t)
 				}),
 				a = () => r("view"),
 				o = () => r("tap"),
@@ -9253,7 +9253,7 @@
 					source: "meta",
 					action: "click",
 					noun: "cancel_membership_with_points",
-					subreddit: Object(s.hb)(t, e)
+					subreddit: Object(s.ib)(t, e)
 				})
 		},
 		"./src/reddit/helpers/trackers/followers.ts": function(e, t, n) {
@@ -9422,7 +9422,7 @@
 			const i = e => ({
 					...s.n(e),
 					correlationId: Object(o.c)(o.a.PremiumSettings),
-					screen: s.Y(e)
+					screen: s.Z(e)
 				}),
 				c = () => e => ({
 					...i(e),
@@ -14266,4 +14266,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Settings.3a8e7a6931bcbfd162d3.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Settings.22afd2b9b9d332bdb880.js.map

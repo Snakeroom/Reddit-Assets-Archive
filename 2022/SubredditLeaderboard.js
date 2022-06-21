@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditLeaderboard.d3a34dfa35499589b718.js
-// Retrieved at 6/21/2022, 5:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditLeaderboard.c62058421b514240e87f.js
+// Retrieved at 6/21/2022, 7:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditLeaderboard"], {
 		"./node_modules/lodash/times.js": function(e, t, r) {
@@ -2163,7 +2163,7 @@
 					source: s.COMMUNITY_WIDGETS,
 					action: a.c.CLICK,
 					noun: n.SEE_MORE,
-					widget: Object(i.ub)(r, {
+					widget: Object(i.vb)(r, {
 						subredditId: e,
 						widgetKind: t
 					}),
@@ -2173,8 +2173,8 @@
 					source: s.POST,
 					action: a.c.CLICK,
 					noun: n.REREDDIT_PROMO,
-					post: i.H(r, e),
-					subreddit: i.gb(r),
+					post: i.I(r, e),
+					subreddit: i.hb(r),
 					...t && {
 						banner: {
 							buttonText: t,
@@ -2785,4 +2785,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditLeaderboard.d3a34dfa35499589b718.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditLeaderboard.c62058421b514240e87f.js.map

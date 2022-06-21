@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-ModHub-Content-ModQueue.127818af26f8cc2df8fe.js
-// Retrieved at 6/16/2022, 5:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-ModHub-Content-ModQueue.59fabdb3abf9320d02ea.js
+// Retrieved at 6/21/2022, 7:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-ModHub-Content-ModQueue"], {
 		"./src/reddit/components/Comments/CompactUnthreadedComment/index.m.less": function(e, t, s) {
@@ -174,8 +174,8 @@
 							source: "layout_switch",
 							action: "click",
 							noun: e,
-							screen: Object(k.Y)(t),
-							subreddit: Object(k.gb)(t)
+							screen: Object(k.Z)(t),
+							subreddit: Object(k.hb)(t)
 						})))
 					}, this.renderItem = (e, t) => {
 						const {
@@ -267,7 +267,7 @@
 							source: "modqueue",
 							action: "view",
 							noun: "cc_banner",
-							subreddit: h.gb(e),
+							subreddit: h.hb(e),
 							...h.n(e)
 						}))())
 					}, [o]);
@@ -294,7 +294,7 @@
 								source: "modqueue",
 								action: "click",
 								noun: "cc_banner",
-								subreddit: h.gb(e),
+								subreddit: h.hb(e),
 								...h.n(e)
 							}))())
 						}
@@ -308,7 +308,7 @@
 								source: "modqueue",
 								action: "dismiss",
 								noun: "cc_banner",
-								subreddit: h.gb(e),
+								subreddit: h.hb(e),
 								...h.n(e)
 							}))()), s()
 						},
@@ -566,8 +566,8 @@
 				G = s("./src/reddit/components/ModQueueList/LayoutNavigation.m.less"),
 				K = s.n(G);
 			const Y = Object(c.a)(h.a),
-				J = "MODQ--SUBREDDIT_FILTER_DROPDOWN",
-				Z = "MODQ--POST_TYPE_FILTER_DROPDOWN",
+				Z = "MODQ--SUBREDDIT_FILTER_DROPDOWN",
+				J = "MODQ--POST_TYPE_FILTER_DROPDOWN",
 				$ = "MODQ--POST_SORT_DROPDOWN",
 				ee = m.a.wrapped(g.a, "Inline", K.a),
 				te = m.a.div("Filter", K.a),
@@ -613,8 +613,8 @@
 					}
 				},
 				re = Object(d.c)({
-					isPostTypeFilterDropdownOpen: Object(k.b)(Z),
-					isSubredditFilterDropdownOpen: Object(k.b)(J),
+					isPostTypeFilterDropdownOpen: Object(k.b)(J),
+					isSubredditFilterDropdownOpen: Object(k.b)(Z),
 					isPostSortDropdownOpen: Object(k.b)($),
 					isModQChatCommentsFilterEnabled: w.g,
 					profile: (e, t) => {
@@ -644,9 +644,9 @@
 			class ie extends a.a.Component {
 				constructor() {
 					super(...arguments), this.onOpenSubredditFilterDropdown = () => {
-						this.props.loadAllSubreddits(), this.props.onOpenDropdown(J), this.props.sendEventWithName("subreddit")
+						this.props.loadAllSubreddits(), this.props.onOpenDropdown(Z), this.props.sendEventWithName("subreddit")
 					}, this.onOpenPostTypeFilterDropdown = () => {
-						this.props.onOpenDropdown(Z), this.props.sendEventWithName("content_type")(), this.props.isModQChatCommentsFilterEnabled && !this.props.isPostTypeFilterDropdownOpen && this.props.sendEvent(Object(q.h)())
+						this.props.onOpenDropdown(J), this.props.sendEventWithName("content_type")(), this.props.isModQChatCommentsFilterEnabled && !this.props.isPostTypeFilterDropdownOpen && this.props.sendEvent(Object(q.h)())
 					}, this.onOpenPostSortDropdown = () => {
 						this.props.onOpenDropdown($), this.props.sendEventWithName("modqueue_sort")()
 					}
@@ -660,13 +660,13 @@
 						hk: "2BGBVi"
 					}), o = ne(null == e ? void 0 : e.postSort);
 					return a.a.createElement(ee, null, !e.hideSubredditFilter && a.a.createElement(a.a.Fragment, null, a.a.createElement(te, {
-						id: J,
+						id: Z,
 						onClick: this.onOpenSubredditFilterDropdown
 					}, t, a.a.createElement(x.a, {
 						name: "caret_down"
 					})), a.a.createElement(Y, {
 						isOpen: e.isSubredditFilterDropdownOpen,
-						tooltipId: J
+						tooltipId: Z
 					}, a.a.createElement(z, {
 						profileName: e.profileName,
 						subredditName: e.subredditName
@@ -682,13 +682,13 @@
 						postSort: e.postSort,
 						sendEventWithName: e.sendEventWithName
 					})), e.showTypeFilter && a.a.createElement(a.a.Fragment, null, a.a.createElement(te, {
-						id: Z,
+						id: J,
 						onClick: this.onOpenPostTypeFilterDropdown
 					}, s, a.a.createElement(x.a, {
 						name: "caret_down"
 					})), a.a.createElement(Y, {
 						isOpen: e.isPostTypeFilterDropdownOpen,
-						tooltipId: Z
+						tooltipId: J
 					}, a.a.createElement(N, {
 						postTypeFilter: e.postTypeFilter,
 						sendEventWithName: e.sendEventWithName
@@ -823,8 +823,8 @@
 				G = p.a.wrapped(U.a, "BulkActionCheckbox", z.a),
 				K = p.a.div("CommentColumn", z.a),
 				Y = p.a.div("VoteColumn", z.a),
-				J = p.a.wrapped(T.a, "ModToolsFlatlist", z.a),
-				Z = p.a.wrapped(A.a, "Votes", z.a),
+				Z = p.a.wrapped(T.a, "ModToolsFlatlist", z.a),
+				J = p.a.wrapped(A.a, "Votes", z.a),
 				$ = p.a.div("CommentContentWrapper", z.a),
 				ee = p.a.div("ParentPostTitle", z.a),
 				te = p.a.div("CommentParentWrapper", z.a),
@@ -859,7 +859,7 @@
 					}, m && d.a.createElement(G, {
 						isCheckboxSelected: r,
 						toggleCheckbox: p
-					})), d.a.createElement(Y, null, d.a.createElement(Z, {
+					})), d.a.createElement(Y, null, d.a.createElement(J, {
 						compact: !1,
 						model: s,
 						onVoteClick: i,
@@ -881,7 +881,7 @@
 					}), b && d.a.createElement(W.a, {
 						onIgnoreReports: a,
 						reportable: s
-					}), l && !s.isDeleted && d.a.createElement(J, {
+					}), l && !s.isDeleted && d.a.createElement(Z, {
 						comment: s
 					})))))
 				}),
@@ -994,8 +994,8 @@
 				Ge = s("./src/reddit/components/RestrictedFlatlistButton/index.tsx"),
 				Ke = s("./src/reddit/controls/Dropdown/index.tsx"),
 				Ye = s("./src/reddit/controls/Dropdown/Row.tsx"),
-				Je = s("./src/reddit/helpers/flair.ts"),
-				Ze = s("./src/reddit/selectors/activeModalId.ts"),
+				Ze = s("./src/reddit/helpers/flair.ts"),
+				Je = s("./src/reddit/selectors/activeModalId.ts"),
 				$e = s("./src/reddit/selectors/moderatorPermissions.ts"),
 				et = s("./src/reddit/selectors/postFlair.ts"),
 				tt = s("./src/reddit/selectors/posts.ts"),
@@ -1110,7 +1110,7 @@
 					onClick: e.onClick
 				}),
 				ft = Object(c.c)({
-					activeModalId: Ze.a,
+					activeModalId: Je.a,
 					dropdownIsOpen: Object(st.b)(ht),
 					flairData: et.d,
 					isApiPending: Ee.a,
@@ -1137,7 +1137,7 @@
 					const o = [];
 					return s.forEach(e => {
 						if (e.type === ge.f.Text || e.type === ge.f.Richtext) {
-							const t = Object(Je.g)(e);
+							const t = Object(Ze.g)(e);
 							a()(o, t) || o.push(t)
 						}
 					}), o.length > 1 ? [{
@@ -1528,4 +1528,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ModHub-Content-ModQueue.127818af26f8cc2df8fe.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ModHub-Content-ModQueue.59fabdb3abf9320d02ea.js.map
