@@ -1,11 +1,11 @@
-// https://www.redditstatic.com/desktop2x/gildActions.71b3698b0e82aa9faa86.js
-// Retrieved at 6/14/2022, 5:20:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/gildActions.1d1264c9206bd611f498.js
+// Retrieved at 6/21/2022, 11:10:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["gildActions"], {
 		"./src/reddit/actions/gold/econPurchase.ts": function(e, t, r) {
 			"use strict";
 			r.d(t, "a", (function() {
-				return u
+				return l
 			}));
 			var d = r("./src/lib/initializeClient/installReducer.ts"),
 				s = r("./src/reddit/reducers/features/econPurchase/index.ts"),
@@ -19,12 +19,12 @@
 					econPurchase: s.a
 				}
 			});
-			const l = Object(a.a)(c.mb),
-				u = (e, t, r) => async (d, s, a) => {
+			const u = Object(a.a)(c.mb),
+				l = (e, t, r) => async (d, s, a) => {
 					let {
 						gqlContext: c
 					} = a;
-					var u, b;
+					var l, b;
 					if (!o.a.has(t.toLowerCase())) return;
 					if (void 0 !== s().features.econPurchase.subredditLockedCoins[e] && !(null == r ? void 0 : r.force)) return;
 					const m = await ((e, t) => Object(n.a)(e, {
@@ -35,9 +35,9 @@
 					}))(c(), e);
 					if (m.ok) {
 						const t = m.body;
-						d(l({
+						d(u({
 							subredditId: e,
-							amount: (null === (b = null === (u = t.data.subredditInfoById) || void 0 === u ? void 0 : u.userCoinsInSubreddit) || void 0 === b ? void 0 : b.amount) || 0
+							amount: (null === (b = null === (l = t.data.subredditInfoById) || void 0 === l ? void 0 : l.userCoinsInSubreddit) || void 0 === b ? void 0 : b.amount) || 0
 						}))
 					}
 				}
@@ -66,8 +66,8 @@
 				i = r("./src/reddit/actions/goldPurchaseModals/coinPurchaseModal.ts"),
 				o = r("./src/reddit/actions/goldPurchaseModals/purchaseCatalog.ts"),
 				c = r("./src/reddit/actions/modal.ts"),
-				l = r("./src/reddit/actions/profile/index.ts"),
-				u = r("./src/reddit/actions/toaster.ts"),
+				u = r("./src/reddit/actions/profile/index.ts"),
+				l = r("./src/reddit/actions/toaster.ts"),
 				b = r("./node_modules/react/index.js"),
 				m = r.n(b),
 				w = r("./src/reddit/models/Gold/Award.ts"),
@@ -89,9 +89,9 @@
 				hk: "3ItXUT"
 			});
 			var p = r("./src/reddit/constants/modals.ts"),
-				h = r("./src/reddit/models/Gold/Coins/index.ts"),
-				I = r("./src/reddit/models/Post/index.ts"),
-				v = r("./src/reddit/models/Toast/index.ts"),
+				v = r("./src/reddit/models/Gold/Coins/index.ts"),
+				h = r("./src/reddit/models/Post/index.ts"),
+				I = r("./src/reddit/models/Toast/index.ts"),
 				A = r("./src/reddit/models/User/index.ts"),
 				y = r("./src/reddit/selectors/commentSelector.ts"),
 				k = r("./src/reddit/selectors/communityAwards.ts"),
@@ -119,8 +119,8 @@
 				}, {
 					query: r ? {} : Object(K.b)()
 				});
-			var M = r("./src/reddit/helpers/awards/getAwardItemId.ts"),
-				Q = r("./src/reddit/helpers/awards/message.ts"),
+			var Q = r("./src/reddit/helpers/awards/getAwardItemId.ts"),
+				M = r("./src/reddit/helpers/awards/message.ts"),
 				B = r("./src/reddit/helpers/correlationIdTracker.ts"),
 				F = r("./src/reddit/helpers/isPost.ts"),
 				J = r("./src/reddit/helpers/trackers/gild.ts"),
@@ -151,15 +151,15 @@
 										message: o,
 										isAnonymous: c
 									} = n.gild,
-									l = Object(x.b)(n) || Object(B.d)(B.a.GildingFlow, !1),
+									u = Object(x.b)(n) || Object(B.d)(B.a.GildingFlow, !1),
 									{
-										receivedKarma: u
+										receivedKarma: l
 									} = await Object(E.b)(a(), {
 										targetId: e,
 										awardId: i.id,
 										isAnonymous: c,
-										nonce: l,
-										message: Object(Q.d)(o, i)
+										nonce: u,
+										message: Object(M.d)(o, i)
 									}, r),
 									b = await Object(E.a)(a(), {
 										thingId: e
@@ -168,7 +168,7 @@
 									id: e,
 									awardId: i.id,
 									awardings: b.awardings,
-									awardKarmaReceived: u || 0,
+									awardKarmaReceived: l || 0,
 									coins: b.coins,
 									treatmentTags: b.treatmentTags
 								}))
@@ -186,17 +186,17 @@
 									c = Object(C.G)(i, {
 										postId: e
 									}),
-									l = Object(F.a)(e) && !!c && Object(I.q)(c),
-									u = {
+									u = Object(F.a)(e) && !!c && Object(h.q)(c),
+									l = {
 										gildingTypeId: o.selectedAward.id,
 										isAnonymous: o.isAnonymous,
 										isGildFunded: !1,
-										message: Object(Q.d)(o.message, o.selectedAward, l),
+										message: Object(M.d)(o.message, o.selectedAward, u),
 										nodeId: e
 									},
 									b = Object(F.a)(e) ? N : D,
 									m = await b(n(), {
-										input: u
+										input: l
 									}, r);
 								let w = !1,
 									g = null,
@@ -248,9 +248,9 @@
 						t().gild.api.pending && e(V())
 					}, 2e3)
 				}, te = Object(s.a)(Y.p), re = e => async (t, r) => {
-					await t(te(e)), t(Object(u.f)({
-						kind: v.b.Error,
-						duration: u.a,
+					await t(te(e)), t(Object(l.f)({
+						kind: I.b.Error,
+						duration: l.a,
 						text: e
 					}))
 				}, de = Object(s.a)(Y.s), se = (e, t) => {
@@ -310,9 +310,9 @@
 							},
 							d = r.fromAwardsReceived + e.awardKarmaReceived,
 							s = Object(A.e)(j);
-						t(Object(l.f)({
+						t(Object(u.f)({
 							coins: e.coins
-						})), t(Object(l.h)({
+						})), t(Object(u.h)({
 							userName: s,
 							karma: {
 								...r,
@@ -343,14 +343,14 @@
 						minSize: 64,
 						postOrCommentId: m
 					});
-					t(Object(u.f)({
+					t(Object(l.f)({
 						customIconAsset: K,
-						kind: v.b.SuccessAward,
+						kind: I.b.SuccessAward,
 						text: f > 0 ? O({
 							awarderKarmaReceived: f
 						}) : E
 					})), setTimeout(() => {
-						const e = Object(M.a)(b, m),
+						const e = Object(Q.a)(b, m),
 							t = document.getElementById(e);
 						t && t.dispatchEvent(new Event("awardAdded"))
 					}, 10);
@@ -361,11 +361,11 @@
 					}));
 					const q = Date.now() - T;
 					if (R > 0) {
-						const e = Object(L.f)(r()).filter(e => h.a.has(e.dealInfo.type));
+						const e = Object(L.f)(r()).filter(e => v.a.has(e.dealInfo.type));
 						if (e.length) {
 							const r = Math.max(900 - q, 10),
 								d = Math.max(300 - q, 10),
-								a = Object(F.a)(m) && Object(I.q)(Object(C.G)(s, {
+								a = Object(F.a)(m) && Object(h.q)(Object(C.G)(s, {
 									postId: m
 								}));
 							setTimeout(() => t(Object(i.e)({
@@ -406,17 +406,20 @@
 		"./src/reddit/endpoints/awards/index.ts": function(e, t, r) {
 			"use strict";
 			r.d(t, "b", (function() {
-				return c
-			})), r.d(t, "a", (function() {
+				return u
+			})), r.d(t, "c", (function() {
 				return l
+			})), r.d(t, "a", (function() {
+				return b
 			}));
 			var d = r("./src/lib/makeGqlRequest/index.ts"),
 				s = r("./src/lib/makeRequest/index.ts"),
 				a = r("./src/reddit/helpers/addRedesignIdentifier/index.ts"),
 				n = r("./src/reddit/helpers/isPost.ts"),
 				i = (r("./src/redditGQL/operations/AvailableAwards.json"), r("./src/redditGQL/operations/AwardSideEffectsDetails.json")),
-				o = r("./src/redditGQL/operations/GiveAward.json");
-			const c = async (e, t, r) => {
+				o = r("./src/redditGQL/operations/GiveAward.json"),
+				c = r("./src/redditGQL/operations/RemoveAward.json");
+			const u = async (e, t, r) => {
 				var n;
 				const i = await Object(d.a)(e, {
 					...o,
@@ -429,7 +432,21 @@
 				if (!Object(s.c)(i)) throw new Error("An unknown error occurred");
 				if (!Object(s.c)(i) || !i.body.data.giveAward.ok) throw i.body.data.giveAward.errors && (null === (n = i.body.data.giveAward.errors) || void 0 === n ? void 0 : n.length) > 0 ? new Error(i.body.data.giveAward.errors[0].message) : new Error("An unknown error occurred");
 				return i.body.data.giveAward
-			}, l = async (e, t, r) => {
+			}, l = async (e, t) => {
+				var r, a, n;
+				const i = await Object(d.a)(e, {
+					...c,
+					variables: {
+						input: t
+					}
+				});
+				if (!Object(s.c)(i)) throw new Error("An unknown error occurred");
+				if (!i.body.data.removeAward.ok) {
+					const e = null !== (n = null === (a = null === (r = i.body.data.removeAward.errors) || void 0 === r ? void 0 : r[0]) || void 0 === a ? void 0 : a.message) && void 0 !== n ? n : "An unknown error occurred";
+					throw new Error(e)
+				}
+				return i.body.data.removeAward
+			}, b = async (e, t, r) => {
 				const o = await Object(d.a)(e, {
 					...i,
 					variables: {
@@ -544,7 +561,7 @@
 			e.exports = JSON.parse('{"id":"4778ed491384"}')
 		},
 		"./src/redditGQL/operations/AwardSideEffectsDetails.json": function(e) {
-			e.exports = JSON.parse('{"id":"f4cb124e646e"}')
+			e.exports = JSON.parse('{"id":"e10d7f0411a4"}')
 		},
 		"./src/redditGQL/operations/GildComment.json": function(e) {
 			e.exports = JSON.parse('{"id":"c25f21e6351f"}')
@@ -555,9 +572,12 @@
 		"./src/redditGQL/operations/GiveAward.json": function(e) {
 			e.exports = JSON.parse('{"id":"b8028be05f59"}')
 		},
+		"./src/redditGQL/operations/RemoveAward.json": function(e) {
+			e.exports = JSON.parse('{"id":"f7c06f2127c3"}')
+		},
 		"./src/redditGQL/operations/SubredditCoins.json": function(e) {
 			e.exports = JSON.parse('{"id":"a82ef253ed10"}')
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/gildActions.71b3698b0e82aa9faa86.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/gildActions.1d1264c9206bd611f498.js.map

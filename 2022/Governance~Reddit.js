@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~Reddit.f923f45bc599bfd78949.js
-// Retrieved at 6/16/2022, 6:00:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~Reddit.5742c4bf8ab21d1b6ab3.js
+// Retrieved at 6/21/2022, 11:10:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~Reddit"], {
 		"./assets/fonts/NotoMono/font.less": function(e, t, n) {},
@@ -3166,13 +3166,22 @@
 				return c
 			})), n.d(t, "d", (function() {
 				return d
+			})), n.d(t, "h", (function() {
+				return i
+			})), n.d(t, "i", (function() {
+				return u
+			})), n.d(t, "g", (function() {
+				return l
 			}));
 			const r = "AVAILABLE_REACTION_AWARDS_PENDING",
 				s = "AVAILABLE_REACTION_AWARDS_LOADED",
 				a = "AVAILABLE_REACTION_AWARDS_FAILED",
 				o = "GIVE_REACTION_AWARD_PENDING",
 				c = "GIVE_REACTION_AWARD_SUCCESS",
-				d = "GIVE_REACTION_AWARD_FAILURE"
+				d = "GIVE_REACTION_AWARD_FAILURE",
+				i = "REMOVE_REACTION_AWARD_PENDING",
+				u = "REMOVE_REACTION_AWARD_SUCCESS",
+				l = "REMOVE_REACTION_AWARD_FAILURE"
 		},
 		"./src/reddit/actions/reportFlow/constants.ts": function(e, t, n) {
 			"use strict";
@@ -26135,4 +26144,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit.f923f45bc599bfd78949.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit.5742c4bf8ab21d1b6ab3.js.map
