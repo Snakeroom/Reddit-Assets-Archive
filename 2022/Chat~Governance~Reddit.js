@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.3186bae7085cbf27e4d5.js
-// Retrieved at 6/21/2022, 7:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.3de947b5cd911afb1dd0.js
+// Retrieved at 6/21/2022, 7:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Chat~Governance~Reddit"], {
 		"./assets/fonts/IBMPlexSans/font.less": function(e, t, i) {},
@@ -3467,11 +3467,11 @@
 				apiPassThroughHeaders: Object(r.e)({}.API_PASS_THROUGH_HEADERS || ""),
 				appName: {}.APP_NAME || "desktop2x",
 				assetPath: "https://www.redditstatic.com/desktop2x",
-				buildNumber: Object(r.c)("166950"),
+				buildNumber: Object(r.c)("166954"),
 				chatHelpUrl: {}.CHAT_HELP_URL || "https://reddit.zendesk.com/hc/en-us/sections/360008805652-Chat",
 				hlsVersion: "hls 0.12.4",
 				dashVersion: "dash 3.2.0",
-				buildTimestamp: Object(r.b)("1655851301"),
+				buildTimestamp: Object(r.b)("1655854003"),
 				cookieDomain: ".reddit.com",
 				giphyApiKey: "k2kwyMA6VeyHM6ZRT96OXDGaersnx73Z",
 				mediaUrl: "https://www.redditmedia.com",
@@ -6080,14 +6080,14 @@
 					}))
 				},
 				Y = (e, t, i) => {
-					console.log("%cStarting Raven %crelease %cd63227cead91118a108309326491e3c80a756770-production" + ` %cpublic url %c${y.a.sentryClientPublicURL}`, "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
+					console.log("%cStarting Raven %crelease %cc2c38d78313df848d6dd0443a3ccd4e61696c29b-production" + ` %cpublic url %c${y.a.sentryClientPublicURL}`, "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
 					let n = [];
 					n = [new RegExp(`^${y.a.assetPath}`, "i")];
 					o.e({
 						attachStacktrace: !0,
 						dsn: y.a.sentryClientPublicURL,
 						whitelistUrls: n,
-						release: "d63227cead91118a108309326491e3c80a756770-production",
+						release: "c2c38d78313df848d6dd0443a3ccd4e61696c29b-production",
 						environment: "production",
 						ignoreErrors: ["$ is not defined"],
 						integrations: [...Object(L.d)(), new d.Integrations.Breadcrumbs({
@@ -6696,7 +6696,7 @@
 							settings: r,
 							statusCode: s,
 							type: o,
-							releaseClient: "d63227cead91118a108309326491e3c80a756770-production",
+							releaseClient: "c2c38d78313df848d6dd0443a3ccd4e61696c29b-production",
 							appName: t.statsAppName,
 							error: n ? JSON.parse(Object(l.a)(n)) : void 0
 						},
@@ -45045,10 +45045,14 @@
 			var n = i("./node_modules/thrift/lib/nodejs/lib/thrift/browser.js"),
 				r = n.Thrift,
 				s = (n.Q, i("./src/telemetry/eventSchemas/typedefs_types.js"), e.exports = {}, e.exports.LiveAudioRoom = function(e) {
-					this.id = null, this.title = null, this.platform = null, this.creator_id = null, e && (void 0 !== e.id && null !== e.id && (this.id = e.id), void 0 !== e.title && null !== e.title && (this.title = e.title), void 0 !== e.platform && null !== e.platform && (this.platform = e.platform), void 0 !== e.creator_id && null !== e.creator_id && (this.creator_id = e.creator_id))
+					this.id = null, this.title = null, this.platform = null, this.creator_id = null, this.topic_ids = null, e && (void 0 !== e.id && null !== e.id && (this.id = e.id), void 0 !== e.title && null !== e.title && (this.title = e.title), void 0 !== e.platform && null !== e.platform && (this.platform = e.platform), void 0 !== e.creator_id && null !== e.creator_id && (this.creator_id = e.creator_id), void 0 !== e.topic_ids && null !== e.topic_ids && (this.topic_ids = r.copyList(e.topic_ids, [null])))
 				});
 			s.prototype = {}, s.prototype.write = function(e) {
-				e.writeStructBegin("LiveAudioRoom"), null !== this.id && void 0 !== this.id && (e.writeFieldBegin("id", r.Type.STRING, 1), e.writeString(this.id), e.writeFieldEnd()), null !== this.title && void 0 !== this.title && (e.writeFieldBegin("title", r.Type.STRING, 2), e.writeString(this.title), e.writeFieldEnd()), null !== this.platform && void 0 !== this.platform && (e.writeFieldBegin("platform", r.Type.STRING, 3), e.writeString(this.platform), e.writeFieldEnd()), null !== this.creator_id && void 0 !== this.creator_id && (e.writeFieldBegin("creator_id", r.Type.STRING, 4), e.writeString(this.creator_id), e.writeFieldEnd()), e.writeFieldStop(), e.writeStructEnd()
+				if (e.writeStructBegin("LiveAudioRoom"), null !== this.id && void 0 !== this.id && (e.writeFieldBegin("id", r.Type.STRING, 1), e.writeString(this.id), e.writeFieldEnd()), null !== this.title && void 0 !== this.title && (e.writeFieldBegin("title", r.Type.STRING, 2), e.writeString(this.title), e.writeFieldEnd()), null !== this.platform && void 0 !== this.platform && (e.writeFieldBegin("platform", r.Type.STRING, 3), e.writeString(this.platform), e.writeFieldEnd()), null !== this.creator_id && void 0 !== this.creator_id && (e.writeFieldBegin("creator_id", r.Type.STRING, 4), e.writeString(this.creator_id), e.writeFieldEnd()), null !== this.topic_ids && void 0 !== this.topic_ids) {
+					for (var t in e.writeFieldBegin("topic_ids", r.Type.LIST, 5), e.writeListBegin(r.Type.STRING, this.topic_ids.length), this.topic_ids) this.topic_ids.hasOwnProperty(t) && (t = this.topic_ids[t], e.writeString(t));
+					e.writeListEnd(), e.writeFieldEnd()
+				}
+				e.writeFieldStop(), e.writeStructEnd()
 			};
 			var o = e.exports.LiveAudioRoomUser = function(e) {
 				this.platform_id = null, this.role = null, this.speaker_eligibility = null, e && (void 0 !== e.platform_id && null !== e.platform_id && (this.platform_id = e.platform_id), void 0 !== e.role && null !== e.role && (this.role = e.role), void 0 !== e.speaker_eligibility && null !== e.speaker_eligibility && (this.speaker_eligibility = e.speaker_eligibility))
@@ -47933,4 +47937,4 @@
 		"ignored /drone/src/node_modules/readable-stream/lib/internal/streams util": function(e, t) {}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.3186bae7085cbf27e4d5.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.3de947b5cd911afb1dd0.js.map
