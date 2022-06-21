@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Reddit.1b233f0c09d78beb09fd.js
-// Retrieved at 6/21/2022, 5:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Reddit.fef95624bc208f73493e.js
+// Retrieved at 6/21/2022, 5:30:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Reddit"], {
 		"./assets/fonts/BentonSans/font.less": function(e, t, n) {},
@@ -3914,8 +3914,7 @@
 				row: "_19oWd7e3z7-ztUGzdIoCR7",
 				separator: "Z_HUY3BUsGOBOtdmH94ZS",
 				visitOldReddit: "_3Z5rfDuvQDBNfBgpXdnt_b",
-				iconWrapper: "_2QpF1Fkq_rr2nvPL1no0nN",
-				adSignupIconWrapper: "buhDxtCErlohIqSGl44CH"
+				iconWrapper: "_2QpF1Fkq_rr2nvPL1no0nN"
 			}
 		},
 		"./src/reddit/components/Header/index.m.less": function(e, t, n) {
@@ -15329,9 +15328,7 @@
 					iconWrapper: om.a.iconWrapper
 				}), m.a.createElement("div", {
 					className: om.a.loggedOutRow
-				}, m.a.createElement(Qu, {
-					className: om.a.adSignupIconWrapper
-				}), m.a.createElement(nn.t, {
+				}, m.a.createElement(nn.t, {
 					kind: nn.b.ExternalLink,
 					priority: nn.c.Secondary,
 					redditStyle: !0,
@@ -20507,4 +20504,4 @@
 		["./src/reddit/index.tsx", "runtime~Reddit", "vendors~Governance~ModListing~Reddit~Subreddit", "vendors~Chat~Governance~Reddit", "vendors~Reddit~StandalonePostPage", "vendors~Reddit", "PostCreation~Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~r~4c415e24", "Governance~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compo~bd4baca2", "Governance~ModListing~Reddit~ReportFlow~Subreddit", "Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddi~90fdacc3", "Chat~Governance~Reddit", "Governance~Reddit~Subreddit", "Governance~Reddit", "AuthorHovercard~Reddit"]
 	]
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit.1b233f0c09d78beb09fd.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit.fef95624bc208f73493e.js.map
