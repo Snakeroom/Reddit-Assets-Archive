@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Reddit.5be26b83e98f888794b2.js
-// Retrieved at 6/21/2022, 12:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Reddit.d31a413094b086635efa.js
+// Retrieved at 6/21/2022, 1:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Reddit"], {
 		"./assets/fonts/BentonSans/font.less": function(e, t, n) {},
@@ -17314,13 +17314,54 @@
 				},
 				qf = e => e.startsWith("/r/") ? e.replace("/r/", `/${Bf}/r/`) : e;
 			var Hf = n("./src/reddit/selectors/experiments/countrySites.ts");
-			var Wf = n("./src/reddit/helpers/installGoodVisitFeedSearchTracker/index.ts");
-			const Vf = Object(Y.a)(e => Object(Xa.c)(e, {
+			var Wf = n("./src/reddit/actions/economics/predictions/constants.ts"),
+				Vf = n("./src/reddit/actions/eventPosts/constants.ts"),
+				Qf = n("./src/reddit/actions/linkedPosts/constants.ts"),
+				Kf = n("./src/reddit/actions/multireddit/constants.ts"),
+				zf = n("./src/reddit/actions/nsfwLinkedPosts/constants.ts"),
+				Jf = n("./src/reddit/actions/otherDiscussions/constants.ts"),
+				Xf = n("./src/reddit/actions/pages/countrySite/constants.ts"),
+				Yf = n("./src/reddit/actions/pages/modListing/constants.ts"),
+				Zf = n("./src/reddit/actions/pages/multireddit/constants.ts"),
+				$f = n("./src/reddit/actions/pages/postCreation.ts"),
+				ev = n("./src/reddit/actions/pages/topic.ts"),
+				tv = n("./src/reddit/actions/profileConversations.ts"),
+				nv = n("./src/reddit/actions/profileOverviewChrono/constants.ts"),
+				sv = n("./src/reddit/actions/recommendations.ts"),
+				rv = n("./src/reddit/actions/subreddit/constants.ts");
+			const ov = e => {
+					let t = 0;
+					if (Object(Nt.a)()) {
+						const n = localStorage.getItem(e);
+						n && !isNaN(parseInt(n)) && (t = parseInt(n))
+					}
+					return t
+				},
+				av = e => {
+					Object(Nt.a)() && localStorage.removeItem(e)
+				},
+				iv = (e, t) => {
+					const n = ov(e) + t;
+					Object(Nt.a)() && localStorage.setItem(e, n.toString())
+				},
+				cv = e => {
+					if (!e) return;
+					const t = Object.keys(e).length,
+						n = Object.values(e).filter(e => e.isSponsored).length;
+					(e => {
+						iv("client-session-signals-number-of-posts-seen", e)
+					})(t), (e => {
+						iv("client-session-signals-number-of-ads-seen", e)
+					})(n)
+				};
+			let lv = !1;
+			var dv = n("./src/reddit/helpers/installGoodVisitFeedSearchTracker/index.ts");
+			const uv = Object(Y.a)(e => Object(Xa.c)(e, {
 				experimentEligibilitySelector: Xa.a,
 				experimentName: An.Db
 			}), e => e === An.ud);
 			Object(o.e)(o.b.EntryPointStart);
-			const Qf = Object(F.a)({
+			const mv = Object(F.a)({
 					actionDispatchers: {
 						reddaidReceived: he.u,
 						loidReceived: he.r,
@@ -17342,23 +17383,23 @@
 					onBeforeRequestFactory: sf.a,
 					statsAppName: S.m.Redesign
 				}),
-				Kf = Object(U.a)(Qf.apiContext),
-				zf = Object(U.a)(Qf.apiContext, i.a.gqlRealtime2Url),
-				Jf = ag();
-			let Xf;
+				pv = Object(U.a)(mv.apiContext),
+				bv = Object(U.a)(mv.apiContext, i.a.gqlRealtime2Url),
+				hv = ag();
+			let gv;
 			Object(M.a)({
 				reducerMap: gf.a,
 				routes: Gu,
-				apiContext: Qf.apiContext,
-				gqlContext: Kf.gqlContext,
-				gqlRealtime2Context: zf.gqlContext,
+				apiContext: mv.apiContext,
+				gqlContext: pv.gqlContext,
+				gqlRealtime2Context: bv.gqlContext,
 				appFactory: (e, t) => m.a.createElement(Xh.a.Provider, {
-					value: Jf.broadcaster
+					value: hv.broadcaster
 				}, m.a.createElement(Yh.a.Provider, {
 					value: {
-						apiContext: Qf.apiContext,
-						gqlContext: Kf.gqlContext,
-						gqlRealtime2Context: zf.gqlContext
+						apiContext: mv.apiContext,
+						gqlContext: pv.gqlContext,
+						gqlRealtime2Context: bv.gqlContext
 					}
 				}, m.a.createElement(Zh.b, null, m.a.createElement(Gh, {
 					ok: !0,
@@ -17368,7 +17409,7 @@
 				appName: S.m.Redesign,
 				history: Object(c.a)({
 					getUserConfirmation(e, t) {
-						const n = Xf;
+						const n = gv;
 						if (!n) return;
 						n.dispatch(Object(ce.l)({
 							allowNavigationCallback: function() {
@@ -17380,10 +17421,10 @@
 				}),
 				customMiddleware: [P.a.withExtraArgument({
 					routes: Gu,
-					apiContext: Qf.apiContext,
-					gqlContext: Kf.gqlContext,
-					gqlRealtime2Context: zf.gqlContext
-				}), Jf.middleware, mg, Qf.middleware, Kf.middleware, zf.middleware, Rg, gg, Dg, Xg, Mg, Tg, bd.a, sg, e => t => n => {
+					apiContext: mv.apiContext,
+					gqlContext: pv.gqlContext,
+					gqlRealtime2Context: bv.gqlContext
+				}), hv.middleware, mg, mv.middleware, pv.middleware, bv.middleware, Rg, gg, Dg, Xg, Mg, Tg, bd.a, sg, e => t => n => {
 					let s, r;
 					if (!Object(Hf.b)(e.getState()) || !n.payload) return t(n);
 					r = (null == (s = e.getState().platform.currentPage) ? void 0 : s.urlParams.subredditName) || "";
@@ -17453,6 +17494,49 @@
 						}
 					}
 					return t(n)
+				}, e => t => n => {
+					var s, r, o;
+					switch (lv || (cv(null === (r = null === (s = null == e ? void 0 : e.getState()) || void 0 === s ? void 0 : s.posts) || void 0 === r ? void 0 : r.models), lv = !0), n.type) {
+						case Xf.b:
+						case Xf.f:
+						case $f.PAGE_LOADED:
+						case Qf.c:
+						case zf.b:
+						case Yf.e:
+						case Yf.h:
+						case Ug.b:
+						case Ug.e:
+						case Bg.e:
+						case Bg.b:
+						case Gg.PROFILE_POSTS_LOADED:
+						case Gg.MORE_POSTS_LOADED:
+						case Hg.SUBREDDIT_LOADED:
+						case Fg.b:
+						case Zf.b:
+						case Jf.b:
+						case Kf.r:
+						case Fg.f:
+						case tv.e:
+						case sv.b:
+						case rv.j:
+						case xo.i:
+						case nv.b:
+						case ev.TOPIC_DATA_LOADED:
+						case ev.MORE_POSTS_LOADED:
+						case Vf.c:
+						case Vf.d:
+						case Wf.o:
+						case rv.r:
+							cv(null === (o = n.payload) || void 0 === o ? void 0 : o.posts);
+							break;
+						case ue.a:
+						case ue.b:
+						case ue.c:
+						case ue.e:
+						case ue.d:
+							av("client-session-signals-number-of-ads-seen"), av("client-session-signals-number-of-posts-seen")
+					}
+					return t(n)
 				}],
 				modifyInitialData: e => {
 					let {
@@ -17490,7 +17574,7 @@
 						}))
 					}), pf(s);
 					const o = s.getState();
-					Vf(o) && s.dispatch(Object(W.b)({
+					uv(o) && s.dispatch(Object(W.b)({
 							headers: {
 								[r.a]: "1"
 							}
@@ -17504,7 +17588,7 @@
 						})), Object(G.g)("enabled" === Object(Xa.c)(s.getState(), {
 							experimentEligibilitySelector: Xa.a,
 							experimentName: An.Ff
-						})), Object(G.f)(Kf.gqlContext), window.addEventListener("beforeunload", () => {
+						})), Object(G.f)(pv.gqlContext), window.addEventListener("beforeunload", () => {
 							const e = s.getState(),
 								t = Object($g.a)("tab_closed")(e),
 								n = q.g(t),
@@ -17560,7 +17644,7 @@
 						localStorageData: d
 					} = e;
 					var u, m;
-					Xf = l;
+					gv = l;
 					t.listen((e, t) => {
 						const n = l.getState(),
 							{
@@ -17722,7 +17806,7 @@
 									const r = Date.now() - s;
 									Object(B.a)(Object($g.e)("tab_backgrounded", n)(l.getState(), r, e, t))
 								}(s || e || n || t) && (kn.db(), kn.hb(), kn.fb(), kn.eb())
-							}(null === (e = null == n ? void 0 : n.locationState) || void 0 === e ? void 0 : e.clickId) && Wf.d[n.locationState.clickId] && !Wf.d[n.locationState.clickId].completed && ("visible" !== document.visibilityState ? Object(Wf.b)(n.locationState.clickId) : Object(Wf.c)(n.locationState.clickId))
+							}(null === (e = null == n ? void 0 : n.locationState) || void 0 === e ? void 0 : e.clickId) && dv.d[n.locationState.clickId] && !dv.d[n.locationState.clickId].completed && ("visible" !== document.visibilityState ? Object(dv.b)(n.locationState.clickId) : Object(dv.c)(n.locationState.clickId))
 						}), Object($.g)(l.getState()) && nf(l.getState), l.dispatch(Object(me.n)())
 					}), window.history.scrollRestoration = "manual", Ef.a.attachStore(l), l.dispatch(Object(de.b)(R.a.PageLoad));
 					const P = kn.p(null === (u = l.getState().user.account) || void 0 === u ? void 0 : u.id),
@@ -20425,4 +20509,4 @@
 		["./src/reddit/index.tsx", "runtime~Reddit", "vendors~Governance~ModListing~Reddit~Subreddit", "vendors~Chat~Governance~Reddit", "vendors~Reddit~StandalonePostPage", "vendors~Reddit", "PostCreation~Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~r~4c415e24", "Governance~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compo~bd4baca2", "Governance~ModListing~Reddit~ReportFlow~Subreddit", "Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddi~90fdacc3", "Chat~Governance~Reddit", "Governance~Reddit~Subreddit", "Governance~Reddit", "AuthorHovercard~Reddit"]
 	]
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit.5be26b83e98f888794b2.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit.d31a413094b086635efa.js.map
