@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostCreation.fc5ebb05e2de46541f0f.js
-// Retrieved at 6/21/2022, 2:10:03 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostCreation.72660b070c2dda6a4ed5.js
+// Retrieved at 6/21/2022, 3:40:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostCreation", "ChatMessageInput~MembershipPaywallPage~RichTextEditor", "ContributorRequestButton"], {
 		"./node_modules/autosize/dist/autosize.js": function(e, t, n) {
@@ -7082,6 +7082,11 @@
 				}
 			}
 		},
+		"./src/reddit/components/FlairList/index.m.less": function(e, t, n) {
+			e.exports = {
+				flairVariantInList: "_1Dl-kvSxyJMWO9nuoTof8N"
+			}
+		},
 		"./src/reddit/components/FlairList/index.tsx": function(e, t, n) {
 			"use strict";
 			var o = n("./node_modules/lodash/noop.js"),
@@ -7093,19 +7098,21 @@
 				l = n("./src/reddit/components/Flair/index.tsx"),
 				d = n("./src/reddit/helpers/flair.ts"),
 				u = n("./src/reddit/models/Flair/index.ts"),
-				p = n("./src/reddit/selectors/user.ts");
-			const m = Object(c.c)({
+				p = n("./src/reddit/selectors/user.ts"),
+				m = n("./src/reddit/components/FlairList/index.m.less"),
+				h = n.n(m);
+			const b = Object(c.c)({
 					labelNSFW: p.ab
 				}),
-				h = Object(a.b)(m),
-				b = e => {
+				f = Object(a.b)(b),
+				g = e => {
 					if (e.type === u.f.Richtext && e.richtext) {
 						const t = e.richtext.map(e => e.e === u.c.Emoji ? e.u : e.t).join("-");
 						return `${e.type}--${t}`
 					}
 					return `${e.type}--${e.text}`
 				};
-			t.a = h(e => {
+			t.a = f(e => {
 				let {
 					className: t,
 					isFlairFilter: n,
@@ -7116,16 +7123,18 @@
 					labelNSFW: p,
 					subredditName: m
 				} = e;
-				const h = !!c.find(e => e.type === u.f.Richtext),
+				const b = !!c.find(e => e.type === u.f.Richtext),
 					f = c.map(e => {
-						if (e.type === u.f.Text && h) return null;
+						if (e.type === u.f.Text && b) return null;
 						if (!p && e.type === u.f.Nsfw) return null;
 						const t = Object(d.j)(e),
 							c = `/r/${m}/`,
-							f = r ? () => r(e) : s.a;
+							f = r ? () => r(e) : s.a,
+							E = n && (e.type === u.f.Richtext || e.type === u.f.Text);
 						return i.a.createElement(l.b, {
+							className: E ? h.a.flairVariantInList : void 0,
 							isFlairFilter: n,
-							key: b(e),
+							key: g(e),
 							onClick: o,
 							onMouseDown: f,
 							disabled: a,
@@ -33938,4 +33947,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.fc5ebb05e2de46541f0f.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.72660b070c2dda6a4ed5.js.map
