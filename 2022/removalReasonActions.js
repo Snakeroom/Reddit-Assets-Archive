@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/removalReasonActions.110d6659e02e6952d27f.js
-// Retrieved at 6/16/2022, 6:00:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/removalReasonActions.486392a2e9ef47e01194.js
+// Retrieved at 6/21/2022, 2:10:03 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["removalReasonActions"], {
 		"./src/lib/scroll/index.ts": function(e, t, o) {
@@ -83,7 +83,7 @@
 			})), o.d(t, "l", (function() {
 				return Fe
 			})), o.d(t, "e", (function() {
-				return Ve
+				return He
 			})), o.d(t, "d", (function() {
 				return We
 			})), o.d(t, "a", (function() {
@@ -224,8 +224,8 @@
 			var B = o("./src/redditGQL/operations/UpdateCommentFollowState.json");
 			var F = o("./src/reddit/endpoints/post/index.tsx"),
 				G = o("./src/reddit/endpoints/post/convert.ts"),
-				V = o("./src/reddit/endpoints/publicAccessNetwork/index.ts"),
-				H = o("./src/reddit/featureFlags/index.ts"),
+				H = o("./src/reddit/endpoints/publicAccessNetwork/index.ts"),
+				V = o("./src/reddit/featureFlags/index.ts"),
 				q = o("./src/reddit/helpers/correlationIdTracker.ts"),
 				J = o("./src/reddit/helpers/dom/index.ts"),
 				W = o("./src/reddit/helpers/localStorage/index.ts"),
@@ -243,8 +243,8 @@
 				re = o("./node_modules/reselect/es/index.js");
 			const ie = Object(re.a)(e => Object(se.c)(e, {
 				experimentEligibilitySelector: se.a,
-				experimentName: ne.Ib
-			}), e => e === ne.ud);
+				experimentName: ne.Hb
+			}), e => e === ne.td);
 			var ce = o("./src/reddit/selectors/experiments/contributeBeforeSignUp.ts"),
 				ae = o("./src/reddit/selectors/experiments/emailEnablement.ts"),
 				de = o("./src/reddit/selectors/platform.ts"),
@@ -293,7 +293,7 @@
 						formData: a,
 						editorMode: d
 					} = e;
-					if (H.d.enableToxicityWarning(r)) {
+					if (V.d.enableToxicityWarning(r)) {
 						if (!(await P(s(), c, a, d))) return void t(Object(m.i)(xe))
 					}
 					t(ve(e))
@@ -351,7 +351,7 @@
 						const v = y.user.account.displayText,
 							R = l.commentMode;
 						let k;
-						if (b) k = await Object(V.i)(x(), i, l, v), e(Object(O.a)({
+						if (b) k = await Object(H.i)(x(), i, l, v), e(Object(O.a)({
 							streamId: i,
 							level: k.body.automuteLevel
 						}));
@@ -409,7 +409,7 @@
 						editorMode: l
 					} = e, u = o(), p = Object(de.e)(u);
 					let b = "";
-					if (p && (b = p.name), H.d.enableToxicityWarning(u)) {
+					if (p && (b = p.name), V.d.enableToxicityWarning(u)) {
 						if (!(await P(s(), b, d, l))) return void t(Object(m.i)(xe))
 					}
 					t(Ie({
@@ -601,7 +601,7 @@
 						}))
 					}
 				}, Ue = e => async t => {
-					t(Object(ue.q)(e)), t(Ve(e))
+					t(Object(ue.q)(e)), t(He(e))
 				}, Be = e => {
 					let {
 						parentCommentId: t,
@@ -622,7 +622,7 @@
 				}, Fe = (e, t) => o => o(De({
 					draftKey: e,
 					formData: t
-				})), Ge = Object(r.a)(pe.u), Ve = e => {
+				})), Ge = Object(r.a)(pe.u), He = e => {
 					let {
 						commentId: t,
 						commentMode: o,
@@ -645,7 +645,7 @@
 							}
 						})))
 					}
-				}, He = Object(r.a)(pe.F), qe = Object(r.a)(pe.E), Je = Object(r.a)(pe.G), We = Object(r.a)(pe.j), Qe = Object(r.a)(pe.f), ze = e => {
+				}, Ve = Object(r.a)(pe.F), qe = Object(r.a)(pe.E), Je = Object(r.a)(pe.G), We = Object(r.a)(pe.j), Qe = Object(r.a)(pe.f), ze = e => {
 					let {
 						id: t,
 						commentsPageKey: o,
@@ -659,7 +659,7 @@
 						} = c;
 						const l = i();
 						if (!l.user.account) return;
-						e(He({
+						e(Ve({
 							draftKey: n
 						})), z.d(l);
 						const m = Ce(r),
@@ -1430,8 +1430,8 @@
 					type: "json",
 					data: t
 				});
-			var V = o("./src/reddit/helpers/isPost.ts"),
-				H = o("./src/reddit/helpers/r2/normalizeCommentFromR2/index.ts"),
+			var H = o("./src/reddit/helpers/isPost.ts"),
+				V = o("./src/reddit/helpers/r2/normalizeCommentFromR2/index.ts"),
 				q = o("./src/reddit/helpers/routeKey/index.ts"),
 				J = o("./src/reddit/models/ModQueue/index.ts"),
 				W = o("./src/reddit/models/PostDraft/index.ts"),
@@ -1547,7 +1547,7 @@
 					const d = i(),
 						l = d.user.account && d.user.account.displayText,
 						m = e[0],
-						u = Object(V.a)(m) ? Q.e.Post : Q.e.Comment,
+						u = Object(H.a)(m) ? Q.e.Post : Q.e.Comment,
 						p = u === Q.e.Post ? d.posts.models[m] : d.features.comments.models[m],
 						b = u === Q.e.Post ? M.S : T.j;
 					if (!p || !l) return !1;
@@ -1577,7 +1577,7 @@
 							if (i.ok) {
 								if (n === Q.f.Public) {
 									if (r(xe()), i.body) {
-										const e = Object(H.a)(i.body),
+										const e = Object(V.a)(i.body),
 											t = {
 												comment: e,
 												parentId: m
@@ -1837,12 +1837,12 @@
 				B = o("./src/reddit/selectors/tooltip.ts"),
 				F = o("./src/reddit/selectors/user.ts"),
 				G = o("./src/reddit/components/CommentSort/CommentSort.m.less"),
-				V = o.n(G),
-				H = o("./src/reddit/reducers/features/comments/visitHighlightingFilter/index.ts");
+				H = o.n(G),
+				V = o("./src/reddit/reducers/features/comments/visitHighlightingFilter/index.ts");
 			const q = Object(y.a)(v.a),
-				J = e => e === H.a.First ? n.fbt._("First Visit", null, {
+				J = e => e === V.a.First ? n.fbt._("First Visit", null, {
 					hk: "HdDSr"
-				}) : e === H.a.Last ? n.fbt._("Last Visit", null, {
+				}) : e === V.a.Last ? n.fbt._("Last Visit", null, {
 					hk: "3ubIq3"
 				}) : n.fbt._("None", null, {
 					hk: "4jwXNg"
@@ -1854,17 +1854,17 @@
 							trackHighlight: e,
 							selectedSort: t
 						} = this.props;
-						if (t !== H.a.None) {
-							e(t === H.a.Last ? "since_last_visit" : "since_first_visit", "view")
+						if (t !== V.a.None) {
+							e(t === V.a.Last ? "since_last_visit" : "since_first_visit", "view")
 						}
 					}, this.onDropdownClick = (e, t) => {
 						this.props.trackHighlight(e, "click"), this.props.changeHighlightSort(t)
 					}, this.onDropdownClickFirst = () => {
-						this.onDropdownClick("since_first_visit", H.a.First)
+						this.onDropdownClick("since_first_visit", V.a.First)
 					}, this.onDropdownClickLast = () => {
-						this.onDropdownClick("since_last_visit", H.a.Last)
+						this.onDropdownClick("since_last_visit", V.a.Last)
 					}, this.onDropdownClickNone = () => {
-						this.onDropdownClick("do_not_highlight", H.a.None)
+						this.onDropdownClick("do_not_highlight", V.a.None)
 					}
 				}
 				componentDidMount() {
@@ -1881,32 +1881,32 @@
 						selectedSort: s
 					} = this.props;
 					return r.a.createElement("div", {
-						className: V.a.HighlightWrapper
+						className: H.a.HighlightWrapper
 					}, r.a.createElement(R.b, {
-						className: Object(a.a)(V.a.HighlightPicker, V.a.Row),
-						textClassName: V.a.SortOptionDropdownText,
+						className: Object(a.a)(H.a.HighlightPicker, H.a.Row),
+						textClassName: H.a.SortOptionDropdownText,
 						displayText: `${n.fbt._("Highlight",null,{hk:"2ZiUE8"})}: ${J(s)}`,
 						id: t,
 						noHover: !0,
 						onClick: o
 					}), r.a.createElement(M.b, {
-						className: V.a.DropdownTriangle,
+						className: H.a.DropdownTriangle,
 						onClick: o
 					}), r.a.createElement(q, {
 						isOpen: e,
 						renderContentsHidden: !0,
 						tooltipId: t
 					}, r.a.createElement(R.b, {
-						displayText: J(H.a.First),
-						isSelected: s === H.a.First,
+						displayText: J(V.a.First),
+						isSelected: s === V.a.First,
 						onClick: this.onDropdownClickFirst
 					}), r.a.createElement(R.b, {
-						displayText: J(H.a.Last),
-						isSelected: s === H.a.Last,
+						displayText: J(V.a.Last),
+						isSelected: s === V.a.Last,
 						onClick: this.onDropdownClickLast
 					}), r.a.createElement(R.b, {
-						displayText: J(H.a.None),
-						isSelected: s === H.a.None,
+						displayText: J(V.a.None),
+						isSelected: s === V.a.None,
 						onClick: this.onDropdownClickNone
 					})))
 				}
@@ -2034,24 +2034,24 @@
 						hk: "EDqlf"
 					}), G = I && !u;
 					return r.a.createElement("div", {
-						className: Object(a.a)(t, V.a.container, {
-							[V.a.hideCommentSort]: !j && G
+						className: Object(a.a)(t, H.a.container, {
+							[H.a.hideCommentSort]: !j && G
 						}),
 						ref: c
 					}, r.a.createElement("div", {
-						className: V.a.containerRow
+						className: H.a.containerRow
 					}, !G && r.a.createElement(r.a.Fragment, null, r.a.createElement("div", {
-						className: V.a.DropdownContainer
+						className: H.a.DropdownContainer
 					}, r.a.createElement(R.b, {
-						className: Object(a.a)(V.a.SortPicker, V.a.Row),
-						textClassName: V.a.SortOptionDropdownText,
+						className: Object(a.a)(H.a.SortPicker, H.a.Row),
+						textClassName: H.a.SortOptionDropdownText,
 						displayText: `${n.fbt._("Sort by",null,{hk:"E6T9r"})}: ${K}`,
 						id: z,
 						noHover: !0,
 						skipRoleAttr: !0,
 						onClick: this.onOpenDropdownClick
 					}), r.a.createElement(M.b, {
-						className: V.a.DropdownTriangle,
+						className: H.a.DropdownTriangle,
 						onClick: this.onOpenDropdownClick
 					})), r.a.createElement(Y, {
 						isOpen: i,
@@ -2062,7 +2062,7 @@
 							s = d.v[e],
 							i = s ? s() : "";
 						return r.a.createElement(_.a, {
-							className: V.a.ViewFullLinkOrOverlayLink,
+							className: H.a.ViewFullLinkOrOverlayLink,
 							isOverlay: p,
 							key: e,
 							onClick: () => this.onSortOptionClick(e),
@@ -2075,16 +2075,16 @@
 							skipRoleAttr: !0
 						}))
 					}))), N && !G && (y ? r.a.createElement("button", {
-						className: V.a.SortLink,
+						className: H.a.SortLink,
 						onClick: g !== y ? this.setSortOnClick : this.clearSortOnClick
 					}, g !== y ? n.fbt._("Set new suggested sort", null, {
 						hk: "13BpoB"
 					}) : n.fbt._("Clear suggested sort", null, {
 						hk: "3WWQBy"
 					})) : r.a.createElement("button", {
-						className: V.a.SetSort
+						className: H.a.SetSort
 					}, r.a.createElement("button", {
-						className: V.a.SortLink,
+						className: H.a.SortLink,
 						onClick: this.setSortOnClick
 					}, n.fbt._("Set as suggested sort", null, {
 						hk: "3qLzxp"
@@ -2093,23 +2093,23 @@
 						onMouseEnter: C,
 						onMouseLeave: l
 					}, r.a.createElement(x.c, {
-						className: V.a.Tooltip,
+						className: H.a.Tooltip,
 						text: n.fbt._("Suggested sort defaults Redditors to a specific way of sorting comments within this post", null, {
 							hk: "3KM0ma"
 						}),
 						tooltipId: $
 					}), r.a.createElement(D.a, {
-						className: V.a.Info
+						className: H.a.Info
 					})))), u && r.a.createElement("button", {
-						className: V.a.ContestMode,
+						className: H.a.ContestMode,
 						onClick: this.props.toggleContestModeModal
 					}, n.fbt._("Contest", null, {
 						hk: "1KrhdJ"
 					}), r.a.createElement(k.a, {
-						className: V.a.ToggleSwitch,
+						className: H.a.ToggleSwitch,
 						on: I
 					}))), j && r.a.createElement("div", {
-						className: V.a.containerRow
+						className: H.a.containerRow
 					}, r.a.createElement(Q, {
 						changeHighlightSort: e,
 						highlightIsOpen: m,
@@ -2794,11 +2794,11 @@
 				l = Object(n.a)(d, e => !!e),
 				m = e => {
 					const t = d(e);
-					return !!t && a(e, t) === s.db.SkipOnboarding
+					return !!t && a(e, t) === s.cb.SkipOnboarding
 				},
 				u = e => {
 					const t = d(e);
-					return !!t && a(e, t) === s.db.RegOnboarding
+					return !!t && a(e, t) === s.cb.RegOnboarding
 				}
 		},
 		"./src/redditGQL/operations/CommentToxicity.json": function(e) {
@@ -2815,4 +2815,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/removalReasonActions.110d6659e02e6952d27f.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/removalReasonActions.486392a2e9ef47e01194.js.map

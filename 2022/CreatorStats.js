@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CreatorStats.5f6cc237a44d51624a00.js
-// Retrieved at 6/1/2022, 6:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CreatorStats.3a94acea29555930fd97.js
+// Retrieved at 6/21/2022, 2:10:03 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CreatorStats"], {
 		"./src/reddit/components/CreatorStats/Stats.tsx": function(t, e, s) {
@@ -30,7 +30,7 @@
 					return t
 				}).apply(this, arguments)
 			}
-			const _ = Object(f.a)({
+			const S = Object(f.a)({
 					resolved: {},
 					chunkName: () => "ViewsTooltip",
 					isReady(t) {
@@ -52,7 +52,7 @@
 				}, {
 					ssr: !1
 				}),
-				S = Object(f.a)({
+				_ = Object(f.a)({
 					resolved: {},
 					chunkName: () => "CrosspostsStat",
 					isReady(t) {
@@ -98,7 +98,7 @@
 						tooltipTitleClassName: m,
 						tooltipTitleText: f,
 						tooltipDescriptionText: v,
-						tooltipExtra: _
+						tooltipExtra: S
 					} = t;
 					return l.a.createElement("div", {
 						className: Object(c.a)(O.a.singleStat, e),
@@ -121,7 +121,7 @@
 						className: Object(c.a)(O.a.tooltipTitle, m)
 					}, f), v && l.a.createElement("div", {
 						className: O.a.tooltipDescription
-					}, v), _))
+					}, v), S))
 				},
 				k = t => {
 					let {
@@ -173,7 +173,7 @@
 						}),
 						iconName: d.a.show,
 						tooltipClassName: O.a.statsTooltip,
-						tooltipExtra: l.a.createElement(_, {
+						tooltipExtra: l.a.createElement(S, {
 							totalCount: t.postStats.viewCountTotals.totalCount,
 							viewsData: t.postStats.viewCountTrends.data
 						})
@@ -242,7 +242,7 @@
 						tooltipTitleClassName: O.a.crosspostsStatTooltipTitle,
 						tooltipExtra: l.a.createElement(k, {
 							className: f ? O.a.twoRowContainer : void 0,
-							leftStatNumber: t.postOtherDiscussions && 0 !== Object.keys(t.postOtherDiscussions).length ? l.a.createElement(S, {
+							leftStatNumber: t.postOtherDiscussions && 0 !== Object.keys(t.postOtherDiscussions).length ? l.a.createElement(_, {
 								crosspostedDestinations: t.postOtherDiscussions,
 								onClick: w,
 								isExpanded: f,
@@ -314,13 +314,13 @@
 				v = s("./src/reddit/selectors/user.ts"),
 				O = s("./src/reddit/actions/creatorStats/constants.ts"),
 				C = s("./src/lib/initializeClient/installReducer.ts"),
-				_ = s("./src/reddit/reducers/features/creatorStats/index.ts");
+				S = s("./src/reddit/reducers/features/creatorStats/index.ts");
 			Object(C.a)({
 				features: {
-					creatorStats: _.a
+					creatorStats: S.a
 				}
 			});
-			const S = Object(c.a)(O.b),
+			const _ = Object(c.a)(O.b),
 				j = Object(c.a)(O.a),
 				N = (t, e, s) => {
 					var o, a;
@@ -343,7 +343,7 @@
 							});
 						if (!(c && Object(d.d)(c.created))) return;
 						if (null === (i = null === (n = o().features) || void 0 === n ? void 0 : n.creatorStats) || void 0 === i ? void 0 : i.postStats[e]) return;
-						t(S());
+						t(_());
 						const p = await (async (t, e) => {
 							return await Object(u.a)(t, {
 								...b,
@@ -404,9 +404,9 @@
 			var w = s("./src/reddit/components/ShareMenu/index.tsx"),
 				T = s("./src/reddit/helpers/trackers/creatorStats.ts"),
 				y = s("./src/reddit/hooks/useTracking.ts"),
-				I = s("./src/reddit/components/CreatorStats/index.m.less"),
-				E = s.n(I),
-				x = s("./src/reddit/components/CreatorStats/Stats.tsx");
+				x = s("./src/reddit/components/CreatorStats/index.m.less"),
+				I = s.n(x),
+				E = s("./src/reddit/components/CreatorStats/Stats.tsx");
 			e.default = t => {
 				const e = Object(y.a)(),
 					s = Object(l.d)(),
@@ -421,7 +421,7 @@
 						} = t;
 						return async (t, o) => {
 							const a = o();
-							Object(m.b)(a) && Object(v.Db)(a, {
+							Object(m.a)(a) && Object(v.Db)(a, {
 								postId: e
 							}) && (Object(f.U)(a, {
 								subredditId: s
@@ -440,7 +440,7 @@
 						} = t;
 						return async (t, o) => {
 							const a = o();
-							Object(m.a)(a, e) && Object(p.a)(a, e) && t(k({
+							Object(p.a)(a, e) && t(k({
 								postId: e,
 								subredditId: s
 							}))
@@ -466,35 +466,35 @@
 						e(Object(T.e)(t.post.id, c, o))
 					} else e(Object(T.f)(t.post.id, c))
 				}, [e, t.post.id, c, h, t.isOwnProfileStats]);
-				const _ = Object(n.useCallback)(() => {
+				const S = Object(n.useCallback)(() => {
 					var s;
 					const o = (null === (s = null == h ? void 0 : h.viewCountTotals) || void 0 === s ? void 0 : s.totalCount) || 0;
 					e(Object(T.c)(t.post.id, c, o))
 				}, [e, t.post.id, c, h]);
 				return i.a.createElement("div", {
-					className: Object(a.a)(E.a.container, t.className)
+					className: Object(a.a)(I.a.container, t.className)
 				}, i.a.createElement("div", {
-					className: E.a.titleContainer
+					className: I.a.titleContainer
 				}, i.a.createElement("div", {
-					className: E.a.title
+					className: I.a.title
 				}, o.fbt._("Post Insights", null, {
 					hk: "3ZuB9z"
 				})), i.a.createElement("div", {
-					className: E.a.subtitle
+					className: I.a.subtitle
 				}, ((t, e, s, a, n, l) => {
 					switch (t) {
 						case d.b.NotAvailableYet:
 							return i.a.createElement(i.a.Fragment, null, o.fbt._("Check back later to see views, shares, and more.", null, {
 								hk: "4rItwf"
 							}), " ", a && o.fbt._("{=Share your post} to spread the word!", [o.fbt._param("=Share your post", i.a.createElement(w.a, {
-								className: E.a.shareMenu,
+								className: I.a.shareMenu,
 								dropdownId: "share-menu-creator-stats",
 								permalink: e.permalink,
 								post: e,
 								sendEventWithName: n,
 								subredditType: s.type
 							}, o.fbt._("{=Share your post}", [o.fbt._param("=Share your post", i.a.createElement("button", {
-								className: E.a.linkText,
+								className: I.a.linkText,
 								onClick: l
 							}, o.fbt._("Share your post", null, {
 								hk: "4afsjM"
@@ -510,7 +510,7 @@
 								hk: "44JOdg"
 							}), " ", a && o.fbt._("{=Create a new post} and see how it performs!", [o.fbt._param("=Create a new post", i.a.createElement("a", {
 								href: `/r/${s.name}/submit`,
-								className: E.a.linkText
+								className: I.a.linkText
 							}, o.fbt._("Create a new post", null, {
 								hk: "ByQXU"
 							})))], {
@@ -527,7 +527,7 @@
 								hk: "3ZzrwZ"
 							}), " ", a && o.fbt._("{=Create a new post} and see how it performs!", [o.fbt._param("=Create a new post", i.a.createElement("a", {
 								href: `/r/${s.name}/submit`,
-								className: E.a.linkText
+								className: I.a.linkText
 							}, o.fbt._("Create a new post", null, {
 								hk: "ByQXU"
 							})))], {
@@ -540,7 +540,7 @@
 						default:
 							return ""
 					}
-				})(c, t.post, t.subreddit, C, s => e(Object(T.b)(s, t.post.id)), t.isOwnProfileStats ? _ : void 0))), c === d.b.Available && h && i.a.createElement(x.a, {
+				})(c, t.post, t.subreddit, C, s => e(Object(T.b)(s, t.post.id)), t.isOwnProfileStats ? S : void 0))), c === d.b.Available && h && i.a.createElement(E.a, {
 					isUserOp: C,
 					upvoteRatio: t.post.upvoteRatio || void 0,
 					postOtherDiscussions: t.isOwnProfileStats ? b : void 0,
@@ -670,9 +670,24 @@
 					subreddit: Object(r.gb)(o)
 				})
 		},
+		"./src/reddit/selectors/experiments/creatorStats.ts": function(t, e, s) {
+			"use strict";
+			s.d(e, "a", (function() {
+				return n
+			}));
+			var o = s("./src/reddit/constants/experiments.ts"),
+				a = s("./src/reddit/helpers/chooseVariant/index.ts"),
+				r = s("./src/reddit/selectors/user.ts");
+			const n = t => {
+				return Object(a.c)(t, {
+					experimentEligibilitySelector: r.Q,
+					experimentName: o.Me
+				}) === o.td
+			}
+		},
 		"./src/redditGQL/operations/CreatorStats.json": function(t) {
 			t.exports = JSON.parse('{"id":"556ffe7b3296"}')
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CreatorStats.5f6cc237a44d51624a00.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CreatorStats.3a94acea29555930fd97.js.map

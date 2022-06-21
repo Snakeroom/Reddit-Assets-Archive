@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/OnboardingModal.73c2bce7291ab475214b.js
-// Retrieved at 6/21/2022, 12:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/OnboardingModal.8c83acb4f128ed7eed2f.js
+// Retrieved at 6/21/2022, 2:10:03 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["OnboardingModal"], {
 		"./node_modules/lodash/_baseRange.js": function(e, t) {
@@ -360,7 +360,7 @@
 			const L = e => {
 				const t = Object(G.c)(e, {
 					experimentEligibilitySelector: G.a,
-					experimentName: b.kc
+					experimentName: b.jc
 				});
 				return !!Object(A.a)(t)
 			};
@@ -397,7 +397,7 @@
 						},
 						forceGeopopular: !0,
 						includeCommunityDUs: !1,
-						includeInterestTopics: !!p && !Object(b.Xf)(p),
+						includeInterestTopics: !!p && !Object(b.Wf)(p),
 						includeFeaturedAnnouncements: !0,
 						includeLiveEvents: !0,
 						includeIdentity: h && !(null === (r = null === (n = e.user.account) || void 0 === n ? void 0 : n.karma) || void 0 === r ? void 0 : r.total),
@@ -1943,7 +1943,7 @@
 				}, [j, _, t, X]), Object(o.useEffect)(() => {
 					_ && Object(He.a)(null == O ? void 0 : O.genderCategory, _.success)
 				}, [_, O]);
-				const Y = Object(i.e)(Je.b) === _e.rb.Removed;
+				const Y = Object(i.e)(Je.b) === _e.qb.Removed;
 				Object(o.useEffect)(() => {
 					let e = !1;
 					return async function() {
@@ -4004,13 +4004,13 @@
 			const o = e => {
 					return !(Object(s.c)(e, {
 						experimentEligibilitySelector: s.a,
-						experimentName: r.be
-					}) === r.ud)
+						experimentName: r.ae
+					}) === r.td)
 				},
 				a = e => Object(s.c)(e, {
 					experimentEligibilitySelector: s.a,
-					experimentName: r.ce
-				}) === r.ud
+					experimentName: r.be
+				}) === r.td
 		},
 		"./src/reddit/selectors/experiments/inAppNotification.ts": function(e, t, n) {
 			"use strict";
@@ -4028,20 +4028,20 @@
 				o = n("./src/reddit/selectors/experiments/index.ts"),
 				a = n("./src/reddit/selectors/experiments/utils.ts");
 			const i = e => Object(s.c)(e, {
-					experimentName: r.Ub,
+					experimentName: r.Tb,
 					experimentEligibilitySelector: o.e
-				}) === r.eb.topOfFeedWithCTAs,
+				}) === r.db.topOfFeedWithCTAs,
 				c = e => (e => Object(s.c)(e, {
-					experimentName: r.Ub,
+					experimentName: r.Tb,
 					experimentEligibilitySelector: o.e
-				}) === r.eb.topOfFeedNoCTAs)(e) || i(e),
+				}) === r.db.topOfFeedNoCTAs)(e) || i(e),
 				d = e => Object(s.c)(e, {
-					experimentName: r.Ub,
+					experimentName: r.Tb,
 					experimentEligibilitySelector: o.e
-				}) === r.eb.floatInFeed,
+				}) === r.db.floatInFeed,
 				l = e => {
 					const t = Object(s.c)(e, {
-						experimentName: r.Ub,
+						experimentName: r.Tb,
 						experimentEligibilitySelector: o.e
 					});
 					return Object(a.a)(t)
@@ -4180,4 +4180,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/OnboardingModal.73c2bce7291ab475214b.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/OnboardingModal.8c83acb4f128ed7eed2f.js.map

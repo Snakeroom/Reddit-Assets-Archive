@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~Subreddit~SubredditWiki.5e01396abd5b01d7d591.js
-// Retrieved at 6/16/2022, 6:00:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~Subreddit~SubredditWiki.a8ff0a2a578b6ea38dbc.js
+// Retrieved at 6/21/2022, 2:10:03 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~Subreddit~SubredditWiki"], {
 		"./node_modules/lodash/random.js": function(e, t, r) {
@@ -1696,7 +1696,7 @@
 					}, n[t]) : null
 				};
 				if (e.isD2xPdpSideRailRecsEnabled) {
-					const t = e.d2xPdpSideRailRecsVariant === u.Gc.GreyRereddit ? e.reredditButtons : [];
+					const t = e.d2xPdpSideRailRecsVariant === u.Fc.GreyRereddit ? e.reredditButtons : [];
 					return s.a.createElement(j, {
 						reredditContent: t,
 						countryCode: e.countryCode
@@ -2213,7 +2213,7 @@
 				U = r("./src/reddit/selectors/features/predictions/tournaments/index.ts");
 			const {
 				fbt: z
-			} = r("./node_modules/fbt/lib/FbtPublic.js"), G = e => {
+			} = r("./node_modules/fbt/lib/FbtPublic.js"), V = e => {
 				let {
 					subredditId: t
 				} = e;
@@ -2255,12 +2255,12 @@
 					hk: "1o89m4"
 				}))) : null
 			};
-			var V = r("./src/lib/constants/index.ts");
+			var G = r("./src/lib/constants/index.ts");
 			const {
 				fbt: q
 			} = r("./node_modules/fbt/lib/FbtPublic.js");
 			const J = Object(d.u)(),
-				K = [V.Nb.SUBREDDIT, V.Nb.COMMENTS, V.Nb.COLLECTION_COMMENTS],
+				K = [G.Nb.SUBREDDIT, G.Nb.COMMENTS, G.Nb.COLLECTION_COMMENTS],
 				Z = Object(a.c)({
 					isMetaFilterEnabled: (e, t) => !!e.subreddits.appliedFilters.meta[t.subredditId],
 					isPostsRoute: (e, t) => !!t.pageLayer && !!t.pageLayer.meta && K.indexOf(t.pageLayer.meta.name) > -1,
@@ -2340,7 +2340,7 @@
 					homeUrl: t,
 					isTopBannerVariant: r,
 					pageLayer: n
-				} = e, i = !!n && !!n.meta && n.meta.name === V.Nb.SUBREDDIT_WIKI, a = `wiki/${ae.i}`, o = t.endsWith("/") ? t + a : `${t}/${a}`;
+				} = e, i = !!n && !!n.meta && n.meta.name === G.Nb.SUBREDDIT_WIKI, a = `wiki/${ae.i}`, o = t.endsWith("/") ? t + a : `${t}/${a}`;
 				return s.a.createElement(_, {
 					isActive: i,
 					isTopBannerVariant: r,
@@ -2369,7 +2369,7 @@
 				subredditId: e.subredditId
 			}), s.a.createElement(le, {
 				subredditId: e.subredditId
-			}), s.a.createElement(G, {
+			}), s.a.createElement(V, {
 				subredditId: e.subredditId
 			})), e.widget && s.a.createElement(s.a.Fragment, null, e.widget.showWiki && s.a.createElement(ce, {
 				homeUrl: e.homeUrl,
@@ -3255,7 +3255,7 @@
 				W = m.a.div("EventLocation", L.a),
 				U = m.a.div("EventDescription", L.a),
 				z = m.a.wrapped(F.a, "ToggleDescription", L.a);
-			class G extends s.a.Component {
+			class V extends s.a.Component {
 				constructor(e) {
 					super(e), this.toggleDescriptionView = () => {
 						this.setState({
@@ -3277,7 +3277,7 @@
 					}))) : s.a.createElement(U, null, e.text)
 				}
 			}
-			var V = e => s.a.createElement(d.a, {
+			var G = e => s.a.createElement(d.a, {
 					styles: e.widget.styles,
 					title: e.widget.shortName,
 					truncateThreshold: e.truncateThreshold,
@@ -3296,7 +3296,7 @@
 					return n < 10 ? `${r}:0${n}` : `${r}:${n}`
 				})(t.startTime), " ")), t.location && e.widget.configuration.showLocation && s.a.createElement(W, null, t.locationHtml ? s.a.createElement(M, {
 					html: t.locationHtml
-				}) : t.location), t.description && e.widget.configuration.showDescription && s.a.createElement(G, {
+				}) : t.location), t.description && e.widget.configuration.showDescription && s.a.createElement(V, {
 					text: t.description
 				})))),
 				q = r("./src/reddit/components/TrackingHelper/index.tsx"),
@@ -3523,7 +3523,7 @@
 						case "community-list":
 							return K;
 						case "calendar":
-							return V;
+							return G;
 						case "image":
 							return oe;
 						case "custom":
@@ -4202,8 +4202,8 @@
 			const o = e => s.e[Object(i.S)(e, {})] === s.d.Card,
 				d = e => Object(a.c)(e, {
 					experimentEligibilitySelector: o,
-					experimentName: n.ub
-				}) === n.zc.Treatment
+					experimentName: n.tb
+				}) === n.yc.Treatment
 		},
 		"./src/reddit/selectors/experiments/d2xPdpSideRailRecs.ts": function(e, t, r) {
 			"use strict";
@@ -4220,11 +4220,11 @@
 				d = r("./node_modules/reselect/es/index.js");
 			const c = Object(d.a)(e => Object(s.c)(e, {
 					experimentEligibilitySelector: e => Object(o.g)(e) && Object(i.f)(e),
-					experimentName: n.mc
+					experimentName: n.lc
 				}), a.a),
 				l = Object(d.a)(e => Object(s.c)(e, {
 					experimentEligibilitySelector: e => !Object(o.g)(e) && Object(i.f)(e),
-					experimentName: n.lc
+					experimentName: n.kc
 				}), a.a),
 				u = Object(d.a)(c, l, (e, t) => e || t),
 				m = Object(d.a)(c, l, (e, t) => !(!e && !t))
@@ -4243,8 +4243,8 @@
 				o = e => a.includes(e),
 				d = Object(n.a)(e => Object(i.c)(e, {
 					experimentEligibilitySelector: i.a,
-					experimentName: s.Qd
-				}), e => e === s.ud)
+					experimentName: s.Pd
+				}), e => e === s.td)
 		},
 		"./src/redditGQL/operations/SubredditUserAchievements.json": function(e) {
 			e.exports = JSON.parse('{"id":"92790c69eba6"}')
@@ -4254,4 +4254,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~Subreddit~SubredditWiki.5e01396abd5b01d7d591.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~Subreddit~SubredditWiki.a8ff0a2a578b6ea38dbc.js.map

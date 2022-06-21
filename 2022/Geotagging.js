@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Geotagging.e0591feab97bd266f934.js
-// Retrieved at 6/16/2022, 6:00:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Geotagging.894afe61f6f90f018ad1.js
+// Retrieved at 6/21/2022, 2:10:03 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Geotagging"], {
 		"./node_modules/p-debounce/index.js": function(e, t, n) {
@@ -449,7 +449,7 @@
 					}, s[t]) : null
 				};
 				if (e.isD2xPdpSideRailRecsEnabled) {
-					const t = e.d2xPdpSideRailRecsVariant === u.Gc.GreyRereddit ? e.reredditButtons : [];
+					const t = e.d2xPdpSideRailRecsVariant === u.Fc.GreyRereddit ? e.reredditButtons : [];
 					return r.a.createElement(O, {
 						reredditContent: t,
 						countryCode: e.countryCode
@@ -1040,9 +1040,9 @@
 				I = n("./src/reddit/components/TopicSidebar/SubredditList/index.m.less"),
 				L = n.n(I);
 			const {
-				fbt: G
-			} = n("./node_modules/fbt/lib/FbtPublic.js"), F = 8, R = Array.from({
-				length: F
+				fbt: F
+			} = n("./node_modules/fbt/lib/FbtPublic.js"), G = 8, R = Array.from({
+				length: G
 			}).map((e, t) => r.a.createElement(P, {
 				className: L.a.Subreddit,
 				key: t
@@ -1066,14 +1066,14 @@
 						className: e,
 						subredditIds: t,
 						topicUrl: n
-					} = this.props, s = t.slice(0, F);
+					} = this.props, s = t.slice(0, G);
 					return r.a.createElement(o.a, {
 						className: Object(i.a)(L.a.Container, e)
 					}, r.a.createElement("div", {
 						className: L.a.Title
 					}, r.a.createElement(c.b, {
 						type: c.a.Widget
-					}, G._("Top Communities", null, {
+					}, F._("Top Communities", null, {
 						hk: "46yzcK"
 					}))), r.a.createElement("div", {
 						className: L.a.SubredditList
@@ -1082,12 +1082,12 @@
 						discoveryUnit: B,
 						key: e,
 						subredditId: e
-					})) : R), t.length > F && r.a.createElement(a.a, {
+					})) : R), t.length > G && r.a.createElement(a.a, {
 						to: n
 					}, r.a.createElement(l.r, {
 						className: L.a.SeeMore,
 						onClick: this.onSeeMoreCommunities
-					}, G._("See more", null, {
+					}, F._("See more", null, {
 						hk: "2qkY6H"
 					}))))
 				}
@@ -1551,23 +1551,23 @@
 					...P,
 					variables: Object(T.b)(t)
 				}), L = n("./src/reddit/helpers/graphql/normalizeSubredditFromGql/index.ts");
-			const G = "crowdsource",
-				F = {
+			const F = "crowdsource",
+				G = {
 					pageType: "crowdsource_feed_geo"
 				},
 				R = {
 					pageType: "geo_entry"
 				},
 				B = e => () => ({
-					source: G,
+					source: F,
 					noun: "skip",
 					action: "click",
 					subreddit: Object(L.a)(e),
 					userSubreddit: Object(L.g)(e.modPermissions, e.isSubscribed),
-					actionInfo: F
+					actionInfo: G
 				}),
 				M = e => () => ({
-					source: G,
+					source: F,
 					noun: "location_field",
 					action: "click",
 					subreddit: Object(L.a)(e),
@@ -1582,7 +1582,7 @@
 
 			function J(e) {
 				return (t, n) => () => ({
-					source: G,
+					source: F,
 					noun: e,
 					action: "click",
 					subreddit: Object(L.a)(t),
@@ -1596,13 +1596,13 @@
 
 			function Q(e) {
 				return (t, n) => () => ({
-					source: G,
+					source: F,
 					noun: e,
 					action: "click",
 					subreddit: Object(L.a)(t),
 					userSubreddit: Object(L.g)(t.modPermissions, t.isSubscribed),
 					actionInfo: {
-						...F,
+						...G,
 						reason: n
 					}
 				})
@@ -1807,11 +1807,11 @@
 				c = n("./node_modules/reselect/es/index.js");
 			const d = Object(c.a)(e => Object(r.c)(e, {
 					experimentEligibilitySelector: e => Object(o.g)(e) && Object(a.f)(e),
-					experimentName: s.mc
+					experimentName: s.lc
 				}), i.a),
 				l = Object(c.a)(e => Object(r.c)(e, {
 					experimentEligibilitySelector: e => !Object(o.g)(e) && Object(a.f)(e),
-					experimentName: s.lc
+					experimentName: s.kc
 				}), i.a),
 				u = Object(c.a)(d, l, (e, t) => e || t),
 				m = Object(c.a)(d, l, (e, t) => !(!e && !t))
@@ -1830,4 +1830,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Geotagging.e0591feab97bd266f934.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Geotagging.894afe61f6f90f018ad1.js.map

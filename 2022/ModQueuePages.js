@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModQueuePages.f7fac821236018b30984.js
-// Retrieved at 6/16/2022, 6:00:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModQueuePages.6135d4322031731412c4.js
+// Retrieved at 6/21/2022, 2:10:03 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModQueuePages"], {
 		"./node_modules/lodash/includes.js": function(e, t, s) {
@@ -226,8 +226,8 @@
 			});
 			const D = Object(o.a)(M.j),
 				F = Object(o.a)(M.i),
-				B = Object(o.a)(M.h),
-				A = Object(o.a)(M.g),
+				A = Object(o.a)(M.h),
+				B = Object(o.a)(M.g),
 				U = Object(o.a)(M.f),
 				W = Object(o.a)(M.e),
 				H = Object(o.a)(M.n),
@@ -248,10 +248,10 @@
 					let f, x, g;
 					switch (t) {
 						case r.rb.Edited:
-							f = A, x = W, g = U;
+							f = B, x = W, g = U;
 							break;
 						case r.rb.Modqueue:
-							f = D, x = B, g = F;
+							f = D, x = A, g = F;
 							break;
 						case r.rb.Reports:
 							f = H, x = V, g = Q;
@@ -873,10 +873,10 @@
 				M = s("./src/reddit/actions/toaster.ts"),
 				D = s("./src/reddit/constants/modals.ts"),
 				F = s("./src/lib/makeApiRequest/index.ts"),
-				B = s("./src/lib/omitHeaders/index.ts"),
-				A = s("./src/reddit/constants/headers.ts"),
+				A = s("./src/lib/omitHeaders/index.ts"),
+				B = s("./src/reddit/constants/headers.ts"),
 				U = s("./src/reddit/models/RichTextJson/addRTJParam.ts");
-			const W = (e, t) => Object(F.a)(Object(B.a)(e, [A.a]), {
+			const W = (e, t) => Object(F.a)(Object(A.a)(e, [B.a]), {
 					endpoint: `${e.apiUrl}/api/v1/modactions/removal_reasons/`,
 					method: v.jb.POST,
 					type: "json",
@@ -886,7 +886,7 @@
 						mod_note: t.modNote
 					}
 				}),
-				H = (e, t, s) => Object(F.a)(Object(B.a)(e, [A.a]), {
+				H = (e, t, s) => Object(F.a)(Object(A.a)(e, [B.a]), {
 					endpoint: Object(U.a)(`${e.apiUrl}/api/v1/modactions/removal_${s}_message/`),
 					method: v.jb.POST,
 					type: "json",
@@ -915,7 +915,7 @@
 					} = n;
 					const o = s().subreddits.models[e].name;
 					t(Z());
-					const a = await ((e, t) => Object(F.a)(Object(B.a)(e, [A.a]), {
+					const a = await ((e, t) => Object(F.a)(Object(A.a)(e, [B.a]), {
 						endpoint: `${e.apiUrl}/api/v1/${t}/removal_reasons.json`,
 						method: v.jb.GET
 					}))(r(), o);
@@ -929,7 +929,7 @@
 					} = o;
 					const i = r().subreddits.models[e].name;
 					s(se());
-					const d = await ((e, t, s) => Object(F.a)(Object(B.a)(e, [A.a]), {
+					const d = await ((e, t, s) => Object(F.a)(Object(A.a)(e, [B.a]), {
 						endpoint: `${e.apiUrl}/api/v1/${t}/removal_reasons`,
 						method: v.jb.POST,
 						data: s
@@ -957,7 +957,7 @@
 					} = o;
 					const i = r().subreddits.models[e].name;
 					s(ae());
-					const d = await ((e, t, s) => Object(F.a)(Object(B.a)(e, [A.a]), {
+					const d = await ((e, t, s) => Object(F.a)(Object(A.a)(e, [B.a]), {
 						endpoint: `${e.apiUrl}/api/v1/${t}/removal_reasons/${s.id}`,
 						method: v.jb.PUT,
 						data: {
@@ -980,7 +980,7 @@
 					} = o;
 					const i = r().subreddits.models[e].name;
 					s(le());
-					const d = await ((e, t, s) => Object(F.a)(Object(B.a)(e, [A.a]), {
+					const d = await ((e, t, s) => Object(F.a)(Object(A.a)(e, [B.a]), {
 						endpoint: `${e.apiUrl}/api/v1/${t}/removal_reasons/${s}`,
 						method: v.jb.DELETE
 					}))(a(), i, t);
@@ -2157,14 +2157,14 @@
 
 				function D(e) {
 					var t;
-					(o || B(e), d) || (t = e.timeStamp, N(Object(m.A)(b, t)))
+					(o || A(e), d) || (t = e.timeStamp, N(Object(m.A)(b, t)))
 				}
 
 				function F(e) {
 					N(Object(m.q)(b, e.timeStamp))
 				}
 
-				function B(e) {
+				function A(e) {
 					! function(e) {
 						N(Object(m.D)({
 							metadata: e,
@@ -2178,8 +2178,8 @@
 					})
 				}
 
-				function A(e) {
-					n || D(e), o || B(e), N(Object(m.C)(b))
+				function B(e) {
+					n || D(e), o || A(e), N(Object(m.C)(b))
 				}
 
 				function U() {
@@ -2195,9 +2195,9 @@
 						onBufferingChange: P,
 						onLoadStart: F,
 						onLoadedData: D,
-						onLoadedMetadata: B,
+						onLoadedMetadata: A,
 						onPause: R,
-						onPlaying: A,
+						onPlaying: B,
 						onTimeUpdate: M,
 						shouldLoad: h,
 						shouldPause: E,
@@ -2349,14 +2349,14 @@
 				M = s("./src/reddit/selectors/moderatorPermissions.ts"),
 				D = s("./src/reddit/components/ModQueueList/SubredditSelectorDropdown.m.less"),
 				F = s.n(D);
-			const B = Object(R.u)({
+			const A = Object(R.u)({
 					currentPageUrl: R.f
 				}),
-				A = Object(d.c)({
+				B = Object(d.c)({
 					moderatingSubreddits: M.p,
 					origin: S.j
 				}),
-				U = Object(i.b)(A),
+				U = Object(i.b)(B),
 				W = m.a.div("DropdownContainer", F.a),
 				H = m.a.div("SearchBarContainer", F.a),
 				Q = m.a.wrapped(k.b, "Row", F.a),
@@ -2421,7 +2421,7 @@
 					}))
 				}
 			}
-			var G = B(U(q)),
+			var G = A(U(q)),
 				J = s("./src/reddit/helpers/trackers/modTools.ts"),
 				X = s("./src/reddit/components/ModQueueList/LayoutNavigation.m.less"),
 				K = s.n(X);
@@ -2725,8 +2725,8 @@
 				M = s("./src/reddit/components/Comments/UnthreadedCommentMeta/index.tsx"),
 				D = s("./src/reddit/components/Comments/UnthreadedCommentPostMeta/index.tsx"),
 				F = s("./src/reddit/components/ModModeFilteredReason/index.tsx"),
-				B = s("./src/reddit/components/ModModeFilteredReason/helpers.ts"),
-				A = s("./src/reddit/components/ModModeReports/index.tsx"),
+				A = s("./src/reddit/components/ModModeFilteredReason/helpers.ts"),
+				B = s("./src/reddit/components/ModModeReports/index.tsx"),
 				U = s("./src/reddit/components/RichTextJson/index.tsx"),
 				W = s("./src/reddit/components/VerticalVotes/index.tsx"),
 				H = s("./src/reddit/controls/Checkbox/index.tsx"),
@@ -2759,7 +2759,7 @@
 						subreddit: l,
 						showBulkActionCheckbox: m,
 						toggleCheckbox: u
-					} = e, p = Object(B.a)(s), b = Object(h.c)(s);
+					} = e, p = Object(A.a)(s), b = Object(h.c)(s);
 					return d.a.createElement(R.a, {
 						className: Object(x.a)(t, G.a.Component, G.a.UnthreadedCommentContainer, {
 							[G.a.isBanned]: !!s.bannedBy,
@@ -2793,7 +2793,7 @@
 						subredditName: l ? l.displayText : null
 					}), p && d.a.createElement(F.a, {
 						thing: s
-					}), b && d.a.createElement(A.a, {
+					}), b && d.a.createElement(B.a, {
 						onIgnoreReports: a,
 						reportable: s
 					}), c && !s.isDeleted && d.a.createElement(z, {
@@ -2825,7 +2825,7 @@
 						subreddit: m,
 						showBulkActionCheckbox: u,
 						toggleCheckbox: p
-					} = e, b = Object(B.a)(s);
+					} = e, b = Object(A.a)(s);
 					return d.a.createElement(R.a, {
 						className: t,
 						clickTrackingId: s.id,
@@ -2847,7 +2847,7 @@
 						rtJsonElementProps: ue(e)
 					})), b && d.a.createElement(F.a, {
 						thing: s
-					}), o && d.a.createElement(A.a, {
+					}), o && d.a.createElement(B.a, {
 						onIgnoreReports: i,
 						reportable: s
 					}), d.a.createElement(ce, {
@@ -2896,8 +2896,8 @@
 					layout: e.layout
 				}))),
 				Fe = s("./node_modules/lodash/flatten.js"),
-				Be = s.n(Fe),
-				Ae = s("./src/reddit/actions/tooltip.ts"),
+				Ae = s.n(Fe),
+				Be = s("./src/reddit/actions/tooltip.ts"),
 				Ue = s("./src/reddit/icons/fonts/index.tsx"),
 				We = s("./src/reddit/icons/fonts/Approve/index.tsx"),
 				He = s("./src/reddit/icons/fonts/Remove/index.tsx"),
@@ -3036,10 +3036,10 @@
 				Et = Object(c.b)(Ot, e => ({
 					onApprove: () => e(Object(p.f)(Oe.a.Approve)),
 					onFlair: (t, s) => e(Object(p.f)(Oe.a.Flair, t, s)),
-					onOpenDropdown: () => e(Object(Ae.h)({
+					onOpenDropdown: () => e(Object(Be.h)({
 						tooltipId: ht
 					})),
-					onOpenModToolsDropdown: () => e(Object(Ae.h)({
+					onOpenModToolsDropdown: () => e(Object(Be.h)({
 						tooltipId: "BulkActions--ModTools"
 					})),
 					onRemove: () => e(Object(p.f)(Oe.a.Remove)),
@@ -3047,7 +3047,7 @@
 					onToggleFlairModal: () => e(Object(Ge.i)(ft))
 				})),
 				_t = (e, t) => {
-					const s = Be()(e.map(e => t[e].flair));
+					const s = Ae()(e.map(e => t[e].flair));
 					if (s.length <= 1) return s;
 					const n = [];
 					return s.forEach(e => {
@@ -3251,7 +3251,7 @@
 			! function(e) {
 				e.comments = "comments", e.hasReports = "hasReports", e.posts = "posts", e.postsWithFlair = "postsWithFlair", e.selfPosts = "selfPosts", e.spamFiltered = "spamFiltered"
 			}(Ft || (Ft = {}));
-			class Bt extends d.a.Component {
+			class At extends d.a.Component {
 				constructor() {
 					super(...arguments), this.isCheckboxSelected = e => a()(this.props.selectedItems, e), this.isAllSelected = e => {
 						const t = r()(e, this.props.selectedItems);
@@ -3387,7 +3387,7 @@
 					}), e.modQueueListingItems && e.modQueueListingItems.length ? this.renderItems(e) : e.modQueueListingItems ? d.a.createElement(Pe, null) : e.isModQueueListingPending ? d.a.createElement(De, null) : null)
 				}
 			}
-			t.a = Tt(Nt(Bt))
+			t.a = Tt(Nt(At))
 		},
 		"./src/reddit/components/PaginationButtons/index.m.less": function(e, t, s) {
 			e.exports = {
@@ -4286,9 +4286,9 @@
 			})), s.d(t, "f", (function() {
 				return D
 			})), s.d(t, "h", (function() {
-				return B
-			})), s.d(t, "g", (function() {
 				return A
+			})), s.d(t, "g", (function() {
+				return B
 			})), s.d(t, "i", (function() {
 				return U
 			})), s.d(t, "e", (function() {
@@ -4451,12 +4451,12 @@
 						case p.p:
 							return D(e, t, s, n);
 						case p.u:
-							return A(e, t, s, n);
+							return B(e, t, s, n);
 						case p.z:
-							return B(e, t, s, n)
+							return A(e, t, s, n)
 					}
 				},
-				B = (e, t, s, n) => {
+				A = (e, t, s, n) => {
 					const r = e.c,
 						o = e.h,
 						a = r.length,
@@ -4498,7 +4498,7 @@
 						key: n
 					}, i.a.createElement("thead", null, i.a.createElement(d.t, null, l)), i.a.createElement("tbody", null, m))
 				},
-				A = (e, t, s, n) => {
+				B = (e, t, s, n) => {
 					if (!e.c || !e.c.length) return (e => i.a.createElement(d.j, {
 						key: e
 					}, i.a.createElement("br", null)))(n);
@@ -4750,12 +4750,12 @@
 						rtJsonElementProps: a
 					});
 					switch (o) {
-						case h.Bf.SmIcon:
+						case h.Af.SmIcon:
 							return r.a.createElement(p, {
 								subredditName: n,
 								rtJsonElementProps: a
 							});
-						case h.Bf.SmIconHc:
+						case h.Af.SmIconHc:
 							return r.a.createElement(p, {
 								subredditName: n,
 								isHoverable: !0,
@@ -5539,8 +5539,8 @@
 				M = s("./src/reddit/components/Widgets/ModSupportLinks/index.m.less"),
 				D = s.n(M);
 			const F = P.a.a("ExternalLink", D.a),
-				B = P.a.wrapped(k.default, "InternalLink", D.a);
-			var A = () => a.a.createElement(L.a, {
+				A = P.a.wrapped(k.default, "InternalLink", D.a);
+			var B = () => a.a.createElement(L.a, {
 				title: O.fbt._("Moderator resources", null, {
 					hk: "1i4sLY"
 				}),
@@ -5557,7 +5557,7 @@
 				target: R.d.BLANK
 			}, O.fbt._("Moderator guidelines", null, {
 				hk: "15P5n5"
-			})), a.a.createElement(B, {
+			})), a.a.createElement(A, {
 				to: "/r/modsupport",
 				rel: R.c,
 				target: R.d.BLANK
@@ -5584,7 +5584,7 @@
 				target: "_blank"
 			}, O.fbt._("Automoderator Config", null, {
 				hk: "2GBjtX"
-			})))), a.a.createElement(w.a, null, a.a.createElement(A, null)));
+			})))), a.a.createElement(w.a, null, a.a.createElement(B, null)));
 			const W = Object(b.u)(),
 				H = Object(d.c)({
 					queryParams: (e, t) => {
@@ -5700,7 +5700,7 @@
 				r = s("./src/reddit/selectors/experiments/econ/simpleExperiment.ts");
 			const o = Object(r.a)(n.K),
 				a = Object(r.a)(n.I),
-				i = Object(r.a)(n.ge),
+				i = Object(r.a)(n.fe),
 				d = Object(r.a)(n.L),
 				c = Object(r.a)(n.M),
 				l = Object(r.a)(n.H),
@@ -5797,12 +5797,12 @@
 				d = e => {
 					return Object(o.c)(e, {
 						experimentEligibilitySelector: i,
-						experimentName: n.uf
+						experimentName: n.tf
 					}) || ""
 				},
 				c = e => {
 					const t = d(e);
-					return t === n.Bf.SmIcon || t === n.Bf.SmIconHc
+					return t === n.Af.SmIcon || t === n.Af.SmIconHc
 				},
 				l = (e, t) => {
 					let {
@@ -5828,4 +5828,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModQueuePages.f7fac821236018b30984.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModQueuePages.6135d4322031731412c4.js.map
