@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CommentsPage.a110b315f9008da5eb39.js
-// Retrieved at 6/21/2022, 7:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CommentsPage.651cad9557b93e11d36c.js
+// Retrieved at 6/22/2022, 10:20:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CommentsPage"], {
 		"./node_modules/lodash/_baseDelay.js": function(e, t) {
@@ -2852,6 +2852,8 @@
 				stateContainer: "TbMmDiSaSaBQFF9F3FGe8",
 				CommentsIcon: "_1-f8S_KoiOmIpA8kGxOgfh",
 				commentsIcon: "_1-f8S_KoiOmIpA8kGxOgfh",
+				LiveChatIcon: "_1K0_Ej6gm6u-pTA1-FRY3S",
+				liveChatIcon: "_1K0_Ej6gm6u-pTA1-FRY3S",
 				SnooFacepalm: "_2AxaYiv6EkZse5msRZqowQ",
 				snooFacepalm: "_2AxaYiv6EkZse5msRZqowQ",
 				EmptyTitle: "_39dVqXnozb8JxasPyFPu6C",
@@ -2877,19 +2879,19 @@
 		"./src/reddit/components/Comments/States/index.tsx": function(e, t, s) {
 			"use strict";
 			s.d(t, "c", (function() {
-				return I
+				return _
 			})), s.d(t, "b", (function() {
-				return w
+				return I
 			})), s.d(t, "g", (function() {
-				return S
+				return w
 			})), s.d(t, "e", (function() {
-				return N
+				return S
 			})), s.d(t, "d", (function() {
-				return T
+				return N
 			})), s.d(t, "f", (function() {
-				return L
+				return T
 			})), s.d(t, "a", (function() {
-				return H
+				return W
 			}));
 			var n = s("./node_modules/fbt/lib/FbtPublic.js"),
 				o = s("./node_modules/lodash/times.js"),
@@ -2908,43 +2910,50 @@
 				g = s("./src/reddit/icons/fonts/Downvote/index.tsx"),
 				f = s("./src/reddit/icons/fonts/Upvote/index.tsx"),
 				C = s("./src/reddit/icons/svgs/Comments/index.tsx"),
-				v = s("./src/reddit/icons/svgs/SnooFacepalm/index.tsx"),
-				O = s("./src/reddit/components/Comments/States/index.m.less"),
-				E = s.n(O);
-			const y = l.a.wrapped(C.a, "CommentsIcon", E.a),
-				j = l.a.wrapped(v.a, "SnooFacepalm", E.a),
-				k = l.a.p("EmptyTitle", E.a),
-				P = l.a.p("ErrorTitle", E.a),
-				_ = l.a.p("EmptyText", E.a),
-				I = e => {
+				v = s("./src/reddit/icons/svgs/LiveChat/index.tsx"),
+				O = s("./src/reddit/icons/svgs/SnooFacepalm/index.tsx"),
+				E = s("./src/reddit/components/Comments/States/index.m.less"),
+				y = s.n(E);
+			const j = l.a.p("EmptyTitle", y.a),
+				k = l.a.p("ErrorTitle", y.a),
+				P = l.a.p("EmptyText", y.a),
+				_ = e => {
 					let {
 						className: t,
 						isChat: s
 					} = e;
 					return a.a.createElement("div", {
-						className: Object(c.a)(E.a.StateContainer, t)
-					}, a.a.createElement(y, null), a.a.createElement(k, null, s ? n.fbt._("no messages yet", null, {
+						className: Object(c.a)(y.a.StateContainer, t)
+					}, s ? a.a.createElement(v.a, {
+						className: y.a.LiveChatIcon
+					}) : a.a.createElement(C.a, {
+						className: y.a.CommentsIcon
+					}), a.a.createElement(j, null, s ? n.fbt._("no messages yet", null, {
 						hk: "QOUnY"
 					}) : n.fbt._("no comments yet", null, {
 						hk: "1yqeoX"
-					})), a.a.createElement(_, null, n.fbt._("Be the first to share what you think!", null, {
+					})), a.a.createElement(P, null, n.fbt._("Be the first to share what you think!", null, {
 						hk: "479v5B"
 					})))
 				},
-				w = () => a.a.createElement("div", {
-					className: E.a.StateContainer
-				}, a.a.createElement(y, null), a.a.createElement(k, null, n.fbt._("no other discussions yet", null, {
+				I = () => a.a.createElement("div", {
+					className: y.a.StateContainer
+				}, a.a.createElement(C.a, {
+					className: y.a.CommentsIcon
+				}), a.a.createElement(j, null, n.fbt._("no other discussions yet", null, {
 					hk: "2N7BWs"
-				})), a.a.createElement(_, null, n.fbt._("Be the first to post the same link or crosspost in another community!", null, {
+				})), a.a.createElement(P, null, n.fbt._("Be the first to post the same link or crosspost in another community!", null, {
 					hk: "4yirBw"
 				}))),
-				S = e => {
+				w = e => {
 					let {
 						link: t
 					} = e;
 					return a.a.createElement("div", {
-						className: E.a.StateContainer
-					}, a.a.createElement(y, null), a.a.createElement(k, null, n.fbt._("That comment is missing", null, {
+						className: y.a.StateContainer
+					}, a.a.createElement(C.a, {
+						className: y.a.CommentsIcon
+					}), a.a.createElement(j, null, n.fbt._("That comment is missing", null, {
 						hk: "1i1U0i"
 					})), a.a.createElement(u.n, {
 						to: Object(h.b)(t)
@@ -2952,7 +2961,7 @@
 						hk: "2CgaIx"
 					})))
 				},
-				N = Object(d.b)(null, (e, t) => {
+				S = Object(d.b)(null, (e, t) => {
 					let {
 						postId: s,
 						commentId: n,
@@ -2969,8 +2978,10 @@
 						onClick: s
 					} = e;
 					return a.a.createElement("div", {
-						className: E.a.StateContainer
-					}, a.a.createElement(j, null), a.a.createElement(P, null, t ? Object(b.a)({
+						className: y.a.StateContainer
+					}, a.a.createElement(O.a, {
+						className: y.a.SnooFacepalm
+					}), a.a.createElement(k, null, t ? Object(b.a)({
 						apiError: t,
 						isLoggedOut: !1
 					}) : n.fbt._("Sorry, comments couldn't load!", null, {
@@ -2981,7 +2992,7 @@
 						hk: "NOuNi"
 					})))
 				}),
-				T = e => {
+				N = e => {
 					let {
 						postId: t,
 						commentId: s,
@@ -2989,46 +3000,48 @@
 						apiError: o
 					} = e;
 					return a.a.createElement("div", {
-						className: Object(c.a)(E.a.StateContainer, E.a.ErrorFullPage)
-					}, a.a.createElement(N, {
+						className: Object(c.a)(y.a.StateContainer, y.a.ErrorFullPage)
+					}, a.a.createElement(S, {
 						postId: t,
 						commentId: s,
 						sort: n,
 						apiError: o
 					}))
 				},
-				L = l.a.wrapped(e => {
+				T = l.a.wrapped(e => {
 					let {
 						className: t
 					} = e;
 					return a.a.createElement("div", {
 						className: t
 					}, a.a.createElement(p.a, null))
-				}, "LoadingFullPage", E.a),
-				R = l.a.div("CommentsPlaceholderContainer", E.a),
-				M = l.a.div("CommentPlaceholder", E.a),
-				F = l.a.div("Avatar", E.a),
-				A = l.a.div("VoteColumn", E.a),
-				B = l.a.div("TextColumn", E.a),
-				D = l.a.wrapped(f.b, "Upvote", E.a),
-				W = l.a.wrapped(g.a, "Downvote", E.a),
-				U = () => a.a.createElement("div", {
-					className: Object(c.a)(E.a.TopMetaPlaceholder, Object(x.a)({
+				}, "LoadingFullPage", y.a),
+				L = l.a.div("CommentsPlaceholderContainer", y.a),
+				R = l.a.div("CommentPlaceholder", y.a),
+				M = l.a.div("Avatar", y.a),
+				F = l.a.div("VoteColumn", y.a),
+				A = l.a.div("TextColumn", y.a),
+				B = () => a.a.createElement("div", {
+					className: Object(c.a)(y.a.TopMetaPlaceholder, Object(x.a)({
 						isLoading: !0
 					}))
 				}),
-				V = () => a.a.createElement("div", {
-					className: Object(c.a)(E.a.CommentBodyPlaceholder, Object(x.a)({
+				D = () => a.a.createElement("div", {
+					className: Object(c.a)(y.a.CommentBodyPlaceholder, Object(x.a)({
 						isLoading: !0
 					}))
 				}),
-				H = e => a.a.createElement(R, null, r()(10, t => a.a.createElement(M, {
+				W = e => a.a.createElement(L, null, r()(10, t => a.a.createElement(R, {
 					key: t
-				}, e.isAvatarsInCommentsEnabled ? a.a.createElement(F, {
+				}, e.isAvatarsInCommentsEnabled ? a.a.createElement(M, {
 					className: Object(x.a)({
 						isLoading: !0
 					})
-				}) : a.a.createElement(A, null, a.a.createElement(D, null), a.a.createElement(W, null)), a.a.createElement(B, null, a.a.createElement(U, null), a.a.createElement(V, null)))))
+				}) : a.a.createElement(F, null, a.a.createElement(f.b, {
+					className: y.a.Upvote
+				}), a.a.createElement(g.a, {
+					className: y.a.Downvote
+				})), a.a.createElement(A, null, a.a.createElement(B, null), a.a.createElement(D, null)))))
 		},
 		"./src/reddit/components/Comments/ThreadLines/index.m.less": function(e, t, s) {
 			e.exports = {
@@ -9611,6 +9624,39 @@
 				}))
 			}
 		},
+		"./src/reddit/icons/svgs/LiveChat/index.tsx": function(e, t, s) {
+			"use strict";
+			var n = s("./node_modules/react/index.js"),
+				o = s.n(n);
+
+			function r() {
+				return (r = Object.assign || function(e) {
+					for (var t = 1; t < arguments.length; t++) {
+						var s = arguments[t];
+						for (var n in s) Object.prototype.hasOwnProperty.call(s, n) && (e[n] = s[n])
+					}
+					return e
+				}).apply(this, arguments)
+			}
+			t.a = e => o.a.createElement("svg", r({
+				xmlns: "http://www.w3.org/2000/svg",
+				viewBox: "0 0 16 16",
+				stroke: "white"
+			}, e), o.a.createElement("path", {
+				d: "M1.17567 6.90708L1.17579 6.9071L1.17765 6.89503C1.61505 4.05191 3.95864 1.69386 6.90278 1.17649C11.5294 0.445398 15.5469 4.48817 14.7445 9.01081L14.7433 9.01787L14.7422 9.02495C14.3037 11.8753 11.9552 14.2237 9.10488 14.6623L9.10486 14.6621L9.09283 14.6642C7.41037 14.9568 5.80338 14.5919 4.48582 13.7867L4.249 13.642L3.98282 13.7206L1.45885 14.4663L2.19817 12.0209L2.27918 11.7529L2.13322 11.5141C1.31702 10.1785 0.886321 8.57086 1.17567 6.90708Z",
+				strokeWidth: "1.25",
+				strokeMiterlimit: "10",
+				strokeLinecap: "square"
+			}), o.a.createElement("path", {
+				d: "M8.00018 12.3201C10.386 12.3201 12.3202 10.3859 12.3202 8.00005C12.3202 5.61418 10.386 3.68005 8.00018 3.68005C5.61431 3.68005 3.68018 5.61418 3.68018 8.00005C3.68018 10.3859 5.61431 12.3201 8.00018 12.3201Z",
+				strokeWidth: "1.25",
+				strokeMiterlimit: "10"
+			}), o.a.createElement("path", {
+				d: "M8.00008 9.92008C9.06047 9.92008 9.92008 9.06047 9.92008 8.00008C9.92008 6.93969 9.06047 6.08008 8.00008 6.08008C6.93969 6.08008 6.08008 6.93969 6.08008 8.00008C6.08008 9.06047 6.93969 9.92008 8.00008 9.92008Z",
+				strokeWidth: "1.25",
+				strokeMiterlimit: "10"
+			}))
+		},
 		"./src/reddit/icons/svgs/ModRemove/index.tsx": function(e, t, s) {
 			"use strict";
 			var n = s("./node_modules/react/index.js"),
@@ -11440,4 +11486,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommentsPage.a110b315f9008da5eb39.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommentsPage.651cad9557b93e11d36c.js.map
