@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Frontpage.4ac27fd2d92b3ae8bf31.js
-// Retrieved at 6/21/2022, 7:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Frontpage.07e0577a6e9d38782f21.js
+// Retrieved at 6/22/2022, 4:00:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Frontpage"], {
 		"./node_modules/intersection-observer/intersection-observer.js": function(e, t) {
@@ -3396,17 +3396,21 @@
 					const t = () => {
 						const t = e.getBoundingClientRect(),
 							s = Array.from(e.children).filter(e => {
-								const s = e.getBoundingClientRect(),
-									n = e.getAttribute("data-position");
-								return a(e.id, n), s.left >= t.left && s.right <= t.right
+								const a = e.getBoundingClientRect();
+								return a.left >= t.left && a.right <= t.right
 							});
-						s.length > 0 && (u((e => {
-							let t = e[0].previousElementSibling;
-							return (null == t ? void 0 : t.previousElementSibling) && (t = t.previousElementSibling), t instanceof HTMLElement ? t : null
-						})(s)), p((e => {
-							const t = e[e.length - 1].nextElementSibling;
-							return t instanceof HTMLElement ? t : null
-						})(s)))
+						if (s.length > 0) {
+							const e = (e => {
+								const t = e[e.length - 1].nextElementSibling;
+								return t instanceof HTMLElement ? t : null
+							})(s);
+							p(e), u((e => {
+								let t = e[0].previousElementSibling;
+								return (null == t ? void 0 : t.previousElementSibling) && (t = t.previousElementSibling), t instanceof HTMLElement ? t : null
+							})(s)), s.forEach(e => {
+								a(e)
+							}), e && a(e)
+						}
 					};
 					return t(), e.addEventListener("scroll", t), () => {
 						e.removeEventListener("scroll", t)
@@ -3482,8 +3486,8 @@
 					[k, O] = Object(n.useState)((null === (v = null === (a = t[0]) || void 0 === a ? void 0 : a.audioRoom) || void 0 === v ? void 0 : v.isLive) ? null === (E = t[0]) || void 0 === E ? void 0 : E.id : ""),
 					[N, S] = Object(n.useState)(!1),
 					A = Object(c.e)(_.db),
-					[w, I] = Object(n.useState)([]),
-					T = Object(f.a)();
+					w = Object(n.useRef)([]),
+					I = Object(f.a)();
 				Object(n.useEffect)(() => {
 					var e;
 					const t = null === (e = x.current) || void 0 === e ? void 0 : e.querySelector(`[data-title-id=${k}]`);
@@ -3491,21 +3495,21 @@
 						if (e) {
 							const t = e.getBoundingClientRect().width;
 							S(t > 152);
-							const a = e.innerHTML.length;
+							const a = t - 152;
 							if (a > 0) {
-								const t = 750 * a;
+								const t = 250 * a;
 								e.style.animationDuration = `${t}ms`
 							}
 						}
 					})(t)
 				}, [k]), Object(n.useEffect)(() => {
-					T((() => e => ({
+					I((() => e => ({
 						...b.n(e),
 						source: "live_bar",
 						action: h.d.View,
 						noun: "live_bar_banner"
 					}))())
-				}, [T]), Object(n.useEffect)(() => {
+				}, [I]), Object(n.useEffect)(() => {
 					if (t.length > 0) {
 						let e = Boolean(k);
 						for (let a = 0; a < t.length && !e; a++) {
@@ -3513,8 +3517,8 @@
 							(null == s ? void 0 : s.audioRoom) && s.audioRoom.isLive && !e && (e = !0, O(s.id))
 						}
 					}
-				}, [t, T]);
-				const P = t.filter(e => Boolean(null == e ? void 0 : e.audioRoom) && e.audioRoom.isLive).map((e, t) => {
+				}, [t, I]);
+				const T = t.filter(e => Boolean(null == e ? void 0 : e.audioRoom) && e.audioRoom.isLive).map((e, t) => {
 					let {
 						id: a,
 						audioRoom: n,
@@ -3526,12 +3530,12 @@
 						roomTitle: x,
 						topUsers: j,
 						participantCount: S
-					} = n, w = null == j ? void 0 : j.slice(0, 3), I = k === a, P = (null === (f = c.styles) || void 0 === f ? void 0 : f.icon) || (null === (v = null === (_ = c.styles) || void 0 === _ ? void 0 : _.legacyIcon) || void 0 === v ? void 0 : v.url);
+					} = n, w = null == j ? void 0 : j.slice(0, 3), T = k === a, P = (null === (f = c.styles) || void 0 === f ? void 0 : f.icon) || (null === (v = null === (_ = c.styles) || void 0 === _ ? void 0 : _.legacyIcon) || void 0 === v ? void 0 : v.url);
 					return r.a.createElement("button", {
 						id: `talk__${a}`,
 						key: `talk__${E}`,
 						onClick: () => {
-							T((e => {
+							I((e => {
 								let {
 									postId: t,
 									subredditOrProfileId: a,
@@ -3569,9 +3573,9 @@
 						className: y.a.subredditIconContainer
 					}, r.a.createElement(o, {
 						className: Object(s.a)(y.a.speakerRing, y.a.speakerRingInner, {
-							[y.a.animatedRing]: I
+							[y.a.animatedRing]: T
 						})
-					}), I && r.a.createElement(r.a.Fragment, null, r.a.createElement(l, {
+					}), T && r.a.createElement(r.a.Fragment, null, r.a.createElement(l, {
 						className: Object(s.a)(y.a.speakerRing, y.a.speakerRingMiddle)
 					}), r.a.createElement(d, {
 						className: Object(s.a)(y.a.speakerRing, y.a.speakerRingOuter)
@@ -3587,9 +3591,9 @@
 					}, r.a.createElement("p", {
 						"data-title-id": `${a}`,
 						className: Object(s.a)(y.a.roomTitle, {
-							[y.a.animated]: I && N
+							[y.a.animated]: T && N
 						})
-					}, x), I && N && r.a.createElement("div", {
+					}, x), T && N && r.a.createElement("div", {
 						className: Object(s.a)(y.a.titleFadeContainer, y.a.leftFadeContainer, {
 							[y.a.nightMode]: A
 						})
@@ -3615,7 +3619,7 @@
 								[y.a.userIconSnoovatar]: Boolean(e.snoovatarIcon),
 								[y.a.nightMode]: A
 							}),
-							isNSFW: !1
+							isNSFW: e.profile.isNSFW
 						}))
 					})), r.a.createElement("p", {
 						className: y.a.participantCount
@@ -3636,10 +3640,11 @@
 							O(e)
 						}, 500)
 					},
-					onChildVisible: (e, a) => {
-						const s = e.split("__")[1],
-							n = t.find(e => e.id === s);
-						n && !w.includes(s) && (T((e => {
+					onChildVisible: e => {
+						const a = e.id.split("__")[1],
+							s = e.getAttribute("data-position"),
+							n = t.find(e => e.id === a);
+						n && !w.current.includes(a) && s && (I((e => {
 							let {
 								postId: t,
 								subredditOrProfileId: a,
@@ -3664,12 +3669,12 @@
 						})({
 							postId: n.id,
 							subredditOrProfileId: n.subreddit.id,
-							liveBarPosition: a,
+							liveBarPosition: parseInt(s),
 							roomId: n.audioRoom.roomId,
 							roomTitle: n.audioRoom.roomTitle
-						})), I([...w, n.id]))
+						})), w.current.push(a))
 					}
-				}, P))) : null
+				}, T))) : null
 			}
 		},
 		"./src/reddit/components/MiniPost/index.m.less": function(e, t, a) {
@@ -8031,7 +8036,7 @@
 				}
 		},
 		"./src/redditGQL/operations/Frontpage.json": function(e) {
-			e.exports = JSON.parse('{"id":"2bd556648340"}')
+			e.exports = JSON.parse('{"id":"48556754863b"}')
 		},
 		"./src/redditGQL/operations/GetNearbySubreddits.json": function(e) {
 			e.exports = JSON.parse('{"id":"aff6d12aa0c2"}')
@@ -8041,4 +8046,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Frontpage.4ac27fd2d92b3ae8bf31.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Frontpage.07e0577a6e9d38782f21.js.map
