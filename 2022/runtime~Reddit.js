@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/runtime~Reddit.5cfa8d31c934f89add27.js
-// Retrieved at 6/22/2022, 4:00:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/runtime~Reddit.c40ae3f22ada250205f6.js
+// Retrieved at 6/22/2022, 7:40:04 PM by Reddit Dataminer v1.0.0
 ! function(e) {
 	function o(o) {
 		for (var a, n, r = o[0], s = o[1], c = o[2], l = 0, P = []; l < r.length; l++) n = r[l], Object.prototype.hasOwnProperty.call(d, n) && d[n] && P.push(d[n][0]), d[n] = 0;
@@ -716,7 +716,7 @@
 					PostDraft: "43e9feb3837299235053",
 					ProfileSnoobuilder: "3acb0e0090c400be04f4",
 					"Frontpage~ModListing~Subreddit": "1dcb331f0f950474769c",
-					Frontpage: "dfbba6b40b5376550736",
+					Frontpage: "8d78b9c760b3abcdcaeb",
 					Topic: "a05b4a57def60878e450",
 					CommunityAwards: "31d6cfe0d16ae931b73c",
 					CommunityPointsLearnMore: "4e09b461924aa8fe1b6c",
@@ -1418,7 +1418,7 @@
 						PostDraft: "1b3ec08fdead4b20d772",
 						ProfileSnoobuilder: "0fd84c5572c50fb9c648",
 						"Frontpage~ModListing~Subreddit": "c394e87a58343cc7d40b",
-						Frontpage: "07e0577a6e9d38782f21",
+						Frontpage: "bbd0c8f7ec20afb4065e",
 						Topic: "cc87c7f5341037a1df37",
 						CommunityAwards: "b7c80f4213d68bc10aa9",
 						CommunityPointsLearnMore: "c4bb580f1e51aee34a11",
@@ -1755,4 +1755,4 @@
 	var m = c;
 	t()
 }([]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/runtime~Reddit.5cfa8d31c934f89add27.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/runtime~Reddit.c40ae3f22ada250205f6.js.map

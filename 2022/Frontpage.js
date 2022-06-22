@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Frontpage.07e0577a6e9d38782f21.js
-// Retrieved at 6/22/2022, 4:00:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Frontpage.bbd0c8f7ec20afb4065e.js
+// Retrieved at 6/22/2022, 7:40:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Frontpage"], {
 		"./node_modules/intersection-observer/intersection-observer.js": function(e, t) {
@@ -3497,7 +3497,7 @@
 							S(t > 152);
 							const a = t - 152;
 							if (a > 0) {
-								const t = 250 * a;
+								const t = 145 * a;
 								e.style.animationDuration = `${t}ms`
 							}
 						}
@@ -3619,7 +3619,7 @@
 								[y.a.userIconSnoovatar]: Boolean(e.snoovatarIcon),
 								[y.a.nightMode]: A
 							}),
-							isNSFW: e.profile.isNSFW
+							isNSFW: e.profile.isNsfw
 						}))
 					})), r.a.createElement("p", {
 						className: y.a.participantCount
@@ -8046,4 +8046,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Frontpage.07e0577a6e9d38782f21.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Frontpage.bbd0c8f7ec20afb4065e.js.map
