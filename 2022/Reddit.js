@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Reddit.c165d65d049711c64cce.js
-// Retrieved at 6/23/2022, 4:30:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Reddit.2fcc9fcd59734067c067.js
+// Retrieved at 6/23/2022, 5:40:03 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Reddit"], {
 		"./assets/fonts/BentonSans/font.less": function(e, t, n) {},
@@ -1694,6 +1694,28 @@
 				n.platform.currentPage.queryParams[i.b]
 			}
 		},
+		"./src/reddit/actions/pages/econManagement2.ts": function(e, t, n) {
+			"use strict";
+			var s = n("./node_modules/fbt/lib/FbtPublic.js"),
+				r = n("./node_modules/react-router-redux/es/index.js"),
+				o = n("./src/reddit/actions/platform.ts"),
+				a = n("./src/reddit/actions/users.ts"),
+				i = n("./src/reddit/routes/econManagement/index.ts"),
+				c = n("./src/reddit/selectors/user.ts");
+			n("./src/reddit/actions/economics/econManagement/index.ts");
+			t.a = () => async (e, t) => {
+				await e(Object(a.t)());
+				const n = t(),
+					l = Object(c.Q)(n),
+					d = Object(c.N)(n);
+				l && d || await e(Object(r.c)("/")), e(Object(o.m)({
+					title: s.fbt._("Econ control panel", null, {
+						hk: "3DJjYu"
+					})
+				}));
+				n.platform.currentPage.queryParams[i.b]
+			}
+		},
 		"./src/reddit/actions/pages/meta/communityPointsLearnMorePage.ts": function(e, t, n) {
 			"use strict";
 			var s = n("./src/lib/pageTitle/index.ts"),
@@ -1735,25 +1757,6 @@
 						}))
 					}
 				}
-			}
-		},
-		"./src/reddit/actions/pages/newEconManagement.ts": function(e, t, n) {
-			"use strict";
-			var s = n("./node_modules/fbt/lib/FbtPublic.js"),
-				r = n("./node_modules/react-router-redux/es/index.js"),
-				o = n("./src/reddit/actions/platform.ts"),
-				a = n("./src/reddit/actions/users.ts"),
-				i = n("./src/reddit/selectors/user.ts");
-			t.a = () => async (e, t) => {
-				await e(Object(a.t)());
-				const n = t(),
-					c = Object(i.Q)(n),
-					l = Object(i.N)(n);
-				c && l || await e(Object(r.c)("/")), e(Object(o.m)({
-					title: s.fbt._("Econ control panel", null, {
-						hk: "3DJjYu"
-					})
-				}))
 			}
 		},
 		"./src/reddit/actions/pages/powerups.ts": function(e, t, n) {
@@ -14758,8 +14761,9 @@
 				zd = n("./src/reddit/routes/countrySitePage/index.ts");
 			n("./node_modules/@loadable/component/dist/loadable.esm.js");
 			var Jd = [],
-				Xd = n("./src/reddit/routes/econManagement/index.ts");
-			var Zd = {
+				Xd = n("./src/reddit/routes/econManagement/index.ts"),
+				Zd = n("./src/reddit/routes/econManagement2/index.ts");
+			var Yd = {
 					action: Object(I.a)(() => n.e(9).then(n.bind(null, "./src/reddit/actions/pages/emailVerification.ts")).then(e => e.emailVerificationRequested)),
 					chunk: S.r.EMPTY,
 					exact: !0,
@@ -14768,8 +14772,8 @@
 					},
 					path: "/verification/:verificationToken"
 				},
-				Yd = n("./src/lib/addQueryParams/index.ts");
-			var $d = {
+				$d = n("./src/lib/addQueryParams/index.ts");
+			var eu = {
 					action: e => async (t, n, s) => {
 						let {
 							apiContext: r
@@ -14777,7 +14781,7 @@
 						const {
 							queryParams: o
 						} = e;
-						await t(Object(p.c)(Object(Yd.a)("/", o)))
+						await t(Object(p.c)(Object($d.a)("/", o)))
 					},
 					chunk: S.r.EMPTY,
 					exact: !0,
@@ -14787,17 +14791,16 @@
 					path: ["/explore", "/explore/:categoryName"],
 					prefetches: [S.r.COMMENTS_PAGE, S.r.FRONTPAGE]
 				},
-				eu = n("./src/reddit/routes/followers/index.ts"),
-				tu = n("./src/reddit/routes/framedGild/index.ts"),
-				nu = n("./src/reddit/routes/framedModal/index.ts"),
-				su = n("./src/reddit/routes/frontpage/index.ts"),
-				ru = n("./src/reddit/routes/geotagging/index.ts"),
-				ou = n("./src/reddit/routes/inbox/index.ts"),
-				au = n("./src/reddit/routes/meta/index.ts"),
-				iu = n("./src/reddit/routes/moderationPages/index.ts"),
-				cu = n("./src/reddit/routes/modQueue/index.ts"),
-				lu = n("./src/reddit/routes/multireddit/index.ts"),
-				du = n("./src/reddit/routes/newEconManagement/index.ts"),
+				tu = n("./src/reddit/routes/followers/index.ts"),
+				nu = n("./src/reddit/routes/framedGild/index.ts"),
+				su = n("./src/reddit/routes/framedModal/index.ts"),
+				ru = n("./src/reddit/routes/frontpage/index.ts"),
+				ou = n("./src/reddit/routes/geotagging/index.ts"),
+				au = n("./src/reddit/routes/inbox/index.ts"),
+				iu = n("./src/reddit/routes/meta/index.ts"),
+				cu = n("./src/reddit/routes/moderationPages/index.ts"),
+				lu = n("./src/reddit/routes/modQueue/index.ts"),
+				du = n("./src/reddit/routes/multireddit/index.ts"),
 				uu = n("./src/reddit/routes/notificationsInbox/index.ts"),
 				mu = n("./src/reddit/routes/postCreation/constants.ts");
 			const pu = ["/original", "/original/:categoryName/:sort([a-z]+)?"].map(e => ({
@@ -14862,7 +14865,7 @@
 						}
 						const c = i.body.account.displayText,
 							l = o ? `/user/${c}/${(e=>e.endsWith("/")?e:`${e}/`)(o)}` : `/user/${c}/`,
-							d = Object(Yd.a)(l, a);
+							d = Object($d.a)(l, a);
 						await t(Object(p.c)(d))
 					},
 					chunk: S.r.EMPTY,
@@ -14886,7 +14889,7 @@
 							queryParams: r
 						} = e, o = ((e, t, n) => {
 							const s = `/user/${e}/${t?Object(ku.a)(t.replace("submitted","posts")):""}`;
-							return Object(Yd.a)(s, n)
+							return Object($d.a)(s, n)
 						})(n, s, r);
 						await t(Object(p.c)(o))
 					},
@@ -14905,7 +14908,7 @@
 							rest: s
 						} = e.params, {
 							queryParams: r
-						} = e, o = s ? `/user/${n}/posts/${s}` : `/user/${n}/posts`, a = Object(Yd.a)(o, r);
+						} = e, o = s ? `/user/${n}/posts/${s}` : `/user/${n}/posts`, a = Object($d.a)(o, r);
 						t(Object(p.c)(a))
 					},
 					chunk: S.r.EMPTY,
@@ -14945,7 +14948,7 @@
 				Fu = n("./src/reddit/routes/subredditLeaderboard/index.ts"),
 				Uu = n("./src/reddit/routes/subredditWiki/index.ts"),
 				Bu = n("./src/reddit/routes/topic/index.ts");
-			var Gu = [qd.a, Hd.a, Ur.b, Wd, Vd.a, Qd.a, zd.a, Eu, wu, Mu, ...Gd.a, ...Kd.a, Zd, ...su.a, ru.a, Ou.a, Tr.b, Ar.b, Rr.b, Xd.c, du.a, fu, vu, eu.a, tu.a, nu.a, hu.a, gu.a, ...bu, $d, ...au.a, lu.a, cu.a, Ir.c, uu.a, ou.a, Cu.a, Pu.a, ju.a, _u.a, Nu.a, Su.a, Iu.a, ...Ru.a, ...Lu, Au.a, ...Uu.a, Bu.a, Du.b, Fu.a, iu.a, Tu.a, ...Jd],
+			var Gu = [qd.a, Hd.a, Ur.b, Wd, Vd.a, Qd.a, zd.a, Eu, wu, Mu, ...Gd.a, ...Kd.a, Yd, ...ru.a, ou.a, Ou.a, Tr.b, Ar.b, Rr.b, Xd.c, Zd.a, fu, vu, tu.a, nu.a, su.a, hu.a, gu.a, ...bu, eu, ...iu.a, du.a, lu.a, Ir.c, uu.a, au.a, Cu.a, Pu.a, ju.a, _u.a, Nu.a, Su.a, Iu.a, ...Ru.a, ...Lu, Au.a, ...Uu.a, Bu.a, Du.b, Fu.a, cu.a, Tu.a, ...Jd],
 				qu = n("./src/reddit/selectors/appBadges.ts"),
 				Hu = n("./src/reddit/selectors/sso.ts"),
 				Wu = n("./src/reddit/components/HeaderUserActions/AdsSignupLink/index.m.less"),
@@ -18525,6 +18528,43 @@
 				};
 			t.c = c
 		},
+		"./src/reddit/routes/econManagement2/index.ts": function(e, t, n) {
+			"use strict";
+			var s = n("./node_modules/@loadable/component/dist/loadable.esm.js"),
+				r = n("./src/lib/constants/index.ts"),
+				o = n("./src/reddit/actions/pages/econManagement2.ts");
+			const a = "/econ-management-2",
+				i = {
+					action: o.a,
+					chunk: r.r.ECON_MANAGEMENT_2,
+					component: Object(s.a)({
+						resolved: {},
+						chunkName: () => "EconManagement2",
+						isReady(e) {
+							const t = this.resolve(e);
+							return !1 !== this.resolved[t] && !!n.m[t]
+						},
+						importAsync: () => n.e("EconManagement2").then(n.bind(null, "./src/reddit/pages/EconManagement2/index.tsx")),
+						requireAsync(e) {
+							const t = this.resolve(e);
+							return this.resolved[t] = !1, this.importAsync(e).then(e => (this.resolved[t] = !0, e))
+						},
+						requireSync(e) {
+							const t = this.resolve(e);
+							return n(t)
+						},
+						resolve() {
+							return "./src/reddit/pages/EconManagement2/index.tsx"
+						}
+					}),
+					exact: !0,
+					meta: {
+						name: r.Nb.ECON_MANAGEMENT_2
+					},
+					path: a
+				};
+			t.a = i
+		},
 		"./src/reddit/routes/followers/index.ts": function(e, t, n) {
 			"use strict";
 			var s = n("./node_modules/@loadable/component/dist/loadable.esm.js"),
@@ -19120,43 +19160,6 @@
 					prefetches: [a.r.SUBREDDIT]
 				};
 			t.a = b
-		},
-		"./src/reddit/routes/newEconManagement/index.ts": function(e, t, n) {
-			"use strict";
-			var s = n("./node_modules/@loadable/component/dist/loadable.esm.js"),
-				r = n("./src/lib/constants/index.ts"),
-				o = n("./src/reddit/actions/pages/newEconManagement.ts");
-			const a = "/econ-management-2",
-				i = {
-					action: o.a,
-					chunk: r.r.ECON_MANAGEMENT_2,
-					component: Object(s.a)({
-						resolved: {},
-						chunkName: () => "NewEconManagement",
-						isReady(e) {
-							const t = this.resolve(e);
-							return !1 !== this.resolved[t] && !!n.m[t]
-						},
-						importAsync: () => n.e("NewEconManagement").then(n.bind(null, "./src/reddit/pages/NewEconManagement/index.tsx")),
-						requireAsync(e) {
-							const t = this.resolve(e);
-							return this.resolved[t] = !1, this.importAsync(e).then(e => (this.resolved[t] = !0, e))
-						},
-						requireSync(e) {
-							const t = this.resolve(e);
-							return n(t)
-						},
-						resolve() {
-							return "./src/reddit/pages/NewEconManagement/index.tsx"
-						}
-					}),
-					exact: !0,
-					meta: {
-						name: r.Nb.ECON_MANAGEMENT_2
-					},
-					path: a
-				};
-			t.a = i
 		},
 		"./src/reddit/routes/notificationsInbox/index.ts": function(e, t, n) {
 			"use strict";
@@ -20504,4 +20507,4 @@
 		["./src/reddit/index.tsx", "runtime~Reddit", "vendors~Governance~ModListing~Reddit~Subreddit", "vendors~Chat~Governance~Reddit", "vendors~Reddit~StandalonePostPage", "vendors~Reddit", "PostCreation~Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~r~4c415e24", "Governance~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compo~bd4baca2", "Governance~ModListing~Reddit~ReportFlow~Subreddit", "Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddi~90fdacc3", "Chat~Governance~Reddit", "Governance~Reddit~Subreddit", "Governance~Reddit", "AuthorHovercard~Reddit"]
 	]
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit.c165d65d049711c64cce.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit.2fcc9fcd59734067c067.js.map
