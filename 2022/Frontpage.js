@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Frontpage.8e14c1ded0bf0dacca59.js
-// Retrieved at 6/23/2022, 1:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Frontpage.0e72a094abdd388aa932.js
+// Retrieved at 6/23/2022, 3:40:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Frontpage"], {
 		"./node_modules/intersection-observer/intersection-observer.js": function(e, t) {
@@ -3497,7 +3497,7 @@
 							S(t > 152);
 							const a = t - 152;
 							if (a > 0) {
-								const t = 145 * a;
+								const t = Math.max(145 * a, 2e3);
 								e.style.animationDuration = `${t}ms`
 							}
 						}
@@ -3641,10 +3641,12 @@
 						}, 500)
 					},
 					onChildVisible: e => {
-						const a = e.id.split("__")[1],
-							s = e.getAttribute("data-position"),
-							n = t.find(e => e.id === a);
-						n && !w.current.includes(a) && s && (I((e => {
+						var a, s, n;
+						if (!e) return;
+						const r = e.id.split("__")[1],
+							c = e.getAttribute("data-position"),
+							i = t.find(e => (null == e ? void 0 : e.id) === r);
+						i && !w.current.includes(r) && c && (I((e => {
 							let {
 								postId: t,
 								subredditOrProfileId: a,
@@ -3667,12 +3669,12 @@
 								}
 							})
 						})({
-							postId: n.id,
-							subredditOrProfileId: n.subreddit.id,
-							liveBarPosition: parseInt(s),
-							roomId: n.audioRoom.roomId,
-							roomTitle: n.audioRoom.roomTitle
-						})), w.current.push(a))
+							postId: i.id,
+							subredditOrProfileId: null === (a = i.subreddit) || void 0 === a ? void 0 : a.id,
+							liveBarPosition: parseInt(c),
+							roomId: null === (s = i.audioRoom) || void 0 === s ? void 0 : s.roomId,
+							roomTitle: null === (n = i.audioRoom) || void 0 === n ? void 0 : n.roomTitle
+						})), w.current.push(r))
 					}
 				}, T))) : null
 			}
@@ -8046,4 +8048,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Frontpage.8e14c1ded0bf0dacca59.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Frontpage.0e72a094abdd388aa932.js.map
