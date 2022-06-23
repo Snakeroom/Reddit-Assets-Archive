@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CoinPurchaseModal.33447916aef65afbcc6f.js
-// Retrieved at 6/23/2022, 1:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CoinPurchaseModal.279854a8f93f7d152481.js
+// Retrieved at 6/23/2022, 6:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CoinPurchaseModal", "gildActions"], {
 		"./node_modules/@stripe/react-stripe-js/dist/react-stripe.umd.js": function(e, t, r) {
@@ -1436,7 +1436,7 @@
 								awardKarmaReceived: n || 0,
 								awardId: O,
 								awardings: a && a.length ? Object(f.a)(a).map(e => ({
-									award: Object(g.h)(e),
+									award: Object(g.j)(e),
 									total: e.count
 								})) : [],
 								coins: s,
@@ -1575,7 +1575,7 @@
 								awardId: v,
 								awardKarmaReceived: t || 0,
 								awardings: Object(f.a)(e).map(e => ({
-									award: Object(g.h)(e),
+									award: Object(g.j)(e),
 									total: e.count
 								})),
 								coins: n,
@@ -1766,7 +1766,7 @@
 								awardKarmaReceived: a || 0,
 								awardId: p,
 								awardings: n && n.length ? Object(u.a)(n).map(e => ({
-									award: Object(m.h)(e),
+									award: Object(m.j)(e),
 									total: e.count
 								})) : [],
 								coins: s,
@@ -1856,7 +1856,7 @@
 								awardKarmaReceived: n || 0,
 								awardId: h,
 								awardings: Object(u.a)(e).map(e => ({
-									award: Object(m.h)(e),
+									award: Object(m.j)(e),
 									total: e.count
 								})),
 								coins: a,
@@ -4073,7 +4073,7 @@
 			}));
 			var n = r("./src/reddit/constants/experiments.ts"),
 				a = r("./src/reddit/selectors/experiments/econ/simpleExperiment.ts");
-			const s = Object(a.a)(n.Zc)
+			const s = Object(a.a)(n.ad)
 		},
 		"./src/reddit/selectors/gold/econPurchase.ts": function(e, t, r) {
 			"use strict";
@@ -4236,4 +4236,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CoinPurchaseModal.33447916aef65afbcc6f.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CoinPurchaseModal.279854a8f93f7d152481.js.map

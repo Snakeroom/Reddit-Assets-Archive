@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/GoldTargetedOfferModal.02f6458aacac13c6fdd2.js
-// Retrieved at 5/12/2022, 3:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/GoldTargetedOfferModal.f2a490f249c9611fee62.js
+// Retrieved at 6/23/2022, 6:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["GoldTargetedOfferModal"], {
 		"./node_modules/@stripe/react-stripe-js/dist/react-stripe.umd.js": function(e, t, r) {
@@ -705,7 +705,7 @@
 								awardKarmaReceived: n || 0,
 								awardId: h,
 								awardings: o && o.length ? Object(m.a)(o).map(e => ({
-									award: Object(y.h)(e),
+									award: Object(y.j)(e),
 									total: e.count
 								})) : [],
 								coins: c,
@@ -844,7 +844,7 @@
 								awardId: v,
 								awardKarmaReceived: t || 0,
 								awardings: Object(m.a)(e).map(e => ({
-									award: Object(y.h)(e),
+									award: Object(y.j)(e),
 									total: e.count
 								})),
 								coins: n,
@@ -1620,4 +1620,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/GoldTargetedOfferModal.02f6458aacac13c6fdd2.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/GoldTargetedOfferModal.f2a490f249c9611fee62.js.map

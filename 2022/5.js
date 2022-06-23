@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/5.c4c482fe637fd7a72847.js
-// Retrieved at 6/16/2022, 4:10:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/5.9f1372ee6ebf0cb545d1.js
+// Retrieved at 6/23/2022, 6:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	[5], {
 		"./node_modules/@apollo/client/cache/inmemory/types.js": function(e, t) {},
@@ -46,6 +46,20 @@
 				return r.a
 			}))
 		},
+		"./node_modules/@apollo/client/react/context/ApolloContext.js": function(e, t, n) {
+			"use strict";
+			n.d(t, "a", (function() {
+				return o
+			}));
+			var r = n("./node_modules/react/index.js"),
+				i = n.n(r),
+				a = new(n("./node_modules/@apollo/client/utilities/common/canUse.js").a ? WeakMap : Map);
+
+			function o() {
+				var e = a.get(i.a.createContext);
+				return e || ((e = i.a.createContext({})).displayName = "ApolloContext", a.set(i.a.createContext, e)), e
+			}
+		},
 		"./node_modules/@apollo/client/react/context/ApolloProvider.js": function(e, t, n) {
 			"use strict";
 			n.d(t, "a", (function() {
@@ -67,6 +81,39 @@
 						}, n)
 					}))
 				}
+		},
+		"./node_modules/@apollo/client/react/data/OperationData.js": function(e, t, n) {
+			"use strict";
+			n.d(t, "a", (function() {
+				return o
+			}));
+			var r = n("./node_modules/@wry/equality/lib/equality.esm.js"),
+				i = n("./node_modules/@apollo/client/node_modules/ts-invariant/lib/invariant.esm.js"),
+				a = n("./node_modules/@apollo/client/react/parser/index.js"),
+				o = function() {
+					function e(e, t) {
+						this.isMounted = !1, this.previousOptions = {}, this.context = {}, this.options = {}, this.options = e || {}, this.context = t || {}
+					}
+					return e.prototype.getOptions = function() {
+						return this.options
+					}, e.prototype.setOptions = function(e, t) {
+						void 0 === t && (t = !1), t && !Object(r.a)(this.options, e) && (this.previousOptions = this.options), this.options = e
+					}, e.prototype.unmount = function() {
+						this.isMounted = !1
+					}, e.prototype.refreshClient = function() {
+						var e = this.options && this.options.client || this.context && this.context.client;
+						Object(i.b)(!!e, 29);
+						var t = !1;
+						return e !== this.client && (t = !0, this.client = e, this.cleanup()), {
+							client: this.client,
+							isNew: t
+						}
+					}, e.prototype.verifyDocumentType = function(e, t) {
+						var n = Object(a.c)(e);
+						Object(a.b)(t), Object(a.b)(n.type);
+						Object(i.b)(n.type === t, 30)
+					}, e
+				}()
 		},
 		"./node_modules/@apollo/client/react/hooks/useApolloClient.js": function(e, t, n) {
 			"use strict";
@@ -484,6 +531,65 @@
 			n.o(r, "from") && n.d(t, "from", (function() {
 				return r.from
 			}))
+		},
+		"./node_modules/@apollo/client/react/parser/index.js": function(e, t, n) {
+			"use strict";
+			n.d(t, "a", (function() {
+				return r
+			})), n.d(t, "b", (function() {
+				return o
+			})), n.d(t, "c", (function() {
+				return s
+			}));
+			var r, i = n("./node_modules/@apollo/client/node_modules/ts-invariant/lib/invariant.esm.js");
+			! function(e) {
+				e[e.Query = 0] = "Query", e[e.Mutation = 1] = "Mutation", e[e.Subscription = 2] = "Subscription"
+			}(r || (r = {}));
+			var a = new Map;
+
+			function o(e) {
+				var t;
+				switch (e) {
+					case r.Query:
+						t = "Query";
+						break;
+					case r.Mutation:
+						t = "Mutation";
+						break;
+					case r.Subscription:
+						t = "Subscription"
+				}
+				return t
+			}
+
+			function s(e) {
+				var t, n, o = a.get(e);
+				if (o) return o;
+				Object(i.b)(!!e && !!e.kind, 34);
+				var s = e.definitions.filter((function(e) {
+						return "FragmentDefinition" === e.kind
+					})),
+					c = e.definitions.filter((function(e) {
+						return "OperationDefinition" === e.kind && "query" === e.operation
+					})),
+					l = e.definitions.filter((function(e) {
+						return "OperationDefinition" === e.kind && "mutation" === e.operation
+					})),
+					u = e.definitions.filter((function(e) {
+						return "OperationDefinition" === e.kind && "subscription" === e.operation
+					}));
+				Object(i.b)(!s.length || c.length || l.length || u.length, 35), Object(i.b)(c.length + l.length + u.length <= 1, 36), n = c.length ? r.Query : r.Mutation, c.length || l.length || (n = r.Subscription);
+				var d = c.length ? c : l.length ? l : u;
+				Object(i.b)(1 === d.length, 37);
+				var f = d[0];
+				t = f.variableDefinitions || [];
+				var p = {
+					name: f.name && "Name" === f.name.kind ? f.name.value : "data",
+					type: n,
+					variables: t
+				};
+				return a.set(e, p), p
+			}
 		},
 		"./node_modules/@apollo/client/react/types/types.js": function(e, t) {},
 		"./node_modules/@metamask/detect-provider/dist/index.js": function(e, t, n) {
@@ -36787,4 +36893,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/5.c4c482fe637fd7a72847.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/5.9f1372ee6ebf0cb545d1.js.map

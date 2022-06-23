@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Avatar.62f0c7002dc6fac94825.js
-// Retrieved at 6/23/2022, 1:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Avatar.426dde3f3cf1f8a203a0.js
+// Retrieved at 6/23/2022, 6:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Avatar"], {
 		"./src/reddit/components/SnoovatarModal/SnoovatarIframe.tsx": function(e, t, s) {
@@ -99,10 +99,10 @@
 					SNOOVATAR_BASE_URL: a.a.snoovatarUrl,
 					SNOOVATAR_API_URL: `${a.a.snoovatarUrl}/api`
 				},
-				f = n.a.lazy(() => Promise.all([s.e(0), s.e(1), s.e(2), s.e(4), s.e(3), s.e(5)]).then(s.bind(null, "./node_modules/@reddit/avatars/index.es.js")).then(e => ({
+				f = n.a.lazy(() => Promise.all([s.e(0), s.e(1), s.e(2), s.e(3), s.e(4), s.e(5)]).then(s.bind(null, "./node_modules/@reddit/avatars/index.es.js")).then(e => ({
 					default: e.DataWrapper
 				}))),
-				j = n.a.lazy(() => Promise.all([s.e(0), s.e(1), s.e(2), s.e(4), s.e(3), s.e(5)]).then(s.bind(null, "./node_modules/@reddit/avatars/index.es.js")).then(e => ({
+				j = n.a.lazy(() => Promise.all([s.e(0), s.e(1), s.e(2), s.e(3), s.e(4), s.e(5)]).then(s.bind(null, "./node_modules/@reddit/avatars/index.es.js")).then(e => ({
 					default: e.Builder
 				})));
 			t.default = function() {
@@ -150,8 +150,8 @@
 			}));
 			var a = s("./src/reddit/constants/experiments.ts"),
 				r = s("./src/reddit/selectors/experiments/econ/simpleExperiment.ts");
-			const n = Object(r.a)(a.Zc)
+			const n = Object(r.a)(a.ad)
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Avatar.62f0c7002dc6fac94825.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Avatar.426dde3f3cf1f8a203a0.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Topic.bf2e6ad003eed57d8a01.js
-// Retrieved at 6/23/2022, 1:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Topic.1e6cb4106684ee3ff96f.js
+// Retrieved at 6/23/2022, 6:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Topic"], {
 		"./node_modules/intersection-observer/intersection-observer.js": function(e, t) {
@@ -778,7 +778,7 @@
 					}, r[t]) : null
 				};
 				if (e.isD2xPdpSideRailRecsEnabled) {
-					const t = e.d2xPdpSideRailRecsVariant === u.Fc.GreyRereddit ? e.reredditButtons : [];
+					const t = e.d2xPdpSideRailRecsVariant === u.Gc.GreyRereddit ? e.reredditButtons : [];
 					return n.a.createElement(k, {
 						reredditContent: t,
 						countryCode: e.countryCode
@@ -2097,11 +2097,11 @@
 			const {
 				fbt: H
 			} = s("./node_modules/fbt/lib/FbtPublic.js");
-			var A;
+			var G;
 			! function(e) {
 				e.Communities = "communities", e.Posts = "posts", e.RelatedTopics = "relatedTopics"
-			}(A || (A = {}));
-			class G extends n.a.Component {
+			}(G || (G = {}));
+			class A extends n.a.Component {
 				renderSubtitleContent() {
 					const {
 						parentRelatedTopics: e
@@ -2151,21 +2151,21 @@
 					}, this.renderSubtitleContent())), n.a.createElement("div", {
 						className: B.a.Tabs
 					}, n.a.createElement(D, M({
-						tab: A.Posts
+						tab: G.Posts
 					}, c), H._("Posts", null, {
 						hk: "3RLrle"
 					})), n.a.createElement(D, M({
-						tab: A.Communities
+						tab: G.Communities
 					}, c), H._("Communities", null, {
 						hk: "KIwd1"
 					})), n.a.createElement(D, M({
-						tab: A.RelatedTopics
+						tab: G.RelatedTopics
 					}, c), H._("Related Topics", null, {
 						hk: "4go2cr"
 					})))))
 				}
 			}
-			var z = G,
+			var z = A,
 				V = s("./src/reddit/pages/Topic/Relationship/index.m.less"),
 				J = s.n(V);
 			const {
@@ -2178,7 +2178,7 @@
 							openTab: e,
 							relationshipIndex: t
 						} = this.props;
-						e(A.RelatedTopics, t)
+						e(G.RelatedTopics, t)
 					}
 				}
 				render() {
@@ -2313,7 +2313,7 @@
 							index: e,
 							onTabClick: t
 						} = this.props;
-						t(A.RelatedTopics, e)
+						t(G.RelatedTopics, e)
 					}
 				}
 				render() {
@@ -2357,9 +2357,9 @@
 							activeTab: e,
 							topicNamePlural: t
 						} = this.props;
-						return e === A.Posts ? Ee._("Posts about {topic name}", [Ee._param("topic name", t)], {
+						return e === G.Posts ? Ee._("Posts about {topic name}", [Ee._param("topic name", t)], {
 							hk: "3AGfU"
-						}) : e === A.Communities ? Ee._("Communities related to {topic name}", [Ee._param("topic name", t)], {
+						}) : e === G.Communities ? Ee._("Communities related to {topic name}", [Ee._param("topic name", t)], {
 							hk: "jKM0V"
 						}) : null
 					}
@@ -2368,8 +2368,8 @@
 					const {
 						activeLayout: e,
 						activeTab: t
-					} = this.props, s = t === A.Posts;
-					return t === A.RelatedTopics ? this.renderRelatedTopicsHeader() : n.a.createElement("div", {
+					} = this.props, s = t === G.Posts;
+					return t === G.RelatedTopics ? this.renderRelatedTopicsHeader() : n.a.createElement("div", {
 						className: ye.a.TabHeader
 					}, n.a.createElement("div", {
 						className: ye.a.TabTitle
@@ -2389,7 +2389,7 @@
 				fbt: Oe
 			} = s("./node_modules/fbt/lib/FbtPublic.js"), Ne = Object(k.u)(), je = (e, t) => t.match.params.sort || a.X, Le = e => {
 				const t = [];
-				return e ? (e.hasPosts && t.push(A.Posts), e.hasSubreddits && t.push(A.Communities), e.childRelationships.length && t.push(A.RelatedTopics), t) : t
+				return e ? (e.hasPosts && t.push(G.Posts), e.hasSubreddits && t.push(G.Communities), e.childRelationships.length && t.push(G.RelatedTopics), t) : t
 			}, Ie = Object(d.b)(() => Object(i.a)((e, t) => Object(we.d)(e, t.match.params.topicSlug), (e, t) => Object(we.e)(e, {
 				topicSlug: t.match.params.topicSlug
 			}), (e, t) => Object(we.c)(e, {
@@ -2414,7 +2414,7 @@
 				topicNamePlural: t
 			})), (e, t) => ({
 				onLoadMorePosts: () => e(Object(l.morePostsRequested)(t.match.params))
-			})), Pe = (e, t) => e === A.Communities ? C.g.Large : t;
+			})), Pe = (e, t) => e === G.Communities ? C.g.Large : t;
 			class Re extends n.a.Component {
 				constructor(e) {
 					var t;
@@ -2426,7 +2426,7 @@
 							activeTab: e
 						}), window.scrollTo(0, 0)
 					}, this.openCommunitiesTab = () => {
-						this.openTab(A.Communities)
+						this.openTab(G.Communities)
 					}, this.onViewed = (e, t) => {
 						var s;
 						return Object(O.f)({
@@ -2504,15 +2504,15 @@
 							topicNamePlural: m
 						}), n.a.createElement("div", {
 							className: Object(o.a)(ke.a.TopicTab, {
-								[ke.a.active]: f === A.Communities
+								[ke.a.active]: f === G.Communities
 							})
 						}, n.a.createElement(he, {
 							subredditIds: d.subredditIds
 						})), n.a.createElement("div", {
 							className: Object(o.a)(ke.a.TopicTab, {
-								[ke.a.active]: f === A.Posts
+								[ke.a.active]: f === G.Posts
 							})
-						}, f === A.Posts && n.a.createElement(u.a, {
+						}, f === G.Posts && n.a.createElement(u.a, {
 							forcedLayout: b,
 							listingKey: h,
 							listingName: _,
@@ -2521,13 +2521,13 @@
 							onLoadMore: this.props.onLoadMorePosts
 						})), n.a.createElement("div", {
 							className: Object(o.a)(ke.a.TopicTab, {
-								[ke.a.active]: f === A.RelatedTopics
+								[ke.a.active]: f === G.RelatedTopics
 							})
 						}, n.a.createElement(y, {
 							topics: v
 						}))),
-						k = f !== A.RelatedTopics,
-						O = f !== A.Communities && a.includes(A.Communities),
+						k = f !== G.RelatedTopics,
+						O = f !== G.Communities && a.includes(G.Communities),
 						L = n.a.createElement("div", {
 							className: ke.a.WidgetsContainer
 						}, O && n.a.createElement(S.a, {
@@ -2579,11 +2579,11 @@
 				c = s("./node_modules/reselect/es/index.js");
 			const d = Object(c.a)(e => Object(n.c)(e, {
 					experimentEligibilitySelector: e => Object(a.g)(e) && Object(i.f)(e),
-					experimentName: r.lc
+					experimentName: r.mc
 				}), o.a),
 				l = Object(c.a)(e => Object(n.c)(e, {
 					experimentEligibilitySelector: e => !Object(a.g)(e) && Object(i.f)(e),
-					experimentName: r.kc
+					experimentName: r.lc
 				}), o.a),
 				u = Object(c.a)(d, l, (e, t) => e || t),
 				m = Object(c.a)(d, l, (e, t) => !(!e && !t))
@@ -2712,4 +2712,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Topic.bf2e6ad003eed57d8a01.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Topic.1e6cb4106684ee3ff96f.js.map
