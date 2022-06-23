@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/AuthorHovercard~Reddit.6061f0b344b55443c3c3.js
-// Retrieved at 6/21/2022, 7:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/AuthorHovercard~Reddit.f1732c72aa68c3858dbf.js
+// Retrieved at 6/23/2022, 1:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["AuthorHovercard~Reddit"], {
 		"./src/lib/browser/isIncognito.ts": function(e, t, n) {
@@ -115,9 +115,9 @@
 				O = n("./src/reddit/constants/experiments.ts"),
 				k = n("./src/reddit/helpers/chooseVariant/index.ts");
 			const E = e => Object(k.c)(e, {
-				experimentName: O.cc,
+				experimentName: O.dc,
 				experimentEligibilitySelector: k.a
-			}) === O.sd;
+			}) === O.td;
 			var j = n("./src/reddit/selectors/meta.ts"),
 				C = n("./src/reddit/selectors/user.ts");
 			let I = !1;
@@ -1798,23 +1798,23 @@
 			const q = e => Object(V.c)(e, {
 					experimentEligibilitySelector: V.a,
 					experimentName: G.Bb
-				}) === G.zd.MemesNoBadge,
+				}) === G.Ad.MemesNoBadge,
 				K = e => Object(V.c)(e, {
 					experimentEligibilitySelector: V.a,
 					experimentName: G.Bb
-				}) === G.zd.PnEmailNoBadge,
+				}) === G.Ad.PnEmailNoBadge,
 				J = e => Object(V.c)(e, {
 					experimentEligibilitySelector: V.a,
 					experimentName: G.Bb
-				}) === G.zd.KarmaNoBadge,
+				}) === G.Ad.KarmaNoBadge,
 				Q = e => Object(V.c)(e, {
 					experimentEligibilitySelector: V.a,
 					experimentName: G.Bb
-				}) === G.zd.PopularNoBadge,
+				}) === G.Ad.PopularNoBadge,
 				Y = e => Object(V.c)(e, {
 					experimentEligibilitySelector: V.a,
 					experimentName: G.Bb
-				}) === G.zd.CatsNoBadge;
+				}) === G.Ad.CatsNoBadge;
 			t.a = e => {
 				let {
 					isBannerEnabled: t,
@@ -2010,4 +2010,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/AuthorHovercard~Reddit.6061f0b344b55443c3c3.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/AuthorHovercard~Reddit.f1732c72aa68c3858dbf.js.map

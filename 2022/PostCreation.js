@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostCreation.a160c99e6ed13ebef684.js
-// Retrieved at 6/22/2022, 10:20:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostCreation.e45783610ab192b82056.js
+// Retrieved at 6/23/2022, 1:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostCreation", "ChatMessageInput~MembershipPaywallPage~RichTextEditor", "ContributorRequestButton"], {
 		"./node_modules/autosize/dist/autosize.js": function(e, t, n) {
@@ -1493,7 +1493,7 @@
 			const ie = Object(re.a)(e => Object(se.c)(e, {
 				experimentEligibilitySelector: se.a,
 				experimentName: oe.Hb
-			}), e => e === oe.sd);
+			}), e => e === oe.td);
 			var ae = n("./src/reddit/selectors/experiments/contributeBeforeSignUp.ts"),
 				ce = n("./src/reddit/selectors/experiments/emailEnablement.ts"),
 				le = n("./src/reddit/selectors/platform.ts"),
@@ -18829,7 +18829,7 @@
 					}, o[t]) : null
 				};
 				if (e.isD2xPdpSideRailRecsEnabled) {
-					const t = e.d2xPdpSideRailRecsVariant === u.Ec.GreyRereddit ? e.reredditButtons : [];
+					const t = e.d2xPdpSideRailRecsVariant === u.Fc.GreyRereddit ? e.reredditButtons : [];
 					return s.a.createElement(S, {
 						reredditContent: t,
 						countryCode: e.countryCode
@@ -23635,14 +23635,14 @@
 						...p,
 						variables: t
 					});
-					return !!Object(a.c)(n) && (n.body.data.subredditInfoById.allowedPostTypes || []).includes(b.v.Talk)
+					return !!Object(a.c)(n) && (n.body.data.subredditInfoById.allowedPostTypes || []).includes(b.w.Talk)
 				}, E = async (e, t) => {
 					var n, o;
 					const s = await Object(i.a)(e, {
 						...m,
 						variables: t
 					});
-					return !!Object(a.c)(s) && (null !== (o = null === (n = s.body.data.profileByName) || void 0 === n ? void 0 : n.allowedPostTypes) && void 0 !== o ? o : []).includes(b.v.Talk)
+					return !!Object(a.c)(s) && (null !== (o = null === (n = s.body.data.profileByName) || void 0 === n ? void 0 : n.allowedPostTypes) && void 0 !== o ? o : []).includes(b.w.Talk)
 				}, C = async e => {
 					var t;
 					const n = await Object(i.a)(e, u);
@@ -33436,11 +33436,11 @@
 				c = n("./node_modules/reselect/es/index.js");
 			const l = Object(c.a)(e => Object(s.c)(e, {
 					experimentEligibilitySelector: e => Object(a.g)(e) && Object(r.f)(e),
-					experimentName: o.kc
+					experimentName: o.lc
 				}), i.a),
 				d = Object(c.a)(e => Object(s.c)(e, {
 					experimentEligibilitySelector: e => !Object(a.g)(e) && Object(r.f)(e),
-					experimentName: o.jc
+					experimentName: o.kc
 				}), i.a),
 				u = Object(c.a)(l, d, (e, t) => e || t),
 				p = Object(c.a)(l, d, (e, t) => !(!e && !t))
@@ -33494,28 +33494,28 @@
 			}));
 			var o = n("./src/reddit/constants/experiments.ts"),
 				s = n("./src/reddit/selectors/experiments/econ/simpleExperiment.ts");
-			const r = Object(s.a)(o.hd),
-				i = Object(s.a)(o.fd),
-				a = Object(s.a)(o.id),
-				c = Object(s.a)(o.ed),
-				l = Object(s.a)(o.dd),
-				d = Object(s.a)(o.kd),
-				u = Object(s.a)(o.jd),
-				p = Object(s.a)(o.ad),
-				m = Object(s.a)(o.Uc),
-				h = Object(s.a)(o.Vc),
-				b = Object(s.a)(o.Sc),
-				f = Object(s.a)(o.Tc),
-				g = Object(s.a)(o.Wc),
-				E = Object(s.a)(o.Rc),
-				C = Object(s.a)(o.bd),
-				x = Object(s.a)(o.cd),
-				y = Object(s.a)(o.gd),
-				v = Object(s.a)(o.ld),
-				O = Object(s.a)(o.md),
-				_ = Object(s.a)(o.pd),
-				k = Object(s.a)(o.od),
-				j = Object(s.a)(o.nd)
+			const r = Object(s.a)(o.id),
+				i = Object(s.a)(o.gd),
+				a = Object(s.a)(o.jd),
+				c = Object(s.a)(o.fd),
+				l = Object(s.a)(o.ed),
+				d = Object(s.a)(o.ld),
+				u = Object(s.a)(o.kd),
+				p = Object(s.a)(o.bd),
+				m = Object(s.a)(o.Vc),
+				h = Object(s.a)(o.Wc),
+				b = Object(s.a)(o.Tc),
+				f = Object(s.a)(o.Uc),
+				g = Object(s.a)(o.Xc),
+				E = Object(s.a)(o.Sc),
+				C = Object(s.a)(o.cd),
+				x = Object(s.a)(o.dd),
+				y = Object(s.a)(o.hd),
+				v = Object(s.a)(o.md),
+				O = Object(s.a)(o.nd),
+				_ = Object(s.a)(o.qd),
+				k = Object(s.a)(o.pd),
+				j = Object(s.a)(o.od)
 		},
 		"./src/reddit/selectors/experiments/loggedOutOneFeed.ts": function(e, t, n) {
 			"use strict";
@@ -33545,9 +33545,9 @@
 			var o = n("./src/reddit/constants/experiments.ts"),
 				s = n("./src/reddit/helpers/chooseVariant/index.ts");
 			const r = e => Object(s.c)(e, {
-				experimentName: o.me,
+				experimentName: o.ne,
 				experimentEligibilitySelector: s.a
-			}) === o.ve.Enabled
+			}) === o.we.Enabled
 		},
 		"./src/reddit/selectors/experiments/presence.ts": function(e, t, n) {
 			"use strict";
@@ -33559,8 +33559,8 @@
 			const r = e => {
 				return Object(s.c)(e, {
 					experimentEligibilitySelector: s.a,
-					experimentName: o.He
-				}) === o.sd
+					experimentName: o.Ie
+				}) === o.td
 			}
 		},
 		"./src/reddit/selectors/experiments/typingIndicators.ts": function(e, t, n) {
@@ -33582,29 +33582,29 @@
 					if (Object(i.a)(e)) return !1;
 					return Object(s.c)(e, {
 						experimentEligibilitySelector: r.e,
-						experimentName: o.Qf
-					}) === o.sd
+						experimentName: o.Rf
+					}) === o.td
 				},
 				c = e => {
 					return Object(s.c)(e, {
 						experimentEligibilitySelector: r.e,
-						experimentName: o.Rf
-					}) === o.sd
+						experimentName: o.Sf
+					}) === o.td
 				},
 				l = e => {
 					if (Object(i.a)(e)) return !1;
 					const t = Object(s.c)(e, {
 						experimentEligibilitySelector: r.e,
-						experimentName: o.Pf
+						experimentName: o.Qf
 					});
-					return t === o.Gf.TypingIndicators || t === o.Gf.IndicatorsPlusCTA
+					return t === o.Hf.TypingIndicators || t === o.Hf.IndicatorsPlusCTA
 				},
 				d = e => {
 					if (Object(i.a)(e)) return !1;
 					const t = Object(r.d)(e, {
-						experimentName: o.Pf
+						experimentName: o.Qf
 					});
-					return (null == t ? void 0 : t.variant) === o.Gf.IndicatorsPlusCTA
+					return (null == t ? void 0 : t.variant) === o.Hf.IndicatorsPlusCTA
 				}
 		},
 		"./src/reddit/selectors/gold/enabledFeatures.ts": function(e, t, n) {
@@ -34027,4 +34027,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.a160c99e6ed13ebef684.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.e45783610ab192b82056.js.map

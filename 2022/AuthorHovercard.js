@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/AuthorHovercard.57cfe626868611641c15.js
-// Retrieved at 6/21/2022, 7:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/AuthorHovercard.b3a8f52c195a4993d96a.js
+// Retrieved at 6/23/2022, 1:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["AuthorHovercard"], {
 		"./src/lib/constants/colors.ts": function(e, t, n) {
@@ -1970,7 +1970,7 @@
 				y = n.n(E),
 				w = n("./src/redditGQL/types.ts");
 			const S = Object(h.a)(I.b),
-				P = ["NONE", w.r.AbuseWarning, w.r.SpamWarning, w.r.SpamWatch, w.r.SolidContributor, w.r.HelpfulUser],
+				P = ["NONE", w.s.AbuseWarning, w.s.SpamWarning, w.s.SpamWatch, w.s.SolidContributor, w.s.HelpfulUser],
 				U = {
 					...j.f,
 					NONE: () => f.fbt._("None", null, {
@@ -2336,8 +2336,8 @@
 					[w.j.WikiUnbanned]: "wiki_unban"
 				},
 				Q = {
-					[w.r.BotBan]: "bot",
-					[w.r.PermaBan]: "block"
+					[w.s.BotBan]: "bot",
+					[w.s.PermaBan]: "block"
 				};
 			var X = e => {
 					const {
@@ -2437,7 +2437,7 @@
 						m = Object(k.b)(j.e[l || "bot"], {
 							isFilled: !0
 						}),
-						b = ![j.c, w.r.BotBan, w.r.PermaBan].includes(l),
+						b = ![j.c, w.s.BotBan, w.s.PermaBan].includes(l),
 						p = n.postInfo ? null === (s = n.postInfo) || void 0 === s ? void 0 : s.permalink : n.commentInfo ? null === (i = n.commentInfo) || void 0 === i ? void 0 : i.permalink : void 0,
 						f = Object(k.b)("external_link_fill");
 					return u ? a.a.createElement("div", {
@@ -2639,10 +2639,10 @@
 					})
 				},
 				xe = {
-					[w.r.BotBan]: () => f.fbt._("Banned by bot", null, {
+					[w.s.BotBan]: () => f.fbt._("Banned by bot", null, {
 						hk: "gc7lV"
 					}),
-					[w.r.PermaBan]: () => f.fbt._("Permanently banned", null, {
+					[w.s.PermaBan]: () => f.fbt._("Permanently banned", null, {
 						hk: "4oNAOs"
 					})
 				};
@@ -5814,72 +5814,72 @@
 			const s = "DEFAULT_MOD_NOTE",
 				i = (e, t) => `LAST_AUTHOR_MOD_NOTE-${e}${t?"-overlay":""}`,
 				d = {
-					[o.r.BotBan]: "#1717604F",
-					[o.r.PermaBan]: "#3E0A514F",
-					[o.r.Ban]: "#5B00414F",
-					[o.r.AbuseWarning]: "#6D001A4F",
-					[o.r.SpamWarning]: "#5423134F",
-					[o.r.SpamWatch]: "#3A26194F",
-					[o.r.SolidContributor]: "#0044414F",
-					[o.r.HelpfulUser]: "#02315C4F",
+					[o.s.BotBan]: "#1717604F",
+					[o.s.PermaBan]: "#3E0A514F",
+					[o.s.Ban]: "#5B00414F",
+					[o.s.AbuseWarning]: "#6D001A4F",
+					[o.s.SpamWarning]: "#5423134F",
+					[o.s.SpamWatch]: "#3A26194F",
+					[o.s.SolidContributor]: "#0044414F",
+					[o.s.HelpfulUser]: "#02315C4F",
 					[s]: "#242424"
 				},
 				c = {
-					[o.r.BotBan]: "#CCD7FF",
-					[o.r.PermaBan]: "#F3CCFF",
-					[o.r.Ban]: "#FFC9D2",
-					[o.r.AbuseWarning]: "#FFD5AE",
-					[o.r.SpamWarning]: "#FFF494",
-					[o.r.SpamWatch]: "#EAD5A2",
-					[o.r.SolidContributor]: "#CBFD9A",
-					[o.r.HelpfulUser]: "#A6EDFF",
+					[o.s.BotBan]: "#CCD7FF",
+					[o.s.PermaBan]: "#F3CCFF",
+					[o.s.Ban]: "#FFC9D2",
+					[o.s.AbuseWarning]: "#FFD5AE",
+					[o.s.SpamWarning]: "#FFF494",
+					[o.s.SpamWatch]: "#EAD5A2",
+					[o.s.SolidContributor]: "#CBFD9A",
+					[o.s.HelpfulUser]: "#A6EDFF",
 					[s]: "#E6E6E6"
 				},
 				l = {
-					[o.r.BotBan]: "bot_fill",
-					[o.r.PermaBan]: "bot_fill",
-					[o.r.Ban]: "ban_fill",
-					[o.r.AbuseWarning]: "spoiler_fill",
-					[o.r.SpamWarning]: "spoiler_fill",
-					[o.r.SpamWatch]: "nsfw_language_fill",
-					[o.r.SolidContributor]: "new_fill",
-					[o.r.HelpfulUser]: "peace_fill",
+					[o.s.BotBan]: "bot_fill",
+					[o.s.PermaBan]: "bot_fill",
+					[o.s.Ban]: "ban_fill",
+					[o.s.AbuseWarning]: "spoiler_fill",
+					[o.s.SpamWarning]: "spoiler_fill",
+					[o.s.SpamWatch]: "nsfw_language_fill",
+					[o.s.SolidContributor]: "new_fill",
+					[o.s.HelpfulUser]: "peace_fill",
 					[s]: "user_note_fill"
 				},
 				u = {
-					[o.r.BotBan]: "#5349DA",
-					[o.r.PermaBan]: "#9C3CAC",
-					[o.r.Ban]: "#DE107F",
-					[o.r.AbuseWarning]: "#FB133A",
-					[o.r.SpamWarning]: "#E79800",
-					[o.r.SpamWatch]: "#9C6926",
-					[o.r.SolidContributor]: "#00A368",
-					[o.r.HelpfulUser]: "#006DC6",
+					[o.s.BotBan]: "#5349DA",
+					[o.s.PermaBan]: "#9C3CAC",
+					[o.s.Ban]: "#DE107F",
+					[o.s.AbuseWarning]: "#FB133A",
+					[o.s.SpamWarning]: "#E79800",
+					[o.s.SpamWatch]: "#9C6926",
+					[o.s.SolidContributor]: "#00A368",
+					[o.s.HelpfulUser]: "#006DC6",
 					[s]: "#818384"
 				},
 				m = {
-					[o.r.BotBan]: () => r.fbt._("Bot Ban", null, {
+					[o.s.BotBan]: () => r.fbt._("Bot Ban", null, {
 						hk: "2kKP5R"
 					}),
-					[o.r.PermaBan]: () => r.fbt._("Perma Ban", null, {
+					[o.s.PermaBan]: () => r.fbt._("Perma Ban", null, {
 						hk: "2NKibN"
 					}),
-					[o.r.Ban]: () => r.fbt._("Ban", null, {
+					[o.s.Ban]: () => r.fbt._("Ban", null, {
 						hk: "4tkpUP"
 					}),
-					[o.r.AbuseWarning]: () => r.fbt._("Abuse Warning", null, {
+					[o.s.AbuseWarning]: () => r.fbt._("Abuse Warning", null, {
 						hk: "3yQJ5"
 					}),
-					[o.r.SpamWarning]: () => r.fbt._("Spam Warning", null, {
+					[o.s.SpamWarning]: () => r.fbt._("Spam Warning", null, {
 						hk: "4sYfYD"
 					}),
-					[o.r.SpamWatch]: () => r.fbt._("Spam Watch", null, {
+					[o.s.SpamWatch]: () => r.fbt._("Spam Watch", null, {
 						hk: "3CoM4o"
 					}),
-					[o.r.SolidContributor]: () => r.fbt._("Good Contributor", null, {
+					[o.s.SolidContributor]: () => r.fbt._("Good Contributor", null, {
 						hk: "31uTvb"
 					}),
-					[o.r.HelpfulUser]: () => r.fbt._("Helpful", null, {
+					[o.s.HelpfulUser]: () => r.fbt._("Helpful", null, {
 						hk: "1iapJ2"
 					})
 				},
@@ -5907,13 +5907,13 @@
 			const o = e => {
 					return !(Object(a.c)(e, {
 						experimentEligibilitySelector: a.a,
-						experimentName: r.Yd
-					}) === r.sd)
+						experimentName: r.Zd
+					}) === r.td)
 				},
 				s = e => Object(a.c)(e, {
 					experimentEligibilitySelector: a.a,
-					experimentName: r.Zd
-				}) === r.sd
+					experimentName: r.ae
+				}) === r.td
 		},
 		"./src/reddit/selectors/experiments/hotPotato.ts": function(e, t, n) {
 			"use strict";
@@ -5937,7 +5937,7 @@
 					if (!u(e)) return;
 					const t = Object(s.c)(e, {
 						experimentEligibilitySelector: l,
-						experimentName: o.Ld,
+						experimentName: o.Md,
 						expEventOverride: !1
 					});
 					return null == t ? void 0 : t.toLocaleLowerCase()
@@ -5960,9 +5960,9 @@
 				},
 				p = e => !!m(e) && Object(s.c)(e, {
 					experimentEligibilitySelector: u,
-					experimentName: o.Md,
+					experimentName: o.Nd,
 					expEventOverride: !1
-				}) !== o.Nd.Readonly
+				}) !== o.Od.Readonly
 		},
 		"./src/reddit/selectors/notificationPrefs.ts": function(e, t, n) {
 			"use strict";
@@ -6122,4 +6122,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/AuthorHovercard.57cfe626868611641c15.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/AuthorHovercard.b3a8f52c195a4993d96a.js.map

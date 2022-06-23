@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModListing.8d74280c7c8ec256be0e.js
-// Retrieved at 6/21/2022, 7:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModListing.d3a8f012555b76cc64fb.js
+// Retrieved at 6/23/2022, 1:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModListing"], {
 		"./node_modules/classnames/index.js": function(e, t, n) {
@@ -1250,7 +1250,7 @@
 				b = n("./src/reddit/components/ModQueueList/PostSortDropdown.m.less"),
 				f = n.n(b);
 			! function(e) {
-				e.OldestFirst = "oldest"
+				e.NewestFirst = "newest", e.OldestFirst = "oldest", e.MostReportedFirst = "most_reported"
 			}(r || (r = {}));
 			const g = u.a.wrapped(m.b, "Row", f.a),
 				v = Object(c.c)({
@@ -1278,6 +1278,16 @@
 					hk: "1x9Jdr"
 				}),
 				isSelected: e.postSort === r.OldestFirst
+			})), i.a.createElement(p.default, {
+				onClick: e.sendEventWithName("modqueue_sort_most_reports"),
+				to: Object(d.a)(Object(l.a)(`${e.origin}${e.currentPage.url}`, ["after", "before", "page"]), {
+					sort: r.MostReportedFirst
+				})
+			}, i.a.createElement(g, {
+				displayText: s.fbt._("Most reported first", null, {
+					hk: "2ac4Mt"
+				}),
+				isSelected: e.postSort === r.MostReportedFirst
 			}))))
 		},
 		"./src/reddit/components/ModalStyledComponents/index.m.less": function(e, t, n) {
@@ -1826,7 +1836,7 @@
 					}, r[t]) : null
 				};
 				if (e.isD2xPdpSideRailRecsEnabled) {
-					const t = e.d2xPdpSideRailRecsVariant === u.Ec.GreyRereddit ? e.reredditButtons : [];
+					const t = e.d2xPdpSideRailRecsVariant === u.Fc.GreyRereddit ? e.reredditButtons : [];
 					return s.a.createElement(C, {
 						reredditContent: t,
 						countryCode: e.countryCode
@@ -3306,7 +3316,7 @@
 					subreddit: n
 				} = e;
 				let s = n && `r/${n}` || t && `u/${t}` || "all";
-				return "comments" !== e.onlyOfType && "links" !== e.onlyOfType && "chat_comments" !== e.onlyOfType || (s += `--[${e.onlyOfType}]`), e.sort === r.a.OldestFirst && (s += `--[${e.sort}]`), s
+				return "comments" !== e.onlyOfType && "links" !== e.onlyOfType && "chat_comments" !== e.onlyOfType || (s += `--[${e.onlyOfType}]`), e.sort !== r.a.NewestFirst && (s += `--[${e.sort}]`), s
 			}
 		},
 		"./src/reddit/helpers/styles/postBackgroundColor.ts": function(e, t, n) {
@@ -7164,11 +7174,11 @@
 				c = n("./node_modules/reselect/es/index.js");
 			const d = Object(c.a)(e => Object(s.c)(e, {
 					experimentEligibilitySelector: e => Object(a.g)(e) && Object(o.f)(e),
-					experimentName: r.kc
+					experimentName: r.lc
 				}), i.a),
 				l = Object(c.a)(e => Object(s.c)(e, {
 					experimentEligibilitySelector: e => !Object(a.g)(e) && Object(o.f)(e),
-					experimentName: r.jc
+					experimentName: r.kc
 				}), i.a),
 				u = Object(c.a)(d, l, (e, t) => e || t),
 				m = Object(c.a)(d, l, (e, t) => !(!e && !t))
@@ -7185,7 +7195,7 @@
 					experimentEligibilitySelector: s.a,
 					experimentName: e
 				});
-				return !(!n || Object(r.Uf)(n))
+				return !(!n || Object(r.Vf)(n))
 			}
 		},
 		"./src/reddit/selectors/experiments/navbarLikeMweb.ts": function(e, t, n) {
@@ -7196,9 +7206,9 @@
 			var r = n("./src/reddit/constants/experiments.ts"),
 				s = n("./src/reddit/helpers/chooseVariant/index.ts");
 			const o = e => Object(s.c)(e, {
-				experimentName: r.me,
+				experimentName: r.ne,
 				experimentEligibilitySelector: s.a
-			}) === r.ve.Enabled
+			}) === r.we.Enabled
 		},
 		"./src/reddit/selectors/experiments/newCommunityProgressV3.ts": function(e, t, n) {
 			"use strict";
@@ -7239,7 +7249,7 @@
 					return r ? r * s.Sb < 1639443600180 ? void 0 : f(e) : void 0
 				},
 				f = Object(r.a)(e => Object(a.c)(e, {
-					experimentName: o.oe,
+					experimentName: o.pe,
 					experimentEligibilitySelector: c.e
 				}), d.a)
 		},
@@ -7355,4 +7365,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModListing.8d74280c7c8ec256be0e.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModListing.d3a8f012555b76cc64fb.js.map

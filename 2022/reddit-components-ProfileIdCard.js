@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-ProfileIdCard.96521b369707f81ddc60.js
-// Retrieved at 6/21/2022, 7:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-ProfileIdCard.55f6cb27c614b0aa3a1c.js
+// Retrieved at 6/23/2022, 1:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-ProfileIdCard"], {
 		"./node_modules/lodash/compact.js": function(e, t) {
@@ -2110,8 +2110,8 @@
 					LoadingComponent: () => null
 				}),
 				q = r("./src/reddit/constants/modals.ts"),
-				Y = r("./src/reddit/helpers/correlationIdTracker.ts"),
-				Q = r("./src/reddit/helpers/styles/mixins/loading.ts"),
+				Q = r("./src/reddit/helpers/correlationIdTracker.ts"),
+				Y = r("./src/reddit/helpers/styles/mixins/loading.ts"),
 				V = r("./src/reddit/models/Gold/Premium/index.ts"),
 				X = r("./src/reddit/selectors/experiments/chatInviteLinkSharing.ts"),
 				J = r("./src/reddit/selectors/experiments/crisisTextLine.ts"),
@@ -2145,7 +2145,7 @@
 						...r
 					} = e;
 					return a.a.createElement("div", re({}, r, {
-						className: Object(F.a)(te.a.Shimmer, Object(Q.b)({
+						className: Object(F.a)(te.a.Shimmer, Object(Y.b)({
 							isLoading: t
 						}))
 					}))
@@ -2160,7 +2160,7 @@
 							onClickGivePremium: e,
 							sendEvent: t
 						} = this.props;
-						e(Object(Y.d)(Y.a.GiftPremiumFlow));
+						e(Object(Q.d)(Q.a.GiftPremiumFlow));
 						const {
 							clickGivePremiumEvent: n
 						} = await r.e("givePremiumTrackers").then(r.bind(null, "./src/reddit/helpers/trackers/givePremium.ts"));
@@ -2564,7 +2564,7 @@
 					prefShowSnoovatar: D,
 					snoovatarFullBodyAsset: R,
 					username: W
-				} = j, G = !!o && o.id === T, H = !(!o || !o.snoovatarFullBodyAsset), K = C && C.bannerBackgroundImage, z = !!_ && _.isNSFW, Z = z && c, q = !(!I || !I.userIsSubscriber), Y = `/user/${W}/`, Q = N && N.url === Y, V = !I || I.acceptChats, X = !I || I.acceptPms, J = E && Object(ue.b)(R), $ = () => {
+				} = j, G = !!o && o.id === T, H = !(!o || !o.snoovatarFullBodyAsset), K = C && C.bannerBackgroundImage, z = !!_ && _.isNSFW, Z = z && c, q = !(!I || !I.userIsSubscriber), Q = `/user/${W}/`, Y = N && N.url === Q, V = !I || I.acceptChats, X = !I || I.acceptPms, J = E && Object(ue.b)(R), $ = () => {
 					r(e => !e)
 				};
 				return a.a.createElement(a.a.Fragment, null, a.a.createElement(u.a, {
@@ -2578,7 +2578,7 @@
 					isSocialLinksCreationEnabled: p,
 					publicDescription: I ? I.publicDescription : void 0,
 					title: _ ? _.title : void 0,
-					url: Q ? null : Y,
+					url: Y ? null : Q,
 					userCreated: F,
 					username: W,
 					recentAwardings: L,
@@ -3222,7 +3222,7 @@
 			const o = e => Object(s.c)(e, {
 				experimentName: n.G,
 				experimentEligibilitySelector: () => Object(a.P)(e)
-			}) === n.sd
+			}) === n.td
 		},
 		"./src/reddit/selectors/experiments/crisisTextLine.ts": function(e, t, r) {
 			"use strict";
@@ -3255,13 +3255,13 @@
 			const a = e => {
 					return !(Object(s.c)(e, {
 						experimentEligibilitySelector: s.a,
-						experimentName: n.Yd
-					}) === n.sd)
+						experimentName: n.Zd
+					}) === n.td)
 				},
 				o = e => Object(s.c)(e, {
 					experimentEligibilitySelector: s.a,
-					experimentName: n.Zd
-				}) === n.sd
+					experimentName: n.ae
+				}) === n.td
 		},
 		"./src/reddit/selectors/premium.ts": function(e, t, r) {
 			"use strict";
@@ -3287,4 +3287,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ProfileIdCard.96521b369707f81ddc60.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ProfileIdCard.55f6cb27c614b0aa3a1c.js.map

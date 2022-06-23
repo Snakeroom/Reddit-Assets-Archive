@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ReportFlowNew.0c5cdae8aecb8c3a9cce.js
-// Retrieved at 6/21/2022, 7:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ReportFlowNew.de57fcf2d589297daf81.js
+// Retrieved at 6/23/2022, 1:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ReportFlowNew"], {
 		"./src/reddit/actions/blockedRedditors.ts": function(e, t, o) {
@@ -779,14 +779,14 @@
 						...p,
 						variables: t
 					});
-					return !!Object(d.c)(o) && (o.body.data.subredditInfoById.allowedPostTypes || []).includes(h.v.Talk)
+					return !!Object(d.c)(o) && (o.body.data.subredditInfoById.allowedPostTypes || []).includes(h.w.Talk)
 				}, _ = async (e, t) => {
 					var o, r;
 					const s = await Object(i.a)(e, {
 						...m,
 						variables: t
 					});
-					return !!Object(d.c)(s) && (null !== (r = null === (o = s.body.data.profileByName) || void 0 === o ? void 0 : o.allowedPostTypes) && void 0 !== r ? r : []).includes(h.v.Talk)
+					return !!Object(d.c)(s) && (null !== (r = null === (o = s.body.data.profileByName) || void 0 === o ? void 0 : o.allowedPostTypes) && void 0 !== r ? r : []).includes(h.w.Talk)
 				}, w = async e => {
 					var t;
 					const o = await Object(i.a)(e, u);
@@ -1006,4 +1006,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ReportFlowNew.0c5cdae8aecb8c3a9cce.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ReportFlowNew.de57fcf2d589297daf81.js.map

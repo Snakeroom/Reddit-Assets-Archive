@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-MediumPost.573e2d9618b0fc83f4ee.js
-// Retrieved at 6/21/2022, 7:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-MediumPost.ba4a0a920271027cbe48.js
+// Retrieved at 6/23/2022, 1:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-MediumPost"], {
 		"./src/higherOrderComponents/withClickTracking/index.tsx": function(e, t, s) {
@@ -885,7 +885,7 @@
 				x = s("./src/reddit/components/ModQueueList/PostSortDropdown.m.less"),
 				h = s.n(x);
 			! function(e) {
-				e.OldestFirst = "oldest"
+				e.NewestFirst = "newest", e.OldestFirst = "oldest", e.MostReportedFirst = "most_reported"
 			}(o || (o = {}));
 			const f = u.a.wrapped(m.b, "Row", h.a),
 				v = Object(a.c)({
@@ -913,6 +913,16 @@
 					hk: "1x9Jdr"
 				}),
 				isSelected: e.postSort === o.OldestFirst
+			})), i.a.createElement(p.default, {
+				onClick: e.sendEventWithName("modqueue_sort_most_reports"),
+				to: Object(c.a)(Object(l.a)(`${e.origin}${e.currentPage.url}`, ["after", "before", "page"]), {
+					sort: o.MostReportedFirst
+				})
+			}, i.a.createElement(f, {
+				displayText: n.fbt._("Most reported first", null, {
+					hk: "2ac4Mt"
+				}),
+				isSelected: e.postSort === o.MostReportedFirst
 			}))))
 		},
 		"./src/reddit/components/NotificationButton/index.m.less": function(e, t, s) {
@@ -1511,7 +1521,7 @@
 					subreddit: s
 				} = e;
 				let n = s && `r/${s}` || t && `u/${t}` || "all";
-				return "comments" !== e.onlyOfType && "links" !== e.onlyOfType && "chat_comments" !== e.onlyOfType || (n += `--[${e.onlyOfType}]`), e.sort === o.a.OldestFirst && (n += `--[${e.sort}]`), n
+				return "comments" !== e.onlyOfType && "links" !== e.onlyOfType && "chat_comments" !== e.onlyOfType || (n += `--[${e.onlyOfType}]`), e.sort !== o.a.NewestFirst && (n += `--[${e.sort}]`), n
 			}
 		},
 		"./src/reddit/helpers/styles/mixins/index.tsx": function(e, t, s) {
@@ -1667,7 +1677,7 @@
 					return Object(n.c)(e, {
 						experimentEligibilitySelector: n.a,
 						experimentName: o.Rb
-					}) === o.sd
+					}) === o.td
 				})(e)
 			}
 		},
@@ -1684,7 +1694,7 @@
 				i = s("./src/reddit/selectors/experiments/nsfwListingBelow.ts");
 			const d = e => {
 					const t = Object(i.a)(e);
-					return Boolean(t) && !Object(n.Uf)(t)
+					return Boolean(t) && !Object(n.Vf)(t)
 				},
 				a = Object(o.a)(d, r.d, (e, t) => e && !t)
 		},
@@ -1766,13 +1776,13 @@
 				r = s("./src/reddit/helpers/chooseVariant/index.ts"),
 				i = s("./src/reddit/selectors/posts.ts");
 			const d = e => Object(r.c)(e, {
-					experimentName: n.Le,
+					experimentName: n.Me,
 					experimentEligibilitySelector: r.a
 				}),
-				a = (e, t) => t === n.Te.Enabled && (null == e ? void 0 : e.isCreatedFromAdsUi) || (null == e ? void 0 : e.isSponsored),
+				a = (e, t) => t === n.Ue.Enabled && (null == e ? void 0 : e.isCreatedFromAdsUi) || (null == e ? void 0 : e.isSponsored),
 				c = Object(o.a)(i.G, d, (e, t) => a(e, t));
 			Object(o.a)((e, t) => t, d, (e, t) => a(e, t))
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-MediumPost.573e2d9618b0fc83f4ee.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-MediumPost.ba4a0a920271027cbe48.js.map

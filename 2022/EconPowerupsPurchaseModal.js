@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/EconPowerupsPurchaseModal.6f3e6c271b59f0f3caa2.js
-// Retrieved at 6/21/2022, 7:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/EconPowerupsPurchaseModal.f8be77232bd3acabbf57.js
+// Retrieved at 6/23/2022, 1:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["EconPowerupsPurchaseModal"], {
 		"./node_modules/@stripe/react-stripe-js/dist/react-stripe.umd.js": function(e, t, r) {
@@ -1202,8 +1202,8 @@
 						onClick: () => i(1)
 					})))
 				},
-				Y = r("./src/reddit/components/Econ/PowerupsPurchaseModal/PowerupsPurchase/PowerupsProgressControl/ProgressBar/index.m.less"),
-				Z = r.n(Y);
+				Z = r("./src/reddit/components/Econ/PowerupsPurchaseModal/PowerupsPurchase/PowerupsProgressControl/ProgressBar/index.m.less"),
+				Y = r.n(Z);
 			const {
 				fbt: J
 			} = r("./node_modules/fbt/lib/FbtPublic.js");
@@ -1220,20 +1220,20 @@
 					return a.a.createElement("div", {
 						className: r
 					}, a.a.createElement("div", {
-						className: Z.a.titleRow
+						className: Y.a.titleRow
 					}, a.a.createElement("span", null, J._("Powerups", null, {
 						hk: "DrcXp"
 					})), a.a.createElement("span", null, n < o ? `${n}/${o}` : n)), a.a.createElement("div", {
-						className: Z.a.barRow
+						className: Y.a.barRow
 					}, a.a.createElement("div", {
-						className: Z.a.track
+						className: Y.a.track
 					}), a.a.createElement("div", {
-						className: Z.a.progress,
+						className: Y.a.progress,
 						style: {
 							width: `${100*s}%`
 						}
 					}), t && a.a.createElement("div", {
-						className: Z.a.additionalProgress,
+						className: Y.a.additionalProgress,
 						style: {
 							width: `${100*(c-s)}%`,
 							left: `${100*s}%`
@@ -3430,7 +3430,7 @@
 			}));
 			var n = r("./src/reddit/constants/experiments.ts"),
 				a = r("./src/reddit/selectors/experiments/econ/simpleExperiment.ts");
-			const o = Object(a.a)(n.Yc)
+			const o = Object(a.a)(n.Zc)
 		},
 		"./src/reddit/selectors/gild.ts": function(e, t, r) {
 			"use strict";
@@ -3676,4 +3676,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EconPowerupsPurchaseModal.6f3e6c271b59f0f3caa2.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EconPowerupsPurchaseModal.f8be77232bd3acabbf57.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ChatPost~CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~Post~38f39fb8.22760533c4b5717b971c.js
-// Retrieved at 6/21/2022, 7:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ChatPost~CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~Post~38f39fb8.ca3821d09acfa6b50783.js
+// Retrieved at 6/23/2022, 1:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ChatPost~CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~Post~38f39fb8"], {
 		"./src/reddit/actions/economics/subredditPremium/actionCreators.ts": function(e, t, r) {
@@ -3247,72 +3247,72 @@
 			const a = "DEFAULT_MOD_NOTE",
 				i = (e, t) => `LAST_AUTHOR_MOD_NOTE-${e}${t?"-overlay":""}`,
 				d = {
-					[n.r.BotBan]: "#1717604F",
-					[n.r.PermaBan]: "#3E0A514F",
-					[n.r.Ban]: "#5B00414F",
-					[n.r.AbuseWarning]: "#6D001A4F",
-					[n.r.SpamWarning]: "#5423134F",
-					[n.r.SpamWatch]: "#3A26194F",
-					[n.r.SolidContributor]: "#0044414F",
-					[n.r.HelpfulUser]: "#02315C4F",
+					[n.s.BotBan]: "#1717604F",
+					[n.s.PermaBan]: "#3E0A514F",
+					[n.s.Ban]: "#5B00414F",
+					[n.s.AbuseWarning]: "#6D001A4F",
+					[n.s.SpamWarning]: "#5423134F",
+					[n.s.SpamWatch]: "#3A26194F",
+					[n.s.SolidContributor]: "#0044414F",
+					[n.s.HelpfulUser]: "#02315C4F",
 					[a]: "#242424"
 				},
 				c = {
-					[n.r.BotBan]: "#CCD7FF",
-					[n.r.PermaBan]: "#F3CCFF",
-					[n.r.Ban]: "#FFC9D2",
-					[n.r.AbuseWarning]: "#FFD5AE",
-					[n.r.SpamWarning]: "#FFF494",
-					[n.r.SpamWatch]: "#EAD5A2",
-					[n.r.SolidContributor]: "#CBFD9A",
-					[n.r.HelpfulUser]: "#A6EDFF",
+					[n.s.BotBan]: "#CCD7FF",
+					[n.s.PermaBan]: "#F3CCFF",
+					[n.s.Ban]: "#FFC9D2",
+					[n.s.AbuseWarning]: "#FFD5AE",
+					[n.s.SpamWarning]: "#FFF494",
+					[n.s.SpamWatch]: "#EAD5A2",
+					[n.s.SolidContributor]: "#CBFD9A",
+					[n.s.HelpfulUser]: "#A6EDFF",
 					[a]: "#E6E6E6"
 				},
 				l = {
-					[n.r.BotBan]: "bot_fill",
-					[n.r.PermaBan]: "bot_fill",
-					[n.r.Ban]: "ban_fill",
-					[n.r.AbuseWarning]: "spoiler_fill",
-					[n.r.SpamWarning]: "spoiler_fill",
-					[n.r.SpamWatch]: "nsfw_language_fill",
-					[n.r.SolidContributor]: "new_fill",
-					[n.r.HelpfulUser]: "peace_fill",
+					[n.s.BotBan]: "bot_fill",
+					[n.s.PermaBan]: "bot_fill",
+					[n.s.Ban]: "ban_fill",
+					[n.s.AbuseWarning]: "spoiler_fill",
+					[n.s.SpamWarning]: "spoiler_fill",
+					[n.s.SpamWatch]: "nsfw_language_fill",
+					[n.s.SolidContributor]: "new_fill",
+					[n.s.HelpfulUser]: "peace_fill",
 					[a]: "user_note_fill"
 				},
 				u = {
-					[n.r.BotBan]: "#5349DA",
-					[n.r.PermaBan]: "#9C3CAC",
-					[n.r.Ban]: "#DE107F",
-					[n.r.AbuseWarning]: "#FB133A",
-					[n.r.SpamWarning]: "#E79800",
-					[n.r.SpamWatch]: "#9C6926",
-					[n.r.SolidContributor]: "#00A368",
-					[n.r.HelpfulUser]: "#006DC6",
+					[n.s.BotBan]: "#5349DA",
+					[n.s.PermaBan]: "#9C3CAC",
+					[n.s.Ban]: "#DE107F",
+					[n.s.AbuseWarning]: "#FB133A",
+					[n.s.SpamWarning]: "#E79800",
+					[n.s.SpamWatch]: "#9C6926",
+					[n.s.SolidContributor]: "#00A368",
+					[n.s.HelpfulUser]: "#006DC6",
 					[a]: "#818384"
 				},
 				m = {
-					[n.r.BotBan]: () => s.fbt._("Bot Ban", null, {
+					[n.s.BotBan]: () => s.fbt._("Bot Ban", null, {
 						hk: "2kKP5R"
 					}),
-					[n.r.PermaBan]: () => s.fbt._("Perma Ban", null, {
+					[n.s.PermaBan]: () => s.fbt._("Perma Ban", null, {
 						hk: "2NKibN"
 					}),
-					[n.r.Ban]: () => s.fbt._("Ban", null, {
+					[n.s.Ban]: () => s.fbt._("Ban", null, {
 						hk: "4tkpUP"
 					}),
-					[n.r.AbuseWarning]: () => s.fbt._("Abuse Warning", null, {
+					[n.s.AbuseWarning]: () => s.fbt._("Abuse Warning", null, {
 						hk: "3yQJ5"
 					}),
-					[n.r.SpamWarning]: () => s.fbt._("Spam Warning", null, {
+					[n.s.SpamWarning]: () => s.fbt._("Spam Warning", null, {
 						hk: "4sYfYD"
 					}),
-					[n.r.SpamWatch]: () => s.fbt._("Spam Watch", null, {
+					[n.s.SpamWatch]: () => s.fbt._("Spam Watch", null, {
 						hk: "3CoM4o"
 					}),
-					[n.r.SolidContributor]: () => s.fbt._("Good Contributor", null, {
+					[n.s.SolidContributor]: () => s.fbt._("Good Contributor", null, {
 						hk: "31uTvb"
 					}),
-					[n.r.HelpfulUser]: () => s.fbt._("Helpful", null, {
+					[n.s.HelpfulUser]: () => s.fbt._("Helpful", null, {
 						hk: "1iapJ2"
 					})
 				},
@@ -3669,15 +3669,15 @@
 			const a = e => {
 					const t = Object(o.c)(e, {
 						experimentEligibilitySelector: n.Q,
-						experimentName: s.Xc
+						experimentName: s.Yc
 					});
-					return !(!t || Object(s.Uf)(t))
+					return !(!t || Object(s.Vf)(t))
 				},
 				i = e => {
 					return Object(o.c)(e, {
 						experimentEligibilitySelector: n.Q,
-						experimentName: s.Xc
-					}) === s.wd.ListingEnabled
+						experimentName: s.Yc
+					}) === s.xd.ListingEnabled
 				}
 		},
 		"./src/reddit/selectors/gold/topAwarded.ts": function(e, t, r) {
@@ -3737,4 +3737,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatPost~CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~Post~38f39fb8.22760533c4b5717b971c.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatPost~CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~Post~38f39fb8.ca3821d09acfa6b50783.js.map

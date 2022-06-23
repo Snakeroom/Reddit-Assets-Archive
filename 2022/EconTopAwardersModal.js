@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/EconTopAwardersModal.28a314ac38f81f596c10.js
-// Retrieved at 6/21/2022, 7:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/EconTopAwardersModal.10448f1cf5c304579a7b.js
+// Retrieved at 6/23/2022, 1:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["EconTopAwardersModal"], {
 		"./src/lib/currency/centsToDollars/index.ts": function(e, t, r) {
@@ -364,7 +364,7 @@
 					result: K
 				});
 			const Z = {};
-			var Y = function() {
+			var Q = function() {
 					let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : Z,
 						t = arguments.length > 1 ? arguments[1] : void 0;
 					switch (t.type) {
@@ -403,21 +403,21 @@
 							return e
 					}
 				},
-				Q = Object(C.c)({
+				X = Object(C.c)({
 					api: A,
 					fetchedTokens: B,
 					inContext: T,
 					loadMore: H,
 					models: D,
 					search: q,
-					userOrder: Y
+					userOrder: Q
 				});
 			Object(y.a)({
 				features: {
-					banned: Q
+					banned: X
 				}
 			});
-			const X = Object(o.a)(j.s),
+			const Y = Object(o.a)(j.s),
 				J = Object(o.a)(j.r),
 				V = Object(o.a)(j.q),
 				$ = function(e) {
@@ -431,7 +431,7 @@
 							i = Object(g.e)(e, c),
 							d = o.features.banned.fetchedTokens[i];
 						if (o.features.banned.api.pending[i] || d) return;
-						r(X({
+						r(Y({
 							subredditId: e,
 							fetchedToken: c
 						}));
@@ -917,8 +917,8 @@
 				},
 				q = r("./src/reddit/icons/svgs/CoinV2/index.tsx"),
 				Z = r("./src/reddit/components/Econ/TopAwardersModal/Winners/Winner/index.m.less"),
-				Y = r.n(Z);
-			var Q = function(e) {
+				Q = r.n(Z);
+			var X = function(e) {
 					const {
 						showScore: t,
 						awarder: r,
@@ -926,35 +926,35 @@
 						rank: s
 					} = e, o = r && !r.redditor.profile, c = r ? r.redditor.name : "—";
 					return n.a.createElement("div", {
-						className: Object(i.a)(a, Y.a.winner, Y.a[`winner${s}`], {
-							[Y.a.winnerPlaceholder]: !r
+						className: Object(i.a)(a, Q.a.winner, Q.a[`winner${s}`], {
+							[Q.a.winnerPlaceholder]: !r
 						})
 					}, n.a.createElement("div", {
-						className: Y.a.iconContainer
+						className: Q.a.iconContainer
 					}, n.a.createElement("div", {
-						className: Y.a.iconWithBorder
+						className: Q.a.iconWithBorder
 					}, r && n.a.createElement(M.a, {
-						className: Y.a.icon,
+						className: Q.a.icon,
 						iconUrl: r.redditor.icon ? r.redditor.icon.url : void 0,
 						isNSFW: !!r.redditor.profile && r.redditor.profile.isNsfw,
 						userName: c
 					})), n.a.createElement("div", {
-						className: Y.a.rank
+						className: Q.a.rank
 					}, s)), n.a.createElement("h3", {
-						className: Y.a.name
+						className: Q.a.name
 					}, r && !o ? n.a.createElement(B.a, {
 						user: c,
 						tooltipId: `topawarderwinner-userhovercard--${c}`,
 						sendHoverCardEvent: k.a,
-						wrapperClassName: Y.a.hoverCardWrapper
+						wrapperClassName: Q.a.hoverCardWrapper
 					}, c) : c), r && t && n.a.createElement("div", {
-						className: Y.a.score
+						className: Q.a.score
 					}, n.a.createElement(q.a, {
-						className: Y.a.coinIcon
+						className: Q.a.coinIcon
 					}), r.score))
 				},
-				X = r("./src/reddit/components/Econ/TopAwardersModal/Winners/index.m.less"),
-				J = r.n(X);
+				Y = r("./src/reddit/components/Econ/TopAwardersModal/Winners/index.m.less"),
+				J = r.n(Y);
 			var V = function(e) {
 					const {
 						awarders: t,
@@ -967,7 +967,7 @@
 						className: Object(i.a)(r, J.a.container, {
 							[J.a.flexContainer]: s.length < 3
 						})
-					}, s.map((e, t) => n.a.createElement(Q, {
+					}, s.map((e, t) => n.a.createElement(X, {
 						showScore: a,
 						className: J.a.winner,
 						awarder: e,
@@ -1271,9 +1271,9 @@
 				K = r("./src/reddit/actions/inContextModeration.ts"),
 				q = r("./src/reddit/actions/modal.ts"),
 				Z = r("./src/reddit/actions/subredditModeration/ban.ts"),
-				Y = r("./src/reddit/constants/modals.ts"),
-				Q = r("./src/reddit/components/Hovercards/helpers.ts"),
-				X = r("./src/reddit/icons/fonts/index.tsx"),
+				Q = r("./src/reddit/constants/modals.ts"),
+				X = r("./src/reddit/components/Hovercards/helpers.ts"),
+				Y = r("./src/reddit/icons/fonts/index.tsx"),
 				J = r("./src/reddit/models/ModeratingSubreddits/index.ts"),
 				V = r("./src/reddit/selectors/bannedUser.ts"),
 				$ = r("./src/reddit/components/Hovercards/AuthorHovercard/ModActions.m.less"),
@@ -1307,33 +1307,33 @@
 					} = this.props;
 					return n.a.createElement("div", {
 						className: e
-					}, a ? n.a.createElement(Q.a, {
+					}, a ? n.a.createElement(X.a, {
 						role: "button",
 						onClick: () => {
 							s(this.props.user.id), o(F.e(t))
 						}
-					}, n.a.createElement(X.a, {
+					}, n.a.createElement(Y.a, {
 						name: "ban",
 						isFilled: !0,
 						className: ee.a.icon
 					}), te._("Unban User", null, {
 						hk: "1aASyW"
-					})) : n.a.createElement(Q.a, {
+					})) : n.a.createElement(X.a, {
 						role: "button",
 						onClick: () => {
 							c(), o(F.a(t))
 						}
-					}, n.a.createElement(X.a, {
+					}, n.a.createElement(Y.a, {
 						name: "ban",
 						className: ee.a.icon
 					}), te._("Ban User", null, {
 						hk: "3OhuLx"
-					})), r && n.a.createElement(Q.a, {
+					})), r && n.a.createElement(X.a, {
 						role: "button",
 						onClick: () => {
 							i(), o(F.d(t))
 						}
-					}, n.a.createElement(X.a, {
+					}, n.a.createElement(Y.a, {
 						name: "mod_mute",
 						className: ee.a.icon
 					}), te._("Mute User", null, {
@@ -1364,7 +1364,7 @@
 								username: r,
 								subredditId: a,
 								contextId: n
-							})), e(Object(q.i)(Y.a.MUTE_USER))
+							})), e(Object(q.i)(Q.a.MUTE_USER))
 						}
 					}
 				})(ae),
@@ -1374,12 +1374,12 @@
 			} = r("./node_modules/fbt/lib/FbtPublic.js");
 			var ce = Object(s.b)(null, (e, t) => ({
 					onToggleUserFlairModal: () => e(Object(se.g)(t.subredditId, t.username))
-				}))(e => n.a.createElement(Q.a, {
+				}))(e => n.a.createElement(X.a, {
 					role: "button",
 					onClick: () => {
 						e.onToggleUserFlairModal(), e.sendEvent(F.c(e.contextId))
 					}
-				}, n.a.createElement(X.a, {
+				}, n.a.createElement(Y.a, {
 					name: "tag",
 					className: ee.a.icon
 				}), oe._("Edit user flair", null, {
@@ -2769,14 +2769,14 @@
 			const s = e => {
 					return !(Object(n.c)(e, {
 						experimentEligibilitySelector: n.a,
-						experimentName: a.Yd
-					}) === a.sd)
+						experimentName: a.Zd
+					}) === a.td)
 				},
 				o = e => Object(n.c)(e, {
 					experimentEligibilitySelector: n.a,
-					experimentName: a.Zd
-				}) === a.sd
+					experimentName: a.ae
+				}) === a.td
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EconTopAwardersModal.28a314ac38f81f596c10.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EconTopAwardersModal.10448f1cf5c304579a7b.js.map
