@@ -1,19 +1,19 @@
-// https://www.redditstatic.com/desktop2x/vendors~MarketplaceClaimModal~MarketplaceInFeedUnit.33548119228aef7e6189.js
-// Retrieved at 6/16/2022, 4:10:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/vendors~MarketplaceClaimModal~MarketplaceInFeedUnit.a75457d387662422e6dc.js
+// Retrieved at 6/27/2022, 10:20:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["vendors~MarketplaceClaimModal~MarketplaceInFeedUnit"], {
 		"./node_modules/@reddit/crypto/react/nft-claim/index.es.js": function(e, A, t) {
 			"use strict";
 			t.d(A, "a", (function() {
-				return Vf
+				return Rf
 			})), t.d(A, "b", (function() {
 				return jf
 			}));
 			var n = t("./node_modules/react/index.js"),
 				i = t.n(n),
 				r = t("./node_modules/@reddit/crypto/react/gql/index.es.js"),
-				a = t("./node_modules/@reddit/crypto/react/config/index.es.js"),
-				o = t("./node_modules/@reddit/crypto/react/ui/index.es.js"),
+				a = t("./node_modules/@reddit/crypto/react/ui/index.es.js"),
+				o = t("./node_modules/@reddit/crypto/react/config/index.es.js"),
 				s = t("./node_modules/@reddit/crypto/vault/index.es.js"),
 				l = t("./node_modules/react-dom/index.js"),
 				c = t.n(l),
@@ -86,12 +86,12 @@
 						paneName: T.Password
 					}
 				},
-				R = y(v({}, O), {
+				V = y(v({}, O), {
 					action: Q.Create,
 					noun: C.Vault
 				});
-			var V, j;
-			(j = V || (V = {})).MINTED = "MINTED", j.MINTING = "MINTING", j.TRANSFERRING = "TRANSFERRING";
+			var R, j;
+			(j = R || (R = {})).MINTED = "MINTED", j.MINTING = "MINTING", j.TRANSFERRING = "TRANSFERRING";
 
 			function G(e) {
 				return new Promise(A => setTimeout(A, e))
@@ -100,21 +100,21 @@
 					children: e,
 					desc: A
 				}) => {
-					const t = Object(a.c)();
+					const t = Object(o.c)();
 					return i.a.createElement(i.a.Fragment, null, t.singular(e, A))
 				},
 				X = ({
 					children: e,
 					name: A
 				}) => {
-					const t = Object(a.c)();
+					const t = Object(o.c)();
 					return i.a.createElement(i.a.Fragment, null, t.param(e, A))
 				};
 			var Z = "_container_1g1dd_191",
 				W = "_closeButton_1g1dd_198",
 				I = "_section_1g1dd_201",
-				P = "_panel_1g1dd_204",
-				z = "_fullView_1g1dd_209",
+				z = "_panel_1g1dd_204",
+				P = "_fullView_1g1dd_209",
 				J = "_background_1g1dd_212";
 			const H = ({
 					className: e,
@@ -130,9 +130,9 @@
 					onClose: r
 				}) => i.a.createElement("div", {
 					className: M(Z, n, {
-						[z]: !e
+						[P]: !e
 					})
-				}, r && i.a.createElement(o.c, {
+				}, r && i.a.createElement(a.c, {
 					theme: "light",
 					className: W,
 					onClick: r,
@@ -142,7 +142,7 @@
 				}, i.a.createElement(H, {
 					className: J
 				}, A)), t && i.a.createElement("div", {
-					className: P
+					className: z
 				}, t));
 			var q = {};
 			Object.defineProperty(q, "__esModule", {
@@ -430,11 +430,11 @@
 				Me(e).forEach(A)
 			}
 
-			function Re(e, A) {
+			function Ve(e, A) {
 				return e.indexOf(A) > -1
 			}
 
-			function Ve(e, A) {
+			function Re(e, A) {
 				return e.push.apply(e, Me(A)), e
 			}
 
@@ -473,11 +473,11 @@
 			function Ie(e, A) {
 				return A ? We(e, A)[0] : e.firstElementChild
 			}
-			var Pe = Object.keys;
+			var ze = Object.keys;
 
-			function ze(e, A, t) {
+			function Pe(e, A, t) {
 				if (e) {
-					var n = Pe(e);
+					var n = ze(e);
 					n = t ? n.reverse() : n;
 					for (var i = 0; i < n.length; i++) {
 						var r = n[i];
@@ -489,7 +489,7 @@
 
 			function Je(e) {
 				return Ee(arguments, 1).forEach((function(A) {
-					ze(A, (function(t, n) {
+					Pe(A, (function(t, n) {
 						e[n] = A[n]
 					}))
 				})), e
@@ -497,14 +497,14 @@
 
 			function He(e) {
 				return Ee(arguments, 1).forEach((function(A) {
-					ze(A, (function(A, t) {
+					Pe(A, (function(A, t) {
 						Ce(A) ? e[t] = A.slice() : xe(A) ? e[t] = He({}, xe(e[t]) ? e[t] : {}, A) : e[t] = A
 					}))
 				})), e
 			}
 
 			function Ke(e, A) {
-				Me(A || Pe(e)).forEach((function(A) {
+				Me(A || ze(e)).forEach((function(A) {
 					delete e[A]
 				}))
 			}
@@ -518,7 +518,7 @@
 			}
 
 			function Ue(e, A, t) {
-				xe(A) ? ze(A, (function(A, t) {
+				xe(A) ? Pe(A, (function(A, t) {
 					Ue(e, t, A)
 				})) : Oe(e, (function(e) {
 					Fe(t) || "" === t ? qe(e, A) : e.setAttribute(A, String(t))
@@ -682,8 +682,8 @@
 				TA = "click",
 				MA = "active",
 				OA = "inactive",
-				RA = "visible",
-				VA = "hidden",
+				VA = "visible",
+				RA = "hidden",
 				jA = "slide:keydown",
 				GA = "refresh",
 				YA = "updated",
@@ -691,8 +691,8 @@
 				ZA = "resized",
 				WA = "drag",
 				IA = "dragging",
-				PA = "dragged",
-				zA = "scroll",
+				zA = "dragged",
+				PA = "scroll",
 				JA = "scrolled",
 				HA = "destroy",
 				KA = "arrows:mounted",
@@ -798,8 +798,8 @@
 				Tt = Dt + "--next",
 				Mt = dA + "__pagination",
 				Ot = Mt + "__page",
-				Rt = dA + "__progress" + "__bar",
-				Vt = dA + "__toggle",
+				Vt = dA + "__progress" + "__bar",
+				Rt = dA + "__toggle",
 				jt = dA + "__sr",
 				Gt = "is-active",
 				Yt = "is-prev",
@@ -807,8 +807,8 @@
 				Zt = "is-visible",
 				Wt = "is-loading",
 				It = "is-focus-in",
-				Pt = [Gt, Zt, Yt, Xt, Wt, It],
-				zt = {
+				zt = [Gt, Zt, Yt, Xt, Wt, It],
+				Pt = {
 					slide: xt,
 					clone: Ct,
 					arrows: Nt,
@@ -876,7 +876,7 @@
 									t = !A && (!x() || E);
 								e.state.is([pe, me]) || Ue(n, gt, t || "");
 								Ue(B, ut, t ? -1 : ""), h && Ue(n, ut, t ? -1 : 0);
-								A !== tA(n, Zt) && (je(n, Zt, A), o(A ? RA : VA, C));
+								A !== tA(n, Zt) && (je(n, Zt, A), o(A ? VA : RA, C));
 								if (!A && document.activeElement === n) {
 									var i = l.Slides.getAt(e.index);
 									i && eA(i.slide)
@@ -900,7 +900,7 @@
 						E || (n.id = c.id + "-slide" + QA(A + 1), Ue(n, ct, m ? "tabpanel" : "group"), Ue(n, yt, p.slide), Ue(n, mt, y || wA(p.slideLabel, [A + 1, e.length]))), s(n, "click", be(o, TA, C)), s(n, "keydown", be(o, jA, C)), a([DA, FA, JA], Q), a(_A, k), f && a(NA, w)
 					},
 					destroy: function() {
-						i = !0, r.destroy(), lA(n, Pt), qe(n, Bt), Ue(n, "style", v), Ue(n, mt, y || "")
+						i = !0, r.destroy(), lA(n, zt), qe(n, Bt), Ue(n, "style", v), Ue(n, mt, y || "")
 					},
 					update: Q,
 					style: function(e, A, t) {
@@ -976,7 +976,7 @@
 						return {
 							setup: function() {
 								var e = "min" === t.mediaQuery;
-								Pe(i).sort((function(A, t) {
+								ze(i).sort((function(A, t) {
 									return e ? +A - +t : +t - +A
 								})).forEach((function(A) {
 									l(i[A], "(" + (e ? "min" : "max") + "-width:" + A + "px)")
@@ -984,7 +984,7 @@
 							},
 							destroy: s,
 							reduce: function(e) {
-								matchMedia(ue).matches && (e ? He(t, r) : Ke(t, Pe(r)))
+								matchMedia(ue).matches && (e ? He(t, r) : Ke(t, ze(r)))
 							},
 							set: u
 						}
@@ -1015,13 +1015,13 @@
 							p = [];
 
 						function m() {
-							n = v("." + wt), i = Ie(n, "." + Qt), pA(n && i, "A track/list element is missing."), Ve(d, We(i, "." + xt + ":not(." + Ct + ")")), ze({
+							n = v("." + wt), i = Ie(n, "." + Qt), pA(n && i, "A track/list element is missing."), Re(d, We(i, "." + xt + ":not(." + Ct + ")")), Pe({
 									arrows: Nt,
 									pagination: Mt,
 									prev: Ft,
 									next: Tt,
-									bar: Rt,
-									toggle: Vt
+									bar: Vt,
+									toggle: Rt
 								}, (function(e, A) {
 									u[A] = v("." + e)
 								})), Je(u, {
@@ -1113,7 +1113,7 @@
 
 						function h(e) {
 							return c.filter(Se(e) ? e : function(A) {
-								return Ne(e) ? Ze(A.slide, e) : Re(Me(e), A.index)
+								return Ne(e) ? Ze(A.slide, e) : Ve(Me(e), A.index)
 							})
 						}
 						return {
@@ -1271,14 +1271,14 @@
 								var n = s.get().slice(),
 									i = n.length;
 								if (i) {
-									for (; n.length < A;) Ve(n, n);
-									Ve(n.slice(-A), n.slice(0, A)).forEach((function(r, a) {
+									for (; n.length < A;) Re(n, n);
+									Re(n.slice(-A), n.slice(0, A)).forEach((function(r, a) {
 										var l = a < A,
 											u = function(A, n) {
 												var i = A.cloneNode(!0);
 												return Ge(i, t.classes.clone), i.id = e.root.id + "-clone" + QA(n + 1), i
 											}(r.slide, a);
-										l ? Xe(u, n[0].slide) : Ye(o.list, u), Ve(c, u), s.register(u, a - A + (l ? 0 : i), r.index)
+										l ? Xe(u, n[0].slide) : Ye(o.list, u), Re(c, u), s.register(u, a - A + (l ? 0 : i), r.index)
 									}))
 								}
 							}(n), a(XA))
@@ -1633,7 +1633,7 @@
 									p && o(p, "click", (function() {
 										h ? g() : v(!0)
 									}));
-									a([NA, zA, GA], l.rewind), a(NA, b)
+									a([NA, PA, GA], l.rewind), a(NA, b)
 								}(), p && Ue(p, dt, u.track.id), h || g(), E())
 							},
 							destroy: l.cancel,
@@ -1682,7 +1682,7 @@
 								e = l.toPosition(A.Controller.toDest(e % f)) + m
 							}
 							var y = EA(d, e, 1);
-							p = 1, t = y ? 0 : t || hA(yA(e - d) / cn, un), i = a, n = it(t, h, be(g, d, e, u), 1), s(me), o(zA), n.start()
+							p = 1, t = y ? 0 : t || hA(yA(e - d) / cn, un), i = a, n = it(t, h, be(g, d, e, u), 1), s(me), o(PA), n.start()
 						}
 
 						function h() {
@@ -1747,7 +1747,7 @@
 							if (h.is(he) || (h.set(he), f(WA)), A.cancelable)
 								if (o) {
 									g.translate(n + O(A) / (C && e.is(Lt) ? Jt : 1));
-									var i = R(A) > Ht,
+									var i = V(A) > Ht,
 										r = C !== (C = x());
 									(i || r) && M(A), s = !0, f(IA), aA(A)
 								} else(function(e) {
@@ -1762,10 +1762,10 @@
 						}
 
 						function F(n) {
-							h.is(he) && (h.set(fe), f(PA)), o && (! function(n) {
+							h.is(he) && (h.set(fe), f(zA)), o && (! function(n) {
 								var i = function(A) {
 										if (e.is(_t) || !C) {
-											var t = R(A);
+											var t = V(A);
 											if (t && t < Ht) return O(A) / t
 										}
 										return 0
@@ -1788,14 +1788,14 @@
 						}
 
 						function O(e, A) {
-							return j(e, A) - j(V(e), A)
-						}
-
-						function R(e) {
-							return cA(e) - cA(V(e))
+							return j(e, A) - j(R(e), A)
 						}
 
 						function V(e) {
+							return cA(e) - cA(R(e))
+						}
+
+						function R(e) {
 							return i === e && r || i
 						}
 
@@ -1974,7 +1974,7 @@
 						return {
 							items: h,
 							mount: function A() {
-								g(), a([YA, GA], A), t.pagination && l.isEnough() && (a([NA, zA, JA], B), function() {
+								g(), a([YA, GA], A), t.pagination && l.isEnough() && (a([NA, PA, JA], B), function() {
 									var A = e.length,
 										r = t.classes,
 										a = t.i18n,
@@ -2041,7 +2041,7 @@
 						}
 
 						function u(e, A) {
-							Re(yn, pn(A)) && (c(e), aA(A))
+							Ve(yn, pn(A)) && (c(e), aA(A))
 						}
 						return {
 							setup: function() {
@@ -2118,7 +2118,7 @@
 					trimSpace: !0,
 					focusableNodes: "a, button, textarea, input, select, iframe",
 					live: !0,
-					classes: zt,
+					classes: Pt,
 					i18n: {
 						prev: "Previous slide",
 						next: "Next slide",
@@ -2202,7 +2202,7 @@
 							n = e
 						},
 						is: function(e) {
-							return Re(Me(e), n)
+							return Ve(Me(e), n)
 						}
 					}), this.splides = [], this._o = {}, this._E = {};
 					var i = Ne(A) ? oA(document, A) : A;
@@ -2222,12 +2222,12 @@
 					var t = this,
 						n = this.state,
 						i = this.Components;
-					return pA(n.is([de, ge]), "Already mounted!"), n.set(de), this._C = i, this._T = A || this._T || (this.is($t) ? Bn : kn), this._E = e || this._E, ze(Je({}, En, this._E, {
+					return pA(n.is([de, ge]), "Already mounted!"), n.set(de), this._C = i, this._T = A || this._T || (this.is($t) ? Bn : kn), this._E = e || this._E, Pe(Je({}, En, this._E, {
 						Transition: this._T
 					}), (function(e, A) {
 						var n = e(t, i, t._o);
 						i[A] = n, n.setup && n.setup()
-					})), ze(i, (function(e) {
+					})), Pe(i, (function(e) {
 						e.mount && e.mount()
 					})), this.emit(SA), Ge(this.root, "is-initialized"), n.set(fe), this.emit("ready"), this
 				}, i.sync = function(e) {
@@ -2258,7 +2258,7 @@
 					void 0 === e && (e = !0);
 					var A = this.event,
 						t = this.state;
-					return t.is(de) ? nt(this).on("ready", this.destroy.bind(this, e)) : (ze(this._C, (function(A) {
+					return t.is(de) ? nt(this).on("ready", this.destroy.bind(this, e)) : (Pe(this._C, (function(A) {
 						A.destroy && A.destroy(e)
 					}), !0), A.emit(HA), A.destroy(), e && ye(this.splides), t.set(ge)), this
 				}, A = e, (t = [{
@@ -2407,19 +2407,19 @@
 					src: e ? "https://www.redditstatic.com/crypto-assets/v2/checkmark-green-7355fd2559.svg" : "https://www.redditstatic.com/crypto-assets/v2/checkmark-grey-1978f4add3.svg",
 					className: Mn.checkmark
 				}), A),
-				Rn = 12;
-			const Vn = ({
+				Vn = 12;
+			const Rn = ({
 					onSubmit: e,
 					className: A
 				}) => {
-					const [t, r] = Object(n.useState)(""), [s, l] = Object(n.useState)(""), c = Object(a.c)(), u = Object(a.b)().nightModeActive(), {
+					const [t, r] = Object(n.useState)(""), [s, l] = Object(n.useState)(""), c = Object(o.c)(), u = Object(o.b)().nightModeActive(), {
 						hasMinimumCharacters: d,
 						hasSymbol: f,
 						hasCapital: p,
 						hasDigit: m,
 						allRequirementsMet: h
 					} = function(e, A) {
-						const t = e.length >= Rn,
+						const t = e.length >= Vn,
 							n = /[^A-Za-z 0-9]/g.test(e),
 							i = /^(.*[A-Z]).*$/g.test(e),
 							r = /^(.*[0-9]).*$/g.test(e);
@@ -2499,7 +2499,7 @@
 						className: M(Mn.paragraph, Mn.helpArticle)
 					}, i.a.createElement(Y, {
 						desc: "Description: Clarify to users securing their new Vault what the requirement and usage of this password are"
-					}, "Your Vault creates an address for you on Ethereum-compatible blockchains. The blockchain is public, so anyone can look up your address and its activity."), " ", i.a.createElement(o.f, {
+					}, "Your Vault creates an address for you on Ethereum-compatible blockchains. The blockchain is public, so anyone can look up your address and its activity."), " ", i.a.createElement(a.f, {
 						href: "https://reddithelp.com/hc/en-us/articles/6213791102484",
 						className: Mn.learnMoreLink
 					}, i.a.createElement(Y, {
@@ -2523,8 +2523,8 @@
 					clickCreateEvent: c,
 					viewSuccessEvent: u
 				}) => {
-					const d = Object(a.b)(),
-						f = Object(a.d)(),
+					const d = Object(o.b)(),
+						f = Object(o.d)(),
 						[p, m] = Object(n.useState)(!0),
 						[h, g] = Object(n.useState)(!1),
 						[v, y] = Object(n.useReducer)(() => !0, !1);
@@ -2547,7 +2547,7 @@
 						}, i.a.createElement(Y, {
 							desc: "Loading text displayed to user while the process for creating their vault is in progress"
 						}, "Creating your Vault...")))),
-						panelContent: i.a.createElement(Vn, {
+						panelContent: i.a.createElement(Rn, {
 							onSubmit: async A => {
 								c && f(c()), m(!1);
 								try {
@@ -2560,7 +2560,7 @@
 							className: r
 						}),
 						isPanelShowing: p
-					}), h && i.a.createElement(o.d, null))
+					}), h && i.a.createElement(a.d, null))
 				};
 			var Gn = {
 				kind: "Document",
@@ -2789,14 +2789,14 @@
 					}, n || 0)
 				}, [e, null == A ? void 0 : A.onLoad, null == A ? void 0 : A.delay])
 			}
-			var In, Pn, zn, Jn;
+			var In, zn, Pn, Jn;
 
 			function Hn(e) {
 				return {
 					groupId: e.outfitId,
 					itemName: e.title
 				}
-			}(Pn = In || (In = {})).New = "NEW", Pn.ActionRequired = "ACTION_REQUIRED", Pn.Pending = "PENDING", Pn.Paid = "PAID", Pn.Canceled = "CANCELED", Pn.Rejected = "REJECTED", Pn.Failed = "FAILED", Pn.Refunded = "REFUNDED", (Jn = zn || (zn = {})).AVAILABLE = "AVAILABLE", Jn.SOLD_OUT = "SOLD_OUT", Jn.EXPIRED = "EXPIRED", zn.AVAILABLE, zn.SOLD_OUT, zn.EXPIRED;
+			}(zn = In || (In = {})).New = "NEW", zn.ActionRequired = "ACTION_REQUIRED", zn.Pending = "PENDING", zn.Paid = "PAID", zn.Canceled = "CANCELED", zn.Rejected = "REJECTED", zn.Failed = "FAILED", zn.Refunded = "REFUNDED", (Jn = Pn || (Pn = {})).AVAILABLE = "AVAILABLE", Jn.SOLD_OUT = "SOLD_OUT", Jn.EXPIRED = "EXPIRED", Pn.AVAILABLE, Pn.SOLD_OUT, Pn.EXPIRED;
 			const Kn = e => ({
 					source: k.Marketplace,
 					action: Q.Click,
@@ -2818,47 +2818,47 @@
 					d: "M10.4 4.728h-.3V3.6a3.6 3.6 0 1 0-7.2 0v1.128h-.3a.966.966 0 0 0-.972.972v4.8a.966.966 0 0 0 .972.972h7.8a.966.966 0 0 0 .972-.972V5.7a.967.967 0 0 0-.972-.972ZM4.1 3.6a2.4 2.4 0 1 1 4.8 0v1.128H4.1V3.6Z",
 					fill: "currentColor"
 				}));
-			var Un = "_container_6405o_42",
-				Ln = "_carousel_6405o_45",
-				_n = "_productDetails_6405o_53",
-				$n = "_isNightMode_6405o_65",
-				ei = "_header_6405o_69",
-				Ai = "_cardName_6405o_73",
-				ti = "_cardAuthor_6405o_79",
-				ni = "_cardAuthorClickable_6405o_93",
-				ii = "_redditLogo_6405o_99",
-				ri = "_scrollContainer_6405o_104",
-				ai = "_buttonsContainer_6405o_113",
-				oi = "_artistImg_6405o_125",
-				si = "_artistName_6405o_132",
-				li = "_ctaButton_6405o_137",
-				ci = "_transferCta_6405o_137",
-				ui = "_tooltip_6405o_143",
-				di = "_defaultButtonsContainer_6405o_178",
-				fi = "_buttonIcon_6405o_181",
-				pi = "_itemDescription_6405o_185",
-				mi = "_itemBenefits_6405o_188",
-				hi = "_heading_6405o_191",
-				gi = "_utilityTable_6405o_203",
-				vi = "_featureCell_6405o_213",
-				yi = "_featureImage_6405o_220",
-				Ei = "_featureCopy_6405o_224",
-				bi = "_blockchainDetails_6405o_236",
-				Bi = "_resaleText_6405o_239",
-				ki = "_platformFeesLink_6405o_243",
-				wi = "_nftDetailsHeading_6405o_247",
-				Qi = "_mintStatus_6405o_260",
-				xi = "_nftDetailPills_6405o_272",
-				Ci = "_pill_6405o_272",
-				Si = "_pillImage_6405o_291";
+			var Un = "_container_ztn11_42",
+				Ln = "_carousel_ztn11_45",
+				_n = "_productDetails_ztn11_53",
+				$n = "_isNightMode_ztn11_65",
+				ei = "_header_ztn11_69",
+				Ai = "_cardName_ztn11_73",
+				ti = "_cardAuthor_ztn11_79",
+				ni = "_cardAuthorClickable_ztn11_93",
+				ii = "_redditLogo_ztn11_99",
+				ri = "_scrollContainer_ztn11_104",
+				ai = "_buttonsContainer_ztn11_113",
+				oi = "_artistImg_ztn11_125",
+				si = "_artistName_ztn11_132",
+				li = "_ctaButton_ztn11_137",
+				ci = "_transferCta_ztn11_137",
+				ui = "_tooltip_ztn11_143",
+				di = "_defaultButtonsContainer_ztn11_178",
+				fi = "_buttonIcon_ztn11_181",
+				pi = "_itemDescription_ztn11_185",
+				mi = "_itemBenefits_ztn11_188",
+				hi = "_heading_ztn11_191",
+				gi = "_utilityTable_ztn11_203",
+				vi = "_featureCell_ztn11_213",
+				yi = "_featureImage_ztn11_220",
+				Ei = "_featureCopy_ztn11_224",
+				bi = "_blockchainDetails_ztn11_236",
+				Bi = "_resaleText_ztn11_239",
+				ki = "_platformFeesLink_ztn11_243",
+				wi = "_nftDetailsHeading_ztn11_247",
+				Qi = "_mintStatus_ztn11_260",
+				xi = "_nftDetailPills_ztn11_272",
+				Ci = "_pill_ztn11_272",
+				Si = "_pillImage_ztn11_291";
 			const Ni = ({
 				currentUserId: e,
 				nft: A,
 				onViewAvatar: t,
 				onSetAsAvatar: n
 			}) => {
-				const r = Object(a.c)(),
-					o = Object(a.d)(),
+				const r = Object(o.c)(),
+					a = Object(o.d)(),
 					s = r.inline("Coming Soon! Transfer your Collectible Avatar to another Reddit Vault, alt account, or third-party wallet.", "Tooltip Content: Transfer feature coming soon");
 				return i.a.createElement(i.a.Fragment, null, e && e === A.ownerId && i.a.createElement("div", {
 					className: M(ai, di)
@@ -2866,7 +2866,7 @@
 					theme: "blue_inverted",
 					className: li,
 					onClick: () => {
-						o(Kn(N.ViewNft)), null == t || t(A.outfitId)
+						a(Kn(N.ViewNft)), null == t || t(A.outfitId)
 					}
 				}, i.a.createElement(Y, {
 					desc: "Button: view the item"
@@ -2874,7 +2874,7 @@
 					theme: "blue_inverted",
 					className: M(li, ci),
 					onClick: () => {
-						o(Kn(N.Transfer))
+						a(Kn(N.Transfer))
 					}
 				}, i.a.createElement("span", {
 					className: ui
@@ -2886,7 +2886,7 @@
 					theme: "blue",
 					className: li,
 					onClick: () => {
-						o(Kn(N.SetAvatar)), null == n || n(A.outfitId)
+						a(Kn(N.SetAvatar)), null == n || n(A.outfitId)
 					}
 				}, i.a.createElement(Y, {
 					desc: "Button: equip the item as user avatar"
@@ -2897,21 +2897,21 @@
 				Ti = "_UserIcon_iwfib_7",
 				Mi = "_mNightmode_iwfib_23",
 				Oi = "_snoovatarWrapper_iwfib_42",
-				Ri = "_snoovatarBackground_iwfib_47",
-				Vi = "_snoovatarHeadshotContainer_iwfib_53",
+				Vi = "_snoovatarBackground_iwfib_47",
+				Ri = "_snoovatarHeadshotContainer_iwfib_53",
 				ji = "_snoovatarHeadshot_iwfib_53";
 			const Gi = ({
 				backgroundClassName: e,
 				className: A,
 				headshot: t
 			}) => {
-				const n = Object(a.c)();
+				const n = Object(o.c)();
 				return i.a.createElement("div", {
 					className: M(Oi, A)
 				}, i.a.createElement("div", {
-					className: M(Ri, e)
+					className: M(Vi, e)
 				}), i.a.createElement("div", {
-					className: Vi
+					className: Ri
 				}, i.a.createElement("img", {
 					alt: n.inline("User avatar", "alt text: snoovatar"),
 					className: ji,
@@ -2925,8 +2925,8 @@
 					nsfwIconUrl: n,
 					shouldHideNSFW: r
 				}) => {
-					const o = Object(a.c)(),
-						s = Object(a.b)().nightModeActive();
+					const a = Object(o.c)(),
+						s = Object(o.b)().nightModeActive();
 					if (!A) return i.a.createElement(Xi, {
 						className: M(Fi, e, {
 							[Mi]: s
@@ -2934,7 +2934,7 @@
 					});
 					const l = t && r ? n || "https://www.redditstatic.com/crypto-assets/v2/avatar-over18-square-04a69169fa.png" : A;
 					return i.a.createElement("img", {
-						alt: o.inline("User avatar", "AltText: user avatar"),
+						alt: a.inline("User avatar", "AltText: user avatar"),
 						className: M(Ti, e),
 						src: l
 					})
@@ -3007,10 +3007,10 @@
 				},
 				Ii = "SECRET_DO_NOT_PASS_THIS_OR_YOU_WILL_BE_FIRED";
 
-			function Pi() {}
-
 			function zi() {}
-			zi.resetWarningCache = Pi;
+
+			function Pi() {}
+			Pi.resetWarningCache = zi;
 			Wi.exports = function() {
 				function e(e, A, t, n, i, r) {
 					if (r !== Ii) {
@@ -3043,8 +3043,8 @@
 					oneOfType: A,
 					shape: A,
 					exact: A,
-					checkPropTypes: zi,
-					resetWarningCache: Pi
+					checkPropTypes: Pi,
+					resetWarningCache: zi
 				};
 				return t.PropTypes = t, t
 			}();
@@ -4230,11 +4230,11 @@
 				})(e, A)
 			}
 
-			function Rr(e, A) {
+			function Vr(e, A) {
 				e.prototype = Object.create(A.prototype), e.prototype.constructor = e, Or(e, A)
 			}
 
-			function Vr(e) {
+			function Rr(e) {
 				if (void 0 === e) throw new ReferenceError("this hasn't been initialised - super() hasn't been called");
 				return e
 			}
@@ -4284,7 +4284,7 @@
 				return t + e
 			}
 
-			function Pr(e, A, t) {
+			function zr(e, A, t) {
 				void 0 === t && (t = {});
 				var n = "";
 				if (!A) return n;
@@ -4314,10 +4314,10 @@
 				}
 				return (n || t.allowEmpty) && e ? (n && (n = "" + s + n + s), Ir("" + e + l + "{" + n, --r) + Ir("}", r)) : n
 			}
-			var zr = /([[\].#*$><+~=|^:(),"'`\s])/g,
+			var Pr = /([[\].#*$><+~=|^:(),"'`\s])/g,
 				Jr = "undefined" != typeof CSS && CSS.escape,
 				Hr = function(e) {
-					return Jr ? Jr(e) : e.replace(zr, "\\$1")
+					return Jr ? Jr(e) : e.replace(Pr, "\\$1")
 				},
 				Kr = function() {
 					function e(e, A, t) {
@@ -4349,9 +4349,9 @@
 							a = n.scoped,
 							o = n.sheet,
 							s = n.generateId;
-						return r ? i.selectorText = r : !1 !== a && (i.id = s(Vr(Vr(i)), o), i.selectorText = "." + Hr(i.id)), i
+						return r ? i.selectorText = r : !1 !== a && (i.id = s(Rr(Rr(i)), o), i.selectorText = "." + Hr(i.id)), i
 					}
-					Rr(A, e);
+					Vr(A, e);
 					var t = A.prototype;
 					return t.applyTo = function(e) {
 						var A = this.renderer;
@@ -4372,7 +4372,7 @@
 							t = !!A && A.options.link ? mr({}, e, {
 								allowEmpty: !0
 							}) : e;
-						return Pr(this.selectorText, this.style, t)
+						return zr(this.selectorText, this.style, t)
 					}, Mr(A, [{
 						key: "selector",
 						set: function(e) {
@@ -4495,12 +4495,12 @@
 					function A() {
 						return e.apply(this, arguments) || this
 					}
-					return Rr(A, e), A.prototype.toString = function(e) {
+					return Vr(A, e), A.prototype.toString = function(e) {
 						var A = this.options.sheet,
 							t = !!A && A.options.link ? mr({}, e, {
 								allowEmpty: !0
 							}) : e;
-						return Pr(this.key, this.style, t)
+						return zr(this.key, this.style, t)
 					}, A
 				}(Kr),
 				ua = {
@@ -4515,10 +4515,10 @@
 					return e.prototype.toString = function(e) {
 						var A = Wr(e).linebreak;
 						if (Array.isArray(this.style)) {
-							for (var t = "", n = 0; n < this.style.length; n++) t += Pr(this.at, this.style[n]), this.style[n + 1] && (t += A);
+							for (var t = "", n = 0; n < this.style.length; n++) t += zr(this.at, this.style[n]), this.style[n + 1] && (t += A);
 							return t
 						}
-						return Pr(this.at, this.style, e)
+						return zr(this.at, this.style, e)
 					}, e
 				}(),
 				fa = /@font-face/,
@@ -4532,7 +4532,7 @@
 						this.type = "viewport", this.at = "@viewport", this.isProcessed = !1, this.key = e, this.style = A, this.options = t
 					}
 					return e.prototype.toString = function(e) {
-						return Pr(this.key, this.style, e)
+						return zr(this.key, this.style, e)
 					}, e
 				}(),
 				ha = {
@@ -4828,11 +4828,11 @@
 				Oa = function(e, A) {
 					return e.selectorText = A, e.selectorText === A
 				},
-				Ra = Da((function() {
+				Va = Da((function() {
 					return document.querySelector("head")
 				}));
 
-			function Va(e) {
+			function Ra(e) {
 				var A = Qa.registry;
 				if (A.length > 0) {
 					var t = function(e, A) {
@@ -4860,7 +4860,7 @@
 				var n = e.insertionPoint;
 				if (n && "string" == typeof n) {
 					var i = function(e) {
-						for (var A = Ra(), t = 0; t < A.childNodes.length; t++) {
+						for (var A = Va(), t = 0; t < A.childNodes.length; t++) {
 							var n = A.childNodes[t];
 							if (8 === n.nodeType && n.nodeValue.trim() === e) return n
 						}
@@ -4909,13 +4909,13 @@
 						if (!this.element.parentNode && this.sheet) {
 							! function(e, A) {
 								var t = A.insertionPoint,
-									n = Va(A);
+									n = Ra(A);
 								if (!1 !== n && n.parent) n.parent.insertBefore(e, n.node);
 								else if (t && "number" == typeof t.nodeType) {
 									var i = t,
 										r = i.parentNode;
 									r && r.insertBefore(e, i.nextSibling)
-								} else Ra().appendChild(e)
+								} else Va().appendChild(e)
 							}(this.element, this.sheet.options);
 							var e = Boolean(this.sheet && this.sheet.deployed);
 							this.hasInsertedRules && e && (this.hasInsertedRules = !1, this.deploy())
@@ -5015,11 +5015,11 @@
 						})), this
 					}, e
 				}(),
-				Pa = function(e) {
+				za = function(e) {
 					return new Ia(e)
 				},
-				za = "object" == typeof CSS && null != CSS && "number" in CSS;
-			Pa();
+				Pa = "object" == typeof CSS && null != CSS && "number" in CSS;
+			za();
 			var Ja = Date.now(),
 				Ha = "fnValues" + Ja,
 				Ka = "fnStyle" + ++Ja,
@@ -5208,9 +5208,9 @@
 				}
 				return e.fallbacks && (Array.isArray(e.fallbacks) ? A.fallbacks = e.fallbacks.map(fo) : A.fallbacks = fo(e.fallbacks)), A
 			}
-			var po = za && CSS ? CSS.px : "px",
-				mo = za && CSS ? CSS.ms : "ms",
-				ho = za && CSS ? CSS.percent : "%";
+			var po = Pa && CSS ? CSS.px : "px",
+				mo = Pa && CSS ? CSS.ms : "ms",
+				ho = Pa && CSS ? CSS.percent : "%";
 
 			function go(e) {
 				var A = /(-[a-z])/g,
@@ -5432,16 +5432,16 @@
 				return e.replace(To, Mo)
 			}
 
-			function Ro(e) {
+			function Vo(e) {
 				return Oo("-" + e)
 			}
-			var Vo, jo = {
+			var Ro, jo = {
 					noPrefill: ["mask"],
 					supportedProperty: function(e, A) {
 						if (!/^mask/.test(e)) return !1;
 						if ("Webkit" === No.js) {
 							if (Oo("mask-image") in A) return e;
-							if (No.js + Ro("mask-image") in A) return No.css + e
+							if (No.js + Vo("mask-image") in A) return No.css + e
 						}
 						return e
 					}
@@ -5478,25 +5478,25 @@
 				},
 				Io = {
 					supportedProperty: function(e, A) {
-						return !!/^break-/.test(e) && ("Webkit" === No.js ? "WebkitColumn" + Ro(e) in A && No.css + "column-" + e : "Moz" === No.js && ("page" + Ro(e) in A && "page-" + e))
+						return !!/^break-/.test(e) && ("Webkit" === No.js ? "WebkitColumn" + Vo(e) in A && No.css + "column-" + e : "Moz" === No.js && ("page" + Vo(e) in A && "page-" + e))
 					}
 				},
-				Po = {
+				zo = {
 					supportedProperty: function(e, A) {
 						if (!/^(border|margin|padding)-inline/.test(e)) return !1;
 						if ("Moz" === No.js) return e;
 						var t = e.replace("-inline", "");
-						return No.js + Ro(t) in A && No.css + t
+						return No.js + Vo(t) in A && No.css + t
 					}
 				},
-				zo = {
+				Po = {
 					supportedProperty: function(e, A) {
 						return Oo(e) in A && e
 					}
 				},
 				Jo = {
 					supportedProperty: function(e, A) {
-						var t = Ro(e);
+						var t = Vo(e);
 						return "-" === e[0] ? e : "-" === e[0] && "-" === e[1] ? e : No.js + t in A ? No.css + e : "Webkit" !== No.js && "Webkit" + t in A && "-webkit-" + e
 					}
 				},
@@ -5522,7 +5522,7 @@
 				Uo = {
 					supportedProperty: function(e, A) {
 						var t = qo[e];
-						return !!t && (No.js + Ro(t) in A && No.css + t)
+						return !!t && (No.js + Vo(t) in A && No.css + t)
 					}
 				},
 				Lo = {
@@ -5538,15 +5538,15 @@
 				$o = function(e) {
 					return No.css + e
 				},
-				es = [Do, Fo, jo, Go, Yo, Xo, Zo, Wo, Io, Po, zo, Jo, Ho, Ko, Uo, {
+				es = [Do, Fo, jo, Go, Yo, Xo, Zo, Wo, Io, zo, Po, Jo, Ho, Ko, Uo, {
 					supportedProperty: function(e, A, t) {
 						var n = t.multiple;
 						if (_o.indexOf(e) > -1) {
 							var i = Lo[e];
-							if (!Array.isArray(i)) return No.js + Ro(i) in A && No.css + i;
+							if (!Array.isArray(i)) return No.js + Vo(i) in A && No.css + i;
 							if (!n) return !1;
 							for (var r = 0; r < i.length; r++)
-								if (!(No.js + Ro(i[0]) in A)) return !1;
+								if (!(No.js + Vo(i[0]) in A)) return !1;
 							return i.map($o)
 						}
 						return !1
@@ -5564,7 +5564,7 @@
 				}), []),
 				ns = {};
 			if (Fr) {
-				Vo = document.createElement("p");
+				Ro = document.createElement("p");
 				var is = window.getComputedStyle(document.documentElement, "");
 				for (var rs in is) isNaN(rs) || (ns[is[rs]] = is[rs]);
 				ts.forEach((function(e) {
@@ -5573,12 +5573,12 @@
 			}
 
 			function as(e, A) {
-				if (void 0 === A && (A = {}), !Vo) return e;
+				if (void 0 === A && (A = {}), !Ro) return e;
 				if (null != ns[e]) return ns[e];
-				"transition" !== e && "transform" !== e || (A[e] = e in Vo.style);
-				for (var t = 0; t < As.length && (ns[e] = As[t](e, Vo.style, A), !ns[e]); t++);
+				"transition" !== e && "transform" !== e || (A[e] = e in Ro.style);
+				for (var t = 0; t < As.length && (ns[e] = As[t](e, Ro.style, A), !ns[e]); t++);
 				try {
-					Vo.style[e] = ""
+					Ro.style[e] = ""
 				} catch (n) {
 					return !1
 				}
@@ -5680,7 +5680,7 @@
 			function gs() {
 				return i.a.useContext(hs)
 			}
-			var vs, ys = Pa({
+			var vs, ys = za({
 					plugins: [qa(), to(), ao(), {
 						onProcessStyle: function(e) {
 							if (Array.isArray(e)) {
@@ -5903,8 +5903,8 @@
 				Ts = "function" == typeof Symbol && Symbol.for,
 				Ms = Ts ? Symbol.for("react.element") : 60103,
 				Os = Ts ? Symbol.for("react.portal") : 60106,
-				Rs = Ts ? Symbol.for("react.fragment") : 60107,
-				Vs = Ts ? Symbol.for("react.strict_mode") : 60108,
+				Vs = Ts ? Symbol.for("react.fragment") : 60107,
+				Rs = Ts ? Symbol.for("react.strict_mode") : 60108,
 				js = Ts ? Symbol.for("react.profiler") : 60114,
 				Gs = Ts ? Symbol.for("react.provider") : 60109,
 				Ys = Ts ? Symbol.for("react.context") : 60110,
@@ -5912,8 +5912,8 @@
 				Zs = Ts ? Symbol.for("react.concurrent_mode") : 60111,
 				Ws = Ts ? Symbol.for("react.forward_ref") : 60112,
 				Is = Ts ? Symbol.for("react.suspense") : 60113,
-				Ps = Ts ? Symbol.for("react.suspense_list") : 60120,
-				zs = Ts ? Symbol.for("react.memo") : 60115,
+				zs = Ts ? Symbol.for("react.suspense_list") : 60120,
+				Ps = Ts ? Symbol.for("react.memo") : 60115,
 				Js = Ts ? Symbol.for("react.lazy") : 60116,
 				Hs = Ts ? Symbol.for("react.block") : 60121,
 				Ks = Ts ? Symbol.for("react.fundamental") : 60117,
@@ -5928,9 +5928,9 @@
 							switch (e = e.type) {
 								case Xs:
 								case Zs:
-								case Rs:
-								case js:
 								case Vs:
+								case js:
+								case Rs:
 								case Is:
 									return e;
 								default:
@@ -5938,7 +5938,7 @@
 										case Ys:
 										case Ws:
 										case Js:
-										case zs:
+										case Ps:
 										case Gs:
 											return e;
 										default:
@@ -5954,7 +5954,7 @@
 			function _s(e) {
 				return Ls(e) === Zs
 			}
-			Fs.AsyncMode = Xs, Fs.ConcurrentMode = Zs, Fs.ContextConsumer = Ys, Fs.ContextProvider = Gs, Fs.Element = Ms, Fs.ForwardRef = Ws, Fs.Fragment = Rs, Fs.Lazy = Js, Fs.Memo = zs, Fs.Portal = Os, Fs.Profiler = js, Fs.StrictMode = Vs, Fs.Suspense = Is, Fs.isAsyncMode = function(e) {
+			Fs.AsyncMode = Xs, Fs.ConcurrentMode = Zs, Fs.ContextConsumer = Ys, Fs.ContextProvider = Gs, Fs.Element = Ms, Fs.ForwardRef = Ws, Fs.Fragment = Vs, Fs.Lazy = Js, Fs.Memo = Ps, Fs.Portal = Os, Fs.Profiler = js, Fs.StrictMode = Rs, Fs.Suspense = Is, Fs.isAsyncMode = function(e) {
 				return _s(e) || Ls(e) === Xs
 			}, Fs.isConcurrentMode = _s, Fs.isContextConsumer = function(e) {
 				return Ls(e) === Ys
@@ -5965,21 +5965,21 @@
 			}, Fs.isForwardRef = function(e) {
 				return Ls(e) === Ws
 			}, Fs.isFragment = function(e) {
-				return Ls(e) === Rs
+				return Ls(e) === Vs
 			}, Fs.isLazy = function(e) {
 				return Ls(e) === Js
 			}, Fs.isMemo = function(e) {
-				return Ls(e) === zs
+				return Ls(e) === Ps
 			}, Fs.isPortal = function(e) {
 				return Ls(e) === Os
 			}, Fs.isProfiler = function(e) {
 				return Ls(e) === js
 			}, Fs.isStrictMode = function(e) {
-				return Ls(e) === Vs
+				return Ls(e) === Rs
 			}, Fs.isSuspense = function(e) {
 				return Ls(e) === Is
 			}, Fs.isValidElementType = function(e) {
-				return "string" == typeof e || "function" == typeof e || e === Rs || e === Zs || e === js || e === Vs || e === Is || e === Ps || "object" == typeof e && null !== e && (e.$$typeof === Js || e.$$typeof === zs || e.$$typeof === Gs || e.$$typeof === Ys || e.$$typeof === Ws || e.$$typeof === Ks || e.$$typeof === qs || e.$$typeof === Us || e.$$typeof === Hs)
+				return "string" == typeof e || "function" == typeof e || e === Vs || e === Zs || e === js || e === Rs || e === Is || e === zs || "object" == typeof e && null !== e && (e.$$typeof === Js || e.$$typeof === Ps || e.$$typeof === Gs || e.$$typeof === Ys || e.$$typeof === Ws || e.$$typeof === Ks || e.$$typeof === qs || e.$$typeof === Us || e.$$typeof === Hs)
 			}, Fs.typeOf = Ls, Ds.exports = Fs;
 			var $s = Ds.exports,
 				el = {
@@ -6446,15 +6446,15 @@
 			function Ol(e) {
 				return Ml(e)
 			}
-			var Rl = {
+			var Vl = {
 					textTransform: "uppercase"
 				},
-				Vl = '"Roboto", "Helvetica", "Arial", sans-serif';
+				Rl = '"Roboto", "Helvetica", "Arial", sans-serif';
 
 			function jl(e, A) {
 				var t = "function" == typeof A ? A(e) : A,
 					n = t.fontFamily,
-					i = void 0 === n ? Vl : n,
+					i = void 0 === n ? Rl : n,
 					r = t.fontSize,
 					a = void 0 === r ? 14 : r,
 					o = t.fontWeightLight,
@@ -6480,7 +6480,7 @@
 							fontWeight: e,
 							fontSize: b(A),
 							lineHeight: t
-						}, i === Vl ? {
+						}, i === Rl ? {
 							letterSpacing: "".concat(Ml(n / A), "em")
 						} : {}, r, g)
 					},
@@ -6495,9 +6495,9 @@
 						subtitle2: B(d, 14, 1.57, .1),
 						body1: B(c, 16, 1.5, .15),
 						body2: B(c, 14, 1.43, .15),
-						button: B(d, 14, 1.75, .4, Rl),
+						button: B(d, 14, 1.75, .4, Vl),
 						caption: B(c, 12, 1.66, .4),
-						overline: B(c, 12, 2.66, 1, Rl)
+						overline: B(c, 12, 2.66, 1, Vl)
 					};
 				return wr(mr({
 					htmlFontSize: h,
@@ -6525,7 +6525,7 @@
 					borderRadius: 4
 				};
 
-			function Pl() {
+			function zl() {
 				var e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : 8;
 				if (e.mui) return e;
 				var A, t = "number" == typeof(A = {
@@ -6549,7 +6549,7 @@
 					}
 				}), n.mui = !0, n
 			}
-			var zl = {
+			var Pl = {
 					easeInOut: "cubic-bezier(0.4, 0, 0.2, 1)",
 					easeOut: "cubic-bezier(0.0, 0, 0.2, 1)",
 					easeIn: "cubic-bezier(0.4, 0, 1, 1)",
@@ -6569,7 +6569,7 @@
 				return "".concat(Math.round(e), "ms")
 			}
 			var Kl = {
-					easing: zl,
+					easing: Pl,
 					duration: Jl,
 					create: function() {
 						var e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : ["all"],
@@ -6577,7 +6577,7 @@
 							t = A.duration,
 							n = void 0 === t ? Jl.standard : t,
 							i = A.easing,
-							r = void 0 === i ? zl.easeInOut : i,
+							r = void 0 === i ? Pl.easeInOut : i,
 							a = A.delay,
 							o = void 0 === a ? 0 : a;
 						return yr(A, ["duration", "easing", "delay"]), (Array.isArray(e) ? e : [e]).map((function(e) {
@@ -6641,7 +6641,7 @@
 								return t[e]
 							}
 						}, o)
-					}(t), f = Pl(o), p = wr({
+					}(t), f = zl(o), p = wr({
 						breakpoints: d,
 						direction: "ltr",
 						mixins: pl(d, f, i),
@@ -7087,19 +7087,19 @@
 				Mc.default.Children.count(A)
 			};
 			Fc.default = Oc;
-			var Rc = {},
-				Vc = {};
-			Object.defineProperty(Vc, "__esModule", {
+			var Vc = {},
+				Rc = {};
+			Object.defineProperty(Rc, "__esModule", {
 				value: !0
-			}), Vc.default = void 0;
-			Vc.default = {
+			}), Rc.default = void 0;
+			Rc.default = {
 				RESISTANCE_COEF: .6,
 				UNCERTAINTY_THRESHOLD: 3
 			};
 			var jc = Dc;
-			Object.defineProperty(Rc, "__esModule", {
+			Object.defineProperty(Vc, "__esModule", {
 				value: !0
-			}), Rc.default = function(e) {
+			}), Vc.default = function(e) {
 				var A, t = e.children,
 					n = e.startIndex,
 					i = e.startX,
@@ -7115,7 +7115,7 @@
 				}
 			};
 			var Gc = jc(i.a),
-				Yc = jc(Vc);
+				Yc = jc(Rc);
 			var Xc = {},
 				Zc = Dc;
 			Object.defineProperty(Xc, "__esModule", {
@@ -7134,15 +7134,15 @@
 					return t
 				};
 			Xc.default = Ic;
-			var Pc = {};
-			Object.defineProperty(Pc, "__esModule", {
+			var zc = {};
+			Object.defineProperty(zc, "__esModule", {
 				value: !0
-			}), Pc.default = void 0;
-			var zc = function(e, A) {
+			}), zc.default = void 0;
+			var Pc = function(e, A) {
 				var t = e % A;
 				return t < 0 ? t + A : t
 			};
-			Pc.default = zc,
+			zc.default = Pc,
 				function(e) {
 					var A = Dc;
 					Object.defineProperty(e, "__esModule", {
@@ -7174,10 +7174,10 @@
 						}
 					});
 					var t = A(Fc),
-						n = A(Rc),
-						i = A(Vc),
+						n = A(Vc),
+						i = A(Rc),
 						r = A(Xc),
-						a = A(Pc)
+						a = A(zc)
 				}(Nc);
 			var Jc = ac,
 				Hc = sc;
@@ -8301,8 +8301,8 @@
 				e[e.EducationPanelPresent = 0] = "EducationPanelPresent", e[e.ConnectionPanelPresent = 1] = "ConnectionPanelPresent", e[e.QueryingForNfts = 2] = "QueryingForNfts", e[e.NftGallerySelectionActive = 3] = "NftGallerySelectionActive", e[e.NftSubmittedToProfile = 4] = "NftSubmittedToProfile", e[e.NftSignatureError = 5] = "NftSignatureError", e[e.NftSubmitError = 6] = "NftSubmitError"
 			}(Mu || (Mu = {}));
 			var Ou = "_container_1xrhc_1",
-				Ru = "_skipAnimations_1xrhc_10",
-				Vu = "_flipped_1xrhc_14",
+				Vu = "_skipAnimations_1xrhc_10",
+				Ru = "_flipped_1xrhc_14",
 				ju = "_front_1xrhc_18",
 				Gu = "_back_1xrhc_19";
 			const Yu = ({
@@ -8323,8 +8323,8 @@
 						A.target === e && a()
 					})
 				}, [u, a]);
-				const d = M(Ou, r, c ? null : Ru, {
-					[Vu]: t
+				const d = M(Ou, r, c ? null : Vu, {
+					[Ru]: t
 				});
 				return i.a.createElement("div", {
 					className: d,
@@ -8342,8 +8342,8 @@
 				Zu = "_card_ryr9r_11",
 				Wu = "_nftIcon_ryr9r_16",
 				Iu = "_closeIcon_ryr9r_17",
-				Pu = "_naming_ryr9r_27",
-				zu = "_avatarImage_ryr9r_43",
+				zu = "_naming_ryr9r_27",
+				Pu = "_avatarImage_ryr9r_43",
 				Ju = "_front_ryr9r_71",
 				Hu = "_back_ryr9r_72",
 				Ku = "_frontBackground_ryr9r_77",
@@ -8431,11 +8431,11 @@
 				return `${A.getMonth()+1}/${A.getDate()}/${A.getFullYear()}`
 			}
 			const Ad = 10;
-			var td = "_container_3w2ay_42",
-				nd = "_range_3w2ay_48",
-				id = "_rangeStart_3w2ay_54",
-				rd = "_rangeEnd_3w2ay_55",
-				ad = "_title_3w2ay_78";
+			var td = "_container_f4yhv_42",
+				nd = "_range_f4yhv_48",
+				id = "_rangeStart_f4yhv_54",
+				rd = "_rangeEnd_f4yhv_55",
+				ad = "_title_f4yhv_78";
 			const od = ({
 				title: e,
 				rarity: A,
@@ -8498,11 +8498,11 @@
 						className: M(Wu, n)
 					}), o && i.a.createElement("img", {
 						src: o,
-						className: zu,
+						className: Pu,
 						alt: "nft-asset"
 					}), i.a.createElement(od, {
 						title: c,
-						className: M(Pu, r),
+						className: M(zu, r),
 						collectionSize: u
 					}))
 				},
@@ -8687,7 +8687,7 @@
 					testid: "nft:actions:etherscan",
 					onClick: () => r("blockchain")
 				}, i.a.createElement("img", {
-					src: o.e.BlockchainFilled,
+					src: a.e.BlockchainFilled,
 					className: Si,
 					alt: ""
 				}), i.a.createElement(Y, {
@@ -8700,7 +8700,7 @@
 					testid: "nft:actions:ipfs",
 					onClick: () => r("view_on_ipfs")
 				}, i.a.createElement("img", {
-					src: o.e.DoubleEyeFilled,
+					src: a.e.DoubleEyeFilled,
 					className: Si,
 					alt: ""
 				}), i.a.createElement(Y, {
@@ -8713,7 +8713,7 @@
 					testid: "nft:actions:ipfs-metadata",
 					onClick: () => r("ipfs_metadata")
 				}, i.a.createElement("img", {
-					src: o.e.InfoFilled,
+					src: a.e.InfoFilled,
 					className: Si,
 					alt: ""
 				}), i.a.createElement(Y, {
@@ -8729,7 +8729,7 @@
 					className: A,
 					cellClassName: t
 				}) => {
-					const n = Object(a.b)().nightModeActive(),
+					const n = Object(o.b)().nightModeActive(),
 						r = Array.isArray(e) ? e : [e];
 					return i.a.createElement("div", {
 						className: M(wd, A, {
@@ -8751,15 +8751,15 @@
 					className: e,
 					isAwarded: A
 				}) => {
-					const t = Object(a.c)(),
-						n = Object(a.b)().nightModeActive();
+					const t = Object(o.c)(),
+						n = Object(o.b)().nightModeActive();
 					return i.a.createElement(Nd, {
 						cellClassName: vi,
 						className: M(gi, {
 							[$n]: n
 						}, e)
 					}, i.a.createElement(i.a.Fragment, null, i.a.createElement("img", {
-						src: o.e.StandOut,
+						src: a.e.StandOut,
 						className: yi,
 						alt: t.inline("stand out", "alt text: stand out")
 					}), i.a.createElement("p", {
@@ -8767,7 +8767,7 @@
 					}, i.a.createElement(Y, {
 						desc: "Benefit description: Stand out in the comments section"
 					}, "Stand out in the comments"))), i.a.createElement(i.a.Fragment, null, i.a.createElement("img", {
-						src: o.e.CardExample,
+						src: a.e.CardExample,
 						className: yi,
 						alt: t.inline("card preview", "alt text: card preview")
 					}), i.a.createElement("p", {
@@ -8775,7 +8775,7 @@
 					}, i.a.createElement(Y, {
 						desc: "Benefit description: adds card appearance on user profile"
 					}, "Add a card to your profile"))), i.a.createElement(i.a.Fragment, null, i.a.createElement("img", {
-						src: o.e.AvatarGear,
+						src: a.e.AvatarGear,
 						className: yi,
 						alt: t.inline("avatar gear", "alt text: avatar gear")
 					}), i.a.createElement("p", {
@@ -8783,7 +8783,7 @@
 					}, i.a.createElement(Y, {
 						desc: "Benefit description: mix these items with other avatar gear"
 					}, "Mix with other avatar gear"))), i.a.createElement(Dd, null), A ? i.a.createElement(i.a.Fragment, null, i.a.createElement("img", {
-						src: o.e.Achievement,
+						src: a.e.Achievement,
 						className: yi,
 						alt: t.inline("achievement icon", "alt text: achievement icon")
 					}), i.a.createElement("p", {
@@ -8791,7 +8791,7 @@
 					}, i.a.createElement(Y, {
 						desc: "Benefit description: the item is a reward for user's achievements"
 					}, "Awarded to top redditors"))) : i.a.createElement(i.a.Fragment, null, i.a.createElement("img", {
-						src: o.e.Collectible,
+						src: a.e.Collectible,
 						className: yi,
 						alt: t.inline("collectible", "alt text: collectible")
 					}), i.a.createElement("p", {
@@ -8799,7 +8799,7 @@
 					}, i.a.createElement(Y, {
 						desc: "Benefit description: the item is a limited edition collectible"
 					}, "Collectible, part of a series"))), i.a.createElement(i.a.Fragment, null, i.a.createElement("img", {
-						src: o.e.Nft,
+						src: a.e.Nft,
 						className: yi,
 						alt: t.inline("nft icon", "alt text: nft icon")
 					}), i.a.createElement("p", {
@@ -8807,7 +8807,7 @@
 					}, i.a.createElement(Y, {
 						desc: "Benefit description: you own this specific NFT avatar"
 					}, "You own your NFT avatar"))), i.a.createElement(i.a.Fragment, null, i.a.createElement("img", {
-						src: o.e.Transferable,
+						src: a.e.Transferable,
 						className: yi,
 						alt: t.inline("blockchain transfer icon", "alt text: blockchain transfer icon")
 					}), i.a.createElement("p", {
@@ -8826,8 +8826,8 @@
 					onArtistClick: l
 				}) => {
 					var c, u, d;
-					const f = Object(a.b)().nightModeActive(),
-						p = Object(a.d)(),
+					const f = Object(o.b)().nightModeActive(),
+						p = Object(o.d)(),
 						m = A => y(v({}, A), {
 							marketplace: Hn(e)
 						});
@@ -8851,7 +8851,7 @@
 						}, e.title), !e.artist && i.a.createElement("div", {
 							className: ti
 						}, i.a.createElement("img", {
-							src: o.e.Reddit,
+							src: a.e.Reddit,
 							className: ii,
 							alt: "reddit logo"
 						}), i.a.createElement(Y, {
@@ -8933,7 +8933,7 @@
 							className: Bi
 						}, i.a.createElement(Y, {
 							desc: "NFT resale info"
-						}, "Secondary sales of this item will have a 5% royalty fee.", " ", i.a.createElement(o.f, {
+						}, "Secondary sales of this item will have a 5% royalty fee.", " ", i.a.createElement(a.f, {
 							className: ki,
 							href: "https://reddithelp.com/hc/en-us/articles/6213869034132"
 						}, "Learn more about fees."))))), r)
@@ -8949,8 +8949,8 @@
 					desc: "This NFT will be minted to the blockchain after the user purchases it"
 				}, "Mints after purchase");
 			var Od = "https://www.redditstatic.com/crypto-assets/v2/background-animation-38efa7c2c7.webp",
-				Rd = "https://www.redditstatic.com/crypto-assets/v2/foreground-animation-8377d7761c.webp";
-			var Vd = "_fallbackBackground_1b2da_9",
+				Vd = "https://www.redditstatic.com/crypto-assets/v2/foreground-animation-8377d7761c.webp";
+			var Rd = "_fallbackBackground_1b2da_9",
 				jd = "_background_1b2da_29",
 				Gd = "_faction_1b2da_59",
 				Yd = "_foreground_1b2da_66",
@@ -8961,11 +8961,11 @@
 				selectedFactionImage: A,
 				nft: t,
 				userId: r,
-				onClose: o,
+				onClose: a,
 				onSetAsAvatar: s,
 				onViewAvatar: l
 			}) => {
-				const c = Object(a.d)(),
+				const c = Object(o.d)(),
 					[u, d] = Object(n.useState)(!1),
 					[f, p] = Object(n.useReducer)(() => !0, !1),
 					[m, h] = Object(n.useReducer)(() => !0, !1),
@@ -8989,12 +8989,12 @@
 					}))(t))
 				}, [m, t, c]), Wn(Od, {
 					onLoad: v
-				}), Wn(Rd, {
+				}), Wn(Vd, {
 					onLoad: E
 				}), Wn(A, {
 					onLoad: B
 				}), i.a.createElement("div", {
-					className: M(Vd, {
+					className: M(Rd, {
 						[Xd]: u
 					})
 				}, u && i.a.createElement(i.a.Fragment, null, i.a.createElement("picture", {
@@ -9016,7 +9016,7 @@
 					srcSet: "https://www.redditstatic.com/crypto-assets/v2/reveal-foreground-web-35559f92d8.mov",
 					type: "video/mp4"
 				}), i.a.createElement("source", {
-					srcSet: Rd,
+					srcSet: Vd,
 					type: "image/webp"
 				}), i.a.createElement("img", {
 					src: "https://www.redditstatic.com/crypto-assets/v2/foreground-fallback-93df023b1a.png"
@@ -9024,7 +9024,7 @@
 					className: Zd,
 					nft: t,
 					isPanelShowing: m,
-					onClose: o,
+					onClose: a,
 					ctaButtons: i.a.createElement(Ni, {
 						currentUserId: r,
 						nft: t,
@@ -9130,9 +9130,9 @@
 					column: 1
 				}
 			};
-			var Pd = {};
+			var zd = {};
 
-			function zd(e, A) {
+			function Pd(e, A) {
 				for (var t = 0; t < e.definitions.length; t++) {
 					var n = e.definitions[t];
 					if (n.name && n.name.value == A) return n
@@ -9154,16 +9154,16 @@
 							})), A.definitions && A.definitions.forEach((function(A) {
 								e(A, t)
 							}))
-						}(e, A), Pd[e.name.value] = A
+						}(e, A), zd[e.name.value] = A
 					}
 				})),
 				function(e, A) {
 					var t = {
 						kind: e.kind,
-						definitions: [zd(e, A)]
+						definitions: [Pd(e, A)]
 					};
 					e.hasOwnProperty("loc") && (t.loc = e.loc);
-					var n = Pd[A] || new Set,
+					var n = zd[A] || new Set,
 						i = new Set,
 						r = new Set;
 					for (n.forEach((function(e) {
@@ -9171,13 +9171,13 @@
 						})); r.size > 0;) {
 						var a = r;
 						r = new Set, a.forEach((function(e) {
-							i.has(e) || (i.add(e), (Pd[e] || new Set).forEach((function(e) {
+							i.has(e) || (i.add(e), (zd[e] || new Set).forEach((function(e) {
 								r.add(e)
 							})))
 						}))
 					}
 					i.forEach((function(A) {
-						var n = zd(e, A);
+						var n = Pd(e, A);
 						n && t.definitions.push(n)
 					}))
 				}(Id, "GetFreeNftClaimDrops");
@@ -9219,8 +9219,8 @@
 					onSubmit: e,
 					loading: A
 				}) => {
-					const t = Object(a.c)(),
-						s = Object(a.d)(),
+					const t = Object(o.c)(),
+						s = Object(o.d)(),
 						[l, c] = Object(n.useState)(null),
 						[u, d] = Object(n.useState)(!1),
 						[f, p] = Object(n.useState)(0),
@@ -9268,12 +9268,12 @@
 					}, "Choose your style")), i.a.createElement("div", {
 						className: $d
 					}, l ? i.a.createElement(i.a.Fragment, null, i.a.createElement("img", {
-						src: o.e.Spotlight,
+						src: a.e.Spotlight,
 						className: Ud
 					}), i.a.createElement("img", {
-						src: o.e.Ellipse,
+						src: a.e.Ellipse,
 						className: Ld
-					}), i.a.createElement(o.b, {
+					}), i.a.createElement(a.b, {
 						factions: l,
 						onChange: e => p(e)
 					})) : i.a.createElement(hf, {
@@ -9287,17 +9287,17 @@
 					}, l[f].description))), i.a.createElement("div", {
 						className: rf
 					}, i.a.createElement(pf, {
-						image: o.e.Achievement,
+						image: a.e.Achievement,
 						desc: t.inline("Awarded to top redditors", "Description: these NFTs are only awarded to top redditors"),
 						className: of
 					}), i.a.createElement(pf, {
-						image: o.e.StandOut,
+						image: a.e.StandOut,
 						desc: t.inline("Stand out in the comments", "Description: using the NFT will make the user's comments stand out")
 					}), i.a.createElement(pf, {
-						image: o.e.Nft,
+						image: a.e.Nft,
 						desc: t.inline("You own your NFT avatar", "Description: user owns their NFT"),
 						className: sf
-					})), i.a.createElement(o.a, {
+					})), i.a.createElement(a.a, {
 						className: qd,
 						onClick: () => {
 							if (l) {
@@ -9325,7 +9325,7 @@
 						desc: "CTA: Prompt users to generate their custom NFT based on the faction they have selected"
 					}, "Generate Yours")), i.a.createElement("h3", {
 						className: uf
-					}, "By generating your collectible, you agree to our", " ", i.a.createElement(o.f, {
+					}, "By generating your collectible, you agree to our", " ", i.a.createElement(a.f, {
 						href: "https://www.redditinc.com/policies/previews-terms",
 						className: df
 					}, "Previews Terms"), ".")))
@@ -9336,7 +9336,7 @@
 					className: ff
 				}, i.a.createElement(Y, {
 					desc: "Generic error: Prompt user to close modal and try again."
-				}, "Something went wrong. Please exit this window and try again.")) : i.a.createElement(o.g, {
+				}, "Something went wrong. Please exit this window and try again.")) : i.a.createElement(a.h, {
 					className: Af
 				}),
 				gf = e => i.a.createElement(K, {
@@ -9366,18 +9366,18 @@
 				Tf = "_imageSide_1n8kp_119",
 				Mf = "_imageContainer_1n8kp_123",
 				Of = "_spotlight_1n8kp_129",
-				Rf = "_hero_1n8kp_137";
-			const Vf = ({
+				Vf = "_hero_1n8kp_137";
+			const Rf = ({
 					className: e,
 					title: A,
 					description: t,
 					ctaText: n,
 					onClose: r,
-					onClickCta: a,
+					onClickCta: o,
 					isNotCardLayout: s
 				}) => i.a.createElement("div", {
 					className: M(wf, e)
-				}, i.a.createElement(o.c, {
+				}, i.a.createElement(a.c, {
 					className: Qf,
 					contained: !0,
 					theme: "dark",
@@ -9390,11 +9390,11 @@
 					className: Sf
 				}, A), i.a.createElement("p", {
 					className: Nf
-				}, t), i.a.createElement(o.a, {
+				}, t), i.a.createElement(a.a, {
 					className: M(Df, {
 						[Cf]: s
 					}),
-					onClick: a
+					onClick: o
 				}, i.a.createElement("img", {
 					src: "https://www.redditstatic.com/crypto-assets/v1/cards/nft-icon.svg",
 					className: Ff
@@ -9407,7 +9407,7 @@
 					className: Of
 				}), i.a.createElement("img", {
 					src: "https://www.redditstatic.com/crypto-assets/v2/marketplace/web/in_feed_unit/hero.png",
-					className: Rf
+					className: Vf
 				})))),
 				jf = (Gf = ({
 					onClose: e,
@@ -9417,29 +9417,46 @@
 					onSetAsAvatar: c,
 					onEvent: u
 				}) => {
-					const [d, f] = Object(n.useState)(vf.Selection), [p, m] = Object(n.useState)(null), [h, g] = Object(n.useState)(null), [E, b] = Object(n.useState)(null), [B, k] = Object(n.useState)(!1), w = Object(a.b)();
-					Object(n.useEffect)(() => {
-						(async () => {
-							try {
-								const e = await Object(s.b)(w.api.accessToken, A);
-								b(!!e)
-							} catch (e) {
-								k(!0)
-							}
-						})()
-					}, [w.api.accessToken, A]);
-					const [x, S] = Object(r.b)(Gn);
+					const [d, f] = Object(n.useState)(vf.Selection), [p, m] = Object(n.useState)(null), [h, g] = Object(n.useState)(null), [E, b] = Object(n.useState)(!1), {
+						userHasVault: B
+					} = function({
+						userId: e,
+						onError: A
+					}) {
+						const t = Object(o.b)(),
+							[i, r] = Object(n.useState)(null),
+							[a, l] = Object(n.useState)(0),
+							[c, u] = Object(n.useReducer)(() => !1, !0);
+						return Object(n.useEffect)(() => {
+							(async () => {
+								try {
+									const A = await Object(s.b)(t.api.accessToken, e);
+									r(A), u()
+								} catch (n) {
+									A()
+								}
+							})()
+						}, [t.api.accessToken, e, A, a]), {
+							fetching: c,
+							userHasVault: Boolean(i),
+							address: i,
+							revalidate: () => l(a + 1)
+						}
+					}({
+						userId: A,
+						onError: () => b(!0)
+					}), [k, w] = Object(r.b)(Gn);
 					Object(n.useEffect)(() => {
 						var e, A;
 						const {
 							data: n,
 							error: i,
 							fetching: r
-						} = x;
+						} = k;
 						if (r) return;
 						const a = n && !n.claimFreeNft.ok,
 							o = n && !(null == (A = null == (e = null == n ? void 0 : n.claimFreeNft) ? void 0 : e.freeNftClaimStatus) ? void 0 : A.item);
-						if (i || a || o) return k(!0), void m(null);
+						if (i || a || o) return b(!0), void m(null);
 						if (!n) return;
 						const s = function(e) {
 							var A, t, n, i;
@@ -9459,8 +9476,8 @@
 								ipfsUrl: e.nft.imageUrl,
 								metadataUrl: e.nft.tokenUrl,
 								mintDate: e.nft.mintedAt,
-								isMinting: (null == (A = null == e ? void 0 : e.tags) ? void 0 : A.includes(V.MINTING)) || !1,
-								isMinted: (null == (t = null == e ? void 0 : e.tags) ? void 0 : t.includes(V.MINTED)) || !1,
+								isMinting: (null == (A = null == e ? void 0 : e.tags) ? void 0 : A.includes(R.MINTING)) || !1,
+								isMinted: (null == (t = null == e ? void 0 : e.tags) ? void 0 : t.includes(R.MINTED)) || !1,
 								soldFor: null,
 								currentPrice: null,
 								vendor: e.nft.vendor,
@@ -9473,17 +9490,17 @@
 								claimId: t
 							}
 						}), g(s), f(vf.Reveal)
-					}, [x, u, t]);
-					const N = Object(n.useCallback)(() => {
-						p && (k(!1), S({
+					}, [k, u, t]);
+					const x = Object(n.useCallback)(() => {
+						p && (b(!1), w({
 							claimId: p.id
 						}))
-					}, [S, p]);
+					}, [w, p]);
 					Object(n.useEffect)(() => {
-						p && null !== E && (E ? N() : f(vf.Secure))
-					}, [p, E, N]);
-					const D = x.fetching || !!p && null === E,
-						F = p && {
+						p && null !== B && (B ? x() : f(vf.Secure))
+					}, [p, B, x]);
+					const S = k.fetching || !!p && null === B,
+						N = p && {
 							itemId: p.id,
 							itemName: p.name
 						};
@@ -9494,22 +9511,22 @@
 					}, i.a.createElement(gf, {
 						onClose: e,
 						onSubmit: m,
-						loading: D
+						loading: S
 					})), i.a.createElement(kf, {
 						isVisible: d === vf.Secure
 					}, p && i.a.createElement(jn, {
-						onSubmit: N,
+						onSubmit: x,
 						onClose: e,
 						userId: A,
 						viewEvent: () => (e => v(y(v({}, O), {
 							action: Q.View,
 							noun: C.Vault
-						}), e))(F),
+						}), e))(N),
 						clickCreateEvent: () => (e => v(y(v({}, O), {
 							action: Q.Create,
 							noun: C.CreateVault
-						}), e))(F),
-						viewSuccessEvent: () => R
+						}), e))(N),
+						viewSuccessEvent: () => V
 					})), p && h && i.a.createElement(Wd, {
 						isVisible: d === vf.Reveal,
 						selectedFactionImage: p.images[0].url,
@@ -9518,10 +9535,10 @@
 						onClose: e,
 						onSetAsAvatar: c,
 						onViewAvatar: l
-					}), B && i.a.createElement(o.d, null))
+					}), E && i.a.createElement(a.d, null))
 				}, e => i.a.createElement(r.a, null, i.a.createElement(Gf, v({}, e))));
 			var Gf
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/vendors~MarketplaceClaimModal~MarketplaceInFeedUnit.33548119228aef7e6189.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/vendors~MarketplaceClaimModal~MarketplaceInFeedUnit.a75457d387662422e6dc.js.map

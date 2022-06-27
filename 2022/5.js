@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/5.9f1372ee6ebf0cb545d1.js
-// Retrieved at 6/23/2022, 6:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/5.e687e68168b4b1088050.js
+// Retrieved at 6/27/2022, 10:20:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	[5], {
 		"./node_modules/@apollo/client/cache/inmemory/types.js": function(e, t) {},
@@ -630,11 +630,11 @@
 			n.r(t),
 				function(e, r, i) {
 					n.d(t, "Builder", (function() {
-						return ZR
+						return KR
 					})), n.d(t, "DataWrapper", (function() {
-						return pD
+						return mD
 					})), n.d(t, "LoggedOut", (function() {
-						return ED
+						return SD
 					}));
 					var a = n("./node_modules/@apollo/client/cache/inmemory/reactiveVars.js"),
 						o = n("./node_modules/@apollo/client/cache/inmemory/inMemoryCache.js"),
@@ -14111,26 +14111,23 @@
 							})]
 						})
 					};
-					var qI = "_contentWrapper_f4xka_3",
-						WI = "_nftDetailsCardModalWrapper_f4xka_11";
+					var qI = "_contentWrapper_k1d4a_3",
+						WI = "_nftDetailsCardModalWrapper_k1d4a_11";
 					const GI = ({
 						listing: e,
 						isModalOpen: t,
 						closeModal: n,
 						onSetAvatar: r,
 						onViewAvatar: i,
-						onArtistClick: a
+						onArtistClick: a,
+						outfits: o,
+						user: s
 					}) => {
-						const [o, s] = Object(C.useState)(!1), {
-							STRIPE_API_KEY: c
-						} = rO(), [l, u] = Object(C.useState)(Gk.Available), d = Yd();
-						Kk(l, u);
-						const {
-							user: f,
-							catalog: {
-								outfits: p
-							}
-						} = ln(), m = kb();
+						const [c, l] = Object(C.useState)(!1), {
+							STRIPE_API_KEY: u
+						} = rO(), [d, f] = Object(C.useState)(Gk.Available), p = Yd();
+						Kk(d, f);
+						const m = kb();
 						Object(C.useEffect)(() => {
 							m((e => ({
 								source: "marketplace",
@@ -14142,7 +14139,7 @@
 								marketplace: Zb(e)
 							}))(e))
 						}, [e, m]);
-						const v = o ? p.find(t => t.id === e.item.benefits.avatarOutfit.id) : void 0;
+						const v = c ? o.find(t => t.id === e.item.benefits.avatarOutfit.id) : void 0;
 						return _b(lI, {
 							toggleModalIsOpen: n,
 							isOpen: t,
@@ -14152,7 +14149,7 @@
 								children: v ? _b(W.a, {
 									itemId: v.inventoryItemId,
 									onClose: n,
-									currentUserId: f.id,
+									currentUserId: s.id,
 									onSetAsAvatar: r,
 									onViewAvatar: i,
 									onArtistClick: a,
@@ -14160,15 +14157,15 @@
 										marketplace: Zb(e)
 									})
 								}) : _b(G.a, {
-									userId: f.id,
+									userId: s.id,
 									listing: e,
-									stripeApiKey: c || "",
+									stripeApiKey: u || "",
 									onClose: n,
 									onCheckoutSuccess: () => {
-										d((e => ({
+										p((e => ({
 											text: oO(`Your purchase of ${oO.param("name",e)} was successful. Congrats on your new avatar!`),
 											kind: Ud.Success
-										}))(e.item.nft.title)), u(Gk.Loading), s(!0)
+										}))(e.item.nft.title)), f(Gk.Loading), l(!0)
 									},
 									onArtistClick: a
 								})
@@ -14399,15 +14396,15 @@
 							})]
 						});
 					var gL = {
-						artistDetails: "_artistDetails_1fzyb_1",
-						artistSummary: "_artistSummary_1fzyb_4",
-						artistImg: "_artistImg_1fzyb_11",
-						artistName: "_artistName_1fzyb_18",
-						socialLinks: "_socialLinks_1fzyb_27",
-						socialLink: "_socialLink_1fzyb_27",
-						artistDescription: "_artistDescription_1fzyb_48",
-						artistItems: "_artistItems_1fzyb_56",
-						otherCreators: "_otherCreators_1fzyb_59"
+						artistDetails: "_artistDetails_14xsi_1",
+						artistSummary: "_artistSummary_14xsi_4",
+						artistImg: "_artistImg_14xsi_11",
+						artistName: "_artistName_14xsi_18",
+						socialLinks: "_socialLinks_14xsi_27",
+						socialLink: "_socialLink_14xsi_27",
+						artistDescription: "_artistDescription_14xsi_52",
+						artistItems: "_artistItems_14xsi_60",
+						otherCreators: "_otherCreators_14xsi_63"
 					};
 					const bL = ({
 						artist: e,
@@ -14508,10 +14505,11 @@
 								})
 						}
 					};
-					var kL = "_collaborationUnit_1q96j_1",
-						OL = "_title_1q96j_10",
-						NL = "_ctaButton_1q96j_18";
-					const wL = ({
+					var kL = "_collaborationUnit_13xxz_1",
+						OL = "_title_13xxz_11",
+						NL = "_ctaLink_13xxz_19",
+						wL = "_ctaButton_13xxz_22";
+					const AL = ({
 						className: e
 					}) => gb("div", {
 						className: Wn(kL, e),
@@ -14525,8 +14523,9 @@
 							href: "https://forms.gle/2pyUKSAKjBhKvnQU6",
 							rel: "noopener noreferrer",
 							target: "_blank",
+							className: NL,
 							children: _b("button", {
-								className: NL,
+								className: wL,
 								children: _b(aO, {
 									desc: "CTA button of the collaboration unit",
 									children: "Join the Waitlist"
@@ -14534,90 +14533,86 @@
 							})
 						})]
 					});
-					var AL = "_headerUnitWrapper_h42q2_1",
-						IL = "_soldOutBannerContainer_h42q2_7",
-						LL = "_soldOutBannerText_h42q2_18",
-						TL = "_header_h42q2_1",
-						jL = "_description_h42q2_34",
-						RL = "_ctaWrapper_h42q2_43",
-						DL = "_gradient_h42q2_53",
-						xL = "_firstTimeBanner_h42q2_62",
-						PL = "_closeIcon_h42q2_78",
-						ML = "_firstTimeBannerHeader_h42q2_85",
-						FL = "_firstTimeBannerText_h42q2_94",
-						UL = "_headerUnitSoldOut_h42q2_102",
-						VL = "_headerUnitHidden_h42q2_105";
-					const HL = ({
-						isStoreSoldOut: e,
-						expiryDate: t = "soon"
+					var IL = "_headerUnitWrapper_h42q2_1",
+						LL = "_soldOutBannerContainer_h42q2_7",
+						TL = "_soldOutBannerText_h42q2_18",
+						jL = "_header_h42q2_1",
+						RL = "_description_h42q2_34",
+						DL = "_ctaWrapper_h42q2_43",
+						xL = "_gradient_h42q2_53",
+						PL = "_firstTimeBanner_h42q2_62",
+						ML = "_closeIcon_h42q2_78",
+						FL = "_firstTimeBannerHeader_h42q2_85",
+						UL = "_firstTimeBannerText_h42q2_94",
+						VL = "_headerUnitSoldOut_h42q2_102",
+						HL = "_headerUnitHidden_h42q2_105";
+					const BL = ({
+						isStoreSoldOut: e
 					}) => {
-						const n = Yd(),
-							r = kb(),
-							[i, a] = Object(C.useState)(!1);
+						const t = Yd(),
+							n = kb(),
+							[r, i] = Object(C.useState)(!1);
 						Object(C.useEffect)(() => {
-							Qf() || (a(!0), Kf())
-						}, [a]);
+							Qf() || (i(!0), Kf())
+						}, [i]);
 						return gb("div", {
-							className: AL,
-							children: [i && gb("div", {
-								className: xL,
+							className: IL,
+							children: [r && gb("div", {
+								className: PL,
 								children: [gb("div", {
-									className: ML,
+									className: FL,
 									children: [_b("p", {
 										children: _b(aO, {
 											desc: "Heading: banner for first visit of avatar shop tab",
-											children: "NEW! Shop for avatars"
+											children: "NEW! Collectible Avatars"
 										})
 									}), _b("div", {
-										className: PL,
-										onClick: () => a(!1),
+										className: ML,
+										onClick: () => i(!1),
 										children: _b(cO, {})
 									})]
 								}), _b("p", {
-									className: FL,
+									className: UL,
 									children: _b(aO, {
 										desc: "Label: description for avatar shop tab",
-										children: "Avatars you can buy, transfer, and sell, by creators from around the world!"
+										children: "Made by independent creators, each unique and limited - own them, wear them, transfer them!"
 									})
 								})]
 							}), gb("div", {
 								className: F()({
-									[UL]: e,
-									[VL]: i
+									[VL]: e,
+									[HL]: r
 								}),
 								children: [_b("h1", {
-									className: F()(TL, DL),
+									className: F()(jL, xL),
 									children: _b(aO, {
-										desc: "Header: Creator Avatars",
-										children: "Creator Avatars"
+										desc: "Header: Collectible Avatars",
+										children: "Collectible Avatars"
 									})
 								}), _b("p", {
-									className: jL,
-									children: gb(aO, {
+									className: RL,
+									children: _b(aO, {
 										desc: "Shop description",
-										children: ["Limited edition avatars by creators from around the world. Get yours now, closes ", _b(aO, {
-											name: "date",
-											children: t
-										})]
+										children: "Made by independent creators, for you to own and use how you choose! Available for a limited time."
 									})
 								})]
-							}), e && !i && _b("div", {
-								className: IL,
+							}), e && !r && _b("div", {
+								className: LL,
 								children: _b("p", {
-									className: LL,
+									className: TL,
 									children: _b(aO, {
 										desc: "Label: Sold Out",
 										children: "Sold Out"
 									})
 								})
 							}), gb("div", {
-								className: F()(RL),
+								className: F()(DL),
 								children: [_b("a", {
 									href: "https://reddithelp.com/hc/en-us/articles/6213835889044",
 									target: "_blank",
 									rel: "noopener noreferrer",
 									onClick: () => {
-										r({
+										n({
 											source: "avatar_builder",
 											action: "click",
 											noun: "learn_more",
@@ -14634,7 +14629,7 @@
 									href: "#",
 									onClick: e => {
 										e.preventDefault();
-										np("https://www.reddit.com/avatar/shop"), n(Wd)
+										np("https://www.reddit.com/avatar/shop"), t(Wd)
 									},
 									children: _b(aO, {
 										desc: "CTA: Share Button",
@@ -14644,14 +14639,14 @@
 							})]
 						})
 					};
-					var BL = "_tileGridContainer_vbrw3_1",
-						qL = "_tileGridHeader_vbrw3_6",
-						WL = "_headerLabel_vbrw3_12",
-						GL = "_seeAll_vbrw3_15",
-						zL = "_tileGrid_vbrw3_1",
-						YL = "_emptyTile_vbrw3_36",
-						$L = "_emptyTileGrid_vbrw3_44";
-					const ZL = ({
+					var qL = "_tileGridContainer_vbrw3_1",
+						WL = "_tileGridHeader_vbrw3_6",
+						GL = "_headerLabel_vbrw3_12",
+						zL = "_seeAll_vbrw3_15",
+						YL = "_tileGrid_vbrw3_1",
+						$L = "_emptyTile_vbrw3_36",
+						ZL = "_emptyTileGrid_vbrw3_44";
+					const KL = ({
 							tiles: e,
 							maxRows: t,
 							title: n,
@@ -14665,27 +14660,27 @@
 								if (e.length) {
 									const n = t ? t * c : e.length,
 										i = t ? e.slice(0, n) : e;
-									o(KL(i, n, r))
+									o(QL(i, n, r))
 								} else o(void 0)
 							}, [e, c, t]), (null == a ? void 0 : a.length) ? gb("div", {
-								className: BL,
+								className: qL,
 								children: [n && gb("div", {
-									className: qL,
+									className: WL,
 									children: [_b("h3", {
-										className: WL,
+										className: GL,
 										onClick: i,
 										children: n
 									}), Object(I.isFunction)(i) && _b("div", {
-										className: GL,
+										className: zL,
 										onClick: i,
 										children: "See All"
 									})]
 								}), _b("div", {
-									className: zL,
+									className: YL,
 									children: a
 								})]
 							}) : gb("div", {
-								className: $L,
+								className: ZL,
 								children: [_b("h2", {
 									children: "Looks like we've lost a sock 🧦"
 								}), _b("h4", {
@@ -14693,13 +14688,13 @@
 								})]
 							})
 						},
-						KL = (e, t, n) => {
+						QL = (e, t, n) => {
 							const r = e[0] && e[0].hasOwnProperty("productOffer"),
 								i = n => {
 									return [...n, ...Array.from({
 										length: t - e.length
 									}).map((e, t) => _b("div", {
-										className: YL,
+										className: $L,
 										children: _b(JO, {
 											type: $O.OUTFIT_TILE,
 											isNft: r
@@ -14715,34 +14710,34 @@
 							}
 							return i(e.map(e => _b(zO, ee({}, e), e.title)))
 						};
-					var QL = {
+					var XL = {
 						shopContainer: "_shopContainer_10uxf_1",
 						shopItems: "_shopItems_10uxf_4",
 						fullArtistsList: "_fullArtistsList_10uxf_7",
 						collaborationUnit: "_collaborationUnit_10uxf_19"
 					};
-					const XL = {
+					const JL = {
 							[nd.FEATURED]: "featured_view_all",
 							[nd.POPULAR]: "popular_view_all",
 							[nd.GALLERY]: "gallery_view_all",
 							[nd.ARTISTS]: "artist_view_all",
 							[nd.ARTIST_PAGE]: "artist_profile"
 						},
-						JL = {
+						eT = {
 							[nd.FEATURED]: "featured",
 							[nd.POPULAR]: "popular",
 							[nd.GALLERY]: "gallery",
 							[nd.ARTISTS]: "artists",
 							[nd.ARTIST_PAGE]: "artist_name"
 						},
-						eT = {
+						tT = {
 							[nd.FEATURED]: oO("featured"),
 							[nd.POPULAR]: oO("popular"),
 							[nd.GALLERY]: oO("gallery"),
 							[nd.ARTISTS]: oO("artists"),
 							[nd.ARTIST_PAGE]: ""
 						},
-						tT = () => {
+						nT = () => {
 							const [e, t] = Object(C.useState)(), [n, r] = Object(C.useState)(), {
 								setCurrentTab: i,
 								updateActiveMeSubpage: a,
@@ -14751,15 +14746,17 @@
 								setShopTabState: c
 							} = Object(C.useContext)(id), {
 								avatarStorefront: l,
+								user: u,
 								catalog: {
-									accessories: u
+									accessories: d,
+									outfits: f
 								}
 							} = ln(), {
-								setAccessories: d,
-								useFullSaveAvatar: f
-							} = Pk(), p = f(), m = s[s.length - 1], v = null == m ? void 0 : m.activeSheet, h = (null == m ? void 0 : m.selectedArtistId) ? l.artists.find(e => e.redditorInfo.id === (null == m ? void 0 : m.selectedArtistId)) : void 0, y = e => {
+								setAccessories: p,
+								useFullSaveAvatar: m
+							} = Pk(), v = m(), h = s[s.length - 1], y = null == h ? void 0 : h.activeSheet, _ = (null == h ? void 0 : h.selectedArtistId) ? l.artists.find(e => e.redditorInfo.id === (null == h ? void 0 : h.selectedArtistId)) : void 0, g = e => {
 								o(), c([...s, e])
-							}, _ = kb(), g = Object(C.useMemo)(() => ((e, t, n = kf) => {
+							}, b = kb(), E = Object(C.useMemo)(() => ((e, t, n = kf) => {
 								const r = n(e.artists.map(e => e.listings.find(Gf)).filter(Wf)),
 									i = n(e.artists.reduce((e, t) => {
 										return [...e, ...t.listings.filter(e => Gf(e) && !r.includes(e))]
@@ -14773,7 +14770,7 @@
 									title: Fd("Featured"),
 									items: t ? o.slice(0, t) : o
 								}
-							})(l), [l]), b = Object(C.useMemo)(() => g.items.slice(0, 9), [g]), E = Object(C.useMemo)(() => ((e, t = 30, n = kf) => {
+							})(l), [l]), S = Object(C.useMemo)(() => E.items.slice(0, 9), [E]), k = Object(C.useMemo)(() => ((e, t = 30, n = kf) => {
 								const r = n(e.artists.reduce((e, t) => {
 									return [...e, ...t.listings.filter(Gf)]
 								}, []).sort((e, t) => {
@@ -14784,28 +14781,21 @@
 									title: Fd("Popular"),
 									items: r
 								}
-							})(l), [l]), S = Object(C.useMemo)(() => E.items.slice(0, 9), [E]), k = Object(C.useMemo)(() => ((e, t, n = kf) => {
+							})(l), [l]), O = Object(C.useMemo)(() => k.items.slice(0, 9), [k]), N = Object(C.useMemo)(() => ((e, t, n = kf) => {
 								const r = [...n(e.listings.filter(Gf)), ...n(e.listings.filter(e => !Gf(e)))];
 								return {
 									id: "sc-gallery",
 									title: Fd("Gallery"),
 									items: t ? r.slice(0, t) : r
 								}
-							})(l), [l]), O = Object(C.useMemo)(() => (e => {
-								const t = e.map(e => e.expiresAt ? Date.parse(e.expiresAt) : void 0).filter(Wf),
-									n = t.reduce((e, t) => t > e ? t : e, t[0]);
-								return n ? new Intl.DateTimeFormat(void 0, {
-									month: "long",
-									day: "numeric"
-								}).format(n) : "soon"
-							})(l.listings), [l.listings]);
+							})(l), [l]);
 							Object(C.useEffect)(() => {
 								t(void 0)
-							}, [v]);
-							const N = () => r(void 0),
-								w = (t, n, i) => {
+							}, [y]);
+							const w = () => r(void 0),
+								A = (t, n, i) => {
 									const a = e ? Yb(e) : void 0;
-									_(((e, t, n, r) => ({
+									b(((e, t, n, r) => ({
 										source: "avatar",
 										action: "click",
 										noun: "outfit",
@@ -14821,26 +14811,26 @@
 										}
 									}))(n, t, a, i)), r(t)
 								},
-								A = e => {
-									y({
+								L = e => {
+									g({
 										selectedArtistId: e.redditorInfo.id,
 										activeSheet: nd.ARTIST_PAGE
 									})
 								},
-								L = zf(l),
-								T = Object(C.useCallback)(t => Object(I.isNil)(e) ? t : t.filter(t => {
+								T = zf(l),
+								j = Object(C.useCallback)(t => Object(I.isNil)(e) ? t : t.filter(t => {
 									const n = B()(t.productOffer.pricePackages[0].price).value / 100;
 									return n >= e.min && (n < e.max || -1 === e.max)
 								}), [e]),
-								j = e => {
-									_(Ob({
-										pageType: XL[e]
-									})), y({
+								R = e => {
+									b(Ob({
+										pageType: JL[e]
+									})), g({
 										activeSheet: e
 									})
 								},
-								R = (e, t, n) => {
-									_(((e, t, n) => ({
+								D = (e, t, n) => {
+									b(((e, t, n) => ({
 										source: "avatar",
 										action: "click",
 										noun: "marketplace_artist",
@@ -14856,84 +14846,83 @@
 										snoovatar: {
 											sectionIndex: n
 										}
-									}))(e, t, n)), A(e)
+									}))(e, t, n)), L(e)
 								},
-								D = {},
-								x = (() => {
+								x = {},
+								P = (() => {
 									let e = -1;
-									return t => (D.hasOwnProperty(t) || (e += 1, D[t] = e), null)
+									return t => (x.hasOwnProperty(t) || (e += 1, x[t] = e), null)
 								})(),
-								P = e => D[e];
+								M = e => x[e];
 							return gb("div", {
-								className: QL.shopContainer,
-								children: [Object(I.isNil)(v) && gb(bb, {
-									children: [_b(HL, {
-										isStoreSoldOut: L,
-										expiryDate: O
-									}), !!b.length && gb("div", {
-										className: QL.shopItems,
-										children: [x(nd.FEATURED), _b(xA, {
-											onClickItem: e => w(e, "featured_row", P(nd.FEATURED)),
-											categoryId: g.id,
-											title: g.title,
-											items: b,
-											seeAllLabel: oO("See All"),
-											seeAllOnClick: () => j(nd.FEATURED)
-										})]
+								className: XL.shopContainer,
+								children: [Object(I.isNil)(y) && gb(bb, {
+									children: [_b(BL, {
+										isStoreSoldOut: T
 									}), !!S.length && gb("div", {
-										className: QL.shopItems,
-										children: [x(nd.POPULAR), _b(xA, {
-											onClickItem: e => w(e, "popular_row", P(nd.POPULAR)),
+										className: XL.shopItems,
+										children: [P(nd.FEATURED), _b(xA, {
+											onClickItem: e => A(e, "featured_row", M(nd.FEATURED)),
 											categoryId: E.id,
 											title: E.title,
 											items: S,
 											seeAllLabel: oO("See All"),
-											seeAllOnClick: () => j(nd.POPULAR)
+											seeAllOnClick: () => R(nd.FEATURED)
 										})]
-									}), L && _b(wL, {
-										className: QL.collaborationUnit
+									}), !!O.length && gb("div", {
+										className: XL.shopItems,
+										children: [P(nd.POPULAR), _b(xA, {
+											onClickItem: e => A(e, "popular_row", M(nd.POPULAR)),
+											categoryId: k.id,
+											title: k.title,
+											items: O,
+											seeAllLabel: oO("See All"),
+											seeAllOnClick: () => R(nd.POPULAR)
+										})]
+									}), T && _b(AL, {
+										className: XL.collaborationUnit
 									}), !!l.artists.length && gb("div", {
-										className: QL.shopItems,
-										children: [x(nd.ARTISTS), _b(_L, {
+										className: XL.shopItems,
+										children: [P(nd.ARTISTS), _b(_L, {
 											artists: l.artists,
-											seeAllOnClick: () => j(nd.ARTISTS),
-											onArtistClick: e => R(e, "artists_row", P(nd.ARTISTS))
+											seeAllOnClick: () => R(nd.ARTISTS),
+											onArtistClick: e => D(e, "artists_row", M(nd.ARTISTS))
 										})]
 									}), gb(bb, {
-										children: [x(nd.GALLERY), _b(ZL, {
-											title: k.title,
-											tiles: k.items,
+										children: [P(nd.GALLERY), _b(KL, {
+											title: N.title,
+											tiles: N.items,
 											maxRows: 3,
-											onClick: e => w(e, "gallery_row", P(nd.GALLERY)),
-											seeAllOnClick: () => j(nd.GALLERY)
+											onClick: e => A(e, "gallery_row", M(nd.GALLERY)),
+											seeAllOnClick: () => R(nd.GALLERY)
 										})]
 									}), l.artists.map(e => !!e.listings.length && gb("div", {
-										className: QL.shopItems,
-										children: [x(e.redditorInfo.id), _b(xA, {
-											onClickItem: t => w(t, "artist_row", P(e.redditorInfo.id)),
+										className: XL.shopItems,
+										children: [P(e.redditorInfo.id), _b(xA, {
+											onClickItem: t => A(t, "artist_row", M(e.redditorInfo.id)),
 											categoryId: e.redditorInfo.id,
 											title: Xf(e),
 											items: e.listings,
 											seeAllOnClick: () => (e => {
-												_(Ob({
+												b(Ob({
 													pageType: "artist_profile"
-												})), A(e)
+												})), L(e)
 											})(e)
 										})]
-									}, e.redditorInfo.id)), !L && _b(wL, {
-										className: QL.collaborationUnit
+									}, e.redditorInfo.id)), !T && _b(AL, {
+										className: XL.collaborationUnit
 									})]
 								}), gb(YA, {
 									onClickBack: () => {
 										o(), c(s.slice(0, -1))
 									},
-									title: `${!Object(I.isNil)(v)&&eT[v]}`,
-									active: !Object(I.isNil)(v),
-									children: [(v === nd.FEATURED || v === nd.POPULAR || v === nd.GALLERY) && gb(bb, {
-										children: [(v === nd.FEATURED || v === nd.GALLERY) && _b(KI, {
+									title: `${!Object(I.isNil)(y)&&tT[y]}`,
+									active: !Object(I.isNil)(y),
+									children: [(y === nd.FEATURED || y === nd.POPULAR || y === nd.GALLERY) && gb(bb, {
+										children: [(y === nd.FEATURED || y === nd.GALLERY) && _b(KI, {
 											onClickCallback: e => {
 												const n = Yb(e);
-												_(((e, t) => ({
+												b(((e, t) => ({
 													source: "avatar_builder",
 													action: "click",
 													noun: "sort",
@@ -14943,37 +14932,39 @@
 													snoovatar: {
 														sort: e
 													}
-												}))(n, XL[v])), t(e)
+												}))(n, JL[y])), t(e)
 											}
-										}), _b(ZL, {
-											tiles: T((() => v === nd.FEATURED ? g.items : v === nd.POPULAR ? E.items : v === nd.GALLERY ? k.items : [])()),
-											onClick: e => w(e, JL[v])
+										}), _b(KL, {
+											tiles: j((() => y === nd.FEATURED ? E.items : y === nd.POPULAR ? k.items : y === nd.GALLERY ? N.items : [])()),
+											onClick: e => A(e, eT[y])
 										})]
-									}), v === nd.ARTISTS && _b(bb, {
+									}), y === nd.ARTISTS && _b(bb, {
 										children: _b("div", {
-											className: QL.fullArtistsList,
+											className: XL.fullArtistsList,
 											children: l.artists.map(e => _b(yL, {
 												artist: e,
-												onClick: () => R(e, JL[nd.ARTISTS])
+												onClick: () => D(e, eT[nd.ARTISTS])
 											}, e.redditorInfo.id))
 										})
-									}), v === nd.ARTIST_PAGE && !!h && _b(bb, {
+									}), y === nd.ARTIST_PAGE && !!_ && _b(bb, {
 										children: _b("div", {
-											className: QL.artistPage,
+											className: XL.artistPage,
 											children: _b(bL, {
-												artist: h,
-												onItemClick: e => w(e, JL[nd.ARTIST_PAGE]),
-												onArtistClick: e => R(e, JL[nd.ARTIST_PAGE]),
-												onSeeAllArtistsClick: () => j(nd.ARTISTS)
+												artist: _,
+												onItemClick: e => A(e, eT[nd.ARTIST_PAGE]),
+												onArtistClick: e => D(e, eT[nd.ARTIST_PAGE]),
+												onSeeAllArtistsClick: () => R(nd.ARTISTS)
 											})
 										})
 									})]
 								}), !!n && _b(GI, {
+									outfits: f,
+									user: u,
 									isModalOpen: !!n,
 									listing: n,
-									closeModal: N,
+									closeModal: w,
 									onSetAvatar: () => re(void 0, null, (function*() {
-										_((e => ({
+										b((e => ({
 											source: "snoovatar",
 											action: "set_to_profile",
 											noun: "snoovatar",
@@ -14988,21 +14979,21 @@
 										}))(n));
 										const e = null == n ? void 0 : n.item.benefits.avatarOutfit.accessoryIds;
 										if (!(null == e ? void 0 : e.length)) return;
-										const t = u.filter(t => e.includes(t.id));
-										d(t), yield p(), N(), a("MY_STUFF"), i(ed.ME)
+										const t = d.filter(t => e.includes(t.id));
+										p(t), yield v(), w(), a("MY_STUFF"), i(ed.ME)
 									})),
 									onViewAvatar: () => {
 										a("MY_STUFF"), i(ed.ME)
 									},
 									onArtistClick: e => {
-										if (N(), (null == h ? void 0 : h.redditorInfo.id) === e) return;
+										if (w(), (null == _ ? void 0 : _.redditorInfo.id) === e) return;
 										const t = l.artists.find(t => t.redditorInfo.id === e);
-										t && A(t)
+										t && L(t)
 									}
 								})]
 							})
 						};
-					var nT = {
+					var rT = {
 						styleCardWrapper: "_styleCardWrapper_yok3c_1",
 						cardName: "_cardName_yok3c_16",
 						"card-periwinkle": "_card-periwinkle_yok3c_33",
@@ -15012,66 +15003,66 @@
 						"card-purple": "_card-purple_yok3c_49",
 						"card-blue": "_card-blue_yok3c_53"
 					};
-					const rT = ({
+					const iT = ({
 						name: e,
 						imageUrl: t,
 						color: n,
 						handleClick: r
 					}) => gb("div", {
-						className: F()(nT.styleCardWrapper, nT[`card-${n}`]),
+						className: F()(rT.styleCardWrapper, rT[`card-${n}`]),
 						onClick: () => r(e),
 						children: [_b("img", {
 							src: t,
 							alt: e,
-							className: nT.styleCardImage
+							className: rT.styleCardImage
 						}), _b("div", {
-							className: nT.cardName,
+							className: rT.cardName,
 							children: `${e}`.replace(/' '/g, "\n")
 						})]
 					});
-					const iT = "https://www.redditstatic.com/avatar-assets/v1/bottoms.png",
-						aT = "https://www.redditstatic.com/avatar-assets/v1/face.png",
-						oT = "https://www.redditstatic.com/avatar-assets/v1/fulloutfit.png",
-						sT = "https://www.redditstatic.com/avatar-assets/v1/hats.png",
-						cT = "https://www.redditstatic.com/avatar-assets/v1/lefthand.png",
-						lT = "https://www.redditstatic.com/avatar-assets/v1/righthand.png",
-						uT = "https://www.redditstatic.com/avatar-assets/v1/tops.png";
-					var dT = "_styleTabWrapper_vyb07_1";
-					const fT = {
+					const aT = "https://www.redditstatic.com/avatar-assets/v1/bottoms.png",
+						oT = "https://www.redditstatic.com/avatar-assets/v1/face.png",
+						sT = "https://www.redditstatic.com/avatar-assets/v1/fulloutfit.png",
+						cT = "https://www.redditstatic.com/avatar-assets/v1/hats.png",
+						lT = "https://www.redditstatic.com/avatar-assets/v1/lefthand.png",
+						uT = "https://www.redditstatic.com/avatar-assets/v1/righthand.png",
+						dT = "https://www.redditstatic.com/avatar-assets/v1/tops.png";
+					var fT = "_styleTabWrapper_vyb07_1";
+					const pT = {
 							[Ku.BOTTOMS]: {
 								color: "red",
-								imageUrl: iT
+								imageUrl: aT
 							},
 							[Ku.FACE]: {
 								color: "blue",
-								imageUrl: aT
+								imageUrl: oT
 							},
 							[Ku.FULL_OUTFITS]: {
 								color: "blue",
-								imageUrl: oT
+								imageUrl: sT
 							},
 							[Ku.HATS]: {
 								color: "green",
-								imageUrl: sT
+								imageUrl: cT
 							},
 							[Ku.LEFT_HAND]: {
 								color: "orange",
-								imageUrl: cT
+								imageUrl: lT
 							},
 							[Ku.RIGHT_HAND]: {
 								color: "periwinkle",
-								imageUrl: lT
+								imageUrl: uT
 							},
 							[Ku.TOPS]: {
 								color: "purple",
-								imageUrl: uT
+								imageUrl: dT
 							}
 						},
-						pT = ({
+						mT = ({
 							tileGroups: e
 						}) => {
 							const t = kb(),
-								n = Object(C.useMemo)(() => Object.values(Ku).map(e => te(ee({}, fT[e]), {
+								n = Object(C.useMemo)(() => Object.values(Ku).map(e => te(ee({}, pT[e]), {
 									name: e
 								})), []),
 								{
@@ -15082,12 +15073,12 @@
 									t(Nb("style", e)), i(e)
 								};
 							return _b("div", {
-								className: dT,
+								className: fT,
 								children: gb(y.a.Suspense, {
 									fallback: _b("div", {
 										children: "Loading..."
 									}),
-									children: [n.map(e => _b(rT, ee({
+									children: [n.map(e => _b(iT, ee({
 										handleClick: a
 									}, e), e.name)), _b(YA, {
 										onClickBack: () => {
@@ -15102,9 +15093,9 @@
 								})
 							})
 						};
-					var mT = "_stage_1xzdy_1",
-						vT = "_innerStage_1xzdy_13";
-					const hT = () => {
+					var vT = "_stage_1xzdy_1",
+						hT = "_innerStage_1xzdy_13";
+					const CT = () => {
 						const e = Object(C.useRef)(null),
 							{
 								catalog: {
@@ -15125,12 +15116,12 @@
 						}, [i, o]), Object(C.useEffect)(() => {
 							e.current && (e.current.scrollTop = 0)
 						}, [a]), _b("div", {
-							className: mT,
+							className: vT,
 							"data-testid": "menu:stage",
 							children: gb("div", {
-								className: vT,
+								className: hT,
 								ref: e,
-								children: [i === ed.SHOP && _b(tT, {}), i === ed.EXPLORE && _b(QA, {}), i === ed.STYLE && _b(pT, {
+								children: [i === ed.SHOP && _b(nT, {}), i === ed.EXPLORE && _b(QA, {}), i === ed.STYLE && _b(mT, {
 									tileGroups: r
 								}), i === ed.ME && _b(DI, {
 									tileGroups: r
@@ -15140,14 +15131,14 @@
 							})
 						})
 					};
-					var CT = "_editorNavigation_1such_1",
-						yT = "_selectorContainer_1such_11",
-						_T = "_pillOption_1such_54",
-						gT = "_uppercase_1such_82",
-						bT = "_selectedPillOption_1such_103",
-						ET = "_sparkle_1such_121";
-					const ST = ["_sparkle1_1such_137", "_sparkle2_1such_144", "_sparkle3_1such_150", "_sparkle4_1such_157"],
-						kT = ({
+					var yT = "_editorNavigation_1such_1",
+						_T = "_selectorContainer_1such_11",
+						gT = "_pillOption_1such_54",
+						bT = "_uppercase_1such_82",
+						ET = "_selectedPillOption_1such_103",
+						ST = "_sparkle_1such_121";
+					const kT = ["_sparkle1_1such_137", "_sparkle2_1such_144", "_sparkle3_1such_150", "_sparkle4_1such_157"],
+						OT = ({
 							className: e,
 							currentTab: t,
 							onSelect: n
@@ -15160,26 +15151,26 @@
 							}, [i, a]);
 							const c = Object.values(ed).filter(e => e === ed.SHOP ? i : e === ed.CREATE ? r(ef.CREATOR_TOOLS) : e !== ed.NFT || hd());
 							return _b("nav", {
-								className: CT,
+								className: yT,
 								children: _b("div", {
 									"data-testid": "nav",
-									className: F()(yT, e),
+									className: F()(_T, e),
 									children: c.map(e => gb("div", {
 										"data-testid": `nav:category nav:category:${e.toUpperCase()}`,
 										onClick: () => n(e),
-										className: F()(_T, {
-											[bT]: t === e,
-											[gT]: e === ed.NFT
+										className: F()(gT, {
+											[ET]: t === e,
+											[bT]: e === ed.NFT
 										}),
-										children: [e === o && ST.map((e, t) => _b(CO, {
-											className: F()(ET, e)
+										children: [e === o && kT.map((e, t) => _b(CO, {
+											className: F()(ST, e)
 										}, t)), e.toLocaleLowerCase()]
 									}, e))
 								})
 							})
 						};
-					var OT = "_container_faxof_14";
-					const NT = ({
+					var NT = "_container_faxof_14";
+					const wT = ({
 						className: e,
 						navState: t
 					}) => {
@@ -15198,9 +15189,9 @@
 						}, [o]);
 						const [c, l] = Object(C.useState)((null == t ? void 0 : t.activeStyleCard) || null), [u, d] = Object(C.useState)((null == t ? void 0 : t.activeMeSubpage) || null), [f, p] = Object(C.useState)((null == t ? void 0 : t.activeDetails) || null), [m, v] = Object(C.useState)((null == t ? void 0 : t.shopTabState) ? [null == t ? void 0 : t.shopTabState] : []), [h, y] = Object(C.useState)(null), _ = () => y(Object(D.a)());
 						return gb("div", {
-							className: F()(OT, e),
+							className: F()(NT, e),
 							"data-testid": "menu",
-							children: [_b(kT, {
+							children: [_b(OT, {
 								currentTab: o,
 								onSelect: e => {
 									n((e => ({
@@ -15228,19 +15219,19 @@
 									resetScrollPosition: _,
 									scrollResetId: h
 								},
-								children: _b(hT, {})
+								children: _b(CT, {})
 							})]
 						})
 					};
-					var wT = "_removeClosetItemModalWrapper_1fze4_1",
-						AT = "_header_1fze4_5",
-						IT = "_mainContent_1fze4_23",
-						LT = "_footer_1fze4_27",
-						TT = "_closeBtn_1fze4_34",
-						jT = "_backBtn_1fze4_39",
-						RT = "_removeBtn_1fze4_52",
-						DT = "_closeBtnImage_1fze4_65";
-					const xT = ({
+					var AT = "_removeClosetItemModalWrapper_1fze4_1",
+						IT = "_header_1fze4_5",
+						LT = "_mainContent_1fze4_23",
+						TT = "_footer_1fze4_27",
+						jT = "_closeBtn_1fze4_34",
+						RT = "_backBtn_1fze4_39",
+						DT = "_removeBtn_1fze4_52",
+						xT = "_closeBtnImage_1fze4_65";
+					const PT = ({
 						className: e,
 						itemsToBeRemovedId: t,
 						closeModal: n,
@@ -15252,28 +15243,28 @@
 							} = RE(),
 							o = dd(r) ? r : n;
 						return _b(lI, {
-							className: Wn(wT, e),
+							className: Wn(AT, e),
 							isOpen: !0,
 							toggleModalIsOpen: n,
 							children: gb("div", {
 								children: [gb("div", {
-									className: AT,
+									className: IT,
 									children: [_b("h1", {
 										children: _b(aO, {
 											desc: "Header: Are you sure?",
 											children: "Are you sure?"
 										})
 									}), _b("button", {
-										className: TT,
+										className: jT,
 										onClick: n,
 										children: _b("img", {
 											src: uI,
 											alt: oO("Close Modal"),
-											className: DT
+											className: xT
 										})
 									})]
 								}), _b("div", {
-									className: IT,
+									className: LT,
 									children: _b("p", {
 										children: _b(aO, {
 											desc: "Label: Warning to permanently lose item once removed",
@@ -15281,16 +15272,16 @@
 										})
 									})
 								}), gb("div", {
-									className: LT,
+									className: TT,
 									children: [_b(Nw, {
-										className: jT,
+										className: RT,
 										onClick: o,
 										children: _b(aO, {
 											desc: "Label: Back",
 											children: "Go Back"
 										})
 									}), _b(Nw, {
-										className: RT,
+										className: DT,
 										onClick: e => re(void 0, null, (function*() {
 											i((e => ({
 												source: "avatar_closet",
@@ -15310,30 +15301,30 @@
 							})
 						})
 					};
-					var PT = {
+					var MT = {
 							closetModalWrapper: "_closetModalWrapper_s0d15_1"
 						},
-						MT = GE,
-						FT = YN,
-						UT = $N,
-						VT = mr,
-						HT = Ra,
-						BT = zE,
-						qT = 200;
-					var WT = ru,
-						GT = nu,
-						zT = uu;
-					var YT = io,
-						$T = Fn;
-					var ZT = function(e, t, n, r) {
+						FT = GE,
+						UT = YN,
+						VT = $N,
+						HT = mr,
+						BT = Ra,
+						qT = zE,
+						WT = 200;
+					var GT = ru,
+						zT = nu,
+						YT = uu;
+					var $T = io,
+						ZT = Fn;
+					var KT = function(e, t, n, r) {
 							var i = -1,
-								a = FT,
+								a = UT,
 								o = !0,
 								s = e.length,
 								c = [],
 								l = t.length;
 							if (!s) return c;
-							n && (t = VT(t, HT(n))), r ? (a = UT, o = !1) : t.length >= qT && (a = BT, o = !1, t = new MT(t));
+							n && (t = HT(t, BT(n))), r ? (a = VT, o = !1) : t.length >= WT && (a = qT, o = !1, t = new FT(t));
 							e: for (; ++i < s;) {
 								var u = e[i],
 									d = null == n ? u : n(u);
@@ -15345,28 +15336,28 @@
 							}
 							return c
 						},
-						KT = function(e) {
-							return $T(e) && YT(e)
+						QT = function(e) {
+							return ZT(e) && $T(e)
 						},
-						QT = function(e, t) {
-							return zT(GT(e, t, WT), e + "")
+						XT = function(e, t) {
+							return YT(zT(e, t, GT), e + "")
 						}((function(e, t) {
-							return KT(e) ? ZT(e, t) : []
+							return QT(e) ? KT(e, t) : []
 						}));
-					var XT = "_header_eas57_1",
-						JT = "_title_eas57_5",
-						ej = "_description_eas57_16",
-						tj = "_closeBtn_eas57_25",
-						nj = "_closeBtnImage_eas57_36",
-						rj = "_mainContent_eas57_39",
-						ij = "_detailsAccesoriesWrapper_eas57_46",
-						aj = "_detailsAccesories_eas57_46",
-						oj = "_item_eas57_63",
-						sj = "_footer_eas57_72",
-						cj = "_backBtn_eas57_85",
-						lj = "_removeBtn_eas57_99",
-						uj = "_disabled_eas57_113";
-					const dj = ({
+					var JT = "_header_eas57_1",
+						ej = "_title_eas57_5",
+						tj = "_description_eas57_16",
+						nj = "_closeBtn_eas57_25",
+						rj = "_closeBtnImage_eas57_36",
+						ij = "_mainContent_eas57_39",
+						aj = "_detailsAccesoriesWrapper_eas57_46",
+						oj = "_detailsAccesories_eas57_46",
+						sj = "_item_eas57_63",
+						cj = "_footer_eas57_72",
+						lj = "_backBtn_eas57_85",
+						uj = "_removeBtn_eas57_99",
+						dj = "_disabled_eas57_113";
+					const fj = ({
 							closeModal: e,
 							openConfirmRemovalFlow: t,
 							initialRemovalItemIds: n,
@@ -15382,20 +15373,20 @@
 								u = l ? `(${s.length})` : "",
 								d = Object.values(a.accessories),
 								f = e => {
-									const t = s.includes(e.id) ? [...QT(s, e.id)] : [...s, e.id];
+									const t = s.includes(e.id) ? [...XT(s, e.id)] : [...s, e.id];
 									c(t)
 								};
 							return gb("div", {
 								children: [gb("div", {
-									className: XT,
+									className: JT,
 									children: [_b("h1", {
-										className: JT,
+										className: ej,
 										children: _b(aO, {
 											desc: "Heading: You're out of room.",
 											children: "You're out of room"
 										})
 									}), _b("h4", {
-										className: ej,
+										className: tj,
 										children: gb(aO, r ? {
 											desc: "Subheading: Out of closet space on save.",
 											children: ["Uh oh! Some of this gear has expired,", _b("br", {}), "but you're out of space in your closet.", _b("br", {}), "Remove some gear to make room for", " ", _b(aO, {
@@ -15407,26 +15398,26 @@
 											children: ["You can only save ", a.maxSlots, " items at a time.", _b("br", {}), "Remove some gear to make room for more."]
 										})
 									}), _b("button", {
-										className: tj,
+										className: nj,
 										onClick: e,
 										children: _b("img", {
 											src: uI,
 											alt: "close modal",
-											className: nj
+											className: rj
 										})
 									})]
 								}), _b("div", {
-									className: rj,
+									className: ij,
 									children: d && _b("div", {
-										className: ij,
+										className: aj,
 										children: _b("div", {
-											className: aj,
+											className: oj,
 											children: Object.values(d).map(e => {
 												const t = s.includes(e.id),
 													n = i(e);
 												return n.isActive = t, _b(MO, {
 													meta: n,
-													className: oj,
+													className: sj,
 													gear: e,
 													renderOnly: !0,
 													onClick: f
@@ -15435,17 +15426,17 @@
 										})
 									})
 								}), gb("div", {
-									className: sj,
+									className: cj,
 									children: [_b(Nw, {
-										className: cj,
+										className: lj,
 										onClick: e,
 										children: _b(aO, {
 											desc: "Label: Back",
 											children: "Go Back"
 										})
 									}), _b(Nw, {
-										className: Wn(lj, {
-											[uj]: !l
+										className: Wn(uj, {
+											[dj]: !l
 										}),
 										onClick: n => re(void 0, null, (function*() {
 											s.some(e => a.accessories[e].state === Tu.CLOSET_ONLY) ? t(s) : (yield o(s), e())
@@ -15458,7 +15449,7 @@
 								})]
 							})
 						},
-						fj = ({
+						pj = ({
 							closeModal: e,
 							numOver: t
 						}) => {
@@ -15483,16 +15474,16 @@
 							const s = e => {
 								r(!0), a(e)
 							};
-							return n ? _b(xT, {
-								className: PT.removeClosetItemModalWrapper,
+							return n ? _b(PT, {
+								className: MT.removeClosetItemModalWrapper,
 								closeModal: e,
 								goBackCallback: () => r(!1),
 								itemsToBeRemovedId: i
 							}) : _b(lI, {
 								isOpen: !0,
 								toggleModalIsOpen: e,
-								className: PT.closetModalWrapper,
-								children: _b(dj, {
+								className: MT.closetModalWrapper,
+								children: _b(fj, {
 									closeModal: e,
 									openConfirmRemovalFlow: s,
 									initialRemovalItemIds: i,
@@ -15500,7 +15491,7 @@
 								})
 							})
 						};
-					var pj = {
+					var mj = {
 						closetModalWrapper: "_closetModalWrapper_ohhx7_1",
 						closeModalContentWrapper: "_closeModalContentWrapper_ohhx7_6",
 						closetImageWrapper: "_closetImageWrapper_ohhx7_11",
@@ -15519,7 +15510,7 @@
 						infoTextWrapper: "_infoTextWrapper_ohhx7_104",
 						premiumAlert: "_premiumAlert_ohhx7_114"
 					};
-					const mj = ({
+					const vj = ({
 						gear: e,
 						closeModal: t
 					}) => {
@@ -15550,38 +15541,38 @@
 						return _b(lI, {
 							isOpen: !0,
 							toggleModalIsOpen: t,
-							className: pj.closetModalWrapper,
+							className: mj.closetModalWrapper,
 							children: gb("div", {
-								className: pj.closeModalContentWrapper,
+								className: mj.closeModalContentWrapper,
 								children: [_b("button", {
-									className: pj.closeBtn,
+									className: mj.closeBtn,
 									onClick: t,
 									children: _b("img", {
 										src: uI,
 										alt: "close modal",
-										className: pj.closeBtnImage
+										className: mj.closeBtnImage
 									})
 								}), gb("div", {
-									className: pj.closetImageWrapper,
+									className: mj.closetImageWrapper,
 									children: [_b(bO, {
-										className: pj.closetImage
+										className: mj.closetImage
 									}), ["sparkle1", "sparkle2", "sparkle3", "sparkle4", "sparkle5", "sparkle6"].map(e => _b(CO, {
-										className: pj[e]
+										className: mj[e]
 									}, e))]
 								}), _b("p", {
-									className: pj.secondaryTitle,
+									className: mj.secondaryTitle,
 									children: _b(aO, {
 										desc: "Premium Feature",
 										children: "Premium Feature"
 									})
 								}), _b("h1", {
-									className: pj.title,
+									className: mj.title,
 									children: _b(aO, {
 										desc: "Closet",
 										children: "Closet"
 									})
 								}), _b("div", {
-									className: pj.infoTextWrapper,
+									className: mj.infoTextWrapper,
 									children: _b("p", {
 										children: _b(aO, {
 											desc: "Seasonal avatar gear comes and goes, but Premium subscribers can save up to 50 items to keep as long as they like.",
@@ -15599,17 +15590,17 @@
 											}
 										}))(e.id)), yield r([e])), t(i)
 									})),
-									className: pj.continueBtn,
+									className: mj.continueBtn,
 									children: _b(aO, {
 										desc: "Label: continue back to stash feature",
 										children: "Continue"
 									})
 								}) : _b(pA, {
-									className: pj.continueBtn,
+									className: mj.continueBtn,
 									telemetryPage: "avatar_intro_closet",
 									hideSubtext: !0
 								}), _b("p", {
-									className: pj.premiumAlert,
+									className: mj.premiumAlert,
 									children: _b(aO, {
 										desc: "Label: Only paid Reddit Premium members get a closet.",
 										children: "Only paid Reddit Premium members get a closet"
@@ -15618,7 +15609,7 @@
 							})
 						})
 					};
-					var vj = {
+					var hj = {
 						modalWrapper: "_modalWrapper_onnpn_1",
 						closeBtn: "_closeBtn_onnpn_6",
 						title: "_title_onnpn_22",
@@ -15628,70 +15619,70 @@
 						button: "_button_onnpn_46",
 						helpText: "_helpText_onnpn_49"
 					};
-					const hj = ({
+					const Cj = ({
 						closeModal: e,
 						gear: t
 					}) => {
 						var n, r, i;
 						return gb(lI, {
-							className: vj.modalWrapper,
+							className: hj.modalWrapper,
 							isOpen: !0,
 							toggleModalIsOpen: e,
 							children: [_b("div", {
-								className: vj.header,
+								className: hj.header,
 								children: _b("button", {
-									className: vj.closeBtn,
+									className: hj.closeBtn,
 									onClick: e,
 									children: _b("img", {
 										src: uI,
 										alt: oO("Close Modal"),
-										className: vj.closeBtnImage
+										className: hj.closeBtnImage
 									})
 								})
 							}), _b("div", {
-								className: vj.title,
+								className: hj.title,
 								children: t.id.split("custom_upload_")[1]
 							}), gb("div", {
-								className: vj.validationWrapper,
+								className: hj.validationWrapper,
 								children: [null == (n = t.validations) ? void 0 : n.errors.map((e, n) => gb("div", {
-									className: vj.validation,
+									className: hj.validation,
 									children: [_b("div", {
-										className: vj.icon,
+										className: hj.icon,
 										children: "❗️"
 									}), e]
 								}, `${t.id}-errors-${n}`)), null == (r = t.validations) ? void 0 : r.warnings.map((e, n) => gb("div", {
-									className: vj.validation,
+									className: hj.validation,
 									children: [_b("div", {
-										className: vj.icon,
+										className: hj.icon,
 										children: "✏️"
 									}), e]
 								}, `${t.id}-warnings-${n}`)), null == (i = t.validations) ? void 0 : i.correct.map((e, n) => gb("div", {
-									className: vj.validation,
+									className: hj.validation,
 									children: [_b("div", {
-										className: vj.icon,
+										className: hj.icon,
 										children: "✅"
 									}), e]
 								}, `${t.id}-correct-${n}`))]
 							}), _b(sA, {
-								className: vj.button,
+								className: hj.button,
 								text: oO("Got It!"),
 								onClick: () => re(void 0, null, (function*() {
 									return e()
 								}))
 							}), gb("div", {
-								className: vj.helpText,
+								className: hj.helpText,
 								children: [_b(mO, {
-									className: vj.icon
+									className: hj.icon
 								}), oO("Tip: click this icon to view the gear validations again!")]
 							})]
 						})
 					};
-					var Cj = "_wearingModalWrapper_dkn17_1",
-						yj = "_wearingModal_dkn17_1",
-						_j = "_modalTitle_dkn17_11",
-						gj = "_closeButtonContainer_dkn17_18",
-						bj = "_closeButton_dkn17_18";
-					const Ej = ({
+					var yj = "_wearingModalWrapper_dkn17_1",
+						_j = "_wearingModal_dkn17_1",
+						gj = "_modalTitle_dkn17_11",
+						bj = "_closeButtonContainer_dkn17_18",
+						Ej = "_closeButton_dkn17_18";
+					const Sj = ({
 							closeModal: e
 						}) => {
 							const [t, n] = Object(C.useState)(), {
@@ -15718,16 +15709,16 @@
 							return t ? _b(lI, {
 								isOpen: !0,
 								toggleModalIsOpen: a,
-								className: Cj,
+								className: yj,
 								children: gb("div", {
-									className: yj,
+									className: _j,
 									children: [gb("div", {
-										className: _j,
+										className: gj,
 										children: ["Wearing", _b("div", {
-											className: gj,
+											className: bj,
 											onClick: a,
 											children: _b(cO, {
-												className: bj
+												className: Ej
 											})
 										})]
 									}), _b(gw, {
@@ -15739,7 +15730,7 @@
 								})
 							}) : null
 						},
-						Sj = ({
+						kj = ({
 							children: e
 						}) => {
 							const [t, n] = Object(C.useState)(Jf), r = e => n(te(ee({}, t), {
@@ -15771,88 +15762,89 @@
 										openGearValidationModal: o
 									},
 									children: e
-								}), t.wearingOpen && _b(Ej, {
+								}), t.wearingOpen && _b(Sj, {
 									closeModal: () => r(!1)
-								}), t.fullCloset.open && _b(fj, {
+								}), t.fullCloset.open && _b(pj, {
 									numOver: t.fullCloset.numOver,
 									closeModal: () => i({
 										open: !1,
 										numOver: 0
 									})
-								}), t.closetIntro.gear && _b(mj, {
+								}), t.closetIntro.gear && _b(vj, {
 									gear: t.closetIntro.gear,
 									closeModal: () => n(te(ee({}, t), {
 										closetIntro: {
 											gear: null
 										}
 									}))
-								}), 0 !== t.closetRemovalConfirmation.gearIds.length && _b(xT, {
+								}), 0 !== t.closetRemovalConfirmation.gearIds.length && _b(PT, {
 									closeModal: a,
 									itemsToBeRemovedId: t.closetRemovalConfirmation.gearIds
-								}), t.gearValidation.gear && _b(hj, {
+								}), t.gearValidation.gear && _b(Cj, {
 									closeModal: () => o(null),
 									gear: t.gearValidation.gear
 								})]
 							})
 						};
-					var kj = "_container_1juwy_1",
-						Oj = "_action_1juwy_28",
-						Nj = "_disabled_1juwy_40",
-						wj = "_share_1juwy_47",
-						Aj = "_undo_1juwy_50",
-						Ij = "_redo_1juwy_53",
-						Lj = "_randomize_1juwy_57";
-					var Tj = "_spinner_j5ryv_1",
-						jj = "_container_j5ryv_19",
-						Rj = "_loadingIcon_j5ryv_27",
-						Dj = "_loadingMessage_j5ryv_45";
-					const xj = ({
+					var Oj = "_container_1juwy_1",
+						Nj = "_action_1juwy_28",
+						wj = "_disabled_1juwy_40",
+						Aj = "_share_1juwy_47",
+						Ij = "_undo_1juwy_50",
+						Lj = "_redo_1juwy_53",
+						Tj = "_randomize_1juwy_57";
+					var jj = "_spinner_j5ryv_1",
+						Rj = "_container_j5ryv_19",
+						Dj = "_loadingIcon_j5ryv_27",
+						xj = "_loadingMessage_j5ryv_45";
+					const Pj = ({
 							className: e
 						}) => _b("img", {
-							className: F()(Tj, e),
+							className: F()(jj, e),
 							src: kO
 						}),
-						Pj = ({
+						Mj = ({
 							className: e,
 							loadingMessage: t = "Loading..."
 						}) => gb("div", {
-							className: F()(jj, e),
+							className: F()(Rj, e),
 							children: [_b("img", {
-								className: Rj,
+								className: Dj,
 								src: kO
 							}), t && _b("p", {
-								className: Dj,
+								className: xj,
 								children: _b(aO, {
 									desc: "Loading animation message",
 									children: t
 								})
 							})]
 						});
-					var Mj = "_flyout_1rfd4_1",
-						Fj = "_actionLink_1rfd4_25",
-						Uj = "_active_1rfd4_43",
-						Vj = "_actionIcon_1rfd4_46",
-						Hj = "_actionText_1rfd4_49",
-						Bj = "_copyIcon_1rfd4_55",
-						qj = "_downloadIcon_1rfd4_58",
-						Wj = "_flyoutDescription_1rfd4_78";
-					const Gj = {
+					var Fj = "_flyout_1rfd4_1",
+						Uj = "_actionLink_1rfd4_25",
+						Vj = "_active_1rfd4_43",
+						Hj = "_actionIcon_1rfd4_46",
+						Bj = "_actionText_1rfd4_49",
+						qj = "_copyIcon_1rfd4_55",
+						Wj = "_downloadIcon_1rfd4_58",
+						Gj = "_flyoutDescription_1rfd4_78";
+					const zj = {
 							text: oO("Avatar download complete"),
 							kind: Ud.Success
 						},
-						zj = {
-							text: oO("Avatar download failed. Please try again"),
-							kind: Ud.Error
-						},
 						Yj = {
+							text: oO("Avatar download failed. Please try again"),
+							kind: Ud.Error,
+							duration: 5e3
+						},
+						$j = {
 							text: oO("Avatar link generation failed"),
 							kind: Ud.Error
 						},
-						$j = {
+						Zj = {
 							text: oO("Sorry, NFT avatars can't be shared"),
 							kind: Ud.Error
 						},
-						Zj = ({
+						Kj = ({
 							downloading: e,
 							flyoutRef: t,
 							updateDownloading: n,
@@ -15866,13 +15858,13 @@
 								saveAvatar: d
 							} = Tk();
 							return gb("div", {
-								className: Mj,
+								className: Fj,
 								ref: t,
 								"data-testid": "actions:share:flyout",
 								children: [gb("button", {
 									"data-testid": "actions:share:flyout:share",
-									className: F()(Fj, {
-										[Uj]: i
+									className: F()(Uj, {
+										[Vj]: i
 									}),
 									onClick: () => re(void 0, null, (function*() {
 										if (!e) {
@@ -15881,22 +15873,22 @@
 												accessoryIds: e,
 												styles: t
 											} = c();
-											if (sd(l().wornAccessories)) return o($j), void a(!1);
+											if (sd(l().wornAccessories)) return o(Zj), void a(!1);
 											const n = yield d(e, t, {
 												[Ru.SHARE]: !0
 											});
-											if (!(null == n ? void 0 : n.shareLink)) return o(Yj), void a(!1);
+											if (!(null == n ? void 0 : n.shareLink)) return o($j), void a(!1);
 											np(n.shareLink), o(Wd), a(!1), r()
 										}
 									})),
 									disabled: e || i,
 									children: [_b("div", i ? {
-										className: Vj,
-										children: _b(xj, {})
-									} : {
-										className: F()(Vj, Bj)
-									}), _b("span", {
 										className: Hj,
+										children: _b(Pj, {})
+									} : {
+										className: F()(Hj, qj)
+									}), _b("span", {
+										className: Bj,
 										children: _b(aO, {
 											desc: "Copy a link to your avatar to your computer's clipboard.",
 											children: "Share this Avatar"
@@ -15904,8 +15896,8 @@
 									})]
 								}), gb("button", {
 									"data-testid": "actions:share:flyout:download",
-									className: F()(Fj, {
-										[Uj]: e
+									className: F()(Uj, {
+										[Vj]: e
 									}),
 									onClick: () => re(void 0, null, (function*() {
 										if (!e) {
@@ -15914,24 +15906,24 @@
 												accessoryIds: e,
 												styles: t
 											} = c();
-											(yield u(e, t)) ? (r(), o(Gj)) : o(zj), n(!1)
+											(yield u(e, t)) ? (r(), o(zj)) : o(Yj), n(!1)
 										}
 									})),
 									disabled: e || i,
 									children: [_b("div", e ? {
-										className: Vj,
-										children: _b(xj, {})
-									} : {
-										className: F()(Vj, qj)
-									}), _b("span", {
 										className: Hj,
+										children: _b(Pj, {})
+									} : {
+										className: F()(Hj, Wj)
+									}), _b("span", {
+										className: Bj,
 										children: _b(aO, {
 											desc: e ? "Currently downloading Avatar image file" : "Download Avatar image file",
 											children: e ? "Downloading..." : "Download Avatar"
 										})
 									})]
 								}), _b("div", {
-									className: Wj,
+									className: Gj,
 									"data-testid": "actions:share:flyout:description",
 									children: gb(aO, {
 										desc: "Avatars and avatar visual elements © Reddit.",
@@ -15948,7 +15940,7 @@
 								})]
 							})
 						},
-						Kj = ({
+						Qj = ({
 							className: e,
 							showShareAndDownload: t
 						}) => {
@@ -15978,19 +15970,19 @@
 									o || f(Mb(xb.ENTER_SHARE_AND_DOWNLOAD)), c || s(!o)
 								};
 							return gb("div", {
-								className: F()(kj, e),
+								className: F()(Oj, e),
 								"data-testid": "actions",
 								children: [t && gb(bb, {
 									children: [_b("button", {
 										"data-testid": "actions:share",
-										className: F()(wj, Oj),
+										className: F()(Aj, Nj),
 										onClick: y,
 										ref: u,
 										children: _b(aO, {
 											desc: "Action: Share Avatar Link",
 											children: "Share"
 										})
-									}), o && _b(Zj, {
+									}), o && _b(Kj, {
 										flyoutRef: d,
 										downloading: c,
 										updateDownloading: l,
@@ -15998,8 +15990,8 @@
 									})]
 								}), _b("button", {
 									"data-testid": "actions:redo",
-									className: F()(Ij, Oj, {
-										[Nj]: !m
+									className: F()(Lj, Nj, {
+										[wj]: !m
 									}),
 									onClick: () => {
 										f(Ab("redo")), r()
@@ -16008,8 +16000,8 @@
 									disabled: !m
 								}), _b("button", {
 									"data-testid": "actions:undo",
-									className: F()(Aj, Oj, {
-										[Nj]: !p
+									className: F()(Ij, Nj, {
+										[wj]: !p
 									}),
 									onClick: () => {
 										f(Ab("undo")), i()
@@ -16018,21 +16010,21 @@
 									disabled: !p,
 									children: v
 								}), _b(iA, {
-									className: F()(Lj, Oj),
+									className: F()(Tj, Nj),
 									trackClick: () => f(Ab("random"))
 								})]
 							})
 						};
-					var Qj = "_preview_k5vpe_1",
-						Xj = "_container_k5vpe_15",
-						Jj = "_rendering_k5vpe_18",
-						eR = "_frame_k5vpe_24",
-						tR = "_activeUserAttribution_k5vpe_32",
-						nR = "_saveNavigation_k5vpe_48",
-						rR = "_wearingButton_k5vpe_63",
-						iR = "_wearingCount_k5vpe_82",
-						aR = "_disabled_k5vpe_95";
-					const oR = ({
+					var Xj = "_preview_k5vpe_1",
+						Jj = "_container_k5vpe_15",
+						eR = "_rendering_k5vpe_18",
+						tR = "_frame_k5vpe_24",
+						nR = "_activeUserAttribution_k5vpe_32",
+						rR = "_saveNavigation_k5vpe_48",
+						iR = "_wearingButton_k5vpe_63",
+						aR = "_wearingCount_k5vpe_82",
+						oR = "_disabled_k5vpe_95";
+					const sR = ({
 						className: e,
 						nfts: t
 					}) => {
@@ -16074,19 +16066,19 @@
 							return !1
 						}() || !b && !y(d);
 						return gb("div", {
-							className: Qj,
-							children: [l && _b(Kj, {
+							className: Xj,
+							children: [l && _b(Qj, {
 								showShareAndDownload: !g && !b
 							}), gb("div", {
 								ref: o,
-								className: F()(Xj, e),
+								className: F()(Jj, e),
 								"data-testid": "preview",
 								children: [_b(iO, {
-									className: Jj,
+									className: eR,
 									assets: i,
-									frameClassName: eR
+									frameClassName: tR
 								}), f && _b("p", {
-									className: tR,
+									className: nR,
 									children: gb(aO, {
 										desc: "Label: Shared avatar creator attribution",
 										children: ["By ", _b(aO, {
@@ -16096,10 +16088,10 @@
 									})
 								})]
 							}), l && gb("nav", {
-								className: nR,
+								className: rR,
 								children: [gb("button", {
-									className: F()(rR, {
-										[aR]: !m.length
+									className: F()(iR, {
+										[oR]: !m.length
 									}),
 									onClick: () => {
 										m.length && (r({
@@ -16109,10 +16101,10 @@
 										}), n(!0))
 									},
 									children: [_b("span", {
-										className: iR,
+										className: aR,
 										children: m.length
 									}), "Wearing"]
-								}), g ? _b(jR, {
+								}), g ? _b(RR, {
 									nft: g
 								}) : E ? _b(pA, {}) : _b(uA, {
 									disabledReason: b ? cA.UPLOADS_EQUIPPED : null
@@ -16120,7 +16112,7 @@
 							})]
 						})
 					};
-					const sR = [{
+					const cR = [{
 						heading: oO("Non-fungible and highly collectable"),
 						description: oO("We created a set of unique Reddit Avatars. Only one copy of each exists. And the only proven owner can use it on Reddit."),
 						icon: "https://www.redditstatic.com/avatar-assets/v1/nft-sketch-avatar.svg"
@@ -16137,26 +16129,26 @@
 						description: oO("Access CryptoSnoos through the NFT section of Reddit’s avatar builder, where you can see what CryptoSnoos are going for these days and get in on the action."),
 						icon: "https://www.redditstatic.com/avatar-assets/v1/nft-sketch-builder.svg"
 					}];
-					var cR, lR, uR = "_modalWrapper_qmqik_1",
-						dR = "_contentWrapper_qmqik_6",
-						fR = "_mainContent_qmqik_9",
-						pR = "_isLoading_qmqik_12",
-						mR = "_loadingOverlay_qmqik_22",
-						vR = "_infoRow_qmqik_30",
-						hR = "_icon_qmqik_35",
-						CR = "_textWrapper_qmqik_45",
-						yR = "_header_qmqik_61",
-						_R = "_closeBtn_qmqik_75",
-						gR = "_closeBtnIcon_qmqik_81",
-						bR = "_connectBtn_qmqik_84",
-						ER = "_connectCoinbaseBtn_qmqik_95",
-						SR = "_actions_qmqik_101",
-						kR = "_error_qmqik_105",
-						OR = "_errorLabel_qmqik_112",
-						NR = "_errorText_qmqik_116",
-						wR = "_disclaimer_qmqik_120";
-					(lR = cR || (cR = {}))[lR.Loading = 0] = "Loading", lR[lR.Supported = 1] = "Supported", lR[lR.Unsupported = 2] = "Unsupported";
-					const AR = ({
+					var lR, uR, dR = "_modalWrapper_qmqik_1",
+						fR = "_contentWrapper_qmqik_6",
+						pR = "_mainContent_qmqik_9",
+						mR = "_isLoading_qmqik_12",
+						vR = "_loadingOverlay_qmqik_22",
+						hR = "_infoRow_qmqik_30",
+						CR = "_icon_qmqik_35",
+						yR = "_textWrapper_qmqik_45",
+						_R = "_header_qmqik_61",
+						gR = "_closeBtn_qmqik_75",
+						bR = "_closeBtnIcon_qmqik_81",
+						ER = "_connectBtn_qmqik_84",
+						SR = "_connectCoinbaseBtn_qmqik_95",
+						kR = "_actions_qmqik_101",
+						OR = "_error_qmqik_105",
+						NR = "_errorLabel_qmqik_112",
+						wR = "_errorText_qmqik_116",
+						AR = "_disclaimer_qmqik_120";
+					(uR = lR || (lR = {}))[uR.Loading = 0] = "Loading", uR[uR.Supported = 1] = "Supported", uR[uR.Unsupported = 2] = "Unsupported";
+					const IR = ({
 						isOpen: e,
 						toggleModalIsOpen: t,
 						onConnected: n,
@@ -16190,40 +16182,40 @@
 						return _b(lI, {
 							isOpen: e,
 							toggleModalIsOpen: t,
-							className: uR,
+							className: dR,
 							children: gb("div", {
-								className: dR,
-								children: [i && _b(Pj, {
-									className: mR,
+								className: fR,
+								children: [i && _b(Mj, {
+									className: vR,
 									loadingMessage: null
 								}), gb("div", {
-									className: i ? pR : "",
+									className: i ? mR : "",
 									children: [gb("div", {
-										className: yR,
+										className: _R,
 										children: [_b("h1", {
 											children: _b(aO, {
 												desc: "Unique Reddit Avatars",
 												children: "Connect Your Crypto Wallet..."
 											})
 										}), _b("button", {
-											className: _R,
+											className: gR,
 											onClick: r,
 											children: _b(cO, {
-												className: gR
+												className: bR
 											})
 										})]
 									}), gb("div", {
-										className: fR,
-										children: [sR.map((e, t) => gb("div", {
-											className: vR,
+										className: pR,
+										children: [cR.map((e, t) => gb("div", {
+											className: hR,
 											children: [_b("div", {
-												className: hR,
+												className: CR,
 												children: _b("img", {
 													src: e.icon,
 													alt: oO("nft sketch")
 												})
 											}), gb("div", {
-												className: CR,
+												className: yR,
 												children: [_b("h2", {
 													children: e.heading
 												}), _b("p", {
@@ -16231,23 +16223,23 @@
 												})]
 											})]
 										}, t)), o && gb("div", {
-											className: kR,
+											className: OR,
 											children: [_b("strong", {
-												className: OR,
+												className: NR,
 												children: "Oh no!"
 											}), _b("p", {
-												className: NR,
+												className: wR,
 												children: o
 											})]
 										})]
 									}), gb("nav", {
-										className: SR,
+										className: kR,
 										children: [0 === c && _b(aO, {
 											desc: "Label: Please Wait...",
 											children: "Please wait..."
 										}), 1 === c && u.map((e, t) => _b(Nw, {
 											onClick: t => f(e, t),
-											className: F()(bR, "coinbase" === e ? ER : null),
+											className: F()(ER, "coinbase" === e ? SR : null),
 											children: gb(aO, {
 												desc: "Label: Connect to Wallet",
 												children: ["Connect to", " ", "coinbase" === e ? "Coinbase" : "Metamask"]
@@ -16257,16 +16249,16 @@
 											children: "Please setup a metamask wallet to continue..."
 										})]
 									}), _b("div", {
-										className: wR,
+										className: AR,
 										children: "You acknowledge that Reddit does not own, control, and is not affiliated with MetaMask, and Reddit expressly disclaims any responsibility or liability related to your access to or use of MetaMask. Your use of any MetaMask services will be governed by any terms of service and policies set forth by MetaMask.”"
 									})]
 								})]
 							})
 						})
 					};
-					var IR, LR, TR = "_ownershipText_f2ll1_1";
-					(LR = IR || (IR = {}))[LR.InAuction = 0] = "InAuction", LR[LR.Owned = 1] = "Owned", LR[LR.NotOwned = 2] = "NotOwned", LR[LR.InvalidNetwork = 3] = "InvalidNetwork", LR[LR.NotConnected = 4] = "NotConnected";
-					const jR = ({
+					var LR, TR, jR = "_ownershipText_f2ll1_1";
+					(TR = LR || (LR = {}))[TR.InAuction = 0] = "InAuction", TR[TR.Owned = 1] = "Owned", TR[TR.NotOwned = 2] = "NotOwned", TR[TR.InvalidNetwork = 3] = "InvalidNetwork", TR[TR.NotConnected = 4] = "NotConnected";
+					const RR = ({
 						nft: e
 					}) => {
 						const t = Object(p.a)($t),
@@ -16328,7 +16320,7 @@
 						return gb(bb, {
 							children: [0 === c && gb(bb, {
 								children: [_b("p", {
-									className: TR,
+									className: jR,
 									children: "This NFT is currently in auction"
 								}), _b(sA, {
 									text: y,
@@ -16336,30 +16328,30 @@
 								})]
 							}), 1 === c && gb(bb, {
 								children: [_b("p", {
-									className: TR,
+									className: jR,
 									children: "You own this NFT!"
 								}), _b(sA, {
 									onClick: h
 								})]
 							}), 3 === c && _b(bb, {
 								children: gb("p", {
-									className: TR,
+									className: jR,
 									children: ["Please connect to the", " ", "mainnet" === e.network ? "Mainnet" : "Rinkeby", " network to save this NFT"]
 								})
 							}), 2 === c && _b(bb, {
 								children: _b("p", {
-									className: TR,
+									className: jR,
 									children: "You do not own this NFT."
 								})
 							}), 4 === c && gb(bb, {
 								children: [_b("p", {
-									className: TR,
+									className: jR,
 									children: "Connect your crypto wallet to use this Avatar"
 								}), _b(sA, {
 									text: _,
 									onClick: d
 								})]
-							}), o && _b(AR, {
+							}), o && _b(IR, {
 								toggleModalIsOpen: () => s(!1),
 								isOpen: o,
 								onConnected: m,
@@ -16367,9 +16359,9 @@
 							})]
 						})
 					};
-					const RR = e => `/snoovatars/${e}${encodeURIComponent(":byId")}`,
-						DR = e => `/accounts/${e}/snoovatars/active`,
-						xR = c.a`
+					const DR = e => `/snoovatars/${e}${encodeURIComponent(":byId")}`,
+						xR = e => `/accounts/${e}/snoovatars/active`,
+						PR = c.a`
   query RandomAvatarFromRest($avatarId: string) {
     randomAvatar(avatarId: "random")
       @rest(type: "RandomAvatar", path: "/snoovatars/random${encodeURIComponent(":byId")}") {
@@ -16378,7 +16370,7 @@
     }
   }
 `,
-						PR = c.a`
+						MR = c.a`
   query SharedIdAvatarFromRest($path: string) {
     sharedAvatar @rest(type: "SharedAvatar", path: $path) {
       accountId
@@ -16390,7 +16382,7 @@
     }
   }
 `,
-						MR = c.a`
+						FR = c.a`
   query SharedUserAvatarFromRest($path: string) {
     sharedAvatar @rest(type: "SharedAvatar", path: $path) {
       accountId
@@ -16402,7 +16394,7 @@
     }
   }
 `,
-						FR = (e, t, n) => ({
+						UR = (e, t, n) => ({
 							accountId: "",
 							id: "-1",
 							imageUrl: "",
@@ -16410,7 +16402,7 @@
 							styles: n,
 							missingAccessories: []
 						}),
-						UR = () => {
+						VR = () => {
 							const e = Object(s.a)(),
 								{
 									catalog: {
@@ -16430,7 +16422,7 @@
 									fetchPolicy: "no-cache"
 								}).then(e => {
 									const r = e.data.randomAvatar;
-									return e.data.randomAvatar ? FR(r.accessoryIds, t, n().styles) : e.data.sharedAvatar ? ob(e.data.sharedAvatar, !0) : null
+									return e.data.randomAvatar ? UR(r.accessoryIds, t, n().styles) : e.data.sharedAvatar ? ob(e.data.sharedAvatar, !0) : null
 								});
 							return {
 								getSharedAvatarById: e => "random" === e ? r(ef.USE_GQL_CATALOG) ? (() => re(void 0, null, (function*() {
@@ -16440,20 +16432,20 @@
 											skipRender: !0
 										}
 									});
-									return (null == (a = null == (r = null == (e = o.data) ? void 0 : e.createRandomAvatar) ? void 0 : r.accessoryIds) ? void 0 : a.length) ? FR(o.data.createRandomAvatar.accessoryIds, t, n().styles) : null
-								})))() : a(xR, {}) : a(PR, {
-									path: RR(e)
-								}),
-								getSharedAvatarByUser: e => a(MR, {
+									return (null == (a = null == (r = null == (e = o.data) ? void 0 : e.createRandomAvatar) ? void 0 : r.accessoryIds) ? void 0 : a.length) ? UR(o.data.createRandomAvatar.accessoryIds, t, n().styles) : null
+								})))() : a(PR, {}) : a(MR, {
 									path: DR(e)
+								}),
+								getSharedAvatarByUser: e => a(FR, {
+									path: xR(e)
 								})
 							}
 						};
-					var VR = "_buttonBar_wfkk8_1",
-						HR = "_legalText_wfkk8_17",
-						BR = "_tryItOnButton_wfkk8_33",
-						qR = "_tryItOnButtonSecondary_wfkk8_51";
-					const WR = ({
+					var HR = "_buttonBar_wfkk8_1",
+						BR = "_legalText_wfkk8_17",
+						qR = "_tryItOnButton_wfkk8_33",
+						WR = "_tryItOnButtonSecondary_wfkk8_51";
+					const GR = ({
 						username: e,
 						featureType: t,
 						sharedAvatar: n,
@@ -16465,7 +16457,7 @@
 							s = Hk(),
 							{
 								getSharedAvatarById: c
-							} = UR(),
+							} = VR(),
 							{
 								setAvatar: l
 							} = Pk(),
@@ -16536,12 +16528,12 @@
 								}
 							}(t, e);
 						return gb("div", {
-							className: VR,
+							className: HR,
 							children: [gb("div", {
 								children: [_b("h2", {
 									children: m
 								}), gb("p", {
-									className: HR,
+									className: BR,
 									children: [_b(aO, {
 										desc: "Legal Text: Avatars are copyrighted",
 										children: "Avatars and avatar visual elements © Reddit."
@@ -16557,18 +16549,18 @@
 								})]
 							}), gb("div", {
 								children: [_b("button", {
-									className: F()(BR, qR),
+									className: F()(qR, WR),
 									onClick: p,
 									children: h
 								}), _b("button", {
-									className: F()(BR),
+									className: F()(qR),
 									onClick: f,
 									children: v
 								})]
 							})]
 						})
 					};
-					var GR = {
+					var zR = {
 						tryItOnWrapper: "_tryItOnWrapper_k9m53_1",
 						previewContainer: "_previewContainer_k9m53_9",
 						closeBtn: "_closeBtn_k9m53_17",
@@ -16580,11 +16572,11 @@
 							super(...arguments), this.name = "AvatarLookupError"
 						}
 					}
-					const zR = () => {
+					const YR = () => {
 							const {
 								getSharedAvatarById: e,
 								getSharedAvatarByUser: t
-							} = UR(), {
+							} = VR(), {
 								avatarId: n,
 								username: r,
 								isShareLink: i,
@@ -16617,7 +16609,7 @@
 								throw new AvatarLookupError
 							}
 						},
-						YR = ({
+						$R = ({
 							onContinue: e
 						}) => {
 							const {
@@ -16625,7 +16617,7 @@
 							} = rO(), {
 								username: n,
 								featureType: r
-							} = Ld(), [i, a] = Object(C.useState)(null), o = zR(), s = Yd(), c = kb();
+							} = Ld(), [i, a] = Object(C.useState)(null), o = YR(), s = Yd(), c = kb();
 							Object(C.useEffect)(() => {
 								o().then(e => {
 									a(e), c(Db("try_this_look", e.accountId))
@@ -16640,19 +16632,19 @@
 									fill: n
 								}]) => Qd(e, t, n))
 							}, [l, i]), i ? gb("div", {
-								className: GR.tryItOnWrapper,
+								className: zR.tryItOnWrapper,
 								children: [gb("div", {
-									className: GR.previewContainer,
+									className: zR.previewContainer,
 									children: [_b("button", {
-										className: GR.closeBtn,
+										className: zR.closeBtn,
 										onClick: e,
 										children: _b("img", {
 											src: uI,
 											alt: Fd("Close Icon"),
-											className: GR.closeBtnImage
+											className: zR.closeBtnImage
 										})
 									}), _b("div", {
-										className: GR.imagePreview,
+										className: zR.imagePreview,
 										ref: l,
 										children: _b(iO, {
 											assets: pr([...i.accessories, ...i.missingAccessories].map(e => e.assets))
@@ -16660,7 +16652,7 @@
 									}), r === wd.SHARE && _b("a", {
 										href: "https://www.reddit.com/u/" + n,
 										target: "_blank",
-										className: GR.creatorAttribution,
+										className: zR.creatorAttribution,
 										children: gb(aO, {
 											desc: "Label: Shared avatar creator attribution",
 											children: ["By ", _b(aO, {
@@ -16669,17 +16661,17 @@
 											})]
 										})
 									})]
-								}), _b(WR, {
+								}), _b(GR, {
 									username: n,
 									featureType: r,
 									onContinue: e,
 									sharedAvatar: i,
 									onRandomize: a
 								})]
-							}) : _b(Pj, {})
+							}) : _b(Mj, {})
 						};
-					var $R = "_wrapper_1q9i0_7";
-					const ZR = ({
+					var ZR = "_wrapper_1q9i0_7";
+					const KR = ({
 						navState: e
 					}) => {
 						const t = Object(p.a)(xk),
@@ -16698,7 +16690,7 @@
 								isShareLink: u,
 								featureType: d
 							} = Ld(),
-							f = zR(),
+							f = YR(),
 							m = d === wd.AVATAR_QUICK_CREATE;
 						return Object(C.useEffect)(() => {
 							if (!t) {
@@ -16727,59 +16719,59 @@
 							}).catch(e => {
 								i && console.error(e), c(Hd)
 							}).finally(() => r(!0))
-						}, [u, m, o]), (u || m) && (null == o ? void 0 : o.snoovatar) && !n ? _b(YR, {
+						}, [u, m, o]), (u || m) && (null == o ? void 0 : o.snoovatar) && !n ? _b($R, {
 							onContinue: () => r(!0)
 						}) : _b("div", {
-							className: $R,
+							className: ZR,
 							"data-testid": "app",
-							children: gb(Sj, {
-								children: [_b(NT, {
+							children: gb(kj, {
+								children: [_b(wT, {
 									navState: e
-								}), _b(oR, {
+								}), _b(sR, {
 									nfts: a.nfts
 								})]
 							})
 						})
 					};
-					var KR = "_container_jpo6c_6";
-					const QR = ({
+					var QR = "_container_jpo6c_6";
+					const XR = ({
 						onClick: e
 					}) => _b("div", {
-						className: KR,
+						className: QR,
 						onClick: e
 					});
-					var XR = "_toastContainer_vc1og_9",
-						JR = "_errorToastContainer_vc1og_24",
-						eD = "_infoToastContainer_vc1og_27",
-						tD = "_colorBar_vc1og_30",
-						nD = "_dismissIcon_vc1og_44",
-						rD = "_toastContent_vc1og_56",
-						iD = "_anchorLink_vc1og_63",
-						aD = "_text_vc1og_70",
-						oD = "_previewImageContainer_vc1og_74",
-						sD = "_previewImageUrl_vc1og_80";
-					const cD = ({
+					var JR = "_toastContainer_vc1og_9",
+						eD = "_errorToastContainer_vc1og_24",
+						tD = "_infoToastContainer_vc1og_27",
+						nD = "_colorBar_vc1og_30",
+						rD = "_dismissIcon_vc1og_44",
+						iD = "_toastContent_vc1og_56",
+						aD = "_anchorLink_vc1og_63",
+						oD = "_text_vc1og_70",
+						sD = "_previewImageContainer_vc1og_74",
+						cD = "_previewImageUrl_vc1og_80";
+					const lD = ({
 							toast: e,
 							onDismiss: t
 						}) => gb("div", {
 							"data-testid": "toast",
-							className: F()(XR, {
-								[JR]: e.kind === Ud.Error,
-								[eD]: e.kind === Ud.Info
+							className: F()(JR, {
+								[eD]: e.kind === Ud.Error,
+								[tD]: e.kind === Ud.Info
 							}),
 							children: [_b("div", {
-								className: tD,
+								className: nD,
 								onClick: t,
 								children: _b(cO, {
-									className: nD
+									className: rD
 								})
 							}), gb("div", {
-								className: rD,
-								children: [e.kind === Ud.SuccessProfileSave && _b(lD, {}), _b("p", {
-									className: aD,
+								className: iD,
+								children: [e.kind === Ud.SuccessProfileSave && _b(uD, {}), _b("p", {
+									className: oD,
 									children: e.text
 								}), e.kind === Ud.SuccessProfileSave && _b("a", {
-									className: iD,
+									className: aD,
 									href: "https://www.reddit.com/u/me",
 									target: "_top",
 									rel: "noopener noreferrer",
@@ -16790,22 +16782,22 @@
 								})]
 							})]
 						}),
-						lD = () => {
+						uD = () => {
 							var e;
 							const {
 								user: t
 							} = mn(), n = null == (e = null == t ? void 0 : t.snoovatar) ? void 0 : e.imageUrl;
 							return _b("span", {
-								className: oD,
+								className: sD,
 								children: _b("img", {
-									className: sD,
+									className: cD,
 									src: n,
 									alt: oO("Your saved avatar")
 								})
 							})
 						};
-					var uD = "_toastWrapper_v02m9_1";
-					const dD = ({
+					var dD = "_toastWrapper_v02m9_1";
+					const fD = ({
 							children: e
 						}) => {
 							const [t, n] = Object(C.useState)([]), r = e => {
@@ -16822,36 +16814,35 @@
 									},
 									children: e
 								}), _b("div", {
-									className: uD,
-									children: t.map(e => _b(cD, {
+									className: dD,
+									children: t.map(e => _b(lD, {
 										toast: e,
 										onDismiss: () => r(e.id)
 									}, e.id))
 								})]
 							})
 						},
-						fD = ({
+						pD = ({
 							accessToken: e,
 							authHeaders: t,
-							children: n,
-							isMocked: r
+							children: n
 						}) => {
 							const {
-								GRAPHQL_URL: i
-							} = rO(), a = kb();
+								GRAPHQL_URL: r
+							} = rO(), i = kb();
 							return _b(z.a, {
 								value: {
 									api: {
-										accessToken: r ? "accessToken" : e
+										accessToken: e
 									},
 									gql: {
-										host: r ? "12345" : i,
+										host: r,
 										fetchOptions: {
 											headers: null == t ? void 0 : t.headers
 										}
 									},
 									sendEvent: e => {
-										a(e)
+										i(e)
 									},
 									nightModeActive: () => !1,
 									fbt: {
@@ -16870,7 +16861,7 @@
 								children: n
 							})
 						};
-					const pD = ({
+					const mD = ({
 							authHeaders: e,
 							children: t,
 							config: n,
@@ -16880,7 +16871,7 @@
 							className: "avatar-wrapper",
 							children: _b(nO, {
 								config: n,
-								children: _b(mD, {
+								children: _b(vD, {
 									authHeaders: e,
 									sendEvent: r,
 									accessToken: i,
@@ -16888,7 +16879,7 @@
 								})
 							})
 						}) : null,
-						mD = ({
+						vD = ({
 							authHeaders: e,
 							children: t,
 							sendEvent: n,
@@ -16991,10 +16982,10 @@
 								a = Object(C.useMemo)(() => i(e), []);
 							return _b(h.a, {
 								client: a,
-								children: !Object(I.isNil)(a.extract()) && _b(dD, {
-									children: _b(vD, {
+								children: !Object(I.isNil)(a.extract()) && _b(fD, {
+									children: _b(hD, {
 										sendEvent: n,
-										children: _b(fD, {
+										children: _b(pD, {
 											accessToken: r,
 											authHeaders: e,
 											children: gb(bb, {
@@ -17007,7 +16998,7 @@
 								})
 							})
 						},
-						vD = ({
+						hD = ({
 							children: e,
 							sendEvent: t
 						}) => {
@@ -17025,48 +17016,48 @@
 									text: Fd("Please log in to continue"),
 									kind: Ud.Error
 								});
-							return n === Gk.Loading ? _b(Pj, {}) : n === Gk.Failed ? _b(QR, {
+							return n === Gk.Loading ? _b(Mj, {}) : n === Gk.Failed ? _b(XR, {
 								onClick: i
 							}) : _b(Sb, {
 								sendEvent: t,
 								children: e
 							})
 						};
-					var hD = "_avatarWrapper_jjhtb_1",
-						CD = "_backgroundImage_jjhtb_13",
-						yD = "_logoutWrapper_jjhtb_17",
-						_D = "_title_jjhtb_30",
-						gD = "_subText_jjhtb_36",
-						bD = "_buttonBar_jjhtb_42";
-					const ED = ({
+					var CD = "_avatarWrapper_jjhtb_1",
+						yD = "_backgroundImage_jjhtb_13",
+						_D = "_logoutWrapper_jjhtb_17",
+						gD = "_title_jjhtb_30",
+						bD = "_subText_jjhtb_36",
+						ED = "_buttonBar_jjhtb_42";
+					const SD = ({
 						fancyBackground: e,
 						goBack: t,
 						openLogin: n
 					}) => gb("div", {
-						className: hD,
+						className: CD,
 						"data-testid": "loggedOutScreen",
 						children: [e && _b("img", {
-							className: CD,
+							className: yD,
 							src: "https://www.redditstatic.com/avatar-assets/v1/communityspaces.png"
 						}), gb("div", {
-							className: yD,
+							className: _D,
 							children: [_b("img", {
 								src: "https://www.redditstatic.com/avatar-assets/v1/piratesnoo.png",
 								alt: Fd("Pirate Avatar")
 							}), _b("h1", {
-								className: _D,
+								className: gD,
 								children: _b(aO, {
 									desc: "Header: Log in to access the avatar builder",
 									children: "Log in?"
 								})
 							}), _b("p", {
-								className: gD,
+								className: bD,
 								children: _b(aO, {
 									desc: "Help text: an account is required to access the avatar builder",
 									children: "Get access to the avatar builder when you login or create an account."
 								})
 							}), gb("div", {
-								className: bD,
+								className: ED,
 								children: [t && _b(sA, {
 									onClick: () => re(void 0, null, (function*() {
 										return t()
@@ -29088,11 +29079,11 @@
 				return `${t.getMonth()+1}/${t.getDate()}/${t.getFullYear()}`
 			}
 			const Rd = 10;
-			var Dd = "_container_3w2ay_42",
-				xd = "_range_3w2ay_48",
-				Pd = "_rangeStart_3w2ay_54",
-				Md = "_rangeEnd_3w2ay_55",
-				Fd = "_title_3w2ay_78";
+			var Dd = "_container_f4yhv_42",
+				xd = "_range_f4yhv_48",
+				Pd = "_rangeStart_f4yhv_54",
+				Md = "_rangeEnd_f4yhv_55",
+				Fd = "_title_f4yhv_78";
 			const Ud = ({
 				title: e,
 				rarity: t,
@@ -29328,33 +29319,33 @@
 					"data-testid": s
 				}), o)
 			};
-			var tf = "_container_6405o_42",
-				nf = "_carousel_6405o_45",
-				rf = "_productDetails_6405o_53",
-				af = "_isNightMode_6405o_65",
-				of = "_header_6405o_69",
-				sf = "_cardName_6405o_73",
-				cf = "_cardAuthor_6405o_79",
-				lf = "_cardAuthorClickable_6405o_93",
-				uf = "_redditLogo_6405o_99",
-				df = "_scrollContainer_6405o_104",
-				ff = "_artistImg_6405o_125",
-				pf = "_artistName_6405o_132",
-				mf = "_itemDescription_6405o_185",
-				vf = "_itemBenefits_6405o_188",
-				hf = "_heading_6405o_191",
-				Cf = "_utilityTable_6405o_203",
-				yf = "_featureCell_6405o_213",
-				_f = "_featureImage_6405o_220",
-				gf = "_featureCopy_6405o_224",
-				bf = "_blockchainDetails_6405o_236",
-				Ef = "_resaleText_6405o_239",
-				Sf = "_platformFeesLink_6405o_243",
-				kf = "_nftDetailsHeading_6405o_247",
-				Of = "_mintStatus_6405o_260",
-				Nf = "_nftDetailPills_6405o_272",
-				wf = "_pill_6405o_272",
-				Af = "_pillImage_6405o_291";
+			var tf = "_container_ztn11_42",
+				nf = "_carousel_ztn11_45",
+				rf = "_productDetails_ztn11_53",
+				af = "_isNightMode_ztn11_65",
+				of = "_header_ztn11_69",
+				sf = "_cardName_ztn11_73",
+				cf = "_cardAuthor_ztn11_79",
+				lf = "_cardAuthorClickable_ztn11_93",
+				uf = "_redditLogo_ztn11_99",
+				df = "_scrollContainer_ztn11_104",
+				ff = "_artistImg_ztn11_125",
+				pf = "_artistName_ztn11_132",
+				mf = "_itemDescription_ztn11_185",
+				vf = "_itemBenefits_ztn11_188",
+				hf = "_heading_ztn11_191",
+				Cf = "_utilityTable_ztn11_203",
+				yf = "_featureCell_ztn11_213",
+				_f = "_featureImage_ztn11_220",
+				gf = "_featureCopy_ztn11_224",
+				bf = "_blockchainDetails_ztn11_236",
+				Ef = "_resaleText_ztn11_239",
+				Sf = "_platformFeesLink_ztn11_243",
+				kf = "_nftDetailsHeading_ztn11_247",
+				Of = "_mintStatus_ztn11_260",
+				Nf = "_nftDetailPills_ztn11_272",
+				wf = "_pill_ztn11_272",
+				Af = "_pillImage_ztn11_291";
 			const If = ({
 				disabled: e,
 				blockchainExplorerUrl: t,
@@ -29866,24 +29857,24 @@
 					maximumFractionDigits: 2
 				});
 			var Qf = {
-				container: "_container_121me_42",
-				secureWrapper: "_secureWrapper_121me_45",
-				loadingContainer: "_loadingContainer_121me_48",
-				loadingContent: "_loadingContent_121me_58",
-				isNightMode: "_isNightMode_121me_70",
-				carousel: "_carousel_121me_73",
-				panelContentContainer: "_panelContentContainer_121me_81",
-				textWrapper: "_textWrapper_121me_88",
-				title: "_title_121me_91",
-				subText: "_subText_121me_97",
-				buttonsContainer: "_buttonsContainer_121me_110",
-				checkoutButtonsContainer: "_checkoutButtonsContainer_121me_121",
-				priceDetails: "_priceDetails_121me_124",
-				editionLabel: "_editionLabel_121me_129",
-				price: "_price_121me_124",
-				soldOutPrice: "_soldOutPrice_121me_139",
-				ctaButton: "_ctaButton_121me_142",
-				legalText: "_legalText_121me_151"
+				container: "_container_hemua_42",
+				secureWrapper: "_secureWrapper_hemua_45",
+				loadingContainer: "_loadingContainer_hemua_48",
+				loadingContent: "_loadingContent_hemua_58",
+				isNightMode: "_isNightMode_hemua_70",
+				carousel: "_carousel_hemua_73",
+				panelContentContainer: "_panelContentContainer_hemua_81",
+				textWrapper: "_textWrapper_hemua_88",
+				title: "_title_hemua_91",
+				subText: "_subText_hemua_97",
+				buttonsContainer: "_buttonsContainer_hemua_110",
+				checkoutButtonsContainer: "_checkoutButtonsContainer_hemua_121",
+				priceDetails: "_priceDetails_hemua_124",
+				editionLabel: "_editionLabel_hemua_129",
+				price: "_price_hemua_124",
+				soldOutPrice: "_soldOutPrice_hemua_139",
+				ctaButton: "_ctaButton_hemua_142",
+				legalText: "_legalText_hemua_151"
 			};
 			const Xf = ({
 				price: e,
@@ -30247,7 +30238,7 @@
 						className: Qf.loadingContainer
 					}, i.a.createElement("div", {
 						className: Qf.loadingContent
-					}, i.a.createElement(s.g, null))) : b ? i.a.createElement(Le, {
+					}, i.a.createElement(s.h, null))) : b ? i.a.createElement(Le, {
 						className: Ce(Qf.container, {
 							[Qf.isNightMode]: N
 						}),
@@ -30302,11 +30293,11 @@
 							onPaymentError: e => {
 								h(e)
 							}
-						}), v && i.a.createElement(s.h, {
+						}), v && i.a.createElement(s.i, {
 							kind: "error",
 							duration: 5e3,
 							onClose: () => h("")
-						}, v), e.status === ae.SOLD_OUT && i.a.createElement(s.h, {
+						}, v), e.status === ae.SOLD_OUT && i.a.createElement(s.i, {
 							kind: "error",
 							duration: 5e3
 						}, i.a.createElement(be, {
@@ -30352,11 +30343,11 @@
 								walletAddress: e
 							})
 						}))(t, e)
-					}), v && i.a.createElement(s.h, {
+					}), v && i.a.createElement(s.i, {
 						kind: "error",
 						duration: 5e3,
 						onClose: () => h("")
-					}, v)) : i.a.createElement(s.h, {
+					}, v)) : i.a.createElement(s.i, {
 						kind: "error",
 						duration: 5e3
 					}, i.a.createElement(be, {
@@ -36893,4 +36884,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/5.9f1372ee6ebf0cb545d1.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/5.e687e68168b4b1088050.js.map

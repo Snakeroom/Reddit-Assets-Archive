@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/runtime~Reddit.94a546cfa48c809ee507.js
-// Retrieved at 6/27/2022, 9:50:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/runtime~Reddit.45a405df29d2076ab5d1.js
+// Retrieved at 6/27/2022, 10:20:05 AM by Reddit Dataminer v1.0.0
 ! function(e) {
 	function o(o) {
 		for (var a, n, r = o[0], s = o[1], c = o[2], l = 0, P = []; l < r.length; l++) n = r[l], Object.prototype.hasOwnProperty.call(d, n) && d[n] && P.push(d[n][0]), d[n] = 0;
@@ -652,9 +652,9 @@
 					2: "31d6cfe0d16ae931b73c",
 					3: "31d6cfe0d16ae931b73c",
 					4: "31d6cfe0d16ae931b73c",
-					5: "7fce8d057ee1a77a2877",
+					5: "f36ffc2508697abba19c",
 					6: "3cd9ea352ced0dfcce92",
-					7: "c8456d7fc575f5e1b0db",
+					7: "3b8238663977de3f7082",
 					8: "c7d1b952339465f9268d",
 					9: "31d6cfe0d16ae931b73c",
 					"vendors~MarketplaceClaimModal~MarketplaceInFeedUnit": "31d6cfe0d16ae931b73c",
@@ -1350,16 +1350,16 @@
 						SocialLinkEditor: "SocialLinkEditor"
 					} [e] || e) + "." + {
 						0: "470add20b6d8f117bf04",
-						1: "d937af862f1e116cc927",
+						1: "9b8dea51f1306d4b6b03",
 						2: "533258fec9bdd386d2e4",
 						3: "55b68fcc06f8f4839817",
-						4: "184245271cd2c278c3f0",
-						5: "9f1372ee6ebf0cb545d1",
+						4: "3488778c53e6c30fc479",
+						5: "e687e68168b4b1088050",
 						6: "896e098b5ad5baf77de7",
-						7: "0a5dc0de80b860a15c28",
+						7: "5517bcc5e73a662f4d3b",
 						8: "19e307bc056054a3e3e5",
 						9: "acf0ee91abfc9bc18704",
-						"vendors~MarketplaceClaimModal~MarketplaceInFeedUnit": "33548119228aef7e6189",
+						"vendors~MarketplaceClaimModal~MarketplaceInFeedUnit": "a75457d387662422e6dc",
 						MarketplaceClaimModal: "ca152923918803bf2f9a",
 						GovernanceTransferPointsModal: "1aeb88be054fd5a57d47",
 						"reddit-components-Governance-TransactionModals-BurnPointsModal~reddit-components-Governance-Transact~8f11de67": "033ade280a36a45f6c62",
@@ -1534,7 +1534,7 @@
 						"vendors~xml2js": "8c40daee6c2bccb14296",
 						"reddit-components-Governance-TransactionModals-TransferTransactionModal": "81732a557b570f4e801f",
 						SignupUpsell: "2c6619e7c2b9dc2b882d",
-						NftProfileUnit: "befec8132e7781f60355",
+						NftProfileUnit: "80cdf55ba5bf42c5cc98",
 						AuthorHovercard: "c6440190405591cc47ea",
 						AwardTooltip: "da39de3902619d4e78c3",
 						CustomBadgeHovercardTooltip: "f15c84292111170671f4",
@@ -1755,4 +1755,4 @@
 	var m = c;
 	t()
 }([]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/runtime~Reddit.94a546cfa48c809ee507.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/runtime~Reddit.45a405df29d2076ab5d1.js.map

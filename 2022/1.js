@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/1.d937af862f1e116cc927.js
-// Retrieved at 6/16/2022, 4:10:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/1.9b8dea51f1306d4b6b03.js
+// Retrieved at 6/27/2022, 10:20:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	[1], {
 		"./node_modules/@reddit/crypto/react/config/index.es.js": function(e, t, n) {
@@ -3124,10 +3124,12 @@
 			})), n.d(t, "f", (function() {
 				return J
 			})), n.d(t, "g", (function() {
-				return $
+				return Ri
 			})), n.d(t, "h", (function() {
-				return V
+				return $
 			})), n.d(t, "i", (function() {
+				return V
+			})), n.d(t, "j", (function() {
 				return j
 			}));
 			var i = n("./node_modules/react/index.js"),
@@ -5762,7 +5764,17 @@
 				TransferIntoVault: "https://www.redditstatic.com/crypto-assets/v2/transfer-into-vault-8a3773b030.svg",
 				Transferable: "https://www.redditstatic.com/crypto-assets/v2/transferable-041e6b0265.svg",
 				Vault: "https://www.redditstatic.com/crypto-assets/v2/vault-cfd0500d93.svg"
-			}
+			};
+			var Ci = "_loadingContainer_1iitb_1",
+				Li = "_loadingContent_1iitb_11";
+			const Ri = ({
+				hasError: e,
+				className: t
+			}) => r.a.createElement("div", {
+				className: y(Ci, t)
+			}, r.a.createElement("div", {
+				className: Li
+			}, r.a.createElement(a.h, null), e && r.a.createElement(a.d, null)))
 		},
 		"./node_modules/graphql/jsutils/inspect.mjs": function(e, t, n) {
 			"use strict";
@@ -7288,4 +7300,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/1.d937af862f1e116cc927.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/1.9b8dea51f1306d4b6b03.js.map
