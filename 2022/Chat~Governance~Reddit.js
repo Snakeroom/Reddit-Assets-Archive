@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.7a10ee9c03c458229f62.js
-// Retrieved at 6/27/2022, 1:00:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.209f5fb2a6519ed0ad33.js
+// Retrieved at 6/27/2022, 2:00:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Chat~Governance~Reddit"], {
 		"./assets/fonts/IBMPlexSans/font.less": function(e, t, i) {},
@@ -3467,11 +3467,11 @@
 				apiPassThroughHeaders: Object(r.e)({}.API_PASS_THROUGH_HEADERS || ""),
 				appName: {}.APP_NAME || "desktop2x",
 				assetPath: "https://www.redditstatic.com/desktop2x",
-				buildNumber: Object(r.c)("167305"),
+				buildNumber: Object(r.c)("167321"),
 				chatHelpUrl: {}.CHAT_HELP_URL || "https://reddit.zendesk.com/hc/en-us/sections/360008805652-Chat",
 				hlsVersion: "hls 0.12.4",
 				dashVersion: "dash 3.2.0",
-				buildTimestamp: Object(r.b)("1656347149"),
+				buildTimestamp: Object(r.b)("1656349807"),
 				cookieDomain: ".reddit.com",
 				giphyApiKey: "k2kwyMA6VeyHM6ZRT96OXDGaersnx73Z",
 				mediaUrl: "https://www.redditmedia.com",
@@ -6080,14 +6080,14 @@
 					}))
 				},
 				Y = (e, t, i) => {
-					console.log("%cStarting Raven %crelease %cf3dd884ecdaeba4b332ac301d2bfd410bcc50fca-production" + ` %cpublic url %c${y.a.sentryClientPublicURL}`, "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
+					console.log("%cStarting Raven %crelease %cb33a209df8709c55da71f74a6b4b57fcca3c28a6-production" + ` %cpublic url %c${y.a.sentryClientPublicURL}`, "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
 					let n = [];
 					n = [new RegExp(`^${y.a.assetPath}`, "i")];
 					o.e({
 						attachStacktrace: !0,
 						dsn: y.a.sentryClientPublicURL,
 						whitelistUrls: n,
-						release: "f3dd884ecdaeba4b332ac301d2bfd410bcc50fca-production",
+						release: "b33a209df8709c55da71f74a6b4b57fcca3c28a6-production",
 						environment: "production",
 						ignoreErrors: ["$ is not defined"],
 						integrations: [...Object(L.d)(), new d.Integrations.Breadcrumbs({
@@ -6696,7 +6696,7 @@
 							settings: r,
 							statusCode: s,
 							type: o,
-							releaseClient: "f3dd884ecdaeba4b332ac301d2bfd410bcc50fca-production",
+							releaseClient: "b33a209df8709c55da71f74a6b4b57fcca3c28a6-production",
 							appName: t.statsAppName,
 							error: n ? JSON.parse(Object(l.a)(n)) : void 0
 						},
@@ -8559,54 +8559,66 @@
 			"use strict";
 			i.d(t, "a", (function() {
 				return n
-			})), i.d(t, "o", (function() {
-				return r
-			})), i.d(t, "p", (function() {
-				return s
-			})), i.d(t, "q", (function() {
-				return o
-			})), i.d(t, "r", (function() {
-				return d
-			})), i.d(t, "t", (function() {
-				return a
 			})), i.d(t, "u", (function() {
-				return l
+				return r
 			})), i.d(t, "v", (function() {
+				return s
+			})), i.d(t, "w", (function() {
+				return o
+			})), i.d(t, "x", (function() {
+				return d
+			})), i.d(t, "z", (function() {
+				return a
+			})), i.d(t, "A", (function() {
+				return l
+			})), i.d(t, "B", (function() {
 				return u
-			})), i.d(t, "d", (function() {
+			})), i.d(t, "i", (function() {
 				return c
 			})), i.d(t, "b", (function() {
 				return _
-			})), i.d(t, "n", (function() {
+			})), i.d(t, "t", (function() {
 				return m
-			})), i.d(t, "w", (function() {
+			})), i.d(t, "C", (function() {
 				return p
-			})), i.d(t, "y", (function() {
+			})), i.d(t, "E", (function() {
 				return h
-			})), i.d(t, "x", (function() {
+			})), i.d(t, "D", (function() {
 				return f
-			})), i.d(t, "s", (function() {
+			})), i.d(t, "y", (function() {
 				return b
-			})), i.d(t, "k", (function() {
+			})), i.d(t, "q", (function() {
 				return g
-			})), i.d(t, "e", (function() {
+			})), i.d(t, "k", (function() {
 				return w
-			})), i.d(t, "g", (function() {
-				return v
-			})), i.d(t, "f", (function() {
-				return y
-			})), i.d(t, "j", (function() {
-				return E
-			})), i.d(t, "i", (function() {
-				return S
-			})), i.d(t, "h", (function() {
-				return T
-			})), i.d(t, "l", (function() {
-				return O
 			})), i.d(t, "m", (function() {
+				return v
+			})), i.d(t, "l", (function() {
+				return y
+			})), i.d(t, "p", (function() {
+				return E
+			})), i.d(t, "o", (function() {
+				return S
+			})), i.d(t, "n", (function() {
+				return T
+			})), i.d(t, "r", (function() {
+				return O
+			})), i.d(t, "s", (function() {
 				return I
-			})), i.d(t, "c", (function() {
+			})), i.d(t, "h", (function() {
 				return R
+			})), i.d(t, "j", (function() {
+				return F
+			})), i.d(t, "g", (function() {
+				return N
+			})), i.d(t, "e", (function() {
+				return C
+			})), i.d(t, "f", (function() {
+				return A
+			})), i.d(t, "d", (function() {
+				return j
+			})), i.d(t, "c", (function() {
+				return D
 			}));
 			const n = "AD_BRAND_SAFETY_STATUS_RECEIVED",
 				r = "FETCH_COMMENTS_PAGE_ADS_COMPLETED",
@@ -8632,7 +8644,13 @@
 				T = "AD__VIDEO_PLAYED_EXPANDED",
 				O = "AD__VIDEO_WATCHED_PERCENT",
 				I = "AD__VIDEO_WATCHED_SECONDS",
-				R = "AD__GALLERY_ITEM_IMPRESSION"
+				R = "AD__GALLERY_ITEM_IMPRESSION",
+				F = "AD__UPVOTE",
+				N = "AD__DOWNVOTE",
+				C = "AD__COMMENT_SUBMITTED",
+				A = "AD__COMMENT_UPVOTE",
+				j = "AD__COMMENT_DOWNVOTE",
+				D = "AD__COMMENTS_VIEW"
 		},
 		"./src/reddit/actions/ads/index.ts": function(e, t, i) {
 			"use strict";
@@ -8677,7 +8695,7 @@
 				f = e => async (t, i) => {
 					const n = i();
 					Object(c.c)(n) && Object(c.d)(n) === e.isViewSafe || t(h(e))
-				}, b = Object(n.a)(p.q), g = Object(n.a)(p.r), w = Object(n.a)(p.t), v = Object(n.a)(p.u), y = (Object(n.a)(p.v), Object(n.a)(p.o)), E = (Object(n.a)(p.p), e => async (t, i, n) => {
+				}, b = Object(n.a)(p.w), g = Object(n.a)(p.x), w = Object(n.a)(p.z), v = Object(n.a)(p.A), y = (Object(n.a)(p.B), Object(n.a)(p.u)), E = (Object(n.a)(p.v), e => async (t, i, n) => {
 					let {
 						apiContext: s
 					} = n;
@@ -11601,37 +11619,43 @@
 						!t && r > n.a.telemetry.postConsumedThreshold && (te.b(o, e, r, i), Object(Q.b)(Object(ge.q)(o)))
 					}
 				}, Ve = {
-					[T.a.Impression]: f.d,
+					[T.a.Impression]: f.i,
 					[T.a.Click]: f.b,
-					[T.a.ViewableImpression]: f.n,
-					[T.a.GroupMViewable]: f.s,
-					[T.a.VideoViewableImpression]: f.k,
-					[T.a.VideoFullyViewableImpression]: f.e,
-					[T.a.VideoStarted]: f.j,
-					[T.a.VideoPlayedWithSound]: f.i,
-					[T.a.VideoGroupMViewable]: f.g,
-					[T.a.VideoWatchedSeconds3]: f.m,
-					[T.a.VideoWatchedSeconds5]: f.m,
-					[T.a.VideoWatchedSeconds10]: f.m,
-					[T.a.VideoWatched25]: f.l,
-					[T.a.VideoWatched50]: f.l,
-					[T.a.VideoWatched75]: f.l,
-					[T.a.VideoWatched95]: f.l,
-					[T.a.VideoWatched100]: f.l,
-					[T.a.VideoVendorFullyViewable50]: f.f,
-					[T.a.VideoPlayedExpanded]: f.h,
+					[T.a.ViewableImpression]: f.t,
+					[T.a.GroupMViewable]: f.y,
+					[T.a.VideoViewableImpression]: f.q,
+					[T.a.VideoFullyViewableImpression]: f.k,
+					[T.a.VideoStarted]: f.p,
+					[T.a.VideoPlayedWithSound]: f.o,
+					[T.a.VideoGroupMViewable]: f.m,
+					[T.a.VideoWatchedSeconds3]: f.s,
+					[T.a.VideoWatchedSeconds5]: f.s,
+					[T.a.VideoWatchedSeconds10]: f.s,
+					[T.a.VideoWatched25]: f.r,
+					[T.a.VideoWatched50]: f.r,
+					[T.a.VideoWatched75]: f.r,
+					[T.a.VideoWatched95]: f.r,
+					[T.a.VideoWatched100]: f.r,
+					[T.a.VideoVendorFullyViewable50]: f.l,
+					[T.a.VideoPlayedExpanded]: f.n,
 					[T.a.Unload]: F.b,
-					[T.a.VendorFullyInView]: f.w,
-					[T.a.VendorFullyInViewSeconds5]: f.y,
-					[T.a.VendorFullyInViewSeconds15]: f.x,
-					[T.a.GalleryItemImpression]: f.c
+					[T.a.VendorFullyInView]: f.C,
+					[T.a.VendorFullyInViewSeconds5]: f.E,
+					[T.a.VendorFullyInViewSeconds15]: f.D,
+					[T.a.GalleryItemImpression]: f.h,
+					[T.a.Upvote]: f.j,
+					[T.a.Downvote]: f.g,
+					[T.a.CommentSubmitted]: f.e,
+					[T.a.CommentUpvote]: f.f,
+					[T.a.CommentDownvote]: f.d,
+					[T.a.CommentsView]: f.c
 				}, He = Object(m.b)(Ve), qe = (e, t) => async i => {
 					i(We(e, t))
 				}, We = (e, t, i) => async (n, r) => {
 					const s = Object(R.b)(r(), e.id),
 						o = Object(O.a)(e.id, s, t),
 						d = Object(fe.d)(r(), e.id);
-					Ve[t] && n(He(String(t), {
+					Ve[t] && e.isSponsored && n(He(String(t), {
 						postId: e.id,
 						vendorMetadata: o,
 						eventType: i
@@ -34631,18 +34655,18 @@
 				let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : s,
 					t = arguments.length > 1 ? arguments[1] : void 0;
 				switch (t.type) {
-					case r.t:
-					case r.q: {
+					case r.z:
+					case r.w: {
 						const i = t.payload;
 						return {
 							...e,
 							...i
 						}
 					}
-					case r.r:
-					case r.t:
+					case r.x:
+					case r.z:
 						return e;
-					case r.v:
+					case r.B:
 						return s;
 					default:
 						return e
@@ -48109,4 +48133,4 @@
 		"ignored /drone/src/node_modules/readable-stream/lib/internal/streams util": function(e, t) {}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.7a10ee9c03c458229f62.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.209f5fb2a6519ed0ad33.js.map
