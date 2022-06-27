@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compo~bd4baca2.13ce04451547c96622ee.js
-// Retrieved at 6/21/2022, 7:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compo~bd4baca2.52f19ede708945547fb4.js
+// Retrieved at 6/27/2022, 2:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compo~bd4baca2"], {
 		"./src/lib/addAllowQuarantinedParam/index.ts": function(e, t, s) {
@@ -335,7 +335,7 @@
 						return
 					}
 					const R = {
-						...n()(e.queryParams, [...O.l, ...O.k, O.h]),
+						...n()(e.queryParams, [...O.k, ...O.j, O.g]),
 						layout: Object(g.S)(x, {}).toLowerCase(),
 						sort: _,
 						t: Object(S.a)(_, y)
@@ -406,7 +406,7 @@
 							dist: f.dist,
 							sort: m,
 							t: b,
-							...n()(d, O.l),
+							...n()(d, O.k),
 							layout: Object(g.S)(a, {}).toLowerCase()
 						},
 						T = await C(r(), p, y),
@@ -1788,8 +1788,8 @@
 					const s = t ? `/r/${t}/search` : "/search",
 						r = `${t?"flair_name":"flair"}:"${e}"`;
 					return Object(l.a)(s, {
-						[y.p]: r,
-						[y.s]: t ? "1" : ""
+						[y.o]: r,
+						[y.r]: t ? "1" : ""
 					})
 				},
 				F = e => e.isFlairFilter ? c.a.createElement(T.default, {
@@ -3745,4 +3745,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compo~bd4baca2.13ce04451547c96622ee.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compo~bd4baca2.52f19ede708945547fb4.js.map

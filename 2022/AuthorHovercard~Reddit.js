@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/AuthorHovercard~Reddit.a3969d9ad33c9f4ec81f.js
-// Retrieved at 6/27/2022, 1:00:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/AuthorHovercard~Reddit.d8df15b30b4e015f9b5e.js
+// Retrieved at 6/27/2022, 2:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["AuthorHovercard~Reddit"], {
 		"./src/lib/browser/isIncognito.ts": function(e, t, n) {
@@ -80,7 +80,7 @@
 		"./src/reddit/actions/notifications/index.ts": function(e, t, n) {
 			"use strict";
 			n.r(t), n.d(t, "initializeServiceWorkerChannel", (function() {
-				return B
+				return I
 			})), n.d(t, "requestNotificationsPermissions", (function() {
 				return P
 			})), n.d(t, "subscribeForPNs", (function() {
@@ -115,16 +115,16 @@
 				O = n("./src/reddit/constants/experiments.ts"),
 				k = n("./src/reddit/helpers/chooseVariant/index.ts");
 			const E = e => Object(k.c)(e, {
-				experimentName: O.fc,
+				experimentName: O.ec,
 				experimentEligibilitySelector: k.a
-			}) === O.vd;
+			}) === O.ud;
 			var j = n("./src/reddit/selectors/meta.ts"),
 				C = n("./src/reddit/selectors/user.ts");
-			let I = !1;
-			const B = async (e, t) => {
+			let B = !1;
+			const I = async (e, t) => {
 				const n = Object(C.P)(e);
-				if (I) return;
-				if (I = !0, Object(p.a)(e) !== l.c.NotificationsSupported) return;
+				if (B) return;
+				if (B = !0, Object(p.a)(e) !== l.c.NotificationsSupported) return;
 				await Object(d.a)();
 				navigator.serviceWorker.addEventListener("message", a => {
 					const i = a.data,
@@ -153,7 +153,7 @@
 						p = Object(N.c)(h.a.NSFW_BLOCKING_MODAL_V2)(r);
 					if (m || p) return;
 					if (await Object(o.a)() || d) return;
-					await B(r, a);
+					await I(r, a);
 					v.l(r), await Object(c.b)(e, t, () => {
 						u || a(Object(l.o)()), a(Object(l.n)()), v.j(r)
 					}, (e, t) => {
@@ -515,8 +515,8 @@
 				}))
 			};
 			var C = n("./src/reddit/components/InboxBanner/PolicyBanner.tsx"),
-				I = n("./src/reddit/components/NotificationUnit/Loader.tsx"),
-				B = n("./src/reddit/components/ResizeSensor/index.tsx"),
+				B = n("./src/reddit/components/NotificationUnit/Loader.tsx"),
+				I = n("./src/reddit/components/ResizeSensor/index.tsx"),
 				S = n("./src/reddit/components/InboxTooltip/index.m.less"),
 				P = n.n(S);
 			const w = 3;
@@ -551,7 +551,7 @@
 					return s.a.createElement(s.a.Fragment, null, s.a.createElement("div", {
 						ref: this.ref,
 						className: P.a.notificationResizeWrapper
-					}, s.a.createElement(I.a, {
+					}, s.a.createElement(B.a, {
 						activeOverflowMenuId: e,
 						decreaseSubredditNotifications: t,
 						disableNotificationUpdates: n,
@@ -564,7 +564,7 @@
 						setActiveOverflowMenuId: u,
 						onItemClick: m,
 						blockAwarder: o
-					}), !!p && s.a.createElement(B.a, {
+					}), !!p && s.a.createElement(I.a, {
 						onResize: this.handleResize
 					})))
 				}
@@ -1667,8 +1667,8 @@
 						hk: "42zwJz"
 					})))
 				},
-				I = n("./src/lib/notifications/index.ts"),
-				B = n("./src/lib/notifications/constants.ts"),
+				B = n("./src/lib/notifications/index.ts"),
+				I = n("./src/lib/notifications/constants.ts"),
 				S = n("./src/redditGQL/types.ts"),
 				P = n("./src/reddit/actions/modal.ts"),
 				w = n("./src/reddit/actions/notifications/index.ts"),
@@ -1727,7 +1727,7 @@
 							})
 						}, [f, k]),
 						j = Object(a.useCallback)(() => {
-							(() => Object(I.a)() === B.a.Granted)() ? E(): N(W.TURN_ON_PN)
+							(() => Object(B.a)() === I.a.Granted)() ? E(): N(W.TURN_ON_PN)
 						}, [E]),
 						C = Object(a.useCallback)(() => {
 							m(o.b.Email_perms)(), t && b && b(), f(Object(P.h)(A.a))
@@ -1797,24 +1797,24 @@
 				V = n("./src/reddit/helpers/chooseVariant/index.ts");
 			const q = e => Object(V.c)(e, {
 					experimentEligibilitySelector: V.a,
-					experimentName: G.Cb
-				}) === G.Cd.MemesNoBadge,
+					experimentName: G.Bb
+				}) === G.Bd.MemesNoBadge,
 				K = e => Object(V.c)(e, {
 					experimentEligibilitySelector: V.a,
-					experimentName: G.Cb
-				}) === G.Cd.PnEmailNoBadge,
+					experimentName: G.Bb
+				}) === G.Bd.PnEmailNoBadge,
 				J = e => Object(V.c)(e, {
 					experimentEligibilitySelector: V.a,
-					experimentName: G.Cb
-				}) === G.Cd.KarmaNoBadge,
+					experimentName: G.Bb
+				}) === G.Bd.KarmaNoBadge,
 				Q = e => Object(V.c)(e, {
 					experimentEligibilitySelector: V.a,
-					experimentName: G.Cb
-				}) === G.Cd.PopularNoBadge,
+					experimentName: G.Bb
+				}) === G.Bd.PopularNoBadge,
 				Y = e => Object(V.c)(e, {
 					experimentEligibilitySelector: V.a,
-					experimentName: G.Cb
-				}) === G.Cd.CatsNoBadge;
+					experimentName: G.Bb
+				}) === G.Bd.CatsNoBadge;
 			t.a = e => {
 				let {
 					isBannerEnabled: t,
@@ -2010,4 +2010,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/AuthorHovercard~Reddit.a3969d9ad33c9f4ec81f.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/AuthorHovercard~Reddit.d8df15b30b4e015f9b5e.js.map

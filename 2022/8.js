@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/8.19e307bc056054a3e3e5.js
-// Retrieved at 5/19/2022, 10:20:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/8.16af6ec68782cc81cfda.js
+// Retrieved at 6/27/2022, 2:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	[8], {
 		"./node_modules/lodash/_baseRange.js": function(e, t) {
@@ -18,6 +18,22 @@
 				return function(t, n, o) {
 					return o && "number" != typeof o && s(t, n, o) && (n = o = void 0), t = r(t), void 0 === n ? (n = t, t = 0) : n = r(n), o = void 0 === o ? t < n ? 1 : -1 : r(o), a(t, n, o, e)
 				}
+			}
+		},
+		"./node_modules/lodash/flatMap.js": function(e, t, n) {
+			var a = n("./node_modules/lodash/_baseFlatten.js"),
+				s = n("./node_modules/lodash/map.js");
+			e.exports = function(e, t) {
+				return a(s(e, t), 1)
+			}
+		},
+		"./node_modules/lodash/map.js": function(e, t, n) {
+			var a = n("./node_modules/lodash/_arrayMap.js"),
+				s = n("./node_modules/lodash/_baseIteratee.js"),
+				r = n("./node_modules/lodash/_baseMap.js"),
+				o = n("./node_modules/lodash/isArray.js");
+			e.exports = function(e, t) {
+				return (o(e) ? a : r)(e, s(t, 3))
 			}
 		},
 		"./node_modules/lodash/range.js": function(e, t, n) {
@@ -84,9 +100,9 @@
 					ratingResponse: a,
 					subredditId: o,
 					children: g
-				} = e, x = null !== (t = Object(r.e)(e => Object(p.U)(e, {
+				} = e, f = null !== (t = Object(r.e)(e => Object(p.U)(e, {
 					subredditId: o
-				}))) && void 0 !== t ? t : {}, f = Object(d.a)();
+				}))) && void 0 !== t ? t : {}, x = Object(d.a)();
 				return s.a.createElement("div", {
 					className: c.a.ratingCard
 				}, "PENDING" === (null == a ? void 0 : a.status) && s.a.createElement("div", {
@@ -101,22 +117,22 @@
 					className: c.a.banner,
 					style: {
 						background: Object(m.g)(Object(h.a)({
-							theme: f
+							theme: x
 						}).banner.backgroundColor, Object(h.a)({
-							theme: f
+							theme: x
 						}).banner.backgroundImage, Object(h.a)({
-							theme: f
+							theme: x
 						}).banner.backgroundImagePosition)
 					}
 				}, s.a.createElement(l.b, {
 					className: c.a.communityIcon,
-					iconUrl: null === (n = x.icon) || void 0 === n ? void 0 : n.url
+					iconUrl: null === (n = f.icon) || void 0 === n ? void 0 : n.url
 				})), s.a.createElement("h3", {
 					className: c.a.communityName
-				}, a ? s.a.createElement("span", null, x.displayText, s.a.createElement("img", {
+				}, a ? s.a.createElement("span", null, f.displayText, s.a.createElement("img", {
 					className: c.a.ratingImg,
 					src: a.rating.icon.png
-				})) : x.displayText), g))
+				})) : f.displayText), g))
 			}
 		},
 		"./src/reddit/components/ContentSurvey/index.tsx": function(e, t, n) {
@@ -138,17 +154,17 @@
 				p = n("./src/lib/sentry/index.ts"),
 				v = n("./src/reddit/actions/subreddit/constants.ts"),
 				g = n("./src/reddit/actions/toaster.ts"),
-				x = n("./node_modules/fbt/lib/FbtPublic.js"),
-				f = n("./node_modules/lodash/range.js"),
-				y = n.n(f),
+				f = n("./node_modules/fbt/lib/FbtPublic.js"),
+				x = n("./node_modules/lodash/range.js"),
+				y = n.n(x),
 				C = n("./src/reddit/components/ModeratorSurvey/index.m.less"),
 				w = n.n(C),
 				b = n("./src/lib/classNames/index.ts");
-			var E = n("./src/reddit/components/ModalStyledComponents/index.tsx"),
-				_ = n("./src/reddit/controls/Button/index.tsx"),
+			var _ = n("./src/reddit/components/ModalStyledComponents/index.tsx"),
+				E = n("./src/reddit/controls/Button/index.tsx"),
 				k = n("./src/reddit/controls/TextButton/index.tsx"),
-				M = n("./src/reddit/icons/svgs/Snoo/index.tsx"),
-				j = n("./src/reddit/icons/svgs/svgIcons.tsx");
+				j = n("./src/reddit/icons/svgs/Snoo/index.tsx"),
+				M = n("./src/reddit/icons/svgs/svgIcons.tsx");
 
 			function N(e) {
 				const {
@@ -171,16 +187,16 @@
 				}, p ? l.a.createElement(k.a, {
 					className: w.a.headerButton,
 					onClick: d
-				}, l.a.createElement(j.d, {
+				}, l.a.createElement(M.d, {
 					className: w.a.backIcon
-				}), l.a.createElement("div", null, x.fbt._("Back", null, {
+				}), l.a.createElement("div", null, f.fbt._("Back", null, {
 					hk: "39TCGR"
 				}))) : l.a.createElement(k.a, {
 					className: w.a.headerButton,
 					onClick: u
-				}, l.a.createElement(E.b, null), l.a.createElement("div", null, x.fbt._("Close", null, {
+				}, l.a.createElement(_.b, null), l.a.createElement("div", null, f.fbt._("Close", null, {
 					hk: "4gbyAA"
-				}))), l.a.createElement(M.a, {
+				}))), l.a.createElement(j.a, {
 					className: w.a.snoo
 				})), l.a.createElement("div", {
 					className: w.a.slides,
@@ -203,16 +219,16 @@
 					})
 				}))), l.a.createElement("div", {
 					className: w.a.progress
-				}, g > 1 ? x.fbt._("{current} of {total}", [x.fbt._param("current", v), x.fbt._param("total", g)], {
+				}, g > 1 ? f.fbt._("{current} of {total}", [f.fbt._param("current", v), f.fbt._param("total", g)], {
 					hk: "pZU46"
-				}) : ""), l.a.createElement(_.t, {
+				}) : ""), l.a.createElement(E.t, {
 					redditStyle: !0,
 					className: w.a.footerButton,
 					onClick: c,
 					disabled: r
-				}, null != o ? o : n === h - 1 ? x.fbt._("Submit", null, {
+				}, null != o ? o : n === h - 1 ? f.fbt._("Submit", null, {
 					hk: "4aU3dh"
-				}) : x.fbt._("Next", null, {
+				}) : f.fbt._("Next", null, {
 					hk: "2mEXAi"
 				}))))
 			}
@@ -286,7 +302,7 @@
 					subredditId: s,
 					survey: r,
 					onClose: o = (() => {})
-				} = e, [u, x] = Object(i.useState)({}), f = Object(d.d)(), y = G(null == r ? void 0 : r.questions, u), [{
+				} = e, [u, f] = Object(i.useState)({}), x = Object(d.d)(), y = G(null == r ? void 0 : r.questions, u), [{
 					surveyState: C,
 					activeSlide: w
 				}, b] = Object(i.useReducer)((e, t) => {
@@ -301,36 +317,36 @@
 				}, {
 					surveyState: W.Intro,
 					activeSlide: 0
-				}), E = y[w - 1], _ = Object(I.a)();
+				}), _ = y[w - 1], E = Object(I.a)();
 				Object(i.useEffect)(() => {
 					switch (w) {
 						case 0:
-							return _(Object(A.c)());
+							return E(Object(A.c)());
 						case 1:
-							return _(Object(A.e)());
+							return E(Object(A.e)());
 						case y.length + 1:
-							return _(Object(A.n)())
+							return E(Object(A.n)())
 					}
-					if (E) return _(Object(A.j)(E.pageType))
-				}, [w, _]);
+					if (_) return E(Object(A.j)(_.pageType))
+				}, [w, E]);
 				const [k, {
-					pending: M,
-					error: j
+					pending: j,
+					error: M
 				}] = Object(h.a)(T);
 				Object(i.useEffect)(() => {
-					j && (p.c.captureException(j), f(Object(g.f)(Object(g.e)(H._("An error occurred", null, {
+					M && (p.c.captureException(M), x(Object(g.f)(Object(g.e)(H._("An error occurred", null, {
 						hk: "1VDETi"
 					}), B.b.Error))))
-				}, [j, f]);
+				}, [M, x]);
 				const [S, O] = Object(i.useState)(null);
 				if (!r) return null;
 				if (!r.isEligible) return null;
 
 				function F(e, t) {
-					x(Object(a.setIn)(u, [e], t)), _(Object(A.a)(E.pageType))
+					f(Object(a.setIn)(u, [e], t)), E(Object(A.a)(_.pageType))
 				}
-				const Z = null !== (t = u[null == E ? void 0 : E.id]) && void 0 !== t ? t : {},
-					R = (null !== (n = null == E ? void 0 : E.answerOptions) && void 0 !== n ? n : []).map(e => e.id).some(e => Z[e]),
+				const Z = null !== (t = u[null == _ ? void 0 : _.id]) && void 0 !== t ? t : {},
+					R = (null !== (n = null == _ ? void 0 : _.answerOptions) && void 0 !== n ? n : []).map(e => e.id).some(e => Z[e]),
 					P = C === W.Survey && w > 1;
 				return l.a.createElement(N, {
 					activeSlide: w,
@@ -358,8 +374,8 @@
 									ratingReasons: s
 								}
 							}(r, u)), C === W.Tag) {
-							if (M) return;
-							return _(Object(A.m)()), await k({
+							if (j) return;
+							return E(Object(A.m)()), await k({
 								input: {
 									subredditId: s,
 									version: r.version,
@@ -368,25 +384,25 @@
 										answerIds: D(e, u).map(e => e.id)
 									}))
 								}
-							}), f(Object(g.f)(Object(g.e)(H._("Thanks for setting up your Content Tag!", null, {
+							}), x(Object(g.f)(Object(g.e)(H._("Thanks for setting up your Content Tag!", null, {
 								hk: "3HW5GV"
-							}), B.b.SuccessCommunityGreen))), f({
+							}), B.b.SuccessCommunityGreen))), x({
 								type: v.z,
 								payload: {
 									id: s,
 									response: S
 								}
-							}), void(j || o())
+							}), void(M || o())
 						}
-						b("forward"), E ? _(Object(A.i)(E.pageType, D(E, u).map(e => e.id))) : 0 === w && _(Object(A.l)())
+						b("forward"), _ ? E(Object(A.i)(_.pageType, D(_, u).map(e => e.id))) : 0 === w && E(Object(A.l)())
 					},
 					goBack: function() {
-						b("back"), E && _(Object(A.b)(E.pageType))
+						b("back"), _ && E(Object(A.b)(_.pageType))
 					},
 					onClose: o,
 					progressCurrent: P ? w - 1 : 0,
 					progressTotal: P ? y.length - 1 : 0,
-					disableNext: M || C === W.Survey && !R,
+					disableNext: j || C === W.Survey && !R,
 					buttonText: q(C)
 				}, l.a.createElement("div", {
 					className: m.a.result
@@ -570,9 +586,9 @@
 			})), n.d(t, "p", (function() {
 				return g
 			})), n.d(t, "o", (function() {
-				return x
-			})), n.d(t, "f", (function() {
 				return f
+			})), n.d(t, "f", (function() {
+				return x
 			})), n.d(t, "m", (function() {
 				return y
 			})), n.d(t, "h", (function() {
@@ -582,15 +598,15 @@
 			})), n.d(t, "k", (function() {
 				return b
 			})), n.d(t, "g", (function() {
-				return E
-			})), n.d(t, "i", (function() {
 				return _
+			})), n.d(t, "i", (function() {
+				return E
 			})), n.d(t, "q", (function() {
 				return k
 			})), n.d(t, "d", (function() {
-				return M
-			})), n.d(t, "l", (function() {
 				return j
+			})), n.d(t, "l", (function() {
+				return M
 			})), n.d(t, "t", (function() {
 				return N
 			})), n.d(t, "u", (function() {
@@ -627,17 +643,17 @@
 				p = s.a.section("ModalBody", u.a),
 				v = s.a.section("ModalPostPreview", u.a),
 				g = s.a.p("ModalText", u.a),
-				x = s.a.div("ModalSmallText", u.a),
-				f = s.a.div("ModalDescriptionText", u.a),
+				f = s.a.div("ModalSmallText", u.a),
+				x = s.a.div("ModalDescriptionText", u.a),
 				y = s.a.div("ModalMetaText", u.a),
 				C = s.a.label("ModalFormItem", u.a),
 				w = s.a.wrapped(i.a, "ModalInput", u.a),
 				b = s.a.label("ModalInputLabel", u.a),
-				E = s.a.footer("ModalFooter", u.a),
-				_ = s.a.header("ModalHeader", u.a),
+				_ = s.a.footer("ModalFooter", u.a),
+				E = s.a.header("ModalHeader", u.a),
 				k = s.a.div("ModalTitle", u.a),
-				M = s.a.div("ModalAnnotation", u.a),
-				j = s.a.div("ModalMain", u.a),
+				j = s.a.div("ModalAnnotation", u.a),
+				M = s.a.div("ModalMain", u.a),
 				N = s.a.textarea("TextArea", u.a),
 				S = s.a.wrapped(c.l, "WarningButton", u.a),
 				O = s.a.wrapped(c.l, "PrimaryButton", u.a),
@@ -1221,4 +1237,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/8.19e307bc056054a3e3e5.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/8.16af6ec68782cc81cfda.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Avatar.181f2c12e72009baf222.js
-// Retrieved at 6/27/2022, 1:00:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Avatar.e8b4824adf04b17f6187.js
+// Retrieved at 6/27/2022, 2:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Avatar"], {
 		"./src/reddit/components/SnoovatarModal/SnoovatarIframe.tsx": function(e, t, s) {
@@ -88,8 +88,8 @@
 				x = s("./src/reddit/selectors/experiments/econ/paymentsSandbox.ts"),
 				p = s("./src/telemetry/index.ts"),
 				v = s("./src/reddit/components/SnoovatarModal/SnoovatarIframe.tsx"),
-				b = s("./src/reddit/pages/Avatar/index.m.less"),
-				_ = s.n(b);
+				_ = s("./src/reddit/pages/Avatar/index.m.less"),
+				b = s.n(_);
 			const E = !(Object(i.c)() || Object(i.b)()),
 				O = {
 					GRAPHQL_URL: a.a.gqlUrl,
@@ -108,7 +108,7 @@
 			t.default = function() {
 				const e = Object(o.e)(e => e.user.session),
 					[t, i] = Object(r.useState)(!1),
-					b = Object(r.useContext)(d.a),
+					_ = Object(r.useContext)(d.a),
 					E = Object(o.e)(x.a),
 					h = Object(r.useMemo)(() => ({
 						headers: {
@@ -128,8 +128,8 @@
 					STRIPE_API_KEY: a.a.stripe.apiKey(E)
 				};
 				return n.a.createElement("div", {
-					className: Object(c.a)(_.a.container, {
-						[_.a.containerExp]: b
+					className: Object(c.a)(b.a.container, {
+						[b.a.containerExp]: _
 					})
 				}, A ? n.a.createElement(r.Suspense, {
 					fallback: n.a.createElement("div", null)
@@ -139,7 +139,7 @@
 					config: N,
 					sendEvent: p.a
 				}, n.a.createElement(j, null))) : n.a.createElement(v.a, {
-					className: _.a.content
+					className: b.a.content
 				}))
 			}
 		},
@@ -150,8 +150,8 @@
 			}));
 			var a = s("./src/reddit/constants/experiments.ts"),
 				r = s("./src/reddit/selectors/experiments/econ/simpleExperiment.ts");
-			const n = Object(r.a)(a.bd)
+			const n = Object(r.a)(a.ad)
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Avatar.181f2c12e72009baf222.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Avatar.e8b4824adf04b17f6187.js.map

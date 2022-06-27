@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddi~90fdacc3.8fea02c9457b4e6bf0ee.js
-// Retrieved at 6/27/2022, 1:00:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddi~90fdacc3.30c9fed21769ed79831c.js
+// Retrieved at 6/27/2022, 2:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddi~90fdacc3"], {
 		"./src/lib/combineRefs/index.tsx": function(e, t, n) {
@@ -1596,7 +1596,7 @@
 				} = t;
 				return {
 					onSubscribe: () => e(i.d([n], !0)),
-					onSubscriptionsRequested: () => e(i.f()),
+					onSubscriptionsRequested: () => e(i.e()),
 					onUnsubscribe: () => e(i.d([n], !1)),
 					toggleEmailVerificationTooltip: () => e(Object(o.c)("user_follow"))
 				}
@@ -3142,28 +3142,28 @@
 			}));
 			var r = n("./src/reddit/constants/experiments.ts"),
 				s = n("./src/reddit/selectors/experiments/econ/simpleExperiment.ts");
-			const o = Object(s.a)(r.kd),
-				i = Object(s.a)(r.id),
-				c = Object(s.a)(r.ld),
-				a = Object(s.a)(r.hd),
-				d = Object(s.a)(r.gd),
-				l = Object(s.a)(r.nd),
-				u = Object(s.a)(r.md),
-				m = Object(s.a)(r.dd),
-				p = Object(s.a)(r.Xc),
-				b = Object(s.a)(r.Yc),
-				f = Object(s.a)(r.Vc),
-				_ = Object(s.a)(r.Wc),
-				h = Object(s.a)(r.Zc),
-				O = Object(s.a)(r.Uc),
-				v = Object(s.a)(r.ed),
-				E = Object(s.a)(r.fd),
-				S = Object(s.a)(r.jd),
-				C = Object(s.a)(r.od),
-				x = Object(s.a)(r.pd),
-				j = Object(s.a)(r.sd),
-				g = Object(s.a)(r.rd),
-				y = Object(s.a)(r.qd)
+			const o = Object(s.a)(r.jd),
+				i = Object(s.a)(r.hd),
+				c = Object(s.a)(r.kd),
+				a = Object(s.a)(r.gd),
+				d = Object(s.a)(r.fd),
+				l = Object(s.a)(r.md),
+				u = Object(s.a)(r.ld),
+				m = Object(s.a)(r.cd),
+				p = Object(s.a)(r.Wc),
+				b = Object(s.a)(r.Xc),
+				f = Object(s.a)(r.Uc),
+				_ = Object(s.a)(r.Vc),
+				h = Object(s.a)(r.Yc),
+				O = Object(s.a)(r.Tc),
+				v = Object(s.a)(r.dd),
+				E = Object(s.a)(r.ed),
+				S = Object(s.a)(r.id),
+				C = Object(s.a)(r.nd),
+				x = Object(s.a)(r.od),
+				j = Object(s.a)(r.rd),
+				g = Object(s.a)(r.qd),
+				y = Object(s.a)(r.pd)
 		},
 		"./src/reddit/selectors/experiments/loggedOutOneFeed.ts": function(e, t, n) {
 			"use strict";
@@ -3181,7 +3181,7 @@
 			const d = Object(r.a)(c.f, i.e, (e, t) => e && !t),
 				l = e => Object(o.c)(e, {
 					experimentEligibilitySelector: d,
-					experimentName: s.dc
+					experimentName: s.cc
 				}),
 				u = e => !!Object(a.a)(l(e))
 		},
@@ -3270,8 +3270,8 @@
 					if (Object(i.a)(e)) return !1;
 					return Object(s.c)(e, {
 						experimentEligibilitySelector: s.a,
-						experimentName: r.pc
-					}) === r.Ic.Enabled
+						experimentName: r.oc
+					}) === r.Hc.Enabled
 				}
 		},
 		"./src/reddit/selectors/experiments/presence.ts": function(e, t, n) {
@@ -3284,8 +3284,8 @@
 			const o = e => {
 				return Object(s.c)(e, {
 					experimentEligibilitySelector: s.a,
-					experimentName: r.Ke
-				}) === r.vd
+					experimentName: r.Je
+				}) === r.ud
 			}
 		},
 		"./src/reddit/selectors/removedPosts.ts": function(e, t, n) {
@@ -3430,4 +3430,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddi~90fdacc3.8fea02c9457b4e6bf0ee.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddi~90fdacc3.30c9fed21769ed79831c.js.map

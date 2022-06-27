@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ReportFlow.ba53168f4ed5b51fbcd4.js
-// Retrieved at 6/27/2022, 1:00:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ReportFlow.ce6d7dff7aaae42c0ddd.js
+// Retrieved at 6/27/2022, 2:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ReportFlow", "ReportFlowNew"], {
 		"./node_modules/@reddit/i18n-tools/runtime/helpers/locale/index.js": function(e, t, n) {
@@ -356,13 +356,6 @@
 				if (!l) return -1;
 				var d = l - 1;
 				return void 0 !== n && (d = r(n), d = n < 0 ? a(l + d, 0) : i(d, l - 1)), s(e, o(t, 3), d, !0)
-			}
-		},
-		"./node_modules/lodash/flatMap.js": function(e, t, n) {
-			var s = n("./node_modules/lodash/_baseFlatten.js"),
-				o = n("./node_modules/lodash/map.js");
-			e.exports = function(e, t) {
-				return s(o(e, t), 1)
 			}
 		},
 		"./node_modules/lodash/invert.js": function(e, t, n) {
@@ -4028,4 +4021,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ReportFlow.ba53168f4ed5b51fbcd4.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ReportFlow.ce6d7dff7aaae42c0ddd.js.map

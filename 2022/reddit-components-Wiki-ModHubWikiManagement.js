@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Wiki-ModHubWikiManagement.73b6c6ff825029f07546.js
-// Retrieved at 6/21/2022, 7:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Wiki-ModHubWikiManagement.e868dfbc62fc768234dd.js
+// Retrieved at 6/27/2022, 2:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Wiki-ModHubWikiManagement"], {
 		"./src/reddit/components/BannedUserList/AddBannedUserModal/DaysInput.tsx": function(e, t, n) {
@@ -278,8 +278,8 @@
 				D = n("./src/reddit/controls/Button/index.tsx"),
 				L = n("./src/reddit/helpers/trackers/subredditWiki.ts"),
 				U = n("./src/reddit/selectors/activeModalId.ts"),
-				I = n("./src/reddit/selectors/subredditWiki.ts"),
-				A = n("./src/higherOrderComponents/asModal/index.tsx"),
+				A = n("./src/reddit/selectors/subredditWiki.ts"),
+				I = n("./src/higherOrderComponents/asModal/index.tsx"),
 				H = n("./src/reddit/components/CharacterCountdown/index.tsx"),
 				F = n("./src/reddit/components/ModalStyledComponents/index.tsx"),
 				X = n("./src/reddit/controls/TextButton/index.tsx"),
@@ -399,14 +399,14 @@
 					}))))
 				}
 			}
-			var te = Object(A.a)($(ee));
+			var te = Object(I.a)($(ee));
 			const ne = Object(S.c)({
 				isAddBannedContributorModalOpen: e => "WikiBannedContributers--BanContributorModal" === Object(U.a)(e),
 				isConfirmModalOpen: e => "WikiBannedContributers--RemoveBannedWikiContributor" === Object(U.a)(e),
-				isWikiBannedContributorsListPending: I.e,
-				loadMoreToken: I.f,
-				searchResult: I.g,
-				wikiContributors: I.h
+				isWikiBannedContributorsListPending: A.e,
+				loadMoreToken: A.f,
+				searchResult: A.g,
+				wikiContributors: A.h
 			});
 			class ie extends s.a.Component {
 				constructor(e) {
@@ -602,14 +602,14 @@
 					}))))
 				}
 			}
-			var ue = Object(A.a)(le(ce));
+			var ue = Object(I.a)(le(ce));
 			const me = Object(S.c)({
 				isAddContributorModalOpen: e => "WikiContributers--AddContributorModal" === Object(U.a)(e),
 				isConfirmModalOpen: e => "WikiContributers--RemoveContributor" === Object(U.a)(e),
-				isWikiContributorsListPending: I.j,
-				loadMoreToken: I.k,
-				searchResult: I.l,
-				wikiContributors: I.m
+				isWikiContributorsListPending: A.j,
+				loadMoreToken: A.k,
+				searchResult: A.l,
+				wikiContributors: A.m
 			});
 			class he extends s.a.Component {
 				constructor(e) {
@@ -784,7 +784,7 @@
 				}), s.a.createElement(Le, {
 					className: Oe.a.loadingUserName
 				}))));
-			class Ie extends s.a.Component {
+			class Ae extends s.a.Component {
 				constructor(e) {
 					super(e), this.onChangeNewContributorInput = e => {
 						this.setState({
@@ -880,13 +880,13 @@
 					}))
 				}
 			}
-			var Ae = De(Ie);
+			var Ie = De(Ae);
 			const He = Object(S.c)({
 				subredditSettings: (e, t) => {
 					const n = Object(Me.F)(e, t.subredditName);
 					return Object(Me.W)(e, n)
 				},
-				wikiPageSettings: I.d
+				wikiPageSettings: A.d
 			});
 			class Fe extends s.a.Component {
 				constructor(e) {
@@ -1013,7 +1013,7 @@
 						className: Oe.a.inputOptionText
 					}, v.fbt._("Only approved wiki contributors for this page may edit", null, {
 						hk: "16QJXW"
-					}))))), r && s.a.createElement(Ae, {
+					}))))), r && s.a.createElement(Ie, {
 						afterToken: e.wikiPageSettings.afterToken,
 						sendEvent: this.props.sendEvent,
 						subredditName: e.subredditName,
@@ -1065,7 +1065,7 @@
 						wikiSubRoute: u,
 						wikiPageName: b,
 						pageName: p
-					} = n, g = i[l.G], k = i[l.H], C = l.I in i;
+					} = n, g = i[l.E], k = i[l.F], C = l.G in i;
 					switch (u) {
 						case c.m.Create:
 						case c.m.Edit:
@@ -1223,4 +1223,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Wiki-ModHubWikiManagement.73b6c6ff825029f07546.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Wiki-ModHubWikiManagement.e868dfbc62fc768234dd.js.map

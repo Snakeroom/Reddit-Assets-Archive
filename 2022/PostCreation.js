@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostCreation.1ddf7456b59e0f775430.js
-// Retrieved at 6/27/2022, 1:00:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostCreation.48d82965e93bfba7d388.js
+// Retrieved at 6/27/2022, 2:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostCreation", "ChatMessageInput~MembershipPaywallPage~RichTextEditor", "ContributorRequestButton"], {
 		"./node_modules/autosize/dist/autosize.js": function(e, t, n) {
@@ -1151,6 +1151,89 @@
 				}(l, c, t || i.AND, n || a.COMMA)
 			}
 		},
+		"./src/lib/linkMatchers/index.ts": function(e, t, n) {
+			"use strict";
+			n.d(t, "f", (function() {
+				return m
+			})), n.d(t, "e", (function() {
+				return h
+			})), n.d(t, "g", (function() {
+				return b
+			})), n.d(t, "j", (function() {
+				return f
+			})), n.d(t, "a", (function() {
+				return g
+			})), n.d(t, "b", (function() {
+				return E
+			})), n.d(t, "c", (function() {
+				return x
+			})), n.d(t, "d", (function() {
+				return y
+			})), n.d(t, "h", (function() {
+				return v
+			})), n.d(t, "i", (function() {
+				return O
+			}));
+			var o = n("./node_modules/linkify-it/index.js"),
+				s = n.n(o),
+				r = n("./node_modules/tlds/index.js"),
+				i = n.n(r),
+				a = n("./src/lib/linkMatchers/customLinks.ts"),
+				c = n("./node_modules/lodash/values.js"),
+				l = n.n(c);
+			const d = e => l()(a.b).includes(e.substring(1)),
+				u = ["//", "ftp:", "http:", "https:", "mailto:"],
+				p = e => ((e, t) => (t.forEach(t => e.add(t, null)), e))(e, u),
+				m = s()().tlds(i.a).set({
+					fuzzyIP: !0
+				}),
+				h = s()().set({
+					fuzzyIP: !0,
+					fuzzyEmail: !1
+				}).add(a.g.mention.prefix, a.g.mention.config),
+				b = p(s()()).set({
+					fuzzyLink: !1,
+					fuzzyEmail: !1
+				}).add(a.g.subreddit.prefix, a.g.subreddit.config).add(a.g.subredditFull.prefix, a.g.subreddit.config),
+				f = p(s()()).set({
+					fuzzyLink: !1,
+					fuzzyEmail: !1
+				}).add(a.g.profile.prefix, a.g.profile.config).add(a.g.profileFull.prefix, a.g.profile.config),
+				g = s()().tlds(i.a).set({
+					fuzzyIP: !0
+				}).add(a.g.subreddit.prefix, a.g.subreddit.config).add(a.g.subredditFull.prefix, a.g.subreddit.config).add(a.g.profile.prefix, a.g.profile.config).add(a.g.profileFull.prefix, a.g.profile.config).add(a.g.mention.prefix, a.g.mention.config),
+				E = s()().tlds(i.a).set({
+					fuzzyIP: !0,
+					fuzzyEmail: !1
+				}).add(a.g.subreddit.prefix, a.g.subredditFullUrl.config).add(a.g.subredditFull.prefix, a.g.subredditFullUrl.config),
+				C = m.normalize;
+			m.normalize = e => {
+				C.call(m, e), !e.schema && e.url.startsWith("http:") && (e.url = `https:${e.url.slice(5)}`)
+			};
+			const x = (e, t) => {
+					return (g.match(e) || []).filter(e => {
+						const n = d(e.text);
+						return !n || n && t
+					})
+				},
+				y = e => {
+					return [...f.match(e) || [], ...h.match(e) || []].map(e => !d(e.text) && e.text.replace(a.a, "")).filter(e => e)
+				},
+				v = (e, t) => {
+					const n = e.match(t);
+					if (n && 1 === n.length && 0 === n[0].index && n[0].lastIndex === t.length) return n[0]
+				},
+				O = e => {
+					const t = m.match(e);
+					if (t && 1 === t.length && 0 === t[0].index) {
+						const n = t[0];
+						return n.lastIndex === e.length ? n : ((e, t) => {
+							const n = e.substring(t.lastIndex);
+							if (/.*\/\/.*\/.*/.test(t.url) && /^(\?|\!)+$/.test(n)) return t.lastIndex += n.length, t.url += n, t
+						})(e, n)
+					}
+				}
+		},
 		"./src/lib/memoizeByReference/index.ts": function(e, t, n) {
 			"use strict";
 			n.d(t, "a", (function() {
@@ -1492,8 +1575,8 @@
 				re = n("./node_modules/reselect/es/index.js");
 			const ie = Object(re.a)(e => Object(se.c)(e, {
 				experimentEligibilitySelector: se.a,
-				experimentName: oe.Ib
-			}), e => e === oe.vd);
+				experimentName: oe.Hb
+			}), e => e === oe.ud);
 			var ae = n("./src/reddit/selectors/experiments/contributeBeforeSignUp.ts"),
 				ce = n("./src/reddit/selectors/experiments/emailEnablement.ts"),
 				le = n("./src/reddit/selectors/platform.ts"),
@@ -4271,7 +4354,7 @@
 					let {
 						apiContext: o
 					} = n;
-					await e(s.f());
+					await e(s.e());
 					const {
 						api: d,
 						ids: u
@@ -6839,8 +6922,8 @@
 					const n = t ? `/r/${t}/search` : "/search",
 						o = `${t?"flair_name":"flair"}:"${e}"`;
 					return Object(d.a)(n, {
-						[y.p]: o,
-						[y.s]: t ? "1" : ""
+						[y.o]: o,
+						[y.r]: t ? "1" : ""
 					})
 				},
 				L = e => e.isFlairFilter ? c.a.createElement(v.default, {
@@ -18829,7 +18912,7 @@
 					}, o[t]) : null
 				};
 				if (e.isD2xPdpSideRailRecsEnabled) {
-					const t = e.d2xPdpSideRailRecsVariant === u.Hc.GreyRereddit ? e.reredditButtons : [];
+					const t = e.d2xPdpSideRailRecsVariant === u.Gc.GreyRereddit ? e.reredditButtons : [];
 					return s.a.createElement(S, {
 						reredditContent: t,
 						countryCode: e.countryCode
@@ -20326,7 +20409,7 @@
 				} = t;
 				return {
 					onSubscribe: () => e(i.d([n], !0)),
-					onSubscriptionsRequested: () => e(i.f()),
+					onSubscriptionsRequested: () => e(i.e()),
 					onUnsubscribe: () => e(i.d([n], !1)),
 					toggleEmailVerificationTooltip: () => e(Object(r.c)("user_follow"))
 				}
@@ -22511,7 +22594,7 @@
 					}
 				})),
 				$ = {
-					onGetInitialData: e => t => t(e ? h.d() : b.f()),
+					onGetInitialData: e => t => t(e ? h.d() : b.e()),
 					onGetSubredditAutocomplete: m.a,
 					openCommunityCreation: () => async (e, t) => {
 						Object(G.c)(t()), e(Object(p.h)(f.a.SUBREDDIT_CREATION_MODAL_ID))
@@ -33436,11 +33519,11 @@
 				c = n("./node_modules/reselect/es/index.js");
 			const l = Object(c.a)(e => Object(s.c)(e, {
 					experimentEligibilitySelector: e => Object(a.g)(e) && Object(r.f)(e),
-					experimentName: o.nc
+					experimentName: o.mc
 				}), i.a),
 				d = Object(c.a)(e => Object(s.c)(e, {
 					experimentEligibilitySelector: e => !Object(a.g)(e) && Object(r.f)(e),
-					experimentName: o.mc
+					experimentName: o.lc
 				}), i.a),
 				u = Object(c.a)(l, d, (e, t) => e || t),
 				p = Object(c.a)(l, d, (e, t) => !(!e && !t))
@@ -33494,28 +33577,28 @@
 			}));
 			var o = n("./src/reddit/constants/experiments.ts"),
 				s = n("./src/reddit/selectors/experiments/econ/simpleExperiment.ts");
-			const r = Object(s.a)(o.kd),
-				i = Object(s.a)(o.id),
-				a = Object(s.a)(o.ld),
-				c = Object(s.a)(o.hd),
-				l = Object(s.a)(o.gd),
-				d = Object(s.a)(o.nd),
-				u = Object(s.a)(o.md),
-				p = Object(s.a)(o.dd),
-				m = Object(s.a)(o.Xc),
-				h = Object(s.a)(o.Yc),
-				b = Object(s.a)(o.Vc),
-				f = Object(s.a)(o.Wc),
-				g = Object(s.a)(o.Zc),
-				E = Object(s.a)(o.Uc),
-				C = Object(s.a)(o.ed),
-				x = Object(s.a)(o.fd),
-				y = Object(s.a)(o.jd),
-				v = Object(s.a)(o.od),
-				O = Object(s.a)(o.pd),
-				_ = Object(s.a)(o.sd),
-				k = Object(s.a)(o.rd),
-				j = Object(s.a)(o.qd)
+			const r = Object(s.a)(o.jd),
+				i = Object(s.a)(o.hd),
+				a = Object(s.a)(o.kd),
+				c = Object(s.a)(o.gd),
+				l = Object(s.a)(o.fd),
+				d = Object(s.a)(o.md),
+				u = Object(s.a)(o.ld),
+				p = Object(s.a)(o.cd),
+				m = Object(s.a)(o.Wc),
+				h = Object(s.a)(o.Xc),
+				b = Object(s.a)(o.Uc),
+				f = Object(s.a)(o.Vc),
+				g = Object(s.a)(o.Yc),
+				E = Object(s.a)(o.Tc),
+				C = Object(s.a)(o.dd),
+				x = Object(s.a)(o.ed),
+				y = Object(s.a)(o.id),
+				v = Object(s.a)(o.nd),
+				O = Object(s.a)(o.od),
+				_ = Object(s.a)(o.rd),
+				k = Object(s.a)(o.qd),
+				j = Object(s.a)(o.pd)
 		},
 		"./src/reddit/selectors/experiments/loggedOutOneFeed.ts": function(e, t, n) {
 			"use strict";
@@ -33533,7 +33616,7 @@
 			const l = Object(o.a)(a.f, i.e, (e, t) => e && !t),
 				d = e => Object(r.c)(e, {
 					experimentEligibilitySelector: l,
-					experimentName: s.dc
+					experimentName: s.cc
 				}),
 				u = e => !!Object(c.a)(d(e))
 		},
@@ -33545,9 +33628,9 @@
 			var o = n("./src/reddit/constants/experiments.ts"),
 				s = n("./src/reddit/helpers/chooseVariant/index.ts");
 			const r = e => Object(s.c)(e, {
-				experimentName: o.pe,
+				experimentName: o.oe,
 				experimentEligibilitySelector: s.a
-			}) === o.ye.Enabled
+			}) === o.xe.Enabled
 		},
 		"./src/reddit/selectors/experiments/presence.ts": function(e, t, n) {
 			"use strict";
@@ -33559,8 +33642,8 @@
 			const r = e => {
 				return Object(s.c)(e, {
 					experimentEligibilitySelector: s.a,
-					experimentName: o.Ke
-				}) === o.vd
+					experimentName: o.Je
+				}) === o.ud
 			}
 		},
 		"./src/reddit/selectors/experiments/typingIndicators.ts": function(e, t, n) {
@@ -33582,29 +33665,29 @@
 					if (Object(i.a)(e)) return !1;
 					return Object(s.c)(e, {
 						experimentEligibilitySelector: r.e,
-						experimentName: o.Tf
-					}) === o.vd
+						experimentName: o.Sf
+					}) === o.ud
 				},
 				c = e => {
 					return Object(s.c)(e, {
 						experimentEligibilitySelector: r.e,
-						experimentName: o.Uf
-					}) === o.vd
+						experimentName: o.Tf
+					}) === o.ud
 				},
 				l = e => {
 					if (Object(i.a)(e)) return !1;
 					const t = Object(s.c)(e, {
 						experimentEligibilitySelector: r.e,
-						experimentName: o.Sf
+						experimentName: o.Rf
 					});
-					return t === o.Jf.TypingIndicators || t === o.Jf.IndicatorsPlusCTA
+					return t === o.If.TypingIndicators || t === o.If.IndicatorsPlusCTA
 				},
 				d = e => {
 					if (Object(i.a)(e)) return !1;
 					const t = Object(r.d)(e, {
-						experimentName: o.Sf
+						experimentName: o.Rf
 					});
-					return (null == t ? void 0 : t.variant) === o.Jf.IndicatorsPlusCTA
+					return (null == t ? void 0 : t.variant) === o.If.IndicatorsPlusCTA
 				}
 		},
 		"./src/reddit/selectors/gold/enabledFeatures.ts": function(e, t, n) {
@@ -34027,4 +34110,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.1ddf7456b59e0f775430.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.48d82965e93bfba7d388.js.map

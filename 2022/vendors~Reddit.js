@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/vendors~Reddit.2afa622b09f2f960d93b.js
-// Retrieved at 6/27/2022, 10:20:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/vendors~Reddit.ae7adef08521167abf72.js
+// Retrieved at 6/27/2022, 2:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["vendors~Reddit"], {
 		"./node_modules/@r/frames/compiled.js": function(e, o, r) {
@@ -34,11 +34,11 @@
 					e.addEventListener ? e.addEventListener(o, r, t) : e.attachEvent && e.attachEvent("on" + o, r)
 				}
 
-				function g(o, r) {
+				function m(o, r) {
 					e.removeEventListener ? e.removeEventListener(o, r) : e.detachEvent && e.detachEvent("on" + o, r)
 				}
 
-				function m(e) {
+				function g(e) {
 					return /\*/.test(e)
 				}
 				var _ = o.postMessage = function(e, o, r) {
@@ -61,7 +61,7 @@
 						};
 						return h(o, n), {
 							off: function() {
-								g(o, n)
+								m(o, n)
 							}
 						}
 					},
@@ -87,7 +87,7 @@
 					}).prototype = e.Event.prototype
 				}
 				o.addPostMessageOrigin = function(e) {
-					m(e) ? d = [t] : -1 === d.indexOf(e) && (y(t), d.push(e), l = u(d))
+					g(e) ? d = [t] : -1 === d.indexOf(e) && (y(t), d.push(e), l = u(d))
 				};
 
 				function w(o) {
@@ -113,7 +113,7 @@
 					-1 === c.indexOf(e) && (c.push(e), f = i(c)), v || (h("message", w), v = !0)
 				};
 				o.stopListening = function(e) {
-					var o = c.indexOf(e); - 1 !== o && (c.splice(o, 1), c.length ? f = i(c) : (g("message", w), v = !1))
+					var o = c.indexOf(e); - 1 !== o && (c.splice(o, 1), c.length ? f = i(c) : (m("message", w), v = !1))
 				}, o.proxy = function(e, o) {
 					E(e), Array.isArray(o) || (o = [o]);
 					var r = p[e];
@@ -252,7 +252,7 @@
 				s[t++] = v >>> 24 & 255, s[t++] = v >>> 16 & 255, s[t++] = v >>> 8 & 255, s[t++] = 255 & v;
 				var h = c / 4294967296 * 1e4 & 268435455;
 				s[t++] = h >>> 8 & 255, s[t++] = 255 & h, s[t++] = h >>> 24 & 15 | 16, s[t++] = h >>> 16 & 255, s[t++] = l >>> 8 | 128, s[t++] = 255 & l;
-				for (var g = e.node || a, m = 0; m < 6; ++m) s[t + m] = g[m];
+				for (var m = e.node || a, g = 0; g < 6; ++g) s[t + g] = m[g];
 				return o || n(s)
 			}
 		},
@@ -327,7 +327,7 @@
 			var p = r("./node_modules/invariant/browser.js"),
 				v = r.n(p),
 				h = {},
-				g = Object.create(null, {
+				m = Object.create(null, {
 					errorReporter: {
 						configurable: !1,
 						get: function() {
@@ -342,7 +342,7 @@
 					}
 				});
 
-			function m(e) {
+			function g(e) {
 				if (void 0 === e) throw new ReferenceError("this hasn't been initialised - super() hasn't been called");
 				return e
 			}
@@ -374,26 +374,26 @@
 
 					function t() {
 						for (var o, r = arguments.length, t = new Array(r), n = 0; n < r; n++) t[n] = arguments[n];
-						return _(m(o = e.call.apply(e, [this].concat(t)) || this), "handleChange", (function(e) {
+						return _(g(o = e.call.apply(e, [this].concat(t)) || this), "handleChange", (function(e) {
 							o.props.onChange(e, o.externalUnobserve)
-						})), _(m(o), "handleNode", (function(e) {
+						})), _(g(o), "handleNode", (function(e) {
 							var r = o.props.children;
 							if (null != r) {
 								var t = r.ref;
 								t && ("function" == typeof t ? t(e) : "object" == typeof t && (t.current = e))
 							}
 							o.targetNode = e && Object(s.findDOMNode)(e)
-						})), _(m(o), "observe", (function() {
-							return null != o.props.children && !o.props.disabled && (o.targetNode ? (o.observer = f(E(o.props)), o.target = o.targetNode, e = m(o), u.has(e.observer) || u.set(e.observer, new Set), u.get(e.observer).add(e), e.observer.observe(e.target), !0) : (g.errorReporter("ReactIntersectionObserver: Can't find DOM node in the provided children. Make sure to render at least one DOM node in the tree."), !1));
+						})), _(g(o), "observe", (function() {
+							return null != o.props.children && !o.props.disabled && (o.targetNode ? (o.observer = f(E(o.props)), o.target = o.targetNode, e = g(o), u.has(e.observer) || u.set(e.observer, new Set), u.get(e.observer).add(e), e.observer.observe(e.target), !0) : (m.errorReporter("ReactIntersectionObserver: Can't find DOM node in the provided children. Make sure to render at least one DOM node in the tree."), !1));
 							var e
-						})), _(m(o), "unobserve", (function(e) {
+						})), _(g(o), "unobserve", (function(e) {
 							! function(e, o) {
 								if (u.has(e.observer)) {
 									var r = u.get(e.observer);
 									r.delete(e) && (r.size > 0 ? e.observer.unobserve(o) : (e.observer.disconnect(), u.delete(e.observer)))
 								}
-							}(m(o), e)
-						})), _(m(o), "externalUnobserve", (function() {
+							}(g(o), e)
+						})), _(g(o), "externalUnobserve", (function() {
 							o.unobserve(o.targetNode)
 						})), o
 					}
@@ -579,6 +579,15 @@
 				return void 0 === n ? t(e, o, void 0, r) : !!n
 			}
 		},
+		"./node_modules/lodash/map.js": function(e, o, r) {
+			var t = r("./node_modules/lodash/_arrayMap.js"),
+				n = r("./node_modules/lodash/_baseIteratee.js"),
+				s = r("./node_modules/lodash/_baseMap.js"),
+				a = r("./node_modules/lodash/isArray.js");
+			e.exports = function(e, o) {
+				return (a(e) ? t : s)(e, n(o, 3))
+			}
+		},
 		"./node_modules/lodash/negate.js": function(e, o) {
 			var r = "Expected a function";
 			e.exports = function(e) {
@@ -730,4 +739,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/vendors~Reddit.2afa622b09f2f960d93b.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/vendors~Reddit.ae7adef08521167abf72.js.map

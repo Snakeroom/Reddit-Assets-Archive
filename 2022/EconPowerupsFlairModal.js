@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/EconPowerupsFlairModal.015953b7987c53feb52c.js
-// Retrieved at 6/27/2022, 1:00:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/EconPowerupsFlairModal.7e588798a49b83a444bb.js
+// Retrieved at 6/27/2022, 2:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["EconPowerupsFlairModal"], {
 		"./src/reddit/actions/economics/powerups/flairs/index.ts": function(e, t, r) {
@@ -632,7 +632,7 @@
 				q = r.n(G);
 			const {
 				fbt: z
-			} = r("./node_modules/fbt/lib/FbtPublic.js"), R = e => {
+			} = r("./node_modules/fbt/lib/FbtPublic.js"), Q = e => {
 				let {
 					flair: t,
 					onSelect: r
@@ -691,7 +691,7 @@
 				}))
 			};
 			var V = r("./src/reddit/components/Econ/PowerupsFlair/PowerupsFlairModal/OldAchievementFlairs.m.less"),
-				Q = r.n(V);
+				R = r.n(V);
 			const {
 				fbt: K
 			} = r("./node_modules/fbt/lib/FbtPublic.js"), W = e => {
@@ -720,15 +720,15 @@
 						b(Object(d.g)("user_flair_picker"))
 					};
 				return Object(C.a)(S.a), o.a.createElement("div", {
-					className: Object(i.a)(Q.a.container, t)
+					className: Object(i.a)(R.a.container, t)
 				}, o.a.createElement("h4", {
-					className: Q.a.achievementsHeading
+					className: R.a.achievementsHeading
 				}, o.a.createElement(N.a, {
-					className: Q.a.headingPowerupsBolt
+					className: R.a.headingPowerupsBolt
 				}), K._("Achievements", null, {
 					hk: "1DnL4g"
 				})), o.a.createElement("p", {
-					className: Q.a.achievementsDescription
+					className: R.a.achievementsDescription
 				}, (() => u && !p ? K._("Unlock the Powerup Supporter achievement when you Powerup this community", null, {
 					hk: "2ZIvgm"
 				}) : u ? K._("Unlocked with Powerups! Choose the achievement you’d like to highlight.", null, {
@@ -736,8 +736,8 @@
 				}) : K._("Powerup to unlock community achievements", null, {
 					hk: "1oPooH"
 				}))()), o.a.createElement("div", {
-					className: Q.a.achievementsList
-				}, c.map(e => o.a.createElement(R, {
+					className: R.a.achievementsList
+				}, c.map(e => o.a.createElement(Q, {
 					flair: e,
 					key: e.type,
 					onSelect: f
@@ -747,7 +747,7 @@
 					}
 				}) : u ? null : o.a.createElement(T.t, {
 					priority: T.c.Primary,
-					className: Q.a.powerupButton,
+					className: R.a.powerupButton,
 					isFullWidth: !0,
 					onClick: () => {
 						n(Object(m.x)()), v()
@@ -777,7 +777,7 @@
 					className: Z.a.subtitle
 				}, s), o.a.createElement("div", {
 					className: Z.a.flairsList
-				}, i.map(e => o.a.createElement(R, {
+				}, i.map(e => o.a.createElement(Q, {
 					flair: e,
 					key: e.type,
 					onSelect: n
@@ -1442,8 +1442,8 @@
 				d = e => o.includes(e),
 				c = Object(s.a)(e => Object(n.c)(e, {
 					experimentEligibilitySelector: n.a,
-					experimentName: i.Rd
-				}), e => e === i.vd)
+					experimentName: i.Qd
+				}), e => e === i.ud)
 		},
 		"./src/reddit/selectors/gold/powerups/flairs.ts": function(e, t, r) {
 			"use strict";
@@ -1575,4 +1575,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EconPowerupsFlairModal.015953b7987c53feb52c.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EconPowerupsFlairModal.7e588798a49b83a444bb.js.map

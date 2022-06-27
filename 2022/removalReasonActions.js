@@ -1,7 +1,16 @@
-// https://www.redditstatic.com/desktop2x/removalReasonActions.d46d3ccb345003c6dda7.js
-// Retrieved at 6/27/2022, 1:00:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/removalReasonActions.bbf60d9973d17f0791a6.js
+// Retrieved at 6/27/2022, 2:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["removalReasonActions"], {
+		"./node_modules/lodash/map.js": function(e, t, o) {
+			var n = o("./node_modules/lodash/_arrayMap.js"),
+				s = o("./node_modules/lodash/_baseIteratee.js"),
+				r = o("./node_modules/lodash/_baseMap.js"),
+				i = o("./node_modules/lodash/isArray.js");
+			e.exports = function(e, t) {
+				return (i(e) ? n : r)(e, s(t, 3))
+			}
+		},
 		"./src/lib/scroll/index.ts": function(e, t, o) {
 			"use strict";
 			o.d(t, "b", (function() {
@@ -57,9 +66,9 @@
 			})), o.d(t, "o", (function() {
 				return je
 			})), o.d(t, "s", (function() {
-				return xe
-			})), o.d(t, "v", (function() {
 				return _e
+			})), o.d(t, "v", (function() {
+				return xe
 			})), o.d(t, "p", (function() {
 				return ve
 			})), o.d(t, "u", (function() {
@@ -114,8 +123,8 @@
 				j = o("./src/reddit/components/RichTextEditor/RTEState/index.tsx"),
 				g = o("./src/reddit/constants/adEvents.ts"),
 				S = o("./src/reddit/constants/localStorage.ts"),
-				x = o("./src/redditGQL/operations/CommentToxicity.json"),
-				_ = o("./src/lib/makeApiRequest/index.ts"),
+				_ = o("./src/redditGQL/operations/CommentToxicity.json"),
+				x = o("./src/lib/makeApiRequest/index.ts"),
 				y = o("./src/lib/makeGqlRequest/index.ts"),
 				C = o("./src/lib/omitHeaders/index.ts"),
 				v = o("./src/reddit/constants/headers.ts"),
@@ -140,7 +149,7 @@
 						})
 					}
 					return Object(y.a)(e, {
-						...x,
+						..._,
 						variables: {
 							subredditName: t,
 							markdown: s,
@@ -154,7 +163,7 @@
 						return_rtjson: !0,
 						thing_id: t
 					};
-					return n === T.i.MARKDOWN ? i.text = o.text : (i.text = null, i.richtext_json = r), Object(_.a)(Object(C.a)(e, [v.a]), {
+					return n === T.i.MARKDOWN ? i.text = o.text : (i.text = null, i.richtext_json = r), Object(x.a)(Object(C.a)(e, [v.a]), {
 						method: s.jb.POST,
 						endpoint: Object(R.a)(Object(w.a)(Object(A.a)(`${e.apiUrl}/api/comment.json`))),
 						data: i
@@ -241,8 +250,8 @@
 				re = o("./node_modules/reselect/es/index.js");
 			const ie = Object(re.a)(e => Object(se.c)(e, {
 				experimentEligibilitySelector: se.a,
-				experimentName: ne.Ib
-			}), e => e === ne.vd);
+				experimentName: ne.Hb
+			}), e => e === ne.ud);
 			var ce = o("./src/reddit/selectors/experiments/contributeBeforeSignUp.ts"),
 				ae = o("./src/reddit/selectors/experiments/emailEnablement.ts"),
 				de = o("./src/reddit/selectors/platform.ts"),
@@ -279,7 +288,7 @@
 					const s = n.ok && n.body,
 						r = s && s.comment && s.comment.id;
 					await z.f(e, o, t, r)
-				}, xe = "Toxicity_Warning__Modal", _e = e => async (t, o, n) => {
+				}, _e = "Toxicity_Warning__Modal", xe = e => async (t, o, n) => {
 					let {
 						gqlContext: s
 					} = n;
@@ -292,7 +301,7 @@
 						editorMode: d
 					} = e;
 					if (H.d.enableToxicityWarning(r)) {
-						if (!(await P(s(), c, a, d))) return void t(Object(m.i)(xe))
+						if (!(await P(s(), c, a, d))) return void t(Object(m.i)(_e))
 					}
 					t(ve(e))
 				}, ye = e => e.rteState ? j.a.toRichTextJSON(e.rteState) : e.rtJson || e.text, Ce = e => {
@@ -301,7 +310,7 @@
 						document: t
 					})
 				}, ve = e => async (t, o) => {
-					t(Object(m.g)(xe));
+					t(Object(m.g)(_e));
 					const n = o(),
 						s = Object(ce.a)(n),
 						r = Object(ce.c)(n);
@@ -336,8 +345,8 @@
 					} = e;
 					return async (e, j, S) => {
 						let {
-							apiContext: x,
-							gqlContext: _
+							apiContext: _,
+							gqlContext: x
 						} = S;
 						const y = j(),
 							C = y.features.comments.submit.pending[d];
@@ -349,13 +358,13 @@
 						const v = y.user.account.displayText,
 							R = l.commentMode;
 						let k;
-						if (b) k = await Object(V.i)(x(), i, l, v), e(Object(O.a)({
+						if (b) k = await Object(V.i)(_(), i, l, v), e(Object(O.a)({
 							streamId: i,
 							level: k.body.automuteLevel
 						}));
 						else {
 							const e = t && o ? o : Ce(l);
-							k = Re(R, y) ? await K(_(), i, null, l, R, e) : await L(x(), i, l, R, e)
+							k = Re(R, y) ? await K(x(), i, null, l, R, e) : await L(_(), i, l, R, e)
 						}
 						if (k.ok) {
 							let o;
@@ -408,7 +417,7 @@
 					} = e, u = o(), p = Object(de.e)(u);
 					let b = "";
 					if (p && (b = p.name), H.d.enableToxicityWarning(u)) {
-						if (!(await P(s(), b, d, l))) return void t(Object(m.i)(xe))
+						if (!(await P(s(), b, d, l))) return void t(Object(m.i)(_e))
 					}
 					t(Ie({
 						commentsPageKey: i,
@@ -419,7 +428,7 @@
 						editorMode: l
 					}))
 				}, Ie = e => async (t, o) => {
-					t(Object(m.g)(xe));
+					t(Object(m.g)(_e));
 					const n = o(),
 						s = Object(ce.a)(n),
 						r = Object(ce.c)(n);
@@ -456,11 +465,11 @@
 						draft: O
 					}));
 					const S = O.commentMode,
-						x = t && o ? o : Ce(O);
-					let _;
-					if ((_ = Re(S, j) ? await K(l(), null, m, O, S, x) : await L(d(), m, O, S, x)).ok) {
+						_ = t && o ? o : Ce(O);
+					let x;
+					if ((x = Re(S, j) ? await K(l(), null, m, O, S, _) : await L(d(), m, O, S, _)).ok) {
 						if (r(je({
-								..._.body,
+								...x.body,
 								parentCommentId: m,
 								commentsPageKey: u,
 								draftKey: b,
@@ -470,7 +479,7 @@
 							Object(c.a)(!!e)
 						}
 					} else {
-						if (_.error && _.error.type === s.Kb) {
+						if (x.error && x.error.type === s.Kb) {
 							const e = Object(oe.b)(j, {
 								commentId: m
 							});
@@ -480,10 +489,10 @@
 						}
 						r(ge({
 							draftKey: b,
-							error: _.error
+							error: x.error
 						}))
 					}
-					Se(i(), u, h, _), Object(f.d)(), t && Object(Q.a)()
+					Se(i(), u, h, x), Object(f.d)(), t && Object(Q.a)()
 				}, we = () => async e => {
 					const t = Object(Q.b)();
 					if (t) {
@@ -711,7 +720,7 @@
 									return_rtjson: !0,
 									thing_id: t
 								};
-								return r === T.i.MARKDOWN ? i.text = o.text : (i.text = null, i.richtext_json = n), Object(_.a)(Object(C.a)(e, [v.a]), {
+								return r === T.i.MARKDOWN ? i.text = o.text : (i.text = null, i.richtext_json = n), Object(x.a)(Object(C.a)(e, [v.a]), {
 									endpoint: Object(R.a)(Object(A.a)(Object(w.a)(`${e.apiUrl}/api/editusertext`))),
 									method: s.jb.POST,
 									data: i
@@ -757,7 +766,7 @@
 					o(ze({
 						id: e
 					})), z.a(e, c);
-					const a = await ((e, t) => Object(_.a)(Object(C.a)(e, [v.a]), {
+					const a = await ((e, t) => Object(x.a)(Object(C.a)(e, [v.a]), {
 						endpoint: Object(R.a)(`${e.apiUrl}/api/del`),
 						method: s.jb.POST,
 						data: {
@@ -840,9 +849,9 @@
 		"./src/reddit/actions/comment/moderation.ts": function(e, t, o) {
 			"use strict";
 			o.d(t, "d", (function() {
-				return x
-			})), o.d(t, "c", (function() {
 				return _
+			})), o.d(t, "c", (function() {
+				return x
 			})), o.d(t, "f", (function() {
 				return y
 			})), o.d(t, "a", (function() {
@@ -875,7 +884,7 @@
 				j = o("./src/reddit/actions/comment/index.ts"),
 				g = o("./src/reddit/actions/comment/constants.ts");
 			const S = Object(r.a)(g.p),
-				x = e => async (t, o, n) => {
+				_ = e => async (t, o, n) => {
 					let {
 						apiContext: s
 					} = n;
@@ -884,7 +893,7 @@
 							commentId: e
 						}))
 					})(e))
-				}, _ = e => async (t, o, s) => {
+				}, x = e => async (t, o, s) => {
 					let {
 						apiContext: r
 					} = s;
@@ -1105,7 +1114,7 @@
 					a.m(c(), t);
 					const g = t === d.i.MARKDOWN,
 						S = t === d.i.RICH_TEXT,
-						x = u.k;
+						_ = u.k;
 					if (g && Object(l.G)(o)) return s(O({
 						editorKey: e,
 						editorMode: d.i.MARKDOWN,
@@ -1116,13 +1125,13 @@
 						editorMode: d.i.RICH_TEXT,
 						content: l.i
 					})), void s(h(t));
-					s(p(x));
-					const _ = await Object(i.a)(j(), t, g ? JSON.stringify(o) : o);
-					_.ok ? (s(b(x)), s(O({
+					s(p(_));
+					const x = await Object(i.a)(j(), t, g ? JSON.stringify(o) : o);
+					x.ok ? (s(b(_)), s(O({
 						editorKey: e,
 						editorMode: t,
-						content: _.body.output
-					})), s(h(t))) : (s(b(x)), s(Object(r.f)({
+						content: x.body.output
+					})), s(h(t))) : (s(b(_)), s(Object(r.f)({
 						duration: r.a,
 						kind: m.b.Error,
 						text: n.fbt._("Something went wrong", null, {
@@ -1223,9 +1232,9 @@
 			})), o.d(t, "removalReasonPrivateMessageSuccess", (function() {
 				return Se
 			})), o.d(t, "removalReasonPublicMessageSuccess", (function() {
-				return xe
-			})), o.d(t, "removalReasonMessageFailed", (function() {
 				return _e
+			})), o.d(t, "removalReasonMessageFailed", (function() {
+				return xe
 			})), o.d(t, "submitRemovalReason", (function() {
 				return ye
 			})), o.d(t, "submitBulkRemovalReason", (function() {
@@ -1331,9 +1340,9 @@
 						return e
 				}
 			};
-			const x = {};
-			var _ = function() {
-				let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : x,
+			const _ = {};
+			var x = function() {
+				let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : _,
 					t = arguments.length > 1 ? arguments[1] : void 0;
 				switch (t.type) {
 					case i: {
@@ -1393,7 +1402,7 @@
 				C = Object(r.c)({
 					api: j,
 					models: S,
-					reasonOrder: _,
+					reasonOrder: x,
 					removedItemIds: y
 				}),
 				v = o("./src/lib/constants/index.ts"),
@@ -1538,7 +1547,7 @@
 						subredditId: e,
 						itemIds: t
 					})), o(Object(N.i)(P.a.ADD_REMOVAL_REASON))
-				}, fe = Object(R.a)("REMOVALREASONS__SUBMIT_PENDING"), he = Object(R.a)("REMOVALREASONS__SUBMIT_SUCCESS"), je = Object(R.a)("REMOVALREASONS__SUBMIT_FAILED"), ge = Object(R.a)("REMOVALREASONS__MESSAGE_PENDING"), Se = Object(R.a)("REMOVALREASONS__MESSAGE_PRIVATE_SUCCESS"), xe = Object(R.a)("REMOVALREASONS__MESSAGE_PUBLIC_SUCCESS"), _e = Object(R.a)("REMOVALREASONS__MESSAGE_FAILED"), ye = (e, t, o, n, s) => async (r, i, c) => {
+				}, fe = Object(R.a)("REMOVALREASONS__SUBMIT_PENDING"), he = Object(R.a)("REMOVALREASONS__SUBMIT_SUCCESS"), je = Object(R.a)("REMOVALREASONS__SUBMIT_FAILED"), ge = Object(R.a)("REMOVALREASONS__MESSAGE_PENDING"), Se = Object(R.a)("REMOVALREASONS__MESSAGE_PRIVATE_SUCCESS"), _e = Object(R.a)("REMOVALREASONS__MESSAGE_PUBLIC_SUCCESS"), xe = Object(R.a)("REMOVALREASONS__MESSAGE_FAILED"), ye = (e, t, o, n, s) => async (r, i, c) => {
 					let {
 						apiContext: a
 					} = c;
@@ -1574,7 +1583,7 @@
 								i = await G(a(), Object(Q.h)(s, u), u);
 							if (i.ok) {
 								if (n === Q.f.Public) {
-									if (r(xe()), i.body) {
+									if (r(_e()), i.body) {
 										const e = Object(H.a)(i.body),
 											t = {
 												comment: e,
@@ -1624,7 +1633,7 @@
 								} else r(Se());
 								return !0
 							}
-							return r(_e(i.error)), !1
+							return r(xe(i.error)), !1
 						}
 					} else r(je(f.error)), r(b({
 						[m]: {
@@ -1675,7 +1684,7 @@
 									type: s
 								},
 								r = await G(d(), Object(Q.h)(n, Q.e.Bulk), Q.e.Bulk);
-							r.ok ? (i(Se()), i(u)) : i(_e(r.error))
+							r.ok ? (i(Se()), i(u)) : i(xe(r.error))
 						} else i(u)
 					} else i(je(b.error))
 				}
@@ -1787,8 +1796,8 @@
 				}))
 			};
 			var S = o("./src/reddit/components/ConfirmUserActionModal/index.tsx"),
-				x = o("./src/reddit/components/InfoTextTooltip/index.tsx"),
-				_ = o("./src/reddit/components/LinkOrOverlayLink/index.tsx"),
+				_ = o("./src/reddit/components/InfoTextTooltip/index.tsx"),
+				x = o("./src/reddit/components/LinkOrOverlayLink/index.tsx"),
 				y = o("./src/reddit/components/OverlayAwareTooltip/index.tsx"),
 				C = o("./src/reddit/components/TrackingHelper/index.tsx"),
 				v = o("./src/reddit/controls/Dropdown/index.tsx"),
@@ -2059,7 +2068,7 @@
 							n = Object(E.b)(t),
 							s = d.v[e],
 							i = s ? s() : "";
-						return r.a.createElement(_.a, {
+						return r.a.createElement(x.a, {
 							className: V.a.ViewFullLinkOrOverlayLink,
 							isOverlay: p,
 							key: e,
@@ -2090,7 +2099,7 @@
 						id: $,
 						onMouseEnter: C,
 						onMouseLeave: l
-					}, r.a.createElement(x.c, {
+					}, r.a.createElement(_.c, {
 						className: V.a.Tooltip,
 						text: n.fbt._("Suggested sort defaults Redditors to a specific way of sorting comments within this post", null, {
 							hk: "3KM0ma"
@@ -2190,8 +2199,8 @@
 				}),
 				g = Object(a.a)(h, [c.a.Click, c.a.Keydown]),
 				S = Object(a.a)(f, [c.a.Click, c.a.Keydown]),
-				x = Object(r.b)(j);
-			t.c = x(e => {
+				_ = Object(r.b)(j);
+			t.c = _(e => {
 				const {
 					caretOnTop: t
 				} = e;
@@ -2562,7 +2571,7 @@
 			})), o.d(t, "i", (function() {
 				return S
 			})), o.d(t, "h", (function() {
-				return x
+				return _
 			}));
 			var n = o("./src/reddit/constants/tracking.ts"),
 				s = o("./src/reddit/helpers/correlationIdTracker.ts"),
@@ -2665,7 +2674,7 @@
 					search: {
 						query: e
 					}
-				}), x = () => e => ({
+				}), _ = () => e => ({
 					...l(e),
 					action: "select",
 					noun: "gif_tooltip_result"
@@ -2813,4 +2822,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/removalReasonActions.d46d3ccb345003c6dda7.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/removalReasonActions.bbf60d9973d17f0791a6.js.map

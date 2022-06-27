@@ -1,7 +1,16 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-NotificationUnit-Button.6e7fb5ede1d87d92aa49.js
-// Retrieved at 6/27/2022, 1:00:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-NotificationUnit-Button.128f12391560b4d790fa.js
+// Retrieved at 6/27/2022, 2:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-NotificationUnit-Button"], {
+		"./node_modules/lodash/map.js": function(t, e, n) {
+			var o = n("./node_modules/lodash/_arrayMap.js"),
+				r = n("./node_modules/lodash/_baseIteratee.js"),
+				i = n("./node_modules/lodash/_baseMap.js"),
+				s = n("./node_modules/lodash/isArray.js");
+			t.exports = function(t, e) {
+				return (s(t) ? o : i)(t, r(e, 3))
+			}
+		},
 		"./src/lib/scroll/index.ts": function(t, e, n) {
 			"use strict";
 			n.d(e, "b", (function() {
@@ -226,8 +235,8 @@
 				it = n("./node_modules/reselect/es/index.js");
 			const st = Object(it.a)(t => Object(rt.c)(t, {
 				experimentEligibilitySelector: rt.a,
-				experimentName: ot.Ib
-			}), t => t === ot.vd);
+				experimentName: ot.Hb
+			}), t => t === ot.ud);
 			var ct = n("./src/reddit/selectors/experiments/contributeBeforeSignUp.ts"),
 				at = n("./src/reddit/selectors/experiments/emailEnablement.ts"),
 				dt = n("./src/reddit/selectors/platform.ts"),
@@ -2826,4 +2835,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-NotificationUnit-Button.6e7fb5ede1d87d92aa49.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-NotificationUnit-Button.128f12391560b4d790fa.js.map

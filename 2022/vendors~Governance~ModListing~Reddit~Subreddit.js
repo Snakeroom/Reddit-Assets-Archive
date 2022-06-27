@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/vendors~Governance~ModListing~Reddit~Subreddit.0e9ede9b8bb7859c3569.js
-// Retrieved at 5/4/2022, 12:00:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/vendors~Governance~ModListing~Reddit~Subreddit.7bdf8898294ae80af869.js
+// Retrieved at 6/27/2022, 2:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["vendors~Governance~ModListing~Reddit~Subreddit"], {
 		"./node_modules/@reddit/i18n-tools/runtime/helpers/locale/index.js": function(t, e, r) {
@@ -356,13 +356,6 @@
 				if (!h) return -1;
 				var l = h - 1;
 				return void 0 !== r && (l = a(r), l = r < 0 ? n(h + l, 0) : o(l, h - 1)), i(t, s(e, 3), l, !0)
-			}
-		},
-		"./node_modules/lodash/flatMap.js": function(t, e, r) {
-			var i = r("./node_modules/lodash/_baseFlatten.js"),
-				s = r("./node_modules/lodash/map.js");
-			t.exports = function(t, e) {
-				return i(s(t, e), 1)
 			}
 		},
 		"./node_modules/lodash/invert.js": function(t, e, r) {
@@ -6509,4 +6502,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/vendors~Governance~ModListing~Reddit~Subreddit.0e9ede9b8bb7859c3569.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/vendors~Governance~ModListing~Reddit~Subreddit.7bdf8898294ae80af869.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Settings.f8e0d99a26f093097d66.js
-// Retrieved at 6/27/2022, 1:00:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Settings.c4061455e602c9c0194c.js
+// Retrieved at 6/27/2022, 2:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Settings"], {
 		"./node_modules/moment/locale sync recursive ^\\.\\/.*$": function(e, t, n) {
@@ -1635,8 +1635,8 @@
 						{
 							url: c
 						} = a,
-						l = Object(o.a)(c).get(T.c);
-					if (l && (t(Object(r.c)(Object(i.a)(c, [T.c]))), Object(L.a)(e))) {
+						l = Object(o.a)(c).get(T.b);
+					if (l && (t(Object(r.c)(Object(i.a)(c, [T.b]))), Object(L.a)(e))) {
 						const e = s.fbt._("Connected accounts", null, {
 							hk: "bdpfW"
 						});
@@ -13538,9 +13538,9 @@
 					},
 					isDspEnabled: e => {
 						return Object(re.c)(e, {
-							experimentName: se.Qc,
+							experimentName: se.Pc,
 							experimentEligibilitySelector: re.a
-						}) === se.vd
+						}) === se.ud
 					}
 				}),
 				ho = Object(ge.u)(),
@@ -14076,7 +14076,7 @@
 			const o = e => Object(r.c)(e, {
 				experimentName: s.G,
 				experimentEligibilitySelector: () => Object(a.P)(e)
-			}) === s.vd
+			}) === s.ud
 		},
 		"./src/reddit/selectors/experiments/econ/marketplace.ts": function(e, t, n) {
 			"use strict";
@@ -14090,13 +14090,13 @@
 			const a = e => {
 					return !(Object(r.c)(e, {
 						experimentEligibilitySelector: r.a,
-						experimentName: s.be
-					}) === s.vd)
+						experimentName: s.ae
+					}) === s.ud)
 				},
 				o = e => Object(r.c)(e, {
 					experimentEligibilitySelector: r.a,
-					experimentName: s.ce
-				}) === s.vd
+					experimentName: s.be
+				}) === s.ud
 		},
 		"./src/reddit/selectors/gold/productOffers.ts": function(e, t, n) {
 			"use strict";
@@ -14266,4 +14266,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Settings.f8e0d99a26f093097d66.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Settings.c4061455e602c9c0194c.js.map

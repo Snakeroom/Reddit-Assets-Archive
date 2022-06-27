@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/NewCommentPill.12ae2c7d76abfc803282.js
-// Retrieved at 5/31/2022, 4:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/NewCommentPill.4a6c17b6a26f92e76ab3.js
+// Retrieved at 6/27/2022, 2:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["NewCommentPill"], {
 		"./node_modules/lodash/_arraySampleSize.js": function(e, t, s) {
@@ -67,8 +67,8 @@
 				C = s("./src/lib/constants/index.ts"),
 				g = s("./src/lib/makeCommentsPageKey/index.ts"),
 				N = s("./src/lib/scroll/index.ts"),
-				x = s("./src/reddit/components/NewCommentPill/index.m.less"),
-				y = s.n(x);
+				y = s("./src/reddit/components/NewCommentPill/index.m.less"),
+				x = s.n(y);
 			const E = (e, t) => {
 				let {
 					type: s,
@@ -80,21 +80,21 @@
 				let {
 					commentId: t,
 					postId: s,
-					isNightMode: x,
+					isNightMode: y,
 					isOverlay: v
 				} = e;
 				const R = Object(o.useRef)(null),
 					{
 						post: S
 					} = Object(O.a)() || {},
-					[D, T] = Object(o.useReducer)(E, 0),
-					P = Object(c.e)(h.a),
-					w = Object(c.e)(e => Object(_.a)(e) || Object(_.c)(e)),
+					[w, D] = Object(o.useReducer)(E, 0),
+					T = Object(c.e)(h.a),
+					P = Object(c.e)(e => Object(_.a)(e) || Object(_.c)(e)),
 					[U, M] = Object(o.useState)(!1);
 				Object(o.useEffect)(() => {
-					if (!S || !w) return;
+					if (!S || !P) return;
 					b.d.addListeners(b.b, () => M(!0)), b.d.addListeners(b.a, () => M(!1))
-				}, [S, w]);
+				}, [S, P]);
 				const [A, k] = Object(o.useState)(!1), K = Object(o.useRef)(), L = Object(o.useRef)(), B = Object(o.useRef)(2), W = Object(o.useMemo)(() => ({
 					input: {
 						channel: {
@@ -112,7 +112,7 @@
 						if (!S) return;
 						k(!1), K.current && (clearTimeout(K.current), K.current = null), L.current && (L.current = null), B.current = 2, (() => {
 							const e = new URLSearchParams(location.search);
-							e.get(j.x) !== C.t.NEW && (e.set(j.x, C.t.NEW), z(Object(i.b)(Object(r.c)({
+							e.get(j.w) !== C.t.NEW && (e.set(j.w, C.t.NEW), z(Object(i.b)(Object(r.c)({
 								pathname: location.pathname,
 								search: e.toString()
 							}, {
@@ -128,16 +128,16 @@
 								hasSortParam: !0,
 								sort: C.t.NEW
 							}, C.t.NEW))
-						})(), Object(N.a)(!!v), R.current = setTimeout(() => T({
+						})(), Object(N.a)(!!v), R.current = setTimeout(() => D({
 							type: "reset"
 						}), 1e3)
 					}, [S]);
 				Object(o.useEffect)(() => {
 					const e = B.current <= 0;
-					if (!D || e) return;
+					if (!w || e) return;
 					const t = Date.now();
 					(!L.current || t - L.current >= 25e3) && k(!0)
-				}, [D]), Object(o.useEffect)(() => (A && S && (K.current = setTimeout(() => {
+				}, [w]), Object(o.useEffect)(() => (A && S && (K.current = setTimeout(() => {
 					k(!1), L.current = Date.now(), B.current -= 1
 				}, 5e3)), () => {
 					K.current && clearTimeout(K.current)
@@ -146,43 +146,43 @@
 					const {
 						topLevelCommentCountChange: t
 					} = e.subscribe.data;
-					t && T({
+					t && D({
 						type: "add",
 						delta: t
 					})
 				}, []);
-				return P ? a.a.createElement(a.a.Fragment, null, a.a.createElement(d.a, {
+				return T ? a.a.createElement(a.a.Fragment, null, a.a.createElement(d.a, {
 					variables: W,
 					onData: J,
 					queryKey: "topLevelCommentCountChange"
 				}), a.a.createElement("div", {
-					className: Object(I.a)(y.a.wrapper, {
-						[y.a.isOverlayWrapper]: v,
-						[y.a.wrapperVisible]: A,
-						[y.a.joinOptimizationsM2]: !v && w && U
+					className: Object(I.a)(x.a.wrapper, {
+						[x.a.isOverlayWrapper]: v,
+						[x.a.wrapperVisible]: A,
+						[x.a.joinOptimizationsM2]: !v && P && U
 					})
 				}, a.a.createElement(u.a, {
-					className: y.a.pillContainer
+					className: x.a.pillContainer
 				}, a.a.createElement(m.a, {
-					className: Object(I.a)(y.a.pillButton, {
-						[y.a.isNightMode]: x
+					className: Object(I.a)(x.a.pillButton, {
+						[x.a.isNightMode]: y
 					}),
 					onClick: q,
 					variant: m.b.BUTTON
 				}, a.a.createElement(p.a, {
 					iconsKey: s,
 					shouldShowPresenceDot: !0,
-					memberIconClassName: Object(I.a)(y.a.memberIcon, {
-						[y.a.isNightMode]: x
+					memberIconClassName: Object(I.a)(x.a.memberIcon, {
+						[x.a.isNightMode]: y
 					}),
-					presenceDotOutlineClassName: Object(I.a)(y.a.presenceDotOutlineClass, {
-						[y.a.isNightMode]: x
+					presenceDotOutlineClassName: Object(I.a)(x.a.presenceDotOutlineClass, {
+						[x.a.isNightMode]: y
 					})
 				}), a.a.createElement("span", {
-					className: Object(I.a)(y.a.newCommentsText, {
-						[y.a.isNightMode]: x
+					className: Object(I.a)(x.a.newCommentsText, {
+						[x.a.isNightMode]: y
 					})
-				}, D > 1 ? n.fbt._("{number of new comments} new comments", [n.fbt._param("number of new comments", Object(f.formatPresenceNumber)(D))], {
+				}, w > 1 ? n.fbt._("{number of new comments} new comments", [n.fbt._param("number of new comments", Object(f.formatPresenceNumber)(w))], {
 					hk: "2jSNSA"
 				}) : n.fbt._("1 new comment", null, {
 					hk: "4nXICl"
@@ -365,10 +365,10 @@
 							}
 						}
 					}), [d]),
-					[N, x] = Object(u.useState)(0),
-					[y, E] = Object(u.useState)(0),
+					[N, y] = Object(u.useState)(0),
+					[x, E] = Object(u.useState)(0),
 					v = Object(u.useCallback)(a()(e => {
-						e(0), P(null)
+						e(0), T(null)
 					}, j.e), []),
 					R = Object(u.useCallback)(l()((e, t) => {
 						t(e), v(t)
@@ -378,24 +378,24 @@
 							numUsers: t,
 							__typename: s
 						} = e.subscribe.data;
-						R(t, "PostReadingCountMessageData" === s ? x : E)
+						R(t, "PostReadingCountMessageData" === s ? y : E)
 					}, []),
-					D = Object(u.useRef)(""),
-					[T, P] = Object(u.useState)(null),
-					w = Object(u.useRef)(null);
+					w = Object(u.useRef)(""),
+					[D, T] = Object(u.useState)(null),
+					P = Object(u.useRef)(null);
 				Object(u.useEffect)(() => {
-					if (!t && !o) return void(T && P(null));
-					if (N >= j.a || y >= j.b) return D.current = ((e, t) => {
+					if (!t && !o) return void(D && T(null));
+					if (N >= j.a || x >= j.b) return w.current = ((e, t) => {
 						return t >= j.b ? n.fbt._("{number of people typing} people typing...", [n.fbt._param("number of people typing", h(t))], {
 							hk: "31RibC"
 						}) : n.fbt._("{number of users reading} people here", [n.fbt._param("number of users reading", h(e))], {
 							hk: "3foy5g"
 						})
-					})(N, y), void(T || P(Date.now()));
-					if (!T) return;
-					const e = Date.now() - T;
-					e >= j.f ? P(null) : w.current = setTimeout(() => P(null), j.f - e)
-				}, [T, t, o, N, y]);
+					})(N, x), void(D || T(Date.now()));
+					if (!D) return;
+					const e = Date.now() - D;
+					e >= j.f ? T(null) : P.current = setTimeout(() => T(null), j.f - e)
+				}, [D, t, o, N, x]);
 				const {
 					className: U,
 					shouldMount: M,
@@ -403,10 +403,10 @@
 				} = Object(f.a)({
 					defaultClass: _.a.usersCountIndicator,
 					addedClass: _.a.isDisplayed,
-					mountCondition: !!T
+					mountCondition: !!D
 				});
 				return Object(u.useEffect)(() => () => {
-					v.cancel(), R.cancel(), w.current && clearTimeout(w.current)
+					v.cancel(), R.cancel(), P.current && clearTimeout(P.current)
 				}, []), m.a.createElement(m.a.Fragment, null, r && m.a.createElement(b.a, {
 					variables: I,
 					onData: i.a,
@@ -422,7 +422,7 @@
 				}), M && m.a.createElement("div", {
 					className: U,
 					onTransitionEnd: A
-				}, D.current, m.a.createElement(p.a, {
+				}, w.current, m.a.createElement(p.a, {
 					memberIconClassName: _.a.offsetMemberIcon,
 					iconsKey: d,
 					numVisibleIcons: j.g,
@@ -502,4 +502,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/NewCommentPill.12ae2c7d76abfc803282.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/NewCommentPill.4a6c17b6a26f92e76ab3.js.map
