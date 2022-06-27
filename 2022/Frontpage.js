@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Frontpage.4710ae47f2273bd40df9.js
-// Retrieved at 6/23/2022, 6:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Frontpage.b716b459a166ef2e5b68.js
+// Retrieved at 6/27/2022, 12:00:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Frontpage"], {
 		"./node_modules/intersection-observer/intersection-observer.js": function(e, t) {
@@ -3606,7 +3606,7 @@
 					}, r.a.createElement("div", {
 						className: y.a.topUsers
 					}, w.map((e, t) => {
-						var a;
+						var a, n;
 						return r.a.createElement("div", {
 							key: `topuser__${t}`,
 							className: Object(s.a)(y.a.userIconContainer, {
@@ -3619,7 +3619,7 @@
 								[y.a.userIconSnoovatar]: Boolean(e.snoovatarIcon),
 								[y.a.nightMode]: S
 							}),
-							isNSFW: e.profile.isNsfw
+							isNSFW: (null === (n = e.profile) || void 0 === n ? void 0 : n.isNsfw) || !1
 						}))
 					})), r.a.createElement("p", {
 						className: y.a.participantCount
@@ -8048,4 +8048,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Frontpage.4710ae47f2273bd40df9.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Frontpage.b716b459a166ef2e5b68.js.map
