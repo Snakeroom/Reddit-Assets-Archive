@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Reddit.eb7c5083e575f44569c3.js
-// Retrieved at 6/27/2022, 10:40:06 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Reddit.b5c9db76b31af513b300.js
+// Retrieved at 6/27/2022, 11:10:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Reddit"], {
 		"./assets/fonts/BentonSans/font.less": function(e, t, n) {},
@@ -12803,13 +12803,13 @@
 							structureType: n,
 							searchQuery: X
 						};
-						k(Object(Da.w)(s, o, r))
+						k(Object(Da.x)(s, o, r))
 					},
 					me = (e, t, n) => {
-						k(Object(Da.y)(e, t, n))
+						k(Object(Da.z)(e, t, n))
 					},
 					pe = (e, t, n, s, r) => {
-						k(Object(Da.A)(e, t, n, s, r))
+						k(Object(Da.B)(e, t, n, s, r))
 					},
 					be = () => {
 						k(e => Object(Da.h)(e, ee, B)), (() => w(Object(ya.j)()))(), Wa.a.update(Va.a.Typeahead)
@@ -15990,7 +15990,9 @@
 							"data-testid": "toaster",
 							key: e.key,
 							kind: t.kind,
-							sendEvent: t.name ? () => this.props.sendEvent(Hm(t.name)) : void 0,
+							sendEvent: t.name || t.onDisplay ? () => {
+								t.name && this.props.sendEvent(Hm(t.name)), t.onDisplay && t.onDisplay()
+							} : void 0,
 							style: n
 						}, m.a.createElement("div", {
 							className: dp.a.ContentWrapper
@@ -20507,4 +20509,4 @@
 		["./src/reddit/index.tsx", "runtime~Reddit", "vendors~Governance~ModListing~Reddit~Subreddit", "vendors~Chat~Governance~Reddit", "vendors~Reddit~StandalonePostPage", "vendors~Reddit", "PostCreation~Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~r~4c415e24", "Governance~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compo~bd4baca2", "Governance~ModListing~Reddit~ReportFlow~Subreddit", "Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddi~90fdacc3", "Chat~Governance~Reddit", "Governance~Reddit~Subreddit", "Governance~Reddit", "AuthorHovercard~Reddit"]
 	]
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit.eb7c5083e575f44569c3.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit.b5c9db76b31af513b300.js.map
