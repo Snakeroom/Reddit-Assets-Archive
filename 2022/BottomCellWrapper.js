@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/BottomCellWrapper.ea3e2c174f1674cca1c4.js
-// Retrieved at 6/23/2022, 6:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/BottomCellWrapper.79dd4d23ead51185bff8.js
+// Retrieved at 6/27/2022, 1:00:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["BottomCellWrapper", "SignupUpsell"], {
 		"./src/reddit/components/ErrorBoundary/index.tsx": function(e, t, s) {
@@ -177,9 +177,9 @@
 						popup_button_text: "login"
 					})
 				});
-			var O = s("./src/reddit/hooks/promo/useIsSignupUpsellVariantEligible.ts"),
-				v = s("./src/reddit/icons/svgs/AppleLogo/index.tsx"),
-				B = s("./src/reddit/icons/svgs/Close/index.tsx"),
+			var B = s("./src/reddit/hooks/promo/useIsSignupUpsellVariantEligible.ts"),
+				O = s("./src/reddit/icons/svgs/AppleLogo/index.tsx"),
+				v = s("./src/reddit/icons/svgs/Close/index.tsx"),
 				N = s("./src/reddit/icons/svgs/GoogleLogo/index.tsx"),
 				w = s("./src/reddit/selectors/experiments/signupUpsellExperiment.ts"),
 				S = s("./src/reddit/components/Upsell/SignupUpsell/index.m.less"),
@@ -188,9 +188,9 @@
 					S: "small",
 					L: "large"
 				},
-				A = "d2x_geo_upsell_tier_0",
-				I = "d2x_geo_upsell_tier_1",
-				U = "d2x_geo_upsell_tier_2";
+				I = "d2x_geo_upsell_tier_0",
+				U = "d2x_geo_upsell_tier_1",
+				D = "d2x_geo_upsell_tier_2";
 			t.default = function(e) {
 				let {
 					onDismiss: t,
@@ -213,18 +213,18 @@
 						const e = Object(i.e)(w.b),
 							t = Object(i.e)(w.d),
 							s = Object(i.e)(w.f),
-							o = Object(O.a)(b.Ac.Bottom_sheet),
-							l = Object(O.a)(b.Ac.Bottom_cell),
-							r = Object(O.a)(b.Ac.Bottom_cell_dismissible),
-							c = Object(O.a)(b.Ac.Bottom_cell_dismissible_immediate_trigger),
-							a = Object(O.a)(b.Ac.Bottom_cell_signup_upsell_copy),
-							d = Object(O.a)(b.Ac.Bottom_cell_surprise_install_copy);
+							o = Object(B.a)(b.Bc.Bottom_sheet),
+							l = Object(B.a)(b.Bc.Bottom_cell),
+							r = Object(B.a)(b.Bc.Bottom_cell_dismissible),
+							c = Object(B.a)(b.Bc.Bottom_cell_dismissible_immediate_trigger),
+							a = Object(B.a)(b.Bc.Bottom_cell_signup_upsell_copy),
+							d = Object(B.a)(b.Bc.Bottom_cell_surprise_install_copy);
 						let u;
-						if (e) u = A;
-						else if (t) u = I;
+						if (e) u = I;
+						else if (t) u = U;
 						else {
 							if (!s) throw new Error("Not eligible for signup upsell");
-							u = U
+							u = D
 						}
 						const p = `${n.a.assetPath}/img/upsell/appQrCode/${u}/`;
 						if (o) return `${p}bottom_sheet.png`;
@@ -235,14 +235,14 @@
 						if (e && d) return `${p}bottom_cell_surprise_install_copy.png`;
 						throw new Error("Invalid variant for signup upsell")
 					}(),
-					D = Object(O.a)(b.Ac.Bottom_cell_signup_upsell_copy),
-					y = Object(O.a)(b.Ac.Bottom_cell_surprise_install_copy),
-					H = D ? o.fbt._("Come join us, we have snacks", null, {
+					y = Object(B.a)(b.Bc.Bottom_cell_signup_upsell_copy),
+					H = Object(B.a)(b.Bc.Bottom_cell_surprise_install_copy),
+					A = y ? o.fbt._("Come join us, we have snacks", null, {
 						hk: "1LUl2W"
 					}) : o.fbt._("Log in or sign up for the best experience", null, {
 						hk: "2LAHQy"
 					}),
-					R = y ? o.fbt._("Scan the QR code, it's super fun", null, {
+					R = H ? o.fbt._("Scan the QR code, it's super fun", null, {
 						hk: "1nNmn7"
 					}) : o.fbt._("Get the app", null, {
 						hk: "2NvKYa"
@@ -261,9 +261,9 @@
 						t(), p(h())
 					},
 					type: "button"
-				}, l.createElement(B.a, null)), l.createElement("div", {
+				}, l.createElement(v.a, null)), l.createElement("div", {
 					className: k.a.title
-				}, H), l.createElement("div", {
+				}, A), l.createElement("div", {
 					className: k.a.bottom
 				}, l.createElement("div", {
 					className: k.a.left
@@ -277,7 +277,7 @@
 				}, o.fbt._("Continue with Google", null, {
 					hk: "1jIIEZ"
 				})), l.createElement(_, {
-					Icon: v.a,
+					Icon: O.a,
 					onClick: () => {
 						x(), p(j(f.Apple))
 					},
@@ -430,9 +430,9 @@
 					experimentName: e,
 					experimentEligibilitySelector: c,
 					throttledVariants: {
-						[o.Ac.Bottom_cell_dismissible]: e,
-						[o.Ac.Bottom_cell_dismissible_immediate_trigger]: e,
-						[o.Ac.Bottom_sheet]: e
+						[o.Bc.Bottom_cell_dismissible]: e,
+						[o.Bc.Bottom_cell_dismissible_immediate_trigger]: e,
+						[o.Bc.Bottom_sheet]: e
 					},
 					expEventOverride: t
 				})
@@ -446,4 +446,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/BottomCellWrapper.ea3e2c174f1674cca1c4.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/BottomCellWrapper.79dd4d23ead51185bff8.js.map

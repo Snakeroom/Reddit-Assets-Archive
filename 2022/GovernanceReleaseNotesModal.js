@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/GovernanceReleaseNotesModal.9958d12aa4423c484f6f.js
-// Retrieved at 6/23/2022, 6:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/GovernanceReleaseNotesModal.9f494936d90373c334e3.js
+// Retrieved at 6/27/2022, 1:00:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["GovernanceReleaseNotesModal"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -819,11 +819,11 @@
 					releaseNotes: m.f,
 					subreddit: u.r
 				}),
-				A = Object(i.b)(H, e => ({
+				F = Object(i.b)(H, e => ({
 					onClose: () => e(Object(c.f)())
 				})),
-				F = Object(u.u)();
-			t.default = Object(a.a)(F(A(D)))
+				A = Object(u.u)();
+			t.default = Object(a.a)(A(F(D)))
 		},
 		"./src/reddit/components/Governance/VaultActionLink/async.ts": function(e, t, n) {
 			"use strict";
@@ -1353,11 +1353,11 @@
 					})
 				}
 
-				function A(e) {
+				function F(e) {
 					s || P(e), o || H(e), N(Object(u.C)(p))
 				}
 
-				function F() {
+				function A() {
 					const e = {};
 					return T && (e.margin = "0 auto"), O || (e.maxHeight = `${h.e}px`), i.a.createElement(E, {
 						autoplay: S,
@@ -1372,7 +1372,7 @@
 						onLoadedData: P,
 						onLoadedMetadata: H,
 						onPause: L,
-						onPlaying: A,
+						onPlaying: F,
 						onTimeUpdate: B,
 						shouldLoad: b,
 						shouldPause: _,
@@ -1383,7 +1383,7 @@
 						width: y
 					})
 				}
-				return O ? F() : i.a.createElement("div", {
+				return O ? A() : i.a.createElement("div", {
 					className: Object(l.a)(w.a.container, I, {
 						[w.a.centered]: T
 					})
@@ -1391,7 +1391,7 @@
 					href: k,
 					target: "_blank",
 					rel: "noopener noreferrer"
-				}, F()))
+				}, A()))
 			}
 		},
 		"./src/reddit/components/Media/index.m.less": function(e, t, n) {
@@ -2109,9 +2109,9 @@
 			})), n.d(t, "h", (function() {
 				return H
 			})), n.d(t, "g", (function() {
-				return A
-			})), n.d(t, "i", (function() {
 				return F
+			})), n.d(t, "i", (function() {
+				return A
 			})), n.d(t, "e", (function() {
 				return U
 			}));
@@ -2272,7 +2272,7 @@
 						case h.p:
 							return P(e, t, n, s);
 						case h.u:
-							return A(e, t, n, s);
+							return F(e, t, n, s);
 						case h.z:
 							return H(e, t, n, s)
 					}
@@ -2296,7 +2296,7 @@
 							} = e;
 						l.push(a.a.createElement(s, {
 							key: c
-						}, F(i, t, n))), m[c] = r
+						}, A(i, t, n))), m[c] = r
 					}
 					for (let h = 0; h < i; h++) {
 						const e = r[h],
@@ -2309,7 +2309,7 @@
 								} = e[r];
 							o.push(a.a.createElement(s, {
 								key: r
-							}, F(i, t, n)))
+							}, A(i, t, n)))
 						}
 						u.push(a.a.createElement(c.t, {
 							key: h
@@ -2319,16 +2319,16 @@
 						key: s
 					}, a.a.createElement("thead", null, a.a.createElement(c.t, null, l)), a.a.createElement("tbody", null, u))
 				},
-				A = (e, t, n, s) => {
+				F = (e, t, n, s) => {
 					if (!e.c || !e.c.length) return (e => a.a.createElement(c.j, {
 						key: e
 					}, a.a.createElement("br", null)))(s);
 					const r = e.c[0];
 					return r.e !== h.m && r.e !== h.a || !Object(S.g)(r.id) ? a.a.createElement(c.j, {
 						key: s
-					}, F(e.c, t, n)) : Object(j.b)(r, s, t)
+					}, A(e.c, t, n)) : Object(j.b)(r, s, t)
 				},
-				F = (e, t, n) => {
+				A = (e, t, n) => {
 					const s = [],
 						r = e.length;
 					for (let o = 0; o < r; o++) {
@@ -2336,7 +2336,7 @@
 						if (r.e === h.A) s.push(V(r, o));
 						else if (r.e === h.x) s.push(a.a.createElement(O.a, {
 							key: o
-						}, F(r.c, t, n)));
+						}, A(r.c, t, n)));
 						else if (r.e === h.n) s.push(a.a.createElement("br", {
 							key: o
 						}));
@@ -2558,12 +2558,12 @@
 						rtJsonElementProps: i
 					});
 					switch (o) {
-						case b.Af.SmIcon:
+						case b.Bf.SmIcon:
 							return r.a.createElement(h, {
 								subredditName: s,
 								rtJsonElementProps: i
 							});
-						case b.Af.SmIconHc:
+						case b.Bf.SmIconHc:
 							return r.a.createElement(h, {
 								subredditName: s,
 								isHoverable: !0,
@@ -2916,12 +2916,12 @@
 				c = e => {
 					return Object(o.c)(e, {
 						experimentEligibilitySelector: a,
-						experimentName: s.tf
+						experimentName: s.uf
 					}) || ""
 				},
 				d = e => {
 					const t = c(e);
-					return t === s.Af.SmIcon || t === s.Af.SmIconHc
+					return t === s.Bf.SmIcon || t === s.Bf.SmIconHc
 				},
 				l = (e, t) => {
 					let {
@@ -2947,4 +2947,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/GovernanceReleaseNotesModal.9958d12aa4423c484f6f.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/GovernanceReleaseNotesModal.9f494936d90373c334e3.js.map

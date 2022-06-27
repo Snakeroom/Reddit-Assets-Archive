@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~Reddit.3482bee44424983dd000.js
-// Retrieved at 6/27/2022, 11:10:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~Reddit.87556b59d2ca5ffa449b.js
+// Retrieved at 6/27/2022, 1:00:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~Reddit"], {
 		"./assets/fonts/NotoMono/font.less": function(e, t, n) {},
@@ -720,8 +720,8 @@
 			}), u = n("./node_modules/fbt/lib/FbtPublic.js"), l = n("./src/reddit/models/Toast/index.ts"), p = n("./node_modules/reselect/es/index.js"), b = n("./src/reddit/constants/experiments.ts"), f = n("./src/reddit/helpers/chooseVariant/index.ts"), h = n("./src/reddit/selectors/user.ts");
 			const y = Object(p.a)(e => Object(f.c)(e, {
 				experimentEligibilitySelector: h.Q,
-				experimentName: b.ac
-			}), e => e === b.ud);
+				experimentName: b.bc
+			}), e => e === b.vd);
 			var g = n("./src/reddit/actions/toaster.ts");
 			const m = "SUBREDDIT_COUNTRY_SITE__LOADED",
 				v = "SUBREDDIT_COUNTRY_SITE__CHANGED",
@@ -3078,7 +3078,7 @@
 			const w = e => _.d.reCaptchaEnterprise(e) && !Object(j.d)(e),
 				T = e => !!Object(S.c)(e, {
 					experimentEligibilitySelector: Object(I.d)(Object(I.b)(...a.d)),
-					experimentName: b.Xe
+					experimentName: b.Ye
 				}),
 				D = Object(r.b)("LOAD_RECAPTCHA_ENTERPRISE"),
 				P = () => u(e => p()([w, T, e => e.tracking.reCaptchaEnterprise.load === r.a.New], t => t(e)))(async e => {
@@ -3982,7 +3982,7 @@
 								postFieldValidationPending: Promise.resolve()
 							})), Object(l.b)(N)
 						}
-						await t(Object(r.b)(`${n.path}`)), f ? f === p.ze.NewModule && t(Object(d.h)({
+						await t(Object(r.b)(`${n.path}`)), f ? f === p.Ae.NewModule && t(Object(d.h)({
 							tooltipId: u.MOD_WELCOME_TOOLTIP_ID
 						})) : (t(Object(c.h)(b.a.POST_FLOW_UPSELL_MODAL_ID)), Object(D.a)(Object(_.g)()(A))), Object(E.b)(E.a.SubredditCreation), t(Object(P.f)(a, null !== (O = Object(T.bb)(A)) && void 0 !== O ? O : Object(S.i)(A)))
 					} else k.error && Object(D.a)(Object(_.h)(k.error.type, C)(A)), t(U({
@@ -5264,11 +5264,11 @@
 				Q = n("./src/reddit/selectors/experiments/utils.ts");
 			const $ = Object(W.a)(e => Object(V.c)(e, {
 					experimentEligibilitySelector: V.a,
-					experimentName: H.jc
+					experimentName: H.kc
 				}), Q.a),
-				K = Object(W.a)($, e => e === H.Fc.Treatment1 || e === H.Fc.Treatment2),
-				z = Object(W.a)($, e => e === H.Fc.Treatment1);
-			Object(W.a)($, e => e === H.Fc.Treatment2);
+				K = Object(W.a)($, e => e === H.Gc.Treatment1 || e === H.Gc.Treatment2),
+				z = Object(W.a)($, e => e === H.Gc.Treatment1);
+			Object(W.a)($, e => e === H.Gc.Treatment2);
 			var Y = n("./src/reddit/hooks/useLocalStorage.ts");
 			const X = () => {
 				const e = Object(a.e)(z),
@@ -25852,8 +25852,8 @@
 				a = n("./node_modules/reselect/es/index.js");
 			const o = Object(a.a)(e => Object(s.c)(e, {
 				experimentEligibilitySelector: s.a,
-				experimentName: r.tc
-			}), e => e === r.ud)
+				experimentName: r.uc
+			}), e => e === r.vd)
 		},
 		"./src/reddit/selectors/scheduledPosts/index.ts": function(e, t, n) {
 			"use strict";
@@ -26125,4 +26125,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit.3482bee44424983dd000.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit.87556b59d2ca5ffa449b.js.map
