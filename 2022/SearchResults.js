@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SearchResults.23e0daa3618a0fd0f5a2.js
-// Retrieved at 6/23/2022, 6:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SearchResults.be920136938d2d8483d1.js
+// Retrieved at 6/27/2022, 9:50:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SearchResults"], {
 		"./node_modules/lodash/_baseDelay.js": function(e, t) {
@@ -5879,7 +5879,7 @@
 				}, Object(A.a)(ie))), function() {
 					let e = o.a.createElement(o.a.Fragment, null);
 					const t = !!ie.source && Object(C.a)(ie.source.url) || !!ie.thumbnail && Object(C.a)(ie.thumbnail.url),
-						s = !le && t,
+						s = !(null == le ? void 0 : le.type) && t,
 						r = Object(n.a)(Q.a.mediaWrapper, {
 							[Q.a.marginCancel]: D && !!ie.source,
 							[Q.a.promotedTrend]: ie.isSponsored
@@ -10497,4 +10497,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SearchResults.23e0daa3618a0fd0f5a2.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SearchResults.be920136938d2d8483d1.js.map
