@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/NftProfileUnit.80cdf55ba5bf42c5cc98.js
-// Retrieved at 6/27/2022, 10:20:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/NftProfileUnit.36a77d2d719bf5f5ed09.js
+// Retrieved at 6/28/2022, 10:00:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["NftProfileUnit"], {
 		"./node_modules/classnames/index.js": function(t, e, n) {
@@ -221,10 +221,10 @@
 					children: e
 				} = t;
 				const n = function() {
-					const t = Object(s.e)(p),
+					const t = Object(s.e)(h),
 						e = Object(s.e)(u.db),
 						n = Object(a.a)();
-					h || (h = function(t, e, n) {
+					return Object(i.useMemo)(() => (function(t, e, n) {
 						return {
 							api: {
 								accessToken: t
@@ -258,16 +258,14 @@
 								})
 							}
 						}
-					}(t, e, n));
-					return h
+					})(t, e, n), [t, e, n])
 				}();
 				return o.a.createElement(r.a, {
 					value: n
 				}, e)
 			};
-			let h = null;
 
-			function p(t) {
+			function h(t) {
 				var e;
 				return (null === (e = t.user.session) || void 0 === e ? void 0 : e.accessToken) || ""
 			}
@@ -1714,4 +1712,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/NftProfileUnit.80cdf55ba5bf42c5cc98.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/NftProfileUnit.36a77d2d719bf5f5ed09.js.map

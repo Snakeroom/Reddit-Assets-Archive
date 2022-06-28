@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/MarketplaceClaimModal.ca152923918803bf2f9a.js
-// Retrieved at 6/21/2022, 7:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/MarketplaceClaimModal.873cb35f62a78d12624e.js
+// Retrieved at 6/28/2022, 10:00:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["MarketplaceClaimModal"], {
 		"./src/reddit/actions/economics/marketplace/constants.ts": function(e, t, n) {
@@ -30,10 +30,10 @@
 					children: t
 				} = e;
 				const n = function() {
-					const e = Object(s.e)(p),
+					const e = Object(s.e)(m),
 						t = Object(s.e)(d.db),
 						n = Object(c.a)();
-					m || (m = function(e, t, n) {
+					return Object(a.useMemo)(() => (function(e, t, n) {
 						return {
 							api: {
 								accessToken: e
@@ -67,16 +67,14 @@
 								})
 							}
 						}
-					}(e, t, n));
-					return m
+					})(e, t, n), [e, t, n])
 				}();
 				return o.a.createElement(r.a, {
 					value: n
 				}, t)
 			};
-			let m = null;
 
-			function p(e) {
+			function m(e) {
 				var t;
 				return (null === (t = e.user.session) || void 0 === t ? void 0 : t.accessToken) || ""
 			}
@@ -105,9 +103,9 @@
 				p = n("./src/reddit/components/Crypto/CryptoComponentsConfigProvider.tsx"),
 				E = n("./src/reddit/helpers/avatarRouting.ts"),
 				_ = n("./src/reddit/selectors/activeModal.ts"),
-				v = n("./src/reddit/selectors/user.ts"),
-				O = n("./src/reddit/components/Econ/Marketplace/ClaimModal/index.m.less"),
-				f = n.n(O);
+				O = n("./src/reddit/selectors/user.ts"),
+				v = n("./src/reddit/components/Econ/Marketplace/ClaimModal/index.m.less"),
+				f = n.n(v);
 
 			function C() {
 				return (C = Object.assign || function(e) {
@@ -122,7 +120,7 @@
 					let {
 						onClose: t
 					} = e;
-					const n = Object(s.e)(v.Cb),
+					const n = Object(s.e)(O.Cb),
 						r = Object(s.e)(e => {
 							var t;
 							return null === (t = Object(_.a)(e)) || void 0 === t ? void 0 : t.claimId
@@ -189,4 +187,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/MarketplaceClaimModal.ca152923918803bf2f9a.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/MarketplaceClaimModal.873cb35f62a78d12624e.js.map

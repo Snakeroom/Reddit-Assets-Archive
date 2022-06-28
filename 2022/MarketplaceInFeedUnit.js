@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/MarketplaceInFeedUnit.4f458ef688268b54e6d6.js
-// Retrieved at 6/21/2022, 7:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/MarketplaceInFeedUnit.597dd5b6c16373c6dd5c.js
+// Retrieved at 6/28/2022, 10:00:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["MarketplaceInFeedUnit"], {
 		"./src/reddit/components/Crypto/CryptoComponentsConfigProvider.tsx": function(e, t, n) {
@@ -13,17 +13,17 @@
 				a = n("./node_modules/react-redux/es/index.js"),
 				s = n("./src/reddit/hooks/useTracking.ts"),
 				i = n("./src/reddit/selectors/telemetry.ts"),
-				l = n("./src/reddit/selectors/user.ts"),
-				d = n("./src/config.ts");
+				d = n("./src/reddit/selectors/user.ts"),
+				l = n("./src/config.ts");
 			const u = e => {
 				let {
 					children: t
 				} = e;
 				const n = function() {
-					const e = Object(a.e)(p),
-						t = Object(a.e)(l.db),
+					const e = Object(a.e)(m),
+						t = Object(a.e)(d.db),
 						n = Object(s.a)();
-					m || (m = function(e, t, n) {
+					return Object(c.useMemo)(() => (function(e, t, n) {
 						return {
 							api: {
 								accessToken: e
@@ -35,7 +35,7 @@
 								plural: (e, t) => o.a.createElement(o.a.Fragment, null, e)
 							},
 							gql: {
-								host: d.a.gqlUrl,
+								host: l.a.gqlUrl,
 								fetchOptions: {
 									headers: {
 										Authorization: `Bearer ${e}`
@@ -57,16 +57,14 @@
 								})
 							}
 						}
-					}(e, t, n));
-					return m
+					})(e, t, n), [e, t, n])
 				}();
 				return o.a.createElement(r.a, {
 					value: n
 				}, t)
 			};
-			let m = null;
 
-			function p(e) {
+			function m(e) {
 				var t;
 				return (null === (t = e.user.session) || void 0 === t ? void 0 : t.accessToken) || ""
 			}
@@ -94,8 +92,8 @@
 				a = n.n(o),
 				s = n("./node_modules/react-redux/es/index.js"),
 				i = n("./node_modules/@reddit/crypto/react/nft-claim/index.es.js"),
-				l = n("./src/reddit/actions/modal.ts"),
-				d = n("./src/reddit/components/Crypto/CryptoComponentsConfigProvider.tsx"),
+				d = n("./src/reddit/actions/modal.ts"),
+				l = n("./src/reddit/components/Crypto/CryptoComponentsConfigProvider.tsx"),
 				u = n("./src/reddit/components/Econ/Marketplace/ClaimModal/async.tsx"),
 				m = n("./src/reddit/constants/modals.ts"),
 				p = n("./src/reddit/constants/postLayout.ts"),
@@ -164,12 +162,12 @@
 					className: Object(c.a)(v.a.container, {
 						[v.a.isNotLarge]: w
 					})
-				}, a.a.createElement(d.a, null, a.a.createElement(i.a, {
+				}, a.a.createElement(l.a, null, a.a.createElement(i.a, {
 					className: Object(c.a)(v.a.feedUnit, {
 						[v.a.isNotLarge]: w
 					}),
 					onClickCta: () => {
-						j(Object(f.b)()), n(Object(l.h)(m.a.ECON_MARKETPLACE_CLAIM, {
+						j(Object(f.b)()), n(Object(d.h)(m.a.ECON_MARKETPLACE_CLAIM, {
 							claimId: h.id
 						}))
 					},
@@ -253,4 +251,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/MarketplaceInFeedUnit.4f458ef688268b54e6d6.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/MarketplaceInFeedUnit.597dd5b6c16373c6dd5c.js.map

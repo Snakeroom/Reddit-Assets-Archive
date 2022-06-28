@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/runtime~Reddit.1408049b538b800ac08d.js
-// Retrieved at 6/27/2022, 3:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/runtime~Reddit.04d7f500034aa20a222b.js
+// Retrieved at 6/28/2022, 10:00:04 AM by Reddit Dataminer v1.0.0
 ! function(e) {
 	function o(o) {
 		for (var a, n, r = o[0], s = o[1], c = o[2], l = 0, P = []; l < r.length; l++) n = r[l], Object.prototype.hasOwnProperty.call(d, n) && d[n] && P.push(d[n][0]), d[n] = 0;
@@ -1363,7 +1363,7 @@
 						8: "16af6ec68782cc81cfda",
 						9: "acf0ee91abfc9bc18704",
 						"vendors~MarketplaceClaimModal~MarketplaceInFeedUnit": "a75457d387662422e6dc",
-						MarketplaceClaimModal: "ca152923918803bf2f9a",
+						MarketplaceClaimModal: "873cb35f62a78d12624e",
 						GovernanceTransferPointsModal: "79bb122a15ee97b694ec",
 						"reddit-components-Governance-TransactionModals-BurnPointsModal~reddit-components-Governance-Transact~8f11de67": "033ade280a36a45f6c62",
 						"reddit-components-Governance-TransactionModals-BurnPointsModal": "447da9c97e4a96a09823",
@@ -1499,7 +1499,7 @@
 						"reddit-components-PostCreationForm-PredictionEditor-StartTournamentLimitationModal": "58ddb94920a2ab581fa9",
 						"translations/bn_BD-json": "f215a67307044483f0d2",
 						"translations/de_DE-json": "34ff955ae206fa2efcc8",
-						"translations/es_ES-json": "3b50c1d2173c9f80e256",
+						"translations/es_ES-json": "204e902357d2d4ff0063",
 						"translations/es_MX-json": "763652f91b18445f33bb",
 						"translations/fr_FR-json": "d3b0c5767f655d908d51",
 						"translations/hi_IN-json": "cfdc67d0c63b504f321c",
@@ -1538,7 +1538,7 @@
 						"vendors~xml2js": "8c40daee6c2bccb14296",
 						"reddit-components-Governance-TransactionModals-TransferTransactionModal": "81732a557b570f4e801f",
 						SignupUpsell: "cda2e993aa49a5ae0189",
-						NftProfileUnit: "80cdf55ba5bf42c5cc98",
+						NftProfileUnit: "36a77d2d719bf5f5ed09",
 						AuthorHovercard: "91a812caf0ab6f7e977a",
 						AwardTooltip: "da39de3902619d4e78c3",
 						CustomBadgeHovercardTooltip: "f15c84292111170671f4",
@@ -1599,7 +1599,7 @@
 						"reddit-components-Econ-PredictionLeaderboard-Sidebar": "7199d87a356b24cd5cec",
 						PennyPurchaseModal: "eb8fe569224e3f91d235",
 						editCollectionModal: "e05d14720bb4f7ad81c4",
-						MarketplaceInFeedUnit: "4f458ef688268b54e6d6",
+						MarketplaceInFeedUnit: "597dd5b6c16373c6dd5c",
 						NewCommunityProgress: "efa5e6a529cb97c29b92",
 						FeaturedLiveEntrypointAnnouncement: "5dfa6d0a53a0eaa54b6d",
 						FeaturedLiveEntrypointAnnouncementsCarousel: "f65ebfaf7e9435f50962",
@@ -1759,4 +1759,4 @@
 	var m = c;
 	t()
 }([]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/runtime~Reddit.1408049b538b800ac08d.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/runtime~Reddit.04d7f500034aa20a222b.js.map
