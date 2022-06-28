@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddi~90fdacc3.30c9fed21769ed79831c.js
-// Retrieved at 6/27/2022, 2:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddi~90fdacc3.5074bd85b7a6d7c090af.js
+// Retrieved at 6/28/2022, 4:00:08 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddi~90fdacc3"], {
 		"./src/lib/combineRefs/index.tsx": function(e, t, n) {
@@ -3078,19 +3078,21 @@
 						fromPosts: c
 					}
 				},
-				u = (e, t) => {
-					const n = Object(i.G)(e, {
+				u = (e, t, n) => {
+					const r = Object(i.G)(e, {
 						postId: t
 					});
-					if (!n || n.isSponsored || n.removedByCategory) return !1;
-					const r = Object(i.U)(e, {
+					if (!r || r.isSponsored || r.removedByCategory) return !1;
+					const s = Object(i.U)(e, {
 						postId: t
 					});
-					return !(r && r.isQuarantined) && (Object(c.Db)(e, {
+					if (s && s.isQuarantined) return !1;
+					const a = !n && !!Object(o.n)(e, {
 						postId: t
-					}) || !!Object(o.n)(e, {
+					});
+					return Object(c.Db)(e, {
 						postId: t
-					}))
+					}) || a
 				}
 		},
 		"./src/reddit/selectors/experiments/econ/index.ts": function(e, t, n) {
@@ -3430,4 +3432,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddi~90fdacc3.30c9fed21769ed79831c.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddi~90fdacc3.5074bd85b7a6d7c090af.js.map

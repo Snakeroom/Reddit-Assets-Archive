@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~CountryPage~Frontpage~GovernanceReleaseNotesModal~ModListing~Mod~adaf0b02.7949853e858f0c080611.js
-// Retrieved at 6/14/2022, 11:00:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~CountryPage~Frontpage~GovernanceReleaseNotesModal~ModListing~Mod~adaf0b02.67c3b35f01e538993dda.js
+// Retrieved at 6/28/2022, 4:00:08 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~CountryPage~Frontpage~GovernanceReleaseNotesModal~ModListing~Mod~adaf0b02"], {
 		"./src/lib/intersectionObserver/index.ts": function(e, t, s) {
@@ -999,22 +999,22 @@
 						isCommentsPage: a,
 						isFrontpage: l,
 						isLoggedOutOneFeed: d,
-						isProfileCreatorStatsEnabled: c,
-						isProfilePostListing: h,
-						isTopicPage: p,
-						isCommentCountAnimationEnabled: u,
-						isVoteCountAnimationEnabled: b,
-						isCountAnimShadowTestEnabled: g,
-						listingBelowVariant: f,
-						listingKey: v,
-						listingName: y,
-						pageLayer: w,
-						pageReferrer: I,
-						redditStyle: x,
-						shouldHideFlair: O,
+						isProfilePostListing: c,
+						isTopicPage: h,
+						isCommentCountAnimationEnabled: p,
+						isVoteCountAnimationEnabled: u,
+						isCountAnimShadowTestEnabled: b,
+						listingBelowVariant: g,
+						listingKey: f,
+						listingName: v,
+						pageLayer: y,
+						pageReferrer: w,
+						redditStyle: I,
+						shouldHideFlair: x,
+						shouldShowInsightsButton: O,
 						triggerNewPostPill: S,
 						postIds: E
-					} = this.props, M = 0 === t, j = `post-${i}-${e}-${t}-${s?"last-index":""}-${y}-${v}-${I}`;
+					} = this.props, M = 0 === t, j = `post-${i}-${e}-${t}-${s?"last-index":""}-${v}-${f}-${w}`;
 					let T;
 					if (void 0 === (T = this.scrollChildCache.get(j))) {
 						const {
@@ -1030,13 +1030,13 @@
 							post: V
 						});
 						let N = `post-list-item-[layout: ${i}]-[postId: ${e}]`;
-						this.props.listingBelowVariant && v && (N += `--${v}`);
-						const A = ue(e, i, s, v, y, I, this.props, t, this.props.hostPostData),
+						this.props.listingBelowVariant && f && (N += `--${f}`);
+						const A = ue(e, i, s, f, v, w, this.props, t, this.props.hostPostData),
 							H = be(e, i, this.props, t),
 							W = ge(e, this.props, l),
 							B = V.media && V.media.type === $.o.EMBED ? V.media.provider : null,
-							K = u && !_.isSponsored,
-							z = b && !_.isSponsored && !_.isScoreHidden,
+							K = p && !_.isSponsored,
+							z = u && !_.isSponsored && !_.isScoreHidden,
 							q = !!(null == _ ? void 0 : _.recommendationContext);
 						T = {
 							estHeight: Object(J.c)(_, i),
@@ -1044,21 +1044,21 @@
 							isFocusable: !(!V.media || !(i === R.g.Large || i === R.g.Classic && Object($.H)(V.media))) && ($.d.has(V.media.type) && (!B || !$.s.has(B)) && !V.isSpoiler),
 							trackOnEnteredViewport: A,
 							trackOnExitedViewport: H,
-							render: u => {
+							render: p => {
 								let {
-									className: b,
+									className: u,
 									height: C,
 									width: P,
-									remeasure: I,
+									remeasure: w,
 									setScrollerChildRef: R,
 									shouldLoadInitially: j
-								} = u;
+								} = p;
 								return m.a.createElement(X, {
 									key: N,
 									hideRecommendationContext: !!d
 								}, m.a.createElement(F, {
 									availableWidth: P,
-									className: b,
+									className: u,
 									currentProfileName: n,
 									eventFactory: this.eventFactoryHandler,
 									first: M,
@@ -1068,28 +1068,28 @@
 									isCommentCountAnimationEnabled: K,
 									isCommentPermalink: r,
 									isCommentsPage: a,
-									isCountAnimShadowTestEnabled: g,
+									isCountAnimShadowTestEnabled: b,
 									isFrontpage: l,
-									isProfileCreatorStatsEnabled: c,
-									isProfilePostListing: h,
-									isTopicPage: p,
+									isProfilePostListing: c,
+									isTopicPage: h,
 									isVoteCountAnimationEnabled: z,
 									key: N,
 									last: s,
-									listingBelowVariant: f,
+									listingBelowVariant: g,
 									listingIndex: t,
-									listingKey: v,
-									listingName: y,
+									listingKey: f,
+									listingName: v,
 									onceInViewport: S,
 									onClickPost: W,
-									onSizeChanged: I,
-									pageLayer: w,
+									onSizeChanged: w,
+									pageLayer: y,
 									postId: e,
 									postIds: E,
-									redditStyle: x,
+									redditStyle: I,
 									scrollerItemRef: R,
 									sendEvent: this.props.sendEvent,
-									shouldHideFlair: O
+									shouldHideFlair: x,
+									shouldShowInsightsButton: O
 								}), q && m.a.createElement(U, {
 									post: V,
 									layout: i
@@ -2204,4 +2204,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~CountryPage~Frontpage~GovernanceReleaseNotesModal~ModListing~Mod~adaf0b02.7949853e858f0c080611.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~CountryPage~Frontpage~GovernanceReleaseNotesModal~ModListing~Mod~adaf0b02.67c3b35f01e538993dda.js.map

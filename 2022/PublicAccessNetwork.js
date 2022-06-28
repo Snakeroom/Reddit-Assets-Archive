@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PublicAccessNetwork.fe004b0fdbbe16ddc01c.js
-// Retrieved at 6/27/2022, 2:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PublicAccessNetwork.6f9ad7b88fba927ea961.js
+// Retrieved at 6/28/2022, 4:00:08 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PublicAccessNetwork"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -286,13 +286,13 @@
 					experimentEligibilitySelector: u.a,
 					experimentName: m.ie
 				});
-				return Object(m.Wf)(t) ? void 0 : t
+				return Object(m.Vf)(t) ? void 0 : t
 			}, e => {
 				const t = Object(u.c)(e, {
 					experimentEligibilitySelector: u.a,
 					experimentName: m.je
 				});
-				return Object(m.Wf)(t) ? void 0 : t
+				return Object(m.Vf)(t) ? void 0 : t
 			}, (e, t) => e === m.ne.Enabled && t === m.ne.Enabled);
 			var b = s("./src/config.ts");
 			var h = s("./src/reddit/selectors/user.ts");
@@ -670,7 +670,7 @@
 									icon: e.category_icon,
 									id: e.category_id,
 									name: e.category_name,
-									displayText: Object(m.Vf)(e.category_name)
+									displayText: Object(m.Uf)(e.category_name)
 								};
 								s.push(r.id), t[r.id] = r
 							}), {
@@ -1467,9 +1467,9 @@
 							a = Object(te.M)(s(), {
 								identifier: M.belongsTo
 							});
-						if (a && (e => K.ff.Redirect === Object(W.b)(e, {
+						if (a && (e => K.ef.Redirect === Object(W.b)(e, {
 								experimentEligibilitySelector: Y,
-								experimentName: K.Ye
+								experimentName: K.Xe
 							}))(s())) return void t(Object(o.c)(a.url));
 						if ((M.media && M.media.type) === F.o.LIVEVIDEO) {
 							const e = `/rpan${M.belongsTo.type===N.a.SUBREDDIT?a.url:"/"}${Object(g.v)(M.id)}`;
@@ -7878,7 +7878,7 @@
 				a = s("./src/reddit/selectors/experiments/nsfwListingBelow.ts");
 			const i = e => {
 					const t = Object(a.a)(e);
-					return Boolean(t) && !Object(r.Wf)(t)
+					return Boolean(t) && !Object(r.Vf)(t)
 				},
 				d = Object(o.a)(i, n.d, (e, t) => e && !t)
 		},
@@ -7899,4 +7899,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PublicAccessNetwork.fe004b0fdbbe16ddc01c.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PublicAccessNetwork.6f9ad7b88fba927ea961.js.map

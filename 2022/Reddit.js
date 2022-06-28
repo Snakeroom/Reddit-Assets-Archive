@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Reddit.89df800f83ad038f5f69.js
-// Retrieved at 6/28/2022, 3:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Reddit.efbbcb80302f06ca2498.js
+// Retrieved at 6/28/2022, 4:00:08 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Reddit"], {
 		"./assets/fonts/BentonSans/font.less": function(e, t, n) {},
@@ -13197,7 +13197,7 @@
 				nc = e => {
 					return Object(Aa.c)(e, {
 						experimentEligibilitySelector: Aa.a,
-						experimentName: An.Oe
+						experimentName: An.Ne
 					}) === An.ud
 				};
 			var sc = m.a.memo((function(e) {
@@ -13866,7 +13866,7 @@
 				Bl = n("./src/reddit/icons/fonts/Premium/index.tsx"),
 				Gl = n("./src/reddit/layout/row/InlineButton/index.tsx");
 			const ql = e => Object(Aa.c)(e, {
-				experimentName: An.Jf,
+				experimentName: An.If,
 				experimentEligibilitySelector: Aa.a
 			}) === An.ud;
 			var Hl = n("./src/reddit/selectors/experiments/navbarLikeMweb.ts"),
@@ -17640,14 +17640,14 @@
 							}
 						})), Object(G.d)("enabled" === Object(Aa.c)(s.getState(), {
 							experimentEligibilitySelector: Aa.a,
-							experimentName: An.Df,
+							experimentName: An.Cf,
 							expEventOverride: !1
 						})), Object(G.c)("enabled" === Object(Aa.c)(s.getState(), {
 							experimentEligibilitySelector: Aa.a,
-							experimentName: An.Ff
+							experimentName: An.Ef
 						})), Object(G.g)("enabled" === Object(Aa.c)(s.getState(), {
 							experimentEligibilitySelector: Aa.a,
-							experimentName: An.Ef
+							experimentName: An.Df
 						})), Object(G.f)(xv.gqlContext), window.addEventListener("beforeunload", () => {
 							const e = s.getState(),
 								t = Object(lf.a)("tab_closed")(e),
@@ -20029,15 +20029,15 @@
 			var x = n("./src/lib/getParsedUserAgent/index.ts");
 			const E = Object(a.a)(e => Object(d.c)(e, {
 				experimentEligibilitySelector: e => Object(x.g)(e.meta.userAgent) && Object(u.f)(e),
-				experimentName: l.if
-			}), e => e === l.xf.Enabled);
+				experimentName: l.hf
+			}), e => e === l.wf.Enabled);
 			var P = n("./src/reddit/selectors/responsiveSettings.ts");
 			const j = Object(a.c)({
 					frontpageSignupVariant: p.a,
 					magicLinkVariant: g.a,
 					ssoLoginLinkVariant: e => Object(d.c)(e, {
 						experimentEligibilitySelector: e => !Object(u.e)(e),
-						experimentName: l.nf
+						experimentName: l.mf
 					}),
 					blockingInterstitialVariant: h.e,
 					blockingInterstitialV2Variant: h.f
@@ -20069,7 +20069,7 @@
 					if (j = Object(i.a)(j, {
 							experiment_d2x_2020ify_buttons: "enabled"
 						}), f && (j = Object(i.a)(j, {
-							[`experiment_${l.nf}`]: f
+							[`experiment_${l.mf}`]: f
 						})), x && (j = Object(i.a)(j, {
 							[`experiment_${l.Fd}`]: "enabled"
 						})), E && (j = Object(i.a)(j, {
@@ -20078,7 +20078,7 @@
 						})), j = Object(i.a)(j, {
 							experiment_d2x_onboarding: "enabled"
 						}), P && (j = Object(i.a)(j, {
-							[`experiment_${l.if}`]: "enabled"
+							[`experiment_${l.hf}`]: "enabled"
 						})), C && (j = Object(i.a)(j, {
 							[`experiment_${l.Nb}`]: b
 						})), y && (j = Object(i.a)(j, {
@@ -20572,4 +20572,4 @@
 		["./src/reddit/index.tsx", "runtime~Reddit", "vendors~Governance~ModListing~Reddit~Subreddit", "vendors~Chat~Governance~Reddit", "vendors~Reddit~StandalonePostPage", "vendors~Reddit", "PostCreation~Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~r~4c415e24", "Governance~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compo~bd4baca2", "Governance~ModListing~Reddit~ReportFlow~Subreddit", "Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddi~90fdacc3", "Governance~ModListing~Reddit~Subreddit", "Chat~Governance~Reddit", "Governance~Reddit", "AuthorHovercard~Reddit"]
 	]
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit.89df800f83ad038f5f69.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit.efbbcb80302f06ca2498.js.map
