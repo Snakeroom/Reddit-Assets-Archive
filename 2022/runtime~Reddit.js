@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/runtime~Reddit.7e219a8f5e91e131adb9.js
-// Retrieved at 6/29/2022, 1:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/runtime~Reddit.884ed8432f0b2ba8ee3f.js
+// Retrieved at 6/29/2022, 1:40:07 PM by Reddit Dataminer v1.0.0
 ! function(e) {
 	function o(o) {
 		for (var a, n, r = o[0], s = o[1], c = o[2], l = 0, P = []; l < r.length; l++) n = r[l], Object.prototype.hasOwnProperty.call(d, n) && d[n] && P.push(d[n][0]), d[n] = 0;
@@ -845,7 +845,7 @@
 					SubredditPremiumBadgeHovercardTooltip: "bedac08815b072bb8695",
 					gildActions: "37f54b40c7394dfef57f",
 					"ChatMessageInput~ChatPost": "893c12033b28c14a0269",
-					ChatPost: "a24a14bcdedd5186e756",
+					ChatPost: "84972c1ca18f0e26afb5",
 					"reddit-components-ClassicPost": "0331a417926e1efb29fd",
 					"reddit-components-CompactPost": "c63daf26bb0ea6f5a48d",
 					"reddit-components-LargePost": "54bff1be8efd1ac9e13e",
@@ -1551,7 +1551,7 @@
 						SubredditPremiumBadgeHovercardTooltip: "71ca3fa7d3ec2077f123",
 						gildActions: "2f7977c413f00e73c1a5",
 						"ChatMessageInput~ChatPost": "c4a2d46f43bb39982318",
-						ChatPost: "f22951842d561b691907",
+						ChatPost: "2a765efc942100438153",
 						"reddit-components-ClassicPost": "af1fb00cdaaac1f4e25d",
 						"reddit-components-CompactPost": "bee19112cb6da9fb7f98",
 						"reddit-components-LargePost": "8083828bfb282d9869e0",
@@ -1763,4 +1763,4 @@
 	var m = c;
 	t()
 }([]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/runtime~Reddit.7e219a8f5e91e131adb9.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/runtime~Reddit.884ed8432f0b2ba8ee3f.js.map
