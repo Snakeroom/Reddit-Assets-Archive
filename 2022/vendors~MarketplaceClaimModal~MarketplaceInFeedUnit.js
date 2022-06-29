@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/vendors~MarketplaceClaimModal~MarketplaceInFeedUnit.a75457d387662422e6dc.js
-// Retrieved at 6/27/2022, 10:20:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/vendors~MarketplaceClaimModal~MarketplaceInFeedUnit.35c3ac7923b48cd15a99.js
+// Retrieved at 6/29/2022, 10:40:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["vendors~MarketplaceClaimModal~MarketplaceInFeedUnit"], {
 		"./node_modules/@reddit/crypto/react/nft-claim/index.es.js": function(e, A, t) {
@@ -8806,7 +8806,7 @@
 						className: Ei
 					}, i.a.createElement(Y, {
 						desc: "Benefit description: you own this specific NFT avatar"
-					}, "You own your NFT avatar"))), i.a.createElement(i.a.Fragment, null, i.a.createElement("img", {
+					}, "You own your Collectible Avatar"))), i.a.createElement(i.a.Fragment, null, i.a.createElement("img", {
 						src: a.e.Transferable,
 						className: yi,
 						alt: t.inline("blockchain transfer icon", "alt text: blockchain transfer icon")
@@ -8895,7 +8895,7 @@
 							className: hi
 						}, i.a.createElement(Y, {
 							desc: "Header for the table of benefits and features of the NFT item"
-						}, "NFT BENEFITS")), i.a.createElement(Fd, {
+						}, "BENEFITS")), i.a.createElement(Fd, {
 							isAwarded: !e.artist
 						})), i.a.createElement("div", {
 							className: bi
@@ -8903,7 +8903,7 @@
 							className: wi
 						}, i.a.createElement(Y, {
 							desc: "Header for the section with external links to NFT item details"
-						}, "NFT DETAILS")), i.a.createElement("div", {
+						}, "DETAILS")), i.a.createElement("div", {
 							className: Qi
 						}, i.a.createElement(Md, {
 							nft: e
@@ -9523,7 +9523,7 @@
 							noun: C.Vault
 						}), e))(N),
 						clickCreateEvent: () => (e => v(y(v({}, O), {
-							action: Q.Create,
+							action: Q.Click,
 							noun: C.CreateVault
 						}), e))(N),
 						viewSuccessEvent: () => V
@@ -9541,4 +9541,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/vendors~MarketplaceClaimModal~MarketplaceInFeedUnit.a75457d387662422e6dc.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/vendors~MarketplaceClaimModal~MarketplaceInFeedUnit.35c3ac7923b48cd15a99.js.map

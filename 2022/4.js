@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/4.3488778c53e6c30fc479.js
-// Retrieved at 6/27/2022, 10:20:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/4.38f15e0de1f0c1124421.js
+// Retrieved at 6/29/2022, 10:40:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	[4], {
 		"./node_modules/@reddit/crypto/react/nft-product-card/index.es.js": function(e, t, n) {
@@ -142,19 +142,19 @@
 			}();
 			var j = _.exports;
 
-			function T(e) {
+			function A(e) {
 				var t, n, r = "";
 				if ("string" == typeof e || "number" == typeof e) r += e;
 				else if ("object" == typeof e)
 					if (Array.isArray(e))
-						for (t = 0; t < e.length; t++) e[t] && (n = T(e[t])) && (r && (r += " "), r += n);
+						for (t = 0; t < e.length; t++) e[t] && (n = A(e[t])) && (r && (r += " "), r += n);
 					else
 						for (t in e) e[t] && (r && (r += " "), r += t);
 				return r
 			}
 
-			function A() {
-				for (var e, t, n = 0, r = ""; n < arguments.length;)(e = arguments[n++]) && (t = T(e)) && (r && (r += " "), r += t);
+			function T() {
+				for (var e, t, n = 0, r = ""; n < arguments.length;)(e = arguments[n++]) && (t = A(e)) && (r && (r += " "), r += t);
 				return r
 			}
 
@@ -563,10 +563,10 @@
 						return e in Pe ? new Oe(e, t, n) : null
 					}
 				}],
-				Te = {
+				Ae = {
 					process: !0
 				},
-				Ae = {
+				Te = {
 					force: !0,
 					process: !0
 				},
@@ -629,7 +629,7 @@
 						else
 							for (var r = 0; r < this.index.length; r++) this.updateOne(this.index[r], t, n)
 					}, t.updateOne = function(t, n, r) {
-						void 0 === r && (r = Te);
+						void 0 === r && (r = Ae);
 						var i = this.options,
 							a = i.jss.plugins,
 							o = i.sheet;
@@ -639,12 +639,12 @@
 							if (a.onUpdate(n, t, o, r), r.process && s && s !== t.style) {
 								for (var l in a.onProcessStyle(t.style, t, o), t.style) {
 									var c = t.style[l];
-									c !== s[l] && t.prop(l, c, Ae)
+									c !== s[l] && t.prop(l, c, Te)
 								}
 								for (var u in s) {
 									var d = t.style[u],
 										f = s[u];
-									null == d && d !== f && t.prop(u, null, Ae)
+									null == d && d !== f && t.prop(u, null, Te)
 								}
 							}
 						}
@@ -1384,8 +1384,8 @@
 					}
 				}
 			}
-			var Tt = "",
-				At = "",
+			var At = "",
+				Tt = "",
 				It = "",
 				Mt = "",
 				Rt = W && "ontouchstart" in document.documentElement;
@@ -1399,14 +1399,14 @@
 					Dt = document.createElement("p").style;
 				for (var Lt in Ft)
 					if (Lt + "Transform" in Dt) {
-						Tt = Lt, At = Ft[Lt];
+						At = Lt, Tt = Ft[Lt];
 						break
 					}
-				"Webkit" === Tt && "msHyphens" in Dt && (Tt = "ms", At = Ft.ms, Mt = "edge"), "Webkit" === Tt && "-apple-trailing-word" in Dt && (It = "apple")
+				"Webkit" === At && "msHyphens" in Dt && (At = "ms", Tt = Ft.ms, Mt = "edge"), "Webkit" === At && "-apple-trailing-word" in Dt && (It = "apple")
 			}
 			var zt = {
-				js: Tt,
-				css: At,
+				js: At,
+				css: Tt,
 				vendor: It,
 				browser: Mt,
 				isTouch: Rt
@@ -1705,7 +1705,7 @@
 						}
 					})]
 				}),
-				Tn = {
+				An = {
 					disableGeneration: !1,
 					generateClassName: function() {
 						var e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {},
@@ -1735,7 +1735,7 @@
 					sheetsManager: new Map,
 					sheetsRegistry: null
 				},
-				An = i.a.createContext(Tn),
+				Tn = i.a.createContext(An),
 				In = -1e9;
 			var Mn = {};
 
@@ -1875,7 +1875,7 @@
 				return function() {
 					var e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {},
 						t = On() || s,
-						r = k({}, i.a.useContext(An), l),
+						r = k({}, i.a.useContext(Tn), l),
 						o = i.a.useRef(),
 						u = i.a.useRef();
 					zn((function() {
@@ -2176,7 +2176,7 @@
 					A400: "#ff1744",
 					A700: "#d50000"
 				},
-				Tr = {
+				Ar = {
 					50: "#fff3e0",
 					100: "#ffe0b2",
 					200: "#ffcc80",
@@ -2192,7 +2192,7 @@
 					A400: "#ff9100",
 					A700: "#ff6d00"
 				},
-				Ar = {
+				Tr = {
 					50: "#e3f2fd",
 					100: "#bbdefb",
 					200: "#90caf9",
@@ -2380,15 +2380,15 @@
 					} : a,
 					s = e.warning,
 					l = void 0 === s ? {
-						light: Tr[300],
-						main: Tr[500],
-						dark: Tr[700]
-					} : s,
-					c = e.info,
-					u = void 0 === c ? {
 						light: Ar[300],
 						main: Ar[500],
 						dark: Ar[700]
+					} : s,
+					c = e.info,
+					u = void 0 === c ? {
+						light: Tr[300],
+						main: Tr[500],
+						dark: Tr[700]
 					} : c,
 					d = e.success,
 					f = void 0 === d ? {
@@ -2679,7 +2679,7 @@
 						f = void 0 === d ? "elevation" : d,
 						m = E(e, ["classes", "className", "component", "square", "elevation", "variant"]);
 					return r.createElement(o, k({
-						className: A(n.root, i, "outlined" === f ? n.outlined : n["elevation".concat(u)], !l && n.rounded),
+						className: T(n.root, i, "outlined" === f ? n.outlined : n["elevation".concat(u)], !l && n.rounded),
 						ref: t
 					}, m))
 				})),
@@ -2736,7 +2736,7 @@
 						"rtl" === f.direction && (v = -v), p.bar2.transform = "translateX(".concat(v, "%)")
 					}
 					return r.createElement("div", k({
-						className: A(n.root, n["color".concat(di(o))], i, {
+						className: T(n.root, n["color".concat(di(o))], i, {
 							determinate: n.determinate,
 							indeterminate: n.indeterminate,
 							buffer: n.buffer,
@@ -2746,15 +2746,15 @@
 					}, m, {
 						ref: t
 					}, d), "buffer" === u ? r.createElement("div", {
-						className: A(n.dashed, n["dashedColor".concat(di(o))])
+						className: T(n.dashed, n["dashedColor".concat(di(o))])
 					}) : null, r.createElement("div", {
-						className: A(n.bar, n["barColor".concat(di(o))], ("indeterminate" === u || "query" === u) && n.bar1Indeterminate, {
+						className: T(n.bar, n["barColor".concat(di(o))], ("indeterminate" === u || "query" === u) && n.bar1Indeterminate, {
 							determinate: n.bar1Determinate,
 							buffer: n.bar1Buffer
 						} [u]),
 						style: p.bar1
 					}), "determinate" === u ? null : r.createElement("div", {
-						className: A(n.bar, ("indeterminate" === u || "query" === u) && n.bar2Indeterminate, "buffer" === u ? [n["color".concat(di(o))], n.bar2Buffer] : n["barColor".concat(di(o))]),
+						className: T(n.bar, ("indeterminate" === u || "query" === u) && n.bar2Indeterminate, "buffer" === u ? [n["color".concat(di(o))], n.bar2Buffer] : n["barColor".concat(di(o))]),
 						style: p.bar2
 					}))
 				})),
@@ -2900,14 +2900,14 @@
 					return r.createElement(ui, k({
 						square: !0,
 						elevation: 0,
-						className: A(o.root, o["position".concat(di(d))], s),
+						className: T(o.root, o["position".concat(di(d))], s),
 						ref: t
 					}, h), a, "text" === p && r.createElement(r.Fragment, null, i + 1, " / ", f), "dots" === p && r.createElement("div", {
 						className: o.dots
 					}, w(new Array(f)).map((function(e, t) {
 						return r.createElement("div", {
 							key: t,
-							className: A(o.dot, t === i && o.dotActive)
+							className: T(o.dot, t === i && o.dotActive)
 						})
 					}))), "progress" === p && r.createElement(mi, k({
 						className: o.progress,
@@ -3058,20 +3058,20 @@
 			}
 
 			function ji(e) {
-				return Ti = ji = "function" == typeof Symbol && "symbol" === Pi(Symbol.iterator) ? function(e) {
+				return Ai = ji = "function" == typeof Symbol && "symbol" === Pi(Symbol.iterator) ? function(e) {
 					return Pi(e)
 				} : function(e) {
 					return e && "function" == typeof Symbol && e.constructor === Symbol && e !== Symbol.prototype ? "symbol" : Pi(e)
 				}, ji(e)
 			}
-			var Ti = ji;
-			var Ai = Ti,
+			var Ai = ji;
+			var Ti = Ai,
 				Ii = function(e) {
 					if (void 0 === e) throw new ReferenceError("this hasn't been initialised - super() hasn't been called");
 					return e
 				};
 			var Mi = function(e, t) {
-				return !t || "object" !== Ai(t) && "function" != typeof t ? Ii(e) : t
+				return !t || "object" !== Ti(t) && "function" != typeof t ? Ii(e) : t
 			};
 
 			function Ri(e) {
@@ -3679,7 +3679,7 @@
 			Object.defineProperty(ja, "__esModule", {
 				value: !0
 			});
-			var Ta, Aa = Object.assign || function(e) {
+			var Aa, Ta = Object.assign || function(e) {
 					for (var t = 1; t < arguments.length; t++) {
 						var n = arguments[t];
 						for (var r in n) Object.prototype.hasOwnProperty.call(n, r) && (e[r] = n[r])
@@ -3698,8 +3698,8 @@
 					}
 				}(),
 				Ma = i.a,
-				Ra = (Ta = Ma) && Ta.__esModule ? Ta : {
-					default: Ta
+				Ra = (Aa = Ma) && Aa.__esModule ? Aa : {
+					default: Aa
 				},
 				Fa = s.a;
 			var Da = function(e) {
@@ -3752,7 +3752,7 @@
 							var e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : function() {},
 								t = arguments[1];
 							return this.updateElementPosition(), this.setState(Object.assign({}, this.state, {
-								style: Aa({}, this.state.style, {
+								style: Ta({}, this.state.style, {
 									willChange: "transform"
 								})
 							})), this.setTransition(), e(t)
@@ -3763,7 +3763,7 @@
 							var e = this;
 							window.requestAnimationFrame((function() {
 								e.setState(Object.assign({}, e.state, {
-									style: Aa({}, e.state.style, {
+									style: Ta({}, e.state.style, {
 										transform: "perspective(" + e.settings.perspective + "px) rotateX(0deg) rotateY(0deg) scale3d(1, 1, 1)"
 									})
 								}))
@@ -3781,12 +3781,12 @@
 						value: function() {
 							var e = this;
 							clearTimeout(this.transitionTimeout), this.setState(Object.assign({}, this.state, {
-								style: Aa({}, this.state.style, {
+								style: Ta({}, this.state.style, {
 									transition: this.settings.speed + "ms " + this.settings.easing
 								})
 							})), this.transitionTimeout = setTimeout((function() {
 								e.setState(Object.assign({}, e.state, {
-									style: Aa({}, e.state.style, {
+									style: Ta({}, e.state.style, {
 										transition: ""
 									})
 								}))
@@ -3824,7 +3824,7 @@
 						value: function(e) {
 							var t = this.getValues(e);
 							this.setState(Object.assign({}, this.state, {
-								style: Aa({}, this.state.style, {
+								style: Ta({}, this.state.style, {
 									transform: "perspective(" + this.settings.perspective + "px) rotateX(" + ("x" === this.settings.axis ? 0 : t.tiltY) + "deg) rotateY(" + ("y" === this.settings.axis ? 0 : t.tiltX) + "deg) scale3d(" + this.settings.scale + ", " + this.settings.scale + ", " + this.settings.scale + ")"
 								})
 							})), this.updateCall = null
@@ -4045,7 +4045,7 @@
 				return e
 			}
 
-			function To(e) {
+			function Ao(e) {
 				return io(arguments, 1).forEach((function(t) {
 					jo(t, (function(n, r) {
 						e[r] = t[r]
@@ -4053,10 +4053,10 @@
 				})), e
 			}
 
-			function Ao(e) {
+			function To(e) {
 				return io(arguments, 1).forEach((function(t) {
 					jo(t, (function(t, n) {
-						fo(t) ? e[n] = t.slice() : uo(t) ? e[n] = Ao({}, uo(e[n]) ? e[n] : {}, t) : e[n] = t
+						fo(t) ? e[n] = t.slice() : uo(t) ? e[n] = To({}, uo(e[n]) ? e[n] : {}, t) : e[n] = t
 					}))
 				})), e
 			}
@@ -4251,8 +4251,8 @@
 				Os = "dragging",
 				Ps = "dragged",
 				js = "scroll",
-				Ts = "scrolled",
-				As = "destroy",
+				As = "scrolled",
+				Ts = "destroy",
 				Is = "arrows:mounted",
 				Ms = "arrows:updated",
 				Rs = "pagination:mounted",
@@ -4266,7 +4266,7 @@
 			function Ws(e) {
 				var t = e ? e.event.bus : document.createDocumentFragment(),
 					n = fs();
-				return e && e.event.on(As, n.destroy), To(n, {
+				return e && e.event.on(Ts, n.destroy), Ao(n, {
 					bus: t,
 					on: function(e, r) {
 						n.bind(t, yo(e).join(" "), (function(e) {
@@ -4377,8 +4377,8 @@
 					page: bl,
 					spinner: Jo + "__spinner"
 				};
-			var Tl = 5,
-				Al = 200,
+			var Al = 5,
+				Tl = 200,
 				Il = "touchstart mousedown",
 				Ml = "touchmove mousemove",
 				Rl = "touchend touchcancel mouseup";
@@ -4455,7 +4455,7 @@
 					container: S,
 					isClone: k,
 					mount: function() {
-						k || (r.id = u.id + "-slide" + us(t + 1), Ro(r, Ys, h ? "tabpanel" : "group"), Ro(r, il, p.slide), Ro(r, el, b || cs(p.slideLabel, [t + 1, e.length]))), l(r, "click", ao(s, gs, C)), l(r, "keydown", ao(s, ws, C)), o([hs, vs, Ts], x), o(Ds, N), m && o(ps, E)
+						k || (r.id = u.id + "-slide" + us(t + 1), Ro(r, Ys, h ? "tabpanel" : "group"), Ro(r, il, p.slide), Ro(r, el, b || cs(p.slideLabel, [t + 1, e.length]))), l(r, "click", ao(s, gs, C)), l(r, "keydown", ao(s, ws, C)), o([hs, vs, As], x), o(Ds, N), m && o(ps, E)
 					},
 					destroy: function() {
 						i = !0, a.destroy(), Go(r, Pl), Mo(r, sl), Ro(r, "style", y), Ro(r, el, b || "")
@@ -4523,13 +4523,13 @@
 							var t = r.is(to),
 								i = n.direction,
 								a = s.reduce((function(e, t) {
-									return Ao(e, t[1].matches ? t[0] : {})
+									return To(e, t[1].matches ? t[0] : {})
 								}), {});
 							Io(n), d(a), n.destroy ? e.destroy("completely" === n.destroy) : t ? (l(!0), e.mount()) : i !== n.direction && e.refresh()
 						}
 
 						function d(t, i) {
-							Ao(n, t), i && Ao(Object.getPrototypeOf(n), t), r.is(Qa) || e.emit(Es, n)
+							To(n, t), i && To(Object.getPrototypeOf(n), t), r.is(Qa) || e.emit(Es, n)
 						}
 						return {
 							setup: function() {
@@ -4542,7 +4542,7 @@
 							},
 							destroy: l,
 							reduce: function(e) {
-								matchMedia(Ya).matches && (e ? Ao(n, a) : Io(n, Po(a)))
+								matchMedia(Ya).matches && (e ? To(n, a) : Io(n, Po(a)))
 							},
 							set: d
 						}
@@ -4582,7 +4582,7 @@
 									toggle: Sl
 								}, (function(e, t) {
 									d[t] = y("." + e)
-								})), To(d, {
+								})), Ao(d, {
 									root: c,
 									track: r,
 									list: i,
@@ -4618,7 +4618,7 @@
 						function b(e) {
 							return [e + "--" + n.type, e + "--" + n.direction, n.drag && e + "--draggable", n.isNavigation && e + "--nav", e === ll && Nl]
 						}
-						return To(d, {
+						return Ao(d, {
 							setup: h,
 							mount: function() {
 								s(Ns, v), s(Ns, h), s(Es, g), l(document, Il + " keydown", (function(e) {
@@ -5105,10 +5105,10 @@
 							! function() {
 								var e = n.arrows;
 								!e || v && g || (h = m || Fo("div", c.arrows), v = N(!0), g = N(!1), r = !0, Eo(h, [v, g]), !m && xo(h, p));
-								v && g && (To(y, {
+								v && g && (Ao(y, {
 									prev: v,
 									next: g
-								}), Lo(h, e ? "" : "none"), No(h, i = pl + "--" + n.direction), e && (o([hs, Ns, Ts], E), s(g, "click", ao(w, ">")), s(v, "click", ao(w, "<")), E(), Ro([v, g], Js, p.id), l(Is, v, g)))
+								}), Lo(h, e ? "" : "none"), No(h, i = pl + "--" + n.direction), e && (o([hs, Ns, As], E), s(g, "click", ao(w, ">")), s(v, "click", ao(w, "<")), E(), Ro([v, g], Js, p.id), l(Is, v, g)))
 							}(), o(Es, k)
 						}
 
@@ -5244,7 +5244,7 @@
 						}
 
 						function v() {
-							l(Ja), i && i(), s(Ts)
+							l(Ja), i && i(), s(As)
 						}
 
 						function g(t, r, i, a) {
@@ -5296,7 +5296,7 @@
 						function P(e) {
 							if (l = !1, !c) {
 								var t = L(e);
-								r = e.target, i = n.noDrag, _o(r, "." + bl + ", ." + hl) || i && _o(r, i) || !t && e.button || (b.isBusy() ? Ho(e, !0) : (u = t ? k : window, s = v.is([Za, Ka]), a = null, p(u, Ml, j, Ql), p(u, Rl, T, Ql), g.cancel(), y.cancel(), I(e)))
+								r = e.target, i = n.noDrag, _o(r, "." + bl + ", ." + hl) || i && _o(r, i) || !t && e.button || (b.isBusy() ? Ho(e, !0) : (u = t ? k : window, s = v.is([Za, Ka]), a = null, p(u, Ml, j, Ql), p(u, Rl, A, Ql), g.cancel(), y.cancel(), I(e)))
 							}
 							var r, i
 						}
@@ -5304,8 +5304,8 @@
 						function j(t) {
 							if (v.is(eo) || (v.set(eo), m(Cs)), t.cancelable)
 								if (s) {
-									g.translate(r + M(t) / (C && e.is(Fl) ? Tl : 1));
-									var i = R(t) > Al,
+									g.translate(r + M(t) / (C && e.is(Fl) ? Al : 1));
+									var i = R(t) > Tl,
 										a = C !== (C = _());
 									(i || a) && I(t), l = !0, m(Os), Ho(t)
 								} else(function(e) {
@@ -5319,12 +5319,12 @@
 								}(t), Ho(t))
 						}
 
-						function T(r) {
+						function A(r) {
 							v.is(eo) && (v.set(Ja), m(Ps)), s && (! function(r) {
 								var i = function(t) {
 										if (e.is(Dl) || !C) {
 											var n = R(t);
-											if (n && n < Al) return M(t) / n
+											if (n && n < Tl) return M(t) / n
 										}
 										return 0
 									}(r),
@@ -5334,10 +5334,10 @@
 									s = n.rewind && n.rewindByDrag;
 								S(!1), o ? b.scroll(a, 0, n.snap) : e.is(Ll) ? b.go(E(ls(i)) < 0 ? s ? "<" : "-" : s ? ">" : "+") : e.is(Fl) && C && s ? b.go(_(!0) ? ">" : "<") : b.go(b.toDest(a), !0);
 								S(!0)
-							}(r), Ho(r)), h(u, Ml, j), h(u, Rl, T), s = !1
+							}(r), Ho(r)), h(u, Ml, j), h(u, Rl, A), s = !1
 						}
 
-						function A(e) {
+						function T(e) {
 							!c && l && Ho(e, !0)
 						}
 
@@ -5370,7 +5370,7 @@
 						}
 						return {
 							mount: function() {
-								p(k, Ml, so, Ql), p(k, Rl, so, Ql), p(k, Il, P, Ql), p(k, "click", A, {
+								p(k, Ml, so, Ql), p(k, Rl, so, Ql), p(k, Il, P, Ql), p(k, "click", T, {
 									capture: !0
 								}), p(k, "dragstart", Ho), f([ms, Es], O)
 							},
@@ -5427,7 +5427,7 @@
 							o = r.bind,
 							s = r.emit,
 							l = "sequential" === n.lazyLoad,
-							c = [ms, Ns, hs, Ts],
+							c = [ms, Ns, hs, As],
 							u = [];
 
 						function d() {
@@ -5532,7 +5532,7 @@
 						return {
 							items: v,
 							mount: function t() {
-								g(), o([Es, Ns], t), n.pagination && c.isEnough() && (o([ps, js, Ts], w), function() {
+								g(), o([Es, Ns], t), n.pagination && c.isEnough() && (o([ps, js, As], w), function() {
 									var t = e.length,
 										a = n.classes,
 										o = n.i18n,
@@ -5648,7 +5648,7 @@
 						}
 						return {
 							mount: function() {
-								a && (s(!t.Autoplay.isPaused()), Ro(i, ol, "additions"), o.textContent = "…", r(Ls, ao(s, !0)), r(Vs, ao(s, !1)), r([hs, Ts], ao(Eo, i, o)))
+								a && (s(!t.Autoplay.isPaused()), Ro(i, ol, "additions"), o.textContent = "…", r(Ls, ao(s, !0)), r(Vs, ao(s, !1)), r([hs, As], ao(Eo, i, o)))
 							},
 							disable: s,
 							destroy: function() {
@@ -5764,23 +5764,23 @@
 						}
 					}), this.splides = [], this._o = {}, this._E = {};
 					var i = po(t) ? qo(document, t) : t;
-					Ko(i, i + " is invalid."), this.root = i, n = Ao({
+					Ko(i, i + " is invalid."), this.root = i, n = To({
 						label: Vo(i, el) || "",
 						labelledby: Vo(i, tl) || ""
 					}, ac, e.defaults, n || {});
 					try {
-						Ao(n, JSON.parse(Vo(i, Zo)))
+						To(n, JSON.parse(Vo(i, Zo)))
 					} catch (a) {
 						Ko(!1, "Invalid JSON")
 					}
-					this._o = Object.create(Ao({}, n))
+					this._o = Object.create(To({}, n))
 				}
 				var t, n, r, i = e.prototype;
 				return i.mount = function(e, t) {
 					var n = this,
 						r = this.state,
 						i = this.Components;
-					return Ko(r.is([Qa, to]), "Already mounted!"), r.set(Qa), this._C = i, this._T = t || this._T || (this.is(Ll) ? oc : sc), this._E = e || this._E, jo(To({}, ic, this._E, {
+					return Ko(r.is([Qa, to]), "Already mounted!"), r.set(Qa), this._C = i, this._T = t || this._T || (this.is(Ll) ? oc : sc), this._E = e || this._E, jo(Ao({}, ic, this._E, {
 						Transition: this._T
 					}), (function(e, t) {
 						var r = e(n, i, n._o);
@@ -5818,7 +5818,7 @@
 						n = this.state;
 					return n.is(Qa) ? Ws(this).on("ready", this.destroy.bind(this, e)) : (jo(this._C, (function(t) {
 						t.destroy && t.destroy(e)
-					}), !0), t.emit(As), t.destroy(), e && ro(this.splides), n.set(to)), this
+					}), !0), t.emit(Ts), t.destroy(), e && ro(this.splides), n.set(to)), this
 				}, t = e, (n = [{
 					key: "options",
 					get: function() {
@@ -6540,8 +6540,8 @@
 			var Oc = "_container_1xrhc_1",
 				Pc = "_skipAnimations_1xrhc_10",
 				jc = "_flipped_1xrhc_14",
-				Tc = "_front_1xrhc_18",
-				Ac = "_back_1xrhc_19";
+				Ac = "_front_1xrhc_18",
+				Tc = "_back_1xrhc_19";
 			const Ic = ({
 				back: e,
 				front: t,
@@ -6570,9 +6570,9 @@
 					onMouseEnter: s,
 					onMouseLeave: l
 				}, i.a.createElement("div", {
-					className: Ac
-				}, e), i.a.createElement("div", {
 					className: Tc
+				}, e), i.a.createElement("div", {
+					className: Ac
 				}, t))
 			};
 			var Mc = "_container_ryr9r_8",
@@ -7008,14 +7008,14 @@
 			};
 			var pu, hu, vu, gu, yu, bu, ku, Su, wu, Nu, Eu, xu, _u, Cu, Ou, Pu, ju = {};
 
-			function Tu(e, t) {
+			function Au(e, t) {
 				for (var n = 0; n < e.definitions.length; n++) {
 					var r = e.definitions[n];
 					if (r.name && r.name.value == t) return r
 				}
 			}
 
-			function Au({
+			function Tu({
 				itemId: e,
 				onError: t
 			}) {
@@ -7094,7 +7094,7 @@
 				function(e, t) {
 					var n = {
 						kind: e.kind,
-						definitions: [Tu(e, t)]
+						definitions: [Au(e, t)]
 					};
 					e.hasOwnProperty("loc") && (n.loc = e.loc);
 					var r = ju[t] || new Set,
@@ -7111,7 +7111,7 @@
 						}))
 					}
 					i.forEach((function(t) {
-						var r = Tu(e, t);
+						var r = Au(e, t);
 						r && n.definitions.push(r)
 					}))
 				}(mu, "getNftDetails"), (hu = pu || (pu = {})).MINTED = "MINTED", hu.MINTING = "MINTING", hu.TRANSFERRING = "TRANSFERRING", (gu = vu || (vu = {})).Marketplace = "marketplace", gu.Avatar = "avatar", (bu = yu || (yu = {})).Click = "click", bu.Create = "create", bu.Secure = "secure", bu.Paid = "paid", bu.View = "view", (Su = ku || (ku = {})).ClaimPostUnit = "claim_post_unit", Su.ClaimNft = "claim_nft", Su.BuyNft = "buy_nft", Su.CreateVault = "create_vault", Su.CompleteTransaction = "complete_transaction", Su.ListingFe = "listing_fe", Su.NftDetails = "nft_details", Su.PaymentError = "payment_error", Su.ProductDetailPage = "product_detail_page", Su.PdpDynamicCta = "pdp_dynamic_cta", Su.MarketplaceArtist = "marketplace_artist", Su.SecureVault = "secure_vault", Su.Vault = "vault", Su.VaultConfirmation = "vault_confirmation", (Nu = wu || (wu = {})).ClaimFlow = "claim_flow", Nu.Purchase = "purchase", Nu.SetAvatar = "set_avatar", Nu.Transfer = "transfer", Nu.ViewNft = "view_nft", (Eu || (Eu = {})).ProductDetailPage = "product_detail_page", (xu || (xu = {})).Password = "password", (Cu = _u || (_u = {})).New = "NEW", Cu.ActionRequired = "ACTION_REQUIRED", Cu.Pending = "PENDING", Cu.Paid = "PAID", Cu.Canceled = "CANCELED", Cu.Rejected = "REJECTED", Cu.Failed = "FAILED", Cu.Refunded = "REFUNDED", (Pu = Ou || (Ou = {})).AVAILABLE = "AVAILABLE", Pu.SOLD_OUT = "SOLD_OUT", Pu.EXPIRED = "EXPIRED", Ou.AVAILABLE, Ou.SOLD_OUT, Ou.EXPIRED;
@@ -7323,8 +7323,8 @@
 			var Od = "_container_1g1dd_191",
 				Pd = "_closeButton_1g1dd_198",
 				jd = "_section_1g1dd_201",
-				Td = "_panel_1g1dd_204",
-				Ad = "_fullView_1g1dd_209",
+				Ad = "_panel_1g1dd_204",
+				Td = "_fullView_1g1dd_209",
 				Id = "_background_1g1dd_212";
 			const Md = ({
 					className: e,
@@ -7340,7 +7340,7 @@
 					onClose: a
 				}) => i.a.createElement("div", {
 					className: gi(Od, r, {
-						[Ad]: !e
+						[Td]: !e
 					})
 				}, a && i.a.createElement(l.c, {
 					theme: "light",
@@ -7352,7 +7352,7 @@
 				}, i.a.createElement(Md, {
 					className: Id
 				}, t)), n && i.a.createElement("div", {
-					className: Td
+					className: Ad
 				}, n));
 
 			function Fd(e) {
@@ -7486,15 +7486,15 @@
 									})), t.on("change", C), t.on("blur", E), t.on("focus", x), t.on("escape", O), t.on("click", _)
 								}
 							}));
-							var P, j, T = (P = s, j = i.a.useRef(P), i.a.useEffect((function() {
+							var P, j, A = (P = s, j = i.a.useRef(P), i.a.useEffect((function() {
 								j.current = P
 							}), [P]), j.current);
 							return i.a.useEffect((function() {
 								if (S.current) {
-									var e = Bd(s, T, ["paymentRequest"]);
+									var e = Bd(s, A, ["paymentRequest"]);
 									e && S.current.update(e)
 								}
-							}), [s, T]), i.a.useLayoutEffect((function() {
+							}), [s, A]), i.a.useLayoutEffect((function() {
 								return function() {
 									S.current && S.current.destroy()
 								}
@@ -8553,7 +8553,7 @@
 						className: od
 					}, i.a.createElement($a, {
 						desc: "Benefit description: you own this specific NFT avatar"
-					}, "You own your NFT avatar"))), i.a.createElement(i.a.Fragment, null, i.a.createElement("img", {
+					}, "You own your Collectible Avatar"))), i.a.createElement(i.a.Fragment, null, i.a.createElement("img", {
 						src: l.e.Transferable,
 						className: ad,
 						alt: n.inline("blockchain transfer icon", "alt text: blockchain transfer icon")
@@ -8642,7 +8642,7 @@
 							className: nd
 						}, i.a.createElement($a, {
 							desc: "Header for the table of benefits and features of the NFT item"
-						}, "NFT BENEFITS")), i.a.createElement(gf, {
+						}, "BENEFITS")), i.a.createElement(gf, {
 							isAwarded: !e.artist
 						})), i.a.createElement("div", {
 							className: sd
@@ -8650,7 +8650,7 @@
 							className: ud
 						}, i.a.createElement($a, {
 							desc: "Header for the section with external links to NFT item details"
-						}, "NFT DETAILS")), i.a.createElement("div", {
+						}, "DETAILS")), i.a.createElement("div", {
 							className: dd
 						}, i.a.createElement(bf, {
 							nft: e
@@ -8708,7 +8708,7 @@
 						nftItem: c,
 						error: u,
 						fetching: d
-					} = Au({
+					} = Tu({
 						itemId: e
 					});
 					return d || !c || Boolean(u) ? i.a.createElement(l.g, {
@@ -8731,4 +8731,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/4.3488778c53e6c30fc479.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/4.38f15e0de1f0c1124421.js.map
