@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~ModerationPages~PostCreation~Profile~9a5d9fab.4401d5019bf626940193.js
-// Retrieved at 6/28/2022, 4:00:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~ModerationPages~PostCreation~Profile~9a5d9fab.4589ae8e7c3cd859b62e.js
+// Retrieved at 6/29/2022, 9:40:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~ModerationPages~PostCreation~Profile~9a5d9fab"], {
 		"./src/higherOrderComponents/withClickTracking/index.tsx": function(e, t, s) {
@@ -85,16 +85,16 @@
 			const p = Object(r.a)(e => {
 				const t = Object(m.c)(e, {
 					experimentEligibilitySelector: m.a,
-					experimentName: u.ie
+					experimentName: u.ke
 				});
-				return Object(u.Vf)(t) ? void 0 : t
+				return Object(u.Xf)(t) ? void 0 : t
 			}, e => {
 				const t = Object(m.c)(e, {
 					experimentEligibilitySelector: m.a,
-					experimentName: u.je
+					experimentName: u.le
 				});
-				return Object(u.Vf)(t) ? void 0 : t
-			}, (e, t) => e === u.ne.Enabled && t === u.ne.Enabled);
+				return Object(u.Xf)(t) ? void 0 : t
+			}, (e, t) => e === u.pe.Enabled && t === u.pe.Enabled);
 			var h = s("./src/config.ts");
 			var b = s("./src/reddit/selectors/user.ts");
 			const g = e => {
@@ -614,21 +614,21 @@
 						shouldShowTileLayoutOption: V,
 						showPromotedCTA: H,
 						subredditName: W,
-						isVisible: F
+						isVisible: U
 					} = e,
-					U = Object(o.e)(e => Object(C.d)(e, A)),
-					G = U > 0,
-					$ = U < h.length - 1,
+					F = Object(o.e)(e => Object(C.d)(e, A)),
+					G = F > 0,
+					$ = F < h.length - 1,
 					Q = Object(p.a)(),
 					K = Object(i.useRef)(null),
 					J = Object(i.useRef)(null),
-					[z, Y] = Object(i.useState)(F ? U : -1),
-					[q, X] = Object(i.useState)(F ? U : -1),
-					Z = Object(l.a)(F),
-					ee = Object(l.a)(U);
+					[z, Y] = Object(i.useState)(U ? F : -1),
+					[q, X] = Object(i.useState)(U ? F : -1),
+					Z = Object(l.a)(U),
+					ee = Object(l.a)(F);
 				Object(i.useEffect)(() => {
-					(void 0 !== Z && Z !== F && F && z < 0 && q < 0 || void 0 !== ee && ee !== U && F && (z > U || q < U)) && (Y(_(U, 1)), X(k(U, h.length, 1)))
-				}, [Z, U, F, z, q, ee, h.length, A]);
+					(void 0 !== Z && Z !== U && U && z < 0 && q < 0 || void 0 !== ee && ee !== F && U && (z > F || q < F)) && (Y(_(F, 1)), X(k(F, h.length, 1)))
+				}, [Z, F, U, z, q, ee, h.length, A]);
 				const te = Object(i.useRef)(),
 					se = Object(i.useCallback)(e => {
 						e.forEach(e => {
@@ -659,30 +659,30 @@
 					}, [t, A, S]),
 					re = Object(i.useCallback)(() => {
 						if (!$) return;
-						const e = U + 1;
+						const e = F + 1;
 						if (e + 1 >= q) {
 							const e = k(q, h.length);
 							e !== q && X(e)
 						}
 						ie(e), Q(u.b(A, e)), Q(u.d(A, e + 1)), ne(e)
-					}, [$, U, ne, ie, Q, A, q, h.length]),
+					}, [$, F, ne, ie, Q, A, q, h.length]),
 					ae = Object(i.useCallback)(() => {
 						if (!G) return;
-						const e = U - 1;
+						const e = F - 1;
 						if (e - 1 <= z) {
 							const e = _(z);
 							e !== z && Y(e)
 						}
-						const t = U + 1;
+						const t = F + 1;
 						ie(e), Q(u.a(A, t)), Q(u.d(A, t - 1)), ne(e)
-					}, [G, U, ne, ie, Q, A, z]),
+					}, [G, F, ne, ie, Q, A, z]),
 					de = Object(i.useCallback)(() => {
-						const e = h[U] && h[U].outboundUrl;
+						const e = h[F] && h[F].outboundUrl;
 						e && Q(u.c(A, e))
-					}, [Q, A, U, h]);
+					}, [Q, A, F, h]);
 				m(y.a.ArrowLeft, K.current, ae), m(y.a.ArrowRight, K.current, re);
-				const le = h[U] && h[U].caption,
-					ce = h[U] && h[U].outboundUrl,
+				const le = h[F] && h[F].caption,
+					ce = h[F] && h[F].outboundUrl,
 					ue = ((e, t, s) => {
 						const i = Object(O.f)(e),
 							n = Object(O.g)(i),
@@ -751,7 +751,7 @@
 						p = s >= z && s <= q;
 					return n.a.createElement(M, {
 						slideIndex: s,
-						currentIndex: U,
+						currentIndex: F,
 						obfuscatedImage: m,
 						optimalImage: u,
 						originalImage: o.s,
@@ -784,7 +784,7 @@
 					iconClassName: T.a.nextIcon,
 					className: T.a.nextButton
 				}))), h.length > 1 ? n.a.createElement(P, {
-					currentSlide: U + 1,
+					currentSlide: F + 1,
 					totalSlides: h.length,
 					toggleTileLayout: V && oe || void 0
 				}) : ""), !le && !ce || S || H ? !!s && !S && !H && n.a.createElement("div", {
@@ -1113,8 +1113,8 @@
 				V = s("./src/reddit/components/Media/VideoBox/index.tsx"),
 				H = s("./src/reddit/components/PlayButton/index.tsx"),
 				W = s("./src/reddit/components/PostList/index.tsx"),
-				F = s("./src/reddit/components/RawHTMLDisplay/Media.tsx"),
-				U = s("./src/reddit/components/RichTextJson/index.tsx"),
+				U = s("./src/reddit/components/RawHTMLDisplay/Media.tsx"),
+				F = s("./src/reddit/components/RichTextJson/index.tsx"),
 				G = s("./src/reddit/constants/componentSizes.ts"),
 				$ = s("./src/reddit/constants/screenWidths.ts"),
 				Q = s("./src/reddit/contexts/PageLayer/index.tsx"),
@@ -1623,7 +1623,7 @@
 								isTitleOnly: O,
 								postId: I.id,
 								showFull: M
-							}, u.a.createElement(U.b, {
+							}, u.a.createElement(F.b, {
 								altText: this.getAltText(),
 								content: n,
 								flairStyleTemplate: r,
@@ -1658,7 +1658,7 @@
 									"data-click-id": "text",
 									isCommentsPage: d,
 									showFull: M
-								}, u.a.createElement(F.a, {
+								}, u.a.createElement(U.a, {
 									flairStyleTemplate: r,
 									html: I.isMeta ? Object(X.a)(I.media.content, I.id, he.a.hiddenLink) : I.media.content
 								})), u.a.createElement(R.a, {
@@ -2302,8 +2302,8 @@
 				return !(!d || l) && (e => {
 					return Object(n.c)(e, {
 						experimentEligibilitySelector: n.a,
-						experimentName: i.Sb
-					}) === i.ud
+						experimentName: i.Ub
+					}) === i.wd
 				})(e)
 			}
 		},
@@ -2377,4 +2377,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~ModerationPages~PostCreation~Profile~9a5d9fab.4401d5019bf626940193.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~ModerationPages~PostCreation~Profile~9a5d9fab.4589ae8e7c3cd859b62e.js.map

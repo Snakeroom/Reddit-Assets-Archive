@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/EconPowerupsFlairModal.bf13823efa60d0f69f26.js
-// Retrieved at 6/28/2022, 4:00:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/EconPowerupsFlairModal.107c6436ac0b8b4e476e.js
+// Retrieved at 6/29/2022, 9:40:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["EconPowerupsFlairModal"], {
 		"./src/reddit/actions/economics/powerups/flairs/index.ts": function(e, t, r) {
@@ -632,7 +632,7 @@
 				q = r.n(G);
 			const {
 				fbt: z
-			} = r("./node_modules/fbt/lib/FbtPublic.js"), Q = e => {
+			} = r("./node_modules/fbt/lib/FbtPublic.js"), V = e => {
 				let {
 					flair: t,
 					onSelect: r
@@ -690,8 +690,8 @@
 					className: q.a.achievementTooltip
 				}))
 			};
-			var V = r("./src/reddit/components/Econ/PowerupsFlair/PowerupsFlairModal/OldAchievementFlairs.m.less"),
-				R = r.n(V);
+			var Q = r("./src/reddit/components/Econ/PowerupsFlair/PowerupsFlairModal/OldAchievementFlairs.m.less"),
+				R = r.n(Q);
 			const {
 				fbt: K
 			} = r("./node_modules/fbt/lib/FbtPublic.js"), W = e => {
@@ -737,7 +737,7 @@
 					hk: "1oPooH"
 				}))()), o.a.createElement("div", {
 					className: R.a.achievementsList
-				}, c.map(e => o.a.createElement(Q, {
+				}, c.map(e => o.a.createElement(V, {
 					flair: e,
 					key: e.type,
 					onSelect: f
@@ -777,7 +777,7 @@
 					className: Z.a.subtitle
 				}, s), o.a.createElement("div", {
 					className: Z.a.flairsList
-				}, i.map(e => o.a.createElement(Q, {
+				}, i.map(e => o.a.createElement(V, {
 					flair: e,
 					key: e.type,
 					onSelect: n
@@ -1442,8 +1442,8 @@
 				d = e => o.includes(e),
 				c = Object(s.a)(e => Object(n.c)(e, {
 					experimentEligibilitySelector: n.a,
-					experimentName: i.Qd
-				}), e => e === i.ud)
+					experimentName: i.Sd
+				}), e => e === i.wd)
 		},
 		"./src/reddit/selectors/gold/powerups/flairs.ts": function(e, t, r) {
 			"use strict";
@@ -1575,4 +1575,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EconPowerupsFlairModal.bf13823efa60d0f69f26.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EconPowerupsFlairModal.107c6436ac0b8b4e476e.js.map

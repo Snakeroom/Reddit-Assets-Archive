@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModQueuePages.484423e485ffeb37a317.js
-// Retrieved at 6/28/2022, 4:00:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModQueuePages.b08e5f696bc5c630edfc.js
+// Retrieved at 6/29/2022, 9:40:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModQueuePages"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -4315,8 +4315,8 @@
 				F = n("./src/reddit/selectors/user.ts");
 			const B = e => Object(A.c)(e, {
 				experimentEligibilitySelector: F.Q,
-				experimentName: L.dc
-			}) === L.ud;
+				experimentName: L.fc
+			}) === L.wd;
 			var D = n("./src/reddit/components/ModQueueList/SortByNumReportsTooltip.m.less"),
 				U = n.n(D);
 			const W = e => {
@@ -6806,12 +6806,12 @@
 						rtJsonElementProps: a
 					});
 					switch (o) {
-						case h.zf.SmIcon:
+						case h.Bf.SmIcon:
 							return r.a.createElement(p, {
 								subredditName: s,
 								rtJsonElementProps: a
 							});
-						case h.zf.SmIconHc:
+						case h.Bf.SmIconHc:
 							return r.a.createElement(p, {
 								subredditName: s,
 								isHoverable: !0,
@@ -8160,7 +8160,7 @@
 				r = n("./src/reddit/selectors/experiments/econ/simpleExperiment.ts");
 			const o = Object(r.a)(s.L),
 				a = Object(r.a)(s.I),
-				i = Object(r.a)(s.fe),
+				i = Object(r.a)(s.he),
 				d = Object(r.a)(s.M),
 				c = Object(r.a)(s.N),
 				l = Object(r.a)(s.H),
@@ -8380,12 +8380,12 @@
 				d = e => {
 					return Object(o.c)(e, {
 						experimentEligibilitySelector: i,
-						experimentName: s.sf
+						experimentName: s.uf
 					}) || ""
 				},
 				c = e => {
 					const t = d(e);
-					return t === s.zf.SmIcon || t === s.zf.SmIconHc
+					return t === s.Bf.SmIcon || t === s.Bf.SmIconHc
 				},
 				l = (e, t) => {
 					let {
@@ -8411,4 +8411,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModQueuePages.484423e485ffeb37a317.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModQueuePages.b08e5f696bc5c630edfc.js.map

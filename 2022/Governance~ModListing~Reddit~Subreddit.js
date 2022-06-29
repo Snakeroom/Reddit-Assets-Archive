@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit~Subreddit.66c8411b4ced21e97a04.js
-// Retrieved at 6/28/2022, 4:00:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit~Subreddit.d9bcb4f5c98880fc4784.js
+// Retrieved at 6/29/2022, 9:40:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~ModListing~Reddit~Subreddit"], {
 		"./src/lib/CSSVariableProvider/withTheme.tsx": function(e, t, r) {
@@ -1393,7 +1393,7 @@
 			})), r.d(t, "e", (function() {
 				return Q
 			})), r.d(t, "d", (function() {
-				return X
+				return $
 			})), r.d(t, "v", (function() {
 				return ee
 			})), r.d(t, "u", (function() {
@@ -1555,7 +1555,7 @@
 							break
 						}
 						case c.Nb.SUBREDDIT_WIKI:
-							Object(x.a)($(r, n)(t));
+							Object(x.a)(X(r, n)(t));
 							break;
 						case c.Nb.COINS:
 							Object(x.a)(H(r, n)(t)), Object(x.a)(F()(t));
@@ -1592,7 +1592,7 @@
 							u && Object(x.a)(V()(t));
 							break;
 						case c.Nb.GEOTAGGING:
-							u && Object(x.a)(X()(t));
+							u && Object(x.a)($()(t));
 							break;
 						case c.Nb.SUBREDDIT_CREATION:
 							u && Object(x.a)(Y()(t));
@@ -1916,7 +1916,7 @@
 					noun: "screen",
 					...k(e)
 				}),
-				$ = (e, t) => r => ({
+				X = (e, t) => r => ({
 					source: "global",
 					action: "view",
 					noun: "screen",
@@ -1927,7 +1927,7 @@
 					userSubreddit: E.rb(r),
 					adblock: E.e(r)
 				}),
-				X = () => e => ({
+				$ = () => e => ({
 					source: "global",
 					action: "view",
 					noun: "screen",
@@ -2311,7 +2311,7 @@
 					experimentEligibilitySelector: s.a,
 					experimentName: e
 				});
-				return !(!r || Object(n.Vf)(r))
+				return !(!r || Object(n.Xf)(r))
 			}
 		},
 		"./src/reddit/selectors/experiments/newCommunityProgressV3.ts": function(e, t, r) {
@@ -2353,7 +2353,7 @@
 					return n ? n * s.Sb < 1639443600180 ? void 0 : O(e) : void 0
 				},
 				O = Object(n.a)(e => Object(i.c)(e, {
-					experimentName: c.qe,
+					experimentName: c.se,
 					experimentEligibilitySelector: a.e
 				}), d.a)
 		},
@@ -2371,4 +2371,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit~Subreddit.66c8411b4ced21e97a04.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit~Subreddit.d9bcb4f5c98880fc4784.js.map
