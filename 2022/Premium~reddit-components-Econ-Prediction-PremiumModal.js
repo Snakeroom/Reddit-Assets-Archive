@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Premium~reddit-components-Econ-Prediction-PremiumModal.2a3ea520c232d70c7672.js
-// Retrieved at 6/21/2022, 7:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Premium~reddit-components-Econ-Prediction-PremiumModal.7d9698b568df1e4626e4.js
+// Retrieved at 6/29/2022, 12:00:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Premium~reddit-components-Econ-Prediction-PremiumModal"], {
 		"./node_modules/@stripe/react-stripe-js/dist/react-stripe.umd.js": function(e, t, r) {
@@ -562,7 +562,7 @@
 			})), r.d(t, "f", (function() {
 				return D
 			})), r.d(t, "j", (function() {
-				return H
+				return q
 			}));
 			var n = r("./node_modules/fbt/lib/FbtPublic.js"),
 				a = r("./node_modules/lodash/omit.js"),
@@ -833,7 +833,7 @@
 							user: t
 						}))
 					}
-				}, H = Object(m.a)(b.ab)
+				}, q = Object(m.a)(b.ab)
 		},
 		"./src/reddit/actions/gold/productOffers.ts": function(e, t, r) {
 			"use strict";
@@ -2045,11 +2045,6 @@
 					asterisk: !0,
 					telemetryTag: "app_icons"
 				}, {
-					key: "premium-powerups",
-					isNew: !0,
-					asterisk: !0,
-					telemetryTag: "powerups"
-				}, {
 					key: "premium-awards",
 					telemetryTag: "premium_awards"
 				}],
@@ -2065,9 +2060,6 @@
 				s = {
 					"premium-avatars": () => n.fbt._("Exclusive Avatar Gear", null, {
 						hk: "1f1QJb"
-					}),
-					"premium-powerups": () => n.fbt._("Powerups", null, {
-						hk: "1yQyau"
 					}),
 					"premium-app-icons": () => n.fbt._("Custom App Icons", null, {
 						hk: "2uGpiC"
@@ -2104,9 +2096,6 @@
 				c = {
 					"premium-avatars": () => n.fbt._("Outfit your avatar with the best gear and accessories", null, {
 						hk: "2HjLMS"
-					}),
-					"premium-powerups": () => n.fbt._("Help select communities unlock perks", null, {
-						hk: "3vbuX2"
 					}),
 					"premium-app-icons": () => n.fbt._("Change your app icon to something more your style", null, {
 						hk: "1WobLA"
@@ -2222,7 +2211,10 @@
 						periodicalCoins: k,
 						bonusCoins: c
 					},
-					w = ((e, t) => t ? [...e, f.b] : [...e, f.a])(f.e, b && !v).map(e => h(e, E)),
+					w = ((e, t) => {
+						const r = [...e];
+						return t && r.push(f.b), r.length % 2 == 1 && r.push(f.a), r
+					})(f.e, b && !v).map(e => h(e, E)),
 					x = h(f.b, E),
 					_ = e => {
 						s(Object(m.b)(e.telemetryTag))
@@ -2403,8 +2395,8 @@
 				A = r("./src/reddit/controls/Button/index.tsx"),
 				M = r("./src/reddit/pages/Premium/BenefitsSection/index.tsx"),
 				T = r("./src/reddit/pages/Premium/PremiumButtons/index.tsx");
-			const B = a.fbt._("* Powerups, custom app icons, and welcome gifts are only available through a paid Reddit Premium subscription.", null, {
-					hk: "3CHkPX"
+			const B = a.fbt._("* Custom app icons and welcome gifts are only available through a paid Reddit Premium subscription.", null, {
+					hk: "22nSh4"
 				}),
 				L = Object(d.c)({
 					goldExpiration: e => e.user.account && e.user.account.goldExpiration || 0,
@@ -2677,4 +2669,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Premium~reddit-components-Econ-Prediction-PremiumModal.2a3ea520c232d70c7672.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Premium~reddit-components-Econ-Prediction-PremiumModal.7d9698b568df1e4626e4.js.map

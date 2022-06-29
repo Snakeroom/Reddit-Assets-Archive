@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Settings.ce3867ef6354577c13b3.js
-// Retrieved at 6/29/2022, 9:40:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Settings.5bbff7245dec4fc441f4.js
+// Retrieved at 6/29/2022, 12:00:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Settings"], {
 		"./node_modules/moment/locale sync recursive ^\\.\\/.*$": function(e, t, n) {
@@ -10099,11 +10099,6 @@
 					asterisk: !0,
 					telemetryTag: "app_icons"
 				}, {
-					key: "premium-powerups",
-					isNew: !0,
-					asterisk: !0,
-					telemetryTag: "powerups"
-				}, {
 					key: "premium-awards",
 					telemetryTag: "premium_awards"
 				}],
@@ -10119,9 +10114,6 @@
 				i = {
 					"premium-avatars": () => s.fbt._("Exclusive Avatar Gear", null, {
 						hk: "1f1QJb"
-					}),
-					"premium-powerups": () => s.fbt._("Powerups", null, {
-						hk: "1yQyau"
 					}),
 					"premium-app-icons": () => s.fbt._("Custom App Icons", null, {
 						hk: "2uGpiC"
@@ -10158,9 +10150,6 @@
 				c = {
 					"premium-avatars": () => s.fbt._("Outfit your avatar with the best gear and accessories", null, {
 						hk: "2HjLMS"
-					}),
-					"premium-powerups": () => s.fbt._("Help select communities unlock perks", null, {
-						hk: "3vbuX2"
 					}),
 					"premium-app-icons": () => s.fbt._("Change your app icon to something more your style", null, {
 						hk: "1WobLA"
@@ -14266,4 +14255,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Settings.ce3867ef6354577c13b3.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Settings.5bbff7245dec4fc441f4.js.map

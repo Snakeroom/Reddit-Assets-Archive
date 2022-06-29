@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PowerupsPremiumUpsellModal.113eb6762dc7cf08a229.js
-// Retrieved at 6/29/2022, 10:10:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PowerupsPremiumUpsellModal.41b37b8d87ad3e44f821.js
+// Retrieved at 6/29/2022, 12:00:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PowerupsPremiumUpsellModal", "GoldPurchasePaymentActions"], {
 		"./node_modules/@stripe/react-stripe-js/dist/react-stripe.umd.js": function(e, t, r) {
@@ -1382,7 +1382,7 @@
 				q = r.n(F);
 			const {
 				fbt: Q
-			} = r("./node_modules/fbt/lib/FbtPublic.js"), W = ["premium-powerups"], J = ["premium-powerups", "premium-ad-free", "premium-avatars", "premium-monthly-coins"], V = e => {
+			} = r("./node_modules/fbt/lib/FbtPublic.js"), W = ["premium-ad-free", "premium-avatars", "premium-monthly-coins", "premium-lounge"], J = e => {
 				let {
 					subredditId: t
 				} = e;
@@ -1420,7 +1420,9 @@
 						subredditId: t
 					})),
 					l = Object(s.e)(S.j),
-					f = W.map(e => A.d[e]());
+					f = [Q._("Powerups", null, {
+						hk: "hJx1f"
+					})];
 				return o.a.createElement("div", {
 					className: q.a.container
 				}, d && u ? o.a.createElement(o.a.Fragment, null, o.a.createElement(G, {
@@ -1450,7 +1452,7 @@
 						hk: "S3DXw"
 					}),
 					iconUrl: `${g.a.assetPath}/img/gold/premium-marketing/benefits-icons/premium-crest.png`,
-					body: o.a.createElement(H, {
+					body: o.a.createElement(V, {
 						premiumMonthlyCoins: l
 					}),
 					buttons: d && o.a.createElement(Y, {
@@ -1473,13 +1475,13 @@
 					className: q.a.loadingIcon,
 					sizePx: 40
 				}))
-			}, H = e => {
+			}, V = e => {
 				let {
 					premiumMonthlyCoins: t
 				} = e;
-				const r = J.map(e => A.d[e]({
+				const r = W.map(e => A.d[e]({
 					periodicalCoins: t
-				}));
+				})).filter(Boolean);
 				return o.a.createElement("div", null, o.a.createElement(L, {
 					items: r
 				}), o.a.createElement("div", {
@@ -1515,10 +1517,10 @@
 					hk: "2YAbPf"
 				})))
 			};
-			var $ = r("./src/reddit/components/Econ/PowerupsPremiumUpsellModal/index.m.less"),
-				z = r.n($);
+			var H = r("./src/reddit/components/Econ/PowerupsPremiumUpsellModal/index.m.less"),
+				$ = r.n(H);
 			const {
-				fbt: X
+				fbt: z
 			} = r("./node_modules/fbt/lib/FbtPublic.js"), Z = () => {
 				const e = Object(s.e)(y.s),
 					t = Object(s.d)(),
@@ -1531,16 +1533,16 @@
 					onClick: a,
 					highContrast: !0
 				}), o.a.createElement("div", {
-					className: z.a.container
+					className: $.a.container
 				}, o.a.createElement("h1", {
-					className: z.a.title
-				}, X._("Get more with Premium!", null, {
+					className: $.a.title
+				}, z._("Get more with Premium!", null, {
 					hk: "YXIbY"
-				})), o.a.createElement(V, {
+				})), o.a.createElement(J, {
 					subredditId: e
 				}), o.a.createElement("div", {
-					className: z.a.footer
-				}, X._("Subscriptions automatically renew.", null, {
+					className: $.a.footer
+				}, z._("Subscriptions automatically renew.", null, {
 					hk: "133vve"
 				})), o.a.createElement(u.a, {
 					space: u.b.MODAL
@@ -2349,11 +2351,6 @@
 					asterisk: !0,
 					telemetryTag: "app_icons"
 				}, {
-					key: "premium-powerups",
-					isNew: !0,
-					asterisk: !0,
-					telemetryTag: "powerups"
-				}, {
 					key: "premium-awards",
 					telemetryTag: "premium_awards"
 				}],
@@ -2369,9 +2366,6 @@
 				c = {
 					"premium-avatars": () => n.fbt._("Exclusive Avatar Gear", null, {
 						hk: "1f1QJb"
-					}),
-					"premium-powerups": () => n.fbt._("Powerups", null, {
-						hk: "1yQyau"
 					}),
 					"premium-app-icons": () => n.fbt._("Custom App Icons", null, {
 						hk: "2uGpiC"
@@ -2408,9 +2402,6 @@
 				i = {
 					"premium-avatars": () => n.fbt._("Outfit your avatar with the best gear and accessories", null, {
 						hk: "2HjLMS"
-					}),
-					"premium-powerups": () => n.fbt._("Help select communities unlock perks", null, {
-						hk: "3vbuX2"
 					}),
 					"premium-app-icons": () => n.fbt._("Change your app icon to something more your style", null, {
 						hk: "1WobLA"
@@ -2668,4 +2659,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PowerupsPremiumUpsellModal.113eb6762dc7cf08a229.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PowerupsPremiumUpsellModal.41b37b8d87ad3e44f821.js.map
