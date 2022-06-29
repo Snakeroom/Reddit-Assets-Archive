@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CrowdControlModal.969617dc0fc177be09f1.js
-// Retrieved at 6/13/2022, 4:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CrowdControlModal.e6e8ecba212732a6d36b.js
+// Retrieved at 6/29/2022, 1:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CrowdControlModal"], {
 		"./node_modules/lodash/_baseRange.js": function(e, t) {
@@ -284,8 +284,8 @@
 				B = n.n(P);
 			const D = Object(l.c)({
 					post: I.g,
-					subredditCrowdControl: I.T,
-					subredditUrl: I.V
+					subredditCrowdControl: I.U,
+					subredditUrl: I.W
 				}),
 				G = Object(s.b)(D, e => ({
 					onClose: () => e(Object(M.f)()),
@@ -1721,4 +1721,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CrowdControlModal.969617dc0fc177be09f1.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CrowdControlModal.e6e8ecba212732a6d36b.js.map

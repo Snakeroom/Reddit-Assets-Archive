@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Econ-Prediction.3070bc4560c1352ed36f.js
-// Retrieved at 6/13/2022, 10:50:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Econ-Prediction.06597f5208a1a37d97c1.js
+// Retrieved at 6/29/2022, 1:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Econ-Prediction"], {
 		"./src/lib/constants/specialMembership.ts": function(e, t, n) {
@@ -658,14 +658,14 @@
 			var F = n("./node_modules/lodash/isNil.js"),
 				L = n.n(F),
 				D = n("./src/reddit/components/Econ/Prediction/PredictionEducationMessage/EducationMessage/constants.ts"),
-				U = n("./src/reddit/components/Econ/Prediction/PredictionEducationMessage/EducationMessage/index.tsx"),
-				R = n("./src/reddit/components/Econ/Prediction/PredictionEducationMessage/PredictionEndedEducationMessage/index.m.less"),
-				W = n.n(R);
+				R = n("./src/reddit/components/Econ/Prediction/PredictionEducationMessage/EducationMessage/index.tsx"),
+				U = n("./src/reddit/components/Econ/Prediction/PredictionEducationMessage/PredictionEndedEducationMessage/index.m.less"),
+				W = n.n(U);
 			const {
 				fbt: G
 			} = n("./node_modules/fbt/lib/FbtPublic.js");
 
-			function Y(e) {
+			function V(e) {
 				let {
 					didParticipate: t
 				} = e;
@@ -679,12 +679,12 @@
 					}, G._("You'll be notified when the results are in.", null, {
 						hk: "45tyVv"
 					})));
-				return s.a.createElement("div", null, s.a.createElement(U.a, {
+				return s.a.createElement("div", null, s.a.createElement(R.a, {
 					title: n,
 					message: o
 				}))
 			}
-			var V = n("./src/reddit/components/Econ/Prediction/PredictionEducationMessage/PredictionFeatureEducationMessage/index.tsx");
+			var Y = n("./src/reddit/components/Econ/Prediction/PredictionEducationMessage/PredictionFeatureEducationMessage/index.tsx");
 
 			function H() {
 				const e = C.fbt._("Choose the answer", null, {
@@ -693,7 +693,7 @@
 					t = C.fbt._("The prediction has ended and the outcome is needed to resolve the prediction.", null, {
 						hk: "4CkrEz"
 					});
-				return s.a.createElement("div", null, s.a.createElement(U.a, {
+				return s.a.createElement("div", null, s.a.createElement(R.a, {
 					title: e,
 					message: t
 				}))
@@ -726,7 +726,7 @@
 				}) : s.a.createElement(q.a, {
 					className: Q.a.coinIcon
 				});
-				return d && !l ? s.a.createElement("div", null, s.a.createElement(U.a, {
+				return d && !l ? s.a.createElement("div", null, s.a.createElement(R.a, {
 					title: z._("Better luck next time", null, {
 						hk: "1KYUZf"
 					}),
@@ -739,7 +739,7 @@
 					}, m, u))], {
 						hk: "6091x"
 					})))
-				})) : d && l && u && !a ? s.a.createElement("div", null, s.a.createElement(U.a, {
+				})) : d && l && u && !a ? s.a.createElement("div", null, s.a.createElement(R.a, {
 					title: z._("And the winner is... EVERYONE!", null, {
 						hk: "2qfnkC"
 					}),
@@ -752,7 +752,7 @@
 					}, m, u))], {
 						hk: "49bOe9"
 					})))
-				})) : d && l ? s.a.createElement("div", null, s.a.createElement(U.a, {
+				})) : d && l ? s.a.createElement("div", null, s.a.createElement(R.a, {
 					title: z._("And the winner is... YOU!", null, {
 						hk: "19q97O"
 					}),
@@ -765,7 +765,7 @@
 					}, m, u + a))], {
 						hk: "1zg0cH"
 					})))
-				})) : s.a.createElement("div", null, s.a.createElement(U.a, {
+				})) : s.a.createElement("div", null, s.a.createElement(R.a, {
 					title: z._("This prediction has ended", null, {
 						hk: "3VMLnq"
 					}),
@@ -786,9 +786,9 @@
 				} = t, c = o < Date.now(), d = !L()(i), l = c && n && !r;
 				return c ? r ? s.a.createElement(Z, {
 					prediction: t
-				}) : l ? s.a.createElement(H, null) : s.a.createElement(Y, {
+				}) : l ? s.a.createElement(H, null) : s.a.createElement(V, {
 					didParticipate: !!a
-				}) : s.a.createElement(V.a, {
+				}) : s.a.createElement(Y.a, {
 					isTokens: d,
 					storageKey: D.a.feature
 				})
@@ -989,7 +989,7 @@
 					isEditing: l.M,
 					prediction: d.g,
 					post: u.G,
-					subredditOrProfile: u.U,
+					subredditOrProfile: u.V,
 					userId: m.Cb
 				}),
 				ke = Object(c.u)({
@@ -1701,17 +1701,17 @@
 			})), n.d(t, "y", (function() {
 				return D
 			})), n.d(t, "u", (function() {
-				return U
-			})), n.d(t, "v", (function() {
 				return R
+			})), n.d(t, "v", (function() {
+				return U
 			})), n.d(t, "b", (function() {
 				return W
 			})), n.d(t, "w", (function() {
 				return G
 			})), n.d(t, "s", (function() {
-				return Y
-			})), n.d(t, "t", (function() {
 				return V
+			})), n.d(t, "t", (function() {
+				return Y
 			})), n.d(t, "g", (function() {
 				return H
 			})), n.d(t, "m", (function() {
@@ -1909,11 +1909,11 @@
 					const t = e.economics.paymentSystems;
 					return !!(t.status === l.a.Fetched && t.data && t.data.tips && t.data.tips.usdr && t.data.tips.usdr.allowed)
 				},
-				U = (e, t) => {
+				R = (e, t) => {
 					const n = e.user.ownedBadges[t] || {};
 					return !!Object.keys(n).length
 				},
-				R = e => {
+				U = e => {
 					const t = e.economics.paymentSystems;
 					return t.status === l.a.Fetched && !!t.data && !!t.data.stripe && !!t.data.stripe.stripeAccountId
 				},
@@ -1928,7 +1928,7 @@
 					const n = t && e.economics.gifs[t];
 					return !!n && n.hasGifProduct
 				},
-				Y = (e, t, n) => {
+				V = (e, t, n) => {
 					if (Object(f.p)(e, {
 							subredditId: t
 						})) return !0;
@@ -1937,7 +1937,7 @@
 					});
 					return !(!o || !Object(r.a)(o))
 				},
-				V = (e, t, n) => {
+				Y = (e, t, n) => {
 					if (Object(b.a)(e)) return !!t && Object(m.B)(e, {
 						subredditId: t
 					});
@@ -1965,4 +1965,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Econ-Prediction.3070bc4560c1352ed36f.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Econ-Prediction.06597f5208a1a37d97c1.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/AuthorHovercard~Reddit.32a0484b633e18fc46f6.js
-// Retrieved at 6/29/2022, 9:40:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/AuthorHovercard~Reddit.7759d9058277f19cabf1.js
+// Retrieved at 6/29/2022, 1:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["AuthorHovercard~Reddit"], {
 		"./src/lib/browser/isIncognito.ts": function(e, t, n) {
@@ -117,7 +117,7 @@
 			const E = e => Object(k.c)(e, {
 				experimentName: O.gc,
 				experimentEligibilitySelector: k.a
-			}) === O.wd;
+			}) === O.yd;
 			var j = n("./src/reddit/selectors/meta.ts"),
 				C = n("./src/reddit/selectors/user.ts");
 			let I = !1;
@@ -583,8 +583,8 @@
 				}).apply(this, arguments)
 			}
 			const U = {},
-				D = "",
-				F = 0,
+				F = "",
+				D = 0,
 				z = "200px",
 				W = "250px",
 				M = "270px",
@@ -599,7 +599,7 @@
 						notificationHeights: U,
 						currentNotificationCursorIndex: -1
 					}, this.resetOverflowMenu = () => {
-						this.props.activeOverflowMenuId.length > F && this.props.setActiveOverflowMenuId(D)
+						this.props.activeOverflowMenuId.length > D && this.props.setActiveOverflowMenuId(F)
 					}, this.getContainerHeight = () => {
 						const {
 							notificationHeights: e
@@ -1678,10 +1678,10 @@
 				H = n("./src/reddit/models/NotificationSettingsLayout/index.ts"),
 				R = n("./src/reddit/models/Toast/index.ts"),
 				U = n("./src/reddit/selectors/notificationPrefs.ts"),
-				D = n("./src/reddit/selectors/user.ts");
+				F = n("./src/reddit/selectors/user.ts");
 
-			function F() {
-				return (F = Object.assign || function(e) {
+			function D() {
+				return (D = Object.assign || function(e) {
 					for (var t = 1; t < arguments.length; t++) {
 						var n = arguments[t];
 						for (var a in n) Object.prototype.hasOwnProperty.call(n, a) && (e[a] = n[a])
@@ -1703,17 +1703,17 @@
 						hideTooltip: b
 					} = e;
 					const f = Object(s.d)(),
-						h = Object(s.e)(D.n),
-						g = Object(s.e)(D.D),
+						h = Object(s.e)(F.n),
+						g = Object(s.e)(F.D),
 						_ = Object(a.useRef)(h),
 						[v, N] = Object(a.useState)(W.TURN_ON_PN),
 						x = Object(s.e)(e => e.user.accountSettings.changeEmail.api.pending),
 						O = Object(a.useCallback)(() => {
 							f(async (e, t) => {
 								var n, a;
-								let i = Object(D.fb)(t());
+								let i = Object(F.fb)(t());
 								i.allIds.length || await e(Object(T.a)(H.a.Email));
-								const s = null === (a = null === (n = (i = Object(D.fb)(t())).byId) || void 0 === n ? void 0 : n.EMAIL_DIGEST) || void 0 === a ? void 0 : a.isEnabled;
+								const s = null === (a = null === (n = (i = Object(F.fb)(t())).byId) || void 0 === n ? void 0 : n.EMAIL_DIGEST) || void 0 === a ? void 0 : a.isEnabled;
 								N(s ? W.DONE : W.TURN_ON_DAYLY_DIGEST)
 							})
 						}, [f]),
@@ -1723,7 +1723,7 @@
 						E = Object(a.useCallback)(() => {
 							f(async (e, t) => {
 								const n = t();
-								Object(D.hb)(n).allIds.length || await e(Object(T.a)(H.a.Push)), Object(U.c)(t(), z) ? N(W.TURN_ON_PN_APP) : k()
+								Object(F.hb)(n).allIds.length || await e(Object(T.a)(H.a.Push)), Object(U.c)(t(), z) ? N(W.TURN_ON_PN_APP) : k()
 							})
 						}, [f, k]),
 						j = Object(a.useCallback)(() => {
@@ -1785,7 +1785,7 @@
 						hk: "1gwnbO"
 					}) : c.fbt._("Stay in the loop on content from communities you love right on your email inbox.", null, {
 						hk: "1rs4kD"
-					})), i.a.createElement(u.t, F({
+					})), i.a.createElement(u.t, D({
 						className: p.a.emptyStateButton
 					}, V ? S : M, {
 						text: c.fbt._("OK", null, {
@@ -1798,23 +1798,23 @@
 			const q = e => Object(V.c)(e, {
 					experimentEligibilitySelector: V.a,
 					experimentName: G.Db
-				}) === G.Dd.MemesNoBadge,
+				}) === G.Fd.MemesNoBadge,
 				K = e => Object(V.c)(e, {
 					experimentEligibilitySelector: V.a,
 					experimentName: G.Db
-				}) === G.Dd.PnEmailNoBadge,
+				}) === G.Fd.PnEmailNoBadge,
 				J = e => Object(V.c)(e, {
 					experimentEligibilitySelector: V.a,
 					experimentName: G.Db
-				}) === G.Dd.KarmaNoBadge,
+				}) === G.Fd.KarmaNoBadge,
 				Q = e => Object(V.c)(e, {
 					experimentEligibilitySelector: V.a,
 					experimentName: G.Db
-				}) === G.Dd.PopularNoBadge,
+				}) === G.Fd.PopularNoBadge,
 				Y = e => Object(V.c)(e, {
 					experimentEligibilitySelector: V.a,
 					experimentName: G.Db
-				}) === G.Dd.CatsNoBadge;
+				}) === G.Fd.CatsNoBadge;
 			t.a = e => {
 				let {
 					isBannerEnabled: t,
@@ -2010,4 +2010,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/AuthorHovercard~Reddit.32a0484b633e18fc46f6.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/AuthorHovercard~Reddit.7759d9058277f19cabf1.js.map

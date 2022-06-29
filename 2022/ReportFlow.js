@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ReportFlow.344c80f20092b15e1d85.js
-// Retrieved at 6/29/2022, 9:40:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ReportFlow.991136670d5486782d06.js
+// Retrieved at 6/29/2022, 1:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ReportFlow", "ReportFlowNew"], {
 		"./node_modules/@reddit/i18n-tools/runtime/helpers/locale/index.js": function(e, t, n) {
@@ -974,7 +974,7 @@
 						thingId: e
 					}));
 					s(Object(c.B)(g.author));
-					const C = Object(x.U)(p, {
+					const C = Object(x.V)(p, {
 							postId: f ? p.features.comments.models[e].postId : p.posts.models[e].id
 						}),
 						O = R && Object(b.q)(g) || f && W(g, p);
@@ -1549,8 +1549,8 @@
 				Q = n("./src/reddit/components/ReportFlow/FinalPage/index.m.less"),
 				z = n.n(Q);
 			const J = c.a.wrapped(h.a, "blockUserHolder", z.a),
-				Y = c.a.wrapped(W.a, "BlockUserIcon", z.a),
-				V = c.a.div("BlockUserHeader", z.a),
+				V = c.a.wrapped(W.a, "BlockUserIcon", z.a),
+				Y = c.a.div("BlockUserHeader", z.a),
 				X = c.a.div("OptionHolder", z.a),
 				Z = c.a.div("OptionHeader", z.a),
 				$ = c.a.div("OptionDescription", z.a),
@@ -1597,7 +1597,7 @@
 						} = this, t = this.getBlockUserHeaderText();
 						return r.a.createElement(J, {
 							onClick: () => this.onBlockAuthor(e.authorName)
-						}, r.a.createElement(Y, null), r.a.createElement("div", null, r.a.createElement(V, null, t), r.a.createElement($, null, s.fbt._("You won't see posts or comments from {username}. You can change this later in your preference.", [s.fbt._param("username", e.authorName)], {
+						}, r.a.createElement(V, null), r.a.createElement("div", null, r.a.createElement(Y, null, t), r.a.createElement($, null, s.fbt._("You won't see posts or comments from {username}. You can change this later in your preference.", [s.fbt._param("username", e.authorName)], {
 							hk: "2iUUlN"
 						}))))
 					}
@@ -1921,8 +1921,8 @@
 				Qe = n("./src/reddit/selectors/posts.ts"),
 				ze = n("./src/reddit/components/ReportFlow/_ReportFlow.m.less"),
 				Je = n.n(ze);
-			const Ye = c.a.div("CloseWrapper", Je.a),
-				Ve = c.a.wrapped(Ae.a, "Close", Je.a),
+			const Ve = c.a.div("CloseWrapper", Je.a),
+				Ye = c.a.wrapped(Ae.a, "Close", Je.a),
 				Xe = Object(i.c)({
 					comment: (e, t) => {
 						let {
@@ -1956,7 +1956,7 @@
 						let {
 							postId: n
 						} = t;
-						return n ? Object(Qe.U)(e, {
+						return n ? Object(Qe.V)(e, {
 							postId: n
 						}) : null
 					},
@@ -2085,9 +2085,9 @@
 					} = this;
 					if (t.crisisFlowEnabled && e.chosenRuleKind === ce.a.CrisisTextLine && e.showCTLPage) {
 						let e;
-						if (t.commentId ? e = t.comment && t.comment.author : t.postId && (e = t.post && t.post.author), e) return r.a.createElement(o.Fragment, null, r.a.createElement(Ye, {
+						if (t.commentId ? e = t.comment && t.comment.author : t.postId && (e = t.post && t.post.author), e) return r.a.createElement(o.Fragment, null, r.a.createElement(Ve, {
 							onClick: this.handleReportFlowClose
-						}, r.a.createElement(Ve, null)), r.a.createElement(u.a, {
+						}, r.a.createElement(Ye, null)), r.a.createElement(u.a, {
 							onCloseReportFlow: this.handleReportFlowClose,
 							thingId: t.commentId ? t.commentId : t.postId,
 							username: e
@@ -4021,4 +4021,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ReportFlow.344c80f20092b15e1d85.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ReportFlow.991136670d5486782d06.js.map

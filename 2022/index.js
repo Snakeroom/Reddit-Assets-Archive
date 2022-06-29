@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/index.1025528f46104f6b35a5.js
-// Retrieved at 6/21/2022, 7:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/index.b2984ad6f4e983f68ab5.js
+// Retrieved at 6/29/2022, 1:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["index"], {
 		"./src/reddit/components/Econ/Audio/MuteIcon.tsx": function(e, t, n) {
@@ -399,7 +399,7 @@
 					postId: n
 				} = e;
 				const o = Object(d.a)(),
-					r = Object(s.e)(e => Object(P.U)(e, {
+					r = Object(s.e)(e => Object(P.V)(e, {
 						postId: n
 					}));
 				return a.a.createElement(O.default, {
@@ -441,7 +441,7 @@
 				let {
 					postId: t
 				} = e;
-				const n = Object(s.e)(e => Object(P.U)(e, {
+				const n = Object(s.e)(e => Object(P.V)(e, {
 					postId: t
 				}));
 				return a.a.createElement(A, {
@@ -515,8 +515,8 @@
 				})))
 			};
 			var D = n("./src/reddit/icons/fonts/index.tsx"),
-				U = n("./src/reddit/components/Econ/Prediction/PredictionCard/PredictionBody/index.tsx"),
-				R = n("./src/reddit/components/Econ/Prediction/PredictionModal/index.tsx"),
+				R = n("./src/reddit/components/Econ/Prediction/PredictionCard/PredictionBody/index.tsx"),
+				U = n("./src/reddit/components/Econ/Prediction/PredictionModal/index.tsx"),
 				$ = n("./src/reddit/actions/economics/helpers/index.ts"),
 				G = n("./src/reddit/actions/economics/predictions/index.ts"),
 				H = n("./src/reddit/actions/post.ts"),
@@ -622,11 +622,11 @@
 						}, [])
 					}
 				}(n, t, o);
-				return a.a.createElement(a.a.Fragment, null, a.a.createElement(U.a, Q({
+				return a.a.createElement(a.a.Fragment, null, a.a.createElement(R.a, Q({
 					prediction: t,
 					selectedOptionId: u ? u.id : null,
 					onSelectOption: m
-				}, i)), !!u && a.a.createElement(R.a, {
+				}, i)), !!u && a.a.createElement(U.a, {
 					className: J.a.modal,
 					isCreatingVote: c,
 					onOverlayClick: b,
@@ -832,4 +832,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/index.1025528f46104f6b35a5.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/index.b2984ad6f4e983f68ab5.js.map

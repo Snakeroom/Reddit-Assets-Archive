@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/EconPowerupsFlairModal.508b978c62436b72a3b1.js
-// Retrieved at 6/29/2022, 10:10:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/EconPowerupsFlairModal.c696388e68fe34c0437a.js
+// Retrieved at 6/29/2022, 1:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["EconPowerupsFlairModal"], {
 		"./src/reddit/actions/economics/powerups/flairs/index.ts": function(e, t, r) {
@@ -31,7 +31,7 @@
 			})), r.d(t, "setSubredditUserSupporterFlair", (function() {
 				return C
 			})), r.d(t, "setSubredditUserPowerupsFlairsVisibility", (function() {
-				return L
+				return U
 			}));
 			r("./node_modules/core-js/modules/web.dom.iterable.js");
 			var s = r("./node_modules/fbt/lib/FbtPublic.js"),
@@ -205,7 +205,7 @@
 							})
 						}))
 					}
-				}, L = (e, t) => async (r, i, o) => {
+				}, U = (e, t) => async (r, i, o) => {
 					let {
 						gqlContext: a
 					} = o;
@@ -621,8 +621,8 @@
 				T = r("./src/reddit/controls/Button/index.tsx"),
 				C = r("./src/reddit/hooks/usePreloadModal.ts"),
 				N = r("./src/reddit/icons/svgs/PowerupTier2/index.tsx"),
-				L = r("./src/reddit/selectors/gold/powerups/index.ts"),
-				U = r("./src/reddit/selectors/gold/powerups/flairs.ts"),
+				U = r("./src/reddit/selectors/gold/powerups/index.ts"),
+				L = r("./src/reddit/selectors/gold/powerups/flairs.ts"),
 				A = r("./src/reddit/actions/tooltip.ts"),
 				M = r("./src/reddit/components/InfoTextTooltip/index.tsx"),
 				B = r("./src/reddit/helpers/trackers/userFlair.ts"),
@@ -701,14 +701,14 @@
 					userId: s
 				} = e;
 				const n = Object(h.a)(),
-					c = Object(a.e)(e => Object(U.b)(e, {
+					c = Object(a.e)(e => Object(L.b)(e, {
 						subredditId: r,
 						userId: s
 					})),
-					u = Object(a.e)(e => Object(L.n)(e, {
+					u = Object(a.e)(e => Object(U.n)(e, {
 						subredditId: r
 					})),
-					p = Object(a.e)(e => Object(U.j)(e, {
+					p = Object(a.e)(e => Object(L.j)(e, {
 						subredditId: r,
 						userId: s
 					})),
@@ -795,16 +795,16 @@
 				} = e;
 				const i = Object(h.a)(),
 					n = Object(a.d)(),
-					d = Object(a.e)(e => Object(U.c)(e, {
+					d = Object(a.e)(e => Object(L.c)(e, {
 						subredditId: t,
 						userId: r
 					})),
 					c = Object(a.e)(e => Object(w.a)(e, t)),
-					l = Object(a.e)(e => Object(U.e)(e, {
+					l = Object(a.e)(e => Object(L.e)(e, {
 						subredditId: t,
 						userId: r
 					})),
-					u = Object(a.e)(e => Object(L.n)(e, {
+					u = Object(a.e)(e => Object(U.n)(e, {
 						subredditId: t
 					}));
 				if (Object(C.a)(S.a), !d) return null;
@@ -1442,8 +1442,8 @@
 				d = e => o.includes(e),
 				c = Object(s.a)(e => Object(n.c)(e, {
 					experimentEligibilitySelector: n.a,
-					experimentName: i.Sd
-				}), e => e === i.wd)
+					experimentName: i.Ud
+				}), e => e === i.yd)
 		},
 		"./src/reddit/selectors/gold/powerups/flairs.ts": function(e, t, r) {
 			"use strict";
@@ -1575,4 +1575,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EconPowerupsFlairModal.508b978c62436b72a3b1.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EconPowerupsFlairModal.c696388e68fe34c0437a.js.map

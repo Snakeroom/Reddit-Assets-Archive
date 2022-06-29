@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Collection.35ae3b83f29ab26af8dd.js
-// Retrieved at 6/7/2022, 3:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Collection.1bd1dfe137504066323a.js
+// Retrieved at 6/29/2022, 1:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Collection"], {
 		"./src/reddit/components/Collection/PostAndPostEventMeta/index.m.less": function(e, t, o) {
@@ -360,7 +360,7 @@
 					})
 				}
 			}
-			var q = Object(v.u)({
+			var V = Object(v.u)({
 					currentProfileName: v.i,
 					isCommentsPage: v.x,
 					isProfilePostListing: v.L,
@@ -373,7 +373,7 @@
 					layout: v.S,
 					post: f.G,
 					shouldShowCollectionPostEdits: y.s,
-					subredditOrProfile: f.U
+					subredditOrProfile: f.V
 				}), (e, t) => {
 					let {
 						collectionId: s,
@@ -394,8 +394,8 @@
 						}
 					}
 				})(Object(b.c)(Z))),
-				V = o("./src/reddit/components/Collection/index.m.less"),
-				K = o.n(V);
+				q = o("./src/reddit/components/Collection/index.m.less"),
+				K = o.n(q);
 			const {
 				fbt: $
 			} = o("./node_modules/fbt/lib/FbtPublic.js"), ee = e => n.a.createElement(m.a, {
@@ -516,7 +516,7 @@
 							className: Object(a.a)({
 								[K.a.galleryContainer]: o === g.a.GALLERY
 							})
-						}, h.map(e => n.a.createElement(q, {
+						}, h.map(e => n.a.createElement(V, {
 							collectionId: C,
 							postId: e,
 							key: e,
@@ -742,4 +742,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Collection.35ae3b83f29ab26af8dd.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Collection.1bd1dfe137504066323a.js.map
