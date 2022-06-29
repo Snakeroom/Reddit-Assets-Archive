@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Frontpage.bb871f208afb05473383.js
-// Retrieved at 6/29/2022, 9:40:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Frontpage.7610bdc0ed6eb5e67cfc.js
+// Retrieved at 6/29/2022, 11:20:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Frontpage"], {
 		"./node_modules/intersection-observer/intersection-observer.js": function(e, t) {
@@ -4898,7 +4898,9 @@
 					hk: "4CmlZJ"
 				})))),
 				_ = e => {
-					const t = Object(i.a)(f.a.subredditRankItem, e.large && f.a.large),
+					const t = Object(i.a)(f.a.subredditRankItem, e.large && f.a.large, {
+							[f.a.handleOverflow]: e.isOnFrontpage
+						}),
 						a = e.delta && e.delta > 0,
 						s = null === e.rank || void 0 === e.rank ? "--" : (e => {
 							const t = Object(o.b)(e);
@@ -4910,7 +4912,9 @@
 						n = e.delta ? a ? "#46D160" : "#EA0027" : "transparent",
 						l = e.isOnLeaderboardPage && e.large;
 					return r.a.createElement("li", {
-						className: f.a.listItem,
+						className: Object(i.a)(f.a.listItem, {
+							[f.a.handleOverflow]: e.isOnFrontpage
+						}),
 						key: `${e.subreddit.displayText}-${e.large}`
 					}, r.a.createElement(c.a, {
 						className: t,
@@ -4919,7 +4923,9 @@
 						target: "_blank",
 						to: e.subreddit.url
 					}, r.a.createElement("div", {
-						className: f.a.subredditRankItemColumn
+						className: Object(i.a)(f.a.subredditRankItemColumn, {
+							[f.a.handleOverflow]: e.isOnFrontpage
+						})
 					}, !e.hasTagline && r.a.createElement("span", {
 						className: f.a.rankText
 					}, s), !e.hasTagline && r.a.createElement(h.a, {
@@ -4984,6 +4990,7 @@
 				chip: "_3VVeutMKl2leQEGhurm7YN",
 				taglineChip: "_2HZPVURuk0Na0mbosSZJDP",
 				listItem: "_267lcOmg8VvXcoj9O0Q1TB",
+				handleOverflow: "_1mEfDz-ZrTiw9KxnSpAXBy",
 				subredditRankItem: "_2ARwkAW45Urhf_fMfAMi5_",
 				large: "_3WPeZCt6k7JXmTo4Kcf1vQ",
 				regularText: "_3A9bf_kZ6VBA2VBRND5gvf",
@@ -4991,7 +4998,6 @@
 				delta: "b8PFL61jVtugGDJnIQfBO",
 				subredditRankItemColumn: "_2NS1CWm-CUQYu57CmZ05ep",
 				subredditDetailsContainer: "_1XUTmupLRN-FTmJ6PQB7kO",
-				handleOverflow: "_1mEfDz-ZrTiw9KxnSpAXBy",
 				categoryLink: "_25MytV8CK2IS_fK867Q3qH",
 				rankText: "_2B-BDgM13P2SLJX-GZrxHV",
 				smallText: "_3BO4rLcAUZY_jK4h2rZj7y",
@@ -7373,4 +7379,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Frontpage.bb871f208afb05473383.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Frontpage.7610bdc0ed6eb5e67cfc.js.map

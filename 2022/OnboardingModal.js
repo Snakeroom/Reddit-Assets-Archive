@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/OnboardingModal.8674eef6babff3cb6c29.js
-// Retrieved at 6/29/2022, 9:40:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/OnboardingModal.a72bae4803e43a79878c.js
+// Retrieved at 6/29/2022, 11:20:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["OnboardingModal"], {
 		"./node_modules/lodash/_baseRange.js": function(e, t) {
@@ -3171,6 +3171,7 @@
 				chip: "_3VVeutMKl2leQEGhurm7YN",
 				taglineChip: "_2HZPVURuk0Na0mbosSZJDP",
 				listItem: "_267lcOmg8VvXcoj9O0Q1TB",
+				handleOverflow: "_1mEfDz-ZrTiw9KxnSpAXBy",
 				subredditRankItem: "_2ARwkAW45Urhf_fMfAMi5_",
 				large: "_3WPeZCt6k7JXmTo4Kcf1vQ",
 				regularText: "_3A9bf_kZ6VBA2VBRND5gvf",
@@ -3178,7 +3179,6 @@
 				delta: "b8PFL61jVtugGDJnIQfBO",
 				subredditRankItemColumn: "_2NS1CWm-CUQYu57CmZ05ep",
 				subredditDetailsContainer: "_1XUTmupLRN-FTmJ6PQB7kO",
-				handleOverflow: "_1mEfDz-ZrTiw9KxnSpAXBy",
 				categoryLink: "_25MytV8CK2IS_fK867Q3qH",
 				rankText: "_2B-BDgM13P2SLJX-GZrxHV",
 				smallText: "_3BO4rLcAUZY_jK4h2rZj7y",
@@ -4180,4 +4180,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/OnboardingModal.8674eef6babff3cb6c29.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/OnboardingModal.a72bae4803e43a79878c.js.map
