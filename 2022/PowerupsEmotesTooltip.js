@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PowerupsEmotesTooltip.29e41d43cd355246f32b.js
-// Retrieved at 6/13/2022, 10:50:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PowerupsEmotesTooltip.d9697c06fce5202e6454.js
+// Retrieved at 6/29/2022, 10:10:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PowerupsEmotesTooltip"], {
 		"./src/reddit/actions/economics/powerups/constants.ts": function(e, t, o) {
@@ -470,7 +470,7 @@
 					}, e => {
 						g(Object(i.a)(e, "powerups"))
 					}, e => {
-						g(Object(i.u)(e, "powerups")), d(Object(b.f)({
+						g(Object(i.q)(e, "powerups")), d(Object(b.f)({
 							duration: 5e3,
 							kind: f.b.SuccessMod,
 							text: l.fbt._({
@@ -566,7 +566,7 @@
 				}))))), !c && n.a.createElement(_.t, {
 					className: C.a.unlockButton,
 					onClick: () => {
-						g(Object(i.y)()), d(Object(E.g)("emote_picker"))
+						g(Object(i.u)()), d(Object(E.g)("emote_picker"))
 					},
 					priority: _.c.Primary
 				}, l.fbt._("Unlock Emojis", null, {
@@ -813,4 +813,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PowerupsEmotesTooltip.29e41d43cd355246f32b.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PowerupsEmotesTooltip.d9697c06fce5202e6454.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit~ReportFlow~Subreddit.fb621eebe9a102c0a923.js
-// Retrieved at 6/29/2022, 9:40:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit~ReportFlow~Subreddit.1153fddad34fb7ed823e.js
+// Retrieved at 6/29/2022, 10:10:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~ModListing~Reddit~ReportFlow~Subreddit"], {
 		"./src/lib/assertNever.ts": function(e, t, r) {
@@ -10861,68 +10861,60 @@
 		},
 		"./src/reddit/helpers/trackers/powerups.ts": function(e, t, r) {
 			"use strict";
-			r.d(t, "D", (function() {
+			r.d(t, "z", (function() {
 				return o
-			})), r.d(t, "t", (function() {
+			})), r.d(t, "p", (function() {
 				return d
-			})), r.d(t, "v", (function() {
+			})), r.d(t, "r", (function() {
 				return c
-			})), r.d(t, "E", (function() {
+			})), r.d(t, "A", (function() {
 				return u
 			})), r.d(t, "j", (function() {
 				return l
-			})), r.d(t, "p", (function() {
-				return b
-			})), r.d(t, "m", (function() {
-				return p
-			})), r.d(t, "o", (function() {
-				return f
-			})), r.d(t, "n", (function() {
-				return m
 			})), r.d(t, "c", (function() {
-				return _
+				return b
 			})), r.d(t, "b", (function() {
-				return O
+				return p
 			})), r.d(t, "e", (function() {
-				return g
-			})), r.d(t, "w", (function() {
-				return j
-			})), r.d(t, "B", (function() {
-				return I
-			})), r.d(t, "x", (function() {
-				return h
-			})), r.d(t, "A", (function() {
-				return y
-			})), r.d(t, "h", (function() {
-				return S
-			})), r.d(t, "g", (function() {
-				return E
-			})), r.d(t, "i", (function() {
-				return T
+				return f
 			})), r.d(t, "s", (function() {
-				return v
-			})), r.d(t, "q", (function() {
-				return x
-			})), r.d(t, "r", (function() {
-				return w
+				return m
+			})), r.d(t, "x", (function() {
+				return _
+			})), r.d(t, "t", (function() {
+				return O
+			})), r.d(t, "w", (function() {
+				return g
+			})), r.d(t, "h", (function() {
+				return j
+			})), r.d(t, "g", (function() {
+				return I
+			})), r.d(t, "i", (function() {
+				return h
+			})), r.d(t, "o", (function() {
+				return y
+			})), r.d(t, "m", (function() {
+				return S
+			})), r.d(t, "n", (function() {
+				return E
 			})), r.d(t, "f", (function() {
-				return k
-			})), r.d(t, "y", (function() {
-				return C
-			})), r.d(t, "k", (function() {
-				return N
-			})), r.d(t, "a", (function() {
-				return D
+				return T
 			})), r.d(t, "u", (function() {
-				return A
+				return v
+			})), r.d(t, "k", (function() {
+				return x
+			})), r.d(t, "a", (function() {
+				return w
+			})), r.d(t, "q", (function() {
+				return k
 			})), r.d(t, "d", (function() {
-				return R
+				return C
 			})), r.d(t, "l", (function() {
-				return L
-			})), r.d(t, "z", (function() {
-				return P
-			})), r.d(t, "C", (function() {
-				return U
+				return N
+			})), r.d(t, "v", (function() {
+				return D
+			})), r.d(t, "y", (function() {
+				return A
 			}));
 			var n = r("./src/reddit/helpers/correlationIdTracker.ts"),
 				i = r("./src/reddit/selectors/telemetry.ts");
@@ -10972,46 +10964,20 @@
 				u = a("postlist_supporters_cta"),
 				l = a("comm_heroes_modal"),
 				b = () => e => ({
-					source: "powerups",
+					source: "powerups_community_feed",
 					action: "view",
-					noun: "post_upsell",
+					noun: "powerups_mod_enable_banner",
 					...s(e),
-					correlationId: Object(n.d)(n.a.PowerupsFlow, !0)
+					correlationId: Object(n.d)(n.a.PowerupsFlow, !1)
 				}),
 				p = () => e => ({
-					source: "powerups",
-					action: "click",
-					noun: "post_upsell",
-					...s(e),
-					correlationId: Object(n.d)(n.a.PowerupsFlow, !0)
-				}),
-				f = () => e => ({
-					source: "powerups",
-					action: "view",
-					noun: "post_upsell_premium",
-					...s(e)
-				}),
-				m = () => e => ({
-					source: "powerups_post_upsell_premium",
-					action: "click",
-					noun: "use_premium_powerup",
-					...s(e)
-				}),
-				_ = () => e => ({
-					source: "powerups_community_feed",
-					action: "view",
-					noun: "powerups_mod_enable_banner",
-					...s(e),
-					correlationId: Object(n.d)(n.a.PowerupsFlow, !1)
-				}),
-				O = () => e => ({
 					source: "powerups_community_feed",
 					action: "click",
 					noun: "powerups_mod_enable_banner",
 					...s(e),
 					correlationId: Object(n.d)(n.a.PowerupsFlow, !1)
 				}),
-				g = e => t => ({
+				f = e => t => ({
 					source: "powerups",
 					action: "click",
 					noun: "join_supporters",
@@ -11020,31 +10986,31 @@
 						reason: e
 					})
 				}),
-				j = () => e => ({
+				m = () => e => ({
 					source: "powerups_supporters_modal",
 					action: "click",
 					noun: "powerups_cta",
 					...s(e)
 				}),
-				I = () => e => ({
+				_ = () => e => ({
 					source: "powerups",
 					action: "click",
 					noun: "unlock_supporter_achievement",
 					...s(e)
 				}),
-				h = () => e => ({
+				O = () => e => ({
 					source: "powerups",
 					action: "click",
 					noun: "unlock_achievements",
 					...s(e)
 				}),
-				y = () => e => ({
+				g = () => e => ({
 					source: "powerups_flair_picker",
 					action: "click",
 					noun: "powerups_cta",
 					...s(e)
 				}),
-				S = e => t => ({
+				j = e => t => ({
 					source: "powerups_modal",
 					action: "view",
 					noun: "marketing_step",
@@ -11053,7 +11019,7 @@
 						reason: e
 					})
 				}),
-				E = e => t => ({
+				I = e => t => ({
 					source: "powerups",
 					action: "click",
 					noun: "benefit",
@@ -11063,13 +11029,13 @@
 						benefit: e
 					}
 				}),
-				T = (e, t) => r => ({
+				h = (e, t) => r => ({
 					source: "powerups_modal",
 					action: "view",
 					noun: "purchase_step",
 					...s(r, e, t)
 				}),
-				v = () => e => ({
+				y = () => e => ({
 					source: "global",
 					action: "view",
 					noun: "screen",
@@ -11078,13 +11044,13 @@
 						pageType: "powerups_premium_upsell"
 					})
 				}),
-				x = () => e => ({
+				S = () => e => ({
 					source: "powerups_premium_upsell",
 					action: "click",
 					noun: "powerups_price",
 					...s(e)
 				}),
-				w = e => t => ({
+				E = e => t => ({
 					source: "powerups",
 					action: "click",
 					noun: "premium",
@@ -11096,7 +11062,7 @@
 						subscriptionType: e
 					}
 				}),
-				k = (e, t) => r => ({
+				T = (e, t) => r => ({
 					source: "global",
 					action: "view",
 					noun: "screen",
@@ -11105,20 +11071,20 @@
 						pageType: "community_heroes_modal"
 					}
 				}),
-				C = () => e => ({
+				v = () => e => ({
 					source: "powerups",
 					action: "click",
 					noun: "unlock_emojis",
 					...s(e),
 					correlationId: Object(n.d)(n.a.PowerupsFlow, !0)
 				}),
-				N = () => e => ({
+				x = () => e => ({
 					source: "meta",
 					action: "open",
 					noun: "emote_picker",
 					...s(e)
 				}),
-				D = (e, t) => r => ({
+				w = (e, t) => r => ({
 					source: t,
 					action: "click",
 					noun: "add_custom_emojis",
@@ -11128,7 +11094,7 @@
 						emojiCount: e
 					}
 				}),
-				A = (e, t) => r => ({
+				k = (e, t) => r => ({
 					source: t,
 					action: "save",
 					noun: "custom_emojis",
@@ -11138,7 +11104,7 @@
 						emojiCount: e
 					}
 				}),
-				R = function() {
+				C = function() {
 					let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : 1,
 						t = arguments.length > 1 ? arguments[1] : void 0;
 					return r => ({
@@ -11152,7 +11118,7 @@
 						}
 					})
 				},
-				L = (e, t) => r => ({
+				N = (e, t) => r => ({
 					source: "meta",
 					action: "open",
 					noun: "gif_tooltip",
@@ -11160,14 +11126,14 @@
 					...s(r),
 					correlationId: e
 				}),
-				P = () => e => ({
+				D = () => e => ({
 					source: "powerups",
 					action: "click",
 					noun: "unlock_gifs",
 					...s(e),
 					correlationId: Object(n.d)(n.a.PowerupsFlow, !0)
 				}),
-				U = (e, t, r) => n => ({
+				A = (e, t, r) => n => ({
 					source: "powerups_settings",
 					action: "click",
 					noun: e,
@@ -14450,4 +14416,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit~ReportFlow~Subreddit.fb621eebe9a102c0a923.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit~ReportFlow~Subreddit.1153fddad34fb7ed823e.js.map

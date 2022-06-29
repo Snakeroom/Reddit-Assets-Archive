@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/EconPowerupsFlairModal.107c6436ac0b8b4e476e.js
-// Retrieved at 6/29/2022, 9:40:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/EconPowerupsFlairModal.508b978c62436b72a3b1.js
+// Retrieved at 6/29/2022, 10:10:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["EconPowerupsFlairModal"], {
 		"./src/reddit/actions/economics/powerups/flairs/index.ts": function(e, t, r) {
@@ -743,14 +743,14 @@
 					onSelect: f
 				}))), (() => u && !p ? o.a.createElement(l.a, {
 					onClick: () => {
-						n(Object(m.B)()), v()
+						n(Object(m.x)()), v()
 					}
 				}) : u ? null : o.a.createElement(T.t, {
 					priority: T.c.Primary,
 					className: R.a.powerupButton,
 					isFullWidth: !0,
 					onClick: () => {
-						n(Object(m.x)()), v()
+						n(Object(m.t)()), v()
 					}
 				}, K._("Powerup to Unlock", null, {
 					hk: "M8l7D"
@@ -950,7 +950,7 @@
 				}), o.a.createElement(l.a, {
 					className: _.a.ctaButton,
 					onClick: () => {
-						t(Object(m.A)()), e(Object(d.g)("user_flair_picker"))
+						t(Object(m.w)()), e(Object(d.g)("user_flair_picker"))
 					}
 				}))) : null
 			})
@@ -1575,4 +1575,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EconPowerupsFlairModal.107c6436ac0b8b4e476e.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EconPowerupsFlairModal.508b978c62436b72a3b1.js.map

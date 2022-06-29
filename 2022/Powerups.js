@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Powerups.8d44f6247ce1b7308431.js
-// Retrieved at 6/21/2022, 7:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Powerups.d5cf37bc3a951b1fb478.js
+// Retrieved at 6/29/2022, 10:10:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Powerups"], {
 		"./node_modules/lodash/_arraySampleSize.js": function(e, t, a) {
@@ -624,7 +624,6 @@
 			e.exports = {
 				background: "XVwx9Y9K0HdxTdtF2BPW0",
 				isModal: "UtfYccpr1yXmbqvp5V4xO",
-				isInFeedUnit: "_2hif8-1kZa1knghBW2qHUl",
 				colorBlockCorner: "_3cb-_dMe8EWVymoglw4OyK",
 				isNightmodeOn: "_2aTpeK-XP6gqT5wf5i532u",
 				colorBlockThrough: "_1oWuVmyyrm-f2cYxR7EV9F",
@@ -652,20 +651,18 @@
 				d = a("./src/reddit/components/PowerupsSidebar/PowerupsBackground.m.less"),
 				u = a.n(d);
 			! function(e) {
-				e[e.SIDEBAR = 0] = "SIDEBAR", e[e.MODAL = 1] = "MODAL", e[e.INFEED_UNIT = 2] = "INFEED_UNIT"
+				e[e.SIDEBAR = 0] = "SIDEBAR", e[e.MODAL = 1] = "MODAL"
 			}(n || (n = {}));
 			const m = e => {
 				let {
 					space: t
 				} = e;
 				const a = Object(i.e)(c.db),
-					o = t === n.MODAL,
-					d = t === n.INFEED_UNIT;
+					o = t === n.MODAL;
 				return l.a.createElement("div", {
 					className: Object(r.a)(u.a.background, {
 						[u.a.isNightmodeOn]: a,
-						[u.a.isModal]: o,
-						[u.a.isInFeedUnit]: d
+						[u.a.isModal]: o
 					})
 				}, l.a.createElement("div", {
 					className: u.a.colorBlockCorner
@@ -1778,7 +1775,7 @@
 			const {
 				fbt: B
 			} = a("./node_modules/fbt/lib/FbtPublic.js");
-			var q = Object(i.a)(e => {
+			var A = Object(i.a)(e => {
 					let {
 						closeModal: t
 					} = e;
@@ -1853,15 +1850,15 @@
 						space: h.b.MODAL
 					}))
 				}),
-				A = (a("./node_modules/core-js/modules/web.dom.iterable.js"), a("./src/reddit/controls/Button/index.tsx")),
+				q = (a("./node_modules/core-js/modules/web.dom.iterable.js"), a("./src/reddit/controls/Button/index.tsx")),
 				W = a("./src/reddit/icons/svgs/SnooFacepalm/index.tsx"),
 				L = a("./src/reddit/selectors/gold/powerups/modSignup.ts"),
 				H = a("./src/reddit/controls/CheckboxWithLabel/index.tsx"),
 				R = a("./src/reddit/components/PowerupsSignUpModal/MultiSubredditForm.m.less"),
 				D = a.n(R);
 			const {
-				fbt: U
-			} = a("./node_modules/fbt/lib/FbtPublic.js"), V = e => {
+				fbt: V
+			} = a("./node_modules/fbt/lib/FbtPublic.js"), Q = e => {
 				const {
 					onChange: t,
 					subredditIdsSelected: a,
@@ -1905,7 +1902,7 @@
 						text: o,
 						disabled: r
 					})
-				})), !r && !o && s.a.createElement(A.t, {
+				})), !r && !o && s.a.createElement(q.t, {
 					className: D.a.selectAllButton,
 					onClick: () => {
 						t(c ? [] : l.map(e => {
@@ -1915,17 +1912,17 @@
 							return t
 						}))
 					},
-					priority: A.c.Secondary,
+					priority: q.c.Secondary,
 					isFullWidth: !0
-				}, c ? U._("Deselect all", null, {
+				}, c ? V._("Deselect all", null, {
 					hk: "46i6br"
-				}) : U._("Select all", null, {
+				}) : V._("Select all", null, {
 					hk: "2Eo4n2"
 				})))
 			};
-			var Q = a("./src/reddit/controls/LoadingIcon/index.tsx"),
-				Y = a("./src/reddit/components/PowerupsSignUpModal/signupButton.m.less"),
-				z = a.n(Y);
+			var Y = a("./src/reddit/controls/LoadingIcon/index.tsx"),
+				z = a("./src/reddit/components/PowerupsSignUpModal/signupButton.m.less"),
+				U = a.n(z);
 			const {
 				fbt: Z
 			} = a("./node_modules/fbt/lib/FbtPublic.js"), J = e => {
@@ -1941,15 +1938,15 @@
 				}) : Z._("Turn on Powerups", null, {
 					hk: "AuDZE"
 				});
-				return s.a.createElement(A.k, {
-					className: Object(E.a)(t, z.a.button, {
-						[z.a.loading]: r
+				return s.a.createElement(q.k, {
+					className: Object(E.a)(t, U.a.button, {
+						[U.a.loading]: r
 					}),
 					disabled: a || r,
 					onClick: n,
-					priority: A.c.Primary,
+					priority: q.c.Primary,
 					isFullWidth: !0
-				}, r ? s.a.createElement(Q.a, {
+				}, r ? s.a.createElement(Y.a, {
 					sizePx: 12,
 					center: !0
 				}) : l)
@@ -2049,7 +2046,7 @@
 					className: X.a.titleText
 				}, O), s.a.createElement("h2", {
 					className: X.a.subtitleText
-				}, j)), !m && s.a.createElement(V, {
+				}, j)), !m && s.a.createElement(Q, {
 					onChange: b,
 					subredditIdsSelected: g,
 					subredditsInfo: c,
@@ -2089,11 +2086,11 @@
 					className: X.a.successText
 				}, K._("Let your community know about Powerups with a pinned post", null, {
 					hk: "3bII20"
-				})), s.a.createElement(A.t, {
+				})), s.a.createElement(q.t, {
 					className: X.a.successButton,
 					to: `/${c[0].displayText}/submit`,
-					kind: A.b.InternalLink,
-					priority: A.c.Primary,
+					kind: q.b.InternalLink,
+					priority: q.c.Primary,
 					isFullWidth: !0
 				}, K._("Spread the word", null, {
 					hk: "1f68Nj"
@@ -2343,7 +2340,7 @@
 					onOverlayClick: m,
 					className: we.a.modalBody,
 					overlayClassName: we.a.modalOverlay
-				}), !a && c && s.a.createElement(q, {
+				}), !a && c && s.a.createElement(A, {
 					withOverlay: !0,
 					closeModal: p,
 					onOverlayClick: p
@@ -2352,4 +2349,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Powerups.8d44f6247ce1b7308431.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Powerups.d5cf37bc3a951b1fb478.js.map

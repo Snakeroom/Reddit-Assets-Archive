@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SupportersListModal.42e72b9f7bc63e2ee125.js
-// Retrieved at 6/13/2022, 10:50:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SupportersListModal.e0422dd3f210687d563b.js
+// Retrieved at 6/29/2022, 10:10:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SupportersListModal"], {
 		"./src/reddit/components/Econ/Common/ModalCloseButton/index.m.less": function(e, t, s) {
@@ -138,7 +138,7 @@
 					className: m.a.user,
 					to: `/user/${f}/`,
 					onClick: () => {
-						b && s(Object(c.E)(b.id, b.displayName))
+						b && s(Object(c.A)(b.id, b.displayName))
 					}
 				}, N) : n.a.createElement("div", {
 					className: m.a.user
@@ -431,7 +431,7 @@
 				}), n.a.createElement(m.a, {
 					className: z.a.ctaButton,
 					onClick: () => {
-						f(Object(N.w)()), b(Object(l.g)("supporters_list_modal", null == t ? void 0 : t.id))
+						f(Object(N.s)()), b(Object(l.g)("supporters_list_modal", null == t ? void 0 : t.id))
 					}
 				}))) : (b(Object(c.f)({
 					kind: C.b.Error,
@@ -655,4 +655,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SupportersListModal.42e72b9f7bc63e2ee125.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SupportersListModal.e0422dd3f210687d563b.js.map
