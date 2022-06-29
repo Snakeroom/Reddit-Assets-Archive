@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/OnboardingModal.5df5eaa0dc050d85bf77.js
-// Retrieved at 6/29/2022, 1:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/OnboardingModal.90916154b2bc4d90efec.js
+// Retrieved at 6/29/2022, 2:40:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["OnboardingModal"], {
 		"./node_modules/lodash/_baseRange.js": function(e, t) {
@@ -1968,9 +1968,11 @@
 						r(Object(u.g)(je.a.ONBOARDING_MODAL_D2X)), ee && r(Object(m.g)()), p && (s(Object(R.o)()), Object(Qe.a)())
 					}, [r, p, ee, s]),
 					ne = Object(o.useCallback)((function() {
-						let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : 3e3;
-						return setTimeout(te, e)
-					}), [te]),
+						let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : 1500;
+						setTimeout(async () => {
+							await r(Object(l.frontpageReloaded)()), setTimeout(te, e)
+						}, e)
+					}), [te, r]),
 					re = Object(o.useCallback)(() => {
 						const e = Object.keys(P).filter(e => 0 === P[e].length || !P[e].find(e => P[e]));
 						W([]), e.length && async function() {
@@ -1992,9 +1994,7 @@
 						s(Object(R.p)()), g(Ee.COMMUNITIES), re()
 					}, [re, s]),
 					ce = Object(o.useCallback)(async () => {
-						s(Object(R.e)()), K(), g(Ee.AVATAR);
-						const e = await at(n, t, z, P);
-						e.ok ? e.reload && r(Object(l.frontpageReloaded)()) : r(st())
+						s(Object(R.e)()), K(), g(Ee.AVATAR), (await at(n, t, z, P)).ok || r(st())
 					}, [n, r, K, t, z, P, s]),
 					de = Object(o.useCallback)(() => {
 						g(Ee.CELEBRATION), ne()
@@ -4180,4 +4180,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/OnboardingModal.5df5eaa0dc050d85bf77.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/OnboardingModal.90916154b2bc4d90efec.js.map
