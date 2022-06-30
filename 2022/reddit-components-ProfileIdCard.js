@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-ProfileIdCard.35e7a807c77ec0665741.js
-// Retrieved at 6/30/2022, 10:00:07 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-ProfileIdCard.a1cdf9ac85eab589b08e.js
+// Retrieved at 6/30/2022, 3:30:08 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-ProfileIdCard"], {
 		"./node_modules/lodash/compact.js": function(e, t) {
@@ -2425,10 +2425,10 @@
 				G = r("./src/reddit/actions/modal.ts"),
 				W = r("./src/reddit/actions/profile/index.ts"),
 				H = r("./src/reddit/components/CrisisFlow/index.tsx"),
-				q = r("./src/higherOrderComponents/makeAsync.tsx"),
-				z = r("./src/lib/loadWithRetries/index.ts");
-			var K = Object(q.a)({
-					getComponent: () => Object(z.a)(() => r.e("GivePremiumModal").then(r.bind(null, "./src/reddit/components/GivePremiumModal/index.tsx"))).then(e => e.default),
+				z = r("./src/higherOrderComponents/makeAsync.tsx"),
+				q = r("./src/lib/loadWithRetries/index.ts");
+			var K = Object(z.a)({
+					getComponent: () => Object(q.a)(() => r.e("GivePremiumModal").then(r.bind(null, "./src/reddit/components/GivePremiumModal/index.tsx"))).then(e => e.default),
 					ErrorComponent: () => null,
 					LoadingComponent: () => null
 				}),
@@ -2887,13 +2887,13 @@
 					prefShowSnoovatar: M,
 					snoovatarFullBodyAsset: R,
 					username: G
-				} = E, W = !!i && i.id === A, H = !(!i || !i.snoovatarFullBodyAsset), q = C && C.bannerBackgroundImage, z = !!_ && _.isNSFW, K = z && c, Z = !(!O || !O.userIsSubscriber), Y = `/user/${G}/`, Q = y && y.url === Y, V = !O || O.acceptChats, X = !O || O.acceptPms, J = P && Object(me.b)(R), $ = () => {
+				} = E, W = !!i && i.id === A, H = !(!i || !i.snoovatarFullBodyAsset), z = C && C.bannerBackgroundImage, q = !!_ && _.isNSFW, K = q && c, Z = !(!O || !O.userIsSubscriber), Y = `/user/${G}/`, Q = y && y.url === Y, V = !O || O.acceptChats, X = !O || O.acceptPms, J = P && Object(me.b)(R), $ = () => {
 					r(e => !e)
 				};
 				return o.a.createElement(o.a.Fragment, null, o.a.createElement(m.a, {
 					isEmployee: B,
 					isGold: D,
-					isNSFW: z,
+					isNSFW: q,
 					isNftPreview: J,
 					isOverlay: l,
 					isOwnProfile: W,
@@ -2947,7 +2947,7 @@
 					}),
 					onClickSnoovatar: b,
 					profileIcon: U,
-					bannerBackgroundImage: K ? void 0 : q
+					bannerBackgroundImage: K ? void 0 : z
 				}), t && o.a.createElement(be.a, {
 					onClose: $,
 					onConfirm: e => {
@@ -3578,7 +3578,7 @@
 			const i = e => Object(s.c)(e, {
 				experimentName: n.G,
 				experimentEligibilitySelector: () => Object(o.P)(e)
-			}) === n.yd
+			}) === n.zd
 		},
 		"./src/reddit/selectors/experiments/crisisTextLine.ts": function(e, t, r) {
 			"use strict";
@@ -3611,13 +3611,13 @@
 			const o = e => {
 					return !(Object(s.c)(e, {
 						experimentEligibilitySelector: s.a,
-						experimentName: n.ee
-					}) === n.yd)
+						experimentName: n.fe
+					}) === n.zd)
 				},
 				i = e => Object(s.c)(e, {
 					experimentEligibilitySelector: s.a,
-					experimentName: n.fe
-				}) === n.yd
+					experimentName: n.ge
+				}) === n.zd
 		},
 		"./src/reddit/selectors/premium.ts": function(e, t, r) {
 			"use strict";
@@ -3646,4 +3646,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ProfileIdCard.35e7a807c77ec0665741.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ProfileIdCard.a1cdf9ac85eab589b08e.js.map

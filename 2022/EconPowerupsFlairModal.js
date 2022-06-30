@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/EconPowerupsFlairModal.0d7ae58d06b54729f9bb.js
-// Retrieved at 6/30/2022, 12:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/EconPowerupsFlairModal.fd280f13a96bb8b9aaf1.js
+// Retrieved at 6/30/2022, 3:30:08 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["EconPowerupsFlairModal"], {
 		"./src/reddit/actions/economics/powerups/flairs/index.ts": function(e, t, r) {
@@ -31,7 +31,7 @@
 			})), r.d(t, "setSubredditUserSupporterFlair", (function() {
 				return C
 			})), r.d(t, "setSubredditUserPowerupsFlairsVisibility", (function() {
-				return U
+				return L
 			}));
 			r("./node_modules/core-js/modules/web.dom.iterable.js");
 			var s = r("./node_modules/fbt/lib/FbtPublic.js"),
@@ -205,7 +205,7 @@
 							})
 						}))
 					}
-				}, U = (e, t) => async (r, i, o) => {
+				}, L = (e, t) => async (r, i, o) => {
 					let {
 						gqlContext: a
 					} = o;
@@ -621,18 +621,18 @@
 				T = r("./src/reddit/controls/Button/index.tsx"),
 				C = r("./src/reddit/hooks/usePreloadModal.ts"),
 				N = r("./src/reddit/icons/svgs/PowerupTier2/index.tsx"),
-				U = r("./src/reddit/selectors/gold/powerups/index.ts"),
-				L = r("./src/reddit/selectors/gold/powerups/flairs.ts"),
+				L = r("./src/reddit/selectors/gold/powerups/index.ts"),
+				U = r("./src/reddit/selectors/gold/powerups/flairs.ts"),
 				A = r("./src/reddit/actions/tooltip.ts"),
 				M = r("./src/reddit/components/InfoTextTooltip/index.tsx"),
 				B = r("./src/reddit/helpers/trackers/userFlair.ts"),
 				D = r("./src/reddit/icons/fonts/index.tsx"),
 				H = r("./src/reddit/models/Gold/Powerups/powerupsFlair/index.ts"),
 				G = r("./src/reddit/components/Econ/PowerupsFlair/PowerupsFlairModal/PowerupsFlair.m.less"),
-				q = r.n(G);
+				z = r.n(G);
 			const {
-				fbt: z
-			} = r("./node_modules/fbt/lib/FbtPublic.js"), V = e => {
+				fbt: V
+			} = r("./node_modules/fbt/lib/FbtPublic.js"), q = e => {
 				let {
 					flair: t,
 					onSelect: r
@@ -640,7 +640,7 @@
 				const s = Object(a.d)(),
 					n = Object(h.a)(),
 					d = `achievement-locked-${t.type}`,
-					c = t.isLocked ? z._("To use this achievement, you gotta earn it!", null, {
+					c = t.isLocked ? V._("To use this achievement, you gotta earn it!", null, {
 						hk: "2RYhLB"
 					}) : "",
 					l = t.description || c,
@@ -663,31 +663,31 @@
 							n(Object(B.b)(e))
 						}
 					},
-					className: Object(i.a)(q.a.achievementItem, {
-						[q.a.achievementItemLocked]: t.isLocked,
-						[q.a.achievementItemActive]: t.isPreferred,
-						[q.a.achievementItemSelectable]: p
+					className: Object(i.a)(z.a.achievementItem, {
+						[z.a.achievementItemLocked]: t.isLocked,
+						[z.a.achievementItemActive]: t.isPreferred,
+						[z.a.achievementItemSelectable]: p
 					}),
 					"data-testid": `af-modal-achievement-flair-${t.type}`
 				}, o.a.createElement("div", {
-					className: q.a.achievementImgWrapper
+					className: z.a.achievementImgWrapper
 				}, o.a.createElement("img", {
 					id: d,
-					className: q.a.achievementImg,
+					className: z.a.achievementImg,
 					src: t.icon.url,
 					alt: t.name
 				}), o.a.createElement("div", {
-					className: q.a.achievementImgLocked
+					className: z.a.achievementImgLocked
 				}, o.a.createElement(D.a, {
 					name: "lock",
 					isFilled: !0,
-					className: q.a.achievementLock
+					className: z.a.achievementLock
 				}))), o.a.createElement("div", {
-					className: q.a.achievementName
+					className: z.a.achievementName
 				}, o.a.createElement("span", null, t.name)), !!l && o.a.createElement(M.c, {
 					tooltipId: d,
 					text: l,
-					className: q.a.achievementTooltip
+					className: z.a.achievementTooltip
 				}))
 			};
 			var Q = r("./src/reddit/components/Econ/PowerupsFlair/PowerupsFlairModal/OldAchievementFlairs.m.less"),
@@ -701,14 +701,14 @@
 					userId: s
 				} = e;
 				const n = Object(h.a)(),
-					c = Object(a.e)(e => Object(L.b)(e, {
+					c = Object(a.e)(e => Object(U.b)(e, {
 						subredditId: r,
 						userId: s
 					})),
-					u = Object(a.e)(e => Object(U.m)(e, {
+					u = Object(a.e)(e => Object(L.m)(e, {
 						subredditId: r
 					})),
-					p = Object(a.e)(e => Object(L.j)(e, {
+					p = Object(a.e)(e => Object(U.j)(e, {
 						subredditId: r,
 						userId: s
 					})),
@@ -737,7 +737,7 @@
 					hk: "1oPooH"
 				}))()), o.a.createElement("div", {
 					className: R.a.achievementsList
-				}, c.map(e => o.a.createElement(V, {
+				}, c.map(e => o.a.createElement(q, {
 					flair: e,
 					key: e.type,
 					onSelect: f
@@ -777,7 +777,7 @@
 					className: Z.a.subtitle
 				}, s), o.a.createElement("div", {
 					className: Z.a.flairsList
-				}, i.map(e => o.a.createElement(V, {
+				}, i.map(e => o.a.createElement(q, {
 					flair: e,
 					key: e.type,
 					onSelect: n
@@ -795,16 +795,16 @@
 				} = e;
 				const i = Object(h.a)(),
 					n = Object(a.d)(),
-					d = Object(a.e)(e => Object(L.c)(e, {
+					d = Object(a.e)(e => Object(U.c)(e, {
 						subredditId: t,
 						userId: r
 					})),
 					c = Object(a.e)(e => Object(w.a)(e, t)),
-					l = Object(a.e)(e => Object(L.e)(e, {
+					l = Object(a.e)(e => Object(U.e)(e, {
 						subredditId: t,
 						userId: r
 					})),
-					u = Object(a.e)(e => Object(U.m)(e, {
+					u = Object(a.e)(e => Object(L.m)(e, {
 						subredditId: t
 					}));
 				if (Object(C.a)(S.a), !d) return null;
@@ -1442,8 +1442,8 @@
 				d = e => o.includes(e),
 				c = Object(s.a)(e => Object(n.c)(e, {
 					experimentEligibilitySelector: n.a,
-					experimentName: i.Ud
-				}), e => e === i.yd)
+					experimentName: i.Vd
+				}), e => e === i.zd)
 		},
 		"./src/reddit/selectors/gold/powerups/flairs.ts": function(e, t, r) {
 			"use strict";
@@ -1575,4 +1575,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EconPowerupsFlairModal.0d7ae58d06b54729f9bb.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EconPowerupsFlairModal.fd280f13a96bb8b9aaf1.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModerationPages.2d30bed7c8254df4af26.js
-// Retrieved at 6/30/2022, 12:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModerationPages.c87006f9f2941e9b78fa.js
+// Retrieved at 6/30/2022, 3:30:08 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModerationPages"], {
 		"./src/higherOrderComponents/withImageUploads.tsx": function(e, t, s) {
@@ -1375,7 +1375,7 @@
 					ke = me || ve;
 				me && !Object(xe.b)(G, me) && await t(Object(A.g)(me));
 				const _e = !!me && Object(xe.c)(ae, me),
-					Ce = Object(ue.s)(G),
+					Ce = Object(ue.t)(G),
 					ye = Object(pe.n)(ae, {
 						subredditId: ke
 					}),
@@ -8854,7 +8854,7 @@
 			}
 
 			function g() {
-				return Object(d.a)(i.X) === i.yd
+				return Object(d.a)(i.X) === i.zd
 			}
 
 			function f() {
@@ -24441,7 +24441,7 @@
 						subredditId: s.id
 					})
 				},
-				isTalkHostsExperimentEnabled: y.s
+				isTalkHostsExperimentEnabled: y.t
 			});
 			class Ue extends r.a.Component {
 				constructor(e, t) {
@@ -24950,7 +24950,7 @@
 					return {
 						contentGateInfo: m,
 						isBroadcastingEnabled: !!p && Object(w.c)(c, p.id),
-						isTalkHostsEnabled: Object(y.s)(c),
+						isTalkHostsEnabled: Object(y.t)(c),
 						isContributor: b,
 						isEmployee: t,
 						layout: s,
@@ -25062,7 +25062,7 @@
 				a = s("./src/reddit/selectors/experiments/econ/simpleExperiment.ts");
 			const o = Object(a.a)(n.L),
 				r = Object(a.a)(n.I),
-				i = Object(a.a)(n.je),
+				i = Object(a.a)(n.ke),
 				l = Object(a.a)(n.M),
 				d = Object(a.a)(n.N),
 				c = Object(a.a)(n.H),
@@ -25079,9 +25079,9 @@
 			const o = e => {
 				const t = Object(a.c)(e, {
 					experimentEligibilitySelector: a.a,
-					experimentName: n.xd
+					experimentName: n.yd
 				});
-				return !(!t || Object(n.Zf)(t))
+				return !(!t || Object(n.ag)(t))
 			}
 		},
 		"./src/reddit/selectors/showPromotedCTA.ts": function(e, t, s) {
@@ -25094,10 +25094,10 @@
 				o = s("./src/reddit/helpers/chooseVariant/index.ts"),
 				r = s("./src/reddit/selectors/posts.ts");
 			const i = e => Object(o.c)(e, {
-					experimentName: a.Qe,
+					experimentName: a.Re,
 					experimentEligibilitySelector: o.a
 				}),
-				l = (e, t) => t === a.Ye.Enabled && (null == e ? void 0 : e.isCreatedFromAdsUi) || (null == e ? void 0 : e.isSponsored),
+				l = (e, t) => t === a.Ze.Enabled && (null == e ? void 0 : e.isCreatedFromAdsUi) || (null == e ? void 0 : e.isSponsored),
 				d = Object(n.a)(r.G, i, (e, t) => l(e, t));
 			Object(n.a)((e, t) => t, i, (e, t) => l(e, t))
 		},
@@ -25355,4 +25355,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.2d30bed7c8254df4af26.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.c87006f9f2941e9b78fa.js.map

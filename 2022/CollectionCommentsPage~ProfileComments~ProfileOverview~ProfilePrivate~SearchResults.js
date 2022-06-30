@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~SearchResults.59de3c3a82187a0a4de8.js
-// Retrieved at 6/30/2022, 12:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~SearchResults.e732ffe36bab64236a14.js
+// Retrieved at 6/30/2022, 3:30:08 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~SearchResults"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -1357,7 +1357,7 @@
 						}),
 						id: m,
 						onClick: e => {
-							null == o || o(e), Q(l, n.id), c && (e.preventDefault(), l(Object(V.Z)(Object(X.b)(a), n.postId)))
+							null == o || o(e), z(l, n.id), c && (e.preventDefault(), l(Object(V.Z)(Object(X.b)(a), n.postId)))
 						},
 						onMouseEnter: u,
 						onMouseLeave: u,
@@ -1372,12 +1372,12 @@
 						seconds: n.created
 					})))
 				},
-				Q = (e, t) => {
+				z = (e, t) => {
 					window.addEventListener("focus", (function n() {
-						z(e, t, n)
+						Q(e, t, n)
 					}))
 				},
-				z = (e, t, n) => {
+				Q = (e, t, n) => {
 					window.removeEventListener("focus", n), e(Object(U.h)({
 						commentListNodeId: t
 					})), window.setTimeout(() => e(Object(U.h)({
@@ -1388,13 +1388,13 @@
 				J = n.n(q);
 			const {
 				fbt: K
-			} = n("./node_modules/fbt/lib/FbtPublic.js"), Y = () => r.a.createElement(y.a, {
+			} = n("./node_modules/fbt/lib/FbtPublic.js"), Z = () => r.a.createElement(y.a, {
 				className: J.a.crowdControlText
 			}, K._("Crowd Control", null, {
 				hk: "4WgEW"
 			}));
-			var Z = n("./src/reddit/components/Comments/Comment/TopMeta/edited.m.less"),
-				$ = n.n(Z);
+			var Y = n("./src/reddit/components/Comments/Comment/TopMeta/edited.m.less"),
+				$ = n.n(Y);
 			const {
 				fbt: ee
 			} = n("./node_modules/fbt/lib/FbtPublic.js"), te = e => {
@@ -1676,7 +1676,7 @@
 				})), !Object(k.f)(a) && u && r.a.createElement(g.a, {
 					postOrComment: a,
 					className: ke.a.LastAuthorModNoteIcon
-				}), o && r.a.createElement(Y, null), r.a.createElement(xe, {
+				}), o && r.a.createElement(Z, null), r.a.createElement(xe, {
 					className: ke.a.role,
 					comment: a,
 					subredditDisplayText: N,
@@ -1877,7 +1877,7 @@
 					isStrong: !!m,
 					onClick: M,
 					renderedInOverlay: S
-				}), o && r.a.createElement(Y, null), o && r.a.createElement(y.c, {
+				}), o && r.a.createElement(Z, null), o && r.a.createElement(y.c, {
 					className: Fe.a.metaText,
 					key: "crowdControlSeparator"
 				}), u && !P && r.a.createElement(Pe, {
@@ -3305,10 +3305,10 @@
 				r = n("./src/reddit/helpers/chooseVariant/index.ts"),
 				i = n("./src/reddit/selectors/posts.ts");
 			const a = e => Object(r.c)(e, {
-					experimentName: o.Qe,
+					experimentName: o.Re,
 					experimentEligibilitySelector: r.a
 				}),
-				d = (e, t) => t === o.Ye.Enabled && (null == e ? void 0 : e.isCreatedFromAdsUi) || (null == e ? void 0 : e.isSponsored),
+				d = (e, t) => t === o.Ze.Enabled && (null == e ? void 0 : e.isCreatedFromAdsUi) || (null == e ? void 0 : e.isSponsored),
 				c = Object(s.a)(i.G, a, (e, t) => d(e, t));
 			Object(s.a)((e, t) => t, a, (e, t) => d(e, t))
 		},
@@ -3326,4 +3326,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~SearchResults.59de3c3a82187a0a4de8.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~SearchResults.e732ffe36bab64236a14.js.map
