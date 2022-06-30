@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/NotificationsPrePromptLoader.fef2ee6b945a15bca3b8.js
-// Retrieved at 6/30/2022, 3:30:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/NotificationsPrePromptLoader.146162784f12727acfb0.js
+// Retrieved at 6/30/2022, 5:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["NotificationsPrePromptLoader"], {
 		"./src/reddit/components/NotificationsPrePrompt/index.m.less": function(e, t, c) {
@@ -26,10 +26,10 @@
 					experimentEligibilitySelector: u.a,
 					experimentName: d.Bb
 				});
-				return !Object(d.ag)(t) && t
+				return !Object(d.bg)(t) && t
 			}
-			var O, b = c("./src/reddit/components/NotificationsPrePrompt/index.m.less"),
-				p = c.n(b);
+			var b, O = c("./src/reddit/components/NotificationsPrePrompt/index.m.less"),
+				p = c.n(O);
 
 			function f() {
 				return (f = Object.assign || function(e) {
@@ -41,24 +41,24 @@
 				}).apply(this, arguments)
 			}! function(e) {
 				e[e.ThreeSec = 3e3] = "ThreeSec", e[e.FiveSec = 5e3] = "FiveSec", e[e.TenSec = 1e4] = "TenSec"
-			}(O || (O = {}));
+			}(b || (b = {}));
 			const j = Object(s.a)(() => null);
 			t.default = e => {
 				const t = Object(a.b)(),
 					c = Object(i.d)(),
 					[s, u] = Object(n.useState)(),
-					b = Object(i.e)(m),
-					_ = Object(n.useCallback)(() => b === d.Uc.ThreeSeconds ? O.ThreeSec : b === d.Uc.FiveSeconds ? O.FiveSec : O.TenSec, [b]);
+					O = Object(i.e)(m),
+					_ = Object(n.useCallback)(() => O === d.Uc.ThreeSeconds ? b.ThreeSec : O === d.Uc.FiveSeconds ? b.FiveSec : b.TenSec, [O]);
 				return Object(n.useEffect)(() => {
-					if (b) {
+					if (O) {
 						const e = _();
 						u(setTimeout(() => {
 							c(Object(o.k)()), t(Object(l.g)())
 						}, e))
 					}
-				}, [c, b, t, _]), r.a.createElement(j, f({
+				}, [c, O, t, _]), r.a.createElement(j, f({
 					onOverlayClick: () => {
-						b && (clearTimeout(Number(s)), c(Object(o.k)()), t(Object(l.h)()))
+						O && (clearTimeout(Number(s)), c(Object(o.k)()), t(Object(l.h)()))
 					}
 				}, e, {
 					overlayClassName: p.a.overlay,
@@ -68,4 +68,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/NotificationsPrePromptLoader.fef2ee6b945a15bca3b8.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/NotificationsPrePromptLoader.146162784f12727acfb0.js.map

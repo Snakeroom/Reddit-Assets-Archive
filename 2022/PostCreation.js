@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostCreation.1de9b4d196a17ece4c8d.js
-// Retrieved at 6/30/2022, 3:30:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostCreation.8a91b37aa7b010a907ac.js
+// Retrieved at 6/30/2022, 5:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostCreation", "ChatMessageInput~MembershipPaywallPage~RichTextEditor", "ContributorRequestButton"], {
 		"./node_modules/autosize/dist/autosize.js": function(e, t, n) {
@@ -33948,27 +33948,27 @@
 					if (Object(i.a)(e)) return !1;
 					return Object(s.c)(e, {
 						experimentEligibilitySelector: r.e,
-						experimentName: o.Wf
+						experimentName: o.Xf
 					}) === o.zd
 				},
 				c = e => {
 					return Object(s.c)(e, {
 						experimentEligibilitySelector: r.e,
-						experimentName: o.Xf
+						experimentName: o.Yf
 					}) === o.zd
 				},
 				l = e => {
 					if (Object(i.a)(e)) return !1;
 					const t = Object(s.c)(e, {
 						experimentEligibilitySelector: r.e,
-						experimentName: o.Vf
+						experimentName: o.Wf
 					});
 					return t === o.Mf.TypingIndicators || t === o.Mf.IndicatorsPlusCTA
 				},
 				d = e => {
 					if (Object(i.a)(e)) return !1;
 					const t = Object(r.d)(e, {
-						experimentName: o.Vf
+						experimentName: o.Wf
 					});
 					return (null == t ? void 0 : t.variant) === o.Mf.IndicatorsPlusCTA
 				}
@@ -34396,4 +34396,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.1de9b4d196a17ece4c8d.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.8a91b37aa7b010a907ac.js.map

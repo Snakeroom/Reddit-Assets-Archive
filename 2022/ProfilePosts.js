@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfilePosts.100ac557f87e9ecee1c0.js
-// Retrieved at 6/30/2022, 4:40:24 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfilePosts.26113fe69a6de016b3fe.js
+// Retrieved at 6/30/2022, 5:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfilePosts"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, r) {
@@ -3506,7 +3506,7 @@
 						experimentEligibilitySelector: i.Q,
 						experimentName: s.dd
 					});
-					return !(!t || Object(s.ag)(t))
+					return !(!t || Object(s.bg)(t))
 				},
 				a = e => {
 					return Object(n.c)(e, {
@@ -3709,4 +3709,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfilePosts.100ac557f87e9ecee1c0.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfilePosts.26113fe69a6de016b3fe.js.map
