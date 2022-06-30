@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Subreddit.45a80b25b41200637ba8.js
-// Retrieved at 6/30/2022, 10:00:07 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Subreddit.0b981ffdf0012151fa32.js
+// Retrieved at 6/30/2022, 11:00:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Subreddit", "reddit-components-Econ-PredictionLeaderboard-Sidebar"], {
 		"./node_modules/@reddit/i18n-tools/runtime/helpers/locale/index.js": function(e, t, n) {
@@ -7578,7 +7578,7 @@
 					const t = this.resolve(e);
 					return !1 !== this.resolved[t] && !!n.m[t]
 				},
-				importAsync: () => Promise.all([n.e("CollectionCommentsPage~CommentsPage~ModProgressModule~NewCommunityProgress"), n.e("ModProgressModule")]).then(n.bind(null, "./src/reddit/components/ModProgressModule/index.tsx")),
+				importAsync: () => Promise.all([n.e("CollectionCommentsPage~ModProgressModule~NewCommunityProgress"), n.e("ModProgressModule")]).then(n.bind(null, "./src/reddit/components/ModProgressModule/index.tsx")),
 				requireAsync(e) {
 					const t = this.resolve(e);
 					return this.resolved[t] = !1, this.importAsync(e).then(e => (this.resolved[t] = !0, e))
@@ -14192,7 +14192,7 @@
 					const t = this.resolve(e);
 					return !1 !== this.resolved[t] && !!n.m[t]
 				},
-				importAsync: () => Promise.all([n.e("CollectionCommentsPage~CommentsPage~ModProgressModule~NewCommunityProgress"), n.e(6), n.e("NewCommunityProgress")]).then(n.bind(null, "./src/reddit/components/NewCommunityProgress/NewCommunityProgress.tsx")),
+				importAsync: () => Promise.all([n.e(6), n.e("CollectionCommentsPage~ModProgressModule~NewCommunityProgress"), n.e("NewCommunityProgress")]).then(n.bind(null, "./src/reddit/components/NewCommunityProgress/NewCommunityProgress.tsx")),
 				requireAsync(e) {
 					const t = this.resolve(e);
 					return this.resolved[t] = !1, this.importAsync(e).then(e => (this.resolved[t] = !0, e))
@@ -14997,7 +14997,7 @@
 					} = this.props, te = this.memoizedGetInjectChildren(this.props), oe = Object(E.a)(U, {
 						countryCode: null == t ? void 0 : t.countryCode,
 						languageCode: null == t ? void 0 : t.languageCode
-					}), ie = U.toLowerCase(), le = T && T.url ? T.url : Object(Ge.b)(`/r/${U}/`, null == t ? void 0 : t.countryCode, null == t ? void 0 : t.languageCode), ue = Object(h.a)({
+					}), ie = U.toLowerCase(), le = T && T.url ? T.url : Object(Ge.d)(`/r/${U}/`, null == t ? void 0 : t.countryCode, null == t ? void 0 : t.languageCode), ue = Object(h.a)({
 						countryCode: ze.a,
 						languageCode: ze.b,
 						hardcodedPath: le,
@@ -16363,4 +16363,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Subreddit.45a80b25b41200637ba8.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Subreddit.0b981ffdf0012151fa32.js.map
