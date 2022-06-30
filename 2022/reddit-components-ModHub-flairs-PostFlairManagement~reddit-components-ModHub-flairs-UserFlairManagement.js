@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-ModHub-flairs-PostFlairManagement~reddit-components-ModHub-flairs-UserFlairManagement.9fbdae9dbd00668670e7.js
-// Retrieved at 6/29/2022, 1:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-ModHub-flairs-PostFlairManagement~reddit-components-ModHub-flairs-UserFlairManagement.213dae6c99f95d812e2e.js
+// Retrieved at 6/30/2022, 12:10:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-ModHub-flairs-PostFlairManagement~reddit-components-ModHub-flairs-UserFlairManagement"], {
 		"./src/reddit/actions/flairManagement/index.ts": function(e, t, a) {
@@ -270,7 +270,7 @@
 					return {
 						closeAllModals: () => e(Object(o.f)()),
 						onCopyTemplateId: t => e(Object(n.a)(t)),
-						onGetSubredditEmojisIfNeeded: () => e(Object(s.m)(a)),
+						onGetSubredditEmojisIfNeeded: () => e(Object(s.l)(a)),
 						onSaveSettings: t => e(Object(n.d)(a, t)),
 						toggleModal: t => e(Object(o.i)(t))
 					}
@@ -2009,4 +2009,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ModHub-flairs-PostFlairManagement~reddit-components-ModHub-flairs-UserFlairManagement.9fbdae9dbd00668670e7.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ModHub-flairs-PostFlairManagement~reddit-components-ModHub-flairs-UserFlairManagement.213dae6c99f95d812e2e.js.map

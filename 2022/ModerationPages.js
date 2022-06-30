@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModerationPages.bb3687e7539d3ec1fd8c.js
-// Retrieved at 6/30/2022, 10:00:07 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModerationPages.8632c68fa02d6eed7a0d.js
+// Retrieved at 6/30/2022, 12:10:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModerationPages"], {
 		"./src/higherOrderComponents/withImageUploads.tsx": function(e, t, s) {
@@ -1313,7 +1313,7 @@
 						K = void 0;
 						break;
 					case o.gc.Emojis:
-						K = h.l;
+						K = h.k;
 						break;
 					case o.gc.Badges:
 					case o.gc.Emotes:
@@ -11308,14 +11308,6 @@
 				modalBody: "_1_UK8ZmVC7e_nkeSs5CGnA",
 				modalCloseButton: "_2-arZqA5i-aG-76OM9aj7k",
 				modalEnableSection: "_2Wd3qBH4SU1NauwzVOQbVT",
-				modalEmojiSizeSection: "_3PsrWxvZyoYyzlCO8-teTE",
-				disabledSection: "nviCef6_SvGHUNBJ0PXCH",
-				customSizesForm: "YV6F0NfRo0VVVRzgk8aWf",
-				emojiSizeBlock: "_1W4FjSOnfJWdtKYBcNtUYO",
-				emojiDimensions: "_1_bSuIYPhn5kOylTKydVsO",
-				emojiDimensionInput: "e4AoJYmrnNFhWAXR_KBWX",
-				sizeLimitText: "_3bUpAXL4dOTbZTUE9bJ_5s",
-				sizeLimitTextWarning: "_2JlgfupPT3v8ScLuT7NYXC",
 				modalFooter: "_2R2UP3vtcyZqyNdUy9Y0nX",
 				modalSubmitButton: "w7T2GA8_RqtkSpD4h6YKH",
 				modalCancelButton: "_2wvHObzKgyjObCvFZ0QOp0",
@@ -11426,221 +11418,155 @@
 				})), !e.isSnoomoji && l.a.createElement("button", {
 					onClick: () => e.onRemove(e.emoji.name)
 				}, l.a.createElement(z, null)))),
-				q = s("./node_modules/lodash/clamp.js"),
-				G = s.n(q),
-				K = s("./src/higherOrderComponents/asModal/index.tsx"),
-				Q = s("./src/lib/classNames/index.ts"),
-				X = s("./src/reddit/components/ModalStyledComponents/index.tsx"),
-				J = s("./src/reddit/components/StructuredStyles/StyledComponents/inputs.ts"),
-				Y = s("./src/reddit/controls/TextButton/index.tsx"),
-				Z = s("./src/reddit/layout/twoCol/ExpandLeft/index.tsx"),
-				$ = s("./src/reddit/selectors/subreddit.ts"),
-				ee = s("./src/reddit/controls/ToggleSwitch/index.tsx");
-			const te = m.a.span("labelDescription", M.a),
-				se = m.a.span("labelTitle", M.a),
-				ne = m.a.div("leftForm", M.a),
-				ae = m.a.div("rightForm", M.a),
-				oe = m.a.wrapped(ee.a, "toggleSwitch", M.a);
-			var re = e => l.a.createElement("div", {
+				q = s("./src/higherOrderComponents/asModal/index.tsx"),
+				G = s("./src/reddit/components/ModalStyledComponents/index.tsx"),
+				K = s("./src/reddit/controls/TextButton/index.tsx"),
+				Q = s("./src/reddit/layout/twoCol/ExpandLeft/index.tsx"),
+				X = s("./src/reddit/selectors/subreddit.ts"),
+				J = s("./src/reddit/controls/ToggleSwitch/index.tsx");
+			const Y = m.a.span("labelDescription", M.a),
+				Z = m.a.span("labelTitle", M.a),
+				$ = m.a.div("leftForm", M.a),
+				ee = m.a.div("rightForm", M.a),
+				te = m.a.wrapped(J.a, "toggleSwitch", M.a);
+			var se = e => l.a.createElement("div", {
 				className: e.className
-			}, l.a.createElement(ne, null, l.a.createElement(se, null, a.fbt._("{title}", [a.fbt._param("title", e.title)], {
+			}, l.a.createElement($, null, l.a.createElement(Z, null, a.fbt._("{title}", [a.fbt._param("title", e.title)], {
 				hk: "4bYhaP"
-			})), l.a.createElement(te, null, a.fbt._("{description}", [a.fbt._param("description", e.description)], {
+			})), l.a.createElement(Y, null, a.fbt._("{description}", [a.fbt._param("description", e.description)], {
 				hk: "1lFxbr"
-			}))), l.a.createElement(ae, null, l.a.createElement(oe, {
+			}))), l.a.createElement(ee, null, l.a.createElement(te, {
 				on: e.on,
 				onToggle: e.onToggle
 			})));
-			const ie = 40,
-				le = 16,
-				de = {
-					width: 32,
-					height: 32
-				},
-				ce = e => {
-					const t = parseInt(e, 10) || 0;
-					return G()(t, 1, ie)
-				},
-				me = m.a.wrapped(J.c, "emojiDimensionInput", M.a),
-				ue = m.a.span("emojiDimensions", M.a),
-				pe = m.a.span("emojiSizeBlock", M.a),
-				be = m.a.wrapped(re, "modalEnableSection", M.a),
-				he = m.a.wrapped(X.e, "modalBody", M.a),
-				ge = m.a.wrapped(X.a, "modalCancelButton", M.a),
-				fe = m.a.wrapped(Y.a, "modalCloseButton", M.a),
-				xe = m.a.wrapped(X.g, "modalFooter", M.a),
-				Ee = m.a.wrapped(_.l, "modalSubmitButton", M.a),
-				ve = Object(c.c)({
-					emojisCustomSize: (e, t) => Object($.w)(e, {
-						subredditName: t.subreddit.name
-					}).emojisCustomSize,
-					isEmojisEnabled: (e, t) => Object($.w)(e, {
+			const ne = m.a.wrapped(se, "modalEnableSection", M.a),
+				ae = m.a.wrapped(G.e, "modalBody", M.a),
+				oe = m.a.wrapped(G.a, "modalCancelButton", M.a),
+				re = m.a.wrapped(K.a, "modalCloseButton", M.a),
+				ie = m.a.wrapped(G.g, "modalFooter", M.a),
+				le = m.a.wrapped(_.l, "modalSubmitButton", M.a),
+				de = Object(c.c)({
+					isEmojisEnabled: (e, t) => Object(X.w)(e, {
 						subredditName: t.subreddit.name
 					}).emojisEnabled
 				}),
-				ke = Object(d.b)(ve, (e, t) => {
+				ce = Object(d.b)(de, (e, t) => {
 					let {
 						subreddit: s
 					} = t;
 					return {
-						setCustomSize: t => e(Object(u.n)(s.id, t)),
-						toggleEnableEmojis: t => e(Object(u.k)(s.id, t))
+						toggleEnableEmojis: t => e(Object(u.j)(s.id, t))
 					}
 				});
-			class _e extends l.a.Component {
+			class me extends l.a.Component {
 				constructor(e) {
-					super(e), this.handleEmojiSizesToggle = () => this.setState({
-						customSizeEnabled: !this.state.customSizeEnabled
-					}), this.handleEnableEmojisToggle = () => this.setState({
+					super(e), this.handleEnableEmojisToggle = () => this.setState({
 						emojisEnabled: !this.state.emojisEnabled
-					}), this.handleWidthChange = e => {
-						const t = ce(e.target.value);
-						this.setState({
-							width: t
-						})
-					}, this.handleHeightChange = e => {
-						const t = ce(e.target.value);
-						this.setState({
-							height: t
-						})
-					}, this.enableHasBeenToggled = () => this.props.isEmojisEnabled !== this.state.emojisEnabled, this.sizeHasBeenToggled = () => !!this.props.emojisCustomSize !== this.state.customSizeEnabled, this.sizeHasBeenEdited = () => !(!this.props.emojisCustomSize || !this.state.customSizeEnabled) && (this.props.emojisCustomSize[0] !== this.state.width || this.props.emojisCustomSize[1] !== this.state.height), this.canSave = () => this.enableHasBeenToggled() || this.sizeHasBeenToggled() || this.sizeHasBeenEdited(), this.onSave = () => {
+					}), this.enableHasBeenToggled = () => this.props.isEmojisEnabled !== this.state.emojisEnabled, this.canSave = () => this.enableHasBeenToggled(), this.onSave = () => {
 						const {
 							props: e,
 							state: t
 						} = this;
-						if (this.enableHasBeenToggled() && (e.toggleEnableEmojis(t.emojisEnabled), e.sendEvent(O("enable", t.emojisEnabled))), this.sizeHasBeenToggled() || this.sizeHasBeenEdited()) {
-							const s = t.customSizeEnabled ? {
-								width: Math.max(t.width, le),
-								height: Math.max(t.height, le)
-							} : void 0;
-							e.setCustomSize(s), e.sendEvent(O("custom_sizing", t.customSizeEnabled))
-						}
-						e.toggleModal(), e.sendEvent(j("save_emoji_settings"))
+						this.enableHasBeenToggled() && (e.toggleEnableEmojis(t.emojisEnabled), e.sendEvent(O("enable", t.emojisEnabled))), e.toggleModal(), e.sendEvent(j("save_emoji_settings"))
 					}, this.state = {
-						customSizeEnabled: !!e.emojisCustomSize,
-						emojisEnabled: e.isEmojisEnabled,
-						height: e.emojisCustomSize ? e.emojisCustomSize[1] : de.height,
-						width: e.emojisCustomSize ? e.emojisCustomSize[0] : de.width
+						emojisEnabled: e.isEmojisEnabled
 					}
 				}
 				render() {
 					const {
 						props: e,
 						state: t
-					} = this, s = t.customSizeEnabled && (t.width < le || t.height < le), n = s ? a.fbt._("Invalid number, must be between {minSize} to {maxSize}px", [a.fbt._param("minSize", le.toString()), a.fbt._param("maxSize", ie.toString())], {
-						hk: "3bkWk5"
-					}) : a.fbt._("Must be between {minSize} to {maxSize}px", [a.fbt._param("minSize", le.toString()), a.fbt._param("maxSize", ie.toString())], {
-						hk: "1Gp9cj"
-					});
-					return l.a.createElement(he, null, l.a.createElement(X.i, null, l.a.createElement(Z.a, null, l.a.createElement(X.q, null, a.fbt._("Emoji settings", null, {
+					} = this;
+					return l.a.createElement(ae, null, l.a.createElement(G.i, null, l.a.createElement(Q.a, null, l.a.createElement(G.q, null, a.fbt._("Emoji settings", null, {
 						hk: "1GjUM3"
-					})), l.a.createElement(fe, {
+					})), l.a.createElement(re, {
 						onClick: e.toggleModal
-					}, l.a.createElement(X.b, null)))), l.a.createElement(X.l, null, l.a.createElement(be, {
-						description: "Allow emojis to be used in post and user flair within your community",
+					}, l.a.createElement(G.b, null)))), l.a.createElement(G.l, null, l.a.createElement(ne, {
+						description: a.fbt._("Allow emojis to be used in post and user flair within your community", null, {
+							hk: "3ppqgX"
+						}),
 						on: t.emojisEnabled,
 						onToggle: this.handleEnableEmojisToggle,
-						title: "Enable emojis in this community"
-					}), l.a.createElement(re, {
-						className: t.emojisEnabled ? M.a.modalEmojiSizeSection : Object(Q.a)(M.a.modalEmojiSizeSection, M.a.disabledSection),
-						description: "Enables emojis to be displayed at custom sizes for user flair in comments. Emojis will be displayed 16 x 16px everywhere else.",
-						on: t.customSizeEnabled,
-						onToggle: this.handleEmojiSizesToggle,
-						title: "Custom sized emojis"
-					}), l.a.createElement("span", {
-						className: t.emojisEnabled && t.customSizeEnabled ? M.a.customSizesForm : Object(Q.a)(M.a.customSizesForm, M.a.disabledSection)
-					}, l.a.createElement(pe, null, l.a.createElement(ue, null, a.fbt._("Width", null, {
-						hk: "3jjMQm"
-					})), l.a.createElement(me, {
-						disabled: !t.customSizeEnabled || !t.emojisEnabled,
-						name: "width",
-						onChange: this.handleWidthChange,
-						value: t.width
-					})), l.a.createElement(pe, null, l.a.createElement(ue, null, a.fbt._("Height", null, {
-						hk: "3nMJXk"
-					})), l.a.createElement(me, {
-						disabled: !t.customSizeEnabled || !t.emojisEnabled,
-						name: "height",
-						onChange: this.handleHeightChange,
-						value: t.height
-					})), l.a.createElement("div", {
-						className: s ? M.a.sizeLimitTextWarning : M.a.sizeLimitText
-					}, n))), l.a.createElement(xe, null, l.a.createElement(ge, {
+						title: a.fbt._("Enable emojis in this community", null, {
+							hk: "3uLrQi"
+						})
+					})), l.a.createElement(ie, null, l.a.createElement(oe, {
 						onClick: e.toggleModal
 					}, a.fbt._("Cancel", null, {
 						hk: "2TSLl5"
-					})), l.a.createElement(Ee, {
-						disabled: !this.canSave() || s,
+					})), l.a.createElement(le, {
+						disabled: !this.canSave(),
 						onClick: this.onSave
 					}, a.fbt._("Save", null, {
 						hk: "4yMsMq"
 					}))))
 				}
 			}
-			var Ce = Object(K.a)(ke(_e)),
-				ye = (s("./node_modules/core-js/modules/web.dom.iterable.js"), s("./src/reddit/actions/toaster.ts")),
-				Oe = s("./src/reddit/components/StructuredStyles/ImageUpload/index.tsx"),
-				je = s("./src/reddit/components/StructuredStyles/StyledComponents/forms.ts"),
-				Se = s("./src/reddit/controls/CheckboxInput/index.tsx"),
-				we = s("./src/reddit/icons/svgs/Moderate/index.tsx"),
-				Ne = s("./src/reddit/layout/twoCol/ExpandRight/index.tsx"),
-				Ie = s("./src/reddit/models/Image/index.tsx"),
-				Te = s("./src/reddit/models/Toast/index.ts"),
-				Me = s("./src/reddit/components/ModHub/Emojis/EmojiUploadModal/index.m.less"),
-				Pe = s.n(Me),
-				Re = s("./src/higherOrderComponents/withImageUploads.tsx"),
-				Ae = s("./src/reddit/icons/svgs/ClearFilled/index.tsx"),
-				Fe = s("./src/reddit/models/Emoji/index.ts"),
-				Le = s("./src/reddit/components/ModHub/Emojis/EmojiUploader/index.m.less"),
-				De = s.n(Le),
-				Ue = s("./src/reddit/components/CharacterCountdown/index.tsx"),
-				Be = s("./src/reddit/components/ProgressBar/index.tsx"),
-				He = s("./src/reddit/controls/ErrorText/index.tsx");
-			const We = 5,
-				ze = 95,
-				Ve = 600,
-				qe = 100;
-			class Ge extends l.a.Component {
+			var ue = Object(q.a)(ce(me)),
+				pe = (s("./node_modules/core-js/modules/web.dom.iterable.js"), s("./src/reddit/actions/toaster.ts")),
+				be = s("./src/reddit/components/StructuredStyles/ImageUpload/index.tsx"),
+				he = s("./src/reddit/components/StructuredStyles/StyledComponents/forms.ts"),
+				ge = s("./src/reddit/controls/CheckboxInput/index.tsx"),
+				fe = s("./src/reddit/icons/svgs/Moderate/index.tsx"),
+				xe = s("./src/reddit/layout/twoCol/ExpandRight/index.tsx"),
+				Ee = s("./src/reddit/models/Image/index.tsx"),
+				ve = s("./src/reddit/models/Toast/index.ts"),
+				ke = s("./src/reddit/components/ModHub/Emojis/EmojiUploadModal/index.m.less"),
+				_e = s.n(ke),
+				Ce = s("./src/higherOrderComponents/withImageUploads.tsx"),
+				ye = s("./src/reddit/icons/svgs/ClearFilled/index.tsx"),
+				Oe = s("./src/reddit/models/Emoji/index.ts"),
+				je = s("./src/reddit/components/ModHub/Emojis/EmojiUploader/index.m.less"),
+				Se = s.n(je),
+				we = s("./src/reddit/components/CharacterCountdown/index.tsx"),
+				Ne = s("./src/reddit/components/ProgressBar/index.tsx"),
+				Ie = s("./src/reddit/components/StructuredStyles/StyledComponents/inputs.ts"),
+				Te = s("./src/reddit/controls/ErrorText/index.tsx");
+			const Me = 5,
+				Pe = 95,
+				Re = 600,
+				Ae = 100;
+			class Fe extends l.a.Component {
 				constructor() {
 					super(...arguments), this.intervalToken = 0, this.state = {
 						timeStarted: Date.now(),
-						percent: We
+						percent: Me
 					}, this.tick = () => {
 						const e = function(e) {
-							const t = e / Ve,
+							const t = e / Re,
 								s = (Math.log(t / 10) + 3) / 2.1;
-							return Math.max(ze, Math.min(We, 100 * s))
+							return Math.max(Pe, Math.min(Me, 100 * s))
 						}(Date.now() - this.state.timeStarted);
 						this.setState({
 							percent: e
-						}), e === ze && this.intervalToken && window.clearInterval(this.intervalToken)
+						}), e === Pe && this.intervalToken && window.clearInterval(this.intervalToken)
 					}
 				}
 				componentDidMount() {
-					this.intervalToken = window.setInterval(this.tick, qe)
+					this.intervalToken = window.setInterval(this.tick, Ae)
 				}
 				componentWillUnmount() {
 					this.intervalToken && window.clearInterval(this.intervalToken)
 				}
 				render() {
-					return l.a.createElement(Be.a, {
-						className: De.a.progressBar,
-						innerBarClassName: De.a.innerBarClassName,
+					return l.a.createElement(Ne.a, {
+						className: Se.a.progressBar,
+						innerBarClassName: Se.a.innerBarClassName,
 						percent: this.state.percent
 					})
 				}
 			}
-			var Ke = Ge;
-			const Qe = m.a.wrapped(Ue.a, "characterCountdown", De.a),
-				Xe = m.a.wrapped(Ae.a, "clearIcon", De.a),
-				Je = m.a.wrapped(He.b, "errorText", De.a),
-				Ye = m.a.wrapped(Z.a, "expandLeft", De.a),
-				Ze = m.a.div("iconSpacer", De.a),
-				$e = m.a.wrapped(P.a, "imageDisplay", De.a),
-				et = m.a.div("inputPlaceholder", De.a),
-				tt = m.a.wrapped(Z.a, "inputPlaceholder", De.a),
-				st = m.a.wrapped(Y.a, "textButton", De.a);
-			class nt extends l.a.Component {
+			var Le = Fe;
+			const De = m.a.wrapped(we.a, "characterCountdown", Se.a),
+				Ue = m.a.wrapped(ye.a, "clearIcon", Se.a),
+				Be = m.a.wrapped(Te.b, "errorText", Se.a),
+				He = m.a.wrapped(Q.a, "expandLeft", Se.a),
+				We = m.a.div("iconSpacer", Se.a),
+				ze = m.a.wrapped(P.a, "imageDisplay", Se.a),
+				Ve = m.a.div("inputPlaceholder", Se.a),
+				qe = m.a.wrapped(Q.a, "inputPlaceholder", Se.a),
+				Ge = m.a.wrapped(K.a, "textButton", Se.a);
+			class Ke extends l.a.Component {
 				constructor() {
 					super(...arguments), this.handleChangeEmojiName = e => {
 						this.props.onChangeEmojiName && this.props.onChangeEmojiName(this.props.index, e.target.value)
@@ -11656,52 +11582,52 @@
 							isDuplicate: r
 						} = this.props;
 						switch (o.kind) {
-							case Ie.b.NotUploaded:
-							case Ie.b.Pending:
-								return l.a.createElement("div", null, l.a.createElement(tt, null, o.kind === Ie.b.NotUploaded ? l.a.createElement(Ke, null) : l.a.createElement(Be.a, {
-									className: De.a.progressBar,
-									innerBarClassName: De.a.innerBarClassName,
+							case Ee.b.NotUploaded:
+							case Ee.b.Pending:
+								return l.a.createElement("div", null, l.a.createElement(qe, null, o.kind === Ee.b.NotUploaded ? l.a.createElement(Le, null) : l.a.createElement(Ne.a, {
+									className: Se.a.progressBar,
+									innerBarClassName: Se.a.innerBarClassName,
 									percent: 0
-								}), l.a.createElement(st, {
+								}), l.a.createElement(Ge, {
 									onClick: this.handleRemove
 								}, a.fbt._("Cancel", null, {
 									hk: "2TSLl5"
-								}))), l.a.createElement(je.b, null, a.fbt._("Uploading {fileName}", [a.fbt._param("fileName", s)], {
+								}))), l.a.createElement(he.b, null, a.fbt._("Uploading {fileName}", [a.fbt._param("fileName", s)], {
 									hk: "NIxvK"
 								})));
-							case Ie.b.FailedToUpload:
-							case Ie.b.Invalid:
-								return l.a.createElement("div", null, l.a.createElement(tt, null, a.fbt._("Failed to upload", null, {
+							case Ee.b.FailedToUpload:
+							case Ee.b.Invalid:
+								return l.a.createElement("div", null, l.a.createElement(qe, null, a.fbt._("Failed to upload", null, {
 									hk: "2LBRW2"
-								}), n ? l.a.createElement(st, {
+								}), n ? l.a.createElement(Ge, {
 									onClick: n
 								}, a.fbt._("Retry", null, {
 									hk: "3EwbaK"
-								})) : l.a.createElement(st, {
+								})) : l.a.createElement(Ge, {
 									onClick: this.handleRemove
 								}, a.fbt._("Remove", null, {
 									hk: "3tYl0U"
-								}))), t && l.a.createElement(Je, null, t));
-							case Ie.b.Uploaded:
-								return l.a.createElement(et, null, a.fbt._("Saved", null, {
+								}))), t && l.a.createElement(Be, null, t));
+							case Ee.b.Uploaded:
+								return l.a.createElement(Ve, null, a.fbt._("Saved", null, {
 									hk: "2xDFZZ"
 								}));
 							default:
-								return l.a.createElement("div", null, l.a.createElement(J.c, {
-									className: r ? De.a.duplicateInput : De.a.input,
+								return l.a.createElement("div", null, l.a.createElement(Ie.c, {
+									className: r ? Se.a.duplicateInput : Se.a.input,
 									onChange: this.handleChangeEmojiName,
 									placeholder: a.fbt._("Emoji name", null, {
 										hk: "UpQdA"
 									}),
 									value: e
-								}), l.a.createElement(Ye, null, l.a.createElement(Qe, {
-									maxChars: Fe.d,
+								}), l.a.createElement(He, null, l.a.createElement(De, {
+									maxChars: Oe.d,
 									text: e
-								}), l.a.createElement(st, {
+								}), l.a.createElement(Ge, {
 									onClick: this.handleRemove
 								}, a.fbt._("Remove", null, {
 									hk: "3tYl0U"
-								}))), t && l.a.createElement(Je, null, t))
+								}))), t && l.a.createElement(Be, null, t))
 						}
 					}
 				}
@@ -11711,53 +11637,53 @@
 						imageData: t,
 						isSaving: s
 					} = this.props;
-					return s ? l.a.createElement(l.a.Fragment, null, l.a.createElement(et, null, l.a.createElement(Ke, null)), l.a.createElement(je.b, null, a.fbt._("Saving {emojiName}", [a.fbt._param("emojiName", e)], {
+					return s ? l.a.createElement(l.a.Fragment, null, l.a.createElement(Ve, null, l.a.createElement(Le, null)), l.a.createElement(he.b, null, a.fbt._("Saving {emojiName}", [a.fbt._param("emojiName", e)], {
 						hk: "3lMST7"
-					}))) : l.a.createElement(Ne.a, null, t.kind === Ie.b.FailedToUpload || t.kind === Ie.b.Invalid ? l.a.createElement(Ze, null, l.a.createElement(Xe, null)) : l.a.createElement($e, {
+					}))) : l.a.createElement(xe.a, null, t.kind === Ee.b.FailedToUpload || t.kind === Ee.b.Invalid ? l.a.createElement(We, null, l.a.createElement(Ue, null)) : l.a.createElement(ze, {
 						backgroundImage: t.url
 					}), this.renderContent())
 				}
 			}
-			var at = nt,
-				ot = s("./node_modules/lodash/countBy.js"),
-				rt = s.n(ot),
-				it = s("./node_modules/lodash/filter.js"),
-				lt = s.n(it),
-				dt = s("./node_modules/lodash/includes.js"),
-				ct = s.n(dt),
-				mt = s("./node_modules/lodash/transform.js"),
-				ut = s.n(mt);
-			const pt = /^[A-Za-z0-9_-]{1,24}$/,
-				bt = ["reddit", "snoo", "spez"],
-				ht = (e, t, s) => !pt.test(e) || !s && (e => {
+			var Qe = Ke,
+				Xe = s("./node_modules/lodash/countBy.js"),
+				Je = s.n(Xe),
+				Ye = s("./node_modules/lodash/filter.js"),
+				Ze = s.n(Ye),
+				$e = s("./node_modules/lodash/includes.js"),
+				et = s.n($e),
+				tt = s("./node_modules/lodash/transform.js"),
+				st = s.n(tt);
+			const nt = /^[A-Za-z0-9_-]{1,24}$/,
+				at = ["reddit", "snoo", "spez"],
+				ot = (e, t, s) => !nt.test(e) || !s && (e => {
 					const t = e.toLowerCase();
-					return bt.reduce((e, s) => e || -1 !== t.indexOf(s), !1)
+					return at.reduce((e, s) => e || -1 !== t.indexOf(s), !1)
 				})(e) ? a.fbt._("Invalid emoji name", null, {
 					hk: "2Oromm"
-				}) : ct()(t, e) ? a.fbt._("This name is already taken", null, {
+				}) : et()(t, e) ? a.fbt._("This name is already taken", null, {
 					hk: "4dwdJL"
 				}) : "",
-				gt = e => e.name ? e.name.replace(/\.[^.]*$/, "").replace(/[^A-Za-z0-9_-]/g, " ").trim().replace(/ +/g, "_").slice(0, 24) : "",
-				ft = (e, t) => (t.kind !== Ie.b.TempUploaded || !e.emojiNameError && !e.isNameMissing) && (t.kind !== Ie.b.NotUploaded && t.kind !== Ie.b.Pending),
-				xt = e => {
+				rt = e => e.name ? e.name.replace(/\.[^.]*$/, "").replace(/[^A-Za-z0-9_-]/g, " ").trim().replace(/ +/g, "_").slice(0, 24) : "",
+				it = (e, t) => (t.kind !== Ee.b.TempUploaded || !e.emojiNameError && !e.isNameMissing) && (t.kind !== Ee.b.NotUploaded && t.kind !== Ee.b.Pending),
+				lt = e => {
 					let t = "";
-					return e.file.size > Fe.a ? t = "file-size-error" : (e.height > Fe.b || e.width > Fe.c) && (t = "image-size-error"), {
+					return e.file.size > Oe.a ? t = "file-size-error" : (e.height > Oe.b || e.width > Oe.c) && (t = "image-size-error"), {
 						emojiNameError: "",
 						imageError: t,
-						name: gt(e.file),
+						name: rt(e.file),
 						fileName: e.file.name,
 						isNameMissing: !1
 					}
 				},
-				Et = (e, t) => t.reduce((t, s) => s.kind === e ? t + 1 : t, 0),
-				vt = (e, t) => {
+				dt = (e, t) => t.reduce((t, s) => s.kind === e ? t + 1 : t, 0),
+				ct = (e, t) => {
 					const {
 						emojiNameError: s,
 						imageError: n,
 						isNameMissing: o
 					} = t;
 					let r = "";
-					e.kind === Ie.b.FailedToUpload && (r = e.error.fields && e.error.fields.length ? e.error.fields[0].msg : a.fbt._("Something went wrong", null, {
+					e.kind === Ee.b.FailedToUpload && (r = e.error.fields && e.error.fields.length ? e.error.fields[0].msg : a.fbt._("Something went wrong", null, {
 						hk: "2fCWXR"
 					}));
 					const i = r || !1,
@@ -11771,43 +11697,43 @@
 						hk: "1xjOmq"
 					})), d || i || l || ""
 				},
-				kt = e => {
-					const t = lt()(e, e => !e.emojiNameError && !e.imageError),
-						s = rt()(t, e => e.name);
-					return ut()(s, (e, t, s) => {
+				mt = e => {
+					const t = Ze()(e, e => !e.emojiNameError && !e.imageError),
+						s = Je()(t, e => e.name);
+					return st()(s, (e, t, s) => {
 						t > 1 && e.push(s)
 					}, [])
 				},
-				_t = 500,
-				Ct = m.a.div("UploaderContainer", De.a),
-				yt = m.a.wrapped(w.a, "alertIcon", De.a),
-				Ot = m.a.wrapped(Ae.a, "duplicatesIcon", De.a),
-				jt = m.a.wrapped(X.p, "duplicateWarning", De.a),
-				St = m.a.wrapped(_.l, "modalAddButton", De.a),
-				wt = m.a.wrapped(X.a, "modalCancelButton", De.a),
-				Nt = m.a.div("uploaderContainer", De.a),
-				It = m.a.wrapped(X.p, "modProTip", De.a),
-				Tt = m.a.div("progressText", De.a),
-				Mt = m.a.wrapped(X.p, "replacingDescription", De.a),
-				Pt = m.a.div("replacingTitle", De.a),
-				Rt = m.a.div("uploadingTitle", De.a),
-				At = Object(c.c)({
+				ut = 500,
+				pt = m.a.div("UploaderContainer", Se.a),
+				bt = m.a.wrapped(w.a, "alertIcon", Se.a),
+				ht = m.a.wrapped(ye.a, "duplicatesIcon", Se.a),
+				gt = m.a.wrapped(G.p, "duplicateWarning", Se.a),
+				ft = m.a.wrapped(_.l, "modalAddButton", Se.a),
+				xt = m.a.wrapped(G.a, "modalCancelButton", Se.a),
+				Et = m.a.div("uploaderContainer", Se.a),
+				vt = m.a.wrapped(G.p, "modProTip", Se.a),
+				kt = m.a.div("progressText", Se.a),
+				_t = m.a.wrapped(G.p, "replacingDescription", Se.a),
+				Ct = m.a.div("replacingTitle", Se.a),
+				yt = m.a.div("uploadingTitle", Se.a),
+				Ot = Object(c.c)({
 					emojis: I.d,
-					isSnoomojiSubreddit: $.l,
+					isSnoomojiSubreddit: X.l,
 					reservedEmojiNames: I.e
 				}),
-				Ft = Object(d.b)(At, (e, t) => {
+				jt = Object(d.b)(Ot, (e, t) => {
 					let {
 						subredditId: s
 					} = t;
 					return {
-						emojisUploadedToast: () => e(ye.f({
-							kind: Te.b.SuccessCommunityGreen,
+						emojisUploadedToast: () => e(pe.f({
+							kind: ve.b.SuccessCommunityGreen,
 							text: a.fbt._("New emojis added!", null, {
 								hk: "1Q1mEq"
 							})
 						})),
-						saveEmoji: (t, n, a) => e(Object(u.p)({
+						saveEmoji: (t, n, a) => e(Object(u.n)({
 							imageData: t,
 							subredditId: s,
 							emojiName: n,
@@ -11815,20 +11741,20 @@
 						}))
 					}
 				});
-			class Lt extends l.a.Component {
+			class St extends l.a.Component {
 				constructor(e) {
 					super(e), this.timeoutToken = 0, this.loadIndex = 0, this.tempUploadNext = async () => {
 						const e = this.getNextPendingImageToLoad();
 						if (!e) return this.timeoutToken = 0, void(this.loadIndex = 0);
 						const {
 							subredditId: t
-						} = this.props, s = this.state.emojiData[e.id], n = Object(Ie.m)(e);
+						} = this.props, s = this.state.emojiData[e.id], n = Object(Ee.m)(e);
 						await this.props.uploadImage({
 							imageData: n,
 							subredditId: t,
 							emojiName: s.name,
 							settings: this.props.emojiSettings
-						}), this.loadIndex += 1, this.loadIndex < this.state.localData.length ? this.timeoutToken = window.setTimeout(this.tempUploadNext, _t) : (this.loadIndex = 0, this.timeoutToken = 0)
+						}), this.loadIndex += 1, this.loadIndex < this.state.localData.length ? this.timeoutToken = window.setTimeout(this.tempUploadNext, ut) : (this.loadIndex = 0, this.timeoutToken = 0)
 					}, this.emojiIsADuplicate = (e, t) => e && t && t.some(t => t.id === e.id), this.saveNext = e => {
 						const t = this.getNextTempUploadedImageToSave();
 						if (!t) return this.timeoutToken = 0, void(this.loadIndex = 0);
@@ -11839,20 +11765,20 @@
 								emojisUploaded: this.state.emojisUploaded || s
 							})
 						}
-						this.loadIndex += 1, this.loadIndex < this.state.localData.length ? this.timeoutToken = window.setTimeout(() => this.saveNext(e), _t) : (this.loadIndex = 0, this.timeoutToken = 0)
+						this.loadIndex += 1, this.loadIndex < this.state.localData.length ? this.timeoutToken = window.setTimeout(() => this.saveNext(e), ut) : (this.loadIndex = 0, this.timeoutToken = 0)
 					}, this.onChangeEmojiName = (e, t) => {
 						const {
 							isSnoomojiSubreddit: s,
 							reservedEmojiNames: n
 						} = this.props;
-						if (t.length > Fe.d) return;
+						if (t.length > Oe.d) return;
 						const a = this.state.isReplacing ? this.state.replacingEmoji && this.state.replacingEmoji[e] : this.state.localData[e];
 						if (!a) return;
 						const o = this.state.emojiData,
 							r = o[a.id],
-							i = t ? ht(t, n, s) : "";
+							i = t ? ot(t, n, s) : "";
 						o[a.id].emojiNameError = i, o[a.id].name = t;
-						const l = kt(o);
+						const l = mt(o);
 						this.setState({
 							duplicateNames: l,
 							emojiData: {
@@ -11868,8 +11794,8 @@
 					}, this.canSave = () => {
 						let e = !1;
 						for (const t of this.state.localData) {
-							if (!ft(this.state.emojiData[t.id], t)) return !1;
-							t.kind === Ie.b.TempUploaded && (e = !0)
+							if (!it(this.state.emojiData[t.id], t)) return !1;
+							t.kind === Ee.b.TempUploaded && (e = !0)
 						}
 						return e
 					}, this.getValidatedState = () => {
@@ -11879,7 +11805,7 @@
 						} = this.props, s = {};
 						for (const n of this.state.localData) {
 							let a = this.state.emojiData[n.id];
-							const o = ht(a.name, t, e);
+							const o = ot(a.name, t, e);
 							a.name && !o || (a = {
 								...a,
 								emojiNameError: o,
@@ -11896,7 +11822,7 @@
 								const e = this.props.emojis[this.props.subredditId].emojis,
 									t = [];
 								for (const n of this.state.localData) {
-									if (n.kind !== Ie.b.TempUploaded) continue;
+									if (n.kind !== Ee.b.TempUploaded) continue;
 									this.state.emojiData[n.id].name in e && t.push(n)
 								}
 								t.length ? (this.setState({
@@ -11905,7 +11831,7 @@
 								}), this.saveNext(t)) : (this.setState({
 									isSavingImage: !0
 								}), this.props.setIsSaving(!0), this.saveNext());
-								const s = Et(Ie.b.TempUploaded, this.state.localData) - t.length;
+								const s = dt(Ee.b.TempUploaded, this.state.localData) - t.length;
 								s > 0 && (this.props.sendEvent(S("add", s)), this.sendSettingsEvent())
 							}
 						})
@@ -11947,7 +11873,7 @@
 							...this.state.emojiData
 						};
 						delete l[r.id], this.setState({
-							duplicateNames: kt(l),
+							duplicateNames: mt(l),
 							emojiData: l,
 							localData: i
 						}), t && n ? 0 === a.length && this.props.returnToAddState() : 0 === i.length && this.props.returnToAddState()
@@ -11957,11 +11883,11 @@
 					const t = {},
 						s = [];
 					for (const n of e.images) {
-						const e = xt(n);
-						t[n.id] = e, e.imageError ? s.push(Object(Ie.l)(n, e.imageError)) : s.push(n)
+						const e = lt(n);
+						t[n.id] = e, e.imageError ? s.push(Object(Ee.l)(n, e.imageError)) : s.push(n)
 					}
 					this.state = {
-						duplicateNames: kt(t),
+						duplicateNames: mt(t),
 						emojiData: t,
 						emojisUploaded: !1,
 						isReplacing: !1,
@@ -11977,7 +11903,7 @@
 					let e, t = null;
 					for (e = this.loadIndex; e < this.state.localData.length; e++) {
 						const s = this.state.localData[e];
-						if (s.kind === Ie.b.Pending) {
+						if (s.kind === Ee.b.Pending) {
 							t = s;
 							break
 						}
@@ -11988,7 +11914,7 @@
 					let e, t = null;
 					for (e = this.loadIndex; e < this.state.localData.length; e++) {
 						const s = this.state.localData[e];
-						if (s.kind === Ie.b.TempUploaded) {
+						if (s.kind === Ee.b.TempUploaded) {
 							t = s;
 							break
 						}
@@ -12002,7 +11928,7 @@
 					const {
 						isSavingImage: n
 					} = this.state, a = {};
-					for (const o of t) a[o.id] = this.state.emojiData[o.id], s = s || o.kind === Ie.b.TempUploaded;
+					for (const o of t) a[o.id] = this.state.emojiData[o.id], s = s || o.kind === Ee.b.TempUploaded;
 					!n || s ? (this.props.setIsSaving(n), this.setState({
 						emojiData: a,
 						isSavingImage: n,
@@ -12021,27 +11947,27 @@
 						props: e,
 						state: t
 					} = this, s = t.isReplacing ? t.replacingEmoji || [] : t.localData;
-					return l.a.createElement(Ct, null, l.a.createElement(Nt, null, t.duplicateNames.length > 0 ? l.a.createElement(jt, null, l.a.createElement(Ot, null), a.fbt._("Duplicate names", null, {
+					return l.a.createElement(pt, null, l.a.createElement(Et, null, t.duplicateNames.length > 0 ? l.a.createElement(gt, null, l.a.createElement(ht, null), a.fbt._("Duplicate names", null, {
 						hk: "4kkNr1"
-					})) : !t.isReplacing && l.a.createElement(It, null, l.a.createElement(yt, null), a.fbt._("Names cannot be edited once added", null, {
+					})) : !t.isReplacing && l.a.createElement(vt, null, l.a.createElement(bt, null), a.fbt._("Names cannot be edited once added", null, {
 						hk: "3f45r5"
-					})), l.a.createElement(X.l, null, t.isReplacing ? l.a.createElement(l.a.Fragment, null, l.a.createElement(Pt, null, a.fbt._("Replacing emojis", null, {
+					})), l.a.createElement(G.l, null, t.isReplacing ? l.a.createElement(l.a.Fragment, null, l.a.createElement(Ct, null, a.fbt._("Replacing emojis", null, {
 						hk: "4cKike"
-					})), l.a.createElement(Mt, null, a.fbt._("These emoji names already exist in your community. Replacing these emojis will not change pre-existing permissions. Do you want to replace them?", null, {
+					})), l.a.createElement(_t, null, a.fbt._("These emoji names already exist in your community. Replacing these emojis will not change pre-existing permissions. Do you want to replace them?", null, {
 						hk: "3iPBUU"
-					}))) : l.a.createElement(Rt, null, a.fbt._("Uploading emojis", null, {
+					}))) : l.a.createElement(yt, null, a.fbt._("Uploading emojis", null, {
 						hk: "7keSV"
 					})), l.a.createElement("div", {
-						className: t.isReplacing ? void 0 : De.a.emojiDisplays
+						className: t.isReplacing ? void 0 : Se.a.emojiDisplays
 					}, s.map((e, s) => {
 						const n = this.state.emojiData[e.id],
-							a = e.kind === Ie.b.FailedToUpload || e.kind === Ie.b.Invalid,
+							a = e.kind === Ee.b.FailedToUpload || e.kind === Ee.b.Invalid,
 							o = t.replacingEmoji && !t.replacingEmoji.find(t => t.id === e.id);
 						if (t.isSavingImage && (a || o)) return;
-						const r = vt(e, n);
-						return l.a.createElement(je.a, {
+						const r = ct(e, n);
+						return l.a.createElement(he.a, {
 							key: e.id
-						}, l.a.createElement(at, {
+						}, l.a.createElement(Qe, {
 							emojiName: n.name,
 							errorText: r,
 							fileName: n.fileName,
@@ -12052,18 +11978,18 @@
 							onCancel: this.removeEmoji,
 							onChangeEmojiName: this.onChangeEmojiName
 						}))
-					})), !t.isReplacing && l.a.createElement(Tt, null, t.isSavingImage ? a.fbt._("{savedCount} out of {savedTotal} saved", [a.fbt._param("savedCount", Et(Ie.b.Uploaded, t.localData).toString()), a.fbt._param("savedTotal", t.localData.length.toString())], {
+					})), !t.isReplacing && l.a.createElement(kt, null, t.isSavingImage ? a.fbt._("{savedCount} out of {savedTotal} saved", [a.fbt._param("savedCount", dt(Ee.b.Uploaded, t.localData).toString()), a.fbt._param("savedTotal", t.localData.length.toString())], {
 						hk: "3v1E9N"
-					}) : a.fbt._("{uploadedCount} out of {uploadedTotal} uploaded", [a.fbt._param("uploadedCount", Et(Ie.b.TempUploaded, t.localData).toString()), a.fbt._param("uploadedTotal", t.localData.length.toString())], {
+					}) : a.fbt._("{uploadedCount} out of {uploadedTotal} uploaded", [a.fbt._param("uploadedCount", dt(Ee.b.TempUploaded, t.localData).toString()), a.fbt._param("uploadedTotal", t.localData.length.toString())], {
 						hk: "41qbSa"
-					})))), l.a.createElement(X.g, null, l.a.createElement(wt, {
+					})))), l.a.createElement(G.g, null, l.a.createElement(xt, {
 						disabled: t.isSavingImage,
 						onClick: t.isReplacing ? this.handleCancelReplace : e.stopEditing
 					}, t.isReplacing ? a.fbt._("Don't replace", null, {
 						hk: "4d8hwM"
 					}) : a.fbt._("Cancel", null, {
 						hk: "2TSLl5"
-					})), l.a.createElement(St, {
+					})), l.a.createElement(ft, {
 						disabled: t.isSavingImage || !this.canSave() || t.duplicateNames.length > 0,
 						onClick: t.isReplacing ? this.handleSaveAndReplace : this.onApply
 					}, t.isReplacing ? a.fbt._("Replace", null, {
@@ -12073,29 +11999,29 @@
 					}))))
 				}
 			}
-			var Dt = Object(Re.a)(Ft(Lt), u.q),
-				Ut = s("./src/reddit/actions/imageUploads.ts"),
-				Bt = s("./src/reddit/selectors/imageUploads.ts");
-			const Ht = m.a.div("UploaderContainer", De.a),
-				Wt = m.a.wrapped(Ht, "editEmojiDisplay", De.a),
-				zt = Object(c.c)({
+			var wt = Object(Ce.a)(jt(St), u.o),
+				Nt = s("./src/reddit/actions/imageUploads.ts"),
+				It = s("./src/reddit/selectors/imageUploads.ts");
+			const Tt = m.a.div("UploaderContainer", Se.a),
+				Mt = m.a.wrapped(Tt, "editEmojiDisplay", Se.a),
+				Pt = Object(c.c)({
 					reduxImage: (e, t) => {
 						let {
 							pendingImage: s
 						} = t;
-						const n = Object(Bt.b)(e),
+						const n = Object(It.b)(e),
 							a = s && s.id;
 						return a && n[a] || void 0
 					}
 				});
-			class Vt extends l.a.Component {
+			class Rt extends l.a.Component {
 				constructor(e) {
 					super(e), this.onCancelAndRetry = () => {
 						this.props.reduxImage && this.props.cancelUpload(this.props.reduxImage), this.props.onRetryUpload()
 					}
 				}
 				componentDidMount() {
-					const e = Object(Ie.m)(this.props.pendingImage);
+					const e = Object(Ee.m)(this.props.pendingImage);
 					this.props.uploadImage({
 						imageData: e,
 						subredditId: this.props.subredditId,
@@ -12114,8 +12040,8 @@
 						pendingImage: e,
 						reduxImage: t,
 						emoji: s
-					} = this.props, n = xt(e), a = Object(Ie.l)(e, n.imageError), o = n.imageError ? a : t || e, r = vt(o, n);
-					return !r && o.kind === Ie.b.TempUploaded || o.kind === Ie.b.Uploaded ? null : l.a.createElement(Wt, null, l.a.createElement(at, {
+					} = this.props, n = lt(e), a = Object(Ee.l)(e, n.imageError), o = n.imageError ? a : t || e, r = ct(o, n);
+					return !r && o.kind === Ee.b.TempUploaded || o.kind === Ee.b.Uploaded ? null : l.a.createElement(Mt, null, l.a.createElement(Qe, {
 						emojiName: s.name,
 						errorText: r,
 						fileName: n.fileName,
@@ -12127,13 +12053,13 @@
 					}))
 				}
 			}
-			var qt = Object(d.b)(zt, e => ({
-				uploadImage: t => e(Object(u.q)(t)),
-				cancelUpload: t => e(Object(Ut.h)(t))
-			}))(Vt);
+			var At = Object(d.b)(Pt, e => ({
+				uploadImage: t => e(Object(u.o)(t)),
+				cancelUpload: t => e(Object(Nt.h)(t))
+			}))(Rt);
 
-			function Gt() {
-				return (Gt = Object.assign || function(e) {
+			function Ft() {
+				return (Ft = Object.assign || function(e) {
 					for (var t = 1; t < arguments.length; t++) {
 						var s = arguments[t];
 						for (var n in s) Object.prototype.hasOwnProperty.call(s, n) && (e[n] = s[n])
@@ -12141,67 +12067,67 @@
 					return e
 				}).apply(this, arguments)
 			}
-			const Kt = 32,
-				Qt = 128,
-				Xt = 64,
-				Jt = 100,
-				Yt = m.a.div("appearsIn", Pe.a),
-				Zt = m.a.wrapped(Se.a, "checkbox", Pe.a),
-				$t = m.a.span("checkboxText", Pe.a),
-				es = m.a.wrapped(Y.a, "closeButton", Pe.a),
-				ts = m.a.div("imageTitle", Pe.a),
-				ss = m.a.wrapped(_.l, "modalAddButton", Pe.a),
-				ns = m.a.wrapped(X.e, "modalBody", Pe.a),
-				as = m.a.wrapped(X.a, "modalCancelButton", Pe.a),
-				os = m.a.wrapped(X.l, "modalMain", Pe.a),
-				rs = m.a.wrapped(re, "modFlairOnlyToggle", Pe.a),
-				is = m.a.wrapped(we.a, "modIcon", Pe.a),
-				ls = m.a.li("modProTip", Pe.a),
-				ds = m.a.div("modProTips", Pe.a),
-				cs = m.a.div("modProTipTitle", Pe.a),
-				ms = m.a.div("proTip", Pe.a),
-				us = m.a.ul("tipList", Pe.a),
-				ps = e => !!e && (e.kind === Ie.b.Pending ? !!xt(e).imageError : e.kind === Ie.b.FailedToUpload);
-			var bs;
+			const Lt = 32,
+				Dt = 128,
+				Ut = 64,
+				Bt = 100,
+				Ht = m.a.div("appearsIn", _e.a),
+				Wt = m.a.wrapped(ge.a, "checkbox", _e.a),
+				zt = m.a.span("checkboxText", _e.a),
+				Vt = m.a.wrapped(K.a, "closeButton", _e.a),
+				qt = m.a.div("imageTitle", _e.a),
+				Gt = m.a.wrapped(_.l, "modalAddButton", _e.a),
+				Kt = m.a.wrapped(G.e, "modalBody", _e.a),
+				Qt = m.a.wrapped(G.a, "modalCancelButton", _e.a),
+				Xt = m.a.wrapped(G.l, "modalMain", _e.a),
+				Jt = m.a.wrapped(se, "modFlairOnlyToggle", _e.a),
+				Yt = m.a.wrapped(fe.a, "modIcon", _e.a),
+				Zt = m.a.li("modProTip", _e.a),
+				$t = m.a.div("modProTips", _e.a),
+				es = m.a.div("modProTipTitle", _e.a),
+				ts = m.a.div("proTip", _e.a),
+				ss = m.a.ul("tipList", _e.a),
+				ns = e => !!e && (e.kind === Ee.b.Pending ? !!lt(e).imageError : e.kind === Ee.b.FailedToUpload);
+			var as;
 			! function(e) {
 				e[e.AddState = 0] = "AddState", e[e.SingleEmojiEditState = 1] = "SingleEmojiEditState", e[e.BulkUploadState = 2] = "BulkUploadState"
-			}(bs || (bs = {}));
-			const hs = m.a.wrapped(Ne.a, "emojiDisplay", Pe.a),
-				gs = m.a.div("emojiNameDisplay", Pe.a),
-				fs = m.a.wrapped(P.a, "imageDisplay", Pe.a),
-				xs = e => l.a.createElement(hs, null, l.a.createElement(fs, {
+			}(as || (as = {}));
+			const os = m.a.wrapped(xe.a, "emojiDisplay", _e.a),
+				rs = m.a.div("emojiNameDisplay", _e.a),
+				is = m.a.wrapped(P.a, "imageDisplay", _e.a),
+				ls = e => l.a.createElement(os, null, l.a.createElement(is, {
 					backgroundImage: e.url
-				}), l.a.createElement(gs, null, e.emojiName)),
-				Es = Object(c.c)({
-					emojisCustomSize: (e, t) => Object($.w)(e, {
+				}), l.a.createElement(rs, null, e.emojiName)),
+				ds = Object(c.c)({
+					emojisCustomSize: (e, t) => Object(X.w)(e, {
 						subredditName: t.subreddit.name
 					}).emojisCustomSize
 				}),
-				vs = Object(d.b)(Es, (e, t) => {
+				cs = Object(d.b)(ds, (e, t) => {
 					let {
 						emoji: s,
 						isSnoomoji: n,
 						subreddit: o
 					} = t;
 					return {
-						saveEmoji: (t, s, n) => e(u.p({
+						saveEmoji: (t, s, n) => e(u.n({
 							imageData: n,
 							subredditId: o.id,
 							emojiName: t,
 							settings: s
 						})),
 						saveEmojiSettings: t => {
-							s && e(u.o(s.name, n, t, o.id))
+							s && e(u.m(s.name, n, t, o.id))
 						},
-						saveEmojiSuccessToast: () => e(ye.f({
-							kind: Te.b.SuccessCommunityGreen,
+						saveEmojiSuccessToast: () => e(pe.f({
+							kind: ve.b.SuccessCommunityGreen,
 							text: a.fbt._("Emoji edits saved!", null, {
 								hk: "3luBMA"
 							})
 						}))
 					}
 				});
-			class ks extends l.a.Component {
+			class ms extends l.a.Component {
 				constructor(e) {
 					super(e), this.closeModal = () => {
 						this.props.toggleModal()
@@ -12216,13 +12142,13 @@
 						})
 					}, this.handleMultiImageInput = async e => {
 						let t;
-						const s = this.state.emojiState === bs.SingleEmojiEditState;
-						s && this.clearImageData(), t = Array.isArray(e) ? s ? e.slice(0, 1) : e.slice(0, Jt) : [e];
-						const n = await Promise.all(t.map(Ie.f));
+						const s = this.state.emojiState === as.SingleEmojiEditState;
+						s && this.clearImageData(), t = Array.isArray(e) ? s ? e.slice(0, 1) : e.slice(0, Bt) : [e];
+						const n = await Promise.all(t.map(Ee.f));
 						s ? this.setState({
 							imageData: n
 						}) : this.setState({
-							emojiState: bs.BulkUploadState,
+							emojiState: as.BulkUploadState,
 							imageData: n
 						})
 					}, this.handleModExclusiveToggle = () => this.setState({
@@ -12242,7 +12168,7 @@
 						}
 					}), this.returnToAdd = () => {
 						this.setState({
-							emojiState: bs.AddState
+							emojiState: as.AddState
 						}), this.clearImageData()
 					}, this.sendToggleEvent = (e, t) => this.props.sendEvent(O(e, t)), this.modFlairSettingHasChanged = () => this.props.emoji && this.props.emoji.modFlairOnly !== this.state.settings.modFlairOnly, this.userFlairSettingHasChanged = () => this.props.emoji && this.props.emoji.userFlairAllowed !== this.state.settings.userFlairAllowed, this.postFlairSettingHasChanged = () => this.props.emoji && this.props.emoji.postFlairAllowed !== this.state.settings.postFlairAllowed, this.settingsHaveBeenChanged = () => this.modFlairSettingHasChanged() || this.userFlairSettingHasChanged() || this.postFlairSettingHasChanged(), this.sendTelemetryEvents = () => {
 						const {
@@ -12262,7 +12188,7 @@
 						};
 						if (this.setIsSaving(!0), e.emoji) {
 							if (e.isSnoomoji || e.emoji && !t.emojiDraftImage) e.saveEmojiSettings(s);
-							else if (e.emoji && t.emojiDraftImage && t.emojiDraftImage.kind === Ie.b.TempUploaded) {
+							else if (e.emoji && t.emojiDraftImage && t.emojiDraftImage.kind === Ee.b.TempUploaded) {
 								await e.saveEmoji(e.emoji.name, s, t.emojiDraftImage) && e.saveEmojiSuccessToast()
 							}
 							this.sendTelemetryEvents()
@@ -12271,7 +12197,7 @@
 					}, this.setIsSaving = e => this.setState({
 						isSaving: e
 					}), this.state = {
-						emojiState: e.emoji ? bs.SingleEmojiEditState : bs.AddState,
+						emojiState: e.emoji ? as.SingleEmojiEditState : as.AddState,
 						imageData: [],
 						isSaving: !1,
 						settings: {
@@ -12298,76 +12224,76 @@
 						emojiSettings: m,
 						stopEditing: this.closeModal,
 						subredditId: o.id
-					}, p = 2 * (t ? t[0] : Kt), b = 2 * (t ? t[1] : Kt), h = d.length > 0 ? d[0] : void 0, g = h && h.url, f = r && r.url, x = g || f, E = r && r.kind === Ie.b.TempUploaded, v = ps(h || r), k = i !== bs.SingleEmojiEditState || (!this.settingsHaveBeenChanged() && !E || v);
-					return l.a.createElement(ns, null, l.a.createElement(X.i, null, l.a.createElement(Z.a, null, l.a.createElement(X.q, null, e ? a.fbt._("Edit emoji", null, {
+					}, p = 2 * (t ? t[0] : Lt), b = 2 * (t ? t[1] : Lt), h = d.length > 0 ? d[0] : void 0, g = h && h.url, f = r && r.url, x = g || f, E = r && r.kind === Ee.b.TempUploaded, v = ns(h || r), k = i !== as.SingleEmojiEditState || (!this.settingsHaveBeenChanged() && !E || v);
+					return l.a.createElement(Kt, null, l.a.createElement(G.i, null, l.a.createElement(Q.a, null, l.a.createElement(G.q, null, e ? a.fbt._("Edit emoji", null, {
 						hk: "4awCz5"
 					}) : a.fbt._("Add new emojis", null, {
 						hk: "2DrJ62"
-					})), l.a.createElement(es, {
+					})), l.a.createElement(Vt, {
 						disabled: c,
 						onClick: this.closeModal
-					}, l.a.createElement(X.b, null)))), (i === bs.AddState || i === bs.SingleEmojiEditState) && l.a.createElement(l.a.Fragment, null, i === bs.AddState && l.a.createElement(ds, null, l.a.createElement(cs, null, l.a.createElement(is, null), a.fbt._("Mod pro tips!", null, {
+					}, l.a.createElement(G.b, null)))), (i === as.AddState || i === as.SingleEmojiEditState) && l.a.createElement(l.a.Fragment, null, i === as.AddState && l.a.createElement($t, null, l.a.createElement(es, null, l.a.createElement(Yt, null), a.fbt._("Mod pro tips!", null, {
 						hk: "30l9bq"
-					})), l.a.createElement(us, null, l.a.createElement(ls, null, a.fbt._("Emoji names will use the image file name and will be editable once uploaded", null, {
+					})), l.a.createElement(ss, null, l.a.createElement(Zt, null, a.fbt._("Emoji names will use the image file name and will be editable once uploaded", null, {
 						hk: "2fvAIQ"
-					})), l.a.createElement(ls, null, a.fbt._("You can upload up to {maxUpload} emojis at once", [a.fbt._param("maxUpload", Jt.toString())], {
+					})), l.a.createElement(Zt, null, a.fbt._("You can upload up to {maxUpload} emojis at once", [a.fbt._param("maxUpload", Bt.toString())], {
 						hk: "4aMYoX"
-					})))), l.a.createElement(os, null, i === bs.SingleEmojiEditState && e && l.a.createElement(xs, {
+					})))), l.a.createElement(Xt, null, i === as.SingleEmojiEditState && e && l.a.createElement(ls, {
 						emojiName: e.name,
 						url: x || e.url
-					}), !s && l.a.createElement(l.a.Fragment, null, l.a.createElement(je.i, null, l.a.createElement(ts, null, e ? a.fbt._("Image", null, {
+					}), !s && l.a.createElement(l.a.Fragment, null, l.a.createElement(he.i, null, l.a.createElement(qt, null, e ? a.fbt._("Image", null, {
 						hk: "3fzI70"
 					}) : a.fbt._("Images", null, {
 						hk: "3SapUk"
-					})), e && i === bs.SingleEmojiEditState && h && l.a.createElement(qt, Gt({}, u, {
+					})), e && i === as.SingleEmojiEditState && h && l.a.createElement(At, Ft({}, u, {
 						emoji: e,
 						onRetryUpload: this.clearImageData,
 						pendingImage: h,
 						onImageChange: this.onEditingImageChange
-					})), (!d.length || E) && !(e && v) && l.a.createElement(Oe.b, {
+					})), (!d.length || E) && !(e && v) && l.a.createElement(be.b, {
 						label: a.fbt._("Drag and Drop or Upload Image", null, {
 							hk: "3y5WvP"
 						}),
 						onChange: this.handleMultiImageInput,
 						multiple: !0
-					}), l.a.createElement(je.b, null, a.fbt._("Max upload dimensions {maxEmojiWidth} x {maxEmojiHeight}px", [a.fbt._param("maxEmojiWidth", Qt.toString()), a.fbt._param("maxEmojiHeight", Qt.toString())], {
+					}), l.a.createElement(he.b, null, a.fbt._("Max upload dimensions {maxEmojiWidth} x {maxEmojiHeight}px", [a.fbt._param("maxEmojiWidth", Dt.toString()), a.fbt._param("maxEmojiHeight", Dt.toString())], {
 						hk: "yal28"
-					})), l.a.createElement(je.b, null, a.fbt._("Max file size {MAX_FILE_SIZE}KB", [a.fbt._param("MAX_FILE_SIZE", Xt.toString())], {
+					})), l.a.createElement(he.b, null, a.fbt._("Max file size {MAX_FILE_SIZE}KB", [a.fbt._param("MAX_FILE_SIZE", Ut.toString())], {
 						hk: "1t1L0f"
-					}))), l.a.createElement(ms, null, a.fbt._("Recommended upload dimensions: {recommendedWidth} x {recommendedHeight}px", [a.fbt._param("recommendedWidth", p.toString()), a.fbt._param("recommendedHeight", b.toString())], {
+					}))), l.a.createElement(ts, null, a.fbt._("Recommended upload dimensions: {recommendedWidth} x {recommendedHeight}px", [a.fbt._param("recommendedWidth", p.toString()), a.fbt._param("recommendedHeight", b.toString())], {
 						hk: "35CqDV"
-					}))), l.a.createElement(Yt, null, a.fbt._("Appears in:", null, {
+					}))), l.a.createElement(Ht, null, a.fbt._("Appears in:", null, {
 						hk: "3SZP5W"
-					})), l.a.createElement(Zt, {
+					})), l.a.createElement(Wt, {
 						name: "postFlair",
 						onChange: this.handleTogglePostFlair,
 						value: m.postFlairAllowed
-					}, l.a.createElement($t, null, a.fbt._("Post flair", null, {
+					}, l.a.createElement(zt, null, a.fbt._("Post flair", null, {
 						hk: "mAzeZ"
-					}))), l.a.createElement(Zt, {
+					}))), l.a.createElement(Wt, {
 						name: "userFlair",
 						onChange: this.handleToggleUserFlair,
 						value: m.userFlairAllowed
-					}, l.a.createElement($t, null, a.fbt._("User flair", null, {
+					}, l.a.createElement(zt, null, a.fbt._("User flair", null, {
 						hk: "qVf7x"
-					}))), l.a.createElement(rs, {
+					}))), l.a.createElement(Jt, {
 						description: "Only appears in post and user flair that are restricted for mod use.",
 						on: m.modFlairOnly,
 						onToggle: this.handleModExclusiveToggle,
 						title: "Mod only"
-					})), l.a.createElement(X.g, null, l.a.createElement(as, {
+					})), l.a.createElement(G.g, null, l.a.createElement(Qt, {
 						disabled: c,
 						onClick: this.closeModal
 					}, a.fbt._("Cancel", null, {
 						hk: "2TSLl5"
-					})), l.a.createElement(ss, {
+					})), l.a.createElement(Gt, {
 						disabled: k,
 						onClick: this.saveEmoji
 					}, e ? a.fbt._("Save", null, {
 						hk: "4yMsMq"
 					}) : a.fbt._("Add", null, {
 						hk: "2wi3d4"
-					})))), i === bs.BulkUploadState && l.a.createElement(Dt, Gt({}, u, {
+					})))), i === as.BulkUploadState && l.a.createElement(wt, Ft({}, u, {
 						images: d,
 						returnToAddState: this.returnToAdd,
 						sendEvent: n,
@@ -12375,34 +12301,34 @@
 					})))
 				}
 			}
-			var _s = Object(K.a)(vs(ks));
-			const Cs = m.a.wrapped(w.a, "alertIcon", M.a),
-				ys = m.a.span("appearsTitle", M.a),
-				Os = m.a.span("imageTitle", M.a),
-				js = m.a.span("nameTitle", M.a),
-				Ss = m.a.span("permissionsTitle", M.a),
-				ws = m.a.wrapped(_.o, "settingsButton", M.a),
-				Ns = m.a.wrapped(f.a, "titleTooltip", M.a),
-				Is = m.a.wrapped(E.a, "topRow", M.a),
-				Ts = Object(c.c)({
+			var us = Object(q.a)(cs(ms));
+			const ps = m.a.wrapped(w.a, "alertIcon", M.a),
+				bs = m.a.span("appearsTitle", M.a),
+				hs = m.a.span("imageTitle", M.a),
+				gs = m.a.span("nameTitle", M.a),
+				fs = m.a.span("permissionsTitle", M.a),
+				xs = m.a.wrapped(_.o, "settingsButton", M.a),
+				Es = m.a.wrapped(f.a, "titleTooltip", M.a),
+				vs = m.a.wrapped(E.a, "topRow", M.a),
+				ks = Object(c.c)({
 					emojis: I.d,
 					isConfirmModalOpen: Object(N.b)("EmojiManager--DeleteEmojiConfirmation--Modal"),
 					isEmojisEnabled: (e, t) => Object(I.b)(e, t.subreddit.name),
 					isEmojiSettingsModalOpen: Object(N.b)("EmojiManager--Settings--Modal"),
 					isUploadEmojisModalOpen: Object(N.b)("EmojiManager--UploadEmojis--Modal")
 				}),
-				Ms = Object(d.b)(Ts, (e, t) => {
+				_s = Object(d.b)(ks, (e, t) => {
 					let {
 						subreddit: s
 					} = t;
 					return {
-						deleteEmoji: t => e(u.j(t, s.id)),
+						deleteEmoji: t => e(u.i(t, s.id)),
 						toggleDeleteConfirmationModal: () => e(Object(p.i)("EmojiManager--DeleteEmojiConfirmation--Modal")),
 						toggleSettingsModal: () => e(Object(p.i)("EmojiManager--Settings--Modal")),
 						toggleUploadEmojisModal: () => e(Object(p.i)("EmojiManager--UploadEmojis--Modal"))
 					}
 				});
-			class Ps extends l.a.Component {
+			class Cs extends l.a.Component {
 				constructor(e) {
 					super(e), this.onClickEditEmoji = (e, t) => {
 						this.props.toggleUploadEmojisModal(), this.setState({
@@ -12442,7 +12368,7 @@
 						toggleSettingsModal: u,
 						toggleUploadEmojisModal: p
 					} = this.props;
-					return l.a.createElement(l.a.Fragment, null, l.a.createElement(x.c, null, l.a.createElement(ws, {
+					return l.a.createElement(l.a.Fragment, null, l.a.createElement(x.c, null, l.a.createElement(xs, {
 						onClick: u
 					}, a.fbt._("Emoji settings", null, {
 						hk: "2k202A"
@@ -12457,26 +12383,26 @@
 					})), !s && l.a.createElement(h.a, {
 						className: M.a.emojisDisabled,
 						color: k.a.quarantine,
-						icon: l.a.createElement(Cs, null),
+						icon: l.a.createElement(ps, null),
 						subtitle: a.fbt._("Emojis in flairs will not be displayed, and existing emojis will appear as plain text.", null, {
 							hk: "2WaMtH"
 						}),
 						title: a.fbt._("Emojis have been disabled for this community", null, {
 							hk: "7LNIO"
 						})
-					}), l.a.createElement(Is, null, l.a.createElement(Os, null, a.fbt._("Image", null, {
+					}), l.a.createElement(vs, null, l.a.createElement(hs, null, a.fbt._("Image", null, {
 						hk: "1rlqjH"
-					})), l.a.createElement(js, null, a.fbt._("Name", null, {
+					})), l.a.createElement(gs, null, a.fbt._("Name", null, {
 						hk: "1ugGFI"
-					})), l.a.createElement(ys, null, a.fbt._("Appears in", null, {
+					})), l.a.createElement(bs, null, a.fbt._("Appears in", null, {
 						hk: "3K8vjU"
-					}), l.a.createElement(Ns, {
+					}), l.a.createElement(Es, {
 						text: a.fbt._("Set emoji to appear in post flair or user flair", null, {
 							hk: "4cg4Se"
 						})
-					})), l.a.createElement(Ss, null, a.fbt._("Settings", null, {
+					})), l.a.createElement(fs, null, a.fbt._("Settings", null, {
 						hk: "2CRrAq"
-					}), l.a.createElement(Ns, {
+					}), l.a.createElement(Es, {
 						text: a.fbt._("Set emoji to only appear in mod-only flair", null, {
 							hk: "2yS10f"
 						})
@@ -12508,12 +12434,12 @@
 						}),
 						trackClick: () => {},
 						withOverlay: !0
-					}), o && l.a.createElement(Ce, {
+					}), o && l.a.createElement(ue, {
 						sendEvent: d,
 						subreddit: c,
 						toggleModal: u,
 						withOverlay: !0
-					}), i && l.a.createElement(_s, {
+					}), i && l.a.createElement(us, {
 						emoji: this.state.emojiToEdit,
 						isSnoomoji: this.state.isSnoomoji,
 						sendEvent: d,
@@ -12523,7 +12449,7 @@
 					})))
 				}
 			}
-			t.a = Ms(Object(v.c)(Ps))
+			t.a = _s(Object(v.c)(Cs))
 		},
 		"./src/reddit/components/ModHub/InfoLink/index.m.less": function(e, t, s) {
 			e.exports = {
@@ -25422,4 +25348,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.bb3687e7539d3ec1fd8c.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.8632c68fa02d6eed7a0d.js.map

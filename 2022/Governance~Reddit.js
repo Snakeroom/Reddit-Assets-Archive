@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~Reddit.e932fe65ed02f06a9067.js
-// Retrieved at 6/30/2022, 11:00:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~Reddit.dda2397d0ecf632f764c.js
+// Retrieved at 6/30/2022, 12:10:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~Reddit"], {
 		"./assets/fonts/NotoMono/font.less": function(e, t, n) {},
@@ -846,40 +846,36 @@
 		},
 		"./src/reddit/actions/emoji.ts": function(e, t, n) {
 			"use strict";
-			n.d(t, "i", (function() {
+			n.d(t, "h", (function() {
 				return I
-			})), n.d(t, "d", (function() {
-				return T
 			})), n.d(t, "c", (function() {
+				return T
+			})), n.d(t, "b", (function() {
 				return w
-			})), n.d(t, "h", (function() {
-				return A
 			})), n.d(t, "g", (function() {
-				return C
+				return A
 			})), n.d(t, "f", (function() {
+				return C
+			})), n.d(t, "e", (function() {
 				return P
 			})), n.d(t, "a", (function() {
 				return k
-			})), n.d(t, "q", (function() {
-				return M
-			})), n.d(t, "p", (function() {
-				return B
-			})), n.d(t, "l", (function() {
-				return G
-			})), n.d(t, "m", (function() {
-				return q
-			})), n.d(t, "j", (function() {
-				return H
-			})), n.d(t, "k", (function() {
-				return Q
-			})), n.d(t, "b", (function() {
-				return V
-			})), n.d(t, "n", (function() {
-				return K
-			})), n.d(t, "e", (function() {
-				return Y
 			})), n.d(t, "o", (function() {
-				return z
+				return M
+			})), n.d(t, "n", (function() {
+				return B
+			})), n.d(t, "k", (function() {
+				return G
+			})), n.d(t, "l", (function() {
+				return q
+			})), n.d(t, "i", (function() {
+				return H
+			})), n.d(t, "j", (function() {
+				return Q
+			})), n.d(t, "d", (function() {
+				return V
+			})), n.d(t, "m", (function() {
+				return K
 			}));
 			var r = n("./node_modules/fbt/lib/FbtPublic.js"),
 				s = n("./node_modules/lodash/forEach.js"),
@@ -1010,41 +1006,43 @@
 						n(Object(f.i)(r)), n(Object(b.f)(U(e))), t && t.close()
 					}
 					return E.ok
-				}, B = e => async (t, n, r) => {
+				}, B = e => async (t, n, s) => {
 					const {
-						imageData: s,
-						subredditId: a,
-						emojiName: o,
-						settings: c
+						imageData: a,
+						subredditId: o,
+						emojiName: c,
+						settings: i
 					} = e;
-					if (t(Object(f.k)(s)), !s.websocketUrl) return t(Object(b.f)({
-						text: "Could not upload emoji"
+					if (t(Object(f.k)(a)), !a.websocketUrl) return t(Object(b.f)({
+						text: r.fbt._("Could not upload emoji", null, {
+							hk: "29nzfh"
+						})
 					}));
-					let i;
-					const d = new WebSocket(s.websocketUrl);
-					return d.onopen = async () => {
-						i = await F(e, d)(t, n, r)
-					}, d.onmessage = n => {
+					let d;
+					const l = new WebSocket(a.websocketUrl);
+					return l.onopen = async () => {
+						d = await F(e, l)(t, n, s)
+					}, l.onmessage = n => {
 						const r = JSON.parse(n.data);
 						if ("success" === r.type) {
-							i = !0;
+							d = !0;
 							const e = r.payload.emoji_url,
-								n = Object(v.o)(s, e);
+								n = Object(v.o)(a, e);
 							t(Object(f.l)(n));
-							const d = Object(m.e)(o, n.url, a, c);
-							t(S(d)), t(G(a))
+							const s = Object(m.e)(c, n.url, o, i);
+							t(S(s)), t(G(o))
 						} else {
-							const n = Object(h.a)(o),
-								r = Object(v.k)(s, n);
+							const n = Object(h.a)(c),
+								r = Object(v.k)(a, n);
 							t(Object(f.i)(r)), t(Object(b.f)(U(e)))
 						}
-						d.close()
-					}, d.onerror = n => {
-						i = !1;
-						const r = Object(h.a)(o),
-							a = Object(v.k)(s, r);
-						t(Object(f.i)(a)), t(Object(b.f)(U(e))), d.close()
-					}, i
+						l.close()
+					}, l.onerror = n => {
+						d = !1;
+						const r = Object(h.a)(c),
+							s = Object(v.k)(a, r);
+						t(Object(f.i)(s)), t(Object(b.f)(U(e))), l.close()
+					}, d
 				}, G = e => async (t, n, r) => {
 					let {
 						apiContext: s
@@ -1126,28 +1124,7 @@
 							hk: "22u7ha"
 						})
 					}))
-				}, V = "EMOJI_CUSTOM_SIZE_UPDATED", W = Object(p.a)(V), K = (e, t) => async (n, s, a) => {
-					let {
-						apiContext: d
-					} = a;
-					const u = s(),
-						p = Object(_.U)(u, {
-							subredditId: e
-						}).name;
-					(await (async (e, t, n) => Object(c.a)(Object(i.a)(e, [l.a]), {
-						endpoint: `${e.apiUrl}/api/v1/${t}/emoji_custom_size`,
-						method: o.jb.POST,
-						data: n
-					}))(d(), p, t)).ok ? n(W({
-						subredditId: e,
-						emojiCustomSize: t
-					})) : n(b.f({
-						kind: E.b.Error,
-						text: r.fbt._("Try again later", null, {
-							hk: "4dziDF"
-						})
-					}))
-				}, Y = "EMOJI_PERMISSIONS_UPDATED", $ = Object(p.a)(Y), z = (e, t, n, s) => async (a, d, u) => {
+				}, V = "EMOJI_PERMISSIONS_UPDATED", W = Object(p.a)(V), K = (e, t, n, s) => async (a, d, u) => {
 					let {
 						apiContext: p
 					} = u;
@@ -1164,7 +1141,7 @@
 							user_flair_allowed: r.userFlairAllowed,
 							mod_flair_only: r.modFlairOnly
 						}
-					}))(p(), e, h, n)).ok ? (a($({
+					}))(p(), e, h, n)).ok ? (a(W({
 						emojiName: e,
 						isSnoomoji: t,
 						settings: n,
@@ -10427,15 +10404,15 @@
 					let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : ao,
 						t = arguments.length > 1 ? arguments[1] : void 0;
 					switch (t.type) {
-						case so.h: {
+						case so.g: {
 							const n = t.payload;
 							return {
 								...e,
 								[n]: !0
 							}
 						}
-						case so.g:
-						case so.f: {
+						case so.f:
+						case so.e: {
 							const {
 								subredditId: n
 							} = t.payload, {
@@ -10459,16 +10436,16 @@
 					let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : lo,
 						t = arguments.length > 1 ? arguments[1] : void 0;
 					switch (t.type) {
-						case so.f:
-						case so.c:
+						case so.e:
+						case so.b:
 							return e;
-						case so.g: {
+						case so.f: {
 							const {
 								data: e
 							} = t.payload;
 							return e
 						}
-						case so.d: {
+						case so.c: {
 							const {
 								emojiName: n,
 								subredditId: r
@@ -10484,7 +10461,7 @@
 								}
 							}
 						}
-						case so.i: {
+						case so.h: {
 							const n = t.payload,
 								r = e[n.subredditId].emojis,
 								s = {
@@ -10506,7 +10483,7 @@
 								}
 							}
 						}
-						case so.e: {
+						case so.d: {
 							const {
 								emojiName: n,
 								isSnoomoji: r,
@@ -19159,29 +19136,6 @@
 							...e
 						})
 					}
-					case so.b: {
-						const n = t.payload,
-							{
-								emojiCustomSize: r,
-								subredditId: s
-							} = n,
-							a = e[s];
-						if (!a) return e;
-						const o = {
-							...a
-						};
-						if (r) {
-							const {
-								width: e,
-								height: t
-							} = r;
-							o.emojisCustomSize = [e, t]
-						} else delete o.emojisCustomSize;
-						return {
-							...e,
-							[s]: o
-						}
-					}
 					case K.c: {
 						const {
 							data: n
@@ -24786,4 +24740,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit.e932fe65ed02f06a9067.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit.dda2397d0ecf632f764c.js.map
