@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage.b841534c20e647f48b77.js
-// Retrieved at 6/30/2022, 11:00:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage.b7501400f47f42a213d2.js
+// Retrieved at 6/30/2022, 12:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage"], {
 		"./node_modules/linkify-it/index.js": function(e, t, s) {
@@ -1268,7 +1268,7 @@
 						D = Object(se.Q)(s());
 					if (R && "subreddit" === R.belongsTo.type) {
 						const e = R.belongsTo.id,
-							n = Object(le.i)(() => t(Object(me.m)(e, {
+							n = Object(le.i)(() => t(Object(me.k)(e, {
 								fullData: !0,
 								includeIdentity: D
 							})), {
@@ -1281,7 +1281,7 @@
 						if (!Object(Q.i)(o)) {
 							Object(Ze.a)(o) && t(Object(w.b)(e))
 						}
-						Object($.j)(o, e) && await t(Object(d.c)(u))
+						Object($.i)(o, e) && await t(Object(d.c)(u))
 					}
 					if (R) {
 						const r = ((e, t) => {
@@ -1539,7 +1539,7 @@
 								postId: e
 							}),
 							s = Object.keys(K.body.comments);
-						if (o(j.z(t, N.a.CommentsView)), Object($.i)(a(), {
+						if (o(j.z(t, N.a.CommentsView)), Object($.h)(a(), {
 								subredditId: t.belongsTo.id
 							}) && o(Object(O.a)({
 								commentIds: s,
@@ -2702,7 +2702,7 @@
 					isPresenceConsumptionExpEnabled: ht.c,
 					moderatorPermissions: (e, t) => {
 						const s = Object(ut.b)(e, t);
-						return s ? Object(xt.o)(e, {
+						return s ? Object(xt.n)(e, {
 							subredditId: s.subredditId
 						}) : null
 					},
@@ -3578,7 +3578,7 @@
 						});
 					if (!r) return !1;
 					const i = Object(L.v)(e),
-						a = !!Object(N.n)(e, {
+						a = !!Object(N.m)(e, {
 							postId: r.postId
 						}),
 						d = Object(T.G)(e, {
@@ -6769,7 +6769,7 @@
 				isFollowedExpired: H.o,
 				showPromotedCTA: K.a,
 				post: H.G,
-				moderatorPermissions: U.n,
+				moderatorPermissions: U.m,
 				modModeEnabled: Ne.U,
 				shouldTryToShowCrosspostModal: ht.e,
 				showEditFlair: Re.a,
@@ -7404,7 +7404,7 @@
 					shouldShowSubscribeButton: k,
 					subredditOrProfile: P,
 					tooltipType: I
-				} = e, w = !!E, S = Object(C.a)(), N = Object(r.e)(e => !!P && Object(i.j)(e, P.id));
+				} = e, w = !!E, S = Object(C.a)(), N = Object(r.e)(e => !!P && Object(i.i)(e, P.id));
 				return o.a.createElement("div", {
 					className: O.a.metaContainer
 				}, !n && !j.isSponsored && P && o.a.createElement(d.a, {
@@ -9951,7 +9951,7 @@
 					currentUserShowNSFW: we.kb,
 					dismissedSubreddits: fe.a,
 					fullyLoaded: pe.u,
-					hasModeratorPostPermissions: ke.d,
+					hasModeratorPostPermissions: ke.c,
 					headComment: pe.x,
 					isActionBarAnimationEnabled: oe.b,
 					isAvatarsInCommentsEnabled: ve.a,
@@ -10017,7 +10017,7 @@
 							subredditName: s
 						} = t;
 						const n = Object(re.F)(e, s);
-						return !!n && Object(ke.j)(e, n)
+						return !!n && Object(ke.i)(e, n)
 					},
 					isNsfwBlurSubreddit: ne.e,
 					isNsfwFullPageInterstitial: (e, t) => {
@@ -11208,4 +11208,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage.b841534c20e647f48b77.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage.b7501400f47f42a213d2.js.map

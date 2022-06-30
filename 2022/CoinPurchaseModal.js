@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CoinPurchaseModal.eff94c7c7a7f62f15005.js
-// Retrieved at 6/29/2022, 1:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CoinPurchaseModal.2630f5e3ebef9da9d8ab.js
+// Retrieved at 6/30/2022, 12:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CoinPurchaseModal", "gildActions"], {
 		"./node_modules/@stripe/react-stripe-js/dist/react-stripe.umd.js": function(e, t, r) {
@@ -547,6 +547,13 @@
 					}
 				}
 		},
+		"./src/reddit/actions/economics/powerups/helpers.ts": function(e, t, r) {
+			"use strict";
+			r.d(t, "a", (function() {
+				return n
+			}));
+			const n = e => (null == e ? void 0 : e.map(e => e.message).join(", ")) || ""
+		},
 		"./src/reddit/actions/gold/econPurchase.ts": function(e, t, r) {
 			"use strict";
 			r.d(t, "a", (function() {
@@ -564,7 +571,7 @@
 					econPurchase: a.a
 				}
 			});
-			const l = Object(s.a)(d.mb),
+			const l = Object(s.a)(d.lb),
 				u = (e, t, r) => async (n, a, s) => {
 					let {
 						gqlContext: d
@@ -669,12 +676,12 @@
 				Q = r("./src/reddit/helpers/correlationIdTracker.ts"),
 				U = r("./src/reddit/helpers/isPost.ts"),
 				H = r("./src/reddit/helpers/trackers/gild.ts"),
-				W = r("./src/telemetry/index.ts"),
-				K = r("./src/reddit/endpoints/profile/info.ts"),
-				V = r("./src/reddit/actions/gold/constants.ts"),
+				V = r("./src/telemetry/index.ts"),
+				W = r("./src/reddit/endpoints/profile/info.ts"),
+				K = r("./src/reddit/actions/gold/constants.ts"),
 				J = r("./src/reddit/actions/gold/econPurchase.ts");
-			const z = Object(a.a)(V.r),
-				Y = Object(a.a)(V.v),
+			const z = Object(a.a)(K.r),
+				Y = Object(a.a)(K.v),
 				Z = (e, t) => async (r, a) => {
 					const s = a(),
 						o = !Object(U.a)(e) && Object(P.d)(s, {
@@ -788,17 +795,17 @@
 					} finally {
 						Object(Q.b)(Q.a.GildingFlow)
 					}
-				}, $ = Object(a.a)(V.u), X = Object(a.a)(V.q), ee = () => async (e, t) => {
+				}, $ = Object(a.a)(K.u), X = Object(a.a)(K.q), ee = () => async (e, t) => {
 					e(X()), window.setTimeout(() => {
 						t().gild.api.pending && e($())
 					}, 2e3)
-				}, te = Object(a.a)(V.p), re = e => async (t, r) => {
+				}, te = Object(a.a)(K.p), re = e => async (t, r) => {
 					await t(te(e)), t(Object(u.f)({
 						kind: C.b.Error,
 						duration: u.a,
 						text: e
 					}))
-				}, ne = Object(a.a)(V.s), ae = (e, t) => {
+				}, ne = Object(a.a)(K.s), ae = (e, t) => {
 					const {
 						id: r
 					} = t, n = Object(U.a)(r) ? Object(N.G)(e, {
@@ -850,7 +857,7 @@
 					}
 					if (t(ae(a, e)), h) {
 						const r = {
-								...K.a,
+								...W.a,
 								...h.karma
 							},
 							n = r.fromAwardsReceived + e.awardKarmaReceived,
@@ -876,7 +883,7 @@
 							hk: "2sIK9Y"
 						}),
 						M = f.coinPrice;
-					Object(W.a)(Object(H.viewKarmaSuccessEvent)({
+					Object(V.a)(Object(H.viewKarmaSuccessEvent)({
 						award: f,
 						awarderKarmaEarned: g,
 						awardeeKarmaEarned: 0,
@@ -1189,7 +1196,7 @@
 					} catch (s) {
 						p.c.captureException(s)
 					}
-				}, A = Object(m.a)(f.O), T = Object(m.a)(f.P), M = Object(m.a)(f.Q), R = e => async (t, r) => {
+				}, A = Object(m.a)(f.N), T = Object(m.a)(f.O), M = Object(m.a)(f.P), R = e => async (t, r) => {
 					await t(A(e)), t(Object(l.f)({
 						kind: b.b.Error,
 						duration: l.a,
@@ -1223,21 +1230,21 @@
 							hk: "4yuT5m"
 						})))
 					}
-				}, B = Object(m.a)(f.S), L = e => async (t, r) => {
-					t(B(e)), t(Object(j.m)(e.subredditId, {
+				}, B = Object(m.a)(f.R), L = e => async (t, r) => {
+					t(B(e)), t(Object(j.k)(e.subredditId, {
 						forceLoad: !0,
 						fullData: !1
 					})), t(Object(O.g)(d.a.ECON_POWERUPS_PURCHASE)), t(Object(O.h)(d.a.ECON_POWERUPS_SUCCESS))
-				}, D = Object(m.a)(f.W), F = e => {
+				}, D = Object(m.a)(f.V), F = e => {
 					let {
 						user: t
 					} = e;
 					return async e => {
-						await e(Object(j.o)(!0)), e(D({
+						await e(Object(j.m)(!0)), e(D({
 							user: t
 						}))
 					}
-				}, q = Object(m.a)(f.ab)
+				}, q = Object(m.a)(f.Z)
 		},
 		"./src/reddit/actions/goldPurchaseModals/coinPurchaseModal.ts": function(e, t, r) {
 			"use strict";
@@ -2257,7 +2264,7 @@
 					"data-redditstyle": !0
 				})))
 			};
-			var W = e => {
+			var V = e => {
 					const t = Object(q.a)(),
 						r = [];
 					if (e.purchasePackage && r.push(a.fbt._("{coinCount} will automatically be spent on this {awardName} Award.", [a.fbt._param("coinCount", Object(l.b)(e.award.coinPrice, {
@@ -2306,8 +2313,8 @@
 						"data-redditstyle": !0
 					})))
 				},
-				K = r("./src/reddit/components/PaymentMethodSelector/index.tsx"),
-				V = r("./src/reddit/components/StripePaymentForm/index.tsx"),
+				W = r("./src/reddit/components/PaymentMethodSelector/index.tsx"),
+				K = r("./src/reddit/components/StripePaymentForm/index.tsx"),
 				J = r("./src/reddit/helpers/createEmojiText/index.tsx");
 			const z = e => {
 				const t = Object(q.a)(),
@@ -2315,7 +2322,7 @@
 					s = e.purchasePackage ? e.purchasePackage.pennies : e.selectedAward.pennyPrice || 0;
 				return o.a.createElement(n.Elements, {
 					stripe: r
-				}, o.a.createElement(o.a.Fragment, null, e.gildThingId ? o.a.createElement(W, {
+				}, o.a.createElement(o.a.Fragment, null, e.gildThingId ? o.a.createElement(V, {
 					coinBalance: e.coinBalance,
 					award: e.selectedAward,
 					purchasePackage: e.purchasePackage,
@@ -2328,7 +2335,7 @@
 					onCloseClick: e.onCloseModal
 				}), o.a.createElement("div", {
 					className: B.a.purchaseBody
-				}, o.a.createElement(K.a, {
+				}, o.a.createElement(W.a, {
 					className: B.a.selectPayment,
 					gildThingId: e.gildThingId,
 					nightmode: e.nightmode,
@@ -2338,7 +2345,7 @@
 					let {
 						stripe: r
 					} = t;
-					return o.a.createElement(V.a, {
+					return o.a.createElement(K.a, {
 						nightmode: e.nightmode,
 						stripe: r
 					})
@@ -4051,7 +4058,7 @@
 				let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : s,
 					t = arguments.length > 1 ? arguments[1] : void 0;
 				switch (t.type) {
-					case a.mb: {
+					case a.lb: {
 						const r = t.payload;
 						return {
 							...e,
@@ -4236,4 +4243,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CoinPurchaseModal.eff94c7c7a7f62f15005.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CoinPurchaseModal.2630f5e3ebef9da9d8ab.js.map

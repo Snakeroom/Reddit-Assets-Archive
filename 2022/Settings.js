@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Settings.008df9d5fefe37c4fb9f.js
-// Retrieved at 6/30/2022, 10:00:07 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Settings.30266af0f2096bf85c32.js
+// Retrieved at 6/30/2022, 12:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Settings"], {
 		"./node_modules/moment/locale sync recursive ^\\.\\/.*$": function(e, t, n) {
@@ -558,6 +558,13 @@
 				c = Object(s.a)(r.c),
 				l = Object(s.a)(r.d)
 		},
+		"./src/reddit/actions/economics/powerups/helpers.ts": function(e, t, n) {
+			"use strict";
+			n.d(t, "a", (function() {
+				return s
+			}));
+			const s = e => (null == e ? void 0 : e.map(e => e.message).join(", ")) || ""
+		},
 		"./src/reddit/actions/economics/subredditPremium/actionCreators.ts": function(e, t, n) {
 			"use strict";
 			n.d(t, "a", (function() {
@@ -1012,7 +1019,7 @@
 					} catch (a) {
 						p.c.captureException(a)
 					}
-				}, A = Object(u.a)(h.O), T = Object(u.a)(h.P), M = Object(u.a)(h.Q), B = e => async (t, n) => {
+				}, A = Object(u.a)(h.N), T = Object(u.a)(h.O), M = Object(u.a)(h.P), B = e => async (t, n) => {
 					await t(A(e)), t(Object(d.f)({
 						kind: b.b.Error,
 						duration: d.a,
@@ -1046,21 +1053,21 @@
 							hk: "4yuT5m"
 						})))
 					}
-				}, L = Object(u.a)(h.S), F = e => async (t, n) => {
-					t(L(e)), t(Object(_.m)(e.subredditId, {
+				}, L = Object(u.a)(h.R), F = e => async (t, n) => {
+					t(L(e)), t(Object(_.k)(e.subredditId, {
 						forceLoad: !0,
 						fullData: !1
 					})), t(Object(y.g)(l.a.ECON_POWERUPS_PURCHASE)), t(Object(y.h)(l.a.ECON_POWERUPS_SUCCESS))
-				}, R = Object(u.a)(h.W), D = e => {
+				}, R = Object(u.a)(h.V), D = e => {
 					let {
 						user: t
 					} = e;
 					return async e => {
-						await e(Object(_.o)(!0)), e(R({
+						await e(Object(_.m)(!0)), e(R({
 							user: t
 						}))
 					}
-				}, H = Object(u.a)(h.ab)
+				}, H = Object(u.a)(h.Z)
 		},
 		"./src/reddit/actions/gold/productOffers.ts": function(e, t, n) {
 			"use strict";
@@ -1086,18 +1093,18 @@
 				p = n("./src/redditGQL/operations/ProductOffers.json");
 			var b = n("./src/reddit/selectors/gold/productOffers.ts"),
 				h = n("./src/reddit/actions/gold/constants.ts");
-			const f = Object(r.a)(h.db),
-				g = Object(r.a)(h.cb),
-				v = Object(r.a)(h.bb),
-				_ = Object(r.a)(h.Z),
-				y = Object(r.a)(h.Y),
-				x = Object(r.a)(h.X),
-				C = Object(r.a)(h.Db),
-				j = Object(r.a)(h.Bb),
-				k = Object(r.a)(h.Cb),
-				E = Object(r.a)(h.Gb),
-				O = Object(r.a)(h.Fb),
-				w = Object(r.a)(h.Eb),
+			const f = Object(r.a)(h.cb),
+				g = Object(r.a)(h.bb),
+				v = Object(r.a)(h.ab),
+				_ = Object(r.a)(h.Y),
+				y = Object(r.a)(h.X),
+				x = Object(r.a)(h.W),
+				C = Object(r.a)(h.Cb),
+				j = Object(r.a)(h.Ab),
+				k = Object(r.a)(h.Bb),
+				E = Object(r.a)(h.Fb),
+				O = Object(r.a)(h.Eb),
+				w = Object(r.a)(h.Db),
 				S = e => async t => {
 					t(Object(o.f)({
 						kind: c.b.Error,
@@ -1629,7 +1636,7 @@
 				} = e.params;
 				if (v === a.dc.Gold) return void t(Object(r.c)("/settings/premium"));
 				const _ = [];
-				v === a.dc.Profile && (_.push(t(Object(N.a)())), _.push(t(Object(I.g)()))), v === a.dc.Account && (_.push(t(Object(b.o)())), _.push(t(Object(d.b)()))), v === a.dc.Notifications && _.push(t(w())), v !== a.dc.Privacy && v !== a.dc.Messaging || _.push(t(Object(l.b)())), v === a.dc.Premium && (_.push(t(Object(N.a)())), _.push(t(Object(h.o)(!0)))), await Promise.all(_); {
+				v === a.dc.Profile && (_.push(t(Object(N.a)())), _.push(t(Object(I.g)()))), v === a.dc.Account && (_.push(t(Object(b.o)())), _.push(t(Object(d.b)()))), v === a.dc.Notifications && _.push(t(w())), v !== a.dc.Privacy && v !== a.dc.Messaging || _.push(t(Object(l.b)())), v === a.dc.Premium && (_.push(t(Object(N.a)())), _.push(t(Object(h.m)(!0)))), await Promise.all(_); {
 					const e = n(),
 						a = e.platform.currentPage,
 						{
@@ -1646,7 +1653,7 @@
 					}
 				}
 				t(Object(S.m)({
-					title: Object(c.m)()
+					title: Object(c.l)()
 				}))
 			}
 		},
@@ -2878,7 +2885,7 @@
 			const {
 				fbt: te
 			} = n("./node_modules/fbt/lib/FbtPublic.js"), ne = Object(o.c)({
-				hasModMailPermissions: Object(u.c)(Z.c.mail),
+				hasModMailPermissions: Object(u.b)(Z.c.mail),
 				isUserBanned: (e, t) => !!Object(X.b)(e, {
 					subredditId: t.subredditId,
 					username: t.username
@@ -3191,7 +3198,7 @@
 						let {
 							subredditId: n
 						} = t;
-						return n ? Object(u.o)(e, {
+						return n ? Object(u.n)(e, {
 							subredditId: n
 						}) : void 0
 					},
@@ -3236,7 +3243,7 @@
 						} = t;
 						const s = Object(C.e)(e),
 							r = n || s && Object(g.F)(e, s.name);
-						return !!r && Object(u.j)(e, r)
+						return !!r && Object(u.i)(e, r)
 					},
 					trophyCase: (e, t) => Object(h.r)(e, Object(h.m)(e, t.userName)),
 					isNightMode: _.db,
@@ -6154,7 +6161,7 @@
 						hk: "2EKYNO"
 					}))), i.a.createElement(M.g, null, i.a.createElement(M.r, {
 						onClick: () => {
-							n.isPremium ? a(Object(T.k)(r.id, -n.powerups, n.isAnonymous, n.allocatedAt)) : a(Object(E.a)(n.id, r.id, n.allocatedAt)), s()
+							n.isPremium ? a(Object(T.i)(r.id, -n.powerups, n.isAnonymous, n.allocatedAt)) : a(Object(E.a)(n.id, r.id, n.allocatedAt)), s()
 						},
 						"data-redditstyle": !0
 					}, L._("Confirm", null, {
@@ -6267,7 +6274,7 @@
 			var V = n("./src/reddit/components/Settings/Powerups/index.m.less"),
 				K = n.n(V);
 			const Z = Object(k.c)({
-				allocationByKey: I.v
+				allocationByKey: I.u
 			});
 			var X = Object(c.b)(Z)((function(e) {
 					const {
@@ -14255,4 +14262,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Settings.008df9d5fefe37c4fb9f.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Settings.30266af0f2096bf85c32.js.map

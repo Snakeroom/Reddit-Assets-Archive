@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Premium~reddit-components-Econ-Prediction-PremiumModal.7d9698b568df1e4626e4.js
-// Retrieved at 6/29/2022, 12:00:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Premium~reddit-components-Econ-Prediction-PremiumModal.fb13fa5f1a3cb41e263f.js
+// Retrieved at 6/30/2022, 12:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Premium~reddit-components-Econ-Prediction-PremiumModal"], {
 		"./node_modules/@stripe/react-stripe-js/dist/react-stripe.umd.js": function(e, t, r) {
@@ -539,6 +539,13 @@
 					}
 				}
 		},
+		"./src/reddit/actions/economics/powerups/helpers.ts": function(e, t, r) {
+			"use strict";
+			r.d(t, "a", (function() {
+				return n
+			}));
+			const n = e => (null == e ? void 0 : e.map(e => e.message).join(", ")) || ""
+		},
 		"./src/reddit/actions/gold/productOfferPurchase.ts": function(e, t, r) {
 			"use strict";
 			r.d(t, "b", (function() {
@@ -785,7 +792,7 @@
 					} catch (o) {
 						p.c.captureException(o)
 					}
-				}, A = Object(m.a)(b.O), M = Object(m.a)(b.P), T = Object(m.a)(b.Q), B = e => async (t, r) => {
+				}, A = Object(m.a)(b.N), M = Object(m.a)(b.O), T = Object(m.a)(b.P), B = e => async (t, r) => {
 					await t(A(e)), t(Object(l.f)({
 						kind: f.b.Error,
 						duration: l.a,
@@ -819,21 +826,21 @@
 							hk: "4yuT5m"
 						})))
 					}
-				}, R = Object(m.a)(b.S), G = e => async (t, r) => {
-					t(R(e)), t(Object(j.m)(e.subredditId, {
+				}, R = Object(m.a)(b.R), G = e => async (t, r) => {
+					t(R(e)), t(Object(j.k)(e.subredditId, {
 						forceLoad: !0,
 						fullData: !1
 					})), t(Object(v.g)(d.a.ECON_POWERUPS_PURCHASE)), t(Object(v.h)(d.a.ECON_POWERUPS_SUCCESS))
-				}, U = Object(m.a)(b.W), D = e => {
+				}, U = Object(m.a)(b.V), D = e => {
 					let {
 						user: t
 					} = e;
 					return async e => {
-						await e(Object(j.o)(!0)), e(U({
+						await e(Object(j.m)(!0)), e(U({
 							user: t
 						}))
 					}
-				}, q = Object(m.a)(b.ab)
+				}, q = Object(m.a)(b.Z)
 		},
 		"./src/reddit/actions/gold/productOffers.ts": function(e, t, r) {
 			"use strict";
@@ -859,18 +866,18 @@
 				p = r("./src/redditGQL/operations/ProductOffers.json");
 			var f = r("./src/reddit/selectors/gold/productOffers.ts"),
 				b = r("./src/reddit/actions/gold/constants.ts");
-			const h = Object(a.a)(b.db),
-				g = Object(a.a)(b.cb),
-				y = Object(a.a)(b.bb),
-				j = Object(a.a)(b.Z),
-				v = Object(a.a)(b.Y),
-				O = Object(a.a)(b.X),
-				k = Object(a.a)(b.Db),
-				P = Object(a.a)(b.Bb),
-				E = Object(a.a)(b.Cb),
-				w = Object(a.a)(b.Gb),
-				x = Object(a.a)(b.Fb),
-				_ = Object(a.a)(b.Eb),
+			const h = Object(a.a)(b.cb),
+				g = Object(a.a)(b.bb),
+				y = Object(a.a)(b.ab),
+				j = Object(a.a)(b.Y),
+				v = Object(a.a)(b.X),
+				O = Object(a.a)(b.W),
+				k = Object(a.a)(b.Cb),
+				P = Object(a.a)(b.Ab),
+				E = Object(a.a)(b.Bb),
+				w = Object(a.a)(b.Fb),
+				x = Object(a.a)(b.Eb),
+				_ = Object(a.a)(b.Db),
 				C = e => async t => {
 					t(Object(i.f)({
 						kind: c.b.Error,
@@ -2669,4 +2676,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Premium~reddit-components-Econ-Prediction-PremiumModal.7d9698b568df1e4626e4.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Premium~reddit-components-Econ-Prediction-PremiumModal.fb13fa5f1a3cb41e263f.js.map

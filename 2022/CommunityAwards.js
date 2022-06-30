@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CommunityAwards.f22db601033bc6aec6ff.js
-// Retrieved at 6/29/2022, 1:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CommunityAwards.8b3f750d24ee0522ad2b.js
+// Retrieved at 6/30/2022, 12:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CommunityAwards"], {
 		"./src/reddit/actions/gold/communityAwards/communityAwards.ts": function(e, t, r) {
@@ -31,7 +31,7 @@
 			})), r.d(t, "awardSheetInfoLoaded", (function() {
 				return F
 			})), r.d(t, "removeCommunityAward", (function() {
-				return M
+				return q
 			})), r.d(t, "removeCommunityAwardSuccessful", (function() {
 				return J
 			})), r.d(t, "disableAwardinCommunity", (function() {
@@ -223,7 +223,7 @@
 						const e = I();
 						t(T(e))
 					}
-				}, P = Object(n.a)(O.H), L = Object(n.a)(O.G), G = Object(n.a)(O.M), N = Object(n.a)(O.F), T = e => async (t, r) => {
+				}, P = Object(n.a)(O.H), L = Object(n.a)(O.G), G = Object(n.a)(O.L), N = Object(n.a)(O.F), T = e => async (t, r) => {
 					await t(N(e)), t(Object(o.f)({
 						kind: c.b.Error,
 						duration: o.a,
@@ -309,11 +309,11 @@
 							}))
 						}
 					}
-				}, U = Object(n.a)(O.c), Q = Object(n.a)(O.a), F = Object(n.a)(O.b), M = (e, t) => async (r, n, i) => {
+				}, U = Object(n.a)(O.c), Q = Object(n.a)(O.a), F = Object(n.a)(O.b), q = (e, t) => async (r, n, i) => {
 					let {
 						gqlContext: s
 					} = i;
-					r(q());
+					r(M());
 					try {
 						if ((await Object(m.m)(s(), t)).error) {
 							const e = y();
@@ -339,7 +339,7 @@
 						const e = y();
 						await r(H(e))
 					}
-				}, q = Object(n.a)(O.ib), J = Object(n.a)(O.jb), B = Object(n.a)(O.hb), H = e => async (t, r) => {
+				}, M = Object(n.a)(O.hb), J = Object(n.a)(O.ib), B = Object(n.a)(O.gb), H = e => async (t, r) => {
 					await t(B(e)), t(Object(o.f)({
 						kind: c.b.Error,
 						duration: o.a,
@@ -713,4 +713,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommunityAwards.f22db601033bc6aec6ff.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommunityAwards.8b3f750d24ee0522ad2b.js.map

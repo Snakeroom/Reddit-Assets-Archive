@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModerationPages.8632c68fa02d6eed7a0d.js
-// Retrieved at 6/30/2022, 12:10:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModerationPages.2d30bed7c8254df4af26.js
+// Retrieved at 6/30/2022, 12:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModerationPages"], {
 		"./src/higherOrderComponents/withImageUploads.tsx": function(e, t, s) {
@@ -396,6 +396,13 @@
 					})))
 				}
 		},
+		"./src/reddit/actions/economics/powerups/helpers.ts": function(e, t, s) {
+			"use strict";
+			s.d(t, "a", (function() {
+				return n
+			}));
+			const n = e => (null == e ? void 0 : e.map(e => e.message).join(", ")) || ""
+		},
 		"./src/reddit/actions/economics/powerups/index.ts": function(e, t, s) {
 			"use strict";
 			s.d(t, "b", (function() {
@@ -461,7 +468,7 @@
 					let {
 						gqlContext: o
 					} = a;
-					const r = await Object(l.d)(o(), {
+					const r = await Object(l.c)(o(), {
 						input: e
 					});
 					if (r.error || !r.ok) throw new Error(`Failed to get emoji upload lease. subredditId: ${e.subredditId}; userId: ${t.userId}`);
@@ -1279,7 +1286,7 @@
 						K = f.i;
 						break;
 					case o.gc.Powerups:
-						K = x.m;
+						K = x.k;
 						break;
 					case o.gc.Muted:
 						K = z.b;
@@ -1369,7 +1376,7 @@
 				me && !Object(xe.b)(G, me) && await t(Object(A.g)(me));
 				const _e = !!me && Object(xe.c)(ae, me),
 					Ce = Object(ue.s)(G),
-					ye = Object(pe.o)(ae, {
+					ye = Object(pe.n)(ae, {
 						subredditId: ke
 					}),
 					Oe = C && Object(y.w)(ae, {
@@ -3482,7 +3489,7 @@
 						const {
 							comment: s
 						} = t;
-						return Object(h.h)(e, t) || Object(x.o)(e, {
+						return Object(h.h)(e, t) || Object(x.n)(e, {
 							subredditId: s.subredditId
 						})
 					},
@@ -4259,7 +4266,7 @@
 						let {
 							comment: s
 						} = t;
-						return Object(Me.j)(e, s.subredditId)
+						return Object(Me.i)(e, s.subredditId)
 					}
 				}));
 			t.a = He(e => {
@@ -8118,7 +8125,7 @@
 					isExpanded: j.m,
 					showPromotedCTA: ve.a,
 					layout: ie.S,
-					moderatorPermissions: y.n,
+					moderatorPermissions: y.m,
 					poll: (e, t) => {
 						const s = e.posts.metaMap[t.postId];
 						if (s) return e.polls.models[s]
@@ -8128,7 +8135,7 @@
 						let {
 							subreddit: s
 						} = t;
-						return !!s && Object(y.j)(e, s.id)
+						return !!s && Object(y.i)(e, s.id)
 					}
 				}),
 				we = (e, t) => {
@@ -14884,7 +14891,7 @@
 					isInvitePending: S.h,
 					moderators: S.o,
 					moderatorsList: S.j,
-					moderatorPermissions: j.o,
+					moderatorPermissions: j.n,
 					isAddUserModalOpen: Object(y.b)("ModerationPage--Modal--AddModerator"),
 					isEditableListPending: S.a,
 					isInvitePendingModalOpen: Object(y.b)("ModerationPage--Modal--InvitePending"),
@@ -14898,7 +14905,7 @@
 						let {
 							subredditId: s
 						} = t;
-						return Object(j.j)(e, s)
+						return Object(j.i)(e, s)
 					}
 				}),
 				We = Object(i.b)(He, (e, t) => {
@@ -16121,7 +16128,7 @@
 					shouldShowSubscribeButton: j,
 					subredditOrProfile: S,
 					tooltipType: w
-				} = e, N = !!y, I = Object(E.a)(), T = Object(o.e)(e => !!S && Object(r.j)(e, S.id));
+				} = e, N = !!y, I = Object(E.a)(), T = Object(o.e)(e => !!S && Object(r.i)(e, S.id));
 				return a.a.createElement("div", {
 					className: _.a.metaContainer
 				}, !n && !O.isSponsored && S && a.a.createElement(l.a, {
@@ -16423,7 +16430,7 @@
 				})), !g && a.a.createElement(S.p, {
 					on: h,
 					onClick: () => (e => {
-						n(Object(E.w)("comments_with_gifs", e, !e)), s(Object(d.n)(t, {
+						n(Object(E.w)("comments_with_gifs", e, !e)), s(Object(d.l)(t, {
 							[w.a.CommentsWithGifs]: e
 						}))
 					})(!h),
@@ -21178,7 +21185,7 @@
 					key: e
 				}))),
 				ke = Object(u.c)({
-					hasModConfigPerms: (e, t) => Object(z.c)(B.c.config)(e, {
+					hasModConfigPerms: (e, t) => Object(z.b)(B.c.config)(e, {
 						subredditId: t.subreddit.id
 					}),
 					isConfirmModalOpen: e => "SubredditRule--Modal--DeleteConfirmation" === Object(W.a)(e),
@@ -21461,7 +21468,7 @@
 					isExpanded: h.m,
 					isLoggedIn: f.Q,
 					showPromotedCTA: g.a,
-					moderatorPermissions: p.n,
+					moderatorPermissions: p.m,
 					modModeEnabled: d.U,
 					poll: (e, t) => {
 						const s = e.posts.metaMap[t.postId];
@@ -24893,7 +24900,7 @@
 						} = t.match.params, o = n ? Object(N.F)(e, n) : null === (s = Object(S.j)(e, {
 							profileName: a
 						})) || void 0 === s ? void 0 : s.id;
-						if (o) return Object(O.o)(e, {
+						if (o) return Object(O.n)(e, {
 							subredditId: o
 						})
 					}
@@ -25348,4 +25355,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.8632c68fa02d6eed7a0d.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.2d30bed7c8254df4af26.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-MediumPost.be732ec487629de7fbfa.js
-// Retrieved at 6/30/2022, 10:00:07 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-MediumPost.2a984fd5a2b9d4aa20b8.js
+// Retrieved at 6/30/2022, 12:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-MediumPost"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -1492,7 +1492,7 @@
 			const N = Object(d.a)(e => e && Object(u.c)(e)),
 				w = Object(a.c)({
 					areFlairRestrictionsEnabled: l.d.flairRestrictions,
-					isModerator: b.h
+					isModerator: b.g
 				}),
 				P = Object(i.b)(w);
 			t.a = P(e => {
@@ -1734,7 +1734,7 @@
 					isCurrentUserProfilePost: ee.l,
 					isRecommendationPost: (e, t) => !!t.post.recommendationContext && Object(se.Q)(e),
 					showPromotedCTA: te.a,
-					moderatorPermissions: X.n,
+					moderatorPermissions: X.m,
 					shouldShowNsfwListingBelow: K.b,
 					showEditFlair: $.a,
 					showMedia: M.s,
@@ -1742,7 +1742,7 @@
 						let {
 							subreddit: s
 						} = t;
-						return !!s && Object(X.j)(e, s.id)
+						return !!s && Object(X.i)(e, s.id)
 					},
 					isOptionalTextEnabled: Z.a
 				}),
@@ -4415,7 +4415,7 @@
 				}),
 				a = e => t => {
 					const s = o.hb(t),
-						i = Object(r.u)(t, {
+						i = Object(r.t)(t, {
 							subredditId: null == s ? void 0 : s.id
 						}),
 						{
@@ -5085,7 +5085,7 @@
 						postId: t
 					});
 					if (r && r.isQuarantined) return !1;
-					const c = !s && !!Object(o.n)(e, {
+					const c = !s && !!Object(o.m)(e, {
 						postId: t
 					});
 					return Object(a.Db)(e, {
@@ -5557,4 +5557,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-MediumPost.be732ec487629de7fbfa.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-MediumPost.2a984fd5a2b9d4aa20b8.js.map

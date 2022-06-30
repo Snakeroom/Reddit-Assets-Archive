@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Reddit~StandalonePostPage.83acf41ec170427f5b91.js
-// Retrieved at 6/30/2022, 10:00:07 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Reddit~StandalonePostPage.800b0eb419e7f921f485.js
+// Retrieved at 6/30/2022, 12:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Reddit~StandalonePostPage"], {
 		"./src/higherOrderComponents/asModal/helpers.ts": function(e, t, n) {
@@ -797,7 +797,7 @@
 			const k = Object(d.a)(e => e && Object(u.c)(e)),
 				I = Object(a.c)({
 					areFlairRestrictionsEnabled: l.d.flairRestrictions,
-					isModerator: h.h
+					isModerator: h.g
 				}),
 				A = Object(i.b)(I);
 			t.a = A(e => {
@@ -2377,7 +2377,7 @@
 				}),
 				a = e => t => {
 					const n = o.hb(t),
-						i = Object(r.u)(t, {
+						i = Object(r.t)(t, {
 							subredditId: null == n ? void 0 : n.id
 						}),
 						{
@@ -2811,7 +2811,7 @@
 						postId: t
 					});
 					if (r && r.isQuarantined) return !1;
-					const c = !n && !!Object(o.n)(e, {
+					const c = !n && !!Object(o.m)(e, {
 						postId: t
 					});
 					return Object(a.Db)(e, {
@@ -3093,4 +3093,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit~StandalonePostPage.83acf41ec170427f5b91.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit~StandalonePostPage.800b0eb419e7f921f485.js.map

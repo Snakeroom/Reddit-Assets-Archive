@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-NotificationUnit-Button.d89f5f84678a31a40545.js
-// Retrieved at 6/29/2022, 1:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-NotificationUnit-Button.d744becb56c113e2eb75.js
+// Retrieved at 6/30/2022, 12:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-NotificationUnit-Button"], {
 		"./node_modules/lodash/map.js": function(t, e, n) {
@@ -1244,7 +1244,7 @@
 						let {
 							postId: n
 						} = e;
-						const o = Object(U.n)(t, {
+						const o = Object(U.m)(t, {
 							postId: n
 						});
 						return !!o && o.posts
@@ -1256,7 +1256,7 @@
 							postId: n
 						} = e;
 						const o = Object(B.v)(t),
-							r = !!Object(U.n)(t, {
+							r = !!Object(U.m)(t, {
 								postId: n
 							}),
 							i = Object(F.G)(t, {
@@ -2835,4 +2835,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-NotificationUnit-Button.d89f5f84678a31a40545.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-NotificationUnit-Button.d744becb56c113e2eb75.js.map

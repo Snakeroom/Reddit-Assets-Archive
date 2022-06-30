@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Econ-Prediction-CreatingTournamentBanner.52eff7017c5eac7b0a40.js
-// Retrieved at 6/8/2022, 10:20:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Econ-Prediction-CreatingTournamentBanner.37ed8954ffcc8796611a.js
+// Retrieved at 6/30/2022, 12:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Econ-Prediction-CreatingTournamentBanner"], {
 		"./src/reddit/components/Econ/Prediction/CreatingTournamentBanner/index.m.less": function(e, t, n) {
@@ -44,7 +44,7 @@
 					j = Object(r.e)(e => !!t && Object(m.j)(e, {
 						subredditId: t.id
 					}));
-				return Object(r.e)(e => !!t && Object(b.i)(e, {
+				return Object(r.e)(e => !!t && Object(b.h)(e, {
 					subredditId: t.id
 				})) && j ? s.a.createElement("div", {
 					className: x.a.creatingTournamentBanner
@@ -76,4 +76,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Econ-Prediction-CreatingTournamentBanner.52eff7017c5eac7b0a40.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Econ-Prediction-CreatingTournamentBanner.37ed8954ffcc8796611a.js.map

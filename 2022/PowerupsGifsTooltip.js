@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PowerupsGifsTooltip.142d2f5c788a93172f38.js
-// Retrieved at 6/30/2022, 10:00:07 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PowerupsGifsTooltip.5756000d4fbe03bde661.js
+// Retrieved at 6/30/2022, 12:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PowerupsGifsTooltip"], {
 		"./src/reddit/components/RichTextEditor/media/GifTooltip/BaseTooltip.m.less": function(e, t, s) {
@@ -427,7 +427,7 @@
 					s = Object(n.d)(),
 					[u, g] = Object(i.useState)(!1),
 					b = () => {
-						t(Object(d.t)()), s(Object(r.g)("gif_picker"))
+						t(Object(d.t)()), s(Object(r.e)("gif_picker"))
 					};
 				return o.a.createElement(h.a, {
 					editorState: e.editorState,
@@ -507,4 +507,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PowerupsGifsTooltip.142d2f5c788a93172f38.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PowerupsGifsTooltip.5756000d4fbe03bde661.js.map

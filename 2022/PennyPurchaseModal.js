@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PennyPurchaseModal.442fd2786beb996306f1.js
-// Retrieved at 6/29/2022, 1:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PennyPurchaseModal.93148b2c2edfe1e0e83f.js
+// Retrieved at 6/30/2022, 12:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PennyPurchaseModal"], {
 		"./node_modules/lodash/uniqueId.js": function(e, t, a) {
@@ -58,7 +58,7 @@
 			})), a.d(t, "c", (function() {
 				return M
 			})), a.d(t, "a", (function() {
-				return R
+				return B
 			})), a.d(t, "i", (function() {
 				return F
 			})), a.d(t, "f", (function() {
@@ -287,13 +287,13 @@
 					} catch (s) {
 						p.c.captureException(s)
 					}
-				}, I = Object(u.a)(b.O), T = Object(u.a)(b.P), A = Object(u.a)(b.Q), B = e => async (t, a) => {
+				}, I = Object(u.a)(b.N), T = Object(u.a)(b.O), A = Object(u.a)(b.P), R = e => async (t, a) => {
 					await t(I(e)), t(Object(l.f)({
 						kind: h.b.Error,
 						duration: l.a,
 						text: e
 					}))
-				}, R = (e, t, a) => async (n, s, o) => {
+				}, B = (e, t, a) => async (n, s, o) => {
 					let {
 						gqlContext: c
 					} = o;
@@ -308,34 +308,34 @@
 								{
 									errors: r
 								} = e.data.cancelEconRecurringPayment;
-							if (r && r.length) return void n(B(r[0].message));
+							if (r && r.length) return void n(R(r[0].message));
 							n(A({
 								subredditId: t,
 								allocatedAt: a
 							}))
-						} else n(B(r.fbt._("Something went wrong", null, {
+						} else n(R(r.fbt._("Something went wrong", null, {
 							hk: "4yuT5m"
 						})))
 					} catch (d) {
-						p.c.captureException(d), n(B(r.fbt._("Something went wrong", null, {
+						p.c.captureException(d), n(R(r.fbt._("Something went wrong", null, {
 							hk: "4yuT5m"
 						})))
 					}
-				}, D = Object(u.a)(b.S), F = e => async (t, a) => {
-					t(D(e)), t(Object(y.m)(e.subredditId, {
+				}, D = Object(u.a)(b.R), F = e => async (t, a) => {
+					t(D(e)), t(Object(y.k)(e.subredditId, {
 						forceLoad: !0,
 						fullData: !1
 					})), t(Object(P.g)(i.a.ECON_POWERUPS_PURCHASE)), t(Object(P.h)(i.a.ECON_POWERUPS_SUCCESS))
-				}, G = Object(u.a)(b.W), L = e => {
+				}, G = Object(u.a)(b.V), L = e => {
 					let {
 						user: t
 					} = e;
 					return async e => {
-						await e(Object(y.o)(!0)), e(G({
+						await e(Object(y.m)(!0)), e(G({
 							user: t
 						}))
 					}
-				}, Q = Object(u.a)(b.ab)
+				}, Q = Object(u.a)(b.Z)
 		},
 		"./src/reddit/components/CheckoutForm/index.m.less": function(e, t, a) {
 			e.exports = {
@@ -436,7 +436,7 @@
 		"./src/reddit/components/CoinPurchaseModal/SelectPaymentPage.tsx": function(e, t, a) {
 			"use strict";
 			a.d(t, "a", (function() {
-				return Y
+				return X
 			}));
 			var r = a("./node_modules/@stripe/react-stripe-js/dist/react-stripe.umd.js"),
 				n = a("./node_modules/fbt/lib/FbtPublic.js"),
@@ -522,9 +522,9 @@
 				}),
 				T = a("./src/reddit/controls/Button/index.tsx"),
 				A = a("./src/reddit/helpers/trackers/goldPayment.ts"),
-				B = a("./src/reddit/selectors/gold/productOffers.ts"),
-				R = a("./src/reddit/components/CoinPurchaseModal/index.m.less"),
-				D = a.n(R);
+				R = a("./src/reddit/selectors/gold/productOffers.ts"),
+				B = a("./src/reddit/components/CoinPurchaseModal/index.m.less"),
+				D = a.n(B);
 			const {
 				fbt: F
 			} = a("./node_modules/fbt/lib/FbtPublic.js"), G = e => {
@@ -544,7 +544,7 @@
 				const E = Object(b.a)(),
 					j = Object(m.d)(),
 					O = Object(m.e)(p.g),
-					k = Object(m.e)(B.a),
+					k = Object(m.e)(R.a),
 					w = !!r;
 				if (w && !O) {
 					const e = () => {
@@ -604,9 +604,9 @@
 				Q = a("./src/reddit/hooks/useLocale.ts"),
 				H = a("./src/reddit/icons/fonts/Coin/index.tsx");
 			const {
-				fbt: q
+				fbt: V
 			} = a("./node_modules/fbt/lib/FbtPublic.js");
-			var V = e => {
+			var q = e => {
 				var t;
 				const a = Object(Q.a)();
 				return o.a.createElement("div", {
@@ -618,7 +618,7 @@
 					className: D.a.coinIcon
 				}), o.a.createElement("div", {
 					className: D.a.titleMain
-				}, q._("Buy {amount}!", [q._param("amount", Object(l.b)(e.purchasePackage.coins, {
+				}, V._("Buy {amount}!", [V._param("amount", Object(l.b)(e.purchasePackage.coins, {
 					locale: a,
 					type: i.b.Reddit,
 					currency: i.a
@@ -626,7 +626,7 @@
 					hk: "3VNw69"
 				})), o.a.createElement("div", {
 					className: D.a.titleDescription
-				}, q._("You're purchasing Coins for yourself, {userName}!", [q._param("userName", e.userName)], {
+				}, V._("You're purchasing Coins for yourself, {userName}!", [V._param("userName", e.userName)], {
 					hk: "ZGCBt"
 				})), o.a.createElement("img", {
 					className: D.a.goldPackage,
@@ -690,8 +690,8 @@
 				},
 				J = a("./src/reddit/components/PaymentMethodSelector/index.tsx"),
 				U = a("./src/reddit/components/StripePaymentForm/index.tsx"),
-				X = a("./src/reddit/helpers/createEmojiText/index.tsx");
-			const Y = e => {
+				Z = a("./src/reddit/helpers/createEmojiText/index.tsx");
+			const X = e => {
 				const t = Object(Q.a)(),
 					a = Object(c.a)(),
 					s = e.purchasePackage ? e.purchasePackage.pennies : e.selectedAward.pennyPrice || 0;
@@ -703,7 +703,7 @@
 					purchasePackage: e.purchasePackage,
 					userName: e.userName,
 					onCloseClick: e.onCloseModal
-				}) : e.purchasePackage && o.a.createElement(V, {
+				}) : e.purchasePackage && o.a.createElement(q, {
 					coinBalance: e.coinBalance,
 					purchasePackage: e.purchasePackage,
 					userName: e.userName,
@@ -750,7 +750,7 @@
 				})({
 					...e,
 					locale: t
-				}), Object(X.a)(n.fbt._("By purchasing Coins and Awards, you agree to the :agreement:.", null, {
+				}), Object(Z.a)(n.fbt._("By purchasing Coins and Awards, you agree to the :agreement:.", null, {
 					hk: "1eCqza"
 				}), {
 					":agreement:": o.a.createElement("a", {
@@ -1567,7 +1567,7 @@
 					onClickDeleteCard: t => e(Object(d.c)(t)),
 					onToggleRememberCard: () => e(Object(i.toggleRememberCard)())
 				}));
-			class B extends n.a.PureComponent {
+			class R extends n.a.PureComponent {
 				render() {
 					const {
 						className: e,
@@ -1601,7 +1601,7 @@
 					}))
 				}
 			}
-			t.a = A(B)
+			t.a = A(R)
 		},
 		"./src/reddit/controls/ErrorText/SeeAllTextModal/index.m.less": function(e, t, a) {
 			e.exports = {
@@ -2051,4 +2051,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PennyPurchaseModal.442fd2786beb996306f1.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PennyPurchaseModal.93148b2c2edfe1e0e83f.js.map

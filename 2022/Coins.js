@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Coins.3d90ae42bfb736392763.js
-// Retrieved at 6/23/2022, 6:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Coins.fc4fa3684f64eefd7095.js
+// Retrieved at 6/30/2022, 12:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Coins"], {
 		"./node_modules/@stripe/react-stripe-js/dist/react-stripe.umd.js": function(e, t, n) {
@@ -554,6 +554,13 @@
 							return s.c
 					}
 				}
+		},
+		"./src/reddit/actions/economics/powerups/helpers.ts": function(e, t, n) {
+			"use strict";
+			n.d(t, "a", (function() {
+				return r
+			}));
+			const r = e => (null == e ? void 0 : e.map(e => e.message).join(", ")) || ""
 		},
 		"./src/reddit/actions/goldPurchaseModals/coinPurchaseModal.ts": function(e, t, n) {
 			"use strict";
@@ -2332,4 +2339,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Coins.3d90ae42bfb736392763.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Coins.fc4fa3684f64eefd7095.js.map

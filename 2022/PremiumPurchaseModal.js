@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PremiumPurchaseModal.58d993a7128c26927e1b.js
-// Retrieved at 6/30/2022, 10:00:07 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PremiumPurchaseModal.45acc23c335eb34f82a8.js
+// Retrieved at 6/30/2022, 12:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PremiumPurchaseModal"], {
 		"./node_modules/@stripe/react-stripe-js/dist/react-stripe.umd.js": function(e, t, r) {
@@ -793,7 +793,7 @@
 					} catch (s) {
 						p.c.captureException(s)
 					}
-				}, M = Object(m.a)(b.O), T = Object(m.a)(b.P), A = Object(m.a)(b.Q), R = e => async (t, r) => {
+				}, M = Object(m.a)(b.N), T = Object(m.a)(b.O), A = Object(m.a)(b.P), R = e => async (t, r) => {
 					await t(M(e)), t(Object(l.f)({
 						kind: f.b.Error,
 						duration: l.a,
@@ -827,21 +827,21 @@
 							hk: "4yuT5m"
 						})))
 					}
-				}, L = Object(m.a)(b.S), F = e => async (t, r) => {
-					t(L(e)), t(Object(v.m)(e.subredditId, {
+				}, L = Object(m.a)(b.R), F = e => async (t, r) => {
+					t(L(e)), t(Object(v.k)(e.subredditId, {
 						forceLoad: !0,
 						fullData: !1
 					})), t(Object(C.g)(d.a.ECON_POWERUPS_PURCHASE)), t(Object(C.h)(d.a.ECON_POWERUPS_SUCCESS))
-				}, D = Object(m.a)(b.W), U = e => {
+				}, D = Object(m.a)(b.V), U = e => {
 					let {
 						user: t
 					} = e;
 					return async e => {
-						await e(Object(v.o)(!0)), e(D({
+						await e(Object(v.m)(!0)), e(D({
 							user: t
 						}))
 					}
-				}, G = Object(m.a)(b.ab)
+				}, G = Object(m.a)(b.Z)
 		},
 		"./src/reddit/actions/goldPurchaseModals/payment.ts": function(e, t, r) {
 			"use strict";
@@ -1430,8 +1430,8 @@
 				G = r("./src/reddit/components/Econ/ProductOfferPurchaseButton/Stripe.tsx"),
 				q = r("./src/reddit/components/PaymentMethodSelector/index.tsx"),
 				Q = r("./src/reddit/components/StripePaymentForm/index.tsx"),
-				W = r("./src/reddit/hooks/useLocale.ts"),
-				V = r("./src/reddit/hooks/useStripePromise.ts"),
+				V = r("./src/reddit/hooks/useLocale.ts"),
+				W = r("./src/reddit/hooks/useStripePromise.ts"),
 				H = r("./src/reddit/models/Payments/index.ts");
 			var Y = e => a.a.createElement("div", {
 				className: R.a.premiumPurchaseHeader,
@@ -1460,8 +1460,8 @@
 				"data-redditstyle": !0
 			})));
 			var J = e => {
-				const t = Object(V.a)(),
-					r = Object(W.b)(),
+				const t = Object(W.a)(),
+					r = Object(V.b)(),
 					n = Object(s.d)(),
 					o = Object(s.e)(O.k),
 					c = Object(D.b)(e.total, {
@@ -1587,7 +1587,7 @@
 					onPaymentSelected: t => e(Object(p.selectPaymentMethod)(t)),
 					onLoadSavedCards: () => e(Object(m.e)())
 				})),
-				z = Object(i.a)(e => {
+				Z = Object(i.a)(e => {
 					let {
 						sendEvent: t,
 						activePage: r,
@@ -1647,7 +1647,7 @@
 					}
 				}
 				render() {
-					return a.a.createElement(z, $({}, this.props, {
+					return a.a.createElement(Z, $({}, this.props, {
 						className: Object(d.a)(this.props.className, R.a.premiumPurchaseModal),
 						onCloseModal: this.onCloseModal,
 						onOverlayClick: this.onTryCloseModal,
@@ -2773,4 +2773,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PremiumPurchaseModal.58d993a7128c26927e1b.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PremiumPurchaseModal.45acc23c335eb34f82a8.js.map

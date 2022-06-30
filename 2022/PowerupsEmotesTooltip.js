@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PowerupsEmotesTooltip.5ecb9e9e06a5ee038576.js
-// Retrieved at 6/30/2022, 10:00:07 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PowerupsEmotesTooltip.6336f6f90736630f6723.js
+// Retrieved at 6/30/2022, 12:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PowerupsEmotesTooltip"], {
 		"./src/reddit/actions/economics/powerups/constants.ts": function(e, t, o) {
@@ -32,6 +32,13 @@
 				d = "POWERUPS__SUBREDDIT_USER_POWERUPS_FLAIR_PREFERENCE_UPDATED",
 				l = "POWERUPS__SUBREDDIT_USER_POWERUPS_FLAIR_PREFERENCE_UPDATE_FAILED",
 				u = "POWERUPS__SUBREDDIT_USER_POWERUPS_FLAIR_VISIBILITY_UPDATE"
+		},
+		"./src/reddit/actions/economics/powerups/helpers.ts": function(e, t, o) {
+			"use strict";
+			o.d(t, "a", (function() {
+				return s
+			}));
+			const s = e => (null == e ? void 0 : e.map(e => e.message).join(", ")) || ""
 		},
 		"./src/reddit/actions/economics/powerups/index.ts": function(e, t, o) {
 			"use strict";
@@ -98,7 +105,7 @@
 					let {
 						gqlContext: i
 					} = n;
-					const r = await Object(c.d)(i(), {
+					const r = await Object(c.c)(i(), {
 						input: e
 					});
 					if (r.error || !r.ok) throw new Error(`Failed to get emoji upload lease. subredditId: ${e.subredditId}; userId: ${t.userId}`);
@@ -440,8 +447,8 @@
 					T = Object(r.a)(),
 					[O, R] = Object(s.useState)(null),
 					P = () => R(null),
-					[N, v] = Object(s.useState)(!1),
-					S = Object(u.e)(e => Object(w.s)(e, {
+					[v, N] = Object(s.useState)(!1),
+					S = Object(u.e)(e => Object(w.r)(e, {
 						subredditId: o
 					})),
 					U = Object(u.e)(e => Object(w.g)(e, {
@@ -566,7 +573,7 @@
 				}))))), !c && n.a.createElement(_.t, {
 					className: C.a.unlockButton,
 					onClick: () => {
-						T(Object(i.s)()), d(Object(E.g)("emote_picker"))
+						T(Object(i.s)()), d(Object(E.e)("emote_picker"))
 					},
 					priority: _.c.Primary
 				}, l.fbt._("Unlock Emojis", null, {
@@ -576,8 +583,8 @@
 					onCancel: P,
 					onClose: P,
 					onConfirm: async () => {
-						if (O && !N) try {
-							v(!0), await d(Object(p.a)({
+						if (O && !v) try {
+							N(!0), await d(Object(p.a)({
 								subredditId: o,
 								emojiId: O.id
 							})), P(), T(Object(i.b)(1, "powerups")), d(Object(b.f)({
@@ -596,7 +603,7 @@
 								})
 							}))
 						} finally {
-							v(!1)
+							N(!1)
 						}
 					}
 				}))
@@ -604,7 +611,7 @@
 			var R = o("./src/reddit/components/RichTextEditor/emotes/Powerups/tooltip.m.less"),
 				P = o.n(R);
 			const {
-				fbt: N
+				fbt: v
 			} = o("./node_modules/fbt/lib/FbtPublic.js");
 			t.default = e => {
 				let {
@@ -627,9 +634,9 @@
 					onSetApi: l,
 					title: n.a.createElement(() => n.a.createElement(n.a.Fragment, null, n.a.createElement(a.a, {
 						className: P.a.headingPowerupsBolt
-					}), m ? N._("Unlocked with Powerups", null, {
+					}), m ? v._("Unlocked with Powerups", null, {
 						hk: "4am2RN"
-					}) : N._("Unlock with Powerups", null, {
+					}) : v._("Unlock with Powerups", null, {
 						hk: "Dbu9T"
 					})), null)
 				}, n.a.createElement("div", {
@@ -813,4 +820,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PowerupsEmotesTooltip.5ecb9e9e06a5ee038576.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PowerupsEmotesTooltip.6336f6f90736630f6723.js.map

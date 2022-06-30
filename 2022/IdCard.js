@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/IdCard.68b868a51fd9c83f40e3.js
-// Retrieved at 6/30/2022, 10:00:07 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/IdCard.20116baeab30ac98f518.js
+// Retrieved at 6/30/2022, 12:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["IdCard", "AchievementsActions", "ContributorRequestButton"], {
 		"./node_modules/autosize/dist/autosize.js": function(e, t, n) {
@@ -574,7 +574,7 @@
 					!t && o || await n(j(e, [i.id]))
 				}, S = e => async (t, n) => {
 					if (!e) return !1;
-					await t(Object(l.m)(e, {
+					await t(Object(l.k)(e, {
 						fullData: !0
 					}));
 					const r = n();
@@ -2924,7 +2924,7 @@
 						hk: "3aBytK"
 					}), i.a.createElement(we, {
 						onClick: () => {
-							if (d) c(Object(pe.f)());
+							if (d) c(Object(pe.d)());
 							else {
 								(e => c(Object(ue.b)({
 									username: e,
@@ -3357,7 +3357,7 @@
 				isNsfwBlurSubreddit: it.e,
 				moderatorPermissions: (e, t) => {
 					const n = Object($.F)(e, t.listingName);
-					if (n) return Object(ot.o)(e, {
+					if (n) return Object(ot.n)(e, {
 						subredditId: n
 					})
 				},
@@ -5227,7 +5227,7 @@
 				}),
 				a = e => t => {
 					const n = i.hb(t),
-						o = Object(s.u)(t, {
+						o = Object(s.t)(t, {
 							subredditId: null == n ? void 0 : n.id
 						}),
 						{
@@ -5448,7 +5448,7 @@
 					let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : o,
 						t = arguments.length > 1 ? arguments[1] : void 0;
 					switch (t.type) {
-						case s.ob:
+						case s.nb:
 							const {
 								subredditId: n, subredditAchievementFlairs: r
 							} = t.payload;
@@ -5784,4 +5784,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/IdCard.68b868a51fd9c83f40e3.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/IdCard.20116baeab30ac98f518.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/EconTopAwardersModal.be6f7533e6e46d0d0115.js
-// Retrieved at 6/29/2022, 1:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/EconTopAwardersModal.872eebcfe7fbf4451280.js
+// Retrieved at 6/30/2022, 12:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["EconTopAwardersModal"], {
 		"./src/lib/currency/centsToDollars/index.ts": function(e, t, r) {
@@ -1281,7 +1281,7 @@
 			const {
 				fbt: te
 			} = r("./node_modules/fbt/lib/FbtPublic.js"), re = Object(o.c)({
-				hasModMailPermissions: Object(u.c)(J.c.mail),
+				hasModMailPermissions: Object(u.b)(J.c.mail),
 				isUserBanned: (e, t) => !!Object(V.b)(e, {
 					subredditId: t.subredditId,
 					username: t.username
@@ -1594,7 +1594,7 @@
 						let {
 							subredditId: r
 						} = t;
-						return r ? Object(u.o)(e, {
+						return r ? Object(u.n)(e, {
 							subredditId: r
 						}) : void 0
 					},
@@ -1639,7 +1639,7 @@
 						} = t;
 						const a = Object(N.e)(e),
 							n = r || a && Object(x.F)(e, a.name);
-						return !!n && Object(u.j)(e, n)
+						return !!n && Object(u.i)(e, n)
 					},
 					trophyCase: (e, t) => Object(b.r)(e, Object(b.m)(e, t.userName)),
 					isNightMode: I.db,
@@ -2779,4 +2779,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EconTopAwardersModal.be6f7533e6e46d0d0115.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EconTopAwardersModal.872eebcfe7fbf4451280.js.map

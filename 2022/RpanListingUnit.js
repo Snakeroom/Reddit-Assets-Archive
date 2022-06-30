@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/RpanListingUnit.8ca1323e2f9e00e6b482.js
-// Retrieved at 6/30/2022, 10:00:07 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/RpanListingUnit.7d18b4e398922de7dd83.js
+// Retrieved at 6/30/2022, 12:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["RpanListingUnit"], {
 		"./node_modules/lodash/_arrayEvery.js": function(e, t) {
@@ -402,7 +402,7 @@
 				p = n("./src/reddit/selectors/subreddit.ts"),
 				h = n("./src/telemetry/index.ts"),
 				b = n("./src/reddit/actions/gold/constants.ts");
-			const f = Object(r.a)(b.L),
+			const f = Object(r.a)(b.K),
 				v = Object(r.a)(b.f),
 				g = () => async (e, t) => {
 					const r = t();
@@ -411,7 +411,7 @@
 						clickCloseModalEvent: s
 					} = await n.e("givePremiumTrackers").then(n.bind(null, "./src/reddit/helpers/trackers/givePremium.ts"));
 					Object(h.a)(s()(r))
-				}, _ = Object(r.a)(b.K), O = e => {
+				}, _ = Object(r.a)(b.J), O = e => {
 					let {
 						awardId: t,
 						correlationId: n,
@@ -438,7 +438,7 @@
 						}
 						b && Object(d.a)(b, r)
 					}
-				}, x = Object(r.a)(b.e), C = Object(r.a)(b.J), E = () => async (e, t) => {
+				}, x = Object(r.a)(b.e), C = Object(r.a)(b.I), E = () => async (e, t) => {
 					const r = t(),
 						o = Object(a.d)(r);
 					if (Object(a.g)(r)) {
@@ -966,7 +966,7 @@
 			const w = Object(d.a)(e => e && Object(u.c)(e)),
 				A = Object(a.c)({
 					areFlairRestrictionsEnabled: l.d.flairRestrictions,
-					isModerator: h.h
+					isModerator: h.g
 				}),
 				N = Object(i.b)(A);
 			t.a = N(e => {
@@ -3894,7 +3894,7 @@
 				}),
 				a = e => t => {
 					const n = o.hb(t),
-						i = Object(s.u)(t, {
+						i = Object(s.t)(t, {
 							subredditId: null == n ? void 0 : n.id
 						}),
 						{
@@ -4493,7 +4493,7 @@
 						postId: t
 					});
 					if (s && s.isQuarantined) return !1;
-					const c = !n && !!Object(o.n)(e, {
+					const c = !n && !!Object(o.m)(e, {
 						postId: t
 					});
 					return Object(a.Db)(e, {
@@ -4754,4 +4754,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RpanListingUnit.8ca1323e2f9e00e6b482.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RpanListingUnit.7d18b4e398922de7dd83.js.map

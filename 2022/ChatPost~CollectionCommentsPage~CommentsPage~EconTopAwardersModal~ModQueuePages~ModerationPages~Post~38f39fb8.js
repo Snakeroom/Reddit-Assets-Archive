@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ChatPost~CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~Post~38f39fb8.deaa780c9e37637dbdbc.js
-// Retrieved at 6/30/2022, 10:00:07 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ChatPost~CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~Post~38f39fb8.366061d7a36f05489ded.js
+// Retrieved at 6/30/2022, 12:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ChatPost~CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~Post~38f39fb8"], {
 		"./src/reddit/actions/economics/subredditPremium/actionCreators.ts": function(e, t, r) {
@@ -53,7 +53,7 @@
 				o = r("./src/reddit/actions/modal.ts"),
 				n = r("./src/reddit/constants/modals.ts"),
 				a = r("./src/reddit/actions/gold/constants.ts");
-			const i = Object(s.a)(a.lb),
+			const i = Object(s.a)(a.kb),
 				d = Object(s.a)(a.t),
 				c = e => async t => {
 					await t(d({
@@ -75,10 +75,10 @@
 				i = r("./src/reddit/endpoints/gold/topAwarded.ts"),
 				d = r("./src/reddit/actions/modal.ts"),
 				c = r("./src/reddit/actions/gold/constants.ts");
-			Object(o.a)(c.tb), Object(o.a)(c.sb), Object(o.a)(c.rb);
-			const l = Object(o.a)(c.wb),
-				u = Object(o.a)(c.vb),
-				m = Object(o.a)(c.ub),
+			Object(o.a)(c.sb), Object(o.a)(c.rb), Object(o.a)(c.qb);
+			const l = Object(o.a)(c.vb),
+				u = Object(o.a)(c.ub),
+				m = Object(o.a)(c.tb),
 				p = function(e) {
 					let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : 25;
 					return async (r, o, a) => {
@@ -104,7 +104,7 @@
 						}
 					}
 				},
-				h = Object(o.a)(c.xb),
+				h = Object(o.a)(c.wb),
 				b = e => async (t, r) => {
 					t(h({
 						postId: e
@@ -849,7 +849,7 @@
 					}))
 				},
 				Ce = r("./src/reddit/endpoints/gold/communityAwards.ts");
-			const Te = Object(l.a)(m.kb);
+			const Te = Object(l.a)(m.jb);
 			var _e, Pe = r("./src/reddit/controls/Button/index.tsx"),
 				Ne = r("./src/reddit/components/AwardBadges/FlagAwardModal/index.m.less"),
 				Se = r.n(Ne);
@@ -2533,7 +2533,7 @@
 							onMouseEnter: Ee.show,
 							onMouseLeave: Ee.hide,
 							onClick: () => {
-								q(Object(h.x)(G ? "post" : "postlist")), z(Object(u.g)("post_top_supporter_badge"))
+								q(Object(h.x)(G ? "post" : "postlist")), z(Object(u.e)("post_top_supporter_badge"))
 							},
 							ref: Ee.target.ref
 						}, o.a.createElement(w.a, {
@@ -3737,4 +3737,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatPost~CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~Post~38f39fb8.deaa780c9e37637dbdbc.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatPost~CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~Post~38f39fb8.366061d7a36f05489ded.js.map

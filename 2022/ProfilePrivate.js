@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfilePrivate.6fb6b5dcdb0b8bc83c05.js
-// Retrieved at 6/29/2022, 1:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfilePrivate.98ca90431644b15affa3.js
+// Retrieved at 6/30/2022, 12:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfilePrivate"], {
 		"./src/reddit/actions/pages/profilePrivate/index.ts": function(e, t, s) {
@@ -877,7 +877,7 @@
 						let {
 							comment: s
 						} = t;
-						return Object(Z.o)(e, {
+						return Object(Z.n)(e, {
 							subredditId: s.subredditId
 						})
 					},
@@ -2281,7 +2281,7 @@
 					shouldShowSubscribeButton: k,
 					subredditOrProfile: j,
 					tooltipType: I
-				} = e, _ = !!E, S = Object(v.a)(), L = Object(i.e)(e => !!j && Object(r.j)(e, j.id));
+				} = e, _ = !!E, S = Object(v.a)(), L = Object(i.e)(e => !!j && Object(r.i)(e, j.id));
 				return n.a.createElement("div", {
 					className: O.a.metaContainer
 				}, !o && !w.isSponsored && j && n.a.createElement(d.a, {
@@ -2971,7 +2971,7 @@
 					isExpanded: b.m,
 					isLoggedIn: g.Q,
 					showPromotedCTA: x.a,
-					moderatorPermissions: u.n,
+					moderatorPermissions: u.m,
 					modModeEnabled: l.U,
 					poll: (e, t) => {
 						const s = e.posts.metaMap[t.postId];
@@ -4350,4 +4350,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfilePrivate.6fb6b5dcdb0b8bc83c05.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfilePrivate.98ca90431644b15affa3.js.map

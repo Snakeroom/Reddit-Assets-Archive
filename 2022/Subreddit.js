@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Subreddit.0b981ffdf0012151fa32.js
-// Retrieved at 6/30/2022, 11:00:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Subreddit.6b294892d0b14809c462.js
+// Retrieved at 6/30/2022, 12:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Subreddit", "reddit-components-Econ-PredictionLeaderboard-Sidebar"], {
 		"./node_modules/@reddit/i18n-tools/runtime/helpers/locale/index.js": function(e, t, n) {
@@ -9677,7 +9677,7 @@
 			}), P = Object(c.c)({
 				isEditing: g.i,
 				isSubscriptionsPinned: v.b,
-				moderatorPermissions: f.o
+				moderatorPermissions: f.n
 			});
 			t.a = Object(i.b)(P)(e => {
 				const t = e.moderatorPermissions && r()(e.moderatorPermissions).some(e => e);
@@ -11448,7 +11448,7 @@
 				flairStyleTemplate: d.W,
 				hideNSFWPref: b.F,
 				isActive: p.j,
-				moderatorPermissions: u.n,
+				moderatorPermissions: u.m,
 				modModeEnabled: d.U,
 				showEditFlair: m.a
 			}), (e, t) => {
@@ -14438,7 +14438,7 @@
 					if (e.subreddits.progressModule[n.id]) return !1;
 					if (Object(Ne.a)(e)) return !1;
 					const t = dt(e),
-						r = Object(De.c)(Ee.c.config)(e, {
+						r = Object(De.b)(Ee.c.config)(e, {
 							subredditId: n.id
 						}),
 						o = Object(Me.D)(e, t, s, !0),
@@ -15150,7 +15150,7 @@
 					let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : a,
 						t = arguments.length > 1 ? arguments[1] : void 0;
 					switch (t.type) {
-						case r.ob:
+						case r.nb:
 							const {
 								subredditId: n, subredditAchievementFlairs: s
 							} = t.payload;
@@ -16363,4 +16363,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Subreddit.0b981ffdf0012151fa32.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Subreddit.6b294892d0b14809c462.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/EconPowerupsPurchaseModal.bac42c09f7dbfefc1913.js
-// Retrieved at 6/30/2022, 10:00:07 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/EconPowerupsPurchaseModal.c8c1fde51789013d04ff.js
+// Retrieved at 6/30/2022, 12:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["EconPowerupsPurchaseModal"], {
 		"./node_modules/@stripe/react-stripe-js/dist/react-stripe.umd.js": function(e, t, r) {
@@ -762,7 +762,7 @@
 					} catch (s) {
 						p.c.captureException(s)
 					}
-				}, I = Object(m.a)(b.O), T = Object(m.a)(b.P), A = Object(m.a)(b.Q), L = e => async (t, r) => {
+				}, I = Object(m.a)(b.N), T = Object(m.a)(b.O), A = Object(m.a)(b.P), L = e => async (t, r) => {
 					await t(I(e)), t(Object(d.f)({
 						kind: f.b.Error,
 						duration: d.a,
@@ -796,21 +796,21 @@
 							hk: "4yuT5m"
 						})))
 					}
-				}, B = Object(m.a)(b.S), D = e => async (t, r) => {
-					t(B(e)), t(Object(v.m)(e.subredditId, {
+				}, B = Object(m.a)(b.R), D = e => async (t, r) => {
+					t(B(e)), t(Object(v.k)(e.subredditId, {
 						forceLoad: !0,
 						fullData: !1
 					})), t(Object(E.g)(l.a.ECON_POWERUPS_PURCHASE)), t(Object(E.h)(l.a.ECON_POWERUPS_SUCCESS))
-				}, F = Object(m.a)(b.W), U = e => {
+				}, F = Object(m.a)(b.V), U = e => {
 					let {
 						user: t
 					} = e;
 					return async e => {
-						await e(Object(v.o)(!0)), e(F({
+						await e(Object(v.m)(!0)), e(F({
 							user: t
 						}))
 					}
-				}, H = Object(m.a)(b.ab)
+				}, H = Object(m.a)(b.Z)
 		},
 		"./src/reddit/actions/goldPurchaseModals/payment.ts": function(e, t, r) {
 			"use strict";
@@ -1157,7 +1157,7 @@
 				return a.a.createElement(R.t, {
 					priority: R.c.Primary,
 					onClick: () => {
-						i(Object(P.k)(r, c, n))
+						i(Object(P.i)(r, c, n))
 					},
 					className: Object(d.a)(t, q.a.button),
 					disabled: o
@@ -1330,7 +1330,7 @@
 				powerupsCount: j.d,
 				powerupPrice: w.c,
 				stripeErrorMessage: N.j,
-				userPowerupsData: j.w
+				userPowerupsData: j.v
 			});
 			var le = Object(s.b)(ie)((function(e) {
 					const {
@@ -1365,14 +1365,14 @@
 						className: se.a.progressControl,
 						count: l,
 						maxCount: R && p ? p.freeCount : ce,
-						onChange: e => f(Object(P.j)(e)),
+						onChange: e => f(Object(P.h)(e)),
 						powerups: i
 					}), a.a.createElement("div", {
 						className: se.a.details
 					}, a.a.createElement(I.a, {
 						className: se.a.anonymousCheckbox,
 						isSelected: t,
-						onClick: () => (e => f(Object(P.c)(e)))(!t),
+						onClick: () => (e => f(Object(P.b)(e)))(!t),
 						text: oe._("Powerup anonymously", null, {
 							hk: "YXX31"
 						})
@@ -2782,4 +2782,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EconPowerupsPurchaseModal.bac42c09f7dbfefc1913.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EconPowerupsPurchaseModal.c8c1fde51789013d04ff.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/EconPowerupsMarketingModal.a68c3f1116161220b7df.js
-// Retrieved at 6/30/2022, 10:00:07 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/EconPowerupsMarketingModal.0cc771b3114bd20ba7dc.js
+// Retrieved at 6/30/2022, 12:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["EconPowerupsMarketingModal"], {
 		"./src/reddit/components/Econ/Common/BenefitTile/index.m.less": function(e, t, s) {
@@ -339,7 +339,7 @@
 					calculateGradientVisibility: h
 				} = Object(v.b)(!0);
 				Object(r.useEffect)(() => {
-					Object(k.a)(), t && l(Object(m.m)(t, {
+					Object(k.a)(), t && l(Object(m.k)(t, {
 						fullData: !0
 					}))
 				}, [!1, t, l]), Object(r.useLayoutEffect)(() => {
@@ -399,7 +399,7 @@
 					className: F.a.joinHeroes,
 					subredditId: t,
 					onClick: e => {
-						i(Object(C.c)("powerups_modal")), e ? l(Object(m.i)(c.id)) : f()
+						i(Object(C.c)("powerups_modal")), e ? l(Object(m.g)(c.id)) : f()
 					}
 				})), o.a.createElement("li", {
 					className: F.a.howItWorksStep
@@ -656,4 +656,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EconPowerupsMarketingModal.a68c3f1116161220b7df.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EconPowerupsMarketingModal.0cc771b3114bd20ba7dc.js.map

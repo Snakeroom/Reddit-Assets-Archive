@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-pages-PaypalFinishPage.8defee8dc306e77c0ca3.js
-// Retrieved at 6/8/2022, 12:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-pages-PaypalFinishPage.5ce367764307e44a52c1.js
+// Retrieved at 6/30/2022, 12:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-pages-PaypalFinishPage"], {
 		"./node_modules/@stripe/react-stripe-js/dist/react-stripe.umd.js": function(e, t, r) {
@@ -608,7 +608,7 @@
 					} catch (a) {
 						f.c.captureException(a)
 					}
-				}, N = Object(p.a)(y.O), L = Object(p.a)(y.P), R = Object(p.a)(y.Q), T = e => async (t, r) => {
+				}, N = Object(p.a)(y.N), L = Object(p.a)(y.O), R = Object(p.a)(y.P), T = e => async (t, r) => {
 					await t(N(e)), t(Object(u.f)({
 						kind: m.b.Error,
 						duration: u.a,
@@ -642,21 +642,21 @@
 							hk: "4yuT5m"
 						})))
 					}
-				}, G = Object(p.a)(y.S), B = e => async (t, r) => {
-					t(G(e)), t(Object(v.m)(e.subredditId, {
+				}, G = Object(p.a)(y.R), B = e => async (t, r) => {
+					t(G(e)), t(Object(v.k)(e.subredditId, {
 						forceLoad: !0,
 						fullData: !1
 					})), t(Object(O.g)(d.a.ECON_POWERUPS_PURCHASE)), t(Object(O.h)(d.a.ECON_POWERUPS_SUCCESS))
-				}, Q = Object(p.a)(y.W), U = e => {
+				}, Q = Object(p.a)(y.V), U = e => {
 					let {
 						user: t
 					} = e;
 					return async e => {
-						await e(Object(v.o)(!0)), e(Q({
+						await e(Object(v.m)(!0)), e(Q({
 							user: t
 						}))
 					}
-				}, q = Object(p.a)(y.ab)
+				}, q = Object(p.a)(y.Z)
 		},
 		"./src/reddit/actions/goldPurchaseModals/payment.ts": function(e, t, r) {
 			"use strict";
@@ -1058,4 +1058,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-pages-PaypalFinishPage.8defee8dc306e77c0ca3.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-pages-PaypalFinishPage.5ce367764307e44a52c1.js.map

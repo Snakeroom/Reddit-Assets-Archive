@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfileOverview.4f30318197839b57d96b.js
-// Retrieved at 6/29/2022, 1:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfileOverview.296125a78651afa50548.js
+// Retrieved at 6/30/2022, 12:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfileOverview"], {
 		"./src/lib/makeOverviewConversationsItemKey/index.ts": function(e, t, s) {
@@ -831,7 +831,7 @@
 					t(I.m({
 						title: Me(s(), u)
 					})), Object(P.S)(N) && Object(P.W)(N, u) && t(Object(y.f)());
-					const F = [t(Object(d.q)()), t(S.b(O, M)), t(_.b(O)), t(E.o(u)), t(_.i(u)), t(k.l(u, L))];
+					const F = [t(Object(d.q)()), t(S.b(O, M)), t(_.b(O)), t(E.o(u)), t(_.i(u)), t(k.j(u, L))];
 					await Promise.all(F)
 				}, Me = (e, t) => Object(g.q)(e, {
 					profileName: t
@@ -1454,7 +1454,7 @@
 						let {
 							comment: s
 						} = t;
-						return Object(Q.o)(e, {
+						return Object(Q.n)(e, {
 							subredditId: s.subredditId
 						})
 					},
@@ -2580,7 +2580,7 @@
 					isLoggedIn: w.Q,
 					isActive: k.j,
 					showPromotedCTA: Pe.a,
-					moderatorPermissions: E.n,
+					moderatorPermissions: E.m,
 					modModeEnabled: re.U,
 					posts: Ie,
 					postHeightVariant: Oe,
@@ -2590,7 +2590,7 @@
 						let {
 							subreddit: s
 						} = t;
-						return !!s && Object(E.j)(e, s.id)
+						return !!s && Object(E.i)(e, s.id)
 					},
 					isAdblockAAMitigationEnabled: Ee.a,
 					isOptionalTextEnabled: pe.a
@@ -3460,7 +3460,7 @@
 					shouldShowSubscribeButton: k,
 					subredditOrProfile: w,
 					tooltipType: I
-				} = e, _ = !!j, S = Object(O.a)(), N = Object(r.e)(e => !!w && Object(i.j)(e, w.id));
+				} = e, _ = !!j, S = Object(O.a)(), N = Object(r.e)(e => !!w && Object(i.i)(e, w.id));
 				return n.a.createElement("div", {
 					className: C.a.metaContainer
 				}, !o && !E.isSponsored && w && n.a.createElement(d.a, {
@@ -3751,7 +3751,7 @@
 					isExpanded: h.m,
 					isLoggedIn: f.Q,
 					showPromotedCTA: x.a,
-					moderatorPermissions: u.n,
+					moderatorPermissions: u.m,
 					modModeEnabled: c.U,
 					poll: (e, t) => {
 						const s = e.posts.metaMap[t.postId];
@@ -3914,7 +3914,7 @@
 				flairStyleTemplate: c.W,
 				hideNSFWPref: b.F,
 				isActive: u.j,
-				moderatorPermissions: m.n,
+				moderatorPermissions: m.m,
 				modModeEnabled: c.U,
 				showEditFlair: p.a
 			}), (e, t) => {
@@ -5347,4 +5347,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileOverview.4f30318197839b57d96b.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileOverview.296125a78651afa50548.js.map

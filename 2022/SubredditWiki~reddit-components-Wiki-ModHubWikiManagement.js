@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditWiki~reddit-components-Wiki-ModHubWikiManagement.4ce43a2040b07ae86634.js
-// Retrieved at 6/29/2022, 1:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditWiki~reddit-components-Wiki-ModHubWikiManagement.ff3ea80f937e8b0e14d3.js
+// Retrieved at 6/30/2022, 12:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditWiki~reddit-components-Wiki-ModHubWikiManagement"], {
 		"./node_modules/autosize/dist/autosize.js": function(e, t, i) {
@@ -725,7 +725,7 @@
 				hasError: P.o,
 				hasWikiModPerms: (e, t) => {
 					const i = Object(y.z)(e, t);
-					return !!i && Object(N.k)(e, {
+					return !!i && Object(N.j)(e, {
 						subredditId: i.id
 					})
 				},
@@ -1913,7 +1913,7 @@
 			const L = Object(d.c)({
 					hasWikiModPerms: (e, t) => {
 						const i = Object(v.z)(e, t);
-						return !!i && Object(k.k)(e, {
+						return !!i && Object(k.j)(e, {
 							subredditId: i.id
 						})
 					},
@@ -2184,4 +2184,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditWiki~reddit-components-Wiki-ModHubWikiManagement.4ce43a2040b07ae86634.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditWiki~reddit-components-Wiki-ModHubWikiManagement.ff3ea80f937e8b0e14d3.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfileFollowersPage.380fd8c709ba9538c73c.js
-// Retrieved at 6/29/2022, 1:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfileFollowersPage.9c7942a118329b40acf9.js
+// Retrieved at 6/30/2022, 12:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfileFollowersPage", "ProfileFollowersAction"], {
 		"./src/lib/makeOverviewConversationsItemKey/index.ts": function(e, t, r) {
@@ -813,7 +813,7 @@
 					t(P.m({
 						title: Re(r(), h)
 					})), Object(C.S)(k) && Object(C.W)(k, h) && t(Object(y.f)());
-					const F = [t(Object(d.q)()), t(N.b(x, R)), t(S.b(x)), t(j.o(h)), t(S.i(h)), t(_.l(h, U))];
+					const F = [t(Object(d.q)()), t(N.b(x, R)), t(S.b(x)), t(j.o(h)), t(S.i(h)), t(_.j(h, U))];
 					await Promise.all(F)
 				}, Re = (e, t) => Object(I.q)(e, {
 					profileName: t
@@ -1499,7 +1499,7 @@
 			const {
 				fbt: te
 			} = r("./node_modules/fbt/lib/FbtPublic.js"), re = Object(i.c)({
-				hasModMailPermissions: Object(m.c)(X.c.mail),
+				hasModMailPermissions: Object(m.b)(X.c.mail),
 				isUserBanned: (e, t) => !!Object(J.b)(e, {
 					subredditId: t.subredditId,
 					username: t.username
@@ -1812,7 +1812,7 @@
 						let {
 							subredditId: r
 						} = t;
-						return r ? Object(m.o)(e, {
+						return r ? Object(m.n)(e, {
 							subredditId: r
 						}) : void 0
 					},
@@ -1857,7 +1857,7 @@
 						} = t;
 						const s = Object(O.e)(e),
 							n = r || s && Object(v.F)(e, s.name);
-						return !!n && Object(m.j)(e, n)
+						return !!n && Object(m.i)(e, n)
 					},
 					trophyCase: (e, t) => Object(b.r)(e, Object(b.m)(e, t.userName)),
 					isNightMode: x.db,
@@ -4757,4 +4757,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileFollowersPage.380fd8c709ba9538c73c.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileFollowersPage.9c7942a118329b40acf9.js.map

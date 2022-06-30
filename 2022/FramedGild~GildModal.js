@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/FramedGild~GildModal.d97a439799bccef44f0e.js
-// Retrieved at 6/29/2022, 1:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/FramedGild~GildModal.f0c278b92e1f8005eb75.js
+// Retrieved at 6/30/2022, 12:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["FramedGild~GildModal", "gildActions"], {
 		"./node_modules/@stripe/react-stripe-js/dist/react-stripe.umd.js": function(e, t, r) {
@@ -819,6 +819,13 @@
 					return n[r] = t, n
 				}
 		},
+		"./src/reddit/actions/economics/powerups/helpers.ts": function(e, t, r) {
+			"use strict";
+			r.d(t, "a", (function() {
+				return n
+			}));
+			const n = e => (null == e ? void 0 : e.map(e => e.message).join(", ")) || ""
+		},
 		"./src/reddit/actions/gold/econPurchase.ts": function(e, t, r) {
 			"use strict";
 			r.d(t, "a", (function() {
@@ -836,7 +843,7 @@
 					econPurchase: s.a
 				}
 			});
-			const l = Object(a.a)(d.mb),
+			const l = Object(a.a)(d.lb),
 				u = (e, t, r) => async (n, s, a) => {
 					let {
 						gqlContext: d
@@ -1226,7 +1233,7 @@
 				s = r("./src/reddit/actions/modal.ts"),
 				a = r("./src/reddit/constants/modals.ts"),
 				o = r("./src/reddit/actions/gold/constants.ts");
-			const i = Object(n.a)(o.lb),
+			const i = Object(n.a)(o.kb),
 				c = Object(n.a)(o.t),
 				d = e => async t => {
 					await t(c({
@@ -5687,7 +5694,7 @@
 				let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : a,
 					t = arguments.length > 1 ? arguments[1] : void 0;
 				switch (t.type) {
-					case s.mb: {
+					case s.lb: {
 						const r = t.payload;
 						return {
 							...e,
@@ -6136,4 +6143,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/FramedGild~GildModal.d97a439799bccef44f0e.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/FramedGild~GildModal.f0c278b92e1f8005eb75.js.map

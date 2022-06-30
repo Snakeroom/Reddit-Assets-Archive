@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/removalReasonActions.291a94f0fc70fafed323.js
-// Retrieved at 6/29/2022, 1:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/removalReasonActions.bb028d7f96aef20462a5.js
+// Retrieved at 6/30/2022, 12:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["removalReasonActions"], {
 		"./node_modules/lodash/map.js": function(e, t, o) {
@@ -1939,7 +1939,7 @@
 						let {
 							postId: o
 						} = t;
-						const n = Object(K.n)(e, {
+						const n = Object(K.m)(e, {
 							postId: o
 						});
 						return !!n && n.posts
@@ -1951,7 +1951,7 @@
 							postId: o
 						} = t;
 						const n = Object(F.v)(e),
-							s = !!Object(K.n)(e, {
+							s = !!Object(K.m)(e, {
 								postId: o
 							}),
 							r = Object(U.G)(e, {
@@ -2822,4 +2822,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/removalReasonActions.291a94f0fc70fafed323.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/removalReasonActions.bb028d7f96aef20462a5.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostCreation~Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~r~4c415e24.e9c2cc0ae0bad4e32968.js
-// Retrieved at 6/29/2022, 1:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostCreation~Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~r~4c415e24.0a6682bdfa0764d58301.js
+// Retrieved at 6/30/2022, 12:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostCreation~Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~r~4c415e24"], {
 		"./src/reddit/actions/gold/communityAwards/index.ts": function(e, t, n) {
@@ -66,7 +66,7 @@
 				f = n("./src/reddit/selectors/subreddit.ts"),
 				m = n("./src/telemetry/index.ts"),
 				v = n("./src/reddit/actions/gold/constants.ts");
-			const g = Object(r.a)(v.L),
+			const g = Object(r.a)(v.K),
 				h = Object(r.a)(v.f),
 				b = () => async (e, t) => {
 					const r = t();
@@ -75,7 +75,7 @@
 						clickCloseModalEvent: o
 					} = await n.e("givePremiumTrackers").then(n.bind(null, "./src/reddit/helpers/trackers/givePremium.ts"));
 					Object(m.a)(o()(r))
-				}, y = Object(r.a)(v.K), w = e => {
+				}, y = Object(r.a)(v.J), w = e => {
 					let {
 						awardId: t,
 						correlationId: n,
@@ -102,7 +102,7 @@
 						}
 						v && Object(i.a)(v, r)
 					}
-				}, O = Object(r.a)(v.e), j = Object(r.a)(v.J), _ = () => async (e, t) => {
+				}, O = Object(r.a)(v.e), j = Object(r.a)(v.I), _ = () => async (e, t) => {
 					const r = t(),
 						a = Object(s.d)(r);
 					if (Object(s.g)(r)) {
@@ -4047,4 +4047,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation~Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~r~4c415e24.e9c2cc0ae0bad4e32968.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation~Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~r~4c415e24.0a6682bdfa0764d58301.js.map

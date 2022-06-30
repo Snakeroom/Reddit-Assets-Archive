@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditLeaderboard.aad44478eebee5fca1da.js
-// Retrieved at 6/29/2022, 1:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditLeaderboard.3e9784bca40c36a0c12e.js
+// Retrieved at 6/30/2022, 12:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditLeaderboard"], {
 		"./node_modules/lodash/times.js": function(e, t, r) {
@@ -125,7 +125,7 @@
 						actionSource: a.a.SubredditLeaderboard,
 						redirectUrl: c.c[c.b.SubredditLeaderboard]
 					})), t(i.m({
-						title: Object(n.o)()
+						title: Object(n.n)()
 					}));
 					const s = e.params && e.params.categoryName,
 						o = s && Object(u.b)(s);
@@ -786,7 +786,7 @@
 			}), T = Object(d.c)({
 				isEditing: y.i,
 				isSubscriptionsPinned: f.b,
-				moderatorPermissions: h.o
+				moderatorPermissions: h.n
 			});
 			t.a = Object(o.b)(T)(e => {
 				const t = e.moderatorPermissions && s()(e.moderatorPermissions).some(e => e);
@@ -2650,7 +2650,7 @@
 						}) : p.c
 					},
 					categoryName: xe,
-					isMod: fe.l,
+					isMod: fe.k,
 					shouldShowLocalRecommendations: e => !1 !== e.user.prefs.showLocationBasedRecommendations
 				}),
 				Ce = Object(o.b)(_e),
@@ -2791,4 +2791,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditLeaderboard.aad44478eebee5fca1da.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditLeaderboard.3e9784bca40c36a0c12e.js.map

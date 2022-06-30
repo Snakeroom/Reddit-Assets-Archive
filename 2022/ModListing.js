@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModListing.564761b92d82ee299092.js
-// Retrieved at 6/30/2022, 11:00:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModListing.4878b009206e817961a5.js
+// Retrieved at 6/30/2022, 12:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModListing"], {
 		"./node_modules/classnames/index.js": function(e, t, n) {
@@ -7257,7 +7257,7 @@
 						match: n
 					} = t;
 					return Object(W.d)(n.path)
-				}, Ie.l, Ie.e, (e, t, n, r, o) => {
+				}, Ie.k, Ie.d, (e, t, n, r, o) => {
 					const i = s()([...Object(l.a)(e)]),
 						a = je.A in i && i[je.A].toUpperCase(),
 						c = "string" == typeof a && a in d.ic ? d.ic[a] : d.jc,
@@ -9485,7 +9485,7 @@
 				h = e => {
 					const t = Object(u.c)(e);
 					if (!t) return;
-					if (!Object(l.o)(e, {
+					if (!Object(l.n)(e, {
 							subredditId: t
 						})) return;
 					if (Object(p.N)(e)) return f(e);
@@ -9705,4 +9705,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModListing.564761b92d82ee299092.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModListing.4878b009206e817961a5.js.map

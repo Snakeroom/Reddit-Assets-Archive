@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModerationPages~SubredditWiki.027918296af02e4e3ef3.js
-// Retrieved at 6/29/2022, 1:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModerationPages~SubredditWiki.aeb491607d5665eee1fb.js
+// Retrieved at 6/30/2022, 12:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModerationPages~SubredditWiki"], {
 		"./src/chat/controls/Svg/index.m.less": function(e, t, r) {
@@ -3184,7 +3184,7 @@
 			const {
 				fbt: te
 			} = r("./node_modules/fbt/lib/FbtPublic.js"), re = Object(a.c)({
-				hasModMailPermissions: Object(m.c)(Z.c.mail),
+				hasModMailPermissions: Object(m.b)(Z.c.mail),
 				isUserBanned: (e, t) => !!Object(V.b)(e, {
 					subredditId: t.subredditId,
 					username: t.username
@@ -3497,7 +3497,7 @@
 						let {
 							subredditId: r
 						} = t;
-						return r ? Object(m.o)(e, {
+						return r ? Object(m.n)(e, {
 							subredditId: r
 						}) : void 0
 					},
@@ -3542,7 +3542,7 @@
 						} = t;
 						const n = Object(_.e)(e),
 							s = r || n && Object(v.F)(e, n.name);
-						return !!s && Object(m.j)(e, s)
+						return !!s && Object(m.i)(e, s)
 					},
 					trophyCase: (e, t) => Object(f.r)(e, Object(f.m)(e, t.userName)),
 					isNightMode: k.db,
@@ -4735,7 +4735,7 @@
 					let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : a,
 						t = arguments.length > 1 ? arguments[1] : void 0;
 					switch (t.type) {
-						case s.ob:
+						case s.nb:
 							const {
 								subredditId: r, subredditAchievementFlairs: n
 							} = t.payload;
@@ -5202,4 +5202,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages~SubredditWiki.027918296af02e4e3ef3.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages~SubredditWiki.aeb491607d5665eee1fb.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~Reddit~SubredditForkingCTA.7ecf7563c26b9b107967.js
-// Retrieved at 6/30/2022, 11:00:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~Reddit~SubredditForkingCTA.c83fe1b05a8a2a7301aa.js
+// Retrieved at 6/30/2022, 12:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~Reddit~SubredditForkingCTA"], {
 		"./src/lib/bigNumberUtils/percent.ts": function(t, e, r) {
@@ -15,84 +15,6 @@
 					d = new s.BigNumber(r.dividedBy(n)),
 					i = new s.BigNumber("100").multipliedBy(d);
 				return new s.BigNumber(i).toNumber()
-			}
-		},
-		"./src/lib/intlList/index.ts": function(t, e, r) {
-			"use strict";
-			r.d(e, "a", (function() {
-				return i
-			})), r.d(e, "b", (function() {
-				return o
-			}));
-			r("./node_modules/react/index.js");
-			var s = r("./node_modules/fbt/lib/FbtPublic.js");
-			const n = function(t) {
-				if (void 0 === t) throw new Error("invariant(...): Second argument must be a string.")
-			};
-
-			function d(t, e) {
-				for (var r = arguments.length, s = new Array(r > 2 ? r - 2 : 0), d = 2; d < r; d++) s[d - 2] = arguments[d];
-				if (n(e), !t) {
-					let t;
-					if (void 0 === e) t = new Error("Minified exception occurred; use the non-minified dev environment for the full error message and additional helpful warnings.");
-					else {
-						let r = 0;
-						(t = new Error(e.replace(/%s/g, () => String(s[r++])))).name = "Invariant Violation"
-					}
-					throw t.framesToPop = 1, t
-				}
-			}
-			const i = {
-					AND: "AND",
-					NONE: "NONE",
-					OR: "OR"
-				},
-				o = {
-					COMMA: "COMMA",
-					SEMICOLON: "SEMICOLON"
-				};
-			e.c = function(t, e, r) {
-				const n = t.length;
-				if (0 === n) return "";
-				if (1 === n) return t[0];
-				const a = t[n - 1];
-				let c = t[0];
-				for (let d = 1; d < n - 1; ++d) switch (r) {
-					case o.SEMICOLON:
-						c = s.fbt._("{previous items}; {following items}", [s.fbt._param("previous items", c), s.fbt._param("following items", t[d])], {
-							hk: "4hs4xq"
-						});
-						break;
-					default:
-						c = s.fbt._("{previous items}, {following items}", [s.fbt._param("previous items", c), s.fbt._param("following items", t[d])], {
-							hk: "2z8RMb"
-						})
-				}
-				return function(t, e, r, n) {
-					switch (r) {
-						case i.AND:
-							return s.fbt._("{list of items} and {last item }", [s.fbt._param("list of items", t), s.fbt._param("last item ", e)], {
-								hk: "1ylan1"
-							});
-						case i.OR:
-							return s.fbt._("{list of items} or {last item}", [s.fbt._param("list of items", t), s.fbt._param("last item", e)], {
-								hk: "3q8AmB"
-							});
-						case i.NONE:
-							switch (n) {
-								case o.SEMICOLON:
-									return s.fbt._("{previous item}; {last item}", [s.fbt._param("previous item", t), s.fbt._param("last item", e)], {
-										hk: "1h77rJ"
-									});
-								default:
-									return s.fbt._("{list of items}, {last item}", [s.fbt._param("list of items", t), s.fbt._param("last item", e)], {
-										hk: "3Q0iaX"
-									})
-							}
-							default:
-								d(!1, "Invalid conjunction %s provided to intlList", r)
-					}
-				}(c, a, e || i.AND, r || o.COMMA)
 			}
 		},
 		"./src/reddit/actions/countrySites/subredditCountrySiteSettings.ts": function(t, e, r) {
@@ -2392,37 +2314,105 @@
 		"./src/reddit/helpers/scheduledPosts/index.ts": function(t, e, r) {
 			"use strict";
 			r.d(e, "b", (function() {
-				return u
-			})), r.d(e, "a", (function() {
-				return b
-			})), r.d(e, "i", (function() {
-				return f
-			})), r.d(e, "c", (function() {
 				return p
-			})), r.d(e, "d", (function() {
-				return m
-			})), r.d(e, "f", (function() {
+			})), r.d(e, "a", (function() {
 				return h
-			})), r.d(e, "e", (function() {
+			})), r.d(e, "i", (function() {
+				return O
+			})), r.d(e, "c", (function() {
 				return y
-			})), r.d(e, "h", (function() {
+			})), r.d(e, "d", (function() {
 				return _
-			})), r.d(e, "g", (function() {
+			})), r.d(e, "f", (function() {
 				return j
+			})), r.d(e, "e", (function() {
+				return E
+			})), r.d(e, "h", (function() {
+				return S
+			})), r.d(e, "g", (function() {
+				return P
 			}));
-			var s = r("./node_modules/fbt/lib/FbtPublic.js"),
-				n = r("./src/lib/intlList/index.ts"),
-				d = r("./src/lib/timezone/index.ts"),
-				i = r("./src/reddit/helpers/isArrayEqual.ts"),
-				o = r("./src/reddit/helpers/ordinal/index.ts"),
-				a = r("./src/reddit/models/ScheduledPost/index.ts");
-			const c = t => {
+			var s = r("./node_modules/fbt/lib/FbtPublic.js");
+			r("./node_modules/react/index.js");
+			const n = function(t) {
+				if (void 0 === t) throw new Error("invariant(...): Second argument must be a string.")
+			};
+
+			function d(t, e) {
+				for (var r = arguments.length, s = new Array(r > 2 ? r - 2 : 0), d = 2; d < r; d++) s[d - 2] = arguments[d];
+				if (n(e), !t) {
+					let t;
+					if (void 0 === e) t = new Error("Minified exception occurred; use the non-minified dev environment for the full error message and additional helpful warnings.");
+					else {
+						let r = 0;
+						(t = new Error(e.replace(/%s/g, () => String(s[r++])))).name = "Invariant Violation"
+					}
+					throw t.framesToPop = 1, t
+				}
+			}
+			const i = {
+					AND: "AND",
+					NONE: "NONE",
+					OR: "OR"
+				},
+				o = {
+					COMMA: "COMMA",
+					SEMICOLON: "SEMICOLON"
+				};
+			var a = function(t, e, r) {
+					const n = t.length;
+					if (0 === n) return "";
+					if (1 === n) return t[0];
+					const a = t[n - 1];
+					let c = t[0];
+					for (let d = 1; d < n - 1; ++d) switch (r) {
+						case o.SEMICOLON:
+							c = s.fbt._("{previous items}; {following items}", [s.fbt._param("previous items", c), s.fbt._param("following items", t[d])], {
+								hk: "4hs4xq"
+							});
+							break;
+						default:
+							c = s.fbt._("{previous items}, {following items}", [s.fbt._param("previous items", c), s.fbt._param("following items", t[d])], {
+								hk: "2z8RMb"
+							})
+					}
+					return function(t, e, r, n) {
+						switch (r) {
+							case i.AND:
+								return s.fbt._("{list of items} and {last item }", [s.fbt._param("list of items", t), s.fbt._param("last item ", e)], {
+									hk: "1ylan1"
+								});
+							case i.OR:
+								return s.fbt._("{list of items} or {last item}", [s.fbt._param("list of items", t), s.fbt._param("last item", e)], {
+									hk: "3q8AmB"
+								});
+							case i.NONE:
+								switch (n) {
+									case o.SEMICOLON:
+										return s.fbt._("{previous item}; {last item}", [s.fbt._param("previous item", t), s.fbt._param("last item", e)], {
+											hk: "1h77rJ"
+										});
+									default:
+										return s.fbt._("{list of items}, {last item}", [s.fbt._param("list of items", t), s.fbt._param("last item", e)], {
+											hk: "3Q0iaX"
+										})
+								}
+								default:
+									d(!1, "Invalid conjunction %s provided to intlList", r)
+						}
+					}(c, a, e || i.AND, r || o.COMMA)
+				},
+				c = r("./src/lib/timezone/index.ts"),
+				u = r("./src/reddit/helpers/isArrayEqual.ts"),
+				l = r("./src/reddit/helpers/ordinal/index.ts"),
+				b = r("./src/reddit/models/ScheduledPost/index.ts");
+			const f = t => {
 					return `${t.toLocaleDateString(void 0,{month:"numeric",day:"numeric"})} @ ${t.toLocaleTimeString(void 0,{hour:"numeric",minute:"numeric"}).replace(" ","").toLowerCase()}`
 				},
-				u = (t, e) => {
+				p = (t, e) => {
 					if (t && e) {
-						const r = Object(d.f)(b(t, e)),
-							n = c(r);
+						const r = Object(c.f)(h(t, e)),
+							n = f(r);
 						return s.fbt._("At {time}", [s.fbt._param("time", n)], {
 							hk: "25s5Tg"
 						})
@@ -2431,25 +2421,25 @@
 						hk: "lYsoU"
 					})
 				},
-				l = t => t.slice(0, 5),
-				b = (t, e) => `${t}T${l(e)}:00`,
-				f = t => {
+				m = t => t.slice(0, 5),
+				h = (t, e) => `${t}T${m(e)}:00`,
+				O = t => {
 					const [e, r] = t.split("T");
-					return [e, l(r)]
+					return [e, m(r)]
 				},
-				p = t => {
-					const [e, r] = f(t);
+				y = t => {
+					const [e, r] = O(t);
 					if (e && r) {
-						const t = Object(d.f)(b(e, r));
-						return c(t)
+						const t = Object(c.f)(h(e, r));
+						return f(t)
 					}
 					return ""
 				},
-				m = t => {
-					const e = Object(d.d)(t);
+				_ = t => {
+					const e = Object(c.d)(t);
 					let r, s = t;
 					if (e) {
-						r = e.offset, s = `(GMT${Object(d.e)(e.offset)}) ${t.replace("/"," - ").replace(/_/g," ")}`
+						r = e.offset, s = `(GMT${Object(c.e)(e.offset)}) ${t.replace("/"," - ").replace(/_/g," ")}`
 					}
 					return {
 						name: t,
@@ -2457,41 +2447,41 @@
 						offset: r
 					}
 				},
-				h = t => "string" == typeof t,
-				O = t => {
+				j = t => "string" == typeof t,
+				g = t => {
 					const e = new Date,
 						r = t - e.getDay();
 					return e.setDate(e.getDate() + r), e.toLocaleDateString(void 0, {
 						weekday: "long"
 					})
 				},
-				y = t => {
+				E = t => {
 					const e = (t => {
-						const [e, r] = f(t);
+						const [e, r] = O(t);
 						if (e && r) {
-							return Object(d.f)(b(e, r)).toLocaleTimeString(void 0, {
+							return Object(c.f)(h(e, r)).toLocaleTimeString(void 0, {
 								hour: "numeric",
 								minute: "numeric"
 							})
 						}
 						return ""
 					})(t.publishAt);
-					if (t.frequency === a.d.Hourly) return 2 === t.interval ? s.fbt._("Every other hour", null, {
+					if (t.frequency === b.d.Hourly) return 2 === t.interval ? s.fbt._("Every other hour", null, {
 						hk: "64vzK"
 					}) : t.interval > 1 ? s.fbt._("Every {hour interval} hours", [s.fbt._param("hour interval", t.interval.toString())], {
 						hk: "3x8zaD"
 					}) : s.fbt._("Every hour", null, {
 						hk: "1VzCs"
 					});
-					if (t.frequency === a.d.Daily) return 2 === t.interval ? s.fbt._("Every other day at {start time}", [s.fbt._param("start time", e)], {
+					if (t.frequency === b.d.Daily) return 2 === t.interval ? s.fbt._("Every other day at {start time}", [s.fbt._param("start time", e)], {
 						hk: "yTynp"
 					}) : t.interval > 1 ? s.fbt._("Every {day interval} days at {start time}", [s.fbt._param("day interval", t.interval.toString()), s.fbt._param("start time", e)], {
 						hk: "2OoGlG"
 					}) : s.fbt._("Every day at {start time}", [s.fbt._param("start time", e)], {
 						hk: "1cvwm2"
 					});
-					if (t.frequency === a.d.Weekly) {
-						const r = (t => Object(n.c)(t.map(a.l).sort((t, e) => t - e).map(O), n.a.AND, n.b.COMMA))(t.byWeekDays);
+					if (t.frequency === b.d.Weekly) {
+						const r = (t => a(t.map(b.l).sort((t, e) => t - e).map(g), i.AND, o.COMMA))(t.byWeekDays);
 						return 2 === t.interval ? s.fbt._("Every other week on {days of week } at {start time}", [s.fbt._param("days of week ", r), s.fbt._param("start time", e)], {
 							hk: "43xwaa"
 						}) : t.interval > 1 ? s.fbt._("Every {interval} weeks on {days of week} at {start time}", [s.fbt._param("interval", t.interval.toString()), s.fbt._param("days of week", r), s.fbt._param("start time", e)], {
@@ -2500,7 +2490,7 @@
 							hk: "2Zl0L"
 						})
 					}
-					const r = (t => Object(n.c)(t.sort((t, e) => t - e).map(o.a), n.a.AND, n.b.COMMA))(t.byMonthDays);
+					const r = (t => a(t.sort((t, e) => t - e).map(l.a), i.AND, o.COMMA))(t.byMonthDays);
 					return 2 === t.interval ? s.fbt._({
 						"*": "Every other month on the {days of month} days at {start time}",
 						_1: "Every other month on the {days of month} day at {start time}"
@@ -2518,13 +2508,13 @@
 						hk: "1jBuYc"
 					})
 				},
-				_ = t => {
+				S = t => {
 					let e = null;
-					t.frequency && (e = t.frequency), (t.byWeekDays.length > 1 || t.byMonthDays.length > 1 || t.interval > 1) && (e = a.b);
-					const r = Object(d.f)(t.publishAt),
-						s = Object(a.r)(r.getDay()),
+					t.frequency && (e = t.frequency), (t.byWeekDays.length > 1 || t.byMonthDays.length > 1 || t.interval > 1) && (e = b.b);
+					const r = Object(c.f)(t.publishAt),
+						s = Object(b.r)(r.getDay()),
 						n = r.getDate();
-					return 1 === t.byWeekDays.length && t.byWeekDays[0] !== s && (e = a.b), 1 === t.byMonthDays.length && t.byMonthDays[0] !== n && (e = a.b), {
+					return 1 === t.byWeekDays.length && t.byWeekDays[0] !== s && (e = b.b), 1 === t.byMonthDays.length && t.byMonthDays[0] !== n && (e = b.b), {
 						recurrenceInfo: t.frequency ? {
 							frequency: t.frequency,
 							byMonthDays: t.byMonthDays,
@@ -2536,13 +2526,13 @@
 						timezoneName: t.clientTimezone
 					}
 				},
-				j = (t, e) => {
+				P = (t, e) => {
 					if (!t && e || t && !e) return !1;
 					if (!t && !e) return !0;
 					for (const r in t) {
 						if (!e) return !1;
 						if (t.hasOwnProperty(r)) {
-							if (Array.isArray(t[r]) && (!Array.isArray(e[r]) || !Object(i.a)(t[r], e[r]))) return !1;
+							if (Array.isArray(t[r]) && (!Array.isArray(e[r]) || !Object(u.a)(t[r], e[r]))) return !1;
 							if (t[r] !== e[r]) return !1
 						}
 					}
@@ -2904,4 +2894,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit~SubredditForkingCTA.7ecf7563c26b9b107967.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit~SubredditForkingCTA.c83fe1b05a8a2a7301aa.js.map

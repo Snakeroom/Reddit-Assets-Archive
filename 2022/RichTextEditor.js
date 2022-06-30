@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/RichTextEditor.c8c8dbb6df96be617d3d.js
-// Retrieved at 6/30/2022, 11:00:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/RichTextEditor.9b20c5fa476867d77888.js
+// Retrieved at 6/30/2022, 12:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["RichTextEditor", "ContributorRequestButton"], {
 		"./node_modules/autosize/dist/autosize.js": function(e, t, n) {
@@ -3007,7 +3007,7 @@
 					let {
 						subredditId: n
 					} = t;
-					return !!n && Object(W.s)(e, {
+					return !!n && Object(W.r)(e, {
 						subredditId: n
 					})
 				},
@@ -3846,7 +3846,7 @@
 						let {
 							postId: n
 						} = t;
-						const o = Object(N.n)(e, {
+						const o = Object(N.m)(e, {
 							postId: n
 						});
 						return !!o && o.posts
@@ -3858,7 +3858,7 @@
 							postId: n
 						} = t;
 						const o = Object(U.v)(e),
-							r = !!Object(N.n)(e, {
+							r = !!Object(N.m)(e, {
 								postId: n
 							}),
 							s = Object(z.G)(e, {
@@ -5880,4 +5880,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RichTextEditor.c8c8dbb6df96be617d3d.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RichTextEditor.9b20c5fa476867d77888.js.map

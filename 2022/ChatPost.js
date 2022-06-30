@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ChatPost.7c2136759f79ff9056fe.js
-// Retrieved at 6/30/2022, 11:00:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ChatPost.0255b024593a3ea11b29.js
+// Retrieved at 6/30/2022, 12:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ChatPost"], {
 		"./node_modules/lodash/_baseDelay.js": function(e, t) {
@@ -946,7 +946,7 @@
 						let {
 							comment: n
 						} = t;
-						return Object(Le.j)(e, n.subredditId)
+						return Object(Le.i)(e, n.subredditId)
 					}
 				}));
 			t.a = He(e => {
@@ -1990,7 +1990,7 @@
 											commentId: n
 										}),
 										i = (o.user.account && o.user.account.id) === (r && r.authorId),
-										c = !!e && !!Object(q.n)(o, {
+										c = !!e && !!Object(q.m)(o, {
 											postId: e
 										});
 									!r || r.isRemoved && r.isDeleted || i || c ? Y[n] = P.REMOVE_COMMENT : s(X({
@@ -2442,7 +2442,7 @@
 						let {
 							comment: n
 						} = t;
-						return !!Object(q.n)(e, {
+						return !!Object(q.m)(e, {
 							postId: n.postId
 						})
 					},
@@ -2933,7 +2933,7 @@
 						let {
 							comment: n
 						} = t;
-						return !!Object(q.n)(e, {
+						return !!Object(q.m)(e, {
 							postId: n.postId
 						})
 					},
@@ -2961,7 +2961,7 @@
 						let {
 							comment: n
 						} = t;
-						return Object(q.b)(e, {
+						return Object(q.a)(e, {
 							postId: n.postId
 						})
 					},
@@ -5369,7 +5369,7 @@
 					let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : r,
 						t = arguments.length > 1 ? arguments[1] : void 0;
 					switch (t.type) {
-						case s.ob:
+						case s.nb:
 							const {
 								subredditId: n, subredditAchievementFlairs: o
 							} = t.payload;
@@ -5687,4 +5687,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatPost.7c2136759f79ff9056fe.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatPost.0255b024593a3ea11b29.js.map
