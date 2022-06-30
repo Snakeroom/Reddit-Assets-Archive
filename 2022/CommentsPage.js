@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CommentsPage.66d2ab3bbaa2bd127ee8.js
-// Retrieved at 6/30/2022, 12:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CommentsPage.c4506dc9a356bc551032.js
+// Retrieved at 6/30/2022, 3:00:03 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CommentsPage", "PostCreation~Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~r~4c415e24", "Governance~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compo~bd4baca2", "CollectionCommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~SearchResults", "Governance~ModListing~Reddit~ReportFlow~Subreddit", "CollectionCommentsPage~ModProgressModule~NewCommunityProgress", "CollectionCommentsPage~Subreddit~SubredditWiki", "AchievementsActions"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -37717,16 +37717,16 @@
 		"./src/reddit/pages/CommentsPage/withPageSorting.tsx": function(e, t, n) {
 			"use strict";
 			n.d(t, "a", (function() {
-				return _
+				return g
 			}));
 			var s = n("./node_modules/lodash/fromPairs.js"),
 				r = n.n(s),
 				o = n("./node_modules/react/index.js"),
 				i = n.n(o),
 				a = n("./node_modules/react-redux/es/index.js"),
-				c = n("./node_modules/reselect/es/index.js"),
-				d = n("./src/lib/extractQueryParams/index.ts"),
-				l = n("./src/lib/makeCommentsPageKey/index.ts"),
+				c = n("./src/lib/extractQueryParams/index.ts"),
+				d = n("./src/lib/makeCommentsPageKey/index.ts"),
+				l = n("./src/lib/objectSelector/index.ts"),
 				u = n("./src/reddit/actions/otherDiscussions/constants.ts"),
 				m = n("./src/reddit/helpers/getCommentsPageSort/index.ts"),
 				p = n("./src/reddit/models/Comment/index.ts"),
@@ -37751,7 +37751,7 @@
 									search: t
 								}
 							} = e;
-							return r()([...Object(d.a)(t)])
+							return r()([...Object(c.a)(t)])
 						})(e),
 						a = {
 							depth: i.depth && parseInt(i.depth, 10) || void 0,
@@ -37759,30 +37759,27 @@
 							hasSortParam: t,
 							sort: n
 						};
-					return Object(l.a)(s, o, a)
+					return Object(d.a)(s, o, a)
 				},
-				h = Object(c.c)({
-					commentsPageSort: (e, t) => {
-						const n = f(t);
-						return Object(m.a)(e, n)
-					}
-				}),
-				g = Object(a.b)(h);
+				h = Object(l.a)((e, t) => {
+					const n = f(t);
+					return Object(m.a)(e, n)
+				});
 
-			function _(e) {
-				return g(t => {
+			function g(e) {
+				return t => {
 					const {
 						hasSortParam: n,
 						sortToUse: s
-					} = t.commentsPageSort, r = C(t, n, s), o = Object(u.d)(t.match.path), a = {
+					} = Object(a.e)(e => h(e, t)), r = C(t, n, s), o = Object(u.d)(t.match.path), c = {
 						...t,
 						commentsPageKey: r,
 						hasSortParam: n,
 						onOtherDiscussions: o,
 						sort: s
 					};
-					return i.a.createElement(e, a)
-				})
+					return i.a.createElement(e, c)
+				}
 			}
 		},
 		"./src/reddit/reducers/economics/paymentSystems/index.ts": function(e, t, n) {
@@ -41588,7 +41585,7 @@
 				i = n("./src/reddit/selectors/countrySites.ts"),
 				a = n("./src/reddit/selectors/experiments/index.ts"),
 				c = n("./src/reddit/selectors/experiments/utils.ts");
-			const d = Object(s.a)(a.f, i.e, (e, t) => e && !t),
+			const d = Object(s.a)(a.f, i.f, (e, t) => e && !t),
 				l = e => Object(o.c)(e, {
 					experimentEligibilitySelector: d,
 					experimentName: r.ec
@@ -42981,4 +42978,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommentsPage.66d2ab3bbaa2bd127ee8.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommentsPage.c4506dc9a356bc551032.js.map

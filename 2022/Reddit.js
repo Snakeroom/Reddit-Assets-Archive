@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Reddit.a5792a958e65e46b610a.js
-// Retrieved at 6/30/2022, 12:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Reddit.2796ce46b3ce2d890918.js
+// Retrieved at 6/30/2022, 3:00:03 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Reddit"], {
 		"./assets/fonts/BentonSans/font.less": function(e, t, n) {},
@@ -16311,7 +16311,7 @@
 				zf = n("./src/reddit/selectors/countrySites.ts");
 			const Kf = Qf.b ? `${Qf.a}/${Qf.b}` : `${Qf.a}`,
 				Jf = (e, t) => {
-					return !!Object(zf.d)(e) && !(t && !Object(zf.c)(t))
+					return !!Object(zf.e)(e) && !(t && !Object(zf.d)(t))
 				},
 				Xf = e => e.startsWith("/r/") ? e.replace("/r/", `/${Kf}/r/`) : e;
 			var Yf = n("./src/reddit/selectors/experiments/countrySites.ts");
@@ -16437,7 +16437,7 @@
 							if (!Jf(e, n)) return t;
 							for (const [s, r] of Object.entries(t)) {
 								const e = r.belongsTo.id,
-									t = Object(zf.c)(e);
+									t = Object(zf.d)(e);
 								(n || t) && (r.permalink = r.permalink.replace("https://www.reddit.com/r/", `https://www.reddit.com/${Kf}/r/`))
 							}
 							return t
@@ -16445,7 +16445,7 @@
 							if (!Jf(e, n)) return t;
 							for (const [s, r] of Object.entries(t)) {
 								const e = r.subredditId,
-									t = Object(zf.c)(e);
+									t = Object(zf.d)(e);
 								(n || t) && (r.permalink = Xf(r.permalink))
 							}
 							return t
@@ -16464,7 +16464,7 @@
 					try {
 						n.type === h.e ? n.payload = ((e, t) => {
 							if (!Jf(e, t.name)) return t;
-							const n = Object(zf.c)(t.id);
+							const n = Object(zf.d)(t.id);
 							if (t.name || n) {
 								const e = Xf(t.url);
 								return {
@@ -16476,8 +16476,8 @@
 						})(e.getState(), n.payload) : void 0 !== n.payload.subreddits && (n.payload.subreddits = ((e, t) => {
 							if (!Jf(e, "")) return t;
 							for (const [n, s] of Object.entries(t)) {
-								const e = Object(zf.c)(s.id),
-									r = Object(zf.c)(s.name);
+								const e = Object(zf.d)(s.id),
+									r = Object(zf.d)(s.name);
 								if (e || r) {
 									const e = Xf(s.url),
 										r = {
@@ -19422,4 +19422,4 @@
 		["./src/reddit/index.tsx", "runtime~Reddit", "vendors~CommentsPage~Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compo~39b1b706", "vendors~CommentsPage~Governance~ModListing~Reddit~Subreddit", "vendors~Chat~Governance~Reddit", "vendors~Reddit", "CommentsPage~Governance~Reddit~ReportFlow~Subreddit~reddit-components-BlankPost~reddit-components-Cl~5351df81", "PostCreation~Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~r~4c415e24", "Governance~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compo~bd4baca2", "Governance~ModListing~Reddit~ReportFlow~Subreddit", "Chat~Governance~Reddit", "Governance~Reddit~Subreddit", "Governance~Reddit~SubredditForkingCTA", "Governance~Reddit", "Reddit~StandalonePostPage", "AuthorHovercard~Reddit"]
 	]
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit.a5792a958e65e46b610a.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit.2796ce46b3ce2d890918.js.map

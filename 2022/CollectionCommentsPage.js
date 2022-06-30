@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage.b7501400f47f42a213d2.js
-// Retrieved at 6/30/2022, 12:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage.37f2b182e8d00a508c0e.js
+// Retrieved at 6/30/2022, 3:00:03 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage"], {
 		"./node_modules/linkify-it/index.js": function(e, t, s) {
@@ -10733,16 +10733,16 @@
 		"./src/reddit/pages/CommentsPage/withPageSorting.tsx": function(e, t, s) {
 			"use strict";
 			s.d(t, "a", (function() {
-				return C
+				return f
 			}));
 			var n = s("./node_modules/lodash/fromPairs.js"),
 				o = s.n(n),
 				r = s("./node_modules/react/index.js"),
 				i = s.n(r),
 				a = s("./node_modules/react-redux/es/index.js"),
-				d = s("./node_modules/reselect/es/index.js"),
-				c = s("./src/lib/extractQueryParams/index.ts"),
-				l = s("./src/lib/makeCommentsPageKey/index.ts"),
+				d = s("./src/lib/extractQueryParams/index.ts"),
+				c = s("./src/lib/makeCommentsPageKey/index.ts"),
+				l = s("./src/lib/objectSelector/index.ts"),
 				m = s("./src/reddit/actions/otherDiscussions/constants.ts"),
 				u = s("./src/reddit/helpers/getCommentsPageSort/index.ts"),
 				p = s("./src/reddit/models/Comment/index.ts"),
@@ -10767,7 +10767,7 @@
 									search: t
 								}
 							} = e;
-							return o()([...Object(c.a)(t)])
+							return o()([...Object(d.a)(t)])
 						})(e),
 						a = {
 							depth: i.depth && parseInt(i.depth, 10) || void 0,
@@ -10775,30 +10775,27 @@
 							hasSortParam: t,
 							sort: s
 						};
-					return Object(l.a)(n, r, a)
+					return Object(c.a)(n, r, a)
 				},
-				x = Object(d.c)({
-					commentsPageSort: (e, t) => {
-						const s = h(t);
-						return Object(u.a)(e, s)
-					}
-				}),
-				f = Object(a.b)(x);
+				x = Object(l.a)((e, t) => {
+					const s = h(t);
+					return Object(u.a)(e, s)
+				});
 
-			function C(e) {
-				return f(t => {
+			function f(e) {
+				return t => {
 					const {
 						hasSortParam: s,
 						sortToUse: n
-					} = t.commentsPageSort, o = g(t, s, n), r = Object(m.d)(t.match.path), a = {
+					} = Object(a.e)(e => x(e, t)), o = g(t, s, n), r = Object(m.d)(t.match.path), d = {
 						...t,
 						commentsPageKey: o,
 						hasSortParam: s,
 						onOtherDiscussions: r,
 						sort: n
 					};
-					return i.a.createElement(e, a)
-				})
+					return i.a.createElement(e, d)
+				}
 			}
 		},
 		"./src/reddit/selectors/commentsListTruncated.ts": function(e, t, s) {
@@ -11208,4 +11205,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage.b7501400f47f42a213d2.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage.37f2b182e8d00a508c0e.js.map
