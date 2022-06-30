@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/runtime~Reddit.0e37c2a9a30f8898ba7d.js
-// Retrieved at 6/30/2022, 5:20:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/runtime~Reddit.ad81a1c6978eec629660.js
+// Retrieved at 6/30/2022, 6:20:06 PM by Reddit Dataminer v1.0.0
 ! function(e) {
 	function o(o) {
 		for (var a, n, r = o[0], s = o[1], c = o[2], l = 0, P = []; l < r.length; l++) n = r[l], Object.prototype.hasOwnProperty.call(d, n) && d[n] && P.push(d[n][0]), d[n] = 0;
@@ -1505,7 +1505,7 @@
 						MembershipPaywallPage: "b02ddc361af5e4bf119a",
 						FlairEdit: "f28dd8ed9f2d4b7c48c9",
 						"vendors~Chat~RedesignChat": "d511a7b399cd0a53330e",
-						"Chat~RedesignChat": "cde28354c75caa27d3e4",
+						"Chat~RedesignChat": "5b979c1c647f949e4b8f",
 						RedesignChat: "d794d7c248b1c88ca4f2",
 						ModListing: "a73a2945b0d85a7a16bc",
 						"vendors~PostCreation~Subreddit": "c6c96fbaf04e2c667eb2",
@@ -1613,7 +1613,7 @@
 						SubredditPremiumBlockchainCheckoutModal: "577b8048ba67b4d016aa",
 						ChatEmpty: "5a1ef7fc232307706fa6",
 						ChatMinimize: "44c69e3b0034bf285b68",
-						ChatOverlayReport: "b42881f1ff733b8decab",
+						ChatOverlayReport: "697de162f06ea1d03b59",
 						ChatPage: "e7a4cc9709580c54e430",
 						ExternalLinkUnit: "79269709c0ed54221ea4",
 						InvitedChannelsPanel: "3b32c0cb40ec988dce67",
@@ -1749,4 +1749,4 @@
 	var m = c;
 	t()
 }([]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/runtime~Reddit.0e37c2a9a30f8898ba7d.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/runtime~Reddit.ad81a1c6978eec629660.js.map

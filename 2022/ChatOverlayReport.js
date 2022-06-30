@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ChatOverlayReport.b42881f1ff733b8decab.js
-// Retrieved at 6/30/2022, 11:00:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ChatOverlayReport.697de162f06ea1d03b59.js
+// Retrieved at 6/30/2022, 6:20:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ChatOverlayReport"], {
 		"./src/chat/components/OverlayReport/CrisisFlow/CrisisFlowPage.m.less": function(e, t, s) {
@@ -278,24 +278,22 @@
 			var oe = s("./src/chat/routes/chat.ts"),
 				ne = s("./src/chat/selectors/channels.ts"),
 				ie = s("./src/chat/selectors/messages.ts"),
-				ae = s("./src/chat/selectors/reportRevamp.ts"),
-				le = s("./src/chat/selectors/theme.ts"),
-				ce = s("./src/chat/selectors/user.ts"),
-				de = s("./src/chat/components/OverlayReport/index.m.less"),
-				me = s.n(de);
-			const ue = u.a.div("ReportLoaderWrapper", me.a),
-				pe = u.a.img("LoadingIcon", me.a),
-				Ce = "2.0",
-				he = Object(m.c)({
+				ae = s("./src/chat/selectors/theme.ts"),
+				le = s("./src/chat/selectors/user.ts"),
+				ce = s("./src/chat/components/OverlayReport/index.m.less"),
+				de = s.n(ce);
+			const me = u.a.div("ReportLoaderWrapper", de.a),
+				ue = u.a.img("LoadingIcon", de.a),
+				pe = "2.0",
+				Ce = Object(m.c)({
 					user: (e, t) => t.attr === oe.a.User ? e.contacts.models[t.attrId] : void 0,
 					message: (e, t) => t.attr === oe.a.Invite || t.attr === oe.a.Message ? Object(ie.b)(e, Number(t.attrId)) : void 0,
 					messageList: e => Object(ne.D)(e),
-					currentUserId: (e, t) => Object(ce.a)(e),
+					currentUserId: (e, t) => Object(le.a)(e),
 					container: e => e && e.container && e.container.size,
-					isNightMode: e => Object(le.b)(e),
-					inReportingRevampSelector: e => Object(ae.a)(e)
+					isNightMode: e => Object(ae.b)(e)
 				}),
-				_e = Object(c.b)(he, (e, t) => {
+				he = Object(c.b)(Ce, (e, t) => {
 					let {
 						timestamp: s
 					} = t;
@@ -316,7 +314,7 @@
 						submitReportMessage: (t, s) => e(Object(O.Z)(t, s))
 					}
 				}),
-				Ee = async (e, t, s) => {
+				_e = async (e, t, s) => {
 					var r;
 					const o = await ((e, t) => {
 						let {
@@ -341,7 +339,7 @@
 						return e ? JSON.parse(e) : null
 					}
 				};
-			class Oe extends l.a.Component {
+			class Ee extends l.a.Component {
 				constructor(e) {
 					super(e), this.handleEscapeKey = e => {
 						if (27 === e.keyCode) return this.handleReportFlowClose()
@@ -411,7 +409,7 @@
 				componentDidMount() {
 					if (!this.props.message) return;
 					const e = `CHAT_${this.props.message.channelId}_${this.props.message.messageId}`;
-					Ee(this.props.gqlContext(), e, Ce).then(e => {
+					_e(this.props.gqlContext(), e, pe).then(e => {
 						e && this.setState({
 							formComponent: e.component,
 							formState: e.state,
@@ -425,36 +423,35 @@
 						props: {
 							message: s,
 							onChannelBlock: n,
-							isNightMode: i,
-							inReportingRevampSelector: a
+							isNightMode: i
 						},
 						state: {
-							formComponent: c,
-							formState: d,
-							ctlFlowOpened: m,
-							hasLoaded: u,
-							showCrisisFlowThankYouPage: p
+							formComponent: a,
+							formState: c,
+							ctlFlowOpened: d,
+							hasLoaded: m,
+							showCrisisFlowThankYouPage: u
 						}
-					} = this, C = null === (e = null == s ? void 0 : s.sender) || void 0 === e ? void 0 : e.nickname, h = null === (t = null == s ? void 0 : s.sender) || void 0 === t ? void 0 : t.userId;
-					return m && C ? l.a.createElement(l.a.Fragment, null, l.a.createElement(Q, {
-						username: C,
-						ctlSubmitted: p
-					}), a && l.a.createElement($, {
+					} = this, p = null === (e = null == s ? void 0 : s.sender) || void 0 === e ? void 0 : e.nickname, C = null === (t = null == s ? void 0 : s.sender) || void 0 === t ? void 0 : t.userId;
+					return d && p ? l.a.createElement(l.a.Fragment, null, l.a.createElement(Q, {
+						username: p,
+						ctlSubmitted: u
+					}), l.a.createElement($, {
 						onCrisisFlowSubmit: this.onCrisisFlowSubmit,
 						onCloseReportFlow: this.handleReportFlowClose,
-						thankYouControls: p
-					})) : c && d && u && h ? l.a.createElement(ee.a, {
-						formComponent: c,
-						formState: d,
+						thankYouControls: u
+					})) : a && c && m && C ? l.a.createElement(ee.a, {
+						formComponent: a,
+						formState: c,
 						onCloseClick: this.handleReportFlowClose,
 						onSubmit: this.onReportSubmit,
 						headerTitle: o.fbt._("Submit a Report", null, {
 							hk: "4dDhsH"
 						}),
 						onOpenCtlFlow: this.onOpenCtlFlow,
-						onBlockAuthor: () => n(h),
+						onBlockAuthor: () => n(C),
 						variant: this.props.container
-					}) : l.a.createElement(ue, null, l.a.createElement(pe, {
+					}) : l.a.createElement(me, null, l.a.createElement(ue, {
 						src: i ? `${r.a.assetPath}/img/loader_2orbit_loop_nightmode.gif` : `${r.a.assetPath}/img/loader_2orbit_loop.gif`,
 						alt: o.fbt._("Loading", null, {
 							hk: "2PZiVz"
@@ -462,7 +459,7 @@
 					}))
 				}
 			}
-			t.default = Object(h.b)(_e(Oe))
+			t.default = Object(h.b)(he(Ee))
 		},
 		"./src/reddit/actions/reportFlow/index.ts": function(e, t, s) {
 			"use strict";
@@ -505,4 +502,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatOverlayReport.b42881f1ff733b8decab.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatOverlayReport.697de162f06ea1d03b59.js.map
