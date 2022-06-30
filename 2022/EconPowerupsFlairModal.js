@@ -1,13 +1,13 @@
-// https://www.redditstatic.com/desktop2x/EconPowerupsFlairModal.c696388e68fe34c0437a.js
-// Retrieved at 6/29/2022, 1:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/EconPowerupsFlairModal.35de26023846f08e9fda.js
+// Retrieved at 6/30/2022, 10:00:07 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["EconPowerupsFlairModal"], {
 		"./src/reddit/actions/economics/powerups/flairs/index.ts": function(e, t, r) {
 			"use strict";
 			r.r(t), r.d(t, "onSubredditUserPowerupsFlairsLoaded", (function() {
-				return g
-			})), r.d(t, "onUsersSupportedSubredditsLoaded", (function() {
 				return y
+			})), r.d(t, "onUsersSupportedSubredditsLoaded", (function() {
+				return g
 			})), r.d(t, "onSubredditUserPowerupsFlairPreferenceUpdateRequested", (function() {
 				return O
 			})), r.d(t, "onSubredditUserPowerupsFlairPreferenceUpdateSuccess", (function() {
@@ -66,8 +66,8 @@
 					powerups: j.a
 				}
 			});
-			const g = Object(i.a)(v.d),
-				y = Object(i.a)(v.i),
+			const y = Object(i.a)(v.d),
+				g = Object(i.a)(v.i),
 				O = Object(i.a)(v.f),
 				x = Object(i.a)(v.g),
 				I = Object(i.a)(v.e),
@@ -94,7 +94,7 @@
 								subredditInfoById: s,
 								redditorsInfoByIds: i
 							} = t;
-						await r(g(s)), i && await r(y(i))
+						await r(y(s)), i && await r(g(i))
 					} catch (l) {
 						n.c.captureException(l)
 					}
@@ -102,7 +102,7 @@
 					if (!e) return;
 					const i = s(),
 						n = Object(f.k)(i);
-					if (!n || !Object(b.g)(i, {
+					if (!n || !Object(b.f)(i, {
 							subredditId: e
 						})) return;
 					const o = !!Object(h.f)(i, {
@@ -116,7 +116,7 @@
 						fullData: !0
 					}));
 					const s = r();
-					return Object(b.g)(s, {
+					return Object(b.f)(s, {
 						subredditId: e
 					})
 				}, k = e => async (t, r) => {
@@ -196,8 +196,8 @@
 					});
 					try {
 						await c(o(), m, w, j), t(x(e))
-					} catch (g) {
-						t(I(e)), n.c.captureException(g), t(Object(u.f)({
+					} catch (y) {
+						t(I(e)), n.c.captureException(y), t(Object(u.f)({
 							duration: u.a,
 							kind: p.b.Error,
 							text: s.fbt._("Failed to set preferred achievement flair", null, {
@@ -321,10 +321,10 @@
 					getComponent: () => r.e("CustomBadgeHovercardTooltip").then(r.bind(null, "./src/reddit/components/Badges/UserDisplay/AddCustomTooltip/tooltip.tsx")).then(e => e.default)
 				}),
 				j = r("./src/reddit/components/Badges/UserDisplay/index.m.less"),
-				g = r.n(j);
+				y = r.n(j);
 
-			function y() {
-				return (y = Object.assign || function(e) {
+			function g() {
+				return (g = Object.assign || function(e) {
 					for (var t = 1; t < arguments.length; t++) {
 						var r = arguments[t];
 						for (var s in r) Object.prototype.hasOwnProperty.call(r, s) && (e[s] = r[s])
@@ -353,23 +353,23 @@
 						badges: e
 					} = this.props;
 					if (this.props.usePlaceholder && !e.length) return i.a.createElement("img", {
-						className: Object(d.a)(g.a.image, this.props.className),
+						className: Object(d.a)(y.a.image, this.props.className),
 						src: `${a.a.assetPath}/img/badges/placeholder.png`
 					});
 					const t = `${O}-${this.props.uniqueIdentifier}`,
 						r = this.props.badgeSize || F;
 					return i.a.createElement(s.Fragment, null, this.props.showAddCustom && i.a.createElement("div", {
-						className: g.a.wrapper,
+						className: y.a.wrapper,
 						id: t,
 						onMouseEnter: () => this.handleMouseEnter(t),
 						onMouseLeave: () => this.handleMouseLeave()
 					}, i.a.createElement("button", {
-						className: g.a.addCustomLink,
+						className: y.a.addCustomLink,
 						onClick: this.props.onOpenUploadDialog
 					}, i.a.createElement(f.a, {
-						className: g.a.addCustom
+						className: y.a.addCustom
 					})), i.a.createElement(w, {
-						className: g.a.badgeHovercard,
+						className: y.a.badgeHovercard,
 						subredditId: this.props.subredditId,
 						targetPosition: ["left", "bottom"],
 						tooltipId: t,
@@ -381,12 +381,12 @@
 						return i.a.createElement(s.Fragment, {
 							key: `badges-fragement-${e.id}`
 						}, i.a.createElement("div", {
-							className: Object(d.a)(g.a.wrapper, this.props.className),
+							className: Object(d.a)(y.a.wrapper, this.props.className),
 							key: `wrapper-${e.id}`,
 							onMouseEnter: () => this.handleMouseEnter(n),
 							onMouseLeave: () => this.handleMouseLeave()
 						}, i.a.createElement("img", {
-							className: g.a.image,
+							className: y.a.image,
 							id: n,
 							key: e.id,
 							src: t.url2x,
@@ -397,7 +397,7 @@
 						}), this.props.useHovercard ? i.a.createElement(p, {
 							badge: e,
 							correlationId: this.props.correlationId,
-							className: g.a.badgeHovercard,
+							className: y.a.badgeHovercard,
 							key: `tooltip-${e.id}`,
 							subredditId: this.props.subredditId,
 							targetPosition: ["left", "bottom"],
@@ -452,7 +452,7 @@
 					allBadges: r,
 					...s
 				} = e, n = t.map(e => r[e]).filter(Boolean);
-				return i.a.createElement(E, y({
+				return i.a.createElement(E, g({
 					badges: n
 				}, s))
 			}
@@ -586,8 +586,8 @@
 				v = r("./src/reddit/selectors/experiments/econ/index.ts"),
 				w = r("./src/reddit/selectors/experiments/i18n/hiddenPowerups.ts"),
 				j = r("./src/reddit/selectors/platform.ts"),
-				g = r("./src/reddit/selectors/user.ts"),
-				y = r("./src/reddit/selectors/userFlair.ts"),
+				y = r("./src/reddit/selectors/user.ts"),
+				g = r("./src/reddit/selectors/userFlair.ts"),
 				O = r("./src/reddit/components/Econ/Common/ModalCloseButton/index.tsx"),
 				x = r("./src/reddit/components/Econ/PowerupsFlair/UserFlairPreview.tsx"),
 				I = r("./src/reddit/components/Econ/PowerupsFlair/PowerupsFlairModal/Header.m.less"),
@@ -705,7 +705,7 @@
 						subredditId: r,
 						userId: s
 					})),
-					u = Object(a.e)(e => Object(U.n)(e, {
+					u = Object(a.e)(e => Object(U.m)(e, {
 						subredditId: r
 					})),
 					p = Object(a.e)(e => Object(L.j)(e, {
@@ -743,14 +743,14 @@
 					onSelect: f
 				}))), (() => u && !p ? o.a.createElement(l.a, {
 					onClick: () => {
-						n(Object(m.x)()), v()
+						n(Object(m.v)()), v()
 					}
 				}) : u ? null : o.a.createElement(T.t, {
 					priority: T.c.Primary,
 					className: R.a.powerupButton,
 					isFullWidth: !0,
 					onClick: () => {
-						n(Object(m.t)()), v()
+						n(Object(m.r)()), v()
 					}
 				}, K._("Powerup to Unlock", null, {
 					hk: "M8l7D"
@@ -804,7 +804,7 @@
 						subredditId: t,
 						userId: r
 					})),
-					u = Object(a.e)(e => Object(U.n)(e, {
+					u = Object(a.e)(e => Object(U.m)(e, {
 						subredditId: t
 					}));
 				if (Object(C.a)(S.a), !d) return null;
@@ -866,7 +866,7 @@
 				} = e;
 				const n = Object(a.d)(),
 					d = Object(h.a)(),
-					c = Object(a.e)(g.k);
+					c = Object(a.e)(y.k);
 				return c ? o.a.createElement("div", {
 					className: Object(i.a)(oe.a.container, t)
 				}, o.a.createElement("div", {
@@ -903,12 +903,12 @@
 						isScrollGradientVisible: s,
 						calculateGradientVisibility: n
 					} = Object(b.b)(!0),
-					O = Object(a.e)(g.k),
+					O = Object(a.e)(y.k),
 					x = Object(a.e)(j.e),
-					I = Object(a.e)(e => x ? Object(y.b)(e, {
+					I = Object(a.e)(e => x ? Object(g.b)(e, {
 						subredditId: x.id
 					}) : null),
-					F = Object(a.e)(e => x ? Object(y.d)(e, {
+					F = Object(a.e)(e => x ? Object(g.d)(e, {
 						subredditId: x.id
 					}) : null),
 					P = Object(a.e)(v.h),
@@ -950,7 +950,7 @@
 				}), o.a.createElement(l.a, {
 					className: _.a.ctaButton,
 					onClick: () => {
-						t(Object(m.w)()), e(Object(d.g)("user_flair_picker"))
+						t(Object(m.u)()), e(Object(d.g)("user_flair_picker"))
 					}
 				}))) : null
 			})
@@ -1072,7 +1072,7 @@
 					onClick: r,
 					disabled: s
 				} = e;
-				const c = Object(n.e)(a.u);
+				const c = Object(n.e)(a.t);
 				return i.a.createElement(o.t, {
 					priority: o.c.Primary,
 					className: t,
@@ -1575,4 +1575,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EconPowerupsFlairModal.c696388e68fe34c0437a.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EconPowerupsFlairModal.35de26023846f08e9fda.js.map

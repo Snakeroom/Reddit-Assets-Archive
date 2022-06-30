@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/MembershipPaywallPage.d81cee51ca7b5f44a582.js
-// Retrieved at 6/27/2022, 2:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/MembershipPaywallPage.d665968c4f30b3405bbe.js
+// Retrieved at 6/30/2022, 10:00:07 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["MembershipPaywallPage"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -6630,7 +6630,7 @@
 					return !!s && s.hasGifProduct
 				},
 				W = (e, t, s) => {
-					if (Object(b.p)(e, {
+					if (Object(b.o)(e, {
 							subredditId: t
 						})) return !0;
 					const i = "replyToPost" !== s && Object(p.b)(e, {
@@ -6645,7 +6645,7 @@
 					if (!Object(g.b)(e, {
 							subredditId: t
 						})) return !1;
-					if (Object(b.q)(e, {
+					if (Object(b.p)(e, {
 							subredditId: t
 						})) return !0;
 					const n = "replyToPost" !== s && Object(p.b)(e, {
@@ -6718,4 +6718,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/MembershipPaywallPage.d81cee51ca7b5f44a582.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/MembershipPaywallPage.d665968c4f30b3405bbe.js.map

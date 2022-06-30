@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditPremiumNewUserWelcome.d45dfd2ca2dc02d5667e.js
-// Retrieved at 6/21/2022, 7:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditPremiumNewUserWelcome.44cb76e0af07def1da57.js
+// Retrieved at 6/30/2022, 10:00:07 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditPremiumNewUserWelcome"], {
 		"./node_modules/lodash/flattenDeep.js": function(e, t, n) {
@@ -812,12 +812,12 @@
 				W = n("./src/reddit/selectors/products.ts"),
 				V = n("./src/reddit/components/Economics/SubredditPremium/NewUserWelcome/NewbieBadge/index.m.less"),
 				H = n.n(V);
-			const q = "newbie_badge";
-			class Y extends s.a.Component {
+			const Y = "newbie_badge";
+			class q extends s.a.Component {
 				constructor() {
 					super(...arguments), this.onApply = async () => {
 						(await Object($.a)(this.props.apiContext(), {
-							productId: q,
+							productId: Y,
 							subredditId: this.props.subredditId
 						})).ok && (this.props.onBadgeApplied(), this.props.sendEvent(e => ({
 							source: "meta",
@@ -856,7 +856,7 @@
 				}
 			}
 			const z = Object(c.c)({
-				newbieBadge: e => Object(W.a)(e, q)
+				newbieBadge: e => Object(W.a)(e, Y)
 			});
 			var K = Object(b.b)(Object(l.c)(Object(o.b)(z, (e, t) => {
 					let {
@@ -865,13 +865,13 @@
 					return {
 						onBadgeApplied: () => {
 							e(Object(L.d)(n, {
-								id: q
+								id: Y
 							})), e(Object(U.b)(g.a.Achievement)), e(Object(U.c)({
 								subredditId: n
 							}))
 						}
 					}
-				})(Y))),
+				})(q))),
 				Q = n("./src/reddit/components/Economics/SubredditPremium/NewUserWelcome/index.m.less"),
 				Z = n.n(Q);
 			class X extends s.a.Component {
@@ -938,7 +938,7 @@
 						if (Object(p.S)(e, t) !== m.g.Large) return !1;
 						if (r) {
 							const t = Object(h.f)(e, r.id)[g.a.Achievement];
-							if (t && t.type === q) return !1
+							if (t && t.type === Y) return !1
 						}
 						return !0
 					},
@@ -2115,7 +2115,7 @@
 			})), n.d(t, "g", (function() {
 				return H
 			})), n.d(t, "m", (function() {
-				return q
+				return Y
 			}));
 			n("./node_modules/core-js/modules/web.dom.iterable.js");
 			var r = n("./src/reddit/featureFlags/index.ts"),
@@ -2329,7 +2329,7 @@
 					return !!n && n.hasGifProduct
 				},
 				W = (e, t, n) => {
-					if (Object(f.p)(e, {
+					if (Object(f.o)(e, {
 							subredditId: t
 						})) return !0;
 					const r = "replyToPost" !== n && Object(b.b)(e, {
@@ -2344,7 +2344,7 @@
 					if (!Object(_.b)(e, {
 							subredditId: t
 						})) return !1;
-					if (Object(f.q)(e, {
+					if (Object(f.p)(e, {
 							subredditId: t
 						})) return !0;
 					const s = "replyToPost" !== n && Object(b.b)(e, {
@@ -2361,7 +2361,7 @@
 						if (r && r.data) return !!r.data[n]
 					}
 				},
-				q = e => e.economics.pointsCopy.data
+				Y = e => e.economics.pointsCopy.data
 		},
 		"./src/reddit/selectors/products.ts": function(e, t, n) {
 			"use strict";
@@ -2397,4 +2397,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditPremiumNewUserWelcome.d45dfd2ca2dc02d5667e.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditPremiumNewUserWelcome.44cb76e0af07def1da57.js.map

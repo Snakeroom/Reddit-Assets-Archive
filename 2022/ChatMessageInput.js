@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ChatMessageInput.0520eb36bf054c4e1571.js
-// Retrieved at 6/29/2022, 1:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ChatMessageInput.4a518edad1308044269f.js
+// Retrieved at 6/30/2022, 10:00:07 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ChatMessageInput"], {
 		"./node_modules/linkify-it/index.js": function(e, t, s) {
@@ -1819,7 +1819,7 @@
 					return !!s && s.hasGifProduct
 				},
 				U = (e, t, s) => {
-					if (Object(_.p)(e, {
+					if (Object(_.o)(e, {
 							subredditId: t
 						})) return !0;
 					const r = "replyToPost" !== s && Object(p.b)(e, {
@@ -1834,7 +1834,7 @@
 					if (!Object(b.b)(e, {
 							subredditId: t
 						})) return !1;
-					if (Object(_.q)(e, {
+					if (Object(_.p)(e, {
 							subredditId: t
 						})) return !0;
 					const n = "replyToPost" !== s && Object(p.b)(e, {
@@ -1855,4 +1855,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatMessageInput.0520eb36bf054c4e1571.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatMessageInput.4a518edad1308044269f.js.map

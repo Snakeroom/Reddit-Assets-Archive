@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Governance-ClaimPointsBanner.0420bce92674016dc234.js
-// Retrieved at 6/21/2022, 7:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Governance-ClaimPointsBanner.7484e981292b26778201.js
+// Retrieved at 6/30/2022, 10:00:07 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Governance-ClaimPointsBanner"], {
 		"./src/lib/constants/specialMembership.ts": function(A, e, t) {
@@ -1595,7 +1595,7 @@
 					return !!t && t.hasGifProduct
 				},
 				W = (A, e, t) => {
-					if (Object(k.p)(A, {
+					if (Object(k.o)(A, {
 							subredditId: e
 						})) return !0;
 					const n = "replyToPost" !== t && Object(p.b)(A, {
@@ -1610,7 +1610,7 @@
 					if (!Object(b.b)(A, {
 							subredditId: e
 						})) return !1;
-					if (Object(k.q)(A, {
+					if (Object(k.p)(A, {
 							subredditId: e
 						})) return !0;
 					const i = "replyToPost" !== t && Object(p.b)(A, {
@@ -1631,4 +1631,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Governance-ClaimPointsBanner.0420bce92674016dc234.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Governance-ClaimPointsBanner.7484e981292b26778201.js.map

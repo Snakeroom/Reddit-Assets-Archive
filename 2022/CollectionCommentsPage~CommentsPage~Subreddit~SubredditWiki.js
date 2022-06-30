@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~Subreddit~SubredditWiki.488f911ee08e388ad05a.js
-// Retrieved at 6/29/2022, 1:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~Subreddit~SubredditWiki.da262b86eb126c944b18.js
+// Retrieved at 6/30/2022, 10:00:07 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~Subreddit~SubredditWiki"], {
 		"./node_modules/lodash/random.js": function(e, t, r) {
@@ -214,7 +214,7 @@
 					if (!e) return;
 					const s = n(),
 						i = Object(g.k)(s);
-					if (!i || !Object(b.g)(s, {
+					if (!i || !Object(b.f)(s, {
 							subredditId: e
 						})) return;
 					const a = !!Object(h.f)(s, {
@@ -228,7 +228,7 @@
 						fullData: !0
 					}));
 					const n = r();
-					return Object(b.g)(n, {
+					return Object(b.f)(n, {
 						subredditId: e
 					})
 				}, N = e => async (t, r) => {
@@ -895,7 +895,7 @@
 					onClick: r,
 					disabled: n
 				} = e;
-				const c = Object(i.e)(o.u);
+				const c = Object(i.e)(o.t);
 				return s.a.createElement(a.t, {
 					priority: a.c.Primary,
 					className: t,
@@ -1106,7 +1106,7 @@
 					className: m.a.user,
 					to: `/user/${h}/`,
 					onClick: () => {
-						b && r(Object(c.A)(b.id, b.displayName))
+						b && r(Object(c.y)(b.id, b.displayName))
 					}
 				}, y) : s.a.createElement("div", {
 					className: m.a.user
@@ -1345,16 +1345,16 @@
 				const y = Object(a.d)(),
 					w = Object(h.a)(),
 					v = Object(a.e)(x.k),
-					_ = Object(a.e)(e => Object(g.j)(e, {
+					_ = Object(a.e)(e => Object(g.i)(e, {
 						subredditId: r
 					})),
 					C = Object(a.e)(e => Object(f.U)(e, {
 						subredditId: r
 					})),
-					N = Object(a.e)(e => Object(g.m)(e, {
+					N = Object(a.e)(e => Object(g.l)(e, {
 						subredditId: r
 					})),
-					I = Object(a.e)(e => !!Object(g.k)(e, {
+					I = Object(a.e)(e => !!Object(g.j)(e, {
 						subredditId: r
 					})),
 					F = Object(a.e)(O.b) && Object(O.c)(r);
@@ -1385,7 +1385,7 @@
 				}))()), i.a.createElement(c.a, {
 					className: S.a.button,
 					onClick: () => {
-						w(Object(b.p)()), y(Object(d.g)("powerups_sidebar"))
+						w(Object(b.n)()), y(Object(d.g)("powerups_sidebar"))
 					}
 				}), i.a.createElement(l.a, {
 					space: l.b.SIDEBAR
@@ -1403,7 +1403,7 @@
 					className: S.a.heroes,
 					maxSupporters: 8,
 					onShowFullSupportersList: () => {
-						w(Object(b.r)()), y(Object(d.i)(r))
+						w(Object(b.p)()), y(Object(d.i)(r))
 					}
 				}), !(null == N ? void 0 : N.length) && i.a.createElement("div", {
 					className: S.a.becomeFirstHero
@@ -4280,4 +4280,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~Subreddit~SubredditWiki.488f911ee08e388ad05a.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~Subreddit~SubredditWiki.da262b86eb126c944b18.js.map

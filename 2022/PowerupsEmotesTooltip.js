@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PowerupsEmotesTooltip.d9697c06fce5202e6454.js
-// Retrieved at 6/29/2022, 10:10:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PowerupsEmotesTooltip.5ecb9e9e06a5ee038576.js
+// Retrieved at 6/30/2022, 10:00:07 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PowerupsEmotesTooltip"], {
 		"./src/reddit/actions/economics/powerups/constants.ts": function(e, t, o) {
@@ -426,9 +426,9 @@
 				w = o("./src/reddit/selectors/gold/powerups/index.ts"),
 				k = o("./src/reddit/components/RichTextEditor/emotes/EmoteButton.tsx"),
 				I = o("./src/reddit/components/RichTextEditor/emotes/Powerups/DeleteEmojiModal.tsx"),
-				T = o("./src/reddit/components/RichTextEditor/emotes/Powerups/useEmojiUpload.ts"),
-				g = o("./src/reddit/components/RichTextEditor/emotes/Powerups/emotesSection.m.less"),
-				C = o.n(g);
+				g = o("./src/reddit/components/RichTextEditor/emotes/Powerups/useEmojiUpload.ts"),
+				T = o("./src/reddit/components/RichTextEditor/emotes/Powerups/emotesSection.m.less"),
+				C = o.n(T);
 			const O = e => {
 				let {
 					onEmoteClicked: t,
@@ -437,17 +437,17 @@
 					userCanUseEmojis: c
 				} = e;
 				const d = Object(u.d)(),
-					g = Object(r.a)(),
+					T = Object(r.a)(),
 					[O, R] = Object(s.useState)(null),
 					P = () => R(null),
 					[N, v] = Object(s.useState)(!1),
-					S = Object(u.e)(e => Object(w.t)(e, {
+					S = Object(u.e)(e => Object(w.s)(e, {
 						subredditId: o
 					})),
-					U = Object(u.e)(e => Object(w.h)(e, {
+					U = Object(u.e)(e => Object(w.g)(e, {
 						subredditId: o
 					})),
-					y = Object(u.e)(e => Object(w.i)(e, {
+					y = Object(u.e)(e => Object(w.h)(e, {
 						subredditId: o
 					})),
 					{
@@ -456,7 +456,7 @@
 						maxEmojisUploaded: L,
 						onFileChange: A,
 						onClickUpload: F
-					} = Object(T.a)(o, U, e => {
+					} = Object(g.a)(o, U, e => {
 						d(Object(b.f)({
 							duration: 5e3,
 							kind: f.b.Error,
@@ -468,9 +468,9 @@
 							})
 						}))
 					}, e => {
-						g(Object(i.a)(e, "powerups"))
+						T(Object(i.a)(e, "powerups"))
 					}, e => {
-						g(Object(i.q)(e, "powerups")), d(Object(b.f)({
+						T(Object(i.o)(e, "powerups")), d(Object(b.f)({
 							duration: 5e3,
 							kind: f.b.SuccessMod,
 							text: l.fbt._({
@@ -566,7 +566,7 @@
 				}))))), !c && n.a.createElement(_.t, {
 					className: C.a.unlockButton,
 					onClick: () => {
-						g(Object(i.u)()), d(Object(E.g)("emote_picker"))
+						T(Object(i.s)()), d(Object(E.g)("emote_picker"))
 					},
 					priority: _.c.Primary
 				}, l.fbt._("Unlock Emojis", null, {
@@ -580,7 +580,7 @@
 							v(!0), await d(Object(p.a)({
 								subredditId: o,
 								emojiId: O.id
-							})), P(), g(Object(i.d)(1, "powerups")), d(Object(b.f)({
+							})), P(), T(Object(i.b)(1, "powerups")), d(Object(b.f)({
 								duration: 5e3,
 								kind: f.b.SuccessMod,
 								text: l.fbt._("Deleted custom emoji", null, {
@@ -617,7 +617,7 @@
 				const p = Object(r.a)(),
 					[E, b] = Object(s.useState)(!1);
 				Object(s.useEffect)(() => {
-					E && p(Object(i.k)())
+					E && p(Object(i.i)())
 				}, [E, p]);
 				return u.id ? n.a.createElement(c.a, {
 					className: P.a.toolbarTooltip,
@@ -813,4 +813,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PowerupsEmotesTooltip.d9697c06fce5202e6454.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PowerupsEmotesTooltip.5ecb9e9e06a5ee038576.js.map

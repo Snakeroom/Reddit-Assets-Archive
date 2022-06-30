@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ChatPost~CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~Post~38f39fb8.e3ce30b0085a968caf4b.js
-// Retrieved at 6/29/2022, 1:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ChatPost~CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~Post~38f39fb8.deaa780c9e37637dbdbc.js
+// Retrieved at 6/30/2022, 10:00:07 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ChatPost~CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~Post~38f39fb8"], {
 		"./src/reddit/actions/economics/subredditPremium/actionCreators.ts": function(e, t, r) {
@@ -2533,7 +2533,7 @@
 							onMouseEnter: Ee.show,
 							onMouseLeave: Ee.hide,
 							onClick: () => {
-								q(Object(h.z)(G ? "post" : "postlist")), z(Object(u.g)("post_top_supporter_badge"))
+								q(Object(h.x)(G ? "post" : "postlist")), z(Object(u.g)("post_top_supporter_badge"))
 							},
 							ref: Ee.target.ref
 						}, o.a.createElement(w.a, {
@@ -3622,7 +3622,7 @@
 					return !!r && r.hasGifProduct
 				},
 				W = (e, t, r) => {
-					if (Object(b.p)(e, {
+					if (Object(b.o)(e, {
 							subredditId: t
 						})) return !0;
 					const s = "replyToPost" !== r && Object(p.b)(e, {
@@ -3637,7 +3637,7 @@
 					if (!Object(f.b)(e, {
 							subredditId: t
 						})) return !1;
-					if (Object(b.q)(e, {
+					if (Object(b.p)(e, {
 							subredditId: t
 						})) return !0;
 					const o = "replyToPost" !== r && Object(p.b)(e, {
@@ -3737,4 +3737,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatPost~CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~Post~38f39fb8.e3ce30b0085a968caf4b.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatPost~CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~Post~38f39fb8.deaa780c9e37637dbdbc.js.map

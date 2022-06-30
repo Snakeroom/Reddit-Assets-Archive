@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/FramedModal.9d6cca8c2dc171840c49.js
-// Retrieved at 3/10/2022, 11:20:03 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/FramedModal.874ff192bd36fe935ed7.js
+// Retrieved at 6/30/2022, 10:00:07 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["FramedModal"], {
 		"./src/reddit/components/CrisisFlow/_CrisisFlow.m.less": function(e, s, t) {
@@ -55,7 +55,7 @@
 						const s = this.resolve(e);
 						return !1 !== this.resolved[s] && !!t.m[s]
 					},
-					importAsync: () => Promise.all([t.e("Governance~ModListing~Reddit~ReportFlow~Subreddit"), t.e("ReportFlow")]).then(t.bind(null, "./src/reddit/components/ReportFlow/_ReportFlowNewModal.tsx")),
+					importAsync: () => Promise.all([t.e("Governance~Reddit~ReportFlow~Subreddit~reddit-components-BlankPost~reddit-components-ClassicPost~red~f3a55241"), t.e("Governance~ModListing~Reddit~ReportFlow~Subreddit"), t.e("ReportFlow")]).then(t.bind(null, "./src/reddit/components/ReportFlow/_ReportFlowNewModal.tsx")),
 					requireAsync(e) {
 						const s = this.resolve(e);
 						return this.resolved[s] = !1, this.importAsync(e).then(e => (this.resolved[s] = !0, e))
@@ -159,7 +159,7 @@
 					PAYPAL_FINISH: "paypal-finish",
 					REPORT: "report"
 				};
-			class y extends i.a.Component {
+			class w extends i.a.Component {
 				constructor(e) {
 					if (super(e), this.element = null, this.iframeWidth = null, this.iframeHeight = null, this.onContentResize = () => {
 							this.maybeResize()
@@ -250,7 +250,7 @@
 					}))
 				}
 			}
-			s.default = y
+			s.default = w
 		},
 		"./src/reddit/pages/PaypalFinishPage/async.tsx": function(e, s, t) {
 			"use strict";
@@ -278,4 +278,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/FramedModal.9d6cca8c2dc171840c49.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/FramedModal.874ff192bd36fe935ed7.js.map

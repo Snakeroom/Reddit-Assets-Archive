@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CrisisFlow.8fd1ff861685f8ab57e0.js
-// Retrieved at 5/9/2022, 3:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CrisisFlow.65e3da0510563e31d186.js
+// Retrieved at 6/30/2022, 10:00:07 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CrisisFlow", "reddit-components-CrisisFlow-CrisisFlowPage"], {
 		"./src/reddit/actions/reportFlow/index.ts": function(e, s, t) {
@@ -12,9 +12,9 @@
 				return o
 			}));
 			var n = t("./src/lib/loadableAction/index.ts");
-			const r = Object(n.a)(() => Promise.all([t.e("Governance~ModListing~Reddit~ReportFlow~Subreddit"), t.e("ReportFlow")]).then(t.bind(null, "./src/reddit/actions/reportFlow/reportFlow.ts")).then(e => e.postOrCommentReported)),
-				i = Object(n.a)(() => Promise.all([t.e("Governance~ModListing~Reddit~ReportFlow~Subreddit"), t.e("ReportFlow")]).then(t.bind(null, "./src/reddit/actions/reportFlow/reportFlow.ts")).then(e => e.reportFlowOpened)),
-				o = Object(n.a)(() => Promise.all([t.e("Governance~ModListing~Reddit~ReportFlow~Subreddit"), t.e("ReportFlow")]).then(t.bind(null, "./src/reddit/actions/reportFlow/reportFlow.ts")).then(e => e.reportFlowClosed))
+			const r = Object(n.a)(() => Promise.all([t.e("Governance~Reddit~ReportFlow~Subreddit~reddit-components-BlankPost~reddit-components-ClassicPost~red~f3a55241"), t.e("Governance~ModListing~Reddit~ReportFlow~Subreddit"), t.e("ReportFlow")]).then(t.bind(null, "./src/reddit/actions/reportFlow/reportFlow.ts")).then(e => e.postOrCommentReported)),
+				i = Object(n.a)(() => Promise.all([t.e("Governance~Reddit~ReportFlow~Subreddit~reddit-components-BlankPost~reddit-components-ClassicPost~red~f3a55241"), t.e("Governance~ModListing~Reddit~ReportFlow~Subreddit"), t.e("ReportFlow")]).then(t.bind(null, "./src/reddit/actions/reportFlow/reportFlow.ts")).then(e => e.reportFlowOpened)),
+				o = Object(n.a)(() => Promise.all([t.e("Governance~Reddit~ReportFlow~Subreddit~reddit-components-BlankPost~reddit-components-ClassicPost~red~f3a55241"), t.e("Governance~ModListing~Reddit~ReportFlow~Subreddit"), t.e("ReportFlow")]).then(t.bind(null, "./src/reddit/actions/reportFlow/reportFlow.ts")).then(e => e.reportFlowClosed))
 		},
 		"./src/reddit/components/CrisisFlow/CrisisFlowPage.m.less": function(e, s, t) {
 			e.exports = {
@@ -73,17 +73,17 @@
 			}
 			var C = t("./src/reddit/controls/Link/index.tsx"),
 				h = t("./src/config.ts"),
-				g = t("./src/lib/lessComponent.tsx"),
-				w = t("./src/reddit/components/CrisisFlow/CrisisFlowPage.m.less"),
-				x = t.n(w),
+				w = t("./src/lib/lessComponent.tsx"),
+				g = t("./src/reddit/components/CrisisFlow/CrisisFlowPage.m.less"),
+				x = t.n(g),
 				f = t("./src/reddit/components/CrisisFlow/CrisisMainPage/index.m.less"),
 				_ = t.n(f);
 			const {
 				fbt: b
-			} = t("./node_modules/fbt/lib/FbtPublic.js"), E = g.a.div("CrisisContent", _.a), v = g.a.div("CrisisImageContainer", x.a), L = g.a.img("CrisisImage", _.a), k = g.a.h2("CrisisTitle", x.a), R = g.a.p("CrisisDescription", x.a);
-			var F = e => r.a.createElement(E, null, r.a.createElement(v, null, r.a.createElement(L, {
+			} = t("./node_modules/fbt/lib/FbtPublic.js"), v = w.a.div("CrisisContent", _.a), E = w.a.div("CrisisImageContainer", x.a), k = w.a.img("CrisisImage", _.a), L = w.a.h2("CrisisTitle", x.a), R = w.a.p("CrisisDescription", x.a);
+			var F = e => r.a.createElement(v, null, r.a.createElement(E, null, r.a.createElement(k, {
 					src: `${h.a.assetPath}/img/crisis-line-icon.png`
-				})), r.a.createElement(k, null, b._("Would you like Reddit to reach out to {username} ?", [b._param("username", r.a.createElement("span", null, "u/", e.username))], {
+				})), r.a.createElement(L, null, b._("Would you like Reddit to reach out to {username} ?", [b._param("username", r.a.createElement("span", null, "u/", e.username))], {
 					hk: "3RFVlj"
 				})), r.a.createElement(R, null, b._("We’ve partnered with {=Crisis Text Line} to provide redditors with support from trained Crisis Counselors, and will reach out (confidentially) to let {username} know that there are people who are here for them.", [b._param("=Crisis Text Line", r.a.createElement(C.a, {
 					href: "https://www.crisistextline.org/",
@@ -96,15 +96,15 @@
 				P = t("./src/reddit/icons/svgs/ArrowHeadsRight/index.tsx"),
 				T = t("./src/reddit/icons/svgs/ChatBubbles/index.tsx"),
 				j = t("./src/reddit/icons/svgs/Person/index.tsx"),
-				O = t("./src/reddit/icons/svgs/TickCircled/index.tsx"),
-				S = t("./src/reddit/components/CrisisFlow/CrisisThankYouPage/index.m.less"),
-				y = t.n(S);
+				S = t("./src/reddit/icons/svgs/TickCircled/index.tsx"),
+				O = t("./src/reddit/components/CrisisFlow/CrisisThankYouPage/index.m.less"),
+				y = t.n(O);
 			const {
 				fbt: A
-			} = t("./node_modules/fbt/lib/FbtPublic.js"), D = g.a.div("CrisisImageContainer", x.a), I = g.a.h2("CrisisTitle", x.a), N = g.a.p("CrisisDescription", x.a), z = g.a.div("CrisisOtherActions", y.a), V = g.a.h4("CrisisOtherActionsTitle", y.a), H = g.a.div("CrisisLinkIconContainer", y.a), q = g.a.div("CrisisLinkText", y.a), M = g.a.h3("CrisisLinkTitle", y.a), Y = g.a.p("CrisisLinkDescription", y.a);
-			var W = e => r.a.createElement("div", {
+			} = t("./node_modules/fbt/lib/FbtPublic.js"), D = w.a.div("CrisisImageContainer", x.a), I = w.a.h2("CrisisTitle", x.a), N = w.a.p("CrisisDescription", x.a), z = w.a.div("CrisisOtherActions", y.a), V = w.a.h4("CrisisOtherActionsTitle", y.a), H = w.a.div("CrisisLinkIconContainer", y.a), q = w.a.div("CrisisLinkText", y.a), M = w.a.h3("CrisisLinkTitle", y.a), G = w.a.p("CrisisLinkDescription", y.a);
+			var Y = e => r.a.createElement("div", {
 					className: y.a.CrisisThankYouPage
-				}, r.a.createElement(D, null, r.a.createElement(O.a, {
+				}, r.a.createElement(D, null, r.a.createElement(S.a, {
 					className: y.a.CrisisTickImage
 				})), r.a.createElement(I, null, A._("Thanks for caring about your fellow redditor", null, {
 					hk: "1ePh84"
@@ -118,7 +118,7 @@
 					className: y.a.CrisisLink
 				}, r.a.createElement(H, null, r.a.createElement(T.a, null)), r.a.createElement(q, null, r.a.createElement(M, null, A._("Learn how to help someone in crisis", null, {
 					hk: "3HohFx"
-				})), r.a.createElement(Y, null, A._("Get advice on what you can say and how to be supportive.", null, {
+				})), r.a.createElement(G, null, A._("Get advice on what you can say and how to be supportive.", null, {
 					hk: "1NHS5d"
 				}))), r.a.createElement(P.a, {
 					className: y.a.CrisisLinkArrow
@@ -128,14 +128,14 @@
 					className: y.a.CrisisLink
 				}, r.a.createElement(H, null, r.a.createElement(j.a, null)), r.a.createElement(q, null, r.a.createElement(M, null, A._("Get yourself support", null, {
 					hk: "kTT0U"
-				})), r.a.createElement(Y, null, A._("If this has brought up difficult emotions, there are people and resources here for you too.", null, {
+				})), r.a.createElement(G, null, A._("If this has brought up difficult emotions, there are people and resources here for you too.", null, {
 					hk: "37R4JZ"
 				}))), r.a.createElement(P.a, {
 					className: y.a.CrisisLinkArrow
 				})))),
-				G = t("./src/reddit/actions/reportFlow/index.ts"),
-				$ = t("./src/reddit/endpoints/post/report.ts");
-			const B = {
+				W = t("./src/reddit/actions/reportFlow/index.ts"),
+				B = t("./src/reddit/endpoints/post/report.ts");
+			const $ = {
 					usernamesInputTitle: "Username",
 					reasonTextToShow: "Someone is considering suicide or serious self-harm.",
 					canSpecifyUsernames: !0,
@@ -144,14 +144,14 @@
 					requestCrisisSupport: !0,
 					oneUsername: !0
 				},
-				K = g.a.div("CrisisPageWrapper", x.a),
+				K = w.a.div("CrisisPageWrapper", x.a),
 				U = Object(i.b)(null, (e, s) => {
 					let {
 						timestamp: t
 					} = s;
 					return {
 						onReportPostOrComment: (s, n, r) => {
-							e(Object(G.a)({
+							e(Object(W.a)({
 								id: s,
 								reportFlowPayload: n,
 								timestamp: t
@@ -170,13 +170,13 @@
 								rule: "self harm",
 								kind: "siteRule"
 							};
-							e.onReportPostOrComment(e.thingId, s, B)
+							e.onReportPostOrComment(e.thingId, s, $)
 						} else {
 							const s = {
-								reason: B,
+								reason: $,
 								usernames: [this.props.username]
 							};
-							e.fromUserProfile ? Object($.c)(e.apiContext(), s, !1) : e.fromReportPage && e.iframed && Object($.c)(e.apiContext(), s, !0)
+							e.fromUserProfile ? Object(B.c)(e.apiContext(), s, !1) : e.fromReportPage && e.iframed && Object(B.c)(e.apiContext(), s, !0)
 						}
 						e.postMessage && e.postMessage({
 							type: "ctlSuccess"
@@ -194,7 +194,7 @@
 						props: s,
 						onCrisisFlowSubmit: t
 					} = this;
-					return r.a.createElement(K, null, e.showThankYouPage ? r.a.createElement(W, {
+					return r.a.createElement(K, null, e.showThankYouPage ? r.a.createElement(Y, {
 						username: s.username
 					}) : r.a.createElement(F, {
 						username: s.username
@@ -277,12 +277,12 @@
 				p = t.n(m);
 			const C = c.a.div("Wrapper", p.a),
 				h = c.a.div("CloseWrapper", p.a),
-				g = c.a.wrapped(u.a, "Close", p.a),
-				w = Object(o.c)({
+				w = c.a.wrapped(u.a, "Close", p.a),
+				g = Object(o.c)({
 					reportedPending: e => e.features.reportFlow.api.pending,
 					reportedSuccess: e => e.features.reportFlow.api.success
 				}),
-				x = Object(i.b)(w);
+				x = Object(i.b)(g);
 			class f extends r.a.Component {
 				constructor() {
 					super(...arguments), this.handleEscapeKey = e => {
@@ -298,7 +298,7 @@
 				render() {
 					return r.a.createElement(C, null, r.a.createElement(h, {
 						onClick: this.props.onCloseCrisisModal
-					}, r.a.createElement(g, null)), r.a.createElement(d.default, {
+					}, r.a.createElement(w, null)), r.a.createElement(d.default, {
 						onCloseReportFlow: this.props.onCloseCrisisModal,
 						username: this.props.username,
 						fromUserProfile: this.props.fromUserProfile,
@@ -417,9 +417,9 @@
 				h = (e, s, t) => Object(r.a)(Object(o.a)(e, [a.a]), {
 					method: n.jb.POST,
 					endpoint: Object(l.a)(`${e.apiUrl}/api/report`),
-					data: g(s, t)
+					data: w(s, t)
 				}),
-				g = (e, s) => {
+				w = (e, s) => {
 					const t = {
 						...Object(c.b)(e),
 						api_type: "json"
@@ -438,7 +438,7 @@
 			})), t.d(s, "b", (function() {
 				return h
 			})), t.d(s, "a", (function() {
-				return g
+				return w
 			}));
 			var n = t("./src/reddit/models/RulesSequence/index.ts");
 			const r = "(?:old\\.reddit\\.(?:com|local)|new\\.reddit\\.(?:com|local)|reddit\\.(?:com|local)|www\\.reddit\\.(?:com|local))",
@@ -459,7 +459,7 @@
 						r = new RegExp(u),
 						i = new RegExp(c),
 						m = new RegExp(d);
-					let h, g, w;
+					let h, w, g;
 					if (e.thingUrl) {
 						const o = e.thingUrl.trim();
 						if (s.test(o)) {
@@ -473,10 +473,10 @@
 							e && e.length > 1 && (h = "t4_" + e[1])
 						} else if (m.test(o)) {
 							const e = m.exec(o);
-							e && e.length > 2 && (g = e[1], w = e[2])
+							e && e.length > 2 && (w = e[1], g = e[2])
 						} else if (i.test(o)) {
 							const e = i.exec(o);
-							e && e.length > 1 && (g = e[1])
+							e && e.length > 1 && (w = e[1])
 						}
 					}
 					const x = new RegExp(p),
@@ -499,31 +499,31 @@
 							}
 						}
 					const {
-						reason: E
+						reason: v
 					} = e;
 					return {
 						reason: "site_reason_selected",
-						site_reason: E.reasonText,
+						site_reason: v.reasonText,
 						additional_info: e.additionalInfo ? e.additionalInfo.join(",") : void 0,
 						custom_text: e.customText,
-						modmail_conv_id: g,
-						modmail_msg_id: w,
+						modmail_conv_id: w,
+						modmail_msg_id: g,
 						sr_name: b,
 						thing_id: h,
 						usernames: _.length ? _.join(",") : void 0
 					}
 				},
-				g = (e, s) => {
+				w = (e, s) => {
 					const t = new n.a;
-					return w(t, e, s, 0), t
+					return g(t, e, s, 0), t
 				},
-				w = (e, s, t, n) => {
+				g = (e, s, t, n) => {
 					for (let r = 0; r < s.length; r++) {
 						const i = s[r];
 						e.update(r, n);
 						const o = e.getSequence().length;
 						if (i.reasonAsParam === t) return;
-						if (i.nextStepReasons && i.nextStepReasons.length && (w(e, i.nextStepReasons, t, n + 1), e.getSequence().length > o)) return;
+						if (i.nextStepReasons && i.nextStepReasons.length && (g(e, i.nextStepReasons, t, n + 1), e.getSequence().length > o)) return;
 						e.cut(n - 1)
 					}
 				}
@@ -636,4 +636,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CrisisFlow.8fd1ff861685f8ab57e0.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CrisisFlow.65e3da0510563e31d186.js.map

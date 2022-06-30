@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModerationPages.033820c1514ecbf0641b.js
-// Retrieved at 6/29/2022, 2:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModerationPages.bb3687e7539d3ec1fd8c.js
+// Retrieved at 6/30/2022, 10:00:07 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModerationPages"], {
 		"./src/higherOrderComponents/withImageUploads.tsx": function(e, t, s) {
@@ -4101,7 +4101,7 @@
 					renderedInOverlay: I,
 					subredditDisplayText: T,
 					isAdmin: P
-				} = e, R = Object(y.a)(), A = i.subredditId, F = Object(r.e)(e => Object(j.g)(e, {
+				} = e, R = Object(y.a)(), A = i.subredditId, F = Object(r.e)(e => Object(j.f)(e, {
 					subredditId: A
 				}));
 				if (i.isDeleted && !P) return o.a.createElement("div", {
@@ -16349,7 +16349,7 @@
 					[d, c] = Object(n.useState)(null),
 					m = () => c(null),
 					[C, O] = Object(n.useState)(!1),
-					j = Object(o.e)(e => Object(_.h)(e, {
+					j = Object(o.e)(e => Object(_.g)(e, {
 						subredditId: t
 					})),
 					{
@@ -16372,7 +16372,7 @@
 					}, e => {
 						r(Object(E.a)(e, "mod_tools"))
 					}, e => {
-						r(Object(E.q)(e, "mod_tools")), s(Object(b.f)({
+						r(Object(E.o)(e, "mod_tools")), s(Object(b.f)({
 							duration: b.a,
 							kind: k.b.SuccessCommunity,
 							text: i.fbt._({
@@ -16440,7 +16440,7 @@
 							O(!0), await s(Object(p.a)({
 								subredditId: t,
 								emojiId: d.id
-							})), m(), r(Object(E.d)(1, "mod_tools")), s(Object(b.f)({
+							})), m(), r(Object(E.b)(1, "mod_tools")), s(Object(b.f)({
 								duration: b.a,
 								kind: k.b.SuccessCommunity,
 								text: i.fbt._("Emoji removed.", null, {
@@ -16473,7 +16473,7 @@
 				} = e;
 				const s = Object(o.d)(),
 					n = Object(l.a)(),
-					u = Object(o.e)(e => Object(_.g)(e, {
+					u = Object(o.e)(e => Object(_.f)(e, {
 						subredditId: t
 					})),
 					p = Object(o.e)(e => Object(T.U)(e, {
@@ -16497,7 +16497,7 @@
 				})), !g && a.a.createElement(S.p, {
 					on: h,
 					onClick: () => (e => {
-						n(Object(E.y)("comments_with_gifs", e, !e)), s(Object(d.n)(t, {
+						n(Object(E.w)("comments_with_gifs", e, !e)), s(Object(d.n)(t, {
 							[w.a.CommentsWithGifs]: e
 						}))
 					})(!h),
@@ -24504,7 +24504,7 @@
 					let {
 						subreddit: s
 					} = t;
-					return Object(Z.g)(e, {
+					return Object(Z.f)(e, {
 						subredditId: s.id
 					})
 				},
@@ -25422,4 +25422,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.033820c1514ecbf0641b.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.bb3687e7539d3ec1fd8c.js.map

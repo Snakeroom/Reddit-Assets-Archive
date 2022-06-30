@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Settings.e2298ed256667a25b802.js
-// Retrieved at 6/29/2022, 1:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Settings.008df9d5fefe37c4fb9f.js
+// Retrieved at 6/30/2022, 10:00:07 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Settings"], {
 		"./node_modules/moment/locale sync recursive ^\\.\\/.*$": function(e, t, n) {
@@ -6267,7 +6267,7 @@
 			var V = n("./src/reddit/components/Settings/Powerups/index.m.less"),
 				K = n.n(V);
 			const Z = Object(k.c)({
-				allocationByKey: I.w
+				allocationByKey: I.v
 			});
 			var X = Object(c.b)(Z)((function(e) {
 					const {
@@ -14020,7 +14020,7 @@
 					return !!n && n.hasGifProduct
 				},
 				W = (e, t, n) => {
-					if (Object(h.p)(e, {
+					if (Object(h.o)(e, {
 							subredditId: t
 						})) return !0;
 					const s = "replyToPost" !== n && Object(p.b)(e, {
@@ -14035,7 +14035,7 @@
 					if (!Object(f.b)(e, {
 							subredditId: t
 						})) return !1;
-					if (Object(h.q)(e, {
+					if (Object(h.p)(e, {
 							subredditId: t
 						})) return !0;
 					const r = "replyToPost" !== n && Object(p.b)(e, {
@@ -14255,4 +14255,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Settings.e2298ed256667a25b802.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Settings.008df9d5fefe37c4fb9f.js.map

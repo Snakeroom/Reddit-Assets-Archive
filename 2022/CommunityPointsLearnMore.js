@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CommunityPointsLearnMore.2eafd8d18b4c2646f351.js
-// Retrieved at 6/29/2022, 1:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CommunityPointsLearnMore.6e09cdcdf15926d21284.js
+// Retrieved at 6/30/2022, 10:00:07 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CommunityPointsLearnMore"], {
 		"./src/reddit/components/Econ/Common/ModalCloseButton/index.m.less": function(e, t, o) {
@@ -1587,7 +1587,7 @@
 						}),
 						className: $.a.logo,
 						to: "/",
-						onClick: () => e(Object(J.a)(() => Promise.all([o.e("CollectionCommentsPage~CommentsPage~CountryPage~Frontpage~GovernanceReleaseNotesModal~ModListing~Mod~e3d63e32"), o.e("Frontpage~ModListing~Subreddit"), o.e("Frontpage")]).then(o.bind(null, "./src/reddit/actions/frontpage/index.ts")).then(e => e.frontpageReloaded))(!0))
+						onClick: () => e(Object(J.a)(() => Promise.all([o.e("CollectionCommentsPage~CommentsPage~CountryPage~Frontpage~GovernanceReleaseNotesModal~ModListing~Mod~e3d63e32"), o.e("Frontpage")]).then(o.bind(null, "./src/reddit/actions/frontpage/index.ts")).then(e => e.frontpageReloaded))(!0))
 					}, i.a.createElement(z.a, {
 						className: $.a.snoo
 					}), i.a.createElement(Q.a, {
@@ -2622,7 +2622,7 @@
 					return !!o && o.hasGifProduct
 				},
 				L = (e, t, o) => {
-					if (Object(y.p)(e, {
+					if (Object(y.o)(e, {
 							subredditId: t
 						})) return !0;
 					const n = "replyToPost" !== o && Object(h.b)(e, {
@@ -2637,7 +2637,7 @@
 					if (!Object(b.b)(e, {
 							subredditId: t
 						})) return !1;
-					if (Object(y.q)(e, {
+					if (Object(y.p)(e, {
 							subredditId: t
 						})) return !0;
 					const a = "replyToPost" !== o && Object(h.b)(e, {
@@ -2658,4 +2658,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommunityPointsLearnMore.2eafd8d18b4c2646f351.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommunityPointsLearnMore.6e09cdcdf15926d21284.js.map

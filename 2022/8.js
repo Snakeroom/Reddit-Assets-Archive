@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/8.16af6ec68782cc81cfda.js
-// Retrieved at 6/27/2022, 2:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/8.e0a70e3e5bbb32305328.js
+// Retrieved at 6/30/2022, 10:00:07 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	[8], {
 		"./node_modules/lodash/_baseRange.js": function(e, t) {
@@ -73,10 +73,92 @@
 				}]
 			}
 		},
+		"./src/reddit/actions/subreddit/constants.ts": function(e, t, n) {
+			"use strict";
+			n.d(t, "a", (function() {
+				return a
+			})), n.d(t, "b", (function() {
+				return s
+			})), n.d(t, "c", (function() {
+				return r
+			})), n.d(t, "j", (function() {
+				return o
+			})), n.d(t, "i", (function() {
+				return c
+			})), n.d(t, "r", (function() {
+				return i
+			})), n.d(t, "q", (function() {
+				return l
+			})), n.d(t, "m", (function() {
+				return d
+			})), n.d(t, "l", (function() {
+				return u
+			})), n.d(t, "k", (function() {
+				return m
+			})), n.d(t, "p", (function() {
+				return h
+			})), n.d(t, "o", (function() {
+				return p
+			})), n.d(t, "n", (function() {
+				return v
+			})), n.d(t, "h", (function() {
+				return f
+			})), n.d(t, "g", (function() {
+				return g
+			})), n.d(t, "f", (function() {
+				return x
+			})), n.d(t, "w", (function() {
+				return _
+			})), n.d(t, "v", (function() {
+				return E
+			})), n.d(t, "x", (function() {
+				return C
+			})), n.d(t, "y", (function() {
+				return y
+			})), n.d(t, "z", (function() {
+				return w
+			})), n.d(t, "e", (function() {
+				return b
+			})), n.d(t, "d", (function() {
+				return S
+			})), n.d(t, "t", (function() {
+				return T
+			})), n.d(t, "u", (function() {
+				return I
+			})), n.d(t, "s", (function() {
+				return D
+			}));
+			const a = "SUBREDDIT__ADD_TOP_SUBREDDIT_MODELS",
+				s = "SUBREDDIT__ADD_TOP_SUBREDDIT_RANKINGS",
+				r = "SUBREDDIT__ADD_TOP_SUBREDDIT_RANKINGS_PAGE_INFO",
+				o = "SUBREDDIT__POSTS_LOADED",
+				c = "SUBREDDIT__POSTS_SET_FAILED",
+				i = "SUBREDDIT__SUBREDDITS_POSTS_LOADED",
+				l = "SUBREDDIT__SUBREDDITS_POSTS_SET_FAILED",
+				d = "SUBREDDIT__RANKINGS_PENDING",
+				u = "SUBREDDIT__RANKINGS_LOADED",
+				m = "SUBREDDIT__RANKINGS_FAILED",
+				h = "SUBREDDIT__SIMILAR_SUBREDDITS_PENDING",
+				p = "SUBREDDIT__SIMILAR_SUBREDDITS_LOADED",
+				v = "SUBREDDIT__SIMILAR_SUBREDDITS_FAILED",
+				f = "SUBREDDIT__ONBOARDING_SUBREDDITS_PENDING",
+				g = "SUBREDDIT__ONBOARDING_SUBREDDITS_LOADED",
+				x = "SUBREDDIT__ONBOARDING_SUBREDDITS_FAILED",
+				_ = "SUBREDDIT__EDIT_REQUESTED",
+				E = "SUBREDDIT__EDIT_FAILED",
+				C = "SUBREDDIT__EDIT_SUCCESS",
+				y = "SUBREDDIT_QUESTIONS_LOADED",
+				w = "SUBREDDIT_SURVEY_ANSWERED",
+				b = "SUBREDDIT_SURVEY_DISMISSED",
+				S = "SUBREDDIT_SURVEY_DISMISS",
+				T = "SUBREDDIT_ABOUT_INFO_UPDATE__PENDING",
+				I = "SUBREDDIT_ABOUT_INFO_UPDATE__SUCCESS",
+				D = "SUBREDDIT_ABOUT_INFO_UPDATE__FAILED"
+		},
 		"./src/reddit/components/ContentSurvey/RatingCard.tsx": function(e, t, n) {
 			"use strict";
 			n.d(t, "a", (function() {
-				return g
+				return f
 			}));
 			var a = n("./node_modules/react/index.js"),
 				s = n.n(a),
@@ -94,13 +176,13 @@
 				fbt: v
 			} = n("./node_modules/fbt/lib/FbtPublic.js");
 
-			function g(e) {
+			function f(e) {
 				var t, n;
 				const {
 					ratingResponse: a,
 					subredditId: o,
-					children: g
-				} = e, f = null !== (t = Object(r.e)(e => Object(p.U)(e, {
+					children: f
+				} = e, g = null !== (t = Object(r.e)(e => Object(p.U)(e, {
 					subredditId: o
 				}))) && void 0 !== t ? t : {}, x = Object(d.a)();
 				return s.a.createElement("div", {
@@ -126,19 +208,19 @@
 					}
 				}, s.a.createElement(l.b, {
 					className: c.a.communityIcon,
-					iconUrl: null === (n = f.icon) || void 0 === n ? void 0 : n.url
+					iconUrl: null === (n = g.icon) || void 0 === n ? void 0 : n.url
 				})), s.a.createElement("h3", {
 					className: c.a.communityName
-				}, a ? s.a.createElement("span", null, f.displayText, s.a.createElement("img", {
+				}, a ? s.a.createElement("span", null, g.displayText, s.a.createElement("img", {
 					className: c.a.ratingImg,
 					src: a.rating.icon.png
-				})) : f.displayText), g))
+				})) : g.displayText), f))
 			}
 		},
 		"./src/reddit/components/ContentSurvey/index.tsx": function(e, t, n) {
 			"use strict";
 			n.r(t), n.d(t, "default", (function() {
-				return z
+				return W
 			}));
 			var a = n("./node_modules/icepick/icepick.js"),
 				s = n("./node_modules/lodash/flatMap.js"),
@@ -153,20 +235,20 @@
 				h = n("./src/lib/hooks/useMutation.ts"),
 				p = n("./src/lib/sentry/index.ts"),
 				v = n("./src/reddit/actions/subreddit/constants.ts"),
-				g = n("./src/reddit/actions/toaster.ts"),
-				f = n("./node_modules/fbt/lib/FbtPublic.js"),
+				f = n("./src/reddit/actions/toaster.ts"),
+				g = n("./node_modules/fbt/lib/FbtPublic.js"),
 				x = n("./node_modules/lodash/range.js"),
-				y = n.n(x),
-				C = n("./src/reddit/components/ModeratorSurvey/index.m.less"),
-				w = n.n(C),
-				b = n("./src/lib/classNames/index.ts");
-			var _ = n("./src/reddit/components/ModalStyledComponents/index.tsx"),
-				E = n("./src/reddit/controls/Button/index.tsx"),
-				k = n("./src/reddit/controls/TextButton/index.tsx"),
-				j = n("./src/reddit/icons/svgs/Snoo/index.tsx"),
-				M = n("./src/reddit/icons/svgs/svgIcons.tsx");
+				_ = n.n(x),
+				E = n("./src/reddit/components/ModeratorSurvey/index.m.less"),
+				C = n.n(E),
+				y = n("./src/lib/classNames/index.ts");
+			var w = n("./src/reddit/components/ModalStyledComponents/index.tsx"),
+				b = n("./src/reddit/controls/Button/index.tsx"),
+				S = n("./src/reddit/controls/TextButton/index.tsx"),
+				T = n("./src/reddit/icons/svgs/Snoo/index.tsx"),
+				I = n("./src/reddit/icons/svgs/svgIcons.tsx");
 
-			function N(e) {
+			function D(e) {
 				const {
 					children: t,
 					activeSlide: n,
@@ -179,76 +261,76 @@
 					onClose: u = (() => {})
 				} = e, m = function e(t) {
 					return i.Children.toArray(t).reduce((t, n) => n ? n.type === l.a.Fragment ? [...t, ...e(n.props.children)] : [...t, n] : t, [])
-				}(t), h = m.length, p = h > 1 && n > 0, v = null != a ? a : n + 1, g = null != s ? s : h;
+				}(t), h = m.length, p = h > 1 && n > 0, v = null != a ? a : n + 1, f = null != s ? s : h;
 				return l.a.createElement("div", {
-					className: w.a.container
+					className: C.a.container
 				}, l.a.createElement("div", {
-					className: w.a.header
-				}, p ? l.a.createElement(k.a, {
-					className: w.a.headerButton,
+					className: C.a.header
+				}, p ? l.a.createElement(S.a, {
+					className: C.a.headerButton,
 					onClick: d
-				}, l.a.createElement(M.d, {
-					className: w.a.backIcon
-				}), l.a.createElement("div", null, f.fbt._("Back", null, {
+				}, l.a.createElement(I.d, {
+					className: C.a.backIcon
+				}), l.a.createElement("div", null, g.fbt._("Back", null, {
 					hk: "39TCGR"
-				}))) : l.a.createElement(k.a, {
-					className: w.a.headerButton,
+				}))) : l.a.createElement(S.a, {
+					className: C.a.headerButton,
 					onClick: u
-				}, l.a.createElement(_.b, null), l.a.createElement("div", null, f.fbt._("Close", null, {
+				}, l.a.createElement(w.b, null), l.a.createElement("div", null, g.fbt._("Close", null, {
 					hk: "4gbyAA"
-				}))), l.a.createElement(j.a, {
-					className: w.a.snoo
+				}))), l.a.createElement(T.a, {
+					className: C.a.snoo
 				})), l.a.createElement("div", {
-					className: w.a.slides,
+					className: C.a.slides,
 					style: {
 						transform: `translateX(${-600*n}px)`
 					}
 				}, m.map((e, t) => l.a.createElement("div", {
 					key: t,
-					className: w.a.slide,
+					className: C.a.slide,
 					"aria-hidden": n !== t,
 					"aria-current": n === t
 				}, e))), l.a.createElement("div", {
-					className: w.a.footer
+					className: C.a.footer
 				}, l.a.createElement("div", {
-					className: w.a.progressBar
-				}, g > 1 && y()(g).map((e, t) => l.a.createElement("div", {
+					className: C.a.progressBar
+				}, f > 1 && _()(f).map((e, t) => l.a.createElement("div", {
 					key: t,
-					className: Object(b.a)(w.a.progressSegment, {
-						[w.a.active]: t < v
+					className: Object(y.a)(C.a.progressSegment, {
+						[C.a.active]: t < v
 					})
 				}))), l.a.createElement("div", {
-					className: w.a.progress
-				}, g > 1 ? f.fbt._("{current} of {total}", [f.fbt._param("current", v), f.fbt._param("total", g)], {
+					className: C.a.progress
+				}, f > 1 ? g.fbt._("{current} of {total}", [g.fbt._param("current", v), g.fbt._param("total", f)], {
 					hk: "pZU46"
-				}) : ""), l.a.createElement(E.t, {
+				}) : ""), l.a.createElement(b.t, {
 					redditStyle: !0,
-					className: w.a.footerButton,
+					className: C.a.footerButton,
 					onClick: c,
 					disabled: r
-				}, null != o ? o : n === h - 1 ? f.fbt._("Submit", null, {
+				}, null != o ? o : n === h - 1 ? g.fbt._("Submit", null, {
 					hk: "4aU3dh"
-				}) : f.fbt._("Next", null, {
+				}) : g.fbt._("Next", null, {
 					hk: "2mEXAi"
 				}))))
 			}
-			var S = n("./src/redditGQL/operations/SubmitContentRatingSurvey.json"),
-				O = n("./src/lib/makeGqlRequest/index.ts");
-			var L, T = (e, t) => Object(O.a)(e, {
-					...S,
+			var N = n("./src/redditGQL/operations/SubmitContentRatingSurvey.json"),
+				M = n("./src/lib/makeGqlRequest/index.ts");
+			var k, j = (e, t) => Object(M.a)(e, {
+					...N,
 					variables: t
 				}),
-				A = n("./src/reddit/helpers/trackers/contentTag.ts"),
-				I = n("./src/reddit/hooks/useTracking.ts");
+				O = n("./src/reddit/helpers/trackers/contentTag.ts"),
+				L = n("./src/reddit/hooks/useTracking.ts");
 			! function(e) {
 				e.Accepted = "ACCEPTED", e.Pending = "PENDING"
-			}(L || (L = {}));
-			var B = n("./src/reddit/models/Toast/index.ts"),
-				F = n("./node_modules/lodash/mapValues.js"),
-				Z = n.n(F),
-				R = n("./src/reddit/controls/CheckboxInput/index.tsx");
+			}(k || (k = {}));
+			var A = n("./src/reddit/models/Toast/index.ts"),
+				B = n("./node_modules/lodash/mapValues.js"),
+				R = n.n(B),
+				U = n("./src/reddit/controls/CheckboxInput/index.tsx");
 
-			function P(e) {
+			function F(e) {
 				let {
 					children: t
 				} = e;
@@ -258,7 +340,7 @@
 				var n
 			}
 
-			function V(e) {
+			function P(e) {
 				let {
 					question: t,
 					selectedAnswers: n,
@@ -266,7 +348,7 @@
 				} = e;
 				return l.a.createElement("div", null, l.a.createElement("h3", {
 					className: m.a.header
-				}, l.a.createElement(P, null, t.questionTextMarkdown)), t.answerOptions.map(e => l.a.createElement(R.a, {
+				}, l.a.createElement(F, null, t.questionTextMarkdown)), t.answerOptions.map(e => l.a.createElement(U.a, {
 					key: e.id,
 					name: e.id,
 					className: m.a.checkbox,
@@ -278,7 +360,7 @@
 						});
 						if (s) {
 							const e = t.answerOptions.filter(e => e.isMutuallyExclusive).map(e => e.id),
-								s = Z()(n, (t, n) => !e.includes(n) && t);
+								s = R()(n, (t, n) => !e.includes(n) && t);
 							return s[r] = !0, a(t.id, s)
 						}
 						const {
@@ -290,76 +372,76 @@
 					id: e.id
 				}, e.answerText))))
 			}
-			var U = n("./src/reddit/components/ContentSurvey/RatingCard.tsx");
+			var Z = n("./src/reddit/components/ContentSurvey/RatingCard.tsx");
 			const {
-				fbt: H
+				fbt: V
 			} = n("./node_modules/fbt/lib/FbtPublic.js");
-			var W;
+			var G;
 
-			function z(e) {
+			function W(e) {
 				var t, n;
 				const {
 					subredditId: s,
 					survey: r,
 					onClose: o = (() => {})
-				} = e, [u, f] = Object(i.useState)({}), x = Object(d.d)(), y = G(null == r ? void 0 : r.questions, u), [{
-					surveyState: C,
-					activeSlide: w
-				}, b] = Object(i.useReducer)((e, t) => {
+				} = e, [u, g] = Object(i.useState)({}), x = Object(d.d)(), _ = q(null == r ? void 0 : r.questions, u), [{
+					surveyState: E,
+					activeSlide: C
+				}, y] = Object(i.useReducer)((e, t) => {
 					let {
 						activeSlide: n
 					} = e;
-					const a = "forward" === t ? Math.min(n + 1, y.length + 1) : Math.max(n - 1, 0);
+					const a = "forward" === t ? Math.min(n + 1, _.length + 1) : Math.max(n - 1, 0);
 					return {
-						surveyState: 0 === a ? W.Intro : a === y.length + 1 ? W.Tag : W.Survey,
+						surveyState: 0 === a ? G.Intro : a === _.length + 1 ? G.Tag : G.Survey,
 						activeSlide: a
 					}
 				}, {
-					surveyState: W.Intro,
+					surveyState: G.Intro,
 					activeSlide: 0
-				}), _ = y[w - 1], E = Object(I.a)();
+				}), w = _[C - 1], b = Object(L.a)();
 				Object(i.useEffect)(() => {
-					switch (w) {
+					switch (C) {
 						case 0:
-							return E(Object(A.c)());
+							return b(Object(O.c)());
 						case 1:
-							return E(Object(A.e)());
-						case y.length + 1:
-							return E(Object(A.n)())
+							return b(Object(O.e)());
+						case _.length + 1:
+							return b(Object(O.n)())
 					}
-					if (_) return E(Object(A.j)(_.pageType))
-				}, [w, E]);
-				const [k, {
-					pending: j,
-					error: M
-				}] = Object(h.a)(T);
+					if (w) return b(Object(O.j)(w.pageType))
+				}, [C, b]);
+				const [S, {
+					pending: T,
+					error: I
+				}] = Object(h.a)(j);
 				Object(i.useEffect)(() => {
-					M && (p.c.captureException(M), x(Object(g.f)(Object(g.e)(H._("An error occurred", null, {
+					I && (p.c.captureException(I), x(Object(f.f)(Object(f.e)(V._("An error occurred", null, {
 						hk: "1VDETi"
-					}), B.b.Error))))
-				}, [M, x]);
-				const [S, O] = Object(i.useState)(null);
+					}), A.b.Error))))
+				}, [I, x]);
+				const [N, M] = Object(i.useState)(null);
 				if (!r) return null;
 				if (!r.isEligible) return null;
 
-				function F(e, t) {
-					f(Object(a.setIn)(u, [e], t)), E(Object(A.a)(_.pageType))
+				function B(e, t) {
+					g(Object(a.setIn)(u, [e], t)), b(Object(O.a)(w.pageType))
 				}
-				const Z = null !== (t = u[null == _ ? void 0 : _.id]) && void 0 !== t ? t : {},
-					R = (null !== (n = null == _ ? void 0 : _.answerOptions) && void 0 !== n ? n : []).map(e => e.id).some(e => Z[e]),
-					P = C === W.Survey && w > 1;
-				return l.a.createElement(N, {
-					activeSlide: w,
+				const R = null !== (t = u[null == w ? void 0 : w.id]) && void 0 !== t ? t : {},
+					U = (null !== (n = null == w ? void 0 : w.answerOptions) && void 0 !== n ? n : []).map(e => e.id).some(e => R[e]),
+					F = E === G.Survey && C > 1;
+				return l.a.createElement(D, {
+					activeSlide: C,
 					advance: async function() {
-						if (C === W.Survey && w === y.length && O(function(e, t) {
+						if (E === G.Survey && C === _.length && M(function(e, t) {
 								var n;
 								let a = null,
 									s = [];
-								const r = G(e.questions, t);
+								const r = q(e.questions, t);
 								for (const o of r)
 									for (const e of o.answerOptions) {
 										if (!(null === (n = t[o.id]) || void 0 === n ? void 0 : n[e.id])) continue;
-										if (!X(e)) continue;
+										if (!K(e)) continue;
 										const r = e.contentRatingTag;
 										(!a || a.weight < r.weight) && (a = r), r.weight > 0 && s.push(e)
 									}
@@ -369,165 +451,165 @@
 									version: e.version,
 									createdAt: Date.now(),
 									isFromMod: !0,
-									status: L.Pending,
+									status: k.Pending,
 									rating: a,
 									ratingReasons: s
 								}
-							}(r, u)), C === W.Tag) {
-							if (j) return;
-							return E(Object(A.m)()), await k({
+							}(r, u)), E === G.Tag) {
+							if (T) return;
+							return b(Object(O.m)()), await S({
 								input: {
 									subredditId: s,
 									version: r.version,
-									answers: G(r.questions, u).map(e => ({
+									answers: q(r.questions, u).map(e => ({
 										questionId: e.id,
-										answerIds: D(e, u).map(e => e.id)
+										answerIds: z(e, u).map(e => e.id)
 									}))
 								}
-							}), x(Object(g.f)(Object(g.e)(H._("Thanks for setting up your Content Tag!", null, {
+							}), x(Object(f.f)(Object(f.e)(V._("Thanks for setting up your Content Tag!", null, {
 								hk: "3HW5GV"
-							}), B.b.SuccessCommunityGreen))), x({
+							}), A.b.SuccessCommunityGreen))), x({
 								type: v.z,
 								payload: {
 									id: s,
-									response: S
+									response: N
 								}
-							}), void(M || o())
+							}), void(I || o())
 						}
-						b("forward"), _ ? E(Object(A.i)(_.pageType, D(_, u).map(e => e.id))) : 0 === w && E(Object(A.l)())
+						y("forward"), w ? b(Object(O.i)(w.pageType, z(w, u).map(e => e.id))) : 0 === C && b(Object(O.l)())
 					},
 					goBack: function() {
-						b("back"), _ && E(Object(A.b)(_.pageType))
+						y("back"), w && b(Object(O.b)(w.pageType))
 					},
 					onClose: o,
-					progressCurrent: P ? w - 1 : 0,
-					progressTotal: P ? y.length - 1 : 0,
-					disableNext: j || C === W.Survey && !R,
-					buttonText: q(C)
+					progressCurrent: F ? C - 1 : 0,
+					progressTotal: F ? _.length - 1 : 0,
+					disableNext: T || E === G.Survey && !U,
+					buttonText: H(E)
 				}, l.a.createElement("div", {
 					className: m.a.result
 				}, l.a.createElement("p", {
 					className: m.a.heading
-				}, H._("Get started with content tags", null, {
+				}, V._("Get started with content tags", null, {
 					hk: "2WspCv"
-				})), H._("{=Not Safe for Work (NSFW) can mean different things to different people, so we're evolving the NSFW tag into more descriptive tags that help people know what to expect when they visit your community.}{=Every public and restricted community will get a content tag, and this survey is your mod team's chance to give your input.}{=Here's how it works:}{=Consult your mod team Only one moderator can take and submit the survey, so consult with your fellow mods before submitting.}{=Take the survey This survey will ask you about how different mature themes are posted about and discussed in your community.}{=Keep doing what you're doing Once you get your tag, you don't need to change anything about your community and how you run it.}{=If you want to learn more or have questions, visit ourcommunity content tags FAQ .}", [H._param("=Not Safe for Work (NSFW) can mean different things to different people, so we're evolving the NSFW tag into more descriptive tags that help people know what to expect when they visit your community.", l.a.createElement("p", {
+				})), V._("{=Not Safe for Work (NSFW) can mean different things to different people, so we're evolving the NSFW tag into more descriptive tags that help people know what to expect when they visit your community.}{=Every public and restricted community will get a content tag, and this survey is your mod team's chance to give your input.}{=Here's how it works:}{=Consult your mod team Only one moderator can take and submit the survey, so consult with your fellow mods before submitting.}{=Take the survey This survey will ask you about how different mature themes are posted about and discussed in your community.}{=Keep doing what you're doing Once you get your tag, you don't need to change anything about your community and how you run it.}{=If you want to learn more or have questions, visit ourcommunity content tags FAQ .}", [V._param("=Not Safe for Work (NSFW) can mean different things to different people, so we're evolving the NSFW tag into more descriptive tags that help people know what to expect when they visit your community.", l.a.createElement("p", {
 					className: m.a.introCopy
-				}, H._("Not Safe for Work (NSFW) can mean different things to different people, so we're evolving the NSFW tag into more descriptive tags that help people know what to expect when they visit your community.", null, {
+				}, V._("Not Safe for Work (NSFW) can mean different things to different people, so we're evolving the NSFW tag into more descriptive tags that help people know what to expect when they visit your community.", null, {
 					hk: "1Fer1r"
-				}))), H._param("=Every public and restricted community will get a content tag, and this survey is your mod team's chance to give your input.", l.a.createElement("p", {
+				}))), V._param("=Every public and restricted community will get a content tag, and this survey is your mod team's chance to give your input.", l.a.createElement("p", {
 					className: m.a.introCopy
-				}, H._("Every public and restricted community will get a content tag, and this survey is your mod team's chance to give your input.", null, {
+				}, V._("Every public and restricted community will get a content tag, and this survey is your mod team's chance to give your input.", null, {
 					hk: "4cgXFP"
-				}))), H._param("=Here's how it works:", l.a.createElement("p", {
+				}))), V._param("=Here's how it works:", l.a.createElement("p", {
 					className: m.a.introCopy
-				}, H._("Here's how it works:", null, {
+				}, V._("Here's how it works:", null, {
 					hk: "36BNnd"
-				}))), H._param("=Consult your mod team Only one moderator can take and submit the survey, so consult with your fellow mods before submitting.", l.a.createElement("p", {
+				}))), V._param("=Consult your mod team Only one moderator can take and submit the survey, so consult with your fellow mods before submitting.", l.a.createElement("p", {
 					className: m.a.introCopy
-				}, H._("{=Consult your mod team} Only one moderator can take and submit the survey, so consult with your fellow mods before submitting.", [H._param("=Consult your mod team", l.a.createElement("strong", null, H._("Consult your mod team", null, {
+				}, V._("{=Consult your mod team} Only one moderator can take and submit the survey, so consult with your fellow mods before submitting.", [V._param("=Consult your mod team", l.a.createElement("strong", null, V._("Consult your mod team", null, {
 					hk: "23H654"
 				})))], {
 					hk: "jnTSv"
-				}))), H._param("=Take the survey This survey will ask you about how different mature themes are posted about and discussed in your community.", l.a.createElement("p", {
+				}))), V._param("=Take the survey This survey will ask you about how different mature themes are posted about and discussed in your community.", l.a.createElement("p", {
 					className: m.a.introCopy
-				}, H._("{=Take the survey} This survey will ask you about how different mature themes are posted about and discussed in your community.", [H._param("=Take the survey", l.a.createElement("strong", null, H._("Take the survey", null, {
+				}, V._("{=Take the survey} This survey will ask you about how different mature themes are posted about and discussed in your community.", [V._param("=Take the survey", l.a.createElement("strong", null, V._("Take the survey", null, {
 					hk: "2hQ3n7"
 				})))], {
 					hk: "2KYjT1"
-				}))), H._param("=Keep doing what you're doing Once you get your tag, you don't need to change anything about your community and how you run it.", l.a.createElement("p", {
+				}))), V._param("=Keep doing what you're doing Once you get your tag, you don't need to change anything about your community and how you run it.", l.a.createElement("p", {
 					className: m.a.introCopy
-				}, H._("{=Keep doing what you're doing} Once you get your tag, you don't need to change anything about your community and how you run it.", [H._param("=Keep doing what you're doing", l.a.createElement("strong", null, H._("Keep doing what you're doing", null, {
+				}, V._("{=Keep doing what you're doing} Once you get your tag, you don't need to change anything about your community and how you run it.", [V._param("=Keep doing what you're doing", l.a.createElement("strong", null, V._("Keep doing what you're doing", null, {
 					hk: "3euaLx"
 				})))], {
 					hk: "4f5ry9"
-				}))), H._param("=If you want to learn more or have questions, visit ourcommunity content tags FAQ .", l.a.createElement("p", {
+				}))), V._param("=If you want to learn more or have questions, visit ourcommunity content tags FAQ .", l.a.createElement("p", {
 					className: m.a.introCopy
-				}, H._("If you want to learn more or have questions, visit our {=community content tags FAQ} .", [H._param("=community content tags FAQ", l.a.createElement("a", {
+				}, V._("If you want to learn more or have questions, visit our {=community content tags FAQ} .", [V._param("=community content tags FAQ", l.a.createElement("a", {
 					target: "_blank",
 					rel: "noopener noreferrer",
 					href: "https://www.reddithelp.com/hc/en-us/articles/360048185132-What-are-community-content-tags-and-how-do-they-work-"
-				}, H._("community content tags FAQ", null, {
+				}, V._("community content tags FAQ", null, {
 					hk: "1kl5Jq"
 				})))], {
 					hk: "4tG83R"
 				})))], {
 					hk: "2x33OC"
-				})), y.map(e => {
+				})), _.map(e => {
 					var t;
-					return l.a.createElement(V, {
+					return l.a.createElement(P, {
 						key: e.id,
 						question: e,
 						selectedAnswers: null !== (t = u[e.id]) && void 0 !== t ? t : {},
-						onChange: F
+						onChange: B
 					})
-				}), S && l.a.createElement("div", {
+				}), N && l.a.createElement("div", {
 					key: "result",
 					className: m.a.result
 				}, l.a.createElement("p", {
 					className: m.a.heading
-				}, H._("Your Content Tag:", null, {
+				}, V._("Your Content Tag:", null, {
 					hk: "2OUAzB"
-				})), l.a.createElement(U.a, {
-					ratingResponse: S,
+				})), l.a.createElement(Z.a, {
+					ratingResponse: N,
 					subredditId: s
 				}, l.a.createElement("p", {
 					className: m.a.ratingAudience
-				}, S.rating.name), l.a.createElement("p", {
+				}, N.rating.name), l.a.createElement("p", {
 					className: m.a.ratingDescription
-				}, S.rating.description, " ", l.a.createElement("br", null), H._("(Note: Only moderators can see this tag.)", null, {
+				}, N.rating.description, " ", l.a.createElement("br", null), V._("(Note: Only moderators can see this tag.)", null, {
 					hk: "2PN50Z"
 				}))), l.a.createElement("p", {
 					className: m.a.reasonsHeader
-				}, H._("Posts and discussions include:", null, {
+				}, V._("Posts and discussions include:", null, {
 					hk: "12MdUE"
-				})), l.a.createElement("ul", null, S.ratingReasons.map(e => l.a.createElement("li", {
+				})), l.a.createElement("ul", null, N.ratingReasons.map(e => l.a.createElement("li", {
 					key: e.id,
 					className: m.a.reason
 				}, e.contentRatingReasonText)))))
 			}
 
-			function q(e) {
+			function H(e) {
 				switch (e) {
-					case W.Intro:
-						return H._("Start Survey", null, {
+					case G.Intro:
+						return V._("Start Survey", null, {
 							hk: "41dYsT"
 						});
-					case W.Survey:
-						return H._("Next", null, {
+					case G.Survey:
+						return V._("Next", null, {
 							hk: "2mEXAi"
 						});
-					case W.Tag:
-						return H._("Submit", null, {
+					case G.Tag:
+						return V._("Submit", null, {
 							hk: "4aU3dh"
 						})
 				}
 			}
 
-			function D(e, t) {
+			function z(e, t) {
 				return e.answerOptions.filter(n => {
 					var a;
 					return null === (a = t[e.id]) || void 0 === a ? void 0 : a[n.id]
 				})
 			}
 
-			function G(e, t) {
+			function q(e, t) {
 				let n = [];
 				for (const a of null != e ? e : []) {
-					const e = D(a, t),
+					const e = z(a, t),
 						s = r()(e, e => {
 							var t;
 							return null !== (t = e.subQuestions) && void 0 !== t ? t : []
 						});
-					n = [...n, a, ...G(s, t)]
+					n = [...n, a, ...q(s, t)]
 				}
 				return n
 			}
 
-			function X(e) {
+			function K(e) {
 				return "ContentRatingSurveyLeafAnswer" === e.__typename
 			}! function(e) {
 				e[e.Intro = 0] = "Intro", e[e.Survey = 1] = "Survey", e[e.Tag = 2] = "Tag"
-			}(W || (W = {}))
+			}(G || (G = {}))
 		},
 		"./src/reddit/components/ModalStyledComponents/index.m.less": function(e, t, n) {
 			e.exports = {
@@ -584,41 +666,41 @@
 			})), n.d(t, "n", (function() {
 				return v
 			})), n.d(t, "p", (function() {
-				return g
-			})), n.d(t, "o", (function() {
 				return f
+			})), n.d(t, "o", (function() {
+				return g
 			})), n.d(t, "f", (function() {
 				return x
 			})), n.d(t, "m", (function() {
-				return y
-			})), n.d(t, "h", (function() {
-				return C
-			})), n.d(t, "j", (function() {
-				return w
-			})), n.d(t, "k", (function() {
-				return b
-			})), n.d(t, "g", (function() {
 				return _
-			})), n.d(t, "i", (function() {
+			})), n.d(t, "h", (function() {
 				return E
+			})), n.d(t, "j", (function() {
+				return C
+			})), n.d(t, "k", (function() {
+				return y
+			})), n.d(t, "g", (function() {
+				return w
+			})), n.d(t, "i", (function() {
+				return b
 			})), n.d(t, "q", (function() {
-				return k
-			})), n.d(t, "d", (function() {
-				return j
-			})), n.d(t, "l", (function() {
-				return M
-			})), n.d(t, "t", (function() {
-				return N
-			})), n.d(t, "u", (function() {
 				return S
-			})), n.d(t, "r", (function() {
-				return O
-			})), n.d(t, "a", (function() {
-				return L
-			})), n.d(t, "s", (function() {
+			})), n.d(t, "d", (function() {
 				return T
+			})), n.d(t, "l", (function() {
+				return I
+			})), n.d(t, "t", (function() {
+				return D
+			})), n.d(t, "u", (function() {
+				return N
+			})), n.d(t, "r", (function() {
+				return M
+			})), n.d(t, "a", (function() {
+				return k
+			})), n.d(t, "s", (function() {
+				return j
 			})), n.d(t, "c", (function() {
-				return A
+				return O
 			}));
 			var a = n("./src/lib/classNames/index.ts"),
 				s = n("./src/lib/lessComponent.tsx"),
@@ -642,24 +724,24 @@
 			const h = s.a.wrapped(l.a, "CloseIcon", u.a),
 				p = s.a.section("ModalBody", u.a),
 				v = s.a.section("ModalPostPreview", u.a),
-				g = s.a.p("ModalText", u.a),
-				f = s.a.div("ModalSmallText", u.a),
+				f = s.a.p("ModalText", u.a),
+				g = s.a.div("ModalSmallText", u.a),
 				x = s.a.div("ModalDescriptionText", u.a),
-				y = s.a.div("ModalMetaText", u.a),
-				C = s.a.label("ModalFormItem", u.a),
-				w = s.a.wrapped(i.a, "ModalInput", u.a),
-				b = s.a.label("ModalInputLabel", u.a),
-				_ = s.a.footer("ModalFooter", u.a),
-				E = s.a.header("ModalHeader", u.a),
-				k = s.a.div("ModalTitle", u.a),
-				j = s.a.div("ModalAnnotation", u.a),
-				M = s.a.div("ModalMain", u.a),
-				N = s.a.textarea("TextArea", u.a),
-				S = s.a.wrapped(c.l, "WarningButton", u.a),
-				O = s.a.wrapped(c.l, "PrimaryButton", u.a),
-				L = s.a.wrapped(c.o, "CancelButton", u.a),
-				T = s.a.wrapped(c.r, "RemoveButton", u.a),
-				A = e => {
+				_ = s.a.div("ModalMetaText", u.a),
+				E = s.a.label("ModalFormItem", u.a),
+				C = s.a.wrapped(i.a, "ModalInput", u.a),
+				y = s.a.label("ModalInputLabel", u.a),
+				w = s.a.footer("ModalFooter", u.a),
+				b = s.a.header("ModalHeader", u.a),
+				S = s.a.div("ModalTitle", u.a),
+				T = s.a.div("ModalAnnotation", u.a),
+				I = s.a.div("ModalMain", u.a),
+				D = s.a.textarea("TextArea", u.a),
+				N = s.a.wrapped(c.l, "WarningButton", u.a),
+				M = s.a.wrapped(c.l, "PrimaryButton", u.a),
+				k = s.a.wrapped(c.o, "CancelButton", u.a),
+				j = s.a.wrapped(c.r, "RemoveButton", u.a),
+				O = e => {
 					let {
 						className: t,
 						...n
@@ -1237,4 +1319,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/8.16af6ec68782cc81cfda.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/8.e0a70e3e5bbb32305328.js.map

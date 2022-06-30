@@ -1,7 +1,7 @@
-// https://www.redditstatic.com/desktop2x/vendors~PostCreation~Subreddit.ca35dc9351f54c934ff9.js
-// Retrieved at 6/27/2022, 2:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/vendors~PostCreation~Subreddit.c6c96fbaf04e2c667eb2.js
+// Retrieved at 6/30/2022, 10:00:07 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
-	["vendors~PostCreation~Subreddit", "vendors~Reddit~StandalonePostPage"], {
+	["vendors~PostCreation~Subreddit"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, r) {
 			var n;
 			n = function() {
@@ -1655,13 +1655,13 @@
 					}(e)
 				})), n
 			}
-			var R = {
+			var B = {
 				placement: "bottom",
 				modifiers: [],
 				strategy: "absolute"
 			};
 
-			function B() {
+			function R() {
 				for (var e = arguments.length, t = new Array(e), r = 0; r < e; r++) t[r] = arguments[r];
 				return !t.some((function(e) {
 					return !(e && "function" == typeof e.getBoundingClientRect)
@@ -1674,13 +1674,13 @@
 					r = t.defaultModifiers,
 					n = void 0 === r ? [] : r,
 					o = t.defaultOptions,
-					i = void 0 === o ? R : o;
+					i = void 0 === o ? B : o;
 				return function(e, t, r) {
 					void 0 === r && (r = i);
 					var o, s, u = {
 							placement: "bottom",
 							orderedModifiers: [],
-							options: Object.assign(Object.assign({}, R), i),
+							options: Object.assign(Object.assign({}, B), i),
 							modifiersData: {},
 							elements: {
 								reference: e,
@@ -1740,7 +1740,7 @@
 									var e = u.elements,
 										t = e.reference,
 										r = e.popper;
-									if (B(t, r)) {
+									if (R(t, r)) {
 										u.rects = {
 											reference: m(t, g(r), "fixed" === u.options.strategy),
 											popper: h(r)
@@ -1779,7 +1779,7 @@
 								f(), c = !0
 							}
 						};
-					if (!B(e, t)) return d;
+					if (!R(e, t)) return d;
 
 					function f() {
 						l.forEach((function(e) {
@@ -2047,13 +2047,13 @@
 						left: E.left - P.left + v.left,
 						right: P.right - E.right + v.right
 					},
-					R = e.modifiersData.offset;
-				if (p === z && R) {
-					var B = R[i];
+					B = e.modifiersData.offset;
+				if (p === z && B) {
+					var R = B[i];
 					Object.keys(M).forEach((function(e) {
 						var t = [k, x].indexOf(e) >= 0 ? 1 : -1,
 							r = [w, x].indexOf(e) >= 0 ? "y" : "x";
-						M[e] += B[r] * t
+						M[e] += R[r] * t
 					}))
 				}
 				return M
@@ -2281,9 +2281,9 @@
 									}), []), g = t.rects.reference, F = t.rects.popper, S = new Map, A = !0, z = b[0], I = 0; I < b.length; I++) {
 									var P = b[I],
 										M = V(P),
-										R = N(P) === E,
-										B = [w, x].indexOf(M) >= 0,
-										L = B ? "width" : "height",
+										B = N(P) === E,
+										R = [w, x].indexOf(M) >= 0,
+										L = R ? "width" : "height",
 										q = ne(t, {
 											placement: P,
 											boundary: c,
@@ -2291,7 +2291,7 @@
 											altBoundary: f,
 											padding: l
 										}),
-										W = B ? R ? k : j : R ? x : w;
+										W = R ? B ? k : j : B ? x : w;
 									g[L] > F[L] && (W = X(W));
 									var Z = X(W),
 										U = [];
@@ -2368,8 +2368,8 @@
 									var C = "y" === O ? w : j,
 										P = "y" === O ? x : k,
 										M = "y" === O ? "height" : "width",
-										R = S[O],
-										B = S[O] + y[C],
+										B = S[O],
+										R = S[O] + y[C],
 										L = S[O] - y[P],
 										q = p ? -z[M] / 2 : 0,
 										Z = b === E ? A[M] : z[M],
@@ -2395,8 +2395,8 @@
 										re = t.modifiersData.offset ? t.modifiersData.offset[t.placement][O] : 0,
 										ie = S[O] + J - re - te,
 										se = S[O] + Q - re,
-										ae = oe(p ? Math.min(B, ie) : B, R, p ? Math.max(L, se) : L);
-									S[O] = ae, T[O] = ae - R
+										ae = oe(p ? Math.min(R, ie) : R, B, p ? Math.max(L, se) : L);
+									S[O] = ae, T[O] = ae - B
 								}
 								if (a) {
 									var ue = "x" === O ? w : j,
@@ -2668,4 +2668,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/vendors~PostCreation~Subreddit.ca35dc9351f54c934ff9.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/vendors~PostCreation~Subreddit.c6c96fbaf04e2c667eb2.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SupportersListModal.e0422dd3f210687d563b.js
-// Retrieved at 6/29/2022, 10:10:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SupportersListModal.372d67f96bec63ca8459.js
+// Retrieved at 6/30/2022, 10:00:07 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SupportersListModal"], {
 		"./src/reddit/components/Econ/Common/ModalCloseButton/index.m.less": function(e, t, s) {
@@ -59,7 +59,7 @@
 					onClick: s,
 					disabled: r
 				} = e;
-				const c = Object(a.e)(l.u);
+				const c = Object(a.e)(l.t);
 				return n.a.createElement(o.t, {
 					priority: o.c.Primary,
 					className: t,
@@ -138,7 +138,7 @@
 					className: m.a.user,
 					to: `/user/${f}/`,
 					onClick: () => {
-						b && s(Object(c.A)(b.id, b.displayName))
+						b && s(Object(c.y)(b.id, b.displayName))
 					}
 				}, N) : n.a.createElement("div", {
 					className: m.a.user
@@ -347,7 +347,7 @@
 					name: m,
 					isAnonymousUser: !l,
 					onClick: () => {
-						l && s(Object(N.j)(l.id, l.displayName))
+						l && s(Object(N.h)(l.id, l.displayName))
 					}
 				}, n.a.createElement(S, {
 					name: m,
@@ -379,7 +379,7 @@
 			t.default = Object(o.a)(() => {
 				const e = Object(a.e)(y.k),
 					t = Object(a.e)(P.t),
-					s = Object(a.e)(e => t ? Object(O.m)(e, {
+					s = Object(a.e)(e => t ? Object(O.l)(e, {
 						subredditId: t.id
 					}) : []),
 					[o, p] = Object(r.useState)([]);
@@ -390,7 +390,7 @@
 				const b = Object(a.d)(),
 					f = Object(_.a)();
 				Object(r.useEffect)(() => {
-					f(Object(N.f)())
+					f(Object(N.d)())
 				}, [f]), Object(j.a)(u.a);
 				const x = () => {
 						b(Object(i.g)(M.a.ECON_SUPPORTERS_LIST))
@@ -431,7 +431,7 @@
 				}), n.a.createElement(m.a, {
 					className: z.a.ctaButton,
 					onClick: () => {
-						f(Object(N.s)()), b(Object(l.g)("supporters_list_modal", null == t ? void 0 : t.id))
+						f(Object(N.q)()), b(Object(l.g)("supporters_list_modal", null == t ? void 0 : t.id))
 					}
 				}))) : (b(Object(c.f)({
 					kind: C.b.Error,
@@ -655,4 +655,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SupportersListModal.e0422dd3f210687d563b.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SupportersListModal.372d67f96bec63ca8459.js.map
