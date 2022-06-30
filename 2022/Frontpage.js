@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Frontpage.fb5a08748e0f83561eed.js
-// Retrieved at 6/30/2022, 5:20:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Frontpage.5446cb0c46c4ded862a1.js
+// Retrieved at 6/30/2022, 6:50:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Frontpage"], {
 		"./node_modules/intersection-observer/intersection-observer.js": function(e, t) {
@@ -4886,8 +4886,8 @@
 				post: b.I(e, t),
 				subreddit: b.ib(e, s)
 			});
-			var f = s("./src/reddit/hooks/useTracking.ts"),
-				_ = s("./src/reddit/selectors/user.ts"),
+			var f = s("./src/reddit/hooks/useTracking.ts");
+			var _ = s("./src/reddit/selectors/user.ts"),
 				v = s("./src/reddit/components/LiveBar/index.m.less"),
 				y = s.n(v),
 				x = s("./node_modules/fbt/lib/FbtPublic.js"),
@@ -5035,7 +5035,10 @@
 						}
 					}
 				}, [t, I]);
-				const T = t.filter(e => Boolean(null == e ? void 0 : e.audioRoom) && e.audioRoom.isLive).map((e, t) => {
+				const T = t.filter(e => {
+					var t;
+					return null === (t = null == e ? void 0 : e.audioRoom) || void 0 === t ? void 0 : t.isLive
+				}).map((e, t) => {
 					let {
 						id: s,
 						audioRoom: a,
@@ -5124,7 +5127,7 @@
 						className: y.a.topUsers
 					}, A.map((e, t) => {
 						var s, a;
-						return r.a.createElement("div", {
+						return (e => "Redditor" === (null == e ? void 0 : e.__typename) || !!e.snoovatarIcon)(e) && r.a.createElement("div", {
 							key: `topuser__${t}`,
 							className: Object(n.a)(y.a.userIconContainer, {
 								[y.a.userIconSnoovatar]: Boolean(e.snoovatarIcon)
@@ -5189,8 +5192,8 @@
 							postId: o.id,
 							subredditOrProfileId: null === (s = o.subreddit) || void 0 === s ? void 0 : s.id,
 							liveBarPosition: parseInt(c),
-							roomId: null === (n = o.audioRoom) || void 0 === n ? void 0 : n.roomId,
-							roomTitle: null === (a = o.audioRoom) || void 0 === a ? void 0 : a.roomTitle
+							roomId: (null === (n = o.audioRoom) || void 0 === n ? void 0 : n.roomId) || "",
+							roomTitle: (null === (a = o.audioRoom) || void 0 === a ? void 0 : a.roomTitle) || ""
 						})), A.current.push(r))
 					}
 				}, T))) : null
@@ -10168,4 +10171,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Frontpage.fb5a08748e0f83561eed.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Frontpage.5446cb0c46c4ded862a1.js.map

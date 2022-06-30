@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.87e97ea57e8a735230a1.js
-// Retrieved at 6/30/2022, 6:20:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.f978abad2c4d3487d801.js
+// Retrieved at 6/30/2022, 6:50:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Chat~Governance~Reddit"], {
 		"./assets/fonts/IBMPlexSans/font.less": function(e, t, i) {},
@@ -3467,11 +3467,11 @@
 				apiPassThroughHeaders: Object(r.e)({}.API_PASS_THROUGH_HEADERS || ""),
 				appName: {}.APP_NAME || "desktop2x",
 				assetPath: "https://www.redditstatic.com/desktop2x",
-				buildNumber: Object(r.c)("167731"),
+				buildNumber: Object(r.c)("167738"),
 				chatHelpUrl: {}.CHAT_HELP_URL || "https://reddit.zendesk.com/hc/en-us/sections/360008805652-Chat",
 				hlsVersion: "hls 0.12.4",
 				dashVersion: "dash 3.2.0",
-				buildTimestamp: Object(r.b)("1656626162"),
+				buildTimestamp: Object(r.b)("1656627948"),
 				cookieDomain: ".reddit.com",
 				giphyApiKey: "k2kwyMA6VeyHM6ZRT96OXDGaersnx73Z",
 				mediaUrl: "https://www.redditmedia.com",
@@ -6086,14 +6086,14 @@
 					}))
 				},
 				Y = (e, t, i) => {
-					console.log("%cStarting Raven %crelease %c86f26ab570883b85bb16af681d32be3e12178c7a-production" + ` %cpublic url %c${y.a.sentryClientPublicURL}`, "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
+					console.log("%cStarting Raven %crelease %c43ac917fb49b795ea9ba2855a7f74322bad0f79e-production" + ` %cpublic url %c${y.a.sentryClientPublicURL}`, "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
 					let n = [];
 					n = [new RegExp(`^${y.a.assetPath}`, "i")];
 					o.e({
 						attachStacktrace: !0,
 						dsn: y.a.sentryClientPublicURL,
 						whitelistUrls: n,
-						release: "86f26ab570883b85bb16af681d32be3e12178c7a-production",
+						release: "43ac917fb49b795ea9ba2855a7f74322bad0f79e-production",
 						environment: "production",
 						ignoreErrors: ["$ is not defined"],
 						integrations: [...Object(L.d)(), new d.Integrations.Breadcrumbs({
@@ -6619,7 +6619,7 @@
 							settings: r,
 							statusCode: s,
 							type: o,
-							releaseClient: "86f26ab570883b85bb16af681d32be3e12178c7a-production",
+							releaseClient: "43ac917fb49b795ea9ba2855a7f74322bad0f79e-production",
 							appName: t.statsAppName,
 							error: n ? JSON.parse(Object(l.a)(n)) : void 0
 						},
@@ -42994,7 +42994,7 @@
 		},
 		"./src/redditGQL/types.ts": function(e, t, i) {
 			"use strict";
-			var n, r, s, o, d, a, l, u, c, _, m, p, h, f, b, g, w, v, y, E, S, T, O, I, R, F, N, C, A, j, P, D, x, L, B, k, M, U, G, V, q, H, W, K, z, Y, $, Q, J, X, Z, ee, te, ie, ne, re, se, oe, de, ae, le, ue, ce, _e, me, pe, he, fe, be, ge, we, ve, ye, Ee, Se, Te, Oe, Ie, Re, Fe, Ne, Ce, Ae, je, Pe, De, xe, Le, Be, ke, Me, Ue, Ge, Ve, qe, He, We, Ke, ze, Ye, $e, Qe, Je, Xe, Ze, et, tt, it, nt, rt, st, ot, dt, at, lt, ut, ct, _t, mt, pt, ht, ft, bt, gt, wt, vt, yt, Et, St, Tt, Ot, It, Rt, Ft, Nt, Ct, At, jt, Pt, Dt, xt, Lt, Bt, kt, Mt, Ut, Gt, Vt, qt, Ht, Wt, Kt, zt, Yt, $t, Qt, Jt, Xt, Zt, ei, ti, ii, ni, ri, si, oi, di, ai, li, ui, ci, _i, mi, pi, hi, fi, bi, gi, wi, vi, yi, Ei, Si, Ti, Oi, Ii, Ri, Fi, Ni, Ci, Ai, ji, Pi, Di, xi, Li, Bi, ki, Mi, Ui, Gi, Vi, qi, Hi, Wi, Ki, zi, Yi, $i, Qi, Ji, Xi, Zi, en, tn, nn, rn, sn, on, dn, an, ln, un, cn, _n, mn, pn, hn, fn, bn, gn;
+			var n, r, s, o, d, a, l, u, c, _, m, p, h, f, b, g, w, v, y, E, S, T, O, I, R, F, N, C, A, j, P, D, x, L, B, k, M, U, G, V, q, H, W, K, z, Y, $, Q, J, X, Z, ee, te, ie, ne, re, se, oe, de, ae, le, ue, ce, _e, me, pe, he, fe, be, ge, we, ve, ye, Ee, Se, Te, Oe, Ie, Re, Fe, Ne, Ce, Ae, je, Pe, De, xe, Le, Be, ke, Me, Ue, Ge, Ve, qe, He, We, Ke, ze, Ye, $e, Qe, Je, Xe, Ze, et, tt, it, nt, rt, st, ot, dt, at, lt, ut, ct, _t, mt, pt, ht, ft, bt, gt, wt, vt, yt, Et, St, Tt, Ot, It, Rt, Ft, Nt, Ct, At, jt, Pt, Dt, xt, Lt, Bt, kt, Mt, Ut, Gt, Vt, qt, Ht, Wt, Kt, zt, Yt, $t, Qt, Jt, Xt, Zt, ei, ti, ii, ni, ri, si, oi, di, ai, li, ui, ci, _i, mi, pi, hi, fi, bi, gi, wi, vi, yi, Ei, Si, Ti, Oi, Ii, Ri, Fi, Ni, Ci, Ai, ji, Pi, Di, xi, Li, Bi, ki, Mi, Ui, Gi, Vi, qi, Hi, Wi, Ki, zi, Yi, $i, Qi, Ji, Xi, Zi, en, tn, nn, rn, sn, on, dn, an, ln, un, cn, _n, mn, pn, hn, fn, bn, gn, wn;
 			i.d(t, "a", (function() {
 					return m
 				})), i.d(t, "b", (function() {
@@ -43010,47 +43010,47 @@
 				})), i.d(t, "g", (function() {
 					return fe
 				})), i.d(t, "h", (function() {
-					return ot
+					return dt
 				})), i.d(t, "i", (function() {
-					return ht
-				})), i.d(t, "j", (function() {
 					return ft
-				})), i.d(t, "k", (function() {
+				})), i.d(t, "j", (function() {
 					return bt
-				})), i.d(t, "l", (function() {
+				})), i.d(t, "k", (function() {
 					return gt
-				})), i.d(t, "m", (function() {
+				})), i.d(t, "l", (function() {
 					return wt
-				})), i.d(t, "n", (function() {
+				})), i.d(t, "m", (function() {
 					return vt
+				})), i.d(t, "n", (function() {
+					return yt
 				})), i.d(t, "o", (function() {
-					return Et
-				})), i.d(t, "p", (function() {
 					return St
-				})), i.d(t, "q", (function() {
+				})), i.d(t, "p", (function() {
 					return Tt
+				})), i.d(t, "q", (function() {
+					return Ot
 				})), i.d(t, "r", (function() {
-					return It
-				})), i.d(t, "s", (function() {
 					return Rt
+				})), i.d(t, "s", (function() {
+					return Ft
 				})), i.d(t, "t", (function() {
-					return Bt
+					return kt
 				})), i.d(t, "u", (function() {
-					return Zt
+					return ei
 				})), i.d(t, "v", (function() {
-					return ii
+					return ni
 				})), i.d(t, "w", (function() {
-					return ai
+					return li
 				})), i.d(t, "x", (function() {
-					return _i
+					return mi
 				})), i.d(t, "y", (function() {
-					return Fi
+					return Ni
 				})), i.d(t, "z", (function() {
-					return Ai
+					return ji
 				})), i.d(t, "A", (function() {
-					return en
+					return tn
 				})), i.d(t, "B", (function() {
-					return rn
+					return sn
 				})),
 				function(e) {
 					e.Everyone = "EVERYONE", e.Whitelisted = "WHITELISTED"
@@ -43284,467 +43284,470 @@
 					e.None = "NONE", e.Favorited = "FAVORITED"
 				}(Oe || (Oe = {})),
 				function(e) {
-					e.Card = "CARD", e.Compact = "COMPACT", e.Classic = "CLASSIC"
+					e.CommentPostUnits = "COMMENT_POST_UNITS"
 				}(Ie || (Ie = {})),
 				function(e) {
-					e.NoAction = "NO_ACTION", e.HideSubreddit = "HIDE_SUBREDDIT", e.HideDiscoveryUnit = "HIDE_DISCOVERY_UNIT"
+					e.Card = "CARD", e.Compact = "COMPACT", e.Classic = "CLASSIC"
 				}(Re || (Re = {})),
 				function(e) {
-					e.All = "ALL", e.Emoji = "EMOJI", e.Text = "TEXT"
+					e.NoAction = "NO_ACTION", e.HideSubreddit = "HIDE_SUBREDDIT", e.HideDiscoveryUnit = "HIDE_DISCOVERY_UNIT"
 				}(Fe || (Fe = {})),
 				function(e) {
-					e.Supporter = "SUPPORTER", e.Achievement = "ACHIEVEMENT"
+					e.All = "ALL", e.Emoji = "EMOJI", e.Text = "TEXT"
 				}(Ne || (Ne = {})),
 				function(e) {
-					e.Left = "LEFT", e.Right = "RIGHT"
+					e.Supporter = "SUPPORTER", e.Achievement = "ACHIEVEMENT"
 				}(Ce || (Ce = {})),
 				function(e) {
-					e.Dark = "DARK", e.Light = "LIGHT"
+					e.Left = "LEFT", e.Right = "RIGHT"
 				}(Ae || (Ae = {})),
 				function(e) {
-					e.Default = "DEFAULT", e.Geo = "GEO", e.Tos = "TOS"
+					e.Dark = "DARK", e.Light = "LIGHT"
 				}(je || (je = {})),
 				function(e) {
-					e.None = "NONE", e.Followed = "FOLLOWED"
+					e.Default = "DEFAULT", e.Geo = "GEO", e.Tos = "TOS"
 				}(Pe || (Pe = {})),
 				function(e) {
-					e.Hourly = "HOURLY", e.Daily = "DAILY", e.Weekly = "WEEKLY", e.Monthly = "MONTHLY"
+					e.None = "NONE", e.Followed = "FOLLOWED"
 				}(De || (De = {})),
 				function(e) {
-					e.None = "NONE", e.Friended = "FRIENDED"
+					e.Hourly = "HOURLY", e.Daily = "DAILY", e.Weekly = "WEEKLY", e.Monthly = "MONTHLY"
 				}(xe || (xe = {})),
 				function(e) {
-					e.None = "NONE", e.Required = "REQUIRED", e.NotAllowed = "NOT_ALLOWED"
+					e.None = "NONE", e.Friended = "FRIENDED"
 				}(Le || (Le = {})),
 				function(e) {
-					e.GoogleMaps = "GOOGLE_MAPS", e.Geonames = "GEONAMES"
+					e.None = "NONE", e.Required = "REQUIRED", e.NotAllowed = "NOT_ALLOWED"
 				}(Be || (Be = {})),
 				function(e) {
-					e.Downsized = "DOWNSIZED", e.DownsizedLarge = "DOWNSIZED_LARGE", e.DownsizedMedium = "DOWNSIZED_MEDIUM", e.DownsizedStill = "DOWNSIZED_STILL", e.FixedHeight = "FIXED_HEIGHT", e.FixedHeightDownsampled = "FIXED_HEIGHT_DOWNSAMPLED", e.FixedHeightSmall = "FIXED_HEIGHT_SMALL", e.FixedHeightSmallStill = "FIXED_HEIGHT_SMALL_STILL", e.FixedHeightStill = "FIXED_HEIGHT_STILL", e.FixedWidth = "FIXED_WIDTH", e.FixedWidthDownsampled = "FIXED_WIDTH_DOWNSAMPLED", e.FixedWidthSmall = "FIXED_WIDTH_SMALL", e.FixedWidthSmallStill = "FIXED_WIDTH_SMALL_STILL", e.FixedWidthStill = "FIXED_WIDTH_STILL", e.Original = "ORIGINAL", e.OriginalStill = "ORIGINAL_STILL", e.PreviewGif = "PREVIEW_GIF", e.PreviewWebp = "PREVIEW_WEBP"
+					e.GoogleMaps = "GOOGLE_MAPS", e.Geonames = "GEONAMES"
 				}(ke || (ke = {})),
 				function(e) {
-					e.Silver = "SILVER", e.Gold = "GOLD", e.Supergold = "SUPERGOLD"
+					e.Downsized = "DOWNSIZED", e.DownsizedLarge = "DOWNSIZED_LARGE", e.DownsizedMedium = "DOWNSIZED_MEDIUM", e.DownsizedStill = "DOWNSIZED_STILL", e.FixedHeight = "FIXED_HEIGHT", e.FixedHeightDownsampled = "FIXED_HEIGHT_DOWNSAMPLED", e.FixedHeightSmall = "FIXED_HEIGHT_SMALL", e.FixedHeightSmallStill = "FIXED_HEIGHT_SMALL_STILL", e.FixedHeightStill = "FIXED_HEIGHT_STILL", e.FixedWidth = "FIXED_WIDTH", e.FixedWidthDownsampled = "FIXED_WIDTH_DOWNSAMPLED", e.FixedWidthSmall = "FIXED_WIDTH_SMALL", e.FixedWidthSmallStill = "FIXED_WIDTH_SMALL_STILL", e.FixedWidthStill = "FIXED_WIDTH_STILL", e.Original = "ORIGINAL", e.OriginalStill = "ORIGINAL_STILL", e.PreviewGif = "PREVIEW_GIF", e.PreviewWebp = "PREVIEW_WEBP"
 				}(Me || (Me = {})),
 				function(e) {
-					e.Off = "OFF", e.Lenient = "LENIENT", e.Moderate = "MODERATE", e.Strict = "STRICT"
+					e.Silver = "SILVER", e.Gold = "GOLD", e.Supergold = "SUPERGOLD"
 				}(Ue || (Ue = {})),
 				function(e) {
-					e.UnhiddenOnly = "UNHIDDEN_ONLY", e.HiddenOnly = "HIDDEN_ONLY", e.HiddenAllowAutoUnhide = "HIDDEN_ALLOW_AUTO_UNHIDE", e.HiddenPreventAutoUnhide = "HIDDEN_PREVENT_AUTO_UNHIDE"
+					e.Off = "OFF", e.Lenient = "LENIENT", e.Moderate = "MODERATE", e.Strict = "STRICT"
 				}(Ge || (Ge = {})),
 				function(e) {
-					e.None = "NONE", e.Hidden = "HIDDEN"
+					e.UnhiddenOnly = "UNHIDDEN_ONLY", e.HiddenOnly = "HIDDEN_ONLY", e.HiddenAllowAutoUnhide = "HIDDEN_ALLOW_AUTO_UNHIDE", e.HiddenPreventAutoUnhide = "HIDDEN_PREVENT_AUTO_UNHIDE"
 				}(Ve || (Ve = {})),
 				function(e) {
-					e.R2 = "R2", e.Mweb = "MWEB", e.D2X = "D2X", e.Modmail = "MODMAIL"
+					e.None = "NONE", e.Hidden = "HIDDEN"
 				}(qe || (qe = {})),
 				function(e) {
-					e.Enabled = "ENABLED", e.Provisional = "PROVISIONAL"
+					e.R2 = "R2", e.Mweb = "MWEB", e.D2X = "D2X", e.Modmail = "MODMAIL"
 				}(He || (He = {})),
 				function(e) {
-					e.Google = "GOOGLE", e.Apple = "APPLE"
+					e.Enabled = "ENABLED", e.Provisional = "PROVISIONAL"
 				}(We || (We = {})),
 				function(e) {
-					e.Cover = "COVER", e.Tiled = "TILED"
+					e.Google = "GOOGLE", e.Apple = "APPLE"
 				}(Ke || (Ke = {})),
 				function(e) {
-					e.Subscriber = "SUBSCRIBER", e.Mod = "MOD"
+					e.Cover = "COVER", e.Tiled = "TILED"
 				}(ze || (ze = {})),
 				function(e) {
-					e.Rare = "RARE", e.Epic = "EPIC", e.Legendary = "LEGENDARY", e.Test = "TEST"
+					e.Subscriber = "SUBSCRIBER", e.Mod = "MOD"
 				}(Ye || (Ye = {})),
 				function(e) {
-					e.Minting = "MINTING", e.Minted = "MINTED", e.Transferring = "TRANSFERRING"
+					e.Rare = "RARE", e.Epic = "EPIC", e.Legendary = "LEGENDARY", e.Test = "TEST"
 				}($e || ($e = {})),
 				function(e) {
-					e.ServiceError = "SERVICE_ERROR", e.UserNotLoggedIn = "USER_NOT_LOGGED_IN", e.UserNotAuthorized = "USER_NOT_AUTHORIZED", e.DeviceLimitExceeded = "DEVICE_LIMIT_EXCEEDED", e.RoomFull = "ROOM_FULL", e.StageFull = "STAGE_FULL", e.RoomEnded = "ROOM_ENDED", e.UserBannedFromSubreddit = "USER_BANNED_FROM_SUBREDDIT", e.UserRemovedFromTalk = "USER_REMOVED_FROM_TALK", e.PrivateSubreddit = "PRIVATE_SUBREDDIT", e.TalkEnded = "TALK_ENDED", e.TalkFull = "TALK_FULL", e.IllegalArgument = "ILLEGAL_ARGUMENT", e.TalkNotFound = "TALK_NOT_FOUND"
+					e.Minting = "MINTING", e.Minted = "MINTED", e.Transferring = "TRANSFERRING"
 				}(Qe || (Qe = {})),
 				function(e) {
-					e.DisplayName = "DISPLAY_NAME", e.EnglishName = "ENGLISH_NAME", e.IsoCode = "ISO_CODE"
+					e.ServiceError = "SERVICE_ERROR", e.UserNotLoggedIn = "USER_NOT_LOGGED_IN", e.UserNotAuthorized = "USER_NOT_AUTHORIZED", e.DeviceLimitExceeded = "DEVICE_LIMIT_EXCEEDED", e.RoomFull = "ROOM_FULL", e.StageFull = "STAGE_FULL", e.RoomEnded = "ROOM_ENDED", e.UserBannedFromSubreddit = "USER_BANNED_FROM_SUBREDDIT", e.UserRemovedFromTalk = "USER_REMOVED_FROM_TALK", e.PrivateSubreddit = "PRIVATE_SUBREDDIT", e.TalkEnded = "TALK_ENDED", e.TalkFull = "TALK_FULL", e.IllegalArgument = "ILLEGAL_ARGUMENT", e.TalkNotFound = "TALK_NOT_FOUND"
 				}(Je || (Je = {})),
 				function(e) {
-					e.None = "NONE", e.Whitelist = "WHITELIST", e.Blacklist = "BLACKLIST"
+					e.DisplayName = "DISPLAY_NAME", e.EnglishName = "ENGLISH_NAME", e.IsoCode = "ISO_CODE"
 				}(Xe || (Xe = {})),
 				function(e) {
-					e.ServiceError = "SERVICE_ERROR", e.UserNotLoggedIn = "USER_NOT_LOGGED_IN", e.UserNotAuthorized = "USER_NOT_AUTHORIZED", e.LimitExceeded = "LIMIT_EXCEEDED", e.IllegalArgument = "ILLEGAL_ARGUMENT"
+					e.None = "NONE", e.Whitelist = "WHITELIST", e.Blacklist = "BLACKLIST"
 				}(Ze || (Ze = {})),
 				function(e) {
-					e.ServiceError = "SERVICE_ERROR", e.UserNotLoggedIn = "USER_NOT_LOGGED_IN", e.UserNotAuthorized = "USER_NOT_AUTHORIZED"
+					e.ServiceError = "SERVICE_ERROR", e.UserNotLoggedIn = "USER_NOT_LOGGED_IN", e.UserNotAuthorized = "USER_NOT_AUTHORIZED", e.LimitExceeded = "LIMIT_EXCEEDED", e.IllegalArgument = "ILLEGAL_ARGUMENT"
 				}(et || (et = {})),
 				function(e) {
 					e.ServiceError = "SERVICE_ERROR", e.UserNotLoggedIn = "USER_NOT_LOGGED_IN", e.UserNotAuthorized = "USER_NOT_AUTHORIZED"
 				}(tt || (tt = {})),
 				function(e) {
-					e.ServiceError = "SERVICE_ERROR", e.UserNotLoggedIn = "USER_NOT_LOGGED_IN", e.UserNotAuthorized = "USER_NOT_AUTHORIZED", e.IllegalArgument = "ILLEGAL_ARGUMENT"
+					e.ServiceError = "SERVICE_ERROR", e.UserNotLoggedIn = "USER_NOT_LOGGED_IN", e.UserNotAuthorized = "USER_NOT_AUTHORIZED"
 				}(it || (it = {})),
 				function(e) {
-					e.ServiceError = "SERVICE_ERROR", e.UserNotLoggedIn = "USER_NOT_LOGGED_IN", e.UserNotAuthorized = "USER_NOT_AUTHORIZED"
+					e.ServiceError = "SERVICE_ERROR", e.UserNotLoggedIn = "USER_NOT_LOGGED_IN", e.UserNotAuthorized = "USER_NOT_AUTHORIZED", e.IllegalArgument = "ILLEGAL_ARGUMENT"
 				}(nt || (nt = {})),
 				function(e) {
-					e.NotStarted = "NOT_STARTED", e.Published = "PUBLISHED", e.IsLive = "IS_LIVE", e.Disconnected = "DISCONNECTED", e.Killed = "KILLED", e.Purged = "PURGED", e.Ended = "ENDED"
+					e.ServiceError = "SERVICE_ERROR", e.UserNotLoggedIn = "USER_NOT_LOGGED_IN", e.UserNotAuthorized = "USER_NOT_AUTHORIZED"
 				}(rt || (rt = {})),
 				function(e) {
-					e.ServiceError = "SERVICE_ERROR", e.UserNotLoggedIn = "USER_NOT_LOGGED_IN", e.UserNotAuthorized = "USER_NOT_AUTHORIZED"
+					e.NotStarted = "NOT_STARTED", e.Published = "PUBLISHED", e.IsLive = "IS_LIVE", e.Disconnected = "DISCONNECTED", e.Killed = "KILLED", e.Purged = "PURGED", e.Ended = "ENDED"
 				}(st || (st = {})),
 				function(e) {
-					e.UsernameMention = "USERNAME_MENTION", e.PrivateMessage = "PRIVATE_MESSAGE", e.CommentReply = "COMMENT_REPLY", e.PostReply = "POST_REPLY", e.LifecyclePostSuggestions = "LIFECYCLE_POST_SUGGESTIONS", e.Subreddit = "SUBREDDIT", e.ChatMessage = "CHAT_MESSAGE", e.ChatRequest = "CHAT_REQUEST", e.SubredditUpdatesInterestingPost = "SUBREDDIT_UPDATES_INTERESTING_POST", e.News = "NEWS", e.ScheduledEvent = "SCHEDULED_EVENT", e.AddToCollection = "ADD_TO_COLLECTION", e.SubredditRecommendation = "SUBREDDIT_RECOMMENDATION", e.OneOff = "ONE_OFF", e.UpvotePost = "UPVOTE_POST", e.UpvoteComment = "UPVOTE_COMMENT", e.PasswordReset = "PASSWORD_RESET", e.EmailDigest = "EMAIL_DIGEST", e.Escalation = "ESCALATION", e.VerifyEmail = "VERIFY_EMAIL", e.Ato = "ATO", e.Security = "SECURITY", e.ForgotUsername = "FORGOT_USERNAME", e.LiveEvent = "LIVE_EVENT", e.CakeDay = "CAKE_DAY", e.NewPostActivity = "NEW_POST_ACTIVITY", e.AdsCampaignApproved = "ADS_CAMPAIGN_APPROVED", e.UserNewFollower = "USER_NEW_FOLLOWER", e.AdsCampaignRejected = "ADS_CAMPAIGN_REJECTED", e.ThreadReplies = "THREAD_REPLIES", e.TopLevelComment = "TOP_LEVEL_COMMENT", e.ChatAcceptInvite = "CHAT_ACCEPT_INVITE", e.EmailExternalVerification = "EMAIL_EXTERNAL_VERIFICATION", e.EconPromotion = "ECON_PROMOTION", e.AdsAutomatedReport = "ADS_AUTOMATED_REPORT", e.AdminAnnouncementEmail = "ADMIN_ANNOUNCEMENT_EMAIL", e.PostFlairAdded = "POST_FLAIR_ADDED", e.BroadcastFollower = "BROADCAST_FOLLOWER", e.BroadcastRecommendation = "BROADCAST_RECOMMENDATION", e.UserFlairAdded = "USER_FLAIR_ADDED", e.ModeratedSrEngagement = "MODERATED_SR_ENGAGEMENT", e.ModeratedSrMilestone = "MODERATED_SR_MILESTONE", e.ModeratedSrContentFoundation = "MODERATED_SR_CONTENT_FOUNDATION", e.CryptoTransactionApproval = "CRYPTO_TRANSACTION_APPROVAL", e.AdsRoleInvitation = "ADS_ROLE_INVITATION", e.NewPinnedPost = "NEW_PINNED_POST", e.EmailUpvotePost = "EMAIL_UPVOTE_POST", e.EmailUpvoteComment = "EMAIL_UPVOTE_COMMENT", e.EmailCommunityDiscovery = "EMAIL_COMMUNITY_DISCOVERY", e.EmailNewUserEducation = "EMAIL_NEW_USER_EDUCATION", e.EmailUserNewFollower = "EMAIL_USER_NEW_FOLLOWER", e.EmailChatRequest = "EMAIL_CHAT_REQUEST", e.PushTokenHealthCheck = "PUSH_TOKEN_HEALTH_CHECK", e.EmailPostReply = "EMAIL_POST_REPLY", e.EmailCommentReply = "EMAIL_COMMENT_REPLY", e.EmailPrivateMessage = "EMAIL_PRIVATE_MESSAGE", e.EmailUsernameMention = "EMAIL_USERNAME_MENTION", e.Oauth2AppAdd = "OAUTH2_APP_ADD", e.Oauth2AppApprove = "OAUTH2_APP_APPROVE", e.AeDmcaNotifySubmitter = "AE_DMCA_NOTIFY_SUBMITTER", e.PostFollow = "POST_FOLLOW", e.CommentFollow = "COMMENT_FOLLOW", e.MorePostActivity = "MORE_POST_ACTIVITY", e.EmailMagicLinkRegister = "EMAIL_MAGIC_LINK_REGISTER", e.EmailMagicLinkLogin = "EMAIL_MAGIC_LINK_LOGIN", e.ExportCompleteNotifyUserEmail = "EXPORT_COMPLETE_NOTIFY_USER_EMAIL", e.UsernameTakeoverCompleted = "USERNAME_TAKEOVER_COMPLETED", e.EmailChangeEmail = "EMAIL_CHANGE_EMAIL", e.AwardReceived = "AWARD_RECEIVED", e.ModeratedSrNewPost = "MODERATED_SR_NEW_POST", e.ModeratedSrViralCommentPost = "MODERATED_SR_VIRAL_COMMENT_POST", e.ModeratedSrViralUpvotePost = "MODERATED_SR_VIRAL_UPVOTE_POST", e.ModeratedSrReportedPost = "MODERATED_SR_REPORTED_POST", e.ModeratedSrReportedComment = "MODERATED_SR_REPORTED_COMMENT", e.ModeratedSrNewModmail = "MODERATED_SR_NEW_MODMAIL", e.IncentivizedPromotion = "INCENTIVIZED_PROMOTION", e.TrendingGeo = "TRENDING_GEO", e.RedditLore = "REDDIT_LORE", e.TalkLive = "TALK_LIVE", e.ChatMessageReaction = "CHAT_MESSAGE_REACTION", e.EmailWeeklyRecap = "EMAIL_WEEKLY_RECAP", e.Rereddit = "REREDDIT", e.HotPotatoOverwritten = "HOT_POTATO_OVERWRITTEN"
+					e.ServiceError = "SERVICE_ERROR", e.UserNotLoggedIn = "USER_NOT_LOGGED_IN", e.UserNotAuthorized = "USER_NOT_AUTHORIZED"
 				}(ot || (ot = {})),
 				function(e) {
-					e.Valid = "VALID", e.Unprocessed = "UNPROCESSED", e.Failed = "FAILED", e.Invalid = "INVALID"
+					e.UsernameMention = "USERNAME_MENTION", e.PrivateMessage = "PRIVATE_MESSAGE", e.CommentReply = "COMMENT_REPLY", e.PostReply = "POST_REPLY", e.LifecyclePostSuggestions = "LIFECYCLE_POST_SUGGESTIONS", e.Subreddit = "SUBREDDIT", e.ChatMessage = "CHAT_MESSAGE", e.ChatRequest = "CHAT_REQUEST", e.SubredditUpdatesInterestingPost = "SUBREDDIT_UPDATES_INTERESTING_POST", e.News = "NEWS", e.ScheduledEvent = "SCHEDULED_EVENT", e.AddToCollection = "ADD_TO_COLLECTION", e.SubredditRecommendation = "SUBREDDIT_RECOMMENDATION", e.OneOff = "ONE_OFF", e.UpvotePost = "UPVOTE_POST", e.UpvoteComment = "UPVOTE_COMMENT", e.PasswordReset = "PASSWORD_RESET", e.EmailDigest = "EMAIL_DIGEST", e.Escalation = "ESCALATION", e.VerifyEmail = "VERIFY_EMAIL", e.Ato = "ATO", e.Security = "SECURITY", e.ForgotUsername = "FORGOT_USERNAME", e.LiveEvent = "LIVE_EVENT", e.CakeDay = "CAKE_DAY", e.NewPostActivity = "NEW_POST_ACTIVITY", e.AdsCampaignApproved = "ADS_CAMPAIGN_APPROVED", e.UserNewFollower = "USER_NEW_FOLLOWER", e.AdsCampaignRejected = "ADS_CAMPAIGN_REJECTED", e.ThreadReplies = "THREAD_REPLIES", e.TopLevelComment = "TOP_LEVEL_COMMENT", e.ChatAcceptInvite = "CHAT_ACCEPT_INVITE", e.EmailExternalVerification = "EMAIL_EXTERNAL_VERIFICATION", e.EconPromotion = "ECON_PROMOTION", e.AdsAutomatedReport = "ADS_AUTOMATED_REPORT", e.AdminAnnouncementEmail = "ADMIN_ANNOUNCEMENT_EMAIL", e.PostFlairAdded = "POST_FLAIR_ADDED", e.BroadcastFollower = "BROADCAST_FOLLOWER", e.BroadcastRecommendation = "BROADCAST_RECOMMENDATION", e.UserFlairAdded = "USER_FLAIR_ADDED", e.ModeratedSrEngagement = "MODERATED_SR_ENGAGEMENT", e.ModeratedSrMilestone = "MODERATED_SR_MILESTONE", e.ModeratedSrContentFoundation = "MODERATED_SR_CONTENT_FOUNDATION", e.CryptoTransactionApproval = "CRYPTO_TRANSACTION_APPROVAL", e.AdsRoleInvitation = "ADS_ROLE_INVITATION", e.NewPinnedPost = "NEW_PINNED_POST", e.EmailUpvotePost = "EMAIL_UPVOTE_POST", e.EmailUpvoteComment = "EMAIL_UPVOTE_COMMENT", e.EmailCommunityDiscovery = "EMAIL_COMMUNITY_DISCOVERY", e.EmailNewUserEducation = "EMAIL_NEW_USER_EDUCATION", e.EmailUserNewFollower = "EMAIL_USER_NEW_FOLLOWER", e.EmailChatRequest = "EMAIL_CHAT_REQUEST", e.PushTokenHealthCheck = "PUSH_TOKEN_HEALTH_CHECK", e.EmailPostReply = "EMAIL_POST_REPLY", e.EmailCommentReply = "EMAIL_COMMENT_REPLY", e.EmailPrivateMessage = "EMAIL_PRIVATE_MESSAGE", e.EmailUsernameMention = "EMAIL_USERNAME_MENTION", e.Oauth2AppAdd = "OAUTH2_APP_ADD", e.Oauth2AppApprove = "OAUTH2_APP_APPROVE", e.AeDmcaNotifySubmitter = "AE_DMCA_NOTIFY_SUBMITTER", e.PostFollow = "POST_FOLLOW", e.CommentFollow = "COMMENT_FOLLOW", e.MorePostActivity = "MORE_POST_ACTIVITY", e.EmailMagicLinkRegister = "EMAIL_MAGIC_LINK_REGISTER", e.EmailMagicLinkLogin = "EMAIL_MAGIC_LINK_LOGIN", e.ExportCompleteNotifyUserEmail = "EXPORT_COMPLETE_NOTIFY_USER_EMAIL", e.UsernameTakeoverCompleted = "USERNAME_TAKEOVER_COMPLETED", e.EmailChangeEmail = "EMAIL_CHANGE_EMAIL", e.AwardReceived = "AWARD_RECEIVED", e.ModeratedSrNewPost = "MODERATED_SR_NEW_POST", e.ModeratedSrViralCommentPost = "MODERATED_SR_VIRAL_COMMENT_POST", e.ModeratedSrViralUpvotePost = "MODERATED_SR_VIRAL_UPVOTE_POST", e.ModeratedSrReportedPost = "MODERATED_SR_REPORTED_POST", e.ModeratedSrReportedComment = "MODERATED_SR_REPORTED_COMMENT", e.ModeratedSrNewModmail = "MODERATED_SR_NEW_MODMAIL", e.IncentivizedPromotion = "INCENTIVIZED_PROMOTION", e.TrendingGeo = "TRENDING_GEO", e.RedditLore = "REDDIT_LORE", e.TalkLive = "TALK_LIVE", e.ChatMessageReaction = "CHAT_MESSAGE_REACTION", e.EmailWeeklyRecap = "EMAIL_WEEKLY_RECAP", e.Rereddit = "REREDDIT", e.HotPotatoOverwritten = "HOT_POTATO_OVERWRITTEN"
 				}(dt || (dt = {})),
 				function(e) {
-					e.Home = "HOME", e.Popular = "POPULAR", e.Community = "COMMUNITY", e.DirectPlay = "DIRECT_PLAY", e.DirectPlayEntry = "DIRECT_PLAY_ENTRY", e.Discovery = "DISCOVERY", e.Discover = "DISCOVER", e.Search = "SEARCH", e.Notification = "NOTIFICATION", e.UserProfile = "USER_PROFILE", e.DeepLink = "DEEP_LINK", e.Chat = "CHAT", e.CommunityCarousel = "COMMUNITY_CAROUSEL", e.PopularCarousel = "POPULAR_CAROUSEL"
+					e.Valid = "VALID", e.Unprocessed = "UNPROCESSED", e.Failed = "FAILED", e.Invalid = "INVALID"
 				}(at || (at = {})),
 				function(e) {
-					e.Embed = "EMBED", e.Image = "IMAGE", e.Gifvideo = "GIFVIDEO", e.Video = "VIDEO", e.Rpan = "RPAN"
+					e.Home = "HOME", e.Popular = "POPULAR", e.Community = "COMMUNITY", e.DirectPlay = "DIRECT_PLAY", e.DirectPlayEntry = "DIRECT_PLAY_ENTRY", e.Discovery = "DISCOVERY", e.Discover = "DISCOVER", e.Search = "SEARCH", e.Notification = "NOTIFICATION", e.UserProfile = "USER_PROFILE", e.DeepLink = "DEEP_LINK", e.Chat = "CHAT", e.CommunityCarousel = "COMMUNITY_CAROUSEL", e.PopularCarousel = "POPULAR_CAROUSEL"
 				}(lt || (lt = {})),
 				function(e) {
-					e.On = "ON", e.Off = "OFF", e.Subreddit = "SUBREDDIT"
+					e.Embed = "EMBED", e.Image = "IMAGE", e.Gifvideo = "GIFVIDEO", e.Video = "VIDEO", e.Rpan = "RPAN"
 				}(ut || (ut = {})),
 				function(e) {
-					e.Joined = "JOINED", e.Invited = "INVITED", e.NotAMember = "NOT_A_MEMBER", e.Other = "OTHER"
+					e.On = "ON", e.Off = "OFF", e.Subreddit = "SUBREDDIT"
 				}(ct || (ct = {})),
 				function(e) {
-					e.All = "ALL", e.InvitedOnly = "INVITED_ONLY", e.JoinedOnly = "JOINED_ONLY", e.InvitedByFriend = "INVITED_BY_FRIEND", e.InvitedByNonFriend = "INVITED_BY_NON_FRIEND"
+					e.Joined = "JOINED", e.Invited = "INVITED", e.NotAMember = "NOT_A_MEMBER", e.Other = "OTHER"
 				}(_t || (_t = {})),
 				function(e) {
-					e.Default = "DEFAULT", e.Overlay = "OVERLAY"
+					e.All = "ALL", e.InvitedOnly = "INVITED_ONLY", e.JoinedOnly = "JOINED_ONLY", e.InvitedByFriend = "INVITED_BY_FRIEND", e.InvitedByNonFriend = "INVITED_BY_NON_FRIEND"
 				}(mt || (mt = {})),
 				function(e) {
-					e.Add = "ADD", e.Delete = "DELETE"
+					e.Default = "DEFAULT", e.Overlay = "OVERLAY"
 				}(pt || (pt = {})),
 				function(e) {
-					e.Gif = "GIF", e.Jpeg = "JPEG", e.Png = "PNG", e.Webp = "WEBP", e.Mp4 = "MP4", e.Quicktime = "QUICKTIME"
+					e.Add = "ADD", e.Delete = "DELETE"
 				}(ht || (ht = {})),
 				function(e) {
-					e.AcceptModeratorInvite = "ACCEPT_MODERATOR_INVITE", e.AddCommunityTopics = "ADD_COMMUNITY_TOPICS", e.AddContributor = "ADD_CONTRIBUTOR", e.AddModerator = "ADD_MODERATOR", e.AddNote = "ADD_NOTE", e.AddRemovalReason = "ADD_REMOVAL_REASON", e.AdjustPostCrowdControlLevel = "ADJUST_POST_CROWD_CONTROL_LEVEL", e.EnablePostCrowdControlFilter = "ENABLE_POST_CROWD_CONTROL_FILTER", e.DisablePostCrowdControlFilter = "DISABLE_POST_CROWD_CONTROL_FILTER", e.ApproveComment = "APPROVE_COMMENT", e.ApproveLink = "APPROVE_LINK", e.BanUser = "BAN_USER", e.CreateAward = "CREATE_AWARD", e.CreateScheduledPost = "CREATE_SCHEDULED_POST", e.CreateRemovalReason = "CREATE_REMOVAL_REASON", e.Collections = "COLLECTIONS", e.CommunityStyling = "COMMUNITY_STYLING", e.CommunityWidgets = "COMMUNITY_WIDGETS", e.CreateRule = "CREATE_RULE", e.DeleteAward = "DELETE_AWARD", e.DeleteRule = "DELETE_RULE", e.DeleteScheduledPost = "DELETE_SCHEDULED_POST", e.DeleteOverriddenClassification = "DELETE_OVERRIDDEN_CLASSIFICATION", e.DeleteNote = "DELETE_NOTE", e.DeleteRemovalReason = "DELETE_REMOVAL_REASON", e.DisableAward = "DISABLE_AWARD", e.Distinguish = "DISTINGUISH", e.EditFlair = "EDIT_FLAIR", e.EditPostRequirements = "EDIT_POST_REQUIREMENTS", e.EditRule = "EDIT_RULE", e.EditScheduledPost = "EDIT_SCHEDULED_POST", e.EditSettings = "EDIT_SETTINGS", e.EnableAward = "ENABLE_AWARD", e.Events = "EVENTS", e.HiddenAward = "HIDDEN_AWARD", e.IgnoreReports = "IGNORE_REPORTS", e.InviteModerator = "INVITE_MODERATOR", e.InviteSubscriber = "INVITE_SUBSCRIBER", e.Lock = "LOCK", e.MarkNsfw = "MARK_NSFW", e.MarkOriginalContent = "MARK_ORIGINAL_CONTENT", e.ModAwardGiven = "MOD_AWARD_GIVEN", e.ModmailEnrollment = "MODMAIL_ENROLLMENT", e.MuteUser = "MUTE_USER", e.OverrideClassification = "OVERRIDE_CLASSIFICATION", e.RemoveComment = "REMOVE_COMMENT", e.RemoveCommunityTopics = "REMOVE_COMMUNITY_TOPICS", e.RemoveContributor = "REMOVE_CONTRIBUTOR", e.RemoveLink = "REMOVE_LINK", e.RemoveModerator = "REMOVE_MODERATOR", e.RemoveWikiContributor = "REMOVE_WIKI_CONTRIBUTOR", e.ReorderModerators = "REORDER_MODERATORS", e.ReorderRules = "REORDER_RULES", e.SetContestMode = "SET_CONTEST_MODE", e.SetPermissions = "SET_PERMISSIONS", e.SetSuggestedsort = "SET_SUGGESTEDSORT", e.ShowComment = "SHOW_COMMENT", e.SnoozeReports = "SNOOZE_REPORTS", e.SpamComment = "SPAM_COMMENT", e.SpamLink = "SPAM_LINK", e.Spoiler = "SPOILER", e.Sticky = "STICKY", e.SubmitContentRatingSurvey = "SUBMIT_CONTENT_RATING_SURVEY", e.SubmitScheduledPost = "SUBMIT_SCHEDULED_POST", e.UnbanUser = "UNBAN_USER", e.UnignoreReports = "UNIGNORE_REPORTS", e.UninviteModerator = "UNINVITE_MODERATOR", e.Unlock = "UNLOCK", e.UnmuteUser = "UNMUTE_USER", e.UnsetContestMode = "UNSET_CONTEST_MODE", e.UnsnoozeReports = "UNSNOOZE_REPORTS", e.Unspoiler = "UNSPOILER", e.Unsticky = "UNSTICKY", e.UpdateRemovalReason = "UPDATE_REMOVAL_REASON", e.WikiBanned = "WIKI_BANNED", e.WikiContributor = "WIKI_CONTRIBUTOR", e.WikiPageListed = "WIKI_PAGE_LISTED", e.WikiPermLevel = "WIKI_PERM_LEVEL", e.WikiRevise = "WIKI_REVISE", e.WikiUnbanned = "WIKI_UNBANNED"
+					e.Gif = "GIF", e.Jpeg = "JPEG", e.Png = "PNG", e.Webp = "WEBP", e.Mp4 = "MP4", e.Quicktime = "QUICKTIME"
 				}(ft || (ft = {})),
 				function(e) {
-					e.Note = "NOTE", e.Approval = "APPROVAL", e.Removal = "REMOVAL", e.Ban = "BAN", e.Mute = "MUTE", e.Invite = "INVITE", e.Spam = "SPAM", e.ContentChange = "CONTENT_CHANGE", e.ModAction = "MOD_ACTION", e.All = "ALL"
+					e.AcceptModeratorInvite = "ACCEPT_MODERATOR_INVITE", e.AddCommunityTopics = "ADD_COMMUNITY_TOPICS", e.AddContributor = "ADD_CONTRIBUTOR", e.AddModerator = "ADD_MODERATOR", e.AddNote = "ADD_NOTE", e.AddRemovalReason = "ADD_REMOVAL_REASON", e.AdjustPostCrowdControlLevel = "ADJUST_POST_CROWD_CONTROL_LEVEL", e.EnablePostCrowdControlFilter = "ENABLE_POST_CROWD_CONTROL_FILTER", e.DisablePostCrowdControlFilter = "DISABLE_POST_CROWD_CONTROL_FILTER", e.ApproveComment = "APPROVE_COMMENT", e.ApproveLink = "APPROVE_LINK", e.BanUser = "BAN_USER", e.CreateAward = "CREATE_AWARD", e.CreateScheduledPost = "CREATE_SCHEDULED_POST", e.CreateRemovalReason = "CREATE_REMOVAL_REASON", e.Collections = "COLLECTIONS", e.CommunityStyling = "COMMUNITY_STYLING", e.CommunityWidgets = "COMMUNITY_WIDGETS", e.CreateRule = "CREATE_RULE", e.DeleteAward = "DELETE_AWARD", e.DeleteRule = "DELETE_RULE", e.DeleteScheduledPost = "DELETE_SCHEDULED_POST", e.DeleteOverriddenClassification = "DELETE_OVERRIDDEN_CLASSIFICATION", e.DeleteNote = "DELETE_NOTE", e.DeleteRemovalReason = "DELETE_REMOVAL_REASON", e.DisableAward = "DISABLE_AWARD", e.Distinguish = "DISTINGUISH", e.EditFlair = "EDIT_FLAIR", e.EditPostRequirements = "EDIT_POST_REQUIREMENTS", e.EditRule = "EDIT_RULE", e.EditScheduledPost = "EDIT_SCHEDULED_POST", e.EditSettings = "EDIT_SETTINGS", e.EnableAward = "ENABLE_AWARD", e.Events = "EVENTS", e.HiddenAward = "HIDDEN_AWARD", e.IgnoreReports = "IGNORE_REPORTS", e.InviteModerator = "INVITE_MODERATOR", e.InviteSubscriber = "INVITE_SUBSCRIBER", e.Lock = "LOCK", e.MarkNsfw = "MARK_NSFW", e.MarkOriginalContent = "MARK_ORIGINAL_CONTENT", e.ModAwardGiven = "MOD_AWARD_GIVEN", e.ModmailEnrollment = "MODMAIL_ENROLLMENT", e.MuteUser = "MUTE_USER", e.OverrideClassification = "OVERRIDE_CLASSIFICATION", e.RemoveComment = "REMOVE_COMMENT", e.RemoveCommunityTopics = "REMOVE_COMMUNITY_TOPICS", e.RemoveContributor = "REMOVE_CONTRIBUTOR", e.RemoveLink = "REMOVE_LINK", e.RemoveModerator = "REMOVE_MODERATOR", e.RemoveWikiContributor = "REMOVE_WIKI_CONTRIBUTOR", e.ReorderModerators = "REORDER_MODERATORS", e.ReorderRules = "REORDER_RULES", e.SetContestMode = "SET_CONTEST_MODE", e.SetPermissions = "SET_PERMISSIONS", e.SetSuggestedsort = "SET_SUGGESTEDSORT", e.ShowComment = "SHOW_COMMENT", e.SnoozeReports = "SNOOZE_REPORTS", e.SpamComment = "SPAM_COMMENT", e.SpamLink = "SPAM_LINK", e.Spoiler = "SPOILER", e.Sticky = "STICKY", e.SubmitContentRatingSurvey = "SUBMIT_CONTENT_RATING_SURVEY", e.SubmitScheduledPost = "SUBMIT_SCHEDULED_POST", e.UnbanUser = "UNBAN_USER", e.UnignoreReports = "UNIGNORE_REPORTS", e.UninviteModerator = "UNINVITE_MODERATOR", e.Unlock = "UNLOCK", e.UnmuteUser = "UNMUTE_USER", e.UnsetContestMode = "UNSET_CONTEST_MODE", e.UnsnoozeReports = "UNSNOOZE_REPORTS", e.Unspoiler = "UNSPOILER", e.Unsticky = "UNSTICKY", e.UpdateRemovalReason = "UPDATE_REMOVAL_REASON", e.WikiBanned = "WIKI_BANNED", e.WikiContributor = "WIKI_CONTRIBUTOR", e.WikiPageListed = "WIKI_PAGE_LISTED", e.WikiPermLevel = "WIKI_PERM_LEVEL", e.WikiRevise = "WIKI_REVISE", e.WikiUnbanned = "WIKI_UNBANNED"
 				}(bt || (bt = {})),
 				function(e) {
-					e.Note = "NOTE", e.Approval = "APPROVAL", e.Removal = "REMOVAL", e.Ban = "BAN", e.Mute = "MUTE", e.Invite = "INVITE", e.Spam = "SPAM", e.ContentChange = "CONTENT_CHANGE"
+					e.Note = "NOTE", e.Approval = "APPROVAL", e.Removal = "REMOVAL", e.Ban = "BAN", e.Mute = "MUTE", e.Invite = "INVITE", e.Spam = "SPAM", e.ContentChange = "CONTENT_CHANGE", e.ModAction = "MOD_ACTION", e.All = "ALL"
 				}(gt || (gt = {})),
 				function(e) {
-					e.ModPnsStatus = "MOD_PNS_STATUS", e.ModPnMilestoneStatus = "MOD_PN_MILESTONE_STATUS", e.ModPnContentFoundationStatus = "MOD_PN_CONTENT_FOUNDATION_STATUS", e.ModPnNewPostStatus = "MOD_PN_NEW_POST_STATUS", e.ModPnNewModmailStatus = "MOD_PN_NEW_MODMAIL_STATUS", e.ModPnNewCrosspostStatus = "MOD_PN_NEW_CROSSPOST_STATUS", e.ModPnNewSrMentionStatus = "MOD_PN_NEW_SR_MENTION_STATUS", e.ModPnViralCommentPostStatus = "MOD_PN_VIRAL_COMMENT_POST_STATUS", e.ModPnViralUpvotePostStatus = "MOD_PN_VIRAL_UPVOTE_POST_STATUS", e.ModPnReportedPostStatus = "MOD_PN_REPORTED_POST_STATUS", e.ModPnReportedCommentStatus = "MOD_PN_REPORTED_COMMENT_STATUS", e.ModPnPostInPopularFeedStatus = "MOD_PN_POST_IN_POPULAR_FEED_STATUS"
+					e.Note = "NOTE", e.Approval = "APPROVAL", e.Removal = "REMOVAL", e.Ban = "BAN", e.Mute = "MUTE", e.Invite = "INVITE", e.Spam = "SPAM", e.ContentChange = "CONTENT_CHANGE"
 				}(wt || (wt = {})),
 				function(e) {
-					e.ModPnViralCommentPostThreshold = "MOD_PN_VIRAL_COMMENT_POST_THRESHOLD", e.ModPnViralUpvotePostThreshold = "MOD_PN_VIRAL_UPVOTE_POST_THRESHOLD", e.ModPnReportedPostThreshold = "MOD_PN_REPORTED_POST_THRESHOLD", e.ModPnReportedCommentThreshold = "MOD_PN_REPORTED_COMMENT_THRESHOLD", e.ModPnPostInPopularFeedThreshold = "MOD_PN_POST_IN_POPULAR_FEED_THRESHOLD"
+					e.ModPnsStatus = "MOD_PNS_STATUS", e.ModPnMilestoneStatus = "MOD_PN_MILESTONE_STATUS", e.ModPnContentFoundationStatus = "MOD_PN_CONTENT_FOUNDATION_STATUS", e.ModPnNewPostStatus = "MOD_PN_NEW_POST_STATUS", e.ModPnNewModmailStatus = "MOD_PN_NEW_MODMAIL_STATUS", e.ModPnNewCrosspostStatus = "MOD_PN_NEW_CROSSPOST_STATUS", e.ModPnNewSrMentionStatus = "MOD_PN_NEW_SR_MENTION_STATUS", e.ModPnViralCommentPostStatus = "MOD_PN_VIRAL_COMMENT_POST_STATUS", e.ModPnViralUpvotePostStatus = "MOD_PN_VIRAL_UPVOTE_POST_STATUS", e.ModPnReportedPostStatus = "MOD_PN_REPORTED_POST_STATUS", e.ModPnReportedCommentStatus = "MOD_PN_REPORTED_COMMENT_STATUS", e.ModPnPostInPopularFeedStatus = "MOD_PN_POST_IN_POPULAR_FEED_STATUS"
 				}(vt || (vt = {})),
 				function(e) {
-					e.Notify = "NOTIFY", e.Top = "TOP", e.Info = "INFO", e.Comment = "COMMENT", e.Crosspost = "CROSSPOST", e.FeedPosts = "FEED_POSTS", e.Rising = "RISING", e.Message = "MESSAGE", e.Report = "REPORT"
+					e.ModPnViralCommentPostThreshold = "MOD_PN_VIRAL_COMMENT_POST_THRESHOLD", e.ModPnViralUpvotePostThreshold = "MOD_PN_VIRAL_UPVOTE_POST_THRESHOLD", e.ModPnReportedPostThreshold = "MOD_PN_REPORTED_POST_THRESHOLD", e.ModPnReportedCommentThreshold = "MOD_PN_REPORTED_COMMENT_THRESHOLD", e.ModPnPostInPopularFeedThreshold = "MOD_PN_POST_IN_POPULAR_FEED_THRESHOLD"
 				}(yt || (yt = {})),
 				function(e) {
-					e.Auto = "AUTO", e.Enabled = "ENABLED", e.Disabled = "DISABLED"
+					e.Notify = "NOTIFY", e.Top = "TOP", e.Info = "INFO", e.Comment = "COMMENT", e.Crosspost = "CROSSPOST", e.FeedPosts = "FEED_POSTS", e.Rising = "RISING", e.Message = "MESSAGE", e.Report = "REPORT"
 				}(Et || (Et = {})),
 				function(e) {
-					e.Post = "POST", e.Comment = "COMMENT", e.ChatComment = "CHAT_COMMENT"
+					e.Auto = "AUTO", e.Enabled = "ENABLED", e.Disabled = "DISABLED"
 				}(St || (St = {})),
 				function(e) {
-					e.SortDate = "SORT_DATE", e.SortReports = "SORT_REPORTS"
+					e.Post = "POST", e.Comment = "COMMENT", e.ChatComment = "CHAT_COMMENT"
 				}(Tt || (Tt = {})),
 				function(e) {
-					e.UserReports = "USER_REPORTS", e.Automod = "AUTOMOD", e.Mod = "MOD", e.Admin = "ADMIN", e.ShadowbannedSubmitter = "SHADOWBANNED_SUBMITTER", e.HatefulContent = "HATEFUL_CONTENT", e.CrowdControl = "CROWD_CONTROL", e.BanEvasion = "BAN_EVASION"
+					e.SortDate = "SORT_DATE", e.SortReports = "SORT_REPORTS"
 				}(Ot || (Ot = {})),
 				function(e) {
-					e.Mod = "MOD", e.Reported = "REPORTED", e.Removed = "REMOVED", e.Edited = "EDITED", e.Unmoderated = "UNMODERATED"
+					e.UserReports = "USER_REPORTS", e.Automod = "AUTOMOD", e.Mod = "MOD", e.Admin = "ADMIN", e.ShadowbannedSubmitter = "SHADOWBANNED_SUBMITTER", e.HatefulContent = "HATEFUL_CONTENT", e.CrowdControl = "CROWD_CONTROL", e.BanEvasion = "BAN_EVASION"
 				}(It || (It = {})),
 				function(e) {
-					e.BotBan = "BOT_BAN", e.PermaBan = "PERMA_BAN", e.Ban = "BAN", e.AbuseWarning = "ABUSE_WARNING", e.SpamWarning = "SPAM_WARNING", e.SpamWatch = "SPAM_WATCH", e.SolidContributor = "SOLID_CONTRIBUTOR", e.HelpfulUser = "HELPFUL_USER"
+					e.Mod = "MOD", e.Reported = "REPORTED", e.Removed = "REMOVED", e.Edited = "EDITED", e.Unmoderated = "UNMODERATED"
 				}(Rt || (Rt = {})),
 				function(e) {
-					e.ModApproved = "MOD_APPROVED", e.ModRemoved = "MOD_REMOVED", e.ModSpammed = "MOD_SPAMMED", e.AdminRemoved = "ADMIN_REMOVED", e.AdminApproved = "ADMIN_APPROVED", e.AdminSpammed = "ADMIN_SPAMMED"
+					e.BotBan = "BOT_BAN", e.PermaBan = "PERMA_BAN", e.Ban = "BAN", e.AbuseWarning = "ABUSE_WARNING", e.SpamWarning = "SPAM_WARNING", e.SpamWatch = "SPAM_WATCH", e.SolidContributor = "SOLID_CONTRIBUTOR", e.HelpfulUser = "HELPFUL_USER"
 				}(Ft || (Ft = {})),
 				function(e) {
-					e.Legal = "LEGAL"
+					e.ModApproved = "MOD_APPROVED", e.ModRemoved = "MOD_REMOVED", e.ModSpammed = "MOD_SPAMMED", e.AdminRemoved = "ADMIN_REMOVED", e.AdminApproved = "ADMIN_APPROVED", e.AdminSpammed = "ADMIN_SPAMMED"
 				}(Nt || (Nt = {})),
 				function(e) {
-					e.Highlighted = "HIGHLIGHTED", e.Unhighlighted = "UNHIGHLIGHTED", e.Archived = "ARCHIVED", e.Unarchived = "UNARCHIVED", e.ReportedToAdmins = "REPORTED_TO_ADMINS", e.Muted = "MUTED", e.Unmuted = "UNMUTED", e.Banned = "BANNED", e.Unbanned = "UNBANNED", e.Approved = "APPROVED", e.Disapproved = "DISAPPROVED", e.Filtered = "FILTERED", e.Unfiltered = "UNFILTERED"
+					e.Legal = "LEGAL"
 				}(Ct || (Ct = {})),
 				function(e) {
-					e.All = "ALL", e.New = "NEW", e.Inprogress = "INPROGRESS", e.Archived = "ARCHIVED", e.Appeals = "APPEALS", e.JoinRequests = "JOIN_REQUESTS", e.Highlighted = "HIGHLIGHTED", e.Mod = "MOD", e.Notifications = "NOTIFICATIONS", e.Inbox = "INBOX", e.Filtered = "FILTERED"
+					e.Highlighted = "HIGHLIGHTED", e.Unhighlighted = "UNHIGHLIGHTED", e.Archived = "ARCHIVED", e.Unarchived = "UNARCHIVED", e.ReportedToAdmins = "REPORTED_TO_ADMINS", e.Muted = "MUTED", e.Unmuted = "UNMUTED", e.Banned = "BANNED", e.Unbanned = "UNBANNED", e.Approved = "APPROVED", e.Disapproved = "DISAPPROVED", e.Filtered = "FILTERED", e.Unfiltered = "UNFILTERED"
 				}(At || (At = {})),
 				function(e) {
-					e.Relevance = "RELEVANCE", e.Recent = "RECENT", e.Unread = "UNREAD", e.Mod = "MOD", e.User = "USER"
+					e.All = "ALL", e.New = "NEW", e.Inprogress = "INPROGRESS", e.Archived = "ARCHIVED", e.Appeals = "APPEALS", e.JoinRequests = "JOIN_REQUESTS", e.Highlighted = "HIGHLIGHTED", e.Mod = "MOD", e.Notifications = "NOTIFICATIONS", e.Inbox = "INBOX", e.Filtered = "FILTERED"
 				}(jt || (jt = {})),
 				function(e) {
-					e.New = "NEW", e.Inprogress = "INPROGRESS", e.Archived = "ARCHIVED", e.Appeals = "APPEALS", e.JoinRequests = "JOIN_REQUESTS", e.Filtered = "FILTERED"
+					e.Relevance = "RELEVANCE", e.Recent = "RECENT", e.Unread = "UNREAD", e.Mod = "MOD", e.User = "USER"
 				}(Pt || (Pt = {})),
 				function(e) {
-					e.Internal = "INTERNAL", e.SrUser = "SR_USER", e.SrSr = "SR_SR"
+					e.New = "NEW", e.Inprogress = "INPROGRESS", e.Archived = "ARCHIVED", e.Appeals = "APPEALS", e.JoinRequests = "JOIN_REQUESTS", e.Filtered = "FILTERED"
 				}(Dt || (Dt = {})),
 				function(e) {
-					e.Unknown = "UNKNOWN", e.Moderator = "MODERATOR", e.ParticipantUser = "PARTICIPANT_USER", e.ParticipantSubreddit = "PARTICIPANT_SUBREDDIT"
+					e.Internal = "INTERNAL", e.SrUser = "SR_USER", e.SrSr = "SR_SR"
 				}(xt || (xt = {})),
 				function(e) {
-					e.Public = "PUBLIC", e.Private = "PRIVATE", e.Hidden = "HIDDEN"
+					e.Unknown = "UNKNOWN", e.Moderator = "MODERATOR", e.ParticipantUser = "PARTICIPANT_USER", e.ParticipantSubreddit = "PARTICIPANT_SUBREDDIT"
 				}(Lt || (Lt = {})),
 				function(e) {
-					e.None = "NONE", e.Nsfw = "NSFW"
+					e.Public = "PUBLIC", e.Private = "PRIVATE", e.Hidden = "HIDDEN"
 				}(Bt || (Bt = {})),
 				function(e) {
-					e.Undefined = "UNDEFINED", e.NotEligibleToClaim = "NOT_ELIGIBLE_TO_CLAIM", e.NoNftLeft = "NO_NFT_LEFT", e.AvailableToClaim = "AVAILABLE_TO_CLAIM", e.InProgress = "IN_PROGRESS", e.ClaimedSuccessfully = "CLAIMED_SUCCESSFULLY", e.ClaimFailed = "CLAIM_FAILED"
+					e.None = "NONE", e.Nsfw = "NSFW"
 				}(kt || (kt = {})),
 				function(e) {
-					e.Bell = "BELL", e.Live = "LIVE", e.Trophy = "TROPHY", e.Chat = "CHAT", e.Reply = "REPLY", e.SortRising = "SORT_RISING", e.SortLive = "SORT_LIVE", e.Comment = "COMMENT", e.SortTop = "SORT_TOP", e.Upvote = "UPVOTE", e.Heart = "HEART", e.Redditor = "REDDITOR", e.Award = "AWARD", e.NotifyAll = "NOTIFY_ALL", e.Lore = "LORE"
+					e.Undefined = "UNDEFINED", e.NotEligibleToClaim = "NOT_ELIGIBLE_TO_CLAIM", e.NoNftLeft = "NO_NFT_LEFT", e.AvailableToClaim = "AVAILABLE_TO_CLAIM", e.InProgress = "IN_PROGRESS", e.ClaimedSuccessfully = "CLAIMED_SUCCESSFULLY", e.ClaimFailed = "CLAIM_FAILED"
 				}(Mt || (Mt = {})),
 				function(e) {
-					e.Push = "PUSH", e.Email = "EMAIL"
+					e.Bell = "BELL", e.Live = "LIVE", e.Trophy = "TROPHY", e.Chat = "CHAT", e.Reply = "REPLY", e.SortRising = "SORT_RISING", e.SortLive = "SORT_LIVE", e.Comment = "COMMENT", e.SortTop = "SORT_TOP", e.Upvote = "UPVOTE", e.Heart = "HEART", e.Redditor = "REDDITOR", e.Award = "AWARD", e.NotifyAll = "NOTIFY_ALL", e.Lore = "LORE"
 				}(Ut || (Ut = {})),
 				function(e) {
-					e.ServiceError = "SERVICE_ERROR", e.UserNotLoggedIn = "USER_NOT_LOGGED_IN", e.UserNotAuthorized = "USER_NOT_AUTHORIZED", e.StageFull = "STAGE_FULL", e.AlreadyExists = "ALREADY_EXISTS", e.UserNotInRoom = "USER_NOT_IN_ROOM", e.TalkOwnerDemotionForbidden = "TALK_OWNER_DEMOTION_FORBIDDEN", e.UserAlreadyPromoted = "USER_ALREADY_PROMOTED", e.InvalidRole = "INVALID_ROLE"
+					e.Push = "PUSH", e.Email = "EMAIL"
 				}(Gt || (Gt = {})),
 				function(e) {
-					e.Onboarding = "ONBOARDING", e.ReonboardingBottomSheet = "REONBOARDING_BOTTOM_SHEET", e.ReonboardingInFeed = "REONBOARDING_IN_FEED", e.Browse = "BROWSE"
+					e.ServiceError = "SERVICE_ERROR", e.UserNotLoggedIn = "USER_NOT_LOGGED_IN", e.UserNotAuthorized = "USER_NOT_AUTHORIZED", e.StageFull = "STAGE_FULL", e.AlreadyExists = "ALREADY_EXISTS", e.UserNotInRoom = "USER_NOT_IN_ROOM", e.TalkOwnerDemotionForbidden = "TALK_OWNER_DEMOTION_FORBIDDEN", e.UserAlreadyPromoted = "USER_ALREADY_PROMOTED", e.InvalidRole = "INVALID_ROLE"
 				}(Vt || (Vt = {})),
 				function(e) {
-					e.NoPreference = "NO_PREFERENCE", e.Global = "GLOBAL", e.Local = "LOCAL"
+					e.Onboarding = "ONBOARDING", e.ReonboardingBottomSheet = "REONBOARDING_BOTTOM_SHEET", e.ReonboardingInFeed = "REONBOARDING_IN_FEED", e.Browse = "BROWSE"
 				}(qt || (qt = {})),
 				function(e) {
-					e.Query = "QUERY", e.Mutation = "MUTATION"
+					e.NoPreference = "NO_PREFERENCE", e.Global = "GLOBAL", e.Local = "LOCAL"
 				}(Ht || (Ht = {})),
 				function(e) {
-					e.Created = "CREATED", e.Prepared = "PREPARED", e.Paid = "PAID", e.Executed = "EXECUTED"
+					e.Query = "QUERY", e.Mutation = "MUTATION"
 				}(Wt || (Wt = {})),
 				function(e) {
-					e.Chronological = "CHRONOLOGICAL", e.LatestLastMessage = "LATEST_LAST_MESSAGE", e.ChannelNameAlphabetical = "CHANNEL_NAME_ALPHABETICAL", e.MetadataValueAlphabetical = "METADATA_VALUE_ALPHABETICAL"
+					e.Created = "CREATED", e.Prepared = "PREPARED", e.Paid = "PAID", e.Executed = "EXECUTED"
 				}(Kt || (Kt = {})),
 				function(e) {
-					e.MuxedMp4 = "MUXED_MP4", e.MuxedMp4Low = "MUXED_MP4_LOW", e.MuxedMp4Medium = "MUXED_MP4_MEDIUM", e.MuxedMp4High = "MUXED_MP4_HIGH"
+					e.Chronological = "CHRONOLOGICAL", e.LatestLastMessage = "LATEST_LAST_MESSAGE", e.ChannelNameAlphabetical = "CHANNEL_NAME_ALPHABETICAL", e.MetadataValueAlphabetical = "METADATA_VALUE_ALPHABETICAL"
 				}(zt || (zt = {})),
 				function(e) {
-					e.Internal = "INTERNAL", e.Stripe = "STRIPE", e.Braintree = "BRAINTREE", e.Paypal = "PAYPAL", e.RedditCoins = "REDDIT_COINS", e.Meta = "META", e.GoogleInapp = "GOOGLE_INAPP", e.AppleInapp = "APPLE_INAPP", e.Ledger = "LEDGER"
+					e.MuxedMp4 = "MUXED_MP4", e.MuxedMp4Low = "MUXED_MP4_LOW", e.MuxedMp4Medium = "MUXED_MP4_MEDIUM", e.MuxedMp4High = "MUXED_MP4_HIGH"
 				}(Yt || (Yt = {})),
 				function(e) {
-					e.New = "NEW", e.ActionRequired = "ACTION_REQUIRED", e.Pending = "PENDING", e.Paid = "PAID", e.Canceled = "CANCELED", e.Rejected = "REJECTED", e.Failed = "FAILED", e.Refunded = "REFUNDED"
+					e.Internal = "INTERNAL", e.Stripe = "STRIPE", e.Braintree = "BRAINTREE", e.Paypal = "PAYPAL", e.RedditCoins = "REDDIT_COINS", e.Meta = "META", e.GoogleInapp = "GOOGLE_INAPP", e.AppleInapp = "APPLE_INAPP", e.Ledger = "LEDGER"
 				}($t || ($t = {})),
 				function(e) {
-					e.Common = "COMMON", e.Rare = "RARE", e.Epic = "EPIC", e.Legendary = "LEGENDARY"
+					e.New = "NEW", e.ActionRequired = "ACTION_REQUIRED", e.Pending = "PENDING", e.Paid = "PAID", e.Canceled = "CANCELED", e.Rejected = "REJECTED", e.Failed = "FAILED", e.Refunded = "REFUNDED"
 				}(Qt || (Qt = {})),
 				function(e) {
-					e.DesktopApp = "DESKTOP_APP", e.IosApp = "IOS_APP", e.AndroidApp = "ANDROID_APP"
+					e.Common = "COMMON", e.Rare = "RARE", e.Epic = "EPIC", e.Legendary = "LEGENDARY"
 				}(Jt || (Jt = {})),
 				function(e) {
-					e.Left = "LEFT", e.Right = "RIGHT", e.Centered = "CENTERED"
+					e.DesktopApp = "DESKTOP_APP", e.IosApp = "IOS_APP", e.AndroidApp = "ANDROID_APP"
 				}(Xt || (Xt = {})),
 				function(e) {
-					e.None = "NONE", e.Distinguished = "DISTINGUISHED"
+					e.Left = "LEFT", e.Right = "RIGHT", e.Centered = "CENTERED"
 				}(Zt || (Zt = {})),
 				function(e) {
-					e.Link = "LINK", e.Richtext = "RICHTEXT", e.Markdown = "MARKDOWN"
+					e.None = "NONE", e.Distinguished = "DISTINGUISHED"
 				}(ei || (ei = {})),
 				function(e) {
-					e.All = "ALL", e.Hour = "HOUR", e.Day = "DAY", e.Week = "WEEK", e.Month = "MONTH", e.Year = "YEAR"
+					e.Link = "LINK", e.Richtext = "RICHTEXT", e.Markdown = "MARKDOWN"
 				}(ti || (ti = {})),
 				function(e) {
-					e.Hot = "HOT", e.New = "NEW", e.Top = "TOP", e.Controversial = "CONTROVERSIAL", e.Rising = "RISING", e.Best = "BEST"
+					e.All = "ALL", e.Hour = "HOUR", e.Day = "DAY", e.Week = "WEEK", e.Month = "MONTH", e.Year = "YEAR"
 				}(ii || (ii = {})),
 				function(e) {
-					e.Unfollowed = "UNFOLLOWED", e.Followed = "FOLLOWED"
+					e.Hot = "HOT", e.New = "NEW", e.Top = "TOP", e.Controversial = "CONTROVERSIAL", e.Rising = "RISING", e.Best = "BEST"
 				}(ni || (ni = {})),
 				function(e) {
-					e.Link = "LINK", e.Self = "SELF", e.Image = "IMAGE", e.Video = "VIDEO", e.HostedVideo = "HOSTED_VIDEO", e.RichVideo = "RICH_VIDEO", e.Poll = "POLL", e.Gallery = "GALLERY"
+					e.Unfollowed = "UNFOLLOWED", e.Followed = "FOLLOWED"
 				}(ri || (ri = {})),
 				function(e) {
-					e.Link = "LINK", e.Self = "SELF", e.Poll = "POLL"
+					e.Link = "LINK", e.Self = "SELF", e.Image = "IMAGE", e.Video = "VIDEO", e.HostedVideo = "HOSTED_VIDEO", e.RichVideo = "RICH_VIDEO", e.Poll = "POLL", e.Gallery = "GALLERY"
 				}(si || (si = {})),
 				function(e) {
-					e.Legacy = "LEGACY", e.LinkedPostsVersionA = "LINKED_POSTS_VERSION_A", e.LinkedPostsVersionSideRail = "LINKED_POSTS_VERSION_SIDE_RAIL"
+					e.Link = "LINK", e.Self = "SELF", e.Poll = "POLL"
 				}(oi || (oi = {})),
 				function(e) {
-					e.None = "NONE", e.Saved = "SAVED"
+					e.Legacy = "LEGACY", e.LinkedPostsVersionA = "LINKED_POSTS_VERSION_A", e.LinkedPostsVersionSideRail = "LINKED_POSTS_VERSION_SIDE_RAIL"
 				}(di || (di = {})),
 				function(e) {
-					e.Link = "LINK", e.Image = "IMAGE", e.Video = "VIDEO", e.Text = "TEXT", e.Spoiler = "SPOILER", e.Poll = "POLL", e.Gallery = "GALLERY", e.Talk = "TALK", e.Prediction = "PREDICTION", e.Videogif = "VIDEOGIF", e.Streaming = "STREAMING"
+					e.None = "NONE", e.Saved = "SAVED"
 				}(ai || (ai = {})),
 				function(e) {
-					e.Coins = "COINS", e.Tokens = "TOKENS", e.NotSupported = "NOT_SUPPORTED"
+					e.Link = "LINK", e.Image = "IMAGE", e.Video = "VIDEO", e.Text = "TEXT", e.Spoiler = "SPOILER", e.Poll = "POLL", e.Gallery = "GALLERY", e.Talk = "TALK", e.Prediction = "PREDICTION", e.Videogif = "VIDEOGIF", e.Streaming = "STREAMING"
 				}(li || (li = {})),
 				function(e) {
-					e.Off = "OFF", e.InFeed = "IN_FEED", e.SubredditHeader = "SUBREDDIT_HEADER"
+					e.Coins = "COINS", e.Tokens = "TOKENS", e.NotSupported = "NOT_SUPPORTED"
 				}(ui || (ui = {})),
 				function(e) {
-					e.Open = "OPEN", e.Closed = "CLOSED", e.Cancelled = "CANCELLED", e.Resolved = "RESOLVED", e.CancelInProgress = "CANCEL_IN_PROGRESS", e.ResolveInProgress = "RESOLVE_IN_PROGRESS"
+					e.Off = "OFF", e.InFeed = "IN_FEED", e.SubredditHeader = "SUBREDDIT_HEADER"
 				}(ci || (ci = {})),
 				function(e) {
-					e.Draft = "DRAFT", e.LiveInProgress = "LIVE_IN_PROGRESS", e.Live = "LIVE", e.Closed = "CLOSED"
+					e.Open = "OPEN", e.Closed = "CLOSED", e.Cancelled = "CANCELLED", e.Resolved = "RESOLVED", e.CancelInProgress = "CANCEL_IN_PROGRESS", e.ResolveInProgress = "RESOLVE_IN_PROGRESS"
 				}(_i || (_i = {})),
 				function(e) {
-					e.Gdpr = "GDPR", e.Ccpa = "CCPA", e.Other = "OTHER"
+					e.Draft = "DRAFT", e.LiveInProgress = "LIVE_IN_PROGRESS", e.Live = "LIVE", e.Closed = "CLOSED"
 				}(mi || (mi = {})),
 				function(e) {
-					e.Posts = "POSTS", e.Comments = "COMMENTS", e.Overview = "OVERVIEW", e.PostsSets = "POSTS_SETS", e.PostsSetsComments = "POSTS_SETS_COMMENTS"
+					e.Gdpr = "GDPR", e.Ccpa = "CCPA", e.Other = "OTHER"
 				}(pi || (pi = {})),
 				function(e) {
-					e.Hot = "HOT", e.New = "NEW", e.Top = "TOP", e.Controversial = "CONTROVERSIAL"
+					e.Posts = "POSTS", e.Comments = "COMMENTS", e.Overview = "OVERVIEW", e.PostsSets = "POSTS_SETS", e.PostsSetsComments = "POSTS_SETS_COMMENTS"
 				}(hi || (hi = {})),
 				function(e) {
-					e.SpotlightVideo = "SPOTLIGHT_VIDEO"
+					e.Hot = "HOT", e.New = "NEW", e.Top = "TOP", e.Controversial = "CONTROVERSIAL"
 				}(fi || (fi = {})),
 				function(e) {
-					e.Generic = "GENERIC", e.CoinSale = "COIN_SALE", e.CoinDeal = "COIN_DEAL"
+					e.SpotlightVideo = "SPOTLIGHT_VIDEO"
 				}(bi || (bi = {})),
 				function(e) {
-					e.Json = "JSON", e.Binary = "BINARY"
+					e.Generic = "GENERIC", e.CoinSale = "COIN_SALE", e.CoinDeal = "COIN_DEAL"
 				}(gi || (gi = {})),
 				function(e) {
-					e.All = "ALL", e.Public = "PUBLIC", e.Private = "PRIVATE"
+					e.Json = "JSON", e.Binary = "BINARY"
 				}(wi || (wi = {})),
 				function(e) {
-					e.ServiceError = "SERVICE_ERROR", e.UserNotLoggedIn = "USER_NOT_LOGGED_IN", e.UserNotAuthorized = "USER_NOT_AUTHORIZED", e.NotEligibleSpeaker = "NOT_ELIGIBLE_SPEAKER", e.UserRepeatedlyRemoved = "USER_REPEATEDLY_REMOVED", e.UserNegativeKarma = "USER_NEGATIVE_KARMA", e.UserAlreadySpeaker = "USER_ALREADY_SPEAKER"
+					e.All = "ALL", e.Public = "PUBLIC", e.Private = "PRIVATE"
 				}(vi || (vi = {})),
 				function(e) {
-					e.AllTime = "ALL_TIME", e.Monthly = "MONTHLY"
+					e.ServiceError = "SERVICE_ERROR", e.UserNotLoggedIn = "USER_NOT_LOGGED_IN", e.UserNotAuthorized = "USER_NOT_AUTHORIZED", e.NotEligibleSpeaker = "NOT_ELIGIBLE_SPEAKER", e.UserRepeatedlyRemoved = "USER_REPEATEDLY_REMOVED", e.UserNegativeKarma = "USER_NEGATIVE_KARMA", e.UserAlreadySpeaker = "USER_ALREADY_SPEAKER"
 				}(yi || (yi = {})),
 				function(e) {
-					e.SideBySide = "SIDE_BY_SIDE", e.Sequential = "SEQUENTIAL", e.Meme = "MEME"
+					e.AllTime = "ALL_TIME", e.Monthly = "MONTHLY"
 				}(Ei || (Ei = {})),
 				function(e) {
-					e.Home = "HOME", e.Community = "COMMUNITY", e.Popular = "POPULAR", e.DeepLink = "DEEP_LINK"
+					e.SideBySide = "SIDE_BY_SIDE", e.Sequential = "SEQUENTIAL", e.Meme = "MEME"
 				}(Si || (Si = {})),
 				function(e) {
-					e.NotAvailable = "NOT_AVAILABLE", e.Processing = "PROCESSING", e.Available = "AVAILABLE", e.Removed = "REMOVED"
+					e.Home = "HOME", e.Community = "COMMUNITY", e.Popular = "POPULAR", e.DeepLink = "DEEP_LINK"
 				}(Ti || (Ti = {})),
 				function(e) {
-					e.CopyrightTakedown = "COPYRIGHT_TAKEDOWN", e.ContentTakedown = "CONTENT_TAKEDOWN", e.Author = "AUTHOR", e.Moderator = "MODERATOR", e.CommunityOps = "COMMUNITY_OPS", e.AntiEvilOps = "ANTI_EVIL_OPS", e.Reddit = "REDDIT", e.Deleted = "DELETED", e.AutomodFiltered = "AUTOMOD_FILTERED"
+					e.NotAvailable = "NOT_AVAILABLE", e.Processing = "PROCESSING", e.Available = "AVAILABLE", e.Removed = "REMOVED"
 				}(Oi || (Oi = {})),
 				function(e) {
-					e.HarassmentAtMe = "HARASSMENT_AT_ME", e.HarassmentAtSomeoneElse = "HARASSMENT_AT_SOMEONE_ELSE", e.ViolenceAtMe = "VIOLENCE_AT_ME", e.ViolenceAtSomeoneElse = "VIOLENCE_AT_SOMEONE_ELSE", e.HateContent = "HATE_CONTENT", e.MinorSexualization = "MINOR_SEXUALIZATION", e.PiiAboutMe = "PII_ABOUT_ME", e.PiiAboutSomeoneElse = "PII_ABOUT_SOMEONE_ELSE", e.InvoluntaryPornSelf = "INVOLUNTARY_PORN_SELF", e.InvoluntaryPornOther = "INVOLUNTARY_PORN_OTHER", e.ProhibitedSales = "PROHIBITED_SALES", e.ReportButtonAbuse = "REPORT_BUTTON_ABUSE", e.ImpersonationSelf = "IMPERSONATION_SELF", e.ImpersonationOther = "IMPERSONATION_OTHER", e.CopyrightSelf = "COPYRIGHT_SELF", e.CopyrightOther = "COPYRIGHT_OTHER", e.TrademarkSelf = "TRADEMARK_SELF", e.TrademarkOther = "TRADEMARK_OTHER", e.Netzdg = "NETZDG", e.SelfHarm = "SELF_HARM", e.SpamLinkFarming = "SPAM_LINK_FARMING", e.SpamUnsolicitedPms = "SPAM_UNSOLICITED_PMS", e.SpamCommentFlooding = "SPAM_COMMENT_FLOODING", e.SpamMalware = "SPAM_MALWARE", e.SpamBots = "SPAM_BOTS", e.SpamOther = "SPAM_OTHER", e.BanEvasion = "BAN_EVASION", e.VoteManipulation = "VOTE_MANIPULATION", e.Misinformation = "MISINFORMATION", e.Custom = "CUSTOM", e.Subreddit = "SUBREDDIT", e.Spam = "SPAM", e.NsfwContent = "NSFW_CONTENT", e.IllegalOrDangerousBehavior = "ILLEGAL_OR_DANGEROUS_BEHAVIOR", e.OffensiveOrHoaxContent = "OFFENSIVE_OR_HOAX_CONTENT", e.UnderAge = "UNDER_AGE", e.ContemplatingSelfHarm = "CONTEMPLATING_SELF_HARM", e.CommittingSelfHarm = "COMMITTING_SELF_HARM", e.CommunityInterference = "COMMUNITY_INTERFERENCE", e.Vulgarity = "VULGARITY"
+					e.CopyrightTakedown = "COPYRIGHT_TAKEDOWN", e.ContentTakedown = "CONTENT_TAKEDOWN", e.Author = "AUTHOR", e.Moderator = "MODERATOR", e.CommunityOps = "COMMUNITY_OPS", e.AntiEvilOps = "ANTI_EVIL_OPS", e.Reddit = "REDDIT", e.Deleted = "DELETED", e.AutomodFiltered = "AUTOMOD_FILTERED"
 				}(Ii || (Ii = {})),
 				function(e) {
-					e.Created = "CREATED", e.Processing = "PROCESSING", e.Failed = "FAILED", e.Success = "SUCCESS"
+					e.HarassmentAtMe = "HARASSMENT_AT_ME", e.HarassmentAtSomeoneElse = "HARASSMENT_AT_SOMEONE_ELSE", e.ViolenceAtMe = "VIOLENCE_AT_ME", e.ViolenceAtSomeoneElse = "VIOLENCE_AT_SOMEONE_ELSE", e.HateContent = "HATE_CONTENT", e.MinorSexualization = "MINOR_SEXUALIZATION", e.PiiAboutMe = "PII_ABOUT_ME", e.PiiAboutSomeoneElse = "PII_ABOUT_SOMEONE_ELSE", e.InvoluntaryPornSelf = "INVOLUNTARY_PORN_SELF", e.InvoluntaryPornOther = "INVOLUNTARY_PORN_OTHER", e.ProhibitedSales = "PROHIBITED_SALES", e.ReportButtonAbuse = "REPORT_BUTTON_ABUSE", e.ImpersonationSelf = "IMPERSONATION_SELF", e.ImpersonationOther = "IMPERSONATION_OTHER", e.CopyrightSelf = "COPYRIGHT_SELF", e.CopyrightOther = "COPYRIGHT_OTHER", e.TrademarkSelf = "TRADEMARK_SELF", e.TrademarkOther = "TRADEMARK_OTHER", e.Netzdg = "NETZDG", e.SelfHarm = "SELF_HARM", e.SpamLinkFarming = "SPAM_LINK_FARMING", e.SpamUnsolicitedPms = "SPAM_UNSOLICITED_PMS", e.SpamCommentFlooding = "SPAM_COMMENT_FLOODING", e.SpamMalware = "SPAM_MALWARE", e.SpamBots = "SPAM_BOTS", e.SpamOther = "SPAM_OTHER", e.BanEvasion = "BAN_EVASION", e.VoteManipulation = "VOTE_MANIPULATION", e.Misinformation = "MISINFORMATION", e.Custom = "CUSTOM", e.Subreddit = "SUBREDDIT", e.Spam = "SPAM", e.NsfwContent = "NSFW_CONTENT", e.IllegalOrDangerousBehavior = "ILLEGAL_OR_DANGEROUS_BEHAVIOR", e.OffensiveOrHoaxContent = "OFFENSIVE_OR_HOAX_CONTENT", e.UnderAge = "UNDER_AGE", e.ContemplatingSelfHarm = "CONTEMPLATING_SELF_HARM", e.CommittingSelfHarm = "COMMITTING_SELF_HARM", e.CommunityInterference = "COMMUNITY_INTERFERENCE", e.Vulgarity = "VULGARITY"
 				}(Ri || (Ri = {})),
 				function(e) {
-					e.Relevance = "RELEVANCE", e.Top = "TOP", e.Comments = "COMMENTS", e.New = "NEW", e.Hot = "HOT"
+					e.Created = "CREATED", e.Processing = "PROCESSING", e.Failed = "FAILED", e.Success = "SUCCESS"
 				}(Fi || (Fi = {})),
 				function(e) {
-					e.Buyer = "Buyer", e.Receiver = "Receiver", e.Subreddit = "Subreddit", e.UserInSubreddit = "UserInSubreddit"
+					e.Relevance = "RELEVANCE", e.Top = "TOP", e.Comments = "COMMENTS", e.New = "NEW", e.Hot = "HOT"
 				}(Ni || (Ni = {})),
 				function(e) {
-					e.Username = "USERNAME", e.DisplayText = "DISPLAY_TEXT", e.Url = "URL"
+					e.Buyer = "Buyer", e.Receiver = "Receiver", e.Subreddit = "Subreddit", e.UserInSubreddit = "UserInSubreddit"
 				}(Ci || (Ci = {})),
 				function(e) {
-					e.Custom = "CUSTOM", e.Reddit = "REDDIT", e.Instagram = "INSTAGRAM", e.Twitter = "TWITTER", e.Tiktok = "TIKTOK", e.Twitch = "TWITCH", e.Facebook = "FACEBOOK", e.Youtube = "YOUTUBE", e.Tumblr = "TUMBLR", e.Spotify = "SPOTIFY", e.Soundcloud = "SOUNDCLOUD", e.Beacons = "BEACONS", e.Linktree = "LINKTREE", e.Discord = "DISCORD", e.Venmo = "VENMO", e.CashApp = "CASH_APP", e.Patreon = "PATREON", e.Kofi = "KOFI", e.Paypal = "PAYPAL", e.Cameo = "CAMEO", e.Onlyfans = "ONLYFANS", e.Substack = "SUBSTACK", e.Kickstarter = "KICKSTARTER", e.Indiegogo = "INDIEGOGO", e.BuyMeACoffee = "BUY_ME_A_COFFEE", e.Shopify = "SHOPIFY"
+					e.Username = "USERNAME", e.DisplayText = "DISPLAY_TEXT", e.Url = "URL"
 				}(Ai || (Ai = {})),
 				function(e) {
-					e.Reonboarding = "REONBOARDING"
+					e.Custom = "CUSTOM", e.Reddit = "REDDIT", e.Instagram = "INSTAGRAM", e.Twitter = "TWITTER", e.Tiktok = "TIKTOK", e.Twitch = "TWITCH", e.Facebook = "FACEBOOK", e.Youtube = "YOUTUBE", e.Tumblr = "TUMBLR", e.Spotify = "SPOTIFY", e.Soundcloud = "SOUNDCLOUD", e.Beacons = "BEACONS", e.Linktree = "LINKTREE", e.Discord = "DISCORD", e.Venmo = "VENMO", e.CashApp = "CASH_APP", e.Patreon = "PATREON", e.Kofi = "KOFI", e.Paypal = "PAYPAL", e.Cameo = "CAMEO", e.Onlyfans = "ONLYFANS", e.Substack = "SUBSTACK", e.Kickstarter = "KICKSTARTER", e.Indiegogo = "INDIEGOGO", e.BuyMeACoffee = "BUY_ME_A_COFFEE", e.Shopify = "SHOPIFY"
 				}(ji || (ji = {})),
 				function(e) {
-					e.None = "NONE", e.Spoiler = "SPOILER"
+					e.Reonboarding = "REONBOARDING"
 				}(Pi || (Pi = {})),
 				function(e) {
-					e.StayHome = "STAY_HOME", e.ChatInbox = "CHAT_INBOX"
+					e.None = "NONE", e.Spoiler = "SPOILER"
 				}(Di || (Di = {})),
 				function(e) {
-					e.None = "NONE", e.First = "FIRST", e.Second = "SECOND"
+					e.StayHome = "STAY_HOME", e.ChatInbox = "CHAT_INBOX"
 				}(xi || (xi = {})),
 				function(e) {
-					e.Available = "AVAILABLE", e.SoldOut = "SOLD_OUT", e.Expired = "EXPIRED"
+					e.None = "NONE", e.First = "FIRST", e.Second = "SECOND"
 				}(Li || (Li = {})),
 				function(e) {
-					e.Dash = "DASH", e.Hls = "HLS"
+					e.Available = "AVAILABLE", e.SoldOut = "SOLD_OUT", e.Expired = "EXPIRED"
 				}(Bi || (Bi = {})),
 				function(e) {
-					e.Link = "LINK", e.Self = "SELF", e.Any = "ANY"
+					e.Dash = "DASH", e.Hls = "HLS"
 				}(ki || (ki = {})),
 				function(e) {
-					e.SdVideo = "SD_VIDEO", e.HdVideo = "HD_VIDEO", e.CommentsWithGifs = "COMMENTS_WITH_GIFS", e.CommentsWithEmoji = "COMMENTS_WITH_EMOJI", e.PostsImageUpload = "POSTS_IMAGE_UPLOAD", e.AchievementFlairs = "ACHIEVEMENT_FLAIRS", e.CommunityAvatarGear = "COMMUNITY_AVATAR_GEAR"
+					e.Link = "LINK", e.Self = "SELF", e.Any = "ANY"
 				}(Mi || (Mi = {})),
 				function(e) {
-					e.Default = "DEFAULT", e.Members = "MEMBERS"
+					e.SdVideo = "SD_VIDEO", e.HdVideo = "HD_VIDEO", e.CommentsWithGifs = "COMMENTS_WITH_GIFS", e.CommentsWithEmoji = "COMMENTS_WITH_EMOJI", e.PostsImageUpload = "POSTS_IMAGE_UPLOAD", e.AchievementFlairs = "ACHIEVEMENT_FLAIRS", e.CommunityAvatarGear = "COMMUNITY_AVATAR_GEAR"
 				}(Ui || (Ui = {})),
 				function(e) {
-					e.Unknown = "UNKNOWN", e.Private = "PRIVATE", e.GoldOnly = "GOLD_ONLY", e.Banned = "BANNED", e.Quarantined = "QUARANTINED", e.Gated = "GATED"
+					e.Default = "DEFAULT", e.Members = "MEMBERS"
 				}(Gi || (Gi = {})),
 				function(e) {
-					e.Emotes = "EMOTES", e.Badges = "BADGES"
+					e.Unknown = "UNKNOWN", e.Private = "PRIVATE", e.GoldOnly = "GOLD_ONLY", e.Banned = "BANNED", e.Quarantined = "QUARANTINED", e.Gated = "GATED"
 				}(Vi || (Vi = {})),
 				function(e) {
-					e.Off = "OFF", e.Frequent = "FREQUENT", e.Low = "LOW"
+					e.Emotes = "EMOTES", e.Badges = "BADGES"
 				}(qi || (qi = {})),
 				function(e) {
-					e.G = "G", e.Pg = "PG", e.Pg13 = "PG13", e.R = "R", e.Nc17 = "NC17", e.NotShownInTheaters = "NOT_SHOWN_IN_THEATERS"
+					e.Off = "OFF", e.Frequent = "FREQUENT", e.Low = "LOW"
 				}(Hi || (Hi = {})),
 				function(e) {
-					e.Post = "POST", e.Comment = "COMMENT"
+					e.G = "G", e.Pg = "PG", e.Pg13 = "PG13", e.R = "R", e.Nc17 = "NC17", e.NotShownInTheaters = "NOT_SHOWN_IN_THEATERS"
 				}(Wi || (Wi = {})),
 				function(e) {
-					e.LinkAndComment = "LINK_AND_COMMENT", e.Link = "LINK", e.Comment = "COMMENT"
+					e.Post = "POST", e.Comment = "COMMENT"
 				}(Ki || (Ki = {})),
 				function(e) {
-					e.Public = "PUBLIC", e.Private = "PRIVATE", e.Restricted = "RESTRICTED", e.Archived = "ARCHIVED", e.EmployeesOnly = "EMPLOYEES_ONLY", e.GoldOnly = "GOLD_ONLY", e.GoldRestricted = "GOLD_RESTRICTED", e.User = "USER"
+					e.LinkAndComment = "LINK_AND_COMMENT", e.Link = "LINK", e.Comment = "COMMENT"
 				}(zi || (zi = {})),
 				function(e) {
-					e.PageNotFound = "PAGE_NOT_FOUND", e.PageNotCreated = "PAGE_NOT_CREATED", e.WikiDisabled = "WIKI_DISABLED", e.MayNotView = "MAY_NOT_VIEW", e.RestrictedPage = "RESTRICTED_PAGE", e.Unknown = "UNKNOWN", e.Valid = "VALID"
+					e.Public = "PUBLIC", e.Private = "PRIVATE", e.Restricted = "RESTRICTED", e.Archived = "ARCHIVED", e.EmployeesOnly = "EMPLOYEES_ONLY", e.GoldOnly = "GOLD_ONLY", e.GoldRestricted = "GOLD_RESTRICTED", e.User = "USER"
 				}(Yi || (Yi = {})),
 				function(e) {
-					e.None = "NONE", e.Subscribed = "SUBSCRIBED"
+					e.PageNotFound = "PAGE_NOT_FOUND", e.PageNotCreated = "PAGE_NOT_CREATED", e.WikiDisabled = "WIKI_DISABLED", e.MayNotView = "MAY_NOT_VIEW", e.RestrictedPage = "RESTRICTED_PAGE", e.Unknown = "UNKNOWN", e.Valid = "VALID"
 				}($i || ($i = {})),
 				function(e) {
-					e.All = "ALL", e.Super = "SUPER", e.Nonsuper = "NONSUPER"
+					e.None = "NONE", e.Subscribed = "SUBSCRIBED"
 				}(Qi || (Qi = {})),
 				function(e) {
-					e.Event = "EVENT", e.Collection = "COLLECTION", e.Classification = "CLASSIFICATION", e.PostClassification = "POST_CLASSIFICATION", e.SubredditClassification = "SUBREDDIT_CLASSIFICATION", e.CommentClassification = "COMMENT_CLASSIFICATION"
+					e.All = "ALL", e.Super = "SUPER", e.Nonsuper = "NONSUPER"
 				}(Ji || (Ji = {})),
 				function(e) {
-					e.None = "NONE", e.Tagged = "TAGGED"
+					e.Event = "EVENT", e.Collection = "COLLECTION", e.Classification = "CLASSIFICATION", e.PostClassification = "POST_CLASSIFICATION", e.SubredditClassification = "SUBREDDIT_CLASSIFICATION", e.CommentClassification = "COMMENT_CLASSIFICATION"
 				}(Xi || (Xi = {})),
 				function(e) {
-					e.Active = "ACTIVE", e.Inactive = "INACTIVE"
+					e.None = "NONE", e.Tagged = "TAGGED"
 				}(Zi || (Zi = {})),
 				function(e) {
-					e.Coins = "COINS", e.Tokens = "TOKENS"
+					e.Active = "ACTIVE", e.Inactive = "INACTIVE"
 				}(en || (en = {})),
 				function(e) {
-					e.Disabled = "DISABLED", e.Enabled = "ENABLED"
+					e.Coins = "COINS", e.Tokens = "TOKENS"
 				}(tn || (tn = {})),
 				function(e) {
-					e.Incomplete = "INCOMPLETE", e.Completed = "COMPLETED", e.Error = "ERROR"
+					e.Disabled = "DISABLED", e.Enabled = "ENABLED"
 				}(nn || (nn = {})),
 				function(e) {
-					e.AuthorSearchDefault = "AUTHOR_SEARCH_DEFAULT", e.CommentSearchDefault = "COMMENT_SEARCH_DEFAULT", e.CommunitySearchDefault = "COMMUNITY_SEARCH_DEFAULT", e.PostSearchDefault = "POST_SEARCH_DEFAULT", e.PostSearchTrending = "POST_SEARCH_TRENDING", e.PostSearchTrendingExtended = "POST_SEARCH_TRENDING_EXTENDED", e.PostSearchPromotedTrend = "POST_SEARCH_PROMOTED_TREND"
+					e.Incomplete = "INCOMPLETE", e.Completed = "COMPLETED", e.Error = "ERROR"
 				}(rn || (rn = {})),
 				function(e) {
-					e.Regular = "REGULAR", e.Manual = "MANUAL", e.Invisible = "INVISIBLE"
+					e.AuthorSearchDefault = "AUTHOR_SEARCH_DEFAULT", e.CommentSearchDefault = "COMMENT_SEARCH_DEFAULT", e.CommunitySearchDefault = "COMMUNITY_SEARCH_DEFAULT", e.PostSearchDefault = "POST_SEARCH_DEFAULT", e.PostSearchTrending = "POST_SEARCH_TRENDING", e.PostSearchTrendingExtended = "POST_SEARCH_TRENDING_EXTENDED", e.PostSearchPromotedTrend = "POST_SEARCH_PROMOTED_TREND"
 				}(sn || (sn = {})),
 				function(e) {
-					e.All = "ALL", e.UnreadMessage = "UNREAD_MESSAGE"
+					e.Regular = "REGULAR", e.Manual = "MANUAL", e.Invisible = "INVISIBLE"
 				}(on || (on = {})),
 				function(e) {
-					e.Add = "ADD", e.Remove = "REMOVE"
+					e.All = "ALL", e.UnreadMessage = "UNREAD_MESSAGE"
 				}(dn || (dn = {})),
 				function(e) {
-					e.NoPriorRequest = "NO_PRIOR_REQUEST", e.PriorRequestExpired = "PRIOR_REQUEST_EXPIRED", e.ExistingPendingRequest = "EXISTING_PENDING_REQUEST", e.RecentlyCompletedRequest = "RECENTLY_COMPLETED_REQUEST", e.EmployeeWhitelist = "EMPLOYEE_WHITELIST"
+					e.Add = "ADD", e.Remove = "REMOVE"
 				}(an || (an = {})),
 				function(e) {
-					e.None = "NONE", e.Operator = "OPERATOR"
+					e.NoPriorRequest = "NO_PRIOR_REQUEST", e.PriorRequestExpired = "PRIOR_REQUEST_EXPIRED", e.ExistingPendingRequest = "EXISTING_PENDING_REQUEST", e.RecentlyCompletedRequest = "RECENTLY_COMPLETED_REQUEST", e.EmployeeWhitelist = "EMPLOYEE_WHITELIST"
 				}(ln || (ln = {})),
 				function(e) {
-					e.ReonboardingInFeed = "REONBOARDING_IN_FEED", e.ReonboardingBottomSheet = "REONBOARDING_BOTTOM_SHEET", e.ViralCommunityXpromo = "VIRAL_COMMUNITY_XPROMO"
+					e.None = "NONE", e.Operator = "OPERATOR"
 				}(un || (un = {})),
 				function(e) {
-					e.Mp4 = "MP4", e.Gif = "GIF"
+					e.ReonboardingInFeed = "REONBOARDING_IN_FEED", e.ReonboardingBottomSheet = "REONBOARDING_BOTTOM_SHEET", e.ViralCommunityXpromo = "VIRAL_COMMUNITY_XPROMO"
 				}(cn || (cn = {})),
 				function(e) {
-					e.Home = "HOME", e.Popular = "POPULAR", e.Community = "COMMUNITY", e.DirectPlay = "DIRECT_PLAY", e.DirectPlayEntry = "DIRECT_PLAY_ENTRY", e.Discovery = "DISCOVERY", e.Discover = "DISCOVER", e.Search = "SEARCH", e.Notification = "NOTIFICATION", e.UserProfile = "USER_PROFILE", e.DeepLink = "DEEP_LINK", e.Chat = "CHAT", e.CommunityCarousel = "COMMUNITY_CAROUSEL", e.PopularCarousel = "POPULAR_CAROUSEL"
+					e.Mp4 = "MP4", e.Gif = "GIF"
 				}(_n || (_n = {})),
 				function(e) {
-					e.Show = "SHOW", e.Hide = "HIDE"
+					e.Home = "HOME", e.Popular = "POPULAR", e.Community = "COMMUNITY", e.DirectPlay = "DIRECT_PLAY", e.DirectPlayEntry = "DIRECT_PLAY_ENTRY", e.Discovery = "DISCOVERY", e.Discover = "DISCOVER", e.Search = "SEARCH", e.Notification = "NOTIFICATION", e.UserProfile = "USER_PROFILE", e.DeepLink = "DEEP_LINK", e.Chat = "CHAT", e.CommunityCarousel = "COMMUNITY_CAROUSEL", e.PopularCarousel = "POPULAR_CAROUSEL"
 				}(mn || (mn = {})),
 				function(e) {
-					e.None = "NONE", e.Up = "UP", e.Down = "DOWN"
+					e.Show = "SHOW", e.Hide = "HIDE"
 				}(pn || (pn = {})),
 				function(e) {
-					e.Favorite = "FAVORITE", e.Subscribed = "SUBSCRIBED", e.RecentlyVisited = "RECENTLY_VISITED", e.SubredditKarma = "SUBREDDIT_KARMA", e.TimeOnSub = "TIME_ON_SUB", e.FrequentlyPosted = "FREQUENTLY_POSTED", e.RecentlyPosted = "RECENTLY_POSTED"
+					e.None = "NONE", e.Up = "UP", e.Down = "DOWN"
 				}(hn || (hn = {})),
 				function(e) {
-					e.NoAds = "NO_ADS", e.HouseOnly = "HOUSE_ONLY", e.PromoAdult = "PROMO_ADULT", e.PromoAdultNsfw = "PROMO_ADULT_NSFW", e.PromoSpecified = "PROMO_SPECIFIED", e.PromoAll = "PROMO_ALL", e.AllAds = "ALL_ADS", e.SomeAds = "SOME_ADS"
+					e.Favorite = "FAVORITE", e.Subscribed = "SUBSCRIBED", e.RecentlyVisited = "RECENTLY_VISITED", e.SubredditKarma = "SUBREDDIT_KARMA", e.TimeOnSub = "TIME_ON_SUB", e.FrequentlyPosted = "FREQUENTLY_POSTED", e.RecentlyPosted = "RECENTLY_POSTED"
 				}(fn || (fn = {})),
 				function(e) {
-					e.Disabled = "DISABLED", e.Modonly = "MODONLY", e.Anyone = "ANYONE"
+					e.NoAds = "NO_ADS", e.HouseOnly = "HOUSE_ONLY", e.PromoAdult = "PROMO_ADULT", e.PromoAdultNsfw = "PROMO_ADULT_NSFW", e.PromoSpecified = "PROMO_SPECIFIED", e.PromoAll = "PROMO_ALL", e.AllAds = "ALL_ADS", e.SomeAds = "SOME_ADS"
 				}(bn || (bn = {})),
 				function(e) {
+					e.Disabled = "DISABLED", e.Modonly = "MODONLY", e.Anyone = "ANYONE"
+				}(gn || (gn = {})),
+				function(e) {
 					e.InheritSubredditPerms = "INHERIT_SUBREDDIT_PERMS", e.Contributors = "CONTRIBUTORS", e.Mods = "MODS"
-				}(gn || (gn = {}))
+				}(wn || (wn = {}))
 		},
 		"./src/reduxMiddleware/apiContext.ts": function(e, t, i) {
 			"use strict";
@@ -48300,4 +48303,4 @@
 		"ignored /drone/src/node_modules/readable-stream/lib/internal/streams util": function(e, t) {}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.87e97ea57e8a735230a1.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.f978abad2c4d3487d801.js.map
