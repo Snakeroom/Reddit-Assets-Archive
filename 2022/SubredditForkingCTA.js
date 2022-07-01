@@ -1,19 +1,7 @@
-// https://www.redditstatic.com/desktop2x/SubredditForkingCTA.4131f2d72f7b31a5bedc.js
-// Retrieved at 6/30/2022, 5:20:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditForkingCTA.8ae2a333ba36c0f7a29c.js
+// Retrieved at 7/1/2022, 5:40:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditForkingCTA"], {
-		"./node_modules/lodash/xorWith.js": function(t, _, e) {
-			var o = e("./node_modules/lodash/_arrayFilter.js"),
-				n = e("./node_modules/lodash/_baseRest.js"),
-				r = e("./node_modules/lodash/_baseXor.js"),
-				s = e("./node_modules/lodash/isArrayLikeObject.js"),
-				i = e("./node_modules/lodash/last.js"),
-				a = n((function(t) {
-					var _ = i(t);
-					return _ = "function" == typeof _ ? _ : void 0, r(o(t, s), void 0, _)
-				}));
-			t.exports = a
-		},
 		"./src/reddit/components/CreateCommunityButton/index.m.less": function(t, _, e) {
 			t.exports = {
 				StyledTooltip: "FIYolDqalszTnjjNfThfT",
@@ -26,23 +14,23 @@
 				n = e("./node_modules/react/index.js"),
 				r = e.n(n),
 				s = e("./node_modules/react-redux/es/index.js"),
-				i = e("./node_modules/reselect/es/index.js"),
-				a = e("./src/reddit/actions/modal.ts"),
+				a = e("./node_modules/reselect/es/index.js"),
+				i = e("./src/reddit/actions/modal.ts"),
 				d = e("./src/reddit/actions/tooltip.ts"),
 				c = e("./src/reddit/components/InfoTextTooltip/index.tsx"),
 				u = e("./src/reddit/components/TrackingHelper/index.tsx"),
 				l = e("./src/reddit/constants/modals.ts"),
 				m = e("./src/reddit/controls/Button/index.tsx"),
 				p = e("./src/reddit/helpers/trackers/subredditCreation.ts"),
-				f = e("./src/reddit/selectors/user.ts"),
-				b = e("./src/reddit/components/CreateCommunityButton/index.m.less"),
-				x = e.n(b),
+				b = e("./src/reddit/selectors/user.ts"),
+				x = e("./src/reddit/components/CreateCommunityButton/index.m.less"),
+				f = e.n(x),
 				y = e("./src/lib/lessComponent.tsx");
 			const h = "create-community-button",
-				g = y.a.wrapped(c.c, "StyledTooltip", x.a),
-				j = Object(i.c)({
-					userDoesNotHaveEnoughExpToCreateCommunity: t => !Object(f.pb)(t),
-					userIsSuspended: f.X
+				g = y.a.wrapped(c.c, "StyledTooltip", f.a),
+				j = Object(a.c)({
+					userDoesNotHaveEnoughExpToCreateCommunity: t => !Object(b.pb)(t),
+					userIsSuspended: b.X
 				});
 			_.a = Object(s.b)(j, (t, _) => {
 				let {
@@ -50,7 +38,7 @@
 				} = _;
 				return {
 					openCommunityCreation: _ => {
-						_(Object(p.c)(e)), t(Object(a.h)(l.a.SUBREDDIT_CREATION_MODAL_ID))
+						_(Object(p.c)(e)), t(Object(i.h)(l.a.SUBREDDIT_CREATION_MODAL_ID))
 					},
 					onShowTooltip: () => t(Object(d.f)({
 						tooltipId: h
@@ -63,8 +51,8 @@
 					eventSource: e,
 					onShowTooltip: n,
 					onHideTooltip: s,
-					openCommunityCreation: i,
-					sendEvent: a,
+					openCommunityCreation: a,
+					sendEvent: i,
 					userDoesNotHaveEnoughExpToCreateCommunity: d,
 					userIsSuspended: c,
 					onClick: u
@@ -73,7 +61,7 @@
 					className: _,
 					disabled: c || d,
 					onClick: t => {
-						u && u(t), i(a)
+						u && u(t), a(i)
 					},
 					onMouseEnter: n,
 					onMouseLeave: s,
@@ -150,11 +138,11 @@
 			})), e.d(_, "e", (function() {
 				return p
 			})), e.d(_, "n", (function() {
-				return f
-			})), e.d(_, "p", (function() {
 				return b
-			})), e.d(_, "o", (function() {
+			})), e.d(_, "p", (function() {
 				return x
+			})), e.d(_, "o", (function() {
+				return f
 			})), e.d(_, "f", (function() {
 				return y
 			})), e.d(_, "m", (function() {
@@ -180,20 +168,20 @@
 			})), e.d(_, "u", (function() {
 				return F
 			})), e.d(_, "r", (function() {
-				return I
-			})), e.d(_, "a", (function() {
-				return S
-			})), e.d(_, "s", (function() {
 				return A
-			})), e.d(_, "c", (function() {
+			})), e.d(_, "a", (function() {
 				return M
+			})), e.d(_, "s", (function() {
+				return S
+			})), e.d(_, "c", (function() {
+				return B
 			}));
 			var o = e("./src/lib/classNames/index.ts"),
 				n = e("./src/lib/lessComponent.tsx"),
 				r = e("./node_modules/react/index.js"),
 				s = e.n(r),
-				i = e("./src/reddit/controls/Button/index.tsx"),
-				a = e("./src/reddit/controls/Input/ModalInput.tsx"),
+				a = e("./src/reddit/controls/Button/index.tsx"),
+				i = e("./src/reddit/controls/Input/ModalInput.tsx"),
 				d = e("./src/reddit/icons/svgs/Close/index.tsx"),
 				c = e("./src/reddit/components/ModalStyledComponents/index.m.less"),
 				u = e.n(c);
@@ -209,13 +197,13 @@
 			}
 			const m = n.a.wrapped(d.a, "CloseIcon", u.a),
 				p = n.a.section("ModalBody", u.a),
-				f = n.a.section("ModalPostPreview", u.a),
-				b = n.a.p("ModalText", u.a),
-				x = n.a.div("ModalSmallText", u.a),
+				b = n.a.section("ModalPostPreview", u.a),
+				x = n.a.p("ModalText", u.a),
+				f = n.a.div("ModalSmallText", u.a),
 				y = n.a.div("ModalDescriptionText", u.a),
 				h = n.a.div("ModalMetaText", u.a),
 				g = n.a.label("ModalFormItem", u.a),
-				j = n.a.wrapped(a.a, "ModalInput", u.a),
+				j = n.a.wrapped(i.a, "ModalInput", u.a),
 				w = n.a.label("ModalInputLabel", u.a),
 				v = n.a.footer("ModalFooter", u.a),
 				k = n.a.header("ModalHeader", u.a),
@@ -223,18 +211,18 @@
 				q = n.a.div("ModalAnnotation", u.a),
 				T = n.a.div("ModalMain", u.a),
 				C = n.a.textarea("TextArea", u.a),
-				F = n.a.wrapped(i.l, "WarningButton", u.a),
-				I = n.a.wrapped(i.l, "PrimaryButton", u.a),
-				S = n.a.wrapped(i.o, "CancelButton", u.a),
-				A = n.a.wrapped(i.r, "RemoveButton", u.a),
-				M = t => {
+				F = n.a.wrapped(a.l, "WarningButton", u.a),
+				A = n.a.wrapped(a.l, "PrimaryButton", u.a),
+				M = n.a.wrapped(a.o, "CancelButton", u.a),
+				S = n.a.wrapped(a.r, "RemoveButton", u.a),
+				B = t => {
 					let {
 						className: _,
 						...e
 					} = t;
-					return s.a.createElement(i.t, l({
-						kind: i.b.Button,
-						priority: i.c.Primary,
+					return s.a.createElement(a.t, l({
+						kind: a.b.Button,
+						priority: a.c.Primary,
 						className: Object(o.a)(u.a.ConfirmButton, _)
 					}, e))
 				}
@@ -248,20 +236,20 @@
 				n = e("./node_modules/react/index.js"),
 				r = e.n(n),
 				s = e("./node_modules/react-redux/es/index.js"),
-				i = e("./src/reddit/actions/subredditCreation.ts"),
-				a = e("./src/reddit/components/ModalStyledComponents/index.tsx"),
+				a = e("./src/reddit/actions/subredditCreation.ts"),
+				i = e("./src/reddit/components/ModalStyledComponents/index.tsx"),
 				d = e("./src/reddit/controls/TextButton/index.tsx"),
 				c = e("./src/reddit/helpers/trackers/subredditForking.ts"),
 				u = e("./node_modules/reselect/es/index.js"),
 				l = e("./src/reddit/constants/experiments.ts"),
 				m = e("./src/reddit/helpers/chooseVariant/index.ts"),
 				p = e("./src/reddit/selectors/experiments/utils.ts");
-			const f = Object(u.a)(t => Object(m.c)(t, {
+			const b = Object(u.a)(t => Object(m.c)(t, {
 					experimentName: l.wf,
 					experimentEligibilitySelector: m.a
 				}), p.a),
-				b = Object(u.a)(f, t => t === l.Df.Enabled);
-			var x = e("./src/reddit/selectors/posts.ts"),
+				x = Object(u.a)(b, t => t === l.Df.Enabled);
+			var f = e("./src/reddit/selectors/posts.ts"),
 				y = e("./src/reddit/components/CreateCommunityButton/index.tsx"),
 				h = e("./src/reddit/components/TrackingHelper/index.tsx");
 			const g = {
@@ -1163,11 +1151,11 @@
 			var j = e("./src/reddit/components/SubredditForkingCTA/index.m.less"),
 				w = e.n(j);
 			const v = (t, _) => {
-					const e = Object(x.V)(t, {
+					const e = Object(f.V)(t, {
 						..._,
 						disallowProfile: !0
 					});
-					return !(!e || (null == g ? void 0 : g[e.id])) && !!b(t)
+					return !(!e || (null == g ? void 0 : g[e.id])) && !!x(t)
 				},
 				k = Object(s.b)(() => Object(u.c)({
 					shouldDisplayCTA: v
@@ -1177,7 +1165,7 @@
 					} = _;
 					return {
 						setInitialCrosspostId: () => {
-							t(Object(i.g)({
+							t(Object(a.g)({
 								crosspostId: e
 							}))
 						}
@@ -1188,18 +1176,18 @@
 					shouldDisplayCTA: _,
 					setInitialCrosspostId: e,
 					postId: s,
-					sendEvent: i,
+					sendEvent: a,
 					onClose: u
 				} = t;
 				Object(n.useEffect)(() => {
-					_ && i(Object(c.c)(s))
+					_ && a(Object(c.c)(s))
 				}, []);
 				return _ ? r.a.createElement("div", {
 					className: w.a.subreditForkingWrapper
 				}, r.a.createElement(d.a, {
 					className: w.a.closeButton,
 					onClick: u
-				}, r.a.createElement(a.b, null), r.a.createElement("div", null, o.fbt._("Close", null, {
+				}, r.a.createElement(i.b, null), r.a.createElement("div", null, o.fbt._("Close", null, {
 					hk: "4gbyAA"
 				}))), r.a.createElement("h4", null, o.fbt._("Should this post be its own community?", null, {
 					hk: "4BhmjF"
@@ -1208,7 +1196,7 @@
 				})), r.a.createElement(y.a, {
 					className: w.a.ctaButton,
 					onClick: () => {
-						e(), i(Object(c.a)(s))
+						e(), a(Object(c.a)(s))
 					},
 					eventSource: "subreddit_forking_cta"
 				})) : null
@@ -1273,8 +1261,8 @@
 				n = e.n(o),
 				r = e("./node_modules/react-redux/es/index.js"),
 				s = e("./src/lib/classNames/index.ts"),
-				i = e("./src/reddit/actions/modal.ts"),
-				a = e("./src/reddit/constants/keycodes.ts"),
+				a = e("./src/reddit/actions/modal.ts"),
+				i = e("./src/reddit/constants/keycodes.ts"),
 				d = e("./src/reddit/controls/Input/index.m.less"),
 				c = e.n(d);
 
@@ -1293,7 +1281,7 @@
 						let {
 							keyCode: _
 						} = t;
-						_ === a.a.Escape && this.props.closeModal()
+						_ === i.a.Escape && this.props.closeModal()
 					}
 				}
 				render() {
@@ -1309,7 +1297,7 @@
 				}
 			}
 			_.a = Object(r.b)(null, {
-				closeModal: i.f
+				closeModal: a.f
 			})(l)
 		},
 		"./src/reddit/controls/Input/index.m.less": function(t, _, e) {
@@ -1328,112 +1316,14 @@
 				n = e.n(o),
 				r = e("./src/lib/classNames/index.ts"),
 				s = e("./src/reddit/controls/TextButton/index.m.less"),
-				i = e.n(s);
+				a = e.n(s);
 			_.a = t => n.a.createElement("button", {
 				children: t.children,
-				className: Object(r.a)(i.a.textButton, t.className),
+				className: Object(r.a)(a.a.textButton, t.className),
 				disabled: t.disabled,
 				onClick: t.onClick
 			})
-		},
-		"./src/reddit/helpers/trackers/subredditCreation.ts": function(t, _, e) {
-			"use strict";
-			e.d(_, "c", (function() {
-				return r
-			})), e.d(_, "d", (function() {
-				return s
-			})), e.d(_, "b", (function() {
-				return i
-			})), e.d(_, "h", (function() {
-				return a
-			})), e.d(_, "a", (function() {
-				return d
-			})), e.d(_, "g", (function() {
-				return c
-			})), e.d(_, "e", (function() {
-				return u
-			})), e.d(_, "f", (function() {
-				return l
-			}));
-			var o = e("./src/reddit/helpers/correlationIdTracker.ts"),
-				n = e("./src/reddit/selectors/telemetry.ts");
-			const r = t => _ => ({
-					source: t,
-					noun: "create_community_button",
-					action: "click",
-					...n.n(_),
-					actionInfo: n.d(_, {
-						settingValue: _.user.account && _.user.account.isMod ? "existing_mod" : "new_mod"
-					}),
-					correlationId: Object(o.d)(o.a.SubredditCreation, !0)
-				}),
-				s = (t, _, e) => r => ({
-					source: "community_form",
-					noun: "save_community_button",
-					action: "click",
-					...n.n(r),
-					actionInfo: n.d(r, {
-						settingValue: t
-					}),
-					subreddit: {
-						id: e,
-						name: _.name,
-						publicDescription: _.publicDescription,
-						nsfw: _.over18,
-						accessType: _.type,
-						topicTagContents: _.allTags,
-						topicTagPrimaryId: _.primaryTagId
-					},
-					correlationId: Object(o.c)(o.a.SubredditCreation)
-				}),
-				i = () => t => ({
-					source: "community_form",
-					noun: "cancel",
-					action: "click",
-					...n.n(t),
-					actionInfo: n.d(t),
-					correlationId: Object(o.c)(o.a.SubredditCreation)
-				}),
-				a = (t, _) => e => ({
-					source: "community_form",
-					noun: "error_message",
-					action: "view",
-					...n.n(e),
-					actionInfo: n.d(e, {
-						reason: t,
-						settingValue: _
-					}),
-					correlationId: Object(o.c)(o.a.SubredditCreation)
-				}),
-				d = () => t => ({
-					source: "user_dropdown",
-					noun: "create_community",
-					action: "click",
-					...n.n(t),
-					actionInfo: n.d(t)
-				}),
-				c = () => t => ({
-					source: "community_first_post",
-					noun: "modal",
-					action: "view",
-					...n.n(t),
-					actionInfo: n.d(t)
-				}),
-				u = () => t => ({
-					source: "community_first_post",
-					noun: "modal",
-					action: "click",
-					...n.n(t),
-					actionInfo: n.d(t)
-				}),
-				l = () => t => ({
-					source: "community_first_post",
-					noun: "modal",
-					action: "dismiss",
-					...n.n(t),
-					actionInfo: n.d(t)
-				})
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditForkingCTA.4131f2d72f7b31a5bedc.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditForkingCTA.8ae2a333ba36c0f7a29c.js.map

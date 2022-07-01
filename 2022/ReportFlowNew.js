@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ReportFlowNew.148ea9740f4677f388ea.js
-// Retrieved at 6/30/2022, 11:00:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ReportFlowNew.dc83228d76697fcca73f.js
+// Retrieved at 7/1/2022, 5:40:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ReportFlowNew"], {
 		"./src/reddit/actions/blockedRedditors.ts": function(e, t, o) {
@@ -96,9 +96,9 @@
 				return i
 			}));
 			var r = o("./src/lib/loadableAction/index.ts");
-			const s = Object(r.a)(() => Promise.all([o.e("CommentsPage~Governance~Reddit~ReportFlow~Subreddit~reddit-components-BlankPost~reddit-components-Cl~5351df81"), o.e("Governance~ModListing~Reddit~ReportFlow~Subreddit"), o.e("ReportFlow")]).then(o.bind(null, "./src/reddit/actions/reportFlow/reportFlow.ts")).then(e => e.postOrCommentReported)),
-				n = Object(r.a)(() => Promise.all([o.e("CommentsPage~Governance~Reddit~ReportFlow~Subreddit~reddit-components-BlankPost~reddit-components-Cl~5351df81"), o.e("Governance~ModListing~Reddit~ReportFlow~Subreddit"), o.e("ReportFlow")]).then(o.bind(null, "./src/reddit/actions/reportFlow/reportFlow.ts")).then(e => e.reportFlowOpened)),
-				i = Object(r.a)(() => Promise.all([o.e("CommentsPage~Governance~Reddit~ReportFlow~Subreddit~reddit-components-BlankPost~reddit-components-Cl~5351df81"), o.e("Governance~ModListing~Reddit~ReportFlow~Subreddit"), o.e("ReportFlow")]).then(o.bind(null, "./src/reddit/actions/reportFlow/reportFlow.ts")).then(e => e.reportFlowClosed))
+			const s = Object(r.a)(() => Promise.all([o.e("Governance~Reddit~ReportFlow~Subreddit~reddit-components-BlankPost~reddit-components-ClassicPost~red~f3a55241"), o.e("Governance~ModListing~Reddit~ReportFlow~Subreddit"), o.e("ReportFlow")]).then(o.bind(null, "./src/reddit/actions/reportFlow/reportFlow.ts")).then(e => e.postOrCommentReported)),
+				n = Object(r.a)(() => Promise.all([o.e("Governance~Reddit~ReportFlow~Subreddit~reddit-components-BlankPost~reddit-components-ClassicPost~red~f3a55241"), o.e("Governance~ModListing~Reddit~ReportFlow~Subreddit"), o.e("ReportFlow")]).then(o.bind(null, "./src/reddit/actions/reportFlow/reportFlow.ts")).then(e => e.reportFlowOpened)),
+				i = Object(r.a)(() => Promise.all([o.e("Governance~Reddit~ReportFlow~Subreddit~reddit-components-BlankPost~reddit-components-ClassicPost~red~f3a55241"), o.e("Governance~ModListing~Reddit~ReportFlow~Subreddit"), o.e("ReportFlow")]).then(o.bind(null, "./src/reddit/actions/reportFlow/reportFlow.ts")).then(e => e.reportFlowClosed))
 		},
 		"./src/reddit/actions/userBlocks.ts": function(e, t, o) {
 			"use strict";
@@ -175,7 +175,7 @@
 							buttonAction: O(e)
 						}))
 					}
-				}, R = "USER_UNBLOCK__PENDING", w = "USER_UNBLOCK__SUCCESS", _ = "USER_UNBLOCK__FAILED", g = Object(s.a)(R), x = Object(s.a)(w), j = Object(s.a)(_), k = e => async (t, o, s) => {
+				}, R = "USER_UNBLOCK__PENDING", w = "USER_UNBLOCK__SUCCESS", _ = "USER_UNBLOCK__FAILED", x = Object(s.a)(R), j = Object(s.a)(w), g = Object(s.a)(_), k = e => async (t, o, s) => {
 					let {
 						apiContext: a
 					} = s;
@@ -183,9 +183,9 @@
 						p = Object(l.k)(u),
 						m = p ? p.id : void 0,
 						b = u.user.blocked.data.filter(t => t.name === e)[0];
-					m && (t(g({
+					m && (t(x({
 						name: e
-					})), (await Object(d.c)(a(), m, e)).ok ? (t(x({
+					})), (await Object(d.c)(a(), m, e)).ok ? (t(j({
 						name: e
 					})), b && b.id && t(Object(n.h)(b.id)), t(i.f({
 						kind: c.b.SuccessCommunity,
@@ -197,7 +197,7 @@
 						text: r.fbt._("An error has occured. Please try again later", null, {
 							hk: "2FpsLy"
 						})
-					})), t(j({
+					})), t(g({
 						name: e
 					}))))
 				}
@@ -288,14 +288,14 @@
 			var R = o("./src/reddit/components/FormBuilder/async.tsx"),
 				w = o("./src/reddit/actions/userBlocks.ts"),
 				_ = o("./src/lib/makeGqlRequest/index.ts"),
-				g = o("./src/redditGQL/operations/ReportComment.json");
-			const x = (e, t) => Object(_.a)(e, {
-				...g,
+				x = o("./src/redditGQL/operations/ReportComment.json");
+			const j = (e, t) => Object(_.a)(e, {
+				...x,
 				variables: t
 			});
-			var j = o("./src/redditGQL/operations/ReportLiveStream.json");
+			var g = o("./src/redditGQL/operations/ReportLiveStream.json");
 			const k = (e, t) => Object(_.a)(e, {
-				...j,
+				...g,
 				variables: t
 			});
 			var v = o("./src/reddit/endpoints/messages/index.ts"),
@@ -518,7 +518,7 @@
 									commentId: a,
 									...b
 								};
-								h = () => x(r(), {
+								h = () => j(r(), {
 									input: t
 								});
 								break;
@@ -751,11 +751,11 @@
 			})), o.d(t, "b", (function() {
 				return _
 			})), o.d(t, "c", (function() {
-				return g
-			})), o.d(t, "g", (function() {
 				return x
-			})), o.d(t, "a", (function() {
+			})), o.d(t, "g", (function() {
 				return j
+			})), o.d(t, "a", (function() {
+				return g
 			}));
 			var r = o("./node_modules/fbt/lib/FbtPublic.js"),
 				s = o("./node_modules/uuid/v4.js"),
@@ -800,7 +800,7 @@
 						...o,
 						subredditId: t.id
 					}
-				}), g = () => n()(), x = e => e.data.createAudioRoomOrError || e.data.createAudioRoomOnProfile, j = {
+				}), x = () => n()(), j = e => e.data.createAudioRoomOrError || e.data.createAudioRoomOnProfile, g = {
 					[h.f.ServiceError]: r.fbt._("Something's wrong with the talk service right now. Check back later.", null, {
 						hk: "3XqPJS"
 					}),
@@ -873,12 +873,12 @@
 					const R = new RegExp(m),
 						w = new RegExp(b),
 						_ = [];
-					let g;
+					let x;
 					if (e.subredditName) {
 						const t = e.subredditName.trim();
 						if (w.test(t)) {
 							const e = w.exec(t);
-							e && e.length > 1 && (g = e[1])
+							e && e.length > 1 && (x = e[1])
 						}
 					}
 					if (e.usernames && e.usernames.length)
@@ -890,16 +890,16 @@
 							}
 						}
 					const {
-						reason: x
+						reason: j
 					} = e;
 					return {
 						reason: "site_reason_selected",
-						site_reason: x.reasonText,
+						site_reason: j.reasonText,
 						additional_info: e.additionalInfo ? e.additionalInfo.join(",") : void 0,
 						custom_text: e.customText,
 						modmail_conv_id: f,
 						modmail_msg_id: O,
-						sr_name: g,
+						sr_name: x,
 						thing_id: h,
 						usernames: _.length ? _.join(",") : void 0
 					}
@@ -1006,4 +1006,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ReportFlowNew.148ea9740f4677f388ea.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ReportFlowNew.dc83228d76697fcca73f.js.map

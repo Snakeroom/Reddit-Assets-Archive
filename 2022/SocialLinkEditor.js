@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SocialLinkEditor.2f775cb5070b4b4fb0d2.js
-// Retrieved at 6/30/2022, 11:00:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SocialLinkEditor.8941bfbd1f04c5fd5cbb.js
+// Retrieved at 7/1/2022, 5:40:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SocialLinkEditor"], {
 		"./src/reddit/components/SocialLinks/SocialLinkEditor.tsx": function(e, t, n) {
@@ -8,44 +8,44 @@
 			var a = n("./node_modules/react/index.js"),
 				s = n.n(a),
 				r = n("./node_modules/react-redux/es/index.js"),
-				c = n("./src/lib/constants/icons.ts"),
-				i = n("./src/reddit/actions/socialLinks/index.ts"),
-				l = n("./src/reddit/components/ModalStyledComponents/index.tsx"),
+				l = n("./src/lib/constants/icons.ts"),
+				c = n("./src/reddit/actions/socialLinks/index.ts"),
+				i = n("./src/reddit/components/ModalStyledComponents/index.tsx"),
 				d = n("./src/reddit/components/StructuredStyles/StyledComponents/inputs.ts"),
 				o = n("./src/reddit/controls/Button/index.tsx"),
 				u = n("./src/reddit/helpers/localStorage/index.ts"),
 				p = n("./src/reddit/helpers/trackers/socialLinks.ts"),
-				h = n("./src/reddit/hooks/useTracking.ts"),
-				m = n("./src/reddit/icons/fonts/index.tsx"),
+				m = n("./src/reddit/hooks/useTracking.ts"),
+				h = n("./src/reddit/icons/fonts/index.tsx"),
 				x = n("./src/reddit/layout/threeCol/ExpandCenter/index.tsx"),
-				C = n("./src/reddit/components/SocialLinks/constants.ts"),
-				b = n("./src/reddit/components/SocialLinks/helpers.ts"),
-				f = n("./src/reddit/components/SocialLinks/SocialLinkButton.tsx"),
+				b = n("./src/reddit/components/SocialLinks/constants.ts"),
+				S = n("./src/reddit/components/SocialLinks/helpers.ts"),
+				C = n("./src/reddit/components/SocialLinks/SocialLinkButton.tsx"),
 				k = n("./src/reddit/components/SocialLinks/AddSocialLinkModal.m.less"),
-				S = n.n(k);
+				f = n.n(k);
 			const {
-				fbt: L
+				fbt: y
 			} = n("./node_modules/fbt/lib/FbtPublic.js");
 			t.default = e => {
 				let {
 					closeModal: t,
 					currentSocialLinkOption: n,
 					existingSocialLink: k,
-					onClickBackButton: y,
+					onClickBackButton: _,
 					socialLinkPosition: O,
-					username: v
+					username: E
 				} = e;
-				const [_, g] = Object(a.useState)(), [E, w] = Object(a.useState)(), [j, B] = Object(a.useState)();
+				const [L, v] = Object(a.useState)(), [j, g] = Object(a.useState)(), [A, B] = Object(a.useState)();
 				Object(a.useEffect)(() => {
 					if (k) {
 						let e = k.handle;
-						e && n.placeholderDisplayText === C.i && (e = "@" + e), g(e || void 0), w(k.title), B(k.outboundUrl)
+						e && n.placeholderDisplayText === b.i && (e = "@" + e), v(e || void 0), g(k.title), B(k.outboundUrl)
 					}
 				}, [n.placeholderDisplayText, k]);
-				const [A, N] = Object(a.useState)(""), R = Object(r.d)(), U = Object(h.a)(), M = Object(a.useCallback)(async e => {
-					const a = Object(b.e)(_),
-						s = n.placeholderUrl ? E : a,
-						r = n.placeholderUrl ? j : void 0;
+				const [N, R] = Object(a.useState)(""), w = Object(r.d)(), U = Object(m.a)(), T = Object(a.useCallback)(async e => {
+					const a = Object(S.e)(L),
+						s = n.placeholderUrl ? j : a,
+						r = n.placeholderUrl ? A : void 0;
 					U(Object(p.d)({
 						socialLinkType: e,
 						outboundUrl: r,
@@ -57,49 +57,49 @@
 						const e = {
 							socialLinkOption: n,
 							rawHandle: a,
-							rawTitle: E,
-							url: j
+							rawTitle: j,
+							url: A
 						};
-						k ? await R(Object(i.d)(k.id, v, e)) : await R(Object(i.a)(v, e)), Object(u.Rb)(), t()
-					} catch (c) {
-						N(c.message)
+						k ? await w(Object(c.d)(k.id, E, e)) : await w(Object(c.a)(E, e)), Object(u.Rb)(), t()
+					} catch (l) {
+						R(l.message)
 					}
-				}, [t, R, k, n, U, O, v, _, E, j]), T = Object(a.useCallback)((e, t, n) => {
-					A && N("");
+				}, [t, w, k, n, U, O, E, L, j, A]), M = Object(a.useCallback)((e, t, n) => {
+					N && R("");
 					let a = e.currentTarget.value;
 					!n || (null == n ? void 0 : n.startsWith(a)) || a.startsWith(n) || (a = n + a), t(a)
-				}, [A]);
-				return s.a.createElement(l.e, null, s.a.createElement(l.i, null, s.a.createElement(x.a, null, s.a.createElement("button", {
-					onClick: y
-				}, s.a.createElement(m.a, {
-					name: c.a.back,
-					className: S.a.modalIconButton
+				}, [N]);
+				return s.a.createElement(i.e, null, s.a.createElement(i.i, null, s.a.createElement(x.a, null, s.a.createElement("button", {
+					onClick: _
+				}, s.a.createElement(h.a, {
+					name: l.a.back,
+					className: f.a.modalIconButton
 				})), s.a.createElement("div", {
-					className: S.a.modalTitle
-				}, L._("Add Social Link", null, {
+					className: f.a.modalTitle
+				}, y._("Add Social Link", null, {
 					hk: "NBrvK"
 				})), s.a.createElement(o.t, {
-					onClick: () => M(n.socialLinkType),
-					disabled: n.placeholderUrl ? !E || !j : !_
-				}, L._("Save", null, {
+					onClick: () => T(n.socialLinkType),
+					disabled: n.placeholderUrl ? !j || !A : !L
+				}, y._("Save", null, {
 					hk: "7wJsb"
-				})))), s.a.createElement(l.l, {
-					className: S.a.modalMain
-				}, s.a.createElement(f.a, {
+				})))), s.a.createElement(i.l, {
+					className: f.a.modalMain
+				}, s.a.createElement(C.a, {
 					socialLinkType: n.socialLinkType
 				}, n.name), s.a.createElement(d.c, {
-					className: S.a.input,
+					className: f.a.input,
 					placeholder: n.placeholderDisplayText,
-					onChange: e => T(e, n.placeholderUrl ? w : g, n.placeholderDisplayText === C.i ? "@" : void 0),
-					value: (n.placeholderUrl ? E : _) || ""
+					onChange: e => M(e, n.placeholderUrl ? g : v, n.placeholderDisplayText === b.i ? "@" : void 0),
+					value: (n.placeholderUrl ? j : L) || ""
 				}), n.placeholderUrl && s.a.createElement(d.c, {
-					className: S.a.input,
+					className: f.a.input,
 					placeholder: n.placeholderUrl,
-					onChange: e => T(e, B, "https://"),
-					value: j || ""
+					onChange: e => M(e, B, "https://"),
+					value: A || ""
 				}), s.a.createElement("div", {
-					className: S.a.errorMessage
-				}, A)))
+					className: f.a.errorMessage
+				}, N)))
 			}
 		},
 		"./src/reddit/components/StructuredStyles/StyledComponents/inputs.m.less": function(e, t, n) {
@@ -132,100 +132,37 @@
 			})), n.d(t, "c", (function() {
 				return p
 			})), n.d(t, "f", (function() {
-				return h
-			})), n.d(t, "e", (function() {
 				return m
+			})), n.d(t, "e", (function() {
+				return h
 			})), n.d(t, "a", (function() {
 				return x
 			})), n.d(t, "b", (function() {
-				return C
-			})), n.d(t, "i", (function() {
 				return b
+			})), n.d(t, "i", (function() {
+				return S
 			})), n.d(t, "h", (function() {
-				return f
+				return C
 			})), n.d(t, "g", (function() {
 				return k
 			}));
 			var a = n("./src/lib/lessComponent.tsx"),
 				s = n("./src/reddit/controls/Input/ModalInput.tsx"),
 				r = n("./src/reddit/icons/svgs/Checkbox/index.tsx"),
-				c = n("./src/reddit/icons/svgs/CheckboxSelected/index.tsx"),
-				i = n("./src/reddit/icons/svgs/RadioOff/index.tsx"),
-				l = n("./src/reddit/icons/svgs/RadioOn/index.tsx"),
+				l = n("./src/reddit/icons/svgs/CheckboxSelected/index.tsx"),
+				c = n("./src/reddit/icons/svgs/RadioOff/index.tsx"),
+				i = n("./src/reddit/icons/svgs/RadioOn/index.tsx"),
 				d = n("./src/reddit/components/StructuredStyles/StyledComponents/inputs.m.less"),
 				o = n.n(d);
 			const u = a.a.wrapped(s.a, "ModalInput", o.a),
 				p = a.a.input("Input", o.a),
-				h = a.a.wrapped(l.a, "RadioOn", o.a),
-				m = a.a.wrapped(i.a, "RadioOff", o.a),
+				m = a.a.wrapped(i.a, "RadioOn", o.a),
+				h = a.a.wrapped(c.a, "RadioOff", o.a),
 				x = a.a.wrapped(r.a, "Checkbox", o.a),
-				C = a.a.wrapped(c.a, "CheckboxSelected", o.a),
-				b = a.a.textarea("Textarea", o.a),
-				f = a.a.label("StyledLabel", o.a),
+				b = a.a.wrapped(l.a, "CheckboxSelected", o.a),
+				S = a.a.textarea("Textarea", o.a),
+				C = a.a.label("StyledLabel", o.a),
 				k = a.a.input("StyledFileInput", o.a)
-		},
-		"./src/reddit/icons/svgs/Checkbox/index.m.less": function(e, t, n) {
-			e.exports = {
-				checkbox: "_1vmueUAOJJg7fhS7wxztWa"
-			}
-		},
-		"./src/reddit/icons/svgs/Checkbox/index.tsx": function(e, t, n) {
-			"use strict";
-			var a = n("./node_modules/react/index.js"),
-				s = n.n(a),
-				r = n("./src/lib/classNames/index.ts"),
-				c = n("./src/reddit/icons/svgs/Checkbox/index.m.less"),
-				i = n.n(c);
-
-			function l() {
-				return (l = Object.assign || function(e) {
-					for (var t = 1; t < arguments.length; t++) {
-						var n = arguments[t];
-						for (var a in n) Object.prototype.hasOwnProperty.call(n, a) && (e[a] = n[a])
-					}
-					return e
-				}).apply(this, arguments)
-			}
-			t.a = e => {
-				let {
-					className: t,
-					...n
-				} = e;
-				return s.a.createElement("svg", l({
-					xmlns: "http://www.w3.org/2000/svg",
-					width: "20",
-					height: "20",
-					viewBox: "0 0 20 20",
-					className: Object(r.a)(i.a.checkbox, t)
-				}, n), s.a.createElement("path", {
-					fill: "inherit",
-					d: "M1.66666667,3.34755033 L1.66666667,16.6524497 C1.66666667,17.5781756 2.42112363,18.3333333 3.34755033,18.3333333 L16.6524497,18.3333333 C17.5781756,18.3333333 18.3333333,17.5788764 18.3333333,16.6524497 L18.3333333,3.34755033 C18.3333333,2.42182438 17.5788764,1.66666667 16.6524497,1.66666667 L3.34755033,1.66666667 C2.42182438,1.66666667 1.66666667,2.42112363 1.66666667,3.34755033 Z M0,3.34755033 C0,1.49874933 1.5032506,0 3.34755033,0 L16.6524497,0 C18.5012507,0 20,1.5032506 20,3.34755033 L20,16.6524497 C20,18.5012507 18.4967494,20 16.6524497,20 L3.34755033,20 C1.49874933,20 0,18.4967494 0,16.6524497 L0,3.34755033 Z"
-				}))
-			}
-		},
-		"./src/reddit/icons/svgs/CheckboxSelected/index.tsx": function(e, t, n) {
-			"use strict";
-			var a = n("./node_modules/react/index.js"),
-				s = n.n(a);
-
-			function r() {
-				return (r = Object.assign || function(e) {
-					for (var t = 1; t < arguments.length; t++) {
-						var n = arguments[t];
-						for (var a in n) Object.prototype.hasOwnProperty.call(n, a) && (e[a] = n[a])
-					}
-					return e
-				}).apply(this, arguments)
-			}
-			t.a = e => s.a.createElement("svg", r({
-				xmlns: "http://www.w3.org/2000/svg",
-				width: "20",
-				height: "20",
-				viewBox: "0 0 20 20"
-			}, e), s.a.createElement("path", {
-				fill: "inherit",
-				d: "M0,3.34755033 C0,1.49874933 1.5032506,0 3.34755033,0 L16.6524497,0 C18.5012507,0 20,1.5032506 20,3.34755033 L20,16.6524497 C20,18.5012507 18.4967494,20 16.6524497,20 L3.34755033,20 C1.49874933,20 0,18.4967494 0,16.6524497 L0,3.34755033 Z M8.50575,15.1995 L15.797625,7.907625 C16.25325,7.452625 16.25325,6.71325 15.797625,6.25825 C15.342,5.802625 14.602625,5.802625 14.147625,6.25825 L7.7295,12.676375 L5.635125,10.327625 C5.20575,9.846375 4.46825,9.805125 3.987625,10.23325 C3.506375,10.662625 3.4645,11.400125 3.89325,11.88075 L6.810125,15.151375 C7.023875,15.39075 7.327,15.531375 7.647625,15.54075 C7.658875,15.54075 7.6695,15.541375 7.68075,15.541375 C7.990125,15.541375 8.287,15.41825 8.50575,15.1995 Z"
-			}))
 		},
 		"./src/reddit/layout/threeCol/ExpandCenter/index.m.less": function(e, t, n) {
 			e.exports = {
@@ -239,20 +176,20 @@
 			var a = n("./node_modules/react/index.js"),
 				s = n.n(a),
 				r = n("./src/higherOrderComponents/warnOnChildrenCount/index.tsx"),
-				c = n("./src/lib/classNames/index.ts"),
-				i = n("./src/reddit/layout/threeCol/ExpandCenter/index.m.less"),
-				l = n.n(i);
+				l = n("./src/lib/classNames/index.ts"),
+				c = n("./src/reddit/layout/threeCol/ExpandCenter/index.m.less"),
+				i = n.n(c);
 			t.a = Object(r.a)(e => s.a.createElement("div", {
-				className: Object(c.a)(l.a.expandedCenterContainer, e.className)
+				className: Object(l.a)(i.a.expandedCenterContainer, e.className)
 			}, s.a.createElement("div", {
-				className: l.a.leftAndRight,
+				className: i.a.leftAndRight,
 				style: {
 					flexBasis: e.widthLeft
 				}
 			}, Array.isArray(e.children) && e.children[0]), s.a.createElement("div", {
-				className: l.a.center
+				className: i.a.center
 			}, Array.isArray(e.children) && e.children[1]), s.a.createElement("div", {
-				className: l.a.leftAndRight,
+				className: i.a.leftAndRight,
 				style: {
 					flexBasis: e.widthRight
 				}
@@ -260,4 +197,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SocialLinkEditor.2f775cb5070b4b4fb0d2.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SocialLinkEditor.8941bfbd1f04c5fd5cbb.js.map
