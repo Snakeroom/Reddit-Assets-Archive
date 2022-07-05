@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModerationPages.ce4af3cbff785e01d7af.js
-// Retrieved at 6/30/2022, 5:20:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModerationPages.f81535923432d28e8cc3.js
+// Retrieved at 7/5/2022, 1:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModerationPages"], {
 		"./src/higherOrderComponents/withImageUploads.tsx": function(e, t, s) {
@@ -2533,7 +2533,7 @@
 				let p = d.displayText;
 				d.displayText.length >= 40 && (p = d.displayText.slice(0, 40 - "...".length) + "...");
 				const b = Object(r.a)(c.a.leftSideContent, {
-						[c.a.ctaExperimentNoPadding]: "card" !== e.ctaExperimentDesign,
+						[c.a.ctaExperimentNoPadding]: e.ctaExperimentDesign && "card" !== e.ctaExperimentDesign,
 						[c.a.ctaExperimentPadded]: "card" === e.ctaExperimentDesign
 					}),
 					h = Object(r.a)(c.a.displayUrl, {
@@ -25424,4 +25424,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.ce4af3cbff785e01d7af.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.f81535923432d28e8cc3.js.map
