@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Reddit.86ed985ea90337324c3b.js
-// Retrieved at 7/5/2022, 3:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Reddit.9c46ced89d0ebac59ac6.js
+// Retrieved at 7/5/2022, 7:40:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Reddit"], {
 		"./assets/fonts/BentonSans/font.less": function(e, t, n) {},
@@ -17232,7 +17232,7 @@
 				r = n("./src/lib/constants/index.ts"),
 				o = n("./src/reddit/actions/pages/avatar.ts");
 			const a = "/avatar",
-				i = [a, `${a}/:username`, `${a}/:username/:avatarId`],
+				i = [a, `${a}/:username`, `${a}/:username/:avatarId`, `${a}/nft/:chainId/:contractAddress/:tokenId`],
 				c = {
 					action: o.a,
 					chunk: r.r.AVATAR,
@@ -19466,4 +19466,4 @@
 		["./src/reddit/index.tsx", "runtime~Reddit", "vendors~Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePo~5f1ac562", "vendors~Governance~ModListing~Reddit~Subreddit", "vendors~Chat~Governance~Reddit", "vendors~Reddit", "Governance~Reddit~ReportFlow~Subreddit~reddit-components-BlankPost~reddit-components-ClassicPost~red~f3a55241", "PostCreation~Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~r~4c415e24", "Governance~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compo~bd4baca2", "Governance~ModListing~Reddit~ReportFlow~Subreddit", "Chat~Governance~Reddit", "Governance~Reddit~Subreddit", "Governance~Reddit", "Reddit~StandalonePostPage", "AuthorHovercard~Reddit"]
 	]
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit.86ed985ea90337324c3b.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit.9c46ced89d0ebac59ac6.js.map
