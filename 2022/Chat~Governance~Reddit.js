@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.6848c16ea965104e6868.js
-// Retrieved at 7/5/2022, 9:40:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.8250b7b09663a1d8f644.js
+// Retrieved at 7/5/2022, 10:10:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Chat~Governance~Reddit"], {
 		"./assets/fonts/IBMPlexSans/font.less": function(e, t, i) {},
@@ -3467,11 +3467,11 @@
 				apiPassThroughHeaders: Object(r.e)({}.API_PASS_THROUGH_HEADERS || ""),
 				appName: {}.APP_NAME || "desktop2x",
 				assetPath: "https://www.redditstatic.com/desktop2x",
-				buildNumber: Object(r.c)("167853"),
+				buildNumber: Object(r.c)("167854"),
 				chatHelpUrl: {}.CHAT_HELP_URL || "https://reddit.zendesk.com/hc/en-us/sections/360008805652-Chat",
 				hlsVersion: "hls 0.12.4",
 				dashVersion: "dash 3.2.0",
-				buildTimestamp: Object(r.b)("1657026781"),
+				buildTimestamp: Object(r.b)("1657028441"),
 				cookieDomain: ".reddit.com",
 				giphyApiKey: "k2kwyMA6VeyHM6ZRT96OXDGaersnx73Z",
 				mediaUrl: "https://www.redditmedia.com",
@@ -6080,14 +6080,14 @@
 					}))
 				},
 				Y = (e, t, i) => {
-					console.log("%cStarting Raven %crelease %c26b6a2de02d537dc062862d5462edf5d1bcf42a3-production" + ` %cpublic url %c${y.a.sentryClientPublicURL}`, "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
+					console.log("%cStarting Raven %crelease %c9a42e647790f96d38412c97a49c31b5e01821642-production" + ` %cpublic url %c${y.a.sentryClientPublicURL}`, "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
 					let n = [];
 					n = [new RegExp(`^${y.a.assetPath}`, "i")];
 					o.e({
 						attachStacktrace: !0,
 						dsn: y.a.sentryClientPublicURL,
 						whitelistUrls: n,
-						release: "26b6a2de02d537dc062862d5462edf5d1bcf42a3-production",
+						release: "9a42e647790f96d38412c97a49c31b5e01821642-production",
 						environment: "production",
 						ignoreErrors: ["$ is not defined"],
 						integrations: [...Object(L.d)(), new d.Integrations.Breadcrumbs({
@@ -6613,7 +6613,7 @@
 							settings: r,
 							statusCode: s,
 							type: o,
-							releaseClient: "26b6a2de02d537dc062862d5462edf5d1bcf42a3-production",
+							releaseClient: "9a42e647790f96d38412c97a49c31b5e01821642-production",
 							appName: t.statsAppName,
 							error: n ? JSON.parse(Object(l.a)(n)) : void 0
 						},
@@ -45276,10 +45276,10 @@
 			var n = i("./node_modules/thrift/lib/nodejs/lib/thrift/browser.js"),
 				r = n.Thrift,
 				s = (n.Q, i("./node_modules/node-int64/Int64.js"), i("./src/telemetry/eventSchemas/typedefs_types.js"), e.exports = {}, e.exports.Marketplace = function(e) {
-					this.listing_id = null, this.group_id = null, this.item_id = null, this.item_name = null, this.item_token_id = null, this.item_token_contract_address = null, this.item_rarity = null, this.listing_price = null, this.listing_currency = null, this.listing_quantity = null, this.wallet_address = null, this.nft_status = null, this.link_type = null, e && (void 0 !== e.listing_id && null !== e.listing_id && (this.listing_id = e.listing_id), void 0 !== e.group_id && null !== e.group_id && (this.group_id = e.group_id), void 0 !== e.item_id && null !== e.item_id && (this.item_id = e.item_id), void 0 !== e.item_name && null !== e.item_name && (this.item_name = e.item_name), void 0 !== e.item_token_id && null !== e.item_token_id && (this.item_token_id = e.item_token_id), void 0 !== e.item_token_contract_address && null !== e.item_token_contract_address && (this.item_token_contract_address = e.item_token_contract_address), void 0 !== e.item_rarity && null !== e.item_rarity && (this.item_rarity = e.item_rarity), void 0 !== e.listing_price && null !== e.listing_price && (this.listing_price = e.listing_price), void 0 !== e.listing_currency && null !== e.listing_currency && (this.listing_currency = e.listing_currency), void 0 !== e.listing_quantity && null !== e.listing_quantity && (this.listing_quantity = e.listing_quantity), void 0 !== e.wallet_address && null !== e.wallet_address && (this.wallet_address = e.wallet_address), void 0 !== e.nft_status && null !== e.nft_status && (this.nft_status = e.nft_status), void 0 !== e.link_type && null !== e.link_type && (this.link_type = e.link_type))
+					this.listing_id = null, this.group_id = null, this.item_id = null, this.item_name = null, this.item_token_id = null, this.item_token_contract_address = null, this.item_rarity = null, this.listing_price = null, this.listing_currency = null, this.listing_quantity = null, this.wallet_address = null, this.nft_status = null, this.link_type = null, this.link_url = null, e && (void 0 !== e.listing_id && null !== e.listing_id && (this.listing_id = e.listing_id), void 0 !== e.group_id && null !== e.group_id && (this.group_id = e.group_id), void 0 !== e.item_id && null !== e.item_id && (this.item_id = e.item_id), void 0 !== e.item_name && null !== e.item_name && (this.item_name = e.item_name), void 0 !== e.item_token_id && null !== e.item_token_id && (this.item_token_id = e.item_token_id), void 0 !== e.item_token_contract_address && null !== e.item_token_contract_address && (this.item_token_contract_address = e.item_token_contract_address), void 0 !== e.item_rarity && null !== e.item_rarity && (this.item_rarity = e.item_rarity), void 0 !== e.listing_price && null !== e.listing_price && (this.listing_price = e.listing_price), void 0 !== e.listing_currency && null !== e.listing_currency && (this.listing_currency = e.listing_currency), void 0 !== e.listing_quantity && null !== e.listing_quantity && (this.listing_quantity = e.listing_quantity), void 0 !== e.wallet_address && null !== e.wallet_address && (this.wallet_address = e.wallet_address), void 0 !== e.nft_status && null !== e.nft_status && (this.nft_status = e.nft_status), void 0 !== e.link_type && null !== e.link_type && (this.link_type = e.link_type), void 0 !== e.link_url && null !== e.link_url && (this.link_url = e.link_url))
 				});
 			s.prototype = {}, s.prototype.write = function(e) {
-				e.writeStructBegin("Marketplace"), null !== this.listing_id && void 0 !== this.listing_id && (e.writeFieldBegin("listing_id", r.Type.STRING, 1), e.writeString(this.listing_id), e.writeFieldEnd()), null !== this.group_id && void 0 !== this.group_id && (e.writeFieldBegin("group_id", r.Type.STRING, 2), e.writeString(this.group_id), e.writeFieldEnd()), null !== this.item_id && void 0 !== this.item_id && (e.writeFieldBegin("item_id", r.Type.STRING, 3), e.writeString(this.item_id), e.writeFieldEnd()), null !== this.item_name && void 0 !== this.item_name && (e.writeFieldBegin("item_name", r.Type.STRING, 4), e.writeString(this.item_name), e.writeFieldEnd()), null !== this.item_token_id && void 0 !== this.item_token_id && (e.writeFieldBegin("item_token_id", r.Type.STRING, 5), e.writeString(this.item_token_id), e.writeFieldEnd()), null !== this.item_token_contract_address && void 0 !== this.item_token_contract_address && (e.writeFieldBegin("item_token_contract_address", r.Type.STRING, 6), e.writeString(this.item_token_contract_address), e.writeFieldEnd()), null !== this.item_rarity && void 0 !== this.item_rarity && (e.writeFieldBegin("item_rarity", r.Type.STRING, 7), e.writeString(this.item_rarity), e.writeFieldEnd()), null !== this.listing_price && void 0 !== this.listing_price && (e.writeFieldBegin("listing_price", r.Type.I64, 8), e.writeI64(this.listing_price), e.writeFieldEnd()), null !== this.listing_currency && void 0 !== this.listing_currency && (e.writeFieldBegin("listing_currency", r.Type.STRING, 9), e.writeString(this.listing_currency), e.writeFieldEnd()), null !== this.listing_quantity && void 0 !== this.listing_quantity && (e.writeFieldBegin("listing_quantity", r.Type.I64, 10), e.writeI64(this.listing_quantity), e.writeFieldEnd()), null !== this.wallet_address && void 0 !== this.wallet_address && (e.writeFieldBegin("wallet_address", r.Type.STRING, 11), e.writeString(this.wallet_address), e.writeFieldEnd()), null !== this.nft_status && void 0 !== this.nft_status && (e.writeFieldBegin("nft_status", r.Type.STRING, 12), e.writeString(this.nft_status), e.writeFieldEnd()), null !== this.link_type && void 0 !== this.link_type && (e.writeFieldBegin("link_type", r.Type.STRING, 13), e.writeString(this.link_type), e.writeFieldEnd()), e.writeFieldStop(), e.writeStructEnd()
+				e.writeStructBegin("Marketplace"), null !== this.listing_id && void 0 !== this.listing_id && (e.writeFieldBegin("listing_id", r.Type.STRING, 1), e.writeString(this.listing_id), e.writeFieldEnd()), null !== this.group_id && void 0 !== this.group_id && (e.writeFieldBegin("group_id", r.Type.STRING, 2), e.writeString(this.group_id), e.writeFieldEnd()), null !== this.item_id && void 0 !== this.item_id && (e.writeFieldBegin("item_id", r.Type.STRING, 3), e.writeString(this.item_id), e.writeFieldEnd()), null !== this.item_name && void 0 !== this.item_name && (e.writeFieldBegin("item_name", r.Type.STRING, 4), e.writeString(this.item_name), e.writeFieldEnd()), null !== this.item_token_id && void 0 !== this.item_token_id && (e.writeFieldBegin("item_token_id", r.Type.STRING, 5), e.writeString(this.item_token_id), e.writeFieldEnd()), null !== this.item_token_contract_address && void 0 !== this.item_token_contract_address && (e.writeFieldBegin("item_token_contract_address", r.Type.STRING, 6), e.writeString(this.item_token_contract_address), e.writeFieldEnd()), null !== this.item_rarity && void 0 !== this.item_rarity && (e.writeFieldBegin("item_rarity", r.Type.STRING, 7), e.writeString(this.item_rarity), e.writeFieldEnd()), null !== this.listing_price && void 0 !== this.listing_price && (e.writeFieldBegin("listing_price", r.Type.I64, 8), e.writeI64(this.listing_price), e.writeFieldEnd()), null !== this.listing_currency && void 0 !== this.listing_currency && (e.writeFieldBegin("listing_currency", r.Type.STRING, 9), e.writeString(this.listing_currency), e.writeFieldEnd()), null !== this.listing_quantity && void 0 !== this.listing_quantity && (e.writeFieldBegin("listing_quantity", r.Type.I64, 10), e.writeI64(this.listing_quantity), e.writeFieldEnd()), null !== this.wallet_address && void 0 !== this.wallet_address && (e.writeFieldBegin("wallet_address", r.Type.STRING, 11), e.writeString(this.wallet_address), e.writeFieldEnd()), null !== this.nft_status && void 0 !== this.nft_status && (e.writeFieldBegin("nft_status", r.Type.STRING, 12), e.writeString(this.nft_status), e.writeFieldEnd()), null !== this.link_type && void 0 !== this.link_type && (e.writeFieldBegin("link_type", r.Type.STRING, 13), e.writeString(this.link_type), e.writeFieldEnd()), null !== this.link_url && void 0 !== this.link_url && (e.writeFieldBegin("link_url", r.Type.STRING, 14), e.writeString(this.link_url), e.writeFieldEnd()), e.writeFieldStop(), e.writeStructEnd()
 			}
 		},
 		"./src/telemetry/eventSchemas/metaflair_types.js": function(e, t, i) {
@@ -47315,7 +47315,8 @@
 				listing_quantity: e.listingQuantity,
 				wallet_address: e.walletAddress,
 				nft_status: e.nftStatus,
-				link_type: e.linkType
+				link_type: e.linkType,
+				link_url: e.linkUrl
 			});
 			var pt = i("./src/telemetry/models/Media.ts"),
 				ht = i("./src/telemetry/eventSchemas/metasearch_types.js");
@@ -48171,4 +48172,4 @@
 		"ignored /drone/src/node_modules/readable-stream/lib/internal/streams util": function(e, t) {}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.6848c16ea965104e6868.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.8250b7b09663a1d8f644.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/1.9b8dea51f1306d4b6b03.js
-// Retrieved at 6/27/2022, 10:20:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/1.1f82869fcae513b86fc2.js
+// Retrieved at 7/5/2022, 10:10:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	[1], {
 		"./node_modules/@reddit/crypto/react/config/index.es.js": function(e, t, n) {
@@ -48,7 +48,7 @@
 			})), n.d(t, "b", (function() {
 				return Qt
 			})), n.d(t, "c", (function() {
-				return Ht
+				return Wt
 			})), n.d(t, "d", (function() {
 				return tn
 			}));
@@ -667,12 +667,12 @@
 			function X(e, t) {
 				if (!Boolean(e)) throw new Error(null != t ? t : "Unexpected invariant triggered.")
 			}
-			const H = /\r\n|[\n\r]/g;
+			const W = /\r\n|[\n\r]/g;
 
-			function W(e, t) {
+			function H(e, t) {
 				let n = 0,
 					i = 1;
-				for (const r of e.body.matchAll(H)) {
+				for (const r of e.body.matchAll(W)) {
 					if ("number" == typeof r.index || X(!1), r.index >= t) break;
 					n = r.index + r[0].length, i += 1
 				}
@@ -739,7 +739,7 @@
 					}(t);
 					super(e), this.name = "GraphQLError", this.path = null != c ? c : void 0, this.originalError = null != u ? u : void 0, this.nodes = te(Array.isArray(o) ? o : o ? [o] : void 0);
 					const p = te(null === (n = this.nodes) || void 0 === n ? void 0 : n.map(e => e.loc).filter(e => null != e));
-					this.source = null != s ? s : null == p ? void 0 : null === (i = p[0]) || void 0 === i ? void 0 : i.source, this.positions = null != a ? a : null == p ? void 0 : p.map(e => e.start), this.locations = a && s ? a.map(e => W(s, e)) : null == p ? void 0 : p.map(e => W(e.source, e.start));
+					this.source = null != s ? s : null == p ? void 0 : null === (i = p[0]) || void 0 === i ? void 0 : i.source, this.positions = null != a ? a : null == p ? void 0 : p.map(e => e.start), this.locations = a && s ? a.map(e => H(s, e)) : null == p ? void 0 : p.map(e => H(e.source, e.start));
 					const f = "object" == typeof(d = null == u ? void 0 : u.extensions) && null !== d ? null == u ? void 0 : u.extensions : void 0;
 					var d;
 					this.extensions = null !== (r = null != l ? l : f) && void 0 !== r ? r : Object.create(null), Object.defineProperties(this, {
@@ -778,7 +778,7 @@
 				toString() {
 					let e = this.message;
 					if (this.nodes)
-						for (const n of this.nodes) n.loc && (e += "\n\n" + Z((t = n.loc).source, W(t.source, t.start)));
+						for (const n of this.nodes) n.loc && (e += "\n\n" + Z((t = n.loc).source, H(t.source, t.start)));
 					else if (this.source && this.locations)
 						for (const n of this.locations) e += "\n\n" + Z(this.source, n);
 					var t;
@@ -2036,12 +2036,12 @@
 				}
 			}
 
-			function He() {
+			function We() {
 				for (var e = arguments, t = arguments[0], n = 1, i = arguments.length; n < i; n++) t = e[n](t);
 				return t
 			}
 
-			function We(e) {
+			function He(e) {
 				function t(e) {
 					"number" == typeof e ? (n.forEach(Ue), n = []) : e.tag ? (r = !1, n.forEach((function(t) {
 						t(e)
@@ -2462,7 +2462,7 @@
 					return "query" === e.kind && "network-only" !== t && ("cache-only" === t || i.has(e.key))
 				}
 				return function(e) {
-					var a = We(e),
+					var a = He(e),
 						c = $e((function(e) {
 							var t = i.get(e.key),
 								r = ht({}, t, {
@@ -2545,7 +2545,7 @@
 				var t = e.forward;
 				return e.dispatchDebug,
 					function(e) {
-						var n = We(e);
+						var n = He(e);
 						return Je([Me((function(e) {
 							var t = e.key,
 								i = Ge((function(e) {
@@ -2624,7 +2624,7 @@
 							})
 						}))(t)), "mutation" === e.kind ? Ze(1)(Xe((function() {
 							return u(e)
-						}))(t)) : We(Qe((function() {
+						}))(t)) : He(Qe((function() {
 							n.delete(e.key), i.delete(e.key);
 							for (var t = r.length - 1; t >= 0; t--) r[t].key === e.key && r.splice(t, 1);
 							u(St("teardown", e, e.context))
@@ -2739,7 +2739,7 @@
 							}
 						}),
 						f = Lt,
-						d = We(function(e) {
+						d = He(function(e) {
 							return function(t) {
 								var n = t.client;
 								return t.dispatchDebug, e.reduceRight((function(e, t) {
@@ -2833,7 +2833,7 @@
 			}
 			var Xt = !1;
 
-			function Ht(e) {
+			function Wt(e) {
 				var t, n, r = Yt(),
 					o = function(e) {
 						if (!e._react) {
@@ -2961,7 +2961,7 @@
 					}))
 				}), [r, o, a, s, u, e.requestPolicy, e.context])]
 			}
-			var Wt = {
+			var Ht = {
 				claimfreenft: "49a8b3b2cde3",
 				confirmeconpayment: "c292b130ce51",
 				createeconpayment: "786cafb9a545",
@@ -2978,9 +2978,9 @@
 				forward: e,
 				dispatchDebug: t
 			}) => t => {
-				const n = We(t);
-				return Je([He(n, Ge(e => "query" === e.kind || "mutation" === e.kind), Me(e => (function(e, t, n) {
-					const i = He(n, Ge(e => "teardown" === e.kind && e.key === t.key)),
+				const n = He(t);
+				return Je([We(n, Ge(e => "query" === e.kind || "mutation" === e.kind), Me(e => (function(e, t, n) {
+					const i = We(n, Ge(e => "teardown" === e.kind && e.key === t.key)),
 						r = Et(t),
 						o = r.operationName ? r.operationName.toLowerCase() : "",
 						s = function(e, t, n) {
@@ -3001,8 +3001,8 @@
 							method: "POST",
 							body: JSON.stringify(s)
 						});
-					return He(xt(t, a, c), Me(Ye), et(i))
-				})(Wt, e, n))), He(n, Ge(e => "query" !== e.kind && "mutation" !== e.kind), e)])
+					return We(xt(t, a, c), Me(Ye), et(i))
+				})(Ht, e, n))), We(n, Ge(e => "query" !== e.kind && "mutation" !== e.kind), e)])
 			};
 			const en = "urqlClient";
 
@@ -3112,32 +3112,36 @@
 		"./node_modules/@reddit/crypto/react/ui/index.es.js": function(e, t, n) {
 			"use strict";
 			n.d(t, "a", (function() {
-				return g
+				return m
 			})), n.d(t, "b", (function() {
-				return Di
+				return y
 			})), n.d(t, "c", (function() {
-				return k
+				return N
 			})), n.d(t, "d", (function() {
-				return K
+				return ri
 			})), n.d(t, "e", (function() {
-				return Si
+				return pi
 			})), n.d(t, "f", (function() {
-				return J
+				return Ci
 			})), n.d(t, "g", (function() {
-				return Ri
+				return di
 			})), n.d(t, "h", (function() {
-				return $
+				return hi
 			})), n.d(t, "i", (function() {
-				return V
+				return yi
 			})), n.d(t, "j", (function() {
-				return j
+				return gi
+			})), n.d(t, "k", (function() {
+				return Di
+			})), n.d(t, "l", (function() {
+				return Pi
 			}));
 			var i = n("./node_modules/react/index.js"),
 				r = n.n(i),
-				o = n("./node_modules/react-dom/index.js"),
-				s = n.n(o),
-				a = n("./node_modules/@reddit/crypto/react/ui/index.es.js"),
-				c = n("./node_modules/@reddit/crypto/react/config/index.es.js"),
+				o = n("./node_modules/@reddit/crypto/react/config/index.es.js"),
+				s = n("./node_modules/@reddit/crypto/react/ui/index.es.js"),
+				a = n("./node_modules/react-dom/index.js"),
+				c = n.n(a),
 				u = Object.defineProperty,
 				l = Object.getOwnPropertySymbols,
 				p = Object.prototype.hasOwnProperty,
@@ -3160,10 +3164,33 @@
 					if (null != e && l)
 						for (var i of l(e)) t.indexOf(i) < 0 && f.call(e, i) && (n[i] = e[i]);
 					return n
-				},
-				m = {
-					exports: {}
 				};
+			const m = ({
+					video: e,
+					webp: t,
+					img: n,
+					className: i
+				}) => r.a.createElement("picture", {
+					className: i
+				}, r.a.createElement("source", {
+					srcSet: e,
+					type: "video/mp4"
+				}), r.a.createElement("source", {
+					srcSet: t,
+					type: "image/webp"
+				}), r.a.createElement("img", {
+					src: n
+				})),
+				y = {
+					ProtectYourWallet: "https://www.redditstatic.com/crypto-assets/v2/protect-your-wallet-98e685dd66.webp",
+					TransferToVault: "https://www.redditstatic.com/crypto-assets/v2/transfer-to-vault-f7c1844644.webp",
+					WalletCreationComplete: "https://www.redditstatic.com/crypto-assets/v2/wallet-creation-complete-5f8358dae0.webp",
+					WalletCreationInProgress: "https://www.redditstatic.com/crypto-assets/v2/wallet-creation-in-progress-19d4d0584a.webp",
+					WalletCreationStart: "https://www.redditstatic.com/crypto-assets/v2/wallet-creation-start-06f9f1c819.webp"
+				};
+			var E = {
+				exports: {}
+			};
 			! function(e) {
 				! function() {
 					var t = {}.hasOwnProperty;
@@ -3189,9 +3216,9 @@
 					}
 					e.exports ? (n.default = n, e.exports = n) : window.classNames = n
 				}()
-			}(m);
-			var y = m.exports;
-			var E = {
+			}(E);
+			var g = E.exports;
+			var _ = {
 				button: "_button_q04oj_42",
 				loadingButton: "_loadingButton_q04oj_52",
 				greyTheme: "_greyTheme_q04oj_57",
@@ -3204,7 +3231,7 @@
 				blueInvertedTheme: "_blueInvertedTheme_q04oj_98",
 				disabled: "_disabled_q04oj_112"
 			};
-			const g = ({
+			const N = ({
 				className: e,
 				theme: t = "white",
 				disabled: n,
@@ -3214,76 +3241,2304 @@
 			}) => r.a.createElement("button", {
 				disabled: n,
 				onClick: n ? void 0 : i,
-				className: y(E.button, e, _(t), {
-					[E.loadingButton]: s,
-					[E.disabled]: n
+				className: g(_.button, e, T(t), {
+					[_.loadingButton]: s,
+					[_.disabled]: n
 				})
-			}, s ? r.a.createElement($, {
-				className: E.loadingImage
+			}, s ? r.a.createElement(gi, {
+				className: _.loadingImage
 			}) : r.a.createElement(r.a.Fragment, null, o));
 
-			function _(e) {
+			function T(e) {
 				switch (e) {
 					case "grey":
-						return E.greyTheme;
+						return _.greyTheme;
 					case "white":
-						return E.whiteTheme;
+						return _.whiteTheme;
 					case "white_inverted":
-						return E.whiteInvertedTheme;
+						return _.whiteInvertedTheme;
 					case "outlined":
-						return E.outlinedTheme;
+						return _.outlinedTheme;
 					case "orange":
-						return E.orangeTheme;
+						return _.orangeTheme;
 					case "largeOrange":
-						return E.largeOrangeTheme;
+						return _.largeOrangeTheme;
 					case "blue":
-						return E.blueTheme;
+						return _.blueTheme;
 					case "blue_inverted":
-						return E.blueInvertedTheme
+						return _.blueInvertedTheme
 				}
 			}
-			var N = "https://www.redditstatic.com/crypto-assets/v2/close-contained-4d7c7d218a.svg",
-				T = "https://www.redditstatic.com/crypto-assets/v2/close-dark-f5902178f9.svg",
-				b = "https://www.redditstatic.com/crypto-assets/v2/close-1a7014e63e.svg";
-			var O = "_closeButton_bz0xz_1",
-				x = "_contained_bz0xz_13",
-				I = "_closeIcon_bz0xz_22";
-			const k = ({
+
+			function b(e, t) {
+				for (var n = 0; n < t.length; n++) {
+					var i = t[n];
+					i.enumerable = i.enumerable || !1, i.configurable = !0, "value" in i && (i.writable = !0), Object.defineProperty(e, i.key, i)
+				}
+			}
+			var O = "(prefers-reduced-motion: reduce)",
+				x = 1,
+				I = 3,
+				k = 4,
+				A = 5,
+				w = 6,
+				D = 7,
+				S = {
+					CREATED: x,
+					MOUNTED: 2,
+					IDLE: I,
+					MOVING: k,
+					SCROLLING: A,
+					DRAGGING: w,
+					DESTROYED: D
+				};
+
+			function C(e) {
+				e.length = 0
+			}
+
+			function L(e, t, n) {
+				return Array.prototype.slice.call(e, t, n)
+			}
+
+			function R(e) {
+				return e.bind.apply(e, [null].concat(L(arguments, 1)))
+			}
+			var F = setTimeout,
+				P = function() {};
+
+			function M(e) {
+				return requestAnimationFrame(e)
+			}
+
+			function j(e, t) {
+				return typeof t === e
+			}
+
+			function B(e) {
+				return !G(e) && j("object", e)
+			}
+			var U = Array.isArray,
+				V = R(j, "function"),
+				q = R(j, "string"),
+				K = R(j, "undefined");
+
+			function G(e) {
+				return null === e
+			}
+
+			function Y(e) {
+				return e instanceof HTMLElement
+			}
+
+			function z(e) {
+				return U(e) ? e : [e]
+			}
+
+			function $(e, t) {
+				z(e).forEach(t)
+			}
+
+			function J(e, t) {
+				return e.indexOf(t) > -1
+			}
+
+			function Q(e, t) {
+				return e.push.apply(e, z(t)), e
+			}
+
+			function X(e, t, n) {
+				e && $(t, (function(t) {
+					t && e.classList[n ? "add" : "remove"](t)
+				}))
+			}
+
+			function W(e, t) {
+				X(e, q(t) ? t.split(" ") : t, !0)
+			}
+
+			function H(e, t) {
+				$(t, e.appendChild.bind(e))
+			}
+
+			function Z(e, t) {
+				$(e, (function(e) {
+					var n = (t || e).parentNode;
+					n && n.insertBefore(e, t)
+				}))
+			}
+
+			function ee(e, t) {
+				return Y(e) && (e.msMatchesSelector || e.matches).call(e, t)
+			}
+
+			function te(e, t) {
+				var n = e ? L(e.children) : [];
+				return t ? n.filter((function(e) {
+					return ee(e, t)
+				})) : n
+			}
+
+			function ne(e, t) {
+				return t ? te(e, t)[0] : e.firstElementChild
+			}
+			var ie = Object.keys;
+
+			function re(e, t, n) {
+				if (e) {
+					var i = ie(e);
+					i = n ? i.reverse() : i;
+					for (var r = 0; r < i.length; r++) {
+						var o = i[r];
+						if ("__proto__" !== o && !1 === t(e[o], o)) break
+					}
+				}
+				return e
+			}
+
+			function oe(e) {
+				return L(arguments, 1).forEach((function(t) {
+					re(t, (function(n, i) {
+						e[i] = t[i]
+					}))
+				})), e
+			}
+
+			function se(e) {
+				return L(arguments, 1).forEach((function(t) {
+					re(t, (function(t, n) {
+						U(t) ? e[n] = t.slice() : B(t) ? e[n] = se({}, B(e[n]) ? e[n] : {}, t) : e[n] = t
+					}))
+				})), e
+			}
+
+			function ae(e, t) {
+				z(t || ie(e)).forEach((function(t) {
+					delete e[t]
+				}))
+			}
+
+			function ce(e, t) {
+				$(e, (function(e) {
+					$(t, (function(t) {
+						e && e.removeAttribute(t)
+					}))
+				}))
+			}
+
+			function ue(e, t, n) {
+				B(t) ? re(t, (function(t, n) {
+					ue(e, n, t)
+				})) : $(e, (function(e) {
+					G(n) || "" === n ? ce(e, t) : e.setAttribute(t, String(n))
+				}))
+			}
+
+			function le(e, t, n) {
+				var i = document.createElement(e);
+				return t && (q(t) ? W(i, t) : ue(i, t)), n && H(n, i), i
+			}
+
+			function pe(e, t, n) {
+				if (K(n)) return getComputedStyle(e)[t];
+				G(n) || (e.style[t] = "" + n)
+			}
+
+			function fe(e, t) {
+				pe(e, "display", t)
+			}
+
+			function de(e) {
+				e.setActive && e.setActive() || e.focus({
+					preventScroll: !0
+				})
+			}
+
+			function he(e, t) {
+				return e.getAttribute(t)
+			}
+
+			function ve(e, t) {
+				return e && e.classList.contains(t)
+			}
+
+			function me(e) {
+				return e.getBoundingClientRect()
+			}
+
+			function ye(e) {
+				$(e, (function(e) {
+					e && e.parentNode && e.parentNode.removeChild(e)
+				}))
+			}
+
+			function Ee(e) {
+				return ne((new DOMParser).parseFromString(e, "text/html").body)
+			}
+
+			function ge(e, t) {
+				e.preventDefault(), t && (e.stopPropagation(), e.stopImmediatePropagation())
+			}
+
+			function _e(e, t) {
+				return e && e.querySelector(t)
+			}
+
+			function Ne(e, t) {
+				return t ? L(e.querySelectorAll(t)) : []
+			}
+
+			function Te(e, t) {
+				X(e, t, !1)
+			}
+
+			function be(e) {
+				return e.timeStamp
+			}
+
+			function Oe(e) {
+				return q(e) ? e : e ? e + "px" : ""
+			}
+			var xe = "splide",
+				Ie = "data-" + xe;
+
+			function ke(e, t) {
+				if (!e) throw new Error("[" + xe + "] " + (t || ""))
+			}
+			var Ae = Math.min,
+				we = Math.max,
+				De = Math.floor,
+				Se = Math.ceil,
+				Ce = Math.abs;
+
+			function Le(e, t, n) {
+				return Ce(e - t) < n
+			}
+
+			function Re(e, t, n, i) {
+				var r = Ae(t, n),
+					o = we(t, n);
+				return i ? r < e && e < o : r <= e && e <= o
+			}
+
+			function Fe(e, t, n) {
+				var i = Ae(t, n),
+					r = we(t, n);
+				return Ae(we(i, e), r)
+			}
+
+			function Pe(e) {
+				return +(e > 0) - +(e < 0)
+			}
+
+			function Me(e, t) {
+				return $(t, (function(t) {
+					e = e.replace("%s", "" + t)
+				})), e
+			}
+
+			function je(e) {
+				return e < 10 ? "0" + e : "" + e
+			}
+			var Be = {};
+
+			function Ue() {
+				var e = [];
+
+				function t(e, t, n) {
+					$(e, (function(e) {
+						e && $(t, (function(t) {
+							t.split(" ").forEach((function(t) {
+								var i = t.split(".");
+								n(e, i[0], i[1])
+							}))
+						}))
+					}))
+				}
+				return {
+					bind: function(n, i, r, o) {
+						t(n, i, (function(t, n, i) {
+							var s = "addEventListener" in t,
+								a = s ? t.removeEventListener.bind(t, n, r, o) : t.removeListener.bind(t, r);
+							s ? t.addEventListener(n, r, o) : t.addListener(r), e.push([t, n, i, r, a])
+						}))
+					},
+					unbind: function(n, i, r) {
+						t(n, i, (function(t, n, i) {
+							e = e.filter((function(e) {
+								return !!(e[0] !== t || e[1] !== n || e[2] !== i || r && e[3] !== r) || (e[4](), !1)
+							}))
+						}))
+					},
+					dispatch: function(e, t, n) {
+						var i;
+						return "function" == typeof CustomEvent ? i = new CustomEvent(t, {
+							bubbles: !0,
+							detail: n
+						}) : (i = document.createEvent("CustomEvent")).initCustomEvent(t, !0, !1, n), e.dispatchEvent(i), i
+					},
+					destroy: function() {
+						e.forEach((function(e) {
+							e[4]()
+						})), C(e)
+					}
+				}
+			}
+			var Ve = "mounted",
+				qe = "move",
+				Ke = "moved",
+				Ge = "shifted",
+				Ye = "click",
+				ze = "active",
+				$e = "inactive",
+				Je = "visible",
+				Qe = "hidden",
+				Xe = "slide:keydown",
+				We = "refresh",
+				He = "updated",
+				Ze = "resize",
+				et = "resized",
+				tt = "drag",
+				nt = "dragging",
+				it = "dragged",
+				rt = "scroll",
+				ot = "scrolled",
+				st = "destroy",
+				at = "arrows:mounted",
+				ct = "arrows:updated",
+				ut = "pagination:mounted",
+				lt = "pagination:updated",
+				pt = "navigation:mounted",
+				ft = "autoplay:play",
+				dt = "autoplay:playing",
+				ht = "autoplay:pause",
+				vt = "lazyload:loaded";
+
+			function mt(e) {
+				var t = e ? e.event.bus : document.createDocumentFragment(),
+					n = Ue();
+				return e && e.event.on(st, n.destroy), oe(n, {
+					bus: t,
+					on: function(e, i) {
+						n.bind(t, z(e).join(" "), (function(e) {
+							i.apply(i, U(e.detail) ? e.detail : [])
+						}))
+					},
+					off: R(n.unbind, t),
+					emit: function(e) {
+						n.dispatch(t, e, L(arguments, 1))
+					}
+				})
+			}
+
+			function yt(e, t, n, i) {
+				var r, o, s = Date.now,
+					a = 0,
+					c = !0,
+					u = 0;
+
+				function l() {
+					if (!c) {
+						if (a = e ? Ae((s() - r) / e, 1) : 1, n && n(a), a >= 1 && (t(), r = s(), i && ++u >= i)) return p();
+						M(l)
+					}
+				}
+
+				function p() {
+					c = !0
+				}
+
+				function f() {
+					o && cancelAnimationFrame(o), a = 0, o = 0, c = !0
+				}
+				return {
+					start: function(t) {
+						!t && f(), r = s() - (t ? a * e : 0), c = !1, M(l)
+					},
+					rewind: function() {
+						r = s(), a = 0, n && n(a)
+					},
+					pause: p,
+					cancel: f,
+					set: function(t) {
+						e = t
+					},
+					isPaused: function() {
+						return c
+					}
+				}
+			}
+			var Et = "ArrowLeft",
+				gt = "ArrowRight",
+				_t = "rtl",
+				Nt = "ttb",
+				Tt = {
+					width: ["height"],
+					left: ["top", "right"],
+					right: ["bottom", "left"],
+					x: ["y"],
+					X: ["Y"],
+					Y: ["X"],
+					ArrowLeft: ["ArrowUp", gt],
+					ArrowRight: ["ArrowDown", Et]
+				};
+			var bt = "role",
+				Ot = "tabindex",
+				xt = "aria-controls",
+				It = "aria-current",
+				kt = "aria-selected",
+				At = "aria-label",
+				wt = "aria-labelledby",
+				Dt = "aria-hidden",
+				St = "aria-orientation",
+				Ct = "aria-roledescription",
+				Lt = "aria-live",
+				Rt = "aria-relevant",
+				Ft = [bt, Ot, "disabled", xt, It, At, wt, Dt, St, Ct],
+				Pt = xe,
+				Mt = xe + "__track",
+				jt = xe + "__list",
+				Bt = xe + "__slide",
+				Ut = Bt + "--clone",
+				Vt = Bt + "__container",
+				qt = xe + "__arrows",
+				Kt = xe + "__arrow",
+				Gt = Kt + "--prev",
+				Yt = Kt + "--next",
+				zt = xe + "__pagination",
+				$t = zt + "__page",
+				Jt = xe + "__progress" + "__bar",
+				Qt = xe + "__toggle",
+				Xt = xe + "__sr",
+				Wt = "is-active",
+				Ht = "is-prev",
+				Zt = "is-next",
+				en = "is-visible",
+				tn = "is-loading",
+				nn = "is-focus-in",
+				rn = [Wt, en, Ht, Zt, tn, nn],
+				on = {
+					slide: Bt,
+					clone: Ut,
+					arrows: qt,
+					arrow: Kt,
+					prev: Gt,
+					next: Yt,
+					pagination: zt,
+					page: $t,
+					spinner: xe + "__spinner"
+				};
+			var sn = 5,
+				an = 200,
+				cn = "touchstart mousedown",
+				un = "touchmove mousemove",
+				ln = "touchend touchcancel mouseup";
+			var pn = "slide",
+				fn = "loop",
+				dn = "fade";
+
+			function hn(e, t, n, i) {
+				var r, o = mt(e),
+					s = o.on,
+					a = o.emit,
+					c = o.bind,
+					u = e.Components,
+					l = e.root,
+					p = e.options,
+					f = p.isNavigation,
+					d = p.updateOnMove,
+					h = p.i18n,
+					v = p.pagination,
+					m = p.slideFocus,
+					y = u.Direction.resolve,
+					E = he(i, "style"),
+					g = he(i, At),
+					_ = n > -1,
+					N = ne(i, "." + Vt),
+					T = Ne(i, p.focusableNodes || "");
+
+				function b() {
+					var r = e.splides.map((function(e) {
+						var n = e.splide.Components.Slides.getAt(t);
+						return n ? n.slide.id : ""
+					})).join(" ");
+					ue(i, At, Me(h.slideX, (_ ? n : t) + 1)), ue(i, xt, r), ue(i, bt, m ? "button" : ""), m && ce(i, Ct)
+				}
+
+				function O() {
+					r || x()
+				}
+
+				function x() {
+					if (!r) {
+						var n = e.index;
+						(o = I()) !== ve(i, Wt) && (X(i, Wt, o), ue(i, It, f && o || ""), a(o ? ze : $e, w)),
+							function() {
+								var t = function() {
+										if (e.is(dn)) return I();
+										var t = me(u.Elements.track),
+											n = me(i),
+											r = y("left"),
+											o = y("right");
+										return De(t[r]) <= Se(n[r]) && De(n[o]) <= Se(t[o])
+									}(),
+									n = !t && (!I() || _);
+								e.state.is([k, A]) || ue(i, Dt, n || "");
+								ue(T, Ot, n ? -1 : ""), m && ue(i, Ot, n ? -1 : 0);
+								t !== ve(i, en) && (X(i, en, t), a(t ? Je : Qe, w));
+								if (!t && document.activeElement === i) {
+									var r = u.Slides.getAt(e.index);
+									r && de(r.slide)
+								}
+							}(), X(i, Ht, t === n - 1), X(i, Zt, t === n + 1)
+					}
+					var o
+				}
+
+				function I() {
+					var i = e.index;
+					return i === t || p.cloneStatus && i === n
+				}
+				var w = {
+					index: t,
+					slideIndex: n,
+					slide: i,
+					container: N,
+					isClone: _,
+					mount: function() {
+						_ || (i.id = l.id + "-slide" + je(t + 1), ue(i, bt, v ? "tabpanel" : "group"), ue(i, Ct, h.slide), ue(i, At, g || Me(h.slideLabel, [t + 1, e.length]))), c(i, "click", R(a, Ye, w)), c(i, "keydown", R(a, Xe, w)), s([Ke, Ge, ot], x), s(pt, b), d && s(qe, O)
+					},
+					destroy: function() {
+						r = !0, o.destroy(), Te(i, rn), ce(i, Ft), ue(i, "style", E), ue(i, At, g || "")
+					},
+					update: x,
+					style: function(e, t, n) {
+						pe(n && N || i, e, t)
+					},
+					isWithin: function(n, i) {
+						var r = Ce(n - t);
+						return _ || !p.rewind && !e.is(fn) || (r = Ae(r, e.length - r)), r <= i
+					}
+				};
+				return w
+			}
+			var vn = 2;
+			var mn = "http://www.w3.org/2000/svg",
+				yn = "m15.5 0.932-4.3 4.38 14.5 14.6-14.5 14.5 4.3 4.4 14.6-14.6 4.4-4.3-4.4-4.4-14.6-14.6z",
+				En = 40;
+			var gn = Ie + "-interval";
+			var _n = 10,
+				Nn = 600,
+				Tn = .6,
+				bn = 1.5,
+				On = 800;
+			var xn = {
+				passive: !1,
+				capture: !0
+			};
+			var In = {
+				Spacebar: " ",
+				Right: gt,
+				Left: Et,
+				Up: "ArrowUp",
+				Down: "ArrowDown"
+			};
+
+			function kn(e) {
+				return e = q(e) ? e : e.key, In[e] || e
+			}
+			var An = "keydown";
+			var wn = Ie + "-lazy",
+				Dn = wn + "-srcset",
+				Sn = "[" + wn + "], [" + Dn + "]";
+			var Cn = [" ", "Enter"];
+			var Ln = Object.freeze({
+					__proto__: null,
+					Media: function(e, t, n) {
+						var i = e.state,
+							r = n.breakpoints || {},
+							o = n.reducedMotion || {},
+							s = Ue(),
+							a = [];
+
+						function c(e) {
+							e && s.destroy()
+						}
+
+						function u(e, t) {
+							var n = matchMedia(t);
+							s.bind(n, "change", l), a.push([e, n])
+						}
+
+						function l() {
+							var t = i.is(D),
+								r = n.direction,
+								o = a.reduce((function(e, t) {
+									return se(e, t[1].matches ? t[0] : {})
+								}), {});
+							ae(n), p(o), n.destroy ? e.destroy("completely" === n.destroy) : t ? (c(!0), e.mount()) : r !== n.direction && e.refresh()
+						}
+
+						function p(t, r) {
+							se(n, t), r && se(Object.getPrototypeOf(n), t), i.is(x) || e.emit(He, n)
+						}
+						return {
+							setup: function() {
+								var e = "min" === n.mediaQuery;
+								ie(r).sort((function(t, n) {
+									return e ? +t - +n : +n - +t
+								})).forEach((function(t) {
+									u(r[t], "(" + (e ? "min" : "max") + "-width:" + t + "px)")
+								})), u(o, O), l()
+							},
+							destroy: c,
+							reduce: function(e) {
+								matchMedia(O).matches && (e ? se(n, o) : ae(n, ie(o)))
+							},
+							set: p
+						}
+					},
+					Direction: function(e, t, n) {
+						return {
+							resolve: function(e, t, i) {
+								var r = (i = i || n.direction) !== _t || t ? i === Nt ? 0 : -1 : 1;
+								return Tt[e] && Tt[e][r] || e.replace(/width|left|right/i, (function(e, t) {
+									var n = Tt[e.toLowerCase()][r] || e;
+									return t > 0 ? n.charAt(0).toUpperCase() + n.slice(1) : n
+								}))
+							},
+							orient: function(e) {
+								return e * (n.direction === _t ? 1 : -1)
+							}
+						}
+					},
+					Elements: function(e, t, n) {
+						var i, r, o, s = mt(e),
+							a = s.on,
+							c = s.bind,
+							u = e.root,
+							l = n.i18n,
+							p = {},
+							f = [],
+							d = [],
+							h = [];
+
+						function v() {
+							i = E("." + Mt), r = ne(i, "." + jt), ke(i && r, "A track/list element is missing."), Q(f, te(r, "." + Bt + ":not(." + Ut + ")")), re({
+									arrows: qt,
+									pagination: zt,
+									prev: Gt,
+									next: Yt,
+									bar: Jt,
+									toggle: Qt
+								}, (function(e, t) {
+									p[t] = E("." + e)
+								})), oe(p, {
+									root: u,
+									track: i,
+									list: r,
+									slides: f
+								}),
+								function() {
+									var e = u.id || (o = xe, "" + o + je(Be[o] = (Be[o] || 0) + 1)),
+										t = n.role;
+									var o;
+									u.id = e, i.id = i.id || e + "-track", r.id = r.id || e + "-list", !he(u, bt) && "SECTION" !== u.tagName && t && ue(u, bt, t);
+									ue(u, Ct, l.carousel), ue(r, bt, "presentation")
+								}(), y()
+						}
+
+						function m(e) {
+							var t = Ft.concat("style");
+							C(f), Te(u, d), Te(i, h), ce([i, r], t), ce(u, e ? t : ["style", Ct])
+						}
+
+						function y() {
+							Te(u, d), Te(i, h), d = g(Pt), h = g(Mt), W(u, d), W(i, h), ue(u, At, n.label), ue(u, wt, n.labelledby)
+						}
+
+						function E(e) {
+							var t = _e(u, e);
+							return t && function(e, t) {
+								if (V(e.closest)) return e.closest(t);
+								for (var n = e; n && 1 === n.nodeType && !ee(n, t);) n = n.parentElement;
+								return n
+							}(t, "." + Pt) === u ? t : void 0
+						}
+
+						function g(e) {
+							return [e + "--" + n.type, e + "--" + n.direction, n.drag && e + "--draggable", n.isNavigation && e + "--nav", e === Pt && Wt]
+						}
+						return oe(p, {
+							setup: v,
+							mount: function() {
+								a(We, m), a(We, v), a(He, y), c(document, cn + " keydown", (function(e) {
+									o = "keydown" === e.type
+								}), {
+									capture: !0
+								}), c(u, "focusin", (function() {
+									X(u, nn, !!o)
+								}))
+							},
+							destroy: m
+						})
+					},
+					Slides: function(e, t, n) {
+						var i = mt(e),
+							r = i.on,
+							o = i.emit,
+							s = i.bind,
+							a = t.Elements,
+							c = a.slides,
+							u = a.list,
+							l = [];
+
+						function p() {
+							c.forEach((function(e, t) {
+								d(e, t, -1)
+							}))
+						}
+
+						function f() {
+							v((function(e) {
+								e.destroy()
+							})), C(l)
+						}
+
+						function d(t, n, i) {
+							var r = hn(e, n, i, t);
+							r.mount(), l.push(r)
+						}
+
+						function h(e) {
+							return e ? m((function(e) {
+								return !e.isClone
+							})) : l
+						}
+
+						function v(e, t) {
+							h(t).forEach(e)
+						}
+
+						function m(e) {
+							return l.filter(V(e) ? e : function(t) {
+								return q(e) ? ee(t.slide, e) : J(z(e), t.index)
+							})
+						}
+						return {
+							mount: function() {
+								p(), r(We, f), r(We, p), r([Ve, We], (function() {
+									l.sort((function(e, t) {
+										return e.index - t.index
+									}))
+								}))
+							},
+							destroy: f,
+							update: function() {
+								v((function(e) {
+									e.update()
+								}))
+							},
+							register: d,
+							get: h,
+							getIn: function(e) {
+								var i = t.Controller,
+									r = i.toIndex(e),
+									o = i.hasFocus() ? 1 : n.perPage;
+								return m((function(e) {
+									return Re(e.index, r, r + o - 1)
+								}))
+							},
+							getAt: function(e) {
+								return m(e)[0]
+							},
+							add: function(e, t) {
+								$(e, (function(e) {
+									if (q(e) && (e = Ee(e)), Y(e)) {
+										var i = c[t];
+										i ? Z(e, i) : H(u, e), W(e, n.classes.slide), r = e, a = R(o, Ze), l = Ne(r, "img"), (p = l.length) ? l.forEach((function(e) {
+											s(e, "load error", (function() {
+												--p || a()
+											}))
+										})) : a()
+									}
+									var r, a, l, p
+								})), o(We)
+							},
+							remove: function(e) {
+								ye(m(e).map((function(e) {
+									return e.slide
+								}))), o(We)
+							},
+							forEach: v,
+							filter: m,
+							style: function(e, t, n) {
+								v((function(i) {
+									i.style(e, t, n)
+								}))
+							},
+							getLength: function(e) {
+								return e ? c.length : l.length
+							},
+							isEnough: function() {
+								return l.length > n.perPage
+							}
+						}
+					},
+					Layout: function(e, t, n) {
+						var i, r, o = mt(e),
+							s = o.on,
+							a = o.bind,
+							c = o.emit,
+							u = t.Slides,
+							l = t.Direction.resolve,
+							p = t.Elements,
+							f = p.root,
+							d = p.track,
+							h = p.list,
+							v = u.getAt,
+							m = u.style;
+
+						function y() {
+							r = null, i = n.direction === Nt, pe(f, "maxWidth", Oe(n.width)), pe(d, l("paddingLeft"), g(!1)), pe(d, l("paddingRight"), g(!0)), E()
+						}
+
+						function E() {
+							var e = me(f);
+							r && r.width === e.width && r.height === e.height || (pe(d, "height", function() {
+								var e = "";
+								i && (ke(e = _(), "height or heightRatio is missing."), e = "calc(" + e + " - " + g(!1) + " - " + g(!0) + ")");
+								return e
+							}()), m(l("marginRight"), Oe(n.gap)), m("width", n.autoWidth ? null : Oe(n.fixedWidth) || (i ? "" : N())), m("height", Oe(n.fixedHeight) || (i ? n.autoHeight ? null : N() : _()), !0), r = e, c(et))
+						}
+
+						function g(e) {
+							var t = n.padding,
+								i = l(e ? "right" : "left");
+							return t && Oe(t[i] || (B(t) ? 0 : t)) || "0px"
+						}
+
+						function _() {
+							return Oe(n.height || me(h).width * n.heightRatio)
+						}
+
+						function N() {
+							var e = Oe(n.gap);
+							return "calc((100%" + (e && " + " + e) + ")/" + (n.perPage || 1) + (e && " - " + e) + ")"
+						}
+
+						function T(e, t) {
+							var n = v(e);
+							if (n) {
+								var i = me(n.slide)[l("right")],
+									r = me(h)[l("left")];
+								return Ce(i - r) + (t ? 0 : b())
+							}
+							return 0
+						}
+
+						function b() {
+							var e = v(0);
+							return e && parseFloat(pe(e.slide, l("marginRight"))) || 0
+						}
+						return {
+							mount: function() {
+								var e, t, n;
+								y(), a(window, "resize load", (e = R(c, Ze), function() {
+									n || (n = yt(t || 0, (function() {
+										e(), n = null
+									}), null, 1)).start()
+								})), s([He, We], y), s(Ze, E)
+							},
+							listSize: function() {
+								return me(h)[l("width")]
+							},
+							slideSize: function(e, t) {
+								var n = v(e || 0);
+								return n ? me(n.slide)[l("width")] + (t ? 0 : b()) : 0
+							},
+							sliderSize: function() {
+								return T(e.length - 1, !0) - T(-1, !0)
+							},
+							totalSize: T,
+							getPadding: function(e) {
+								return parseFloat(pe(d, l("padding" + (e ? "Right" : "Left")))) || 0
+							}
+						}
+					},
+					Clones: function(e, t, n) {
+						var i, r = mt(e),
+							o = r.on,
+							s = r.emit,
+							a = t.Elements,
+							c = t.Slides,
+							u = t.Direction.resolve,
+							l = [];
+
+						function p() {
+							(i = h()) && (! function(t) {
+								var i = c.get().slice(),
+									r = i.length;
+								if (r) {
+									for (; i.length < t;) Q(i, i);
+									Q(i.slice(-t), i.slice(0, t)).forEach((function(o, s) {
+										var u = s < t,
+											p = function(t, i) {
+												var r = t.cloneNode(!0);
+												return W(r, n.classes.clone), r.id = e.root.id + "-clone" + je(i + 1), r
+											}(o.slide, s);
+										u ? Z(p, i[0].slide) : H(a.list, p), Q(l, p), c.register(p, s - t + (u ? 0 : r), o.index)
+									}))
+								}
+							}(i), s(Ze))
+						}
+
+						function f() {
+							ye(l), C(l)
+						}
+
+						function d() {
+							i < h() && s(We)
+						}
+
+						function h() {
+							var i = n.clones;
+							if (e.is(fn)) {
+								if (!i) {
+									var r = n[u("fixedWidth")] && t.Layout.slideSize(0);
+									i = r && Se(me(a.track)[u("width")] / r) || n[u("autoWidth")] && e.length || n.perPage * vn
+								}
+							} else i = 0;
+							return i
+						}
+						return {
+							mount: function() {
+								p(), o(We, f), o(We, p), o([He, Ze], d)
+							},
+							destroy: f
+						}
+					},
+					Move: function(e, t, n) {
+						var i, r = mt(e),
+							o = r.on,
+							s = r.emit,
+							a = e.state.set,
+							c = t.Layout,
+							u = c.slideSize,
+							l = c.getPadding,
+							p = c.totalSize,
+							f = c.listSize,
+							d = c.sliderSize,
+							h = t.Direction,
+							v = h.resolve,
+							m = h.orient,
+							y = t.Elements,
+							E = y.list,
+							g = y.track;
+
+						function _() {
+							t.Controller.isBusy() || (t.Scroll.cancel(), N(e.index), t.Slides.update())
+						}
+
+						function N(e) {
+							T(x(e, !0))
+						}
+
+						function T(t, n) {
+							if (!e.is(dn)) {
+								var i = n ? t : function(t) {
+									if (e.is(fn)) {
+										var n = m(t - A()),
+											i = D(!1, t) && n < 0,
+											r = D(!0, t) && n > 0;
+										(i || r) && (t = b(t, r))
+									}
+									return t
+								}(t);
+								pe(E, "transform", "translate" + v("X") + "(" + i + "px)"), t !== i && s(Ge)
+							}
+						}
+
+						function b(e, t) {
+							var n = e - w(t),
+								i = d();
+							return e -= m(i * (Se(Ce(n) / i) || 1)) * (t ? 1 : -1)
+						}
+
+						function O() {
+							T(A()), i.cancel()
+						}
+
+						function x(t, i) {
+							var r = m(p(t - 1) - function(e) {
+								var t = n.focus;
+								return "center" === t ? (f() - u(e, !0)) / 2 : +t * u(e) || 0
+							}(t));
+							return i ? function(t) {
+								n.trimSpace && e.is(pn) && (t = Fe(t, 0, m(d() - f())));
+								return t
+							}(r) : r
+						}
+
+						function A() {
+							var e = v("left");
+							return me(E)[e] - me(g)[e] + m(l(!1))
+						}
+
+						function w(e) {
+							return x(e ? t.Controller.getEnd() : 0, !!n.trimSpace)
+						}
+
+						function D(e, t) {
+							t = K(t) ? A() : t;
+							var n = !0 !== e && m(t) < m(w(!1)),
+								i = !1 !== e && m(t) > m(w(!0));
+							return n || i
+						}
+						return {
+							mount: function() {
+								i = t.Transition, o([Ve, et, He, We], _)
+							},
+							move: function(e, t, n, r) {
+								var o, c, u = A();
+								e !== t && (o = e > t, c = m(b(A(), o)), o ? c >= 0 : c <= E["scroll" + v("Width")] - me(g)[v("width")]) && (O(), T(b(u, e > t), !0)), a(k), s(qe, t, n, e), i.start(t, (function() {
+									a(I), s(Ke, t, n, e), r && r()
+								}))
+							},
+							jump: N,
+							translate: T,
+							shift: b,
+							cancel: O,
+							toIndex: function(e) {
+								for (var n = t.Slides.get(), i = 0, r = 1 / 0, o = 0; o < n.length; o++) {
+									var s = n[o].index,
+										a = Ce(x(s, !0) - e);
+									if (!(a <= r)) break;
+									r = a, i = s
+								}
+								return i
+							},
+							toPosition: x,
+							getPosition: A,
+							getLimit: w,
+							exceededLimit: D,
+							reposition: _
+						}
+					},
+					Controller: function(e, t, n) {
+						var i, r, o, s = mt(e).on,
+							a = t.Move,
+							c = a.getPosition,
+							u = a.getLimit,
+							l = a.toPosition,
+							p = t.Slides,
+							f = p.isEnough,
+							d = p.getLength,
+							h = e.is(fn),
+							v = e.is(pn),
+							m = R(N, !1),
+							y = R(N, !0),
+							E = n.start || 0,
+							g = E;
+
+						function _() {
+							i = d(!0), r = n.perMove, o = n.perPage;
+							var e = Fe(E, 0, i - 1);
+							e !== E && (E = e, a.reposition())
+						}
+
+						function N(e, t) {
+							var n = r || (D() ? 1 : o),
+								i = T(E + n * (e ? -1 : 1), E, !(r || D()));
+							return -1 === i && v && !Le(c(), u(!e), 1) ? e ? 0 : O() : t ? i : b(i)
+						}
+
+						function T(t, r, s) {
+							if (f()) {
+								var a = O(),
+									u = function(t) {
+										if (v && "move" === n.trimSpace && t !== E)
+											for (var i = c(); i === l(t, !0) && Re(t, 0, e.length - 1, !n.rewind);) t < E ? --t : ++t;
+										return t
+									}(t);
+								u !== t && (r = t, t = u, s = !1), t < 0 || t > a ? t = Re(0, t, r, !0) || Re(a, r, t, !0) ? x(I(t)) : h ? s ? t < 0 ? -(i % o || o) : i : t : n.rewind ? t < 0 ? a : 0 : -1 : s && t !== r && (t = x(I(r) + (t < r ? -1 : 1)))
+							} else t = -1;
+							return t
+						}
+
+						function b(e) {
+							return h ? (e + i) % i || 0 : e
+						}
+
+						function O() {
+							return we(i - (D() || h && r ? 1 : o), 0)
+						}
+
+						function x(e) {
+							return Fe(D() ? e : o * e, 0, O())
+						}
+
+						function I(e) {
+							return D() ? e : De((e >= O() ? i - 1 : e) / o)
+						}
+
+						function w(e) {
+							e !== E && (g = E, E = e)
+						}
+
+						function D() {
+							return !K(n.focus) || n.isNavigation
+						}
+
+						function S() {
+							return e.state.is([k, A]) && !!n.waitForTransition
+						}
+						return {
+							mount: function() {
+								_(), s([He, We], _)
+							},
+							go: function(e, t, n) {
+								if (!S()) {
+									var i = function(e) {
+											var t = E;
+											if (q(e)) {
+												var n = e.match(/([+\-<>])(\d+)?/) || [],
+													i = n[1],
+													r = n[2];
+												"+" === i || "-" === i ? t = T(E + +("" + i + (+r || 1)), E) : ">" === i ? t = r ? x(+r) : m(!0) : "<" === i && (t = y(!0))
+											} else t = h ? e : Fe(e, 0, O());
+											return t
+										}(e),
+										r = b(i);
+									r > -1 && (t || r !== E) && (w(r), a.move(i, r, g, n))
+								}
+							},
+							scroll: function(e, n, i, r) {
+								t.Scroll.scroll(e, n, i, (function() {
+									w(b(a.toIndex(a.getPosition()))), r && r()
+								}))
+							},
+							getNext: m,
+							getPrev: y,
+							getAdjacent: N,
+							getEnd: O,
+							setIndex: w,
+							getIndex: function(e) {
+								return e ? g : E
+							},
+							toIndex: x,
+							toPage: I,
+							toDest: function(e) {
+								var t = a.toIndex(e);
+								return v ? Fe(t, 0, O()) : t
+							},
+							hasFocus: D,
+							isBusy: S
+						}
+					},
+					Arrows: function(e, t, n) {
+						var i, r, o = mt(e),
+							s = o.on,
+							a = o.bind,
+							c = o.emit,
+							u = n.classes,
+							l = n.i18n,
+							p = t.Elements,
+							f = t.Controller,
+							d = p.arrows,
+							h = p.track,
+							v = d,
+							m = p.prev,
+							y = p.next,
+							E = {};
+
+						function g() {
+							! function() {
+								var e = n.arrows;
+								!e || m && y || (v = d || le("div", u.arrows), m = b(!0), y = b(!1), i = !0, H(v, [m, y]), !d && Z(v, h));
+								m && y && (oe(E, {
+									prev: m,
+									next: y
+								}), fe(v, e ? "" : "none"), W(v, r = qt + "--" + n.direction), e && (s([Ke, We, ot], O), a(y, "click", R(T, ">")), a(m, "click", R(T, "<")), O(), ue([m, y], xt, h.id), c(at, m, y)))
+							}(), s(He, _)
+						}
+
+						function _() {
+							N(), g()
+						}
+
+						function N() {
+							o.destroy(), Te(v, r), i ? (ye(d ? [m, y] : v), m = y = null) : ce([m, y], Ft)
+						}
+
+						function T(e) {
+							f.go(e, !0)
+						}
+
+						function b(e) {
+							return Ee('<button class="' + u.arrow + " " + (e ? u.prev : u.next) + '" type="button"><svg xmlns="' + mn + '" viewBox="0 0 ' + En + " " + En + '" width="' + En + '" height="' + En + '" focusable="false"><path d="' + (n.arrowPath || yn) + '" />')
+						}
+
+						function O() {
+							var t = e.index,
+								n = f.getPrev(),
+								i = f.getNext(),
+								r = n > -1 && t < n ? l.last : l.prev,
+								o = i > -1 && t > i ? l.first : l.next;
+							m.disabled = n < 0, y.disabled = i < 0, ue(m, At, r), ue(y, At, o), c(ct, m, y, n, i)
+						}
+						return {
+							arrows: E,
+							mount: g,
+							destroy: N
+						}
+					},
+					Autoplay: function(e, t, n) {
+						var i, r, o = mt(e),
+							s = o.on,
+							a = o.bind,
+							c = o.emit,
+							u = yt(n.interval, e.go.bind(e, ">"), (function(e) {
+								var t = p.bar;
+								t && pe(t, "width", 100 * e + "%"), c(dt, e)
+							})),
+							l = u.isPaused,
+							p = t.Elements,
+							f = t.Elements,
+							d = f.root,
+							h = f.toggle,
+							v = n.autoplay,
+							m = "pause" === v;
+
+						function y() {
+							l() && t.Slides.isEnough() && (u.start(!n.resetProgress), r = i = m = !1, _(), c(ft))
+						}
+
+						function E(e) {
+							void 0 === e && (e = !0), m = !!e, _(), l() || (u.pause(), c(ht))
+						}
+
+						function g() {
+							m || (i || r ? E(!1) : y())
+						}
+
+						function _() {
+							h && (X(h, Wt, !m), ue(h, At, n.i18n[m ? "play" : "pause"]))
+						}
+
+						function N(e) {
+							var i = t.Slides.getAt(e);
+							u.set(i && +he(i.slide, gn) || n.interval)
+						}
+						return {
+							mount: function() {
+								v && (! function() {
+									n.pauseOnHover && a(d, "mouseenter mouseleave", (function(e) {
+										i = "mouseenter" === e.type, g()
+									}));
+									n.pauseOnFocus && a(d, "focusin focusout", (function(e) {
+										r = "focusin" === e.type, g()
+									}));
+									h && a(h, "click", (function() {
+										m ? y() : E(!0)
+									}));
+									s([qe, rt, We], u.rewind), s(qe, N)
+								}(), h && ue(h, xt, p.track.id), m || y(), _())
+							},
+							destroy: u.cancel,
+							play: y,
+							pause: E,
+							isPaused: l
+						}
+					},
+					Cover: function(e, t, n) {
+						var i = mt(e).on;
+
+						function r(e) {
+							t.Slides.forEach((function(t) {
+								var n = ne(t.container || t.slide, "img");
+								n && n.src && o(e, n, t)
+							}))
+						}
+
+						function o(e, t, n) {
+							n.style("background", e ? 'center/cover no-repeat url("' + t.src + '")' : "", !0), fe(t, e ? "none" : "")
+						}
+						return {
+							mount: function() {
+								n.cover && (i(vt, R(o, !0)), i([Ve, He, We], R(r, !0)))
+							},
+							destroy: R(r, !1)
+						}
+					},
+					Scroll: function(e, t, n) {
+						var i, r, o = mt(e),
+							s = o.on,
+							a = o.emit,
+							c = e.state.set,
+							u = t.Move,
+							l = u.getPosition,
+							p = u.getLimit,
+							f = u.exceededLimit,
+							d = u.translate,
+							h = 1;
+
+						function v(e, n, o, s, p) {
+							var f = l();
+							if (E(), o) {
+								var d = t.Layout.sliderSize(),
+									v = Pe(e) * d * De(Ce(e) / d) || 0;
+								e = u.toPosition(t.Controller.toDest(e % d)) + v
+							}
+							var g = Le(f, e, 1);
+							h = 1, n = g ? 0 : n || we(Ce(e - f) / bn, On), r = s, i = yt(n, m, R(y, f, e, p), 1), c(A), a(rt), i.start()
+						}
+
+						function m() {
+							c(I), r && r(), a(ot)
+						}
+
+						function y(t, i, r, o) {
+							var s, a, c = l(),
+								u = (t + (i - t) * (s = o, (a = n.easingFunc) ? a(s) : 1 - Math.pow(1 - s, 4)) - c) * h;
+							d(c + u), e.is(pn) && !r && f() && (h *= Tn, Ce(u) < _n && v(p(f(!0)), Nn, !1, void 0, !0))
+						}
+
+						function E() {
+							i && i.cancel()
+						}
+
+						function g() {
+							i && !i.isPaused() && (E(), m())
+						}
+						return {
+							mount: function() {
+								s(qe, E), s([He, We], g)
+							},
+							destroy: E,
+							scroll: v,
+							cancel: g
+						}
+					},
+					Drag: function(e, t, n) {
+						var i, r, o, s, a, c, u, l, p = mt(e),
+							f = p.on,
+							d = p.emit,
+							h = p.bind,
+							v = p.unbind,
+							m = e.state,
+							y = t.Move,
+							E = t.Scroll,
+							g = t.Controller,
+							_ = t.Elements.track,
+							N = t.Media.reduce,
+							T = t.Direction,
+							b = T.resolve,
+							O = T.orient,
+							x = y.getPosition,
+							D = y.exceededLimit,
+							S = !1;
+
+						function C() {
+							var e = n.drag;
+							Y(!e), s = "free" === e
+						}
+
+						function L(e) {
+							if (c = !1, !u) {
+								var t = G(e);
+								i = e.target, r = n.noDrag, ee(i, "." + $t + ", ." + Kt) || r && ee(i, r) || !t && e.button || (g.isBusy() ? ge(e, !0) : (l = t ? _ : window, a = m.is([k, A]), o = null, h(l, un, R, xn), h(l, ln, F, xn), y.cancel(), E.cancel(), j(e)))
+							}
+							var i, r
+						}
+
+						function R(t) {
+							if (m.is(w) || (m.set(w), d(tt)), t.cancelable)
+								if (a) {
+									y.translate(i + U(t) / (S && e.is(pn) ? sn : 1));
+									var r = V(t) > an,
+										o = S !== (S = D());
+									(r || o) && j(t), c = !0, d(nt), ge(t)
+								} else(function(e) {
+									return Ce(U(e)) > Ce(U(e, !0))
+								})(t) && (a = function(e) {
+									var t = n.dragMinThreshold,
+										i = B(t),
+										r = i && t.mouse || 0,
+										o = (i ? t.touch : +t) || 10;
+									return Ce(U(e)) > (G(e) ? o : r)
+								}(t), ge(t))
+						}
+
+						function F(i) {
+							m.is(w) && (m.set(I), d(it)), a && (! function(i) {
+								var r = function(t) {
+										if (e.is(fn) || !S) {
+											var n = V(t);
+											if (n && n < an) return U(t) / n
+										}
+										return 0
+									}(i),
+									o = function(e) {
+										return x() + Pe(e) * Ae(Ce(e) * (n.flickPower || 600), s ? 1 / 0 : t.Layout.listSize() * (n.flickMaxPages || 1))
+									}(r),
+									a = n.rewind && n.rewindByDrag;
+								N(!1), s ? g.scroll(o, 0, n.snap) : e.is(dn) ? g.go(O(Pe(r)) < 0 ? a ? "<" : "-" : a ? ">" : "+") : e.is(pn) && S && a ? g.go(D(!0) ? ">" : "<") : g.go(g.toDest(o), !0);
+								N(!0)
+							}(i), ge(i)), v(l, un, R), v(l, ln, F), a = !1
+						}
+
+						function M(e) {
+							!u && c && ge(e, !0)
+						}
+
+						function j(e) {
+							o = r, r = e, i = x()
+						}
+
+						function U(e, t) {
+							return K(e, t) - K(q(e), t)
+						}
+
+						function V(e) {
+							return be(e) - be(q(e))
+						}
+
+						function q(e) {
+							return r === e && o || r
+						}
+
+						function K(e, t) {
+							return (G(e) ? e.changedTouches[0] : e)["page" + b(t ? "Y" : "X")]
+						}
+
+						function G(e) {
+							return "undefined" != typeof TouchEvent && e instanceof TouchEvent
+						}
+
+						function Y(e) {
+							u = e
+						}
+						return {
+							mount: function() {
+								h(_, un, P, xn), h(_, ln, P, xn), h(_, cn, L, xn), h(_, "click", M, {
+									capture: !0
+								}), h(_, "dragstart", ge), f([Ve, He], C)
+							},
+							disable: Y,
+							isDragging: function() {
+								return a
+							}
+						}
+					},
+					Keyboard: function(e, t, n) {
+						var i, r, o = mt(e),
+							s = o.on,
+							a = o.bind,
+							c = o.unbind,
+							u = e.root,
+							l = t.Direction.resolve;
+
+						function p() {
+							var e = n.keyboard;
+							e && (i = "global" === e ? window : u, a(i, An, h))
+						}
+
+						function f() {
+							c(i, An)
+						}
+
+						function d() {
+							var e = r;
+							r = !0, F((function() {
+								r = e
+							}))
+						}
+
+						function h(t) {
+							if (!r) {
+								var n = kn(t);
+								n === l(Et) ? e.go("<") : n === l(gt) && e.go(">")
+							}
+						}
+						return {
+							mount: function() {
+								p(), s(He, f), s(He, p), s(qe, d)
+							},
+							destroy: f,
+							disable: function(e) {
+								r = e
+							}
+						}
+					},
+					LazyLoad: function(e, t, n) {
+						var i = mt(e),
+							r = i.on,
+							o = i.off,
+							s = i.bind,
+							a = i.emit,
+							c = "sequential" === n.lazyLoad,
+							u = [Ve, We, Ke, ot],
+							l = [];
+
+						function p() {
+							C(l), t.Slides.forEach((function(e) {
+								Ne(e.slide, Sn).forEach((function(t) {
+									var i = he(t, wn),
+										r = he(t, Dn);
+									if (i !== t.src || r !== t.srcset) {
+										var o = n.classes.spinner,
+											s = t.parentElement,
+											a = ne(s, "." + o) || le("span", o, s);
+										l.push([t, e, a]), t.src || fe(t, "none")
+									}
+								}))
+							})), c && v()
+						}
+
+						function f() {
+							(l = l.filter((function(t) {
+								var i = n.perPage * ((n.preloadPages || 1) + 1) - 1;
+								return !t[1].isWithin(e.index, i) || d(t)
+							}))).length || o(u)
+						}
+
+						function d(e) {
+							var t = e[0];
+							W(e[1].slide, tn), s(t, "load error", R(h, e)), ue(t, "src", he(t, wn)), ue(t, "srcset", he(t, Dn)), ce(t, wn), ce(t, Dn)
+						}
+
+						function h(e, t) {
+							var n = e[0],
+								i = e[1];
+							Te(i.slide, tn), "error" !== t.type && (ye(e[2]), fe(n, ""), a(vt, n, i), a(Ze)), c && v()
+						}
+
+						function v() {
+							l.length && d(l.shift())
+						}
+						return {
+							mount: function() {
+								n.lazyLoad && (p(), r(We, p), c || r(u, f))
+							},
+							destroy: R(C, l)
+						}
+					},
+					Pagination: function(e, t, n) {
+						var i, r, o = mt(e),
+							s = o.on,
+							a = o.emit,
+							c = o.bind,
+							u = t.Slides,
+							l = t.Elements,
+							p = t.Controller,
+							f = p.hasFocus,
+							d = p.getIndex,
+							h = p.go,
+							v = t.Direction.resolve,
+							m = [];
+
+						function y() {
+							i && (ye(l.pagination ? L(i.children) : i), Te(i, r), C(m), i = null), o.destroy()
+						}
+
+						function E(e) {
+							h(">" + e, !0)
+						}
+
+						function g(e, t) {
+							var n = m.length,
+								i = kn(t),
+								r = _(),
+								o = -1;
+							i === v(gt, !1, r) ? o = ++e % n : i === v(Et, !1, r) ? o = (--e + n) % n : "Home" === i ? o = 0 : "End" === i && (o = n - 1);
+							var s = m[o];
+							s && (de(s.button), h(">" + o), ge(t, !0))
+						}
+
+						function _() {
+							return n.paginationDirection || n.direction
+						}
+
+						function N(e) {
+							return m[p.toPage(e)]
+						}
+
+						function T() {
+							var e = N(d(!0)),
+								t = N(d());
+							if (e) {
+								var n = e.button;
+								Te(n, Wt), ce(n, kt), ue(n, Ot, -1)
+							}
+							if (t) {
+								var r = t.button;
+								W(r, Wt), ue(r, kt, !0), ue(r, Ot, "")
+							}
+							a(lt, {
+								list: i,
+								items: m
+							}, e, t)
+						}
+						return {
+							items: m,
+							mount: function t() {
+								y(), s([He, We], t), n.pagination && u.isEnough() && (s([qe, rt, ot], T), function() {
+									var t = e.length,
+										o = n.classes,
+										s = n.i18n,
+										a = n.perPage,
+										p = f() ? t : Se(t / a);
+									W(i = l.pagination || le("ul", o.pagination, l.track.parentElement), r = zt + "--" + _()), ue(i, bt, "tablist"), ue(i, At, s.select), ue(i, St, _() === Nt ? "vertical" : "");
+									for (var d = 0; d < p; d++) {
+										var h = le("li", null, i),
+											v = le("button", {
+												class: o.page,
+												type: "button"
+											}, h),
+											y = u.getIn(d).map((function(e) {
+												return e.slide.id
+											})),
+											N = !f() && a > 1 ? s.pageX : s.slideX;
+										c(v, "click", R(E, d)), n.paginationKeyboard && c(v, "keydown", R(g, d)), ue(h, bt, "presentation"), ue(v, bt, "tab"), ue(v, xt, y.join(" ")), ue(v, At, Me(N, d + 1)), ue(v, Ot, -1), m.push({
+											li: h,
+											button: v,
+											page: d
+										})
+									}
+								}(), T(), a(ut, {
+									list: i,
+									items: m
+								}, N(e.index)))
+							},
+							destroy: y,
+							getAt: N,
+							update: T
+						}
+					},
+					Sync: function(e, t, n) {
+						var i = n.isNavigation,
+							r = n.slideFocus,
+							o = [];
+
+						function s() {
+							var t, n;
+							e.splides.forEach((function(t) {
+								t.isParent || (c(e, t.splide), c(t.splide, e))
+							})), i && (t = mt(e), (n = t.on)(Ye, l), n(Xe, p), n([Ve, He], u), o.push(t), t.emit(pt, e.splides))
+						}
+
+						function a() {
+							o.forEach((function(e) {
+								e.destroy()
+							})), C(o)
+						}
+
+						function c(e, t) {
+							var n = mt(e);
+							n.on(qe, (function(e, n, i) {
+								t.go(t.is(fn) ? i : e)
+							})), o.push(n)
+						}
+
+						function u() {
+							ue(t.Elements.list, St, n.direction === Nt ? "vertical" : "")
+						}
+
+						function l(t) {
+							e.go(t.index)
+						}
+
+						function p(e, t) {
+							J(Cn, kn(t)) && (l(e), ge(t))
+						}
+						return {
+							setup: function() {
+								e.options = {
+									slideFocus: K(r) ? i : r
+								}
+							},
+							mount: s,
+							destroy: a,
+							remount: function() {
+								a(), s()
+							}
+						}
+					},
+					Wheel: function(e, t, n) {
+						var i = mt(e).bind,
+							r = 0;
+
+						function o(i) {
+							if (i.cancelable) {
+								var o = i.deltaY,
+									s = o < 0,
+									a = be(i),
+									c = n.wheelMinThreshold || 0,
+									u = n.wheelSleep || 0;
+								Ce(o) > c && a - r > u && (e.go(s ? "<" : ">"), r = a),
+									function(i) {
+										return !n.releaseWheel || e.state.is(k) || -1 !== t.Controller.getAdjacent(i)
+									}(s) && ge(i)
+							}
+						}
+						return {
+							mount: function() {
+								n.wheel && i(t.Elements.track, "wheel", o, xn)
+							}
+						}
+					},
+					Live: function(e, t, n) {
+						var i = mt(e).on,
+							r = t.Elements.track,
+							o = n.live && !n.isNavigation,
+							s = le("span", Xt);
+
+						function a(e) {
+							o && ue(r, Lt, e ? "off" : "polite")
+						}
+						return {
+							mount: function() {
+								o && (a(!t.Autoplay.isPaused()), ue(r, Rt, "additions"), s.textContent = "…", i(ft, R(a, !0)), i(ht, R(a, !1)), i([Ke, ot], R(H, r, s)))
+							},
+							disable: a,
+							destroy: function() {
+								ce(r, [Lt, Rt]), ye(s)
+							}
+						}
+					}
+				}),
+				Rn = {
+					type: "slide",
+					role: "region",
+					speed: 400,
+					perPage: 1,
+					cloneStatus: !0,
+					arrows: !0,
+					pagination: !0,
+					paginationKeyboard: !0,
+					interval: 5e3,
+					pauseOnHover: !0,
+					pauseOnFocus: !0,
+					resetProgress: !0,
+					easing: "cubic-bezier(0.25, 1, 0.5, 1)",
+					drag: !0,
+					direction: "ltr",
+					trimSpace: !0,
+					focusableNodes: "a, button, textarea, input, select, iframe",
+					live: !0,
+					classes: on,
+					i18n: {
+						prev: "Previous slide",
+						next: "Next slide",
+						first: "Go to first slide",
+						last: "Go to last slide",
+						slideX: "Go to slide %s",
+						pageX: "Go to page %s",
+						play: "Start autoplay",
+						pause: "Pause autoplay",
+						carousel: "carousel",
+						slide: "slide",
+						select: "Select a slide to show",
+						slideLabel: "%s of %s"
+					},
+					reducedMotion: {
+						speed: 0,
+						rewindSpeed: 0,
+						autoplay: "pause"
+					}
+				};
+
+			function Fn(e, t, n) {
+				var i = mt(e).on;
+				return {
+					mount: function() {
+						i([Ve, We], (function() {
+							F((function() {
+								t.Slides.style("transition", "opacity " + n.speed + "ms " + n.easing)
+							}))
+						}))
+					},
+					start: function(e, n) {
+						var i = t.Elements.track;
+						pe(i, "height", Oe(me(i).height)), F((function() {
+							n(), pe(i, "height", "")
+						}))
+					},
+					cancel: P
+				}
+			}
+
+			function Pn(e, t, n) {
+				var i, r = mt(e).bind,
+					o = t.Move,
+					s = t.Controller,
+					a = t.Scroll,
+					c = t.Elements.list,
+					u = R(pe, c, "transition");
+
+				function l() {
+					u(""), a.cancel()
+				}
+				return {
+					mount: function() {
+						r(c, "transitionend", (function(e) {
+							e.target === c && i && (l(), i())
+						}))
+					},
+					start: function(t, r) {
+						var c = o.toPosition(t, !0),
+							l = o.getPosition(),
+							p = function(t) {
+								var i = n.rewindSpeed;
+								if (e.is(pn) && i) {
+									var r = s.getIndex(!0),
+										o = s.getEnd();
+									if (0 === r && t >= o || r >= o && 0 === t) return i
+								}
+								return n.speed
+							}(t);
+						Ce(c - l) >= 1 && p >= 1 ? n.useScroll ? a.scroll(c, p, !1, r) : (u("transform " + p + "ms " + n.easing), o.translate(c, !0), i = r) : (o.jump(t), r())
+					},
+					cancel: l
+				}
+			}
+			var Mn = function() {
+				function e(t, n) {
+					var i;
+					this.event = mt(), this.Components = {}, this.state = (i = x, {
+						set: function(e) {
+							i = e
+						},
+						is: function(e) {
+							return J(z(e), i)
+						}
+					}), this.splides = [], this._o = {}, this._E = {};
+					var r = q(t) ? _e(document, t) : t;
+					ke(r, r + " is invalid."), this.root = r, n = se({
+						label: he(r, At) || "",
+						labelledby: he(r, wt) || ""
+					}, Rn, e.defaults, n || {});
+					try {
+						se(n, JSON.parse(he(r, Ie)))
+					} catch (o) {
+						ke(!1, "Invalid JSON")
+					}
+					this._o = Object.create(se({}, n))
+				}
+				var t, n, i, r = e.prototype;
+				return r.mount = function(e, t) {
+					var n = this,
+						i = this.state,
+						r = this.Components;
+					return ke(i.is([x, D]), "Already mounted!"), i.set(x), this._C = r, this._T = t || this._T || (this.is(dn) ? Fn : Pn), this._E = e || this._E, re(oe({}, Ln, this._E, {
+						Transition: this._T
+					}), (function(e, t) {
+						var i = e(n, r, n._o);
+						r[t] = i, i.setup && i.setup()
+					})), re(r, (function(e) {
+						e.mount && e.mount()
+					})), this.emit(Ve), W(this.root, "is-initialized"), i.set(I), this.emit("ready"), this
+				}, r.sync = function(e) {
+					return this.splides.push({
+						splide: e
+					}), e.splides.push({
+						splide: this,
+						isParent: !0
+					}), this.state.is(I) && (this._C.Sync.remount(), e.Components.Sync.remount()), this
+				}, r.go = function(e) {
+					return this._C.Controller.go(e), this
+				}, r.on = function(e, t) {
+					return this.event.on(e, t), this
+				}, r.off = function(e) {
+					return this.event.off(e), this
+				}, r.emit = function(e) {
+					var t;
+					return (t = this.event).emit.apply(t, [e].concat(L(arguments, 1))), this
+				}, r.add = function(e, t) {
+					return this._C.Slides.add(e, t), this
+				}, r.remove = function(e) {
+					return this._C.Slides.remove(e), this
+				}, r.is = function(e) {
+					return this._o.type === e
+				}, r.refresh = function() {
+					return this.emit(We), this
+				}, r.destroy = function(e) {
+					void 0 === e && (e = !0);
+					var t = this.event,
+						n = this.state;
+					return n.is(x) ? mt(this).on("ready", this.destroy.bind(this, e)) : (re(this._C, (function(t) {
+						t.destroy && t.destroy(e)
+					}), !0), t.emit(st), t.destroy(), e && C(this.splides), n.set(D)), this
+				}, t = e, (n = [{
+					key: "options",
+					get: function() {
+						return this._o
+					},
+					set: function(e) {
+						this._C.Media.set(e, !0)
+					}
+				}, {
+					key: "length",
+					get: function() {
+						return this._C.Slides.getLength(!0)
+					}
+				}, {
+					key: "index",
+					get: function() {
+						return this._C.Controller.getIndex()
+					}
+				}]) && b(t.prototype, n), i && b(t, i), Object.defineProperty(t, "prototype", {
+					writable: !1
+				}), e
+			}();
+			Mn.defaults = {}, Mn.STATES = S;
+			var jn = [
+				[Ve, "onMounted"],
+				["ready", "onReady"],
+				[qe, "onMove"],
+				[Ke, "onMoved"],
+				[Ye, "onClick"],
+				[ze, "onActive"],
+				[$e, "onInactive"],
+				[Je, "onVisible"],
+				[Qe, "onHidden"],
+				[We, "onRefresh"],
+				[He, "onUpdated"],
+				[Ze, "onResize"],
+				[et, "onResized"],
+				[tt, "onDrag"],
+				[nt, "onDragging"],
+				[it, "onDragged"],
+				[rt, "onScroll"],
+				[ot, "onScrolled"],
+				[st, "onDestroy"],
+				[at, "onArrowsMounted"],
+				[ct, "onArrowsUpdated"],
+				[ut, "onPaginationMounted"],
+				[lt, "onPaginationUpdated"],
+				[pt, "onNavigationMounted"],
+				[ft, "onAutoplayPlay"],
+				[dt, "onAutoplayPlaying"],
+				[ht, "onAutoplayPause"],
+				[vt, "onLazyLoadLoaded"]
+			];
+
+			function Bn(...e) {
+				return e.filter(Boolean).join(" ")
+			}
+
+			function Un(e) {
+				return null !== e && "object" == typeof e
+			}
+
+			function Vn(e, t) {
+				const n = e;
+				return function(e, t) {
+					if (e) {
+						const n = Object.keys(e);
+						for (let i = 0; i < n.length; i++) {
+							const r = n[i];
+							if ("__proto__" !== r && !1 === t(e[r], r)) break
+						}
+					}
+				}(t, (e, t) => {
+					Array.isArray(e) ? n[t] = e.slice() : Un(e) ? n[t] = Vn(Un(n[t]) ? n[t] : {}, e) : n[t] = e
+				}), n
+			}
+			var qn = e => {
+					var t = e,
+						{
+							children: n,
+							className: i
+						} = t,
+						o = v(t, ["children", "className"]);
+					return r.a.createElement("div", h({
+						className: Bn("splide__track", i)
+					}, o), r.a.createElement("ul", {
+						className: "splide__list"
+					}, n))
+				},
+				Kn = class extends r.a.Component {
+					constructor() {
+						super(...arguments), this.splideRef = r.a.createRef(), this.slides = []
+					}
+					componentDidMount() {
+						const {
+							options: e,
+							extensions: t,
+							transition: n
+						} = this.props, {
+							current: i
+						} = this.splideRef;
+						i && (this.splide = new Mn(i, e), this.bind(this.splide), this.splide.mount(t, n), this.options = Vn({}, e || {}), this.slides = this.getSlides())
+					}
+					componentWillUnmount() {
+						this.splide && (this.splide.destroy(), this.splide = void 0), this.options = void 0, this.slides.length = 0
+					}
+					componentDidUpdate() {
+						if (!this.splide) return;
+						const {
+							options: e
+						} = this.props;
+						e && ! function e(t, n) {
+							if (Array.isArray(t) && Array.isArray(n)) return t.length === n.length && !t.some((t, i) => !e(t, n[i]));
+							if (Un(t) && Un(n)) {
+								const i = Object.keys(t),
+									r = Object.keys(n);
+								return i.length === r.length && !i.some(i => !Object.prototype.hasOwnProperty.call(n, i) || !e(t[i], n[i]))
+							}
+							return t === n
+						}(this.options, e) && (this.splide.options = e, this.options = Vn({}, e));
+						const t = this.getSlides();
+						var n, i;
+						n = this.slides, i = t, (n.length !== i.length || n.some((e, t) => e !== i[t])) && (this.splide.refresh(), this.slides = t)
+					}
+					sync(e) {
+						var t;
+						null == (t = this.splide) || t.sync(e)
+					}
+					go(e) {
+						var t;
+						null == (t = this.splide) || t.go(e)
+					}
+					getSlides() {
+						var e;
+						if (this.splide) {
+							const t = null == (e = this.splide.Components.Elements) ? void 0 : e.list.children;
+							return t && Array.prototype.slice.call(t) || []
+						}
+						return []
+					}
+					bind(e) {
+						jn.forEach(([t, n]) => {
+							const i = this.props[n];
+							"function" == typeof i && e.on(t, (...t) => {
+								i(e, ...t)
+							})
+						})
+					}
+					omit(e, t) {
+						return t.forEach(t => {
+							Object.prototype.hasOwnProperty.call(e, t) && delete e[t]
+						}), e
+					}
+					render() {
+						const e = this.props,
+							{
+								className: t,
+								tag: n = "div",
+								hasTrack: i = !0,
+								children: o
+							} = e,
+							s = v(e, ["className", "tag", "hasTrack", "children"]);
+						return r.a.createElement(n, h({
+							className: Bn("splide", t),
+							ref: this.splideRef
+						}, this.omit(s, ["options", ...jn.map(e => e[1])])), i ? r.a.createElement(qn, null, o) : o)
+					}
+				},
+				Gn = e => {
+					var t = e,
+						{
+							children: n,
+							className: i
+						} = t,
+						o = v(t, ["children", "className"]);
+					return r.a.createElement("li", h({
+						className: Bn("splide__slide", i)
+					}, o), n)
+				};
+			var Yn = "_carousel_enqhw_7",
+				zn = "_slide_enqhw_15",
+				$n = "_slideImage_enqhw_25",
+				Jn = "_isVisible_enqhw_31",
+				Qn = "_isActiveSlide_enqhw_34",
+				Xn = "_arrow_enqhw_39",
+				Wn = "_disabledArrow_enqhw_60",
+				Hn = "_chevron_enqhw_63",
+				Zn = "_prev_enqhw_66",
+				ei = "_next_enqhw_73",
+				ti = "_dots_enqhw_79",
+				ni = "_dot_enqhw_79",
+				ii = "_isActiveDot_enqhw_97";
+			const ri = ({
+				factions: e,
+				onChange: t
+			}) => {
+				const n = Object(i.useRef)(null),
+					a = Object(o.c)(),
+					[c, u] = Object(i.useState)(0);
+				return Object(i.useEffect)(() => {
+					const e = document.querySelectorAll(`.${ii}`);
+					e.length && e.forEach(e => e.classList.remove(`.${ii}`));
+					const t = document.querySelectorAll(".splide__pagination__page.is-active");
+					t.length && t[0].classList.add(`.${ii}`)
+				}, [c]), r.a.createElement(Kn, {
+					ref: n,
+					hasTrack: !1,
+					"aria-label": a.inline("Factions carousel", "Image carousel: list of factions for users to select from"),
+					options: {
+						type: "slide",
+						perMove: 1,
+						drag: !1,
+						width: "calc(100% - 90px)",
+						fixedWidth: "202px",
+						focus: "center",
+						trimSpace: !1,
+						speed: 600,
+						classes: {
+							pagination: `splide__pagination ${ti}`,
+							page: `splide__pagination__page ${ni}`
+						}
+					},
+					onMove: (e, n) => {
+						u(n), t && t(n)
+					},
+					className: g(Yn)
+				}, r.a.createElement(qn, null, e.map(({
+					name: e,
+					images: t
+				}, n) => r.a.createElement(Gn, {
+					key: n,
+					className: g(zn, {
+						[Qn]: n === c,
+						[Jn]: 1 === Math.abs(c - n)
+					})
+				}, r.a.createElement("img", {
+					src: t[0].url,
+					alt: e,
+					className: $n
+				})))), r.a.createElement("div", {
+					className: "splide__arrows"
+				}, r.a.createElement("button", {
+					className: g("splide__arrow splide__arrow--prev", Xn, Zn, {
+						[Wn]: 0 === c
+					}),
+					disabled: 0 === c
+				}, r.a.createElement("img", {
+					src: s.g.Chevron,
+					className: Hn
+				})), r.a.createElement("button", {
+					className: g("splide__arrow splide__arrow--next", Xn, ei, {
+						[Wn]: c === e.length - 1
+					}),
+					disabled: c === e.length - 1
+				}, r.a.createElement("img", {
+					src: s.g.Chevron,
+					className: Hn
+				}))))
+			};
+			var oi = "https://www.redditstatic.com/crypto-assets/v2/close-contained-4d7c7d218a.svg",
+				si = "https://www.redditstatic.com/crypto-assets/v2/close-dark-f5902178f9.svg",
+				ai = "https://www.redditstatic.com/crypto-assets/v2/close-1a7014e63e.svg";
+			var ci = "_closeButton_bz0xz_1",
+				ui = "_contained_bz0xz_13",
+				li = "_closeIcon_bz0xz_22";
+			const pi = ({
 				contained: e,
 				theme: t,
 				className: n,
 				onClick: i
 			}) => r.a.createElement("button", {
-				className: y(O, n, {
-					[x]: e
+				className: g(ci, n, {
+					[ui]: e
 				}),
 				onClick: i
 			}, r.a.createElement("img", {
-				className: I,
-				src: A(t, e)
+				className: li,
+				src: fi(t, e)
 			}));
 
-			function A(e, t) {
-				if (t) return N;
+			function fi(e, t) {
+				if (t) return oi;
 				switch (e) {
 					case "dark":
-						return T;
+						return si;
 					default:
-						return b
+						return ai
 				}
 			}
-			var w = {};
-			Object.defineProperty(w, "__esModule", {
+			const di = {
+				Achievement: "https://www.redditstatic.com/crypto-assets/v2/achievement-3febd9cb09.svg",
+				AvatarGear: "https://www.redditstatic.com/crypto-assets/v2/avatar-gear-71f4031cf4.svg",
+				BlockchainFilled: "https://www.redditstatic.com/crypto-assets/v2/blockchain-filled-5c6fc10547.svg",
+				CardExample: "https://www.redditstatic.com/crypto-assets/v2/card-example-abbcb94211.svg",
+				CheckmarkGreen: "https://www.redditstatic.com/crypto-assets/v2/checkmark-green-7355fd2559.svg",
+				CheckmarkGrey: "https://www.redditstatic.com/crypto-assets/v2/checkmark-grey-1978f4add3.svg",
+				Chevron: "https://www.redditstatic.com/crypto-assets/v2/chevron-ca25b73dda.svg",
+				CloseContained: oi,
+				CloseDark: si,
+				Close: ai,
+				Collectible: "https://www.redditstatic.com/crypto-assets/v2/collectible-0b6bff0d23.svg",
+				DoubleEyeFilled: "https://www.redditstatic.com/crypto-assets/v2/double-eye-filled-a845a76f95.svg",
+				Duplicate: "https://www.redditstatic.com/crypto-assets/v2/duplicate-66af363d56.svg",
+				Ellipse: "https://www.redditstatic.com/crypto-assets/v2/ellipse-2e713b908d.svg",
+				InfoFilled: "https://www.redditstatic.com/crypto-assets/v2/info-filled-24d30a597b.svg",
+				Nft: "https://www.redditstatic.com/crypto-assets/v2/nft-31cc27e3a3.svg",
+				Reddit: "https://www.redditstatic.com/crypto-assets/v2/reddit-d9fb338c35.svg",
+				Spotlight: "https://www.redditstatic.com/crypto-assets/v2/spotlight-64a6d1926b.svg",
+				StandOut: "https://www.redditstatic.com/crypto-assets/v2/stand-out-01fba311d3.svg",
+				TransferToVault: "https://www.redditstatic.com/crypto-assets/v2/transfer-to-vault-8a3773b030.svg",
+				Transferable: "https://www.redditstatic.com/crypto-assets/v2/transferable-041e6b0265.svg",
+				Vault: "https://www.redditstatic.com/crypto-assets/v2/vault-cfd0500d93.svg"
+			};
+			const hi = ({
+				href: e,
+				className: t,
+				children: n
+			}) => r.a.createElement("a", {
+				href: e,
+				target: "_blank",
+				rel: "noopener noreferrer",
+				className: t
+			}, n);
+			var vi = "_loadingContainer_1iitb_1",
+				mi = "_loadingContent_1iitb_11";
+			const yi = ({
+				hasError: e,
+				className: t
+			}) => r.a.createElement("div", {
+				className: g(vi, t)
+			}, r.a.createElement("div", {
+				className: mi
+			}, r.a.createElement(s.j, null), e && r.a.createElement(s.f, null)));
+			var Ei = "_container_10e6p_1";
+			const gi = ({
+				className: e
+			}) => r.a.createElement("svg", {
+				width: "24",
+				height: "24",
+				viewBox: "0 0 24 24",
+				fill: "none",
+				xmlns: "http://www.w3.org/2000/svg",
+				className: g(e, Ei)
+			}, r.a.createElement("g", {
+				clipPath: "url(#clip0_1524_96476)"
+			}, r.a.createElement("path", {
+				fillRule: "evenodd",
+				clipRule: "evenodd",
+				d: "M0.550365 15.5928C0.63966 15.8773 0.950781 16.0216 1.23103 15.9196C1.51128 15.8176 1.6544 15.508 1.56637 15.223C0.941235 13.1994 0.917002 11.0334 1.50293 8.99004C2.13857 6.7733 3.45967 4.81469 5.27689 3.39493C7.0941 1.97516 9.31413 1.16714 11.6188 1.08666C13.5072 1.02071 15.3731 1.44602 17.0372 2.31123C16.9414 2.55943 16.8889 2.82914 16.8889 3.11111C16.8889 4.33841 17.8838 5.33333 19.1111 5.33333C20.3384 5.33333 21.3333 4.33841 21.3333 3.11111C21.3333 1.88381 20.3384 0.888889 19.1111 0.888889C18.5597 0.888889 18.0551 1.08975 17.6667 1.4223C15.8051 0.424965 13.7061 -0.0668907 11.5811 0.00731693C9.04851 0.0957566 6.60891 0.983698 4.61197 2.54388C2.61503 4.10406 1.16328 6.25637 0.464769 8.69235C-0.184035 10.955 -0.152034 13.3545 0.550365 15.5928ZM23.4496 8.40721C23.3603 8.12266 23.0492 7.97844 22.769 8.08045C22.4887 8.18245 22.3456 8.49202 22.4336 8.77697C23.0588 10.8006 23.083 12.9666 22.4971 15.01C21.8614 17.2267 20.5403 19.1853 18.7231 20.6051C16.9059 22.0248 14.6859 22.8329 12.3812 22.9133C10.4928 22.9793 8.62694 22.554 6.9628 21.6888C7.05859 21.4406 7.11111 21.1709 7.11111 20.8889C7.11111 19.6616 6.11619 18.6667 4.88889 18.6667C3.66159 18.6667 2.66667 19.6616 2.66667 20.8889C2.66667 22.1162 3.66159 23.1111 4.88889 23.1111C5.44033 23.1111 5.94487 22.9102 6.33331 22.5777C8.19492 23.575 10.2939 24.0669 12.4189 23.9927C14.9515 23.9042 17.3911 23.0163 19.388 21.4561C21.385 19.8959 22.8367 17.7436 23.5352 15.3076C24.184 13.045 24.152 10.6455 23.4496 8.40721ZM12 16.8889C14.7001 16.8889 16.8889 14.7001 16.8889 12C16.8889 9.29994 14.7001 7.11111 12 7.11111C9.29994 7.11111 7.11111 9.29994 7.11111 12C7.11111 14.7001 9.29994 16.8889 12 16.8889Z",
+				fill: "currentColor"
+			})), r.a.createElement("defs", null, r.a.createElement("clipPath", {
+				id: "clip0_1524_96476"
+			}, r.a.createElement("rect", {
+				width: "24",
+				height: "24",
+				fill: "white"
+			}))));
+			var _i = {};
+			Object.defineProperty(_i, "__esModule", {
 				value: !0
 			});
-			var D, S = Object.assign || function(e) {
+			var Ni, Ti = Object.assign || function(e) {
 					for (var t = 1; t < arguments.length; t++) {
 						var n = arguments[t];
 						for (var i in n) Object.prototype.hasOwnProperty.call(n, i) && (e[i] = n[i])
 					}
 					return e
 				},
-				C = function() {
+				bi = function() {
 					function e(e, t) {
 						for (var n = 0; n < t.length; n++) {
 							var i = t[n];
@@ -3294,12 +5549,12 @@
 						return n && e(t.prototype, n), i && e(t, i), t
 					}
 				}(),
-				L = r.a,
-				R = (D = L) && D.__esModule ? D : {
-					default: D
+				Oi = r.a,
+				xi = (Ni = Oi) && Ni.__esModule ? Ni : {
+					default: Ni
 				},
-				F = s.a;
-			var P = function(e) {
+				Ii = c.a;
+			var ki = function(e) {
 				function t(e) {
 					! function(e, t) {
 						if (!(e instanceof t)) throw new TypeError("Cannot call a class as a function")
@@ -3333,10 +5588,10 @@
 							configurable: !0
 						}
 					}), t && (Object.setPrototypeOf ? Object.setPrototypeOf(e, t) : e.__proto__ = t)
-				}(t, e), C(t, [{
+				}(t, e), bi(t, [{
 					key: "componentDidMount",
 					value: function() {
-						this.element = (0, F.findDOMNode)(this)
+						this.element = (0, Ii.findDOMNode)(this)
 					}
 				}, {
 					key: "componentWillUnmount",
@@ -3349,7 +5604,7 @@
 						var e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : function() {},
 							t = arguments[1];
 						return this.updateElementPosition(), this.setState(Object.assign({}, this.state, {
-							style: S({}, this.state.style, {
+							style: Ti({}, this.state.style, {
 								willChange: "transform"
 							})
 						})), this.setTransition(), e(t)
@@ -3360,7 +5615,7 @@
 						var e = this;
 						window.requestAnimationFrame((function() {
 							e.setState(Object.assign({}, e.state, {
-								style: S({}, e.state.style, {
+								style: Ti({}, e.state.style, {
 									transform: "perspective(" + e.settings.perspective + "px) rotateX(0deg) rotateY(0deg) scale3d(1, 1, 1)"
 								})
 							}))
@@ -3378,12 +5633,12 @@
 					value: function() {
 						var e = this;
 						clearTimeout(this.transitionTimeout), this.setState(Object.assign({}, this.state, {
-							style: S({}, this.state.style, {
+							style: Ti({}, this.state.style, {
 								transition: this.settings.speed + "ms " + this.settings.easing
 							})
 						})), this.transitionTimeout = setTimeout((function() {
 							e.setState(Object.assign({}, e.state, {
-								style: S({}, e.state.style, {
+								style: Ti({}, e.state.style, {
 									transition: ""
 								})
 							}))
@@ -3421,7 +5676,7 @@
 					value: function(e) {
 						var t = this.getValues(e);
 						this.setState(Object.assign({}, this.state, {
-							style: S({}, this.state.style, {
+							style: Ti({}, this.state.style, {
 								transform: "perspective(" + this.settings.perspective + "px) rotateX(" + ("x" === this.settings.axis ? 0 : t.tiltY) + "deg) rotateY(" + ("y" === this.settings.axis ? 0 : t.tiltX) + "deg) scale3d(" + this.settings.scale + ", " + this.settings.scale + ", " + this.settings.scale + ")"
 							})
 						})), this.updateCall = null
@@ -3430,7 +5685,7 @@
 					key: "render",
 					value: function() {
 						var e = Object.assign({}, this.props.style, this.state.style);
-						return R.default.createElement("div", {
+						return xi.default.createElement("div", {
 							style: e,
 							className: this.props.className,
 							onMouseEnter: this.onMouseEnter,
@@ -3439,35 +5694,16 @@
 						}, this.props.children)
 					}
 				}]), t
-			}(L.Component);
-			w.default = P;
-			var M = {
-				container: "_container_1cw7m_42"
-			};
-			const j = ({
-				value: e,
-				direction: t,
-				className: n
-			}) => {
-				const i = "up" === t;
-				return r.a.createElement("div", {
-					className: y(M.container, n, i ? M.upVote : M.downVote)
-				}, r.a.createElement("img", {
-					src: i ? "https://www.redditstatic.com/crypto-assets/v2/upvote-e1dfcbf404.svg" : "https://www.redditstatic.com/crypto-assets/v2/downvote-37897edc0e.svg"
-				}), e ? function(e) {
-					let t;
-					"number" == typeof e ? (e >= 1e3 && (e /= 1e3, e = `${e=Math.round(100*e)/100}k`), t = e.toString()) : t = e;
-					return t
-				}(e) : void 0)
-			};
-			const B = ({
+			}(Oi.Component);
+			_i.default = ki;
+			const Ai = ({
 				children: e,
 				desc: t
 			}) => {
-				const n = Object(c.c)();
+				const n = Object(o.c)();
 				return r.a.createElement(r.a.Fragment, null, n.singular(e, t))
 			};
-			var U = {
+			var wi = {
 				container: "_container_9znh3_42",
 				toast: "_toast_9znh3_54",
 				bar: "_bar_9znh3_68",
@@ -3481,22 +5717,22 @@
 				leaving: "_leaving_9znh3_106",
 				fadeOut: "_fadeOut_9znh3_1"
 			};
-			const V = ({
+			const Di = ({
 					className: e,
 					kind: t,
 					children: n,
-					onClose: s,
-					duration: a = 0
+					onClose: o,
+					duration: s = 0
 				}) => {
-					const c = Object(i.useMemo)(Y, []);
-					return "undefined" == typeof document || void 0 === document.createElement ? r.a.createElement(r.a.Fragment, null) : Object(o.createPortal)(r.a.createElement(q, {
+					const c = Object(i.useMemo)(Ri, []);
+					return "undefined" == typeof document || void 0 === document.createElement ? r.a.createElement(r.a.Fragment, null) : Object(a.createPortal)(r.a.createElement(Si, {
 						className: e,
 						kind: t,
-						onClose: s,
-						duration: a
+						onClose: o,
+						duration: s
 					}, n), c)
 				},
-				q = ({
+				Si = ({
 					className: e,
 					kind: t,
 					children: n,
@@ -3509,8 +5745,8 @@
 					return Object(i.useEffect)(() => {
 						c(!1);
 						const e = u.current;
-						e && (e.classList.add(U.entering), e.addEventListener("animationend", () => {
-							e.classList.remove(U.entering)
+						e && (e.classList.add(wi.entering), e.addEventListener("animationend", () => {
+							e.classList.remove(wi.entering)
 						}))
 					}, [n]), Object(i.useEffect)(() => {
 						const e = s ? setTimeout(l, s) : null;
@@ -3519,2262 +5755,53 @@
 						}
 					}, [s, l]), a ? r.a.createElement(r.a.Fragment, null) : r.a.createElement("div", {
 						ref: u,
-						className: y(U.toast, e, "error" === t ? U.errorKind : U.successKind)
+						className: g(wi.toast, e, "error" === t ? wi.errorKind : wi.successKind)
 					}, r.a.createElement("div", {
-						className: U.bar
+						className: wi.bar
 					}), r.a.createElement("div", {
-						className: U.image
+						className: wi.image
 					}, r.a.createElement("img", {
 						src: "https://www.redditstatic.com/crypto-assets/v2/error-image-c10a891d4e.svg"
 					})), r.a.createElement("div", {
-						className: U.content
+						className: wi.content
 					}, n), r.a.createElement("div", {
-						className: U.close,
+						className: wi.close,
 						onClick: l
 					}, r.a.createElement("img", {
 						src: "https://www.redditstatic.com/crypto-assets/v2/close-41452e2e4d.png"
 					})))
 				},
-				K = () => r.a.createElement(V, {
+				Ci = () => r.a.createElement(Di, {
 					kind: "error",
 					duration: 5e3
-				}, r.a.createElement(B, {
+				}, r.a.createElement(Ai, {
 					desc: ""
 				}, "Something went wrong, please try again")),
-				G = "reddit-crypto-toast-wrapper";
+				Li = "reddit-crypto-toast-wrapper";
 
-			function Y() {
-				let e = document.getElementById(G);
-				return e || ((e = document.createElement("div")).id = G, e.className = U.container, document.body.appendChild(e)), e
+			function Ri() {
+				let e = document.getElementById(Li);
+				return e || ((e = document.createElement("div")).id = Li, e.className = wi.container, document.body.appendChild(e)), e
 			}
-			var z = "_container_10e6p_1";
-			const $ = ({
-				className: e
-			}) => r.a.createElement("svg", {
-				width: "24",
-				height: "24",
-				viewBox: "0 0 24 24",
-				fill: "none",
-				xmlns: "http://www.w3.org/2000/svg",
-				className: y(e, z)
-			}, r.a.createElement("g", {
-				clipPath: "url(#clip0_1524_96476)"
-			}, r.a.createElement("path", {
-				fillRule: "evenodd",
-				clipRule: "evenodd",
-				d: "M0.550365 15.5928C0.63966 15.8773 0.950781 16.0216 1.23103 15.9196C1.51128 15.8176 1.6544 15.508 1.56637 15.223C0.941235 13.1994 0.917002 11.0334 1.50293 8.99004C2.13857 6.7733 3.45967 4.81469 5.27689 3.39493C7.0941 1.97516 9.31413 1.16714 11.6188 1.08666C13.5072 1.02071 15.3731 1.44602 17.0372 2.31123C16.9414 2.55943 16.8889 2.82914 16.8889 3.11111C16.8889 4.33841 17.8838 5.33333 19.1111 5.33333C20.3384 5.33333 21.3333 4.33841 21.3333 3.11111C21.3333 1.88381 20.3384 0.888889 19.1111 0.888889C18.5597 0.888889 18.0551 1.08975 17.6667 1.4223C15.8051 0.424965 13.7061 -0.0668907 11.5811 0.00731693C9.04851 0.0957566 6.60891 0.983698 4.61197 2.54388C2.61503 4.10406 1.16328 6.25637 0.464769 8.69235C-0.184035 10.955 -0.152034 13.3545 0.550365 15.5928ZM23.4496 8.40721C23.3603 8.12266 23.0492 7.97844 22.769 8.08045C22.4887 8.18245 22.3456 8.49202 22.4336 8.77697C23.0588 10.8006 23.083 12.9666 22.4971 15.01C21.8614 17.2267 20.5403 19.1853 18.7231 20.6051C16.9059 22.0248 14.6859 22.8329 12.3812 22.9133C10.4928 22.9793 8.62694 22.554 6.9628 21.6888C7.05859 21.4406 7.11111 21.1709 7.11111 20.8889C7.11111 19.6616 6.11619 18.6667 4.88889 18.6667C3.66159 18.6667 2.66667 19.6616 2.66667 20.8889C2.66667 22.1162 3.66159 23.1111 4.88889 23.1111C5.44033 23.1111 5.94487 22.9102 6.33331 22.5777C8.19492 23.575 10.2939 24.0669 12.4189 23.9927C14.9515 23.9042 17.3911 23.0163 19.388 21.4561C21.385 19.8959 22.8367 17.7436 23.5352 15.3076C24.184 13.045 24.152 10.6455 23.4496 8.40721ZM12 16.8889C14.7001 16.8889 16.8889 14.7001 16.8889 12C16.8889 9.29994 14.7001 7.11111 12 7.11111C9.29994 7.11111 7.11111 9.29994 7.11111 12C7.11111 14.7001 9.29994 16.8889 12 16.8889Z",
-				fill: "currentColor"
-			})), r.a.createElement("defs", null, r.a.createElement("clipPath", {
-				id: "clip0_1524_96476"
-			}, r.a.createElement("rect", {
-				width: "24",
-				height: "24",
-				fill: "white"
-			}))));
-			const J = ({
-				href: e,
-				className: t,
-				children: n
-			}) => r.a.createElement("a", {
-				href: e,
-				target: "_blank",
-				rel: "noopener noreferrer",
-				className: t
-			}, n);
-
-			function Q(e, t) {
-				for (var n = 0; n < t.length; n++) {
-					var i = t[n];
-					i.enumerable = i.enumerable || !1, i.configurable = !0, "value" in i && (i.writable = !0), Object.defineProperty(e, i.key, i)
-				}
-			}
-			var X = "(prefers-reduced-motion: reduce)",
-				H = 1,
-				W = 3,
-				Z = 4,
-				ee = 5,
-				te = 6,
-				ne = 7,
-				ie = {
-					CREATED: H,
-					MOUNTED: 2,
-					IDLE: W,
-					MOVING: Z,
-					SCROLLING: ee,
-					DRAGGING: te,
-					DESTROYED: ne
-				};
-
-			function re(e) {
-				e.length = 0
-			}
-
-			function oe(e, t, n) {
-				return Array.prototype.slice.call(e, t, n)
-			}
-
-			function se(e) {
-				return e.bind.apply(e, [null].concat(oe(arguments, 1)))
-			}
-			var ae = setTimeout,
-				ce = function() {};
-
-			function ue(e) {
-				return requestAnimationFrame(e)
-			}
-
-			function le(e, t) {
-				return typeof t === e
-			}
-
-			function pe(e) {
-				return !me(e) && le("object", e)
-			}
-			var fe = Array.isArray,
-				de = se(le, "function"),
-				he = se(le, "string"),
-				ve = se(le, "undefined");
-
-			function me(e) {
-				return null === e
-			}
-
-			function ye(e) {
-				return e instanceof HTMLElement
-			}
-
-			function Ee(e) {
-				return fe(e) ? e : [e]
-			}
-
-			function ge(e, t) {
-				Ee(e).forEach(t)
-			}
-
-			function _e(e, t) {
-				return e.indexOf(t) > -1
-			}
-
-			function Ne(e, t) {
-				return e.push.apply(e, Ee(t)), e
-			}
-
-			function Te(e, t, n) {
-				e && ge(t, (function(t) {
-					t && e.classList[n ? "add" : "remove"](t)
-				}))
-			}
-
-			function be(e, t) {
-				Te(e, he(t) ? t.split(" ") : t, !0)
-			}
-
-			function Oe(e, t) {
-				ge(t, e.appendChild.bind(e))
-			}
-
-			function xe(e, t) {
-				ge(e, (function(e) {
-					var n = (t || e).parentNode;
-					n && n.insertBefore(e, t)
-				}))
-			}
-
-			function Ie(e, t) {
-				return ye(e) && (e.msMatchesSelector || e.matches).call(e, t)
-			}
-
-			function ke(e, t) {
-				var n = e ? oe(e.children) : [];
-				return t ? n.filter((function(e) {
-					return Ie(e, t)
-				})) : n
-			}
-
-			function Ae(e, t) {
-				return t ? ke(e, t)[0] : e.firstElementChild
-			}
-			var we = Object.keys;
-
-			function De(e, t, n) {
-				if (e) {
-					var i = we(e);
-					i = n ? i.reverse() : i;
-					for (var r = 0; r < i.length; r++) {
-						var o = i[r];
-						if ("__proto__" !== o && !1 === t(e[o], o)) break
-					}
-				}
-				return e
-			}
-
-			function Se(e) {
-				return oe(arguments, 1).forEach((function(t) {
-					De(t, (function(n, i) {
-						e[i] = t[i]
-					}))
-				})), e
-			}
-
-			function Ce(e) {
-				return oe(arguments, 1).forEach((function(t) {
-					De(t, (function(t, n) {
-						fe(t) ? e[n] = t.slice() : pe(t) ? e[n] = Ce({}, pe(e[n]) ? e[n] : {}, t) : e[n] = t
-					}))
-				})), e
-			}
-
-			function Le(e, t) {
-				Ee(t || we(e)).forEach((function(t) {
-					delete e[t]
-				}))
-			}
-
-			function Re(e, t) {
-				ge(e, (function(e) {
-					ge(t, (function(t) {
-						e && e.removeAttribute(t)
-					}))
-				}))
-			}
-
-			function Fe(e, t, n) {
-				pe(t) ? De(t, (function(t, n) {
-					Fe(e, n, t)
-				})) : ge(e, (function(e) {
-					me(n) || "" === n ? Re(e, t) : e.setAttribute(t, String(n))
-				}))
-			}
-
-			function Pe(e, t, n) {
-				var i = document.createElement(e);
-				return t && (he(t) ? be(i, t) : Fe(i, t)), n && Oe(n, i), i
-			}
-
-			function Me(e, t, n) {
-				if (ve(n)) return getComputedStyle(e)[t];
-				me(n) || (e.style[t] = "" + n)
-			}
-
-			function je(e, t) {
-				Me(e, "display", t)
-			}
-
-			function Be(e) {
-				e.setActive && e.setActive() || e.focus({
-					preventScroll: !0
-				})
-			}
-
-			function Ue(e, t) {
-				return e.getAttribute(t)
-			}
-
-			function Ve(e, t) {
-				return e && e.classList.contains(t)
-			}
-
-			function qe(e) {
-				return e.getBoundingClientRect()
-			}
-
-			function Ke(e) {
-				ge(e, (function(e) {
-					e && e.parentNode && e.parentNode.removeChild(e)
-				}))
-			}
-
-			function Ge(e) {
-				return Ae((new DOMParser).parseFromString(e, "text/html").body)
-			}
-
-			function Ye(e, t) {
-				e.preventDefault(), t && (e.stopPropagation(), e.stopImmediatePropagation())
-			}
-
-			function ze(e, t) {
-				return e && e.querySelector(t)
-			}
-
-			function $e(e, t) {
-				return t ? oe(e.querySelectorAll(t)) : []
-			}
-
-			function Je(e, t) {
-				Te(e, t, !1)
-			}
-
-			function Qe(e) {
-				return e.timeStamp
-			}
-
-			function Xe(e) {
-				return he(e) ? e : e ? e + "px" : ""
-			}
-			var He = "splide",
-				We = "data-" + He;
-
-			function Ze(e, t) {
-				if (!e) throw new Error("[" + He + "] " + (t || ""))
-			}
-			var et = Math.min,
-				tt = Math.max,
-				nt = Math.floor,
-				it = Math.ceil,
-				rt = Math.abs;
-
-			function ot(e, t, n) {
-				return rt(e - t) < n
-			}
-
-			function st(e, t, n, i) {
-				var r = et(t, n),
-					o = tt(t, n);
-				return i ? r < e && e < o : r <= e && e <= o
-			}
-
-			function at(e, t, n) {
-				var i = et(t, n),
-					r = tt(t, n);
-				return et(tt(i, e), r)
-			}
-
-			function ct(e) {
-				return +(e > 0) - +(e < 0)
-			}
-
-			function ut(e, t) {
-				return ge(t, (function(t) {
-					e = e.replace("%s", "" + t)
-				})), e
-			}
-
-			function lt(e) {
-				return e < 10 ? "0" + e : "" + e
-			}
-			var pt = {};
-
-			function ft() {
-				var e = [];
-
-				function t(e, t, n) {
-					ge(e, (function(e) {
-						e && ge(t, (function(t) {
-							t.split(" ").forEach((function(t) {
-								var i = t.split(".");
-								n(e, i[0], i[1])
-							}))
-						}))
-					}))
-				}
-				return {
-					bind: function(n, i, r, o) {
-						t(n, i, (function(t, n, i) {
-							var s = "addEventListener" in t,
-								a = s ? t.removeEventListener.bind(t, n, r, o) : t.removeListener.bind(t, r);
-							s ? t.addEventListener(n, r, o) : t.addListener(r), e.push([t, n, i, r, a])
-						}))
-					},
-					unbind: function(n, i, r) {
-						t(n, i, (function(t, n, i) {
-							e = e.filter((function(e) {
-								return !!(e[0] !== t || e[1] !== n || e[2] !== i || r && e[3] !== r) || (e[4](), !1)
-							}))
-						}))
-					},
-					dispatch: function(e, t, n) {
-						var i;
-						return "function" == typeof CustomEvent ? i = new CustomEvent(t, {
-							bubbles: !0,
-							detail: n
-						}) : (i = document.createEvent("CustomEvent")).initCustomEvent(t, !0, !1, n), e.dispatchEvent(i), i
-					},
-					destroy: function() {
-						e.forEach((function(e) {
-							e[4]()
-						})), re(e)
-					}
-				}
-			}
-			var dt = "mounted",
-				ht = "move",
-				vt = "moved",
-				mt = "shifted",
-				yt = "click",
-				Et = "active",
-				gt = "inactive",
-				_t = "visible",
-				Nt = "hidden",
-				Tt = "slide:keydown",
-				bt = "refresh",
-				Ot = "updated",
-				xt = "resize",
-				It = "resized",
-				kt = "drag",
-				At = "dragging",
-				wt = "dragged",
-				Dt = "scroll",
-				St = "scrolled",
-				Ct = "destroy",
-				Lt = "arrows:mounted",
-				Rt = "arrows:updated",
-				Ft = "pagination:mounted",
-				Pt = "pagination:updated",
-				Mt = "navigation:mounted",
-				jt = "autoplay:play",
-				Bt = "autoplay:playing",
-				Ut = "autoplay:pause",
-				Vt = "lazyload:loaded";
-
-			function qt(e) {
-				var t = e ? e.event.bus : document.createDocumentFragment(),
-					n = ft();
-				return e && e.event.on(Ct, n.destroy), Se(n, {
-					bus: t,
-					on: function(e, i) {
-						n.bind(t, Ee(e).join(" "), (function(e) {
-							i.apply(i, fe(e.detail) ? e.detail : [])
-						}))
-					},
-					off: se(n.unbind, t),
-					emit: function(e) {
-						n.dispatch(t, e, oe(arguments, 1))
-					}
-				})
-			}
-
-			function Kt(e, t, n, i) {
-				var r, o, s = Date.now,
-					a = 0,
-					c = !0,
-					u = 0;
-
-				function l() {
-					if (!c) {
-						if (a = e ? et((s() - r) / e, 1) : 1, n && n(a), a >= 1 && (t(), r = s(), i && ++u >= i)) return p();
-						ue(l)
-					}
-				}
-
-				function p() {
-					c = !0
-				}
-
-				function f() {
-					o && cancelAnimationFrame(o), a = 0, o = 0, c = !0
-				}
-				return {
-					start: function(t) {
-						!t && f(), r = s() - (t ? a * e : 0), c = !1, ue(l)
-					},
-					rewind: function() {
-						r = s(), a = 0, n && n(a)
-					},
-					pause: p,
-					cancel: f,
-					set: function(t) {
-						e = t
-					},
-					isPaused: function() {
-						return c
-					}
-				}
-			}
-			var Gt = "ArrowLeft",
-				Yt = "ArrowRight",
-				zt = "rtl",
-				$t = "ttb",
-				Jt = {
-					width: ["height"],
-					left: ["top", "right"],
-					right: ["bottom", "left"],
-					x: ["y"],
-					X: ["Y"],
-					Y: ["X"],
-					ArrowLeft: ["ArrowUp", Yt],
-					ArrowRight: ["ArrowDown", Gt]
-				};
-			var Qt = "role",
-				Xt = "tabindex",
-				Ht = "aria-controls",
-				Wt = "aria-current",
-				Zt = "aria-selected",
-				en = "aria-label",
-				tn = "aria-labelledby",
-				nn = "aria-hidden",
-				rn = "aria-orientation",
-				on = "aria-roledescription",
-				sn = "aria-live",
-				an = "aria-relevant",
-				cn = [Qt, Xt, "disabled", Ht, Wt, en, tn, nn, rn, on],
-				un = He,
-				ln = He + "__track",
-				pn = He + "__list",
-				fn = He + "__slide",
-				dn = fn + "--clone",
-				hn = fn + "__container",
-				vn = He + "__arrows",
-				mn = He + "__arrow",
-				yn = mn + "--prev",
-				En = mn + "--next",
-				gn = He + "__pagination",
-				_n = gn + "__page",
-				Nn = He + "__progress" + "__bar",
-				Tn = He + "__toggle",
-				bn = He + "__sr",
-				On = "is-active",
-				xn = "is-prev",
-				In = "is-next",
-				kn = "is-visible",
-				An = "is-loading",
-				wn = "is-focus-in",
-				Dn = [On, kn, xn, In, An, wn],
-				Sn = {
-					slide: fn,
-					clone: dn,
-					arrows: vn,
-					arrow: mn,
-					prev: yn,
-					next: En,
-					pagination: gn,
-					page: _n,
-					spinner: He + "__spinner"
-				};
-			var Cn = 5,
-				Ln = 200,
-				Rn = "touchstart mousedown",
-				Fn = "touchmove mousemove",
-				Pn = "touchend touchcancel mouseup";
-			var Mn = "slide",
-				jn = "loop",
-				Bn = "fade";
-
-			function Un(e, t, n, i) {
-				var r, o = qt(e),
-					s = o.on,
-					a = o.emit,
-					c = o.bind,
-					u = e.Components,
-					l = e.root,
-					p = e.options,
-					f = p.isNavigation,
-					d = p.updateOnMove,
-					h = p.i18n,
-					v = p.pagination,
-					m = p.slideFocus,
-					y = u.Direction.resolve,
-					E = Ue(i, "style"),
-					g = Ue(i, en),
-					_ = n > -1,
-					N = Ae(i, "." + hn),
-					T = $e(i, p.focusableNodes || "");
-
-				function b() {
-					var r = e.splides.map((function(e) {
-						var n = e.splide.Components.Slides.getAt(t);
-						return n ? n.slide.id : ""
-					})).join(" ");
-					Fe(i, en, ut(h.slideX, (_ ? n : t) + 1)), Fe(i, Ht, r), Fe(i, Qt, m ? "button" : ""), m && Re(i, on)
-				}
-
-				function O() {
-					r || x()
-				}
-
-				function x() {
-					if (!r) {
-						var n = e.index;
-						(o = I()) !== Ve(i, On) && (Te(i, On, o), Fe(i, Wt, f && o || ""), a(o ? Et : gt, k)),
-							function() {
-								var t = function() {
-										if (e.is(Bn)) return I();
-										var t = qe(u.Elements.track),
-											n = qe(i),
-											r = y("left"),
-											o = y("right");
-										return nt(t[r]) <= it(n[r]) && nt(n[o]) <= it(t[o])
-									}(),
-									n = !t && (!I() || _);
-								e.state.is([Z, ee]) || Fe(i, nn, n || "");
-								Fe(T, Xt, n ? -1 : ""), m && Fe(i, Xt, n ? -1 : 0);
-								t !== Ve(i, kn) && (Te(i, kn, t), a(t ? _t : Nt, k));
-								if (!t && document.activeElement === i) {
-									var r = u.Slides.getAt(e.index);
-									r && Be(r.slide)
-								}
-							}(), Te(i, xn, t === n - 1), Te(i, In, t === n + 1)
-					}
-					var o
-				}
-
-				function I() {
-					var i = e.index;
-					return i === t || p.cloneStatus && i === n
-				}
-				var k = {
-					index: t,
-					slideIndex: n,
-					slide: i,
-					container: N,
-					isClone: _,
-					mount: function() {
-						_ || (i.id = l.id + "-slide" + lt(t + 1), Fe(i, Qt, v ? "tabpanel" : "group"), Fe(i, on, h.slide), Fe(i, en, g || ut(h.slideLabel, [t + 1, e.length]))), c(i, "click", se(a, yt, k)), c(i, "keydown", se(a, Tt, k)), s([vt, mt, St], x), s(Mt, b), d && s(ht, O)
-					},
-					destroy: function() {
-						r = !0, o.destroy(), Je(i, Dn), Re(i, cn), Fe(i, "style", E), Fe(i, en, g || "")
-					},
-					update: x,
-					style: function(e, t, n) {
-						Me(n && N || i, e, t)
-					},
-					isWithin: function(n, i) {
-						var r = rt(n - t);
-						return _ || !p.rewind && !e.is(jn) || (r = et(r, e.length - r)), r <= i
-					}
-				};
-				return k
-			}
-			var Vn = 2;
-			var qn = "http://www.w3.org/2000/svg",
-				Kn = "m15.5 0.932-4.3 4.38 14.5 14.6-14.5 14.5 4.3 4.4 14.6-14.6 4.4-4.3-4.4-4.4-14.6-14.6z",
-				Gn = 40;
-			var Yn = We + "-interval";
-			var zn = 10,
-				$n = 600,
-				Jn = .6,
-				Qn = 1.5,
-				Xn = 800;
-			var Hn = {
-				passive: !1,
-				capture: !0
+			var Fi = {
+				container: "_container_1cw7m_42"
 			};
-			var Wn = {
-				Spacebar: " ",
-				Right: Yt,
-				Left: Gt,
-				Up: "ArrowUp",
-				Down: "ArrowDown"
-			};
-
-			function Zn(e) {
-				return e = he(e) ? e : e.key, Wn[e] || e
-			}
-			var ei = "keydown";
-			var ti = We + "-lazy",
-				ni = ti + "-srcset",
-				ii = "[" + ti + "], [" + ni + "]";
-			var ri = [" ", "Enter"];
-			var oi = Object.freeze({
-					__proto__: null,
-					Media: function(e, t, n) {
-						var i = e.state,
-							r = n.breakpoints || {},
-							o = n.reducedMotion || {},
-							s = ft(),
-							a = [];
-
-						function c(e) {
-							e && s.destroy()
-						}
-
-						function u(e, t) {
-							var n = matchMedia(t);
-							s.bind(n, "change", l), a.push([e, n])
-						}
-
-						function l() {
-							var t = i.is(ne),
-								r = n.direction,
-								o = a.reduce((function(e, t) {
-									return Ce(e, t[1].matches ? t[0] : {})
-								}), {});
-							Le(n), p(o), n.destroy ? e.destroy("completely" === n.destroy) : t ? (c(!0), e.mount()) : r !== n.direction && e.refresh()
-						}
-
-						function p(t, r) {
-							Ce(n, t), r && Ce(Object.getPrototypeOf(n), t), i.is(H) || e.emit(Ot, n)
-						}
-						return {
-							setup: function() {
-								var e = "min" === n.mediaQuery;
-								we(r).sort((function(t, n) {
-									return e ? +t - +n : +n - +t
-								})).forEach((function(t) {
-									u(r[t], "(" + (e ? "min" : "max") + "-width:" + t + "px)")
-								})), u(o, X), l()
-							},
-							destroy: c,
-							reduce: function(e) {
-								matchMedia(X).matches && (e ? Ce(n, o) : Le(n, we(o)))
-							},
-							set: p
-						}
-					},
-					Direction: function(e, t, n) {
-						return {
-							resolve: function(e, t, i) {
-								var r = (i = i || n.direction) !== zt || t ? i === $t ? 0 : -1 : 1;
-								return Jt[e] && Jt[e][r] || e.replace(/width|left|right/i, (function(e, t) {
-									var n = Jt[e.toLowerCase()][r] || e;
-									return t > 0 ? n.charAt(0).toUpperCase() + n.slice(1) : n
-								}))
-							},
-							orient: function(e) {
-								return e * (n.direction === zt ? 1 : -1)
-							}
-						}
-					},
-					Elements: function(e, t, n) {
-						var i, r, o, s = qt(e),
-							a = s.on,
-							c = s.bind,
-							u = e.root,
-							l = n.i18n,
-							p = {},
-							f = [],
-							d = [],
-							h = [];
-
-						function v() {
-							i = E("." + ln), r = Ae(i, "." + pn), Ze(i && r, "A track/list element is missing."), Ne(f, ke(r, "." + fn + ":not(." + dn + ")")), De({
-									arrows: vn,
-									pagination: gn,
-									prev: yn,
-									next: En,
-									bar: Nn,
-									toggle: Tn
-								}, (function(e, t) {
-									p[t] = E("." + e)
-								})), Se(p, {
-									root: u,
-									track: i,
-									list: r,
-									slides: f
-								}),
-								function() {
-									var e = u.id || (o = He, "" + o + lt(pt[o] = (pt[o] || 0) + 1)),
-										t = n.role;
-									var o;
-									u.id = e, i.id = i.id || e + "-track", r.id = r.id || e + "-list", !Ue(u, Qt) && "SECTION" !== u.tagName && t && Fe(u, Qt, t);
-									Fe(u, on, l.carousel), Fe(r, Qt, "presentation")
-								}(), y()
-						}
-
-						function m(e) {
-							var t = cn.concat("style");
-							re(f), Je(u, d), Je(i, h), Re([i, r], t), Re(u, e ? t : ["style", on])
-						}
-
-						function y() {
-							Je(u, d), Je(i, h), d = g(un), h = g(ln), be(u, d), be(i, h), Fe(u, en, n.label), Fe(u, tn, n.labelledby)
-						}
-
-						function E(e) {
-							var t = ze(u, e);
-							return t && function(e, t) {
-								if (de(e.closest)) return e.closest(t);
-								for (var n = e; n && 1 === n.nodeType && !Ie(n, t);) n = n.parentElement;
-								return n
-							}(t, "." + un) === u ? t : void 0
-						}
-
-						function g(e) {
-							return [e + "--" + n.type, e + "--" + n.direction, n.drag && e + "--draggable", n.isNavigation && e + "--nav", e === un && On]
-						}
-						return Se(p, {
-							setup: v,
-							mount: function() {
-								a(bt, m), a(bt, v), a(Ot, y), c(document, Rn + " keydown", (function(e) {
-									o = "keydown" === e.type
-								}), {
-									capture: !0
-								}), c(u, "focusin", (function() {
-									Te(u, wn, !!o)
-								}))
-							},
-							destroy: m
-						})
-					},
-					Slides: function(e, t, n) {
-						var i = qt(e),
-							r = i.on,
-							o = i.emit,
-							s = i.bind,
-							a = t.Elements,
-							c = a.slides,
-							u = a.list,
-							l = [];
-
-						function p() {
-							c.forEach((function(e, t) {
-								d(e, t, -1)
-							}))
-						}
-
-						function f() {
-							v((function(e) {
-								e.destroy()
-							})), re(l)
-						}
-
-						function d(t, n, i) {
-							var r = Un(e, n, i, t);
-							r.mount(), l.push(r)
-						}
-
-						function h(e) {
-							return e ? m((function(e) {
-								return !e.isClone
-							})) : l
-						}
-
-						function v(e, t) {
-							h(t).forEach(e)
-						}
-
-						function m(e) {
-							return l.filter(de(e) ? e : function(t) {
-								return he(e) ? Ie(t.slide, e) : _e(Ee(e), t.index)
-							})
-						}
-						return {
-							mount: function() {
-								p(), r(bt, f), r(bt, p), r([dt, bt], (function() {
-									l.sort((function(e, t) {
-										return e.index - t.index
-									}))
-								}))
-							},
-							destroy: f,
-							update: function() {
-								v((function(e) {
-									e.update()
-								}))
-							},
-							register: d,
-							get: h,
-							getIn: function(e) {
-								var i = t.Controller,
-									r = i.toIndex(e),
-									o = i.hasFocus() ? 1 : n.perPage;
-								return m((function(e) {
-									return st(e.index, r, r + o - 1)
-								}))
-							},
-							getAt: function(e) {
-								return m(e)[0]
-							},
-							add: function(e, t) {
-								ge(e, (function(e) {
-									if (he(e) && (e = Ge(e)), ye(e)) {
-										var i = c[t];
-										i ? xe(e, i) : Oe(u, e), be(e, n.classes.slide), r = e, a = se(o, xt), l = $e(r, "img"), (p = l.length) ? l.forEach((function(e) {
-											s(e, "load error", (function() {
-												--p || a()
-											}))
-										})) : a()
-									}
-									var r, a, l, p
-								})), o(bt)
-							},
-							remove: function(e) {
-								Ke(m(e).map((function(e) {
-									return e.slide
-								}))), o(bt)
-							},
-							forEach: v,
-							filter: m,
-							style: function(e, t, n) {
-								v((function(i) {
-									i.style(e, t, n)
-								}))
-							},
-							getLength: function(e) {
-								return e ? c.length : l.length
-							},
-							isEnough: function() {
-								return l.length > n.perPage
-							}
-						}
-					},
-					Layout: function(e, t, n) {
-						var i, r, o = qt(e),
-							s = o.on,
-							a = o.bind,
-							c = o.emit,
-							u = t.Slides,
-							l = t.Direction.resolve,
-							p = t.Elements,
-							f = p.root,
-							d = p.track,
-							h = p.list,
-							v = u.getAt,
-							m = u.style;
-
-						function y() {
-							r = null, i = n.direction === $t, Me(f, "maxWidth", Xe(n.width)), Me(d, l("paddingLeft"), g(!1)), Me(d, l("paddingRight"), g(!0)), E()
-						}
-
-						function E() {
-							var e = qe(f);
-							r && r.width === e.width && r.height === e.height || (Me(d, "height", function() {
-								var e = "";
-								i && (Ze(e = _(), "height or heightRatio is missing."), e = "calc(" + e + " - " + g(!1) + " - " + g(!0) + ")");
-								return e
-							}()), m(l("marginRight"), Xe(n.gap)), m("width", n.autoWidth ? null : Xe(n.fixedWidth) || (i ? "" : N())), m("height", Xe(n.fixedHeight) || (i ? n.autoHeight ? null : N() : _()), !0), r = e, c(It))
-						}
-
-						function g(e) {
-							var t = n.padding,
-								i = l(e ? "right" : "left");
-							return t && Xe(t[i] || (pe(t) ? 0 : t)) || "0px"
-						}
-
-						function _() {
-							return Xe(n.height || qe(h).width * n.heightRatio)
-						}
-
-						function N() {
-							var e = Xe(n.gap);
-							return "calc((100%" + (e && " + " + e) + ")/" + (n.perPage || 1) + (e && " - " + e) + ")"
-						}
-
-						function T(e, t) {
-							var n = v(e);
-							if (n) {
-								var i = qe(n.slide)[l("right")],
-									r = qe(h)[l("left")];
-								return rt(i - r) + (t ? 0 : b())
-							}
-							return 0
-						}
-
-						function b() {
-							var e = v(0);
-							return e && parseFloat(Me(e.slide, l("marginRight"))) || 0
-						}
-						return {
-							mount: function() {
-								var e, t, n;
-								y(), a(window, "resize load", (e = se(c, xt), function() {
-									n || (n = Kt(t || 0, (function() {
-										e(), n = null
-									}), null, 1)).start()
-								})), s([Ot, bt], y), s(xt, E)
-							},
-							listSize: function() {
-								return qe(h)[l("width")]
-							},
-							slideSize: function(e, t) {
-								var n = v(e || 0);
-								return n ? qe(n.slide)[l("width")] + (t ? 0 : b()) : 0
-							},
-							sliderSize: function() {
-								return T(e.length - 1, !0) - T(-1, !0)
-							},
-							totalSize: T,
-							getPadding: function(e) {
-								return parseFloat(Me(d, l("padding" + (e ? "Right" : "Left")))) || 0
-							}
-						}
-					},
-					Clones: function(e, t, n) {
-						var i, r = qt(e),
-							o = r.on,
-							s = r.emit,
-							a = t.Elements,
-							c = t.Slides,
-							u = t.Direction.resolve,
-							l = [];
-
-						function p() {
-							(i = h()) && (! function(t) {
-								var i = c.get().slice(),
-									r = i.length;
-								if (r) {
-									for (; i.length < t;) Ne(i, i);
-									Ne(i.slice(-t), i.slice(0, t)).forEach((function(o, s) {
-										var u = s < t,
-											p = function(t, i) {
-												var r = t.cloneNode(!0);
-												return be(r, n.classes.clone), r.id = e.root.id + "-clone" + lt(i + 1), r
-											}(o.slide, s);
-										u ? xe(p, i[0].slide) : Oe(a.list, p), Ne(l, p), c.register(p, s - t + (u ? 0 : r), o.index)
-									}))
-								}
-							}(i), s(xt))
-						}
-
-						function f() {
-							Ke(l), re(l)
-						}
-
-						function d() {
-							i < h() && s(bt)
-						}
-
-						function h() {
-							var i = n.clones;
-							if (e.is(jn)) {
-								if (!i) {
-									var r = n[u("fixedWidth")] && t.Layout.slideSize(0);
-									i = r && it(qe(a.track)[u("width")] / r) || n[u("autoWidth")] && e.length || n.perPage * Vn
-								}
-							} else i = 0;
-							return i
-						}
-						return {
-							mount: function() {
-								p(), o(bt, f), o(bt, p), o([Ot, xt], d)
-							},
-							destroy: f
-						}
-					},
-					Move: function(e, t, n) {
-						var i, r = qt(e),
-							o = r.on,
-							s = r.emit,
-							a = e.state.set,
-							c = t.Layout,
-							u = c.slideSize,
-							l = c.getPadding,
-							p = c.totalSize,
-							f = c.listSize,
-							d = c.sliderSize,
-							h = t.Direction,
-							v = h.resolve,
-							m = h.orient,
-							y = t.Elements,
-							E = y.list,
-							g = y.track;
-
-						function _() {
-							t.Controller.isBusy() || (t.Scroll.cancel(), N(e.index), t.Slides.update())
-						}
-
-						function N(e) {
-							T(x(e, !0))
-						}
-
-						function T(t, n) {
-							if (!e.is(Bn)) {
-								var i = n ? t : function(t) {
-									if (e.is(jn)) {
-										var n = m(t - I()),
-											i = A(!1, t) && n < 0,
-											r = A(!0, t) && n > 0;
-										(i || r) && (t = b(t, r))
-									}
-									return t
-								}(t);
-								Me(E, "transform", "translate" + v("X") + "(" + i + "px)"), t !== i && s(mt)
-							}
-						}
-
-						function b(e, t) {
-							var n = e - k(t),
-								i = d();
-							return e -= m(i * (it(rt(n) / i) || 1)) * (t ? 1 : -1)
-						}
-
-						function O() {
-							T(I()), i.cancel()
-						}
-
-						function x(t, i) {
-							var r = m(p(t - 1) - function(e) {
-								var t = n.focus;
-								return "center" === t ? (f() - u(e, !0)) / 2 : +t * u(e) || 0
-							}(t));
-							return i ? function(t) {
-								n.trimSpace && e.is(Mn) && (t = at(t, 0, m(d() - f())));
-								return t
-							}(r) : r
-						}
-
-						function I() {
-							var e = v("left");
-							return qe(E)[e] - qe(g)[e] + m(l(!1))
-						}
-
-						function k(e) {
-							return x(e ? t.Controller.getEnd() : 0, !!n.trimSpace)
-						}
-
-						function A(e, t) {
-							t = ve(t) ? I() : t;
-							var n = !0 !== e && m(t) < m(k(!1)),
-								i = !1 !== e && m(t) > m(k(!0));
-							return n || i
-						}
-						return {
-							mount: function() {
-								i = t.Transition, o([dt, It, Ot, bt], _)
-							},
-							move: function(e, t, n, r) {
-								var o, c, u = I();
-								e !== t && (o = e > t, c = m(b(I(), o)), o ? c >= 0 : c <= E["scroll" + v("Width")] - qe(g)[v("width")]) && (O(), T(b(u, e > t), !0)), a(Z), s(ht, t, n, e), i.start(t, (function() {
-									a(W), s(vt, t, n, e), r && r()
-								}))
-							},
-							jump: N,
-							translate: T,
-							shift: b,
-							cancel: O,
-							toIndex: function(e) {
-								for (var n = t.Slides.get(), i = 0, r = 1 / 0, o = 0; o < n.length; o++) {
-									var s = n[o].index,
-										a = rt(x(s, !0) - e);
-									if (!(a <= r)) break;
-									r = a, i = s
-								}
-								return i
-							},
-							toPosition: x,
-							getPosition: I,
-							getLimit: k,
-							exceededLimit: A,
-							reposition: _
-						}
-					},
-					Controller: function(e, t, n) {
-						var i, r, o, s = qt(e).on,
-							a = t.Move,
-							c = a.getPosition,
-							u = a.getLimit,
-							l = a.toPosition,
-							p = t.Slides,
-							f = p.isEnough,
-							d = p.getLength,
-							h = e.is(jn),
-							v = e.is(Mn),
-							m = se(N, !1),
-							y = se(N, !0),
-							E = n.start || 0,
-							g = E;
-
-						function _() {
-							i = d(!0), r = n.perMove, o = n.perPage;
-							var e = at(E, 0, i - 1);
-							e !== E && (E = e, a.reposition())
-						}
-
-						function N(e, t) {
-							var n = r || (A() ? 1 : o),
-								i = T(E + n * (e ? -1 : 1), E, !(r || A()));
-							return -1 === i && v && !ot(c(), u(!e), 1) ? e ? 0 : O() : t ? i : b(i)
-						}
-
-						function T(t, r, s) {
-							if (f()) {
-								var a = O(),
-									u = function(t) {
-										if (v && "move" === n.trimSpace && t !== E)
-											for (var i = c(); i === l(t, !0) && st(t, 0, e.length - 1, !n.rewind);) t < E ? --t : ++t;
-										return t
-									}(t);
-								u !== t && (r = t, t = u, s = !1), t < 0 || t > a ? t = st(0, t, r, !0) || st(a, r, t, !0) ? x(I(t)) : h ? s ? t < 0 ? -(i % o || o) : i : t : n.rewind ? t < 0 ? a : 0 : -1 : s && t !== r && (t = x(I(r) + (t < r ? -1 : 1)))
-							} else t = -1;
-							return t
-						}
-
-						function b(e) {
-							return h ? (e + i) % i || 0 : e
-						}
-
-						function O() {
-							return tt(i - (A() || h && r ? 1 : o), 0)
-						}
-
-						function x(e) {
-							return at(A() ? e : o * e, 0, O())
-						}
-
-						function I(e) {
-							return A() ? e : nt((e >= O() ? i - 1 : e) / o)
-						}
-
-						function k(e) {
-							e !== E && (g = E, E = e)
-						}
-
-						function A() {
-							return !ve(n.focus) || n.isNavigation
-						}
-
-						function w() {
-							return e.state.is([Z, ee]) && !!n.waitForTransition
-						}
-						return {
-							mount: function() {
-								_(), s([Ot, bt], _)
-							},
-							go: function(e, t, n) {
-								if (!w()) {
-									var i = function(e) {
-											var t = E;
-											if (he(e)) {
-												var n = e.match(/([+\-<>])(\d+)?/) || [],
-													i = n[1],
-													r = n[2];
-												"+" === i || "-" === i ? t = T(E + +("" + i + (+r || 1)), E) : ">" === i ? t = r ? x(+r) : m(!0) : "<" === i && (t = y(!0))
-											} else t = h ? e : at(e, 0, O());
-											return t
-										}(e),
-										r = b(i);
-									r > -1 && (t || r !== E) && (k(r), a.move(i, r, g, n))
-								}
-							},
-							scroll: function(e, n, i, r) {
-								t.Scroll.scroll(e, n, i, (function() {
-									k(b(a.toIndex(a.getPosition()))), r && r()
-								}))
-							},
-							getNext: m,
-							getPrev: y,
-							getAdjacent: N,
-							getEnd: O,
-							setIndex: k,
-							getIndex: function(e) {
-								return e ? g : E
-							},
-							toIndex: x,
-							toPage: I,
-							toDest: function(e) {
-								var t = a.toIndex(e);
-								return v ? at(t, 0, O()) : t
-							},
-							hasFocus: A,
-							isBusy: w
-						}
-					},
-					Arrows: function(e, t, n) {
-						var i, r, o = qt(e),
-							s = o.on,
-							a = o.bind,
-							c = o.emit,
-							u = n.classes,
-							l = n.i18n,
-							p = t.Elements,
-							f = t.Controller,
-							d = p.arrows,
-							h = p.track,
-							v = d,
-							m = p.prev,
-							y = p.next,
-							E = {};
-
-						function g() {
-							! function() {
-								var e = n.arrows;
-								!e || m && y || (v = d || Pe("div", u.arrows), m = b(!0), y = b(!1), i = !0, Oe(v, [m, y]), !d && xe(v, h));
-								m && y && (Se(E, {
-									prev: m,
-									next: y
-								}), je(v, e ? "" : "none"), be(v, r = vn + "--" + n.direction), e && (s([vt, bt, St], O), a(y, "click", se(T, ">")), a(m, "click", se(T, "<")), O(), Fe([m, y], Ht, h.id), c(Lt, m, y)))
-							}(), s(Ot, _)
-						}
-
-						function _() {
-							N(), g()
-						}
-
-						function N() {
-							o.destroy(), Je(v, r), i ? (Ke(d ? [m, y] : v), m = y = null) : Re([m, y], cn)
-						}
-
-						function T(e) {
-							f.go(e, !0)
-						}
-
-						function b(e) {
-							return Ge('<button class="' + u.arrow + " " + (e ? u.prev : u.next) + '" type="button"><svg xmlns="' + qn + '" viewBox="0 0 ' + Gn + " " + Gn + '" width="' + Gn + '" height="' + Gn + '" focusable="false"><path d="' + (n.arrowPath || Kn) + '" />')
-						}
-
-						function O() {
-							var t = e.index,
-								n = f.getPrev(),
-								i = f.getNext(),
-								r = n > -1 && t < n ? l.last : l.prev,
-								o = i > -1 && t > i ? l.first : l.next;
-							m.disabled = n < 0, y.disabled = i < 0, Fe(m, en, r), Fe(y, en, o), c(Rt, m, y, n, i)
-						}
-						return {
-							arrows: E,
-							mount: g,
-							destroy: N
-						}
-					},
-					Autoplay: function(e, t, n) {
-						var i, r, o = qt(e),
-							s = o.on,
-							a = o.bind,
-							c = o.emit,
-							u = Kt(n.interval, e.go.bind(e, ">"), (function(e) {
-								var t = p.bar;
-								t && Me(t, "width", 100 * e + "%"), c(Bt, e)
-							})),
-							l = u.isPaused,
-							p = t.Elements,
-							f = t.Elements,
-							d = f.root,
-							h = f.toggle,
-							v = n.autoplay,
-							m = "pause" === v;
-
-						function y() {
-							l() && t.Slides.isEnough() && (u.start(!n.resetProgress), r = i = m = !1, _(), c(jt))
-						}
-
-						function E(e) {
-							void 0 === e && (e = !0), m = !!e, _(), l() || (u.pause(), c(Ut))
-						}
-
-						function g() {
-							m || (i || r ? E(!1) : y())
-						}
-
-						function _() {
-							h && (Te(h, On, !m), Fe(h, en, n.i18n[m ? "play" : "pause"]))
-						}
-
-						function N(e) {
-							var i = t.Slides.getAt(e);
-							u.set(i && +Ue(i.slide, Yn) || n.interval)
-						}
-						return {
-							mount: function() {
-								v && (! function() {
-									n.pauseOnHover && a(d, "mouseenter mouseleave", (function(e) {
-										i = "mouseenter" === e.type, g()
-									}));
-									n.pauseOnFocus && a(d, "focusin focusout", (function(e) {
-										r = "focusin" === e.type, g()
-									}));
-									h && a(h, "click", (function() {
-										m ? y() : E(!0)
-									}));
-									s([ht, Dt, bt], u.rewind), s(ht, N)
-								}(), h && Fe(h, Ht, p.track.id), m || y(), _())
-							},
-							destroy: u.cancel,
-							play: y,
-							pause: E,
-							isPaused: l
-						}
-					},
-					Cover: function(e, t, n) {
-						var i = qt(e).on;
-
-						function r(e) {
-							t.Slides.forEach((function(t) {
-								var n = Ae(t.container || t.slide, "img");
-								n && n.src && o(e, n, t)
-							}))
-						}
-
-						function o(e, t, n) {
-							n.style("background", e ? 'center/cover no-repeat url("' + t.src + '")' : "", !0), je(t, e ? "none" : "")
-						}
-						return {
-							mount: function() {
-								n.cover && (i(Vt, se(o, !0)), i([dt, Ot, bt], se(r, !0)))
-							},
-							destroy: se(r, !1)
-						}
-					},
-					Scroll: function(e, t, n) {
-						var i, r, o = qt(e),
-							s = o.on,
-							a = o.emit,
-							c = e.state.set,
-							u = t.Move,
-							l = u.getPosition,
-							p = u.getLimit,
-							f = u.exceededLimit,
-							d = u.translate,
-							h = 1;
-
-						function v(e, n, o, s, p) {
-							var f = l();
-							if (E(), o) {
-								var d = t.Layout.sliderSize(),
-									v = ct(e) * d * nt(rt(e) / d) || 0;
-								e = u.toPosition(t.Controller.toDest(e % d)) + v
-							}
-							var g = ot(f, e, 1);
-							h = 1, n = g ? 0 : n || tt(rt(e - f) / Qn, Xn), r = s, i = Kt(n, m, se(y, f, e, p), 1), c(ee), a(Dt), i.start()
-						}
-
-						function m() {
-							c(W), r && r(), a(St)
-						}
-
-						function y(t, i, r, o) {
-							var s, a, c = l(),
-								u = (t + (i - t) * (s = o, (a = n.easingFunc) ? a(s) : 1 - Math.pow(1 - s, 4)) - c) * h;
-							d(c + u), e.is(Mn) && !r && f() && (h *= Jn, rt(u) < zn && v(p(f(!0)), $n, !1, void 0, !0))
-						}
-
-						function E() {
-							i && i.cancel()
-						}
-
-						function g() {
-							i && !i.isPaused() && (E(), m())
-						}
-						return {
-							mount: function() {
-								s(ht, E), s([Ot, bt], g)
-							},
-							destroy: E,
-							scroll: v,
-							cancel: g
-						}
-					},
-					Drag: function(e, t, n) {
-						var i, r, o, s, a, c, u, l, p = qt(e),
-							f = p.on,
-							d = p.emit,
-							h = p.bind,
-							v = p.unbind,
-							m = e.state,
-							y = t.Move,
-							E = t.Scroll,
-							g = t.Controller,
-							_ = t.Elements.track,
-							N = t.Media.reduce,
-							T = t.Direction,
-							b = T.resolve,
-							O = T.orient,
-							x = y.getPosition,
-							I = y.exceededLimit,
-							k = !1;
-
-						function A() {
-							var e = n.drag;
-							B(!e), s = "free" === e
-						}
-
-						function w(e) {
-							if (c = !1, !u) {
-								var t = j(e);
-								i = e.target, r = n.noDrag, Ie(i, "." + _n + ", ." + mn) || r && Ie(i, r) || !t && e.button || (g.isBusy() ? Ye(e, !0) : (l = t ? _ : window, a = m.is([Z, ee]), o = null, h(l, Fn, D, Hn), h(l, Pn, S, Hn), y.cancel(), E.cancel(), L(e)))
-							}
-							var i, r
-						}
-
-						function D(t) {
-							if (m.is(te) || (m.set(te), d(kt)), t.cancelable)
-								if (a) {
-									y.translate(i + R(t) / (k && e.is(Mn) ? Cn : 1));
-									var r = F(t) > Ln,
-										o = k !== (k = I());
-									(r || o) && L(t), c = !0, d(At), Ye(t)
-								} else(function(e) {
-									return rt(R(e)) > rt(R(e, !0))
-								})(t) && (a = function(e) {
-									var t = n.dragMinThreshold,
-										i = pe(t),
-										r = i && t.mouse || 0,
-										o = (i ? t.touch : +t) || 10;
-									return rt(R(e)) > (j(e) ? o : r)
-								}(t), Ye(t))
-						}
-
-						function S(i) {
-							m.is(te) && (m.set(W), d(wt)), a && (! function(i) {
-								var r = function(t) {
-										if (e.is(jn) || !k) {
-											var n = F(t);
-											if (n && n < Ln) return R(t) / n
-										}
-										return 0
-									}(i),
-									o = function(e) {
-										return x() + ct(e) * et(rt(e) * (n.flickPower || 600), s ? 1 / 0 : t.Layout.listSize() * (n.flickMaxPages || 1))
-									}(r),
-									a = n.rewind && n.rewindByDrag;
-								N(!1), s ? g.scroll(o, 0, n.snap) : e.is(Bn) ? g.go(O(ct(r)) < 0 ? a ? "<" : "-" : a ? ">" : "+") : e.is(Mn) && k && a ? g.go(I(!0) ? ">" : "<") : g.go(g.toDest(o), !0);
-								N(!0)
-							}(i), Ye(i)), v(l, Fn, D), v(l, Pn, S), a = !1
-						}
-
-						function C(e) {
-							!u && c && Ye(e, !0)
-						}
-
-						function L(e) {
-							o = r, r = e, i = x()
-						}
-
-						function R(e, t) {
-							return M(e, t) - M(P(e), t)
-						}
-
-						function F(e) {
-							return Qe(e) - Qe(P(e))
-						}
-
-						function P(e) {
-							return r === e && o || r
-						}
-
-						function M(e, t) {
-							return (j(e) ? e.changedTouches[0] : e)["page" + b(t ? "Y" : "X")]
-						}
-
-						function j(e) {
-							return "undefined" != typeof TouchEvent && e instanceof TouchEvent
-						}
-
-						function B(e) {
-							u = e
-						}
-						return {
-							mount: function() {
-								h(_, Fn, ce, Hn), h(_, Pn, ce, Hn), h(_, Rn, w, Hn), h(_, "click", C, {
-									capture: !0
-								}), h(_, "dragstart", Ye), f([dt, Ot], A)
-							},
-							disable: B,
-							isDragging: function() {
-								return a
-							}
-						}
-					},
-					Keyboard: function(e, t, n) {
-						var i, r, o = qt(e),
-							s = o.on,
-							a = o.bind,
-							c = o.unbind,
-							u = e.root,
-							l = t.Direction.resolve;
-
-						function p() {
-							var e = n.keyboard;
-							e && (i = "global" === e ? window : u, a(i, ei, h))
-						}
-
-						function f() {
-							c(i, ei)
-						}
-
-						function d() {
-							var e = r;
-							r = !0, ae((function() {
-								r = e
-							}))
-						}
-
-						function h(t) {
-							if (!r) {
-								var n = Zn(t);
-								n === l(Gt) ? e.go("<") : n === l(Yt) && e.go(">")
-							}
-						}
-						return {
-							mount: function() {
-								p(), s(Ot, f), s(Ot, p), s(ht, d)
-							},
-							destroy: f,
-							disable: function(e) {
-								r = e
-							}
-						}
-					},
-					LazyLoad: function(e, t, n) {
-						var i = qt(e),
-							r = i.on,
-							o = i.off,
-							s = i.bind,
-							a = i.emit,
-							c = "sequential" === n.lazyLoad,
-							u = [dt, bt, vt, St],
-							l = [];
-
-						function p() {
-							re(l), t.Slides.forEach((function(e) {
-								$e(e.slide, ii).forEach((function(t) {
-									var i = Ue(t, ti),
-										r = Ue(t, ni);
-									if (i !== t.src || r !== t.srcset) {
-										var o = n.classes.spinner,
-											s = t.parentElement,
-											a = Ae(s, "." + o) || Pe("span", o, s);
-										l.push([t, e, a]), t.src || je(t, "none")
-									}
-								}))
-							})), c && v()
-						}
-
-						function f() {
-							(l = l.filter((function(t) {
-								var i = n.perPage * ((n.preloadPages || 1) + 1) - 1;
-								return !t[1].isWithin(e.index, i) || d(t)
-							}))).length || o(u)
-						}
-
-						function d(e) {
-							var t = e[0];
-							be(e[1].slide, An), s(t, "load error", se(h, e)), Fe(t, "src", Ue(t, ti)), Fe(t, "srcset", Ue(t, ni)), Re(t, ti), Re(t, ni)
-						}
-
-						function h(e, t) {
-							var n = e[0],
-								i = e[1];
-							Je(i.slide, An), "error" !== t.type && (Ke(e[2]), je(n, ""), a(Vt, n, i), a(xt)), c && v()
-						}
-
-						function v() {
-							l.length && d(l.shift())
-						}
-						return {
-							mount: function() {
-								n.lazyLoad && (p(), r(bt, p), c || r(u, f))
-							},
-							destroy: se(re, l)
-						}
-					},
-					Pagination: function(e, t, n) {
-						var i, r, o = qt(e),
-							s = o.on,
-							a = o.emit,
-							c = o.bind,
-							u = t.Slides,
-							l = t.Elements,
-							p = t.Controller,
-							f = p.hasFocus,
-							d = p.getIndex,
-							h = p.go,
-							v = t.Direction.resolve,
-							m = [];
-
-						function y() {
-							i && (Ke(l.pagination ? oe(i.children) : i), Je(i, r), re(m), i = null), o.destroy()
-						}
-
-						function E(e) {
-							h(">" + e, !0)
-						}
-
-						function g(e, t) {
-							var n = m.length,
-								i = Zn(t),
-								r = _(),
-								o = -1;
-							i === v(Yt, !1, r) ? o = ++e % n : i === v(Gt, !1, r) ? o = (--e + n) % n : "Home" === i ? o = 0 : "End" === i && (o = n - 1);
-							var s = m[o];
-							s && (Be(s.button), h(">" + o), Ye(t, !0))
-						}
-
-						function _() {
-							return n.paginationDirection || n.direction
-						}
-
-						function N(e) {
-							return m[p.toPage(e)]
-						}
-
-						function T() {
-							var e = N(d(!0)),
-								t = N(d());
-							if (e) {
-								var n = e.button;
-								Je(n, On), Re(n, Zt), Fe(n, Xt, -1)
-							}
-							if (t) {
-								var r = t.button;
-								be(r, On), Fe(r, Zt, !0), Fe(r, Xt, "")
-							}
-							a(Pt, {
-								list: i,
-								items: m
-							}, e, t)
-						}
-						return {
-							items: m,
-							mount: function t() {
-								y(), s([Ot, bt], t), n.pagination && u.isEnough() && (s([ht, Dt, St], T), function() {
-									var t = e.length,
-										o = n.classes,
-										s = n.i18n,
-										a = n.perPage,
-										p = f() ? t : it(t / a);
-									be(i = l.pagination || Pe("ul", o.pagination, l.track.parentElement), r = gn + "--" + _()), Fe(i, Qt, "tablist"), Fe(i, en, s.select), Fe(i, rn, _() === $t ? "vertical" : "");
-									for (var d = 0; d < p; d++) {
-										var h = Pe("li", null, i),
-											v = Pe("button", {
-												class: o.page,
-												type: "button"
-											}, h),
-											y = u.getIn(d).map((function(e) {
-												return e.slide.id
-											})),
-											N = !f() && a > 1 ? s.pageX : s.slideX;
-										c(v, "click", se(E, d)), n.paginationKeyboard && c(v, "keydown", se(g, d)), Fe(h, Qt, "presentation"), Fe(v, Qt, "tab"), Fe(v, Ht, y.join(" ")), Fe(v, en, ut(N, d + 1)), Fe(v, Xt, -1), m.push({
-											li: h,
-											button: v,
-											page: d
-										})
-									}
-								}(), T(), a(Ft, {
-									list: i,
-									items: m
-								}, N(e.index)))
-							},
-							destroy: y,
-							getAt: N,
-							update: T
-						}
-					},
-					Sync: function(e, t, n) {
-						var i = n.isNavigation,
-							r = n.slideFocus,
-							o = [];
-
-						function s() {
-							var t, n;
-							e.splides.forEach((function(t) {
-								t.isParent || (c(e, t.splide), c(t.splide, e))
-							})), i && (t = qt(e), (n = t.on)(yt, l), n(Tt, p), n([dt, Ot], u), o.push(t), t.emit(Mt, e.splides))
-						}
-
-						function a() {
-							o.forEach((function(e) {
-								e.destroy()
-							})), re(o)
-						}
-
-						function c(e, t) {
-							var n = qt(e);
-							n.on(ht, (function(e, n, i) {
-								t.go(t.is(jn) ? i : e)
-							})), o.push(n)
-						}
-
-						function u() {
-							Fe(t.Elements.list, rn, n.direction === $t ? "vertical" : "")
-						}
-
-						function l(t) {
-							e.go(t.index)
-						}
-
-						function p(e, t) {
-							_e(ri, Zn(t)) && (l(e), Ye(t))
-						}
-						return {
-							setup: function() {
-								e.options = {
-									slideFocus: ve(r) ? i : r
-								}
-							},
-							mount: s,
-							destroy: a,
-							remount: function() {
-								a(), s()
-							}
-						}
-					},
-					Wheel: function(e, t, n) {
-						var i = qt(e).bind,
-							r = 0;
-
-						function o(i) {
-							if (i.cancelable) {
-								var o = i.deltaY,
-									s = o < 0,
-									a = Qe(i),
-									c = n.wheelMinThreshold || 0,
-									u = n.wheelSleep || 0;
-								rt(o) > c && a - r > u && (e.go(s ? "<" : ">"), r = a),
-									function(i) {
-										return !n.releaseWheel || e.state.is(Z) || -1 !== t.Controller.getAdjacent(i)
-									}(s) && Ye(i)
-							}
-						}
-						return {
-							mount: function() {
-								n.wheel && i(t.Elements.track, "wheel", o, Hn)
-							}
-						}
-					},
-					Live: function(e, t, n) {
-						var i = qt(e).on,
-							r = t.Elements.track,
-							o = n.live && !n.isNavigation,
-							s = Pe("span", bn);
-
-						function a(e) {
-							o && Fe(r, sn, e ? "off" : "polite")
-						}
-						return {
-							mount: function() {
-								o && (a(!t.Autoplay.isPaused()), Fe(r, an, "additions"), s.textContent = "…", i(jt, se(a, !0)), i(Ut, se(a, !1)), i([vt, St], se(Oe, r, s)))
-							},
-							disable: a,
-							destroy: function() {
-								Re(r, [sn, an]), Ke(s)
-							}
-						}
-					}
-				}),
-				si = {
-					type: "slide",
-					role: "region",
-					speed: 400,
-					perPage: 1,
-					cloneStatus: !0,
-					arrows: !0,
-					pagination: !0,
-					paginationKeyboard: !0,
-					interval: 5e3,
-					pauseOnHover: !0,
-					pauseOnFocus: !0,
-					resetProgress: !0,
-					easing: "cubic-bezier(0.25, 1, 0.5, 1)",
-					drag: !0,
-					direction: "ltr",
-					trimSpace: !0,
-					focusableNodes: "a, button, textarea, input, select, iframe",
-					live: !0,
-					classes: Sn,
-					i18n: {
-						prev: "Previous slide",
-						next: "Next slide",
-						first: "Go to first slide",
-						last: "Go to last slide",
-						slideX: "Go to slide %s",
-						pageX: "Go to page %s",
-						play: "Start autoplay",
-						pause: "Pause autoplay",
-						carousel: "carousel",
-						slide: "slide",
-						select: "Select a slide to show",
-						slideLabel: "%s of %s"
-					},
-					reducedMotion: {
-						speed: 0,
-						rewindSpeed: 0,
-						autoplay: "pause"
-					}
-				};
-
-			function ai(e, t, n) {
-				var i = qt(e).on;
-				return {
-					mount: function() {
-						i([dt, bt], (function() {
-							ae((function() {
-								t.Slides.style("transition", "opacity " + n.speed + "ms " + n.easing)
-							}))
-						}))
-					},
-					start: function(e, n) {
-						var i = t.Elements.track;
-						Me(i, "height", Xe(qe(i).height)), ae((function() {
-							n(), Me(i, "height", "")
-						}))
-					},
-					cancel: ce
-				}
-			}
-
-			function ci(e, t, n) {
-				var i, r = qt(e).bind,
-					o = t.Move,
-					s = t.Controller,
-					a = t.Scroll,
-					c = t.Elements.list,
-					u = se(Me, c, "transition");
-
-				function l() {
-					u(""), a.cancel()
-				}
-				return {
-					mount: function() {
-						r(c, "transitionend", (function(e) {
-							e.target === c && i && (l(), i())
-						}))
-					},
-					start: function(t, r) {
-						var c = o.toPosition(t, !0),
-							l = o.getPosition(),
-							p = function(t) {
-								var i = n.rewindSpeed;
-								if (e.is(Mn) && i) {
-									var r = s.getIndex(!0),
-										o = s.getEnd();
-									if (0 === r && t >= o || r >= o && 0 === t) return i
-								}
-								return n.speed
-							}(t);
-						rt(c - l) >= 1 && p >= 1 ? n.useScroll ? a.scroll(c, p, !1, r) : (u("transform " + p + "ms " + n.easing), o.translate(c, !0), i = r) : (o.jump(t), r())
-					},
-					cancel: l
-				}
-			}
-			var ui = function() {
-				function e(t, n) {
-					var i;
-					this.event = qt(), this.Components = {}, this.state = (i = H, {
-						set: function(e) {
-							i = e
-						},
-						is: function(e) {
-							return _e(Ee(e), i)
-						}
-					}), this.splides = [], this._o = {}, this._E = {};
-					var r = he(t) ? ze(document, t) : t;
-					Ze(r, r + " is invalid."), this.root = r, n = Ce({
-						label: Ue(r, en) || "",
-						labelledby: Ue(r, tn) || ""
-					}, si, e.defaults, n || {});
-					try {
-						Ce(n, JSON.parse(Ue(r, We)))
-					} catch (o) {
-						Ze(!1, "Invalid JSON")
-					}
-					this._o = Object.create(Ce({}, n))
-				}
-				var t, n, i, r = e.prototype;
-				return r.mount = function(e, t) {
-					var n = this,
-						i = this.state,
-						r = this.Components;
-					return Ze(i.is([H, ne]), "Already mounted!"), i.set(H), this._C = r, this._T = t || this._T || (this.is(Bn) ? ai : ci), this._E = e || this._E, De(Se({}, oi, this._E, {
-						Transition: this._T
-					}), (function(e, t) {
-						var i = e(n, r, n._o);
-						r[t] = i, i.setup && i.setup()
-					})), De(r, (function(e) {
-						e.mount && e.mount()
-					})), this.emit(dt), be(this.root, "is-initialized"), i.set(W), this.emit("ready"), this
-				}, r.sync = function(e) {
-					return this.splides.push({
-						splide: e
-					}), e.splides.push({
-						splide: this,
-						isParent: !0
-					}), this.state.is(W) && (this._C.Sync.remount(), e.Components.Sync.remount()), this
-				}, r.go = function(e) {
-					return this._C.Controller.go(e), this
-				}, r.on = function(e, t) {
-					return this.event.on(e, t), this
-				}, r.off = function(e) {
-					return this.event.off(e), this
-				}, r.emit = function(e) {
-					var t;
-					return (t = this.event).emit.apply(t, [e].concat(oe(arguments, 1))), this
-				}, r.add = function(e, t) {
-					return this._C.Slides.add(e, t), this
-				}, r.remove = function(e) {
-					return this._C.Slides.remove(e), this
-				}, r.is = function(e) {
-					return this._o.type === e
-				}, r.refresh = function() {
-					return this.emit(bt), this
-				}, r.destroy = function(e) {
-					void 0 === e && (e = !0);
-					var t = this.event,
-						n = this.state;
-					return n.is(H) ? qt(this).on("ready", this.destroy.bind(this, e)) : (De(this._C, (function(t) {
-						t.destroy && t.destroy(e)
-					}), !0), t.emit(Ct), t.destroy(), e && re(this.splides), n.set(ne)), this
-				}, t = e, (n = [{
-					key: "options",
-					get: function() {
-						return this._o
-					},
-					set: function(e) {
-						this._C.Media.set(e, !0)
-					}
-				}, {
-					key: "length",
-					get: function() {
-						return this._C.Slides.getLength(!0)
-					}
-				}, {
-					key: "index",
-					get: function() {
-						return this._C.Controller.getIndex()
-					}
-				}]) && Q(t.prototype, n), i && Q(t, i), Object.defineProperty(t, "prototype", {
-					writable: !1
-				}), e
-			}();
-			ui.defaults = {}, ui.STATES = ie;
-			var li = [
-				[dt, "onMounted"],
-				["ready", "onReady"],
-				[ht, "onMove"],
-				[vt, "onMoved"],
-				[yt, "onClick"],
-				[Et, "onActive"],
-				[gt, "onInactive"],
-				[_t, "onVisible"],
-				[Nt, "onHidden"],
-				[bt, "onRefresh"],
-				[Ot, "onUpdated"],
-				[xt, "onResize"],
-				[It, "onResized"],
-				[kt, "onDrag"],
-				[At, "onDragging"],
-				[wt, "onDragged"],
-				[Dt, "onScroll"],
-				[St, "onScrolled"],
-				[Ct, "onDestroy"],
-				[Lt, "onArrowsMounted"],
-				[Rt, "onArrowsUpdated"],
-				[Ft, "onPaginationMounted"],
-				[Pt, "onPaginationUpdated"],
-				[Mt, "onNavigationMounted"],
-				[jt, "onAutoplayPlay"],
-				[Bt, "onAutoplayPlaying"],
-				[Ut, "onAutoplayPause"],
-				[Vt, "onLazyLoadLoaded"]
-			];
-
-			function pi(...e) {
-				return e.filter(Boolean).join(" ")
-			}
-
-			function fi(e) {
-				return null !== e && "object" == typeof e
-			}
-
-			function di(e, t) {
-				const n = e;
-				return function(e, t) {
-					if (e) {
-						const n = Object.keys(e);
-						for (let i = 0; i < n.length; i++) {
-							const r = n[i];
-							if ("__proto__" !== r && !1 === t(e[r], r)) break
-						}
-					}
-				}(t, (e, t) => {
-					Array.isArray(e) ? n[t] = e.slice() : fi(e) ? n[t] = di(fi(n[t]) ? n[t] : {}, e) : n[t] = e
-				}), n
-			}
-			var hi = e => {
-					var t = e,
-						{
-							children: n,
-							className: i
-						} = t,
-						o = v(t, ["children", "className"]);
-					return r.a.createElement("div", h({
-						className: pi("splide__track", i)
-					}, o), r.a.createElement("ul", {
-						className: "splide__list"
-					}, n))
-				},
-				vi = class extends r.a.Component {
-					constructor() {
-						super(...arguments), this.splideRef = r.a.createRef(), this.slides = []
-					}
-					componentDidMount() {
-						const {
-							options: e,
-							extensions: t,
-							transition: n
-						} = this.props, {
-							current: i
-						} = this.splideRef;
-						i && (this.splide = new ui(i, e), this.bind(this.splide), this.splide.mount(t, n), this.options = di({}, e || {}), this.slides = this.getSlides())
-					}
-					componentWillUnmount() {
-						this.splide && (this.splide.destroy(), this.splide = void 0), this.options = void 0, this.slides.length = 0
-					}
-					componentDidUpdate() {
-						if (!this.splide) return;
-						const {
-							options: e
-						} = this.props;
-						e && ! function e(t, n) {
-							if (Array.isArray(t) && Array.isArray(n)) return t.length === n.length && !t.some((t, i) => !e(t, n[i]));
-							if (fi(t) && fi(n)) {
-								const i = Object.keys(t),
-									r = Object.keys(n);
-								return i.length === r.length && !i.some(i => !Object.prototype.hasOwnProperty.call(n, i) || !e(t[i], n[i]))
-							}
-							return t === n
-						}(this.options, e) && (this.splide.options = e, this.options = di({}, e));
-						const t = this.getSlides();
-						var n, i;
-						n = this.slides, i = t, (n.length !== i.length || n.some((e, t) => e !== i[t])) && (this.splide.refresh(), this.slides = t)
-					}
-					sync(e) {
-						var t;
-						null == (t = this.splide) || t.sync(e)
-					}
-					go(e) {
-						var t;
-						null == (t = this.splide) || t.go(e)
-					}
-					getSlides() {
-						var e;
-						if (this.splide) {
-							const t = null == (e = this.splide.Components.Elements) ? void 0 : e.list.children;
-							return t && Array.prototype.slice.call(t) || []
-						}
-						return []
-					}
-					bind(e) {
-						li.forEach(([t, n]) => {
-							const i = this.props[n];
-							"function" == typeof i && e.on(t, (...t) => {
-								i(e, ...t)
-							})
-						})
-					}
-					omit(e, t) {
-						return t.forEach(t => {
-							Object.prototype.hasOwnProperty.call(e, t) && delete e[t]
-						}), e
-					}
-					render() {
-						const e = this.props,
-							{
-								className: t,
-								tag: n = "div",
-								hasTrack: i = !0,
-								children: o
-							} = e,
-							s = v(e, ["className", "tag", "hasTrack", "children"]);
-						return r.a.createElement(n, h({
-							className: pi("splide", t),
-							ref: this.splideRef
-						}, this.omit(s, ["options", ...li.map(e => e[1])])), i ? r.a.createElement(hi, null, o) : o)
-					}
-				},
-				mi = e => {
-					var t = e,
-						{
-							children: n,
-							className: i
-						} = t,
-						o = v(t, ["children", "className"]);
-					return r.a.createElement("li", h({
-						className: pi("splide__slide", i)
-					}, o), n)
-				};
-			var yi = "_carousel_enqhw_7",
-				Ei = "_slide_enqhw_15",
-				gi = "_slideImage_enqhw_25",
-				_i = "_isVisible_enqhw_31",
-				Ni = "_isActiveSlide_enqhw_34",
-				Ti = "_arrow_enqhw_39",
-				bi = "_disabledArrow_enqhw_60",
-				Oi = "_chevron_enqhw_63",
-				xi = "_prev_enqhw_66",
-				Ii = "_next_enqhw_73",
-				ki = "_dots_enqhw_79",
-				Ai = "_dot_enqhw_79",
-				wi = "_isActiveDot_enqhw_97";
-			const Di = ({
-				factions: e,
-				onChange: t
+			const Pi = ({
+				value: e,
+				direction: t,
+				className: n
 			}) => {
-				const n = Object(i.useRef)(null),
-					o = Object(c.c)(),
-					[s, u] = Object(i.useState)(0);
-				return Object(i.useEffect)(() => {
-					const e = document.querySelectorAll(`.${wi}`);
-					e.length && e.forEach(e => e.classList.remove(`.${wi}`));
-					const t = document.querySelectorAll(".splide__pagination__page.is-active");
-					t.length && t[0].classList.add(`.${wi}`)
-				}, [s]), r.a.createElement(vi, {
-					ref: n,
-					hasTrack: !1,
-					"aria-label": o.inline("Factions carousel", "Image carousel: list of factions for users to select from"),
-					options: {
-						type: "slide",
-						perMove: 1,
-						drag: !1,
-						width: "calc(100% - 90px)",
-						fixedWidth: "202px",
-						focus: "center",
-						trimSpace: !1,
-						speed: 600,
-						classes: {
-							pagination: `splide__pagination ${ki}`,
-							page: `splide__pagination__page ${Ai}`
-						}
-					},
-					onMove: (e, n) => {
-						u(n), t && t(n)
-					},
-					className: y(yi)
-				}, r.a.createElement(hi, null, e.map(({
-					name: e,
-					images: t
-				}, n) => r.a.createElement(mi, {
-					key: n,
-					className: y(Ei, {
-						[Ni]: n === s,
-						[_i]: 1 === Math.abs(s - n)
-					})
+				const i = "up" === t;
+				return r.a.createElement("div", {
+					className: g(Fi.container, n, i ? Fi.upVote : Fi.downVote)
 				}, r.a.createElement("img", {
-					src: t[0].url,
-					alt: e,
-					className: gi
-				})))), r.a.createElement("div", {
-					className: "splide__arrows"
-				}, r.a.createElement("button", {
-					className: y("splide__arrow splide__arrow--prev", Ti, xi, {
-						[bi]: 0 === s
-					}),
-					disabled: 0 === s
-				}, r.a.createElement("img", {
-					src: a.e.Chevron,
-					className: Oi
-				})), r.a.createElement("button", {
-					className: y("splide__arrow splide__arrow--next", Ti, Ii, {
-						[bi]: s === e.length - 1
-					}),
-					disabled: s === e.length - 1
-				}, r.a.createElement("img", {
-					src: a.e.Chevron,
-					className: Oi
-				}))))
-			};
-			const Si = {
-				Achievement: "https://www.redditstatic.com/crypto-assets/v2/achievement-3febd9cb09.svg",
-				AvatarGear: "https://www.redditstatic.com/crypto-assets/v2/avatar-gear-71f4031cf4.svg",
-				BlockchainFilled: "https://www.redditstatic.com/crypto-assets/v2/blockchain-filled-5c6fc10547.svg",
-				CardExample: "https://www.redditstatic.com/crypto-assets/v2/card-example-abbcb94211.svg",
-				CheckmarkGreen: "https://www.redditstatic.com/crypto-assets/v2/checkmark-green-7355fd2559.svg",
-				CheckmarkGrey: "https://www.redditstatic.com/crypto-assets/v2/checkmark-grey-1978f4add3.svg",
-				Chevron: "https://www.redditstatic.com/crypto-assets/v2/chevron-ca25b73dda.svg",
-				CloseContained: N,
-				CloseDark: T,
-				Close: b,
-				Collectible: "https://www.redditstatic.com/crypto-assets/v2/collectible-0b6bff0d23.svg",
-				DoubleEyeFilled: "https://www.redditstatic.com/crypto-assets/v2/double-eye-filled-a845a76f95.svg",
-				Duplicate: "https://www.redditstatic.com/crypto-assets/v2/duplicate-66af363d56.svg",
-				Ellipse: "https://www.redditstatic.com/crypto-assets/v2/ellipse-2e713b908d.svg",
-				InfoFilled: "https://www.redditstatic.com/crypto-assets/v2/info-filled-24d30a597b.svg",
-				Nft: "https://www.redditstatic.com/crypto-assets/v2/nft-31cc27e3a3.svg",
-				Reddit: "https://www.redditstatic.com/crypto-assets/v2/reddit-d9fb338c35.svg",
-				Spotlight: "https://www.redditstatic.com/crypto-assets/v2/spotlight-64a6d1926b.svg",
-				StandOut: "https://www.redditstatic.com/crypto-assets/v2/stand-out-01fba311d3.svg",
-				TransferIntoVault: "https://www.redditstatic.com/crypto-assets/v2/transfer-into-vault-8a3773b030.svg",
-				Transferable: "https://www.redditstatic.com/crypto-assets/v2/transferable-041e6b0265.svg",
-				Vault: "https://www.redditstatic.com/crypto-assets/v2/vault-cfd0500d93.svg"
-			};
-			var Ci = "_loadingContainer_1iitb_1",
-				Li = "_loadingContent_1iitb_11";
-			const Ri = ({
-				hasError: e,
-				className: t
-			}) => r.a.createElement("div", {
-				className: y(Ci, t)
-			}, r.a.createElement("div", {
-				className: Li
-			}, r.a.createElement(a.h, null), e && r.a.createElement(a.d, null)))
+					src: i ? "https://www.redditstatic.com/crypto-assets/v2/upvote-e1dfcbf404.svg" : "https://www.redditstatic.com/crypto-assets/v2/downvote-37897edc0e.svg"
+				}), e ? function(e) {
+					let t;
+					"number" == typeof e ? (e >= 1e3 && (e /= 1e3, e = `${e=Math.round(100*e)/100}k`), t = e.toString()) : t = e;
+					return t
+				}(e) : void 0)
+			}
 		},
 		"./node_modules/graphql/jsutils/inspect.mjs": function(e, t, n) {
 			"use strict";
@@ -7300,4 +7327,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/1.9b8dea51f1306d4b6b03.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/1.1f82869fcae513b86fc2.js.map
