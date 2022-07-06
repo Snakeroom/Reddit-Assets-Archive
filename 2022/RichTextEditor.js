@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/RichTextEditor.6a046d211b5d7993a7aa.js
-// Retrieved at 7/1/2022, 5:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/RichTextEditor.a0b2c84e3e890dc3b4c3.js
+// Retrieved at 7/6/2022, 5:30:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["RichTextEditor", "ContributorRequestButton"], {
 		"./node_modules/autosize/dist/autosize.js": function(e, t, n) {
@@ -2500,19 +2500,18 @@
 			function ee(e) {
 				const {
 					controlsState: t,
-					onGifButtonClick: n,
-					userCanUseGifs: o
-				} = e, s = t.giphy.isEnabled;
+					onGifButtonClick: n
+				} = e, o = t.giphy.isEnabled;
 				return i.a.createElement(U.a, {
 					iconName: Q.a.gif_post,
-					className: s && o ? $.a.rainbow : void 0,
+					className: o ? $.a.rainbow : void 0,
 					tooltip: E.fbt._("Add GIF", null, {
 						hk: "3uH3vO"
 					}),
 					disabledTooltip: E.fbt._("Limit 1 GIF / comment", null, {
 						hk: "7T6gq"
 					}),
-					enabled: s,
+					enabled: o,
 					onClick: n
 				})
 			}
@@ -2536,16 +2535,17 @@
 					readOnly: u,
 					trackOnClick: m,
 					onLinkButtonClick: p,
-					userCanUseGifs: h
-				} = e, b = Object(A.a)(s);
-				u && Object(A.b)(b);
-				const f = null == n ? void 0 : n.id,
-					_ = Object(a.e)(e => void 0 !== f && Object(W.b)(e, {
-						subredditId: f
-					})),
-					g = Object(a.e)(e => void 0 !== f && ie(e, {
-						subredditId: f
-					}));
+					userCanUseEmojis: h,
+					userCanUseGifs: b
+				} = e, f = Object(A.a)(s);
+				u && Object(A.b)(f);
+				const _ = null == n ? void 0 : n.id,
+					g = Object(a.e)(e => void 0 !== _ && Object(W.b)(e, {
+						subredditId: _
+					})) && h,
+					x = Object(a.e)(e => void 0 !== _ && ie(e, {
+						subredditId: _
+					})) && b;
 				return i.a.createElement(M.a, {
 					className: t,
 					oveflowMenuDropdownId: o,
@@ -2553,20 +2553,19 @@
 					editorType: I.a.Comment
 				}, i.a.createElement("div", {
 					className: se.a.powerupButtons
-				}, _ && i.a.createElement(Z, {
-					controlsState: b,
+				}, g && i.a.createElement(Z, {
+					controlsState: f,
 					subredditId: n && n.id,
 					onEmoteButtonClick: c
-				}), g && i.a.createElement(ee, {
-					controlsState: b,
-					onGifButtonClick: d,
-					userCanUseGifs: h
-				})), (_ || g) && i.a.createElement(re, null), Object(F.g)(F.f, b, s, r, m), i.a.createElement(F.a, {
-					controlsState: b,
+				}), x && i.a.createElement(ee, {
+					controlsState: f,
+					onGifButtonClick: d
+				})), (g || x) && i.a.createElement(re, null), Object(F.g)(F.f, f, s, r, m), i.a.createElement(F.a, {
+					controlsState: f,
 					trackOnClick: m,
 					onLinkButtonClick: p
-				}), Object(F.g)(F.h, b, s, r, m), i.a.createElement(re, null), Object(F.g)(F.e, b, s, r, m), i.a.createElement(re, null), i.a.createElement(F.d, {
-					controlsState: b,
+				}), Object(F.g)(F.h, f, s, r, m), i.a.createElement(re, null), Object(F.g)(F.e, f, s, r, m), i.a.createElement(re, null), i.a.createElement(F.d, {
+					controlsState: f,
 					editorState: s,
 					trackOnClick: m,
 					onChange: r
@@ -5138,4 +5137,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RichTextEditor.6a046d211b5d7993a7aa.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RichTextEditor.a0b2c84e3e890dc3b4c3.js.map

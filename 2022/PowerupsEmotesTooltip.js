@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PowerupsEmotesTooltip.6336f6f90736630f6723.js
-// Retrieved at 6/30/2022, 12:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PowerupsEmotesTooltip.82c08357f4cb5b83ad05.js
+// Retrieved at 7/6/2022, 5:30:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PowerupsEmotesTooltip"], {
 		"./src/reddit/actions/economics/powerups/constants.ts": function(e, t, o) {
@@ -45,7 +45,7 @@
 			o.d(t, "b", (function() {
 				return b
 			})), o.d(t, "a", (function() {
-				return x
+				return f
 			}));
 			var s = o("./node_modules/uuid/v4.js"),
 				n = o.n(s),
@@ -81,7 +81,7 @@
 								mimeType: c
 							}, {
 								userId: a
-							})), x = await j({
+							})), f = await j({
 								file: m,
 								s3UploadLease: b
 							}, {
@@ -91,7 +91,7 @@
 							return await e(_({
 								subredditId: t,
 								mimeType: c,
-								url: x,
+								url: f,
 								x: p,
 								y: E,
 								nonce: n()()
@@ -151,7 +151,7 @@
 					if (!r.ok) throw new Error(`Failed to upload custom emoji to S3. subredditId: ${n}; userId: ${i}`);
 					const c = r.body.PostResponse;
 					return `https://${c.Bucket}.s3.amazonaws.com/${c.Key}`
-				}, x = e => {
+				}, f = e => {
 					let {
 						emojiId: t,
 						subredditId: o
@@ -332,19 +332,19 @@
 						onClickDelete: _,
 						mouseEnterBufferTime: j = l
 					} = e;
-					const x = Object(n.useRef)(s.Outside),
-						[f, w] = Object(n.useState)(!1);
+					const f = Object(n.useRef)(s.Outside),
+						[x, w] = Object(n.useState)(!1);
 					return i.a.createElement("div", {
 						className: Object(r.a)(d.a.container, o),
 						onMouseEnter: _ ? () => {
-							x.current = s.Inside, setTimeout(() => {
-								x.current === s.Inside && w(!0)
+							f.current = s.Inside, setTimeout(() => {
+								f.current === s.Inside && w(!0)
 							}, j)
 						} : void 0,
 						onMouseLeave: _ ? () => {
-							x.current = s.Outside, w(!1)
+							f.current = s.Outside, w(!1)
 						} : void 0
-					}, f && i.a.createElement("button", {
+					}, x && i.a.createElement("button", {
 						className: d.a.deleteButton,
 						onClick: _
 					}, i.a.createElement(a.b, {
@@ -423,20 +423,18 @@
 				u = o("./node_modules/react-redux/es/index.js"),
 				m = o("./src/lib/classNames/index.ts"),
 				p = o("./src/reddit/actions/economics/powerups/index.ts"),
-				E = o("./src/reddit/actions/gold/powerups.ts"),
-				b = o("./src/reddit/actions/toaster.ts"),
-				h = o("./src/reddit/components/Econ/Common/NewIcon/index.tsx"),
-				_ = o("./src/reddit/controls/Button/index.tsx"),
-				j = o("./src/reddit/controls/LoadingIcon/index.tsx"),
-				x = o("./src/reddit/icons/svgs/AddSquare/index.tsx"),
-				f = o("./src/reddit/models/Toast/index.ts"),
-				w = o("./src/reddit/selectors/gold/powerups/index.ts"),
-				k = o("./src/reddit/components/RichTextEditor/emotes/EmoteButton.tsx"),
-				I = o("./src/reddit/components/RichTextEditor/emotes/Powerups/DeleteEmojiModal.tsx"),
-				g = o("./src/reddit/components/RichTextEditor/emotes/Powerups/useEmojiUpload.ts"),
-				T = o("./src/reddit/components/RichTextEditor/emotes/Powerups/emotesSection.m.less"),
-				C = o.n(T);
-			const O = e => {
+				E = o("./src/reddit/actions/toaster.ts"),
+				b = o("./src/reddit/components/Econ/Common/NewIcon/index.tsx"),
+				h = o("./src/reddit/controls/LoadingIcon/index.tsx"),
+				_ = o("./src/reddit/icons/svgs/AddSquare/index.tsx"),
+				j = o("./src/reddit/models/Toast/index.ts"),
+				f = o("./src/reddit/selectors/gold/powerups/index.ts"),
+				x = o("./src/reddit/components/RichTextEditor/emotes/EmoteButton.tsx"),
+				w = o("./src/reddit/components/RichTextEditor/emotes/Powerups/DeleteEmojiModal.tsx"),
+				I = o("./src/reddit/components/RichTextEditor/emotes/Powerups/useEmojiUpload.ts"),
+				k = o("./src/reddit/components/RichTextEditor/emotes/Powerups/emotesSection.m.less"),
+				T = o.n(k);
+			const g = e => {
 				let {
 					onEmoteClicked: t,
 					subredditId: o,
@@ -444,29 +442,29 @@
 					userCanUseEmojis: c
 				} = e;
 				const d = Object(u.d)(),
-					T = Object(r.a)(),
-					[O, R] = Object(s.useState)(null),
-					P = () => R(null),
-					[v, N] = Object(s.useState)(!1),
-					S = Object(u.e)(e => Object(w.r)(e, {
+					k = Object(r.a)(),
+					[g, C] = Object(s.useState)(null),
+					O = () => C(null),
+					[R, P] = Object(s.useState)(!1),
+					v = Object(u.e)(e => Object(f.r)(e, {
 						subredditId: o
 					})),
-					U = Object(u.e)(e => Object(w.g)(e, {
+					N = Object(u.e)(e => Object(f.g)(e, {
 						subredditId: o
 					})),
-					y = Object(u.e)(e => Object(w.h)(e, {
+					S = Object(u.e)(e => Object(f.h)(e, {
 						subredditId: o
 					})),
 					{
-						uploadInput: D,
-						numUploading: B,
-						maxEmojisUploaded: L,
-						onFileChange: A,
-						onClickUpload: F
-					} = Object(g.a)(o, U, e => {
-						d(Object(b.f)({
+						uploadInput: U,
+						numUploading: y,
+						maxEmojisUploaded: D,
+						onFileChange: B,
+						onClickUpload: L
+					} = Object(I.a)(o, N, e => {
+						d(Object(E.f)({
 							duration: 5e3,
-							kind: f.b.Error,
+							kind: j.b.Error,
 							text: l.fbt._({
 								"*": "You can only add {number} more custom emojis.",
 								_1: "You can only add 1 more custom emoji."
@@ -475,11 +473,11 @@
 							})
 						}))
 					}, e => {
-						T(Object(i.a)(e, "powerups"))
+						k(Object(i.a)(e, "powerups"))
 					}, e => {
-						T(Object(i.o)(e, "powerups")), d(Object(b.f)({
+						k(Object(i.o)(e, "powerups")), d(Object(E.f)({
 							duration: 5e3,
-							kind: f.b.SuccessMod,
+							kind: j.b.SuccessMod,
 							text: l.fbt._({
 								"*": "Added {number} custom emojis",
 								_1: "Added 1 custom emoji"
@@ -488,9 +486,9 @@
 							})
 						}))
 					}, e => {
-						d(Object(b.f)({
+						d(Object(E.f)({
 							duration: 5e3,
-							kind: f.b.Error,
+							kind: j.b.Error,
 							text: l.fbt._({
 								"*": "Failed to upload {number} custom emojis",
 								_1: "Failed to upload 1 custom emoji"
@@ -499,119 +497,111 @@
 							})
 						}))
 					}),
-					M = L,
-					V = S ? l.fbt._("Add up to 20 emojis", null, {
+					A = D,
+					F = v ? l.fbt._("Add up to 20 emojis", null, {
 						hk: "4kR3Q8"
 					}) : l.fbt._("r/{communityName} Emojis", [l.fbt._param("communityName", a)], {
 						hk: "2cn7Yi"
 					}),
-					H = l.fbt._("Images under 128kb with a transparent background work the best.", null, {
+					M = l.fbt._("Images under 128kb with a transparent background work the best.", null, {
 						hk: "c6yXl"
 					});
-				return n.a.createElement(n.a.Fragment, null, n.a.createElement("div", null, (S || U.length > 0) && n.a.createElement("article", null, n.a.createElement("header", {
-					className: C.a.emotePackTitle
-				}, n.a.createElement("span", null, V), n.a.createElement(h.a, {
-					className: C.a.newIcon
+				return n.a.createElement(n.a.Fragment, null, n.a.createElement("div", null, (v || N.length > 0) && n.a.createElement("article", null, n.a.createElement("header", {
+					className: T.a.emotePackTitle
+				}, n.a.createElement("span", null, F), n.a.createElement(b.a, {
+					className: T.a.newIcon
 				})), n.a.createElement("header", {
-					className: C.a.emotePackSubtitle
-				}, S && H), n.a.createElement("div", {
-					className: Object(m.a)(C.a.emotes, {
-						[C.a.disabled]: !c
+					className: T.a.emotePackSubtitle
+				}, v && M), n.a.createElement("div", {
+					className: Object(m.a)(T.a.emotes, {
+						[T.a.disabled]: !c
 					})
-				}, S && n.a.createElement(n.a.Fragment, null, n.a.createElement("input", {
-					ref: D,
-					className: C.a.uploadInput,
-					onChange: A,
+				}, v && n.a.createElement(n.a.Fragment, null, n.a.createElement("input", {
+					ref: U,
+					className: T.a.uploadInput,
+					onChange: B,
 					type: "file",
 					accept: "image/png,image/jpeg",
 					multiple: !0
-				}), B ? n.a.createElement("div", {
-					className: C.a.loadingContainer
-				}, n.a.createElement(j.a, {
+				}), y ? n.a.createElement("div", {
+					className: T.a.loadingContainer
+				}, n.a.createElement(h.a, {
 					sizePx: 12,
 					center: !0
 				})) : n.a.createElement("button", {
-					className: Object(m.a)(C.a.emoteButton, C.a.addButton, {
-						[C.a.addButtonDisabled]: M
+					className: Object(m.a)(T.a.emoteButton, T.a.addButton, {
+						[T.a.addButtonDisabled]: A
 					}),
-					onClick: F,
-					title: M ? l.fbt._("You've hit the maximum of 20 emojis", null, {
+					onClick: L,
+					title: A ? l.fbt._("You've hit the maximum of 20 emojis", null, {
 						hk: "3Qz2UG"
 					}) : l.fbt._("Add Custom Emoji", null, {
 						hk: "M580t"
 					}),
-					disabled: M
-				}, n.a.createElement(x.a, {
-					className: C.a.addIcon
-				}))), U.map(e => n.a.createElement(k.a, {
+					disabled: A
+				}, n.a.createElement(_.a, {
+					className: T.a.addIcon
+				}))), N.map(e => n.a.createElement(x.a, {
 					key: e.id,
-					className: C.a.emoteButton,
-					imageClassName: C.a.customEmoteImage,
+					className: T.a.emoteButton,
+					imageClassName: T.a.customEmoteImage,
 					imagePath: e.emoji.path,
 					onClick: () => t(e),
-					onClickDelete: S ? () => R(e) : void 0
-				})), [...Array(B)].map((e, t) => n.a.createElement("div", {
+					onClickDelete: v ? () => C(e) : void 0
+				})), [...Array(y)].map((e, t) => n.a.createElement("div", {
 					key: t,
-					className: Object(m.a)(C.a.emoteButton, C.a.placeholderEmoteButton)
+					className: Object(m.a)(T.a.emoteButton, T.a.placeholderEmoteButton)
 				})))), n.a.createElement("article", {
-					className: C.a.freeEmotePack
+					className: T.a.freeEmotePack
 				}, n.a.createElement("header", {
-					className: C.a.emotePackTitle
+					className: T.a.emotePackTitle
 				}, l.fbt._("Reddit emojis", null, {
 					hk: "2k2TMN"
 				})), n.a.createElement("div", {
-					className: Object(m.a)(C.a.emotes, {
-						[C.a.disabled]: !c
+					className: Object(m.a)(T.a.emotes, {
+						[T.a.disabled]: !c
 					})
-				}, y.map(e => n.a.createElement(k.a, {
+				}, S.map(e => n.a.createElement(x.a, {
 					key: e.id,
-					className: C.a.emoteButton,
+					className: T.a.emoteButton,
 					imagePath: e.emoji.path,
 					title: e.id,
 					onClick: () => t(e),
 					disabled: !c
-				}))))), !c && n.a.createElement(_.t, {
-					className: C.a.unlockButton,
-					onClick: () => {
-						T(Object(i.s)()), d(Object(E.e)("emote_picker"))
-					},
-					priority: _.c.Primary
-				}, l.fbt._("Unlock Emojis", null, {
-					hk: "44jXM7"
-				})), O && n.a.createElement(I.a, {
-					emojiUrl: O.emoji.path,
-					onCancel: P,
-					onClose: P,
+				}))))), g && n.a.createElement(w.a, {
+					emojiUrl: g.emoji.path,
+					onCancel: O,
+					onClose: O,
 					onConfirm: async () => {
-						if (O && !v) try {
-							N(!0), await d(Object(p.a)({
+						if (g && !R) try {
+							P(!0), await d(Object(p.a)({
 								subredditId: o,
-								emojiId: O.id
-							})), P(), T(Object(i.b)(1, "powerups")), d(Object(b.f)({
+								emojiId: g.id
+							})), O(), k(Object(i.b)(1, "powerups")), d(Object(E.f)({
 								duration: 5e3,
-								kind: f.b.SuccessMod,
+								kind: j.b.SuccessMod,
 								text: l.fbt._("Deleted custom emoji", null, {
 									hk: "Y41sq"
 								})
 							}))
 						} catch (e) {
-							d(Object(b.f)({
+							d(Object(E.f)({
 								duration: 5e3,
-								kind: f.b.Error,
+								kind: j.b.Error,
 								text: l.fbt._("Failed to delete custom emoji", null, {
 									hk: "ngElG"
 								})
 							}))
 						} finally {
-							N(!1)
+							P(!1)
 						}
 					}
 				}))
 			};
-			var R = o("./src/reddit/components/RichTextEditor/emotes/Powerups/tooltip.m.less"),
-				P = o.n(R);
+			var C = o("./src/reddit/components/RichTextEditor/emotes/Powerups/tooltip.m.less"),
+				O = o.n(C);
 			const {
-				fbt: v
+				fbt: R
 			} = o("./node_modules/fbt/lib/FbtPublic.js");
 			t.default = e => {
 				let {
@@ -627,21 +617,21 @@
 					E && p(Object(i.i)())
 				}, [E, p]);
 				return u.id ? n.a.createElement(c.a, {
-					className: P.a.toolbarTooltip,
-					bodyClassName: P.a.tooltipBody,
+					className: O.a.toolbarTooltip,
+					bodyClassName: O.a.tooltipBody,
 					isVisible: E,
 					setIsVisible: b,
 					onSetApi: l,
 					title: n.a.createElement(() => n.a.createElement(n.a.Fragment, null, n.a.createElement(a.a, {
-						className: P.a.headingPowerupsBolt
-					}), m ? v._("Unlocked with Powerups", null, {
+						className: O.a.headingPowerupsBolt
+					}), m ? R._("Unlocked with Powerups", null, {
 						hk: "4am2RN"
-					}) : v._("Unlock with Powerups", null, {
+					}) : R._("Unlock with Powerups", null, {
 						hk: "Dbu9T"
 					})), null)
 				}, n.a.createElement("div", {
-					className: P.a.body
-				}, n.a.createElement(O, {
+					className: O.a.body
+				}, n.a.createElement(g, {
 					subredditId: u.id,
 					subredditName: u.name,
 					onEmoteClicked: e => {
@@ -668,7 +658,6 @@
 				emotes: "DNWbRyf3z71g0nqfrzQ4T",
 				freeEmotePack: "_13ylKQWUAkdhTJRIuHyJfq",
 				disabled: "Ejq92_2ovDkhH3FjoerXW",
-				unlockButton: "_3EI1On_HJixL24yeuq2w62",
 				deleteModalContainer: "_2JcZhkY3vXBVFEAMyuM8D5",
 				deleteModalImage: "_1V2bCmzxzskT1fA3fY70lK"
 			}
@@ -820,4 +809,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PowerupsEmotesTooltip.6336f6f90736630f6723.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PowerupsEmotesTooltip.82c08357f4cb5b83ad05.js.map
