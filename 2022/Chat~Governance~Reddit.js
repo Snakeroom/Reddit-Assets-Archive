@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.14f8c19e6e75a03ba713.js
-// Retrieved at 7/6/2022, 5:30:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.9e382c1942d6d8fd723c.js
+// Retrieved at 7/6/2022, 6:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Chat~Governance~Reddit"], {
 		"./assets/fonts/IBMPlexSans/font.less": function(e, t, i) {},
@@ -3467,11 +3467,11 @@
 				apiPassThroughHeaders: Object(r.e)({}.API_PASS_THROUGH_HEADERS || ""),
 				appName: {}.APP_NAME || "desktop2x",
 				assetPath: "https://www.redditstatic.com/desktop2x",
-				buildNumber: Object(r.c)("167997"),
+				buildNumber: Object(r.c)("168005"),
 				chatHelpUrl: {}.CHAT_HELP_URL || "https://reddit.zendesk.com/hc/en-us/sections/360008805652-Chat",
 				hlsVersion: "hls 0.12.4",
 				dashVersion: "dash 3.2.0",
-				buildTimestamp: Object(r.b)("1657140804"),
+				buildTimestamp: Object(r.b)("1657144238"),
 				cookieDomain: ".reddit.com",
 				giphyApiKey: "k2kwyMA6VeyHM6ZRT96OXDGaersnx73Z",
 				mediaUrl: "https://www.redditmedia.com",
@@ -5439,7 +5439,8 @@
 					REONBOARDING_FLOW: "reonboardingFlow",
 					LOGGEDOUT_FRONTPAGE_FAILED: "loggedOutFrontPageFailed",
 					LOGGEDOUT_MENU_RENDERED: "loggedOutMenuRendered",
-					NSFW_BLOCKING: "nsfwBlocking"
+					NSFW_BLOCKING: "nsfwBlocking",
+					AM_MODAL_DESIGN_UPDATE: "amModalDesignUpdate"
 				},
 				Tt = " …",
 				Ot = ["politics", "askreddit", "amitheasshole", "movies", "soccer", "memes", "news", "funny", "relationshipadvice", "wallstreetbets", "pics", "aww", "doctorwho", "porsche", "barista", "bourbon", "barefootrunning", "dexter", "fitmeals", "tifu", "coronavirus"],
@@ -6080,14 +6081,14 @@
 					}))
 				},
 				Y = (e, t, i) => {
-					console.log("%cStarting Raven %crelease %c9b9e3513ffd873021cdd22c9e04ff552fef9af58-production" + ` %cpublic url %c${y.a.sentryClientPublicURL}`, "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
+					console.log("%cStarting Raven %crelease %ca2018fbdcf24003ed1d8f209093af4523feecdca-production" + ` %cpublic url %c${y.a.sentryClientPublicURL}`, "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
 					let n = [];
 					n = [new RegExp(`^${y.a.assetPath}`, "i")];
 					o.e({
 						attachStacktrace: !0,
 						dsn: y.a.sentryClientPublicURL,
 						whitelistUrls: n,
-						release: "9b9e3513ffd873021cdd22c9e04ff552fef9af58-production",
+						release: "a2018fbdcf24003ed1d8f209093af4523feecdca-production",
 						environment: "production",
 						ignoreErrors: ["$ is not defined"],
 						integrations: [...Object(L.d)(), new d.Integrations.Breadcrumbs({
@@ -6613,7 +6614,7 @@
 							settings: r,
 							statusCode: s,
 							type: o,
-							releaseClient: "9b9e3513ffd873021cdd22c9e04ff552fef9af58-production",
+							releaseClient: "a2018fbdcf24003ed1d8f209093af4523feecdca-production",
 							appName: t.statsAppName,
 							error: n ? JSON.parse(Object(l.a)(n)) : void 0
 						},
@@ -10052,64 +10053,66 @@
 		"./src/reddit/actions/login.ts": function(e, t, i) {
 			"use strict";
 			i.d(t, "i", (function() {
-				return u
-			})), i.d(t, "j", (function() {
-				return c
-			})), i.d(t, "b", (function() {
 				return _
-			})), i.d(t, "e", (function() {
+			})), i.d(t, "j", (function() {
 				return m
-			})), i.d(t, "d", (function() {
+			})), i.d(t, "b", (function() {
 				return p
-			})), i.d(t, "a", (function() {
+			})), i.d(t, "e", (function() {
 				return h
-			})), i.d(t, "g", (function() {
+			})), i.d(t, "d", (function() {
 				return f
-			})), i.d(t, "k", (function() {
+			})), i.d(t, "a", (function() {
 				return b
-			})), i.d(t, "h", (function() {
+			})), i.d(t, "g", (function() {
 				return g
-			})), i.d(t, "l", (function() {
+			})), i.d(t, "k", (function() {
 				return w
-			})), i.d(t, "f", (function() {
+			})), i.d(t, "h", (function() {
 				return v
-			})), i.d(t, "c", (function() {
+			})), i.d(t, "l", (function() {
 				return y
+			})), i.d(t, "f", (function() {
+				return E
+			})), i.d(t, "c", (function() {
+				return S
 			}));
 			var n = i("./src/reddit/actions/modal.ts"),
 				r = i("./src/reddit/actions/preferences.ts"),
 				s = i("./src/reddit/constants/modals.ts"),
 				o = i("./src/reddit/constants/postLayout.ts"),
-				d = i("./src/reddit/models/Onboarding/index.ts"),
-				a = i("./src/reddit/selectors/experiments/magicLink.ts");
-			const l = (e, t) => async (i, s) => {
+				d = i("./src/reddit/helpers/counters/amModalDesignUpdate.ts"),
+				a = i("./src/reddit/models/Onboarding/index.ts"),
+				l = i("./src/reddit/selectors/experiments/d2xAmModalDesignUpdate.ts"),
+				u = i("./src/reddit/selectors/experiments/magicLink.ts");
+			const c = (e, t) => async (i, s) => {
 				i(Object(n.i)(e, t)), !s().user.prefs.layout && i(Object(r.x)(o.d.Card))
-			}, u = () => async (e, t) => {
-				e(l(s.a.LOGIN_MODAL_ID)), Object(a.b)(t())
-			}, c = () => async (e, t) => {
-				e(l(s.a.REGISTER_MODAL_ID)), Object(a.b)(t())
-			}, _ = () => async e => {
-				e(l(s.a.CHANGE_PASSWORD_MODAL_ID))
-			}, m = () => async e => {
-				e(l(s.a.ENABLE_TWO_FACTOR))
+			}, _ = () => async (e, t) => {
+				e(c(s.a.LOGIN_MODAL_ID)), Object(l.a)(t()) && Object(d.b)(d.a.Login), Object(u.b)(t())
+			}, m = () => async (e, t) => {
+				e(c(s.a.REGISTER_MODAL_ID)), Object(l.a)(t()) && Object(d.b)(d.a.Signup), Object(u.b)(t())
 			}, p = () => async e => {
-				e(l(s.a.DISABLE_TWO_FACTOR))
+				e(c(s.a.CHANGE_PASSWORD_MODAL_ID))
 			}, h = () => async e => {
-				e(l(s.a.TWO_FACTOR_BACKUP_CODES))
+				e(c(s.a.ENABLE_TWO_FACTOR))
 			}, f = () => async e => {
-				e(l(s.a.LINK_APPLE_SSO))
+				e(c(s.a.DISABLE_TWO_FACTOR))
 			}, b = () => async e => {
-				e(l(s.a.UNLINK_APPLE_SSO))
+				e(c(s.a.TWO_FACTOR_BACKUP_CODES))
 			}, g = () => async e => {
-				e(l(s.a.LINK_GOOGLE_SSO))
+				e(c(s.a.LINK_APPLE_SSO))
 			}, w = () => async e => {
-				e(l(s.a.UNLINK_GOOGLE_SSO))
+				e(c(s.a.UNLINK_APPLE_SSO))
 			}, v = () => async e => {
-				e(l(s.a.GOOGLE_ONE_TAP_MODAL_ID))
-			}, y = function() {
-				let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : d.a;
+				e(c(s.a.LINK_GOOGLE_SSO))
+			}, y = () => async e => {
+				e(c(s.a.UNLINK_GOOGLE_SSO))
+			}, E = () => async e => {
+				e(c(s.a.GOOGLE_ONE_TAP_MODAL_ID))
+			}, S = function() {
+				let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : a.a;
 				return async t => {
-					t(l(s.a.ONBOARDING_MODAL_D2X, e))
+					t(c(s.a.ONBOARDING_MODAL_D2X, e))
 				}
 			}
 		},
@@ -21632,6 +21635,28 @@
 					return o[e] = i, i
 				},
 				l = e => o[e] = void 0
+		},
+		"./src/reddit/helpers/counters/amModalDesignUpdate.ts": function(e, t, i) {
+			"use strict";
+			i.d(t, "a", (function() {
+				return s
+			})), i.d(t, "b", (function() {
+				return o
+			}));
+			var n = i("./src/lib/constants/index.ts"),
+				r = i("./src/telemetry/helpers/sendCounter.ts");
+			var s;
+			! function(e) {
+				e.Dismiss = "dismiss", e.Login = "login", e.Signup = "signup"
+			}(s || (s = {}));
+			const o = e => {
+				Object(r.b)(n.m.Redesign, {
+					type: r.a.AmModalDesignUpdate,
+					data: {
+						action: e
+					}
+				})
+			}
 		},
 		"./src/reddit/helpers/featureThrottling/store/index.ts": function(e, t, i) {
 			"use strict";
@@ -35466,6 +35491,20 @@
 					experimentName: r.tf
 				}), e => e === r.zd)
 		},
+		"./src/reddit/selectors/experiments/d2xAmModalDesignUpdate.ts": function(e, t, i) {
+			"use strict";
+			i.d(t, "a", (function() {
+				return d
+			}));
+			var n = i("./src/reddit/constants/experiments.ts"),
+				r = i("./src/reddit/helpers/chooseVariant/index.ts"),
+				s = i("./src/reddit/selectors/experiments/index.ts"),
+				o = i("./node_modules/reselect/es/index.js");
+			const d = Object(o.a)(e => Object(r.c)(e, {
+				experimentEligibilitySelector: s.f,
+				experimentName: n.yb
+			}), e => e === n.zd)
+		},
 		"./src/reddit/selectors/experiments/econ/index.ts": function(e, t, i) {
 			"use strict";
 			i.d(t, "g", (function() {
@@ -46480,7 +46519,7 @@
 				s = i("./src/lib/constants/index.ts"),
 				o = i("./src/lib/makeRequest/index.ts");
 			! function(e) {
-				e.ClientIdConsumed = "clientIdConsumed", e.ClientIdRejected = "clientIdRejected", e.NumberOfDiffs = "numberOfDiffs", e.DetailedDiffs = "detailedDiffs", e.ClientScreenview = "client-screenview", e.GenderCollection = "genderCollection", e.OneTapDismissed = "oneTapDismissed", e.OneTapViewed = "oneTapViewed", e.ReonboardingFlow = "reonboardingFlow", e.LoggedOutFrontPageFailed = "loggedOutFrontPageFailed", e.LoggedOutMenuRendered = "loggedOutMenuRendered", e.NsfwBlocking = "nsfwBlocking"
+				e.ClientIdConsumed = "clientIdConsumed", e.ClientIdRejected = "clientIdRejected", e.NumberOfDiffs = "numberOfDiffs", e.DetailedDiffs = "detailedDiffs", e.ClientScreenview = "client-screenview", e.GenderCollection = "genderCollection", e.OneTapDismissed = "oneTapDismissed", e.OneTapViewed = "oneTapViewed", e.ReonboardingFlow = "reonboardingFlow", e.LoggedOutFrontPageFailed = "loggedOutFrontPageFailed", e.LoggedOutMenuRendered = "loggedOutMenuRendered", e.NsfwBlocking = "nsfwBlocking", e.AmModalDesignUpdate = "amModalDesignUpdate"
 			}(n || (n = {}));
 			const d = e => {
 				switch (e) {
@@ -46507,7 +46546,9 @@
 					case n.NsfwBlocking:
 						return s.w.NSFW_BLOCKING;
 					case n.ReonboardingFlow:
-						return s.w.REONBOARDING_FLOW
+						return s.w.REONBOARDING_FLOW;
+					case n.AmModalDesignUpdate:
+						return s.w.AM_MODAL_DESIGN_UPDATE
 				}
 			};
 
@@ -48173,4 +48214,4 @@
 		"ignored /drone/src/node_modules/readable-stream/lib/internal/streams util": function(e, t) {}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.14f8c19e6e75a03ba713.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.9e382c1942d6d8fd723c.js.map

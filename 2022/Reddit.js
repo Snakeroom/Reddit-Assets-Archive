@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Reddit.0f5a9050037caa39e758.js
-// Retrieved at 7/6/2022, 5:30:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Reddit.aa4c90f95d46bdf0129c.js
+// Retrieved at 7/6/2022, 6:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Reddit"], {
 		"./assets/fonts/BentonSans/font.less": function(e, t, n) {},
@@ -1678,84 +1678,87 @@
 				x = n("./src/reddit/constants/history.ts"),
 				P = n("./src/reddit/constants/modals.ts"),
 				j = n("./src/reddit/constants/parameters.ts"),
-				S = n("./src/reddit/helpers/getAccountManagerMessageTarget/index.ts"),
-				_ = n("./src/reddit/helpers/history/index.ts"),
-				k = n("./src/reddit/helpers/sessionStorage/index.ts"),
-				N = n("./src/reddit/helpers/trackers/blockingInterstitial.ts"),
-				w = n("./src/reddit/helpers/trackers/onboarding.ts"),
-				M = n("./src/reddit/icons/svgs/Close/index.tsx"),
-				I = n("./src/reddit/models/Sso/index.ts"),
-				T = n("./src/reddit/models/Toast/index.ts"),
-				A = n("./src/reddit/selectors/accountManager/index.ts"),
-				R = n("./src/reddit/selectors/accountManager/modalData.ts"),
-				L = n("./src/reddit/selectors/experiments/contributeBeforeSignUp.ts"),
-				D = n("./src/reddit/selectors/experiments/frontpageSignup.ts"),
-				F = n("./src/reddit/selectors/experiments/loggedOutBlockingInterstitial.ts"),
-				U = n("./src/reddit/selectors/experiments/nsfwBlockingExperiment.ts"),
-				G = n("./src/reddit/selectors/experiments/survey.ts"),
-				B = n("./src/reddit/selectors/telemetry.ts"),
-				q = n("./src/reddit/selectors/user.ts"),
-				H = n("./src/reddit/components/AccountManagerModal/IFrame/index.m.less"),
-				W = n.n(H);
-			const V = u.a.iframe("IFrame", W.a),
-				Q = u.a.button("CloseButton", W.a),
-				z = u.a.wrapped(M.a, "Close", W.a),
-				K = Object(c.c)({
-					accountManagerSrc: A.a,
-					actionSource: R.a,
-					frontpageSignupVariant: D.a,
-					isBlockingInterstitialEnabled: F.b,
-					isBlockingInterstitialV2Enabled: F.c,
-					isBlurredPreview: U.b,
-					isCommentBeforeSignUpEnabled: L.a,
-					isDismissSurveyEnabled: G.a,
-					isHardBlockingInterstitialEnabled: F.d,
-					isLoggedIn: q.Q,
-					isRegularOnboardingEnabled: L.b,
-					redirectUrl: R.b
+				S = n("./src/reddit/helpers/counters/amModalDesignUpdate.ts"),
+				_ = n("./src/reddit/helpers/getAccountManagerMessageTarget/index.ts"),
+				k = n("./src/reddit/helpers/history/index.ts"),
+				N = n("./src/reddit/helpers/sessionStorage/index.ts"),
+				w = n("./src/reddit/helpers/trackers/blockingInterstitial.ts"),
+				M = n("./src/reddit/helpers/trackers/onboarding.ts"),
+				I = n("./src/reddit/icons/svgs/Close/index.tsx"),
+				T = n("./src/reddit/models/Sso/index.ts"),
+				A = n("./src/reddit/models/Toast/index.ts"),
+				R = n("./src/reddit/selectors/accountManager/index.ts"),
+				L = n("./src/reddit/selectors/accountManager/modalData.ts"),
+				D = n("./src/reddit/selectors/experiments/contributeBeforeSignUp.ts"),
+				F = n("./src/reddit/selectors/experiments/d2xAmModalDesignUpdate.ts"),
+				U = n("./src/reddit/selectors/experiments/frontpageSignup.ts"),
+				G = n("./src/reddit/selectors/experiments/loggedOutBlockingInterstitial.ts"),
+				B = n("./src/reddit/selectors/experiments/nsfwBlockingExperiment.ts"),
+				q = n("./src/reddit/selectors/experiments/survey.ts"),
+				H = n("./src/reddit/selectors/telemetry.ts"),
+				W = n("./src/reddit/selectors/user.ts"),
+				V = n("./src/reddit/components/AccountManagerModal/IFrame/index.m.less"),
+				Q = n.n(V);
+			const z = u.a.iframe("IFrame", Q.a),
+				K = u.a.button("CloseButton", Q.a),
+				J = u.a.wrapped(I.a, "Close", Q.a),
+				X = Object(c.c)({
+					accountManagerSrc: R.a,
+					actionSource: L.a,
+					frontpageSignupVariant: U.a,
+					isAmModalDesignUpdateEnabled: F.a,
+					isBlockingInterstitialEnabled: G.b,
+					isBlockingInterstitialV2Enabled: G.c,
+					isBlurredPreview: B.b,
+					isCommentBeforeSignUpEnabled: D.a,
+					isDismissSurveyEnabled: q.a,
+					isHardBlockingInterstitialEnabled: G.d,
+					isLoggedIn: W.Q,
+					isRegularOnboardingEnabled: D.b,
+					redirectUrl: L.b
 				}),
-				J = Object(i.b)(K, (e, t) => ({
+				Y = Object(i.b)(X, (e, t) => ({
 					onDismissSignupTrigger: () => e(Object(O.d)()),
 					oniFrameLoaded: (t, n) => {
 						e((e, s) => {
 							t.contentWindow.postMessage({
 								events: {
-									...Object(B.n)(s()),
+									...Object(H.n)(s()),
 									actionSource: n
 								},
 								type: "eventData"
-							}, Object(S.a)())
+							}, Object(_.a)())
 						})
 					},
 					onTwoFactorChanged: () => e(Object(b.A)(!1)),
 					onSSOLinkSuccess: (t, n, s) => {
 						e(f({
 							linkedIdentity: n
-						})), e(Object(m.g)(s)), e(Object(C.f)(Object(C.e)(t, T.b.SuccessCommunity)))
+						})), e(Object(m.g)(s)), e(Object(C.f)(Object(C.e)(t, A.b.SuccessCommunity)))
 					},
 					onSSOUnlinkSuccess: (t, n, s) => {
 						e(v({
 							linkedIdentity: n
-						})), e(Object(m.g)(s)), e(Object(C.f)(Object(C.e)(t, T.b.SuccessCommunity)))
+						})), e(Object(m.g)(s)), e(Object(C.f)(Object(C.e)(t, A.b.SuccessCommunity)))
 					},
 					openNsfwModal: () => e(Object(p.a)()),
 					showToast: (t, n) => {
 						e(Object(C.f)(Object(C.e)(t, n)))
 					}
 				})),
-				X = e => {
+				Z = e => {
 					let {
 						data: t,
 						origin: n
 					} = e;
 					return t && t.success && (t.type === E.a.ChangePassword || t.type === E.a.Close || t.type === E.a.CreateAccount || t.type === E.a.GoogleOneTapDisplayed || t.type === E.a.GoogleOneTapFlowFailed || t.type === E.a.GoogleOneTapSkipped || t.type === E.a.Login || t.type === E.a.PreferenceStatus || t.type === E.a.Register || t.type === E.a.Resize || t.type === E.a.ShowStep || t.type === E.a.SSOLinkFail || t.type === E.a.SSOLinkSuccess || t.type === E.a.SSOUnlinkFail || t.type === E.a.SSOUnlinkSuccess || t.type === E.a.Subscribe || t.type === E.a.TwoFactorChanged) && n === s.a.accountManagerOrigin
 				},
-				Y = {
+				$ = {
 					"select-account": "link_account",
 					"confirm-otp": "link_account_otp",
 					"confirm-password": "link_account_password"
 				};
-			class Z extends a.a.Component {
+			class ee extends a.a.Component {
 				constructor() {
 					var e;
 					super(...arguments), e = this, this.iframeRef = a.a.createRef(), this.isAccountCreated = !1, this.isSignupModalDismissed = !1, this.isSignupModalSuccessful = !1, this.trackResizing = !0, this.currentStep = null, this.state = {
@@ -1769,12 +1772,12 @@
 							t && t.focus()
 						} catch (e) {}
 					}, this.handleLinkSSOSuccess = e => {
-						const t = e === I.a.Apple ? P.a.LINK_APPLE_SSO : P.a.LINK_GOOGLE_SSO;
+						const t = e === T.a.Apple ? P.a.LINK_APPLE_SSO : P.a.LINK_GOOGLE_SSO;
 						this.props.onSSOLinkSuccess(r.fbt._("Account connected", null, {
 							hk: "2X2Y2n"
 						}), e, t)
 					}, this.handleUnlinkSSOSuccess = e => {
-						const t = e === I.a.Apple ? P.a.UNLINK_APPLE_SSO : P.a.UNLINK_GOOGLE_SSO;
+						const t = e === T.a.Apple ? P.a.UNLINK_APPLE_SSO : P.a.UNLINK_GOOGLE_SSO;
 						this.props.onSSOUnlinkSuccess(r.fbt._("Account disconnected", null, {
 							hk: "mUOBy"
 						}), e, t)
@@ -1789,7 +1792,7 @@
 						const {
 							data: t
 						} = e;
-						if (this.iframeRef.current && e.source === this.iframeRef.current.contentWindow && X(e))
+						if (this.iframeRef.current && e.source === this.iframeRef.current.contentWindow && Z(e))
 							if (t.type === E.a.CreateAccount) this.isAccountCreated = !0;
 							else if (t.type === E.a.Close) this.closedByUser();
 						else if (t.type === E.a.Subscribe) this.onSubscribe(t.subscriptions || t.subredditIds);
@@ -1815,7 +1818,7 @@
 					}, this.onSubscribe = e => {
 						this.props.onSubscriptionsChanged && this.props.onSubscriptionsChanged(e || [])
 					}, this.onLogIn = () => {
-						this.props.isCommentBeforeSignUpEnabled && this.props.actionSource !== m.a.Reply && Object(k.a)(), this.props.redirectUrl ? this.redirectTo(this.props.redirectUrl) : (Object(_.a)(x.b.JustLoggedIn, !0), window.location.reload())
+						this.props.isCommentBeforeSignUpEnabled && this.props.actionSource !== m.a.Reply && Object(N.a)(), this.props.redirectUrl ? this.redirectTo(this.props.redirectUrl) : (Object(k.a)(x.b.JustLoggedIn, !0), window.location.reload())
 					}, this.onChangePassword = () => {
 						this.props.redirectUrl ? this.redirectTo(this.props.redirectUrl) : window.location.reload()
 					}, this.onSignUp = (e, t) => {
@@ -1823,7 +1826,7 @@
 							redirectUrl: n
 						} = this.props;
 						let s = "";
-						s = n || window.location.href, this.isSignupSurveyTriggerSource() && (this.isSignupModalSuccessful = !0), this.props.isCommentBeforeSignUpEnabled && this.props.actionSource !== m.a.Reply && Object(k.a)(), this.redirectTo(s, !0)
+						s = n || window.location.href, this.isSignupSurveyTriggerSource() && (this.isSignupModalSuccessful = !0), this.props.isCommentBeforeSignUpEnabled && this.props.actionSource !== m.a.Reply && Object(N.a)(), this.redirectTo(s, !0)
 					}, this.onShowStep = e => {
 						this.currentStep = e, e === E.b.Subscribe && (this.trackResizing = !1, this.setIframeStyles({
 							height: void 0,
@@ -1832,13 +1835,13 @@
 					}, this.onGoogleOneTapFlowFailed = e => {
 						this.close(), this.props.showToast(e || r.fbt._("Something went wrong. Please try again later", null, {
 							hk: "3TdJZE"
-						}), T.b.Error)
+						}), A.b.Error)
 					}, this.onEmailDigestsStatus = e => {
 						e ? this.props.showToast(r.fbt._("Changes saved", null, {
 							hk: "6bifV"
-						}), T.b.SuccessCommunity) : this.props.showToast(r.fbt._("Something went wrong. Please try again later", null, {
+						}), A.b.SuccessCommunity) : this.props.showToast(r.fbt._("Something went wrong. Please try again later", null, {
 							hk: "1M3Z2N"
-						}), T.b.Error)
+						}), A.b.Error)
 					}, this.onGoogleOneTapUIViewed = () => {
 						this.props.onGoogleOneTapUIViewed && this.props.onGoogleOneTapUIViewed()
 					}, this.redirectTo = function(t) {
@@ -1860,12 +1863,12 @@
 							sendEvent: c
 						} = this.props;
 						if (this.currentStep) {
-							const e = Y[this.currentStep];
-							e && c(Object(w.r)(e))
+							const e = $[this.currentStep];
+							e && c(Object(M.r)(e))
 						}
-						s && e === m.a.NsfwBlockingModal && i(), this.isSignupSurveyTriggerSource() && (this.isSignupModalDismissed = !0), (t || n) && e !== m.a.NsfwBlockingModal && c(Object(N.a)()), r && Object(k.a)(), this.close(), this.isSignupModalDismissed && o && a()
+						s && e === m.a.NsfwBlockingModal && i(), this.isSignupSurveyTriggerSource() && (this.isSignupModalDismissed = !0), (t || n) && e !== m.a.NsfwBlockingModal && c(Object(w.a)()), r && Object(N.a)(), this.close(), this.isSignupModalDismissed && o && a()
 					}, this.close = () => {
-						this.props.onClose && this.props.onClose();
+						this.props.onClose && this.props.onClose(), this.props.isAmModalDesignUpdateEnabled && Object(S.b)(S.a.Dismiss);
 						try {
 							sessionStorage.removeItem("data"), sessionStorage.removeItem("initialData")
 						} catch (e) {}
@@ -1913,18 +1916,18 @@
 					} = this.props, {
 						iframeStyles: o
 					} = this.state, i = (r === E.c.Index || r === E.c.Register) && (t === m.a.UserProfile || t === m.a.FeedPost || t === m.a.Comments || t === m.a.FeedScroll || t === m.a.CommentsScroll) && s, c = this.props.showCloseButton && !i;
-					return a.a.createElement(a.a.Fragment, null, a.a.createElement(V, {
+					return a.a.createElement(a.a.Fragment, null, a.a.createElement(z, {
 						className: n,
 						innerRef: this.iframeRef,
 						src: e,
 						style: o,
 						onLoad: this.onIFrameLoad
-					}), c && a.a.createElement(Q, {
+					}), c && a.a.createElement(K, {
 						onClick: this.closedByUser
-					}, a.a.createElement(z, null)))
+					}, a.a.createElement(J, null)))
 				}
 			}
-			t.a = J(Object(y.c)(Z))
+			t.a = Y(Object(y.c)(ee))
 		},
 		"./src/reddit/components/AccountManagerModal/index.m.less": function(e, t, n) {
 			e.exports = {
@@ -18932,15 +18935,12 @@
 				i = n("./src/lib/addQueryParams/index.ts"),
 				c = n("./src/reddit/constants/accountManager.ts"),
 				l = n("./src/reddit/constants/experiments.ts"),
-				d = n("./src/reddit/helpers/chooseVariant/index.ts"),
-				u = n("./src/reddit/selectors/experiments/index.ts");
-			const m = Object(a.a)(e => Object(d.c)(e, {
-				experimentEligibilitySelector: u.f,
-				experimentName: l.yb
-			}), e => e === l.zd);
-			var p = n("./src/reddit/selectors/experiments/frontpageSignup.ts");
-			const b = Object(a.a)(e => Object(d.c)(e, {
-				experimentEligibilitySelector: u.f,
+				d = n("./src/reddit/selectors/experiments/d2xAmModalDesignUpdate.ts"),
+				u = n("./src/reddit/selectors/experiments/frontpageSignup.ts"),
+				m = n("./src/reddit/helpers/chooseVariant/index.ts"),
+				p = n("./src/reddit/selectors/experiments/index.ts");
+			const b = Object(a.a)(e => Object(m.c)(e, {
+				experimentEligibilitySelector: p.f,
 				experimentName: l.Kd
 			}), e => e === l.Od.Enabled);
 			var h = n("./src/reddit/selectors/experiments/loggedOutBlockingInterstitial.ts"),
@@ -18948,29 +18948,29 @@
 				f = n("./src/reddit/actions/modal.ts"),
 				v = n("./src/reddit/selectors/accountManager/modalData.ts"),
 				O = n("./src/reddit/selectors/meta.ts");
-			const C = Object(a.a)(u.f, O.b, v.a, (e, t, n) => e && "DE" === t && n === f.a.Report),
-				y = Object(a.a)(e => Object(d.c)(e, {
+			const C = Object(a.a)(p.f, O.b, v.a, (e, t, n) => e && "DE" === t && n === f.a.Report),
+				y = Object(a.a)(e => Object(m.c)(e, {
 					experimentEligibilitySelector: C,
 					experimentName: l.ue
 				}), e => e === l.De.Enabled);
 			var E = n("./src/lib/getParsedUserAgent/index.ts");
-			const x = Object(a.a)(e => Object(d.c)(e, {
-				experimentEligibilitySelector: e => Object(E.g)(e.meta.userAgent) && Object(u.f)(e),
+			const x = Object(a.a)(e => Object(m.c)(e, {
+				experimentEligibilitySelector: e => Object(E.g)(e.meta.userAgent) && Object(p.f)(e),
 				experimentName: l.mf
 			}), e => e === l.Bf.Enabled);
 			var P = n("./src/reddit/selectors/responsiveSettings.ts");
 			const j = Object(a.c)({
-					frontpageSignupVariant: p.a,
+					frontpageSignupVariant: u.a,
 					magicLinkVariant: g.a,
-					ssoLoginLinkVariant: e => Object(d.c)(e, {
-						experimentEligibilitySelector: e => !Object(u.e)(e),
+					ssoLoginLinkVariant: e => Object(m.c)(e, {
+						experimentEligibilitySelector: e => !Object(p.e)(e),
 						experimentName: l.rf
 					}),
 					blockingInterstitialVariant: h.e,
 					blockingInterstitialV2Variant: h.f
 				}),
 				S = Object(a.c)({
-					isAmModalDesignUpdateEnabled: m,
+					isAmModalDesignUpdateEnabled: d.a,
 					isBlockingInterstitialEnabled: h.b,
 					isBlockingInterstitialV2Enabled: h.c,
 					isGoogleSsoGisEnabled: b,
@@ -19466,4 +19466,4 @@
 		["./src/reddit/index.tsx", "runtime~Reddit", "vendors~Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePo~5f1ac562", "vendors~Governance~ModListing~Reddit~Subreddit", "vendors~Chat~Governance~Reddit", "vendors~Reddit", "Governance~Reddit~ReportFlow~Subreddit~reddit-components-BlankPost~reddit-components-ClassicPost~red~f3a55241", "PostCreation~Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~r~4c415e24", "Governance~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compo~bd4baca2", "Governance~ModListing~Reddit~ReportFlow~Subreddit", "Chat~Governance~Reddit", "Governance~Reddit~Subreddit", "Governance~Reddit", "Reddit~StandalonePostPage", "AuthorHovercard~Reddit"]
 	]
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit.0f5a9050037caa39e758.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit.aa4c90f95d46bdf0129c.js.map
