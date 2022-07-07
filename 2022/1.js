@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/1.1f82869fcae513b86fc2.js
-// Retrieved at 7/5/2022, 10:10:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/1.0dc947e9f0020a51d822.js
+// Retrieved at 7/7/2022, 12:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	[1], {
 		"./node_modules/@reddit/crypto/react/config/index.es.js": function(e, t, n) {
@@ -213,14 +213,14 @@
 			}
 			let I;
 			var k;
-			let A;
-			var w;
-			(k = I || (I = {})).QUERY = "query", k.MUTATION = "mutation", k.SUBSCRIPTION = "subscription", (w = A || (A = {})).NAME = "Name", w.DOCUMENT = "Document", w.OPERATION_DEFINITION = "OperationDefinition", w.VARIABLE_DEFINITION = "VariableDefinition", w.SELECTION_SET = "SelectionSet", w.FIELD = "Field", w.ARGUMENT = "Argument", w.FRAGMENT_SPREAD = "FragmentSpread", w.INLINE_FRAGMENT = "InlineFragment", w.FRAGMENT_DEFINITION = "FragmentDefinition", w.VARIABLE = "Variable", w.INT = "IntValue", w.FLOAT = "FloatValue", w.STRING = "StringValue", w.BOOLEAN = "BooleanValue", w.NULL = "NullValue", w.ENUM = "EnumValue", w.LIST = "ListValue", w.OBJECT = "ObjectValue", w.OBJECT_FIELD = "ObjectField", w.DIRECTIVE = "Directive", w.NAMED_TYPE = "NamedType", w.LIST_TYPE = "ListType", w.NON_NULL_TYPE = "NonNullType", w.SCHEMA_DEFINITION = "SchemaDefinition", w.OPERATION_TYPE_DEFINITION = "OperationTypeDefinition", w.SCALAR_TYPE_DEFINITION = "ScalarTypeDefinition", w.OBJECT_TYPE_DEFINITION = "ObjectTypeDefinition", w.FIELD_DEFINITION = "FieldDefinition", w.INPUT_VALUE_DEFINITION = "InputValueDefinition", w.INTERFACE_TYPE_DEFINITION = "InterfaceTypeDefinition", w.UNION_TYPE_DEFINITION = "UnionTypeDefinition", w.ENUM_TYPE_DEFINITION = "EnumTypeDefinition", w.ENUM_VALUE_DEFINITION = "EnumValueDefinition", w.INPUT_OBJECT_TYPE_DEFINITION = "InputObjectTypeDefinition", w.DIRECTIVE_DEFINITION = "DirectiveDefinition", w.SCHEMA_EXTENSION = "SchemaExtension", w.SCALAR_TYPE_EXTENSION = "ScalarTypeExtension", w.OBJECT_TYPE_EXTENSION = "ObjectTypeExtension", w.INTERFACE_TYPE_EXTENSION = "InterfaceTypeExtension", w.UNION_TYPE_EXTENSION = "UnionTypeExtension", w.ENUM_TYPE_EXTENSION = "EnumTypeExtension", w.INPUT_OBJECT_TYPE_EXTENSION = "InputObjectTypeExtension";
+			let w;
+			var A;
+			(k = I || (I = {})).QUERY = "query", k.MUTATION = "mutation", k.SUBSCRIPTION = "subscription", (A = w || (w = {})).NAME = "Name", A.DOCUMENT = "Document", A.OPERATION_DEFINITION = "OperationDefinition", A.VARIABLE_DEFINITION = "VariableDefinition", A.SELECTION_SET = "SelectionSet", A.FIELD = "Field", A.ARGUMENT = "Argument", A.FRAGMENT_SPREAD = "FragmentSpread", A.INLINE_FRAGMENT = "InlineFragment", A.FRAGMENT_DEFINITION = "FragmentDefinition", A.VARIABLE = "Variable", A.INT = "IntValue", A.FLOAT = "FloatValue", A.STRING = "StringValue", A.BOOLEAN = "BooleanValue", A.NULL = "NullValue", A.ENUM = "EnumValue", A.LIST = "ListValue", A.OBJECT = "ObjectValue", A.OBJECT_FIELD = "ObjectField", A.DIRECTIVE = "Directive", A.NAMED_TYPE = "NamedType", A.LIST_TYPE = "ListType", A.NON_NULL_TYPE = "NonNullType", A.SCHEMA_DEFINITION = "SchemaDefinition", A.OPERATION_TYPE_DEFINITION = "OperationTypeDefinition", A.SCALAR_TYPE_DEFINITION = "ScalarTypeDefinition", A.OBJECT_TYPE_DEFINITION = "ObjectTypeDefinition", A.FIELD_DEFINITION = "FieldDefinition", A.INPUT_VALUE_DEFINITION = "InputValueDefinition", A.INTERFACE_TYPE_DEFINITION = "InterfaceTypeDefinition", A.UNION_TYPE_DEFINITION = "UnionTypeDefinition", A.ENUM_TYPE_DEFINITION = "EnumTypeDefinition", A.ENUM_VALUE_DEFINITION = "EnumValueDefinition", A.INPUT_OBJECT_TYPE_DEFINITION = "InputObjectTypeDefinition", A.DIRECTIVE_DEFINITION = "DirectiveDefinition", A.SCHEMA_EXTENSION = "SchemaExtension", A.SCALAR_TYPE_EXTENSION = "ScalarTypeExtension", A.OBJECT_TYPE_EXTENSION = "ObjectTypeExtension", A.INTERFACE_TYPE_EXTENSION = "InterfaceTypeExtension", A.UNION_TYPE_EXTENSION = "UnionTypeExtension", A.ENUM_TYPE_EXTENSION = "EnumTypeExtension", A.INPUT_OBJECT_TYPE_EXTENSION = "InputObjectTypeExtension";
 			const D = Object.freeze({});
 
 			function S(e, t, n = b) {
 				const i = new Map;
-				for (const m of Object.values(A)) i.set(m, C(t, m));
+				for (const m of Object.values(w)) i.set(m, C(t, m));
 				let r = void 0,
 					o = Array.isArray(e),
 					s = [e],
@@ -1116,7 +1116,7 @@
 					return "Source"
 				}
 			}
-			class Ae {
+			class we {
 				constructor(e, t) {
 					const n = function(e) {
 						return Ie(e, ke)
@@ -1126,13 +1126,13 @@
 				parseName() {
 					const e = this.expectToken(oe.NAME);
 					return this.node(e, {
-						kind: A.NAME,
+						kind: w.NAME,
 						value: e.value
 					})
 				}
 				parseDocument() {
 					return this.node(this._lexer.token, {
-						kind: A.DOCUMENT,
+						kind: w.DOCUMENT,
 						definitions: this.many(oe.SOF, this.parseDefinition, oe.EOF)
 					})
 				}
@@ -1176,7 +1176,7 @@
 				parseOperationDefinition() {
 					const e = this._lexer.token;
 					if (this.peek(oe.BRACE_L)) return this.node(e, {
-						kind: A.OPERATION_DEFINITION,
+						kind: w.OPERATION_DEFINITION,
 						operation: I.QUERY,
 						name: void 0,
 						variableDefinitions: [],
@@ -1186,7 +1186,7 @@
 					const t = this.parseOperationType();
 					let n;
 					return this.peek(oe.NAME) && (n = this.parseName()), this.node(e, {
-						kind: A.OPERATION_DEFINITION,
+						kind: w.OPERATION_DEFINITION,
 						operation: t,
 						name: n,
 						variableDefinitions: this.parseVariableDefinitions(),
@@ -1211,7 +1211,7 @@
 				}
 				parseVariableDefinition() {
 					return this.node(this._lexer.token, {
-						kind: A.VARIABLE_DEFINITION,
+						kind: w.VARIABLE_DEFINITION,
 						variable: this.parseVariable(),
 						type: (this.expectToken(oe.COLON), this.parseTypeReference()),
 						defaultValue: this.expectOptionalToken(oe.EQUALS) ? this.parseConstValueLiteral() : void 0,
@@ -1221,13 +1221,13 @@
 				parseVariable() {
 					const e = this._lexer.token;
 					return this.expectToken(oe.DOLLAR), this.node(e, {
-						kind: A.VARIABLE,
+						kind: w.VARIABLE,
 						name: this.parseName()
 					})
 				}
 				parseSelectionSet() {
 					return this.node(this._lexer.token, {
-						kind: A.SELECTION_SET,
+						kind: w.SELECTION_SET,
 						selections: this.many(oe.BRACE_L, this.parseSelection, oe.BRACE_R)
 					})
 				}
@@ -1239,7 +1239,7 @@
 						t = this.parseName();
 					let n, i;
 					return this.expectOptionalToken(oe.COLON) ? (n = t, i = this.parseName()) : i = t, this.node(e, {
-						kind: A.FIELD,
+						kind: w.FIELD,
 						alias: n,
 						name: i,
 						arguments: this.parseArguments(!1),
@@ -1255,7 +1255,7 @@
 					const t = this._lexer.token,
 						n = this.parseName();
 					return this.expectToken(oe.COLON), this.node(t, {
-						kind: A.ARGUMENT,
+						kind: w.ARGUMENT,
 						name: n,
 						value: this.parseValueLiteral(e)
 					})
@@ -1268,11 +1268,11 @@
 					this.expectToken(oe.SPREAD);
 					const t = this.expectOptionalKeyword("on");
 					return !t && this.peek(oe.NAME) ? this.node(e, {
-						kind: A.FRAGMENT_SPREAD,
+						kind: w.FRAGMENT_SPREAD,
 						name: this.parseFragmentName(),
 						directives: this.parseDirectives(!1)
 					}) : this.node(e, {
-						kind: A.INLINE_FRAGMENT,
+						kind: w.INLINE_FRAGMENT,
 						typeCondition: t ? this.parseNamedType() : void 0,
 						directives: this.parseDirectives(!1),
 						selectionSet: this.parseSelectionSet()
@@ -1282,14 +1282,14 @@
 					var e;
 					const t = this._lexer.token;
 					return this.expectKeyword("fragment"), !0 === (null === (e = this._options) || void 0 === e ? void 0 : e.allowLegacyFragmentVariables) ? this.node(t, {
-						kind: A.FRAGMENT_DEFINITION,
+						kind: w.FRAGMENT_DEFINITION,
 						name: this.parseFragmentName(),
 						variableDefinitions: this.parseVariableDefinitions(),
 						typeCondition: (this.expectKeyword("on"), this.parseNamedType()),
 						directives: this.parseDirectives(!1),
 						selectionSet: this.parseSelectionSet()
 					}) : this.node(t, {
-						kind: A.FRAGMENT_DEFINITION,
+						kind: w.FRAGMENT_DEFINITION,
 						name: this.parseFragmentName(),
 						typeCondition: (this.expectKeyword("on"), this.parseNamedType()),
 						directives: this.parseDirectives(!1),
@@ -1309,12 +1309,12 @@
 							return this.parseObject(e);
 						case oe.INT:
 							return this._lexer.advance(), this.node(t, {
-								kind: A.INT,
+								kind: w.INT,
 								value: t.value
 							});
 						case oe.FLOAT:
 							return this._lexer.advance(), this.node(t, {
-								kind: A.FLOAT,
+								kind: w.FLOAT,
 								value: t.value
 							});
 						case oe.STRING:
@@ -1324,21 +1324,21 @@
 							switch (this._lexer.advance(), t.value) {
 								case "true":
 									return this.node(t, {
-										kind: A.BOOLEAN,
+										kind: w.BOOLEAN,
 										value: !0
 									});
 								case "false":
 									return this.node(t, {
-										kind: A.BOOLEAN,
+										kind: w.BOOLEAN,
 										value: !1
 									});
 								case "null":
 									return this.node(t, {
-										kind: A.NULL
+										kind: w.NULL
 									});
 								default:
 									return this.node(t, {
-										kind: A.ENUM,
+										kind: w.ENUM,
 										value: t.value
 									})
 							}
@@ -1361,20 +1361,20 @@
 				parseStringLiteral() {
 					const e = this._lexer.token;
 					return this._lexer.advance(), this.node(e, {
-						kind: A.STRING,
+						kind: w.STRING,
 						value: e.value,
 						block: e.kind === oe.BLOCK_STRING
 					})
 				}
 				parseList(e) {
 					return this.node(this._lexer.token, {
-						kind: A.LIST,
+						kind: w.LIST,
 						values: this.any(oe.BRACKET_L, () => this.parseValueLiteral(e), oe.BRACKET_R)
 					})
 				}
 				parseObject(e) {
 					return this.node(this._lexer.token, {
-						kind: A.OBJECT,
+						kind: w.OBJECT,
 						fields: this.any(oe.BRACE_L, () => this.parseObjectField(e), oe.BRACE_R)
 					})
 				}
@@ -1382,7 +1382,7 @@
 					const t = this._lexer.token,
 						n = this.parseName();
 					return this.expectToken(oe.COLON), this.node(t, {
-						kind: A.OBJECT_FIELD,
+						kind: w.OBJECT_FIELD,
 						name: n,
 						value: this.parseValueLiteral(e)
 					})
@@ -1398,7 +1398,7 @@
 				parseDirective(e) {
 					const t = this._lexer.token;
 					return this.expectToken(oe.AT), this.node(t, {
-						kind: A.DIRECTIVE,
+						kind: w.DIRECTIVE,
 						name: this.parseName(),
 						arguments: this.parseArguments(e)
 					})
@@ -1409,18 +1409,18 @@
 					if (this.expectOptionalToken(oe.BRACKET_L)) {
 						const n = this.parseTypeReference();
 						this.expectToken(oe.BRACKET_R), t = this.node(e, {
-							kind: A.LIST_TYPE,
+							kind: w.LIST_TYPE,
 							type: n
 						})
 					} else t = this.parseNamedType();
 					return this.expectOptionalToken(oe.BANG) ? this.node(e, {
-						kind: A.NON_NULL_TYPE,
+						kind: w.NON_NULL_TYPE,
 						type: t
 					}) : t
 				}
 				parseNamedType() {
 					return this.node(this._lexer.token, {
-						kind: A.NAMED_TYPE,
+						kind: w.NAMED_TYPE,
 						name: this.parseName()
 					})
 				}
@@ -1437,7 +1437,7 @@
 					const n = this.parseConstDirectives(),
 						i = this.many(oe.BRACE_L, this.parseOperationTypeDefinition, oe.BRACE_R);
 					return this.node(e, {
-						kind: A.SCHEMA_DEFINITION,
+						kind: w.SCHEMA_DEFINITION,
 						description: t,
 						directives: n,
 						operationTypes: i
@@ -1449,7 +1449,7 @@
 					this.expectToken(oe.COLON);
 					const n = this.parseNamedType();
 					return this.node(e, {
-						kind: A.OPERATION_TYPE_DEFINITION,
+						kind: w.OPERATION_TYPE_DEFINITION,
 						operation: t,
 						type: n
 					})
@@ -1461,7 +1461,7 @@
 					const n = this.parseName(),
 						i = this.parseConstDirectives();
 					return this.node(e, {
-						kind: A.SCALAR_TYPE_DEFINITION,
+						kind: w.SCALAR_TYPE_DEFINITION,
 						description: t,
 						name: n,
 						directives: i
@@ -1476,7 +1476,7 @@
 						r = this.parseConstDirectives(),
 						o = this.parseFieldsDefinition();
 					return this.node(e, {
-						kind: A.OBJECT_TYPE_DEFINITION,
+						kind: w.OBJECT_TYPE_DEFINITION,
 						description: t,
 						name: n,
 						interfaces: i,
@@ -1499,7 +1499,7 @@
 					const r = this.parseTypeReference(),
 						o = this.parseConstDirectives();
 					return this.node(e, {
-						kind: A.FIELD_DEFINITION,
+						kind: w.FIELD_DEFINITION,
 						description: t,
 						name: n,
 						arguments: i,
@@ -1520,7 +1520,7 @@
 					this.expectOptionalToken(oe.EQUALS) && (r = this.parseConstValueLiteral());
 					const o = this.parseConstDirectives();
 					return this.node(e, {
-						kind: A.INPUT_VALUE_DEFINITION,
+						kind: w.INPUT_VALUE_DEFINITION,
 						description: t,
 						name: n,
 						type: i,
@@ -1537,7 +1537,7 @@
 						r = this.parseConstDirectives(),
 						o = this.parseFieldsDefinition();
 					return this.node(e, {
-						kind: A.INTERFACE_TYPE_DEFINITION,
+						kind: w.INTERFACE_TYPE_DEFINITION,
 						description: t,
 						name: n,
 						interfaces: i,
@@ -1553,7 +1553,7 @@
 						i = this.parseConstDirectives(),
 						r = this.parseUnionMemberTypes();
 					return this.node(e, {
-						kind: A.UNION_TYPE_DEFINITION,
+						kind: w.UNION_TYPE_DEFINITION,
 						description: t,
 						name: n,
 						directives: i,
@@ -1571,7 +1571,7 @@
 						i = this.parseConstDirectives(),
 						r = this.parseEnumValuesDefinition();
 					return this.node(e, {
-						kind: A.ENUM_TYPE_DEFINITION,
+						kind: w.ENUM_TYPE_DEFINITION,
 						description: t,
 						name: n,
 						directives: i,
@@ -1587,14 +1587,14 @@
 						n = this.parseEnumValueName(),
 						i = this.parseConstDirectives();
 					return this.node(e, {
-						kind: A.ENUM_VALUE_DEFINITION,
+						kind: w.ENUM_VALUE_DEFINITION,
 						description: t,
 						name: n,
 						directives: i
 					})
 				}
 				parseEnumValueName() {
-					if ("true" === this._lexer.token.value || "false" === this._lexer.token.value || "null" === this._lexer.token.value) throw ne(this._lexer.source, this._lexer.token.start, `${we(this._lexer.token)} is reserved and cannot be used for an enum value.`);
+					if ("true" === this._lexer.token.value || "false" === this._lexer.token.value || "null" === this._lexer.token.value) throw ne(this._lexer.source, this._lexer.token.start, `${Ae(this._lexer.token)} is reserved and cannot be used for an enum value.`);
 					return this.parseName()
 				}
 				parseInputObjectTypeDefinition() {
@@ -1605,7 +1605,7 @@
 						i = this.parseConstDirectives(),
 						r = this.parseInputFieldsDefinition();
 					return this.node(e, {
-						kind: A.INPUT_OBJECT_TYPE_DEFINITION,
+						kind: w.INPUT_OBJECT_TYPE_DEFINITION,
 						description: t,
 						name: n,
 						directives: i,
@@ -1642,7 +1642,7 @@
 						n = this.optionalMany(oe.BRACE_L, this.parseOperationTypeDefinition, oe.BRACE_R);
 					if (0 === t.length && 0 === n.length) throw this.unexpected();
 					return this.node(e, {
-						kind: A.SCHEMA_EXTENSION,
+						kind: w.SCHEMA_EXTENSION,
 						directives: t,
 						operationTypes: n
 					})
@@ -1654,7 +1654,7 @@
 						n = this.parseConstDirectives();
 					if (0 === n.length) throw this.unexpected();
 					return this.node(e, {
-						kind: A.SCALAR_TYPE_EXTENSION,
+						kind: w.SCALAR_TYPE_EXTENSION,
 						name: t,
 						directives: n
 					})
@@ -1668,7 +1668,7 @@
 						r = this.parseFieldsDefinition();
 					if (0 === n.length && 0 === i.length && 0 === r.length) throw this.unexpected();
 					return this.node(e, {
-						kind: A.OBJECT_TYPE_EXTENSION,
+						kind: w.OBJECT_TYPE_EXTENSION,
 						name: t,
 						interfaces: n,
 						directives: i,
@@ -1684,7 +1684,7 @@
 						r = this.parseFieldsDefinition();
 					if (0 === n.length && 0 === i.length && 0 === r.length) throw this.unexpected();
 					return this.node(e, {
-						kind: A.INTERFACE_TYPE_EXTENSION,
+						kind: w.INTERFACE_TYPE_EXTENSION,
 						name: t,
 						interfaces: n,
 						directives: i,
@@ -1699,7 +1699,7 @@
 						i = this.parseUnionMemberTypes();
 					if (0 === n.length && 0 === i.length) throw this.unexpected();
 					return this.node(e, {
-						kind: A.UNION_TYPE_EXTENSION,
+						kind: w.UNION_TYPE_EXTENSION,
 						name: t,
 						directives: n,
 						types: i
@@ -1713,7 +1713,7 @@
 						i = this.parseEnumValuesDefinition();
 					if (0 === n.length && 0 === i.length) throw this.unexpected();
 					return this.node(e, {
-						kind: A.ENUM_TYPE_EXTENSION,
+						kind: w.ENUM_TYPE_EXTENSION,
 						name: t,
 						directives: n,
 						values: i
@@ -1727,7 +1727,7 @@
 						i = this.parseInputFieldsDefinition();
 					if (0 === n.length && 0 === i.length) throw this.unexpected();
 					return this.node(e, {
-						kind: A.INPUT_OBJECT_TYPE_EXTENSION,
+						kind: w.INPUT_OBJECT_TYPE_EXTENSION,
 						name: t,
 						directives: n,
 						fields: i
@@ -1743,7 +1743,7 @@
 					this.expectKeyword("on");
 					const o = this.parseDirectiveLocations();
 					return this.node(e, {
-						kind: A.DIRECTIVE_DEFINITION,
+						kind: w.DIRECTIVE_DEFINITION,
 						description: t,
 						name: n,
 						arguments: i,
@@ -1770,14 +1770,14 @@
 				expectToken(e) {
 					const t = this._lexer.token;
 					if (t.kind === e) return this._lexer.advance(), t;
-					throw ne(this._lexer.source, t.start, `Expected ${De(e)}, found ${we(t)}.`)
+					throw ne(this._lexer.source, t.start, `Expected ${De(e)}, found ${Ae(t)}.`)
 				}
 				expectOptionalToken(e) {
 					return this._lexer.token.kind === e && (this._lexer.advance(), !0)
 				}
 				expectKeyword(e) {
 					const t = this._lexer.token;
-					if (t.kind !== oe.NAME || t.value !== e) throw ne(this._lexer.source, t.start, `Expected "${e}", found ${we(t)}.`);
+					if (t.kind !== oe.NAME || t.value !== e) throw ne(this._lexer.source, t.start, `Expected "${e}", found ${Ae(t)}.`);
 					this._lexer.advance()
 				}
 				expectOptionalKeyword(e) {
@@ -1786,7 +1786,7 @@
 				}
 				unexpected(e) {
 					const t = null != e ? e : this._lexer.token;
-					return ne(this._lexer.source, t.start, `Unexpected ${we(t)}.`)
+					return ne(this._lexer.source, t.start, `Unexpected ${Ae(t)}.`)
 				}
 				any(e, t, n) {
 					this.expectToken(e);
@@ -1822,7 +1822,7 @@
 				}
 			}
 
-			function we(e) {
+			function Ae(e) {
 				const t = e.value;
 				return De(e.kind) + (null != t ? ` "${t}"` : "")
 			}
@@ -2189,7 +2189,7 @@
 
 			function pt(e) {
 				var t, n;
-				return "string" == typeof e ? (t = ot(ut(e)), n = lt.get(t) || new Ae(e, {
+				return "string" == typeof e ? (t = ot(ut(e)), n = lt.get(t) || new we(e, {
 					noLocation: !0
 				}).parseDocument()) : (t = e.__key || ot(ut(e)), n = lt.get(t) || e), n.loc || ut(n), n.__key = t, lt.set(t, n), n
 			}
@@ -2207,7 +2207,7 @@
 			function dt(e) {
 				for (var t = 0, n = e.definitions.length; t < n; t++) {
 					var i = e.definitions[t];
-					if (i.kind === A.OPERATION_DEFINITION && i.name) return i.name.value
+					if (i.kind === w.OPERATION_DEFINITION && i.name) return i.name.value
 				}
 			}
 
@@ -2379,28 +2379,28 @@
 			}
 			var kt = function(e) {
 					if (e.selectionSet && !e.selectionSet.selections.some((function(e) {
-							return e.kind === A.FIELD && "__typename" === e.name.value && !e.alias
+							return e.kind === w.FIELD && "__typename" === e.name.value && !e.alias
 						}))) return ht({}, e, {
 						selectionSet: ht({}, e.selectionSet, {
 							selections: e.selectionSet.selections.concat([{
-								kind: A.FIELD,
+								kind: w.FIELD,
 								name: {
-									kind: A.NAME,
+									kind: w.NAME,
 									value: "__typename"
 								}
 							}])
 						})
 					})
 				},
-				At = new Map;
+				wt = new Map;
 
-			function wt(e) {
+			function At(e) {
 				return e && "object" == typeof e ? Object.keys(e).reduce((function(t, n) {
 					var i = e[n];
 					return "__typename" === n ? Object.defineProperty(t, "__typename", {
 						enumerable: !1,
 						value: i
-					}) : Array.isArray(i) ? t[n] = i.map(wt) : t[n] = i && "object" == typeof i && "__typename" in i ? wt(i) : i, t
+					}) : Array.isArray(i) ? t[n] = i.map(At) : t[n] = i && "object" == typeof i && "__typename" in i ? At(i) : i, t
 				}), Array.isArray(e) ? [] : {}) : e
 			}
 
@@ -2446,14 +2446,14 @@
 					var t = St(e.kind, e);
 					return t.query = function(e) {
 						var t = pt(e),
-							n = At.get(t.__key);
+							n = wt.get(t.__key);
 						return n || (n = S(t, {
 							Field: kt,
 							InlineFragment: kt
 						}), Object.defineProperty(n, "__key", {
 							value: t.__key,
 							enumerable: !1
-						}), At.set(t.__key, n)), n
+						}), wt.set(t.__key, n)), n
 					}(e.query), t
 				}
 
@@ -2620,7 +2620,7 @@
 						}))(d);
 						return p.maskTypename && (t = $e((function(e) {
 							return ht({}, e, {
-								data: wt(e.data)
+								data: At(e.data)
 							})
 						}))(t)), "mutation" === e.kind ? Ze(1)(Xe((function() {
 							return u(e)
@@ -2690,7 +2690,7 @@
 								return function(e) {
 									for (var t = 0, n = e.definitions.length; t < n; t++) {
 										var i = e.definitions[t];
-										if (i.kind === A.OPERATION_DEFINITION) return i.operation
+										if (i.kind === w.OPERATION_DEFINITION) return i.operation
 									}
 								}(t.query), St(e, t, p.createOperationContext(n))
 							},
@@ -3182,11 +3182,14 @@
 					src: n
 				})),
 				y = {
+					ProtectYourWalletMov: "https://www.redditstatic.com/crypto-assets/v2/protect-your-wallet-15b1416b81.mov",
 					ProtectYourWallet: "https://www.redditstatic.com/crypto-assets/v2/protect-your-wallet-98e685dd66.webp",
+					TransferToVaultMov: "https://www.redditstatic.com/crypto-assets/v2/transfer-to-vault-c60a5b1093.mov",
 					TransferToVault: "https://www.redditstatic.com/crypto-assets/v2/transfer-to-vault-f7c1844644.webp",
+					WalletCreationCompleteMov: "https://www.redditstatic.com/crypto-assets/v2/wallet-creation-complete-765826c120.mov",
 					WalletCreationComplete: "https://www.redditstatic.com/crypto-assets/v2/wallet-creation-complete-5f8358dae0.webp",
-					WalletCreationInProgress: "https://www.redditstatic.com/crypto-assets/v2/wallet-creation-in-progress-19d4d0584a.webp",
-					WalletCreationStart: "https://www.redditstatic.com/crypto-assets/v2/wallet-creation-start-06f9f1c819.webp"
+					WalletCreationInProgressMov: "https://www.redditstatic.com/crypto-assets/v2/wallet-creation-in-progress-5f7a587be7.mov",
+					WalletCreationInProgress: "https://www.redditstatic.com/crypto-assets/v2/wallet-creation-in-progress-19d4d0584a.webp"
 				};
 			var E = {
 				exports: {}
@@ -3280,16 +3283,16 @@
 				x = 1,
 				I = 3,
 				k = 4,
-				A = 5,
-				w = 6,
+				w = 5,
+				A = 6,
 				D = 7,
 				S = {
 					CREATED: x,
 					MOUNTED: 2,
 					IDLE: I,
 					MOVING: k,
-					SCROLLING: A,
-					DRAGGING: w,
+					SCROLLING: w,
+					DRAGGING: A,
 					DESTROYED: D
 				};
 
@@ -3505,8 +3508,8 @@
 			function ke(e, t) {
 				if (!e) throw new Error("[" + xe + "] " + (t || ""))
 			}
-			var Ae = Math.min,
-				we = Math.max,
+			var we = Math.min,
+				Ae = Math.max,
 				De = Math.floor,
 				Se = Math.ceil,
 				Ce = Math.abs;
@@ -3516,15 +3519,15 @@
 			}
 
 			function Re(e, t, n, i) {
-				var r = Ae(t, n),
-					o = we(t, n);
+				var r = we(t, n),
+					o = Ae(t, n);
 				return i ? r < e && e < o : r <= e && e <= o
 			}
 
 			function Fe(e, t, n) {
-				var i = Ae(t, n),
-					r = we(t, n);
-				return Ae(we(i, e), r)
+				var i = we(t, n),
+					r = Ae(t, n);
+				return we(Ae(i, e), r)
 			}
 
 			function Pe(e) {
@@ -3639,7 +3642,7 @@
 
 				function l() {
 					if (!c) {
-						if (a = e ? Ae((s() - r) / e, 1) : 1, n && n(a), a >= 1 && (t(), r = s(), i && ++u >= i)) return p();
+						if (a = e ? we((s() - r) / e, 1) : 1, n && n(a), a >= 1 && (t(), r = s(), i && ++u >= i)) return p();
 						M(l)
 					}
 				}
@@ -3687,14 +3690,14 @@
 				xt = "aria-controls",
 				It = "aria-current",
 				kt = "aria-selected",
-				At = "aria-label",
-				wt = "aria-labelledby",
+				wt = "aria-label",
+				At = "aria-labelledby",
 				Dt = "aria-hidden",
 				St = "aria-orientation",
 				Ct = "aria-roledescription",
 				Lt = "aria-live",
 				Rt = "aria-relevant",
-				Ft = [bt, Ot, "disabled", xt, It, At, wt, Dt, St, Ct],
+				Ft = [bt, Ot, "disabled", xt, It, wt, At, Dt, St, Ct],
 				Pt = xe,
 				Mt = xe + "__track",
 				jt = xe + "__list",
@@ -3752,7 +3755,7 @@
 					m = p.slideFocus,
 					y = u.Direction.resolve,
 					E = he(i, "style"),
-					g = he(i, At),
+					g = he(i, wt),
 					_ = n > -1,
 					N = ne(i, "." + Vt),
 					T = Ne(i, p.focusableNodes || "");
@@ -3762,7 +3765,7 @@
 						var n = e.splide.Components.Slides.getAt(t);
 						return n ? n.slide.id : ""
 					})).join(" ");
-					ue(i, At, Me(h.slideX, (_ ? n : t) + 1)), ue(i, xt, r), ue(i, bt, m ? "button" : ""), m && ce(i, Ct)
+					ue(i, wt, Me(h.slideX, (_ ? n : t) + 1)), ue(i, xt, r), ue(i, bt, m ? "button" : ""), m && ce(i, Ct)
 				}
 
 				function O() {
@@ -3772,7 +3775,7 @@
 				function x() {
 					if (!r) {
 						var n = e.index;
-						(o = I()) !== ve(i, Wt) && (X(i, Wt, o), ue(i, It, f && o || ""), a(o ? ze : $e, w)),
+						(o = I()) !== ve(i, Wt) && (X(i, Wt, o), ue(i, It, f && o || ""), a(o ? ze : $e, A)),
 							function() {
 								var t = function() {
 										if (e.is(dn)) return I();
@@ -3783,9 +3786,9 @@
 										return De(t[r]) <= Se(n[r]) && De(n[o]) <= Se(t[o])
 									}(),
 									n = !t && (!I() || _);
-								e.state.is([k, A]) || ue(i, Dt, n || "");
+								e.state.is([k, w]) || ue(i, Dt, n || "");
 								ue(T, Ot, n ? -1 : ""), m && ue(i, Ot, n ? -1 : 0);
-								t !== ve(i, en) && (X(i, en, t), a(t ? Je : Qe, w));
+								t !== ve(i, en) && (X(i, en, t), a(t ? Je : Qe, A));
 								if (!t && document.activeElement === i) {
 									var r = u.Slides.getAt(e.index);
 									r && de(r.slide)
@@ -3799,17 +3802,17 @@
 					var i = e.index;
 					return i === t || p.cloneStatus && i === n
 				}
-				var w = {
+				var A = {
 					index: t,
 					slideIndex: n,
 					slide: i,
 					container: N,
 					isClone: _,
 					mount: function() {
-						_ || (i.id = l.id + "-slide" + je(t + 1), ue(i, bt, v ? "tabpanel" : "group"), ue(i, Ct, h.slide), ue(i, At, g || Me(h.slideLabel, [t + 1, e.length]))), c(i, "click", R(a, Ye, w)), c(i, "keydown", R(a, Xe, w)), s([Ke, Ge, ot], x), s(pt, b), d && s(qe, O)
+						_ || (i.id = l.id + "-slide" + je(t + 1), ue(i, bt, v ? "tabpanel" : "group"), ue(i, Ct, h.slide), ue(i, wt, g || Me(h.slideLabel, [t + 1, e.length]))), c(i, "click", R(a, Ye, A)), c(i, "keydown", R(a, Xe, A)), s([Ke, Ge, ot], x), s(pt, b), d && s(qe, O)
 					},
 					destroy: function() {
-						r = !0, o.destroy(), Te(i, rn), ce(i, Ft), ue(i, "style", E), ue(i, At, g || "")
+						r = !0, o.destroy(), Te(i, rn), ce(i, Ft), ue(i, "style", E), ue(i, wt, g || "")
 					},
 					update: x,
 					style: function(e, t, n) {
@@ -3817,10 +3820,10 @@
 					},
 					isWithin: function(n, i) {
 						var r = Ce(n - t);
-						return _ || !p.rewind && !e.is(fn) || (r = Ae(r, e.length - r)), r <= i
+						return _ || !p.rewind && !e.is(fn) || (r = we(r, e.length - r)), r <= i
 					}
 				};
-				return w
+				return A
 			}
 			var vn = 2;
 			var mn = "http://www.w3.org/2000/svg",
@@ -3847,10 +3850,10 @@
 			function kn(e) {
 				return e = q(e) ? e : e.key, In[e] || e
 			}
-			var An = "keydown";
-			var wn = Ie + "-lazy",
-				Dn = wn + "-srcset",
-				Sn = "[" + wn + "], [" + Dn + "]";
+			var wn = "keydown";
+			var An = Ie + "-lazy",
+				Dn = An + "-srcset",
+				Sn = "[" + An + "], [" + Dn + "]";
 			var Cn = [" ", "Enter"];
 			var Ln = Object.freeze({
 					__proto__: null,
@@ -3954,7 +3957,7 @@
 						}
 
 						function y() {
-							Te(u, d), Te(i, h), d = g(Pt), h = g(Mt), W(u, d), W(i, h), ue(u, At, n.label), ue(u, wt, n.labelledby)
+							Te(u, d), Te(i, h), d = g(Pt), h = g(Mt), W(u, d), W(i, h), ue(u, wt, n.label), ue(u, At, n.labelledby)
 						}
 
 						function E(e) {
@@ -4248,7 +4251,7 @@
 							if (!e.is(dn)) {
 								var i = n ? t : function(t) {
 									if (e.is(fn)) {
-										var n = m(t - A()),
+										var n = m(t - w()),
 											i = D(!1, t) && n < 0,
 											r = D(!0, t) && n > 0;
 										(i || r) && (t = b(t, r))
@@ -4260,13 +4263,13 @@
 						}
 
 						function b(e, t) {
-							var n = e - w(t),
+							var n = e - A(t),
 								i = d();
 							return e -= m(i * (Se(Ce(n) / i) || 1)) * (t ? 1 : -1)
 						}
 
 						function O() {
-							T(A()), i.cancel()
+							T(w()), i.cancel()
 						}
 
 						function x(t, i) {
@@ -4280,19 +4283,19 @@
 							}(r) : r
 						}
 
-						function A() {
+						function w() {
 							var e = v("left");
 							return me(E)[e] - me(g)[e] + m(l(!1))
 						}
 
-						function w(e) {
+						function A(e) {
 							return x(e ? t.Controller.getEnd() : 0, !!n.trimSpace)
 						}
 
 						function D(e, t) {
-							t = K(t) ? A() : t;
-							var n = !0 !== e && m(t) < m(w(!1)),
-								i = !1 !== e && m(t) > m(w(!0));
+							t = K(t) ? w() : t;
+							var n = !0 !== e && m(t) < m(A(!1)),
+								i = !1 !== e && m(t) > m(A(!0));
 							return n || i
 						}
 						return {
@@ -4300,8 +4303,8 @@
 								i = t.Transition, o([Ve, et, He, We], _)
 							},
 							move: function(e, t, n, r) {
-								var o, c, u = A();
-								e !== t && (o = e > t, c = m(b(A(), o)), o ? c >= 0 : c <= E["scroll" + v("Width")] - me(g)[v("width")]) && (O(), T(b(u, e > t), !0)), a(k), s(qe, t, n, e), i.start(t, (function() {
+								var o, c, u = w();
+								e !== t && (o = e > t, c = m(b(w(), o)), o ? c >= 0 : c <= E["scroll" + v("Width")] - me(g)[v("width")]) && (O(), T(b(u, e > t), !0)), a(k), s(qe, t, n, e), i.start(t, (function() {
 									a(I), s(Ke, t, n, e), r && r()
 								}))
 							},
@@ -4319,8 +4322,8 @@
 								return i
 							},
 							toPosition: x,
-							getPosition: A,
-							getLimit: w,
+							getPosition: w,
+							getLimit: A,
 							exceededLimit: D,
 							reposition: _
 						}
@@ -4371,7 +4374,7 @@
 						}
 
 						function O() {
-							return we(i - (D() || h && r ? 1 : o), 0)
+							return Ae(i - (D() || h && r ? 1 : o), 0)
 						}
 
 						function x(e) {
@@ -4382,7 +4385,7 @@
 							return D() ? e : De((e >= O() ? i - 1 : e) / o)
 						}
 
-						function w(e) {
+						function A(e) {
 							e !== E && (g = E, E = e)
 						}
 
@@ -4391,7 +4394,7 @@
 						}
 
 						function S() {
-							return e.state.is([k, A]) && !!n.waitForTransition
+							return e.state.is([k, w]) && !!n.waitForTransition
 						}
 						return {
 							mount: function() {
@@ -4410,19 +4413,19 @@
 											return t
 										}(e),
 										r = b(i);
-									r > -1 && (t || r !== E) && (w(r), a.move(i, r, g, n))
+									r > -1 && (t || r !== E) && (A(r), a.move(i, r, g, n))
 								}
 							},
 							scroll: function(e, n, i, r) {
 								t.Scroll.scroll(e, n, i, (function() {
-									w(b(a.toIndex(a.getPosition()))), r && r()
+									A(b(a.toIndex(a.getPosition()))), r && r()
 								}))
 							},
 							getNext: m,
 							getPrev: y,
 							getAdjacent: N,
 							getEnd: O,
-							setIndex: w,
+							setIndex: A,
 							getIndex: function(e) {
 								return e ? g : E
 							},
@@ -4485,7 +4488,7 @@
 								i = f.getNext(),
 								r = n > -1 && t < n ? l.last : l.prev,
 								o = i > -1 && t > i ? l.first : l.next;
-							m.disabled = n < 0, y.disabled = i < 0, ue(m, At, r), ue(y, At, o), c(ct, m, y, n, i)
+							m.disabled = n < 0, y.disabled = i < 0, ue(m, wt, r), ue(y, wt, o), c(ct, m, y, n, i)
 						}
 						return {
 							arrows: E,
@@ -4523,7 +4526,7 @@
 						}
 
 						function _() {
-							h && (X(h, Wt, !m), ue(h, At, n.i18n[m ? "play" : "pause"]))
+							h && (X(h, Wt, !m), ue(h, wt, n.i18n[m ? "play" : "pause"]))
 						}
 
 						function N(e) {
@@ -4591,7 +4594,7 @@
 								e = u.toPosition(t.Controller.toDest(e % d)) + v
 							}
 							var g = Le(f, e, 1);
-							h = 1, n = g ? 0 : n || we(Ce(e - f) / bn, On), r = s, i = yt(n, m, R(y, f, e, p), 1), c(A), a(rt), i.start()
+							h = 1, n = g ? 0 : n || Ae(Ce(e - f) / bn, On), r = s, i = yt(n, m, R(y, f, e, p), 1), c(w), a(rt), i.start()
 						}
 
 						function m() {
@@ -4647,13 +4650,13 @@
 						function L(e) {
 							if (c = !1, !u) {
 								var t = G(e);
-								i = e.target, r = n.noDrag, ee(i, "." + $t + ", ." + Kt) || r && ee(i, r) || !t && e.button || (g.isBusy() ? ge(e, !0) : (l = t ? _ : window, a = m.is([k, A]), o = null, h(l, un, R, xn), h(l, ln, F, xn), y.cancel(), E.cancel(), j(e)))
+								i = e.target, r = n.noDrag, ee(i, "." + $t + ", ." + Kt) || r && ee(i, r) || !t && e.button || (g.isBusy() ? ge(e, !0) : (l = t ? _ : window, a = m.is([k, w]), o = null, h(l, un, R, xn), h(l, ln, F, xn), y.cancel(), E.cancel(), j(e)))
 							}
 							var i, r
 						}
 
 						function R(t) {
-							if (m.is(w) || (m.set(w), d(tt)), t.cancelable)
+							if (m.is(A) || (m.set(A), d(tt)), t.cancelable)
 								if (a) {
 									y.translate(i + U(t) / (S && e.is(pn) ? sn : 1));
 									var r = V(t) > an,
@@ -4671,7 +4674,7 @@
 						}
 
 						function F(i) {
-							m.is(w) && (m.set(I), d(it)), a && (! function(i) {
+							m.is(A) && (m.set(I), d(it)), a && (! function(i) {
 								var r = function(t) {
 										if (e.is(fn) || !S) {
 											var n = V(t);
@@ -4680,7 +4683,7 @@
 										return 0
 									}(i),
 									o = function(e) {
-										return x() + Pe(e) * Ae(Ce(e) * (n.flickPower || 600), s ? 1 / 0 : t.Layout.listSize() * (n.flickMaxPages || 1))
+										return x() + Pe(e) * we(Ce(e) * (n.flickPower || 600), s ? 1 / 0 : t.Layout.listSize() * (n.flickMaxPages || 1))
 									}(r),
 									a = n.rewind && n.rewindByDrag;
 								N(!1), s ? g.scroll(o, 0, n.snap) : e.is(dn) ? g.go(O(Pe(r)) < 0 ? a ? "<" : "-" : a ? ">" : "+") : e.is(pn) && S && a ? g.go(D(!0) ? ">" : "<") : g.go(g.toDest(o), !0);
@@ -4741,11 +4744,11 @@
 
 						function p() {
 							var e = n.keyboard;
-							e && (i = "global" === e ? window : u, a(i, An, h))
+							e && (i = "global" === e ? window : u, a(i, wn, h))
 						}
 
 						function f() {
-							c(i, An)
+							c(i, wn)
 						}
 
 						function d() {
@@ -4784,7 +4787,7 @@
 						function p() {
 							C(l), t.Slides.forEach((function(e) {
 								Ne(e.slide, Sn).forEach((function(t) {
-									var i = he(t, wn),
+									var i = he(t, An),
 										r = he(t, Dn);
 									if (i !== t.src || r !== t.srcset) {
 										var o = n.classes.spinner,
@@ -4805,7 +4808,7 @@
 
 						function d(e) {
 							var t = e[0];
-							W(e[1].slide, tn), s(t, "load error", R(h, e)), ue(t, "src", he(t, wn)), ue(t, "srcset", he(t, Dn)), ce(t, wn), ce(t, Dn)
+							W(e[1].slide, tn), s(t, "load error", R(h, e)), ue(t, "src", he(t, An)), ue(t, "srcset", he(t, Dn)), ce(t, An), ce(t, Dn)
 						}
 
 						function h(e, t) {
@@ -4889,7 +4892,7 @@
 										s = n.i18n,
 										a = n.perPage,
 										p = f() ? t : Se(t / a);
-									W(i = l.pagination || le("ul", o.pagination, l.track.parentElement), r = zt + "--" + _()), ue(i, bt, "tablist"), ue(i, At, s.select), ue(i, St, _() === Nt ? "vertical" : "");
+									W(i = l.pagination || le("ul", o.pagination, l.track.parentElement), r = zt + "--" + _()), ue(i, bt, "tablist"), ue(i, wt, s.select), ue(i, St, _() === Nt ? "vertical" : "");
 									for (var d = 0; d < p; d++) {
 										var h = le("li", null, i),
 											v = le("button", {
@@ -4900,7 +4903,7 @@
 												return e.slide.id
 											})),
 											N = !f() && a > 1 ? s.pageX : s.slideX;
-										c(v, "click", R(E, d)), n.paginationKeyboard && c(v, "keydown", R(g, d)), ue(h, bt, "presentation"), ue(v, bt, "tab"), ue(v, xt, y.join(" ")), ue(v, At, Me(N, d + 1)), ue(v, Ot, -1), m.push({
+										c(v, "click", R(E, d)), n.paginationKeyboard && c(v, "keydown", R(g, d)), ue(h, bt, "presentation"), ue(v, bt, "tab"), ue(v, xt, y.join(" ")), ue(v, wt, Me(N, d + 1)), ue(v, Ot, -1), m.push({
 											li: h,
 											button: v,
 											page: d
@@ -5116,8 +5119,8 @@
 					}), this.splides = [], this._o = {}, this._E = {};
 					var r = q(t) ? _e(document, t) : t;
 					ke(r, r + " is invalid."), this.root = r, n = se({
-						label: he(r, At) || "",
-						labelledby: he(r, wt) || ""
+						label: he(r, wt) || "",
+						labelledby: he(r, At) || ""
 					}, Rn, e.defaults, n || {});
 					try {
 						se(n, JSON.parse(he(r, Ie)))
@@ -5696,14 +5699,14 @@
 				}]), t
 			}(Oi.Component);
 			_i.default = ki;
-			const Ai = ({
+			const wi = ({
 				children: e,
 				desc: t
 			}) => {
 				const n = Object(o.c)();
 				return r.a.createElement(r.a.Fragment, null, n.singular(e, t))
 			};
-			var wi = {
+			var Ai = {
 				container: "_container_9znh3_42",
 				toast: "_toast_9znh3_54",
 				bar: "_bar_9znh3_68",
@@ -5745,8 +5748,8 @@
 					return Object(i.useEffect)(() => {
 						c(!1);
 						const e = u.current;
-						e && (e.classList.add(wi.entering), e.addEventListener("animationend", () => {
-							e.classList.remove(wi.entering)
+						e && (e.classList.add(Ai.entering), e.addEventListener("animationend", () => {
+							e.classList.remove(Ai.entering)
 						}))
 					}, [n]), Object(i.useEffect)(() => {
 						const e = s ? setTimeout(l, s) : null;
@@ -5755,17 +5758,17 @@
 						}
 					}, [s, l]), a ? r.a.createElement(r.a.Fragment, null) : r.a.createElement("div", {
 						ref: u,
-						className: g(wi.toast, e, "error" === t ? wi.errorKind : wi.successKind)
+						className: g(Ai.toast, e, "error" === t ? Ai.errorKind : Ai.successKind)
 					}, r.a.createElement("div", {
-						className: wi.bar
+						className: Ai.bar
 					}), r.a.createElement("div", {
-						className: wi.image
+						className: Ai.image
 					}, r.a.createElement("img", {
 						src: "https://www.redditstatic.com/crypto-assets/v2/error-image-c10a891d4e.svg"
 					})), r.a.createElement("div", {
-						className: wi.content
+						className: Ai.content
 					}, n), r.a.createElement("div", {
-						className: wi.close,
+						className: Ai.close,
 						onClick: l
 					}, r.a.createElement("img", {
 						src: "https://www.redditstatic.com/crypto-assets/v2/close-41452e2e4d.png"
@@ -5774,14 +5777,14 @@
 				Ci = () => r.a.createElement(Di, {
 					kind: "error",
 					duration: 5e3
-				}, r.a.createElement(Ai, {
+				}, r.a.createElement(wi, {
 					desc: ""
 				}, "Something went wrong, please try again")),
 				Li = "reddit-crypto-toast-wrapper";
 
 			function Ri() {
 				let e = document.getElementById(Li);
-				return e || ((e = document.createElement("div")).id = Li, e.className = wi.container, document.body.appendChild(e)), e
+				return e || ((e = document.createElement("div")).id = Li, e.className = Ai.container, document.body.appendChild(e)), e
 			}
 			var Fi = {
 				container: "_container_1cw7m_42"
@@ -6329,7 +6332,7 @@
 					i.enumerable = i.enumerable || !1, i.configurable = !0, "value" in i && (i.writable = !0), Object.defineProperty(e, i.key, i)
 				}
 			}
-			var A = function() {
+			var w = function() {
 				function e(e) {
 					var t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : "GraphQL request",
 						n = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : {
@@ -6346,7 +6349,7 @@
 					}
 				}]) && k(t.prototype, n), i && k(t, i), e
 			}();
-			var w = Object.freeze({
+			var A = Object.freeze({
 					QUERY: "QUERY",
 					MUTATION: "MUTATION",
 					SUBSCRIPTION: "SUBSCRIPTION",
@@ -6627,8 +6630,8 @@
 			var K = function() {
 				function e(e, t) {
 					var n = function(e) {
-						return I(e, A)
-					}(e) ? e : new A(e);
+						return I(e, w)
+					}(e) ? e : new w(e);
 					this._lexer = new S(n), this._options = t
 				}
 				var t = e.prototype;
@@ -7260,7 +7263,7 @@
 				}, t.parseDirectiveLocation = function() {
 					var e = this._lexer.token,
 						t = this.parseName();
-					if (void 0 !== w[t.value]) return t;
+					if (void 0 !== A[t.value]) return t;
 					throw this.unexpected(e)
 				}, t.loc = function(e) {
 					var t;
@@ -7327,4 +7330,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/1.1f82869fcae513b86fc2.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/1.0dc947e9f0020a51d822.js.map

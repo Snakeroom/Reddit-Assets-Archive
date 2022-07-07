@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/vendors~MarketplaceClaimModal~MarketplaceInFeedUnit.5ac1ee224ac12278c24a.js
-// Retrieved at 7/5/2022, 10:10:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/vendors~MarketplaceClaimModal~MarketplaceInFeedUnit.0d434e90c96d07be50a9.js
+// Retrieved at 7/7/2022, 12:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["vendors~MarketplaceClaimModal~MarketplaceInFeedUnit"], {
 		"./node_modules/@reddit/crypto/react/nft-claim/index.es.js": function(e, A, t) {
@@ -2562,16 +2562,33 @@
 						className: On.iconContainer
 					}, i.a.createElement("div", {
 						className: M(On.creatingState, {
-							[On.isFading]: v,
-							[On.noPanel]: !p
+							[On.isFading]: v
 						})
 					}, (() => {
 						switch (E) {
 							case 1:
+								return i.a.createElement(a.a, {
+									video: a.b.WalletCreationInProgressMov,
+									webp: a.b.WalletCreationInProgress,
+									img: a.g.Vault,
+									className: M(On.vaultAnimation, {
+										[On.noPanel]: !p
+									})
+								});
 							case 2:
+								return i.a.createElement(a.a, {
+									video: a.b.WalletCreationCompleteMov,
+									webp: a.b.WalletCreationComplete,
+									img: a.g.Vault,
+									className: M(On.vaultAnimation, {
+										[On.noPanel]: !p
+									})
+								});
 							default:
-								return i.a.createElement("img", {
-									src: a.g.Vault,
+								return i.a.createElement(a.a, {
+									video: a.b.ProtectYourWalletMov,
+									webp: a.b.ProtectYourWallet,
+									img: a.g.Vault,
 									className: On.vaultAnimation
 								})
 						}
@@ -9551,4 +9568,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/vendors~MarketplaceClaimModal~MarketplaceInFeedUnit.5ac1ee224ac12278c24a.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/vendors~MarketplaceClaimModal~MarketplaceInFeedUnit.0d434e90c96d07be50a9.js.map
