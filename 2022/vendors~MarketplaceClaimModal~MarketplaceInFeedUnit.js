@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/vendors~MarketplaceClaimModal~MarketplaceInFeedUnit.0d434e90c96d07be50a9.js
-// Retrieved at 7/7/2022, 12:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/vendors~MarketplaceClaimModal~MarketplaceInFeedUnit.3b9e2343e73a76e87d8f.js
+// Retrieved at 7/7/2022, 6:40:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["vendors~MarketplaceClaimModal~MarketplaceInFeedUnit"], {
 		"./node_modules/@reddit/crypto/react/nft-claim/index.es.js": function(e, A, t) {
@@ -77,7 +77,7 @@
 				}()
 			}(B);
 			var k, w, Q, C, x, S, N, D, F, T, M = B.exports;
-			(w = k || (k = {})).Marketplace = "marketplace", w.Avatar = "avatar", (C = Q || (Q = {})).Click = "click", C.Create = "create", C.Secure = "secure", C.Paid = "paid", C.View = "view", (S = x || (x = {})).ClaimPostUnit = "claim_post_unit", S.ClaimNft = "claim_nft", S.BuyNft = "buy_nft", S.CreateVault = "create_vault", S.CompleteTransaction = "complete_transaction", S.ListingFe = "listing_fe", S.NftDetails = "nft_details", S.PaymentError = "payment_error", S.ProductDetailPage = "product_detail_page", S.PdpDynamicCta = "pdp_dynamic_cta", S.MarketplaceArtist = "marketplace_artist", S.SecureVault = "secure_vault", S.Vault = "vault", S.VaultConfirmation = "vault_confirmation", (D = N || (N = {})).ClaimFlow = "claim_flow", D.Purchase = "purchase", D.SetAvatar = "set_avatar", D.Transfer = "transfer", D.ViewNft = "view_nft", (F || (F = {})).ProductDetailPage = "product_detail_page", (T || (T = {})).Password = "password";
+			(w = k || (k = {})).Marketplace = "marketplace", w.Avatar = "avatar", (C = Q || (Q = {})).Click = "click", C.Create = "create", C.Secure = "secure", C.Paid = "paid", C.View = "view", (S = x || (x = {})).ClaimPostUnit = "claim_post_unit", S.ClaimNft = "claim_nft", S.BuyNft = "buy_nft", S.CreateVault = "create_vault", S.CompleteTransaction = "complete_transaction", S.ListingFe = "listing_fe", S.NftDetails = "nft_details", S.PaymentError = "payment_error", S.ProductDetailPage = "product_detail_page", S.PdpDynamicCta = "pdp_dynamic_cta", S.MarketplaceArtist = "marketplace_artist", S.SecureVault = "secure_vault", S.Vault = "vault", S.VaultConfirmation = "vault_confirmation", (D = N || (N = {})).ClaimFlow = "claim_flow", D.Purchase = "purchase", D.SetAvatar = "set_avatar", D.Transfer = "transfer", D.ViewNft = "view_nft", D.ImportCollectibleAvatar = "import_collectible_avatar", (F || (F = {})).ProductDetailPage = "product_detail_page", (T || (T = {})).Password = "password";
 			const O = {
 					source: k.Marketplace,
 					actionInfo: {
@@ -2840,26 +2840,27 @@
 				}
 			}(Jn = Pn || (Pn = {})).New = "NEW", Jn.ActionRequired = "ACTION_REQUIRED", Jn.Pending = "PENDING", Jn.Paid = "PAID", Jn.Canceled = "CANCELED", Jn.Rejected = "REJECTED", Jn.Failed = "FAILED", Jn.Refunded = "REFUNDED", (Kn = Hn || (Hn = {})).AVAILABLE = "AVAILABLE", Kn.SOLD_OUT = "SOLD_OUT", Kn.EXPIRED = "EXPIRED", Hn.AVAILABLE, Hn.SOLD_OUT, Hn.EXPIRED;
 			const qn = e => ({
-					source: k.Marketplace,
-					action: Q.Click,
-					noun: x.PdpDynamicCta,
-					actionInfo: {
-						reason: e,
-						pageType: F.ProductDetailPage
-					}
-				}),
-				Ln = ({
-					className: e
-				}) => i.a.createElement("svg", {
-					width: "13",
-					height: "12",
-					fill: "none",
-					xmlns: "http://www.w3.org/2000/svg",
-					className: e
-				}, i.a.createElement("path", {
-					d: "M10.4 4.728h-.3V3.6a3.6 3.6 0 1 0-7.2 0v1.128h-.3a.966.966 0 0 0-.972.972v4.8a.966.966 0 0 0 .972.972h7.8a.966.966 0 0 0 .972-.972V5.7a.967.967 0 0 0-.972-.972ZM4.1 3.6a2.4 2.4 0 1 1 4.8 0v1.128H4.1V3.6Z",
-					fill: "currentColor"
-				}));
+				source: k.Marketplace,
+				action: Q.Click,
+				noun: x.PdpDynamicCta,
+				actionInfo: {
+					reason: e,
+					pageType: F.ProductDetailPage
+				}
+			});
+			k.Marketplace, Q.Click, x.PdpDynamicCta, F.ProductDetailPage, N.ImportCollectibleAvatar;
+			const Ln = ({
+				className: e
+			}) => i.a.createElement("svg", {
+				width: "13",
+				height: "12",
+				fill: "none",
+				xmlns: "http://www.w3.org/2000/svg",
+				className: e
+			}, i.a.createElement("path", {
+				d: "M10.4 4.728h-.3V3.6a3.6 3.6 0 1 0-7.2 0v1.128h-.3a.966.966 0 0 0-.972.972v4.8a.966.966 0 0 0 .972.972h7.8a.966.966 0 0 0 .972-.972V5.7a.967.967 0 0 0-.972-.972ZM4.1 3.6a2.4 2.4 0 1 1 4.8 0v1.128H4.1V3.6Z",
+				fill: "currentColor"
+			}));
 			var _n = "_container_ztn11_42",
 				$n = "_carousel_ztn11_45",
 				ei = "_productDetails_ztn11_53",
@@ -9568,4 +9569,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/vendors~MarketplaceClaimModal~MarketplaceInFeedUnit.0d434e90c96d07be50a9.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/vendors~MarketplaceClaimModal~MarketplaceInFeedUnit.3b9e2343e73a76e87d8f.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/4.d59a3bfe936c1f421517.js
-// Retrieved at 7/5/2022, 10:10:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/4.9fe8dce98f4e06319380.js
+// Retrieved at 7/7/2022, 6:40:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	[4], {
 		"./node_modules/@reddit/crypto/react/nft-product-card/index.es.js": function(e, t, n) {
@@ -7114,28 +7114,29 @@
 						var r = Au(e, t);
 						r && n.definitions.push(r)
 					}))
-				}(mu, "getNftDetails"), (hu = pu || (pu = {})).MINTED = "MINTED", hu.MINTING = "MINTING", hu.TRANSFERRING = "TRANSFERRING", (gu = vu || (vu = {})).Marketplace = "marketplace", gu.Avatar = "avatar", (bu = yu || (yu = {})).Click = "click", bu.Create = "create", bu.Secure = "secure", bu.Paid = "paid", bu.View = "view", (Su = ku || (ku = {})).ClaimPostUnit = "claim_post_unit", Su.ClaimNft = "claim_nft", Su.BuyNft = "buy_nft", Su.CreateVault = "create_vault", Su.CompleteTransaction = "complete_transaction", Su.ListingFe = "listing_fe", Su.NftDetails = "nft_details", Su.PaymentError = "payment_error", Su.ProductDetailPage = "product_detail_page", Su.PdpDynamicCta = "pdp_dynamic_cta", Su.MarketplaceArtist = "marketplace_artist", Su.SecureVault = "secure_vault", Su.Vault = "vault", Su.VaultConfirmation = "vault_confirmation", (Nu = wu || (wu = {})).ClaimFlow = "claim_flow", Nu.Purchase = "purchase", Nu.SetAvatar = "set_avatar", Nu.Transfer = "transfer", Nu.ViewNft = "view_nft", (Eu || (Eu = {})).ProductDetailPage = "product_detail_page", (xu || (xu = {})).Password = "password", (Cu = _u || (_u = {})).New = "NEW", Cu.ActionRequired = "ACTION_REQUIRED", Cu.Pending = "PENDING", Cu.Paid = "PAID", Cu.Canceled = "CANCELED", Cu.Rejected = "REJECTED", Cu.Failed = "FAILED", Cu.Refunded = "REFUNDED", (Pu = Ou || (Ou = {})).AVAILABLE = "AVAILABLE", Pu.SOLD_OUT = "SOLD_OUT", Pu.EXPIRED = "EXPIRED", Ou.AVAILABLE, Ou.SOLD_OUT, Ou.EXPIRED;
+				}(mu, "getNftDetails"), (hu = pu || (pu = {})).MINTED = "MINTED", hu.MINTING = "MINTING", hu.TRANSFERRING = "TRANSFERRING", (gu = vu || (vu = {})).Marketplace = "marketplace", gu.Avatar = "avatar", (bu = yu || (yu = {})).Click = "click", bu.Create = "create", bu.Secure = "secure", bu.Paid = "paid", bu.View = "view", (Su = ku || (ku = {})).ClaimPostUnit = "claim_post_unit", Su.ClaimNft = "claim_nft", Su.BuyNft = "buy_nft", Su.CreateVault = "create_vault", Su.CompleteTransaction = "complete_transaction", Su.ListingFe = "listing_fe", Su.NftDetails = "nft_details", Su.PaymentError = "payment_error", Su.ProductDetailPage = "product_detail_page", Su.PdpDynamicCta = "pdp_dynamic_cta", Su.MarketplaceArtist = "marketplace_artist", Su.SecureVault = "secure_vault", Su.Vault = "vault", Su.VaultConfirmation = "vault_confirmation", (Nu = wu || (wu = {})).ClaimFlow = "claim_flow", Nu.Purchase = "purchase", Nu.SetAvatar = "set_avatar", Nu.Transfer = "transfer", Nu.ViewNft = "view_nft", Nu.ImportCollectibleAvatar = "import_collectible_avatar", (Eu || (Eu = {})).ProductDetailPage = "product_detail_page", (xu || (xu = {})).Password = "password", (Cu = _u || (_u = {})).New = "NEW", Cu.ActionRequired = "ACTION_REQUIRED", Cu.Pending = "PENDING", Cu.Paid = "PAID", Cu.Canceled = "CANCELED", Cu.Rejected = "REJECTED", Cu.Failed = "FAILED", Cu.Refunded = "REFUNDED", (Pu = Ou || (Ou = {})).AVAILABLE = "AVAILABLE", Pu.SOLD_OUT = "SOLD_OUT", Pu.EXPIRED = "EXPIRED", Ou.AVAILABLE, Ou.SOLD_OUT, Ou.EXPIRED;
 			const Mu = e => ({
-					source: vu.Marketplace,
-					action: yu.Click,
-					noun: ku.PdpDynamicCta,
-					actionInfo: {
-						reason: e,
-						pageType: Eu.ProductDetailPage
-					}
-				}),
-				Ru = ({
-					className: e
-				}) => i.a.createElement("svg", {
-					width: "13",
-					height: "12",
-					fill: "none",
-					xmlns: "http://www.w3.org/2000/svg",
-					className: e
-				}, i.a.createElement("path", {
-					d: "M10.4 4.728h-.3V3.6a3.6 3.6 0 1 0-7.2 0v1.128h-.3a.966.966 0 0 0-.972.972v4.8a.966.966 0 0 0 .972.972h7.8a.966.966 0 0 0 .972-.972V5.7a.967.967 0 0 0-.972-.972ZM4.1 3.6a2.4 2.4 0 1 1 4.8 0v1.128H4.1V3.6Z",
-					fill: "currentColor"
-				}));
+				source: vu.Marketplace,
+				action: yu.Click,
+				noun: ku.PdpDynamicCta,
+				actionInfo: {
+					reason: e,
+					pageType: Eu.ProductDetailPage
+				}
+			});
+			vu.Marketplace, yu.Click, ku.PdpDynamicCta, Eu.ProductDetailPage, wu.ImportCollectibleAvatar;
+			const Ru = ({
+				className: e
+			}) => i.a.createElement("svg", {
+				width: "13",
+				height: "12",
+				fill: "none",
+				xmlns: "http://www.w3.org/2000/svg",
+				className: e
+			}, i.a.createElement("path", {
+				d: "M10.4 4.728h-.3V3.6a3.6 3.6 0 1 0-7.2 0v1.128h-.3a.966.966 0 0 0-.972.972v4.8a.966.966 0 0 0 .972.972h7.8a.966.966 0 0 0 .972-.972V5.7a.967.967 0 0 0-.972-.972ZM4.1 3.6a2.4 2.4 0 1 1 4.8 0v1.128H4.1V3.6Z",
+				fill: "currentColor"
+			}));
 			var Fu = "_container_ztn11_42",
 				Du = "_carousel_ztn11_45",
 				Lu = "_productDetails_ztn11_53",
@@ -8731,4 +8732,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/4.d59a3bfe936c1f421517.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/4.9fe8dce98f4e06319380.js.map
