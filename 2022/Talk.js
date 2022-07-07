@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Talk.775b19d4bbff8c66d02e.js
-// Retrieved at 6/21/2022, 7:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Talk.e320ead493096ffb573d.js
+// Retrieved at 7/7/2022, 3:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Talk"], {
 		"./src/reddit/components/CollapsibleFAQ/index.m.less": function(e, a, t) {
@@ -798,26 +798,26 @@
 			};
 			var W = t("./src/reddit/pages/Talk/index.m.less"),
 				z = t.n(W),
-				J = t("./src/reddit/pages/Talk/QuotesFromHosts.m.less"),
-				U = t.n(J);
+				U = t("./src/reddit/pages/Talk/QuotesFromHosts.m.less"),
+				J = t.n(U);
 			const {
-				fbt: V
-			} = t("./node_modules/fbt/lib/FbtPublic.js"), X = [{
-				quote: V._("This makes our large sub feel more like a {=community} again!", [V._param("=community", r.a.createElement("strong", null, V._("community", null, {
+				fbt: X
+			} = t("./node_modules/fbt/lib/FbtPublic.js"), V = [{
+				quote: X._("This makes our large sub feel more like a {=community} again!", [X._param("=community", r.a.createElement("strong", null, X._("community", null, {
 					hk: "2b3lFN"
 				})))], {
 					hk: "4mNP7J"
 				}),
 				avatar: "24"
 			}, {
-				quote: V._("This was an amazing {=bonding experience.} I loved it.", [V._param("=bonding experience.", r.a.createElement("strong", null, V._("bonding experience.", null, {
+				quote: X._("This was an amazing {=bonding experience.} I loved it.", [X._param("=bonding experience.", r.a.createElement("strong", null, X._("bonding experience.", null, {
 					hk: "3GMiYK"
 				})))], {
 					hk: "2ANXtd"
 				}),
 				avatar: "7"
 			}, {
-				quote: V._("Our talks have been attracting {=thousands of listeners.}", [V._param("=thousands of listeners.", r.a.createElement("strong", null, V._("thousands of listeners.", null, {
+				quote: X._("Our talks have been attracting {=thousands of listeners.}", [X._param("=thousands of listeners.", r.a.createElement("strong", null, X._("thousands of listeners.", null, {
 					hk: "2FsHju"
 				})))], {
 					hk: "1eVyVp"
@@ -830,47 +830,47 @@
 					quoteNumber: n
 				} = e;
 				return r.a.createElement("div", {
-					className: U.a.quote
+					className: J.a.quote
 				}, r.a.createElement("div", {
-					className: U.a.quoteBubble
+					className: J.a.quoteBubble
 				}, r.a.createElement("div", {
-					className: Object(i.a)(U.a.quoteText, U.a.quoteNumber, U.a[`quoteNumber-${n}`])
+					className: Object(i.a)(J.a.quoteText, J.a.quoteNumber, J.a[`quoteNumber-${n}`])
 				}, r.a.createElement("p", null, a))), r.a.createElement("div", {
-					className: Object(i.a)(U.a.quoteHostAvatar, U.a[`quoteHostAvatar-${n}`])
+					className: Object(i.a)(J.a.quoteHostAvatar, J.a[`quoteHostAvatar-${n}`])
 				}, r.a.createElement("div", {
-					className: U.a.circles,
+					className: J.a.circles,
 					style: {
 						backgroundImage: `url(${l.a.assetPath}/img/talk/radial-circle.svg)`
 					}
 				}, r.a.createElement("img", {
-					className: U.a.hostAvatar,
+					className: J.a.hostAvatar,
 					src: `${l.a.assetPath}/img/talk/avatars/${t}.png`,
-					alt: V._("Avatar of a talk host", null, {
+					alt: X._("Avatar of a talk host", null, {
 						hk: "mrtmQ"
 					})
 				}))))
 			}, $ = () => {
 				const e = Object(s.e)(g.db);
 				return r.a.createElement("div", {
-					className: Object(i.a)(U.a.quotesFromHostsSection, {
-						[U.a.isNightmodeOn]: e
+					className: Object(i.a)(J.a.quotesFromHostsSection, {
+						[J.a.isNightmodeOn]: e
 					})
 				}, r.a.createElement("div", {
-					className: U.a.quotesFromHostsContent
+					className: J.a.quotesFromHostsContent
 				}, r.a.createElement("div", {
-					className: U.a.quoteSectionIcon
+					className: J.a.quoteSectionIcon
 				}, r.a.createElement("img", {
 					src: `${l.a.assetPath}/img/talk/comment-bubble.png`,
-					alt: V._("Comment bubble icon", null, {
+					alt: X._("Comment bubble icon", null, {
 						hk: "2scKvR"
 					})
 				})), r.a.createElement("h2", {
-					className: U.a.subheading
-				}, V._("Quotes from Reddit Talk hosts", null, {
+					className: J.a.subheading
+				}, X._("Quotes from Reddit Talk hosts", null, {
 					hk: "1nzsM4"
 				})), r.a.createElement("div", {
-					className: U.a.quotesContainer
-				}, X.map((e, a) => {
+					className: J.a.quotesContainer
+				}, V.map((e, a) => {
 					let {
 						quote: t,
 						avatar: l
@@ -882,10 +882,10 @@
 						quoteNumber: a
 					})
 				})), r.a.createElement("div", {
-					className: U.a.hostsWithSnoo
+					className: J.a.hostsWithSnoo
 				}, r.a.createElement("img", {
 					src: `${l.a.assetPath}/img/talk/snoo-mic.png`,
-					alt: V._("Snoo speaking on the mic", null, {
+					alt: X._("Snoo speaking on the mic", null, {
 						hk: "3OrNuX"
 					})
 				}))))
@@ -970,10 +970,10 @@
 					hk: "3NJUFS"
 				})), r.a.createElement("p", {
 					className: Object(i.a)(z.a.description, z.a.bodyText)
-				}, ee._("Host talks between {=July 11 and October 11, 2022} to get discovered at the top of the Reddit home page. Host at least 4 talks every 30 days to get a chance to win fun IRL rewards.", [ee._param("=July 11 and October 11, 2022", r.a.createElement("strong", null, ee._("July 11 and October 11, 2022", null, {
-					hk: "2PVWFa"
+				}, ee._("Host talks between {=July 27 and October 27, 2022} to get discovered at the top of the Reddit home page. Host at least 4 talks every 30 days to get a chance to win fun IRL rewards.", [ee._param("=July 27 and October 27, 2022", r.a.createElement("strong", null, ee._("July 27 and October 27, 2022", null, {
+					hk: "1U1CKP"
 				})))], {
-					hk: "2ycJ77"
+					hk: "k8Tgm"
 				})), p()), r.a.createElement("div", {
 					className: z.a.headingArt
 				}, r.a.createElement("div", {
@@ -997,10 +997,10 @@
 					hk: "1ZEinP"
 				})), r.a.createElement("p", {
 					className: Object(i.a)(z.a.description, z.a.bodyText)
-				}, ee._("Host at least 4 talks every 30 days (12 total) between {=July 11 and October 11, 2022} to get these perks.", [ee._param("=July 11 and October 11, 2022", r.a.createElement("strong", null, ee._("July 11 and October 11, 2022", null, {
-					hk: "iorE1"
+				}, ee._("Host at least 4 talks every 30 days (12 total) between {=July 27 and October 27, 2022} to get these perks.", [ee._param("=July 27 and October 27, 2022", r.a.createElement("strong", null, ee._("July 27 and October 27, 2022", null, {
+					hk: "2a1Xvh"
 				})))], {
-					hk: "rzWHP"
+					hk: "1H9Lz5"
 				}))), r.a.createElement(Y, null), r.a.createElement(G, {
 					ctaButton: p
 				}), r.a.createElement($, null), r.a.createElement(O, null), r.a.createElement(o.a, {
@@ -1010,4 +1010,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Talk.775b19d4bbff8c66d02e.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Talk.e320ead493096ffb573d.js.map
