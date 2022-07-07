@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/AdminPanel.0a53e1eb48424c6b06b8.js
-// Retrieved at 7/7/2022, 11:50:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/AdminPanel.004dccfe1145ca55d3cf.js
+// Retrieved at 7/7/2022, 2:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["AdminPanel"], {
 		"./src/reddit/components/AdminPanel/CopyLink/index.m.less": function(e, t, n) {
@@ -799,7 +799,7 @@
 			var ot = e => {
 					const t = ["control_1", "control_2", ...Ye.r[e.experimentName]];
 					if (!t) return null;
-					const n = Ye.zd.has(e.experimentName);
+					const n = Ye.Ad.has(e.experimentName);
 					return a.a.createElement(G.a, {
 						className: e.className
 					}, a.a.createElement(et, null, `${e.experimentName}${n?"*":""}`), a.a.createElement(tt, {
@@ -1208,7 +1208,7 @@
 			const Bn = Object(h.c)({
 				city: Fn.a,
 				country: Fn.b,
-				region: Fn.l
+				region: Fn.m
 			});
 			class Dn extends a.a.Component {
 				constructor(e) {
@@ -1855,4 +1855,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/AdminPanel.0a53e1eb48424c6b06b8.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/AdminPanel.004dccfe1145ca55d3cf.js.map

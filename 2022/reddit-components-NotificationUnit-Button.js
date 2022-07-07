@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-NotificationUnit-Button.ae9b97ea4c58ea573caf.js
-// Retrieved at 7/7/2022, 11:50:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-NotificationUnit-Button.439aceb706bb583f0437.js
+// Retrieved at 7/7/2022, 2:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-NotificationUnit-Button"], {
 		"./node_modules/lodash/map.js": function(t, e, n) {
@@ -121,8 +121,8 @@
 				N = n("./src/reddit/models/RichTextJson/addEmotesAsImagesParam.ts"),
 				R = n("./src/reddit/models/RichTextJson/addRTJParam.ts"),
 				P = n("./src/reddit/helpers/graphql/helpers.ts"),
-				D = n("./src/reddit/helpers/graphql/normalizeCommentFromGql/index.ts"),
-				M = n("./src/redditGQL/operations/CreateComment.json");
+				M = n("./src/reddit/helpers/graphql/normalizeCommentFromGql/index.ts"),
+				D = n("./src/redditGQL/operations/CreateComment.json");
 			const A = (t, e, n, o) => {
 					let r, i;
 					if (o === w.i.MARKDOWN) r = n.text, i = null;
@@ -181,7 +181,7 @@
 							}
 						};
 					return Object(j.a)(t, {
-						...M,
+						...D,
 						variables: {
 							input: c
 						}
@@ -201,7 +201,7 @@
 							if (e.ok) return {
 								...t,
 								body: {
-									comment: Object(D.a)(e.commentInfo)
+									comment: Object(M.a)(e.commentInfo)
 								}
 							}
 						}
@@ -236,7 +236,7 @@
 			const st = Object(it.a)(t => Object(rt.c)(t, {
 				experimentEligibilitySelector: rt.a,
 				experimentName: ot.Ib
-			}), t => t === ot.yd);
+			}), t => t === ot.zd);
 			var ct = n("./src/reddit/selectors/experiments/contributeBeforeSignUp.ts"),
 				at = n("./src/reddit/selectors/experiments/emailEnablement.ts"),
 				dt = n("./src/reddit/selectors/platform.ts"),
@@ -258,7 +258,7 @@
 									hasFocus: e,
 									draftKey: n
 								});
-								t(Object(a.f)(o))
+								t(Object(a.startChangeUsernameFlow)(o))
 							} else t(bt({
 								hasFocus: e,
 								draftKey: n
@@ -304,7 +304,7 @@
 							o = jt(t.formData);
 						e(Object(u.k)({
 							actionSource: u.a.Reply
-						})), e(Object(l.j)()), Object(Q.d)({
+						})), e(Object(l.openRegisterModal)()), Object(Q.d)({
 							comment: {
 								...t,
 								richTextJSONData: n,
@@ -422,7 +422,7 @@
 							o = jt(t.formData);
 						e(Object(u.k)({
 							actionSource: u.a.Reply
-						})), e(Object(l.j)()), Object(Q.d)({
+						})), e(Object(l.openRegisterModal)()), Object(Q.d)({
 							comment: {
 								...t,
 								richTextJSONData: n,
@@ -500,12 +500,12 @@
 							parentCommentDepth: n
 						}, !0, i, s))
 					}
-				}, Rt = Object(i.a)(pt.s), Pt = Object(i.a)(pt.r), Dt = Object(i.a)(pt.n), Mt = (Object(i.a)(pt.i), Object(i.a)(pt.o)), At = (Object(i.a)(pt.v), (t, e, n) => async (r, i, s) => {
+				}, Rt = Object(i.a)(pt.s), Pt = Object(i.a)(pt.r), Mt = Object(i.a)(pt.n), Dt = (Object(i.a)(pt.i), Object(i.a)(pt.o)), At = (Object(i.a)(pt.v), (t, e, n) => async (r, i, s) => {
 					let {
 						apiContext: c
 					} = s;
 					const a = t === w.i.RICH_TEXT;
-					if (!e || "object" == typeof e && Object($.G)(e)) r(Mt({
+					if (!e || "object" == typeof e && Object($.G)(e)) r(Dt({
 						editorMode: t,
 						draftKey: n,
 						content: a ? $.i : ""
@@ -515,7 +515,7 @@
 						const i = await Object(H.a)(c(), t, a ? e : JSON.stringify(e));
 						if (i.ok) {
 							const e = i.body.output;
-							r(Object(b.a)(n)), r(Mt({
+							r(Object(b.a)(n)), r(Dt({
 								editorMode: t,
 								draftKey: n,
 								content: e
@@ -537,7 +537,7 @@
 					return async (t, r) => {
 						const i = r(),
 							c = Object(s.a)(Y.c.replyToComment, n);
-						if (!Object(ut.Q)(r()) && !Object(ct.a)(i)) return t(Object(l.j)()), void t(Object(u.k)({
+						if (!Object(ut.Q)(r()) && !Object(ct.a)(i)) return t(Object(l.openRegisterModal)()), void t(Object(u.k)({
 							actionSource: u.a.Reply,
 							redirectUrl: Object(et.m)(r(), {
 								commentId: n
@@ -584,7 +584,7 @@
 								draftKey: c,
 								formData: g
 							});
-							t(Object(a.f)(o))
+							t(Object(a.startChangeUsernameFlow)(o))
 						} else t(Rt({
 							parentCommentId: n,
 							commentsPageKey: e,
@@ -611,7 +611,7 @@
 							commentsPageKey: n
 						}))
 					}
-				}, Kt = (t, e) => n => n(Dt({
+				}, Kt = (t, e) => n => n(Mt({
 					draftKey: t,
 					formData: e
 				})), Bt = Object(i.a)(pt.u), Ht = t => {
@@ -688,7 +688,7 @@
 											...t,
 											body: {
 												comment: {
-													...Object(D.b)(e.content)
+													...Object(M.b)(e.content)
 												}
 											}
 										}
@@ -1140,8 +1140,8 @@
 					noun: t ? "enable" : "disable",
 					...R
 				});
-			var D = n("./src/reddit/icons/svgs/Dropdown/index.tsx"),
-				M = n("./src/reddit/icons/svgs/Info/index.tsx"),
+			var M = n("./src/reddit/icons/svgs/Dropdown/index.tsx"),
+				D = n("./src/reddit/icons/svgs/Info/index.tsx"),
 				A = n("./src/reddit/selectors/activeModalId.ts"),
 				L = n("./src/reddit/selectors/comments.ts"),
 				U = n("./src/reddit/selectors/moderatorPermissions.ts"),
@@ -1201,7 +1201,7 @@
 						id: e,
 						noHover: !0,
 						onClick: n
-					}), i.a.createElement(D.b, {
+					}), i.a.createElement(M.b, {
 						className: W.a.DropdownTriangle,
 						onClick: n
 					}), i.a.createElement(G, {
@@ -1362,7 +1362,7 @@
 						noHover: !0,
 						skipRoleAttr: !0,
 						onClick: this.onOpenDropdownClick
-					}), i.a.createElement(D.b, {
+					}), i.a.createElement(M.b, {
 						className: W.a.DropdownTriangle,
 						onClick: this.onOpenDropdownClick
 					})), i.a.createElement($, {
@@ -1410,7 +1410,7 @@
 							hk: "3KM0ma"
 						}),
 						tooltipId: Y
-					}), i.a.createElement(M.a, {
+					}), i.a.createElement(D.a, {
 						className: W.a.Info
 					})))), m && i.a.createElement("button", {
 						className: W.a.ContestMode,
@@ -1610,8 +1610,8 @@
 						context: N,
 						deeplinkUrl: R,
 						isFullWidth: P,
-						isUnread: D,
-						isInAppNotification: M,
+						isUnread: M,
+						isInAppNotification: D,
 						isNightMode: A,
 						notificationId: L,
 						onEvent: U
@@ -1658,7 +1658,7 @@
 						case h.a.LifecyclePostSuggestions:
 						case h.a.SubredditRecommendation: {
 							const t = H;
-							if (!(B || t || w && M)) return null;
+							if (!(B || t || w && D)) return null;
 							const e = t => {
 									W ? U({
 										position: f.d.SECOND,
@@ -1675,12 +1675,12 @@
 								priority: p.c.Tertiary,
 								redditStyle: !0,
 								className: Object(s.a)(_.a.notificationButton, {
-									[_.a.isUnread]: D && !M,
+									[_.a.isUnread]: M && !D,
 									[_.a.isNightMode]: A,
-									[_.a.inAppNotification]: M,
-									[_.a.isFullWidth]: P && !M
+									[_.a.inAppNotification]: D,
+									[_.a.isFullWidth]: P && !D
 								})
-							}, !M && r.a.createElement(O.a, {
+							}, !D && r.a.createElement(O.a, {
 								name: "text_post",
 								className: _.a.postIcon
 							}), y._("{check out button}", [y._param("check out button", n)], {
@@ -1692,7 +1692,7 @@
 						case h.a.PostFollow:
 						case h.a.CommentFollow: {
 							const t = K;
-							return K || t || w && M ? r.a.createElement(p.t, {
+							return K || t || w && D ? r.a.createElement(p.t, {
 								onClick: X,
 								kind: p.b.InternalLink,
 								to: R,
@@ -1700,12 +1700,12 @@
 								priority: p.c.Tertiary,
 								redditStyle: !0,
 								className: Object(s.a)(_.a.notificationButton, {
-									[_.a.isUnread]: D && !M,
+									[_.a.isUnread]: M && !D,
 									[_.a.isNightMode]: A,
-									[_.a.inAppNotification]: M,
-									[_.a.isFullWidth]: P && !M
+									[_.a.inAppNotification]: D,
+									[_.a.isFullWidth]: P && !D
 								})
-							}, !M && r.a.createElement(O.a, {
+							}, !D && r.a.createElement(O.a, {
 								name: "reply",
 								className: _.a.replyIcon
 							}), y._("Reply Back", null, {
@@ -1729,12 +1729,12 @@
 								redditStyle: !0,
 								eventSource: l.a.awardNotification,
 								className: Object(s.a)(_.a.notificationButton, {
-									[_.a.isUnread]: D && !M,
+									[_.a.isUnread]: M && !D,
 									[_.a.isNightMode]: A,
-									[_.a.inAppNotification]: M,
-									[_.a.isFullWidth]: P && !M
+									[_.a.inAppNotification]: D,
+									[_.a.isFullWidth]: P && !D
 								})
-							}, !M && r.a.createElement(O.a, {
+							}, !D && r.a.createElement(O.a, {
 								name: "chat_new",
 								className: _.a.replyIcon
 							}), y._("Say thanks", null, {
@@ -1754,7 +1754,7 @@
 						case h.a.OneOff:
 						case h.a.ModeratedSrViralCommentPost:
 						case h.a.TalkLive: {
-							if (!M) return null;
+							if (!D) return null;
 							const t = t => {
 								switch (t) {
 									case h.a.HFNSubredditInterestingPost:
@@ -1806,7 +1806,7 @@
 							}, t(F))
 						}
 						default:
-							return w && M ? r.a.createElement(p.t, {
+							return w && D ? r.a.createElement(p.t, {
 								onClick: () => U({
 									position: f.d.SECOND
 								}),
@@ -2835,4 +2835,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-NotificationUnit-Button.ae9b97ea4c58ea573caf.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-NotificationUnit-Button.439aceb706bb583f0437.js.map

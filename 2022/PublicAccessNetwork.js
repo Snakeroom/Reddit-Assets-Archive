@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PublicAccessNetwork.4880980347d89f41759a.js
-// Retrieved at 7/7/2022, 11:50:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PublicAccessNetwork.9a690e96a35ca71bf954.js
+// Retrieved at 7/7/2022, 2:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PublicAccessNetwork"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -284,16 +284,16 @@
 			const p = Object(a.a)(e => {
 				const t = Object(u.c)(e, {
 					experimentEligibilitySelector: u.a,
-					experimentName: m.me
+					experimentName: m.ne
 				});
-				return Object(m.Yf)(t) ? void 0 : t
+				return Object(m.Zf)(t) ? void 0 : t
 			}, e => {
 				const t = Object(u.c)(e, {
 					experimentEligibilitySelector: u.a,
-					experimentName: m.ne
+					experimentName: m.oe
 				});
-				return Object(m.Yf)(t) ? void 0 : t
-			}, (e, t) => e === m.re.Enabled && t === m.re.Enabled);
+				return Object(m.Zf)(t) ? void 0 : t
+			}, (e, t) => e === m.se.Enabled && t === m.se.Enabled);
 			var b = s("./src/config.ts");
 			var h = s("./src/reddit/selectors/user.ts");
 			const v = e => {
@@ -670,7 +670,7 @@
 									icon: e.category_icon,
 									id: e.category_id,
 									name: e.category_name,
-									displayText: Object(m.Xf)(e.category_name)
+									displayText: Object(m.Yf)(e.category_name)
 								};
 								s.push(r.id), t[r.id] = r
 							}), {
@@ -1467,9 +1467,9 @@
 							a = Object(te.M)(s(), {
 								identifier: M.belongsTo
 							});
-						if (a && (e => K.if.Redirect === Object(W.b)(e, {
+						if (a && (e => K.jf.Redirect === Object(W.b)(e, {
 								experimentEligibilitySelector: Y,
-								experimentName: K.bf
+								experimentName: K.cf
 							}))(s())) return void t(Object(o.c)(a.url));
 						if ((M.media && M.media.type) === F.o.LIVEVIDEO) {
 							const e = `/rpan${M.belongsTo.type===N.a.SUBREDDIT?a.url:"/"}${Object(g.w)(M.id)}`;
@@ -5883,7 +5883,7 @@
 						const o = Object(Ue.a)(t.post.id),
 							r = it()(),
 							n = {
-								[Be.p]: r,
+								[Be.q]: r,
 								utm_source: "share",
 								utm_medium: "web2x",
 								utm_content: "rpan_stream"
@@ -5998,7 +5998,7 @@
 						},
 						onClickShareToChat: () => {
 							const e = Object(S.a)(Object(Ue.a)(w), {
-								[Be.p]: this.referralId,
+								[Be.q]: this.referralId,
 								utm_source: "share",
 								utm_medium: "web2x",
 								utm_content: "rpan_stream"
@@ -6023,7 +6023,7 @@
 						onClose: this.onCloseShareModal,
 						withOverlay: !0,
 						url: Object(S.a)(Object(Ue.a)(w), {
-							[Be.p]: this.referralId,
+							[Be.q]: this.referralId,
 							utm_source: "share",
 							utm_medium: "web2x",
 							utm_content: "rpan_stream"
@@ -6603,8 +6603,8 @@
 						loadComments: () => e(Object(Ks.commentsPageDataRequested)(s, void 0, {
 							sort: Gs.t.CHAT
 						}, Gs.t.CHAT)),
-						openLoginModal: () => e(Object(m.i)()),
-						openRegisterModal: () => e(Object(m.j)()),
+						openLoginModal: () => e(Object(m.openLoginModal)()),
+						openRegisterModal: () => e(Object(m.openRegisterModal)()),
 						fetchAutomuteStatus: () => e(Object(Ws.b)(s))
 					}
 				})(Ao),
@@ -7329,8 +7329,8 @@
 				getStreamLocation(e) {
 					const t = Object(Ue.d)(e);
 					return Object(S.a)(t, {
-						[Be.q]: this.props.related,
-						[Be.z]: this.props.timestamp
+						[Be.r]: this.props.related,
+						[Be.B]: this.props.timestamp
 					})
 				}
 				goToStream(e) {
@@ -7460,13 +7460,13 @@
 				} = t;
 				return Object(c.a)(s)
 			}), hr = Object(i.a)(pr, br, (e, t) => {
-				const s = t.get(Be.q),
+				const s = t.get(Be.r),
 					{
 						subredditName: o
 					} = e;
 				return "home" === s || "r/popular" === s ? s : "popular" === o ? "r/popular" : o ? void 0 : "home"
 			}), vr = Object(i.a)(br, e => {
-				const t = e.get(Be.z);
+				const t = e.get(Be.B);
 				if (!t) return;
 				const s = parseInt(t, 10);
 				return isNaN(s) ? void 0 : s
@@ -7476,7 +7476,7 @@
 				related: hr,
 				timestamp: vr
 			}), fr = Object(n.b)(gr, (e, t) => ({
-				onOpenLoginModal: () => e(Object(m.i)()),
+				onOpenLoginModal: () => e(Object(m.openLoginModal)()),
 				onStreamByIdRequested: t => e(Object(u.d)(t)),
 				updateLocation: (t, s) => {
 					let {
@@ -7827,12 +7827,12 @@
 				i = s("./src/reddit/selectors/meta.ts"),
 				d = s("./node_modules/reselect/es/index.js");
 			const c = Object(d.a)(e => Object(r.c)(e, {
-					experimentEligibilitySelector: e => Object(i.g)(e) && Object(n.f)(e),
-					experimentName: o.nc
+					experimentEligibilitySelector: e => Object(i.h)(e) && Object(n.f)(e),
+					experimentName: o.oc
 				}), a.a),
 				l = Object(d.a)(e => Object(r.c)(e, {
-					experimentEligibilitySelector: e => !Object(i.g)(e) && Object(n.f)(e),
-					experimentName: o.mc
+					experimentEligibilitySelector: e => !Object(i.h)(e) && Object(n.f)(e),
+					experimentName: o.nc
 				}), a.a),
 				m = Object(d.a)(c, l, (e, t) => e || t),
 				u = Object(d.a)(c, l, (e, t) => !(!e && !t))
@@ -7862,8 +7862,8 @@
 				a = s("./src/reddit/selectors/user.ts");
 			const i = Object(o.a)(e => Object(n.c)(e, {
 				experimentEligibilitySelector: a.Q,
-				experimentName: r.xc
-			}), e => e === r.yd)
+				experimentName: r.yc
+			}), e => e === r.zd)
 		},
 		"./src/reddit/selectors/i18n/index.ts": function(e, t, s) {
 			"use strict";
@@ -7878,7 +7878,7 @@
 				a = s("./src/reddit/selectors/experiments/nsfwListingBelow.ts");
 			const i = e => {
 					const t = Object(a.a)(e);
-					return Boolean(t) && !Object(r.Yf)(t)
+					return Boolean(t) && !Object(r.Zf)(t)
 				},
 				d = Object(o.a)(i, n.d, (e, t) => e && !t)
 		},
@@ -7899,4 +7899,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PublicAccessNetwork.4880980347d89f41759a.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PublicAccessNetwork.9a690e96a35ca71bf954.js.map

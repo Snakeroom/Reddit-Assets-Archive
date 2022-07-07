@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/EmailVerificationModals.d15661f864dcd65684a5.js
-// Retrieved at 6/1/2022, 6:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/EmailVerificationModals.f1c1c8e78a7f0a0143be.js
+// Retrieved at 7/7/2022, 2:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["EmailVerificationModals"], {
 		"./src/lib/colors/constants.ts": function(e, t, a) {
@@ -185,8 +185,8 @@
 				E = a("./src/reddit/components/TrackingHelper/index.tsx"),
 				f = a("./src/reddit/controls/Button/index.tsx"),
 				g = a("./src/reddit/helpers/getErrorMsgFromR2JQueryResponse.ts"),
-				x = a("./src/reddit/helpers/trackers/emailCollection.ts"),
-				v = a("./src/reddit/selectors/user.ts"),
+				v = a("./src/reddit/helpers/trackers/emailCollection.ts"),
+				x = a("./src/reddit/selectors/user.ts"),
 				_ = a("./src/reddit/components/Settings/ModalContainer/index.tsx"),
 				y = a("./src/reddit/components/Settings/accountModals.m.less"),
 				k = a.n(y);
@@ -200,8 +200,8 @@
 					passwordState: null
 				},
 				N = Object(r.c)({
-					changeEmailError: v.d,
-					currentEmail: v.n
+					changeEmailError: x.d,
+					currentEmail: x.n
 				}),
 				S = Object(i.b)(N, e => ({
 					changeEmail: t => e(Object(p.v)(t))
@@ -226,7 +226,7 @@
 							newEmailState: e ? b.a.Invalid : b.a.Valid
 						}), e || this.props.changeEmail(this.state)
 					}, this.onCloseModal = () => {
-						this.props.shouldSendEvents && this.props.sendEvent(Object(x.e)(w)), this.props.onClose(), this.setState(C)
+						this.props.shouldSendEvents && this.props.sendEvent(Object(v.e)(w)), this.props.onClose(), this.setState(C)
 					}, this.updateNewEmailField = e => {
 						this.setState({
 							newEmail: e.target.value,
@@ -259,7 +259,7 @@
 					}
 				}
 				componentDidMount() {
-					this.props.shouldSendEvents && this.props.sendEvent(Object(x.f)(w))
+					this.props.shouldSendEvents && this.props.sendEvent(Object(v.f)(w))
 				}
 				componentDidUpdate(e) {
 					const {
@@ -329,13 +329,13 @@
 				F = a("./src/reddit/icons/svgs/Approve/index.tsx"),
 				j = a("./src/reddit/components/EmailCollection/Success/index.m.less"),
 				B = a.n(j);
-			var P = e => o.a.createElement("div", {
+			var I = e => o.a.createElement("div", {
 					className: Object(l.a)(B.a.container, e.className)
 				}, o.a.createElement(F.a, {
 					className: B.a.icon
 				})),
 				D = a("./src/reddit/helpers/styles/mixins/fonts.m.less"),
-				I = a.n(D);
+				P = a.n(D);
 			var A = Object(u.a)(e => o.a.createElement(_.a, {
 					className: Object(l.a)({
 						[k.a["m-responsive"]]: e.isResponsive
@@ -343,12 +343,12 @@
 					description: o.a.createElement(o.a.Fragment, null, n.fbt._("Reddit sent a confirmation email to:", null, {
 						hk: "3IsFLZ"
 					}), " ", o.a.createElement("strong", {
-						className: I.a.strongTextFont
+						className: P.a.strongTextFont
 					}, e.email), o.a.createElement("br", null), n.fbt._("Click the verify link in the email to secure your Reddit account.", null, {
 						hk: "jJSSU"
 					})),
 					descriptionClassName: k.a.description,
-					icon: o.a.createElement(P, null),
+					icon: o.a.createElement(I, null),
 					onClose: e.onConfirm,
 					title: n.fbt._("Check your email", null, {
 						hk: "1aob6x"
@@ -367,13 +367,13 @@
 				J = a("./src/reddit/controls/Checkbox/index.tsx"),
 				U = a("./src/reddit/controls/InternalLink/index.tsx"),
 				W = a("./src/reddit/models/Theme/NewColorSystem/index.ts"),
-				Y = a("./src/reddit/selectors/meta.ts"),
+				V = a("./src/reddit/selectors/meta.ts"),
 				Q = a("./src/reddit/components/Settings/DeactivateModal.tsx"),
-				V = a("./src/reddit/components/Settings/VerifyEmailModal.m.less"),
-				q = a.n(V);
+				Y = a("./src/reddit/components/Settings/VerifyEmailModal.m.less"),
+				q = a.n(Y);
 			const X = Object(r.c)({
-					emailDigests: v.m,
-					isEmailPermissionRequired: Y.e
+					emailDigests: x.m,
+					isEmailPermissionRequired: V.e
 				}),
 				z = Object(i.b)(X, e => ({
 					resendEmail: () => e(Object(p.x)()),
@@ -384,9 +384,9 @@
 			class K extends o.a.Component {
 				constructor() {
 					super(...arguments), this.trackEmailSettingsLinkClick = () => {
-						this.props.sendEvent(x.d)
+						this.props.sendEvent(v.d)
 					}, this.toggleEmailDigests = () => {
-						this.props.toggleEmailDigests(!this.props.emailDigests), this.props.sendEvent(Object(x.b)(!this.props.emailDigests))
+						this.props.toggleEmailDigests(!this.props.emailDigests), this.props.sendEvent(Object(v.b)(!this.props.emailDigests))
 					}
 				}
 				render() {
@@ -413,7 +413,7 @@
 							hk: "3eTpv8"
 						})), ` ${n.fbt._("to control what type of email you receive.",null,{hk:"bg4j6"})}`)),
 						descriptionClassName: q.a.description,
-						icon: o.a.createElement(P, null),
+						icon: o.a.createElement(I, null),
 						onClose: s,
 						title: n.fbt._("Verification email sent", null, {
 							hk: "3rXaUZ"
@@ -459,10 +459,10 @@
 			const se = Object(r.c)({
 					changeEmailModalOpen: Object(ee.b)(T.a),
 					checkEmailModalOpen: Object(ee.b)(T.c),
-					isEmailPermissionRequired: Y.e,
+					isEmailPermissionRequired: V.e,
 					isResponsiveSettingsEnabled: te.a,
 					setEmailModalOpen: Object(ee.b)(T.h),
-					verifyEmailModalOpen: Object(ee.b)(T.p)
+					verifyEmailModalOpen: Object(ee.b)(T.q)
 				}),
 				oe = Object(i.b)(se, (e, t) => {
 					let {
@@ -473,7 +473,7 @@
 							a && e(Object(d.c)()), e(Object(m.g)(T.a))
 						},
 						closeSetEmailModal: () => e(Object(c.b)()),
-						closeVerifyEmailModal: () => e(Object(m.g)(T.p)),
+						closeVerifyEmailModal: () => e(Object(m.g)(T.q)),
 						toggleCheckEmailModal: () => e(Object(m.i)(T.c))
 					}
 				}),
@@ -600,8 +600,8 @@
 				E = p.a.button("Close", u.a),
 				f = p.a.wrapped(r.f, "PrimaryButton", u.a),
 				g = p.a.wrapped(r.o, "SecondaryButton", u.a),
-				x = p.a.div("ButtonWrapper", u.a),
-				v = p.a.textarea("TextArea", u.a),
+				v = p.a.div("ButtonWrapper", u.a),
+				x = p.a.textarea("TextArea", u.a),
 				_ = p.a.h3("SectionLabel", u.a),
 				y = p.a.p("H", u.a),
 				k = p.a.p("P", u.a),
@@ -674,7 +674,7 @@
 							hk: "3X1MwJ"
 						}) : n.fbt._("why are you deactivating this account? (OPTIONAL)", null, {
 							hk: "2JWxx5"
-						})), o.a.createElement(v, {
+						})), o.a.createElement(x, {
 							placeholder: t ? n.fbt._("Let us know why you're leaving", null, {
 								hk: "2UtCO8"
 							}) : n.fbt._("(OPTIONAL) FEEDBACK", null, {
@@ -706,7 +706,7 @@
 							hk: "lJQkY"
 						}) : n.fbt._("I understand that deactivated accounts are not recoverable", null, {
 							hk: "1qMwOQ"
-						}))), o.a.createElement(x, null, o.a.createElement(g, {
+						}))), o.a.createElement(v, null, o.a.createElement(g, {
 							onClick: e.exit
 						}, n.fbt._("Cancel", null, {
 							hk: "2TSLl5"
@@ -748,7 +748,7 @@
 					}), this.props.user && this.props.user.hasStripeSubscription && this.renderPremiumNotificationMessage({
 						platform: "stripe",
 						isMobile: !1
-					})), o.a.createElement(x, null, o.a.createElement(f, {
+					})), o.a.createElement(v, null, o.a.createElement(f, {
 						onClick: () => this.setState({
 							showPremiumNotification: !1
 						})
@@ -764,7 +764,7 @@
 							hk: "1RBb2C"
 						})), e && o.a.createElement(k, null, n.fbt._("Deleting your account removes it from Reddit and our administrators won’t be able to bring it back for you.", null, {
 							hk: "4sgkKP"
-						})), o.a.createElement(x, null, o.a.createElement(g, {
+						})), o.a.createElement(v, null, o.a.createElement(g, {
 							onClick: () => this.setState({
 								showConfirm: !1
 							})
@@ -835,7 +835,8 @@
 					icon: m,
 					iconClassName: u,
 					onClose: p,
-					title: h
+					title: h,
+					titleClassName: b
 				} = e;
 				return s.a.createElement("div", {
 					className: Object(o.a)(l.a.container, n)
@@ -849,7 +850,7 @@
 				}, m && s.a.createElement("div", {
 					className: Object(o.a)(l.a.icon, u)
 				}, m), s.a.createElement("h2", {
-					className: l.a.title
+					className: Object(o.a)(l.a.title, b)
 				}, h)), r && s.a.createElement("p", {
 					className: Object(o.a)(l.a.description, c)
 				}, r), s.a.createElement("div", {
@@ -872,6 +873,7 @@
 		"./src/reddit/components/Settings/accountModals.m.less": function(e, t, a) {
 			e.exports = {
 				buttonWrapper: "_3bwuX1FpzX5u_wA4guPMPr",
+				oneTapAutoVariantBtn: "_3vIFIa20TgFryEKEuKuhMn",
 				input: "RrqK6usE8PEMhLL7FD-iE",
 				checkboxLabel: "OBgeR3lNas33iO_RB1buN",
 				primaryBtn: "_1ZuJ4cYdwXBjhOxsWSpt_J",
@@ -881,14 +883,17 @@
 				mResponsive: "_1RdzLLJTzHMuKTT451B8mz",
 				changeUsernameModalContainer: "_9hmSLlBvZA-2tPAVajB6F",
 				confirmModalContainer: "ZdQ8dYkTCSltA50W7-IE3",
+				oneTapAutoVariantContainer: "_2hI6h1MuQOILd4WIgeRwUn",
 				changeUsernameModalBody: "_1Yly3HtP1iwII2uUEMTTKL",
 				confirmModalBody: "_1yaWiT2tGW8c-WyQ2DxiNY",
 				confirmModalHeader: "_19OEdjo2DQZ1GMEXsY7vZ3",
 				confirmModalDescription: "JB3thd-iYucgTQHskJ_6g",
+				oneTapAutoVariantModalDesc: "_1QTfB4TH1W_1lBMHGTKMTh",
 				saveDescription: "_3Yj6lPp8gZJ6YcXvbva9hO",
 				confirmModalIcon: "_2nFUIwSqAux1OcismY38n4",
 				questionIcon: "pg0_xOJ41KOzSjQt9g3FB",
-				usernameInput: "_1Ti06LupexmG0XRXRqTBZQ"
+				usernameInput: "_1Ti06LupexmG0XRXRqTBZQ",
+				oneTapAutoVariantInput: "_2DV-Tbc67VhL9zYZbQhgzU"
 			}
 		},
 		"./src/reddit/components/Settings/shared/FatInput.m.less": function(e, t, a) {
@@ -1084,4 +1089,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EmailVerificationModals.d15661f864dcd65684a5.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EmailVerificationModals.f1c1c8e78a7f0a0143be.js.map

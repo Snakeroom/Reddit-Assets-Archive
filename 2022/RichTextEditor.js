@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/RichTextEditor.1bdb9c1681404f2363be.js
-// Retrieved at 7/7/2022, 11:50:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/RichTextEditor.6d8e8f36ed395e4ff146.js
+// Retrieved at 7/7/2022, 2:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["RichTextEditor", "ContributorRequestButton"], {
 		"./node_modules/autosize/dist/autosize.js": function(e, t, n) {
@@ -581,9 +581,9 @@
 			n.d(t, "f", (function() {
 				return be
 			})), n.d(t, "q", (function() {
-				return _e
-			})), n.d(t, "o", (function() {
 				return ge
+			})), n.d(t, "o", (function() {
+				return _e
 			})), n.d(t, "s", (function() {
 				return ye
 			})), n.d(t, "v", (function() {
@@ -615,7 +615,7 @@
 			})), n.d(t, "a", (function() {
 				return Xe
 			})), n.d(t, "j", (function() {
-				return Je
+				return Ve
 			})), n.d(t, "i", (function() {
 				return Ye
 			})), n.d(t, "l", (function() {
@@ -638,8 +638,8 @@
 				h = n("./src/reddit/actions/postCreation/editorContent.ts"),
 				b = n("./src/reddit/actions/publicAccessNetwork/automute.ts"),
 				f = n("./src/reddit/actions/shortcuts/utils.ts"),
-				_ = n("./src/reddit/actions/toaster.ts"),
-				g = n("./src/reddit/components/RichTextEditor/RTEState/index.tsx"),
+				g = n("./src/reddit/actions/toaster.ts"),
+				_ = n("./src/reddit/components/RichTextEditor/RTEState/index.tsx"),
 				x = n("./src/reddit/constants/adEvents.ts"),
 				C = n("./src/reddit/constants/localStorage.ts"),
 				y = n("./src/redditGQL/operations/CommentToxicity.json"),
@@ -663,7 +663,7 @@
 					else {
 						s = null;
 						let e = null;
-						n.rteState && (e = g.a.toRichTextJSON(n.rteState).document), r = JSON.stringify({
+						n.rteState && (e = _.a.toRichTextJSON(n.rteState).document), r = JSON.stringify({
 							document: e
 						})
 					}
@@ -755,8 +755,8 @@
 				K = n("./src/reddit/helpers/correlationIdTracker.ts"),
 				G = n("./src/reddit/helpers/dom/index.ts"),
 				X = n("./src/reddit/helpers/localStorage/index.ts"),
-				J = n("./src/reddit/helpers/sessionStorage/index.ts"),
-				V = n("./src/reddit/helpers/trackers/commentsPage.ts"),
+				V = n("./src/reddit/helpers/sessionStorage/index.ts"),
+				J = n("./src/reddit/helpers/trackers/commentsPage.ts"),
 				Z = n("./src/reddit/models/Comment/index.ts"),
 				Q = n("./src/reddit/models/PostDraft/index.ts"),
 				Y = n("./src/reddit/models/RichTextJson/index.ts"),
@@ -770,7 +770,7 @@
 			const ie = Object(re.a)(e => Object(se.c)(e, {
 				experimentEligibilitySelector: se.a,
 				experimentName: oe.Ib
-			}), e => e === oe.yd);
+			}), e => e === oe.zd);
 			var ae = n("./src/reddit/selectors/experiments/contributeBeforeSignUp.ts"),
 				ce = n("./src/reddit/selectors/experiments/emailEnablement.ts"),
 				de = n("./src/reddit/selectors/platform.ts"),
@@ -792,7 +792,7 @@
 									hasFocus: t,
 									draftKey: n
 								});
-								e(Object(c.f)(o))
+								e(Object(c.startChangeUsernameFlow)(o))
 							} else e(he({
 								hasFocus: t,
 								draftKey: n
@@ -800,13 +800,13 @@
 					}
 				},
 				fe = Object(r.a)(pe.J),
-				_e = Object(r.a)(pe.L),
-				ge = Object(r.a)(pe.K),
+				ge = Object(r.a)(pe.L),
+				_e = Object(r.a)(pe.K),
 				xe = Object(r.a)(pe.I),
 				Ce = async (e, t, n, o) => {
 					const s = o.ok && o.body,
 						r = s && s.comment && s.comment.id;
-					await V.f(e, n, t, r)
+					await J.f(e, n, t, r)
 				}, ye = "Toxicity_Warning__Modal", Ee = e => async (t, n, o) => {
 					let {
 						gqlContext: s
@@ -823,9 +823,9 @@
 						if (!(await P(s(), a, c, d))) return void t(Object(u.i)(ye))
 					}
 					t(Oe(e))
-				}, ke = e => e.rteState ? g.a.toRichTextJSON(e.rteState) : e.rtJson || e.text, ve = e => {
+				}, ke = e => e.rteState ? _.a.toRichTextJSON(e.rteState) : e.rtJson || e.text, ve = e => {
 					let t = null;
-					return e.rteState && (t = g.a.toRichTextJSON(e.rteState).document), JSON.stringify({
+					return e.rteState && (t = _.a.toRichTextJSON(e.rteState).document), JSON.stringify({
 						document: t
 					})
 				}, Oe = e => async (t, n) => {
@@ -838,7 +838,7 @@
 							o = ke(e.formData);
 						t(Object(u.k)({
 							actionSource: u.a.Reply
-						})), t(Object(l.j)()), Object(J.d)({
+						})), t(Object(l.openRegisterModal)()), Object(V.d)({
 							comment: {
 								...e,
 								richTextJSONData: n,
@@ -862,12 +862,12 @@
 						disableAutofocus: m,
 						isLiveStreaming: h
 					} = e;
-					return async (e, g, C) => {
+					return async (e, _, C) => {
 						let {
 							apiContext: y,
 							gqlContext: E
 						} = C;
-						const k = g(),
+						const k = _(),
 							v = k.features.comments.submit.pending[d];
 						if (!k.user.account || v) return;
 						t || e(fe({
@@ -887,7 +887,7 @@
 						}
 						if (j.ok) {
 							let n;
-							if (n = j.body, e(_e({
+							if (n = j.body, e(ge({
 									...n,
 									headCommentId: Object(te.w)(k, {
 										commentsPageKey: c
@@ -898,14 +898,14 @@
 								const e = Object(de.i)(k);
 								Object(a.a)(!!e)
 							}
-							const o = Object(le.G)(g(), {
+							const o = Object(le.G)(_(), {
 								postId: i
 							});
 							e(Object(p.z)(o, x.a.CommentSubmitted))
 						} else {
 							if (j.error && j.error.type === s.Kb) {
 								const e = t && r ? r : ke(l);
-								V.j(k, e, i)
+								J.j(k, e, i)
 							}
 							const n = j.error && j.error.fields && j.error.fields[0] ? j.error.fields[0].msg : o.fbt._("Something went wrong", null, {
 								hk: "LWFS0"
@@ -913,13 +913,13 @@
 							e(xe({
 								draftKey: d,
 								error: j.error
-							})), e(Object(_.f)({
-								duration: _.a,
+							})), e(Object(g.f)({
+								duration: g.a,
 								kind: ee.b.Error,
 								text: n
 							}))
 						}
-						Ce(g(), c, u, j).then(() => j.ok && u === R.i.RICH_TEXT ? Object(K.b)(K.a.CommentComposer) : void 0), m || Object(f.d)(), t && Object(J.a)()
+						Ce(_(), c, u, j).then(() => j.ok && u === R.i.RICH_TEXT ? Object(K.b)(K.a.CommentComposer) : void 0), m || Object(f.d)(), t && Object(V.a)()
 					}
 				},
 				Te = e => async (t, n, o) => {
@@ -956,7 +956,7 @@
 							o = ke(e.formData);
 						t(Object(u.k)({
 							actionSource: u.a.Reply
-						})), t(Object(l.j)()), Object(J.d)({
+						})), t(Object(l.openRegisterModal)()), Object(V.d)({
 							comment: {
 								...e,
 								richTextJSONData: n,
@@ -976,9 +976,9 @@
 						parentCommentDepth: p,
 						draftKey: h,
 						formData: b,
-						editorMode: _
-					} = e, g = i(), x = g.features.comments.submit.pending[h];
-					if (!g.user.account || x) return;
+						editorMode: g
+					} = e, _ = i(), x = _.features.comments.submit.pending[h];
+					if (!_.user.account || x) return;
 					t || r(fe({
 						draftKey: h,
 						draft: b
@@ -986,34 +986,34 @@
 					const C = b.commentMode,
 						y = t && n ? n : ve(b);
 					let E;
-					if ((E = we(C, g) ? await z(l(), null, u, b, C, y) : await B(d(), u, b, C, y)).ok) {
-						if (r(ge({
+					if ((E = we(C, _) ? await z(l(), null, u, b, C, y) : await B(d(), u, b, C, y)).ok) {
+						if (r(_e({
 								...E.body,
 								parentCommentId: u,
 								commentsPageKey: m,
 								draftKey: h,
 								depth: p + 1
 							})), t) {
-							const e = Object(de.i)(g);
+							const e = Object(de.i)(_);
 							Object(a.a)(!!e)
 						}
 					} else {
 						if (E.error && E.error.type === s.Kb) {
-							const e = Object(ne.b)(g, {
+							const e = Object(ne.b)(_, {
 								commentId: u
 							});
 							if (!e) return;
 							const n = t && o ? o : ke(b);
-							V.j(g, n, e.postId, u)
+							J.j(_, n, e.postId, u)
 						}
 						r(xe({
 							draftKey: h,
 							error: E.error
 						}))
 					}
-					Ce(i(), m, _, E), Object(f.d)(), t && Object(J.a)()
+					Ce(i(), m, g, E), Object(f.d)(), t && Object(V.a)()
 				}, De = () => async e => {
-					const t = Object(J.b)();
+					const t = Object(V.b)();
 					if (t) {
 						const {
 							comment: {
@@ -1054,8 +1054,8 @@
 								draftKey: n,
 								content: t
 							})), s(Object(h.c)(e))
-						} else s(Object(h.a)(n)), s(Object(_.f)({
-							duration: _.a,
+						} else s(Object(h.a)(n)), s(Object(g.f)({
+							duration: g.a,
 							kind: ee.b.Error,
 							text: o.fbt._("Something went wrong", null, {
 								hk: "LWFS0"
@@ -1071,7 +1071,7 @@
 					return async (e, s) => {
 						const r = s(),
 							a = Object(i.a)(Q.c.replyToComment, n);
-						if (!Object(ue.Q)(s()) && !Object(ae.a)(r)) return e(Object(l.j)()), void e(Object(u.k)({
+						if (!Object(ue.Q)(s()) && !Object(ae.a)(r)) return e(Object(l.openRegisterModal)()), void e(Object(u.k)({
 							actionSource: u.a.Reply,
 							redirectUrl: Object(te.m)(s(), {
 								commentId: n
@@ -1099,14 +1099,14 @@
 								}
 							}
 						}
-						const _ = r.features.comments.drafts[a];
-						let g;
-						if (g = f ? {
+						const g = r.features.comments.drafts[a];
+						let _;
+						if (_ = f ? {
 								commentMode: b,
 								draftType: Q.c.replyToComment,
 								rtJson: h,
 								text: `${p}\n`
-							} : _ || {
+							} : g || {
 								commentMode: b,
 								draftType: Q.c.replyToComment,
 								rtJson: h,
@@ -1116,14 +1116,14 @@
 								parentCommentId: n,
 								commentsPageKey: t,
 								draftKey: a,
-								formData: g
+								formData: _
 							});
-							e(Object(c.f)(o))
+							e(Object(c.startChangeUsernameFlow)(o))
 						} else e(Me({
 							parentCommentId: n,
 							commentsPageKey: t,
 							draftKey: a,
-							formData: g
+							formData: _
 						}))
 					}
 				}, ze = e => async t => {
@@ -1158,7 +1158,7 @@
 					} = e;
 					return async (e, i) => {
 						const a = i();
-						a.user.account && (V.c(a), e(We({
+						a.user.account && (J.c(a), e(We({
 							commentId: t,
 							commentsPageKey: o,
 							draftKey: s,
@@ -1171,7 +1171,7 @@
 							}
 						})))
 					}
-				}, Ue = Object(r.a)(pe.E), qe = Object(r.a)(pe.D), Ke = Object(r.a)(pe.F), Ge = Object(r.a)(pe.j), Xe = Object(r.a)(pe.f), Je = e => {
+				}, Ue = Object(r.a)(pe.E), qe = Object(r.a)(pe.D), Ke = Object(r.a)(pe.F), Ge = Object(r.a)(pe.j), Xe = Object(r.a)(pe.f), Ve = e => {
 					let {
 						id: t,
 						commentsPageKey: n,
@@ -1187,7 +1187,7 @@
 						if (!l.user.account) return;
 						e(Ue({
 							draftKey: o
-						})), V.d(l);
+						})), J.d(l);
 						const u = ve(r),
 							m = r.commentMode;
 						let p;
@@ -1277,14 +1277,14 @@
 							error: p.error
 						}))
 					}
-				}, Ve = Object(r.a)(pe.B), Ze = Object(r.a)(pe.A), Qe = Object(r.a)(pe.C), Ye = (e, t) => async (n, o, r) => {
+				}, Je = Object(r.a)(pe.B), Ze = Object(r.a)(pe.A), Qe = Object(r.a)(pe.C), Ye = (e, t) => async (n, o, r) => {
 					let {
 						apiContext: i
 					} = r;
 					const a = o();
-					n(Ve({
+					n(Je({
 						id: e
-					})), V.a(e, a);
+					})), J.a(e, a);
 					const c = await ((e, t) => Object(E.a)(Object(v.a)(e, [O.a]), {
 						endpoint: Object(w.a)(`${e.apiUrl}/api/del`),
 						method: s.jb.POST,
@@ -1330,7 +1330,7 @@
 					var a, c, l, u, m, p;
 					n(Object(me.c)());
 					const h = s(),
-						b = e => Object(_.f)(Object(_.e)(e, ee.b.Error));
+						b = e => Object(g.f)(Object(g.e)(e, ee.b.Error));
 					if (((null === (c = null === (a = h.pages) || void 0 === a ? void 0 : a.comments) || void 0 === c ? void 0 : c.followed) || []).length === C.a) n(b(o.fbt._("You've reached your post follow limit", null, {
 						hk: "3ebRql"
 					})));
@@ -1355,7 +1355,7 @@
 							}) : o.fbt._("Unfollowed. You won’t get updates on this comment anymore.", null, {
 								hk: "4EAz6O"
 							});
-							n(Object(_.f)({
+							n(Object(g.f)({
 								kind: ee.b.SuccessCommunityGreen,
 								text: e
 							})), Object(ce.a)(h) && r && n(Object(d.c)("comment_follow"))
@@ -1447,17 +1447,17 @@
 					text: e.markdown,
 					return_rtjson: !0
 				}),
-				_ = e => ({
+				g = e => ({
 					api_type: "json",
 					show_error_list: !0,
 					thing_id: e.post.id,
 					validate_on_submit: !0,
 					...h(e) ? b(e) : f(e)
 				});
-			var g = (e, t) => Object(c.a)(Object(d.a)(e, [l.a]), {
+			var _ = (e, t) => Object(c.a)(Object(d.a)(e, [l.a]), {
 					endpoint: Object(p.a)(Object(u.a)(`${e.apiUrl}/api/editusertext`)),
 					method: a.jb.POST,
-					data: _(t)
+					data: g(t)
 				}).then(m.b),
 				x = n("./src/reddit/helpers/overlay/index.ts"),
 				C = n("./src/reddit/helpers/r2/normalizePostFromR2/index.ts"),
@@ -1504,7 +1504,7 @@
 						post: c
 					} = e, d = !c.media || "rtjson" !== c.media.type && "text" !== c.media.type ? "" : c.media.rteMode;
 					k.E(n(), Object(S.o)(d)), t(M(c.id));
-					const l = await g(a(), e),
+					const l = await _(a(), e),
 						u = !1 === l.body.success;
 					if (t(R(c.id)), l.ok && !u) {
 						t(Object(i.f)({
@@ -1529,7 +1529,7 @@
 			})), n.d(t, "d", (function() {
 				return f
 			})), n.d(t, "c", (function() {
-				return _
+				return g
 			}));
 			var o = n("./node_modules/fbt/lib/FbtPublic.js"),
 				s = n("./src/lib/makeActionCreator/index.ts"),
@@ -1546,7 +1546,7 @@
 				b = Object(s.a)(m.Q),
 				f = (e, t, n) => async (s, a, f) => {
 					let {
-						apiContext: g
+						apiContext: _
 					} = f;
 					c.m(a(), t);
 					const x = t === d.i.MARKDOWN,
@@ -1556,26 +1556,26 @@
 						editorKey: e,
 						editorMode: d.i.MARKDOWN,
 						content: ""
-					})), void s(_(t));
+					})), void s(g(t));
 					if (C && !n) return s(b({
 						editorKey: e,
 						editorMode: d.i.RICH_TEXT,
 						content: l.i
-					})), void s(_(t));
+					})), void s(g(t));
 					s(p(y));
-					const E = await Object(i.a)(g(), t, x ? JSON.stringify(n) : n);
+					const E = await Object(i.a)(_(), t, x ? JSON.stringify(n) : n);
 					E.ok ? (s(h(y)), s(b({
 						editorKey: e,
 						editorMode: t,
 						content: E.body.output
-					})), s(_(t))) : (s(h(y)), s(Object(r.f)({
+					})), s(g(t))) : (s(h(y)), s(Object(r.f)({
 						duration: r.a,
 						kind: u.b.Error,
 						text: o.fbt._("Something went wrong", null, {
 							hk: "3UtpxU"
 						})
 					})))
-				}, _ = e => async (t, n) => {
+				}, g = e => async (t, n) => {
 					const s = Object(a.l)();
 					if (s >= 3) return;
 					const i = n().user.prefs.useMarkdown ? d.i.MARKDOWN : d.i.RICH_TEXT;
@@ -1791,8 +1791,8 @@
 				h = n("./src/reddit/components/AuthorLink/index.tsx"),
 				b = n("./src/reddit/components/CommentCreation/NavigationModule/index.ts"),
 				f = n("./src/reddit/components/CommentCreation/ToxicityWarningModal.tsx"),
-				_ = n("./src/reddit/components/ConfirmUserActionModal/index.tsx"),
-				g = n("./src/reddit/components/MarkdownHelp/index.tsx"),
+				g = n("./src/reddit/components/ConfirmUserActionModal/index.tsx"),
+				_ = n("./src/reddit/components/MarkdownHelp/index.tsx"),
 				x = n("./src/reddit/components/UserIcon/CurrentUserIcon.tsx"),
 				C = n("./src/reddit/controls/ErrorText/index.tsx"),
 				y = n("./src/reddit/controls/LoadingIcon/index.tsx"),
@@ -1877,8 +1877,8 @@
 				K = n("./src/reddit/components/CommentCreation/getCancelModalId.ts"),
 				G = n("./src/realtime/GQLSubscription/async.tsx"),
 				X = n("./src/reddit/components/UsersCountIndicator/constants.ts"),
-				J = n("./src/reddit/constants/componentSizes.ts"),
-				V = n("./src/reddit/constants/componentTestIds.ts"),
+				V = n("./src/reddit/constants/componentSizes.ts"),
+				J = n("./src/reddit/constants/componentTestIds.ts"),
 				Z = n("./src/reddit/selectors/activeModalId.ts"),
 				Q = n("./src/reddit/selectors/comments.ts"),
 				Y = n("./src/reddit/selectors/editorContent.ts"),
@@ -1903,8 +1903,8 @@
 					onClick: e.onClick
 				}, d.a.createElement(me, null)),
 				fe = 8,
-				_e = 16,
-				ge = Object(u.b)(() => Object(m.c)({
+				ge = 16,
+				_e = Object(u.b)(() => Object(m.c)({
 					activeModalId: Z.a,
 					userName: e => e.user.account ? Object(se.e)(e.user.account) : "",
 					pending: (e, t) => e.features.comments.submit.pending[t.draftKey],
@@ -1913,7 +1913,7 @@
 					isTypingIndicatorsWriteTestEnabled: (e, t) => !!t.isTopLevelComment && Object($.d)(e)
 				}), (e, t) => ({
 					cancelModalToggled: () => e(Object(ee.i)(Object(K.a)(t.draftKey))),
-					helpModalToggled: () => e(Object(ee.i)(g.b))
+					helpModalToggled: () => e(Object(ee.i)(_.b))
 				}));
 			class xe extends d.a.Component {
 				constructor(e) {
@@ -1923,7 +1923,7 @@
 						isUserTyping: !1
 					}), X.c), this.detectBreakout = () => {
 						if (!this.wrapperEl || !this.wrapperEl.parentElement || this.props.isTopLevelComment) return;
-						const e = this.wrapperEl.parentElement.getBoundingClientRect().width < J.c,
+						const e = this.wrapperEl.parentElement.getBoundingClientRect().width < V.c,
 							t = this.getWrapperHeight();
 						e === this.state.breakOut && t === this.state.wrapperHeight || O.a.write(() => {
 							this.setState({
@@ -2044,7 +2044,7 @@
 				getWrapperHeight() {
 					if (!this.textAreaRef) return;
 					const e = Object(l.findDOMNode)(this.textAreaRef);
-					return e instanceof Element ? e.getBoundingClientRect().height + fe + _e + J.n : void 0
+					return e instanceof Element ? e.getBoundingClientRect().height + fe + ge + V.n : void 0
 				}
 				render() {
 					const {
@@ -2076,7 +2076,7 @@
 						isUserTyping: B
 					} = this.state, z = Object(K.a)(l), N = c.draftType === oe.c.edit;
 					return d.a.createElement("div", {
-						"data-test-id": V.b,
+						"data-test-id": J.b,
 						className: Object(U.a)(ie.a.Wrapper, s, {
 							[ie.a.isTopLevelComment]: j,
 							[ie.a.mExpanded]: w,
@@ -2143,7 +2143,7 @@
 						sizePx: 12
 					})))), d.a.createElement(be, {
 						onClick: this.props.helpModalToggled
-					})))), F && Object(C.c)(m), e === z && d.a.createElement(_.a, {
+					})))), F && Object(C.c)(m), e === z && d.a.createElement(g.a, {
 						actionText: o.fbt._("Discard", null, {
 							hk: "1kJ5PR"
 						}),
@@ -2154,7 +2154,7 @@
 						onConfirm: () => this.cancelForm(),
 						toggleModal: n,
 						trackClick: () => {}
-					}), e === g.b && d.a.createElement(g.a, {
+					}), e === _.b && d.a.createElement(_.a, {
 						withOverlay: !0
 					}), e === p.s && d.a.createElement(f.a, {
 						onSubmit: this.onSubmit,
@@ -2166,7 +2166,7 @@
 					}))
 				}
 			}
-			t.b = ge(xe)
+			t.b = _e(xe)
 		},
 		"./src/reddit/components/CommentCreation/NavigationModule/index.ts": function(e, t, n) {
 			"use strict";
@@ -2270,13 +2270,13 @@
 					screen: b.Z(e),
 					subreddit: b.hb(e)
 				}),
-				_ = e => t => ({
+				g = e => t => ({
 					action: h.c.VIEW,
 					noun: "modal",
 					correlationId: e,
 					...f(t)
 				}),
-				g = e => t => ({
+				_ = e => t => ({
 					action: h.c.CLICK,
 					noun: "submit",
 					correlationId: e,
@@ -2312,7 +2312,7 @@
 					}
 				}
 				componentDidMount() {
-					this.props.modalSeen(), this.props.sendEvent(_(this.state.correlationId))
+					this.props.modalSeen(), this.props.sendEvent(g(this.state.correlationId))
 				}
 				render() {
 					return s.a.createElement(u.e, null, s.a.createElement(u.i, null, s.a.createElement(y.a, null, s.a.createElement(u.q, null, E._("Are you sure you want to post that?", null, {
@@ -2332,7 +2332,7 @@
 						hk: "3nGNI7"
 					})), s.a.createElement(u.r, {
 						onClick: () => {
-							this.props.sendEvent(g(this.state.correlationId)), this.props.continue()
+							this.props.sendEvent(_(this.state.correlationId)), this.props.continue()
 						},
 						"data-redditstyle": !0
 					}, E._("Comment", null, {
@@ -2366,19 +2366,19 @@
 				h = n("./src/reddit/components/ContributorRequestFlow/ContributorRequestButton/index.tsx"),
 				b = n("./src/reddit/icons/fonts/Comment/index.tsx"),
 				f = n("./src/reddit/models/SubredditRestrictions/index.ts"),
-				_ = n("./src/reddit/components/CommentCreation/RequestToCommentForm/index.m.less"),
-				g = n.n(_);
+				g = n("./src/reddit/components/CommentCreation/RequestToCommentForm/index.m.less"),
+				_ = n.n(g);
 			const {
 				fbt: x
-			} = n("./node_modules/fbt/lib/FbtPublic.js"), C = p.a.div("RequestBox", g.a);
+			} = n("./node_modules/fbt/lib/FbtPublic.js"), C = p.a.div("RequestBox", _.a);
 			var y = () => i.a.createElement(C, null, i.a.createElement(b.a, {
-					className: g.a.commentIcon
+					className: _.a.commentIcon
 				}), i.a.createElement("div", {
-					className: g.a.commentText
+					className: _.a.commentText
 				}, x._("Only approved users can comment in this community.", null, {
 					hk: "3oqccc"
 				})), i.a.createElement(h.default, {
-					className: g.a.requestButton,
+					className: _.a.requestButton,
 					eventSource: f.b.Comment
 				})),
 				E = n("./node_modules/fbt/lib/FbtPublic.js"),
@@ -2407,8 +2407,8 @@
 				K = n.n(q);
 			const G = 5,
 				X = "ProwerupsEmoji--FirstUploadStimulus",
-				J = 100;
-			const V = Object(c.c)({
+				V = 100;
+			const J = Object(c.c)({
 				emotes: (e, t) => {
 					let {
 						subredditId: n
@@ -2442,7 +2442,7 @@
 					})
 				}
 			});
-			var Z = Object(a.b)(V)((function(e) {
+			var Z = Object(a.b)(J)((function(e) {
 					const {
 						controlsState: t,
 						emotes: n,
@@ -2457,7 +2457,7 @@
 							Object(N.T)(z.b.EMOJI_PROMO_TOOLTIP_DISPLAY_COUNT_PER_SUBREDDIT, l), b(Object(P.f)({
 								tooltipId: X
 							}))
-						}, J)
+						}, V)
 					}, [b, p, l]);
 					const f = d ? E.fbt._("Add Emoji", null, {
 						hk: "3EV4aU"
@@ -2539,12 +2539,12 @@
 					userCanUseGifs: b
 				} = e, f = Object(A.a)(s);
 				u && Object(A.b)(f);
-				const _ = null == n ? void 0 : n.id,
-					g = Object(a.e)(e => void 0 !== _ && Object(W.b)(e, {
-						subredditId: _
+				const g = null == n ? void 0 : n.id,
+					_ = Object(a.e)(e => void 0 !== g && Object(W.b)(e, {
+						subredditId: g
 					})) && h,
-					x = Object(a.e)(e => void 0 !== _ && ie(e, {
-						subredditId: _
+					x = Object(a.e)(e => void 0 !== g && ie(e, {
+						subredditId: g
 					})) && b;
 				return i.a.createElement(M.a, {
 					className: t,
@@ -2553,14 +2553,14 @@
 					editorType: I.a.Comment
 				}, i.a.createElement("div", {
 					className: se.a.powerupButtons
-				}, g && i.a.createElement(Z, {
+				}, _ && i.a.createElement(Z, {
 					controlsState: f,
 					subredditId: n && n.id,
 					onEmoteButtonClick: c
 				}), x && i.a.createElement(ee, {
 					controlsState: f,
 					onGifButtonClick: d
-				})), (g || x) && i.a.createElement(re, null), Object(F.g)(F.f, f, s, r, m), i.a.createElement(F.a, {
+				})), (_ || x) && i.a.createElement(re, null), Object(F.g)(F.f, f, s, r, m), i.a.createElement(F.a, {
 					controlsState: f,
 					trackOnClick: m,
 					onLinkButtonClick: p
@@ -2580,8 +2580,8 @@
 				he = n("./src/reddit/components/CommentCreation/ExpandingFormDiv.tsx"),
 				be = n("./src/reddit/components/CommentCreation/FormFooter/index.tsx"),
 				fe = n("./src/reddit/components/CommentCreation/getCancelModalId.ts"),
-				_e = n("./src/reddit/models/PostCreationForm/index.ts"),
-				ge = n("./src/reddit/models/PostDraft/index.ts"),
+				ge = n("./src/reddit/models/PostCreationForm/index.ts"),
+				_e = n("./src/reddit/models/PostDraft/index.ts"),
 				xe = n("./src/reddit/actions/modal.ts"),
 				Ce = n("./src/reddit/components/CommentCreation/NavigationModule/index.ts"),
 				ye = n("./src/reddit/components/CommentCreation/ToxicityWarningModal.tsx"),
@@ -2714,15 +2714,15 @@
 							w.a.read(this.detectBreakout)
 						})
 					}, this.cancelForm = () => {
-						this.editor && this.props.draftType === ge.c.replyToPost && this.setState({
+						this.editor && this.props.draftType === _e.c.replyToPost && this.setState({
 							rteState: Ee.a.createInitial()
 						}), this.props.onCancel()
-					}, this.shouldConfirmCancel = () => this.hasContent() && this.state.hasChanged && this.props.draftType === ge.c.edit, this.onCancel = () => {
+					}, this.shouldConfirmCancel = () => this.hasContent() && this.state.hasChanged && this.props.draftType === _e.c.edit, this.onCancel = () => {
 						this.shouldConfirmCancel() ? this.props.cancelModalToggled() : this.cancelForm()
 					}, this.onSubmit = () => {
 						this.props.onSubmit({
 							rteState: this.state.rteState,
-							commentMode: _e.i.RICH_TEXT,
+							commentMode: ge.i.RICH_TEXT,
 							draftType: this.props.draftType,
 							validate: this.props.showWarningModal
 						})
@@ -2740,7 +2740,7 @@
 					} = e;
 					this.state = {
 						breakOut: !1,
-						cancelModalText: n === ge.c.edit ? E.fbt._("Are you sure that you want to discard your edits?", null, {
+						cancelModalText: n === _e.c.edit ? E.fbt._("Are you sure that you want to discard your edits?", null, {
 							hk: "3RHatI"
 						}) : E.fbt._("Are you sure that you want to discard your comment?", null, {
 							hk: "38Df9h"
@@ -2789,8 +2789,8 @@
 						isLoggedIn: h,
 						isLoginModalOpened: b,
 						isRegisterModalOpened: f,
-						modalSeen: _,
-						pending: g,
+						modalSeen: g,
+						pending: _,
 						postId: x,
 						submitButtonText: C,
 						isTopLevelComment: y,
@@ -2803,7 +2803,7 @@
 						breakOut: F,
 						formHeight: A,
 						rteState: P
-					} = this.state, B = Object(fe.a)(a), z = r.draftType === ge.c.edit, N = c !== ge.c.replyToPost;
+					} = this.state, B = Object(fe.a)(a), z = r.draftType === _e.c.edit, N = c !== _e.c.replyToPost;
 					return i.a.createElement("div", {
 						className: Object(O.a)(Ie.a.FormWrapper, n, {
 							[Ie.a.isTopLevelComment]: y,
@@ -2847,10 +2847,10 @@
 							hk: "4or1AH"
 						}),
 						postId: x,
-						readOnly: g,
+						readOnly: _,
 						trackToolbarClick: this.onTrackToolbarClick,
 						toolbarPosition: "bottom",
-						renderToolbar: this.getToolbarRenderer(N, a, !h && u, m, g, C)
+						renderToolbar: this.getToolbarRenderer(N, a, !h && u, m, _, C)
 					})), this.state.showError ? Object(me.c)(d) : null, e === B && i.a.createElement(S.a, {
 						actionText: E.fbt._("Discard", null, {
 							hk: "1kJ5PR"
@@ -2864,7 +2864,7 @@
 						trackClick: v.a
 					}), e === l.s && i.a.createElement(ye.a, {
 						onSubmit: this.onSubmit,
-						modalSeen: _,
+						modalSeen: g,
 						withOverlay: !0
 					}), i.a.createElement(Ce.a, {
 						editKey: a,
@@ -2878,8 +2878,8 @@
 				Ke = n("./src/reddit/models/User/index.ts"),
 				Ge = n("./src/reddit/selectors/experiments/commentBox.ts"),
 				Xe = n("./src/reddit/selectors/experiments/antievil/index.tsx"),
-				Je = n("./src/reddit/selectors/posts.ts");
-			const Ve = Object(ke.u)(),
+				Ve = n("./src/reddit/selectors/posts.ts");
+			const Je = Object(ke.u)(),
 				Ze = Object(c.c)({
 					activeModalId: je.a,
 					contributorRequestPending: (e, t) => {
@@ -2901,13 +2901,13 @@
 						} = t;
 						return Object(ke.db)(e, n, f.e.Comment)
 					},
-					postAuthorIsBlocked: Je.w,
+					postAuthorIsBlocked: Ve.w,
 					isTrueblockPCBlockeeEnabled: Xe.d
 				}),
 				Qe = Object(a.b)(Ze, (e, t) => ({
 					onMount: () => e(d.a(t.draftKey)),
 					onCancel: () => {
-						t.draftType === ge.c.edit ? e(l.d({
+						t.draftType === _e.c.edit ? e(l.d({
 							commentId: t.parentCommentId,
 							commentsPageKey: t.commentsPageKey
 						})) : e(l.b({
@@ -3012,10 +3012,10 @@
 							onSwitchMode: this.onSwitchMode,
 							showWarningModal: this.state.showWarningModal
 						};
-					return e.contributorRequestPending ? i.a.createElement(qe.a, null) : e.showContributorRequestFlow ? i.a.createElement(y, null) : e.draft.commentMode === _e.i.RICH_TEXT ? i.a.createElement(Ue, n) : i.a.createElement(m.b, n)
+					return e.contributorRequestPending ? i.a.createElement(qe.a, null) : e.showContributorRequestFlow ? i.a.createElement(y, null) : e.draft.commentMode === ge.i.RICH_TEXT ? i.a.createElement(Ue, n) : i.a.createElement(m.b, n)
 				}
 			}
-			t.default = Ve(Qe(Ye))
+			t.default = Je(Qe(Ye))
 		},
 		"./src/reddit/components/CommentSort/CommentSort.m.less": function(e, t, n) {
 			e.exports = {
@@ -3062,7 +3062,7 @@
 		"./src/reddit/components/CommentSort/index.tsx": function(e, t, n) {
 			"use strict";
 			n.d(t, "a", (function() {
-				return V
+				return J
 			}));
 			var o = n("./node_modules/fbt/lib/FbtPublic.js"),
 				s = n("./node_modules/react/index.js"),
@@ -3078,13 +3078,13 @@
 				h = n("./src/reddit/actions/toaster.ts"),
 				b = n("./src/lib/makeApiRequest/index.ts"),
 				f = n("./src/lib/omitHeaders/index.ts"),
-				_ = n("./src/reddit/constants/headers.ts"),
-				g = n("./src/reddit/models/Toast/index.ts");
+				g = n("./src/reddit/constants/headers.ts"),
+				_ = n("./src/reddit/models/Toast/index.ts");
 			const x = (e, t) => async (n, s, r) => {
 				let {
 					apiContext: i
 				} = r;
-				const a = await (async (e, t, n) => Object(b.a)(Object(f.a)(e, [_.a]), {
+				const a = await (async (e, t, n) => Object(b.a)(Object(f.a)(e, [g.a]), {
 						endpoint: `${e.apiUrl}/api/set_suggested_sort/`,
 						method: d.jb.POST,
 						data: {
@@ -3108,12 +3108,12 @@
 					});
 					n(h.f({
 						id: l,
-						kind: g.b.SuccessCommunityGreen,
+						kind: _.b.SuccessCommunityGreen,
 						text: s
 					}))
 				} else n(h.f({
 					id: c,
-					kind: g.b.Error,
+					kind: _.b.Error,
 					text: o.fbt._("Try again later", null, {
 						hk: "1Lqlj2"
 					}),
@@ -3246,8 +3246,8 @@
 					})))
 				}
 			}
-			var J = X;
-			const V = "CommentSort--SortPicker",
+			var V = X;
+			const J = "CommentSort--SortPicker",
 				Z = "CommentSort--HighlightPicker",
 				Q = "CommentSort--Tooltip",
 				Y = Object(k.a)(O.a),
@@ -3261,7 +3261,7 @@
 						})
 					},
 					contestModeModalIsOpen: Object(P.b)("CommentSort--ContestMode--Modal"),
-					dropdownIsOpen: Object(L.b)(V),
+					dropdownIsOpen: Object(L.b)(J),
 					highlightIsOpen: Object(L.b)(Z),
 					hasModeratorPostPermissions: (e, t) => {
 						let {
@@ -3298,7 +3298,7 @@
 							sort: t
 						})),
 						onOpenDropdown: () => e(Object(l.h)({
-							tooltipId: V
+							tooltipId: J
 						})),
 						onOpenHighlightDropdown: t => {
 							e(Object(l.h)({
@@ -3349,8 +3349,8 @@
 						location: h,
 						post: b,
 						postPermalink: f,
-						selectedHighlightSort: _,
-						showCommentHighlighter: g,
+						selectedHighlightSort: g,
+						showCommentHighlighter: _,
 						sort: x,
 						suggestedSort: k,
 						showTooltip: v,
@@ -3370,7 +3370,7 @@
 					}), H = S && !m;
 					return r.a.createElement("div", {
 						className: Object(c.a)(t, U.a.container, {
-							[U.a.hideCommentSort]: !g && H
+							[U.a.hideCommentSort]: !_ && H
 						}),
 						ref: a
 					}, r.a.createElement("div", {
@@ -3381,7 +3381,7 @@
 						className: Object(c.a)(U.a.SortPicker, U.a.Row),
 						textClassName: U.a.SortOptionDropdownText,
 						displayText: `${o.fbt._("Sort by",null,{hk:"E6T9r"})}: ${z}`,
-						id: V,
+						id: J,
 						noHover: !0,
 						skipRoleAttr: !0,
 						onClick: this.onOpenDropdownClick
@@ -3390,7 +3390,7 @@
 						onClick: this.onOpenDropdownClick
 					})), r.a.createElement(Y, {
 						isOpen: i,
-						tooltipId: V
+						tooltipId: J
 					}, [d.t.CONFIDENCE, d.t.TOP, d.t.NEW, d.t.CONTROVERSIAL, d.t.OLD, d.t.QA].map(e => {
 						const t = n || f,
 							o = Object(T.b)(t),
@@ -3443,14 +3443,14 @@
 					}), r.a.createElement(j.a, {
 						className: U.a.ToggleSwitch,
 						on: S
-					}))), g && r.a.createElement("div", {
+					}))), _ && r.a.createElement("div", {
 						className: U.a.containerRow
-					}, r.a.createElement(J, {
+					}, r.a.createElement(V, {
 						changeHighlightSort: e,
 						highlightIsOpen: u,
 						id: Z,
 						onOpen: this.onOpenHighlightSelector,
-						selectedSort: _,
+						selectedSort: g,
 						trackHighlight: D
 					})), s && r.a.createElement(C.a, {
 						actionText: L,
@@ -3487,7 +3487,7 @@
 				h = n("./src/reddit/models/SubredditRestrictions/index.ts"),
 				b = n("./src/reddit/components/ContributorRequestFlow/ContributorRequestButton/index.m.less"),
 				f = n.n(b);
-			const _ = () => ({
+			const g = () => ({
 				[h.b.Comment]: o.fbt._("Request to Comment", null, {
 					hk: "3KRhw5"
 				}),
@@ -3501,7 +3501,7 @@
 					hk: "1nK8Vv"
 				})
 			});
-			class g extends r.a.Component {
+			class _ extends r.a.Component {
 				constructor() {
 					super(...arguments), this.onRequest = () => {
 						const {
@@ -3528,13 +3528,13 @@
 						disabled: s
 					}, s ? o.fbt._("Request Pending", null, {
 						hk: "hVswi"
-					}) : _()[e])
+					}) : g()[e])
 				}
 			}
 			t.default = Object(i.b)(null, e => ({
 				openContributorRequestModal: () => e(Object(c.i)(l.a.CONTRIBUTOR_REQUEST)),
 				openRequestToJoinSubredditModal: () => e(Object(c.i)(l.a.CONTRIBUTOR_REQUEST_PRIVATE_SUREDDIT))
-			}))(Object(d.c)(g))
+			}))(Object(d.c)(_))
 		},
 		"./src/reddit/components/InfoBanners/BannerBase/index.m.less": function(e, t, n) {
 			e.exports = {
@@ -3675,14 +3675,14 @@
 				h = n("./src/reddit/controls/Button/index.tsx"),
 				b = n("./src/reddit/layout/row/Inline/index.tsx"),
 				f = n("./src/reddit/layout/row/RightAlign/index.tsx"),
-				_ = n("./src/reddit/components/MarkdownHelp/index.m.less"),
-				g = n.n(_),
+				g = n("./src/reddit/components/MarkdownHelp/index.m.less"),
+				_ = n.n(g),
 				x = n("./src/lib/lessComponent.tsx");
 			const C = "Markdown_Help__Modal",
-				y = x.a.wrapped(b.a, "Section", g.a),
-				E = x.a.div("Container", g.a),
-				k = x.a.table("Table", g.a),
-				v = x.a.p("P", g.a);
+				y = x.a.wrapped(b.a, "Section", _.a),
+				E = x.a.div("Container", _.a),
+				k = x.a.table("Table", _.a),
+				v = x.a.p("P", _.a);
 			class O extends r.a.Component {
 				render() {
 					const e = o.fbt._("italics", null, {
@@ -3709,7 +3709,7 @@
 							hk: "w08E2"
 						})
 					}), r.a.createElement(E, null, r.a.createElement(k, {
-						className: g.a.helpTable
+						className: _.a.helpTable
 					}, r.a.createElement("tr", null, r.a.createElement(d.s, null, r.a.createElement(d.j, null, o.fbt._("Type this:", null, {
 						hk: "VDjXQ"
 					}))), r.a.createElement(d.s, null, r.a.createElement(d.j, null, o.fbt._("to get this:", null, {
@@ -3773,8 +3773,8 @@
 				h = n("./src/reddit/constants/keycodes.ts"),
 				b = n("./src/reddit/controls/Button/index.tsx"),
 				f = n("./src/reddit/controls/LoadingIcon/index.tsx"),
-				_ = n("./src/reddit/models/PostCreationForm/index.ts"),
-				g = n("./src/reddit/selectors/activeModalId.ts"),
+				g = n("./src/reddit/models/PostCreationForm/index.ts"),
+				_ = n("./src/reddit/selectors/activeModalId.ts"),
 				x = n("./src/reddit/selectors/editorContent.ts"),
 				C = n("./src/reddit/components/PostCreationForm/MarkdownEditor/index.m.less"),
 				y = n.n(C),
@@ -3792,7 +3792,7 @@
 				j = E.a.wrapped(d.a, "MarkdownHelpButton", y.a),
 				T = E.a.div("Toolbar", y.a),
 				S = Object(a.c)({
-					activeModalId: g.a,
+					activeModalId: _.a,
 					isConverting: e => Object(x.a)(e)
 				}),
 				R = Object(i.b)(S, (e, t) => ({
@@ -3828,9 +3828,9 @@
 						} = e;
 						(t || n) && o === h.a.Enter && this.props.onSubmit()
 					}, this.handleSwitchModeClick = () => {
-						this.props.value ? this.props.switchToRTEModalToggled() : this.props.onSwitchEditorMode(_.i.RICH_TEXT, this.props.value)
+						this.props.value ? this.props.switchToRTEModalToggled() : this.props.onSwitchEditorMode(g.i.RICH_TEXT, this.props.value)
 					}, this.handleSwitchToRTEConfirm = () => {
-						this.props.switchToRTEModalToggled(), this.props.onSwitchEditorMode(_.i.RICH_TEXT, this.props.value)
+						this.props.switchToRTEModalToggled(), this.props.onSwitchEditorMode(g.i.RICH_TEXT, this.props.value)
 					}, this.setTextAreaRef = e => this.textAreaRef = e, this.state = {
 						isFocused: !1
 					}
@@ -3934,7 +3934,7 @@
 				h = n("./src/lib/lessComponent.tsx");
 			const b = h.a.wrapped(c.l, "PrimaryButton", p.a),
 				f = h.a.wrapped(i.p, "ModalText", p.a);
-			class _ extends s.a.PureComponent {
+			class g extends s.a.PureComponent {
 				constructor() {
 					super(...arguments), this.handleEscapeKey = e => {
 						e.keyCode === a.a.Escape && this.props.onClose()
@@ -3964,7 +3964,7 @@
 					}) : this.props.primaryButtonText)))
 				}
 			}
-			t.a = Object(r.a)(_)
+			t.a = Object(r.a)(g)
 		},
 		"./src/reddit/components/PostCreationForm/Prompt/index.tsx": function(e, t, n) {
 			"use strict";
@@ -4083,8 +4083,8 @@
 				h = n("./src/reddit/models/PostCreationForm/index.ts"),
 				b = n("./src/reddit/models/PostRequirements/index.ts"),
 				f = n("./src/reddit/selectors/platform.ts"),
-				_ = n("./src/reddit/selectors/postCreations.ts"),
-				g = n("./src/reddit/actions/postCreation/editing.ts"),
+				g = n("./src/reddit/selectors/postCreations.ts"),
+				_ = n("./src/reddit/actions/postCreation/editing.ts"),
 				x = n("./src/reddit/actions/postCreation/editorContent.ts"),
 				C = n("./src/reddit/components/CommentCreation/NavigationModule/index.ts"),
 				y = n("./src/lib/constants/index.ts"),
@@ -4134,22 +4134,22 @@
 				L = P.a.wrapped(F.a, "LoadingIcon", A.a),
 				W = Object(T.u)(),
 				H = Object(l.c)({
-					destSubreddit: _.h,
-					editorMode: _.i,
-					errorMessages: _.j,
-					hasError: _.k,
-					markdownDraft: _.l,
-					pending: _.ab,
-					postRequirements: _.pb,
-					rteDraft: _.m,
+					destSubreddit: g.h,
+					editorMode: g.i,
+					errorMessages: g.j,
+					hasError: g.k,
+					markdownDraft: g.l,
+					pending: g.ab,
+					postRequirements: g.pb,
+					rteDraft: g.m,
 					subreddit: T.r,
 					uploads: e => e.uploads,
 					user: D.k,
 					isCommentsPage: f.f
 				}),
 				U = Object(c.b)(H, (e, t) => ({
-					onCancel: t => e(g.b(t)),
-					onSubmitDraft: t => e(g.c(t)),
+					onCancel: t => e(_.b(t)),
+					onSubmitDraft: t => e(_.c(t)),
 					onSuccess: t => e(Object(d.b)(t)),
 					onToggleEditorMode: (t, n) => e(x.d(h.h.POST_EDITING, t, n))
 				}));
@@ -4260,8 +4260,8 @@
 					} = this.props, {
 						markdownBody: p,
 						markdownPostDraftChanged: f,
-						richtextPostDraftChanged: _,
-						rteState: g
+						richtextPostDraftChanged: g,
+						rteState: _
 					} = this.state, x = d && d.bodyRestrictionPolicy === b.a.Required ? o.fbt._("Text (required)", null, {
 						hk: "E1dIP"
 					}) : o.fbt._("Text (optional)", null, {
@@ -4270,7 +4270,7 @@
 					n && !E.length && E.push(o.fbt._("Something went wrong. Just don't panic.", null, {
 						hk: "FsWrq"
 					}));
-					const k = !j.a.isAllMediaUploaded(g, l);
+					const k = !j.a.isAllMediaUploaded(_, l);
 					return a.a.createElement(a.a.Fragment, null, a.a.createElement(z, null, e === h.i.RICH_TEXT ? a.a.createElement(w.a, {
 						allowMediaUploads: !0,
 						className: Object(u.a)(A.a.Editor, {
@@ -4279,7 +4279,7 @@
 						destSubreddit: this.props.destSubreddit,
 						editorType: R.a.Post,
 						initialHeight: this.state.editorHeight,
-						rteState: g,
+						rteState: _,
 						onChange: this.onRichPostChange,
 						onEditorResize: this.onEditorResize,
 						onSubmit: this.onSubmit,
@@ -4315,7 +4315,7 @@
 						messages: E
 					}), a.a.createElement(C.a, {
 						editKey: c.id,
-						hasValue: !(!f && !_),
+						hasValue: !(!f && !g),
 						isPostEdit: !0
 					})), a.a.createElement(m.a, {
 						postId: c.id,
@@ -4529,8 +4529,8 @@
 					isPresenceUserPrefEnabled: d.V,
 					shouldHideNSFW: d.F
 				}),
-				_ = Object(i.b)(f);
-			t.a = _(e => {
+				g = Object(i.b)(f);
+			t.a = g(e => {
 				const {
 					currentUser: t,
 					shouldShowPresenceIndicator: n,
@@ -4755,9 +4755,9 @@
 			})), n.d(t, "c", (function() {
 				return f
 			})), n.d(t, "d", (function() {
-				return _
-			})), n.d(t, "g", (function() {
 				return g
+			})), n.d(t, "g", (function() {
+				return _
 			})), n.d(t, "k", (function() {
 				return x
 			})), n.d(t, "i", (function() {
@@ -4842,10 +4842,10 @@
 				}), f = e => Object(d.a)({
 					noun: "edit",
 					...l(e)
-				}), _ = e => Object(d.a)({
+				}), g = e => Object(d.a)({
 					noun: "save_edit",
 					...l(e)
-				}), g = (e, t) => n => {
+				}), _ = (e, t) => n => {
 					const o = "image_upload" === e || "video_upload" === e;
 					return {
 						...l(n),
@@ -5098,29 +5098,29 @@
 					if (Object(i.a)(e)) return !1;
 					return Object(s.c)(e, {
 						experimentEligibilitySelector: r.e,
-						experimentName: o.Uf
-					}) === o.yd
+						experimentName: o.Vf
+					}) === o.zd
 				},
 				c = e => {
 					return Object(s.c)(e, {
 						experimentEligibilitySelector: r.e,
-						experimentName: o.Vf
-					}) === o.yd
+						experimentName: o.Wf
+					}) === o.zd
 				},
 				d = e => {
 					if (Object(i.a)(e)) return !1;
 					const t = Object(s.c)(e, {
 						experimentEligibilitySelector: r.e,
-						experimentName: o.Tf
+						experimentName: o.Uf
 					});
-					return t === o.Jf.TypingIndicators || t === o.Jf.IndicatorsPlusCTA
+					return t === o.Kf.TypingIndicators || t === o.Kf.IndicatorsPlusCTA
 				},
 				l = e => {
 					if (Object(i.a)(e)) return !1;
 					const t = Object(r.d)(e, {
-						experimentName: o.Tf
+						experimentName: o.Uf
 					});
-					return (null == t ? void 0 : t.variant) === o.Jf.IndicatorsPlusCTA
+					return (null == t ? void 0 : t.variant) === o.Kf.IndicatorsPlusCTA
 				}
 		},
 		"./src/redditGQL/operations/CommentToxicity.json": function(e) {
@@ -5137,4 +5137,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RichTextEditor.1bdb9c1681404f2363be.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RichTextEditor.6d8e8f36ed395e4ff146.js.map

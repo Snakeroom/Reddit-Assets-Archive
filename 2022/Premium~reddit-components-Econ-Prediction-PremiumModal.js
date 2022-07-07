@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Premium~reddit-components-Econ-Prediction-PremiumModal.89e80032aead082eec71.js
-// Retrieved at 6/30/2022, 3:30:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Premium~reddit-components-Econ-Prediction-PremiumModal.7ea254ced5ec4b35cf9d.js
+// Retrieved at 7/7/2022, 2:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Premium~reddit-components-Econ-Prediction-PremiumModal"], {
 		"./node_modules/@stripe/react-stripe-js/dist/react-stripe.umd.js": function(e, t, r) {
@@ -2415,7 +2415,7 @@
 				}),
 				R = Object(s.b)(L, (e, t) => ({
 					onManagePremium: () => e(Object(c.b)("/settings/premium")),
-					onOpenLoginModal: () => e(Object(k.i)()),
+					onOpenLoginModal: () => e(Object(k.openLoginModal)()),
 					onPurchasePremium: (t, r) => e(Object(w.openWithBlob)({
 						correlationId: r,
 						packageId: t
@@ -2676,4 +2676,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Premium~reddit-components-Econ-Prediction-PremiumModal.89e80032aead082eec71.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Premium~reddit-components-Econ-Prediction-PremiumModal.7ea254ced5ec4b35cf9d.js.map

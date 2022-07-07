@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/MultiredditCreateModal.44319c10be037763e63f.js
-// Retrieved at 7/1/2022, 5:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/MultiredditCreateModal.beef211a47f34f60cd5d.js
+// Retrieved at 7/7/2022, 2:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["MultiredditCreateModal"], {
 		"./src/reddit/actions/multireddit/index.ts": function(e, t, r) {
@@ -11,11 +11,11 @@
 			})), r.d(t, "morePostsPending", (function() {
 				return D
 			})), r.d(t, "moreOfMyMultiRequested", (function() {
-				return A
-			})), r.d(t, "myMultiredditsPending", (function() {
 				return U
-			})), r.d(t, "myMultiredditsReceived", (function() {
+			})), r.d(t, "myMultiredditsPending", (function() {
 				return z
+			})), r.d(t, "myMultiredditsReceived", (function() {
+				return A
 			})), r.d(t, "myMultiredditsRequested", (function() {
 				return W
 			})), r.d(t, "createFailure", (function() {
@@ -166,7 +166,7 @@
 			const R = Object(c.a)(M.q),
 				G = Object(c.a)(M.r),
 				D = Object(c.a)(M.s),
-				A = e => async (t, r, i) => {
+				U = e => async (t, r, i) => {
 					const {
 						gqlContext: s
 					} = i, {
@@ -217,7 +217,7 @@
 						...C.body,
 						...Object(k.a)(c, b, S)
 					}))
-				}, U = Object(c.a)(M.t), z = Object(c.a)(M.u), W = function(e) {
+				}, z = Object(c.a)(M.t), A = Object(c.a)(M.u), W = function(e) {
 					let t = arguments.length > 1 && void 0 !== arguments[1] && arguments[1];
 					return async (r, i, s) => {
 						let {
@@ -227,14 +227,14 @@
 						const a = i();
 						if (!Object(I.k)(a)) return;
 						if (!e && Object(w.h)(a) || Object(w.i)(a)) return;
-						r(U());
+						r(z());
 						const o = await y(n(), {
 							includeSources: t
 						});
 						if (o.ok) {
 							const e = o.body.data.identity.allMultireddits.edges.map(e => e.node),
 								t = Object(F.b)(e);
-							r(z({
+							r(A({
 								...t,
 								multiredditsModelsState: a.multireddits.models
 							}))
@@ -307,7 +307,7 @@
 							queryParams: O
 						} = c,
 						j = Object(l.a)(x, p, O),
-						g = b.A in O && O[b.A].toUpperCase() || "",
+						g = b.C in O && O[b.C].toUpperCase() || "",
 						y = a.ic[g] || !1,
 						_ = Object(I.k)(s);
 					(h || _ && _.displayText) && await e(Object(m.multiredditFeedRequested)(j, (h || _.displayText).toLowerCase(), f.toLowerCase(), {
@@ -711,7 +711,7 @@
 						g = f.listings.postOrder.ids[O],
 						C = f.listings.postOrder.api.error[O],
 						k = f.listings.postOrder.api.pending[O],
-						N = b.A in e.queryParams && e.queryParams[b.A].toUpperCase() || "",
+						N = b.C in e.queryParams && e.queryParams[b.C].toUpperCase() || "",
 						E = N in l.ic && l.ic[N];
 					if (k || g && !C && !t) return void(g && (r(u.m({
 						title: Object(_.f)(i(), m)
@@ -1309,4 +1309,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/MultiredditCreateModal.44319c10be037763e63f.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/MultiredditCreateModal.beef211a47f34f60cd5d.js.map

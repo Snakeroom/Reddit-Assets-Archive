@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Frontpage~ModListing.d1eba5fa958b9d5c76d7.js
-// Retrieved at 7/7/2022, 11:50:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Frontpage~ModListing.d936677dff1a54f64943.js
+// Retrieved at 7/7/2022, 2:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Frontpage~ModListing"], {
 		"./src/reddit/actions/focusedVerticals/index.ts": function(e, t, n) {
@@ -657,8 +657,8 @@
 				}).apply(this, arguments)
 			}
 			const z = "ListingSort--SortPicker",
-				A = Object(y.a)(R.a.wrapped(C.a, "Dropdown", D.a)),
-				B = R.a.wrapped(P.a, "ListingSortIcon", D.a),
+				B = Object(y.a)(R.a.wrapped(C.a, "Dropdown", D.a)),
+				A = R.a.wrapped(P.a, "ListingSortIcon", D.a),
 				F = (R.a.wrapped(E.b, "DropdownTriangle", D.a), R.a.div("Title", D.a)),
 				H = R.a.wrapped(e => s.a.createElement(O.b, W({}, e, {
 					noHover: !0,
@@ -711,9 +711,9 @@
 					displayText: Object(_.a)(e.sort),
 					id: e.dropdownId || z,
 					showDropdownTriangle: !0
-				}, s.a.createElement(B, {
+				}, s.a.createElement(A, {
 					sort: e.sort
-				}))), s.a.createElement(k.a.Consumer, null, t => s.a.createElement(A, W({
+				}))), s.a.createElement(k.a.Consumer, null, t => s.a.createElement(B, W({
 					className: e.dropdownClassName,
 					isOpen: e.dropdownIsOpen,
 					tooltipId: e.dropdownId || z
@@ -745,7 +745,7 @@
 						},
 						isSelected: e.sort === t,
 						key: t
-					}, s.a.createElement(B, {
+					}, s.a.createElement(A, {
 						className: e.rowIconClassName,
 						sort: t
 					}))
@@ -1217,7 +1217,7 @@
 							return e.urlParams.sort || Object(l.J)(e) || (n = ye.a.join(n, t)), n
 						})(e.pageLayer, e.listingSort),
 						r = Object(p.a)(n, {
-							[Y.A]: t
+							[Y.C]: t
 						}),
 						o = r.split("?")[0],
 						i = `${r.replace(o+"?","")}`;
@@ -1257,13 +1257,13 @@
 			const Re = new Set([h.W.CONTROVERSIAL, h.W.TOP]),
 				We = new Set([h.W.CONTROVERSIAL, h.W.RISING]),
 				ze = new Set([h.W.CONTROVERSIAL]),
-				Ae = "ListingSort--Overflow",
-				Be = Object(l.u)({
+				Be = "ListingSort--Overflow",
+				Ae = Object(l.u)({
 					isFrontpage: l.A,
 					isProfilePage: l.J,
 					pageLayer: e => e
 				}),
-				Fe = Object(f.a)((e, t) => t.sortOptions, (e, t) => t.isFrontpage, N.a, I.k, l.F, j.a, Ie.i, (e, t, n, r, s, o, a) => {
+				Fe = Object(f.a)((e, t) => t.sortOptions, (e, t) => t.isFrontpage, N.a, I.k, l.F, j.a, Ie.j, (e, t, n, r, s, o, a) => {
 					if (e) return {
 						isPopularPage: s,
 						sortOptions: e,
@@ -1292,7 +1292,7 @@
 							className: Object(a.a)(Le.a.SortLink, e === t && Le.a.selected),
 							kind: je.b.InternalLink,
 							priority: je.c.Plain,
-							Icon: n => s.a.createElement(B, De({}, n, {
+							Icon: n => s.a.createElement(A, De({}, n, {
 								className: Object(a.a)(Le.a.SortIcon, n.className),
 								sort: e,
 								isFilled: e === t
@@ -1380,7 +1380,7 @@
 					}), u.length > 0 && s.a.createElement(q, De({}, this.props, {
 						className: Object(a.a)(Le.a.SortOverflow, e),
 						dropdownClassName: Le.a.Dropdown,
-						dropdownId: Ae,
+						dropdownId: Be,
 						rowClassName: Le.a.DropdownRow,
 						rowIconClassName: Le.a.DropdownRowIcon,
 						rowSelectedClassName: Le.a.DropdownRowSelected,
@@ -1388,13 +1388,13 @@
 						sortOptions: u
 					}), s.a.createElement("button", {
 						className: Le.a.SortOverflowButton,
-						id: Ae
+						id: Be
 					}, s.a.createElement(Te.a, {
 						name: "overflow_horizontal"
 					}))))
 				}
 			}
-			var Me = Be(Object(o.b)(Fe)(Object(d.c)(He))),
+			var Me = Ae(Object(o.b)(Fe)(Object(d.c)(He))),
 				Ge = n("./src/reddit/components/GeneralCleanup/SortViewBar/index.m.less"),
 				Ue = n.n(Ge);
 			const Ve = Object(l.u)({
@@ -1712,7 +1712,7 @@
 					}, r[t]) : null
 				};
 				if (e.isD2xPdpSideRailRecsEnabled) {
-					const t = e.d2xPdpSideRailRecsVariant === u.Jc.GreyRereddit ? e.reredditButtons : [];
+					const t = e.d2xPdpSideRailRecsVariant === u.Kc.GreyRereddit ? e.reredditButtons : [];
 					return s.a.createElement(E, {
 						reredditContent: t,
 						countryCode: e.countryCode
@@ -2608,7 +2608,7 @@
 				const p = Object(a.e)(e => e.subreddits.survey[n]),
 					h = Object(a.e)(e => e.subreddits.progressModule[n]),
 					b = Object(a.e)(u.a),
-					f = b !== d.De.NewModule;
+					f = b !== d.Ee.NewModule;
 				return (null === (s = null == h ? void 0 : h.cards) || void 0 === s ? void 0 : s.length) > 0 && f ? o.a.createElement(m, {
 					closeModuleOnMount: !!t && t !== l.g.Large,
 					subredditId: n,
@@ -2635,12 +2635,12 @@
 				i = n("./src/reddit/selectors/meta.ts"),
 				c = n("./node_modules/reselect/es/index.js");
 			const d = Object(c.a)(e => Object(s.c)(e, {
-					experimentEligibilitySelector: e => Object(i.g)(e) && Object(o.f)(e),
-					experimentName: r.nc
+					experimentEligibilitySelector: e => Object(i.h)(e) && Object(o.f)(e),
+					experimentName: r.oc
 				}), a.a),
 				l = Object(c.a)(e => Object(s.c)(e, {
-					experimentEligibilitySelector: e => !Object(i.g)(e) && Object(o.f)(e),
-					experimentName: r.mc
+					experimentEligibilitySelector: e => !Object(i.h)(e) && Object(o.f)(e),
+					experimentName: r.nc
 				}), a.a),
 				u = Object(c.a)(d, l, (e, t) => e || t),
 				m = Object(c.a)(d, l, (e, t) => !(!e && !t))
@@ -2658,15 +2658,15 @@
 			const a = e => {
 					const t = Object(s.c)(e, {
 						experimentEligibilitySelector: o.Q,
-						experimentName: r.cd
+						experimentName: r.dd
 					});
-					return !(!t || Object(r.Yf)(t))
+					return !(!t || Object(r.Zf)(t))
 				},
 				i = e => {
 					return Object(s.c)(e, {
 						experimentEligibilitySelector: o.Q,
-						experimentName: r.cd
-					}) === r.Cd.ListingEnabled
+						experimentName: r.dd
+					}) === r.Dd.ListingEnabled
 				}
 		},
 		"./src/reddit/selectors/focusedVerticalSuggestion.ts": function(e, t, n) {
@@ -2793,4 +2793,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Frontpage~ModListing.d1eba5fa958b9d5c76d7.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Frontpage~ModListing.d936677dff1a54f64943.js.map

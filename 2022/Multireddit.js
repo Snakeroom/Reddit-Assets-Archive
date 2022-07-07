@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Multireddit.e772ca663257ca240f4d.js
-// Retrieved at 7/7/2022, 11:50:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Multireddit.688210067aeaa8705fcf.js
+// Retrieved at 7/7/2022, 2:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Multireddit"], {
 		"./src/lib/forceHttps/index.ts": function(e, t, n) {
@@ -299,7 +299,7 @@
 					});
 					if (!Object(y.Q)(l())) return i(Object(d.k)({
 						actionSource: d.a.Subscribe
-					})), void i(Object(a.j)());
+					})), void i(Object(a.openRegisterModal)());
 					const _ = Object(y.k)(l());
 					if (_) {
 						const t = f.length,
@@ -665,8 +665,8 @@
 					const n = t ? `/r/${t}/search` : "/search",
 						r = `${t?"flair_name":"flair"}:"${e}"`;
 					return Object(l.a)(n, {
-						[T.o]: r,
-						[T.r]: t ? "1" : ""
+						[T.p]: r,
+						[T.s]: t ? "1" : ""
 					})
 				},
 				M = e => e.isFlairFilter ? a.a.createElement(j.default, {
@@ -1579,7 +1579,7 @@
 				s = n("./node_modules/react-redux/es/index.js"),
 				i = n("./src/reddit/selectors/meta.ts");
 			const c = "undefined" == typeof document ? function() {
-				const e = Object(s.e)(i.i) || o.DEFAULT_LOCALE;
+				const e = Object(s.e)(i.j) || o.DEFAULT_LOCALE;
 				return Object(r.isPseudoLocale)(e) ? o.DEFAULT_LOCALE : e
 			} : function() {
 				const e = document.documentElement.lang || o.DEFAULT_LOCALE;
@@ -1700,4 +1700,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Multireddit.e772ca663257ca240f4d.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Multireddit.688210067aeaa8705fcf.js.map

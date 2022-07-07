@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/NsfwBlockingModal.1c90f917e5a076e6a01e.js
-// Retrieved at 7/7/2022, 11:50:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/NsfwBlockingModal.8c745b85c6ada1b8df5e.js
+// Retrieved at 7/7/2022, 2:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["NsfwBlockingModal"], {
 		"./src/reddit/components/Footer/index.m.less": function(e, t, n) {
@@ -213,7 +213,7 @@
 								source: "xpromo",
 								action: "click",
 								noun: h
-							}))()), m(), Object(g.b)(g.a.Login), t(Object(u.i)())
+							}))()), m(), Object(g.b)(g.a.Login), t(Object(u.openLoginModal)())
 						}
 					}, (() => s.fbt._("Log In", null, {
 						hk: "4BITk"
@@ -280,10 +280,10 @@
 					}, o.a.createElement(b.b, {
 						textColor: l
 					})), o.a.createElement(w, {
-						qrCodeAsset: (() => r === p.Gc.Enabled || s === p.rb.BlurredPreview || s === p.rb.NoPreview ? y.d2x_nsfw_signup_blocking_de_v1 : y.d2x_nsfw_signup_blocking_non_us_v1)()
+						qrCodeAsset: (() => r === p.Hc.Enabled || s === p.rb.BlurredPreview || s === p.rb.NoPreview ? y.d2x_nsfw_signup_blocking_de_v1 : y.d2x_nsfw_signup_blocking_non_us_v1)()
 					}))
 				}
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/NsfwBlockingModal.1c90f917e5a076e6a01e.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/NsfwBlockingModal.8c745b85c6ada1b8df5e.js.map

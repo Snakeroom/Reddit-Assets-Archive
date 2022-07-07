@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditLeaderboard.f18da8c63218f6b45517.js
-// Retrieved at 7/7/2022, 11:50:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditLeaderboard.707afc9c08454bc5f86d.js
+// Retrieved at 7/7/2022, 2:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditLeaderboard"], {
 		"./node_modules/lodash/times.js": function(e, t, r) {
@@ -73,7 +73,7 @@
 									icon: e.category_icon,
 									id: e.category_id,
 									name: e.category_name,
-									displayText: Object(u.Xf)(e.category_name)
+									displayText: Object(u.Yf)(e.category_name)
 								};
 								r.push(s.id), t[s.id] = s
 							}), {
@@ -428,7 +428,7 @@
 					}, n[t]) : null
 				};
 				if (e.isD2xPdpSideRailRecsEnabled) {
-					const t = e.d2xPdpSideRailRecsVariant === u.Jc.GreyRereddit ? e.reredditButtons : [];
+					const t = e.d2xPdpSideRailRecsVariant === u.Kc.GreyRereddit ? e.reredditButtons : [];
 					return s.a.createElement(w, {
 						reredditContent: t,
 						countryCode: e.countryCode
@@ -2481,8 +2481,8 @@
 					to: t.path || ""
 				}), r, t.customIcon))
 			};
-			var X = r("./src/reddit/components/Widgets/ThemedWidget/index.tsx"),
-				Y = r("./src/reddit/controls/Button/index.tsx"),
+			var Y = r("./src/reddit/components/Widgets/ThemedWidget/index.tsx"),
+				X = r("./src/reddit/controls/Button/index.tsx"),
 				$ = r("./src/reddit/helpers/name/index.ts");
 			const {
 				fbt: ee
@@ -2555,14 +2555,14 @@
 						headerClassName: s,
 						initialNumberOfCategories: a
 					} = this.props, o = t && a && t.length > a, d = Object(c.a)(r, U.a.container);
-					return i.a.createElement(X.a, {
+					return i.a.createElement(Y.a, {
 						className: d,
 						contentOnly: !0
 					}, i.a.createElement("div", {
 						className: Object(c.a)(U.a.header, s)
 					}, i.a.createElement("h2", null, n || ee._("Categories", null, {
 						hk: "46zLMb"
-					}))), this.renderCategoryList(), o && i.a.createElement(Y.r, {
+					}))), this.renderCategoryList(), o && i.a.createElement(X.r, {
 						className: Object(c.a)(U.a.button, e),
 						onClick: this.toggleExpanded
 					}, o && !this.state.isExpanded ? ee._("Show More", null, {
@@ -2585,7 +2585,7 @@
 					key: e
 				}, e)
 			};
-			var le = e => i.a.createElement(X.a, {
+			var le = e => i.a.createElement(Y.a, {
 					className: ie.a.Widget,
 					redditStyle: e.redditStyle,
 					contentOnly: !0
@@ -2638,7 +2638,7 @@
 					} = t;
 					return Object(g.b)(r.params.categoryName || "")
 				},
-				Ee = Object(m.Wf)(p.i),
+				Ee = Object(m.Xf)(p.i),
 				_e = Object(d.c)({
 					categories: e => Object(ye.b)(e, {
 						categoriesOrder: Ee
@@ -2748,12 +2748,12 @@
 				o = r("./src/reddit/selectors/meta.ts"),
 				d = r("./node_modules/reselect/es/index.js");
 			const c = Object(d.a)(e => Object(s.c)(e, {
-					experimentEligibilitySelector: e => Object(o.g)(e) && Object(a.f)(e),
-					experimentName: n.nc
+					experimentEligibilitySelector: e => Object(o.h)(e) && Object(a.f)(e),
+					experimentName: n.oc
 				}), i.a),
 				l = Object(d.a)(e => Object(s.c)(e, {
-					experimentEligibilitySelector: e => !Object(o.g)(e) && Object(a.f)(e),
-					experimentName: n.mc
+					experimentEligibilitySelector: e => !Object(o.h)(e) && Object(a.f)(e),
+					experimentName: n.nc
 				}), i.a),
 				u = Object(d.a)(c, l, (e, t) => e || t),
 				m = Object(d.a)(c, l, (e, t) => !(!e && !t))
@@ -2791,4 +2791,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditLeaderboard.f18da8c63218f6b45517.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditLeaderboard.707afc9c08454bc5f86d.js.map

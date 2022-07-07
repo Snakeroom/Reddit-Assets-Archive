@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CommentsPageNativeAd.58da59895971ca261c35.js
-// Retrieved at 7/7/2022, 11:50:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CommentsPageNativeAd.922ca5d3dab1e76fb284.js
+// Retrieved at 7/7/2022, 2:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CommentsPageNativeAd"], {
 		"./src/reddit/components/CommentsPageNativeAd/index.m.less": function(e, t, s) {
@@ -59,8 +59,8 @@
 				y = s("./src/reddit/constants/componentTestIds.ts"),
 				S = s("./src/reddit/controls/OutboundLink/index.tsx"),
 				_ = s("./src/reddit/helpers/search/renderMedia.tsx"),
-				P = s("./src/reddit/components/PostTopMeta/index.tsx"),
-				j = s("./src/reddit/components/AuthorLink/index.tsx"),
+				j = s("./src/reddit/components/PostTopMeta/index.tsx"),
+				P = s("./src/reddit/components/AuthorLink/index.tsx"),
 				w = s("./src/reddit/components/SponsoredLabel/index.tsx"),
 				k = s("./src/reddit/components/UserIcon/index.tsx"),
 				g = s("./src/reddit/controls/MetaSeparator/index.tsx"),
@@ -74,7 +74,7 @@
 					userName: e.author,
 					className: T.a.userIcon,
 					omitResponsivePresenceWrapper: !0
-				}), o.a.createElement(j.a, {
+				}), o.a.createElement(P.a, {
 					className: T.a.authorLink,
 					"data-click-id": "user",
 					author: e.author
@@ -236,13 +236,13 @@
 						redditStyle: h,
 						scrollerItemRef: b,
 						showMedia: S,
-						showCTAExperiment: j
+						showCTAExperiment: P
 					} = this.props;
 					if (p.isBlank) return o.a.createElement(C.default, {
 						postId: p.id
 					});
 					const w = Object(l.a)(T.a.styledOutboundLink, {
-						[T.a.ctaExperiment]: j
+						[T.a.ctaExperiment]: P
 					});
 					return o.a.createElement("div", null, o.a.createElement("div", {
 						className: T.a.commentsSpacer
@@ -259,7 +259,7 @@
 					}, o.a.createElement(A, {
 						author: p.author,
 						iconUrl: r,
-						greyTextColor: Object(P.e)(this.props)
+						greyTextColor: Object(j.e)(this.props)
 					}), o.a.createElement("div", {
 						className: Object(l.a)(T.a.contentRow, {
 							[T.a.contentRowExpanded]: this.state.mediaExpanded
@@ -298,13 +298,13 @@
 						hk: "45BFWV"
 					})), p.permalink && o.a.createElement(E.a, {
 						className: T.a.adLinkWrapper,
-						ctaExperimentDesign: j && "conversation"
+						ctaExperimentDesign: P && "conversation"
 					}, this.renderSourceLink(), p.callToAction && p.source && p.source.url && o.a.createElement(v.a, {
 						href: p.source.url.replace(c.a.redditUrl, ""),
 						isSponsored: p.isSponsored,
 						source: p.source,
 						postId: p.id,
-						showCTAExperiment: j
+						showCTAExperiment: P
 					}, p.callToAction)))), o.a.createElement("div", {
 						className: T.a.spacer
 					}), o.a.createElement(N.d, null))), Object(_.a)(p, T.a, b, t, !1, !1)), o.a.createElement("div", {
@@ -410,11 +410,11 @@
 				r = s("./src/reddit/constants/experiments.ts"),
 				o = s("./src/reddit/helpers/chooseVariant/index.ts");
 			const n = Object(a.a)(e => Object(o.c)(e, {
-					experimentName: r.Pf,
+					experimentName: r.Qf,
 					experimentEligibilitySelector: o.a
 				}), e => e),
-				i = Object(a.a)(n, e => e === r.Hf)
+				i = Object(a.a)(n, e => e === r.If)
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommentsPageNativeAd.58da59895971ca261c35.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommentsPageNativeAd.922ca5d3dab1e76fb284.js.map

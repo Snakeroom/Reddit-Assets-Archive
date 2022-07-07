@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~Reddit.8d1a8cb62c08c8de585f.js
-// Retrieved at 7/7/2022, 11:50:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~Reddit.795ca22dc16154da3a0d.js
+// Retrieved at 7/7/2022, 2:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~Reddit"], {
 		"./assets/fonts/NotoMono/font.less": function(e, t, n) {},
@@ -777,7 +777,7 @@
 			const y = Object(p.a)(e => Object(f.c)(e, {
 				experimentEligibilitySelector: h.Q,
 				experimentName: b.bc
-			}), e => e === b.yd);
+			}), e => e === b.zd);
 			var m = n("./src/reddit/actions/toaster.ts");
 			const g = "SUBREDDIT_COUNTRY_SITE__LOADED",
 				v = "SUBREDDIT_COUNTRY_SITE__CHANGED",
@@ -3260,7 +3260,7 @@
 			const j = e => _.d.reCaptchaEnterprise(e) && !Object(T.d)(e),
 				D = e => !!Object(S.c)(e, {
 					experimentEligibilitySelector: Object(I.d)(Object(I.b)(...a.d)),
-					experimentName: b.af
+					experimentName: b.bf
 				}),
 				w = Object(r.b)("LOAD_RECAPTCHA_ENTERPRISE"),
 				C = () => u(e => p()([j, D, e => e.tracking.reCaptchaEnterprise.load === r.a.New], t => t(e)))(async e => {
@@ -4164,9 +4164,9 @@
 								postFieldValidationPending: Promise.resolve()
 							})), Object(l.b)(N)
 						}
-						await t(Object(r.b)(`${n.path}`)), f ? f === p.De.NewModule && t(Object(d.h)({
+						await t(Object(r.b)(`${n.path}`)), f ? f === p.Ee.NewModule && t(Object(d.h)({
 							tooltipId: u.MOD_WELCOME_TOOLTIP_ID
-						})) : (t(Object(c.h)(b.a.POST_FLOW_UPSELL_MODAL_ID)), Object(w.a)(Object(_.g)()(A))), Object(E.b)(E.a.SubredditCreation), t(Object(C.f)(a, null !== (O = Object(D.bb)(A)) && void 0 !== O ? O : Object(S.i)(A)))
+						})) : (t(Object(c.h)(b.a.POST_FLOW_UPSELL_MODAL_ID)), Object(w.a)(Object(_.g)()(A))), Object(E.b)(E.a.SubredditCreation), t(Object(C.f)(a, null !== (O = Object(D.bb)(A)) && void 0 !== O ? O : Object(S.j)(A)))
 					} else k.error && Object(w.a)(Object(_.h)(k.error.type, P)(A)), t(U({
 						subredditName: P,
 						error: k.error
@@ -5857,9 +5857,9 @@
 					experimentEligibilitySelector: H.a,
 					experimentName: V.kc
 				}), Q.a),
-				K = Object(W.a)($, e => e === V.Ic.Treatment1 || e === V.Ic.Treatment2),
-				Y = Object(W.a)($, e => e === V.Ic.Treatment1);
-			Object(W.a)($, e => e === V.Ic.Treatment2);
+				K = Object(W.a)($, e => e === V.Jc.Treatment1 || e === V.Jc.Treatment2),
+				Y = Object(W.a)($, e => e === V.Jc.Treatment1);
+			Object(W.a)($, e => e === V.Jc.Treatment2);
 			var z = n("./src/reddit/hooks/useLocalStorage.ts");
 			const X = () => {
 				const e = Object(a.e)(Y),
@@ -5916,7 +5916,7 @@
 						nsfwSessionSetting: R
 					} = Object(h.b)(),
 					N = Object(l.e)({
-						...ae()(j || {}, ce.s),
+						...ae()(j || {}, ce.t),
 						q: o.searchQuery,
 						restrict_sr: D ? "1" : ""
 					}),
@@ -7238,10 +7238,10 @@
 				const p = [];
 				if (i.isTypeaheadSuggestion) t = `/${i.isProfile?i.searchQuery.replace("u/","user/"):i.searchQuery}`;
 				else {
-					if (p.push(`${a.o}=${Object(s.b)(i.rawQuery||i.searchQuery)}`), t = "/search/", i.section !== o.c.trending && i.section !== o.c.recent || d && d.source && p.push(`source=${d.source}`), n && u ? (t = `/r/${n.name}${t}`, p.push(`${a.r}=1`), p.push(`${a.y}=${n.isNSFW?"1":""}`)) : !n && i.subredditOrProfileRestrictedName && (t = `/${i.subredditOrProfileRestrictedName}${t}`, p.push(`${a.r}=1`)), c) {
-						t = `/user/${c.url.split("/")[2]}/m/${c.name}${t}`, p.push(`${a.r}=1`), p.push(`${a.y}=${c.isNSFW?"1":""}`), p.push(`${a.i}=1`)
+					if (p.push(`${a.p}=${Object(s.b)(i.rawQuery||i.searchQuery)}`), t = "/search/", i.section !== o.c.trending && i.section !== o.c.recent || d && d.source && p.push(`source=${d.source}`), n && u ? (t = `/r/${n.name}${t}`, p.push(`${a.s}=1`), p.push(`${a.A}=${n.isNSFW?"1":""}`)) : !n && i.subredditOrProfileRestrictedName && (t = `/${i.subredditOrProfileRestrictedName}${t}`, p.push(`${a.s}=1`)), c) {
+						t = `/user/${c.url.split("/")[2]}/m/${c.name}${t}`, p.push(`${a.s}=1`), p.push(`${a.A}=${c.isNSFW?"1":""}`), p.push(`${a.i}=1`)
 					}
-					l && p.push(`${a.h}=1`), (null == d ? void 0 : d.t) && d.t !== r.ic.ALL && p.push(`${a.A}=${d.t}`), (null == d ? void 0 : d.sort) && p.push(`${a.w}=${d.sort}`), (null == d ? void 0 : d.type) && (d.type.includes(r.cc.Posts) || p.push(`${a.B}=${d.type[0]}`))
+					l && p.push(`${a.h}=1`), (null == d ? void 0 : d.t) && d.t !== r.ic.ALL && p.push(`${a.C}=${d.t}`), (null == d ? void 0 : d.sort) && p.push(`${a.y}=${d.sort}`), (null == d ? void 0 : d.type) && (d.type.includes(r.cc.Posts) || p.push(`${a.D}=${d.type[0]}`))
 				}
 				return {
 					url: t,
@@ -14071,9 +14071,9 @@
 					let e = !(arguments.length > 0 && void 0 !== arguments[0]) || arguments[0],
 						t = arguments.length > 1 ? arguments[1] : void 0;
 					switch (t.type) {
-						case Yc.a:
+						case Yc.CHANGE_USERNAME_TOOLTIP_CLOSED:
 							return !1;
-						case Yc.b:
+						case Yc.CHANGE_USERNAME_TOOLTIP_OPENED:
 							return !0;
 						default:
 							return e
@@ -15692,6 +15692,7 @@
 				isBot: !1,
 				isSessionSeo: !1,
 				locale: "",
+				isOneTapSession: !1,
 				method: "",
 				pageloadServerTime: 0,
 				platform: void 0,
@@ -25149,7 +25150,7 @@
 							linkedIdentities: r.filter(e => e !== n)
 						} : e
 					}
-					case Yc.c: {
+					case Yc.SAVE_USERNAME_SUCCESS: {
 						const {
 							username: n
 						} = t.payload;
@@ -27275,8 +27276,8 @@
 				a = n("./node_modules/reselect/es/index.js");
 			const o = Object(a.a)(e => Object(s.c)(e, {
 				experimentEligibilitySelector: s.a,
-				experimentName: r.wc
-			}), e => e === r.yd)
+				experimentName: r.xc
+			}), e => e === r.zd)
 		},
 		"./src/reddit/selectors/removedPosts.ts": function(e, t, n) {
 			"use strict";
@@ -27611,4 +27612,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit.8d1a8cb62c08c8de585f.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit.795ca22dc16154da3a0d.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/editCollectionModal.e05d14720bb4f7ad81c4.js
-// Retrieved at 7/1/2022, 5:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/editCollectionModal.eb27bf62b215bd171712.js
+// Retrieved at 7/7/2022, 2:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["editCollectionModal"], {
 		"./node_modules/lodash/union.js": function(e, t, n) {
@@ -208,7 +208,7 @@
 				}).apply(this, arguments)
 			}
 			const N = 10,
-				P = e => {
+				j = e => {
 					let {
 						label: t,
 						...n
@@ -225,7 +225,7 @@
 						text: n.value
 					}))
 				},
-				j = e => {
+				P = e => {
 					let {
 						onLayoutChange: t,
 						displayLayout: n
@@ -283,7 +283,7 @@
 					} = e;
 					return r.a.createElement("div", {
 						className: T.a.editCollectionWrapper
-					}, r.a.createElement(P, {
+					}, r.a.createElement(j, {
 						label: s.fbt._("Title", null, {
 							hk: "1cdKLH"
 						}),
@@ -294,7 +294,7 @@
 						maxLength: v.e,
 						rows: 1,
 						value: a
-					}), r.a.createElement(P, {
+					}), r.a.createElement(j, {
 						label: s.fbt._("Description", null, {
 							hk: "iNZtt"
 						}),
@@ -305,7 +305,7 @@
 						maxLength: v.b,
 						rows: 4,
 						value: i
-					}), r.a.createElement(j, {
+					}), r.a.createElement(P, {
 						onLayoutChange: o,
 						displayLayout: c
 					}))
@@ -1118,7 +1118,7 @@
 				a = n("./node_modules/react-redux/es/index.js"),
 				r = n("./src/reddit/selectors/meta.ts");
 			const i = "undefined" == typeof document ? function() {
-				const e = Object(a.e)(r.i) || o.DEFAULT_LOCALE;
+				const e = Object(a.e)(r.j) || o.DEFAULT_LOCALE;
 				return Object(s.isPseudoLocale)(e) ? o.DEFAULT_LOCALE : e
 			} : function() {
 				const e = document.documentElement.lang || o.DEFAULT_LOCALE;
@@ -1181,4 +1181,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/editCollectionModal.e05d14720bb4f7ad81c4.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/editCollectionModal.eb27bf62b215bd171712.js.map

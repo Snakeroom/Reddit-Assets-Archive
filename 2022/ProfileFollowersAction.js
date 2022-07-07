@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfileFollowersAction.b45aa67dc4fc5855d3ad.js
-// Retrieved at 6/30/2022, 12:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfileFollowersAction.ab0e59d03fb9565e7dd4.js
+// Retrieved at 7/7/2022, 2:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfileFollowersAction"], {
 		"./src/lib/makeOverviewConversationsItemKey/index.ts": function(e, t, r) {
@@ -812,7 +812,7 @@
 						}).id;
 					t(L.m({
 						title: Se(r(), p)
-					})), Object(h.S)(E) && Object(h.W)(E, p) && t(Object(x.f)());
+					})), Object(h.S)(E) && Object(h.W)(E, p) && t(Object(x.startChangeUsernameFlow)());
 					const N = [t(Object(a.q)()), t(R.b(w, S)), t(P.b(w)), t(_.o(p)), t(P.i(p)), t(k.j(p, A))];
 					await Promise.all(N)
 				}, Se = (e, t) => Object(g.q)(e, {
@@ -982,4 +982,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileFollowersAction.b45aa67dc4fc5855d3ad.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileFollowersAction.ab0e59d03fb9565e7dd4.js.map

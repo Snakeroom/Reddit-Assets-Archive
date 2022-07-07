@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfileComments~ProfileOverview~ProfilePosts.12b8bce503ac0d910564.js
-// Retrieved at 7/7/2022, 11:50:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfileComments~ProfileOverview~ProfilePosts.6cf95829ffed5270c4a3.js
+// Retrieved at 7/7/2022, 2:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfileComments~ProfileOverview~ProfilePosts", "reddit-components-ContentGate"], {
 		"./node_modules/linkify-it/index.js": function(e, t, n) {
@@ -467,7 +467,7 @@
 				fbt: M
 			} = n("./node_modules/fbt/lib/FbtPublic.js"), U = d.a.wrapped(P, "PrivateKey", W.a), q = d.a.div("ButtonsContainer", W.a), H = d.a.div("Container", W.a), G = d.a.div("ContainerExp", W.a), Z = d.a.div("Description", W.a), Y = d.a.div("PrivateSubredditDetails", W.a), K = d.a.div("PrivateSubredditDescription", W.a), V = d.a.h3("PrivateSubredditName", W.a), Q = d.a.a("Link", W.a), X = d.a.wrapped(D.n, "LinkRouterButton", W.a), J = d.a.wrapped(D.m, "LinkButton", W.a), $ = d.a.wrapped(D.q, "SecondaryLinkRouterButton", W.a), ee = d.a.wrapped(D.p, "SecondaryLinkButton", W.a), te = d.a.wrapped(X, "GoHomeLinkButton", W.a), ne = d.a.wrapped(b.a, "CreateCommunityButton", W.a), re = d.a.img("Image", W.a), ae = d.a.img("ImagePlaceholder", W.a), se = d.a.wrapped(X, "LeftLinkRouterButton", W.a), oe = d.a.wrapped(J, "LeftLinkButton", W.a), ie = d.a.wrapped(ee, "SecondaryLeftLinkButton", W.a), le = d.a.wrapped($, "SecondaryLeftLinkRouterButton", W.a), ce = d.a.h3("Title", W.a), de = d.a.div("PageBody", W.a), ue = d.a.div("InterstitialMessageWrapper", W.a), me = Object(c.c)({
 				isLoggedIn: T.P,
-				origin: A.j,
+				origin: A.k,
 				user: T.k,
 				isPrivateSubredditContributorRequestPending: e => (e => {
 					if (!Object(T.Q)(e)) return !1;
@@ -483,7 +483,7 @@
 					const a = 30 * z.B;
 					return r > Date.now() - a
 				})(e),
-				isSeo: A.g
+				isSeo: A.h
 			}), pe = Object(O.u)(), he = Object(o.b)(me, (e, t) => {
 				let {
 					subredditName: n
@@ -1892,7 +1892,7 @@
 							return e.urlParams.sort || Object(d.J)(e) || (n = xe.a.join(n, t)), n
 						})(e.pageLayer, e.listingSort),
 						r = Object(p.a)(n, {
-							[K.A]: t
+							[K.C]: t
 						}),
 						s = r.split("?")[0],
 						i = `${r.replace(s+"?","")}`;
@@ -1938,7 +1938,7 @@
 					isProfilePage: d.J,
 					pageLayer: e => e
 				}),
-				We = Object(_.a)((e, t) => t.sortOptions, (e, t) => t.isFrontpage, j.a, L.k, d.F, O.a, Le.i, (e, t, n, r, a, s, o) => {
+				We = Object(_.a)((e, t) => t.sortOptions, (e, t) => t.isFrontpage, j.a, L.k, d.F, O.a, Le.j, (e, t, n, r, a, s, o) => {
 					if (e) return {
 						isPopularPage: a,
 						sortOptions: e,
@@ -3217,7 +3217,7 @@
 								source: "xpromo",
 								action: "click",
 								noun: y
-							}))()), u(), Object(g.b)(g.a.Login), t(Object(m.i)())
+							}))()), u(), Object(g.b)(g.a.Login), t(Object(m.openLoginModal)())
 						}
 					}, (() => a.fbt._("Log In", null, {
 						hk: "4BITk"
@@ -3284,7 +3284,7 @@
 					}, o.a.createElement(h.b, {
 						textColor: l
 					})), o.a.createElement(N, {
-						qrCodeAsset: (() => r === _.Gc.Enabled || a === _.rb.BlurredPreview || a === _.rb.NoPreview ? C.d2x_nsfw_signup_blocking_de_v1 : C.d2x_nsfw_signup_blocking_non_us_v1)()
+						qrCodeAsset: (() => r === _.Hc.Enabled || a === _.rb.BlurredPreview || a === _.rb.NoPreview ? C.d2x_nsfw_signup_blocking_de_v1 : C.d2x_nsfw_signup_blocking_non_us_v1)()
 					}))
 				}
 		},
@@ -3979,4 +3979,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileComments~ProfileOverview~ProfilePosts.12b8bce503ac0d910564.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileComments~ProfileOverview~ProfilePosts.6cf95829ffed5270c4a3.js.map

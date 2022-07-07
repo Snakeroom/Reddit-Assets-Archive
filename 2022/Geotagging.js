@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Geotagging.82d7ccf98ace62b1d399.js
-// Retrieved at 7/7/2022, 11:50:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Geotagging.799f5492f6faaf99f761.js
+// Retrieved at 7/7/2022, 2:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Geotagging"], {
 		"./node_modules/p-debounce/index.js": function(e, t, n) {
@@ -449,7 +449,7 @@
 					}, s[t]) : null
 				};
 				if (e.isD2xPdpSideRailRecsEnabled) {
-					const t = e.d2xPdpSideRailRecsVariant === u.Jc.GreyRereddit ? e.reredditButtons : [];
+					const t = e.d2xPdpSideRailRecsVariant === u.Kc.GreyRereddit ? e.reredditButtons : [];
 					return r.a.createElement(O, {
 						reredditContent: t,
 						countryCode: e.countryCode
@@ -1806,12 +1806,12 @@
 				o = n("./src/reddit/selectors/meta.ts"),
 				c = n("./node_modules/reselect/es/index.js");
 			const d = Object(c.a)(e => Object(r.c)(e, {
-					experimentEligibilitySelector: e => Object(o.g)(e) && Object(a.f)(e),
-					experimentName: s.nc
+					experimentEligibilitySelector: e => Object(o.h)(e) && Object(a.f)(e),
+					experimentName: s.oc
 				}), i.a),
 				l = Object(c.a)(e => Object(r.c)(e, {
-					experimentEligibilitySelector: e => !Object(o.g)(e) && Object(a.f)(e),
-					experimentName: s.mc
+					experimentEligibilitySelector: e => !Object(o.h)(e) && Object(a.f)(e),
+					experimentName: s.nc
 				}), i.a),
 				u = Object(c.a)(d, l, (e, t) => e || t),
 				m = Object(c.a)(d, l, (e, t) => !(!e && !t))
@@ -1830,4 +1830,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Geotagging.82d7ccf98ace62b1d399.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Geotagging.799f5492f6faaf99f761.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Avatar.ed91f68ba71921185d4d.js
-// Retrieved at 7/7/2022, 11:50:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Avatar.18ad54f6d0250ff0f334.js
+// Retrieved at 7/7/2022, 2:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Avatar"], {
 		"./src/reddit/components/SnoovatarModal/SnoovatarIframe.tsx": function(e, t, s) {
@@ -10,22 +10,22 @@
 				n = s("./node_modules/react-redux/es/index.js"),
 				o = s("./node_modules/react-router/esm/react-router.js"),
 				c = s("./src/config.ts"),
-				d = s("./src/lib/classNames/index.ts"),
-				i = s("./src/reddit/components/SnoovatarModal/index.m.less"),
-				l = s.n(i);
+				i = s("./src/lib/classNames/index.ts"),
+				d = s("./src/reddit/components/SnoovatarModal/index.m.less"),
+				l = s.n(d);
 			t.a = Object(o.i)(e => {
 				let {
 					className: t,
 					match: s,
 					location: o,
-					share: i,
+					share: d,
 					source: u
 				} = e;
 				const m = new URLSearchParams(o.search);
 				m.append("platform", "desktop"), Object.entries(s.params).forEach(e => {
 					let [t, s] = e;
 					return m.append(t, s)
-				}), i && Object.entries(i).forEach(e => {
+				}), d && Object.entries(d).forEach(e => {
 					let [t, s] = e;
 					return m.set(t, s)
 				}), u && m.set("source", u);
@@ -49,7 +49,7 @@
 					};
 					return window.addEventListener("message", e), () => window.removeEventListener("message", e)
 				}, [v]), r.a.createElement("div", {
-					className: Object(d.a)(l.a.iframeContainer, t)
+					className: Object(i.a)(l.a.iframeContainer, t)
 				}, r.a.createElement("iframe", {
 					ref: p,
 					src: `${c.a.snoovatarUrl}/static/client/?${m.toString()}`
@@ -80,8 +80,8 @@
 				n = s.n(r),
 				o = s("./node_modules/react-redux/es/index.js"),
 				c = s("./src/lib/classNames/index.ts"),
-				d = s("./src/lib/env/index.ts"),
-				i = s("./src/reddit/contexts/NavbarExp.ts"),
+				i = s("./src/lib/env/index.ts"),
+				d = s("./src/reddit/contexts/NavbarExp.ts"),
 				l = s("./src/reddit/helpers/trackers/snoovatar.ts"),
 				u = s("./src/reddit/hooks/useTracking.ts"),
 				m = s("./src/reddit/selectors/experiments/econ/index.ts"),
@@ -90,7 +90,7 @@
 				v = s("./src/reddit/components/SnoovatarModal/SnoovatarIframe.tsx"),
 				_ = s("./src/reddit/pages/Avatar/index.m.less"),
 				b = s.n(_);
-			const E = !(Object(d.c)() || Object(d.b)()),
+			const E = !(Object(i.c)() || Object(i.b)()),
 				O = {
 					GRAPHQL_URL: a.a.gqlUrl,
 					IS_DEVELOPMENT: E,
@@ -107,8 +107,8 @@
 				})));
 			t.default = function() {
 				const e = Object(o.e)(e => e.user.session),
-					[t, d] = Object(r.useState)(!1),
-					_ = Object(r.useContext)(i.a),
+					[t, i] = Object(r.useState)(!1),
+					_ = Object(r.useContext)(d.a),
 					E = Object(o.e)(x.a),
 					h = Object(r.useMemo)(() => ({
 						headers: {
@@ -121,7 +121,7 @@
 				if (Object(r.useEffect)(() => {
 						(async () => {
 							await s.e(7).then(s.t.bind(null, "./node_modules/@reddit/avatars/style.css", 7))
-						})(), S(l.r), d(!0)
+						})(), S(l.r), i(!0)
 					}, []), !e || !t) return null;
 				const N = {
 					...O,
@@ -150,8 +150,8 @@
 			}));
 			var a = s("./src/reddit/constants/experiments.ts"),
 				r = s("./src/reddit/selectors/experiments/econ/simpleExperiment.ts");
-			const n = Object(r.a)(a.dd)
+			const n = Object(r.a)(a.ed)
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Avatar.ed91f68ba71921185d4d.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Avatar.18ad54f6d0250ff0f334.js.map

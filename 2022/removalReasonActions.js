@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/removalReasonActions.b992007d873689a0eb3f.js
-// Retrieved at 7/7/2022, 11:50:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/removalReasonActions.d870f0e78dc9e7519778.js
+// Retrieved at 7/7/2022, 2:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["removalReasonActions"], {
 		"./node_modules/lodash/map.js": function(e, t, o) {
@@ -251,7 +251,7 @@
 			const ie = Object(re.a)(e => Object(se.c)(e, {
 				experimentEligibilitySelector: se.a,
 				experimentName: ne.Ib
-			}), e => e === ne.yd);
+			}), e => e === ne.zd);
 			var ce = o("./src/reddit/selectors/experiments/contributeBeforeSignUp.ts"),
 				ae = o("./src/reddit/selectors/experiments/emailEnablement.ts"),
 				de = o("./src/reddit/selectors/platform.ts"),
@@ -273,7 +273,7 @@
 									hasFocus: t,
 									draftKey: o
 								});
-								e(Object(a.f)(n))
+								e(Object(a.startChangeUsernameFlow)(n))
 							} else e(be({
 								hasFocus: t,
 								draftKey: o
@@ -319,7 +319,7 @@
 							n = ye(e.formData);
 						t(Object(m.k)({
 							actionSource: m.a.Reply
-						})), t(Object(l.j)()), Object(Q.d)({
+						})), t(Object(l.openRegisterModal)()), Object(Q.d)({
 							comment: {
 								...e,
 								richTextJSONData: o,
@@ -437,7 +437,7 @@
 							n = ye(e.formData);
 						t(Object(m.k)({
 							actionSource: m.a.Reply
-						})), t(Object(l.j)()), Object(Q.d)({
+						})), t(Object(l.openRegisterModal)()), Object(Q.d)({
 							comment: {
 								...e,
 								richTextJSONData: o,
@@ -552,7 +552,7 @@
 					return async (e, s) => {
 						const r = s(),
 							c = Object(i.a)($.c.replyToComment, o);
-						if (!Object(me.Q)(s()) && !Object(ce.a)(r)) return e(Object(l.j)()), void e(Object(m.k)({
+						if (!Object(me.Q)(s()) && !Object(ce.a)(r)) return e(Object(l.openRegisterModal)()), void e(Object(m.k)({
 							actionSource: m.a.Reply,
 							redirectUrl: Object(te.m)(s(), {
 								commentId: o
@@ -599,7 +599,7 @@
 								draftKey: c,
 								formData: j
 							});
-							e(Object(a.f)(n))
+							e(Object(a.startChangeUsernameFlow)(n))
 						} else e(Ae({
 							parentCommentId: o,
 							commentsPageKey: t,
@@ -2822,4 +2822,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/removalReasonActions.b992007d873689a0eb3f.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/removalReasonActions.d870f0e78dc9e7519778.js.map

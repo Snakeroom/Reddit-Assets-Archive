@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ChatPost.9078c7b224754f10dc70.js
-// Retrieved at 7/7/2022, 11:50:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ChatPost.d28a2499a91513dba082.js
+// Retrieved at 7/7/2022, 2:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ChatPost"], {
 		"./node_modules/lodash/_baseDelay.js": function(e, t) {
@@ -1983,7 +1983,7 @@
 						gqlContext: s
 					} = o;
 					const a = n();
-					if (!Object(Ie.Q)(a)) return t(Object(re.i)());
+					if (!Object(Ie.Q)(a)) return t(Object(re.openLoginModal)());
 					if (!ke(a, e.awardId, e.commentId)) {
 						t(Oe(e));
 						try {
@@ -2039,7 +2039,7 @@
 						gqlContext: a
 					} = s;
 					const r = o();
-					if (!Object(Ie.Q)(r)) return n(Object(re.i)());
+					if (!Object(Ie.Q)(r)) return n(Object(re.openLoginModal)());
 					if (!ke(r, e.awardId, e.commentId)) {
 						n(Me(e));
 						try {
@@ -5415,4 +5415,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatPost.9078c7b224754f10dc70.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatPost.d28a2499a91513dba082.js.map

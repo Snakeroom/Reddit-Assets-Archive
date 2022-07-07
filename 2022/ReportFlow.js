@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ReportFlow.ff8fa4ab4540d8ea26f4.js
-// Retrieved at 7/7/2022, 11:50:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ReportFlow.90976ea18ece81024d42.js
+// Retrieved at 7/7/2022, 2:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ReportFlow", "ReportFlowNew"], {
 		"./node_modules/@reddit/i18n-tools/runtime/helpers/locale/index.js": function(e, t, n) {
@@ -968,7 +968,7 @@
 					if (!_ && !f) return;
 					const C = f ? p.features.comments.models[e] : p.posts.models[e];
 					if (!C) return;
-					if (!Object(R.Q)(s())) return o(Object(r.j)()), void o(Object(a.k)({
+					if (!Object(R.Q)(s())) return o(Object(r.openRegisterModal)()), void o(Object(a.k)({
 						actionSource: a.a.Report,
 						redirectUrl: C.permalink,
 						thingId: e
@@ -2231,7 +2231,7 @@
 						n.name
 					}),
 					isNightmodeOn: P.db,
-					locale: N.i
+					locale: N.j
 				}),
 				W = Object(d.b)(q, (e, t) => {
 					let {
@@ -4009,4 +4009,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ReportFlow.ff8fa4ab4540d8ea26f4.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ReportFlow.90976ea18ece81024d42.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Poll.a3f9da402ae25cf89924.js
-// Retrieved at 6/29/2022, 1:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Poll.d3976ce15a95e238ed54.js
+// Retrieved at 7/7/2022, 2:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Poll"], {
 		"./src/lib/bigNumberUtils/percent.ts": function(e, t, n) {
@@ -1511,7 +1511,7 @@
 				s = n("./node_modules/react-redux/es/index.js"),
 				i = n("./src/reddit/selectors/meta.ts");
 			const a = "undefined" == typeof document ? function() {
-				const e = Object(s.e)(i.i) || o.DEFAULT_LOCALE;
+				const e = Object(s.e)(i.j) || o.DEFAULT_LOCALE;
 				return Object(r.isPseudoLocale)(e) ? o.DEFAULT_LOCALE : e
 			} : function() {
 				const e = document.documentElement.lang || o.DEFAULT_LOCALE;
@@ -1787,4 +1787,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Poll.a3f9da402ae25cf89924.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Poll.d3976ce15a95e238ed54.js.map

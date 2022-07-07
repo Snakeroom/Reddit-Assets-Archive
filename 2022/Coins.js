@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Coins.fc4fa3684f64eefd7095.js
-// Retrieved at 6/30/2022, 12:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Coins.adbd9b900fdcf474a58c.js
+// Retrieved at 7/7/2022, 2:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Coins"], {
 		"./node_modules/@stripe/react-stripe-js/dist/react-stripe.umd.js": function(e, t, n) {
@@ -2055,7 +2055,7 @@
 				pe = Object(l.b)(me, (e, t) => ({
 					onRouteToManagePremium: () => e(Object(d.b)("/settings/gold")),
 					onRouteToPremium: () => e(Object(d.b)("/premium")),
-					onOpenLoginModal: () => e(Object(T.i)()),
+					onOpenLoginModal: () => e(Object(T.openLoginModal)()),
 					onOpenTargetedOfferModal: (t, n) => e(Object(N.e)({
 						correlationId: n,
 						packageId: t.mobileId
@@ -2339,4 +2339,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Coins.fc4fa3684f64eefd7095.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Coins.adbd9b900fdcf474a58c.js.map
