@@ -1,8 +1,8 @@
-// https://www.redditstatic.com/desktop2x/EconManagement2.dba4f9d8692d73c73eae.js
-// Retrieved at 7/5/2022, 2:20:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/EconManagement2.2d18b64d43fc5bc8fdeb.js
+// Retrieved at 7/7/2022, 6:10:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["EconManagement2"], {
-		"./src/reddit/controls/SearchBar/index.m.less": function(e, a, n) {
+		"./src/reddit/controls/SearchBar/index.m.less": function(e, a, t) {
 			e.exports = {
 				searchContainer: "_13yLxNALfY3_F48PYybgUr",
 				search: "RxQA71ktKLBiPThTT7ita",
@@ -12,18 +12,18 @@
 				mRightAligned: "_1fLhMe5y6XbNg-lgHQrh5e"
 			}
 		},
-		"./src/reddit/controls/SearchBar/index.tsx": function(e, a, n) {
+		"./src/reddit/controls/SearchBar/index.tsx": function(e, a, t) {
 			"use strict";
-			var t = n("./node_modules/react/index.js"),
-				r = n.n(t),
-				s = n("./src/lib/classNames/index.ts"),
-				l = n("./src/reddit/icons/svgs/Search/index.tsx"),
-				c = n("./src/reddit/controls/SearchBar/index.m.less"),
-				i = n.n(c);
-			a.a = e => r.a.createElement("div", {
-				className: Object(s.a)(i.a.searchContainer, e.className)
-			}, r.a.createElement("input", {
-				className: Object(s.a)(i.a.search, {
+			var n = t("./node_modules/react/index.js"),
+				l = t.n(n),
+				r = t("./src/lib/classNames/index.ts"),
+				s = t("./src/reddit/icons/svgs/Search/index.tsx"),
+				c = t("./src/reddit/controls/SearchBar/index.m.less"),
+				i = t.n(c);
+			a.a = e => l.a.createElement("div", {
+				className: Object(r.a)(i.a.searchContainer, e.className)
+			}, l.a.createElement("input", {
+				className: Object(r.a)(i.a.search, {
 					[i.a.mRightAlignedIcon]: e.rightAlignedIcon
 				}),
 				autoFocus: e.autoFocus,
@@ -33,49 +33,56 @@
 				placeholder: e.placeholder,
 				ref: e.innerRef,
 				value: e.value
-			}), r.a.createElement("div", {
-				className: Object(s.a)(i.a.searchIconContainer, {
+			}), l.a.createElement("div", {
+				className: Object(r.a)(i.a.searchIconContainer, {
 					[i.a.mClickable]: !!e.onSearch,
 					[i.a.mRightAligned]: e.rightAlignedIcon
 				}),
 				onClick: e.onSearch
-			}, r.a.createElement(l.a, null)))
+			}, l.a.createElement(s.a, null)))
 		},
-		"./src/reddit/pages/EconManagement2/EMSearchResult/EMProfile/index.m.less": function(e, a, n) {
+		"./src/reddit/pages/EconManagement2/EMSearchResult/EMProfile/index.m.less": function(e, a, t) {
 			e.exports = {
 				profile: "_1rM5svrNp7Agn4Ymy77Pti",
 				userOverview: "_3sF4itWYKet4hcMAXSOWGf",
 				row: "_2cp_v4M7xWej47OtObRK8I"
 			}
 		},
-		"./src/reddit/pages/EconManagement2/EMSearchResult/index.m.less": function(e, a, n) {
+		"./src/reddit/pages/EconManagement2/EMSearchResult/EMTransactionsTable/index.m.less": function(e, a, t) {
 			e.exports = {
-				resultsContainer: "_3tCIpAJ8LhiwOYmM6IHm77"
+				panel: "_21352l_g53uxmxQxQW1sgf",
+				tab: "_2R39Uly3qTTZFmZ5QZ6l0u",
+				selectedTab: "_3r7w0gW8zielR-Bdf8RTwV"
 			}
 		},
-		"./src/reddit/pages/EconManagement2/index.m.less": function(e, a, n) {
+		"./src/reddit/pages/EconManagement2/EMSearchResult/index.m.less": function(e, a, t) {
+			e.exports = {
+				moreDetailsSection: "T_ZNI6kVXFbDhEXsKVm90"
+			}
+		},
+		"./src/reddit/pages/EconManagement2/index.m.less": function(e, a, t) {
 			e.exports = {
 				container: "_1rVWHZMJ7WaUUW_ohqHk5F",
 				searchContainer: "_3RbBkhd5fe6vUwr7MsYr78",
 				searchBar: "_3_E8ERt-gZkEN9R-vzLd_Y"
 			}
 		},
-		"./src/reddit/pages/EconManagement2/index.tsx": function(e, a, n) {
+		"./src/reddit/pages/EconManagement2/index.tsx": function(e, a, t) {
 			"use strict";
-			n.r(a);
-			var t = n("./node_modules/react/index.js"),
-				r = n.n(t),
-				s = n("./node_modules/react-redux/es/index.js"),
-				l = n("./src/reddit/actions/economics/econManagement/index.ts"),
-				c = n("./src/reddit/controls/SearchBar/index.tsx"),
-				i = n("./src/reddit/pages/EconManagement2/index.m.less"),
-				o = n.n(i);
-			const d = () => {
-				const [e, a] = Object(t.useState)(""), n = Object(s.d)();
-				return r.a.createElement(c.a, {
+			t.r(a);
+			var n = t("./node_modules/react/index.js"),
+				l = t.n(n),
+				r = t("./node_modules/react-redux/es/index.js"),
+				s = t("./src/reddit/actions/economics/econManagement/index.ts"),
+				c = t("./src/reddit/controls/SearchBar/index.tsx"),
+				i = t("./src/reddit/pages/EconManagement2/index.m.less"),
+				o = t.n(i);
+			const u = () => {
+				const [e, a] = Object(n.useState)(""), t = Object(r.d)();
+				return l.a.createElement(c.a, {
 					className: o.a.searchBar,
 					onKeyPress: a => {
-						13 === a.charCode && n(Object(l.d)(e))
+						13 === a.charCode && t(Object(s.d)(e))
 					},
 					onTextChange: e => {
 						a(e.currentTarget.value)
@@ -84,81 +91,128 @@
 					placeholder: "Username or user id"
 				})
 			};
-			var m = n("./src/reddit/selectors/econManagement.ts"),
-				u = n("./src/reddit/controls/Button/index.tsx"),
-				v = n("./src/reddit/pages/EconManagement2/EMSearchResult/EMProfile/index.m.less"),
-				E = n.n(v);
+			var m = t("./src/reddit/selectors/econManagement.ts"),
+				d = t("./src/reddit/controls/Button/index.tsx"),
+				E = t("./src/reddit/pages/EconManagement2/EMSearchResult/EMProfile/index.m.less"),
+				h = t.n(E);
 			const {
-				fbt: h
-			} = n("./node_modules/fbt/lib/FbtPublic.js"), p = e => {
-				const [a, n] = Object(t.useState)(), [s, l] = Object(t.useState)(), c = ["goldSubscriptionId", "isPremium", "premiumExpiration"].map(a => r.a.createElement("p", {
+				fbt: p
+			} = t("./node_modules/fbt/lib/FbtPublic.js"), v = e => {
+				const [a, t] = Object(n.useState)(), [r, s] = Object(n.useState)(), c = ["goldSubscriptionId", "isPremium", "premiumExpiration"].map(a => l.a.createElement("p", {
 					key: a
-				}, r.a.createElement("strong", null, a, ": "), r.a.createElement("span", null, e[a] + "")));
-				return r.a.createElement("div", {
-					className: E.a.profile
-				}, r.a.createElement("div", {
-					className: E.a.userOverview
-				}, r.a.createElement("h4", null, r.a.createElement("a", {
+				}, l.a.createElement("strong", null, a, ": "), l.a.createElement("span", null, e[a] + "")));
+				return l.a.createElement("div", {
+					className: h.a.profile
+				}, l.a.createElement("div", {
+					className: h.a.userOverview
+				}, l.a.createElement("h4", null, l.a.createElement("a", {
 					href: `/user/${e.username}`
-				}, e.username)), !!e.email && r.a.createElement("p", null, e.email), r.a.createElement("p", null, e.id)), r.a.createElement("div", {
-					className: E.a.userOverview
-				}, c), r.a.createElement("div", {
-					className: E.a.userOverview
-				}, r.a.createElement("div", {
-					className: E.a.row
-				}, r.a.createElement("input", {
+				}, e.username)), !!e.email && l.a.createElement("p", null, e.email), l.a.createElement("p", null, e.id)), l.a.createElement("div", {
+					className: h.a.userOverview
+				}, c), l.a.createElement("div", {
+					className: h.a.userOverview
+				}, l.a.createElement("div", {
+					className: h.a.row
+				}, l.a.createElement("input", {
 					type: "number",
 					value: a || "",
 					onChange: e => {
 						var a;
-						return n(parseInt(null === (a = null == e ? void 0 : e.target) || void 0 === a ? void 0 : a.value))
+						return t(parseInt(null === (a = null == e ? void 0 : e.target) || void 0 === a ? void 0 : a.value))
 					},
-					placeholder: h._("Amount", null, {
+					placeholder: p._("Amount", null, {
 						hk: "3qQoll"
 					}),
-					className: E.a.coinsInput
-				}), r.a.createElement(u.t, {
-					priority: u.c.Primary,
+					className: h.a.coinsInput
+				}), l.a.createElement(d.t, {
+					priority: d.c.Primary,
 					disabled: !a
-				}, h._("Give Coins", null, {
+				}, p._("Give Coins", null, {
 					hk: "2DtgNR"
-				})), r.a.createElement(u.f, {
+				})), l.a.createElement(d.f, {
 					disabled: !a
-				}, h._("Remove Coins", null, {
+				}, p._("Remove Coins", null, {
 					hk: "24ePW3"
-				}))), r.a.createElement("div", {
-					className: E.a.row
-				}, r.a.createElement("input", {
+				}))), l.a.createElement("div", {
+					className: h.a.row
+				}, l.a.createElement("input", {
 					type: "number",
-					placeholder: h._("Days", null, {
+					placeholder: p._("Days", null, {
 						hk: "2NTZUs"
 					}),
-					value: s || "",
-					className: E.a.coinsInput,
+					value: r || "",
+					className: h.a.coinsInput,
 					onChange: e => {
 						var a;
-						return l(parseInt(null === (a = null == e ? void 0 : e.target) || void 0 === a ? void 0 : a.value))
+						return s(parseInt(null === (a = null == e ? void 0 : e.target) || void 0 === a ? void 0 : a.value))
 					}
-				}), r.a.createElement(u.t, {
-					priority: u.c.Primary,
-					disabled: !s
-				}, h._("Give Premium", null, {
+				}), l.a.createElement(d.t, {
+					priority: d.c.Primary,
+					disabled: !r
+				}, p._("Give Premium", null, {
 					hk: "yy9AK"
-				}))), r.a.createElement("div", {
-					className: E.a.row
-				}, r.a.createElement(u.f, null, h._("Cancel Subscription", null, {
+				}))), l.a.createElement("div", {
+					className: h.a.row
+				}, l.a.createElement(d.f, null, p._("Cancel Subscription", null, {
 					hk: "1myJLR"
 				})))))
 			};
-			var g = n("./src/reddit/pages/EconManagement2/EMSearchResult/index.m.less"),
-				_ = n.n(g);
-			const x = () => {
-				const e = Object(s.e)(m.b);
-				return r.a.createElement("div", {
-					className: _.a.resultsContainer
-				}, e && r.a.createElement(p, (e => {
+			t("./node_modules/core-js/modules/web.dom.iterable.js");
+			var b = t("./src/lib/classNames/index.ts");
+			const {
+				fbt: _
+			} = t("./node_modules/fbt/lib/FbtPublic.js"), g = l.a.createElement("thead", null, l.a.createElement("tr", null, l.a.createElement("th", null, _._("grace_period", null, {
+				hk: "25Ez2p"
+			})), l.a.createElement("th", null, _._("paid_period", null, {
+				hk: "3biVSJ"
+			})), l.a.createElement("th", null, _._("started", null, {
+				hk: "1Dcznw"
+			})), l.a.createElement("th", null, _._("state", null, {
+				hk: "4spQX8"
+			})), l.a.createElement("th", null, _._("subscription_status", null, {
+				hk: "3fQCya"
+			})), l.a.createElement("th", null, _._("subscription_id", null, {
+				hk: "He5mR"
+			})), l.a.createElement("th", null, _._("valid_until", null, {
+				hk: "3kBqUJ"
+			})), l.a.createElement("th", null, _._("will_renew", null, {
+				hk: "2afdap"
+			})))), x = e => l.a.createElement("table", null, g, l.a.createElement("tbody", null, e.subscriptions.map(e => l.a.createElement("tr", {
+				key: e.subscription_id.value
+			}))));
+			var S, N = t("./src/reddit/pages/EconManagement2/EMSearchResult/EMTransactionsTable/index.m.less"),
+				R = t.n(N);
+			! function(e) {
+				e.ORDERS = "Orders", e.SUBSCRIPTIONS = "Subscriptions", e.PAYMENTS = "Payments", e.RECURRING_PAYMENTS = "Recurring Payments"
+			}(S || (S = {}));
+			const f = e => {
+				const [a, t] = Object(n.useState)(S.ORDERS), r = Object.values(S).map(e => l.a.createElement("button", {
+					key: e,
+					onClick: () => t(e),
+					className: Object(b.a)(R.a.tab, {
+						[R.a.selectedTab]: a === e
+					})
+				}, e));
+				return l.a.createElement("div", {
+					className: R.a.panel
+				}, l.a.createElement("nav", null, r), (a => {
+					switch (a) {
+						case S.SUBSCRIPTIONS:
+							return l.a.createElement(x, {
+								subscriptions: e.subscriptions
+							});
+						default:
+							return null
+					}
+				})(a))
+			};
+			var M = t("./src/reddit/pages/EconManagement2/EMSearchResult/index.m.less"),
+				y = t.n(M);
+			const O = () => {
+				const e = Object(r.e)(m.b);
+				return l.a.createElement("div", null, e && l.a.createElement(l.a.Fragment, null, l.a.createElement(v, (e => {
 					const a = e.userData.value,
-						n = e.thingState.value;
+						t = e.thingState.value;
 					return {
 						createdAt: a.createdAt.value,
 						email: a.email.value,
@@ -167,18 +221,22 @@
 						suspended: a.suspended.value,
 						username: a.username.value,
 						isEmployee: a.isEmployee.value,
-						isPremium: n.isPremium.value,
-						goldSubscriptionId: n.goldSubscriptionId.value,
-						premiumExpiration: n.premiumExpirationThing.value
+						isPremium: t.isPremium.value,
+						goldSubscriptionId: t.goldSubscriptionId.value,
+						premiumExpiration: t.premiumExpirationThing.value
 					}
-				})(e.details)))
+				})(e.details)), l.a.createElement("div", {
+					className: y.a.moreDetailsSection
+				}, l.a.createElement(f, {
+					subscriptions: e.details.subscriptions.value
+				}))))
 			};
-			a.default = () => r.a.createElement("div", {
+			a.default = () => l.a.createElement("div", {
 				className: o.a.container
-			}, r.a.createElement("div", {
+			}, l.a.createElement("div", {
 				className: o.a.searchContainer
-			}, r.a.createElement(d, null)), r.a.createElement(x, null))
+			}, l.a.createElement(u, null)), l.a.createElement(O, null))
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EconManagement2.dba4f9d8692d73c73eae.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EconManagement2.2d18b64d43fc5bc8fdeb.js.map
