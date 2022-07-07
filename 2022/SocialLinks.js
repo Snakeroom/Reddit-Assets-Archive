@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SocialLinks.d568f2d575351bec7825.js
-// Retrieved at 6/27/2022, 2:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SocialLinks.340c92654ac9b8bbd11a.js
+// Retrieved at 7/7/2022, 11:50:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SocialLinks"], {
 		"./node_modules/linkify-it/index.js": function(e, t, s) {
@@ -199,7 +199,7 @@
 			})), s.d(t, "h", (function() {
 				return v
 			})), s.d(t, "i", (function() {
-				return D
+				return z
 			}));
 			var i = s("./node_modules/linkify-it/index.js"),
 				n = s.n(i),
@@ -250,7 +250,7 @@
 					const s = e.match(t);
 					if (s && 1 === s.length && 0 === s[0].index && s[0].lastIndex === t.length) return s[0]
 				},
-				D = e => {
+				z = e => {
 					const t = h.match(e);
 					if (t && 1 === t.length && 0 === t[0].index) {
 						const s = t[0];
@@ -266,11 +266,11 @@
 			s.d(t, "c", (function() {
 				return D
 			})), s.d(t, "a", (function() {
-				return F
-			})), s.d(t, "b", (function() {
 				return w
-			})), s.d(t, "d", (function() {
+			})), s.d(t, "b", (function() {
 				return j
+			})), s.d(t, "d", (function() {
+				return C
 			}));
 			var i = s("./src/lib/makeActionCreator/index.ts"),
 				n = s("./src/reddit/components/SocialLinks/constants.ts"),
@@ -283,20 +283,21 @@
 			var d = s("./src/reddit/helpers/name/index.ts"),
 				_ = s("./src/reddit/helpers/structuredStyles/validators.ts"),
 				h = s("./src/reddit/selectors/socialLinks.ts"),
-				m = s("./src/redditGQL/types.ts"),
-				p = s("./src/reddit/actions/socialLinks/constants.ts"),
-				f = s("./src/lib/initializeClient/installReducer.ts"),
-				b = s("./src/reddit/reducers/features/socialLinks/index.ts");
-			Object(f.a)({
+				m = s("./src/reddit/selectors/user.ts"),
+				p = s("./src/redditGQL/types.ts"),
+				f = s("./src/reddit/actions/socialLinks/constants.ts"),
+				b = s("./src/lib/initializeClient/installReducer.ts"),
+				g = s("./src/reddit/reducers/features/socialLinks/index.ts");
+			Object(b.a)({
 				features: {
-					socialLinks: b.a
+					socialLinks: g.a
 				}
 			});
-			const g = Object(i.a)(p.a),
-				k = Object(i.a)(p.b),
-				y = Object(i.a)(p.c),
-				x = Object(i.a)(p.d),
-				v = Object(i.a)(p.e),
+			const k = Object(i.a)(f.a),
+				y = Object(i.a)(f.b),
+				x = Object(i.a)(f.c),
+				v = Object(i.a)(f.d),
+				z = Object(i.a)(f.e),
 				D = e => {
 					let {
 						username: t
@@ -306,8 +307,8 @@
 							gqlContext: n
 						} = i;
 						const r = s();
-						if (!!Object(h.c)(r, t)) return;
-						e(k());
+						if (!!Object(h.b)(r, t)) return;
+						e(y());
 						const a = await (async (e, t) => {
 							return await Object(o.a)(e, {
 								...l,
@@ -330,11 +331,11 @@
 									o = (null === (s = n.profile) || void 0 === s ? void 0 : s.socialLinks) || [];
 								return i[r] = o, i
 							})(t, s);
-							i && e(g(i))
+							i && e(k(i))
 						}
 					}
 				},
-				z = e => {
+				F = e => {
 					let t, s, i, {
 						socialLinkOption: r,
 						rawHandle: o,
@@ -345,7 +346,7 @@
 						const e = null == c ? void 0 : c.trim();
 						if (!(e && Object(_.g)(e) === _.d.Valid)) throw new Error(n.f);
 						t = e, s = null == a ? void 0 : a.trim()
-					} else if (r.socialLinkType === m.z.Reddit) {
+					} else if (r.socialLinkType === p.z.Reddit) {
 						const e = null == o ? void 0 : o.trim();
 						if (!(e && Object(d.e)(e) && e && e.length >= n.h && !/\s/.test(e))) throw new Error(n.e);
 						i = e
@@ -357,7 +358,7 @@
 						type: r.socialLinkType
 					}
 				},
-				F = (e, t) => async (s, i, a) => {
+				w = (e, t) => async (s, i, a) => {
 					let {
 						gqlContext: l
 					} = a;
@@ -365,14 +366,14 @@
 						{
 							socialLinkOption: d,
 							rawHandle: _,
-							rawTitle: m,
+							rawTitle: h,
 							url: p
 						} = t;
-					if (!Object(h.a)(u, e)) return;
-					const f = z({
+					if (!Object(m.W)(u, e)) return;
+					const f = F({
 							socialLinkOption: d,
 							rawHandle: _,
-							rawTitle: m,
+							rawTitle: h,
 							url: p
 						}),
 						b = await (async (e, t) => {
@@ -402,7 +403,7 @@
 								}
 							})(a, e);
 							if (!t) throw new Error(n.b);
-							s(y(t))
+							s(x(t))
 						} else Object(r.f)(i)
 					} else {
 						const {
@@ -410,12 +411,12 @@
 						} = b.body;
 						Object(r.f)(e)
 					}
-				}, w = (e, t) => async (s, i, n) => {
+				}, j = (e, t) => async (s, i, n) => {
 					let {
 						gqlContext: r
 					} = n;
 					const c = i();
-					if (!Object(h.a)(c, t)) return;
+					if (!Object(m.W)(c, t)) return;
 					const l = await (async (e, t) => {
 						return await Object(o.a)(e, {
 							...a,
@@ -433,24 +434,24 @@
 								removedSocialLinkId: t
 							}
 						})(t, e);
-						s(x(i))
+						s(v(i))
 					}
-				}, j = (e, t, s) => async (i, a, c) => {
+				}, C = (e, t, s) => async (i, a, c) => {
 					let {
 						gqlContext: l
 					} = c;
 					const d = a(),
 						{
 							socialLinkOption: _,
-							rawHandle: m,
+							rawHandle: h,
 							rawTitle: p,
 							url: f
 						} = s;
-					if (!Object(h.a)(d, t)) return;
+					if (!Object(m.W)(d, t)) return;
 					const b = {
-							...z({
+							...F({
 								socialLinkOption: _,
-								rawHandle: m,
+								rawHandle: h,
 								rawTitle: p,
 								url: f
 							}),
@@ -483,7 +484,7 @@
 								}
 							})(e, c, t);
 							if (!s) throw new Error(n.b);
-							i(v(s))
+							i(z(s))
 						} else Object(r.f)(o)
 					} else {
 						const {
@@ -711,9 +712,6 @@
 		},
 		"./src/reddit/components/SocialLinks/index.m.less": function(e, t, s) {
 			e.exports = {
-				tooltip: "_1C8GVFvM_jBPE1fU9R1RV8",
-				box: "_3c9JLlNxIIe5XLRVIlTx1j",
-				caretDown: "KQqYfP_xd0-91CSjyXsTq",
 				socialLinks: "QVtpm4z0mTELUZB0dQ8Yv",
 				addIcon: "_2s0bDJFN76mRu9XROx_tRr",
 				removeIcon: "_3lIJSmTOV4YW8OZxVLia_"
@@ -730,22 +728,20 @@
 				c = s("./src/lib/constants/icons.ts"),
 				l = s("./src/reddit/actions/modal.ts"),
 				u = s("./src/reddit/actions/socialLinks/index.ts"),
-				d = s("./src/reddit/constants/localStorage.ts"),
-				_ = s("./src/reddit/helpers/trackers/socialLinks.ts"),
-				h = s("./src/reddit/hooks/useLocalStorage.ts"),
-				m = s("./src/reddit/hooks/useOutboundClickTracking.ts"),
-				p = s("./src/reddit/hooks/useTracking.ts"),
-				f = s("./src/reddit/icons/fonts/index.tsx"),
-				b = s("./src/reddit/selectors/activeModal.ts"),
-				g = s("./src/reddit/selectors/socialLinks.ts"),
-				k = s("./src/telemetry/models/Outbound.ts"),
-				y = s("./src/reddit/components/SocialLinks/constants.ts"),
-				x = s("./src/reddit/components/SocialLinks/SocialLinkButton.tsx"),
-				v = s("./src/reddit/components/SocialLinks/index.m.less"),
-				D = s.n(v);
+				d = s("./src/reddit/helpers/trackers/socialLinks.ts"),
+				_ = s("./src/reddit/hooks/useOutboundClickTracking.ts"),
+				h = s("./src/reddit/hooks/useTracking.ts"),
+				m = s("./src/reddit/icons/fonts/index.tsx"),
+				p = s("./src/reddit/selectors/activeModal.ts"),
+				f = s("./src/reddit/selectors/socialLinks.ts"),
+				b = s("./src/telemetry/models/Outbound.ts"),
+				g = s("./src/reddit/components/SocialLinks/constants.ts"),
+				k = s("./src/reddit/components/SocialLinks/SocialLinkButton.tsx"),
+				y = s("./src/reddit/components/SocialLinks/index.m.less"),
+				x = s.n(y);
 			const {
-				fbt: z
-			} = s("./node_modules/fbt/lib/FbtPublic.js"), F = Object(i.a)({
+				fbt: v
+			} = s("./node_modules/fbt/lib/FbtPublic.js"), z = Object(i.a)({
 				resolved: {},
 				chunkName: () => "AddSocialLinkModal",
 				isReady(e) {
@@ -764,7 +760,7 @@
 				resolve() {
 					return "./src/reddit/components/SocialLinks/AddSocialLinkModal.tsx"
 				}
-			}), w = Object(i.a)({
+			}), D = Object(i.a)({
 				resolved: {},
 				chunkName: () => "reddit-controls-InternalLink",
 				isReady(e) {
@@ -783,33 +779,33 @@
 				resolve() {
 					return "./src/reddit/controls/InternalLink/index.tsx"
 				}
-			}), j = e => {
+			}), F = e => {
 				let {
 					isCreationEnabled: t,
 					isOwnUserSettings: s,
 					socialLinksClassName: i,
-					username: v
+					username: y
 				} = e;
-				const j = Object(o.d)(),
-					C = Object(p.a)(),
-					[L, E] = Object(n.useState)(),
-					[A, O] = Object(n.useState)(0);
+				const F = Object(o.d)(),
+					w = Object(h.a)(),
+					[j, C] = Object(n.useState)(),
+					[L, E] = Object(n.useState)(0);
 				Object(n.useEffect)(() => {
-					j(Object(u.c)({
-						username: v
+					F(Object(u.c)({
+						username: y
 					}))
-				}, [j, v]);
-				const S = Object(o.e)(e => Object(g.c)(e, v)),
-					B = Object(n.useCallback)(() => {
-						E(void 0), j(Object(l.h)(y.a));
-						const e = ((null == S ? void 0 : S.length) || 0) + 1;
-						O(e);
+				}, [F, y]);
+				const A = Object(o.e)(e => Object(f.b)(e, y)),
+					O = Object(n.useCallback)(() => {
+						C(void 0), F(Object(l.h)(g.a));
+						const e = ((null == A ? void 0 : A.length) || 0) + 1;
+						E(e);
 						const t = s ? "profile_settings" : "profile";
-						C(Object(_.a)(t))
-					}, [j, s, C, S]),
-					T = Object(o.e)(e => Object(b.c)(y.a)(e)),
-					I = Object(m.a)(),
-					P = Object(n.useCallback)((e, i) => {
+						w(Object(d.a)(t))
+					}, [F, s, w, A]),
+					S = Object(o.e)(e => Object(p.c)(g.a)(e)),
+					B = Object(_.a)(),
+					T = Object(n.useCallback)((e, i) => {
 						const n = i + 1,
 							r = {
 								socialLinkType: e.type,
@@ -818,15 +814,15 @@
 								position: n,
 								isNew: !1
 							};
-						if (t && s) E(e), O(n), j(Object(l.h)(y.a)), C(Object(_.c)(r));
+						if (t && s) C(e), E(n), F(Object(l.h)(g.a)), w(Object(d.c)(r));
 						else {
 							const {
 								outboundUrl: t
 							} = e;
-							window.open(t, "_blank"), C(Object(_.f)(r)), I(t, k.SourceElement.SocialLink, void 0, void 0, e.type)
+							window.open(t, "_blank"), w(Object(d.f)(r)), B(t, b.SourceElement.SocialLink, void 0, void 0, e.type)
 						}
-					}, [j, t, s, C, I]),
-					N = Object(n.useCallback)((e, t, s) => {
+					}, [F, t, s, w, B]),
+					I = Object(n.useCallback)((e, t, s) => {
 						const {
 							handle: i,
 							id: n,
@@ -834,56 +830,46 @@
 							title: o,
 							type: a
 						} = t, c = s + 1;
-						e.stopPropagation(), j(Object(u.b)(n, v)), C(Object(_.b)({
+						e.stopPropagation(), F(Object(u.b)(n, y)), w(Object(d.b)({
 							socialLinkType: a,
 							outboundUrl: r,
 							name: i || o,
 							position: c,
 							isNew: !1
 						}))
-					}, [j, C, v]),
-					[Z] = Object(h.a)(d.b.SOCIAL_LINKS_ADDED, !1),
-					q = t && (s || S && S.length < y.g),
-					R = t && !s && S && S.length >= y.g,
-					U = t && !s && !Z && S && 0 === S.length;
-				return r.a.createElement(r.a.Fragment, null, U && r.a.createElement("div", {
-					className: D.a.tooltip
-				}, r.a.createElement("div", {
-					className: D.a.box
-				}, z._("NEW! Add your social links", null, {
-					hk: "12vdsF"
-				})), r.a.createElement("div", {
-					className: D.a.caretDown
-				})), r.a.createElement("div", {
-					className: Object(a.a)(D.a.socialLinks, i)
-				}, S && S.map((e, t) => r.a.createElement(x.a, {
+					}, [F, w, y]),
+					Z = t && (s || A && A.length < g.g),
+					P = t && !s && A && A.length >= g.g;
+				return r.a.createElement(r.a.Fragment, null, r.a.createElement("div", {
+					className: Object(a.a)(x.a.socialLinks, i)
+				}, A && A.map((e, t) => r.a.createElement(k.a, {
 					key: e.id,
 					socialLinkType: e.type,
-					onClick: () => P(e, t)
-				}, e.handle || e.title, s && r.a.createElement(f.a, {
+					onClick: () => T(e, t)
+				}, e.handle || e.title, s && r.a.createElement(m.a, {
 					name: c.a.clear,
-					className: D.a.removeIcon,
-					onClick: s => N(s, e, t)
-				}))), q && r.a.createElement(x.a, {
-					disabled: !S || S.length >= y.g,
-					onClick: B
-				}, r.a.createElement(f.a, {
+					className: x.a.removeIcon,
+					onClick: s => I(s, e, t)
+				}))), Z && r.a.createElement(k.a, {
+					disabled: !A || A.length >= g.g,
+					onClick: O
+				}, r.a.createElement(m.a, {
 					name: c.a.add,
-					className: D.a.addIcon
-				}), z._("Add social link", null, {
+					className: x.a.addIcon
+				}), v._("Add social link", null, {
 					hk: "4hANO2"
-				})), R && r.a.createElement(w, {
+				})), P && r.a.createElement(D, {
 					to: "/settings/profile"
-				}, r.a.createElement(x.a, null, z._("Edit", null, {
+				}, r.a.createElement(k.a, null, v._("Edit", null, {
 					hk: "3MTv8r"
-				}))), t && T && r.a.createElement(F, {
-					socialLink: L,
-					socialLinkPosition: A,
-					username: v,
+				}))), t && S && r.a.createElement(z, {
+					socialLink: j,
+					socialLinkPosition: L,
+					username: y,
 					withOverlay: !0
 				})))
 			};
-			t.default = j
+			t.default = F
 		},
 		"./src/reddit/helpers/structuredStyles/validators.ts": function(e, t, s) {
 			"use strict";
@@ -939,4 +925,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SocialLinks.d568f2d575351bec7825.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SocialLinks.340c92654ac9b8bbd11a.js.map

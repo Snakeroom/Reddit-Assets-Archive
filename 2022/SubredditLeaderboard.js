@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditLeaderboard.d59f3c0ddc18dc56a969.js
-// Retrieved at 7/7/2022, 10:50:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditLeaderboard.f18da8c63218f6b45517.js
+// Retrieved at 7/7/2022, 11:50:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditLeaderboard"], {
 		"./node_modules/lodash/times.js": function(e, t, r) {
@@ -73,7 +73,7 @@
 									icon: e.category_icon,
 									id: e.category_id,
 									name: e.category_name,
-									displayText: Object(u.Zf)(e.category_name)
+									displayText: Object(u.Xf)(e.category_name)
 								};
 								r.push(s.id), t[s.id] = s
 							}), {
@@ -2481,8 +2481,8 @@
 					to: t.path || ""
 				}), r, t.customIcon))
 			};
-			var Y = r("./src/reddit/components/Widgets/ThemedWidget/index.tsx"),
-				X = r("./src/reddit/controls/Button/index.tsx"),
+			var X = r("./src/reddit/components/Widgets/ThemedWidget/index.tsx"),
+				Y = r("./src/reddit/controls/Button/index.tsx"),
 				$ = r("./src/reddit/helpers/name/index.ts");
 			const {
 				fbt: ee
@@ -2555,14 +2555,14 @@
 						headerClassName: s,
 						initialNumberOfCategories: a
 					} = this.props, o = t && a && t.length > a, d = Object(c.a)(r, U.a.container);
-					return i.a.createElement(Y.a, {
+					return i.a.createElement(X.a, {
 						className: d,
 						contentOnly: !0
 					}, i.a.createElement("div", {
 						className: Object(c.a)(U.a.header, s)
 					}, i.a.createElement("h2", null, n || ee._("Categories", null, {
 						hk: "46zLMb"
-					}))), this.renderCategoryList(), o && i.a.createElement(X.r, {
+					}))), this.renderCategoryList(), o && i.a.createElement(Y.r, {
 						className: Object(c.a)(U.a.button, e),
 						onClick: this.toggleExpanded
 					}, o && !this.state.isExpanded ? ee._("Show More", null, {
@@ -2585,7 +2585,7 @@
 					key: e
 				}, e)
 			};
-			var le = e => i.a.createElement(Y.a, {
+			var le = e => i.a.createElement(X.a, {
 					className: ie.a.Widget,
 					redditStyle: e.redditStyle,
 					contentOnly: !0
@@ -2638,7 +2638,7 @@
 					} = t;
 					return Object(g.b)(r.params.categoryName || "")
 				},
-				Ee = Object(m.Yf)(p.i),
+				Ee = Object(m.Wf)(p.i),
 				_e = Object(d.c)({
 					categories: e => Object(ye.b)(e, {
 						categoriesOrder: Ee
@@ -2791,4 +2791,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditLeaderboard.d59f3c0ddc18dc56a969.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditLeaderboard.f18da8c63218f6b45517.js.map

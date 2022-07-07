@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditInlineEditing.eff5c3d2e7e83090e112.js
-// Retrieved at 6/13/2022, 2:20:03 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditInlineEditing.4444d95861005ee59775.js
+// Retrieved at 7/7/2022, 11:50:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditInlineEditing"], {
 		"./src/reddit/components/CommunityTopics/NumTopicsSelected.tsx": function(e, t, s) {
@@ -87,7 +87,7 @@
 					e(Object(c.i)()), Object(u.zb)()
 				},
 				onViewTooltip: () => {
-					Object(u.Wb)()
+					Object(u.Vb)()
 				}
 			}))(Object(p.c)(g));
 			const T = "editable-primary-topic-idcard";
@@ -819,7 +819,7 @@
 				onShowTooltip: t => e(Object(l.f)({
 					tooltipId: t
 				}))
-			})), W = "inline-editing-topics-tooltip-", V = {
+			})), V = "inline-editing-topics-tooltip-", W = {
 				top: N.a.alienblue,
 				bottom: N.a.alienblue
 			};
@@ -832,7 +832,7 @@
 					}
 				}
 				makeUniqueTooltipId() {
-					return `${W}${M()()}`
+					return `${V}${M()()}`
 				}
 				componentDidMount() {
 					this.setState({
@@ -854,7 +854,7 @@
 					}), o.a.createElement(L.a, {
 						tooltipId: this.state.tooltipId,
 						defaultTooltipPosition: "bottom",
-						caretColor: V
+						caretColor: W
 					}, o.a.createElement("div", {
 						className: A.a.container
 					}, U._("Adding community topics allow people to find your community. Add a primary topic and sub topics to be discovered more easily.", null, {
@@ -1753,4 +1753,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditInlineEditing.eff5c3d2e7e83090e112.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditInlineEditing.4444d95861005ee59775.js.map

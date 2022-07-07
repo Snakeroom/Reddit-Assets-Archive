@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SocialLinkEditor.8941bfbd1f04c5fd5cbb.js
-// Retrieved at 7/1/2022, 5:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SocialLinkEditor.659d9be609551d9fa57b.js
+// Retrieved at 7/7/2022, 11:50:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SocialLinkEditor"], {
 		"./src/reddit/components/SocialLinks/SocialLinkEditor.tsx": function(e, t, n) {
@@ -13,93 +13,92 @@
 				i = n("./src/reddit/components/ModalStyledComponents/index.tsx"),
 				d = n("./src/reddit/components/StructuredStyles/StyledComponents/inputs.ts"),
 				o = n("./src/reddit/controls/Button/index.tsx"),
-				u = n("./src/reddit/helpers/localStorage/index.ts"),
-				p = n("./src/reddit/helpers/trackers/socialLinks.ts"),
-				m = n("./src/reddit/hooks/useTracking.ts"),
-				h = n("./src/reddit/icons/fonts/index.tsx"),
-				x = n("./src/reddit/layout/threeCol/ExpandCenter/index.tsx"),
-				b = n("./src/reddit/components/SocialLinks/constants.ts"),
-				S = n("./src/reddit/components/SocialLinks/helpers.ts"),
+				u = n("./src/reddit/helpers/trackers/socialLinks.ts"),
+				p = n("./src/reddit/hooks/useTracking.ts"),
+				m = n("./src/reddit/icons/fonts/index.tsx"),
+				h = n("./src/reddit/layout/threeCol/ExpandCenter/index.tsx"),
+				x = n("./src/reddit/components/SocialLinks/constants.ts"),
+				b = n("./src/reddit/components/SocialLinks/helpers.ts"),
 				C = n("./src/reddit/components/SocialLinks/SocialLinkButton.tsx"),
-				k = n("./src/reddit/components/SocialLinks/AddSocialLinkModal.m.less"),
-				f = n.n(k);
+				S = n("./src/reddit/components/SocialLinks/AddSocialLinkModal.m.less"),
+				k = n.n(S);
 			const {
-				fbt: y
+				fbt: f
 			} = n("./node_modules/fbt/lib/FbtPublic.js");
 			t.default = e => {
 				let {
 					closeModal: t,
 					currentSocialLinkOption: n,
-					existingSocialLink: k,
-					onClickBackButton: _,
-					socialLinkPosition: O,
-					username: E
+					existingSocialLink: S,
+					onClickBackButton: y,
+					socialLinkPosition: _,
+					username: O
 				} = e;
-				const [L, v] = Object(a.useState)(), [j, g] = Object(a.useState)(), [A, B] = Object(a.useState)();
+				const [E, L] = Object(a.useState)(), [v, j] = Object(a.useState)(), [g, A] = Object(a.useState)();
 				Object(a.useEffect)(() => {
-					if (k) {
-						let e = k.handle;
-						e && n.placeholderDisplayText === b.i && (e = "@" + e), v(e || void 0), g(k.title), B(k.outboundUrl)
+					if (S) {
+						let e = S.handle;
+						e && n.placeholderDisplayText === x.i && (e = "@" + e), L(e || void 0), j(S.title), A(S.outboundUrl)
 					}
-				}, [n.placeholderDisplayText, k]);
-				const [N, R] = Object(a.useState)(""), w = Object(r.d)(), U = Object(m.a)(), T = Object(a.useCallback)(async e => {
-					const a = Object(S.e)(L),
-						s = n.placeholderUrl ? j : a,
-						r = n.placeholderUrl ? A : void 0;
-					U(Object(p.d)({
+				}, [n.placeholderDisplayText, S]);
+				const [B, N] = Object(a.useState)(""), R = Object(r.d)(), w = Object(p.a)(), U = Object(a.useCallback)(async e => {
+					const a = Object(b.e)(E),
+						s = n.placeholderUrl ? v : a,
+						r = n.placeholderUrl ? g : void 0;
+					w(Object(u.d)({
 						socialLinkType: e,
 						outboundUrl: r,
 						name: s,
-						position: O,
-						isNew: !k
+						position: _,
+						isNew: !S
 					}));
 					try {
 						const e = {
 							socialLinkOption: n,
 							rawHandle: a,
-							rawTitle: j,
-							url: A
+							rawTitle: v,
+							url: g
 						};
-						k ? await w(Object(c.d)(k.id, E, e)) : await w(Object(c.a)(E, e)), Object(u.Rb)(), t()
+						S ? await R(Object(c.d)(S.id, O, e)) : await R(Object(c.a)(O, e)), t()
 					} catch (l) {
-						R(l.message)
+						N(l.message)
 					}
-				}, [t, w, k, n, U, O, E, L, j, A]), M = Object(a.useCallback)((e, t, n) => {
-					N && R("");
+				}, [t, R, S, n, w, _, O, E, v, g]), T = Object(a.useCallback)((e, t, n) => {
+					B && N("");
 					let a = e.currentTarget.value;
 					!n || (null == n ? void 0 : n.startsWith(a)) || a.startsWith(n) || (a = n + a), t(a)
-				}, [N]);
-				return s.a.createElement(i.e, null, s.a.createElement(i.i, null, s.a.createElement(x.a, null, s.a.createElement("button", {
-					onClick: _
-				}, s.a.createElement(h.a, {
+				}, [B]);
+				return s.a.createElement(i.e, null, s.a.createElement(i.i, null, s.a.createElement(h.a, null, s.a.createElement("button", {
+					onClick: y
+				}, s.a.createElement(m.a, {
 					name: l.a.back,
-					className: f.a.modalIconButton
+					className: k.a.modalIconButton
 				})), s.a.createElement("div", {
-					className: f.a.modalTitle
-				}, y._("Add Social Link", null, {
+					className: k.a.modalTitle
+				}, f._("Add Social Link", null, {
 					hk: "NBrvK"
 				})), s.a.createElement(o.t, {
-					onClick: () => T(n.socialLinkType),
-					disabled: n.placeholderUrl ? !j || !A : !L
-				}, y._("Save", null, {
+					onClick: () => U(n.socialLinkType),
+					disabled: n.placeholderUrl ? !v || !g : !E
+				}, f._("Save", null, {
 					hk: "7wJsb"
 				})))), s.a.createElement(i.l, {
-					className: f.a.modalMain
+					className: k.a.modalMain
 				}, s.a.createElement(C.a, {
 					socialLinkType: n.socialLinkType
 				}, n.name), s.a.createElement(d.c, {
-					className: f.a.input,
+					className: k.a.input,
 					placeholder: n.placeholderDisplayText,
-					onChange: e => M(e, n.placeholderUrl ? g : v, n.placeholderDisplayText === b.i ? "@" : void 0),
-					value: (n.placeholderUrl ? j : L) || ""
+					onChange: e => T(e, n.placeholderUrl ? j : L, n.placeholderDisplayText === x.i ? "@" : void 0),
+					value: (n.placeholderUrl ? v : E) || ""
 				}), n.placeholderUrl && s.a.createElement(d.c, {
-					className: f.a.input,
+					className: k.a.input,
 					placeholder: n.placeholderUrl,
-					onChange: e => M(e, B, "https://"),
-					value: A || ""
+					onChange: e => T(e, A, "https://"),
+					value: g || ""
 				}), s.a.createElement("div", {
-					className: f.a.errorMessage
-				}, N)))
+					className: k.a.errorMessage
+				}, B)))
 			}
 		},
 		"./src/reddit/components/StructuredStyles/StyledComponents/inputs.m.less": function(e, t, n) {
@@ -140,9 +139,9 @@
 			})), n.d(t, "b", (function() {
 				return b
 			})), n.d(t, "i", (function() {
-				return S
-			})), n.d(t, "h", (function() {
 				return C
+			})), n.d(t, "h", (function() {
+				return S
 			})), n.d(t, "g", (function() {
 				return k
 			}));
@@ -160,8 +159,8 @@
 				h = a.a.wrapped(c.a, "RadioOff", o.a),
 				x = a.a.wrapped(r.a, "Checkbox", o.a),
 				b = a.a.wrapped(l.a, "CheckboxSelected", o.a),
-				S = a.a.textarea("Textarea", o.a),
-				C = a.a.label("StyledLabel", o.a),
+				C = a.a.textarea("Textarea", o.a),
+				S = a.a.label("StyledLabel", o.a),
 				k = a.a.input("StyledFileInput", o.a)
 		},
 		"./src/reddit/layout/threeCol/ExpandCenter/index.m.less": function(e, t, n) {
@@ -197,4 +196,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SocialLinkEditor.8941bfbd1f04c5fd5cbb.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SocialLinkEditor.659d9be609551d9fa57b.js.map
