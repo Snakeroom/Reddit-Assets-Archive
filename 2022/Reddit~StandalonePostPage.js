@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Reddit~StandalonePostPage.4c57baf0db60ba57f152.js
-// Retrieved at 6/30/2022, 5:20:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Reddit~StandalonePostPage.6f1983687008111deccc.js
+// Retrieved at 7/7/2022, 10:50:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Reddit~StandalonePostPage"], {
 		"./src/higherOrderComponents/asModal/helpers.ts": function(e, t, n) {
@@ -477,13 +477,13 @@
 						})
 					}, []);
 				Object(a.a)(I, M);
-				const [L, V] = Object(s.useState)(!1), U = Object(s.useCallback)(e => {
+				const [V, L] = Object(s.useState)(!1), U = Object(s.useCallback)(e => {
 					e.forEach(e => {
 						const {
 							isIntersecting: t,
 							intersectionRatio: n
 						} = e, s = 1 !== n;
-						t ? V(!0) : s && V(!1)
+						t ? L(!0) : s && L(!1)
 					})
 				}, []), q = Object(s.useRef)({
 					rootMargin: "2000px 0px 2000px 0px"
@@ -540,7 +540,7 @@
 					role: "screen-reader"
 				}, [...S].reverse().join(""))), r.a.createElement("span", {
 					ref: I
-				}), L && r.a.createElement(i.a, {
+				}), V && r.a.createElement(i.a, {
 					variables: x,
 					onData: h ? m : b,
 					queryKey: v,
@@ -2835,7 +2835,7 @@
 			const l = Object(s.a)(a.f, i.f, (e, t) => e && !t),
 				d = e => Object(o.c)(e, {
 					experimentEligibilitySelector: l,
-					experimentName: r.ec
+					experimentName: r.dc
 				}),
 				u = e => !!Object(c.a)(d(e))
 		},
@@ -2924,8 +2924,8 @@
 					if (Object(i.a)(e)) return !1;
 					return Object(r.c)(e, {
 						experimentEligibilitySelector: r.a,
-						experimentName: s.sc
-					}) === s.Lc.Enabled
+						experimentName: s.rc
+					}) === s.Kc.Enabled
 				}
 		},
 		"./src/reddit/selectors/experiments/presence.ts": function(e, t, n) {
@@ -2938,8 +2938,8 @@
 			const o = e => {
 				return Object(r.c)(e, {
 					experimentEligibilitySelector: r.a,
-					experimentName: s.Oe
-				}) === s.zd
+					experimentName: s.Ne
+				}) === s.yd
 			}
 		},
 		"./src/reddit/selectors/userPrefs.ts": function(e, t, n) {
@@ -3021,4 +3021,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit~StandalonePostPage.4c57baf0db60ba57f152.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit~StandalonePostPage.6f1983687008111deccc.js.map

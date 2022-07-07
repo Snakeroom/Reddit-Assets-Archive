@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ChatPost.642b8a477eae46fd055b.js
-// Retrieved at 7/5/2022, 11:30:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ChatPost.489d9b2b369d5b417f62.js
+// Retrieved at 7/7/2022, 10:50:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ChatPost"], {
 		"./node_modules/lodash/_baseDelay.js": function(e, t) {
@@ -2805,7 +2805,7 @@
 						} = t;
 						return Object(Ut.c)(e, n.authorId)
 					},
-					isLivePostCreatorModRoleEnabled: e => Object(ve.f)(e),
+					isLivePostCreatorModRoleEnabled: e => Object(ve.e)(e),
 					isChatCreateOnlyPerm: (e, t) => {
 						let {
 							comment: n
@@ -2857,16 +2857,15 @@
 				} = e;
 				const f = !!s && s.id === t.authorId,
 					x = Object(d.e)(e => !m && Object(ve.a)(e)),
-					E = Object(d.e)(e => !m && Object(ve.d)(e)),
-					k = Object(on.a)(),
-					I = c.a.useCallback(() => {
-						k(Object(vt.f)("other_options", t.id))
-					}, [k, t.id]);
+					E = Object(on.a)(),
+					k = c.a.useCallback(() => {
+						E(Object(vt.f)("other_options", t.id))
+					}, [E, t.id]);
 				return c.a.createElement("div", {
 					className: Object(We.a)(ln.a.menu, o, {
 						[ln.a.livestreaming]: m
 					})
-				}, E && !!(null == g ? void 0 : g.length) && c.a.createElement(c.a.Fragment, null, c.a.createElement("div", {
+				}, x && !!(null == g ? void 0 : g.length) && c.a.createElement(c.a.Fragment, null, c.a.createElement("div", {
 					className: ln.a.innerWrapper
 				}, g.map(e => c.a.createElement(Pn, {
 					key: e.id,
@@ -2911,7 +2910,7 @@
 					icon: c.a.createElement(rn.a, {
 						className: ln.a.icon
 					}),
-					onClick: I
+					onClick: k
 				}, c.a.createElement(Ln, {
 					comment: t,
 					isLivestreaming: m,
@@ -2966,9 +2965,9 @@
 				Jn = n("./src/reddit/constants/experiments.ts"),
 				Xn = n("./src/reddit/helpers/chooseVariant/index.ts");
 			const Zn = e => Object(Xn.c)(e, {
-					experimentName: Jn.zb,
+					experimentName: Jn.yb,
 					experimentEligibilitySelector: Xn.a
-				}) === Jn.vb.Enabled,
+				}) === Jn.ub.Enabled,
 				Yn = (e, t) => {
 					let {
 						commentId: n
@@ -3445,8 +3444,7 @@
 					} = t;
 					return Boolean(e.shortcuts.activeCommentId && n === e.shortcuts.activeCommentId)
 				},
-				isCommentAwardsEnabled: ve.a,
-				isCommentReactionsEnabled: ve.d,
+				isCommentAwardsAndReactionsEnabled: ve.a,
 				isEditing: V.z,
 				prediction: $n.f,
 				isSelectedForReply: (e, t) => {
@@ -3480,43 +3478,42 @@
 					errorMsgs: i,
 					flair: l,
 					isActive: m,
-					isCommentAwardsEnabled: u,
-					isCommentReactionsEnabled: p,
-					isEditing: h,
-					isDropdownMenuVisible: b,
-					isLivestreaming: v = !1,
-					isSelectedForReply: C,
-					postId: g,
-					prediction: f,
-					renderedInOverlay: x,
-					sendEvent: E,
-					targetComment: k,
-					timestampUpdateTrigger: I,
-					addToRefList: _,
-					onReplyClick: y,
-					shouldRenderSystemMessages: w,
-					availableReactionAwards: O
+					isCommentAwardsAndReactionsEnabled: u,
+					isEditing: p,
+					isDropdownMenuVisible: h,
+					isLivestreaming: b = !1,
+					isSelectedForReply: v,
+					postId: C,
+					prediction: g,
+					renderedInOverlay: f,
+					sendEvent: x,
+					targetComment: E,
+					timestampUpdateTrigger: k,
+					addToRefList: I,
+					onReplyClick: _,
+					shouldRenderSystemMessages: y,
+					availableReactionAwards: w
 				} = e;
-				const j = c.a.useRef(null),
-					T = c.a.useRef(null),
-					[M, N] = c.a.useState(s && s.collapsed),
-					[L, A] = c.a.useState(!1),
-					[R, S] = c.a.useState(!1),
-					P = c.a.useMemo(() => ({
+				const O = c.a.useRef(null),
+					j = c.a.useRef(null),
+					[T, M] = c.a.useState(s && s.collapsed),
+					[N, L] = c.a.useState(!1),
+					[A, R] = c.a.useState(!1),
+					S = c.a.useMemo(() => ({
 						renderingObjectInfo: s || void 0
 					}), [s]),
-					B = Object(d.e)(e => s ? Ee(e, s) : []),
-					D = () => {
-						N(!M)
+					P = Object(d.e)(e => s ? Ee(e, s) : []),
+					B = () => {
+						M(!T)
 					};
 				if (c.a.useEffect(() => {
 						var e;
-						T.current && (null === (e = T.current) || void 0 === e ? void 0 : e.scrollHeight) > 250 && !t && !v && S(!0)
+						j.current && (null === (e = j.current) || void 0 === e ? void 0 : e.scrollHeight) > 250 && !t && !b && R(!0)
 					}, []), c.a.useEffect(() => {
-						if (!T.current || v) return;
-						const e = T.current;
+						if (!j.current || b) return;
+						const e = j.current;
 						let t = 250;
-						if (L) {
+						if (N) {
 							t = e.scrollHeight + 10;
 							const n = () => {
 								e.style.maxHeight = "", e.removeEventListener("transitionend", n)
@@ -3524,47 +3521,47 @@
 							e.addEventListener("transitionend", n)
 						}
 						e.style.maxHeight = `${t}px`
-					}, [L, R, v]), c.a.useEffect(() => {
+					}, [N, A, b]), c.a.useEffect(() => {
 						var e;
-						m && (null === (e = j.current) || void 0 === e || e.focus())
+						m && (null === (e = O.current) || void 0 === e || e.focus())
 					}, [m]), c.a.useEffect(() => {
-						j.current && _ && _(j)
-					}, [_]), !s) return null;
-				const F = s.isSystem,
-					U = !s.isDeleted && !F,
-					H = !!t,
-					W = Object.keys(s.awardCountsById || {}).length > 0,
-					K = u && W,
-					V = p && !!(null == B ? void 0 : B.length);
-				return M ? c.a.createElement(it, {
+						O.current && I && I(O)
+					}, [I]), !s) return null;
+				const D = s.isSystem,
+					F = !s.isDeleted && !D,
+					U = !!t,
+					H = Object.keys(s.awardCountsById || {}).length > 0,
+					W = u && H,
+					K = u && !!(null == P ? void 0 : P.length);
+				return T ? c.a.createElement(it, {
 					commentCount: 1,
-					onClick: D
+					onClick: B
 				}) : c.a.createElement("div", {
 					className: Object(We.a)(Ao.a.container, {
-						[Ao.a.livestreaming]: v,
-						[Ao.a.selectedForReply]: C,
-						[Ao.a.hover]: b
+						[Ao.a.livestreaming]: b,
+						[Ao.a.selectedForReply]: v,
+						[Ao.a.hover]: h
 					}),
 					tabIndex: 0,
-					ref: j
+					ref: O
 				}, s.parentId && c.a.createElement("div", {
 					className: Ao.a.replyWrapper
 				}, c.a.createElement(Hn.a, {
 					commentId: s.parentId,
 					onReplyClick: e => {
-						E(Object(vt.b)(e)), y(e)
+						x(Object(vt.b)(e)), _(e)
 					},
-					isLivestreaming: v,
+					isLivestreaming: b,
 					isV2Enabled: !0
 				})), c.a.createElement("div", {
-					id: k ? "targetComment" : void 0,
+					id: E ? "targetComment" : void 0,
 					className: Object(We.a)({
-						[Ao.a.comment]: !F,
-						[Ao.a.systemMessageComment]: F && !v && w,
-						[Ao.a.highlighted]: k,
-						[Ao.a.expanded]: L
+						[Ao.a.comment]: !D,
+						[Ao.a.systemMessageComment]: D && !b && y,
+						[Ao.a.highlighted]: E,
+						[Ao.a.expanded]: N
 					})
-				}, U && c.a.createElement(c.a.Fragment, null, c.a.createElement("div", {
+				}, F && c.a.createElement(c.a.Fragment, null, c.a.createElement("div", {
 					className: Ao.a.avatar
 				}, c.a.createElement(fo.a, {
 					className: Object(We.a)(Ao.a.icon),
@@ -3582,43 +3579,43 @@
 					flair: l,
 					ignoreFlairPosition: !0,
 					ignoreLock: !0,
-					isLivestreaming: v,
-					renderedInOverlay: x,
-					hideAwards: u || p
+					isLivestreaming: b,
+					renderedInOverlay: f,
+					hideAwards: u
 				}), c.a.createElement("span", {
 					className: Ao.a.timestamp
 				}, c.a.createElement(yt.d, {
 					seconds: s.created
-				}))), !h && c.a.createElement("div", {
-					ref: T,
+				}))), !p && c.a.createElement("div", {
+					ref: j,
 					className: Object(We.a)(Ao.a.commentBody, {
-						[Ao.a.expanded]: L
+						[Ao.a.expanded]: N
 					})
-				}, H && t && v ? c.a.createElement(ot, {
+				}, U && t && b ? c.a.createElement(ot, {
 					award: t,
 					comment: s,
 					iconUrl: n
-				}) : f ? c.a.createElement(ze.a, {
+				}) : g ? c.a.createElement(ze.a, {
 					comment: s,
-					prediction: f
+					prediction: g
 				}) : c.a.createElement(c.a.Fragment, null, c.a.createElement(Xe.b, {
 					className: Object(We.a)(Ao.a.richTextJson, {
-						[Ao.a.livestreaming]: v
+						[Ao.a.livestreaming]: b
 					}),
 					content: Object(Je.a)(s),
-					rtJsonElementProps: P,
-					useExplicitTextColor: v
-				}), (K || V) && c.a.createElement("div", {
+					rtJsonElementProps: S,
+					useExplicitTextColor: b
+				}), (W || K) && c.a.createElement("div", {
 					className: Ao.a.reactions
-				}, K && c.a.createElement(No, {
+				}, W && c.a.createElement(No, {
 					postOrComment: s
-				}), V && B.map(e => {
+				}), K && P.map(e => {
 					let {
 						award: t
 					} = e;
 					return c.a.createElement(bo, {
 						key: t.id,
-						enforceDarkMode: v,
+						enforceDarkMode: b,
 						comment: s,
 						reaction: t
 					})
@@ -3627,37 +3624,37 @@
 					comment: s,
 					commentPermalink: a,
 					commentsPageKey: r,
-					isLivestreaming: v,
-					timestampUpdateTrigger: I,
-					availableReactionAwards: O
-				}))), h && c.a.createElement(qn.a, {
+					isLivestreaming: b,
+					timestampUpdateTrigger: k,
+					availableReactionAwards: w
+				}))), p && c.a.createElement(qn.a, {
 					isV2: !0,
-					isLivestreaming: v,
-					postId: g,
-					sendEvent: E,
+					isLivestreaming: b,
+					postId: C,
+					sendEvent: x,
 					draftKey: Object(Ve.a)(Dt.c.edit, s.id),
 					commentsPageKey: r,
-					isEditing: h,
+					isEditing: p,
 					comment: s
-				})), s.isDeleted && c.a.createElement(go, null), U && !h && i && i.map((e, t) => c.a.createElement(Qn.b, {
+				})), s.isDeleted && c.a.createElement(go, null), F && !p && i && i.map((e, t) => c.a.createElement(Qn.b, {
 					key: `${t}-${e}`,
 					className: Ao.a.errorText
-				}, e)), !h && R && !L && c.a.createElement("button", {
+				}, e)), !p && A && !N && c.a.createElement("button", {
 					type: "button",
 					className: Object(We.a)(Ao.a.readMoreButton, {
-						[Ao.a.livestreaming]: v
+						[Ao.a.livestreaming]: b
 					}),
 					onClick: () => {
-						A(!L)
+						L(!N)
 					}
 				}, te.fbt._("Read more", null, {
 					hk: "3s9Bqf"
-				})), F && !v && w && c.a.createElement(Gn, {
+				})), D && !b && y && c.a.createElement(Gn, {
 					comment: s
 				})))
 			}));
 			const So = e => {
-				return Object(d.e)(ve.e) ? c.a.createElement(Ro, e) : c.a.createElement(mo, e)
+				return Object(d.e)(ve.d) ? c.a.createElement(Ro, e) : c.a.createElement(mo, e)
 			};
 			var Po = n("./node_modules/lodash/isEqual.js"),
 				Bo = n.n(Po),
@@ -3901,7 +3898,7 @@
 						return xe(e, n)
 					},
 					isCommentReactionStreamingKillSwitchEnabled: ve.c,
-					isCommentReactionsEnabled: ve.d,
+					isCommentAwardsAndReactionsEnabled: ve.a,
 					currentUserId: Ie.i
 				}),
 				Xo = Object(d.b)(Jo, (e, t) => ({
@@ -4088,7 +4085,7 @@
 						sendEvent: u,
 						availableReactionAwards: p,
 						isCommentReactionStreamingKillSwitchEnabled: b,
-						isCommentReactionsEnabled: v
+						isCommentAwardsAndReactionsEnabled: v
 					} = this.props, {
 						expandedCommentIds: C,
 						targetCommentIndex: g,
@@ -5418,4 +5415,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatPost.642b8a477eae46fd055b.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatPost.489d9b2b369d5b417f62.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModQueuePages.d2443e7afb45dc7273dc.js
-// Retrieved at 6/30/2022, 5:20:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModQueuePages.35b60a5dc144c119cb3a.js
+// Retrieved at 7/7/2022, 10:50:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModQueuePages"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -4267,7 +4267,7 @@
 				N = Object(d.c)({
 					currentPage: e => e.platform.currentPage,
 					origin: y.j,
-					isModQChatCommentsFilterEnabled: I.h
+					isModQChatCommentsFilterEnabled: I.g
 				});
 			var R = Object(i.b)(N)(e => a.a.createElement("div", null, a.a.createElement(C.default, {
 					onClick: e.sendEventWithName("content_type_both"),
@@ -4315,8 +4315,8 @@
 				F = n("./src/reddit/selectors/user.ts");
 			const B = e => Object(A.c)(e, {
 				experimentEligibilitySelector: F.Q,
-				experimentName: L.fc
-			}) === L.zd;
+				experimentName: L.ec
+			}) === L.yd;
 			var D = n("./src/reddit/components/ModQueueList/SortByNumReportsTooltip.m.less"),
 				U = n.n(D);
 			const W = e => {
@@ -4474,7 +4474,7 @@
 					isPostTypeFilterDropdownOpen: Object(O.b)(ie),
 					isSubredditFilterDropdownOpen: Object(O.b)(ae),
 					isPostSortDropdownOpen: Object(O.b)(de),
-					isModQChatCommentsFilterEnabled: I.h,
+					isModQChatCommentsFilterEnabled: I.g,
 					profile: (e, t) => {
 						let {
 							profileName: n
@@ -6806,12 +6806,12 @@
 						rtJsonElementProps: a
 					});
 					switch (o) {
-						case h.Ef.SmIcon:
+						case h.Df.SmIcon:
 							return r.a.createElement(p, {
 								subredditName: s,
 								rtJsonElementProps: a
 							});
-						case h.Ef.SmIconHc:
+						case h.Df.SmIconHc:
 							return r.a.createElement(p, {
 								subredditName: s,
 								isHoverable: !0,
@@ -8139,33 +8139,30 @@
 		},
 		"./src/reddit/selectors/experiments/chat.ts": function(e, t, n) {
 			"use strict";
-			n.d(t, "e", (function() {
+			n.d(t, "d", (function() {
 				return o
 			})), n.d(t, "b", (function() {
 				return a
-			})), n.d(t, "h", (function() {
-				return i
-			})), n.d(t, "f", (function() {
-				return d
 			})), n.d(t, "g", (function() {
+				return i
+			})), n.d(t, "e", (function() {
+				return d
+			})), n.d(t, "f", (function() {
 				return c
 			})), n.d(t, "a", (function() {
 				return l
-			})), n.d(t, "d", (function() {
-				return m
 			})), n.d(t, "c", (function() {
-				return u
+				return m
 			}));
 			var s = n("./src/reddit/constants/experiments.ts"),
 				r = n("./src/reddit/selectors/experiments/econ/simpleExperiment.ts");
-			const o = Object(r.a)(s.L),
+			const o = Object(r.a)(s.K),
 				a = Object(r.a)(s.I),
-				i = Object(r.a)(s.ke),
-				d = Object(r.a)(s.M),
-				c = Object(r.a)(s.N),
+				i = Object(r.a)(s.je),
+				d = Object(r.a)(s.L),
+				c = Object(r.a)(s.M),
 				l = Object(r.a)(s.H),
-				m = Object(r.a)(s.J),
-				u = Object(r.a)(s.K)
+				m = Object(r.a)(s.J)
 		},
 		"./src/reddit/selectors/gold/powerups/flairs.ts": function(e, t, n) {
 			"use strict";
@@ -8380,12 +8377,12 @@
 				d = e => {
 					return Object(o.c)(e, {
 						experimentEligibilitySelector: i,
-						experimentName: s.xf
+						experimentName: s.wf
 					}) || ""
 				},
 				c = e => {
 					const t = d(e);
-					return t === s.Ef.SmIcon || t === s.Ef.SmIconHc
+					return t === s.Df.SmIcon || t === s.Df.SmIconHc
 				},
 				l = (e, t) => {
 					let {
@@ -8411,4 +8408,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModQueuePages.d2443e7afb45dc7273dc.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModQueuePages.35b60a5dc144c119cb3a.js.map

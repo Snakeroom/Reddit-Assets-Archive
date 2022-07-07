@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/EconPowerupsFlairModal.41d7d6a2d98da0af845f.js
-// Retrieved at 7/6/2022, 5:30:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/EconPowerupsFlairModal.d9b46c1be3789e410ee2.js
+// Retrieved at 7/7/2022, 10:50:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["EconPowerupsFlairModal"], {
 		"./src/reddit/actions/economics/powerups/flairs/index.ts": function(e, t, r) {
@@ -682,8 +682,8 @@
 			var H = r("./src/reddit/components/Econ/PowerupsFlair/PowerupsFlairModal/OldAchievementFlairs.m.less"),
 				G = r.n(H);
 			const {
-				fbt: z
-			} = r("./node_modules/fbt/lib/FbtPublic.js"), V = e => {
+				fbt: q
+			} = r("./node_modules/fbt/lib/FbtPublic.js"), z = e => {
 				let {
 					className: t,
 					subredditId: r,
@@ -710,15 +710,15 @@
 					className: G.a.achievementsHeading
 				}, o.a.createElement(P.a, {
 					className: G.a.headingPowerupsBolt
-				}), z._("Achievements", null, {
+				}), q._("Achievements", null, {
 					hk: "1DnL4g"
 				})), o.a.createElement("p", {
 					className: G.a.achievementsDescription
-				}, (() => d && !c ? z._("Unlock the Powerup Supporter achievement when you Powerup this community", null, {
+				}, (() => d && !c ? q._("Unlock the Powerup Supporter achievement when you Powerup this community", null, {
 					hk: "2ZIvgm"
-				}) : d ? z._("Unlocked with Powerups! Choose the achievement you’d like to highlight.", null, {
+				}) : d ? q._("Unlocked with Powerups! Choose the achievement you’d like to highlight.", null, {
 					hk: "4iPJwf"
-				}) : z._("Powerup to unlock community achievements", null, {
+				}) : q._("Powerup to unlock community achievements", null, {
 					hk: "1oPooH"
 				}))()), o.a.createElement("div", {
 					className: G.a.achievementsList
@@ -728,7 +728,7 @@
 					onSelect: u
 				}))))
 			};
-			var q = r("./src/reddit/controls/ToggleSwitch/index.tsx"),
+			var V = r("./src/reddit/controls/ToggleSwitch/index.tsx"),
 				Q = r("./src/reddit/selectors/experiments/i18n/hiddenPowerups.ts"),
 				R = r("./src/reddit/components/Econ/PowerupsFlair/PowerupsFlairModal/FlairsSection.m.less"),
 				K = r.n(R);
@@ -815,7 +815,7 @@
 					hk: "38VDpw"
 				}) : Z._("Show Supporter and Achievement Flair", null, {
 					hk: "3755UL"
-				})), o.a.createElement(q.a, {
+				})), o.a.createElement(V.a, {
 					className: J.a.flairsVisibilitySwitch,
 					disabled: !u,
 					on: u && !l,
@@ -908,7 +908,7 @@
 				}), g ? o.a.createElement($, {
 					subredditId: v.id,
 					userId: n.id
-				}) : o.a.createElement(V, {
+				}) : o.a.createElement(z, {
 					subredditId: v.id,
 					userId: n.id
 				})), o.a.createElement("div", {
@@ -1373,8 +1373,8 @@
 				d = e => o.includes(e),
 				c = Object(s.a)(e => Object(n.c)(e, {
 					experimentEligibilitySelector: n.a,
-					experimentName: i.Vd
-				}), e => e === i.zd)
+					experimentName: i.Ud
+				}), e => e === i.yd)
 		},
 		"./src/reddit/selectors/gold/powerups/flairs.ts": function(e, t, r) {
 			"use strict";
@@ -1506,4 +1506,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EconPowerupsFlairModal.41d7d6a2d98da0af845f.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EconPowerupsFlairModal.d9b46c1be3789e410ee2.js.map
