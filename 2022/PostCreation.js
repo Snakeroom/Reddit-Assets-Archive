@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostCreation.6d237e89ccb138b94e0a.js
-// Retrieved at 7/7/2022, 2:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostCreation.5aafbefafc386bea9a8c.js
+// Retrieved at 7/7/2022, 3:00:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostCreation", "ChatMessageInput~MembershipPaywallPage~RichTextEditor", "ContributorRequestButton"], {
 		"./node_modules/autosize/dist/autosize.js": function(e, t, n) {
@@ -15047,7 +15047,9 @@
 							[Ht.a.alignCenter]: t
 						})
 					}, p.a.createElement(qt, {
-						className: Ht.a.content
+						className: Object(g.a)(Ht.a.content, {
+							[Ht.a.multiButtonToolbarContent]: i
+						})
 					}, i && p.a.createElement(Mt.a, {
 						isCompact: !0,
 						key: "make-gif",
@@ -15830,8 +15832,8 @@
 				bo = e => {
 					const t = {};
 					if (!e || !document.documentElement) return t;
-					const n = e.left - 154.5,
-						o = e.left + 154.5 - document.documentElement.clientWidth;
+					const n = e.left - 185,
+						o = e.left + 185 - document.documentElement.clientWidth;
 					return n < 0 ? t.left = -n + po + 2 : o > 0 && (t.left = -o + po - 2), t
 				},
 				fo = e => {
@@ -18489,6 +18491,7 @@
 				container: "_3hDtN0e5U4EpahGe25ye-b",
 				alignCenter: "Vh7FGvkGyl5SeyJP4J1GG",
 				content: "_3wXzBVn-uBvRcixZwQWkNX",
+				multiButtonToolbarContent: "_4g7-oW_EplZpFIKv75-Lu",
 				FormatterButton: "_6DRydZXlG3Ko7_4xxYUhW",
 				formatterButton: "_6DRydZXlG3Ko7_4xxYUhW",
 				ToolbarContent: "_3qUkCQkbZvTB6uBQEQQfSZ",
@@ -34396,4 +34399,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.6d237e89ccb138b94e0a.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.5aafbefafc386bea9a8c.js.map
