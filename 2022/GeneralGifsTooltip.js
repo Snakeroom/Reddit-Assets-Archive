@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/GeneralGifsTooltip.4b03cbac4d7bc666f548.js
-// Retrieved at 7/6/2022, 5:30:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/GeneralGifsTooltip.8ed2a878e464ade0a9d8.js
+// Retrieved at 7/7/2022, 1:40:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["GeneralGifsTooltip"], {
 		"./src/reddit/components/RichTextEditor/media/GifTooltip/BaseTooltip.m.less": function(e, t, s) {
@@ -270,7 +270,7 @@
 					}, 300), this.onResultClick = e => {
 						this.props.onResultClick(this.props.hasGifProduct);
 						const t = this.props.editorState,
-							s = Object(w.k)(t, e.id, e.url, e.hasDownsizedImage, e.width, e.height, t.getSelection().getEndKey(), _.a.after);
+							s = Object(w.k)(t, e.id, e.url, e.hasDownsizedImage, e.width, e.height, t.getSelection().getEndKey(), _.a.before);
 						this.props.onChange(s), this.props.onClose()
 					}
 				}
@@ -446,4 +446,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/GeneralGifsTooltip.4b03cbac4d7bc666f548.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/GeneralGifsTooltip.8ed2a878e464ade0a9d8.js.map

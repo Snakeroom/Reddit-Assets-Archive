@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~ModerationPages~PostCreation~Profile~9a5d9fab.7aa61a4098db9fd014a8.js
-// Retrieved at 7/7/2022, 11:50:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~ModerationPages~PostCreation~Profile~9a5d9fab.ec6c1d0984be7d2b7447.js
+// Retrieved at 7/7/2022, 1:40:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~ModerationPages~PostCreation~Profile~9a5d9fab"], {
 		"./src/higherOrderComponents/withClickTracking/index.tsx": function(e, t, s) {
@@ -619,9 +619,9 @@
 					U = Object(o.e)(e => Object(C.d)(e, A)),
 					G = U > 0,
 					$ = U < h.length - 1,
-					Q = Object(p.a)(),
+					J = Object(p.a)(),
+					Q = Object(i.useRef)(null),
 					K = Object(i.useRef)(null),
-					J = Object(i.useRef)(null),
 					[Y, z] = Object(i.useState)(F ? U : -1),
 					[q, X] = Object(i.useState)(F ? U : -1),
 					Z = Object(l.a)(F),
@@ -641,7 +641,7 @@
 							}, 1e3)) : (Y < 0 || q - Y == 0) && clearTimeout(te.current)
 						})
 					}, [Y, q, h.length]);
-				Object(r.a)(J, se);
+				Object(r.a)(K, se);
 				const ie = Object(i.useCallback)(e => {
 						t(Object(x.f)({
 							postId: A,
@@ -664,8 +664,8 @@
 							const e = k(q, h.length);
 							e !== q && X(e)
 						}
-						ie(e), Q(u.b(A, e)), Q(u.d(A, e + 1)), ne(e)
-					}, [$, U, ne, ie, Q, A, q, h.length]),
+						ie(e), J(u.b(A, e)), J(u.d(A, e + 1)), ne(e)
+					}, [$, U, ne, ie, J, A, q, h.length]),
 					ae = Object(i.useCallback)(() => {
 						if (!G) return;
 						const e = U - 1;
@@ -674,13 +674,13 @@
 							e !== Y && z(e)
 						}
 						const t = U + 1;
-						ie(e), Q(u.a(A, t)), Q(u.d(A, t - 1)), ne(e)
-					}, [G, U, ne, ie, Q, A, Y]),
+						ie(e), J(u.a(A, t)), J(u.d(A, t - 1)), ne(e)
+					}, [G, U, ne, ie, J, A, Y]),
 					de = Object(i.useCallback)(() => {
 						const e = h[U] && h[U].outboundUrl;
-						e && Q(u.c(A, e))
-					}, [Q, A, U, h]);
-				m(y.a.ArrowLeft, K.current, ae), m(y.a.ArrowRight, K.current, re);
+						e && J(u.c(A, e))
+					}, [J, A, U, h]);
+				m(y.a.ArrowLeft, Q.current, ae), m(y.a.ArrowRight, Q.current, re);
 				const le = h[U] && h[U].caption,
 					ce = h[U] && h[U].outboundUrl,
 					ue = ((e, t, s) => {
@@ -697,7 +697,7 @@
 					})(D, b, g);
 				return n.a.createElement("div", {
 					className: Object(a.a)(T.a.outerContainer),
-					ref: K,
+					ref: Q,
 					tabIndex: 0
 				}, S ? n.a.createElement(n.a.Fragment, null, n.a.createElement("div", {
 					className: Object(a.a)(T.a.tilesWrapper, {
@@ -731,7 +731,7 @@
 				})) : n.a.createElement("div", {
 					className: T.a.slideshowContainer,
 					tabIndex: -1,
-					ref: J,
+					ref: K,
 					onClick: e.onClickRevealBlurred,
 					style: ue
 				}, n.a.createElement("div", {
@@ -767,7 +767,7 @@
 					})
 				})), !e.shouldBlur && n.a.createElement(n.a.Fragment, null, n.a.createElement(N, {
 					onClick: ae,
-					setFocusTo: J,
+					setFocusTo: K,
 					hasMoreSlides: G,
 					title: j._("Previous", null, {
 						hk: "3dZcTi"
@@ -776,7 +776,7 @@
 					className: T.a.prevButton
 				}), n.a.createElement(N, {
 					onClick: re,
-					setFocusTo: J,
+					setFocusTo: K,
 					hasMoreSlides: $,
 					title: j._("Next", null, {
 						hk: "3Ajk1H"
@@ -1117,9 +1117,9 @@
 				U = s("./src/reddit/components/RichTextJson/index.tsx"),
 				G = s("./src/reddit/constants/componentSizes.ts"),
 				$ = s("./src/reddit/constants/screenWidths.ts"),
-				Q = s("./src/reddit/contexts/PageLayer/index.tsx"),
-				K = s("./src/reddit/helpers/canPreviewSelfText/index.ts"),
-				J = s("./src/reddit/helpers/getRichTextContent/index.ts"),
+				J = s("./src/reddit/contexts/PageLayer/index.tsx"),
+				Q = s("./src/reddit/helpers/canPreviewSelfText/index.ts"),
+				K = s("./src/reddit/helpers/getRichTextContent/index.ts"),
 				Y = s("./src/reddit/helpers/mediaGallery/index.tsx"),
 				z = s("./src/reddit/helpers/path/index.ts"),
 				q = s("./src/reddit/helpers/postHasSelfText/index.ts"),
@@ -1195,7 +1195,7 @@
 					} = e;
 					return !!t.media && je.has(t.media.type)
 				},
-				Me = Object(Q.u)(),
+				Me = Object(J.u)(),
 				Ne = Object(p.c)({
 					canUseOCRAltText: (e, t) => Object(ne.b)(e, t.post),
 					OCRAltText: (e, t) => {
@@ -1541,7 +1541,7 @@
 						subredditOrProfileDisplayText: G
 					} = this.props, {
 						canLoadContent: $,
-						forcePause: Q,
+						forcePause: J,
 						shouldPause: z,
 						shouldStop: te,
 						viewportWidth: se
@@ -1550,7 +1550,7 @@
 					let ne;
 					I.media.type !== ee.o.TEXT && (ne = I.media.richtextContent);
 					const oe = f && ne,
-						re = Q || z,
+						re = J || z,
 						ae = te,
 						{
 							source: de,
@@ -1608,9 +1608,9 @@
 					if (!I.media) return null;
 					switch (I.media.type) {
 						case ee.o.RTJSON:
-							const e = Object(J.a)(I, null);
+							const e = Object(K.a)(I, null);
 							if (null === e) return null;
-							if (!M && !Object(K.a)(I)) return null;
+							if (!M && !Object(Q.a)(I)) return null;
 							const n = I.isMeta ? Object(Z.a)(e, I.id) : e;
 							return u.a.createElement(u.a.Fragment, null, Oe && u.a.createElement(A.a, {
 								canLoadContent: $,
@@ -1689,7 +1689,7 @@
 								source: I.preview.url,
 								originalSource: I.preview.url,
 								onPostMediaClick: this.handlePostMediaClick
-							})), u.a.createElement(H.a, null)))) : ee.h.has(I.media.provider) ? I.media.provider === ee.v.Twitter ? u.a.createElement(B.a, {
+							})), u.a.createElement(H.a, null)))) : ee.h.has(I.media.provider) ? I.media.provider === ee.v.Twitter ? u.a.createElement(u.a.Fragment, null, u.a.createElement(B.a, {
 								canLoadContent: $,
 								embedBoxChildRef: this.storeChildRef,
 								mediaContainerProps: Ee,
@@ -1697,7 +1697,10 @@
 								source: de,
 								title: I.title,
 								postId: I.id
-							}) : u.a.createElement(D.a, be({}, Ee, {
+							}), oe && u.a.createElement(N.a, {
+								content: ne,
+								rtJsonElementProps: _e(this.props)
+							})) : u.a.createElement(u.a.Fragment, null, u.a.createElement(D.a, be({}, Ee, {
 								alwaysWrapMedia: !0,
 								height: c ? ue : ee.j,
 								width: c ? me : ee.j * (16 / 9)
@@ -1712,7 +1715,10 @@
 								showFull: M,
 								source: de,
 								title: I.title
-							})) : u.a.createElement(D.a, be({}, Ee, {
+							})), oe && u.a.createElement(N.a, {
+								content: ne,
+								rtJsonElementProps: _e(this.props)
+							})) : u.a.createElement(u.a.Fragment, null, u.a.createElement(D.a, be({}, Ee, {
 								alwaysWrapMedia: !0
 							}), $ && u.a.createElement(P.a, be({}, fe, {
 								isResponsive: c || I.media.provider === ee.v.IFrameEmbed,
@@ -1721,7 +1727,10 @@
 								onLoad: this.onIframeLoaded,
 								source: de,
 								fullWidth: I.media.provider === ee.v.IFrameEmbed
-							})));
+							}))), oe && u.a.createElement(N.a, {
+								content: ne,
+								rtJsonElementProps: _e(this.props)
+							}));
 						case ee.o.GIFVIDEO: {
 							let e = ue,
 								t = me;
@@ -2377,4 +2386,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~ModerationPages~PostCreation~Profile~9a5d9fab.7aa61a4098db9fd014a8.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~ModerationPages~PostCreation~Profile~9a5d9fab.ec6c1d0984be7d2b7447.js.map

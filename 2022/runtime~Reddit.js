@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/runtime~Reddit.e5e9fe13248b6897d443.js
-// Retrieved at 7/7/2022, 12:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/runtime~Reddit.612d374f54fec8d277c9.js
+// Retrieved at 7/7/2022, 1:40:04 PM by Reddit Dataminer v1.0.0
 ! function(e) {
 	function o(o) {
 		for (var a, n, r = o[0], s = o[1], c = o[2], l = 0, P = []; l < r.length; l++) n = r[l], Object.prototype.hasOwnProperty.call(d, n) && d[n] && P.push(d[n][0]), d[n] = 0;
@@ -1387,7 +1387,7 @@
 						CoinsMobile: "0b116ceace01bf9bf0db",
 						"CollectionCommentsPage~CommentsPage~CountryPage~FramedGild~GildModal~GovernanceReleaseNotesModal~Mem~c8b748a6": "08e842ab3c29b91a527e",
 						"CollectionCommentsPage~CommentsPage~CountryPage~Frontpage~GovernanceReleaseNotesModal~ModListing~Mod~e3d63e32": "bfb0a85200d7834b42a6",
-						"CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~ModerationPages~PostCreation~Profile~9a5d9fab": "7aa61a4098db9fd014a8",
+						"CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~ModerationPages~PostCreation~Profile~9a5d9fab": "ec6c1d0984be7d2b7447",
 						"CollectionCommentsPage~CommentsPage~ModerationPages~PostCreation~ProfileComments~ProfileOverview~Pro~d39c0d57": "3d588cde695dbcc9e989",
 						"CollectionCommentsPage~CommentsPage~ModerationPages~ProfileComments~ProfileOverview~ProfilePrivate~R~969c2956": "b7f058e26c0883d93ebb",
 						"CollectionCommentsPage~CommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~SearchResults": "639613e062b7f2925901",
@@ -1508,7 +1508,7 @@
 						AdminPanel: "0a53e1eb48424c6b06b8",
 						"vendors~ChatMessageInput~CommentRichUnit~FlairEdit~MembershipPaywallPage~PostCreation~PostRichUnit~R~9deab1a0": "201e0a53b4d00907b96f",
 						"ChatMessageInput~MembershipPaywallPage~RichTextEditor": "e749cc1af3a012a9148d",
-						MembershipPaywallPage: "b02ddc361af5e4bf119a",
+						MembershipPaywallPage: "4a2e1adcaadd8acb2040",
 						FlairEdit: "f28dd8ed9f2d4b7c48c9",
 						"vendors~Chat~RedesignChat": "d511a7b399cd0a53330e",
 						"Chat~RedesignChat": "5b979c1c647f949e4b8f",
@@ -1683,9 +1683,9 @@
 						ProfileIdCardUnblockConfirmationModal: "88345eaec863def589c8",
 						SocialLinks: "340c92654ac9b8bbd11a",
 						ColorPickerDropdown: "a3deef95bace61d04faf",
-						GeneralGifsTooltip: "4b03cbac4d7bc666f548",
-						PowerupsGifsTooltip: "3d2181c4cfd45bf1cfd9",
-						SpecialMembershipsGifsTooltip: "6b760d2c2c48199740d3",
+						GeneralGifsTooltip: "8ed2a878e464ade0a9d8",
+						PowerupsGifsTooltip: "636409731a56e3df7809",
+						SpecialMembershipsGifsTooltip: "8cacb6a34bd0f34a98ff",
 						"chat-components-OverlayReport-FormBuilder": "666cdec23b84a8cd77dc",
 						SocialLinkEditor: "659d9be609551d9fa57b",
 						ModStatsChart: "403fad1cbada668de819"
@@ -1754,4 +1754,4 @@
 	var m = c;
 	t()
 }([]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/runtime~Reddit.e5e9fe13248b6897d443.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/runtime~Reddit.612d374f54fec8d277c9.js.map
