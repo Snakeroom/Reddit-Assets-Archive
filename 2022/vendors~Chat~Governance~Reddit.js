@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/vendors~Chat~Governance~Reddit.4b5d45fff29d967dc3fa.js
-// Retrieved at 7/1/2022, 5:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/vendors~Chat~Governance~Reddit.fca172207717b5be35b2.js
+// Retrieved at 7/7/2022, 4:10:13 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["vendors~Chat~Governance~Reddit"], {
 		"./node_modules/@loadable/component/dist/loadable.esm.js": function(e, t, n) {
@@ -15815,6 +15815,14 @@
 				return t == t ? i(e, t, n) : r(e, o, n)
 			}
 		},
+		"./node_modules/lodash/_baseInverter.js": function(e, t, n) {
+			var r = n("./node_modules/lodash/_baseForOwn.js");
+			e.exports = function(e, t, n, o) {
+				return r(e, (function(e, r, i) {
+					t(o, n(e), r, i)
+				})), o
+			}
+		},
 		"./node_modules/lodash/_baseIsArguments.js": function(e, t, n) {
 			var r = n("./node_modules/lodash/_baseGetTag.js"),
 				o = n("./node_modules/lodash/isObjectLike.js"),
@@ -16544,6 +16552,14 @@
 					}
 					var c = e(t, n, s);
 					return c > -1 ? a[u ? t[c] : c] : void 0
+				}
+			}
+		},
+		"./node_modules/lodash/_createInverter.js": function(e, t, n) {
+			var r = n("./node_modules/lodash/_baseInverter.js");
+			e.exports = function(e, t) {
+				return function(n, o) {
+					return r(n, e, t(o), {})
 				}
 			}
 		},
@@ -17804,6 +17820,16 @@
 			e.exports = function(e) {
 				return e
 			}
+		},
+		"./node_modules/lodash/invert.js": function(e, t, n) {
+			var r = n("./node_modules/lodash/constant.js"),
+				o = n("./node_modules/lodash/_createInverter.js"),
+				i = n("./node_modules/lodash/identity.js"),
+				s = Object.prototype.toString,
+				a = o((function(e, t, n) {
+					null != t && "function" != typeof t.toString && (t = s.call(t)), e[t] = n
+				}), r(i));
+			e.exports = a
 		},
 		"./node_modules/lodash/isArguments.js": function(e, t, n) {
 			var r = n("./node_modules/lodash/_baseIsArguments.js"),
@@ -35190,4 +35216,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/vendors~Chat~Governance~Reddit.4b5d45fff29d967dc3fa.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/vendors~Chat~Governance~Reddit.fca172207717b5be35b2.js.map

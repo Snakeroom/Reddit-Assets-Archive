@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModQueuePages.b368fd7d74a02a24c1b6.js
-// Retrieved at 7/7/2022, 2:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModQueuePages.9b8ac2125d72a9847989.js
+// Retrieved at 7/7/2022, 4:10:13 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModQueuePages"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -934,16 +934,16 @@
 				_ = n("./src/reddit/helpers/graphql/normalizeFlairFromGql/index.ts"),
 				E = n("./src/reddit/helpers/graphql/normalizePostFromGql/index.ts");
 			const k = {
-					[r.rb.Edited]: v.r.Edited,
-					[r.rb.Modqueue]: v.r.Mod,
-					[r.rb.Reports]: v.r.Reported,
-					[r.rb.Spam]: v.r.Removed,
-					[r.rb.Unmoderated]: v.r.Unmoderated
+					[r.rb.Edited]: v.s.Edited,
+					[r.rb.Modqueue]: v.s.Mod,
+					[r.rb.Reports]: v.s.Reported,
+					[r.rb.Spam]: v.s.Removed,
+					[r.rb.Unmoderated]: v.s.Unmoderated
 				},
 				C = {
-					comments: v.p.Comment,
-					links: v.p.Post,
-					chat_comments: v.p.ChatComment
+					comments: v.q.Comment,
+					links: v.q.Post,
+					chat_comments: v.q.ChatComment
 				};
 
 			function j(e) {
@@ -977,7 +977,7 @@
 					...!!s.profile && {
 						subredditIds: [s.profile]
 					},
-					sort: s.sort === h.a.MostReportedFirst ? v.q.SortReports : v.q.SortDate,
+					sort: s.sort === h.a.MostReportedFirst ? v.r.SortReports : v.r.SortDate,
 					...a
 				}
 			}
@@ -8408,4 +8408,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModQueuePages.b368fd7d74a02a24c1b6.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModQueuePages.9b8ac2125d72a9847989.js.map

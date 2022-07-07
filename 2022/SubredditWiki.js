@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditWiki.2f79bf9b4ac541ad602b.js
-// Retrieved at 7/7/2022, 2:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditWiki.f074e528a9e56218a452.js
+// Retrieved at 7/7/2022, 4:10:13 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditWiki"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -721,11 +721,11 @@
 				x = s("./src/reddit/models/Subreddit/index.ts");
 			const v = e => {
 					switch (e) {
-						case x.c.FREQUENT:
+						case x.b.FREQUENT:
 							return "notification_frequent";
-						case x.c.OFF:
+						case x.b.OFF:
 							return "notification_off";
-						case x.c.LOW:
+						case x.b.LOW:
 						default:
 							return "notification"
 					}
@@ -772,31 +772,31 @@
 						displayText: E.fbt._("Frequent", null, {
 							hk: "21spt7"
 						}),
-						onClick: () => e.onClick(x.c.FREQUENT),
-						isSelected: e.notificationLevel === x.c.FREQUENT,
+						onClick: () => e.onClick(x.b.FREQUENT),
+						isSelected: e.notificationLevel === x.b.FREQUENT,
 						icon: n.a.createElement(j.a, {
 							name: "notification_frequent",
-							isFilled: e.notificationLevel === x.c.FREQUENT
+							isFilled: e.notificationLevel === x.b.FREQUENT
 						})
 					}, {
 						displayText: E.fbt._("Low", null, {
 							hk: "2uGDVq"
 						}),
-						onClick: () => e.onClick(x.c.LOW),
-						isSelected: e.notificationLevel === x.c.LOW,
+						onClick: () => e.onClick(x.b.LOW),
+						isSelected: e.notificationLevel === x.b.LOW,
 						icon: n.a.createElement(j.a, {
 							name: "notification",
-							isFilled: e.notificationLevel === x.c.LOW
+							isFilled: e.notificationLevel === x.b.LOW
 						})
 					}, {
 						displayText: E.fbt._("Off", null, {
 							hk: "4GiFvg"
 						}),
-						onClick: () => e.onClick(x.c.OFF),
-						isSelected: e.notificationLevel === x.c.OFF,
+						onClick: () => e.onClick(x.b.OFF),
+						isSelected: e.notificationLevel === x.b.OFF,
 						icon: n.a.createElement(j.a, {
 							name: "notification_off",
-							isFilled: e.notificationLevel === x.c.OFF
+							isFilled: e.notificationLevel === x.b.OFF
 						})
 					}].map(e => n.a.createElement(O.b, I({
 						className: Object(a.a)(S.a.notificationDropdown, S.a.notificationRow, {
@@ -856,7 +856,7 @@
 							hk: "3Ntvs6"
 						}),
 						onClick: () => {
-							i(), o(x.c.FREQUENT), a(F(x.c.FREQUENT.toLowerCase()))
+							i(), o(x.b.FREQUENT), a(F(x.b.FREQUENT.toLowerCase()))
 						}
 					})), n.a.createElement("button", {
 						className: S.a.hideButton,
@@ -881,7 +881,7 @@
 						}(e.userId, e.subredditId),
 						l = Object(i.e)(e => !!Object(z.a)(e));
 					Object(r.useEffect)(() => {
-						e.notificationLevel !== x.c.LOW && e.notificationLevel !== x.c.OFF || c()
+						e.notificationLevel !== x.b.LOW && e.notificationLevel !== x.b.OFF || c()
 					}, [e.subredditId]);
 					const b = 2 === d,
 						f = () => {
@@ -903,7 +903,7 @@
 							e.stopPropagation(), o.visible ? f() : E()
 						}, [f, E, o.visible]),
 						I = Object(r.useCallback)(t => {
-							t === x.c.FREQUENT && Object(A.cb)(e.userId, e.subredditId)
+							t === x.b.FREQUENT && Object(A.cb)(e.userId, e.subredditId)
 						}, [e.subredditId, e.userId]),
 						P = Object(r.useCallback)(r => {
 							const {
@@ -1020,7 +1020,7 @@
 					if (r) return e(Object(u.a)({
 						subredditAboutInfo: {
 							[r]: {
-								notificationLevel: x.c.LOW
+								notificationLevel: x.b.LOW
 							}
 						}
 					}))
@@ -4532,7 +4532,7 @@
 						className: J.a.metaLine
 					}, r && !!n && a.a.createElement("span", {
 						className: J.a.meta
-					}, Object(G.i)(n) ? Object(T.d)(n.displayText || n.name) : Object(T.c)(n.displayText || n.name)), a.a.createElement("span", {
+					}, Object(G.h)(n) ? Object(T.d)(n.displayText || n.name) : Object(T.c)(n.displayText || n.name)), a.a.createElement("span", {
 						className: J.a.meta
 					}, K._({
 						"*": "{score} points",
@@ -5760,4 +5760,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditWiki.2f79bf9b4ac541ad602b.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditWiki.f074e528a9e56218a452.js.map

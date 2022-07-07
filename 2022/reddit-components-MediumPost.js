@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-MediumPost.db56d877c92062b9d857.js
-// Retrieved at 7/7/2022, 2:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-MediumPost.6a3d34d6950908323b8a.js
+// Retrieved at 7/7/2022, 4:10:13 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-MediumPost"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -1663,7 +1663,7 @@
 					getEventFactory: e => Object(u.k)(s.id, e ? "unsubscribe" : "subscribe"),
 					identifier: {
 						name: x.name,
-						type: Object(p.i)(x) ? l.a.PROFILE : l.a.SUBREDDIT
+						type: Object(p.h)(x) ? l.a.PROFILE : l.a.SUBREDDIT
 					},
 					postId: s.id,
 					small: !0
@@ -3116,7 +3116,7 @@
 					onFollowPostClick: Y
 				} = e;
 				const H = M,
-					G = V && Object(S.i)(V),
+					G = V && Object(S.h)(V),
 					z = Object(i.e)(e => {
 						if (!G) return !0;
 						const t = Object(C.Gb)(e, D.author || "");
@@ -5525,4 +5525,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-MediumPost.db56d877c92062b9d857.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-MediumPost.6a3d34d6950908323b8a.js.map

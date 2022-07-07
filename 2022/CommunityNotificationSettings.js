@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CommunityNotificationSettings.72708970e4c60ea517af.js
-// Retrieved at 6/1/2022, 6:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CommunityNotificationSettings.afb05f3e0b85f32d0fa0.js
+// Retrieved at 7/7/2022, 4:10:13 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CommunityNotificationSettings"], {
 		"./node_modules/lodash/times.js": function(e, t, n) {
@@ -8,13 +8,13 @@
 				o = n("./node_modules/lodash/toInteger.js"),
 				a = 9007199254740991,
 				r = 4294967295,
-				c = Math.min;
+				d = Math.min;
 			e.exports = function(e, t) {
 				if ((e = o(e)) < 1 || e > a) return [];
 				var n = r,
-					d = c(e, r);
+					c = d(e, r);
 				t = i(t), e -= r;
-				for (var l = s(d, t); ++n < e;) t(n);
+				for (var l = s(c, t); ++n < e;) t(n);
 				return l
 			}
 		},
@@ -30,24 +30,24 @@
 				o = n("./src/reddit/actions/notificationSettingsLayout/index.ts"),
 				a = n("./src/reddit/actions/notificationsInbox/index.ts"),
 				r = n("./src/reddit/actions/subreddit/constants.ts"),
-				c = n("./src/reddit/actions/toaster.ts"),
-				d = n("./src/reddit/endpoints/subreddit/notificationSettings.ts"),
+				d = n("./src/reddit/actions/toaster.ts"),
+				c = n("./src/reddit/endpoints/subreddit/notificationSettings.ts"),
 				l = n("./src/reddit/models/Subreddit/index.ts"),
 				u = n("./src/reddit/models/Toast/index.ts");
 			const m = Object(i.a)(r.u),
-				p = Object(i.a)(r.t),
-				f = Object(i.a)(r.s),
-				b = e => {
+				b = Object(i.a)(r.t),
+				p = Object(i.a)(r.s),
+				f = e => {
 					switch (e) {
-						case l.c.OFF:
+						case l.b.OFF:
 							return s.fbt._("Unfollowed. You won’t get updates on new activity anymore.", null, {
 								hk: "3e1CJR"
 							});
-						case l.c.FREQUENT:
+						case l.b.FREQUENT:
 							return s.fbt._("Followed! Now you’ll get updates on new activity.", null, {
 								hk: "3JzOOa"
 							});
-						case l.c.LOW:
+						case l.b.LOW:
 							return s.fbt._("Success! You will see fewer notifications from this community in the future.", null, {
 								hk: "4x3TS8"
 							});
@@ -67,28 +67,28 @@
 						gqlContext: O
 					} = g;
 					var S, v, _;
-					e(p());
+					e(b());
 					const w = (e => {
 							switch (e) {
-								case l.c.FREQUENT:
+								case l.b.FREQUENT:
 									return {
 										isSubredditUpdatesInterestingPostEnabled: !0, isUpdateFromSubredditEnabled: !0
 									};
-								case l.c.LOW:
+								case l.b.LOW:
 									return {
 										isSubredditUpdatesInterestingPostEnabled: !1, isUpdateFromSubredditEnabled: !0
 									};
-								case l.c.OFF:
+								case l.b.OFF:
 								default:
 									return {
 										isSubredditUpdatesInterestingPostEnabled: !1, isUpdateFromSubredditEnabled: !1
 									}
 							}
 						})(n),
-						N = await Object(d.b)(O(), t, w);
+						N = await Object(c.b)(O(), t, w);
 					if ((null === (v = null === (S = N.error) || void 0 === S ? void 0 : S.fields) || void 0 === v ? void 0 : v.length) || function(e) {
 							return Boolean(e && e.data && e.data.updateSubredditNotificationSettings)
-						}(N.body) && (null === (_ = N.body.data.updateSubredditNotificationSettings.errors) || void 0 === _ ? void 0 : _.length)) return e(f()), e(Object(c.f)({
+						}(N.body) && (null === (_ = N.body.data.updateSubredditNotificationSettings.errors) || void 0 === _ ? void 0 : _.length)) return e(p()), e(Object(d.f)({
 						kind: u.b.Error,
 						text: s.fbt._("Failed to change the frequency of notifications from this community, please try again.", null, {
 							hk: "4avFFV"
@@ -103,9 +103,9 @@
 								notificationLevel: n
 							}
 						}
-					})), i && i(), e(r ? Object(c.f)(Object(c.e)(b(n), u.b.Undo, s.fbt._("Undo", null, {
+					})), i && i(), e(r ? Object(d.f)(Object(d.e)(f(n), u.b.Undo, s.fbt._("Undo", null, {
 						hk: "46OwLP"
-					}), Object(a.i)(t, r))) : Object(c.f)(Object(c.e)(b(n), u.b.SuccessCommunityGreen))))
+					}), Object(a.i)(t, r))) : Object(d.f)(Object(d.e)(f(n), u.b.SuccessCommunityGreen))))
 				}
 			}
 		},
@@ -130,14 +130,14 @@
 				o = n("./node_modules/reselect/es/index.js"),
 				a = n("./node_modules/react/index.js"),
 				r = n.n(a),
-				c = n("./node_modules/react-redux/es/index.js"),
-				d = n("./src/reddit/actions/notificationSettingsLayout/index.ts"),
+				d = n("./node_modules/react-redux/es/index.js"),
+				c = n("./src/reddit/actions/notificationSettingsLayout/index.ts"),
 				l = n("./src/reddit/actions/subreddit/notifications.ts"),
 				u = n("./src/reddit/icons/fonts/index.tsx"),
 				m = n("./src/reddit/models/Subreddit/index.ts");
-			var p = n("./src/reddit/components/SubredditIcon/index.tsx"),
-				f = n("./src/reddit/controls/DropdownSelector/index.tsx"),
-				b = n("./src/reddit/helpers/trackers/notifications.ts"),
+			var b = n("./src/reddit/components/SubredditIcon/index.tsx"),
+				p = n("./src/reddit/controls/DropdownSelector/index.tsx"),
+				f = n("./src/reddit/helpers/trackers/notifications.ts"),
 				h = n("./src/reddit/hooks/useTracking.ts"),
 				g = n("./src/reddit/components/Settings/Notifications/CommunityNotificationSettings/index.m.less"),
 				O = n.n(g);
@@ -149,8 +149,8 @@
 				var s, o;
 				const a = Object(h.a)(),
 					{
-						id: c,
-						notificationLevel: d,
+						id: d,
+						notificationLevel: c,
 						name: l,
 						isNsfw: g
 					} = t,
@@ -158,38 +158,38 @@
 					v = null !== (o = t.styles.primaryColor) && void 0 !== o ? o : void 0,
 					_ = (e => {
 						switch (e) {
-							case m.c.OFF:
+							case m.b.OFF:
 								return "Off";
-							case m.c.FREQUENT:
+							case m.b.FREQUENT:
 								return "High Frequency";
-							case m.c.LOW:
+							case m.b.LOW:
 							default:
 								return "Low"
 						}
-					})(d),
+					})(c),
 					w = (e => {
 						switch (e) {
-							case m.c.OFF:
+							case m.b.OFF:
 								return r.a.createElement(u.a, {
 									name: "notification_off"
 								});
-							case m.c.FREQUENT:
+							case m.b.FREQUENT:
 								return r.a.createElement(u.a, {
 									name: "notification_frequent"
 								});
-							case m.c.LOW:
+							case m.b.LOW:
 							default:
 								return r.a.createElement(u.a, {
 									name: "notification"
 								})
 						}
-					})(d),
+					})(c),
 					N = [{
 						displayText: i.fbt._("Frequent", null, {
 							hk: "21spt7"
 						}),
-						isSelected: d === m.c.FREQUENT,
-						value: m.c.FREQUENT,
+						isSelected: c === m.b.FREQUENT,
+						value: m.b.FREQUENT,
 						icon: r.a.createElement(u.a, {
 							name: "notification_frequent",
 							className: O.a.dropdownItemIcon
@@ -198,8 +198,8 @@
 						displayText: i.fbt._("Low", null, {
 							hk: "2uGDVq"
 						}),
-						isSelected: d === m.c.LOW,
-						value: m.c.LOW,
+						isSelected: c === m.b.LOW,
+						value: m.b.LOW,
 						icon: r.a.createElement(u.a, {
 							name: "notification",
 							className: O.a.dropdownItemIcon
@@ -208,8 +208,8 @@
 						displayText: i.fbt._("Off", null, {
 							hk: "4GiFvg"
 						}),
-						isSelected: d === m.c.OFF,
-						value: m.c.OFF,
+						isSelected: c === m.b.OFF,
+						value: m.b.OFF,
 						icon: r.a.createElement(u.a, {
 							name: "notification_off",
 							className: O.a.dropdownItemIcon
@@ -217,10 +217,10 @@
 					}];
 				return r.a.createElement("div", {
 					className: O.a.container,
-					key: c
+					key: d
 				}, r.a.createElement("div", {
 					className: O.a.subreddit
-				}, r.a.createElement(p.b, {
+				}, r.a.createElement(b.b, {
 					iconUrl: S,
 					altText: i.fbt._("Subreddit icon", null, {
 						hk: "gEWhf"
@@ -236,13 +236,13 @@
 					className: O.a.subredditInfoNotification
 				}, i.fbt._("Notifications: {notification level}", [i.fbt._param("notification level", _)], {
 					hk: "2YgR3R"
-				})))), r.a.createElement(f.b, {
+				})))), r.a.createElement(p.b, {
 					isCompactStyle: !0,
 					displayText: t.notificationLevel,
 					options: N,
 					onSelect: e => {
 						var t;
-						a(Object(b.n)(c, l, null === (t = e.value) || void 0 === t ? void 0 : t.toLowerCase())), n(c, e.value)
+						a(Object(f.n)(d, l, null === (t = e.value) || void 0 === t ? void 0 : t.toLowerCase())), n(d, e.value)
 					},
 					buttonClassName: O.a.dropdown,
 					buttonIcon: w
@@ -257,13 +257,13 @@
 					isPending: _.vb,
 					subreddits: _.wb
 				}),
-				N = Object(c.b)(w, e => ({
-					clearSubscribedSubredditsList: () => e(Object(d.c)()),
-					fetchSubscribesSubreddits: t => e(Object(d.b)(t)),
+				N = Object(d.b)(w, e => ({
+					clearSubscribedSubredditsList: () => e(Object(c.c)()),
+					fetchSubscribesSubreddits: t => e(Object(c.b)(t)),
 					updateSubredditNotificationLevel: (t, n) => e(Object(l.b)({
 						subredditId: t,
 						notificationLevel: n,
-						successCallback: () => e(Object(d.c)({
+						successCallback: () => e(Object(c.c)({
 							subredditId: t,
 							notificationLevel: n
 						}))
@@ -274,31 +274,31 @@
 					fetchSubscribesSubreddits: t,
 					subreddits: n,
 					cursor: o,
-					hasNextPage: c,
-					hasError: d,
+					hasNextPage: d,
+					hasError: c,
 					isPending: l,
 					updateSubredditNotificationLevel: u,
 					clearSubscribedSubredditsList: m
 				} = e;
-				const p = Object(h.a)();
-				Object(a.useEffect)(() => (p(Object(b.o)()), t({
+				const b = Object(h.a)();
+				Object(a.useEffect)(() => (b(Object(f.o)()), t({
 					first: 20
 				}), () => {
 					m()
 				}), []);
-				const f = n && n.length > 0;
-				return d ? r.a.createElement("span", {
+				const p = n && n.length > 0;
+				return c ? r.a.createElement("span", {
 					className: O.a.errorMessage,
 					"data-testid": "error-message"
 				}, i.fbt._("There was an issue fetching your subreddits notifications settings. Please try again later.", null, {
 					hk: "1Wt132"
-				})) : l && !f ? r.a.createElement(v.a, {
+				})) : l && !p ? r.a.createElement(v.a, {
 					rowsCount: 5
-				}) : f ? r.a.createElement(r.a.Fragment, null, n.map(e => r.a.createElement(S, {
+				}) : p ? r.a.createElement(r.a.Fragment, null, n.map(e => r.a.createElement(S, {
 					subreddit: e,
 					onSelect: u,
 					key: e.id
-				})), c && r.a.createElement(s.a, {
+				})), d && r.a.createElement(s.a, {
 					onChange: e => {
 						e.isIntersecting && o && t({
 							after: o,
@@ -320,15 +320,15 @@
 		"./src/reddit/components/Settings/Notifications/LoadingSection.tsx": function(e, t, n) {
 			"use strict";
 			n.d(t, "a", (function() {
-				return d
+				return c
 			}));
 			var s = n("./node_modules/lodash/times.js"),
 				i = n.n(s),
 				o = n("./node_modules/react/index.js"),
 				a = n.n(o),
 				r = n("./src/reddit/components/Settings/Notifications/index.m.less"),
-				c = n.n(r);
-			const d = e => {
+				d = n.n(r);
+			const c = e => {
 				let {
 					rowsCount: t
 				} = e;
@@ -336,14 +336,14 @@
 					role: "alert",
 					"aria-busy": "true"
 				}, a.a.createElement("div", {
-					className: c.a.loadingSectionHeader
+					className: d.a.loadingSectionHeader
 				}), i()(t, e => a.a.createElement("div", {
-					className: c.a.loadingToggleWrapper,
+					className: d.a.loadingToggleWrapper,
 					key: e
 				}, a.a.createElement("span", {
-					className: c.a.loadingToggleName
+					className: d.a.loadingToggleName
 				}), a.a.createElement("span", {
-					className: c.a.loadingToggleButton
+					className: d.a.loadingToggleButton
 				}))))
 			}
 		},
@@ -388,8 +388,8 @@
 				o = n("./src/reddit/controls/DropdownSelector/index.m.less"),
 				a = n.n(o),
 				r = n("./src/lib/classNames/index.ts"),
-				c = n("./src/reddit/controls/Dropdown/Row.tsx"),
-				d = n("./src/reddit/controls/LoadingIcon/index.tsx"),
+				d = n("./src/reddit/controls/Dropdown/Row.tsx"),
+				c = n("./src/reddit/controls/LoadingIcon/index.tsx"),
 				l = n("./src/reddit/icons/fonts/index.tsx");
 			const u = e => {
 				e.preventDefault()
@@ -460,7 +460,7 @@
 						isTopicsStyle: n,
 						menuOptionClassName: s
 					} = this.props;
-					return e.map((e, o) => i.a.createElement(c.b, {
+					return e.map((e, o) => i.a.createElement(d.b, {
 						key: o + e.displayText,
 						className: Object(r.a)(a.a.menuOption, s, {
 							[a.a.topics]: n
@@ -481,11 +481,11 @@
 						displayText: n,
 						isCompactStyle: s,
 						isTopicsStyle: o,
-						menuItemsClassName: c,
+						menuItemsClassName: d,
 						name: m,
-						isSaving: p,
-						buttonIcon: f,
-						disabled: b
+						isSaving: b,
+						buttonIcon: p,
+						disabled: f
 					} = this.props, {
 						isOpen: h
 					} = this.state;
@@ -496,41 +496,41 @@
 							[a.a.topics]: o
 						})
 					}, i.a.createElement("button", {
-						onClick: b ? void 0 : this.handleDropdownClick,
+						onClick: f ? void 0 : this.handleDropdownClick,
 						className: Object(r.a)(e, a.a.selector, {
 							[a.a.compact]: s
 						}, {
 							[a.a.topics]: o
 						}, {
-							[a.a.disabled]: b
+							[a.a.disabled]: f
 						}),
 						name: m,
 						role: "menu",
 						ref: this.dropdownButton,
-						onBlur: b ? void 0 : this.handleDropdownBlur,
-						onKeyDown: b ? void 0 : this.handleDropdownKeyDown
+						onBlur: f ? void 0 : this.handleDropdownBlur,
+						onKeyDown: f ? void 0 : this.handleDropdownKeyDown
 					}, i.a.createElement("span", {
 						className: a.a.selectorContent,
 						tabIndex: -1
-					}, f && i.a.createElement("span", {
+					}, p && i.a.createElement("span", {
 						className: a.a.buttonIcon
-					}, f), n), b ? null : p ? i.a.createElement(d.a, {
+					}, p), n), f ? null : b ? i.a.createElement(c.a, {
 						sizePx: 8,
 						className: a.a.loadingIcon
 					}) : i.a.createElement(l.a, {
 						name: "caret_down"
 					})), i.a.createElement("div", {
-						className: Object(r.a)(a.a.menuItems, c, {
+						className: Object(r.a)(a.a.menuItems, d, {
 							[a.a.topics]: o,
 							[a.a.isClosed]: !h
 						}),
 						onMouseDown: u,
 						ref: this.menuItems
-					}, !b && h && this.getDropdownMenuItems()))
+					}, !f && h && this.getDropdownMenuItems()))
 				}
 			}
 			t.b = m
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommunityNotificationSettings.72708970e4c60ea517af.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommunityNotificationSettings.afb05f3e0b85f32d0fa0.js.map

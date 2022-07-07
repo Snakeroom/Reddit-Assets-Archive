@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditTopContent~TopWeekPostsDiscoveryUnit.f06c6535cad23cadf2d0.js
-// Retrieved at 6/29/2022, 1:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditTopContent~TopWeekPostsDiscoveryUnit.d16d150a4f761ef4a473.js
+// Retrieved at 7/7/2022, 4:10:13 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditTopContent~TopWeekPostsDiscoveryUnit"], {
 		"./src/lib/getShortenedLink.ts": function(e, t, s) {
@@ -500,7 +500,7 @@
 					}, j)));
 					const C = !k && !O;
 					let w;
-					return y && (w = Object(ie.i)(y) ? Object(re.b)(y) : Object(re.c)(y)), a.a.createElement(X.a, {
+					return y && (w = Object(ie.h)(y) ? Object(re.b)(y) : Object(re.c)(y)), a.a.createElement(X.a, {
 						className: Object(d.a)(pe.a.container, ue.a.largeAndMediumActiveStyles, ue.a.largeAndMediumPostStyles, de.a.postContainer, Object(ne.a)(this.props), s),
 						post: p,
 						onClick: m,
@@ -3929,4 +3929,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditTopContent~TopWeekPostsDiscoveryUnit.f06c6535cad23cadf2d0.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditTopContent~TopWeekPostsDiscoveryUnit.d16d150a4f761ef4a473.js.map

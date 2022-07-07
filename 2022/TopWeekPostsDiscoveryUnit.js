@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/TopWeekPostsDiscoveryUnit.b392a68e57dd876caed2.js
-// Retrieved at 6/29/2022, 1:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/TopWeekPostsDiscoveryUnit.fe4f4e4e2f2fefeb6634.js
+// Retrieved at 7/7/2022, 4:10:13 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["TopWeekPostsDiscoveryUnit"], {
 		"./src/reddit/components/DiscoveryUnit/InFeedChaining/Post/Body/index.m.less": function(e, t, s) {
@@ -199,7 +199,7 @@
 						onSubredditOrProfileClick: r,
 						shouldShowSubscribeButton: i,
 						subredditOrProfile: o
-					} = e, c = Object(P.i)(o) ? J.a.PROFILE : J.a.SUBREDDIT;
+					} = e, c = Object(P.h)(o) ? J.a.PROFILE : J.a.SUBREDDIT;
 					return n.a.createElement("div", {
 						className: Object(a.a)(V.a.header, t)
 					}, n.a.createElement(q.default, {
@@ -235,7 +235,7 @@
 				ee = s.n($);
 			const te = Object(o.a)(e => e.subredditOrProfile, e => e.subscribedProfiles, e => e.subscribedSubreddits, (e, t, s) => {
 				if (!e) return !1;
-				return (Object(P.i)(e) ? t : s).some(t => t.id === e.id)
+				return (Object(P.h)(e) ? t : s).some(t => t.id === e.id)
 			});
 			class se extends n.a.Component {
 				constructor() {
@@ -497,4 +497,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/TopWeekPostsDiscoveryUnit.b392a68e57dd876caed2.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/TopWeekPostsDiscoveryUnit.fe4f4e4e2f2fefeb6634.js.map

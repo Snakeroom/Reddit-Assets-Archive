@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/AuthorHovercard~Reddit.c47e76d90693836bc493.js
-// Retrieved at 7/7/2022, 2:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/AuthorHovercard~Reddit.af859b9e36e7e760b93d.js
+// Retrieved at 7/7/2022, 4:10:13 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["AuthorHovercard~Reddit"], {
 		"./src/lib/browser/isIncognito.ts": function(e, t, n) {
@@ -1566,7 +1566,7 @@
 					return e
 				}).apply(this, arguments)
 			}
-			const z = [w.h.PrivateMessage, w.h.ChatMessage, w.h.ChatRequest, w.h.UsernameMention, w.h.PostReply, w.h.UpvotePost, w.h.UpvoteComment, w.h.CommentReply, w.h.ThreadReplies, w.h.TopLevelComment, w.h.NewPostActivity, w.h.UserNewFollower, w.h.PostFlairAdded, w.h.UserFlairAdded, w.h.NewPinnedPost, w.h.AwardReceived, w.h.PostFollow, w.h.TalkLive, w.h.CommentFollow, w.h.LifecyclePostSuggestions, w.h.BroadcastRecommendation, w.h.SubredditRecommendation, w.h.RedditLore, w.h.OneOff, w.h.CakeDay, w.h.ModeratedSrEngagement];
+			const z = [w.i.PrivateMessage, w.i.ChatMessage, w.i.ChatRequest, w.i.UsernameMention, w.i.PostReply, w.i.UpvotePost, w.i.UpvoteComment, w.i.CommentReply, w.i.ThreadReplies, w.i.TopLevelComment, w.i.NewPostActivity, w.i.UserNewFollower, w.i.PostFlairAdded, w.i.UserFlairAdded, w.i.NewPinnedPost, w.i.AwardReceived, w.i.PostFollow, w.i.TalkLive, w.i.CommentFollow, w.i.LifecyclePostSuggestions, w.i.BroadcastRecommendation, w.i.SubredditRecommendation, w.i.RedditLore, w.i.OneOff, w.i.CakeDay, w.i.ModeratedSrEngagement];
 			var G;
 			! function(e) {
 				e[e.TURN_ON_PN = 0] = "TURN_ON_PN", e[e.TURN_ON_PN_APP = 1] = "TURN_ON_PN_APP", e[e.VERIFY_EMAIL = 2] = "VERIFY_EMAIL", e[e.TURN_ON_DAYLY_DIGEST = 3] = "TURN_ON_DAYLY_DIGEST", e[e.DONE = 4] = "DONE"
@@ -1887,4 +1887,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/AuthorHovercard~Reddit.c47e76d90693836bc493.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/AuthorHovercard~Reddit.af859b9e36e7e760b93d.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfileOverview.6a34d444f506a660ce40.js
-// Retrieved at 7/7/2022, 2:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfileOverview.716acedd52e23ba3506a.js
+// Retrieved at 7/7/2022, 4:10:13 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfileOverview"], {
 		"./src/lib/makeOverviewConversationsItemKey/index.ts": function(e, t, s) {
@@ -3501,7 +3501,7 @@
 					getEventFactory: e => Object(v.k)(y.id, e ? "unsubscribe" : "subscribe"),
 					identifier: {
 						name: k.name,
-						type: Object(g.i)(k) ? h.a.PROFILE : h.a.SUBREDDIT
+						type: Object(g.h)(k) ? h.a.PROFILE : h.a.SUBREDDIT
 					},
 					postId: y.id,
 					size: x.d.XXS,
@@ -3658,7 +3658,7 @@
 					onFollowPostClick: G
 				} = e;
 				const H = L,
-					z = V && Object(C.i)(V),
+					z = V && Object(C.h)(V),
 					q = Object(i.e)(e => {
 						if (!z) return !0;
 						const t = Object(E.Gb)(e, R.author || "");
@@ -5386,4 +5386,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileOverview.6a34d444f506a660ce40.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileOverview.716acedd52e23ba3506a.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/OnboardingModal.1654be6b5603dd86e4ff.js
-// Retrieved at 7/7/2022, 2:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/OnboardingModal.a459676a7a795be882d0.js
+// Retrieved at 7/7/2022, 4:10:13 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["OnboardingModal"], {
 		"./node_modules/lodash/_baseRange.js": function(e, t) {
@@ -409,7 +409,7 @@
 							variant: null == v ? void 0 : v.toLowerCase()
 						}
 					};
-					return O ? (E.sort = D.v.Best, E.feedRankingContext.variant = Object(R.b)(e)) : l && (E.sort = l.toUpperCase()), u && (E.range = u.toUpperCase()), a ? E.pageSize = Object(g.a)(i) : d && (E.pageSize = d), x && x.ad && (E.forceAds = {
+					return O ? (E.sort = D.w.Best, E.feedRankingContext.variant = Object(R.b)(e)) : l && (E.sort = l.toUpperCase()), u && (E.range = u.toUpperCase()), a ? E.pageSize = Object(g.a)(i) : d && (E.pageSize = d), x && x.ad && (E.forceAds = {
 						ad: x.ad
 					}), s && (E.after = Object(c.a)(s)), E
 				},
@@ -4185,4 +4185,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/OnboardingModal.1654be6b5603dd86e4ff.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/OnboardingModal.a459676a7a795be882d0.js.map

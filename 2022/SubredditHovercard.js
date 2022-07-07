@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditHovercard.d5dfcd34d105eaddcb7f.js
-// Retrieved at 6/21/2022, 7:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditHovercard.9c1178f442431d0af5c2.js
+// Retrieved at 7/7/2022, 4:10:13 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditHovercard"], {
 		"./src/reddit/components/CommunityType/index.m.less": function(e, t, s) {
@@ -68,7 +68,7 @@
 					subreddit: d
 				} = e;
 				switch (d.type) {
-					case m.g.Restricted:
+					case m.f.Restricted:
 						return i.a.createElement(I, {
 							className: t,
 							icon: i.a.createElement(u.a, {
@@ -82,7 +82,7 @@
 							description: Object(b.g)(r),
 							subreddit: d
 						});
-					case m.g.Private:
+					case m.f.Private:
 						return i.a.createElement(I, {
 							className: t,
 							icon: i.a.createElement(u.a, {
@@ -98,7 +98,7 @@
 							}),
 							subreddit: d
 						});
-					case m.g.EmployeesOnly:
+					case m.f.EmployeesOnly:
 						return i.a.createElement(I, {
 							className: t,
 							icon: i.a.createElement(u.a, {
@@ -873,4 +873,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditHovercard.d5dfcd34d105eaddcb7f.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditHovercard.9c1178f442431d0af5c2.js.map

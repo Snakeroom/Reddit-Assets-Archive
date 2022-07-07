@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~Reddit.795ca22dc16154da3a0d.js
-// Retrieved at 7/7/2022, 2:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~Reddit.809b04836e3c786894b1.js
+// Retrieved at 7/7/2022, 4:10:13 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~Reddit"], {
 		"./assets/fonts/NotoMono/font.less": function(e, t, n) {},
@@ -6312,7 +6312,7 @@
 							...t,
 							disallowProfile: !0
 						});
-					if ((null == s ? void 0 : s.type) !== u.g.Public || s.isNSFW || s.isQuarantined || (null == r ? void 0 : r.isNSFW) || (null == r ? void 0 : r.source)) return !1;
+					if ((null == s ? void 0 : s.type) !== u.f.Public || s.isNSFW || s.isQuarantined || (null == r ? void 0 : r.isNSFW) || (null == r ? void 0 : r.source)) return !1;
 					const a = O.find(e => {
 						let {
 							low: t,
@@ -19931,7 +19931,7 @@
 					case Fe.h: {
 						const {
 							typeaheadSuggestions: n
-						} = t.payload, r = Object.values(n).reduce((e, t) => Object(Uh.i)(t) ? {
+						} = t.payload, r = Object.values(n).reduce((e, t) => Object(Uh.h)(t) ? {
 							...e,
 							[t.id]: t
 						} : e, {});
@@ -27612,4 +27612,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit.795ca22dc16154da3a0d.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit.809b04836e3c786894b1.js.map

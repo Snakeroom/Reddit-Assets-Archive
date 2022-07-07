@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostCreation.5aafbefafc386bea9a8c.js
-// Retrieved at 7/7/2022, 3:00:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostCreation.94c3a4e54e52b14f07be.js
+// Retrieved at 7/7/2022, 4:10:13 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostCreation", "ChatMessageInput~MembershipPaywallPage~RichTextEditor", "ContributorRequestButton"], {
 		"./node_modules/autosize/dist/autosize.js": function(e, t, n) {
@@ -9000,7 +9000,7 @@
 						subreddit: t,
 						user: n,
 						onHoverActionText: o
-					} = this.props, s = t && Object(k.i)(t) && n ? Object(_.d)(Object(S.e)(n)) : t ? t.displayText : "", r = e.postIds.length;
+					} = this.props, s = t && Object(k.h)(t) && n ? Object(_.d)(Object(S.e)(n)) : t ? t.displayText : "", r = e.postIds.length;
 					return i.a.createElement(R, {
 						onClick: this.onClick,
 						className: I.a.container
@@ -11095,7 +11095,7 @@
 					getEventFactory: e => Object(E.k)(k.id, e ? "unsubscribe" : "subscribe"),
 					identifier: {
 						name: j.name,
-						type: Object(x.i)(j) ? b.a.PROFILE : b.a.SUBREDDIT
+						type: Object(x.h)(j) ? b.a.PROFILE : b.a.SUBREDDIT
 					},
 					postId: k.id,
 					size: f.d.XXS,
@@ -24008,19 +24008,19 @@
 						...p,
 						variables: t
 					});
-					return !!Object(a.c)(n) && (n.body.data.subredditInfoById.allowedPostTypes || []).includes(b.w.Talk)
+					return !!Object(a.c)(n) && (n.body.data.subredditInfoById.allowedPostTypes || []).includes(b.x.Talk)
 				}, E = async (e, t) => {
 					var n, o;
 					const s = await Object(i.a)(e, {
 						...m,
 						variables: t
 					});
-					return !!Object(a.c)(s) && (null !== (o = null === (n = s.body.data.profileByName) || void 0 === n ? void 0 : n.allowedPostTypes) && void 0 !== o ? o : []).includes(b.w.Talk)
+					return !!Object(a.c)(s) && (null !== (o = null === (n = s.body.data.profileByName) || void 0 === n ? void 0 : n.allowedPostTypes) && void 0 !== o ? o : []).includes(b.x.Talk)
 				}, C = async e => {
 					var t;
 					const n = await Object(i.a)(e, u);
 					return Object(a.c)(n) && null !== (t = n.body.data.availableAudioRoomTopics) && void 0 !== t ? t : []
-				}, x = (e, t, n) => t.type === c.g.User ? Object(i.a)(e, {
+				}, x = (e, t, n) => t.type === c.f.User ? Object(i.a)(e, {
 					...l,
 					variables: n
 				}) : Object(i.a)(e, {
@@ -24030,19 +24030,19 @@
 						subredditId: t.id
 					}
 				}), y = () => r()(), v = e => e.data.createAudioRoomOrError || e.data.createAudioRoomOnProfile, O = {
-					[b.f.ServiceError]: o.fbt._("Something's wrong with the talk service right now. Check back later.", null, {
+					[b.g.ServiceError]: o.fbt._("Something's wrong with the talk service right now. Check back later.", null, {
 						hk: "3XqPJS"
 					}),
-					[b.f.UserNotAuthorized]: o.fbt._("You don't have permission to start talks in this community.", null, {
+					[b.g.UserNotAuthorized]: o.fbt._("You don't have permission to start talks in this community.", null, {
 						hk: "1XY1Ss"
 					}),
-					[b.f.RoomLimitExceeded]: o.fbt._("You can only create three talks at one time. To continue, close a talk you're not using.", null, {
+					[b.g.RoomLimitExceeded]: o.fbt._("You can only create three talks at one time. To continue, close a talk you're not using.", null, {
 						hk: "3zPx9X"
 					}),
-					[b.f.ConcurrentRoomLimitExceeded]: o.fbt._("Too many talks are happening right now. Try again later.", null, {
+					[b.g.ConcurrentRoomLimitExceeded]: o.fbt._("Too many talks are happening right now. Try again later.", null, {
 						hk: "2LYXJx"
 					}),
-					[b.f.SubredditRoomLimitExceeded]: o.fbt._("This community can only host two talks at a time. Try again after one has ended.", null, {
+					[b.g.SubredditRoomLimitExceeded]: o.fbt._("This community can only host two talks at a time. Try again after one has ended.", null, {
 						hk: "2mGf21"
 					})
 				}
@@ -27880,12 +27880,12 @@
 							});
 							if (!e.ok) return b(Object(O.f)({
 								kind: R.b.Error,
-								text: j.a[D.f.ServiceError]
+								text: j.a[D.g.ServiceError]
 							})), void h(!1);
 							const t = Object(j.g)(e.body);
 							if (null == t ? void 0 : t.errorState) return b(Object(O.f)({
 								kind: R.b.Error,
-								text: j.a[t.errorState.code] || j.a[D.f.ServiceError]
+								text: j.a[t.errorState.code] || j.a[D.g.ServiceError]
 							})), void h(!1);
 							(null == t ? void 0 : t.okState) && (window.location.href = `${v.a.redditUrl}/talk/${t.okState.roomId}`)
 						},
@@ -28592,7 +28592,7 @@
 					} = u || {}, {
 						allOriginalContent: T = !1,
 						eventPostsEnabled: w = !1
-					} = a || {}, I = i.isProfile || Object(qt.h)(a), P = d || !I || T || v === h.Wb.CROSSPOST, N = d || !(i.isProfile || Object(qt.j)(a)), R = d, D = d || !!y;
+					} = a || {}, I = i.isProfile || Object(qt.g)(a), P = d || !I || T || v === h.Wb.CROSSPOST, N = d || !(i.isProfile || Object(qt.i)(a)), R = d, D = d || !!y;
 					return s.a.createElement("div", {
 						className: o
 					}, s.a.createElement(on, null, p && s.a.createElement(rn, {
@@ -29704,7 +29704,7 @@
 						isDraftDeletionPending: n,
 						subreddit: o,
 						user: r
-					} = this.props, i = o && Object(qt.i)(o) && r ? {
+					} = this.props, i = o && Object(qt.h)(o) && r ? {
 						displayText: Object(Ro.d)(Object(Go.e)(r)),
 						url: `/user/${Object(Go.e)(r)}/`
 					} : o;
@@ -34399,4 +34399,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.5aafbefafc386bea9a8c.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.94c3a4e54e52b14f07be.js.map

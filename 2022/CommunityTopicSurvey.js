@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CommunityTopicSurvey.aeb87ac2a56ba8acda5e.js
-// Retrieved at 7/7/2022, 2:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CommunityTopicSurvey.e6f9759e5caa581ff74e.js
+// Retrieved at 7/7/2022, 4:10:13 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CommunityTopicSurvey"], {
 		"./node_modules/react-uid/dist/es2015/hooks.js": function(e, t, n) {
@@ -425,7 +425,7 @@
 					a(p(v, t, n))
 				}
 				switch (v.type) {
-					case D.e.Multi:
+					case D.d.Multi:
 						return o.a.createElement(w, {
 							key: v.id,
 							questionId: v.id,
@@ -436,7 +436,7 @@
 							onClose: C,
 							inFeed: u
 						});
-					case D.e.SingleWithSubmit:
+					case D.d.SingleWithSubmit:
 						return o.a.createElement(M, {
 							key: v.id,
 							questionId: v.id,
@@ -447,7 +447,7 @@
 							onClose: C,
 							inFeed: u
 						});
-					case D.e.SingleNoSubmit:
+					case D.d.SingleNoSubmit:
 						return o.a.createElement(M, {
 							key: v.id,
 							questionId: v.id,
@@ -1182,4 +1182,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommunityTopicSurvey.aeb87ac2a56ba8acda5e.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommunityTopicSurvey.e6f9759e5caa581ff74e.js.map

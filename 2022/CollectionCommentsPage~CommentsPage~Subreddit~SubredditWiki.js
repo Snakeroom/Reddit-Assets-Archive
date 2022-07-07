@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~Subreddit~SubredditWiki.a0621081d338756c9f9b.js
-// Retrieved at 7/7/2022, 2:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~Subreddit~SubredditWiki.ec331d5cf94f399c7c1b.js
+// Retrieved at 7/7/2022, 4:10:13 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~Subreddit~SubredditWiki"], {
 		"./node_modules/lodash/random.js": function(e, t, r) {
@@ -429,15 +429,15 @@
 				b = Object(s.a)(o.s),
 				h = e => {
 					switch (e) {
-						case l.c.OFF:
+						case l.b.OFF:
 							return n.fbt._("Unfollowed. You won’t get updates on new activity anymore.", null, {
 								hk: "3e1CJR"
 							});
-						case l.c.FREQUENT:
+						case l.b.FREQUENT:
 							return n.fbt._("Followed! Now you’ll get updates on new activity.", null, {
 								hk: "3JzOOa"
 							});
-						case l.c.LOW:
+						case l.b.LOW:
 							return n.fbt._("Success! You will see fewer notifications from this community in the future.", null, {
 								hk: "4x3TS8"
 							});
@@ -460,15 +460,15 @@
 					e(p());
 					const _ = (e => {
 							switch (e) {
-								case l.c.FREQUENT:
+								case l.b.FREQUENT:
 									return {
 										isSubredditUpdatesInterestingPostEnabled: !0, isUpdateFromSubredditEnabled: !0
 									};
-								case l.c.LOW:
+								case l.b.LOW:
 									return {
 										isSubredditUpdatesInterestingPostEnabled: !1, isUpdateFromSubredditEnabled: !0
 									};
-								case l.c.OFF:
+								case l.b.OFF:
 								default:
 									return {
 										isSubredditUpdatesInterestingPostEnabled: !1, isUpdateFromSubredditEnabled: !1
@@ -3578,4 +3578,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~Subreddit~SubredditWiki.a0621081d338756c9f9b.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~Subreddit~SubredditWiki.ec331d5cf94f399c7c1b.js.map

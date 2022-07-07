@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage.d505a94baa6304a55211.js
-// Retrieved at 7/7/2022, 2:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage.5dc01551fcaa7b7cacf1.js
+// Retrieved at 7/7/2022, 4:10:13 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage", "CommentsPage"], {
 		"./node_modules/linkify-it/index.js": function(e, t, s) {
@@ -1224,7 +1224,7 @@
 							postFeed: !1,
 							postQASchema: !1
 						};
-					return a ? (l.listingBelow = i || n, l.postFeed = l.listingBelow) : d ? l.nsfwListingBelow = !0 : l.postFeed = (i || n) && (!Object(D.i)(r) && !Object(Ke.d)(t, {
+					return a ? (l.listingBelow = i || n, l.postFeed = l.listingBelow) : d ? l.nsfwListingBelow = !0 : l.postFeed = (i || n) && (!Object(D.h)(r) && !Object(Ke.d)(t, {
 						postId: s
 					}) && !!r || !Object(Q.i)(t) && Object(z.e)(t)), e && (l.postQASchema = Object(z.d)(t)), c && (l.listingBelow = !0), l
 				},
@@ -1489,12 +1489,14 @@
 								Object(ot.d)(p) && e && Object(st.f)(p) && await Object(tt.a)(e, o);
 								const {
 									id: s,
-									isEligibleForContentBlocking: n
+									isEligibleForContentBlocking: n,
+									allowedMediaInComments: r
 								} = t.postInfoById.subreddit;
 								o(Object(I.a)({
 									subredditAboutInfo: {
 										[s]: {
-											isEligibleForContentBlocking: n
+											isEligibleForContentBlocking: n,
+											allowedMediaInComments: r
 										}
 									}
 								}))
@@ -2811,7 +2813,7 @@
 						trackCommentClick: ce,
 						userIconSmall: le,
 						userIsBanned: me
-					} = e, ue = m.isDeleted, pe = !L && !ue && !!f && f.length > 0, be = Object(l.a)(d.c.edit, m.id), he = Object(l.a)(d.c.replyToComment, m.id), ge = Object(T.a)(U), xe = Object(Ge.a)(m), fe = Object($.c)(m), Ce = m.authorIsContractor && de === dt.g.EmployeesOnly, ve = m.isLocked, _e = ge && z, Oe = !L && !ue && (M || w), ye = w && !m.unrepliableReason, Ee = !!g && Object(ct.e)(g) === m.author, [je, ke] = Object(o.useState)(null), [Pe, Ie] = Object(o.useState)(null), we = Object(o.useRef)(null), Se = Object(F.f)(m) || Object(F.g)(m), Ne = Se ? Bt : rt.default, Te = Object(F.f)(m) ? Dt : Ft;
+					} = e, ue = m.isDeleted, pe = !L && !ue && !!f && f.length > 0, be = Object(l.a)(d.c.edit, m.id), he = Object(l.a)(d.c.replyToComment, m.id), ge = Object(T.a)(U), xe = Object(Ge.a)(m), fe = Object($.c)(m), Ce = m.authorIsContractor && de === dt.f.EmployeesOnly, ve = m.isLocked, _e = ge && z, Oe = !L && !ue && (M || w), ye = w && !m.unrepliableReason, Ee = !!g && Object(ct.e)(g) === m.author, [je, ke] = Object(o.useState)(null), [Pe, Ie] = Object(o.useState)(null), we = Object(o.useRef)(null), Se = Object(F.f)(m) || Object(F.g)(m), Ne = Se ? Bt : rt.default, Te = Object(F.f)(m) ? Dt : Ft;
 					Object(o.useEffect)(() => {
 						if (!L && !ue && (O && ke(r.a.createElement(Ve, null)), null !== j)) {
 							if (j.glowHexColor) {
@@ -4982,7 +4984,7 @@
 			const p = r.a.createElement(d.a, {
 					className: u.a.lockIcon
 				}),
-				b = e => Object(c.i)(e) ? i.d.profile : i.d.subreddit;
+				b = e => Object(c.h)(e) ? i.d.profile : i.d.subreddit;
 
 			function h(e) {
 				let {
@@ -5805,7 +5807,7 @@
 					getEventFactory: e => Object(m.k)(s.id, e ? "unsubscribe" : "subscribe"),
 					identifier: {
 						name: x.name,
-						type: Object(p.i)(x) ? l.a.PROFILE : l.a.SUBREDDIT
+						type: Object(p.h)(x) ? l.a.PROFILE : l.a.SUBREDDIT
 					},
 					postId: s.id,
 					small: !0
@@ -7427,7 +7429,7 @@
 					getEventFactory: e => Object(f.k)(j.id, e ? "unsubscribe" : "subscribe"),
 					identifier: {
 						name: P.name,
-						type: Object(v.i)(P) ? h.a.PROFILE : h.a.SUBREDDIT
+						type: Object(v.h)(P) ? h.a.PROFILE : h.a.SUBREDDIT
 					},
 					postId: j.id,
 					size: g.d.XXS,
@@ -7577,7 +7579,7 @@
 					onFollowPostClick: H
 				} = e;
 				const K = F,
-					q = W && Object(O.i)(W),
+					q = W && Object(O.h)(W),
 					G = Object(i.e)(e => {
 						if (!q) return !0;
 						const t = Object(y.Gb)(e, A.author || "");
@@ -10431,7 +10433,7 @@
 						isOverlay: _,
 						postId: this.state.commentNativeAdId,
 						scrollerItemRef: this.setAdScrollItemRef
-					})), this.renderCommentPanes())), w && !Object(me.i)(w) && m.a.createElement(U.a, {
+					})), this.renderCommentPanes())), w && !Object(me.h)(w) && m.a.createElement(U.a, {
 						awaitAllCommentsRendered: A,
 						contentContainerRef: this.state.layoutRef,
 						isOverlay: _,
@@ -10690,7 +10692,7 @@
 						})
 					});
 					const p = o ? H.h : Q.a,
-						b = r && u && !Object(me.i)(u) ? `r/${u.name}` : void 0;
+						b = r && u && !Object(me.h)(u) ? `r/${u.name}` : void 0;
 					return m.a.createElement(ut.a, {
 						backToSubredditName: b,
 						containerRef: n,
@@ -10709,7 +10711,7 @@
 							shouldBlurHeaderImage: c,
 							subredditOrProfile: u,
 							url: u.url
-						}), !Object(me.i)(u) && m.a.createElement(et.a, {
+						}), !Object(me.h)(u) && m.a.createElement(et.a, {
 							disableFullscreen: !0,
 							homeUrl: u.url,
 							maxWidth: p,
@@ -11148,7 +11150,7 @@
 				})
 			}, i.V, i.G, a.P, a.Q, r.h, (e, t, s, n, o, r, i) => {
 				if (!n) return !1;
-				const a = !(!s || Object(d.i)(s)),
+				const a = !(!s || Object(d.h)(s)),
 					c = n.numComments >= 3 && !e || !t;
 				return i && a && c && (!o && !r)
 			})
@@ -11179,7 +11181,7 @@
 				}, (e, t, s) => e && !!t && !t.isNSFW && !!s && !s.isNSFW && !!t.created && t.created > m && t.created < u)
 		},
 		"./src/redditGQL/operations/CommentsPageExtra.json": function(e) {
-			e.exports = JSON.parse('{"id":"56a80c083eca"}')
+			e.exports = JSON.parse('{"id":"e93ca8900e1c"}')
 		},
 		"./src/redditGQL/operations/OtherDiscussions.json": function(e) {
 			e.exports = JSON.parse('{"id":"0a569f10c6e4"}')
@@ -11198,4 +11200,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage.d505a94baa6304a55211.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage.5dc01551fcaa7b7cacf1.js.map

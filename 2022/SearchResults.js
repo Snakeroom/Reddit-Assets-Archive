@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SearchResults.45373a04e125b2fc79b2.js
-// Retrieved at 7/7/2022, 2:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SearchResults.918d9ba3c7f20a95b52c.js
+// Retrieved at 7/7/2022, 4:10:13 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SearchResults"], {
 		"./node_modules/lodash/_baseDelay.js": function(e, t) {
@@ -1403,7 +1403,7 @@
 						trackCommentClick: de,
 						userIconSmall: le,
 						userIsBanned: me
-					} = e, ue = m.isDeleted, pe = !L && !ue && !!x && x.length > 0, be = Object(l.a)(c.c.edit, m.id), Ce = Object(l.a)(c.c.replyToComment, m.id), he = Object(R.a)(U), fe = Object(Ye.a)(m), xe = Object($.c)(m), Oe = m.authorIsContractor && ce === ct.g.EmployeesOnly, ge = m.isLocked, ve = he && W, je = !L && !ue && (B || I), ye = I && !m.unrepliableReason, Ee = !!h && Object(dt.e)(h) === m.author, [_e, ke] = Object(r.useState)(null), [Se, we] = Object(r.useState)(null), Ie = Object(r.useRef)(null), Ne = Object(P.f)(m) || Object(P.g)(m), Te = Ne ? Dt : ot.default, Re = Object(P.f)(m) ? At : Pt;
+					} = e, ue = m.isDeleted, pe = !L && !ue && !!x && x.length > 0, be = Object(l.a)(c.c.edit, m.id), Ce = Object(l.a)(c.c.replyToComment, m.id), he = Object(R.a)(U), fe = Object(Ye.a)(m), xe = Object($.c)(m), Oe = m.authorIsContractor && ce === ct.f.EmployeesOnly, ge = m.isLocked, ve = he && W, je = !L && !ue && (B || I), ye = I && !m.unrepliableReason, Ee = !!h && Object(dt.e)(h) === m.author, [_e, ke] = Object(r.useState)(null), [Se, we] = Object(r.useState)(null), Ie = Object(r.useRef)(null), Ne = Object(P.f)(m) || Object(P.g)(m), Te = Ne ? Dt : ot.default, Re = Object(P.f)(m) ? At : Pt;
 					Object(r.useEffect)(() => {
 						if (!L && !ue && (j && ke(o.a.createElement(He, null)), null !== _)) {
 							if (_.glowHexColor) {
@@ -6772,7 +6772,7 @@
 						M = Object(r.useCallback)(() => {
 							e.post && (t(Object(b.d)(e.post.id)), t(Object(u.i)(Object(f.a)(e.post.id))))
 						}, [t, e.post]),
-						F = !e.subredditType || e.subredditType === k.g.Public,
+						F = !e.subredditType || e.subredditType === k.f.Public,
 						B = !!e.post && e.post.isCrosspostable && !e.post.isSponsored,
 						D = Object(r.useCallback)(e => {
 							t(Object(m.e)(e)), s(Object(j.a)())
@@ -9027,4 +9027,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SearchResults.45373a04e125b2fc79b2.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SearchResults.918d9ba3c7f20a95b52c.js.map

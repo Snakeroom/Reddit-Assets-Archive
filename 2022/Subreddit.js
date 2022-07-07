@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Subreddit.3b0ba03261ecc5960fa6.js
-// Retrieved at 7/7/2022, 2:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Subreddit.fcf306019925d2d0f7ea.js
+// Retrieved at 7/7/2022, 4:10:13 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Subreddit", "Frontpage~ModListing", "reddit-components-Econ-PredictionLeaderboard-Sidebar"], {
 		"./node_modules/@reddit/i18n-tools/runtime/helpers/locale/index.js": function(e, t, n) {
@@ -542,14 +542,6 @@
 				return o(r(e), s(t, 0, e.length))
 			}
 		},
-		"./node_modules/lodash/_baseInverter.js": function(e, t, n) {
-			var s = n("./node_modules/lodash/_baseForOwn.js");
-			e.exports = function(e, t, n, r) {
-				return s(e, (function(e, s, o) {
-					t(r, n(e), s, o)
-				})), r
-			}
-		},
 		"./node_modules/lodash/_baseRandom.js": function(e, t) {
 			var n = Math.floor,
 				s = Math.random;
@@ -564,14 +556,6 @@
 			e.exports = function(e, t) {
 				var n = o(e);
 				return r(n, s(t, 0, n.length))
-			}
-		},
-		"./node_modules/lodash/_createInverter.js": function(e, t, n) {
-			var s = n("./node_modules/lodash/_baseInverter.js");
-			e.exports = function(e, t) {
-				return function(n, r) {
-					return s(n, e, t(r), {})
-				}
 			}
 		},
 		"./node_modules/lodash/_shuffleSelf.js": function(e, t, n) {
@@ -600,16 +584,6 @@
 				var d = c - 1;
 				return void 0 !== n && (d = o(n), d = n < 0 ? a(c + d, 0) : i(d, c - 1)), s(e, r(t, 3), d, !0)
 			}
-		},
-		"./node_modules/lodash/invert.js": function(e, t, n) {
-			var s = n("./node_modules/lodash/constant.js"),
-				r = n("./node_modules/lodash/_createInverter.js"),
-				o = n("./node_modules/lodash/identity.js"),
-				a = Object.prototype.toString,
-				i = r((function(e, t, n) {
-					null != t && "function" != typeof t.toString && (t = a.call(t)), e[t] = n
-				}), s(o));
-			e.exports = i
 		},
 		"./node_modules/lodash/sampleSize.js": function(e, t, n) {
 			var s = n("./node_modules/lodash/_arraySampleSize.js"),
@@ -1597,11 +1571,11 @@
 				x = n("./src/reddit/models/Subreddit/index.ts");
 			const y = e => {
 					switch (e) {
-						case x.c.FREQUENT:
+						case x.b.FREQUENT:
 							return "notification_frequent";
-						case x.c.OFF:
+						case x.b.OFF:
 							return "notification_off";
-						case x.c.LOW:
+						case x.b.LOW:
 						default:
 							return "notification"
 					}
@@ -1648,31 +1622,31 @@
 						displayText: O.fbt._("Frequent", null, {
 							hk: "21spt7"
 						}),
-						onClick: () => e.onClick(x.c.FREQUENT),
-						isSelected: e.notificationLevel === x.c.FREQUENT,
+						onClick: () => e.onClick(x.b.FREQUENT),
+						isSelected: e.notificationLevel === x.b.FREQUENT,
 						icon: r.a.createElement(k.a, {
 							name: "notification_frequent",
-							isFilled: e.notificationLevel === x.c.FREQUENT
+							isFilled: e.notificationLevel === x.b.FREQUENT
 						})
 					}, {
 						displayText: O.fbt._("Low", null, {
 							hk: "2uGDVq"
 						}),
-						onClick: () => e.onClick(x.c.LOW),
-						isSelected: e.notificationLevel === x.c.LOW,
+						onClick: () => e.onClick(x.b.LOW),
+						isSelected: e.notificationLevel === x.b.LOW,
 						icon: r.a.createElement(k.a, {
 							name: "notification",
-							isFilled: e.notificationLevel === x.c.LOW
+							isFilled: e.notificationLevel === x.b.LOW
 						})
 					}, {
 						displayText: O.fbt._("Off", null, {
 							hk: "4GiFvg"
 						}),
-						onClick: () => e.onClick(x.c.OFF),
-						isSelected: e.notificationLevel === x.c.OFF,
+						onClick: () => e.onClick(x.b.OFF),
+						isSelected: e.notificationLevel === x.b.OFF,
 						icon: r.a.createElement(k.a, {
 							name: "notification_off",
-							isFilled: e.notificationLevel === x.c.OFF
+							isFilled: e.notificationLevel === x.b.OFF
 						})
 					}].map(e => r.a.createElement(j.b, N({
 						className: Object(i.a)(w.a.notificationDropdown, w.a.notificationRow, {
@@ -1732,7 +1706,7 @@
 							hk: "3Ntvs6"
 						}),
 						onClick: () => {
-							o(), a(x.c.FREQUENT), i(L(x.c.FREQUENT.toLowerCase()))
+							o(), a(x.b.FREQUENT), i(L(x.b.FREQUENT.toLowerCase()))
 						}
 					})), r.a.createElement("button", {
 						className: w.a.hideButton,
@@ -1757,7 +1731,7 @@
 						}(e.userId, e.subredditId),
 						l = Object(o.e)(e => !!Object(U.a)(e));
 					Object(s.useEffect)(() => {
-						e.notificationLevel !== x.c.LOW && e.notificationLevel !== x.c.OFF || d()
+						e.notificationLevel !== x.b.LOW && e.notificationLevel !== x.b.OFF || d()
 					}, [e.subredditId]);
 					const h = 2 === c,
 						f = () => {
@@ -1779,7 +1753,7 @@
 							e.stopPropagation(), a.visible ? f() : O()
 						}, [f, O, a.visible]),
 						N = Object(s.useCallback)(t => {
-							t === x.c.FREQUENT && Object(F.cb)(e.userId, e.subredditId)
+							t === x.b.FREQUENT && Object(F.cb)(e.userId, e.subredditId)
 						}, [e.subredditId, e.userId]),
 						I = Object(s.useCallback)(s => {
 							const {
@@ -1896,7 +1870,7 @@
 					if (s) return e(Object(u.a)({
 						subredditAboutInfo: {
 							[s]: {
-								notificationLevel: x.c.LOW
+								notificationLevel: x.b.LOW
 							}
 						}
 					}))
@@ -4044,7 +4018,7 @@
 						})),
 						s = Object(o.e)(e => n ? Object(w.h)(e, n.tournamentId) : []);
 					if (!n) return null;
-					if (n.status === N.x.Closed) return r.a.createElement(A, null);
+					if (n.status === N.y.Closed) return r.a.createElement(A, null);
 					const a = s.filter(e => e.predictionStatus === S.b.Open && e.endsAt > Date.now()),
 						i = a.length > 0,
 						c = a.length && a.some(e => !e.userSelection);
@@ -10735,7 +10709,7 @@
 						className: K.a.metaLine
 					}, s && !!r && i.a.createElement("span", {
 						className: K.a.meta
-					}, Object(z.i)(r) ? Object(T.d)(r.displayText || r.name) : Object(T.c)(r.displayText || r.name)), i.a.createElement("span", {
+					}, Object(z.h)(r) ? Object(T.d)(r.displayText || r.name) : Object(T.c)(r.displayText || r.name)), i.a.createElement("span", {
 						className: K.a.meta
 					}, J._({
 						"*": "{score} points",
@@ -17064,4 +17038,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Subreddit.3b0ba03261ecc5960fa6.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Subreddit.fcf306019925d2d0f7ea.js.map

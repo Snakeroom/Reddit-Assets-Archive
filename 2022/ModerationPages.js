@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModerationPages.c3aa3df3ca13da6c463e.js
-// Retrieved at 7/7/2022, 2:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModerationPages.fff055101beb18f85316.js
+// Retrieved at 7/7/2022, 4:10:13 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModerationPages"], {
 		"./src/higherOrderComponents/withImageUploads.tsx": function(e, t, s) {
@@ -584,16 +584,16 @@
 				k = s("./src/reddit/helpers/graphql/normalizeFlairFromGql/index.ts"),
 				_ = s("./src/reddit/helpers/graphql/normalizePostFromGql/index.ts");
 			const C = {
-					[a.rb.Edited]: E.r.Edited,
-					[a.rb.Modqueue]: E.r.Mod,
-					[a.rb.Reports]: E.r.Reported,
-					[a.rb.Spam]: E.r.Removed,
-					[a.rb.Unmoderated]: E.r.Unmoderated
+					[a.rb.Edited]: E.s.Edited,
+					[a.rb.Modqueue]: E.s.Mod,
+					[a.rb.Reports]: E.s.Reported,
+					[a.rb.Spam]: E.s.Removed,
+					[a.rb.Unmoderated]: E.s.Unmoderated
 				},
 				y = {
-					comments: E.p.Comment,
-					links: E.p.Post,
-					chat_comments: E.p.ChatComment
+					comments: E.q.Comment,
+					links: E.q.Post,
+					chat_comments: E.q.ChatComment
 				};
 
 			function O(e) {
@@ -627,7 +627,7 @@
 					...!!n.profile && {
 						subredditIds: [n.profile]
 					},
-					sort: n.sort === h.a.MostReportedFirst ? E.q.SortReports : E.q.SortDate,
+					sort: n.sort === h.a.MostReportedFirst ? E.r.SortReports : E.r.SortDate,
 					...r
 				}
 			}
@@ -6861,16 +6861,16 @@
 					onClose: () => l(!1)
 				}))
 			}
-			var Ue = s("./src/reddit/models/Subreddit/index.ts"),
-				Be = s("./src/reddit/selectors/experiments/mediaInComments.ts"),
-				He = s("./src/reddit/selectors/experiments/chat.ts");
+			var Ue = s("./src/reddit/selectors/experiments/mediaInComments.ts");
+			var Be = s("./src/reddit/selectors/experiments/chat.ts"),
+				He = s("./src/redditGQL/types.ts");
 			var We = e => {
 					const {
 						settings: t,
 						subredditName: s,
 						update: n,
 						isChatPostsCreationEnabled: a,
-						subreddit: l
+						subredditId: l
 					} = e, {
 						archivePostsEnabled: c,
 						allowChatPostCreation: m,
@@ -6879,7 +6879,7 @@
 						allowPolls: b,
 						allowPostCrossposts: h,
 						allowPredictionsTournament: g,
-						allowedMediaInComments: f,
+						commentContributionSettings: f,
 						collapseDeletedComments: x,
 						commentScoreHideMins: E,
 						contentOptions: v,
@@ -6888,7 +6888,10 @@
 						spamSelfposts: O,
 						spoilersEnabled: w,
 						suggestedCommentSort: S
-					} = t, N = Object(i.e)(Be.b), T = Object(i.e)(He.e), M = N && l.showMediaInCommentsSetting, P = null === S ? "nullValue" : S, R = Object(o.useCallback)(() => n(!c, "archivePostsEnabled"), [c, n]);
+					} = t, N = Object(i.e)(Ue.b), T = Object(i.e)(e => ((e, t) => {
+						const s = t && e.subreddits.about[t];
+						return Boolean(s && s.isMediaInCommentsSettingShown)
+					})(e, l)), M = Object(i.e)(Be.e), P = N && T, R = (null == f ? void 0 : f.allowedMediaTypes) || [], A = null === S ? "nullValue" : S, F = Object(o.useCallback)(() => n(!c, "archivePostsEnabled"), [c, n]);
 					return r.a.createElement(j.a, null, r.a.createElement(y, null, r.a.createElement(j.b, null, W.fbt._("Post and Comment settings", null, {
 						hk: "14OI7p"
 					})), r.a.createElement(Q.a, null, W.fbt._("Posts", null, {
@@ -6912,14 +6915,14 @@
 						})
 					}), r.a.createElement(X.p, {
 						on: c,
-						onClick: R,
+						onClick: F,
 						label: W.fbt._("Archive posts", null, {
 							hk: "3FdbDg"
 						}),
 						subtext: W.fbt._("Don’t allow commenting or voting on posts older than 6 months", null, {
 							hk: "4tIS0"
 						})
-					}), a && T && r.a.createElement(X.d, {
+					}), a && M && r.a.createElement(X.d, {
 						label: W.fbt._("Live Chat Creators", null, {
 							hk: "2Yd8cb"
 						}),
@@ -6930,7 +6933,7 @@
 						subtext: W.fbt._("Choose who can start live chat posts in your community", null, {
 							hk: "3F7D5k"
 						})
-					}), a && !T && r.a.createElement(X.p, {
+					}), a && !M && r.a.createElement(X.p, {
 						on: m,
 						onClick: () => n(!m, "allowChatPostCreation"),
 						label: W.fbt._("Allow chat posts creation by users.", null, {
@@ -7028,8 +7031,8 @@
 						}),
 						items: Object.keys(te.j),
 						displayItems: Object.values(te.j),
-						displayTitle: te.j[P],
-						selected: P,
+						displayTitle: te.j[A],
+						selected: A,
 						onClick: e => n("nullValue" === e ? null : e, "suggestedCommentSort"),
 						id: "suggestedCommentSort"
 					}), r.a.createElement(X.p, {
@@ -7050,7 +7053,7 @@
 						max: te.b,
 						type: "number",
 						value: E
-					})), M && r.a.createElement(r.a.Fragment, null, r.a.createElement(X.l, {
+					})), P && r.a.createElement(r.a.Fragment, null, r.a.createElement(X.l, {
 						label: W.fbt._("Media in comments", null, {
 							hk: "25YOda"
 						}),
@@ -7058,10 +7061,15 @@
 							hk: "44aVKk"
 						})
 					}), r.a.createElement(X.p, {
-						on: !1,
+						on: R.includes(He.d.Giphy),
 						onClick: () => n(function(e, t) {
-							return e.includes(t) ? e.filter(e => e !== t) : [...e, t]
-						}(f, Ue.b.Giphy), "allowedMediaInComments"),
+							const s = (null == t ? void 0 : t.allowedMediaTypes) || [],
+								n = s.includes(e) ? s.filter(t => t !== e) : [...s, e];
+							return {
+								...t,
+								allowedMediaTypes: n
+							}
+						}(He.d.Giphy, f), "commentContributionSettings"),
 						label: W.fbt._("GIFs", null, {
 							hk: "2vQkCj"
 						})
@@ -16199,7 +16207,7 @@
 					getEventFactory: e => Object(x.k)(O.id, e ? "unsubscribe" : "subscribe"),
 					identifier: {
 						name: w.name,
-						type: Object(v.i)(w) ? h.a.PROFILE : h.a.SUBREDDIT
+						type: Object(v.h)(w) ? h.a.PROFILE : h.a.SUBREDDIT
 					},
 					postId: O.id,
 					size: g.d.XXS,
@@ -20285,7 +20293,7 @@
 						this.props.onCloseModal(), this.props.sendEvent(Object(I.b)())
 					}, this.onUpdateOver18 = () => this.update(!this.state.over18, "over18"), this.state = {
 						name: "",
-						type: D.g.Public,
+						type: D.f.Public,
 						crosspostId: e.crosspostId,
 						over18: !1,
 						waitingForSuccessfulCommunity: !1,
@@ -22358,7 +22366,7 @@
 			s("./node_modules/core-js/modules/web.dom.iterable.js");
 			var n = s("./src/reddit/models/Subreddit/index.ts");
 			const a = new Set(["goins", "gold_testing", "inthesoulstone", "lounge", "lssgoldnormal", "maymodsguide1", "maymodsguide2", "megalounge", "pan2", "pan3", "venkman_bookclub", "whatssnoo", "translation_piglatin", "translation_pirate", "translation_initials", "translation_german", "translation_british", "translation_french_fr", "translation_es_mx", "translation_br_pt", "german_translation", "lssgoldnormal_13", "test_automation_001"]),
-				o = new Set([n.g.Private, n.g.User]),
+				o = new Set([n.f.Private, n.f.User]),
 				r = e => !(!e || !e.name) && (!!a.has(e.name.toLowerCase()) || !e.isNSFW && !e.isQuarantined && !o.has(e.type));
 			t.a = r
 		},
@@ -22411,7 +22419,7 @@
 					case n.gc.Banned:
 						return !(!s || !s.access);
 					case n.gc.Contributors:
-						return !!(s && s.access || d === a.g.Restricted || d === a.g.Private && c);
+						return !!(s && s.access || d === a.f.Restricted || d === a.f.Private && c);
 					case n.gc.Flair:
 					case n.gc.PostFlair:
 					case n.gc.UserFlair:
@@ -22640,17 +22648,17 @@
 		"./src/reddit/helpers/trackers/communitySettings.ts": function(e, t, s) {
 			"use strict";
 			s.d(t, "e", (function() {
-				return u
-			})), s.d(t, "d", (function() {
 				return p
-			})), s.d(t, "b", (function() {
+			})), s.d(t, "d", (function() {
 				return b
-			})), s.d(t, "c", (function() {
+			})), s.d(t, "b", (function() {
 				return h
-			})), s.d(t, "f", (function() {
+			})), s.d(t, "c", (function() {
 				return g
-			})), s.d(t, "a", (function() {
+			})), s.d(t, "f", (function() {
 				return f
+			})), s.d(t, "a", (function() {
+				return x
 			}));
 			var n = s("./node_modules/lodash/snakeCase.js"),
 				a = s.n(n),
@@ -22709,42 +22717,46 @@
 				m = e => {
 					const t = l[e];
 					return t && d[t] || "community_settings"
-				},
-				u = (e, t, s) => n => ({
+				};
+
+			function u(e) {
+				return "object" == typeof e ? JSON.stringify(e) : String(e)
+			}
+			const p = (e, t, s) => n => ({
 					source: m(e),
 					action: "click",
 					noun: c(e),
 					setting: {
-						value: String(t),
-						oldValue: String(s)
+						value: u(t),
+						oldValue: u(s)
 					},
 					subreddit: r.hb(n),
 					...r.n(n)
 				}),
-				p = (e, t, s) => n => ({
+				b = (e, t, s) => n => ({
 					source: m(e),
 					action: "save",
 					noun: c(e),
 					setting: {
-						value: String(t),
-						oldValue: String(s)
+						value: u(t),
+						oldValue: u(s)
 					},
 					subreddit: r.hb(n),
 					...r.n(n)
 				}),
-				b = e => t => ({
+				h = e => t => ({
 					source: "community_settings",
 					action: "click",
 					noun: d[e],
 					...r.n(t)
 				}),
-				h = e => t => ({
+				g = e => t => ({
 					source: d[e],
 					action: "click",
 					noun: "r2_community_settings",
 					...r.n(t)
 				}),
-				g = (e, t, s, n) => a => ({
+				f = (e, t, s, n) => a => ({
 					...r.n(a),
 					source: "mod_tools",
 					action: e,
@@ -22760,7 +22772,7 @@
 						reason: "welcome_message"
 					})
 				}),
-				f = (e, t) => s => {
+				x = (e, t) => s => {
 					var n;
 					return {
 						...r.n(s),
@@ -25420,4 +25432,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.c3aa3df3ca13da6c463e.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.fff055101beb18f85316.js.map

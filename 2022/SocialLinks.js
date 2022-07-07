@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SocialLinks.340c92654ac9b8bbd11a.js
-// Retrieved at 7/7/2022, 11:50:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SocialLinks.401102fc78654fd95a00.js
+// Retrieved at 7/7/2022, 4:10:13 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SocialLinks"], {
 		"./node_modules/linkify-it/index.js": function(e, t, s) {
@@ -199,7 +199,7 @@
 			})), s.d(t, "h", (function() {
 				return v
 			})), s.d(t, "i", (function() {
-				return z
+				return D
 			}));
 			var i = s("./node_modules/linkify-it/index.js"),
 				n = s.n(i),
@@ -250,7 +250,7 @@
 					const s = e.match(t);
 					if (s && 1 === s.length && 0 === s[0].index && s[0].lastIndex === t.length) return s[0]
 				},
-				z = e => {
+				D = e => {
 					const t = h.match(e);
 					if (t && 1 === t.length && 0 === t[0].index) {
 						const s = t[0];
@@ -264,9 +264,9 @@
 		"./src/reddit/actions/socialLinks/index.ts": function(e, t, s) {
 			"use strict";
 			s.d(t, "c", (function() {
-				return D
+				return F
 			})), s.d(t, "a", (function() {
-				return w
+				return z
 			})), s.d(t, "b", (function() {
 				return j
 			})), s.d(t, "d", (function() {
@@ -297,8 +297,8 @@
 				y = Object(i.a)(f.b),
 				x = Object(i.a)(f.c),
 				v = Object(i.a)(f.d),
-				z = Object(i.a)(f.e),
-				D = e => {
+				D = Object(i.a)(f.e),
+				F = e => {
 					let {
 						username: t
 					} = e;
@@ -335,7 +335,7 @@
 						}
 					}
 				},
-				F = e => {
+				w = e => {
 					let t, s, i, {
 						socialLinkOption: r,
 						rawHandle: o,
@@ -346,7 +346,7 @@
 						const e = null == c ? void 0 : c.trim();
 						if (!(e && Object(_.g)(e) === _.d.Valid)) throw new Error(n.f);
 						t = e, s = null == a ? void 0 : a.trim()
-					} else if (r.socialLinkType === p.z.Reddit) {
+					} else if (r.socialLinkType === p.A.Reddit) {
 						const e = null == o ? void 0 : o.trim();
 						if (!(e && Object(d.e)(e) && e && e.length >= n.h && !/\s/.test(e))) throw new Error(n.e);
 						i = e
@@ -358,7 +358,7 @@
 						type: r.socialLinkType
 					}
 				},
-				w = (e, t) => async (s, i, a) => {
+				z = (e, t) => async (s, i, a) => {
 					let {
 						gqlContext: l
 					} = a;
@@ -370,7 +370,7 @@
 							url: p
 						} = t;
 					if (!Object(m.W)(u, e)) return;
-					const f = F({
+					const f = w({
 							socialLinkOption: d,
 							rawHandle: _,
 							rawTitle: h,
@@ -449,7 +449,7 @@
 						} = s;
 					if (!Object(m.W)(d, t)) return;
 					const b = {
-							...F({
+							...w({
 								socialLinkOption: _,
 								rawHandle: h,
 								rawTitle: p,
@@ -484,7 +484,7 @@
 								}
 							})(e, c, t);
 							if (!s) throw new Error(n.b);
-							i(z(s))
+							i(D(s))
 						} else Object(r.f)(o)
 					} else {
 						const {
@@ -608,81 +608,81 @@
 					}),
 					a = n.i;
 				switch (t) {
-					case i.z.BuyMeACoffee:
+					case i.A.BuyMeACoffee:
 						o = r._("Buy Me a Coffee", null, {
 							hk: "ZTbP7"
 						});
 						break;
-					case i.z.CashApp:
+					case i.A.CashApp:
 						o = r._("Cash App", null, {
 							hk: "1aorWN"
 						});
 						break;
-					case i.z.Custom:
+					case i.A.Custom:
 						o = r._("Custom URL", null, {
 							hk: "2gveOb"
 						}), a = n.c, s = r._("https://website.com", null, {
 							hk: "1Kp5fF"
 						});
 						break;
-					case i.z.Reddit:
+					case i.A.Reddit:
 						a = r._("r/community, u/user", null, {
 							hk: "45oRo"
 						});
 						break;
-					case i.z.Discord:
+					case i.A.Discord:
 						a = n.c, s = r._("https://discord.com", null, {
 							hk: "6gcLP"
 						});
 						break;
-					case i.z.Facebook:
+					case i.A.Facebook:
 						a = n.c, s = r._("https://facebook.com", null, {
 							hk: "2v99jB"
 						});
 						break;
-					case i.z.Kickstarter:
+					case i.A.Kickstarter:
 						a = n.c, s = r._("https://kickstarter.com", null, {
 							hk: "132LC7"
 						});
 						break;
-					case i.z.Shopify:
+					case i.A.Shopify:
 						a = n.c, s = r._("https://shopify.com", null, {
 							hk: "2X1G4f"
 						});
 						break;
-					case i.z.Spotify:
+					case i.A.Spotify:
 						a = n.c, s = r._("https://spotify.com", null, {
 							hk: "3dZORp"
 						});
 						break;
-					case i.z.Substack:
+					case i.A.Substack:
 						a = n.c, s = r._("https://substack.com", null, {
 							hk: "1zQgL1"
 						});
 						break;
-					case i.z.Youtube:
+					case i.A.Youtube:
 						o = r._("YouTube", null, {
 							hk: "12AQG6"
 						}), a = n.c, s = r._("https://youtube.com", null, {
 							hk: "4FZQ2O"
 						});
 						break;
-					case i.z.Onlyfans:
+					case i.A.Onlyfans:
 						o = r._("OnlyFans", null, {
 							hk: "1JRN4C"
 						});
 						break;
-					case i.z.Paypal:
+					case i.A.Paypal:
 						o = r._("PayPal", null, {
 							hk: "3n7Il"
 						});
 						break;
-					case i.z.Soundcloud:
+					case i.A.Soundcloud:
 						o = r._("SoundCloud", null, {
 							hk: "34Xo4u"
 						});
 						break;
-					case i.z.Tiktok:
+					case i.A.Tiktok:
 						o = r._("TikTok", null, {
 							hk: "tajib"
 						})
@@ -694,16 +694,16 @@
 					socialLinkType: t
 				}
 			}, a = () => {
-				return Object.keys(i.z).map(e => {
-					const t = i.z[e];
+				return Object.keys(i.A).map(e => {
+					const t = i.A[e];
 					return o(e, t)
-				}).filter(e => e.socialLinkType !== i.z.Indiegogo)
+				}).filter(e => e.socialLinkType !== i.A.Indiegogo)
 			}, c = e => {
 				const t = e.toLowerCase();
 				return `${n.d}${t}.png`
 			}, l = e => {
-				for (const t in i.z)
-					if (i.z[t] === e) return t;
+				for (const t in i.A)
+					if (i.A[t] === e) return t;
 				return ""
 			}, u = e => {
 				let t = n.b;
@@ -741,7 +741,7 @@
 				x = s.n(y);
 			const {
 				fbt: v
-			} = s("./node_modules/fbt/lib/FbtPublic.js"), z = Object(i.a)({
+			} = s("./node_modules/fbt/lib/FbtPublic.js"), D = Object(i.a)({
 				resolved: {},
 				chunkName: () => "AddSocialLinkModal",
 				isReady(e) {
@@ -760,7 +760,7 @@
 				resolve() {
 					return "./src/reddit/components/SocialLinks/AddSocialLinkModal.tsx"
 				}
-			}), D = Object(i.a)({
+			}), F = Object(i.a)({
 				resolved: {},
 				chunkName: () => "reddit-controls-InternalLink",
 				isReady(e) {
@@ -779,30 +779,30 @@
 				resolve() {
 					return "./src/reddit/controls/InternalLink/index.tsx"
 				}
-			}), F = e => {
+			}), w = e => {
 				let {
 					isCreationEnabled: t,
 					isOwnUserSettings: s,
 					socialLinksClassName: i,
 					username: y
 				} = e;
-				const F = Object(o.d)(),
-					w = Object(h.a)(),
+				const w = Object(o.d)(),
+					z = Object(h.a)(),
 					[j, C] = Object(n.useState)(),
-					[L, E] = Object(n.useState)(0);
+					[A, L] = Object(n.useState)(0);
 				Object(n.useEffect)(() => {
-					F(Object(u.c)({
+					w(Object(u.c)({
 						username: y
 					}))
-				}, [F, y]);
-				const A = Object(o.e)(e => Object(f.b)(e, y)),
+				}, [w, y]);
+				const E = Object(o.e)(e => Object(f.b)(e, y)),
 					O = Object(n.useCallback)(() => {
-						C(void 0), F(Object(l.h)(g.a));
-						const e = ((null == A ? void 0 : A.length) || 0) + 1;
-						E(e);
+						C(void 0), w(Object(l.h)(g.a));
+						const e = ((null == E ? void 0 : E.length) || 0) + 1;
+						L(e);
 						const t = s ? "profile_settings" : "profile";
-						w(Object(d.a)(t))
-					}, [F, s, w, A]),
+						z(Object(d.a)(t))
+					}, [w, s, z, E]),
 					S = Object(o.e)(e => Object(p.c)(g.a)(e)),
 					B = Object(_.a)(),
 					T = Object(n.useCallback)((e, i) => {
@@ -814,14 +814,14 @@
 								position: n,
 								isNew: !1
 							};
-						if (t && s) C(e), E(n), F(Object(l.h)(g.a)), w(Object(d.c)(r));
+						if (t && s) C(e), L(n), w(Object(l.h)(g.a)), z(Object(d.c)(r));
 						else {
 							const {
 								outboundUrl: t
 							} = e;
-							window.open(t, "_blank"), w(Object(d.f)(r)), B(t, b.SourceElement.SocialLink, void 0, void 0, e.type)
+							window.open(t, "_blank"), z(Object(d.f)(r)), B(t, b.SourceElement.SocialLink, void 0, void 0, e.type)
 						}
-					}, [F, t, s, w, B]),
+					}, [w, t, s, z, B]),
 					I = Object(n.useCallback)((e, t, s) => {
 						const {
 							handle: i,
@@ -830,19 +830,19 @@
 							title: o,
 							type: a
 						} = t, c = s + 1;
-						e.stopPropagation(), F(Object(u.b)(n, y)), w(Object(d.b)({
+						e.stopPropagation(), w(Object(u.b)(n, y)), z(Object(d.b)({
 							socialLinkType: a,
 							outboundUrl: r,
 							name: i || o,
 							position: c,
 							isNew: !1
 						}))
-					}, [F, w, y]),
-					Z = t && (s || A && A.length < g.g),
-					P = t && !s && A && A.length >= g.g;
+					}, [w, z, y]),
+					Z = t && (s || E && E.length < g.g),
+					P = t && !s && E && E.length >= g.g;
 				return r.a.createElement(r.a.Fragment, null, r.a.createElement("div", {
 					className: Object(a.a)(x.a.socialLinks, i)
-				}, A && A.map((e, t) => r.a.createElement(k.a, {
+				}, E && E.map((e, t) => r.a.createElement(k.a, {
 					key: e.id,
 					socialLinkType: e.type,
 					onClick: () => T(e, t)
@@ -851,25 +851,25 @@
 					className: x.a.removeIcon,
 					onClick: s => I(s, e, t)
 				}))), Z && r.a.createElement(k.a, {
-					disabled: !A || A.length >= g.g,
+					disabled: !E || E.length >= g.g,
 					onClick: O
 				}, r.a.createElement(m.a, {
 					name: c.a.add,
 					className: x.a.addIcon
 				}), v._("Add social link", null, {
 					hk: "4hANO2"
-				})), P && r.a.createElement(D, {
+				})), P && r.a.createElement(F, {
 					to: "/settings/profile"
 				}, r.a.createElement(k.a, null, v._("Edit", null, {
 					hk: "3MTv8r"
-				}))), t && S && r.a.createElement(z, {
+				}))), t && S && r.a.createElement(D, {
 					socialLink: j,
-					socialLinkPosition: L,
+					socialLinkPosition: A,
 					username: y,
 					withOverlay: !0
 				})))
 			};
-			t.default = F
+			t.default = w
 		},
 		"./src/reddit/helpers/structuredStyles/validators.ts": function(e, t, s) {
 			"use strict";
@@ -925,4 +925,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SocialLinks.340c92654ac9b8bbd11a.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SocialLinks.401102fc78654fd95a00.js.map

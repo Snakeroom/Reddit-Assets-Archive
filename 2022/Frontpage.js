@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Frontpage.2a0875233cb2e66b9723.js
-// Retrieved at 7/7/2022, 3:40:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Frontpage.708225013a24570dd903.js
+// Retrieved at 7/7/2022, 4:10:13 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Frontpage"], {
 		"./node_modules/intersection-observer/intersection-observer.js": function(e, t) {
@@ -499,7 +499,7 @@
 							variant: null == v ? void 0 : v.toLowerCase()
 						}
 					};
-					return x ? (E.sort = Z.v.Best, E.feedRankingContext.variant = Object(w.b)(e)) : d && (E.sort = d.toUpperCase()), u && (E.range = u.toUpperCase()), c ? E.pageSize = Object(g.a)(i) : l && (E.pageSize = l), _ && _.ad && (E.forceAds = {
+					return x ? (E.sort = Z.w.Best, E.feedRankingContext.variant = Object(w.b)(e)) : d && (E.sort = d.toUpperCase()), u && (E.range = u.toUpperCase()), c ? E.pageSize = Object(g.a)(i) : l && (E.pageSize = l), _ && _.ad && (E.forceAds = {
 						ad: _.ad
 					}), n && (E.after = Object(o.a)(n)), E
 				},
@@ -7380,4 +7380,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Frontpage.2a0875233cb2e66b9723.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Frontpage.708225013a24570dd903.js.map
