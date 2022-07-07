@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModerationPages.f61f0bb40f052fce49bd.js
-// Retrieved at 7/6/2022, 5:30:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModerationPages.ed380c16aef73673cd29.js
+// Retrieved at 7/7/2022, 10:00:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModerationPages"], {
 		"./src/higherOrderComponents/withImageUploads.tsx": function(e, t, s) {
@@ -14593,8 +14593,8 @@
 							});
 						case "chat_config":
 						case F.c.chatConfig:
-							return a.fbt._("Create and manage chats, set up filters and rate limits, and block domains.", null, {
-								hk: "3wcRBu"
+							return a.fbt._("Create live chat posts in this community.", null, {
+								hk: "1Hxgd8"
 							});
 						case "chat_operator":
 						case F.c.chatOperator:
@@ -25423,4 +25423,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.f61f0bb40f052fce49bd.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.ed380c16aef73673cd29.js.map
