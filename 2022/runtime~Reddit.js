@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/runtime~Reddit.41e3eee665c7fe0b9f9a.js
-// Retrieved at 7/11/2022, 12:10:03 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/runtime~Reddit.6ecf85baaf97e72f7da7.js
+// Retrieved at 7/11/2022, 1:40:05 PM by Reddit Dataminer v1.0.0
 ! function(e) {
 	function o(o) {
 		for (var a, n, r = o[0], s = o[1], c = o[2], l = 0, P = []; l < r.length; l++) n = r[l], Object.prototype.hasOwnProperty.call(d, n) && d[n] && P.push(d[n][0]), d[n] = 0;
@@ -693,8 +693,8 @@
 					"CollectionCommentsPage~CommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~SearchResults": "7bb4621aa71b9e26647e",
 					"CollectionCommentsPage~CommentsPage~ModProgressModule~NewCommunityProgress": "31d6cfe0d16ae931b73c",
 					"CollectionCommentsPage~CommentsPage~Subreddit~SubredditWiki": "5b402ba8accbf1613376",
-					CollectionCommentsPage: "13ecf2dbe195b55be357",
-					CommentsPage: "13ecf2dbe195b55be357",
+					CollectionCommentsPage: "33068944c5c0256c401a",
+					CommentsPage: "33068944c5c0256c401a",
 					"ProfileComments~ProfileOverview~ProfilePosts": "74a6e5034292fd68bd86",
 					"ProfileComments~ProfilePrivate": "b4c82142abbc11335abb",
 					ProfileComments: "a6dd16149478749952d3",
@@ -1397,8 +1397,8 @@
 						"CollectionCommentsPage~CommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~SearchResults": "fbec711810665b4f4428",
 						"CollectionCommentsPage~CommentsPage~ModProgressModule~NewCommunityProgress": "c8adb8ee9cfa56f80eea",
 						"CollectionCommentsPage~CommentsPage~Subreddit~SubredditWiki": "14d053d30f72c622da6b",
-						CollectionCommentsPage: "87f704d5645c3ac166cb",
-						CommentsPage: "a62c8ea6a3323f5109e5",
+						CollectionCommentsPage: "9db77f1c4465fd63236f",
+						CommentsPage: "000626299e6ab8d7c42e",
 						"ProfileComments~ProfileOverview~ProfilePosts": "611f3f9b53e7d38c932c",
 						"ProfileComments~ProfilePrivate": "a1679f115aa72532a5dc",
 						ProfileComments: "bf4a0c89ace602d6063e",
@@ -1759,4 +1759,4 @@
 	var m = c;
 	t()
 }([]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/runtime~Reddit.41e3eee665c7fe0b9f9a.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/runtime~Reddit.6ecf85baaf97e72f7da7.js.map
