@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/5.27da2d1d64376fd8fce9.js
-// Retrieved at 7/7/2022, 6:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/5.0d310a03e2266d100e93.js
+// Retrieved at 7/11/2022, 9:30:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	[5], {
 		"./node_modules/@apollo/client/cache/inmemory/types.js": function(e, t) {},
@@ -14878,7 +14878,10 @@
 							Object(g.useEffect)(() => {
 								i && !a && s(Ju.SHOP)
 							}, [i, a]);
-							const c = Object.values(Ju).filter(e => e === Ju.SHOP ? i : e === Ju.CREATE ? r(Jd.CREATOR_TOOLS) : e !== Ju.NFT || vd());
+							const c = Object.values(Ju).filter(e => e === Ju.SHOP ? i : e === Ju.CREATE ? r(Jd.CREATOR_TOOLS) : e !== Ju.NFT || function() {
+								const e = window.location.pathname.split("/");
+								return vd() && !["polygon", "polygon_mumbai"].includes(e[3])
+							}());
 							return Cb("nav", {
 								className: yL,
 								children: Cb("div", {
@@ -45845,4 +45848,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/5.27da2d1d64376fd8fce9.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/5.0d310a03e2266d100e93.js.map

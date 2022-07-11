@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/NftProfileUnit.81724922a0a41f959bf0.js
-// Retrieved at 7/5/2022, 10:10:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/NftProfileUnit.6bc4d8f6b8921e0f3ffb.js
+// Retrieved at 7/11/2022, 9:30:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["NftProfileUnit"], {
 		"./node_modules/classnames/index.js": function(t, e, n) {
@@ -459,7 +459,7 @@
 				className: F
 			}), i.a.createElement(P, {
 				desc: "Button: See details about this NFT"
-			}, "NFT Details"));
+			}, "Details"));
 			var z = {
 				kind: "Document",
 				definitions: [{
@@ -1712,4 +1712,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/NftProfileUnit.81724922a0a41f959bf0.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/NftProfileUnit.6bc4d8f6b8921e0f3ffb.js.map
