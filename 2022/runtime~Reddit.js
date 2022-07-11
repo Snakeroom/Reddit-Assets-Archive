@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/runtime~Reddit.d0ac4f97182c1826b7e3.js
-// Retrieved at 7/11/2022, 4:20:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/runtime~Reddit.40d4ecdf53b72aac222c.js
+// Retrieved at 7/11/2022, 5:40:04 PM by Reddit Dataminer v1.0.0
 ! function(e) {
 	function o(o) {
 		for (var a, n, r = o[0], s = o[1], c = o[2], l = 0, P = []; l < r.length; l++) n = r[l], Object.prototype.hasOwnProperty.call(d, n) && d[n] && P.push(d[n][0]), d[n] = 0;
@@ -685,7 +685,7 @@
 					CoinPurchaseModal: "4c53b19b4b9a4c383628",
 					Coins: "5e05aadf4ab115ee3762",
 					CoinsMobile: "71086e665e26a05dd58f",
-					"CollectionCommentsPage~CommentsPage~CountryPage~FramedGild~GildModal~GovernanceReleaseNotesModal~Mem~c8b748a6": "a28647586110fee1c4e8",
+					"CollectionCommentsPage~CommentsPage~CountryPage~FramedGild~GildModal~GovernanceReleaseNotesModal~Mem~c8b748a6": "c9b4041a610c026bf109",
 					"CollectionCommentsPage~CommentsPage~CountryPage~Frontpage~GovernanceReleaseNotesModal~ModListing~Mod~e3d63e32": "1a64d1d3507f87847d6d",
 					"CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~ModerationPages~PostCreation~Profile~9a5d9fab": "4c3d1f253a4272494898",
 					"CollectionCommentsPage~CommentsPage~ModerationPages~PostCreation~ProfileComments~ProfileOverview~Pro~d39c0d57": "8dfcc4a34523f55211cc",
@@ -1389,7 +1389,7 @@
 						CoinPurchaseModal: "957d7c67e7ece6ea6aff",
 						Coins: "adbd9b900fdcf474a58c",
 						CoinsMobile: "0b116ceace01bf9bf0db",
-						"CollectionCommentsPage~CommentsPage~CountryPage~FramedGild~GildModal~GovernanceReleaseNotesModal~Mem~c8b748a6": "9ee0ae1e0b0da597e100",
+						"CollectionCommentsPage~CommentsPage~CountryPage~FramedGild~GildModal~GovernanceReleaseNotesModal~Mem~c8b748a6": "71de9b137f3398b9a9bf",
 						"CollectionCommentsPage~CommentsPage~CountryPage~Frontpage~GovernanceReleaseNotesModal~ModListing~Mod~e3d63e32": "bfb0a85200d7834b42a6",
 						"CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~ModerationPages~PostCreation~Profile~9a5d9fab": "49d7e377564ba0601ea6",
 						"CollectionCommentsPage~CommentsPage~ModerationPages~PostCreation~ProfileComments~ProfileOverview~Pro~d39c0d57": "3f946d60d458a6f83213",
@@ -1759,4 +1759,4 @@
 	var m = c;
 	t()
 }([]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/runtime~Reddit.d0ac4f97182c1826b7e3.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/runtime~Reddit.40d4ecdf53b72aac222c.js.map

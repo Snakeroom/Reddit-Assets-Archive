@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~CountryPage~FramedGild~GildModal~GovernanceReleaseNotesModal~Mem~c8b748a6.9ee0ae1e0b0da597e100.js
-// Retrieved at 7/11/2022, 4:20:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~CountryPage~FramedGild~GildModal~GovernanceReleaseNotesModal~Mem~c8b748a6.71de9b137f3398b9a9bf.js
+// Retrieved at 7/11/2022, 5:40:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~CountryPage~FramedGild~GildModal~GovernanceReleaseNotesModal~Mem~c8b748a6"], {
 		"./src/lib/colors/constants.ts": function(e, t, s) {
@@ -127,7 +127,6 @@
 				controlBarContainer: "gUpEQXQu8G8UvISmBIPsj",
 				AudioOnlyControlBar: "_35yCa6dYJNzUGsRDLtEoWU",
 				audioOnlyControlBar: "_35yCa6dYJNzUGsRDLtEoWU",
-				mIsFullScreen: "IlN7iDYa9yzeFlgOo0JQe",
 				mHasZeroOpacity: "_1RZSSlyqzokrcxh0ESwE2e",
 				button: "_15cvJJTKClcHJuPN2mcpY4"
 			}
@@ -340,17 +339,17 @@
 			}
 			var R = s("./node_modules/react-router-dom/esm/react-router-dom.js"),
 				H = s("./src/reddit/icons/svgs/VideoSnoo/index.tsx"),
-				I = s("./src/reddit/components/HTML5StreamPlayer/SnooButton/index.m.less"),
-				A = s.n(I);
+				A = s("./src/reddit/components/HTML5StreamPlayer/SnooButton/index.m.less"),
+				I = s.n(A);
 			const O = () => o.a.createElement("div", {
-				className: A.a.icon
+				className: I.a.icon
 			}, o.a.createElement(H.a, null));
 			var j = e => "string" == typeof e.postUrl ? o.a.createElement("a", {
 					href: e.postUrl,
-					className: A.a.button
+					className: I.a.button
 				}, o.a.createElement(O, null)) : o.a.createElement(R.a, {
 					to: e.postUrl,
-					className: A.a.button
+					className: I.a.button
 				}, o.a.createElement(O, null)),
 				D = s("./src/reddit/components/HTML5StreamPlayer/Tooltip/index.tsx"),
 				U = s("./src/reddit/components/HTML5StreamPlayer/VolumeControl/index.m.less"),
@@ -450,18 +449,18 @@
 					return e
 				}).apply(this, arguments)
 			}
-			const J = r.a.wrapped(D.a, "TooltipControl", Y.a),
-				K = r.a.div("NormalControl", Y.a),
-				Q = r.a.wrapped(J, "ControlSnoo", Y.a),
-				q = r.a.wrapped(J, "ControlPlay", Y.a),
-				X = r.a.wrapped(K, "Time", Y.a),
+			const K = r.a.wrapped(D.a, "TooltipControl", Y.a),
+				J = r.a.div("NormalControl", Y.a),
+				Q = r.a.wrapped(K, "ControlSnoo", Y.a),
+				q = r.a.wrapped(K, "ControlPlay", Y.a),
+				X = r.a.wrapped(J, "Time", Y.a),
 				$ = r.a.wrapped(X, "LeftTime", Y.a),
 				ee = r.a.wrapped(X, "RightTime", Y.a),
 				te = r.a.div("LiveLabel", Y.a),
-				se = r.a.wrapped(K, "ControlScrubber", Y.a),
-				ie = r.a.wrapped(K, "ControlVolume", Y.a),
-				ae = r.a.wrapped(J, "ControlExpand", Y.a),
-				oe = r.a.wrapped(J, "ControlCollapse", Y.a),
+				se = r.a.wrapped(J, "ControlScrubber", Y.a),
+				ie = r.a.wrapped(J, "ControlVolume", Y.a),
+				ae = r.a.wrapped(K, "ControlExpand", Y.a),
+				oe = r.a.wrapped(K, "ControlCollapse", Y.a),
 				ne = e => {
 					let {
 						className: t,
@@ -472,7 +471,6 @@
 					} = e;
 					return o.a.createElement("div", Z({
 						className: Object(n.a)(Y.a.ControlBarContainer, t, {
-							[Y.a.mIsFullScreen]: s,
 							[Y.a.mHasZeroOpacity]: i
 						}),
 						ref: a
@@ -906,8 +904,8 @@
 				N = s("./src/reddit/helpers/trackers/media.ts"),
 				R = s("./src/reddit/helpers/trackers/react.ts"),
 				H = s("./src/reddit/selectors/experiments/adblockAcceptableAdsMitigationExperiment.ts"),
-				I = s("./src/reddit/selectors/experiments/videoReactions.ts"),
-				A = s("./src/reddit/selectors/media.ts"),
+				A = s("./src/reddit/selectors/experiments/videoReactions.ts"),
+				I = s("./src/reddit/selectors/media.ts"),
 				O = s("./src/reddit/selectors/platform.ts"),
 				j = s("./src/reddit/selectors/posts.ts"),
 				D = s("./src/reddit/selectors/user.ts"),
@@ -917,9 +915,9 @@
 				G = s("./src/lib/lessComponent.tsx"),
 				Y = G.a.img("Component", z.a),
 				Z = s("./src/reddit/components/HTML5StreamPlayer/ControlBar/index.tsx"),
-				J = s("./src/reddit/icons/svgs/VideoCheckmark/index.tsx"),
-				K = s("./src/reddit/components/HTML5StreamPlayer/SettingControl/index.m.less"),
-				Q = s.n(K);
+				K = s("./src/reddit/icons/svgs/VideoCheckmark/index.tsx"),
+				J = s("./src/reddit/components/HTML5StreamPlayer/SettingControl/index.m.less"),
+				Q = s.n(J);
 
 			function q() {
 				return (q = Object.assign || function(e) {
@@ -939,7 +937,7 @@
 					onClick: e.onClick,
 					role: "checkbox",
 					tabIndex: 0
-				}, c.a.createElement(J.a, null), c.a.createElement("div", {
+				}, c.a.createElement(K.a, null), c.a.createElement("div", {
 					className: Q.a.AutoplayDescription
 				}, E.fbt._("Autoplay", null, {
 					hk: "1x30w1"
@@ -956,7 +954,7 @@
 						onClick: s,
 						role: "radio",
 						tabIndex: 0
-					}, c.a.createElement(J.a, null), c.a.createElement("div", {
+					}, c.a.createElement(K.a, null), c.a.createElement("div", {
 						className: Q.a.VideoResolutionDescription
 					}, t === X ? E.fbt._("Auto", null, {
 						hk: "6zgZT"
@@ -1154,8 +1152,8 @@
 				Ne = s("./src/reddit/icons/svgs/VideoReplay/index.tsx"),
 				Re = s("./src/reddit/components/HTML5StreamPlayer/ReplayVideo/index.m.less"),
 				He = s.n(Re);
-			const Ie = G.a.div("Centered", He.a),
-				Ae = G.a.div("EndedOverlay", He.a),
+			const Ae = G.a.div("Centered", He.a),
+				Ie = G.a.div("EndedOverlay", He.a),
 				Oe = G.a.span("ReplayText", He.a),
 				je = G.a.button("ReplayButton", He.a);
 			var De = e => {
@@ -1165,9 +1163,9 @@
 						callToAction: i,
 						postId: a
 					} = e;
-					return c.a.createElement(Ae, {
+					return c.a.createElement(Ie, {
 						onClick: t
-					}, c.a.createElement(Ie, null, c.a.createElement(je, null, c.a.createElement(Ne.a, null), c.a.createElement(Oe, {
+					}, c.a.createElement(Ae, null, c.a.createElement(je, null, c.a.createElement(Ne.a, null), c.a.createElement(Oe, {
 						className: "replay-video"
 					}, E.fbt._("Replay Video", null, {
 						hk: "1iD2Wj"
@@ -1204,8 +1202,8 @@
 					}, a))
 				},
 				Ze = s("./src/reddit/components/HTML5StreamPlayer/VideoOverlay/index.m.less"),
-				Je = s.n(Ze),
-				Ke = G.a.div("Component", Je.a),
+				Ke = s.n(Ze),
+				Je = G.a.div("Component", Ke.a),
 				Qe = s("./node_modules/@reddit/adblock-detection/browser.js"),
 				qe = s("./src/reddit/components/HTML5StreamPlayer/index.m.less"),
 				Xe = s.n(qe);
@@ -1226,8 +1224,8 @@
 					mutedInFeed: U.i,
 					postUrl: j.I,
 					started: U.k,
-					volume: A.f,
-					isReactionPillKillswitchEnabled: I.b,
+					volume: I.f,
+					isReactionPillKillswitchEnabled: A.b,
 					isAdblockAAMitigationEnabled: H.a
 				}), (e, t) => {
 					let {
@@ -1943,7 +1941,7 @@
 						postId: this.props.postId,
 						source: this.props.callToActionSource,
 						callToAction: this.props.callToActionText
-					}) : c.a.createElement(Ke, null), h ? c.a.createElement(T.a, null) : g ? c.a.createElement(ve, null) : this.state.videoWaiting ? P && c.a.createElement(T.a, null) : this.state.videoPaused && !C && c.a.createElement(_.a, {
+					}) : c.a.createElement(Je, null), h ? c.a.createElement(T.a, null) : g ? c.a.createElement(ve, null) : this.state.videoWaiting ? P && c.a.createElement(T.a, null) : this.state.videoPaused && !C && c.a.createElement(_.a, {
 						onClick: s ? void 0 : this.playPauseVideo
 					}), i && c.a.createElement(Z.b, {
 						clickSnoo: this.clickSnoo,
@@ -2694,4 +2692,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~CountryPage~FramedGild~GildModal~GovernanceReleaseNotesModal~Mem~c8b748a6.9ee0ae1e0b0da597e100.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~CountryPage~FramedGild~GildModal~GovernanceReleaseNotesModal~Mem~c8b748a6.71de9b137f3398b9a9bf.js.map
