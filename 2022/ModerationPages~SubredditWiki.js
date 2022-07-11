@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModerationPages~SubredditWiki.d44029a09d9ed5f3e8b5.js
-// Retrieved at 7/11/2022, 12:10:03 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModerationPages~SubredditWiki.1c4c5ac09226de2eb8e7.js
+// Retrieved at 7/11/2022, 3:10:11 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModerationPages~SubredditWiki"], {
 		"./src/chat/controls/Svg/index.m.less": function(e, t, r) {
@@ -4906,38 +4906,35 @@
 			const i = e => {
 					return !(Object(s.c)(e, {
 						experimentEligibilitySelector: s.a,
-						experimentName: n.ge
-					}) === n.Ad)
+						experimentName: n.fe
+					}) === n.zd)
 				},
 				a = e => Object(s.c)(e, {
 					experimentEligibilitySelector: s.a,
-					experimentName: n.he
-				}) === n.Ad
+					experimentName: n.ge
+				}) === n.zd
 		},
 		"./src/reddit/selectors/gold/powerups/flairs.ts": function(e, t, r) {
 			"use strict";
-			r.d(t, "f", (function() {
+			r.d(t, "e", (function() {
 				return c
-			})), r.d(t, "h", (function() {
-				return l
 			})), r.d(t, "g", (function() {
+				return l
+			})), r.d(t, "f", (function() {
 				return u
-			})), r.d(t, "i", (function() {
+			})), r.d(t, "h", (function() {
 				return m
-			})), r.d(t, "j", (function() {
+			})), r.d(t, "i", (function() {
 				return b
 			})), r.d(t, "b", (function() {
 				return p
-			})), r.d(t, "c", (function() {
-				return f
-			})), r.d(t, "e", (function() {
-				return h
 			})), r.d(t, "d", (function() {
-				return v
+				return f
+			})), r.d(t, "c", (function() {
+				return h
 			})), r.d(t, "a", (function() {
-				return k
+				return g
 			}));
-			r("./node_modules/core-js/modules/web.dom.iterable.js");
 			var n = r("./node_modules/reselect/es/index.js"),
 				s = r("./src/reddit/selectors/commentSelector.ts"),
 				i = r("./src/lib/initializeClient/installReducer.ts"),
@@ -4973,18 +4970,7 @@
 				u = Object(n.a)([d, l], (e, t) => e && t ? e[t] : null),
 				m = Object(n.a)(c, e => null == e ? void 0 : e.preferredSupporterType),
 				b = Object(n.a)([d, m], (e, t) => e && t ? e[t] : null),
-				p = Object(n.a)([d, c], (e, t) => {
-					if (!e) return [];
-					const r = t ? [...t.supporterTypes, ...t.achievementTypes] : [],
-						n = (null == t ? void 0 : t.pendingAchievementType) || (null == t ? void 0 : t.preferredAchievementType),
-						s = (null == t ? void 0 : t.pendingSupporterType) || (null == t ? void 0 : t.preferredSupporterType);
-					return Object.values(e).map(e => ({
-						...e,
-						isLocked: !r.includes(e.type),
-						isPreferred: e.type === n || e.type === s
-					})).sort((e, t) => e.isLocked === t.isLocked ? 0 : e.isLocked ? 1 : -1)
-				}),
-				f = Object(n.a)([o, c], (e, t) => {
+				p = Object(n.a)([o, c], (e, t) => {
 					if (!e || !t) return null;
 					const {
 						supporterTypes: r,
@@ -4999,22 +4985,22 @@
 						pendingAchievementType: l
 					} = t;
 					return {
-						supporterFlairs: g(r, i, s, c || o),
-						achievementFlairs: g(n, a, s, l || d)
+						supporterFlairs: v(r, i, s, c || o),
+						achievementFlairs: v(n, a, s, l || d)
 					}
 				}),
-				h = Object(n.a)([c], e => !!e && e.isHidden),
-				v = Object(n.a)([o, c, b], (e, t, r) => {
+				f = Object(n.a)([c], e => !!e && e.isHidden),
+				h = Object(n.a)([o, c, b], (e, t, r) => {
 					if (!e || !t) return [];
 					const n = t.achievementTypes.map(t => e.flairsByType[t]);
 					return r ? [r, ...n] : n
 				}),
-				g = (e, t, r, n) => e.map(e => ({
+				v = (e, t, r, n) => e.map(e => ({
 					...r[e],
 					isLocked: !t.includes(e),
 					isPreferred: e === n
 				})).sort((e, t) => e.isLocked === t.isLocked ? 0 : e.isLocked ? 1 : -1),
-				k = (e, t) => {
+				g = (e, t) => {
 					let {
 						commentId: r
 					} = t;
@@ -5202,4 +5188,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages~SubredditWiki.d44029a09d9ed5f3e8b5.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages~SubredditWiki.1c4c5ac09226de2eb8e7.js.map

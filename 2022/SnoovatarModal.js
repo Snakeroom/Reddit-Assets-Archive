@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SnoovatarModal.58afeb5f5f7d7ed49f73.js
-// Retrieved at 7/11/2022, 2:10:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SnoovatarModal.40c4792b9250ad1ee5a6.js
+// Retrieved at 7/11/2022, 3:10:11 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SnoovatarModal"], {
 		"./src/reddit/components/SnoovatarModal/SnoovatarIframe.tsx": function(e, t, a) {
@@ -85,10 +85,10 @@
 				j = a("./src/telemetry/index.ts"),
 				f = a("./src/reddit/components/SnoovatarModal/index.m.less"),
 				_ = a.n(f),
-				x = a("./src/reddit/components/SnoovatarModal/SnoovatarIframe.tsx");
+				E = a("./src/reddit/components/SnoovatarModal/SnoovatarIframe.tsx");
 
-			function E() {
-				return (E = Object.assign || function(e) {
+			function h() {
+				return (h = Object.assign || function(e) {
 					for (var t = 1; t < arguments.length; t++) {
 						var a = arguments[t];
 						for (var s in a) Object.prototype.hasOwnProperty.call(a, s) && (e[s] = a[s])
@@ -96,11 +96,11 @@
 					return e
 				}).apply(this, arguments)
 			}
-			const h = !(Object(n.c)() || Object(n.b)()),
+			const x = !(Object(n.c)() || Object(n.b)()),
 				S = {
 					GRAPHQL_URL: s.a.gqlUrl,
-					IS_DEVELOPMENT: h,
-					IS_PRODUCTION: !h,
+					IS_DEVELOPMENT: x,
+					IS_PRODUCTION: !x,
 					MOCKING_ENABLED: !1,
 					SNOOVATAR_BASE_URL: s.a.snoovatarUrl,
 					SNOOVATAR_API_URL: `${s.a.snoovatarUrl}/api`
@@ -125,8 +125,8 @@
 							expiration: new Date(t.expires).getTime()
 						}), [t]),
 						f = Object(m.a)(),
-						h = Object(d.e)(e => v && Object(b.e)(e)),
-						w = Object(d.e)(e => !Object(p.Q)(e) && Object(b.x)(e));
+						x = Object(d.e)(e => v && Object(b.e)(e)),
+						w = Object(d.e)(e => !Object(p.Q)(e) && Object(b.w)(e));
 					Object(o.useEffect)(() => {
 						(async () => {
 							await a.e(7).then(a.t.bind(null, "./node_modules/@reddit/avatars/style.css", 7))
@@ -163,7 +163,7 @@
 					} : {
 						...S,
 						STRIPE_API_KEY: s.a.stripe.apiKey(l)
-					}, h ? c.a.createElement("div", {
+					}, x ? c.a.createElement("div", {
 						className: _.a.snoovatarModalBuilderV2
 					}, c.a.createElement(o.Suspense, {
 						fallback: c.a.createElement("div", null)
@@ -174,14 +174,14 @@
 						sendEvent: j.a
 					}, c.a.createElement(A, {
 						navState: D
-					})))) : c.a.createElement(x.a, E({
+					})))) : c.a.createElement(E.a, h({
 						className: _.a.snoovatarModalIframeContainer
 					}, e))
 				});
 			t.default = () => {
 				const e = Object(d.d)(),
 					t = Object(d.e)(e => Object(v.a)(e));
-				return c.a.createElement(w, E({}, t, {
+				return c.a.createElement(w, h({}, t, {
 					className: _.a.snoovatarModal,
 					withOverlay: !0,
 					onOverlayClick: () => e(Object(l.a)())
@@ -199,4 +199,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SnoovatarModal.58afeb5f5f7d7ed49f73.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SnoovatarModal.40c4792b9250ad1ee5a6.js.map

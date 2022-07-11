@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ChatPost.419ee03fbb3e47ae7a75.js
-// Retrieved at 7/11/2022, 12:10:03 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ChatPost.4805f6ad262e2a57f79f.js
+// Retrieved at 7/11/2022, 3:10:11 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ChatPost"], {
 		"./node_modules/lodash/_baseDelay.js": function(e, t) {
@@ -4611,7 +4611,7 @@
 					const c = Object(s.e)(i, {
 							commentId: e
 						}),
-						d = Object(a.g)(i, {
+						d = Object(a.f)(i, {
 							subredditId: t,
 							userId: n
 						});
@@ -5281,28 +5281,25 @@
 		},
 		"./src/reddit/selectors/gold/powerups/flairs.ts": function(e, t, n) {
 			"use strict";
-			n.d(t, "f", (function() {
+			n.d(t, "e", (function() {
 				return d
-			})), n.d(t, "h", (function() {
-				return l
 			})), n.d(t, "g", (function() {
+				return l
+			})), n.d(t, "f", (function() {
 				return m
-			})), n.d(t, "i", (function() {
+			})), n.d(t, "h", (function() {
 				return u
-			})), n.d(t, "j", (function() {
+			})), n.d(t, "i", (function() {
 				return p
 			})), n.d(t, "b", (function() {
 				return h
-			})), n.d(t, "c", (function() {
-				return b
-			})), n.d(t, "e", (function() {
-				return v
 			})), n.d(t, "d", (function() {
-				return C
+				return b
+			})), n.d(t, "c", (function() {
+				return v
 			})), n.d(t, "a", (function() {
-				return f
+				return g
 			}));
-			n("./node_modules/core-js/modules/web.dom.iterable.js");
 			var o = n("./node_modules/reselect/es/index.js"),
 				s = n("./src/reddit/selectors/commentSelector.ts"),
 				a = n("./src/lib/initializeClient/installReducer.ts"),
@@ -5338,18 +5335,7 @@
 				m = Object(o.a)([c, l], (e, t) => e && t ? e[t] : null),
 				u = Object(o.a)(d, e => null == e ? void 0 : e.preferredSupporterType),
 				p = Object(o.a)([c, u], (e, t) => e && t ? e[t] : null),
-				h = Object(o.a)([c, d], (e, t) => {
-					if (!e) return [];
-					const n = t ? [...t.supporterTypes, ...t.achievementTypes] : [],
-						o = (null == t ? void 0 : t.pendingAchievementType) || (null == t ? void 0 : t.preferredAchievementType),
-						s = (null == t ? void 0 : t.pendingSupporterType) || (null == t ? void 0 : t.preferredSupporterType);
-					return Object.values(e).map(e => ({
-						...e,
-						isLocked: !n.includes(e.type),
-						isPreferred: e.type === o || e.type === s
-					})).sort((e, t) => e.isLocked === t.isLocked ? 0 : e.isLocked ? 1 : -1)
-				}),
-				b = Object(o.a)([i, d], (e, t) => {
+				h = Object(o.a)([i, d], (e, t) => {
 					if (!e || !t) return null;
 					const {
 						supporterTypes: n,
@@ -5364,22 +5350,22 @@
 						pendingAchievementType: l
 					} = t;
 					return {
-						supporterFlairs: g(n, a, s, d || i),
-						achievementFlairs: g(o, r, s, l || c)
+						supporterFlairs: C(n, a, s, d || i),
+						achievementFlairs: C(o, r, s, l || c)
 					}
 				}),
-				v = Object(o.a)([d], e => !!e && e.isHidden),
-				C = Object(o.a)([i, d, p], (e, t, n) => {
+				b = Object(o.a)([d], e => !!e && e.isHidden),
+				v = Object(o.a)([i, d, p], (e, t, n) => {
 					if (!e || !t) return [];
 					const o = t.achievementTypes.map(t => e.flairsByType[t]);
 					return n ? [n, ...o] : o
 				}),
-				g = (e, t, n, o) => e.map(e => ({
+				C = (e, t, n, o) => e.map(e => ({
 					...n[e],
 					isLocked: !t.includes(e),
 					isPreferred: e === o
 				})).sort((e, t) => e.isLocked === t.isLocked ? 0 : e.isLocked ? 1 : -1),
-				f = (e, t) => {
+				g = (e, t) => {
 					let {
 						commentId: n
 					} = t;
@@ -5415,4 +5401,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatPost.419ee03fbb3e47ae7a75.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatPost.4805f6ad262e2a57f79f.js.map
