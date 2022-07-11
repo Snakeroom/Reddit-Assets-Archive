@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostCreation.94c3a4e54e52b14f07be.js
-// Retrieved at 7/7/2022, 4:10:13 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostCreation.8f98b60f295e2a35ad7f.js
+// Retrieved at 7/11/2022, 12:10:03 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostCreation", "ChatMessageInput~MembershipPaywallPage~RichTextEditor", "ContributorRequestButton"], {
 		"./node_modules/autosize/dist/autosize.js": function(e, t, n) {
@@ -1498,7 +1498,7 @@
 			const ie = Object(re.a)(e => Object(se.c)(e, {
 				experimentEligibilitySelector: se.a,
 				experimentName: oe.Ib
-			}), e => e === oe.zd);
+			}), e => e === oe.Ad);
 			var ae = n("./src/reddit/selectors/experiments/contributeBeforeSignUp.ts"),
 				ce = n("./src/reddit/selectors/experiments/emailEnablement.ts"),
 				le = n("./src/reddit/selectors/platform.ts"),
@@ -33914,9 +33914,9 @@
 			var o = n("./src/reddit/constants/experiments.ts"),
 				s = n("./src/reddit/helpers/chooseVariant/index.ts");
 			const r = e => Object(s.c)(e, {
-				experimentName: o.te,
+				experimentName: o.ue,
 				experimentEligibilitySelector: s.a
-			}) === o.Ce.Enabled
+			}) === o.De.Enabled
 		},
 		"./src/reddit/selectors/experiments/presence.ts": function(e, t, n) {
 			"use strict";
@@ -33928,8 +33928,8 @@
 			const r = e => {
 				return Object(s.c)(e, {
 					experimentEligibilitySelector: s.a,
-					experimentName: o.Oe
-				}) === o.zd
+					experimentName: o.Pe
+				}) === o.Ad
 			}
 		},
 		"./src/reddit/selectors/experiments/typingIndicators.ts": function(e, t, n) {
@@ -33951,29 +33951,29 @@
 					if (Object(i.a)(e)) return !1;
 					return Object(s.c)(e, {
 						experimentEligibilitySelector: r.e,
-						experimentName: o.Vf
-					}) === o.zd
+						experimentName: o.Wf
+					}) === o.Ad
 				},
 				c = e => {
 					return Object(s.c)(e, {
 						experimentEligibilitySelector: r.e,
-						experimentName: o.Wf
-					}) === o.zd
+						experimentName: o.Xf
+					}) === o.Ad
 				},
 				l = e => {
 					if (Object(i.a)(e)) return !1;
 					const t = Object(s.c)(e, {
 						experimentEligibilitySelector: r.e,
-						experimentName: o.Uf
+						experimentName: o.Vf
 					});
-					return t === o.Kf.TypingIndicators || t === o.Kf.IndicatorsPlusCTA
+					return t === o.Lf.TypingIndicators || t === o.Lf.IndicatorsPlusCTA
 				},
 				d = e => {
 					if (Object(i.a)(e)) return !1;
 					const t = Object(r.d)(e, {
-						experimentName: o.Uf
+						experimentName: o.Vf
 					});
-					return (null == t ? void 0 : t.variant) === o.Kf.IndicatorsPlusCTA
+					return (null == t ? void 0 : t.variant) === o.Lf.IndicatorsPlusCTA
 				}
 		},
 		"./src/reddit/selectors/gold/enabledFeatures.ts": function(e, t, n) {
@@ -34399,4 +34399,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.94c3a4e54e52b14f07be.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.8f98b60f295e2a35ad7f.js.map
