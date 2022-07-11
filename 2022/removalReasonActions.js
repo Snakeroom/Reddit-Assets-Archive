@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/removalReasonActions.0379a83baa98a4a6e17d.js
-// Retrieved at 7/11/2022, 4:20:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/removalReasonActions.dac5f673f006c6b2405c.js
+// Retrieved at 7/11/2022, 7:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["removalReasonActions"], {
 		"./node_modules/lodash/map.js": function(e, t, o) {
@@ -80,7 +80,7 @@
 			})), o.d(t, "b", (function() {
 				return Ne
 			})), o.d(t, "c", (function() {
-				return Pe
+				return De
 			})), o.d(t, "r", (function() {
 				return Le
 			})), o.d(t, "g", (function() {
@@ -137,8 +137,8 @@
 				A = o("./src/reddit/models/RichTextJson/addRTJParam.ts"),
 				N = o("./src/reddit/helpers/graphql/helpers.ts"),
 				M = o("./src/reddit/helpers/graphql/normalizeCommentFromGql/index.ts"),
-				D = o("./src/redditGQL/operations/CreateComment.json");
-			const P = (e, t, o, n) => {
+				P = o("./src/redditGQL/operations/CreateComment.json");
+			const D = (e, t, o, n) => {
 					let s, r;
 					if (n === T.i.MARKDOWN) s = o.text, r = null;
 					else {
@@ -196,7 +196,7 @@
 							}
 						};
 					return Object(y.a)(e, {
-						...D,
+						...P,
 						variables: {
 							input: c
 						}
@@ -251,7 +251,7 @@
 			const ie = Object(re.a)(e => Object(se.c)(e, {
 				experimentEligibilitySelector: se.a,
 				experimentName: ne.Ib
-			}), e => e === ne.yd);
+			}), e => e === ne.zd);
 			var ce = o("./src/reddit/selectors/experiments/contributeBeforeSignUp.ts"),
 				ae = o("./src/reddit/selectors/experiments/emailEnablement.ts"),
 				de = o("./src/reddit/selectors/platform.ts"),
@@ -301,7 +301,7 @@
 						editorMode: d
 					} = e;
 					if (H.d.enableToxicityWarning(r)) {
-						if (!(await P(s(), c, a, d))) return void t(Object(m.i)(_e))
+						if (!(await D(s(), c, a, d))) return void t(Object(m.i)(_e))
 					}
 					t(ve(e))
 				}, ye = e => e.rteState ? j.a.toRichTextJSON(e.rteState) : e.rtJson || e.text, Ce = e => {
@@ -417,7 +417,7 @@
 					} = e, u = o(), p = Object(de.e)(u);
 					let b = "";
 					if (p && (b = p.name), H.d.enableToxicityWarning(u)) {
-						if (!(await P(s(), b, d, l))) return void t(Object(m.i)(_e))
+						if (!(await D(s(), b, d, l))) return void t(Object(m.i)(_e))
 					}
 					t(Ie({
 						commentsPageKey: i,
@@ -515,12 +515,12 @@
 							parentCommentDepth: o
 						}, !0, r, i))
 					}
-				}, Ae = Object(r.a)(pe.s), Ne = Object(r.a)(pe.r), Me = Object(r.a)(pe.n), De = (Object(r.a)(pe.i), Object(r.a)(pe.o)), Pe = (Object(r.a)(pe.v), (e, t, o) => async (s, r, i) => {
+				}, Ae = Object(r.a)(pe.s), Ne = Object(r.a)(pe.r), Me = Object(r.a)(pe.n), Pe = (Object(r.a)(pe.i), Object(r.a)(pe.o)), De = (Object(r.a)(pe.v), (e, t, o) => async (s, r, i) => {
 					let {
 						apiContext: c
 					} = i;
 					const a = e === T.i.RICH_TEXT;
-					if (!t || "object" == typeof t && Object(Y.G)(t)) s(De({
+					if (!t || "object" == typeof t && Object(Y.G)(t)) s(Pe({
 						editorMode: e,
 						draftKey: o,
 						content: a ? Y.i : ""
@@ -530,7 +530,7 @@
 						const r = await Object(G.a)(c(), e, a ? t : JSON.stringify(t));
 						if (r.ok) {
 							const t = r.body.output;
-							s(Object(b.a)(o)), s(De({
+							s(Object(b.a)(o)), s(Pe({
 								editorMode: e,
 								draftKey: o,
 								content: t
@@ -1415,8 +1415,8 @@
 				A = o("./src/reddit/actions/comment/moderation.ts"),
 				N = o("./src/reddit/actions/modal.ts"),
 				M = o("./src/reddit/actions/post.ts"),
-				D = o("./src/reddit/actions/toaster.ts"),
-				P = o("./src/reddit/constants/modals.ts"),
+				P = o("./src/reddit/actions/toaster.ts"),
+				D = o("./src/reddit/constants/modals.ts"),
 				L = o("./src/lib/makeApiRequest/index.ts"),
 				K = o("./src/lib/omitHeaders/index.ts"),
 				U = o("./src/reddit/constants/headers.ts"),
@@ -1489,7 +1489,7 @@
 						o(ne({
 							subredditId: e,
 							reason: r
-						})), o(Object(D.f)({
+						})), o(Object(P.f)({
 							kind: z.b.SuccessMod,
 							text: n.fbt._("Removal reason added!", null, {
 								hk: "2WSh8N"
@@ -1513,7 +1513,7 @@
 					a.ok ? (o(ce({
 						subredditId: e,
 						reason: t
-					})), o(Object(D.f)({
+					})), o(Object(P.f)({
 						kind: z.b.SuccessMod,
 						text: n.fbt._("Removal reason saved", null, {
 							hk: "28ScuL"
@@ -1532,7 +1532,7 @@
 					a.ok ? (o(me({
 						subredditId: e,
 						reasonId: t
-					})), o(Object(D.f)({
+					})), o(Object(P.f)({
 						kind: z.b.SuccessMod,
 						text: n.fbt._("Removal reason deleted", null, {
 							hk: "4xzgsa"
@@ -1546,7 +1546,7 @@
 					i.features.removalReasons.reasonOrder[e] && i.features.removalReasons.reasonOrder[e].length > 0 || o(te(e)), o(be({
 						subredditId: e,
 						itemIds: t
-					})), o(Object(N.i)(P.a.ADD_REMOVAL_REASON))
+					})), o(Object(N.i)(D.a.ADD_REMOVAL_REASON))
 				}, fe = Object(R.a)("REMOVALREASONS__SUBMIT_PENDING"), he = Object(R.a)("REMOVALREASONS__SUBMIT_SUCCESS"), je = Object(R.a)("REMOVALREASONS__SUBMIT_FAILED"), ge = Object(R.a)("REMOVALREASONS__MESSAGE_PENDING"), Se = Object(R.a)("REMOVALREASONS__MESSAGE_PRIVATE_SUCCESS"), _e = Object(R.a)("REMOVALREASONS__MESSAGE_PUBLIC_SUCCESS"), xe = Object(R.a)("REMOVALREASONS__MESSAGE_FAILED"), ye = (e, t, o, n, s) => async (r, i, c) => {
 					let {
 						apiContext: a
@@ -1582,7 +1582,7 @@
 								},
 								i = await G(a(), Object(Q.h)(s, u), u);
 							if (i.ok) {
-								if (n === Q.f.Public) {
+								if ([Q.f.Public, Q.f.PublicSubreddit].includes(n)) {
 									if (r(_e()), i.body) {
 										const e = Object(H.a)(i.body),
 											t = {
@@ -1651,7 +1651,7 @@
 						m = l.user.account && l.user.account.displayText;
 					if (!m) return;
 					i(fe());
-					const u = Object(D.f)({
+					const u = Object(P.f)({
 							kind: z.b.SuccessMod,
 							text: n.fbt._({
 								"*": "Added removal reason for {number} posts/comments",
@@ -1836,8 +1836,8 @@
 					...A
 				});
 			var M = o("./src/reddit/icons/svgs/Dropdown/index.tsx"),
-				D = o("./src/reddit/icons/svgs/Info/index.tsx"),
-				P = o("./src/reddit/selectors/activeModalId.ts"),
+				P = o("./src/reddit/icons/svgs/Info/index.tsx"),
+				D = o("./src/reddit/selectors/activeModalId.ts"),
 				L = o("./src/reddit/selectors/comments.ts"),
 				K = o("./src/reddit/selectors/moderatorPermissions.ts"),
 				U = o("./src/reddit/selectors/posts.ts"),
@@ -1932,7 +1932,7 @@
 							commentId: o
 						})
 					},
-					contestModeModalIsOpen: Object(P.b)("CommentSort--ContestMode--Modal"),
+					contestModeModalIsOpen: Object(D.b)("CommentSort--ContestMode--Modal"),
 					dropdownIsOpen: Object(B.b)(z),
 					highlightIsOpen: Object(B.b)(X),
 					hasModeratorPostPermissions: (e, t) => {
@@ -2027,7 +2027,7 @@
 						suggestedSort: y,
 						showTooltip: C,
 						toggleContestModeModal: v
-					} = this.props, I = O.contestMode, T = !b.search.includes(d.t.CONFIDENCE), A = g === d.t.CONFIDENCE && T, N = u && !A, P = d.v[g], L = P ? P() : "", K = y && g === y && !A ? this.addSuggestedLabel(L) : L, U = I ? n.fbt._("End contest mode?", null, {
+					} = this.props, I = O.contestMode, T = !b.search.includes(d.t.CONFIDENCE), A = g === d.t.CONFIDENCE && T, N = u && !A, D = d.v[g], L = D ? D() : "", K = y && g === y && !A ? this.addSuggestedLabel(L) : L, U = I ? n.fbt._("End contest mode?", null, {
 						hk: "2AkJRZ"
 					}) : n.fbt._("Start contest?", null, {
 						hk: "2PQPOu"
@@ -2105,7 +2105,7 @@
 							hk: "3KM0ma"
 						}),
 						tooltipId: $
-					}), r.a.createElement(D.a, {
+					}), r.a.createElement(P.a, {
 						className: V.a.Info
 					})))), u && r.a.createElement("button", {
 						className: V.a.ContestMode,
@@ -2764,7 +2764,7 @@
 				c = 100;
 			var a, d;
 			! function(e) {
-				e.Private = "private", e.PrivateExposed = "private_exposed", e.Public = "public"
+				e.Private = "private", e.PrivateExposed = "private_exposed", e.Public = "public", e.PublicSubreddit = "public_subreddit"
 			}(a || (a = {})),
 			function(e) {
 				e.Bulk = "bulk", e.Comment = "comment", e.Post = "link"
@@ -2775,7 +2775,8 @@
 						[t === d.Bulk ? "item_ids" : "item_id"]: e.itemId,
 						message: e.message,
 						title: e.title,
-						type: e.type
+						type: e.type === a.PublicSubreddit ? a.Public : e.type,
+						use_proxy: e.type === a.PublicSubreddit
 					}
 				}
 		},
@@ -2822,4 +2823,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/removalReasonActions.0379a83baa98a4a6e17d.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/removalReasonActions.dac5f673f006c6b2405c.js.map

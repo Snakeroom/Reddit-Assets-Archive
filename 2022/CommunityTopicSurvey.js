@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CommunityTopicSurvey.c95d16cc0ef4ed5179ff.js
-// Retrieved at 7/11/2022, 4:20:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CommunityTopicSurvey.f412499a279ffd3fdbd2.js
+// Retrieved at 7/11/2022, 7:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CommunityTopicSurvey"], {
 		"./node_modules/react-uid/dist/es2015/hooks.js": function(e, t, n) {
@@ -220,7 +220,7 @@
 				C = n("./src/reddit/controls/ButtonGroup/index.m.less"),
 				U = n.n(C);
 
-			function B(e) {
+			function R(e) {
 				const {
 					options: t,
 					onChange: n = (() => {})
@@ -266,7 +266,7 @@
 					}, s))
 				}))
 			}
-			var R = n("./src/reddit/controls/TextButton/index.tsx"),
+			var B = n("./src/reddit/controls/TextButton/index.tsx"),
 				y = n("./src/reddit/components/SubredditMention/index.tsx"),
 				N = n("./src/reddit/constants/experiments.ts");
 
@@ -278,7 +278,7 @@
 				return 0 === n.length ? o.a.createElement(o.a.Fragment, null, t) : o.a.createElement(o.a.Fragment, null, n[0], o.a.createElement(y.a, {
 					isFeatureFlagEnabled: !0,
 					isUserInTreatment: !0,
-					userVariant: N.Bf.SmIconHc,
+					userVariant: N.Cf.SmIconHc,
 					subredditName: n[1].split("/")[1],
 					rtJsonElementProps: {}
 				}), n[2])
@@ -298,7 +298,7 @@
 					className: Object(T.a)(k.a.survey, d && k.a.inFeed),
 					"data-survey": !0,
 					onClick: e => e.stopPropagation()
-				}, o.a.createElement(R.a, {
+				}, o.a.createElement(B.a, {
 					className: k.a.closeButton,
 					onClick: () => c(t)
 				}, o.a.createElement(g.b, null), o.a.createElement("span", {
@@ -307,7 +307,7 @@
 					hk: "4gbyAA"
 				}))), o.a.createElement("p", {
 					className: k.a.question
-				}, o.a.createElement(j, null, n)), o.a.createElement(B, {
+				}, o.a.createElement(j, null, n)), o.a.createElement(R, {
 					options: i,
 					onChange: function(n) {
 						var r;
@@ -339,7 +339,7 @@
 					className: Object(T.a)(k.a.survey, u && k.a.inFeed),
 					"data-survey": !0,
 					onClick: e => e.stopPropagation()
-				}, o.a.createElement(R.a, {
+				}, o.a.createElement(B.a, {
 					className: k.a.closeButton,
 					onClick: () => d(t)
 				}, o.a.createElement(g.b, null), o.a.createElement("span", {
@@ -350,7 +350,7 @@
 					className: k.a.question
 				}, o.a.createElement(j, null, n)), o.a.createElement("div", {
 					className: k.a.buttonGroup
-				}, o.a.createElement(B, {
+				}, o.a.createElement(R, {
 					onChange: function(n) {
 						var r;
 						l(n), null === (r = e.onSelect) || void 0 === r || r.call(e, t, n), c && e.onSubmit(t, n)
@@ -421,7 +421,7 @@
 					}))
 				}
 
-				function B(e, t) {
+				function R(e, t) {
 					a(p(v, t, n))
 				}
 				switch (v.type) {
@@ -432,7 +432,7 @@
 							questionText: v.questionText,
 							answers: v.answerOptions,
 							onSubmit: U,
-							onSelect: B,
+							onSelect: R,
 							onClose: C,
 							inFeed: u
 						});
@@ -443,7 +443,7 @@
 							questionText: v.questionText,
 							answers: v.answerOptions,
 							onSubmit: U,
-							onSelect: B,
+							onSelect: R,
 							onClose: C,
 							inFeed: u
 						});
@@ -454,7 +454,7 @@
 							questionText: v.questionText,
 							answers: v.answerOptions,
 							onSubmit: U,
-							onSelect: B,
+							onSelect: R,
 							onClose: C,
 							inFeed: u,
 							noSubmit: !0
@@ -618,9 +618,9 @@
 			})), n.d(t, "o", (function() {
 				return U
 			})), n.d(t, "q", (function() {
-				return B
-			})), n.d(t, "s", (function() {
 				return R
+			})), n.d(t, "s", (function() {
+				return B
 			})), n.d(t, "r", (function() {
 				return y
 			})), n.d(t, "a", (function() {
@@ -654,8 +654,8 @@
 				v = c.a.tr("Tr", d.a),
 				C = c.a.td("Tdl", d.a),
 				U = c.a.td("Tdc", d.a),
-				B = c.a.td("Tdr", d.a),
-				R = c.a.th("Thl", d.a),
+				R = c.a.td("Tdr", d.a),
+				B = c.a.th("Thl", d.a),
 				y = c.a.th("Thc", d.a),
 				N = (c.a.th("Thr", d.a), c.a.wrapped(e => s.a.createElement(o.b, e), "A", d.a)),
 				j = c.a.wrapped(u.a, "A", d.a)
@@ -871,12 +871,12 @@
 						rtJsonElementProps: i
 					});
 					switch (o) {
-						case p.Bf.SmIcon:
+						case p.Cf.SmIcon:
 							return s.a.createElement(_, {
 								subredditName: r,
 								rtJsonElementProps: i
 							});
-						case p.Bf.SmIconHc:
+						case p.Cf.SmIconHc:
 							return s.a.createElement(_, {
 								subredditName: r,
 								isHoverable: !0,
@@ -1148,12 +1148,12 @@
 				c = e => {
 					return Object(o.c)(e, {
 						experimentEligibilitySelector: d,
-						experimentName: r.uf
+						experimentName: r.vf
 					}) || ""
 				},
 				u = e => {
 					const t = c(e);
-					return t === r.Bf.SmIcon || t === r.Bf.SmIconHc
+					return t === r.Cf.SmIcon || t === r.Cf.SmIconHc
 				},
 				a = (e, t) => {
 					let {
@@ -1182,4 +1182,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommunityTopicSurvey.c95d16cc0ef4ed5179ff.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommunityTopicSurvey.f412499a279ffd3fdbd2.js.map

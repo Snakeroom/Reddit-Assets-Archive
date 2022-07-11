@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~Reddit.a258b8376113584230c8.js
-// Retrieved at 7/11/2022, 4:20:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~Reddit.9142229b0bf84ac019e7.js
+// Retrieved at 7/11/2022, 7:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~Reddit"], {
 		"./assets/fonts/NotoMono/font.less": function(e, t, n) {},
@@ -777,7 +777,7 @@
 			const y = Object(p.a)(e => Object(f.c)(e, {
 				experimentEligibilitySelector: h.Q,
 				experimentName: b.bc
-			}), e => e === b.yd);
+			}), e => e === b.zd);
 			var m = n("./src/reddit/actions/toaster.ts");
 			const g = "SUBREDDIT_COUNTRY_SITE__LOADED",
 				v = "SUBREDDIT_COUNTRY_SITE__CHANGED",
@@ -3260,7 +3260,7 @@
 			const j = e => _.d.reCaptchaEnterprise(e) && !Object(T.d)(e),
 				D = e => !!Object(S.c)(e, {
 					experimentEligibilitySelector: Object(I.d)(Object(I.b)(...a.d)),
-					experimentName: b.af
+					experimentName: b.bf
 				}),
 				w = Object(r.b)("LOAD_RECAPTCHA_ENTERPRISE"),
 				C = () => u(e => p()([j, D, e => e.tracking.reCaptchaEnterprise.load === r.a.New], t => t(e)))(async e => {
@@ -4164,7 +4164,7 @@
 								postFieldValidationPending: Promise.resolve()
 							})), Object(l.b)(N)
 						}
-						await t(Object(r.b)(`${n.path}`)), f ? f === p.De.NewModule && t(Object(d.h)({
+						await t(Object(r.b)(`${n.path}`)), f ? f === p.Ee.NewModule && t(Object(d.h)({
 							tooltipId: u.MOD_WELCOME_TOOLTIP_ID
 						})) : (t(Object(c.h)(b.a.POST_FLOW_UPSELL_MODAL_ID)), Object(w.a)(Object(_.g)()(A))), Object(E.b)(E.a.SubredditCreation), t(Object(C.f)(a, null !== (O = Object(D.bb)(A)) && void 0 !== O ? O : Object(S.j)(A)))
 					} else k.error && Object(w.a)(Object(_.h)(k.error.type, P)(A)), t(U({
@@ -5857,9 +5857,9 @@
 					experimentEligibilitySelector: H.a,
 					experimentName: V.kc
 				}), Q.a),
-				K = Object(W.a)($, e => e === V.Ic.Treatment1 || e === V.Ic.Treatment2),
-				Y = Object(W.a)($, e => e === V.Ic.Treatment1);
-			Object(W.a)($, e => e === V.Ic.Treatment2);
+				K = Object(W.a)($, e => e === V.Jc.Treatment1 || e === V.Jc.Treatment2),
+				Y = Object(W.a)($, e => e === V.Jc.Treatment1);
+			Object(W.a)($, e => e === V.Jc.Treatment2);
 			var z = n("./src/reddit/hooks/useLocalStorage.ts");
 			const X = () => {
 				const e = Object(a.e)(Y),
@@ -27276,8 +27276,8 @@
 				a = n("./node_modules/reselect/es/index.js");
 			const o = Object(a.a)(e => Object(s.c)(e, {
 				experimentEligibilitySelector: s.a,
-				experimentName: r.wc
-			}), e => e === r.yd)
+				experimentName: r.xc
+			}), e => e === r.zd)
 		},
 		"./src/reddit/selectors/removedPosts.ts": function(e, t, n) {
 			"use strict";
@@ -27612,4 +27612,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit.a258b8376113584230c8.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit.9142229b0bf84ac019e7.js.map

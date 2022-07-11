@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModQueue.e6af4930107c9328735f.js
-// Retrieved at 7/7/2022, 4:10:13 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModQueue.07bfd9bb821e0f3af213.js
+// Retrieved at 7/11/2022, 7:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModQueue"], {
 		"./src/reddit/actions/bulkActions/index.ts": function(e, t, s) {
@@ -345,9 +345,9 @@
 			var A = s("./src/reddit/models/ModQueue/index.ts"),
 				x = s("./src/reddit/models/Toast/index.ts"),
 				I = s("./src/reddit/selectors/modQueue.ts"),
-				N = s("./src/reddit/selectors/subreddit.ts"),
-				M = s("./src/reddit/selectors/telemetry.ts"),
-				P = s("./src/telemetry/index.ts"),
+				P = s("./src/reddit/selectors/subreddit.ts"),
+				N = s("./src/reddit/selectors/telemetry.ts"),
+				M = s("./src/telemetry/index.ts"),
 				C = s("./src/lib/initializeClient/installReducer.ts"),
 				L = s("./src/reddit/reducers/pages/modHub/index.ts"),
 				w = s("./src/reddit/actions/modQueue/constants.ts");
@@ -578,35 +578,35 @@
 						j = p.user.account && p.user.account.displayText;
 					Object(l.d)(l.a.ModQueue);
 					const _ = Object(l.c)(l.a.ModQueue);
-					Object(P.a)({
+					Object(M.a)({
 						source: "bulk_mod_action_menu",
 						action: "click",
 						noun: e,
-						...M.n(p),
-						actionInfo: M.d(p, {
+						...N.n(p),
+						actionInfo: N.d(p, {
 							count: f.length,
 							paneName: p.platform.currentPage ? p.platform.currentPage.urlParams.pageName : void 0
 						}),
-						screen: M.Z(p),
+						screen: N.Z(p),
 						correlationId: _
 					});
 					for (let t = 0; t < f.length; t++) {
 						const s = f[t];
 						let o = e;
-						[A.a.Approve, A.a.Remove, A.a.Spam].includes(e) && (Object(O.a)(s) ? o += "_link" : o += "_comment"), Object(P.a)({
+						[A.a.Approve, A.a.Remove, A.a.Spam].includes(e) && (Object(O.a)(s) ? o += "_link" : o += "_comment"), Object(M.a)({
 							source: "bulk_mod_action",
 							action: "click",
 							noun: o,
-							...M.n(p),
-							actionInfo: M.d(p, {
+							...N.n(p),
+							actionInfo: N.d(p, {
 								count: f.length,
 								paneName: p.platform.currentPage ? p.platform.currentPage.urlParams.pageName : void 0
 							}),
-							comment: M.h(p, s),
-							post: M.I(p, s),
-							profile: M.T(p, s),
-							screen: M.Z(p),
-							subreddit: M.kb(p, s),
+							comment: N.h(p, s),
+							post: N.I(p, s),
+							profile: N.T(p, s),
+							screen: N.Z(p),
+							subreddit: N.kb(p, s),
 							correlationId: _
 						})
 					}
@@ -725,7 +725,7 @@
 						if (e !== A.a.Approve && e !== A.a.Flair) {
 							let t, n;
 							const d = p.platform.currentPage && p.platform.currentPage.queryParams && p.platform.currentPage.queryParams.subreddit,
-								m = d && Object(N.F)(p, d);
+								m = d && Object(P.F)(p, d);
 							e === A.a.Remove && m && f.length > 1 && (t = o.fbt._("Add a removal reason", null, {
 								hk: "3gGDCl"
 							}), n = Object(c.fetchReasonsAndOpenModal)(m, f));
@@ -1047,9 +1047,9 @@
 				A = s("./src/lib/makeCommentsPageKey/index.ts"),
 				x = s("./src/lib/makeDraftKey/index.ts"),
 				I = s("./src/reddit/actions/bulkActions/index.ts"),
-				N = s("./src/reddit/actions/comment/index.ts"),
-				M = s("./src/reddit/actions/comment/authoring.ts"),
-				P = s("./src/reddit/actions/comment/moderation.ts"),
+				P = s("./src/reddit/actions/comment/index.ts"),
+				N = s("./src/reddit/actions/comment/authoring.ts"),
+				M = s("./src/reddit/actions/comment/moderation.ts"),
 				C = s("./src/reddit/actions/modal.ts"),
 				L = s("./src/reddit/actions/post.ts"),
 				w = s("./src/reddit/actions/toaster.ts"),
@@ -1193,7 +1193,7 @@
 						m = e[0],
 						l = Object(H.a)(m) ? z.e.Post : z.e.Comment,
 						b = l === z.e.Post ? i.posts.models[m] : i.features.comments.models[m],
-						p = l === z.e.Post ? L.S : N.j;
+						p = l === z.e.Post ? L.S : P.j;
 					if (!b || !u) return !1;
 					n(Oe()), n(p({
 						[m]: {
@@ -1219,7 +1219,7 @@
 								},
 								a = await U(c(), Object(z.h)(r, l), l);
 							if (a.ok) {
-								if (o === z.f.Public) {
+								if ([z.f.Public, z.f.PublicSubreddit].includes(o)) {
 									if (n(Re()), a.body) {
 										const e = Object(V.a)(a.body),
 											t = {
@@ -1234,7 +1234,7 @@
 												hasSortParam: !0
 											})), l === z.e.Post) {
 											const s = Object(x.a)(K.c.replyToPost, m);
-											n(Object(M.q)({
+											n(Object(N.q)({
 												...t,
 												headCommentId: Object(J.w)(i, {
 													commentsPageKey: r
@@ -1243,11 +1243,11 @@
 												draftKey: s
 											}));
 											const o = i.postStickiedComments.data[m];
-											n(Object(P.f)({
+											n(Object(M.f)({
 												id: e.id,
 												postId: e.postId,
 												commentsPageKey: r
-											})), o && o !== e.id && n(Object(N.j)({
+											})), o && o !== e.id && n(Object(P.j)({
 												[o]: {
 													isStickied: !1
 												}
@@ -1258,7 +1258,7 @@
 													commentId: m,
 													commentsPageKey: r
 												});
-											n(Object(M.o)({
+											n(Object(N.o)({
 												...t,
 												parentCommentId: m,
 												commentsPageKey: r,
@@ -1429,7 +1429,7 @@
 				d = 100;
 			var c, i;
 			! function(e) {
-				e.Private = "private", e.PrivateExposed = "private_exposed", e.Public = "public"
+				e.Private = "private", e.PrivateExposed = "private_exposed", e.Public = "public", e.PublicSubreddit = "public_subreddit"
 			}(c || (c = {})),
 			function(e) {
 				e.Bulk = "bulk", e.Comment = "comment", e.Post = "link"
@@ -1440,7 +1440,8 @@
 						[t === i.Bulk ? "item_ids" : "item_id"]: e.itemId,
 						message: e.message,
 						title: e.title,
-						type: e.type
+						type: e.type === c.PublicSubreddit ? c.Public : e.type,
+						use_proxy: e.type === c.PublicSubreddit
 					}
 				}
 		},
@@ -1514,4 +1515,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModQueue.e6af4930107c9328735f.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModQueue.07bfd9bb821e0f3af213.js.map
