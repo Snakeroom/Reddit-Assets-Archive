@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-SubscriptionModal.98b0f87af84829559181.js
-// Retrieved at 5/10/2022, 2:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-SubscriptionModal.94d7ace8c5868951fd7f.js
+// Retrieved at 7/12/2022, 6:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Governance-TransactionModals-SubscriptionModal"], {
 		"./node_modules/dijkstrajs/dijkstra.js": function(e, t, r) {
@@ -524,13 +524,13 @@
 						var A = E < d ? h : m;
 						b[E] = _.slice(v, v + A), y[E] = p.encode(b[E]), v += A, w = Math.max(w, A)
 					}
-					var j, T, B = n.alloc(i),
-						P = 0;
+					var j, T, x = n.alloc(i),
+						B = 0;
 					for (j = 0; j < w; j++)
-						for (T = 0; T < u; T++) j < b[T].length && (B[P++] = b[T][j]);
+						for (T = 0; T < u; T++) j < b[T].length && (x[B++] = b[T][j]);
 					for (j = 0; j < g; j++)
-						for (T = 0; T < u; T++) B[P++] = y[T][j];
-					return B
+						for (T = 0; T < u; T++) x[B++] = y[T][j];
+					return x
 				}(i, e, t)
 			}
 
@@ -1300,10 +1300,10 @@
 				A = r("./src/reddit/components/UserIcon/CurrentUserIcon.tsx"),
 				j = r("./src/reddit/selectors/economics.ts"),
 				T = r("./src/reddit/selectors/subreddit.ts"),
-				B = r("./src/reddit/components/Governance/TransactionModals/ApprovalModal/Details.tsx"),
-				P = r("./src/reddit/components/Governance/TransactionModals/ApprovalModal/Overview.tsx"),
-				x = r("./src/reddit/components/Governance/TransactionModals/SubscriptionModal/Approval.m.less"),
-				C = r.n(x);
+				x = r("./src/reddit/components/Governance/TransactionModals/ApprovalModal/Details.tsx"),
+				B = r("./src/reddit/components/Governance/TransactionModals/ApprovalModal/Overview.tsx"),
+				P = r("./src/reddit/components/Governance/TransactionModals/SubscriptionModal/Approval.m.less"),
+				C = r.n(P);
 
 			function I(e) {
 				const t = Object(s.e)(t => Object(T.U)(t, e)),
@@ -1311,7 +1311,7 @@
 					o = r.membershipAlt,
 					a = r.prices.points,
 					u = `${_.a.assetPath}/img/memberships/paywall/${t.name.toLowerCase()}/membership_frame.svg`;
-				return i.a.createElement(P.a, {
+				return i.a.createElement(B.a, {
 					subredditId: e.subredditId,
 					image: i.a.createElement("div", {
 						className: C.a.membershipFrame
@@ -1332,10 +1332,10 @@
 					})
 				})
 			}
-			const M = e => i.a.createElement(B.b, {
+			const M = e => i.a.createElement(x.b, {
 				values: [
-					[Object(B.c)(), e.transaction.arguments[0]],
-					[Object(B.a)(), e.transaction.contractAddress]
+					[Object(x.c)(), e.transaction.arguments[0]],
+					[Object(x.a)(), e.transaction.contractAddress]
 				]
 			});
 
@@ -1469,7 +1469,21 @@
 				} = Object(n.useContext)(o.a);
 				return e
 			}
+		},
+		"./src/reddit/selectors/experiments/mainnet.ts": function(e, t, r) {
+			"use strict";
+			r.d(t, "a", (function() {
+				return i
+			}));
+			var n = r("./src/reddit/constants/experiments.ts"),
+				o = r("./src/reddit/helpers/chooseVariant/index.ts");
+			const i = e => {
+				return Object(o.c)(e, {
+					experimentEligibilitySelector: o.a,
+					experimentName: n.he
+				}) === n.zd
+			}
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-SubscriptionModal.98b0f87af84829559181.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-SubscriptionModal.94d7ace8c5868951fd7f.js.map

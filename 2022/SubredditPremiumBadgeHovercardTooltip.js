@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditPremiumBadgeHovercardTooltip.8db266b9be3637c83e1a.js
-// Retrieved at 6/30/2022, 12:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditPremiumBadgeHovercardTooltip.7806152bb94df9079277.js
+// Retrieved at 7/12/2022, 6:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditPremiumBadgeHovercardTooltip"], {
 		"./node_modules/lodash/_arrayShuffle.js": function(e, t, r) {
@@ -2506,37 +2506,43 @@
 					}
 				},
 				d = r("./src/reddit/actions/governance/constants.ts");
-			const c = {},
-				l = {
+			const c = 15e4,
+				l = {},
+				u = {
 					filled: "img/communityPoints/default_filled.png",
 					grey: "img/communityPoints/default_grey.png"
 				};
 
-			function u(e) {
+			function m(e) {
 				var t, r, n, s, i;
 				const o = null === (t = e.walletProvider) || void 0 === t ? void 0 : t.extra,
 					a = null == o ? void 0 : o.contracts,
 					d = null == a ? void 0 : a.unlocked,
-					c = null !== (n = null === (r = e.walletProvider) || void 0 === r ? void 0 : r.provider) && void 0 !== n ? n : e.provider,
-					u = !!(null === (s = e.walletProvider) || void 0 === s ? void 0 : s.inTransition),
-					m = (null == d ? void 0 : d.decimals) || 0,
-					f = "1" + "0".repeat(m);
+					l = null !== (n = null === (r = e.walletProvider) || void 0 === r ? void 0 : r.provider) && void 0 !== n ? n : e.provider,
+					m = !!(null === (s = e.walletProvider) || void 0 === s ? void 0 : s.inTransition),
+					f = null == o ? void 0 : o.metaTransactions,
+					p = (null == f ? void 0 : f.allowedContractMethods) || {},
+					b = (null == f ? void 0 : f.gasLimit) || c,
+					h = (null == d ? void 0 : d.decimals) || 0,
+					y = "1" + "0".repeat(h);
 				return {
-					blockchainProvider: c,
+					allowedContractMethods: p,
+					blockchainProvider: l,
 					contractAddress: (null == d ? void 0 : d.address) || "",
 					contracts: a,
-					decimals: m,
-					displayConversion: f,
-					images: e.images || l,
-					inTransition: u,
+					decimals: h,
+					displayConversion: y,
+					gasLimit: b,
+					images: e.images || u,
+					inTransition: m,
 					name: e.name,
 					nomenclature: null === (i = e.extra) || void 0 === i ? void 0 : i.nomenclature,
 					polls: e.polls,
 					symbol: (null == d ? void 0 : d.token) || ""
 				}
 			}
-			var m = function() {
-				let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : c,
+			var f = function() {
+				let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : l,
 					t = arguments.length > 1 ? arguments[1] : void 0;
 				switch (t.type) {
 					case d.a: {
@@ -2546,16 +2552,16 @@
 						} = t.payload;
 						return {
 							...e,
-							[r]: u(n)
+							[r]: m(n)
 						}
 					}
 					default:
 						return e
 				}
 			};
-			const f = {};
-			var p = function() {
-				let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : f,
+			const p = {};
+			var b = function() {
+				let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : p,
 					t = arguments.length > 1 ? arguments[1] : void 0;
 				switch (t.type) {
 					case d.n: {
@@ -2582,8 +2588,8 @@
 			};
 			t.a = Object(n.c)({
 				claims: a,
-				points: m,
-				publicWallets: p
+				points: f,
+				publicWallets: b
 			})
 		},
 		"./src/reddit/selectors/crypto/wallet.ts": function(e, t, r) {
@@ -2950,4 +2956,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditPremiumBadgeHovercardTooltip.8db266b9be3637c83e1a.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditPremiumBadgeHovercardTooltip.7806152bb94df9079277.js.map

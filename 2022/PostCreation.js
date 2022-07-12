@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostCreation.63a0129ff1f24470856e.js
-// Retrieved at 7/11/2022, 7:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostCreation.da7c230f7684739732e3.js
+// Retrieved at 7/12/2022, 6:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostCreation", "ChatMessageInput~MembershipPaywallPage~RichTextEditor", "ContributorRequestButton"], {
 		"./node_modules/autosize/dist/autosize.js": function(e, t, n) {
@@ -33704,37 +33704,43 @@
 					}
 				},
 				c = n("./src/reddit/actions/governance/constants.ts");
-			const l = {},
-				d = {
+			const l = 15e4,
+				d = {},
+				u = {
 					filled: "img/communityPoints/default_filled.png",
 					grey: "img/communityPoints/default_grey.png"
 				};
 
-			function u(e) {
+			function p(e) {
 				var t, n, o, s, r;
 				const i = null === (t = e.walletProvider) || void 0 === t ? void 0 : t.extra,
 					a = null == i ? void 0 : i.contracts,
 					c = null == a ? void 0 : a.unlocked,
-					l = null !== (o = null === (n = e.walletProvider) || void 0 === n ? void 0 : n.provider) && void 0 !== o ? o : e.provider,
-					u = !!(null === (s = e.walletProvider) || void 0 === s ? void 0 : s.inTransition),
-					p = (null == c ? void 0 : c.decimals) || 0,
-					m = "1" + "0".repeat(p);
+					d = null !== (o = null === (n = e.walletProvider) || void 0 === n ? void 0 : n.provider) && void 0 !== o ? o : e.provider,
+					p = !!(null === (s = e.walletProvider) || void 0 === s ? void 0 : s.inTransition),
+					m = null == i ? void 0 : i.metaTransactions,
+					h = (null == m ? void 0 : m.allowedContractMethods) || {},
+					b = (null == m ? void 0 : m.gasLimit) || l,
+					f = (null == c ? void 0 : c.decimals) || 0,
+					g = "1" + "0".repeat(f);
 				return {
-					blockchainProvider: l,
+					allowedContractMethods: h,
+					blockchainProvider: d,
 					contractAddress: (null == c ? void 0 : c.address) || "",
 					contracts: a,
-					decimals: p,
-					displayConversion: m,
-					images: e.images || d,
-					inTransition: u,
+					decimals: f,
+					displayConversion: g,
+					gasLimit: b,
+					images: e.images || u,
+					inTransition: p,
 					name: e.name,
 					nomenclature: null === (r = e.extra) || void 0 === r ? void 0 : r.nomenclature,
 					polls: e.polls,
 					symbol: (null == c ? void 0 : c.token) || ""
 				}
 			}
-			var p = function() {
-				let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : l,
+			var m = function() {
+				let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : d,
 					t = arguments.length > 1 ? arguments[1] : void 0;
 				switch (t.type) {
 					case c.a: {
@@ -33744,16 +33750,16 @@
 						} = t.payload;
 						return {
 							...e,
-							[n]: u(o)
+							[n]: p(o)
 						}
 					}
 					default:
 						return e
 				}
 			};
-			const m = {};
-			var h = function() {
-				let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : m,
+			const h = {};
+			var b = function() {
+				let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : h,
 					t = arguments.length > 1 ? arguments[1] : void 0;
 				switch (t.type) {
 					case c.n: {
@@ -33780,8 +33786,8 @@
 			};
 			t.a = Object(o.c)({
 				claims: a,
-				points: p,
-				publicWallets: h
+				points: m,
+				publicWallets: b
 			})
 		},
 		"./src/reddit/selectors/crypto/points.ts": function(e, t, n) {
@@ -34399,4 +34405,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.63a0129ff1f24470856e.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.da7c230f7684739732e3.js.map

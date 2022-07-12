@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/HarbergerTaxBannerPurchaseCTA.92e1874422c07ec65529.js
-// Retrieved at 5/19/2022, 5:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/HarbergerTaxBannerPurchaseCTA.0292378bcf8bcde68075.js
+// Retrieved at 7/12/2022, 6:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["HarbergerTaxBannerPurchaseCTA"], {
 		"./src/reddit/actions/economics/claims/constants.ts": function(e, t, n) {
@@ -716,37 +716,43 @@
 					}
 				},
 				d = n("./src/reddit/actions/governance/constants.ts");
-			const u = {},
-				a = {
+			const u = 15e4,
+				a = {},
+				l = {
 					filled: "img/communityPoints/default_filled.png",
 					grey: "img/communityPoints/default_grey.png"
 				};
 
-			function l(e) {
+			function _(e) {
 				var t, n, r, i, s;
 				const o = null === (t = e.walletProvider) || void 0 === t ? void 0 : t.extra,
 					c = null == o ? void 0 : o.contracts,
 					d = null == c ? void 0 : c.unlocked,
-					u = null !== (r = null === (n = e.walletProvider) || void 0 === n ? void 0 : n.provider) && void 0 !== r ? r : e.provider,
-					l = !!(null === (i = e.walletProvider) || void 0 === i ? void 0 : i.inTransition),
-					_ = (null == d ? void 0 : d.decimals) || 0,
-					b = "1" + "0".repeat(_);
+					a = null !== (r = null === (n = e.walletProvider) || void 0 === n ? void 0 : n.provider) && void 0 !== r ? r : e.provider,
+					_ = !!(null === (i = e.walletProvider) || void 0 === i ? void 0 : i.inTransition),
+					b = null == o ? void 0 : o.metaTransactions,
+					E = (null == b ? void 0 : b.allowedContractMethods) || {},
+					f = (null == b ? void 0 : b.gasLimit) || u,
+					m = (null == d ? void 0 : d.decimals) || 0,
+					O = "1" + "0".repeat(m);
 				return {
-					blockchainProvider: u,
+					allowedContractMethods: E,
+					blockchainProvider: a,
 					contractAddress: (null == d ? void 0 : d.address) || "",
 					contracts: c,
-					decimals: _,
-					displayConversion: b,
-					images: e.images || a,
-					inTransition: l,
+					decimals: m,
+					displayConversion: O,
+					gasLimit: f,
+					images: e.images || l,
+					inTransition: _,
 					name: e.name,
 					nomenclature: null === (s = e.extra) || void 0 === s ? void 0 : s.nomenclature,
 					polls: e.polls,
 					symbol: (null == d ? void 0 : d.token) || ""
 				}
 			}
-			var _ = function() {
-				let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : u,
+			var b = function() {
+				let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : a,
 					t = arguments.length > 1 ? arguments[1] : void 0;
 				switch (t.type) {
 					case d.a: {
@@ -756,16 +762,16 @@
 						} = t.payload;
 						return {
 							...e,
-							[n]: l(r)
+							[n]: _(r)
 						}
 					}
 					default:
 						return e
 				}
 			};
-			const b = {};
-			var E = function() {
-				let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : b,
+			const E = {};
+			var f = function() {
+				let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : E,
 					t = arguments.length > 1 ? arguments[1] : void 0;
 				switch (t.type) {
 					case d.n: {
@@ -792,8 +798,8 @@
 			};
 			t.a = Object(r.c)({
 				claims: c,
-				points: _,
-				publicWallets: E
+				points: b,
+				publicWallets: f
 			})
 		},
 		"./src/reddit/selectors/crypto/points.ts": function(e, t, n) {
@@ -920,4 +926,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/HarbergerTaxBannerPurchaseCTA.92e1874422c07ec65529.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/HarbergerTaxBannerPurchaseCTA.0292378bcf8bcde68075.js.map

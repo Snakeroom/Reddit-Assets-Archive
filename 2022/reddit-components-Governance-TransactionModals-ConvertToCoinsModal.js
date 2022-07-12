@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-ConvertToCoinsModal.e3a63e542a5487f22f41.js
-// Retrieved at 6/30/2022, 12:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-ConvertToCoinsModal.ef637220c31e251434e8.js
+// Retrieved at 7/12/2022, 6:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Governance-TransactionModals-ConvertToCoinsModal"], {
 		"./src/reddit/actions/gold/econPurchase.ts": function(e, t, n) {
@@ -2216,6 +2216,20 @@
 				subredditLockedCoins: s
 			})
 		},
+		"./src/reddit/selectors/experiments/mainnet.ts": function(e, t, n) {
+			"use strict";
+			n.d(t, "a", (function() {
+				return c
+			}));
+			var r = n("./src/reddit/constants/experiments.ts"),
+				a = n("./src/reddit/helpers/chooseVariant/index.ts");
+			const c = e => {
+				return Object(a.c)(e, {
+					experimentEligibilitySelector: a.a,
+					experimentName: r.he
+				}) === r.zd
+			}
+		},
 		"./src/reddit/selectors/gold/econPurchase.ts": function(e, t, n) {
 			"use strict";
 			n.d(t, "a", (function() {
@@ -2417,4 +2431,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-ConvertToCoinsModal.e3a63e542a5487f22f41.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-ConvertToCoinsModal.ef637220c31e251434e8.js.map

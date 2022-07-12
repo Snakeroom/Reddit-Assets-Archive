@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/GovernanceWalletRegistration.a7b492a42bd23e77c25c.js
-// Retrieved at 6/21/2022, 7:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/GovernanceWalletRegistration.ae31f14fbd861f9176cc.js
+// Retrieved at 7/12/2022, 6:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["GovernanceWalletRegistration"], {
 		"./src/chat/controls/Svg/index.m.less": function(e, t, n) {
@@ -240,8 +240,8 @@
 				j = Object(a.a)(C.r),
 				I = Object(a.a)(C.s),
 				M = Object(a.a)(C.t),
-				A = Object(a.a)(C.u),
-				T = Object(a.a)(C.v),
+				T = Object(a.a)(C.u),
+				A = Object(a.a)(C.v),
 				S = Object(a.a)(C.w),
 				R = Object(a.a)(C.x),
 				P = (e, t) => async (n, r, a) => {
@@ -326,9 +326,9 @@
 					let {
 						apiContext: a
 					} = r;
-					t(T());
+					t(A());
 					const s = await Object(p.a)(a(), e);
-					s.ok ? t(S(s.body)) : t(A({
+					s.ok ? t(S(s.body)) : t(T({
 						error: s.error
 					}))
 				}
@@ -684,8 +684,8 @@
 				j = n("./src/reddit/components/Governance/WalletRegistration/Common/pageReload.ts");
 			const {
 				fbt: I
-			} = n("./node_modules/fbt/lib/FbtPublic.js"), M = "https://metamask.io/", A = "https://chrome.google.com/webstore/detail/metamask/nkbihfbeogaeaoehlefnkodbefgpgknn";
-			class T extends a.a.Component {
+			} = n("./node_modules/fbt/lib/FbtPublic.js"), M = "https://metamask.io/", T = "https://chrome.google.com/webstore/detail/metamask/nkbihfbeogaeaoehlefnkodbefgpgknn";
+			class A extends a.a.Component {
 				constructor() {
 					super(...arguments), this.state = {
 						clickedInstallButton: !1,
@@ -747,7 +747,7 @@
 						className: g.a.buttonIcon
 					})) : a.a.createElement(f.p, {
 						className: g.a.button,
-						href: A,
+						href: T,
 						target: "_blank",
 						onClick: () => this.setState({
 							clickedInstallButton: !0
@@ -1099,7 +1099,7 @@
 						subredditId: r
 					} = this.props, {
 						activeTab: s
-					} = this.state, i = s === J.About ? x : s === J.MetaMask ? T : s === J.Wallet ? X : s === J.Connect ? k : s === J.Verify ? q : P;
+					} = this.state, i = s === J.About ? x : s === J.MetaMask ? A : s === J.Wallet ? X : s === J.Connect ? k : s === J.Verify ? q : P;
 					return a.a.createElement("article", {
 						className: Object(o.a)(Y.a.container, e)
 					}, a.a.createElement(Q.a, {
@@ -1272,9 +1272,9 @@
 			})), n.d(t, "r", (function() {
 				return M
 			})), n.d(t, "a", (function() {
-				return A
-			})), n.d(t, "s", (function() {
 				return T
+			})), n.d(t, "s", (function() {
+				return A
 			})), n.d(t, "c", (function() {
 				return S
 			}));
@@ -1315,8 +1315,8 @@
 				j = a.a.textarea("TextArea", u.a),
 				I = a.a.wrapped(i.l, "WarningButton", u.a),
 				M = a.a.wrapped(i.l, "PrimaryButton", u.a),
-				A = a.a.wrapped(i.o, "CancelButton", u.a),
-				T = a.a.wrapped(i.r, "RemoveButton", u.a),
+				T = a.a.wrapped(i.o, "CancelButton", u.a),
+				A = a.a.wrapped(i.r, "RemoveButton", u.a),
 				S = e => {
 					let {
 						className: t,
@@ -1946,37 +1946,43 @@
 					}
 				},
 				c = n("./src/reddit/actions/governance/constants.ts");
-			const d = {},
-				l = {
+			const d = 15e4,
+				l = {},
+				u = {
 					filled: "img/communityPoints/default_filled.png",
 					grey: "img/communityPoints/default_grey.png"
 				};
 
-			function u(e) {
+			function m(e) {
 				var t, n, r, a, s;
 				const o = null === (t = e.walletProvider) || void 0 === t ? void 0 : t.extra,
 					i = null == o ? void 0 : o.contracts,
 					c = null == i ? void 0 : i.unlocked,
-					d = null !== (r = null === (n = e.walletProvider) || void 0 === n ? void 0 : n.provider) && void 0 !== r ? r : e.provider,
-					u = !!(null === (a = e.walletProvider) || void 0 === a ? void 0 : a.inTransition),
-					m = (null == c ? void 0 : c.decimals) || 0,
-					b = "1" + "0".repeat(m);
+					l = null !== (r = null === (n = e.walletProvider) || void 0 === n ? void 0 : n.provider) && void 0 !== r ? r : e.provider,
+					m = !!(null === (a = e.walletProvider) || void 0 === a ? void 0 : a.inTransition),
+					b = null == o ? void 0 : o.metaTransactions,
+					p = (null == b ? void 0 : b.allowedContractMethods) || {},
+					h = (null == b ? void 0 : b.gasLimit) || d,
+					f = (null == c ? void 0 : c.decimals) || 0,
+					v = "1" + "0".repeat(f);
 				return {
-					blockchainProvider: d,
+					allowedContractMethods: p,
+					blockchainProvider: l,
 					contractAddress: (null == c ? void 0 : c.address) || "",
 					contracts: i,
-					decimals: m,
-					displayConversion: b,
-					images: e.images || l,
-					inTransition: u,
+					decimals: f,
+					displayConversion: v,
+					gasLimit: h,
+					images: e.images || u,
+					inTransition: m,
 					name: e.name,
 					nomenclature: null === (s = e.extra) || void 0 === s ? void 0 : s.nomenclature,
 					polls: e.polls,
 					symbol: (null == c ? void 0 : c.token) || ""
 				}
 			}
-			var m = function() {
-				let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : d,
+			var b = function() {
+				let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : l,
 					t = arguments.length > 1 ? arguments[1] : void 0;
 				switch (t.type) {
 					case c.a: {
@@ -1986,16 +1992,16 @@
 						} = t.payload;
 						return {
 							...e,
-							[n]: u(r)
+							[n]: m(r)
 						}
 					}
 					default:
 						return e
 				}
 			};
-			const b = {};
-			var p = function() {
-				let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : b,
+			const p = {};
+			var h = function() {
+				let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : p,
 					t = arguments.length > 1 ? arguments[1] : void 0;
 				switch (t.type) {
 					case c.n: {
@@ -2022,8 +2028,8 @@
 			};
 			t.a = Object(r.c)({
 				claims: i,
-				points: m,
-				publicWallets: p
+				points: b,
+				publicWallets: h
 			})
 		},
 		"./src/reddit/selectors/crypto/points.ts": function(e, t, n) {
@@ -2124,4 +2130,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/GovernanceWalletRegistration.a7b492a42bd23e77c25c.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/GovernanceWalletRegistration.ae31f14fbd861f9176cc.js.map

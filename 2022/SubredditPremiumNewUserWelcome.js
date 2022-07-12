@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditPremiumNewUserWelcome.8e2008f4ed9f5aeb7e46.js
-// Retrieved at 6/30/2022, 12:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditPremiumNewUserWelcome.d24217a7b193338c6023.js
+// Retrieved at 7/12/2022, 6:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditPremiumNewUserWelcome"], {
 		"./node_modules/lodash/flattenDeep.js": function(e, t, n) {
@@ -253,11 +253,11 @@
 		"./src/reddit/actions/economics/subredditPremium/thunkedActions.ts": function(e, t, n) {
 			"use strict";
 			n.d(t, "a", (function() {
-				return N
-			})), n.d(t, "g", (function() {
-				return S
-			})), n.d(t, "b", (function() {
 				return C
+			})), n.d(t, "g", (function() {
+				return N
+			})), n.d(t, "b", (function() {
+				return S
 			})), n.d(t, "d", (function() {
 				return v
 			})), n.d(t, "e", (function() {
@@ -300,7 +300,7 @@
 			function j(e) {
 				if (!y(e)) return e
 			}
-			const N = () => async (e, t, n) => {
+			const C = () => async (e, t, n) => {
 				let {
 					apiContext: r
 				} = n;
@@ -314,7 +314,7 @@
 					const t = await Object(i.e)(r(), o);
 					t.ok && e(Object(O.g)(t.body))
 				}
-			}, S = (e, t) => async (n, r, s) => {
+			}, N = (e, t) => async (n, r, s) => {
 				let {
 					apiContext: o
 				} = s;
@@ -325,7 +325,7 @@
 					const t = await Object(d.a)(o(), e, c.id);
 					n(Object(O.i)(t))
 				}
-			}, C = e => async (t, n, r) => {
+			}, S = e => async (t, n, r) => {
 				let {
 					apiContext: s
 				} = r;
@@ -351,11 +351,11 @@
 				let {
 					apiContext: o
 				} = s;
-				await n(S(e, !0));
+				await n(N(e, !0));
 				const c = r().economics.subredditPremium[e];
 				if (c && c.status === _.a.Fetched) {
 					const r = c.data.userOwnedBadges.find(e => e.type === t.id);
-					r && (n(C({
+					r && (n(S({
 						badge: r,
 						subredditId: e,
 						placement: r.placement
@@ -387,7 +387,7 @@
 				let {
 					apiContext: c
 				} = o;
-				if (await r(S(e, !0)), n && t) {
+				if (await r(N(e, !0)), n && t) {
 					const n = s(),
 						o = Object(g.f)(n, e),
 						c = Object(h.a)(n, t);
@@ -396,7 +396,7 @@
 							subredditId: e,
 							badge: c
 						});
-						t && await r(C({
+						t && await r(S({
 							badge: t,
 							subredditId: e
 						}))
@@ -415,7 +415,7 @@
 				} = await Object(i.c)(s(), e);
 				t(Object(O.f)({
 					wallet: o
-				})), await t(S(e.subredditId, !0))
+				})), await t(N(e.subredditId, !0))
 			}
 		},
 		"./src/reddit/actions/governance/constants.ts": function(e, t, n) {
@@ -461,11 +461,11 @@
 			})), n.d(t, "t", (function() {
 				return j
 			})), n.d(t, "u", (function() {
-				return N
-			})), n.d(t, "v", (function() {
-				return S
-			})), n.d(t, "w", (function() {
 				return C
+			})), n.d(t, "v", (function() {
+				return N
+			})), n.d(t, "w", (function() {
+				return S
 			})), n.d(t, "x", (function() {
 				return v
 			}));
@@ -489,9 +489,9 @@
 				O = "GOVERNANCE__TRANSFER_MODAL_OPENED",
 				y = "GOVERNANCE__TRANSFER_PENDING",
 				j = "GOVERNANCE__TRANSFER_SUCCESS",
-				N = "GOVERNANCE__WALLETS_FETCH_FAILURE",
-				S = "GOVERNANCE__WALLETS_FETCH_PENDING",
-				C = "GOVERNANCE__WALLETS_FETCH_SUCCESS",
+				C = "GOVERNANCE__WALLETS_FETCH_FAILURE",
+				N = "GOVERNANCE__WALLETS_FETCH_PENDING",
+				S = "GOVERNANCE__WALLETS_FETCH_SUCCESS",
 				v = "GOVERNANCE__WALLET_REGISTRATION_MODAL_OPENED"
 		},
 		"./src/reddit/actions/governance/errorToast.ts": function(e, t, n) {
@@ -722,24 +722,24 @@
 				O = n("./src/reddit/selectors/telemetry.ts"),
 				y = n("./node_modules/fbt/lib/FbtPublic.js"),
 				j = n("./src/reddit/icons/svgs/Admin/index.tsx"),
-				N = n("./src/reddit/components/Economics/SubredditPremium/NewUserWelcome/Header/index.m.less"),
-				S = n.n(N);
+				C = n("./src/reddit/components/Economics/SubredditPremium/NewUserWelcome/Header/index.m.less"),
+				N = n.n(C);
 
-			function C(e) {
+			function S(e) {
 				const {
 					className: t,
 					subreddit: n
 				} = e;
 				return s.a.createElement("header", {
-					className: Object(a.a)(t, S.a.container)
+					className: Object(a.a)(t, N.a.container)
 				}, s.a.createElement("div", {
-					className: S.a.tagline
+					className: N.a.tagline
 				}, s.a.createElement(j.a, {
-					className: S.a.adminIcon
+					className: N.a.adminIcon
 				}), y.fbt._("a note from reddit admins", null, {
 					hk: "3addaI"
 				})), s.a.createElement("div", {
-					className: S.a.title
+					className: N.a.title
 				}, y.fbt._("Welcome to r/{communityName}!", [y.fbt._param("communityName", n.name)], {
 					hk: "2LQnel"
 				})))
@@ -906,7 +906,7 @@
 						subreddit: O.hb(e)
 					}))), s.a.createElement("article", {
 						className: Object(a.a)(Z.a.container, e)
-					}, s.a.createElement(C, {
+					}, s.a.createElement(S, {
 						className: Z.a.header,
 						subreddit: n
 					}), s.a.createElement(w, {
@@ -1953,37 +1953,43 @@
 					}
 				},
 				d = n("./src/reddit/actions/governance/constants.ts");
-			const a = {},
-				u = {
+			const a = 15e4,
+				u = {},
+				l = {
 					filled: "img/communityPoints/default_filled.png",
 					grey: "img/communityPoints/default_grey.png"
 				};
 
-			function l(e) {
+			function m(e) {
 				var t, n, r, s, o;
 				const c = null === (t = e.walletProvider) || void 0 === t ? void 0 : t.extra,
 					i = null == c ? void 0 : c.contracts,
 					d = null == i ? void 0 : i.unlocked,
-					a = null !== (r = null === (n = e.walletProvider) || void 0 === n ? void 0 : n.provider) && void 0 !== r ? r : e.provider,
-					l = !!(null === (s = e.walletProvider) || void 0 === s ? void 0 : s.inTransition),
-					m = (null == d ? void 0 : d.decimals) || 0,
-					b = "1" + "0".repeat(m);
+					u = null !== (r = null === (n = e.walletProvider) || void 0 === n ? void 0 : n.provider) && void 0 !== r ? r : e.provider,
+					m = !!(null === (s = e.walletProvider) || void 0 === s ? void 0 : s.inTransition),
+					b = null == c ? void 0 : c.metaTransactions,
+					p = (null == b ? void 0 : b.allowedContractMethods) || {},
+					f = (null == b ? void 0 : b.gasLimit) || a,
+					_ = (null == d ? void 0 : d.decimals) || 0,
+					g = "1" + "0".repeat(_);
 				return {
-					blockchainProvider: a,
+					allowedContractMethods: p,
+					blockchainProvider: u,
 					contractAddress: (null == d ? void 0 : d.address) || "",
 					contracts: i,
-					decimals: m,
-					displayConversion: b,
-					images: e.images || u,
-					inTransition: l,
+					decimals: _,
+					displayConversion: g,
+					gasLimit: f,
+					images: e.images || l,
+					inTransition: m,
 					name: e.name,
 					nomenclature: null === (o = e.extra) || void 0 === o ? void 0 : o.nomenclature,
 					polls: e.polls,
 					symbol: (null == d ? void 0 : d.token) || ""
 				}
 			}
-			var m = function() {
-				let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : a,
+			var b = function() {
+				let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : u,
 					t = arguments.length > 1 ? arguments[1] : void 0;
 				switch (t.type) {
 					case d.a: {
@@ -1993,16 +1999,16 @@
 						} = t.payload;
 						return {
 							...e,
-							[n]: l(r)
+							[n]: m(r)
 						}
 					}
 					default:
 						return e
 				}
 			};
-			const b = {};
-			var p = function() {
-				let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : b,
+			const p = {};
+			var f = function() {
+				let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : p,
 					t = arguments.length > 1 ? arguments[1] : void 0;
 				switch (t.type) {
 					case d.n: {
@@ -2029,8 +2035,8 @@
 			};
 			t.a = Object(r.c)({
 				claims: i,
-				points: m,
-				publicWallets: p
+				points: b,
+				publicWallets: f
 			})
 		},
 		"./src/reddit/selectors/crypto/wallet.ts": function(e, t, n) {
@@ -2075,11 +2081,11 @@
 			})), n.d(t, "f", (function() {
 				return j
 			})), n.d(t, "i", (function() {
-				return N
-			})), n.d(t, "q", (function() {
-				return S
-			})), n.d(t, "h", (function() {
 				return C
+			})), n.d(t, "q", (function() {
+				return N
+			})), n.d(t, "h", (function() {
+				return S
 			})), n.d(t, "z", (function() {
 				return v
 			})), n.d(t, "l", (function() {
@@ -2180,15 +2186,15 @@
 					}
 				};
 
-			function N(e, t) {
+			function C(e, t) {
 				return (null == e ? void 0 : e.length) ? Object(s.a)(e.map(e => t[e]).filter(Boolean)) : g
 			}
-			const S = (e, t, n) => {
+			const N = (e, t, n) => {
 					var s;
 					if (!r.d.spBadges(e)) return g;
-					return N(null === (s = e.users.appliedBadges[n]) || void 0 === s ? void 0 : s[t], e.badges.models)
+					return C(null === (s = e.users.appliedBadges[n]) || void 0 === s ? void 0 : s[t], e.badges.models)
 				},
-				C = (e, t) => {
+				S = (e, t) => {
 					const n = e.economics.subredditPremium[t.subredditId];
 					if (n && n.status === l.a.Fetched) {
 						const e = n.raw.collections[t.collectionId];
@@ -2397,4 +2403,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditPremiumNewUserWelcome.8e2008f4ed9f5aeb7e46.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditPremiumNewUserWelcome.d24217a7b193338c6023.js.map

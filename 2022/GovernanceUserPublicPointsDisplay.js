@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/GovernanceUserPublicPointsDisplay.d377aff1f50b9b278954.js
-// Retrieved at 5/19/2022, 5:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/GovernanceUserPublicPointsDisplay.2fe73772d7ed82a425cb.js
+// Retrieved at 7/12/2022, 6:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["GovernanceUserPublicPointsDisplay"], {
 		"./src/lib/bigNumberUtils/percent.ts": function(e, t, n) {
@@ -87,9 +87,9 @@
 			})), n.d(t, "v", (function() {
 				return j
 			})), n.d(t, "w", (function() {
-				return T
-			})), n.d(t, "x", (function() {
 				return g
+			})), n.d(t, "x", (function() {
+				return T
 			}));
 			const r = "GOVERNANCE__COMMUNITY_DETAILS_SUCCESS",
 				o = "GOVERNANCE__NEW_SUBREDDIT_SUGGESTED",
@@ -113,8 +113,8 @@
 				h = "GOVERNANCE__TRANSFER_SUCCESS",
 				x = "GOVERNANCE__WALLETS_FETCH_FAILURE",
 				j = "GOVERNANCE__WALLETS_FETCH_PENDING",
-				T = "GOVERNANCE__WALLETS_FETCH_SUCCESS",
-				g = "GOVERNANCE__WALLET_REGISTRATION_MODAL_OPENED"
+				g = "GOVERNANCE__WALLETS_FETCH_SUCCESS",
+				T = "GOVERNANCE__WALLET_REGISTRATION_MODAL_OPENED"
 		},
 		"./src/reddit/actions/governance/errorToast.ts": function(e, t, n) {
 			"use strict";
@@ -146,9 +146,9 @@
 			})), n.d(t, "g", (function() {
 				return w
 			})), n.d(t, "d", (function() {
-				return G
-			})), n.d(t, "e", (function() {
 				return L
+			})), n.d(t, "e", (function() {
+				return G
 			})), n.d(t, "h", (function() {
 				return U
 			}));
@@ -174,8 +174,8 @@
 				h = Object(o.a)(E.e),
 				x = (Object(o.a)(E.f), Object(o.a)(E.g), Object(o.a)(E.h)),
 				j = Object(o.a)(E.i),
-				T = Object(o.a)(E.j),
-				g = Object(o.a)(E.k),
+				g = Object(o.a)(E.j),
+				T = Object(o.a)(E.k),
 				I = Object(o.a)(E.q),
 				C = Object(o.a)(E.r),
 				A = Object(o.a)(E.s),
@@ -184,13 +184,13 @@
 				R = Object(o.a)(E.v),
 				k = Object(o.a)(E.w),
 				w = Object(o.a)(E.x),
-				G = (e, t) => async (n, r, o) => {
+				L = (e, t) => async (n, r, o) => {
 					let s, {
 							apiContext: i,
 							gqlContext: d
 						} = o,
 						p = r().polls.models[e];
-					if (n(T({
+					if (n(g({
 							pollId: e
 						})), (s = p.type === l.a.GA ? await ((e, t, n) => Object(u.a)(e, {
 								...m,
@@ -216,7 +216,7 @@
 								optionId: t,
 								options: e
 							}))
-						} else n(g(s.body));
+						} else n(T(s.body));
 						const o = r();
 						if ((p = o.polls.models[e]) && Object(l.d)(p)) {
 							const {
@@ -228,7 +228,7 @@
 						pollId: e,
 						error: s.error || s.errors[0].message
 					})), Object(v.a)(n, s.error || s.errors[0].messsage)
-				}, L = (e, t) => async (n, o, c) => {
+				}, G = (e, t) => async (n, o, c) => {
 					let {
 						apiContext: u
 					} = c;
@@ -860,37 +860,43 @@
 					}
 				},
 				d = n("./src/reddit/actions/governance/constants.ts");
-			const a = {},
-				u = {
+			const a = 15e4,
+				u = {},
+				l = {
 					filled: "img/communityPoints/default_filled.png",
 					grey: "img/communityPoints/default_grey.png"
 				};
 
-			function l(e) {
+			function m(e) {
 				var t, n, r, o, s;
 				const i = null === (t = e.walletProvider) || void 0 === t ? void 0 : t.extra,
 					c = null == i ? void 0 : i.contracts,
 					d = null == c ? void 0 : c.unlocked,
-					a = null !== (r = null === (n = e.walletProvider) || void 0 === n ? void 0 : n.provider) && void 0 !== r ? r : e.provider,
-					l = !!(null === (o = e.walletProvider) || void 0 === o ? void 0 : o.inTransition),
-					m = (null == d ? void 0 : d.decimals) || 0,
-					b = "1" + "0".repeat(m);
+					u = null !== (r = null === (n = e.walletProvider) || void 0 === n ? void 0 : n.provider) && void 0 !== r ? r : e.provider,
+					m = !!(null === (o = e.walletProvider) || void 0 === o ? void 0 : o.inTransition),
+					b = null == i ? void 0 : i.metaTransactions,
+					p = (null == b ? void 0 : b.allowedContractMethods) || {},
+					f = (null == b ? void 0 : b.gasLimit) || a,
+					_ = (null == d ? void 0 : d.decimals) || 0,
+					O = "1" + "0".repeat(_);
 				return {
-					blockchainProvider: a,
+					allowedContractMethods: p,
+					blockchainProvider: u,
 					contractAddress: (null == d ? void 0 : d.address) || "",
 					contracts: c,
-					decimals: m,
-					displayConversion: b,
-					images: e.images || u,
-					inTransition: l,
+					decimals: _,
+					displayConversion: O,
+					gasLimit: f,
+					images: e.images || l,
+					inTransition: m,
 					name: e.name,
 					nomenclature: null === (s = e.extra) || void 0 === s ? void 0 : s.nomenclature,
 					polls: e.polls,
 					symbol: (null == d ? void 0 : d.token) || ""
 				}
 			}
-			var m = function() {
-				let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : a,
+			var b = function() {
+				let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : u,
 					t = arguments.length > 1 ? arguments[1] : void 0;
 				switch (t.type) {
 					case d.a: {
@@ -900,16 +906,16 @@
 						} = t.payload;
 						return {
 							...e,
-							[n]: l(r)
+							[n]: m(r)
 						}
 					}
 					default:
 						return e
 				}
 			};
-			const b = {};
-			var p = function() {
-				let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : b,
+			const p = {};
+			var f = function() {
+				let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : p,
 					t = arguments.length > 1 ? arguments[1] : void 0;
 				switch (t.type) {
 					case d.n: {
@@ -936,8 +942,8 @@
 			};
 			t.a = Object(r.c)({
 				claims: c,
-				points: m,
-				publicWallets: p
+				points: b,
+				publicWallets: f
 			})
 		},
 		"./src/reddit/selectors/crypto/points.ts": function(e, t, n) {
@@ -1015,4 +1021,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/GovernanceUserPublicPointsDisplay.d377aff1f50b9b278954.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/GovernanceUserPublicPointsDisplay.2fe73772d7ed82a425cb.js.map
