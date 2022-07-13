@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~Reddit~SubredditForkingCTA.2ec3dda1fa05be784695.js
-// Retrieved at 6/30/2022, 5:20:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~Reddit~SubredditForkingCTA.58746760cb927dc05a3e.js
+// Retrieved at 7/13/2022, 10:10:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~Reddit~SubredditForkingCTA"], {
 		"./src/lib/bigNumberUtils/percent.ts": function(t, e, r) {
@@ -52,7 +52,7 @@
 			}), u = r("./node_modules/fbt/lib/FbtPublic.js"), l = r("./src/reddit/models/Toast/index.ts"), b = r("./node_modules/reselect/es/index.js"), f = r("./src/reddit/constants/experiments.ts"), p = r("./src/reddit/helpers/chooseVariant/index.ts"), m = r("./src/reddit/selectors/user.ts");
 			const h = Object(b.a)(t => Object(p.c)(t, {
 				experimentEligibilitySelector: m.Q,
-				experimentName: f.cc
+				experimentName: f.bc
 			}), t => t === f.zd);
 			var O = r("./src/reddit/actions/toaster.ts");
 			const y = "SUBREDDIT_COUNTRY_SITE__LOADED",
@@ -249,9 +249,9 @@
 			})), r.d(e, "f", (function() {
 				return k
 			})), r.d(e, "g", (function() {
-				return R
-			})), r.d(e, "d", (function() {
 				return w
+			})), r.d(e, "d", (function() {
+				return R
 			})), r.d(e, "e", (function() {
 				return L
 			})), r.d(e, "h", (function() {
@@ -288,8 +288,8 @@
 				N = Object(n.a)(y.u),
 				D = Object(n.a)(y.v),
 				A = Object(n.a)(y.w),
-				R = Object(n.a)(y.x),
-				w = (t, e) => async (r, s, n) => {
+				w = Object(n.a)(y.x),
+				R = (t, e) => async (r, s, n) => {
 					let d, {
 							apiContext: i,
 							gqlContext: a
@@ -383,7 +383,7 @@
 			r.d(e, "f", (function() {
 				return A
 			})), r.d(e, "b", (function() {
-				return w
+				return R
 			})), r.d(e, "a", (function() {
 				return L
 			})), r.d(e, "c", (function() {
@@ -448,7 +448,7 @@
 							return n[e]
 						}).find(t => t.status !== y.a.SUCCESS);
 					e(d ? D(d.error) : N())
-				}, R = (t, e) => ({
+				}, w = (t, e) => ({
 					error: e ? {
 						type: t,
 						fields: [{
@@ -459,7 +459,7 @@
 						type: t
 					}
 				});
-			const w = "RTE",
+			const R = "RTE",
 				L = "GALLERY",
 				U = (t, e, r, n) => async (d, o, a) => {
 					let {
@@ -557,7 +557,7 @@
 								d = r && r.name,
 								o = await Object(O.h)(e) || e.type,
 								a = Object(O.c)(e) || void 0;
-							if (!a) return R("UNSUPPORTED_BROWSER");
+							if (!a) return w("UNSUPPORTED_BROWSER");
 							const c = {
 								localUrl: a,
 								mimetype: o
@@ -572,11 +572,11 @@
 									const t = s.fbt._("Images are not allowed in r/{subredditName}", [s.fbt._param("subredditName", d)], {
 										hk: "3C2E7Q"
 									});
-									return R(i.T, t)
+									return w(i.T, t)
 								}
 								if ("image/gif" === o) {
-									if (e.size > i.Z) return R(i.L)
-								} else if (e.size > i.bb) return R(i.R);
+									if (e.size > i.Z) return w(i.L)
+								} else if (e.size > i.bb) return w(i.R);
 								const t = await Object(h.a)(a);
 								c.width = t.width, c.height = t.height
 							} else if (o.startsWith("video/")) {
@@ -585,12 +585,12 @@
 										benefit: S.a.HdVideo
 									}),
 									l = o ? 2 * i.fb : i.fb;
-								if (e.size > l) return R(i.pc);
+								if (e.size > l) return w(i.pc);
 								let b;
 								try {
 									b = await Object(O.i)(a, !0)
 								} catch (u) {
-									return R(i.T)
+									return w(i.T)
 								}
 								if (n) {
 									const {
@@ -601,13 +601,13 @@
 										const t = s.fbt._("Sorry, r/{subredditName} doesn't allow videos. Please upload a video less than 60 seconds to convert to animated GIF.", [s.fbt._param("subredditName", d)], {
 											hk: "46ULiz"
 										});
-										return R(i.T, t)
+										return w(i.T, t)
 									}
 									if (!e && !t) {
 										const t = s.fbt._("Videos are not allowed in r/{subredditName}", [s.fbt._param("subredditName", d)], {
 											hk: "4uTUZb"
 										});
-										return R(i.T, t)
+										return w(i.T, t)
 									}
 								}
 								const f = o ? 2 * i.eb : i.eb;
@@ -615,31 +615,31 @@
 									const t = s.fbt._("Video is too long. Maximum video length is {duration} minutes.", [s.fbt._param("duration", (f / 60).toString())], {
 										hk: "20nB6Q"
 									});
-									return R(i.T, t)
+									return w(i.T, t)
 								}
 								if (b.duration < i.mb) {
 									const t = s.fbt._("Video is too short. Minimum video length is {duration} seconds.", [s.fbt._param("duration", i.mb.toString())], {
 										hk: "49PSW8"
 									});
-									return R(i.T, t)
+									return w(i.T, t)
 								}
 								if (0 === b.height || 0 === b.width) {
 									const t = s.fbt._("Your browser does not support the video codec used for this video. Please try using a different video codec.", null, {
 										hk: "1AC0mg"
 									});
-									return R(i.T, t)
+									return w(i.T, t)
 								}
 								if (b.height < i.nb || b.width < i.ob) {
 									const t = s.fbt._("Videos must be {min_video_width}x{min_video_height} pixels or larger.", [s.fbt._param("min_video_width", i.ob.toString()), s.fbt._param("min_video_height", i.nb.toString())], {
 										hk: "2HSUGl"
 									});
-									return R(i.T, t)
+									return w(i.T, t)
 								}
 								if (e.size / b.duration < i.lb) {
 									const t = s.fbt._("Videos must have a bitrate of {min_bitrate}KB/s or larger.", [s.fbt._param("min_bitrate", (i.lb / i.U).toString())], {
 										hk: "1ehgDE"
 									});
-									return R(i.T, t)
+									return w(i.T, t)
 								}
 								c.height = b.height, c.width = b.width, c.videoDuration = b.duration, c.videoFirstFrameUrl = b.firstFrame.dataUrl
 							}
@@ -800,17 +800,17 @@
 				N = r("./src/reddit/selectors/user.ts"),
 				D = r("./src/reddit/models/Post/index.ts"),
 				A = r("./src/reddit/models/ScheduledPost/index.ts"),
-				R = r("./src/reddit/actions/postCreation/constants.ts"),
-				w = r("./src/reddit/actions/postCreation/general.ts"),
+				w = r("./src/reddit/actions/postCreation/constants.ts"),
+				R = r("./src/reddit/actions/postCreation/general.ts"),
 				L = r("./src/reddit/actions/postCreation/mediaUpload.ts");
-			const U = Object(n.a)(R.w),
-				M = Object(n.a)(R.P),
-				G = Object(n.a)(R.o),
-				q = Object(n.a)(R.y),
-				F = Object(n.a)(R.db),
-				V = Object(n.a)(R.J),
-				B = Object(n.a)(R.a),
-				W = Object(n.a)(R.F),
+			const U = Object(n.a)(w.w),
+				M = Object(n.a)(w.P),
+				G = Object(n.a)(w.o),
+				q = Object(n.a)(w.y),
+				F = Object(n.a)(w.db),
+				V = Object(n.a)(w.J),
+				B = Object(n.a)(w.a),
+				W = Object(n.a)(w.F),
 				$ = t => `/r/${t}/about/${A.s}`,
 				z = (t, e) => {
 					const r = t || {
@@ -1009,7 +1009,7 @@
 						const t = j.error;
 						t.type === s.I.BAD_CAPTCHA_ERROR ? e(B()) : t.type === s.I.VALIDATION_ERROR ? e(F(t)) : t.type === s.I.SUBMIT_VALIDATION_ERROR ? e(V(t)) : e(G(t))
 					}
-					const S = Object(w.o)(u.kind),
+					const S = Object(R.o)(u.kind),
 						P = j.ok && j.body && j.body.id && Object(D.u)(j.body.id),
 						T = r();
 					E.B(T, S, P, t.correlationId)
@@ -1316,7 +1316,7 @@
 			})), r.d(e, "b", (function() {
 				return A
 			})), r.d(e, "a", (function() {
-				return R
+				return w
 			})), r.d(e, "f", (function() {
 				return M
 			})), r.d(e, "g", (function() {
@@ -1367,11 +1367,11 @@
 				N = "SUBREDDIT__CREATE_PENDING",
 				D = "SUBREDDIT__CREATE_SUCCEEDED",
 				A = "SUBREDDIT__CREATE_FAILED",
-				R = "SUBREDDIT__CREATE_CLEARED",
-				w = Object(d.a)(N),
+				w = "SUBREDDIT__CREATE_CLEARED",
+				R = Object(d.a)(N),
 				L = Object(d.a)(D),
 				U = Object(d.a)(A),
-				M = Object(d.a)(R),
+				M = Object(d.a)(w),
 				G = Object(d.a)(x),
 				q = t => async (e, r, d) => {
 					let {
@@ -1385,16 +1385,16 @@
 							crosspostId: A
 						} = t;
 					if (Object(v.j)(x)) return;
-					e(w({
+					e(R({
 						subredditName: N
 					}));
-					const R = await ((t, e) => Object(p.a)(Object(m.a)(t, [h.a]), {
+					const w = await ((t, e) => Object(p.a)(Object(m.a)(t, [h.a]), {
 						endpoint: Object(O.a)(`${t.apiUrl}/api/v1/subreddit/create_subreddit`),
 						method: n.jb.POST,
 						data: y(e)
 					}))(_(), t);
-					if (R.ok) {
-						const r = R.body,
+					if (w.ok) {
+						const r = w.body,
 							d = r.fullname;
 						Object(k.a)(Object(E.d)(D, t, d)(x)), e(L({
 							subredditName: N
@@ -1417,10 +1417,10 @@
 						}
 						await e(Object(s.b)(`${r.path}`)), p ? p === b.Ee.NewModule && e(Object(c.h)({
 							tooltipId: u.MOD_WELCOME_TOOLTIP_ID
-						})) : (e(Object(o.h)(f.a.POST_FLOW_UPSELL_MODAL_ID)), Object(k.a)(Object(E.g)()(x))), Object(g.b)(g.a.SubredditCreation), e(Object(T.f)(d, null !== (j = Object(C.bb)(x)) && void 0 !== j ? j : Object(P.i)(x)))
-					} else R.error && Object(k.a)(Object(E.h)(R.error.type, N)(x)), e(U({
+						})) : (e(Object(o.h)(f.a.POST_FLOW_UPSELL_MODAL_ID)), Object(k.a)(Object(E.g)()(x))), Object(g.b)(g.a.SubredditCreation), e(Object(T.f)(d, null !== (j = Object(C.bb)(x)) && void 0 !== j ? j : Object(P.j)(x)))
+					} else w.error && Object(k.a)(Object(E.h)(w.error.type, N)(x)), e(U({
 						subredditName: N,
-						error: R.error
+						error: w.error
 					}))
 				}, F = t => async (e, r, s) => {
 					let {
@@ -2578,37 +2578,43 @@
 					}
 				},
 				a = r("./src/reddit/actions/governance/constants.ts");
-			const c = {},
-				u = {
+			const c = 15e4,
+				u = {},
+				l = {
 					filled: "img/communityPoints/default_filled.png",
 					grey: "img/communityPoints/default_grey.png"
 				};
 
-			function l(t) {
+			function b(t) {
 				var e, r, s, n, d;
 				const i = null === (e = t.walletProvider) || void 0 === e ? void 0 : e.extra,
 					o = null == i ? void 0 : i.contracts,
 					a = null == o ? void 0 : o.unlocked,
-					c = null !== (s = null === (r = t.walletProvider) || void 0 === r ? void 0 : r.provider) && void 0 !== s ? s : t.provider,
-					l = !!(null === (n = t.walletProvider) || void 0 === n ? void 0 : n.inTransition),
-					b = (null == a ? void 0 : a.decimals) || 0,
-					f = "1" + "0".repeat(b);
+					u = null !== (s = null === (r = t.walletProvider) || void 0 === r ? void 0 : r.provider) && void 0 !== s ? s : t.provider,
+					b = !!(null === (n = t.walletProvider) || void 0 === n ? void 0 : n.inTransition),
+					f = null == i ? void 0 : i.metaTransactions,
+					p = (null == f ? void 0 : f.allowedContractMethods) || {},
+					m = (null == f ? void 0 : f.gasLimit) || c,
+					h = (null == a ? void 0 : a.decimals) || 0,
+					O = "1" + "0".repeat(h);
 				return {
-					blockchainProvider: c,
+					allowedContractMethods: p,
+					blockchainProvider: u,
 					contractAddress: (null == a ? void 0 : a.address) || "",
 					contracts: o,
-					decimals: b,
-					displayConversion: f,
-					images: t.images || u,
-					inTransition: l,
+					decimals: h,
+					displayConversion: O,
+					gasLimit: m,
+					images: t.images || l,
+					inTransition: b,
 					name: t.name,
 					nomenclature: null === (d = t.extra) || void 0 === d ? void 0 : d.nomenclature,
 					polls: t.polls,
 					symbol: (null == a ? void 0 : a.token) || ""
 				}
 			}
-			var b = function() {
-				let t = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : c,
+			var f = function() {
+				let t = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : u,
 					e = arguments.length > 1 ? arguments[1] : void 0;
 				switch (e.type) {
 					case a.a: {
@@ -2618,16 +2624,16 @@
 						} = e.payload;
 						return {
 							...t,
-							[r]: l(s)
+							[r]: b(s)
 						}
 					}
 					default:
 						return t
 				}
 			};
-			const f = {};
-			var p = function() {
-				let t = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : f,
+			const p = {};
+			var m = function() {
+				let t = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : p,
 					e = arguments.length > 1 ? arguments[1] : void 0;
 				switch (e.type) {
 					case a.n: {
@@ -2654,8 +2660,8 @@
 			};
 			e.a = Object(s.c)({
 				claims: o,
-				points: b,
-				publicWallets: p
+				points: f,
+				publicWallets: m
 			})
 		},
 		"./src/reddit/selectors/crypto/points.ts": function(t, e, r) {
@@ -2894,4 +2900,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit~SubredditForkingCTA.2ec3dda1fa05be784695.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit~SubredditForkingCTA.58746760cb927dc05a3e.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/EconomicsSubredditPremiumSidebarCards.7dac2c71f9f0deb2fe35.js
-// Retrieved at 7/12/2022, 6:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/EconomicsSubredditPremiumSidebarCards.1790ddddfd6d4e9dd676.js
+// Retrieved at 7/13/2022, 10:10:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["EconomicsSubredditPremiumSidebarCards"], {
 		"./node_modules/lodash/_arrayShuffle.js": function(e, t, s) {
@@ -14,6 +14,20 @@
 				n = s("./node_modules/lodash/values.js");
 			e.exports = function(e) {
 				return r(n(e))
+			}
+		},
+		"./node_modules/lodash/_shuffleSelf.js": function(e, t, s) {
+			var r = s("./node_modules/lodash/_baseRandom.js");
+			e.exports = function(e, t) {
+				var s = -1,
+					n = e.length,
+					i = n - 1;
+				for (t = void 0 === t ? n : t; ++s < t;) {
+					var o = r(s, i),
+						d = e[o];
+					e[o] = e[s], e[s] = d
+				}
+				return e.length = t, e
 			}
 		},
 		"./node_modules/lodash/flattenDeep.js": function(e, t, s) {
@@ -3703,4 +3717,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EconomicsSubredditPremiumSidebarCards.7dac2c71f9f0deb2fe35.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EconomicsSubredditPremiumSidebarCards.1790ddddfd6d4e9dd676.js.map

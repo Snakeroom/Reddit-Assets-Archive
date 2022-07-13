@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ChatOverlayReport.301ce25ddeed25596208.js
-// Retrieved at 7/1/2022, 5:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ChatOverlayReport.697de162f06ea1d03b59.js
+// Retrieved at 7/13/2022, 10:10:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ChatOverlayReport"], {
 		"./src/chat/components/OverlayReport/CrisisFlow/CrisisFlowPage.m.less": function(e, t, s) {
@@ -112,19 +112,19 @@
 				w = s("./src/chat/components/OverlayReport/CrisisFlow/CrisisMainPage/index.m.less"),
 				S = s.n(w);
 			const {
-				fbt: A
-			} = s("./node_modules/fbt/lib/FbtPublic.js"), b = u.a.div("CrisisContent", S.a), g = u.a.div("CrisisImageContainer", T.a), N = u.a.img("CrisisImage", S.a), L = u.a.h2("CrisisTitle", T.a), v = u.a.p("CrisisDescription", T.a);
-			var F = e => l.a.createElement(b, null, l.a.createElement(g, null, l.a.createElement(N, {
+				fbt: g
+			} = s("./node_modules/fbt/lib/FbtPublic.js"), A = u.a.div("CrisisContent", S.a), b = u.a.div("CrisisImageContainer", T.a), N = u.a.img("CrisisImage", S.a), L = u.a.h2("CrisisTitle", T.a), v = u.a.p("CrisisDescription", T.a);
+			var F = e => l.a.createElement(A, null, l.a.createElement(b, null, l.a.createElement(N, {
 				src: `${r.a.assetPath}/img/crisis-line-icon.png`
-			})), l.a.createElement(L, null, A._("Would you like Reddit to reach out to {username} ?", [A._param("username", l.a.createElement("span", null, "u/", e.username))], {
+			})), l.a.createElement(L, null, g._("Would you like Reddit to reach out to {username} ?", [g._param("username", l.a.createElement("span", null, "u/", e.username))], {
 				hk: "3RFVlj"
-			})), l.a.createElement(v, null, A._("We’ve partnered with {=Crisis Text Line} to provide redditors with support from trained Crisis Counselors, and will reach out (confidentially) to let {username} know that there are people who are here for them.", [A._param("=Crisis Text Line", l.a.createElement("a", {
+			})), l.a.createElement(v, null, g._("We’ve partnered with {=Crisis Text Line} to provide redditors with support from trained Crisis Counselors, and will reach out (confidentially) to let {username} know that there are people who are here for them.", [g._param("=Crisis Text Line", l.a.createElement("a", {
 				href: "https://www.crisistextline.org/",
 				target: "_blank",
 				rel: "noopener noreferrer"
-			}, A._("Crisis Text Line", null, {
+			}, g._("Crisis Text Line", null, {
 				hk: "4ih1Mk"
-			}))), A._param("username", l.a.createElement("strong", null, "u/", e.username))], {
+			}))), g._param("username", l.a.createElement("strong", null, "u/", e.username))], {
 				hk: "3eDxpt"
 			})));
 			var M = e => l.a.createElement("svg", {
@@ -471,9 +471,9 @@
 				return i
 			}));
 			var r = s("./src/lib/loadableAction/index.ts");
-			const o = Object(r.a)(() => Promise.all([s.e("Governance~Reddit~ReportFlow~Subreddit~reddit-components-BlankPost~reddit-components-ClassicPost~red~f3a55241"), s.e("Governance~ModListing~Reddit~ReportFlow~Subreddit"), s.e("ReportFlow")]).then(s.bind(null, "./src/reddit/actions/reportFlow/reportFlow.ts")).then(e => e.postOrCommentReported)),
-				n = Object(r.a)(() => Promise.all([s.e("Governance~Reddit~ReportFlow~Subreddit~reddit-components-BlankPost~reddit-components-ClassicPost~red~f3a55241"), s.e("Governance~ModListing~Reddit~ReportFlow~Subreddit"), s.e("ReportFlow")]).then(s.bind(null, "./src/reddit/actions/reportFlow/reportFlow.ts")).then(e => e.reportFlowOpened)),
-				i = Object(r.a)(() => Promise.all([s.e("Governance~Reddit~ReportFlow~Subreddit~reddit-components-BlankPost~reddit-components-ClassicPost~red~f3a55241"), s.e("Governance~ModListing~Reddit~ReportFlow~Subreddit"), s.e("ReportFlow")]).then(s.bind(null, "./src/reddit/actions/reportFlow/reportFlow.ts")).then(e => e.reportFlowClosed))
+			const o = Object(r.a)(() => Promise.all([s.e("CommentsPage~Governance~Reddit~ReportFlow~Subreddit~reddit-components-BlankPost~reddit-components-Cl~5351df81"), s.e("Governance~ModListing~Reddit~ReportFlow~Subreddit"), s.e("ReportFlow")]).then(s.bind(null, "./src/reddit/actions/reportFlow/reportFlow.ts")).then(e => e.postOrCommentReported)),
+				n = Object(r.a)(() => Promise.all([s.e("CommentsPage~Governance~Reddit~ReportFlow~Subreddit~reddit-components-BlankPost~reddit-components-Cl~5351df81"), s.e("Governance~ModListing~Reddit~ReportFlow~Subreddit"), s.e("ReportFlow")]).then(s.bind(null, "./src/reddit/actions/reportFlow/reportFlow.ts")).then(e => e.reportFlowOpened)),
+				i = Object(r.a)(() => Promise.all([s.e("CommentsPage~Governance~Reddit~ReportFlow~Subreddit~reddit-components-BlankPost~reddit-components-Cl~5351df81"), s.e("Governance~ModListing~Reddit~ReportFlow~Subreddit"), s.e("ReportFlow")]).then(s.bind(null, "./src/reddit/actions/reportFlow/reportFlow.ts")).then(e => e.reportFlowClosed))
 		},
 		"./src/reddit/models/ReportFlow/index.ts": function(e, t, s) {
 			"use strict";
@@ -502,4 +502,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatOverlayReport.301ce25ddeed25596208.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatOverlayReport.697de162f06ea1d03b59.js.map

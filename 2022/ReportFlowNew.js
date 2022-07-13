@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ReportFlowNew.6fed13a1186a10d796e6.js
-// Retrieved at 7/7/2022, 4:10:13 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ReportFlowNew.10967e50e5e5e7de7639.js
+// Retrieved at 7/13/2022, 10:10:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ReportFlowNew"], {
 		"./src/reddit/actions/blockedRedditors.ts": function(e, t, o) {
@@ -96,9 +96,9 @@
 				return i
 			}));
 			var r = o("./src/lib/loadableAction/index.ts");
-			const s = Object(r.a)(() => Promise.all([o.e("Governance~Reddit~ReportFlow~Subreddit~reddit-components-BlankPost~reddit-components-ClassicPost~red~f3a55241"), o.e("Governance~ModListing~Reddit~ReportFlow~Subreddit"), o.e("ReportFlow")]).then(o.bind(null, "./src/reddit/actions/reportFlow/reportFlow.ts")).then(e => e.postOrCommentReported)),
-				n = Object(r.a)(() => Promise.all([o.e("Governance~Reddit~ReportFlow~Subreddit~reddit-components-BlankPost~reddit-components-ClassicPost~red~f3a55241"), o.e("Governance~ModListing~Reddit~ReportFlow~Subreddit"), o.e("ReportFlow")]).then(o.bind(null, "./src/reddit/actions/reportFlow/reportFlow.ts")).then(e => e.reportFlowOpened)),
-				i = Object(r.a)(() => Promise.all([o.e("Governance~Reddit~ReportFlow~Subreddit~reddit-components-BlankPost~reddit-components-ClassicPost~red~f3a55241"), o.e("Governance~ModListing~Reddit~ReportFlow~Subreddit"), o.e("ReportFlow")]).then(o.bind(null, "./src/reddit/actions/reportFlow/reportFlow.ts")).then(e => e.reportFlowClosed))
+			const s = Object(r.a)(() => Promise.all([o.e("CommentsPage~Governance~Reddit~ReportFlow~Subreddit~reddit-components-BlankPost~reddit-components-Cl~5351df81"), o.e("Governance~ModListing~Reddit~ReportFlow~Subreddit"), o.e("ReportFlow")]).then(o.bind(null, "./src/reddit/actions/reportFlow/reportFlow.ts")).then(e => e.postOrCommentReported)),
+				n = Object(r.a)(() => Promise.all([o.e("CommentsPage~Governance~Reddit~ReportFlow~Subreddit~reddit-components-BlankPost~reddit-components-Cl~5351df81"), o.e("Governance~ModListing~Reddit~ReportFlow~Subreddit"), o.e("ReportFlow")]).then(o.bind(null, "./src/reddit/actions/reportFlow/reportFlow.ts")).then(e => e.reportFlowOpened)),
+				i = Object(r.a)(() => Promise.all([o.e("CommentsPage~Governance~Reddit~ReportFlow~Subreddit~reddit-components-BlankPost~reddit-components-Cl~5351df81"), o.e("Governance~ModListing~Reddit~ReportFlow~Subreddit"), o.e("ReportFlow")]).then(o.bind(null, "./src/reddit/actions/reportFlow/reportFlow.ts")).then(e => e.reportFlowClosed))
 		},
 		"./src/reddit/actions/userBlocks.ts": function(e, t, o) {
 			"use strict";
@@ -175,7 +175,7 @@
 							buttonAction: O(e)
 						}))
 					}
-				}, R = "USER_UNBLOCK__PENDING", w = "USER_UNBLOCK__SUCCESS", _ = "USER_UNBLOCK__FAILED", x = Object(s.a)(R), g = Object(s.a)(w), j = Object(s.a)(_), k = e => async (t, o, s) => {
+				}, R = "USER_UNBLOCK__PENDING", w = "USER_UNBLOCK__SUCCESS", _ = "USER_UNBLOCK__FAILED", g = Object(s.a)(R), x = Object(s.a)(w), j = Object(s.a)(_), k = e => async (t, o, s) => {
 					let {
 						apiContext: a
 					} = s;
@@ -183,9 +183,9 @@
 						p = Object(l.k)(u),
 						m = p ? p.id : void 0,
 						b = u.user.blocked.data.filter(t => t.name === e)[0];
-					m && (t(x({
+					m && (t(g({
 						name: e
-					})), (await Object(d.c)(a(), m, e)).ok ? (t(g({
+					})), (await Object(d.c)(a(), m, e)).ok ? (t(x({
 						name: e
 					})), b && b.id && t(Object(n.h)(b.id)), t(i.f({
 						kind: c.b.SuccessCommunity,
@@ -288,9 +288,9 @@
 			var R = o("./src/reddit/components/FormBuilder/async.tsx"),
 				w = o("./src/reddit/actions/userBlocks.ts"),
 				_ = o("./src/lib/makeGqlRequest/index.ts"),
-				x = o("./src/redditGQL/operations/ReportComment.json");
-			const g = (e, t) => Object(_.a)(e, {
-				...x,
+				g = o("./src/redditGQL/operations/ReportComment.json");
+			const x = (e, t) => Object(_.a)(e, {
+				...g,
 				variables: t
 			});
 			var j = o("./src/redditGQL/operations/ReportLiveStream.json");
@@ -518,7 +518,7 @@
 									commentId: a,
 									...b
 								};
-								h = () => g(r(), {
+								h = () => x(r(), {
 									input: t
 								});
 								break;
@@ -751,9 +751,9 @@
 			})), o.d(t, "b", (function() {
 				return _
 			})), o.d(t, "c", (function() {
-				return x
-			})), o.d(t, "g", (function() {
 				return g
+			})), o.d(t, "g", (function() {
+				return x
 			})), o.d(t, "a", (function() {
 				return j
 			}));
@@ -800,7 +800,7 @@
 						...o,
 						subredditId: t.id
 					}
-				}), x = () => n()(), g = e => e.data.createAudioRoomOrError || e.data.createAudioRoomOnProfile, j = {
+				}), g = () => n()(), x = e => e.data.createAudioRoomOrError || e.data.createAudioRoomOnProfile, j = {
 					[h.g.ServiceError]: r.fbt._("Something's wrong with the talk service right now. Check back later.", null, {
 						hk: "3XqPJS"
 					}),
@@ -873,12 +873,12 @@
 					const R = new RegExp(m),
 						w = new RegExp(b),
 						_ = [];
-					let x;
+					let g;
 					if (e.subredditName) {
 						const t = e.subredditName.trim();
 						if (w.test(t)) {
 							const e = w.exec(t);
-							e && e.length > 1 && (x = e[1])
+							e && e.length > 1 && (g = e[1])
 						}
 					}
 					if (e.usernames && e.usernames.length)
@@ -890,16 +890,16 @@
 							}
 						}
 					const {
-						reason: g
+						reason: x
 					} = e;
 					return {
 						reason: "site_reason_selected",
-						site_reason: g.reasonText,
+						site_reason: x.reasonText,
 						additional_info: e.additionalInfo ? e.additionalInfo.join(",") : void 0,
 						custom_text: e.customText,
 						modmail_conv_id: f,
 						modmail_msg_id: O,
-						sr_name: x,
+						sr_name: g,
 						thing_id: h,
 						usernames: _.length ? _.join(",") : void 0
 					}
@@ -1006,4 +1006,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ReportFlowNew.6fed13a1186a10d796e6.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ReportFlowNew.10967e50e5e5e7de7639.js.map
