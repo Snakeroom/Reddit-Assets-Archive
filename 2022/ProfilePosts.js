@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfilePosts.03b71a0cfb6eb3aa7446.js
-// Retrieved at 7/11/2022, 7:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfilePosts.b5551feeb1580077d64e.js
+// Retrieved at 7/13/2022, 9:40:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfilePosts"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, r) {
@@ -3971,11 +3971,12 @@
 				R = r("./src/reddit/selectors/experiments/nsfwBlockingExperiment.ts"),
 				M = r("./src/reddit/selectors/profile.ts"),
 				B = r("./src/reddit/selectors/user.ts"),
-				F = r("./src/reddit/pages/ProfilePosts/index.m.less"),
-				D = r.n(F);
+				F = r("./src/server/helpers/profileRedirect.ts"),
+				D = r("./src/reddit/pages/ProfilePosts/index.m.less"),
+				G = r.n(D);
 
-			function G() {
-				return (G = Object.assign || function(e) {
+			function H() {
+				return (H = Object.assign || function(e) {
 					for (var t = 1; t < arguments.length; t++) {
 						var r = arguments[t];
 						for (var s in r) Object.prototype.hasOwnProperty.call(r, s) && (e[s] = r[s])
@@ -3983,8 +3984,8 @@
 					return e
 				}).apply(this, arguments)
 			}
-			const H = Object(_.u)(),
-				A = Object(d.a)(_.E, B.kb, (e, t) => {
+			const A = Object(_.u)(),
+				V = Object(d.a)(_.E, B.kb, (e, t) => {
 					let {
 						location: r
 					} = t;
@@ -4037,7 +4038,7 @@
 						nsfwBlockingExperiment: l
 					}
 				}),
-				V = Object(a.b)(A, (e, t) => ({
+				U = Object(a.b)(V, (e, t) => ({
 					onLoadMore: () => e(p.morePostsRequested()),
 					onLayoutChange: () => e(p.profilePostsRequested({
 						...t.match,
@@ -4045,7 +4046,7 @@
 					})),
 					openNsfwModal: () => e(Object(m.a)())
 				}));
-			class U extends o.a.Component {
+			class W extends o.a.Component {
 				constructor(e) {
 					super(e), this.onStorage = () => {
 						this.setState({
@@ -4057,7 +4058,7 @@
 							estHeight: 76,
 							id: "post-stats-info-posts",
 							render: () => o.a.createElement(f.a, {
-								className: D.a.creatorStatsEducationUnit
+								className: G.a.creatorStatsEducationUnit
 							})
 						}), e
 					}, this.state = {
@@ -4107,7 +4108,7 @@
 						profileName: f
 					});
 					const N = f.toLowerCase(),
-						M = `/user/${f}/posts/`,
+						M = Object(F.a)(f, !0),
 						B = {
 							listingKey: a,
 							listingName: N
@@ -4119,7 +4120,7 @@
 						contentGateType: T.a.Nsfw,
 						subredditName: f
 					});
-					const F = {
+					const D = {
 						sort: _,
 						baseUrl: M,
 						sortOptions: c.Db,
@@ -4133,7 +4134,7 @@
 							profileName: f,
 							viewBlockedConsent: C
 						})),
-						content: o.a.createElement(o.a.Fragment, null, o.a.createElement(x.a, F), o.a.createElement(v.a, null), o.a.createElement(y.a, {
+						content: o.a.createElement(o.a.Fragment, null, o.a.createElement(x.a, D), o.a.createElement(v.a, null), o.a.createElement(y.a, {
 							getInjectChildren: this.state.showPostStatsUnit && this.props.isOwnProfile ? this.getInjectChildren : void 0,
 							listingKey: a,
 							listingName: N,
@@ -4147,13 +4148,13 @@
 							inSubredditOrProfile: !1,
 							shouldShowInsightsButton: s
 						})),
-						sidebar: o.a.createElement(E.a, G({}, B, {
+						sidebar: o.a.createElement(E.a, H({}, B, {
 							profileName: f
 						}))
 					})
 				}
 			}
-			t.default = H(V(Object(C.d)(U)))
+			t.default = A(U(Object(C.d)(W)))
 		},
 		"./src/reddit/selectors/experiments/d2xPdpSideRailRecs.ts": function(e, t, r) {
 			"use strict";
@@ -4397,4 +4398,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfilePosts.03b71a0cfb6eb3aa7446.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfilePosts.b5551feeb1580077d64e.js.map

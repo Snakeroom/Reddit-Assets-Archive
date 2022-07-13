@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Reddit.ecaa172717673f1ede3d.js
-// Retrieved at 7/12/2022, 6:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Reddit.07b1e9962a434a28d95d.js
+// Retrieved at 7/13/2022, 9:40:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Reddit"], {
 		"./assets/fonts/BentonSans/font.less": function(e, t, n) {},
@@ -14023,8 +14023,9 @@
 				Au = n("./src/reddit/routes/premium/index.ts"),
 				Ru = n("./src/reddit/routes/profileComments/index.ts"),
 				Lu = n("./src/reddit/endpoints/me/index.ts"),
-				Du = n("./src/reddit/helpers/pageActionLoginRedirect.ts");
-			var Fu = {
+				Du = n("./src/reddit/helpers/pageActionLoginRedirect.ts"),
+				Fu = n("./src/server/helpers/profileRedirect.ts");
+			var Uu = {
 					action: e => async (t, n, s) => {
 						let {
 							apiContext: r
@@ -14032,15 +14033,20 @@
 						const {
 							rest: o
 						} = e.params, {
-							queryParams: a
-						} = e, i = await Object(Lu.a)(r());
-						if (!(i.ok && i.body && i.body.account)) {
+							path: a,
+							queryParams: i
+						} = e, c = await Object(Lu.a)(r());
+						if (!(c.ok && c.body && c.body.account)) {
 							const e = n();
 							return void Object(Du.a)(t, e)
 						}
-						const c = i.body.account.displayText,
-							l = o ? `/user/${c}/${(e=>e.endsWith("/")?e:`${e}/`)(o)}` : `/user/${c}/`,
-							d = Object(pu.a)(l, a);
+						const l = c.body.account.displayText,
+							d = Object(Fu.b)({
+								path: a,
+								profileName: l,
+								queryParams: i,
+								rest: o
+							});
 						await t(Object(p.c)(d))
 					},
 					chunk: S.r.EMPTY,
@@ -14050,23 +14056,48 @@
 					},
 					path: ["/user/me", "/user/me/:rest(.*)"]
 				},
-				Uu = n("./src/reddit/routes/profileModSettings/index.ts"),
-				Gu = n("./src/reddit/routes/profileOverview/index.ts"),
-				Bu = n("./src/reddit/routes/profilePosts/index.ts"),
-				qu = n("./src/reddit/routes/profilePrivate/index.ts"),
-				Hu = n("./src/server/helpers/canonicalUrl.tsx");
-			var Wu = {
+				Gu = n("./src/reddit/routes/profileModSettings/index.ts"),
+				Bu = n("./src/reddit/routes/profileOverview/index.ts"),
+				qu = n("./src/reddit/routes/profilePosts/index.ts");
+			var Hu = {
 					action: e => async t => {
 						const {
 							profileName: n,
 							rest: s
 						} = e.params, {
-							queryParams: r
-						} = e, o = ((e, t, n) => {
-							const s = `/user/${e}/${t?Object(Hu.a)(t.replace("submitted","posts")):""}`;
-							return Object(pu.a)(s, n)
-						})(n, s, r);
-						await t(Object(p.c)(o))
+							path: r,
+							queryParams: o
+						} = e, a = Object(Fu.b)({
+							path: r,
+							profileName: n,
+							queryParams: o,
+							rest: s
+						});
+						t(Object(p.c)(a))
+					},
+					chunk: S.r.EMPTY,
+					exact: !0,
+					meta: {
+						name: S.Nb.PROFILE_REDIRECT
+					},
+					path: ["/user/:profileName/posts", "/user/:profileName/posts/:rest(.*)"]
+				},
+				Wu = n("./src/reddit/routes/profilePrivate/index.ts");
+			var Vu = {
+					action: e => async t => {
+						const {
+							profileName: n,
+							rest: s
+						} = e.params, {
+							path: r,
+							queryParams: o
+						} = e, a = Object(Fu.b)({
+							path: r,
+							profileName: n,
+							queryParams: o,
+							rest: s
+						});
+						await t(Object(p.c)(a))
 					},
 					chunk: S.r.EMPTY,
 					exact: !0,
@@ -14075,24 +14106,7 @@
 					},
 					path: ["/r/u_:profileName", "/r/u_:profileName/:rest(.*)", "/u/:profileName", "/u/:profileName/:rest(.*)"]
 				},
-				Vu = n("./src/reddit/routes/profileSnoobuilder/index.ts");
-			var Qu = {
-					action: e => async t => {
-						const {
-							profileName: n,
-							rest: s
-						} = e.params, {
-							queryParams: r
-						} = e, o = s ? `/user/${n}/posts/${s}` : `/user/${n}/posts`, a = Object(pu.a)(o, r);
-						t(Object(p.c)(a))
-					},
-					chunk: S.r.EMPTY,
-					exact: !0,
-					meta: {
-						name: S.Nb.PROFILE_REDIRECT
-					},
-					path: ["/user/:profileName/submitted", "/user/:profileName/submitted/:rest(.*)"]
-				},
+				Qu = n("./src/reddit/routes/profileSnoobuilder/index.ts"),
 				zu = n("./src/reddit/routes/publicAccessNetwork/index.ts"),
 				Ku = n("./src/reddit/routes/report/index.ts"),
 				Ju = n("./src/reddit/routes/searchResults/index.ts"),
@@ -14123,7 +14137,7 @@
 				$u = n("./src/reddit/routes/subredditLeaderboard/index.ts"),
 				em = n("./src/reddit/routes/subredditWiki/index.ts"),
 				tm = n("./src/reddit/routes/topic/index.ts");
-			var nm = [nu.a, su.a, Fr.b, ru, ou.a, au.a, cu.a, Fu, Wu, Qu, ...tu.a, ...iu.a, mu, ...vu.a, Ou.a, Au.a, Tr.b, Ar.b, du.c, uu.a, Iu, Tu, hu.a, gu.a, fu.a, Nu.a, Mu.a, wu.a, ...ku, bu, ...yu.a, Pu.a, xu.a, Ir.c, ju.a, Cu.a, Ru.a, Uu.a, Gu.a, Bu.a, Vu.a, qu.a, zu.a, ...Xu.a, ...Yu, Ju.a, ...em.a, tm.a, Zu.b, $u.a, Eu.a, Ku.a, ...lu],
+			var nm = [nu.a, su.a, Fr.b, ru, ou.a, au.a, cu.a, Uu, Vu, Hu, ...tu.a, ...iu.a, mu, ...vu.a, Ou.a, Au.a, Tr.b, Ar.b, du.c, uu.a, Iu, Tu, hu.a, gu.a, fu.a, Nu.a, Mu.a, wu.a, ...ku, bu, ...yu.a, Pu.a, xu.a, Ir.c, ju.a, Cu.a, Ru.a, Gu.a, Bu.a, qu.a, Qu.a, Wu.a, zu.a, ...Xu.a, ...Yu, Ju.a, ...em.a, tm.a, Zu.b, $u.a, Eu.a, Ku.a, ...lu],
 				sm = n("./src/reddit/selectors/appBadges.ts"),
 				rm = n("./src/reddit/selectors/sso.ts"),
 				om = n("./src/reddit/components/HeaderUserActions/AdsSignupLink/index.m.less"),
@@ -18622,7 +18636,7 @@
 			var s = n("./node_modules/@loadable/component/dist/loadable.esm.js"),
 				r = n("./src/lib/constants/index.ts"),
 				o = n("./src/lib/loadableAction/index.ts");
-			const a = "/user/:profileName/posts",
+			const a = "/user/:profileName/submitted",
 				i = Object(s.a)({
 					resolved: {},
 					chunkName: () => "ProfilePosts",
@@ -19666,10 +19680,36 @@
 		},
 		"./src/redditGQL/operations/UpdateCommentFollowState.json": function(e) {
 			e.exports = JSON.parse('{"id":"0a2ed51664c5"}')
+		},
+		"./src/server/helpers/profileRedirect.ts": function(e, t, n) {
+			"use strict";
+			n.d(t, "b", (function() {
+				return o
+			})), n.d(t, "a", (function() {
+				return i
+			}));
+			var s = n("./src/lib/addQueryParams/index.ts"),
+				r = n("./src/server/helpers/canonicalUrl.tsx");
+			const o = e => {
+					let {
+						path: t,
+						profileName: n,
+						rest: r,
+						queryParams: o
+					} = e;
+					const i = t.includes("posts") ? `/user/${n}/submitted` : `/user/${n}`,
+						c = a(`${i}/${r||""}`);
+					return Object(s.a)(c, o)
+				},
+				a = e => Object(r.a)(e.replace("posts", "submitted")),
+				i = function(e) {
+					let t = arguments.length > 1 && void 0 !== arguments[1] && arguments[1];
+					return `/user/${e}/submitted${t?"/":""}`
+				}
 		}
 	},
 	[
 		["./src/reddit/index.tsx", "runtime~Reddit", "vendors~Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePo~5f1ac562", "vendors~Governance~ModListing~Reddit~Subreddit", "vendors~Chat~Governance~Reddit", "vendors~Reddit", "Governance~Reddit~ReportFlow~Subreddit~reddit-components-BlankPost~reddit-components-ClassicPost~red~f3a55241", "PostCreation~Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~r~4c415e24", "Governance~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compo~bd4baca2", "Governance~ModListing~Reddit~ReportFlow~Subreddit", "Chat~Governance~Reddit", "Governance~Reddit~Subreddit", "Governance~Reddit", "Reddit~StandalonePostPage", "AuthorHovercard~Reddit"]
 	]
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit.ecaa172717673f1ede3d.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit.07b1e9962a434a28d95d.js.map
