@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/getFlairData.18d3dbf4b24bc018cfe6.js
-// Retrieved at 7/11/2022, 3:10:11 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/getFlairData.fb27197d20c956429fcd.js
+// Retrieved at 7/13/2022, 11:20:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["getFlairData"], {
 		"./src/reddit/actions/economics/powerups/constants.ts": function(e, r, t) {
@@ -115,7 +115,7 @@
 					let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : s,
 						r = arguments.length > 1 ? arguments[1] : void 0;
 					switch (r.type) {
-						case i.nb:
+						case i.mb:
 							const {
 								subredditId: t, subredditAchievementFlairs: d
 							} = r.payload;
@@ -384,4 +384,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/getFlairData.18d3dbf4b24bc018cfe6.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/getFlairData.fb27197d20c956429fcd.js.map

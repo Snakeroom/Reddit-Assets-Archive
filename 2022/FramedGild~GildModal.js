@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/FramedGild~GildModal.ef98a0588118a02b948f.js
-// Retrieved at 7/11/2022, 7:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/FramedGild~GildModal.adbd9f5086279e6ece5e.js
+// Retrieved at 7/13/2022, 11:20:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["FramedGild~GildModal", "gildActions"], {
 		"./node_modules/@stripe/react-stripe-js/dist/react-stripe.umd.js": function(e, t, r) {
@@ -843,7 +843,7 @@
 					econPurchase: s.a
 				}
 			});
-			const l = Object(a.a)(d.lb),
+			const l = Object(a.a)(d.kb),
 				u = (e, t, r) => async (n, s, a) => {
 					let {
 						gqlContext: d
@@ -1233,7 +1233,7 @@
 				s = r("./src/reddit/actions/modal.ts"),
 				a = r("./src/reddit/constants/modals.ts"),
 				o = r("./src/reddit/actions/gold/constants.ts");
-			const i = Object(n.a)(o.kb),
+			const i = Object(n.a)(o.jb),
 				c = Object(n.a)(o.t),
 				d = e => async t => {
 					await t(c({
@@ -5694,7 +5694,7 @@
 				let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : a,
 					t = arguments.length > 1 ? arguments[1] : void 0;
 				switch (t.type) {
-					case s.lb: {
+					case s.kb: {
 						const r = t.payload;
 						return {
 							...e,
@@ -5984,30 +5984,24 @@
 		},
 		"./src/reddit/selectors/gold/productOffers.ts": function(e, t, r) {
 			"use strict";
-			r.d(t, "j", (function() {
+			r.d(t, "g", (function() {
 				return c
-			})), r.d(t, "k", (function() {
+			})), r.d(t, "h", (function() {
 				return d
 			})), r.d(t, "a", (function() {
 				return l
 			})), r.d(t, "d", (function() {
 				return u
-			})), r.d(t, "b", (function() {
+			})), r.d(t, "i", (function() {
 				return m
 			})), r.d(t, "c", (function() {
-				return p
-			})), r.d(t, "g", (function() {
 				return b
-			})), r.d(t, "l", (function() {
+			})), r.d(t, "b", (function() {
 				return h
 			})), r.d(t, "f", (function() {
-				return g
+				return f
 			})), r.d(t, "e", (function() {
-				return v
-			})), r.d(t, "i", (function() {
-				return O
-			})), r.d(t, "h", (function() {
-				return j
+				return g
 			}));
 			var n = r("./node_modules/reselect/es/index.js"),
 				s = r("./src/lib/makeProductOfferKey/index.ts"),
@@ -6029,27 +6023,15 @@
 					});
 					return null == t ? void 0 : t[0]
 				},
-				u = (e, t) => {
-					let {
-						subredditId: r
-					} = t;
-					const n = d(e, {
-						subredditId: r,
-						type: a.c.Powerups
-					});
-					return null == n ? void 0 : n[0]
-				},
-				m = Object(n.a)(u, e => null == e ? void 0 : e.pricePackages[0]),
-				p = Object(n.a)(m, e => null == e ? void 0 : e.price),
-				b = e => {
+				u = e => {
 					const t = d(e, {
 						type: a.c.Premium
 					});
 					return (null == t ? void 0 : t[0]) || null
 				},
-				h = (e, t) => (null == e ? void 0 : e.pricePackages) ? null == e ? void 0 : e.pricePackages.filter(e => e.renewInterval === t && e.requiredPaymentProviders && (e => e[0] === o.b.PayPal || e[0] === o.b.Stripe)(e.requiredPaymentProviders)) : null,
-				f = Object(n.a)(b, i.p, (e, t) => h(e, t) || null),
-				g = Object(n.a)(f, (e, t) => {
+				m = (e, t) => (null == e ? void 0 : e.pricePackages) ? null == e ? void 0 : e.pricePackages.filter(e => e.renewInterval === t && e.requiredPaymentProviders && (e => e[0] === o.b.PayPal || e[0] === o.b.Stripe)(e.requiredPaymentProviders)) : null,
+				p = Object(n.a)(u, i.p, (e, t) => m(e, t) || null),
+				b = Object(n.a)(p, (e, t) => {
 					let {
 						provider: r
 					} = t;
@@ -6058,12 +6040,12 @@
 					var r;
 					return (null === (r = e.requiredPaymentProviders) || void 0 === r ? void 0 : r[0]) === t
 				})),
-				v = Object(n.a)(f, e => (null == e ? void 0 : e[0].price) || null),
-				O = Object(n.a)(e => {
+				h = Object(n.a)(p, e => (null == e ? void 0 : e[0].price) || null),
+				f = Object(n.a)(e => {
 					var t;
 					return null === (t = e.user.productOfferSubscriptions) || void 0 === t ? void 0 : t.subscriptions
 				}, e => null == e ? void 0 : e[0]),
-				j = Object(n.a)(O, e => Boolean(null == e ? void 0 : e.isCanceled))
+				g = Object(n.a)(f, e => Boolean(null == e ? void 0 : e.isCanceled))
 		},
 		"./src/reddit/selectors/subredditMention.ts": function(e, t, r) {
 			"use strict";
@@ -6143,4 +6125,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/FramedGild~GildModal.ef98a0588118a02b948f.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/FramedGild~GildModal.adbd9f5086279e6ece5e.js.map

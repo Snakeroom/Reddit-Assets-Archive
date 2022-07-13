@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModQueuePages.dffdd45db48965fb67b4.js
-// Retrieved at 7/11/2022, 7:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModQueuePages.48138dc1623d0fabda3f.js
+// Retrieved at 7/13/2022, 11:20:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModQueuePages"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -7979,7 +7979,7 @@
 					let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : a,
 						t = arguments.length > 1 ? arguments[1] : void 0;
 					switch (t.type) {
-						case r.nb:
+						case r.mb:
 							const {
 								subredditId: n, subredditAchievementFlairs: s
 							} = t.payload;
@@ -8395,4 +8395,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModQueuePages.dffdd45db48965fb67b4.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModQueuePages.48138dc1623d0fabda3f.js.map

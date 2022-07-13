@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.0eae58b7b6cbd583cd9a.js
-// Retrieved at 7/13/2022, 10:40:12 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.257e85dcc3197ed7b015.js
+// Retrieved at 7/13/2022, 11:20:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Chat~Governance~Reddit"], {
 		"./assets/fonts/IBMPlexSans/font.less": function(e, t, i) {},
@@ -3467,11 +3467,11 @@
 				apiPassThroughHeaders: Object(r.e)({}.API_PASS_THROUGH_HEADERS || ""),
 				appName: {}.APP_NAME || "desktop2x",
 				assetPath: "https://www.redditstatic.com/desktop2x",
-				buildNumber: Object(r.c)("168407"),
+				buildNumber: Object(r.c)("168418"),
 				chatHelpUrl: {}.CHAT_HELP_URL || "https://reddit.zendesk.com/hc/en-us/sections/360008805652-Chat",
 				hlsVersion: "hls 0.12.4",
 				dashVersion: "dash 3.2.0",
-				buildTimestamp: Object(r.b)("1657721195"),
+				buildTimestamp: Object(r.b)("1657723610"),
 				cookieDomain: ".reddit.com",
 				giphyApiKey: "k2kwyMA6VeyHM6ZRT96OXDGaersnx73Z",
 				mediaUrl: "https://www.redditmedia.com",
@@ -6087,14 +6087,14 @@
 					}))
 				},
 				Y = (e, t, i) => {
-					console.log("%cStarting Raven %crelease %c248a715e439e7386172fca9bb83621650cbc7ede-production" + ` %cpublic url %c${y.a.sentryClientPublicURL}`, "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
+					console.log("%cStarting Raven %crelease %cad339b2193484d39fc86f0a27b023c5d50d43c7c-production" + ` %cpublic url %c${y.a.sentryClientPublicURL}`, "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
 					let n = [];
 					n = [new RegExp(`^${y.a.assetPath}`, "i")];
 					o.e({
 						attachStacktrace: !0,
 						dsn: y.a.sentryClientPublicURL,
 						whitelistUrls: n,
-						release: "248a715e439e7386172fca9bb83621650cbc7ede-production",
+						release: "ad339b2193484d39fc86f0a27b023c5d50d43c7c-production",
 						environment: "production",
 						ignoreErrors: ["$ is not defined"],
 						integrations: [...Object(L.d)(), new d.Integrations.Breadcrumbs({
@@ -6620,7 +6620,7 @@
 							settings: r,
 							statusCode: s,
 							type: o,
-							releaseClient: "248a715e439e7386172fca9bb83621650cbc7ede-production",
+							releaseClient: "ad339b2193484d39fc86f0a27b023c5d50d43c7c-production",
 							appName: t.statsAppName,
 							error: n ? JSON.parse(Object(l.a)(n)) : void 0
 						},
@@ -9496,11 +9496,11 @@
 				return l
 			})), i.d(t, "g", (function() {
 				return u
-			})), i.d(t, "hb", (function() {
-				return c
-			})), i.d(t, "ib", (function() {
-				return _
 			})), i.d(t, "gb", (function() {
+				return c
+			})), i.d(t, "hb", (function() {
+				return _
+			})), i.d(t, "fb", (function() {
 				return m
 			})), i.d(t, "H", (function() {
 				return p
@@ -9530,7 +9530,7 @@
 				return I
 			})), i.d(t, "a", (function() {
 				return R
-			})), i.d(t, "lb", (function() {
+			})), i.d(t, "kb", (function() {
 				return F
 			})), i.d(t, "x", (function() {
 				return N
@@ -9546,15 +9546,15 @@
 				return D
 			})), i.d(t, "C", (function() {
 				return x
-			})), i.d(t, "V", (function() {
+			})), i.d(t, "U", (function() {
 				return L
-			})), i.d(t, "Y", (function() {
-				return B
 			})), i.d(t, "X", (function() {
-				return k
+				return B
 			})), i.d(t, "W", (function() {
+				return k
+			})), i.d(t, "V", (function() {
 				return M
-			})), i.d(t, "Z", (function() {
+			})), i.d(t, "Y", (function() {
 				return U
 			})), i.d(t, "r", (function() {
 				return G
@@ -9570,37 +9570,37 @@
 				return K
 			})), i.d(t, "t", (function() {
 				return z
-			})), i.d(t, "kb", (function() {
-				return Y
 			})), i.d(t, "jb", (function() {
+				return Y
+			})), i.d(t, "ib", (function() {
 				return $
 			})), i.d(t, "D", (function() {
 				return Q
-			})), i.d(t, "pb", (function() {
-				return J
 			})), i.d(t, "ob", (function() {
-				return X
-			})), i.d(t, "mb", (function() {
-				return Z
+				return J
 			})), i.d(t, "nb", (function() {
+				return X
+			})), i.d(t, "lb", (function() {
+				return Z
+			})), i.d(t, "mb", (function() {
 				return ee
-			})), i.d(t, "zb", (function() {
-				return te
 			})), i.d(t, "yb", (function() {
-				return ie
+				return te
 			})), i.d(t, "xb", (function() {
+				return ie
+			})), i.d(t, "wb", (function() {
 				return ne
-			})), i.d(t, "fb", (function() {
-				return re
 			})), i.d(t, "eb", (function() {
-				return se
+				return re
 			})), i.d(t, "db", (function() {
+				return se
+			})), i.d(t, "cb", (function() {
 				return oe
-			})), i.d(t, "T", (function() {
-				return de
-			})), i.d(t, "U", (function() {
-				return ae
 			})), i.d(t, "S", (function() {
+				return de
+			})), i.d(t, "T", (function() {
+				return ae
+			})), i.d(t, "R", (function() {
 				return le
 			})), i.d(t, "O", (function() {
 				return ue
@@ -9608,31 +9608,31 @@
 				return ce
 			})), i.d(t, "N", (function() {
 				return _e
-			})), i.d(t, "R", (function() {
-				return me
 			})), i.d(t, "Q", (function() {
-				return pe
+				return me
 			})), i.d(t, "E", (function() {
-				return he
+				return pe
 			})), i.d(t, "M", (function() {
-				return fe
-			})), i.d(t, "cb", (function() {
-				return be
+				return he
 			})), i.d(t, "bb", (function() {
-				return ge
+				return fe
 			})), i.d(t, "ab", (function() {
-				return we
-			})), i.d(t, "Cb", (function() {
-				return ve
+				return be
+			})), i.d(t, "Z", (function() {
+				return ge
 			})), i.d(t, "Bb", (function() {
-				return ye
+				return we
 			})), i.d(t, "Ab", (function() {
+				return ve
+			})), i.d(t, "zb", (function() {
+				return ye
+			})), i.d(t, "Eb", (function() {
 				return Ee
-			})), i.d(t, "Fb", (function() {
+			})), i.d(t, "Cb", (function() {
 				return Se
 			})), i.d(t, "Db", (function() {
 				return Te
-			})), i.d(t, "Eb", (function() {
+			})), i.d(t, "pb", (function() {
 				return Oe
 			})), i.d(t, "qb", (function() {
 				return Ie
@@ -9646,8 +9646,6 @@
 				return Ce
 			})), i.d(t, "vb", (function() {
 				return Ae
-			})), i.d(t, "wb", (function() {
-				return je
 			}));
 			const n = "GIVE_PREMIUM__OPEN_GIVE_PREMIUM_MODAL",
 				r = "GIVE_PREMIUM__CLOSE_GIVE_PREMIUM_MODAL",
@@ -9713,26 +9711,25 @@
 				ue = "POWERUPS__CANCEL_PAYMENT_PENDING",
 				ce = "POWERUPS__CANCEL_PAYMENT_SUCCESSFUL",
 				_e = "POWERUPS__CANCEL_PAYMENT_FAILED",
-				me = "POWERUPS__PAYMENT_COMPLETED",
-				pe = "POWERUPS_PURCHASE__POWERUPS_COUNT_CHANGED",
-				he = "POWERUPS_PURCHASE__IS_ANONYMOUS_CHANGED",
-				fe = "POWERUPS__BENEFIT_SETTINGS_UPDATED",
-				be = "PRODUCT_OFFERS__OFFERS_PENDING",
-				ge = "PRODUCT_OFFERS__OFFERS_LOADED",
-				we = "PRODUCT_OFFERS__OFFERS_FAILED",
-				ve = "PRODUCT_OFFERS__SUBSCRIPTIONS_PENDING",
-				ye = "PRODUCT_OFFERS__SUBSCRIPTIONS_LOADED",
-				Ee = "PRODUCT_OFFERS__SUBSCRIPTIONS_FAILED",
-				Se = "PRODUCT_OFFERS__CANCEL_SUBSCRIPTION_PENDING",
-				Te = "PRODUCT_OFFERS__CANCEL_SUBSCRIPTION_COMPLETED",
-				Oe = "PRODUCT_OFFERS__CANCEL_SUBSCRIPTION_FAILED",
-				Ie = "TOP_AWARDED__POSTS_FAILED",
-				Re = "TOP_AWARDED__POSTS_LOADED",
-				Fe = "TOP_AWARDED__POSTS_PENDING",
-				Ne = "TOP_AWARDERS__LEADERBOARD_FAILED",
-				Ce = "TOP_AWARDERS__LEADERBOARD_LOADED",
-				Ae = "TOP_AWARDERS__LEADERBOARD_PENDING",
-				je = "TOP_AWARDERS__MODAL_OPENED"
+				me = "POWERUPS_PURCHASE__POWERUPS_COUNT_CHANGED",
+				pe = "POWERUPS_PURCHASE__IS_ANONYMOUS_CHANGED",
+				he = "POWERUPS__BENEFIT_SETTINGS_UPDATED",
+				fe = "PRODUCT_OFFERS__OFFERS_PENDING",
+				be = "PRODUCT_OFFERS__OFFERS_LOADED",
+				ge = "PRODUCT_OFFERS__OFFERS_FAILED",
+				we = "PRODUCT_OFFERS__SUBSCRIPTIONS_PENDING",
+				ve = "PRODUCT_OFFERS__SUBSCRIPTIONS_LOADED",
+				ye = "PRODUCT_OFFERS__SUBSCRIPTIONS_FAILED",
+				Ee = "PRODUCT_OFFERS__CANCEL_SUBSCRIPTION_PENDING",
+				Se = "PRODUCT_OFFERS__CANCEL_SUBSCRIPTION_COMPLETED",
+				Te = "PRODUCT_OFFERS__CANCEL_SUBSCRIPTION_FAILED",
+				Oe = "TOP_AWARDED__POSTS_FAILED",
+				Ie = "TOP_AWARDED__POSTS_LOADED",
+				Re = "TOP_AWARDED__POSTS_PENDING",
+				Fe = "TOP_AWARDERS__LEADERBOARD_FAILED",
+				Ne = "TOP_AWARDERS__LEADERBOARD_LOADED",
+				Ce = "TOP_AWARDERS__LEADERBOARD_PENDING",
+				Ae = "TOP_AWARDERS__MODAL_OPENED"
 		},
 		"./src/reddit/actions/gold/tooltips.ts": function(e, t, i) {
 			"use strict";
@@ -18163,7 +18160,7 @@
 					return r
 				})),
 				function(e) {
-					e.ACHIEVEMENT_FLAIR = "achievement_flair", e.ADD_REMOVAL_REASON = "add_removal_reason", e.ALPHA_CONSUMER = "alpha_consumer", e.BADGE_PURCHASE = "badge_purchase", e.BAN_USER = "ban_user", e.BLADE_NIGHTMODE = "blade_nightmode", e.BLADE_UNSAVED_CHANGES = "blade_unsaved_changes", e.CHANGE_PASSWORD_MODAL_ID = "account_manager_change_password", e.CONFETTI_ANIMATION_OVERLAY = "confetti_animation_overlay", e.CONFIRM_CLOSE_COIN_MODAL_ID = "confirm_close_coin_modal_id", e.CONFIRM_CLOSE_PREMIUM_MODAL_ID = "confirm_close_premium_modal_id", e.CONTRIBUTOR_REQUEST = "contributor_request", e.CONTRIBUTOR_REQUEST_PENDING = "contributor_request_pending", e.CONTRIBUTOR_REQUEST_PRIVATE_SUREDDIT = "contributor_request_private_subreddit", e.CONVERT_TO_COINS = "convert_to_coins", e.CRYPTO_BURN_POINTS = "crypto_burn_points", e.CRYPTO_PURCHASE_ETH = "crypto_purchase_eth", e.DISABLE_TWO_FACTOR = "disable_2fa_modal", e.ECON_CLAIM_FREE_AWARD_MODAL = "econ_claim_free_award_modal", e.ECON_COIN_PURCHASE = "econ_coin_purchase", e.ECON_COIN_PACKAGE_OFFER = "econ_coin_package_offer", e.ECON_MARKETPLACE_CLAIM = "econ_marketplace_claim", e.ECON_NFT_PRODUCT_DETAILS = "econ_nft_product_details", e.ECON_POWERUPS_MARKETING = "econ_powerups_marketing", e.ECON_POWERUPS_PURCHASE = "econ_powerups_purchase", e.ECON_POWERUPS_PREMIUM_UPSELL = "econ_powerups_premium_upsell", e.ECON_POWERUPS_SUCCESS = "econ_powerups_success", e.ECON_PREDICTIONS_CHANGE_END_TIME = "econ_predictions_end_time", e.ECON_PREDICTIONS_CHANGE_OUTCOME = "econ_predictions_change_outcome", e.ECON_PREDICTIONS_CANCEL_PREDICTION = "econ_predictions_cancel_prediction", e.ECON_PREDICTIONS_INACTIVITY_MODAL = "econ_predictions_inactivity_modal", e.ECON_PREDICTIONS_PREMIUM_UPSELL = "econ_predictions_premium_upsell", e.ECON_PREDICTIONS_START_TOURNAMENT_LIMIT = "econ_predictions_start_tournament_limitation", e.ECON_PREMIUM_PURCHASE = "econ_premium_purchase", e.ECON_TOP_AWARDERS = "econ_top_awarders", e.ECON_SUPPORTERS_LIST = "econ_supporters_list", e.EDIT_DESCRIPTION_MODAL = "edit_community_description_modal", e.ENABLE_TWO_FACTOR = "enable_2fa_modal", e.GOLD_GILD_ANIMATION_OVERLAY = "gold_gild_animation_overlay", e.GOLD_GILD_MODAL = "gold_gild_modal", e.GOLD_TARGETED_OFFER_MODAL = "gold_targeted_offer", e.GOOGLE_ONE_TAP_MODAL_ID = "google_one_tap_modal_id", e.GOVERNANCE_OPT_OUT = "governance_opt_out", e.GOVERNANCE_RELEASE_NOTES = "governance_release_notes", e.GOVERNANCE_MAINNET_LAUNCH = "governance_mainnet_launch", e.HARBERGER_TAX_CRYPTO_BANNER_MANAGE = "harberger_tax_crypto_banner_manage", e.HARBERGER_TAX_CRYPTO_BANNER_PURCHASE = "hargerger_tax_crypto_banner_purchase", e.HARBERGER_TAX_BANNER_MANAGE = "harberger_tax_banner_manage", e.HARBERGER_TAX_BANNER_PURCHASE = "harberger_tax_banner_purchase", e.KEYBOARD_SHORTCUTS = "keyboard_shortcuts", e.LINK_APPLE_SSO = "link_apple_sso", e.LINK_GOOGLE_SSO = "link_google_sso", e.LOGIN_MODAL_ID = "account_manager_login", e.MOD_TO_MEMBER_SHARE = "mod_to_member_share", e.CROWD_CONTROL = "crowd_control", e.MULTIREDDIT_ADD_SUBREDDIT = "multireddit_add_subreddit", e.MULTIREDDIT_CREATE = "multireddit_create", e.MULTIREDDIT_DUPLICATE = "multireddit_duplicate", e.MULTIREDDIT_EDIT = "multireddit_edit", e.MUTE_USER = "mute_user", e.NSFW_BLOCKING_MODAL_V2 = "nsfw_blocking_modal_v2", e.ONBOARDING_MODAL_D2X = "d2x_onboarding", e.ONBOARDING_MODAL_ID = "account_manager_onboarding", e.PINNED_POSTS_LIMIT_REACHED = "pinned_posts_limit_reached", e.POST_FLOW_UPSELL_MODAL_ID = "post_flow_upsell_modal", e.REDESIGN_MODAL = "redesign_modal", e.REGISTER_MODAL_ID = "account_manager_register", e.SNOOVATAR_MODAL = "snoovatar_modal", e.SPEZ_MODAL = "spez_modal", e.SUBREDDIT_CREATION_MODAL_ID = "subreddit_creation_modal_id", e.SUBREDDIT_PREMIUM_BADGE_MANAGEMENT = "subreddit_premium_badge_management", e.SUBREDDIT_PREMIUM_GIFT_MODAL = "subreddit_premium_gift", e.SUBREDDIT_PREMIUM_UPLOAD_MODAL = "subreddit_premium_upload", e.TRANSFER_POINTS = "community_points_transfer", e.TWO_FACTOR_BACKUP_CODES = "two_factor_backup_codes", e.UNLINK_APPLE_SSO = "unlink_apple_sso", e.UNLINK_GOOGLE_SSO = "unlink_google_sso", e.USER_FLAIR_MODAL_ID = "user_flair_modal", e.WALLET_REGISTRATION_MODAL = "wallet_registration_modal"
+					e.ACHIEVEMENT_FLAIR = "achievement_flair", e.ADD_REMOVAL_REASON = "add_removal_reason", e.ALPHA_CONSUMER = "alpha_consumer", e.BADGE_PURCHASE = "badge_purchase", e.BAN_USER = "ban_user", e.BLADE_NIGHTMODE = "blade_nightmode", e.BLADE_UNSAVED_CHANGES = "blade_unsaved_changes", e.CHANGE_PASSWORD_MODAL_ID = "account_manager_change_password", e.CONFETTI_ANIMATION_OVERLAY = "confetti_animation_overlay", e.CONFIRM_CLOSE_COIN_MODAL_ID = "confirm_close_coin_modal_id", e.CONFIRM_CLOSE_PREMIUM_MODAL_ID = "confirm_close_premium_modal_id", e.CONTRIBUTOR_REQUEST = "contributor_request", e.CONTRIBUTOR_REQUEST_PENDING = "contributor_request_pending", e.CONTRIBUTOR_REQUEST_PRIVATE_SUREDDIT = "contributor_request_private_subreddit", e.CONVERT_TO_COINS = "convert_to_coins", e.CRYPTO_BURN_POINTS = "crypto_burn_points", e.CRYPTO_PURCHASE_ETH = "crypto_purchase_eth", e.DISABLE_TWO_FACTOR = "disable_2fa_modal", e.ECON_CLAIM_FREE_AWARD_MODAL = "econ_claim_free_award_modal", e.ECON_COIN_PURCHASE = "econ_coin_purchase", e.ECON_COIN_PACKAGE_OFFER = "econ_coin_package_offer", e.ECON_MARKETPLACE_CLAIM = "econ_marketplace_claim", e.ECON_NFT_PRODUCT_DETAILS = "econ_nft_product_details", e.ECON_POWERUPS_MARKETING = "econ_powerups_marketing", e.ECON_POWERUPS_PURCHASE = "econ_powerups_purchase", e.ECON_POWERUPS_SUCCESS = "econ_powerups_success", e.ECON_PREDICTIONS_CHANGE_END_TIME = "econ_predictions_end_time", e.ECON_PREDICTIONS_CHANGE_OUTCOME = "econ_predictions_change_outcome", e.ECON_PREDICTIONS_CANCEL_PREDICTION = "econ_predictions_cancel_prediction", e.ECON_PREDICTIONS_INACTIVITY_MODAL = "econ_predictions_inactivity_modal", e.ECON_PREDICTIONS_PREMIUM_UPSELL = "econ_predictions_premium_upsell", e.ECON_PREDICTIONS_START_TOURNAMENT_LIMIT = "econ_predictions_start_tournament_limitation", e.ECON_PREMIUM_PURCHASE = "econ_premium_purchase", e.ECON_TOP_AWARDERS = "econ_top_awarders", e.ECON_SUPPORTERS_LIST = "econ_supporters_list", e.EDIT_DESCRIPTION_MODAL = "edit_community_description_modal", e.ENABLE_TWO_FACTOR = "enable_2fa_modal", e.GOLD_GILD_ANIMATION_OVERLAY = "gold_gild_animation_overlay", e.GOLD_GILD_MODAL = "gold_gild_modal", e.GOLD_TARGETED_OFFER_MODAL = "gold_targeted_offer", e.GOOGLE_ONE_TAP_MODAL_ID = "google_one_tap_modal_id", e.GOVERNANCE_OPT_OUT = "governance_opt_out", e.GOVERNANCE_RELEASE_NOTES = "governance_release_notes", e.GOVERNANCE_MAINNET_LAUNCH = "governance_mainnet_launch", e.HARBERGER_TAX_CRYPTO_BANNER_MANAGE = "harberger_tax_crypto_banner_manage", e.HARBERGER_TAX_CRYPTO_BANNER_PURCHASE = "hargerger_tax_crypto_banner_purchase", e.HARBERGER_TAX_BANNER_MANAGE = "harberger_tax_banner_manage", e.HARBERGER_TAX_BANNER_PURCHASE = "harberger_tax_banner_purchase", e.KEYBOARD_SHORTCUTS = "keyboard_shortcuts", e.LINK_APPLE_SSO = "link_apple_sso", e.LINK_GOOGLE_SSO = "link_google_sso", e.LOGIN_MODAL_ID = "account_manager_login", e.MOD_TO_MEMBER_SHARE = "mod_to_member_share", e.CROWD_CONTROL = "crowd_control", e.MULTIREDDIT_ADD_SUBREDDIT = "multireddit_add_subreddit", e.MULTIREDDIT_CREATE = "multireddit_create", e.MULTIREDDIT_DUPLICATE = "multireddit_duplicate", e.MULTIREDDIT_EDIT = "multireddit_edit", e.MUTE_USER = "mute_user", e.NSFW_BLOCKING_MODAL_V2 = "nsfw_blocking_modal_v2", e.ONBOARDING_MODAL_D2X = "d2x_onboarding", e.ONBOARDING_MODAL_ID = "account_manager_onboarding", e.PINNED_POSTS_LIMIT_REACHED = "pinned_posts_limit_reached", e.POST_FLOW_UPSELL_MODAL_ID = "post_flow_upsell_modal", e.REDESIGN_MODAL = "redesign_modal", e.REGISTER_MODAL_ID = "account_manager_register", e.SNOOVATAR_MODAL = "snoovatar_modal", e.SPEZ_MODAL = "spez_modal", e.SUBREDDIT_CREATION_MODAL_ID = "subreddit_creation_modal_id", e.SUBREDDIT_PREMIUM_BADGE_MANAGEMENT = "subreddit_premium_badge_management", e.SUBREDDIT_PREMIUM_GIFT_MODAL = "subreddit_premium_gift", e.SUBREDDIT_PREMIUM_UPLOAD_MODAL = "subreddit_premium_upload", e.TRANSFER_POINTS = "community_points_transfer", e.TWO_FACTOR_BACKUP_CODES = "two_factor_backup_codes", e.UNLINK_APPLE_SSO = "unlink_apple_sso", e.UNLINK_GOOGLE_SSO = "unlink_google_sso", e.USER_FLAIR_MODAL_ID = "user_flair_modal", e.WALLET_REGISTRATION_MODAL = "wallet_registration_modal"
 				}(n || (n = {}));
 			const r = [n.GOOGLE_ONE_TAP_MODAL_ID]
 		},
@@ -33545,15 +33542,15 @@
 				let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : F,
 					t = arguments.length > 1 ? arguments[1] : void 0;
 				switch (t.type) {
-					case m.T:
+					case m.S:
 						return {
 							pending: !0, successful: !1, error: !1
 						};
-					case m.U:
+					case m.T:
 						return {
 							pending: !1, successful: !0, error: !1
 						};
-					case m.S:
+					case m.R:
 						return {
 							pending: !1, successful: !1, error: !0
 						};
@@ -33593,8 +33590,7 @@
 					switch (t.type) {
 						case S.c:
 							return !1;
-						case m.U:
-						case m.R:
+						case m.T:
 							return !0;
 						default:
 							return e
@@ -33613,7 +33609,7 @@
 					case r.x:
 						return "selectPayment";
 					case r.A:
-					case m.V:
+					case m.U:
 						return "paymentCompleted";
 					default:
 						return e
@@ -33640,7 +33636,7 @@
 				let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : null,
 					t = arguments.length > 1 ? arguments[1] : void 0;
 				switch (t.type) {
-					case m.Z: {
+					case m.Y: {
 						if (!t.payload) return e;
 						const {
 							renewInterval: i
@@ -33679,7 +33675,7 @@
 					let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : G,
 						t = arguments.length > 1 ? arguments[1] : void 0;
 					switch (t.type) {
-						case m.X: {
+						case m.W: {
 							const {
 								productOffers: i
 							} = t.payload;
@@ -48375,4 +48371,4 @@
 		"ignored /drone/src/node_modules/readable-stream/lib/internal/streams util": function(e, t) {}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.0eae58b7b6cbd583cd9a.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.257e85dcc3197ed7b015.js.map

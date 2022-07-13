@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfileFollowersPage.94f77eaf19366bcbd4f0.js
-// Retrieved at 7/13/2022, 10:40:12 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfileFollowersPage.b8d5d0a3451624a11a5b.js
+// Retrieved at 7/13/2022, 11:20:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfileFollowersPage", "ProfileFollowersAction"], {
 		"./node_modules/lodash/take.js": function(e, t, s) {
@@ -820,7 +820,7 @@
 					t(S.m({
 						title: Re(s(), p)
 					})), Object(C.S)(P) && Object(C.W)(P, p) && t(Object(O.startChangeUsernameFlow)());
-					const M = [t(Object(d.q)()), t(k.b(g, R)), t(N.b(g)), t(_.o(p)), t(N.i(p)), t(w.j(p, F))];
+					const M = [t(Object(d.q)()), t(k.b(g, R)), t(N.b(g)), t(_.o(p)), t(N.i(p)), t(w.i(p, F))];
 					await Promise.all(M)
 				}, Re = (e, t) => Object(y.q)(e, {
 					profileName: t
@@ -6161,4 +6161,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileFollowersPage.94f77eaf19366bcbd4f0.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileFollowersPage.b8d5d0a3451624a11a5b.js.map

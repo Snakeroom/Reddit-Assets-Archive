@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ClaimFreeAwardModal.58030363360362fc25c6.js
-// Retrieved at 6/30/2022, 12:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ClaimFreeAwardModal.216f209465514b05aca8.js
+// Retrieved at 7/13/2022, 11:20:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ClaimFreeAwardModal"], {
 		"./src/reddit/actions/economics/powerups/helpers.ts": function(e, t, r) {
@@ -16,7 +16,7 @@
 			})), r.d(t, "c", (function() {
 				return g
 			})), r.d(t, "a", (function() {
-				return y
+				return P
 			}));
 			var n = r("./node_modules/fbt/lib/FbtPublic.js"),
 				a = r("./src/lib/env/index.ts"),
@@ -66,7 +66,7 @@
 							t(O(e))
 						}
 					}
-				}, g = () => async e => e(j()), P = Object(o.a)(b.h), y = () => async (e, t, r) => {
+				}, g = () => async e => e(j()), y = Object(o.a)(b.h), P = () => async (e, t, r) => {
 					let {
 						gqlContext: o
 					} = r;
@@ -78,7 +78,7 @@
 							if (null === (u = r.errors) || void 0 === u ? void 0 : u.length) throw new Error(r.errors.map(e => e.message).join(" | "));
 							if (!(null === (f = r.awards) || void 0 === f ? void 0 : f.length)) throw new Error("Got empty award list on free award offer claim");
 							if (!r.ok) throw new Error("Got not ok response on free award offer claim");
-							await e(P({
+							await e(y({
 								awards: r.awards
 							})), e(Object(l.B)())
 						}
@@ -129,7 +129,7 @@
 				h = r.n(v);
 			const {
 				fbt: j
-			} = r("./node_modules/fbt/lib/FbtPublic.js"), g = "https://www.redditstatic.com/gold/awards/animations/free_award", P = (e, t) => {
+			} = r("./node_modules/fbt/lib/FbtPublic.js"), g = "https://www.redditstatic.com/gold/awards/animations/free_award", y = (e, t) => {
 				var r;
 				return (null === (r = null == e ? void 0 : e.assets) || void 0 === r ? void 0 : r.length) && (null == t ? void 0 : t.icon) && (e.assets[0].u = t.icon.url, e.assets[0].p = ""), e
 			};
@@ -146,7 +146,7 @@
 				const v = () => {
 					e(Object(l.a)("complete")), t(Object(p.f)())
 				};
-				let y = !1;
+				let P = !1;
 				return s.a.createElement(O.e, {
 					className: h.a.body
 				}, s.a.createElement("button", {
@@ -157,8 +157,8 @@
 					loop: !0,
 					className: h.a.flyingAnimation,
 					onClick: () => {
-						y || (e(Object(l.a)("redeem")), t(Object(f.a)()), y = !0, setTimeout(() => {
-							y = !1
+						P || (e(Object(l.a)("redeem")), t(Object(f.a)()), P = !0, setTimeout(() => {
+							P = !1
 						}, 1e4))
 					}
 				}), s.a.createElement("p", {
@@ -166,7 +166,7 @@
 				}, j._("Open it! Open it! (Just click, it’s easy)", null, {
 					hk: "2RWqvN"
 				}))), r && n && s.a.createElement(s.a.Fragment, null, s.a.createElement(b.a, {
-					assetData: P(n, r),
+					assetData: y(n, r),
 					className: h.a.openingAnimation,
 					onClick: a.a
 				}), s.a.createElement("h2", {
@@ -250,30 +250,24 @@
 		},
 		"./src/reddit/selectors/gold/productOffers.ts": function(e, t, r) {
 			"use strict";
-			r.d(t, "j", (function() {
+			r.d(t, "g", (function() {
 				return c
-			})), r.d(t, "k", (function() {
+			})), r.d(t, "h", (function() {
 				return i
 			})), r.d(t, "a", (function() {
 				return l
 			})), r.d(t, "d", (function() {
 				return u
-			})), r.d(t, "b", (function() {
+			})), r.d(t, "i", (function() {
 				return f
 			})), r.d(t, "c", (function() {
-				return p
-			})), r.d(t, "g", (function() {
 				return m
-			})), r.d(t, "l", (function() {
+			})), r.d(t, "b", (function() {
 				return b
 			})), r.d(t, "f", (function() {
-				return O
+				return w
 			})), r.d(t, "e", (function() {
-				return v
-			})), r.d(t, "i", (function() {
-				return h
-			})), r.d(t, "h", (function() {
-				return j
+				return O
 			}));
 			var n = r("./node_modules/reselect/es/index.js"),
 				a = r("./src/lib/makeProductOfferKey/index.ts"),
@@ -295,27 +289,15 @@
 					});
 					return null == t ? void 0 : t[0]
 				},
-				u = (e, t) => {
-					let {
-						subredditId: r
-					} = t;
-					const n = i(e, {
-						subredditId: r,
-						type: o.c.Powerups
-					});
-					return null == n ? void 0 : n[0]
-				},
-				f = Object(n.a)(u, e => null == e ? void 0 : e.pricePackages[0]),
-				p = Object(n.a)(f, e => null == e ? void 0 : e.price),
-				m = e => {
+				u = e => {
 					const t = i(e, {
 						type: o.c.Premium
 					});
 					return (null == t ? void 0 : t[0]) || null
 				},
-				b = (e, t) => (null == e ? void 0 : e.pricePackages) ? null == e ? void 0 : e.pricePackages.filter(e => e.renewInterval === t && e.requiredPaymentProviders && (e => e[0] === s.b.PayPal || e[0] === s.b.Stripe)(e.requiredPaymentProviders)) : null,
-				w = Object(n.a)(m, d.p, (e, t) => b(e, t) || null),
-				O = Object(n.a)(w, (e, t) => {
+				f = (e, t) => (null == e ? void 0 : e.pricePackages) ? null == e ? void 0 : e.pricePackages.filter(e => e.renewInterval === t && e.requiredPaymentProviders && (e => e[0] === s.b.PayPal || e[0] === s.b.Stripe)(e.requiredPaymentProviders)) : null,
+				p = Object(n.a)(u, d.p, (e, t) => f(e, t) || null),
+				m = Object(n.a)(p, (e, t) => {
 					let {
 						provider: r
 					} = t;
@@ -324,16 +306,16 @@
 					var r;
 					return (null === (r = e.requiredPaymentProviders) || void 0 === r ? void 0 : r[0]) === t
 				})),
-				v = Object(n.a)(w, e => (null == e ? void 0 : e[0].price) || null),
-				h = Object(n.a)(e => {
+				b = Object(n.a)(p, e => (null == e ? void 0 : e[0].price) || null),
+				w = Object(n.a)(e => {
 					var t;
 					return null === (t = e.user.productOfferSubscriptions) || void 0 === t ? void 0 : t.subscriptions
 				}, e => null == e ? void 0 : e[0]),
-				j = Object(n.a)(h, e => Boolean(null == e ? void 0 : e.isCanceled))
+				O = Object(n.a)(w, e => Boolean(null == e ? void 0 : e.isCanceled))
 		},
 		"./src/redditGQL/operations/PurchaseCatalogProductOffers.json": function(e) {
 			e.exports = JSON.parse('{"id":"098518521d5b"}')
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ClaimFreeAwardModal.58030363360362fc25c6.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ClaimFreeAwardModal.216f209465514b05aca8.js.map

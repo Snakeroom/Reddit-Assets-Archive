@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfileOverview.18e33bc8caa620a7a908.js
-// Retrieved at 7/11/2022, 7:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfileOverview.406bf1acef313a266c17.js
+// Retrieved at 7/13/2022, 11:20:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfileOverview"], {
 		"./src/lib/makeOverviewConversationsItemKey/index.ts": function(e, t, s) {
@@ -831,7 +831,7 @@
 					t(I.m({
 						title: Me(s(), u)
 					})), Object(P.S)(N) && Object(P.W)(N, u) && t(Object(E.startChangeUsernameFlow)());
-					const F = [t(Object(d.q)()), t(S.b(O, M)), t(_.b(O)), t(y.o(u)), t(_.i(u)), t(w.j(u, L))];
+					const F = [t(Object(d.q)()), t(S.b(O, M)), t(_.b(O)), t(y.o(u)), t(_.i(u)), t(w.i(u, L))];
 					await Promise.all(F)
 				}, Me = (e, t) => Object(g.q)(e, {
 					profileName: t
@@ -5386,4 +5386,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileOverview.18e33bc8caa620a7a908.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileOverview.406bf1acef313a266c17.js.map

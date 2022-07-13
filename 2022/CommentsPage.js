@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CommentsPage.ee6970f15b6033e56a03.js
-// Retrieved at 7/13/2022, 10:40:12 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CommentsPage.3b51e3cc0af8bb27dcf4.js
+// Retrieved at 7/13/2022, 11:20:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CommentsPage", "PostCreation~Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~r~4c415e24", "Governance~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compo~bd4baca2", "CollectionCommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~SearchResults", "Governance~ModListing~Reddit~ReportFlow~Subreddit", "CollectionCommentsPage~ModProgressModule~NewCommunityProgress", "CollectionCommentsPage~Subreddit~SubredditWiki", "AchievementsActions"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -4555,7 +4555,7 @@
 					!t && i || await n(k(e, [o.id]))
 				}, w = e => async (t, n) => {
 					if (!e) return !1;
-					await t(Object(l.k)(e, {
+					await t(Object(l.j)(e, {
 						fullData: !0
 					}));
 					const s = n();
@@ -6246,7 +6246,7 @@
 						B = Object(ne.Q)(n());
 					if (A && "subreddit" === A.belongsTo.type) {
 						const e = A.belongsTo.id,
-							s = Object(le.i)(() => t(Object(ue.k)(e, {
+							s = Object(le.i)(() => t(Object(ue.j)(e, {
 								fullData: !0,
 								includeIdentity: B
 							})), {
@@ -22381,7 +22381,7 @@
 					className: m.a.user,
 					to: `/user/${f}/`,
 					onClick: () => {
-						b && n(Object(d.r)(b.id, b.displayName))
+						b && n(Object(d.o)(b.id, b.displayName))
 					}
 				}, _) : r.a.createElement("div", {
 					className: m.a.user
@@ -22678,7 +22678,7 @@
 				}))()), o.a.createElement(m, {
 					className: S.a.button,
 					onClick: () => {
-						u(Object(h.n)()), d(Object(c.e)("powerups_sidebar"))
+						u(Object(h.k)()), d(Object(c.e)("powerups_sidebar"))
 					}
 				}), o.a.createElement(p.a, {
 					space: p.b.SIDEBAR
@@ -22696,7 +22696,7 @@
 					className: S.a.heroes,
 					maxSupporters: 8,
 					onShowFullSupportersList: () => {
-						u(Object(h.p)()), d(Object(c.g)(n))
+						u(Object(h.m)()), d(Object(c.f)(n))
 					}
 				}), !(null == E ? void 0 : E.length) && o.a.createElement("div", {
 					className: S.a.becomeFirstHero
@@ -38340,7 +38340,7 @@
 					let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : i,
 						t = arguments.length > 1 ? arguments[1] : void 0;
 					switch (t.type) {
-						case r.nb:
+						case r.mb:
 							const {
 								subredditId: n, subredditAchievementFlairs: s
 							} = t.payload;
@@ -42731,4 +42731,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommentsPage.ee6970f15b6033e56a03.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommentsPage.3b51e3cc0af8bb27dcf4.js.map

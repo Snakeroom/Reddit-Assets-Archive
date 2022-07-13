@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModerationPages.912be9279788403afeca.js
-// Retrieved at 7/12/2022, 2:00:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModerationPages.1d612c4e0132e6a14661.js
+// Retrieved at 7/13/2022, 11:20:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModerationPages"], {
 		"./src/higherOrderComponents/withImageUploads.tsx": function(e, t, s) {
@@ -1286,7 +1286,7 @@
 						K = f.i;
 						break;
 					case o.gc.Powerups:
-						K = x.k;
+						K = x.j;
 						break;
 					case o.gc.Muted:
 						K = z.b;
@@ -16375,7 +16375,7 @@
 					}, e => {
 						r(Object(E.a)(e, "mod_tools"))
 					}, e => {
-						r(Object(E.o)(e, "mod_tools")), s(Object(b.f)({
+						r(Object(E.l)(e, "mod_tools")), s(Object(b.f)({
 							duration: b.a,
 							kind: k.b.SuccessCommunity,
 							text: i.fbt._({
@@ -16500,7 +16500,7 @@
 				})), !g && a.a.createElement(S.p, {
 					on: h,
 					onClick: () => (e => {
-						n(Object(E.q)("comments_with_gifs", e, !e)), s(Object(d.l)(t, {
+						n(Object(E.n)("comments_with_gifs", e, !e)), s(Object(d.k)(t, {
 							[w.a.CommentsWithGifs]: e
 						}))
 					})(!h),
@@ -25485,4 +25485,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.912be9279788403afeca.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.1d612c4e0132e6a14661.js.map

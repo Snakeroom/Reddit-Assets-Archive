@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Subreddit.e53535c3c85b9e802ac1.js
-// Retrieved at 7/13/2022, 10:40:12 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Subreddit.71123f5eef171dd56e19.js
+// Retrieved at 7/13/2022, 11:20:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Subreddit", "Frontpage~ModListing", "reddit-components-Econ-PredictionLeaderboard-Sidebar"], {
 		"./node_modules/@reddit/i18n-tools/runtime/helpers/locale/index.js": function(e, t, n) {
@@ -15690,7 +15690,7 @@
 					let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : a,
 						t = arguments.length > 1 ? arguments[1] : void 0;
 					switch (t.type) {
-						case r.nb:
+						case r.mb:
 							const {
 								subredditId: n, subredditAchievementFlairs: s
 							} = t.payload;
@@ -16841,4 +16841,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Subreddit.e53535c3c85b9e802ac1.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Subreddit.71123f5eef171dd56e19.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CommunityAwards.8b3f750d24ee0522ad2b.js
-// Retrieved at 6/30/2022, 12:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CommunityAwards.1de6680688e819979042.js
+// Retrieved at 7/13/2022, 11:20:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CommunityAwards"], {
 		"./src/reddit/actions/gold/communityAwards/communityAwards.ts": function(e, t, r) {
@@ -339,7 +339,7 @@
 						const e = y();
 						await r(H(e))
 					}
-				}, M = Object(n.a)(O.hb), J = Object(n.a)(O.ib), B = Object(n.a)(O.gb), H = e => async (t, r) => {
+				}, M = Object(n.a)(O.gb), J = Object(n.a)(O.hb), B = Object(n.a)(O.fb), H = e => async (t, r) => {
 					await t(B(e)), t(Object(o.f)({
 						kind: c.b.Error,
 						duration: o.a,
@@ -713,4 +713,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommunityAwards.8b3f750d24ee0522ad2b.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommunityAwards.1de6680688e819979042.js.map

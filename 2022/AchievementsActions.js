@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/AchievementsActions.0d867f8dd42ce55efffe.js
-// Retrieved at 7/11/2022, 3:10:11 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/AchievementsActions.63166119c3ecdd85a47d.js
+// Retrieved at 7/13/2022, 11:20:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["AchievementsActions"], {
 		"./src/reddit/actions/economics/powerups/constants.ts": function(e, r, t) {
@@ -143,7 +143,7 @@
 					!r && s || await t(U(e, [i.id]))
 				}, j = e => async (r, t) => {
 					if (!e) return !1;
-					await r(Object(a.k)(e, {
+					await r(Object(a.j)(e, {
 						fullData: !0
 					}));
 					const d = t();
@@ -307,7 +307,7 @@
 					let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : s,
 						r = arguments.length > 1 ? arguments[1] : void 0;
 					switch (r.type) {
-						case n.nb:
+						case n.mb:
 							const {
 								subredditId: t, subredditAchievementFlairs: d
 							} = r.payload;
@@ -582,4 +582,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/AchievementsActions.0d867f8dd42ce55efffe.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/AchievementsActions.63166119c3ecdd85a47d.js.map

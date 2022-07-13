@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/IdCard.d87e5007a0ae8bb0935a.js
-// Retrieved at 7/11/2022, 7:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/IdCard.9ba95ee6b229f9cbce77.js
+// Retrieved at 7/13/2022, 11:20:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["IdCard", "AchievementsActions", "ContributorRequestButton"], {
 		"./node_modules/autosize/dist/autosize.js": function(e, t, n) {
@@ -574,7 +574,7 @@
 					!t && o || await n(j(e, [i.id]))
 				}, S = e => async (t, n) => {
 					if (!e) return !1;
-					await t(Object(l.k)(e, {
+					await t(Object(l.j)(e, {
 						fullData: !0
 					}));
 					const r = n();
@@ -5448,7 +5448,7 @@
 					let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : o,
 						t = arguments.length > 1 ? arguments[1] : void 0;
 					switch (t.type) {
-						case s.nb:
+						case s.mb:
 							const {
 								subredditId: n, subredditAchievementFlairs: r
 							} = t.payload;
@@ -5770,4 +5770,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/IdCard.d87e5007a0ae8bb0935a.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/IdCard.9ba95ee6b229f9cbce77.js.map

@@ -1,11 +1,11 @@
-// https://www.redditstatic.com/desktop2x/gildActions.a4e553ff2a064a45df56.js
-// Retrieved at 6/30/2022, 12:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/gildActions.4d4850cd0a3db165c99c.js
+// Retrieved at 7/13/2022, 11:20:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["gildActions"], {
 		"./src/reddit/actions/gold/econPurchase.ts": function(e, t, r) {
 			"use strict";
 			r.d(t, "a", (function() {
-				return u
+				return l
 			}));
 			var d = r("./src/lib/initializeClient/installReducer.ts"),
 				s = r("./src/reddit/reducers/features/econPurchase/index.ts"),
@@ -19,12 +19,12 @@
 					econPurchase: s.a
 				}
 			});
-			const l = Object(a.a)(c.lb),
-				u = (e, t, r) => async (d, s, a) => {
+			const u = Object(a.a)(c.kb),
+				l = (e, t, r) => async (d, s, a) => {
 					let {
 						gqlContext: c
 					} = a;
-					var u, b;
+					var l, b;
 					if (!o.a.has(t.toLowerCase())) return;
 					if (void 0 !== s().features.econPurchase.subredditLockedCoins[e] && !(null == r ? void 0 : r.force)) return;
 					const m = await ((e, t) => Object(n.a)(e, {
@@ -35,9 +35,9 @@
 					}))(c(), e);
 					if (m.ok) {
 						const t = m.body;
-						d(l({
+						d(u({
 							subredditId: e,
-							amount: (null === (b = null === (u = t.data.subredditInfoById) || void 0 === u ? void 0 : u.userCoinsInSubreddit) || void 0 === b ? void 0 : b.amount) || 0
+							amount: (null === (b = null === (l = t.data.subredditInfoById) || void 0 === l ? void 0 : l.userCoinsInSubreddit) || void 0 === b ? void 0 : b.amount) || 0
 						}))
 					}
 				}
@@ -66,8 +66,8 @@
 				i = r("./src/reddit/actions/goldPurchaseModals/coinPurchaseModal.ts"),
 				o = r("./src/reddit/actions/goldPurchaseModals/purchaseCatalog.ts"),
 				c = r("./src/reddit/actions/modal.ts"),
-				l = r("./src/reddit/actions/profile/index.ts"),
-				u = r("./src/reddit/actions/toaster.ts"),
+				u = r("./src/reddit/actions/profile/index.ts"),
+				l = r("./src/reddit/actions/toaster.ts"),
 				b = r("./node_modules/react/index.js"),
 				m = r.n(b),
 				w = r("./src/reddit/models/Gold/Award.ts"),
@@ -151,14 +151,14 @@
 										message: o,
 										isAnonymous: c
 									} = n.gild,
-									l = Object(x.b)(n) || Object(B.d)(B.a.GildingFlow, !1),
+									u = Object(x.b)(n) || Object(B.d)(B.a.GildingFlow, !1),
 									{
-										receivedKarma: u
+										receivedKarma: l
 									} = await Object(E.b)(a(), {
 										targetId: e,
 										awardId: i.id,
 										isAnonymous: c,
-										nonce: l,
+										nonce: u,
 										message: Object(M.d)(o, i)
 									}, r),
 									b = await Object(E.a)(a(), {
@@ -168,7 +168,7 @@
 									id: e,
 									awardId: i.id,
 									awardings: b.awardings,
-									awardKarmaReceived: u || 0,
+									awardKarmaReceived: l || 0,
 									coins: b.coins,
 									treatmentTags: b.treatmentTags
 								}))
@@ -186,17 +186,17 @@
 									c = Object(C.G)(i, {
 										postId: e
 									}),
-									l = Object(F.a)(e) && !!c && Object(h.q)(c),
-									u = {
+									u = Object(F.a)(e) && !!c && Object(h.q)(c),
+									l = {
 										gildingTypeId: o.selectedAward.id,
 										isAnonymous: o.isAnonymous,
 										isGildFunded: !1,
-										message: Object(M.d)(o.message, o.selectedAward, l),
+										message: Object(M.d)(o.message, o.selectedAward, u),
 										nodeId: e
 									},
 									b = Object(F.a)(e) ? N : D,
 									m = await b(n(), {
-										input: u
+										input: l
 									}, r);
 								let w = !1,
 									g = null,
@@ -248,9 +248,9 @@
 						t().gild.api.pending && e(V())
 					}, 2e3)
 				}, te = Object(s.a)(Y.p), re = e => async (t, r) => {
-					await t(te(e)), t(Object(u.f)({
+					await t(te(e)), t(Object(l.f)({
 						kind: I.b.Error,
-						duration: u.a,
+						duration: l.a,
 						text: e
 					}))
 				}, de = Object(s.a)(Y.s), se = (e, t) => {
@@ -310,9 +310,9 @@
 							},
 							d = r.fromAwardsReceived + e.awardKarmaReceived,
 							s = Object(A.e)(j);
-						t(Object(l.f)({
+						t(Object(u.f)({
 							coins: e.coins
-						})), t(Object(l.h)({
+						})), t(Object(u.h)({
 							userName: s,
 							karma: {
 								...r,
@@ -343,7 +343,7 @@
 						minSize: 64,
 						postOrCommentId: m
 					});
-					t(Object(u.f)({
+					t(Object(l.f)({
 						customIconAsset: K,
 						kind: I.b.SuccessAward,
 						text: f > 0 ? O({
@@ -406,9 +406,9 @@
 		"./src/reddit/endpoints/awards/index.ts": function(e, t, r) {
 			"use strict";
 			r.d(t, "b", (function() {
-				return l
-			})), r.d(t, "c", (function() {
 				return u
+			})), r.d(t, "c", (function() {
+				return l
 			})), r.d(t, "a", (function() {
 				return b
 			}));
@@ -419,7 +419,7 @@
 				i = (r("./src/redditGQL/operations/AvailableAwards.json"), r("./src/redditGQL/operations/AwardSideEffectsDetails.json")),
 				o = r("./src/redditGQL/operations/GiveAward.json"),
 				c = r("./src/redditGQL/operations/RemoveAward.json");
-			const l = async (e, t, r) => {
+			const u = async (e, t, r) => {
 				var n;
 				const i = await Object(d.a)(e, {
 					...o,
@@ -432,7 +432,7 @@
 				if (!Object(s.c)(i)) throw new Error("An unknown error occurred");
 				if (!Object(s.c)(i) || !i.body.data.giveAward.ok) throw i.body.data.giveAward.errors && (null === (n = i.body.data.giveAward.errors) || void 0 === n ? void 0 : n.length) > 0 ? new Error(i.body.data.giveAward.errors[0].message) : new Error("An unknown error occurred");
 				return i.body.data.giveAward
-			}, u = async (e, t) => {
+			}, l = async (e, t) => {
 				var r, a, n;
 				const i = await Object(d.a)(e, {
 					...c,
@@ -523,7 +523,7 @@
 				let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : a,
 					t = arguments.length > 1 ? arguments[1] : void 0;
 				switch (t.type) {
-					case s.lb: {
+					case s.kb: {
 						const r = t.payload;
 						return {
 							...e,
@@ -580,4 +580,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/gildActions.a4e553ff2a064a45df56.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/gildActions.4d4850cd0a3db165c99c.js.map

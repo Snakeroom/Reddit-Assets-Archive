@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/EconPowerupsMarketingModal.8a0dbe6fc85513c5ad7e.js
-// Retrieved at 7/7/2022, 11:50:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/EconPowerupsMarketingModal.f28d64355b22394dc38f.js
+// Retrieved at 7/13/2022, 11:20:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["EconPowerupsMarketingModal"], {
 		"./src/reddit/components/Econ/Common/BenefitTile/index.m.less": function(e, t, s) {
@@ -275,7 +275,7 @@
 				C = s("./src/reddit/helpers/trackers/powerups.ts"),
 				v = s("./src/reddit/hooks/useScrollGradient.ts"),
 				M = s("./src/reddit/hooks/useTracking.ts"),
-				S = (s("./src/reddit/components/Econ/PowerupsPremiumUpsellModal/async.tsx"), s("./src/reddit/components/Econ/Common/BenefitTile/index.tsx")),
+				S = s("./src/reddit/components/Econ/Common/BenefitTile/index.tsx"),
 				I = s("./src/reddit/models/Gold/Powerups/index.ts"),
 				y = s("./src/reddit/selectors/experiments/econ/powerupsAward.ts");
 			const L = [I.a.CommentRecognition, I.a.PowerupsAward, I.a.CommentsWithEmoji, I.a.Achievements, I.a.HeroStatus, I.a.HdVideo],
@@ -339,10 +339,10 @@
 					calculateGradientVisibility: h
 				} = Object(v.b)(!0);
 				Object(r.useEffect)(() => {
-					Object(k.a)(), t && l(Object(m.k)(t, {
+					Object(k.a)(), t && l(Object(m.j)(t, {
 						fullData: !0
 					}))
-				}, [!1, t, l]), Object(r.useLayoutEffect)(() => {
+				}, [t, l]), Object(r.useLayoutEffect)(() => {
 					h()
 				});
 				const w = () => l(Object(u.g)(N.a.ECON_POWERUPS_MARKETING)),
@@ -399,7 +399,7 @@
 					className: F.a.joinHeroes,
 					subredditId: t,
 					onClick: e => {
-						i(Object(C.c)("powerups_modal")), e ? l(Object(m.g)(c.id)) : f()
+						i(Object(C.c)("powerups_modal")), e ? l(Object(m.f)(c.id)) : f()
 					}
 				})), o.a.createElement("li", {
 					className: F.a.howItWorksStep
@@ -656,4 +656,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EconPowerupsMarketingModal.8a0dbe6fc85513c5ad7e.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EconPowerupsMarketingModal.f28d64355b22394dc38f.js.map
