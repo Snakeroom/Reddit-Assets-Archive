@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/8.e0a70e3e5bbb32305328.js
-// Retrieved at 6/30/2022, 10:00:07 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/8.29e1ca1148bb260b03d4.js
+// Retrieved at 7/13/2022, 2:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	[8], {
 		"./node_modules/lodash/_baseRange.js": function(e, t) {
@@ -124,9 +124,9 @@
 			})), n.d(t, "t", (function() {
 				return T
 			})), n.d(t, "u", (function() {
-				return I
+				return N
 			})), n.d(t, "s", (function() {
-				return D
+				return I
 			}));
 			const a = "SUBREDDIT__ADD_TOP_SUBREDDIT_MODELS",
 				s = "SUBREDDIT__ADD_TOP_SUBREDDIT_RANKINGS",
@@ -152,8 +152,8 @@
 				b = "SUBREDDIT_SURVEY_DISMISSED",
 				S = "SUBREDDIT_SURVEY_DISMISS",
 				T = "SUBREDDIT_ABOUT_INFO_UPDATE__PENDING",
-				I = "SUBREDDIT_ABOUT_INFO_UPDATE__SUCCESS",
-				D = "SUBREDDIT_ABOUT_INFO_UPDATE__FAILED"
+				N = "SUBREDDIT_ABOUT_INFO_UPDATE__SUCCESS",
+				I = "SUBREDDIT_ABOUT_INFO_UPDATE__FAILED"
 		},
 		"./src/reddit/components/ContentSurvey/RatingCard.tsx": function(e, t, n) {
 			"use strict";
@@ -246,9 +246,9 @@
 				b = n("./src/reddit/controls/Button/index.tsx"),
 				S = n("./src/reddit/controls/TextButton/index.tsx"),
 				T = n("./src/reddit/icons/svgs/Snoo/index.tsx"),
-				I = n("./src/reddit/icons/svgs/svgIcons.tsx");
+				N = n("./src/reddit/icons/svgs/svgIcons.tsx");
 
-			function D(e) {
+			function I(e) {
 				const {
 					children: t,
 					activeSlide: n,
@@ -269,7 +269,7 @@
 				}, p ? l.a.createElement(S.a, {
 					className: C.a.headerButton,
 					onClick: d
-				}, l.a.createElement(I.d, {
+				}, l.a.createElement(N.d, {
 					className: C.a.backIcon
 				}), l.a.createElement("div", null, g.fbt._("Back", null, {
 					hk: "39TCGR"
@@ -314,10 +314,10 @@
 					hk: "2mEXAi"
 				}))))
 			}
-			var N = n("./src/redditGQL/operations/SubmitContentRatingSurvey.json"),
+			var D = n("./src/redditGQL/operations/SubmitContentRatingSurvey.json"),
 				M = n("./src/lib/makeGqlRequest/index.ts");
 			var k, j = (e, t) => Object(M.a)(e, {
-					...N,
+					...D,
 					variables: t
 				}),
 				O = n("./src/reddit/helpers/trackers/contentTag.ts"),
@@ -413,14 +413,14 @@
 				}, [C, b]);
 				const [S, {
 					pending: T,
-					error: I
+					error: N
 				}] = Object(h.a)(j);
 				Object(i.useEffect)(() => {
-					I && (p.c.captureException(I), x(Object(f.f)(Object(f.e)(V._("An error occurred", null, {
+					N && (p.c.captureException(N), x(Object(f.f)(Object(f.e)(V._("An error occurred", null, {
 						hk: "1VDETi"
 					}), A.b.Error))))
-				}, [I, x]);
-				const [N, M] = Object(i.useState)(null);
+				}, [N, x]);
+				const [D, M] = Object(i.useState)(null);
 				if (!r) return null;
 				if (!r.isEligible) return null;
 
@@ -430,7 +430,7 @@
 				const R = null !== (t = u[null == w ? void 0 : w.id]) && void 0 !== t ? t : {},
 					U = (null !== (n = null == w ? void 0 : w.answerOptions) && void 0 !== n ? n : []).map(e => e.id).some(e => R[e]),
 					F = E === G.Survey && C > 1;
-				return l.a.createElement(D, {
+				return l.a.createElement(I, {
 					activeSlide: C,
 					advance: async function() {
 						if (E === G.Survey && C === _.length && M(function(e, t) {
@@ -472,9 +472,9 @@
 								type: v.z,
 								payload: {
 									id: s,
-									response: N
+									response: D
 								}
-							}), void(I || o())
+							}), void(N || o())
 						}
 						y("forward"), w ? b(Object(O.i)(w.pageType, z(w, u).map(e => e.id))) : 0 === C && b(Object(O.l)())
 					},
@@ -542,7 +542,7 @@
 						selectedAnswers: null !== (t = u[e.id]) && void 0 !== t ? t : {},
 						onChange: B
 					})
-				}), N && l.a.createElement("div", {
+				}), D && l.a.createElement("div", {
 					key: "result",
 					className: m.a.result
 				}, l.a.createElement("p", {
@@ -550,19 +550,19 @@
 				}, V._("Your Content Tag:", null, {
 					hk: "2OUAzB"
 				})), l.a.createElement(Z.a, {
-					ratingResponse: N,
+					ratingResponse: D,
 					subredditId: s
 				}, l.a.createElement("p", {
 					className: m.a.ratingAudience
-				}, N.rating.name), l.a.createElement("p", {
+				}, D.rating.name), l.a.createElement("p", {
 					className: m.a.ratingDescription
-				}, N.rating.description, " ", l.a.createElement("br", null), V._("(Note: Only moderators can see this tag.)", null, {
+				}, D.rating.description, " ", l.a.createElement("br", null), V._("(Note: Only moderators can see this tag.)", null, {
 					hk: "2PN50Z"
 				}))), l.a.createElement("p", {
 					className: m.a.reasonsHeader
 				}, V._("Posts and discussions include:", null, {
 					hk: "12MdUE"
-				})), l.a.createElement("ul", null, N.ratingReasons.map(e => l.a.createElement("li", {
+				})), l.a.createElement("ul", null, D.ratingReasons.map(e => l.a.createElement("li", {
 					key: e.id,
 					className: m.a.reason
 				}, e.contentRatingReasonText)))))
@@ -688,11 +688,11 @@
 			})), n.d(t, "d", (function() {
 				return T
 			})), n.d(t, "l", (function() {
-				return I
-			})), n.d(t, "t", (function() {
-				return D
-			})), n.d(t, "u", (function() {
 				return N
+			})), n.d(t, "t", (function() {
+				return I
+			})), n.d(t, "u", (function() {
+				return D
 			})), n.d(t, "r", (function() {
 				return M
 			})), n.d(t, "a", (function() {
@@ -735,9 +735,9 @@
 				b = s.a.header("ModalHeader", u.a),
 				S = s.a.div("ModalTitle", u.a),
 				T = s.a.div("ModalAnnotation", u.a),
-				I = s.a.div("ModalMain", u.a),
-				D = s.a.textarea("TextArea", u.a),
-				N = s.a.wrapped(c.l, "WarningButton", u.a),
+				N = s.a.div("ModalMain", u.a),
+				I = s.a.textarea("TextArea", u.a),
+				D = s.a.wrapped(c.l, "WarningButton", u.a),
 				M = s.a.wrapped(c.l, "PrimaryButton", u.a),
 				k = s.a.wrapped(c.o, "CancelButton", u.a),
 				j = s.a.wrapped(c.r, "RemoveButton", u.a),
@@ -967,6 +967,31 @@
 				fill: "inherit",
 				transform: "translate(6.029200, 6.044700) scale(1, -1) translate(-6.029200, -6.044700)",
 				points: "11.0584 4.0602 6.0292 9.0894 1 4.0602 2.0608 3 6.0292 6.9684 9.9982 3"
+			})))
+		},
+		"./src/reddit/icons/svgs/Circle/index.m.less": function(e, t, n) {
+			e.exports = {
+				circle: "_17IuRdA-NY8vFk-Tt991sn"
+			}
+		},
+		"./src/reddit/icons/svgs/Circle/index.tsx": function(e, t, n) {
+			"use strict";
+			var a = n("./node_modules/react/index.js"),
+				s = n.n(a),
+				r = n("./src/lib/classNames/index.ts"),
+				o = n("./src/reddit/icons/svgs/Circle/index.m.less"),
+				c = n.n(o);
+			t.a = e => s.a.createElement("svg", {
+				className: Object(r.a)(c.a.circle, e.className),
+				xmlns: "http://www.w3.org/2000/svg",
+				viewBox: "0 0 8 8"
+			}, s.a.createElement("g", {
+				fill: "inherit",
+				stroke: "none"
+			}, s.a.createElement("circle", {
+				r: "4",
+				cy: "4",
+				cx: "4"
 			})))
 		},
 		"./src/reddit/icons/svgs/DizzySnoo/index.tsx": function(e, t, n) {
@@ -1319,4 +1344,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/8.e0a70e3e5bbb32305328.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/8.29e1ca1148bb260b03d4.js.map

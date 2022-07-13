@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModerationPages.1d612c4e0132e6a14661.js
-// Retrieved at 7/13/2022, 11:20:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModerationPages.4fa89f6c3e893fd751cd.js
+// Retrieved at 7/13/2022, 2:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModerationPages"], {
 		"./src/higherOrderComponents/withImageUploads.tsx": function(e, t, s) {
@@ -23437,31 +23437,6 @@
 				fill: "inherit"
 			})))
 		},
-		"./src/reddit/icons/svgs/Circle/index.m.less": function(e, t, s) {
-			e.exports = {
-				circle: "_17IuRdA-NY8vFk-Tt991sn"
-			}
-		},
-		"./src/reddit/icons/svgs/Circle/index.tsx": function(e, t, s) {
-			"use strict";
-			var n = s("./node_modules/react/index.js"),
-				a = s.n(n),
-				o = s("./src/lib/classNames/index.ts"),
-				r = s("./src/reddit/icons/svgs/Circle/index.m.less"),
-				i = s.n(r);
-			t.a = e => a.a.createElement("svg", {
-				className: Object(o.a)(i.a.circle, e.className),
-				xmlns: "http://www.w3.org/2000/svg",
-				viewBox: "0 0 8 8"
-			}, a.a.createElement("g", {
-				fill: "inherit",
-				stroke: "none"
-			}, a.a.createElement("circle", {
-				r: "4",
-				cy: "4",
-				cx: "4"
-			})))
-		},
 		"./src/reddit/icons/svgs/ClearFilled/index.tsx": function(e, t, s) {
 			"use strict";
 			var n = s("./node_modules/react/index.js"),
@@ -25485,4 +25460,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.1d612c4e0132e6a14661.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.4fa89f6c3e893fd751cd.js.map
