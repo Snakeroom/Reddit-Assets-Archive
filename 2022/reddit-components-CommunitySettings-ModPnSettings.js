@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-CommunitySettings-ModPnSettings.520694d3ffd7a9a46554.js
-// Retrieved at 7/7/2022, 4:10:13 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-CommunitySettings-ModPnSettings.e8f162bd1563e1f408fe.js
+// Retrieved at 7/14/2022, 5:50:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-CommunitySettings-ModPnSettings"], {
 		"./node_modules/lodash/times.js": function(e, t, n) {
@@ -61,8 +61,8 @@
 			}
 			var u = n("./src/reddit/selectors/telemetry.ts"),
 				g = n("./src/redditGQL/types.ts");
-			const m = Object.values(g.n),
-				p = Object.values(g.o),
+			const m = Object.values(g.o),
+				p = Object.values(g.p),
 				b = e => t => {
 					return {
 						source: "mod_pn_settings",
@@ -355,8 +355,8 @@
 						subredditIds: [t]
 					}
 				}),
-				V = (e, t) => "threshold" in t ? G(e, t) : q(e, t),
-				G = (e, t) => Object(D.a)(e, {
+				V = (e, t) => "threshold" in t ? q(e, t) : G(e, t),
+				q = (e, t) => Object(D.a)(e, {
 					...B,
 					variables: {
 						input: {
@@ -364,7 +364,7 @@
 						}
 					}
 				}),
-				q = (e, t) => Object(D.a)(e, {
+				G = (e, t) => Object(D.a)(e, {
 					...T,
 					variables: {
 						input: {
@@ -474,7 +474,7 @@
 							return {
 								subredditId: t,
 								name: n,
-								status: e.isEnabled ? g.p.Enabled : g.p.Disabled
+								status: e.isEnabled ? g.q.Enabled : g.q.Disabled
 							}
 						}
 						if (p.includes(n)) {
@@ -682,4 +682,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-CommunitySettings-ModPnSettings.520694d3ffd7a9a46554.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-CommunitySettings-ModPnSettings.e8f162bd1563e1f408fe.js.map

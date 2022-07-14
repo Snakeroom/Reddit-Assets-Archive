@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Frontpage.3bda04324d04ae2d74d6.js
-// Retrieved at 7/14/2022, 11:50:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Frontpage.84f9dc95120338f377bb.js
+// Retrieved at 7/14/2022, 5:50:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Frontpage"], {
 		"./node_modules/intersection-observer/intersection-observer.js": function(e, t) {
@@ -498,7 +498,7 @@
 							variant: null == v ? void 0 : v.toLowerCase()
 						}
 					};
-					return x ? (k.sort = F.w.Best, k.feedRankingContext.variant = Object(w.b)(e)) : d && (k.sort = d.toUpperCase()), u && (k.range = u.toUpperCase()), c ? k.pageSize = Object(g.a)(i) : l && (k.pageSize = l), _ && _.ad && (k.forceAds = {
+					return x ? (k.sort = F.x.Best, k.feedRankingContext.variant = Object(w.b)(e)) : d && (k.sort = d.toUpperCase()), u && (k.range = u.toUpperCase()), c ? k.pageSize = Object(g.a)(i) : l && (k.pageSize = l), _ && _.ad && (k.forceAds = {
 						ad: _.ad
 					}), n && (k.after = Object(o.a)(n)), k
 				},
@@ -7383,4 +7383,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Frontpage.3bda04324d04ae2d74d6.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Frontpage.84f9dc95120338f377bb.js.map
