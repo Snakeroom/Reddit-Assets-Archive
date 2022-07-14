@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/NotificationUnit.a5e69c8d8b3be5fd4d37.js
-// Retrieved at 7/11/2022, 7:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/NotificationUnit.f2fef74a744f6d7e4629.js
+// Retrieved at 7/14/2022, 9:30:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["NotificationUnit"], {
 		"./src/reddit/components/NotificationUnit/Avatar.tsx": function(e, t, i) {
@@ -1266,20 +1266,20 @@
 				a = i("./src/reddit/selectors/experiments/index.ts"),
 				s = i("./src/reddit/selectors/experiments/utils.ts");
 			const r = e => Object(o.c)(e, {
-					experimentName: n.Ub,
+					experimentName: n.Vb,
 					experimentEligibilitySelector: a.e
-				}) === n.fb.topOfFeedWithCTAs,
+				}) === n.gb.topOfFeedWithCTAs,
 				c = e => (e => Object(o.c)(e, {
-					experimentName: n.Ub,
+					experimentName: n.Vb,
 					experimentEligibilitySelector: a.e
-				}) === n.fb.topOfFeedNoCTAs)(e) || r(e),
+				}) === n.gb.topOfFeedNoCTAs)(e) || r(e),
 				d = e => Object(o.c)(e, {
-					experimentName: n.Ub,
+					experimentName: n.Vb,
 					experimentEligibilitySelector: a.e
-				}) === n.fb.floatInFeed,
+				}) === n.gb.floatInFeed,
 				l = e => {
 					const t = Object(o.c)(e, {
-						experimentName: n.Ub,
+						experimentName: n.Vb,
 						experimentEligibilitySelector: a.e
 					});
 					return Object(s.a)(t)
@@ -1287,4 +1287,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/NotificationUnit.a5e69c8d8b3be5fd4d37.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/NotificationUnit.f2fef74a744f6d7e4629.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~SearchResults.f35550d5adf03267e7ee.js
-// Retrieved at 7/13/2022, 11:20:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~SearchResults.cc92b3a83d6f77dcea7e.js
+// Retrieved at 7/14/2022, 9:30:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~SearchResults"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -618,7 +618,7 @@
 							isLocked: i.isLocked
 						}
 					}))
-				}, k = Object(r.a)(g.H), C = e => async (t, n, o) => {
+				}, k = Object(r.a)(g.I), C = e => async (t, n, o) => {
 					let {
 						apiContext: r,
 						gqlContext: i
@@ -1421,13 +1421,13 @@
 				Q = n.n(q);
 			const {
 				fbt: K
-			} = n("./node_modules/fbt/lib/FbtPublic.js"), Z = () => r.a.createElement(_.a, {
+			} = n("./node_modules/fbt/lib/FbtPublic.js"), Y = () => r.a.createElement(_.a, {
 				className: Q.a.crowdControlText
 			}, K._("Crowd Control", null, {
 				hk: "4WgEW"
 			}));
-			var Y = n("./src/reddit/components/Comments/Comment/TopMeta/edited.m.less"),
-				$ = n.n(Y);
+			var Z = n("./src/reddit/components/Comments/Comment/TopMeta/edited.m.less"),
+				$ = n.n(Z);
 			const {
 				fbt: ee
 			} = n("./node_modules/fbt/lib/FbtPublic.js"), te = e => {
@@ -1709,7 +1709,7 @@
 				})), !Object(O.f)(a) && u && r.a.createElement(g.a, {
 					postOrComment: a,
 					className: Oe.a.LastAuthorModNoteIcon
-				}), o && r.a.createElement(Z, null), r.a.createElement(xe, {
+				}), o && r.a.createElement(Y, null), r.a.createElement(xe, {
 					className: Oe.a.role,
 					comment: a,
 					subredditDisplayText: M,
@@ -1910,7 +1910,7 @@
 					isStrong: !!m,
 					onClick: S,
 					renderedInOverlay: R
-				}), o && r.a.createElement(Z, null), o && r.a.createElement(_.c, {
+				}), o && r.a.createElement(Y, null), o && r.a.createElement(_.c, {
 					className: Pe.a.metaText,
 					key: "crowdControlSeparator"
 				}), u && !D && r.a.createElement(De, {
@@ -3708,11 +3708,11 @@
 				d = n("./node_modules/reselect/es/index.js");
 			const c = Object(d.a)(e => Object(o.c)(e, {
 					experimentEligibilitySelector: e => Object(a.h)(e) && Object(r.f)(e),
-					experimentName: s.nc
+					experimentName: s.oc
 				}), i.a),
 				l = Object(d.a)(e => Object(o.c)(e, {
 					experimentEligibilitySelector: e => !Object(a.h)(e) && Object(r.f)(e),
-					experimentName: s.mc
+					experimentName: s.nc
 				}), i.a),
 				m = Object(d.a)(c, l, (e, t) => e || t),
 				u = Object(d.a)(c, l, (e, t) => !(!e && !t))
@@ -3835,10 +3835,10 @@
 				r = n("./src/reddit/helpers/chooseVariant/index.ts"),
 				i = n("./src/reddit/selectors/posts.ts");
 			const a = e => Object(r.c)(e, {
-					experimentName: o.Re,
+					experimentName: o.Se,
 					experimentEligibilitySelector: r.a
 				}),
-				d = (e, t) => t === o.Ze.Enabled && (null == e ? void 0 : e.isCreatedFromAdsUi) || (null == e ? void 0 : e.isSponsored),
+				d = (e, t) => t === o.af.Enabled && (null == e ? void 0 : e.isCreatedFromAdsUi) || (null == e ? void 0 : e.isSponsored),
 				c = Object(s.a)(i.G, a, (e, t) => d(e, t));
 			Object(s.a)((e, t) => t, a, (e, t) => d(e, t))
 		},
@@ -3856,4 +3856,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~SearchResults.f35550d5adf03267e7ee.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~SearchResults.cc92b3a83d6f77dcea7e.js.map
