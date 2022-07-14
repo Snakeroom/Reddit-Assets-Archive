@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.78cf23d1d66e0fbe57ff.js
-// Retrieved at 7/14/2022, 12:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.560ec825436bfa706d48.js
+// Retrieved at 7/14/2022, 2:00:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Chat~Governance~Reddit"], {
 		"./assets/fonts/IBMPlexSans/font.less": function(e, t, i) {},
@@ -3467,11 +3467,11 @@
 				apiPassThroughHeaders: Object(r.e)({}.API_PASS_THROUGH_HEADERS || ""),
 				appName: {}.APP_NAME || "desktop2x",
 				assetPath: "https://www.redditstatic.com/desktop2x",
-				buildNumber: Object(r.c)("168547"),
+				buildNumber: Object(r.c)("168565"),
 				chatHelpUrl: {}.CHAT_HELP_URL || "https://reddit.zendesk.com/hc/en-us/sections/360008805652-Chat",
 				hlsVersion: "hls 0.12.4",
 				dashVersion: "dash 3.2.0",
-				buildTimestamp: Object(r.b)("1657814610"),
+				buildTimestamp: Object(r.b)("1657818590"),
 				cookieDomain: ".reddit.com",
 				giphyApiKey: "k2kwyMA6VeyHM6ZRT96OXDGaersnx73Z",
 				mediaUrl: "https://www.redditmedia.com",
@@ -6087,14 +6087,14 @@
 					}))
 				},
 				Y = (e, t, i) => {
-					console.log("%cStarting Raven %crelease %c4de2c1c61e1242614654c347f7ae2f324fd29c80-production" + ` %cpublic url %c${y.a.sentryClientPublicURL}`, "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
+					console.log("%cStarting Raven %crelease %caafced2ba0dab2616674a78fb3377af77c5cded7-production" + ` %cpublic url %c${y.a.sentryClientPublicURL}`, "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
 					let n = [];
 					n = [new RegExp(`^${y.a.assetPath}`, "i")];
 					o.e({
 						attachStacktrace: !0,
 						dsn: y.a.sentryClientPublicURL,
 						whitelistUrls: n,
-						release: "4de2c1c61e1242614654c347f7ae2f324fd29c80-production",
+						release: "aafced2ba0dab2616674a78fb3377af77c5cded7-production",
 						environment: "production",
 						ignoreErrors: ["$ is not defined"],
 						integrations: [...Object(L.d)(), new d.Integrations.Breadcrumbs({
@@ -6620,7 +6620,7 @@
 							settings: r,
 							statusCode: s,
 							type: o,
-							releaseClient: "4de2c1c61e1242614654c347f7ae2f324fd29c80-production",
+							releaseClient: "aafced2ba0dab2616674a78fb3377af77c5cded7-production",
 							appName: t.statsAppName,
 							error: n ? JSON.parse(Object(l.a)(n)) : void 0
 						},
@@ -45750,10 +45750,10 @@
 			var n = i("./node_modules/thrift/lib/nodejs/lib/thrift/browser.js"),
 				r = n.Thrift,
 				s = (n.Q, i("./node_modules/node-int64/Int64.js"), i("./src/telemetry/eventSchemas/typedefs_types.js"), e.exports = {}, e.exports.Payment = function(e) {
-					this.method = null, this.currency = null, this.amount_in_smallest_denom = null, this.default_option = null, this.stored_credit_card_state = null, this.local_currency = null, this.local_amount_in_smallest_denom = null, this.default_usd_amount = null, this.status = null, this.status_reason = null, e && (void 0 !== e.method && null !== e.method && (this.method = e.method), void 0 !== e.currency && null !== e.currency && (this.currency = e.currency), void 0 !== e.amount_in_smallest_denom && null !== e.amount_in_smallest_denom && (this.amount_in_smallest_denom = e.amount_in_smallest_denom), void 0 !== e.default_option && null !== e.default_option && (this.default_option = e.default_option), void 0 !== e.stored_credit_card_state && null !== e.stored_credit_card_state && (this.stored_credit_card_state = e.stored_credit_card_state), void 0 !== e.local_currency && null !== e.local_currency && (this.local_currency = e.local_currency), void 0 !== e.local_amount_in_smallest_denom && null !== e.local_amount_in_smallest_denom && (this.local_amount_in_smallest_denom = e.local_amount_in_smallest_denom), void 0 !== e.default_usd_amount && null !== e.default_usd_amount && (this.default_usd_amount = e.default_usd_amount), void 0 !== e.status && null !== e.status && (this.status = e.status), void 0 !== e.status_reason && null !== e.status_reason && (this.status_reason = e.status_reason))
+					this.method = null, this.currency = null, this.amount_in_smallest_denom = null, this.default_option = null, this.stored_credit_card_state = null, this.local_currency = null, this.local_amount_in_smallest_denom = null, this.default_usd_amount = null, this.status = null, this.status_reason = null, this.error = null, e && (void 0 !== e.method && null !== e.method && (this.method = e.method), void 0 !== e.currency && null !== e.currency && (this.currency = e.currency), void 0 !== e.amount_in_smallest_denom && null !== e.amount_in_smallest_denom && (this.amount_in_smallest_denom = e.amount_in_smallest_denom), void 0 !== e.default_option && null !== e.default_option && (this.default_option = e.default_option), void 0 !== e.stored_credit_card_state && null !== e.stored_credit_card_state && (this.stored_credit_card_state = e.stored_credit_card_state), void 0 !== e.local_currency && null !== e.local_currency && (this.local_currency = e.local_currency), void 0 !== e.local_amount_in_smallest_denom && null !== e.local_amount_in_smallest_denom && (this.local_amount_in_smallest_denom = e.local_amount_in_smallest_denom), void 0 !== e.default_usd_amount && null !== e.default_usd_amount && (this.default_usd_amount = e.default_usd_amount), void 0 !== e.status && null !== e.status && (this.status = e.status), void 0 !== e.status_reason && null !== e.status_reason && (this.status_reason = e.status_reason), void 0 !== e.error && null !== e.error && (this.error = e.error))
 				});
 			s.prototype = {}, s.prototype.write = function(e) {
-				e.writeStructBegin("Payment"), null !== this.method && void 0 !== this.method && (e.writeFieldBegin("method", r.Type.STRING, 1), e.writeString(this.method), e.writeFieldEnd()), null !== this.currency && void 0 !== this.currency && (e.writeFieldBegin("currency", r.Type.STRING, 2), e.writeString(this.currency), e.writeFieldEnd()), null !== this.amount_in_smallest_denom && void 0 !== this.amount_in_smallest_denom && (e.writeFieldBegin("amount_in_smallest_denom", r.Type.I64, 3), e.writeI64(this.amount_in_smallest_denom), e.writeFieldEnd()), null !== this.default_option && void 0 !== this.default_option && (e.writeFieldBegin("default_option", r.Type.STRING, 4), e.writeString(this.default_option), e.writeFieldEnd()), null !== this.stored_credit_card_state && void 0 !== this.stored_credit_card_state && (e.writeFieldBegin("stored_credit_card_state", r.Type.STRING, 5), e.writeString(this.stored_credit_card_state), e.writeFieldEnd()), null !== this.local_currency && void 0 !== this.local_currency && (e.writeFieldBegin("local_currency", r.Type.STRING, 6), e.writeString(this.local_currency), e.writeFieldEnd()), null !== this.local_amount_in_smallest_denom && void 0 !== this.local_amount_in_smallest_denom && (e.writeFieldBegin("local_amount_in_smallest_denom", r.Type.I64, 7), e.writeI64(this.local_amount_in_smallest_denom), e.writeFieldEnd()), null !== this.default_usd_amount && void 0 !== this.default_usd_amount && (e.writeFieldBegin("default_usd_amount", r.Type.I64, 8), e.writeI64(this.default_usd_amount), e.writeFieldEnd()), null !== this.status && void 0 !== this.status && (e.writeFieldBegin("status", r.Type.STRING, 9), e.writeString(this.status), e.writeFieldEnd()), null !== this.status_reason && void 0 !== this.status_reason && (e.writeFieldBegin("status_reason", r.Type.STRING, 10), e.writeString(this.status_reason), e.writeFieldEnd()), e.writeFieldStop(), e.writeStructEnd()
+				e.writeStructBegin("Payment"), null !== this.method && void 0 !== this.method && (e.writeFieldBegin("method", r.Type.STRING, 1), e.writeString(this.method), e.writeFieldEnd()), null !== this.currency && void 0 !== this.currency && (e.writeFieldBegin("currency", r.Type.STRING, 2), e.writeString(this.currency), e.writeFieldEnd()), null !== this.amount_in_smallest_denom && void 0 !== this.amount_in_smallest_denom && (e.writeFieldBegin("amount_in_smallest_denom", r.Type.I64, 3), e.writeI64(this.amount_in_smallest_denom), e.writeFieldEnd()), null !== this.default_option && void 0 !== this.default_option && (e.writeFieldBegin("default_option", r.Type.STRING, 4), e.writeString(this.default_option), e.writeFieldEnd()), null !== this.stored_credit_card_state && void 0 !== this.stored_credit_card_state && (e.writeFieldBegin("stored_credit_card_state", r.Type.STRING, 5), e.writeString(this.stored_credit_card_state), e.writeFieldEnd()), null !== this.local_currency && void 0 !== this.local_currency && (e.writeFieldBegin("local_currency", r.Type.STRING, 6), e.writeString(this.local_currency), e.writeFieldEnd()), null !== this.local_amount_in_smallest_denom && void 0 !== this.local_amount_in_smallest_denom && (e.writeFieldBegin("local_amount_in_smallest_denom", r.Type.I64, 7), e.writeI64(this.local_amount_in_smallest_denom), e.writeFieldEnd()), null !== this.default_usd_amount && void 0 !== this.default_usd_amount && (e.writeFieldBegin("default_usd_amount", r.Type.I64, 8), e.writeI64(this.default_usd_amount), e.writeFieldEnd()), null !== this.status && void 0 !== this.status && (e.writeFieldBegin("status", r.Type.STRING, 9), e.writeString(this.status), e.writeFieldEnd()), null !== this.status_reason && void 0 !== this.status_reason && (e.writeFieldBegin("status_reason", r.Type.STRING, 10), e.writeString(this.status_reason), e.writeFieldEnd()), null !== this.error && void 0 !== this.error && (e.writeFieldBegin("error", r.Type.STRING, 11), e.writeString(this.error), e.writeFieldEnd()), e.writeFieldStop(), e.writeStructEnd()
 			}
 		},
 		"./src/telemetry/eventSchemas/perspective_types.js": function(e, t, i) {
@@ -48300,7 +48300,8 @@
 				default_option: e.defaultOption,
 				method: e.method,
 				status: e.status,
-				status_reason: e.statusReason
+				status_reason: e.statusReason,
+				error: e.error
 			})
 		},
 		"./src/telemetry/models/PostComposer.ts": function(e, t, i) {
@@ -48431,4 +48432,4 @@
 		"ignored /drone/src/node_modules/readable-stream/lib/internal/streams util": function(e, t) {}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.78cf23d1d66e0fbe57ff.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.560ec825436bfa706d48.js.map
