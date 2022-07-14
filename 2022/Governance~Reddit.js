@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~Reddit.f9ac889b1bb39a201be7.js
-// Retrieved at 7/14/2022, 10:00:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~Reddit.d05892edaa4efb92d634.js
+// Retrieved at 7/14/2022, 11:10:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~Reddit"], {
 		"./assets/fonts/NotoMono/font.less": function(e, t, n) {},
@@ -2247,7 +2247,7 @@
 			const w = e => _.d.reCaptchaEnterprise(e) && !Object(T.d)(e),
 				D = e => !!Object(S.c)(e, {
 					experimentEligibilitySelector: Object(I.d)(Object(I.b)(...a.d)),
-					experimentName: f.bf
+					experimentName: f.cf
 				}),
 				j = Object(r.b)("LOAD_RECAPTCHA_ENTERPRISE"),
 				A = () => l(e => p()([w, D, e => e.tracking.reCaptchaEnterprise.load === r.a.New], t => t(e)))(async e => {
@@ -4296,11 +4296,11 @@
 				$ = n("./src/reddit/selectors/experiments/utils.ts");
 			const z = Object(Y.a)(e => Object(K.c)(e, {
 					experimentEligibilitySelector: K.a,
-					experimentName: V.kc
+					experimentName: V.lc
 				}), $.a),
-				X = Object(Y.a)(z, e => e === V.Jc.Treatment1 || e === V.Jc.Treatment2),
-				J = Object(Y.a)(z, e => e === V.Jc.Treatment1);
-			Object(Y.a)(z, e => e === V.Jc.Treatment2);
+				X = Object(Y.a)(z, e => e === V.Kc.Treatment1 || e === V.Kc.Treatment2),
+				J = Object(Y.a)(z, e => e === V.Kc.Treatment1);
+			Object(Y.a)(z, e => e === V.Kc.Treatment2);
 			var Z = n("./src/reddit/hooks/useLocalStorage.ts");
 			const ee = () => {
 				const e = Object(a.e)(J),
@@ -15666,7 +15666,7 @@
 						} : e
 					}
 					case U.b:
-					case x.L: {
+					case x.M: {
 						const n = t.payload.comment.postId,
 							r = e[n];
 						if (r) {
@@ -16737,7 +16737,7 @@
 								[n]: a.id
 							} : e
 						}
-						case x.H: {
+						case x.I: {
 							const {
 								id: e,
 								postId: n
@@ -24660,8 +24660,8 @@
 				a = n("./node_modules/reselect/es/index.js");
 			const c = Object(a.a)(e => Object(s.c)(e, {
 				experimentEligibilitySelector: s.a,
-				experimentName: r.xc
-			}), e => e === r.zd)
+				experimentName: r.yc
+			}), e => e === r.Ad)
 		},
 		"./src/reddit/selectors/removedPosts.ts": function(e, t, n) {
 			"use strict";
@@ -24803,4 +24803,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit.f9ac889b1bb39a201be7.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit.d05892edaa4efb92d634.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Multireddit.506a713a5a198f8e5500.js
-// Retrieved at 7/14/2022, 10:00:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Multireddit.e4f20be389c7b60fc780.js
+// Retrieved at 7/14/2022, 11:10:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Multireddit"], {
 		"./src/lib/forceHttps/index.ts": function(e, t, n) {
@@ -1668,29 +1668,29 @@
 				s = n("./src/reddit/helpers/chooseVariant/index.ts"),
 				i = n("./src/reddit/selectors/experiments/index.ts");
 			const c = Object(r.a)(e => Object(s.c)(e, {
-					experimentName: o.Vb,
-					experimentEligibilitySelector: i.e
-				}), e => e === o.gb.Enabled),
-				a = Object(r.a)(e => Object(s.c)(e, {
 					experimentName: o.Wb,
 					experimentEligibilitySelector: i.e
 				}), e => e === o.hb.Enabled),
-				d = Object(r.a)(e => Object(s.c)(e, {
+				a = Object(r.a)(e => Object(s.c)(e, {
 					experimentName: o.Xb,
 					experimentEligibilitySelector: i.e
 				}), e => e === o.ib.Enabled),
-				l = Object(r.a)(e => Object(s.c)(e, {
+				d = Object(r.a)(e => Object(s.c)(e, {
 					experimentName: o.Yb,
 					experimentEligibilitySelector: i.e
 				}), e => e === o.jb.Enabled),
-				u = Object(r.a)(e => Object(s.c)(e, {
-					experimentName: o.ac,
-					experimentEligibilitySelector: i.e
-				}), e => e === o.lb.Enabled),
-				m = Object(r.a)(e => Object(s.c)(e, {
+				l = Object(r.a)(e => Object(s.c)(e, {
 					experimentName: o.Zb,
 					experimentEligibilitySelector: i.e
-				}), e => e === o.kb.Enabled)
+				}), e => e === o.kb.Enabled),
+				u = Object(r.a)(e => Object(s.c)(e, {
+					experimentName: o.bc,
+					experimentEligibilitySelector: i.e
+				}), e => e === o.mb.Enabled),
+				m = Object(r.a)(e => Object(s.c)(e, {
+					experimentName: o.ac,
+					experimentEligibilitySelector: i.e
+				}), e => e === o.lb.Enabled)
 		},
 		"./src/redditGQL/operations/SubredditRecommendations.json": function(e) {
 			e.exports = JSON.parse('{"id":"074eb98957ec"}')
@@ -1700,4 +1700,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Multireddit.506a713a5a198f8e5500.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Multireddit.e4f20be389c7b60fc780.js.map
