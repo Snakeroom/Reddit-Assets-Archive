@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModQueuePages.a32892311bd70fd5fdaa.js
-// Retrieved at 7/14/2022, 9:30:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModQueuePages.48138dc1623d0fabda3f.js
+// Retrieved at 7/14/2022, 10:00:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModQueuePages"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -731,7 +731,7 @@
 							isLocked: a.isLocked
 						}
 					}))
-				}, k = Object(o.a)(v.I), C = e => async (t, n, r) => {
+				}, k = Object(o.a)(v.H), C = e => async (t, n, r) => {
 					let {
 						apiContext: o,
 						gqlContext: a
@@ -1827,7 +1827,7 @@
 												hasSortParam: !0
 											})), u === X.e.Post) {
 											const n = Object(S.a)(J.c.replyToPost, m);
-											o(Object(N.r)({
+											o(Object(N.q)({
 												...t,
 												headCommentId: Object(K.w)(c, {
 													commentsPageKey: r
@@ -1851,7 +1851,7 @@
 													commentId: m,
 													commentsPageKey: r
 												});
-											o(Object(N.p)({
+											o(Object(N.o)({
 												...t,
 												parentCommentId: m,
 												commentsPageKey: r,
@@ -4267,7 +4267,7 @@
 				N = Object(d.c)({
 					currentPage: e => e.platform.currentPage,
 					origin: y.k,
-					isModQChatCommentsFilterEnabled: I.h
+					isModQChatCommentsFilterEnabled: I.g
 				});
 			var R = Object(i.b)(N)(e => a.a.createElement("div", null, a.a.createElement(j.default, {
 					onClick: e.sendEventWithName("content_type_both"),
@@ -4315,8 +4315,8 @@
 				F = n("./src/reddit/selectors/user.ts");
 			const B = e => Object(A.c)(e, {
 				experimentEligibilitySelector: F.Q,
-				experimentName: L.fc
-			}) === L.Ad;
+				experimentName: L.ec
+			}) === L.zd;
 			var D = n("./src/reddit/components/ModQueueList/SortByNumReportsTooltip.m.less"),
 				U = n.n(D);
 			const W = e => {
@@ -4474,7 +4474,7 @@
 					isPostTypeFilterDropdownOpen: Object(O.b)(ie),
 					isSubredditFilterDropdownOpen: Object(O.b)(ae),
 					isPostSortDropdownOpen: Object(O.b)(de),
-					isModQChatCommentsFilterEnabled: I.h,
+					isModQChatCommentsFilterEnabled: I.g,
 					profile: (e, t) => {
 						let {
 							profileName: n
@@ -6806,12 +6806,12 @@
 						rtJsonElementProps: a
 					});
 					switch (o) {
-						case h.Df.SmIcon:
+						case h.Cf.SmIcon:
 							return r.a.createElement(p, {
 								subredditName: s,
 								rtJsonElementProps: a
 							});
-						case h.Df.SmIconHc:
+						case h.Cf.SmIconHc:
 							return r.a.createElement(p, {
 								subredditName: s,
 								isHoverable: !0,
@@ -8138,6 +8138,33 @@
 				}
 			})
 		},
+		"./src/reddit/selectors/experiments/chat.ts": function(e, t, n) {
+			"use strict";
+			n.d(t, "d", (function() {
+				return o
+			})), n.d(t, "b", (function() {
+				return a
+			})), n.d(t, "g", (function() {
+				return i
+			})), n.d(t, "e", (function() {
+				return d
+			})), n.d(t, "f", (function() {
+				return c
+			})), n.d(t, "a", (function() {
+				return l
+			})), n.d(t, "c", (function() {
+				return m
+			}));
+			var s = n("./src/reddit/constants/experiments.ts"),
+				r = n("./src/reddit/selectors/experiments/econ/simpleExperiment.ts");
+			const o = Object(r.a)(s.K),
+				a = Object(r.a)(s.I),
+				i = Object(r.a)(s.ke),
+				d = Object(r.a)(s.L),
+				c = Object(r.a)(s.M),
+				l = Object(r.a)(s.H),
+				m = Object(r.a)(s.J)
+		},
 		"./src/reddit/selectors/gold/powerups/flairs.ts": function(e, t, n) {
 			"use strict";
 			n.d(t, "e", (function() {
@@ -8337,12 +8364,12 @@
 				d = e => {
 					return Object(o.c)(e, {
 						experimentEligibilitySelector: i,
-						experimentName: s.wf
+						experimentName: s.vf
 					}) || ""
 				},
 				c = e => {
 					const t = d(e);
-					return t === s.Df.SmIcon || t === s.Df.SmIconHc
+					return t === s.Cf.SmIcon || t === s.Cf.SmIconHc
 				},
 				l = (e, t) => {
 					let {
@@ -8368,4 +8395,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModQueuePages.a32892311bd70fd5fdaa.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModQueuePages.48138dc1623d0fabda3f.js.map

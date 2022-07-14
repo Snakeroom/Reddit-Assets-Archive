@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModQueue.6b5d0dfc019df6b3b8f5.js
-// Retrieved at 7/14/2022, 9:30:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModQueue.07bfd9bb821e0f3af213.js
+// Retrieved at 7/14/2022, 10:00:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModQueue"], {
 		"./src/reddit/actions/bulkActions/index.ts": function(e, t, s) {
@@ -88,7 +88,7 @@
 							isLocked: a.isLocked
 						}
 					}))
-				}, g = Object(n.a)(h.I), k = e => async (t, s, r) => {
+				}, g = Object(n.a)(h.H), k = e => async (t, s, r) => {
 					let {
 						apiContext: n,
 						gqlContext: a
@@ -363,8 +363,8 @@
 				q = Object(n.a)(w.f),
 				B = Object(n.a)(w.e),
 				U = Object(n.a)(w.n),
-				V = Object(n.a)(w.m),
-				H = Object(n.a)(w.l),
+				H = Object(n.a)(w.m),
+				V = Object(n.a)(w.l),
 				G = Object(n.a)(w.q),
 				$ = Object(n.a)(w.p),
 				K = Object(n.a)(w.o),
@@ -386,7 +386,7 @@
 							O = D, j = F, _ = T;
 							break;
 						case r.rb.Reports:
-							O = U, j = H, _ = V;
+							O = U, j = V, _ = H;
 							break;
 						case r.rb.Spam:
 							O = G, j = K, _ = $;
@@ -1074,8 +1074,8 @@
 					type: "json",
 					data: t
 				});
-			var V = s("./src/reddit/helpers/isPost.ts"),
-				H = s("./src/reddit/helpers/r2/normalizeCommentFromR2/index.ts"),
+			var H = s("./src/reddit/helpers/isPost.ts"),
+				V = s("./src/reddit/helpers/r2/normalizeCommentFromR2/index.ts"),
 				G = s("./src/reddit/helpers/routeKey/index.ts"),
 				$ = s("./src/reddit/models/ModQueue/index.ts"),
 				K = s("./src/reddit/models/PostDraft/index.ts"),
@@ -1191,7 +1191,7 @@
 					const i = a(),
 						u = i.user.account && i.user.account.displayText,
 						m = e[0],
-						l = Object(V.a)(m) ? z.e.Post : z.e.Comment,
+						l = Object(H.a)(m) ? z.e.Post : z.e.Comment,
 						b = l === z.e.Post ? i.posts.models[m] : i.features.comments.models[m],
 						p = l === z.e.Post ? L.S : P.j;
 					if (!b || !u) return !1;
@@ -1221,7 +1221,7 @@
 							if (a.ok) {
 								if ([z.f.Public, z.f.PublicSubreddit].includes(o)) {
 									if (n(Re()), a.body) {
-										const e = Object(H.a)(a.body),
+										const e = Object(V.a)(a.body),
 											t = {
 												comment: e,
 												parentId: m
@@ -1234,7 +1234,7 @@
 												hasSortParam: !0
 											})), l === z.e.Post) {
 											const s = Object(x.a)(K.c.replyToPost, m);
-											n(Object(N.r)({
+											n(Object(N.q)({
 												...t,
 												headCommentId: Object(J.w)(i, {
 													commentsPageKey: r
@@ -1258,7 +1258,7 @@
 													commentId: m,
 													commentsPageKey: r
 												});
-											n(Object(N.p)({
+											n(Object(N.o)({
 												...t,
 												parentCommentId: m,
 												commentsPageKey: r,
@@ -1515,4 +1515,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModQueue.6b5d0dfc019df6b3b8f5.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModQueue.07bfd9bb821e0f3af213.js.map
