@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~CountryPage~FramedGild~GildModal~GovernanceReleaseNotesModal~Mem~c8b748a6.6679c4faae5464759104.js
-// Retrieved at 7/14/2022, 11:10:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~CountryPage~FramedGild~GildModal~GovernanceReleaseNotesModal~Mem~c8b748a6.d2b11e1679eedbcecc14.js
+// Retrieved at 7/14/2022, 11:50:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~CountryPage~FramedGild~GildModal~GovernanceReleaseNotesModal~Mem~c8b748a6"], {
 		"./src/lib/colors/constants.ts": function(e, t, s) {
@@ -449,18 +449,18 @@
 					return e
 				}).apply(this, arguments)
 			}
-			const J = r.a.wrapped(D.a, "TooltipControl", Y.a),
-				K = r.a.div("NormalControl", Y.a),
-				Q = r.a.wrapped(J, "ControlSnoo", Y.a),
-				q = r.a.wrapped(J, "ControlPlay", Y.a),
-				X = r.a.wrapped(K, "Time", Y.a),
+			const K = r.a.wrapped(D.a, "TooltipControl", Y.a),
+				J = r.a.div("NormalControl", Y.a),
+				Q = r.a.wrapped(K, "ControlSnoo", Y.a),
+				q = r.a.wrapped(K, "ControlPlay", Y.a),
+				X = r.a.wrapped(J, "Time", Y.a),
 				$ = r.a.wrapped(X, "LeftTime", Y.a),
 				ee = r.a.wrapped(X, "RightTime", Y.a),
 				te = r.a.div("LiveLabel", Y.a),
-				se = r.a.wrapped(K, "ControlScrubber", Y.a),
-				ie = r.a.wrapped(K, "ControlVolume", Y.a),
-				ae = r.a.wrapped(J, "ControlExpand", Y.a),
-				oe = r.a.wrapped(J, "ControlCollapse", Y.a),
+				se = r.a.wrapped(J, "ControlScrubber", Y.a),
+				ie = r.a.wrapped(J, "ControlVolume", Y.a),
+				ae = r.a.wrapped(K, "ControlExpand", Y.a),
+				oe = r.a.wrapped(K, "ControlCollapse", Y.a),
 				ne = e => {
 					let {
 						className: t,
@@ -915,9 +915,9 @@
 				G = s("./src/lib/lessComponent.tsx"),
 				Y = G.a.img("Component", z.a),
 				Z = s("./src/reddit/components/HTML5StreamPlayer/ControlBar/index.tsx"),
-				J = s("./src/reddit/icons/svgs/VideoCheckmark/index.tsx"),
-				K = s("./src/reddit/components/HTML5StreamPlayer/SettingControl/index.m.less"),
-				Q = s.n(K);
+				K = s("./src/reddit/icons/svgs/VideoCheckmark/index.tsx"),
+				J = s("./src/reddit/components/HTML5StreamPlayer/SettingControl/index.m.less"),
+				Q = s.n(J);
 
 			function q() {
 				return (q = Object.assign || function(e) {
@@ -937,7 +937,7 @@
 					onClick: e.onClick,
 					role: "checkbox",
 					tabIndex: 0
-				}, c.a.createElement(J.a, null), c.a.createElement("div", {
+				}, c.a.createElement(K.a, null), c.a.createElement("div", {
 					className: Q.a.AutoplayDescription
 				}, E.fbt._("Autoplay", null, {
 					hk: "1x30w1"
@@ -954,7 +954,7 @@
 						onClick: s,
 						role: "radio",
 						tabIndex: 0
-					}, c.a.createElement(J.a, null), c.a.createElement("div", {
+					}, c.a.createElement(K.a, null), c.a.createElement("div", {
 						className: Q.a.VideoResolutionDescription
 					}, t === X ? E.fbt._("Auto", null, {
 						hk: "6zgZT"
@@ -1202,8 +1202,8 @@
 					}, a))
 				},
 				Ze = s("./src/reddit/components/HTML5StreamPlayer/VideoOverlay/index.m.less"),
-				Je = s.n(Ze),
-				Ke = G.a.div("Component", Je.a),
+				Ke = s.n(Ze),
+				Je = G.a.div("Component", Ke.a),
 				Qe = s("./node_modules/@reddit/adblock-detection/browser.js"),
 				qe = s("./src/reddit/components/HTML5StreamPlayer/index.m.less"),
 				Xe = s.n(qe);
@@ -1941,7 +1941,7 @@
 						postId: this.props.postId,
 						source: this.props.callToActionSource,
 						callToAction: this.props.callToActionText
-					}) : c.a.createElement(Ke, null), h ? c.a.createElement(T.a, null) : g ? c.a.createElement(ve, null) : this.state.videoWaiting ? P && c.a.createElement(T.a, null) : this.state.videoPaused && !C && c.a.createElement(_.a, {
+					}) : c.a.createElement(Je, null), h ? c.a.createElement(T.a, null) : g ? c.a.createElement(ve, null) : this.state.videoWaiting ? P && c.a.createElement(T.a, null) : this.state.videoPaused && !C && c.a.createElement(_.a, {
 						onClick: s ? void 0 : this.playPauseVideo
 					}), i && c.a.createElement(Z.b, {
 						clickSnoo: this.clickSnoo,
@@ -2666,10 +2666,10 @@
 				a = s("./src/reddit/constants/experiments.ts"),
 				o = s("./src/reddit/helpers/chooseVariant/index.ts");
 			const n = Object(i.a)(e => Object(o.c)(e, {
-					experimentName: a.Qf,
+					experimentName: a.Pf,
 					experimentEligibilitySelector: o.a
 				}), e => e),
-				r = Object(i.a)(n, e => e === a.Jf)
+				r = Object(i.a)(n, e => e === a.If)
 		},
 		"./src/reddit/selectors/experiments/videoReactions.ts": function(e, t, s) {
 			"use strict";
@@ -2684,12 +2684,12 @@
 			const n = e => Object(a.c)(e, {
 					experimentName: i.xb,
 					experimentEligibilitySelector: o.e
-				}) === i.Ad,
+				}) === i.zd,
 				r = e => Object(a.c)(e, {
-					experimentName: i.sc,
+					experimentName: i.rc,
 					experimentEligibilitySelector: a.a
-				}) === i.Ad
+				}) === i.zd
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~CountryPage~FramedGild~GildModal~GovernanceReleaseNotesModal~Mem~c8b748a6.6679c4faae5464759104.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~CountryPage~FramedGild~GildModal~GovernanceReleaseNotesModal~Mem~c8b748a6.d2b11e1679eedbcecc14.js.map

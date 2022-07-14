@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditTopContent.47e8626485a49962c7e7.js
-// Retrieved at 7/14/2022, 11:10:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditTopContent.35673c9ab0481094311f.js
+// Retrieved at 7/14/2022, 11:50:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditTopContent"], {
 		"./src/reddit/components/DiscoveryUnit/SubredditTopContentDiscoveryUnit/index.m.less": function(e, t, n) {
@@ -35,9 +35,9 @@
 				y = n("./src/reddit/constants/experiments.ts"),
 				C = n("./src/reddit/helpers/chooseVariant/index.ts"),
 				h = n("./src/reddit/selectors/user.ts");
-			const T = e => Object(h.N)(e) || y.Ef.ShowTopContent === Object(C.c)(e, {
+			const T = e => Object(h.N)(e) || y.Df.ShowTopContent === Object(C.c)(e, {
 				experimentEligibilitySelector: C.a,
-				experimentName: y.xf
+				experimentName: y.wf
 			});
 			var v = n("./src/reddit/selectors/subreddit.ts"),
 				M = n("./src/reddit/components/DiscoveryUnit/SubredditTopContentDiscoveryUnit/index.m.less"),
@@ -55,7 +55,7 @@
 					return `${n}-${t}`
 				})
 			}));
-			class S extends d.a.Component {
+			class w extends d.a.Component {
 				constructor() {
 					super(...arguments), this.onCloseClick = () => {
 						const {
@@ -117,7 +117,7 @@
 					})))
 				}
 			}
-			t.default = U(S)
+			t.default = U(w)
 		},
 		"./src/reddit/components/ModalStyledComponents/index.m.less": function(e, t, n) {
 			e.exports = {
@@ -192,11 +192,11 @@
 			})), n.d(t, "i", (function() {
 				return U
 			})), n.d(t, "q", (function() {
-				return S
-			})), n.d(t, "d", (function() {
 				return w
-			})), n.d(t, "l", (function() {
+			})), n.d(t, "d", (function() {
 				return D
+			})), n.d(t, "l", (function() {
+				return S
 			})), n.d(t, "t", (function() {
 				return g
 			})), n.d(t, "u", (function() {
@@ -241,9 +241,9 @@
 				M = r.a.label("ModalInputLabel", u.a),
 				b = r.a.footer("ModalFooter", u.a),
 				U = r.a.header("ModalHeader", u.a),
-				S = r.a.div("ModalTitle", u.a),
-				w = r.a.div("ModalAnnotation", u.a),
-				D = r.a.div("ModalMain", u.a),
+				w = r.a.div("ModalTitle", u.a),
+				D = r.a.div("ModalAnnotation", u.a),
+				S = r.a.div("ModalMain", u.a),
 				g = r.a.textarea("TextArea", u.a),
 				B = r.a.wrapped(d.l, "WarningButton", u.a),
 				j = r.a.wrapped(d.l, "PrimaryButton", u.a),
@@ -313,4 +313,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditTopContent.47e8626485a49962c7e7.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditTopContent.35673c9ab0481094311f.js.map

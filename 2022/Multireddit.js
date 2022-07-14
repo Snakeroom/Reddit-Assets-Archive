@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Multireddit.e4f20be389c7b60fc780.js
-// Retrieved at 7/14/2022, 11:10:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Multireddit.278bfd5bcf0732653292.js
+// Retrieved at 7/14/2022, 11:50:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Multireddit"], {
 		"./src/lib/forceHttps/index.ts": function(e, t, n) {
@@ -1668,27 +1668,27 @@
 				s = n("./src/reddit/helpers/chooseVariant/index.ts"),
 				i = n("./src/reddit/selectors/experiments/index.ts");
 			const c = Object(r.a)(e => Object(s.c)(e, {
-					experimentName: o.Wb,
+					experimentName: o.Vb,
 					experimentEligibilitySelector: i.e
 				}), e => e === o.hb.Enabled),
 				a = Object(r.a)(e => Object(s.c)(e, {
-					experimentName: o.Xb,
+					experimentName: o.Wb,
 					experimentEligibilitySelector: i.e
 				}), e => e === o.ib.Enabled),
 				d = Object(r.a)(e => Object(s.c)(e, {
-					experimentName: o.Yb,
+					experimentName: o.Xb,
 					experimentEligibilitySelector: i.e
 				}), e => e === o.jb.Enabled),
 				l = Object(r.a)(e => Object(s.c)(e, {
-					experimentName: o.Zb,
+					experimentName: o.Yb,
 					experimentEligibilitySelector: i.e
 				}), e => e === o.kb.Enabled),
 				u = Object(r.a)(e => Object(s.c)(e, {
-					experimentName: o.bc,
+					experimentName: o.ac,
 					experimentEligibilitySelector: i.e
 				}), e => e === o.mb.Enabled),
 				m = Object(r.a)(e => Object(s.c)(e, {
-					experimentName: o.ac,
+					experimentName: o.Zb,
 					experimentEligibilitySelector: i.e
 				}), e => e === o.lb.Enabled)
 		},
@@ -1700,4 +1700,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Multireddit.e4f20be389c7b60fc780.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Multireddit.278bfd5bcf0732653292.js.map

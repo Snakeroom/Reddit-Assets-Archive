@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Settings.ecf5d5df49b1a8f99beb.js
-// Retrieved at 7/14/2022, 11:10:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Settings.1c8a99ff9dc4781e9c6c.js
+// Retrieved at 7/14/2022, 11:50:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Settings"], {
 		"./node_modules/moment/locale sync recursive ^\\.\\/.*$": function(e, t, n) {
@@ -14229,9 +14229,9 @@
 					},
 					isDspEnabled: e => {
 						return Object(re.c)(e, {
-							experimentName: se.Uc,
+							experimentName: se.Tc,
 							experimentEligibilitySelector: re.a
-						}) === se.Ad
+						}) === se.zd
 					}
 				}),
 				bo = Object(ge.u)(),
@@ -14767,7 +14767,7 @@
 			const o = e => Object(r.c)(e, {
 				experimentName: s.G,
 				experimentEligibilitySelector: () => Object(a.P)(e)
-			}) === s.Ad
+			}) === s.zd
 		},
 		"./src/reddit/selectors/experiments/econ/marketplace.ts": function(e, t, n) {
 			"use strict";
@@ -14781,13 +14781,13 @@
 			const a = e => {
 					return !(Object(r.c)(e, {
 						experimentEligibilitySelector: r.a,
-						experimentName: s.ge
-					}) === s.Ad)
+						experimentName: s.fe
+					}) === s.zd)
 				},
 				o = e => Object(r.c)(e, {
 					experimentEligibilitySelector: r.a,
-					experimentName: s.he
-				}) === s.Ad
+					experimentName: s.ge
+				}) === s.zd
 		},
 		"./src/reddit/selectors/gold/productOffers.ts": function(e, t, n) {
 			"use strict";
@@ -14951,4 +14951,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Settings.ecf5d5df49b1a8f99beb.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Settings.1c8a99ff9dc4781e9c6c.js.map
