@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/removalReasonActions.c448525209eb876211f1.js
-// Retrieved at 7/14/2022, 11:50:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/removalReasonActions.be3ab525344b901208cc.js
+// Retrieved at 7/18/2022, 4:40:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["removalReasonActions"], {
 		"./node_modules/lodash/map.js": function(e, t, o) {
@@ -1674,7 +1674,7 @@
 								},
 								i = await G(a(), Object(Q.h)(s, u), u);
 							if (i.ok) {
-								if ([Q.f.Public, Q.f.PublicSubreddit].includes(n)) {
+								if ([Q.f.Public, Q.f.PublicAsSubreddit].includes(n)) {
 									if (r(xe()), i.body) {
 										const e = Object(H.a)(i.body),
 											t = {
@@ -2856,7 +2856,7 @@
 				c = 100;
 			var a, d;
 			! function(e) {
-				e.Private = "private", e.PrivateExposed = "private_exposed", e.Public = "public", e.PublicSubreddit = "public_subreddit"
+				e.Private = "private", e.PrivateExposed = "private_exposed", e.Public = "public", e.PublicAsSubreddit = "public_as_subreddit"
 			}(a || (a = {})),
 			function(e) {
 				e.Bulk = "bulk", e.Comment = "comment", e.Post = "link"
@@ -2867,8 +2867,7 @@
 						[t === d.Bulk ? "item_ids" : "item_id"]: e.itemId,
 						message: e.message,
 						title: e.title,
-						type: e.type === a.PublicSubreddit ? a.Public : e.type,
-						use_proxy: e.type === a.PublicSubreddit
+						type: e.type
 					}
 				}
 		},
@@ -2935,7 +2934,7 @@
 			e.exports = JSON.parse('{"id":"445164f0825f"}')
 		},
 		"./src/redditGQL/operations/CreateComment.json": function(e) {
-			e.exports = JSON.parse('{"id":"edd5d18f5e93"}')
+			e.exports = JSON.parse('{"id":"78e99b537468"}')
 		},
 		"./src/redditGQL/operations/UpdateComment.json": function(e) {
 			e.exports = JSON.parse('{"id":"3954b4d4b89c"}')
@@ -2945,4 +2944,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/removalReasonActions.c448525209eb876211f1.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/removalReasonActions.be3ab525344b901208cc.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditWiki~reddit-components-Wiki-ModHubWikiManagement.163a5f71f4da5a01e49f.js
-// Retrieved at 7/7/2022, 2:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditWiki~reddit-components-Wiki-ModHubWikiManagement.87576d155aa46693629a.js
+// Retrieved at 7/18/2022, 4:40:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditWiki~reddit-components-Wiki-ModHubWikiManagement"], {
 		"./node_modules/autosize/dist/autosize.js": function(e, t, i) {
@@ -495,7 +495,7 @@
 		"./src/reddit/components/Wiki/RevisionsHistory/index.tsx": function(e, t, i) {
 			"use strict";
 			i.d(t, "a", (function() {
-				return Q
+				return ee
 			}));
 			var n = i("./node_modules/fbt/lib/FbtPublic.js"),
 				s = i("./node_modules/react/index.js"),
@@ -533,17 +533,17 @@
 				R = i("./node_modules/lodash/times.js"),
 				C = i.n(R),
 				j = i("./src/reddit/helpers/styles/mixins/loading.ts"),
-				T = i("./src/reddit/components/Wiki/RevisionsHistory/index.m.less"),
-				O = i.n(T);
+				O = i("./src/reddit/components/Wiki/RevisionsHistory/index.m.less"),
+				T = i.n(O);
 			var W = () => {
 					const e = s.createElement("div", {
-						className: Object(d.a)(O.a.loadingShimmer, Object(j.b)({
+						className: Object(d.a)(T.a.loadingShimmer, Object(j.b)({
 							isLoading: !0
 						}))
 					});
 					return s.createElement("div", null, C()(4, t => s.createElement("div", {
 						key: t,
-						className: O.a.loadingRow
+						className: T.a.loadingRow
 					}, e)))
 				},
 				M = i("./node_modules/@researchgate/react-intersection-observer/lib/es/index.js");
@@ -578,28 +578,29 @@
 				A = i("./src/reddit/components/Wiki/common/RevisionInfo/index.tsx"),
 				B = i("./src/reddit/controls/Checkbox/index.tsx"),
 				U = i("./src/reddit/controls/InternalLink/index.tsx"),
-				D = i("./node_modules/lodash/forEach.js"),
-				F = i.n(D),
-				V = i("./src/lib/fastdom/index.ts");
+				D = i("./src/reddit/helpers/author.ts"),
+				F = i("./node_modules/lodash/forEach.js"),
+				V = i.n(F),
+				G = i("./src/lib/fastdom/index.ts");
 
-			function G(e) {
-				V.a.read(() => {
-					F()(e, e => {
+			function q(e) {
+				G.a.read(() => {
+					V()(e, e => {
 						if (e instanceof HTMLElement && e.parentElement) {
 							const t = e.offsetWidth < e.scrollWidth,
 								i = e.parentElement,
 								n = "true" === i.dataset.textOverflow;
-							t !== n && V.a.write(() => {
+							t !== n && G.a.write(() => {
 								i.dataset.textOverflow = String(t)
 							})
 						}
 					})
 				})
 			}
-			const q = Object(r.c)({
+			const K = Object(r.c)({
 				revision: P.n
 			});
-			class K extends o.a.Component {
+			class J extends o.a.Component {
 				constructor() {
 					super(...arguments), this.reasonElementRef = o.a.createRef(), this.state = {}, this.onToggleHiddenClick = async () => {
 						const {
@@ -629,7 +630,7 @@
 					}
 				}
 				componentDidMount() {
-					this.reasonElementRef.current && G([this.reasonElementRef.current])
+					this.reasonElementRef.current && q([this.reasonElementRef.current])
 				}
 				render() {
 					const {
@@ -648,52 +649,52 @@
 						revision: a.id
 					}), g = !s && e, f = c.split("/").slice(-1)[0];
 					return o.a.createElement("tr", {
-						className: Object(d.a)(O.a.row, l ? O.a.mHidden : null)
+						className: Object(d.a)(T.a.row, l ? T.a.mHidden : null)
 					}, !s && o.a.createElement("td", {
-						className: O.a.cellCheckbox
+						className: T.a.cellCheckbox
 					}, o.a.createElement(B.a, {
-						className: O.a.checkbox,
+						className: T.a.checkbox,
 						isCheckboxSelected: t,
 						toggleCheckbox: this.onCheckboxToggle
 					})), o.a.createElement("td", {
-						className: O.a.cellTime
+						className: T.a.cellTime
 					}, Object(A.b)(a)), s && o.a.createElement("td", {
-						className: O.a.cellPage
+						className: T.a.cellPage
 					}, o.a.createElement(U.default, {
-						className: O.a.wikiPageLink,
+						className: T.a.wikiPageLink,
 						title: `/${c}`,
 						to: p
 					}, f)), o.a.createElement("td", {
-						className: O.a.cellUser
+						className: T.a.cellUser
 					}, u && o.a.createElement(z.a, {
 						sendHoverCardEvent: S.a,
 						tooltipId: `revision-${a.id}`,
 						user: u
 					}, o.a.createElement(I.a, {
 						author: u,
-						className: O.a.usernameLink
-					}, u))), o.a.createElement("td", {
-						className: O.a.cellReason
+						className: T.a.usernameLink
+					}, Object(D.b)(u)))), o.a.createElement("td", {
+						className: T.a.cellReason
 					}, o.a.createElement("div", {
-						className: Object(d.a)(O.a.reasonTextWrapper, m ? O.a.mExpanded : null)
+						className: Object(d.a)(T.a.reasonTextWrapper, m ? T.a.mExpanded : null)
 					}, o.a.createElement("div", {
 						ref: this.reasonElementRef,
-						className: O.a.reasonText
+						className: T.a.reasonText
 					}, a.reason), !m && o.a.createElement(b.i, {
-						className: O.a.moreButton,
+						className: T.a.moreButton,
 						onClick: this.onShowMoreButtonClick
 					}, n.fbt._("more", null, {
 						hk: "2IGYPS"
 					})))), o.a.createElement("td", null, o.a.createElement("div", {
-						className: O.a.buttons
+						className: T.a.buttons
 					}, o.a.createElement(b.s, {
-						className: O.a.viewButton,
+						className: T.a.viewButton,
 						onClick: this.onViewClick,
 						to: h
 					}, n.fbt._("View", null, {
 						hk: "4imNnh"
 					})), g && o.a.createElement(o.a.Fragment, null, o.a.createElement(b.r, {
-						className: O.a.hideShowButton,
+						className: T.a.hideShowButton,
 						disabled: this.state.isHideRequestPending,
 						onClick: this.onToggleHiddenClick
 					}, l ? n.fbt._("Show", null, {
@@ -701,19 +702,19 @@
 					}) : n.fbt._("Hide", null, {
 						hk: "30nwHP"
 					})), o.a.createElement(b.r, {
-						className: O.a.revertButton,
+						className: T.a.revertButton,
 						onClick: this.onRevertClick
 					}, n.fbt._("Revert", null, {
 						hk: "5mbFS"
 					}))))))
 				}
 			}
-			var J = Object(a.b)(q, e => ({
+			var Y = Object(a.b)(K, e => ({
 				toggleIsHidden: t => e(Object(l.b)(t))
-			}))(K);
+			}))(J);
 
-			function Y() {
-				return (Y = Object.assign || function(e) {
+			function Z() {
+				return (Z = Object.assign || function(e) {
 					for (var t = 1; t < arguments.length; t++) {
 						var i = arguments[t];
 						for (var n in i) Object.prototype.hasOwnProperty.call(i, n) && (e[n] = i[n])
@@ -721,7 +722,7 @@
 					return e
 				}).apply(this, arguments)
 			}
-			const Z = Object(r.c)({
+			const $ = Object(r.c)({
 				hasError: P.o,
 				hasWikiModPerms: (e, t) => {
 					const i = Object(y.z)(e, t);
@@ -733,7 +734,7 @@
 				isRevertConfirmationModalOpen: Object(_.b)("wiki-revert-confirmation"),
 				listingInfo: P.p
 			});
-			class $ extends o.a.Component {
+			class X extends o.a.Component {
 				constructor() {
 					super(...arguments), this.containerRef = o.a.createRef(), this.state = {
 						selectedRevisions: []
@@ -756,7 +757,7 @@
 						}), this.props.toggleRevetConfirmationModal()
 					}, this.handleResize = () => {
 						this.containerRef.current && function(e) {
-							G(e.getElementsByClassName(O.a.reasonText))
+							q(e.getElementsByClassName(T.a.reasonText))
 						}(this.containerRef.current)
 					}, this.onLoadMore = () => {
 						this.props.onLoadMoreRevisions()
@@ -777,7 +778,7 @@
 						} = this.props, {
 							selectedRevisions: s
 						} = this.state;
-						return o.a.createElement(J, {
+						return o.a.createElement(Y, {
 							key: e,
 							hasWikiModPerms: i,
 							isCheckboxSelected: s.includes(e),
@@ -823,29 +824,29 @@
 					const _ = !a && t;
 					return o.a.createElement("div", {
 						ref: this.containerRef,
-						className: Object(d.a)(O.a.container, {
-							[O.a.mModHub]: i,
-							[O.a.mShowActionButtons]: _
+						className: Object(d.a)(T.a.container, {
+							[T.a.mModHub]: i,
+							[T.a.mShowActionButtons]: _
 						})
 					}, o.a.createElement(h.a, {
 						buttonText: a ? void 0 : n.fbt._("Go to wiki page", null, {
 							hk: "3tJUXk"
 						}),
 						buttonLink: v,
-						className: O.a.pageTitle,
+						className: T.a.pageTitle,
 						title: o.a.createElement("span", {
-							className: O.a.pageTitleText
+							className: T.a.pageTitleText
 						}, a ? n.fbt._("Recent revisions", null, {
 							hk: "VsZfq"
 						}) : n.fbt._("Page history for {pageName}", [n.fbt._param("pageName", `/${p}`)], {
 							hk: "y2LqH"
 						}))
 					}), o.a.createElement("div", {
-						className: O.a.content
+						className: T.a.content
 					}, !a && o.a.createElement("div", {
-						className: O.a.compareBar
+						className: T.a.compareBar
 					}, o.a.createElement(b.s, {
-						className: O.a.compareButton,
+						className: T.a.compareButton,
 						disabled: g.length < 2,
 						onClick: this.onCompareClick,
 						to: w
@@ -854,27 +855,27 @@
 					})), n.fbt._("{selectedCnt}/2 selected to compare", [n.fbt._param("selectedCnt", g.length.toString())], {
 						hk: "1PfMOM"
 					})), o.a.createElement("table", {
-						className: O.a.table
+						className: T.a.table
 					}, o.a.createElement("thead", null, o.a.createElement("tr", null, !a && o.a.createElement("th", {
-						className: O.a.colHeaderCheckbox
+						className: T.a.colHeaderCheckbox
 					}), o.a.createElement("th", {
-						className: O.a.colHeaderTime
+						className: T.a.colHeaderTime
 					}, n.fbt._("time", null, {
 						hk: "231ZTq"
 					})), a && o.a.createElement("th", {
-						className: O.a.colHeaderPage
+						className: T.a.colHeaderPage
 					}, n.fbt._("Wiki page", null, {
 						hk: "2CzzvU"
 					})), o.a.createElement("th", {
-						className: O.a.colHeaderUser
+						className: T.a.colHeaderUser
 					}, n.fbt._("Username", null, {
 						hk: "3dJxeH"
 					})), o.a.createElement("th", {
-						className: O.a.colHeaderReason
+						className: T.a.colHeaderReason
 					}, n.fbt._("Revision Reason", null, {
 						hk: "3Z0slk"
 					})), o.a.createElement("th", {
-						className: O.a.colHeaderActions
+						className: T.a.colHeaderActions
 					}, _ && o.a.createElement(o.a.Fragment, null, n.fbt._("Actions", null, {
 						hk: "1V50p1"
 					}), o.a.createElement(u.a, null, n.fbt._("View: View current version", null, {
@@ -884,7 +885,7 @@
 					}), o.a.createElement("br", null), n.fbt._("Revert: Revert page to an older version", null, {
 						hk: "2IMILE"
 					})))))), o.a.createElement("tbody", {
-						className: O.a.tableBody
+						className: T.a.tableBody
 					}, f.map(this.renderRowItem))), s && o.a.createElement(W, null), k && o.a.createElement(L, {
 						hasError: e,
 						isLoading: s,
@@ -905,7 +906,7 @@
 					}))
 				}
 			}
-			const X = Object(a.b)(Z, (e, t) => ({
+			const Q = Object(a.b)($, (e, t) => ({
 				toggleRevetConfirmationModal: () => e(Object(c.i)("wiki-revert-confirmation")),
 				onRevertToRevision: t => e(Object(l.a)(t)),
 				onLoadMoreRevisions: () => e(Object(l.c)({
@@ -914,15 +915,15 @@
 					canShowFailToast: !0,
 					isRecent: !!t.isRecentRevisionsMode
 				}))
-			}))(Object(p.c)($));
+			}))(Object(p.c)(X));
 
-			function Q(e) {
+			function ee(e) {
 				const t = !!e.isRecentRevisionsMode,
 					i = Object(w.a)({
 						...e,
 						isRecent: t
 					});
-				return o.a.createElement(X, Y({
+				return o.a.createElement(Q, Z({
 					key: i,
 					listingKey: i
 				}, e))
@@ -1014,8 +1015,8 @@
 						subredditName: i
 					}))))
 				},
-				T = i("./src/reddit/components/Wiki/WikiPageContent/PageContent/index.m.less"),
-				O = i.n(T);
+				O = i("./src/reddit/components/Wiki/WikiPageContent/PageContent/index.m.less"),
+				T = i.n(O);
 			const {
 				fbt: W
 			} = i("./node_modules/fbt/lib/FbtPublic.js");
@@ -1036,15 +1037,15 @@
 					subredditName: s,
 					wikiDirectory: a
 				}) : r && r.content && c === p.h ? l = o.a.createElement("div", {
-					className: O.a.automodContent
+					className: T.a.automodContent
 				}, r.content.markdown) : r && r.content && (l = o.a.createElement(x.a, {
-					className: O.a.wikiHtmlContent,
+					className: T.a.wikiHtmlContent,
 					html: r.content.html,
 					sourceElement: E.SourceElement.Wiki
 				})), o.a.createElement("div", {
-					className: Object(d.a)(t, O.a.container)
+					className: Object(d.a)(t, T.a.container)
 				}, c === p.h && o.a.createElement("div", {
-					className: O.a.automodInfoBanner
+					className: T.a.automodInfoBanner
 				}, W._("This page is used to configure AutoModerator for the subreddit, please see the {=full documentation} for information", [W._param("=full documentation", o.a.createElement("a", {
 					href: "/wiki/automoderator/full-documentation"
 				}, W._("full documentation", null, {
@@ -1052,7 +1053,7 @@
 				})))], {
 					hk: "C2ew1"
 				})), l, n && r && r.revision && o.a.createElement("div", {
-					className: O.a.revisionInfo
+					className: T.a.revisionInfo
 				}, o.a.createElement(w.a, {
 					showTimeAgo: !0,
 					isLastRevision: !0,
@@ -1380,8 +1381,8 @@
 				R = i("./src/reddit/components/ConfirmUserActionModal/index.tsx"),
 				C = i("./src/reddit/components/ResizableAutosizeTextarea/index.tsx"),
 				j = i("./src/reddit/components/TrackingHelper/index.tsx"),
-				T = i("./src/reddit/components/Wiki/common/ContentPlaceholder/index.tsx"),
-				O = i("./src/reddit/components/Wiki/common/LoadingPlaceholder/index.tsx"),
+				O = i("./src/reddit/components/Wiki/common/ContentPlaceholder/index.tsx"),
+				T = i("./src/reddit/components/Wiki/common/LoadingPlaceholder/index.tsx"),
 				W = i("./src/reddit/contexts/NavbarExp.ts"),
 				M = i("./src/reddit/controls/Button/index.tsx"),
 				L = i("./src/reddit/helpers/trackers/subredditWiki.ts"),
@@ -1650,14 +1651,14 @@
 								hk: "4fxFCc"
 							}),
 							value: m
-						}) : o.a.createElement(T.a, {
+						}) : o.a.createElement(O.a, {
 							description: Q(t, a, b),
 							title: t ? n.fbt._('"{pageName}" cannot be created', [n.fbt._param("pageName", r)], {
 								hk: "235tfC"
 							}) : n.fbt._('"{pageName}" cannot be edited', [n.fbt._param("pageName", r)], {
 								hk: "4qKJob"
 							})
-						}) : o.a.createElement(O.a, {
+						}) : o.a.createElement(T.a, {
 							paragraphsCount: X
 						})), i && o.a.createElement(K, {
 							withOverlay: !0,
@@ -1852,7 +1853,7 @@
 				R = i.n(P);
 			const C = ["right", "bottom"],
 				j = ["right", "top"];
-			class T extends a.a.Component {
+			class O extends a.a.Component {
 				constructor() {
 					super(...arguments), this.onViewPageSourceClick = () => {
 						this.props.sendEvent(y.r)
@@ -1907,7 +1908,7 @@
 					}))
 				}
 			}
-			var O = T,
+			var T = O,
 				W = i("./src/reddit/components/Wiki/WikiPageTopBar/index.m.less"),
 				M = i.n(W);
 			const L = Object(d.c)({
@@ -1957,7 +1958,7 @@
 						})
 					}, n.fbt._("Edit", null, {
 						hk: "1nftDt"
-					})), l && a.a.createElement(O, {
+					})), l && a.a.createElement(T, {
 						className: M.a.overflowMenu,
 						dropdownId: `wikiPage-OverflowMenu-${o}-${t}`,
 						isModHub: t,
@@ -2089,9 +2090,9 @@
 		"./src/reddit/components/Wiki/common/RevisionInfo/index.tsx": function(e, t, i) {
 			"use strict";
 			i.d(t, "b", (function() {
-				return _
-			})), i.d(t, "a", (function() {
 				return N
+			})), i.d(t, "a", (function() {
+				return y
 			}));
 			var n = i("./node_modules/lodash/noop.js"),
 				s = i.n(n),
@@ -2105,17 +2106,18 @@
 				u = i("./src/reddit/components/Hovercards/AuthorHovercard/UserHovercard.tsx"),
 				p = i("./src/reddit/components/HumanDate/index.tsx"),
 				h = i("./src/reddit/components/InfoTextTooltip/index.tsx"),
-				b = i("./src/reddit/helpers/graphql/helpers.ts"),
-				g = i("./src/reddit/models/Post/index.ts"),
-				f = i("./src/reddit/components/Wiki/common/RevisionInfo/index.m.less"),
-				k = i.n(f);
+				b = i("./src/reddit/helpers/author.ts"),
+				g = i("./src/reddit/helpers/graphql/helpers.ts"),
+				f = i("./src/reddit/models/Post/index.ts"),
+				k = i("./src/reddit/components/Wiki/common/RevisionInfo/index.m.less"),
+				v = i.n(k);
 			const {
-				fbt: v
-			} = i("./node_modules/fbt/lib/FbtPublic.js"), x = ["center", "top"], w = ["center", "bottom"], E = Object(r.a)(h.b), _ = e => {
-				const t = new Date(Object(b.g)(e.revisedAt));
+				fbt: x
+			} = i("./node_modules/fbt/lib/FbtPublic.js"), w = ["center", "top"], E = ["center", "bottom"], _ = Object(r.a)(h.b), N = e => {
+				const t = new Date(Object(g.g)(e.revisedAt));
 				return Object(l.d)(t.valueOf() / 1e3)
 			};
-			class N extends a.a.Component {
+			class y extends a.a.Component {
 				constructor(e) {
 					super(e), this.tooltipTargetElement = null, this.setTooltipTargetRef = e => this.tooltipTargetElement = e, this.onShowTooltip = () => {
 						this.setState({
@@ -2138,21 +2140,21 @@
 						showTimeAgo: o = !1
 					} = this.props, {
 						showTooltip: r
-					} = this.state, l = i.authorInfo && i.authorInfo.name || c.E, h = new Date(Object(b.g)(i.revisedAt)), f = a.a.createElement(u.a, {
+					} = this.state, l = i.authorInfo && i.authorInfo.name || c.E, h = new Date(Object(g.g)(i.revisedAt)), k = a.a.createElement(u.a, {
 						tooltipId: "wikipage-revision-author",
 						user: l,
 						sendHoverCardEvent: s.a
 					}, a.a.createElement(m.a, {
-						className: k.a.authorLink,
+						className: v.a.authorLink,
 						author: l,
-						isAuthorDeleted: Object(g.o)(l),
+						isAuthorDeleted: Object(f.o)(l),
 						isUnstyled: !0
-					}, l));
+					}, Object(b.b)(l)));
 					return a.a.createElement("span", {
-						className: Object(d.a)(e, k.a.container)
-					}, t ? v._("Last revised by {username}", [v._param("username", f)], {
+						className: Object(d.a)(e, v.a.container)
+					}, t ? x._("Last revised by {username}", [x._param("username", k)], {
 						hk: "jNOhx"
-					}) : v._("Revised by {username}", [v._param("username", f)], {
+					}) : x._("Revised by {username}", [x._param("username", k)], {
 						hk: "2Q35rs"
 					}), o && a.a.createElement("span", {
 						ref: this.setTooltipTargetRef,
@@ -2160,12 +2162,12 @@
 						onMouseLeave: this.onHideTooltip
 					}, " - ", a.a.createElement(p.d, {
 						seconds: h.valueOf() / c.Sb
-					}), a.a.createElement(E, {
+					}), a.a.createElement(_, {
 						text: h.toString(),
 						isOpen: r,
 						tooltipTarget: this.tooltipTargetElement,
-						targetPosition: x,
-						tooltipPosition: w
+						targetPosition: w,
+						tooltipPosition: E
 					})), n && i.reason && a.a.createElement("span", null, " - ", i.reason))
 				}
 			}
@@ -2184,4 +2186,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditWiki~reddit-components-Wiki-ModHubWikiManagement.163a5f71f4da5a01e49f.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditWiki~reddit-components-Wiki-ModHubWikiManagement.87576d155aa46693629a.js.map

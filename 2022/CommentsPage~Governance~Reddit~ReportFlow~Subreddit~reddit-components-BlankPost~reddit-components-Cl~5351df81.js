@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CommentsPage~Governance~Reddit~ReportFlow~Subreddit~reddit-components-BlankPost~reddit-components-Cl~5351df81.081d1728266216162513.js
-// Retrieved at 7/18/2022, 3:20:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CommentsPage~Governance~Reddit~ReportFlow~Subreddit~reddit-components-BlankPost~reddit-components-Cl~5351df81.dc32248331682c9cd701.js
+// Retrieved at 7/18/2022, 4:40:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CommentsPage~Governance~Reddit~ReportFlow~Subreddit~reddit-components-BlankPost~reddit-components-Cl~5351df81"], {
 		"./src/lib/ads/session-signals.ts": function(e, t, r) {
@@ -11389,7 +11389,7 @@
 				})
 		},
 		"./src/redditGQL/operations/AddPredictionDrafts.json": function(e) {
-			e.exports = JSON.parse('{"id":"e77b2360963c"}')
+			e.exports = JSON.parse('{"id":"6d316afccb44"}')
 		},
 		"./src/redditGQL/operations/CancelPrediction.json": function(e) {
 			e.exports = JSON.parse('{"id":"fac88c91fec8"}')
@@ -11410,7 +11410,7 @@
 			e.exports = JSON.parse('{"id":"10ad38be41ae"}')
 		},
 		"./src/redditGQL/operations/CreatePredictionTournament.json": function(e) {
-			e.exports = JSON.parse('{"id":"ec74ef5afe19"}')
+			e.exports = JSON.parse('{"id":"33ba84c297e1"}')
 		},
 		"./src/redditGQL/operations/CreateSubredditTags.json": function(e) {
 			e.exports = JSON.parse('{"id":"80c9a3cd96b8"}')
@@ -11422,7 +11422,7 @@
 			e.exports = JSON.parse('{"id":"c44e6467c4d7"}')
 		},
 		"./src/redditGQL/operations/EndPredictionTournament.json": function(e) {
-			e.exports = JSON.parse('{"id":"a141637b546a"}')
+			e.exports = JSON.parse('{"id":"11ac1341f518"}')
 		},
 		"./src/redditGQL/operations/FetchContentControls.json": function(e) {
 			e.exports = JSON.parse('{"id":"c822b1f9fc9b"}')
@@ -11458,7 +11458,7 @@
 			e.exports = JSON.parse('{"id":"bb325c103c55"}')
 		},
 		"./src/redditGQL/operations/GetTournaments.json": function(e) {
-			e.exports = JSON.parse('{"id":"17f4fcd0e341"}')
+			e.exports = JSON.parse('{"id":"8713bd7b96b2"}')
 		},
 		"./src/redditGQL/operations/GetTournamentsBaseInfo.json": function(e) {
 			e.exports = JSON.parse('{"id":"cebfc8734cec"}')
@@ -11470,7 +11470,7 @@
 			e.exports = JSON.parse('{"id":"023547ccdaf6"}')
 		},
 		"./src/redditGQL/operations/ModQueueItems.json": function(e) {
-			e.exports = JSON.parse('{"id":"95d8c0b32743"}')
+			e.exports = JSON.parse('{"id":"71e83bb66bf1"}')
 		},
 		"./src/redditGQL/operations/ModQueueTriggers.json": function(e) {
 			e.exports = JSON.parse('{"id":"de8696c3b5fd"}')
@@ -11503,7 +11503,7 @@
 			e.exports = JSON.parse('{"id":"29aee4089528"}')
 		},
 		"./src/redditGQL/operations/SubredditPage.json": function(e) {
-			e.exports = JSON.parse('{"id":"0d6990e443b8"}')
+			e.exports = JSON.parse('{"id":"2bc8d1c8c6c1"}')
 		},
 		"./src/redditGQL/operations/SubredditPageExtra.json": function(e) {
 			e.exports = JSON.parse('{"id":"f8a28e97ccd1"}')
@@ -11524,7 +11524,7 @@
 			e.exports = JSON.parse('{"id":"e14e6d1892e6"}')
 		},
 		"./src/redditGQL/operations/TopAwardedPosts.json": function(e) {
-			e.exports = JSON.parse('{"id":"227597709dbb"}')
+			e.exports = JSON.parse('{"id":"c56cce76ca67"}')
 		},
 		"./src/redditGQL/operations/TopAwardersLeaderboard.json": function(e) {
 			e.exports = JSON.parse('{"id":"750ff4a757de"}')
@@ -11545,7 +11545,7 @@
 			e.exports = JSON.parse('{"id":"699ae1616006"}')
 		},
 		"./src/redditGQL/operations/UpdatePredictionTournament.json": function(e) {
-			e.exports = JSON.parse('{"id":"871996bf9044"}')
+			e.exports = JSON.parse('{"id":"b32a8b50875b"}')
 		},
 		"./src/redditGQL/operations/UpdateSubredditNotificationSettings.json": function(e) {
 			e.exports = JSON.parse('{"id":"0af4f630a2e1"}')
@@ -11567,4 +11567,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommentsPage~Governance~Reddit~ReportFlow~Subreddit~reddit-components-BlankPost~reddit-components-Cl~5351df81.081d1728266216162513.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommentsPage~Governance~Reddit~ReportFlow~Subreddit~reddit-components-BlankPost~reddit-components-Cl~5351df81.dc32248331682c9cd701.js.map

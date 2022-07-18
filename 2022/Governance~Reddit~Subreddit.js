@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~Reddit~Subreddit.725281bd4a006509db8a.js
-// Retrieved at 7/14/2022, 11:50:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~Reddit~Subreddit.e995b693fe5446c14594.js
+// Retrieved at 7/18/2022, 4:40:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~Reddit~Subreddit"], {
 		"./src/lib/CSSVariableProvider/withTheme.tsx": function(e, t, n) {
@@ -389,8 +389,8 @@
 				C = n("./src/reddit/selectors/appBadges.ts"),
 				v = (n("./src/reddit/selectors/notificationPrefs.ts"), n("./src/reddit/selectors/notificationsInbox.tsx"));
 			const y = Object(o.a)(s.e),
-				P = Object(o.a)(s.b),
-				k = Object(o.a)(s.a),
+				k = Object(o.a)(s.b),
+				P = Object(o.a)(s.a),
 				D = e => async (t, n, r) => {
 					let {
 						gqlContext: o
@@ -403,7 +403,7 @@
 						...p,
 						variables: t
 					}))(o(), e);
-					if (null === (s = null === (i = l.error) || void 0 === i ? void 0 : i.fields) || void 0 === s ? void 0 : s.length) return t(k({
+					if (null === (s = null === (i = l.error) || void 0 === i ? void 0 : i.fields) || void 0 === s ? void 0 : s.length) return t(P({
 						error: l.error
 					})), void t(Object(a.d)());
 					const b = l && l.body,
@@ -412,7 +412,7 @@
 						const e = Object(v.f)(c);
 						t(R(f.nodes, e.length))
 					}
-					t(P(f))
+					t(k(f))
 				}, L = () => async (e, t, n) => {
 					let {
 						gqlContext: r
@@ -966,7 +966,8 @@
 				loadingIconInTopBar: "_1U3KLnHX2TdXL5lNrrv4EW",
 				emptyEditableIconInTopBar: "_3-i_fdY8zqHIo3CjuVzTYE",
 				defaultCommunityIcon: "_1xvdfUtOPDANqHjxzxKX5b",
-				mNightmode: "_1TI6C7sqGL9TRdsq1jRks"
+				mNightmode: "_1TI6C7sqGL9TRdsq1jRks",
+				iconLink: "_35ahToY-XcU6llULyYdy2A"
 			}
 		},
 		"./src/reddit/components/SubredditIcon/index.tsx": function(e, t, n) {
@@ -1057,7 +1058,8 @@
 						color: e.redditStyle ? l.a.alienblue : d
 					}
 				})), e.linkTo ? s.a.createElement("a", E({}, null !== (t = e.linkProps) && void 0 !== t ? t : {}, {
-					href: e.linkTo
+					href: e.linkTo,
+					className: _.a.iconLink
 				}), u) : s.a.createElement(s.a.Fragment, null, u)
 			})
 		},
@@ -1328,11 +1330,11 @@
 					omitResponsivePresenceWrapper: C,
 					onPresenceIndicatorInViewport: v,
 					shouldShowPresenceIndicator: y,
-					user: P,
-					userName: k,
+					user: k,
+					userName: P,
 					isProfileAvatarChangeFixEnabled: D,
 					...L
-				} = e, w = !!s && Object(l.e)(s) === k, U = w ? s : P, R = U && U.accountIcon || c, A = P ? P.isNSFW : p, M = Object(d.a)(R) && !b, B = M ? i.a.createElement(E.a, {
+				} = e, w = !!s && Object(l.e)(s) === P, U = w ? s : k, R = U && U.accountIcon || c, A = k ? k.isNSFW : p, M = Object(d.a)(R) && !b, B = M ? i.a.createElement(E.a, {
 					headshot: R,
 					className: e.className,
 					hasNftBorder: m && Object(d.d)(c)
@@ -1561,14 +1563,14 @@
 					const r = v(t, n, e.href);
 					return e.href = r.url, r.metadata
 				},
-				P = e => {
+				k = e => {
 					let {
 						isSponsored: t,
 						source: n
 					} = e;
 					return !!(t && (null == n ? void 0 : n.outboundUrl))
 				},
-				k = T(e => {
+				P = T(e => {
 					const t = Object(c.useRef)(null),
 						n = Object(S.a)(),
 						{
@@ -1603,11 +1605,11 @@
 						onClick: () => n(u, x, s, p)
 					})) : a.a.createElement("a", N({}, h, {
 						onMouseDown: n => {
-							if (!P(e)) return !(1 !== n.button && 2 !== n.button && !n.ctrlKey) || void C(n.currentTarget, _, g, r);
+							if (!k(e)) return !(1 !== n.button && 2 !== n.button && !n.ctrlKey) || void C(n.currentTarget, _, g, r);
 							t.current = y(n.currentTarget, p, i)
 						},
 						onClick: () => {
-							m && (P(e) && (O(m, I.a.Click, t.current), Object(E.a)(m, b)), d(m, I.a.Click), n(u, x, s, p))
+							m && (k(e) && (O(m, I.a.Click, t.current), Object(E.a)(m, b)), d(m, I.a.Click), n(u, x, s, p))
 						},
 						onMouseLeave: e => {
 							l || ((e, t) => {
@@ -1618,7 +1620,7 @@
 						"data-testid": "outbound-link"
 					}))
 				});
-			t.b = k
+			t.b = P
 		},
 		"./src/reddit/controls/Search/RelatedSubredditMetaData.tsx": function(e, t, n) {
 			"use strict";
@@ -1830,7 +1832,7 @@
 			})), n.d(t, "v", (function() {
 				return C
 			})), n.d(t, "A", (function() {
-				return k
+				return P
 			})), n.d(t, "s", (function() {
 				return D
 			})), n.d(t, "t", (function() {
@@ -1954,13 +1956,13 @@
 				e.POPULAR_CAROUSEL = "popular_carousel", e.SEARCH_DROPDOWN = "search_dropdown"
 			}(j || (j = {}));
 			const T = e => {
-					Object(p.a)(P({
+					Object(p.a)(k({
 						...e,
 						action: s.c.CLICK
 					}))
 				},
 				C = e => {
-					Object(p.a)(P({
+					Object(p.a)(k({
 						...e,
 						action: s.c.VIEW
 					}))
@@ -1973,7 +1975,7 @@
 					[c.a.Popular]: u.d.tile,
 					[c.a.Typeahead]: u.d.dropdown
 				},
-				P = e => {
+				k = e => {
 					let {
 						action: t,
 						offset: n = 0,
@@ -2010,7 +2012,7 @@
 						}
 					}
 				},
-				k = (e, t, n, r, o, i, c) => {
+				P = (e, t, n, r, o, i, c) => {
 					Object(p.a)({
 						...b.n(e),
 						...Object(a.l)({
@@ -2277,9 +2279,9 @@
 			})), n.d(t, "n", (function() {
 				return y
 			})), n.d(t, "j", (function() {
-				return P
-			})), n.d(t, "i", (function() {
 				return k
+			})), n.d(t, "i", (function() {
+				return P
 			})), n.d(t, "g", (function() {
 				return D
 			}));
@@ -2663,13 +2665,13 @@
 						pageType: i.MiniInbox
 					}
 				}),
-				P = () => e => ({
+				k = () => e => ({
 					...u.n(e),
 					action: d.c.CLICK,
 					noun: "messages",
 					source: s.Inbox
 				}),
-				k = e => {
+				P = e => {
 					let {
 						isMiniInbox: t
 					} = e;
@@ -2705,9 +2707,9 @@
 			})), n.d(t, "q", (function() {
 				return y
 			})), n.d(t, "r", (function() {
-				return P
-			})), n.d(t, "o", (function() {
 				return k
+			})), n.d(t, "o", (function() {
+				return P
 			})), n.d(t, "s", (function() {
 				return D
 			})), n.d(t, "c", (function() {
@@ -2852,7 +2854,7 @@
 								sort: c = i.Eb,
 								t: a = i.Fb
 							} = s;
-							Object(j.a)(P(o, c, n, r, a)(t));
+							Object(j.a)(k(o, c, n, r, a)(t));
 							break
 						}
 						case i.Nb.PROFILE_COMMENTS: {
@@ -2864,7 +2866,7 @@
 								sort: c = i.Eb,
 								t: a = i.Fb
 							} = s;
-							Object(j.a)(k(o, c, n, r, a)(t));
+							Object(j.a)(P(o, c, n, r, a)(t));
 							break
 						}
 						case i.Nb.PROFILE_PRIVATE: {
@@ -3014,7 +3016,7 @@
 						adblock: N.e(i)
 					}
 				},
-				P = (e, t, n, r, o) => i => {
+				k = (e, t, n, r, o) => i => {
 					const s = N.y(i, e);
 					s && (s.sort = t, o && (s.sortTime = o));
 					const {
@@ -3036,7 +3038,7 @@
 						adblock: N.e(i)
 					}
 				},
-				k = (e, t, n, r, o) => i => {
+				P = (e, t, n, r, o) => i => {
 					const s = N.U(i, e);
 					s && (s.sort = t, o && (s.sortTime = o));
 					const {
@@ -3999,4 +4001,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit~Subreddit.725281bd4a006509db8a.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit~Subreddit.e995b693fe5446c14594.js.map

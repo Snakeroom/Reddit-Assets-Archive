@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModQueue.ad093d9b75deb0d20826.js
-// Retrieved at 7/14/2022, 5:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModQueue.6818a6c99d57409829c8.js
+// Retrieved at 7/18/2022, 4:40:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModQueue"], {
 		"./src/reddit/actions/bulkActions/index.ts": function(e, t, s) {
@@ -1219,7 +1219,7 @@
 								},
 								a = await U(c(), Object(z.h)(r, l), l);
 							if (a.ok) {
-								if ([z.f.Public, z.f.PublicSubreddit].includes(o)) {
+								if ([z.f.Public, z.f.PublicAsSubreddit].includes(o)) {
 									if (n(Re()), a.body) {
 										const e = Object(H.a)(a.body),
 											t = {
@@ -1429,7 +1429,7 @@
 				d = 100;
 			var c, i;
 			! function(e) {
-				e.Private = "private", e.PrivateExposed = "private_exposed", e.Public = "public", e.PublicSubreddit = "public_subreddit"
+				e.Private = "private", e.PrivateExposed = "private_exposed", e.Public = "public", e.PublicAsSubreddit = "public_as_subreddit"
 			}(c || (c = {})),
 			function(e) {
 				e.Bulk = "bulk", e.Comment = "comment", e.Post = "link"
@@ -1440,8 +1440,7 @@
 						[t === i.Bulk ? "item_ids" : "item_id"]: e.itemId,
 						message: e.message,
 						title: e.title,
-						type: e.type === c.PublicSubreddit ? c.Public : e.type,
-						use_proxy: e.type === c.PublicSubreddit
+						type: e.type
 					}
 				}
 		},
@@ -1515,4 +1514,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModQueue.ad093d9b75deb0d20826.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModQueue.6818a6c99d57409829c8.js.map

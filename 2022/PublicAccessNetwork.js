@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PublicAccessNetwork.8cefcceb90cff59714ad.js
-// Retrieved at 7/18/2022, 3:20:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PublicAccessNetwork.ae14bd8f9fb75b61193d.js
+// Retrieved at 7/18/2022, 4:40:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PublicAccessNetwork"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -2400,7 +2400,7 @@
 								},
 								a = await H(d(), Object(J.h)(r, u), u);
 							if (a.ok) {
-								if ([J.f.Public, J.f.PublicSubreddit].includes(o)) {
+								if ([J.f.Public, J.f.PublicAsSubreddit].includes(o)) {
 									if (n(we()), a.body) {
 										const e = Object(q.a)(a.body),
 											t = {
@@ -3842,10 +3842,10 @@
 							state: t
 						} = this, s = [];
 						return t.removalContextType !== O.e.Bulk && (e.isPostCommentAsSubredditEnabled ? (s.push(r.a.createElement(D, {
-							key: O.f.PublicSubreddit,
+							key: O.f.PublicAsSubreddit,
 							showButton: !0,
 							tabIndex: 0,
-							value: O.f.PublicSubreddit
+							value: O.f.PublicAsSubreddit
 						}, r.a.createElement("div", null, t.removalContextType === O.e.Post ? j._("Public: Write a sticky comment on the post as {subredditName}", [j._param("subredditName", r.a.createElement(F, null, `r/${e.subredditName}`))], {
 							hk: "4XPuC"
 						}) : j._("Public: Write a reply to the comment as {subredditName}", [j._param("subredditName", r.a.createElement(F, null, `r/${e.subredditName}`))], {
@@ -3885,7 +3885,7 @@
 						})))), s
 					}, this.state = {
 						...I,
-						removalType: e.isPostCommentAsSubredditEnabled ? O.f.PublicSubreddit : O.f.Public,
+						removalType: e.isPostCommentAsSubredditEnabled ? O.f.PublicAsSubreddit : O.f.Public,
 						removalContextType: Object(O.g)(e.itemIds)
 					}
 				}
@@ -3929,7 +3929,7 @@
 					}), r.a.createElement(N, {
 						maxChars: O.a,
 						text: t.message.trim()
-					}), r.a.createElement(H, null, t.removalType !== O.f.Public && t.removalType !== O.f.PublicSubreddit && r.a.createElement(r.a.Fragment, null, r.a.createElement(U, null), j._("A link to the removed content will be appended to your message", null, {
+					}), r.a.createElement(H, null, t.removalType !== O.f.Public && t.removalType !== O.f.PublicAsSubreddit && r.a.createElement(r.a.Fragment, null, r.a.createElement(U, null), j._("A link to the removed content will be appended to your message", null, {
 						hk: "1DbEGF"
 					}))))), r.a.createElement(q, null, r.a.createElement(K, null, r.a.createElement(M, null, j._("Mod note (Only mods will see this note)", null, {
 						hk: "3InAsy"
@@ -4870,7 +4870,7 @@
 				i = 100;
 			var d, c;
 			! function(e) {
-				e.Private = "private", e.PrivateExposed = "private_exposed", e.Public = "public", e.PublicSubreddit = "public_subreddit"
+				e.Private = "private", e.PrivateExposed = "private_exposed", e.Public = "public", e.PublicAsSubreddit = "public_as_subreddit"
 			}(d || (d = {})),
 			function(e) {
 				e.Bulk = "bulk", e.Comment = "comment", e.Post = "link"
@@ -4881,8 +4881,7 @@
 						[t === c.Bulk ? "item_ids" : "item_id"]: e.itemId,
 						message: e.message,
 						title: e.title,
-						type: e.type === d.PublicSubreddit ? d.Public : e.type,
-						use_proxy: e.type === d.PublicSubreddit
+						type: e.type
 					}
 				}
 		},
@@ -7939,17 +7938,17 @@
 			e.exports = JSON.parse('{"id":"38f97741ea11"}')
 		},
 		"./src/redditGQL/operations/OtherDiscussions.json": function(e) {
-			e.exports = JSON.parse('{"id":"0a569f10c6e4"}')
+			e.exports = JSON.parse('{"id":"4fd0926f7a9e"}')
 		},
 		"./src/redditGQL/operations/PostFeedAndOtherDiscussions.json": function(e) {
-			e.exports = JSON.parse('{"id":"8a296297db34"}')
+			e.exports = JSON.parse('{"id":"b4821da0ae9a"}')
 		},
 		"./src/redditGQL/operations/SubredditPosts.json": function(e) {
-			e.exports = JSON.parse('{"id":"10c7c14211a7"}')
+			e.exports = JSON.parse('{"id":"88cd89284d0e"}')
 		},
 		"./src/redditGQL/operations/SubredditsPosts.json": function(e) {
-			e.exports = JSON.parse('{"id":"ecec7ad28cab"}')
+			e.exports = JSON.parse('{"id":"9c710caa5caa"}')
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PublicAccessNetwork.8cefcceb90cff59714ad.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PublicAccessNetwork.ae14bd8f9fb75b61193d.js.map
