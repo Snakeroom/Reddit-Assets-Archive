@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModListing.9a4d82e6c1ece666187b.js
-// Retrieved at 7/18/2022, 4:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModListing.4ad47013c8fe1af597af.js
+// Retrieved at 7/18/2022, 5:30:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModListing"], {
 		"./node_modules/classnames/index.js": function(e, t, n) {
@@ -691,9 +691,9 @@
 			})), n.d(t, "toggleHiddenSubreddit", (function() {
 				return z
 			})), n.d(t, "hideSubreddit", (function() {
-				return Y
-			})), n.d(t, "unhideSubreddit", (function() {
 				return J
+			})), n.d(t, "unhideSubreddit", (function() {
+				return Y
 			}));
 			var r = n("./node_modules/fbt/lib/FbtPublic.js"),
 				s = n("./node_modules/lodash/pick.js"),
@@ -859,7 +859,7 @@
 					n(c(e));
 					const p = await u(o(), a.displayText, e);
 					p.ok ? (await n(R(m.routeMatch.match, !0)), n(d(e))) : n(l(p.body))
-				}, Y = e => z(e, !0), J = e => z(e, !1)
+				}, J = e => z(e, !0), Y = e => z(e, !1)
 		},
 		"./src/reddit/actions/postList.ts": function(e, t, n) {
 			"use strict";
@@ -1673,8 +1673,7 @@
 				loadingIconInTopBar: "_1U3KLnHX2TdXL5lNrrv4EW",
 				emptyEditableIconInTopBar: "_3-i_fdY8zqHIo3CjuVzTYE",
 				defaultCommunityIcon: "_1xvdfUtOPDANqHjxzxKX5b",
-				mNightmode: "_1TI6C7sqGL9TRdsq1jRks",
-				iconLink: "_35ahToY-XcU6llULyYdy2A"
+				mNightmode: "_1TI6C7sqGL9TRdsq1jRks"
 			}
 		},
 		"./src/reddit/components/SubredditIcon/index.tsx": function(e, t, n) {
@@ -1765,8 +1764,7 @@
 						color: e.redditStyle ? u.a.alienblue : d
 					}
 				})), e.linkTo ? i.a.createElement("a", y({}, null !== (t = e.linkProps) && void 0 !== t ? t : {}, {
-					href: e.linkTo,
-					className: g.a.iconLink
+					href: e.linkTo
 				}), l) : i.a.createElement(i.a.Fragment, null, l)
 			})
 		},
@@ -2998,7 +2996,7 @@
 			})), n.d(t, "x", (function() {
 				return z
 			})), n.d(t, "e", (function() {
-				return Y
+				return J
 			})), n.d(t, "d", (function() {
 				return X
 			})), n.d(t, "v", (function() {
@@ -3162,7 +3160,7 @@
 							break
 						}
 						case o.Nb.SUBREDDIT_WIKI:
-							Object(E.a)(J(n, r)(t));
+							Object(E.a)(Y(n, r)(t));
 							break;
 						case o.Nb.COINS:
 							Object(E.a)(H(n, r)(t)), Object(E.a)(q()(t));
@@ -3186,7 +3184,7 @@
 							u && B(t, c ? c.subredditName : null, c ? c.profileName : null);
 							break;
 						case o.Nb.SUBREDDIT_LEADERBOARD:
-							u && Object(E.a)(Y()(t));
+							u && Object(E.a)(J()(t));
 							break;
 						case o.Nb.SEARCH_RESULTS:
 							if (u) {
@@ -3517,13 +3515,13 @@
 					noun: "screen",
 					...C(e)
 				}),
-				Y = () => e => ({
+				J = () => e => ({
 					action: "view",
 					source: "global",
 					noun: "screen",
 					...C(e)
 				}),
-				J = (e, t) => n => ({
+				Y = (e, t) => n => ({
 					source: "global",
 					action: "view",
 					noun: "screen",
@@ -4499,7 +4497,7 @@
 				apiError: e => e.modListingPage.filteredSubreddits.api.error,
 				isApiPending: K
 			});
-			class Y extends i.a.Component {
+			class J extends i.a.Component {
 				constructor() {
 					super(...arguments), this.state = {
 						subredditInput: ""
@@ -4543,9 +4541,9 @@
 					}, e.apiError.explanation))
 				}
 			}
-			var J = Object(a.b)(z, e => ({
+			var Y = Object(a.b)(z, e => ({
 					hide: t => e(Object(m.hideSubreddit)(t))
-				}))(Object(R.c)(Y)),
+				}))(Object(R.c)(J)),
 				X = n("./src/lib/lessComponent.tsx"),
 				Z = n("./src/reddit/components/SubredditIcon/index.tsx"),
 				$ = n("./src/lib/classNames/index.ts"),
@@ -4657,7 +4655,7 @@
 						hk: "YdVw7"
 					})), e.filtered && i.a.createElement("div", {
 						className: he.a.inputContainer
-					}, i.a.createElement(J, null), i.a.createElement(pe, {
+					}, i.a.createElement(Y, null), i.a.createElement(pe, {
 						hiddenSubredditsNames: e.hiddenSubredditsNames
 					})))
 				}
@@ -5195,7 +5193,7 @@
 						return e
 				}
 			};
-			var Y = function() {
+			var J = function() {
 					let e = arguments.length > 0 && void 0 !== arguments[0] && arguments[0],
 						t = arguments.length > 1 ? arguments[1] : void 0;
 					switch (t.type) {
@@ -5208,9 +5206,9 @@
 							return e
 					}
 				},
-				J = Object(r.c)({
+				Y = Object(r.c)({
 					error: z,
-					pending: Y
+					pending: J
 				});
 			var X = function() {
 					let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : null,
@@ -5233,7 +5231,7 @@
 					}
 				},
 				Z = Object(r.c)({
-					api: J,
+					api: Y,
 					result: X
 				});
 			const $ = {};
@@ -5820,13 +5818,13 @@
 							return e
 					}
 				},
-				Ye = Object(r.c)({
+				Je = Object(r.c)({
 					api: Ge,
 					result: ze
 				});
-			const Je = {};
+			const Ye = {};
 			var Xe = function() {
-				let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : Je,
+				let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : Ye,
 					t = arguments.length > 1 ? arguments[1] : void 0;
 				switch (t.type) {
 					case s.M:
@@ -5937,7 +5935,7 @@
 					loadMoreModerators: Ae,
 					loadMoreEditableModerators: Fe,
 					models: qe,
-					search: Ye,
+					search: Je,
 					userOrder: rt
 				}),
 				ot = n("./src/reddit/actions/bulkActions/constants.ts");
@@ -6395,13 +6393,13 @@
 							return e
 					}
 				},
-				Yt = Object(r.c)({
+				Jt = Object(r.c)({
 					error: Qt,
 					pending: zt
 				});
-			const Jt = {};
+			const Yt = {};
 			var Xt = function() {
-				let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : Jt,
+				let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : Yt,
 					t = arguments.length > 1 ? arguments[1] : void 0;
 				switch (t.type) {
 					case at.p: {
@@ -6446,7 +6444,7 @@
 					}
 				},
 				en = Object(r.c)({
-					api: Yt,
+					api: Jt,
 					itemOrder: Xt,
 					loadMore: $t
 				});
@@ -6903,4 +6901,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModListing.9a4d82e6c1ece666187b.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModListing.4ad47013c8fe1af597af.js.map
