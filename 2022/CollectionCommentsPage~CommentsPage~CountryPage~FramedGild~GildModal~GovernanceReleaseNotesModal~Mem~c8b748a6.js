@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~CountryPage~FramedGild~GildModal~GovernanceReleaseNotesModal~Mem~c8b748a6.d2b11e1679eedbcecc14.js
-// Retrieved at 7/14/2022, 11:50:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~CountryPage~FramedGild~GildModal~GovernanceReleaseNotesModal~Mem~c8b748a6.7720677c3bb4beaa0d66.js
+// Retrieved at 7/18/2022, 2:30:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~CountryPage~FramedGild~GildModal~GovernanceReleaseNotesModal~Mem~c8b748a6"], {
 		"./src/lib/colors/constants.ts": function(e, t, s) {
@@ -167,9 +167,9 @@
 					const a = Math.floor(t / 60).toString();
 					return s.length < a.length && (s = `0${s}`.slice(-2)), `${s}:${i=`0${i}`.slice(-2)}`
 				};
-			var w = s("./src/reddit/constants/keycodes.ts"),
-				V = s("./src/reddit/components/HTML5StreamPlayer/SeekBar/index.m.less"),
-				M = s.n(V);
+			var V = s("./src/reddit/constants/keycodes.ts"),
+				w = s("./src/reddit/components/HTML5StreamPlayer/SeekBar/index.m.less"),
+				M = s.n(w);
 			const T = r.a.div("Thumb", M.a),
 				_ = r.a.div("ProgressBar", M.a),
 				L = r.a.div("Floating", M.a),
@@ -199,11 +199,11 @@
 						this.setLookahead(0)
 					}, this.handleKeyDown = e => {
 						switch (e.key) {
-							case w.b.ArrowRight:
+							case V.b.ArrowRight:
 								return void this.jumpPlayback(5);
-							case w.b.ArrowLeft:
+							case V.b.ArrowLeft:
 								return void this.jumpPlayback(-5);
-							case w.b.Space:
+							case V.b.Space:
 								return this.props.playPauseVideo(), void e.preventDefault()
 						}
 					}, this.setProgressThumbRef = e => {
@@ -337,17 +337,17 @@
 					})))
 				}
 			}
-			var R = s("./node_modules/react-router-dom/esm/react-router-dom.js"),
-				H = s("./src/reddit/icons/svgs/VideoSnoo/index.tsx"),
+			var H = s("./node_modules/react-router-dom/esm/react-router-dom.js"),
+				R = s("./src/reddit/icons/svgs/VideoSnoo/index.tsx"),
 				A = s("./src/reddit/components/HTML5StreamPlayer/SnooButton/index.m.less"),
 				I = s.n(A);
 			const O = () => o.a.createElement("div", {
 				className: I.a.icon
-			}, o.a.createElement(H.a, null));
+			}, o.a.createElement(R.a, null));
 			var j = e => "string" == typeof e.postUrl ? o.a.createElement("a", {
 					href: e.postUrl,
 					className: I.a.button
-				}, o.a.createElement(O, null)) : o.a.createElement(R.a, {
+				}, o.a.createElement(O, null)) : o.a.createElement(H.a, {
 					to: e.postUrl,
 					className: I.a.button
 				}, o.a.createElement(O, null)),
@@ -523,8 +523,8 @@
 					}), {
 						currentTime: P
 					} = this.state, {
-						totalTime: w
-					} = n ? this.state : this.props, V = this.props.isPaused ? x : y;
+						totalTime: V
+					} = n ? this.state : this.props, w = this.props.isPaused ? x : y;
 					return o.a.createElement(o.a.Fragment, null, !t && o.a.createElement(f, null), s && a && o.a.createElement(Q, {
 						tooltip: g
 					}, o.a.createElement("div", {
@@ -532,12 +532,12 @@
 					}, o.a.createElement(j, {
 						postUrl: s
 					}))), o.a.createElement(q, {
-						tooltip: V
+						tooltip: w
 					}, o.a.createElement("button", {
-						"aria-label": V,
+						"aria-label": w,
 						className: Y.a.button,
 						onClick: this.props.playPauseVideo
-					}, this.props.isPaused ? o.a.createElement(m.a, null) : o.a.createElement(u.a, null))), o.a.createElement($, null, C(P, w)), o.a.createElement(se, null, o.a.createElement(N, {
+					}, this.props.isPaused ? o.a.createElement(m.a, null) : o.a.createElement(u.a, null))), o.a.createElement($, null, C(P, V)), o.a.createElement(se, null, o.a.createElement(N, {
 						active: h === l.a.SeekBar,
 						bufferedRanges: this.state.bufferedRanges,
 						controlBarIsHidden: this.props.hideControlBar,
@@ -545,7 +545,7 @@
 						isLive: n,
 						ref: this.props.seekBarRef,
 						thumbSource: this.props.scrubberThumbSource,
-						totalTime: w,
+						totalTime: V,
 						playPauseVideo: this.props.playPauseVideo,
 						updatePosition: this.props.setVideoPosition,
 						updateContinuousStartTime: this.props.updateContinuousStartTime
@@ -553,10 +553,10 @@
 						"aria-label": i.fbt._("live", null, {
 							hk: "1rkHRc"
 						}),
-						onClick: () => this.props.setVideoPosition(w)
+						onClick: () => this.props.setVideoPosition(V)
 					}, i.fbt._("Live", null, {
 						hk: "3bCYlO"
-					})) : o.a.createElement(ee, null, E(w)), v && r, !e && (this.props.isFullScreen ? o.a.createElement(oe, {
+					})) : o.a.createElement(ee, null, E(V)), v && r, !e && (this.props.isFullScreen ? o.a.createElement(oe, {
 						tooltip: S
 					}, o.a.createElement("button", {
 						"aria-label": S,
@@ -879,18 +879,18 @@
 					d: "M17 0C18.5977 0 19.9037 1.24892 19.9949 2.82373L20 3V21C20 22.5977 18.7511 23.9037 17.1763 23.9949L17 24H13V22H17C17.5128 22 17.9355 21.614 17.9933 21.1166L18 21V3C18 2.48716 17.614 2.06449 17.1166 2.00673L17 2H13V0H17ZM11 22V24H9V22H11ZM6 21C6 21.5128 6.38604 21.9355 6.88338 21.9933L7 22V24C5.40232 24 4.09634 22.7511 4.00509 21.1763L4 21H6ZM6 17V19H4V17H6ZM6 13V15H4V13H6ZM6 9V11H4V9H6ZM6 5V7H4V5H6ZM7 0V2C6.48716 2 6.06449 2.38604 6.00673 2.88338L6 3H4C4 1.34315 5.34315 0 7 0ZM11 0V2H9V0H11Z",
 					fill: "inherit"
 				})),
-				w = s("./src/reddit/components/HTML5StreamPlayer/CreditPill/index.m.less"),
-				V = s.n(w);
+				V = s("./src/reddit/components/HTML5StreamPlayer/CreditPill/index.m.less"),
+				w = s.n(V);
 			var M = e => {
 					let {
 						reactPostInfo: t,
 						handleClick: s
 					} = e;
 					return c.a.createElement("a", {
-						className: V.a.creditPillStyles,
+						className: w.a.creditPillStyles,
 						onClick: s
 					}, c.a.createElement(C, {
-						className: V.a.stitchIcon
+						className: w.a.stitchIcon
 					}), E.fbt._("Thread with {Name of original author}", [E.fbt._param("Name of original author", t.attributionInfo.displayName)], {
 						hk: "1XkWro"
 					}))
@@ -902,8 +902,8 @@
 				B = s("./src/reddit/contexts/InsideOverlay.tsx"),
 				k = s("./src/reddit/helpers/overlay/index.ts"),
 				N = s("./src/reddit/helpers/trackers/media.ts"),
-				R = s("./src/reddit/helpers/trackers/react.ts"),
-				H = s("./src/reddit/selectors/experiments/adblockAcceptableAdsMitigationExperiment.ts"),
+				H = s("./src/reddit/helpers/trackers/react.ts"),
+				R = s("./src/reddit/selectors/experiments/adblockAcceptableAdsMitigationExperiment.ts"),
 				A = s("./src/reddit/selectors/experiments/videoReactions.ts"),
 				I = s("./src/reddit/selectors/media.ts"),
 				O = s("./src/reddit/selectors/platform.ts"),
@@ -1101,8 +1101,8 @@
 				Pe = s("./src/reddit/icons/svgs/VideoInstall/index.tsx"),
 				Ee = s("./src/reddit/icons/svgs/VideoLearnMore/index.tsx"),
 				Ce = s("./src/reddit/icons/svgs/VideoPlayNow/index.tsx"),
-				we = s("./src/reddit/icons/svgs/VideoSeeMenu/index.tsx"),
-				Ve = s("./src/reddit/icons/svgs/VideoShopNow/index.tsx"),
+				Ve = s("./src/reddit/icons/svgs/VideoSeeMenu/index.tsx"),
+				we = s("./src/reddit/icons/svgs/VideoShopNow/index.tsx"),
 				Me = s("./src/reddit/icons/svgs/VideoSignUp/index.tsx"),
 				Te = s("./src/reddit/icons/svgs/VideoViewMore/index.tsx"),
 				_e = s("./src/reddit/icons/svgs/VideoWatchNow/index.tsx"),
@@ -1118,8 +1118,8 @@
 				Download: c.a.createElement(Pe.a, null),
 				"Learn More": c.a.createElement(Ee.a, null),
 				"Play Now": c.a.createElement(Ce.a, null),
-				"See Menu": c.a.createElement(we.a, null),
-				"Shop Now": c.a.createElement(Ve.a, null),
+				"See Menu": c.a.createElement(Ve.a, null),
+				"Shop Now": c.a.createElement(we.a, null),
 				"Sign Up": c.a.createElement(Me.a, null),
 				"View More": c.a.createElement(Te.a, null),
 				"Watch Now": c.a.createElement(_e.a, null)
@@ -1150,12 +1150,12 @@
 					}, t || "Learn More")))
 				}),
 				Ne = s("./src/reddit/icons/svgs/VideoReplay/index.tsx"),
-				Re = s("./src/reddit/components/HTML5StreamPlayer/ReplayVideo/index.m.less"),
-				He = s.n(Re);
-			const Ae = G.a.div("Centered", He.a),
-				Ie = G.a.div("EndedOverlay", He.a),
-				Oe = G.a.span("ReplayText", He.a),
-				je = G.a.button("ReplayButton", He.a);
+				He = s("./src/reddit/components/HTML5StreamPlayer/ReplayVideo/index.m.less"),
+				Re = s.n(He);
+			const Ae = G.a.div("Centered", Re.a),
+				Ie = G.a.div("EndedOverlay", Re.a),
+				Oe = G.a.span("ReplayText", Re.a),
+				je = G.a.button("ReplayButton", Re.a);
 			var De = e => {
 					const {
 						onClick: t,
@@ -1226,7 +1226,7 @@
 					started: U.k,
 					volume: I.f,
 					isReactionPillKillswitchEnabled: A.b,
-					isAdblockAAMitigationEnabled: H.a
+					isAdblockAAMitigationEnabled: R.a
 				}), (e, t) => {
 					let {
 						postId: s
@@ -1292,7 +1292,7 @@
 			class it extends l.Component {
 				constructor(e) {
 					var t;
-					super(e), t = this, this.isSeekingWithRetry = !1, this.percentagePixelsFired = {
+					super(e), t = this, this.percentagePixelsFired = {
 						[F.b]: !1,
 						[F.c]: !1,
 						[F.d]: !1,
@@ -1402,7 +1402,7 @@
 										ignoreUnderrunsUntil: Date.now() + tt
 									}), s.handleMouseUp(e), this.sendEvent("click", "seek");
 									const t = this.HTML5StreamPlayerVideo;
-									this.state.videoEnded && t && t.currentTime !== t.duration && this.playVideo()
+									this.state.videoEnded && t && t.currentTime < t.duration && this.playVideo()
 								}
 								break;
 							case Ge.Volume:
@@ -1504,7 +1504,7 @@
 							videoPaused: !0
 						}))
 					}, this.resetVideo = e => {
-						this.isUnobscured() && this.state.videoEnded && (this.resetVideoWithRetry(), this.sendEvent("click", "replay"), this.setState({
+						this.isUnobscured() && this.state.videoEnded && (this.restartVideo(), this.sendEvent("click", "replay"), this.setState({
 							ignoreUnderrunsUntil: Date.now() + tt,
 							videoEnded: !1,
 							videoManualPaused: !1
@@ -1635,7 +1635,7 @@
 						} = this.props;
 						if (e) {
 							const s = e.reactedFrom.subreddit ? e.reactedFrom.subreddit.id : e.attributionInfo.id;
-							this.props.sendEvent(Object(R.b)({
+							this.props.sendEvent(Object(H.b)({
 								subredditId: s,
 								postId: t,
 								reactSourceSubredditId: s,
@@ -1826,21 +1826,8 @@
 						this.controlBarApi.setBufferedRanges(t)
 					}
 				}
-				resetVideoWithRetry() {
-					const e = this.HTML5StreamPlayerVideo;
-					if (this.isSeekingWithRetry || !e) return;
-					this.isSeekingWithRetry = !0;
-					let t = 0,
-						s = 0;
-					const i = () => {
-							this.isSeekingWithRetry = !1, window.clearInterval(a), e.removeEventListener("seeked", i)
-						},
-						a = window.setInterval(() => {
-							!e || e.paused || s !== e.currentTime || t > 5 ? i() : (s = .016 * Math.pow(2, t), e.currentTime = s, t++)
-						}, 100);
-					e.addEventListener("seeked", i, {
-						once: !0
-					}), this.setVideoPos(s), this.playVideo()
+				restartVideo() {
+					this.setVideoPos(.001), this.playVideo()
 				}
 				setBufferTime(e) {
 					this.dashPlayer && this.dashPlayer.updateSettings({
@@ -1887,7 +1874,7 @@
 						videoHasError: g,
 						videoLoaded: f,
 						videoStarted: x
-					} = this.state, y = this.HTML5StreamPlayerVideo, S = p === Ge.SeekBar, b = f || !t, P = !f, E = !r && d, C = v && !S, w = {
+					} = this.state, y = this.HTML5StreamPlayerVideo, S = p === Ge.SeekBar, b = f || !t, P = !f, E = !r && d, C = v && !S, V = {
 						...this.props,
 						bitrateInfo: this.state.bitrateInfo,
 						resolution: this.state.resolution,
@@ -1959,7 +1946,7 @@
 						playPauseVideo: this.playPauseVideo,
 						postUrl: this.props.postUrl,
 						ref: this.setControlBarApi,
-						settingsButton: c.a.createElement(he, w),
+						settingsButton: c.a.createElement(he, V),
 						scrubberThumbSource: this.props.scrubberThumbSource,
 						seekBarRef: this.setSeekBarRef,
 						settingChange: p,
@@ -2692,4 +2679,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~CountryPage~FramedGild~GildModal~GovernanceReleaseNotesModal~Mem~c8b748a6.d2b11e1679eedbcecc14.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~CountryPage~FramedGild~GildModal~GovernanceReleaseNotesModal~Mem~c8b748a6.7720677c3bb4beaa0d66.js.map
