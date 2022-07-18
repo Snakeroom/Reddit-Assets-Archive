@@ -1,7 +1,35 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-ModHub-ContentControls.b9e51dc73f05c64de9ad.js
-// Retrieved at 6/21/2022, 7:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-ModHub-ContentControls.1c19838a93ba336e9344.js
+// Retrieved at 7/18/2022, 10:40:06 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-ModHub-ContentControls"], {
+		"./node_modules/lodash/negate.js": function(e, t) {
+			var n = "Expected a function";
+			e.exports = function(e) {
+				if ("function" != typeof e) throw new TypeError(n);
+				return function() {
+					var t = arguments;
+					switch (t.length) {
+						case 0:
+							return !e.call(this);
+						case 1:
+							return !e.call(this, t[0]);
+						case 2:
+							return !e.call(this, t[0], t[1]);
+						case 3:
+							return !e.call(this, t[0], t[1], t[2])
+					}
+					return !e.apply(this, t)
+				}
+			}
+		},
+		"./node_modules/lodash/omitBy.js": function(e, t, n) {
+			var s = n("./node_modules/lodash/_baseIteratee.js"),
+				i = n("./node_modules/lodash/negate.js"),
+				o = n("./node_modules/lodash/pickBy.js");
+			e.exports = function(e, t) {
+				return o(e, i(s(t)))
+			}
+		},
 		"./src/reddit/components/ModHub/ContentControls/FormPlaceholder/index.m.less": function(e, t, n) {
 			e.exports = {
 				container: "_3H4J-fB2PhD0fgCLF9tXok",
@@ -81,8 +109,8 @@
 				a = n("./node_modules/react/index.js"),
 				d = n.n(a),
 				c = n("./node_modules/react-redux/es/index.js"),
-				m = n("./node_modules/reselect/es/index.js"),
-				u = n("./src/reddit/actions/contentControls/index.ts"),
+				u = n("./node_modules/reselect/es/index.js"),
+				m = n("./src/reddit/actions/contentControls/index.ts"),
 				h = n("./src/reddit/actions/modal.ts"),
 				g = n("./src/reddit/components/BlockNavigation/index.tsx"),
 				b = n("./src/reddit/components/ConfirmUserActionModal/index.tsx"),
@@ -286,8 +314,8 @@
 						})
 					}), r
 				},
-				me = n("./src/reddit/components/ModHub/ContentControls/MinMaxInput/index.m.less"),
-				ue = n.n(me);
+				ue = n("./src/reddit/components/ModHub/ContentControls/MinMaxInput/index.m.less"),
+				me = n.n(ue);
 			class he extends d.a.Component {
 				constructor() {
 					super(...arguments), this.minInputRef = d.a.createRef(), this.maxInputRef = d.a.createRef(), this.onChange = (e, t) => {
@@ -327,7 +355,7 @@
 					return d.a.createElement("div", {
 						onBlur: this.onBlur
 					}, d.a.createElement("div", null, d.a.createElement(ee.b, {
-						className: ue.a.minInput,
+						className: me.a.minInput,
 						inputRef: this.minInputRef,
 						isInvalid: a,
 						label: s.fbt._("min", null, {
@@ -339,7 +367,7 @@
 						type: "number",
 						value: ae(i)
 					}), d.a.createElement(ee.b, {
-						className: ue.a.maxInput,
+						className: me.a.maxInput,
 						inputRef: this.maxInputRef,
 						isInvalid: c,
 						label: s.fbt._("max", null, {
@@ -351,7 +379,7 @@
 						type: "number",
 						value: ae(t)
 					})), d.a.createElement($.a, {
-						className: ue.a.errorMessages,
+						className: me.a.errorMessages,
 						messages: r
 					}))
 				}
@@ -935,14 +963,14 @@
 				})))
 			}
 			var ct = n("./src/reddit/components/CharacterCountdown/index.tsx");
-			const mt = e => e.split(/[,;\s]/).filter(Boolean),
-				ut = e => e.join(", "),
-				ht = e => ut(mt(e)),
+			const ut = e => e.split(/[,;\s]/).filter(Boolean),
+				mt = e => e.join(", "),
+				ht = e => mt(ut(e)),
 				gt = ["i.redd.it", "v.redd.it"],
 				bt = /^(?:[\w-]+\.)+[\w]+$/,
 				pt = e => gt.includes(e.toLowerCase());
 			var ft = e => {
-					const t = mt(e),
+					const t = ut(e),
 						n = [],
 						i = t.find(e => !(e => bt.test(e))(e));
 					return i && n.push(s.fbt._('Invalid domain: "{domainName}"', [s.fbt._param("domainName", i)], {
@@ -1399,7 +1427,7 @@
 					return e
 				}).apply(this, arguments)
 			}
-			const Nt = Object(m.c)({
+			const Nt = Object(u.c)({
 				hatefulContentFiltersEnabled: X.d.hatefulContentFiltersEnabled
 			});
 			var Pt = Object(c.b)(Nt)(e => d.a.createElement(d.a.Fragment, null, (e => [...e.hatefulContentFiltersEnabled ? [dt] : [], Lt, Ee])(e).map((t, n) => d.a.createElement(t, Ft({
@@ -1417,8 +1445,8 @@
 						isFlairRequired: a,
 						linkRepostAge: d,
 						linkRestrictionPolicy: c,
-						titleBlacklistedStrings: m,
-						titleRegexes: u,
+						titleBlacklistedStrings: u,
+						titleRegexes: m,
 						titleRequiredStrings: h,
 						titleTextMaxLength: g,
 						titleTextMinLength: b
@@ -1437,8 +1465,8 @@
 							clientErrors: []
 						},
 						titleBlacklistedStrings: {
-							enabled: !!m.length,
-							strings: m,
+							enabled: !!u.length,
+							strings: u,
 							clientErrors: []
 						},
 						titleLength: {
@@ -1469,14 +1497,14 @@
 							}
 						} : null,
 						titleRegexes: {
-							enabled: !!u.length,
-							regexes: u,
+							enabled: !!m.length,
+							regexes: m,
 							serverErrors: []
 						},
 						linkDomains: {
 							enabled: c !== E.b.None,
 							restrictionPolicy: c === E.b.None ? E.b.Whitelist : c,
-							domainsText: c !== E.b.None ? ut(c === E.b.Whitelist ? r : o) : "",
+							domainsText: c !== E.b.None ? mt(c === E.b.Whitelist ? r : o) : "",
 							clientErrors: [],
 							serverErrors: []
 						},
@@ -1524,7 +1552,7 @@
 						n = e.bodyRequirement.restrictionPolicy !== E.a.NotAllowed,
 						s = e.bodyRequirement.restrictionPolicy === E.a.Required;
 					if (n && (t.bodyBlacklistedStrings = e.bodyBlacklistedStrings.enabled ? e.bodyBlacklistedStrings.strings : [], t.bodyRequiredStrings = s && e.bodyRequiredStrings.enabled ? e.bodyRequiredStrings.strings : [], t.bodyRegexes = e.bodyRegexes.enabled ? Dt(e.bodyRegexes.regexes) : []), e.linkDomains.enabled) {
-						const n = mt(e.linkDomains.domainsText);
+						const n = ut(e.linkDomains.domainsText);
 						e.linkDomains.restrictionPolicy === E.b.Whitelist ? t.domainWhitelist = n : e.linkDomains.restrictionPolicy === E.b.Blacklist && (t.domainBlacklist = n)
 					}
 					return t
@@ -1551,7 +1579,7 @@
 				};
 			const Wt = "PostReq-discard-confirmation",
 				Ut = 150,
-				Gt = Object(m.c)({
+				Gt = Object(u.c)({
 					allowNavigationCallback: L.a,
 					isDiscardModalOpen: Object(T.b)(Wt),
 					isLoading: B.a,
@@ -1559,7 +1587,7 @@
 				}),
 				Vt = Object(c.b)(Gt, (e, t) => ({
 					closeAllModals: () => e(Object(h.f)()),
-					onSave: n => e(Object(u.b)(t.subredditName, n)),
+					onSave: n => e(Object(m.b)(t.subredditName, n)),
 					toggleModal: t => e(Object(h.i)(t))
 				}));
 			class Kt extends d.a.Component {
@@ -1776,4 +1804,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ModHub-ContentControls.b9e51dc73f05c64de9ad.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ModHub-ContentControls.1c19838a93ba336e9344.js.map
