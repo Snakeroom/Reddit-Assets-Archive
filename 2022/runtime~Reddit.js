@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/runtime~Reddit.ada6113526c4bff582a7.js
-// Retrieved at 7/15/2022, 5:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/runtime~Reddit.5134f63328b860fbb83a.js
+// Retrieved at 7/18/2022, 10:00:09 AM by Reddit Dataminer v1.0.0
 ! function(e) {
 	function o(o) {
 		for (var a, n, r = o[0], s = o[1], c = o[2], l = 0, b = []; l < r.length; l++) n = r[l], Object.prototype.hasOwnProperty.call(d, n) && d[n] && b.push(d[n][0]), d[n] = 0;
@@ -1494,14 +1494,14 @@
 						"reddit-components-PostCreationForm-PredictionEditor-InactivityModal": "48433ee0bec18632bd07",
 						"reddit-components-PostCreationForm-PredictionEditor-StartTournamentLimitationModal": "58ddb94920a2ab581fa9",
 						"translations/bn_BD-json": "f82a4042b8da67e8580e",
-						"translations/de_DE-json": "d316b8dd3ae184e8cc55",
-						"translations/es_ES-json": "e9592ba011e6b7b1dbb8",
-						"translations/es_MX-json": "548e760d5051566b2dd5",
-						"translations/fr_FR-json": "23ce9576d4f353c8277d",
+						"translations/de_DE-json": "262bd4170c3a3a9663ae",
+						"translations/es_ES-json": "6dae64adb988e6510e26",
+						"translations/es_MX-json": "e6f310e9e281afd13b66",
+						"translations/fr_FR-json": "7c0cb47de77d3c802b99",
 						"translations/hi_IN-json": "47a5e4358eb473636ba6",
-						"translations/it_IT-json": "fd342ad08f7e8490ad2c",
+						"translations/it_IT-json": "b6c9eb2bc973bc0043a4",
 						"translations/pseudo-json": "f0f6406bf11882b8f613",
-						"translations/pt_BR-json": "245ae029b9158351eaaf",
+						"translations/pt_BR-json": "765f5e0ae90d7a6de82d",
 						"translations/pt_PT-json": "1593418b616ab99d3010",
 						"vendors~AdminPanel": "eae9f345b12b82989d37",
 						AdminPanel: "de75d4c536d8dc9f8c74",
@@ -1543,7 +1543,7 @@
 						SubredditPremiumBadgeHovercardTooltip: "af3b46b9f749354a72f1",
 						gildActions: "c40a08ae0df5878205a9",
 						"ChatMessageInput~ChatPost": "30eca1640d69f011ce75",
-						ChatPost: "310b7e1346f50520f138",
+						ChatPost: "a5d1fa16774790388d9b",
 						"reddit-components-SidebarNativeAd": "cb4935042997670516ca",
 						CommentsPageNativeAd: "3fdb6c1b310de8e81b4b",
 						ReportFlow: "dcbc494e313b9a75226c",
@@ -1754,4 +1754,4 @@
 	var m = c;
 	t()
 }([]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/runtime~Reddit.ada6113526c4bff582a7.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/runtime~Reddit.5134f63328b860fbb83a.js.map
