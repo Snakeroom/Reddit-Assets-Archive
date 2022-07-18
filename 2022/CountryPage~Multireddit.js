@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CountryPage~Multireddit.f8d1923d394eb54f8fcf.js
-// Retrieved at 7/14/2022, 12:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CountryPage~Multireddit.089a1eeca5a6385bbbbe.js
+// Retrieved at 7/18/2022, 3:20:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CountryPage~Multireddit"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -1011,6 +1011,40 @@
 			e.exports = {
 				container: "_365FiUZ11efXHV7l7fNp6K",
 				button: "_1m03hmspTHlre1O1CXbY9Y"
+			}
+		},
+		"./src/reddit/components/BackToTop/index.tsx": function(e, t, n) {
+			"use strict";
+			var r = n("./node_modules/react/index.js"),
+				s = n.n(r),
+				i = n("./src/lib/classNames/index.ts"),
+				o = n("./src/reddit/constants/elementIds.ts"),
+				a = n("./src/reddit/controls/Button/index.tsx"),
+				c = n("./src/reddit/components/BackToTop/index.m.less"),
+				d = n.n(c);
+			const {
+				fbt: l
+			} = n("./node_modules/fbt/lib/FbtPublic.js"), u = e => {
+				if (e) {
+					const e = document.getElementById(o.e);
+					e && e.scroll(0, 0)
+				} else window.scroll(0, 0)
+			};
+			t.a = e => {
+				let {
+					className: t,
+					isOverlay: n,
+					style: r
+				} = e;
+				return s.a.createElement("div", {
+					className: Object(i.a)(t, d.a.container),
+					style: r
+				}, s.a.createElement(a.l, {
+					className: d.a.button,
+					onClick: () => u(n)
+				}, l._("Back to Top", null, {
+					hk: "YjBtV"
+				})))
 			}
 		},
 		"./src/reddit/components/ContentGate/index.m.less": function(e, t, n) {
@@ -4669,7 +4703,7 @@
 					}, r[t]) : null
 				};
 				if (e.isD2xPdpSideRailRecsEnabled) {
-					const t = e.d2xPdpSideRailRecsVariant === u.Kc.GreyRereddit ? e.reredditButtons : [];
+					const t = e.d2xPdpSideRailRecsVariant === u.Kc.GreyRereddit || e.d2xPdpSideRailRecsVariant === u.Kc.GreyRedditNoNsfw || e.d2xPdpSideRailRecsVariant === u.Kc.LargeImagePreview ? e.reredditButtons : [];
 					return s.a.createElement(S, {
 						reredditContent: t,
 						countryCode: e.countryCode
@@ -4795,43 +4829,16 @@
 				o = n("./node_modules/react/index.js"),
 				a = n.n(o),
 				c = n("./src/lib/constants/index.ts"),
-				d = n("./src/reddit/constants/elementIds.ts"),
-				l = n("./src/reddit/controls/Button/index.tsx"),
-				u = n("./src/reddit/components/BackToTop/index.m.less"),
-				m = n.n(u);
-			const {
-				fbt: p
-			} = n("./node_modules/fbt/lib/FbtPublic.js"), h = e => {
-				if (e) {
-					const e = document.getElementById(d.e);
-					e && e.scroll(0, 0)
-				} else window.scroll(0, 0)
-			};
-			var b = e => {
-					let {
-						className: t,
-						isOverlay: n,
-						style: s
-					} = e;
-					return a.a.createElement("div", {
-						className: Object(r.a)(t, m.a.container),
-						style: s
-					}, a.a.createElement(l.l, {
-						className: m.a.button,
-						onClick: () => h(n)
-					}, p._("Back to Top", null, {
-						hk: "YjBtV"
-					})))
-				},
-				f = n("./src/reddit/components/SidebarFooter/index.tsx"),
-				_ = n("./src/reddit/constants/componentSizes.ts"),
-				g = n("./src/reddit/contexts/PageLayer/index.tsx"),
-				x = n("./src/reddit/components/SidebarStickyBottom/index.m.less"),
-				y = n.n(x),
-				w = n("./src/lib/lessComponent.tsx");
+				d = n("./src/reddit/components/BackToTop/index.tsx"),
+				l = n("./src/reddit/components/SidebarFooter/index.tsx"),
+				u = n("./src/reddit/constants/componentSizes.ts"),
+				m = n("./src/reddit/contexts/PageLayer/index.tsx"),
+				p = n("./src/reddit/components/SidebarStickyBottom/index.m.less"),
+				h = n.n(p),
+				b = n("./src/lib/lessComponent.tsx");
 
-			function v() {
-				return (v = Object.assign || function(e) {
+			function f() {
+				return (f = Object.assign || function(e) {
 					for (var t = 1; t < arguments.length; t++) {
 						var n = arguments[t];
 						for (var r in n) Object.prototype.hasOwnProperty.call(n, r) && (e[r] = n[r])
@@ -4839,26 +4846,26 @@
 					return e
 				}).apply(this, arguments)
 			}
-			const k = c.e[1] + 24,
-				E = _.f + 8,
-				C = E + 152 + 16,
-				O = C + k + 8,
-				S = w.a.div("Container", y.a),
-				j = w.a.wrapped(e => {
+			const _ = c.e[1] + 24,
+				g = u.f + 8,
+				x = g + 152 + 16,
+				y = x + _ + 8,
+				w = b.a.div("Container", h.a),
+				v = b.a.wrapped(e => {
 					let {
 						className: t,
 						isOverlay: n,
 						...r
 					} = e;
-					return a.a.createElement(b, v({
+					return a.a.createElement(d.a, f({
 						className: t,
 						isOverlay: n,
 						style: {
-							top: `calc(100vh - ${n?E:8}px)`
+							top: `calc(100vh - ${n?g:8}px)`
 						}
 					}, r))
-				}, "BackToTop", y.a),
-				T = e => {
+				}, "BackToTop", h.a),
+				k = e => {
 					let {
 						children: t,
 						className: n,
@@ -4868,17 +4875,17 @@
 					} = e;
 					return a.a.createElement("div", {
 						className: Object(r.a)(n, {
-							[y.a.BottomStickyStyles]: o,
-							[y.a.StickyStyles]: !o && i && !s,
-							[y.a.StickyStylesFakeOverlay]: !o && !!s
+							[h.a.BottomStickyStyles]: o,
+							[h.a.StickyStyles]: !o && i && !s,
+							[h.a.StickyStylesFakeOverlay]: !o && !!s
 						})
 					}, t)
 				};
-			class D extends o.Component {
+			class E extends o.Component {
 				constructor(e) {
 					super(e), this.containerEl = null, this.windowHeight = 1 / 0, this.getStickyContents = () => ({
-						shouldAdSticky: this.windowHeight > O,
-						shouldFooterSticky: this.windowHeight > C
+						shouldAdSticky: this.windowHeight > y,
+						shouldFooterSticky: this.windowHeight > x
 					}), this.updateState = () => {
 						if (this.isHidden()) return;
 						const {
@@ -4921,23 +4928,23 @@
 							recommendationsComponent: c,
 							reredditButtons: d
 						}
-					} = this, l = this.state.isAdSticky && !(!t && !r), u = this.state.isBottomSticky;
-					return a.a.createElement(S, {
+					} = this, u = this.state.isAdSticky && !(!t && !r), m = this.state.isBottomSticky;
+					return a.a.createElement(w, {
 						className: s,
 						innerRef: this.setWrapperRef
-					}, a.a.createElement(T, {
+					}, a.a.createElement(k, {
 						isFakeOverlay: n,
-						isSticky: l,
-						shouldStickToBottom: u
-					}, t, r, c, !i && a.a.createElement(f.a, {
+						isSticky: u,
+						shouldStickToBottom: m
+					}, t, r, c, !i && a.a.createElement(l.a, {
 						reredditButtons: d
-					})), !c && !this.props.hideBackToTop && a.a.createElement(j, {
+					})), !c && !this.props.hideBackToTop && a.a.createElement(v, {
 						isOverlay: !!(null === (e = null == o ? void 0 : o.locationState) || void 0 === e ? void 0 : e.isOverlay)
 					}))
 				}
 			}
-			const N = Object(g.u)();
-			t.a = N(D)
+			const C = Object(m.u)();
+			t.a = C(E)
 		},
 		"./src/reddit/components/StateSort/index.m.less": function(e, t, n) {
 			e.exports = {
@@ -6784,4 +6791,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CountryPage~Multireddit.f8d1923d394eb54f8fcf.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CountryPage~Multireddit.089a1eeca5a6385bbbbe.js.map

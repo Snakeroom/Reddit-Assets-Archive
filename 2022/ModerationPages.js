@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModerationPages.b534fbb282d932e4517d.js
-// Retrieved at 7/18/2022, 10:40:06 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModerationPages.9c0c51437472fcae3e06.js
+// Retrieved at 7/18/2022, 3:20:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModerationPages", "CollectionCommentsPage~CommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~RpanListingUnit~S~5809214e", "CommentsPage~Governance~Reddit~ReportFlow~Subreddit~reddit-components-BlankPost~reddit-components-Cl~5351df81", "PostCreation~Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~r~4c415e24", "Governance~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compo~bd4baca2", "Governance~ModListing~Reddit~ReportFlow~Subreddit", "Governance~Reddit~SubredditForkingCTA", "AuthorHovercard~Reddit"], {
 		"./src/chat/controls/Svg/index.m.less": function(e, t, n) {
@@ -10743,7 +10743,7 @@
 						i = Object(I.G)(a, {
 							postId: e
 						});
-					t ? (n(Object(v.a)(i.permalink)), Object(x.e)(e, "edit")(a)) : Object(E.f)(e, "edit")(a);
+					t ? (n(Object(v.a)(i.permalink)), Object(x.e)(e, "edit")(a)) : Object(E.e)(e, "edit")(a);
 					const {
 						media: d
 					} = i;
@@ -55408,7 +55408,6 @@
 					isBlank: e.is_blank,
 					isCreatedFromAdsUi: e.is_created_from_ads_ui,
 					isCrosspostable: e.is_crosspostable,
-					isEligibleForLinkedPosts: !1,
 					isEligibleForQASchema: !1,
 					isFollowed: e.is_followed || !1,
 					isGildable: e.can_gild,
@@ -74119,4 +74118,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.b534fbb282d932e4517d.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.9c0c51437472fcae3e06.js.map

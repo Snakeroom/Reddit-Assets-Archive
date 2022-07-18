@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditLeaderboard.5c46560b1aa32d80daa7.js
-// Retrieved at 7/14/2022, 12:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditLeaderboard.79e5ea8c1adff6477d01.js
+// Retrieved at 7/18/2022, 3:20:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditLeaderboard"], {
 		"./node_modules/lodash/times.js": function(e, t, r) {
@@ -218,6 +218,40 @@
 				button: "_1m03hmspTHlre1O1CXbY9Y"
 			}
 		},
+		"./src/reddit/components/BackToTop/index.tsx": function(e, t, r) {
+			"use strict";
+			var n = r("./node_modules/react/index.js"),
+				s = r.n(n),
+				a = r("./src/lib/classNames/index.ts"),
+				i = r("./src/reddit/constants/elementIds.ts"),
+				o = r("./src/reddit/controls/Button/index.tsx"),
+				d = r("./src/reddit/components/BackToTop/index.m.less"),
+				c = r.n(d);
+			const {
+				fbt: l
+			} = r("./node_modules/fbt/lib/FbtPublic.js"), u = e => {
+				if (e) {
+					const e = document.getElementById(i.e);
+					e && e.scroll(0, 0)
+				} else window.scroll(0, 0)
+			};
+			t.a = e => {
+				let {
+					className: t,
+					isOverlay: r,
+					style: n
+				} = e;
+				return s.a.createElement("div", {
+					className: Object(a.a)(t, c.a.container),
+					style: n
+				}, s.a.createElement(o.l, {
+					className: c.a.button,
+					onClick: () => u(r)
+				}, l._("Back to Top", null, {
+					hk: "YjBtV"
+				})))
+			}
+		},
 		"./src/reddit/components/CategoryPickerWidget/index.m.less": function(e, t, r) {
 			e.exports = {
 				container: "_1Le71sZe40-ak2-JlezTO9",
@@ -428,7 +462,7 @@
 					}, n[t]) : null
 				};
 				if (e.isD2xPdpSideRailRecsEnabled) {
-					const t = e.d2xPdpSideRailRecsVariant === u.Kc.GreyRereddit ? e.reredditButtons : [];
+					const t = e.d2xPdpSideRailRecsVariant === u.Kc.GreyRereddit || e.d2xPdpSideRailRecsVariant === u.Kc.GreyRedditNoNsfw || e.d2xPdpSideRailRecsVariant === u.Kc.LargeImagePreview ? e.reredditButtons : [];
 					return s.a.createElement(w, {
 						reredditContent: t,
 						countryCode: e.countryCode
@@ -567,43 +601,16 @@
 				i = r("./node_modules/react/index.js"),
 				o = r.n(i),
 				d = r("./src/lib/constants/index.ts"),
-				c = r("./src/reddit/constants/elementIds.ts"),
-				l = r("./src/reddit/controls/Button/index.tsx"),
-				u = r("./src/reddit/components/BackToTop/index.m.less"),
-				m = r.n(u);
-			const {
-				fbt: p
-			} = r("./node_modules/fbt/lib/FbtPublic.js"), b = e => {
-				if (e) {
-					const e = document.getElementById(c.e);
-					e && e.scroll(0, 0)
-				} else window.scroll(0, 0)
-			};
-			var g = e => {
-					let {
-						className: t,
-						isOverlay: r,
-						style: s
-					} = e;
-					return o.a.createElement("div", {
-						className: Object(n.a)(t, m.a.container),
-						style: s
-					}, o.a.createElement(l.l, {
-						className: m.a.button,
-						onClick: () => b(r)
-					}, p._("Back to Top", null, {
-						hk: "YjBtV"
-					})))
-				},
-				h = r("./src/reddit/components/SidebarFooter/index.tsx"),
-				y = r("./src/reddit/constants/componentSizes.ts"),
-				f = r("./src/reddit/contexts/PageLayer/index.tsx"),
-				k = r("./src/reddit/components/SidebarStickyBottom/index.m.less"),
-				x = r.n(k),
-				E = r("./src/lib/lessComponent.tsx");
+				c = r("./src/reddit/components/BackToTop/index.tsx"),
+				l = r("./src/reddit/components/SidebarFooter/index.tsx"),
+				u = r("./src/reddit/constants/componentSizes.ts"),
+				m = r("./src/reddit/contexts/PageLayer/index.tsx"),
+				p = r("./src/reddit/components/SidebarStickyBottom/index.m.less"),
+				b = r.n(p),
+				g = r("./src/lib/lessComponent.tsx");
 
-			function _() {
-				return (_ = Object.assign || function(e) {
+			function h() {
+				return (h = Object.assign || function(e) {
 					for (var t = 1; t < arguments.length; t++) {
 						var r = arguments[t];
 						for (var n in r) Object.prototype.hasOwnProperty.call(r, n) && (e[n] = r[n])
@@ -611,26 +618,26 @@
 					return e
 				}).apply(this, arguments)
 			}
-			const C = d.e[1] + 24,
-				S = y.f + 8,
-				v = S + 152 + 16,
-				O = v + C + 8,
-				w = E.a.div("Container", x.a),
-				N = E.a.wrapped(e => {
+			const y = d.e[1] + 24,
+				f = u.f + 8,
+				k = f + 152 + 16,
+				x = k + y + 8,
+				E = g.a.div("Container", b.a),
+				_ = g.a.wrapped(e => {
 					let {
 						className: t,
 						isOverlay: r,
 						...n
 					} = e;
-					return o.a.createElement(g, _({
+					return o.a.createElement(c.a, h({
 						className: t,
 						isOverlay: r,
 						style: {
-							top: `calc(100vh - ${r?S:8}px)`
+							top: `calc(100vh - ${r?f:8}px)`
 						}
 					}, n))
-				}, "BackToTop", x.a),
-				j = e => {
+				}, "BackToTop", b.a),
+				C = e => {
 					let {
 						children: t,
 						className: r,
@@ -640,17 +647,17 @@
 					} = e;
 					return o.a.createElement("div", {
 						className: Object(n.a)(r, {
-							[x.a.BottomStickyStyles]: i,
-							[x.a.StickyStyles]: !i && a && !s,
-							[x.a.StickyStylesFakeOverlay]: !i && !!s
+							[b.a.BottomStickyStyles]: i,
+							[b.a.StickyStyles]: !i && a && !s,
+							[b.a.StickyStylesFakeOverlay]: !i && !!s
 						})
 					}, t)
 				};
-			class T extends i.Component {
+			class S extends i.Component {
 				constructor(e) {
 					super(e), this.containerEl = null, this.windowHeight = 1 / 0, this.getStickyContents = () => ({
-						shouldAdSticky: this.windowHeight > O,
-						shouldFooterSticky: this.windowHeight > v
+						shouldAdSticky: this.windowHeight > x,
+						shouldFooterSticky: this.windowHeight > k
 					}), this.updateState = () => {
 						if (this.isHidden()) return;
 						const {
@@ -693,23 +700,23 @@
 							recommendationsComponent: d,
 							reredditButtons: c
 						}
-					} = this, l = this.state.isAdSticky && !(!t && !n), u = this.state.isBottomSticky;
-					return o.a.createElement(w, {
+					} = this, u = this.state.isAdSticky && !(!t && !n), m = this.state.isBottomSticky;
+					return o.a.createElement(E, {
 						className: s,
 						innerRef: this.setWrapperRef
-					}, o.a.createElement(j, {
+					}, o.a.createElement(C, {
 						isFakeOverlay: r,
-						isSticky: l,
-						shouldStickToBottom: u
-					}, t, n, d, !a && o.a.createElement(h.a, {
+						isSticky: u,
+						shouldStickToBottom: m
+					}, t, n, d, !a && o.a.createElement(l.a, {
 						reredditButtons: c
-					})), !d && !this.props.hideBackToTop && o.a.createElement(N, {
+					})), !d && !this.props.hideBackToTop && o.a.createElement(_, {
 						isOverlay: !!(null === (e = null == i ? void 0 : i.locationState) || void 0 === e ? void 0 : e.isOverlay)
 					}))
 				}
 			}
-			const L = Object(f.u)();
-			t.a = L(T)
+			const v = Object(m.u)();
+			t.a = v(S)
 		},
 		"./src/reddit/components/StructuredStyles/BladeDrawerController/index.m.less": function(e, t, r) {
 			e.exports = {
@@ -2454,10 +2461,10 @@
 			var Q = Object(u.c)(z(J)),
 				q = r("./node_modules/react-router-dom/esm/react-router-dom.js"),
 				K = r("./src/reddit/components/CategoryPickerWidget/index.m.less"),
-				U = r.n(K);
+				V = r.n(K);
 
-			function V() {
-				return (V = Object.assign || function(e) {
+			function U() {
+				return (U = Object.assign || function(e) {
 					for (var t = 1; t < arguments.length; t++) {
 						var r = arguments[t];
 						for (var n in r) Object.prototype.hasOwnProperty.call(r, n) && (e[n] = r[n])
@@ -2472,8 +2479,8 @@
 					className: n,
 					isActive: s,
 					tabIndex: a
-				} = e, o = Object(c.a)(U.a.categoryLink, s && U.a.active, n);
-				return i.a.createElement("li", null, i.a.createElement(q.a, V({}, t.anchorProps, {
+				} = e, o = Object(c.a)(V.a.categoryLink, s && V.a.active, n);
+				return i.a.createElement("li", null, i.a.createElement(q.a, U({}, t.anchorProps, {
 					className: o,
 					"data-active": s,
 					onMouseDown: () => e.onSendEventClick(t.name),
@@ -2526,7 +2533,7 @@
 						onItemClick: l
 					} = this.props, {
 						isExpanded: u
-					} = this.state, m = !u && d && r * d, b = a + (e ? r * e.length : 0), g = Object(c.a)(U.a.categoryList, u && U.a.expanded), h = e => !(!o || o !== Object($.h)(e)), y = i.a.createElement("ul", {
+					} = this.state, m = !u && d && r * d, b = a + (e ? r * e.length : 0), g = Object(c.a)(V.a.categoryList, u && V.a.expanded), h = e => !(!o || o !== Object($.h)(e)), y = i.a.createElement("ul", {
 						className: g,
 						style: {
 							height: m || b
@@ -2543,7 +2550,7 @@
 						}, e.name === p.m ? p.k : e.displayText || e.name)
 					}));
 					return i.a.createElement("div", {
-						className: Object(c.a)(U.a.categoryListContainer, n)
+						className: Object(c.a)(V.a.categoryListContainer, n)
 					}, y)
 				}
 				render() {
@@ -2554,16 +2561,16 @@
 						header: n,
 						headerClassName: s,
 						initialNumberOfCategories: a
-					} = this.props, o = t && a && t.length > a, d = Object(c.a)(r, U.a.container);
+					} = this.props, o = t && a && t.length > a, d = Object(c.a)(r, V.a.container);
 					return i.a.createElement(Y.a, {
 						className: d,
 						contentOnly: !0
 					}, i.a.createElement("div", {
-						className: Object(c.a)(U.a.header, s)
+						className: Object(c.a)(V.a.header, s)
 					}, i.a.createElement("h2", null, n || ee._("Categories", null, {
 						hk: "46zLMb"
 					}))), this.renderCategoryList(), o && i.a.createElement(X.r, {
-						className: Object(c.a)(U.a.button, e),
+						className: Object(c.a)(V.a.button, e),
 						onClick: this.toggleExpanded
 					}, o && !this.state.isExpanded ? ee._("Show More", null, {
 						hk: "1pCiqD"
@@ -2791,4 +2798,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditLeaderboard.5c46560b1aa32d80daa7.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditLeaderboard.79e5ea8c1adff6477d01.js.map

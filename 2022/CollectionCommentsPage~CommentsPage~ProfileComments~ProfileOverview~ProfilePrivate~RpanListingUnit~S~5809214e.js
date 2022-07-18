@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~RpanListingUnit~S~5809214e.b574cdcd5ce7edcc6dce.js
-// Retrieved at 7/18/2022, 10:40:06 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~RpanListingUnit~S~5809214e.2e544a6876aff7bca990.js
+// Retrieved at 7/18/2022, 3:20:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~RpanListingUnit~S~5809214e"], {
 		"./src/reddit/actions/eventPosts/index.ts": function(e, t, s) {
@@ -636,7 +636,7 @@
 						a = Object(I.G)(i, {
 							postId: e
 						});
-					t ? (s(Object(O.a)(a.permalink)), Object(g.e)(e, "edit")(i)) : Object(_.f)(e, "edit")(i);
+					t ? (s(Object(O.a)(a.permalink)), Object(g.e)(e, "edit")(i)) : Object(_.e)(e, "edit")(i);
 					const {
 						media: c
 					} = a;
@@ -4851,4 +4851,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~RpanListingUnit~S~5809214e.b574cdcd5ce7edcc6dce.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~RpanListingUnit~S~5809214e.2e544a6876aff7bca990.js.map

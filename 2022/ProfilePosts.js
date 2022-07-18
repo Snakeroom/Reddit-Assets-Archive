@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfilePosts.c903598c120d4c7e39b6.js
-// Retrieved at 7/14/2022, 12:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfilePosts.51e6c434e429c285c0f8.js
+// Retrieved at 7/18/2022, 3:20:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfilePosts"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, r) {
@@ -711,9 +711,9 @@
 			})), r.d(t, "morePostLoaded", (function() {
 				return H
 			})), r.d(t, "moreFailed", (function() {
-				return A
-			})), r.d(t, "moreProfilePrivateRequested", (function() {
 				return V
+			})), r.d(t, "moreProfilePrivateRequested", (function() {
+				return A
 			}));
 			r("./node_modules/core-js/modules/web.dom.iterable.js");
 			var s = r("./src/lib/makeActionCreator/index.ts"),
@@ -912,7 +912,7 @@
 						listingKey: l,
 						error: x.error
 					}))
-				}, D = Object(s.a)(k.f), G = Object(s.a)(k.e), H = Object(s.a)(k.g), A = Object(s.a)(k.d), V = e => async (t, r, s) => {
+				}, D = Object(s.a)(k.f), G = Object(s.a)(k.e), H = Object(s.a)(k.g), V = Object(s.a)(k.d), A = e => async (t, r, s) => {
 					const n = r(),
 						i = n.user.account && n.user.account.displayText && n.user.account.displayText.toLowerCase();
 					if (!i) return;
@@ -944,7 +944,7 @@
 							profileName: i,
 							...r
 						}))
-					} else t(A({
+					} else t(V({
 						listingKey: o,
 						error: d.error
 					}))
@@ -954,6 +954,40 @@
 			e.exports = {
 				container: "_365FiUZ11efXHV7l7fNp6K",
 				button: "_1m03hmspTHlre1O1CXbY9Y"
+			}
+		},
+		"./src/reddit/components/BackToTop/index.tsx": function(e, t, r) {
+			"use strict";
+			var s = r("./node_modules/react/index.js"),
+				n = r.n(s),
+				i = r("./src/lib/classNames/index.ts"),
+				o = r("./src/reddit/constants/elementIds.ts"),
+				a = r("./src/reddit/controls/Button/index.tsx"),
+				d = r("./src/reddit/components/BackToTop/index.m.less"),
+				c = r.n(d);
+			const {
+				fbt: l
+			} = r("./node_modules/fbt/lib/FbtPublic.js"), u = e => {
+				if (e) {
+					const e = document.getElementById(o.e);
+					e && e.scroll(0, 0)
+				} else window.scroll(0, 0)
+			};
+			t.a = e => {
+				let {
+					className: t,
+					isOverlay: r,
+					style: s
+				} = e;
+				return n.a.createElement("div", {
+					className: Object(i.a)(t, c.a.container),
+					style: s
+				}, n.a.createElement(a.l, {
+					className: c.a.button,
+					onClick: () => u(r)
+				}, l._("Back to Top", null, {
+					hk: "YjBtV"
+				})))
 			}
 		},
 		"./src/reddit/components/CreatorStats/EducationUnit.m.less": function(e, t, r) {
@@ -2364,7 +2398,7 @@
 			})), r.d(t, "i", (function() {
 				return H
 			})), r.d(t, "e", (function() {
-				return A
+				return V
 			}));
 			var s = r("./src/lib/unicodeUtils/index.ts"),
 				n = r("./node_modules/lodash/reduce.js"),
@@ -2469,7 +2503,7 @@
 						o = s.length;
 					for (let a = 0; a < o; a++) {
 						const e = s[a];
-						i.push(e.e === p.w ? e.t : A(e, t, a))
+						i.push(e.e === p.w ? e.t : V(e, t, a))
 					}
 					const c = d.x[n - 1];
 					return a.a.createElement(c, {
@@ -2584,7 +2618,7 @@
 						n = e.length;
 					for (let i = 0; i < n; i++) {
 						const n = e[i];
-						if (n.e === p.A) s.push(V(n, i));
+						if (n.e === p.A) s.push(A(n, i));
 						else if (n.e === p.x) s.push(a.a.createElement(j.a, {
 							key: i
 						}, H(n.c, t, r)));
@@ -2600,14 +2634,14 @@
 									media: e
 								}))
 							}
-						} else s.push(A(n, r, i))
+						} else s.push(V(n, r, i))
 					}
 					return s
 				},
-				A = (e, t, r) => {
+				V = (e, t, r) => {
 					switch (e.e) {
 						case p.o:
-							const s = V({
+							const s = A({
 								t: e.t,
 								f: e.f
 							}, 0);
@@ -2647,7 +2681,7 @@
 							}, e.t)
 					}
 				},
-				V = (e, t) => {
+				A = (e, t) => {
 					const {
 						f: r,
 						t: n
@@ -2871,7 +2905,7 @@
 					}, s[t]) : null
 				};
 				if (e.isD2xPdpSideRailRecsEnabled) {
-					const t = e.d2xPdpSideRailRecsVariant === u.Kc.GreyRereddit ? e.reredditButtons : [];
+					const t = e.d2xPdpSideRailRecsVariant === u.Kc.GreyRereddit || e.d2xPdpSideRailRecsVariant === u.Kc.GreyRedditNoNsfw || e.d2xPdpSideRailRecsVariant === u.Kc.LargeImagePreview ? e.reredditButtons : [];
 					return n.a.createElement(k, {
 						reredditContent: t,
 						countryCode: e.countryCode
@@ -3010,43 +3044,16 @@
 				o = r("./node_modules/react/index.js"),
 				a = r.n(o),
 				d = r("./src/lib/constants/index.ts"),
-				c = r("./src/reddit/constants/elementIds.ts"),
-				l = r("./src/reddit/controls/Button/index.tsx"),
-				u = r("./src/reddit/components/BackToTop/index.m.less"),
-				m = r.n(u);
-			const {
-				fbt: p
-			} = r("./node_modules/fbt/lib/FbtPublic.js"), h = e => {
-				if (e) {
-					const e = document.getElementById(c.e);
-					e && e.scroll(0, 0)
-				} else window.scroll(0, 0)
-			};
-			var b = e => {
-					let {
-						className: t,
-						isOverlay: r,
-						style: n
-					} = e;
-					return a.a.createElement("div", {
-						className: Object(s.a)(t, m.a.container),
-						style: n
-					}, a.a.createElement(l.l, {
-						className: m.a.button,
-						onClick: () => h(r)
-					}, p._("Back to Top", null, {
-						hk: "YjBtV"
-					})))
-				},
-				f = r("./src/reddit/components/SidebarFooter/index.tsx"),
-				g = r("./src/reddit/constants/componentSizes.ts"),
-				x = r("./src/reddit/contexts/PageLayer/index.tsx"),
-				v = r("./src/reddit/components/SidebarStickyBottom/index.m.less"),
-				y = r.n(v),
-				w = r("./src/lib/lessComponent.tsx");
+				c = r("./src/reddit/components/BackToTop/index.tsx"),
+				l = r("./src/reddit/components/SidebarFooter/index.tsx"),
+				u = r("./src/reddit/constants/componentSizes.ts"),
+				m = r("./src/reddit/contexts/PageLayer/index.tsx"),
+				p = r("./src/reddit/components/SidebarStickyBottom/index.m.less"),
+				h = r.n(p),
+				b = r("./src/lib/lessComponent.tsx");
 
-			function E() {
-				return (E = Object.assign || function(e) {
+			function f() {
+				return (f = Object.assign || function(e) {
 					for (var t = 1; t < arguments.length; t++) {
 						var r = arguments[t];
 						for (var s in r) Object.prototype.hasOwnProperty.call(r, s) && (e[s] = r[s])
@@ -3054,26 +3061,26 @@
 					return e
 				}).apply(this, arguments)
 			}
-			const O = d.e[1] + 24,
-				_ = g.f + 8,
-				j = _ + 152 + 16,
-				S = j + O + 8,
-				k = w.a.div("Container", y.a),
-				C = w.a.wrapped(e => {
+			const g = d.e[1] + 24,
+				x = u.f + 8,
+				v = x + 152 + 16,
+				y = v + g + 8,
+				w = b.a.div("Container", h.a),
+				E = b.a.wrapped(e => {
 					let {
 						className: t,
 						isOverlay: r,
 						...s
 					} = e;
-					return a.a.createElement(b, E({
+					return a.a.createElement(c.a, f({
 						className: t,
 						isOverlay: r,
 						style: {
-							top: `calc(100vh - ${r?_:8}px)`
+							top: `calc(100vh - ${r?x:8}px)`
 						}
 					}, s))
-				}, "BackToTop", y.a),
-				I = e => {
+				}, "BackToTop", h.a),
+				O = e => {
 					let {
 						children: t,
 						className: r,
@@ -3083,17 +3090,17 @@
 					} = e;
 					return a.a.createElement("div", {
 						className: Object(s.a)(r, {
-							[y.a.BottomStickyStyles]: o,
-							[y.a.StickyStyles]: !o && i && !n,
-							[y.a.StickyStylesFakeOverlay]: !o && !!n
+							[h.a.BottomStickyStyles]: o,
+							[h.a.StickyStyles]: !o && i && !n,
+							[h.a.StickyStylesFakeOverlay]: !o && !!n
 						})
 					}, t)
 				};
-			class T extends o.Component {
+			class _ extends o.Component {
 				constructor(e) {
 					super(e), this.containerEl = null, this.windowHeight = 1 / 0, this.getStickyContents = () => ({
-						shouldAdSticky: this.windowHeight > S,
-						shouldFooterSticky: this.windowHeight > j
+						shouldAdSticky: this.windowHeight > y,
+						shouldFooterSticky: this.windowHeight > v
 					}), this.updateState = () => {
 						if (this.isHidden()) return;
 						const {
@@ -3136,23 +3143,23 @@
 							recommendationsComponent: d,
 							reredditButtons: c
 						}
-					} = this, l = this.state.isAdSticky && !(!t && !s), u = this.state.isBottomSticky;
-					return a.a.createElement(k, {
+					} = this, u = this.state.isAdSticky && !(!t && !s), m = this.state.isBottomSticky;
+					return a.a.createElement(w, {
 						className: n,
 						innerRef: this.setWrapperRef
-					}, a.a.createElement(I, {
+					}, a.a.createElement(O, {
 						isFakeOverlay: r,
-						isSticky: l,
-						shouldStickToBottom: u
-					}, t, s, d, !i && a.a.createElement(f.a, {
+						isSticky: u,
+						shouldStickToBottom: m
+					}, t, s, d, !i && a.a.createElement(l.a, {
 						reredditButtons: c
-					})), !d && !this.props.hideBackToTop && a.a.createElement(C, {
+					})), !d && !this.props.hideBackToTop && a.a.createElement(E, {
 						isOverlay: !!(null === (e = null == o ? void 0 : o.locationState) || void 0 === e ? void 0 : e.isOverlay)
 					}))
 				}
 			}
-			const P = Object(x.u)();
-			t.a = P(T)
+			const j = Object(m.u)();
+			t.a = j(_)
 		},
 		"./src/reddit/components/SubredditMention/SubredditIcon/index.m.less": function(e, t, r) {
 			e.exports = {
@@ -3984,8 +3991,8 @@
 					return e
 				}).apply(this, arguments)
 			}
-			const A = Object(_.u)(),
-				V = Object(d.a)(_.E, B.kb, (e, t) => {
+			const V = Object(_.u)(),
+				A = Object(d.a)(_.E, B.kb, (e, t) => {
 					let {
 						location: r
 					} = t;
@@ -4038,7 +4045,7 @@
 						nsfwBlockingExperiment: l
 					}
 				}),
-				U = Object(a.b)(V, (e, t) => ({
+				U = Object(a.b)(A, (e, t) => ({
 					onLoadMore: () => e(p.morePostsRequested()),
 					onLayoutChange: () => e(p.profilePostsRequested({
 						...t.match,
@@ -4154,7 +4161,7 @@
 					})
 				}
 			}
-			t.default = A(U(Object(C.d)(W)))
+			t.default = V(U(Object(C.d)(W)))
 		},
 		"./src/reddit/selectors/experiments/d2xPdpSideRailRecs.ts": function(e, t, r) {
 			"use strict";
@@ -4398,4 +4405,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfilePosts.c903598c120d4c7e39b6.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfilePosts.51e6c434e429c285c0f8.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~Reddit.0fe62a489d775446365d.js
-// Retrieved at 7/14/2022, 5:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~Reddit.6f305655beec540f093c.js
+// Retrieved at 7/18/2022, 3:20:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~Reddit"], {
 		"./assets/fonts/NotoMono/font.less": function(e, t, n) {},
@@ -1403,9 +1403,9 @@
 			})), n.d(t, "a", (function() {
 				return a
 			}));
-			const r = "LINKED_POSTS__POSTS_LOADED",
-				s = "LINKED_POSTS__POSTS_FAILED",
-				a = "LINKED_POSTS__ELIGIBILITY_LOADED"
+			const r = "LINKED_POSTS__POSTS_PENDING",
+				s = "LINKED_POSTS__POSTS_LOADED",
+				a = "LINKED_POSTS__POSTS_FAILED"
 		},
 		"./src/reddit/actions/multireddit/constants.ts": function(e, t, n) {
 			"use strict";
@@ -12369,12 +12369,13 @@
 				});
 			const dd = {};
 			var ld = n("./src/reddit/actions/eventPosts/constants.ts"),
-				ud = n("./src/reddit/actions/otherDiscussions/constants.ts"),
-				pd = n("./src/reddit/actions/pages/postSetPage/constants.ts"),
-				fd = n("./src/reddit/actions/pages/topic.ts");
-			const bd = {};
-			var hd = function() {
-					let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : bd,
+				ud = n("./src/reddit/actions/linkedPosts/constants.ts"),
+				pd = n("./src/reddit/actions/otherDiscussions/constants.ts"),
+				fd = n("./src/reddit/actions/pages/postSetPage/constants.ts"),
+				bd = n("./src/reddit/actions/pages/topic.ts");
+			const hd = {};
+			var yd = function() {
+					let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : hd,
 						t = arguments.length > 1 ? arguments[1] : void 0;
 					switch (t.type) {
 						case Re.c:
@@ -12387,6 +12388,7 @@
 						case Le.b:
 						case W.SUBREDDIT_PENDING:
 						case W.SUBREDDIT_LOADED:
+						case ud.c:
 						case Ae.g:
 						case Ae.f:
 						case Ne.e:
@@ -12395,10 +12397,10 @@
 						case Ne.h:
 						case Pe.s:
 						case Pe.r:
-						case ud.b:
-						case ud.c:
 						case pd.b:
 						case pd.c:
+						case fd.b:
+						case fd.c:
 						case q.PROFILE_POSTS_PENDING:
 						case q.PROFILE_POSTS_LOADED:
 						case q.MORE_POSTS_PENDING:
@@ -12408,10 +12410,10 @@
 						case xe.f:
 						case xe.e:
 						case K.j:
-						case fd.TOPIC_DATA_PENDING:
-						case fd.TOPIC_DATA_LOADED:
-						case fd.MORE_POSTS_PENDING:
-						case fd.MORE_POSTS_LOADED:
+						case bd.TOPIC_DATA_PENDING:
+						case bd.TOPIC_DATA_LOADED:
+						case bd.MORE_POSTS_PENDING:
+						case bd.MORE_POSTS_LOADED:
 						case K.i:
 						case ld.e:
 						case ld.c:
@@ -12445,15 +12447,15 @@
 						case Ae.e:
 						case Ne.g:
 						case Pe.q:
-						case ud.a:
-						case K.h:
 						case pd.a:
+						case K.h:
+						case fd.a:
 						case V.d:
 						case xe.d:
 						case q.PROFILE_POSTS_FAILED:
 						case q.MORE_POSTS_FAILED:
-						case fd.TOPIC_DATA_FAILED:
-						case fd.MORE_POSTS_FAILED:
+						case bd.TOPIC_DATA_FAILED:
+						case bd.MORE_POSTS_FAILED:
 						case ld.b: {
 							const {
 								key: n,
@@ -12481,7 +12483,6 @@
 							return e
 					}
 				},
-				yd = n("./src/reddit/actions/linkedPosts/constants.ts"),
 				gd = n("./src/reddit/actions/nsfwLinkedPosts/constants.ts"),
 				md = n("./src/reddit/actions/subreddit/constants.ts");
 			const vd = {};
@@ -12492,6 +12493,7 @@
 						case Re.c:
 						case Re.g:
 						case Ae.c:
+						case ud.c:
 						case Le.c:
 						case q.PROFILE_POSTS_PENDING:
 						case xe.f:
@@ -12500,12 +12502,12 @@
 						case Ne.f:
 						case Ne.i:
 						case Pe.s:
-						case ud.c:
 						case pd.c:
+						case fd.c:
 						case V.f:
 						case q.MORE_POSTS_PENDING:
 						case K.j:
-						case fd.MORE_POSTS_PENDING:
+						case bd.MORE_POSTS_PENDING:
 						case ld.e: {
 							const {
 								key: n
@@ -12534,8 +12536,8 @@
 						case Ae.a:
 						case Le.a:
 						case Le.b:
-						case pd.a:
-						case pd.b:
+						case fd.a:
+						case fd.b:
 						case xe.d:
 						case xe.e:
 						case q.PROFILE_POSTS_FAILED:
@@ -12544,8 +12546,8 @@
 						case W.SUBREDDIT_FAILED:
 						case Ae.f:
 						case Ae.e:
-						case yd.b:
-						case yd.c:
+						case ud.a:
+						case ud.b:
 						case Ne.e:
 						case Ne.d:
 						case Ne.h:
@@ -12559,12 +12561,12 @@
 						case gd.a:
 						case gd.b:
 						case md.j:
-						case ud.b:
-						case ud.a:
+						case pd.b:
+						case pd.a:
 						case K.i:
 						case K.h:
-						case fd.MORE_POSTS_LOADED:
-						case fd.MORE_POSTS_FAILED:
+						case bd.MORE_POSTS_LOADED:
+						case bd.MORE_POSTS_FAILED:
 						case ld.c:
 						case ld.b:
 						case ld.d: {
@@ -12605,7 +12607,7 @@
 					}
 				},
 				Od = Object(S.c)({
-					error: hd,
+					error: yd,
 					pending: Ed
 				});
 			const _d = {};
@@ -12673,7 +12675,7 @@
 						case Le.b:
 						case W.SUBREDDIT_LOADED:
 						case q.PROFILE_POSTS_LOADED:
-						case fd.TOPIC_DATA_LOADED: {
+						case bd.TOPIC_DATA_LOADED: {
 							const {
 								key: n
 							} = t.payload;
@@ -12689,7 +12691,7 @@
 						case V.e:
 						case q.MORE_POSTS_LOADED:
 						case K.i:
-						case fd.MORE_POSTS_LOADED: {
+						case bd.MORE_POSTS_LOADED: {
 							const {
 								key: n,
 								fetchedToken: r
@@ -12738,10 +12740,10 @@
 						case Le.c:
 						case q.PROFILE_POSTS_PENDING:
 						case W.SUBREDDIT_PENDING:
-						case pd.c:
+						case fd.c:
 						case xe.f:
 						case q.PROFILE_POSTS_PENDING:
-						case fd.TOPIC_DATA_PENDING: {
+						case bd.TOPIC_DATA_PENDING: {
 							const {
 								key: n
 							} = t.payload;
@@ -12751,7 +12753,7 @@
 							}
 						}
 						case je.e:
-						case yd.c:
+						case ud.b:
 						case Ne.e:
 						case gd.b:
 						case Ae.b:
@@ -12759,12 +12761,12 @@
 						case Le.b:
 						case W.SUBREDDIT_LOADED:
 						case md.j:
-						case ud.b:
 						case pd.b:
+						case fd.b:
 						case xe.e:
 						case q.PROFILE_POSTS_LOADED:
 						case Me.b:
-						case fd.TOPIC_DATA_LOADED:
+						case bd.TOPIC_DATA_LOADED:
 						case ld.c: {
 							const {
 								key: n,
@@ -12794,7 +12796,7 @@
 						case q.MORE_POSTS_LOADED:
 						case V.e:
 						case K.i:
-						case fd.MORE_POSTS_LOADED:
+						case bd.MORE_POSTS_LOADED:
 						case ld.d: {
 							const {
 								key: n,
@@ -12897,8 +12899,8 @@
 					case V.e:
 					case q.MORE_POSTS_LOADED:
 					case K.i:
-					case fd.TOPIC_DATA_LOADED:
-					case fd.MORE_POSTS_LOADED: {
+					case bd.TOPIC_DATA_LOADED:
+					case bd.MORE_POSTS_LOADED: {
 						const {
 							key: n,
 							token: r,
@@ -14616,7 +14618,7 @@
 								...t
 							}
 						}
-						const r = ip()(t.payload.posts, Object(dp.i)([dp.p])),
+						const r = ip()(t.payload.posts, Object(dp.i)([dp.o])),
 							s = {};
 						return Object.keys(r).forEach(e => {
 							var t, n;
@@ -15178,7 +15180,7 @@
 						case Ne.e:
 						case Ne.h:
 						case Pe.r:
-						case ud.b:
+						case pd.b:
 						case B.b:
 						case B.f:
 						case Ae.b:
@@ -15567,7 +15569,7 @@
 						const n = Object(dp.h)(t.payload.meta);
 						return {
 							...e,
-							...ip()(t.payload.posts, Object(dp.i)([n, dp.d, dp.n, dp.o, dp.p, Object(dp.a)(e), Object(dp.b)(e), Object(dp.k)(e), Object(dp.l)(e), Object(dp.j)(e)]))
+							...ip()(t.payload.posts, Object(dp.i)([n, dp.d, dp.m, dp.n, dp.o, Object(dp.a)(e), Object(dp.b)(e), Object(dp.j)(e), Object(dp.k)(e)]))
 						}
 					}
 					case Rd.j:
@@ -15577,7 +15579,7 @@
 					case Re.b:
 					case Re.f:
 					case ke.PAGE_LOADED:
-					case yd.c:
+					case ud.b:
 					case gd.b:
 					case Ne.e:
 					case Ne.h:
@@ -15590,7 +15592,7 @@
 					case W.SUBREDDIT_LOADED:
 					case Ae.b:
 					case Le.b:
-					case ud.b:
+					case pd.b:
 					case Pe.r:
 					case Ae.f:
 					case V.e:
@@ -15598,15 +15600,15 @@
 					case md.j:
 					case K.i:
 					case Ue.b:
-					case fd.TOPIC_DATA_LOADED:
-					case fd.MORE_POSTS_LOADED:
+					case bd.TOPIC_DATA_LOADED:
+					case bd.MORE_POSTS_LOADED:
 					case ld.c:
 					case ld.d:
 					case lp.o: {
 						const n = Object(dp.h)(t.payload.meta);
 						return {
 							...e,
-							...ip()(t.payload.posts, Object(dp.i)([n, dp.d, dp.n, dp.o, dp.p, Object(dp.m)(e), Object(dp.k)(e), Object(dp.j)(e)]))
+							...ip()(t.payload.posts, Object(dp.i)([n, dp.d, dp.m, dp.n, dp.o, Object(dp.l)(e), Object(dp.j)(e)]))
 						}
 					}
 					case md.r: {
@@ -15615,19 +15617,19 @@
 						for (const r of t.payload) {
 							const t = r,
 								s = Object(dp.h)(t.meta);
-							Object.assign(n, ip()(t.posts, Object(dp.i)([s, dp.d, dp.n, dp.o, Object(dp.m)(e), Object(dp.k)(e), Object(dp.j)(e)])))
+							Object.assign(n, ip()(t.posts, Object(dp.i)([s, dp.d, dp.m, dp.n, Object(dp.l)(e), Object(dp.j)(e)])))
 						}
 						return {
 							...e,
 							...n
 						}
 					}
-					case ud.b: {
+					case pd.b: {
 						const n = Object(dp.h)(t.payload.meta),
 							r = e[t.payload.postId];
 						return {
 							...e,
-							...ip()(t.payload.posts, Object(dp.i)([n, dp.d, dp.n, dp.o, Object(dp.m)(e), Object(dp.k)(e), Object(dp.j)(e)])),
+							...ip()(t.payload.posts, Object(dp.i)([n, dp.d, dp.m, dp.n, Object(dp.l)(e), Object(dp.j)(e)])),
 							[t.payload.postId]: {
 								...r,
 								numDuplicates: t.payload.count
@@ -15638,7 +15640,7 @@
 					case Fe.e:
 					case Q.c: {
 						const n = Object(dp.h)(t.payload.meta),
-							r = ip()(t.payload.posts, Object(dp.i)([n, dp.n, dp.d, dp.o, Object(dp.j)(e)]));
+							r = ip()(t.payload.posts, Object(dp.i)([n, dp.m, dp.d, dp.n]));
 						return k()({
 							...e
 						}, r, (e, t) => ({
@@ -15732,7 +15734,7 @@
 						} = t.payload;
 						return {
 							...e,
-							...n.reduce((e, t) => (e[t.post.id] = Object(dp.i)([dp.n])(Object(Xr.f)(t.post)), e), {})
+							...n.reduce((e, t) => (e[t.post.id] = Object(dp.i)([dp.m])(Object(Xr.f)(t.post)), e), {})
 						}
 					}
 					case ee.s: {
@@ -15780,7 +15782,7 @@
 						} = n;
 						return {
 							...e,
-							...ip()(r, Object(dp.i)([dp.n, dp.o]))
+							...ip()(r, Object(dp.i)([dp.m, dp.n]))
 						}
 					}
 					case pf.b:
@@ -15892,18 +15894,18 @@
 					case Zc.g: {
 						const n = t.payload.subredditTopContent;
 						return n && n.posts && Object.keys(n.posts) ? {
-							...ip()(n.posts, Object(dp.i)([dp.n, dp.o])),
+							...ip()(n.posts, Object(dp.i)([dp.m, dp.n])),
 							...e
 						} : e
 					}
-					case pd.b:
+					case fd.b:
 					case H.c:
 					case H.i:
 					case H.e:
 					case H.g:
 					case gf.b:
 						return {
-							...ip()(t.payload.posts, Object(dp.i)([dp.n, dp.o])), ...e
+							...ip()(t.payload.posts, Object(dp.i)([dp.m, dp.n])), ...e
 						};
 					case Rd.m: {
 						const {
@@ -15982,7 +15984,7 @@
 						} = t.payload;
 						return {
 							...e,
-							[n]: Object(dp.q)(e[n], Object(fp.a)(r))
+							[n]: Object(dp.p)(e[n], Object(fp.a)(r))
 						}
 					}
 					case yf.a:
@@ -16006,19 +16008,6 @@
 						return {
 							...e
 						};
-					case yd.a: {
-						const {
-							postId: n,
-							isEligibleForLinkedPosts: r
-						} = t.payload;
-						return {
-							...e,
-							[n]: {
-								...e[n],
-								isEligibleForLinkedPosts: r
-							}
-						}
-					}
 					case y.z:
 					case y.w: {
 						const n = {};
@@ -17341,7 +17330,7 @@
 					case Ne.h:
 					case Pe.u:
 					case uu.h:
-					case ud.b:
+					case pd.b:
 					case Fe.e:
 					case K.i:
 					case uu.o:
@@ -19167,7 +19156,7 @@
 					case V.b:
 					case V.e:
 					case Fe.e:
-					case fd.TOPIC_DATA_LOADED:
+					case bd.TOPIC_DATA_LOADED:
 					case md.u: {
 						const n = t.payload.subredditAboutInfo;
 						if (!n) return e;
@@ -20099,7 +20088,7 @@
 					case Km.f:
 					case Ae.f:
 					case Zc.g:
-					case yd.c:
+					case ud.b:
 					case gd.b:
 					case Ne.e:
 					case Ne.h:
@@ -20107,7 +20096,7 @@
 					case Pe.r:
 					case Pe.u:
 					case uu.h:
-					case ud.b:
+					case pd.b:
 					case B.b:
 					case B.f:
 					case Ae.b:
@@ -20140,8 +20129,8 @@
 					case md.a:
 					case md.g:
 					case md.o:
-					case fd.TOPIC_DATA_LOADED:
-					case fd.MORE_POSTS_LOADED:
+					case bd.TOPIC_DATA_LOADED:
+					case bd.MORE_POSTS_LOADED:
 					case ar.B:
 						return AE(e, t.payload.subreddits || {});
 					case F.f:
@@ -22462,7 +22451,7 @@
 					case jn.j:
 					case kI.b:
 					case k_.c:
-					case fd.TOPIC_DATA_LOADED:
+					case bd.TOPIC_DATA_LOADED:
 						return MI(e, t.payload.account);
 					case k_.o:
 						return e ? {
@@ -24803,4 +24792,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit.0fe62a489d775446365d.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit.6f305655beec540f093c.js.map
