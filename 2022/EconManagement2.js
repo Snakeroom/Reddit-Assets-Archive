@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/EconManagement2.8515162ec99a7250890e.js
-// Retrieved at 7/12/2022, 4:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/EconManagement2.4e8288c960d151b39886.js
+// Retrieved at 7/18/2022, 1:20:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["EconManagement2"], {
 		"./src/reddit/controls/SearchBar/index.m.less": function(e, a, t) {
@@ -15,14 +15,14 @@
 		"./src/reddit/controls/SearchBar/index.tsx": function(e, a, t) {
 			"use strict";
 			var n = t("./node_modules/react/index.js"),
-				l = t.n(n),
+				s = t.n(n),
 				r = t("./src/lib/classNames/index.ts"),
-				s = t("./src/reddit/icons/svgs/Search/index.tsx"),
+				l = t("./src/reddit/icons/svgs/Search/index.tsx"),
 				c = t("./src/reddit/controls/SearchBar/index.m.less"),
 				i = t.n(c);
-			a.a = e => l.a.createElement("div", {
+			a.a = e => s.a.createElement("div", {
 				className: Object(r.a)(i.a.searchContainer, e.className)
-			}, l.a.createElement("input", {
+			}, s.a.createElement("input", {
 				className: Object(r.a)(i.a.search, {
 					[i.a.mRightAlignedIcon]: e.rightAlignedIcon
 				}),
@@ -33,13 +33,13 @@
 				placeholder: e.placeholder,
 				ref: e.innerRef,
 				value: e.value
-			}), l.a.createElement("div", {
+			}), s.a.createElement("div", {
 				className: Object(r.a)(i.a.searchIconContainer, {
 					[i.a.mClickable]: !!e.onSearch,
 					[i.a.mRightAligned]: e.rightAlignedIcon
 				}),
 				onClick: e.onSearch
-			}, l.a.createElement(s.a, null)))
+			}, s.a.createElement(l.a, null)))
 		},
 		"./src/reddit/pages/EconManagement2/EMSearchResult/EMProfile/index.m.less": function(e, a, t) {
 			e.exports = {
@@ -48,11 +48,23 @@
 				actionButton: "_16CDh24Kw3KEl2-zologPc"
 			}
 		},
+		"./src/reddit/pages/EconManagement2/EMSearchResult/EMTransactionsTable/EMSubscriptions/EMSubscriptionRow/index.m.less": function(e, a, t) {
+			e.exports = {
+				cancelButton: "_29ugRcRoiegbOrGe1lywiO"
+			}
+		},
+		"./src/reddit/pages/EconManagement2/EMSearchResult/EMTransactionsTable/EMSubscriptions/index.m.less": function(e, a, t) {
+			e.exports = {
+				table: "_1AoV8bk7iscRTYDyjbtpTp",
+				tableHeader: "_2_BVZxRC3qfQKVf77ijXe"
+			}
+		},
 		"./src/reddit/pages/EconManagement2/EMSearchResult/EMTransactionsTable/index.m.less": function(e, a, t) {
 			e.exports = {
 				panel: "_21352l_g53uxmxQxQW1sgf",
 				tab: "_2R39Uly3qTTZFmZ5QZ6l0u",
-				selectedTab: "_3r7w0gW8zielR-Bdf8RTwV"
+				selectedTab: "_3r7w0gW8zielR-Bdf8RTwV",
+				tableContainer: "_35SJXfr7sSxdG5ENsPnTXe"
 			}
 		},
 		"./src/reddit/pages/EconManagement2/EMSearchResult/index.m.less": function(e, a, t) {
@@ -71,18 +83,18 @@
 			"use strict";
 			t.r(a);
 			var n = t("./node_modules/react/index.js"),
-				l = t.n(n),
+				s = t.n(n),
 				r = t("./node_modules/react-redux/es/index.js"),
-				s = t("./src/reddit/actions/economics/econManagement/index.ts"),
+				l = t("./src/reddit/actions/economics/econManagement/index.ts"),
 				c = t("./src/reddit/controls/SearchBar/index.tsx"),
 				i = t("./src/reddit/pages/EconManagement2/index.m.less"),
-				m = t.n(i);
-			const u = () => {
+				o = t.n(i);
+			const m = () => {
 				const [e, a] = Object(n.useState)(""), t = Object(r.d)();
-				return l.a.createElement(c.a, {
-					className: m.a.searchBar,
+				return s.a.createElement(c.a, {
+					className: o.a.searchBar,
 					onKeyPress: a => {
-						13 === a.charCode && t(Object(s.d)(e))
+						13 === a.charCode && t(Object(l.d)(e))
 					},
 					onTextChange: e => {
 						a(e.currentTarget.value)
@@ -91,32 +103,32 @@
 					placeholder: "Username or user id"
 				})
 			};
-			var o = t("./src/reddit/selectors/econManagement.ts"),
+			var u = t("./src/reddit/selectors/econManagement.ts"),
 				d = t("./src/reddit/controls/Button/index.tsx"),
 				E = t("./src/reddit/pages/EconManagement2/EMSearchResult/EMProfile/index.m.less"),
-				h = t.n(E);
+				b = t.n(E);
 			const {
 				fbt: p
 			} = t("./node_modules/fbt/lib/FbtPublic.js");
 			var v;
 			! function(e) {
-				e.GIVE_PREMIUM = "Give premium", e.REMOVE_PREMIUM = "Remove premium"
+				e.GIVE_PREMIUM = "Give premium", e.REMOVE_PREMIUM = "Remove premium", e.CANCEL_SUBSCRIPTION = "Cancel recurring", e.ISSUE_REFUND = "Cancel payment"
 			}(v || (v = {}));
-			const b = e => {
-				const [a, t] = Object(n.useState)(), [c, i] = Object(n.useState)(), m = Object(r.d)(), u = ["goldSubscriptionId", "isPremium", "premiumExpiration"].map(a => l.a.createElement("p", {
+			const g = e => {
+				const [a, t] = Object(n.useState)(), [c, i] = Object(n.useState)(), o = Object(r.d)(), m = ["goldSubscriptionId", "isPremium", "premiumExpiration"].map(a => s.a.createElement("p", {
 					key: a
-				}, l.a.createElement("strong", null, a, ": "), l.a.createElement("span", null, e[a] + "")));
-				return l.a.createElement("div", {
-					className: h.a.profile
-				}, l.a.createElement("div", {
-					className: h.a.userOverview
-				}, l.a.createElement("h4", null, l.a.createElement("a", {
+				}, s.a.createElement("strong", null, a, ": "), s.a.createElement("span", null, e[a] + "")));
+				return s.a.createElement("div", {
+					className: b.a.profile
+				}, s.a.createElement("div", {
+					className: b.a.userOverview
+				}, s.a.createElement("h4", null, s.a.createElement("a", {
 					href: `/user/${e.username}`
-				}, e.username)), !!e.email && l.a.createElement("p", null, e.email), l.a.createElement("p", null, e.id)), l.a.createElement("div", {
-					className: h.a.userOverview
-				}, u), l.a.createElement("div", {
-					className: h.a.userOverview
-				}, l.a.createElement("table", null, l.a.createElement("tbody", null, l.a.createElement("tr", null, l.a.createElement("td", null, l.a.createElement("input", {
+				}, e.username)), !!e.email && s.a.createElement("p", null, e.email), s.a.createElement("p", null, e.id)), s.a.createElement("div", {
+					className: b.a.userOverview
+				}, m), s.a.createElement("div", {
+					className: b.a.userOverview
+				}, s.a.createElement("table", null, s.a.createElement("tbody", null, s.a.createElement("tr", null, s.a.createElement("td", null, s.a.createElement("input", {
 					min: 0,
 					type: "number",
 					value: a || "",
@@ -127,108 +139,119 @@
 					placeholder: p._("Amount", null, {
 						hk: "3qQoll"
 					}),
-					className: h.a.coinsInput
-				})), l.a.createElement("td", null, l.a.createElement(d.t, {
-					className: h.a.actionButton,
+					className: b.a.coinsInput
+				})), s.a.createElement("td", null, s.a.createElement(d.t, {
+					className: b.a.actionButton,
 					priority: d.c.Primary,
 					disabled: !a || a < 1
 				}, p._("Give Coins", null, {
 					hk: "2DtgNR"
-				}))), l.a.createElement("td", null, l.a.createElement(d.f, {
-					className: h.a.actionButton,
+				}))), s.a.createElement("td", null, s.a.createElement(d.f, {
+					className: b.a.actionButton,
 					disabled: !a || a < 1
 				}, p._("Remove Coins", null, {
 					hk: "24ePW3"
-				})))), l.a.createElement("tr", null, l.a.createElement("td", null, l.a.createElement("input", {
+				})))), s.a.createElement("tr", null, s.a.createElement("td", null, s.a.createElement("input", {
 					min: 0,
 					type: "number",
 					placeholder: p._("Days", null, {
 						hk: "2NTZUs"
 					}),
 					value: c || "",
-					className: h.a.coinsInput,
+					className: b.a.coinsInput,
 					onChange: e => {
 						var a;
 						return i(parseInt(null === (a = null == e ? void 0 : e.target) || void 0 === a ? void 0 : a.value))
 					}
-				})), l.a.createElement("td", null, l.a.createElement(d.t, {
-					className: h.a.actionButton,
+				})), s.a.createElement("td", null, s.a.createElement(d.t, {
+					className: b.a.actionButton,
 					priority: d.c.Primary,
 					disabled: !c || c < 1,
 					onClick: a => {
-						c && confirm(`Give ${c} day${c>1?"s":""} of premium to ${e.id}?`) && m(Object(s.a)(`User:${e.id}`, v.GIVE_PREMIUM, {
+						c && confirm(`Give ${c} day${c>1?"s":""} of premium to ${e.id}?`) && o(Object(l.a)(`User:${e.id}`, v.GIVE_PREMIUM, {
 							Days: c
 						}))
 					}
 				}, p._("Give Premium", null, {
 					hk: "yy9AK"
-				}))), l.a.createElement("td", null, l.a.createElement(d.f, {
-					className: h.a.actionButton,
+				}))), s.a.createElement("td", null, s.a.createElement(d.f, {
+					className: b.a.actionButton,
 					onClick: a => {
-						confirm(`Remove premium from ${e.id}?`) && m(Object(s.a)(`User:${e.id}`, v.REMOVE_PREMIUM))
+						confirm(`Remove premium from ${e.id}?`) && o(Object(l.a)(`User:${e.id}`, v.REMOVE_PREMIUM))
 					}
 				}, p._("Remove Premium", null, {
 					hk: "2uqn0o"
-				})))), l.a.createElement("tr", null, l.a.createElement("td", null), l.a.createElement("td", null), l.a.createElement("td", null, l.a.createElement(d.f, {
-					className: h.a.actionButton
-				}, p._("Cancel Subscription", null, {
-					hk: "1myJLR"
 				}))))))))
 			};
 			t("./node_modules/core-js/modules/web.dom.iterable.js");
-			var _ = t("./src/lib/classNames/index.ts");
+			var _ = t("./src/lib/classNames/index.ts"),
+				h = t("./src/reddit/pages/EconManagement2/EMSearchResult/EMTransactionsTable/EMSubscriptions/EMSubscriptionRow/index.m.less"),
+				M = t.n(h);
 			const {
-				fbt: g
-			} = t("./node_modules/fbt/lib/FbtPublic.js"), x = l.a.createElement("thead", null, l.a.createElement("tr", null, l.a.createElement("th", null, g._("grace_period", null, {
-				hk: "25Ez2p"
-			})), l.a.createElement("th", null, g._("paid_period", null, {
-				hk: "3biVSJ"
-			})), l.a.createElement("th", null, g._("started", null, {
-				hk: "1Dcznw"
-			})), l.a.createElement("th", null, g._("state", null, {
-				hk: "4spQX8"
-			})), l.a.createElement("th", null, g._("subscription_status", null, {
-				hk: "3fQCya"
-			})), l.a.createElement("th", null, g._("subscription_id", null, {
-				hk: "He5mR"
-			})), l.a.createElement("th", null, g._("valid_until", null, {
-				hk: "3kBqUJ"
-			})), l.a.createElement("th", null, g._("will_renew", null, {
-				hk: "2afdap"
-			})))), R = e => l.a.createElement("table", null, x, l.a.createElement("tbody", null, e.subscriptions.map(e => l.a.createElement("tr", {
+				fbt: S
+			} = t("./node_modules/fbt/lib/FbtPublic.js"), x = e => {
+				const a = Object(r.d)();
+				return s.a.createElement("tr", null, C.map(a => s.a.createElement("td", {
+					key: a
+				}, e.subscription[a].value)), s.a.createElement("td", null, s.a.createElement("button", {
+					className: M.a.cancelButton,
+					onClick: t => {
+						const n = e.subscription.subscription_id.value;
+						confirm(`Cancel subscription ${n}?`) && a(Object(l.a)(`Order:${n}`, v.CANCEL_SUBSCRIPTION))
+					}
+				}, S._("Cancel Subscription", null, {
+					hk: "3pBm2E"
+				}))))
+			};
+			var R = t("./src/reddit/pages/EconManagement2/EMSearchResult/EMTransactionsTable/EMSubscriptions/index.m.less"),
+				N = t.n(R);
+			const {
+				fbt: f
+			} = t("./node_modules/fbt/lib/FbtPublic.js"), C = ["grace_period", "paid_status", "started", "state", "subscription_data", "subscription_id", "valid_until", "will_renew"], O = s.a.createElement("thead", {
+				className: N.a.tableHeader
+			}, s.a.createElement("tr", null, C.map(e => s.a.createElement("th", {
+				key: e
+			}, e)), s.a.createElement("th", null, f._("actions", null, {
+				hk: "1bCoG9"
+			})))), T = e => s.a.createElement("table", {
+				className: N.a.table
+			}, O, s.a.createElement("tbody", null, e.subscriptions.map(e => s.a.createElement(x, {
+				subscription: e,
 				key: e.subscription_id.value
 			}))));
-			var S, f = t("./src/reddit/pages/EconManagement2/EMSearchResult/EMTransactionsTable/index.m.less"),
-				M = t.n(f);
+			var y, P = t("./src/reddit/pages/EconManagement2/EMSearchResult/EMTransactionsTable/index.m.less"),
+				I = t.n(P);
 			! function(e) {
 				e.ORDERS = "Orders", e.SUBSCRIPTIONS = "Subscriptions", e.PAYMENTS = "Payments", e.RECURRING_PAYMENTS = "Recurring Payments"
-			}(S || (S = {}));
-			const N = e => {
-				const [a, t] = Object(n.useState)(S.ORDERS), r = Object.values(S).map(e => l.a.createElement("button", {
+			}(y || (y = {}));
+			const j = e => {
+				const [a, t] = Object(n.useState)(y.ORDERS), r = Object.values(y).map(e => s.a.createElement("button", {
 					key: e,
 					onClick: () => t(e),
-					className: Object(_.a)(M.a.tab, {
-						[M.a.selectedTab]: a === e
+					className: Object(_.a)(I.a.tab, {
+						[I.a.selectedTab]: a === e
 					})
 				}, e));
-				return l.a.createElement("div", {
-					className: M.a.panel
-				}, l.a.createElement("nav", null, r), (a => {
+				return s.a.createElement("div", {
+					className: I.a.panel
+				}, s.a.createElement("nav", null, r), s.a.createElement("div", {
+					className: I.a.tableContainer
+				}, (a => {
 					switch (a) {
-						case S.SUBSCRIPTIONS:
-							return l.a.createElement(R, {
+						case y.SUBSCRIPTIONS:
+							return s.a.createElement(T, {
 								subscriptions: e.subscriptions
 							});
 						default:
 							return null
 					}
-				})(a))
+				})(a)))
 			};
-			var y = t("./src/reddit/pages/EconManagement2/EMSearchResult/index.m.less"),
-				O = t.n(y);
-			const P = () => {
-				const e = Object(r.e)(o.b);
-				return l.a.createElement("div", null, e && l.a.createElement(l.a.Fragment, null, l.a.createElement(b, (e => {
+			var k = t("./src/reddit/pages/EconManagement2/EMSearchResult/index.m.less"),
+				A = t.n(k);
+			const B = () => {
+				const e = Object(r.e)(u.b);
+				return s.a.createElement("div", null, e && s.a.createElement(s.a.Fragment, null, s.a.createElement(g, (e => {
 					const a = e.userData.value,
 						t = e.thingState.value;
 					return {
@@ -243,18 +266,18 @@
 						goldSubscriptionId: t.goldSubscriptionId.value,
 						premiumExpiration: t.premiumExpirationThing.value
 					}
-				})(e.details)), l.a.createElement("div", {
-					className: O.a.moreDetailsSection
-				}, l.a.createElement(N, {
+				})(e.details)), s.a.createElement("div", {
+					className: A.a.moreDetailsSection
+				}, s.a.createElement(j, {
 					subscriptions: e.details.subscriptions.value
 				}))))
 			};
-			a.default = () => l.a.createElement("div", {
-				className: m.a.container
-			}, l.a.createElement("div", {
-				className: m.a.searchContainer
-			}, l.a.createElement(u, null)), l.a.createElement(P, null))
+			a.default = () => s.a.createElement("div", {
+				className: o.a.container
+			}, s.a.createElement("div", {
+				className: o.a.searchContainer
+			}, s.a.createElement(m, null)), s.a.createElement(B, null))
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EconManagement2.8515162ec99a7250890e.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EconManagement2.4e8288c960d151b39886.js.map
