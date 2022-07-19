@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~Reddit~Subreddit.725281bd4a006509db8a.js
-// Retrieved at 7/18/2022, 5:30:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~Reddit~Subreddit.bb1e91b609b681009512.js
+// Retrieved at 7/19/2022, 10:40:16 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~Reddit~Subreddit"], {
 		"./src/lib/CSSVariableProvider/withTheme.tsx": function(e, t, n) {
@@ -135,7 +135,7 @@
 			})), n.d(t, "c", (function() {
 				return N
 			})), n.d(t, "b", (function() {
-				return T
+				return C
 			}));
 			var r = n("./node_modules/fbt/lib/FbtPublic.js"),
 				o = n("./src/lib/makeActionCreator/index.ts"),
@@ -251,7 +251,7 @@
 				h = Object(o.a)(i.i),
 				N = Object(o.a)(i.k),
 				j = Object(o.a)(i.h),
-				T = e => async (t, n, r) => {
+				C = e => async (t, n, r) => {
 					let {
 						gqlContext: o
 					} = r;
@@ -385,8 +385,8 @@
 				h = n("./src/reddit/helpers/trackers/inbox.ts"),
 				N = n("./src/reddit/models/Badge/index.ts"),
 				j = n("./src/reddit/models/NotificationInbox/index.ts"),
-				T = n("./src/reddit/models/Toast/index.ts"),
-				C = n("./src/reddit/selectors/appBadges.ts"),
+				C = n("./src/reddit/models/Toast/index.ts"),
+				T = n("./src/reddit/selectors/appBadges.ts"),
 				v = (n("./src/reddit/selectors/notificationPrefs.ts"), n("./src/reddit/selectors/notificationsInbox.tsx"));
 			const y = Object(o.a)(s.e),
 				P = Object(o.a)(s.b),
@@ -490,10 +490,10 @@
 						const o = Object(v.f)(n());
 						t(R(o)), t(Object(a.f)(Object(a.e)(r.fbt._("Notification hidden", null, {
 							hk: "1jfPqO"
-						}), T.b.SuccessCommunityGreen)))
+						}), C.b.SuccessCommunityGreen)))
 					} else t(Object(a.f)(Object(a.e)(r.fbt._("Failed to hide notification, please try again.", null, {
 						hk: "fL7uB"
-					}), T.b.Error)))
+					}), C.b.Error)))
 				}, F = (e, t) => async (n, o, i) => {
 					let {
 						gqlContext: s
@@ -504,9 +504,9 @@
 						isUpdateFromSubredditEnabled: !0
 					})).ok ? (t && t(), n(Object(a.f)(Object(a.e)(r.fbt._("Success! Undone hiding notifications from this community.", null, {
 						hk: "1na0NP"
-					}), T.b.SuccessCommunityGreen)))) : n(Object(a.f)(Object(a.e)(r.fbt._("Failed to undo hiding notifications, please try again.", null, {
+					}), C.b.SuccessCommunityGreen)))) : n(Object(a.f)(Object(a.e)(r.fbt._("Failed to undo hiding notifications, please try again.", null, {
 						hk: "4jo7Pf"
-					}), T.b.Error)))
+					}), C.b.Error)))
 				}, G = (e, t) => async (n, o, i) => {
 					let {
 						gqlContext: s
@@ -519,12 +519,12 @@
 						const n = r.fbt._("Success! You won't see notifications from this community in the future.", null, {
 							hk: "2tkhbk"
 						});
-						return Object(a.f)(Object(a.e)(n, T.b.Undo, r.fbt._("Undo", null, {
+						return Object(a.f)(Object(a.e)(n, C.b.Undo, r.fbt._("Undo", null, {
 							hk: "4zFGDk"
 						}), F(e, t)))
 					})()) : n(Object(a.f)(Object(a.e)(r.fbt._("Failed to hide notifications, please try again.", null, {
 						hk: "KEGcB"
-					}), T.b.Error)))
+					}), C.b.Error)))
 				}, H = e => async (t, n, o) => {
 					let {
 						apiContext: i
@@ -538,9 +538,9 @@
 						}
 					}))(i(), e)).ok ? t(Object(a.f)(Object(a.e)(r.fbt._("Success! You won't see updates on this in the future", null, {
 						hk: "wtDa4"
-					}), T.b.SuccessCommunityGreen))) : t(Object(a.f)(Object(a.e)(r.fbt._("Failed to turn off updates on this, please try again", null, {
+					}), C.b.SuccessCommunityGreen))) : t(Object(a.f)(Object(a.e)(r.fbt._("Failed to turn off updates on this, please try again", null, {
 						hk: "1zhpEy"
-					}), T.b.Error)))
+					}), C.b.Error)))
 				}, V = e => async (t, n, o) => {
 					let {
 						gqlContext: i
@@ -550,9 +550,9 @@
 						awardingId: e
 					})).ok ? t(Object(a.f)(Object(a.e)(r.fbt._("Success! Awarder has been blocked", null, {
 						hk: "2D5PUk"
-					}), T.b.SuccessCommunityGreen))) : t(Object(a.f)(Object(a.e)(r.fbt._("Failed to block awarder, please try again", null, {
+					}), C.b.SuccessCommunityGreen))) : t(Object(a.f)(Object(a.e)(r.fbt._("Failed to block awarder, please try again", null, {
 						hk: "2dxeA8"
-					}), T.b.Error)))
+					}), C.b.Error)))
 				}, W = Object(o.a)(s.d), K = (e, t) => async (n, r, o) => {
 					let s, {
 						apiContext: a
@@ -565,7 +565,7 @@
 									id: t
 								}
 							}))(a(), e)).ok) {
-							let e = Object(C.a)(r());
+							let e = Object(T.a)(r());
 							if (e > 0) {
 								e--;
 								const t = Object(i.e)({
@@ -640,7 +640,7 @@
 							}))
 						} else e(Object(a.f)(Object(a.e)(r.fbt._("Sorry, we had trouble doing that. Please try again.", null, {
 							hk: "VW7c3"
-						}), T.b.Error)))
+						}), C.b.Error)))
 					}
 				}
 		},
@@ -1310,8 +1310,8 @@
 					user: x.Ab,
 					isProfileAvatarChangeFixEnabled: g.a
 				}),
-				T = Object(s.b)(j);
-			t.a = T(e => {
+				C = Object(s.b)(j);
+			t.a = C(e => {
 				const {
 					authorId: t,
 					collapsed: n,
@@ -1324,8 +1324,8 @@
 					shouldUseOnlineOverride: x,
 					isOnlineOverrideValue: g,
 					isOnlineStatusLoadTest: j,
-					isProfileIcon: T,
-					omitResponsivePresenceWrapper: C,
+					isProfileIcon: C,
+					omitResponsivePresenceWrapper: T,
 					onPresenceIndicatorInViewport: v,
 					shouldShowPresenceIndicator: y,
 					user: P,
@@ -1364,10 +1364,10 @@
 				}, []), Q = Object(o.useRef)({
 					rootMargin: "750px 0px 1000px 0px"
 				});
-				return Object(u.a)(W, Y, Q.current), C ? B : i.a.createElement("div", {
+				return Object(u.a)(W, Y, Q.current), T ? B : i.a.createElement("div", {
 					className: Object(r.a)(I.a.userIconWrapper, {
 						[I.a.hasHeadShotWrapper]: M,
-						[I.a.isProfileIcon]: T && D
+						[I.a.isProfileIcon]: C && D
 					}),
 					ref: W
 				}, m && i.a.createElement(O, {
@@ -1512,7 +1512,7 @@
 					post: r,
 					pageType: o.pageType
 				})),
-				T = Object(d.b)(j, e => ({
+				C = Object(d.b)(j, e => ({
 					fireAdPixelsOfType: (t, n) => e(Object(p.z)(t, n)),
 					recordClick: (t, n, r) => {
 						const o = t.events.filter(e => {
@@ -1528,7 +1528,7 @@
 						}))
 					}
 				})),
-				C = (e, t, n, r) => {
+				T = (e, t, n, r) => {
 					const o = t.outboundUrlExpiration && t.outboundUrlExpiration > Date.now();
 					r && t.outboundUrl && o && (e.href = b(t.outboundUrl, n), e.href = function(e) {
 						return Object(l.a)(e, {
@@ -1568,7 +1568,7 @@
 					} = e;
 					return !!(t && (null == n ? void 0 : n.outboundUrl))
 				},
-				k = T(e => {
+				k = C(e => {
 					const t = Object(c.useRef)(null),
 						n = Object(S.a)(),
 						{
@@ -1603,7 +1603,7 @@
 						onClick: () => n(u, x, s, p)
 					})) : a.a.createElement("a", N({}, h, {
 						onMouseDown: n => {
-							if (!P(e)) return !(1 !== n.button && 2 !== n.button && !n.ctrlKey) || void C(n.currentTarget, _, g, r);
+							if (!P(e)) return !(1 !== n.button && 2 !== n.button && !n.ctrlKey) || void T(n.currentTarget, _, g, r);
 							t.current = y(n.currentTarget, p, i)
 						},
 						onClick: () => {
@@ -1614,7 +1614,7 @@
 								e.href = t
 							})(e.currentTarget, j)
 						},
-						onTouchStart: e => C(e.currentTarget, _, g, r),
+						onTouchStart: e => T(e.currentTarget, _, g, r),
 						"data-testid": "outbound-link"
 					}))
 				});
@@ -1826,9 +1826,9 @@
 			})), n.d(t, "b", (function() {
 				return x
 			})), n.d(t, "u", (function() {
-				return T
-			})), n.d(t, "v", (function() {
 				return C
+			})), n.d(t, "v", (function() {
+				return T
 			})), n.d(t, "A", (function() {
 				return k
 			})), n.d(t, "s", (function() {
@@ -1953,13 +1953,13 @@
 			! function(e) {
 				e.POPULAR_CAROUSEL = "popular_carousel", e.SEARCH_DROPDOWN = "search_dropdown"
 			}(j || (j = {}));
-			const T = e => {
+			const C = e => {
 					Object(p.a)(P({
 						...e,
 						action: s.c.CLICK
 					}))
 				},
-				C = e => {
+				T = e => {
 					Object(p.a)(P({
 						...e,
 						action: s.c.VIEW
@@ -2269,9 +2269,9 @@
 			})), n.d(t, "m", (function() {
 				return j
 			})), n.d(t, "z", (function() {
-				return T
-			})), n.d(t, "q", (function() {
 				return C
+			})), n.d(t, "q", (function() {
+				return T
 			})), n.d(t, "o", (function() {
 				return v
 			})), n.d(t, "n", (function() {
@@ -2601,7 +2601,7 @@
 						}
 					})
 				},
-				T = e => {
+				C = e => {
 					let {
 						actionInfoType: t,
 						id: n,
@@ -2628,7 +2628,7 @@
 						}
 					})
 				},
-				C = e => {
+				T = e => {
 					let {
 						actionInfoType: t
 					} = e;
@@ -2699,7 +2699,7 @@
 		"./src/reddit/helpers/trackers/screenview.ts": function(e, t, n) {
 			"use strict";
 			n.d(t, "k", (function() {
-				return T
+				return C
 			})), n.d(t, "f", (function() {
 				return v
 			})), n.d(t, "q", (function() {
@@ -2770,7 +2770,7 @@
 				h = n("./src/reddit/selectors/postDraft.ts"),
 				N = n("./src/reddit/selectors/telemetry.ts"),
 				j = n("./src/telemetry/index.ts");
-			const T = (e, t, n, r, a, l) => {
+			const C = (e, t, n, r, a, l) => {
 					const {
 						route: I
 					} = e, {
@@ -2945,7 +2945,7 @@
 							l && re(t, !0)
 					}
 				},
-				C = e => ({
+				T = e => ({
 					...N.n(e),
 					userPreferences: N.qb(e)
 				}),
@@ -2970,7 +2970,7 @@
 							source: "global",
 							action: "view",
 							noun: "screen",
-							...C(e),
+							...T(e),
 							actionInfo: N.d(e, {
 								success: d,
 								...u
@@ -3002,7 +3002,7 @@
 						source: "global",
 						action: "view",
 						noun: "screen",
-						...C(i),
+						...T(i),
 						actionInfo: N.d(i, {
 							success: a
 						}),
@@ -3025,7 +3025,7 @@
 						source: "global",
 						action: "view",
 						noun: "screen",
-						...C(i),
+						...T(i),
 						actionInfo: N.d(i, {
 							success: a
 						}),
@@ -3047,7 +3047,7 @@
 						source: "global",
 						action: "view",
 						noun: "screen",
-						...C(i),
+						...T(i),
 						actionInfo: N.d(i, {
 							success: a
 						}),
@@ -3064,7 +3064,7 @@
 						source: "global",
 						action: "view",
 						noun: "screen",
-						...C(r),
+						...T(r),
 						actionInfo: N.d(r, {
 							success: o
 						}),
@@ -3082,7 +3082,7 @@
 						source: "global",
 						action: "view",
 						noun: "screen",
-						...C(s),
+						...T(s),
 						actionInfo: N.d(s, {
 							success: a
 						}),
@@ -3111,7 +3111,7 @@
 						source: "global",
 						action: "view",
 						noun: "screen",
-						...C(r),
+						...T(r),
 						actionInfo: N.d(r, {
 							success: o
 						}),
@@ -3127,7 +3127,7 @@
 						source: "global",
 						action: "view",
 						noun: "screen",
-						...C(e),
+						...T(e),
 						actionInfo: N.d(e, {
 							success: t
 						})
@@ -3138,7 +3138,7 @@
 						source: "global",
 						action: "view",
 						noun: "screen",
-						...C(e),
+						...T(e),
 						actionInfo: N.d(e, {
 							success: t
 						}),
@@ -3153,7 +3153,7 @@
 						source: "global",
 						action: "view",
 						noun: "screen",
-						...C(e),
+						...T(e),
 						profile: N.S(e, Object(I.m)(e, n)),
 						subreddit: N.ib(e, Object(O.F)(e, t)),
 						userSubreddit: N.rb(e),
@@ -3165,7 +3165,7 @@
 						source: "global",
 						action: "view",
 						noun: "screen",
-						...C(e),
+						...T(e),
 						actionInfo: N.d(e)
 					})
 				},
@@ -3174,7 +3174,7 @@
 						source: "global",
 						action: "view",
 						noun: "screen",
-						...C(e),
+						...T(e),
 						actionInfo: N.d(e)
 					})
 				},
@@ -3186,7 +3186,7 @@
 						source: "global",
 						action: "view",
 						noun: "screen",
-						...C(e),
+						...T(e),
 						actionInfo: N.d(e, {
 							success: s
 						}),
@@ -3202,7 +3202,7 @@
 					action: "view",
 					noun: "page",
 					correlationId: Object(S.c)(S.a.GoldPayment),
-					...C(n),
+					...T(n),
 					timer: N.nb(e, t),
 					adblock: N.e(n)
 				}),
@@ -3210,14 +3210,14 @@
 					source: "global",
 					action: "view",
 					noun: "screen",
-					...C(e)
+					...T(e)
 				}),
 				V = (e, t) => n => ({
 					source: "premium_marketing",
 					action: "view",
 					noun: "page",
 					correlationId: Object(S.c)(S.a.GoldPayment),
-					...C(n),
+					...T(n),
 					timer: N.nb(e, t),
 					adblock: N.e(n)
 				}),
@@ -3225,20 +3225,20 @@
 					source: "global",
 					action: "view",
 					noun: "screen",
-					...C(e)
+					...T(e)
 				}),
 				K = (e, t) => n => ({
 					source: "appeal",
 					action: "view",
 					noun: "page",
-					...C(n),
+					...T(n),
 					timer: N.nb(e, t)
 				}),
 				q = (e, t) => n => ({
 					source: "global",
 					action: "view",
 					noun: "screen",
-					...C(n),
+					...T(n),
 					timer: N.nb(e, t)
 				}),
 				Y = () => e => ({
@@ -3246,25 +3246,25 @@
 					action: "view",
 					noun: "screen",
 					subreddit: N.hb(e),
-					...C(e)
+					...T(e)
 				}),
 				Q = () => e => ({
 					source: "global",
 					action: "view",
 					noun: "screen",
-					...C(e)
+					...T(e)
 				}),
 				z = () => e => ({
 					action: "view",
 					source: "global",
 					noun: "screen",
-					...C(e)
+					...T(e)
 				}),
 				X = (e, t) => n => ({
 					source: "global",
 					action: "view",
 					noun: "screen",
-					...C(n),
+					...T(n),
 					customFeed: N.l(n),
 					subreddit: N.hb(n),
 					timer: N.nb(e, t),
@@ -3275,7 +3275,7 @@
 					source: "global",
 					action: "view",
 					noun: "screen",
-					...C(e)
+					...T(e)
 				}),
 				$ = {
 					source: "global",
@@ -3337,7 +3337,7 @@
 						source: "global",
 						action: "view",
 						noun: "screen",
-						...C(e),
+						...T(e),
 						actionInfo: N.d(e, {
 							success: t
 						})
@@ -3348,7 +3348,7 @@
 						source: "global",
 						action: "view",
 						noun: "screen",
-						...C(e),
+						...T(e),
 						actionInfo: N.d(e, {
 							success: t
 						})
@@ -3806,7 +3806,7 @@
 					if (!l(e)) return;
 					const t = Object(s.c)(e, {
 						experimentEligibilitySelector: u,
-						experimentName: i.Sd,
+						experimentName: i.Qd,
 						expEventOverride: !1
 					});
 					return null == t ? void 0 : t.toLocaleLowerCase()
@@ -3829,9 +3829,9 @@
 				},
 				m = e => !!b(e) && Object(s.c)(e, {
 					experimentEligibilitySelector: l,
-					experimentName: i.Td,
+					experimentName: i.Rd,
 					expEventOverride: !1
-				}) !== i.Ud.Readonly
+				}) !== i.Sd.Readonly
 		},
 		"./src/reddit/selectors/experiments/newCommunityProgressV3.ts": function(e, t, n) {
 			"use strict";
@@ -3872,7 +3872,7 @@
 					return r ? r * o.Sb < 1639443600180 ? void 0 : I(e) : void 0
 				},
 				I = Object(r.a)(e => Object(c.c)(e, {
-					experimentName: i.ve,
+					experimentName: i.te,
 					experimentEligibilitySelector: a.e
 				}), d.a)
 		},
@@ -3999,4 +3999,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit~Subreddit.725281bd4a006509db8a.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit~Subreddit.bb1e91b609b681009512.js.map

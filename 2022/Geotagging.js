@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Geotagging.04cb708e49fc21cda356.js
-// Retrieved at 7/18/2022, 3:20:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Geotagging.4734c146d6ad10ade8a3.js
+// Retrieved at 7/19/2022, 10:40:16 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Geotagging"], {
 		"./node_modules/p-debounce/index.js": function(e, t, n) {
@@ -483,7 +483,7 @@
 					}, s[t]) : null
 				};
 				if (e.isD2xPdpSideRailRecsEnabled) {
-					const t = e.d2xPdpSideRailRecsVariant === u.Kc.GreyRereddit || e.d2xPdpSideRailRecsVariant === u.Kc.GreyRedditNoNsfw || e.d2xPdpSideRailRecsVariant === u.Kc.LargeImagePreview ? e.reredditButtons : [];
+					const t = e.d2xPdpSideRailRecsVariant === u.Ic.GreyRereddit || e.d2xPdpSideRailRecsVariant === u.Ic.GreyRedditNoNsfw || e.d2xPdpSideRailRecsVariant === u.Ic.LargeImagePreview ? e.reredditButtons : [];
 					return r.a.createElement(O, {
 						reredditContent: t,
 						countryCode: e.countryCode
@@ -1614,8 +1614,8 @@
 					}
 				})
 			}
-			var K = n("./src/reddit/icons/svgs/HamburgerClose/index.tsx"),
-				q = n("./src/reddit/models/Toast/index.ts");
+			var q = n("./src/reddit/icons/svgs/HamburgerClose/index.tsx"),
+				K = n("./src/reddit/models/Toast/index.ts");
 			const {
 				fbt: U
 			} = n("./node_modules/fbt/lib/FbtPublic.js");
@@ -1644,7 +1644,7 @@
 
 				function S() {
 					o(Object(O.f)({
-						kind: q.b.SuccessMod,
+						kind: K.b.SuccessMod,
 						text: U._("Nice work!", null, {
 							hk: "2Wu6gX"
 						})
@@ -1667,7 +1667,7 @@
 					onClick: function() {
 						Y(t.id), _(B(t)), f(), n(t.id)
 					}
-				}, r.a.createElement(K.a, null))), r.a.createElement("p", null, t.publicDescriptionText || t.title), t.geoPlace && !m ? r.a.createElement("div", {
+				}, r.a.createElement(q.a, null))), r.a.createElement("p", null, t.publicDescriptionText || t.title), t.geoPlace && !m ? r.a.createElement("div", {
 					className: y.a.questionContainer
 				}, r.a.createElement("div", {
 					className: y.a.question
@@ -1703,7 +1703,7 @@
 							sessionId: r
 						});
 						if (u(!1), !a.ok) return o(Object(O.f)({
-							kind: q.b.Error,
+							kind: K.b.Error,
 							text: U._("Something went wrong", null, {
 								hk: "2PnKbu"
 							}),
@@ -1814,11 +1814,11 @@
 				c = n("./node_modules/reselect/es/index.js");
 			const d = Object(c.a)(e => Object(r.c)(e, {
 					experimentEligibilitySelector: e => Object(o.h)(e) && Object(a.f)(e),
-					experimentName: s.nc
+					experimentName: s.mc
 				}), i.a),
 				l = Object(c.a)(e => Object(r.c)(e, {
 					experimentEligibilitySelector: e => !Object(o.h)(e) && Object(a.f)(e),
-					experimentName: s.mc
+					experimentName: s.lc
 				}), i.a),
 				u = Object(c.a)(d, l, (e, t) => e || t),
 				m = Object(c.a)(d, l, (e, t) => !(!e && !t))
@@ -1837,4 +1837,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Geotagging.04cb708e49fc21cda356.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Geotagging.4734c146d6ad10ade8a3.js.map
