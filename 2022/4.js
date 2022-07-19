@@ -1,11 +1,11 @@
-// https://www.redditstatic.com/desktop2x/4.2f6df999687ec6ebeb00.js
-// Retrieved at 7/14/2022, 2:00:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/4.262bb6faa6b838bf3945.js
+// Retrieved at 7/19/2022, 9:40:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	[4], {
 		"./node_modules/@reddit/crypto/react/nft-product-card/index.es.js": function(e, t, n) {
 			"use strict";
 			n.d(t, "a", (function() {
-				return kf
+				return jf
 			}));
 			var r = n("./node_modules/react/index.js"),
 				i = n.n(r),
@@ -6668,19 +6668,43 @@
 				return `${t.getMonth()+1}/${t.getDate()}/${t.getFullYear()}`
 			}
 			const Yc = 10;
-			var Qc = "_container_f4yhv_42",
-				Jc = "_range_f4yhv_48",
-				Zc = "_rangeStart_f4yhv_54",
-				Kc = "_rangeEnd_f4yhv_55",
-				eu = "_title_f4yhv_78";
-			const tu = ({
+			const Qc = e => {
+					const t = e.split(".");
+					return [t[0].replace(/\B(?=(\d{3})+(?!\d))/g, ",")].concat(t.slice(1)).join(".")
+				},
+				Jc = 1e3,
+				Zc = 100 * Jc,
+				Kc = 10 * Zc,
+				eu = 100 * Kc,
+				tu = 10 * eu,
+				nu = 100 * tu,
+				ru = 51;
+			const iu = (e, t, n = !1) => {
+					if (n) {
+						return (e / t).toFixed(e % t > 0 ? 1 : 0)
+					}
+					return (e / t).toFixed(1)
+				},
+				au = (e, t, n = 1) => {
+					const r = Math.pow(10, n);
+					return (Math.floor(e / (t / r)) / r).toFixed(n)
+				};
+			var ou = "_container_f4yhv_42",
+				su = "_range_f4yhv_48",
+				lu = "_rangeStart_f4yhv_54",
+				cu = "_rangeEnd_f4yhv_55",
+				uu = "_title_f4yhv_78";
+			const du = ({
 				title: e,
 				rarity: t,
 				collectionSize: n,
 				className: r
 			}) => {
 				const a = function(e, t) {
-					if (e) return String(e);
+					if (e) return n = e, r = {
+						removeZeroDecimal: !0
+					}, (null == r ? void 0 : r.displayFull) ? Qc(n.toString()) : n >= nu - ru ? `${Math.floor(n/tu)}b` : n >= tu - ru && n < nu - ru ? `${iu(n,tu,null==r?void 0:r.removeZeroDecimal)}b` : n >= eu - ru && n < tu - ru ? `${Math.floor(n/Kc)}m` : n >= Kc - ru && n < eu - ru ? `${iu(n,Kc,null==r?void 0:r.removeZeroDecimal)}m` : n >= Zc - ru && n < Kc - ru ? `${Math.floor(n/Jc)}k` : n >= Jc && n < Zc - ru ? (null == r ? void 0 : r.roundDown) ? `${au(n,Jc)}k` : `${iu(n,Jc,null==r?void 0:r.removeZeroDecimal)}k` : String(n);
+					var n, r;
 					if (t) switch (t) {
 						case "legendary":
 							return "1";
@@ -6694,18 +6718,18 @@
 					return null
 				}(n, t);
 				return i.a.createElement("div", {
-					className: gi(Qc, r)
+					className: gi(ou, r)
 				}, a && i.a.createElement("div", {
-					className: Jc
+					className: su
 				}, i.a.createElement("div", {
-					className: Zc
+					className: lu
 				}, "1"), i.a.createElement("div", {
-					className: Kc
+					className: cu
 				}, a)), i.a.createElement("h2", {
-					className: eu
+					className: uu
 				}, e))
 			};
-			const nu = ({
+			const fu = ({
 					className: e,
 					nft: t,
 					onClick: n,
@@ -6737,13 +6761,13 @@
 						src: s,
 						className: zc,
 						alt: "nft-asset"
-					}), i.a.createElement(tu, {
+					}), i.a.createElement(du, {
 						title: u,
 						className: gi(Lc, a),
 						collectionSize: d
 					}))
 				},
-				ru = ({
+				mu = ({
 					className: e,
 					nft: t,
 					onFlip: n,
@@ -6769,7 +6793,7 @@
 						className: gi(Mc, e),
 						flipped: l,
 						onClick: u,
-						front: i.a.createElement(nu, {
+						front: i.a.createElement(fu, {
 							className: Rc,
 							onClick: u,
 							nft: t
@@ -6782,12 +6806,12 @@
 						})
 					})
 				};
-			var iu = "_carousel_u50lk_1",
-				au = "_isFullWidth_u50lk_6",
-				ou = "_swiper_u50lk_14",
-				su = "_pane_u50lk_23",
-				lu = "_stepper_u50lk_40";
-			const cu = function(e) {
+			var pu = "_carousel_u50lk_1",
+				hu = "_isFullWidth_u50lk_6",
+				vu = "_swiper_u50lk_14",
+				gu = "_pane_u50lk_23",
+				yu = "_stepper_u50lk_40";
+			const bu = function(e) {
 				var t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : {};
 				return Vn(e, k({
 					defaultTheme: si
@@ -6804,14 +6828,14 @@
 					backgroundColor: "#F6F8F9"
 				}
 			});
-			const uu = ({
+			const ku = ({
 				nft: e,
 				isFullWidth: t,
 				cardClassName: n,
 				showCloseOnBack: a,
 				isControlVisible: o
 			}) => {
-				const [s, l] = Object(r.useState)(0), [c, u] = Object(r.useState)(!1), [d, f] = Object(r.useState)(!1), m = cu(), p = Math.max(0, s - 1), h = s, v = 0 === p;
+				const [s, l] = Object(r.useState)(0), [c, u] = Object(r.useState)(!1), [d, f] = Object(r.useState)(!1), m = bu(), p = Math.max(0, s - 1), h = s, v = 0 === p;
 				Object(r.useEffect)(() => {
 					u(1 === s || 2 === s)
 				}, [s]);
@@ -6831,15 +6855,15 @@
 						f(!1)
 					}, []);
 				return i.a.createElement("div", {
-					className: gi(iu, {
-						[au]: t
+					className: gi(pu, {
+						[hu]: t
 					})
 				}, i.a.createElement(Pa, {
 					axis: "x",
 					index: p,
-					className: gi(ou, !1),
+					className: gi(vu, !1),
 					onTransitionEnd: y,
-					slideClassName: su,
+					slideClassName: gu,
 					springConfig: {
 						duration: "2s",
 						easeFunction: "cubic-bezier(0.17,0.84,0.44,1)",
@@ -6847,7 +6871,7 @@
 					},
 					onChangeIndex: l,
 					enableMouseEvents: !0
-				}, i.a.createElement(i.a.Fragment, null, e.isMinted ? i.a.createElement(ru, {
+				}, i.a.createElement(i.a.Fragment, null, e.isMinted ? i.a.createElement(mu, {
 					animateFlip: v,
 					animateBackground: v,
 					onFlip: g,
@@ -6855,12 +6879,12 @@
 					nft: e,
 					className: n,
 					showCloseOnBack: a
-				}) : i.a.createElement(nu, {
+				}) : i.a.createElement(fu, {
 					className: n,
 					nft: e
 				}))), o && e.isMinted && i.a.createElement(hi, {
 					steps: 2,
-					className: lu,
+					className: yu,
 					position: "static",
 					variant: "dots",
 					classes: {
@@ -6872,20 +6896,20 @@
 					backButton: null
 				}))
 			};
-			var du = "_avatarCard_1twmt_107";
-			const fu = ({
+			var Su = "_avatarCard_1twmt_107";
+			const wu = ({
 				nft: e,
 				className: t,
 				isControlVisible: n
 			}) => i.a.createElement("div", {
 				className: t
-			}, i.a.createElement(uu, {
+			}, i.a.createElement(ku, {
 				nft: e,
-				cardClassName: du,
+				cardClassName: Su,
 				showCloseOnBack: !1,
 				isControlVisible: n
 			}));
-			var mu = {
+			var Nu = {
 				kind: "Document",
 				definitions: [{
 					kind: "OperationDefinition",
@@ -6998,7 +7022,7 @@
 					end: 159
 				}
 			};
-			mu.loc.source = {
+			Nu.loc.source = {
 				body: "query getNftDetails($ids: [ID!]!) {\n  inventoryItems(filter: { ids: $ids }) {\n    edges {\n      node {\n        ...NftInventoryItemFragment\n      }\n    }\n  }\n}\n",
 				name: "GraphQL request",
 				locationOffset: {
@@ -7006,21 +7030,21 @@
 					column: 1
 				}
 			};
-			var pu, hu, vu, gu, yu, bu, ku, Su, wu, Nu, Eu, xu, _u, Cu, Ou, Pu, ju = {};
+			var Eu, xu, _u, Cu, Ou, Pu, ju, Au, Tu, Iu, Mu, Ru, Fu, Du, Lu, zu, Vu = {};
 
-			function Au(e, t) {
+			function Bu(e, t) {
 				for (var n = 0; n < e.definitions.length; n++) {
 					var r = e.definitions[n];
 					if (r.name && r.name.value == t) return r
 				}
 			}
 
-			function Tu({
+			function Wu({
 				itemId: e,
 				onError: t
 			}) {
 				const [n, i] = Object(r.useState)(null), [o] = Object(a.c)({
-					query: mu,
+					query: Nu,
 					variables: {
 						ids: [e]
 					},
@@ -7049,8 +7073,8 @@
 							ipfsUrl: e.nft.imageUrl,
 							metadataUrl: e.nft.tokenUrl,
 							mintDate: e.nft.mintedAt,
-							isMinting: (null == (t = null == e ? void 0 : e.tags) ? void 0 : t.includes(pu.MINTING)) || !1,
-							isMinted: (null == (n = null == e ? void 0 : e.tags) ? void 0 : n.includes(pu.MINTED)) || !1,
+							isMinting: (null == (t = null == e ? void 0 : e.tags) ? void 0 : t.includes(Eu.MINTING)) || !1,
+							isMinted: (null == (n = null == e ? void 0 : e.tags) ? void 0 : n.includes(Eu.MINTED)) || !1,
 							soldFor: null,
 							currentPrice: null,
 							vendor: e.nft.vendor,
@@ -7066,13 +7090,13 @@
 				}
 			}
 
-			function Iu(e) {
+			function Uu(e) {
 				return {
 					groupId: e.outfitId,
 					itemName: e.title
 				}
 			}
-			mu.definitions.forEach((function(e) {
+			Nu.definitions.forEach((function(e) {
 					if (e.name) {
 						var t = new Set;
 						! function e(t, n) {
@@ -7088,16 +7112,16 @@
 							})), t.definitions && t.definitions.forEach((function(t) {
 								e(t, n)
 							}))
-						}(e, t), ju[e.name.value] = t
+						}(e, t), Vu[e.name.value] = t
 					}
 				})),
 				function(e, t) {
 					var n = {
 						kind: e.kind,
-						definitions: [Au(e, t)]
+						definitions: [Bu(e, t)]
 					};
 					e.hasOwnProperty("loc") && (n.loc = e.loc);
-					var r = ju[t] || new Set,
+					var r = Vu[t] || new Set,
 						i = new Set,
 						a = new Set;
 					for (r.forEach((function(e) {
@@ -7105,27 +7129,27 @@
 						})); a.size > 0;) {
 						var o = a;
 						a = new Set, o.forEach((function(e) {
-							i.has(e) || (i.add(e), (ju[e] || new Set).forEach((function(e) {
+							i.has(e) || (i.add(e), (Vu[e] || new Set).forEach((function(e) {
 								a.add(e)
 							})))
 						}))
 					}
 					i.forEach((function(t) {
-						var r = Au(e, t);
+						var r = Bu(e, t);
 						r && n.definitions.push(r)
 					}))
-				}(mu, "getNftDetails"), (hu = pu || (pu = {})).MINTED = "MINTED", hu.MINTING = "MINTING", hu.TRANSFERRING = "TRANSFERRING", (gu = vu || (vu = {})).Marketplace = "marketplace", gu.Avatar = "avatar", (bu = yu || (yu = {})).Back = "back", bu.Click = "click", bu.Create = "create", bu.Scroll = "scroll", bu.Secure = "secure", bu.Paid = "paid", bu.View = "view", (Su = ku || (ku = {})).ClaimPostUnit = "claim_post_unit", Su.ClaimNft = "claim_nft", Su.BuyNft = "buy_nft", Su.CreateVault = "create_vault", Su.CompleteTransaction = "complete_transaction", Su.ListingFe = "listing_fe", Su.NftDetails = "nft_details", Su.PaymentError = "payment_error", Su.ProductDetailPage = "product_detail_page", Su.PdpDynamicCta = "pdp_dynamic_cta", Su.MarketplaceArtist = "marketplace_artist", Su.SecureVault = "secure_vault", Su.SelectionUi = "selection_ui", Su.Vault = "vault", Su.VaultConfirmation = "vault_confirmation", (Nu = wu || (wu = {})).ClaimFlow = "claim_flow", Nu.Purchase = "purchase", Nu.SetAvatar = "set_avatar", Nu.Transfer = "transfer", Nu.ViewNft = "view_nft", Nu.ImportCollectibleAvatar = "import_collectible_avatar", (Eu || (Eu = {})).ProductDetailPage = "product_detail_page", (xu || (xu = {})).Password = "password", (Cu = _u || (_u = {})).New = "NEW", Cu.ActionRequired = "ACTION_REQUIRED", Cu.Pending = "PENDING", Cu.Paid = "PAID", Cu.Canceled = "CANCELED", Cu.Rejected = "REJECTED", Cu.Failed = "FAILED", Cu.Refunded = "REFUNDED", (Pu = Ou || (Ou = {})).AVAILABLE = "AVAILABLE", Pu.SOLD_OUT = "SOLD_OUT", Pu.EXPIRED = "EXPIRED", Ou.AVAILABLE, Ou.SOLD_OUT, Ou.EXPIRED;
-			const Mu = e => ({
-				source: vu.Marketplace,
-				action: yu.Click,
-				noun: ku.PdpDynamicCta,
+				}(Nu, "getNftDetails"), (xu = Eu || (Eu = {})).MINTED = "MINTED", xu.MINTING = "MINTING", xu.TRANSFERRING = "TRANSFERRING", (Cu = _u || (_u = {})).Marketplace = "marketplace", Cu.Avatar = "avatar", (Pu = Ou || (Ou = {})).Back = "back", Pu.Click = "click", Pu.Create = "create", Pu.Scroll = "scroll", Pu.Secure = "secure", Pu.Paid = "paid", Pu.View = "view", (Au = ju || (ju = {})).ClaimPostUnit = "claim_post_unit", Au.ClaimNft = "claim_nft", Au.BuyNft = "buy_nft", Au.CreateVault = "create_vault", Au.CompleteTransaction = "complete_transaction", Au.ListingFe = "listing_fe", Au.NftDetails = "nft_details", Au.PaymentError = "payment_error", Au.ProductDetailPage = "product_detail_page", Au.PdpDynamicCta = "pdp_dynamic_cta", Au.MarketplaceArtist = "marketplace_artist", Au.SecureVault = "secure_vault", Au.SelectionUi = "selection_ui", Au.Vault = "vault", Au.VaultConfirmation = "vault_confirmation", (Iu = Tu || (Tu = {})).ClaimFlow = "claim_flow", Iu.Purchase = "purchase", Iu.SetAvatar = "set_avatar", Iu.Transfer = "transfer", Iu.ViewNft = "view_nft", Iu.ImportCollectibleAvatar = "import_collectible_avatar", (Mu || (Mu = {})).ProductDetailPage = "product_detail_page", (Ru || (Ru = {})).Password = "password", (Du = Fu || (Fu = {})).New = "NEW", Du.ActionRequired = "ACTION_REQUIRED", Du.Pending = "PENDING", Du.Paid = "PAID", Du.Canceled = "CANCELED", Du.Rejected = "REJECTED", Du.Failed = "FAILED", Du.Refunded = "REFUNDED", (zu = Lu || (Lu = {})).AVAILABLE = "AVAILABLE", zu.SOLD_OUT = "SOLD_OUT", zu.EXPIRED = "EXPIRED", Lu.AVAILABLE, Lu.SOLD_OUT, Lu.EXPIRED;
+			const $u = e => ({
+				source: _u.Marketplace,
+				action: Ou.Click,
+				noun: ju.PdpDynamicCta,
 				actionInfo: {
 					reason: e,
-					pageType: Eu.ProductDetailPage
+					pageType: Mu.ProductDetailPage
 				}
 			});
-			vu.Marketplace, yu.Click, ku.PdpDynamicCta, Eu.ProductDetailPage, wu.ImportCollectibleAvatar;
-			const Ru = ({
+			_u.Marketplace, Ou.Click, ju.PdpDynamicCta, Mu.ProductDetailPage, Tu.ImportCollectibleAvatar;
+			const Hu = ({
 				className: e
 			}) => i.a.createElement("svg", {
 				width: "13",
@@ -7137,40 +7161,40 @@
 				d: "M10.4 4.728h-.3V3.6a3.6 3.6 0 1 0-7.2 0v1.128h-.3a.966.966 0 0 0-.972.972v4.8a.966.966 0 0 0 .972.972h7.8a.966.966 0 0 0 .972-.972V5.7a.967.967 0 0 0-.972-.972ZM4.1 3.6a2.4 2.4 0 1 1 4.8 0v1.128H4.1V3.6Z",
 				fill: "currentColor"
 			}));
-			var Fu = "_container_ztn11_42",
-				Du = "_carousel_ztn11_45",
-				Lu = "_productDetails_ztn11_53",
-				zu = "_isNightMode_ztn11_65",
-				Vu = "_header_ztn11_69",
-				Bu = "_cardName_ztn11_73",
-				Wu = "_cardAuthor_ztn11_79",
-				Uu = "_cardAuthorClickable_ztn11_93",
-				$u = "_redditLogo_ztn11_99",
-				Hu = "_scrollContainer_ztn11_104",
-				qu = "_buttonsContainer_ztn11_113",
-				Xu = "_artistImg_ztn11_125",
-				Gu = "_artistName_ztn11_132",
-				Yu = "_ctaButton_ztn11_137",
-				Qu = "_transferCta_ztn11_137",
-				Ju = "_tooltip_ztn11_143",
-				Zu = "_defaultButtonsContainer_ztn11_178",
-				Ku = "_buttonIcon_ztn11_181",
-				ed = "_itemDescription_ztn11_185",
-				td = "_itemBenefits_ztn11_188",
-				nd = "_heading_ztn11_191",
-				rd = "_utilityTable_ztn11_203",
-				id = "_featureCell_ztn11_213",
-				ad = "_featureImage_ztn11_220",
-				od = "_featureCopy_ztn11_224",
-				sd = "_blockchainDetails_ztn11_236",
-				ld = "_resaleText_ztn11_239",
-				cd = "_platformFeesLink_ztn11_243",
-				ud = "_nftDetailsHeading_ztn11_247",
-				dd = "_mintStatus_ztn11_260",
-				fd = "_nftDetailPills_ztn11_272",
-				md = "_pill_ztn11_272",
-				pd = "_pillImage_ztn11_291";
-			const hd = ({
+			var qu = "_container_ztn11_42",
+				Xu = "_carousel_ztn11_45",
+				Gu = "_productDetails_ztn11_53",
+				Yu = "_isNightMode_ztn11_65",
+				Qu = "_header_ztn11_69",
+				Ju = "_cardName_ztn11_73",
+				Zu = "_cardAuthor_ztn11_79",
+				Ku = "_cardAuthorClickable_ztn11_93",
+				ed = "_redditLogo_ztn11_99",
+				td = "_scrollContainer_ztn11_104",
+				nd = "_buttonsContainer_ztn11_113",
+				rd = "_artistImg_ztn11_125",
+				id = "_artistName_ztn11_132",
+				ad = "_ctaButton_ztn11_137",
+				od = "_transferCta_ztn11_137",
+				sd = "_tooltip_ztn11_143",
+				ld = "_defaultButtonsContainer_ztn11_178",
+				cd = "_buttonIcon_ztn11_181",
+				ud = "_itemDescription_ztn11_185",
+				dd = "_itemBenefits_ztn11_188",
+				fd = "_heading_ztn11_191",
+				md = "_utilityTable_ztn11_203",
+				pd = "_featureCell_ztn11_213",
+				hd = "_featureImage_ztn11_220",
+				vd = "_featureCopy_ztn11_224",
+				gd = "_blockchainDetails_ztn11_236",
+				yd = "_resaleText_ztn11_239",
+				bd = "_platformFeesLink_ztn11_243",
+				kd = "_nftDetailsHeading_ztn11_247",
+				Sd = "_mintStatus_ztn11_260",
+				wd = "_nftDetailPills_ztn11_272",
+				Nd = "_pill_ztn11_272",
+				Ed = "_pillImage_ztn11_291";
+			const xd = ({
 				currentUserId: e,
 				nft: t,
 				onViewAvatar: n,
@@ -7180,64 +7204,64 @@
 					o = Object(l.d)(),
 					s = a.inline("Coming Soon! Transfer your Collectible Avatar to another Reddit Vault, alt account, or third-party wallet.", "Tooltip Content: Transfer feature coming soon");
 				return i.a.createElement(i.a.Fragment, null, e && e === t.ownerId && i.a.createElement("div", {
-					className: gi(qu, Zu)
+					className: gi(nd, ld)
 				}, n ? i.a.createElement(cc, {
 					theme: "blue_inverted",
-					className: Yu,
+					className: ad,
 					onClick: () => {
-						o(Mu(wu.ViewNft)), null == n || n(t.outfitId)
+						o($u(Tu.ViewNft)), null == n || n(t.outfitId)
 					}
 				}, i.a.createElement(sc, {
 					desc: "Button: view the item"
 				}, "View Your NFT")) : i.a.createElement(cc, {
 					theme: "blue_inverted",
-					className: gi(Yu, Qu),
+					className: gi(ad, od),
 					onClick: () => {
-						o(Mu(wu.Transfer))
+						o($u(Tu.Transfer))
 					}
 				}, i.a.createElement("span", {
-					className: Ju
-				}, s), i.a.createElement(Ru, {
-					className: Ku
+					className: sd
+				}, s), i.a.createElement(Hu, {
+					className: cd
 				}), i.a.createElement(sc, {
 					desc: "Button: transfer the item"
 				}, "Transfer")), r && i.a.createElement(cc, {
 					theme: "blue",
-					className: Yu,
+					className: ad,
 					onClick: () => {
-						o(Mu(wu.SetAvatar)), null == r || r(t.outfitId)
+						o($u(Tu.SetAvatar)), null == r || r(t.outfitId)
 					}
 				}, i.a.createElement(sc, {
 					desc: "Button: equip the item as user avatar"
 				}, "Make It Your Avatar"))))
 			};
-			var vd = "_userIconWrapper_iwfib_2",
-				gd = "_DefaultUserIcon_iwfib_6",
-				yd = "_UserIcon_iwfib_7",
-				bd = "_mNightmode_iwfib_23",
-				kd = "_snoovatarWrapper_iwfib_42",
-				Sd = "_snoovatarBackground_iwfib_47",
-				wd = "_snoovatarHeadshotContainer_iwfib_53",
-				Nd = "_snoovatarHeadshot_iwfib_53";
-			const Ed = ({
+			var _d = "_userIconWrapper_iwfib_2",
+				Cd = "_DefaultUserIcon_iwfib_6",
+				Od = "_UserIcon_iwfib_7",
+				Pd = "_mNightmode_iwfib_23",
+				jd = "_snoovatarWrapper_iwfib_42",
+				Ad = "_snoovatarBackground_iwfib_47",
+				Td = "_snoovatarHeadshotContainer_iwfib_53",
+				Id = "_snoovatarHeadshot_iwfib_53";
+			const Md = ({
 				backgroundClassName: e,
 				className: t,
 				headshot: n
 			}) => {
 				const r = Object(l.c)();
 				return i.a.createElement("div", {
-					className: gi(kd, t)
+					className: gi(jd, t)
 				}, i.a.createElement("div", {
-					className: gi(Sd, e)
+					className: gi(Ad, e)
 				}), i.a.createElement("div", {
-					className: wd
+					className: Td
 				}, i.a.createElement("img", {
 					alt: r.inline("User avatar", "alt text: snoovatar"),
-					className: Nd,
+					className: Id,
 					src: n
 				})))
 			};
-			const xd = ({
+			const Rd = ({
 					className: e,
 					iconUrl: t,
 					isNSFW: n,
@@ -7246,19 +7270,19 @@
 				}) => {
 					const o = Object(l.c)(),
 						s = Object(l.b)().nightModeActive();
-					if (!t) return i.a.createElement(_d, {
-						className: gi(gd, e, {
-							[bd]: s
+					if (!t) return i.a.createElement(Fd, {
+						className: gi(Cd, e, {
+							[Pd]: s
 						})
 					});
 					const c = n && a ? r || "https://www.redditstatic.com/crypto-assets/v2/avatar-over18-square-04a69169fa.png" : t;
 					return i.a.createElement("img", {
 						alt: o.inline("User avatar", "AltText: user avatar"),
-						className: gi(yd, e),
+						className: gi(Od, e),
 						src: c
 					})
 				},
-				_d = e => i.a.createElement("svg", {
+				Fd = e => i.a.createElement("svg", {
 					className: e.className,
 					viewBox: "0 0 320 320",
 					xmlns: "http://www.w3.org/2000/svg"
@@ -7300,7 +7324,7 @@
 				}), i.a.createElement("path", {
 					d: "m261.37 80.13a5.12 5.12 0 0 1 -.27-1.29c-.06-.34-.08-.75-.17-1.2s-.19-1-.3-1.5a23.88 23.88 0 0 0 -3.12-7.61 22.56 22.56 0 0 0 -6.59-6.71 20 20 0 0 0 -7.06-2.93 22.12 22.12 0 0 0 -19.67 5.49 21.36 21.36 0 0 0 -5.7 9 20.88 20.88 0 0 0 -.7 10.29 21.16 21.16 0 0 0 9.47 14.18 21.55 21.55 0 0 0 16.06 2.92 21.77 21.77 0 0 0 12.8-8.08 23.8 23.8 0 0 0 3.39-6.16 26 26 0 0 0 1.32-6.35 19.06 19.06 0 0 1 .12 6.81 21.83 21.83 0 0 1 -8.21 13.51 18.67 18.67 0 0 1 -5.13 2.82 24.34 24.34 0 0 1 -8.2 1.31 24.84 24.84 0 0 1 -7.83-1.26 25.86 25.86 0 0 1 -6.77-3.5 25 25 0 0 1 -5.2-5.16 23.4 23.4 0 0 1 -3.35-6.21 25 25 0 0 1 -1-3.32c-.13-.56-.18-1.12-.28-1.68l-.12-.84c0-.28 0-.56-.05-.84 0-.56 0-1.12-.07-1.68s.05-1.11.08-1.66a11.26 11.26 0 0 1 .17-1.64c.09-.54.15-1.09.26-1.62a25.58 25.58 0 0 1 2.15-6 24.56 24.56 0 0 1 5.71-7.24c.37-.34.79-.62 1.18-.93a11.19 11.19 0 0 1 1.21-.87 23.57 23.57 0 0 1 21.4-2.45 23 23 0 0 1 8.39 5.48 22 22 0 0 1 6.08 14.14c.11 1.26 0 2.29 0 2.78z"
 				}))),
-				Cd = ({
+				Dd = ({
 					iconUrl: e,
 					className: t,
 					isNSFW: n
@@ -7310,61 +7334,61 @@
 						return e.indexOf("profileIcon_snoo") > -1 || (null == e ? void 0 : e.indexOf("snoovatar/avatars")) > -1 || e.endsWith("snoovatar_anonymous.svg")
 					}(e);
 					return i.a.createElement("div", {
-						className: vd
-					}, r ? i.a.createElement(Ed, {
+						className: _d
+					}, r ? i.a.createElement(Md, {
 						headshot: e,
 						className: t
-					}) : i.a.createElement(xd, {
+					}) : i.a.createElement(Rd, {
 						shouldHideNSFW: !0,
 						iconUrl: e,
 						isNSFW: !!n,
 						className: t
 					}))
 				};
-			var Od = "_container_1g1dd_191",
-				Pd = "_closeButton_1g1dd_198",
-				jd = "_section_1g1dd_201",
-				Ad = "_panel_1g1dd_204",
-				Td = "_fullView_1g1dd_209",
-				Id = "_background_1g1dd_212";
-			const Md = ({
+			var Ld = "_container_1g1dd_191",
+				zd = "_closeButton_1g1dd_198",
+				Vd = "_section_1g1dd_201",
+				Bd = "_panel_1g1dd_204",
+				Wd = "_fullView_1g1dd_209",
+				Ud = "_background_1g1dd_212";
+			const $d = ({
 					className: e,
 					children: t
 				}) => i.a.createElement("div", {
-					className: gi(Id, e)
+					className: gi(Ud, e)
 				}, t),
-				Rd = ({
+				Hd = ({
 					isPanelShowing: e,
 					mainContent: t,
 					panelContent: n,
 					className: r,
 					onClose: a
 				}) => i.a.createElement("div", {
-					className: gi(Od, r, {
-						[Td]: !e
+					className: gi(Ld, r, {
+						[Wd]: !e
 					})
 				}, a && i.a.createElement(c.e, {
 					theme: "light",
-					className: Pd,
+					className: zd,
 					onClick: a,
 					contained: !0
 				}), i.a.createElement("div", {
-					className: jd
-				}, i.a.createElement(Md, {
-					className: Id
+					className: Vd
+				}, i.a.createElement($d, {
+					className: Ud
 				}, t)), n && i.a.createElement("div", {
-					className: Ad
+					className: Bd
 				}, n));
 
-			function Fd(e) {
-				return (Fd = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function(e) {
+			function qd(e) {
+				return (qd = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function(e) {
 					return typeof e
 				} : function(e) {
 					return e && "function" == typeof Symbol && e.constructor === Symbol && e !== Symbol.prototype ? "symbol" : typeof e
 				})(e)
 			}
 
-			function Dd(e, t, n) {
+			function Xd(e, t, n) {
 				return t in e ? Object.defineProperty(e, t, {
 					value: n,
 					enumerable: !0,
@@ -7373,7 +7397,7 @@
 				}) : e[t] = n, e
 			}
 
-			function Ld(e, t) {
+			function Gd(e, t) {
 				var n = Object.keys(e);
 				if (Object.getOwnPropertySymbols) {
 					var r = Object.getOwnPropertySymbols(e);
@@ -7384,24 +7408,24 @@
 				return n
 			}
 
-			function zd(e) {
+			function Yd(e) {
 				for (var t = 1; t < arguments.length; t++) {
 					var n = null != arguments[t] ? arguments[t] : {};
-					t % 2 ? Ld(Object(n), !0).forEach((function(t) {
-						Dd(e, t, n[t])
-					})) : Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(n)) : Ld(Object(n)).forEach((function(t) {
+					t % 2 ? Gd(Object(n), !0).forEach((function(t) {
+						Xd(e, t, n[t])
+					})) : Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(n)) : Gd(Object(n)).forEach((function(t) {
 						Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(n, t))
 					}))
 				}
 				return e
 			}
-			var Vd = function(e) {
-					return null !== e && "object" === Fd(e)
+			var Qd = function(e) {
+					return null !== e && "object" === qd(e)
 				},
-				Bd = function(e, t, n) {
-					return Vd(e) ? Object.keys(e).reduce((function(r, i) {
-						var a = !Vd(t) || ! function e(t, n) {
-							if (!Vd(t) || !Vd(n)) return t === n;
+				Jd = function(e, t, n) {
+					return Qd(e) ? Object.keys(e).reduce((function(r, i) {
+						var a = !Qd(t) || ! function e(t, n) {
+							if (!Qd(t) || !Qd(n)) return t === n;
 							var r = Array.isArray(t);
 							if (r !== Array.isArray(n)) return !1;
 							var i = "[object Object]" === Object.prototype.toString.call(t);
@@ -7420,20 +7444,20 @@
 								return e(d[t], f[t])
 							}))
 						}(e[i], t[i]);
-						return n.includes(i) ? (a && console.warn("Unsupported prop change: options.".concat(i, " is not a mutable property.")), r) : a ? zd(zd({}, r || {}), {}, Dd({}, i, e[i])) : r
+						return n.includes(i) ? (a && console.warn("Unsupported prop change: options.".concat(i, " is not a mutable property.")), r) : a ? Yd(Yd({}, r || {}), {}, Xd({}, i, e[i])) : r
 					}), null) : null
 				},
-				Wd = i.a.createContext(null);
-			Wd.displayName = "ElementsContext";
+				Zd = i.a.createContext(null);
+			Zd.displayName = "ElementsContext";
 			j.any, j.object;
-			var Ud = function(e) {
+			var Kd = function(e) {
 				return function(e, t) {
 					if (!e) throw new Error("Could not find Elements context; You need to wrap the part of your app that ".concat(t, " in an <Elements> provider."));
 					return e
-				}(i.a.useContext(Wd), e)
+				}(i.a.useContext(Zd), e)
 			};
 			j.func.isRequired;
-			var $d = function(e) {
+			var ef = function(e) {
 					var t = i.a.useRef(e);
 					return i.a.useEffect((function() {
 							t.current = e
@@ -7442,11 +7466,11 @@
 							t.current && t.current.apply(t, arguments)
 						}
 				},
-				Hd = function() {},
-				qd = function(e, t) {
+				tf = function() {},
+				nf = function(e, t) {
 					var n, r = "".concat((n = e).charAt(0).toUpperCase() + n.slice(1), "Element"),
 						a = t ? function(e) {
-							Ud("mounts <".concat(r, ">"));
+							Kd("mounts <".concat(r, ">"));
 							var t = e.id,
 								n = e.className;
 							return i.a.createElement("div", {
@@ -7459,26 +7483,26 @@
 								o = t.options,
 								s = void 0 === o ? {} : o,
 								l = t.onBlur,
-								c = void 0 === l ? Hd : l,
+								c = void 0 === l ? tf : l,
 								u = t.onFocus,
-								d = void 0 === u ? Hd : u,
+								d = void 0 === u ? tf : u,
 								f = t.onReady,
-								m = void 0 === f ? Hd : f,
+								m = void 0 === f ? tf : f,
 								p = t.onChange,
-								h = void 0 === p ? Hd : p,
+								h = void 0 === p ? tf : p,
 								v = t.onEscape,
-								g = void 0 === v ? Hd : v,
+								g = void 0 === v ? tf : v,
 								y = t.onClick,
-								b = void 0 === y ? Hd : y,
-								k = Ud("mounts <".concat(r, ">")).elements,
+								b = void 0 === y ? tf : y,
+								k = Kd("mounts <".concat(r, ">")).elements,
 								S = i.a.useRef(null),
 								w = i.a.useRef(null),
-								N = $d(m),
-								E = $d(c),
-								x = $d(d),
-								_ = $d(b),
-								C = $d(h),
-								O = $d(g);
+								N = ef(m),
+								E = ef(c),
+								x = ef(d),
+								_ = ef(b),
+								C = ef(h),
+								O = ef(g);
 							i.a.useLayoutEffect((function() {
 								if (null == S.current && k && null != w.current) {
 									var t = k.create(e, s);
@@ -7492,7 +7516,7 @@
 							}), [P]), j.current);
 							return i.a.useEffect((function() {
 								if (S.current) {
-									var e = Bd(s, A, ["paymentRequest"]);
+									var e = Jd(s, A, ["paymentRequest"]);
 									e && S.current.update(e)
 								}
 							}), [s, A]), i.a.useLayoutEffect((function() {
@@ -7516,9 +7540,9 @@
 						options: j.object
 					}, a.displayName = r, a.__elementType = e, a
 				},
-				Xd = "undefined" == typeof window;
-			qd("auBankAccount", Xd), qd("card", Xd), qd("cardNumber", Xd), qd("cardExpiry", Xd), qd("cardCvc", Xd), qd("fpxBank", Xd), qd("iban", Xd), qd("idealBank", Xd), qd("p24Bank", Xd), qd("epsBank", Xd), qd("payment", Xd), qd("paymentRequestButton", Xd), qd("linkAuthentication", Xd), qd("shippingAddress", Xd), qd("affirmMessage", Xd), qd("afterpayClearpayMessage", Xd);
-			var Gd = {
+				rf = "undefined" == typeof window;
+			nf("auBankAccount", rf), nf("card", rf), nf("cardNumber", rf), nf("cardExpiry", rf), nf("cardCvc", rf), nf("fpxBank", rf), nf("iban", rf), nf("idealBank", rf), nf("p24Bank", rf), nf("epsBank", rf), nf("payment", rf), nf("paymentRequestButton", rf), nf("linkAuthentication", rf), nf("shippingAddress", rf), nf("affirmMessage", rf), nf("afterpayClearpayMessage", rf);
+			var af = {
 				kind: "Document",
 				definitions: [{
 					kind: "OperationDefinition",
@@ -7787,7 +7811,7 @@
 					end: 422
 				}
 			};
-			Gd.loc.source = {
+			af.loc.source = {
 				body: "mutation ConfirmEconPayment(\n  $nonce: String!\n  $paymentId: ID!\n  $token: String!\n  $saveCard: Boolean!\n) {\n  confirmEconPayment(\n    input: {\n      nonce: $nonce\n      paymentId: $paymentId\n      paymentAuthorization: {\n        stripePayment: { stripeNewCard: { token: $token, saveCard: $saveCard } }\n      }\n    }\n  ) {\n    ok\n    payment {\n      id\n      status\n    }\n    errors {\n      code\n      message\n    }\n  }\n}\n",
 				name: "GraphQL request",
 				locationOffset: {
@@ -7795,15 +7819,15 @@
 					column: 1
 				}
 			};
-			var Yd = {};
+			var of = {};
 
-			function Qd(e, t) {
+			function sf(e, t) {
 				for (var n = 0; n < e.definitions.length; n++) {
 					var r = e.definitions[n];
 					if (r.name && r.name.value == t) return r
 				}
 			}
-			Gd.definitions.forEach((function(e) {
+			af.definitions.forEach((function(e) {
 					if (e.name) {
 						var t = new Set;
 						! function e(t, n) {
@@ -7819,16 +7843,16 @@
 							})), t.definitions && t.definitions.forEach((function(t) {
 								e(t, n)
 							}))
-						}(e, t), Yd[e.name.value] = t
+						}(e, t), of [e.name.value] = t
 					}
 				})),
 				function(e, t) {
 					var n = {
 						kind: e.kind,
-						definitions: [Qd(e, t)]
+						definitions: [sf(e, t)]
 					};
 					e.hasOwnProperty("loc") && (n.loc = e.loc);
-					var r = Yd[t] || new Set,
+					var r = of [t] || new Set,
 						i = new Set,
 						a = new Set;
 					for (r.forEach((function(e) {
@@ -7836,17 +7860,17 @@
 						})); a.size > 0;) {
 						var o = a;
 						a = new Set, o.forEach((function(e) {
-							i.has(e) || (i.add(e), (Yd[e] || new Set).forEach((function(e) {
+							i.has(e) || (i.add(e), ( of [e] || new Set).forEach((function(e) {
 								a.add(e)
 							})))
 						}))
 					}
 					i.forEach((function(t) {
-						var r = Qd(e, t);
+						var r = sf(e, t);
 						r && n.definitions.push(r)
 					}))
-				}(Gd, "ConfirmEconPayment");
-			var Jd = {
+				}(af, "ConfirmEconPayment");
+			var lf = {
 				kind: "Document",
 				definitions: [{
 					kind: "OperationDefinition",
@@ -8152,7 +8176,7 @@
 					end: 560
 				}
 			};
-			Jd.loc.source = {
+			lf.loc.source = {
 				body: "mutation CreateEconPayment($nonce: String!, $orderId: ID!, $token: String!) {\n  createEconPayment(\n    input: {\n      nonce: $nonce\n      orderId: $orderId\n      provider: STRIPE\n      paymentAuthorization: {\n        stripePayment: { stripeNewCard: { token: $token, saveCard: false } }\n      }\n    }\n  ) {\n    ok\n    errors {\n      code\n      message\n    }\n    payment {\n      id\n      status\n    }\n    providerExecution {\n      __typename\n      ... on StripePaymentExecution {\n        paymentIntentStatus\n        paymentIntentClientSecret\n      }\n    }\n  }\n}\n",
 				name: "GraphQL request",
 				locationOffset: {
@@ -8160,15 +8184,15 @@
 					column: 1
 				}
 			};
-			var Zd = {};
+			var cf = {};
 
-			function Kd(e, t) {
+			function uf(e, t) {
 				for (var n = 0; n < e.definitions.length; n++) {
 					var r = e.definitions[n];
 					if (r.name && r.name.value == t) return r
 				}
 			}
-			Jd.definitions.forEach((function(e) {
+			lf.definitions.forEach((function(e) {
 					if (e.name) {
 						var t = new Set;
 						! function e(t, n) {
@@ -8184,16 +8208,16 @@
 							})), t.definitions && t.definitions.forEach((function(t) {
 								e(t, n)
 							}))
-						}(e, t), Zd[e.name.value] = t
+						}(e, t), cf[e.name.value] = t
 					}
 				})),
 				function(e, t) {
 					var n = {
 						kind: e.kind,
-						definitions: [Kd(e, t)]
+						definitions: [uf(e, t)]
 					};
 					e.hasOwnProperty("loc") && (n.loc = e.loc);
-					var r = Zd[t] || new Set,
+					var r = cf[t] || new Set,
 						i = new Set,
 						a = new Set;
 					for (r.forEach((function(e) {
@@ -8201,17 +8225,17 @@
 						})); a.size > 0;) {
 						var o = a;
 						a = new Set, o.forEach((function(e) {
-							i.has(e) || (i.add(e), (Zd[e] || new Set).forEach((function(e) {
+							i.has(e) || (i.add(e), (cf[e] || new Set).forEach((function(e) {
 								a.add(e)
 							})))
 						}))
 					}
 					i.forEach((function(t) {
-						var r = Kd(e, t);
+						var r = uf(e, t);
 						r && n.definitions.push(r)
 					}))
-				}(Jd, "CreateEconPayment");
-			var ef = {
+				}(lf, "CreateEconPayment");
+			var df = {
 				kind: "Document",
 				definitions: [{
 					kind: "OperationDefinition",
@@ -8333,7 +8357,7 @@
 					end: 195
 				}
 			};
-			ef.loc.source = {
+			df.loc.source = {
 				body: "mutation CreateStorefrontOrder($input: CreateStorefrontOrderInput!) {\n  createStorefrontOrder(input: $input) {\n    ok\n    errors {\n      code\n      message\n    }\n    order {\n      id\n    }\n  }\n}\n",
 				name: "GraphQL request",
 				locationOffset: {
@@ -8341,15 +8365,15 @@
 					column: 1
 				}
 			};
-			var tf = {};
+			var ff = {};
 
-			function nf(e, t) {
+			function mf(e, t) {
 				for (var n = 0; n < e.definitions.length; n++) {
 					var r = e.definitions[n];
 					if (r.name && r.name.value == t) return r
 				}
 			}
-			ef.definitions.forEach((function(e) {
+			df.definitions.forEach((function(e) {
 					if (e.name) {
 						var t = new Set;
 						! function e(t, n) {
@@ -8365,16 +8389,16 @@
 							})), t.definitions && t.definitions.forEach((function(t) {
 								e(t, n)
 							}))
-						}(e, t), tf[e.name.value] = t
+						}(e, t), ff[e.name.value] = t
 					}
 				})),
 				function(e, t) {
 					var n = {
 						kind: e.kind,
-						definitions: [nf(e, t)]
+						definitions: [mf(e, t)]
 					};
 					e.hasOwnProperty("loc") && (n.loc = e.loc);
-					var r = tf[t] || new Set,
+					var r = ff[t] || new Set,
 						i = new Set,
 						a = new Set;
 					for (r.forEach((function(e) {
@@ -8382,24 +8406,24 @@
 						})); a.size > 0;) {
 						var o = a;
 						a = new Set, o.forEach((function(e) {
-							i.has(e) || (i.add(e), (tf[e] || new Set).forEach((function(e) {
+							i.has(e) || (i.add(e), (ff[e] || new Set).forEach((function(e) {
 								a.add(e)
 							})))
 						}))
 					}
 					i.forEach((function(t) {
-						var r = nf(e, t);
+						var r = mf(e, t);
 						r && n.definitions.push(r)
 					}))
-				}(ef, "CreateStorefrontOrder");
-			const rf = e => {
+				}(df, "CreateStorefrontOrder");
+			const pf = e => {
 				var t, n;
 				return (null == (t = e.redditorInfo.profile) ? void 0 : t.title) ? null == (n = e.redditorInfo.profile) ? void 0 : n.title : e.redditorInfo.prefixedName.replace("u/", "")
 			};
-			var af = "_pill_mc8cm_1",
-				of = "_disabled_mc8cm_10",
-				sf = "_scaleOnHover_mc8cm_17";
-			const lf = e => {
+			var hf = "_pill_mc8cm_1",
+				vf = "_disabled_mc8cm_10",
+				gf = "_scaleOnHover_mc8cm_17";
+			const yf = e => {
 					var t = e,
 						{
 							className: n,
@@ -8410,25 +8434,25 @@
 						} = t,
 						l = b(t, ["className", "disabled", "scaleOnHover", "children", "testid"]);
 					return i.a.createElement("a", y(g({
-						className: gi(n, af, {
-							[sf]: a,
-							[ of ]: r
+						className: gi(n, hf, {
+							[gf]: a,
+							[vf]: r
 						})
 					}, l), {
 						"aria-disabled": r,
 						"data-testid": s
 					}), o)
 				},
-				cf = ({
+				bf = ({
 					disabled: e,
 					blockchainExplorerUrl: t,
 					ipfsUrl: n,
 					metadataUrl: r,
 					onPillClick: a
 				}) => i.a.createElement("div", {
-					className: fd
-				}, i.a.createElement(lf, {
-					className: md,
+					className: wd
+				}, i.a.createElement(yf, {
+					className: Nd,
 					disabled: e,
 					target: "_blank",
 					href: t,
@@ -8436,12 +8460,12 @@
 					onClick: () => a("blockchain")
 				}, i.a.createElement("img", {
 					src: c.g.BlockchainFilled,
-					className: pd,
+					className: Ed,
 					alt: ""
 				}), i.a.createElement(sc, {
 					desc: "Button: view NFT details"
-				}, "View on Explorer")), i.a.createElement(lf, {
-					className: md,
+				}, "View on Explorer")), i.a.createElement(yf, {
+					className: Nd,
 					disabled: e,
 					target: "_blank",
 					href: n,
@@ -8449,12 +8473,12 @@
 					onClick: () => a("view_on_ipfs")
 				}, i.a.createElement("img", {
 					src: c.g.DoubleEyeFilled,
-					className: pd,
+					className: Ed,
 					alt: ""
 				}), i.a.createElement(sc, {
 					desc: "Button: view NFT details"
-				}, "View on IPFS")), i.a.createElement(lf, {
-					className: md,
+				}, "View on IPFS")), i.a.createElement(yf, {
+					className: Nd,
 					disabled: e,
 					target: "_blank",
 					href: r,
@@ -8462,17 +8486,17 @@
 					onClick: () => a("ipfs_metadata")
 				}, i.a.createElement("img", {
 					src: c.g.InfoFilled,
-					className: pd,
+					className: Ed,
 					alt: ""
 				}), i.a.createElement(sc, {
 					desc: "Button: view NFT details"
 				}, "IPFS Metadata")));
-			var uf = "_container_oikih_1",
-				df = "_isNightMode_oikih_9",
-				ff = "_cell_oikih_13",
-				mf = "_horizontalDivider_oikih_27",
-				pf = "_line_oikih_33";
-			const hf = ({
+			var kf = "_container_oikih_1",
+				Sf = "_isNightMode_oikih_9",
+				wf = "_cell_oikih_13",
+				Nf = "_horizontalDivider_oikih_27",
+				Ef = "_line_oikih_33";
+			const xf = ({
 					children: e,
 					className: t,
 					cellClassName: n
@@ -8480,91 +8504,91 @@
 					const r = Object(l.b)().nightModeActive(),
 						a = Array.isArray(e) ? e : [e];
 					return i.a.createElement("div", {
-						className: gi(uf, t, {
-							[df]: r
+						className: gi(kf, t, {
+							[Sf]: r
 						})
-					}, a.map((e, t) => e.type === vf ? e : i.a.createElement("div", {
-						className: gi(ff, n),
+					}, a.map((e, t) => e.type === _f ? e : i.a.createElement("div", {
+						className: gi(wf, n),
 						key: t
 					}, e)))
 				},
-				vf = ({
+				_f = ({
 					className: e
 				}) => i.a.createElement("div", {
-					className: gi(e, mf)
+					className: gi(e, Nf)
 				}, i.a.createElement("div", {
-					className: pf
+					className: Ef
 				})),
-				gf = ({
+				Cf = ({
 					className: e,
 					isAwarded: t
 				}) => {
 					const n = Object(l.c)(),
 						r = Object(l.b)().nightModeActive();
-					return i.a.createElement(hf, {
-						cellClassName: id,
-						className: gi(rd, {
-							[zu]: r
+					return i.a.createElement(xf, {
+						cellClassName: pd,
+						className: gi(md, {
+							[Yu]: r
 						}, e)
 					}, i.a.createElement(i.a.Fragment, null, i.a.createElement("img", {
 						src: c.g.StandOut,
-						className: ad,
+						className: hd,
 						alt: n.inline("stand out", "alt text: stand out")
 					}), i.a.createElement("p", {
-						className: od
+						className: vd
 					}, i.a.createElement(sc, {
 						desc: "Benefit description: Stand out in the comments section"
 					}, "Stand out in the comments"))), i.a.createElement(i.a.Fragment, null, i.a.createElement("img", {
 						src: c.g.CardExample,
-						className: ad,
+						className: hd,
 						alt: n.inline("card preview", "alt text: card preview")
 					}), i.a.createElement("p", {
-						className: od
+						className: vd
 					}, i.a.createElement(sc, {
 						desc: "Benefit description: adds card appearance on user profile"
 					}, "Add a card to your profile"))), i.a.createElement(i.a.Fragment, null, i.a.createElement("img", {
 						src: c.g.AvatarGear,
-						className: ad,
+						className: hd,
 						alt: n.inline("avatar gear", "alt text: avatar gear")
 					}), i.a.createElement("p", {
-						className: od
+						className: vd
 					}, i.a.createElement(sc, {
 						desc: "Benefit description: mix these items with other avatar gear"
-					}, "Mix with other avatar gear"))), i.a.createElement(vf, null), t ? i.a.createElement(i.a.Fragment, null, i.a.createElement("img", {
+					}, "Mix with other avatar gear"))), i.a.createElement(_f, null), t ? i.a.createElement(i.a.Fragment, null, i.a.createElement("img", {
 						src: c.g.Achievement,
-						className: ad,
+						className: hd,
 						alt: n.inline("achievement icon", "alt text: achievement icon")
 					}), i.a.createElement("p", {
-						className: od
+						className: vd
 					}, i.a.createElement(sc, {
 						desc: "Benefit description: the item is a reward for user's achievements"
 					}, "Awarded to top redditors"))) : i.a.createElement(i.a.Fragment, null, i.a.createElement("img", {
 						src: c.g.Collectible,
-						className: ad,
+						className: hd,
 						alt: n.inline("collectible", "alt text: collectible")
 					}), i.a.createElement("p", {
-						className: od
+						className: vd
 					}, i.a.createElement(sc, {
 						desc: "Benefit description: the item is a limited edition collectible"
 					}, "Collectible, part of a series"))), i.a.createElement(i.a.Fragment, null, i.a.createElement("img", {
 						src: c.g.Nft,
-						className: ad,
+						className: hd,
 						alt: n.inline("nft icon", "alt text: nft icon")
 					}), i.a.createElement("p", {
-						className: od
+						className: vd
 					}, i.a.createElement(sc, {
 						desc: "Benefit description: you own this specific NFT avatar"
 					}, "You own your Collectible Avatar"))), i.a.createElement(i.a.Fragment, null, i.a.createElement("img", {
 						src: c.g.Transferable,
-						className: ad,
+						className: hd,
 						alt: n.inline("blockchain transfer icon", "alt text: blockchain transfer icon")
 					}), i.a.createElement("p", {
-						className: od
+						className: vd
 					}, i.a.createElement(sc, {
 						desc: "Benefit description: item can be transferred to another user via blockchain"
 					}, "Transferable via blockchain"))))
 				},
-				yf = ({
+				Of = ({
 					nft: e,
 					className: t,
 					onClose: n,
@@ -8577,93 +8601,93 @@
 					const m = Object(l.b)().nightModeActive(),
 						p = Object(l.d)(),
 						h = t => y(g({}, t), {
-							marketplace: Iu(e)
+							marketplace: Uu(e)
 						});
-					return i.a.createElement(Rd, {
-						className: gi(Fu, {
-							[zu]: m
+					return i.a.createElement(Hd, {
+						className: gi(qu, {
+							[Yu]: m
 						}),
 						onClose: n,
 						isPanelShowing: r,
-						mainContent: i.a.createElement(fu, {
+						mainContent: i.a.createElement(wu, {
 							nft: e,
 							isControlVisible: r,
-							className: gi(Du, t)
+							className: gi(Xu, t)
 						}),
 						panelContent: i.a.createElement("div", {
-							className: Lu
+							className: Gu
 						}, i.a.createElement("div", {
-							className: Vu
+							className: Qu
 						}, i.a.createElement("h3", {
-							className: Bu
+							className: Ju
 						}, e.title), !e.artist && i.a.createElement("div", {
-							className: Wu
+							className: Zu
 						}, i.a.createElement("img", {
 							src: c.g.Reddit,
-							className: $u,
+							className: ed,
 							alt: "reddit logo"
 						}), i.a.createElement(sc, {
 							desc: "subtitle: art is made by "
 						}, "by Reddit")), !!e.artist && i.a.createElement("div", {
-							className: gi(Wu, {
-								[Uu]: !!s
+							className: gi(Zu, {
+								[Ku]: !!s
 							}),
 							onClick: () => {
 								e.artist && s && (p(((e, t) => ({
-									source: vu.Avatar,
-									action: yu.Click,
-									noun: ku.MarketplaceArtist,
+									source: _u.Avatar,
+									action: Ou.Click,
+									noun: ju.MarketplaceArtist,
 									actionInfo: {
-										pageType: Eu.ProductDetailPage
+										pageType: Mu.ProductDetailPage
 									},
 									profile: {
 										id: e,
 										name: t
 									}
-								}))(e.artist.redditorInfo.id, rf(e.artist))), null == s || s(e.artist.redditorInfo.id))
+								}))(e.artist.redditorInfo.id, pf(e.artist))), null == s || s(e.artist.redditorInfo.id))
 							}
-						}, i.a.createElement(Cd, {
+						}, i.a.createElement(Dd, {
 							userId: e.artist.redditorInfo.id,
 							iconUrl: null == (u = e.artist.redditorInfo.icon) ? void 0 : u.url,
 							isNSFW: null == (d = e.artist.redditorInfo.profile) ? void 0 : d.isNsfw,
-							className: Xu
+							className: rd
 						}), i.a.createElement("span", {
-							className: Gu
+							className: id
 						}, i.a.createElement(sc, {
 							desc: "subtitle: art is made by "
 						}, "by", " ", i.a.createElement(lc, {
 							name: "author of the art"
-						}, rf(e.artist)))))), i.a.createElement("div", {
-							className: Hu
-						}, i.a.createElement("div", {
-							className: ed
-						}, e.description), i.a.createElement("div", {
+						}, pf(e.artist)))))), i.a.createElement("div", {
 							className: td
+						}, i.a.createElement("div", {
+							className: ud
+						}, e.description), i.a.createElement("div", {
+							className: dd
 						}, i.a.createElement("h3", {
-							className: nd
+							className: fd
 						}, i.a.createElement(sc, {
 							desc: "Header for the table of benefits and features of the NFT item"
-						}, "BENEFITS")), i.a.createElement(gf, {
+						}, "BENEFITS")), i.a.createElement(Cf, {
 							isAwarded: !e.artist
 						})), i.a.createElement("div", {
-							className: sd
+							className: gd
 						}, i.a.createElement("h3", {
-							className: ud
+							className: kd
 						}, i.a.createElement(sc, {
 							desc: "Header for the section with external links to NFT item details"
 						}, "DETAILS")), i.a.createElement("div", {
-							className: dd
-						}, i.a.createElement(bf, {
+							className: Sd
+						}, i.a.createElement(Pf, {
 							nft: e
-						})), i.a.createElement(cf, {
+						})), i.a.createElement(bf, {
 							onPillClick: e => {
 								p((o || h)((e => ({
-									source: vu.Marketplace,
-									action: yu.Click,
-									noun: ku.NftDetails,
+									source: _u.Marketplace,
+									action: Ou.Click,
+									noun: ju.NftDetails,
 									actionInfo: {
 										reason: e,
-										pageType: Eu.ProductDetailPage
+										pageType: Mu.ProductDetailPage
 									}
 								}))(e)))
 							},
@@ -8672,22 +8696,22 @@
 							ipfsUrl: e.ipfsUrl,
 							metadataUrl: e.metadataUrl
 						})), !!e.artist && i.a.createElement("div", {
-							className: sd
+							className: gd
 						}, !!(null == (f = e.artist.redditorInfo.profile) ? void 0 : f.publicDescriptionText) && i.a.createElement(i.a.Fragment, null, i.a.createElement("h3", {
-							className: nd
+							className: fd
 						}, i.a.createElement(sc, {
 							desc: "Header: Artist Details"
 						}, "ABOUT THE CREATOR")), i.a.createElement("div", null, e.artist.redditorInfo.profile.publicDescriptionText)), i.a.createElement("p", {
-							className: ld
+							className: yd
 						}, i.a.createElement(sc, {
 							desc: "NFT resale info"
 						}, "Secondary sales of this item will have a 5% royalty fee.", " ", i.a.createElement(c.h, {
-							className: cd,
+							className: bd,
 							href: "https://reddithelp.com/hc/en-us/articles/6213869034132"
 						}, "Learn more about fees."))))), a)
 					})
 				},
-				bf = ({
+				Pf = ({
 					nft: e
 				}) => e.isMinted ? i.a.createElement(sc, {
 					desc: "This NFT has been minted to the blockchain"
@@ -8696,7 +8720,7 @@
 				}, "In queue to mint") : i.a.createElement(sc, {
 					desc: "This NFT will be minted to the blockchain after the user purchases it"
 				}, "Mints after purchase"),
-				kf = (Sf = ({
+				jf = (Af = ({
 					itemId: e,
 					onSetAsAvatar: t,
 					onViewAvatar: n,
@@ -8709,27 +8733,27 @@
 						nftItem: l,
 						error: u,
 						fetching: d
-					} = Tu({
+					} = Wu({
 						itemId: e
 					});
 					return d || !l || Boolean(u) ? i.a.createElement(c.i, {
 						hasError: Boolean(u)
-					}) : i.a.createElement(yf, {
+					}) : i.a.createElement(Of, {
 						nft: l,
 						isPanelShowing: !0,
 						onClose: a,
 						className: o,
 						onArtistClick: s,
-						ctaButtons: i.a.createElement(hd, {
+						ctaButtons: i.a.createElement(xd, {
 							currentUserId: r,
 							nft: l,
 							onViewAvatar: n,
 							onSetAsAvatar: t
 						})
 					})
-				}, e => i.a.createElement(a.a, null, i.a.createElement(Sf, g({}, e))));
-			var Sf
+				}, e => i.a.createElement(a.a, null, i.a.createElement(Af, g({}, e))));
+			var Af
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/4.2f6df999687ec6ebeb00.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/4.262bb6faa6b838bf3945.js.map

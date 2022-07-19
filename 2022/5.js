@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/5.8206a0bb15b38832dab9.js
-// Retrieved at 7/14/2022, 2:00:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/5.b7cbc1f0a9423556b507.js
+// Retrieved at 7/19/2022, 9:40:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	[5], {
 		"./node_modules/@apollo/client/cache/inmemory/types.js": function(e, t) {},
@@ -20646,7 +20646,7 @@
 		"./node_modules/@reddit/crypto/react/import-address-card/index.es.js": function(e, t, n) {
 			"use strict";
 			n.d(t, "a", (function() {
-				return xf
+				return Wf
 			}));
 			var r = n("./node_modules/react/index.js"),
 				i = n.n(r),
@@ -28770,19 +28770,43 @@
 				return `${t.getMonth()+1}/${t.getDate()}/${t.getFullYear()}`
 			}
 			const dd = 10;
-			var fd = "_container_f4yhv_42",
-				pd = "_range_f4yhv_48",
-				md = "_rangeStart_f4yhv_54",
-				vd = "_rangeEnd_f4yhv_55",
-				hd = "_title_f4yhv_78";
-			const yd = ({
+			const fd = e => {
+					const t = e.split(".");
+					return [t[0].replace(/\B(?=(\d{3})+(?!\d))/g, ",")].concat(t.slice(1)).join(".")
+				},
+				pd = 1e3,
+				md = 100 * pd,
+				vd = 10 * md,
+				hd = 100 * vd,
+				yd = 10 * hd,
+				gd = 100 * yd,
+				Cd = 51;
+			const _d = (e, t, n = !1) => {
+					if (n) {
+						return (e / t).toFixed(e % t > 0 ? 1 : 0)
+					}
+					return (e / t).toFixed(1)
+				},
+				bd = (e, t, n = 1) => {
+					const r = Math.pow(10, n);
+					return (Math.floor(e / (t / r)) / r).toFixed(n)
+				};
+			var kd = "_container_f4yhv_42",
+				Ed = "_range_f4yhv_48",
+				Sd = "_rangeStart_f4yhv_54",
+				Od = "_rangeEnd_f4yhv_55",
+				Nd = "_title_f4yhv_78";
+			const wd = ({
 				title: e,
 				rarity: t,
 				collectionSize: n,
 				className: r
 			}) => {
 				const a = function(e, t) {
-					if (e) return String(e);
+					if (e) return n = e, r = {
+						removeZeroDecimal: !0
+					}, (null == r ? void 0 : r.displayFull) ? fd(n.toString()) : n >= gd - Cd ? `${Math.floor(n/yd)}b` : n >= yd - Cd && n < gd - Cd ? `${_d(n,yd,null==r?void 0:r.removeZeroDecimal)}b` : n >= hd - Cd && n < yd - Cd ? `${Math.floor(n/vd)}m` : n >= vd - Cd && n < hd - Cd ? `${_d(n,vd,null==r?void 0:r.removeZeroDecimal)}m` : n >= md - Cd && n < vd - Cd ? `${Math.floor(n/pd)}k` : n >= pd && n < md - Cd ? (null == r ? void 0 : r.roundDown) ? `${bd(n,pd)}k` : `${_d(n,pd,null==r?void 0:r.removeZeroDecimal)}k` : String(n);
+					var n, r;
 					if (t) switch (t) {
 						case "legendary":
 							return "1";
@@ -28796,18 +28820,18 @@
 					return null
 				}(n, t);
 				return i.a.createElement("div", {
-					className: q(fd, r)
+					className: q(kd, r)
 				}, a && i.a.createElement("div", {
-					className: pd
+					className: Ed
 				}, i.a.createElement("div", {
-					className: md
+					className: Sd
 				}, "1"), i.a.createElement("div", {
-					className: vd
+					className: Od
 				}, a)), i.a.createElement("h2", {
-					className: hd
+					className: Nd
 				}, e))
 			};
-			const gd = ({
+			const Ad = ({
 					className: e,
 					nft: t,
 					onClick: n,
@@ -28839,13 +28863,13 @@
 						src: s,
 						className: td,
 						alt: "nft-asset"
-					}), i.a.createElement(yd, {
+					}), i.a.createElement(wd, {
 						title: u,
 						className: q(ed, a),
 						collectionSize: d
 					}))
 				},
-				Cd = ({
+				Id = ({
 					className: e,
 					nft: t,
 					onFlip: n,
@@ -28871,7 +28895,7 @@
 						className: q(Ku, e),
 						flipped: c,
 						onClick: u,
-						front: i.a.createElement(gd, {
+						front: i.a.createElement(Ad, {
 							className: Xu,
 							onClick: u,
 							nft: t
@@ -28884,12 +28908,12 @@
 						})
 					})
 				};
-			var _d = "_carousel_u50lk_1",
-				bd = "_isFullWidth_u50lk_6",
-				kd = "_swiper_u50lk_14",
-				Ed = "_pane_u50lk_23",
-				Sd = "_stepper_u50lk_40";
-			const Od = function(e) {
+			var Td = "_carousel_u50lk_1",
+				Ld = "_isFullWidth_u50lk_6",
+				jd = "_swiper_u50lk_14",
+				Rd = "_pane_u50lk_23",
+				xd = "_stepper_u50lk_40";
+			const Dd = function(e) {
 				var t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : {};
 				return ti(e, He({
 					defaultTheme: ka
@@ -28906,14 +28930,14 @@
 					backgroundColor: "#F6F8F9"
 				}
 			});
-			const Nd = ({
+			const Pd = ({
 				nft: e,
 				isFullWidth: t,
 				cardClassName: n,
 				showCloseOnBack: a,
 				isControlVisible: o
 			}) => {
-				const [s, c] = Object(r.useState)(0), [l, u] = Object(r.useState)(!1), [d, f] = Object(r.useState)(!1), p = Od(), m = Math.max(0, s - 1), v = s, h = 0 === m;
+				const [s, c] = Object(r.useState)(0), [l, u] = Object(r.useState)(!1), [d, f] = Object(r.useState)(!1), p = Dd(), m = Math.max(0, s - 1), v = s, h = 0 === m;
 				Object(r.useEffect)(() => {
 					u(1 === s || 2 === s)
 				}, [s]);
@@ -28933,15 +28957,15 @@
 						f(!1)
 					}, []);
 				return i.a.createElement("div", {
-					className: q(_d, {
-						[bd]: t
+					className: q(Td, {
+						[Ld]: t
 					})
 				}, i.a.createElement(qo, {
 					axis: "x",
 					index: m,
-					className: q(kd, !1),
+					className: q(jd, !1),
 					onTransitionEnd: g,
-					slideClassName: Ed,
+					slideClassName: Rd,
 					springConfig: {
 						duration: "2s",
 						easeFunction: "cubic-bezier(0.17,0.84,0.44,1)",
@@ -28949,7 +28973,7 @@
 					},
 					onChangeIndex: c,
 					enableMouseEvents: !0
-				}, i.a.createElement(i.a.Fragment, null, e.isMinted ? i.a.createElement(Cd, {
+				}, i.a.createElement(i.a.Fragment, null, e.isMinted ? i.a.createElement(Id, {
 					animateFlip: h,
 					animateBackground: h,
 					onFlip: y,
@@ -28957,12 +28981,12 @@
 					nft: e,
 					className: n,
 					showCloseOnBack: a
-				}) : i.a.createElement(gd, {
+				}) : i.a.createElement(Ad, {
 					className: n,
 					nft: e
 				}))), o && e.isMinted && i.a.createElement(Ta, {
 					steps: 2,
-					className: Sd,
+					className: xd,
 					position: "static",
 					variant: "dots",
 					classes: {
@@ -28974,23 +28998,23 @@
 					backButton: null
 				}))
 			};
-			var wd = "_avatarCard_1twmt_107";
-			const Ad = ({
+			var Md = "_avatarCard_1twmt_107";
+			const Fd = ({
 				nft: e,
 				className: t,
 				isControlVisible: n
 			}) => i.a.createElement("div", {
 				className: t
-			}, i.a.createElement(Nd, {
+			}, i.a.createElement(Pd, {
 				nft: e,
-				cardClassName: wd,
+				cardClassName: Md,
 				showCloseOnBack: !1,
 				isControlVisible: n
 			}));
-			var Id = "_pill_mc8cm_1",
-				Td = "_disabled_mc8cm_10",
-				Ld = "_scaleOnHover_mc8cm_17";
-			const jd = e => {
+			var Vd = "_pill_mc8cm_1",
+				Ud = "_disabled_mc8cm_10",
+				Hd = "_scaleOnHover_mc8cm_17";
+			const Bd = e => {
 				var t = e,
 					{
 						className: n,
@@ -29001,54 +29025,54 @@
 					} = t,
 					c = _(t, ["className", "disabled", "scaleOnHover", "children", "testid"]);
 				return i.a.createElement("a", C(g({
-					className: q(n, Id, {
-						[Ld]: a,
-						[Td]: r
+					className: q(n, Vd, {
+						[Hd]: a,
+						[Ud]: r
 					})
 				}, c), {
 					"aria-disabled": r,
 					"data-testid": s
 				}), o)
 			};
-			var Rd = "_container_ztn11_42",
-				xd = "_carousel_ztn11_45",
-				Dd = "_productDetails_ztn11_53",
-				Pd = "_isNightMode_ztn11_65",
-				Md = "_header_ztn11_69",
-				Fd = "_cardName_ztn11_73",
-				Vd = "_cardAuthor_ztn11_79",
-				Ud = "_cardAuthorClickable_ztn11_93",
-				Hd = "_redditLogo_ztn11_99",
-				Bd = "_scrollContainer_ztn11_104",
-				qd = "_buttonsContainer_ztn11_113",
-				Wd = "_artistImg_ztn11_125",
-				Gd = "_artistName_ztn11_132",
-				zd = "_ctaButton_ztn11_137",
-				$d = "_itemDescription_ztn11_185",
-				Yd = "_itemBenefits_ztn11_188",
-				Zd = "_heading_ztn11_191",
-				Kd = "_utilityTable_ztn11_203",
-				Xd = "_featureCell_ztn11_213",
-				Qd = "_featureImage_ztn11_220",
-				Jd = "_featureCopy_ztn11_224",
-				ef = "_blockchainDetails_ztn11_236",
-				tf = "_resaleText_ztn11_239",
-				nf = "_platformFeesLink_ztn11_243",
-				rf = "_nftDetailsHeading_ztn11_247",
-				af = "_mintStatus_ztn11_260",
-				of = "_nftDetailPills_ztn11_272",
-				sf = "_pill_ztn11_272",
-				cf = "_pillImage_ztn11_291";
-			const lf = ({
+			var qd = "_container_ztn11_42",
+				Wd = "_carousel_ztn11_45",
+				Gd = "_productDetails_ztn11_53",
+				zd = "_isNightMode_ztn11_65",
+				$d = "_header_ztn11_69",
+				Yd = "_cardName_ztn11_73",
+				Zd = "_cardAuthor_ztn11_79",
+				Kd = "_cardAuthorClickable_ztn11_93",
+				Xd = "_redditLogo_ztn11_99",
+				Qd = "_scrollContainer_ztn11_104",
+				Jd = "_buttonsContainer_ztn11_113",
+				ef = "_artistImg_ztn11_125",
+				tf = "_artistName_ztn11_132",
+				nf = "_ctaButton_ztn11_137",
+				rf = "_itemDescription_ztn11_185",
+				af = "_itemBenefits_ztn11_188",
+				of = "_heading_ztn11_191",
+				sf = "_utilityTable_ztn11_203",
+				cf = "_featureCell_ztn11_213",
+				lf = "_featureImage_ztn11_220",
+				uf = "_featureCopy_ztn11_224",
+				df = "_blockchainDetails_ztn11_236",
+				ff = "_resaleText_ztn11_239",
+				pf = "_platformFeesLink_ztn11_243",
+				mf = "_nftDetailsHeading_ztn11_247",
+				vf = "_mintStatus_ztn11_260",
+				hf = "_nftDetailPills_ztn11_272",
+				yf = "_pill_ztn11_272",
+				gf = "_pillImage_ztn11_291";
+			const Cf = ({
 				disabled: e,
 				blockchainExplorerUrl: t,
 				ipfsUrl: n,
 				metadataUrl: r,
 				onPillClick: a
 			}) => i.a.createElement("div", {
-				className: of
-			}, i.a.createElement(jd, {
-				className: sf,
+				className: hf
+			}, i.a.createElement(Bd, {
+				className: yf,
 				disabled: e,
 				target: "_blank",
 				href: t,
@@ -29056,12 +29080,12 @@
 				onClick: () => a("blockchain")
 			}, i.a.createElement("img", {
 				src: o.g.BlockchainFilled,
-				className: cf,
+				className: gf,
 				alt: ""
 			}), i.a.createElement(ie, {
 				desc: "Button: view NFT details"
-			}, "View on Explorer")), i.a.createElement(jd, {
-				className: sf,
+			}, "View on Explorer")), i.a.createElement(Bd, {
+				className: yf,
 				disabled: e,
 				target: "_blank",
 				href: n,
@@ -29069,12 +29093,12 @@
 				onClick: () => a("view_on_ipfs")
 			}, i.a.createElement("img", {
 				src: o.g.DoubleEyeFilled,
-				className: cf,
+				className: gf,
 				alt: ""
 			}), i.a.createElement(ie, {
 				desc: "Button: view NFT details"
-			}, "View on IPFS")), i.a.createElement(jd, {
-				className: sf,
+			}, "View on IPFS")), i.a.createElement(Bd, {
+				className: yf,
 				disabled: e,
 				target: "_blank",
 				href: r,
@@ -29082,17 +29106,17 @@
 				onClick: () => a("ipfs_metadata")
 			}, i.a.createElement("img", {
 				src: o.g.InfoFilled,
-				className: cf,
+				className: gf,
 				alt: ""
 			}), i.a.createElement(ie, {
 				desc: "Button: view NFT details"
 			}, "IPFS Metadata")));
-			var uf = "_container_oikih_1",
-				df = "_isNightMode_oikih_9",
-				ff = "_cell_oikih_13",
-				pf = "_horizontalDivider_oikih_27",
-				mf = "_line_oikih_33";
-			const vf = ({
+			var _f = "_container_oikih_1",
+				bf = "_isNightMode_oikih_9",
+				kf = "_cell_oikih_13",
+				Ef = "_horizontalDivider_oikih_27",
+				Sf = "_line_oikih_33";
+			const Of = ({
 					children: e,
 					className: t,
 					cellClassName: n
@@ -29100,91 +29124,91 @@
 					const r = Object(s.b)().nightModeActive(),
 						a = Array.isArray(e) ? e : [e];
 					return i.a.createElement("div", {
-						className: q(uf, t, {
-							[df]: r
+						className: q(_f, t, {
+							[bf]: r
 						})
-					}, a.map((e, t) => e.type === hf ? e : i.a.createElement("div", {
-						className: q(ff, n),
+					}, a.map((e, t) => e.type === Nf ? e : i.a.createElement("div", {
+						className: q(kf, n),
 						key: t
 					}, e)))
 				},
-				hf = ({
+				Nf = ({
 					className: e
 				}) => i.a.createElement("div", {
-					className: q(e, pf)
+					className: q(e, Ef)
 				}, i.a.createElement("div", {
-					className: mf
+					className: Sf
 				})),
-				yf = ({
+				wf = ({
 					className: e,
 					isAwarded: t
 				}) => {
 					const n = Object(s.c)(),
 						r = Object(s.b)().nightModeActive();
-					return i.a.createElement(vf, {
-						cellClassName: Xd,
-						className: q(Kd, {
-							[Pd]: r
+					return i.a.createElement(Of, {
+						cellClassName: cf,
+						className: q(sf, {
+							[zd]: r
 						}, e)
 					}, i.a.createElement(i.a.Fragment, null, i.a.createElement("img", {
 						src: o.g.StandOut,
-						className: Qd,
+						className: lf,
 						alt: n.inline("stand out", "alt text: stand out")
 					}), i.a.createElement("p", {
-						className: Jd
+						className: uf
 					}, i.a.createElement(ie, {
 						desc: "Benefit description: Stand out in the comments section"
 					}, "Stand out in the comments"))), i.a.createElement(i.a.Fragment, null, i.a.createElement("img", {
 						src: o.g.CardExample,
-						className: Qd,
+						className: lf,
 						alt: n.inline("card preview", "alt text: card preview")
 					}), i.a.createElement("p", {
-						className: Jd
+						className: uf
 					}, i.a.createElement(ie, {
 						desc: "Benefit description: adds card appearance on user profile"
 					}, "Add a card to your profile"))), i.a.createElement(i.a.Fragment, null, i.a.createElement("img", {
 						src: o.g.AvatarGear,
-						className: Qd,
+						className: lf,
 						alt: n.inline("avatar gear", "alt text: avatar gear")
 					}), i.a.createElement("p", {
-						className: Jd
+						className: uf
 					}, i.a.createElement(ie, {
 						desc: "Benefit description: mix these items with other avatar gear"
-					}, "Mix with other avatar gear"))), i.a.createElement(hf, null), t ? i.a.createElement(i.a.Fragment, null, i.a.createElement("img", {
+					}, "Mix with other avatar gear"))), i.a.createElement(Nf, null), t ? i.a.createElement(i.a.Fragment, null, i.a.createElement("img", {
 						src: o.g.Achievement,
-						className: Qd,
+						className: lf,
 						alt: n.inline("achievement icon", "alt text: achievement icon")
 					}), i.a.createElement("p", {
-						className: Jd
+						className: uf
 					}, i.a.createElement(ie, {
 						desc: "Benefit description: the item is a reward for user's achievements"
 					}, "Awarded to top redditors"))) : i.a.createElement(i.a.Fragment, null, i.a.createElement("img", {
 						src: o.g.Collectible,
-						className: Qd,
+						className: lf,
 						alt: n.inline("collectible", "alt text: collectible")
 					}), i.a.createElement("p", {
-						className: Jd
+						className: uf
 					}, i.a.createElement(ie, {
 						desc: "Benefit description: the item is a limited edition collectible"
 					}, "Collectible, part of a series"))), i.a.createElement(i.a.Fragment, null, i.a.createElement("img", {
 						src: o.g.Nft,
-						className: Qd,
+						className: lf,
 						alt: n.inline("nft icon", "alt text: nft icon")
 					}), i.a.createElement("p", {
-						className: Jd
+						className: uf
 					}, i.a.createElement(ie, {
 						desc: "Benefit description: you own this specific NFT avatar"
 					}, "You own your Collectible Avatar"))), i.a.createElement(i.a.Fragment, null, i.a.createElement("img", {
 						src: o.g.Transferable,
-						className: Qd,
+						className: lf,
 						alt: n.inline("blockchain transfer icon", "alt text: blockchain transfer icon")
 					}), i.a.createElement("p", {
-						className: Jd
+						className: uf
 					}, i.a.createElement(ie, {
 						desc: "Benefit description: item can be transferred to another user via blockchain"
 					}, "Transferable via blockchain"))))
 				},
-				gf = ({
+				Af = ({
 					nft: e,
 					className: t,
 					onClose: n,
@@ -29200,33 +29224,33 @@
 							marketplace: W(e)
 						});
 					return i.a.createElement(pe, {
-						className: q(Rd, {
-							[Pd]: p
+						className: q(qd, {
+							[zd]: p
 						}),
 						onClose: n,
 						isPanelShowing: r,
-						mainContent: i.a.createElement(Ad, {
+						mainContent: i.a.createElement(Fd, {
 							nft: e,
 							isControlVisible: r,
-							className: q(xd, t)
+							className: q(Wd, t)
 						}),
 						panelContent: i.a.createElement("div", {
-							className: Dd
+							className: Gd
 						}, i.a.createElement("div", {
-							className: Md
+							className: $d
 						}, i.a.createElement("h3", {
-							className: Fd
+							className: Yd
 						}, e.title), !e.artist && i.a.createElement("div", {
-							className: Vd
+							className: Zd
 						}, i.a.createElement("img", {
 							src: o.g.Reddit,
-							className: Hd,
+							className: Xd,
 							alt: "reddit logo"
 						}), i.a.createElement(ie, {
 							desc: "subtitle: art is made by "
 						}, "by Reddit")), !!e.artist && i.a.createElement("div", {
-							className: q(Vd, {
-								[Ud]: !!l
+							className: q(Zd, {
+								[Kd]: !!l
 							}),
 							onClick: () => {
 								e.artist && l && (m(((e, t) => ({
@@ -29246,36 +29270,36 @@
 							userId: e.artist.redditorInfo.id,
 							iconUrl: null == (u = e.artist.redditorInfo.icon) ? void 0 : u.url,
 							isNSFW: null == (d = e.artist.redditorInfo.profile) ? void 0 : d.isNsfw,
-							className: Wd
+							className: ef
 						}), i.a.createElement("span", {
-							className: Gd
+							className: tf
 						}, i.a.createElement(ie, {
 							desc: "subtitle: art is made by "
 						}, "by", " ", i.a.createElement(ae, {
 							name: "author of the art"
 						}, Ue(e.artist)))))), i.a.createElement("div", {
-							className: Bd
+							className: Qd
 						}, i.a.createElement("div", {
-							className: $d
+							className: rf
 						}, e.description), i.a.createElement("div", {
-							className: Yd
+							className: af
 						}, i.a.createElement("h3", {
-							className: Zd
+							className: of
 						}, i.a.createElement(ie, {
 							desc: "Header for the table of benefits and features of the NFT item"
-						}, "BENEFITS")), i.a.createElement(yf, {
+						}, "BENEFITS")), i.a.createElement(wf, {
 							isAwarded: !e.artist
 						})), i.a.createElement("div", {
-							className: ef
+							className: df
 						}, i.a.createElement("h3", {
-							className: rf
+							className: mf
 						}, i.a.createElement(ie, {
 							desc: "Header for the section with external links to NFT item details"
 						}, "DETAILS")), i.a.createElement("div", {
-							className: af
-						}, i.a.createElement(Cf, {
+							className: vf
+						}, i.a.createElement(If, {
 							nft: e
-						})), i.a.createElement(lf, {
+						})), i.a.createElement(Cf, {
 							onPillClick: e => {
 								m((c || v)((e => ({
 									source: R.Marketplace,
@@ -29292,22 +29316,22 @@
 							ipfsUrl: e.ipfsUrl,
 							metadataUrl: e.metadataUrl
 						})), !!e.artist && i.a.createElement("div", {
-							className: ef
+							className: df
 						}, !!(null == (f = e.artist.redditorInfo.profile) ? void 0 : f.publicDescriptionText) && i.a.createElement(i.a.Fragment, null, i.a.createElement("h3", {
-							className: Zd
+							className: of
 						}, i.a.createElement(ie, {
 							desc: "Header: Artist Details"
 						}, "ABOUT THE CREATOR")), i.a.createElement("div", null, e.artist.redditorInfo.profile.publicDescriptionText)), i.a.createElement("p", {
-							className: tf
+							className: ff
 						}, i.a.createElement(ie, {
 							desc: "NFT resale info"
 						}, "Secondary sales of this item will have a 5% royalty fee.", " ", i.a.createElement(o.h, {
-							className: nf,
+							className: pf,
 							href: "https://reddithelp.com/hc/en-us/articles/6213869034132"
 						}, "Learn more about fees."))))), a)
 					})
 				},
-				Cf = ({
+				If = ({
 					nft: e
 				}) => e.isMinted ? i.a.createElement(ie, {
 					desc: "This NFT has been minted to the blockchain"
@@ -29316,7 +29340,7 @@
 				}, "In queue to mint") : i.a.createElement(ie, {
 					desc: "This NFT will be minted to the blockchain after the user purchases it"
 				}, "Mints after purchase"),
-				_f = {
+				Tf = {
 					source: R.Marketplace,
 					actionInfo: {
 						pageType: H.ProductDetailPage,
@@ -29324,12 +29348,12 @@
 						paneName: B.Password
 					}
 				},
-				bf = C(g({}, _f), {
+				Lf = C(g({}, Tf), {
 					action: D.Create,
 					noun: M.Vault
 				});
 
-			function kf(e, t) {
+			function jf(e, t) {
 				const [n, i] = Object(r.useReducer)(() => !0, !1);
 				return Object(r.useEffect)(() => {
 					const r = (null == t ? void 0 : t.onLoad) || (() => {}),
@@ -29344,7 +29368,7 @@
 					isLoaded: n
 				}
 			}
-			var Ef = {
+			var Rf = {
 				formSection: "_formSection_1qkpy_42",
 				isNightMode: "_isNightMode_1qkpy_53",
 				title: "_title_1qkpy_57",
@@ -29370,19 +29394,19 @@
 				vaultAnimation: "_vaultAnimation_1qkpy_170",
 				noPanel: "_noPanel_1qkpy_174"
 			};
-			const Sf = ({
+			const xf = ({
 					isRequirementMet: e,
 					children: t
 				}) => i.a.createElement("p", {
-					className: q(Ef.requirementsText, {
-						[Ef.isRequirementMet]: e
+					className: q(Rf.requirementsText, {
+						[Rf.isRequirementMet]: e
 					})
 				}, i.a.createElement("img", {
 					src: e ? "https://www.redditstatic.com/crypto-assets/v2/checkmark-green-7355fd2559.svg" : "https://www.redditstatic.com/crypto-assets/v2/checkmark-grey-1978f4add3.svg",
-					className: Ef.checkmark
+					className: Rf.checkmark
 				}), t),
-				Of = 12;
-			const Nf = ({
+				Df = 12;
+			const Pf = ({
 				onSubmit: e,
 				className: t
 			}) => {
@@ -29393,7 +29417,7 @@
 					hasDigit: v,
 					allRequirementsMet: h
 				} = function(e, t) {
-					const n = e.length >= Of,
+					const n = e.length >= Df,
 						r = /[^A-Za-z 0-9]/g.test(e),
 						i = /^(.*[A-Z]).*$/g.test(e),
 						a = /^(.*[0-9]).*$/g.test(e);
@@ -29410,28 +29434,28 @@
 					onSubmit: async t => {
 						null == t || t.preventDefault(), h && e(n)
 					},
-					className: q(Ef.formSection, {
-						[Ef.isNightMode]: d
+					className: q(Rf.formSection, {
+						[Rf.isNightMode]: d
 					}, t)
 				}, i.a.createElement("div", {
-					className: Ef.title
+					className: Rf.title
 				}, i.a.createElement(ie, {
 					desc: "Header: Title of form shown to users prompting them to secure their Vault when claiming an NFT without an existing Vault"
 				}, "First, you need a Vault")), i.a.createElement("div", {
-					className: q(Ef.subtitle, Ef.secondaryHeader)
+					className: q(Rf.subtitle, Rf.secondaryHeader)
 				}, i.a.createElement(ie, {
 					desc: "Description: Indicate to user reason as to why they need a vault"
 				}, "Collectible Avatars are powered by NFTs, so you'll need a Vault — your digital wallet on Reddit.")), i.a.createElement("div", {
-					className: Ef.paragraph
+					className: Rf.paragraph
 				}, i.a.createElement(ie, {
 					desc: "Description: Clarify to users securing their new Vault what the requirement and usage of this password are"
 				}, "Choose a password that’s different from your Reddit password, which you’ll use to access your Vault on other devices."), " ", i.a.createElement("span", {
-					className: Ef.warningText
+					className: Rf.warningText
 				}, i.a.createElement(ie, {
 					desc: "Warning: Reddit cannot help recover password"
 				}, "If you lose this, Reddit cannot help you recover your Vault."))), i.a.createElement(gu, {
-					className: Ef.passwordInputContainer,
-					inputClassName: Ef.passwordInput,
+					className: Rf.passwordInputContainer,
+					inputClassName: Rf.passwordInput,
 					id: "passwordField",
 					type: "password",
 					value: n,
@@ -29439,30 +29463,30 @@
 					label: u.inline("Vault Password", "Label, for input field where users should enter a password that matches the requirements listed"),
 					placeholder: u.inline("Password", "Placeholder, in input field where users should enter a password that matches the requirements listed")
 				}), i.a.createElement("div", {
-					className: Ef.requirements
+					className: Rf.requirements
 				}, i.a.createElement("div", {
-					className: Ef.requirementsHeader
+					className: Rf.requirementsHeader
 				}, i.a.createElement(ie, {
 					desc: "Header: Title of section displaying required items in a password"
-				}, "Password Requirements")), i.a.createElement(Sf, {
+				}, "Password Requirements")), i.a.createElement(xf, {
 					isRequirementMet: f
 				}, i.a.createElement(ie, {
 					desc: "Password has to have a minimum of 12 characters"
-				}, "12 characters")), i.a.createElement(Sf, {
+				}, "12 characters")), i.a.createElement(xf, {
 					isRequirementMet: p
 				}, i.a.createElement(ie, {
 					desc: "Password must contain at least one special symbol"
-				}, "1 special symbol")), i.a.createElement(Sf, {
+				}, "1 special symbol")), i.a.createElement(xf, {
 					isRequirementMet: m
 				}, i.a.createElement(ie, {
 					desc: "Password must contain at least one capitalized letter"
-				}, "1 capital letter")), i.a.createElement(Sf, {
+				}, "1 capital letter")), i.a.createElement(xf, {
 					isRequirementMet: v
 				}, i.a.createElement(ie, {
 					desc: "Password must contain at least one digit"
 				}, "1 digit"))), i.a.createElement(gu, {
-					className: Ef.passwordInputContainer,
-					inputClassName: Ef.passwordInput,
+					className: Rf.passwordInputContainer,
+					inputClassName: Rf.passwordInput,
 					id: "confirmationPasswordField",
 					type: "password",
 					value: c,
@@ -29470,27 +29494,27 @@
 					label: u.inline("Confirm Vault Password", "Label, for input field where users should re-enter the same password"),
 					placeholder: u.inline("Confirm Password", "Placeholder, in input field where users should re-enter the same password")
 				}), i.a.createElement("div", {
-					className: q(Ef.paragraph, Ef.helpArticle)
+					className: q(Rf.paragraph, Rf.helpArticle)
 				}, i.a.createElement(ie, {
 					desc: "Description: Clarify to users securing their new Vault what the requirement and usage of this password are"
 				}, "Vault creates an address for you on Ethereum-compatible blockchains, where your NFTs are stored. Blockchains are public, so anyone can look up your address and its activity."), " ", i.a.createElement(o.h, {
 					href: "https://reddithelp.com/hc/en-us/articles/6213791102484",
-					className: Ef.learnMoreLink
+					className: Rf.learnMoreLink
 				}, i.a.createElement(ie, {
 					desc: "Hyperlink: Link to Help Article"
 				}, "Learn about privacy on the blockchain."))), i.a.createElement("div", {
-					className: Ef.buttonContainer
+					className: Rf.buttonContainer
 				}, i.a.createElement(Ou, {
 					theme: "largeOrange",
-					className: Ef.button,
+					className: Rf.button,
 					disabled: !h
 				}, i.a.createElement(ie, {
 					desc: "Button: Create new vault and secure using inputted password"
 				}, "Create Your Vault"))))
 			};
-			var wf, Af;
-			(Af = wf || (wf = {}))[Af.Enter = 0] = "Enter", Af[Af.Creating = 1] = "Creating", Af[Af.Complete = 2] = "Complete";
-			const If = ({
+			var Mf, Ff;
+			(Ff = Mf || (Mf = {}))[Ff.Enter = 0] = "Enter", Ff[Ff.Creating = 1] = "Creating", Ff[Ff.Complete = 2] = "Complete";
+			const Vf = ({
 				onSubmit: e,
 				onClose: t,
 				userId: n,
@@ -29507,19 +29531,19 @@
 					[_, b] = Object(r.useState)(0),
 					{
 						isLoaded: k
-					} = kf(o.b.ProtectYourWallet);
-				kf(o.b.WalletCreationInProgress), kf(o.b.WalletCreationComplete), Object(r.useEffect)(() => {
+					} = jf(o.b.ProtectYourWallet);
+				jf(o.b.WalletCreationInProgress), jf(o.b.WalletCreationComplete), Object(r.useEffect)(() => {
 					c && p(c())
 				}, [p, c]);
 				if (!k) return i.a.createElement(o.i, null);
 				return i.a.createElement(i.a.Fragment, null, i.a.createElement(pe, {
 					onClose: t,
 					mainContent: i.a.createElement("div", {
-						className: Ef.iconContainer
+						className: Rf.iconContainer
 					}, i.a.createElement("div", {
-						className: q(Ef.creatingState, {
-							[Ef.isFading]: g,
-							[Ef.noPanel]: !m
+						className: q(Rf.creatingState, {
+							[Rf.isFading]: g,
+							[Rf.noPanel]: !m
 						})
 					}, (() => {
 						switch (_) {
@@ -29528,8 +29552,8 @@
 									video: o.b.WalletCreationInProgressMov,
 									webp: o.b.WalletCreationInProgress,
 									img: o.g.Vault,
-									className: q(Ef.vaultAnimation, {
-										[Ef.noPanel]: !m
+									className: q(Rf.vaultAnimation, {
+										[Rf.noPanel]: !m
 									})
 								});
 							case 2:
@@ -29537,8 +29561,8 @@
 									video: o.b.WalletCreationCompleteMov,
 									webp: o.b.WalletCreationComplete,
 									img: o.g.Vault,
-									className: q(Ef.vaultAnimation, {
-										[Ef.noPanel]: !m
+									className: q(Rf.vaultAnimation, {
+										[Rf.noPanel]: !m
 									})
 								});
 							default:
@@ -29546,17 +29570,17 @@
 									video: o.b.ProtectYourWalletMov,
 									webp: o.b.ProtectYourWallet,
 									img: o.g.Vault,
-									className: Ef.vaultAnimation
+									className: Rf.vaultAnimation
 								})
 						}
 					})(), !m && i.a.createElement("div", {
-						className: Ef.processingText
+						className: Rf.processingText
 					}, 2 === _ ? i.a.createElement(ie, {
 						desc: "User wallet has been successfully created and secured"
 					}, "Your Vault was created and secured") : i.a.createElement(ie, {
 						desc: "Loading text displayed to user while the process for creating their vault is in progress"
 					}, "Creating your Vault...")))),
-					panelContent: i.a.createElement(Nf, {
+					panelContent: i.a.createElement(Pf, {
 						onSubmit: async t => {
 							l && p(l()), v(!1);
 							try {
@@ -29575,7 +29599,7 @@
 					isPanelShowing: m
 				}), h && i.a.createElement(o.f, null))
 			};
-			var Tf = {
+			var Uf = {
 				formSection: "_formSection_11eir_42",
 				isNightMode: "_isNightMode_11eir_53",
 				title: "_title_11eir_57",
@@ -29616,7 +29640,7 @@
 				loadingContainer: "_loadingContainer_11eir_282",
 				loadingContent: "_loadingContent_11eir_292"
 			};
-			const Lf = ({
+			const Hf = ({
 					address: e,
 					onClose: t,
 					onViewAvatar: n
@@ -29624,58 +29648,58 @@
 					const a = Object(s.c)(),
 						[c, l] = Object(r.useState)(!1);
 					return i.a.createElement("div", {
-						className: Tf.container
+						className: Uf.container
 					}, i.a.createElement("div", {
-						className: Tf.content
+						className: Uf.content
 					}, i.a.createElement("h2", {
-						className: Tf.header
+						className: Uf.header
 					}, i.a.createElement(ie, {
 						desc: "Header: User can transfer their new NFT to their Reddit Vault using the public address provided on this screen"
 					}, "Transfer your NFT to Vault")), i.a.createElement("p", {
-						className: Tf.description
+						className: Uf.description
 					}, i.a.createElement(ie, {
 						desc: "Description: Details the steps for users to take to transfer their NFT into their Vault"
 					}, "Copy your Vault’s public address and transfer the NFT to it. After transfer, your NFT will appear in the Avatars section.")), i.a.createElement("div", {
-						className: Tf.addressContainer
+						className: Uf.addressContainer
 					}, i.a.createElement("div", {
-						className: Tf.addressLeftFlex
+						className: Uf.addressLeftFlex
 					}, i.a.createElement("h3", {
-						className: Tf.addressHeader
+						className: Uf.addressHeader
 					}, i.a.createElement(ie, {
 						desc: "Header: User's Reddit Vault public address"
 					}, "Your Vault Public Address")), i.a.createElement("p", {
-						className: Tf.publicAddress
+						className: Uf.publicAddress
 					}, e)), i.a.createElement("button", {
 						title: a.inline("Copy to clipboard", "Button: clicking copies the user's vault public address to their clipboard"),
 						"aria-label": a.inline("Button to copy vault public address to clipboard", "Accessibility details for copy-to-clipboard button"),
 						onClick: async () => {
 							e && (l(!0), await navigator.clipboard.writeText(e), setTimeout(() => l(!1), 3e3))
 						},
-						className: q(Tf.copyButton, {
-							[Tf.isCopied]: c
+						className: q(Uf.copyButton, {
+							[Uf.isCopied]: c
 						}),
 						disabled: c
 					}, i.a.createElement("img", {
 						alt: c ? a.inline("Green checkmark", "Green checkmark icon") : a.inline("Copy icon", "Copy function icon"),
-						className: Tf.icon,
+						className: Uf.icon,
 						src: c ? o.g.CheckmarkGreen : o.g.Duplicate
 					})))), i.a.createElement("div", {
-						className: Tf.buttonDrawer
+						className: Uf.buttonDrawer
 					}, i.a.createElement(o.c, {
 						theme: "blue_inverted",
-						className: Tf.ctaButtons,
+						className: Uf.ctaButtons,
 						onClick: t
 					}, i.a.createElement(ie, {
 						desc: "Done: Close modal"
 					}, "Done")), i.a.createElement(o.c, {
 						theme: "blue",
-						className: Tf.ctaButtons,
+						className: Uf.ctaButtons,
 						onClick: n
 					}, i.a.createElement(ie, {
 						desc: "Link: Navigate to Avatars"
 					}, "View Avatars"))))
 				},
-				jf = ({
+				Bf = ({
 					userId: e,
 					onClose: t,
 					onViewAvatar: n,
@@ -29716,53 +29740,53 @@
 					return v ? i.a.createElement(o.i, null) : p || c ? (setTimeout(f, 500), i.a.createElement(pe, {
 						onClose: t,
 						mainContent: i.a.createElement("div", {
-							className: Tf.iconContainer
+							className: Uf.iconContainer
 						}, i.a.createElement(o.a, {
 							video: o.b.TransferToVaultMov,
 							webp: o.b.TransferToVault,
 							img: o.g.TransferToVault,
-							className: Tf.vaultAnimation
+							className: Uf.vaultAnimation
 						})),
-						panelContent: i.a.createElement(Lf, {
+						panelContent: i.a.createElement(Hf, {
 							address: m,
 							onClose: t,
 							onViewAvatar: n
 						}),
 						isPanelShowing: d
-					})) : i.a.createElement(If, {
+					})) : i.a.createElement(Vf, {
 						onSubmit: () => {
 							h(), l()
 						},
 						onClose: t,
 						userId: e,
-						viewEvent: () => (e => g(C(g({}, _f), {
+						viewEvent: () => (e => g(C(g({}, Tf), {
 							action: D.View,
 							noun: M.SecureVault
 						}), e))({}),
-						clickCreateEvent: () => (e => g(C(g({}, _f), {
+						clickCreateEvent: () => (e => g(C(g({}, Tf), {
 							action: D.Click,
 							noun: M.CreateVault
 						}), e))({}),
-						viewSuccessEvent: () => bf
+						viewSuccessEvent: () => Lf
 					})
 				},
-				Rf = ({
+				qf = ({
 					onClick: e
 				}) => {
 					const t = Object(s.d)();
 					return i.a.createElement("div", {
-						className: qd
+						className: Jd
 					}, i.a.createElement(o.c, {
 						onClick: () => {
 							t(G), e()
 						},
 						theme: "blue",
-						className: zd
+						className: nf
 					}, i.a.createElement(ie, {
 						desc: "Button: Starts user on process of importing their Collectible Avatar onto Reddit"
 					}, "Import Collectible Avatar")))
 				},
-				xf = (Df = ({
+				Wf = (Gf = ({
 					itemId: e,
 					currentUserId: t,
 					onClose: n,
@@ -29779,29 +29803,29 @@
 					}), h = v || !p, y = Boolean(m || l);
 					return h || y ? i.a.createElement(o.i, {
 						hasError: y
-					}) : d ? i.a.createElement(jf, {
+					}) : d ? i.a.createElement(Bf, {
 						userId: t,
 						onClose: n,
 						onViewAvatar: s,
 						onError: () => u(!0)
-					}) : i.a.createElement(gf, {
+					}) : i.a.createElement(Af, {
 						nft: p,
 						isPanelShowing: !0,
 						onClose: n,
 						className: c,
 						onArtistClick: a,
-						ctaButtons: i.a.createElement(Rf, {
+						ctaButtons: i.a.createElement(qf, {
 							onClick: f
 						})
 					})
-				}, e => i.a.createElement(a.a, null, i.a.createElement(Df, g({}, e))));
-			var Df
+				}, e => i.a.createElement(a.a, null, i.a.createElement(Gf, g({}, e))));
+			var Gf
 		},
 		"./node_modules/@reddit/crypto/react/import-address-card/style.css": function(e, t, n) {},
 		"./node_modules/@reddit/crypto/react/listing-checkout-card/index.es.js": function(e, t, n) {
 			"use strict";
 			n.d(t, "a", (function() {
-				return Np
+				return Pp
 			}));
 			var r = n("./node_modules/react/index.js"),
 				i = n.n(r),
@@ -38030,19 +38054,43 @@
 				return `${t.getMonth()+1}/${t.getDate()}/${t.getFullYear()}`
 			}
 			const Fd = 10;
-			var Vd = "_container_f4yhv_42",
-				Ud = "_range_f4yhv_48",
-				Hd = "_rangeStart_f4yhv_54",
-				Bd = "_rangeEnd_f4yhv_55",
-				qd = "_title_f4yhv_78";
-			const Wd = ({
+			const Vd = e => {
+					const t = e.split(".");
+					return [t[0].replace(/\B(?=(\d{3})+(?!\d))/g, ",")].concat(t.slice(1)).join(".")
+				},
+				Ud = 1e3,
+				Hd = 100 * Ud,
+				Bd = 10 * Hd,
+				qd = 100 * Bd,
+				Wd = 10 * qd,
+				Gd = 100 * Wd,
+				zd = 51;
+			const $d = (e, t, n = !1) => {
+					if (n) {
+						return (e / t).toFixed(e % t > 0 ? 1 : 0)
+					}
+					return (e / t).toFixed(1)
+				},
+				Yd = (e, t, n = 1) => {
+					const r = Math.pow(10, n);
+					return (Math.floor(e / (t / r)) / r).toFixed(n)
+				};
+			var Zd = "_container_f4yhv_42",
+				Kd = "_range_f4yhv_48",
+				Xd = "_rangeStart_f4yhv_54",
+				Qd = "_rangeEnd_f4yhv_55",
+				Jd = "_title_f4yhv_78";
+			const ef = ({
 				title: e,
 				rarity: t,
 				collectionSize: n,
 				className: r
 			}) => {
 				const a = function(e, t) {
-					if (e) return String(e);
+					if (e) return n = e, r = {
+						removeZeroDecimal: !0
+					}, (null == r ? void 0 : r.displayFull) ? Vd(n.toString()) : n >= Gd - zd ? `${Math.floor(n/Wd)}b` : n >= Wd - zd && n < Gd - zd ? `${$d(n,Wd,null==r?void 0:r.removeZeroDecimal)}b` : n >= qd - zd && n < Wd - zd ? `${Math.floor(n/Bd)}m` : n >= Bd - zd && n < qd - zd ? `${$d(n,Bd,null==r?void 0:r.removeZeroDecimal)}m` : n >= Hd - zd && n < Bd - zd ? `${Math.floor(n/Ud)}k` : n >= Ud && n < Hd - zd ? (null == r ? void 0 : r.roundDown) ? `${Yd(n,Ud)}k` : `${$d(n,Ud,null==r?void 0:r.removeZeroDecimal)}k` : String(n);
+					var n, r;
 					if (t) switch (t) {
 						case "legendary":
 							return "1";
@@ -38056,18 +38104,18 @@
 					return null
 				}(n, t);
 				return i.a.createElement("div", {
-					className: ye(Vd, r)
+					className: ye(Zd, r)
 				}, a && i.a.createElement("div", {
-					className: Ud
+					className: Kd
 				}, i.a.createElement("div", {
-					className: Hd
+					className: Xd
 				}, "1"), i.a.createElement("div", {
-					className: Bd
+					className: Qd
 				}, a)), i.a.createElement("h2", {
-					className: qd
+					className: Jd
 				}, e))
 			};
-			const Gd = ({
+			const tf = ({
 					className: e,
 					nft: t,
 					onClick: n,
@@ -38099,13 +38147,13 @@
 						src: s,
 						className: Ad,
 						alt: "nft-asset"
-					}), i.a.createElement(Wd, {
+					}), i.a.createElement(ef, {
 						title: u,
 						className: ye(wd, a),
 						collectionSize: d
 					}))
 				},
-				zd = ({
+				nf = ({
 					className: e,
 					nft: t,
 					onFlip: n,
@@ -38131,7 +38179,7 @@
 						className: ye(Ed, e),
 						flipped: c,
 						onClick: u,
-						front: i.a.createElement(Gd, {
+						front: i.a.createElement(tf, {
 							className: Sd,
 							onClick: u,
 							nft: t
@@ -38144,12 +38192,12 @@
 						})
 					})
 				};
-			var $d = "_carousel_u50lk_1",
-				Yd = "_isFullWidth_u50lk_6",
-				Zd = "_swiper_u50lk_14",
-				Kd = "_pane_u50lk_23",
-				Xd = "_stepper_u50lk_40";
-			const Qd = function(e) {
+			var rf = "_carousel_u50lk_1",
+				af = "_isFullWidth_u50lk_6",
+				of = "_swiper_u50lk_14",
+				sf = "_pane_u50lk_23",
+				cf = "_stepper_u50lk_40";
+			const lf = function(e) {
 				var t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : {};
 				return Ai(e, mt({
 					defaultTheme: Za
@@ -38166,14 +38214,14 @@
 					backgroundColor: "#F6F8F9"
 				}
 			});
-			const Jd = ({
+			const uf = ({
 				nft: e,
 				isFullWidth: t,
 				cardClassName: n,
 				showCloseOnBack: a,
 				isControlVisible: o
 			}) => {
-				const [s, c] = Object(r.useState)(0), [l, u] = Object(r.useState)(!1), [d, f] = Object(r.useState)(!1), p = Qd(), m = Math.max(0, s - 1), v = s, h = 0 === m;
+				const [s, c] = Object(r.useState)(0), [l, u] = Object(r.useState)(!1), [d, f] = Object(r.useState)(!1), p = lf(), m = Math.max(0, s - 1), v = s, h = 0 === m;
 				Object(r.useEffect)(() => {
 					u(1 === s || 2 === s)
 				}, [s]);
@@ -38193,15 +38241,15 @@
 						f(!1)
 					}, []);
 				return i.a.createElement("div", {
-					className: ye($d, {
-						[Yd]: t
+					className: ye(rf, {
+						[af]: t
 					})
 				}, i.a.createElement(hs, {
 					axis: "x",
 					index: m,
-					className: ye(Zd, !1),
+					className: ye( of , !1),
 					onTransitionEnd: g,
-					slideClassName: Kd,
+					slideClassName: sf,
 					springConfig: {
 						duration: "2s",
 						easeFunction: "cubic-bezier(0.17,0.84,0.44,1)",
@@ -38209,7 +38257,7 @@
 					},
 					onChangeIndex: c,
 					enableMouseEvents: !0
-				}, i.a.createElement(i.a.Fragment, null, e.isMinted ? i.a.createElement(zd, {
+				}, i.a.createElement(i.a.Fragment, null, e.isMinted ? i.a.createElement(nf, {
 					animateFlip: h,
 					animateBackground: h,
 					onFlip: y,
@@ -38217,12 +38265,12 @@
 					nft: e,
 					className: n,
 					showCloseOnBack: a
-				}) : i.a.createElement(Gd, {
+				}) : i.a.createElement(tf, {
 					className: n,
 					nft: e
 				}))), o && e.isMinted && i.a.createElement(ro, {
 					steps: 2,
-					className: Xd,
+					className: cf,
 					position: "static",
 					variant: "dots",
 					classes: {
@@ -38234,23 +38282,23 @@
 					backButton: null
 				}))
 			};
-			var ef = "_avatarCard_1twmt_107";
-			const tf = ({
+			var df = "_avatarCard_1twmt_107";
+			const ff = ({
 				nft: e,
 				className: t,
 				isControlVisible: n
 			}) => i.a.createElement("div", {
 				className: t
-			}, i.a.createElement(Jd, {
+			}, i.a.createElement(uf, {
 				nft: e,
-				cardClassName: ef,
+				cardClassName: df,
 				showCloseOnBack: !1,
 				isControlVisible: n
 			}));
-			var nf = "_pill_mc8cm_1",
-				rf = "_disabled_mc8cm_10",
-				af = "_scaleOnHover_mc8cm_17";
-			const of = e => {
+			var pf = "_pill_mc8cm_1",
+				mf = "_disabled_mc8cm_10",
+				vf = "_scaleOnHover_mc8cm_17";
+			const hf = e => {
 				var t = e,
 					{
 						className: n,
@@ -38261,52 +38309,52 @@
 					} = t,
 					c = _(t, ["className", "disabled", "scaleOnHover", "children", "testid"]);
 				return i.a.createElement("a", C(g({
-					className: ye(n, nf, {
-						[af]: a,
-						[rf]: r
+					className: ye(n, pf, {
+						[vf]: a,
+						[mf]: r
 					})
 				}, c), {
 					"aria-disabled": r,
 					"data-testid": s
 				}), o)
 			};
-			var sf = "_container_ztn11_42",
-				cf = "_carousel_ztn11_45",
-				lf = "_productDetails_ztn11_53",
-				uf = "_isNightMode_ztn11_65",
-				df = "_header_ztn11_69",
-				ff = "_cardName_ztn11_73",
-				pf = "_cardAuthor_ztn11_79",
-				mf = "_cardAuthorClickable_ztn11_93",
-				vf = "_redditLogo_ztn11_99",
-				hf = "_scrollContainer_ztn11_104",
-				yf = "_artistImg_ztn11_125",
-				gf = "_artistName_ztn11_132",
-				Cf = "_itemDescription_ztn11_185",
-				_f = "_itemBenefits_ztn11_188",
-				bf = "_heading_ztn11_191",
-				kf = "_utilityTable_ztn11_203",
-				Ef = "_featureCell_ztn11_213",
-				Sf = "_featureImage_ztn11_220",
-				Of = "_featureCopy_ztn11_224",
-				Nf = "_blockchainDetails_ztn11_236",
-				wf = "_resaleText_ztn11_239",
-				Af = "_platformFeesLink_ztn11_243",
-				If = "_nftDetailsHeading_ztn11_247",
-				Tf = "_mintStatus_ztn11_260",
-				Lf = "_nftDetailPills_ztn11_272",
-				jf = "_pill_ztn11_272",
-				Rf = "_pillImage_ztn11_291";
-			const xf = ({
+			var yf = "_container_ztn11_42",
+				gf = "_carousel_ztn11_45",
+				Cf = "_productDetails_ztn11_53",
+				_f = "_isNightMode_ztn11_65",
+				bf = "_header_ztn11_69",
+				kf = "_cardName_ztn11_73",
+				Ef = "_cardAuthor_ztn11_79",
+				Sf = "_cardAuthorClickable_ztn11_93",
+				Of = "_redditLogo_ztn11_99",
+				Nf = "_scrollContainer_ztn11_104",
+				wf = "_artistImg_ztn11_125",
+				Af = "_artistName_ztn11_132",
+				If = "_itemDescription_ztn11_185",
+				Tf = "_itemBenefits_ztn11_188",
+				Lf = "_heading_ztn11_191",
+				jf = "_utilityTable_ztn11_203",
+				Rf = "_featureCell_ztn11_213",
+				xf = "_featureImage_ztn11_220",
+				Df = "_featureCopy_ztn11_224",
+				Pf = "_blockchainDetails_ztn11_236",
+				Mf = "_resaleText_ztn11_239",
+				Ff = "_platformFeesLink_ztn11_243",
+				Vf = "_nftDetailsHeading_ztn11_247",
+				Uf = "_mintStatus_ztn11_260",
+				Hf = "_nftDetailPills_ztn11_272",
+				Bf = "_pill_ztn11_272",
+				qf = "_pillImage_ztn11_291";
+			const Wf = ({
 				disabled: e,
 				blockchainExplorerUrl: t,
 				ipfsUrl: n,
 				metadataUrl: r,
 				onPillClick: a
 			}) => i.a.createElement("div", {
-				className: Lf
-			}, i.a.createElement( of , {
-				className: jf,
+				className: Hf
+			}, i.a.createElement(hf, {
+				className: Bf,
 				disabled: e,
 				target: "_blank",
 				href: t,
@@ -38314,12 +38362,12 @@
 				onClick: () => a("blockchain")
 			}, i.a.createElement("img", {
 				src: s.g.BlockchainFilled,
-				className: Rf,
+				className: qf,
 				alt: ""
 			}), i.a.createElement(be, {
 				desc: "Button: view NFT details"
-			}, "View on Explorer")), i.a.createElement( of , {
-				className: jf,
+			}, "View on Explorer")), i.a.createElement(hf, {
+				className: Bf,
 				disabled: e,
 				target: "_blank",
 				href: n,
@@ -38327,12 +38375,12 @@
 				onClick: () => a("view_on_ipfs")
 			}, i.a.createElement("img", {
 				src: s.g.DoubleEyeFilled,
-				className: Rf,
+				className: qf,
 				alt: ""
 			}), i.a.createElement(be, {
 				desc: "Button: view NFT details"
-			}, "View on IPFS")), i.a.createElement( of , {
-				className: jf,
+			}, "View on IPFS")), i.a.createElement(hf, {
+				className: Bf,
 				disabled: e,
 				target: "_blank",
 				href: r,
@@ -38340,17 +38388,17 @@
 				onClick: () => a("ipfs_metadata")
 			}, i.a.createElement("img", {
 				src: s.g.InfoFilled,
-				className: Rf,
+				className: qf,
 				alt: ""
 			}), i.a.createElement(be, {
 				desc: "Button: view NFT details"
 			}, "IPFS Metadata")));
-			var Df = "_container_oikih_1",
-				Pf = "_isNightMode_oikih_9",
-				Mf = "_cell_oikih_13",
-				Ff = "_horizontalDivider_oikih_27",
-				Vf = "_line_oikih_33";
-			const Uf = ({
+			var Gf = "_container_oikih_1",
+				zf = "_isNightMode_oikih_9",
+				$f = "_cell_oikih_13",
+				Yf = "_horizontalDivider_oikih_27",
+				Zf = "_line_oikih_33";
+			const Kf = ({
 					children: e,
 					className: t,
 					cellClassName: n
@@ -38358,91 +38406,91 @@
 					const r = Object(o.b)().nightModeActive(),
 						a = Array.isArray(e) ? e : [e];
 					return i.a.createElement("div", {
-						className: ye(Df, t, {
-							[Pf]: r
+						className: ye(Gf, t, {
+							[zf]: r
 						})
-					}, a.map((e, t) => e.type === Hf ? e : i.a.createElement("div", {
-						className: ye(Mf, n),
+					}, a.map((e, t) => e.type === Xf ? e : i.a.createElement("div", {
+						className: ye($f, n),
 						key: t
 					}, e)))
 				},
-				Hf = ({
+				Xf = ({
 					className: e
 				}) => i.a.createElement("div", {
-					className: ye(e, Ff)
+					className: ye(e, Yf)
 				}, i.a.createElement("div", {
-					className: Vf
+					className: Zf
 				})),
-				Bf = ({
+				Qf = ({
 					className: e,
 					isAwarded: t
 				}) => {
 					const n = Object(o.c)(),
 						r = Object(o.b)().nightModeActive();
-					return i.a.createElement(Uf, {
-						cellClassName: Ef,
-						className: ye(kf, {
-							[uf]: r
+					return i.a.createElement(Kf, {
+						cellClassName: Rf,
+						className: ye(jf, {
+							[_f]: r
 						}, e)
 					}, i.a.createElement(i.a.Fragment, null, i.a.createElement("img", {
 						src: s.g.StandOut,
-						className: Sf,
+						className: xf,
 						alt: n.inline("stand out", "alt text: stand out")
 					}), i.a.createElement("p", {
-						className: Of
+						className: Df
 					}, i.a.createElement(be, {
 						desc: "Benefit description: Stand out in the comments section"
 					}, "Stand out in the comments"))), i.a.createElement(i.a.Fragment, null, i.a.createElement("img", {
 						src: s.g.CardExample,
-						className: Sf,
+						className: xf,
 						alt: n.inline("card preview", "alt text: card preview")
 					}), i.a.createElement("p", {
-						className: Of
+						className: Df
 					}, i.a.createElement(be, {
 						desc: "Benefit description: adds card appearance on user profile"
 					}, "Add a card to your profile"))), i.a.createElement(i.a.Fragment, null, i.a.createElement("img", {
 						src: s.g.AvatarGear,
-						className: Sf,
+						className: xf,
 						alt: n.inline("avatar gear", "alt text: avatar gear")
 					}), i.a.createElement("p", {
-						className: Of
+						className: Df
 					}, i.a.createElement(be, {
 						desc: "Benefit description: mix these items with other avatar gear"
-					}, "Mix with other avatar gear"))), i.a.createElement(Hf, null), t ? i.a.createElement(i.a.Fragment, null, i.a.createElement("img", {
+					}, "Mix with other avatar gear"))), i.a.createElement(Xf, null), t ? i.a.createElement(i.a.Fragment, null, i.a.createElement("img", {
 						src: s.g.Achievement,
-						className: Sf,
+						className: xf,
 						alt: n.inline("achievement icon", "alt text: achievement icon")
 					}), i.a.createElement("p", {
-						className: Of
+						className: Df
 					}, i.a.createElement(be, {
 						desc: "Benefit description: the item is a reward for user's achievements"
 					}, "Awarded to top redditors"))) : i.a.createElement(i.a.Fragment, null, i.a.createElement("img", {
 						src: s.g.Collectible,
-						className: Sf,
+						className: xf,
 						alt: n.inline("collectible", "alt text: collectible")
 					}), i.a.createElement("p", {
-						className: Of
+						className: Df
 					}, i.a.createElement(be, {
 						desc: "Benefit description: the item is a limited edition collectible"
 					}, "Collectible, part of a series"))), i.a.createElement(i.a.Fragment, null, i.a.createElement("img", {
 						src: s.g.Nft,
-						className: Sf,
+						className: xf,
 						alt: n.inline("nft icon", "alt text: nft icon")
 					}), i.a.createElement("p", {
-						className: Of
+						className: Df
 					}, i.a.createElement(be, {
 						desc: "Benefit description: you own this specific NFT avatar"
 					}, "You own your Collectible Avatar"))), i.a.createElement(i.a.Fragment, null, i.a.createElement("img", {
 						src: s.g.Transferable,
-						className: Sf,
+						className: xf,
 						alt: n.inline("blockchain transfer icon", "alt text: blockchain transfer icon")
 					}), i.a.createElement("p", {
-						className: Of
+						className: Df
 					}, i.a.createElement(be, {
 						desc: "Benefit description: item can be transferred to another user via blockchain"
 					}, "Transferable via blockchain"))))
 				},
-				qf = ({
+				Jf = ({
 					nft: e,
 					className: t,
 					onClose: n,
@@ -38458,33 +38506,33 @@
 							marketplace: _e(e)
 						});
 					return i.a.createElement(Te, {
-						className: ye(sf, {
-							[uf]: p
+						className: ye(yf, {
+							[_f]: p
 						}),
 						onClose: n,
 						isPanelShowing: r,
-						mainContent: i.a.createElement(tf, {
+						mainContent: i.a.createElement(ff, {
 							nft: e,
 							isControlVisible: r,
-							className: ye(cf, t)
+							className: ye(gf, t)
 						}),
 						panelContent: i.a.createElement("div", {
-							className: lf
+							className: Cf
 						}, i.a.createElement("div", {
-							className: df
+							className: bf
 						}, i.a.createElement("h3", {
-							className: ff
+							className: kf
 						}, e.title), !e.artist && i.a.createElement("div", {
-							className: pf
+							className: Ef
 						}, i.a.createElement("img", {
 							src: s.g.Reddit,
-							className: vf,
+							className: Of,
 							alt: "reddit logo"
 						}), i.a.createElement(be, {
 							desc: "subtitle: art is made by "
 						}, "by Reddit")), !!e.artist && i.a.createElement("div", {
-							className: ye(pf, {
-								[mf]: !!l
+							className: ye(Ef, {
+								[Sf]: !!l
 							}),
 							onClick: () => {
 								e.artist && l && (m(((e, t) => ({
@@ -38504,36 +38552,36 @@
 							userId: e.artist.redditorInfo.id,
 							iconUrl: null == (u = e.artist.redditorInfo.icon) ? void 0 : u.url,
 							isNSFW: null == (d = e.artist.redditorInfo.profile) ? void 0 : d.isNsfw,
-							className: yf
+							className: wf
 						}), i.a.createElement("span", {
-							className: gf
+							className: Af
 						}, i.a.createElement(be, {
 							desc: "subtitle: art is made by "
 						}, "by", " ", i.a.createElement(ke, {
 							name: "author of the art"
 						}, ft(e.artist)))))), i.a.createElement("div", {
-							className: hf
+							className: Nf
 						}, i.a.createElement("div", {
-							className: Cf
+							className: If
 						}, e.description), i.a.createElement("div", {
-							className: _f
+							className: Tf
 						}, i.a.createElement("h3", {
-							className: bf
+							className: Lf
 						}, i.a.createElement(be, {
 							desc: "Header for the table of benefits and features of the NFT item"
-						}, "BENEFITS")), i.a.createElement(Bf, {
+						}, "BENEFITS")), i.a.createElement(Qf, {
 							isAwarded: !e.artist
 						})), i.a.createElement("div", {
-							className: Nf
+							className: Pf
 						}, i.a.createElement("h3", {
-							className: If
+							className: Vf
 						}, i.a.createElement(be, {
 							desc: "Header for the section with external links to NFT item details"
 						}, "DETAILS")), i.a.createElement("div", {
-							className: Tf
-						}, i.a.createElement(Wf, {
+							className: Uf
+						}, i.a.createElement(ep, {
 							nft: e
-						})), i.a.createElement(xf, {
+						})), i.a.createElement(Wf, {
 							onPillClick: e => {
 								m((c || v)((e => ({
 									source: se.Marketplace,
@@ -38550,22 +38598,22 @@
 							ipfsUrl: e.ipfsUrl,
 							metadataUrl: e.metadataUrl
 						})), !!e.artist && i.a.createElement("div", {
-							className: Nf
+							className: Pf
 						}, !!(null == (f = e.artist.redditorInfo.profile) ? void 0 : f.publicDescriptionText) && i.a.createElement(i.a.Fragment, null, i.a.createElement("h3", {
-							className: bf
+							className: Lf
 						}, i.a.createElement(be, {
 							desc: "Header: Artist Details"
 						}, "ABOUT THE CREATOR")), i.a.createElement("div", null, e.artist.redditorInfo.profile.publicDescriptionText)), i.a.createElement("p", {
-							className: wf
+							className: Mf
 						}, i.a.createElement(be, {
 							desc: "NFT resale info"
 						}, "Secondary sales of this item will have a 5% royalty fee.", " ", i.a.createElement(s.h, {
-							className: Af,
+							className: Ff,
 							href: "https://reddithelp.com/hc/en-us/articles/6213869034132"
 						}, "Learn more about fees."))))), a)
 					})
 				},
-				Wf = ({
+				ep = ({
 					nft: e
 				}) => e.isMinted ? i.a.createElement(be, {
 					desc: "This NFT has been minted to the blockchain"
@@ -38575,7 +38623,7 @@
 					desc: "This NFT will be minted to the blockchain after the user purchases it"
 				}, "Mints after purchase");
 
-			function Gf(e, t) {
+			function tp(e, t) {
 				const [n, i] = Object(r.useReducer)(() => !0, !1);
 				return Object(r.useEffect)(() => {
 					const r = (null == t ? void 0 : t.onLoad) || (() => {}),
@@ -38590,7 +38638,7 @@
 					isLoaded: n
 				}
 			}
-			var zf = {
+			var np = {
 				formSection: "_formSection_1qkpy_42",
 				isNightMode: "_isNightMode_1qkpy_53",
 				title: "_title_1qkpy_57",
@@ -38616,19 +38664,19 @@
 				vaultAnimation: "_vaultAnimation_1qkpy_170",
 				noPanel: "_noPanel_1qkpy_174"
 			};
-			const $f = ({
+			const rp = ({
 					isRequirementMet: e,
 					children: t
 				}) => i.a.createElement("p", {
-					className: ye(zf.requirementsText, {
-						[zf.isRequirementMet]: e
+					className: ye(np.requirementsText, {
+						[np.isRequirementMet]: e
 					})
 				}, i.a.createElement("img", {
 					src: e ? "https://www.redditstatic.com/crypto-assets/v2/checkmark-green-7355fd2559.svg" : "https://www.redditstatic.com/crypto-assets/v2/checkmark-grey-1978f4add3.svg",
-					className: zf.checkmark
+					className: np.checkmark
 				}), t),
-				Yf = 12;
-			const Zf = ({
+				ip = 12;
+			const ap = ({
 				onSubmit: e,
 				className: t
 			}) => {
@@ -38639,7 +38687,7 @@
 					hasDigit: v,
 					allRequirementsMet: h
 				} = function(e, t) {
-					const n = e.length >= Yf,
+					const n = e.length >= ip,
 						r = /[^A-Za-z 0-9]/g.test(e),
 						i = /^(.*[A-Z]).*$/g.test(e),
 						a = /^(.*[0-9]).*$/g.test(e);
@@ -38656,28 +38704,28 @@
 					onSubmit: async t => {
 						null == t || t.preventDefault(), h && e(n)
 					},
-					className: ye(zf.formSection, {
-						[zf.isNightMode]: d
+					className: ye(np.formSection, {
+						[np.isNightMode]: d
 					}, t)
 				}, i.a.createElement("div", {
-					className: zf.title
+					className: np.title
 				}, i.a.createElement(be, {
 					desc: "Header: Title of form shown to users prompting them to secure their Vault when claiming an NFT without an existing Vault"
 				}, "First, you need a Vault")), i.a.createElement("div", {
-					className: ye(zf.subtitle, zf.secondaryHeader)
+					className: ye(np.subtitle, np.secondaryHeader)
 				}, i.a.createElement(be, {
 					desc: "Description: Indicate to user reason as to why they need a vault"
 				}, "Collectible Avatars are powered by NFTs, so you'll need a Vault — your digital wallet on Reddit.")), i.a.createElement("div", {
-					className: zf.paragraph
+					className: np.paragraph
 				}, i.a.createElement(be, {
 					desc: "Description: Clarify to users securing their new Vault what the requirement and usage of this password are"
 				}, "Choose a password that’s different from your Reddit password, which you’ll use to access your Vault on other devices."), " ", i.a.createElement("span", {
-					className: zf.warningText
+					className: np.warningText
 				}, i.a.createElement(be, {
 					desc: "Warning: Reddit cannot help recover password"
 				}, "If you lose this, Reddit cannot help you recover your Vault."))), i.a.createElement(Gu, {
-					className: zf.passwordInputContainer,
-					inputClassName: zf.passwordInput,
+					className: np.passwordInputContainer,
+					inputClassName: np.passwordInput,
 					id: "passwordField",
 					type: "password",
 					value: n,
@@ -38685,30 +38733,30 @@
 					label: u.inline("Vault Password", "Label, for input field where users should enter a password that matches the requirements listed"),
 					placeholder: u.inline("Password", "Placeholder, in input field where users should enter a password that matches the requirements listed")
 				}), i.a.createElement("div", {
-					className: zf.requirements
+					className: np.requirements
 				}, i.a.createElement("div", {
-					className: zf.requirementsHeader
+					className: np.requirementsHeader
 				}, i.a.createElement(be, {
 					desc: "Header: Title of section displaying required items in a password"
-				}, "Password Requirements")), i.a.createElement($f, {
+				}, "Password Requirements")), i.a.createElement(rp, {
 					isRequirementMet: f
 				}, i.a.createElement(be, {
 					desc: "Password has to have a minimum of 12 characters"
-				}, "12 characters")), i.a.createElement($f, {
+				}, "12 characters")), i.a.createElement(rp, {
 					isRequirementMet: p
 				}, i.a.createElement(be, {
 					desc: "Password must contain at least one special symbol"
-				}, "1 special symbol")), i.a.createElement($f, {
+				}, "1 special symbol")), i.a.createElement(rp, {
 					isRequirementMet: m
 				}, i.a.createElement(be, {
 					desc: "Password must contain at least one capitalized letter"
-				}, "1 capital letter")), i.a.createElement($f, {
+				}, "1 capital letter")), i.a.createElement(rp, {
 					isRequirementMet: v
 				}, i.a.createElement(be, {
 					desc: "Password must contain at least one digit"
 				}, "1 digit"))), i.a.createElement(Gu, {
-					className: zf.passwordInputContainer,
-					inputClassName: zf.passwordInput,
+					className: np.passwordInputContainer,
+					inputClassName: np.passwordInput,
 					id: "confirmationPasswordField",
 					type: "password",
 					value: c,
@@ -38716,27 +38764,27 @@
 					label: u.inline("Confirm Vault Password", "Label, for input field where users should re-enter the same password"),
 					placeholder: u.inline("Confirm Password", "Placeholder, in input field where users should re-enter the same password")
 				}), i.a.createElement("div", {
-					className: ye(zf.paragraph, zf.helpArticle)
+					className: ye(np.paragraph, np.helpArticle)
 				}, i.a.createElement(be, {
 					desc: "Description: Clarify to users securing their new Vault what the requirement and usage of this password are"
 				}, "Vault creates an address for you on Ethereum-compatible blockchains, where your NFTs are stored. Blockchains are public, so anyone can look up your address and its activity."), " ", i.a.createElement(s.h, {
 					href: "https://reddithelp.com/hc/en-us/articles/6213791102484",
-					className: zf.learnMoreLink
+					className: np.learnMoreLink
 				}, i.a.createElement(be, {
 					desc: "Hyperlink: Link to Help Article"
 				}, "Learn about privacy on the blockchain."))), i.a.createElement("div", {
-					className: zf.buttonContainer
+					className: np.buttonContainer
 				}, i.a.createElement(Qu, {
 					theme: "largeOrange",
-					className: zf.button,
+					className: np.button,
 					disabled: !h
 				}, i.a.createElement(be, {
 					desc: "Button: Create new vault and secure using inputted password"
 				}, "Create Your Vault"))))
 			};
-			var Kf, Xf;
-			(Xf = Kf || (Kf = {}))[Xf.Enter = 0] = "Enter", Xf[Xf.Creating = 1] = "Creating", Xf[Xf.Complete = 2] = "Complete";
-			const Qf = ({
+			var op, sp;
+			(sp = op || (op = {}))[sp.Enter = 0] = "Enter", sp[sp.Creating = 1] = "Creating", sp[sp.Complete = 2] = "Complete";
+			const cp = ({
 					onSubmit: e,
 					onClose: t,
 					userId: n,
@@ -38753,19 +38801,19 @@
 						[_, b] = Object(r.useState)(0),
 						{
 							isLoaded: k
-						} = Gf(s.b.ProtectYourWallet);
-					Gf(s.b.WalletCreationInProgress), Gf(s.b.WalletCreationComplete), Object(r.useEffect)(() => {
+						} = tp(s.b.ProtectYourWallet);
+					tp(s.b.WalletCreationInProgress), tp(s.b.WalletCreationComplete), Object(r.useEffect)(() => {
 						l && p(l())
 					}, [p, l]);
 					if (!k) return i.a.createElement(s.i, null);
 					return i.a.createElement(i.a.Fragment, null, i.a.createElement(Te, {
 						onClose: t,
 						mainContent: i.a.createElement("div", {
-							className: zf.iconContainer
+							className: np.iconContainer
 						}, i.a.createElement("div", {
-							className: ye(zf.creatingState, {
-								[zf.isFading]: g,
-								[zf.noPanel]: !m
+							className: ye(np.creatingState, {
+								[np.isFading]: g,
+								[np.noPanel]: !m
 							})
 						}, (() => {
 							switch (_) {
@@ -38774,8 +38822,8 @@
 										video: s.b.WalletCreationInProgressMov,
 										webp: s.b.WalletCreationInProgress,
 										img: s.g.Vault,
-										className: ye(zf.vaultAnimation, {
-											[zf.noPanel]: !m
+										className: ye(np.vaultAnimation, {
+											[np.noPanel]: !m
 										})
 									});
 								case 2:
@@ -38783,8 +38831,8 @@
 										video: s.b.WalletCreationCompleteMov,
 										webp: s.b.WalletCreationComplete,
 										img: s.g.Vault,
-										className: ye(zf.vaultAnimation, {
-											[zf.noPanel]: !m
+										className: ye(np.vaultAnimation, {
+											[np.noPanel]: !m
 										})
 									});
 								default:
@@ -38792,17 +38840,17 @@
 										video: s.b.ProtectYourWalletMov,
 										webp: s.b.ProtectYourWallet,
 										img: s.g.Vault,
-										className: zf.vaultAnimation
+										className: np.vaultAnimation
 									})
 							}
 						})(), !m && i.a.createElement("div", {
-							className: zf.processingText
+							className: np.processingText
 						}, 2 === _ ? i.a.createElement(be, {
 							desc: "User wallet has been successfully created and secured"
 						}, "Your Vault was created and secured") : i.a.createElement(be, {
 							desc: "Loading text displayed to user while the process for creating their vault is in progress"
 						}, "Creating your Vault...")))),
-						panelContent: i.a.createElement(Zf, {
+						panelContent: i.a.createElement(ap, {
 							onSubmit: async t => {
 								u && p(u()), v(!1);
 								try {
@@ -38821,11 +38869,11 @@
 						isPanelShowing: m
 					}), h && i.a.createElement(s.f, null))
 				},
-				Jf = e => e.toLocaleString(void 0, {
+				lp = e => e.toLocaleString(void 0, {
 					minimumFractionDigits: 2,
 					maximumFractionDigits: 2
 				});
-			var ep = {
+			var up = {
 				container: "_container_hemua_42",
 				secureWrapper: "_secureWrapper_hemua_45",
 				loadingContainer: "_loadingContainer_hemua_48",
@@ -38845,7 +38893,7 @@
 				ctaButton: "_ctaButton_hemua_142",
 				legalText: "_legalText_hemua_151"
 			};
-			const tp = ({
+			const dp = ({
 				price: e,
 				status: t,
 				collectionSize: n,
@@ -38855,22 +38903,22 @@
 					status: t
 				});
 				return i.a.createElement(i.a.Fragment, null, i.a.createElement("div", {
-					className: ye(ep.buttonsContainer, ep.checkoutButtonsContainer)
+					className: ye(up.buttonsContainer, up.checkoutButtonsContainer)
 				}, i.a.createElement("div", {
-					className: ep.priceDetails
+					className: up.priceDetails
 				}, i.a.createElement("span", {
-					className: ye(ep.price, {
-						[ep.soldOutPrice]: a
+					className: ye(up.price, {
+						[up.soldOutPrice]: a
 					})
-				}, "$", Jf(e)), i.a.createElement("span", {
-					className: ep.editionLabel
+				}, "$", lp(e)), i.a.createElement("span", {
+					className: up.editionLabel
 				}, i.a.createElement(be, {
 					desc: "Label: Collection Size"
 				}, "Series of", " ", i.a.createElement(ke, {
 					name: "total quantity"
 				}, n), "+"))), i.a.createElement(Qu, {
 					theme: "blue",
-					className: ep.ctaButton,
+					className: up.ctaButton,
 					onClick: r,
 					disabled: a
 				}, a ? i.a.createElement(be, {
@@ -38878,7 +38926,7 @@
 				}, "Sold Out") : i.a.createElement(be, {
 					desc: "CTA: Buy Now"
 				}, "Buy Now"))), i.a.createElement("p", {
-					className: ep.legalText
+					className: up.legalText
 				}, i.a.createElement(be, {
 					desc: "Legal Text"
 				}, "By buying, you agree to our", " ", i.a.createElement("a", {
@@ -38886,32 +38934,32 @@
 					target: "_blank"
 				}, "Previews Terms"), ".")))
 			};
-			var np, rp, ip = "_formCell_jw3g4_42",
-				ap = "_formCellWide_jw3g4_50",
-				op = "_paymentOptionContent_jw3g4_54",
-				sp = "_paymentMethodIcon_jw3g4_61",
-				cp = "_isNightMode_jw3g4_68",
-				lp = "_cardInput_jw3g4_72",
-				up = "_cardInputError_jw3g4_85",
-				dp = "_nameOnCard_jw3g4_88",
-				fp = "_errorMessage_jw3g4_101",
-				pp = "_paymentFormWrapper_jw3g4_110",
-				mp = "_paymentForm_jw3g4_110",
-				vp = "_brand_jw3g4_119",
-				hp = "_poweredByStripeIcon_jw3g4_124",
-				yp = "_ctaWrapper_jw3g4_128",
-				gp = "_soldOut_jw3g4_128",
-				Cp = "_ctaButton_jw3g4_128",
-				_p = "_price_jw3g4_131",
-				bp = "_priceInfo_jw3g4_152",
-				kp = "_editionLabel_jw3g4_158";
-			(rp = np || (np = {})).NAME = "name", rp.CVC = "cvc", rp.NUMBER = "number", rp.EXPIRY = "expiry";
-			const Ep = {
+			var fp, pp, mp = "_formCell_jw3g4_42",
+				vp = "_formCellWide_jw3g4_50",
+				hp = "_paymentOptionContent_jw3g4_54",
+				yp = "_paymentMethodIcon_jw3g4_61",
+				gp = "_isNightMode_jw3g4_68",
+				Cp = "_cardInput_jw3g4_72",
+				_p = "_cardInputError_jw3g4_85",
+				bp = "_nameOnCard_jw3g4_88",
+				kp = "_errorMessage_jw3g4_101",
+				Ep = "_paymentFormWrapper_jw3g4_110",
+				Sp = "_paymentForm_jw3g4_110",
+				Op = "_brand_jw3g4_119",
+				Np = "_poweredByStripeIcon_jw3g4_124",
+				wp = "_ctaWrapper_jw3g4_128",
+				Ap = "_soldOut_jw3g4_128",
+				Ip = "_ctaButton_jw3g4_128",
+				Tp = "_price_jw3g4_131",
+				Lp = "_priceInfo_jw3g4_152",
+				jp = "_editionLabel_jw3g4_158";
+			(pp = fp || (fp = {})).NAME = "name", pp.CVC = "cvc", pp.NUMBER = "number", pp.EXPIRY = "expiry";
+			const Rp = {
 					visa: "https://www.redditstatic.com/crypto-assets/v2/visa-e97d1686f9.png",
 					mastercard: "https://www.redditstatic.com/crypto-assets/v2/mastercard-9985d035d6.png",
 					amex: "https://www.redditstatic.com/crypto-assets/v2/amex-0cfed37811.png"
 				},
-				Sp = {
+				xp = {
 					base: {
 						lineHeight: "40px",
 						color: "#1c1c1c",
@@ -38920,7 +38968,7 @@
 						}
 					}
 				},
-				Op = ({
+				Dp = ({
 					listing: e,
 					onPaymentSubmit: t,
 					onPaymentSuccess: n,
@@ -38987,24 +39035,24 @@
 								}
 							}
 						},
-						className: pp
+						className: Ep
 					}, i.a.createElement("div", {
-						className: mp
+						className: Sp
 					}, i.a.createElement("div", {
-						className: ye(op, {
-							[cp]: E
+						className: ye(hp, {
+							[gp]: E
 						})
-					}, Object.keys(Ep).map(e => i.a.createElement("img", {
+					}, Object.keys(Rp).map(e => i.a.createElement("img", {
 						key: e,
 						alt: l.inline("payment methods", "payment methods"),
-						className: sp,
-						src: Ep[e]
+						className: yp,
+						src: Rp[e]
 					}))), i.a.createElement("div", {
-						className: ye(ip, ap)
+						className: ye(mp, vp)
 					}, i.a.createElement("input", {
-						className: ye(lp, dp, {
-							[up]: u && !u.trim() || "Your card name is incomplete" === _,
-							[cp]: E
+						className: ye(Cp, bp, {
+							[_p]: u && !u.trim() || "Your card name is incomplete" === _,
+							[gp]: E
 						}),
 						type: "text",
 						placeholder: l.inline("NAME ON CARD", "Placeholder: Name on card"),
@@ -39013,50 +39061,50 @@
 						},
 						value: u
 					})), i.a.createElement("div", {
-						className: ye(ip, ap)
+						className: ye(mp, vp)
 					}, i.a.createElement(G, {
-						className: ye(lp, {
-							[up]: f[np.NUMBER],
-							[cp]: E
+						className: ye(Cp, {
+							[_p]: f[fp.NUMBER],
+							[gp]: E
 						}),
 						onChange: e => {
-							b(""), p(np.NUMBER, e)
+							b(""), p(fp.NUMBER, e)
 						},
 						options: {
-							style: Sp,
+							style: xp,
 							placeholder: l.inline("CARD NUMBER", "CARD NUMBER")
 						}
 					})), i.a.createElement("div", {
-						className: ip
+						className: mp
 					}, i.a.createElement(z, {
-						className: ye(lp, {
-							[up]: f[np.EXPIRY],
-							[cp]: E
+						className: ye(Cp, {
+							[_p]: f[fp.EXPIRY],
+							[gp]: E
 						}),
 						onChange: e => {
-							b(""), p(np.EXPIRY, e)
+							b(""), p(fp.EXPIRY, e)
 						},
 						options: {
-							style: Sp
+							style: xp
 						}
 					})), i.a.createElement("div", {
-						className: ip
+						className: mp
 					}, i.a.createElement($, {
-						className: ye(lp, {
-							[up]: f[np.CVC],
-							[cp]: E
+						className: ye(Cp, {
+							[_p]: f[fp.CVC],
+							[gp]: E
 						}),
 						onChange: e => {
-							b(""), p(np.CVC, e)
+							b(""), p(fp.CVC, e)
 						},
 						options: {
-							style: Sp
+							style: xp
 						}
 					})), i.a.createElement("div", {
-						className: ye(ip, ap)
+						className: ye(mp, vp)
 					}, i.a.createElement("input", {
-						className: ye(lp, dp, {
-							[cp]: E
+						className: ye(Cp, bp, {
+							[gp]: E
 						}),
 						type: "text",
 						onChange: e => {
@@ -39065,29 +39113,29 @@
 						placeholder: l.inline("ZIP CODE", "Placeholder: Zip code"),
 						value: m
 					})), i.a.createElement("div", {
-						className: vp
+						className: Op
 					}, i.a.createElement("a", {
 						href: "https://stripe.com",
 						target: "_blank"
 					}, i.a.createElement("img", {
-						className: hp,
+						className: Np,
 						src: "https://www.redditstatic.com/crypto-assets/v2/powered-by-stripe-0e1e663161.png",
 						alt: l.inline("Powered By Stripe", "Icon: Powered By Stripe")
 					}))), _ && i.a.createElement("span", {
-						className: fp
+						className: kp
 					}, _)), i.a.createElement("div", {
-						className: ye(yp, {
-							[cp]: E,
-							[gp]: S
+						className: ye(wp, {
+							[gp]: E,
+							[Ap]: S
 						})
 					}, i.a.createElement("div", {
-						className: bp
+						className: Lp
 					}, i.a.createElement("span", {
-						className: ye(_p, {
-							[cp]: E
+						className: ye(Tp, {
+							[gp]: E
 						})
-					}, "$", Jf(N)), i.a.createElement("span", {
-						className: kp
+					}, "$", lp(N)), i.a.createElement("span", {
+						className: jp
 					}, i.a.createElement(be, {
 						desc: "Label: collection size"
 					}, "Series of", " ", i.a.createElement(ke, {
@@ -39096,7 +39144,7 @@
 						disabled: h || S,
 						loading: h,
 						theme: "blue",
-						className: Cp,
+						className: Ip,
 						onClick: () => {}
 					}, S ? i.a.createElement(be, {
 						desc: "Button: Sold Out"
@@ -39104,7 +39152,7 @@
 						desc: "Button: Purchase NFT"
 					}, "Complete Purchase"))))
 				},
-				Np = (wp = ({
+				Pp = (Mp = ({
 					listing: e,
 					userId: t,
 					stripeApiKey: n,
@@ -39204,34 +39252,34 @@
 						}))(t, e))
 					};
 					return E ? n ? y ? i.a.createElement("div", {
-						className: ep.loadingContainer
+						className: up.loadingContainer
 					}, i.a.createElement("div", {
-						className: ep.loadingContent
+						className: up.loadingContent
 					}, i.a.createElement(s.j, null))) : b ? i.a.createElement(Te, {
-						className: ye(ep.container, {
-							[ep.isNightMode]: N
+						className: ye(up.container, {
+							[up.isNightMode]: N
 						}),
 						onClose: u,
 						isPanelShowing: !0,
-						mainContent: i.a.createElement(tf, {
+						mainContent: i.a.createElement(ff, {
 							nft: A,
-							className: ye(ep.carousel, l)
+							className: ye(up.carousel, l)
 						}),
 						panelContent: i.a.createElement("div", {
-							className: ep.panelContentContainer
+							className: up.panelContentContainer
 						}, i.a.createElement("div", {
-							className: ep.textWrapper
+							className: up.textWrapper
 						}, i.a.createElement("h1", {
-							className: ep.title
+							className: up.title
 						}, i.a.createElement(be, {
 							desc: "Header: purchase page"
 						}, "Complete your purchase")), i.a.createElement("p", {
-							className: ep.subText
+							className: up.subText
 						}, i.a.createElement(be, {
 							desc: "Subtext: You are purchasing Collectible Avatar"
 						}, "After purchasing, this Collectible Avatar is all yours and you can make it your Reddit avatar."))), i.a.createElement(V, {
 							stripe: p
-						}, i.a.createElement(Op, {
+						}, i.a.createElement(Dp, {
 							listing: e,
 							onPaymentSubmit: async (t, n, r) => dt({
 								stripe: t,
@@ -39269,9 +39317,9 @@
 							desc: "Item Sold Out"
 						}, "Sorry, this item has just sold out."))))
 					}) : i.a.createElement("div", {
-						className: ep.secureWrapper
-					}, i.a.createElement(Qf, {
-						className: ep.secure,
+						className: up.secureWrapper
+					}, i.a.createElement(cp, {
+						className: up.secure,
 						onClose: u,
 						onSubmit: () => k(!0),
 						userId: t,
@@ -39317,13 +39365,13 @@
 						duration: 5e3
 					}, i.a.createElement(be, {
 						desc: "Error rendering page"
-					}, "Error Rendering Checkout Page.")) : i.a.createElement(qf, {
+					}, "Error Rendering Checkout Page.")) : i.a.createElement(Jf, {
 						nft: A,
 						isPanelShowing: !0,
 						onClose: u,
 						className: l,
 						onArtistClick: f,
-						ctaButtons: i.a.createElement(tp, {
+						ctaButtons: i.a.createElement(dp, {
 							status: e.status,
 							price: T,
 							collectionSize: e.totalQuantity,
@@ -39333,8 +39381,8 @@
 							marketplace: Ce(e)
 						})
 					})
-				}, e => i.a.createElement(a.a, null, i.a.createElement(wp, g({}, e))));
-			var wp
+				}, e => i.a.createElement(a.a, null, i.a.createElement(Mp, g({}, e))));
+			var Mp
 		},
 		"./node_modules/@reddit/crypto/react/listing-checkout-card/style.css": function(e, t, n) {},
 		"./node_modules/@reddit/crypto/react/nft-product-card/style.css": function(e, t, n) {},
@@ -45849,4 +45897,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/5.8206a0bb15b38832dab9.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/5.b7cbc1f0a9423556b507.js.map
