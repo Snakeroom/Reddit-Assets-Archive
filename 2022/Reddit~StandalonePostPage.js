@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Reddit~StandalonePostPage.c9cd60945e76fc9db917.js
-// Retrieved at 7/19/2022, 10:40:16 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Reddit~StandalonePostPage.ed743bedc9ea807af4c6.js
+// Retrieved at 7/19/2022, 12:30:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Reddit~StandalonePostPage"], {
 		"./src/higherOrderComponents/asModal/helpers.ts": function(e, t, n) {
@@ -464,19 +464,19 @@
 					}, O())
 				}, [t, O, E]);
 				const B = Object(s.useRef)(0),
-					M = Object(s.useRef)(!1),
-					P = Object(s.useCallback)(e => {
+					P = Object(s.useRef)(!1),
+					M = Object(s.useCallback)(e => {
 						e.forEach(e => {
 							const {
 								isIntersecting: t,
 								intersectionRatio: n
 							} = e, s = 1 !== n;
-							t ? (M.current = !0, k.current || (k.current = !0, D.current = setTimeout(() => {
+							t ? (P.current = !0, k.current || (k.current = !0, D.current = setTimeout(() => {
 								A.current(), R.current()
-							}, u())), B.current > 0 && (A.current(B.current), B.current = 0)) : s && (M.current = !1)
+							}, u())), B.current > 0 && (A.current(B.current), B.current = 0)) : s && (P.current = !1)
 						})
 					}, []);
-				Object(a.a)(I, P);
+				Object(a.a)(I, M);
 				const [V, L] = Object(s.useState)(!1), U = Object(s.useCallback)(e => {
 					e.forEach(e => {
 						const {
@@ -493,7 +493,7 @@
 				Object(s.useEffect)(() => {
 					if (void 0 !== K && K !== t) {
 						const e = t - K;
-						M.current ? A.current(e) : B.current += e
+						P.current ? A.current(e) : B.current += e
 					}
 					return () => {
 						clearTimeout(D.current), clearTimeout(F.current), clearTimeout(T.current)
@@ -2938,7 +2938,7 @@
 			const o = e => {
 				return Object(r.c)(e, {
 					experimentEligibilitySelector: r.a,
-					experimentName: s.Me
+					experimentName: s.Ie
 				}) === s.xd
 			}
 		},
@@ -3021,4 +3021,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit~StandalonePostPage.c9cd60945e76fc9db917.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit~StandalonePostPage.ed743bedc9ea807af4c6.js.map

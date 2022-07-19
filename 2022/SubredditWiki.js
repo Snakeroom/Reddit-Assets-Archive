@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditWiki.d1483da7db8e9d30dacb.js
-// Retrieved at 7/19/2022, 10:40:16 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditWiki.66714451c1b7fedc0abd.js
+// Retrieved at 7/19/2022, 12:30:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditWiki"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, r) {
@@ -8733,12 +8733,12 @@
 						rtJsonElementProps: o
 					});
 					switch (i) {
-						case h.Af.SmIcon:
+						case h.wf.SmIcon:
 							return n.a.createElement(p, {
 								subredditName: s,
 								rtJsonElementProps: o
 							});
-						case h.Af.SmIconHc:
+						case h.wf.SmIconHc:
 							return n.a.createElement(p, {
 								subredditName: s,
 								isHoverable: !0,
@@ -9200,7 +9200,7 @@
 						} = t;
 						return Object(Re.c)(e, r)
 					},
-					isInNewModuleNCPV3Experiment: e => Object(Be.a)(e) === Pe.Ce.NewModule,
+					isInNewModuleNCPV3Experiment: e => Object(Be.a)(e) === Pe.ye.NewModule,
 					showGovernance: Te.d.spPoints,
 					showLeaderboard: Te.d.spLeaderboard,
 					showPredictionsLeaderboard: (e, t) => {
@@ -10617,12 +10617,12 @@
 			const i = e => {
 					return !(Object(n.c)(e, {
 						experimentEligibilitySelector: n.a,
-						experimentName: s.de
+						experimentName: s.ce
 					}) === s.xd)
 				},
 				o = e => Object(n.c)(e, {
 					experimentEligibilitySelector: n.a,
-					experimentName: s.ee
+					experimentName: s.de
 				}) === s.xd
 		},
 		"./src/reddit/selectors/gold/powerups/flairs.ts": function(e, t, r) {
@@ -10756,12 +10756,12 @@
 				d = e => {
 					return Object(i.c)(e, {
 						experimentEligibilitySelector: a,
-						experimentName: s.tf
+						experimentName: s.pf
 					}) || ""
 				},
 				c = e => {
 					const t = d(e);
-					return t === s.Af.SmIcon || t === s.Af.SmIconHc
+					return t === s.wf.SmIcon || t === s.wf.SmIconHc
 				},
 				l = (e, t) => {
 					let {
@@ -10951,4 +10951,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditWiki.d1483da7db8e9d30dacb.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditWiki.66714451c1b7fedc0abd.js.map

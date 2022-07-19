@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditTopContent.87cca3dc2c08c19071a1.js
-// Retrieved at 7/19/2022, 10:40:16 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditTopContent.b071252652e4e563efe1.js
+// Retrieved at 7/19/2022, 12:30:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditTopContent"], {
 		"./src/reddit/components/DiscoveryUnit/SubredditTopContentDiscoveryUnit/index.m.less": function(e, t, n) {
@@ -35,9 +35,9 @@
 				y = n("./src/reddit/constants/experiments.ts"),
 				C = n("./src/reddit/helpers/chooseVariant/index.ts"),
 				h = n("./src/reddit/selectors/user.ts");
-			const T = e => Object(h.N)(e) || y.Bf.ShowTopContent === Object(C.c)(e, {
+			const T = e => Object(h.N)(e) || y.xf.ShowTopContent === Object(C.c)(e, {
 				experimentEligibilitySelector: C.a,
-				experimentName: y.uf
+				experimentName: y.qf
 			});
 			var v = n("./src/reddit/selectors/subreddit.ts"),
 				M = n("./src/reddit/components/DiscoveryUnit/SubredditTopContentDiscoveryUnit/index.m.less"),
@@ -198,9 +198,9 @@
 			})), n.d(t, "l", (function() {
 				return D
 			})), n.d(t, "t", (function() {
-				return B
-			})), n.d(t, "u", (function() {
 				return g
+			})), n.d(t, "u", (function() {
+				return B
 			})), n.d(t, "r", (function() {
 				return j
 			})), n.d(t, "a", (function() {
@@ -244,8 +244,8 @@
 				S = r.a.div("ModalTitle", u.a),
 				w = r.a.div("ModalAnnotation", u.a),
 				D = r.a.div("ModalMain", u.a),
-				B = r.a.textarea("TextArea", u.a),
-				g = r.a.wrapped(d.l, "WarningButton", u.a),
+				g = r.a.textarea("TextArea", u.a),
+				B = r.a.wrapped(d.l, "WarningButton", u.a),
 				j = r.a.wrapped(d.l, "PrimaryButton", u.a),
 				P = r.a.wrapped(d.o, "CancelButton", u.a),
 				k = r.a.wrapped(d.r, "RemoveButton", u.a),
@@ -313,4 +313,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditTopContent.87cca3dc2c08c19071a1.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditTopContent.b071252652e4e563efe1.js.map
