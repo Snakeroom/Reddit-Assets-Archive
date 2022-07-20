@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/AuthorHovercard~Reddit.0fa46bc64dfc80d009af.js
-// Retrieved at 7/20/2022, 1:20:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/AuthorHovercard~Reddit.5b33da06236bdb2e1369.js
+// Retrieved at 7/20/2022, 2:50:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["AuthorHovercard~Reddit"], {
 		"./src/lib/browser/isIncognito.ts": function(e, t, n) {
@@ -157,9 +157,9 @@
 					v.l(r), await Object(c.b)(e, t, () => {
 						u || a(Object(l.o)()), a(Object(l.n)()), v.j(r)
 					}, (e, t) => {
-						a(Object(l.l)()), a(T(t ? l.a.Denied : l.a.Closed)), e && (t ? v.e(r) : v.f(r))
+						a(Object(l.l)()), a(T(t ? l.a.Denied : l.a.Closed)), e && (t ? v.e(r) : v.f(r)), n()
 					}, e => {
-						a(Object(l.m)()), a(S()), e && v.d(r)
+						a(Object(l.m)()), a(S()), e && v.d(r), n()
 					}, () => {
 						a(Object(l.k)()), n()
 					})
@@ -1887,4 +1887,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/AuthorHovercard~Reddit.0fa46bc64dfc80d009af.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/AuthorHovercard~Reddit.5b33da06236bdb2e1369.js.map

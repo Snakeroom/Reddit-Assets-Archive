@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModerationPages.8529574c647e23046f32.js
-// Retrieved at 7/20/2022, 1:20:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModerationPages.8ed3cdaf8b3e3140e989.js
+// Retrieved at 7/20/2022, 2:50:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModerationPages", "CollectionCommentsPage~CommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~RpanListingUnit~S~5809214e", "CommentsPage~Governance~Reddit~ReportFlow~Subreddit~reddit-components-BlankPost~reddit-components-Cl~5351df81", "PostCreation~Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~r~4c415e24", "Governance~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compo~bd4baca2", "Governance~ModListing~Reddit~ReportFlow~Subreddit", "Governance~Reddit~SubredditForkingCTA", "AuthorHovercard~Reddit"], {
 		"./src/chat/controls/Svg/index.m.less": function(e, t, n) {
@@ -7077,9 +7077,9 @@
 					v.l(i), await Object(d.b)(e, t, () => {
 						u || s(Object(c.o)()), s(Object(c.n)()), v.j(i)
 					}, (e, t) => {
-						s(Object(c.l)()), s(R(t ? c.a.Denied : c.a.Closed)), e && (t ? v.e(i) : v.f(i))
+						s(Object(c.l)()), s(R(t ? c.a.Denied : c.a.Closed)), e && (t ? v.e(i) : v.f(i)), n()
 					}, e => {
-						s(Object(c.m)()), s(P()), e && v.d(i)
+						s(Object(c.m)()), s(P()), e && v.d(i), n()
 					}, () => {
 						s(Object(c.k)()), n()
 					})
@@ -74304,4 +74304,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.8529574c647e23046f32.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.8ed3cdaf8b3e3140e989.js.map
