@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.49eaa68e25dc68ef8e50.js
-// Retrieved at 7/20/2022, 4:10:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.42e190f9bcd0e6c1c84a.js
+// Retrieved at 7/20/2022, 5:10:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Chat~Governance~Reddit"], {
 		"./assets/fonts/IBMPlexSans/font.less": function(e, t, i) {},
@@ -3467,11 +3467,11 @@
 				apiPassThroughHeaders: Object(r.e)({}.API_PASS_THROUGH_HEADERS || ""),
 				appName: {}.APP_NAME || "desktop2x",
 				assetPath: "https://www.redditstatic.com/desktop2x",
-				buildNumber: Object(r.c)("168948"),
+				buildNumber: Object(r.c)("168953"),
 				chatHelpUrl: {}.CHAT_HELP_URL || "https://reddit.zendesk.com/hc/en-us/sections/360008805652-Chat",
 				hlsVersion: "hls 0.12.4",
 				dashVersion: "dash 3.2.0",
-				buildTimestamp: Object(r.b)("1658345781"),
+				buildTimestamp: Object(r.b)("1658349468"),
 				cookieDomain: ".reddit.com",
 				giphyApiKey: "k2kwyMA6VeyHM6ZRT96OXDGaersnx73Z",
 				mediaUrl: "https://www.redditmedia.com",
@@ -6087,14 +6087,14 @@
 					}))
 				},
 				Y = (e, t, i) => {
-					console.log("%cStarting Raven %crelease %c2e9c62ec88d080fb7351d2591cfa083dc665e7f3-production" + ` %cpublic url %c${y.a.sentryClientPublicURL}`, "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
+					console.log("%cStarting Raven %crelease %c2866aa9b65967fe414a7c5a2ddd0a2e0836df41b-production" + ` %cpublic url %c${y.a.sentryClientPublicURL}`, "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
 					let n = [];
 					n = [new RegExp(`^${y.a.assetPath}`, "i")];
 					o.e({
 						attachStacktrace: !0,
 						dsn: y.a.sentryClientPublicURL,
 						whitelistUrls: n,
-						release: "2e9c62ec88d080fb7351d2591cfa083dc665e7f3-production",
+						release: "2866aa9b65967fe414a7c5a2ddd0a2e0836df41b-production",
 						environment: "production",
 						ignoreErrors: ["$ is not defined"],
 						integrations: [...Object(L.d)(), new d.Integrations.Breadcrumbs({
@@ -6620,7 +6620,7 @@
 							settings: r,
 							statusCode: s,
 							type: o,
-							releaseClient: "2e9c62ec88d080fb7351d2591cfa083dc665e7f3-production",
+							releaseClient: "2866aa9b65967fe414a7c5a2ddd0a2e0836df41b-production",
 							appName: t.statsAppName,
 							error: n ? JSON.parse(Object(l.a)(n)) : void 0
 						},
@@ -21388,7 +21388,7 @@
 					} = i, {
 						partialCommentId: d,
 						partialPostId: a
-					} = n, u = d ? Object(c.h)(d) : "", m = a ? Object(_.u)(a) : "";
+					} = n, u = d ? Object(c.h)(d) : "", m = a ? Object(_.v)(a) : "";
 					if (!u && m) {
 						const n = e.posts.models[m];
 						if (!n) return;
@@ -22174,7 +22174,7 @@
 				if (i === r.Nb.COMMENTS || i === r.Nb.DUPLICATES) {
 					const {
 						partialPostId: i
-					} = t.match.params, r = Object(n.u)(i);
+					} = t.match.params, r = Object(n.v)(i);
 					return e.posts.models[r]
 				}
 				return null
@@ -23334,7 +23334,8 @@
 						impressionId: r,
 						isBlank: s,
 						isCreatedFromAdsUi: o,
-						isSurveyAd: d
+						isSurveyAd: d,
+						subcaption: a
 					} = e;
 					return {
 						callToAction: i,
@@ -23345,7 +23346,8 @@
 						isBlank: s,
 						isSurveyAd: d,
 						isCreatedFromAdsUi: o,
-						isSponsored: !0
+						isSponsored: !0,
+						subcaption: a
 					}
 				},
 				G = e => e ? e.toLowerCase() : null,
@@ -26297,7 +26299,7 @@
 					const {
 						partialCommentId: a,
 						partialPostId: l
-					} = r.params, u = Object(y.u)(l), c = a && Object(w.h)(a), {
+					} = r.params, u = Object(y.v)(l), c = a && Object(w.h)(a), {
 						hasSortParam: _,
 						sortToUse: m
 					} = Object(f.a)(t, u);
@@ -27177,7 +27179,7 @@
 						currentPage: r
 					} = e.platform;
 					if (h(r)) {
-						const i = Object(a.u)(r && r.urlParams.partialPostId || "");
+						const i = Object(a.v)(r && r.urlParams.partialPostId || "");
 						return {
 							noun: "post",
 							post: c.I(e, i),
@@ -30741,11 +30743,11 @@
 				return n
 			})), i.d(t, "g", (function() {
 				return r
-			})), i.d(t, "u", (function() {
-				return c
 			})), i.d(t, "v", (function() {
-				return _
+				return c
 			})), i.d(t, "w", (function() {
+				return _
+			})), i.d(t, "x", (function() {
 				return m
 			})), i.d(t, "o", (function() {
 				return p
@@ -30773,7 +30775,7 @@
 				return R
 			})), i.d(t, "r", (function() {
 				return F
-			})), i.d(t, "t", (function() {
+			})), i.d(t, "u", (function() {
 				return N
 			})), i.d(t, "q", (function() {
 				return C
@@ -30781,8 +30783,10 @@
 				return A
 			})), i.d(t, "s", (function() {
 				return j
-			})), i.d(t, "f", (function() {
+			})), i.d(t, "t", (function() {
 				return P
+			})), i.d(t, "f", (function() {
+				return D
 			}));
 			var n, r, s = i("./src/lib/isUrl/index.ts"),
 				o = i("./src/reddit/constants/posts.ts"),
@@ -30853,11 +30857,12 @@
 					const t = e.media;
 					return (!t || !t.type) && !!e.source && Object(s.a)(e.source.url)
 				},
-				j = e => e.isStickied && !e.isSponsored;
-			var P;
+				j = e => !!e.subcaption,
+				P = e => e.isStickied && !e.isSponsored;
+			var D;
 			! function(e) {
 				e.FOLLOWED = "FOLLOWED", e.UNFOLLOWED = "UNFOLLOWED"
-			}(P || (P = {}))
+			}(D || (D = {}))
 		},
 		"./src/reddit/models/PostCollection/index.ts": function(e, t, i) {
 			"use strict";
@@ -37352,7 +37357,7 @@
 					const {
 						partialPostId: r
 					} = n.match.params;
-					return e.posts.models[Object(s.u)(r)]
+					return e.posts.models[Object(s.v)(r)]
 				}),
 				O = e => e.platform.allowNavigationCallback,
 				I = e => e.platform.currentPage ? e.platform.currentPage.url : "",
@@ -37362,7 +37367,7 @@
 						const {
 							params: e
 						} = t.routeMatch.match;
-						if (e && e.partialPostId) return Object(s.u)(e.partialPostId)
+						if (e && e.partialPostId) return Object(s.v)(e.partialPostId)
 					}
 					return ""
 				},
@@ -39630,7 +39635,7 @@
 						partialPostId: n
 					} = !!i && i.urlParams;
 					if (!n) return !1;
-					const r = n && Object(d.u)(n),
+					const r = n && Object(d.v)(n),
 						l = Object(_.G)(e, {
 							postId: r
 						});
@@ -41725,7 +41730,7 @@
 						} {
 							const {
 								partialPostId: t
-							} = e.platform.currentPage.urlParams, i = Object(z.u)(t), n = e.posts.models[i];
+							} = e.platform.currentPage.urlParams, i = Object(z.v)(t), n = e.posts.models[i];
 							if (!n) return null;
 							const r = ((e, t) => {
 								const {
@@ -43149,7 +43154,7 @@
 			e.exports = JSON.parse('{"id":"34910619f1e9"}')
 		},
 		"./src/redditGQL/operations/GeneralSearch.json": function(e) {
-			e.exports = JSON.parse('{"id":"3f17a00e7140"}')
+			e.exports = JSON.parse('{"id":"7604bbfc3082"}')
 		},
 		"./src/redditGQL/operations/GetPostReactInfo.json": function(e) {
 			e.exports = JSON.parse('{"id":"72e76fc8e5c5"}')
@@ -43191,7 +43196,7 @@
 			e.exports = JSON.parse('{"id":"059a51904852"}')
 		},
 		"./src/redditGQL/operations/TopicBySlug.json": function(e) {
-			e.exports = JSON.parse('{"id":"f2fc3b213791"}')
+			e.exports = JSON.parse('{"id":"1a0fda06a47d"}')
 		},
 		"./src/redditGQL/operations/UpdatePostDistinguishState.json": function(e) {
 			e.exports = JSON.parse('{"id":"e869489c84a4"}')
@@ -44297,7 +44302,7 @@
 						case r.Nb.DUPLICATES:
 							const {
 								partialPostId: v
-							} = f.urlParams, y = v && Object(u.u)(v), E = y && Object(m.F)(e, {
+							} = f.urlParams, y = v && Object(u.v)(v), E = y && Object(m.F)(e, {
 								postId: y
 							});
 							return E ? `${n.a.redditUrl}${b.a.parse(E).path}` : null;
@@ -48545,4 +48550,4 @@
 		"ignored /drone/src/node_modules/readable-stream/lib/internal/streams util": function(e, t) {}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.49eaa68e25dc68ef8e50.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.42e190f9bcd0e6c1c84a.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfileOverview.eacbbdc5afec867dfe2a.js
-// Retrieved at 7/20/2022, 1:20:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfileOverview.03a9fb9630004dad6f6a.js
+// Retrieved at 7/20/2022, 5:10:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfileOverview"], {
 		"./src/lib/makeOverviewConversationsItemKey/index.ts": function(e, t, s) {
@@ -844,6 +844,8 @@
 				leftSideContent: "_1oCxYg3Tu1IIcDUUOu9gIA",
 				ctaExperimentNoPadding: "_2pWpf_lwFeF9qkMKAgnF1j",
 				ctaExperimentPadded: "_3xECPPLU5gHGEwtMV_um7R",
+				productTitle: "_3IN2NbpghDp3ddkK_5fJX8",
+				subcaption: "_20wkPJgadrJIAZtTeFXQXU",
 				caption: "_2LmxORnqxzKG1lDeTP_w6R"
 			}
 		},
@@ -855,47 +857,52 @@
 				i = s("./src/lib/classNames/index.ts"),
 				a = s("./src/reddit/components/CallToActionButton/index.tsx"),
 				d = s("./src/reddit/controls/OutboundLink/styled.tsx"),
-				c = s("./src/reddit/components/AdLinkWrapperContent/index.m.less"),
-				l = s.n(c);
+				c = s("./src/reddit/models/Post/index.ts"),
+				l = s("./src/reddit/components/AdLinkWrapperContent/index.m.less"),
+				m = s.n(l);
 			t.a = e => {
 				const {
 					adLinkContent: t,
 					post: s,
 					isCompact: n
 				} = e, {
-					source: c,
-					callToAction: m,
-					caption: p
-				} = t;
-				if (!c || !c.url) return null;
-				let u = c.displayText;
-				c.displayText.length >= 40 && (u = c.displayText.slice(0, 40 - "...".length) + "...");
-				const b = Object(i.a)(l.a.leftSideContent, {
-						[l.a.ctaExperimentNoPadding]: e.ctaExperimentDesign && "card" !== e.ctaExperimentDesign,
-						[l.a.ctaExperimentPadded]: "card" === e.ctaExperimentDesign
+					source: l,
+					callToAction: p,
+					caption: u
+				} = t, b = Object(c.s)(s);
+				if (!l || !l.url) return null;
+				let h = l.displayText;
+				l.displayText.length >= 40 && (h = l.displayText.slice(0, 40 - "...".length) + "...");
+				const x = Object(i.a)(m.a.leftSideContent, {
+						[m.a.ctaExperimentNoPadding]: e.ctaExperimentDesign && "card" !== e.ctaExperimentDesign,
+						[m.a.ctaExperimentPadded]: "card" === e.ctaExperimentDesign
 					}),
-					h = Object(i.a)(l.a.displayUrl, {
-						[l.a.ctaExperimentLink]: !!e.ctaExperimentDesign
+					f = Object(i.a)(m.a.displayUrl, {
+						[m.a.ctaExperimentLink]: !!e.ctaExperimentDesign
 					});
 				return r.a.createElement(r.a.Fragment, null, r.a.createElement("div", {
-					className: b
-				}, p && !n && r.a.createElement("span", {
-					className: l.a.caption,
-					title: p
-				}, p), r.a.createElement(d.a, {
-					href: c.url.replace(o.a.redditUrl, ""),
+					className: x
+				}, u && !n && r.a.createElement("span", {
+					className: m.a.caption,
+					title: u
+				}, u), !b && r.a.createElement(d.a, {
+					href: l.url.replace(o.a.redditUrl, ""),
 					isSponsored: s.isSponsored,
 					postId: s.id,
-					source: c,
-					className: h
-				}, u)), m && r.a.createElement(a.a, {
-					className: l.a.callToAction,
-					href: c.url,
+					source: l,
+					className: f
+				}, h), b && r.a.createElement(r.a.Fragment, null, r.a.createElement("span", {
+					className: m.a.productTitle
+				}, h), r.a.createElement("span", {
+					className: m.a.subcaption
+				}, s.subcaption))), p && r.a.createElement(a.a, {
+					className: m.a.callToAction,
+					href: l.url,
 					isSponsored: s.isSponsored,
 					postId: s.id,
-					source: c,
+					source: l,
 					showCTAExperiment: !!e.ctaExperimentDesign
-				}, m))
+				}, p))
 			}
 		},
 		"./src/reddit/components/ClassicPost/index.tsx": function(e, t, s) {
@@ -2684,10 +2691,10 @@
 							postIds: o,
 							posts: n
 						} = e;
-						if (!Object(C.s)(s) || (null === (t = s.pollData) || void 0 === t ? void 0 : t.isPrediction)) return;
+						if (!Object(C.t)(s) || (null === (t = s.pollData) || void 0 === t ? void 0 : t.isPrediction)) return;
 						const r = o && 0 === o.indexOf(s.id),
 							i = o && 1 === o.indexOf(s.id),
-							a = n && n[1] && Object(C.s)(n[1]);
+							a = n && n[1] && Object(C.t)(n[1]);
 						return {
 							hasTopCompactPostStyles: r && a,
 							hasBottomCompactPostStyles: i,
@@ -5382,8 +5389,8 @@
 				d = Object(o.a)(a, r.d, (e, t) => e && !t)
 		},
 		"./src/redditGQL/operations/SubredditGeoRecommendationViaFocusVertical.json": function(e) {
-			e.exports = JSON.parse('{"id":"c10a566d5f55"}')
+			e.exports = JSON.parse('{"id":"eb5aa411d697"}')
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileOverview.eacbbdc5afec867dfe2a.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileOverview.03a9fb9630004dad6f6a.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostCreation.306de9bb55d0427b37be.js
-// Retrieved at 7/20/2022, 4:10:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostCreation.97ba48d8e45b17d29e57.js
+// Retrieved at 7/20/2022, 5:10:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostCreation", "ChatMessageInput~MembershipPaywallPage~RichTextEditor", "ContributorRequestButton"], {
 		"./node_modules/autosize/dist/autosize.js": function(e, t, n) {
@@ -3934,7 +3934,7 @@
 						e.type === o.I.BAD_CAPTCHA_ERROR ? t(H()) : e.type === o.I.VALIDATION_ERROR ? t(K(e)) : e.type === o.I.SUBMIT_VALIDATION_ERROR ? t(W(e)) : t(B(e))
 					}
 					const v = Object(M.o)(d.kind),
-						_ = x.ok && x.body && x.body.id && Object(N.u)(x.body.id),
+						_ = x.ok && x.body && x.body.id && Object(N.v)(x.body.id),
 						w = n();
 					O.B(w, v, _, e.correlationId)
 				}
@@ -34483,7 +34483,7 @@
 			e.exports = JSON.parse('{"id":"445164f0825f"}')
 		},
 		"./src/redditGQL/operations/CreateComment.json": function(e) {
-			e.exports = JSON.parse('{"id":"edd5d18f5e93"}')
+			e.exports = JSON.parse('{"id":"4426c323acf3"}')
 		},
 		"./src/redditGQL/operations/CreateLiveAudioRoomOnProfile.json": function(e) {
 			e.exports = JSON.parse('{"id":"addd6ae52fc0"}')
@@ -34529,4 +34529,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.306de9bb55d0427b37be.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.97ba48d8e45b17d29e57.js.map
