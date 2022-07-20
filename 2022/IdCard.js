@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/IdCard.f15acf3c74009e2893f4.js
-// Retrieved at 7/19/2022, 12:30:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/IdCard.fdb5eb51ee648d5aa1e4.js
+// Retrieved at 7/20/2022, 12:50:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["IdCard", "AchievementsActions", "ContributorRequestButton"], {
 		"./node_modules/autosize/dist/autosize.js": function(e, t, n) {
@@ -5030,10 +5030,14 @@
 				return s
 			})), n.d(t, "c", (function() {
 				return i
-			})), n.d(t, "d", (function() {
+			})), n.d(t, "f", (function() {
 				return o
 			})), n.d(t, "a", (function() {
 				return a
+			})), n.d(t, "d", (function() {
+				return d
+			})), n.d(t, "e", (function() {
+				return c
 			}));
 			var r = n("./src/reddit/selectors/telemetry.ts");
 			const s = e => ({
@@ -5059,6 +5063,29 @@
 					action: "click",
 					noun: "mod_hub_nav",
 					...s(e)
+				}),
+				d = (e, t) => n => ({
+					...s(n),
+					source: "modmanagement",
+					action: "click",
+					noun: "permission",
+					setting: {
+						value: e,
+						values: t
+					}
+				}),
+				c = (e, t, n) => r => ({
+					...s(r),
+					source: "modmanagement",
+					action: "click",
+					noun: e,
+					setting: {
+						value: "",
+						values: n
+					},
+					chat: {
+						recipient_user_id: t
+					}
 				})
 		},
 		"./src/reddit/helpers/trackers/privateCommunity.ts": function(e, t, n) {
@@ -5770,4 +5797,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/IdCard.f15acf3c74009e2893f4.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/IdCard.fdb5eb51ee648d5aa1e4.js.map

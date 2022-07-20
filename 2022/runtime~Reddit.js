@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/runtime~Reddit.c8b99d498642e17deb01.js
-// Retrieved at 7/20/2022, 11:50:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/runtime~Reddit.5b2870d6ca5027551899.js
+// Retrieved at 7/20/2022, 12:50:05 PM by Reddit Dataminer v1.0.0
 ! function(e) {
 	function o(o) {
 		for (var a, n, r = o[0], s = o[1], c = o[2], l = 0, b = []; l < r.length; l++) n = r[l], Object.prototype.hasOwnProperty.call(d, n) && d[n] && b.push(d[n][0]), d[n] = 0;
@@ -1517,7 +1517,7 @@
 						SubredditPremiumUploadModal: "07c7a51ac9dc6d8a040f",
 						PostCreation: "50b0d5ba988268d10c56",
 						"vendors~ModerationPages": "94c34813eaf24a1890ea",
-						ModerationPages: "daddb7895ef01294cbae",
+						ModerationPages: "9dd961c77f3e8f52d29a",
 						"vendors~ModStatsChart~Settings~ViewsTooltip": "ca7c845d62fd39d960b6",
 						"vendors~Settings": "bd649022e03326a556e1",
 						Settings: "65f20a5e003ddf479ad1",
@@ -1548,7 +1548,7 @@
 						EconomicsSubredditPremiumSidebarCards: "85212fdd9d8a2e94d781",
 						ExpandedCrosspost: "f4167fa2dcedbf276ad1",
 						HarbergerTaxBannerPurchaseCTA: "0292378bcf8bcde68075",
-						IdCard: "f15acf3c74009e2893f4",
+						IdCard: "fdb5eb51ee648d5aa1e4",
 						ModModeBanners: "c5bd20f7ac934895eeeb",
 						MuxEmbed: "982b3400754d822142c4",
 						NewCommentPill: "bc8181e0dadd1b6a2dfb",
@@ -1749,4 +1749,4 @@
 	var m = c;
 	t()
 }([]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/runtime~Reddit.c8b99d498642e17deb01.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/runtime~Reddit.5b2870d6ca5027551899.js.map
