@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/EconomicsSubredditPremiumSidebarCards.85212fdd9d8a2e94d781.js
-// Retrieved at 7/14/2022, 11:10:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/EconomicsSubredditPremiumSidebarCards.8dfc23e64093af4930f1.js
+// Retrieved at 7/20/2022, 7:50:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["EconomicsSubredditPremiumSidebarCards"], {
 		"./node_modules/lodash/_arrayShuffle.js": function(e, t, s) {
@@ -2592,6 +2592,8 @@
 						return "https://meta-api.reddit.com/ethereum/ethereum:5391184";
 					case r.ArbitrumNitroDevnet:
 						return "https://meta-api.reddit.com/ethereum/nitroDevnet";
+					case r.ArbitrumMainnet:
+						return "https://a4ba.arbitrum.io/rpc";
 					default:
 						return `https://meta-api.reddit.com/ethereum/${e}`
 				}
@@ -2609,6 +2611,8 @@
 						return 5391184;
 					case r.ArbitrumNitroDevnet:
 						return 421612;
+					case r.ArbitrumMainnet:
+						return 42170;
 					default: {
 						const [, t] = e.split(":");
 						return t
@@ -2642,7 +2646,7 @@
 					endpoint: `${n.a.metaUrl}/crypto/${t}/registrations/${s}`
 				})
 			}! function(e) {
-				e.Ethereum = "ethereum:1", e.Rinkeby = "ethereum:4", e.ArbitrumRinkeby = "ethereum:5391184", e.ArbitrumNitroDevnet = "ethereum:421612", e.EthTraderEthereum = "ethereum:1:ethtrader", e.EthTraderRinkeby = "ethereum:4:ethtrader"
+				e.Ethereum = "ethereum:1", e.Rinkeby = "ethereum:4", e.ArbitrumRinkeby = "ethereum:5391184", e.ArbitrumNitroDevnet = "ethereum:421612", e.ArbitrumMainnet = "ethereum:42170", e.EthTraderEthereum = "ethereum:1:ethtrader", e.EthTraderRinkeby = "ethereum:4:ethtrader"
 			}(r || (r = {}));
 			const b = (e, t, s) => ({
 					type: "burn-link",
@@ -3717,4 +3721,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EconomicsSubredditPremiumSidebarCards.85212fdd9d8a2e94d781.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EconomicsSubredditPremiumSidebarCards.8dfc23e64093af4930f1.js.map

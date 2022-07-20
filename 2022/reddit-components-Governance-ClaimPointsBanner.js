@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Governance-ClaimPointsBanner.601a468b600bdb86cf77.js
-// Retrieved at 7/14/2022, 11:10:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Governance-ClaimPointsBanner.3315c562a8bdf63eed9f.js
+// Retrieved at 7/20/2022, 7:50:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Governance-ClaimPointsBanner"], {
 		"./src/lib/constants/specialMembership.ts": function(A, e, t) {
@@ -646,6 +646,8 @@
 						return "https://meta-api.reddit.com/ethereum/ethereum:5391184";
 					case n.ArbitrumNitroDevnet:
 						return "https://meta-api.reddit.com/ethereum/nitroDevnet";
+					case n.ArbitrumMainnet:
+						return "https://a4ba.arbitrum.io/rpc";
 					default:
 						return `https://meta-api.reddit.com/ethereum/${A}`
 				}
@@ -663,6 +665,8 @@
 						return 5391184;
 					case n.ArbitrumNitroDevnet:
 						return 421612;
+					case n.ArbitrumMainnet:
+						return 42170;
 					default: {
 						const [, e] = A.split(":");
 						return e
@@ -696,7 +700,7 @@
 					endpoint: `${i.a.metaUrl}/crypto/${e}/registrations/${t}`
 				})
 			}! function(A) {
-				A.Ethereum = "ethereum:1", A.Rinkeby = "ethereum:4", A.ArbitrumRinkeby = "ethereum:5391184", A.ArbitrumNitroDevnet = "ethereum:421612", A.EthTraderEthereum = "ethereum:1:ethtrader", A.EthTraderRinkeby = "ethereum:4:ethtrader"
+				A.Ethereum = "ethereum:1", A.Rinkeby = "ethereum:4", A.ArbitrumRinkeby = "ethereum:5391184", A.ArbitrumNitroDevnet = "ethereum:421612", A.ArbitrumMainnet = "ethereum:42170", A.EthTraderEthereum = "ethereum:1:ethtrader", A.EthTraderRinkeby = "ethereum:4:ethtrader"
 			}(n || (n = {}));
 			const l = (A, e, t) => ({
 					type: "burn-link",
@@ -1637,4 +1641,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Governance-ClaimPointsBanner.601a468b600bdb86cf77.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Governance-ClaimPointsBanner.3315c562a8bdf63eed9f.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/GovernanceWalletRegistration.ae31f14fbd861f9176cc.js
-// Retrieved at 7/12/2022, 6:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/GovernanceWalletRegistration.51e865b617a7c67aa3af.js
+// Retrieved at 7/20/2022, 7:50:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["GovernanceWalletRegistration"], {
 		"./src/chat/controls/Svg/index.m.less": function(e, t, n) {
@@ -240,8 +240,8 @@
 				j = Object(a.a)(C.r),
 				I = Object(a.a)(C.s),
 				M = Object(a.a)(C.t),
-				T = Object(a.a)(C.u),
-				A = Object(a.a)(C.v),
+				A = Object(a.a)(C.u),
+				T = Object(a.a)(C.v),
 				S = Object(a.a)(C.w),
 				R = Object(a.a)(C.x),
 				P = (e, t) => async (n, r, a) => {
@@ -326,9 +326,9 @@
 					let {
 						apiContext: a
 					} = r;
-					t(A());
+					t(T());
 					const s = await Object(p.a)(a(), e);
-					s.ok ? t(S(s.body)) : t(T({
+					s.ok ? t(S(s.body)) : t(A({
 						error: s.error
 					}))
 				}
@@ -684,8 +684,8 @@
 				j = n("./src/reddit/components/Governance/WalletRegistration/Common/pageReload.ts");
 			const {
 				fbt: I
-			} = n("./node_modules/fbt/lib/FbtPublic.js"), M = "https://metamask.io/", T = "https://chrome.google.com/webstore/detail/metamask/nkbihfbeogaeaoehlefnkodbefgpgknn";
-			class A extends a.a.Component {
+			} = n("./node_modules/fbt/lib/FbtPublic.js"), M = "https://metamask.io/", A = "https://chrome.google.com/webstore/detail/metamask/nkbihfbeogaeaoehlefnkodbefgpgknn";
+			class T extends a.a.Component {
 				constructor() {
 					super(...arguments), this.state = {
 						clickedInstallButton: !1,
@@ -747,7 +747,7 @@
 						className: g.a.buttonIcon
 					})) : a.a.createElement(f.p, {
 						className: g.a.button,
-						href: T,
+						href: A,
 						target: "_blank",
 						onClick: () => this.setState({
 							clickedInstallButton: !0
@@ -1099,7 +1099,7 @@
 						subredditId: r
 					} = this.props, {
 						activeTab: s
-					} = this.state, i = s === J.About ? x : s === J.MetaMask ? A : s === J.Wallet ? X : s === J.Connect ? k : s === J.Verify ? q : P;
+					} = this.state, i = s === J.About ? x : s === J.MetaMask ? T : s === J.Wallet ? X : s === J.Connect ? k : s === J.Verify ? q : P;
 					return a.a.createElement("article", {
 						className: Object(o.a)(Y.a.container, e)
 					}, a.a.createElement(Q.a, {
@@ -1272,9 +1272,9 @@
 			})), n.d(t, "r", (function() {
 				return M
 			})), n.d(t, "a", (function() {
-				return T
-			})), n.d(t, "s", (function() {
 				return A
+			})), n.d(t, "s", (function() {
+				return T
 			})), n.d(t, "c", (function() {
 				return S
 			}));
@@ -1315,8 +1315,8 @@
 				j = a.a.textarea("TextArea", u.a),
 				I = a.a.wrapped(i.l, "WarningButton", u.a),
 				M = a.a.wrapped(i.l, "PrimaryButton", u.a),
-				T = a.a.wrapped(i.o, "CancelButton", u.a),
-				A = a.a.wrapped(i.r, "RemoveButton", u.a),
+				A = a.a.wrapped(i.o, "CancelButton", u.a),
+				T = a.a.wrapped(i.r, "RemoveButton", u.a),
 				S = e => {
 					let {
 						className: t,
@@ -1516,6 +1516,8 @@
 						return "https://meta-api.reddit.com/ethereum/ethereum:5391184";
 					case r.ArbitrumNitroDevnet:
 						return "https://meta-api.reddit.com/ethereum/nitroDevnet";
+					case r.ArbitrumMainnet:
+						return "https://a4ba.arbitrum.io/rpc";
 					default:
 						return `https://meta-api.reddit.com/ethereum/${e}`
 				}
@@ -1533,6 +1535,8 @@
 						return 5391184;
 					case r.ArbitrumNitroDevnet:
 						return 421612;
+					case r.ArbitrumMainnet:
+						return 42170;
 					default: {
 						const [, t] = e.split(":");
 						return t
@@ -1566,7 +1570,7 @@
 					endpoint: `${a.a.metaUrl}/crypto/${t}/registrations/${n}`
 				})
 			}! function(e) {
-				e.Ethereum = "ethereum:1", e.Rinkeby = "ethereum:4", e.ArbitrumRinkeby = "ethereum:5391184", e.ArbitrumNitroDevnet = "ethereum:421612", e.EthTraderEthereum = "ethereum:1:ethtrader", e.EthTraderRinkeby = "ethereum:4:ethtrader"
+				e.Ethereum = "ethereum:1", e.Rinkeby = "ethereum:4", e.ArbitrumRinkeby = "ethereum:5391184", e.ArbitrumNitroDevnet = "ethereum:421612", e.ArbitrumMainnet = "ethereum:42170", e.EthTraderEthereum = "ethereum:1:ethtrader", e.EthTraderRinkeby = "ethereum:4:ethtrader"
 			}(r || (r = {}));
 			const b = (e, t, n) => ({
 					type: "burn-link",
@@ -2130,4 +2134,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/GovernanceWalletRegistration.ae31f14fbd861f9176cc.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/GovernanceWalletRegistration.51e865b617a7c67aa3af.js.map

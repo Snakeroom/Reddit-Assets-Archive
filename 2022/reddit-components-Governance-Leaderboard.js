@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Governance-Leaderboard.d5a85d14b086d36a4c30.js
-// Retrieved at 7/14/2022, 11:10:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Governance-Leaderboard.898deb94f621cf7c90f7.js
+// Retrieved at 7/20/2022, 7:50:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Governance-Leaderboard"], {
 		"./src/lib/constants/specialMembership.ts": function(e, t, r) {
@@ -647,12 +647,12 @@
 				x = r("./src/reddit/components/Badges/UserDisplay/index.tsx"),
 				R = r("./src/reddit/components/TrackingHelper/index.tsx"),
 				B = r("./src/reddit/featureFlags/index.ts"),
-				L = r("./src/reddit/helpers/governance/tokens.ts"),
-				k = r("./src/reddit/selectors/telemetry.ts"),
-				M = r("./src/reddit/components/Governance/Leaderboard/EntryUser/index.m.less"),
-				U = r.n(M);
+				M = r("./src/reddit/helpers/governance/tokens.ts"),
+				L = r("./src/reddit/selectors/telemetry.ts"),
+				k = r("./src/reddit/components/Governance/Leaderboard/EntryUser/index.m.less"),
+				U = r.n(k);
 			const w = (e, t, r) => n => {
-				const s = k.n(n);
+				const s = L.n(n);
 				return {
 					action: e,
 					correlationId: t,
@@ -663,7 +663,7 @@
 						...s.actionInfo,
 						reason: r
 					},
-					subreddit: k.hb(n)
+					subreddit: L.hb(n)
 				}
 			};
 			const G = Object(c.c)({
@@ -706,7 +706,7 @@
 						className: U.a.rank
 					}, i.a.createElement("div", {
 						className: U.a.points
-					}, Object(N.a)(Object(L.c)(e.entry.score, null === (t = e.pointsDetails) || void 0 === t ? void 0 : t.displayConversion))), i.a.createElement("div", {
+					}, Object(N.a)(Object(M.c)(e.entry.score, null === (t = e.pointsDetails) || void 0 === t ? void 0 : t.displayConversion))), i.a.createElement("div", {
 						className: U.a.position
 					}, `#${Object(N.a)(e.entry.position.toString())}`)))
 				}))),
@@ -935,6 +935,8 @@
 						return "https://meta-api.reddit.com/ethereum/ethereum:5391184";
 					case n.ArbitrumNitroDevnet:
 						return "https://meta-api.reddit.com/ethereum/nitroDevnet";
+					case n.ArbitrumMainnet:
+						return "https://a4ba.arbitrum.io/rpc";
 					default:
 						return `https://meta-api.reddit.com/ethereum/${e}`
 				}
@@ -952,6 +954,8 @@
 						return 5391184;
 					case n.ArbitrumNitroDevnet:
 						return 421612;
+					case n.ArbitrumMainnet:
+						return 42170;
 					default: {
 						const [, t] = e.split(":");
 						return t
@@ -985,7 +989,7 @@
 					endpoint: `${s.a.metaUrl}/crypto/${t}/registrations/${r}`
 				})
 			}! function(e) {
-				e.Ethereum = "ethereum:1", e.Rinkeby = "ethereum:4", e.ArbitrumRinkeby = "ethereum:5391184", e.ArbitrumNitroDevnet = "ethereum:421612", e.EthTraderEthereum = "ethereum:1:ethtrader", e.EthTraderRinkeby = "ethereum:4:ethtrader"
+				e.Ethereum = "ethereum:1", e.Rinkeby = "ethereum:4", e.ArbitrumRinkeby = "ethereum:5391184", e.ArbitrumNitroDevnet = "ethereum:421612", e.ArbitrumMainnet = "ethereum:42170", e.EthTraderEthereum = "ethereum:1:ethtrader", e.EthTraderRinkeby = "ethereum:4:ethtrader"
 			}(n || (n = {}));
 			const p = (e, t, r) => ({
 					type: "burn-link",
@@ -1630,9 +1634,9 @@
 			})), r.d(t, "p", (function() {
 				return x
 			})), r.d(t, "k", (function() {
-				return L
-			})), r.d(t, "r", (function() {
 				return M
+			})), r.d(t, "r", (function() {
+				return k
 			})), r.d(t, "y", (function() {
 				return U
 			})), r.d(t, "u", (function() {
@@ -1817,21 +1821,21 @@
 					membership: "Membership",
 					membershipAlt: "Supporter Membership"
 				},
-				L = (e, t) => Object.values(e.products.models).filter(e => e.type === a.a.Membership && t && e.subredditId === t),
-				k = (e, t) => {
+				M = (e, t) => Object.values(e.products.models).filter(e => e.type === a.a.Membership && t && e.subredditId === t),
+				L = (e, t) => {
 					if (!t) return {};
 					const r = B.prices;
-					L(e, t).forEach(e => {
+					M(e, t).forEach(e => {
 						e.price && e.currency && (r[e.currency] = e.price)
 					});
 					const n = h(e, t);
 					return n && n.price && n.currency && (r[n.currency] = n.price), r
 				},
-				M = (e, t) => {
+				k = (e, t) => {
 					var r, n, s, o;
 					const i = (null === (o = null === (s = null === (n = null === (r = e.features) || void 0 === r ? void 0 : r.crypto) || void 0 === n ? void 0 : n.points) || void 0 === s ? void 0 : s[t || ""]) || void 0 === o ? void 0 : o.nomenclature) || B;
 					return {
-						prices: k(e, t),
+						prices: L(e, t),
 						member: i.member || B.member,
 						memberPlural: i.memberPlural || B.memberPlural,
 						memberAlt: i.memberAlt || B.memberAlt,
@@ -1900,4 +1904,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Governance-Leaderboard.d5a85d14b086d36a4c30.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Governance-Leaderboard.898deb94f621cf7c90f7.js.map

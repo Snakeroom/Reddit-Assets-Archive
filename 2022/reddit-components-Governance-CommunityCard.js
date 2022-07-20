@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Governance-CommunityCard.299f01ef803dd6c9b2dc.js
-// Retrieved at 7/20/2022, 6:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Governance-CommunityCard.9941e92985d93133f2f9.js
+// Retrieved at 7/20/2022, 7:50:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Governance-CommunityCard"], {
 		"./src/lib/bigNumberUtils/percent.ts": function(e, t, n) {
@@ -229,8 +229,8 @@
 				j = Object(s.a)(C.k),
 				k = Object(s.a)(C.q),
 				w = Object(s.a)(C.r),
-				I = Object(s.a)(C.s),
-				A = Object(s.a)(C.t),
+				A = Object(s.a)(C.s),
+				I = Object(s.a)(C.t),
 				T = Object(s.a)(C.u),
 				P = Object(s.a)(C.v),
 				S = Object(s.a)(C.w),
@@ -284,7 +284,7 @@
 						apiContext: l
 					} = a;
 					var u;
-					n(I());
+					n(A());
 					const m = s().transfers.communityPoints.contentId || void 0,
 						p = await
 					function(e, t) {
@@ -302,7 +302,7 @@
 						...e,
 						contentId: m
 					});
-					p.ok ? (n(A({
+					p.ok ? (n(I({
 						...p.body,
 						subredditId: e.subredditId
 					})), n(Object(c.f)({
@@ -451,8 +451,8 @@
 			var j = n("./src/reddit/selectors/crypto/claims.ts"),
 				k = n("./src/reddit/selectors/user.ts"),
 				w = n("./src/higherOrderComponents/asTooltip.tsx"),
-				I = n("./src/lib/copyToClipboard/index.ts"),
-				A = n("./src/reddit/actions/governance/errorToast.ts"),
+				A = n("./src/lib/copyToClipboard/index.ts"),
+				I = n("./src/reddit/actions/governance/errorToast.ts"),
 				T = n("./src/reddit/actions/toaster.ts"),
 				P = n("./src/reddit/actions/tooltip.ts"),
 				S = n("./src/reddit/contexts/ApiContext.tsx"),
@@ -470,7 +470,7 @@
 			class Z extends i.a.PureComponent {
 				constructor() {
 					super(...arguments), this.onCopyToClipboard = () => {
-						Object(I.a)(this.props.publicAddress || "")
+						Object(A.a)(this.props.publicAddress || "")
 					}, this.onRemoveMyWallet = async () => {
 						const e = await Object(R.g)(this.props.apiContext(), this.props.points.blockchainProvider, this.props.publicAddress);
 						e.ok ? this.props.onWalletRemoved() : this.props.onGovernanceError(e.error)
@@ -550,7 +550,7 @@
 				}),
 				Y = Object(a.b)(q, (e, t) => ({
 					onGovernanceError: t => {
-						Object(A.a)(e, t)
+						Object(I.a)(e, t)
 					},
 					onOpenDropdown: () => e(Object(P.h)({
 						tooltipId: H
@@ -823,9 +823,9 @@
 				je = n("./src/reddit/constants/modals.ts"),
 				ke = n("./src/reddit/hooks/useLocalStorage.ts"),
 				we = n("./src/reddit/icons/svgs/Coin/index.tsx"),
-				Ie = n("./src/reddit/icons/svgs/Send/index.tsx"),
-				Ae = n("./src/reddit/components/Governance/CommunityCard/UsePoints/index.m.less"),
-				Te = n.n(Ae);
+				Ae = n("./src/reddit/icons/svgs/Send/index.tsx"),
+				Ie = n("./src/reddit/components/Governance/CommunityCard/UsePoints/index.m.less"),
+				Te = n.n(Ie);
 			const {
 				fbt: Pe
 			} = n("./node_modules/fbt/lib/FbtPublic.js");
@@ -856,7 +856,7 @@
 					hk: "2Mco3v"
 				})), C && i.a.createElement(xe.a, {
 					onClick: () => r(Object(E.f)())
-				}, i.a.createElement(Ie.a, {
+				}, i.a.createElement(Ae.a, {
 					className: Te.a.icon
 				}), Pe._("Transfer", null, {
 					hk: "1MQW1Y"
@@ -1131,6 +1131,8 @@
 						return "https://meta-api.reddit.com/ethereum/ethereum:5391184";
 					case r.ArbitrumNitroDevnet:
 						return "https://meta-api.reddit.com/ethereum/nitroDevnet";
+					case r.ArbitrumMainnet:
+						return "https://a4ba.arbitrum.io/rpc";
 					default:
 						return `https://meta-api.reddit.com/ethereum/${e}`
 				}
@@ -1148,6 +1150,8 @@
 						return 5391184;
 					case r.ArbitrumNitroDevnet:
 						return 421612;
+					case r.ArbitrumMainnet:
+						return 42170;
 					default: {
 						const [, t] = e.split(":");
 						return t
@@ -1181,7 +1185,7 @@
 					endpoint: `${s.a.metaUrl}/crypto/${t}/registrations/${n}`
 				})
 			}! function(e) {
-				e.Ethereum = "ethereum:1", e.Rinkeby = "ethereum:4", e.ArbitrumRinkeby = "ethereum:5391184", e.ArbitrumNitroDevnet = "ethereum:421612", e.EthTraderEthereum = "ethereum:1:ethtrader", e.EthTraderRinkeby = "ethereum:4:ethtrader"
+				e.Ethereum = "ethereum:1", e.Rinkeby = "ethereum:4", e.ArbitrumRinkeby = "ethereum:5391184", e.ArbitrumNitroDevnet = "ethereum:421612", e.ArbitrumMainnet = "ethereum:42170", e.EthTraderEthereum = "ethereum:1:ethtrader", e.EthTraderRinkeby = "ethereum:4:ethtrader"
 			}(r || (r = {}));
 			const b = (e, t, n) => ({
 					type: "burn-link",
@@ -1870,4 +1874,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Governance-CommunityCard.299f01ef803dd6c9b2dc.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Governance-CommunityCard.9941e92985d93133f2f9.js.map
