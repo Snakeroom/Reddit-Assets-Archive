@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModerationPages.11d7e15d0d480e12af10.js
-// Retrieved at 7/20/2022, 6:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModerationPages.a50805c9f5430aba5075.js
+// Retrieved at 7/20/2022, 6:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModerationPages", "CollectionCommentsPage~CommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~RpanListingUnit~S~5809214e", "CommentsPage~Governance~Reddit~ReportFlow~Subreddit~reddit-components-BlankPost~reddit-components-Cl~5351df81", "PostCreation~Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~r~4c415e24", "Governance~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compo~bd4baca2", "Governance~ModListing~Reddit~ReportFlow~Subreddit", "Governance~Reddit~SubredditForkingCTA", "AuthorHovercard~Reddit"], {
 		"./src/chat/controls/Svg/index.m.less": function(e, t, n) {
@@ -7881,7 +7881,7 @@
 						});
 						r && (n = r.name)
 					}
-					return Object(d.m)(n)
+					return Object(d.n)(n)
 				},
 				A = "POST_CREATION__PAGE_PENDING",
 				M = "POST_CREATION__PAGE_LOADED",
@@ -74329,4 +74329,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.11d7e15d0d480e12af10.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.a50805c9f5430aba5075.js.map

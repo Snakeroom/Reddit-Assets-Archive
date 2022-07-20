@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.df11bf231a03d3e2a1b4.js
-// Retrieved at 7/20/2022, 6:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.64dd0ef2913a8b3a150c.js
+// Retrieved at 7/20/2022, 6:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Chat~Governance~Reddit"], {
 		"./assets/fonts/IBMPlexSans/font.less": function(e, t, i) {},
@@ -3467,11 +3467,11 @@
 				apiPassThroughHeaders: Object(r.e)({}.API_PASS_THROUGH_HEADERS || ""),
 				appName: {}.APP_NAME || "desktop2x",
 				assetPath: "https://www.redditstatic.com/desktop2x",
-				buildNumber: Object(r.c)("168960"),
+				buildNumber: Object(r.c)("168969"),
 				chatHelpUrl: {}.CHAT_HELP_URL || "https://reddit.zendesk.com/hc/en-us/sections/360008805652-Chat",
 				hlsVersion: "hls 0.12.4",
 				dashVersion: "dash 3.2.0",
-				buildTimestamp: Object(r.b)("1658351908"),
+				buildTimestamp: Object(r.b)("1658354352"),
 				cookieDomain: ".reddit.com",
 				giphyApiKey: "k2kwyMA6VeyHM6ZRT96OXDGaersnx73Z",
 				mediaUrl: "https://www.redditmedia.com",
@@ -4939,6 +4939,7 @@
 					META_ARBITRUM_POINTS_MIGRATION_PAGE: "MetaArbitrumPointsMigrationPage",
 					META_COMMUNITY_POINTS_LEARN_MORE_PAGE: "MetaCommunityPointsLearnMorePage",
 					META_MEMBERSHIP_PAYWALL_PAGE: "MetaMemberhipPaywallPage",
+					META_NO_GAS_PAGE: "MetaNoGasPage",
 					MULTIREDDIT: "Multireddit",
 					NOTIFICATIONS_INBOX: "NotificationsInbox",
 					OVER18: "Over18",
@@ -5295,6 +5296,7 @@
 					META_ARBITRUM_POINTS_MIGRATION_PAGE: "metaArbitrumPointsMigrationPage",
 					META_COMMUNITY_POINTS_LEARN_MORE_PAGE: "metaCommunityPointsLearnMorePage",
 					META_MEMBERSHIP_PAYWALL_PAGE: "metaMembershipPaywallPage",
+					META_NO_GAS_PAGE: "metaNoGasPage",
 					META_VAULT_BURN: "metaVaultBurn",
 					MULTIREDDIT: "multireddit",
 					NOTIFICATIONS_INBOX: "notificationsInbox",
@@ -6087,14 +6089,14 @@
 					}))
 				},
 				Y = (e, t, i) => {
-					console.log("%cStarting Raven %crelease %ca0d88aaaa1490011eeb28190cc8500709361264d-production" + ` %cpublic url %c${y.a.sentryClientPublicURL}`, "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
+					console.log("%cStarting Raven %crelease %c92d6ba45e2370c0648b1ea6af9bdf2df59195804-production" + ` %cpublic url %c${y.a.sentryClientPublicURL}`, "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
 					let n = [];
 					n = [new RegExp(`^${y.a.assetPath}`, "i")];
 					o.e({
 						attachStacktrace: !0,
 						dsn: y.a.sentryClientPublicURL,
 						whitelistUrls: n,
-						release: "a0d88aaaa1490011eeb28190cc8500709361264d-production",
+						release: "92d6ba45e2370c0648b1ea6af9bdf2df59195804-production",
 						environment: "production",
 						ignoreErrors: ["$ is not defined"],
 						integrations: [...Object(L.d)(), new d.Integrations.Breadcrumbs({
@@ -6620,7 +6622,7 @@
 							settings: r,
 							statusCode: s,
 							type: o,
-							releaseClient: "a0d88aaaa1490011eeb28190cc8500709361264d-production",
+							releaseClient: "92d6ba45e2370c0648b1ea6af9bdf2df59195804-production",
 							appName: t.statsAppName,
 							error: n ? JSON.parse(Object(l.a)(n)) : void 0
 						},
@@ -7463,9 +7465,9 @@
 				return l
 			})), i.d(t, "g", (function() {
 				return u
-			})), i.d(t, "h", (function() {
-				return c
 			})), i.d(t, "i", (function() {
+				return c
+			})), i.d(t, "h", (function() {
 				return _
 			})), i.d(t, "j", (function() {
 				return m
@@ -7479,8 +7481,10 @@
 				return b
 			})), i.d(t, "o", (function() {
 				return g
-			})), i.d(t, "f", (function() {
+			})), i.d(t, "p", (function() {
 				return w
+			})), i.d(t, "f", (function() {
+				return v
 			}));
 			var n = i("./node_modules/fbt/lib/FbtPublic.js"),
 				r = i("./src/reddit/constants/page.ts");
@@ -7505,28 +7509,31 @@
 				c = () => n.fbt._("Notifications", null, {
 					hk: "OUIeh"
 				}),
-				_ = () => n.fbt._("Predictions - Become the World's Greatest Predictor", null, {
+				_ = () => n.fbt._("Gas Funds", null, {
+					hk: "32lYuY"
+				}),
+				m = () => n.fbt._("Predictions - Become the World's Greatest Predictor", null, {
 					hk: "43GFss"
 				}),
-				m = () => n.fbt._("Reddit Premium - Enjoy Exclusive Features and VIP Status", null, {
+				p = () => n.fbt._("Reddit Premium - Enjoy Exclusive Features and VIP Status", null, {
 					hk: "4eqnyx"
 				}),
-				p = () => n.fbt._("Reddit Live", null, {
+				h = () => n.fbt._("Reddit Live", null, {
 					hk: "3xjxUD"
 				}),
-				h = () => n.fbt._("Reddit Settings", null, {
+				f = () => n.fbt._("Reddit Settings", null, {
 					hk: "4f8xQM"
 				}),
-				f = e => n.fbt._("Submit to {subreddit}", [n.fbt._param("subreddit", e)], {
+				b = e => n.fbt._("Submit to {subreddit}", [n.fbt._param("subreddit", e)], {
 					hk: "1sykEm"
 				}),
-				b = () => n.fbt._("Today’s Top Communities", null, {
+				g = () => n.fbt._("Today’s Top Communities", null, {
 					hk: "2dcUEX"
 				}),
-				g = () => n.fbt._("Reddit Talk - Live Audio Conversations in Your Favorite Communities", null, {
+				w = () => n.fbt._("Reddit Talk - Live Audio Conversations in Your Favorite Communities", null, {
 					hk: "4C3LAO"
 				}),
-				w = e => {
+				v = e => {
 					switch (e) {
 						case r.d.All:
 							return `r/${n.fbt._("all",null,{hk:"CpUKZ"})}`;
@@ -41055,6 +41062,8 @@
 							return "meta_arbitrum_points_migration_page";
 						case "metaCommunityPointsLearnMorePage":
 							return "meta_community_points_learn_more_page";
+						case "metaNoGasPage":
+							return "meta_no_gas_page";
 						case "metaVaultBurn":
 							return "meta_vault_burn";
 						case "econManagement2":
@@ -48553,4 +48562,4 @@
 		"ignored /drone/src/node_modules/readable-stream/lib/internal/streams util": function(e, t) {}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.df11bf231a03d3e2a1b4.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.64dd0ef2913a8b3a150c.js.map

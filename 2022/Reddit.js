@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Reddit.67f96bacb686b7955eeb.js
-// Retrieved at 7/20/2022, 6:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Reddit.7954932fd2cc51077912.js
+// Retrieved at 7/20/2022, 6:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Reddit"], {
 		"./assets/fonts/BentonSans/font.less": function(e, t, n) {},
@@ -1537,6 +1537,16 @@
 				})
 			}
 		},
+		"./src/reddit/actions/pages/meta/noGasPage.ts": function(e, t, n) {
+			"use strict";
+			var s = n("./src/lib/pageTitle/index.ts"),
+				r = n("./src/reddit/actions/platform.ts");
+			t.a = () => async e => {
+				e(Object(r.m)({
+					title: Object(s.h)()
+				}))
+			}
+		},
 		"./src/reddit/actions/pages/meta/specialMembershipPaywallPage.ts": function(e, t, n) {
 			"use strict";
 			n("./node_modules/core-js/modules/web.dom.iterable.js");
@@ -1574,7 +1584,7 @@
 				i = n("./src/reddit/selectors/user.ts");
 			t.a = () => async (e, t) => {
 				e(Object(r.m)({
-					title: Object(s.i)()
+					title: Object(s.j)()
 				})), await e(Object(a.t)()), Object(i.Q)(t()) && await e(Object(o.q)())
 			}
 		},
@@ -1584,7 +1594,7 @@
 				r = n("./src/reddit/actions/platform.ts");
 			t.a = () => async e => {
 				e(Object(r.m)({
-					title: Object(s.o)()
+					title: Object(s.p)()
 				}))
 			}
 		},
@@ -18099,16 +18109,17 @@
 				o = n("./node_modules/react-router-redux/es/index.js"),
 				a = n("./src/reddit/actions/modal.ts"),
 				i = n("./src/reddit/actions/pages/meta/communityPointsLearnMorePage.ts"),
-				c = n("./src/reddit/actions/pages/meta/specialMembershipPaywallPage.ts"),
-				l = n("./src/reddit/actions/users.ts"),
-				d = n("./src/reddit/constants/modals.ts"),
-				u = n("./src/reddit/featureFlags/index.ts"),
-				m = n("./src/reddit/helpers/crypto/vaultActionLink.ts"),
-				p = n("./src/reddit/selectors/user.ts"),
-				b = n("./src/reddit/routes/meta/constants.ts");
-			const h = {
+				c = n("./src/reddit/actions/pages/meta/noGasPage.ts"),
+				l = n("./src/reddit/actions/pages/meta/specialMembershipPaywallPage.ts"),
+				d = n("./src/reddit/actions/users.ts"),
+				u = n("./src/reddit/constants/modals.ts"),
+				m = n("./src/reddit/featureFlags/index.ts"),
+				p = n("./src/reddit/helpers/crypto/vaultActionLink.ts"),
+				b = n("./src/reddit/selectors/user.ts"),
+				h = n("./src/reddit/routes/meta/constants.ts");
+			const g = {
 					action: () => async (e, t) => {
-						Object(p.Q)(t()) || await e(Object(l.t)())
+						Object(b.Q)(t()) || await e(Object(d.t)())
 					},
 					chunk: r.r.META_ARBITRUM_POINTS_MIGRATION_PAGE,
 					component: Object(s.a)({
@@ -18137,7 +18148,7 @@
 					},
 					path: ["/web/points-migration/"]
 				},
-				g = {
+				f = {
 					action: i.a,
 					chunk: r.r.META_COMMUNITY_POINTS_LEARN_MORE_PAGE,
 					component: Object(s.a)({
@@ -18165,10 +18176,10 @@
 						name: r.Nb.META_COMMUNITY_POINTS_LEARN_MORE_PAGE,
 						isResponsive: !0
 					},
-					path: [b.b, b.a, "/vault/", "/web/community-points/"]
+					path: [h.b, h.a, "/vault/", "/web/community-points/"]
 				},
-				f = {
-					action: c.a,
+				O = {
+					action: l.a,
 					chunk: r.r.META_MEMBERSHIP_PAYWALL_PAGE,
 					component: Object(s.a)({
 						resolved: {},
@@ -18196,13 +18207,43 @@
 					},
 					path: ["/web/special-membership/:subredditName", "/web/membership/:subredditName"]
 				},
-				O = e => async (t, n) => {
-					const s = Object(m.a)(e.queryParams);
-					Object(p.Q)(n()) || await t(Object(l.t)()), s && setTimeout(async () => {
-						await t(Object(o.c)(`/r/${encodeURIComponent(s.subreddit)}/`)), u.d.spBurnLinks(n()) && t(Object(a.h)(d.a.CRYPTO_BURN_POINTS, s))
+				v = {
+					action: c.a,
+					chunk: r.r.META_NO_GAS_PAGE,
+					component: Object(s.a)({
+						resolved: {},
+						chunkName: () => "NoGasPage",
+						isReady(e) {
+							const t = this.resolve(e);
+							return !1 !== this.resolved[t] && !!n.m[t]
+						},
+						importAsync: () => n.e("NoGasPage").then(n.bind(null, "./src/reddit/pages/meta/NoGasPage/index.tsx")),
+						requireAsync(e) {
+							const t = this.resolve(e);
+							return this.resolved[t] = !1, this.importAsync(e).then(e => (this.resolved[t] = !0, e))
+						},
+						requireSync(e) {
+							const t = this.resolve(e);
+							return n(t)
+						},
+						resolve() {
+							return "./src/reddit/pages/meta/NoGasPage/index.tsx"
+						}
+					}),
+					exact: !0,
+					meta: {
+						name: r.Nb.META_NO_GAS_PAGE,
+						isResponsive: !0
+					},
+					path: ["/web/vault/no-gas"]
+				},
+				C = e => async (t, n) => {
+					const s = Object(p.a)(e.queryParams);
+					Object(b.Q)(n()) || await t(Object(d.t)()), s && setTimeout(async () => {
+						await t(Object(o.c)(`/r/${encodeURIComponent(s.subreddit)}/`)), m.d.spBurnLinks(n()) && t(Object(a.h)(u.a.CRYPTO_BURN_POINTS, s))
 					}, 0)
-				}, v = {
-					action: O,
+				}, y = {
+					action: C,
 					chunk: r.r.EMPTY,
 					exact: !0,
 					meta: {
@@ -18210,7 +18251,7 @@
 					},
 					path: ["/vault/burn"]
 				};
-			t.a = [h, g, f, v]
+			t.a = [g, f, O, v, y]
 		},
 		"./src/reddit/routes/modQueue/index.ts": function(e, t, n) {
 			"use strict";
@@ -19672,4 +19713,4 @@
 		["./src/reddit/index.tsx", "runtime~Reddit", "vendors~CommentsPage~ModerationPages~Reddit~reddit-components-ClassicPost~reddit-components-CompactP~d737df3e", "vendors~CommentsPage~Governance~ModListing~ModerationPages~Reddit~Subreddit", "vendors~Chat~Governance~Reddit", "vendors~Reddit", "CommentsPage~Governance~Reddit~ReportFlow~Subreddit~reddit-components-BlankPost~reddit-components-Cl~5351df81", "PostCreation~Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~r~4c415e24", "Governance~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compo~bd4baca2", "Governance~ModListing~Reddit~ReportFlow~Subreddit", "Chat~Governance~Reddit", "Governance~Reddit~Subreddit", "Governance~Reddit~SubredditForkingCTA", "Governance~Reddit", "Reddit~StandalonePostPage", "AuthorHovercard~Reddit"]
 	]
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit.67f96bacb686b7955eeb.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit.7954932fd2cc51077912.js.map

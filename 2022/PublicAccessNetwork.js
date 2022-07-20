@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PublicAccessNetwork.cadb6cf5b3a798a0f654.js
-// Retrieved at 7/20/2022, 6:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PublicAccessNetwork.3f527d3dadce138c6630.js
+// Retrieved at 7/20/2022, 6:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PublicAccessNetwork"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -1847,7 +1847,7 @@
 				a = s("./src/reddit/selectors/user.ts");
 			const i = e => async (e, t) => {
 				const s = t(),
-					i = o.k();
+					i = o.l();
 				e(r.m({
 					title: i
 				})), Object(a.Q)(s) || await e(n.t())
@@ -7952,4 +7952,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PublicAccessNetwork.cadb6cf5b3a798a0f654.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PublicAccessNetwork.3f527d3dadce138c6630.js.map
