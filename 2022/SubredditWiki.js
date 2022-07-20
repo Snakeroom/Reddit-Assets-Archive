@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditWiki.66714451c1b7fedc0abd.js
-// Retrieved at 7/19/2022, 12:30:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditWiki.407a3ff3f67c0942024a.js
+// Retrieved at 7/20/2022, 1:20:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditWiki"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, r) {
@@ -8733,12 +8733,12 @@
 						rtJsonElementProps: o
 					});
 					switch (i) {
-						case h.wf.SmIcon:
+						case h.xf.SmIcon:
 							return n.a.createElement(p, {
 								subredditName: s,
 								rtJsonElementProps: o
 							});
-						case h.wf.SmIconHc:
+						case h.xf.SmIconHc:
 							return n.a.createElement(p, {
 								subredditName: s,
 								isHoverable: !0,
@@ -9200,7 +9200,7 @@
 						} = t;
 						return Object(Re.c)(e, r)
 					},
-					isInNewModuleNCPV3Experiment: e => Object(Be.a)(e) === Pe.ye.NewModule,
+					isInNewModuleNCPV3Experiment: e => Object(Be.a)(e) === Pe.ze.NewModule,
 					showGovernance: Te.d.spPoints,
 					showLeaderboard: Te.d.spLeaderboard,
 					showPredictionsLeaderboard: (e, t) => {
@@ -10617,13 +10617,13 @@
 			const i = e => {
 					return !(Object(n.c)(e, {
 						experimentEligibilitySelector: n.a,
-						experimentName: s.ce
-					}) === s.xd)
+						experimentName: s.de
+					}) === s.yd)
 				},
 				o = e => Object(n.c)(e, {
 					experimentEligibilitySelector: n.a,
-					experimentName: s.de
-				}) === s.xd
+					experimentName: s.ee
+				}) === s.yd
 		},
 		"./src/reddit/selectors/gold/powerups/flairs.ts": function(e, t, r) {
 			"use strict";
@@ -10756,12 +10756,12 @@
 				d = e => {
 					return Object(i.c)(e, {
 						experimentEligibilitySelector: a,
-						experimentName: s.pf
+						experimentName: s.qf
 					}) || ""
 				},
 				c = e => {
 					const t = d(e);
-					return t === s.wf.SmIcon || t === s.wf.SmIconHc
+					return t === s.xf.SmIcon || t === s.xf.SmIconHc
 				},
 				l = (e, t) => {
 					let {
@@ -10951,4 +10951,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditWiki.66714451c1b7fedc0abd.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditWiki.407a3ff3f67c0942024a.js.map

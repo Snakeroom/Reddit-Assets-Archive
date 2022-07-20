@@ -1,11 +1,11 @@
-// https://www.redditstatic.com/desktop2x/EconPowerupsFlairModal.5db92fbec3cacd1f3f1f.js
-// Retrieved at 7/19/2022, 12:30:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/EconPowerupsFlairModal.f452dc5c48c00e3c60fa.js
+// Retrieved at 7/20/2022, 1:20:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["EconPowerupsFlairModal"], {
 		"./src/reddit/actions/economics/powerups/flairs/index.ts": function(e, t, r) {
 			"use strict";
 			r.r(t), r.d(t, "onSubredditUserPowerupsFlairsLoaded", (function() {
-				return g
+				return x
 			})), r.d(t, "onUsersSupportedSubredditsLoaded", (function() {
 				return j
 			})), r.d(t, "onSubredditUserPowerupsFlairPreferenceUpdateRequested", (function() {
@@ -23,9 +23,9 @@
 			})), r.d(t, "shouldFetchCommentsPowerupsInfo", (function() {
 				return _
 			})), r.d(t, "getSubredditUserCommentsPowerupsInfoFromCommentLinks", (function() {
-				return T
-			})), r.d(t, "getSubredditUserCommentsPowerupsInfoFromCommentCollection", (function() {
 				return S
+			})), r.d(t, "getSubredditUserCommentsPowerupsInfoFromCommentCollection", (function() {
+				return T
 			})), r.d(t, "setSubredditUserAchievementFlair", (function() {
 				return k
 			})), r.d(t, "setSubredditUserSupporterFlair", (function() {
@@ -60,13 +60,13 @@
 				h = r("./src/reddit/selectors/user.ts"),
 				v = r("./src/reddit/actions/economics/powerups/constants.ts"),
 				w = r("./src/lib/initializeClient/installReducer.ts"),
-				x = r("./src/reddit/reducers/features/powerups/index.ts");
+				g = r("./src/reddit/reducers/features/powerups/index.ts");
 			Object(w.a)({
 				features: {
-					powerups: x.a
+					powerups: g.a
 				}
 			});
-			const g = Object(i.a)(v.d),
+			const x = Object(i.a)(v.d),
 				j = Object(i.a)(v.i),
 				y = Object(i.a)(v.f),
 				F = Object(i.a)(v.g),
@@ -94,7 +94,7 @@
 								subredditInfoById: s,
 								redditorsInfoByIds: i
 							} = t;
-						await r(g(s)), i && await r(j(i))
+						await r(x(s)), i && await r(j(i))
 					} catch (l) {
 						n.c.captureException(l)
 					}
@@ -119,7 +119,7 @@
 					return Object(b.f)(s, {
 						subredditId: e
 					})
-				}, T = e => async (t, r) => {
+				}, S = e => async (t, r) => {
 					var s;
 					const i = r(),
 						n = e.map(e => {
@@ -140,7 +140,7 @@
 						return t
 					}));
 					await t(E(a, Array.from(d)))
-				}, S = (e, t) => async (r, s) => {
+				}, T = (e, t) => async (r, s) => {
 					if (!t) return;
 					if (!(await r(_(e)))) return;
 					const i = new Set;
@@ -190,14 +190,14 @@
 						subredditId: m,
 						achievementFlairType: b,
 						supporterFlairType: v
-					} = e, w = [b, v].filter(Boolean), x = Object(f.d)(a, {
+					} = e, w = [b, v].filter(Boolean), g = Object(f.d)(a, {
 						subredditId: m,
 						userId: l
 					});
 					try {
-						await c(o(), m, w, x), t(F(e))
-					} catch (g) {
-						t(I(e)), n.c.captureException(g), t(Object(u.f)({
+						await c(o(), m, w, g), t(F(e))
+					} catch (x) {
+						t(I(e)), n.c.captureException(x), t(Object(u.f)({
 							duration: u.a,
 							kind: p.b.Error,
 							text: s.fbt._("Failed to set preferred achievement flair", null, {
@@ -320,8 +320,8 @@
 					LoadingComponent: () => null,
 					getComponent: () => r.e("CustomBadgeHovercardTooltip").then(r.bind(null, "./src/reddit/components/Badges/UserDisplay/AddCustomTooltip/tooltip.tsx")).then(e => e.default)
 				}),
-				x = r("./src/reddit/components/Badges/UserDisplay/index.m.less"),
-				g = r.n(x);
+				g = r("./src/reddit/components/Badges/UserDisplay/index.m.less"),
+				x = r.n(g);
 
 			function j() {
 				return (j = Object.assign || function(e) {
@@ -353,23 +353,23 @@
 						badges: e
 					} = this.props;
 					if (this.props.usePlaceholder && !e.length) return i.a.createElement("img", {
-						className: Object(d.a)(g.a.image, this.props.className),
+						className: Object(d.a)(x.a.image, this.props.className),
 						src: `${a.a.assetPath}/img/badges/placeholder.png`
 					});
 					const t = `${y}-${this.props.uniqueIdentifier}`,
 						r = this.props.badgeSize || O;
 					return i.a.createElement(s.Fragment, null, this.props.showAddCustom && i.a.createElement("div", {
-						className: g.a.wrapper,
+						className: x.a.wrapper,
 						id: t,
 						onMouseEnter: () => this.handleMouseEnter(t),
 						onMouseLeave: () => this.handleMouseLeave()
 					}, i.a.createElement("button", {
-						className: g.a.addCustomLink,
+						className: x.a.addCustomLink,
 						onClick: this.props.onOpenUploadDialog
 					}, i.a.createElement(h.a, {
-						className: g.a.addCustom
+						className: x.a.addCustom
 					})), i.a.createElement(w, {
-						className: g.a.badgeHovercard,
+						className: x.a.badgeHovercard,
 						subredditId: this.props.subredditId,
 						targetPosition: ["left", "bottom"],
 						tooltipId: t,
@@ -381,12 +381,12 @@
 						return i.a.createElement(s.Fragment, {
 							key: `badges-fragement-${e.id}`
 						}, i.a.createElement("div", {
-							className: Object(d.a)(g.a.wrapper, this.props.className),
+							className: Object(d.a)(x.a.wrapper, this.props.className),
 							key: `wrapper-${e.id}`,
 							onMouseEnter: () => this.handleMouseEnter(n),
 							onMouseLeave: () => this.handleMouseLeave()
 						}, i.a.createElement("img", {
-							className: g.a.image,
+							className: x.a.image,
 							id: n,
 							key: e.id,
 							src: t.url2x,
@@ -397,7 +397,7 @@
 						}), this.props.useHovercard ? i.a.createElement(p, {
 							badge: e,
 							correlationId: this.props.correlationId,
-							className: g.a.badgeHovercard,
+							className: x.a.badgeHovercard,
 							key: `tooltip-${e.id}`,
 							subredditId: this.props.subredditId,
 							targetPosition: ["left", "bottom"],
@@ -426,7 +426,7 @@
 					allBadges: e => e.badges.models,
 					useHovercard: b.d.spSpecialMemberships
 				}),
-				T = Object(o.c)({
+				S = Object(o.c)({
 					badgeIds: (e, t) => {
 						let {
 							subredditId: r
@@ -438,7 +438,7 @@
 					allBadges: e => e.badges.models,
 					useHovercard: b.d.spSpecialMemberships
 				}),
-				S = e => ({
+				T = e => ({
 					onShowTooltip: t => e(Object(l.f)({
 						tooltipId: t
 					})),
@@ -456,8 +456,8 @@
 					badges: n
 				}, s))
 			}
-			const C = Object(n.b)(_, S)(k),
-				N = Object(n.b)(T, S)(k)
+			const C = Object(n.b)(_, T)(k),
+				N = Object(n.b)(S, T)(k)
 		},
 		"./src/reddit/components/Econ/Common/ModalCloseButton/index.m.less": function(e, t, r) {
 			e.exports = {
@@ -570,8 +570,8 @@
 				h = r("./src/reddit/components/Econ/Common/ModalCloseButton/index.tsx"),
 				v = r("./src/reddit/components/Econ/PowerupsFlair/UserFlairPreview.tsx"),
 				w = r("./src/reddit/components/Econ/PowerupsFlair/PowerupsFlairModal/Header.m.less"),
-				x = r.n(w);
-			const g = e => {
+				g = r.n(w);
+			const x = e => {
 				let {
 					className: t,
 					subredditId: r,
@@ -581,10 +581,10 @@
 					username: d
 				} = e;
 				return o.a.createElement("div", {
-					className: Object(i.a)(x.a.container, t),
+					className: Object(i.a)(g.a.container, t),
 					"data-testid": "achievement-flair-modal-header"
 				}, o.a.createElement(v.a, {
-					className: x.a.userFlairPreview,
+					className: g.a.userFlairPreview,
 					subredditId: r,
 					userId: s,
 					username: d,
@@ -601,8 +601,8 @@
 				E = r("./src/reddit/helpers/trackers/userFlair.ts"),
 				P = r("./src/reddit/hooks/usePreloadModal.ts"),
 				_ = r("./src/reddit/hooks/useTracking.ts"),
-				T = r("./src/reddit/selectors/experiments/i18n/hiddenPowerups.ts"),
-				S = r("./src/reddit/selectors/gold/powerups/index.ts"),
+				S = r("./src/reddit/selectors/experiments/i18n/hiddenPowerups.ts"),
+				T = r("./src/reddit/selectors/gold/powerups/index.ts"),
 				k = r("./src/reddit/selectors/gold/powerups/flairs.ts"),
 				C = r("./src/reddit/icons/svgs/PowerupTier2/index.tsx"),
 				N = r("./src/reddit/actions/tooltip.ts"),
@@ -713,12 +713,12 @@
 						subredditId: t,
 						userId: r
 					})),
-					c = Object(a.e)(e => Object(T.a)(e, t)),
+					c = Object(a.e)(e => Object(S.a)(e, t)),
 					l = Object(a.e)(e => Object(k.d)(e, {
 						subredditId: t,
 						userId: r
 					})),
-					u = Object(a.e)(e => Object(S.m)(e, {
+					u = Object(a.e)(e => Object(T.m)(e, {
 						subredditId: t
 					}));
 				if (Object(P.a)(I.a), !d) return null;
@@ -825,12 +825,12 @@
 					w = Object(a.e)(e => h ? Object(f.d)(e, {
 						subredditId: h.id
 					}) : null),
-					x = !!v && !!w;
+					g = !!v && !!w;
 				return n && h ? o.a.createElement("div", {
 					className: y.a.container
 				}, o.a.createElement("div", {
 					className: y.a.stickyContent
-				}, o.a.createElement(g, {
+				}, o.a.createElement(x, {
 					subredditId: h.id,
 					userId: n.id,
 					username: Object(p.e)(n),
@@ -842,7 +842,7 @@
 					className: y.a.scrollContainer,
 					ref: t,
 					onScroll: s
-				}, x && o.a.createElement(ee, {
+				}, g && o.a.createElement(ee, {
 					subredditId: h.id,
 					flairData: w
 				}), o.a.createElement(K, {
@@ -1310,8 +1310,8 @@
 				d = e => o.includes(e),
 				c = Object(s.a)(e => Object(n.c)(e, {
 					experimentEligibilitySelector: n.a,
-					experimentName: i.Td
-				}), e => e === i.xd)
+					experimentName: i.Ud
+				}), e => e === i.yd)
 		},
 		"./src/reddit/selectors/gold/powerups/flairs.ts": function(e, t, r) {
 			"use strict";
@@ -1429,4 +1429,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EconPowerupsFlairModal.5db92fbec3cacd1f3f1f.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EconPowerupsFlairModal.f452dc5c48c00e3c60fa.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Settings.65f20a5e003ddf479ad1.js
-// Retrieved at 7/19/2022, 12:30:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Settings.b0e6c6c8fc2b745ae677.js
+// Retrieved at 7/20/2022, 1:20:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Settings"], {
 		"./node_modules/moment/locale sync recursive ^\\.\\/.*$": function(e, t, n) {
@@ -12616,24 +12616,26 @@
 			function ws(e) {
 				let {
 					isResponsiveSettingsEnabled: t,
+					isTalkLiveBarOptOutEnabled: n = !1,
 					prefs: {
-						autoplayVideo: n,
-						feedRecommendationsEnabled: r,
-						hideNSFW: o,
-						openPostInNewTab: i,
-						over18: c,
-						privateFeeds: l,
-						reduceAnimationsFromAwards: d,
-						rememberCommunitySort: m,
-						sort: p,
-						stylesEnabled: b,
-						useMarkdown: h,
-						layout: f,
-						rememberCommunityLayout: g
+						autoplayVideo: r,
+						feedRecommendationsEnabled: o,
+						liveBarRecommendationsEnabled: i,
+						hideNSFW: c,
+						openPostInNewTab: l,
+						over18: d,
+						privateFeeds: m,
+						reduceAnimationsFromAwards: p,
+						rememberCommunitySort: b,
+						sort: h,
+						stylesEnabled: f,
+						useMarkdown: g,
+						layout: v,
+						rememberCommunityLayout: _
 					},
-					update: v
+					update: y
 				} = e;
-				const _ = Object(u.a)({
+				const x = Object(u.a)({
 					[Os.a["m-responsive"]]: t
 				});
 				return a.a.createElement(he.a, null, a.a.createElement(be.b, {
@@ -12643,8 +12645,8 @@
 				})), a.a.createElement($.a, null, s.fbt._("Content Preferences", null, {
 					hk: "76osn"
 				})), a.a.createElement(ee.p, {
-					on: c,
-					onClick: () => v(!c, "over18"),
+					on: d,
+					onClick: () => y(!d, "over18"),
 					label: s.fbt._("Adult content", null, {
 						hk: "4les43"
 					}),
@@ -12652,12 +12654,12 @@
 						hk: "IjOZK"
 					})
 				}), a.a.createElement(ee.p, {
-					disabled: !c,
+					disabled: !d,
 					label: s.fbt._("Safe browsing mode", null, {
 						hk: "CeEkN"
 					}),
-					on: !!c && o,
-					onClick: () => v(!o, "hideNSFW"),
+					on: !!d && c,
+					onClick: () => y(!c, "hideNSFW"),
 					subtext: s.fbt._("Blur thumbnails and media preview for anything labeled NSFW (not safe for work).", null, {
 						hk: "5tKRi"
 					})
@@ -12665,14 +12667,23 @@
 					label: s.fbt._("Enable home feed recommendations", null, {
 						hk: "17H8xj"
 					}),
-					on: !!r,
-					onClick: () => v(!r, "feedRecommendationsEnabled"),
+					on: !!o,
+					onClick: () => y(!o, "feedRecommendationsEnabled"),
 					subtext: s.fbt._("Allow us to introduce recommended posts in your home feed.", null, {
 						hk: "EK7rr"
 					})
+				}), n && a.a.createElement(ee.p, {
+					label: s.fbt._("Enable live recommendations", null, {
+						hk: "yGcJd"
+					}),
+					on: !!i,
+					onClick: () => y(!i, "liveBarRecommendationsEnabled"),
+					subtext: s.fbt._("Allow us to feature recommended live events at the top of your home feed.", null, {
+						hk: "1vTU5g"
+					})
 				}), a.a.createElement(ee.p, {
-					on: n,
-					onClick: () => v(!n, "autoplayVideo"),
+					on: r,
+					onClick: () => y(!r, "autoplayVideo"),
 					label: s.fbt._("Autoplay media", null, {
 						hk: "4huarG"
 					}),
@@ -12680,8 +12691,8 @@
 						hk: "2flu5F"
 					})
 				}), a.a.createElement(ee.p, {
-					on: d,
-					onClick: () => v(!d, "reduceAnimationsFromAwards"),
+					on: p,
+					onClick: () => y(!p, "reduceAnimationsFromAwards"),
 					label: s.fbt._("Reduce Animations", null, {
 						hk: "3044mu"
 					}),
@@ -12689,8 +12700,8 @@
 						hk: "3QFTsR"
 					})
 				}), a.a.createElement(ee.p, {
-					on: !!b,
-					onClick: () => v(!b, "stylesEnabled"),
+					on: !!f,
+					onClick: () => y(!f, "stylesEnabled"),
 					label: s.fbt._("Community themes", null, {
 						hk: "8TpCA"
 					}),
@@ -12698,17 +12709,17 @@
 						hk: "2EVyTQ"
 					})
 				}), a.a.createElement(ps, {
-					className: _,
+					className: x,
 					dropdownPrefix: "subreddit-sort-setting",
-					fullSort: p,
+					fullSort: h,
 					onChange: e => {
-						p !== e && v(e, "sort")
+						h !== e && y(e, "sort")
 					}
 				}), a.a.createElement(ee.p, {
-					className: _,
+					className: x,
 					indent: !0,
-					on: !!m,
-					onClick: () => v(!m, "rememberCommunitySort"),
+					on: !!b,
+					onClick: () => y(!b, "rememberCommunitySort"),
 					label: s.fbt._("Remember per community", null, {
 						hk: "44RHeL"
 					}),
@@ -12716,20 +12727,20 @@
 						hk: "2zgrQz"
 					})
 				}), a.a.createElement(js, {
-					className: _,
+					className: x,
 					dropdownPrefix: "subreddit-view-setting",
 					label: s.fbt._("Global content view", null, {
 						hk: "1tWTJK"
 					}),
-					layout: f,
-					onChange: e => v(e, "layout"),
+					layout: v,
+					onChange: e => y(e, "layout"),
 					subtext: s.fbt._("Choose how you would like content displayed in feeds. This control is also found above your feed.", null, {
 						hk: "1NyVGg"
 					})
 				}), a.a.createElement(ee.p, {
-					className: _,
-					on: !!g,
-					onClick: () => v(!g, "rememberCommunityLayout"),
+					className: x,
+					on: !!_,
+					onClick: () => y(!_, "rememberCommunityLayout"),
 					label: s.fbt._("Remember per community", null, {
 						hk: "42Ianh"
 					}),
@@ -12738,9 +12749,9 @@
 					}),
 					indent: !0
 				}), a.a.createElement(ee.p, {
-					className: _,
-					on: !!i,
-					onClick: () => v(!i, "openPostInNewTab"),
+					className: x,
+					on: !!l,
+					onClick: () => y(!l, "openPostInNewTab"),
 					label: s.fbt._("Open posts in new tab", null, {
 						hk: "eOvQi"
 					}),
@@ -12748,20 +12759,20 @@
 						hk: "2ADgE9"
 					})
 				}), a.a.createElement($.a, {
-					className: _
+					className: x
 				}, s.fbt._("Post Preferences", null, {
 					hk: "35wQ1I"
 				})), a.a.createElement(ee.p, {
-					className: _,
-					on: !!h,
-					onClick: () => v(!h, "useMarkdown"),
+					className: x,
+					on: !!g,
+					onClick: () => y(!g, "useMarkdown"),
 					label: s.fbt._("Default to markdown", null, {
 						hk: "1gcz1a"
 					}),
 					subtext: s.fbt._("When posting, your input will default to markdown text instead of fancy pants.", null, {
 						hk: "3WBLPs"
 					})
-				}), l && a.a.createElement(a.a.Fragment, null, a.a.createElement($.a, null, s.fbt._("RSS Feeds", null, {
+				}), m && a.a.createElement(a.a.Fragment, null, a.a.createElement($.a, null, s.fbt._("RSS Feeds", null, {
 					hk: "2xkYfd"
 				})), a.a.createElement(ee.g, {
 					label: s.fbt._("List of your RSS feeds", null, {
@@ -14145,11 +14156,12 @@
 			var ro = n("./src/reddit/components/TabNav/index.tsx"),
 				ao = n("./src/reddit/helpers/correlationIdTracker.ts"),
 				oo = n("./src/reddit/helpers/trackers/premiumSettings.ts");
-			var io = n("./src/reddit/selectors/platform.ts"),
-				co = n("./src/reddit/selectors/responsiveSettings.ts"),
-				lo = n("./src/reddit/pages/Settings/index.m.less"),
-				uo = n.n(lo);
-			const mo = (e, t, n, r) => [{
+			var io = n("./src/reddit/selectors/experiments/econ/index.ts"),
+				co = n("./src/reddit/selectors/platform.ts"),
+				lo = n("./src/reddit/selectors/responsiveSettings.ts"),
+				uo = n("./src/reddit/pages/Settings/index.m.less"),
+				mo = n.n(uo);
+			const po = (e, t, n, r) => [{
 					key: m.dc.Account,
 					title: s.fbt._("Account", null, {
 						hk: "kL0Ow"
@@ -14180,45 +14192,46 @@
 						hk: "48xste"
 					})
 				}, {
-					className: uo.a.CreatorTab,
+					className: mo.a.CreatorTab,
 					key: m.dc.Creator,
 					title: s.fbt._("Reddit Creator", null, {
 						hk: "45BriY"
 					}),
 					disabled: !e
 				}, {
-					className: uo.a.PaymentsTab,
+					className: mo.a.PaymentsTab,
 					key: m.dc.Payments,
 					title: s.fbt._("Payments", null, {
 						hk: "31LCer"
 					}),
 					disabled: !n.length
 				}, {
-					className: uo.a.SpecialMembershipTab,
+					className: mo.a.SpecialMembershipTab,
 					key: m.dc.SpecialMembership,
 					title: s.fbt._("Special Memberships", null, {
 						hk: "3ZoNj3"
 					}),
 					disabled: !t
 				}, {
-					className: uo.a.MessagingTab,
+					className: mo.a.MessagingTab,
 					key: m.dc.Messaging,
 					title: s.fbt._("Chat & Messaging", null, {
 						hk: "3uLoYZ"
 					})
 				}, {
-					className: uo.a.MessagingTab,
+					className: mo.a.MessagingTab,
 					key: m.dc.Dsp,
 					title: s.fbt._("DSP", null, {
 						hk: "zmi11"
 					}),
 					disabled: !r
 				}],
-				po = Object(c.c)({
+				bo = Object(c.c)({
 					savedPayments: kn.p,
 					userIsWhitelistedCreator: kn.y,
-					allowNavigationCallback: io.a,
-					isResponsiveSettingsEnabled: co.a,
+					allowNavigationCallback: co.a,
+					isResponsiveSettingsEnabled: lo.a,
+					isTalkLiveBarOptOutEnabled: io.u,
 					prefs: e => e.user.prefs,
 					userHasSpecialMembership: e => {
 						if (e.economics.me.fetched) {
@@ -14231,16 +14244,16 @@
 						return Object(re.c)(e, {
 							experimentName: se.Rc,
 							experimentEligibilitySelector: re.a
-						}) === se.xd
+						}) === se.yd
 					}
 				}),
-				bo = Object(ge.u)(),
-				ho = Object(o.b)(po, (e, t) => ({
+				ho = Object(ge.u)(),
+				fo = Object(o.b)(bo, (e, t) => ({
 					changeTab: t => e(Object(i.b)(`/settings/${t}`)),
 					updatePrefs: t => e(Object(_r.I)(t)),
 					onPageViewed: () => e(Object(h.a)())
 				})),
-				fo = {
+				go = {
 					activityRelevantAds: "personalization_activity_relevant_ads",
 					acceptPrivateMessages: "recieve_messages",
 					allowClickTracking: "privacy_log_outbound_clicks",
@@ -14262,6 +14275,7 @@
 					ignoreSuggestedSort: "ignore_suggested_sort",
 					inBeta: "basic_beta",
 					labelNSFW: "safe_browsing_mode",
+					liveBarRecommendationsEnabled: "live_bar_recommendations",
 					markMessagesRead: "mark_as_read",
 					nightmode: "nightmode",
 					openPostInNewTab: "posts_in_new_tab",
@@ -14291,7 +14305,7 @@
 					topContentDismissalTime: "top_content_dismissal_time",
 					topContentTimesDismissed: "top_content_times_dismissed"
 				};
-			class go extends a.a.Component {
+			class vo extends a.a.Component {
 				constructor(e) {
 					var t;
 					super(e), t = this, this.tabNavRef = a.a.createRef(), this.getIsDspShown = async () => {
@@ -14311,10 +14325,10 @@
 						})
 					}, this.sendEvent = (e, t) => {
 						const n = d()();
-						fo.hasOwnProperty(t) && this.props.sendEvent(s => ({
+						go.hasOwnProperty(t) && this.props.sendEvent(s => ({
 							source: this.getSource(),
 							action: "save",
-							noun: fo[t],
+							noun: go[t],
 							correlationId: n,
 							setting: {
 								value: this.getTrackingValue(t, e),
@@ -14331,45 +14345,47 @@
 					}, this.renderForm = e => {
 						const {
 							isResponsiveSettingsEnabled: t,
-							prefs: n,
-							location: s,
-							userIsWhitelistedCreator: r,
-							userHasSpecialMembership: o
-						} = this.props, i = {
+							isTalkLiveBarOptOutEnabled: n,
+							prefs: s,
+							location: r,
+							userIsWhitelistedCreator: o,
+							userHasSpecialMembership: i
+						} = this.props, c = {
 							isResponsiveSettingsEnabled: t,
-							prefs: n,
+							isTalkLiveBarOptOutEnabled: n,
+							prefs: s,
 							update: this.update
 						};
 						switch (e) {
 							case m.dc.Account:
-								return a.a.createElement(wt, i);
+								return a.a.createElement(wt, c);
 							case m.dc.Profile:
-								return a.a.createElement(ta, i);
+								return a.a.createElement(ta, c);
 							case m.dc.Premium:
-								return a.a.createElement(Xs.b, i);
+								return a.a.createElement(Xs.b, c);
 							case m.dc.Notifications:
-								return a.a.createElement(Bs, i);
+								return a.a.createElement(Bs, c);
 							case m.dc.Privacy:
-								return a.a.createElement(vr, i);
+								return a.a.createElement(vr, c);
 							case m.dc.Messaging:
-								return a.a.createElement(pn, i);
+								return a.a.createElement(pn, c);
 							case m.dc.Feed:
-								return a.a.createElement(ws, i);
+								return a.a.createElement(ws, c);
 							case m.dc.Payments:
 								return a.a.createElement(Zs, null);
 							case m.dc.Creator: {
-								const e = Object(p.a)(s.search);
-								return r ? a.a.createElement(Tn, {
+								const e = Object(p.a)(r.search);
+								return o ? a.a.createElement(Tn, {
 									stripeConnectCode: e.get("code"),
 									stripeConnectStateToken: e.get("state")
 								}) : null
 							}
 							case m.dc.SpecialMembership:
-								return o ? a.a.createElement(so, null) : null;
+								return i ? a.a.createElement(so, null) : null;
 							case m.dc.Dsp:
 								return this.state.dspAvailable ? a.a.createElement(ts, null) : null;
 							default:
-								return a.a.createElement(wt, i)
+								return a.a.createElement(wt, c)
 						}
 					}, this.preventTabClickEvent = e => {
 						e.preventDefault()
@@ -14439,8 +14455,8 @@
 						dspAvailable: i
 					} = this.state;
 					return a.a.createElement("div", {
-						className: Object(u.a)(uo.a.Container, {
-							[uo.a["m-responsive"]]: t
+						className: Object(u.a)(mo.a.Container, {
+							[mo.a["m-responsive"]]: t
 						})
 					}, a.a.createElement(ro.c, {
 						constrainWidth: !0,
@@ -14450,10 +14466,10 @@
 							hk: "4fP8lg"
 						}),
 						onTouchMove: this.startScrolling
-					}, mo(n, r, o, i).filter(e => !e.disabled).map(this.renderTab)), this.renderForm(e.params.page))
+					}, po(n, r, o, i).filter(e => !e.disabled).map(this.renderTab)), this.renderForm(e.params.page))
 				}
 			}
-			t.default = bo(ho(Object(w.c)(Object(vn.b)(go))))
+			t.default = ho(fo(Object(w.c)(Object(vn.b)(vo))))
 		},
 		"./src/reddit/selectors/economics.ts": function(e, t, n) {
 			"use strict";
@@ -14767,7 +14783,7 @@
 			const o = e => Object(r.c)(e, {
 				experimentName: s.G,
 				experimentEligibilitySelector: () => Object(a.P)(e)
-			}) === s.xd
+			}) === s.yd
 		},
 		"./src/reddit/selectors/experiments/econ/marketplace.ts": function(e, t, n) {
 			"use strict";
@@ -14781,13 +14797,13 @@
 			const a = e => {
 					return !(Object(r.c)(e, {
 						experimentEligibilitySelector: r.a,
-						experimentName: s.ce
-					}) === s.xd)
+						experimentName: s.de
+					}) === s.yd)
 				},
 				o = e => Object(r.c)(e, {
 					experimentEligibilitySelector: r.a,
-					experimentName: s.de
-				}) === s.xd
+					experimentName: s.ee
+				}) === s.yd
 		},
 		"./src/reddit/selectors/gold/productOffers.ts": function(e, t, n) {
 			"use strict";
@@ -14951,4 +14967,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Settings.65f20a5e003ddf479ad1.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Settings.b0e6c6c8fc2b745ae677.js.map
