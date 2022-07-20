@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-SidebarNativeAd.495013fb9e8c8d10853c.js
-// Retrieved at 7/18/2022, 3:20:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-SidebarNativeAd.a40d00e3beb8964c5c88.js
+// Retrieved at 7/20/2022, 4:10:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-SidebarNativeAd"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -1233,8 +1233,8 @@
 				H = s("./src/config.ts"),
 				V = s("./src/reddit/hooks/useClickSourceData.ts"),
 				G = s("./src/reddit/hooks/usePostContext.ts"),
-				q = s("./src/reddit/hooks/useTheme.ts"),
-				z = s("./src/telemetry/models/Outbound.ts");
+				z = s("./src/reddit/hooks/useTheme.ts"),
+				q = s("./src/telemetry/models/Outbound.ts");
 
 			function Y() {
 				return (Y = Object.assign || function(e) {
@@ -1258,7 +1258,7 @@
 						redditStyle: d,
 						shouldBlurTitle: c
 					} = e;
-					const u = Object(q.a)();
+					const u = Object(z.a)();
 					let m = "";
 					switch (t) {
 						case L.ExtraLarge:
@@ -1412,7 +1412,7 @@
 						post: r
 					} = e, {
 						isSponsored: n
-					} = r, i = e.isCommentsPage ? z.SourceElement.PostLink : z.SourceElement.ListingPostLink;
+					} = r, i = e.isCommentsPage ? q.SourceElement.PostLink : q.SourceElement.ListingPostLink;
 					if (Object(N.a)()) return null;
 					if (s && r.isNSFW) return null;
 					const a = !t && !e.isCrosspost && e.size !== L.Large && !r.isSponsored && !(r.media && Object(E.H)(r.media)) && (r.source || r.media && (r.media.type === E.o.GIFVIDEO || r.media.type === E.o.IMAGE || r.media.type === E.o.EMBED));
@@ -1459,30 +1459,32 @@
 						poll: i,
 						post: a,
 						showNSFWSpoilerFlairsOnly: d,
-						showNSFWFlairsOnly: c
-					} = this.props, u = s === x.b.Left, m = Object(k.b)(a), p = d ? m.filter(e => e.type === x.f.Nsfw || e.type === x.f.Spoiler) : u ? m.filter(e => Object(_.q)(e.type)) : [];
-					let b = m;
-					d ? b = [] : c ? b = m.filter(e => e.type === x.f.Nsfw) : u && (b = m.filter(e => !Object(_.q)(e.type)));
-					const h = !n && !r,
-						f = !t && p && p.length > 0 && h,
-						g = !t && b && b.length > 0 && h;
+						hideNSFWSpoilerFlair: c
+					} = this.props, u = s === x.b.Left, m = Object(k.b)(a), p = [], b = [], h = [], f = [];
+					for (const o of m) o.type === x.f.Nsfw || o.type === x.f.Spoiler ? (p.push(o), f.push(o)) : Object(_.q)(o.type) ? (h.push(o), b.push(o)) : (f.push(o), b.push(o));
+					const g = d ? p : u ? h : [];
+					let v = m;
+					d ? v = [] : c ? v = b : u && (v = f);
+					const y = !n && !r && !t,
+						E = y && g && g.length > 0,
+						C = y && v && v.length > 0;
 					return o.a.createElement("div", {
 						className: Object(l.a)(W.a.Component, e, a.id),
 						ref: this.props.innerRef
-					}, !d && f && o.a.createElement(k.a, {
+					}, !d && E && o.a.createElement(k.a, {
 						isFlairFilter: !0,
-						titleFlair: p,
+						titleFlair: g,
 						nowrap: !0,
 						post: a,
 						sendEvent: this.props.sendEvent
 					}), !Object(O.b)(a) && o.a.createElement(Z, Y({}, this.props, {
-						leftFlair: d ? p : void 0
+						leftFlair: d ? g : void 0
 					})), i && o.a.createElement(R, {
 						className: W.a.pollMeta,
 						pollId: i.id
-					}), o.a.createElement(ee, this.props), g && o.a.createElement(k.a, {
+					}), o.a.createElement(ee, this.props), C && o.a.createElement(k.a, {
 						isFlairFilter: !0,
-						titleFlair: b,
+						titleFlair: v,
 						nowrap: !0,
 						post: a,
 						sendEvent: this.props.sendEvent
@@ -1504,7 +1506,7 @@
 						isCommentPermalink: s,
 						pageLayer: t
 					})),
-					a = Object(q.a)(),
+					a = Object(z.a)(),
 					d = Object(u.b)();
 				return r ? o.a.createElement(te, Y({
 					pageLayer: t,
@@ -1662,8 +1664,8 @@
 				H = m.a.div("SourceLinkWrapper", B.a),
 				V = m.a.div("TopLine", B.a),
 				G = m.a.wrapped(d.c, "PostTitle", B.a),
-				q = m.a.div("PostMediaWrapper", B.a),
-				z = m.a.div("BackgroundWrapper", B.a),
+				z = m.a.div("PostMediaWrapper", B.a),
+				q = m.a.div("BackgroundWrapper", B.a),
 				Y = m.a.wrapped(f.a, "PostContainer", B.a),
 				K = 640,
 				Q = e => Object(C.a)(e.title, 100),
@@ -1707,7 +1709,7 @@
 						})
 					}, l = o.a.createElement(L, {
 						post: e
-					})) : (i = U, l = o.a.createElement(z, {
+					})) : (i = U, l = o.a.createElement(q, {
 						style: J(this.props)
 					}, o.a.createElement(V, null, o.a.createElement(A, {
 						tooltipType: n ? c.c.Lightbox : void 0,
@@ -1722,7 +1724,7 @@
 						isSponsored: !0,
 						postId: e.id,
 						source: e.source
-					}, Object(u.a)(e), o.a.createElement(W, null))), o.a.createElement(q, null, e.media && o.a.createElement(a.a, {
+					}, Object(u.a)(e), o.a.createElement(W, null))), o.a.createElement(z, null, e.media && o.a.createElement(a.a, {
 						isListing: !0,
 						isNotCardView: !0,
 						showCentered: !0,
@@ -2190,4 +2192,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-SidebarNativeAd.495013fb9e8c8d10853c.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-SidebarNativeAd.a40d00e3beb8964c5c88.js.map

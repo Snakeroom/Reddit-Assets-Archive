@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~Reddit.e1dfe644c205aaed31fb.js
-// Retrieved at 7/20/2022, 1:20:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~Reddit.b87f284a086aaf9df97d.js
+// Retrieved at 7/20/2022, 4:10:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~Reddit"], {
 		"./assets/fonts/NotoMono/font.less": function(e, t, n) {},
@@ -3771,30 +3771,32 @@
 						poll: c,
 						post: o,
 						showNSFWSpoilerFlairsOnly: i,
-						showNSFWFlairsOnly: d
-					} = this.props, u = n === O.b.Left, p = Object(w.b)(o), f = i ? p.filter(e => e.type === O.f.Nsfw || e.type === O.f.Spoiler) : u ? p.filter(e => Object(g.q)(e.type)) : [];
-					let b = p;
-					i ? b = [] : d ? b = p.filter(e => e.type === O.f.Nsfw) : u && (b = p.filter(e => !Object(g.q)(e.type)));
-					const h = !s && !r,
-						y = !t && f && f.length > 0 && h,
-						m = !t && b && b.length > 0 && h;
+						hideNSFWSpoilerFlair: d
+					} = this.props, u = n === O.b.Left, p = Object(w.b)(o), f = [], b = [], h = [], y = [];
+					for (const a of p) a.type === O.f.Nsfw || a.type === O.f.Spoiler ? (f.push(a), y.push(a)) : Object(g.q)(a.type) ? (h.push(a), b.push(a)) : (y.push(a), b.push(a));
+					const m = i ? f : u ? h : [];
+					let v = p;
+					i ? v = [] : d ? v = b : u && (v = y);
+					const E = !s && !r && !t,
+						_ = E && m && m.length > 0,
+						S = E && v && v.length > 0;
 					return a.a.createElement("div", {
 						className: Object(l.a)(G.a.Component, e, o.id),
 						ref: this.props.innerRef
-					}, !i && y && a.a.createElement(w.a, {
+					}, !i && _ && a.a.createElement(w.a, {
 						isFlairFilter: !0,
-						titleFlair: f,
+						titleFlair: m,
 						nowrap: !0,
 						post: o,
 						sendEvent: this.props.sendEvent
 					}), !Object(I.b)(o) && a.a.createElement(J, K({}, this.props, {
-						leftFlair: i ? f : void 0
+						leftFlair: i ? m : void 0
 					})), c && a.a.createElement(k, {
 						className: G.a.pollMeta,
 						pollId: c.id
-					}), a.a.createElement(ee, this.props), m && a.a.createElement(w.a, {
+					}), a.a.createElement(ee, this.props), S && a.a.createElement(w.a, {
 						isFlairFilter: !0,
-						titleFlair: b,
+						titleFlair: v,
 						nowrap: !0,
 						post: o,
 						sendEvent: this.props.sendEvent
@@ -24779,4 +24781,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit.e1dfe644c205aaed31fb.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit.b87f284a086aaf9df97d.js.map

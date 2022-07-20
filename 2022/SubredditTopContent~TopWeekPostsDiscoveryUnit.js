@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditTopContent~TopWeekPostsDiscoveryUnit.ba4f945887e542cddf54.js
-// Retrieved at 7/14/2022, 11:10:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditTopContent~TopWeekPostsDiscoveryUnit.7013ecef5c569cdf8e35.js
+// Retrieved at 7/20/2022, 4:10:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditTopContent~TopWeekPostsDiscoveryUnit"], {
 		"./src/lib/getShortenedLink.ts": function(e, t, s) {
@@ -390,32 +390,32 @@
 				},
 				U = s("./src/reddit/icons/svgs/CircledPlanet/index.tsx"),
 				Q = s("./src/reddit/layout/twoCol/ExpandRight/index.tsx"),
-				q = s("./src/reddit/components/DiscoveryUnit/PostCommunity/index.m.less"),
-				H = s.n(q);
+				H = s("./src/reddit/components/DiscoveryUnit/PostCommunity/index.m.less"),
+				q = s.n(H);
 			var z = e => {
 					const t = Object(A.a)(e.name, e.type);
 					return a.a.createElement("div", {
-						className: Object(d.a)(H.a.container, e.className)
+						className: Object(d.a)(q.a.container, e.className)
 					}, a.a.createElement(Q.a, {
-						className: H.a.layout
+						className: q.a.layout
 					}, a.a.createElement("div", {
-						className: H.a.iconContainer
+						className: q.a.iconContainer
 					}, e.iconUrl ? a.a.createElement("img", {
-						className: H.a.icon,
+						className: q.a.icon,
 						src: e.iconUrl
 					}) : a.a.createElement(U.a, {
-						className: H.a.planetIcon,
+						className: q.a.planetIcon,
 						"data-redditstyle": !0
 					})), a.a.createElement("div", {
-						className: H.a.textContainer
+						className: q.a.textContainer
 					}, a.a.createElement(L.a, {
 						"data-click-id": "subreddit",
-						className: H.a.name,
+						className: q.a.name,
 						to: t
 					}, Object(A.b)(e.displayText || e.name, e.type)), a.a.createElement("span", {
-						className: H.a.separator
+						className: q.a.separator
 					}, "•"), a.a.createElement("span", {
-						className: H.a.timestamp
+						className: q.a.timestamp
 					}, a.a.createElement(D.d, {
 						seconds: e.created / M.Sb
 					})))))
@@ -1236,8 +1236,8 @@
 				V = s.n(B),
 				U = s("./src/config.ts"),
 				Q = s("./src/reddit/hooks/useClickSourceData.ts"),
-				q = s("./src/reddit/hooks/usePostContext.ts"),
-				H = s("./src/reddit/hooks/useTheme.ts"),
+				H = s("./src/reddit/hooks/usePostContext.ts"),
+				q = s("./src/reddit/hooks/useTheme.ts"),
 				z = s("./src/telemetry/models/Outbound.ts");
 
 			function K() {
@@ -1262,7 +1262,7 @@
 						redditStyle: c,
 						shouldBlurTitle: d
 					} = e;
-					const u = Object(H.a)();
+					const u = Object(q.a)();
 					let m = "";
 					switch (t) {
 						case M.ExtraLarge:
@@ -1463,30 +1463,32 @@
 						poll: o,
 						post: i,
 						showNSFWSpoilerFlairsOnly: c,
-						showNSFWFlairsOnly: d
-					} = this.props, u = s === O.b.Left, m = Object(E.b)(i), p = c ? m.filter(e => e.type === O.f.Nsfw || e.type === O.f.Spoiler) : u ? m.filter(e => Object(f.q)(e.type)) : [];
-					let h = m;
-					c ? h = [] : d ? h = m.filter(e => e.type === O.f.Nsfw) : u && (h = m.filter(e => !Object(f.q)(e.type)));
-					const b = !r && !n,
-						g = !t && p && p.length > 0 && b,
-						v = !t && h && h.length > 0 && b;
+						hideNSFWSpoilerFlair: d
+					} = this.props, u = s === O.b.Left, m = Object(E.b)(i), p = [], h = [], b = [], g = [];
+					for (const a of m) a.type === O.f.Nsfw || a.type === O.f.Spoiler ? (p.push(a), g.push(a)) : Object(f.q)(a.type) ? (b.push(a), h.push(a)) : (g.push(a), h.push(a));
+					const v = c ? p : u ? b : [];
+					let y = m;
+					c ? y = [] : d ? y = h : u && (y = g);
+					const x = !r && !n && !t,
+						j = x && v && v.length > 0,
+						C = x && y && y.length > 0;
 					return a.a.createElement("div", {
 						className: Object(l.a)(V.a.Component, e, i.id),
 						ref: this.props.innerRef
-					}, !c && g && a.a.createElement(E.a, {
+					}, !c && j && a.a.createElement(E.a, {
 						isFlairFilter: !0,
-						titleFlair: p,
+						titleFlair: v,
 						nowrap: !0,
 						post: i,
 						sendEvent: this.props.sendEvent
 					}), !Object(k.b)(i) && a.a.createElement(X, K({}, this.props, {
-						leftFlair: c ? p : void 0
+						leftFlair: c ? v : void 0
 					})), o && a.a.createElement(D, {
 						className: V.a.pollMeta,
 						pollId: o.id
-					}), a.a.createElement(ee, this.props), v && a.a.createElement(E.a, {
+					}), a.a.createElement(ee, this.props), C && a.a.createElement(E.a, {
 						isFlairFilter: !0,
-						titleFlair: h,
+						titleFlair: y,
 						nowrap: !0,
 						post: i,
 						sendEvent: this.props.sendEvent
@@ -1501,14 +1503,14 @@
 			t.c = a.a.memo((function(e) {
 				const t = Object(m.fb)(),
 					s = Object(m.w)(t),
-					n = Object(q.a)(),
+					n = Object(H.a)(),
 					r = Object(o.e)(r => J(r, {
 						...n,
 						...e,
 						isCommentPermalink: s,
 						pageLayer: t
 					})),
-					i = Object(H.a)(),
+					i = Object(q.a)(),
 					c = Object(u.b)();
 				return n ? a.a.createElement(te, K({
 					pageLayer: t,
@@ -2214,9 +2216,9 @@
 				V = s.n(B),
 				U = s("./node_modules/lodash/omit.js"),
 				Q = s.n(U);
-			const q = {};
-			var H = function() {
-				let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : q,
+			const H = {};
+			var q = function() {
+				let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : H,
 					t = arguments.length > 1 ? arguments[1] : void 0;
 				switch (t.type) {
 					case A.g:
@@ -2374,7 +2376,7 @@
 				},
 				te = Object(n.c)({
 					api: R,
-					models: H,
+					models: q,
 					pageInfo: K,
 					search: X,
 					userOrder: ee
@@ -2870,7 +2872,7 @@
 						return e
 				}
 			};
-			var qe = function() {
+			var He = function() {
 					let e = arguments.length > 0 && void 0 !== arguments[0] && arguments[0],
 						t = arguments.length > 1 ? arguments[1] : void 0;
 					switch (t.type) {
@@ -2883,9 +2885,9 @@
 							return e
 					}
 				},
-				He = Object(n.c)({
+				qe = Object(n.c)({
 					error: Qe,
-					pending: qe
+					pending: He
 				}),
 				ze = s("./node_modules/lodash/isEqual.js"),
 				Ke = s.n(ze);
@@ -2916,7 +2918,7 @@
 					}
 				},
 				Ge = Object(n.c)({
-					api: He,
+					api: qe,
 					result: Ze
 				});
 			const Ye = {};
@@ -3438,9 +3440,9 @@
 						return e
 				}
 			};
-			const qt = {};
-			var Ht = function() {
-					let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : qt,
+			const Ht = {};
+			var qt = function() {
+					let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : Ht,
 						t = arguments.length > 1 ? arguments[1] : void 0;
 					switch (t.type) {
 						case it.m: {
@@ -3462,7 +3464,7 @@
 				zt = Object(n.c)({
 					api: Vt,
 					itemOrder: Qt,
-					loadMore: Ht
+					loadMore: qt
 				});
 			var Kt = function() {
 				let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : null,
@@ -3929,4 +3931,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditTopContent~TopWeekPostsDiscoveryUnit.ba4f945887e542cddf54.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditTopContent~TopWeekPostsDiscoveryUnit.7013ecef5c569cdf8e35.js.map

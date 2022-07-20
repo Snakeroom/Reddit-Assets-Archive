@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModerationPages.8ed3cdaf8b3e3140e989.js
-// Retrieved at 7/20/2022, 2:50:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModerationPages.4755b401ff767b745003.js
+// Retrieved at 7/20/2022, 4:10:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModerationPages", "CollectionCommentsPage~CommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~RpanListingUnit~S~5809214e", "CommentsPage~Governance~Reddit~ReportFlow~Subreddit~reddit-components-BlankPost~reddit-components-Cl~5351df81", "PostCreation~Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~r~4c415e24", "Governance~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compo~bd4baca2", "Governance~ModListing~Reddit~ReportFlow~Subreddit", "Governance~Reddit~SubredditForkingCTA", "AuthorHovercard~Reddit"], {
 		"./src/chat/controls/Svg/index.m.less": function(e, t, n) {
@@ -41541,30 +41541,32 @@
 						poll: a,
 						post: i,
 						showNSFWSpoilerFlairsOnly: d,
-						showNSFWFlairsOnly: c
-					} = this.props, u = n === x.b.Left, m = Object(k.b)(i), p = d ? m.filter(e => e.type === x.f.Nsfw || e.type === x.f.Spoiler) : u ? m.filter(e => Object(g.q)(e.type)) : [];
-					let b = m;
-					d ? b = [] : c ? b = m.filter(e => e.type === x.f.Nsfw) : u && (b = m.filter(e => !Object(g.q)(e.type)));
-					const h = !r && !s,
-						f = !t && p && p.length > 0 && h,
-						_ = !t && b && b.length > 0 && h;
+						hideNSFWSpoilerFlair: c
+					} = this.props, u = n === x.b.Left, m = Object(k.b)(i), p = [], b = [], h = [], f = [];
+					for (const o of m) o.type === x.f.Nsfw || o.type === x.f.Spoiler ? (p.push(o), f.push(o)) : Object(g.q)(o.type) ? (h.push(o), b.push(o)) : (f.push(o), b.push(o));
+					const _ = d ? p : u ? h : [];
+					let v = m;
+					d ? v = [] : c ? v = b : u && (v = f);
+					const O = !r && !s && !t,
+						E = O && _ && _.length > 0,
+						j = O && v && v.length > 0;
 					return o.a.createElement("div", {
 						className: Object(l.a)(G.a.Component, e, i.id),
 						ref: this.props.innerRef
-					}, !d && f && o.a.createElement(k.a, {
+					}, !d && E && o.a.createElement(k.a, {
 						isFlairFilter: !0,
-						titleFlair: p,
+						titleFlair: _,
 						nowrap: !0,
 						post: i,
 						sendEvent: this.props.sendEvent
 					}), !Object(y.b)(i) && o.a.createElement(Z, K({}, this.props, {
-						leftFlair: d ? p : void 0
+						leftFlair: d ? _ : void 0
 					})), a && o.a.createElement(M, {
 						className: G.a.pollMeta,
 						pollId: a.id
-					}), o.a.createElement(ee, this.props), _ && o.a.createElement(k.a, {
+					}), o.a.createElement(ee, this.props), j && o.a.createElement(k.a, {
 						isFlairFilter: !0,
-						titleFlair: b,
+						titleFlair: v,
 						nowrap: !0,
 						post: i,
 						sendEvent: this.props.sendEvent
@@ -74304,4 +74306,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.8ed3cdaf8b3e3140e989.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.4755b401ff767b745003.js.map
