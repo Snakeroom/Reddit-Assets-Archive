@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModerationPages.25fd00c79cce78634258.js
-// Retrieved at 7/25/2022, 4:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModerationPages.dfedafbf1bb2ac843823.js
+// Retrieved at 7/25/2022, 6:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModerationPages", "CollectionCommentsPage~CommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~RpanListingUnit~S~5809214e", "CommentsPage~Governance~Reddit~ReportFlow~Subreddit~reddit-components-BlankPost~reddit-components-Cl~5351df81", "PostCreation~Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~r~4c415e24", "Governance~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compo~bd4baca2", "Governance~ModListing~Reddit~ReportFlow~Subreddit", "Governance~Reddit~SubredditForkingCTA", "AuthorHovercard~Reddit"], {
 		"./src/chat/controls/Svg/index.m.less": function(e, t, n) {
@@ -8625,7 +8625,7 @@
 						} = t;
 						var m, p;
 						const b = Object(xe.c)(e),
-							h = !!b && !Object(_e.Uf)(b) && (o || b === _e.ub.Community),
+							h = !!b && !Object(_e.Sf)(b) && (o || b === _e.ub.Community),
 							{
 								numberOfAdsSeen: f,
 								numberOfPostsSeen: g
@@ -54282,7 +54282,7 @@
 								experimentName: o.P,
 								expEventOverride: t
 							});
-							return !!(Object(o.Uf)(n) ? void 0 : n)
+							return !!(Object(o.Sf)(n) ? void 0 : n)
 						})(n)) || (e => !1 !== e.collapsed)(t)
 					})
 				}
@@ -71293,7 +71293,7 @@
 					experimentEligibilitySelector: r.a,
 					experimentName: s.xd
 				});
-				return !(!t || Object(s.Uf)(t))
+				return !(!t || Object(s.Sf)(t))
 			}
 		},
 		"./src/reddit/selectors/experiments/gqlSubredditPage.ts": function(e, t, n) {
@@ -71858,9 +71858,9 @@
 				}),
 				i = (e, t, n) => {
 					const o = n(e, t);
-					return !(!o || !o.meter) && (o.meter.enabled && s.Jf.Enabled === Object(r.c)(e, {
+					return !(!o || !o.meter) && (o.meter.enabled && s.Hf.Enabled === Object(r.c)(e, {
 						experimentEligibilitySelector: r.a,
-						experimentName: s.If
+						experimentName: s.Gf
 					}))
 				},
 				d = e => Object(r.c)(e, {
@@ -71951,9 +71951,9 @@
 					experimentName: r.Qc,
 					experimentEligibilitySelector: e => d(e, t)
 				}), e => e),
-				l = e => e === r.Ef.NoCommunityWidgets,
-				u = e => e === r.Ef.NoRulesModerators,
-				m = e => e === r.Ef.RelatedPostsDu
+				l = e => e === r.Cf.NoCommunityWidgets,
+				u = e => e === r.Cf.NoRulesModerators,
+				m = e => e === r.Cf.RelatedPostsDu
 		},
 		"./src/reddit/selectors/experiments/web2x_cta.ts": function(e, t, n) {
 			"use strict";
@@ -71964,10 +71964,10 @@
 				r = n("./src/reddit/constants/experiments.ts"),
 				o = n("./src/reddit/helpers/chooseVariant/index.ts");
 			const a = Object(s.a)(e => Object(o.c)(e, {
-					experimentName: r.Lf,
+					experimentName: r.Jf,
 					experimentEligibilitySelector: o.a
 				}), e => e),
-				i = Object(s.a)(a, e => e === r.Df)
+				i = Object(s.a)(a, e => e === r.Bf)
 		},
 		"./src/reddit/selectors/externalAccount.ts": function(e, t, n) {
 			"use strict";
@@ -72790,7 +72790,7 @@
 					} = e.onboarding;
 					if (t.success || t.failure) return t
 				},
-				_ = Object(r.a)(u.c, e => e.onboarding.interestTopicRecommendationsState, (e, t) => e && !Object(o.Uf)(e) ? t : null),
+				_ = Object(r.a)(u.c, e => e.onboarding.interestTopicRecommendationsState, (e, t) => e && !Object(o.Sf)(e) ? t : null),
 				v = Object(r.a)(u.c, (e, t) => {
 					let {
 						pageLayer: n
@@ -74328,4 +74328,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.25fd00c79cce78634258.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.dfedafbf1bb2ac843823.js.map
