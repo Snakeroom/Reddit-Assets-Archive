@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.cffb2e0edb50560baa84.js
-// Retrieved at 7/25/2022, 11:50:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.f50724ce49ed540c0b3e.js
+// Retrieved at 7/25/2022, 1:00:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Chat~Governance~Reddit"], {
 		"./assets/fonts/IBMPlexSans/font.less": function(e, t, i) {},
@@ -3467,11 +3467,11 @@
 				apiPassThroughHeaders: Object(r.e)({}.API_PASS_THROUGH_HEADERS || ""),
 				appName: {}.APP_NAME || "desktop2x",
 				assetPath: "https://www.redditstatic.com/desktop2x",
-				buildNumber: Object(r.c)("169115"),
+				buildNumber: Object(r.c)("169120"),
 				chatHelpUrl: {}.CHAT_HELP_URL || "https://reddit.zendesk.com/hc/en-us/sections/360008805652-Chat",
 				hlsVersion: "hls 0.12.4",
 				dashVersion: "dash 3.2.0",
-				buildTimestamp: Object(r.b)("1658762710"),
+				buildTimestamp: Object(r.b)("1658766831"),
 				cookieDomain: ".reddit.com",
 				giphyApiKey: "k2kwyMA6VeyHM6ZRT96OXDGaersnx73Z",
 				mediaUrl: "https://www.redditmedia.com",
@@ -6089,14 +6089,14 @@
 					}))
 				},
 				Y = (e, t, i) => {
-					console.log("%cStarting Raven %crelease %c7c4306207c42fd5fbc47631b1b27d17f0552ee94-production" + ` %cpublic url %c${y.a.sentryClientPublicURL}`, "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
+					console.log("%cStarting Raven %crelease %c90ff5fbeeeb7e158348f19832bbd23f448550aa7-production" + ` %cpublic url %c${y.a.sentryClientPublicURL}`, "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
 					let n = [];
 					n = [new RegExp(`^${y.a.assetPath}`, "i")];
 					o.e({
 						attachStacktrace: !0,
 						dsn: y.a.sentryClientPublicURL,
 						whitelistUrls: n,
-						release: "7c4306207c42fd5fbc47631b1b27d17f0552ee94-production",
+						release: "90ff5fbeeeb7e158348f19832bbd23f448550aa7-production",
 						environment: "production",
 						ignoreErrors: ["$ is not defined"],
 						integrations: [...Object(L.d)(), new d.Integrations.Breadcrumbs({
@@ -6622,7 +6622,7 @@
 							settings: r,
 							statusCode: s,
 							type: o,
-							releaseClient: "7c4306207c42fd5fbc47631b1b27d17f0552ee94-production",
+							releaseClient: "90ff5fbeeeb7e158348f19832bbd23f448550aa7-production",
 							appName: t.statsAppName,
 							error: n ? JSON.parse(Object(l.a)(n)) : void 0
 						},
@@ -35284,42 +35284,43 @@
 		"./src/reddit/selectors/chatPost.ts": function(e, t, i) {
 			"use strict";
 			i.d(t, "c", (function() {
-				return a
-			})), i.d(t, "b", (function() {
 				return l
-			})), i.d(t, "d", (function() {
+			})), i.d(t, "b", (function() {
 				return u
-			})), i.d(t, "a", (function() {
+			})), i.d(t, "d", (function() {
 				return c
+			})), i.d(t, "a", (function() {
+				return _
 			}));
 			var n = i("./src/reddit/contexts/PageLayer/selectors.ts"),
 				r = i("./src/reddit/models/Post/index.ts"),
 				s = i("./src/reddit/selectors/experiments/econ/index.ts"),
 				o = i("./src/reddit/selectors/isModeratorOfSubreddit.ts"),
 				d = i("./src/reddit/selectors/posts.ts");
-			const a = (e, t) => {
+			const a = ["t5_2th52", "t5_323oy", "t5_2set6", "t5_457lbm"],
+				l = (e, t) => {
 					const i = t && e.subreddits.models[t];
 					return Boolean(i && i.isChatPostFeatureEnabled)
 				},
-				l = (e, t) => {
+				u = (e, t) => {
 					const i = t && e.subreddits.models[t];
 					return Boolean(i && i.allowChatPostCreation)
 				},
-				u = (e, t) => {
+				c = (e, t) => {
 					let {
 						postId: i
 					} = t;
-					var n, o;
-					const a = Object(s.r)(e),
-						l = !!i && Object(d.G)(e, {
+					var n, o, l;
+					const u = Object(s.r)(e),
+						c = !!i && Object(d.G)(e, {
 							postId: i
 						});
-					return a ? !!l && (!(null === (o = null === (n = l.audioRoom) || void 0 === n ? void 0 : n.isLive) || void 0 === o || !o) || l.discussionType === r.b.Chat) : !!l && l.discussionType === r.b.Chat
+					return u ? !!c && (!(null === (o = null === (n = c.audioRoom) || void 0 === n ? void 0 : n.isLive) || void 0 === o || !o || !a.includes(null === (l = c.belongsTo) || void 0 === l ? void 0 : l.id)) || c.discussionType === r.b.Chat) : !!c && c.discussionType === r.b.Chat
 				},
-				c = (e, t) => {
+				_ = (e, t) => {
 					const i = t.subredditId || Object(n.p)(e, t),
-						r = a(e, i),
-						s = l(e, i),
+						r = l(e, i),
+						s = u(e, i),
 						d = !!i && Object(o.c)(e, {
 							subredditId: i
 						});
@@ -48562,4 +48563,4 @@
 		"ignored /drone/src/node_modules/readable-stream/lib/internal/streams util": function(e, t) {}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.cffb2e0edb50560baa84.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.f50724ce49ed540c0b3e.js.map
