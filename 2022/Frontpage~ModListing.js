@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Frontpage~ModListing.f274fca84f424e0d2a20.js
-// Retrieved at 7/20/2022, 6:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Frontpage~ModListing.6541ef4a2e4e533e0d5d.js
+// Retrieved at 7/25/2022, 4:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Frontpage~ModListing"], {
 		"./src/reddit/actions/focusedVerticals/index.ts": function(e, t, n) {
@@ -710,19 +710,19 @@
 					}))
 				},
 				G = R.a.div("DropdownRowDisabled", D.a),
-				V = Object(l.u)({
+				U = Object(l.u)({
 					isFrontpage: l.A,
 					isProfilePage: l.J,
 					pageLayer: e => e
 				}),
-				U = Object(f.c)({
+				V = Object(f.c)({
 					isAwardListingExperimentEnabled: j.a,
 					isBestSortPopularEnabled: N.a,
 					user: I.k,
 					dropdownIsOpen: (e, t) => Object(T.b)(t.dropdownId || z)(e),
 					isPopularPage: l.F
 				}),
-				K = Object(o.b)(U, (e, t) => {
+				K = Object(o.b)(V, (e, t) => {
 					let {
 						dropdownId: n,
 						pageLayer: r
@@ -733,7 +733,7 @@
 						}))
 					}
 				});
-			var q = R.a.wrapped(V(K(Object(d.c)(e => s.a.createElement("div", {
+			var q = R.a.wrapped(U(K(Object(d.c)(e => s.a.createElement("div", {
 					className: e.className,
 					onClick: e.onOpenDropdown
 				}, !1 !== e.showTitle && s.a.createElement(F, null, w.fbt._("Sort", null, {
@@ -1430,8 +1430,8 @@
 			}
 			var Me = Ae(Object(o.b)(Fe)(Object(d.c)(He))),
 				Ge = n("./src/reddit/components/GeneralCleanup/SortViewBar/index.m.less"),
-				Ve = n.n(Ge);
-			const Ue = Object(l.u)({
+				Ue = n.n(Ge);
+			const Ve = Object(l.u)({
 					isProfilePage: l.J,
 					pageLayer: e => e
 				}),
@@ -1479,7 +1479,7 @@
 						updateSortPreference: u
 					} = this.props;
 					return s.a.createElement("div", {
-						className: Object(a.a)(Ve.a.Container, t),
+						className: Object(a.a)(Ue.a.Container, t),
 						onBlur: this.blurListingBroadcast,
 						onFocus: this.focusListingBroadcast
 					}, s.a.createElement(Me, {
@@ -1492,12 +1492,12 @@
 						sortOptions: c,
 						timeSort: l
 					}), !o && s.a.createElement(m.a, {
-						className: Ve.a.LayoutSwitch,
+						className: Ue.a.LayoutSwitch,
 						subredditId: d
 					}))
 				}
 			}
-			t.a = Ue(Ke(Object(d.c)(qe)))
+			t.a = Ve(Ke(Object(d.c)(qe)))
 		},
 		"./src/reddit/components/ListingPostList/index.tsx": function(e, t, n) {
 			"use strict";
@@ -1746,7 +1746,7 @@
 					}, r[t]) : null
 				};
 				if (e.isD2xPdpSideRailRecsEnabled) {
-					const t = e.d2xPdpSideRailRecsVariant === u.Kc.GreyRereddit || e.d2xPdpSideRailRecsVariant === u.Kc.GreyRedditNoNsfw || e.d2xPdpSideRailRecsVariant === u.Kc.LargeImagePreview ? e.reredditButtons : [];
+					const t = e.d2xPdpSideRailRecsVariant === u.Jc.GreyRereddit || e.d2xPdpSideRailRecsVariant === u.Jc.GreyRedditNoNsfw || e.d2xPdpSideRailRecsVariant === u.Jc.LargeImagePreview ? e.reredditButtons : [];
 					return s.a.createElement(E, {
 						reredditContent: t,
 						countryCode: e.countryCode
@@ -2615,7 +2615,7 @@
 				const p = Object(a.e)(e => e.subreddits.survey[n]),
 					h = Object(a.e)(e => e.subreddits.progressModule[n]),
 					b = Object(a.e)(u.a),
-					f = b !== d.Be.NewModule;
+					f = b !== d.ze.NewModule;
 				return (null === (s = null == h ? void 0 : h.cards) || void 0 === s ? void 0 : s.length) > 0 && f ? o.a.createElement(m, {
 					closeModuleOnMount: !!t && t !== l.g.Large,
 					subredditId: n,
@@ -2665,15 +2665,15 @@
 			const a = e => {
 					const t = Object(s.c)(e, {
 						experimentEligibilitySelector: o.Q,
-						experimentName: r.ed
+						experimentName: r.cd
 					});
-					return !(!t || Object(r.Wf)(t))
+					return !(!t || Object(r.Uf)(t))
 				},
 				i = e => {
 					return Object(s.c)(e, {
 						experimentEligibilitySelector: o.Q,
-						experimentName: r.ed
-					}) === r.Ed.ListingEnabled
+						experimentName: r.cd
+					}) === r.Cd.ListingEnabled
 				}
 		},
 		"./src/reddit/selectors/focusedVerticalSuggestion.ts": function(e, t, n) {
@@ -2800,4 +2800,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Frontpage~ModListing.f274fca84f424e0d2a20.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Frontpage~ModListing.6541ef4a2e4e533e0d5d.js.map

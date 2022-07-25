@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostSetPage.d9cd382be79457aeb203.js
-// Retrieved at 7/20/2022, 6:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostSetPage.bae50e8ba07464326c10.js
+// Retrieved at 7/25/2022, 4:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostSetPage"], {
 		"./node_modules/intersection-observer/intersection-observer.js": function(e, t) {
@@ -846,7 +846,7 @@
 					}, r[t]) : null
 				};
 				if (e.isD2xPdpSideRailRecsEnabled) {
-					const t = e.d2xPdpSideRailRecsVariant === m.Kc.GreyRereddit || e.d2xPdpSideRailRecsVariant === m.Kc.GreyRedditNoNsfw || e.d2xPdpSideRailRecsVariant === m.Kc.LargeImagePreview ? e.reredditButtons : [];
+					const t = e.d2xPdpSideRailRecsVariant === m.Jc.GreyRereddit || e.d2xPdpSideRailRecsVariant === m.Jc.GreyRedditNoNsfw || e.d2xPdpSideRailRecsVariant === m.Jc.LargeImagePreview ? e.reredditButtons : [];
 					return s.a.createElement(O, {
 						reredditContent: t,
 						countryCode: e.countryCode
@@ -2448,13 +2448,13 @@
 					return Object(s.c)(e, {
 						experimentEligibilitySelector: () => t,
 						experimentName: r.qc
-					}) === r.Ad
+					}) === r.yd
 				},
 				o = e => {
 					return Object(s.c)(e, {
 						experimentEligibilitySelector: s.a,
 						experimentName: r.pc
-					}) === r.Ad
+					}) === r.yd
 				}
 		},
 		"./src/reddit/selectors/focusedVerticalSuggestion.ts": function(e, t, n) {
@@ -2581,4 +2581,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostSetPage.d9cd382be79457aeb203.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostSetPage.bae50e8ba07464326c10.js.map

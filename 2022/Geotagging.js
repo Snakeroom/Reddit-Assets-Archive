@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Geotagging.adc916d70b3bf23734ac.js
-// Retrieved at 7/20/2022, 6:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Geotagging.feae7f5ec10a8dc56d9c.js
+// Retrieved at 7/25/2022, 4:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Geotagging"], {
 		"./node_modules/p-debounce/index.js": function(e, t, n) {
@@ -483,7 +483,7 @@
 					}, s[t]) : null
 				};
 				if (e.isD2xPdpSideRailRecsEnabled) {
-					const t = e.d2xPdpSideRailRecsVariant === u.Kc.GreyRereddit || e.d2xPdpSideRailRecsVariant === u.Kc.GreyRedditNoNsfw || e.d2xPdpSideRailRecsVariant === u.Kc.LargeImagePreview ? e.reredditButtons : [];
+					const t = e.d2xPdpSideRailRecsVariant === u.Jc.GreyRereddit || e.d2xPdpSideRailRecsVariant === u.Jc.GreyRedditNoNsfw || e.d2xPdpSideRailRecsVariant === u.Jc.LargeImagePreview ? e.reredditButtons : [];
 					return r.a.createElement(O, {
 						reredditContent: t,
 						countryCode: e.countryCode
@@ -1614,8 +1614,8 @@
 					}
 				})
 			}
-			var K = n("./src/reddit/icons/svgs/HamburgerClose/index.tsx"),
-				q = n("./src/reddit/models/Toast/index.ts");
+			var q = n("./src/reddit/icons/svgs/HamburgerClose/index.tsx"),
+				K = n("./src/reddit/models/Toast/index.ts");
 			const {
 				fbt: U
 			} = n("./node_modules/fbt/lib/FbtPublic.js");
@@ -1644,7 +1644,7 @@
 
 				function S() {
 					o(Object(O.f)({
-						kind: q.b.SuccessMod,
+						kind: K.b.SuccessMod,
 						text: U._("Nice work!", null, {
 							hk: "2Wu6gX"
 						})
@@ -1667,7 +1667,7 @@
 					onClick: function() {
 						Y(t.id), _(B(t)), f(), n(t.id)
 					}
-				}, r.a.createElement(K.a, null))), r.a.createElement("p", null, t.publicDescriptionText || t.title), t.geoPlace && !m ? r.a.createElement("div", {
+				}, r.a.createElement(q.a, null))), r.a.createElement("p", null, t.publicDescriptionText || t.title), t.geoPlace && !m ? r.a.createElement("div", {
 					className: y.a.questionContainer
 				}, r.a.createElement("div", {
 					className: y.a.question
@@ -1703,7 +1703,7 @@
 							sessionId: r
 						});
 						if (u(!1), !a.ok) return o(Object(O.f)({
-							kind: q.b.Error,
+							kind: K.b.Error,
 							text: U._("Something went wrong", null, {
 								hk: "2PnKbu"
 							}),
@@ -1837,4 +1837,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Geotagging.adc916d70b3bf23734ac.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Geotagging.feae7f5ec10a8dc56d9c.js.map

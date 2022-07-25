@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Topic.e8e061600ba1d049b7aa.js
-// Retrieved at 7/20/2022, 6:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Topic.49973c37f22323fdbd56.js
+// Retrieved at 7/25/2022, 4:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Topic"], {
 		"./node_modules/intersection-observer/intersection-observer.js": function(e, t) {
@@ -812,7 +812,7 @@
 					}, r[t]) : null
 				};
 				if (e.isD2xPdpSideRailRecsEnabled) {
-					const t = e.d2xPdpSideRailRecsVariant === u.Kc.GreyRereddit || e.d2xPdpSideRailRecsVariant === u.Kc.GreyRedditNoNsfw || e.d2xPdpSideRailRecsVariant === u.Kc.LargeImagePreview ? e.reredditButtons : [];
+					const t = e.d2xPdpSideRailRecsVariant === u.Jc.GreyRereddit || e.d2xPdpSideRailRecsVariant === u.Jc.GreyRedditNoNsfw || e.d2xPdpSideRailRecsVariant === u.Jc.LargeImagePreview ? e.reredditButtons : [];
 					return n.a.createElement(k, {
 						reredditContent: t,
 						countryCode: e.countryCode
@@ -2177,8 +2177,8 @@
 				J = s.n(z);
 			const {
 				fbt: U
-			} = s("./node_modules/fbt/lib/FbtPublic.js"), K = 5;
-			class q extends n.a.Component {
+			} = s("./node_modules/fbt/lib/FbtPublic.js"), q = 5;
+			class Y extends n.a.Component {
 				constructor() {
 					super(...arguments), this.onClick = () => {
 						const {
@@ -2194,7 +2194,7 @@
 						relatedTopics: t
 					} = this.props.relationship;
 					return n.a.createElement(y, {
-						limit: K,
+						limit: q,
 						title: e,
 						topics: t
 					}, this.renderSeeMoreButton())
@@ -2204,7 +2204,7 @@
 						namePlural: e,
 						relatedTopics: t
 					} = this.props.relationship;
-					return t.length < K ? null : n.a.createElement(L.a, {
+					return t.length < q ? null : n.a.createElement(L.a, {
 						onClick: this.onClick,
 						to: "#"
 					}, n.a.createElement(I.r, {
@@ -2218,7 +2218,7 @@
 					})))
 				}
 			}
-			var Y = q,
+			var K = Y,
 				Q = s("./src/lib/prettyPrintNumber/index.ts"),
 				Z = s("./src/reddit/components/Flair/index.tsx"),
 				X = s("./src/reddit/components/SubredditIcon/index.tsx"),
@@ -2445,7 +2445,7 @@
 							timerMillis: e,
 							timeSort: this.props.timeSort
 						})
-					}, this.renderNoPosts = () => null, this.renderRelationship = (e, t) => n.a.createElement(Y, {
+					}, this.renderNoPosts = () => null, this.renderRelationship = (e, t) => n.a.createElement(K, {
 						key: e.slug,
 						openTab: this.openTab,
 						relationship: e,
@@ -2719,4 +2719,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Topic.e8e061600ba1d049b7aa.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Topic.49973c37f22323fdbd56.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Reddit~StandalonePostPage.986ea7caa26f11ff09f1.js
-// Retrieved at 7/20/2022, 6:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Reddit~StandalonePostPage.e9b835acd1fd5310a6b2.js
+// Retrieved at 7/25/2022, 4:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Reddit~StandalonePostPage"], {
 		"./src/higherOrderComponents/asModal/helpers.ts": function(e, t, n) {
@@ -477,13 +477,13 @@
 						})
 					}, []);
 				Object(a.a)(I, M);
-				const [L, V] = Object(s.useState)(!1), U = Object(s.useCallback)(e => {
+				const [V, L] = Object(s.useState)(!1), U = Object(s.useCallback)(e => {
 					e.forEach(e => {
 						const {
 							isIntersecting: t,
 							intersectionRatio: n
 						} = e, s = 1 !== n;
-						t ? V(!0) : s && V(!1)
+						t ? L(!0) : s && L(!1)
 					})
 				}, []), q = Object(s.useRef)({
 					rootMargin: "2000px 0px 2000px 0px"
@@ -540,7 +540,7 @@
 					role: "screen-reader"
 				}, [...S].reverse().join(""))), r.a.createElement("span", {
 					ref: I
-				}), L && r.a.createElement(i.a, {
+				}), V && r.a.createElement(i.a, {
 					variables: x,
 					onData: h ? m : b,
 					queryKey: v,
@@ -2925,7 +2925,7 @@
 					return Object(r.c)(e, {
 						experimentEligibilitySelector: r.a,
 						experimentName: s.sc
-					}) === s.Lc.Enabled
+					}) === s.Kc.Enabled
 				}
 		},
 		"./src/reddit/selectors/experiments/presence.ts": function(e, t, n) {
@@ -2938,8 +2938,8 @@
 			const o = e => {
 				return Object(r.c)(e, {
 					experimentEligibilitySelector: r.a,
-					experimentName: s.Le
-				}) === s.Ad
+					experimentName: s.Je
+				}) === s.yd
 			}
 		},
 		"./src/reddit/selectors/userPrefs.ts": function(e, t, n) {
@@ -3021,4 +3021,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit~StandalonePostPage.986ea7caa26f11ff09f1.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit~StandalonePostPage.e9b835acd1fd5310a6b2.js.map

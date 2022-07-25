@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CommentsPageNativeAd.9ead84992f7e84713a84.js
-// Retrieved at 7/20/2022, 6:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CommentsPageNativeAd.6fa9a59ff2982acdc886.js
+// Retrieved at 7/25/2022, 4:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CommentsPageNativeAd"], {
 		"./src/reddit/components/BlankPost/index.tsx": function(e, t, s) {
@@ -115,8 +115,8 @@
 				W = s("./src/reddit/components/Thumbnail/index.tsx"),
 				V = s("./src/reddit/icons/svgs/Close/index.tsx");
 
-			function R() {
-				return (R = Object.assign || function(e) {
+			function D() {
+				return (D = Object.assign || function(e) {
 					for (var t = 1; t < arguments.length; t++) {
 						var s = arguments[t];
 						for (var a in s) Object.prototype.hasOwnProperty.call(s, a) && (e[a] = s[a])
@@ -124,7 +124,7 @@
 					return e
 				}).apply(this, arguments)
 			}
-			const U = e => {
+			const R = e => {
 				let {
 					classNameInnerThumbnail: t,
 					closeVideo: s,
@@ -177,7 +177,7 @@
 					usePreview: u
 				})
 			};
-			var D = e => {
+			var U = e => {
 					const {
 						isVideo: t,
 						className: s,
@@ -187,7 +187,7 @@
 					return o.a.createElement("div", {
 						className: a ? Object(l.a)(A.a.videoContainer, s) : Object(l.a)(A.a.thumbnailContainer, s),
 						onClick: n ? () => r(!0) : void 0
-					}, o.a.createElement(U, R({}, e, {
+					}, o.a.createElement(R, D({}, e, {
 						mediaExpanded: a,
 						closeVideo: () => r(!1)
 					})), n && o.a.createElement(M.a, {
@@ -290,7 +290,7 @@
 						className: Object(l.a)(A.a.contentRow, {
 							[A.a.contentRowExpanded]: this.state.mediaExpanded
 						})
-					}, !(n && !j) && o.a.createElement(D, {
+					}, !(n && !j) && o.a.createElement(U, {
 						isMeta: p.isMeta,
 						post: p,
 						redditStyle: h,
@@ -436,11 +436,11 @@
 				r = s("./src/reddit/constants/experiments.ts"),
 				o = s("./src/reddit/helpers/chooseVariant/index.ts");
 			const n = Object(a.a)(e => Object(o.c)(e, {
-					experimentName: r.Nf,
+					experimentName: r.Lf,
 					experimentEligibilitySelector: o.a
 				}), e => e),
-				i = Object(a.a)(n, e => e === r.Ff)
+				i = Object(a.a)(n, e => e === r.Df)
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommentsPageNativeAd.9ead84992f7e84713a84.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommentsPageNativeAd.6fa9a59ff2982acdc886.js.map

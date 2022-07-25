@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/EconPowerupsFlairModal.07a2a713de8b41df8747.js
-// Retrieved at 7/20/2022, 6:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/EconPowerupsFlairModal.93eae98622dd3b534b79.js
+// Retrieved at 7/25/2022, 4:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["EconPowerupsFlairModal"], {
 		"./src/reddit/actions/economics/powerups/flairs/index.ts": function(e, t, r) {
@@ -701,7 +701,7 @@
 				Q = r.n(z);
 			const {
 				fbt: R
-			} = r("./node_modules/fbt/lib/FbtPublic.js"), W = e => {
+			} = r("./node_modules/fbt/lib/FbtPublic.js"), K = e => {
 				let {
 					subredditId: t,
 					userId: r,
@@ -766,7 +766,7 @@
 					}
 				})))
 			};
-			var K = r("./src/reddit/actions/authorFlair.ts"),
+			var W = r("./src/reddit/actions/authorFlair.ts"),
 				Y = r("./src/reddit/components/Flair/index.tsx"),
 				J = r("./src/reddit/controls/Button/index.tsx"),
 				$ = r("./src/reddit/components/Econ/PowerupsFlair/PowerupsFlairModal/UserFlair.m.less"),
@@ -795,7 +795,7 @@
 					priority: J.c.Plain,
 					onClick: () => {
 						const e = c ? Object(p.e)(c) : null;
-						d(Object(E.a)()), n(Object(K.b)({
+						d(Object(E.a)()), n(Object(W.b)({
 							username: e,
 							subredditId: r,
 							isOpenedFromAchievementsModal: !0
@@ -845,7 +845,7 @@
 				}, g && o.a.createElement(ee, {
 					subredditId: h.id,
 					flairData: w
-				}), o.a.createElement(W, {
+				}), o.a.createElement(K, {
 					subredditId: h.id,
 					userId: n.id
 				})), o.a.createElement("div", {
@@ -1310,8 +1310,8 @@
 				d = e => o.includes(e),
 				c = Object(s.a)(e => Object(n.c)(e, {
 					experimentEligibilitySelector: n.a,
-					experimentName: i.Wd
-				}), e => e === i.Ad)
+					experimentName: i.Ud
+				}), e => e === i.yd)
 		},
 		"./src/reddit/selectors/gold/powerups/flairs.ts": function(e, t, r) {
 			"use strict";
@@ -1429,4 +1429,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EconPowerupsFlairModal.07a2a713de8b41df8747.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EconPowerupsFlairModal.93eae98622dd3b534b79.js.map
