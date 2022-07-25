@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~CountryPage~FramedGild~GildModal~GovernanceReleaseNotesModal~Mem~c8b748a6.ffd358e2affeb5c4fea9.js
-// Retrieved at 7/20/2022, 6:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~CountryPage~FramedGild~GildModal~GovernanceReleaseNotesModal~Mem~c8b748a6.720a7267c3e688eba34c.js
+// Retrieved at 7/25/2022, 2:10:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~CountryPage~FramedGild~GildModal~GovernanceReleaseNotesModal~Mem~c8b748a6"], {
 		"./src/lib/colors/constants.ts": function(e, t, s) {
@@ -337,17 +337,17 @@
 					})))
 				}
 			}
-			var H = s("./node_modules/react-router-dom/esm/react-router-dom.js"),
-				R = s("./src/reddit/icons/svgs/VideoSnoo/index.tsx"),
+			var R = s("./node_modules/react-router-dom/esm/react-router-dom.js"),
+				H = s("./src/reddit/icons/svgs/VideoSnoo/index.tsx"),
 				A = s("./src/reddit/components/HTML5StreamPlayer/SnooButton/index.m.less"),
 				I = s.n(A);
 			const O = () => o.a.createElement("div", {
 				className: I.a.icon
-			}, o.a.createElement(R.a, null));
+			}, o.a.createElement(H.a, null));
 			var j = e => "string" == typeof e.postUrl ? o.a.createElement("a", {
 					href: e.postUrl,
 					className: I.a.button
-				}, o.a.createElement(O, null)) : o.a.createElement(H.a, {
+				}, o.a.createElement(O, null)) : o.a.createElement(R.a, {
 					to: e.postUrl,
 					className: I.a.button
 				}, o.a.createElement(O, null)),
@@ -902,8 +902,8 @@
 				B = s("./src/reddit/contexts/InsideOverlay.tsx"),
 				k = s("./src/reddit/helpers/overlay/index.ts"),
 				N = s("./src/reddit/helpers/trackers/media.ts"),
-				H = s("./src/reddit/helpers/trackers/react.ts"),
-				R = s("./src/reddit/selectors/experiments/adblockAcceptableAdsMitigationExperiment.ts"),
+				R = s("./src/reddit/helpers/trackers/react.ts"),
+				H = s("./src/reddit/selectors/experiments/adblockAcceptableAdsMitigationExperiment.ts"),
 				A = s("./src/reddit/selectors/experiments/videoReactions.ts"),
 				I = s("./src/reddit/selectors/media.ts"),
 				O = s("./src/reddit/selectors/platform.ts"),
@@ -1150,12 +1150,12 @@
 					}, t || "Learn More")))
 				}),
 				Ne = s("./src/reddit/icons/svgs/VideoReplay/index.tsx"),
-				He = s("./src/reddit/components/HTML5StreamPlayer/ReplayVideo/index.m.less"),
-				Re = s.n(He);
-			const Ae = G.a.div("Centered", Re.a),
-				Ie = G.a.div("EndedOverlay", Re.a),
-				Oe = G.a.span("ReplayText", Re.a),
-				je = G.a.button("ReplayButton", Re.a);
+				Re = s("./src/reddit/components/HTML5StreamPlayer/ReplayVideo/index.m.less"),
+				He = s.n(Re);
+			const Ae = G.a.div("Centered", He.a),
+				Ie = G.a.div("EndedOverlay", He.a),
+				Oe = G.a.span("ReplayText", He.a),
+				je = G.a.button("ReplayButton", He.a);
 			var De = e => {
 					const {
 						onClick: t,
@@ -1226,7 +1226,7 @@
 					started: U.k,
 					volume: I.f,
 					isReactionPillKillswitchEnabled: A.b,
-					isAdblockAAMitigationEnabled: R.a
+					isAdblockAAMitigationEnabled: H.a
 				}), (e, t) => {
 					let {
 						postId: s
@@ -1635,7 +1635,7 @@
 						} = this.props;
 						if (e) {
 							const s = e.reactedFrom.subreddit ? e.reactedFrom.subreddit.id : e.attributionInfo.id;
-							this.props.sendEvent(Object(H.b)({
+							this.props.sendEvent(Object(R.b)({
 								subredditId: s,
 								postId: t,
 								reactSourceSubredditId: s,
@@ -1712,7 +1712,12 @@
 						const i = this.HTML5StreamPlayerVideo,
 							a = this.props.mpegDashSource;
 						if (i && a) {
-							this.dashPlayer = e.MediaPlayer().create();
+							this.dashPlayer = e.MediaPlayer().create(), this.dashPlayer.on(e.MediaPlayer.events.ERROR, e => {
+								var t, s, i, o, n, r, l, c;
+								x.c.captureException(`Error loading video url for postId: ${this.props.postId}. Response: ${null!==(o=null===(i=null===(s=null===(t=null==e?void 0:e.error)||void 0===t?void 0:t.data)||void 0===s?void 0:s.response)||void 0===i?void 0:i.status)&&void 0!==o?o:""} ${null!==(c=null===(l=null===(r=null===(n=null==e?void 0:e.error)||void 0===n?void 0:n.data)||void 0===r?void 0:r.response)||void 0===l?void 0:l.responseText)&&void 0!==c?c:""}. Video source: ${a}`), this.setState({
+									videoHasError: !0
+								})
+							});
 							try {
 								this.dashPlayer.initialize(i, a, i.autoplay || !i.paused), this.setBufferTime(F.j), this.dashPlayer.updateSettings({
 									streaming: {
@@ -2679,4 +2684,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~CountryPage~FramedGild~GildModal~GovernanceReleaseNotesModal~Mem~c8b748a6.ffd358e2affeb5c4fea9.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~CountryPage~FramedGild~GildModal~GovernanceReleaseNotesModal~Mem~c8b748a6.720a7267c3e688eba34c.js.map
