@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/runtime~Reddit.fedecc2634b522beeaf4.js
-// Retrieved at 7/26/2022, 2:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/runtime~Reddit.628bcfefd130ba9db8af.js
+// Retrieved at 7/26/2022, 5:20:09 PM by Reddit Dataminer v1.0.0
 ! function(e) {
 	function o(o) {
 		for (var a, n, r = o[0], s = o[1], c = o[2], l = 0, b = []; l < r.length; l++) n = r[l], Object.prototype.hasOwnProperty.call(d, n) && d[n] && b.push(d[n][0]), d[n] = 0;
@@ -489,6 +489,7 @@
 					"LiveVideoPlayer~PublicAccessNetwork~RpanListingUnit": "LiveVideoPlayer~PublicAccessNetwork~RpanListingUnit",
 					PublicAccessNetwork: "PublicAccessNetwork",
 					"vendors~xml2js": "vendors~xml2js",
+					webvitals: "webvitals",
 					"reddit-components-Governance-TransactionModals-TransferTransactionModal": "reddit-components-Governance-TransactionModals-TransferTransactionModal",
 					SignupUpsell: "SignupUpsell",
 					NftProfileUnit: "NftProfileUnit",
@@ -831,6 +832,7 @@
 					"LiveVideoPlayer~PublicAccessNetwork~RpanListingUnit": "1fff09edadd1b4c07e4f",
 					PublicAccessNetwork: "0abd673326b2ef36c043",
 					"vendors~xml2js": "31d6cfe0d16ae931b73c",
+					webvitals: "31d6cfe0d16ae931b73c",
 					"reddit-components-Governance-TransactionModals-TransferTransactionModal": "deacc32581de2b9aca60",
 					SignupUpsell: "08d8bf212b5b02c38c29",
 					NftProfileUnit: "8efac6c349a680250a67",
@@ -1191,6 +1193,7 @@
 						"LiveVideoPlayer~PublicAccessNetwork~RpanListingUnit": "LiveVideoPlayer~PublicAccessNetwork~RpanListingUnit",
 						PublicAccessNetwork: "PublicAccessNetwork",
 						"vendors~xml2js": "vendors~xml2js",
+						webvitals: "webvitals",
 						"reddit-components-Governance-TransactionModals-TransferTransactionModal": "reddit-components-Governance-TransactionModals-TransferTransactionModal",
 						SignupUpsell: "SignupUpsell",
 						NftProfileUnit: "NftProfileUnit",
@@ -1533,6 +1536,7 @@
 						"LiveVideoPlayer~PublicAccessNetwork~RpanListingUnit": "23637db1bf8624c60b78",
 						PublicAccessNetwork: "9c346ae3bd40eb6a61b3",
 						"vendors~xml2js": "8c40daee6c2bccb14296",
+						webvitals: "f626f135e0d2366368b7",
 						"reddit-components-Governance-TransactionModals-TransferTransactionModal": "bc46827f7a727f78ff64",
 						SignupUpsell: "906168d1daa01444d050",
 						NftProfileUnit: "ec1bab3b0a0856a7ee81",
@@ -1754,4 +1758,4 @@
 	var m = c;
 	t()
 }([]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/runtime~Reddit.fedecc2634b522beeaf4.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/runtime~Reddit.628bcfefd130ba9db8af.js.map
