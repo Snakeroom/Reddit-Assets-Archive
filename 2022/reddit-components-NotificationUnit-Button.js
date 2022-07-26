@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-NotificationUnit-Button.3dfaebc1db6b7c3091d3.js
-// Retrieved at 7/25/2022, 6:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-NotificationUnit-Button.3e52230fa18ea029978b.js
+// Retrieved at 7/26/2022, 9:30:22 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-NotificationUnit-Button"], {
 		"./node_modules/lodash/map.js": function(t, e, n) {
@@ -241,7 +241,7 @@
 			const dt = Object(at.a)(t => Object(ct.c)(t, {
 				experimentEligibilitySelector: ct.a,
 				experimentName: st.Jb
-			}), t => t === st.yd);
+			}), t => t === st.zd);
 			var lt = n("./src/reddit/selectors/experiments/contributeBeforeSignUp.ts"),
 				ut = n("./src/reddit/selectors/experiments/emailEnablement.ts"),
 				mt = n("./src/reddit/selectors/platform.ts"),
@@ -2907,7 +2907,7 @@
 				r = n("./src/reddit/selectors/experiments/econ/simpleExperiment.ts");
 			const i = Object(r.a)(o.K),
 				s = Object(r.a)(o.I),
-				c = Object(r.a)(o.ie),
+				c = Object(r.a)(o.je),
 				a = Object(r.a)(o.L),
 				d = Object(r.a)(o.N),
 				l = Object(r.a)(o.H),
@@ -2957,4 +2957,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-NotificationUnit-Button.3dfaebc1db6b7c3091d3.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-NotificationUnit-Button.3e52230fa18ea029978b.js.map

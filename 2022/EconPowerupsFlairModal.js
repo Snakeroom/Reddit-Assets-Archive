@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/EconPowerupsFlairModal.bd43e3a2c2474af55342.js
-// Retrieved at 7/25/2022, 6:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/EconPowerupsFlairModal.d947a20e1d76c7638957.js
+// Retrieved at 7/26/2022, 9:30:22 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["EconPowerupsFlairModal"], {
 		"./src/reddit/actions/economics/powerups/flairs/index.ts": function(e, t, r) {
@@ -672,8 +672,8 @@
 				}))
 			};
 			var G = r("./src/reddit/components/Econ/PowerupsFlair/PowerupsFlairModal/FlairsSection.m.less"),
-				q = r.n(G);
-			const V = e => {
+				V = r.n(G);
+			const q = e => {
 				let {
 					className: t,
 					title: r,
@@ -684,13 +684,13 @@
 				return o.a.createElement("div", {
 					className: t
 				}, o.a.createElement("h4", {
-					className: q.a.title
+					className: V.a.title
 				}, o.a.createElement(C.a, {
-					className: q.a.headingPowerupsBolt
+					className: V.a.headingPowerupsBolt
 				}), r), o.a.createElement("p", {
-					className: q.a.subtitle
+					className: V.a.subtitle
 				}, s), o.a.createElement("div", {
-					className: q.a.flairsList
+					className: V.a.flairsList
 				}, i.map(e => o.a.createElement(H, {
 					flair: e,
 					key: e.type,
@@ -724,7 +724,7 @@
 				if (Object(P.a)(I.a), !d) return null;
 				return o.a.createElement("div", {
 					className: s
-				}, !c && o.a.createElement(V, {
+				}, !c && o.a.createElement(q, {
 					className: Q.a.flairsSection,
 					title: R._("Supporter Flair", null, {
 						hk: "1U21cd"
@@ -736,7 +736,7 @@
 					onClickFlair: e => {
 						n(Object(F.setSubredditUserSupporterFlair)(t, e))
 					}
-				}), o.a.createElement(V, {
+				}), o.a.createElement(q, {
 					className: Q.a.flairsSection,
 					title: R._("Achievement Flair", null, {
 						hk: "10y9WL"
@@ -1310,8 +1310,8 @@
 				d = e => o.includes(e),
 				c = Object(s.a)(e => Object(n.c)(e, {
 					experimentEligibilitySelector: n.a,
-					experimentName: i.Ud
-				}), e => e === i.yd)
+					experimentName: i.Vd
+				}), e => e === i.zd)
 		},
 		"./src/reddit/selectors/gold/powerups/flairs.ts": function(e, t, r) {
 			"use strict";
@@ -1429,4 +1429,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EconPowerupsFlairModal.bd43e3a2c2474af55342.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EconPowerupsFlairModal.d947a20e1d76c7638957.js.map

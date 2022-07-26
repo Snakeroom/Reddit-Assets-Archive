@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Avatar.f404b944bfdc090d80f9.js
-// Retrieved at 7/25/2022, 6:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Avatar.fb2a9a2aaa1360d4e6c1.js
+// Retrieved at 7/26/2022, 9:30:22 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Avatar"], {
 		"./src/reddit/components/SnoovatarModal/SnoovatarIframe.tsx": function(e, t, s) {
@@ -29,21 +29,21 @@
 					let [t, s] = e;
 					return m.set(t, s)
 				}), u && m.set("source", u);
-				const x = Object(r.e)(e => e.user.session),
-					b = Object(a.useRef)(null),
+				const b = Object(r.e)(e => e.user.session),
+					x = Object(a.useRef)(null),
 					p = Object(a.useCallback)(e => {
-						x && e && e.postMessage({
+						b && e && e.postMessage({
 							type: "injectAuth",
 							headers: {
-								Authorization: `Bearer ${x.accessToken}`
+								Authorization: `Bearer ${b.accessToken}`
 							},
-							expiration: new Date(x.expires).getTime()
+							expiration: new Date(b.expires).getTime()
 						}, c.a.snoovatarUrl)
-					}, [x]);
+					}, [b]);
 				return Object(a.useEffect)(() => {
 					var e;
-					return p(null === (e = null == b ? void 0 : b.current) || void 0 === e ? void 0 : e.contentWindow)
-				}, [b, p]), Object(a.useEffect)(() => {
+					return p(null === (e = null == x ? void 0 : x.current) || void 0 === e ? void 0 : e.contentWindow)
+				}, [x, p]), Object(a.useEffect)(() => {
 					const e = e => {
 						"refreshAuth" === (null == e ? void 0 : e.data) && p(e.source)
 					};
@@ -51,7 +51,7 @@
 				}, [p]), n.a.createElement("div", {
 					className: Object(d.a)(l.a.iframeContainer, t)
 				}, n.a.createElement("iframe", {
-					ref: b,
+					ref: x,
 					src: `${c.a.snoovatarUrl}/static/client/?${m.toString()}`
 				}))
 			})
@@ -85,8 +85,8 @@
 				l = s("./src/reddit/contexts/NavbarExp.ts"),
 				u = s("./src/reddit/helpers/trackers/snoovatar.ts"),
 				m = s("./src/reddit/hooks/useTracking.ts"),
-				x = s("./src/reddit/selectors/experiments/econ/index.ts"),
-				b = s("./src/reddit/selectors/experiments/econ/paymentsSandbox.ts"),
+				b = s("./src/reddit/selectors/experiments/econ/index.ts"),
+				x = s("./src/reddit/selectors/experiments/econ/paymentsSandbox.ts"),
 				p = s("./src/reddit/selectors/user.ts"),
 				v = s("./src/telemetry/index.ts"),
 				O = s("./src/reddit/components/SnoovatarModal/SnoovatarIframe.tsx"),
@@ -114,7 +114,7 @@
 				const e = Object(o.e)(e => e.user.session),
 					[t, d] = Object(n.useState)(!1),
 					E = Object(n.useContext)(l.a),
-					_ = Object(o.e)(b.a),
+					_ = Object(o.e)(x.a),
 					g = Object(n.useMemo)(() => ({
 						headers: {
 							Authorization: `Bearer ${e.accessToken}`
@@ -122,15 +122,15 @@
 						expiration: new Date(e.expires).getTime()
 					}), [e]),
 					N = Object(m.a)(),
-					L = Object(o.e)(e => g && Object(x.e)(e));
+					L = Object(o.e)(e => g && Object(b.e)(e));
 				Object(n.useEffect)(() => {
 					(async () => {
 						await s.e(7).then(s.t.bind(null, "./node_modules/@reddit/avatars/style.css", 7))
 					})(), N(u.r), d(!0)
 				}, [N]);
-				const w = Object(o.e)(e => !Object(p.Q)(e) && Object(x.x)(e)),
+				const w = Object(o.e)(e => !Object(p.Q)(e) && Object(b.y)(e)),
 					U = Object(o.d)(),
-					k = () => U(Object(i.openLoginModal)());
+					y = () => U(Object(i.openLoginModal)());
 				if (!e || !t) return null;
 				if (w) return r.a.createElement("div", {
 					className: Object(c.a)(j.a.container, {
@@ -139,10 +139,10 @@
 				}, r.a.createElement(n.Suspense, {
 					fallback: r.a.createElement("div", null)
 				}, r.a.createElement(S, {
-					openLogin: k,
+					openLogin: y,
 					fancyBackground: !0
 				})));
-				const y = {
+				const k = {
 					...f,
 					STRIPE_API_KEY: a.a.stripe.apiKey(_)
 				};
@@ -155,7 +155,7 @@
 				}, r.a.createElement(h, {
 					accessToken: e.accessToken,
 					authHeaders: g,
-					config: y,
+					config: k,
 					sendEvent: v.a
 				}, r.a.createElement(A, null))) : r.a.createElement(O.a, {
 					className: j.a.content
@@ -173,4 +173,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Avatar.f404b944bfdc090d80f9.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Avatar.fb2a9a2aaa1360d4e6c1.js.map
