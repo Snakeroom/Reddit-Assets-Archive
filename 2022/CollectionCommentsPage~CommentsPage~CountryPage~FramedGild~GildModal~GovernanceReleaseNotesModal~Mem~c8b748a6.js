@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~CountryPage~FramedGild~GildModal~GovernanceReleaseNotesModal~Mem~c8b748a6.8427eae9bb8273c396c9.js
-// Retrieved at 7/26/2022, 9:30:22 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~CountryPage~FramedGild~GildModal~GovernanceReleaseNotesModal~Mem~c8b748a6.5f358643dc0176ea062f.js
+// Retrieved at 7/26/2022, 6:40:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~CountryPage~FramedGild~GildModal~GovernanceReleaseNotesModal~Mem~c8b748a6"], {
 		"./src/lib/colors/constants.ts": function(e, t, s) {
@@ -1653,7 +1653,7 @@
 						})
 					}, this.videoRef = e => {
 						this.HTML5StreamPlayerVideo = e, this.HTML5StreamPlayerVideo && (this.HTML5StreamPlayerVideo.volume = this.state.volume)
-					}, it.dashjs || (it.dashjs = Object(f.a)(() => s.e("vendors~dashjs").then(s.t.bind(null, "./node_modules/dashjs/build/es5/index.js", 7)))), this.state = {
+					}, this.state = {
 						bitrateInfo: [],
 						hasAudio: !1,
 						hasHovered: !1,
@@ -1707,7 +1707,7 @@
 					return this.shouldAutoplay(e) && this.isUnobscured(e) && this.isInViewport(e, t)
 				}
 				componentDidMount() {
-					it.dashjs.then(e => {
+					it.dashjs || (it.dashjs = Object(f.a)(() => s.e("vendors~dashjs").then(s.t.bind(null, "./node_modules/dashjs/dist/dash.all.debug.js", 7)))), it.dashjs.then(e => {
 						var t, s;
 						const i = this.HTML5StreamPlayerVideo,
 							a = this.props.mpegDashSource;
@@ -1719,16 +1719,26 @@
 								})
 							});
 							try {
-								this.dashPlayer.initialize(i, a, i.autoplay || !i.paused), this.setBufferTime(F.j), this.dashPlayer.updateSettings({
+								this.dashPlayer.initialize(i, a, i.autoplay || !i.paused), this.dashPlayer.updateSettings({
 									streaming: {
-										fastSwitchEnabled: !0,
 										abr: {
 											initialBitrate: {
 												video: 999999999
 											},
-											autoSwitchBitrate: {
-												video: !0
+											useDefaultABRRules: !0,
+											ABRStrategy: "abrThroughput",
+											additionalAbrRules: {
+												insufficientBufferRule: !1,
+												switchHistoryRule: !1,
+												droppedFramesRule: !1,
+												abandonRequestsRule: !1
 											}
+										},
+										buffer: {
+											fastSwitchEnabled: !0,
+											bufferTimeAtTopQuality: F.j,
+											bufferTimeAtTopQualityLongForm: F.j,
+											stableBufferTime: F.j
 										}
 									}
 								})
@@ -1833,15 +1843,6 @@
 				}
 				restartVideo() {
 					this.setVideoPos(.001), this.playVideo()
-				}
-				setBufferTime(e) {
-					this.dashPlayer && this.dashPlayer.updateSettings({
-						streaming: {
-							bufferTimeAtTopQuality: e,
-							bufferTimeAtTopQualityLongForm: e,
-							stableBufferTime: e
-						}
-					})
 				}
 				getWatchedPercentRange(e, t) {
 					const s = e / t;
@@ -2684,4 +2685,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~CountryPage~FramedGild~GildModal~GovernanceReleaseNotesModal~Mem~c8b748a6.8427eae9bb8273c396c9.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~CountryPage~FramedGild~GildModal~GovernanceReleaseNotesModal~Mem~c8b748a6.5f358643dc0176ea062f.js.map

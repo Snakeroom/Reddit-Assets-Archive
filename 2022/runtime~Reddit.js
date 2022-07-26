@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/runtime~Reddit.628bcfefd130ba9db8af.js
-// Retrieved at 7/26/2022, 5:20:09 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/runtime~Reddit.548d931921e9f32474d7.js
+// Retrieved at 7/26/2022, 6:40:04 PM by Reddit Dataminer v1.0.0
 ! function(e) {
 	function o(o) {
 		for (var a, n, r = o[0], s = o[1], c = o[2], l = 0, b = []; l < r.length; l++) n = r[l], Object.prototype.hasOwnProperty.call(d, n) && d[n] && b.push(d[n][0]), d[n] = 0;
@@ -1388,7 +1388,7 @@
 						CoinPurchaseModal: "faa3b7b96083cc45683f",
 						Coins: "4f5343aabf09238b33e8",
 						CoinsMobile: "0b116ceace01bf9bf0db",
-						"CollectionCommentsPage~CommentsPage~CountryPage~FramedGild~GildModal~GovernanceReleaseNotesModal~Mem~c8b748a6": "8427eae9bb8273c396c9",
+						"CollectionCommentsPage~CommentsPage~CountryPage~FramedGild~GildModal~GovernanceReleaseNotesModal~Mem~c8b748a6": "5f358643dc0176ea062f",
 						"CollectionCommentsPage~CommentsPage~CountryPage~Frontpage~GovernanceReleaseNotesModal~ModListing~Mod~e3d63e32": "2bc8854396dd4f44b529",
 						"CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~ModerationPages~PostCreation~Profile~9a5d9fab": "e3a323bdd1e7ad391b9c",
 						"CollectionCommentsPage~CommentsPage~ModerationPages~PostCreation~ProfileComments~ProfileOverview~Pro~d39c0d57": "85d8f5b27dd859bd31b8",
@@ -1589,7 +1589,7 @@
 						"reddit-components-LargePost": "c26b6556b43f4c92d385",
 						"reddit-components-MediumPost": "2a0c37fd3c2534ab6f01",
 						LiveVideoPlayer: "c70b675611f70d0d1241",
-						"vendors~dashjs": "5a01e5ebb9c581c55bfe",
+						"vendors~dashjs": "518ef1c4a3ea00bc51bc",
 						ContributorRequestButton: "2edca32aef22a61a4e83",
 						SubredditSearchCarousel: "c3eb43141bca64acc1c9",
 						CommunityTopicSurvey: "19e9f40b403a18e0c97f",
@@ -1758,4 +1758,4 @@
 	var m = c;
 	t()
 }([]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/runtime~Reddit.628bcfefd130ba9db8af.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/runtime~Reddit.548d931921e9f32474d7.js.map
