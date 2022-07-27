@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfilePosts.eae2286f04d48f0e64e8.js
-// Retrieved at 7/26/2022, 9:30:22 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfilePosts.6135b39eeef10ab85237.js
+// Retrieved at 7/27/2022, 10:40:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfilePosts"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, r) {
@@ -711,9 +711,9 @@
 			})), r.d(t, "morePostLoaded", (function() {
 				return H
 			})), r.d(t, "moreFailed", (function() {
-				return V
-			})), r.d(t, "moreProfilePrivateRequested", (function() {
 				return A
+			})), r.d(t, "moreProfilePrivateRequested", (function() {
+				return V
 			}));
 			r("./node_modules/core-js/modules/web.dom.iterable.js");
 			var s = r("./src/lib/makeActionCreator/index.ts"),
@@ -912,7 +912,7 @@
 						listingKey: l,
 						error: x.error
 					}))
-				}, D = Object(s.a)(k.f), G = Object(s.a)(k.e), H = Object(s.a)(k.g), V = Object(s.a)(k.d), A = e => async (t, r, s) => {
+				}, D = Object(s.a)(k.f), G = Object(s.a)(k.e), H = Object(s.a)(k.g), A = Object(s.a)(k.d), V = e => async (t, r, s) => {
 					const n = r(),
 						i = n.user.account && n.user.account.displayText && n.user.account.displayText.toLowerCase();
 					if (!i) return;
@@ -944,7 +944,7 @@
 							profileName: i,
 							...r
 						}))
-					} else t(V({
+					} else t(A({
 						listingKey: o,
 						error: d.error
 					}))
@@ -1949,19 +1949,21 @@
 				Container: "_292iotee39Lmt0MkQZ2hPV",
 				container: "_292iotee39Lmt0MkQZ2hPV",
 				unblurButtonContainer: "YCBAlwtFjC7cDSMdBeA2W",
-				unblurButton: "gCpM4Pkvf_Xth42z4uIrQ"
+				unblurButton: "gCpM4Pkvf_Xth42z4uIrQ",
+				Component: "_1GPL7pYOAn5YHfoARxZ8-F",
+				component: "_1GPL7pYOAn5YHfoARxZ8-F"
 			}
 		},
 		"./src/reddit/components/RichTextJson/index.tsx": function(e, t, r) {
 			"use strict";
 			r.d(t, "d", (function() {
-				return _
+				return w
 			})), r.d(t, "c", (function() {
-				return j
+				return E
 			})), r.d(t, "a", (function() {
-				return S
+				return O
 			})), r.d(t, "b", (function() {
-				return k
+				return _
 			}));
 			var s = r("./node_modules/fbt/lib/FbtPublic.js"),
 				n = r("./node_modules/lodash/findLastIndex.js"),
@@ -1973,44 +1975,24 @@
 				l = r("./src/lib/sentry/index.ts"),
 				u = r("./src/reddit/components/Media/BlurredContent.tsx"),
 				m = r("./src/reddit/constants/elementClassNames.ts"),
-				p = r("./src/reddit/helpers/styles/postBackgroundColor.ts"),
-				h = r("./src/reddit/helpers/styles/smartTextColor.ts"),
-				b = r("./src/reddit/models/RichTextJson/index.ts"),
-				f = r("./src/reddit/components/RichTextJson/media.tsx"),
-				g = r("./src/reddit/components/RichTextJson/renderers.tsx"),
-				x = r("./src/reddit/components/RichTextJson/index.m.less"),
-				v = r.n(x);
-
-			function y() {
-				return (y = Object.assign || function(e) {
-					for (var t = 1; t < arguments.length; t++) {
-						var r = arguments[t];
-						for (var s in r) Object.prototype.hasOwnProperty.call(r, s) && (e[s] = r[s])
-					}
-					return e
-				}).apply(this, arguments)
-			}
-			const w = r("./src/lib/lessComponent.tsx").a.div("Container", v.a),
-				E = Object(c.a)(e => {
+				p = r("./src/reddit/models/RichTextJson/index.ts"),
+				h = r("./src/reddit/components/RichTextJson/media.tsx"),
+				b = r("./src/reddit/components/RichTextJson/renderers.tsx"),
+				f = r("./src/reddit/components/RichTextJson/index.m.less"),
+				g = r.n(f);
+			const x = r("./src/lib/lessComponent.tsx").a.div("Container", g.a),
+				v = Object(c.a)(e => {
 					let {
 						flairStyleTemplate: t,
 						theme: r,
 						...s
 					} = e;
-					return a.a.createElement(w, y({}, s, {
-						style: {
-							color: Object(h.a)(Object(p.a)({
-								flairStyleTemplate: t,
-								theme: r,
-								...s
-							}))
-						}
-					}))
+					return a.a.createElement(x, s)
 				}),
-				O = e => e.e === b.k ? !!e.c && !e.c.every(e => !e.t) : e.e !== b.u || !!e.c && !e.c.every(e => e.e === b.A && !e.t),
-				_ = e => i()(e, O),
-				j = e => e.findIndex(O),
-				S = e => {
+				y = e => e.e === p.k ? !!e.c && !e.c.every(e => !e.t) : e.e !== p.u || !!e.c && !e.c.every(e => e.e === p.A && !e.t),
+				w = e => i()(e, y),
+				E = e => e.findIndex(y),
+				O = e => {
 					const {
 						altText: t,
 						className: r,
@@ -2020,63 +2002,63 @@
 						isNsfwBlockingModalEligible: o,
 						isSpoiler: c,
 						onClickRevealBlurred: l,
-						postId: p,
-						renderMediaAsLinks: h,
-						rtJsonElementProps: x,
-						useExplicitTextColor: y,
-						shouldBlur: O
-					} = e, S = s.document, k = [], C = e.mediaMetadata || null, I = j(S), T = _(S);
-					if (O && !n && !o) return a.a.createElement(w, {
+						postId: f,
+						renderMediaAsLinks: y,
+						rtJsonElementProps: O,
+						useExplicitTextColor: _,
+						shouldBlur: j
+					} = e, S = s.document, k = [], C = e.mediaMetadata || null, I = E(S), T = w(S);
+					if (j && !n && !o) return a.a.createElement(x, {
 						className: Object(d.a)(m.j, r)
 					}, a.a.createElement("div", {
-						className: v.a.unblurButtonContainer
+						className: g.a.unblurButtonContainer
 					}, a.a.createElement("button", {
-						className: v.a.unblurButton,
+						className: g.a.unblurButton,
 						onClick: l
 					}, Object(u.b)(!!i, !!c))));
 					if (-1 !== I)
 						for (let a = I; a <= T; a++) {
 							const e = S[a];
 							switch (e.e) {
-								case b.k:
-									k.push(g.c(e, x, a));
+								case p.k:
+									k.push(b.c(e, O, a));
 									break;
-								case b.l:
-									k.push(g.d(a));
+								case p.l:
+									k.push(b.d(a));
 									break;
-								case b.b:
-									k.push(g.a(e, C, x, a));
+								case p.b:
+									k.push(b.a(e, C, O, a));
 									break;
-								case b.c:
-									k.push(g.b(e, a));
+								case p.c:
+									k.push(b.b(e, a));
 									break;
-								case b.p:
-									k.push(g.f(e, C, x, a));
+								case p.p:
+									k.push(b.f(e, C, O, a));
 									break;
-								case b.z:
-									k.push(g.h(e, C, x, a));
+								case p.z:
+									k.push(b.h(e, C, O, a));
 									break;
-								case b.u:
-									k.push(g.g(e, C, x, a));
+								case p.u:
+									k.push(b.g(e, C, O, a));
 									break;
-								case b.h:
-									k.push(Object(f.a)(e, a));
+								case p.h:
+									k.push(Object(h.a)(e, a));
 									break;
-								case b.m:
-								case b.a:
-								case b.D:
-									k.push(...Object(f.b)(e, a, x, C, h, p, t))
+								case p.m:
+								case p.a:
+								case p.D:
+									k.push(...Object(h.b)(e, a, O, C, y, f, t))
 							}
 						}
-					return y ? a.a.createElement(w, {
+					return _ ? a.a.createElement(x, {
 						className: Object(d.a)(m.j, r)
-					}, k) : a.a.createElement(E, {
+					}, k) : a.a.createElement(v, {
 						className: Object(d.a)(m.j, r),
 						flairStyleTemplate: e.flairStyleTemplate,
 						redditStyle: e.redditStyle
 					}, k)
 				};
-			class k extends a.a.Component {
+			class _ extends a.a.Component {
 				constructor() {
 					super(...arguments), this.hasError = !1, this.state = {
 						hasError: !1
@@ -2101,7 +2083,7 @@
 					} = this.props;
 					if (this.hasError || this.state.hasError) return e();
 					try {
-						return S(t)
+						return O(t)
 					} catch (r) {
 						return this.hasError = !0, this.logError(r), e()
 					}
@@ -2398,7 +2380,7 @@
 			})), r.d(t, "i", (function() {
 				return H
 			})), r.d(t, "e", (function() {
-				return V
+				return A
 			}));
 			var s = r("./src/lib/unicodeUtils/index.ts"),
 				n = r("./node_modules/lodash/reduce.js"),
@@ -2503,7 +2485,7 @@
 						o = s.length;
 					for (let a = 0; a < o; a++) {
 						const e = s[a];
-						i.push(e.e === p.w ? e.t : V(e, t, a))
+						i.push(e.e === p.w ? e.t : A(e, t, a))
 					}
 					const c = d.x[n - 1];
 					return a.a.createElement(c, {
@@ -2618,7 +2600,7 @@
 						n = e.length;
 					for (let i = 0; i < n; i++) {
 						const n = e[i];
-						if (n.e === p.A) s.push(A(n, i));
+						if (n.e === p.A) s.push(V(n, i));
 						else if (n.e === p.x) s.push(a.a.createElement(j.a, {
 							key: i
 						}, H(n.c, t, r)));
@@ -2634,14 +2616,14 @@
 									media: e
 								}))
 							}
-						} else s.push(V(n, r, i))
+						} else s.push(A(n, r, i))
 					}
 					return s
 				},
-				V = (e, t, r) => {
+				A = (e, t, r) => {
 					switch (e.e) {
 						case p.o:
-							const s = A({
+							const s = V({
 								t: e.t,
 								f: e.f
 							}, 0);
@@ -2681,7 +2663,7 @@
 							}, e.t)
 					}
 				},
-				A = (e, t) => {
+				V = (e, t) => {
 					const {
 						f: r,
 						t: n
@@ -3991,8 +3973,8 @@
 					return e
 				}).apply(this, arguments)
 			}
-			const V = Object(_.u)(),
-				A = Object(d.a)(_.E, B.kb, (e, t) => {
+			const A = Object(_.u)(),
+				V = Object(d.a)(_.E, B.kb, (e, t) => {
 					let {
 						location: r
 					} = t;
@@ -4045,7 +4027,7 @@
 						nsfwBlockingExperiment: l
 					}
 				}),
-				U = Object(a.b)(A, (e, t) => ({
+				U = Object(a.b)(V, (e, t) => ({
 					onLoadMore: () => e(p.morePostsRequested()),
 					onLayoutChange: () => e(p.profilePostsRequested({
 						...t.match,
@@ -4161,7 +4143,7 @@
 					})
 				}
 			}
-			t.default = V(U(Object(C.d)(W)))
+			t.default = A(U(Object(C.d)(W)))
 		},
 		"./src/reddit/selectors/experiments/d2xPdpSideRailRecs.ts": function(e, t, r) {
 			"use strict";
@@ -4405,4 +4387,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfilePosts.eae2286f04d48f0e64e8.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfilePosts.6135b39eeef10ab85237.js.map

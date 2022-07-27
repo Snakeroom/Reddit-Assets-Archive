@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditWiki.a92b2c3d29b297d26687.js
-// Retrieved at 7/26/2022, 9:30:22 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditWiki.d3dc988cf3c7597d6c19.js
+// Retrieved at 7/27/2022, 10:40:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditWiki"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, r) {
@@ -7014,19 +7014,21 @@
 				Container: "_292iotee39Lmt0MkQZ2hPV",
 				container: "_292iotee39Lmt0MkQZ2hPV",
 				unblurButtonContainer: "YCBAlwtFjC7cDSMdBeA2W",
-				unblurButton: "gCpM4Pkvf_Xth42z4uIrQ"
+				unblurButton: "gCpM4Pkvf_Xth42z4uIrQ",
+				Component: "_1GPL7pYOAn5YHfoARxZ8-F",
+				component: "_1GPL7pYOAn5YHfoARxZ8-F"
 			}
 		},
 		"./src/reddit/components/RichTextJson/index.tsx": function(e, t, r) {
 			"use strict";
 			r.d(t, "d", (function() {
-				return O
+				return y
 			})), r.d(t, "c", (function() {
-				return E
+				return k
 			})), r.d(t, "a", (function() {
-				return j
+				return w
 			})), r.d(t, "b", (function() {
-				return C
+				return O
 			}));
 			var s = r("./node_modules/fbt/lib/FbtPublic.js"),
 				n = r("./node_modules/lodash/findLastIndex.js"),
@@ -7038,44 +7040,24 @@
 				l = r("./src/lib/sentry/index.ts"),
 				u = r("./src/reddit/components/Media/BlurredContent.tsx"),
 				m = r("./src/reddit/constants/elementClassNames.ts"),
-				p = r("./src/reddit/helpers/styles/postBackgroundColor.ts"),
-				b = r("./src/reddit/helpers/styles/smartTextColor.ts"),
-				h = r("./src/reddit/models/RichTextJson/index.ts"),
-				f = r("./src/reddit/components/RichTextJson/media.tsx"),
-				g = r("./src/reddit/components/RichTextJson/renderers.tsx"),
-				v = r("./src/reddit/components/RichTextJson/index.m.less"),
-				_ = r.n(v);
-
-			function x() {
-				return (x = Object.assign || function(e) {
-					for (var t = 1; t < arguments.length; t++) {
-						var r = arguments[t];
-						for (var s in r) Object.prototype.hasOwnProperty.call(r, s) && (e[s] = r[s])
-					}
-					return e
-				}).apply(this, arguments)
-			}
-			const y = r("./src/lib/lessComponent.tsx").a.div("Container", _.a),
-				k = Object(c.a)(e => {
+				p = r("./src/reddit/models/RichTextJson/index.ts"),
+				b = r("./src/reddit/components/RichTextJson/media.tsx"),
+				h = r("./src/reddit/components/RichTextJson/renderers.tsx"),
+				f = r("./src/reddit/components/RichTextJson/index.m.less"),
+				g = r.n(f);
+			const v = r("./src/lib/lessComponent.tsx").a.div("Container", g.a),
+				_ = Object(c.a)(e => {
 					let {
 						flairStyleTemplate: t,
 						theme: r,
 						...s
 					} = e;
-					return a.a.createElement(y, x({}, s, {
-						style: {
-							color: Object(b.a)(Object(p.a)({
-								flairStyleTemplate: t,
-								theme: r,
-								...s
-							}))
-						}
-					}))
+					return a.a.createElement(v, s)
 				}),
-				w = e => e.e === h.k ? !!e.c && !e.c.every(e => !e.t) : e.e !== h.u || !!e.c && !e.c.every(e => e.e === h.A && !e.t),
-				O = e => i()(e, w),
-				E = e => e.findIndex(w),
-				j = e => {
+				x = e => e.e === p.k ? !!e.c && !e.c.every(e => !e.t) : e.e !== p.u || !!e.c && !e.c.every(e => e.e === p.A && !e.t),
+				y = e => i()(e, x),
+				k = e => e.findIndex(x),
+				w = e => {
 					const {
 						altText: t,
 						className: r,
@@ -7085,63 +7067,63 @@
 						isNsfwBlockingModalEligible: o,
 						isSpoiler: c,
 						onClickRevealBlurred: l,
-						postId: p,
-						renderMediaAsLinks: b,
-						rtJsonElementProps: v,
-						useExplicitTextColor: x,
-						shouldBlur: w
-					} = e, j = s.document, C = [], I = e.mediaMetadata || null, S = E(j), N = O(j);
-					if (w && !n && !o) return a.a.createElement(y, {
+						postId: f,
+						renderMediaAsLinks: x,
+						rtJsonElementProps: w,
+						useExplicitTextColor: O,
+						shouldBlur: E
+					} = e, j = s.document, C = [], I = e.mediaMetadata || null, S = k(j), N = y(j);
+					if (E && !n && !o) return a.a.createElement(v, {
 						className: Object(d.a)(m.j, r)
 					}, a.a.createElement("div", {
-						className: _.a.unblurButtonContainer
+						className: g.a.unblurButtonContainer
 					}, a.a.createElement("button", {
-						className: _.a.unblurButton,
+						className: g.a.unblurButton,
 						onClick: l
 					}, Object(u.b)(!!i, !!c))));
 					if (-1 !== S)
 						for (let a = S; a <= N; a++) {
 							const e = j[a];
 							switch (e.e) {
-								case h.k:
-									C.push(g.c(e, v, a));
+								case p.k:
+									C.push(h.c(e, w, a));
 									break;
-								case h.l:
-									C.push(g.d(a));
+								case p.l:
+									C.push(h.d(a));
 									break;
-								case h.b:
-									C.push(g.a(e, I, v, a));
+								case p.b:
+									C.push(h.a(e, I, w, a));
 									break;
-								case h.c:
-									C.push(g.b(e, a));
+								case p.c:
+									C.push(h.b(e, a));
 									break;
-								case h.p:
-									C.push(g.f(e, I, v, a));
+								case p.p:
+									C.push(h.f(e, I, w, a));
 									break;
-								case h.z:
-									C.push(g.h(e, I, v, a));
+								case p.z:
+									C.push(h.h(e, I, w, a));
 									break;
-								case h.u:
-									C.push(g.g(e, I, v, a));
+								case p.u:
+									C.push(h.g(e, I, w, a));
 									break;
-								case h.h:
-									C.push(Object(f.a)(e, a));
+								case p.h:
+									C.push(Object(b.a)(e, a));
 									break;
-								case h.m:
-								case h.a:
-								case h.D:
-									C.push(...Object(f.b)(e, a, v, I, b, p, t))
+								case p.m:
+								case p.a:
+								case p.D:
+									C.push(...Object(b.b)(e, a, w, I, x, f, t))
 							}
 						}
-					return x ? a.a.createElement(y, {
+					return O ? a.a.createElement(v, {
 						className: Object(d.a)(m.j, r)
-					}, C) : a.a.createElement(k, {
+					}, C) : a.a.createElement(_, {
 						className: Object(d.a)(m.j, r),
 						flairStyleTemplate: e.flairStyleTemplate,
 						redditStyle: e.redditStyle
 					}, C)
 				};
-			class C extends a.a.Component {
+			class O extends a.a.Component {
 				constructor() {
 					super(...arguments), this.hasError = !1, this.state = {
 						hasError: !1
@@ -7166,7 +7148,7 @@
 					} = this.props;
 					if (this.hasError || this.state.hasError) return e();
 					try {
-						return j(t)
+						return w(t)
 					} catch (r) {
 						return this.hasError = !0, this.logError(r), e()
 					}
@@ -10951,4 +10933,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditWiki.a92b2c3d29b297d26687.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditWiki.d3dc988cf3c7597d6c19.js.map
