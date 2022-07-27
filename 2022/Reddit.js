@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Reddit.d177ecc4f76bccc7e9e6.js
-// Retrieved at 7/27/2022, 3:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Reddit.ca6d8776e1ac1363bd63.js
+// Retrieved at 7/27/2022, 4:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Reddit"], {
 		"./assets/fonts/BentonSans/font.less": function(e, t, n) {},
@@ -6297,6 +6297,18 @@
 			}));
 			var s = n("./src/config.ts");
 			const r = () => s.a.redditUrl
+		},
+		"./src/reddit/helpers/getReredditLinkWithYear/index.ts": function(e, t, n) {
+			"use strict";
+			n.d(t, "a", (function() {
+				return s
+			}));
+			const s = function() {
+				let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : new Date;
+				const t = e.getFullYear(),
+					n = e.getMonth();
+				return `/posts/${n>=6?t:t-1}/`
+			}
 		},
 		"./src/reddit/helpers/getSubredditErrorProps/index.ts": function(e, t, n) {
 			"use strict";
@@ -13215,13 +13227,8 @@
 						title: a,
 						titleClassName: i
 					}))
-				},
-				bd = function() {
-					let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : new Date;
-					const t = e.getFullYear(),
-						n = e.getMonth();
-					return `/posts/${n>=6?t:t-1}/`
 				};
+			var bd = n("./src/reddit/helpers/getReredditLinkWithYear/index.ts");
 			var hd = e => [{
 				noun: "ios",
 				rel: "nofollow",
@@ -13241,7 +13248,7 @@
 				title: () => s.fbt._("Rereddit", null, {
 					hk: "1DyKwo"
 				}),
-				url: bd()
+				url: Object(bd.a)()
 			}, {
 				isHidden: !e,
 				noun: "best_communities",
@@ -19705,4 +19712,4 @@
 		["./src/reddit/index.tsx", "runtime~Reddit", "vendors~CommentsPage~ModerationPages~Reddit~reddit-components-ClassicPost~reddit-components-CompactP~d737df3e", "vendors~CommentsPage~Governance~ModListing~ModerationPages~Reddit~Subreddit", "vendors~Chat~Governance~Reddit", "vendors~Reddit", "CommentsPage~Governance~Reddit~ReportFlow~Subreddit~reddit-components-BlankPost~reddit-components-Cl~5351df81", "PostCreation~Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~r~4c415e24", "Governance~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compo~bd4baca2", "Governance~ModListing~Reddit~ReportFlow~Subreddit", "Chat~Governance~Reddit", "Governance~Reddit~Subreddit", "Governance~Reddit~SubredditForkingCTA", "Governance~Reddit", "Reddit~StandalonePostPage", "AuthorHovercard~Reddit"]
 	]
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit.d177ecc4f76bccc7e9e6.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit.ca6d8776e1ac1363bd63.js.map
