@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-NotificationUnit-Button.3e52230fa18ea029978b.js
-// Retrieved at 7/26/2022, 9:30:22 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-NotificationUnit-Button.fef4183d91d0787bf7ef.js
+// Retrieved at 7/27/2022, 7:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-NotificationUnit-Button"], {
 		"./node_modules/lodash/map.js": function(t, e, n) {
@@ -53,9 +53,9 @@
 			})), n.d(e, "t", (function() {
 				return St
 			})), n.d(e, "w", (function() {
-				return vt
-			})), n.d(e, "q", (function() {
 				return kt
+			})), n.d(e, "q", (function() {
+				return vt
 			})), n.d(e, "v", (function() {
 				return wt
 			})), n.d(e, "o", (function() {
@@ -115,8 +115,8 @@
 				_ = n("./src/lib/omitHeaders/index.ts"),
 				I = n("./src/reddit/components/RichTextEditor/RTEState/index.tsx"),
 				S = n("./src/reddit/constants/headers.ts"),
-				v = n("./src/reddit/helpers/addRedesignIdentifier/index.ts"),
-				k = n("./src/reddit/helpers/genericServerError/index.ts"),
+				k = n("./src/reddit/helpers/addRedesignIdentifier/index.ts"),
+				v = n("./src/reddit/helpers/genericServerError/index.ts"),
 				T = n("./src/reddit/helpers/r2/normalizeCommentFromR2/index.ts"),
 				E = n("./src/reddit/helpers/r2/normalizeR2APIErrors/index.ts"),
 				w = n("./src/reddit/models/PostCreationForm/index.ts"),
@@ -152,7 +152,7 @@
 					};
 					return n.commentMode === w.i.MARKDOWN ? i.text = n.text : (i.text = null, i.richtext_json = o), Object(j.a)(Object(_.a)(t, [S.a]), {
 						method: r.jb.POST,
-						endpoint: Object(v.a)(Object(N.a)(Object(R.a)(`${t.apiUrl}/api/comment.json`))),
+						endpoint: Object(k.a)(Object(N.a)(Object(R.a)(`${t.apiUrl}/api/comment.json`))),
 						data: i
 					}).then(t => t.ok ? t.body.json ? t.body.json.errors.length ? {
 						...t,
@@ -170,7 +170,7 @@
 						}
 					} : {
 						...t,
-						error: t.error || Object(k.a)()
+						error: t.error || Object(v.a)()
 					})
 				}, K = async (t, e, n, o, r) => {
 					const i = o.commentMode === w.i.MARKDOWN,
@@ -210,7 +210,7 @@
 						return {
 							...t,
 							ok: !1,
-							error: t.error || Object(k.a)()
+							error: t.error || Object(v.a)()
 						}
 					})
 				};
@@ -279,7 +279,7 @@
 					const r = o.ok && o.body,
 						i = r && r.comment && r.comment.id;
 					await z.f(t, n, e, i)
-				}, St = "Toxicity_Warning__Modal", vt = t => async (e, n, o) => {
+				}, St = "Toxicity_Warning__Modal", kt = t => async (e, n, o) => {
 					let {
 						gqlContext: r
 					} = o;
@@ -294,8 +294,8 @@
 					if (V.d.enableToxicityWarning(i)) {
 						if (!(await A(r(), c, a, d))) return void e(Object(u.i)(St))
 					}
-					e(kt(t))
-				}, kt = t => async (e, n) => {
+					e(vt(t))
+				}, vt = t => async (e, n) => {
 					e(Object(u.g)(St));
 					const o = n(),
 						r = Object(lt.a)(o),
@@ -339,19 +339,19 @@
 							S = Object(nt.d)(I, {
 								postId: s
 							}) && Object(it.f)(I),
-							v = S ? Object(G.a)() : d,
-							k = Object(rt.e)(I, {
-								commentId: v
+							k = S ? Object(G.a)() : d,
+							v = Object(rt.e)(I, {
+								commentId: k
 							}),
 							T = Object(bt.k)(I);
 						if (!T) return;
-						if (k && !S) return;
+						if (v && !S) return;
 						e || t(Ct({
-							draftKey: v,
+							draftKey: k,
 							draft: l,
 							commentsPageKey: a,
 							optimisticComment: S ? Object(G.b)({
-								temporalId: v,
+								temporalId: k,
 								draft: l,
 								post: Object(pt.G)(I, {
 									postId: s
@@ -379,7 +379,7 @@
 										commentsPageKey: a
 									}),
 									commentsPageKey: a,
-									draftKey: v
+									draftKey: k
 								})), e) {
 								const t = Object(mt.i)(I);
 								Object(c.a)(!!t)
@@ -397,7 +397,7 @@
 								hk: "LWFS0"
 							});
 							t(_t({
-								draftKey: v,
+								draftKey: k,
 								error: R.error
 							})), S || t(Object(h.f)({
 								duration: h.a,
@@ -492,11 +492,11 @@
 						commentsPageKey: p
 					}));
 					const S = h.commentMode,
-						v = e && n ? n : Object(G.e)(h);
-					let k;
-					if ((k = Tt(S, C) ? await K(l(), null, m, h, v) : await L(d(), m, h, v)).ok) {
+						k = e && n ? n : Object(G.e)(h);
+					let v;
+					if ((v = Tt(S, C) ? await K(l(), null, m, h, k) : await L(d(), m, h, k)).ok) {
 						if (i(yt({
-								...k.body,
+								...v.body,
 								parentCommentId: m,
 								commentsPageKey: p,
 								draftKey: y,
@@ -506,17 +506,17 @@
 							Object(c.a)(!!t)
 						}
 					} else {
-						if (k.error && k.error.type === r.Kb) {
+						if (v.error && v.error.type === r.Kb) {
 							if (!x) return;
 							const t = e && o ? o : Object(G.c)(h);
 							z.j(C, t, x.postId, m)
 						}
 						i(_t({
 							draftKey: y,
-							error: k.error
+							error: v.error
 						}))
 					}
-					It(s(), p, g, k), Object(O.d)(), e && Object(X.a)()
+					It(s(), p, g, v), Object(O.d)(), e && Object(X.a)()
 				}, Pt = () => async t => {
 					const e = Object(X.b)();
 					if (e) {
@@ -735,7 +735,7 @@
 									return {
 										...t,
 										ok: !1,
-										error: t.error || Object(k.a)()
+										error: t.error || Object(v.a)()
 									}
 								})
 							})(d(), e, i, u, m) : await (async (t, e, n, o, i) => {
@@ -745,7 +745,7 @@
 									thing_id: e
 								};
 								return i === w.i.MARKDOWN ? s.text = n.text : (s.text = null, s.richtext_json = o), Object(j.a)(Object(_.a)(t, [S.a]), {
-									endpoint: Object(v.a)(Object(R.a)(Object(N.a)(`${t.apiUrl}/api/editusertext`))),
+									endpoint: Object(k.a)(Object(R.a)(Object(N.a)(`${t.apiUrl}/api/editusertext`))),
 									method: r.jb.POST,
 									data: s
 								}).then(t => t.ok ? t.body.json ? t.body.json.errors.length ? {
@@ -764,7 +764,7 @@
 									}
 								} : {
 									...t,
-									error: t.error || Object(k.a)()
+									error: t.error || Object(v.a)()
 								})
 							})(a(), e, i, u, m)).ok) {
 							const r = p.body;
@@ -791,7 +791,7 @@
 						id: t
 					})), z.a(t, c);
 					const a = await ((t, e) => Object(j.a)(Object(_.a)(t, [S.a]), {
-						endpoint: Object(v.a)(`${t.apiUrl}/api/del`),
+						endpoint: Object(k.a)(`${t.apiUrl}/api/del`),
 						method: r.jb.POST,
 						data: {
 							id: e
@@ -805,7 +805,7 @@
 						body: {}
 					} : {
 						...t,
-						error: t.error || Object(k.a)()
+						error: t.error || Object(v.a)()
 					}))(s(), t);
 					a.ok ? n(Zt({
 						id: t,
@@ -911,7 +911,7 @@
 							formData: c,
 							editorMode: s.media.rteMode
 						}))
-					} else await t(kt({
+					} else await t(vt({
 						postId: s.postId,
 						commentsPageKey: n,
 						draftKey: s.id,
@@ -1198,8 +1198,8 @@
 				_ = n("./src/reddit/components/OverlayAwareTooltip/index.tsx"),
 				I = n("./src/reddit/components/TrackingHelper/index.tsx"),
 				S = n("./src/reddit/controls/Dropdown/index.tsx"),
-				v = n("./src/reddit/controls/Dropdown/Row.tsx"),
-				k = n("./src/reddit/controls/ToggleSwitch/index.tsx"),
+				k = n("./src/reddit/controls/Dropdown/Row.tsx"),
+				v = n("./src/reddit/controls/ToggleSwitch/index.tsx"),
 				T = n("./src/reddit/helpers/path/index.ts"),
 				E = n("./src/reddit/selectors/telemetry.ts");
 			n("./src/telemetry/models/Event.ts");
@@ -1286,7 +1286,7 @@
 					} = this.props;
 					return i.a.createElement("div", {
 						className: W.a.HighlightWrapper
-					}, i.a.createElement(v.b, {
+					}, i.a.createElement(k.b, {
 						className: Object(a.a)(W.a.HighlightPicker, W.a.Row),
 						textClassName: W.a.SortOptionDropdownText,
 						displayText: `${o.fbt._("Highlight",null,{hk:"2ZiUE8"})}: ${q(r)}`,
@@ -1300,15 +1300,15 @@
 						isOpen: t,
 						renderContentsHidden: !0,
 						tooltipId: e
-					}, i.a.createElement(v.b, {
+					}, i.a.createElement(k.b, {
 						displayText: q(V.a.First),
 						isSelected: r === V.a.First,
 						onClick: this.onDropdownClickFirst
-					}), i.a.createElement(v.b, {
+					}), i.a.createElement(k.b, {
 						displayText: q(V.a.Last),
 						isSelected: r === V.a.Last,
 						onClick: this.onDropdownClickLast
-					}), i.a.createElement(v.b, {
+					}), i.a.createElement(k.b, {
 						displayText: q(V.a.None),
 						isSelected: r === V.a.None,
 						onClick: this.onDropdownClickNone
@@ -1446,7 +1446,7 @@
 						className: W.a.containerRow
 					}, !H && i.a.createElement(i.a.Fragment, null, i.a.createElement("div", {
 						className: W.a.DropdownContainer
-					}, i.a.createElement(v.b, {
+					}, i.a.createElement(k.b, {
 						className: Object(a.a)(W.a.SortPicker, W.a.Row),
 						textClassName: W.a.SortOptionDropdownText,
 						displayText: `${o.fbt._("Sort by",null,{hk:"E6T9r"})}: ${K}`,
@@ -1473,7 +1473,7 @@
 							role: "menuitem",
 							tabIndex: -1,
 							to: `${o}?sort=${t}`
-						}, i.a.createElement(v.b, {
+						}, i.a.createElement(k.b, {
 							displayText: s,
 							isSelected: C === t,
 							skipRoleAttr: !0
@@ -1509,7 +1509,7 @@
 						onClick: this.props.toggleContestModeModal
 					}, o.fbt._("Contest", null, {
 						hk: "1KrhdJ"
-					}), i.a.createElement(k.a, {
+					}), i.a.createElement(v.a, {
 						className: W.a.ToggleSwitch,
 						on: E
 					}))), g && i.a.createElement("div", {
@@ -1695,7 +1695,7 @@
 				duration: d.a
 			};
 			e.default = t => {
-				var e, n, o, g, x, I, S, v, k, T;
+				var e, n, o, g, x, I, S, k, v, T;
 				const E = Object(i.d)(),
 					w = Object(i.e)(C.d),
 					{
@@ -1716,8 +1716,8 @@
 				let V = null === (n = null == N ? void 0 : N.comment) || void 0 === n ? void 0 : n.id,
 					G = (null === (o = null == N ? void 0 : N.post) || void 0 === o ? void 0 : o.id) || (null === (x = null === (g = null == N ? void 0 : N.comment) || void 0 === g ? void 0 : g.postInfo) || void 0 === x ? void 0 : x.id);
 				const q = null === (I = null == N ? void 0 : N.subreddit) || void 0 === I ? void 0 : I.id,
-					J = null === (v = null === (S = null == N ? void 0 : N.awarding) || void 0 === S ? void 0 : S.award) || void 0 === v ? void 0 : v.id,
-					Q = null === (T = null === (k = null == N ? void 0 : N.awarding) || void 0 === k ? void 0 : k.awarder) || void 0 === T ? void 0 : T.id;
+					J = null === (k = null === (S = null == N ? void 0 : N.awarding) || void 0 === S ? void 0 : S.award) || void 0 === k ? void 0 : k.id,
+					Q = null === (T = null === (v = null == N ? void 0 : N.awarding) || void 0 === v ? void 0 : v.awarder) || void 0 === T ? void 0 : T.id;
 				if (U === h.a.CommentFollow || U === h.a.PostFollow) {
 					const t = (t => {
 						const e = {},
@@ -2371,9 +2371,9 @@
 			})), n.d(e, "m", (function() {
 				return S
 			})), n.d(e, "z", (function() {
-				return v
-			})), n.d(e, "q", (function() {
 				return k
+			})), n.d(e, "q", (function() {
+				return v
 			})), n.d(e, "o", (function() {
 				return T
 			})), n.d(e, "n", (function() {
@@ -2703,7 +2703,7 @@
 						}
 					})
 				},
-				v = t => {
+				k = t => {
 					let {
 						actionInfoType: e,
 						id: n,
@@ -2730,7 +2730,7 @@
 						}
 					})
 				},
-				k = t => {
+				v = t => {
 					let {
 						actionInfoType: e
 					} = t;
@@ -2907,7 +2907,7 @@
 				r = n("./src/reddit/selectors/experiments/econ/simpleExperiment.ts");
 			const i = Object(r.a)(o.K),
 				s = Object(r.a)(o.I),
-				c = Object(r.a)(o.je),
+				c = Object(r.a)(o.ke),
 				a = Object(r.a)(o.L),
 				d = Object(r.a)(o.N),
 				l = Object(r.a)(o.H),
@@ -2957,4 +2957,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-NotificationUnit-Button.3e52230fa18ea029978b.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-NotificationUnit-Button.fef4183d91d0787bf7ef.js.map

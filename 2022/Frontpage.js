@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Frontpage.5c20fc97a637c3834c50.js
-// Retrieved at 7/26/2022, 9:30:22 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Frontpage.6dc9c0ec3050ab3daa03.js
+// Retrieved at 7/27/2022, 7:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Frontpage"], {
 		"./node_modules/intersection-observer/intersection-observer.js": function(e, t) {
@@ -486,7 +486,7 @@
 						},
 						forceGeopopular: !0,
 						includeCommunityDUs: !1,
-						includeInterestTopics: !!p && !Object(b.Tf)(p),
+						includeInterestTopics: !!p && !Object(b.Uf)(p),
 						includeFeaturedAnnouncements: !0,
 						includeLiveEvents: !0,
 						includeIdentity: f && !(null === (s = null === (a = e.user.account) || void 0 === a ? void 0 : a.karma) || void 0 === s ? void 0 : s.total),
@@ -2699,10 +2699,10 @@
 			}
 			var qe = a("./src/reddit/selectors/experiments/utils.ts");
 			const Ve = Object(u.a)(e => Object(Ze.c)(e, {
-					experimentName: Fe.be,
+					experimentName: Fe.ce,
 					experimentEligibilitySelector: Ze.a
 				}), qe.a),
-				We = Object(u.a)(Ve, e => e === Fe.ce.Enabled);
+				We = Object(u.a)(Ve, e => e === Fe.de.Enabled);
 			var He = a("./src/reddit/selectors/experiments/loggedOutOneFeed.ts"),
 				Ge = a("./src/reddit/selectors/experiments/publicAccessNetwork.ts"),
 				ze = a("./src/reddit/selectors/user.ts");
@@ -7185,12 +7185,12 @@
 			const r = e => {
 					return !(Object(n.c)(e, {
 						experimentEligibilitySelector: n.a,
-						experimentName: s.ee
+						experimentName: s.fe
 					}) === s.zd)
 				},
 				c = e => Object(n.c)(e, {
 					experimentEligibilitySelector: n.a,
-					experimentName: s.fe
+					experimentName: s.ge
 				}) === s.zd
 		},
 		"./src/reddit/selectors/experiments/inAppNotification.ts": function(e, t, a) {
@@ -7383,4 +7383,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Frontpage.5c20fc97a637c3834c50.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Frontpage.6dc9c0ec3050ab3daa03.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/EconPowerupsFlairModal.d947a20e1d76c7638957.js
-// Retrieved at 7/26/2022, 9:30:22 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/EconPowerupsFlairModal.a05d88f2bad15fde8997.js
+// Retrieved at 7/27/2022, 7:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["EconPowerupsFlairModal"], {
 		"./src/reddit/actions/economics/powerups/flairs/index.ts": function(e, t, r) {
@@ -672,8 +672,8 @@
 				}))
 			};
 			var G = r("./src/reddit/components/Econ/PowerupsFlair/PowerupsFlairModal/FlairsSection.m.less"),
-				V = r.n(G);
-			const q = e => {
+				q = r.n(G);
+			const z = e => {
 				let {
 					className: t,
 					title: r,
@@ -684,24 +684,24 @@
 				return o.a.createElement("div", {
 					className: t
 				}, o.a.createElement("h4", {
-					className: V.a.title
+					className: q.a.title
 				}, o.a.createElement(C.a, {
-					className: V.a.headingPowerupsBolt
+					className: q.a.headingPowerupsBolt
 				}), r), o.a.createElement("p", {
-					className: V.a.subtitle
+					className: q.a.subtitle
 				}, s), o.a.createElement("div", {
-					className: V.a.flairsList
+					className: q.a.flairsList
 				}, i.map(e => o.a.createElement(H, {
 					flair: e,
 					key: e.type,
 					onSelect: n
 				}))))
 			};
-			var z = r("./src/reddit/components/Econ/PowerupsFlair/PowerupsFlairModal/PowerupsFlairsBody.m.less"),
-				Q = r.n(z);
+			var V = r("./src/reddit/components/Econ/PowerupsFlair/PowerupsFlairModal/PowerupsFlairsBody.m.less"),
+				Q = r.n(V);
 			const {
 				fbt: R
-			} = r("./node_modules/fbt/lib/FbtPublic.js"), K = e => {
+			} = r("./node_modules/fbt/lib/FbtPublic.js"), W = e => {
 				let {
 					subredditId: t,
 					userId: r,
@@ -724,7 +724,7 @@
 				if (Object(P.a)(I.a), !d) return null;
 				return o.a.createElement("div", {
 					className: s
-				}, !c && o.a.createElement(q, {
+				}, !c && o.a.createElement(z, {
 					className: Q.a.flairsSection,
 					title: R._("Supporter Flair", null, {
 						hk: "1U21cd"
@@ -736,7 +736,7 @@
 					onClickFlair: e => {
 						n(Object(F.setSubredditUserSupporterFlair)(t, e))
 					}
-				}), o.a.createElement(q, {
+				}), o.a.createElement(z, {
 					className: Q.a.flairsSection,
 					title: R._("Achievement Flair", null, {
 						hk: "10y9WL"
@@ -766,7 +766,7 @@
 					}
 				})))
 			};
-			var W = r("./src/reddit/actions/authorFlair.ts"),
+			var K = r("./src/reddit/actions/authorFlair.ts"),
 				Y = r("./src/reddit/components/Flair/index.tsx"),
 				J = r("./src/reddit/controls/Button/index.tsx"),
 				$ = r("./src/reddit/components/Econ/PowerupsFlair/PowerupsFlairModal/UserFlair.m.less"),
@@ -795,7 +795,7 @@
 					priority: J.c.Plain,
 					onClick: () => {
 						const e = c ? Object(p.e)(c) : null;
-						d(Object(E.a)()), n(Object(W.b)({
+						d(Object(E.a)()), n(Object(K.b)({
 							username: e,
 							subredditId: r,
 							isOpenedFromAchievementsModal: !0
@@ -845,7 +845,7 @@
 				}, g && o.a.createElement(ee, {
 					subredditId: h.id,
 					flairData: w
-				}), o.a.createElement(K, {
+				}), o.a.createElement(W, {
 					subredditId: h.id,
 					userId: n.id
 				})), o.a.createElement("div", {
@@ -1310,7 +1310,7 @@
 				d = e => o.includes(e),
 				c = Object(s.a)(e => Object(n.c)(e, {
 					experimentEligibilitySelector: n.a,
-					experimentName: i.Vd
+					experimentName: i.Wd
 				}), e => e === i.zd)
 		},
 		"./src/reddit/selectors/gold/powerups/flairs.ts": function(e, t, r) {
@@ -1429,4 +1429,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EconPowerupsFlairModal.d947a20e1d76c7638957.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EconPowerupsFlairModal.a05d88f2bad15fde8997.js.map

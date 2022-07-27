@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Reddit~StandalonePostPage.5c6979b8c923f1cb7ab5.js
-// Retrieved at 7/26/2022, 9:30:22 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Reddit~StandalonePostPage.dfe67b8dbcc756d6ee56.js
+// Retrieved at 7/27/2022, 7:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Reddit~StandalonePostPage"], {
 		"./src/higherOrderComponents/asModal/helpers.ts": function(e, t, n) {
@@ -477,13 +477,13 @@
 						})
 					}, []);
 				Object(a.a)(I, M);
-				const [V, L] = Object(s.useState)(!1), U = Object(s.useCallback)(e => {
+				const [L, V] = Object(s.useState)(!1), U = Object(s.useCallback)(e => {
 					e.forEach(e => {
 						const {
 							isIntersecting: t,
 							intersectionRatio: n
 						} = e, s = 1 !== n;
-						t ? L(!0) : s && L(!1)
+						t ? V(!0) : s && V(!1)
 					})
 				}, []), q = Object(s.useRef)({
 					rootMargin: "2000px 0px 2000px 0px"
@@ -540,7 +540,7 @@
 					role: "screen-reader"
 				}, [...S].reverse().join(""))), r.a.createElement("span", {
 					ref: I
-				}), V && r.a.createElement(i.a, {
+				}), L && r.a.createElement(i.a, {
 					variables: x,
 					onData: h ? m : b,
 					queryKey: v,
@@ -2938,7 +2938,7 @@
 			const o = e => {
 				return Object(r.c)(e, {
 					experimentEligibilitySelector: r.a,
-					experimentName: s.Ke
+					experimentName: s.Le
 				}) === s.zd
 			}
 		},
@@ -3021,4 +3021,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit~StandalonePostPage.5c6979b8c923f1cb7ab5.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit~StandalonePostPage.dfe67b8dbcc756d6ee56.js.map

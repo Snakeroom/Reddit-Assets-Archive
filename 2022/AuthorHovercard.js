@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/AuthorHovercard.c1d0515aeed1d74ceb05.js
-// Retrieved at 7/26/2022, 9:30:22 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/AuthorHovercard.38ed5ef70651d1810ffd.js
+// Retrieved at 7/27/2022, 7:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["AuthorHovercard"], {
 		"./src/lib/constants/colors.ts": function(e, t, n) {
@@ -6037,12 +6037,12 @@
 			const o = e => {
 					return !(Object(a.c)(e, {
 						experimentEligibilitySelector: a.a,
-						experimentName: r.ee
+						experimentName: r.fe
 					}) === r.zd)
 				},
 				s = e => Object(a.c)(e, {
 					experimentEligibilitySelector: a.a,
-					experimentName: r.fe
+					experimentName: r.ge
 				}) === r.zd
 		},
 		"./src/reddit/selectors/experiments/hotPotato.ts": function(e, t, n) {
@@ -6067,7 +6067,7 @@
 					if (!u(e)) return;
 					const t = Object(s.c)(e, {
 						experimentEligibilitySelector: l,
-						experimentName: o.Sd,
+						experimentName: o.Td,
 						expEventOverride: !1
 					});
 					return null == t ? void 0 : t.toLocaleLowerCase()
@@ -6090,9 +6090,9 @@
 				},
 				p = e => !!m(e) && Object(s.c)(e, {
 					experimentEligibilitySelector: u,
-					experimentName: o.Td,
+					experimentName: o.Ud,
 					expEventOverride: !1
-				}) !== o.Ud.Readonly
+				}) !== o.Vd.Readonly
 		},
 		"./src/reddit/selectors/notificationPrefs.ts": function(e, t, n) {
 			"use strict";
@@ -6252,4 +6252,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/AuthorHovercard.c1d0515aeed1d74ceb05.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/AuthorHovercard.38ed5ef70651d1810ffd.js.map
