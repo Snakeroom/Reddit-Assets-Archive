@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfileFollowersPage.0908b636229e06e03d59.js
-// Retrieved at 7/27/2022, 7:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfileFollowersPage.7f8018130d07605f6cdd.js
+// Retrieved at 7/28/2022, 9:50:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfileFollowersPage", "ProfileFollowersAction"], {
 		"./node_modules/lodash/take.js": function(e, t, s) {
@@ -3167,7 +3167,7 @@
 					}
 				}),
 				x = e => {
-					const t = Object(o.e)(e => Object(f.i)(e));
+					const t = Object(o.e)(e => Object(f.j)(e));
 					return i.a.createElement(a.a, {
 						className: e.className
 					}, i.a.createElement(v, {
@@ -6150,13 +6150,13 @@
 			const i = e => {
 					return !(Object(n.c)(e, {
 						experimentEligibilitySelector: n.a,
-						experimentName: r.fe
-					}) === r.zd)
+						experimentName: r.ge
+					}) === r.Ad)
 				},
 				o = e => Object(n.c)(e, {
 					experimentEligibilitySelector: n.a,
-					experimentName: r.ge
-				}) === r.zd
+					experimentName: r.he
+				}) === r.Ad
 		},
 		"./src/reddit/selectors/followers.ts": function(e, t, s) {
 			"use strict";
@@ -6207,4 +6207,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileFollowersPage.0908b636229e06e03d59.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileFollowersPage.7f8018130d07605f6cdd.js.map

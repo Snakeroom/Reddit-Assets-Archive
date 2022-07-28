@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CoinPurchaseModal.139c8354b23c15d21b27.js
-// Retrieved at 7/27/2022, 7:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CoinPurchaseModal.9b2cb127d92f26d7e57f.js
+// Retrieved at 7/28/2022, 9:50:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CoinPurchaseModal", "gildActions"], {
 		"./node_modules/@stripe/react-stripe-js/dist/react-stripe.umd.js": function(e, t, r) {
@@ -2159,7 +2159,7 @@
 				} = e;
 				const w = Object(f.a)(),
 					P = Object(u.d)(),
-					x = Object(u.e)(p.g),
+					x = Object(u.e)(p.h),
 					E = Object(u.e)(R.a),
 					k = !!n;
 				if (k && !x) {
@@ -4071,7 +4071,7 @@
 			}));
 			var n = r("./src/reddit/constants/experiments.ts"),
 				a = r("./src/reddit/selectors/experiments/econ/simpleExperiment.ts");
-			const s = Object(a.a)(n.dd)
+			const s = Object(a.a)(n.ed)
 		},
 		"./src/reddit/selectors/gold/econPurchase.ts": function(e, t, r) {
 			"use strict";
@@ -4216,4 +4216,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CoinPurchaseModal.139c8354b23c15d21b27.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CoinPurchaseModal.9b2cb127d92f26d7e57f.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/LiveVideoPlayer~PublicAccessNetwork~RpanListingUnit.23637db1bf8624c60b78.js
-// Retrieved at 7/26/2022, 9:30:22 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/LiveVideoPlayer~PublicAccessNetwork~RpanListingUnit.652968f699976d739fc7.js
+// Retrieved at 7/28/2022, 9:50:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["LiveVideoPlayer~PublicAccessNetwork~RpanListingUnit"], {
 		"./src/lib/VideoSession/VideoSessionManager.ts": function(e, t, s) {
@@ -416,7 +416,7 @@
 					defaultImage: t,
 					userId: s
 				} = e;
-				const r = Object(c.e)(h.r),
+				const r = Object(c.e)(h.s),
 					{
 						processingAvatarImageUrl: n
 					} = a.a;
@@ -1685,4 +1685,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/LiveVideoPlayer~PublicAccessNetwork~RpanListingUnit.23637db1bf8624c60b78.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/LiveVideoPlayer~PublicAccessNetwork~RpanListingUnit.652968f699976d739fc7.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PennyPurchaseModal.f491efde7140580bffab.js
-// Retrieved at 7/27/2022, 7:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PennyPurchaseModal.e12ca2d99590ed122b56.js
+// Retrieved at 7/28/2022, 9:50:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PennyPurchaseModal"], {
 		"./node_modules/lodash/uniqueId.js": function(e, t, a) {
@@ -534,7 +534,7 @@
 				} = e;
 				const E = Object(b.a)(),
 					j = Object(m.d)(),
-					O = Object(m.e)(p.g),
+					O = Object(m.e)(p.h),
 					k = Object(m.e)(B.a),
 					w = !!r;
 				if (w && !O) {
@@ -2005,7 +2005,7 @@
 			}));
 			var r = a("./src/reddit/constants/experiments.ts"),
 				n = a("./src/reddit/selectors/experiments/econ/simpleExperiment.ts");
-			const s = Object(n.a)(r.dd)
+			const s = Object(n.a)(r.ed)
 		},
 		"./src/redditGQL/operations/CancelEconRecurringPayment.json": function(e) {
 			e.exports = JSON.parse('{"id":"ac36f7489268"}')
@@ -2042,4 +2042,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PennyPurchaseModal.f491efde7140580bffab.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PennyPurchaseModal.e12ca2d99590ed122b56.js.map

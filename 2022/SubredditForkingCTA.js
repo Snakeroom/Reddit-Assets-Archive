@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditForkingCTA.910d99260a25b44d5dd4.js
-// Retrieved at 7/27/2022, 7:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditForkingCTA.2bcf4092ea34a5eac35a.js
+// Retrieved at 7/28/2022, 9:50:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditForkingCTA"], {
 		"./node_modules/lodash/xorWith.js": function(t, _, e) {
@@ -170,9 +170,9 @@
 			})), e.d(_, "i", (function() {
 				return k
 			})), e.d(_, "q", (function() {
-				return q
-			})), e.d(_, "d", (function() {
 				return z
+			})), e.d(_, "d", (function() {
+				return q
 			})), e.d(_, "l", (function() {
 				return T
 			})), e.d(_, "t", (function() {
@@ -219,8 +219,8 @@
 				w = n.a.label("ModalInputLabel", u.a),
 				v = n.a.footer("ModalFooter", u.a),
 				k = n.a.header("ModalHeader", u.a),
-				q = n.a.div("ModalTitle", u.a),
-				z = n.a.div("ModalAnnotation", u.a),
+				z = n.a.div("ModalTitle", u.a),
+				q = n.a.div("ModalAnnotation", u.a),
 				T = n.a.div("ModalMain", u.a),
 				C = n.a.textarea("TextArea", u.a),
 				F = n.a.wrapped(i.l, "WarningButton", u.a),
@@ -257,10 +257,10 @@
 				m = e("./src/reddit/helpers/chooseVariant/index.ts"),
 				p = e("./src/reddit/selectors/experiments/utils.ts");
 			const f = Object(u.a)(t => Object(m.c)(t, {
-					experimentName: l.qf,
+					experimentName: l.rf,
 					experimentEligibilitySelector: m.a
 				}), p.a),
-				b = Object(u.a)(f, t => t === l.wf.Enabled);
+				b = Object(u.a)(f, t => t === l.xf.Enabled);
 			var x = e("./src/reddit/selectors/posts.ts"),
 				y = e("./src/reddit/components/CreateCommunityButton/index.tsx"),
 				h = e("./src/reddit/components/TrackingHelper/index.tsx");
@@ -1436,4 +1436,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditForkingCTA.910d99260a25b44d5dd4.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditForkingCTA.2bcf4092ea34a5eac35a.js.map

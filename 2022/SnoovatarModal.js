@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SnoovatarModal.230596ff6afc1e45d4f2.js
-// Retrieved at 7/27/2022, 7:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SnoovatarModal.d83a24a0af236cde2cb3.js
+// Retrieved at 7/28/2022, 9:50:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SnoovatarModal"], {
 		"./src/reddit/components/SnoovatarModal/SnoovatarIframe.tsx": function(e, t, a) {
@@ -126,14 +126,14 @@
 						}), [t]),
 						f = Object(m.a)(),
 						x = Object(d.e)(e => v && Object(b.e)(e)),
-						w = Object(d.e)(e => !Object(p.Q)(e) && Object(b.y)(e));
+						w = Object(d.e)(e => !Object(p.Q)(e) && Object(b.z)(e));
 					Object(o.useEffect)(() => {
 						(async () => {
 							await a.e(7).then(a.t.bind(null, "./node_modules/@reddit/avatars/style.css", 7))
 						})(), f(u.r), n(!0)
 					}, [f]);
-					const y = Object(d.d)(),
-						L = () => y(Object(i.openLoginModal)()),
+					const L = Object(d.d)(),
+						y = () => L(Object(i.openLoginModal)()),
 						{
 							activeDetails: N,
 							activeTab: T,
@@ -152,7 +152,7 @@
 					}, c.a.createElement(o.Suspense, {
 						fallback: c.a.createElement("div", null)
 					}, c.a.createElement(g, {
-						openLogin: L,
+						openLogin: y,
 						fancyBackground: !0
 					})));
 					let P;
@@ -195,8 +195,8 @@
 			}));
 			var s = a("./src/reddit/constants/experiments.ts"),
 				r = a("./src/reddit/selectors/experiments/econ/simpleExperiment.ts");
-			const n = Object(r.a)(s.dd)
+			const n = Object(r.a)(s.ed)
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SnoovatarModal.230596ff6afc1e45d4f2.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SnoovatarModal.d83a24a0af236cde2cb3.js.map

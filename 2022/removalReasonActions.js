@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/removalReasonActions.178ae4c1b3f99482c9b6.js
-// Retrieved at 7/27/2022, 7:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/removalReasonActions.c789fd58176b7b62c393.js
+// Retrieved at 7/28/2022, 9:50:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["removalReasonActions"], {
 		"./node_modules/lodash/map.js": function(e, t, o) {
@@ -256,7 +256,7 @@
 			const de = Object(ae.a)(e => Object(ce.c)(e, {
 				experimentEligibilitySelector: ce.a,
 				experimentName: ie.Jb
-			}), e => e === ie.zd);
+			}), e => e === ie.Ad);
 			var le = o("./src/reddit/selectors/experiments/contributeBeforeSignUp.ts"),
 				me = o("./src/reddit/selectors/experiments/emailEnablement.ts"),
 				ue = o("./src/reddit/selectors/platform.ts"),
@@ -2895,7 +2895,7 @@
 				s = o("./src/reddit/selectors/experiments/econ/simpleExperiment.ts");
 			const r = Object(s.a)(n.K),
 				i = Object(s.a)(n.I),
-				c = Object(s.a)(n.ke),
+				c = Object(s.a)(n.le),
 				a = Object(s.a)(n.L),
 				d = Object(s.a)(n.N),
 				l = Object(s.a)(n.H),
@@ -2945,4 +2945,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/removalReasonActions.178ae4c1b3f99482c9b6.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/removalReasonActions.c789fd58176b7b62c393.js.map

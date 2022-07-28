@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfilePosts.088075c09462ec7e9649.js
-// Retrieved at 7/27/2022, 7:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfilePosts.9d723d527756c2c3c498.js
+// Retrieved at 7/28/2022, 9:50:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfilePosts"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -3142,12 +3142,12 @@
 						rtJsonElementProps: o
 					});
 					switch (i) {
-						case b.xf.SmIcon:
+						case b.yf.SmIcon:
 							return n.a.createElement(p, {
 								subredditName: r,
 								rtJsonElementProps: o
 							});
-						case b.xf.SmIconHc:
+						case b.yf.SmIconHc:
 							return n.a.createElement(p, {
 								subredditName: r,
 								isHoverable: !0,
@@ -4068,15 +4068,15 @@
 			const o = e => {
 					const t = Object(n.c)(e, {
 						experimentEligibilitySelector: i.Q,
-						experimentName: r.cd
+						experimentName: r.dd
 					});
-					return !(!t || Object(r.Uf)(t))
+					return !(!t || Object(r.Vf)(t))
 				},
 				a = e => {
 					return Object(n.c)(e, {
 						experimentEligibilitySelector: i.Q,
-						experimentName: r.cd
-					}) === r.Dd.ListingEnabled
+						experimentName: r.dd
+					}) === r.Ed.ListingEnabled
 				}
 		},
 		"./src/reddit/selectors/focusedVerticalSuggestion.ts": function(e, t, s) {
@@ -4209,12 +4209,12 @@
 				d = e => {
 					return Object(i.c)(e, {
 						experimentEligibilitySelector: a,
-						experimentName: r.rf
+						experimentName: r.sf
 					}) || ""
 				},
 				c = e => {
 					const t = d(e);
-					return t === r.xf.SmIcon || t === r.xf.SmIconHc
+					return t === r.yf.SmIcon || t === r.yf.SmIconHc
 				},
 				l = (e, t) => {
 					let {
@@ -4273,4 +4273,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfilePosts.088075c09462ec7e9649.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfilePosts.9d723d527756c2c3c498.js.map

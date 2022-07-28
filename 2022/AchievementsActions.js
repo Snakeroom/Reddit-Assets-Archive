@@ -1,577 +1,241 @@
-// https://www.redditstatic.com/desktop2x/AchievementsActions.c648969b9932aa2f685d.js
-// Retrieved at 7/14/2022, 11:10:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/AchievementsActions.b8206fe55398426b9d9b.js
+// Retrieved at 7/28/2022, 9:50:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["AchievementsActions"], {
-		"./src/reddit/actions/economics/powerups/constants.ts": function(e, r, t) {
+		"./src/reddit/actions/economics/powerups/flairs/index.ts": function(e, t, r) {
 			"use strict";
-			t.d(r, "a", (function() {
-				return d
-			})), t.d(r, "b", (function() {
-				return n
-			})), t.d(r, "c", (function() {
-				return i
-			})), t.d(r, "d", (function() {
-				return s
-			})), t.d(r, "i", (function() {
-				return o
-			})), t.d(r, "f", (function() {
-				return u
-			})), t.d(r, "g", (function() {
-				return c
-			})), t.d(r, "e", (function() {
-				return a
-			})), t.d(r, "h", (function() {
-				return p
-			}));
-			const d = 120,
-				n = "ON_CREATE_CUSTOM_EMOJI_SUCCESS",
-				i = "ON_DELETE_CUSTOM_EMOJI_SUCCESS",
-				s = "POWERUPS__SUBREDDIT_USER_POWERUPS_FLAIRS_LOADED",
-				o = "POWERUPS__USER_SUPPORTED_SUBREDDITS_LOADED",
-				u = "POWERUPS__SUBREDDIT_USER_POWERUPS_FLAIR_PREFERENCE_UPDATE_REQUESTED",
-				c = "POWERUPS__SUBREDDIT_USER_POWERUPS_FLAIR_PREFERENCE_UPDATED",
-				a = "POWERUPS__SUBREDDIT_USER_POWERUPS_FLAIR_PREFERENCE_UPDATE_FAILED",
-				p = "POWERUPS__SUBREDDIT_USER_POWERUPS_FLAIR_VISIBILITY_UPDATE"
-		},
-		"./src/reddit/actions/economics/powerups/flairs/index.ts": function(e, r, t) {
-			"use strict";
-			t.r(r), t.d(r, "onSubredditUserPowerupsFlairsLoaded", (function() {
-				return E
-			})), t.d(r, "onUsersSupportedSubredditsLoaded", (function() {
-				return h
-			})), t.d(r, "onSubredditUserPowerupsFlairPreferenceUpdateRequested", (function() {
+			r.r(t), r.d(t, "onSubredditUserPowerupsFlairsLoaded", (function() {
 				return O
-			})), t.d(r, "onSubredditUserPowerupsFlairPreferenceUpdateSuccess", (function() {
-				return _
-			})), t.d(r, "onSubredditUserPowerupsFlairPreferenceUpdateFailed", (function() {
-				return w
-			})), t.d(r, "onSubredditUserPowerupsFlairVisibilityUpdate", (function() {
-				return T
-			})), t.d(r, "getSubredditUserPowerupsFlairsAndSupporterInfo", (function() {
-				return U
-			})), t.d(r, "getSubredditCurrentUserPowerupsFlairsAndSupporterInfo", (function() {
-				return P
-			})), t.d(r, "shouldFetchCommentsPowerupsInfo", (function() {
-				return j
-			})), t.d(r, "getSubredditUserCommentsPowerupsInfoFromCommentLinks", (function() {
+			})), r.d(t, "onUsersSupportedSubredditsLoaded", (function() {
+				return y
+			})), r.d(t, "onSubredditUserPowerupsFlairPreferenceUpdateRequested", (function() {
+				return S
+			})), r.d(t, "onSubredditUserPowerupsFlairPreferenceUpdateSuccess", (function() {
 				return F
-			})), t.d(r, "getSubredditUserCommentsPowerupsInfoFromCommentCollection", (function() {
+			})), r.d(t, "onSubredditUserPowerupsFlairPreferenceUpdateFailed", (function() {
+				return U
+			})), r.d(t, "onSubredditUserPowerupsFlairVisibilityUpdate", (function() {
+				return v
+			})), r.d(t, "getSubredditUserPowerupsFlairsAndSupporterInfo", (function() {
 				return A
-			})), t.d(r, "setSubredditUserAchievementFlair", (function() {
-				return R
-			})), t.d(r, "setSubredditUserSupporterFlair", (function() {
+			})), r.d(t, "getSubredditCurrentUserPowerupsFlairsAndSupporterInfo", (function() {
+				return P
+			})), r.d(t, "shouldFetchCommentsPowerupsInfo", (function() {
+				return x
+			})), r.d(t, "getSubredditUserCommentsPowerupsInfoFromCommentLinks", (function() {
+				return _
+			})), r.d(t, "getSubredditUserCommentsPowerupsInfoFromCommentCollection", (function() {
+				return k
+			})), r.d(t, "setSubredditUserAchievementFlair", (function() {
 				return g
-			})), t.d(r, "setSubredditUserPowerupsFlairsVisibility", (function() {
+			})), r.d(t, "setSubredditUserSupporterFlair", (function() {
+				return C
+			})), r.d(t, "setSubredditUserPowerupsFlairsVisibility", (function() {
 				return L
 			}));
-			t("./node_modules/core-js/modules/web.dom.iterable.js");
-			var d = t("./node_modules/fbt/lib/FbtPublic.js"),
-				n = t("./src/lib/makeActionCreator/index.ts"),
-				i = t("./src/lib/sentry/index.ts"),
-				s = t("./src/lib/makeGqlRequest/index.ts"),
-				o = t("./src/redditGQL/operations/SubredditUserAchievements.json"),
-				u = t("./src/redditGQL/operations/UpdateAchievementFlairPreference.json");
-			const c = async (e, r, t, d) => {
-				const n = await Object(s.a)(e, {
-					...u,
+			r("./node_modules/core-js/modules/web.dom.iterable.js");
+			var i = r("./node_modules/fbt/lib/FbtPublic.js"),
+				s = r("./src/lib/makeActionCreator/index.ts"),
+				d = r("./src/lib/sentry/index.ts"),
+				n = r("./src/lib/makeGqlRequest/index.ts"),
+				o = r("./src/redditGQL/operations/SubredditUserAchievements.json"),
+				c = r("./src/redditGQL/operations/UpdateAchievementFlairPreference.json");
+			const a = async (e, t, r, i) => {
+				const s = await Object(n.a)(e, {
+					...c,
 					variables: {
-						subredditId: r,
-						flairTypes: t,
-						isHidden: d
+						subredditId: t,
+						flairTypes: r,
+						isHidden: i
 					}
 				});
-				if (!n.ok || !n.body.data.updateAchievementFlairPreference.ok) throw new Error("Unable to update achievement flair preferences")
+				if (!s.ok || !s.body.data.updateAchievementFlairPreference.ok) throw new Error("Unable to update achievement flair preferences")
 			};
-			var a = t("./src/reddit/actions/gold/powerups.ts"),
-				p = t("./src/reddit/actions/toaster.ts"),
-				l = t("./src/reddit/models/Toast/index.ts"),
-				f = t("./src/reddit/selectors/commentSelector.ts"),
-				b = t("./src/reddit/selectors/gold/powerups/index.ts"),
-				v = t("./src/reddit/selectors/gold/powerups/flairs.ts"),
-				y = t("./src/reddit/selectors/user.ts"),
-				m = t("./src/reddit/actions/economics/powerups/constants.ts"),
-				I = t("./src/lib/initializeClient/installReducer.ts"),
-				S = t("./src/reddit/reducers/features/powerups/index.ts");
-			Object(I.a)({
+			var u = r("./src/reddit/actions/gold/powerups.ts"),
+				l = r("./src/reddit/actions/toaster.ts"),
+				b = r("./src/reddit/models/Toast/index.ts"),
+				p = r("./src/reddit/selectors/commentSelector.ts"),
+				f = r("./src/reddit/selectors/gold/powerups/index.ts"),
+				m = r("./src/reddit/selectors/gold/powerups/flairs.ts"),
+				w = r("./src/reddit/selectors/user.ts"),
+				I = r("./src/reddit/actions/economics/powerups/constants.ts"),
+				j = r("./src/lib/initializeClient/installReducer.ts"),
+				h = r("./src/reddit/reducers/features/powerups/index.ts");
+			Object(j.a)({
 				features: {
-					powerups: S.a
+					powerups: h.a
 				}
 			});
-			const E = Object(n.a)(m.d),
-				h = Object(n.a)(m.i),
-				O = Object(n.a)(m.f),
-				_ = Object(n.a)(m.g),
-				w = Object(n.a)(m.e),
-				T = Object(n.a)(m.h),
-				U = (e, r) => async (t, d, n) => {
+			const O = Object(s.a)(I.d),
+				y = Object(s.a)(I.i),
+				S = Object(s.a)(I.f),
+				F = Object(s.a)(I.g),
+				U = Object(s.a)(I.e),
+				v = Object(s.a)(I.h),
+				A = (e, t) => async (r, i, s) => {
 					let {
-						gqlContext: u
-					} = n;
-					const c = r.filter(e => !!(null == e ? void 0 : e.trim()));
-					if (c.length) try {
-						const r = await (async (e, r, t) => {
-								const d = await Object(s.a)(e, {
+						gqlContext: c
+					} = s;
+					const a = t.filter(e => !!(null == e ? void 0 : e.trim()));
+					if (a.length) try {
+						const t = await (async (e, t, r) => {
+								const i = await Object(n.a)(e, {
 									...o,
 									variables: {
-										subredditId: r,
-										redditorIds: t,
+										subredditId: t,
+										redditorIds: r,
 										includeSupporterInfo: !0
 									}
 								});
-								if (!d.ok) throw new Error("Unable to fetch user achievements");
-								return d.body.data
-							})(u(), e, c),
+								if (!i.ok) throw new Error("Unable to fetch user achievements");
+								return i.body.data
+							})(c(), e, a),
 							{
-								subredditInfoById: d,
-								redditorsInfoByIds: n
-							} = r;
-						await t(E(d)), n && await t(h(n))
-					} catch (a) {
-						i.c.captureException(a)
+								subredditInfoById: i,
+								redditorsInfoByIds: s
+							} = t;
+						await r(O(i)), s && await r(y(s))
+					} catch (u) {
+						d.c.captureException(u)
 					}
-				}, P = (e, r) => async (t, d) => {
+				}, P = (e, t) => async (r, i) => {
 					if (!e) return;
-					const n = d(),
-						i = Object(y.k)(n);
-					if (!i || !Object(b.f)(n, {
+					const s = i(),
+						d = Object(w.k)(s);
+					if (!d || !Object(f.m)(s, {
 							subredditId: e
 						})) return;
-					const s = !!Object(v.e)(n, {
+					const n = !!Object(m.f)(s, {
 						subredditId: e,
-						userId: i.id
+						userId: d.id
 					});
-					!r && s || await t(U(e, [i.id]))
-				}, j = e => async (r, t) => {
+					!t && n || await r(A(e, [d.id]))
+				}, x = e => async (t, r) => {
 					if (!e) return !1;
-					await r(Object(a.j)(e, {
+					await t(Object(u.j)(e, {
 						fullData: !0
 					}));
-					const d = t();
-					return Object(b.f)(d, {
+					const i = r();
+					return Object(f.m)(i, {
 						subredditId: e
 					})
-				}, F = e => async (r, t) => {
-					var d;
-					const n = t(),
-						i = e.map(e => {
+				}, _ = e => async (t, r) => {
+					var i;
+					const s = r(),
+						d = e.map(e => {
 							let {
-								id: r
+								id: t
 							} = e;
-							return r
+							return t
 						}),
-						s = Object(f.d)(n, {
-							commentIds: i
+						n = Object(p.d)(s, {
+							commentIds: d
 						}),
-						o = null === (d = s.find(e => e && e.subredditId)) || void 0 === d ? void 0 : d.subredditId;
-					if (!(await r(j(o)))) return;
-					const u = new Set(s.filter(e => !!(null == e ? void 0 : e.authorId)).map(e => {
+						o = null === (i = n.find(e => e && e.subredditId)) || void 0 === i ? void 0 : i.subredditId;
+					if (!(await t(x(o)))) return;
+					const c = new Set(n.filter(e => !!(null == e ? void 0 : e.authorId)).map(e => {
 						let {
-							authorId: r
+							authorId: t
 						} = e;
-						return r
+						return t
 					}));
-					await r(U(o, Array.from(u)))
-				}, A = (e, r) => async (t, d) => {
-					if (!r) return;
-					if (!(await t(j(e)))) return;
-					const n = new Set;
-					Object.values(r).forEach(e => {
-						n.add(e.authorId)
-					}), await t(U(e, Array.from(n)))
-				}, R = (e, r) => async (t, d) => {
-					const n = d(),
-						i = Object(y.k)(n);
-					if (!i) return;
-					const s = i.id,
-						o = Object(v.h)(n, {
+					await t(A(o, Array.from(c)))
+				}, k = (e, t) => async (r, i) => {
+					if (!t) return;
+					if (!(await r(x(e)))) return;
+					const s = new Set;
+					Object.values(t).forEach(e => {
+						s.add(e.authorId)
+					}), await r(A(e, Array.from(s)))
+				}, g = (e, t) => async (r, i) => {
+					const s = i(),
+						d = Object(w.k)(s);
+					if (!d) return;
+					const n = d.id,
+						o = Object(m.i)(s, {
 							subredditId: e,
-							userId: s
+							userId: n
 						});
-					t(D({
+					r(E({
 						subredditId: e,
-						userId: s,
-						achievementFlairType: r,
+						userId: n,
+						achievementFlairType: t,
 						supporterFlairType: o
 					}))
-				}, g = (e, r) => async (t, d) => {
-					const n = d(),
-						i = Object(y.k)(n);
-					if (!i) return;
-					const s = i.id,
-						o = Object(v.g)(n, {
+				}, C = (e, t) => async (r, i) => {
+					const s = i(),
+						d = Object(w.k)(s);
+					if (!d) return;
+					const n = d.id,
+						o = Object(m.h)(s, {
 							subredditId: e,
-							userId: s
+							userId: n
 						});
-					t(D({
+					r(E({
 						subredditId: e,
-						userId: s,
+						userId: n,
 						achievementFlairType: o,
-						supporterFlairType: r
+						supporterFlairType: t
 					}))
-				}, D = e => async (r, t, n) => {
+				}, E = e => async (t, r, s) => {
 					let {
-						gqlContext: s
-					} = n;
-					const o = t(),
-						u = Object(y.k)(o);
-					if (!u) return;
-					const a = u.id;
-					r(O(e));
+						gqlContext: n
+					} = s;
+					const o = r(),
+						c = Object(w.k)(o);
+					if (!c) return;
+					const u = c.id;
+					t(S(e));
 					const {
-						subredditId: f,
-						achievementFlairType: b,
-						supporterFlairType: m
-					} = e, I = [b, m].filter(Boolean), S = Object(v.d)(o, {
-						subredditId: f,
-						userId: a
+						subredditId: p,
+						achievementFlairType: f,
+						supporterFlairType: I
+					} = e, j = [f, I].filter(Boolean), h = Object(m.e)(o, {
+						subredditId: p,
+						userId: u
 					});
 					try {
-						await c(s(), f, I, S), r(_(e))
-					} catch (E) {
-						r(w(e)), i.c.captureException(E), r(Object(p.f)({
-							duration: p.a,
-							kind: l.b.Error,
-							text: d.fbt._("Failed to set preferred achievement flair", null, {
+						await a(n(), p, j, h), t(F(e))
+					} catch (O) {
+						t(U(e)), d.c.captureException(O), t(Object(l.f)({
+							duration: l.a,
+							kind: b.b.Error,
+							text: i.fbt._("Failed to set preferred achievement flair", null, {
 								hk: "4bEftA"
 							})
 						}))
 					}
-				}, L = (e, r) => async (t, n, s) => {
+				}, L = (e, t) => async (r, s, n) => {
 					let {
 						gqlContext: o
-					} = s;
-					const u = n(),
-						a = Object(y.k)(u);
-					if (!a) return;
-					const f = a.id,
-						b = {
+					} = n;
+					const c = s(),
+						u = Object(w.k)(c);
+					if (!u) return;
+					const p = u.id,
+						f = {
 							subredditId: e,
-							userId: f
+							userId: p
 						},
-						m = [Object(v.g)(u, b), Object(v.h)(u, b)].filter(Boolean);
-					t(T({
-						...b,
-						isHidden: r
+						I = [Object(m.h)(c, f), Object(m.i)(c, f)].filter(Boolean);
+					r(v({
+						...f,
+						isHidden: t
 					}));
 					try {
-						await c(o(), e, m, r)
-					} catch (I) {
-						t(T({
-							...b,
-							isHidden: !r
-						})), i.c.captureException(I), t(Object(p.f)({
-							duration: p.a,
-							kind: l.b.Error,
-							text: d.fbt._("Failed to change flair visibility", null, {
+						await a(o(), e, I, t)
+					} catch (j) {
+						r(v({
+							...f,
+							isHidden: !t
+						})), d.c.captureException(j), r(Object(l.f)({
+							duration: l.a,
+							kind: b.b.Error,
+							text: i.fbt._("Failed to change flair visibility", null, {
 								hk: "30gQss"
 							})
 						}))
 					}
-				}
-		},
-		"./src/reddit/models/Gold/Powerups/powerupsFlair/index.ts": function(e, r, t) {
-			"use strict";
-			var d;
-			t.d(r, "b", (function() {
-					return n
-				})), t.d(r, "a", (function() {
-					return i
-				})),
-				function(e) {
-					e.Supporter = "SUPPORTER", e.Achievement = "ACHIEVEMENT"
-				}(d || (d = {}));
-			const n = e => e.category === d.Supporter,
-				i = e => e.category === d.Achievement
-		},
-		"./src/reddit/reducers/features/powerups/index.ts": function(e, r, t) {
-			"use strict";
-			var d = t("./node_modules/redux/es/redux.js"),
-				n = t("./src/reddit/actions/gold/constants.ts"),
-				i = t("./src/reddit/models/Gold/Powerups/powerupsFlair/index.ts");
-			const s = {};
-			var o = t("./node_modules/icepick/icepick.js"),
-				u = t("./src/reddit/actions/economics/powerups/constants.ts");
-			const c = {},
-				a = e => {
-					var r, t;
-					return (null === (r = e.find(e => {
-						let {
-							isPreferred: r
-						} = e;
-						return r
-					})) || void 0 === r ? void 0 : r.type) || (null === (t = e[0]) || void 0 === t ? void 0 : t.type)
-				},
-				p = {};
-			r.a = Object(d.c)({
-				subredditPowerupsFlairs: function() {
-					let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : s,
-						r = arguments.length > 1 ? arguments[1] : void 0;
-					switch (r.type) {
-						case n.mb:
-							const {
-								subredditId: t, subredditAchievementFlairs: d
-							} = r.payload;
-							if (!(null == d ? void 0 : d.length)) return e;
-							const s = d.reduce((e, r) => ({
-									...e,
-									[r.type]: r
-								}), {}),
-								o = d.filter(i.a).map(e => e.type),
-								u = d.filter(i.b).map(e => e.type);
-							return {
-								...e, [t]: {
-									flairsByType: s,
-									achievementTypes: o,
-									supporterTypes: u
-								}
-							};
-						default:
-							return e
-					}
-				},
-				subredditUserPowerupsFlairs: function() {
-					let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : c,
-						r = arguments.length > 1 ? arguments[1] : void 0;
-					switch (r.type) {
-						case u.d: {
-							const {
-								id: t,
-								userAchievementFlairsByRedditorIds: d
-							} = r.payload;
-							let n = e[t] || {};
-							for (const {
-									redditorId: e,
-									isHidden: r,
-									userAchievementFlairs: s
-								} of d) {
-								const t = s.filter(i.a),
-									d = t.map(e => {
-										let {
-											type: r
-										} = e;
-										return r
-									}),
-									o = s.filter(i.b),
-									u = o.map(e => {
-										let {
-											type: r
-										} = e;
-										return r
-									}),
-									c = a(t),
-									p = a(o);
-								n = {
-									...n,
-									[e]: {
-										achievementTypes: d,
-										supporterTypes: u,
-										preferredAchievementType: c,
-										preferredSupporterType: p,
-										isHidden: r
-									}
-								}
-							}
-							return {
-								...e,
-								[t]: n
-							}
-						}
-						case u.f: {
-							const {
-								subredditId: t,
-								userId: d,
-								achievementFlairType: n,
-								supporterFlairType: i
-							} = r.payload;
-							return Object(o.updateIn)(e, [t, d], e => ({
-								...e,
-								pendingAchievementType: n,
-								pendingSupporterType: i
-							}))
-						}
-						case u.g: {
-							const {
-								subredditId: t,
-								userId: d,
-								achievementFlairType: n,
-								supporterFlairType: i
-							} = r.payload;
-							return Object(o.updateIn)(e, [t, d], e => ({
-								...e,
-								preferredAchievementType: n,
-								preferredSupporterType: i,
-								pendingAchievementType: void 0,
-								pendingSupporterType: void 0
-							}))
-						}
-						case u.e: {
-							const {
-								subredditId: t,
-								userId: d
-							} = r.payload;
-							return Object(o.updateIn)(e, [t, d], e => ({
-								...e,
-								pendingAchievementType: void 0,
-								pendingSupporterType: void 0
-							}))
-						}
-						case u.h: {
-							const {
-								subredditId: t,
-								userId: d,
-								isHidden: n
-							} = r.payload;
-							return Object(o.updateIn)(e, [t, d], e => ({
-								...e,
-								isHidden: n
-							}))
-						}
-						default:
-							return e
-					}
-				},
-				usersSupportedSubreddits: function() {
-					let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : p,
-						r = arguments.length > 1 ? arguments[1] : void 0;
-					switch (r.type) {
-						case u.i: {
-							let t = {};
-							return r.payload.forEach(e => {
-								const r = e.id,
-									d = e.powerups;
-								if (!r || !d) return;
-								const n = d.supportedSubreddits.filter(e => {
-									let {
-										subredditInfo: r
-									} = e;
-									return null == r ? void 0 : r.id
-								}).map(e => {
-									let {
-										subredditInfo: r
-									} = e;
-									return r.id
-								});
-								t = {
-									...t,
-									[r]: n.reduce((e, r) => (e[r] = !0, e), {})
-								}
-							}), {
-								...e,
-								...t
-							}
-						}
-						default:
-							return e
-					}
-				}
-			})
-		},
-		"./src/reddit/selectors/gold/powerups/flairs.ts": function(e, r, t) {
-			"use strict";
-			t.d(r, "e", (function() {
-				return c
-			})), t.d(r, "g", (function() {
-				return a
-			})), t.d(r, "f", (function() {
-				return p
-			})), t.d(r, "h", (function() {
-				return l
-			})), t.d(r, "i", (function() {
-				return f
-			})), t.d(r, "b", (function() {
-				return b
-			})), t.d(r, "d", (function() {
-				return v
-			})), t.d(r, "c", (function() {
-				return y
-			})), t.d(r, "a", (function() {
-				return I
-			}));
-			var d = t("./node_modules/reselect/es/index.js"),
-				n = t("./src/reddit/selectors/commentSelector.ts"),
-				i = t("./src/lib/initializeClient/installReducer.ts"),
-				s = t("./src/reddit/reducers/features/powerups/index.ts");
-			Object(i.a)({
-				features: {
-					powerups: s.a
-				}
-			});
-			const o = (e, r) => {
-					let {
-						subredditId: t
-					} = r;
-					var d;
-					return t ? null === (d = e.features.powerups.subredditPowerupsFlairs) || void 0 === d ? void 0 : d[t] : null
-				},
-				u = (e, r) => {
-					let {
-						subredditId: t
-					} = r;
-					var d, n;
-					return t ? null === (n = null === (d = e.features.powerups.subredditPowerupsFlairs) || void 0 === d ? void 0 : d[t]) || void 0 === n ? void 0 : n.flairsByType : null
-				},
-				c = (e, r) => {
-					let {
-						subredditId: t,
-						userId: d
-					} = r;
-					var n, i;
-					return t && d ? null === (i = null === (n = e.features.powerups.subredditUserPowerupsFlairs) || void 0 === n ? void 0 : n[t]) || void 0 === i ? void 0 : i[d] : null
-				},
-				a = Object(d.a)(c, e => (null == e ? void 0 : e.pendingAchievementType) || (null == e ? void 0 : e.preferredAchievementType)),
-				p = Object(d.a)([u, a], (e, r) => e && r ? e[r] : null),
-				l = Object(d.a)(c, e => null == e ? void 0 : e.preferredSupporterType),
-				f = Object(d.a)([u, l], (e, r) => e && r ? e[r] : null),
-				b = Object(d.a)([o, c], (e, r) => {
-					if (!e || !r) return null;
-					const {
-						supporterTypes: t,
-						achievementTypes: d,
-						flairsByType: n
-					} = e, {
-						supporterTypes: i,
-						achievementTypes: s,
-						preferredSupporterType: o,
-						preferredAchievementType: u,
-						pendingSupporterType: c,
-						pendingAchievementType: a
-					} = r;
-					return {
-						supporterFlairs: m(t, i, n, c || o),
-						achievementFlairs: m(d, s, n, a || u)
-					}
-				}),
-				v = Object(d.a)([c], e => !!e && e.isHidden),
-				y = Object(d.a)([o, c, f], (e, r, t) => {
-					if (!e || !r) return [];
-					const d = r.achievementTypes.map(r => e.flairsByType[r]);
-					return t ? [t, ...d] : d
-				}),
-				m = (e, r, t, d) => e.map(e => ({
-					...t[e],
-					isLocked: !r.includes(e),
-					isPreferred: e === d
-				})).sort((e, r) => e.isLocked === r.isLocked ? 0 : e.isLocked ? 1 : -1),
-				I = (e, r) => {
-					let {
-						commentId: t
-					} = r;
-					const d = Object(n.b)(e, {
-							commentId: t
-						}),
-						i = null == d ? void 0 : d.subredditId,
-						s = null == d ? void 0 : d.authorId;
-					return !(!i || !s) && !!((e, r) => {
-						let {
-							subredditId: t,
-							userId: d
-						} = r;
-						var n, i, s;
-						return t && d ? null === (s = null === (i = null === (n = e.features.powerups) || void 0 === n ? void 0 : n.usersSupportedSubreddits) || void 0 === i ? void 0 : i[d]) || void 0 === s ? void 0 : s[t] : null
-					})(e, {
-						subredditId: i,
-						userId: s
-					})
 				}
 		},
 		"./src/redditGQL/operations/SubredditUserAchievements.json": function(e) {
@@ -582,4 +246,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/AchievementsActions.c648969b9932aa2f685d.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/AchievementsActions.b8206fe55398426b9d9b.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-ModHub-Content-ModQueue.ea151d34a46fd185da8d.js
-// Retrieved at 7/27/2022, 7:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-ModHub-Content-ModQueue.7ae1195bc727fe76f6ca.js
+// Retrieved at 7/28/2022, 9:50:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-ModHub-Content-ModQueue"], {
 		"./src/reddit/components/Comments/CompactUnthreadedComment/index.m.less": function(e, t, s) {
@@ -492,7 +492,7 @@
 			const W = e => Object(B.c)(e, {
 				experimentEligibilitySelector: M.Q,
 				experimentName: D.fc
-			}) === D.zd;
+			}) === D.Ad;
 			var Q = s("./src/reddit/components/ModQueueList/SortByNumReportsTooltip.m.less"),
 				R = s.n(Q);
 			const A = e => {
@@ -1573,4 +1573,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ModHub-Content-ModQueue.ea151d34a46fd185da8d.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ModHub-Content-ModQueue.7ae1195bc727fe76f6ca.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CommunityPointsLearnMore.3483feafdca9a0a478e1.js
-// Retrieved at 7/14/2022, 11:10:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CommunityPointsLearnMore.e52477b2f34c955801f3.js
+// Retrieved at 7/28/2022, 9:50:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CommunityPointsLearnMore"], {
 		"./src/reddit/components/Econ/Common/ModalCloseButton/index.m.less": function(e, t, o) {
@@ -2658,4 +2658,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommunityPointsLearnMore.3483feafdca9a0a478e1.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommunityPointsLearnMore.e52477b2f34c955801f3.js.map

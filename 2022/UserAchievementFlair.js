@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/UserAchievementFlair.386c3ab9644ebbc5b373.js
-// Retrieved at 7/13/2022, 11:20:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/UserAchievementFlair.477f71928f7f6f5c495a.js
+// Retrieved at 7/28/2022, 9:50:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["UserAchievementFlair"], {
 		"./src/reddit/components/Econ/PowerupsFlair/HoverPopup.m.less": function(e, t, r) {
@@ -63,13 +63,13 @@
 					x = Object(l.d)(),
 					I = Object(m.a)(),
 					{
-						container: w,
-						isScrollGradientVisible: N,
-						calculateGradientVisibility: g
+						container: g,
+						isScrollGradientVisible: w,
+						calculateGradientVisibility: N
 					} = Object(u.b)(!1);
 				Object(s.useEffect)(() => {
-					g()
-				}, [g]);
+					N()
+				}, [N]);
 				return n.a.createElement("div", {
 					className: Object(a.a)(f.a.container, t)
 				}, n.a.createElement("div", {
@@ -86,8 +86,8 @@
 					className: f.a.headerDelimiter
 				}), n.a.createElement("div", {
 					className: f.a.flairs,
-					onScroll: g,
-					ref: w
+					onScroll: N,
+					ref: g
 				}, E.map(e => n.a.createElement(O, {
 					flair: e,
 					key: e.type
@@ -95,7 +95,7 @@
 					className: f.a.footer
 				}, n.a.createElement(c.a, {
 					className: f.a.scrollGradient,
-					isVisible: N
+					isVisible: w
 				}), n.a.createElement(o.t, {
 					priority: o.c.Secondary,
 					className: f.a.ctaButton,
@@ -143,20 +143,20 @@
 					showPopupOnHover: c,
 					onHover: o
 				} = e;
-				const d = Object(l.e)(e => Object(b.f)(e, {
+				const d = Object(l.e)(e => Object(b.g)(e, {
 						subredditId: r,
 						userId: i
 					})),
-					u = Object(l.e)(e => Object(b.i)(e, {
+					u = Object(l.e)(e => Object(b.j)(e, {
 						subredditId: r,
 						userId: i
 					})),
-					m = Object(l.e)(e => Object(b.e)(e, {
+					m = Object(l.e)(e => Object(b.f)(e, {
 						subredditId: r,
 						userId: i
 					})),
 					[p, v] = Object(s.useState)(!1);
-				if (Object(l.e)(e => Object(b.d)(e, {
+				if (Object(l.e)(e => Object(b.e)(e, {
 						subredditId: r,
 						userId: i
 					}))) return null;
@@ -230,7 +230,7 @@
 					const c = Object(s.e)(i, {
 							commentId: e
 						}),
-						o = Object(n.f)(i, {
+						o = Object(n.g)(i, {
 							subredditId: t,
 							userId: r
 						});
@@ -323,4 +323,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/UserAchievementFlair.386c3ab9644ebbc5b373.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/UserAchievementFlair.477f71928f7f6f5c495a.js.map

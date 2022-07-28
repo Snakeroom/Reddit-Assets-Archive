@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Reddit~StandalonePostPage.dfe67b8dbcc756d6ee56.js
-// Retrieved at 7/27/2022, 7:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Reddit~StandalonePostPage.5a60cd059d64aa94a28e.js
+// Retrieved at 7/28/2022, 9:50:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Reddit~StandalonePostPage"], {
 		"./src/higherOrderComponents/asModal/helpers.ts": function(e, t, n) {
@@ -464,26 +464,26 @@
 					}, O())
 				}, [t, O, E]);
 				const B = Object(s.useRef)(0),
-					P = Object(s.useRef)(!1),
-					M = Object(s.useCallback)(e => {
+					M = Object(s.useRef)(!1),
+					P = Object(s.useCallback)(e => {
 						e.forEach(e => {
 							const {
 								isIntersecting: t,
 								intersectionRatio: n
 							} = e, s = 1 !== n;
-							t ? (P.current = !0, k.current || (k.current = !0, D.current = setTimeout(() => {
+							t ? (M.current = !0, k.current || (k.current = !0, D.current = setTimeout(() => {
 								A.current(), R.current()
-							}, u())), B.current > 0 && (A.current(B.current), B.current = 0)) : s && (P.current = !1)
+							}, u())), B.current > 0 && (A.current(B.current), B.current = 0)) : s && (M.current = !1)
 						})
 					}, []);
-				Object(a.a)(I, M);
-				const [L, V] = Object(s.useState)(!1), U = Object(s.useCallback)(e => {
+				Object(a.a)(I, P);
+				const [V, L] = Object(s.useState)(!1), U = Object(s.useCallback)(e => {
 					e.forEach(e => {
 						const {
 							isIntersecting: t,
 							intersectionRatio: n
 						} = e, s = 1 !== n;
-						t ? V(!0) : s && V(!1)
+						t ? L(!0) : s && L(!1)
 					})
 				}, []), q = Object(s.useRef)({
 					rootMargin: "2000px 0px 2000px 0px"
@@ -493,7 +493,7 @@
 				Object(s.useEffect)(() => {
 					if (void 0 !== K && K !== t) {
 						const e = t - K;
-						P.current ? A.current(e) : B.current += e
+						M.current ? A.current(e) : B.current += e
 					}
 					return () => {
 						clearTimeout(D.current), clearTimeout(F.current), clearTimeout(T.current)
@@ -540,7 +540,7 @@
 					role: "screen-reader"
 				}, [...S].reverse().join(""))), r.a.createElement("span", {
 					ref: I
-				}), L && r.a.createElement(i.a, {
+				}), V && r.a.createElement(i.a, {
 					variables: x,
 					onData: h ? m : b,
 					queryKey: v,
@@ -2938,8 +2938,8 @@
 			const o = e => {
 				return Object(r.c)(e, {
 					experimentEligibilitySelector: r.a,
-					experimentName: s.Le
-				}) === s.zd
+					experimentName: s.Me
+				}) === s.Ad
 			}
 		},
 		"./src/reddit/selectors/userPrefs.ts": function(e, t, n) {
@@ -3021,4 +3021,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit~StandalonePostPage.dfe67b8dbcc756d6ee56.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit~StandalonePostPage.5a60cd059d64aa94a28e.js.map

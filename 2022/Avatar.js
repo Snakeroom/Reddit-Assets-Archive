@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Avatar.54d3799e644f1295d818.js
-// Retrieved at 7/27/2022, 7:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Avatar.c5e5e13a5dfaba837c80.js
+// Retrieved at 7/28/2022, 9:50:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Avatar"], {
 		"./src/reddit/components/SnoovatarModal/SnoovatarIframe.tsx": function(e, t, s) {
@@ -128,9 +128,9 @@
 						await s.e(7).then(s.t.bind(null, "./node_modules/@reddit/avatars/style.css", 7))
 					})(), N(u.r), d(!0)
 				}, [N]);
-				const w = Object(o.e)(e => !Object(p.Q)(e) && Object(b.y)(e)),
+				const w = Object(o.e)(e => !Object(p.Q)(e) && Object(b.z)(e)),
 					U = Object(o.d)(),
-					y = () => U(Object(i.openLoginModal)());
+					k = () => U(Object(i.openLoginModal)());
 				if (!e || !t) return null;
 				if (w) return r.a.createElement("div", {
 					className: Object(c.a)(j.a.container, {
@@ -139,10 +139,10 @@
 				}, r.a.createElement(n.Suspense, {
 					fallback: r.a.createElement("div", null)
 				}, r.a.createElement(S, {
-					openLogin: y,
+					openLogin: k,
 					fancyBackground: !0
 				})));
-				const k = {
+				const y = {
 					...f,
 					STRIPE_API_KEY: a.a.stripe.apiKey(_)
 				};
@@ -155,7 +155,7 @@
 				}, r.a.createElement(h, {
 					accessToken: e.accessToken,
 					authHeaders: g,
-					config: k,
+					config: y,
 					sendEvent: v.a
 				}, r.a.createElement(A, null))) : r.a.createElement(O.a, {
 					className: j.a.content
@@ -169,8 +169,8 @@
 			}));
 			var a = s("./src/reddit/constants/experiments.ts"),
 				n = s("./src/reddit/selectors/experiments/econ/simpleExperiment.ts");
-			const r = Object(n.a)(a.dd)
+			const r = Object(n.a)(a.ed)
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Avatar.54d3799e644f1295d818.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Avatar.c5e5e13a5dfaba837c80.js.map

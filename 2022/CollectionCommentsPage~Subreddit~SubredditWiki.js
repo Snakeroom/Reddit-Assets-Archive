@@ -1,7 +1,7 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~Subreddit~SubredditWiki.ebdc5144d67a99465e8e.js
-// Retrieved at 7/27/2022, 7:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~Subreddit~SubredditWiki.cf7a53bd841a191c503d.js
+// Retrieved at 7/28/2022, 9:50:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
-	["CollectionCommentsPage~Subreddit~SubredditWiki"], {
+	["CollectionCommentsPage~Subreddit~SubredditWiki", "AchievementsActions"], {
 		"./node_modules/lodash/random.js": function(e, t, r) {
 			var n = r("./node_modules/lodash/_baseRandom.js"),
 				s = r("./node_modules/lodash/_isIterateeCall.js"),
@@ -214,10 +214,10 @@
 					if (!e) return;
 					const s = n(),
 						i = Object(g.k)(s);
-					if (!i || !Object(b.f)(s, {
+					if (!i || !Object(b.m)(s, {
 							subredditId: e
 						})) return;
-					const a = !!Object(h.e)(s, {
+					const a = !!Object(h.f)(s, {
 						subredditId: e,
 						userId: i.id
 					});
@@ -228,7 +228,7 @@
 						fullData: !0
 					}));
 					const n = r();
-					return Object(b.f)(n, {
+					return Object(b.m)(n, {
 						subredditId: e
 					})
 				}, S = e => async (t, r) => {
@@ -264,7 +264,7 @@
 						i = Object(g.k)(s);
 					if (!i) return;
 					const a = i.id,
-						o = Object(h.h)(s, {
+						o = Object(h.i)(s, {
 							subredditId: e,
 							userId: a
 						});
@@ -279,7 +279,7 @@
 						i = Object(g.k)(s);
 					if (!i) return;
 					const a = i.id,
-						o = Object(h.g)(s, {
+						o = Object(h.h)(s, {
 							subredditId: e,
 							userId: a
 						});
@@ -302,7 +302,7 @@
 						subredditId: p,
 						achievementFlairType: b,
 						supporterFlairType: f
-					} = e, x = [b, f].filter(Boolean), v = Object(h.d)(o, {
+					} = e, x = [b, f].filter(Boolean), v = Object(h.e)(o, {
 						subredditId: p,
 						userId: l
 					});
@@ -329,7 +329,7 @@
 							subredditId: e,
 							userId: p
 						},
-						f = [Object(h.g)(d, b), Object(h.h)(d, b)].filter(Boolean);
+						f = [Object(h.h)(d, b), Object(h.i)(d, b)].filter(Boolean);
 					r(j({
 						...b,
 						isHidden: t
@@ -1339,7 +1339,7 @@
 						subredditId: r
 					})),
 					P = Object(a.e)(N.b) && Object(N.c)(r),
-					T = Object(a.e)(v.h);
+					T = Object(a.e)(v.i);
 				Object(s.useEffect)(() => {
 					E && c(Object(o.getSubredditCurrentUserPowerupsFlairsAndSupporterInfo)(r))
 				}, [E, r, c]);
@@ -3569,8 +3569,8 @@
 				d = e => a.includes(e),
 				c = Object(n.a)(e => Object(i.c)(e, {
 					experimentEligibilitySelector: i.a,
-					experimentName: s.Wd
-				}), e => e === s.zd)
+					experimentName: s.Xd
+				}), e => e === s.Ad)
 		},
 		"./src/redditGQL/operations/SubredditUserAchievements.json": function(e) {
 			e.exports = JSON.parse('{"id":"92790c69eba6"}')
@@ -3580,4 +3580,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~Subreddit~SubredditWiki.ebdc5144d67a99465e8e.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~Subreddit~SubredditWiki.cf7a53bd841a191c503d.js.map

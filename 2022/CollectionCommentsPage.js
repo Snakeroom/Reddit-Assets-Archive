@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage.879476acd6244ddadbcd.js
-// Retrieved at 7/27/2022, 7:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage.e52165add54f3621776a.js
+// Retrieved at 7/28/2022, 9:50:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage"], {
 		"./node_modules/linkify-it/index.js": function(e, t, s) {
@@ -338,7 +338,7 @@
 									icon: e.category_icon,
 									id: e.category_id,
 									name: e.category_name,
-									displayText: Object(m.Tf)(e.category_name)
+									displayText: Object(m.Uf)(e.category_name)
 								};
 								s.push(o.id), t[o.id] = o
 							}), {
@@ -1301,9 +1301,9 @@
 							i = Object(te.M)(s(), {
 								identifier: R.belongsTo
 							});
-						if (i && (e => K.gf.Redirect === Object(q.b)(e, {
+						if (i && (e => K.hf.Redirect === Object(q.b)(e, {
 								experimentEligibilitySelector: Z,
-								experimentName: K.Ze
+								experimentName: K.af
 							}))(s())) return void t(Object(n.c)(i.url));
 						if ((R.media && R.media.type) === B.o.LIVEVIDEO) {
 							const e = `/rpan${R.belongsTo.type===F.a.SUBREDDIT?i.url:"/"}${Object(x.x)(R.id)}`;
@@ -4162,7 +4162,7 @@
 							post: s,
 							isOverlay: n
 						} = t;
-						return !Object(T.r)(s) && !n && Object(F.a)(e) === w.Be.NewModule
+						return !Object(T.r)(s) && !n && Object(F.a)(e) === w.Ce.NewModule
 					},
 					isLoggedIn: B.Q,
 					postSEOV2IdCardVariant: R.h,
@@ -6445,15 +6445,15 @@
 			const Ue = e => {
 					return Object(Ve.c)(e, {
 						experimentEligibilitySelector: Ve.a,
-						experimentName: De.Of
-					}) === De.zd
+						experimentName: De.Pf
+					}) === De.Ad
 				},
 				ze = e => {
 					if (Object(We.a)(e)) return !1;
 					return Object(Ve.c)(e, {
 						experimentEligibilitySelector: Ve.a,
-						experimentName: De.Nf
-					}) === De.zd
+						experimentName: De.Of
+					}) === De.Ad
 				},
 				He = (e, t) => {
 					let {
@@ -6464,8 +6464,8 @@
 					});
 					return !(Object(We.a)(e) || !n || n.isSponsored) && Object(Ve.c)(e, {
 						experimentEligibilitySelector: Ve.a,
-						experimentName: De.Mf
-					}) === De.zd
+						experimentName: De.Nf
+					}) === De.Ad
 				};
 			var Ke = s("./src/reddit/selectors/experiments/typingIndicators.ts"),
 				qe = s("./node_modules/fbt/lib/FbtPublic.js"),
@@ -7825,7 +7825,7 @@
 							canonicalUrl: n.canonical_url,
 							baseUrl: n.base_url,
 							hostPostId: t,
-							shouldShowLinkedPosts: !Object(f.Uf)(s) && !Object(w.a)(s),
+							shouldShowLinkedPosts: !Object(f.Vf)(s) && !Object(w.a)(s),
 							subreddit: o
 						}
 					}
@@ -7888,7 +7888,7 @@
 						hostPostData: d,
 						listingBelowVariant: c
 					} = e;
-					if (c && !Object(f.Uf)(c) && !Object(w.a)(c) && !i) return a.a.createElement("div", {
+					if (c && !Object(f.Vf)(c) && !Object(w.a)(c) && !i) return a.a.createElement("div", {
 						className: K.a.smallBanner
 					});
 					const {
@@ -7899,7 +7899,7 @@
 						hk: "2g363L"
 					}) : Object(w.b)(c) ? n.fbt._("More posts like this", null, {
 						hk: "Maj0v"
-					}) : t === f.xe.DeRecs ? n.fbt._("Popular Posts Near You", null, {
+					}) : t === f.ye.DeRecs ? n.fbt._("Popular Posts Near You", null, {
 						hk: "22vlW0"
 					}) : n.fbt._("More posts you may like", null, {
 						hk: "33WdfT"
@@ -10978,13 +10978,13 @@
 			const r = e => {
 					return !(Object(o.c)(e, {
 						experimentEligibilitySelector: o.a,
-						experimentName: n.fe
-					}) === n.zd)
+						experimentName: n.ge
+					}) === n.Ad)
 				},
 				i = e => Object(o.c)(e, {
 					experimentEligibilitySelector: o.a,
-					experimentName: n.ge
-				}) === n.zd
+					experimentName: n.he
+				}) === n.Ad
 		},
 		"./src/reddit/selectors/experiments/resonatePilot.ts": function(e, t, s) {
 			"use strict";
@@ -10996,8 +10996,8 @@
 				r = s("./src/reddit/selectors/meta.ts");
 			const i = e => Object(o.c)(e, {
 				experimentEligibilitySelector: e => !Object(r.d)(e) && "US" === Object(r.b)(e),
-				experimentName: n.af
-			}) === n.hf.Enabled
+				experimentName: n.bf
+			}) === n.if.Enabled
 		},
 		"./src/reddit/selectors/experiments/signupUpsellExperiment.ts": function(e, t, s) {
 			"use strict";
@@ -11053,14 +11053,14 @@
 			const i = e => {
 					return Object(o.c)(e, {
 						experimentEligibilitySelector: o.a,
-						experimentName: n.pf
-					}) === n.zd
+						experimentName: n.qf
+					}) === n.Ad
 				},
 				a = e => {
 					return Object(o.c)(e, {
 						experimentEligibilitySelector: r.e,
-						experimentName: n.of
-					}) === n.zd
+						experimentName: n.pf
+					}) === n.Ad
 				}
 		},
 		"./src/reddit/selectors/experiments/typingIndicators.ts": function(e, t, s) {
@@ -11082,29 +11082,29 @@
 					if (Object(i.a)(e)) return !1;
 					return Object(o.c)(e, {
 						experimentEligibilitySelector: r.e,
-						experimentName: n.Qf
-					}) === n.zd
+						experimentName: n.Rf
+					}) === n.Ad
 				},
 				d = e => {
 					return Object(o.c)(e, {
 						experimentEligibilitySelector: r.e,
-						experimentName: n.Rf
-					}) === n.zd
+						experimentName: n.Sf
+					}) === n.Ad
 				},
 				c = e => {
 					if (Object(i.a)(e)) return !1;
 					const t = Object(o.c)(e, {
 						experimentEligibilitySelector: r.e,
-						experimentName: n.Pf
+						experimentName: n.Qf
 					});
-					return t === n.Ff.TypingIndicators || t === n.Ff.IndicatorsPlusCTA
+					return t === n.Gf.TypingIndicators || t === n.Gf.IndicatorsPlusCTA
 				},
 				l = e => {
 					if (Object(i.a)(e)) return !1;
 					const t = Object(r.d)(e, {
-						experimentName: n.Pf
+						experimentName: n.Qf
 					});
-					return (null == t ? void 0 : t.variant) === n.Ff.IndicatorsPlusCTA
+					return (null == t ? void 0 : t.variant) === n.Gf.IndicatorsPlusCTA
 				}
 		},
 		"./src/reddit/selectors/focusedVerticalSuggestion.ts": function(e, t, s) {
@@ -11227,7 +11227,7 @@
 				i = s("./src/reddit/selectors/experiments/nsfwListingBelow.ts");
 			const a = e => {
 					const t = Object(i.a)(e);
-					return Boolean(t) && !Object(o.Uf)(t)
+					return Boolean(t) && !Object(o.Vf)(t)
 				},
 				d = Object(n.a)(a, r.d, (e, t) => e && !t)
 		},
@@ -11304,4 +11304,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage.879476acd6244ddadbcd.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage.e52165add54f3621776a.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~Reddit.447bbfab9708480dae2a.js
-// Retrieved at 7/27/2022, 7:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~Reddit.d95c6b1a6ea57f33b61f.js
+// Retrieved at 7/28/2022, 9:50:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~Reddit"], {
 		"./assets/fonts/NotoMono/font.less": function(e, t, n) {},
@@ -2247,7 +2247,7 @@
 			const w = e => _.d.reCaptchaEnterprise(e) && !Object(T.d)(e),
 				D = e => !!Object(S.c)(e, {
 					experimentEligibilitySelector: Object(I.d)(Object(I.b)(...a.d)),
-					experimentName: f.Ye
+					experimentName: f.Ze
 				}),
 				j = Object(r.b)("LOAD_RECAPTCHA_ENTERPRISE"),
 				A = () => l(e => p()([w, D, e => e.tracking.reCaptchaEnterprise.load === r.a.New], t => t(e)))(async e => {
@@ -24640,7 +24640,7 @@
 			const c = Object(a.a)(e => Object(s.c)(e, {
 				experimentEligibilitySelector: s.a,
 				experimentName: r.xc
-			}), e => e === r.zd)
+			}), e => e === r.Ad)
 		},
 		"./src/reddit/selectors/removedPosts.ts": function(e, t, n) {
 			"use strict";
@@ -24782,4 +24782,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit.447bbfab9708480dae2a.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit.d95c6b1a6ea57f33b61f.js.map
