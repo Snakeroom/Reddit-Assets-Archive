@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~Reddit.d95c6b1a6ea57f33b61f.js
-// Retrieved at 7/28/2022, 9:50:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~Reddit.6218bba2eb1fcbc2d712.js
+// Retrieved at 7/28/2022, 11:00:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~Reddit"], {
 		"./assets/fonts/NotoMono/font.less": function(e, t, n) {},
@@ -948,7 +948,7 @@
 					} = e;
 					return async (e, r, s) => {
 						const a = r(),
-							u = Object(_.U)(a, {
+							u = Object(_.V)(a, {
 								subredditId: n
 							}).name;
 						e(Object(f.k)(t));
@@ -988,7 +988,7 @@
 						subredditId: d,
 						emojiName: u,
 						settings: p
-					} = e, h = Object(y.a)(a.url), g = r(), m = Object(_.U)(g, {
+					} = e, h = Object(y.a)(a.url), g = r(), m = Object(_.V)(g, {
 						subredditId: d
 					}).name, E = await (async (e, t, n, r, s) => Object(o.a)(Object(i.a)(e, [l.a]), {
 						endpoint: `${e.apiUrl}/api/v1/${t}/emoji.json`,
@@ -1049,7 +1049,7 @@
 					} = r;
 					const a = n();
 					if (Object(O.a)(a, e)) return;
-					const c = Object(_.U)(a, {
+					const c = Object(_.V)(a, {
 						subredditId: e
 					}).name;
 					t(R(e));
@@ -1074,7 +1074,7 @@
 						apiContext: d
 					} = a;
 					const u = s(),
-						p = Object(_.U)(u, {
+						p = Object(_.V)(u, {
 							subredditId: t
 						}).name,
 						f = await (async (e, t, n) => Object(o.a)(Object(i.a)(e, [l.a]), {
@@ -1103,7 +1103,7 @@
 						apiContext: d
 					} = a;
 					const u = s(),
-						p = Object(_.U)(u, {
+						p = Object(_.V)(u, {
 							subredditId: e
 						}).name;
 					if ((await (async (e, t, n) => Object(o.a)(Object(i.a)(e, [l.a]), {
@@ -1129,7 +1129,7 @@
 						apiContext: p
 					} = u;
 					const f = d(),
-						h = Object(_.U)(f, {
+						h = Object(_.V)(f, {
 							subredditId: s
 						}).name;
 					(await (async (e, t, n, r) => Object(o.a)(Object(i.a)(e, [l.a]), {
@@ -1230,7 +1230,7 @@
 				E = e => async (t, a) => {
 					t(b());
 					const c = a(),
-						i = Object(l.U)(c, {
+						i = Object(l.V)(c, {
 							subredditId: e
 						}).name,
 						u = c.structuredStyles.models[e],
@@ -2247,7 +2247,7 @@
 			const w = e => _.d.reCaptchaEnterprise(e) && !Object(T.d)(e),
 				D = e => !!Object(S.c)(e, {
 					experimentEligibilitySelector: Object(I.d)(Object(I.b)(...a.d)),
-					experimentName: f.Ze
+					experimentName: f.af
 				}),
 				j = Object(r.b)("LOAD_RECAPTCHA_ENTERPRISE"),
 				A = () => l(e => p()([w, D, e => e.tracking.reCaptchaEnterprise.load === r.a.New], t => t(e)))(async e => {
@@ -2564,7 +2564,7 @@
 					let {
 						gqlContext: a
 					} = s;
-					const d = Object(u.U)(n(), {
+					const d = Object(u.V)(n(), {
 						subredditId: e
 					});
 					if (void 0 === d) {
@@ -2794,7 +2794,7 @@
 					});
 					if (p.ok) {
 						const n = t(),
-							r = p.body && p.body.length ? p.body.map(e => Object(d.F)(n, e)).filter(e => !!e).reduce((e, t) => (e[t] = !0, e), {}) : {};
+							r = p.body && p.body.length ? p.body.map(e => Object(d.G)(n, e)).filter(e => !!e).reduce((e, t) => (e[t] = !0, e), {}) : {};
 						e(f({
 							subredditIds: r
 						}))
@@ -3045,7 +3045,7 @@
 								type: p.error ? p.error.type : "Unknown error",
 								username: e
 							},
-							s = Object(d.e)(u) && "REBLOCK_RATE_LIMIT" === p.body.reason;
+							s = Object(d.f)(u) && "REBLOCK_RATE_LIMIT" === p.body.reason;
 						t(y(n)), t(s ? c.f({
 							id: f,
 							kind: i.b.Error,
@@ -5210,7 +5210,7 @@
 							a = e.platform.currentPage,
 							c = a && a.urlParams.subredditName,
 							i = s || c || "",
-							d = Object(o.F)(e, i);
+							d = Object(o.G)(e, i);
 						d && e.structuredStyles.models[d] || r.add("structuredStyles"), e.user.prefs.subreddit[d] || r.add("prefsSubreddit")
 					}
 					return [...r].join(",")
@@ -12550,7 +12550,7 @@
 						case q.MORE_POSTS_LOADED:
 						case gd.a:
 						case gd.b:
-						case md.j:
+						case md.k:
 						case pd.b:
 						case pd.a:
 						case K.i:
@@ -12568,7 +12568,7 @@
 								[n]: !1
 							}
 						}
-						case md.r: {
+						case md.s: {
 							if (!t.payload || !t.payload.length) return e;
 							const n = {};
 							for (const e of t.payload) {
@@ -12750,7 +12750,7 @@
 						case Re.b:
 						case Le.b:
 						case W.SUBREDDIT_LOADED:
-						case md.j:
+						case md.k:
 						case pd.b:
 						case fd.b:
 						case xe.e:
@@ -12767,7 +12767,7 @@
 								[n]: r
 							}
 						}
-						case md.r: {
+						case md.s: {
 							if (!t.payload || !t.payload.length) return e;
 							const n = {};
 							for (const e of t.payload) {
@@ -15587,7 +15587,7 @@
 					case Ae.f:
 					case V.e:
 					case Me.b:
-					case md.j:
+					case md.k:
 					case K.i:
 					case Ue.b:
 					case bd.TOPIC_DATA_LOADED:
@@ -15601,7 +15601,7 @@
 							...ip()(t.payload.posts, Object(dp.i)([n, dp.d, dp.m, dp.n, dp.o, Object(dp.l)(e), Object(dp.j)(e)]))
 						}
 					}
-					case md.r: {
+					case md.s: {
 						if (!t.payload || !t.payload.length) return e;
 						const n = {};
 						for (const r of t.payload) {
@@ -19147,7 +19147,7 @@
 					case V.e:
 					case Fe.e:
 					case bd.TOPIC_DATA_LOADED:
-					case md.u: {
+					case md.v: {
 						const n = t.payload.subredditAboutInfo;
 						if (!n) return e;
 						const r = Object.keys(n);
@@ -19184,8 +19184,8 @@
 					}
 					case Zc.g:
 					case Km.f:
-					case md.g:
-					case md.o:
+					case md.h:
+					case md.p:
 					case ar.B: {
 						const {
 							subredditsAboutInfo: n
@@ -19366,10 +19366,10 @@
 					let e = arguments.length > 0 && void 0 !== arguments[0] && arguments[0],
 						t = arguments.length > 1 ? arguments[1] : void 0;
 					switch (t.type) {
-						case md.w:
-							return !0;
 						case md.x:
-						case md.v:
+							return !0;
+						case md.y:
+						case md.w:
 							return !1;
 						default:
 							return e
@@ -19444,12 +19444,12 @@
 					let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : hv,
 						t = arguments.length > 1 ? arguments[1] : void 0;
 					switch (t.type) {
-						case md.f:
 						case md.g:
+						case md.h:
 							return {
 								...e, [t.payload.key]: !1
 							};
-						case md.h:
+						case md.i:
 							return {
 								...e, [t.payload.key]: !0
 							};
@@ -19494,14 +19494,14 @@
 				let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : null,
 					t = arguments.length > 1 ? arguments[1] : void 0;
 				switch (t.type) {
-					case md.k: {
+					case md.l: {
 						const {
 							error: e
 						} = t.payload;
 						return e || null
 					}
+					case md.n:
 					case md.m:
-					case md.l:
 						return null;
 					default:
 						return e
@@ -19511,10 +19511,10 @@
 					let e = arguments.length > 0 && void 0 !== arguments[0] && arguments[0],
 						t = arguments.length > 1 ? arguments[1] : void 0;
 					switch (t.type) {
-						case md.m:
+						case md.n:
 							return !0;
+						case md.m:
 						case md.l:
-						case md.k:
 							return !1;
 						default:
 							return e
@@ -19560,12 +19560,12 @@
 					let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : Av,
 						t = arguments.length > 1 ? arguments[1] : void 0;
 					switch (t.type) {
-						case md.n:
 						case md.o:
+						case md.p:
 							return {
 								...e, [t.payload.key]: !1
 							};
-						case md.p:
+						case md.q:
 							return {
 								...e, [t.payload.key]: !0
 							};
@@ -20117,8 +20117,8 @@
 					case K.f:
 					case K.i:
 					case md.a:
-					case md.g:
-					case md.o:
+					case md.h:
+					case md.p:
 					case bd.TOPIC_DATA_LOADED:
 					case bd.MORE_POSTS_LOADED:
 					case ar.B:
@@ -20301,7 +20301,7 @@
 				let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : FE,
 					t = arguments.length > 1 ? arguments[1] : void 0;
 				switch (t.type) {
-					case md.g: {
+					case md.h: {
 						const {
 							key: n,
 							subredditIds: r
@@ -20609,7 +20609,7 @@
 				let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : sO,
 					t = arguments.length > 1 ? arguments[1] : void 0;
 				switch (t.type) {
-					case md.y: {
+					case md.z: {
 						const {
 							id: n,
 							progressModule: r
@@ -20639,7 +20639,7 @@
 					t = arguments.length > 1 ? arguments[1] : void 0;
 				var n, r;
 				switch (t.type) {
-					case md.y: {
+					case md.z: {
 						const {
 							id: n,
 							questions: r
@@ -20841,7 +20841,7 @@
 				let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : EO,
 					t = arguments.length > 1 ? arguments[1] : void 0;
 				switch (t.type) {
-					case md.o: {
+					case md.p: {
 						const {
 							key: n,
 							subredditIds: r
@@ -20860,7 +20860,7 @@
 				let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : _O,
 					t = arguments.length > 1 ? arguments[1] : void 0;
 				switch (t.type) {
-					case md.y: {
+					case md.z: {
 						const {
 							id: n,
 							survey: r
@@ -20870,7 +20870,7 @@
 							[n]: r
 						}
 					}
-					case md.z: {
+					case md.A: {
 						const {
 							id: n,
 							response: r
@@ -24614,7 +24614,7 @@
 				}),
 				p = Object(a.a)(u, o.c, (e, t) => t.isFlairModOnly, (e, t) => t.flairTemplateType, (e, t, n, r) => e.filter(e => !(e.modFlairOnly && !t || e.modFlairOnly && !n) && (!(!e.userFlairAllowed && r === c.d.UserFlair) && !(!e.postFlairAllowed && r === c.d.LinkFlair)))),
 				f = Object(a.a)(l, (e, t) => t.subredditId, (e, t) => Object.keys(e[t].snoomojis)),
-				b = (e, t) => Object(i.w)(e, {
+				b = (e, t) => Object(i.x)(e, {
 					subredditName: t
 				}).emojisEnabled,
 				h = {
@@ -24639,8 +24639,8 @@
 				a = n("./node_modules/reselect/es/index.js");
 			const c = Object(a.a)(e => Object(s.c)(e, {
 				experimentEligibilitySelector: s.a,
-				experimentName: r.xc
-			}), e => e === r.Ad)
+				experimentName: r.yc
+			}), e => e === r.Bd)
 		},
 		"./src/reddit/selectors/removedPosts.ts": function(e, t, n) {
 			"use strict";
@@ -24782,4 +24782,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit.d95c6b1a6ea57f33b61f.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit.6218bba2eb1fcbc2d712.js.map

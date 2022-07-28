@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~Reddit~Subreddit.c65a2e79503a18d90499.js
-// Retrieved at 7/28/2022, 9:50:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~Reddit~Subreddit.51b45de4dd032d907d5b.js
+// Retrieved at 7/28/2022, 11:00:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~Reddit~Subreddit"], {
 		"./src/lib/CSSVariableProvider/withTheme.tsx": function(e, t, n) {
@@ -1611,7 +1611,7 @@
 				subredditsByName: Object(a.a)((e, t) => {
 					const n = {};
 					return t.subredditIcons && t.subredditIcons.map(t => {
-						n[t.subredditName] = Object(l.z)(e, {
+						n[t.subredditName] = Object(l.A)(e, {
 							subredditName: t.subredditName
 						})
 					}), n
@@ -3112,7 +3112,7 @@
 							success: t
 						}),
 						profile: j.S(e, Object(I.m)(e, r)),
-						subreddit: j.ib(e, Object(O.F)(e, n)),
+						subreddit: j.ib(e, Object(O.G)(e, n)),
 						userSubreddit: j.rb(e),
 						adblock: j.e(e)
 					})
@@ -3124,7 +3124,7 @@
 						noun: "screen",
 						...C(e),
 						profile: j.S(e, Object(I.m)(e, n)),
-						subreddit: j.ib(e, Object(O.F)(e, t)),
+						subreddit: j.ib(e, Object(O.G)(e, t)),
 						userSubreddit: j.rb(e),
 						adblock: j.e(e)
 					})
@@ -3775,7 +3775,7 @@
 					if (!l(e)) return;
 					const t = Object(i.c)(e, {
 						experimentEligibilitySelector: u,
-						experimentName: s.Ud,
+						experimentName: s.Vd,
 						expEventOverride: !1
 					});
 					return null == t ? void 0 : t.toLocaleLowerCase()
@@ -3798,9 +3798,9 @@
 				},
 				m = e => !!b(e) && Object(i.c)(e, {
 					experimentEligibilitySelector: l,
-					experimentName: s.Vd,
+					experimentName: s.Wd,
 					expEventOverride: !1
-				}) !== s.Wd.Readonly
+				}) !== s.Xd.Readonly
 		},
 		"./src/reddit/selectors/experiments/newCommunityProgressV3.ts": function(e, t, n) {
 			"use strict";
@@ -3830,7 +3830,7 @@
 							subredditId: t
 						})) return;
 					if (Object(f.N)(e)) return I(e);
-					const n = Object(b.I)(e, {
+					const n = Object(b.J)(e, {
 						identifier: {
 							id: t,
 							type: i.a.SUBREDDIT
@@ -3841,7 +3841,7 @@
 					return r ? r * o.Sb < 1639443600180 ? void 0 : I(e) : void 0
 				},
 				I = Object(r.a)(e => Object(c.c)(e, {
-					experimentName: s.te,
+					experimentName: s.ue,
 					experimentEligibilitySelector: a.e
 				}), d.a)
 		},
@@ -3968,4 +3968,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit~Subreddit.c65a2e79503a18d90499.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit~Subreddit.51b45de4dd032d907d5b.js.map

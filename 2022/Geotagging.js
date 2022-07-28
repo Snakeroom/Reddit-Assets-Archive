@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Geotagging.86612841365df2d07288.js
-// Retrieved at 7/28/2022, 9:50:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Geotagging.7b11873ed3db4140bd59.js
+// Retrieved at 7/28/2022, 11:00:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Geotagging"], {
 		"./node_modules/p-debounce/index.js": function(e, t, s) {
@@ -394,7 +394,7 @@
 				const t = Object(i.f)().getState(),
 					s = Object(p.a)(t, Object(o.c)());
 				if (e.isD2xPdpSideRailRecsEnabled) {
-					const t = e.d2xPdpSideRailRecsVariant === u.Jc.GreyRereddit || e.d2xPdpSideRailRecsVariant === u.Jc.GreyRedditNoNsfw || e.d2xPdpSideRailRecsVariant === u.Jc.LargeImagePreview ? e.reredditButtons : [];
+					const t = e.d2xPdpSideRailRecsVariant === u.Kc.GreyRereddit || e.d2xPdpSideRailRecsVariant === u.Kc.GreyRedditNoNsfw || e.d2xPdpSideRailRecsVariant === u.Kc.LargeImagePreview ? e.reredditButtons : [];
 					return r.a.createElement(O, {
 						reredditContent: t
 					})
@@ -832,8 +832,8 @@
 				j = s.n(C);
 			const k = Object(g.c)({
 				isLoggedIn: O.Q,
-				subreddit: v.U,
-				subredditAboutInfo: v.v
+				subreddit: v.V,
+				subredditAboutInfo: v.w
 			});
 			class N extends r.a.Component {
 				constructor() {
@@ -1452,8 +1452,8 @@
 				A = Q("select_location"),
 				W = Q("confirm_location"),
 				H = Q("undo_location"),
-				D = q("verify_location"),
-				J = q("reject_location");
+				D = K("verify_location"),
+				J = K("reject_location");
 
 			function Q(e) {
 				return (t, s) => () => ({
@@ -1469,7 +1469,7 @@
 				})
 			}
 
-			function q(e) {
+			function K(e) {
 				return (t, s) => () => ({
 					source: G,
 					noun: e,
@@ -1482,7 +1482,7 @@
 					}
 				})
 			}
-			var K = s("./src/reddit/icons/svgs/HamburgerClose/index.tsx"),
+			var q = s("./src/reddit/icons/svgs/HamburgerClose/index.tsx"),
 				U = s("./src/reddit/models/Toast/index.ts");
 			const {
 				fbt: V
@@ -1535,7 +1535,7 @@
 					onClick: function() {
 						z(t.id), _(B(t)), x(), s(t.id)
 					}
-				}, r.a.createElement(K.a, null))), r.a.createElement("p", null, t.publicDescriptionText || t.title), t.geoPlace && !m ? r.a.createElement("div", {
+				}, r.a.createElement(q.a, null))), r.a.createElement("p", null, t.publicDescriptionText || t.title), t.geoPlace && !m ? r.a.createElement("div", {
 					className: E.a.questionContainer
 				}, r.a.createElement("div", {
 					className: E.a.question
@@ -1682,11 +1682,11 @@
 				d = s("./node_modules/reselect/es/index.js");
 			const c = Object(d.a)(e => Object(r.c)(e, {
 					experimentEligibilitySelector: e => Object(o.h)(e) && Object(i.f)(e),
-					experimentName: n.nc
+					experimentName: n.oc
 				}), a.a),
 				l = Object(d.a)(e => Object(r.c)(e, {
 					experimentEligibilitySelector: e => !Object(o.h)(e) && Object(i.f)(e),
-					experimentName: n.mc
+					experimentName: n.nc
 				}), a.a),
 				u = Object(d.a)(c, l, (e, t) => e || t),
 				m = Object(d.a)(c, l, (e, t) => !(!e && !t))
@@ -1705,4 +1705,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Geotagging.86612841365df2d07288.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Geotagging.7b11873ed3db4140bd59.js.map

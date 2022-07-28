@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ReportFlow.7a3c703b9ff5a492a4a5.js
-// Retrieved at 7/28/2022, 9:50:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ReportFlow.8caba847862d362aeb44.js
+// Retrieved at 7/28/2022, 11:00:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ReportFlow", "ReportFlowNew"], {
 		"./node_modules/@reddit/i18n-tools/runtime/helpers/locale/index.js": function(e, t, n) {
@@ -863,7 +863,7 @@
 						return e
 				}
 			};
-			var L = function() {
+			var F = function() {
 				let e = arguments.length > 0 && void 0 !== arguments[0] && arguments[0],
 					t = arguments.length > 1 ? arguments[1] : void 0;
 				switch (t.type) {
@@ -875,11 +875,11 @@
 						return e
 				}
 			};
-			var F = Object(_.c)({
+			var L = Object(_.c)({
 				api: k,
 				openedFromModalPage: T,
 				postOrCommentId: j,
-				userIsMod: L,
+				userIsMod: F,
 				rulesCategory: function() {
 					let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : null,
 						t = arguments.length > 1 ? arguments[1] : void 0;
@@ -892,7 +892,7 @@
 			});
 			Object(C.a)({
 				features: {
-					reportFlow: F
+					reportFlow: L
 				}
 			});
 			const N = Object(s.a)(g.e),
@@ -1088,7 +1088,7 @@
 								type: p.error ? p.error.type : "Unknown error",
 								username: e
 							},
-							s = Object(d.e)(u) && "REBLOCK_RATE_LIMIT" === p.body.reason;
+							s = Object(d.f)(u) && "REBLOCK_RATE_LIMIT" === p.body.reason;
 						t(f(n)), t(s ? a.f({
 							id: m,
 							kind: l.b.Error,
@@ -1483,7 +1483,7 @@
 				I = c.a.wrapped(C.b, "DropdownRow", O.a),
 				T = c.a.div("PickerWrapper", O.a),
 				j = c.a.div("SelectARuleLabel", O.a),
-				L = e => {
+				F = e => {
 					let {
 						className: t,
 						isChosen: n,
@@ -1495,8 +1495,8 @@
 						})
 					}, o))
 				},
-				F = Object(b.a)(R.a),
-				N = c.a.wrapped(F, "Dropdown", O.a),
+				L = Object(b.a)(R.a),
+				N = c.a.wrapped(L, "Dropdown", O.a),
 				A = c.a.wrapped(_.b, "DropdownTriangle", O.a),
 				P = c.a.wrapped(C.b, "Row", O.a);
 			var M = n("./src/reddit/components/ReportFlow/FileAComplaint/index.m.less"),
@@ -1635,7 +1635,7 @@
 					}, r.a.createElement(P, {
 						displayText: d ? d.reasonTextToShow : "",
 						id: pe
-					}), r.a.createElement(A, null), r.a.createElement(L, {
+					}), r.a.createElement(A, null), r.a.createElement(F, {
 						isChosen: !!d
 					}, o.fbt._("Select a rule", null, {
 						hk: "26hOYU"
@@ -1723,7 +1723,7 @@
 				ve = c.a.wrapped(fe.i, "FreeFormTextArea", Ce.a),
 				Ee = Object(i.c)({
 					dropdownIsOpen: Object(ue.b)(_e),
-					freeFormReports: xe.E
+					freeFormReports: xe.F
 				});
 			class Se extends r.a.Component {
 				constructor(e) {
@@ -1752,7 +1752,7 @@
 					}, r.a.createElement(P, {
 						displayText: n,
 						id: _e
-					}), r.a.createElement(A, null), r.a.createElement(L, {
+					}), r.a.createElement(A, null), r.a.createElement(F, {
 						isChosen: !!n
 					}, o.fbt._("Select a rule", null, {
 						hk: "26hOYU"
@@ -1795,8 +1795,8 @@
 				Ie = n("./src/reddit/models/Subreddit/index.ts"),
 				Te = n("./src/reddit/components/ReportFlow/FirstPage/index.m.less"),
 				je = n.n(Te);
-			const Le = c.a.wrapped(x.l, "SubmitButton", je.a);
-			class Fe extends r.a.Component {
+			const Fe = c.a.wrapped(x.l, "SubmitButton", je.a);
+			class Le extends r.a.Component {
 				constructor(e) {
 					super(e), this.state = {
 						rulesSequence: new ke.a
@@ -1870,7 +1870,7 @@
 						onClick: e.onClose
 					}, o.fbt._("Close", null, {
 						hk: "4gbyAA"
-					})), r.a.createElement(Le, {
+					})), r.a.createElement(Fe, {
 						onClick: e.onSubmit,
 						disabled: !e.ruleIsChosen
 					}, e.submitButtonText ? e.submitButtonText : o.fbt._("Submit", null, {
@@ -1878,7 +1878,7 @@
 					}))))
 				}
 			}
-			var Ne = Fe,
+			var Ne = Le,
 				Ae = n("./src/reddit/icons/svgs/Close/index.tsx"),
 				Pe = n("./src/reddit/components/ReportFlow/Title/index.m.less"),
 				Me = n.n(Pe);
@@ -2152,8 +2152,8 @@
 				I = n("./src/reddit/contexts/ApiContext.tsx"),
 				T = n("./src/reddit/models/Post/index.ts"),
 				j = n("./src/reddit/models/Toast/index.ts"),
-				L = n("./src/reddit/models/WhitelistAndBlocked.ts"),
-				F = n("./src/reddit/selectors/commentSelector.ts"),
+				F = n("./src/reddit/models/WhitelistAndBlocked.ts"),
+				L = n("./src/reddit/selectors/commentSelector.ts"),
 				N = n("./src/reddit/selectors/meta.ts"),
 				A = n("./src/reddit/selectors/posts.ts"),
 				P = n("./src/reddit/selectors/user.ts"),
@@ -2180,7 +2180,7 @@
 						let {
 							commentId: n
 						} = t;
-						return n ? Object(F.b)(e, {
+						return n ? Object(L.b)(e, {
 							commentId: n
 						}) : null
 					},
@@ -2196,7 +2196,7 @@
 						const {
 							commentId: o,
 							postId: s
-						} = t, r = o ? Object(F.b)(e, {
+						} = t, r = o ? Object(L.b)(e, {
 							commentId: o
 						}) : null, a = s ? Object(A.G)(e, {
 							postId: s
@@ -2286,7 +2286,7 @@
 							blockUserPending: n,
 							sendEvent: o
 						} = this.props;
-						n.new !== L.a.pending && (this.props.onBlockUser(e), o(x(t)))
+						n.new !== F.a.pending && (this.props.onBlockUser(e), o(x(t)))
 					}, this.onOpenCtlFlow = () => {
 						this.props.postMessage && this.props.postMessage({
 							type: "openCtl"
@@ -3983,4 +3983,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ReportFlow.7a3c703b9ff5a492a4a5.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ReportFlow.8caba847862d362aeb44.js.map

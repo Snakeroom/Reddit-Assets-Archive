@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostDraft.6a2e8a4607a873c3222d.js
-// Retrieved at 7/28/2022, 9:50:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostDraft.56d92875cb5a5fe3dbd5.js
+// Retrieved at 7/28/2022, 11:00:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostDraft"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -324,7 +324,7 @@
 			})), n.d(t, "a", (function() {
 				return U
 			})), n.d(t, "c", (function() {
-				return J
+				return G
 			})), n.d(t, "h", (function() {
 				return q
 			})), n.d(t, "f", (function() {
@@ -547,7 +547,7 @@
 							hk: "4Ck6Cm"
 						})
 					}))
-				}, V = Object(i.a)(c.e), J = (e, t) => async (n, i, a) => {
+				}, V = Object(i.a)(c.e), G = (e, t) => async (n, i, a) => {
 					let {
 						apiContext: c
 					} = a;
@@ -573,14 +573,14 @@
 							hk: "4Ck6Cm"
 						})
 					}))
-				}, G = Object(i.a)(c.r), Y = Object(i.a)(c.n), z = Object(i.a)(c.s), q = (e, t) => async (n, r, o) => {
+				}, J = Object(i.a)(c.r), z = Object(i.a)(c.n), Y = Object(i.a)(c.s), q = (e, t) => async (n, r, o) => {
 					let {
 						apiContext: i
 					} = o;
-					n(G());
+					n(J());
 					const a = await v(i(), e, t);
 					let c = !1;
-					if (a.ok) n(z({
+					if (a.ok) n(Y({
 						collectionId: e,
 						newTitle: t
 					})), n(Object(d.f)({
@@ -591,7 +591,7 @@
 					})), c = !0;
 					else {
 						const e = a.error;
-						n(Y(e)), n(Object(d.f)({
+						n(z(e)), n(Object(d.f)({
 							kind: w.b.Error,
 							text: s.fbt._("Something went wrong. Just don't panic.", null, {
 								hk: "4Ck6Cm"
@@ -1637,7 +1637,7 @@
 					const s = Object(f.r)(e, {
 						pageLayer: n
 					});
-					return s && Object(v.T)(e, {
+					return s && Object(v.U)(e, {
 						subredditId: s.id
 					})
 				}, e => (e || []).filter(e => M.has(e.kind))),
@@ -2636,7 +2636,7 @@
 							{
 								H: s,
 								D: r
-							} = G(e.a),
+							} = J(e.a),
 							{
 								c: i = []
 							} = e;
@@ -2747,16 +2747,16 @@
 						f: n,
 						t: r
 					} = e, o = [];
-					if (!n) return J(0, r, t);
+					if (!n) return G(0, r, t);
 					const i = Object(s.a)(r);
 					let a = 0,
 						c = 0;
 					const d = n.length;
 					for (; a < d; a++) {
 						const [e, t, s] = n[a], d = t + s, l = i[t], u = i[d] - l;
-						l > c && o.push(J(0, r.substr(c, l - c), `between${a}`)), o.push(J(e, r.substr(l, u), a)), c = l + u
+						l > c && o.push(G(0, r.substr(c, l - c), `between${a}`)), o.push(G(e, r.substr(l, u), a)), c = l + u
 					}
-					return c < r.length && o.push(J(0, r.substr(c), `remaining${a}`)), o
+					return c < r.length && o.push(G(0, r.substr(c), `remaining${a}`)), o
 				},
 				V = {
 					[p.j.monospace]: c.h,
@@ -2767,13 +2767,13 @@
 					[p.j.subscript]: c.l,
 					[p.j.superscript]: c.m
 				},
-				J = (e, t, n) => {
+				G = (e, t, n) => {
 					let s = t;
 					return s = o()(V, (t, s, r) => e & parseInt(r, 10) ? a.a.createElement(s, {
 						key: n
 					}, t) : t, s)
 				},
-				G = e => {
+				J = e => {
 					switch (e) {
 						case p.f:
 							return {
@@ -2877,7 +2877,7 @@
 				const t = Object(o.f)().getState(),
 					n = Object(b.a)(t, Object(a.c)());
 				if (e.isD2xPdpSideRailRecsEnabled) {
-					const t = e.d2xPdpSideRailRecsVariant === u.Jc.GreyRereddit || e.d2xPdpSideRailRecsVariant === u.Jc.GreyRedditNoNsfw || e.d2xPdpSideRailRecsVariant === u.Jc.LargeImagePreview ? e.reredditButtons : [];
+					const t = e.d2xPdpSideRailRecsVariant === u.Kc.GreyRereddit || e.d2xPdpSideRailRecsVariant === u.Kc.GreyRedditNoNsfw || e.d2xPdpSideRailRecsVariant === u.Kc.LargeImagePreview ? e.reredditButtons : [];
 					return r.a.createElement(C, {
 						reredditContent: t
 					})
@@ -3062,12 +3062,12 @@
 						rtJsonElementProps: i
 					});
 					switch (o) {
-						case h.yf.SmIcon:
+						case h.zf.SmIcon:
 							return r.a.createElement(p, {
 								subredditName: s,
 								rtJsonElementProps: i
 							});
-						case h.yf.SmIconHc:
+						case h.zf.SmIconHc:
 							return r.a.createElement(p, {
 								subredditName: s,
 								isHoverable: !0,
@@ -4132,7 +4132,7 @@
 							subredditName: s,
 							[r]: n.id
 						},
-						d = Object(l.z)(e, {
+						d = Object(l.A)(e, {
 							subredditName: s
 						});
 					return d ? {
@@ -4650,7 +4650,7 @@
 				W = n("./src/reddit/pages/ErrorPages/index.tsx"),
 				U = n("./src/reddit/selectors/postDraft.ts");
 			const V = Object(d.u)(),
-				J = Object(i.c)({
+				G = Object(i.c)({
 					draft: (e, t) => {
 						let {
 							match: n
@@ -4660,8 +4660,8 @@
 						})
 					}
 				}),
-				G = Object(o.b)(J);
-			class Y extends s.Component {
+				J = Object(o.b)(G);
+			class z extends s.Component {
 				render() {
 					const {
 						draft: e,
@@ -4682,7 +4682,7 @@
 					})
 				}
 			}
-			t.default = V(G(Y))
+			t.default = V(J(z))
 		},
 		"./src/reddit/selectors/experiments/d2xPdpSideRailRecs.ts": function(e, t, n) {
 			"use strict";
@@ -4699,11 +4699,11 @@
 				c = n("./node_modules/reselect/es/index.js");
 			const d = Object(c.a)(e => Object(r.c)(e, {
 					experimentEligibilitySelector: e => Object(a.h)(e) && Object(o.f)(e),
-					experimentName: s.nc
+					experimentName: s.oc
 				}), i.a),
 				l = Object(c.a)(e => Object(r.c)(e, {
 					experimentEligibilitySelector: e => !Object(a.h)(e) && Object(o.f)(e),
-					experimentName: s.mc
+					experimentName: s.nc
 				}), i.a),
 				u = Object(c.a)(d, l, (e, t) => e || t),
 				m = Object(c.a)(d, l, (e, t) => !(!e && !t))
@@ -4731,12 +4731,12 @@
 				c = e => {
 					return Object(o.c)(e, {
 						experimentEligibilitySelector: a,
-						experimentName: s.sf
+						experimentName: s.tf
 					}) || ""
 				},
 				d = e => {
 					const t = c(e);
-					return t === s.yf.SmIcon || t === s.yf.SmIconHc
+					return t === s.zf.SmIcon || t === s.zf.SmIconHc
 				},
 				l = (e, t) => {
 					let {
@@ -4754,7 +4754,7 @@
 					let {
 						subredditName: n
 					} = t;
-					const s = Object(i.Y)(e, {
+					const s = Object(i.Z)(e, {
 						subredditName: n
 					});
 					return (s && s.postIds || []).slice(0, 2)
@@ -4762,4 +4762,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostDraft.6a2e8a4607a873c3222d.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostDraft.56d92875cb5a5fe3dbd5.js.map

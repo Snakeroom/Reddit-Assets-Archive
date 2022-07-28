@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/EconTopAwardersModal.803f4c1e9b8dac248bc0.js
-// Retrieved at 7/28/2022, 9:50:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/EconTopAwardersModal.b95c2bc4de73bfa01321.js
+// Retrieved at 7/28/2022, 11:00:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["EconTopAwardersModal"], {
 		"./src/lib/currency/centsToDollars/index.ts": function(e, t, r) {
@@ -542,10 +542,10 @@
 				}, ie = (e, t) => async (r, a) => {
 					const n = a();
 					await Promise.all([(async () => {
-						if (!Object(N.b)(m.a.BAN_USER)(n) && !Object(w.R)(n, {
+						if (!Object(N.b)(m.a.BAN_USER)(n) && !Object(w.S)(n, {
 								subredditId: e
 							})) {
-							const t = Object(w.U)(n, {
+							const t = Object(w.V)(n, {
 								subredditId: e
 							});
 							await r(Object(d.o)(t.name))
@@ -1625,7 +1625,7 @@
 							subredditId: r
 						}) : void 0
 					},
-					isCurrentUserBanned: (e, t) => !!Object(x.n)(t) && Object(x.fb)(e, t),
+					isCurrentUserBanned: (e, t) => !!Object(x.o)(t) && Object(x.gb)(e, t),
 					userProfileStyles: (e, t) => Object(v.m)(e, Object(b.m)(e, t.userName)),
 					acceptChats: (e, t) => {
 						const r = Object(b.h)(e, {
@@ -1638,7 +1638,7 @@
 							subredditId: r
 						} = t;
 						const a = Object(N.e)(e),
-							n = r || a && Object(x.F)(e, a.name);
+							n = r || a && Object(x.G)(e, a.name);
 						return !!n && Object(u.i)(e, n)
 					},
 					trophyCase: (e, t) => Object(b.r)(e, Object(b.m)(e, t.userName)),
@@ -1656,7 +1656,7 @@
 						let {
 							userName: r
 						} = t;
-						return Object(x.gb)(e, {
+						return Object(x.hb)(e, {
 							identifier: {
 								name: r,
 								type: "profile"
@@ -2769,14 +2769,14 @@
 			const s = e => {
 					return !(Object(n.c)(e, {
 						experimentEligibilitySelector: n.a,
-						experimentName: a.ge
-					}) === a.Ad)
+						experimentName: a.he
+					}) === a.Bd)
 				},
 				o = e => Object(n.c)(e, {
 					experimentEligibilitySelector: n.a,
-					experimentName: a.he
-				}) === a.Ad
+					experimentName: a.ie
+				}) === a.Bd
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EconTopAwardersModal.803f4c1e9b8dac248bc0.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EconTopAwardersModal.b95c2bc4de73bfa01321.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/removalReasonActions.c789fd58176b7b62c393.js
-// Retrieved at 7/28/2022, 9:50:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/removalReasonActions.8650d297f9366310ee5b.js
+// Retrieved at 7/28/2022, 11:00:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["removalReasonActions"], {
 		"./node_modules/lodash/map.js": function(e, t, o) {
@@ -84,9 +84,9 @@
 			})), o.d(t, "s", (function() {
 				return Ue
 			})), o.d(t, "g", (function() {
-				return Fe
-			})), o.d(t, "h", (function() {
 				return Be
+			})), o.d(t, "h", (function() {
+				return Fe
 			})), o.d(t, "k", (function() {
 				return Ge
 			})), o.d(t, "e", (function() {
@@ -230,8 +230,8 @@
 					})
 				};
 			var U = o("./src/redditGQL/operations/UpdateComment.json");
-			var F = o("./src/redditGQL/operations/UpdateCommentFollowState.json");
-			var B = o("./src/reddit/endpoints/post/index.tsx"),
+			var B = o("./src/redditGQL/operations/UpdateCommentFollowState.json");
+			var F = o("./src/reddit/endpoints/post/index.tsx"),
 				G = o("./src/reddit/endpoints/post/convert.ts"),
 				V = o("./src/reddit/endpoints/publicAccessNetwork/index.ts"),
 				H = o("./src/reddit/featureFlags/index.ts"),
@@ -255,8 +255,8 @@
 				ae = o("./node_modules/reselect/es/index.js");
 			const de = Object(ae.a)(e => Object(ce.c)(e, {
 				experimentEligibilitySelector: ce.a,
-				experimentName: ie.Jb
-			}), e => e === ie.Ad);
+				experimentName: ie.Kb
+			}), e => e === ie.Bd);
 			var le = o("./src/reddit/selectors/experiments/contributeBeforeSignUp.ts"),
 				me = o("./src/reddit/selectors/experiments/emailEnablement.ts"),
 				ue = o("./src/reddit/selectors/platform.ts"),
@@ -646,9 +646,9 @@
 							formData: h
 						}))
 					}
-				}, Fe = e => async t => {
+				}, Be = e => async t => {
 					t(Object(Oe.q)(e)), t(He(e))
-				}, Be = e => {
+				}, Fe = e => {
 					let {
 						parentCommentId: t,
 						commentsPageKey: o
@@ -838,7 +838,7 @@
 						[e]: {
 							sendReplies: r
 						}
-					})), (await Object(B.s)(s(), e, r)).ok || t(Object(Oe.j)({
+					})), (await Object(F.s)(s(), e, r)).ok || t(Object(Oe.j)({
 						[e]: {
 							sendReplies: !r
 						}
@@ -861,7 +861,7 @@
 								expiresAt: Date.now() + 6048e5
 							};
 						if (o(Object(Oe.o)(c)), (await ((e, t) => Object(S.a)(e, {
-								...F,
+								...B,
 								variables: {
 									input: t
 								}
@@ -1512,8 +1512,8 @@
 				L = o("./src/lib/makeApiRequest/index.ts"),
 				K = o("./src/lib/omitHeaders/index.ts"),
 				U = o("./src/reddit/constants/headers.ts"),
-				F = o("./src/reddit/models/RichTextJson/addRTJParam.ts");
-			const B = (e, t) => Object(L.a)(Object(K.a)(e, [U.a]), {
+				B = o("./src/reddit/models/RichTextJson/addRTJParam.ts");
+			const F = (e, t) => Object(L.a)(Object(K.a)(e, [U.a]), {
 					endpoint: `${e.apiUrl}/api/v1/modactions/removal_reasons/`,
 					method: v.jb.POST,
 					type: "json",
@@ -1524,7 +1524,7 @@
 					}
 				}),
 				G = (e, t, o) => Object(L.a)(Object(K.a)(e, [U.a]), {
-					endpoint: Object(F.a)(`${e.apiUrl}/api/v1/modactions/removal_${o}_message/`),
+					endpoint: Object(B.a)(`${e.apiUrl}/api/v1/modactions/removal_${o}_message/`),
 					method: v.jb.POST,
 					type: "json",
 					data: t
@@ -1662,7 +1662,7 @@
 							modNote: s,
 							reasonId: t ? t.id : null
 						},
-						f = await B(a(), O);
+						f = await F(a(), O);
 					if (f.ok) {
 						if (r(je()), t) {
 							r(ge());
@@ -1757,7 +1757,7 @@
 							modNote: r,
 							reasonId: t ? t.id : null
 						},
-						p = await B(d(), b);
+						p = await F(d(), b);
 					if (p.ok) {
 						const n = {
 							ids: e,
@@ -1933,8 +1933,8 @@
 				L = o("./src/reddit/selectors/comments.ts"),
 				K = o("./src/reddit/selectors/moderatorPermissions.ts"),
 				U = o("./src/reddit/selectors/posts.ts"),
-				F = o("./src/reddit/selectors/tooltip.ts"),
-				B = o("./src/reddit/selectors/user.ts"),
+				B = o("./src/reddit/selectors/tooltip.ts"),
+				F = o("./src/reddit/selectors/user.ts"),
 				G = o("./src/reddit/components/CommentSort/CommentSort.m.less"),
 				V = o.n(G),
 				H = o("./src/reddit/reducers/features/comments/visitHighlightingFilter/index.ts");
@@ -2025,8 +2025,8 @@
 						})
 					},
 					contestModeModalIsOpen: Object(D.b)("CommentSort--ContestMode--Modal"),
-					dropdownIsOpen: Object(F.b)(z),
-					highlightIsOpen: Object(F.b)(X),
+					dropdownIsOpen: Object(B.b)(z),
+					highlightIsOpen: Object(B.b)(X),
 					hasModeratorPostPermissions: (e, t) => {
 						let {
 							postId: o
@@ -2042,7 +2042,7 @@
 						let {
 							postId: o
 						} = t;
-						const n = Object(B.v)(e),
+						const n = Object(F.v)(e),
 							s = !!Object(K.m)(e, {
 								postId: o
 							}),
@@ -2123,11 +2123,11 @@
 						hk: "2AkJRZ"
 					}) : n.fbt._("Start contest?", null, {
 						hk: "2PQPOu"
-					}), F = I ? n.fbt._("End", null, {
+					}), B = I ? n.fbt._("End", null, {
 						hk: "1Q8KqM"
 					}) : n.fbt._("Start", null, {
 						hk: "Mjvpj"
-					}), B = I ? n.fbt._("Ending contest mode will make comment vote scores visible and disable random comment ordering.", null, {
+					}), F = I ? n.fbt._("Ending contest mode will make comment vote scores visible and disable random comment ordering.", null, {
 						hk: "3PXrGq"
 					}) : n.fbt._("Starting a contest will hide comment vote scores and randomize the order of the comments for non-mods.", null, {
 						hk: "EDqlf"
@@ -2217,9 +2217,9 @@
 						selectedSort: j,
 						trackHighlight: w
 					})), s && r.a.createElement(_.a, {
-						actionText: F,
+						actionText: B,
 						headerText: U,
-						modalText: B,
+						modalText: F,
 						onConfirm: this.setContestMode,
 						toggleModal: v,
 						withOverlay: !0
@@ -2895,7 +2895,7 @@
 				s = o("./src/reddit/selectors/experiments/econ/simpleExperiment.ts");
 			const r = Object(s.a)(n.K),
 				i = Object(s.a)(n.I),
-				c = Object(s.a)(n.le),
+				c = Object(s.a)(n.me),
 				a = Object(s.a)(n.L),
 				d = Object(s.a)(n.N),
 				l = Object(s.a)(n.H),
@@ -2924,11 +2924,11 @@
 				l = Object(n.a)(d, e => !!e),
 				m = e => {
 					const t = d(e);
-					return !!t && a(e, t) === s.fb.SkipOnboarding
+					return !!t && a(e, t) === s.gb.SkipOnboarding
 				},
 				u = e => {
 					const t = d(e);
-					return !!t && a(e, t) === s.fb.RegOnboarding
+					return !!t && a(e, t) === s.gb.RegOnboarding
 				}
 		},
 		"./src/redditGQL/operations/CommentToxicity.json": function(e) {
@@ -2945,4 +2945,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/removalReasonActions.c789fd58176b7b62c393.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/removalReasonActions.8650d297f9366310ee5b.js.map

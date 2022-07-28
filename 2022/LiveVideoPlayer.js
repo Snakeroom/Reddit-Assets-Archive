@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/LiveVideoPlayer.d8c17b19ca8f51910db4.js
-// Retrieved at 7/28/2022, 9:50:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/LiveVideoPlayer.f1841aa50bdab67f82e7.js
+// Retrieved at 7/28/2022, 11:00:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["LiveVideoPlayer"], {
 		"./node_modules/lodash/isUndefined.js": function(e, t) {
@@ -153,7 +153,7 @@
 					s(p());
 					const d = Date.now(),
 						l = e.replace("r/", ""),
-						m = Object(u.F)(o, l),
+						m = Object(u.G)(o, l),
 						h = await Object(a.b)(i(), {
 							subredditId: m,
 							options: t
@@ -219,7 +219,7 @@
 		"./src/reddit/actions/subscription/index.ts": function(e, t, s) {
 			"use strict";
 			s.d(t, "e", (function() {
-				return N
+				return M
 			})), s.d(t, "d", (function() {
 				return D
 			})), s.d(t, "c", (function() {
@@ -296,8 +296,8 @@
 				C = Object(o.a)(u.c),
 				x = Object(o.a)(u.b),
 				P = Object(o.a)(u.a),
-				M = Object(o.a)(u.h),
-				N = (Object(o.a)(u.i), Object(o.a)(u.g), () => async (e, t, s) => {
+				N = Object(o.a)(u.h),
+				M = (Object(o.a)(u.i), Object(o.a)(u.g), () => async (e, t, s) => {
 					let {
 						gqlContext: n
 					} = s;
@@ -317,7 +317,7 @@
 					let {
 						apiContext: b
 					} = h, p = e.map(e => e.type === m.a.SUBREDDIT ? {
-						id: Object(E.F)(u(), e.name),
+						id: Object(E.G)(u(), e.name),
 						name: e.name,
 						type: e.type
 					} : {
@@ -340,7 +340,7 @@
 						}
 						if (!e.length && !p.length) return
 					}
-					o(M({
+					o(N({
 						identifiers: p,
 						nameIdentifiers: e,
 						profileModels: u().profiles.models,
@@ -381,7 +381,7 @@
 							text: 1 === e.length && "profile" === e[0].type ? t ? r : a : t ? d : c
 						}))
 					} else {
-						o(M({
+						o(N({
 							identifiers: p,
 							nameIdentifiers: e,
 							profileModels: u().profiles.models,
@@ -401,7 +401,7 @@
 						apiContext: r
 					} = n;
 					const i = s(),
-						o = Object(E.M)(i, {
+						o = Object(E.N)(i, {
 							identifier: e
 						});
 					if (!o) throw new Error(`actions.subscription -- No subreddit or profile found with id ${e.id}`);
@@ -417,7 +417,7 @@
 							type: e.type,
 							name: o.name
 						},
-						y = () => Object(E.gb)(s(), {
+						y = () => Object(E.hb)(s(), {
 							identifier: O
 						});
 					(y() || (await t(D([O], !0)), y())) && (t(A({
@@ -691,8 +691,8 @@
 				C = s("./src/reddit/selectors/PublicAccessNetwork/streams.ts"),
 				x = s("./src/reddit/selectors/user.ts"),
 				P = s("./src/reddit/selectors/video.ts"),
-				M = s("./src/reddit/components/PublicAccessNetwork/LiveVideoPlayer/index.m.less"),
-				N = s.n(M);
+				N = s("./src/reddit/components/PublicAccessNetwork/LiveVideoPlayer/index.m.less"),
+				M = s.n(N);
 			const {
 				fbt: T
 			} = s("./node_modules/fbt/lib/FbtPublic.js"), D = Object(c.a)(v.a, {
@@ -927,7 +927,7 @@
 				}
 				componentDidMount() {
 					const e = this.focusVisibleRef.current;
-					e.classList.add(N.a.focusVisible), Object(l.a)(e)
+					e.classList.add(M.a.focusVisible), Object(l.a)(e)
 				}
 				componentDidUpdate(e, t) {
 					var s;
@@ -957,8 +957,8 @@
 				}
 				render() {
 					return o.a.createElement("div", {
-						className: Object(u.a)(N.a.LiveVideoPlayer, {
-							[N.a.isSleeping]: this.state.isSleeping && !this.shouldPause
+						className: Object(u.a)(M.a.LiveVideoPlayer, {
+							[M.a.isSleeping]: this.state.isSleeping && !this.shouldPause
 						}),
 						onBlur: this.handleMouseLeave,
 						onClick: this.handleClick,
@@ -973,9 +973,9 @@
 						live: e
 					} = this.state;
 					return o.a.createElement(U, null, e ? o.a.createElement("span", {
-						className: N.a.liveStatus
+						className: M.a.liveStatus
 					}, o.a.createElement(g.g, null)) : null, o.a.createElement("div", {
-						className: N.a.controls,
+						className: M.a.controls,
 						onMouseDown: this.handleMouseDownControls,
 						onMouseMove: this.handleMouseMoveControls,
 						onMouseUp: this.handleMouseUpControls
@@ -989,7 +989,7 @@
 						postTitle: n
 					} = this.props;
 					return o.a.createElement("div", {
-						className: Object(u.a)(N.a.clip9x16, t)
+						className: Object(u.a)(M.a.clip9x16, t)
 					}, o.a.createElement(D, {
 						autoplay: e,
 						controls: !1,
@@ -1099,7 +1099,7 @@
 					children: t
 				} = e;
 				return o.a.createElement("div", {
-					className: N.a.Overlay
+					className: M.a.Overlay
 				}, t)
 			}
 		},
@@ -1242,9 +1242,9 @@
 			})), s.d(t, "n", (function() {
 				return P
 			})), s.d(t, "k", (function() {
-				return M
-			})), s.d(t, "b", (function() {
 				return N
+			})), s.d(t, "b", (function() {
+				return M
 			})), s.d(t, "d", (function() {
 				return T
 			})), s.d(t, "e", (function() {
@@ -1494,14 +1494,14 @@
 					noun: "unfollow",
 					...a(t, e)
 				}),
-				M = e => t => ({
+				N = e => t => ({
 					source: "stream_player",
 					action: "click",
 					noun: "subscribe",
 					...a(t, e),
 					targetSubreddit: o.hb(t)
 				}),
-				N = (e, t) => s => ({
+				M = (e, t) => s => ({
 					source: "stream_player",
 					action: "click",
 					noun: "close",
@@ -1677,9 +1677,9 @@
 			})), s.d(t, "i", (function() {
 				return k
 			})), s.d(t, "d", (function() {
-				return M
-			})), s.d(t, "h", (function() {
 				return N
+			})), s.d(t, "h", (function() {
+				return M
 			})), s.d(t, "k", (function() {
 				return T
 			})), s.d(t, "c", (function() {
@@ -1860,8 +1860,8 @@
 				P = Object(n.a)(f, v, (e, t) => {
 					if (e > 0) return t[e - 1]
 				}),
-				M = Object(r.a)(Object(n.a)(C, g, (e, t) => e ? t[e] : void 0)),
-				N = Object(r.a)(Object(n.a)(x, g, (e, t) => e ? t[e] : void 0)),
+				N = Object(r.a)(Object(n.a)(C, g, (e, t) => e ? t[e] : void 0)),
+				M = Object(r.a)(Object(n.a)(x, g, (e, t) => e ? t[e] : void 0)),
 				T = Object(r.a)(Object(n.a)(P, g, (e, t) => e ? t[e] : void 0)),
 				D = (Object(r.a)(Object(n.a)(e => e.publicAccessNetwork.preloads.discoveryUnitThumbnails, g, (e, t) => Object.keys(e).filter(e => !!t[e]).map(s => ({
 					...t[s],
@@ -1898,8 +1898,8 @@
 					const r = n.stream.state;
 					return r === o.a.IS_LIVE || r === o.a.DISCONNECTED ? F.LIVE : r === o.a.ENDED && n.stream.vod_accessible ? F.VOD : F.UNAVAILABLE
 				}),
-				B = Object(n.a)(M, U, m.b, d.b, d.o, (e, t, s, n, r) => s ? n : e ? t === F.LIVE || t === F.VOD ? e.stream.hls_url : r : void 0),
-				H = Object(n.a)(M, U, R, (e, t, s) => e ? t === F.LIVE ? e.broadcast_time : t === F.VOD && s < e.broadcast_time ? s : 0 : 0),
+				B = Object(n.a)(N, U, m.b, d.b, d.o, (e, t, s, n, r) => s ? n : e ? t === F.LIVE || t === F.VOD ? e.stream.hls_url : r : void 0),
+				H = Object(n.a)(N, U, R, (e, t, s) => e ? t === F.LIVE ? e.broadcast_time : t === F.VOD && s < e.broadcast_time ? s : 0 : 0),
 				G = (e, t) => {
 					const s = h(e);
 					return !!s && s[t] && s[t].chat_disabled
@@ -1933,12 +1933,12 @@
 				o = s("./src/reddit/selectors/user.ts");
 			const a = Object(n.a)(e => Object(i.c)(e, {
 				experimentEligibilitySelector: o.Q,
-				experimentName: r.yc
-			}), e => e === r.Ad)
+				experimentName: r.zc
+			}), e => e === r.Bd)
 		},
 		"./src/redditGQL/operations/SubscribedSubreddits.json": function(e) {
 			e.exports = JSON.parse('{"id":"13af47cf5fb3"}')
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/LiveVideoPlayer.d8c17b19ca8f51910db4.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/LiveVideoPlayer.f1841aa50bdab67f82e7.js.map

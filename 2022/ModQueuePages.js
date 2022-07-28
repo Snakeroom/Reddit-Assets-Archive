@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModQueuePages.8e6750f997cb898669ce.js
-// Retrieved at 7/28/2022, 9:50:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModQueuePages.cd15aa0aefcabd91bda2.js
+// Retrieved at 7/28/2022, 11:00:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModQueuePages"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -1389,7 +1389,7 @@
 						if (e !== T.a.Approve && e !== T.a.Flair) {
 							let t, r;
 							const l = b.platform.currentPage && b.platform.currentPage.queryParams && b.platform.currentPage.queryParams.subreddit,
-								m = l && Object(R.F)(b, l);
+								m = l && Object(R.G)(b, l);
 							e === T.a.Remove && m && f.length > 1 && (t = s.fbt._("Add a removal reason", null, {
 								hk: "3gGDCl"
 							}), r = Object(i.fetchReasonsAndOpenModal)(m, f));
@@ -2764,7 +2764,7 @@
 						return !!Object(Ie.q)(e, n.subredditId, n.authorId).length
 					},
 					subredditDisplayText: (e, t) => {
-						const n = Object(Me.J)(e, {
+						const n = Object(Me.K)(e, {
 							commentId: t.comment.id
 						});
 						return n ? n.displayText : ""
@@ -3137,7 +3137,7 @@
 					comment: (e, t) => Object(k.b)(e, t),
 					commentPermalink: E.m,
 					flair: E.e,
-					subreddit: C.J
+					subreddit: C.K
 				}),
 				L = Object(r.b)(P, (e, t) => {
 					let {
@@ -4336,8 +4336,8 @@
 				F = n("./src/reddit/selectors/user.ts");
 			const B = e => Object(A.c)(e, {
 				experimentEligibilitySelector: F.Q,
-				experimentName: L.fc
-			}) === L.Ad;
+				experimentName: L.gc
+			}) === L.Bd;
 			var D = n("./src/reddit/components/ModQueueList/SortByNumReportsTooltip.m.less"),
 				U = n.n(D);
 			const W = e => {
@@ -4508,7 +4508,7 @@
 						let {
 							subredditName: n
 						} = t;
-						return n ? Object(v.z)(e, {
+						return n ? Object(v.A)(e, {
 							subredditName: n
 						}) : null
 					}
@@ -5259,7 +5259,7 @@
 					modQueueListingItems: _e.d,
 					origin: Oe.k,
 					selectedItems: _e.g,
-					subredditId: (e, t) => t.subredditName ? Object(Ee.F)(e, t.subredditName) : null
+					subredditId: (e, t) => t.subredditName ? Object(Ee.G)(e, t.subredditName) : null
 				}),
 				Nt = Object(c.b)(wt, e => ({
 					addSelectedItems: t => e(Object(p.a)({
@@ -5472,7 +5472,7 @@
 				},
 				j = Object(d.c)({
 					flairData: v.d,
-					subreddit: O.U
+					subreddit: O.V
 				});
 			class y extends a.a.Component {
 				constructor(e) {
@@ -6827,12 +6827,12 @@
 						rtJsonElementProps: a
 					});
 					switch (r) {
-						case h.yf.SmIcon:
+						case h.zf.SmIcon:
 							return o.a.createElement(p, {
 								subredditName: s,
 								rtJsonElementProps: a
 							});
-						case h.yf.SmIconHc:
+						case h.zf.SmIconHc:
 							return o.a.createElement(p, {
 								subredditName: s,
 								isHoverable: !0,
@@ -7378,7 +7378,7 @@
 							subredditName: s,
 							[o]: n.id
 						},
-						c = Object(l.z)(e, {
+						c = Object(l.A)(e, {
 							subredditName: s
 						});
 					return c ? {
@@ -8053,12 +8053,12 @@
 				d = e => {
 					return Object(r.c)(e, {
 						experimentEligibilitySelector: i,
-						experimentName: s.sf
+						experimentName: s.tf
 					}) || ""
 				},
 				c = e => {
 					const t = d(e);
-					return t === s.yf.SmIcon || t === s.yf.SmIconHc
+					return t === s.zf.SmIcon || t === s.zf.SmIconHc
 				},
 				l = (e, t) => {
 					let {
@@ -8076,7 +8076,7 @@
 					let {
 						subredditName: n
 					} = t;
-					const s = Object(a.Y)(e, {
+					const s = Object(a.Z)(e, {
 						subredditName: n
 					});
 					return (s && s.postIds || []).slice(0, 2)
@@ -8084,4 +8084,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModQueuePages.8e6750f997cb898669ce.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModQueuePages.cd15aa0aefcabd91bda2.js.map

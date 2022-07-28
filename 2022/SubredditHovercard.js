@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditHovercard.6783a7390a282c83016e.js
-// Retrieved at 7/14/2022, 11:10:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditHovercard.bf40ede7fb84943f9b04.js
+// Retrieved at 7/28/2022, 11:00:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditHovercard"], {
 		"./src/reddit/components/CommunityType/index.m.less": function(e, t, s) {
@@ -32,7 +32,7 @@
 				f = s.n(h);
 			const O = s("./src/lib/lessComponent.tsx").a.span("TypeLabel", f.a),
 				E = Object(a.c)({
-					restrictions: v.o
+					restrictions: v.p
 				}),
 				y = e => i.a.createElement(i.a.Fragment, null, i.a.createElement(d.b, {
 					flair: {
@@ -309,7 +309,7 @@
 				_1: " Online"
 			}, [P._plural(e.subredditAboutInfo.accountsActive)], {
 				hk: "3OMjYw"
-			})))), J = Object(I.a)(e => {
+			})))), V = Object(I.a)(e => {
 				const {
 					className: t,
 					hideNSFWPref: s,
@@ -357,17 +357,17 @@
 			});
 			var q = e => {
 				const t = e.activeTooltipId === e.tooltipId;
-				return r.a.createElement(J, H({
+				return r.a.createElement(V, H({
 					isOpen: t
 				}, e))
 			};
-			const V = Object(p.c)({
+			const J = Object(p.c)({
 				activeTooltipId: v.a,
 				hideNSFWPref: h.F,
-				subreddit: b.z,
-				subredditAboutInfo: b.w
+				subreddit: b.A,
+				subredditAboutInfo: b.x
 			});
-			var Q = Object(u.b)(V, e => ({
+			var Q = Object(u.b)(J, e => ({
 				onHideTooltip: () => e(Object(m.i)())
 			}))(Object(d.c)(e => r.a.createElement("div", {
 				className: e.className,
@@ -522,7 +522,7 @@
 				h = s("./src/reddit/selectors/subreddit.ts");
 			const f = (e, t) => {
 				const s = Object(v.b)(e, t),
-					o = Object(h.J)(e, t);
+					o = Object(h.K)(e, t);
 				return {
 					comment: s,
 					isModerator: !(!o || !o.name) && !!e.moderatingSubreddits[o.name],
@@ -561,7 +561,7 @@
 			}));
 			const E = (e, t) => {
 				const s = Object(v.b)(e, t),
-					o = Object(h.J)(e, t);
+					o = Object(h.K)(e, t);
 				return {
 					comment: s,
 					isModerator: !(!o || !o.name) && !!e.moderatingSubreddits[o.name],
@@ -587,7 +587,7 @@
 				}
 			}));
 			var x = Object(i.b)(() => Object(n.c)({
-					subreddit: h.U
+					subreddit: h.V
 				}))(e => r.a.createElement(m, {
 					className: e.className,
 					type: "communityTools",
@@ -687,7 +687,7 @@
 				}) : null
 			};
 			var N = Object(i.b)(() => Object(n.c)({
-				subreddit: h.U
+				subreddit: h.V
 			}))(e => r.a.createElement(m, {
 				className: e.className,
 				type: "sidebar",
@@ -700,7 +700,7 @@
 				}
 			}));
 			var _ = Object(i.b)(() => Object(n.c)({
-				subredditOrProfile: (e, t) => Object(h.M)(e, {
+				subredditOrProfile: (e, t) => Object(h.N)(e, {
 					identifier: t
 				})
 			}))(e => r.a.createElement(m, {
@@ -719,7 +719,7 @@
 					let {
 						subredditId: s
 					} = t;
-					return s ? Object(h.U)(e, {
+					return s ? Object(h.V)(e, {
 						subredditId: s
 					}) : null
 				}
@@ -873,4 +873,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditHovercard.6783a7390a282c83016e.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditHovercard.bf40ede7fb84943f9b04.js.map

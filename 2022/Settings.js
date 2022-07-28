@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Settings.81aa624e4c61ba50f6df.js
-// Retrieved at 7/28/2022, 9:50:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Settings.5cb02073ec237e2364a4.js
+// Retrieved at 7/28/2022, 11:00:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Settings"], {
 		"./node_modules/moment/locale sync recursive ^\\.\\/.*$": function(e, t, n) {
@@ -2380,10 +2380,10 @@
 				}, ce = (e, t) => async (n, s) => {
 					const r = s();
 					await Promise.all([(async () => {
-						if (!Object(k.b)(u.a.BAN_USER)(r) && !Object(j.R)(r, {
+						if (!Object(k.b)(u.a.BAN_USER)(r) && !Object(j.S)(r, {
 								subredditId: e
 							})) {
-							const t = Object(j.U)(r, {
+							const t = Object(j.V)(r, {
 								subredditId: e
 							});
 							await n(Object(l.o)(t.name))
@@ -3536,7 +3536,7 @@
 							subredditId: n
 						}) : void 0
 					},
-					isCurrentUserBanned: (e, t) => !!Object(g.n)(t) && Object(g.fb)(e, t),
+					isCurrentUserBanned: (e, t) => !!Object(g.o)(t) && Object(g.gb)(e, t),
 					userProfileStyles: (e, t) => Object(f.m)(e, Object(h.m)(e, t.userName)),
 					acceptChats: (e, t) => {
 						const n = Object(h.h)(e, {
@@ -3549,7 +3549,7 @@
 							subredditId: n
 						} = t;
 						const s = Object(k.e)(e),
-							r = n || s && Object(g.F)(e, s.name);
+							r = n || s && Object(g.G)(e, s.name);
 						return !!r && Object(m.i)(e, r)
 					},
 					trophyCase: (e, t) => Object(h.r)(e, Object(h.m)(e, t.userName)),
@@ -3567,7 +3567,7 @@
 						let {
 							userName: n
 						} = t;
-						return Object(g.gb)(e, {
+						return Object(g.hb)(e, {
 							identifier: {
 								name: n,
 								type: "profile"
@@ -3934,7 +3934,7 @@
 				f = n("./src/reddit/selectors/subreddit.ts");
 			const g = (e, t) => {
 				const n = Object(h.b)(e, t),
-					s = Object(f.J)(e, t);
+					s = Object(f.K)(e, t);
 				return {
 					comment: n,
 					isModerator: !(!s || !s.name) && !!e.moderatingSubreddits[s.name],
@@ -3973,7 +3973,7 @@
 			}));
 			const _ = (e, t) => {
 				const n = Object(h.b)(e, t),
-					s = Object(f.J)(e, t);
+					s = Object(f.K)(e, t);
 				return {
 					comment: n,
 					isModerator: !(!s || !s.name) && !!e.moderatingSubreddits[s.name],
@@ -3999,7 +3999,7 @@
 				}
 			}));
 			var x = Object(a.b)(() => Object(o.c)({
-					subreddit: f.U
+					subreddit: f.V
 				}))(e => r.a.createElement(p, {
 					className: e.className,
 					type: "communityTools",
@@ -4099,7 +4099,7 @@
 				}) : null
 			};
 			var O = Object(a.b)(() => Object(o.c)({
-				subreddit: f.U
+				subreddit: f.V
 			}))(e => r.a.createElement(p, {
 				className: e.className,
 				type: "sidebar",
@@ -4112,7 +4112,7 @@
 				}
 			}));
 			var w = Object(a.b)(() => Object(o.c)({
-				subredditOrProfile: (e, t) => Object(f.M)(e, {
+				subredditOrProfile: (e, t) => Object(f.N)(e, {
 					identifier: t
 				})
 			}))(e => r.a.createElement(p, {
@@ -4131,7 +4131,7 @@
 					let {
 						subredditId: n
 					} = t;
-					return n ? Object(f.U)(e, {
+					return n ? Object(f.V)(e, {
 						subredditId: n
 					}) : null
 				}
@@ -11183,8 +11183,8 @@
 				re = n("./src/reddit/helpers/chooseVariant/index.ts");
 			const ae = Object(c.a)(e => Object(re.c)(e, {
 				experimentEligibilitySelector: I.Q,
-				experimentName: se.T
-			}), e => e === se.db.Enabled);
+				experimentName: se.U
+			}), e => e === se.eb.Enabled);
 			var oe = n("./src/reddit/selectors/meta.ts"),
 				ie = n("./src/reddit/components/Settings/AccountPrefsSection/index.m.less"),
 				ce = n.n(ie);
@@ -11641,7 +11641,7 @@
 					optoutModalOpen: Object(ye.b)("settins_optout_modal_id"),
 					shouldShowCreatePasswordModal: N.d,
 					user: I.k,
-					deactivateToDeleteEnabled: gt.b
+					deactivateToDeleteEnabled: gt.c
 				}),
 				Et = Object(o.b)(jt, (e, t) => ({
 					deactivate: t => {
@@ -13024,7 +13024,7 @@
 				dr = Object(c.a)(e => Object(re.c)(e, {
 					experimentEligibilitySelector: I.Q,
 					experimentName: se.R
-				}), e => e === se.ab.Enabled);
+				}), e => e === se.bb.Enabled);
 			var ur = n("./src/lib/hooks/usePrevious.ts"),
 				mr = n("./src/telemetry/models/Event.ts");
 			const pr = Se.a.span("SubheaderLink", an.a),
@@ -14245,9 +14245,9 @@
 					},
 					isDspEnabled: e => {
 						return Object(re.c)(e, {
-							experimentName: se.Rc,
+							experimentName: se.Sc,
 							experimentEligibilitySelector: re.a
-						}) === se.Ad
+						}) === se.Bd
 					}
 				}),
 				ho = Object(ge.u)(),
@@ -14786,7 +14786,7 @@
 			const o = e => Object(r.c)(e, {
 				experimentName: s.G,
 				experimentEligibilitySelector: () => Object(a.P)(e)
-			}) === s.Ad
+			}) === s.Bd
 		},
 		"./src/reddit/selectors/experiments/econ/marketplace.ts": function(e, t, n) {
 			"use strict";
@@ -14800,13 +14800,13 @@
 			const a = e => {
 					return !(Object(r.c)(e, {
 						experimentEligibilitySelector: r.a,
-						experimentName: s.ge
-					}) === s.Ad)
+						experimentName: s.he
+					}) === s.Bd)
 				},
 				o = e => Object(r.c)(e, {
 					experimentEligibilitySelector: r.a,
-					experimentName: s.he
-				}) === s.Ad
+					experimentName: s.ie
+				}) === s.Bd
 		},
 		"./src/reddit/selectors/gold/productOffers.ts": function(e, t, n) {
 			"use strict";
@@ -14970,4 +14970,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Settings.81aa624e4c61ba50f6df.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Settings.5cb02073ec237e2364a4.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-SubscriptionModal.719dfff715c959b16631.js
-// Retrieved at 7/28/2022, 9:50:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-SubscriptionModal.66bbce21b0cc4734663a.js
+// Retrieved at 7/28/2022, 11:00:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Governance-TransactionModals-SubscriptionModal"], {
 		"./node_modules/dijkstrajs/dijkstra.js": function(e, t, r) {
@@ -1306,7 +1306,7 @@
 				C = r.n(P);
 
 			function I(e) {
-				const t = Object(s.e)(t => Object(T.U)(t, e)),
+				const t = Object(s.e)(t => Object(T.V)(t, e)),
 					r = Object(s.e)(t => Object(j.r)(t, e.subredditId)),
 					o = r.membershipAlt,
 					a = r.prices.points,
@@ -1480,10 +1480,10 @@
 			const i = e => {
 				return Object(o.c)(e, {
 					experimentEligibilitySelector: o.a,
-					experimentName: n.ie
-				}) === n.Ad
+					experimentName: n.je
+				}) === n.Bd
 			}
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-SubscriptionModal.719dfff715c959b16631.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-SubscriptionModal.66bbce21b0cc4734663a.js.map

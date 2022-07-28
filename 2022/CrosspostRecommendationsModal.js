@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CrosspostRecommendationsModal.672488fde871e5ced372.js
-// Retrieved at 6/21/2022, 7:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CrosspostRecommendationsModal.8cbe2ec035aa8c44392b.js
+// Retrieved at 7/28/2022, 11:00:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CrosspostRecommendationsModal"], {
 		"./src/reddit/components/CrosspostRecommendationsModal/index.m.less": function(e, t, s) {
@@ -50,14 +50,14 @@
 						isPending: O,
 						isError: _,
 						hasData: P,
-						items: w
+						items: f
 					} = Object(i.e)(Object(d.c)({
 						isPending: k.i,
 						isError: k.f,
 						hasData: k.d,
 						items: k.c
 					})),
-					f = Object(n.useCallback)(() => {
+					w = Object(n.useCallback)(() => {
 						j((e => t => ({
 							...Object(p.n)(t),
 							action: b.c.CLICK,
@@ -88,7 +88,7 @@
 				}, g._("Crosspost to a related community", null, {
 					hk: "v80Kq"
 				})), r.a.createElement(u.a, {
-					onClick: f
+					onClick: w
 				}, r.a.createElement(c.b, null))), r.a.createElement(c.m, {
 					className: v.a.modalMetaText
 				}, g._("Share your post to another community to let other people see your post", null, {
@@ -97,7 +97,7 @@
 					contentWrapperClassName: v.a.contentWrapper,
 					hasData: P,
 					isPending: O,
-					items: w,
+					items: f,
 					itemWrapperClassName: v.a.itemWrapper,
 					onSelectRecommendation: N,
 					shouldShowSubredditOnlineUsers: !0
@@ -408,7 +408,7 @@
 					shouldPrettyPrint: C,
 					explanationText: h,
 					shouldShowSubredditOnlineUsers: S = !1
-				} = e, E = Object(o.e)(e => Object(l.w)(e, {
+				} = e, E = Object(o.e)(e => Object(l.x)(e, {
 					subredditName: r
 				})), k = Object(c.c)(r), j = void 0 !== u ? n.fbt._({
 					"*": "{number} members",
@@ -509,4 +509,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CrosspostRecommendationsModal.672488fde871e5ced372.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CrosspostRecommendationsModal.8cbe2ec035aa8c44392b.js.map

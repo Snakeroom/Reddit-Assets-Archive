@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Wiki-ModHubWikiManagement.645d43e13a8afe96d3a6.js
-// Retrieved at 7/7/2022, 2:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Wiki-ModHubWikiManagement.0c7eae043aef8e7368ae.js
+// Retrieved at 7/28/2022, 11:00:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Wiki-ModHubWikiManagement"], {
 		"./src/reddit/components/BannedUserList/AddBannedUserModal/DaysInput.tsx": function(e, t, n) {
@@ -82,7 +82,7 @@
 					hk: "2To19l"
 				})],
 				g = Object(a.c)({
-					subredditRules: m.T
+					subredditRules: m.U
 				}),
 				k = Object(o.b)(g);
 			class C extends r.a.Component {
@@ -883,8 +883,8 @@
 			var Ae = De(Ie);
 			const He = Object(S.c)({
 				subredditSettings: (e, t) => {
-					const n = Object(Me.F)(e, t.subredditName);
-					return Object(Me.W)(e, n)
+					const n = Object(Me.G)(e, t.subredditName);
+					return Object(Me.X)(e, n)
 				},
 				wikiPageSettings: I.d
 			});
@@ -1223,4 +1223,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Wiki-ModHubWikiManagement.645d43e13a8afe96d3a6.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Wiki-ModHubWikiManagement.0c7eae043aef8e7368ae.js.map

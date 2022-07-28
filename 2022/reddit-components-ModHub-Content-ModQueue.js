@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-ModHub-Content-ModQueue.7ae1195bc727fe76f6ca.js
-// Retrieved at 7/28/2022, 9:50:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-ModHub-Content-ModQueue.08474beee31e1c98743d.js
+// Retrieved at 7/28/2022, 11:00:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-ModHub-Content-ModQueue"], {
 		"./src/reddit/components/Comments/CompactUnthreadedComment/index.m.less": function(e, t, s) {
@@ -491,8 +491,8 @@
 				M = s("./src/reddit/selectors/user.ts");
 			const W = e => Object(B.c)(e, {
 				experimentEligibilitySelector: M.Q,
-				experimentName: D.fc
-			}) === D.Ad;
+				experimentName: D.gc
+			}) === D.Bd;
 			var Q = s("./src/reddit/components/ModQueueList/SortByNumReportsTooltip.m.less"),
 				R = s.n(Q);
 			const A = e => {
@@ -663,7 +663,7 @@
 						let {
 							subredditName: s
 						} = t;
-						return s ? Object(f.z)(e, {
+						return s ? Object(f.A)(e, {
 							subredditName: s
 						}) : null
 					}
@@ -1349,7 +1349,7 @@
 					modQueueListingItems: Ee.d,
 					origin: ke.k,
 					selectedItems: Ee.g,
-					subredditId: (e, t) => t.subredditName ? Object(Oe.F)(e, t.subredditName) : null
+					subredditId: (e, t) => t.subredditName ? Object(Oe.G)(e, t.subredditName) : null
 				}),
 				Pt = Object(l.b)(Tt, e => ({
 					addSelectedItems: t => e(Object(u.a)({
@@ -1573,4 +1573,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ModHub-Content-ModQueue.7ae1195bc727fe76f6ca.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ModHub-Content-ModQueue.08474beee31e1c98743d.js.map

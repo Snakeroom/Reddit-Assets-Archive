@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/LiveVideoPlayer~PublicAccessNetwork~RpanListingUnit.652968f699976d739fc7.js
-// Retrieved at 7/28/2022, 9:50:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/LiveVideoPlayer~PublicAccessNetwork~RpanListingUnit.98f2e98028b9b0c186f9.js
+// Retrieved at 7/28/2022, 11:00:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["LiveVideoPlayer~PublicAccessNetwork~RpanListingUnit"], {
 		"./src/lib/VideoSession/VideoSessionManager.ts": function(e, t, s) {
@@ -904,8 +904,8 @@
 				w = s("./src/reddit/components/UserIcon/SnoovatarHeadshot.tsx"),
 				C = s("./src/reddit/constants/posts.ts"),
 				x = s("./src/reddit/controls/Dropdown/Row.tsx"),
-				g = s("./src/reddit/helpers/getSubredditIcon/index.ts"),
-				E = s("./src/reddit/helpers/getSubredditUrl/index.ts"),
+				E = s("./src/reddit/helpers/getSubredditIcon/index.ts"),
+				g = s("./src/reddit/helpers/getSubredditUrl/index.ts"),
 				_ = s("./src/reddit/helpers/userSnoovatar/index.ts"),
 				I = s("./src/reddit/icons/fonts/index.tsx"),
 				S = s("./src/reddit/icons/fonts/Downvote/index.tsx"),
@@ -1156,10 +1156,10 @@
 					iconWrapperClassName: Z.a.overflowItemIconWrapper,
 					key: `${oe}-community`,
 					onClick: () => {
-						Object(c.e)(Object(E.a)(m), c.d.BLANK)
+						Object(c.e)(Object(g.a)(m), c.d.BLANK)
 					}
 				}, (e => {
-					const t = e && Object(g.a)({
+					const t = e && Object(E.a)({
 						subreddit: e
 					});
 					return t ? r.a.createElement("img", {
@@ -1412,7 +1412,7 @@
 				} = e;
 				const {
 					name: n
-				} = t, o = xe(n), i = ge(n), c = Ee(n, !i), l = i ? z._("Unfollow u/{name}", [z._param("name", n)], {
+				} = t, o = xe(n), i = Ee(n), c = ge(n, !i), l = i ? z._("Unfollow u/{name}", [z._param("name", n)], {
 					hk: "2n0wqa"
 				}) : z._("Follow u/{name}", [z._param("name", n)], {
 					hk: "20X8Bw"
@@ -1430,12 +1430,12 @@
 				return o && o.enableFollowers ? d : null
 			}, xe = e => Object(n.e)(t => Object(h.Ab)(t, {
 				userName: e
-			})), ge = e => Object(n.e)(t => Object(F.gb)(t, {
+			})), Ee = e => Object(n.e)(t => Object(F.hb)(t, {
 				identifier: {
 					name: e,
 					type: C.a.PROFILE
 				}
-			})), Ee = (e, t) => {
+			})), ge = (e, t) => {
 				const s = Object(n.d)();
 				return Object(a.useCallback)(() => {
 					s(Object(v.d)([{
@@ -1685,4 +1685,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/LiveVideoPlayer~PublicAccessNetwork~RpanListingUnit.652968f699976d739fc7.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/LiveVideoPlayer~PublicAccessNetwork~RpanListingUnit.98f2e98028b9b0c186f9.js.map

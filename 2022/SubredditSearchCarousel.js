@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditSearchCarousel.c3eb43141bca64acc1c9.js
-// Retrieved at 5/9/2022, 3:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditSearchCarousel.bd28226148df4110bbe7.js
+// Retrieved at 7/28/2022, 11:00:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditSearchCarousel"], {
 		"./src/reddit/actions/subreddit/subredditCarousel.ts": function(e, t, s) {
@@ -106,14 +106,14 @@
 				const f = Object(l.d)(),
 					[_, S] = Object(c.useState)(null),
 					[h, O] = Object(c.useState)(null),
-					[C, I] = Object(c.useState)(0),
-					[B, k] = Object(c.useState)(void 0),
-					g = Object(l.e)(e => Object(E.A)(e, u));
+					[C, B] = Object(c.useState)(0),
+					[I, k] = Object(c.useState)(void 0),
+					g = Object(l.e)(e => Object(E.B)(e, u));
 				Object(c.useEffect)(() => {
 					(null == u ? void 0 : u.length) && f(Object(b.e)(u))
 				}, [u]);
 				const w = (null == g ? void 0 : g.filter(e => !e.isNsfw && !e.isSubscribed)) || [],
-					U = e => () => {
+					A = e => () => {
 						if (!h) return;
 						const t = Math.sign(e) ? h.scrollLeft % 249 : 249 % h.scrollLeft,
 							s = 249 * e - t;
@@ -126,7 +126,7 @@
 					if (!_) return;
 					const e = o()(() => {
 						const e = Math.floor(_.clientWidth / 249);
-						I(e), k((e > 1 ? 249 * e : 237) - 8)
+						B(e), k((e > 1 ? 249 * e : 237) - 8)
 					}, 30);
 					return window.addEventListener("resize", e), e(), () => {
 						window.removeEventListener("resize", e)
@@ -136,7 +136,7 @@
 						source: "similar_communities",
 						action: "view",
 						noun: "module",
-						subreddit: e ? Object(E.U)(t, {
+						subreddit: e ? Object(E.V)(t, {
 							subredditId: e
 						}) : void 0
 					}))(a))
@@ -146,7 +146,7 @@
 				}, d.a.createElement("div", {
 					className: x.a.carouselHeader,
 					style: {
-						width: B
+						width: I
 					}
 				}, d.a.createElement("h3", {
 					className: x.a.carouselTitle
@@ -156,13 +156,13 @@
 					className: x.a.carouselControls
 				}, d.a.createElement("button", {
 					className: x.a.scrollButton,
-					onClick: U(-C)
+					onClick: A(-C)
 				}, d.a.createElement(v.a, {
 					name: n.a.left_fill,
 					className: x.a.scrollIcon
 				})), d.a.createElement("button", {
 					className: x.a.scrollButton,
-					onClick: U(C)
+					onClick: A(C)
 				}, d.a.createElement(v.a, {
 					name: n.a.right_fill,
 					className: x.a.scrollIcon
@@ -170,7 +170,7 @@
 					ref: O,
 					className: x.a.carouselWrapper,
 					style: {
-						width: B
+						width: I
 					}
 				}, null == w ? void 0 : w.map((e, t) => {
 					let {
@@ -211,7 +211,7 @@
 					actionInfo: {
 						reason: `${s}`
 					},
-					subreddit: Object(E.U)(r, {
+					subreddit: Object(E.V)(r, {
 						subredditId: t
 					})
 				}))(e ? "unsubsribe" : "subscribe", t, s), [t]);
@@ -305,7 +305,7 @@
 						subreddits: Object(d.o)(e, {
 							listingKey: "SUBREDDIT_CAROUSEL_SEARCH_KEY"
 						}),
-						parentSubredditId: Object(l.F)(e, t)
+						parentSubredditId: Object(l.G)(e, t)
 					})),
 					p = Object(n.useMemo)(() => null == u ? void 0 : u.map(e => e.id), [u]);
 				return Object(n.useEffect)(() => {
@@ -472,4 +472,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditSearchCarousel.c3eb43141bca64acc1c9.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditSearchCarousel.bd28226148df4110bbe7.js.map

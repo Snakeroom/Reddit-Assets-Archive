@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostDetailStickyHeader.64f76c6ebf6496ac75f7.js
-// Retrieved at 7/14/2022, 11:10:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostDetailStickyHeader.359145c94de9ae8847e3.js
+// Retrieved at 7/28/2022, 11:00:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostDetailStickyHeader"], {
 		"./src/reddit/actions/shortcuts/close.ts": function(t, e, s) {
@@ -176,11 +176,11 @@
 				j = s("./src/reddit/models/Media/index.ts"),
 				S = s("./src/reddit/models/Vote/index.ts"),
 				L = s("./src/reddit/selectors/experiments/joinOptimizations.ts"),
-				M = s("./src/reddit/selectors/experiments/postActionBarAnimation.ts"),
-				N = s("./src/reddit/selectors/platform.ts"),
-				V = s("./src/reddit/selectors/subreddit.ts"),
-				w = s("./src/reddit/selectors/telemetry.ts"),
-				B = s("./src/reddit/contexts/Post/index.tsx"),
+				N = s("./src/reddit/selectors/experiments/postActionBarAnimation.ts"),
+				V = s("./src/reddit/selectors/platform.ts"),
+				w = s("./src/reddit/selectors/subreddit.ts"),
+				B = s("./src/reddit/selectors/telemetry.ts"),
+				M = s("./src/reddit/contexts/Post/index.tsx"),
 				P = s("./src/reddit/components/LightboxHeader/index.m.less"),
 				A = s.n(P);
 			const I = Object(a.c)({
@@ -190,14 +190,14 @@
 							post: n
 						} = e;
 						if (!s && !n) return null;
-						const o = n || Object(N.n)(t, {
+						const o = n || Object(V.n)(t, {
 							page: s
 						});
-						return (null == o ? void 0 : o.belongsTo) ? Object(V.M)(t, {
+						return (null == o ? void 0 : o.belongsTo) ? Object(w.N)(t, {
 							identifier: o.belongsTo
 						}) : null
 					},
-					post: N.n,
+					post: V.n,
 					joinOptimizationsLightboxHeaderEnabled: t => Object(L.a)(t) || Object(L.d)(t) || Object(L.c)(t),
 					isVoteCountAnimation: (t, e) => {
 						let {
@@ -205,10 +205,10 @@
 							post: n
 						} = e;
 						if (!s && !n) return !1;
-						const o = s && Object(N.n)(t, {
+						const o = s && Object(V.n)(t, {
 							page: s
 						}) || n;
-						return !!o && Object(M.g)(t, {
+						return !!o && Object(N.g)(t, {
 							post: o
 						})
 					}
@@ -267,13 +267,13 @@
 							return {
 								source: "sticky_banner",
 								action: "click",
-								noun: (null == e ? void 0 : e.name) && Object(V.gb)(t, {
+								noun: (null == e ? void 0 : e.name) && Object(w.hb)(t, {
 									identifier: {
 										name: e.name,
 										type: "subreddit"
 									}
 								}) ? "subscribe" : "unsubscribe",
-								post: s ? w.I(t, s.id) : void 0,
+								post: s ? B.I(t, s.id) : void 0,
 								subreddit: e
 							}
 						})
@@ -295,7 +295,7 @@
 						post: l,
 						useAdaptiveStyles: u,
 						isVoteCountAnimation: b
-					} = this.props, h = H(l), _ = !l && (null === (t = null == a ? void 0 : a.meta) || void 0 === t ? void 0 : t.name) === d.Nb.META_MEMBERSHIP_PAYWALL_PAGE, E = l ? B.a : function(t) {
+					} = this.props, h = H(l), _ = !l && (null === (t = null == a ? void 0 : a.meta) || void 0 === t ? void 0 : t.name) === d.Nb.META_MEMBERSHIP_PAYWALL_PAGE, E = l ? M.a : function(t) {
 						let {
 							children: e,
 							postId: s
@@ -538,4 +538,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostDetailStickyHeader.64f76c6ebf6496ac75f7.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostDetailStickyHeader.359145c94de9ae8847e3.js.map

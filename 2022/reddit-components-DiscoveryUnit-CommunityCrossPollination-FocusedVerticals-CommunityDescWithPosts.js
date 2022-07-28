@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-DiscoveryUnit-CommunityCrossPollination-FocusedVerticals-CommunityDescWithPosts.bde117cb410535fa2f6b.js
-// Retrieved at 7/7/2022, 11:50:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-DiscoveryUnit-CommunityCrossPollination-FocusedVerticals-CommunityDescWithPosts.e4ba3c9b94b545b32fb8.js
+// Retrieved at 7/28/2022, 11:00:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-DiscoveryUnit-CommunityCrossPollination-FocusedVerticals-CommunityDescWithPosts"], {
 		"./src/higherOrderComponents/withClickTracking/index.tsx": function(e, t, s) {
@@ -364,8 +364,8 @@
 					}
 				}))(Object(l.c)(U)),
 				B = s("./src/reddit/components/DiscoveryUnit/CommunityCrossPollination/SubredditItem/index.tsx"),
-				F = s("./src/reddit/components/DiscoveryUnit/CommunityCrossPollination/FocusedVerticals/CommunityDescWithPosts/index.m.less"),
-				V = s.n(F);
+				V = s("./src/reddit/components/DiscoveryUnit/CommunityCrossPollination/FocusedVerticals/CommunityDescWithPosts/index.m.less"),
+				F = s.n(V);
 			const {
 				fbt: w
 			} = s("./node_modules/fbt/lib/FbtPublic.js"), R = Object(o.c)({
@@ -417,7 +417,7 @@
 						position: i,
 						pubsub: c
 					}), r.a.createElement("div", {
-						className: V.a.topPostsTitle
+						className: F.a.topPostsTitle
 					}, w._("Top post", null, {
 						hk: "3BdOuj"
 					})), a.slice(0, 1).map(e => r.a.createElement(L, {
@@ -505,8 +505,8 @@
 			const {
 				fbt: g
 			} = s("./node_modules/fbt/lib/FbtPublic.js"), I = Object(c.c)({
-				subreddit: x.U,
-				subredditAboutInfo: x.w
+				subreddit: x.V,
+				subredditAboutInfo: x.x
 			}), y = Object(i.b)(I);
 			class j extends r.a.Component {
 				constructor() {
@@ -1021,7 +1021,7 @@
 							subredditName: n,
 							[r]: s.id
 						},
-						a = Object(l.z)(e, {
+						a = Object(l.A)(e, {
 							subredditName: n
 						});
 					return a ? {
@@ -1103,4 +1103,4 @@
 		"./src/reddit/icons/fonts/commonStyles.m.less": function(e, t, s) {}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-DiscoveryUnit-CommunityCrossPollination-FocusedVerticals-CommunityDescWithPosts.bde117cb410535fa2f6b.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-DiscoveryUnit-CommunityCrossPollination-FocusedVerticals-CommunityDescWithPosts.e4ba3c9b94b545b32fb8.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-ProfileIdCard.61157dec85396ced3622.js
-// Retrieved at 7/28/2022, 9:50:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-ProfileIdCard.cce1412ef3b5ca57d372.js
+// Retrieved at 7/28/2022, 11:00:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-ProfileIdCard"], {
 		"./node_modules/lodash/compact.js": function(e, t) {
@@ -180,7 +180,7 @@
 			})), r.d(t, "c", (function() {
 				return B
 			})), r.d(t, "a", (function() {
-				return D
+				return M
 			})), r.d(t, "b", (function() {
 				return G
 			}));
@@ -272,7 +272,7 @@
 					let {
 						apiContext: f
 					} = p, b = e.map(e => e.type === m.a.SUBREDDIT ? {
-						id: Object(j.F)(l(), e.name),
+						id: Object(j.G)(l(), e.name),
 						name: e.name,
 						type: e.type
 					} : {
@@ -356,7 +356,7 @@
 						apiContext: s
 					} = n;
 					const o = r(),
-						a = Object(j.M)(o, {
+						a = Object(j.N)(o, {
 							identifier: e
 						});
 					if (!a) throw new Error(`actions.subscription -- No subreddit or profile found with id ${e.id}`);
@@ -372,7 +372,7 @@
 							type: e.type,
 							name: a.name
 						},
-						g = () => Object(j.gb)(r(), {
+						g = () => Object(j.hb)(r(), {
 							identifier: x
 						});
 					(g() || (await t(T([x], !0)), g())) && (t(A({
@@ -389,7 +389,7 @@
 						text: y(),
 						kind: I.b.Error
 					}))))
-				}, M = Object(a.a)(l.d), D = e => async (t, r, n) => {
+				}, D = Object(a.a)(l.d), M = e => async (t, r, n) => {
 					let {
 						apiContext: o
 					} = n;
@@ -403,7 +403,7 @@
 						c = a[e];
 					if (!c) return void i();
 					const d = !c.isFavorited;
-					t(M({
+					t(D({
 						makeFavorite: d,
 						multiredditPath: e,
 						multiredditsModelsState: a
@@ -415,7 +415,7 @@
 							multipath: t,
 							api_type: "json"
 						}
-					}))(o(), e, d)).ok || (t(M({
+					}))(o(), e, d)).ok || (t(D({
 						makeFavorite: !d,
 						multiredditPath: e,
 						multiredditsModelsState: a
@@ -518,7 +518,7 @@
 								type: m.error ? m.error.type : "Unknown error",
 								username: e
 							},
-							s = Object(d.e)(u) && "REBLOCK_RATE_LIMIT" === m.body.reason;
+							s = Object(d.f)(u) && "REBLOCK_RATE_LIMIT" === m.body.reason;
 						t(h(r)), t(s ? a.f({
 							id: p,
 							kind: c.b.Error,
@@ -2418,8 +2418,8 @@
 				T = r("./src/lib/copyToClipboard/index.ts"),
 				A = r("./src/reddit/actions/toaster.ts"),
 				B = r("./src/reddit/endpoints/chat/userSettings.ts"),
-				M = r("./src/reddit/models/Toast/index.ts");
-			var D = r("./src/reddit/actions/gold/modals.ts"),
+				D = r("./src/reddit/models/Toast/index.ts");
+			var M = r("./src/reddit/actions/gold/modals.ts"),
 				R = r("./src/reddit/actions/modal.ts"),
 				G = r("./src/reddit/actions/profile/index.ts"),
 				W = r("./src/reddit/components/CrisisFlow/index.tsx"),
@@ -2651,7 +2651,7 @@
 						addToMultiClicked: () => {
 							e(Object(F.a)(() => Promise.all([r.e("CollectionCommentsPage~CommentsPage~CountryPage~FramedGild~GildModal~GovernanceReleaseNotesModal~Mem~c8b748a6"), r.e("CollectionCommentsPage~CommentsPage~CountryPage~Frontpage~GovernanceReleaseNotesModal~ModListing~Mod~e3d63e32"), r.e("CountryPage~Multireddit~reddit-components-AdHocMultiredditSidebar"), r.e("CountryPage~Multireddit"), r.e("Multireddit")]).then(r.bind(null, "./src/reddit/actions/multireddit/index.ts")).then(e => e.myMultiredditsRequested))(!0, !0)), e(Object(R.h)(K.a.MULTIREDDIT_ADD_SUBREDDIT))
 						},
-						onClickGivePremium: t => e(Object(D.e)({
+						onClickGivePremium: t => e(Object(M.e)({
 							correlationId: t,
 							profileName: n
 						})),
@@ -2673,13 +2673,13 @@
 									Object(T.a)(t);
 									const r = Object(A.e)(N.fbt._("Copied link!", null, {
 										hk: "4a4E1x"
-									}), M.b.SuccessCommunity);
+									}), D.b.SuccessCommunity);
 									e(Object(A.f)(r))
 								}
 							} else {
 								const t = Object(A.e)(N.fbt._("Something went wrong", null, {
 									hk: "22u7ha"
-								}), M.b.Error);
+								}), D.b.Error);
 								e(Object(A.f)(t))
 							}
 						})())
@@ -2865,9 +2865,9 @@
 					isEmployee: T,
 					isGold: A,
 					prefShowSnoovatar: B,
-					snoovatarFullBodyAsset: M,
-					username: D
-				} = j, R = !!a && a.id === F, G = !(!a || !a.snoovatarFullBodyAsset), W = O && O.bannerBackgroundImage, H = !!b && b.isNSFW, q = H && c, z = !(!v || !v.userIsSubscriber), K = `/user/${D}/`, Z = P && P.url === K, Y = !v || v.acceptChats, Q = !v || v.acceptPms, V = k && Object(ue.b)(M), X = () => {
+					snoovatarFullBodyAsset: D,
+					username: M
+				} = j, R = !!a && a.id === F, G = !(!a || !a.snoovatarFullBodyAsset), W = O && O.bannerBackgroundImage, H = !!b && b.isNSFW, q = H && c, z = !(!v || !v.userIsSubscriber), K = `/user/${M}/`, Z = P && P.url === K, Y = !v || v.acceptChats, Q = !v || v.acceptPms, V = k && Object(ue.b)(D), X = () => {
 					r(e => !e)
 				};
 				return o.a.createElement(o.a.Fragment, null, o.a.createElement(m.a, {
@@ -2881,19 +2881,19 @@
 					title: b ? b.title : void 0,
 					url: Z ? null : K,
 					userCreated: U,
-					username: D,
+					username: M,
 					recentAwardings: w,
 					currentUserHasSnoovatar: G,
 					prefersReducedAnimations: !!E,
 					shouldShowSocialLinks: !0,
-					snoovatarUrl: M,
+					snoovatarUrl: D,
 					topAwardIcon: I,
 					actions: o.a.createElement(o.a.Fragment, null, R && !u && ve({
-						username: D,
+						username: M,
 						currentUserHasSubreddit: i,
 						id: F
 					}), !R && C && o.a.createElement(xe, {
-						profileName: D,
+						profileName: M,
 						toggleFollow: (e, t) => {
 							f(e, t), _(t ? (e => t => ({
 								...x(e, t),
@@ -2919,7 +2919,7 @@
 						isModerator: d,
 						isOwnProfile: R,
 						allowViewSnoovatar: B,
-						profileName: D,
+						profileName: M,
 						sendEvent: _,
 						userAcceptsPms: Q,
 						isUserBlocked: y
@@ -2930,9 +2930,9 @@
 				}), t && o.a.createElement(fe.a, {
 					onClose: X,
 					onConfirm: e => {
-						X(), N(e), _(Object(g.h)(D))
+						X(), N(e), _(Object(g.h)(M))
 					},
-					username: D,
+					username: M,
 					withOverlay: !0
 				}))
 			}))
@@ -3557,7 +3557,7 @@
 			const a = e => Object(s.c)(e, {
 				experimentName: n.G,
 				experimentEligibilitySelector: () => Object(o.P)(e)
-			}) === n.Ad
+			}) === n.Bd
 		},
 		"./src/reddit/selectors/experiments/crisisTextLine.ts": function(e, t, r) {
 			"use strict";
@@ -3590,13 +3590,13 @@
 			const o = e => {
 					return !(Object(s.c)(e, {
 						experimentEligibilitySelector: s.a,
-						experimentName: n.ge
-					}) === n.Ad)
+						experimentName: n.he
+					}) === n.Bd)
 				},
 				a = e => Object(s.c)(e, {
 					experimentEligibilitySelector: s.a,
-					experimentName: n.he
-				}) === n.Ad
+					experimentName: n.ie
+				}) === n.Bd
 		},
 		"./src/reddit/selectors/premium.ts": function(e, t, r) {
 			"use strict";
@@ -3625,4 +3625,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ProfileIdCard.61157dec85396ced3622.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ProfileIdCard.cce1412ef3b5ca57d372.js.map

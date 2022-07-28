@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/NotificationsInbox.4edd4fd1d4847554cc68.js
-// Retrieved at 7/20/2022, 6:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/NotificationsInbox.87205e46b8251f782c73.js
+// Retrieved at 7/28/2022, 11:00:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["NotificationsInbox"], {
 		"./src/reddit/actions/pages/notificationsInbox.ts": function(e, t, n) {
@@ -53,9 +53,9 @@
 				d = n("./src/reddit/endpoints/subreddit/notificationSettings.ts"),
 				l = n("./src/reddit/models/Subreddit/index.ts"),
 				u = n("./src/reddit/models/Toast/index.ts");
-			const m = Object(s.a)(o.u),
-				b = Object(s.a)(o.t),
-				f = Object(s.a)(o.s),
+			const m = Object(s.a)(o.v),
+				b = Object(s.a)(o.u),
+				f = Object(s.a)(o.t),
 				p = e => {
 					switch (e) {
 						case l.b.OFF:
@@ -741,4 +741,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/NotificationsInbox.4edd4fd1d4847554cc68.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/NotificationsInbox.87205e46b8251f782c73.js.map

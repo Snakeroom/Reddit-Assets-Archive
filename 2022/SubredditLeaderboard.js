@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditLeaderboard.5b589355daed01f4bd44.js
-// Retrieved at 7/28/2022, 9:50:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditLeaderboard.30efe91fd11ecce764aa.js
+// Retrieved at 7/28/2022, 11:00:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditLeaderboard"], {
 		"./node_modules/lodash/times.js": function(e, t, n) {
@@ -73,7 +73,7 @@
 									icon: e.category_icon,
 									id: e.category_id,
 									name: e.category_name,
-									displayText: Object(u.Uf)(e.category_name)
+									displayText: Object(u.Vf)(e.category_name)
 								};
 								n.push(s.id), t[s.id] = s
 							}), {
@@ -161,9 +161,9 @@
 				i = n("./src/reddit/endpoints/subreddit/local.ts"),
 				o = n("./src/reddit/endpoints/subreddit/topSubreddits.ts"),
 				d = n("./src/reddit/helpers/graphql/normalizeTopSubredditsFromGql/index.ts");
-			const c = Object(r.a)(s.m),
-				l = Object(r.a)(s.l),
-				u = Object(r.a)(s.k),
+			const c = Object(r.a)(s.n),
+				l = Object(r.a)(s.m),
+				u = Object(r.a)(s.l),
 				m = Object(r.a)(s.a),
 				b = Object(r.a)(s.b),
 				p = Object(r.a)(s.c),
@@ -373,7 +373,7 @@
 				const t = Object(a.f)().getState(),
 					n = Object(p.a)(t, Object(o.c)());
 				if (e.isD2xPdpSideRailRecsEnabled) {
-					const t = e.d2xPdpSideRailRecsVariant === u.Jc.GreyRereddit || e.d2xPdpSideRailRecsVariant === u.Jc.GreyRedditNoNsfw || e.d2xPdpSideRailRecsVariant === u.Jc.LargeImagePreview ? e.reredditButtons : [];
+					const t = e.d2xPdpSideRailRecsVariant === u.Kc.GreyRereddit || e.d2xPdpSideRailRecsVariant === u.Kc.GreyRedditNoNsfw || e.d2xPdpSideRailRecsVariant === u.Kc.LargeImagePreview ? e.reredditButtons : [];
 					return s.a.createElement(_, {
 						reredditContent: t
 					})
@@ -2242,16 +2242,16 @@
 						let {
 							categoryId: n
 						} = t;
-						return Object(D.P)(e, n)
+						return Object(D.Q)(e, n)
 					},
-					subreddits: D.bb,
+					subreddits: D.cb,
 					isOnLeaderboardPage: e => !!Object(R.h)(e),
 					isOnFrontpage: e => !!Object(R.g)(e)
 				}),
-				J = Object(o.b)(H, e => ({
+				z = Object(o.b)(H, e => ({
 					fetchMoreSubreddits: (t, n) => e(Object(P.b)(t, n))
 				}));
-			class z extends i.a.Component {
+			class Q extends i.a.Component {
 				constructor() {
 					super(...arguments), this.fetchMoreSubreddits = e => {
 						const t = this.makeFetchVariables(),
@@ -2326,13 +2326,13 @@
 					})))))
 				}
 			}
-			var Q = Object(u.c)(J(z)),
+			var J = Object(u.c)(z(Q)),
 				q = n("./node_modules/react-router-dom/esm/react-router-dom.js"),
 				V = n("./src/reddit/components/CategoryPickerWidget/index.m.less"),
-				U = n.n(V);
+				K = n.n(V);
 
-			function K() {
-				return (K = Object.assign || function(e) {
+			function U() {
+				return (U = Object.assign || function(e) {
 					for (var t = 1; t < arguments.length; t++) {
 						var n = arguments[t];
 						for (var r in n) Object.prototype.hasOwnProperty.call(n, r) && (e[r] = n[r])
@@ -2347,8 +2347,8 @@
 					className: r,
 					isActive: s,
 					tabIndex: a
-				} = e, o = Object(c.a)(U.a.categoryLink, s && U.a.active, r);
-				return i.a.createElement("li", null, i.a.createElement(q.a, K({}, t.anchorProps, {
+				} = e, o = Object(c.a)(K.a.categoryLink, s && K.a.active, r);
+				return i.a.createElement("li", null, i.a.createElement(q.a, U({}, t.anchorProps, {
 					className: o,
 					"data-active": s,
 					onMouseDown: () => e.onSendEventClick(t.name),
@@ -2401,7 +2401,7 @@
 						onItemClick: l
 					} = this.props, {
 						isExpanded: u
-					} = this.state, m = !u && d && n * d, p = a + (e ? n * e.length : 0), g = Object(c.a)(U.a.categoryList, u && U.a.expanded), h = e => !(!o || o !== Object($.h)(e)), y = i.a.createElement("ul", {
+					} = this.state, m = !u && d && n * d, p = a + (e ? n * e.length : 0), g = Object(c.a)(K.a.categoryList, u && K.a.expanded), h = e => !(!o || o !== Object($.h)(e)), y = i.a.createElement("ul", {
 						className: g,
 						style: {
 							height: m || p
@@ -2418,7 +2418,7 @@
 						}, e.name === b.m ? b.k : e.displayText || e.name)
 					}));
 					return i.a.createElement("div", {
-						className: Object(c.a)(U.a.categoryListContainer, r)
+						className: Object(c.a)(K.a.categoryListContainer, r)
 					}, y)
 				}
 				render() {
@@ -2429,16 +2429,16 @@
 						header: r,
 						headerClassName: s,
 						initialNumberOfCategories: a
-					} = this.props, o = t && a && t.length > a, d = Object(c.a)(n, U.a.container);
+					} = this.props, o = t && a && t.length > a, d = Object(c.a)(n, K.a.container);
 					return i.a.createElement(X.a, {
 						className: d,
 						contentOnly: !0
 					}, i.a.createElement("div", {
-						className: Object(c.a)(U.a.header, s)
+						className: Object(c.a)(K.a.header, s)
 					}, i.a.createElement("h2", null, r || ee._("Categories", null, {
 						hk: "46zLMb"
 					}))), this.renderCategoryList(), o && i.a.createElement(Y.r, {
-						className: Object(c.a)(U.a.button, e),
+						className: Object(c.a)(K.a.button, e),
 						onClick: this.toggleExpanded
 					}, o && !this.state.isExpanded ? ee._("Show More", null, {
 						hk: "1pCiqD"
@@ -2513,7 +2513,7 @@
 					} = t;
 					return Object(g.b)(n.params.categoryName || "")
 				},
-				Se = Object(m.Tf)(b.i),
+				Se = Object(m.Uf)(b.i),
 				Ee = Object(d.c)({
 					categories: e => Object(ye.b)(e, {
 						categoriesOrder: Se
@@ -2587,7 +2587,7 @@
 						m = (null === (e = a.find(e => e.id === u)) || void 0 === e ? void 0 : e.displayText) || "";
 					return i.a.createElement(l.a, null, i.a.createElement(k.a, {
 						className: Object(c.a)(t, E.a.mainContent),
-						content: i.a.createElement(Q, {
+						content: i.a.createElement(J, {
 							categoryId: u,
 							categoryName: d,
 							categoryDisplayText: m
@@ -2624,11 +2624,11 @@
 				d = n("./node_modules/reselect/es/index.js");
 			const c = Object(d.a)(e => Object(s.c)(e, {
 					experimentEligibilitySelector: e => Object(o.h)(e) && Object(a.f)(e),
-					experimentName: r.nc
+					experimentName: r.oc
 				}), i.a),
 				l = Object(d.a)(e => Object(s.c)(e, {
 					experimentEligibilitySelector: e => !Object(o.h)(e) && Object(a.f)(e),
-					experimentName: r.mc
+					experimentName: r.nc
 				}), i.a),
 				u = Object(d.a)(c, l, (e, t) => e || t),
 				m = Object(d.a)(c, l, (e, t) => !(!e && !t))
@@ -2666,4 +2666,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditLeaderboard.5b589355daed01f4bd44.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditLeaderboard.30efe91fd11ecce764aa.js.map

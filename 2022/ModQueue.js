@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModQueue.656105b732bfe34ac625.js
-// Retrieved at 7/20/2022, 6:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModQueue.969743e43b3939951d53.js
+// Retrieved at 7/28/2022, 11:00:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModQueue"], {
 		"./src/reddit/actions/bulkActions/index.ts": function(e, t, o) {
@@ -504,8 +504,8 @@
 				B = Object(n.a)(T.g),
 				U = Object(n.a)(T.f),
 				V = Object(n.a)(T.e),
-				H = Object(n.a)(T.n),
-				G = Object(n.a)(T.m),
+				G = Object(n.a)(T.n),
+				H = Object(n.a)(T.m),
 				$ = Object(n.a)(T.l),
 				K = Object(n.a)(T.q),
 				z = Object(n.a)(T.p),
@@ -528,7 +528,7 @@
 							p = F, f = q, O = Q;
 							break;
 						case r.rb.Reports:
-							p = H, f = $, O = G;
+							p = G, f = $, O = H;
 							break;
 						case r.rb.Spam:
 							p = K, f = W, O = z;
@@ -746,7 +746,7 @@
 						if (e !== I.a.Approve && e !== I.a.Flair) {
 							let t, n;
 							const u = p.platform.currentPage && p.platform.currentPage.queryParams && p.platform.currentPage.queryParams.subreddit,
-								l = u && Object(C.F)(p, u);
+								l = u && Object(C.G)(p, u);
 							e === I.a.Remove && l && O.length > 1 && (t = s.fbt._("Add a removal reason", null, {
 								hk: "3gGDCl"
 							}), n = Object(a.fetchReasonsAndOpenModal)(l, O));
@@ -1096,8 +1096,8 @@
 					data: t
 				});
 			var V = o("./src/reddit/helpers/isPost.ts"),
-				H = o("./src/reddit/helpers/r2/normalizeCommentFromR2/index.ts"),
-				G = o("./src/reddit/helpers/routeKey/index.ts"),
+				G = o("./src/reddit/helpers/r2/normalizeCommentFromR2/index.ts"),
+				H = o("./src/reddit/helpers/routeKey/index.ts"),
 				$ = o("./src/reddit/models/ModQueue/index.ts"),
 				K = o("./src/reddit/models/PostDraft/index.ts"),
 				z = o("./src/reddit/models/RemovalReason/index.ts"),
@@ -1242,14 +1242,14 @@
 							if (d.ok) {
 								if ([z.f.Public, z.f.PublicSubreddit].includes(s)) {
 									if (n(ge()), d.body) {
-										const e = Object(H.a)(d.body),
+										const e = Object(G.a)(d.body),
 											t = {
 												comment: e,
 												parentId: l
 											},
 											o = Object(Z.f)(c),
 											s = c.platform.currentPage && c.platform.currentPage.routeMatch;
-										let r = o && s && Object(G.a)(s, c, c.posts.models[e.postId]);
+										let r = o && s && Object(H.a)(s, c, c.posts.models[e.postId]);
 										if (r || (r = Object(A.a)(e.postId, null, {
 												sort: k.u,
 												hasSortParam: !0
@@ -1536,4 +1536,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModQueue.656105b732bfe34ac625.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModQueue.969743e43b3939951d53.js.map

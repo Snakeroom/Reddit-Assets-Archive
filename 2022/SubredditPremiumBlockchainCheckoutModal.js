@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditPremiumBlockchainCheckoutModal.577b8048ba67b4d016aa.js
-// Retrieved at 5/19/2022, 5:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditPremiumBlockchainCheckoutModal.36898f1357f5597f2bdb.js
+// Retrieved at 7/28/2022, 11:00:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditPremiumBlockchainCheckoutModal"], {
 		"./node_modules/lodash/uniqueId.js": function(e, t, s) {
@@ -151,11 +151,11 @@
 				})),
 				H = s("./src/reddit/icons/svgs/Close/index.tsx"),
 				G = s("./src/reddit/components/Economics/SubredditPremium/BlockchainCheckoutModal/Header/index.m.less"),
-				U = s.n(G);
+				V = s.n(G);
 			const {
 				fbt: W
 			} = s("./node_modules/fbt/lib/FbtPublic.js");
-			const V = Object(d.c)({
+			const U = Object(d.c)({
 				meta: (e, t) => {
 					let {
 						subredditId: s
@@ -163,18 +163,18 @@
 					return Object(I.r)(e, s)
 				}
 			});
-			var X = Object(c.b)(V)((function(e) {
+			var X = Object(c.b)(U)((function(e) {
 					const {
 						meta: t
 					} = e;
 					return i.a.createElement("header", {
-						className: U.a.container
+						className: V.a.container
 					}, i.a.createElement("div", {
-						className: U.a.text
+						className: V.a.text
 					}, W._("Purchase {membership name}", [W._param("membership name", t.membershipAlt)], {
 						hk: "OO3Gk"
 					})), i.a.createElement(H.a, {
-						className: U.a.close,
+						className: V.a.close,
 						onClick: e.onClose
 					}))
 				})),
@@ -331,7 +331,7 @@
 						} = t;
 						return Object(I.o)(e, s)
 					},
-					subreddit: T.U,
+					subreddit: T.V,
 					wallet: g.d
 				}),
 				$ = Object(c.b)(Q, (e, t) => ({
@@ -1092,4 +1092,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditPremiumBlockchainCheckoutModal.577b8048ba67b4d016aa.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditPremiumBlockchainCheckoutModal.36898f1357f5597f2bdb.js.map

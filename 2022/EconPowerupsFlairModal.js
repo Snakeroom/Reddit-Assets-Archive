@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/EconPowerupsFlairModal.12ff58e09567006f8f39.js
-// Retrieved at 7/28/2022, 9:50:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/EconPowerupsFlairModal.06d06124c0e57d299cb1.js
+// Retrieved at 7/28/2022, 11:00:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["EconPowerupsFlairModal", "AchievementsActions"], {
 		"./src/reddit/actions/economics/powerups/flairs/index.ts": function(e, t, r) {
@@ -609,9 +609,9 @@
 				U = r("./src/reddit/actions/tooltip.ts"),
 				L = r("./src/reddit/components/InfoTextTooltip/index.tsx"),
 				M = r("./src/reddit/icons/fonts/index.tsx"),
-				A = r("./src/reddit/models/Gold/Powerups/powerupsFlair/index.ts"),
-				B = r("./src/reddit/components/Econ/PowerupsFlair/PowerupsFlairModal/PowerupsFlair.m.less"),
-				D = r.n(B);
+				B = r("./src/reddit/models/Gold/Powerups/powerupsFlair/index.ts"),
+				A = r("./src/reddit/components/Econ/PowerupsFlair/PowerupsFlairModal/PowerupsFlair.m.less"),
+				D = r.n(A);
 			const {
 				fbt: H
 			} = r("./node_modules/fbt/lib/FbtPublic.js"), G = e => {
@@ -637,7 +637,7 @@
 					onMouseLeave: u,
 					onClick: () => {
 						if (m && r(t.type), !t.isPreferred) {
-							const e = Object(A.b)(t) ? {
+							const e = Object(B.b)(t) ? {
 								supporterFlair: t
 							} : {
 								achievementFlair: t
@@ -776,8 +776,8 @@
 			var Y = r("./src/reddit/actions/authorFlair.ts"),
 				J = r("./src/reddit/components/Flair/index.tsx"),
 				$ = r("./src/reddit/controls/Button/index.tsx"),
-				X = r("./src/reddit/components/Econ/PowerupsFlair/PowerupsFlairModal/UserFlair.m.less"),
-				Z = r.n(X);
+				Z = r("./src/reddit/components/Econ/PowerupsFlair/PowerupsFlairModal/UserFlair.m.less"),
+				X = r.n(Z);
 			const {
 				fbt: ee
 			} = r("./node_modules/fbt/lib/FbtPublic.js"), te = e => {
@@ -790,15 +790,15 @@
 					d = Object(y.a)(),
 					c = Object(o.e)(b.k);
 				return c ? n.a.createElement("div", {
-					className: Object(i.a)(Z.a.container, t)
+					className: Object(i.a)(X.a.container, t)
 				}, n.a.createElement("div", {
-					className: Z.a.header
+					className: X.a.header
 				}, n.a.createElement("h4", {
-					className: Z.a.flairText
+					className: X.a.flairText
 				}, ee._("User Flair", null, {
 					hk: "3DaU0r"
 				})), n.a.createElement($.t, {
-					className: Z.a.editButton,
+					className: X.a.editButton,
 					priority: $.c.Plain,
 					onClick: () => {
 						const e = c ? Object(m.e)(c) : null;
@@ -812,7 +812,7 @@
 				}, n.a.createElement(M.a, {
 					name: "edit"
 				}))), (null == s ? void 0 : s.applied) && s.displaySettings.isUserEnabled && n.a.createElement(J.b, {
-					className: Z.a.flair,
+					className: X.a.flair,
 					flair: s.applied,
 					forceSmallEmojis: !0
 				})) : null
@@ -1123,8 +1123,8 @@
 				d = e => n.includes(e),
 				c = Object(s.a)(e => Object(a.c)(e, {
 					experimentEligibilitySelector: a.a,
-					experimentName: i.Xd
-				}), e => e === i.Ad)
+					experimentName: i.Yd
+				}), e => e === i.Bd)
 		},
 		"./src/redditGQL/operations/SubredditUserAchievements.json": function(e) {
 			e.exports = JSON.parse('{"id":"92790c69eba6"}')
@@ -1134,4 +1134,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EconPowerupsFlairModal.12ff58e09567006f8f39.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EconPowerupsFlairModal.06d06124c0e57d299cb1.js.map

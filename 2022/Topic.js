@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Topic.e6471bef61a85f71249c.js
-// Retrieved at 7/28/2022, 9:50:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Topic.46278b389b2acf7808ef.js
+// Retrieved at 7/28/2022, 11:00:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Topic"], {
 		"./node_modules/intersection-observer/intersection-observer.js": function(e, t) {
@@ -723,7 +723,7 @@
 				const t = Object(i.f)().getState(),
 					s = Object(b.a)(t, Object(a.c)());
 				if (e.isD2xPdpSideRailRecsEnabled) {
-					const t = e.d2xPdpSideRailRecsVariant === u.Jc.GreyRereddit || e.d2xPdpSideRailRecsVariant === u.Jc.GreyRedditNoNsfw || e.d2xPdpSideRailRecsVariant === u.Jc.LargeImagePreview ? e.reredditButtons : [];
+					const t = e.d2xPdpSideRailRecsVariant === u.Kc.GreyRereddit || e.d2xPdpSideRailRecsVariant === u.Kc.GreyRedditNoNsfw || e.d2xPdpSideRailRecsVariant === u.Kc.LargeImagePreview ? e.reredditButtons : [];
 					return r.a.createElement(S, {
 						reredditContent: t
 					})
@@ -1161,8 +1161,8 @@
 				C = s.n(O);
 			const k = Object(h.c)({
 				isLoggedIn: S.Q,
-				subreddit: E.U,
-				subredditAboutInfo: E.v
+				subreddit: E.V,
+				subredditAboutInfo: E.w
 			});
 			class j extends r.a.Component {
 				constructor() {
@@ -1522,7 +1522,7 @@
 						} = t;
 						return Object(_.D)(e, s, n, r)
 					}),
-					subredditsById: y.bb,
+					subredditsById: y.cb,
 					viewportDataLoaded: T.a,
 					pageReferrer: p.V,
 					postListPlaceholderComponent: () => g.a,
@@ -2045,8 +2045,8 @@
 				z = s.n(J);
 			const {
 				fbt: U
-			} = s("./node_modules/fbt/lib/FbtPublic.js"), q = 5;
-			class K extends r.a.Component {
+			} = s("./node_modules/fbt/lib/FbtPublic.js"), K = 5;
+			class q extends r.a.Component {
 				constructor() {
 					super(...arguments), this.onClick = () => {
 						const {
@@ -2062,7 +2062,7 @@
 						relatedTopics: t
 					} = this.props.relationship;
 					return r.a.createElement(y, {
-						limit: q,
+						limit: K,
 						title: e,
 						topics: t
 					}, this.renderSeeMoreButton())
@@ -2072,7 +2072,7 @@
 						namePlural: e,
 						relatedTopics: t
 					} = this.props.relationship;
-					return t.length < q ? null : r.a.createElement(w.a, {
+					return t.length < K ? null : r.a.createElement(w.a, {
 						onClick: this.onClick,
 						to: "#"
 					}, r.a.createElement(I.r, {
@@ -2086,7 +2086,7 @@
 					})))
 				}
 			}
-			var Y = K,
+			var Y = q,
 				Q = s("./src/lib/prettyPrintNumber/index.ts"),
 				Z = s("./src/reddit/components/Flair/index.tsx"),
 				X = s("./src/reddit/components/SubredditIcon/index.tsx"),
@@ -2102,7 +2102,7 @@
 				fbt: ae
 			} = s("./node_modules/fbt/lib/FbtPublic.js"), ce = Object(i.c)({
 				isLoggedIn: re.Q,
-				subreddit: ne.U,
+				subreddit: ne.V,
 				subredditAboutInfo: (e, t) => {
 					let {
 						subredditId: s
@@ -2454,11 +2454,11 @@
 				c = s("./node_modules/reselect/es/index.js");
 			const d = Object(c.a)(e => Object(r.c)(e, {
 					experimentEligibilitySelector: e => Object(a.h)(e) && Object(i.f)(e),
-					experimentName: n.nc
+					experimentName: n.oc
 				}), o.a),
 				l = Object(c.a)(e => Object(r.c)(e, {
 					experimentEligibilitySelector: e => !Object(a.h)(e) && Object(i.f)(e),
-					experimentName: n.mc
+					experimentName: n.nc
 				}), o.a),
 				u = Object(c.a)(d, l, (e, t) => e || t),
 				m = Object(c.a)(d, l, (e, t) => !(!e && !t))
@@ -2496,7 +2496,7 @@
 			const c = (e, t) => {
 					const s = e.focusedVerticals.interactedSubredditIds && e.focusedVerticals.interactedSubredditIds[t];
 					if (s) {
-						const t = Object(o.U)(e, {
+						const t = Object(o.V)(e, {
 							subredditId: s
 						});
 						return t && t.displayText || ""
@@ -2509,14 +2509,14 @@
 				m = Object(n.a)((e, t) => {
 					const s = p(e, t);
 					if (!s) return u;
-					const n = Object(o.Y)(e, {
+					const n = Object(o.Z)(e, {
 						subredditName: s.name
 					});
 					return n && n.postIds && n.postIds.length ? n.postIds : u
 				}),
 				p = (e, t) => {
 					const s = e.focusedVerticals.recommendedSubredditIds && e.focusedVerticals.recommendedSubredditIds[t];
-					return s ? Object(o.U)(e, {
+					return s ? Object(o.V)(e, {
 						subredditId: s
 					}) : null
 				},
@@ -2587,4 +2587,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Topic.e6471bef61a85f71249c.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Topic.46278b389b2acf7808ef.js.map

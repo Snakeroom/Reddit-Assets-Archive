@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/BannedUserModal.3e2e6f595cab3ee9b180.js
-// Retrieved at 6/1/2022, 6:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/BannedUserModal.bea3d869a767556a31d7.js
+// Retrieved at 7/28/2022, 11:00:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["BannedUserModal"], {
 		"./src/reddit/actions/subredditModeration/ban.ts": function(e, t, n) {
@@ -271,8 +271,8 @@
 					banned: K
 				}
 			});
-			const z = Object(o.a)(k.s),
-				V = Object(o.a)(k.r),
+			const V = Object(o.a)(k.s),
+				z = Object(o.a)(k.r),
 				Y = Object(o.a)(k.q),
 				$ = function(e) {
 					let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : {};
@@ -285,13 +285,13 @@
 							i = Object(C.e)(e, d),
 							l = o.features.banned.fetchedTokens[i];
 						if (o.features.banned.api.pending[i] || l) return;
-						n(z({
+						n(V({
 							subredditId: e,
 							fetchedToken: d
 						}));
 						const c = o.subreddits.models[e].name,
 							u = await x(a(), c, t);
-						u.ok ? n(V({
+						u.ok ? n(z({
 							...u.body,
 							fetchedToken: d
 						})) : n(Y({
@@ -396,10 +396,10 @@
 				}, ie = (e, t) => async (n, s) => {
 					const r = s();
 					await Promise.all([(async () => {
-						if (!Object(S.b)(u.a.BAN_USER)(r) && !Object(w.R)(r, {
+						if (!Object(S.b)(u.a.BAN_USER)(r) && !Object(w.S)(r, {
 								subredditId: e
 							})) {
-							const t = Object(w.U)(r, {
+							const t = Object(w.V)(r, {
 								subredditId: e
 							});
 							await n(Object(l.o)(t.name))
@@ -498,7 +498,7 @@
 					hk: "2To19l"
 				})],
 				f = Object(d.c)({
-					subredditRules: m.T
+					subredditRules: m.U
 				}),
 				g = Object(o.b)(f);
 			class x extends a.a.Component {
@@ -1043,4 +1043,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/BannedUserModal.3e2e6f595cab3ee9b180.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/BannedUserModal.bea3d869a767556a31d7.js.map

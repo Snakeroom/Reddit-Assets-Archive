@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ChatPost.7336b6e820ef44706449.js
-// Retrieved at 7/28/2022, 9:50:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ChatPost.06650b35ba169ab417b8.js
+// Retrieved at 7/28/2022, 11:00:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ChatPost"], {
 		"./node_modules/lodash/_baseDelay.js": function(e, t) {
@@ -226,7 +226,7 @@
 								type: u.error ? u.error.type : "Unknown error",
 								username: e
 							},
-							s = Object(d.e)(m) && "REBLOCK_RATE_LIMIT" === u.body.reason;
+							s = Object(d.f)(m) && "REBLOCK_RATE_LIMIT" === u.body.reason;
 						t(C(n)), t(s ? r.f({
 							id: p,
 							kind: c.b.Error,
@@ -924,7 +924,7 @@
 						return !!Object(je.q)(e, n.subredditId, n.authorId).length
 					},
 					subredditDisplayText: (e, t) => {
-						const n = Object(Re.J)(e, {
+						const n = Object(Re.K)(e, {
 							commentId: t.comment.id
 						});
 						return n ? n.displayText : ""
@@ -3160,9 +3160,9 @@
 				Jn = n("./src/reddit/constants/experiments.ts"),
 				Xn = n("./src/reddit/helpers/chooseVariant/index.ts");
 			const Zn = e => Object(Xn.c)(e, {
-					experimentName: Jn.zb,
+					experimentName: Jn.Ab,
 					experimentEligibilitySelector: Xn.a
-				}) === Jn.vb.Enabled,
+				}) === Jn.wb.Enabled,
 				Yn = (e, t) => {
 					let {
 						commentId: n
@@ -5424,4 +5424,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatPost.7336b6e820ef44706449.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatPost.06650b35ba169ab417b8.js.map
