@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-ModHub-TrafficStats.e5acf91f23d212a84350.js
-// Retrieved at 6/21/2022, 7:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-ModHub-TrafficStats.82164eaeafb9d9abc23b.js
+// Retrieved at 7/28/2022, 3:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-ModHub-TrafficStats"], {
 		"./src/reddit/components/ModHub/TrafficStats/ChartStats/StatBlock/index.m.less": function(e, t, a) {
@@ -93,9 +93,9 @@
 			})), a.d(t, "k", (function() {
 				return v
 			})), a.d(t, "g", (function() {
-				return g
-			})), a.d(t, "j", (function() {
 				return N
+			})), a.d(t, "j", (function() {
+				return g
 			})), a.d(t, "i", (function() {
 				return D
 			})), a.d(t, "p", (function() {
@@ -188,8 +188,8 @@
 						year: a ? "2-digit" : void 0
 					})
 				},
-				g = e => Array.isArray(e) ? e.reduce((e, t) => e + parseInt(t), 0) : parseInt(e),
-				N = e => {
+				N = e => Array.isArray(e) ? e.reduce((e, t) => e + parseInt(t), 0) : parseInt(e),
+				g = e => {
 					e = e.slice(0, m.a - 1);
 					const t = M(s.Day, !0),
 						a = new Array(u.length).fill(0),
@@ -286,53 +286,53 @@
 					}),
 					onClick: e.onClick
 				}, Object(m.m)(e.label)),
-				g = a("./src/lib/prettyPrintNumber/index.ts"),
-				N = a("./src/reddit/components/ModHub/TrafficStats/ChartStats/StatBlock/index.m.less"),
-				D = a.n(N);
+				N = a("./src/lib/prettyPrintNumber/index.ts"),
+				g = a("./src/reddit/components/ModHub/TrafficStats/ChartStats/StatBlock/index.m.less"),
+				D = a.n(g);
 			const {
 				fbt: M
-			} = a("./node_modules/fbt/lib/FbtPublic.js");
-			var E = e => i.a.createElement("span", {
+			} = a("./node_modules/fbt/lib/FbtPublic.js"), E = (e, t) => {
+				const a = e.length;
+				return e.slice(a - t - 1, a).reduce((e, t) => e + t, 0)
+			};
+			var _ = e => i.a.createElement("span", {
 					className: D.a.StatBlock
 				}, i.a.createElement("div", {
 					className: D.a.contentContainer
 				}, i.a.createElement("div", {
 					className: D.a.value
-				}, e.trafficStats ? Object(g.a)(((e, t, a) => {
+				}, e.trafficStats ? Object(N.a)(((e, t, a) => {
 					if (t === m.d.Members && e === m.b.Hour) return "N/A";
 					const s = t === m.d.Members ? a[m.e.Members] : a[m.e[t]][m.c[e]].total;
 					let n;
 					if (e === m.b.Hour) n = 24;
 					else if (e === m.b.Day) n = 7;
 					else if (e === m.b.Month) {
-						if (t !== m.d.Members) {
-							return s[m.a[e] - 1]
-						} {
-							const e = new Date;
-							n = new Date(e.getFullYear(), e.getMonth(), 0).getDate()
+						const a = new Date,
+							i = a.getMonth() + 1;
+						if (t === m.d.Members) return n = a.getDate(), E(s, n - 1); {
+							const t = m.a[e];
+							return Object(m.s)(s, i)[t - 1]
 						}
 					}
-					return ((e, t) => {
-						const a = e.length;
-						return e.slice(a - t - 1, a).reduce((e, t) => e + t, 0)
-					})(s, n)
+					return E(s, n)
 				})(e.statsTime, e.statsView, e.trafficStats).toString()) : "-"), i.a.createElement("div", {
 					className: D.a.timeFrame
 				}, M._("Total - {timeFrame}", [M._param("timeFrame", e.timeFrame)], {
 					hk: "1zxYNy"
 				})))),
-				_ = a("./src/reddit/components/ModHub/TrafficStats/ChartStats/index.m.less"),
-				T = a.n(_);
-			const k = {
+				T = a("./src/reddit/components/ModHub/TrafficStats/ChartStats/index.m.less"),
+				k = a.n(T);
+			const O = {
 				[m.b.Hour]: 54,
 				[m.b.Day]: 7,
 				[m.b.Month]: 12
 			};
-			class O extends i.a.Component {
+			class C extends i.a.Component {
 				constructor(e) {
 					super(e), this.changeTime = e => {
 						const t = m.a[e],
-							a = k[e];
+							a = O[e];
 						this.setState({
 							statsTime: e,
 							windowSize: a,
@@ -342,7 +342,7 @@
 					}, this.changeView = e => {
 						const t = e === m.d.Members ? m.b.Day : this.state.statsTime,
 							a = m.a[t],
-							s = k[t];
+							s = O[t];
 						this.setState({
 							statsTime: t,
 							statsView: e,
@@ -366,7 +366,7 @@
 							windowEnd: a
 						})
 					};
-					const t = k[m.b.Day],
+					const t = O[m.b.Day],
 						a = m.a[m.b.Day];
 					this.state = {
 						statsTime: m.b.Day,
@@ -382,44 +382,44 @@
 						statsView: t
 					} = this.state, a = m.a[e], n = 0 === this.state.windowStart || e === m.b.Month, r = this.state.windowEnd === a || e === m.b.Month;
 					return i.a.createElement("div", {
-						className: T.a.contentContainer
+						className: k.a.contentContainer
 					}, i.a.createElement("div", {
-						className: T.a.viewNav
+						className: k.a.viewNav
 					}, i.a.createElement(v, {
-						className: T.a.NavItem,
+						className: k.a.NavItem,
 						label: m.d.Pageviews,
 						isSelected: t === m.d.Pageviews,
-						isSelectedStyles: T.a.NavItemSelected,
+						isSelectedStyles: k.a.NavItemSelected,
 						onClick: () => this.changeView(m.d.Pageviews)
 					}), i.a.createElement(v, {
-						className: T.a.NavItem,
+						className: k.a.NavItem,
 						label: m.d.Uniques,
 						isSelected: t === m.d.Uniques,
-						isSelectedStyles: T.a.NavItemSelected,
+						isSelectedStyles: k.a.NavItemSelected,
 						onClick: () => this.changeView(m.d.Uniques)
 					}), i.a.createElement(v, {
-						className: T.a.NavItem,
+						className: k.a.NavItem,
 						label: m.d.Members,
 						isSelected: t === m.d.Members,
-						isSelectedStyles: T.a.NavItemSelected,
+						isSelectedStyles: k.a.NavItemSelected,
 						onClick: () => this.changeView(m.d.Members)
 					})), i.a.createElement("div", {
-						className: T.a.statContainer
-					}, i.a.createElement(E, {
+						className: k.a.statContainer
+					}, i.a.createElement(_, {
 						statsTime: m.b.Hour,
 						statsView: t,
 						timeFrame: s.fbt._("Last 24 hours", null, {
 							hk: "2wYQAC"
 						}),
 						trafficStats: this.props.trafficStats
-					}), i.a.createElement(E, {
+					}), i.a.createElement(_, {
 						statsTime: m.b.Day,
 						statsView: t,
 						timeFrame: s.fbt._("Last 7 days", null, {
 							hk: "1FUPzN"
 						}),
 						trafficStats: this.props.trafficStats
-					}), i.a.createElement(E, {
+					}), i.a.createElement(_, {
 						statsTime: m.b.Month,
 						statsView: t,
 						timeFrame: s.fbt._("Last month", null, {
@@ -427,11 +427,11 @@
 						}),
 						trafficStats: this.props.trafficStats
 					})), i.a.createElement("div", {
-						className: T.a.chartContainer
+						className: k.a.chartContainer
 					}, i.a.createElement("span", {
-						className: T.a.yAxis
+						className: k.a.yAxis
 					}, Object(m.m)(t)), (this.props.isTrafficStatsPending || !this.props.trafficStats) && i.a.createElement("div", {
-						className: T.a.chartPlaceholder
+						className: k.a.chartPlaceholder
 					}), this.props.trafficStats && i.a.createElement(y, {
 						data: this.props.trafficStats,
 						statsView: t,
@@ -439,67 +439,67 @@
 						windowEnd: this.state.windowEnd,
 						windowStart: this.state.windowStart
 					})), i.a.createElement("div", {
-						className: T.a.chartNav
+						className: k.a.chartNav
 					}, e !== m.b.Month && i.a.createElement("button", {
-						className: T.a.buttonLeft,
+						className: k.a.buttonLeft,
 						disabled: n,
 						onClick: this.shiftWindowLeft
 					}, i.a.createElement(w.a, {
-						className: Object(l.a)(T.a.ArrowLeft, {
-							[T.a.isDisabled]: n
+						className: Object(l.a)(k.a.ArrowLeft, {
+							[k.a.isDisabled]: n
 						})
 					})), t !== m.d.Members && i.a.createElement("span", {
-						className: Object(l.a)(T.a.buttonGroup, {
-							[T.a.hideNavArrows]: e === m.b.Month
+						className: Object(l.a)(k.a.buttonGroup, {
+							[k.a.hideNavArrows]: e === m.b.Month
 						})
 					}, i.a.createElement(v, {
-						className: T.a.navButton,
+						className: k.a.navButton,
 						label: m.b.Hour,
 						isSelected: e === m.b.Hour,
-						isSelectedStyles: T.a.navButtonSelected,
+						isSelectedStyles: k.a.navButtonSelected,
 						onClick: () => this.changeTime(m.b.Hour)
 					}), i.a.createElement(v, {
-						className: T.a.navButton,
+						className: k.a.navButton,
 						label: m.b.Day,
 						isSelected: e === m.b.Day,
-						isSelectedStyles: T.a.navButtonSelected,
+						isSelectedStyles: k.a.navButtonSelected,
 						onClick: () => this.changeTime(m.b.Day)
 					}), i.a.createElement(v, {
-						className: T.a.navButton,
+						className: k.a.navButton,
 						label: m.b.Month,
 						isSelected: e === m.b.Month,
-						isSelectedStyles: T.a.navButtonSelected,
+						isSelectedStyles: k.a.navButtonSelected,
 						onClick: () => this.changeTime(m.b.Month)
 					})), e !== m.b.Month && i.a.createElement("button", {
-						className: Object(l.a)(T.a.buttonRight, {
-							[T.a.hideButtons]: t === m.d.Members
+						className: Object(l.a)(k.a.buttonRight, {
+							[k.a.hideButtons]: t === m.d.Members
 						}),
 						disabled: r,
 						onClick: this.shiftWindowRight
 					}, i.a.createElement(w.a, {
-						className: Object(l.a)(T.a.ArrowRight, {
-							[T.a.isDisabled]: r
+						className: Object(l.a)(k.a.ArrowRight, {
+							[k.a.isDisabled]: r
 						})
 					}))))
 				}
 			}
-			var C = Object(d.c)(O),
-				L = a("./src/reddit/icons/svgs/Dropdown/index.tsx"),
-				x = a("./src/reddit/layout/twoCol/ExpandLeft/index.tsx"),
-				j = a("./src/reddit/components/ModHub/TrafficStats/DataTable/index.m.less"),
-				A = a.n(j);
-			const H = e => i.a.createElement("div", {
-				className: A.a.dataRow
+			var L = Object(d.c)(C),
+				x = a("./src/reddit/icons/svgs/Dropdown/index.tsx"),
+				j = a("./src/reddit/layout/twoCol/ExpandLeft/index.tsx"),
+				A = a("./src/reddit/components/ModHub/TrafficStats/DataTable/index.m.less"),
+				H = a.n(A);
+			const P = e => i.a.createElement("div", {
+				className: H.a.dataRow
 			}, i.a.createElement("span", {
-				className: A.a.date
+				className: H.a.date
 			}, e.date), i.a.createElement("span", {
-				className: A.a.pageviews
-			}, Object(g.a)(e.pageViews.toString())), i.a.createElement("span", {
-				className: A.a.uniques
-			}, Object(g.a)(e.uniques.toString())), i.a.createElement("span", {
-				className: A.a.members
-			}, Object(g.a)(e.members.toString())));
-			class P extends i.a.PureComponent {
+				className: H.a.pageviews
+			}, Object(N.a)(e.pageViews.toString())), i.a.createElement("span", {
+				className: H.a.uniques
+			}, Object(N.a)(e.uniques.toString())), i.a.createElement("span", {
+				className: H.a.members
+			}, Object(N.a)(e.members.toString())));
+			class F extends i.a.PureComponent {
 				constructor(e) {
 					super(e), this.changeDataDirection = () => this.setState({
 						isDirectionReversed: !this.state.isDirectionReversed
@@ -549,53 +549,53 @@
 						timeFrame: t
 					} = this.state, a = t === m.f.Month ? m.c.Month : m.c.Day, n = this.getDataArray(m.d.Members, t, a), r = this.getDataArray(m.d.Pageviews, t, a), c = this.getDataArray(m.d.Uniques, t, a), o = this.getDateLabelArray();
 					return i.a.createElement("div", {
-						className: A.a.contentContainer
+						className: H.a.contentContainer
 					}, i.a.createElement("div", {
-						className: A.a.viewNav
+						className: H.a.viewNav
 					}, i.a.createElement(v, {
-						className: A.a.NavItem,
+						className: H.a.NavItem,
 						label: m.f.Day,
 						isSelected: t === m.f.Day,
-						isSelectedStyles: A.a.NavItemSelected,
+						isSelectedStyles: H.a.NavItemSelected,
 						onClick: () => this.changeTimeFrame(m.f.Day)
 					}), i.a.createElement(v, {
-						className: A.a.NavItem,
+						className: H.a.NavItem,
 						label: m.f.DayOfWeek,
 						isSelected: t === m.f.DayOfWeek,
-						isSelectedStyles: A.a.NavItemSelected,
+						isSelectedStyles: H.a.NavItemSelected,
 						onClick: () => this.changeTimeFrame(m.f.DayOfWeek)
 					}), i.a.createElement(v, {
-						className: A.a.NavItem,
+						className: H.a.NavItem,
 						label: m.f.Month,
 						isSelected: t === m.f.Month,
-						isSelectedStyles: A.a.NavItemSelected,
+						isSelectedStyles: H.a.NavItemSelected,
 						onClick: () => this.changeTimeFrame(m.f.Month)
 					})), i.a.createElement("div", {
-						className: A.a.dataBar
+						className: H.a.dataBar
 					}, i.a.createElement("button", {
-						className: A.a.dropdownButton,
+						className: H.a.dropdownButton,
 						onClick: this.changeDataDirection
-					}, i.a.createElement(x.a, {
-						className: A.a.timeDropdown
+					}, i.a.createElement(j.a, {
+						className: H.a.timeDropdown
 					}, i.a.createElement("span", {
-						className: A.a.timeLabel
-					}, Object(m.m)(t)), i.a.createElement(L.b, {
-						className: Object(l.a)(A.a.dropdownIcon, {
-							[A.a.iconUp]: e
+						className: H.a.timeLabel
+					}, Object(m.m)(t)), i.a.createElement(x.b, {
+						className: Object(l.a)(H.a.dropdownIcon, {
+							[H.a.iconUp]: e
 						})
 					}))), i.a.createElement("span", {
-						className: A.a.pageviewsCol
+						className: H.a.pageviewsCol
 					}, s.fbt._("Pageviews", null, {
 						hk: "1Gsorq"
 					})), i.a.createElement("span", {
-						className: A.a.uniquesCol
+						className: H.a.uniquesCol
 					}, s.fbt._("Uniques", null, {
 						hk: "4kUp7T"
 					})), i.a.createElement("span", {
-						className: A.a.membersCol
+						className: H.a.membersCol
 					}, s.fbt._("Members joined", null, {
 						hk: "2v6tbf"
-					}))), this.props.trafficStats && o.map((e, t) => i.a.createElement(H, {
+					}))), this.props.trafficStats && o.map((e, t) => i.a.createElement(P, {
 						date: e,
 						key: e,
 						pageViews: r[t],
@@ -604,31 +604,31 @@
 					})))
 				}
 			}
-			var F = Object(d.c)(P),
-				I = a("./src/reddit/components/ModHub/TrafficStats/index.m.less"),
-				W = a.n(I);
-			const q = Object(c.c)({
+			var I = Object(d.c)(F),
+				W = a("./src/reddit/components/ModHub/TrafficStats/index.m.less"),
+				q = a.n(W);
+			const V = Object(c.c)({
 					trafficStats: e => e.trafficStats ? e.trafficStats.trafficStats : null,
 					isTrafficStatsPending: e => e.trafficStats.pending
 				}),
-				V = Object(r.b)(q);
-			t.default = V(e => i.a.createElement("div", {
-				className: W.a.trafficStats
+				B = Object(r.b)(V);
+			t.default = B(e => i.a.createElement("div", {
+				className: q.a.trafficStats
 			}, i.a.createElement("span", {
-				className: W.a.titleText
+				className: q.a.titleText
 			}, i.a.createElement(o.b, null, s.fbt._("Traffic Stats", null, {
 				hk: "1TAYOH"
 			})), i.a.createElement("span", {
-				className: W.a.updateText
+				className: q.a.updateText
 			}, s.fbt._("updating every hour", null, {
 				hk: "4h5onW"
-			}))), i.a.createElement(C, {
+			}))), i.a.createElement(L, {
 				isTrafficStatsPending: e.isTrafficStatsPending,
 				trafficStats: e.trafficStats
-			}), i.a.createElement(F, {
+			}), i.a.createElement(I, {
 				trafficStats: e.trafficStats
 			})))
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ModHub-TrafficStats.e5acf91f23d212a84350.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ModHub-TrafficStats.82164eaeafb9d9abc23b.js.map

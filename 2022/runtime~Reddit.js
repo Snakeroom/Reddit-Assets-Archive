@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/runtime~Reddit.18e070c4de71f22408fe.js
-// Retrieved at 7/28/2022, 2:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/runtime~Reddit.1b7e7dc20f442fb3f329.js
+// Retrieved at 7/28/2022, 3:20:04 PM by Reddit Dataminer v1.0.0
 ! function(e) {
 	function o(o) {
 		for (var a, n, r = o[0], s = o[1], c = o[2], l = 0, b = []; l < r.length; l++) n = r[l], Object.prototype.hasOwnProperty.call(d, n) && d[n] && b.push(d[n][0]), d[n] = 0;
@@ -1658,7 +1658,7 @@
 						"reddit-components-ModHub-ChatSettings": "d01d4a908cabe0534c96",
 						"reddit-components-ModHub-Content-ModQueue": "08474beee31e1c98743d",
 						"reddit-components-ModHub-ContentControls": "ec52b4a4547dcd3d176c",
-						"reddit-components-ModHub-TrafficStats": "e5acf91f23d212a84350",
+						"reddit-components-ModHub-TrafficStats": "82164eaeafb9d9abc23b",
 						"reddit-components-ModHub-flairs-PostFlairManagement~reddit-components-ModHub-flairs-UserFlairManagement": "9122367dbc7a0ad463b5",
 						"reddit-components-ModHub-flairs-PostFlairManagement": "1ae10b54e690784d956e",
 						"reddit-components-ModHub-flairs-UserFlairManagement": "0b431b4cce6d63a62c1b",
@@ -1691,7 +1691,7 @@
 						PowerupsGifsTooltip: "fedc15c2a47589a57bd0",
 						SpecialMembershipsGifsTooltip: "03fb1401f1d19b84f1d1",
 						"chat-components-OverlayReport-FormBuilder": "666cdec23b84a8cd77dc",
-						ModStatsChart: "403fad1cbada668de819",
+						ModStatsChart: "d08d83dd5208d7a69478",
 						SocialLinkEditor: "14f5bc078130ad9396af"
 					} [e] + ".js"
 				}(e);
@@ -1758,4 +1758,4 @@
 	var m = c;
 	t()
 }([]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/runtime~Reddit.18e070c4de71f22408fe.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/runtime~Reddit.1b7e7dc20f442fb3f329.js.map
