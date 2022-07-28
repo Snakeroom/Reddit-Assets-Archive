@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/MarketplaceClaimModal.873cb35f62a78d12624e.js
-// Retrieved at 6/28/2022, 10:00:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/MarketplaceClaimModal.02874c5aab7bf9ad3cf8.js
+// Retrieved at 7/28/2022, 1:50:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["MarketplaceClaimModal"], {
 		"./src/reddit/actions/economics/marketplace/constants.ts": function(e, t, n) {
@@ -100,15 +100,15 @@
 			const l = Object(i.a)(d.b),
 				u = Object(i.a)(d.a);
 			var m = n("./src/reddit/actions/snoovatarModal.ts"),
-				p = n("./src/reddit/components/Crypto/CryptoComponentsConfigProvider.tsx"),
-				E = n("./src/reddit/helpers/avatarRouting.ts"),
+				E = n("./src/reddit/components/Crypto/CryptoComponentsConfigProvider.tsx"),
+				p = n("./src/reddit/helpers/avatarRouting.ts"),
 				_ = n("./src/reddit/selectors/activeModal.ts"),
 				O = n("./src/reddit/selectors/user.ts"),
-				v = n("./src/reddit/components/Econ/Marketplace/ClaimModal/index.m.less"),
-				f = n.n(v);
+				f = n("./src/reddit/components/Econ/Marketplace/ClaimModal/index.m.less"),
+				C = n.n(f);
 
-			function C() {
-				return (C = Object.assign || function(e) {
+			function v() {
+				return (v = Object.assign || function(e) {
 					for (var t = 1; t < arguments.length; t++) {
 						var n = arguments[t];
 						for (var r in n) Object.prototype.hasOwnProperty.call(n, r) && (e[r] = n[r])
@@ -128,25 +128,14 @@
 						a = Object(s.d)();
 					if (!n || !r) return null;
 					return o.a.createElement("div", {
-						className: f.a.container
-					}, o.a.createElement(p.a, null, o.a.createElement(c.b, {
+						className: C.a.container
+					}, o.a.createElement(E.a, null, o.a.createElement(c.b, {
 						onClose: t,
 						userId: n,
 						onViewAvatar: () => {
 							t(), a(Object(m.b)({
-								activeTab: E.a.ME,
+								activeTab: p.a.ME,
 								activeMeSubpage: "MY_STUFF"
-							}))
-						},
-						onSetAsAvatar: e => {
-							t(), a(Object(m.b)({
-								activeTab: E.a.ME,
-								activeMeSubpage: "MY_STUFF",
-								activeDetails: {
-									id: e,
-									equip: !0,
-									save: !0
-								}
 							}))
 						},
 						claimId: r,
@@ -161,10 +150,10 @@
 					})))
 				},
 				A = Object(r.a)(b);
-			t.default = e => o.a.createElement(A, C({
+			t.default = e => o.a.createElement(A, v({
 				withOverlay: !0,
 				onOverlayClick: e.onClose,
-				className: f.a.modal
+				className: C.a.modal
 			}, e))
 		},
 		"./src/reddit/helpers/avatarRouting.ts": function(e, t, n) {
@@ -187,4 +176,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/MarketplaceClaimModal.873cb35f62a78d12624e.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/MarketplaceClaimModal.02874c5aab7bf9ad3cf8.js.map

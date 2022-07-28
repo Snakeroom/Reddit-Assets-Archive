@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/runtime~Reddit.269c9af06dd0df869b37.js
-// Retrieved at 7/28/2022, 11:00:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/runtime~Reddit.2c6469904e44207f650e.js
+// Retrieved at 7/28/2022, 1:50:06 PM by Reddit Dataminer v1.0.0
 ! function(e) {
 	function o(o) {
 		for (var a, n, r = o[0], s = o[1], c = o[2], l = 0, b = []; l < r.length; l++) n = r[l], Object.prototype.hasOwnProperty.call(d, n) && d[n] && b.push(d[n][0]), d[n] = 0;
@@ -652,9 +652,9 @@
 					2: "31d6cfe0d16ae931b73c",
 					3: "31d6cfe0d16ae931b73c",
 					4: "31d6cfe0d16ae931b73c",
-					5: "80ec1510327fcb63cde4",
+					5: "4fdd514a3dcfa8f320ac",
 					6: "548f1977353796700fc5",
-					7: "539e134a8a262b34ff62",
+					7: "42732e144b96ac14d614",
 					8: "c9e76ea1d586f2813b5e",
 					9: "31d6cfe0d16ae931b73c",
 					"vendors~MarketplaceClaimModal~MarketplaceInFeedUnit": "31d6cfe0d16ae931b73c",
@@ -1352,17 +1352,17 @@
 						SocialLinkEditor: "SocialLinkEditor"
 					} [e] || e) + "." + {
 						0: "03dae2c538e2ee68618c",
-						1: "6afff642f09000ea2602",
+						1: "ae3ed7b47a33362d1fb0",
 						2: "533258fec9bdd386d2e4",
 						3: "55b68fcc06f8f4839817",
-						4: "262bb6faa6b838bf3945",
-						5: "b7cbc1f0a9423556b507",
+						4: "34c5010d3122be632614",
+						5: "b7b7ccd456a7fe105fee",
 						6: "31564790dcbb8638aa4b",
-						7: "d6e3df79e7a7bac772c5",
+						7: "63437392f3d5a56bed42",
 						8: "e76de42a080ba8aa8a56",
 						9: "acf0ee91abfc9bc18704",
-						"vendors~MarketplaceClaimModal~MarketplaceInFeedUnit": "544ea45dea7bb4fb36c0",
-						MarketplaceClaimModal: "873cb35f62a78d12624e",
+						"vendors~MarketplaceClaimModal~MarketplaceInFeedUnit": "b157e77805f9c159aa1a",
+						MarketplaceClaimModal: "02874c5aab7bf9ad3cf8",
 						GovernanceTransferPointsModal: "6e8f4b94e1182b3cd845",
 						"reddit-components-Governance-TransactionModals-BurnPointsModal~reddit-components-Governance-Transact~8f11de67": "dba08f80b8fbefd10b72",
 						"reddit-components-Governance-TransactionModals-BurnPointsModal": "414c58da6abc256843b3",
@@ -1496,16 +1496,16 @@
 						"reddit-components-Econ-Prediction-EndTimeModal": "9a2d754b747ec17e61a0",
 						"reddit-components-PostCreationForm-PredictionEditor-InactivityModal": "48433ee0bec18632bd07",
 						"reddit-components-PostCreationForm-PredictionEditor-StartTournamentLimitationModal": "58ddb94920a2ab581fa9",
-						"translations/bn_BD-json": "98be5f949662bbb0789a",
-						"translations/de_DE-json": "162f7ea43bd907a4eb0f",
-						"translations/es_ES-json": "69525aaecdbe6ce14c1f",
-						"translations/es_MX-json": "0db9c87589c3a228fbb0",
-						"translations/fr_FR-json": "df71426267f80c26d3e9",
-						"translations/hi_IN-json": "22132534151c77770840",
-						"translations/it_IT-json": "c92a55532af34e507cbc",
-						"translations/pseudo-json": "be1296fdd3163c06f224",
-						"translations/pt_BR-json": "a81ed613e74d92ddc00f",
-						"translations/pt_PT-json": "1f8e08177784eb348fee",
+						"translations/bn_BD-json": "eb2ef675d1719d36d0c3",
+						"translations/de_DE-json": "bacf38be23f0ac7dac08",
+						"translations/es_ES-json": "088abd30083d24f1036f",
+						"translations/es_MX-json": "d8dfd4235c601285dc98",
+						"translations/fr_FR-json": "e0cedb596ceb80b4bff6",
+						"translations/hi_IN-json": "ae11a09f376a25f9dac2",
+						"translations/it_IT-json": "94eaa72215909006b98e",
+						"translations/pseudo-json": "dfbafa68a704ac9fc800",
+						"translations/pt_BR-json": "01bc1e6d15552bbd4628",
+						"translations/pt_PT-json": "21024fada24d17ce440a",
 						"vendors~AdminPanel": "eae9f345b12b82989d37",
 						AdminPanel: "938266e90ff4c695665a",
 						"vendors~ChatMessageInput~CommentRichUnit~FlairEdit~MembershipPaywallPage~PostCreation~PostRichUnit~R~9deab1a0": "201e0a53b4d00907b96f",
@@ -1599,7 +1599,7 @@
 						"reddit-components-Econ-PredictionLeaderboard-Sidebar": "3ae75bc6e5d7070b0bdf",
 						PennyPurchaseModal: "c9d16c2d33e989c52463",
 						editCollectionModal: "af8d792b35140d338f0c",
-						MarketplaceInFeedUnit: "597dd5b6c16373c6dd5c",
+						MarketplaceInFeedUnit: "99aa6d6913d5b1666f61",
 						NewCommunityProgress: "6deac155352b4463be63",
 						FeaturedLiveEntrypointAnnouncement: "a2b85e1c34c92404969c",
 						FeaturedLiveEntrypointAnnouncementsCarousel: "b6536cb40a45c8dc367c",
@@ -1758,4 +1758,4 @@
 	var m = c;
 	t()
 }([]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/runtime~Reddit.269c9af06dd0df869b37.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/runtime~Reddit.2c6469904e44207f650e.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/MarketplaceInFeedUnit.597dd5b6c16373c6dd5c.js
-// Retrieved at 6/28/2022, 10:00:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/MarketplaceInFeedUnit.99aa6d6913d5b1666f61.js
+// Retrieved at 7/28/2022, 1:50:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["MarketplaceInFeedUnit"], {
 		"./src/reddit/components/Crypto/CryptoComponentsConfigProvider.tsx": function(e, t, n) {
@@ -98,8 +98,8 @@
 				m = n("./src/reddit/constants/modals.ts"),
 				p = n("./src/reddit/constants/postLayout.ts"),
 				f = n("./src/reddit/helpers/trackers/marketplace/claims.ts"),
-				k = n("./src/reddit/hooks/useLocalStorage.ts"),
-				_ = n("./src/reddit/hooks/usePreloadModal.ts"),
+				_ = n("./src/reddit/hooks/useLocalStorage.ts"),
+				k = n("./src/reddit/hooks/usePreloadModal.ts"),
 				b = n("./src/reddit/hooks/useTracking.ts"),
 				O = n("./src/reddit/selectors/gold/marketplace/claimFlow.ts"),
 				j = n("./src/reddit/components/ConfirmUserActionModal/index.tsx"),
@@ -126,8 +126,8 @@
 					})))], {
 						hk: "1lJ80A"
 					}),
-					cancelActionText: C._("Yes, I Don't Want It", null, {
-						hk: "4kIHcP"
+					cancelActionText: C._("I Don't Want It", null, {
+						hk: "4ehKZ1"
 					}),
 					actionText: C._("Go Back", null, {
 						hk: "4ckZOO"
@@ -146,8 +146,8 @@
 					h = Object(s.e)(O.a),
 					[x, C] = Object(o.useState)(!1),
 					[g, I] = Object(o.useState)(!1);
-				Object(_.a)(u.a);
-				const [y, A] = Object(k.a)("marketplaceClaimInFeedUnitDismissed", !1), [M, N] = Object(k.a)("marketplaceClaimInFeedUnitLoadCount", 0), L = Object(o.useRef)(M), F = L.current % 2 == 0;
+				Object(k.a)(u.a);
+				const [y, A] = Object(_.a)("marketplaceClaimInFeedUnitDismissed", !1), [M, N] = Object(_.a)("marketplaceClaimInFeedUnitLoadCount", 0), L = Object(o.useRef)(M), F = L.current % 2 == 0;
 				if (Object(o.useEffect)(() => {
 						y || N(L.current + 1)
 					}, [N, L, j, F, y]), !(null == h ? void 0 : h.id) || y || !F) return null;
@@ -251,4 +251,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/MarketplaceInFeedUnit.597dd5b6c16373c6dd5c.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/MarketplaceInFeedUnit.99aa6d6913d5b1666f61.js.map

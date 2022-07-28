@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/4.262bb6faa6b838bf3945.js
-// Retrieved at 7/19/2022, 9:40:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/4.34c5010d3122be632614.js
+// Retrieved at 7/28/2022, 1:50:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	[4], {
 		"./node_modules/@reddit/crypto/react/nft-product-card/index.es.js": function(e, t, n) {
@@ -7138,7 +7138,7 @@
 						var r = Bu(e, t);
 						r && n.definitions.push(r)
 					}))
-				}(Nu, "getNftDetails"), (xu = Eu || (Eu = {})).MINTED = "MINTED", xu.MINTING = "MINTING", xu.TRANSFERRING = "TRANSFERRING", (Cu = _u || (_u = {})).Marketplace = "marketplace", Cu.Avatar = "avatar", (Pu = Ou || (Ou = {})).Back = "back", Pu.Click = "click", Pu.Create = "create", Pu.Scroll = "scroll", Pu.Secure = "secure", Pu.Paid = "paid", Pu.View = "view", (Au = ju || (ju = {})).ClaimPostUnit = "claim_post_unit", Au.ClaimNft = "claim_nft", Au.BuyNft = "buy_nft", Au.CreateVault = "create_vault", Au.CompleteTransaction = "complete_transaction", Au.ListingFe = "listing_fe", Au.NftDetails = "nft_details", Au.PaymentError = "payment_error", Au.ProductDetailPage = "product_detail_page", Au.PdpDynamicCta = "pdp_dynamic_cta", Au.MarketplaceArtist = "marketplace_artist", Au.SecureVault = "secure_vault", Au.SelectionUi = "selection_ui", Au.Vault = "vault", Au.VaultConfirmation = "vault_confirmation", (Iu = Tu || (Tu = {})).ClaimFlow = "claim_flow", Iu.Purchase = "purchase", Iu.SetAvatar = "set_avatar", Iu.Transfer = "transfer", Iu.ViewNft = "view_nft", Iu.ImportCollectibleAvatar = "import_collectible_avatar", (Mu || (Mu = {})).ProductDetailPage = "product_detail_page", (Ru || (Ru = {})).Password = "password", (Du = Fu || (Fu = {})).New = "NEW", Du.ActionRequired = "ACTION_REQUIRED", Du.Pending = "PENDING", Du.Paid = "PAID", Du.Canceled = "CANCELED", Du.Rejected = "REJECTED", Du.Failed = "FAILED", Du.Refunded = "REFUNDED", (zu = Lu || (Lu = {})).AVAILABLE = "AVAILABLE", zu.SOLD_OUT = "SOLD_OUT", zu.EXPIRED = "EXPIRED", Lu.AVAILABLE, Lu.SOLD_OUT, Lu.EXPIRED;
+				}(Nu, "getNftDetails"), (xu = Eu || (Eu = {})).MINTED = "MINTED", xu.MINTING = "MINTING", xu.TRANSFERRING = "TRANSFERRING", (Cu = _u || (_u = {})).Marketplace = "marketplace", Cu.Avatar = "avatar", (Pu = Ou || (Ou = {})).Back = "back", Pu.Click = "click", Pu.Create = "create", Pu.Scroll = "scroll", Pu.Secure = "secure", Pu.Paid = "paid", Pu.View = "view", (Au = ju || (ju = {})).ClaimPostUnit = "claim_post_unit", Au.ClaimNft = "claim_nft", Au.BuyNft = "buy_nft", Au.CreateVault = "create_vault", Au.CompleteTransaction = "complete_transaction", Au.ListingFe = "listing_fe", Au.NftDetails = "nft_details", Au.PaymentError = "payment_error", Au.ProductDetailPage = "product_detail_page", Au.PdpDynamicCta = "pdp_dynamic_cta", Au.MarketplaceArtist = "marketplace_artist", Au.SecureVault = "secure_vault", Au.SelectionUi = "selection_ui", Au.Vault = "vault", Au.VaultConfirmation = "vault_confirmation", (Iu = Tu || (Tu = {})).ClaimFlow = "claim_flow", Iu.Purchase = "purchase", Iu.SetAvatar = "set_avatar", Iu.Transfer = "transfer", Iu.ViewNft = "view_nft", Iu.ClaimFlowContinue = "claim_flow_continue", Iu.ImportCollectibleAvatar = "import_collectible_avatar", (Mu || (Mu = {})).ProductDetailPage = "product_detail_page", (Ru || (Ru = {})).Password = "password", (Du = Fu || (Fu = {})).New = "NEW", Du.ActionRequired = "ACTION_REQUIRED", Du.Pending = "PENDING", Du.Paid = "PAID", Du.Canceled = "CANCELED", Du.Rejected = "REJECTED", Du.Failed = "FAILED", Du.Refunded = "REFUNDED", (zu = Lu || (Lu = {})).AVAILABLE = "AVAILABLE", zu.SOLD_OUT = "SOLD_OUT", zu.EXPIRED = "EXPIRED", Lu.AVAILABLE, Lu.SOLD_OUT, Lu.EXPIRED;
 			const $u = e => ({
 				source: _u.Marketplace,
 				action: Ou.Click,
@@ -7213,7 +7213,7 @@
 					}
 				}, i.a.createElement(sc, {
 					desc: "Button: view the item"
-				}, "View Your NFT")) : i.a.createElement(cc, {
+				}, "View your Collectible")) : i.a.createElement(cc, {
 					theme: "blue_inverted",
 					className: gi(ad, od),
 					onClick: () => {
@@ -7345,12 +7345,12 @@
 						className: t
 					}))
 				};
-			var Ld = "_container_1g1dd_191",
-				zd = "_closeButton_1g1dd_198",
-				Vd = "_section_1g1dd_201",
-				Bd = "_panel_1g1dd_204",
-				Wd = "_fullView_1g1dd_209",
-				Ud = "_background_1g1dd_212";
+			var Ld = "_container_diy5f_195",
+				zd = "_closeButton_diy5f_202",
+				Vd = "_section_diy5f_205",
+				Bd = "_panel_diy5f_208",
+				Wd = "_fullView_diy5f_213",
+				Ud = "_background_diy5f_216";
 			const $d = ({
 					className: e,
 					children: t
@@ -8537,8 +8537,8 @@
 					}), i.a.createElement("p", {
 						className: vd
 					}, i.a.createElement(sc, {
-						desc: "Benefit description: Stand out in the comments section"
-					}, "Stand out in the comments"))), i.a.createElement(i.a.Fragment, null, i.a.createElement("img", {
+						desc: "Benefit description: Stand out in comments section"
+					}, "Stand out in Comments"))), i.a.createElement(i.a.Fragment, null, i.a.createElement("img", {
 						src: c.g.CardExample,
 						className: hd,
 						alt: n.inline("card preview", "alt text: card preview")
@@ -8577,8 +8577,8 @@
 					}), i.a.createElement("p", {
 						className: vd
 					}, i.a.createElement(sc, {
-						desc: "Benefit description: you own this specific NFT avatar"
-					}, "You own your Collectible Avatar"))), i.a.createElement(i.a.Fragment, null, i.a.createElement("img", {
+						desc: "Benefit description: you own this specific Collectible"
+					}, "You own your Collectible"))), i.a.createElement(i.a.Fragment, null, i.a.createElement("img", {
 						src: c.g.Transferable,
 						className: hd,
 						alt: n.inline("blockchain transfer icon", "alt text: blockchain transfer icon")
@@ -8756,4 +8756,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/4.262bb6faa6b838bf3945.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/4.34c5010d3122be632614.js.map
