@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/EconHelperActions.59d4934ac93ee3e83454.js
-// Retrieved at 7/28/2022, 9:50:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/EconHelperActions.851726a3c9caf012283e.js
+// Retrieved at 7/28/2022, 7:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["EconHelperActions"], {
 		"./node_modules/lodash/_LazyWrapper.js": function(e, t, r) {
@@ -1920,9 +1920,9 @@
 			})), r.d(t, "t", (function() {
 				return W
 			})), r.d(t, "g", (function() {
-				return V
+				return q
 			})), r.d(t, "m", (function() {
-				return Y
+				return z
 			}));
 			r("./node_modules/core-js/modules/web.dom.iterable.js");
 			var n = r("./src/reddit/featureFlags/index.ts"),
@@ -2145,30 +2145,38 @@
 					return !(!n || !Object(o.a)(n))
 				},
 				W = (e, t, r) => {
-					if (Object(p.a)(e)) return !!t && Object(m.B)(e, {
+					if (Object(p.a)(e)) return !(!t || !Object(m.B)(e, {
 						subredditId: t
-					});
+					})) || (!!Y(e, t) || !(!n.d.spGiphy(e) || !V(e, r)));
 					if (!Object(f.b)(e, {
 							subredditId: t
 						})) return !1;
 					if (Object(b.p)(e, {
 							subredditId: t
 						})) return !0;
-					const s = "replyToPost" !== r && Object(_.b)(e, {
-						commentId: r
-					});
-					if (s && Object(o.b)(s)) return !0;
-					const d = n.d.spGiphy(e),
-						c = $(e, t);
-					return !(!d || !c) || d && c
+					if (V(e, r)) return !0;
+					const s = n.d.spGiphy(e),
+						o = $(e, t);
+					return !!Y(e, t) || s && o
 				},
-				V = (e, t, r) => {
+				V = (e, t) => {
+					const r = "replyToPost" !== t && Object(_.b)(e, {
+						commentId: t
+					});
+					if (r && Object(o.b)(r)) return !0
+				},
+				Y = (e, t) => {
+					const r = n.d.spGiphy(e),
+						s = $(e, t);
+					return r && s
+				},
+				q = (e, t, r) => {
 					if (t) {
 						const n = e.economics.banners.dismissedBanners[t];
 						if (n && n.data) return !!n.data[r]
 					}
 				},
-				Y = e => e.economics.pointsCopy.data
+				z = e => e.economics.pointsCopy.data
 		},
 		"./src/reddit/selectors/products.ts": function(e, t, r) {
 			"use strict";
@@ -2204,4 +2212,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EconHelperActions.59d4934ac93ee3e83454.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EconHelperActions.851726a3c9caf012283e.js.map

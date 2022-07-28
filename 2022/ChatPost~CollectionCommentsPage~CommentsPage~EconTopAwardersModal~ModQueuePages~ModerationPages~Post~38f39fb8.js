@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ChatPost~CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~Post~38f39fb8.82f97c344827a0650c35.js
-// Retrieved at 7/28/2022, 5:50:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ChatPost~CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~Post~38f39fb8.88f2fa7dd57e8625ec89.js
+// Retrieved at 7/28/2022, 7:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ChatPost~CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~Post~38f39fb8"], {
 		"./src/reddit/actions/economics/subredditPremium/actionCreators.ts": function(e, t, r) {
@@ -3400,9 +3400,9 @@
 			})), r.d(t, "t", (function() {
 				return z
 			})), r.d(t, "g", (function() {
-				return q
+				return V
 			})), r.d(t, "m", (function() {
-				return Q
+				return J
 			}));
 			r("./node_modules/core-js/modules/web.dom.iterable.js");
 			var s = r("./src/reddit/featureFlags/index.ts"),
@@ -3625,30 +3625,38 @@
 					return !(!s || !Object(n.a)(s))
 				},
 				z = (e, t, r) => {
-					if (Object(h.a)(e)) return !!t && Object(m.B)(e, {
+					if (Object(h.a)(e)) return !(!t || !Object(m.B)(e, {
 						subredditId: t
-					});
+					})) || (!!Q(e, t) || !(!s.d.spGiphy(e) || !q(e, r)));
 					if (!Object(f.b)(e, {
 							subredditId: t
 						})) return !1;
 					if (Object(b.p)(e, {
 							subredditId: t
 						})) return !0;
-					const o = "replyToPost" !== r && Object(p.b)(e, {
-						commentId: r
-					});
-					if (o && Object(n.b)(o)) return !0;
-					const a = s.d.spGiphy(e),
-						i = G(e, t);
-					return !(!a || !i) || a && i
+					if (q(e, r)) return !0;
+					const o = s.d.spGiphy(e),
+						n = G(e, t);
+					return !!Q(e, t) || o && n
 				},
-				q = (e, t, r) => {
+				q = (e, t) => {
+					const r = "replyToPost" !== t && Object(p.b)(e, {
+						commentId: t
+					});
+					if (r && Object(n.b)(r)) return !0
+				},
+				Q = (e, t) => {
+					const r = s.d.spGiphy(e),
+						o = G(e, t);
+					return r && o
+				},
+				V = (e, t, r) => {
 					if (t) {
 						const s = e.economics.banners.dismissedBanners[t];
 						if (s && s.data) return !!s.data[r]
 					}
 				},
-				Q = e => e.economics.pointsCopy.data
+				J = e => e.economics.pointsCopy.data
 		},
 		"./src/reddit/selectors/experiments/econLeaderboards.ts": function(e, t, r) {
 			"use strict";
@@ -3731,4 +3739,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatPost~CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~Post~38f39fb8.82f97c344827a0650c35.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatPost~CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~Post~38f39fb8.88f2fa7dd57e8625ec89.js.map

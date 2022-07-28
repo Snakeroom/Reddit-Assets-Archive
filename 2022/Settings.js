@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Settings.37cddd189aa7a7995fb5.js
-// Retrieved at 7/28/2022, 5:50:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Settings.2c4617534dd8a574358b.js
+// Retrieved at 7/28/2022, 7:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Settings"], {
 		"./node_modules/moment/locale sync recursive ^\\.\\/.*$": function(e, t, n) {
@@ -14525,9 +14525,9 @@
 			})), n.d(t, "t", (function() {
 				return z
 			})), n.d(t, "g", (function() {
-				return q
+				return V
 			})), n.d(t, "m", (function() {
-				return Q
+				return J
 			}));
 			n("./node_modules/core-js/modules/web.dom.iterable.js");
 			var s = n("./src/reddit/featureFlags/index.ts"),
@@ -14750,30 +14750,38 @@
 					return !(!s || !Object(a.a)(s))
 				},
 				z = (e, t, n) => {
-					if (Object(b.a)(e)) return !!t && Object(m.B)(e, {
+					if (Object(b.a)(e)) return !(!t || !Object(m.B)(e, {
 						subredditId: t
-					});
+					})) || (!!Q(e, t) || !(!s.d.spGiphy(e) || !q(e, n)));
 					if (!Object(f.b)(e, {
 							subredditId: t
 						})) return !1;
 					if (Object(h.p)(e, {
 							subredditId: t
 						})) return !0;
-					const r = "replyToPost" !== n && Object(p.b)(e, {
-						commentId: n
-					});
-					if (r && Object(a.b)(r)) return !0;
-					const o = s.d.spGiphy(e),
-						i = H(e, t);
-					return !(!o || !i) || o && i
+					if (q(e, n)) return !0;
+					const r = s.d.spGiphy(e),
+						a = H(e, t);
+					return !!Q(e, t) || r && a
 				},
-				q = (e, t, n) => {
+				q = (e, t) => {
+					const n = "replyToPost" !== t && Object(p.b)(e, {
+						commentId: t
+					});
+					if (n && Object(a.b)(n)) return !0
+				},
+				Q = (e, t) => {
+					const n = s.d.spGiphy(e),
+						r = H(e, t);
+					return n && r
+				},
+				V = (e, t, n) => {
 					if (t) {
 						const s = e.economics.banners.dismissedBanners[t];
 						if (s && s.data) return !!s.data[n]
 					}
 				},
-				Q = e => e.economics.pointsCopy.data
+				J = e => e.economics.pointsCopy.data
 		},
 		"./src/reddit/selectors/experiments/chatInviteLinkSharing.ts": function(e, t, n) {
 			"use strict";
@@ -14970,4 +14978,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Settings.37cddd189aa7a7995fb5.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Settings.2c4617534dd8a574358b.js.map

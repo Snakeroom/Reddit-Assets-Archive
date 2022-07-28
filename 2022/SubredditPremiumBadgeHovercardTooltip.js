@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditPremiumBadgeHovercardTooltip.67d9ab13a914162ba9bd.js
-// Retrieved at 7/28/2022, 9:50:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditPremiumBadgeHovercardTooltip.62b561ab5fff93cbe2d5.js
+// Retrieved at 7/28/2022, 7:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditPremiumBadgeHovercardTooltip"], {
 		"./node_modules/lodash/_arrayShuffle.js": function(e, t, r) {
@@ -2672,9 +2672,9 @@
 			})), r.d(t, "t", (function() {
 				return z
 			})), r.d(t, "g", (function() {
-				return H
+				return q
 			})), r.d(t, "m", (function() {
-				return Z
+				return X
 			}));
 			r("./node_modules/core-js/modules/web.dom.iterable.js");
 			var n = r("./src/reddit/featureFlags/index.ts"),
@@ -2897,30 +2897,38 @@
 					return !(!n || !Object(i.a)(n))
 				},
 				z = (e, t, r) => {
-					if (Object(p.a)(e)) return !!t && Object(m.B)(e, {
+					if (Object(p.a)(e)) return !(!t || !Object(m.B)(e, {
 						subredditId: t
-					});
+					})) || (!!Z(e, t) || !(!n.d.spGiphy(e) || !H(e, r)));
 					if (!Object(h.b)(e, {
 							subredditId: t
 						})) return !1;
 					if (Object(b.p)(e, {
 							subredditId: t
 						})) return !0;
-					const s = "replyToPost" !== r && Object(f.b)(e, {
-						commentId: r
-					});
-					if (s && Object(i.b)(s)) return !0;
-					const o = n.d.spGiphy(e),
-						a = V(e, t);
-					return !(!o || !a) || o && a
+					if (H(e, r)) return !0;
+					const s = n.d.spGiphy(e),
+						i = V(e, t);
+					return !!Z(e, t) || s && i
 				},
-				H = (e, t, r) => {
+				H = (e, t) => {
+					const r = "replyToPost" !== t && Object(f.b)(e, {
+						commentId: t
+					});
+					if (r && Object(i.b)(r)) return !0
+				},
+				Z = (e, t) => {
+					const r = n.d.spGiphy(e),
+						s = V(e, t);
+					return r && s
+				},
+				q = (e, t, r) => {
 					if (t) {
 						const n = e.economics.banners.dismissedBanners[t];
 						if (n && n.data) return !!n.data[r]
 					}
 				},
-				Z = e => e.economics.pointsCopy.data
+				X = e => e.economics.pointsCopy.data
 		},
 		"./src/reddit/selectors/products.ts": function(e, t, r) {
 			"use strict";
@@ -2956,4 +2964,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditPremiumBadgeHovercardTooltip.67d9ab13a914162ba9bd.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditPremiumBadgeHovercardTooltip.62b561ab5fff93cbe2d5.js.map

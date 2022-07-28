@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Economics-SubredditPremium-LFGBanner.1d679e057f1944f6173f.js
-// Retrieved at 7/28/2022, 9:50:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Economics-SubredditPremium-LFGBanner.447ac67c2c1860f51d0e.js
+// Retrieved at 7/28/2022, 7:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Economics-SubredditPremium-LFGBanner"], {
 		"./node_modules/lodash/_arraySample.js": function(e, t, n) {
@@ -2105,9 +2105,9 @@
 			})), n.d(t, "t", (function() {
 				return H
 			})), n.d(t, "g", (function() {
-				return q
+				return z
 			})), n.d(t, "m", (function() {
-				return W
+				return K
 			}));
 			n("./node_modules/core-js/modules/web.dom.iterable.js");
 			var s = n("./src/reddit/featureFlags/index.ts"),
@@ -2330,30 +2330,38 @@
 					return !(!s || !Object(o.a)(s))
 				},
 				H = (e, t, n) => {
-					if (Object(b.a)(e)) return !!t && Object(m.B)(e, {
+					if (Object(b.a)(e)) return !(!t || !Object(m.B)(e, {
 						subredditId: t
-					});
+					})) || (!!W(e, t) || !(!s.d.spGiphy(e) || !q(e, n)));
 					if (!Object(h.b)(e, {
 							subredditId: t
 						})) return !1;
 					if (Object(f.p)(e, {
 							subredditId: t
 						})) return !0;
-					const r = "replyToPost" !== n && Object(p.b)(e, {
-						commentId: n
-					});
-					if (r && Object(o.b)(r)) return !0;
-					const i = s.d.spGiphy(e),
-						a = $(e, t);
-					return !(!i || !a) || i && a
+					if (q(e, n)) return !0;
+					const r = s.d.spGiphy(e),
+						o = $(e, t);
+					return !!W(e, t) || r && o
 				},
-				q = (e, t, n) => {
+				q = (e, t) => {
+					const n = "replyToPost" !== t && Object(p.b)(e, {
+						commentId: t
+					});
+					if (n && Object(o.b)(n)) return !0
+				},
+				W = (e, t) => {
+					const n = s.d.spGiphy(e),
+						r = $(e, t);
+					return n && r
+				},
+				z = (e, t, n) => {
 					if (t) {
 						const s = e.economics.banners.dismissedBanners[t];
 						if (s && s.data) return !!s.data[n]
 					}
 				},
-				W = e => e.economics.pointsCopy.data
+				K = e => e.economics.pointsCopy.data
 		},
 		"./src/reddit/selectors/products.ts": function(e, t, n) {
 			"use strict";
@@ -2389,4 +2397,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Economics-SubredditPremium-LFGBanner.1d679e057f1944f6173f.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Economics-SubredditPremium-LFGBanner.447ac67c2c1860f51d0e.js.map

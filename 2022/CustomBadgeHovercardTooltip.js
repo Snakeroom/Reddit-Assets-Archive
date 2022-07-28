@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CustomBadgeHovercardTooltip.befee03eef0db9a0164b.js
-// Retrieved at 7/28/2022, 9:50:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CustomBadgeHovercardTooltip.b89602c5ec3670853bc0.js
+// Retrieved at 7/28/2022, 7:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CustomBadgeHovercardTooltip"], {
 		"./src/lib/constants/specialMembership.ts": function(e, t, r) {
@@ -645,9 +645,9 @@
 			})), r.d(t, "t", (function() {
 				return J
 			})), r.d(t, "g", (function() {
-				return K
+				return q
 			})), r.d(t, "m", (function() {
-				return Z
+				return W
 			}));
 			r("./node_modules/core-js/modules/web.dom.iterable.js");
 			var s = r("./src/reddit/featureFlags/index.ts"),
@@ -870,31 +870,39 @@
 					return !(!s || !Object(o.a)(s))
 				},
 				J = (e, t, r) => {
-					if (Object(b.a)(e)) return !!t && Object(m.B)(e, {
+					if (Object(b.a)(e)) return !(!t || !Object(m.B)(e, {
 						subredditId: t
-					});
+					})) || (!!Z(e, t) || !(!s.d.spGiphy(e) || !K(e, r)));
 					if (!Object(h.b)(e, {
 							subredditId: t
 						})) return !1;
 					if (Object(f.p)(e, {
 							subredditId: t
 						})) return !0;
-					const n = "replyToPost" !== r && Object(p.b)(e, {
-						commentId: r
-					});
-					if (n && Object(o.b)(n)) return !0;
-					const c = s.d.spGiphy(e),
-						i = Y(e, t);
-					return !(!c || !i) || c && i
+					if (K(e, r)) return !0;
+					const n = s.d.spGiphy(e),
+						o = Y(e, t);
+					return !!Z(e, t) || n && o
 				},
-				K = (e, t, r) => {
+				K = (e, t) => {
+					const r = "replyToPost" !== t && Object(p.b)(e, {
+						commentId: t
+					});
+					if (r && Object(o.b)(r)) return !0
+				},
+				Z = (e, t) => {
+					const r = s.d.spGiphy(e),
+						n = Y(e, t);
+					return r && n
+				},
+				q = (e, t, r) => {
 					if (t) {
 						const s = e.economics.banners.dismissedBanners[t];
 						if (s && s.data) return !!s.data[r]
 					}
 				},
-				Z = e => e.economics.pointsCopy.data
+				W = e => e.economics.pointsCopy.data
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CustomBadgeHovercardTooltip.befee03eef0db9a0164b.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CustomBadgeHovercardTooltip.b89602c5ec3670853bc0.js.map
