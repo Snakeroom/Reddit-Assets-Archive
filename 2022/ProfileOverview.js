@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfileOverview.f07349b7f92186fec09b.js
-// Retrieved at 7/28/2022, 11:00:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfileOverview.ba1b8f01a7f678f1e5a0.js
+// Retrieved at 7/28/2022, 2:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfileOverview"], {
 		"./src/lib/makeOverviewConversationsItemKey/index.ts": function(e, t, s) {
@@ -869,33 +869,36 @@
 					source: l,
 					callToAction: p,
 					caption: u
-				} = t, b = Object(c.s)(s);
+				} = t;
 				if (!l || !l.url) return null;
-				let h = l.displayText;
-				l.displayText.length >= 40 && (h = l.displayText.slice(0, 40 - "...".length) + "...");
-				const x = Object(i.a)(m.a.leftSideContent, {
+				let b = l.displayText;
+				l.displayText.length >= 40 && (b = l.displayText.slice(0, 40 - "...".length) + "...");
+				const h = Object(c.s)(s, l.displayText),
+					x = Object(c.t)(s) ? b : u,
+					f = Object(c.t)(s) ? s.subcaption : l.displayText,
+					v = Object(i.a)(m.a.leftSideContent, {
 						[m.a.ctaExperimentNoPadding]: e.ctaExperimentDesign && "card" !== e.ctaExperimentDesign,
 						[m.a.ctaExperimentPadded]: "card" === e.ctaExperimentDesign
 					}),
-					f = Object(i.a)(m.a.displayUrl, {
+					O = Object(i.a)(m.a.displayUrl, {
 						[m.a.ctaExperimentLink]: !!e.ctaExperimentDesign
 					});
 				return r.a.createElement(r.a.Fragment, null, r.a.createElement("div", {
-					className: x
-				}, u && !n && r.a.createElement("span", {
+					className: v
+				}, u && !n && !h && r.a.createElement("span", {
 					className: m.a.caption,
 					title: u
-				}, u), !b && r.a.createElement(d.a, {
+				}, u), !h && r.a.createElement(d.a, {
 					href: l.url.replace(o.a.redditUrl, ""),
 					isSponsored: s.isSponsored,
 					postId: s.id,
 					source: l,
-					className: f
-				}, h), b && r.a.createElement(r.a.Fragment, null, r.a.createElement("span", {
+					className: O
+				}, b), h && r.a.createElement(r.a.Fragment, null, r.a.createElement("span", {
 					className: m.a.productTitle
-				}, h), r.a.createElement("span", {
+				}, x), r.a.createElement("span", {
 					className: m.a.subcaption
-				}, s.subcaption))), p && r.a.createElement(a.a, {
+				}, f))), p && r.a.createElement(a.a, {
 					className: m.a.callToAction,
 					href: l.url,
 					isSponsored: s.isSponsored,
@@ -2691,10 +2694,10 @@
 							postIds: o,
 							posts: n
 						} = e;
-						if (!Object(C.t)(s) || (null === (t = s.pollData) || void 0 === t ? void 0 : t.isPrediction)) return;
+						if (!Object(C.u)(s) || (null === (t = s.pollData) || void 0 === t ? void 0 : t.isPrediction)) return;
 						const r = o && 0 === o.indexOf(s.id),
 							i = o && 1 === o.indexOf(s.id),
-							a = n && n[1] && Object(C.t)(n[1]);
+							a = n && n[1] && Object(C.u)(n[1]);
 						return {
 							hasTopCompactPostStyles: r && a,
 							hasBottomCompactPostStyles: i,
@@ -5393,4 +5396,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileOverview.f07349b7f92186fec09b.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileOverview.ba1b8f01a7f678f1e5a0.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModerationPages.e216ae989ab7dd15c897.js
-// Retrieved at 7/28/2022, 11:00:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModerationPages.92c3a0a7baf692a5885e.js
+// Retrieved at 7/28/2022, 2:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModerationPages", "CollectionCommentsPage~CommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~RpanListingUnit~S~5809214e", "CommentsPage~Governance~Reddit~ReportFlow~Subreddit~reddit-components-BlankPost~reddit-components-Cl~5351df81", "PostCreation~Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~r~4c415e24", "Governance~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compo~bd4baca2", "Governance~ModListing~Reddit~ReportFlow~Subreddit", "Governance~Reddit~SubredditForkingCTA", "AuthorHovercard~Reddit"], {
 		"./src/chat/controls/Svg/index.m.less": function(e, t, n) {
@@ -2813,7 +2813,7 @@
 							partialPostId: h
 						} = b ? b.params : null;
 					if (!h) return;
-					const _ = Object(O.v)(h);
+					const _ = Object(O.w)(h);
 					n(L({
 						moreCommentsId: c.id
 					}));
@@ -11781,7 +11781,7 @@
 						e.type === s.I.BAD_CAPTCHA_ERROR ? t(W()) : e.type === s.I.VALIDATION_ERROR ? t(G(e)) : e.type === s.I.SUBMIT_VALIDATION_ERROR ? t(H(e)) : t(U(e))
 					}
 					const y = Object(M.o)(l.kind),
-						j = O.ok && O.body && O.body.id && Object(P.v)(O.body.id),
+						j = O.ok && O.body && O.body.id && Object(P.w)(O.body.id),
 						w = n();
 					E.B(w, y, j, e.correlationId)
 				}
@@ -15015,7 +15015,7 @@
 						},
 						g = await ((e, t, n) => Object(a.a)(e, {
 							data: n,
-							endpoint: `${o.a.gatewayUrl}/desktopapi/v1/duplicates/${Object(i.x)(t)}`,
+							endpoint: `${o.a.gatewayUrl}/desktopapi/v1/duplicates/${Object(i.y)(t)}`,
 							method: r.jb.GET
 						}))(b(), t, f);
 					if (g.ok) {
@@ -19161,33 +19161,36 @@
 					source: l,
 					callToAction: m,
 					caption: p
-				} = t, b = Object(c.s)(n);
+				} = t;
 				if (!l || !l.url) return null;
-				let h = l.displayText;
-				l.displayText.length >= 40 && (h = l.displayText.slice(0, 40 - "...".length) + "...");
-				const f = Object(a.a)(u.a.leftSideContent, {
+				let b = l.displayText;
+				l.displayText.length >= 40 && (b = l.displayText.slice(0, 40 - "...".length) + "...");
+				const h = Object(c.s)(n, l.displayText),
+					f = Object(c.t)(n) ? b : p,
+					g = Object(c.t)(n) ? n.subcaption : l.displayText,
+					_ = Object(a.a)(u.a.leftSideContent, {
 						[u.a.ctaExperimentNoPadding]: e.ctaExperimentDesign && "card" !== e.ctaExperimentDesign,
 						[u.a.ctaExperimentPadded]: "card" === e.ctaExperimentDesign
 					}),
-					g = Object(a.a)(u.a.displayUrl, {
+					v = Object(a.a)(u.a.displayUrl, {
 						[u.a.ctaExperimentLink]: !!e.ctaExperimentDesign
 					});
 				return o.a.createElement(o.a.Fragment, null, o.a.createElement("div", {
-					className: f
-				}, p && !r && o.a.createElement("span", {
+					className: _
+				}, p && !r && !h && o.a.createElement("span", {
 					className: u.a.caption,
 					title: p
-				}, p), !b && o.a.createElement(d.a, {
+				}, p), !h && o.a.createElement(d.a, {
 					href: l.url.replace(s.a.redditUrl, ""),
 					isSponsored: n.isSponsored,
 					postId: n.id,
 					source: l,
-					className: g
-				}, h), b && o.a.createElement(o.a.Fragment, null, o.a.createElement("span", {
+					className: v
+				}, b), h && o.a.createElement(o.a.Fragment, null, o.a.createElement("span", {
 					className: u.a.productTitle
-				}, h), o.a.createElement("span", {
+				}, f), o.a.createElement("span", {
 					className: u.a.subcaption
-				}, n.subcaption))), m && o.a.createElement(i.a, {
+				}, g))), m && o.a.createElement(i.a, {
 					className: u.a.callToAction,
 					href: l.url,
 					isSponsored: n.isSponsored,
@@ -60826,7 +60829,7 @@
 							const {
 								partialCommentId: r,
 								partialPostId: o
-							} = e.match.params, a = Object(b.v)(o), i = Object(l.a)(e, t, t.posts.models[a]);
+							} = e.match.params, a = Object(b.w)(o), i = Object(l.a)(e, t, t.posts.models[a]);
 							if (!i) return;
 							const d = r && Object(p.h)(r),
 								{
@@ -70531,7 +70534,7 @@
 					if (e.platform.currentPage && e.platform.currentPage.urlParams && e.platform.currentPage.urlParams.partialPostId) {
 						const {
 							partialPostId: t
-						} = e.platform.currentPage.urlParams, n = Object(l.v)(t);
+						} = e.platform.currentPage.urlParams, n = Object(l.w)(t);
 						return Array.from(new Set(Object.keys(e.features.comments.models).filter(t => e.features.comments.models[t].postId === n && e.features.comments.models[t].author !== o.E).map(t => e.features.comments.models[t].author)))
 					}
 					return []
@@ -74049,4 +74052,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.e216ae989ab7dd15c897.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.92c3a0a7baf692a5885e.js.map

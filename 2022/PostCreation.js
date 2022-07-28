@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostCreation.ef8a1b11a6147177693a.js
-// Retrieved at 7/28/2022, 11:00:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostCreation.2b8eb085d8044458a49f.js
+// Retrieved at 7/28/2022, 2:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostCreation", "ChatMessageInput~MembershipPaywallPage~RichTextEditor", "ContributorRequestButton"], {
 		"./node_modules/autosize/dist/autosize.js": function(e, t, n) {
@@ -3934,7 +3934,7 @@
 						e.type === o.I.BAD_CAPTCHA_ERROR ? t(H()) : e.type === o.I.VALIDATION_ERROR ? t(K(e)) : e.type === o.I.SUBMIT_VALIDATION_ERROR ? t(W(e)) : t(B(e))
 					}
 					const v = Object(D.o)(d.kind),
-						_ = x.ok && x.body && x.body.id && Object(N.v)(x.body.id),
+						_ = x.ok && x.body && x.body.id && Object(N.w)(x.body.id),
 						w = n();
 					O.B(w, v, _, e.correlationId)
 				}
@@ -34607,4 +34607,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.ef8a1b11a6147177693a.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.2b8eb085d8044458a49f.js.map

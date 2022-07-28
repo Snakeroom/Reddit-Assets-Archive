@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage.db40fce1e4639c0751f5.js
-// Retrieved at 7/28/2022, 11:00:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage.662e1b4bc217c1842edf.js
+// Retrieved at 7/28/2022, 2:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage"], {
 		"./node_modules/linkify-it/index.js": function(e, t, s) {
@@ -654,7 +654,7 @@
 						partialCommentId: d,
 						subredditName: c = "",
 						routePrefix: l
-					} = e.params, g = r ? Object(F.v)(r) : "", x = d && Object(L.h)(d), {
+					} = e.params, g = r ? Object(F.w)(r) : "", x = d && Object(L.h)(d), {
 						queryParams: _
 					} = e, O = s(), {
 						instanceId: y
@@ -1170,7 +1170,7 @@
 				We = e => {
 					var t, s;
 					const n = null === (s = null === (t = e.platform.currentPage) || void 0 === t ? void 0 : t.urlParams) || void 0 === s ? void 0 : s.partialPostId,
-						o = n && Object(x.v)(n),
+						o = n && Object(x.w)(n),
 						{
 							sortToUse: r
 						} = Object(A.a)(e, o);
@@ -1251,7 +1251,7 @@
 						partialCommentId: l
 					} = e.params, {
 						subredditName: m
-					} = e.params || "", u = c ? Object(x.v)(c) : "", p = l && Object(M.h)(l), {
+					} = e.params || "", u = c ? Object(x.w)(c) : "", p = l && Object(M.h)(l), {
 						path: b,
 						queryParams: h
 					} = e, g = Object(y.d)(b), {
@@ -1306,7 +1306,7 @@
 								experimentName: K.bf
 							}))(s())) return void t(Object(n.c)(i.url));
 						if ((R.media && R.media.type) === B.o.LIVEVIDEO) {
-							const e = `/rpan${R.belongsTo.type===F.a.SUBREDDIT?i.url:"/"}${Object(x.x)(R.id)}`;
+							const e = `/rpan${R.belongsTo.type===F.a.SUBREDDIT?i.url:"/"}${Object(x.y)(R.id)}`;
 							return void t(Object(n.c)(e))
 						}
 						if (R.belongsTo.type !== F.a.SUBREDDIT || R.isSponsored) {
@@ -1697,33 +1697,36 @@
 					source: l,
 					callToAction: u,
 					caption: p
-				} = t, b = Object(c.s)(s);
+				} = t;
 				if (!l || !l.url) return null;
-				let h = l.displayText;
-				l.displayText.length >= 40 && (h = l.displayText.slice(0, 40 - "...".length) + "...");
-				const g = Object(i.a)(m.a.leftSideContent, {
+				let b = l.displayText;
+				l.displayText.length >= 40 && (b = l.displayText.slice(0, 40 - "...".length) + "...");
+				const h = Object(c.s)(s, l.displayText),
+					g = Object(c.t)(s) ? b : p,
+					x = Object(c.t)(s) ? s.subcaption : l.displayText,
+					f = Object(i.a)(m.a.leftSideContent, {
 						[m.a.ctaExperimentNoPadding]: e.ctaExperimentDesign && "card" !== e.ctaExperimentDesign,
 						[m.a.ctaExperimentPadded]: "card" === e.ctaExperimentDesign
 					}),
-					x = Object(i.a)(m.a.displayUrl, {
+					C = Object(i.a)(m.a.displayUrl, {
 						[m.a.ctaExperimentLink]: !!e.ctaExperimentDesign
 					});
 				return r.a.createElement(r.a.Fragment, null, r.a.createElement("div", {
-					className: g
-				}, p && !o && r.a.createElement("span", {
+					className: f
+				}, p && !o && !h && r.a.createElement("span", {
 					className: m.a.caption,
 					title: p
-				}, p), !b && r.a.createElement(d.a, {
+				}, p), !h && r.a.createElement(d.a, {
 					href: l.url.replace(n.a.redditUrl, ""),
 					isSponsored: s.isSponsored,
 					postId: s.id,
 					source: l,
-					className: x
-				}, h), b && r.a.createElement(r.a.Fragment, null, r.a.createElement("span", {
+					className: C
+				}, b), h && r.a.createElement(r.a.Fragment, null, r.a.createElement("span", {
 					className: m.a.productTitle
-				}, h), r.a.createElement("span", {
+				}, g), r.a.createElement("span", {
 					className: m.a.subcaption
-				}, s.subcaption))), u && r.a.createElement(a.a, {
+				}, x))), u && r.a.createElement(a.a, {
 					className: m.a.callToAction,
 					href: l.url,
 					isSponsored: s.isSponsored,
@@ -9630,7 +9633,7 @@
 						subredditName: x,
 						collectionId: f
 					} = a,
-					C = p ? Object(g.v)(p) : void 0,
+					C = p ? Object(g.w)(p) : void 0,
 					v = c && Object(h.h)(c),
 					_ = o()([...Object(l.a)(e.location.search)]),
 					y = {};
@@ -10012,7 +10015,7 @@
 						partialCommentId: r,
 						partialPostId: i,
 						subredditName: d
-					} = e.match.params, c = Object(ue.v)(i), p = r && Object(me.h)(r), b = Object(ce.a)(c), h = Object(u.e)(ne.b), g = Object(u.e)(e => Object(we.z)(e, {
+					} = e.match.params, c = Object(ue.w)(i), p = r && Object(me.h)(r), b = Object(ce.a)(c), h = Object(u.e)(ne.b), g = Object(u.e)(e => Object(we.z)(e, {
 						listingKey: b
 					})), x = Object(u.d)();
 					return Object(l.useEffect)(() => {
@@ -10237,7 +10240,7 @@
 							post: s
 						} = this.props;
 						t();
-						const n = s && Object(ue.u)(s) && s && s.belongsTo.id;
+						const n = s && Object(ue.v)(s) && s && s.belongsTo.id;
 						n && e(n), this.sendEventWithName("view_all_comments")()
 					}, this.handleContentClick = () => {
 						this.props.isCommentsListTruncated && this.props.expandCommentsList()
@@ -10309,7 +10312,7 @@
 						if (t) {
 							const s = null === (e = Object(at.b)(t)[0]) || void 0 === e ? void 0 : e.components;
 							if (s && s.hasOwnProperty("postID36")) {
-								const e = Object(ue.v)(s.postID36);
+								const e = Object(ue.w)(s.postID36);
 								this.props.getIsTrackingCrossposts(e)
 							}
 						}
@@ -10878,7 +10881,7 @@
 					const {
 						partialPostId: t
 					} = e.match.params;
-					return t && Object(b.v)(t)
+					return t && Object(b.w)(t)
 				},
 				g = (e, t, s) => {
 					const n = h(e),
@@ -11304,4 +11307,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage.db40fce1e4639c0751f5.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage.662e1b4bc217c1842edf.js.map
