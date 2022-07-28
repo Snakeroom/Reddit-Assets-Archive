@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CommentsPageNativeAd.670f936079ac35511d6f.js
-// Retrieved at 7/28/2022, 11:00:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CommentsPageNativeAd.faf9e486b4677d868f9a.js
+// Retrieved at 7/28/2022, 5:50:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CommentsPageNativeAd"], {
 		"./src/reddit/components/BlankPost/index.tsx": function(e, t, s) {
@@ -83,8 +83,8 @@
 				O = s("./src/reddit/components/PostContainer/index.tsx"),
 				f = s("./src/reddit/components/PostTitle/index.tsx"),
 				y = s("./src/reddit/constants/componentTestIds.ts"),
-				j = s("./src/reddit/controls/OutboundLink/index.tsx"),
-				P = s("./src/reddit/helpers/search/renderMedia.tsx"),
+				P = s("./src/reddit/controls/OutboundLink/index.tsx"),
+				j = s("./src/reddit/helpers/search/renderMedia.tsx"),
 				S = s("./src/reddit/components/PostTopMeta/index.tsx"),
 				_ = s("./src/reddit/components/AuthorLink/index.tsx"),
 				w = s("./src/reddit/components/SponsoredLabel/index.tsx"),
@@ -199,7 +199,7 @@
 				F = s("./src/reddit/connectors/ClassicPost/index.tsx"),
 				B = s("./src/reddit/helpers/path/index.ts"),
 				z = s("./src/reddit/selectors/profile.ts");
-			const Z = Object(n.b)(() => Object(d.c)({
+			const G = Object(n.b)(() => Object(d.c)({
 				iconUrl: (e, t) => {
 					const s = Object(z.j)(e, {
 						profileName: t.post.author
@@ -212,7 +212,7 @@
 					e(Object(b.d)(t.post.author))
 				}
 			}));
-			class G extends o.a.Component {
+			class Z extends o.a.Component {
 				constructor(e) {
 					super(e), this.state = {
 						mediaExpanded: !1
@@ -236,7 +236,7 @@
 					const i = Object(l.a)(A.a.styledOutboundLink, {
 						[A.a.ctaExperiment]: r
 					});
-					return o.a.createElement(j.b, {
+					return o.a.createElement(P.b, {
 						className: i,
 						href: a.source.url,
 						postId: a.id,
@@ -261,7 +261,7 @@
 						post: p,
 						redditStyle: h,
 						scrollerItemRef: b,
-						showMedia: j,
+						showMedia: P,
 						showCTAExperiment: _
 					} = this.props;
 					if (p.isBlank) return o.a.createElement(v.default, {
@@ -290,7 +290,7 @@
 						className: Object(l.a)(A.a.contentRow, {
 							[A.a.contentRowExpanded]: this.state.mediaExpanded
 						})
-					}, !(n && !j) && o.a.createElement(D, {
+					}, !(n && !P) && o.a.createElement(D, {
 						isMeta: p.isMeta,
 						post: p,
 						redditStyle: h,
@@ -333,13 +333,13 @@
 						showCTAExperiment: _
 					}, p.callToAction)))), o.a.createElement("div", {
 						className: A.a.spacer
-					}), o.a.createElement(N.d, null))), Object(P.a)(p, A.a, b, t, !1, !1)), o.a.createElement("div", {
+					}), o.a.createElement(N.d, null))), Object(j.a)(p, A.a, b, t, !1, !1)), o.a.createElement("div", {
 						className: A.a.commentsSpacer
 					}))
 				}
 			}
-			const H = Object(m.a)(G);
-			t.default = Object(F.a)(Z(H))
+			const H = Object(m.a)(Z);
+			t.default = Object(F.a)(G(H))
 		},
 		"./src/reddit/connectors/ClassicPost/index.tsx": function(e, t, s) {
 			"use strict";
@@ -436,11 +436,11 @@
 				r = s("./src/reddit/constants/experiments.ts"),
 				o = s("./src/reddit/helpers/chooseVariant/index.ts");
 			const n = Object(a.a)(e => Object(o.c)(e, {
-					experimentName: r.Nf,
+					experimentName: r.Pf,
 					experimentEligibilitySelector: o.a
 				}), e => e),
-				i = Object(a.a)(n, e => e === r.Ff)
+				i = Object(a.a)(n, e => e === r.Gf)
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommentsPageNativeAd.670f936079ac35511d6f.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommentsPageNativeAd.faf9e486b4677d868f9a.js.map

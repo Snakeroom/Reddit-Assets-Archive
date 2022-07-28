@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/EconPowerupsFlairModal.06d06124c0e57d299cb1.js
-// Retrieved at 7/28/2022, 11:00:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/EconPowerupsFlairModal.3c631462f7eb3418142c.js
+// Retrieved at 7/28/2022, 5:50:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["EconPowerupsFlairModal", "AchievementsActions"], {
 		"./src/reddit/actions/economics/powerups/flairs/index.ts": function(e, t, r) {
@@ -609,9 +609,9 @@
 				U = r("./src/reddit/actions/tooltip.ts"),
 				L = r("./src/reddit/components/InfoTextTooltip/index.tsx"),
 				M = r("./src/reddit/icons/fonts/index.tsx"),
-				B = r("./src/reddit/models/Gold/Powerups/powerupsFlair/index.ts"),
-				A = r("./src/reddit/components/Econ/PowerupsFlair/PowerupsFlairModal/PowerupsFlair.m.less"),
-				D = r.n(A);
+				A = r("./src/reddit/models/Gold/Powerups/powerupsFlair/index.ts"),
+				B = r("./src/reddit/components/Econ/PowerupsFlair/PowerupsFlairModal/PowerupsFlair.m.less"),
+				D = r.n(B);
 			const {
 				fbt: H
 			} = r("./node_modules/fbt/lib/FbtPublic.js"), G = e => {
@@ -637,7 +637,7 @@
 					onMouseLeave: u,
 					onClick: () => {
 						if (m && r(t.type), !t.isPreferred) {
-							const e = Object(B.b)(t) ? {
+							const e = Object(A.b)(t) ? {
 								supporterFlair: t
 							} : {
 								achievementFlair: t
@@ -1123,8 +1123,8 @@
 				d = e => n.includes(e),
 				c = Object(s.a)(e => Object(a.c)(e, {
 					experimentEligibilitySelector: a.a,
-					experimentName: i.Yd
-				}), e => e === i.Bd)
+					experimentName: i.Zd
+				}), e => e === i.Cd)
 		},
 		"./src/redditGQL/operations/SubredditUserAchievements.json": function(e) {
 			e.exports = JSON.parse('{"id":"92790c69eba6"}')
@@ -1134,4 +1134,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EconPowerupsFlairModal.06d06124c0e57d299cb1.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EconPowerupsFlairModal.3c631462f7eb3418142c.js.map

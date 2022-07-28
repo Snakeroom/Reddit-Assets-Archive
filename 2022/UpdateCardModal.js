@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/UpdateCardModal.c86b16c82fe461e0ed11.js
-// Retrieved at 7/28/2022, 11:00:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/UpdateCardModal.0cda1ad9b434b75897a0.js
+// Retrieved at 7/28/2022, 5:50:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["UpdateCardModal"], {
 		"./src/reddit/components/UpdateCardModal/index.tsx": function(e, t, r) {
@@ -49,7 +49,7 @@
 				};
 			var h = r("./src/reddit/controls/LoadingIcon/index.tsx"),
 				S = r("./src/reddit/hooks/useStripePromise.ts");
-			const E = Object(s.a)(() => {
+			const g = Object(s.a)(() => {
 				const e = Object(c.d)(),
 					t = Object(n.useStripe)();
 				return Object(o.useEffect)(() => {
@@ -62,7 +62,7 @@
 				const t = Object(S.a)();
 				return i.a.createElement(n.Elements, {
 					stripe: t
-				}, i.a.createElement(E, e))
+				}, i.a.createElement(g, e))
 			}
 		},
 		"./src/reddit/hooks/useStripePromise.ts": function(e, t, r) {
@@ -146,8 +146,8 @@
 			}));
 			var n = r("./src/reddit/constants/experiments.ts"),
 				s = r("./src/reddit/selectors/experiments/econ/simpleExperiment.ts");
-			const o = Object(s.a)(n.fd)
+			const o = Object(s.a)(n.gd)
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/UpdateCardModal.c86b16c82fe461e0ed11.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/UpdateCardModal.0cda1ad9b434b75897a0.js.map

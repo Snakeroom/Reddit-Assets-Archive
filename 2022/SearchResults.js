@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SearchResults.c7fb2ff74e4bad3e96be.js
-// Retrieved at 7/28/2022, 2:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SearchResults.2a2e8610f6f7012ea5de.js
+// Retrieved at 7/28/2022, 5:50:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SearchResults"], {
 		"./node_modules/lodash/_baseDelay.js": function(e, t) {
@@ -194,7 +194,7 @@
 			const O = Object(f.a)(e => Object(x.c)(e, {
 					experimentEligibilitySelector: x.a,
 					experimentName: h.Bb
-				}), e => e === h.Bd),
+				}), e => e === h.Cd),
 				g = e => n.fbt._("reddit.com: search results - {query}", [n.fbt._param("query", e || "None")], {
 					hk: "1XOKAg"
 				}),
@@ -6970,12 +6970,12 @@
 						rtJsonElementProps: i
 					});
 					switch (o) {
-						case h.zf.SmIcon:
+						case h.Af.SmIcon:
 							return r.a.createElement(p, {
 								subredditName: n,
 								rtJsonElementProps: i
 							});
-						case h.zf.SmIconHc:
+						case h.Af.SmIconHc:
 							return r.a.createElement(p, {
 								subredditName: n,
 								isHoverable: !0,
@@ -8784,13 +8784,13 @@
 			const o = e => {
 					return !(Object(r.c)(e, {
 						experimentEligibilitySelector: r.a,
-						experimentName: n.he
-					}) === n.Bd)
+						experimentName: n.ie
+					}) === n.Cd)
 				},
 				i = e => Object(r.c)(e, {
 					experimentEligibilitySelector: r.a,
-					experimentName: n.ie
-				}) === n.Bd
+					experimentName: n.je
+				}) === n.Cd
 		},
 		"./src/reddit/selectors/experiments/reportingRevampDesktop.ts": function(e, t, s) {
 			"use strict";
@@ -8818,7 +8818,7 @@
 			const a = Object(n.a)(e => Object(o.c)(e, {
 				experimentEligibilitySelector: i.Q,
 				experimentName: r.zc
-			}), e => e === r.Bd)
+			}), e => e === r.Cd)
 		},
 		"./src/reddit/selectors/experiments/web2x_cta.ts": function(e, t, s) {
 			"use strict";
@@ -8829,10 +8829,10 @@
 				r = s("./src/reddit/constants/experiments.ts"),
 				o = s("./src/reddit/helpers/chooseVariant/index.ts");
 			const i = Object(n.a)(e => Object(o.c)(e, {
-					experimentName: r.Nf,
+					experimentName: r.Pf,
 					experimentEligibilitySelector: o.a
 				}), e => e),
-				a = Object(n.a)(i, e => e === r.Ff)
+				a = Object(n.a)(i, e => e === r.Gf)
 		},
 		"./src/reddit/selectors/focusedVerticalSuggestion.ts": function(e, t, s) {
 			"use strict";
@@ -8971,12 +8971,12 @@
 				c = e => {
 					return Object(o.c)(e, {
 						experimentEligibilitySelector: a,
-						experimentName: n.tf
+						experimentName: n.uf
 					}) || ""
 				},
 				d = e => {
 					const t = c(e);
-					return t === n.zf.SmIcon || t === n.zf.SmIconHc
+					return t === n.Af.SmIcon || t === n.Af.SmIconHc
 				},
 				l = (e, t) => {
 					let {
@@ -9005,4 +9005,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SearchResults.c7fb2ff74e4bad3e96be.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SearchResults.2a2e8610f6f7012ea5de.js.map

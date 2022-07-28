@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-MediumPost.18dd85bd11952bb73a26.js
-// Retrieved at 7/28/2022, 4:00:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-MediumPost.99aa6d12716a16bc5a33.js
+// Retrieved at 7/28/2022, 5:50:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-MediumPost"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -1065,19 +1065,19 @@
 					}, O())
 				}, [t, O, y]);
 				const D = Object(n.useRef)(0),
-					L = Object(n.useRef)(!1),
-					R = Object(n.useCallback)(e => {
+					R = Object(n.useRef)(!1),
+					L = Object(n.useCallback)(e => {
 						e.forEach(e => {
 							const {
 								isIntersecting: t,
 								intersectionRatio: s
 							} = e, n = 1 !== s;
-							t ? (L.current = !0, N.current || (N.current = !0, F.current = setTimeout(() => {
+							t ? (R.current = !0, N.current || (N.current = !0, F.current = setTimeout(() => {
 								P.current(), A.current()
-							}, u())), D.current > 0 && (P.current(D.current), D.current = 0)) : n && (L.current = !1)
+							}, u())), D.current > 0 && (P.current(D.current), D.current = 0)) : n && (R.current = !1)
 						})
 					}, []);
-				Object(a.a)(w, R);
+				Object(a.a)(w, L);
 				const [B, U] = Object(n.useState)(!1), V = Object(n.useCallback)(e => {
 					e.forEach(e => {
 						const {
@@ -1094,7 +1094,7 @@
 				Object(n.useEffect)(() => {
 					if (void 0 !== Y && Y !== t) {
 						const e = t - Y;
-						L.current ? P.current(e) : D.current += e
+						R.current ? P.current(e) : D.current += e
 					}
 					return () => {
 						clearTimeout(F.current), clearTimeout(M.current), clearTimeout(I.current)
@@ -1743,8 +1743,8 @@
 				F = s("./src/reddit/contexts/PageLayer/index.tsx"),
 				M = s("./src/reddit/helpers/canRenderThumbnail.ts"),
 				D = s("./src/reddit/helpers/hasModFlairPermissions/index.ts"),
-				L = s("./src/reddit/helpers/hasModFullPermissions/index.ts"),
-				R = s("./src/reddit/helpers/hasModPostPermissions/index.ts"),
+				R = s("./src/reddit/helpers/hasModFullPermissions/index.ts"),
+				L = s("./src/reddit/helpers/hasModPostPermissions/index.ts"),
 				B = s("./src/reddit/helpers/styles/mixins/index.tsx"),
 				U = s("./src/reddit/helpers/styles/mixins/index.m.less"),
 				V = s.n(U),
@@ -1838,7 +1838,7 @@
 						toggleCheckbox: ye,
 						isAvatarPostEnabled: je,
 						isOptionalTextEnabled: Te
-					} = e, ke = Object(o.d)(), Ne = e => e === z.a.upvoted ? ke(Object(d.kb)(be)) : ke(Object(d.w)(be)), we = () => ke(Object(d.gb)(be)), Pe = he ? void 0 : U, Ie = Object(R.a)(le), Ae = ue && Ie, Fe = Object(D.a)(le), Me = Object(L.a)(le), De = Object(E.a)(pe), Le = Object(g.c)(pe), Re = !!(null == Y ? void 0 : Y.shouldShowLinkedPosts), Be = ve, Ue = !Object(q.a)() && Object(M.a)(pe), Ve = H && !Ee && !Re && !Be || je, We = Ve && !!pe.source && !s, Ye = !(X && !!i || se) && !K && (!H || Re || Be) || te, qe = (!H || Re || Be) && !pe.isSponsored, He = Object(a.t)(pe, ce), {
+					} = e, ke = Object(o.d)(), Ne = e => e === z.a.upvoted ? ke(Object(d.kb)(be)) : ke(Object(d.w)(be)), we = () => ke(Object(d.gb)(be)), Pe = he ? void 0 : U, Ie = Object(L.a)(le), Ae = ue && Ie, Fe = Object(D.a)(le), Me = Object(R.a)(le), De = Object(E.a)(pe), Re = Object(g.c)(pe), Le = !!(null == Y ? void 0 : Y.shouldShowLinkedPosts), Be = ve, Ue = !Object(q.a)() && Object(M.a)(pe), Ve = H && !Ee && !Le && !Be || je, We = Ve && !!pe.source && !s, Ye = !(X && !!i || se) && !K && (!H || Le || Be) || te, qe = (!H || Le || Be) && !pe.isSponsored, He = Object(a.t)(pe, ce), {
 						source: Ge
 					} = He, ze = !!(Q && (null == Ce ? void 0 : Ce.isNSFW)), Qe = Object(n.useRef)({
 						renderingObjectInfo: pe
@@ -1937,7 +1937,7 @@
 						className: re.a.modModeBannerWrapper
 					}, r.a.createElement(O.a, {
 						thing: pe
-					})), ue && Ie && Le && r.a.createElement("div", {
+					})), ue && Ie && Re && r.a.createElement("div", {
 						className: re.a.modModeBannerWrapper
 					}, r.a.createElement(S.a, {
 						onIgnoreReports: we,
@@ -2715,7 +2715,7 @@
 		"./src/reddit/components/PostTitle/index.tsx": function(e, t, s) {
 			"use strict";
 			s.d(t, "b", (function() {
-				return L
+				return R
 			})), s.d(t, "a", (function() {
 				return Q
 			}));
@@ -2756,7 +2756,7 @@
 				poll: (e, t) => e.polls.models[t.pollId],
 				resultsByVoters: (e, t) => e.polls.results.byVoters[t.pollId]
 			});
-			var L, R = Object(a.b)(D)((function(e) {
+			var R, L = Object(a.b)(D)((function(e) {
 					const {
 						poll: t,
 						resultsByVoters: s
@@ -2792,7 +2792,7 @@
 				}).apply(this, arguments)
 			}! function(e) {
 				e[e.ExtraLarge = 0] = "ExtraLarge", e[e.Large = 1] = "Large", e[e.Medium = 2] = "Medium", e[e.Small = 3] = "Small", e[e.ExtraSmall = 4] = "ExtraSmall", e[e.Metadata = 5] = "Metadata"
-			}(L || (L = {}));
+			}(R || (R = {}));
 			const Q = e => {
 					let {
 						size: t,
@@ -2807,22 +2807,22 @@
 					const l = Object(g.a)();
 					let m = "";
 					switch (t) {
-						case L.ExtraLarge:
+						case R.ExtraLarge:
 							m = G.a.ExtraLarge;
 							break;
-						case L.Large:
+						case R.Large:
 							m = G.a.Large;
 							break;
-						case L.Medium:
+						case R.Medium:
 							m = G.a.Medium;
 							break;
-						case L.Small:
+						case R.Small:
 							m = G.a.Small;
 							break;
-						case L.ExtraSmall:
+						case R.ExtraSmall:
 							m = G.a.ExtraSmall;
 							break;
-						case L.Metadata:
+						case R.Metadata:
 							m = G.a.Metadata
 					}
 					return i.a.createElement("div", {
@@ -2961,7 +2961,7 @@
 					} = n, o = e.isCommentsPage ? Y.SourceElement.PostLink : Y.SourceElement.ListingPostLink;
 					if (Object(E.a)()) return null;
 					if (s && n.isNSFW) return null;
-					const a = !t && !e.isCrosspost && e.size !== L.Large && !n.isSponsored && !(n.media && Object(j.H)(n.media)) && (n.source || n.media && (n.media.type === j.o.GIFVIDEO || n.media.type === j.o.IMAGE || n.media.type === j.o.EMBED));
+					const a = !t && !e.isCrosspost && e.size !== R.Large && !n.isSponsored && !(n.media && Object(j.H)(n.media)) && (n.source || n.media && (n.media.type === j.o.GIFVIDEO || n.media.type === j.o.IMAGE || n.media.type === j.o.EMBED));
 					if (t || !e.isCommentsPage || e.isCommentPermalink || e.shouldLinkWrap) {
 						if (a) return i.a.createElement(f.a, {
 							className: e.outboundLinkClassName,
@@ -2974,7 +2974,7 @@
 							name: "external_link",
 							className: G.a.outboundLinkIcon
 						}))
-					} else if (n.source && !e.isCrosspost && e.size !== L.Large && e.size !== L.ExtraLarge) return i.a.createElement(f.a, {
+					} else if (n.source && !e.isCrosspost && e.size !== R.Large && e.size !== R.ExtraLarge) return i.a.createElement(f.a, {
 						className: e.outboundLinkClassName,
 						href: n.source.url,
 						isSponsored: r,
@@ -3026,7 +3026,7 @@
 						sendEvent: this.props.sendEvent
 					}), !Object(T.b)(c) && i.a.createElement(X, z({}, this.props, {
 						leftFlair: d ? b : void 0
-					})), a && i.a.createElement(R, {
+					})), a && i.a.createElement(L, {
 						className: G.a.pollMeta,
 						pollId: a.id
 					}), i.a.createElement(ee, this.props), v && i.a.createElement(w.a, {
@@ -3119,8 +3119,8 @@
 					isTopicPage: F,
 					listingKey: M,
 					post: D,
-					shouldShowSubscribeButton: L,
-					showCornerOutboundLink: R,
+					shouldShowSubscribeButton: R,
+					showCornerOutboundLink: L,
 					showSubreddit: B,
 					showSubredditIcon: U,
 					subredditOrProfile: V,
@@ -3171,7 +3171,7 @@
 					isPostDetail: N,
 					thing: D,
 					tooltipType: A ? m.c.Lightbox : void 0
-				})), V && z && B && L && !P && o.a.createElement(f.a, {
+				})), V && z && B && R && !P && o.a.createElement(f.a, {
 					className: y.a.SubscribeButton,
 					getEventFactory: e => Object(_.k)(D.id, e ? "unsubscribe" : "subscribe", "post", M, j),
 					identifier: {
@@ -3180,7 +3180,7 @@
 					},
 					postId: D.id,
 					size: x.d.XS
-				}), R && o.a.createElement(v.b, {
+				}), L && o.a.createElement(v.b, {
 					isSponsored: D.isSponsored,
 					postId: D.id,
 					href: Object(E.D)(D),
@@ -5167,7 +5167,7 @@
 					return Object(r.c)(e, {
 						experimentEligibilitySelector: r.a,
 						experimentName: n.Vb
-					}) === n.Bd
+					}) === n.Cd
 				})(e)
 			}
 		},
@@ -5277,7 +5277,7 @@
 					return Object(r.c)(e, {
 						experimentEligibilitySelector: r.a,
 						experimentName: n.tc
-					}) === n.Lc.Enabled
+					}) === n.Mc.Enabled
 				}
 		},
 		"./src/reddit/selectors/experiments/presence.ts": function(e, t, s) {
@@ -5290,8 +5290,8 @@
 			const o = e => {
 				return Object(r.c)(e, {
 					experimentEligibilitySelector: r.a,
-					experimentName: n.Ne
-				}) === n.Bd
+					experimentName: n.Oe
+				}) === n.Cd
 			}
 		},
 		"./src/reddit/selectors/i18n/index.ts": function(e, t, s) {
@@ -5307,7 +5307,7 @@
 				i = s("./src/reddit/selectors/experiments/nsfwListingBelow.ts");
 			const a = e => {
 					const t = Object(i.a)(e);
-					return Boolean(t) && !Object(r.Wf)(t)
+					return Boolean(t) && !Object(r.Yf)(t)
 				},
 				c = Object(n.a)(a, o.d, (e, t) => e && !t)
 		},
@@ -5452,10 +5452,10 @@
 				o = s("./src/reddit/helpers/chooseVariant/index.ts"),
 				i = s("./src/reddit/selectors/posts.ts");
 			const a = e => Object(o.c)(e, {
-					experimentName: r.Qe,
+					experimentName: r.Re,
 					experimentEligibilitySelector: o.a
 				}),
-				c = (e, t) => t === r.Ye.Enabled && (null == e ? void 0 : e.isCreatedFromAdsUi) || (null == e ? void 0 : e.isSponsored),
+				c = (e, t) => t === r.Ze.Enabled && (null == e ? void 0 : e.isCreatedFromAdsUi) || (null == e ? void 0 : e.isSponsored),
 				d = Object(n.a)(i.G, a, (e, t) => c(e, t));
 			Object(n.a)((e, t) => t, a, (e, t) => c(e, t))
 		},
@@ -5538,4 +5538,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-MediumPost.18dd85bd11952bb73a26.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-MediumPost.99aa6d12716a16bc5a33.js.map

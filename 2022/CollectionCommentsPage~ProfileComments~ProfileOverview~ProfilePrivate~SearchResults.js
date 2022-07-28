@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~SearchResults.8e68c30a7ebb8c1ed78c.js
-// Retrieved at 7/28/2022, 11:00:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~SearchResults.66e7b5f796779daa38ea.js
+// Retrieved at 7/28/2022, 5:50:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~SearchResults"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -1451,17 +1451,17 @@
 						commentListNodeId: t
 					})), 5e3)
 				};
-			var K = n("./src/reddit/components/Comments/Comment/TopMeta/crowdControl.m.less"),
-				q = n.n(K);
+			var q = n("./src/reddit/components/Comments/Comment/TopMeta/crowdControl.m.less"),
+				Q = n.n(q);
 			const {
-				fbt: Q
-			} = n("./node_modules/fbt/lib/FbtPublic.js"), Y = () => r.a.createElement(E.a, {
-				className: q.a.crowdControlText
-			}, Q._("Crowd Control", null, {
+				fbt: K
+			} = n("./node_modules/fbt/lib/FbtPublic.js"), Z = () => r.a.createElement(E.a, {
+				className: Q.a.crowdControlText
+			}, K._("Crowd Control", null, {
 				hk: "4WgEW"
 			}));
-			var Z = n("./src/reddit/components/Comments/Comment/TopMeta/edited.m.less"),
-				$ = n.n(Z);
+			var Y = n("./src/reddit/components/Comments/Comment/TopMeta/edited.m.less"),
+				$ = n.n(Y);
 			const {
 				fbt: ee
 			} = n("./node_modules/fbt/lib/FbtPublic.js"), te = e => {
@@ -1743,7 +1743,7 @@
 				})), !Object(O.f)(a) && u && r.a.createElement(g.a, {
 					postOrComment: a,
 					className: Oe.a.LastAuthorModNoteIcon
-				}), o && r.a.createElement(Y, null), r.a.createElement(xe, {
+				}), o && r.a.createElement(Z, null), r.a.createElement(xe, {
 					className: Oe.a.role,
 					comment: a,
 					subredditDisplayText: S,
@@ -1944,7 +1944,7 @@
 					isStrong: !!m,
 					onClick: M,
 					renderedInOverlay: A
-				}), o && r.a.createElement(Y, null), o && r.a.createElement(E.c, {
+				}), o && r.a.createElement(Z, null), o && r.a.createElement(E.c, {
 					className: Pe.a.metaText,
 					key: "crowdControlSeparator"
 				}), u && !B && r.a.createElement(Be, {
@@ -2889,7 +2889,7 @@
 				const t = Object(r.f)().getState(),
 					n = Object(h.a)(t, Object(a.c)());
 				if (e.isD2xPdpSideRailRecsEnabled) {
-					const t = e.d2xPdpSideRailRecsVariant === m.Kc.GreyRereddit || e.d2xPdpSideRailRecsVariant === m.Kc.GreyRedditNoNsfw || e.d2xPdpSideRailRecsVariant === m.Kc.LargeImagePreview ? e.reredditButtons : [];
+					const t = e.d2xPdpSideRailRecsVariant === m.Lc.GreyRereddit || e.d2xPdpSideRailRecsVariant === m.Lc.GreyRedditNoNsfw || e.d2xPdpSideRailRecsVariant === m.Lc.LargeImagePreview ? e.reredditButtons : [];
 					return o.a.createElement(y, {
 						reredditContent: t
 					})
@@ -3576,10 +3576,10 @@
 				r = n("./src/reddit/helpers/chooseVariant/index.ts"),
 				i = n("./src/reddit/selectors/posts.ts");
 			const a = e => Object(r.c)(e, {
-					experimentName: o.Qe,
+					experimentName: o.Re,
 					experimentEligibilitySelector: r.a
 				}),
-				d = (e, t) => t === o.Ye.Enabled && (null == e ? void 0 : e.isCreatedFromAdsUi) || (null == e ? void 0 : e.isSponsored),
+				d = (e, t) => t === o.Ze.Enabled && (null == e ? void 0 : e.isCreatedFromAdsUi) || (null == e ? void 0 : e.isSponsored),
 				c = Object(s.a)(i.G, a, (e, t) => d(e, t));
 			Object(s.a)((e, t) => t, a, (e, t) => d(e, t))
 		},
@@ -3597,4 +3597,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~SearchResults.8e68c30a7ebb8c1ed78c.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~SearchResults.66e7b5f796779daa38ea.js.map
