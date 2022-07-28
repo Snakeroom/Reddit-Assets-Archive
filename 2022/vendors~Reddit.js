@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/vendors~Reddit.15a6952c3900fe621912.js
-// Retrieved at 7/28/2022, 1:50:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/vendors~Reddit.cbef38e2333d8ac21b00.js
+// Retrieved at 7/28/2022, 4:40:08 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["vendors~Reddit"], {
 		"./node_modules/@r/frames/compiled.js": function(e, t, o) {
@@ -123,7 +123,7 @@
 				}
 			}).call(this, o("./node_modules/webpack/buildin/global.js"))
 		},
-		"./node_modules/@r/google-tag-manager/compiled.js": function(e, t, o) {
+		"./node_modules/@reddit/google-tag-manager/compiled.js": function(e, t, o) {
 			"use strict";
 			Object.defineProperty(t, "__esModule", {
 				value: !0
@@ -135,7 +135,7 @@
 					}
 					return e
 				},
-				r = o("./node_modules/@r/google-tag-manager/node_modules/uuid/index.js"),
+				r = o("./node_modules/@reddit/google-tag-manager/node_modules/uuid/index.js"),
 				a = function(e) {
 					if (e && e.__esModule) return e;
 					var t = {};
@@ -150,17 +150,23 @@
 					var e = document.getElementById(s);
 					return e && e.contentWindow ? e : null
 				},
-				d = t.getLocation = function() {
+				d = new URLSearchParams(location.search);
+			["code", "access_token", "state", "refresh_token", "id_token"].forEach((function(e) {
+				d.delete(e)
+			}));
+			var c = d.toString(),
+				f = "" + location.origin + location.pathname + (c ? "?" + c : ""),
+				p = t.getLocation = function() {
 					return {
-						href: location.href,
+						href: f,
 						hostname: location.hostname,
 						origin: location.origin,
 						pathname: location.pathname || "/",
-						search: location.search.replace(/^\?/, ""),
+						search: c,
 						hash: location.hash.replace(/^#/, "")
 					}
 				},
-				c = t.trigger = function(e, t) {
+				m = t.trigger = function(e, t) {
 					var o = u();
 					o && i ? (t && a.postMessage(o.contentWindow, "data.gtm", t), a.postMessage(o.contentWindow, "event.gtm", {
 						event: e
@@ -171,13 +177,13 @@
 						})
 					}(e, t)
 				},
-				f = function() {
+				y = function() {
 					if (u() && i) {
 						var e = l.slice();
 						l = [], e.forEach((function(e) {
 							var t = e.eventName,
 								o = e.payload;
-							return c(t, o)
+							return m(t, o)
 						}))
 					}
 				};
@@ -193,18 +199,18 @@
 						var l = document.createElement("iframe");
 						l.style.display = "none", l.id = s, l.name = JSON.stringify(n({
 							referrer: document.referrer
-						}, d(), r)), l.src = o + "?id=" + t, l.onload = f, document.body.appendChild(l)
+						}, p(), r)), l.src = o + "?id=" + t, l.onload = y, document.body.appendChild(l)
 					} else console.warn("GTM#setup: No `jailUrl` specified, skipping.");
 				else console.warn("GTM#setup: No `containerId` specified, skipping.")
 			}
 		},
-		"./node_modules/@r/google-tag-manager/node_modules/uuid/index.js": function(e, t, o) {
-			var n = o("./node_modules/@r/google-tag-manager/node_modules/uuid/v1.js"),
-				r = o("./node_modules/@r/google-tag-manager/node_modules/uuid/v4.js"),
+		"./node_modules/@reddit/google-tag-manager/node_modules/uuid/index.js": function(e, t, o) {
+			var n = o("./node_modules/@reddit/google-tag-manager/node_modules/uuid/v1.js"),
+				r = o("./node_modules/@reddit/google-tag-manager/node_modules/uuid/v4.js"),
 				a = r;
 			a.v1 = n, a.v4 = r, e.exports = a
 		},
-		"./node_modules/@r/google-tag-manager/node_modules/uuid/lib/bytesToUuid.js": function(e, t) {
+		"./node_modules/@reddit/google-tag-manager/node_modules/uuid/lib/bytesToUuid.js": function(e, t) {
 			for (var o = [], n = 0; n < 256; ++n) o[n] = (n + 256).toString(16).substr(1);
 			e.exports = function(e, t) {
 				var n = t || 0,
@@ -212,7 +218,7 @@
 				return r[e[n++]] + r[e[n++]] + r[e[n++]] + r[e[n++]] + "-" + r[e[n++]] + r[e[n++]] + "-" + r[e[n++]] + r[e[n++]] + "-" + r[e[n++]] + r[e[n++]] + "-" + r[e[n++]] + r[e[n++]] + r[e[n++]] + r[e[n++]] + r[e[n++]] + r[e[n++]]
 			}
 		},
-		"./node_modules/@r/google-tag-manager/node_modules/uuid/lib/rng-browser.js": function(e, t, o) {
+		"./node_modules/@reddit/google-tag-manager/node_modules/uuid/lib/rng-browser.js": function(e, t, o) {
 			(function(t) {
 				var o, n = t.crypto || t.msCrypto;
 				if (n && n.getRandomValues) {
@@ -231,9 +237,9 @@
 				e.exports = o
 			}).call(this, o("./node_modules/webpack/buildin/global.js"))
 		},
-		"./node_modules/@r/google-tag-manager/node_modules/uuid/v1.js": function(e, t, o) {
-			var n = o("./node_modules/@r/google-tag-manager/node_modules/uuid/lib/rng-browser.js"),
-				r = o("./node_modules/@r/google-tag-manager/node_modules/uuid/lib/bytesToUuid.js"),
+		"./node_modules/@reddit/google-tag-manager/node_modules/uuid/v1.js": function(e, t, o) {
+			var n = o("./node_modules/@reddit/google-tag-manager/node_modules/uuid/lib/rng-browser.js"),
+				r = o("./node_modules/@reddit/google-tag-manager/node_modules/uuid/lib/bytesToUuid.js"),
 				a = n(),
 				s = [1 | a[0], a[1], a[2], a[3], a[4], a[5]],
 				i = 16383 & (a[6] << 8 | a[7]),
@@ -256,9 +262,9 @@
 				return t || r(a)
 			}
 		},
-		"./node_modules/@r/google-tag-manager/node_modules/uuid/v4.js": function(e, t, o) {
-			var n = o("./node_modules/@r/google-tag-manager/node_modules/uuid/lib/rng-browser.js"),
-				r = o("./node_modules/@r/google-tag-manager/node_modules/uuid/lib/bytesToUuid.js");
+		"./node_modules/@reddit/google-tag-manager/node_modules/uuid/v4.js": function(e, t, o) {
+			var n = o("./node_modules/@reddit/google-tag-manager/node_modules/uuid/lib/rng-browser.js"),
+				r = o("./node_modules/@reddit/google-tag-manager/node_modules/uuid/lib/bytesToUuid.js");
 			e.exports = function(e, t, o) {
 				var a = t && o || 0;
 				"string" == typeof e && (t = "binary" == e ? new Array(16) : null, e = null);
@@ -637,9 +643,9 @@
 												O = T[0], w = T[1]
 											}
 											var I = l.default(m / 1e3, O, w, S.val, S.stiffness, S.damping, S.precision),
-												x = I[0],
-												k = I[1];
-											h[j] = O + (x - O) * a, _[j] = w + (k - w) * a, g[j] = O, b[j] = w
+												k = I[0],
+												x = I[1];
+											h[j] = O + (k - O) * a, _[j] = w + (x - w) * a, g[j] = O, b[j] = w
 										}
 									} f[y] = h, p[y] = _, i[y] = g, d[y] = b
 							}
@@ -839,14 +845,14 @@
 											var I = j[T];
 											if ("number" == typeof I) S[T] = I, O[T] = 0, w[T] = I, P[T] = 0;
 											else {
-												for (var x = _[b][T], k = g[b][T], E = 0; E < i; E++) {
-													var M = l.default(y / 1e3, x, k, I.val, I.stiffness, I.damping, I.precision);
-													x = M[0], k = M[1]
+												for (var k = _[b][T], x = g[b][T], E = 0; E < i; E++) {
+													var M = l.default(y / 1e3, k, x, I.val, I.stiffness, I.damping, I.precision);
+													k = M[0], x = M[1]
 												}
-												var D = l.default(y / 1e3, x, k, I.val, I.stiffness, I.damping, I.precision),
+												var D = l.default(y / 1e3, k, x, I.val, I.stiffness, I.damping, I.precision),
 													A = D[0],
 													V = D[1];
-												S[T] = x + (A - x) * s, O[T] = k + (V - k) * s, w[T] = x, P[T] = k
+												S[T] = k + (A - k) * s, O[T] = x + (V - x) * s, w[T] = k, P[T] = x
 											}
 										} _[b] = w, g[b] = P, p[b] = S, m[b] = O
 								}
@@ -1266,4 +1272,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/vendors~Reddit.15a6952c3900fe621912.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/vendors~Reddit.cbef38e2333d8ac21b00.js.map
