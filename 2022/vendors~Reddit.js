@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/vendors~Reddit.cbef38e2333d8ac21b00.js
-// Retrieved at 7/28/2022, 4:40:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/vendors~Reddit.9a9179fa2e6b1add241d.js
+// Retrieved at 8/1/2022, 6:30:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["vendors~Reddit"], {
 		"./node_modules/@r/frames/compiled.js": function(e, t, o) {
@@ -135,55 +135,87 @@
 					}
 					return e
 				},
-				r = o("./node_modules/@reddit/google-tag-manager/node_modules/uuid/index.js"),
-				a = function(e) {
+				r = function(e, t) {
+					if (Array.isArray(e)) return e;
+					if (Symbol.iterator in Object(e)) return function(e, t) {
+						var o = [],
+							n = !0,
+							r = !1,
+							a = void 0;
+						try {
+							for (var s, i = e[Symbol.iterator](); !(n = (s = i.next()).done) && (o.push(s.value), !t || o.length !== t); n = !0);
+						} catch (l) {
+							r = !0, a = l
+						} finally {
+							try {
+								!n && i.return && i.return()
+							} finally {
+								if (r) throw a
+							}
+						}
+						return o
+					}(e, t);
+					throw new TypeError("Invalid attempt to destructure non-iterable instance")
+				},
+				a = o("./node_modules/@reddit/google-tag-manager/node_modules/uuid/index.js"),
+				s = function(e) {
 					if (e && e.__esModule) return e;
 					var t = {};
 					if (null != e)
 						for (var o in e) Object.prototype.hasOwnProperty.call(e, o) && (t[o] = e[o]);
 					return t.default = e, t
 				}(o("./node_modules/@r/frames/compiled.js"));
-			var s = "gtm-" + (0, r.v4)(),
-				i = !1,
-				l = [],
-				u = function() {
-					var e = document.getElementById(s);
+			var i = "gtm-" + (0, a.v4)(),
+				l = !1,
+				u = [],
+				d = function() {
+					var e = document.getElementById(i);
 					return e && e.contentWindow ? e : null
 				},
-				d = new URLSearchParams(location.search);
-			["code", "access_token", "state", "refresh_token", "id_token"].forEach((function(e) {
-				d.delete(e)
+				c = ["code", "access_token", "state", "refresh_token", "id_token"],
+				f = new URLSearchParams(location.search);
+			c.forEach((function(e) {
+				f.delete(e)
 			}));
-			var c = d.toString(),
-				f = "" + location.origin + location.pathname + (c ? "?" + c : ""),
-				p = t.getLocation = function() {
+			var p = f.toString(),
+				m = "" + location.origin + location.pathname + (p ? "?" + p : ""),
+				y = [];
+			location.hash.replace(/^#/, "").split("&").forEach((function(e) {
+				var t = e.split("="),
+					o = r(t, 2),
+					n = o[0],
+					a = o[1];
+				c.includes(n) || y.push(n + "=" + a)
+			}));
+			var v = y.length ? "" + y.join("&") : "",
+				h = t.getLocation = function() {
 					return {
-						href: f,
+						href: m,
 						hostname: location.hostname,
 						origin: location.origin,
 						pathname: location.pathname || "/",
-						search: c,
-						hash: location.hash.replace(/^#/, "")
+						search: p,
+						hash: v
 					}
 				},
-				m = t.trigger = function(e, t) {
-					var o = u();
-					o && i ? (t && a.postMessage(o.contentWindow, "data.gtm", t), a.postMessage(o.contentWindow, "event.gtm", {
+				_ = t.trigger = function(e, t) {
+					var o = d();
+					o && l ? (t && s.postMessage(o.contentWindow, "data.gtm", t), s.postMessage(o.contentWindow, "event.gtm", {
 						event: e
 					})) : function(e, t) {
-						l.push({
+						u.push({
 							eventName: e,
 							payload: t
 						})
 					}(e, t)
 				},
-				y = function() {
-					if (u() && i) {
-						var e = l.slice();
-						l = [], e.forEach((function(e) {
+				g = function() {
+					if (d() && l) {
+						var e = u.slice();
+						u = [], e.forEach((function(e) {
 							var t = e.eventName,
 								o = e.payload;
-							return m(t, o)
+							return _(t, o)
 						}))
 					}
 				};
@@ -193,13 +225,13 @@
 					r = e.payload;
 				if (t)
 					if (o) {
-						a.listen("gtm"), a.receiveMessageOnce("loaded.gtm", (function() {
-							i = !0, a.stopListening("gtm")
+						s.listen("gtm"), s.receiveMessageOnce("loaded.gtm", (function() {
+							l = !0, s.stopListening("gtm")
 						}));
-						var l = document.createElement("iframe");
-						l.style.display = "none", l.id = s, l.name = JSON.stringify(n({
+						var a = document.createElement("iframe");
+						a.style.display = "none", a.id = i, a.name = JSON.stringify(n({
 							referrer: document.referrer
-						}, p(), r)), l.src = o + "?id=" + t, l.onload = y, document.body.appendChild(l)
+						}, h(), r)), a.src = o + "?id=" + t, a.onload = g, document.body.appendChild(a)
 					} else console.warn("GTM#setup: No `jailUrl` specified, skipping.");
 				else console.warn("GTM#setup: No `containerId` specified, skipping.")
 			}
@@ -1272,4 +1304,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/vendors~Reddit.cbef38e2333d8ac21b00.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/vendors~Reddit.9a9179fa2e6b1add241d.js.map
