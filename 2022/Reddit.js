@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Reddit.c6c760e91e79ddc1b158.js
-// Retrieved at 8/1/2022, 2:10:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Reddit.399bcea3f4b3a26cc05c.js
+// Retrieved at 8/1/2022, 2:50:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Reddit"], {
 		"./assets/fonts/BentonSans/font.less": function(e, t, n) {},
@@ -1071,36 +1071,42 @@
 		"./src/reddit/actions/economics/econManagement/index.ts": function(e, t, n) {
 			"use strict";
 			n.d(t, "c", (function() {
-				return v
-			})), n.d(t, "d", (function() {
-				return C
-			})), n.d(t, "b", (function() {
 				return y
-			})), n.d(t, "a", (function() {
+			})), n.d(t, "f", (function() {
 				return E
+			})), n.d(t, "b", (function() {
+				return x
+			})), n.d(t, "a", (function() {
+				return j
+			})), n.d(t, "d", (function() {
+				return _
+			})), n.d(t, "e", (function() {
+				return P
 			}));
 			var s = n("./src/lib/makeActionCreator/index.ts"),
 				r = n("./src/reddit/actions/economics/econManagement/constants.ts"),
 				o = n("./src/reddit/actions/toaster.ts"),
 				a = n("./src/lib/makeGqlRequest/index.ts"),
 				i = n("./src/redditGQL/operations/EconAdminPanelQuery.json"),
-				c = n("./src/redditGQL/operations/PerformEconAdminAction.json");
-			var l = n("./src/reddit/models/Toast/index.ts"),
-				d = n("./src/reddit/routes/econManagement/index.ts"),
-				u = n("./src/reddit/selectors/econManagement.ts"),
-				m = n("./src/reddit/selectors/user.ts");
-			const p = Object(s.a)(r.c),
-				b = Object(s.a)(r.b),
-				h = Object(s.a)(r.e),
-				g = Object(s.a)(r.f),
-				f = Object(s.a)(r.d),
-				O = Object(s.a)(r.a),
-				v = () => async (e, t, n) => {
+				c = n("./src/redditGQL/operations/GiveCoins.json"),
+				l = n("./src/redditGQL/operations/PerformEconAdminAction.json"),
+				d = n("./src/redditGQL/operations/RemoveCoins.json");
+			var u = n("./src/reddit/models/Toast/index.ts"),
+				m = n("./src/reddit/routes/econManagement/index.ts"),
+				p = n("./src/reddit/selectors/econManagement.ts"),
+				b = n("./src/reddit/selectors/user.ts");
+			const h = Object(s.a)(r.c),
+				g = Object(s.a)(r.b),
+				f = Object(s.a)(r.e),
+				O = Object(s.a)(r.f),
+				v = Object(s.a)(r.d),
+				C = Object(s.a)(r.a),
+				y = () => async (e, t, n) => {
 					let {
 						gqlContext: s
 					} = n;
 					const r = t(),
-						c = Object(m.k)(r);
+						c = Object(b.k)(r);
 					if (c && c.isEmployee) try {
 						const t = await (async e => {
 							const t = await Object(a.a)(e, {
@@ -1114,28 +1120,28 @@
 							const n = t.body.data.econAdminPanel.response;
 							return JSON.parse(n)
 						})(s());
-						e(p(t))
-					} catch (d) {
-						e(b()), e(Object(o.f)({
+						e(h(t))
+					} catch (l) {
+						e(g()), e(Object(o.f)({
 							duration: o.a,
-							kind: l.b.Error,
-							text: d.message
+							kind: u.b.Error,
+							text: l.message
 						}))
 					}
-				}, C = e => async (t, n, s) => {
+				}, E = e => async (t, n, s) => {
 					let {
 						gqlContext: r
 					} = s;
 					const c = n(),
-						u = Object(m.k)(c);
-					if (u && u.isEmployee) {
+						l = Object(b.k)(c);
+					if (l && l.isEmployee) {
 						if ("undefined" != typeof window) {
-							const t = `?${d.b}=${e}`;
+							const t = `?${m.b}=${e}`;
 							window.history.pushState({
 								path: t
 							}, "", t)
 						}
-						t(h());
+						t(f());
 						try {
 							const n = await (async (e, t) => {
 								const n = await Object(a.a)(e, {
@@ -1151,24 +1157,24 @@
 								const s = n.body.data.econAdminPanel.response;
 								return JSON.parse(s)
 							})(r(), e);
-							t(g(n))
-						} catch (p) {
-							t(f()), t(Object(o.f)({
+							t(O(n))
+						} catch (d) {
+							t(v()), t(Object(o.f)({
 								duration: o.a,
-								kind: l.b.Error,
-								text: p.message
+								kind: u.b.Error,
+								text: d.message
 							}))
 						}
 					}
-				}, y = e => async (t, n, s) => {
+				}, x = e => async (t, n, s) => {
 					let {
 						gqlContext: r
 					} = s;
 					const c = n(),
-						d = Object(m.k)(c);
-					if (!d || !d.isEmployee) return;
-					const p = Object(u.b)(c);
-					if (p) try {
+						l = Object(b.k)(c);
+					if (!l || !l.isEmployee) return;
+					const d = Object(p.b)(c);
+					if (d) try {
 						const n = await (async (e, t, n) => {
 							const s = await Object(a.a)(e, {
 								...i,
@@ -1183,32 +1189,32 @@
 							if (!s.ok) throw new Error(`Unable to fetch ${n} data for ${t}`);
 							const r = s.body.data.econAdminPanel.response;
 							return JSON.parse(r)
-						})(r(), p.prefixedId, e);
-						t(O({
+						})(r(), d.prefixedId, e);
+						t(C({
 							entity: n,
 							type: e
 						}))
-					} catch (b) {
+					} catch (m) {
 						t(Object(o.f)({
 							duration: o.a,
-							kind: l.b.Error,
-							text: b.message
+							kind: u.b.Error,
+							text: m.message
 						}))
 					}
-				}, E = (e, t, n) => async (s, r, i) => {
+				}, j = (e, t, n) => async (s, r, i) => {
 					let {
-						gqlContext: p
+						gqlContext: c
 					} = i;
-					var b;
+					var d;
 					const h = r(),
-						g = Object(m.k)(h);
-					if (g && g.isEmployee && Object(u.b)(h)) try {
+						g = Object(b.k)(h);
+					if (g && g.isEmployee && Object(p.b)(h)) try {
 						await (async (e, t, n, s) => {
 							const r = s ? {
 								params: s
 							} : {};
 							if (!(await Object(a.a)(e, {
-									...c,
+									...l,
 									variables: {
 										input: {
 											name: n,
@@ -1219,18 +1225,68 @@
 										}
 									}
 								})).ok) throw new Error(`Unable to perform ${n} on ${t} with ${JSON.stringify(r)}`)
-						})(p(), e, t, n), s(Object(o.f)({
+						})(c(), e, t, n), s(Object(o.f)({
 							duration: o.a,
-							kind: l.b.SuccessCommunityGreen,
+							kind: u.b.SuccessCommunityGreen,
 							text: `${t} executed successfully for ${e}`
 						}));
-						const r = null === (b = h.platform.currentPage) || void 0 === b ? void 0 : b.queryParams[d.b];
-						r && s(C(r))
+						const r = null === (d = h.platform.currentPage) || void 0 === d ? void 0 : d.queryParams[m.b];
+						r && s(E(r))
 					} catch (f) {
 						s(Object(o.f)({
 							duration: o.a,
-							kind: l.b.Error,
+							kind: u.b.Error,
 							text: f.message
+						}))
+					}
+				}, _ = (e, t) => async (n, s, r) => {
+					let {
+						gqlContext: i
+					} = r;
+					const l = s(),
+						d = Object(b.k)(l);
+					if (d && d.isEmployee) try {
+						await (async (e, t, n) => {
+							if (!(await Object(a.a)(e, {
+									...c,
+									variables: {
+										input: {
+											redditorId: t,
+											amount: n
+										}
+									}
+								})).ok) throw new Error(`Could not give ${n} coins to ${t}`)
+						})(i(), e, t)
+					} catch (m) {
+						n(Object(o.f)({
+							duration: o.a,
+							kind: u.b.Error,
+							text: m.message
+						}))
+					}
+				}, P = (e, t) => async (n, s, r) => {
+					let {
+						gqlContext: i
+					} = r;
+					const c = s(),
+						l = Object(b.k)(c);
+					if (l && l.isEmployee) try {
+						await (async (e, t, n) => {
+							if (!(await Object(a.a)(e, {
+									...d,
+									variables: {
+										input: {
+											redditorId: t,
+											amount: n
+										}
+									}
+								})).ok) throw new Error(`Could not remove ${n} coins from ${t}`)
+						})(i(), e, t)
+					} catch (m) {
+						n(Object(o.f)({
+							duration: o.a,
+							kind: u.b.Error,
+							text: m.message
 						}))
 					}
 				}
@@ -19700,8 +19756,14 @@
 		"./src/redditGQL/operations/FetchSpecialEvents.json": function(e) {
 			e.exports = JSON.parse('{"id":"6c73f2f0b64f"}')
 		},
+		"./src/redditGQL/operations/GiveCoins.json": function(e) {
+			e.exports = JSON.parse('{"id":"385450867622"}')
+		},
 		"./src/redditGQL/operations/PerformEconAdminAction.json": function(e) {
 			e.exports = JSON.parse('{"id":"de8b0fb0be5d"}')
+		},
+		"./src/redditGQL/operations/RemoveCoins.json": function(e) {
+			e.exports = JSON.parse('{"id":"1011718c41db"}')
 		},
 		"./src/redditGQL/operations/SearchTypeahead.json": function(e) {
 			e.exports = JSON.parse('{"id":"bf81661622b4"}')
@@ -19743,4 +19805,4 @@
 		["./src/reddit/index.tsx", "runtime~Reddit", "vendors~CommentsPage~ModerationPages~Reddit~reddit-components-ClassicPost~reddit-components-CompactP~d737df3e", "vendors~CommentsPage~Governance~ModListing~ModerationPages~Reddit~Subreddit", "vendors~Chat~Governance~Reddit", "vendors~Reddit", "CommentsPage~Governance~Reddit~ReportFlow~Subreddit~reddit-components-BlankPost~reddit-components-Cl~5351df81", "PostCreation~Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~r~4c415e24", "Governance~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compo~bd4baca2", "Governance~ModListing~Reddit~ReportFlow~Subreddit", "Chat~Governance~Reddit", "Governance~Reddit~Subreddit", "Governance~Reddit~SubredditForkingCTA", "Governance~Reddit", "Reddit~StandalonePostPage", "AuthorHovercard~Reddit"]
 	]
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit.c6c760e91e79ddc1b158.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit.399bcea3f4b3a26cc05c.js.map

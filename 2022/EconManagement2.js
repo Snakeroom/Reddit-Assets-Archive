@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/EconManagement2.e0a3e0ee9b2018533dd0.js
-// Retrieved at 7/25/2022, 3:10:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/EconManagement2.046840a0b70366cbeaae.js
+// Retrieved at 8/1/2022, 2:50:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["EconManagement2"], {
 		"./src/reddit/controls/SearchBar/index.m.less": function(e, a, t) {
@@ -110,7 +110,7 @@
 				return r.a.createElement(c.a, {
 					className: o.a.searchBar,
 					onKeyPress: a => {
-						13 === a.charCode && t(Object(l.d)(e))
+						13 === a.charCode && t(Object(l.f)(e))
 					},
 					onTextChange: e => {
 						a(e.currentTarget.value)
@@ -157,12 +157,18 @@
 					}),
 					className: p.a.coinsInput
 				})), r.a.createElement("td", null, r.a.createElement(d.t, {
+					onClick: n => {
+						a && confirm(`Give ${a} coins to ${e.id}?`) && (o(Object(l.d)(e.id, a)), t(0))
+					},
 					className: p.a.actionButton,
 					priority: d.c.Primary,
 					disabled: !a || a < 1
 				}, b._("Give Coins", null, {
 					hk: "2DtgNR"
 				}))), r.a.createElement("td", null, r.a.createElement(d.f, {
+					onClick: n => {
+						a && confirm(`Remove ${a} coins from ${e.id}?`) && (o(Object(l.e)(e.id, a)), t(0))
+					},
 					className: p.a.actionButton,
 					disabled: !a || a < 1
 				}, b._("Remove Coins", null, {
@@ -243,7 +249,7 @@
 				f = t.n(N);
 			const {
 				fbt: y
-			} = t("./node_modules/fbt/lib/FbtPublic.js"), T = e => {
+			} = t("./node_modules/fbt/lib/FbtPublic.js"), C = e => {
 				let {
 					userData: a,
 					activeSubscription: t
@@ -262,21 +268,21 @@
 					fields: JSON.parse(t.source)
 				}))
 			};
-			var C = t("./src/lib/classNames/index.ts"),
-				I = t("./src/reddit/pages/EconManagement2/EMSearchResult/EMTransactionsTable/EMSubscriptions/EMSubscriptionRow/index.m.less"),
-				O = t.n(I);
+			var T = t("./src/lib/classNames/index.ts"),
+				O = t("./src/reddit/pages/EconManagement2/EMSearchResult/EMTransactionsTable/EMSubscriptions/EMSubscriptionRow/index.m.less"),
+				I = t.n(O);
 			const {
 				fbt: P
 			} = t("./node_modules/fbt/lib/FbtPublic.js"), j = e => {
 				const a = Object(s.d)();
 				return r.a.createElement("tr", {
-					className: Object(C.a)({
-						[O.a.activeRow]: U.some(a => "state" === a && "ACTIVE" === e.subscription[a].value)
+					className: Object(T.a)({
+						[I.a.activeRow]: U.some(a => "state" === a && "ACTIVE" === e.subscription[a].value)
 					})
 				}, U.map(a => r.a.createElement("td", {
 					key: a
 				}, e.subscription[a].value)), r.a.createElement("td", null, r.a.createElement("button", {
-					className: O.a.actionButton,
+					className: I.a.actionButton,
 					onClick: t => {
 						const n = e.subscription.subscription_id.value;
 						confirm(`Cancel subscription ${n}?`) && a(Object(l.a)(`Order:${n}`, v.CANCEL_SUBSCRIPTION))
@@ -284,7 +290,7 @@
 				}, P._("Cancel Subscription", null, {
 					hk: "3pBm2E"
 				})), r.a.createElement("button", {
-					className: O.a.actionButton,
+					className: I.a.actionButton,
 					onClick: t => {
 						const n = prompt("Tranfer to user id");
 						n && a(Object(l.a)(`User:${e.userId}`, v.TRANSFER_SUBSCRIPTION, {
@@ -316,7 +322,7 @@
 				const [a, t] = Object(n.useState)(D.ORDERS), s = Object.values(D).map(e => r.a.createElement("button", {
 					key: e,
 					onClick: () => t(e),
-					className: Object(C.a)(F.a.tab, {
+					className: Object(T.a)(F.a.tab, {
 						[F.a.selectedTab]: a === e
 					})
 				}, e));
@@ -335,7 +341,7 @@
 			};
 			var V = t("./src/reddit/pages/EconManagement2/EMSearchResult/index.m.less"),
 				L = t.n(V);
-			const G = () => {
+			const $ = () => {
 				const e = Object(s.e)(u.b),
 					a = e && (e => {
 						const a = e.userData.value,
@@ -357,7 +363,7 @@
 					n = null == t ? void 0 : t.find(e => "ACTIVE" === e.state.value);
 				return r.a.createElement("div", null, a && r.a.createElement(r.a.Fragment, null, r.a.createElement(g, a), r.a.createElement("div", {
 					className: L.a.moreDetailsSection
-				}, r.a.createElement(T, {
+				}, r.a.createElement(C, {
 					userData: a,
 					activeSubscription: n
 				}), t && r.a.createElement(K, {
@@ -369,8 +375,8 @@
 				className: o.a.container
 			}, r.a.createElement("div", {
 				className: o.a.searchContainer
-			}, r.a.createElement(m, null)), r.a.createElement(G, null))
+			}, r.a.createElement(m, null)), r.a.createElement($, null))
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EconManagement2.e0a3e0ee9b2018533dd0.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EconManagement2.046840a0b70366cbeaae.js.map

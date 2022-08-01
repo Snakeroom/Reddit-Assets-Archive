@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/EconManagement.a03cfec34f305a5264c4.js
-// Retrieved at 3/28/2022, 6:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/EconManagement.f197b34b30800755093b.js
+// Retrieved at 8/1/2022, 2:50:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["EconManagement"], {
 		"./src/lib/currency/centsToDollars/index.ts": function(e, a, t) {
@@ -381,7 +381,7 @@
 			var V = t("./src/reddit/controls/SearchBar/index.tsx");
 			const C = () => {
 				const [e, a] = Object(c.useState)(""), t = Object(s.d)(), n = () => {
-					t(Object(i.d)(e))
+					t(Object(i.f)(e))
 				};
 				return r.a.createElement(V.a, {
 					className: g.a.searchBar,
@@ -430,4 +430,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EconManagement.a03cfec34f305a5264c4.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EconManagement.f197b34b30800755093b.js.map
