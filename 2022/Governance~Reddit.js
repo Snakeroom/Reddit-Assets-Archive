@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~Reddit.e9332b38d92e7d0ff03d.js
-// Retrieved at 8/1/2022, 10:20:09 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~Reddit.5e69e6164978adff2f5b.js
+// Retrieved at 8/1/2022, 2:10:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~Reddit"], {
 		"./assets/fonts/NotoMono/font.less": function(e, t, n) {},
@@ -4024,7 +4024,7 @@
 						searchQuery: _.searchQuery,
 						structureType: E.c.Recent
 					};
-					k(Object(y.y)(y.a.RECENT, e, D, D, _))
+					k(Object(y.z)(y.a.RECENT, e, D, D, _))
 				}, []);
 				const F = e => e.subredditOrProfileRestrictedName ? `${e.subredditOrProfileRestrictedName} ${e.searchQuery}` : e.searchQuery,
 					{
@@ -4234,7 +4234,7 @@
 						searchQuery: a.searchQuery,
 						structureType: E.c.Search
 					};
-					C(Object(y.y)(y.a.TYPEAHEAD, e, o, _, a))
+					C(Object(y.z)(y.a.TYPEAHEAD, e, o, _, a))
 				}, []);
 				return s.a.createElement(d.a, {
 					"aria-label": a.searchQuery,
@@ -4361,7 +4361,7 @@
 						eventType: Boolean(w) ? "subreddit" : void 0
 					};
 				return Object(r.useEffect)(() => {
-					_(Object(y.t)(x, w, l, I || void 0))
+					_(Object(y.u)(x, w, l, I || void 0))
 				}, []), s.a.createElement(d.a, {
 					onClick: function(e) {
 						_(Object(y.o)(E.a.FullSearchButton, x, w, k.a.Typeahead, I || void 0)), p(e)
@@ -4434,7 +4434,7 @@
 					"data-testid": ce,
 					onClick: () => (e => {
 						const t = v ? y.a.COLLAPSE_NSFW : y.a.EXPAND_NSFW;
-						b(Object(y.s)(t, e)), E(!v)
+						b(Object(y.t)(t, e)), E(!v)
 					})(i)
 				}, s.a.createElement("p", {
 					className: Object(c.a)(T.a.listItemText, T.a.mTypeahead)
@@ -24748,4 +24748,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit.e9332b38d92e7d0ff03d.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit.5e69e6164978adff2f5b.js.map

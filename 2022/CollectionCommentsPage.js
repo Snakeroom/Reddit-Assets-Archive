@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage.4bb32b77863ae1f062c0.js
-// Retrieved at 8/1/2022, 10:20:09 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage.d36bb44a3c856c10ad8b.js
+// Retrieved at 8/1/2022, 2:10:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage"], {
 		"./node_modules/linkify-it/index.js": function(e, t, s) {
@@ -2843,13 +2843,14 @@
 						subredditType: de,
 						trackCommentClick: ce,
 						userIconSmall: le,
-						userIsBanned: me
-					} = e, ue = m.isDeleted, pe = !L && !ue && !!f && f.length > 0, be = Object(l.a)(d.c.edit, m.id), he = Object(l.a)(d.c.replyToComment, m.id), ge = Object(T.a)(U), xe = Object(Ge.a)(m), fe = Object($.c)(m), Ce = m.authorIsContractor && de === dt.f.EmployeesOnly, ve = m.isLocked, _e = ge && z, Oe = !L && !ue && (M || w), ye = w && !m.unrepliableReason, Ee = !!g && Object(ct.e)(g) === m.author, [je, ke] = Object(o.useState)(null), [Pe, Ie] = Object(o.useState)(null), we = Object(o.useRef)(null), Se = Object(F.f)(m) || Object(F.g)(m), Ne = Se ? Bt : rt.default, Te = Object(F.f)(m) ? Dt : Ft;
+						userIsBanned: me,
+						onClickRevealSpoilerText: ue
+					} = e, pe = m.isDeleted, be = !L && !pe && !!f && f.length > 0, he = Object(l.a)(d.c.edit, m.id), ge = Object(l.a)(d.c.replyToComment, m.id), xe = Object(T.a)(U), fe = Object(Ge.a)(m), Ce = Object($.c)(m), ve = m.authorIsContractor && de === dt.f.EmployeesOnly, _e = m.isLocked, Oe = xe && z, ye = !L && !pe && (M || w), Ee = w && !m.unrepliableReason, je = !!g && Object(ct.e)(g) === m.author, [ke, Pe] = Object(o.useState)(null), [Ie, we] = Object(o.useState)(null), Se = Object(o.useRef)(null), Ne = Object(F.f)(m) || Object(F.g)(m), Te = Ne ? Bt : rt.default, Le = Object(F.f)(m) ? Dt : Ft;
 					Object(o.useEffect)(() => {
-						if (!L && !ue && (O && ke(r.a.createElement(Ve, null)), null !== j)) {
+						if (!L && !pe && (O && Pe(r.a.createElement(Ve, null)), null !== j)) {
 							if (j.glowHexColor) {
 								const e = j.glowHexColor;
-								ke(r.a.createElement(Me, {
+								Pe(r.a.createElement(Me, {
 									hexColor: e
 								}))
 							}
@@ -2858,35 +2859,35 @@
 									type: e,
 									assetUrl: t
 								} = j.effectHighlight;
-								Ie(r.a.createElement(We.b, {
+								we(r.a.createElement(We.b, {
 									prefersReducedAnimation: E,
 									type: e,
 									assetUrl: t
 								}))
 							}
 						}
-					}, [L, ue, O, E, j]);
-					const Le = Object(nt.b)();
-					(S || N) && Le && k >= bt.a - 1 && re();
-					const Fe = !ue && !Object(F.f)(m) && (!me || me && Ee) && !Object(F.g)(m) && M,
-						Re = Object(o.useCallback)(() => {
-							Fe && W && !Ee && J && J(m.id)
-						}, [m.id, J, Fe, W, Ee]),
-						Ae = Object(et.a)(m),
-						Be = !!g && Object(ct.e)(g) === m.author ? null == g ? void 0 : g.accountIcon : m.profileImage,
-						De = Object(Et.c)(Be),
-						Ue = !(!De && !ie) && Object(Et.b)(Be);
+					}, [L, pe, O, E, j]);
+					const Fe = Object(nt.b)();
+					(S || N) && Fe && k >= bt.a - 1 && re();
+					const Re = !pe && !Object(F.f)(m) && (!me || me && je) && !Object(F.g)(m) && M,
+						Ae = Object(o.useCallback)(() => {
+							Re && W && !je && J && J(m.id)
+						}, [m.id, J, Re, W, je]),
+						Be = Object(et.a)(m),
+						De = !!g && Object(ct.e)(g) === m.author ? null == g ? void 0 : g.accountIcon : m.profileImage,
+						Ue = Object(Et.c)(De),
+						He = !(!Ue && !ie) && Object(Et.b)(De);
 					return r.a.createElement("div", {
 						key: `comment-${m.id}`,
 						className: Object(c.a)(`Comment ${m.id}`, Ot.a.CommentWrapper, {
 							[Ot.a.highlightComment]: A,
-							[Ot.a.deleted]: ue,
+							[Ot.a.deleted]: pe,
 							[Ot.a.focused]: _,
 							[Ot.a.redesign]: w,
 							[Ot.a.topLevel]: !x,
 							[Ot.a.noSpacing]: H
 						})
-					}, je, Pe, !L && !ue && R && r.a.createElement("div", {
+					}, ke, Ie, !L && !pe && R && r.a.createElement("div", {
 						className: Ot.a.commentPerfMarkVisibility,
 						dangerouslySetInnerHTML: {
 							__html: `\n                <img alt='' src='${yt.a.assetPath}/img/renderTimingPixel.png' style='width: 1px; height: 1px;' onLoad='(__markFirstCommentVisible || function(){})();' />\n              `
@@ -2901,7 +2902,7 @@
 						},
 						onMouseOver: () => Q(m.id),
 						onMouseOut: s
-					}), r.a.createElement(Te, {
+					}), r.a.createElement(Le, {
 						alwaysShowChildren: !0,
 						collapsed: i,
 						hoverDivClassName: Ot.a.AuthorHoverDiv,
@@ -2909,30 +2910,30 @@
 						postOrComment: m,
 						tooltipIdPrefix: "AvatarUserInfoTooltip",
 						tooltipType: te ? Qe.c.Lightbox : void 0
-					}, r.a.createElement(Ne, {
+					}, r.a.createElement(Te, {
 						className: Object(c.a)(Ot.a.UserIconContainer, le && Ot.a.UserIconContainerSmall),
-						"data-testid": Se ? void 0 : "comment_author_icon",
-						onClick: Se ? void 0 : K,
+						"data-testid": Ne ? void 0 : "comment_author_icon",
+						onClick: Ne ? void 0 : K,
 						to: `/user/${m.author}/`
-					}, Le ? r.a.createElement(r.a.Fragment, null, y && !Ue && r.a.createElement("div", {
+					}, Fe ? r.a.createElement(r.a.Fragment, null, y && !He && r.a.createElement("div", {
 						className: Ot.a.supporterRing
 					}), r.a.createElement(Ze.a, {
-						isNft: Ue,
+						isNft: He,
 						className: Object(c.a)(Ot.a.UserIcon, {
-							[Ot.a.v1NftTreatment]: De
+							[Ot.a.v1NftTreatment]: Ue
 						}),
-						iconUrl: Be,
+						iconUrl: De,
 						isNSFW: m.profileOver18 || !1,
 						nsfwIconUrl: Xe.a,
 						userName: m.author,
 						isHighlighted: A,
-						shouldShowPresenceIndicator: Fe && W,
-						onPresenceIndicatorInViewport: Re,
+						shouldShowPresenceIndicator: Re && W,
+						onPresenceIndicatorInViewport: Ae,
 						isCommentAuthorBlocked: Object(F.g)(m),
 						collapsed: i,
-						shouldUseOnlineOverride: Ee,
+						shouldUseOnlineOverride: je,
 						isOnlineOverrideValue: D,
-						isOnlineStatusLoadTest: Fe && B,
+						isOnlineStatusLoadTest: Re && B,
 						authorId: m.authorId
 					})) : r.a.createElement("div", {
 						className: Ot.a.UserIcon
@@ -2940,14 +2941,14 @@
 						className: Object(c.a)({
 							[Ot.a.isActive]: P,
 							[Ot.a.isCollapsed]: i,
-							[Ot.a.isLocked]: ve && _e,
+							[Ot.a.isLocked]: _e && Oe,
 							[Ot.a.isPendingDeletion]: V,
-							[Ot.a.isRemoved]: !!m.bannedBy && _e || m.isDeleted && I
+							[Ot.a.isRemoved]: !!m.bannedBy && Oe || m.isDeleted && I
 						})
 					}, r.a.createElement(it.a, null, n.fbt._("level {depth}", [n.fbt._param("depth", x + 1)], {
 						hk: "2XnyAV"
 					})), r.a.createElement(Tt, {
-						userHasNft: Ue,
+						userHasNft: He,
 						childrenInfo: t,
 						className: Object(c.a)({
 							[Ot.a.collapsed]: i,
@@ -2963,14 +2964,14 @@
 						onCommentAuthorClick: K,
 						onCommentTimestampClick: q,
 						renderedInOverlay: te,
-						renderContractorBadge: Ce
+						renderContractorBadge: ve
 					}), !i && r.a.createElement(o.Fragment, null, L && r.a.createElement(h.a, {
 						className: Object(c.a)(Ot.a.EditCommentForm, Ot.a.CommentCreation),
 						autofocus: !0,
 						commentsPageKey: u,
 						depth: x,
 						draftType: d.c.edit,
-						draftKey: be,
+						draftKey: he,
 						postId: X,
 						rtJson: Object(et.a)(m),
 						mediaMetadata: m.media && m.media.mediaMetadata || void 0,
@@ -2979,34 +2980,35 @@
 						submitAction: e => Object(p.j)({
 							id: m.id,
 							commentsPageKey: u,
-							draftKey: be,
+							draftKey: he,
 							formData: e
 						}),
 						submitButtonText: n.fbt._("Save Edits", null, {
 							hk: "2NKEFr"
 						})
-					}), !L && (!ue || I) && r.a.createElement("div", {
+					}), !L && (!pe || I) && r.a.createElement("div", {
 						"data-testid": tt.d,
-						ref: we,
+						ref: Se,
 						className: Object(c.a)(Ot.a.CommentBody, {
-							[Ot.a.restrictHeight]: !(!ne || !we.current) && we.current.clientHeight > kt
+							[Ot.a.restrictHeight]: !(!ne || !Se.current) && Se.current.clientHeight > kt
 						})
 					}, ee ? r.a.createElement(ze.a, {
 						comment: m,
 						prediction: ee
 					}) : r.a.createElement(Je.b, {
-						content: Ae,
+						content: Be,
 						mediaMetadata: m.media && m.media.mediaMetadata,
 						redditStyle: oe,
-						rtJsonElementProps: Mt(e)
+						rtJsonElementProps: Mt(e),
+						onClickRevealSpoilerText: ue
 					}), r.a.createElement(mt.b, {
-						content: Ae
-					})), z && ge && xe && r.a.createElement(qe.a, {
+						content: Be
+					})), z && xe && fe && r.a.createElement(qe.a, {
 						thing: m
-					}), z && ge && fe && r.a.createElement(Ye.a, {
+					}), z && xe && Ce && r.a.createElement(Ye.a, {
 						onIgnoreReports: Y,
 						reportable: m
-					}), null != v ? v : Oe && r.a.createElement(Nt, null, ye && r.a.createElement(St, {
+					}), null != v ? v : ye && r.a.createElement(Nt, null, Ee && r.a.createElement(St, {
 						downvoteButtonClassName: Ot.a.voteButton,
 						downvoteClassName: Ot.a.upDownVote,
 						model: m,
@@ -3026,7 +3028,7 @@
 						isCommentFocused: _,
 						subreddit: ae,
 						trackCommentClick: ce
-					})), pe && f.map(e => r.a.createElement(wt, {
+					})), be && f.map(e => r.a.createElement(wt, {
 						key: e
 					}, e)), se && r.a.createElement(h.a, {
 						className: Object(c.a)(Ot.a.EditCommentForm, Ot.a.CommentCreation),
@@ -3034,7 +3036,7 @@
 						commentsPageKey: u,
 						depth: x,
 						draftType: d.c.replyToComment,
-						draftKey: he,
+						draftKey: ge,
 						isTopLevelComment: !1,
 						parentCommentId: m.id,
 						postId: X,
@@ -3045,14 +3047,14 @@
 							} = e;
 							return s ? Object(p.v)({
 								commentsPageKey: u,
-								draftKey: he,
+								draftKey: ge,
 								parentCommentDepth: x,
 								parentCommentId: m.id,
 								formData: n,
 								editorMode: t
 							}) : Object(p.o)({
 								commentsPageKey: u,
-								draftKey: he,
+								draftKey: ge,
 								parentCommentDepth: x,
 								parentCommentId: m.id,
 								formData: n,
@@ -11307,4 +11309,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage.4bb32b77863ae1f062c0.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage.d36bb44a3c856c10ad8b.js.map

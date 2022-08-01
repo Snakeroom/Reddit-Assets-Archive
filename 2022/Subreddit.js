@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Subreddit.3ee718bbd04d27a538ae.js
-// Retrieved at 8/1/2022, 10:20:09 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Subreddit.c125b7989ffa5591e52e.js
+// Retrieved at 8/1/2022, 2:10:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Subreddit", "Frontpage~ModListing", "reddit-components-Econ-PredictionLeaderboard-Sidebar"], {
 		"./node_modules/@reddit/i18n-tools/runtime/helpers/locale/index.js": function(e, t, n) {
@@ -8442,10 +8442,12 @@
 					super(e), this.tooltipTargetElement = null, this.onClick = e => {
 						const {
 							isOpen: t
-						} = this.state;
+						} = this.state, {
+							onClickReveal: n
+						} = this.props;
 						t || (e.preventDefault(), e.stopPropagation(), this.setState({
 							isOpen: !0
-						}))
+						}), null == n || n(e))
 					}, this.setTooltipTargetRef = e => this.tooltipTargetElement = e, this.onShowTooltip = () => {
 						this.state.isOpen || this.setState({
 							showTooltip: !0
@@ -8707,8 +8709,9 @@
 						renderMediaAsLinks: b,
 						rtJsonElementProps: x,
 						useExplicitTextColor: y,
-						shouldBlur: O
-					} = e, S = s.document, k = [], N = e.mediaMetadata || null, w = j(S), P = C(S);
+						shouldBlur: O,
+						onClickRevealSpoilerText: S
+					} = e, k = s.document, N = [], w = e.mediaMetadata || null, P = j(k), I = C(k);
 					if (O && !r && !a) return i.a.createElement(E, {
 						className: Object(c.a)(m.j, n)
 					}, i.a.createElement("div", {
@@ -8717,47 +8720,47 @@
 						className: v.a.unblurButton,
 						onClick: l
 					}, Object(u.b)(!!o, !!d))));
-					if (-1 !== w)
-						for (let i = w; i <= P; i++) {
-							const e = S[i];
+					if (-1 !== P)
+						for (let i = P; i <= I; i++) {
+							const e = k[i];
 							switch (e.e) {
 								case h.k:
-									k.push(g.c(e, x, i));
+									N.push(g.c(e, x, i));
 									break;
 								case h.l:
-									k.push(g.d(i));
+									N.push(g.d(i));
 									break;
 								case h.b:
-									k.push(g.a(e, N, x, i));
+									N.push(g.a(e, w, x, i));
 									break;
 								case h.c:
-									k.push(g.b(e, i));
+									N.push(g.b(e, i));
 									break;
 								case h.p:
-									k.push(g.f(e, N, x, i));
+									N.push(g.f(e, w, x, i, S));
 									break;
 								case h.z:
-									k.push(g.h(e, N, x, i));
+									N.push(g.h(e, w, x, i, S));
 									break;
 								case h.u:
-									k.push(g.g(e, N, x, i));
+									N.push(g.g(e, w, x, i, S));
 									break;
 								case h.h:
-									k.push(Object(f.a)(e, i));
+									N.push(Object(f.a)(e, i));
 									break;
 								case h.m:
 								case h.a:
 								case h.D:
-									k.push(...Object(f.b)(e, i, x, N, b, p, t))
+									N.push(...Object(f.b)(e, i, x, w, b, p, t))
 							}
 						}
 					return y ? i.a.createElement(E, {
 						className: Object(c.a)(m.j, n)
-					}, k) : i.a.createElement(_, {
+					}, N) : i.a.createElement(_, {
 						className: Object(c.a)(m.j, n),
 						flairStyleTemplate: e.flairStyleTemplate,
 						redditStyle: e.redditStyle
-					}, k)
+					}, N)
 				};
 			class k extends i.a.Component {
 				constructor() {
@@ -9196,15 +9199,15 @@
 				L = e => i.a.createElement(c.e, {
 					key: e
 				}),
-				B = (e, t, n, s) => {
-					const r = e.c;
-					if (!r) return;
-					const o = r.length,
-						a = [];
-					for (let i = 0; i < o; i++) a.push(M(r[i], t, n, i));
+				B = (e, t, n, s, r) => {
+					const o = e.c;
+					if (!o) return;
+					const a = o.length,
+						d = [];
+					for (let i = 0; i < a; i++) d.push(M(o[i], t, n, i, r));
 					return i.a.createElement(c.c, {
 						key: s
-					}, a)
+					}, d)
 				},
 				R = (e, t) => {
 					const n = e.c;
@@ -9212,25 +9215,25 @@
 						key: t
 					}, i.a.createElement(c.h, null, n.reduce((e, t, n, s) => e += t.t + (n < s.length ? "\n" : ""), "")))
 				},
-				A = (e, t, n, s) => {
-					const r = e.c,
-						o = [],
-						a = r.length;
-					for (let l = 0; l < a; l++) {
-						const e = r[l].c;
-						e && e.length && o.push(i.a.createElement(c.g, {
-							key: l
-						}, e.map((e, s) => M(e, t, n, s))))
+				A = (e, t, n, s, r) => {
+					const o = e.c,
+						a = [],
+						d = o.length;
+					for (let u = 0; u < d; u++) {
+						const e = o[u].c;
+						e && e.length && a.push(i.a.createElement(c.g, {
+							key: u
+						}, e.map((e, s) => M(e, t, n, s, r))))
 					}
-					const d = e.o ? c.i : c.v;
-					return i.a.createElement(d, {
+					const l = e.o ? c.i : c.v;
+					return i.a.createElement(l, {
 						key: s
-					}, o)
+					}, a)
 				},
-				M = (e, t, n, s) => {
+				M = (e, t, n, s, r) => {
 					switch (e.e) {
 						case p.b:
-							return B(e, t, n, s);
+							return B(e, t, n, s, r);
 						case p.c:
 							return R(e, s);
 						case p.k:
@@ -9238,88 +9241,89 @@
 						case p.l:
 							return L(s);
 						case p.p:
-							return A(e, t, n, s);
+							return A(e, t, n, s, r);
 						case p.u:
-							return F(e, t, n, s);
+							return F(e, t, n, s, r);
 						case p.z:
-							return D(e, t, n, s)
+							return D(e, t, n, s, r)
 					}
 				},
-				D = (e, t, n, s) => {
-					const r = e.c,
-						o = e.h,
-						a = r.length,
+				D = (e, t, n, s, r) => {
+					const o = e.c,
+						a = e.h,
 						d = o.length,
-						l = [],
+						l = a.length,
 						u = [],
-						m = [];
-					for (let c = 0; c < d; c++) {
-						const e = o[c],
+						m = [],
+						p = [];
+					for (let c = 0; c < l; c++) {
+						const e = a[c],
 							{
 								H: s,
-								D: r
+								D: o
 							} = q(e.a),
 							{
-								c: a = []
+								c: d = []
 							} = e;
-						l.push(i.a.createElement(s, {
+						u.push(i.a.createElement(s, {
 							key: c
-						}, U(a, t, n))), m[c] = r
+						}, U(d, t, n, r))), p[c] = o
 					}
-					for (let p = 0; p < a; p++) {
-						const e = r[p],
+					for (let b = 0; b < d; b++) {
+						const e = o[b],
 							s = e.length,
-							o = [];
-						for (let r = 0; r < s; r++) {
-							const s = m[r],
+							a = [];
+						for (let o = 0; o < s; o++) {
+							const s = p[o],
 								{
-									c: a = []
-								} = e[r];
-							o.push(i.a.createElement(s, {
-								key: r
-							}, U(a, t, n)))
+									c = []
+								} = e[o];
+							a.push(i.a.createElement(s, {
+								key: o
+							}, U(c, t, n, r)))
 						}
-						u.push(i.a.createElement(c.t, {
-							key: p
-						}, o))
+						m.push(i.a.createElement(c.t, {
+							key: b
+						}, a))
 					}
 					return i.a.createElement(c.n, {
 						key: s
-					}, i.a.createElement("thead", null, i.a.createElement(c.t, null, l)), i.a.createElement("tbody", null, u))
+					}, i.a.createElement("thead", null, i.a.createElement(c.t, null, u)), i.a.createElement("tbody", null, m))
 				},
-				F = (e, t, n, s) => {
+				F = (e, t, n, s, r) => {
 					if (!e.c || !e.c.length) return (e => i.a.createElement(c.j, {
 						key: e
 					}, i.a.createElement("br", null)))(s);
-					const r = e.c[0];
-					return r.e !== p.m && r.e !== p.a || !Object(P.g)(r.id) ? i.a.createElement(c.j, {
+					const o = e.c[0];
+					return o.e !== p.m && o.e !== p.a || !Object(P.g)(o.id) ? i.a.createElement(c.j, {
 						key: s
-					}, U(e.c, t, n)) : Object(C.b)(r, s, n, t)
+					}, U(e.c, t, n, r)) : Object(C.b)(o, s, n, t)
 				},
-				U = (e, t, n) => {
-					const s = [],
-						r = e.length;
-					for (let o = 0; o < r; o++) {
-						const r = e[o];
-						if (r.e === p.A) s.push(H(r, o));
-						else if (r.e === p.x) s.push(i.a.createElement(j.a, {
-							key: o
-						}, U(r.c, t, n)));
-						else if (r.e === p.n) s.push(i.a.createElement("br", {
-							key: o
+				U = (e, t, n, s) => {
+					const r = [],
+						o = e.length;
+					for (let a = 0; a < o; a++) {
+						const o = e[a];
+						if (o.e === p.A) r.push(H(o, a));
+						else if (o.e === p.x) r.push(i.a.createElement(j.a, {
+							key: a,
+							onClickReveal: s
+						}, U(o.c, t, n, s)));
+						else if (o.e === p.n) r.push(i.a.createElement("br", {
+							key: a
 						}));
-						else if (r.e === p.m || r.e === p.a) {
-							if (r.id.startsWith("emote|")) {
-								const e = p.E(t, r.id);
-								e && s.push(i.a.createElement(O, {
-									key: o,
-									node: r,
+						else if (o.e === p.m || o.e === p.a) {
+							if (o.id.startsWith("emote|")) {
+								const e = p.E(t, o.id);
+								e && r.push(i.a.createElement(O, {
+									key: a,
+									node: o,
 									media: e
 								}))
 							}
-						} else s.push(W(r, n, o))
+						} else r.push(W(o, n, a))
 					}
-					return s
+					return r
 				},
 				W = (e, t, n) => {
 					switch (e.e) {
@@ -16800,4 +16804,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Subreddit.3ee718bbd04d27a538ae.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Subreddit.c125b7989ffa5591e52e.js.map
