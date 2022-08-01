@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/runtime~Reddit.8ecd9c577bb5b33f9d88.js
-// Retrieved at 8/1/2022, 10:50:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/runtime~Reddit.f0119ce43e148a6347bf.js
+// Retrieved at 8/1/2022, 12:00:05 PM by Reddit Dataminer v1.0.0
 ! function(e) {
 	function o(o) {
 		for (var a, n, r = o[0], s = o[1], c = o[2], l = 0, b = []; l < r.length; l++) n = r[l], Object.prototype.hasOwnProperty.call(d, n) && d[n] && b.push(d[n][0]), d[n] = 0;
@@ -836,7 +836,7 @@
 					"reddit-components-Governance-TransactionModals-TransferTransactionModal": "deacc32581de2b9aca60",
 					SignupUpsell: "08d8bf212b5b02c38c29",
 					NftProfileUnit: "8efac6c349a680250a67",
-					AuthorHovercard: "7fcca9bef2213ef2047c",
+					AuthorHovercard: "c2dc36e32ffe72d478fc",
 					AwardTooltip: "fa29e5e322d46ddc8fbc",
 					CustomBadgeHovercardTooltip: "3ed6dc5d02b740fdc998",
 					GovernanceUserPublicPointsDisplay: "bd91d2e1bf782ec87f09",
@@ -1540,7 +1540,7 @@
 						"reddit-components-Governance-TransactionModals-TransferTransactionModal": "bc46827f7a727f78ff64",
 						SignupUpsell: "1ab8f8b9b40cf93a54de",
 						NftProfileUnit: "daeed8674b1f2dd5c6d2",
-						AuthorHovercard: "4e73b258460180f17d5f",
+						AuthorHovercard: "39bf139a2198ad9b0c37",
 						AwardTooltip: "d4f1e05f7075ff073897",
 						CustomBadgeHovercardTooltip: "fb39322130789e442c2b",
 						GovernanceUserPublicPointsDisplay: "34743bed0a617dfe73bf",
@@ -1758,4 +1758,4 @@
 	var m = c;
 	t()
 }([]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/runtime~Reddit.8ecd9c577bb5b33f9d88.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/runtime~Reddit.f0119ce43e148a6347bf.js.map
