@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/removalReasonActions.fa9117fe5cee921fd38c.js
-// Retrieved at 7/28/2022, 5:50:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/removalReasonActions.25ce61e03ae42be87009.js
+// Retrieved at 8/1/2022, 10:20:09 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["removalReasonActions"], {
 		"./node_modules/lodash/map.js": function(e, t, o) {
@@ -353,7 +353,7 @@
 						const C = g(),
 							v = Object(oe.d)(C, {
 								postId: i
-							}) && Object(re.f)(C),
+							}) && Object(re.g)(C),
 							R = v ? Object(q.a)() : d,
 							k = Object(se.e)(C, {
 								commentId: R
@@ -483,7 +483,7 @@
 						commentId: u
 					}), x = _ && Object(oe.d)(g, {
 						postId: _.postId
-					}) && Object(re.f)(g), S = x ? Object(q.a)() : O, y = Object(se.e)(g, {
+					}) && Object(re.g)(g), S = x ? Object(q.a)() : O, y = Object(se.e)(g, {
 						commentId: S
 					}), C = Object(pe.k)(g);
 					if (!C) return;
@@ -2874,33 +2874,36 @@
 		},
 		"./src/reddit/selectors/experiments/chat.ts": function(e, t, o) {
 			"use strict";
-			o.d(t, "d", (function() {
+			o.d(t, "e", (function() {
 				return r
-			})), o.d(t, "b", (function() {
-				return i
-			})), o.d(t, "h", (function() {
-				return c
-			})), o.d(t, "e", (function() {
-				return a
-			})), o.d(t, "g", (function() {
-				return d
-			})), o.d(t, "a", (function() {
-				return l
 			})), o.d(t, "c", (function() {
-				return m
+				return i
+			})), o.d(t, "i", (function() {
+				return c
 			})), o.d(t, "f", (function() {
+				return a
+			})), o.d(t, "h", (function() {
+				return d
+			})), o.d(t, "b", (function() {
+				return l
+			})), o.d(t, "d", (function() {
+				return m
+			})), o.d(t, "g", (function() {
 				return u
+			})), o.d(t, "a", (function() {
+				return b
 			}));
 			var n = o("./src/reddit/constants/experiments.ts"),
 				s = o("./src/reddit/selectors/experiments/econ/simpleExperiment.ts");
 			const r = Object(s.a)(n.K),
 				i = Object(s.a)(n.I),
-				c = Object(s.a)(n.ne),
+				c = Object(s.a)(n.oe),
 				a = Object(s.a)(n.L),
 				d = Object(s.a)(n.N),
 				l = Object(s.a)(n.H),
 				m = Object(s.a)(n.J),
-				u = Object(s.a)(n.M)
+				u = Object(s.a)(n.M),
+				b = Object(s.a)(n.ge)
 		},
 		"./src/reddit/selectors/experiments/contributeBeforeSignUp.ts": function(e, t, o) {
 			"use strict";
@@ -2945,4 +2948,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/removalReasonActions.fa9117fe5cee921fd38c.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/removalReasonActions.25ce61e03ae42be87009.js.map

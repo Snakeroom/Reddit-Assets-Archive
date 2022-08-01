@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ChatPost~CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~Post~38f39fb8.88f2fa7dd57e8625ec89.js
-// Retrieved at 7/28/2022, 7:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ChatPost~CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~Post~38f39fb8.b0b3c34174a66e9cecc1.js
+// Retrieved at 8/1/2022, 10:20:09 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ChatPost~CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~Post~38f39fb8"], {
 		"./src/reddit/actions/economics/subredditPremium/actionCreators.ts": function(e, t, r) {
@@ -349,8 +349,8 @@
 				Q = r("./src/reddit/components/AwardBadges/AwardPill/index.m.less"),
 				V = r.n(Q);
 			const J = 3500,
-				Y = 500;
-			class K extends n.a.PureComponent {
+				K = 500;
+			class Y extends n.a.PureComponent {
 				constructor(e) {
 					super(e), this.imageRef = n.a.createRef(), this.triggerAnimation = () => {
 						const {
@@ -382,7 +382,7 @@
 							e(t), this.setState({
 								hoverStateTriggered: !0
 							})
-						}, Y)
+						}, K)
 					}, this.handleMouseLeave = () => {
 						const {
 							onHideTooltip: e
@@ -464,7 +464,7 @@
 					}))
 				}
 			}
-			var $ = K,
+			var $ = Y,
 				X = r("./src/reddit/icons/svgs/Chevron/index.tsx"),
 				Z = r("./src/reddit/components/AwardBadges/AwardPlaqueScrollButton/index.m.less"),
 				ee = r.n(Z);
@@ -2355,8 +2355,8 @@
 					onMouseLeave: e.onMouseLeave
 				}, o.a.createElement(z.a, null, e.desc)),
 				J = (r("./src/reddit/icons/fonts/Premium/index.tsx"), r("./src/reddit/components/UserIcon/index.tsx")),
-				Y = r("./src/reddit/constants/postLayout.ts"),
-				K = r("./src/reddit/contexts/PageLayer/index.tsx"),
+				K = r("./src/reddit/constants/postLayout.ts"),
+				Y = r("./src/reddit/contexts/PageLayer/index.tsx"),
 				$ = r("./src/reddit/models/Flair/index.ts"),
 				X = r("./src/reddit/models/NewStructuredStyles/index.ts"),
 				Z = r("./src/reddit/models/Post/index.ts"),
@@ -2379,7 +2379,7 @@
 			const le = e => Object(G.a)(Object(U.a)(e), X.a.metaText, X.b.metaText),
 				ue = l.a.wrapped(F.b, "MetaSeparator", ae.a),
 				me = l.a.span("text", ae.a),
-				pe = Object(K.u)(),
+				pe = Object(Y.u)(),
 				he = e => {
 					const t = Object(p.a)(de),
 						r = ie._("Reddit admin, speaking officially", null, {
@@ -2479,10 +2479,10 @@
 						Ce = () => o.a.createElement(ue, {
 							className: e.metaSeparatorClassName
 						}, "•"),
-						Te = Object(n.e)(e => Object(K.S)(e, {
+						Te = Object(n.e)(e => Object(Y.S)(e, {
 							pageLayer: g
 						})),
-						_e = Y.e[Te] === Y.d.Card,
+						_e = K.e[Te] === K.d.Card,
 						Pe = z && _e || !!xe,
 						Ne = q && (z || !!xe),
 						Se = o.a.createElement(o.a.Fragment, null, X && je && o.a.createElement("div", {
@@ -3673,7 +3673,7 @@
 						experimentEligibilitySelector: n.Q,
 						experimentName: s.fd
 					});
-					return !(!t || Object(s.Yf)(t))
+					return !(!t || Object(s.Zf)(t))
 				},
 				i = e => {
 					return Object(o.c)(e, {
@@ -3739,4 +3739,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatPost~CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~Post~38f39fb8.88f2fa7dd57e8625ec89.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatPost~CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~Post~38f39fb8.b0b3c34174a66e9cecc1.js.map

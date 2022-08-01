@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-NotificationUnit-Button.b796476ba218cc38bfa7.js
-// Retrieved at 7/28/2022, 5:50:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-NotificationUnit-Button.7aac11929f80064994f0.js
+// Retrieved at 8/1/2022, 10:20:09 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-NotificationUnit-Button"], {
 		"./node_modules/lodash/map.js": function(t, e, n) {
@@ -338,7 +338,7 @@
 						const I = C(),
 							S = Object(nt.d)(I, {
 								postId: s
-							}) && Object(it.f)(I),
+							}) && Object(it.g)(I),
 							v = S ? Object(G.a)() : d,
 							k = Object(rt.e)(I, {
 								commentId: v
@@ -468,7 +468,7 @@
 						commentId: m
 					}), j = x && Object(nt.d)(C, {
 						postId: x.postId
-					}) && Object(it.f)(C), y = j ? Object(G.a)() : f, _ = Object(rt.e)(C, {
+					}) && Object(it.g)(C), y = j ? Object(G.a)() : f, _ = Object(rt.e)(C, {
 						commentId: y
 					}), I = Object(bt.k)(C);
 					if (!I) return;
@@ -2886,33 +2886,36 @@
 		},
 		"./src/reddit/selectors/experiments/chat.ts": function(t, e, n) {
 			"use strict";
-			n.d(e, "d", (function() {
+			n.d(e, "e", (function() {
 				return i
-			})), n.d(e, "b", (function() {
-				return s
-			})), n.d(e, "h", (function() {
-				return c
-			})), n.d(e, "e", (function() {
-				return a
-			})), n.d(e, "g", (function() {
-				return d
-			})), n.d(e, "a", (function() {
-				return l
 			})), n.d(e, "c", (function() {
-				return u
+				return s
+			})), n.d(e, "i", (function() {
+				return c
 			})), n.d(e, "f", (function() {
+				return a
+			})), n.d(e, "h", (function() {
+				return d
+			})), n.d(e, "b", (function() {
+				return l
+			})), n.d(e, "d", (function() {
+				return u
+			})), n.d(e, "g", (function() {
 				return m
+			})), n.d(e, "a", (function() {
+				return p
 			}));
 			var o = n("./src/reddit/constants/experiments.ts"),
 				r = n("./src/reddit/selectors/experiments/econ/simpleExperiment.ts");
 			const i = Object(r.a)(o.K),
 				s = Object(r.a)(o.I),
-				c = Object(r.a)(o.ne),
+				c = Object(r.a)(o.oe),
 				a = Object(r.a)(o.L),
 				d = Object(r.a)(o.N),
 				l = Object(r.a)(o.H),
 				u = Object(r.a)(o.J),
-				m = Object(r.a)(o.M)
+				m = Object(r.a)(o.M),
+				p = Object(r.a)(o.ge)
 		},
 		"./src/reddit/selectors/experiments/contributeBeforeSignUp.ts": function(t, e, n) {
 			"use strict";
@@ -2957,4 +2960,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-NotificationUnit-Button.b796476ba218cc38bfa7.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-NotificationUnit-Button.7aac11929f80064994f0.js.map

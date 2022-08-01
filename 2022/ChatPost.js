@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ChatPost.b968c39bdb359bf4b948.js
-// Retrieved at 7/28/2022, 5:50:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ChatPost.4840bead01ec6d29b446.js
+// Retrieved at 8/1/2022, 10:20:09 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ChatPost"], {
 		"./node_modules/lodash/_baseDelay.js": function(e, t) {
@@ -2179,7 +2179,7 @@
 							const {
 								awardId: n,
 								commentId: o
-							} = e, r = oe()(), i = Object(be.a)(a, n), c = Object(Ce.c)(a);
+							} = e, r = oe()(), i = Object(be.a)(a, n), c = Object(Ce.d)(a);
 							if ((e => fe(e) || (e => "chat_reaction_downvote" === e.id)(e))(i)) {
 								const e = fe(i) ? "chat_reaction_downvote" : "chat_reaction_upvote",
 									n = ((e, t, n) => {
@@ -2236,7 +2236,7 @@
 								awardId: o,
 								awardingId: s,
 								commentId: i
-							} = e, c = Object(Ce.c)(r);
+							} = e, c = Object(Ce.d)(r);
 							await Object(de.c)(a(), {
 								awardingId: s
 							}), c || await Se(r, {
@@ -3000,7 +3000,7 @@
 						} = t;
 						return Object(Ut.c)(e, n.authorId)
 					},
-					isLivePostCreatorModRoleEnabled: e => Object(Ce.e)(e),
+					isLivePostCreatorModRoleEnabled: e => Object(Ce.f)(e),
 					isChatCreateOnlyPerm: (e, t) => {
 						let {
 							comment: n
@@ -3051,7 +3051,7 @@
 					availableReactionAwards: g
 				} = e;
 				const f = !!s && s.id === t.authorId,
-					x = Object(d.e)(e => !m && Object(Ce.a)(e)),
+					x = Object(d.e)(e => !m && Object(Ce.b)(e)),
 					_ = Object(on.a)(),
 					E = c.a.useCallback(() => {
 						_(Object(Ct.f)("other_options", t.id))
@@ -3134,7 +3134,7 @@
 				})))
 			});
 			const Un = e => {
-				return Object(d.e)(Ce.b) ? c.a.createElement(Fn, e) : c.a.createElement(en, e)
+				return Object(d.e)(Ce.c) ? c.a.createElement(Fn, e) : c.a.createElement(en, e)
 			};
 			var Hn = n("./src/reddit/components/CommentsChat/Comment/Reply/index.tsx"),
 				Kn = n("./src/reddit/components/CommentsChat/Comment/SystemMessage/index.m.less"),
@@ -3640,7 +3640,7 @@
 					} = t;
 					return Boolean(e.shortcuts.activeCommentId && n === e.shortcuts.activeCommentId)
 				},
-				isCommentAwardsAndReactionsEnabled: Ce.a,
+				isCommentAwardsAndReactionsEnabled: Ce.b,
 				isEditing: V.z,
 				prediction: $n.f,
 				isSelectedForReply: (e, t) => {
@@ -3876,7 +3876,7 @@
 				})))
 			}));
 			const Po = e => {
-				return Object(d.e)(Ce.d) ? c.a.createElement(So, e) : c.a.createElement(mo, e)
+				return Object(d.e)(Ce.e) ? c.a.createElement(So, e) : c.a.createElement(mo, e)
 			};
 			var Bo = n("./node_modules/lodash/isEqual.js"),
 				Do = n.n(Bo),
@@ -4126,8 +4126,8 @@
 					isPending: V.d,
 					liveCommentsWebsocket: zo.E,
 					moreCommentsLink: V.G,
-					isCommentReactionStreamingKillSwitchEnabled: Ce.c,
-					isCommentAwardsAndReactionsEnabled: Ce.a,
+					isCommentReactionStreamingKillSwitchEnabled: Ce.d,
+					isCommentAwardsAndReactionsEnabled: Ce.b,
 					currentUserId: ke.i
 				}),
 				Zo = Object(d.b)(Xo, (e, t) => ({
@@ -5424,4 +5424,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatPost.b968c39bdb359bf4b948.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatPost.4840bead01ec6d29b446.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CommunityTopicSurvey.0b2e09445ae1208c2970.js
-// Retrieved at 7/28/2022, 5:50:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CommunityTopicSurvey.d600a2e0c6a955db50ba.js
+// Retrieved at 8/1/2022, 10:20:09 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CommunityTopicSurvey"], {
 		"./node_modules/react-uid/dist/es2015/hooks.js": function(e, t, n) {
@@ -184,19 +184,19 @@
 					}, s))
 				}))
 			}
-			var w = n("./src/reddit/controls/TextButton/index.tsx"),
-				N = n("./src/reddit/components/SubredditMention/index.tsx"),
-				B = n("./src/reddit/constants/experiments.ts");
+			var B = n("./src/reddit/controls/TextButton/index.tsx"),
+				w = n("./src/reddit/components/SubredditMention/index.tsx"),
+				N = n("./src/reddit/constants/experiments.ts");
 
 			function D(e) {
 				const {
 					children: t
 				} = e, n = (null !== (r = /(.*)(\br\/\w+\b)(.*)/.exec(t)) && void 0 !== r ? r : [""]).slice(1);
 				var r;
-				return 0 === n.length ? o.a.createElement(o.a.Fragment, null, t) : o.a.createElement(o.a.Fragment, null, n[0], o.a.createElement(N.a, {
+				return 0 === n.length ? o.a.createElement(o.a.Fragment, null, t) : o.a.createElement(o.a.Fragment, null, n[0], o.a.createElement(w.a, {
 					isFeatureFlagEnabled: !0,
 					isUserInTreatment: !0,
-					userVariant: B.Af.SmIconHc,
+					userVariant: N.Bf.SmIconHc,
 					subredditName: n[1].split("/")[1],
 					rtJsonElementProps: {}
 				}), n[2])
@@ -216,7 +216,7 @@
 					className: Object(I.a)(U.a.survey, d && U.a.inFeed),
 					"data-survey": !0,
 					onClick: e => e.stopPropagation()
-				}, o.a.createElement(w.a, {
+				}, o.a.createElement(B.a, {
 					className: U.a.closeButton,
 					onClick: () => c(t)
 				}, o.a.createElement(C.b, null), o.a.createElement("span", {
@@ -257,7 +257,7 @@
 					className: Object(I.a)(U.a.survey, a && U.a.inFeed),
 					"data-survey": !0,
 					onClick: e => e.stopPropagation()
-				}, o.a.createElement(w.a, {
+				}, o.a.createElement(B.a, {
 					className: U.a.closeButton,
 					onClick: () => d(t)
 				}, o.a.createElement(C.b, null), o.a.createElement("span", {
@@ -538,11 +538,11 @@
 			})), n.d(t, "q", (function() {
 				return k
 			})), n.d(t, "s", (function() {
-				return w
-			})), n.d(t, "r", (function() {
-				return N
-			})), n.d(t, "a", (function() {
 				return B
+			})), n.d(t, "r", (function() {
+				return w
+			})), n.d(t, "a", (function() {
+				return N
 			})), n.d(t, "w", (function() {
 				return D
 			}));
@@ -573,9 +573,9 @@
 				T = c.a.td("Tdl", d.a),
 				j = c.a.td("Tdc", d.a),
 				k = c.a.td("Tdr", d.a),
-				w = c.a.th("Thl", d.a),
-				N = c.a.th("Thc", d.a),
-				B = (c.a.th("Thr", d.a), c.a.wrapped(e => s.a.createElement(o.b, e), "A", d.a)),
+				B = c.a.th("Thl", d.a),
+				w = c.a.th("Thc", d.a),
+				N = (c.a.th("Thr", d.a), c.a.wrapped(e => s.a.createElement(o.b, e), "A", d.a)),
 				D = c.a.wrapped(a.a, "A", d.a)
 		},
 		"./src/reddit/components/StructuredStyles/StyledComponents/index.m.less": function(e, t, n) {
@@ -789,12 +789,12 @@
 						rtJsonElementProps: i
 					});
 					switch (o) {
-						case _.Af.SmIcon:
+						case _.Bf.SmIcon:
 							return s.a.createElement(b, {
 								subredditName: r,
 								rtJsonElementProps: i
 							});
-						case _.Af.SmIconHc:
+						case _.Bf.SmIconHc:
 							return s.a.createElement(b, {
 								subredditName: r,
 								isHoverable: !0,
@@ -1066,12 +1066,12 @@
 				c = e => {
 					return Object(o.c)(e, {
 						experimentEligibilitySelector: d,
-						experimentName: r.uf
+						experimentName: r.vf
 					}) || ""
 				},
 				a = e => {
 					const t = c(e);
-					return t === r.Af.SmIcon || t === r.Af.SmIconHc
+					return t === r.Bf.SmIcon || t === r.Bf.SmIconHc
 				},
 				u = (e, t) => {
 					let {
@@ -1100,4 +1100,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommunityTopicSurvey.0b2e09445ae1208c2970.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommunityTopicSurvey.d600a2e0c6a955db50ba.js.map

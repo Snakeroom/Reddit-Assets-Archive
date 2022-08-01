@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ChatMessageInput~ChatPost.df461fef964596ce1c9f.js
-// Retrieved at 7/28/2022, 5:50:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ChatMessageInput~ChatPost.3f6c3afc8413ead36d48.js
+// Retrieved at 8/1/2022, 10:20:09 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ChatMessageInput~ChatPost"], {
 		"./node_modules/lodash/_baseReduce.js": function(e, t) {
@@ -912,7 +912,7 @@
 						postId: p
 					}))
 				}
-				const D = r()(e => {
+				const B = r()(e => {
 					if (n) return;
 					const {
 						target: t
@@ -920,8 +920,8 @@
 					t && t.played && 1 === t.played.length && 0 === t.played.start(0) && t.played.end(0) === t.duration && L(Object(u.s)(p))
 				}, 200);
 
-				function B(e) {
-					e.persist(), D(e)
+				function D(e) {
+					e.persist(), B(e)
 				}
 
 				function R(e) {
@@ -967,7 +967,7 @@
 						onLoadedMetadata: P,
 						onPause: M,
 						onPlaying: F,
-						onTimeUpdate: B,
+						onTimeUpdate: D,
 						shouldLoad: b,
 						shouldPause: C,
 						showCentered: I,
@@ -1689,9 +1689,9 @@
 			})), n.d(t, "d", (function() {
 				return M
 			})), n.d(t, "a", (function() {
-				return D
-			})), n.d(t, "b", (function() {
 				return B
+			})), n.d(t, "b", (function() {
+				return D
 			})), n.d(t, "f", (function() {
 				return R
 			})), n.d(t, "h", (function() {
@@ -1816,7 +1816,7 @@
 				M = e => i.a.createElement(c.e, {
 					key: e
 				}),
-				D = (e, t, n, s) => {
+				B = (e, t, n, s) => {
 					const r = e.c;
 					if (!r) return;
 					const o = r.length,
@@ -1826,7 +1826,7 @@
 						key: s
 					}, a)
 				},
-				B = (e, t) => {
+				D = (e, t) => {
 					const n = e.c;
 					return i.a.createElement(c.k, {
 						key: t
@@ -1850,9 +1850,9 @@
 				H = (e, t, n, s) => {
 					switch (e.e) {
 						case h.b:
-							return D(e, t, n, s);
+							return B(e, t, n, s);
 						case h.c:
-							return B(e, s);
+							return D(e, s);
 						case h.k:
 							return S(e, n, s);
 						case h.l:
@@ -2146,12 +2146,12 @@
 						rtJsonElementProps: a
 					});
 					switch (o) {
-						case b.Af.SmIcon:
+						case b.Bf.SmIcon:
 							return r.a.createElement(h, {
 								subredditName: s,
 								rtJsonElementProps: a
 							});
-						case b.Af.SmIconHc:
+						case b.Bf.SmIconHc:
 							return r.a.createElement(h, {
 								subredditName: s,
 								isHoverable: !0,
@@ -2598,12 +2598,12 @@
 				c = e => {
 					return Object(o.c)(e, {
 						experimentEligibilitySelector: i,
-						experimentName: s.uf
+						experimentName: s.vf
 					}) || ""
 				},
 				d = e => {
 					const t = c(e);
-					return t === s.Af.SmIcon || t === s.Af.SmIconHc
+					return t === s.Bf.SmIcon || t === s.Bf.SmIconHc
 				},
 				l = (e, t) => {
 					let {
@@ -2629,4 +2629,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatMessageInput~ChatPost.df461fef964596ce1c9f.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatMessageInput~ChatPost.3f6c3afc8413ead36d48.js.map

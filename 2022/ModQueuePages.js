@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModQueuePages.0ac86f2d5d77aa8401b6.js
-// Retrieved at 7/28/2022, 5:50:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModQueuePages.0e67f093e6880a9bb516.js
+// Retrieved at 8/1/2022, 10:20:09 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModQueuePages"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -4288,7 +4288,7 @@
 				N = Object(d.c)({
 					currentPage: e => e.platform.currentPage,
 					origin: y.k,
-					isModQChatCommentsFilterEnabled: S.h
+					isModQChatCommentsFilterEnabled: S.i
 				});
 			var R = Object(i.b)(N)(e => a.a.createElement("div", null, a.a.createElement(j.default, {
 					onClick: e.sendEventWithName("content_type_both"),
@@ -4495,7 +4495,7 @@
 					isPostTypeFilterDropdownOpen: Object(O.b)(ie),
 					isSubredditFilterDropdownOpen: Object(O.b)(ae),
 					isPostSortDropdownOpen: Object(O.b)(de),
-					isModQChatCommentsFilterEnabled: S.h,
+					isModQChatCommentsFilterEnabled: S.i,
 					profile: (e, t) => {
 						let {
 							profileName: n
@@ -6827,12 +6827,12 @@
 						rtJsonElementProps: a
 					});
 					switch (r) {
-						case h.Af.SmIcon:
+						case h.Bf.SmIcon:
 							return o.a.createElement(p, {
 								subredditName: s,
 								rtJsonElementProps: a
 							});
-						case h.Af.SmIconHc:
+						case h.Bf.SmIconHc:
 							return o.a.createElement(p, {
 								subredditName: s,
 								isHoverable: !0,
@@ -8053,12 +8053,12 @@
 				d = e => {
 					return Object(r.c)(e, {
 						experimentEligibilitySelector: i,
-						experimentName: s.uf
+						experimentName: s.vf
 					}) || ""
 				},
 				c = e => {
 					const t = d(e);
-					return t === s.Af.SmIcon || t === s.Af.SmIconHc
+					return t === s.Bf.SmIcon || t === s.Bf.SmIconHc
 				},
 				l = (e, t) => {
 					let {
@@ -8084,4 +8084,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModQueuePages.0ac86f2d5d77aa8401b6.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModQueuePages.0e67f093e6880a9bb516.js.map

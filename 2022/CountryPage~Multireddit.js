@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CountryPage~Multireddit.f46778816bf75a07ad91.js
-// Retrieved at 7/28/2022, 5:50:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CountryPage~Multireddit.d807ea22081e1d621fa8.js
+// Retrieved at 8/1/2022, 10:20:09 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CountryPage~Multireddit"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -4935,12 +4935,12 @@
 						rtJsonElementProps: o
 					});
 					switch (i) {
-						case b.Af.SmIcon:
+						case b.Bf.SmIcon:
 							return s.a.createElement(p, {
 								subredditName: r,
 								rtJsonElementProps: o
 							});
-						case b.Af.SmIconHc:
+						case b.Bf.SmIconHc:
 							return s.a.createElement(p, {
 								subredditName: r,
 								isHoverable: !0,
@@ -6474,7 +6474,7 @@
 						experimentEligibilitySelector: i.Q,
 						experimentName: r.fd
 					});
-					return !(!t || Object(r.Yf)(t))
+					return !(!t || Object(r.Zf)(t))
 				},
 				a = e => {
 					return Object(s.c)(e, {
@@ -6613,12 +6613,12 @@
 				c = e => {
 					return Object(i.c)(e, {
 						experimentEligibilitySelector: a,
-						experimentName: r.uf
+						experimentName: r.vf
 					}) || ""
 				},
 				d = e => {
 					const t = c(e);
-					return t === r.Af.SmIcon || t === r.Af.SmIconHc
+					return t === r.Bf.SmIcon || t === r.Bf.SmIconHc
 				},
 				l = (e, t) => {
 					let {
@@ -6659,4 +6659,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CountryPage~Multireddit.f46778816bf75a07ad91.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CountryPage~Multireddit.d807ea22081e1d621fa8.js.map
