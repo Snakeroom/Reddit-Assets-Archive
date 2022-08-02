@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ChatPost.4840bead01ec6d29b446.js
-// Retrieved at 8/1/2022, 10:20:09 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ChatPost.60889f928cde55e58544.js
+// Retrieved at 8/2/2022, 12:50:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ChatPost"], {
 		"./node_modules/lodash/_baseDelay.js": function(e, t) {
@@ -174,21 +174,21 @@
 		"./src/reddit/actions/userBlocks.ts": function(e, t, n) {
 			"use strict";
 			n.d(t, "f", (function() {
-				return m
+				return l
 			})), n.d(t, "e", (function() {
-				return u
+				return m
 			})), n.d(t, "d", (function() {
-				return p
+				return u
 			})), n.d(t, "h", (function() {
-				return v
+				return C
 			})), n.d(t, "b", (function() {
-				return g
+				return v
 			})), n.d(t, "c", (function() {
-				return f
+				return g
 			})), n.d(t, "a", (function() {
-				return x
+				return f
 			})), n.d(t, "g", (function() {
-				return I
+				return k
 			}));
 			var o = n("./node_modules/fbt/lib/FbtPublic.js"),
 				s = n("./src/lib/makeActionCreator/index.ts"),
@@ -196,26 +196,25 @@
 				r = n("./src/reddit/actions/toaster.ts"),
 				i = n("./src/reddit/endpoints/accounts/index.ts"),
 				c = n("./src/reddit/models/Toast/index.ts"),
-				d = n("./src/reddit/selectors/experiments/antievil/index.tsx"),
-				l = n("./src/reddit/selectors/user.ts");
-			const m = "USER_BLOCK__PENDING",
-				u = "USER_BLOCK__LOADED",
-				p = "USER_BLOCK__FAILED",
+				d = n("./src/reddit/selectors/user.ts");
+			const l = "USER_BLOCK__PENDING",
+				m = "USER_BLOCK__LOADED",
+				u = "USER_BLOCK__FAILED",
+				p = Object(s.a)(l),
 				h = Object(s.a)(m),
 				b = Object(s.a)(u),
-				C = Object(s.a)(p),
-				v = e => async (t, n, s) => {
+				C = e => async (t, n, s) => {
 					let {
-						apiContext: l
+						apiContext: d
 					} = s;
-					const m = n();
-					if (m.blockUser.api.pending[e]) return;
-					t(h({
+					var l;
+					if (n().blockUser.api.pending[e]) return;
+					t(p({
 						username: e
 					}));
-					const u = await Object(i.a)(l(), e),
-						p = `error-block-${e}`;
-					if (u.ok) u.body.name && t(b(u.body)), u.body.id && t(Object(a.f)(u.body.id)), t(r.g(p)), t(r.f({
+					const m = await Object(i.a)(d(), e),
+						u = `error-block-${e}`;
+					if (m.ok) m.body.name && t(h(m.body)), m.body.id && t(Object(a.f)(m.body.id)), t(r.g(u)), t(r.f({
 						kind: c.b.SuccessCommunity,
 						text: o.fbt._("{username} is now blocked", [o.fbt._param("username", e)], {
 							hk: "MI2y8"
@@ -223,19 +222,18 @@
 					}));
 					else {
 						const n = {
-								type: u.error ? u.error.type : "Unknown error",
-								username: e
-							},
-							s = Object(d.f)(m) && "REBLOCK_RATE_LIMIT" === u.body.reason;
-						t(C(n)), t(s ? r.f({
-							id: p,
+							type: m.error ? m.error.type : "Unknown error",
+							username: e
+						};
+						t(b(n)), "REBLOCK_RATE_LIMIT" === (null === (l = m.body) || void 0 === l ? void 0 : l.reason) ? t(r.f({
+							id: u,
 							kind: c.b.Error,
 							text: o.fbt._("You can't block u/{username} for 24 hours after unblocking them", [o.fbt._param("username", e)], {
 								hk: "W0oUd"
 							}),
-							buttonAction: v(e)
-						}) : r.f({
-							id: p,
+							buttonAction: C(e)
+						})) : t(r.f({
+							id: u,
 							kind: c.b.Error,
 							text: o.fbt._("An error has occured. Please try again later", null, {
 								hk: "2FpsLy"
@@ -243,20 +241,20 @@
 							buttonText: o.fbt._("Retry", null, {
 								hk: "36rgQw"
 							}),
-							buttonAction: v(e)
+							buttonAction: C(e)
 						}))
 					}
-				}, g = "USER_UNBLOCK__PENDING", f = "USER_UNBLOCK__SUCCESS", x = "USER_UNBLOCK__FAILED", _ = Object(s.a)(g), E = Object(s.a)(f), k = Object(s.a)(x), I = e => async (t, n, s) => {
+				}, v = "USER_UNBLOCK__PENDING", g = "USER_UNBLOCK__SUCCESS", f = "USER_UNBLOCK__FAILED", x = Object(s.a)(v), _ = Object(s.a)(g), E = Object(s.a)(f), k = e => async (t, n, s) => {
 					let {
-						apiContext: d
+						apiContext: l
 					} = s;
 					const m = n(),
-						u = Object(l.k)(m),
+						u = Object(d.k)(m),
 						p = u ? u.id : void 0,
 						h = m.user.blocked.data.filter(t => t.name === e)[0];
-					p && (t(_({
+					p && (t(x({
 						name: e
-					})), (await Object(i.c)(d(), p, e)).ok ? (t(E({
+					})), (await Object(i.c)(l(), p, e)).ok ? (t(_({
 						name: e
 					})), h && h.id && t(Object(a.h)(h.id)), t(r.f({
 						kind: c.b.SuccessCommunity,
@@ -268,7 +266,7 @@
 						text: o.fbt._("An error has occured. Please try again later", null, {
 							hk: "2FpsLy"
 						})
-					})), t(k({
+					})), t(E({
 						name: e
 					}))))
 				}
@@ -5424,4 +5422,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatPost.4840bead01ec6d29b446.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatPost.60889f928cde55e58544.js.map
