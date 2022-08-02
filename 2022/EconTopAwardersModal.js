@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/EconTopAwardersModal.b284fea0215f03315428.js
-// Retrieved at 8/1/2022, 10:20:09 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/EconTopAwardersModal.02a3ef9b36e080779e28.js
+// Retrieved at 8/2/2022, 10:00:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["EconTopAwardersModal"], {
 		"./src/lib/currency/centsToDollars/index.ts": function(e, t, r) {
@@ -1603,7 +1603,7 @@
 						let {
 							userName: r
 						} = t;
-						return Object(b.j)(e, {
+						return Object(b.k)(e, {
 							profileName: r
 						})
 					},
@@ -1626,9 +1626,9 @@
 						}) : void 0
 					},
 					isCurrentUserBanned: (e, t) => !!Object(x.o)(t) && Object(x.gb)(e, t),
-					userProfileStyles: (e, t) => Object(v.m)(e, Object(b.m)(e, t.userName)),
+					userProfileStyles: (e, t) => Object(v.m)(e, Object(b.n)(e, t.userName)),
 					acceptChats: (e, t) => {
-						const r = Object(b.h)(e, {
+						const r = Object(b.i)(e, {
 							profileName: t.userName
 						});
 						return !r || r.acceptChats
@@ -1641,7 +1641,7 @@
 							n = r || a && Object(x.G)(e, a.name);
 						return !!n && Object(u.i)(e, n)
 					},
-					trophyCase: (e, t) => Object(b.r)(e, Object(b.m)(e, t.userName)),
+					trophyCase: (e, t) => Object(b.s)(e, Object(b.n)(e, t.userName)),
 					isNightMode: I.db,
 					lastAuthorModNote: (e, t) => {
 						if (!t.contextId) return;
@@ -2779,4 +2779,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EconTopAwardersModal.b284fea0215f03315428.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EconTopAwardersModal.02a3ef9b36e080779e28.js.map

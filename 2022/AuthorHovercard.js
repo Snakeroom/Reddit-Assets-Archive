@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/AuthorHovercard.39bf139a2198ad9b0c37.js
-// Retrieved at 8/1/2022, 12:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/AuthorHovercard.4591458f8a34d5cc6dea.js
+// Retrieved at 8/2/2022, 10:00:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["AuthorHovercard"], {
 		"./src/lib/constants/colors.ts": function(e, t, n) {
@@ -1759,7 +1759,7 @@
 						let {
 							userName: n
 						} = t;
-						return Object(f.j)(e, {
+						return Object(f.k)(e, {
 							profileName: n
 						})
 					},
@@ -1782,9 +1782,9 @@
 						}) : void 0
 					},
 					isCurrentUserBanned: (e, t) => !!Object(v.o)(t) && Object(v.gb)(e, t),
-					userProfileStyles: (e, t) => Object(h.m)(e, Object(f.m)(e, t.userName)),
+					userProfileStyles: (e, t) => Object(h.m)(e, Object(f.n)(e, t.userName)),
 					acceptChats: (e, t) => {
-						const n = Object(f.h)(e, {
+						const n = Object(f.i)(e, {
 							profileName: t.userName
 						});
 						return !n || n.acceptChats
@@ -1797,7 +1797,7 @@
 							a = n || r && Object(v.G)(e, r.name);
 						return !!a && Object(m.i)(e, a)
 					},
-					trophyCase: (e, t) => Object(f.r)(e, Object(f.m)(e, t.userName)),
+					trophyCase: (e, t) => Object(f.s)(e, Object(f.n)(e, t.userName)),
 					isNightMode: I.db,
 					lastAuthorModNote: (e, t) => {
 						if (!t.contextId) return;
@@ -6252,4 +6252,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/AuthorHovercard.39bf139a2198ad9b0c37.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/AuthorHovercard.4591458f8a34d5cc6dea.js.map

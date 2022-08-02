@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostDraft.8442a4e4f697d7f47410.js
-// Retrieved at 8/1/2022, 2:10:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostDraft.74e525420ab116dce786.js
+// Retrieved at 8/2/2022, 10:00:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostDraft"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -326,7 +326,7 @@
 			})), n.d(t, "c", (function() {
 				return G
 			})), n.d(t, "h", (function() {
-				return q
+				return z
 			})), n.d(t, "f", (function() {
 				return Q
 			})), n.d(t, "d", (function() {
@@ -573,14 +573,14 @@
 							hk: "4Ck6Cm"
 						})
 					}))
-				}, J = Object(i.a)(c.r), Y = Object(i.a)(c.n), z = Object(i.a)(c.s), q = (e, t) => async (n, r, o) => {
+				}, J = Object(i.a)(c.r), Y = Object(i.a)(c.n), q = Object(i.a)(c.s), z = (e, t) => async (n, r, o) => {
 					let {
 						apiContext: i
 					} = o;
 					n(J());
 					const a = await v(i(), e, t);
 					let c = !1;
-					if (a.ok) n(z({
+					if (a.ok) n(q({
 						collectionId: e,
 						newTitle: t
 					})), n(Object(d.f)({
@@ -636,7 +636,7 @@
 								hk: "4Ck6Cm"
 							})
 						}))), c
-					})(r, a))), c && n.push(t(q(r, c))), void 0 !== o && n.push(t(((e, t) => async (n, r, o) => {
+					})(r, a))), c && n.push(t(z(r, c))), void 0 !== o && n.push(t(((e, t) => async (n, r, o) => {
 						let {
 							apiContext: i
 						} = o;
@@ -1660,7 +1660,7 @@
 							pageLayer: n,
 							subredditOrProfileId: s
 						} = t;
-						return s ? Object(E.p)(e, {
+						return s ? Object(E.q)(e, {
 							profileId: s
 						}) : Object(f.k)(e, {
 							pageLayer: n
@@ -4766,4 +4766,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostDraft.8442a4e4f697d7f47410.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostDraft.74e525420ab116dce786.js.map

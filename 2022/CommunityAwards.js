@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CommunityAwards.e9f38253aef0dd4fea40.js
-// Retrieved at 7/28/2022, 11:00:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CommunityAwards.f9275a5d7645630ddacc.js
+// Retrieved at 8/2/2022, 10:00:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CommunityAwards"], {
 		"./src/reddit/actions/gold/communityAwards/communityAwards.ts": function(e, t, r) {
@@ -192,7 +192,7 @@
 					if (o) u = Object(m.j)(n());
 					else if (c) u = Object(m.k)(n(), e);
 					else {
-						const t = Object(f.p)(d, {
+						const t = Object(f.q)(d, {
 							profileId: e
 						}).name;
 						u = Object(m.l)(n(), t)
@@ -259,7 +259,7 @@
 									subredditId: a
 								} = t;
 								var n;
-								const d = Object(f.p)(e, {
+								const d = Object(f.q)(e, {
 									profileId: a
 								});
 								if (d) return d.name;
@@ -713,4 +713,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommunityAwards.e9f38253aef0dd4fea40.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommunityAwards.f9275a5d7645630ddacc.js.map

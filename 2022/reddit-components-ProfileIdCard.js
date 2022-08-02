@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-ProfileIdCard.33d41d172976294f6e9c.js
-// Retrieved at 8/1/2022, 10:20:09 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-ProfileIdCard.23cfe15576ec41e9e009.js
+// Retrieved at 8/2/2022, 10:00:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-ProfileIdCard"], {
 		"./node_modules/lodash/compact.js": function(e, t) {
@@ -276,7 +276,7 @@
 						name: e.name,
 						type: e.type
 					} : {
-						id: Object(k.m)(l(), e.name),
+						id: Object(k.n)(l(), e.name),
 						name: `${s.kc}${e.name}`,
 						type: e.type
 					});
@@ -1181,7 +1181,7 @@
 				}))(Object(m.b)(N)),
 				w = r("./src/reddit/components/ProfileIdCard/Highlights.m.less"),
 				U = r.n(w);
-			const L = Object(i.a)(x.j, (e, t) => {
+			const L = Object(i.a)(x.k, (e, t) => {
 					let {
 						profileName: r
 					} = t;
@@ -2450,13 +2450,13 @@
 				}).apply(this, arguments)
 			}
 			const re = Object(i.c)({
-					areModeratedSubredditsPending: I.a,
+					areModeratedSubredditsPending: I.b,
 					coinsToSpend: j.e,
 					givePremiumModalIsOpen: J.c,
-					hasFetchedModerators: I.k,
+					hasFetchedModerators: I.l,
 					isEmployee: j.N,
 					isLoggedIn: j.Q,
-					profile: I.j,
+					profile: I.k,
 					crisisFlowEnabled: X.b,
 					chatInviteLinkSharing: V.a
 				}),
@@ -2720,10 +2720,10 @@
 				activeTooltipId: k.a,
 				currentUserHasSubreddit: j.h,
 				hideNSFWPref: j.F,
-				isModerator: I.f,
+				isModerator: I.g,
 				prefersReducedAnimations: P.c,
-				profile: I.j,
-				profileAboutInfo: I.h,
+				profile: I.k,
+				profileAboutInfo: I.i,
 				topAwardIcon: (e, t) => {
 					let {
 						profileName: r
@@ -2733,7 +2733,7 @@
 						minSize: 32
 					})
 				},
-				structuredStyle: (e, t) => Object(C.m)(e, Object(I.m)(e, t.profileName)),
+				structuredStyle: (e, t) => Object(C.m)(e, Object(I.n)(e, t.profileName)),
 				userHasSubreddit: (e, t) => {
 					let {
 						profileName: r
@@ -3625,4 +3625,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ProfileIdCard.33d41d172976294f6e9c.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ProfileIdCard.23cfe15576ec41e9e009.js.map

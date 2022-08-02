@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~Reddit~Subreddit.7da8a9c12b068e502d48.js
-// Retrieved at 8/1/2022, 2:10:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~Reddit~Subreddit.c9693eb52b546711dc8c.js
+// Retrieved at 8/2/2022, 10:00:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~Reddit~Subreddit"], {
 		"./src/lib/CSSVariableProvider/withTheme.tsx": function(e, t, n) {
@@ -3111,7 +3111,7 @@
 						actionInfo: j.d(e, {
 							success: t
 						}),
-						profile: j.S(e, Object(I.m)(e, r)),
+						profile: j.S(e, Object(I.n)(e, r)),
 						subreddit: j.ib(e, Object(O.G)(e, n)),
 						userSubreddit: j.rb(e),
 						adblock: j.e(e)
@@ -3123,7 +3123,7 @@
 						action: "view",
 						noun: "screen",
 						...v(e),
-						profile: j.S(e, Object(I.m)(e, n)),
+						profile: j.S(e, Object(I.n)(e, n)),
 						subreddit: j.ib(e, Object(O.G)(e, t)),
 						userSubreddit: j.rb(e),
 						adblock: j.e(e)
@@ -3968,4 +3968,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit~Subreddit.7da8a9c12b068e502d48.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit~Subreddit.c9693eb52b546711dc8c.js.map

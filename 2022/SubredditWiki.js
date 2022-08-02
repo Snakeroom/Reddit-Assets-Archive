@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditWiki.ed3909f48528d681ccf1.js
-// Retrieved at 8/1/2022, 2:10:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditWiki.dfa64f69fec42cca9755.js
+// Retrieved at 8/2/2022, 10:00:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditWiki"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -4781,7 +4781,7 @@
 						let {
 							userName: s
 						} = t;
-						return Object(h.j)(e, {
+						return Object(h.k)(e, {
 							profileName: s
 						})
 					},
@@ -4804,9 +4804,9 @@
 						}) : void 0
 					},
 					isCurrentUserBanned: (e, t) => !!Object(g.o)(t) && Object(g.gb)(e, t),
-					userProfileStyles: (e, t) => Object(f.m)(e, Object(h.m)(e, t.userName)),
+					userProfileStyles: (e, t) => Object(f.m)(e, Object(h.n)(e, t.userName)),
 					acceptChats: (e, t) => {
-						const s = Object(h.h)(e, {
+						const s = Object(h.i)(e, {
 							profileName: t.userName
 						});
 						return !s || s.acceptChats
@@ -4819,7 +4819,7 @@
 							n = s || r && Object(g.G)(e, r.name);
 						return !!n && Object(m.i)(e, n)
 					},
-					trophyCase: (e, t) => Object(h.r)(e, Object(h.m)(e, t.userName)),
+					trophyCase: (e, t) => Object(h.s)(e, Object(h.n)(e, t.userName)),
 					isNightMode: v.db,
 					lastAuthorModNote: (e, t) => {
 						if (!t.contextId) return;
@@ -10518,4 +10518,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditWiki.ed3909f48528d681ccf1.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditWiki.dfa64f69fec42cca9755.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PushNotificationSettings.073e54c8dd4a7282baf2.js
-// Retrieved at 6/21/2022, 5:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PushNotificationSettings.ec30ba5a2de4b28c922e.js
+// Retrieved at 8/2/2022, 10:00:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PushNotificationSettings"], {
 		"./node_modules/lodash/times.js": function(e, t, s) {
@@ -8,28 +8,28 @@
 				a = s("./node_modules/lodash/toInteger.js"),
 				o = 9007199254740991,
 				r = 4294967295,
-				c = Math.min;
+				d = Math.min;
 			e.exports = function(e, t) {
 				if ((e = a(e)) < 1 || e > o) return [];
 				var s = r,
-					d = c(e, r);
+					c = d(e, r);
 				t = i(t), e -= r;
-				for (var l = n(d, t); ++s < e;) t(s);
+				for (var l = n(c, t); ++s < e;) t(s);
 				return l
 			}
 		},
 		"./src/reddit/components/Settings/Notifications/LoadingSection.tsx": function(e, t, s) {
 			"use strict";
 			s.d(t, "a", (function() {
-				return d
+				return c
 			}));
 			var n = s("./node_modules/lodash/times.js"),
 				i = s.n(n),
 				a = s("./node_modules/react/index.js"),
 				o = s.n(a),
 				r = s("./src/reddit/components/Settings/Notifications/index.m.less"),
-				c = s.n(r);
-			const d = e => {
+				d = s.n(r);
+			const c = e => {
 				let {
 					rowsCount: t
 				} = e;
@@ -37,44 +37,47 @@
 					role: "alert",
 					"aria-busy": "true"
 				}, o.a.createElement("div", {
-					className: c.a.loadingSectionHeader
+					className: d.a.loadingSectionHeader
 				}), i()(t, e => o.a.createElement("div", {
-					className: c.a.loadingToggleWrapper,
+					className: d.a.loadingToggleWrapper,
 					key: e
 				}, o.a.createElement("span", {
-					className: c.a.loadingToggleName
+					className: d.a.loadingToggleName
 				}), o.a.createElement("span", {
-					className: c.a.loadingToggleButton
+					className: d.a.loadingToggleButton
 				}))))
 			}
 		},
 		"./src/reddit/components/Settings/Notifications/NotificationToggles.tsx": function(e, t, s) {
 			"use strict";
 			s.d(t, "a", (function() {
-				return p
+				return _
 			}));
 			var n = s("./node_modules/fbt/lib/FbtPublic.js"),
 				i = s("./node_modules/react/index.js"),
 				a = s.n(i),
-				o = s("./src/reddit/components/Settings/Notifications/Loader.ts"),
-				r = s("./src/reddit/components/Settings/Notifications/LoadingSection.tsx"),
+				o = s("./node_modules/react-redux/es/index.js"),
+				r = s("./src/reddit/components/Settings/Notifications/Loader.ts"),
+				d = s("./src/reddit/components/Settings/Notifications/LoadingSection.tsx"),
 				c = s("./src/reddit/components/Settings/shared/SectionHeading.tsx"),
-				d = s("./src/reddit/components/Settings/shared/Widgets.tsx"),
-				l = s("./src/reddit/helpers/trackers/notifications.ts"),
-				m = s("./src/reddit/hooks/useTracking.ts"),
-				u = s("./src/reddit/icons/fonts/index.tsx"),
-				g = s("./src/reddit/components/Settings/Notifications/index.m.less"),
-				f = s.n(g);
-			const p = e => {
+				l = s("./src/reddit/components/Settings/shared/Widgets.tsx"),
+				m = s("./src/reddit/helpers/trackers/notifications.ts"),
+				u = s("./src/reddit/hooks/useTracking.ts"),
+				g = s("./src/reddit/icons/fonts/index.tsx"),
+				f = s("./src/reddit/selectors/user.ts"),
+				p = s("./src/reddit/components/Settings/Notifications/index.m.less"),
+				b = s.n(p);
+			const _ = e => {
 				Object(i.useEffect)(() => {
 					e.fetchNotificationSettings()
 				}, []);
-				const t = Object(m.a)(),
-					s = (s, n, i) => {
+				const t = Object(u.a)(),
+					s = Object(o.e)(f.j),
+					p = (s, n, i) => {
 						const o = e.rows && e.rows.byId[s];
 						return o ? a.a.createElement("span", {
 							id: o.displayName.replace(/[^\w\s]|\s/gi, "").toLowerCase()
-						}, a.a.createElement(d.p, {
+						}, a.a.createElement(l.p, {
 							disabled: e.disabled,
 							forceOn: o.isEnabled && e.disabled,
 							key: o.displayName,
@@ -84,7 +87,7 @@
 							onClick: () => (s => {
 								if (s.messageType) {
 									const n = e.isEmailSettings;
-									t(n ? Object(l.b)(!s.isEnabled, s.messageType) : Object(l.i)(!s.isEnabled, s.messageType))
+									t(n ? Object(m.b)(!s.isEnabled, s.messageType) : Object(m.i)(!s.isEnabled, s.messageType))
 								}
 								e.updateNotificationPreference({
 									isEnabled: !s.isEnabled,
@@ -94,37 +97,37 @@
 							subtext: o.description
 						})) : null
 					},
-					g = a.a.createElement("span", {
+					_ = a.a.createElement("span", {
 						className: "errorMessage",
 						"data-testid": "error-message"
 					}, n.fbt._("There was an issue fetching your notification settings. Please try again later.", null, {
 						hk: "4pmBD4"
 					})),
-					p = e.sections && e.sections.allIds,
-					b = p && p.map(t => {
+					h = e.sections && e.sections.allIds,
+					N = h && h.map(t => {
 						const i = e.sections && e.sections.byId && e.sections.byId[t];
 						if (!i) return null;
-						const r = "Moderation" === i.title;
+						const o = "Moderation" === i.title;
 						return a.a.createElement("div", {
 							key: t
-						}, a.a.createElement(c.a, null, i.title), !e.isEmailSettings && "Activity" === i.title && e.handleCommunityNavClick && a.a.createElement(d.k, null, a.a.createElement("button", {
+						}, !s.length && o ? null : a.a.createElement(c.a, null, i.title), !e.isEmailSettings && "Activity" === i.title && e.handleCommunityNavClick && a.a.createElement(l.k, null, a.a.createElement("button", {
 							onClick: e.handleCommunityNavClick,
-							className: f.a.communityAlert
+							className: b.a.communityAlert
 						}, a.a.createElement("h3", {
-							className: f.a.header
+							className: b.a.header
 						}, n.fbt._("Community alerts", null, {
 							hk: "3jkfcH"
-						})), a.a.createElement(u.a, {
+						})), a.a.createElement(g.a, {
 							name: "forward_fill",
-							className: f.a.arrow
-						}))), i.rows ? i.rows.map(s) : null, r && a.a.createElement("div", {
-							className: f.a.ModPnSettingsSubredditList,
+							className: b.a.arrow
+						}))), i.rows ? !s.length && o ? null : i.rows.map(p) : null, o ? a.a.createElement("div", {
+							className: b.a.ModPnSettingsSubredditList,
 							"data-testid": "mod-pn-settings-subreddit-list-container"
-						}, a.a.createElement(o.c, {
+						}, a.a.createElement(r.c, {
 							handleModPnSubredditClick: e.handleModPnClick
-						})))
+						})) : null)
 					});
-				return e.hasError ? g : p && p.length > 0 ? a.a.createElement(a.a.Fragment, null, b) : a.a.createElement(r.a, {
+				return e.hasError ? _ : h && h.length > 0 ? a.a.createElement(a.a.Fragment, null, N) : a.a.createElement(d.a, {
 					rowsCount: 5
 				})
 			}
@@ -137,13 +140,13 @@
 				a = s("./src/reddit/actions/notificationSettingsLayout/index.ts"),
 				o = s("./src/reddit/components/Settings/Notifications/NotificationToggles.tsx"),
 				r = s("./src/reddit/models/NotificationSettingsLayout/index.ts"),
-				c = s("./src/reddit/selectors/user.ts");
-			const d = Object(i.c)({
-					hasError: c.u,
-					rows: c.hb,
-					sections: c.ib
+				d = s("./src/reddit/selectors/user.ts");
+			const c = Object(i.c)({
+					hasError: d.u,
+					rows: d.hb,
+					sections: d.ib
 				}),
-				l = Object(n.b)(d, e => ({
+				l = Object(n.b)(c, e => ({
 					fetchNotificationSettings: () => e(Object(a.a)(r.a.Push)),
 					updateNotificationPreference: t => e(Object(a.d)(t))
 				}))(o.a);
@@ -166,4 +169,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PushNotificationSettings.073e54c8dd4a7282baf2.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PushNotificationSettings.ec30ba5a2de4b28c922e.js.map

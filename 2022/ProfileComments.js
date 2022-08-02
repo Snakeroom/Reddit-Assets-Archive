@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfileComments.bc71b9e4d7074b5e45d1.js
-// Retrieved at 7/28/2022, 11:00:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfileComments.595530efc2a398f1c7be.js
+// Retrieved at 8/2/2022, 10:00:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfileComments"], {
 		"./src/reddit/actions/pages/profileComments/index.ts": function(e, t, s) {
@@ -77,7 +77,7 @@
 					} = s(), P = g.commentIds[j], y = g.api.error[j], w = g.api.pending[j];
 					if (await t(f.d(C)), w || P && !y) {
 						if (P) {
-							const e = Object(_.q)(s(), {
+							const e = Object(_.r)(s(), {
 								profileName: C
 							});
 							t(u.m({
@@ -569,7 +569,7 @@
 					let {
 						match: s
 					} = t;
-					return Object(Pe.j)(e, {
+					return Object(Pe.k)(e, {
 						profileName: s.params.profileName
 					})
 				}, te.Q, (e, t) => {
@@ -707,4 +707,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileComments.bc71b9e4d7074b5e45d1.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileComments.595530efc2a398f1c7be.js.map
