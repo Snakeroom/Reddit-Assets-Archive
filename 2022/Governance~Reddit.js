@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~Reddit.090c1f611b6913530eba.js
-// Retrieved at 8/3/2022, 9:40:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~Reddit.6b6ec0157f35c8e12b97.js
+// Retrieved at 8/3/2022, 2:30:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~Reddit"], {
 		"./assets/fonts/NotoMono/font.less": function(e, t, n) {},
@@ -4462,14 +4462,7 @@
 					nightmode: o,
 					onCloseDropdown: u,
 					searchOriginPage: d
-				}))), s.a.createElement(ae, {
-					className: Object(c.a)(T.a.borderTop4Line, T.a.triggerItem),
-					key: i.searchQuery,
-					searchOriginPage: d,
-					searchItem: i,
-					position: t.length,
-					onTriggerSearch: u
-				}))
+				}))))
 			}
 
 			function fe(e) {
@@ -4601,7 +4594,14 @@
 					className: Object(c.a)(T.a.loadingItem)
 				}), s.a.createElement("div", {
 					className: Object(c.a)(T.a.loadingItem)
-				})), F && !l && s.a.createElement(pe, e))
+				})), F && s.a.createElement(s.a.Fragment, null, !l && s.a.createElement(pe, e), s.a.createElement(ae, {
+					className: Object(c.a)(T.a.borderTop4Line, T.a.triggerItem),
+					key: y.searchQuery,
+					searchOriginPage: g,
+					searchItem: y,
+					position: f.length,
+					onTriggerSearch: _
+				})))
 			}
 		},
 		"./src/reddit/components/SubredditForkingCTA/index.tsx": function(e, t, n) {
@@ -24747,4 +24747,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit.090c1f611b6913530eba.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit.6b6ec0157f35c8e12b97.js.map
