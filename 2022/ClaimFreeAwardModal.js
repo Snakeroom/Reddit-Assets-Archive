@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ClaimFreeAwardModal.292363e717ee7a4b87c4.js
-// Retrieved at 8/1/2022, 10:20:09 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ClaimFreeAwardModal.f33a48e510260a295d9d.js
+// Retrieved at 8/3/2022, 12:40:06 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ClaimFreeAwardModal"], {
 		"./src/reddit/actions/economics/powerups/helpers.ts": function(e, t, r) {
@@ -250,24 +250,20 @@
 		},
 		"./src/reddit/selectors/gold/productOffers.ts": function(e, t, r) {
 			"use strict";
-			r.d(t, "g", (function() {
+			r.d(t, "e", (function() {
 				return c
-			})), r.d(t, "h", (function() {
+			})), r.d(t, "f", (function() {
 				return i
 			})), r.d(t, "a", (function() {
 				return l
-			})), r.d(t, "d", (function() {
-				return u
-			})), r.d(t, "i", (function() {
-				return f
-			})), r.d(t, "c", (function() {
-				return m
 			})), r.d(t, "b", (function() {
+				return u
+			})), r.d(t, "g", (function() {
+				return f
+			})), r.d(t, "d", (function() {
+				return m
+			})), r.d(t, "c", (function() {
 				return b
-			})), r.d(t, "f", (function() {
-				return w
-			})), r.d(t, "e", (function() {
-				return O
 			}));
 			var n = r("./node_modules/reselect/es/index.js"),
 				a = r("./src/lib/makeProductOfferKey/index.ts"),
@@ -296,8 +292,8 @@
 					return (null == t ? void 0 : t[0]) || null
 				},
 				f = (e, t) => (null == e ? void 0 : e.pricePackages) ? null == e ? void 0 : e.pricePackages.filter(e => e.renewInterval === t && e.requiredPaymentProviders && (e => e[0] === s.b.PayPal || e[0] === s.b.Stripe)(e.requiredPaymentProviders)) : null,
-				p = Object(n.a)(u, d.p, (e, t) => f(e, t) || null),
-				m = Object(n.a)(p, (e, t) => {
+				p = Object(n.a)(u, d.n, (e, t) => f(e, t) || null),
+				m = (Object(n.a)(p, (e, t) => {
 					let {
 						provider: r
 					} = t;
@@ -305,17 +301,15 @@
 				}, (e, t) => null == e ? void 0 : e.find(e => {
 					var r;
 					return (null === (r = e.requiredPaymentProviders) || void 0 === r ? void 0 : r[0]) === t
-				})),
-				b = Object(n.a)(p, e => (null == e ? void 0 : e[0].price) || null),
-				w = Object(n.a)(e => {
+				})), Object(n.a)(p, e => (null == e ? void 0 : e[0].price) || null), Object(n.a)(e => {
 					var t;
 					return null === (t = e.user.productOfferSubscriptions) || void 0 === t ? void 0 : t.subscriptions
-				}, e => null == e ? void 0 : e[0]),
-				O = Object(n.a)(w, e => Boolean(null == e ? void 0 : e.isCanceled))
+				}, e => null == e ? void 0 : e[0])),
+				b = Object(n.a)(m, e => Boolean(null == e ? void 0 : e.isCanceled))
 		},
 		"./src/redditGQL/operations/PurchaseCatalogProductOffers.json": function(e) {
 			e.exports = JSON.parse('{"id":"098518521d5b"}')
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ClaimFreeAwardModal.292363e717ee7a4b87c4.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ClaimFreeAwardModal.f33a48e510260a295d9d.js.map

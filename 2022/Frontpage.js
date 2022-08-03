@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Frontpage.71f47296cf8e16650ed2.js
-// Retrieved at 8/1/2022, 10:20:09 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Frontpage.460090d59630b605b439.js
+// Retrieved at 8/3/2022, 12:40:06 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Frontpage"], {
 		"./node_modules/intersection-observer/intersection-observer.js": function(e, t) {
@@ -829,7 +829,7 @@
 				}, Me = Object(le.a)(Oe.d), Le = e => async (t, a) => {
 					const s = a(),
 						n = s.platform.currentPage.routeMatch.match;
-					Object(ie.o)(s) || Object(ie.u)(s) || (e || t(Me()), await t(Te(n, !0)))
+					Object(ie.m)(s) || Object(ie.s)(s) || (e || t(Me()), await t(Te(n, !0)))
 				}, Be = Object(le.a)(Oe.g), Fe = Object(le.a)(Oe.f), Re = Object(le.a)(Oe.e), De = e => async (t, a, s) => {
 					let {
 						gqlContext: n
@@ -7512,4 +7512,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Frontpage.71f47296cf8e16650ed2.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Frontpage.460090d59630b605b439.js.map

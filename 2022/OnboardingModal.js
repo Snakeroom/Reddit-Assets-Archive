@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/OnboardingModal.ea3fb2b4a39239e9f1d2.js
-// Retrieved at 8/1/2022, 10:20:09 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/OnboardingModal.8a024a8aa3bf995f0a9e.js
+// Retrieved at 8/3/2022, 12:40:06 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["OnboardingModal"], {
 		"./node_modules/lodash/_baseRange.js": function(e, t) {
@@ -739,7 +739,7 @@
 				}, Fe = Object(de.a)(je.d), Ge = e => async (t, n) => {
 					const r = n(),
 						s = r.platform.currentPage.routeMatch.match;
-					Object(ie.o)(r) || Object(ie.u)(r) || (e || t(Fe()), await t(Ae(s, !0)))
+					Object(ie.m)(r) || Object(ie.s)(r) || (e || t(Fe()), await t(Ae(s, !0)))
 				}, Le = Object(de.a)(je.g), Pe = Object(de.a)(je.f), Me = Object(de.a)(je.e), Be = e => async (t, n, r) => {
 					let {
 						gqlContext: s
@@ -4199,4 +4199,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/OnboardingModal.ea3fb2b4a39239e9f1d2.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/OnboardingModal.8a024a8aa3bf995f0a9e.js.map

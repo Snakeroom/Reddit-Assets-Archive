@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Premium.3ef753af45459da780fc.js
-// Retrieved at 6/30/2022, 3:30:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Premium.6637a225f3f4402663d0.js
+// Retrieved at 8/3/2022, 12:40:06 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Premium"], {
 		"./src/reddit/endpoints/gold/productCatalog/old.index.ts": function(e, r, t) {
@@ -208,56 +208,52 @@
 		},
 		"./src/reddit/selectors/goldPurchaseModals.ts": function(e, r, t) {
 			"use strict";
-			t.d(r, "q", (function() {
+			t.d(r, "o", (function() {
 				return s
-			})), t.d(r, "s", (function() {
+			})), t.d(r, "q", (function() {
 				return i
-			})), t.d(r, "r", (function() {
+			})), t.d(r, "p", (function() {
 				return o
-			})), t.d(r, "u", (function() {
+			})), t.d(r, "s", (function() {
 				return c
-			})), t.d(r, "t", (function() {
+			})), t.d(r, "r", (function() {
 				return u
 			})), t.d(r, "b", (function() {
 				return l
-			})), t.d(r, "p", (function() {
+			})), t.d(r, "n", (function() {
 				return p
 			})), t.d(r, "a", (function() {
 				return f
-			})), t.d(r, "n", (function() {
+			})), t.d(r, "m", (function() {
 				return m
-			})), t.d(r, "o", (function() {
-				return g
 			})), t.d(r, "c", (function() {
+				return g
+			})), t.d(r, "g", (function() {
 				return h
-			})), t.d(r, "h", (function() {
+			})), t.d(r, "k", (function() {
 				return b
-			})), t.d(r, "l", (function() {
+			})), t.d(r, "u", (function() {
 				return P
-			})), t.d(r, "w", (function() {
-				return y
-			})), t.d(r, "x", (function() {
-				return _
 			})), t.d(r, "v", (function() {
+				return y
+			})), t.d(r, "t", (function() {
+				return _
+			})), t.d(r, "w", (function() {
 				return O
-			})), t.d(r, "y", (function() {
+			})), t.d(r, "e", (function() {
 				return j
 			})), t.d(r, "f", (function() {
 				return v
-			})), t.d(r, "g", (function() {
+			})), t.d(r, "h", (function() {
 				return x
-			})), t.d(r, "i", (function() {
-				return C
-			})), t.d(r, "k", (function() {
-				return k
 			})), t.d(r, "j", (function() {
+				return C
+			})), t.d(r, "i", (function() {
+				return k
+			})), t.d(r, "l", (function() {
 				return I
-			})), t.d(r, "m", (function() {
-				return w
-			})), t.d(r, "e", (function() {
-				return S
 			})), t.d(r, "d", (function() {
-				return M
+				return w
 			}));
 			var n = t("./src/reddit/selectors/gold/purchaseCatalog.ts"),
 				a = t("./src/lib/initializeClient/installReducer.ts"),
@@ -279,23 +275,21 @@
 						t = (e => e.features.goldPurchase.premiumPurchaseModal.packageId)(e);
 					return r.length && t && r.find(e => e.mobileId === t) || null
 				},
-				m = e => e.features.goldPurchase.premiumPurchaseModal.activePage,
-				g = e => e.features.goldPurchase.premiumPurchaseModal.showModal,
-				h = e => e.features.goldPurchase.payment.paymentMethod,
-				b = e => e.features.goldPurchase.payment.cardName,
-				P = e => e.features.goldPurchase.payment.postalCode,
-				y = e => e.features.goldPurchase.payment.savedCardsPending,
-				_ = e => e.features.goldPurchase.payment.savedCards,
-				O = e => e.features.goldPurchase.payment.rememberCard,
-				j = e => e.features.goldPurchase.payment.useSavedCard,
-				v = e => e.features.goldPurchase.payment.cardValidation.cardCvc,
-				x = e => e.features.goldPurchase.payment.cardValidation.cardExpiry,
-				C = e => e.features.goldPurchase.payment.cardValidation.cardNumber,
-				k = e => e.features.goldPurchase.payment.cardValidation.nameOnCard,
-				I = e => e.features.goldPurchase.payment.stripeToken.errorMessage,
-				w = e => e.features.goldPurchase.payment.stripeToken.pending,
-				S = e => e.features.goldPurchase.payment.paypal.passthrough,
-				M = e => e.features.goldPurchase.payment.paypal.errorMessage
+				m = e => e.features.goldPurchase.premiumPurchaseModal.showModal,
+				g = e => e.features.goldPurchase.payment.paymentMethod,
+				h = e => e.features.goldPurchase.payment.cardName,
+				b = e => e.features.goldPurchase.payment.postalCode,
+				P = e => e.features.goldPurchase.payment.savedCardsPending,
+				y = e => e.features.goldPurchase.payment.savedCards,
+				_ = e => e.features.goldPurchase.payment.rememberCard,
+				O = e => e.features.goldPurchase.payment.useSavedCard,
+				j = e => e.features.goldPurchase.payment.cardValidation.cardCvc,
+				v = e => e.features.goldPurchase.payment.cardValidation.cardExpiry,
+				x = e => e.features.goldPurchase.payment.cardValidation.cardNumber,
+				C = e => e.features.goldPurchase.payment.cardValidation.nameOnCard,
+				k = e => e.features.goldPurchase.payment.stripeToken.errorMessage,
+				I = e => e.features.goldPurchase.payment.stripeToken.pending,
+				w = e => e.features.goldPurchase.payment.paypal.errorMessage
 		},
 		"./src/redditGQL/operations/ChangeStripePaymentMethod.json": function(e) {
 			e.exports = JSON.parse('{"id":"ce700fb9b230"}')
@@ -308,4 +302,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Premium.3ef753af45459da780fc.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Premium.6637a225f3f4402663d0.js.map

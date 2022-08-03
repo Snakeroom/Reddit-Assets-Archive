@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.e95e944171fa67119fbd.js
-// Retrieved at 8/2/2022, 6:30:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.9c9437560a5b1a3e7193.js
+// Retrieved at 8/3/2022, 12:40:06 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Chat~Governance~Reddit"], {
 		"./assets/fonts/IBMPlexSans/font.less": function(e, t, i) {},
@@ -3467,11 +3467,11 @@
 				apiPassThroughHeaders: Object(r.e)({}.API_PASS_THROUGH_HEADERS || ""),
 				appName: {}.APP_NAME || "desktop2x",
 				assetPath: "https://www.redditstatic.com/desktop2x",
-				buildNumber: Object(r.c)("169741"),
+				buildNumber: Object(r.c)("169766"),
 				chatHelpUrl: {}.CHAT_HELP_URL || "https://reddit.zendesk.com/hc/en-us/sections/360008805652-Chat",
 				hlsVersion: "hls 0.12.4",
 				dashVersion: "dash 4.4.0",
-				buildTimestamp: Object(r.b)("1659477121"),
+				buildTimestamp: Object(r.b)("1659499100"),
 				cookieDomain: ".reddit.com",
 				giphyApiKey: "k2kwyMA6VeyHM6ZRT96OXDGaersnx73Z",
 				mediaUrl: "https://www.redditmedia.com",
@@ -6110,14 +6110,14 @@
 					}))
 				},
 				Y = (e, t, i) => {
-					console.log("%cStarting Raven %crelease %c6b68da8db46816a31deec0295890030092b65290-production" + ` %cpublic url %c${y.a.sentryClientPublicURL}`, "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
+					console.log("%cStarting Raven %crelease %cd870e08a009b0f5738b43115bc4fdb14b6274917-production" + ` %cpublic url %c${y.a.sentryClientPublicURL}`, "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
 					let n = [];
 					n = [new RegExp(`^${y.a.assetPath}`, "i")];
 					o.e({
 						attachStacktrace: !0,
 						dsn: y.a.sentryClientPublicURL,
 						whitelistUrls: n,
-						release: "6b68da8db46816a31deec0295890030092b65290-production",
+						release: "d870e08a009b0f5738b43115bc4fdb14b6274917-production",
 						environment: "production",
 						ignoreErrors: ["$ is not defined"],
 						integrations: [...Object(L.d)(), new d.Integrations.Breadcrumbs({
@@ -6643,7 +6643,7 @@
 							settings: r,
 							statusCode: s,
 							type: o,
-							releaseClient: "6b68da8db46816a31deec0295890030092b65290-production",
+							releaseClient: "d870e08a009b0f5738b43115bc4fdb14b6274917-production",
 							appName: t.statsAppName,
 							error: n ? JSON.parse(Object(l.a)(n)) : void 0
 						},
@@ -37045,32 +37045,30 @@
 				return c
 			})), i.d(t, "e", (function() {
 				return _
-			})), i.d(t, "r", (function() {
-				return m
 			})), i.d(t, "p", (function() {
-				return p
+				return m
 			})), i.d(t, "l", (function() {
-				return h
+				return p
 			})), i.d(t, "h", (function() {
-				return f
+				return h
 			})), i.d(t, "m", (function() {
-				return b
+				return f
 			})), i.d(t, "i", (function() {
-				return g
+				return b
 			})), i.d(t, "j", (function() {
-				return w
+				return g
 			})), i.d(t, "k", (function() {
-				return v
+				return w
 			})), i.d(t, "o", (function() {
-				return y
+				return v
 			})), i.d(t, "n", (function() {
-				return E
+				return y
 			})), i.d(t, "q", (function() {
-				return S
+				return E
 			})), i.d(t, "g", (function() {
-				return T
+				return S
 			})), i.d(t, "b", (function() {
-				return O
+				return T
 			}));
 			var n = i("./src/reddit/selectors/communityAwards.ts"),
 				r = i("./node_modules/reselect/es/index.js"),
@@ -37095,10 +37093,7 @@
 				_ = (e, t) => {
 					return c(e).filter(e => e.mobileId === t)[0]
 				},
-				m = e => {
-					return e.features.goldPurchase.purchaseCatalog.coinPackages.recommendedPackageIds.map(t => e.features.goldPurchase.purchaseCatalog.coinPackages.models[t])
-				},
-				p = (e, t) => {
+				m = (e, t) => {
 					var i;
 					const r = e.features.goldPurchase.purchaseCatalog.coinPackages.recommendedPackageIds.map(t => e.features.goldPurchase.purchaseCatalog.coinPackages.models[t]);
 					if (!t) return null === (i = r.find(e => {
@@ -37113,39 +37108,39 @@
 						}).sort((e, t) => e.coins - t.coins).find(e => o + e.coins > s.coinPrice);
 					return null == a ? void 0 : a.mobileId
 				},
-				h = e => e.features.goldPurchase.purchaseCatalog.premiumPackages,
-				f = Object(r.a)(h, e => {
+				p = e => e.features.goldPurchase.purchaseCatalog.premiumPackages,
+				h = Object(r.a)(p, e => {
 					if (!(null == e ? void 0 : e.length)) return;
 					const {
 						signupBonusCoins: t
 					} = e[0];
 					return t
 				}),
-				b = Object(r.a)(f, e => e && e > 0 ? e.toLocaleString() : void 0),
-				g = Object(r.a)(h, e => {
+				f = Object(r.a)(h, e => e && e > 0 ? e.toLocaleString() : void 0),
+				b = Object(r.a)(p, e => {
 					var t;
 					const i = null === (t = null == e ? void 0 : e[0]) || void 0 === t ? void 0 : t.defaultSignupBonusCoins;
 					return i && i > 0 ? i.toLocaleString() : void 0
 				}),
-				w = e => {
-					const t = h(e);
+				g = e => {
+					const t = p(e);
 					if (!(null == t ? void 0 : t.length)) return;
 					const {
 						periodicalCoins: i
 					} = t[0];
 					return i.toLocaleString()
 				},
-				v = (e, t) => {
-					return h(e).find(e => e.mobileId === t)
+				w = (e, t) => {
+					return p(e).find(e => e.mobileId === t)
 				},
-				y = e => e.features.goldPurchase.purchaseCatalog.api.storefrontPending,
-				E = e => e.features.goldPurchase.purchaseCatalog.api.errorMessage,
-				S = e => e.features.goldPurchase.purchaseCatalog.api.recommendedPending,
-				T = e => {
+				v = e => e.features.goldPurchase.purchaseCatalog.api.storefrontPending,
+				y = e => e.features.goldPurchase.purchaseCatalog.api.errorMessage,
+				E = e => e.features.goldPurchase.purchaseCatalog.api.recommendedPending,
+				S = e => {
 					var t;
 					return !!(null === (t = e.features.goldPurchase.purchaseCatalog.freeAwardEvent) || void 0 === t ? void 0 : t.isEnabled)
 				},
-				O = e => {
+				T = e => {
 					var t;
 					const i = null === (t = e.features.goldPurchase.purchaseCatalog.freeAwardEvent) || void 0 === t ? void 0 : t.awardIds[0];
 					return i ? Object(n.a)(e, i) : null
@@ -48994,4 +48989,4 @@
 		"ignored /drone/src/node_modules/readable-stream/lib/internal/streams util": function(e, t) {}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.e95e944171fa67119fbd.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.9c9437560a5b1a3e7193.js.map
