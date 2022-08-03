@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-BurnPointsModal~reddit-components-Governance-Transact~8f11de67.1c41e099c8ef1049b152.js
-// Retrieved at 8/1/2022, 10:20:09 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-BurnPointsModal~reddit-components-Governance-Transact~8f11de67.dac2b6b18fbebeeaed9a.js
+// Retrieved at 8/3/2022, 3:00:03 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Governance-TransactionModals-BurnPointsModal~reddit-components-Governance-Transact~8f11de67"], {
 		"./src/reddit/components/Governance/TransactionModals/ApprovalModal/ApprovalBar.m.less": function(A, e, t) {
@@ -904,35 +904,36 @@
 					return await e._signTypedData(s, l, t)
 				};
 			async function I(A, e, t, a, r, n) {
+				var o;
 				const {
-					allowedContractMethods: o,
-					blockchainProvider: c,
-					contracts: d,
-					gasLimit: l
-				} = e, u = c, I = new i.ethers.providers.JsonRpcProvider(Object(s.i)(u), Object(s.h)(u)), m = (null == d ? void 0 : d.timedForwarder.address) || "", E = i.ethers.Wallet.fromMnemonic(t).connect(I), {
-					contractAddress: k,
-					contractABI: g,
-					contractMethod: x
-				} = a, B = {
+					allowedContractMethods: c,
+					blockchainProvider: d,
+					contracts: l,
+					gasLimit: u
+				} = e, I = d, m = new i.ethers.providers.JsonRpcProvider(Object(s.i)(I), Object(s.h)(I)), E = (null == l ? void 0 : l.timedForwarder.address) || "", k = i.ethers.Wallet.fromMnemonic(t).connect(m), {
+					contractAddress: g,
+					contractABI: x,
+					contractMethod: B
+				} = a, C = {
 					apiContext: A,
-					contract: new i.ethers.Contract(k, g, E),
-					contractAddress: k,
-					contractMethod: x,
-					ethereumNetwork: u,
-					gasLimit: l,
+					contract: new i.ethers.Contract(g, x, k),
+					contractAddress: g,
+					contractMethod: B,
+					ethereumNetwork: I,
+					gasLimit: u,
 					pointsDetails: e,
-					provider: I,
+					provider: m,
 					subredditId: r,
-					timedForwarderAddress: m,
+					timedForwarderAddress: E,
 					transaction: a,
-					wallet: E
-				}, C = o[k].find(A => {
+					wallet: k
+				}, h = null === (o = c[g]) || void 0 === o ? void 0 : o.find(A => {
 					let {
 						method: e
 					} = A;
-					return e === x
+					return e === B
 				});
-				return n && C ? p(B) : async function(A) {
+				return n && h ? p(C) : async function(A) {
 					let {
 						contract: e,
 						contractMethod: t,
@@ -941,7 +942,7 @@
 					const i = await e[t](...a.arguments);
 					if (!i.hash) throw new Error("Did not receive transaction hash from provider");
 					return i
-				}(B)
+				}(C)
 			}
 			const p = async A => {
 				const {
@@ -1073,4 +1074,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-BurnPointsModal~reddit-components-Governance-Transact~8f11de67.1c41e099c8ef1049b152.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-BurnPointsModal~reddit-components-Governance-Transact~8f11de67.dac2b6b18fbebeeaed9a.js.map
