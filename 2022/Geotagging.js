@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Geotagging.d8a216c5d3a9047332ae.js
-// Retrieved at 8/1/2022, 10:20:09 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Geotagging.9fabbc1946a53ab56c4f.js
+// Retrieved at 8/3/2022, 9:40:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Geotagging"], {
 		"./node_modules/p-debounce/index.js": function(e, t, s) {
@@ -394,7 +394,7 @@
 				const t = Object(i.f)().getState(),
 					s = Object(p.a)(t, Object(o.c)());
 				if (e.isD2xPdpSideRailRecsEnabled) {
-					const t = e.d2xPdpSideRailRecsVariant === u.Lc.GreyRereddit || e.d2xPdpSideRailRecsVariant === u.Lc.GreyRedditNoNsfw || e.d2xPdpSideRailRecsVariant === u.Lc.LargeImagePreview ? e.reredditButtons : [];
+					const t = e.d2xPdpSideRailRecsVariant === u.Mc.GreyRereddit || e.d2xPdpSideRailRecsVariant === u.Mc.GreyRedditNoNsfw || e.d2xPdpSideRailRecsVariant === u.Mc.LargeImagePreview ? e.reredditButtons : [];
 					return r.a.createElement(O, {
 						reredditContent: t
 					})
@@ -912,14 +912,14 @@
 						className: j.a.SubscribeButton
 					}))
 				},
-				L = s("./src/reddit/components/TopicSidebar/SubredditList/index.m.less"),
-				I = s.n(L);
+				I = s("./src/reddit/components/TopicSidebar/SubredditList/index.m.less"),
+				L = s.n(I);
 			const {
 				fbt: G
 			} = s("./node_modules/fbt/lib/FbtPublic.js"), F = 8, R = Array.from({
 				length: F
 			}).map((e, t) => r.a.createElement(w, {
-				className: I.a.Subreddit,
+				className: L.a.Subreddit,
 				key: t
 			})), B = {
 				enabled: !0,
@@ -943,24 +943,24 @@
 						topicUrl: s
 					} = this.props, n = t.slice(0, F);
 					return r.a.createElement(o.a, {
-						className: Object(a.a)(I.a.Container, e)
+						className: Object(a.a)(L.a.Container, e)
 					}, r.a.createElement("div", {
-						className: I.a.Title
+						className: L.a.Title
 					}, r.a.createElement(d.b, {
 						type: d.a.Widget
 					}, G._("Top Communities", null, {
 						hk: "46yzcK"
 					}))), r.a.createElement("div", {
-						className: I.a.SubredditList
+						className: L.a.SubredditList
 					}, n.length > 0 ? n.map(e => r.a.createElement(T, {
-						className: I.a.Subreddit,
+						className: L.a.Subreddit,
 						discoveryUnit: B,
 						key: e,
 						subredditId: e
 					})) : R), t.length > F && r.a.createElement(i.a, {
 						to: s
 					}, r.a.createElement(l.r, {
-						className: I.a.SeeMore,
+						className: L.a.SeeMore,
 						onClick: this.onSeeMoreCommunities
 					}, G._("See more", null, {
 						hk: "2qkY6H"
@@ -1422,10 +1422,10 @@
 				T = s("./src/reddit/components/SubredditIcon/index.tsx"),
 				P = s("./src/reddit/endpoints/geotagging/setSubredditGeoPlace.ts"),
 				w = s("./src/redditGQL/operations/SuggestSubredditGeoPlace.json"),
-				L = async (e, t) => Object(l.a)(e, {
+				I = async (e, t) => Object(l.a)(e, {
 					...w,
 					variables: Object(P.b)(t)
-				}), I = s("./src/reddit/helpers/graphql/normalizeSubredditFromGql/index.ts");
+				}), L = s("./src/reddit/helpers/graphql/normalizeSubredditFromGql/index.ts");
 			const G = "crowdsource",
 				F = {
 					pageType: "crowdsource_feed_geo"
@@ -1437,16 +1437,16 @@
 					source: G,
 					noun: "skip",
 					action: "click",
-					subreddit: Object(I.a)(e),
-					userSubreddit: Object(I.g)(e.modPermissions, e.isSubscribed),
+					subreddit: Object(L.a)(e),
+					userSubreddit: Object(L.g)(e.modPermissions, e.isSubscribed),
 					actionInfo: F
 				}),
 				M = e => () => ({
 					source: G,
 					noun: "location_field",
 					action: "click",
-					subreddit: Object(I.a)(e),
-					userSubreddit: Object(I.g)(e.modPermissions, e.isSubscribed),
+					subreddit: Object(L.a)(e),
+					userSubreddit: Object(L.g)(e.modPermissions, e.isSubscribed),
 					actionInfo: R
 				}),
 				A = Q("select_location"),
@@ -1460,8 +1460,8 @@
 					source: G,
 					noun: e,
 					action: "click",
-					subreddit: Object(I.a)(t),
-					userSubreddit: Object(I.g)(t.modPermissions, t.isSubscribed),
+					subreddit: Object(L.a)(t),
+					userSubreddit: Object(L.g)(t.modPermissions, t.isSubscribed),
 					actionInfo: {
 						...R,
 						reason: s
@@ -1474,8 +1474,8 @@
 					source: G,
 					noun: e,
 					action: "click",
-					subreddit: Object(I.a)(t),
-					userSubreddit: Object(I.g)(t.modPermissions, t.isSubscribed),
+					subreddit: Object(L.a)(t),
+					userSubreddit: Object(L.g)(t.modPermissions, t.isSubscribed),
 					actionInfo: {
 						...F,
 						reason: s
@@ -1524,7 +1524,7 @@
 					className: E.a.subredditTitle
 				}, r.a.createElement(T.b, {
 					className: E.a.icon,
-					subredditOrProfile: Object(I.a)(t),
+					subredditOrProfile: Object(L.a)(t),
 					linkTo: t.path
 				}), r.a.createElement(f.a, {
 					to: t.path
@@ -1564,7 +1564,7 @@
 						} = e;
 						if (!n) return;
 						u(!0);
-						const i = await L(a(), {
+						const i = await I(a(), {
 							subredditId: t.id,
 							placeId: n.id,
 							source: n.source,
@@ -1682,11 +1682,11 @@
 				d = s("./node_modules/reselect/es/index.js");
 			const c = Object(d.a)(e => Object(r.c)(e, {
 					experimentEligibilitySelector: e => Object(o.h)(e) && Object(i.f)(e),
-					experimentName: n.oc
+					experimentName: n.pc
 				}), a.a),
 				l = Object(d.a)(e => Object(r.c)(e, {
 					experimentEligibilitySelector: e => !Object(o.h)(e) && Object(i.f)(e),
-					experimentName: n.nc
+					experimentName: n.oc
 				}), a.a),
 				u = Object(d.a)(c, l, (e, t) => e || t),
 				m = Object(d.a)(c, l, (e, t) => !(!e && !t))
@@ -1705,4 +1705,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Geotagging.d8a216c5d3a9047332ae.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Geotagging.9fabbc1946a53ab56c4f.js.map

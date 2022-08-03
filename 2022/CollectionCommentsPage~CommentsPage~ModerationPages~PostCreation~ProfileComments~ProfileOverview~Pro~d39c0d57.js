@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ModerationPages~PostCreation~ProfileComments~ProfileOverview~Pro~d39c0d57.9da89b86e19148e0f16e.js
-// Retrieved at 8/1/2022, 2:10:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ModerationPages~PostCreation~ProfileComments~ProfileOverview~Pro~d39c0d57.8a928665f24844c9f402.js
+// Retrieved at 8/3/2022, 9:40:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~ModerationPages~PostCreation~ProfileComments~ProfileOverview~Pro~d39c0d57"], {
 		"./src/lib/unicodeUtils/index.ts": function(e, t, s) {
@@ -526,7 +526,7 @@
 						postId: h
 					}))
 				}
-				const B = r()(e => {
+				const R = r()(e => {
 					if (s) return;
 					const {
 						target: t
@@ -534,8 +534,8 @@
 					t && t.played && 1 === t.played.length && 0 === t.played.start(0) && t.played.end(0) === t.duration && N(Object(u.s)(h))
 				}, 200);
 
-				function R(e) {
-					e.persist(), B(e)
+				function B(e) {
+					e.persist(), R(e)
 				}
 
 				function P(e) {
@@ -581,7 +581,7 @@
 						onLoadedMetadata: H,
 						onPause: M,
 						onPlaying: D,
-						onTimeUpdate: R,
+						onTimeUpdate: B,
 						shouldLoad: b,
 						shouldPause: g,
 						showCentered: k,
@@ -679,10 +679,10 @@
 				M = () => n.fbt._("Comments are locked", null, {
 					hk: "8HjJ9"
 				}),
-				B = e => n.fbt._("Moderator of {community name}", [n.fbt._param("community name", e)], {
+				R = e => n.fbt._("Moderator of {community name}", [n.fbt._param("community name", e)], {
 					hk: "nJqIB"
 				}),
-				R = () => n.fbt._("Stickied post", null, {
+				B = () => n.fbt._("Stickied post", null, {
 					hk: "3qSaBs"
 				}),
 				P = () => n.fbt._("Pinned post", null, {
@@ -753,7 +753,7 @@
 					className: Object(c.a)(L.a.icon, L.a.modIcon)
 				}), o.a.createElement(u.c, w({
 					tooltipId: Y,
-					text: B(s)
+					text: R(s)
 				}, W))), A.isArchived && o.a.createElement(r.Fragment, null, o.a.createElement(g.a, {
 					isFilled: !0,
 					className: Object(c.a)(L.a.icon, L.a.archivedIcon),
@@ -777,13 +777,13 @@
 				}, W))), i && Object(I.u)(A) && !l && o.a.createElement(r.Fragment, null, o.a.createElement(S.a, {
 					isFilled: !0,
 					className: Object(c.a)(L.a.icon, L.a.stickyIcon),
-					desc: R(),
+					desc: B(),
 					id: $,
 					onMouseEnter: U($),
 					onMouseLeave: H
 				}), o.a.createElement(u.c, w({
 					tooltipId: $,
-					text: R()
+					text: B()
 				}, W))), k && h && o.a.createElement(r.Fragment, null, o.a.createElement(S.a, {
 					isFilled: !0,
 					className: Object(c.a)(L.a.icon, L.a.stickyIcon),
@@ -1659,9 +1659,9 @@
 			})), s.d(t, "d", (function() {
 				return M
 			})), s.d(t, "a", (function() {
-				return B
-			})), s.d(t, "b", (function() {
 				return R
+			})), s.d(t, "b", (function() {
+				return B
 			})), s.d(t, "f", (function() {
 				return P
 			})), s.d(t, "h", (function() {
@@ -1786,7 +1786,7 @@
 				M = e => a.a.createElement(c.e, {
 					key: e
 				}),
-				B = (e, t, s, n, r) => {
+				R = (e, t, s, n, r) => {
 					const o = e.c;
 					if (!o) return;
 					const i = o.length,
@@ -1796,7 +1796,7 @@
 						key: n
 					}, d)
 				},
-				R = (e, t) => {
+				B = (e, t) => {
 					const s = e.c;
 					return a.a.createElement(c.k, {
 						key: t
@@ -1820,9 +1820,9 @@
 				F = (e, t, s, n, r) => {
 					switch (e.e) {
 						case p.b:
-							return B(e, t, s, n, r);
+							return R(e, t, s, n, r);
 						case p.c:
-							return R(e, n);
+							return B(e, n);
 						case p.k:
 							return T(e, s, n);
 						case p.l:
@@ -2215,12 +2215,12 @@
 						rtJsonElementProps: i
 					});
 					switch (o) {
-						case b.Bf.SmIcon:
+						case b.Cf.SmIcon:
 							return r.a.createElement(p, {
 								subredditName: n,
 								rtJsonElementProps: i
 							});
-						case b.Bf.SmIconHc:
+						case b.Cf.SmIconHc:
 							return r.a.createElement(p, {
 								subredditName: n,
 								isHoverable: !0,
@@ -2789,12 +2789,12 @@
 				c = e => {
 					return Object(o.c)(e, {
 						experimentEligibilitySelector: a,
-						experimentName: n.vf
+						experimentName: n.wf
 					}) || ""
 				},
 				d = e => {
 					const t = c(e);
-					return t === n.Bf.SmIcon || t === n.Bf.SmIconHc
+					return t === n.Cf.SmIcon || t === n.Cf.SmIconHc
 				},
 				l = (e, t) => {
 					let {
@@ -2820,4 +2820,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ModerationPages~PostCreation~ProfileComments~ProfileOverview~Pro~d39c0d57.9da89b86e19148e0f16e.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ModerationPages~PostCreation~ProfileComments~ProfileOverview~Pro~d39c0d57.8a928665f24844c9f402.js.map

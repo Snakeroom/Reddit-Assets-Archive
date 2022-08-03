@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~Reddit~Subreddit.c9693eb52b546711dc8c.js
-// Retrieved at 8/2/2022, 10:00:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~Reddit~Subreddit.c8bbbd38d7f7207b320b.js
+// Retrieved at 8/3/2022, 9:40:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~Reddit~Subreddit"], {
 		"./src/lib/CSSVariableProvider/withTheme.tsx": function(e, t, n) {
@@ -1835,9 +1835,9 @@
 			})), n.d(t, "j", (function() {
 				return J
 			})), n.d(t, "k", (function() {
-				return $
-			})), n.d(t, "i", (function() {
 				return Z
+			})), n.d(t, "i", (function() {
+				return $
 			})), n.d(t, "d", (function() {
 				return ee
 			})), n.d(t, "n", (function() {
@@ -2149,7 +2149,7 @@
 						noun: r.ITEM_SUBREDDIT_SUBSCRIBE
 					})
 				},
-				$ = (e, t, n, o) => {
+				Z = (e, t, n, o) => {
 					const s = V();
 					return e => ({
 						..._(e, s),
@@ -2161,7 +2161,7 @@
 						noun: r.ITEM_SUBREDDIT_UNSUBSCRIBE
 					})
 				},
-				Z = (e, t, n) => {
+				$ = (e, t, n) => {
 					const o = V();
 					return e => ({
 						..._(e, o),
@@ -3246,12 +3246,12 @@
 					noun: "screen",
 					...v(e)
 				}),
-				$ = {
+				Z = {
 					source: "global",
 					action: a.c.VIEW,
 					noun: "screen"
 				},
-				Z = e => !!e && {
+				$ = e => !!e && {
 					correlationId: Object(g.c)(g.a.SearchResults)
 				},
 				ee = (e, t, n, r, o, i) => c => {
@@ -3272,7 +3272,7 @@
 					const l = j.G(c, o);
 					return {
 						...h.g(c, t),
-						...$,
+						...Z,
 						...j.n(c),
 						actionInfo: j.d(c, {
 							success: u,
@@ -3284,13 +3284,13 @@
 							sort: null !== (a = t.sort) && void 0 !== a ? a : s.Qb,
 							range: null !== (d = t.t) && void 0 !== d ? d : s.Rb
 						},
-						...Z(i),
+						...$(i),
 						userPreferences: j.cb(c)
 					}
 				},
 				te = (e, t, n) => r => ({
 					...j.n(r),
-					...$,
+					...Z,
 					actionInfo: {
 						...j.d(r),
 						pageType: "search_dropdown"
@@ -3298,7 +3298,7 @@
 					search: {
 						...j.ab(r, e, E.a.Typeahead, !0, t || void 0)
 					},
-					...Z(n),
+					...$(n),
 					userPreferences: j.cb(r)
 				}),
 				ne = (e, t) => {
@@ -3775,7 +3775,7 @@
 					if (!l(e)) return;
 					const t = Object(i.c)(e, {
 						experimentEligibilitySelector: u,
-						experimentName: s.Wd,
+						experimentName: s.Xd,
 						expEventOverride: !1
 					});
 					return null == t ? void 0 : t.toLocaleLowerCase()
@@ -3798,9 +3798,9 @@
 				},
 				m = e => !!b(e) && Object(i.c)(e, {
 					experimentEligibilitySelector: l,
-					experimentName: s.Xd,
+					experimentName: s.Yd,
 					expEventOverride: !1
-				}) !== s.Yd.Readonly
+				}) !== s.Zd.Readonly
 		},
 		"./src/reddit/selectors/experiments/newCommunityProgressV3.ts": function(e, t, n) {
 			"use strict";
@@ -3841,7 +3841,7 @@
 					return r ? r * o.Sb < 1639443600180 ? void 0 : I(e) : void 0
 				},
 				I = Object(r.a)(e => Object(c.c)(e, {
-					experimentName: s.we,
+					experimentName: s.xe,
 					experimentEligibilitySelector: a.e
 				}), d.a)
 		},
@@ -3968,4 +3968,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit~Subreddit.c9693eb52b546711dc8c.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit~Subreddit.c8bbbd38d7f7207b320b.js.map

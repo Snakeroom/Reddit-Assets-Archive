@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-InFeedPostCreation.5a3ad142ae9a6b9e42b6.js
-// Retrieved at 8/1/2022, 10:20:09 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-InFeedPostCreation.24dee79243789ec5b64e.js
+// Retrieved at 8/3/2022, 9:40:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-InFeedPostCreation"], {
 		"./src/reddit/components/InFeedPostCreation/index.m.less": function(e, t, n) {
@@ -37,11 +37,11 @@
 				_ = n("./src/reddit/helpers/trackers/postComposer.ts"),
 				f = n("./src/reddit/icons/fonts/index.tsx"),
 				E = n("./src/reddit/selectors/experiments/onlineIndicator.ts"),
-				C = n("./src/reddit/selectors/subreddit.ts"),
-				O = n("./src/reddit/selectors/user.ts"),
-				U = n("./src/reddit/components/InFeedPostCreation/index.m.less"),
-				N = n.n(U);
-			const j = l.a.wrapped(b.a, "CurrentUserIcon", N.a);
+				O = n("./src/reddit/selectors/subreddit.ts"),
+				U = n("./src/reddit/selectors/user.ts"),
+				N = n("./src/reddit/components/InFeedPostCreation/index.m.less"),
+				j = n.n(N);
+			const C = l.a.wrapped(b.a, "CurrentUserIcon", j.a);
 			var P;
 			! function(e) {
 				e.Media = "post-composer-du-media", e.Link = "post-composer-du-link"
@@ -67,11 +67,11 @@
 					}
 				},
 				M = Object(a.c)({
-					currentUser: O.k,
+					currentUser: U.k,
 					isPresenceConsumptionExpEnabled: E.c,
-					isPresenceTogglePref: O.V,
-					subreddit: C.A,
-					subredditAboutInfo: C.x
+					isPresenceTogglePref: U.V,
+					subreddit: O.A,
+					subredditAboutInfo: O.x
 				}),
 				L = Object(c.b)(M, e => ({
 					navigateTo: t => e(Object(i.b)(t)),
@@ -118,44 +118,44 @@
 							media: (o || r) && !e.isNSFW
 						}
 					}(a, l),
-					C = e => {
+					O = e => {
 						i(Object(_.x)({
 							actionInfoType: "du",
 							subredditId: null == a ? void 0 : a.id,
 							noun: h(e)
 						}))
 					},
-					O = () => {
-						C(d.Wb.POST), c(b)
+					U = () => {
+						O(d.Wb.POST), c(b)
 					},
-					U = n && s,
+					N = n && s,
 					M = t ? o.a.createElement(x.default, {
-						className: N.a.UserIconWrapper,
+						className: j.a.UserIconWrapper,
 						to: t.url
-					}, o.a.createElement(j, {
-						className: N.a.UserIcon,
-						shouldShowPresenceIndicator: U
+					}, o.a.createElement(C, {
+						className: j.a.UserIcon,
+						shouldShowPresenceIndicator: N
 					})) : null;
 				return o.a.createElement("div", {
-					className: N.a.Container
+					className: j.a.Container
 				}, M, o.a.createElement("input", {
 					name: "createPost",
-					className: N.a.Input,
-					onChange: O,
-					onClick: O,
-					onKeyPress: O,
+					className: j.a.Input,
+					onChange: U,
+					onClick: U,
+					onKeyPress: U,
 					placeholder: r.fbt._("Create Post", null, {
 						hk: "OcnKS"
 					}),
 					type: "text"
 				}), E.media && o.a.createElement(I.t, {
-					className: N.a.Button,
+					className: j.a.Button,
 					"aria-label": g(),
 					priority: I.c.Plain,
 					kind: I.b.InternalLink,
 					size: I.d.M,
 					id: P.Media,
-					onClick: () => C(d.Wb.MEDIA),
+					onClick: () => O(d.Wb.MEDIA),
 					onMouseEnter: () => m(P.Media),
 					onMouseLeave: () => m(P.Media),
 					to: b + k(d.Wb.MEDIA),
@@ -166,13 +166,13 @@
 					tooltipId: P.Media,
 					text: g()
 				})), E.link && o.a.createElement(I.t, {
-					className: N.a.Button,
+					className: j.a.Button,
 					priority: I.c.Plain,
 					kind: I.b.InternalLink,
 					size: I.d.M,
 					"aria-label": v(),
 					id: P.Link,
-					onClick: () => C(d.Wb.LINK_ONLY),
+					onClick: () => O(d.Wb.LINK_ONLY),
 					onMouseEnter: () => m(P.Link),
 					onMouseLeave: () => m(P.Link),
 					to: b + k(d.Wb.LINK_ONLY),
@@ -255,30 +255,30 @@
 			const c = e => {
 					return Object(s.c)(e, {
 						experimentEligibilitySelector: s.a,
-						experimentName: r.Re
-					}) === r.Cd
+						experimentName: r.Se
+					}) === r.Dd
 				},
 				i = e => {
 					if (Object(o.a)(e)) return !1;
 					return Object(s.c)(e, {
 						experimentEligibilitySelector: s.a,
-						experimentName: r.Qe
-					}) === r.Cd
+						experimentName: r.Re
+					}) === r.Dd
 				},
 				a = e => {
 					return Object(s.c)(e, {
 						experimentEligibilitySelector: s.a,
-						experimentName: r.He
-					}) === r.Cd
+						experimentName: r.Ie
+					}) === r.Dd
 				},
 				d = e => {
 					if (Object(o.a)(e)) return !1;
 					return Object(s.c)(e, {
 						experimentEligibilitySelector: s.a,
-						experimentName: r.Ge
-					}) === r.Cd
+						experimentName: r.He
+					}) === r.Dd
 				}
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-InFeedPostCreation.5a3ad142ae9a6b9e42b6.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-InFeedPostCreation.24dee79243789ec5b64e.js.map

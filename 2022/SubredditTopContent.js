@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditTopContent.8b1e9f52c7a9ebbfabf9.js
-// Retrieved at 8/1/2022, 10:20:09 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditTopContent.2a52ceebbcbc4367bf05.js
+// Retrieved at 8/3/2022, 9:40:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditTopContent"], {
 		"./src/reddit/components/DiscoveryUnit/SubredditTopContentDiscoveryUnit/index.m.less": function(e, t, s) {
@@ -31,13 +31,13 @@
 				u = s("./src/reddit/components/DiscoveryUnit/Layout/PostsCarousel/index.tsx"),
 				h = s("./src/reddit/components/ModalStyledComponents/index.tsx"),
 				_ = s("./src/reddit/components/Widgets/Base/index.tsx"),
-				y = s("./src/reddit/helpers/trackers/discoveryUnit.ts"),
-				x = s("./src/reddit/constants/experiments.ts"),
+				x = s("./src/reddit/helpers/trackers/discoveryUnit.ts"),
+				y = s("./src/reddit/constants/experiments.ts"),
 				D = s("./src/reddit/helpers/chooseVariant/index.ts"),
 				b = s("./src/reddit/selectors/user.ts");
-			const C = e => Object(b.N)(e) || x.Cf.ShowTopContent === Object(D.c)(e, {
+			const C = e => Object(b.N)(e) || y.Df.ShowTopContent === Object(D.c)(e, {
 				experimentEligibilitySelector: D.a,
-				experimentName: x.wf
+				experimentName: y.xf
 			});
 			var v = s("./src/reddit/selectors/subreddit.ts"),
 				U = s("./src/reddit/components/DiscoveryUnit/SubredditTopContentDiscoveryUnit/index.m.less"),
@@ -46,9 +46,9 @@
 				inSubredditTopContentExperiment: C,
 				subredditUrl: v.d
 			}), e => ({
-				trackDiscoveryUnitView: t => e((e, s) => y.a(s(), t)),
-				trackDismissClick: t => e((e, s) => y.c(s(), t)),
-				trackPostView: i()((t, s, o) => e((e, r) => y.s(r(), t, s, o)), (e, t) => {
+				trackDiscoveryUnitView: t => e((e, s) => x.a(s(), t)),
+				trackDismissClick: t => e((e, s) => x.c(s(), t)),
+				trackPostView: i()((t, s, o) => e((e, r) => x.s(r(), t, s, o)), (e, t) => {
 					let {
 						id: s
 					} = e;
@@ -121,4 +121,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditTopContent.8b1e9f52c7a9ebbfabf9.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditTopContent.2a52ceebbcbc4367bf05.js.map

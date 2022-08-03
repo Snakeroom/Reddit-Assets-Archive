@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/IdCard.ff54f6f37d55cb83b9dc.js
-// Retrieved at 8/2/2022, 10:00:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/IdCard.3f749b36f74e488a1daf.js
+// Retrieved at 8/3/2022, 9:40:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["IdCard", "AchievementsActions", "ContributorRequestButton"], {
 		"./node_modules/autosize/dist/autosize.js": function(e, t, n) {
@@ -2936,8 +2936,8 @@
 				nt = e => {
 					return Object($e.c)(e, {
 						experimentEligibilitySelector: tt,
-						experimentName: Re.S
-					}) === Re.cb.Enabled
+						experimentName: Re.T
+					}) === Re.db.Enabled
 				};
 			var rt = n("./src/reddit/selectors/experiments/joinOptimizations.ts"),
 				st = n("./src/reddit/selectors/experiments/newCommunityProgressV3.ts"),
@@ -3334,8 +3334,8 @@
 				showContributorRequestFlow: e => Object($.u)(e, Ye.e.Post),
 				showCreatePollButton: e => (e => Object($e.c)(e, {
 					experimentEligibilitySelector: $e.a,
-					experimentName: Re.X
-				}) === Re.fb.Treatment)(e) && !Object(We.g)(),
+					experimentName: Re.Y
+				}) === Re.gb.Treatment)(e) && !Object(We.g)(),
 				shouldShowFlairPreview: (e, t) => {
 					let {
 						listingName: n
@@ -3580,7 +3580,7 @@
 						onClick: b ? x : void 0,
 						headerButton: i.a.createElement("div", {
 							className: mt.a.headerButtonsContainer
-						}, !L && _ && g && d !== Re.Fe.NewModule && i.a.createElement(a.a, {
+						}, !L && _ && g && d !== Re.Ge.NewModule && i.a.createElement(a.a, {
 							className: mt.a.ModToolsLink,
 							to: g.posts ? `${_.url}about/modqueue` : `${_.url}about/`,
 							onClick: this.onClickModTools
@@ -5208,29 +5208,29 @@
 				i = n("./src/reddit/helpers/chooseVariant/index.ts"),
 				o = n("./src/reddit/selectors/experiments/index.ts");
 			const a = Object(r.a)(e => Object(i.c)(e, {
-					experimentName: s.Xb,
-					experimentEligibilitySelector: o.e
-				}), e => e === s.ib.Enabled),
-				c = Object(r.a)(e => Object(i.c)(e, {
 					experimentName: s.Yb,
 					experimentEligibilitySelector: o.e
 				}), e => e === s.jb.Enabled),
-				d = Object(r.a)(e => Object(i.c)(e, {
+				c = Object(r.a)(e => Object(i.c)(e, {
 					experimentName: s.Zb,
 					experimentEligibilitySelector: o.e
 				}), e => e === s.kb.Enabled),
-				l = Object(r.a)(e => Object(i.c)(e, {
+				d = Object(r.a)(e => Object(i.c)(e, {
 					experimentName: s.ac,
 					experimentEligibilitySelector: o.e
 				}), e => e === s.lb.Enabled),
-				u = Object(r.a)(e => Object(i.c)(e, {
-					experimentName: s.cc,
-					experimentEligibilitySelector: o.e
-				}), e => e === s.nb.Enabled),
-				m = Object(r.a)(e => Object(i.c)(e, {
+				l = Object(r.a)(e => Object(i.c)(e, {
 					experimentName: s.bc,
 					experimentEligibilitySelector: o.e
-				}), e => e === s.mb.Enabled)
+				}), e => e === s.mb.Enabled),
+				u = Object(r.a)(e => Object(i.c)(e, {
+					experimentName: s.dc,
+					experimentEligibilitySelector: o.e
+				}), e => e === s.ob.Enabled),
+				m = Object(r.a)(e => Object(i.c)(e, {
+					experimentName: s.cc,
+					experimentEligibilitySelector: o.e
+				}), e => e === s.nb.Enabled)
 		},
 		"./src/redditGQL/operations/SubredditUserAchievements.json": function(e) {
 			e.exports = JSON.parse('{"id":"92790c69eba6"}')
@@ -5243,4 +5243,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/IdCard.ff54f6f37d55cb83b9dc.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/IdCard.3f749b36f74e488a1daf.js.map

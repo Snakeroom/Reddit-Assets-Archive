@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-CoinPurchaseDropdown.4bc328d168c0fb4c457e.js
-// Retrieved at 8/3/2022, 12:40:06 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-CoinPurchaseDropdown.430850418cad7baebe81.js
+// Retrieved at 8/3/2022, 9:40:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-CoinPurchaseDropdown"], {
 		"./node_modules/@stripe/react-stripe-js/dist/react-stripe.umd.js": function(e, t, r) {
@@ -1084,24 +1084,24 @@
 				},
 				v = r("./node_modules/fbt/lib/FbtPublic.js"),
 				x = r("./node_modules/react-redux/es/index.js"),
-				_ = r("./src/reddit/selectors/experiments/econ/index.ts"),
-				E = r("./node_modules/reselect/es/index.js"),
-				k = r("./src/lib/constants/index.ts"),
-				w = r("./src/lib/currency/currencies.ts"),
-				I = r("./src/lib/localizeCurrency/index.ts"),
-				A = r("./src/lib/opener/index.ts"),
-				S = r("./src/reddit/actions/goldPurchaseModals/coinPurchaseModal.ts"),
-				N = r("./src/reddit/actions/goldPurchaseModals/premiumPurchaseModal.ts"),
-				T = r("./src/reddit/actions/goldPurchaseModals/purchaseCatalog.ts"),
-				L = r("./src/reddit/actions/modal.ts"),
-				D = r("./src/reddit/constants/modals.ts"),
-				M = r("./src/reddit/contexts/PageLayer/index.tsx"),
-				B = r("./src/reddit/controls/LoadingIcon/index.tsx"),
-				R = r("./src/reddit/featureFlags/index.ts"),
-				F = r("./src/reddit/helpers/correlationIdTracker.ts"),
-				U = r("./src/reddit/hooks/useLocale.ts"),
-				H = r("./src/reddit/models/Gold/Premium/index.ts"),
-				G = r("./src/reddit/selectors/crypto/points.ts"),
+				_ = r("./node_modules/reselect/es/index.js"),
+				E = r("./src/lib/constants/index.ts"),
+				k = r("./src/lib/currency/currencies.ts"),
+				w = r("./src/lib/localizeCurrency/index.ts"),
+				I = r("./src/lib/opener/index.ts"),
+				A = r("./src/reddit/actions/goldPurchaseModals/coinPurchaseModal.ts"),
+				S = r("./src/reddit/actions/goldPurchaseModals/premiumPurchaseModal.ts"),
+				N = r("./src/reddit/actions/goldPurchaseModals/purchaseCatalog.ts"),
+				T = r("./src/reddit/actions/modal.ts"),
+				L = r("./src/reddit/constants/modals.ts"),
+				D = r("./src/reddit/contexts/PageLayer/index.tsx"),
+				M = r("./src/reddit/controls/LoadingIcon/index.tsx"),
+				B = r("./src/reddit/featureFlags/index.ts"),
+				R = r("./src/reddit/helpers/correlationIdTracker.ts"),
+				F = r("./src/reddit/hooks/useLocale.ts"),
+				U = r("./src/reddit/models/Gold/Premium/index.ts"),
+				H = r("./src/reddit/selectors/crypto/points.ts"),
+				G = r("./src/reddit/selectors/experiments/econ/index.ts"),
 				q = r("./src/reddit/selectors/gold/purchaseCatalog.ts"),
 				K = r("./src/reddit/selectors/user.ts"),
 				z = r("./src/reddit/components/LottieAnimation/index.tsx"),
@@ -1147,33 +1147,33 @@
 				},
 				Q = r("./src/reddit/components/CompactCoinPurchaseList/index.m.less"),
 				$ = r.n(Q);
-			const J = Object(E.c)({
+			const J = Object(_.c)({
 					coinPackages: q.d,
-					communityPointsConversionEnabled: R.d.spPointsCoinConversion,
+					communityPointsConversionEnabled: B.d.spPointsCoinConversion,
 					communityPointsName: (e, t) => {
 						var r;
-						const n = Object(M.r)(e, t);
-						return null === (r = Object(G.b)(e, null == n ? void 0 : n.id)) || void 0 === r ? void 0 : r.name
+						const n = Object(D.r)(e, t);
+						return null === (r = Object(H.b)(e, null == n ? void 0 : n.id)) || void 0 === r ? void 0 : r.name
 					},
 					isFreeAwardEventEnabled: q.g,
-					isPremiumCoinStoreUpsellEnabled: _.p,
+					isPremiumCoinStoreUpsellEnabled: G.p,
 					isPremiumSubscriber: K.w,
 					premiumPackages: q.l,
 					purchaseCatalogError: q.n,
 					purchaseCatalogPending: q.o
 				}),
 				X = Object(x.b)(J, e => ({
-					onClickClaimFreeAward: () => e(Object(L.h)(D.a.ECON_CLAIM_FREE_AWARD_MODAL)),
-					onClickCoinPackage: (t, r) => e(Object(S.c)({
+					onClickClaimFreeAward: () => e(Object(T.h)(L.a.ECON_CLAIM_FREE_AWARD_MODAL)),
+					onClickCoinPackage: (t, r) => e(Object(A.c)({
 						correlationId: r,
 						packageId: t.mobileId
 					})),
-					onClickConvert: () => e(Object(L.h)(D.a.CONVERT_TO_COINS)),
-					onClickPremiumPackage: (t, r) => r ? e(Object(N.openWithBlob)({
-						packageId: H.b,
+					onClickConvert: () => e(Object(T.h)(L.a.CONVERT_TO_COINS)),
+					onClickPremiumPackage: (t, r) => r ? e(Object(S.openWithBlob)({
+						packageId: U.b,
 						correlationId: t
-					})) : Object(A.e)("/premium", A.d.BLANK),
-					requestPurchaseCatalog: t => e(Object(T.b)({
+					})) : Object(I.e)("/premium", I.d.BLANK),
+					requestPurchaseCatalog: t => e(Object(N.b)({
 						correlationId: t
 					}))
 				}));
@@ -1183,15 +1183,15 @@
 						const {
 							isPremiumSubscriber: e,
 							premiumPackages: t
-						} = this.props, r = Object(U.a)(), n = t.length ? t[0] : void 0;
+						} = this.props, r = Object(F.a)(), n = t.length ? t[0] : void 0;
 						if (e || !n) return null;
 						const {
 							periodicalCoins: o,
 							signupBonusCoins: s
-						} = n, c = s ? Object(I.a)(s) : void 0, a = Object(I.b)(o, {
+						} = n, c = s ? Object(w.a)(s) : void 0, a = Object(w.b)(o, {
 							locale: r,
-							type: w.b.Reddit,
-							currency: w.a
+							type: k.b.Reddit,
+							currency: k.a
 						}), i = {
 							buttonClass: $.a.premiumButtonStyle,
 							buttonSubtext: c ? v.fbt._("{number of bonus coins} bonus coins", [v.fbt._param("number of bonus coins", c)], {
@@ -1214,29 +1214,29 @@
 						const {
 							coinPackages: e,
 							sorted: t
-						} = this.props, r = Object(U.a)(), n = e.map(e => {
+						} = this.props, r = Object(F.a)(), n = e.map(e => {
 							const {
 								baselineCoins: t,
 								baselinePennies: n,
 								coins: o,
 								pennies: s,
 								bonusPct: c
-							} = e, a = Object(I.b)(o, {
+							} = e, a = Object(w.b)(o, {
 								locale: r,
-								type: w.b.Reddit,
-								currency: w.a
-							}), i = Object(I.b)(s, {
+								type: k.b.Reddit,
+								currency: k.a
+							}), i = Object(w.b)(s, {
 								locale: r
 							});
 							let d, u;
-							return o !== t && (d = Object(I.b)(t, {
+							return o !== t && (d = Object(w.b)(t, {
 								locale: r,
-								type: w.b.Reddit,
-								currency: w.a
+								type: k.b.Reddit,
+								currency: k.a
 							})), {
-								buttonSubtext: u = s !== n ? Object(I.b)(n, {
+								buttonSubtext: u = s !== n ? Object(w.b)(n, {
 									locale: r
-								}) : c ? v.fbt._("{percent bonus}% Bonus", [v.fbt._param("percent bonus", Object(I.a)(c, {
+								}) : c ? v.fbt._("{percent bonus}% Bonus", [v.fbt._param("percent bonus", Object(w.a)(c, {
 									locale: r
 								}))], {
 									hk: "2zgjZ1"
@@ -1266,7 +1266,7 @@
 							sendEvent: o
 						} = this.props;
 						t && t(), o(u.c());
-						const s = (null === (e = null == n ? void 0 : n.meta) || void 0 === e ? void 0 : e.name) === k.Nb.PREMIUM;
+						const s = (null === (e = null == n ? void 0 : n.meta) || void 0 === e ? void 0 : e.name) === E.Nb.PREMIUM;
 						r(this.correlationId, s)
 					}, this.handleClickFreeAward = () => {
 						const {
@@ -1312,7 +1312,7 @@
 								hk: "1XFIa6"
 							})
 						}) : null
-					}, this.correlationId = Object(F.d)(F.a.GoldPayment, !1), e.coinPackages.length || e.purchaseCatalogPending || e.requestPurchaseCatalog(this.correlationId)
+					}, this.correlationId = Object(R.d)(R.a.GoldPayment, !1), e.coinPackages.length || e.purchaseCatalogPending || e.requestPurchaseCatalog(this.correlationId)
 				}
 				packageDetailsAsListItem(e) {
 					const {
@@ -1352,7 +1352,7 @@
 						className: e
 					}, o.a.createElement("div", {
 						className: $.a.loaderContainer
-					}, o.a.createElement(B.a, {
+					}, o.a.createElement(M.a, {
 						sizePx: 80
 					}))) : r || !t.length ? o.a.createElement("div", {
 						className: e
@@ -1365,7 +1365,7 @@
 					}, this.getListItems())
 				}
 			}
-			var te = Object(M.u)()(X(Object(i.c)(ee))),
+			var te = Object(D.u)()(X(Object(i.c)(ee))),
 				re = r("./src/reddit/components/CoinPurchaseDropdown/index.m.less"),
 				ne = r.n(re);
 			const {
@@ -1762,4 +1762,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-CoinPurchaseDropdown.4bc328d168c0fb4c457e.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-CoinPurchaseDropdown.430850418cad7baebe81.js.map

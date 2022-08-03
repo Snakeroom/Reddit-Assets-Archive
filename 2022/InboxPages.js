@@ -1,11 +1,48 @@
-// https://www.redditstatic.com/desktop2x/InboxPages.ff57955ce58c42586295.js
-// Retrieved at 6/7/2022, 3:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/InboxPages.ead206a1df1645405958.js
+// Retrieved at 8/3/2022, 9:40:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["InboxPages"], {
 		"./src/reddit/components/IFrame/index.m.less": function(e, t, s) {
 			e.exports = {
 				IFrame: "saPujbGMyXRwqISHcmJH9",
 				iFrame: "saPujbGMyXRwqISHcmJH9"
+			}
+		},
+		"./src/reddit/components/IFrame/index.tsx": function(e, t, s) {
+			"use strict";
+			var r = s("./node_modules/react/index.js"),
+				n = s.n(r),
+				o = s("./src/lib/classNames/index.ts");
+			var d = s("./src/reddit/components/IFrame/index.m.less"),
+				c = s.n(d);
+			t.a = e => {
+				let {
+					src: t,
+					className: s,
+					onLoad: d
+				} = e;
+				const i = Object(r.useRef)(null),
+					a = function(e) {
+						const [t, s] = Object(r.useState)(0);
+						return Object(r.useEffect)(() => {
+							s(e => e + 1)
+						}, [e]), t
+					}(t);
+				return n.a.createElement("iframe", {
+					key: a,
+					className: Object(o.a)(c.a.IFrame, s),
+					ref: i,
+					src: t,
+					onLoad: () => {
+						const e = (() => {
+							var e, t;
+							try {
+								return null === (t = null === (e = i.current) || void 0 === e ? void 0 : e.contentWindow) || void 0 === t ? void 0 : t.document
+							} catch (s) {}
+						})();
+						e && d && d(e)
+					}
+				})
 			}
 		},
 		"./src/reddit/pages/RedditEmbed/index.m.less": function(e, t, s) {
@@ -25,47 +62,18 @@
 				i = s("./src/lib/addQueryParams/index.ts"),
 				a = s("./src/lib/classNames/index.ts"),
 				l = s("./src/lib/env/index.ts"),
-				u = s("./src/reddit/actions/platform.ts");
-			var m = s("./src/reddit/components/IFrame/index.m.less"),
-				b = s.n(m);
-			var p = e => {
-					let {
-						src: t,
-						onLoad: s
-					} = e;
-					const r = Object(n.useRef)(null),
-						d = function(e) {
-							const [t, s] = Object(n.useState)(0);
-							return Object(n.useEffect)(() => {
-								s(e => e + 1)
-							}, [e]), t
-						}(t);
-					return o.a.createElement("iframe", {
-						key: d,
-						className: b.a.IFrame,
-						ref: r,
-						src: t,
-						onLoad: () => {
-							const e = (() => {
-								var e, t;
-								try {
-									return null === (t = null === (e = r.current) || void 0 === e ? void 0 : e.contentWindow) || void 0 === t ? void 0 : t.document
-								} catch (s) {}
-							})();
-							e && s && s(e)
-						}
-					})
-				},
-				f = s("./src/reddit/constants/componentSizes.ts"),
-				h = s("./src/reddit/contexts/NavbarExp.ts"),
-				O = s("./src/reddit/helpers/toggleBodyScroll/index.ts"),
-				v = s("./src/reddit/selectors/user.ts"),
-				y = s("./src/reddit/selectors/userPrefs.ts"),
+				u = s("./src/reddit/actions/platform.ts"),
+				m = s("./src/reddit/components/IFrame/index.tsx"),
+				b = s("./src/reddit/constants/componentSizes.ts"),
+				p = s("./src/reddit/contexts/NavbarExp.ts"),
+				f = s("./src/reddit/helpers/toggleBodyScroll/index.ts"),
+				h = s("./src/reddit/selectors/user.ts"),
+				O = s("./src/reddit/selectors/userPrefs.ts"),
 				x = s("./src/reddit/pages/RedditEmbed/index.m.less"),
-				g = s.n(x);
+				v = s.n(x);
 
-			function j() {
-				return (j = Object.assign || function(e) {
+			function y() {
+				return (y = Object.assign || function(e) {
 					for (var t = 1; t < arguments.length; t++) {
 						var s = arguments[t];
 						for (var r in s) Object.prototype.hasOwnProperty.call(s, r) && (e[r] = s[r])
@@ -73,27 +81,27 @@
 					return e
 				}).apply(this, arguments)
 			}
-			const S = Object(c.c)({
-					isSubscriptionsPinned: y.b,
+			const j = Object(c.c)({
+					isSubscriptionsPinned: O.b,
 					url: e => e.platform.currentPage ? e.platform.currentPage.url : "",
 					servedOrigin: e => `${e.meta.protocol}://${e.meta.domain}`,
-					nightmode: v.db
+					nightmode: h.db
 				}),
-				w = Object(d.b)(S, e => ({
+				g = Object(d.b)(j, e => ({
 					onTitleChange: t => e(u.m({
 						title: t
 					}))
 				})),
-				E = e => {
+				S = e => {
 					let {
 						offsetLeft: t,
 						children: s,
 						...r
 					} = e;
-					const d = Object(n.useContext)(h.a);
-					return o.a.createElement("div", j({
-						className: Object(a.a)(g.a.wrapper, {
-							[g.a.wrapperExp]: d
+					const d = Object(n.useContext)(p.a);
+					return o.a.createElement("div", y({
+						className: Object(a.a)(v.a.wrapper, {
+							[v.a.wrapperExp]: d
 						}),
 						style: {
 							left: t
@@ -115,7 +123,7 @@
 							marginRight: e
 						} = document.body.style;
 						!!e != !!this.state.bodyScrollOffset && (e ? this.setState({
-							bodyScrollOffset: Object(O.d)(document.body)
+							bodyScrollOffset: Object(f.d)(document.body)
 						}) : this.setState({
 							bodyScrollOffset: 0
 						}))
@@ -139,7 +147,7 @@
 						nightmode: s
 					} = this.props;
 					let n = 0;
-					e && (n += f.t), 0 !== this.state.bodyScrollOffset && (n -= this.state.bodyScrollOffset);
+					e && (n += b.t), 0 !== this.state.bodyScrollOffset && (n -= this.state.bodyScrollOffset);
 					const d = Object(l.a)() ? t : "true",
 						c = Object(l.a)() ? r.a.redditUrl : "";
 					let a;
@@ -148,16 +156,16 @@
 						dark: "true"
 					}) : c + Object(i.a)(this.props.url, {
 						embedded: d
-					}), o.a.createElement(E, {
+					}), o.a.createElement(S, {
 						offsetLeft: n
-					}, o.a.createElement(p, {
+					}, o.a.createElement(m.a, {
 						src: a,
 						onLoad: this.onLoad
 					}))
 				}
 			}
-			t.default = w(_)
+			t.default = g(_)
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/InboxPages.ff57955ce58c42586295.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/InboxPages.ead206a1df1645405958.js.map
