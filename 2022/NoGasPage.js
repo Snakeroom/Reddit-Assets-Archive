@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/NoGasPage.3794d73d0eb01242d1fa.js
-// Retrieved at 7/20/2022, 6:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/NoGasPage.3da971a93e913dcb3a2f.js
+// Retrieved at 8/3/2022, 3:30:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["NoGasPage"], {
 		"./src/reddit/pages/meta/NoGasPage/index.m.less": function(e, a, t) {
@@ -17,40 +17,42 @@
 		"./src/reddit/pages/meta/NoGasPage/index.tsx": function(e, a, t) {
 			"use strict";
 			t.r(a);
-			var s = t("./src/config.ts"),
-				n = t("./node_modules/fbt/lib/FbtPublic.js"),
+			var n = t("./src/config.ts"),
+				s = t("./node_modules/fbt/lib/FbtPublic.js"),
 				i = t("./node_modules/react/index.js"),
 				r = t.n(i),
-				o = t("./src/reddit/pages/meta/NoGasPage/index.m.less"),
-				c = t.n(o);
+				c = t("./src/reddit/pages/meta/NoGasPage/index.m.less"),
+				l = t.n(c);
 			a.default = () => r.a.createElement("div", {
-				className: c.a.container
+				className: l.a.container
 			}, r.a.createElement("div", {
-				className: c.a.content
+				className: l.a.content
 			}, r.a.createElement("h2", {
-				className: c.a.subtitle
-			}, n.fbt._("Gas Funds", null, {
-				hk: "1uPnyy"
+				className: l.a.subtitle
+			}, s.fbt._("Network Fees", null, {
+				hk: "3hGHBU"
 			})), r.a.createElement("h1", {
-				className: c.a.header
-			}, n.fbt._("Looking to manage gas?", null, {
-				hk: "2pG6rW"
+				className: l.a.header
+			}, s.fbt._("Insufficient Gas", null, {
+				hk: "2kRtFM"
 			})), r.a.createElement("h3", {
-				className: c.a.description
-			}, n.fbt._("Gas funds are required to continue. Please go to the subreddit on the desktop website to manage your gas funds.", null, {
-				hk: "4vX6dP"
+				className: l.a.description
+			}, s.fbt._("You do not have enough gas funds to continue. Gas funds are required to pay blockchain network fees.", null, {
+				hk: "1I7cZw"
+			}), r.a.createElement("br", null), r.a.createElement("br", null), s.fbt._("Managing gas is not available in the app", null, {
+				hk: "3e0T8s"
 			})), r.a.createElement("div", {
-				className: c.a.iconWrapper
+				className: l.a.iconWrapper
 			}, r.a.createElement("div", {
-				className: c.a.circle
+				className: l.a.circle
 			}, r.a.createElement("img", {
-				alt: n.fbt._("Community Points Bridge", null, {
+				alt: s.fbt._("Community Points Bridge", null, {
 					hk: "1vd0MS"
 				}),
-				className: c.a.bridgeLogo,
-				src: `${s.a.assetPath}/img/communityPoints/migration_bridge.png`
+				className: l.a.bridgeLogo,
+				src: `${n.a.assetPath}/img/communityPoints/migration_bridge.png`
 			})))))
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/NoGasPage.3794d73d0eb01242d1fa.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/NoGasPage.3da971a93e913dcb3a2f.js.map
