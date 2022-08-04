@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CommentsPageNativeAd.d539928300f6381a7efb.js
-// Retrieved at 8/3/2022, 9:40:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CommentsPageNativeAd.233908d1bc1fa902a7e0.js
+// Retrieved at 8/4/2022, 1:30:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CommentsPageNativeAd"], {
 		"./src/reddit/components/BlankPost/index.tsx": function(e, t, s) {
@@ -39,7 +39,6 @@
 				content: "_2fEtNtqlNiA6AiPDXiwSWg",
 				postTitle: "G0FWKYmNg1Zr_NuehrREp",
 				contentRow: "irTUaiUW9ePlgXD68uZDe",
-				contentRowExpanded: "_25AY7y4SDTheyIwPVi59Cr",
 				contentColumn: "_1rMolF_ZKpCWxLpArNysrm",
 				videoContainer: "_2fwc5mLGMVaPEcLorfiSjv",
 				close: "_2XPtk5CeYp6ucBGWMZg5_x",
@@ -82,9 +81,9 @@
 				N = s("./src/reddit/components/JSAPIContainers/index.tsx"),
 				O = s("./src/reddit/components/PostContainer/index.tsx"),
 				f = s("./src/reddit/components/PostTitle/index.tsx"),
-				y = s("./src/reddit/constants/componentTestIds.ts"),
-				P = s("./src/reddit/controls/OutboundLink/index.tsx"),
-				j = s("./src/reddit/helpers/search/renderMedia.tsx"),
+				j = s("./src/reddit/constants/componentTestIds.ts"),
+				y = s("./src/reddit/controls/OutboundLink/index.tsx"),
+				P = s("./src/reddit/helpers/search/renderMedia.tsx"),
 				S = s("./src/reddit/components/PostTopMeta/index.tsx"),
 				_ = s("./src/reddit/components/AuthorLink/index.tsx"),
 				w = s("./src/reddit/components/SponsoredLabel/index.tsx"),
@@ -115,8 +114,8 @@
 				W = s("./src/reddit/components/Thumbnail/index.tsx"),
 				R = s("./src/reddit/icons/svgs/Close/index.tsx");
 
-			function V() {
-				return (V = Object.assign || function(e) {
+			function U() {
+				return (U = Object.assign || function(e) {
 					for (var t = 1; t < arguments.length; t++) {
 						var s = arguments[t];
 						for (var a in s) Object.prototype.hasOwnProperty.call(s, a) && (e[a] = s[a])
@@ -124,7 +123,7 @@
 					return e
 				}).apply(this, arguments)
 			}
-			const U = e => {
+			const V = e => {
 				let {
 					classNameInnerThumbnail: t,
 					closeVideo: s,
@@ -187,7 +186,7 @@
 					return o.a.createElement("div", {
 						className: a ? Object(l.a)(A.a.videoContainer, s) : Object(l.a)(A.a.thumbnailContainer, s),
 						onClick: n ? () => r(!0) : void 0
-					}, o.a.createElement(U, V({}, e, {
+					}, o.a.createElement(V, U({}, e, {
 						mediaExpanded: a,
 						closeVideo: () => r(!1)
 					})), n && o.a.createElement(M.a, {
@@ -236,7 +235,7 @@
 					const i = Object(l.a)(A.a.styledOutboundLink, {
 						[A.a.ctaExperiment]: r
 					});
-					return o.a.createElement(P.b, {
+					return o.a.createElement(y.b, {
 						className: i,
 						href: a.source.url,
 						postId: a.id,
@@ -261,7 +260,7 @@
 						post: p,
 						redditStyle: h,
 						scrollerItemRef: b,
-						showMedia: P,
+						showMedia: y,
 						showCTAExperiment: _
 					} = this.props;
 					if (p.isBlank) return o.a.createElement(v.default, {
@@ -290,7 +289,7 @@
 						className: Object(l.a)(A.a.contentRow, {
 							[A.a.contentRowExpanded]: this.state.mediaExpanded
 						})
-					}, !(n && !P) && o.a.createElement(D, {
+					}, !(n && !y) && o.a.createElement(D, {
 						isMeta: p.isMeta,
 						post: p,
 						redditStyle: h,
@@ -317,7 +316,7 @@
 						className: w,
 						rel: "nofollow",
 						"data-click-id": "comments",
-						"data-test-id": y.a,
+						"data-test-id": j.a,
 						to: this.props.isOverlay ? Object(u.a)(p.permalink, !0) : Object(B.b)(p.permalink),
 						onClick: this.props.onClick
 					}, a.fbt._("Join the conversation", null, {
@@ -333,7 +332,7 @@
 						showCTAExperiment: _
 					}, p.callToAction)))), o.a.createElement("div", {
 						className: A.a.spacer
-					}), o.a.createElement(N.d, null))), Object(j.a)(p, A.a, b, t, !1, !1)), o.a.createElement("div", {
+					}), o.a.createElement(N.d, null))), Object(P.a)(p, A.a, b, t, !1, !1)), o.a.createElement("div", {
 						className: A.a.commentsSpacer
 					}))
 				}
@@ -443,4 +442,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommentsPageNativeAd.d539928300f6381a7efb.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommentsPageNativeAd.233908d1bc1fa902a7e0.js.map
