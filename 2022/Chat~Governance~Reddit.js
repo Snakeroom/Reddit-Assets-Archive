@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.e765f070c21fadf6fc6d.js
-// Retrieved at 8/4/2022, 2:20:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.f1a281383f44fecbf79c.js
+// Retrieved at 8/4/2022, 3:00:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Chat~Governance~Reddit"], {
 		"./assets/fonts/IBMPlexSans/font.less": function(e, t, i) {},
@@ -3467,11 +3467,11 @@
 				apiPassThroughHeaders: Object(r.e)({}.API_PASS_THROUGH_HEADERS || ""),
 				appName: {}.APP_NAME || "desktop2x",
 				assetPath: "https://www.redditstatic.com/desktop2x",
-				buildNumber: Object(r.c)("169938"),
+				buildNumber: Object(r.c)("169948"),
 				chatHelpUrl: {}.CHAT_HELP_URL || "https://reddit.zendesk.com/hc/en-us/sections/360008805652-Chat",
 				hlsVersion: "hls 0.12.4",
 				dashVersion: "dash 4.4.0",
-				buildTimestamp: Object(r.b)("1659635002"),
+				buildTimestamp: Object(r.b)("1659637826"),
 				cookieDomain: ".reddit.com",
 				giphyApiKey: "k2kwyMA6VeyHM6ZRT96OXDGaersnx73Z",
 				mediaUrl: "https://www.redditmedia.com",
@@ -6111,14 +6111,14 @@
 					}))
 				},
 				Y = (e, t, i) => {
-					console.log("%cStarting Raven %crelease %ccbb969645ef9c41b15f7792efd08800b1162f06a-production" + ` %cpublic url %c${y.a.sentryClientPublicURL}`, "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
+					console.log("%cStarting Raven %crelease %c08d3bb10c16002c1fd7ebb604574671fd71aa332-production" + ` %cpublic url %c${y.a.sentryClientPublicURL}`, "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
 					let n = [];
 					n = [new RegExp(`^${y.a.assetPath}`, "i")];
 					o.e({
 						attachStacktrace: !0,
 						dsn: y.a.sentryClientPublicURL,
 						whitelistUrls: n,
-						release: "cbb969645ef9c41b15f7792efd08800b1162f06a-production",
+						release: "08d3bb10c16002c1fd7ebb604574671fd71aa332-production",
 						environment: "production",
 						ignoreErrors: ["$ is not defined"],
 						integrations: [...Object(L.d)(), new d.Integrations.Breadcrumbs({
@@ -6644,7 +6644,7 @@
 							settings: r,
 							statusCode: s,
 							type: o,
-							releaseClient: "cbb969645ef9c41b15f7792efd08800b1162f06a-production",
+							releaseClient: "08d3bb10c16002c1fd7ebb604574671fd71aa332-production",
 							appName: t.statsAppName,
 							error: n ? JSON.parse(Object(l.a)(n)) : void 0
 						},
@@ -21127,7 +21127,7 @@
 				f = i("./src/reddit/selectors/subreddit.ts");
 			var b = i("./src/reddit/selectors/responsiveSettings.ts");
 			const g = new Set(["AntiEvilPlayground", "offmychest", "amitheasshole", "lgbt", "politics", "worldnews", "pics", "askreddit", "relationship_advice", "casualuk", "pokemongo", "de", "humansbeingbros", "liberalgunowners", "advice", "nostupidquestions", "europe", "bisexual", "askwomen", "ukpolitics", "france", "canada", "justnomil", "florida", "mildlyinteresting", "fortnitebr", "unexpected", "fantasy", "unitedkingdom", "nursing", "tooafraidtoask", "explainlikeimfive", "corgi", "starwarskenobi", "muaonthecheap", "nintendoswitch", "askhistorians", "kpop", "dccomics", "askfrance", "virginia", "science", "yurop", "changemyview", "equestrian"].map(e => e.toLowerCase())),
-				w = new Set(["antievilplayground", "lgbt", "dccomics", "yurop", "muaonthecheap", "loveislandusa", "blackladiesdating", "stpetersburgfl", "pics", "canada", "askuk", "fortnitebr", "unitedkingdom", "stopdrinking", "casualconversation", "animalsonreddit", "bisexual", "liberalgunowners", "redditsweats", "orangetheory", "fortnite", "readwithme", "dndgreentext", "ukraine", "auntienetwork", "amitheasshole", "tooafraidtoask", "crazyfuckingvideos", "politicalhumor", "abruptchaos", "canada", "videos", "maybemaybemaybe", "detroit", "doordash_drivers", "democrats", "florida", "usmc", "memphis", "onejob", "sonicthehedgehog", "lego", "veterans", "formuladank", "liberal"].map(e => e.toLowerCase())),
+				w = new Set(["antievilplayground", "lgbt", "dccomics", "yurop", "muaonthecheap", "loveislandusa", "blackladiesdating", "stpetersburgfl", "pics", "canada", "askuk", "fortnitebr", "unitedkingdom", "stopdrinking", "casualconversation", "animalsonreddit", "bisexual", "liberalgunowners", "redditsweats", "orangetheory", "fortnite", "readwithme", "dndgreentext", "ukraine", "auntienetwork", "amitheasshole", "tooafraidtoask", "crazyfuckingvideos", "politicalhumor", "abruptchaos", "canada", "videos", "maybemaybemaybe", "detroit", "doordash_drivers", "democrats", "florida", "usmc", "memphis", "onejob", "sonicthehedgehog", "lego", "veterans", "formuladank", "liberal", "worldnews", "shitposting", "whitepeopletwitter", "nfl", "polls", "indianteenagers", "science", "crappydesign", "inthenews", "columbus", "religion", "agedlikemilk", "ubereats", "israelpalestine", "orangecounty", "jerseyshore", "hamilton", "taylorswift", "askwomenover30", "hawaii", "hometheater", "rickandmorty", "piercing", "israel", "charlottehornets", "dynastyff", "instacartshoppers", "againsthatesubreddits", "asianamerican", "webdev", "prisonarchitect", "truegaming", "stopspeeding", "bestoflegaladvice", "idaho", "kdrama", "budgetaudiophile", "kdramarecommends", "canadahousing", "bangtan", "homedefense", "analog", "fantasy_football", "gifrecipes", "4ktv", "taskmaster", "windows", "southafrica", "windowshelp", "canadapublicservants", "belowdeck", "beautyguruchatter", "joebiden", "letterkenny", "health", "minecrafthelp", "lotr_on_prime", "halloween", "gymnastics", "juve", "justbootthings", "fortwayne", "chihuahua", "sisterwives", "windows10", "windows11", "nasa", "wilmingtonde", "philadelphiastars", "genderqueer", "bikela", "ladycyclists", "asiantwox", "transgender_surgeries", "web_design", "productmanagement", "startups", "40something", "crazyexstories", "learnmicrosoft", "learndotnet", "minimalspaces", "wildcats", "scritchthedamnbird", "redbubble", "goev", "toontown", "chia", "oled", "trophywiki", "facebookcringe", "facebookdrama"].map(e => e.toLowerCase())),
 				v = new Set(["uzitest", "testingtesting127", "kpkrunal"]);
 			var y = i("./src/reddit/featureFlags/subredditPoints.ts");
 			const E = new Set(["askaliberal", "asktransgender", "askwomen", "bisexual", "blackladies", "exchristian", "exmormon", "gendercynical", "girlgamers", "neoliberal", "nothowgirlswork", "progresspics", "subredditdrama", "teenagers", "thegirlsurvivalguide", "thequickbrowncorgi", "traaaaaaannnnnnnnnns", "transpositive", "trollxchromosomes", "twoxchromosomes"]);
@@ -49240,4 +49240,4 @@
 		"ignored /drone/src/node_modules/readable-stream/lib/internal/streams util": function(e, t) {}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.e765f070c21fadf6fc6d.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.f1a281383f44fecbf79c.js.map
