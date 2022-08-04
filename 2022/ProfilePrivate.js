@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfilePrivate.3a907741a04ac6a5e2bb.js
-// Retrieved at 8/2/2022, 10:00:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfilePrivate.22ce645ef8428dde28c7.js
+// Retrieved at 8/4/2022, 11:40:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfilePrivate"], {
 		"./node_modules/lodash/take.js": function(e, t, i) {
@@ -1707,6 +1707,7 @@
 				I = i("./src/reddit/models/Vote/index.ts");
 			const k = {
 				t3_1: {
+					adSupplementaryText: null,
 					approvedAtUTC: null,
 					approvedBy: null,
 					author: "that_one_guy",
@@ -1803,6 +1804,7 @@
 					voteState: 0
 				},
 				t3_2: {
+					adSupplementaryText: null,
 					approvedAtUTC: null,
 					approvedBy: null,
 					author: "that_other_chick",
@@ -1894,6 +1896,7 @@
 					voteState: 1
 				},
 				t3_3: {
+					adSupplementaryText: null,
 					approvedAtUTC: null,
 					approvedBy: null,
 					author: "person_number_three",
@@ -1990,6 +1993,7 @@
 					voteState: 1
 				},
 				t3_4: {
+					adSupplementaryText: null,
 					approvedAtUTC: null,
 					approvedBy: null,
 					author: "this_user_is_the_best",
@@ -2089,6 +2093,7 @@
 					voteState: 0
 				},
 				t3_5: {
+					adSupplementaryText: null,
 					approvedAtUTC: null,
 					approvedBy: null,
 					author: "yet_another_cool_dude",
@@ -2190,6 +2195,7 @@
 					voteState: 0
 				},
 				t3_6: {
+					adSupplementaryText: null,
 					approvedAtUTC: null,
 					approvedBy: null,
 					author: "spez",
@@ -2291,6 +2297,7 @@
 					voteState: 0
 				},
 				abc12345: {
+					adSupplementaryText: null,
 					approvedAtUTC: null,
 					approvedBy: null,
 					author: "spez",
@@ -2718,4 +2725,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfilePrivate.3a907741a04ac6a5e2bb.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfilePrivate.22ce645ef8428dde28c7.js.map
