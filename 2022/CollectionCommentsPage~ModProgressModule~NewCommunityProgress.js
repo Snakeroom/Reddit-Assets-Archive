@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~ModProgressModule~NewCommunityProgress.67f9639f8b59a568c4e0.js
-// Retrieved at 8/1/2022, 10:20:09 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~ModProgressModule~NewCommunityProgress.a758b67d7317d97f1854.js
+// Retrieved at 8/4/2022, 7:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~ModProgressModule~NewCommunityProgress"], {
 		"./src/reddit/components/NewCommunityProgress/icons/index.tsx": function(C, e, a) {
@@ -1159,9 +1159,9 @@
 			})), a.d(e, "a", (function() {
 				return m
 			})), a.d(e, "b", (function() {
-				return h
-			})), a.d(e, "c", (function() {
 				return p
+			})), a.d(e, "c", (function() {
+				return h
 			}));
 			var l = a("./src/redditGQL/operations/CompleteCommunityProgressCard.json"),
 				t = a("./src/redditGQL/operations/CompleteCommunityProgressModule.json"),
@@ -1181,11 +1181,11 @@
 					...l,
 					variables: e
 				}),
-				h = (C, e) => Object(n.a)(C, {
+				p = (C, e) => Object(n.a)(C, {
 					...t,
 					variables: e
 				}),
-				p = (C, e) => async (a, l, t) => {
+				h = (C, e) => async (a, l, t) => {
 					let {
 						gqlContext: L
 					} = t;
@@ -1195,7 +1195,7 @@
 							moduleId: e
 						}
 					};
-					await h(L(), c), a(Object(i.b)(C))
+					await p(L(), c), a(Object(i.b)(C))
 				}
 		},
 		"./src/reddit/helpers/trackers/communityProgressModule.ts": function(C, e, a) {
@@ -1233,7 +1233,7 @@
 						pageType: "community",
 						reason: e
 					},
-					subreddit: Object(l.hb)(a)
+					subreddit: Object(l.ib)(a)
 				}),
 				c = (C, e, a) => L => ({
 					...Object(l.n)(L),
@@ -1247,7 +1247,7 @@
 							reason: a
 						}
 					},
-					subreddit: Object(l.hb)(L)
+					subreddit: Object(l.ib)(L)
 				}),
 				n = C => e => ({
 					...Object(l.n)(e),
@@ -1259,7 +1259,7 @@
 						pageType: "community",
 						reason: "expanded_module"
 					},
-					subreddit: Object(l.hb)(e)
+					subreddit: Object(l.ib)(e)
 				}),
 				i = C => e => ({
 					...Object(l.n)(e),
@@ -1271,7 +1271,7 @@
 						pageType: "community",
 						reason: "collapses_module"
 					},
-					subreddit: Object(l.hb)(e)
+					subreddit: Object(l.ib)(e)
 				}),
 				r = (C, e) => a => ({
 					...Object(l.n)(a),
@@ -1282,7 +1282,7 @@
 					actionInfo: {
 						pageType: "community"
 					},
-					subreddit: Object(l.hb)(a)
+					subreddit: Object(l.ib)(a)
 				}),
 				d = (C, e) => a => ({
 					...Object(l.n)(a),
@@ -1293,7 +1293,7 @@
 					actionInfo: {
 						pageType: "community"
 					},
-					subreddit: Object(l.hb)(a)
+					subreddit: Object(l.ib)(a)
 				}),
 				m = (C, e) => a => ({
 					...Object(l.n)(a),
@@ -1304,7 +1304,7 @@
 					actionInfo: {
 						pageType: "community"
 					},
-					subreddit: Object(l.hb)(a)
+					subreddit: Object(l.ib)(a)
 				})
 		},
 		"./src/redditGQL/operations/CompleteCommunityProgressCard.json": function(C) {
@@ -1321,4 +1321,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~ModProgressModule~NewCommunityProgress.67f9639f8b59a568c4e0.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~ModProgressModule~NewCommunityProgress.a758b67d7317d97f1854.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Reddit~StandalonePostPage.6c3ffbcb6a6e58e754dd.js
-// Retrieved at 8/3/2022, 9:40:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Reddit~StandalonePostPage.28e7da7f89cd119a62af.js
+// Retrieved at 8/4/2022, 7:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Reddit~StandalonePostPage"], {
 		"./src/higherOrderComponents/asModal/helpers.ts": function(e, t, n) {
@@ -501,8 +501,8 @@
 				}, [t]);
 				const K = Object(s.useCallback)(() => g(!0), [g]),
 					H = 0 === _.length,
-					Z = w || H,
-					z = Object(s.useRef)(((e, t) => `${t}_${e}_count_anim`)(b, n));
+					J = w || H,
+					Z = Object(s.useRef)(((e, t) => `${t}_${e}_count_anim`)(b, n));
 				return r.a.createElement(r.a.Fragment, null, !h && r.a.createElement("div", {
 					className: d.a.countAnimation
 				}, S.map((e, t) => {
@@ -526,7 +526,7 @@
 						} : {
 							transform: "translateY(0)"
 						}
-					}, Z ? r.a.createElement("span", {
+					}, J ? r.a.createElement("span", {
 						className: d.a.digitDelta
 					}, e) : n.map((e, t) => {
 						const s = 0 === t || t === n.length - 1;
@@ -544,7 +544,7 @@
 					variables: x,
 					onData: h ? m : f,
 					queryKey: v,
-					uniqueKey: z.current
+					uniqueKey: Z.current
 				}))
 			}
 		},
@@ -2345,16 +2345,16 @@
 				a = n("./src/reddit/selectors/platform.ts"),
 				i = n("./src/reddit/selectors/telemetry.ts");
 			const c = e => ({
-					profile: i.R(e),
-					screen: i.Z(e),
-					subreddit: i.hb(e)
+					profile: i.S(e),
+					screen: i.ab(e),
+					subreddit: i.ib(e)
 				}),
 				l = (e, t, n) => s => ({
 					source: Object(a.i)(s) || n ? "post_lightbox" : "post_detail",
 					action: "click",
 					noun: t,
 					...c(s),
-					post: i.I(s, e)
+					post: i.J(s, e)
 				}),
 				d = (e, t, n, s) => r => {
 					const a = n ? i.h(r, n) : null,
@@ -2388,7 +2388,7 @@
 					noun: e,
 					...c(t),
 					post: i.j(t),
-					userSubreddit: i.rb(t)
+					userSubreddit: i.sb(t)
 				})
 		},
 		"./src/reddit/helpers/trackers/modTools.ts": function(e, t, n) {
@@ -2425,10 +2425,10 @@
 			var s = n("./src/reddit/constants/tracking.ts"),
 				r = n("./src/reddit/selectors/telemetry.ts");
 			const o = e => ({
-					screen: Object(r.Z)(e),
-					profile: Object(r.R)(e),
-					subreddit: Object(r.hb)(e),
-					userSubreddit: Object(r.rb)(e)
+					screen: Object(r.ab)(e),
+					profile: Object(r.S)(e),
+					subreddit: Object(r.ib)(e),
+					userSubreddit: Object(r.sb)(e)
 				}),
 				a = e => t => ({
 					source: "nav",
@@ -2440,14 +2440,14 @@
 					source: "post_mod_action_menu",
 					action: "click",
 					noun: e,
-					post: Object(r.I)(n, t),
+					post: Object(r.J)(n, t),
 					...o(n)
 				}),
 				c = (e, t) => n => ({
 					source: "comment",
 					action: "click",
 					noun: e,
-					post: Object(r.I)(n, t),
+					post: Object(r.J)(n, t),
 					comment: Object(r.h)(n, t),
 					...o(n)
 				}),
@@ -2455,7 +2455,7 @@
 					source: "comment",
 					action: s.c.CLICK,
 					noun: e,
-					post: Object(r.I)(n, t),
+					post: Object(r.J)(n, t),
 					comment: Object(r.h)(n, t),
 					actionInfo: {
 						pageType: "chat_live_post"
@@ -2466,7 +2466,7 @@
 					source: "comment",
 					action: s.c.UNDO,
 					noun: e,
-					post: Object(r.I)(n, t),
+					post: Object(r.J)(n, t),
 					comment: Object(r.h)(n, t),
 					...o(n)
 				}),
@@ -2474,7 +2474,7 @@
 					source: "comment_overflow_menu",
 					action: "click",
 					noun: e,
-					post: Object(r.I)(n, t),
+					post: Object(r.J)(n, t),
 					comment: Object(r.h)(n, t),
 					...o(n)
 				}),
@@ -2482,7 +2482,7 @@
 					source: "mod_distinguish_menu",
 					action: "click",
 					noun: e,
-					post: Object(r.I)(n, t),
+					post: Object(r.J)(n, t),
 					comment: Object(r.h)(n, t),
 					...o(n)
 				}),
@@ -2490,7 +2490,7 @@
 					source: "comment_mod_action_menu",
 					action: "click",
 					noun: e,
-					post: Object(r.I)(n, t),
+					post: Object(r.J)(n, t),
 					comment: Object(r.h)(n, t),
 					...o(n)
 				}),
@@ -2499,37 +2499,37 @@
 					action: "click",
 					noun: e,
 					comment: Object(r.h)(n, t),
-					post: Object(r.I)(n, t),
+					post: Object(r.J)(n, t),
 					...o(n)
 				}),
 				f = (e, t) => n => ({
 					source: "post_report_menu",
 					action: "click",
 					noun: e,
-					post: Object(r.I)(n, t),
+					post: Object(r.J)(n, t),
 					...o(n)
 				}),
 				b = (e, t) => n => ({
 					source: "post",
 					action: "click",
 					noun: e,
-					post: Object(r.I)(n, t),
-					subreddit: Object(r.kb)(n, t)
+					post: Object(r.J)(n, t),
+					subreddit: Object(r.lb)(n, t)
 				}),
 				v = (e, t) => n => ({
 					source: "comment",
 					action: "click",
 					noun: e,
 					comment: Object(r.h)(n, t),
-					post: Object(r.I)(n, t),
-					subreddit: Object(r.kb)(n, t)
+					post: Object(r.J)(n, t),
+					subreddit: Object(r.lb)(n, t)
 				}),
 				x = (e, t, n, s) => o => ({
 					source: e ? "comment" : "post",
 					action: "click",
 					noun: t ? "unsnooze_reporter" : "snooze_reporter",
-					post: Object(r.I)(o, n),
-					subreddit: Object(r.kb)(o, n),
+					post: Object(r.J)(o, n),
+					subreddit: Object(r.lb)(o, n),
 					actionInfo: {
 						reason: s
 					},
@@ -2568,7 +2568,7 @@
 					...o.n(e)
 				}),
 				i = e => t => {
-					const n = o.hb(t),
+					const n = o.ib(t),
 						a = Object(r.t)(t, {
 							subredditId: null == n ? void 0 : n.id
 						}),
@@ -2611,7 +2611,7 @@
 						value: e ? "0" : "1",
 						oldValue: e ? "1" : "0"
 					},
-					subreddit: o.hb(t),
+					subreddit: o.ib(t),
 					...o.n(t)
 				})
 		},
@@ -3239,4 +3239,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit~StandalonePostPage.6c3ffbcb6a6e58e754dd.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit~StandalonePostPage.28e7da7f89cd119a62af.js.map

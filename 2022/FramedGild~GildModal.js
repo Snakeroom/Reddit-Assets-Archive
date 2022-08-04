@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/FramedGild~GildModal.52a2bea2656b237a01c7.js
-// Retrieved at 8/4/2022, 2:20:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/FramedGild~GildModal.a068eeaabced060c491a.js
+// Retrieved at 8/4/2022, 7:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["FramedGild~GildModal", "gildActions"], {
 		"./node_modules/@stripe/react-stripe-js/dist/react-stripe.umd.js": function(e, t, r) {
@@ -3185,7 +3185,7 @@
 		"./src/reddit/components/Media/ImageBox/index.tsx": function(e, t, r) {
 			"use strict";
 			r.d(t, "b", (function() {
-				return C
+				return k
 			}));
 			var n = r("./node_modules/fbt/lib/FbtPublic.js"),
 				s = r("./node_modules/react/index.js"),
@@ -3208,11 +3208,12 @@
 				O = r("./src/reddit/selectors/telemetry.ts"),
 				j = r("./src/reddit/selectors/user.ts"),
 				y = r("./src/reddit/constants/tracking.ts"),
-				E = r("./src/reddit/components/Media/ImageBox/index.m.less"),
-				I = r.n(E);
+				E = r("./src/higherOrderComponents/withAdClickLocation/Locations.ts"),
+				I = r("./src/reddit/components/Media/ImageBox/index.m.less"),
+				_ = r.n(I);
 
-			function _() {
-				return (_ = Object.assign || function(e) {
+			function C() {
+				return (C = Object.assign || function(e) {
 					for (var t = 1; t < arguments.length; t++) {
 						var r = arguments[t];
 						for (var n in r) Object.prototype.hasOwnProperty.call(r, n) && (e[n] = r[n])
@@ -3220,14 +3221,14 @@
 					return e
 				}).apply(this, arguments)
 			}
-			const C = e => e > 2 * w.e,
-				k = e => {
-					const t = Object(d.a)(I.a.image, h.g, e.className, {
-							[I.a.mShowCentered]: e.showCentered,
-							[I.a.mShowBlurred]: e.shouldBlur
+			const k = e => e > 2 * w.e,
+				P = e => {
+					const t = Object(d.a)(_.a.image, h.g, e.className, {
+							[_.a.mShowCentered]: e.showCentered,
+							[_.a.mShowBlurred]: e.shouldBlur
 						}),
 						r = {};
-					return e.showFull || e.isTall || (r.maxHeight = `${w.j}px`), e.isListing || e.isTall && C(e.height) || (r.maxHeight = `${w.e}px`), e.isExpando && e.maxHeight && (r.maxHeight = `${e.maxHeight}px`), e.isExpando && e.maxWidth && (r.maxWidth = `${e.maxWidth}px`), a.a.createElement("img", {
+					return e.showFull || e.isTall || (r.maxHeight = `${w.j}px`), e.isListing || e.isTall && k(e.height) || (r.maxHeight = `${w.e}px`), e.isExpando && e.maxHeight && (r.maxHeight = `${e.maxHeight}px`), e.isExpando && e.maxWidth && (r.maxWidth = `${e.maxWidth}px`), a.a.createElement("img", {
 						alt: e.altText || n.fbt._("Post image", null, {
 							hk: "3KfCgs"
 						}),
@@ -3236,14 +3237,14 @@
 						style: r
 					})
 				},
-				P = e => {
+				N = e => {
 					const t = {};
 					return (!e.showFull && Object(w.L)(e.height, e.width) || e.shouldBlur) && (t.overflow = "hidden"), e.showFull || (t.maxHeight = `${w.j}px`, e.shouldBlur && (t.maxWidth = Object(w.L)(e.height, e.width) ? `${w.z}px` : `${e.width}px`)), e.showCentered && (t.margin = "0 auto"), e.isExpando && e.maxHeight && (t.maxHeight = `${e.maxHeight}px`), a.a.createElement("div", {
-						className: Object(d.a)(I.a.container, e.className),
+						className: Object(d.a)(_.a.container, e.className),
 						style: t
 					}, e.children)
 				},
-				N = Object(o.b)(() => Object(c.a)(x.F, j.jb, (e, t) => {
+				S = Object(o.b)(() => Object(c.a)(x.F, j.jb, (e, t) => {
 					let {
 						isSponsored: r,
 						postId: n
@@ -3256,9 +3257,10 @@
 					pageType: n.pageType,
 					post: s
 				})));
-			t.a = N(e => {
+			t.a = S(e => {
 				const t = Object(v.a)();
 				return e.outboundUrl && !e.shouldBlur ? a.a.createElement("a", {
+					"data-adclicklocation": E.a.MEDIA,
 					href: e.outboundUrl,
 					target: "_blank",
 					rel: u.a,
@@ -3268,13 +3270,13 @@
 					onClick: () => {
 						e.isSponsored && e.post.postId && Object(g.a)(e.post, e.pageType)
 					}
-				}, A(e)) : e.isListing && e.postPermalink ? a.a.createElement(i.a, {
+				}, T(e)) : e.isListing && e.postPermalink ? a.a.createElement(i.a, {
 					target: e.shouldOpenPostInNewTab ? "_blank" : void 0,
 					to: Object(m.a)(e.postPermalink, void 0, t),
 					onClick: e.onPostMediaClick
-				}, A(e)) : A(e)
+				}, T(e)) : T(e)
 			});
-			const S = (e, t) => a.a.createElement(k, {
+			const A = (e, t) => a.a.createElement(P, {
 					altText: t.altText,
 					className: Object(d.a)(t.imageClassName, {
 						[y.a]: !e
@@ -3291,18 +3293,18 @@
 					src: Object(l.a)(t.source),
 					width: t.width
 				}),
-				A = e => {
+				T = e => {
 					let {
 						onClick: t,
 						...r
 					} = e;
 					const s = Object(w.L)(r.height, r.width),
-						o = C(r.height) && s;
-					return a.a.createElement(P, _({}, r, {
+						o = k(r.height) && s;
+					return a.a.createElement(N, C({}, r, {
 						className: `${s?`${y.a} `:""}${r.className||""}`
 					}), r.isListing ? a.a.createElement("div", {
 						className: r.contentImageClassName
-					}, S(s, r)) : a.a.createElement("a", {
+					}, A(s, r)) : a.a.createElement("a", {
 						href: r.originalSource,
 						onClick: t,
 						style: o ? {
@@ -3310,12 +3312,12 @@
 						} : {},
 						target: "_blank",
 						rel: u.c,
-						className: I.a.imageLink
-					}, S(s, r), r.shouldBlur && !r.isVideoThumbnail && !r.isNsfwBlockingModalEligible && a.a.createElement(p.a, {
+						className: _.a.imageLink
+					}, A(s, r), r.shouldBlur && !r.isVideoThumbnail && !r.isNsfwBlockingModalEligible && a.a.createElement(p.a, {
 						isNSFW: !!r.isNSFW,
 						isSpoiler: !!r.isSpoiler
 					})), r.isListing && !r.showFull && r.height > w.j && Object(w.L)(r.height, r.width) && a.a.createElement("div", {
-						className: I.a.seeMore
+						className: _.a.seeMore
 					}, n.fbt._("see full image", null, {
 						hk: "1Qygw5"
 					})), r.isVideoThumbnail && a.a.createElement(b.a, {
@@ -4381,7 +4383,7 @@
 									...r.actionInfo,
 									reason: this.props.node.id
 								},
-								subreddit: b.hb(t)
+								subreddit: b.ib(t)
 							}
 						})
 					}
@@ -5227,7 +5229,7 @@
 				p = e => ({
 					...u.n(e),
 					source: s,
-					screen: u.Z(e),
+					screen: u.ab(e),
 					discoveryUnit: {
 						id: "xd_100",
 						name: n.SUBREDDIT_HOVERCARD,
@@ -5272,8 +5274,8 @@
 					if (!r || !Object(i.b)(r) && !Object(o.b)(r)) return {};
 					const n = Object(i.b)(r) ? r.belongsTo.id : r.subredditId;
 					return {
-						post: u.I(e, r.id),
-						subreddit: u.ib(e, n),
+						post: u.J(e, r.id),
+						subreddit: u.jb(e, n),
 						...b(e, t)
 					}
 				},
@@ -5286,44 +5288,44 @@
 					source: "global",
 					action: a.c.VIEW,
 					noun: n.SUBREDDIT_HOVERCARD,
-					subreddit: u.jb(t, e),
-					screen: u.Z(t)
+					subreddit: u.kb(t, e),
+					screen: u.ab(t)
 				}),
 				v = (e, t) => r => ({
 					...p(r),
 					source: s.DISCOVERY_UNIT,
 					action: a.c.VIEW,
 					noun: n.ITEM_POST,
-					post: u.I(r, t),
-					subreddit: u.jb(r, e),
-					screen: u.Z(r)
+					post: u.J(r, t),
+					subreddit: u.kb(r, e),
+					screen: u.ab(r)
 				}),
 				w = (e, t) => r => ({
 					...p(r),
 					source: s.DISCOVERY_UNIT,
 					action: a.c.CLICK,
 					noun: n.ITEM_POST,
-					post: u.I(r, t),
-					subreddit: u.jb(r, e),
-					screen: u.Z(r)
+					post: u.J(r, t),
+					subreddit: u.kb(r, e),
+					screen: u.ab(r)
 				}),
 				x = e => t => ({
 					...p(t),
-					subreddit: u.ib(t, e) || null,
+					subreddit: u.jb(t, e) || null,
 					source: s.DISCOVERY_UNIT,
 					action: a.c.CLICK,
 					noun: n.HEADER_SUBREDDIT
 				}),
 				O = e => t => ({
 					...p(t),
-					subreddit: u.ib(t, e) || null,
+					subreddit: u.jb(t, e) || null,
 					source: s.DISCOVERY_UNIT,
 					action: a.c.CLICK,
 					noun: n.HEADER_SUBREDDIT_SUBSCRIBE
 				}),
 				j = e => t => ({
 					...p(t),
-					subreddit: u.ib(t, e) || null,
+					subreddit: u.jb(t, e) || null,
 					source: s.DISCOVERY_UNIT,
 					action: a.c.CLICK,
 					noun: n.HEADER_SUBREDDIT_UNSUBSCRIBE
@@ -5995,4 +5997,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/FramedGild~GildModal.52a2bea2656b237a01c7.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/FramedGild~GildModal.a068eeaabced060c491a.js.map

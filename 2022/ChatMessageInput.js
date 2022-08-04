@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ChatMessageInput.1764ddc34262fadfe96f.js
-// Retrieved at 8/3/2022, 9:40:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ChatMessageInput.bdbeeaa6f3f302d84532.js
+// Retrieved at 8/4/2022, 7:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ChatMessageInput"], {
 		"./node_modules/linkify-it/index.js": function(e, t, s) {
@@ -338,7 +338,7 @@
 			})), s.d(t, "e", (function() {
 				return U
 			})), s.d(t, "d", (function() {
-				return R
+				return M
 			}));
 			s("./node_modules/core-js/modules/web.dom.iterable.js");
 			var r = s("./node_modules/fbt/lib/FbtPublic.js"),
@@ -361,9 +361,9 @@
 				v = s("./src/telemetry/index.ts");
 			const C = e => ({
 				...y.n(e),
-				screen: y.Z(e),
-				profile: y.R(e),
-				subreddit: y.hb(e)
+				screen: y.ab(e),
+				profile: y.S(e),
+				subreddit: y.ib(e)
 			});
 			var x = s("./src/reddit/helpers/trackers/postComposer.ts"),
 				k = s("./src/reddit/models/Gold/Powerups/index.ts"),
@@ -660,7 +660,7 @@
 							}))
 						}
 					}(l)), d.filter(e => e.isValid).map(e => e.uploadKey)
-				}, R = (e, t) => async (s, n) => {
+				}, M = (e, t) => async (s, n) => {
 					const o = n(),
 						i = Object(D.W)(o),
 						{
@@ -1166,19 +1166,19 @@
 				T = s("./src/lib/constants/index.ts"),
 				B = s("./src/reddit/components/CommentsChat/MessageInput/index.m.less"),
 				U = s.n(B),
-				R = s("./src/reddit/helpers/trackers/commentsChat.ts"),
-				M = s("./src/reddit/selectors/experiments/chat.ts");
+				M = s("./src/reddit/helpers/trackers/commentsChat.ts"),
+				R = s("./src/reddit/selectors/experiments/chat.ts");
 			const K = "chat_submission_from_rte",
 				V = 1e3,
-				Z = 15,
-				G = Object(d.b)(() => Object(l.c)({
+				G = 15,
+				q = Object(d.b)(() => Object(l.c)({
 					draft: P.i,
 					errorMsgs: P.L,
 					errorType: P.M,
 					hasError: P.v,
 					isChatPost: S.d,
-					isLivePostSpamRateEnabled: M.i,
-					isOptimisticUIEnabled: M.h,
+					isLivePostSpamRateEnabled: R.i,
+					isOptimisticUIEnabled: R.h,
 					liveStreamingChatCharacterLimit: e => {
 						const t = Object(L.a)(e);
 						return t ? t - 3 : 197
@@ -1238,7 +1238,7 @@
 						}))
 					}
 				});
-			class q extends u.a.Component {
+			class Z extends u.a.Component {
 				constructor(e) {
 					super(e), this.focusOnForm = () => this.editor && this.editor.focus(), this.setRTEComponentRef = e => this.editor = e, this.handleCancel = e => {
 						e.preventDefault(), this.props.onCancelEdit && this.props.onCancelEdit()
@@ -1279,7 +1279,7 @@
 							};
 							this.cleanInputForm(), n(e, I.i.RICH_TEXT, t), s && setTimeout(() => this.focusOnForm(), 50)
 						}
-						r && o(Object(j.z)(e)), t && o(Object(R.d)(t.id))
+						r && o(Object(j.z)(e)), t && o(Object(M.d)(t.id))
 					}, this.canSubmit = () => Boolean(!this.props.pending && this.state.hasChanged && !this.state.showError && (!this.props.isLivePostSpamRateEnabled || !this.state.spamTimeoutDraftKey)), this.state = {
 						hasChanged: !1,
 						showError: e.hasError,
@@ -1302,12 +1302,12 @@
 					})
 				}
 				componentDidUpdate(e) {
-					e.pending && !this.props.pending && this.focusOnForm(), this.props.isChatPost && this.props.isLivePostSpamRateEnabled && this.props.errorType === T.I.RATELIMIT && e.errorType !== this.props.errorType && (this.props.sendEvent(Object(R.e)(this.props.postId)), this.setState({
+					e.pending && !this.props.pending && this.focusOnForm(), this.props.isChatPost && this.props.isLivePostSpamRateEnabled && this.props.errorType === T.I.RATELIMIT && e.errorType !== this.props.errorType && (this.props.sendEvent(Object(M.e)(this.props.postId)), this.setState({
 						spamTimeoutDraftKey: this.props.draftKey
 					}))
 				}
 				componentWillUnmount() {
-					this.props.isLivePostSpamRateEnabled && this.state.spamTimeoutDraftKey && this.props.sendEvent(Object(R.a)(this.props.postId))
+					this.props.isLivePostSpamRateEnabled && this.state.spamTimeoutDraftKey && this.props.sendEvent(Object(M.a)(this.props.postId))
 				}
 				cleanInputForm() {
 					this.setState({
@@ -1335,7 +1335,7 @@
 						hk: "RIcb6"
 					}) : r.fbt._("Send a message (use the Enter key)", null, {
 						hk: "3yojgj"
-					}), w = _.isGildable && c && !a, I = c, S = i === T.I.RATELIMIT && parseInt(null === (e = null == n ? void 0 : n[0]) || void 0 === e ? void 0 : e.replace(/\D/g, "")) || Z;
+					}), w = _.isGildable && c && !a, I = c, S = i === T.I.RATELIMIT && parseInt(null === (e = null == n ? void 0 : n[0]) || void 0 === e ? void 0 : e.replace(/\D/g, "")) || G;
 					return u.a.createElement("div", {
 						className: Object(m.a)(U.a.FormWrapper, {
 							[U.a.LivestreamingWrapper]: c,
@@ -1436,7 +1436,7 @@
 					width: 25
 				})
 			};
-			t.default = G(q)
+			t.default = q(Z)
 		},
 		"./src/reddit/components/FocusableContent/index.m.less": function(e, t, s) {
 			e.exports = {
@@ -1757,9 +1757,9 @@
 			})), s.d(t, "l", (function() {
 				return U
 			})), s.d(t, "m", (function() {
-				return R
-			})), s.d(t, "g", (function() {
 				return M
+			})), s.d(t, "g", (function() {
+				return R
 			})), s.d(t, "h", (function() {
 				return K
 			}));
@@ -1772,8 +1772,8 @@
 			const a = (e, t) => {
 					if (t) {
 						const s = i.B(e, t.post.id),
-							r = i.I(e, t.post.id),
-							n = i.hb(e);
+							r = i.J(e, t.post.id),
+							n = i.ib(e);
 						if (t.post.authorInfo && r && (r.authorId = t.post.authorInfo.id), s) {
 							s.streamPublicId = t.stream.stream_id, s.id = t.stream.stream_id;
 							const r = Object(o.j)(e, {
@@ -1788,7 +1788,7 @@
 						}
 					}
 					return {
-						subreddit: i.hb(e)
+						subreddit: i.ib(e)
 					}
 				},
 				c = (e, t, s) => {
@@ -1966,8 +1966,8 @@
 					source: "post",
 					action: "view",
 					noun: "post",
-					profile: i.R(t),
-					screen: i.Z(t),
+					profile: i.S(t),
+					screen: i.ab(t),
 					...a(t, e)
 				}),
 				O = e => t => {
@@ -1976,8 +1976,8 @@
 						source: "post",
 						action: "consume",
 						noun: "post",
-						profile: i.R(t),
-						screen: i.Z(t),
+						profile: i.S(t),
+						screen: i.ab(t),
 						...s
 					}
 				},
@@ -1998,7 +1998,7 @@
 					action: "click",
 					noun: "subscribe",
 					...a(t, e),
-					targetSubreddit: i.hb(t)
+					targetSubreddit: i.ib(t)
 				}),
 				P = (e, t) => s => ({
 					source: "stream_player",
@@ -2050,7 +2050,7 @@
 					...a(s, e),
 					...u(s)
 				}),
-				R = (e, t) => s => ({
+				M = (e, t) => s => ({
 					source: "stream_player",
 					action: "swipe",
 					noun: "previous",
@@ -2058,7 +2058,7 @@
 					...a(s, e),
 					...u(s)
 				}),
-				M = (e, t) => s => ({
+				R = (e, t) => s => ({
 					source: "rpanstudio_banner",
 					action: "click",
 					noun: e,
@@ -2155,9 +2155,9 @@
 			})), s.d(t, "a", (function() {
 				return U
 			})), s.d(t, "j", (function() {
-				return R
-			})), s.d(t, "b", (function() {
 				return M
+			})), s.d(t, "b", (function() {
+				return R
 			})), s.d(t, "e", (function() {
 				return K
 			})), s.d(t, "g", (function() {
@@ -2357,15 +2357,15 @@
 			! function(e) {
 				e[e.LIVE = 0] = "LIVE", e[e.VOD = 1] = "VOD", e[e.UNAVAILABLE = 2] = "UNAVAILABLE", e[e.INTRO = 3] = "INTRO"
 			}(U || (U = {}));
-			const R = Object(r.a)(O, C, m.b, (e, t, s) => {
+			const M = Object(r.a)(O, C, m.b, (e, t, s) => {
 					if (s) return U.INTRO;
 					const r = e && t[e];
 					if (!r) return U.UNAVAILABLE;
 					const n = r.stream.state;
 					return n === i.a.IS_LIVE || n === i.a.DISCONNECTED ? U.LIVE : n === i.a.ENDED && r.stream.vod_accessible ? U.VOD : U.UNAVAILABLE
 				}),
-				M = Object(r.a)(S, R, m.b, c.b, c.o, (e, t, s, r, n) => s ? r : e ? t === U.LIVE || t === U.VOD ? e.stream.hls_url : n : void 0),
-				K = Object(r.a)(S, R, B, (e, t, s) => e ? t === U.LIVE ? e.broadcast_time : t === U.VOD && s < e.broadcast_time ? s : 0 : 0),
+				R = Object(r.a)(S, M, m.b, c.b, c.o, (e, t, s, r, n) => s ? r : e ? t === U.LIVE || t === U.VOD ? e.stream.hls_url : n : void 0),
+				K = Object(r.a)(S, M, B, (e, t, s) => e ? t === U.LIVE ? e.broadcast_time : t === U.VOD && s < e.broadcast_time ? s : 0 : 0),
 				V = (e, t) => {
 					const s = p(e);
 					return !!s && s[t] && s[t].chat_disabled
@@ -2429,15 +2429,15 @@
 			})), s.d(t, "u", (function() {
 				return U
 			})), s.d(t, "v", (function() {
-				return R
-			})), s.d(t, "b", (function() {
 				return M
+			})), s.d(t, "b", (function() {
+				return R
 			})), s.d(t, "w", (function() {
 				return K
 			})), s.d(t, "s", (function() {
 				return V
 			})), s.d(t, "t", (function() {
-				return Z
+				return G
 			})), s.d(t, "g", (function() {
 				return $
 			})), s.d(t, "m", (function() {
@@ -2639,11 +2639,11 @@
 					const s = e.user.ownedBadges[t] || {};
 					return !!Object.keys(s).length
 				},
-				R = e => {
+				M = e => {
 					const t = e.economics.paymentSystems;
 					return t.status === d.a.Fetched && !!t.data && !!t.data.stripe && !!t.data.stripe.stripeAccountId
 				},
-				M = (e, t) => {
+				R = (e, t) => {
 					let {
 						subredditId: s
 					} = t;
@@ -2663,28 +2663,28 @@
 					});
 					return !(!r || !Object(o.a)(r))
 				},
-				Z = (e, t, s) => {
+				G = (e, t, s) => {
 					if (Object(h.a)(e)) return !(!t || !Object(m.B)(e, {
 						subredditId: t
-					})) || (!!q(e, t) || !(!r.d.spGiphy(e) || !G(e, s)));
+					})) || (!!Z(e, t) || !(!r.d.spGiphy(e) || !q(e, s)));
 					if (!Object(_.b)(e, {
 							subredditId: t
 						})) return !1;
 					if (Object(b.p)(e, {
 							subredditId: t
 						})) return !0;
-					if (G(e, s)) return !0;
+					if (q(e, s)) return !0;
 					const n = r.d.spGiphy(e),
 						o = K(e, t);
-					return !!q(e, t) || n && o
+					return !!Z(e, t) || n && o
 				},
-				G = (e, t) => {
+				q = (e, t) => {
 					const s = "replyToPost" !== t && Object(p.b)(e, {
 						commentId: t
 					});
 					if (s && Object(o.b)(s)) return !0
 				},
-				q = (e, t) => {
+				Z = (e, t) => {
 					const s = r.d.spGiphy(e),
 						n = K(e, t);
 					return s && n
@@ -2699,4 +2699,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatMessageInput.1764ddc34262fadfe96f.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatMessageInput.bdbeeaa6f3f302d84532.js.map

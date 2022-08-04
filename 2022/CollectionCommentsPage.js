@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage.9e686807b38fa15c384f.js
-// Retrieved at 8/4/2022, 2:20:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage.45258d4d9b9c4bb460e4.js
+// Retrieved at 8/4/2022, 7:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage"], {
 		"./node_modules/linkify-it/index.js": function(e, t, s) {
@@ -1686,54 +1686,57 @@
 				a = s("./src/reddit/components/CallToActionButton/index.tsx"),
 				d = s("./src/reddit/controls/OutboundLink/styled.tsx"),
 				c = s("./src/reddit/models/Post/index.ts"),
-				l = s("./src/reddit/components/AdLinkWrapperContent/index.m.less"),
-				m = s.n(l);
+				l = s("./src/higherOrderComponents/withAdClickLocation/Locations.ts"),
+				m = s("./src/reddit/components/AdLinkWrapperContent/index.m.less"),
+				u = s.n(m);
 			t.a = e => {
 				const {
 					adLinkContent: t,
 					post: s,
 					isCompact: o
 				} = e, {
-					source: l,
-					callToAction: u,
-					caption: p
+					source: m,
+					callToAction: p,
+					caption: b
 				} = t;
-				if (!l || !l.url) return null;
-				let b = l.displayText;
-				l.displayText.length >= 40 && (b = l.displayText.slice(0, 40 - "...".length) + "...");
-				const h = Object(c.s)(s, l.displayText),
-					g = Object(c.t)(s) ? b : p,
-					x = Object(c.t)(s) ? s.subcaption : l.displayText,
-					f = Object(i.a)(m.a.leftSideContent, {
-						[m.a.ctaExperimentNoPadding]: e.ctaExperimentDesign && "card" !== e.ctaExperimentDesign,
-						[m.a.ctaExperimentPadded]: "card" === e.ctaExperimentDesign
+				if (!m || !m.url) return null;
+				let h = m.displayText;
+				m.displayText.length >= 40 && (h = m.displayText.slice(0, 40 - "...".length) + "...");
+				const g = Object(c.s)(s, m.displayText),
+					x = Object(c.t)(s) ? h : b,
+					f = Object(c.t)(s) ? s.subcaption : m.displayText,
+					C = Object(i.a)(u.a.leftSideContent, {
+						[u.a.ctaExperimentNoPadding]: e.ctaExperimentDesign && "card" !== e.ctaExperimentDesign,
+						[u.a.ctaExperimentPadded]: "card" === e.ctaExperimentDesign
 					}),
-					C = Object(i.a)(m.a.displayUrl, {
-						[m.a.ctaExperimentLink]: !!e.ctaExperimentDesign
+					v = Object(i.a)(u.a.displayUrl, {
+						[u.a.ctaExperimentLink]: !!e.ctaExperimentDesign
 					});
 				return r.a.createElement(r.a.Fragment, null, r.a.createElement("div", {
-					className: f
-				}, p && !o && !h && r.a.createElement("span", {
-					className: m.a.caption,
-					title: p
-				}, p), !h && r.a.createElement(d.a, {
-					href: l.url.replace(n.a.redditUrl, ""),
-					isSponsored: s.isSponsored,
-					postId: s.id,
-					source: l,
 					className: C
-				}, b), h && r.a.createElement(r.a.Fragment, null, r.a.createElement("span", {
-					className: m.a.productTitle
-				}, g), r.a.createElement("span", {
-					className: m.a.subcaption
-				}, x))), u && r.a.createElement(a.a, {
-					className: m.a.callToAction,
-					href: l.url,
+				}, b && !o && !g && r.a.createElement("span", {
+					className: u.a.caption,
+					title: b
+				}, b), !g && r.a.createElement(d.a, {
+					href: m.url.replace(n.a.redditUrl, ""),
 					isSponsored: s.isSponsored,
 					postId: s.id,
-					source: l,
-					showCTAExperiment: !!e.ctaExperimentDesign
-				}, u))
+					source: m,
+					className: v,
+					"data-adclicklocation": l.a.CTA_URL
+				}, h), g && r.a.createElement(r.a.Fragment, null, r.a.createElement("span", {
+					className: u.a.productTitle
+				}, x), r.a.createElement("span", {
+					className: u.a.subcaption
+				}, f))), p && r.a.createElement(a.a, {
+					className: u.a.callToAction,
+					href: m.url,
+					isSponsored: s.isSponsored,
+					postId: s.id,
+					source: m,
+					showCTAExperiment: !!e.ctaExperimentDesign,
+					"data-adclicklocation": l.a.CTA_BUTTON
+				}, p))
 			}
 		},
 		"./src/reddit/components/CommentCreation/Loader.m.less": function(e, t, s) {
@@ -7815,7 +7818,7 @@
 						post: s
 					} = t;
 					return s
-				}, I.b, w.c, T.X, T.hb, (e, t, s, n, o) => {
+				}, I.b, w.c, T.Y, T.ib, (e, t, s, n, o) => {
 					const r = !!e;
 					let i, a = "";
 					if (e && (i = {
@@ -9284,21 +9287,21 @@
 			const o = (e, t) => ({
 					...Object(n.n)(e),
 					media: Object(n.B)(e, t),
-					profile: Object(n.R)(e),
-					subreddit: Object(n.hb)(e) || Object(n.kb)(e, t)
+					profile: Object(n.S)(e),
+					subreddit: Object(n.ib)(e) || Object(n.lb)(e, t)
 				}),
 				r = e => t => ({
 					source: "post",
 					action: "click",
 					noun: "other_discussions",
-					post: Object(n.I)(t, e),
+					post: Object(n.J)(t, e),
 					...o(t, e)
 				}),
 				i = e => t => ({
 					source: "other_discussions",
 					action: "click",
 					noun: "dismiss",
-					post: Object(n.I)(t, e),
+					post: Object(n.J)(t, e),
 					...o(t, e)
 				})
 		},
@@ -11309,4 +11312,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage.9e686807b38fa15c384f.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage.45258d4d9b9c4bb460e4.js.map

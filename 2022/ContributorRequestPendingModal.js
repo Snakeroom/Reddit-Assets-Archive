@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ContributorRequestPendingModal.bb6e17aeec1b28475318.js
-// Retrieved at 8/1/2022, 10:20:09 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ContributorRequestPendingModal.87574485aa361150ba0d.js
+// Retrieved at 8/4/2022, 7:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ContributorRequestPendingModal", "ContributorRequestRequestModal"], {
 		"./src/reddit/components/ContributorRequestFlow/PendingModal/index.m.less": function(e, t, n) {
@@ -389,16 +389,16 @@
 					source: e,
 					action: "click",
 					noun: "request_restricted_approval_button",
-					subreddit: o.hb(t)
+					subreddit: o.ib(t)
 				}),
 				s = e => t => ({
 					...o.n(t),
 					source: "request_restricted_approval_form",
 					action: "click",
 					noun: e,
-					subreddit: o.hb(t)
+					subreddit: o.ib(t)
 				})
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ContributorRequestPendingModal.bb6e17aeec1b28475318.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ContributorRequestPendingModal.87574485aa361150ba0d.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~Reddit~SubredditForkingCTA.06379f5da106b7c6264e.js
-// Retrieved at 8/4/2022, 2:20:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~Reddit~SubredditForkingCTA.fc6e7f74c826958b7a32.js
+// Retrieved at 8/4/2022, 7:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~Reddit~SubredditForkingCTA"], {
 		"./src/lib/bigNumberUtils/percent.ts": function(t, e, r) {
@@ -414,9 +414,9 @@
 				j = r("./src/telemetry/index.ts");
 			const g = t => ({
 				..._.n(t),
-				screen: _.Z(t),
-				profile: _.R(t),
-				subreddit: _.hb(t)
+				screen: _.ab(t),
+				profile: _.S(t),
+				subreddit: _.ib(t)
 			});
 			var E = r("./src/reddit/helpers/trackers/postComposer.ts"),
 				S = r("./src/reddit/models/Gold/Powerups/index.ts"),
@@ -2904,4 +2904,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit~SubredditForkingCTA.06379f5da106b7c6264e.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit~SubredditForkingCTA.fc6e7f74c826958b7a32.js.map

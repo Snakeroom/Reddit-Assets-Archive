@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/removalReasonActions.71cf1cb2d611a86f3ed3.js
-// Retrieved at 8/3/2022, 9:40:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/removalReasonActions.a36188e0cb287bae8803.js
+// Retrieved at 8/4/2022, 7:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["removalReasonActions"], {
 		"./node_modules/lodash/map.js": function(e, t, o) {
@@ -1910,7 +1910,7 @@
 						sort: n,
 						source: s
 					}),
-					userSubreddit: Object(I.rb)(r)
+					userSubreddit: Object(I.sb)(r)
 				}),
 				w = (e, t) => o => ({
 					source: "comment_highlighting",
@@ -1918,8 +1918,8 @@
 					noun: e
 				}),
 				A = e => ({
-					subreddit: Object(I.hb)(e),
-					userSubreddit: Object(I.rb)(e)
+					subreddit: Object(I.ib)(e),
+					userSubreddit: Object(I.sb)(e)
 				}),
 				N = e => t => ({
 					source: "contest_mode",
@@ -2678,10 +2678,10 @@
 						source: "comment_composer",
 						action: n.c.CLICK,
 						...Object(a.n)(e),
-						screen: Object(a.Z)(e),
-						subreddit: Object(a.hb)(e),
-						post: t ? Object(a.I)(e, t) : null,
-						profile: Object(a.R)(e),
+						screen: Object(a.ab)(e),
+						subreddit: Object(a.ib)(e),
+						post: t ? Object(a.J)(e, t) : null,
+						profile: Object(a.S)(e),
 						correlationId: Object(s.c)(s.a.CommentComposer)
 					}
 				},
@@ -2736,9 +2736,9 @@
 					noun: "delete",
 					action: "click",
 					...Object(a.n)(t),
-					screen: Object(a.Z)(t),
-					subreddit: Object(a.hb)(t),
-					post: Object(a.I)(t, e)
+					screen: Object(a.ab)(t),
+					subreddit: Object(a.ib)(t),
+					post: Object(a.J)(t, e)
 				}), f = e => Object(d.a)({
 					noun: "edit",
 					...l(e)
@@ -2915,4 +2915,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/removalReasonActions.71cf1cb2d611a86f3ed3.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/removalReasonActions.a36188e0cb287bae8803.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/GovernanceWalletRegistration.f11ecabd261020390963.js
-// Retrieved at 8/4/2022, 2:20:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/GovernanceWalletRegistration.662e79dd1aa881b66f47.js
+// Retrieved at 8/4/2022, 7:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["GovernanceWalletRegistration"], {
 		"./src/chat/controls/Svg/index.m.less": function(e, t, n) {
@@ -1058,7 +1058,7 @@
 								noun: "wallet_registration",
 								correlationId: this.correlationId,
 								...t,
-								subreddit: m.hb(e)
+								subreddit: m.ib(e)
 							}
 						});
 						const t = e === Z.About ? Z.MetaMask : e === Z.MetaMask ? Z.Wallet : e === Z.Wallet ? Z.Connect : e === Z.Connect ? Z.Verify : Z.Registered;
@@ -1087,7 +1087,7 @@
 								...n.actionInfo,
 								paneName: e + ""
 							},
-							subreddit: m.hb(t)
+							subreddit: m.ib(t)
 						}
 					})
 				}
@@ -1942,4 +1942,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/GovernanceWalletRegistration.f11ecabd261020390963.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/GovernanceWalletRegistration.662e79dd1aa881b66f47.js.map

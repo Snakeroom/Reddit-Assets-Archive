@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/RequestToJoinPrivateSubredditModal.589fbcaeacb6e36dd1c7.js
-// Retrieved at 8/1/2022, 10:20:09 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/RequestToJoinPrivateSubredditModal.a69205e509df60c36348.js
+// Retrieved at 8/4/2022, 7:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["RequestToJoinPrivateSubredditModal"], {
 		"./src/reddit/components/ContributorRequestFlow/RequestToJoinPrivateSubredditModal/index.m.less": function(e, t, a) {
@@ -38,40 +38,40 @@
 				v = a("./src/reddit/models/SubredditRestrictions/index.ts"),
 				S = a("./src/reddit/models/Toast/index.ts"),
 				C = a("./src/reddit/selectors/platform.ts"),
-				h = a("./src/reddit/components/ContributorRequestFlow/RequestToJoinPrivateSubredditModal/index.m.less"),
-				E = a.n(h),
+				E = a("./src/reddit/components/ContributorRequestFlow/RequestToJoinPrivateSubredditModal/index.m.less"),
+				h = a.n(E),
 				R = a("./src/lib/lessComponent.tsx");
-			const j = R.a.wrapped(u.e, "ModalBody", E.a),
-				k = R.a.wrapped(u.b, "CloseIcon", E.a);
+			const j = R.a.wrapped(u.e, "ModalBody", h.a),
+				k = R.a.wrapped(u.b, "CloseIcon", h.a);
 			t.default = R.a.wrapped(Object(l.a)((function() {
 				const e = Object(p.a)(),
 					t = Object(i.d)(),
 					[a, l] = Object(r.useState)(() => n.fbt._("I would like to join this community.", null, {
 						hk: "1Cgi1B"
 					})),
-					h = Object(i.e)(C.d);
-				if (!h) return null;
+					E = Object(i.e)(C.d);
+				if (!E) return null;
 				const R = () => t(Object(o.i)(b.a.CONTRIBUTOR_REQUEST_PRIVATE_SUREDDIT)),
-					q = n.fbt._("Request to join r/{subreddit} sent", [n.fbt._param("subreddit", h)], {
+					q = n.fbt._("Request to join r/{subreddit} sent", [n.fbt._param("subreddit", E)], {
 						hk: "3Ro26f"
 					}),
 					y = Object(c.e)(q, S.b.SuccessCommunity);
 				return s.a.createElement(j, {
-					className: E.a.requestModal
+					className: h.a.requestModal
 				}, s.a.createElement(u.i, null, s.a.createElement(f.a, null, s.a.createElement("div", null, s.a.createElement("div", {
-					className: E.a.ModalTitle
+					className: h.a.ModalTitle
 				}, n.fbt._("Request to join", null, {
 					hk: "2VKavP"
 				})), s.a.createElement("div", {
-					className: E.a.Title
-				}, s.a.createElement("span", null, `r/${h}`))), s.a.createElement(_.a, {
+					className: h.a.Title
+				}, s.a.createElement("span", null, `r/${E}`))), s.a.createElement(_.a, {
 					onClick: R
 				}, s.a.createElement(k, null)))), s.a.createElement(u.l, null, s.a.createElement("div", {
-					className: E.a.Description
+					className: h.a.Description
 				}, n.fbt._("Write a short message to the moderators explaining why you want to join.", null, {
 					hk: "4uvu3g"
 				})), s.a.createElement(m.c, {
-					className: E.a.textarea,
+					className: h.a.textarea,
 					label: n.fbt._("Message to moderators", null, {
 						hk: "4sX9bQ"
 					}),
@@ -86,12 +86,12 @@
 					hk: "2TSLl5"
 				})), s.a.createElement(u.r, {
 					onClick: () => {
-						e(Object(x.b)(v.b.ContentGate)), t(Object(d.n)(`r/${h}`, a, v.e.View)), R(), t(Object(c.f)(y))
+						e(Object(x.b)(v.b.ContentGate)), t(Object(d.n)(`r/${E}`, a, v.e.View)), R(), t(Object(c.f)(y))
 					}
 				}, n.fbt._("Send Request", null, {
 					hk: "1UMaEr"
 				}))))
-			})), "Component", E.a)
+			})), "Component", h.a)
 		},
 		"./src/reddit/components/StructuredStyles/Forms/LabeledControl/index.m.less": function(e, t, a) {
 			e.exports = {
@@ -248,16 +248,16 @@
 					source: e,
 					action: "click",
 					noun: "request_to_join_button",
-					subreddit: n.hb(t)
+					subreddit: n.ib(t)
 				}),
 				s = e => t => ({
 					...n.n(t),
 					source: e,
 					action: "click",
 					noun: "request_to_join_submit",
-					subreddit: n.hb(t)
+					subreddit: n.ib(t)
 				})
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RequestToJoinPrivateSubredditModal.589fbcaeacb6e36dd1c7.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RequestToJoinPrivateSubredditModal.a69205e509df60c36348.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ChatMessageInput~ChatPost.7afbb9258cc90050e49a.js
-// Retrieved at 8/4/2022, 2:20:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ChatMessageInput~ChatPost.40a3f9c2233d61cbf13d.js
+// Retrieved at 8/4/2022, 7:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ChatMessageInput~ChatPost"], {
 		"./node_modules/lodash/_baseReduce.js": function(e, t) {
@@ -564,7 +564,7 @@
 		"./src/reddit/components/Media/ImageBox/index.tsx": function(e, t, n) {
 			"use strict";
 			n.d(t, "b", (function() {
-				return I
+				return T
 			}));
 			var s = n("./node_modules/fbt/lib/FbtPublic.js"),
 				r = n("./node_modules/react/index.js"),
@@ -587,11 +587,12 @@
 				_ = n("./src/reddit/selectors/telemetry.ts"),
 				v = n("./src/reddit/selectors/user.ts"),
 				j = n("./src/reddit/constants/tracking.ts"),
-				O = n("./src/reddit/components/Media/ImageBox/index.m.less"),
-				y = n.n(O);
+				O = n("./src/higherOrderComponents/withAdClickLocation/Locations.ts"),
+				y = n("./src/reddit/components/Media/ImageBox/index.m.less"),
+				w = n.n(y);
 
-			function w() {
-				return (w = Object.assign || function(e) {
+			function I() {
+				return (I = Object.assign || function(e) {
 					for (var t = 1; t < arguments.length; t++) {
 						var n = arguments[t];
 						for (var s in n) Object.prototype.hasOwnProperty.call(n, s) && (e[s] = n[s])
@@ -599,14 +600,14 @@
 					return e
 				}).apply(this, arguments)
 			}
-			const I = e => e > 2 * E.e,
-				T = e => {
-					const t = Object(d.a)(y.a.image, b.g, e.className, {
-							[y.a.mShowCentered]: e.showCentered,
-							[y.a.mShowBlurred]: e.shouldBlur
+			const T = e => e > 2 * E.e,
+				k = e => {
+					const t = Object(d.a)(w.a.image, b.g, e.className, {
+							[w.a.mShowCentered]: e.showCentered,
+							[w.a.mShowBlurred]: e.shouldBlur
 						}),
 						n = {};
-					return e.showFull || e.isTall || (n.maxHeight = `${E.j}px`), e.isListing || e.isTall && I(e.height) || (n.maxHeight = `${E.e}px`), e.isExpando && e.maxHeight && (n.maxHeight = `${e.maxHeight}px`), e.isExpando && e.maxWidth && (n.maxWidth = `${e.maxWidth}px`), o.a.createElement("img", {
+					return e.showFull || e.isTall || (n.maxHeight = `${E.j}px`), e.isListing || e.isTall && T(e.height) || (n.maxHeight = `${E.e}px`), e.isExpando && e.maxHeight && (n.maxHeight = `${e.maxHeight}px`), e.isExpando && e.maxWidth && (n.maxWidth = `${e.maxWidth}px`), o.a.createElement("img", {
 						alt: e.altText || s.fbt._("Post image", null, {
 							hk: "3KfCgs"
 						}),
@@ -615,14 +616,14 @@
 						style: n
 					})
 				},
-				k = e => {
+				N = e => {
 					const t = {};
 					return (!e.showFull && Object(E.L)(e.height, e.width) || e.shouldBlur) && (t.overflow = "hidden"), e.showFull || (t.maxHeight = `${E.j}px`, e.shouldBlur && (t.maxWidth = Object(E.L)(e.height, e.width) ? `${E.z}px` : `${e.width}px`)), e.showCentered && (t.margin = "0 auto"), e.isExpando && e.maxHeight && (t.maxHeight = `${e.maxHeight}px`), o.a.createElement("div", {
-						className: Object(d.a)(y.a.container, e.className),
+						className: Object(d.a)(w.a.container, e.className),
 						style: t
 					}, e.children)
 				},
-				N = Object(a.b)(() => Object(c.a)(C.F, v.jb, (e, t) => {
+				L = Object(a.b)(() => Object(c.a)(C.F, v.jb, (e, t) => {
 					let {
 						isSponsored: n,
 						postId: s
@@ -635,9 +636,10 @@
 					pageType: s.pageType,
 					post: r
 				})));
-			t.a = N(e => {
+			t.a = L(e => {
 				const t = Object(g.a)();
 				return e.outboundUrl && !e.shouldBlur ? o.a.createElement("a", {
+					"data-adclicklocation": O.a.MEDIA,
 					href: e.outboundUrl,
 					target: "_blank",
 					rel: u.a,
@@ -647,13 +649,13 @@
 					onClick: () => {
 						e.isSponsored && e.post.postId && Object(f.a)(e.post, e.pageType)
 					}
-				}, S(e)) : e.isListing && e.postPermalink ? o.a.createElement(i.a, {
+				}, M(e)) : e.isListing && e.postPermalink ? o.a.createElement(i.a, {
 					target: e.shouldOpenPostInNewTab ? "_blank" : void 0,
 					to: Object(m.a)(e.postPermalink, void 0, t),
 					onClick: e.onPostMediaClick
-				}, S(e)) : S(e)
+				}, M(e)) : M(e)
 			});
-			const L = (e, t) => o.a.createElement(T, {
+			const S = (e, t) => o.a.createElement(k, {
 					altText: t.altText,
 					className: Object(d.a)(t.imageClassName, {
 						[j.a]: !e
@@ -670,18 +672,18 @@
 					src: Object(l.a)(t.source),
 					width: t.width
 				}),
-				S = e => {
+				M = e => {
 					let {
 						onClick: t,
 						...n
 					} = e;
 					const r = Object(E.L)(n.height, n.width),
-						a = I(n.height) && r;
-					return o.a.createElement(k, w({}, n, {
+						a = T(n.height) && r;
+					return o.a.createElement(N, I({}, n, {
 						className: `${r?`${j.a} `:""}${n.className||""}`
 					}), n.isListing ? o.a.createElement("div", {
 						className: n.contentImageClassName
-					}, L(r, n)) : o.a.createElement("a", {
+					}, S(r, n)) : o.a.createElement("a", {
 						href: n.originalSource,
 						onClick: t,
 						style: a ? {
@@ -689,12 +691,12 @@
 						} : {},
 						target: "_blank",
 						rel: u.c,
-						className: y.a.imageLink
-					}, L(r, n), n.shouldBlur && !n.isVideoThumbnail && !n.isNsfwBlockingModalEligible && o.a.createElement(h.a, {
+						className: w.a.imageLink
+					}, S(r, n), n.shouldBlur && !n.isVideoThumbnail && !n.isNsfwBlockingModalEligible && o.a.createElement(h.a, {
 						isNSFW: !!n.isNSFW,
 						isSpoiler: !!n.isSpoiler
 					})), n.isListing && !n.showFull && n.height > E.j && Object(E.L)(n.height, n.width) && o.a.createElement("div", {
-						className: y.a.seeMore
+						className: w.a.seeMore
 					}, s.fbt._("see full image", null, {
 						hk: "1Qygw5"
 					})), n.isVideoThumbnail && o.a.createElement(p.a, {
@@ -1760,7 +1762,7 @@
 									...n.actionInfo,
 									reason: this.props.node.id
 								},
-								subreddit: p.hb(t)
+								subreddit: p.ib(t)
 							}
 						})
 					}
@@ -2419,7 +2421,7 @@
 				h = e => ({
 					...u.n(e),
 					source: r,
-					screen: u.Z(e),
+					screen: u.ab(e),
 					discoveryUnit: {
 						id: "xd_100",
 						name: s.SUBREDDIT_HOVERCARD,
@@ -2464,8 +2466,8 @@
 					if (!n || !Object(i.b)(n) && !Object(a.b)(n)) return {};
 					const s = Object(i.b)(n) ? n.belongsTo.id : n.subredditId;
 					return {
-						post: u.I(e, n.id),
-						subreddit: u.ib(e, s),
+						post: u.J(e, n.id),
+						subreddit: u.jb(e, s),
 						...p(e, t)
 					}
 				},
@@ -2478,44 +2480,44 @@
 					source: "global",
 					action: o.c.VIEW,
 					noun: s.SUBREDDIT_HOVERCARD,
-					subreddit: u.jb(t, e),
-					screen: u.Z(t)
+					subreddit: u.kb(t, e),
+					screen: u.ab(t)
 				}),
 				g = (e, t) => n => ({
 					...h(n),
 					source: r.DISCOVERY_UNIT,
 					action: o.c.VIEW,
 					noun: s.ITEM_POST,
-					post: u.I(n, t),
-					subreddit: u.jb(n, e),
-					screen: u.Z(n)
+					post: u.J(n, t),
+					subreddit: u.kb(n, e),
+					screen: u.ab(n)
 				}),
 				E = (e, t) => n => ({
 					...h(n),
 					source: r.DISCOVERY_UNIT,
 					action: o.c.CLICK,
 					noun: s.ITEM_POST,
-					post: u.I(n, t),
-					subreddit: u.jb(n, e),
-					screen: u.Z(n)
+					post: u.J(n, t),
+					subreddit: u.kb(n, e),
+					screen: u.ab(n)
 				}),
 				C = e => t => ({
 					...h(t),
-					subreddit: u.ib(t, e) || null,
+					subreddit: u.jb(t, e) || null,
 					source: r.DISCOVERY_UNIT,
 					action: o.c.CLICK,
 					noun: s.HEADER_SUBREDDIT
 				}),
 				_ = e => t => ({
 					...h(t),
-					subreddit: u.ib(t, e) || null,
+					subreddit: u.jb(t, e) || null,
 					source: r.DISCOVERY_UNIT,
 					action: o.c.CLICK,
 					noun: s.HEADER_SUBREDDIT_SUBSCRIBE
 				}),
 				v = e => t => ({
 					...h(t),
-					subreddit: u.ib(t, e) || null,
+					subreddit: u.jb(t, e) || null,
 					source: r.DISCOVERY_UNIT,
 					action: o.c.CLICK,
 					noun: s.HEADER_SUBREDDIT_UNSUBSCRIBE
@@ -2633,4 +2635,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatMessageInput~ChatPost.7afbb9258cc90050e49a.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatMessageInput~ChatPost.40a3f9c2233d61cbf13d.js.map

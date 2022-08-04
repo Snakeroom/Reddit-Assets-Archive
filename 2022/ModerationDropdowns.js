@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModerationDropdowns.676e0a11b7b6598f12f9.js
-// Retrieved at 8/4/2022, 2:20:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModerationDropdowns.bcda78f8b7b04a48bff2.js
+// Retrieved at 8/4/2022, 7:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModerationDropdowns"], {
 		"./src/reddit/actions/economics/predictions/modTools.ts": function(e, t, o) {
@@ -256,8 +256,8 @@
 				f = o.n(b);
 			const x = c.a.wrapped(l.a, "StyledDropdown", f.a),
 				h = Object(a.a)(x),
-				O = c.a.div("Separator", f.a),
-				_ = (e, t) => o => r.a.createElement("span", {
+				_ = c.a.div("Separator", f.a),
+				O = (e, t) => o => r.a.createElement("span", {
 					className: Object(i.a)(f.a.IconWrapper, o.className)
 				}, r.a.createElement(d.a, {
 					className: f.a.BadgeCounter,
@@ -274,7 +274,7 @@
 					unreadNotifications: o,
 					isOpen: n,
 					sendEventWithName: a
-				} = e, i = Object(p.c)(Object(m.b)("mod_queue"), `${s.fbt._("Mod Queue",null,{hk:"2fqLkD"})}`), c = Object(p.b)(_("message", o.hasUnreadModmail), `${s.fbt._("Modmail",null,{hk:"1IvnFd"})}`);
+				} = e, i = Object(p.c)(Object(m.b)("mod_queue"), `${s.fbt._("Mod Queue",null,{hk:"2fqLkD"})}`), c = Object(p.b)(O("message", o.hasUnreadModmail), `${s.fbt._("Modmail",null,{hk:"1IvnFd"})}`);
 				return r.a.createElement("div", {
 					className: t
 				}, r.a.createElement(h, {
@@ -284,11 +284,11 @@
 				}, r.a.createElement(i, {
 					href: "/r/mod/about/modqueue",
 					onClick: () => a("mod_queue")
-				}), r.a.createElement(O, null), r.a.createElement(c, {
+				}), r.a.createElement(_, null), r.a.createElement(c, {
 					href: "https://mod.reddit.com/mail/all",
 					isLit: o.hasUnreadModmail,
 					onClick: () => a("mod_mail")
-				}), r.a.createElement(O, null)))
+				}), r.a.createElement(_, null)))
 			}
 		},
 		"./src/reddit/components/ModerationDropdown/index.tsx": function(e, t, o) {
@@ -331,8 +331,8 @@
 				f = o("./src/reddit/components/FlairSearch/index.tsx"),
 				x = o("./src/reddit/controls/Button/index.tsx"),
 				h = o("./src/reddit/helpers/trackers/postComposer.ts"),
-				O = o("./src/reddit/models/Flair/index.ts"),
-				_ = o("./src/reddit/selectors/postFlair.ts"),
+				_ = o("./src/reddit/models/Flair/index.ts"),
+				O = o("./src/reddit/selectors/postFlair.ts"),
 				E = o("./src/reddit/selectors/subreddit.ts"),
 				C = o("./src/reddit/components/PostFlairPicker/helpers.ts"),
 				k = o("./src/reddit/components/PostFlairPicker/index.m.less"),
@@ -346,7 +346,7 @@
 					return `PostFlair__Modal-[postId: ${e}]-isOverlay[${t}]-position[${o}]`
 				},
 				P = Object(c.c)({
-					flairData: _.d,
+					flairData: O.d,
 					subreddit: E.V
 				});
 			class M extends a.a.Component {
@@ -405,13 +405,13 @@
 						})
 					}), a.a.createElement(b.a, {
 						flair: t,
-						flairTemplateType: O.d.LinkFlair,
+						flairTemplateType: _.d.LinkFlair,
 						placeholderText: n.fbt._("Post Title", null, {
 							hk: "43RsbC"
 						})
 					}), a.a.createElement(f.a, {
 						flair: t,
-						flairTemplateType: O.d.LinkFlair,
+						flairTemplateType: _.d.LinkFlair,
 						subredditId: r.id,
 						templates: c,
 						templateIds: d,
@@ -453,9 +453,9 @@
 			o.d(t, "a", (function() {
 				return h
 			})), o.d(t, "f", (function() {
-				return O
-			})), o.d(t, "h", (function() {
 				return _
+			})), o.d(t, "h", (function() {
+				return O
 			})), o.d(t, "i", (function() {
 				return E
 			})), o.d(t, "j", (function() {
@@ -488,8 +488,8 @@
 				f = o("./src/reddit/components/PostModModeDropdown/DropdownHelpers.m.less"),
 				x = o.n(f);
 			const h = r.a.wrapped(c.a, "Icon", x.a),
-				O = r.a.wrapped(d.a, "Icon", x.a),
-				_ = r.a.wrapped(l.a, "Icon", x.a),
+				_ = r.a.wrapped(d.a, "Icon", x.a),
+				O = r.a.wrapped(l.a, "Icon", x.a),
 				E = r.a.wrapped(p.a, "Icon", x.a),
 				C = r.a.wrapped(m.a, "Icon", x.a),
 				k = r.a.wrapped(u.a, "Icon", x.a),
@@ -530,8 +530,8 @@
 				f = o("./src/reddit/constants/modals.ts"),
 				x = o("./src/reddit/contexts/PageLayer/index.tsx"),
 				h = o("./src/reddit/controls/Dropdown/index.tsx"),
-				O = o("./src/reddit/featureFlags/index.ts"),
-				_ = o("./src/reddit/helpers/trackers/modTools.ts"),
+				_ = o("./src/reddit/featureFlags/index.ts"),
+				O = o("./src/reddit/helpers/trackers/modTools.ts"),
 				E = o("./src/reddit/helpers/trackers/predictionsModTools.ts"),
 				C = o("./src/reddit/models/Prediction/Tournament/index.ts"),
 				k = o("./src/reddit/selectors/tooltip.ts"),
@@ -551,8 +551,8 @@
 					flatlistItem: e,
 					postLayout: t
 				}),
-				I = () => void 0,
-				T = e => {
+				T = () => void 0,
+				I = e => {
 					let {
 						canEditFlair: t,
 						hasModFullPerms: o,
@@ -570,13 +570,13 @@
 						onEditPredictionEnd: f,
 						onDistinguishPost: x,
 						onFlairPost: h,
-						onLockPost: O,
-						onNsfwPost: _,
+						onLockPost: _,
+						onNsfwPost: O,
 						onOcPost: E,
 						onCcPost: k,
 						onRemovePost: M,
 						onModToMemberShareOpened: F,
-						onSpamPost: T,
+						onSpamPost: I,
 						onStickyPost: R,
 						onSpoilerPost: A,
 						post: W
@@ -589,7 +589,7 @@
 						z = !(!W.approvedBy || !q),
 						Y = i ? void 0 : l,
 						J = Object(w.a)(W),
-						X = p ? L : I;
+						X = p ? L : T;
 					return n.a.createElement(S.g, null, s && n.a.createElement(n.a.Fragment, null, !W.isSponsored && n.a.createElement(n.a.Fragment, null, n.a.createElement(S.e, {
 						className: X(P.a.Approve, Y),
 						displayText: z ? v.fbt._("Reapprove", null, {
@@ -615,7 +615,7 @@
 						}) : v.fbt._("Remove as spam", null, {
 							hk: "4A9ZT8"
 						}),
-						onClick: T
+						onClick: I
 					}, n.a.createElement(S.j, null))), t && n.a.createElement(S.e, {
 						className: X(P.a.Flair, Y),
 						displayText: Z ? v.fbt._("Edit post flair", null, {
@@ -660,7 +660,7 @@
 						})
 					}), n.a.createElement(g.a, {
 						isSelected: W.isLocked,
-						onClick: O,
+						onClick: _,
 						text: v.fbt._("Lock comments", null, {
 							hk: "YAV8n"
 						})
@@ -672,7 +672,7 @@
 						})
 					}), n.a.createElement(g.a, {
 						isSelected: W.isNSFW,
-						onClick: _,
+						onClick: O,
 						text: v.fbt._("Mark as NSFW", null, {
 							hk: "8QQ2f"
 						})
@@ -703,7 +703,7 @@
 						} = t;
 						return Object(k.b)(o)(e)
 					},
-					isModToMemberShareEnabled: O.d.modToMemberShare
+					isModToMemberShareEnabled: _.d.modToMemberShare
 				}),
 				V = Object(r.b)(B, (e, t) => {
 					let {
@@ -753,7 +753,7 @@
 					onCancelPrediction: f,
 					onChangePredictionOutcome: x,
 					onEditPredictionEnd: h,
-					onDistinguishPost: O,
+					onDistinguishPost: _,
 					onFlairPost: k,
 					onLockPost: v,
 					onNsfwPost: j,
@@ -768,18 +768,18 @@
 					sendEvent: y,
 					tooltipId: L
 				} = e;
-				const I = F.distinguishType === i.G.MODERATOR,
-					R = I ? i.G.NONE : i.G.MODERATOR,
+				const T = F.distinguishType === i.G.MODERATOR,
+					R = T ? i.G.NONE : i.G.MODERATOR,
 					W = Object(u.b)(F.id, c);
 				return n.a.createElement(H, {
 					className: A.a.dropdown,
 					isOpen: r,
 					tooltipId: L
-				}, n.a.createElement(T, {
+				}, n.a.createElement(I, {
 					canEditFlair: t,
 					hasModFullPerms: o,
 					hasModPostPerms: s,
-					isDistinguished: I,
+					isDistinguished: T,
 					isModToMemberShareEnabled: a,
 					isOverlay: c,
 					isPostAuthor: d,
@@ -787,7 +787,7 @@
 					layout: p,
 					modModeEnabled: m,
 					onApprovePost: () => {
-						b(), y(Object(_.l)("approve", F.id))
+						b(), y(Object(O.l)("approve", F.id))
 					},
 					onCancelPrediction: () => {
 						f(), y(Object(E.a)(F.id))
@@ -799,37 +799,37 @@
 						h(), y(Object(E.c)(F.id))
 					},
 					onRemovePost: () => {
-						g(), Object(C.b)(F) ? y(Object(E.d)(F.id)) : y(Object(_.l)("remove", F.id))
+						g(), Object(C.b)(F) ? y(Object(E.d)(F.id)) : y(Object(O.l)("remove", F.id))
 					},
 					onSpamPost: () => {
-						D(), y(Object(_.l)("spam", F.id))
+						D(), y(Object(O.l)("spam", F.id))
 					},
 					onDistinguishPost: () => {
-						O(R), y(Object(_.l)(I ? "undistinguish" : "distinguish", F.id))
+						_(R), y(Object(O.l)(T ? "undistinguish" : "distinguish", F.id))
 					},
 					onFlairPost: () => {
-						k(W), y(Object(_.l)("post_flair", F.id))
+						k(W), y(Object(O.l)("post_flair", F.id))
 					},
 					onLockPost: () => {
-						v(), y(Object(_.l)(F.isLocked ? "unlock" : "lock", F.id))
+						v(), y(Object(O.l)(F.isLocked ? "unlock" : "lock", F.id))
 					},
 					onNsfwPost: () => {
-						j(), y(Object(_.l)(F.isNSFW ? "unmark_nsfw" : "mark_nsfw", F.id))
+						j(), y(Object(O.l)(F.isNSFW ? "unmark_nsfw" : "mark_nsfw", F.id))
 					},
 					onOcPost: () => {
-						P(), y(Object(_.l)(F.isOriginalContent ? "unmark_original_content" : "mark_original_content", F.id))
+						P(), y(Object(O.l)(F.isOriginalContent ? "unmark_original_content" : "mark_original_content", F.id))
 					},
 					onCcPost: () => {
 						M()
 					},
 					onModToMemberShareOpened: () => {
-						w(), y(Object(_.l)("mod_to_member_share", F.id))
+						w(), y(Object(O.l)("mod_to_member_share", F.id))
 					},
 					onSpoilerPost: () => {
-						N(), y(Object(_.l)(F.isSpoiler ? "unmark_spoiler" : "mark_spoiler", F.id))
+						N(), y(Object(O.l)(F.isSpoiler ? "unmark_spoiler" : "mark_spoiler", F.id))
 					},
 					onStickyPost: () => {
-						S(), y(Object(_.l)(F.isStickied ? "unsticky" : "sticky", F.id))
+						S(), y(Object(O.l)(F.isStickied ? "unsticky" : "sticky", F.id))
 					},
 					post: F
 				}))
@@ -982,9 +982,9 @@
 			var s = o("./src/reddit/selectors/telemetry.ts");
 			const n = (e, t) => ({
 					...Object(s.n)(e),
-					post: Object(s.I)(e, t),
-					predictions: Object(s.O)(e, t),
-					subreddit: Object(s.hb)(e)
+					post: Object(s.J)(e, t),
+					predictions: Object(s.P)(e, t),
+					subreddit: Object(s.ib)(e)
 				}),
 				r = e => t => ({
 					...n(t, e),
@@ -1171,4 +1171,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationDropdowns.676e0a11b7b6598f12f9.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationDropdowns.bcda78f8b7b04a48bff2.js.map

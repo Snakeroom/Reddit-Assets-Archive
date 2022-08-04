@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~Subreddit~SubredditWiki.fe5c03dd917330af027d.js
-// Retrieved at 8/4/2022, 2:20:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~Subreddit~SubredditWiki.b6ac4dd669f63f6a1a8a.js
+// Retrieved at 8/4/2022, 7:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~Subreddit~SubredditWiki", "AchievementsActions"], {
 		"./node_modules/lodash/random.js": function(e, t, r) {
@@ -3101,7 +3101,7 @@
 						source: i,
 						action: "confirm",
 						noun: "predict",
-						poll: Object(s.H)(e, t, !1, void 0, r),
+						poll: Object(s.I)(e, t, !1, void 0, r),
 						goldPurchase: {
 							numberCoins: n
 						}
@@ -3117,7 +3117,7 @@
 						source: i,
 						action: "confirm",
 						noun: "predict",
-						poll: Object(s.H)(e, t, !1, void 0, void 0, r)
+						poll: Object(s.I)(e, t, !1, void 0, void 0, r)
 					})
 				},
 				m = e => {
@@ -3134,7 +3134,7 @@
 							source: i,
 							action: "close",
 							noun: "prediction_modal",
-							poll: Object(s.H)(e, t, !1, o, d)
+							poll: Object(s.I)(e, t, !1, o, d)
 						}
 					}
 				},
@@ -3205,7 +3205,7 @@
 						value: e ? "1" : "0",
 						oldValue: e ? "0" : "1"
 					},
-					subreddit: Object(s.hb)(t)
+					subreddit: Object(s.ib)(t)
 				}),
 				y = () => e => ({
 					...Object(s.n)(e),
@@ -3236,14 +3236,14 @@
 					source: "predictions_tab",
 					action: "view",
 					noun: "predictions_how_it_works",
-					subreddit: Object(s.hb)(e)
+					subreddit: Object(s.ib)(e)
 				}),
 				j = () => e => ({
 					...Object(s.n)(e),
 					source: "predictions_how_it_works",
 					action: "click",
 					noun: "learn_more",
-					subreddit: Object(s.hb)(e)
+					subreddit: Object(s.ib)(e)
 				})
 		},
 		"./src/reddit/helpers/trackers/subredditWiki.ts": function(e, t, r) {
@@ -3289,8 +3289,8 @@
 				s = r("./src/reddit/selectors/telemetry.ts");
 			const i = e => ({
 					...s.n(e),
-					subreddit: s.hb(e),
-					userSubreddit: s.rb(e)
+					subreddit: s.ib(e),
+					userSubreddit: s.sb(e)
 				}),
 				a = () => e => ({
 					source: "wiki",
@@ -3580,4 +3580,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~Subreddit~SubredditWiki.fe5c03dd917330af027d.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~Subreddit~SubredditWiki.b6ac4dd669f63f6a1a8a.js.map

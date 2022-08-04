@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~ModerationPages~PostCreation~Profile~9a5d9fab.b17ad049c5717f177399.js
-// Retrieved at 8/4/2022, 2:20:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~ModerationPages~PostCreation~Profile~9a5d9fab.5d451c988d408375675d.js
+// Retrieved at 8/4/2022, 7:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~ModerationPages~PostCreation~Profile~9a5d9fab"], {
 		"./src/higherOrderComponents/withClickTracking/index.tsx": function(e, t, s) {
@@ -38,7 +38,7 @@
 						}
 						return {
 							...i,
-							actionInfo: Object(r.Q)(s, n)
+							actionInfo: Object(r.R)(s, n)
 						}
 					})), u(n.target, n.currentTarget, c.anchorsAndButtons) && i(n)
 				}
@@ -456,11 +456,12 @@
 				O = s("./src/reddit/helpers/mediaGallery/index.tsx"),
 				w = s("./src/reddit/models/Media/index.ts"),
 				C = s("./src/reddit/selectors/media.ts"),
-				I = s("./src/reddit/components/Media/GalleryBox/index.m.less"),
-				T = s.n(I);
+				I = s("./src/higherOrderComponents/withAdClickLocation/Locations.ts"),
+				T = s("./src/reddit/components/Media/GalleryBox/index.m.less"),
+				j = s.n(T);
 			const {
-				fbt: j
-			} = s("./node_modules/fbt/lib/FbtPublic.js"), S = e => {
+				fbt: S
+			} = s("./node_modules/fbt/lib/FbtPublic.js"), M = e => {
 				const {
 					displayImage: t,
 					style: s,
@@ -470,19 +471,19 @@
 				} = e, d = "u" in t ? t.u : t.gif;
 				return n.a.createElement("div", {
 					className: Object(a.a)({
-						[T.a.slideImageMainDiv]: !i
+						[j.a.slideImageMainDiv]: !i
 					})
 				}, o && n.a.createElement("img", {
 					src: d,
 					alt: r,
-					className: T.a.slideImage,
+					className: j.a.slideImage,
 					style: s
 				}), i && n.a.createElement("div", {
-					className: T.a.seeMore
-				}, j._("see full image", null, {
+					className: j.a.seeMore
+				}, S._("see full image", null, {
 					hk: "1Qygw5"
 				})))
-			}, M = e => {
+			}, N = e => {
 				const {
 					slideIndex: t,
 					currentIndex: s,
@@ -507,13 +508,13 @@
 				let y;
 				return y = i || (f ? r : "gif" in r ? r : o), n.a.createElement("li", {
 					style: g,
-					className: T.a.slide
+					className: j.a.slide
 				}, n.a.createElement("figure", {
 					className: Object(a.a)({
-						[T.a.tallImage]: f,
-						[T.a.commonImage]: !f
-					}, T.a.figure)
-				}, l || p ? n.a.createElement(S, {
+						[j.a.tallImage]: f,
+						[j.a.commonImage]: !f
+					}, j.a.figure)
+				}, l || p ? n.a.createElement(M, {
 					displayImage: y,
 					style: v,
 					showSeeMore: f,
@@ -524,10 +525,10 @@
 					rel: "noopener noreferrer",
 					target: "_blank",
 					className: Object(a.a)({
-						[T.a.tallImage]: f,
-						[T.a.commonImage]: !f
-					}, T.a.imageLink)
-				}, n.a.createElement(S, {
+						[j.a.tallImage]: f,
+						[j.a.commonImage]: !f
+					}, j.a.imageLink)
+				}, n.a.createElement(M, {
 					displayImage: y,
 					style: v,
 					showSeeMore: f,
@@ -537,9 +538,9 @@
 					isNSFW: !!c,
 					isSpoiler: !!m
 				}))))
-			}, N = e => n.a.createElement("a", {
-				className: Object(a.a)(e.className, T.a.navigationUnderlay, {
-					[T.a.hasMoreSlides]: e.hasMoreSlides
+			}, L = e => n.a.createElement("a", {
+				className: Object(a.a)(e.className, j.a.navigationUnderlay, {
+					[j.a.hasMoreSlides]: e.hasMoreSlides
 				}),
 				onClick: t => {
 					e.onClick(), t.stopPropagation()
@@ -551,42 +552,42 @@
 				},
 				title: e.hasMoreSlides ? e.title : void 0
 			}, e.hasMoreSlides && n.a.createElement("i", {
-				className: Object(a.a)(e.iconClassName, T.a.icon)
+				className: Object(a.a)(e.iconClassName, j.a.icon)
 			}, n.a.createElement(h.a, {
-				className: T.a.iconImage
-			}))), L = e => n.a.createElement("div", {
-				className: T.a.imageMetaData,
+				className: j.a.iconImage
+			}))), P = e => n.a.createElement("div", {
+				className: j.a.imageMetaData,
 				style: {
 					height: e.captionHeight,
 					justifyContent: e.caption ? "space-between" : "flex-end"
 				}
 			}, e.caption && n.a.createElement("span", {
-				className: T.a.imageCaption,
+				className: j.a.imageCaption,
 				title: e.caption
 			}, e.caption), e.outboundUrl && n.a.createElement("span", {
-				className: T.a.imageUrl
+				className: j.a.imageUrl
 			}, n.a.createElement("a", {
-				className: T.a.outboundUrlWrapper,
+				className: j.a.outboundUrlWrapper,
 				href: e.outboundUrl,
 				onClick: e.onClickEvent,
 				rel: "noopener noreferrer",
 				target: "'_blank'"
 			}, n.a.createElement("span", {
-				className: T.a.urlText
+				className: j.a.urlText
 			}, Object(O.e)(e.outboundUrl)), n.a.createElement(b.a, {
-				className: T.a.linkIcon
-			})))), P = e => n.a.createElement("div", {
-				className: T.a.slideIndicator,
+				className: j.a.linkIcon
+			})))), _ = e => n.a.createElement("div", {
+				className: j.a.slideIndicator,
 				onClick: e.toggleTileLayout ? t => {
 					t.preventDefault(), t.stopPropagation(), e.toggleTileLayout()
 				} : void 0
 			}, e.toggleTileLayout && n.a.createElement(g.a, {
-				className: T.a.tileIcon
-			}), e.currentSlide, "/", e.totalSlides), _ = function(e) {
+				className: j.a.tileIcon
+			}), e.currentSlide, "/", e.totalSlides), k = function(e) {
 				let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : 4,
 					s = e - t;
 				return s < 0 && (s = 0), s
-			}, k = function(e, t) {
+			}, D = function(e, t) {
 				let s = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : 4,
 					i = e + s;
 				return i > t - 1 && (i = t - 1), i
@@ -598,85 +599,85 @@
 						galleryItems: h,
 						imageHeight: b,
 						isListing: g,
-						isSponsored: I,
-						isTileLayout: S,
-						mediaMetadata: D = {},
-						post: R,
-						postId: A,
-						postTitle: B,
-						shouldShowTileLayoutOption: V,
-						showPromotedCTA: H,
-						subredditName: W,
-						isVisible: F
+						isSponsored: T,
+						isTileLayout: M,
+						mediaMetadata: R = {},
+						post: A,
+						postId: B,
+						postTitle: V,
+						shouldShowTileLayoutOption: H,
+						showPromotedCTA: W,
+						subredditName: F,
+						isVisible: U
 					} = e,
-					U = Object(o.e)(e => Object(C.d)(e, A)),
-					G = U > 0,
-					$ = U < h.length - 1,
-					J = Object(p.a)(),
-					Q = Object(i.useRef)(null),
+					G = Object(o.e)(e => Object(C.d)(e, B)),
+					$ = G > 0,
+					J = G < h.length - 1,
+					Q = Object(p.a)(),
 					K = Object(i.useRef)(null),
-					[z, Y] = Object(i.useState)(F ? U : -1),
-					[q, X] = Object(i.useState)(F ? U : -1),
-					Z = Object(l.a)(F),
-					ee = Object(l.a)(U);
+					z = Object(i.useRef)(null),
+					[Y, q] = Object(i.useState)(U ? G : -1),
+					[X, Z] = Object(i.useState)(U ? G : -1),
+					ee = Object(l.a)(U),
+					te = Object(l.a)(G);
 				Object(i.useEffect)(() => {
-					(void 0 !== Z && Z !== F && F && z < 0 && q < 0 || void 0 !== ee && ee !== U && F && (z > U || q < U)) && (Y(_(U, 1)), X(k(U, h.length, 1)))
-				}, [Z, U, F, z, q, ee, h.length, A]);
-				const te = Object(i.useRef)(),
-					se = Object(i.useCallback)(e => {
+					(void 0 !== ee && ee !== U && U && Y < 0 && X < 0 || void 0 !== te && te !== G && U && (Y > G || X < G)) && (q(k(G, 1)), Z(D(G, h.length, 1)))
+				}, [ee, G, U, Y, X, te, h.length, B]);
+				const se = Object(i.useRef)(),
+					ie = Object(i.useCallback)(e => {
 						e.forEach(e => {
 							const {
 								isIntersecting: t
 							} = e;
-							t ? (z < 0 || q - z == 0) && (te.current = setTimeout(() => {
-								const e = k(q, h.length);
-								e !== q && X(e)
-							}, 1e3)) : (z < 0 || q - z == 0) && clearTimeout(te.current)
+							t ? (Y < 0 || X - Y == 0) && (se.current = setTimeout(() => {
+								const e = D(X, h.length);
+								e !== X && Z(e)
+							}, 1e3)) : (Y < 0 || X - Y == 0) && clearTimeout(se.current)
 						})
-					}, [z, q, h.length]);
-				Object(r.a)(K, se);
-				const ie = Object(i.useCallback)(e => {
+					}, [Y, X, h.length]);
+				Object(r.a)(z, ie);
+				const ne = Object(i.useCallback)(e => {
 						t(Object(x.f)({
-							postId: A,
+							postId: B,
 							index: e
 						}))
+					}, [t, B]),
+					oe = Object(i.useCallback)(e => {
+						t(Object(f.z)(A, v.a.GalleryItemImpression, `Slide${e}`))
 					}, [t, A]),
-					ne = Object(i.useCallback)(e => {
-						t(Object(f.z)(R, v.a.GalleryItemImpression, `Slide${e}`))
-					}, [t, R]),
-					oe = Object(i.useCallback)(() => {
-						t(Object(x.i)({
-							postId: A,
-							isTileLayout: !S
-						}))
-					}, [t, A, S]),
 					re = Object(i.useCallback)(() => {
-						if (!$) return;
-						const e = U + 1;
-						if (e + 1 >= q) {
-							const e = k(q, h.length);
-							e !== q && X(e)
-						}
-						ie(e), J(u.b(A, e)), J(u.d(A, e + 1)), ne(e)
-					}, [$, U, ne, ie, J, A, q, h.length]),
+						t(Object(x.i)({
+							postId: B,
+							isTileLayout: !M
+						}))
+					}, [t, B, M]),
 					ae = Object(i.useCallback)(() => {
-						if (!G) return;
-						const e = U - 1;
-						if (e - 1 <= z) {
-							const e = _(z);
-							e !== z && Y(e)
+						if (!J) return;
+						const e = G + 1;
+						if (e + 1 >= X) {
+							const e = D(X, h.length);
+							e !== X && Z(e)
 						}
-						const t = U + 1;
-						ie(e), J(u.a(A, t)), J(u.d(A, t - 1)), ne(e)
-					}, [G, U, ne, ie, J, A, z]),
+						ne(e), Q(u.b(B, e)), Q(u.d(B, e + 1)), oe(e)
+					}, [J, G, oe, ne, Q, B, X, h.length]),
 					de = Object(i.useCallback)(() => {
-						const e = h[U] && h[U].outboundUrl;
-						e && J(u.c(A, e))
-					}, [J, A, U, h]);
-				m(y.a.ArrowLeft, Q.current, ae), m(y.a.ArrowRight, Q.current, re);
-				const le = h[U] && h[U].caption,
-					ce = h[U] && h[U].outboundUrl,
-					ue = ((e, t, s) => {
+						if (!$) return;
+						const e = G - 1;
+						if (e - 1 <= Y) {
+							const e = k(Y);
+							e !== Y && q(e)
+						}
+						const t = G + 1;
+						ne(e), Q(u.a(B, t)), Q(u.d(B, t - 1)), oe(e)
+					}, [$, G, oe, ne, Q, B, Y]),
+					le = Object(i.useCallback)(() => {
+						const e = h[G] && h[G].outboundUrl;
+						e && Q(u.c(B, e))
+					}, [Q, B, G, h]);
+				m(y.a.ArrowLeft, K.current, de), m(y.a.ArrowRight, K.current, ae);
+				const ce = h[G] && h[G].caption,
+					ue = h[G] && h[G].outboundUrl,
+					me = ((e, t, s) => {
 						const i = Object(O.f)(e),
 							n = Object(O.g)(i),
 							o = n.x / n.y < 1,
@@ -687,19 +688,20 @@
 						} : {
 							paddingBottom: `${Object(w.B)(n.y,n.x)}%`
 						}
-					})(D, b, g);
+					})(R, b, g);
 				return n.a.createElement("div", {
-					className: Object(a.a)(T.a.outerContainer),
-					ref: Q,
+					"data-adclicklocation": I.a.MEDIA,
+					className: Object(a.a)(j.a.outerContainer),
+					ref: K,
 					tabIndex: 0
-				}, S ? n.a.createElement(n.a.Fragment, null, n.a.createElement("div", {
-					className: Object(a.a)(T.a.tilesWrapper, {
-						[T.a.blurredContent]: e.shouldBlur
+				}, M ? n.a.createElement(n.a.Fragment, null, n.a.createElement("div", {
+					className: Object(a.a)(j.a.tilesWrapper, {
+						[j.a.blurredContent]: e.shouldBlur
 					}),
 					onClick: e.onClickRevealBlurred
 				}, h.map((t, s) => {
 					const i = t.mediaId,
-						o = D && D[i];
+						o = R && R[i];
 					if (!o || !o.s) return null;
 					const r = [...o && o.s ? [o.s] : [], ...o && o.p ? o.p : []],
 						a = Object(O.d)(w.y, r);
@@ -709,47 +711,47 @@
 						style: {
 							backgroundImage: `url(${"gif"in d?d.gif:"u"in a&&a.u})`
 						},
-						className: T.a.tileImage,
+						className: j.a.tileImage,
 						onClick: e.shouldBlur ? void 0 : e => {
-							e.preventDefault(), e.stopPropagation(), oe(), ie(s)
+							e.preventDefault(), e.stopPropagation(), re(), ne(s)
 						},
 						key: i
 					})
 				}), [1, 2, 3].map(e => n.a.createElement("div", {
 					key: e,
-					className: T.a.tilePlaceholder
+					className: j.a.tilePlaceholder
 				}))), e.shouldBlur && !e.isNsfwBlockingModalEligible && n.a.createElement(E.a, {
 					isNSFW: !!e.isNSFW,
 					isSpoiler: !!e.isSpoiler
 				})) : n.a.createElement("div", {
-					className: T.a.slideshowContainer,
+					className: j.a.slideshowContainer,
 					tabIndex: -1,
-					ref: K,
+					ref: z,
 					onClick: e.onClickRevealBlurred,
-					style: ue
+					style: me
 				}, n.a.createElement("div", {
-					className: T.a.imagesWrapper
+					className: j.a.imagesWrapper
 				}, n.a.createElement("ul", {
-					className: T.a.slideWrapper
+					className: j.a.slideWrapper
 				}, h.map((t, s) => {
 					const i = t.mediaId,
-						o = D && D[i];
+						o = R && R[i];
 					if (!o || !o.s) return null;
-					const r = t.caption ? t.caption : B,
-						a = Object(c.a)(W ? `${W} - ${r}` : r, 300, d.ib),
+					const r = t.caption ? t.caption : V,
+						a = Object(c.a)(F ? `${F} - ${r}` : r, 300, d.ib),
 						l = [...o && o.s ? [o.s] : [], ...o && o.p ? o.p : []],
 						u = Object(O.d)(b, l);
 					if (!u) return null;
 					const m = e.shouldBlur && Object(O.d)(b, o.o || []) || void 0,
-						p = s >= z && s <= q;
-					return n.a.createElement(M, {
+						p = s >= Y && s <= X;
+					return n.a.createElement(N, {
 						slideIndex: s,
-						currentIndex: U,
+						currentIndex: G,
 						obfuscatedImage: m,
 						optimalImage: u,
 						originalImage: o.s,
 						isListing: e.isListing,
-						isSponsored: I,
+						isSponsored: T,
 						key: i,
 						isReadyToShow: p,
 						imgAltText: a,
@@ -758,37 +760,37 @@
 						isNsfwBlockingModalEligible: e.isNsfwBlockingModalEligible,
 						isSpoiler: e.isSpoiler
 					})
-				})), !e.shouldBlur && n.a.createElement(n.a.Fragment, null, n.a.createElement(N, {
-					onClick: ae,
-					setFocusTo: K,
-					hasMoreSlides: G,
-					title: j._("Previous", null, {
+				})), !e.shouldBlur && n.a.createElement(n.a.Fragment, null, n.a.createElement(L, {
+					onClick: de,
+					setFocusTo: z,
+					hasMoreSlides: $,
+					title: S._("Previous", null, {
 						hk: "3dZcTi"
 					}),
-					iconClassName: T.a.prevIcon,
-					className: T.a.prevButton
-				}), n.a.createElement(N, {
-					onClick: re,
-					setFocusTo: K,
-					hasMoreSlides: $,
-					title: j._("Next", null, {
+					iconClassName: j.a.prevIcon,
+					className: j.a.prevButton
+				}), n.a.createElement(L, {
+					onClick: ae,
+					setFocusTo: z,
+					hasMoreSlides: J,
+					title: S._("Next", null, {
 						hk: "3Ajk1H"
 					}),
-					iconClassName: T.a.nextIcon,
-					className: T.a.nextButton
-				}))), h.length > 1 ? n.a.createElement(P, {
-					currentSlide: U + 1,
+					iconClassName: j.a.nextIcon,
+					className: j.a.nextButton
+				}))), h.length > 1 ? n.a.createElement(_, {
+					currentSlide: G + 1,
 					totalSlides: h.length,
-					toggleTileLayout: V && oe || void 0
-				}) : ""), !le && !ce || S || H ? !!s && !S && !H && n.a.createElement("div", {
-					className: T.a.emptyCaptionBlock,
+					toggleTileLayout: H && re || void 0
+				}) : ""), !ce && !ue || M || W ? !!s && !M && !W && n.a.createElement("div", {
+					className: j.a.emptyCaptionBlock,
 					style: {
 						height: s
 					}
-				}) : n.a.createElement(L, {
-					caption: le,
-					onClickEvent: de,
-					outboundUrl: ce,
+				}) : n.a.createElement(P, {
+					caption: ce,
+					onClickEvent: le,
+					outboundUrl: ue,
 					captionHeight: s
 				}))
 			}
@@ -1571,7 +1573,7 @@
 						Oe = this.shouldBlur(),
 						we = !((null === (e = T.pollData) || void 0 === e ? void 0 : e.isPrediction) && !d),
 						Ie = !(!T.isSponsored || !T.source),
-						Te = Object(ce.sb)() || "",
+						Te = Object(ce.tb)() || "",
 						je = T.isSponsored ? Object(W.b)(T.id, {
 							fireAdPixelsOfType: o,
 							openPost: I
@@ -2193,7 +2195,7 @@
 				r = s("./src/reddit/selectors/telemetry.ts");
 			const a = (e, t, s) => ({
 					gallery: r.r(e, t, s),
-					post: r.I(e, t),
+					post: r.J(e, t),
 					...r.n(e)
 				}),
 				d = (e, t) => s => ({
@@ -2382,4 +2384,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~ModerationPages~PostCreation~Profile~9a5d9fab.b17ad049c5717f177399.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~ModerationPages~PostCreation~Profile~9a5d9fab.5d451c988d408375675d.js.map

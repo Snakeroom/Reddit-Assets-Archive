@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostSetPage.25b7ac9e842f8f336411.js
-// Retrieved at 8/4/2022, 2:20:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostSetPage.e3954d42b553de98ab8e.js
+// Retrieved at 8/4/2022, 7:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostSetPage"], {
 		"./node_modules/intersection-observer/intersection-observer.js": function(e, t) {
@@ -1302,7 +1302,7 @@
 							actionInfo: Object(l.d)(t, {
 								paneName: "profile_about"
 							}),
-							profile: l.R(t),
+							profile: l.S(t),
 							trophy: e
 						}))({
 							id: t.id,
@@ -2008,7 +2008,7 @@
 					source: r.COMMUNITY_WIDGETS,
 					action: i.c.CLICK,
 					noun: s.SEE_MORE,
-					widget: Object(o.vb)(n, {
+					widget: Object(o.wb)(n, {
 						subredditId: e,
 						widgetKind: t
 					}),
@@ -2018,8 +2018,8 @@
 					source: r.POST,
 					action: i.c.CLICK,
 					noun: s.REREDDIT_PROMO,
-					post: o.I(n, e),
-					subreddit: o.hb(n),
+					post: o.J(n, e),
+					subreddit: o.ib(n),
 					...t && {
 						banner: {
 							buttonText: t,
@@ -2449,4 +2449,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostSetPage.25b7ac9e842f8f336411.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostSetPage.e3954d42b553de98ab8e.js.map

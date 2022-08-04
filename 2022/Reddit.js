@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Reddit.5ec682214d7efb4e1cb0.js
-// Retrieved at 8/4/2022, 3:30:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Reddit.9720a3c735bbba30a198.js
+// Retrieved at 8/4/2022, 7:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Reddit"], {
 		"./assets/fonts/BentonSans/font.less": function(e, t, n) {},
@@ -2449,7 +2449,7 @@
 						sort: s,
 						source: r
 					}),
-					userSubreddit: Object(N.rb)(o)
+					userSubreddit: Object(N.sb)(o)
 				}),
 				M = (e, t) => n => ({
 					source: "comment_highlighting",
@@ -2457,8 +2457,8 @@
 					noun: e
 				}),
 				I = e => ({
-					subreddit: Object(N.hb)(e),
-					userSubreddit: Object(N.rb)(e)
+					subreddit: Object(N.ib)(e),
+					userSubreddit: Object(N.sb)(e)
 				}),
 				A = e => t => ({
 					source: "contest_mode",
@@ -4311,7 +4311,7 @@
 										type: "subreddit"
 									}
 								}) ? "subscribe" : "unsubscribe",
-								post: n ? M.I(e, n.id) : void 0,
+								post: n ? M.J(e, n.id) : void 0,
 								subreddit: t
 							}
 						})
@@ -6564,10 +6564,10 @@
 					const t = Object(r.o)(e);
 					return {
 						actionInfo: Object(o.d)(e),
-						post: t && Object(o.I)(e, t) || null,
-						profile: Object(o.R)(e),
-						screen: Object(o.Z)(e),
-						subreddit: Object(o.hb)(e)
+						post: t && Object(o.J)(e, t) || null,
+						profile: Object(o.S)(e),
+						screen: Object(o.ab)(e),
+						subreddit: Object(o.ib)(e)
 					}
 				},
 				i = e => t => ({
@@ -6672,10 +6672,10 @@
 						source: "comment_composer",
 						action: s.c.CLICK,
 						...Object(c.n)(e),
-						screen: Object(c.Z)(e),
-						subreddit: Object(c.hb)(e),
-						post: t ? Object(c.I)(e, t) : null,
-						profile: Object(c.R)(e),
+						screen: Object(c.ab)(e),
+						subreddit: Object(c.ib)(e),
+						post: t ? Object(c.J)(e, t) : null,
+						profile: Object(c.S)(e),
 						correlationId: Object(r.c)(r.a.CommentComposer)
 					}
 				},
@@ -6730,9 +6730,9 @@
 					noun: "delete",
 					action: "click",
 					...Object(c.n)(t),
-					screen: Object(c.Z)(t),
-					subreddit: Object(c.hb)(t),
-					post: Object(c.I)(t, e)
+					screen: Object(c.ab)(t),
+					subreddit: Object(c.ib)(t),
+					post: Object(c.J)(t, e)
 				}), g = e => Object(l.a)({
 					noun: "edit",
 					...d(e)
@@ -6849,8 +6849,8 @@
 					return {
 						...Object(r.h)(e, t),
 						correlationId: Object(s.d)(s.a.GoldPayment, !1),
-						profile: o.R(e),
-						subreddit: o.hb(e)
+						profile: o.S(e),
+						subreddit: o.ib(e)
 					}
 				},
 				c = (e, t) => n => ({
@@ -6904,9 +6904,9 @@
 			n("./src/reddit/constants/categories.tsx");
 			var s = n("./src/reddit/selectors/telemetry.ts");
 			const r = e => ({
-					screen: s.Z(e),
-					profile: s.R(e),
-					subreddit: s.hb(e)
+					screen: s.ab(e),
+					profile: s.S(e),
+					subreddit: s.ib(e)
 				}),
 				o = e => t => ({
 					action: "click",
@@ -7313,7 +7313,7 @@
 					source: "shortcuts",
 					action: "submit",
 					noun: e,
-					post: s.I(n, t)
+					post: s.J(n, t)
 				}),
 				a = (e, t) => n => ({
 					source: "shortcuts",
@@ -7367,9 +7367,9 @@
 				r = n("./src/reddit/selectors/telemetry.ts"),
 				o = n("./src/reddit/selectors/user.ts");
 			const a = e => ({
-					screen: r.Z(e),
-					profile: r.R(e),
-					subreddit: r.hb(e)
+					screen: r.ab(e),
+					profile: r.S(e),
+					subreddit: r.ib(e)
 				}),
 				i = e => t => ({
 					source: "user_dropdown",
@@ -8310,7 +8310,7 @@
 						source: "user_flair_picker",
 						action: "click",
 						noun: e,
-						subreddit: Object(dn.ib)(t, this.props.subredditId)
+						subreddit: Object(dn.jb)(t, this.props.subredditId)
 					})), this.setSelectedFlair = e => this.setState({
 						previewFlair: e
 					}), this.onApply = () => {
@@ -8510,9 +8510,9 @@
 						action: "click",
 						noun: s,
 						comment: n && Object(dn.h)(r, n),
-						post: n && Object(dn.I)(r, n),
-						screen: Object(dn.Z)(r),
-						subreddit: Object(dn.ib)(r, t)
+						post: n && Object(dn.J)(r, n),
+						screen: Object(dn.ab)(r),
+						subreddit: Object(dn.jb)(r, t)
 					}));
 					return m.a.createElement(u.Fragment, null, s && n && m.a.createElement(Tt.a, {
 						contextId: n.contextId,
@@ -11638,7 +11638,7 @@
 					const a = n();
 					let i;
 					if (Ta(a)) {
-						const t = dn.bb(a, Ia.a.Typeahead),
+						const t = dn.cb(a, Ia.a.Typeahead),
 							n = Object(O.kb)(a);
 						i = await Da(o, e, t, n)
 					} else i = await La(r, e);
@@ -13426,8 +13426,8 @@
 								source: "redesignbanner",
 								action: "click",
 								noun: "2xdropdown_visit_old",
-								screen: dn.Z(e),
-								subreddit: dn.hb(e)
+								screen: dn.ab(e),
+								subreddit: dn.ib(e)
 							}))
 						}
 					}) : null)
@@ -16632,7 +16632,7 @@
 				Qf = e => {
 					const {
 						base_url: t
-					} = Object(dn.Y)(e), n = Object(jn.b)(e), s = n && n.urlParams.partialPostId, r = n && n.urlParams.subredditName;
+					} = Object(dn.Z)(e), n = Object(jn.b)(e), s = n && n.urlParams.partialPostId, r = n && n.urlParams.subredditName;
 					return {
 						...t && {
 							rbl: t
@@ -19854,4 +19854,4 @@
 		["./src/reddit/index.tsx", "runtime~Reddit", "vendors~CommentsPage~ModerationPages~Reddit~reddit-components-ClassicPost~reddit-components-CompactP~d737df3e", "vendors~CommentsPage~Governance~ModListing~ModerationPages~Reddit~Subreddit", "vendors~Chat~Governance~Reddit", "vendors~Reddit", "CommentsPage~Governance~Reddit~ReportFlow~Subreddit~reddit-components-BlankPost~reddit-components-Cl~5351df81", "PostCreation~Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~r~4c415e24", "Governance~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compo~bd4baca2", "Governance~ModListing~Reddit~ReportFlow~Subreddit", "Chat~Governance~Reddit", "Governance~Reddit~Subreddit", "Governance~Reddit~SubredditForkingCTA", "Governance~Reddit", "Reddit~StandalonePostPage", "AuthorHovercard~Reddit"]
 	]
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit.5ec682214d7efb4e1cb0.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit.9720a3c735bbba30a198.js.map

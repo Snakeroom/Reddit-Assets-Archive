@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~CountryPage~FramedGild~GildModal~GovernanceReleaseNotesModal~Mem~c8b748a6.6c85f026266b76b462ce.js
-// Retrieved at 8/4/2022, 1:30:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~CountryPage~FramedGild~GildModal~GovernanceReleaseNotesModal~Mem~c8b748a6.09257777defc59ce61da.js
+// Retrieved at 8/4/2022, 7:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~CountryPage~FramedGild~GildModal~GovernanceReleaseNotesModal~Mem~c8b748a6"], {
 		"./src/lib/colors/constants.ts": function(e, t, s) {
@@ -1204,16 +1204,17 @@
 				Ze = s("./src/reddit/components/HTML5StreamPlayer/VideoOverlay/index.m.less"),
 				Ke = s.n(Ze),
 				Je = G.a.div("Component", Ke.a),
-				Qe = s("./node_modules/@reddit/adblock-detection/browser.js"),
-				qe = s("./src/reddit/components/HTML5StreamPlayer/index.m.less"),
-				Xe = s.n(qe);
+				Qe = s("./src/higherOrderComponents/withAdClickLocation/Locations.ts"),
+				qe = s("./node_modules/@reddit/adblock-detection/browser.js"),
+				Xe = s("./src/reddit/components/HTML5StreamPlayer/index.m.less"),
+				$e = s.n(Xe);
 			! function(e) {
 				e[e.SeekBar = 0] = "SeekBar", e[e.Settings = 1] = "Settings", e[e.Volume = 2] = "Volume"
 			}(Ge || (Ge = {}));
-			const $e = 3e3,
-				et = 6e3,
-				tt = 100,
-				st = Object(d.b)(() => Object(h.c)({
+			const et = 3e3,
+				tt = 6e3,
+				st = 100,
+				it = Object(d.b)(() => Object(h.c)({
 					isLoggedIn: D.Q,
 					autoplayPref: D.b,
 					currentTime: U.c,
@@ -1289,7 +1290,7 @@
 						setMutedInFeed: t => e(P.G(t))
 					}
 				});
-			class it extends l.Component {
+			class at extends l.Component {
 				constructor(e) {
 					var t;
 					super(e), t = this, this.percentagePixelsFired = {
@@ -1399,7 +1400,7 @@
 							case Ge.SeekBar:
 								if (s) {
 									this.setState({
-										ignoreUnderrunsUntil: Date.now() + tt
+										ignoreUnderrunsUntil: Date.now() + st
 									}), s.handleMouseUp(e), this.sendEvent("click", "seek");
 									const t = this.HTML5StreamPlayerVideo;
 									this.state.videoEnded && t && t.currentTime < t.duration && this.playVideo()
@@ -1441,7 +1442,7 @@
 								})
 						}
 					}, this.handleClick = e => {
-						e.stopPropagation()
+						this.props.isSponsored || e.stopPropagation()
 					}, this.setContainerRef = e => this.HTML5StreamPlayerContainer = e, this.setControlBarRef = e => this.controlBar = e, this.setControlBarApi = e => this.controlBarApi = e, this.setVolumeRef = e => this.volumeControl = e, this.setSeekBarRef = e => this.seekBar = e, this.setSettingRef = e => this.settingControl = e, this.onCanPlay = () => {
 						if (this.HTML5StreamPlayerVideo && !this.state.videoLoaded) {
 							if (this.setState({
@@ -1456,7 +1457,7 @@
 						} = this;
 						e && clearTimeout(e)
 					}, this.resetControlBarFadeTimer = function() {
-						let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : $e;
+						let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : et;
 						t.clearControlBarFadeTimer(), t.setState({
 							hideControlBar: !1
 						}), t.controlBarFadeTimer = window.setTimeout(() => {
@@ -1505,7 +1506,7 @@
 						}))
 					}, this.resetVideo = e => {
 						this.isUnobscured() && this.state.videoEnded && (this.restartVideo(), this.sendEvent("click", "replay"), this.setState({
-							ignoreUnderrunsUntil: Date.now() + tt,
+							ignoreUnderrunsUntil: Date.now() + st,
 							videoEnded: !1,
 							videoManualPaused: !1
 						}), this.props.onVideoReset())
@@ -1690,7 +1691,7 @@
 				}
 				shouldAutoplay() {
 					let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : this.props;
-					return !!e.autoPlay && this.autoplayPref(e) && (e.isCommentsPage || !(e.isAdblockAAMitigationEnabled && e.isSponsored && Object(Qe.hasAcceptableAds)()))
+					return !!e.autoPlay && this.autoplayPref(e) && (e.isCommentsPage || !(e.isAdblockAAMitigationEnabled && e.isSponsored && Object(qe.hasAcceptableAds)()))
 				}
 				isUnobscured() {
 					let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : this.props;
@@ -1707,7 +1708,7 @@
 					return this.shouldAutoplay(e) && this.isUnobscured(e) && this.isInViewport(e, t)
 				}
 				componentDidMount() {
-					it.dashjs || (it.dashjs = Object(f.a)(() => s.e("vendors~dashjs").then(s.t.bind(null, "./node_modules/dashjs/dist/dash.all.debug.js", 7)))), it.dashjs.then(e => {
+					at.dashjs || (at.dashjs = Object(f.a)(() => s.e("vendors~dashjs").then(s.t.bind(null, "./node_modules/dashjs/dist/dash.all.debug.js", 7)))), at.dashjs.then(e => {
 						var t, s;
 						const i = this.HTML5StreamPlayerVideo,
 							a = this.props.mpegDashSource;
@@ -1751,7 +1752,7 @@
 								if (null != this.props.postId && Date.now() > this.state.ignoreUnderrunsUntil) {
 									const e = N.c(this.props.postId);
 									this.props.sendEvent(e), this.setState({
-										ignoreUnderrunsUntil: Date.now() + tt
+										ignoreUnderrunsUntil: Date.now() + st
 									})
 								}
 							}), i.addEventListener("error", this.resetMediaPlayer), null === (s = (t = this.props).onDashCreate) || void 0 === s || s.call(t, this.dashPlayer)
@@ -1824,8 +1825,8 @@
 					this.state.usingKeys || this.setState({
 						usingKeys: !0
 					});
-					let t = et;
-					this.state.settingChange === Ge.Settings && (t = 5 * et), this.resetControlBarFadeTimer(t)
+					let t = tt;
+					this.state.settingChange === Ge.Settings && (t = 5 * tt), this.resetControlBarFadeTimer(t)
 				}
 				setBuffered() {
 					const e = this.HTML5StreamPlayerVideo;
@@ -1892,7 +1893,7 @@
 					};
 					return c.a.createElement(Ye, {
 						setRef: this.setContainerRef,
-						className: Object(u.a)(e, this.state.videoFullScreen ? Xe.a.RedditVideoPlayerRoot__Fullscreen : Xe.a.RedditVideoPlayerRoot, this.state.usingKeys ? "using-keys" : null),
+						className: Object(u.a)(e, this.state.videoFullScreen ? $e.a.RedditVideoPlayerRoot__Fullscreen : $e.a.RedditVideoPlayerRoot, this.state.usingKeys ? "using-keys" : null),
 						isVisible: b,
 						onClick: this.handleClick,
 						onKeyDown: this.handleKeyDown,
@@ -1901,7 +1902,9 @@
 						onMouseEnter: this.handleMouseEnter,
 						onMouseLeave: this.handleMouseLeave,
 						onMouseMove: this.handleMouseMove,
-						onMouseUp: this.handleMouseUp
+						onMouseUp: this.handleMouseUp,
+						"data-adclicklocation": Qe.a.MEDIA,
+						"data-isvideoplayer": 1
 					}, this.props.blurImageSrc && c.a.createElement(Y, {
 						src: this.props.blurImageSrc
 					}), !x && !g && c.a.createElement("div", {
@@ -1910,7 +1913,7 @@
 							backgroundImage: `url(${this.props.posterUrl})`,
 							zIndex: 10
 						},
-						className: this.state.videoFullScreen ? Xe.a.HTML5StreamPlayer__VideoFullscreen : Xe.a.HTML5StreamPlayer__VideoRegular
+						className: this.state.videoFullScreen ? $e.a.HTML5StreamPlayer__VideoFullscreen : $e.a.HTML5StreamPlayer__VideoRegular
 					}), c.a.createElement("video", {
 						style: {
 							backgroundColor: m.b
@@ -1920,7 +1923,7 @@
 						onTimeUpdate: this.updateTime,
 						preload: "metadata",
 						ref: this.combinedVideoRefs,
-						className: this.state.videoFullScreen ? Xe.a.HTML5StreamPlayer__VideoFullscreen : Xe.a.HTML5StreamPlayer__VideoRegular
+						className: this.state.videoFullScreen ? $e.a.HTML5StreamPlayer__VideoFullscreen : $e.a.HTML5StreamPlayer__VideoRegular
 					}, this.props.hlsSource && c.a.createElement("source", {
 						src: this.props.hlsSource,
 						type: "application/vnd.apple.mpegURL"
@@ -1967,7 +1970,7 @@
 					}))
 				}
 			}
-			t.b = st(Object(L.c)(Object(B.b)(it)))
+			t.b = it(Object(L.c)(Object(B.b)(at)))
 		},
 		"./src/reddit/components/Media/LoadingIcon/index.m.less": function(e, t, s) {
 			e.exports = {
@@ -2685,4 +2688,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~CountryPage~FramedGild~GildModal~GovernanceReleaseNotesModal~Mem~c8b748a6.6c85f026266b76b462ce.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~CountryPage~FramedGild~GildModal~GovernanceReleaseNotesModal~Mem~c8b748a6.09257777defc59ce61da.js.map

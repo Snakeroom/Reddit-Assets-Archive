@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CrosspostRecommendationsModal.878d2bdaa7b4df78a21e.js
-// Retrieved at 8/1/2022, 10:20:09 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CrosspostRecommendationsModal.6ab7dcf7cf5fabbbae99.js
+// Retrieved at 8/4/2022, 7:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CrosspostRecommendationsModal"], {
 		"./src/reddit/components/CrosspostRecommendationsModal/index.m.less": function(e, t, s) {
@@ -63,8 +63,8 @@
 							action: b.c.CLICK,
 							noun: "close",
 							source: x,
-							post: Object(p.I)(t, e),
-							subreddit: Object(p.hb)(t)
+							post: Object(p.J)(t, e),
+							subreddit: Object(p.ib)(t)
 						}))(s.id)), t()
 					}, [s.id]),
 					N = Object(n.useCallback)(e => {
@@ -77,8 +77,8 @@
 							action: b.c.CLICK,
 							noun: "other_communities",
 							source: x,
-							post: Object(p.I)(t, e),
-							subreddit: Object(p.hb)(t)
+							post: Object(p.J)(t, e),
+							subreddit: Object(p.ib)(t)
 						}))(s.id)), a(Object(o.b)(`${E.b}?source_id=${s.id}`))
 					}, [s.id]);
 				return _ ? (t(), null) : r.a.createElement(c.e, null, r.a.createElement(c.i, {
@@ -509,4 +509,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CrosspostRecommendationsModal.878d2bdaa7b4df78a21e.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CrosspostRecommendationsModal.6ab7dcf7cf5fabbbae99.js.map

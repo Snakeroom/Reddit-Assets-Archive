@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-ModHub-Content-ModQueue.6d5171fa59bf27b41d3a.js
-// Retrieved at 8/4/2022, 2:20:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-ModHub-Content-ModQueue.a2f2f293308938e4fdbb.js
+// Retrieved at 8/4/2022, 7:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-ModHub-Content-ModQueue"], {
 		"./src/reddit/components/Comments/CompactUnthreadedComment/index.m.less": function(e, t, s) {
@@ -174,8 +174,8 @@
 							source: "layout_switch",
 							action: "click",
 							noun: e,
-							screen: Object(k.Z)(t),
-							subreddit: Object(k.hb)(t)
+							screen: Object(k.ab)(t),
+							subreddit: Object(k.ib)(t)
 						})))
 					}, this.renderItem = (e, t) => {
 						const {
@@ -267,7 +267,7 @@
 							source: "modqueue",
 							action: "view",
 							noun: "cc_banner",
-							subreddit: h.hb(e),
+							subreddit: h.ib(e),
 							...h.n(e)
 						}))())
 					}, [o]);
@@ -294,7 +294,7 @@
 								source: "modqueue",
 								action: "click",
 								noun: "cc_banner",
-								subreddit: h.hb(e),
+								subreddit: h.ib(e),
 								...h.n(e)
 							}))())
 						}
@@ -308,7 +308,7 @@
 								source: "modqueue",
 								action: "dismiss",
 								noun: "cc_banner",
-								subreddit: h.hb(e),
+								subreddit: h.ib(e),
 								...h.n(e)
 							}))()), s()
 						},
@@ -1573,4 +1573,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ModHub-Content-ModQueue.6d5171fa59bf27b41d3a.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ModHub-Content-ModQueue.a2f2f293308938e4fdbb.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ClaimFreeAwardModal.f33a48e510260a295d9d.js
-// Retrieved at 8/3/2022, 12:40:06 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ClaimFreeAwardModal.20cba6649f91b1025520.js
+// Retrieved at 8/4/2022, 7:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ClaimFreeAwardModal"], {
 		"./src/reddit/actions/economics/powerups/helpers.ts": function(e, t, r) {
@@ -205,8 +205,8 @@
 						offerContext: o.a.StorefrontFreeAward
 					}),
 					correlationId: Object(n.d)(n.a.GoldPayment, !1),
-					profile: s.R(e),
-					subreddit: s.hb(e)
+					profile: s.S(e),
+					subreddit: s.ib(e)
 				}),
 				c = () => e => ({
 					source: "free_award_offer",
@@ -312,4 +312,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ClaimFreeAwardModal.f33a48e510260a295d9d.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ClaimFreeAwardModal.20cba6649f91b1025520.js.map

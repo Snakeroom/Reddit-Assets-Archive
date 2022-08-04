@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostDetailStickyHeader.472b8f46d151cf9b01f3.js
-// Retrieved at 8/3/2022, 12:40:06 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostDetailStickyHeader.10f69b988c3f15418974.js
+// Retrieved at 8/4/2022, 7:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostDetailStickyHeader"], {
 		"./src/reddit/actions/shortcuts/close.ts": function(t, e, s) {
@@ -183,7 +183,7 @@
 				M = s("./src/reddit/contexts/Post/index.tsx"),
 				P = s("./src/reddit/components/LightboxHeader/index.m.less"),
 				A = s.n(P);
-			const I = Object(a.c)({
+			const D = Object(a.c)({
 					subreddit: (t, e) => {
 						let {
 							page: s,
@@ -213,7 +213,7 @@
 						})
 					}
 				}),
-				D = Object(r.b)(I, (t, e) => {
+				I = Object(r.b)(D, (t, e) => {
 					let {
 						sendEvent: s
 					} = e;
@@ -273,7 +273,7 @@
 										type: "subreddit"
 									}
 								}) ? "subscribe" : "unsubscribe",
-								post: s ? B.I(t, s.id) : void 0,
+								post: s ? B.J(t, s.id) : void 0,
 								subreddit: e
 							}
 						})
@@ -377,7 +377,7 @@
 					hk: "4gbyAA"
 				})
 			}));
-			e.a = Object(_.c)(D(T))
+			e.a = Object(_.c)(I(T))
 		},
 		"./src/reddit/components/PostDetailStickyHeader/index.m.less": function(t, e, s) {
 			t.exports = {
@@ -472,7 +472,7 @@
 					source: "shortcuts",
 					action: "submit",
 					noun: t,
-					post: n.I(s, e)
+					post: n.J(s, e)
 				}),
 				r = (t, e) => s => ({
 					source: "shortcuts",
@@ -538,4 +538,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostDetailStickyHeader.472b8f46d151cf9b01f3.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostDetailStickyHeader.10f69b988c3f15418974.js.map

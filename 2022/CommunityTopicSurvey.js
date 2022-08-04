@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CommunityTopicSurvey.a1fab63950b95aaca64a.js
-// Retrieved at 8/4/2022, 2:20:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CommunityTopicSurvey.4221c565982d53a0df88.js
+// Retrieved at 8/4/2022, 7:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CommunityTopicSurvey"], {
 		"./node_modules/react-uid/dist/es2015/hooks.js": function(e, t, n) {
@@ -900,7 +900,7 @@
 				b = e => ({
 					...l.n(e),
 					source: s,
-					screen: l.Z(e),
+					screen: l.ab(e),
 					discoveryUnit: {
 						id: "xd_100",
 						name: r.SUBREDDIT_HOVERCARD,
@@ -945,8 +945,8 @@
 					if (!n || !Object(d.b)(n) && !Object(i.b)(n)) return {};
 					const r = Object(d.b)(n) ? n.belongsTo.id : n.subredditId;
 					return {
-						post: l.I(e, n.id),
-						subreddit: l.ib(e, r),
+						post: l.J(e, n.id),
+						subreddit: l.jb(e, r),
 						...p(e, t)
 					}
 				},
@@ -959,44 +959,44 @@
 					source: "global",
 					action: o.c.VIEW,
 					noun: r.SUBREDDIT_HOVERCARD,
-					subreddit: l.jb(t, e),
-					screen: l.Z(t)
+					subreddit: l.kb(t, e),
+					screen: l.ab(t)
 				}),
 				h = (e, t) => n => ({
 					...b(n),
 					source: s.DISCOVERY_UNIT,
 					action: o.c.VIEW,
 					noun: r.ITEM_POST,
-					post: l.I(n, t),
-					subreddit: l.jb(n, e),
-					screen: l.Z(n)
+					post: l.J(n, t),
+					subreddit: l.kb(n, e),
+					screen: l.ab(n)
 				}),
 				g = (e, t) => n => ({
 					...b(n),
 					source: s.DISCOVERY_UNIT,
 					action: o.c.CLICK,
 					noun: r.ITEM_POST,
-					post: l.I(n, t),
-					subreddit: l.jb(n, e),
-					screen: l.Z(n)
+					post: l.J(n, t),
+					subreddit: l.kb(n, e),
+					screen: l.ab(n)
 				}),
 				S = e => t => ({
 					...b(t),
-					subreddit: l.ib(t, e) || null,
+					subreddit: l.jb(t, e) || null,
 					source: s.DISCOVERY_UNIT,
 					action: o.c.CLICK,
 					noun: r.HEADER_SUBREDDIT
 				}),
 				E = e => t => ({
 					...b(t),
-					subreddit: l.ib(t, e) || null,
+					subreddit: l.jb(t, e) || null,
 					source: s.DISCOVERY_UNIT,
 					action: o.c.CLICK,
 					noun: r.HEADER_SUBREDDIT_SUBSCRIBE
 				}),
 				v = e => t => ({
 					...b(t),
-					subreddit: l.ib(t, e) || null,
+					subreddit: l.jb(t, e) || null,
 					source: s.DISCOVERY_UNIT,
 					action: o.c.CLICK,
 					noun: r.HEADER_SUBREDDIT_UNSUBSCRIBE
@@ -1100,4 +1100,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommunityTopicSurvey.a1fab63950b95aaca64a.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommunityTopicSurvey.4221c565982d53a0df88.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Topic.6af31e31ca7d60e22b8e.js
-// Retrieved at 8/4/2022, 2:20:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Topic.64bfb7be6499c5e6ba01.js
+// Retrieved at 8/4/2022, 7:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Topic"], {
 		"./node_modules/intersection-observer/intersection-observer.js": function(e, t) {
@@ -511,13 +511,13 @@
 						hk: "49uLRt"
 					})
 				},
-				N = Object(h.u)(),
-				w = Object(a.c)({
+				w = Object(h.u)(),
+				N = Object(a.c)({
 					dropdownIsOpen: Object(y.b)(C),
 					postLayout: h.S,
 					redditStyle: h.D
 				}),
-				I = Object(o.b)(w, e => ({
+				I = Object(o.b)(N, e => ({
 					onListingLayoutChange: (t, s) => e(Object(u.y)(t, s)),
 					openDropdown: () => e(Object(m.h)({
 						tooltipId: C
@@ -536,8 +536,8 @@
 							source: "layout_switch",
 							action: "click",
 							noun: e,
-							screen: Object(_.Z)(t),
-							subreddit: Object(_.hb)(t)
+							screen: Object(_.ab)(t),
+							subreddit: Object(_.ib)(t)
 						})))
 					}, this.renderItem = (e, t) => {
 						const {
@@ -597,7 +597,7 @@
 					}), i.a.createElement(g.a.Consumer, null, this.renderDropdown)))
 				}
 			}
-			t.a = N(I(Object(p.c)(Object(l.a)(P))))
+			t.a = w(I(Object(p.c)(Object(l.a)(P))))
 		},
 		"./src/reddit/components/ListingPostList/index.tsx": function(e, t, s) {
 			"use strict";
@@ -995,12 +995,12 @@
 					gradientType: "posts",
 					isLoading: !0
 				})
-			}), N = Object(c.c)({
+			}), w = Object(c.c)({
 				isEditing: f.i,
 				isSubscriptionsPinned: x.b,
 				moderatorPermissions: g.n
 			});
-			t.a = Object(a.b)(N)(e => {
+			t.a = Object(a.b)(w)(e => {
 				const t = e.moderatorPermissions && r()(e.moderatorPermissions).some(e => e);
 				return e.moderatorPermissions && t && e.isEditing ? o.a.createElement("div", {
 					className: Object(l.a)(_.a.Container, e.isSubscriptionsPinned && _.a.isSubscriptionPinned)
@@ -1218,11 +1218,11 @@
 				}
 			}
 			var L = Object(b.b)(k)(Object(d.c)(j)),
-				N = s("./src/reddit/helpers/styles/mixins/loading.ts");
-			var w = e => {
+				w = s("./src/reddit/helpers/styles/mixins/loading.ts");
+			var N = e => {
 					const {
 						className: t
-					} = e, s = Object(N.b)({
+					} = e, s = Object(w.b)({
 						isLoading: !0
 					});
 					return r.a.createElement("div", {
@@ -1247,7 +1247,7 @@
 				fbt: R
 			} = s("./node_modules/fbt/lib/FbtPublic.js"), F = 8, W = Array.from({
 				length: F
-			}).map((e, t) => r.a.createElement(w, {
+			}).map((e, t) => r.a.createElement(N, {
 				className: P.a.Subreddit,
 				key: t
 			})), B = {
@@ -1565,14 +1565,14 @@
 					} = n;
 					return Object(h.k)(e, t, "post", r, i, o, void 0)
 				},
-				N = Object(n.b)(C, k, (e, t, s) => ({
+				w = Object(n.b)(C, k, (e, t, s) => ({
 					...e,
 					...t,
 					...s,
 					postComponentForLayout: j,
 					postClickEventFactory: L
 				}));
-			t.a = e => Object(m.c)(S(N(e)))
+			t.a = e => Object(m.c)(S(w(e)))
 		},
 		"./src/reddit/contexts/Tooltip.ts": function(e, t, s) {
 			"use strict";
@@ -1645,7 +1645,7 @@
 					source: r.COMMUNITY_WIDGETS,
 					action: i.c.CLICK,
 					noun: n.SEE_MORE,
-					widget: Object(o.vb)(s, {
+					widget: Object(o.wb)(s, {
 						subredditId: e,
 						widgetKind: t
 					}),
@@ -1655,8 +1655,8 @@
 					source: r.POST,
 					action: i.c.CLICK,
 					noun: n.REREDDIT_PROMO,
-					post: o.I(s, e),
-					subreddit: o.hb(s),
+					post: o.J(s, e),
+					subreddit: o.ib(s),
 					...t && {
 						banner: {
 							buttonText: t,
@@ -1926,8 +1926,8 @@
 				k = s("./src/reddit/contexts/PageLayer/index.tsx"),
 				j = s("./src/reddit/helpers/trackers/screenview.ts"),
 				L = s("./src/reddit/layout/page/Listing/index.tsx"),
-				N = s("./src/reddit/pages/ErrorPages/index.tsx"),
-				w = s("./node_modules/react-router-dom/esm/react-router-dom.js"),
+				w = s("./src/reddit/pages/ErrorPages/index.tsx"),
+				N = s("./node_modules/react-router-dom/esm/react-router-dom.js"),
 				I = s("./src/reddit/controls/Button/index.tsx"),
 				P = s("./src/reddit/pages/Topic/TopicHeader/TopicTab/index.m.less"),
 				R = s.n(P);
@@ -2072,7 +2072,7 @@
 						namePlural: e,
 						relatedTopics: t
 					} = this.props.relationship;
-					return t.length < q ? null : r.a.createElement(w.a, {
+					return t.length < q ? null : r.a.createElement(N.a, {
 						onClick: this.onClick,
 						to: "#"
 					}, r.a.createElement(I.r, {
@@ -2262,7 +2262,7 @@
 				ke = s.n(Ce);
 			const {
 				fbt: je
-			} = s("./node_modules/fbt/lib/FbtPublic.js"), Le = Object(k.u)(), Ne = (e, t) => t.match.params.sort || a.X, we = e => {
+			} = s("./node_modules/fbt/lib/FbtPublic.js"), Le = Object(k.u)(), we = (e, t) => t.match.params.sort || a.X, Ne = e => {
 				const t = [];
 				return e ? (e.hasPosts && t.push(V.Posts), e.hasSubreddits && t.push(V.Communities), e.childRelationships.length && t.push(V.RelatedTopics), t) : t
 			}, Ie = Object(d.b)(() => Object(i.a)((e, t) => Object(Oe.d)(e, t.match.params.topicSlug), (e, t) => Object(Oe.e)(e, {
@@ -2273,7 +2273,7 @@
 				topicSlug: t.match.params.topicSlug
 			}), (e, t) => Object(Oe.b)(e, {
 				topicSlug: t.match.params.topicSlug
-			}), k.S, Ne, e => {
+			}), k.S, we, e => {
 				var t;
 				return null === (t = e.platform.currentPage) || void 0 === t ? void 0 : t.status
 			}, (e, t, s, n, r, i, o, a) => ({
@@ -2282,7 +2282,7 @@
 				siblingRelatedTopics: r,
 				sort: o,
 				status: a || 200,
-				tabs: we(s),
+				tabs: Ne(s),
 				timeSort: void 0,
 				topic: s,
 				topicName: e,
@@ -2360,8 +2360,8 @@
 						activeRelationshipIndex: g,
 						activeTab: f
 					} = this.state, x = O.b.Topic;
-					if (404 === i) return r.a.createElement(N.b, null);
-					if (500 === i) return r.a.createElement(N.b, {
+					if (404 === i) return r.a.createElement(w.b, null);
+					if (500 === i) return r.a.createElement(w.b, {
 						message: je._("Sorry, for some reason reddit can't be reached.", null, {
 							hk: "3SZaDI"
 						})
@@ -2403,7 +2403,7 @@
 						}))),
 						k = f !== V.RelatedTopics,
 						j = f !== V.Communities && a.includes(V.Communities),
-						w = r.a.createElement("div", {
+						N = r.a.createElement("div", {
 							className: ke.a.WidgetsContainer
 						}, j && r.a.createElement(S.a, {
 							onSeeMoreCommunities: this.openCommunitiesTab,
@@ -2425,7 +2425,7 @@
 							key: "right",
 							className: ke.a.SidebarRight,
 							listingName: x
-						}, w)],
+						}, N)],
 						navBar: r.a.createElement(G, {
 							activeTab: f,
 							layout: h,
@@ -2587,4 +2587,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Topic.6af31e31ca7d60e22b8e.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Topic.64bfb7be6499c5e6ba01.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Geotagging.ab78926aad0cbf531d1e.js
-// Retrieved at 8/4/2022, 2:20:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Geotagging.b4b1a2dc980a854730ef.js
+// Retrieved at 8/4/2022, 7:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Geotagging"], {
 		"./node_modules/p-debounce/index.js": function(e, t, s) {
@@ -912,14 +912,14 @@
 						className: j.a.SubscribeButton
 					}))
 				},
-				I = s("./src/reddit/components/TopicSidebar/SubredditList/index.m.less"),
-				L = s.n(I);
+				L = s("./src/reddit/components/TopicSidebar/SubredditList/index.m.less"),
+				I = s.n(L);
 			const {
 				fbt: G
 			} = s("./node_modules/fbt/lib/FbtPublic.js"), F = 8, R = Array.from({
 				length: F
 			}).map((e, t) => r.a.createElement(w, {
-				className: L.a.Subreddit,
+				className: I.a.Subreddit,
 				key: t
 			})), B = {
 				enabled: !0,
@@ -943,24 +943,24 @@
 						topicUrl: s
 					} = this.props, n = t.slice(0, F);
 					return r.a.createElement(o.a, {
-						className: Object(a.a)(L.a.Container, e)
+						className: Object(a.a)(I.a.Container, e)
 					}, r.a.createElement("div", {
-						className: L.a.Title
+						className: I.a.Title
 					}, r.a.createElement(d.b, {
 						type: d.a.Widget
 					}, G._("Top Communities", null, {
 						hk: "46yzcK"
 					}))), r.a.createElement("div", {
-						className: L.a.SubredditList
+						className: I.a.SubredditList
 					}, n.length > 0 ? n.map(e => r.a.createElement(T, {
-						className: L.a.Subreddit,
+						className: I.a.Subreddit,
 						discoveryUnit: B,
 						key: e,
 						subredditId: e
 					})) : R), t.length > F && r.a.createElement(i.a, {
 						to: s
 					}, r.a.createElement(l.r, {
-						className: L.a.SeeMore,
+						className: I.a.SeeMore,
 						onClick: this.onSeeMoreCommunities
 					}, G._("See more", null, {
 						hk: "2qkY6H"
@@ -1211,7 +1211,7 @@
 					source: r.COMMUNITY_WIDGETS,
 					action: i.c.CLICK,
 					noun: n.SEE_MORE,
-					widget: Object(a.vb)(s, {
+					widget: Object(a.wb)(s, {
 						subredditId: e,
 						widgetKind: t
 					}),
@@ -1221,8 +1221,8 @@
 					source: r.POST,
 					action: i.c.CLICK,
 					noun: n.REREDDIT_PROMO,
-					post: a.I(s, e),
-					subreddit: a.hb(s),
+					post: a.J(s, e),
+					subreddit: a.ib(s),
 					...t && {
 						banner: {
 							buttonText: t,
@@ -1422,10 +1422,10 @@
 				T = s("./src/reddit/components/SubredditIcon/index.tsx"),
 				P = s("./src/reddit/endpoints/geotagging/setSubredditGeoPlace.ts"),
 				w = s("./src/redditGQL/operations/SuggestSubredditGeoPlace.json"),
-				I = async (e, t) => Object(l.a)(e, {
+				L = async (e, t) => Object(l.a)(e, {
 					...w,
 					variables: Object(P.b)(t)
-				}), L = s("./src/reddit/helpers/graphql/normalizeSubredditFromGql/index.ts");
+				}), I = s("./src/reddit/helpers/graphql/normalizeSubredditFromGql/index.ts");
 			const G = "crowdsource",
 				F = {
 					pageType: "crowdsource_feed_geo"
@@ -1437,16 +1437,16 @@
 					source: G,
 					noun: "skip",
 					action: "click",
-					subreddit: Object(L.a)(e),
-					userSubreddit: Object(L.g)(e.modPermissions, e.isSubscribed),
+					subreddit: Object(I.a)(e),
+					userSubreddit: Object(I.g)(e.modPermissions, e.isSubscribed),
 					actionInfo: F
 				}),
 				M = e => () => ({
 					source: G,
 					noun: "location_field",
 					action: "click",
-					subreddit: Object(L.a)(e),
-					userSubreddit: Object(L.g)(e.modPermissions, e.isSubscribed),
+					subreddit: Object(I.a)(e),
+					userSubreddit: Object(I.g)(e.modPermissions, e.isSubscribed),
 					actionInfo: R
 				}),
 				A = Q("select_location"),
@@ -1460,8 +1460,8 @@
 					source: G,
 					noun: e,
 					action: "click",
-					subreddit: Object(L.a)(t),
-					userSubreddit: Object(L.g)(t.modPermissions, t.isSubscribed),
+					subreddit: Object(I.a)(t),
+					userSubreddit: Object(I.g)(t.modPermissions, t.isSubscribed),
 					actionInfo: {
 						...R,
 						reason: s
@@ -1474,8 +1474,8 @@
 					source: G,
 					noun: e,
 					action: "click",
-					subreddit: Object(L.a)(t),
-					userSubreddit: Object(L.g)(t.modPermissions, t.isSubscribed),
+					subreddit: Object(I.a)(t),
+					userSubreddit: Object(I.g)(t.modPermissions, t.isSubscribed),
 					actionInfo: {
 						...F,
 						reason: s
@@ -1524,7 +1524,7 @@
 					className: E.a.subredditTitle
 				}, r.a.createElement(T.b, {
 					className: E.a.icon,
-					subredditOrProfile: Object(L.a)(t),
+					subredditOrProfile: Object(I.a)(t),
 					linkTo: t.path
 				}), r.a.createElement(f.a, {
 					to: t.path
@@ -1564,7 +1564,7 @@
 						} = e;
 						if (!n) return;
 						u(!0);
-						const i = await I(a(), {
+						const i = await L(a(), {
 							subredditId: t.id,
 							placeId: n.id,
 							source: n.source,
@@ -1705,4 +1705,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Geotagging.ab78926aad0cbf531d1e.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Geotagging.b4b1a2dc980a854730ef.js.map

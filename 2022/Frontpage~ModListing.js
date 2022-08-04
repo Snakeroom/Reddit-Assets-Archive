@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Frontpage~ModListing.844d6dee18824a8ed627.js
-// Retrieved at 8/4/2022, 2:20:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Frontpage~ModListing.15a7dcea4d8cfba31c55.js
+// Retrieved at 8/4/2022, 7:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Frontpage~ModListing"], {
 		"./src/reddit/actions/focusedVerticals/index.ts": function(e, t, n) {
@@ -540,8 +540,8 @@
 							source: "layout_switch",
 							action: "click",
 							noun: e,
-							screen: Object(w.Z)(t),
-							subreddit: Object(w.hb)(t)
+							screen: Object(w.ab)(t),
+							subreddit: Object(w.ib)(t)
 						})))
 					}, this.renderItem = (e, t) => {
 						const {
@@ -2402,7 +2402,7 @@
 					source: r.COMMUNITY_WIDGETS,
 					action: o.c.CLICK,
 					noun: s.SEE_MORE,
-					widget: Object(a.vb)(n, {
+					widget: Object(a.wb)(n, {
 						subredditId: e,
 						widgetKind: t
 					}),
@@ -2412,8 +2412,8 @@
 					source: r.POST,
 					action: o.c.CLICK,
 					noun: s.REREDDIT_PROMO,
-					post: a.I(n, e),
-					subreddit: a.hb(n),
+					post: a.J(n, e),
+					subreddit: a.ib(n),
 					...t && {
 						banner: {
 							buttonText: t,
@@ -2668,4 +2668,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Frontpage~ModListing.844d6dee18824a8ed627.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Frontpage~ModListing.15a7dcea4d8cfba31c55.js.map
