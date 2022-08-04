@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.f1a281383f44fecbf79c.js
-// Retrieved at 8/4/2022, 3:00:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.4c61a8ae14798ea51e9e.js
+// Retrieved at 8/4/2022, 3:30:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Chat~Governance~Reddit"], {
 		"./assets/fonts/IBMPlexSans/font.less": function(e, t, i) {},
@@ -913,7 +913,7 @@
 					_ = Object(s.c)(o.p.CHAT, o.x.CHAT_SHOW_THEMES_PROMPT_COUNT_KEY, i || "unknown");
 					const n = Object(s.b)(_);
 					let r = null == n ? 0 : n;
-					Object(l.q)(t) && !Object(u.e)(t) && e.dispatch(Object(d.chatThemeShowPromptCountSetAction)(++r))
+					Object(l.r)(t) && !Object(u.e)(t) && e.dispatch(Object(d.chatThemeShowPromptCountSetAction)(++r))
 				});
 			t.a = e => {
 				if ("undefined" == typeof window) return a.a;
@@ -1580,66 +1580,88 @@
 				return n
 			})), i.d(t, "c", (function() {
 				return r
-			})), i.d(t, "d", (function() {
-				return c
-			})), i.d(t, "b", (function() {
-				return _
-			})), i.d(t, "a", (function() {
-				return m
-			})), i.d(t, "h", (function() {
-				return p
-			})), i.d(t, "g", (function() {
-				return h
 			})), i.d(t, "f", (function() {
-				return b
+				return s
+			})), i.d(t, "d", (function() {
+				return _
+			})), i.d(t, "b", (function() {
+				return p
+			})), i.d(t, "a", (function() {
+				return h
 			})), i.d(t, "i", (function() {
+				return f
+			})), i.d(t, "h", (function() {
+				return b
+			})), i.d(t, "g", (function() {
 				return w
+			})), i.d(t, "j", (function() {
+				return y
 			}));
-			var n, r, s = i("./node_modules/fbt/lib/FbtPublic.js"),
-				o = i("./src/chat/constants/channels.ts"),
-				d = i("./src/chat/models/Channel/utils.ts"),
-				a = i("./src/chat/models/Message/index.ts"),
-				l = i("./src/chat/models/User/inviter.ts"),
-				u = i("./src/chat/models/User/member.ts");
+			var n, r, s, o = i("./node_modules/fbt/lib/FbtPublic.js"),
+				d = i("./src/chat/constants/channels.ts"),
+				a = i("./src/chat/models/Channel/utils.ts"),
+				l = i("./src/chat/models/Message/index.ts"),
+				u = i("./src/chat/models/User/inviter.ts"),
+				c = i("./src/chat/models/User/member.ts");
 			! function(e) {
 				e.Invited = "invited", e.Joined = "joined"
 			}(n || (n = {})),
 			function(e) {
 				e.ALL = "All", e.DirectsOnly = "DMs", e.GroupsOnly = "Group"
-			}(r || (r = {}));
-			const c = {
-				[r.ALL]: () => s.fbt._("All", null, {
-					hk: "1l1mY5"
-				}),
-				[r.DirectsOnly]: () => s.fbt._("DMs", null, {
-					hk: "3YXgZ2"
-				}),
-				[r.GroupsOnly]: () => s.fbt._("Group", null, {
-					hk: "2MEwAN"
-				})
-			};
-			var _, m;
+			}(r || (r = {})),
+			function(e) {
+				e.ALL = "All", e.Messages = "Messages", e.Live = "Live", e.Requests = "Requests"
+			}(s || (s = {}));
+			const _ = {
+					[r.ALL]: () => o.fbt._("All", null, {
+						hk: "1l1mY5"
+					}),
+					[r.DirectsOnly]: () => o.fbt._("DMs", null, {
+						hk: "3YXgZ2"
+					}),
+					[r.GroupsOnly]: () => o.fbt._("Group", null, {
+						hk: "2MEwAN"
+					}),
+					[s.Messages]: () => o.fbt._("Messages", null, {
+						hk: "CQxjM"
+					}),
+					[s.Live]: () => o.fbt._("Live", null, {
+						hk: "1shN1U"
+					}),
+					[s.Requests]: () => o.fbt._("Requests", null, {
+						hk: "4cClgH"
+					})
+				},
+				m = {
+					[r.ALL]: "all",
+					[r.DirectsOnly]: "direct",
+					[r.GroupsOnly]: "group",
+					[s.Live]: "live",
+					[s.Messages]: "messages",
+					[s.Requests]: "requests"
+				};
+			var p, h;
 			! function(e) {
 				e[e.Direct = 0] = "Direct", e[e.Group = 1] = "Group"
-			}(_ || (_ = {})),
+			}(p || (p = {})),
 			function(e) {
 				e.AWARDING = "awarding"
-			}(m || (m = {}));
-			o.b.UNSORTED, _.Direct;
+			}(h || (h = {}));
+			d.b.UNSORTED, p.Direct;
 
-			function p(e, t) {
+			function f(e, t) {
 				const {
 					createdAt: i,
 					customType: n,
 					data: r,
 					memberCount: s,
 					name: o,
-					isDistinct: c,
-					isHidden: m,
-					unreadMessageCount: p,
+					isDistinct: d,
+					isHidden: _,
+					unreadMessageCount: m,
 					unreadMentionCount: h,
-					myCountPreference: w,
-					inviter: v,
+					myCountPreference: f,
+					inviter: b,
 					lastMessage: y,
 					members: E,
 					url: S,
@@ -1651,28 +1673,28 @@
 					coverUrl: N
 				} = e;
 				return {
-					channelId: Object(d.f)(S),
+					channelId: Object(a.f)(S),
 					channelSendbirdUrl: S,
-					channelState: Object(d.b)(t, T),
+					channelState: Object(a.b)(t, T),
 					createdAt: Number(i),
-					channelData: Object(d.e)(r),
+					channelData: Object(a.e)(r),
 					customType: n,
 					data: r,
 					maxLengthMessage: -1,
 					memberCount: s,
 					name: o,
 					isFrozen: O,
-					isHidden: m,
+					isHidden: _,
 					isNotifsMuted: !I,
-					isModerator: b(F),
-					isUserMuted: g(R),
-					isMuted: f(w),
-					inviter: Object(l.a)(v),
-					type: c ? _.Direct : _.Group,
-					lastMessage: y ? Object(a.c)(y) : void 0,
-					unreadMessageCount: p,
+					isModerator: w(F),
+					isUserMuted: v(R),
+					isMuted: g(f),
+					inviter: Object(u.a)(b),
+					type: d ? p.Direct : p.Group,
+					lastMessage: y ? Object(l.c)(y) : void 0,
+					unreadMessageCount: m,
 					unreadMentionCount: h,
-					members: Object(u.b)(E),
+					members: Object(c.b)(E),
 					fetchingFirstMessage: !1,
 					fetchingMessages: !1,
 					fetchingMessagesError: !1,
@@ -1683,18 +1705,21 @@
 				}
 			}
 
-			function h(e) {
+			function b(e) {
 				const t = {};
 				for (let i = 0, n = e.length; i < n; i++) {
-					const n = p(e[i]);
+					const n = f(e[i]);
 					n && (t[n.channelId] = n)
 				}
 				return t
 			}
-			const f = e => e === o.c.Off,
-				b = e => "operator" === e,
-				g = e => "muted" === e,
-				w = e => e === r.ALL ? "all" : e === r.DirectsOnly ? "direct" : "group"
+			const g = e => e === d.c.Off,
+				w = e => "operator" === e,
+				v = e => "muted" === e,
+				y = e => {
+					var t;
+					return null !== (t = m[e]) && void 0 !== t ? t : "unknown"
+				}
 		},
 		"./src/chat/models/Channel/utils.ts": function(e, t, i) {
 			"use strict";
@@ -2156,7 +2181,7 @@
 					profileUrl: e.profile_url || e.profileUrl,
 					state: e.state,
 					isBlockedByMe: e.is_blocked_by_me || e.isBlockedByMe,
-					isModerator: Object(n.f)(e.role)
+					isModerator: Object(n.g)(e.role)
 				}),
 				d = e => s()(e) && e.map(o).filter(Boolean) || []
 		},
@@ -2590,19 +2615,19 @@
 		},
 		"./src/chat/selectors/experiments.ts": function(e, t, i) {
 			"use strict";
-			i.d(t, "u", (function() {
+			i.d(t, "v", (function() {
 				return y
-			})), i.d(t, "w", (function() {
+			})), i.d(t, "x", (function() {
 				return E
-			})), i.d(t, "q", (function() {
+			})), i.d(t, "r", (function() {
 				return S
 			})), i.d(t, "f", (function() {
 				return T
-			})), i.d(t, "r", (function() {
-				return O
-			})), i.d(t, "t", (function() {
-				return I
 			})), i.d(t, "s", (function() {
+				return O
+			})), i.d(t, "u", (function() {
+				return I
+			})), i.d(t, "t", (function() {
 				return R
 			})), i.d(t, "l", (function() {
 				return F
@@ -2614,7 +2639,7 @@
 				return A
 			})), i.d(t, "p", (function() {
 				return j
-			})), i.d(t, "v", (function() {
+			})), i.d(t, "w", (function() {
 				return P
 			})), i.d(t, "c", (function() {
 				return D
@@ -2636,13 +2661,15 @@
 				return H
 			})), i.d(t, "k", (function() {
 				return q
+			})), i.d(t, "q", (function() {
+				return W
 			}));
 			i("./node_modules/lodash/isEmpty.js");
 			var n, r, s = i("./node_modules/lodash/memoize.js"),
 				o = i.n(s),
 				d = i("./node_modules/reselect/es/index.js");
 			! function(e) {
-				e.EconRpanAvatar = "web_econ_avatar_in_rpan", e.UiRefreshBubblePreset = "ui_refresh_bubble_preset", e.D2xChatNicknamePainted = "d2x_chat_nickname_painted", e.D2XChatQuickActionsChannels = "d2x_chat_quickactions_channels", e.D2xChatFilterGroupDirect = "d2x_chat_filter_group_direct", e.ChatMediaShareImages = "chat_mediashare_images", e.ChatMediaShareImagesGroups = "group_chat_mediashare_images", e.ChatImagesRenderKillSwitch = "web_chat_mediashare_images_killswitch", e.ChatInviteMessagePreview = "chat_preview_comment", e.D2XChatShortCutsSlashCommand = "d2x_chat_shortcuts_slash_command", e.ChatLinkSharingGroup = "chat_link_sharing_group", e.ChatLinkSharingDirect = "chat_link_sharing_direct", e.AEBlockedUserChatWeb = "ae_blocked_user_chat_web", e.ChatReactions = "chat_reactions", e.D2XChatReactionsKillSwitch = "d2x_chat_reactions_killswitch", e.BlockedUserChatWebKillSwitch = "d2x_blocked_user_chat_web_killswitch", e.ChatSettingsRevampKillSwitch = "d2x_chat_settings_revamp_killswitch"
+				e.EconRpanAvatar = "web_econ_avatar_in_rpan", e.UiRefreshBubblePreset = "ui_refresh_bubble_preset", e.D2xChatNicknamePainted = "d2x_chat_nickname_painted", e.D2XChatQuickActionsChannels = "d2x_chat_quickactions_channels", e.D2xChatFilterGroupDirect = "d2x_chat_filter_group_direct", e.ChatMediaShareImages = "chat_mediashare_images", e.ChatMediaShareImagesGroups = "group_chat_mediashare_images", e.ChatImagesRenderKillSwitch = "web_chat_mediashare_images_killswitch", e.ChatInviteMessagePreview = "chat_preview_comment", e.D2XChatShortCutsSlashCommand = "d2x_chat_shortcuts_slash_command", e.ChatLinkSharingGroup = "chat_link_sharing_group", e.ChatLinkSharingDirect = "chat_link_sharing_direct", e.AEBlockedUserChatWeb = "ae_blocked_user_chat_web", e.ChatReactions = "chat_reactions", e.D2XChatReactionsKillSwitch = "d2x_chat_reactions_killswitch", e.BlockedUserChatWebKillSwitch = "d2x_blocked_user_chat_web_killswitch", e.ChatSettingsRevampKillSwitch = "d2x_chat_settings_revamp_killswitch", e.LiveChatInChatTab = "d2x_corechat_live_chat_in_chat_tab"
 			}(n || (n = {})),
 			function(e) {
 				e.Control1 = "control_1", e.Control2 = "control_2"
@@ -2703,7 +2730,8 @@
 				G = Object(d.a)(e => v(e, n.D2XChatReactionsKillSwitch), e => e === a),
 				V = Object(d.a)(e => v(e, n.ChatReactions), e => G(e), (e, t) => e === a && !t),
 				H = Object(d.a)(e => v(e, n.BlockedUserChatWebKillSwitch), e => e === a),
-				q = Object(d.a)(e => v(e, n.ChatSettingsRevampKillSwitch), e => e === a)
+				q = Object(d.a)(e => v(e, n.ChatSettingsRevampKillSwitch), e => e === a),
+				W = Object(d.a)(e => v(e, n.LiveChatInChatTab), e => e === a)
 		},
 		"./src/chat/selectors/inviteLink.ts": function(e, t, i) {
 			"use strict";
@@ -2794,7 +2822,7 @@
 					id: e.id,
 					name: e.name,
 					isBlockedByMe: (null == i ? void 0 : i.isBlocked) || e.isBlocked || t.isBlockedByMe,
-					isModerator: Object(s.f)(t.role),
+					isModerator: Object(s.g)(t.role),
 					isNSFW: Boolean(null == i ? void 0 : i.isNSFW),
 					profileUrl: e.profileImg || (null == i ? void 0 : i.profileImg) || t.profileUrl,
 					state: t.state
@@ -3467,11 +3495,11 @@
 				apiPassThroughHeaders: Object(r.e)({}.API_PASS_THROUGH_HEADERS || ""),
 				appName: {}.APP_NAME || "desktop2x",
 				assetPath: "https://www.redditstatic.com/desktop2x",
-				buildNumber: Object(r.c)("169948"),
+				buildNumber: Object(r.c)("169950"),
 				chatHelpUrl: {}.CHAT_HELP_URL || "https://reddit.zendesk.com/hc/en-us/sections/360008805652-Chat",
 				hlsVersion: "hls 0.12.4",
 				dashVersion: "dash 4.4.0",
-				buildTimestamp: Object(r.b)("1659637826"),
+				buildTimestamp: Object(r.b)("1659639730"),
 				cookieDomain: ".reddit.com",
 				giphyApiKey: "k2kwyMA6VeyHM6ZRT96OXDGaersnx73Z",
 				mediaUrl: "https://www.redditmedia.com",
@@ -6111,14 +6139,14 @@
 					}))
 				},
 				Y = (e, t, i) => {
-					console.log("%cStarting Raven %crelease %c08d3bb10c16002c1fd7ebb604574671fd71aa332-production" + ` %cpublic url %c${y.a.sentryClientPublicURL}`, "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
+					console.log("%cStarting Raven %crelease %ceb3feed263ce39a05ad2ebf3ed170fcd9103e952-production" + ` %cpublic url %c${y.a.sentryClientPublicURL}`, "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
 					let n = [];
 					n = [new RegExp(`^${y.a.assetPath}`, "i")];
 					o.e({
 						attachStacktrace: !0,
 						dsn: y.a.sentryClientPublicURL,
 						whitelistUrls: n,
-						release: "08d3bb10c16002c1fd7ebb604574671fd71aa332-production",
+						release: "eb3feed263ce39a05ad2ebf3ed170fcd9103e952-production",
 						environment: "production",
 						ignoreErrors: ["$ is not defined"],
 						integrations: [...Object(L.d)(), new d.Integrations.Breadcrumbs({
@@ -6644,7 +6672,7 @@
 							settings: r,
 							statusCode: s,
 							type: o,
-							releaseClient: "08d3bb10c16002c1fd7ebb604574671fd71aa332-production",
+							releaseClient: "eb3feed263ce39a05ad2ebf3ed170fcd9103e952-production",
 							appName: t.statsAppName,
 							error: n ? JSON.parse(Object(l.a)(n)) : void 0
 						},
@@ -49240,4 +49268,4 @@
 		"ignored /drone/src/node_modules/readable-stream/lib/internal/streams util": function(e, t) {}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.f1a281383f44fecbf79c.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.4c61a8ae14798ea51e9e.js.map
