@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CommentsPage.039d3ea9c0778f374b58.js
-// Retrieved at 8/4/2022, 1:30:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CommentsPage.7b3bc1f8ee5ab020ee6a.js
+// Retrieved at 8/4/2022, 2:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CommentsPage", "PostCreation~Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~r~4c415e24", "Governance~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compo~bd4baca2", "CollectionCommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~SearchResults", "Governance~ModListing~Reddit~ReportFlow~Subreddit", "CollectionCommentsPage~ModProgressModule~NewCommunityProgress", "CollectionCommentsPage~Subreddit~SubredditWiki", "AchievementsActions"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -22260,7 +22260,7 @@
 				}
 			}
 			t.c = i.a.memo((function(e) {
-				const t = Object(p.fb)(),
+				const t = Object(p.gb)(),
 					n = Object(p.w)(t),
 					s = Object(O.a)(),
 					r = Object(a.e)(r => J(r, {
@@ -26267,7 +26267,7 @@
 			const j = 129,
 				k = Object(f.u)({
 					filterName: e => Object(f.X)(e)[b.e],
-					url: e => Object(f.eb)(e)
+					url: e => Object(f.fb)(e)
 				}),
 				I = Object(a.c)({
 					subredditId: (e, t) => Object(x.G)(e, t.subredditName)
@@ -35038,7 +35038,7 @@
 		"./src/reddit/hooks/usePageLayer.ts": function(e, t, n) {
 			"use strict";
 			var s = n("./src/reddit/contexts/PageLayer/index.tsx");
-			t.a = s.fb
+			t.a = s.gb
 		},
 		"./src/reddit/hooks/usePostContext.ts": function(e, t, n) {
 			"use strict";
@@ -42731,4 +42731,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommentsPage.039d3ea9c0778f374b58.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommentsPage.7b3bc1f8ee5ab020ee6a.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~Reddit.6b6ec0157f35c8e12b97.js
-// Retrieved at 8/3/2022, 2:30:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~Reddit.2901699cd7ff8b3b0e2a.js
+// Retrieved at 8/4/2022, 2:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~Reddit"], {
 		"./assets/fonts/NotoMono/font.less": function(e, t, n) {},
@@ -3773,7 +3773,7 @@
 				}
 			}
 			t.c = o.a.memo((function(e) {
-				const t = Object(f.fb)(),
+				const t = Object(f.gb)(),
 					n = Object(f.w)(t),
 					r = Object(_.a)(),
 					s = Object(c.e)(s => X(s, {
@@ -4322,55 +4322,59 @@
 					_ = Object(g.a)(),
 					I = Object(ne.a)(),
 					S = Object(te.Z)(I),
-					w = Object(a.e)(e => Object(te.db)(e, {
+					w = Object(a.e)(e => Object(te.eb)(e, {
 						pageLayer: I
 					})),
-					D = Object(a.e)(e => Object(te.t)(e, {
+					D = Object(a.e)(e => Object(te.db)(e, {
 						pageLayer: I
 					})),
-					j = Object(a.e)(e => Object(te.e)(e, {
+					j = Object(a.e)(e => Object(te.t)(e, {
 						pageLayer: I
 					})),
-					A = Object(a.e)(e => Object(re.a)(e)),
-					C = Object(a.e)(O.kb),
+					A = Object(a.e)(e => Object(te.e)(e, {
+						pageLayer: I
+					})),
+					C = Object(a.e)(e => Object(re.a)(e)),
+					P = Object(a.e)(O.kb),
 					{
-						nsfwSessionSetting: P
+						nsfwSessionSetting: R
 					} = Object(f.b)(),
-					R = Object(u.e)({
+					N = Object(u.e)({
 						...z()(S || {}, ee.t),
 						q: o.searchQuery,
 						restrict_sr: w ? "1" : ""
 					}),
 					{
-						url: N,
-						qs: L
+						url: L,
+						qs: x
 					} = Object(h.a)({
-						subreddit: D,
-						multireddit: j,
+						subreddit: j,
+						multireddit: A,
 						searchItem: o,
-						...A ? {
-							searchOptions: R
+						...C ? {
+							searchOptions: N
 						} : {},
 						shouldSearchSubreddit: w,
-						includeNsfwResults: C && P
+						shouldSearchMultireddit: D,
+						includeNsfwResults: P && R
 					}),
-					x = {
-						...R,
-						id: (null == D ? void 0 : D.id) || "",
+					U = {
+						...N,
+						id: (null == j ? void 0 : j.id) || "",
 						eventType: Boolean(w) ? "subreddit" : void 0
 					};
 				return Object(r.useEffect)(() => {
-					_(Object(y.u)(x, w, l, I || void 0))
+					_(Object(y.u)(U, w, l, I || void 0))
 				}, []), s.a.createElement(d.a, {
 					onClick: function(e) {
-						_(Object(y.o)(E.a.FullSearchButton, x, w, k.a.Typeahead, I || void 0)), p(e)
+						_(Object(y.o)(E.a.FullSearchButton, U, w, k.a.Typeahead, I || void 0)), p(e)
 					},
 					to: {
-						pathname: N,
+						pathname: L,
 						state: {
 							[Z.b.SearchOriginPage]: n
 						},
-						search: L
+						search: x
 					},
 					className: Object(c.a)(T.a.listItem, J.a.item, t),
 					"data-testid": se
@@ -5063,19 +5067,20 @@
 					searchItem: i,
 					searchOptions: d,
 					shouldSearchSubreddit: l,
-					includeNsfwResults: u
+					shouldSearchMultireddit: u,
+					includeNsfwResults: p
 				} = e;
-				const p = [];
+				const f = [];
 				if (i.isTypeaheadSuggestion) t = `/${i.isProfile?i.searchQuery.replace("u/","user/"):i.searchQuery}`;
 				else {
-					if (p.push(`${a.p}=${Object(s.b)(i.rawQuery||i.searchQuery)}`), t = "/search/", i.section !== o.c.trending && i.section !== o.c.recent || d && d.source && p.push(`source=${d.source}`), n && l ? (t = `/r/${n.name}${t}`, p.push(`${a.s}=1`), p.push(`${a.A}=${n.isNSFW?"1":""}`)) : !n && i.subredditOrProfileRestrictedName && (t = `/${i.subredditOrProfileRestrictedName}${t}`, p.push(`${a.s}=1`)), c) {
-						t = `/user/${c.url.split("/")[2]}/m/${c.name}${t}`, p.push(`${a.s}=1`), p.push(`${a.A}=${c.isNSFW?"1":""}`), p.push(`${a.i}=1`)
+					if (f.push(`${a.p}=${Object(s.b)(i.rawQuery||i.searchQuery)}`), t = "/search/", i.section !== o.c.trending && i.section !== o.c.recent || d && d.source && f.push(`source=${d.source}`), n && l ? (t = `/r/${n.name}${t}`, f.push(`${a.s}=1`), f.push(`${a.A}=${n.isNSFW?"1":""}`)) : !n && i.subredditOrProfileRestrictedName && (t = `/${i.subredditOrProfileRestrictedName}${t}`, f.push(`${a.s}=1`)), c && u) {
+						t = `/user/${c.url.split("/")[2]}/m/${c.name}${t}`, f.push(`${a.s}=1`), f.push(`${a.A}=${c.isNSFW?"1":""}`), f.push(`${a.i}=1`)
 					}
-					u && p.push(`${a.h}=1`), (null == d ? void 0 : d.t) && d.t !== r.ic.ALL && p.push(`${a.C}=${d.t}`), (null == d ? void 0 : d.sort) && p.push(`${a.y}=${d.sort}`), (null == d ? void 0 : d.type) && (d.type.includes(r.cc.Posts) || p.push(`${a.D}=${d.type[0]}`))
+					p && f.push(`${a.h}=1`), (null == d ? void 0 : d.t) && d.t !== r.ic.ALL && f.push(`${a.C}=${d.t}`), (null == d ? void 0 : d.sort) && f.push(`${a.y}=${d.sort}`), (null == d ? void 0 : d.type) && (d.type.includes(r.cc.Posts) || f.push(`${a.D}=${d.type[0]}`))
 				}
 				return {
 					url: t,
-					qs: p.join("&")
+					qs: f.join("&")
 				}
 			}
 		},
@@ -24747,4 +24752,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit.6b6ec0157f35c8e12b97.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit.2901699cd7ff8b3b0e2a.js.map

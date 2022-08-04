@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Subreddit.3cf2e36b29369513dc81.js
-// Retrieved at 8/3/2022, 9:40:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Subreddit.ecd3e10d6d3b8b38f4c3.js
+// Retrieved at 8/4/2022, 2:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Subreddit", "Frontpage~ModListing", "reddit-components-Econ-PredictionLeaderboard-Sidebar"], {
 		"./node_modules/@reddit/i18n-tools/runtime/helpers/locale/index.js": function(e, t, n) {
@@ -3838,7 +3838,7 @@
 				} = e;
 				var x;
 				const y = Object(b.a)(),
-					E = Object(l.fb)(),
+					E = Object(l.gb)(),
 					_ = "true" === (null == E ? void 0 : E.queryParams["top-predictors"]),
 					[O, C, j] = Object(p.a)(_),
 					{
@@ -4223,7 +4223,7 @@
 				}).apply(this, arguments)
 			}
 			t.a = Object(g.a)(e => {
-				const t = Object(v.fb)(),
+				const t = Object(v.gb)(),
 					n = null == t ? void 0 : t.queryParams["prediction-tournament-rank"],
 					s = Object(o.e)(t => Object(_.G)(t, e.listingName)),
 					{
@@ -16804,4 +16804,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Subreddit.3cf2e36b29369513dc81.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Subreddit.ecd3e10d6d3b8b38f4c3.js.map

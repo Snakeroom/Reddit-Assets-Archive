@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CryptoPurchaseEth.b39e4d5bcd350e7195f7.js
-// Retrieved at 7/28/2022, 11:00:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CryptoPurchaseEth.bf5ec3b15df047c67076.js
+// Retrieved at 8/4/2022, 2:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CryptoPurchaseEth"], {
 		"./node_modules/lodash/uniqueId.js": function(e, t, n) {
@@ -309,7 +309,7 @@
 				u = n("./src/reddit/components/Governance/Ftx/index.tsx");
 			t.default = Object(o.a)((function() {
 				const e = Object(r.d)(),
-					t = Object(i.fb)(),
+					t = Object(i.gb)(),
 					n = null == t ? void 0 : t.urlParams.subredditName,
 					a = Object(r.e)(e => Object(d.A)(e, {
 						subredditName: n || ""
@@ -808,4 +808,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CryptoPurchaseEth.b39e4d5bcd350e7195f7.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CryptoPurchaseEth.bf5ec3b15df047c67076.js.map

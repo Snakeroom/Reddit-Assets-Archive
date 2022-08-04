@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CryptoVault.06941179f7545f39f70d.js
-// Retrieved at 7/20/2022, 7:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CryptoVault.856e19811e10ded17c73.js
+// Retrieved at 8/4/2022, 2:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CryptoVault"], {
 		"./src/reddit/actions/economics/claims/constants.ts": function(e, t, n) {
@@ -72,9 +72,9 @@
 			})), n.d(t, "v", (function() {
 				return C
 			})), n.d(t, "w", (function() {
-				return R
-			})), n.d(t, "x", (function() {
 				return g
+			})), n.d(t, "x", (function() {
+				return R
 			}));
 			const r = "GOVERNANCE__COMMUNITY_DETAILS_SUCCESS",
 				i = "GOVERNANCE__NEW_SUBREDDIT_SUGGESTED",
@@ -98,8 +98,8 @@
 				A = "GOVERNANCE__TRANSFER_SUCCESS",
 				h = "GOVERNANCE__WALLETS_FETCH_FAILURE",
 				C = "GOVERNANCE__WALLETS_FETCH_PENDING",
-				R = "GOVERNANCE__WALLETS_FETCH_SUCCESS",
-				g = "GOVERNANCE__WALLET_REGISTRATION_MODAL_OPENED"
+				g = "GOVERNANCE__WALLETS_FETCH_SUCCESS",
+				R = "GOVERNANCE__WALLET_REGISTRATION_MODAL_OPENED"
 		},
 		"./src/reddit/components/Governance/Token/index.m.less": function(e, t, n) {
 			e.exports = {
@@ -180,7 +180,7 @@
 
 			function y(e) {
 				const t = Object(s.d)(),
-					n = Object(E.fb)(),
+					n = Object(E.gb)(),
 					r = Object(s.e)(e => Object(E.r)(e, {
 						pageLayer: n
 					})),
@@ -248,7 +248,7 @@
 			}
 			t.default = function(e) {
 				const t = Object(o.d)(),
-					n = Object(a.fb)(),
+					n = Object(a.gb)(),
 					r = Object(o.e)(e => Object(a.r)(e, {
 						pageLayer: n
 					})),
@@ -656,7 +656,7 @@
 			};
 
 			function u() {
-				const e = Object(i.fb)(),
+				const e = Object(i.gb)(),
 					t = Object(r.e)(t => Object(i.r)(t, {
 						pageLayer: e
 					})),
@@ -674,4 +674,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CryptoVault.06941179f7545f39f70d.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CryptoVault.856e19811e10ded17c73.js.map

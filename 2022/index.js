@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/index.3694c7773711e0511923.js
-// Retrieved at 8/1/2022, 10:20:09 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/index.a71b0edbcb09eeb326ff.js
+// Retrieved at 8/4/2022, 2:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["index"], {
 		"./src/reddit/components/Econ/Audio/MuteIcon.tsx": function(e, t, n) {
@@ -137,8 +137,8 @@
 					audioRoom: n
 				} = t, {
 					recordingStatus: u
-				} = n, [f, E] = Object(a.useState)(new Set), [h, g] = Object(a.useState)(new Set), x = Object(r.e)(l.db), [O, P] = Object(a.useState)(-1), _ = e => {
-					const t = e ? Array.from(h) : Array.from(f);
+				} = n, [f, E] = Object(a.useState)(new Set), [g, h] = Object(a.useState)(new Set), x = Object(r.e)(l.db), [O, P] = Object(a.useState)(-1), _ = e => {
+					const t = e ? Array.from(g) : Array.from(f);
 					return null == t ? void 0 : t.map((t, n) => {
 						return e ? s.a.createElement("div", {
 							key: `audioPostAvatar--${t}`,
@@ -173,10 +173,10 @@
 					const e = new Set;
 					for (; e.size < 13;) {
 						const t = j();
-						e.has(t) || (f.size < 6 ? f.add(t) : h.size < 7 && h.add(t), e.add(t))
+						e.has(t) || (f.size < 6 ? f.add(t) : g.size < 7 && g.add(t), e.add(t))
 					}
-					E(f), g(h)
-				}, [f, h]), Object(a.useEffect)(() => {
+					E(f), h(g)
+				}, [f, g]), Object(a.useEffect)(() => {
 					const e = setInterval(() => {
 						const e = Math.floor(6 * Math.random());
 						P(e), setTimeout(() => P(-1), 3500)
@@ -359,8 +359,8 @@
 				f = n("./src/reddit/components/Econ/Prediction/TournamentPostBody/PredictionContainer/index.m.less"),
 				E = n.n(f);
 
-			function h() {
-				return (h = Object.assign || function(e) {
+			function g() {
+				return (g = Object.assign || function(e) {
 					for (var t = 1; t < arguments.length; t++) {
 						var n = arguments[t];
 						for (var o in n) Object.prototype.hasOwnProperty.call(n, o) && (e[o] = n[o])
@@ -368,15 +368,15 @@
 					return e
 				}).apply(this, arguments)
 			}
-			const g = e => {
+			const h = e => {
 				let {
 					className: t,
 					...n
 				} = e;
-				const o = Object(b.fb)(),
+				const o = Object(b.gb)(),
 					r = Object(b.x)(o),
 					i = Object(s.e)(v.db);
-				return a.a.createElement("div", h({}, n, {
+				return a.a.createElement("div", g({}, n, {
 					className: Object(p.a)(t, E.a.container, {
 						[E.a.commentsPage]: r,
 						[E.a.isNightMode]: i
@@ -570,9 +570,9 @@
 						} = t,
 						{
 							id: E,
-							voteState: h
+							voteState: g
 						} = n,
-						g = t.userSelection,
+						h = t.userSelection,
 						[x, O] = a.a.useState(!1),
 						[P, _] = a.a.useState(null),
 						[j, y] = a.a.useState(!1),
@@ -587,7 +587,7 @@
 							return t === P
 						}),
 						selectOption: e => {
-							k || g || _(e.id)
+							k || h || _(e.id)
 						},
 						predict: async t => {
 							if (t.currency === l.a.Coins && t.amount > r) return Object($.promptUserToBuyMoreCoins)(), void c(W.b);
@@ -607,7 +607,7 @@
 									pollId: p,
 									tournamentId: e,
 									tournamentPostId: n.id
-								})), i && h < Z.a.upvoted && (o(Object(H.kb)(E)), o(Object(H.kb)(p)), m()), O(!1), _(null), y(!0)
+								})), i && g < Z.a.upvoted && (o(Object(H.kb)(E)), o(Object(H.kb)(p)), m()), O(!1), _(null), y(!0)
 							} catch (a) {
 								O(!1), _(null), u(K._("Error: Failed to make prediction, please try again later", null, {
 									hk: "1tECsx"
@@ -748,9 +748,9 @@
 							noun: "predicted_all_post"
 						}))(t.id);
 						i(e)
-					}, [t.id, o, v, i]), o === u.a.Closed ? a.a.createElement(g, null, a.a.createElement(S, {
+					}, [t.id, o, v, i]), o === u.a.Closed ? a.a.createElement(h, null, a.a.createElement(S, {
 						postId: t.id
-					})) : a.a.createElement(g, null, v ? a.a.createElement(oe, {
+					})) : a.a.createElement(h, null, v ? a.a.createElement(oe, {
 						post: t,
 						predictions: b
 					}) : a.a.createElement(T, {
@@ -832,4 +832,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/index.3694c7773711e0511923.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/index.a71b0edbcb09eeb326ff.js.map

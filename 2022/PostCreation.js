@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostCreation.ad1c67a7364996343ac0.js
-// Retrieved at 8/3/2022, 9:40:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostCreation.28962da68eae49ba675e.js
+// Retrieved at 8/4/2022, 2:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostCreation", "ChatMessageInput~MembershipPaywallPage~RichTextEditor", "ContributorRequestButton"], {
 		"./node_modules/autosize/dist/autosize.js": function(e, t, n) {
@@ -11744,7 +11744,7 @@
 				}
 			}
 			t.c = i.a.memo((function(e) {
-				const t = Object(m.fb)(),
+				const t = Object(m.gb)(),
 					n = Object(m.w)(t),
 					o = Object(O.a)(),
 					s = Object(a.e)(s => Z(s, {
@@ -26263,7 +26263,7 @@
 		"./src/reddit/hooks/usePageLayer.ts": function(e, t, n) {
 			"use strict";
 			var o = n("./src/reddit/contexts/PageLayer/index.tsx");
-			t.a = o.fb
+			t.a = o.gb
 		},
 		"./src/reddit/hooks/usePostContext.ts": function(e, t, n) {
 			"use strict";
@@ -32046,7 +32046,7 @@
 				fbt: Jl
 			} = n("./node_modules/fbt/lib/FbtPublic.js"), Zl = () => {
 				const e = Object(r.d)(),
-					t = Object(z.fb)(),
+					t = Object(z.gb)(),
 					n = Object(r.e)(e => Object(z.r)(e, {
 						pageLayer: t
 					})),
@@ -33530,7 +33530,7 @@
 							isPredictionCreationAllowed: n,
 							isApprovedUser: o
 						} = function() {
-							const [e, t] = s.a.useState(!1), [n, o] = s.a.useState(!1), i = Object(r.d)(), a = Object(z.fb)(), c = Object(r.e)(e => Object(z.r)(e, {
+							const [e, t] = s.a.useState(!1), [n, o] = s.a.useState(!1), i = Object(r.d)(), a = Object(z.gb)(), c = Object(r.e)(e => Object(z.r)(e, {
 								pageLayer: a
 							})), l = Object(r.e)(e => c && Object(Ze.h)(e, {
 								subredditId: c.id
@@ -34017,7 +34017,7 @@
 			};
 
 			function l() {
-				const e = Object(s.fb)(),
+				const e = Object(s.gb)(),
 					t = Object(o.e)(t => Object(s.r)(t, {
 						pageLayer: e
 					})),
@@ -34607,4 +34607,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.ad1c67a7364996343ac0.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.28962da68eae49ba675e.js.map

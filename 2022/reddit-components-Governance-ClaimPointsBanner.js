@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Governance-ClaimPointsBanner.c3d303404391a8a32c73.js
-// Retrieved at 8/1/2022, 10:20:09 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Governance-ClaimPointsBanner.6f5125eef89ea85155b3.js
+// Retrieved at 8/4/2022, 2:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Governance-ClaimPointsBanner"], {
 		"./src/lib/constants/specialMembership.ts": function(A, e, t) {
@@ -229,9 +229,9 @@
 			})), t.d(e, "o", (function() {
 				return I
 			})), t.d(e, "p", (function() {
-				return f
-			})), t.d(e, "q", (function() {
 				return E
+			})), t.d(e, "q", (function() {
+				return f
 			})), t.d(e, "r", (function() {
 				return h
 			})), t.d(e, "s", (function() {
@@ -262,8 +262,8 @@
 				k = "GOVERNANCE__PUBLIC_WALLET_INFO_PENDING",
 				b = "GOVERNANCE__PUBLIC_WALLET_INFO_SUCCESS",
 				I = "GOVERNANCE__RELEASE_NOTES_MODAL_OPENED",
-				f = "GOVERNANCE__RELEASE_NOTES_SUCCESS",
-				E = "GOVERNANCE__TRANSFER_FAILURE",
+				E = "GOVERNANCE__RELEASE_NOTES_SUCCESS",
+				f = "GOVERNANCE__TRANSFER_FAILURE",
 				h = "GOVERNANCE__TRANSFER_MODAL_OPENED",
 				C = "GOVERNANCE__TRANSFER_PENDING",
 				x = "GOVERNANCE__TRANSFER_SUCCESS",
@@ -305,8 +305,8 @@
 				k = t("./src/reddit/endpoints/economics/banners.ts"),
 				b = t("./src/reddit/helpers/trackers/communityPoints.ts"),
 				I = t("./src/reddit/icons/svgs/Close/index.tsx"),
-				f = t("./src/reddit/selectors/crypto/claims.ts"),
-				E = t("./src/reddit/selectors/crypto/points.ts"),
+				E = t("./src/reddit/selectors/crypto/claims.ts"),
+				f = t("./src/reddit/selectors/crypto/points.ts"),
 				h = t("./src/reddit/selectors/economics.ts"),
 				C = t("./src/reddit/selectors/subreddit.ts"),
 				x = t("./src/reddit/components/Governance/TokenAmount/index.tsx"),
@@ -401,8 +401,8 @@
 					} = e;
 					return !1 === Object(h.g)(A, t, k.a.ClaimPoints)
 				},
-				isClaimingPoints: f.a,
-				nextAvailableClaim: f.b,
+				isClaimingPoints: E.a,
+				nextAvailableClaim: E.b,
 				pointsCopy: h.m,
 				subreddit: C.V,
 				tokenName: (A, e) => {
@@ -410,7 +410,7 @@
 						subredditId: t
 					} = e;
 					var n;
-					return null === (n = Object(E.b)(A, t)) || void 0 === n ? void 0 : n.name
+					return null === (n = Object(f.b)(A, t)) || void 0 === n ? void 0 : n.name
 				}
 			});
 			e.default = Object(p.c)(Object(a.b)(N, (A, e) => {
@@ -617,7 +617,7 @@
 			})), t.d(e, "f", (function() {
 				return I
 			})), t.d(e, "n", (function() {
-				return f
+				return E
 			}));
 			var n, i = t("./src/config.ts"),
 				r = t("./src/reddit/endpoints/governance/requester.ts");
@@ -727,7 +727,7 @@
 					recipientAddress: t,
 					amount: n
 				});
-			async function f(A, e) {
+			async function E(A, e) {
 				return await Object(r.a)(A, {
 					method: "put",
 					endpoint: `${i.a.metaUrl}/crypto/ethereum/transaction-intent`,
@@ -1293,7 +1293,7 @@
 			};
 
 			function o() {
-				const A = Object(i.fb)(),
+				const A = Object(i.gb)(),
 					e = Object(n.e)(e => Object(i.r)(e, {
 						pageLayer: A
 					})),
@@ -1341,9 +1341,9 @@
 		"./src/reddit/selectors/economics.ts": function(A, e, t) {
 			"use strict";
 			t.d(e, "c", (function() {
-				return f
-			})), t.d(e, "o", (function() {
 				return E
+			})), t.d(e, "o", (function() {
+				return f
 			})), t.d(e, "a", (function() {
 				return h
 			})), t.d(e, "x", (function() {
@@ -1409,7 +1409,7 @@
 				k = t("./src/reddit/selectors/gold/powerups/index.ts"),
 				b = t("./src/reddit/selectors/gold/powerups/benefitSettings.ts");
 			const I = [],
-				f = (A, e) => {
+				E = (A, e) => {
 					const t = A.economics.subredditPremium[e];
 					if (t && t.status === u.a.Fetched) {
 						const A = t.data.subscription,
@@ -1421,8 +1421,8 @@
 					}
 					return null
 				},
-				E = (A, e) => {
-					const t = f(A, e);
+				f = (A, e) => {
+					const t = E(A, e);
 					return t && t.endsAt || null
 				};
 			var h;
@@ -1432,7 +1432,7 @@
 			const C = (A, e) => {
 					const t = A.economics.subredditPremium[e];
 					if (t && t.status === u.a.Fetched) {
-						const t = E(A, e),
+						const t = f(A, e),
 							n = Date.now();
 						return t && n < t ? h.Subscribed : h.NotSubscribed
 					}
@@ -1565,7 +1565,7 @@
 					M(A, e).forEach(A => {
 						A.price && A.currency && (t[A.currency] = A.price)
 					});
-					const n = f(A, e);
+					const n = E(A, e);
 					return n && n.price && n.currency && (t[n.currency] = n.price), t
 				},
 				q = (A, e) => {
@@ -1649,4 +1649,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Governance-ClaimPointsBanner.c3d303404391a8a32c73.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Governance-ClaimPointsBanner.6f5125eef89ea85155b3.js.map

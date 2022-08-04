@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/NsfwBlockingModal.942634671ce9572caca4.js
-// Retrieved at 8/3/2022, 9:40:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/NsfwBlockingModal.c6d61d2cb8af7d88257f.js
+// Retrieved at 8/4/2022, 2:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["NsfwBlockingModal"], {
 		"./src/reddit/components/Footer/index.m.less": function(e, t, n) {
@@ -84,7 +84,7 @@
 			} = n("./node_modules/fbt/lib/FbtPublic.js"), v = Object(r.a)(e => {
 				const t = Object(d.e)(p.b),
 					n = Object(d.e)(() => t ? Object(b.f)(t) : null),
-					r = Object(d.e)(e => t ? Object(b.hb)(e, {
+					r = Object(d.e)(e => t ? Object(b.ib)(e, {
 						pageLayer: t
 					}) : null),
 					s = Object(d.e)(e => t ? Object(b.Y)(e, {
@@ -148,8 +148,8 @@
 				f = n("./src/reddit/controls/Button/index.tsx"),
 				g = n("./src/reddit/helpers/counters/nsfwblocking.ts"),
 				v = n("./src/reddit/selectors/telemetry.ts");
-			const h = "nsfw_dialog";
-			var x = e => o.a.createElement("svg", {
+			const x = "nsfw_dialog";
+			var h = e => o.a.createElement("svg", {
 					className: e.className,
 					fill: "none",
 					height: "60",
@@ -197,7 +197,7 @@
 						Object(g.c)(r)
 					}, [r]), o.a.createElement("div", {
 						className: Object(d.a)(E.a.mainCta)
-					}, o.a.createElement(x, null), b, o.a.createElement("div", {
+					}, o.a.createElement(h, null), b, o.a.createElement("div", {
 						className: E.a.contentTitle
 					}, e.contentTitle), o.a.createElement("div", {
 						className: E.a.warning
@@ -212,7 +212,7 @@
 								...Object(v.n)(e),
 								source: "xpromo",
 								action: "click",
-								noun: h
+								noun: x
 							}))()), m(), Object(g.b)(g.a.Login), t(Object(u.openLoginModal)())
 						}
 					}, (() => s.fbt._("Log In", null, {
@@ -224,7 +224,7 @@
 								...Object(v.n)(e),
 								source: "xpromo",
 								action: "dismiss",
-								noun: h
+								noun: x
 							}))()), Object(g.b)(g.a.Dismiss), t(Object(l.b)("/"))
 						}
 					}, (() => s.fbt._("I'm not over 18", null, {
@@ -263,7 +263,7 @@
 							...Object(v.n)(e),
 							source: "xpromo",
 							action: "view",
-							noun: h
+							noun: x
 						}))())
 					}, [t]);
 					const {
@@ -286,4 +286,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/NsfwBlockingModal.942634671ce9572caca4.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/NsfwBlockingModal.c6d61d2cb8af7d88257f.js.map
