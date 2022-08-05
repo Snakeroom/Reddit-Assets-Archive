@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~CountryPage~FramedGild~GildModal~GovernanceReleaseNotesModal~Mem~c8b748a6.09257777defc59ce61da.js
-// Retrieved at 8/4/2022, 7:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~CountryPage~FramedGild~GildModal~GovernanceReleaseNotesModal~Mem~c8b748a6.3e039bf8e7bd48c7355b.js
+// Retrieved at 8/4/2022, 8:50:03 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~CountryPage~FramedGild~GildModal~GovernanceReleaseNotesModal~Mem~c8b748a6"], {
 		"./src/lib/colors/constants.ts": function(e, t, s) {
@@ -1335,7 +1335,7 @@
 							this.setState({
 								bitrateInfo: e,
 								videoHasError: t
-							}), t && x.c.captureMessage(`Error detecting bitrate info for video postId: ${this.props.postId}`)
+							}), t && (x.c.captureMessage(`Error detecting bitrate info for video postId: ${this.props.postId}`), this.sendEvent("error", "video"))
 						}
 					}, this.getAudioInfo = () => {
 						if (this.props.isGif) this.setState({
@@ -1497,7 +1497,7 @@
 								}), window.clearTimeout(t.hoverTimeout), t.hoverTimeout = void 0
 							}, b.n)
 						} catch (i) {
-							e > 0 ? t.playVideo(e - 1) : x.c.captureMessage(`Error playing video ${t.props.postId}: ${i}`)
+							e > 0 ? t.playVideo(e - 1) : (x.c.captureMessage(`Error playing video ${t.props.postId}: ${i}`), t.sendEvent("error", "video"))
 						}
 					}, this.pauseVideo = () => {
 						const e = this.HTML5StreamPlayerVideo;
@@ -1714,8 +1714,8 @@
 							a = this.props.mpegDashSource;
 						if (i && a) {
 							this.dashPlayer = e.MediaPlayer().create(), this.dashPlayer.on(e.MediaPlayer.events.ERROR, e => {
-								var t, s, i, o, n, r, l, c;
-								x.c.captureException(`Error loading video url for postId: ${this.props.postId}. Response: ${null!==(o=null===(i=null===(s=null===(t=null==e?void 0:e.error)||void 0===t?void 0:t.data)||void 0===s?void 0:s.response)||void 0===i?void 0:i.status)&&void 0!==o?o:""} ${null!==(c=null===(l=null===(r=null===(n=null==e?void 0:e.error)||void 0===n?void 0:n.data)||void 0===r?void 0:r.response)||void 0===l?void 0:l.responseText)&&void 0!==c?c:""}. Video source: ${a}`), this.setState({
+								var t;
+								(null === (t = null == e ? void 0 : e.error) || void 0 === t ? void 0 : t.message) && x.c.captureException(`Error loading video url for post id ${this.props.postId}: ${e.error.message}`), this.sendEvent("error", "video"), this.setState({
 									videoHasError: !0
 								})
 							});
@@ -1806,17 +1806,18 @@
 						a = e.shouldStop && !this.props.shouldStop,
 						o = !e.shouldPause && this.props.shouldPause,
 						n = e.shouldPause && !this.props.shouldPause,
-						r = !this.props.shouldPause && !this.props.shouldStop,
-						l = !e.isOverlay && !this.props.isOverlay,
-						c = e.isOverlayOpen && !this.props.isOverlayOpen,
-						d = !e.isOverlayOpen && this.props.isOverlayOpen,
-						h = (r || s) && l && c,
-						u = r && l && d;
+						r = e.isBackgrounded && !this.props.isBackgrounded,
+						l = !this.props.shouldPause && !this.props.shouldStop,
+						c = !e.isOverlay && !this.props.isOverlay,
+						d = e.isOverlayOpen && !this.props.isOverlayOpen,
+						h = !e.isOverlayOpen && this.props.isOverlayOpen,
+						u = (l || s) && c && d,
+						m = l && c && h;
 					(i || o) && (this.sendEvent("view", "autoplay"), this.setState({
 						videoScrollPaused: !1
 					}, () => {
 						o && !this.state.videoManualPaused && t && t.currentTime < t.duration && (e.currentTime && (t.currentTime = e.currentTime), this.autoplay(e, this.state) && this.playVideo())
-					})), u && this.sendEvent("change", "pagetype", !0), (n || h) && (this.pauseVideo(), h && this.sendEvent("change", "pagetype", !0)), a && (this.pauseVideo(), this.setState({
+					})), m && this.sendEvent("change", "pagetype", !0), (n || u) && (this.pauseVideo(), u && this.sendEvent("change", "pagetype", !0), r && this.sendEvent("background", "video")), a && (this.pauseVideo(), this.setState({
 						videoScrollPaused: !0
 					}), this.sendEvent("served", "video", !0), this.state.videoEnded || (this.sendEvent("scroll", "pause"), this.props.isListing || this.setVideoMute(!0, !1)))
 				}
@@ -2688,4 +2689,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~CountryPage~FramedGild~GildModal~GovernanceReleaseNotesModal~Mem~c8b748a6.09257777defc59ce61da.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~CountryPage~FramedGild~GildModal~GovernanceReleaseNotesModal~Mem~c8b748a6.3e039bf8e7bd48c7355b.js.map

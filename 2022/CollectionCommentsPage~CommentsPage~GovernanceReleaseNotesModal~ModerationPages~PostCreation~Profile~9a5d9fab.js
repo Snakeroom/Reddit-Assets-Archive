@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~ModerationPages~PostCreation~Profile~9a5d9fab.5d451c988d408375675d.js
-// Retrieved at 8/4/2022, 7:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~ModerationPages~PostCreation~Profile~9a5d9fab.2a773e0f466ecb34383e.js
+// Retrieved at 8/4/2022, 8:50:03 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~ModerationPages~PostCreation~Profile~9a5d9fab"], {
 		"./src/higherOrderComponents/withClickTracking/index.tsx": function(e, t, s) {
@@ -1290,7 +1290,7 @@
 							autoplayPref: s
 						} = this.props;
 						this.iframe && (t || !s && e.documentInFocus || this.toggleEmbedAutoplay(this.iframe, !e.documentInFocus)), this.setState({
-							forcePause: !e.documentInFocus
+							isBackgrounded: !e.documentInFocus
 						})
 					}, this.focusContent = () => {
 						this.shouldFocusContentDebouncer(!0)
@@ -1379,7 +1379,7 @@
 						(this.props.isBlockingInterstitialEnabled || this.props.isBlockingInterstitialV2Enabled) && (e.preventDefault(), this.props.openPostLink(this.props.post))
 					}, this.state = {
 						canLoadContent: e.shouldLoad || !1,
-						forcePause: !1,
+						isBackgrounded: !1,
 						isRevealed: !1,
 						shouldPause: void 0 === e.shouldPause || e.shouldPause,
 						shouldStop: void 0 === e.shouldStop || e.shouldStop,
@@ -1539,7 +1539,7 @@
 						subredditOrProfileDisplayText: $
 					} = this.props, {
 						canLoadContent: J,
-						forcePause: Y,
+						isBackgrounded: Y,
 						shouldPause: te,
 						shouldStop: se,
 						viewportWidth: ie
@@ -1794,6 +1794,7 @@
 									shouldLoad: !0,
 									shouldPause: ae,
 									shouldStop: de,
+									isBackgrounded: Y,
 									hlsSource: T.media.hlsUrl,
 									mpegDashSource: T.media.dashUrl,
 									isGif: T.media.isGif,
@@ -2384,4 +2385,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~ModerationPages~PostCreation~Profile~9a5d9fab.5d451c988d408375675d.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~ModerationPages~PostCreation~Profile~9a5d9fab.2a773e0f466ecb34383e.js.map
