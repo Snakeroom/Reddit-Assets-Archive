@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-MediumPost.04f49e4e0caa7af64321.js
-// Retrieved at 8/8/2022, 4:10:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-MediumPost.e75044f4d1f5f56675f3.js
+// Retrieved at 8/8/2022, 6:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-MediumPost"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -5256,7 +5256,7 @@
 				return !(!c || d) && (e => {
 					return Object(o.c)(e, {
 						experimentEligibilitySelector: o.a,
-						experimentName: n.Wb
+						experimentName: n.Vb
 					}) === n.Ed
 				})(e)
 			}
@@ -5277,7 +5277,7 @@
 			const d = Object(n.a)(a.f, i.f, (e, t) => e && !t),
 				l = e => Object(r.c)(e, {
 					experimentEligibilitySelector: d,
-					experimentName: o.gc
+					experimentName: o.fc
 				}),
 				u = e => !!Object(c.a)(l(e))
 		},
@@ -5628,4 +5628,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-MediumPost.04f49e4e0caa7af64321.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-MediumPost.e75044f4d1f5f56675f3.js.map

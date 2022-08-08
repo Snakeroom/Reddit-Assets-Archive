@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~Reddit~SubredditForkingCTA.fe0b6840702293c8cbe3.js
-// Retrieved at 8/8/2022, 4:10:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~Reddit~SubredditForkingCTA.0146b7515f04f35b782f.js
+// Retrieved at 8/8/2022, 6:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~Reddit~SubredditForkingCTA"], {
 		"./src/lib/bigNumberUtils/percent.ts": function(t, e, r) {
@@ -52,7 +52,7 @@
 			}), u = r("./node_modules/fbt/lib/FbtPublic.js"), l = r("./src/reddit/models/Toast/index.ts"), b = r("./node_modules/reselect/es/index.js"), f = r("./src/reddit/constants/experiments.ts"), p = r("./src/reddit/helpers/chooseVariant/index.ts"), m = r("./src/reddit/selectors/user.ts");
 			const h = Object(b.a)(t => Object(p.c)(t, {
 				experimentEligibilitySelector: m.Q,
-				experimentName: f.ec
+				experimentName: f.dc
 			}), t => t === f.Ed);
 			var O = r("./src/reddit/actions/toaster.ts");
 			const y = "SUBREDDIT_COUNTRY_SITE__LOADED",
@@ -2904,4 +2904,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit~SubredditForkingCTA.fe0b6840702293c8cbe3.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit~SubredditForkingCTA.0146b7515f04f35b782f.js.map

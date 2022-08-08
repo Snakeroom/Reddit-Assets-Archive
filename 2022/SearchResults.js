@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SearchResults.21f3f6000cc4907b5356.js
-// Retrieved at 8/8/2022, 4:10:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SearchResults.450b745fc80d50dfd05c.js
+// Retrieved at 8/8/2022, 6:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SearchResults"], {
 		"./node_modules/lodash/_baseDelay.js": function(e, t) {
@@ -5063,7 +5063,7 @@
 							loadMoreToken: A && A.token ? A.token : void 0,
 							onLastVisibleChildRendered: Y,
 							onLoadMore: () => {
-								E(Object(u.n)(R))
+								E(Object(u.o)(R))
 							}
 						}, e)
 					};
@@ -5622,7 +5622,7 @@
 					inSubredditOrProfile: !1,
 					noPostsComponent: Ke,
 					onLoadMore: function() {
-						h(Object(u.n)([d.cc.Posts]))
+						h(Object(u.o)([d.cc.Posts]))
 					},
 					searchOptions: a
 				})) : o.a.createElement(Re, {
@@ -9025,4 +9025,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SearchResults.21f3f6000cc4907b5356.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SearchResults.450b745fc80d50dfd05c.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CommentsPage.65d3bd8da42cc602226b.js
-// Retrieved at 8/8/2022, 4:10:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CommentsPage.1aaf3188e8cd2cdc1ca1.js
+// Retrieved at 8/8/2022, 6:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CommentsPage", "PostCreation~Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~r~4c415e24", "Governance~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compo~bd4baca2", "CollectionCommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~SearchResults", "Governance~ModListing~Reddit~ReportFlow~Subreddit", "CollectionCommentsPage~ModProgressModule~NewCommunityProgress", "CollectionCommentsPage~Subreddit~SubredditWiki", "AchievementsActions"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -41551,27 +41551,27 @@
 				o = n("./src/reddit/helpers/chooseVariant/index.ts"),
 				i = n("./src/reddit/selectors/experiments/index.ts");
 			const a = Object(s.a)(e => Object(o.c)(e, {
-					experimentName: r.Yb,
+					experimentName: r.Xb,
 					experimentEligibilitySelector: i.e
 				}), e => e === r.jb.Enabled),
 				c = Object(s.a)(e => Object(o.c)(e, {
-					experimentName: r.Zb,
+					experimentName: r.Yb,
 					experimentEligibilitySelector: i.e
 				}), e => e === r.kb.Enabled),
 				d = Object(s.a)(e => Object(o.c)(e, {
-					experimentName: r.ac,
+					experimentName: r.Zb,
 					experimentEligibilitySelector: i.e
 				}), e => e === r.lb.Enabled),
 				l = Object(s.a)(e => Object(o.c)(e, {
-					experimentName: r.bc,
+					experimentName: r.ac,
 					experimentEligibilitySelector: i.e
 				}), e => e === r.mb.Enabled),
 				u = Object(s.a)(e => Object(o.c)(e, {
-					experimentName: r.dc,
+					experimentName: r.cc,
 					experimentEligibilitySelector: i.e
 				}), e => e === r.ob.Enabled),
 				m = Object(s.a)(e => Object(o.c)(e, {
-					experimentName: r.cc,
+					experimentName: r.bc,
 					experimentEligibilitySelector: i.e
 				}), e => e === r.nb.Enabled)
 		},
@@ -41591,7 +41591,7 @@
 			const d = Object(s.a)(a.f, i.f, (e, t) => e && !t),
 				l = e => Object(o.c)(e, {
 					experimentEligibilitySelector: d,
-					experimentName: r.gc
+					experimentName: r.fc
 				}),
 				u = e => !!Object(c.a)(l(e))
 		},
@@ -42861,4 +42861,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommentsPage.65d3bd8da42cc602226b.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommentsPage.1aaf3188e8cd2cdc1ca1.js.map

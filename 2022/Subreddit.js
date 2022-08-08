@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Subreddit.a28c93ba9db399806522.js
-// Retrieved at 8/8/2022, 4:10:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Subreddit.d7633ff9dbfaf6089fc7.js
+// Retrieved at 8/8/2022, 6:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Subreddit", "Frontpage~ModListing", "reddit-components-Econ-PredictionLeaderboard-Sidebar"], {
 		"./node_modules/@reddit/i18n-tools/runtime/helpers/locale/index.js": function(e, t, n) {
@@ -6322,7 +6322,7 @@
 				isHeaderDropdownOpened: e => e.header.isSubscriptionsDropdownOpen,
 				isLoggedIn: I.Q
 			}), R = Object(a.b)(A, e => ({
-				closeSearchDropdown: () => e(Object(m.k)()),
+				closeSearchDropdown: () => e(Object(m.l)()),
 				closeHeaderDropdown: () => e(Object(l.f)()),
 				closeTooltipModal: () => e(Object(b.j)()),
 				openLoginModal: () => e(Object(u.openLoginModal)()),
@@ -15500,7 +15500,7 @@
 						subredditName: t.match.params.subredditName
 					}))
 				},
-				onLoadMoreSearchResults: () => e(Object(w.n)([x.cc.Posts])),
+				onLoadMoreSearchResults: () => e(Object(w.o)([x.cc.Posts])),
 				refreshFeed: () => e(I.s({
 					sort: t.match.params.sort,
 					subredditName: t.match.params.subredditName
@@ -16382,27 +16382,27 @@
 				o = n("./src/reddit/helpers/chooseVariant/index.ts"),
 				a = n("./src/reddit/selectors/experiments/index.ts");
 			const i = Object(s.a)(e => Object(o.c)(e, {
-					experimentName: r.Yb,
+					experimentName: r.Xb,
 					experimentEligibilitySelector: a.e
 				}), e => e === r.jb.Enabled),
 				c = Object(s.a)(e => Object(o.c)(e, {
-					experimentName: r.Zb,
+					experimentName: r.Yb,
 					experimentEligibilitySelector: a.e
 				}), e => e === r.kb.Enabled),
 				d = Object(s.a)(e => Object(o.c)(e, {
-					experimentName: r.ac,
+					experimentName: r.Zb,
 					experimentEligibilitySelector: a.e
 				}), e => e === r.lb.Enabled),
 				l = Object(s.a)(e => Object(o.c)(e, {
-					experimentName: r.bc,
+					experimentName: r.ac,
 					experimentEligibilitySelector: a.e
 				}), e => e === r.mb.Enabled),
 				u = Object(s.a)(e => Object(o.c)(e, {
-					experimentName: r.dc,
+					experimentName: r.cc,
 					experimentEligibilitySelector: a.e
 				}), e => e === r.ob.Enabled),
 				m = Object(s.a)(e => Object(o.c)(e, {
-					experimentName: r.cc,
+					experimentName: r.bc,
 					experimentEligibilitySelector: a.e
 				}), e => e === r.nb.Enabled)
 		},
@@ -16422,7 +16422,7 @@
 			const d = Object(s.a)(i.f, a.f, (e, t) => e && !t),
 				l = e => Object(o.c)(e, {
 					experimentEligibilitySelector: d,
-					experimentName: r.gc
+					experimentName: r.fc
 				}),
 				u = e => !!Object(c.a)(l(e))
 		},
@@ -16875,4 +16875,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Subreddit.a28c93ba9db399806522.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Subreddit.d7633ff9dbfaf6089fc7.js.map
