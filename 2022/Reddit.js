@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Reddit.0d99008c2b5e38d546e8.js
-// Retrieved at 8/8/2022, 2:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Reddit.ae534010f781c6d20017.js
+// Retrieved at 8/8/2022, 3:30:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Reddit"], {
 		"./assets/fonts/BentonSans/font.less": function(e, t, n) {},
@@ -3396,6 +3396,40 @@
 				loggedInGoogleOneTap: "_2qW2MlTCwrBhUAXSCWhbPD"
 			}
 		},
+		"./src/reddit/components/Governance/GasFeesEducationalModal/async.tsx": function(e, t, n) {
+			"use strict";
+			var s = n("./node_modules/@loadable/component/dist/loadable.esm.js"),
+				r = n("./node_modules/react/index.js"),
+				o = n.n(r),
+				a = n("./src/reddit/components/GlobalModalContainer/registry.ts"),
+				i = n("./src/reddit/constants/modals.ts");
+			const c = Object(s.a)({
+				resolved: {},
+				chunkName: () => "reddit-components-Governance-GasFeesEducationalModal",
+				isReady(e) {
+					const t = this.resolve(e);
+					return !1 !== this.resolved[t] && !!n.m[t]
+				},
+				importAsync: () => n.e("reddit-components-Governance-GasFeesEducationalModal").then(n.bind(null, "./src/reddit/components/Governance/GasFeesEducationalModal/index.tsx")),
+				requireAsync(e) {
+					const t = this.resolve(e);
+					return this.resolved[t] = !1, this.importAsync(e).then(e => (this.resolved[t] = !0, e))
+				},
+				requireSync(e) {
+					const t = this.resolve(e);
+					return n(t)
+				},
+				resolve() {
+					return "./src/reddit/components/Governance/GasFeesEducationalModal/index.tsx"
+				}
+			}, {
+				ssr: !1
+			});
+			Object(a.b)(i.a.CRYPTO_GAS_FEES_EDUCATION, e => o.a.createElement(c, {
+				withOverlay: !0,
+				onOverlayClick: e
+			}))
+		},
 		"./src/reddit/components/Governance/MainnetAnnouncementModal/async.tsx": function(e, t, n) {
 			"use strict";
 			var s = n("./node_modules/@loadable/component/dist/loadable.esm.js"),
@@ -3426,41 +3460,6 @@
 				ssr: !1
 			});
 			Object(a.b)(i.a.GOVERNANCE_MAINNET_LAUNCH, e => o.a.createElement(c, {
-				ignoreDefaultFocus: !0,
-				withOverlay: !0,
-				onOverlayClick: e
-			}))
-		},
-		"./src/reddit/components/Governance/PurchaseEthModal/async.tsx": function(e, t, n) {
-			"use strict";
-			var s = n("./node_modules/@loadable/component/dist/loadable.esm.js"),
-				r = n("./node_modules/react/index.js"),
-				o = n.n(r),
-				a = n("./src/reddit/components/GlobalModalContainer/registry.ts"),
-				i = n("./src/reddit/constants/modals.ts");
-			const c = Object(s.a)({
-				resolved: {},
-				chunkName: () => "CryptoPurchaseEth",
-				isReady(e) {
-					const t = this.resolve(e);
-					return !1 !== this.resolved[t] && !!n.m[t]
-				},
-				importAsync: () => n.e("CryptoPurchaseEth").then(n.bind(null, "./src/reddit/components/Governance/PurchaseEthModal/index.tsx")),
-				requireAsync(e) {
-					const t = this.resolve(e);
-					return this.resolved[t] = !1, this.importAsync(e).then(e => (this.resolved[t] = !0, e))
-				},
-				requireSync(e) {
-					const t = this.resolve(e);
-					return n(t)
-				},
-				resolve() {
-					return "./src/reddit/components/Governance/PurchaseEthModal/index.tsx"
-				}
-			}, {
-				ssr: !1
-			});
-			Object(a.b)(i.a.CRYPTO_PURCHASE_ETH, e => o.a.createElement(c, {
 				ignoreDefaultFocus: !0,
 				withOverlay: !0,
 				onOverlayClick: e
@@ -8785,6 +8784,7 @@
 				onOverlayClick: ls(e),
 				withOverlay: !0
 			}));
+			n("./src/reddit/components/Governance/GasFeesEducationalModal/async.tsx");
 			const ds = Object(It.a)({
 				ErrorComponent: () => null,
 				LoadingComponent: () => null,
@@ -8821,7 +8821,7 @@
 				ignoreDefaultFocus: !0,
 				withOverlay: !0
 			}));
-			n("./src/reddit/components/Governance/MainnetAnnouncementModal/async.tsx"), n("./src/reddit/components/Governance/PurchaseEthModal/async.tsx");
+			n("./src/reddit/components/Governance/MainnetAnnouncementModal/async.tsx");
 			const bs = Object(It.a)({
 				ErrorComponent: () => null,
 				LoadingComponent: () => null,
@@ -19838,4 +19838,4 @@
 		["./src/reddit/index.tsx", "runtime~Reddit", "vendors~CommentsPage~ModerationPages~Reddit~reddit-components-ClassicPost~reddit-components-CompactP~d737df3e", "vendors~CommentsPage~Governance~ModListing~ModerationPages~Reddit~Subreddit", "vendors~Chat~Governance~Reddit", "vendors~Reddit", "CommentsPage~Governance~Reddit~ReportFlow~Subreddit~reddit-components-BlankPost~reddit-components-Cl~5351df81", "PostCreation~Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~r~4c415e24", "Governance~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compo~bd4baca2", "Governance~ModListing~Reddit~ReportFlow~Subreddit", "Chat~Governance~Reddit", "Governance~Reddit~Subreddit", "Governance~Reddit~SubredditForkingCTA", "Governance~Reddit", "Reddit~StandalonePostPage", "AuthorHovercard~Reddit"]
 	]
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit.0d99008c2b5e38d546e8.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit.ae534010f781c6d20017.js.map
