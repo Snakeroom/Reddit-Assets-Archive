@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/EconPowerupsFlairModal.c432e27a1288cc29b60b.js
-// Retrieved at 8/3/2022, 9:40:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/EconPowerupsFlairModal.f8a85d72191570279315.js
+// Retrieved at 8/8/2022, 2:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["EconPowerupsFlairModal", "AchievementsActions"], {
 		"./src/reddit/actions/economics/powerups/flairs/index.ts": function(e, t, r) {
@@ -7,9 +7,9 @@
 			r.r(t), r.d(t, "onSubredditUserPowerupsFlairsLoaded", (function() {
 				return g
 			})), r.d(t, "onUsersSupportedSubredditsLoaded", (function() {
-				return j
-			})), r.d(t, "onSubredditUserPowerupsFlairPreferenceUpdateRequested", (function() {
 				return E
+			})), r.d(t, "onSubredditUserPowerupsFlairPreferenceUpdateRequested", (function() {
+				return j
 			})), r.d(t, "onSubredditUserPowerupsFlairPreferenceUpdateSuccess", (function() {
 				return F
 			})), r.d(t, "onSubredditUserPowerupsFlairPreferenceUpdateFailed", (function() {
@@ -67,8 +67,8 @@
 				}
 			});
 			const g = Object(i.a)(v.d),
-				j = Object(i.a)(v.i),
-				E = Object(i.a)(v.f),
+				E = Object(i.a)(v.i),
+				j = Object(i.a)(v.f),
 				F = Object(i.a)(v.g),
 				O = Object(i.a)(v.e),
 				I = Object(i.a)(v.h),
@@ -94,7 +94,7 @@
 								subredditInfoById: s,
 								redditorsInfoByIds: i
 							} = t;
-						await r(g(s)), i && await r(j(i))
+						await r(g(s)), i && await r(E(i))
 					} catch (l) {
 						a.c.captureException(l)
 					}
@@ -185,7 +185,7 @@
 						d = Object(f.k)(o);
 					if (!d) return;
 					const l = d.id;
-					t(E(e));
+					t(j(e));
 					const {
 						subredditId: p,
 						achievementFlairType: b,
@@ -323,8 +323,8 @@
 				w = r("./src/reddit/components/Badges/UserDisplay/index.m.less"),
 				g = r.n(w);
 
-			function j() {
-				return (j = Object.assign || function(e) {
+			function E() {
+				return (E = Object.assign || function(e) {
 					for (var t = 1; t < arguments.length; t++) {
 						var r = arguments[t];
 						for (var s in r) Object.prototype.hasOwnProperty.call(r, s) && (e[s] = r[s])
@@ -332,7 +332,7 @@
 					return e
 				}).apply(this, arguments)
 			}
-			const E = "add-custom-badge-tooltip",
+			const j = "add-custom-badge-tooltip",
 				F = 100,
 				O = 2 * F,
 				I = 24;
@@ -356,7 +356,7 @@
 						className: Object(d.a)(g.a.image, this.props.className),
 						src: `${o.a.assetPath}/img/badges/placeholder.png`
 					});
-					const t = `${E}-${this.props.uniqueIdentifier}`,
+					const t = `${j}-${this.props.uniqueIdentifier}`,
 						r = this.props.badgeSize || I;
 					return i.a.createElement(s.Fragment, null, this.props.showAddCustom && i.a.createElement("div", {
 						className: g.a.wrapper,
@@ -452,7 +452,7 @@
 					allBadges: r,
 					...s
 				} = e, a = t.map(e => r[e]).filter(Boolean);
-				return i.a.createElement(P, j({
+				return i.a.createElement(P, E({
 					badges: a
 				}, s))
 			}
@@ -593,8 +593,8 @@
 					onClick: o
 				}))
 			};
-			var j = r("./src/reddit/components/Econ/PowerupsFlair/PowerupsFlairModal/index.m.less"),
-				E = r.n(j),
+			var E = r("./src/reddit/components/Econ/PowerupsFlair/PowerupsFlairModal/index.m.less"),
+				j = r.n(E),
 				F = r("./src/reddit/actions/economics/powerups/flairs/index.ts"),
 				O = r("./src/reddit/components/Econ/PowerupsMarketingModal/async.tsx"),
 				I = r("./src/reddit/controls/ToggleSwitch/index.tsx"),
@@ -835,11 +835,11 @@
 					w = Object(o.e)(e => v ? Object(h.d)(e, {
 						subredditId: v.id
 					}) : null),
-					j = !!x && !!w;
+					E = !!x && !!w;
 				return f && v ? n.a.createElement("div", {
-					className: E.a.container
+					className: j.a.container
 				}, n.a.createElement("div", {
-					className: E.a.stickyContent
+					className: j.a.stickyContent
 				}, n.a.createElement(g, {
 					subredditId: v.id,
 					userId: f.id,
@@ -849,17 +849,17 @@
 						e(Object(d.g)(l.a.ACHIEVEMENT_FLAIR))
 					}
 				})), n.a.createElement("div", {
-					className: E.a.scrollContainer,
+					className: j.a.scrollContainer,
 					ref: t,
 					onScroll: s
-				}, j && n.a.createElement(te, {
+				}, E && n.a.createElement(te, {
 					subredditId: v.id,
 					flairData: w
 				}), n.a.createElement(W, {
 					subredditId: v.id,
 					userId: f.id
 				})), n.a.createElement("div", {
-					className: Object(i.a)(E.a.stickyContent, E.a.scrollGradientContainer)
+					className: Object(i.a)(j.a.stickyContent, j.a.scrollGradientContainer)
 				}, n.a.createElement(c.a, {
 					isVisible: r
 				}))) : null
@@ -1123,8 +1123,8 @@
 				d = e => n.includes(e),
 				c = Object(s.a)(e => Object(a.c)(e, {
 					experimentEligibilitySelector: a.a,
-					experimentName: i.ae
-				}), e => e === i.Dd)
+					experimentName: i.be
+				}), e => e === i.Ed)
 		},
 		"./src/redditGQL/operations/SubredditUserAchievements.json": function(e) {
 			e.exports = JSON.parse('{"id":"92790c69eba6"}')
@@ -1134,4 +1134,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EconPowerupsFlairModal.c432e27a1288cc29b60b.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EconPowerupsFlairModal.f8a85d72191570279315.js.map

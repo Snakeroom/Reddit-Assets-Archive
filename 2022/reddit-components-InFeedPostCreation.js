@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-InFeedPostCreation.24dee79243789ec5b64e.js
-// Retrieved at 8/3/2022, 9:40:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-InFeedPostCreation.60a98e27747ddde1f249.js
+// Retrieved at 8/8/2022, 2:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-InFeedPostCreation"], {
 		"./src/reddit/components/InFeedPostCreation/index.m.less": function(e, t, n) {
@@ -34,9 +34,9 @@
 				b = n("./src/reddit/components/UserIcon/CurrentUserIcon.tsx"),
 				I = n("./src/reddit/controls/Button/index.tsx"),
 				x = n("./src/reddit/controls/InternalLink/index.tsx"),
-				_ = n("./src/reddit/helpers/trackers/postComposer.ts"),
-				f = n("./src/reddit/icons/fonts/index.tsx"),
-				E = n("./src/reddit/selectors/experiments/onlineIndicator.ts"),
+				E = n("./src/reddit/helpers/trackers/postComposer.ts"),
+				_ = n("./src/reddit/icons/fonts/index.tsx"),
+				f = n("./src/reddit/selectors/experiments/onlineIndicator.ts"),
 				O = n("./src/reddit/selectors/subreddit.ts"),
 				U = n("./src/reddit/selectors/user.ts"),
 				N = n("./src/reddit/components/InFeedPostCreation/index.m.less"),
@@ -68,7 +68,7 @@
 				},
 				M = Object(a.c)({
 					currentUser: U.k,
-					isPresenceConsumptionExpEnabled: E.c,
+					isPresenceConsumptionExpEnabled: f.c,
 					isPresenceTogglePref: U.V,
 					subreddit: O.A,
 					subredditAboutInfo: O.x
@@ -98,7 +98,7 @@
 					toggleTooltip: m
 				} = e;
 				const b = (u ? `/r/${u}` : "") + "/submit",
-					E = function(e, t) {
+					f = function(e, t) {
 						if (!e) return {
 							link: !0,
 							media: !0
@@ -119,7 +119,7 @@
 						}
 					}(a, l),
 					O = e => {
-						i(Object(_.x)({
+						i(Object(E.x)({
 							actionInfoType: "du",
 							subredditId: null == a ? void 0 : a.id,
 							noun: h(e)
@@ -148,7 +148,7 @@
 						hk: "OcnKS"
 					}),
 					type: "text"
-				}), E.media && o.a.createElement(I.t, {
+				}), f.media && o.a.createElement(I.t, {
 					className: j.a.Button,
 					"aria-label": g(),
 					priority: I.c.Plain,
@@ -159,13 +159,13 @@
 					onMouseEnter: () => m(P.Media),
 					onMouseLeave: () => m(P.Media),
 					to: b + k(d.Wb.MEDIA),
-					Icon: Object(f.b)("image_post"),
+					Icon: Object(_.b)("image_post"),
 					isSquare: !0
 				}, o.a.createElement(p.c, {
 					caretOnTop: !0,
 					tooltipId: P.Media,
 					text: g()
-				})), E.link && o.a.createElement(I.t, {
+				})), f.link && o.a.createElement(I.t, {
 					className: j.a.Button,
 					priority: I.c.Plain,
 					kind: I.b.InternalLink,
@@ -176,7 +176,7 @@
 					onMouseEnter: () => m(P.Link),
 					onMouseLeave: () => m(P.Link),
 					to: b + k(d.Wb.LINK_ONLY),
-					Icon: Object(f.b)("link_post"),
+					Icon: Object(_.b)("link_post"),
 					isSquare: !0
 				}, o.a.createElement(p.c, {
 					caretOnTop: !0,
@@ -215,8 +215,8 @@
 					isPresenceUserPrefEnabled: d.V,
 					shouldHideNSFW: d.F
 				}),
-				_ = Object(c.b)(x);
-			t.a = _(e => {
+				E = Object(c.b)(x);
+			t.a = E(e => {
 				const {
 					currentUser: t,
 					shouldShowPresenceIndicator: n,
@@ -255,30 +255,30 @@
 			const c = e => {
 					return Object(s.c)(e, {
 						experimentEligibilitySelector: s.a,
-						experimentName: r.Se
-					}) === r.Dd
+						experimentName: r.Te
+					}) === r.Ed
 				},
 				i = e => {
 					if (Object(o.a)(e)) return !1;
 					return Object(s.c)(e, {
 						experimentEligibilitySelector: s.a,
-						experimentName: r.Re
-					}) === r.Dd
+						experimentName: r.Se
+					}) === r.Ed
 				},
 				a = e => {
 					return Object(s.c)(e, {
 						experimentEligibilitySelector: s.a,
-						experimentName: r.Ie
-					}) === r.Dd
+						experimentName: r.Je
+					}) === r.Ed
 				},
 				d = e => {
 					if (Object(o.a)(e)) return !1;
 					return Object(s.c)(e, {
 						experimentEligibilitySelector: s.a,
-						experimentName: r.He
-					}) === r.Dd
+						experimentName: r.Ie
+					}) === r.Ed
 				}
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-InFeedPostCreation.24dee79243789ec5b64e.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-InFeedPostCreation.60a98e27747ddde1f249.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SnoovatarModal.5175c53a617f62a7262f.js
-// Retrieved at 8/3/2022, 9:40:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SnoovatarModal.789aac5ce2d19df59fa0.js
+// Retrieved at 8/8/2022, 2:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SnoovatarModal"], {
 		"./src/reddit/components/SnoovatarModal/SnoovatarIframe.tsx": function(e, t, a) {
@@ -85,10 +85,10 @@
 				j = a("./src/telemetry/index.ts"),
 				f = a("./src/reddit/components/SnoovatarModal/index.m.less"),
 				_ = a.n(f),
-				h = a("./src/reddit/components/SnoovatarModal/SnoovatarIframe.tsx");
+				E = a("./src/reddit/components/SnoovatarModal/SnoovatarIframe.tsx");
 
-			function E() {
-				return (E = Object.assign || function(e) {
+			function h() {
+				return (h = Object.assign || function(e) {
 					for (var t = 1; t < arguments.length; t++) {
 						var a = arguments[t];
 						for (var s in a) Object.prototype.hasOwnProperty.call(a, s) && (e[s] = a[s])
@@ -174,14 +174,14 @@
 						sendEvent: j.a
 					}, c.a.createElement(A, {
 						navState: D
-					})))) : c.a.createElement(h.a, E({
+					})))) : c.a.createElement(E.a, h({
 						className: _.a.snoovatarModalIframeContainer
 					}, e))
 				});
 			t.default = () => {
 				const e = Object(d.d)(),
 					t = Object(d.e)(e => Object(v.a)(e));
-				return c.a.createElement(w, E({}, t, {
+				return c.a.createElement(w, h({}, t, {
 					className: _.a.snoovatarModal,
 					withOverlay: !0,
 					onOverlayClick: () => e(Object(l.a)())
@@ -195,8 +195,8 @@
 			}));
 			var s = a("./src/reddit/constants/experiments.ts"),
 				r = a("./src/reddit/selectors/experiments/econ/simpleExperiment.ts");
-			const n = Object(r.a)(s.hd)
+			const n = Object(r.a)(s.id)
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SnoovatarModal.5175c53a617f62a7262f.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SnoovatarModal.789aac5ce2d19df59fa0.js.map

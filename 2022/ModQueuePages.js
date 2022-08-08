@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModQueuePages.c809f03c182f26b1b4ef.js
-// Retrieved at 8/8/2022, 1:00:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModQueuePages.fd4fe07f5457c785f1d7.js
+// Retrieved at 8/8/2022, 2:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModQueuePages"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -1798,99 +1798,100 @@
 						subredditId: e,
 						itemIds: t
 					})), n(Object(R.i)(A.a.ADD_REMOVAL_REASON))
-				}, fe = Object(y.a)("REMOVALREASONS__SUBMIT_PENDING"), xe = Object(y.a)("REMOVALREASONS__SUBMIT_SUCCESS"), ge = Object(y.a)("REMOVALREASONS__SUBMIT_FAILED"), ve = Object(y.a)("REMOVALREASONS__MESSAGE_PENDING"), Oe = Object(y.a)("REMOVALREASONS__MESSAGE_PRIVATE_SUCCESS"), _e = Object(y.a)("REMOVALREASONS__MESSAGE_PUBLIC_SUCCESS"), Ee = Object(y.a)("REMOVALREASONS__MESSAGE_FAILED"), ke = (e, t, n, s, o) => async (r, a, i) => {
+				}, fe = Object(y.a)("REMOVALREASONS__SUBMIT_PENDING"), xe = Object(y.a)("REMOVALREASONS__SUBMIT_SUCCESS"), ge = Object(y.a)("REMOVALREASONS__SUBMIT_FAILED"), ve = Object(y.a)("REMOVALREASONS__MESSAGE_PENDING"), Oe = Object(y.a)("REMOVALREASONS__MESSAGE_PRIVATE_SUCCESS"), _e = Object(y.a)("REMOVALREASONS__MESSAGE_PUBLIC_SUCCESS"), Ee = Object(y.a)("REMOVALREASONS__MESSAGE_FAILED"), ke = (e, t, n, s, o, r) => async (a, i, d) => {
 					let {
-						apiContext: d
-					} = i;
-					const c = a(),
-						l = c.user.account && c.user.account.displayText,
-						m = e[0],
-						u = Object(V.a)(m) ? X.e.Post : X.e.Comment,
-						p = u === X.e.Post ? c.posts.models[m] : c.features.comments.models[m],
-						b = u === X.e.Post ? P.S : w.j;
-					if (!p || !l) return !1;
-					r(fe()), r(b({
-						[m]: {
+						apiContext: c
+					} = d;
+					const l = i(),
+						m = l.user.account && l.user.account.displayText,
+						u = e[0],
+						p = Object(V.a)(u) ? X.e.Post : X.e.Comment,
+						b = p === X.e.Post ? l.posts.models[u] : l.features.comments.models[u],
+						h = p === X.e.Post ? P.S : w.j;
+					if (!b || !m) return !1;
+					a(fe()), a(h({
+						[u]: {
 							modNote: o,
 							modRemovalReason: t && t.title,
-							modReasonBy: l
+							modReasonBy: m
 						}
 					}));
-					const h = {
+					const f = {
 							itemIds: e,
 							modNote: o,
 							reasonId: t ? t.id : null
 						},
-						f = await W(d(), h);
-					if (f.ok) {
-						if (r(xe()), t) {
-							r(ve());
+						x = await W(c(), f);
+					if (x.ok) {
+						if (a(xe()), t) {
+							a(ve());
 							const o = {
 									itemId: e,
 									message: n,
 									title: t.title,
+									isLocked: r,
 									type: s
 								},
-								a = await H(d(), Object(X.h)(o, u), u);
-							if (a.ok) {
+								i = await H(c(), Object(X.h)(o, p), p);
+							if (i.ok) {
 								if ([X.f.Public, X.f.PublicAsSubreddit].includes(s)) {
-									if (r(_e()), a.body) {
-										const e = Object(Q.a)(a.body),
+									if (a(_e()), i.body) {
+										const e = Object(Q.a)(i.body),
 											t = {
 												comment: e,
-												parentId: m
+												parentId: u
 											},
-											n = Object(Y.f)(c),
-											s = c.platform.currentPage && c.platform.currentPage.routeMatch;
-										let o = n && s && Object(q.a)(s, c, c.posts.models[e.postId]);
+											n = Object(Y.f)(l),
+											s = l.platform.currentPage && l.platform.currentPage.routeMatch;
+										let o = n && s && Object(q.a)(s, l, l.posts.models[e.postId]);
 										if (o || (o = Object(S.a)(e.postId, null, {
 												sort: j.u,
 												hasSortParam: !0
-											})), u === X.e.Post) {
-											const n = Object(I.a)(J.c.replyToPost, m);
-											r(Object(N.r)({
+											})), p === X.e.Post) {
+											const n = Object(I.a)(J.c.replyToPost, u);
+											a(Object(N.r)({
 												...t,
-												headCommentId: Object(K.w)(c, {
+												headCommentId: Object(K.w)(l, {
 													commentsPageKey: o
 												}),
 												commentsPageKey: o,
 												draftKey: n
 											}));
-											const s = c.postStickiedComments.data[m];
-											r(Object(M.f)({
+											const s = l.postStickiedComments.data[u];
+											a(Object(M.f)({
 												id: e.id,
 												postId: e.postId,
 												commentsPageKey: o
-											})), s && s !== e.id && r(Object(w.j)({
+											})), s && s !== e.id && a(Object(w.j)({
 												[s]: {
 													isStickied: !1
 												}
 											}))
-										} else if (u === X.e.Comment) {
-											const e = Object(I.a)(J.c.replyToComment, p.id),
-												n = Object(K.j)(c, {
-													commentId: m,
+										} else if (p === X.e.Comment) {
+											const e = Object(I.a)(J.c.replyToComment, b.id),
+												n = Object(K.j)(l, {
+													commentId: u,
 													commentsPageKey: o
 												});
-											r(Object(N.p)({
+											a(Object(N.p)({
 												...t,
-												parentCommentId: m,
+												parentCommentId: u,
 												commentsPageKey: o,
 												draftKey: e,
 												depth: n + 1
 											}))
 										}
 									}
-								} else r(Oe());
+								} else a(Oe());
 								return !0
 							}
-							return r(Ee(a.error)), !1
+							return a(Ee(i.error)), !1
 						}
-					} else r(ge(f.error)), r(b({
-						[m]: {
-							modNote: p.modNote,
-							modRemovalReason: p.modRemovalReason,
-							modReasonBy: p.modReasonBy
+					} else a(ge(x.error)), a(h({
+						[u]: {
+							modNote: b.modNote,
+							modRemovalReason: b.modRemovalReason,
+							modReasonBy: b.modReasonBy
 						}
 					}));
 					return !1
@@ -4351,7 +4352,7 @@
 			const B = e => Object(A.c)(e, {
 				experimentEligibilitySelector: F.Q,
 				experimentName: L.hc
-			}) === L.Dd;
+			}) === L.Ed;
 			var D = n("./src/reddit/components/ModQueueList/SortByNumReportsTooltip.m.less"),
 				U = n.n(D);
 			const W = e => {
@@ -6845,12 +6846,12 @@
 						rtJsonElementProps: a
 					});
 					switch (r) {
-						case h.Cf.SmIcon:
+						case h.Df.SmIcon:
 							return o.a.createElement(p, {
 								subredditName: s,
 								rtJsonElementProps: a
 							});
-						case h.Cf.SmIconHc:
+						case h.Df.SmIconHc:
 							return o.a.createElement(p, {
 								subredditName: s,
 								isHoverable: !0,
@@ -7746,7 +7747,8 @@
 						[t === c.Bulk ? "item_ids" : "item_id"]: e.itemId,
 						message: e.message,
 						title: e.title,
-						type: e.type
+						type: e.type,
+						lock_comment: e.isLocked
 					}
 				}
 		},
@@ -8077,12 +8079,12 @@
 				d = e => {
 					return Object(r.c)(e, {
 						experimentEligibilitySelector: i,
-						experimentName: s.wf
+						experimentName: s.xf
 					}) || ""
 				},
 				c = e => {
 					const t = d(e);
-					return t === s.Cf.SmIcon || t === s.Cf.SmIconHc
+					return t === s.Df.SmIcon || t === s.Df.SmIconHc
 				},
 				l = (e, t) => {
 					let {
@@ -8108,4 +8110,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModQueuePages.c809f03c182f26b1b4ef.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModQueuePages.fd4fe07f5457c785f1d7.js.map

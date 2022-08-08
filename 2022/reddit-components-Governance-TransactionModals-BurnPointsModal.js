@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-BurnPointsModal.c59f4536b561ff7e17af.js
-// Retrieved at 8/4/2022, 2:20:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-BurnPointsModal.838e657b71fa70ab8488.js
+// Retrieved at 8/8/2022, 2:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Governance-TransactionModals-BurnPointsModal"], {
 		"./node_modules/dijkstrajs/dijkstra.js": function(e, t, r) {
@@ -9,12 +9,12 @@
 					var o = {},
 						a = {};
 					a[t] = 0;
-					var l, s, i, c, d, u, f, m = n.PriorityQueue.make();
-					for (m.push(t, 0); !m.empty();)
-						for (i in s = (l = m.pop()).value, c = l.cost, d = e[s] || {}) d.hasOwnProperty(i) && (u = c + d[i], f = a[i], (void 0 === a[i] || f > u) && (a[i] = u, m.push(i, u), o[i] = s));
+					var l, s, i, c, d, u, f, h = n.PriorityQueue.make();
+					for (h.push(t, 0); !h.empty();)
+						for (i in s = (l = h.pop()).value, c = l.cost, d = e[s] || {}) d.hasOwnProperty(i) && (u = c + d[i], f = a[i], (void 0 === a[i] || f > u) && (a[i] = u, h.push(i, u), o[i] = s));
 					if (void 0 !== r && void 0 === a[r]) {
-						var h = ["Could not find a path from ", t, " to ", r, "."].join("");
-						throw new Error(h)
+						var m = ["Could not find a path from ", t, " to ", r, "."].join("");
+						throw new Error(m)
 					}
 					return o
 				},
@@ -506,15 +506,15 @@
 				d = r("./node_modules/qrcode/lib/core/mask-pattern.js"),
 				u = r("./node_modules/qrcode/lib/core/error-correction-code.js"),
 				f = r("./node_modules/qrcode/lib/core/reed-solomon-encoder.js"),
-				m = r("./node_modules/qrcode/lib/core/version.js"),
-				h = r("./node_modules/qrcode/lib/core/format-info.js"),
+				h = r("./node_modules/qrcode/lib/core/version.js"),
+				m = r("./node_modules/qrcode/lib/core/format-info.js"),
 				p = r("./node_modules/qrcode/lib/core/mode.js"),
 				v = r("./node_modules/qrcode/lib/core/segments.js"),
 				g = r("./node_modules/qrcode/node_modules/isarray/index.js");
 
 			function b(e, t, r) {
 				var n, o, a = e.size,
-					l = h.getEncodedBits(t, r);
+					l = m.getEncodedBits(t, r);
 				for (n = 0; n < 15; n++) o = 1 == (l >> n & 1), n < 6 ? e.set(n, 8, o, !0) : n < 8 ? e.set(n + 1, 8, o, !0) : e.set(a - 15 + n, 8, o, !0), n < 8 ? e.set(8, a - n - 1, o, !0) : n < 9 ? e.set(8, 15 - n - 1 + 1, o, !0) : e.set(8, 15 - n - 1, o, !0);
 				e.set(a - 8, 8, 1, !0)
 			}
@@ -528,8 +528,8 @@
 				for (a.getLengthInBits() + 4 <= s && a.put(0, 4); a.getLengthInBits() % 8 != 0;) a.putBit(0);
 				for (var i = (s - a.getLengthInBits()) / 8, c = 0; c < i; c++) a.put(c % 2 ? 17 : 236, 8);
 				return function(e, t, r) {
-					for (var a = o.getSymbolTotalCodewords(t), l = u.getTotalCodewordsCount(t, r), s = a - l, i = u.getBlocksCount(t, r), c = i - a % i, d = Math.floor(a / i), m = Math.floor(s / i), h = m + 1, p = d - m, v = new f(p), g = 0, b = new Array(i), E = new Array(i), y = 0, w = n.from(e.buffer), _ = 0; _ < i; _++) {
-						var x = _ < c ? m : h;
+					for (var a = o.getSymbolTotalCodewords(t), l = u.getTotalCodewordsCount(t, r), s = a - l, i = u.getBlocksCount(t, r), c = i - a % i, d = Math.floor(a / i), h = Math.floor(s / i), m = h + 1, p = d - h, v = new f(p), g = 0, b = new Array(i), E = new Array(i), y = 0, w = n.from(e.buffer), _ = 0; _ < i; _++) {
+						var x = _ < c ? h : m;
 						b[_] = w.slice(g, g + x), E[_] = v.encode(b[_]), g += x, y = Math.max(y, x)
 					}
 					var M, j, C = n.alloc(a),
@@ -550,16 +550,16 @@
 					var l = t;
 					if (!l) {
 						var u = v.rawSplit(e);
-						l = m.getBestVersionForData(u, r)
+						l = h.getBestVersionForData(u, r)
 					}
 					a = v.fromString(e, l || 40)
 				}
-				var f = m.getBestVersionForData(a, r);
+				var f = h.getBestVersionForData(a, r);
 				if (!f) throw new Error("The amount of data is too big to be stored in a QR Code");
 				if (t) {
 					if (t < f) throw new Error("\nThe chosen QR Code version cannot contain this amount of data.\nMinimum version required to store current data is: " + f + ".\n")
 				} else t = f;
-				var h = E(t, r, a),
+				var m = E(t, r, a),
 					p = o.getSymbolSize(t),
 					y = new s(p);
 				return function(e, t) {
@@ -579,7 +579,7 @@
 							for (var o = r[n][0], a = r[n][1], l = -2; l <= 2; l++)
 								for (var s = -2; s <= 2; s++) - 2 === l || 2 === l || -2 === s || 2 === s || 0 === l && 0 === s ? e.set(o + l, a + s, !0, !0) : e.set(o + l, a + s, !1, !0)
 					}(y, t), b(y, r, 0), t >= 7 && function(e, t) {
-						for (var r, n, o, a = e.size, l = m.getEncodedBits(t), s = 0; s < 18; s++) r = Math.floor(s / 3), n = s % 3 + a - 8 - 3, o = 1 == (l >> s & 1), e.set(r, n, o, !0), e.set(n, r, o, !0)
+						for (var r, n, o, a = e.size, l = h.getEncodedBits(t), s = 0; s < 18; s++) r = Math.floor(s / 3), n = s % 3 + a - 8 - 3, o = 1 == (l >> s & 1), e.set(r, n, o, !0), e.set(n, r, o, !0)
 					}(y, t),
 					function(e, t) {
 						for (var r = e.size, n = -1, o = r - 1, a = 7, l = 0, s = r - 1; s > 0; s -= 2)
@@ -593,7 +593,7 @@
 									break
 								}
 							}
-					}(y, h), isNaN(n) && (n = d.getBestMask(y, b.bind(null, y, r))), d.applyMask(n, y), b(y, r, n), {
+					}(y, m), isNaN(n) && (n = d.getBestMask(y, b.bind(null, y, r))), d.applyMask(n, y), b(y, r, n), {
 						modules: y,
 						version: t,
 						errorCorrectionLevel: r,
@@ -604,7 +604,7 @@
 			t.create = function(e, t) {
 				if (void 0 === e || "" === e) throw new Error("No input text");
 				var r, n, l = a.M;
-				return void 0 !== t && (l = a.from(t.errorCorrectionLevel, a.M), r = m.from(t.version), n = d.from(t.maskPattern), t.toSJISFunc && o.setToSJISFunction(t.toSJISFunc)), y(e, r, l, n)
+				return void 0 !== t && (l = a.from(t.errorCorrectionLevel, a.M), r = h.from(t.version), n = d.from(t.maskPattern), t.toSJISFunc && o.setToSJISFunction(t.toSJISFunc)), y(e, r, l, n)
 			}
 		},
 		"./node_modules/qrcode/lib/core/reed-solomon-encoder.js": function(e, t, r) {
@@ -669,7 +669,7 @@
 				return o
 			}
 
-			function m(e) {
+			function h(e) {
 				var t, r, o = f(i.NUMERIC, n.NUMERIC, e),
 					a = f(i.ALPHANUMERIC, n.ALPHANUMERIC, e);
 				return c.isKanjiModeEnabled() ? (t = f(i.BYTE, n.BYTE, e), r = f(i.KANJI, n.KANJI, e)) : (t = f(i.BYTE_KANJI, n.BYTE, e), r = []), o.concat(a, t, r).sort((function(e, t) {
@@ -683,7 +683,7 @@
 				}))
 			}
 
-			function h(e, t) {
+			function m(e, t) {
 				switch (t) {
 					case n.NUMERIC:
 						return o.getBitsLength(e);
@@ -727,8 +727,8 @@
 									lastCount: 0
 								}, o[u] = {};
 								for (var f = 0; f < a.length; f++) {
-									var m = a[f];
-									r[m] && r[m].node.mode === d.mode ? (o[m][u] = h(r[m].lastCount + d.length, d.mode) - h(r[m].lastCount, d.mode), r[m].lastCount += d.length) : (r[m] && (r[m].lastCount = d.length), o[m][u] = h(d.length, d.mode) + 4 + n.getCharCountIndicator(d.mode, t))
+									var h = a[f];
+									r[h] && r[h].node.mode === d.mode ? (o[h][u] = m(r[h].lastCount + d.length, d.mode) - m(r[h].lastCount, d.mode), r[h].lastCount += d.length) : (r[h] && (r[h].lastCount = d.length), o[h][u] = m(d.length, d.mode) + 4 + n.getCharCountIndicator(d.mode, t))
 								}
 							}
 							a = i
@@ -776,7 +776,7 @@
 							}
 						}
 						return t
-					}(m(e, c.isKanjiModeEnabled())), r), a = d.find_path(o.map, "start", "end"), l = [], s = 1; s < a.length - 1; s++) l.push(o.table[a[s]].node);
+					}(h(e, c.isKanjiModeEnabled())), r), a = d.find_path(o.map, "start", "end"), l = [], s = 1; s < a.length - 1; s++) l.push(o.table[a[s]].node);
 				return t.fromArray(function(e) {
 					return e.reduce((function(e, t) {
 						var r = e.length - 1 >= 0 ? e[e.length - 1] : null;
@@ -784,7 +784,7 @@
 					}), [])
 				}(l))
 			}, t.rawSplit = function(e) {
-				return t.fromArray(m(e, c.isKanjiModeEnabled()))
+				return t.fromArray(h(e, c.isKanjiModeEnabled()))
 			}
 		},
 		"./node_modules/qrcode/lib/core/utils.js": function(e, t) {
@@ -928,8 +928,8 @@
 						return n
 					}(i, s, l.margin) + '"/>',
 					f = 'viewBox="0 0 ' + c + " " + c + '"',
-					m = '<svg xmlns="http://www.w3.org/2000/svg" ' + (l.width ? 'width="' + l.width + '" height="' + l.width + '" ' : "") + f + ' shape-rendering="crispEdges">' + d + u + "</svg>\n";
-				return "function" == typeof r && r(null, m), m
+					h = '<svg xmlns="http://www.w3.org/2000/svg" ' + (l.width ? 'width="' + l.width + '" height="' + l.width + '" ' : "") + f + ' shape-rendering="crispEdges">' + d + u + "</svg>\n";
+				return "function" == typeof r && r(null, h), h
 			}
 		},
 		"./node_modules/qrcode/lib/renderer/utils.js": function(e, t) {
@@ -974,9 +974,9 @@
 				for (var o = r.modules.size, a = r.modules.data, l = t.getScale(o, n), s = Math.floor((o + 2 * n.margin) * l), i = n.margin * l, c = [n.color.light, n.color.dark], d = 0; d < s; d++)
 					for (var u = 0; u < s; u++) {
 						var f = 4 * (d * s + u),
-							m = n.color.light;
-						if (d >= i && u >= i && d < s - i && u < s - i) m = c[a[Math.floor((d - i) / l) * o + Math.floor((u - i) / l)] ? 1 : 0];
-						e[f++] = m.r, e[f++] = m.g, e[f++] = m.b, e[f] = m.a
+							h = n.color.light;
+						if (d >= i && u >= i && d < s - i && u < s - i) h = c[a[Math.floor((d - i) / l) * o + Math.floor((u - i) / l)] ? 1 : 0];
+						e[f++] = h.r, e[f++] = h.g, e[f++] = h.b, e[f] = h.a
 					}
 			}
 		},
@@ -1340,8 +1340,8 @@
 				d = r("./src/reddit/helpers/governance/tokens.ts"),
 				u = r("./src/reddit/selectors/crypto/points.ts"),
 				f = r("./src/reddit/components/Governance/TokenAmount/index.m.less"),
-				m = r.n(f);
-			const h = Object(l.c)({
+				h = r.n(f);
+			const m = Object(l.c)({
 				pointsDetails: (e, t) => {
 					let {
 						subredditId: r
@@ -1349,15 +1349,15 @@
 					return Object(u.b)(e, r)
 				}
 			});
-			t.a = Object(a.b)(h)((function(e) {
+			t.a = Object(a.b)(m)((function(e) {
 				var t;
 				return o.a.createElement("div", {
-					className: Object(s.a)(m.a.container, e.className, {
-						[m.a.small]: e.small
+					className: Object(s.a)(h.a.container, e.className, {
+						[h.a.small]: e.small
 					})
 				}, o.a.createElement(c.a, {
-					className: Object(s.a)(m.a.token, {
-						[m.a.small]: e.small
+					className: Object(s.a)(h.a.token, {
+						[h.a.small]: e.small
 					}),
 					grey: e.grey,
 					subredditId: e.subredditId
@@ -1484,7 +1484,7 @@
 					d: "M41.4 22h.3a.5.5 0 00.4-.2v-.2a17.2 17.2 0 01.4-1.5V20l.2-.1.8-.5.4-.3-.3-.2-1-.7h-.1v-.4l-.2-1-.1-.4a.2.2 0 00.2 0l-.4.3-.8.6-.3.2h-.2l-.8-.2h-.7v-.1l.1-.1.1.2.3 1.2.1.2v.2l-.7 1-.2.3v.1h.2l.5.1.9.2.8 1.4-1-1h.2-1.9a.9.9 0 01-.5-1v-.2l.1-.2.2-.2.4-1v.4l-.4-1v-.3l-.1-.1v-.2a1 1 0 011-1.2h.6l1 .2h-.5l.7-.4.3-.2.1-.1.1-.1c.3-.2.6-.3.8-.2a1.2 1.2 0 011 .9v.1h.1v.2l.2 1.3-.3-.5 1 .7.2.1.2.2a1.3 1.3 0 01.3.8 1.2 1.2 0 01-.6 1.1l-.2.1-.4.2-.8.4.3-.4-.4 1v.2l-.2.2a1 1 0 01-.5.5h-.8l-.1-.4z",
 					fill: "#F80"
 				})),
-				m = () => o.a.createElement("svg", {
+				h = () => o.a.createElement("svg", {
 					width: "48",
 					height: "48",
 					fill: "none",
@@ -1532,7 +1532,7 @@
 					d: "M32.8 23.2l-.3-.7-.7-1.4-2.7-4.8h1.2l-1 2.2-.6 2.1a4 4 0 00.2 2.4 2.9 2.9 0 001.2 1.3l.7.2h.8c.3 0 .5-.2.7-.4.2-.2.4-.4.4-.7 0 .3 0 .5-.2.8l-.5.6a2.2 2.2 0 01-1.6.3c-.6 0-1.1-.3-1.6-.7-.4-.3-.8-.8-1-1.3l-.4-1.6.1-1.6c.2-.9.5-1.8 1-2.6l.6-1.5.6-1.4.6 1.3a132.3 132.3 0 012.5 5.1c.2.5.3 1.1.3 1.7 0 .5-.2.7-.3.7z",
 					fill: "#fff"
 				})),
-				h = () => o.a.createElement("svg", {
+				m = () => o.a.createElement("svg", {
 					width: "48",
 					height: "48",
 					fill: "none",
@@ -1661,7 +1661,7 @@
 						hk: "iRnjD"
 					})
 				}), o.a.createElement(b, {
-					image: o.a.createElement(m, null),
+					image: o.a.createElement(h, null),
 					header: c.fbt._("No one gets the {pointsName}", [c.fbt._param("pointsName", t)], {
 						hk: "2hPu7L"
 					}),
@@ -1669,7 +1669,7 @@
 						hk: "Baw1t"
 					})
 				}), o.a.createElement(b, {
-					image: o.a.createElement(h, null),
+					image: o.a.createElement(m, null),
 					header: c.fbt._("Your community will thank you", null, {
 						hk: "2DLt1I"
 					}),
@@ -1773,14 +1773,14 @@
 					pointsDetails: l
 				} = e, s = Object(a.d)(), i = Object(T.a)(), d = () => s(Object(w.f)()), u = n.id, f = Object(a.e)(e => Object(I.e)(e, {
 					subredditId: u
-				})), m = new E.BigNumber(f).isGreaterThanOrEqualTo(t), h = Object(N.c)(t, null == l ? void 0 : l.displayConversion), p = l.contractAddress, v = Object(j.a)(p, t, r), g = e => {
-					i(Object(A.c)("burn_link", u, h, e))
+				})), h = new E.BigNumber(f).isGreaterThanOrEqualTo(t), m = Object(N.c)(t, null == l ? void 0 : l.displayConversion), p = l.contractAddress, v = Object(j.a)(p, t, r), g = e => {
+					i(Object(A.c)("burn_link", u, m, e))
 				}, b = l.name;
 				return o.a.createElement(P.a, {
 					approvalOverview: o.a.createElement(q, {
 						burnAmount: t,
 						burnMemo: r,
-						hasEnoughPoints: m,
+						hasEnoughPoints: h,
 						subreddit: n,
 						pointsName: b
 					}),
@@ -1808,7 +1808,7 @@
 								})), e(Object(y.h)({
 									subredditId: n
 								}))
-							}(s, l, e.hash, n.id, f), i(Object(A.d)("burn_link", u, h)), s(function(e) {
+							}(s, l, e.hash, n.id, f), i(Object(A.d)("burn_link", u, m)), s(function(e) {
 								const t = Object(_.e)(c.fbt._("Your {pointsName} were burnt!", [c.fbt._param("pointsName", e)], {
 									hk: "1BHX95"
 								}), B.b.SuccessCommunityGreen);
@@ -1827,7 +1827,7 @@
 					title: c.fbt._("Approve Burning Your Bricks", null, {
 						hk: "4DTzlV"
 					}),
-					transaction: m ? v : null,
+					transaction: h ? v : null,
 					transactionIntent: Object(M.b)(u, t, r)
 				})
 			}
@@ -1917,9 +1917,9 @@
 				d = r("./src/lib/classNames/index.ts"),
 				u = r("./src/higherOrderComponents/asModal/index.tsx"),
 				f = r("./src/reddit/controls/Button/index.tsx"),
-				m = r("./src/reddit/layout/row/Inline/index.tsx"),
-				h = r("./src/reddit/controls/ErrorText/SeeAllTextModal/index.m.less"),
-				p = r.n(h);
+				h = r("./src/reddit/layout/row/Inline/index.tsx"),
+				m = r("./src/reddit/controls/ErrorText/SeeAllTextModal/index.m.less"),
+				p = r.n(m);
 			var v = Object(u.a)(e => {
 					const {
 						children: t,
@@ -1927,11 +1927,11 @@
 					} = e;
 					return c.a.createElement("div", {
 						className: p.a.wrapper
-					}, c.a.createElement(m.a, {
+					}, c.a.createElement(h.a, {
 						className: p.a.titleRow
 					}, r), c.a.createElement("div", {
 						className: p.a.detailsContainer
-					}, t), c.a.createElement(m.a, {
+					}, t), c.a.createElement(h.a, {
 						className: p.a.buttonRow
 					}, c.a.createElement(f.l, {
 						className: p.a.confirmButton,
@@ -2043,7 +2043,7 @@
 		"./src/reddit/controls/FormFields/index.tsx": function(e, t, r) {
 			"use strict";
 			r.d(t, "a", (function() {
-				return m
+				return h
 			})), r.d(t, "b", (function() {
 				return p
 			})), r.d(t, "c", (function() {
@@ -2071,8 +2071,8 @@
 					return e
 				}).apply(this, arguments)
 			}
-			const m = l.a.input("input", u.a),
-				h = e => {
+			const h = l.a.input("input", u.a),
+				m = e => {
 					"LABEL" === e.target.tagName && (e.target.parentElement.firstElementChild.focus(), e.stopPropagation())
 				},
 				p = e => {
@@ -2089,8 +2089,8 @@
 						className: Object(a.a)(u.a.inputWrapper, l, {
 							[u.a.mIsInvalid]: s
 						}),
-						onClick: h
-					}, o.a.createElement(m, f({
+						onClick: m
+					}, o.a.createElement(h, f({
 						"aria-invalid": s,
 						innerRef: n
 					}, i)), t && o.a.createElement("label", {
@@ -2115,8 +2115,8 @@
 							[u.a.mIsInvalid]: l,
 							[u.a.mIsRedditStyle]: i
 						}),
-						onClick: h
-					}, o.a.createElement(m, f({
+						onClick: m
+					}, o.a.createElement(h, f({
 						innerRef: n
 					}, c)), t && o.a.createElement("label", {
 						className: Object(a.a)(u.a.label, {
@@ -2439,8 +2439,8 @@
 			const a = e => {
 				return Object(o.c)(e, {
 					experimentEligibilitySelector: o.a,
-					experimentName: n.me
-				}) === n.Dd
+					experimentName: n.ne
+				}) === n.Ed
 			}
 		},
 		"./src/reddit/selectors/gov.ts": function(e, t, r) {
@@ -2464,15 +2464,15 @@
 			const o = [],
 				a = {},
 				l = (e, t) => {
-					const r = m(e, t);
+					const r = h(e, t);
 					if (r) return r.mainHeader
 				},
 				s = (e, t) => {
-					const r = m(e, t);
+					const r = h(e, t);
 					return r && r.mainHeader ? r.mainHeader.price : "0"
 				},
 				i = (e, t) => {
-					const r = m(e, t);
+					const r = h(e, t);
 					return r && r.mainHeader ? {
 						owner: r.mainHeader.owner,
 						ownerId: r.mainHeader.ownerId
@@ -2493,8 +2493,8 @@
 					const r = Object(n.n)(e, t);
 					return r && e.subreddits.gov.releaseNotes[r] || o
 				},
-				m = (e, t) => t.subredditId ? e.subreddits.gov.assets[t.subredditId] : void 0
+				h = (e, t) => t.subredditId ? e.subreddits.gov.assets[t.subredditId] : void 0
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-BurnPointsModal.c59f4536b561ff7e17af.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-BurnPointsModal.838e657b71fa70ab8488.js.map

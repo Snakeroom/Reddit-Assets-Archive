@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/removalReasonActions.043250abffd8856d5f8c.js
-// Retrieved at 8/8/2022, 1:00:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/removalReasonActions.7a30da96ced8ecd5e6eb.js
+// Retrieved at 8/8/2022, 2:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["removalReasonActions"], {
 		"./node_modules/lodash/map.js": function(e, t, o) {
@@ -256,7 +256,7 @@
 			const de = Object(ae.a)(e => Object(ce.c)(e, {
 				experimentEligibilitySelector: ce.a,
 				experimentName: ie.Lb
-			}), e => e === ie.Dd);
+			}), e => e === ie.Ed);
 			var le = o("./src/reddit/selectors/experiments/contributeBeforeSignUp.ts"),
 				me = o("./src/reddit/selectors/experiments/emailEnablement.ts"),
 				ue = o("./src/reddit/selectors/platform.ts"),
@@ -1639,99 +1639,100 @@
 						subredditId: e,
 						itemIds: t
 					})), o(Object(N.i)(D.a.ADD_REMOVAL_REASON))
-				}, fe = Object(R.a)("REMOVALREASONS__SUBMIT_PENDING"), he = Object(R.a)("REMOVALREASONS__SUBMIT_SUCCESS"), je = Object(R.a)("REMOVALREASONS__SUBMIT_FAILED"), ge = Object(R.a)("REMOVALREASONS__MESSAGE_PENDING"), _e = Object(R.a)("REMOVALREASONS__MESSAGE_PRIVATE_SUCCESS"), Se = Object(R.a)("REMOVALREASONS__MESSAGE_PUBLIC_SUCCESS"), xe = Object(R.a)("REMOVALREASONS__MESSAGE_FAILED"), ye = (e, t, o, n, s) => async (r, i, c) => {
+				}, fe = Object(R.a)("REMOVALREASONS__SUBMIT_PENDING"), he = Object(R.a)("REMOVALREASONS__SUBMIT_SUCCESS"), je = Object(R.a)("REMOVALREASONS__SUBMIT_FAILED"), ge = Object(R.a)("REMOVALREASONS__MESSAGE_PENDING"), _e = Object(R.a)("REMOVALREASONS__MESSAGE_PRIVATE_SUCCESS"), Se = Object(R.a)("REMOVALREASONS__MESSAGE_PUBLIC_SUCCESS"), xe = Object(R.a)("REMOVALREASONS__MESSAGE_FAILED"), ye = (e, t, o, n, s, r) => async (i, c, a) => {
 					let {
-						apiContext: a
-					} = c;
-					const d = i(),
-						l = d.user.account && d.user.account.displayText,
-						m = e[0],
-						u = Object(V.a)(m) ? Q.e.Post : Q.e.Comment,
-						b = u === Q.e.Post ? d.posts.models[m] : d.features.comments.models[m],
-						p = u === Q.e.Post ? M.S : T.j;
-					if (!b || !l) return !1;
-					r(fe()), r(p({
-						[m]: {
+						apiContext: d
+					} = a;
+					const l = c(),
+						m = l.user.account && l.user.account.displayText,
+						u = e[0],
+						b = Object(V.a)(u) ? Q.e.Post : Q.e.Comment,
+						p = b === Q.e.Post ? l.posts.models[u] : l.features.comments.models[u],
+						O = b === Q.e.Post ? M.S : T.j;
+					if (!p || !m) return !1;
+					i(fe()), i(O({
+						[u]: {
 							modNote: s,
 							modRemovalReason: t && t.title,
-							modReasonBy: l
+							modReasonBy: m
 						}
 					}));
-					const O = {
+					const f = {
 							itemIds: e,
 							modNote: s,
 							reasonId: t ? t.id : null
 						},
-						f = await B(a(), O);
-					if (f.ok) {
-						if (r(he()), t) {
-							r(ge());
+						h = await B(d(), f);
+					if (h.ok) {
+						if (i(he()), t) {
+							i(ge());
 							const s = {
 									itemId: e,
 									message: o,
 									title: t.title,
+									isLocked: r,
 									type: n
 								},
-								i = await G(a(), Object(Q.h)(s, u), u);
-							if (i.ok) {
+								c = await G(d(), Object(Q.h)(s, b), b);
+							if (c.ok) {
 								if ([Q.f.Public, Q.f.PublicAsSubreddit].includes(n)) {
-									if (r(Se()), i.body) {
-										const e = Object(H.a)(i.body),
+									if (i(Se()), c.body) {
+										const e = Object(H.a)(c.body),
 											t = {
 												comment: e,
-												parentId: m
+												parentId: u
 											},
-											o = Object($.f)(d),
-											n = d.platform.currentPage && d.platform.currentPage.routeMatch;
-										let s = o && n && Object(q.a)(n, d, d.posts.models[e.postId]);
+											o = Object($.f)(l),
+											n = l.platform.currentPage && l.platform.currentPage.routeMatch;
+										let s = o && n && Object(q.a)(n, l, l.posts.models[e.postId]);
 										if (s || (s = Object(k.a)(e.postId, null, {
 												sort: v.u,
 												hasSortParam: !0
-											})), u === Q.e.Post) {
-											const o = Object(E.a)(J.c.replyToPost, m);
-											r(Object(w.r)({
+											})), b === Q.e.Post) {
+											const o = Object(E.a)(J.c.replyToPost, u);
+											i(Object(w.r)({
 												...t,
-												headCommentId: Object(X.w)(d, {
+												headCommentId: Object(X.w)(l, {
 													commentsPageKey: s
 												}),
 												commentsPageKey: s,
 												draftKey: o
 											}));
-											const n = d.postStickiedComments.data[m];
-											r(Object(A.f)({
+											const n = l.postStickiedComments.data[u];
+											i(Object(A.f)({
 												id: e.id,
 												postId: e.postId,
 												commentsPageKey: s
-											})), n && n !== e.id && r(Object(T.j)({
+											})), n && n !== e.id && i(Object(T.j)({
 												[n]: {
 													isStickied: !1
 												}
 											}))
-										} else if (u === Q.e.Comment) {
-											const e = Object(E.a)(J.c.replyToComment, b.id),
-												o = Object(X.j)(d, {
-													commentId: m,
+										} else if (b === Q.e.Comment) {
+											const e = Object(E.a)(J.c.replyToComment, p.id),
+												o = Object(X.j)(l, {
+													commentId: u,
 													commentsPageKey: s
 												});
-											r(Object(w.p)({
+											i(Object(w.p)({
 												...t,
-												parentCommentId: m,
+												parentCommentId: u,
 												commentsPageKey: s,
 												draftKey: e,
 												depth: o + 1
 											}))
 										}
 									}
-								} else r(_e());
+								} else i(_e());
 								return !0
 							}
-							return r(xe(i.error)), !1
+							return i(xe(c.error)), !1
 						}
-					} else r(je(f.error)), r(p({
-						[m]: {
-							modNote: b.modNote,
-							modRemovalReason: b.modRemovalReason,
-							modReasonBy: b.modReasonBy
+					} else i(je(h.error)), i(O({
+						[u]: {
+							modNote: p.modNote,
+							modRemovalReason: p.modRemovalReason,
+							modReasonBy: p.modReasonBy
 						}
 					}));
 					return !1
@@ -2867,7 +2868,8 @@
 						[t === d.Bulk ? "item_ids" : "item_id"]: e.itemId,
 						message: e.message,
 						title: e.title,
-						type: e.type
+						type: e.type,
+						lock_comment: e.isLocked
 					}
 				}
 		},
@@ -2914,4 +2916,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/removalReasonActions.043250abffd8856d5f8c.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/removalReasonActions.7a30da96ced8ecd5e6eb.js.map

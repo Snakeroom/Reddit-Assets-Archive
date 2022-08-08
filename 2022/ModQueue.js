@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModQueue.679d801789690f4e719a.js
-// Retrieved at 8/8/2022, 1:00:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModQueue.d83e39d3a01a8cee98c2.js
+// Retrieved at 8/8/2022, 2:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModQueue"], {
 		"./src/reddit/actions/bulkActions/index.ts": function(e, t, o) {
@@ -1205,99 +1205,100 @@
 						subredditId: e,
 						itemIds: t
 					})), o(Object(M.i)(D.a.ADD_REMOVAL_REASON))
-				}, Oe = Object(y.a)("REMOVALREASONS__SUBMIT_PENDING"), je = Object(y.a)("REMOVALREASONS__SUBMIT_SUCCESS"), ve = Object(y.a)("REMOVALREASONS__SUBMIT_FAILED"), _e = Object(y.a)("REMOVALREASONS__MESSAGE_PENDING"), he = Object(y.a)("REMOVALREASONS__MESSAGE_PRIVATE_SUCCESS"), ge = Object(y.a)("REMOVALREASONS__MESSAGE_PUBLIC_SUCCESS"), Se = Object(y.a)("REMOVALREASONS__MESSAGE_FAILED"), Re = (e, t, o, s, r) => async (n, d, a) => {
+				}, Oe = Object(y.a)("REMOVALREASONS__SUBMIT_PENDING"), je = Object(y.a)("REMOVALREASONS__SUBMIT_SUCCESS"), ve = Object(y.a)("REMOVALREASONS__SUBMIT_FAILED"), _e = Object(y.a)("REMOVALREASONS__MESSAGE_PENDING"), he = Object(y.a)("REMOVALREASONS__MESSAGE_PRIVATE_SUCCESS"), ge = Object(y.a)("REMOVALREASONS__MESSAGE_PUBLIC_SUCCESS"), Se = Object(y.a)("REMOVALREASONS__MESSAGE_FAILED"), Re = (e, t, o, s, r, n) => async (d, a, i) => {
 					let {
-						apiContext: i
-					} = a;
-					const c = d(),
-						u = c.user.account && c.user.account.displayText,
-						l = e[0],
-						m = Object(V.a)(l) ? z.e.Post : z.e.Comment,
-						b = m === z.e.Post ? c.posts.models[l] : c.features.comments.models[l],
-						p = m === z.e.Post ? L.S : P.j;
-					if (!b || !u) return !1;
-					n(Oe()), n(p({
-						[l]: {
+						apiContext: c
+					} = i;
+					const u = a(),
+						l = u.user.account && u.user.account.displayText,
+						m = e[0],
+						b = Object(V.a)(m) ? z.e.Post : z.e.Comment,
+						p = b === z.e.Post ? u.posts.models[m] : u.features.comments.models[m],
+						f = b === z.e.Post ? L.S : P.j;
+					if (!p || !l) return !1;
+					d(Oe()), d(f({
+						[m]: {
 							modNote: r,
 							modRemovalReason: t && t.title,
-							modReasonBy: u
+							modReasonBy: l
 						}
 					}));
-					const f = {
+					const O = {
 							itemIds: e,
 							modNote: r,
 							reasonId: t ? t.id : null
 						},
-						O = await U(i(), f);
-					if (O.ok) {
-						if (n(je()), t) {
-							n(_e());
+						j = await U(c(), O);
+					if (j.ok) {
+						if (d(je()), t) {
+							d(_e());
 							const r = {
 									itemId: e,
 									message: o,
 									title: t.title,
+									isLocked: n,
 									type: s
 								},
-								d = await B(i(), Object(z.h)(r, m), m);
-							if (d.ok) {
+								a = await B(c(), Object(z.h)(r, b), b);
+							if (a.ok) {
 								if ([z.f.Public, z.f.PublicAsSubreddit].includes(s)) {
-									if (n(ge()), d.body) {
-										const e = Object(G.a)(d.body),
+									if (d(ge()), a.body) {
+										const e = Object(G.a)(a.body),
 											t = {
 												comment: e,
-												parentId: l
+												parentId: m
 											},
-											o = Object(Y.f)(c),
-											s = c.platform.currentPage && c.platform.currentPage.routeMatch;
-										let r = o && s && Object(H.a)(s, c, c.posts.models[e.postId]);
+											o = Object(Y.f)(u),
+											s = u.platform.currentPage && u.platform.currentPage.routeMatch;
+										let r = o && s && Object(H.a)(s, u, u.posts.models[e.postId]);
 										if (r || (r = Object(A.a)(e.postId, null, {
 												sort: k.u,
 												hasSortParam: !0
-											})), m === z.e.Post) {
-											const o = Object(x.a)(K.c.replyToPost, l);
-											n(Object(N.r)({
+											})), b === z.e.Post) {
+											const o = Object(x.a)(K.c.replyToPost, m);
+											d(Object(N.r)({
 												...t,
-												headCommentId: Object(J.w)(c, {
+												headCommentId: Object(J.w)(u, {
 													commentsPageKey: r
 												}),
 												commentsPageKey: r,
 												draftKey: o
 											}));
-											const s = c.postStickiedComments.data[l];
-											n(Object(C.f)({
+											const s = u.postStickiedComments.data[m];
+											d(Object(C.f)({
 												id: e.id,
 												postId: e.postId,
 												commentsPageKey: r
-											})), s && s !== e.id && n(Object(P.j)({
+											})), s && s !== e.id && d(Object(P.j)({
 												[s]: {
 													isStickied: !1
 												}
 											}))
-										} else if (m === z.e.Comment) {
-											const e = Object(x.a)(K.c.replyToComment, b.id),
-												o = Object(J.j)(c, {
-													commentId: l,
+										} else if (b === z.e.Comment) {
+											const e = Object(x.a)(K.c.replyToComment, p.id),
+												o = Object(J.j)(u, {
+													commentId: m,
 													commentsPageKey: r
 												});
-											n(Object(N.p)({
+											d(Object(N.p)({
 												...t,
-												parentCommentId: l,
+												parentCommentId: m,
 												commentsPageKey: r,
 												draftKey: e,
 												depth: o + 1
 											}))
 										}
 									}
-								} else n(he());
+								} else d(he());
 								return !0
 							}
-							return n(Se(d.error)), !1
+							return d(Se(a.error)), !1
 						}
-					} else n(ve(O.error)), n(p({
-						[l]: {
-							modNote: b.modNote,
-							modRemovalReason: b.modRemovalReason,
-							modReasonBy: b.modReasonBy
+					} else d(ve(j.error)), d(f({
+						[m]: {
+							modNote: p.modNote,
+							modRemovalReason: p.modRemovalReason,
+							modReasonBy: p.modReasonBy
 						}
 					}));
 					return !1
@@ -1461,7 +1462,8 @@
 						[t === c.Bulk ? "item_ids" : "item_id"]: e.itemId,
 						message: e.message,
 						title: e.title,
-						type: e.type
+						type: e.type,
+						lock_comment: e.isLocked
 					}
 				}
 		},
@@ -1535,4 +1537,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModQueue.679d801789690f4e719a.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModQueue.d83e39d3a01a8cee98c2.js.map
