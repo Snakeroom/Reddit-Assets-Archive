@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PublicAccessNetwork.6b6b4732ae735ea04ab0.js
-// Retrieved at 8/8/2022, 2:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PublicAccessNetwork.e6b4e64750586d2eb2aa.js
+// Retrieved at 8/8/2022, 4:10:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PublicAccessNetwork"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -286,13 +286,13 @@
 					experimentEligibilitySelector: u.a,
 					experimentName: m.te
 				});
-				return Object(m.bg)(t) ? void 0 : t
+				return Object(m.dg)(t) ? void 0 : t
 			}, e => {
 				const t = Object(u.c)(e, {
 					experimentEligibilitySelector: u.a,
 					experimentName: m.ue
 				});
-				return Object(m.bg)(t) ? void 0 : t
+				return Object(m.dg)(t) ? void 0 : t
 			}, (e, t) => e === m.ve.Enabled && t === m.ve.Enabled);
 			var b = s("./src/config.ts");
 			var h = s("./src/reddit/selectors/user.ts");
@@ -669,7 +669,7 @@
 									icon: e.category_icon,
 									id: e.category_id,
 									name: e.category_name,
-									displayText: Object(m.ag)(e.category_name)
+									displayText: Object(m.cg)(e.category_name)
 								};
 								s.push(n.id), t[n.id] = n
 							}), {
@@ -1476,9 +1476,9 @@
 							a = Object(te.N)(s(), {
 								identifier: M.belongsTo
 							});
-						if (a && (e => K.mf.Redirect === Object(W.b)(e, {
+						if (a && (e => K.of.Redirect === Object(W.b)(e, {
 								experimentEligibilitySelector: Y,
-								experimentName: K.ff
+								experimentName: K.hf
 							}))(s())) return void t(Object(o.c)(a.url));
 						if ((M.media && M.media.type) === F.o.LIVEVIDEO) {
 							const e = `/rpan${M.belongsTo.type===N.a.SUBREDDIT?a.url:"/"}${Object(g.y)(M.id)}`;
@@ -7991,7 +7991,7 @@
 				a = s("./src/reddit/selectors/experiments/nsfwListingBelow.ts");
 			const i = e => {
 					const t = Object(a.a)(e);
-					return Boolean(t) && !Object(n.bg)(t)
+					return Boolean(t) && !Object(n.dg)(t)
 				},
 				d = Object(o.a)(i, r.d, (e, t) => e && !t)
 		},
@@ -8012,4 +8012,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PublicAccessNetwork.6b6b4732ae735ea04ab0.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PublicAccessNetwork.e6b4e64750586d2eb2aa.js.map

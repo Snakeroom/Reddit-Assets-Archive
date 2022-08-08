@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CommentsPage.89f91f517f0afd18462e.js
-// Retrieved at 8/8/2022, 2:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CommentsPage.65d3bd8da42cc602226b.js
+// Retrieved at 8/8/2022, 4:10:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CommentsPage", "PostCreation~Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~r~4c415e24", "Governance~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compo~bd4baca2", "CollectionCommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~SearchResults", "Governance~ModListing~Reddit~ReportFlow~Subreddit", "CollectionCommentsPage~ModProgressModule~NewCommunityProgress", "CollectionCommentsPage~Subreddit~SubredditWiki", "AchievementsActions"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -3328,7 +3328,7 @@
 									icon: e.category_icon,
 									id: e.category_id,
 									name: e.category_name,
-									displayText: Object(u.ag)(e.category_name)
+									displayText: Object(u.cg)(e.category_name)
 								};
 								n.push(r.id), t[r.id] = r
 							}), {
@@ -6415,9 +6415,9 @@
 							i = Object(te.N)(n(), {
 								identifier: D.belongsTo
 							});
-						if (i && (e => q.mf.Redirect === Object(K.b)(e, {
+						if (i && (e => q.of.Redirect === Object(K.b)(e, {
 								experimentEligibilitySelector: J,
-								experimentName: q.ff
+								experimentName: q.hf
 							}))(n())) return void t(Object(s.c)(i.url));
 						if ((D.media && D.media.type) === F.o.LIVEVIDEO) {
 							const e = `/rpan${D.belongsTo.type===M.a.SUBREDDIT?i.url:"/"}${Object(h.y)(D.id)}`;
@@ -20666,14 +20666,14 @@
 			const We = e => {
 					return Object(Ue.c)(e, {
 						experimentEligibilitySelector: Ue.a,
-						experimentName: Be.Vf
+						experimentName: Be.Xf
 					}) === Be.Ed
 				},
 				He = e => {
 					if (Object(Ve.a)(e)) return !1;
 					return Object(Ue.c)(e, {
 						experimentEligibilitySelector: Ue.a,
-						experimentName: Be.Uf
+						experimentName: Be.Wf
 					}) === Be.Ed
 				},
 				Ge = (e, t) => {
@@ -20685,7 +20685,7 @@
 					});
 					return !(Object(Ve.a)(e) || !s || s.isSponsored) && Object(Ue.c)(e, {
 						experimentEligibilitySelector: Ue.a,
-						experimentName: Be.Tf
+						experimentName: Be.Vf
 					}) === Be.Ed
 				};
 			var qe = n("./src/reddit/selectors/experiments/typingIndicators.ts"),
@@ -23250,7 +23250,7 @@
 							canonicalUrl: s.canonical_url,
 							baseUrl: s.base_url,
 							hostPostId: t,
-							shouldShowLinkedPosts: !Object(g.bg)(n) && !Object(S.a)(n),
+							shouldShowLinkedPosts: !Object(g.dg)(n) && !Object(S.a)(n),
 							subreddit: r
 						}
 					}
@@ -23313,7 +23313,7 @@
 						hostPostData: c,
 						listingBelowVariant: d
 					} = e;
-					if (d && !Object(g.bg)(d) && !Object(S.a)(d) && !i) return a.a.createElement("div", {
+					if (d && !Object(g.dg)(d) && !Object(S.a)(d) && !i) return a.a.createElement("div", {
 						className: q.a.smallBanner
 					});
 					const {
@@ -31834,11 +31834,11 @@
 					const {
 						thingId: n,
 						packageId: l
-					} = t, f = !!n, C = o.b(e), h = C ? Object(u.getAwardTypeFromAward)(C) : null, g = f ? h : a.m(e) ? d.GoldPurchaseType.Premium : d.GoldPurchaseType.Coins, _ = n ? Object(p.a)(n) ? "comment" : "post" : void 0, v = l || a.r(e), x = [...Object(i.d)(e), ...Object(i.f)(e)].filter(e => e.mobileId === v)[0], O = t.offerContext || (C && 0 === C.coinPrice ? r.a.StorefrontFreeAward : Object(r.d)(x, f)), y = x ? Math.round(1e4 * (x.baselinePennies - x.pennies) / x.baselinePennies) / 100 : 0, E = x ? Math.round(1e4 * (x.coins - x.baselineCoins) / x.coins) / 100 : 0, j = x ? x.baselinePennies !== x.pennies ? `${y}_percent_price` : x.baselineCoins !== x.coins ? `${E}_percent_bonus` : void 0 : void 0, k = g === d.GoldPurchaseType.Premium ? s.yb : x ? x.pennies : void 0;
+					} = t, f = !!n, C = o.b(e), h = C ? Object(u.getAwardTypeFromAward)(C) : null, g = f ? h : a.o(e) ? d.GoldPurchaseType.Premium : d.GoldPurchaseType.Coins, _ = n ? Object(p.a)(n) ? "comment" : "post" : void 0, v = l || a.t(e), x = [...Object(i.d)(e), ...Object(i.f)(e)].filter(e => e.mobileId === v)[0], O = t.offerContext || (C && 0 === C.coinPrice ? r.a.StorefrontFreeAward : Object(r.d)(x, f)), y = x ? Math.round(1e4 * (x.baselinePennies - x.pennies) / x.baselinePennies) / 100 : 0, E = x ? Math.round(1e4 * (x.coins - x.baselineCoins) / x.coins) / 100 : 0, j = x ? x.baselinePennies !== x.pennies ? `${y}_percent_price` : x.baselineCoins !== x.coins ? `${E}_percent_bonus` : void 0 : void 0, k = g === d.GoldPurchaseType.Premium ? s.yb : x ? x.pennies : void 0;
 					return {
 						...c.n(e),
 						comment: n ? c.h(e, n) : null,
-						correlationId: a.p(e) || Object(m.d)(m.a.GoldPayment, !1),
+						correlationId: a.r(e) || Object(m.d)(m.a.GoldPayment, !1),
 						post: n ? c.J(e, n) : null,
 						screen: c.ab(e),
 						subreddit: n ? c.ib(e) : null,
@@ -31936,7 +31936,7 @@
 						},
 						goldPurchase: {
 							...r.goldPurchase,
-							source: e ? d.GiveGold : a.m(s) ? d.PremiumMarketing : d.CoinsMarketing
+							source: e ? d.GiveGold : a.o(s) ? d.PremiumMarketing : d.CoinsMarketing
 						}
 					}
 				},
@@ -41667,14 +41667,14 @@
 			const i = e => {
 					return Object(r.c)(e, {
 						experimentEligibilitySelector: r.a,
-						experimentName: s.Te
+						experimentName: s.Ve
 					}) === s.Ed
 				},
 				a = e => {
 					if (Object(o.a)(e)) return !1;
 					return Object(r.c)(e, {
 						experimentEligibilitySelector: r.a,
-						experimentName: s.Se
+						experimentName: s.Ue
 					}) === s.Ed
 				},
 				c = e => {
@@ -41909,7 +41909,7 @@
 			const o = e => {
 				return Object(r.c)(e, {
 					experimentEligibilitySelector: r.a,
-					experimentName: s.Re
+					experimentName: s.Te
 				}) === s.Ed
 			}
 		},
@@ -41932,8 +41932,8 @@
 				o = n("./src/reddit/selectors/meta.ts");
 			const i = e => Object(r.c)(e, {
 				experimentEligibilitySelector: e => !Object(o.d)(e) && "US" === Object(o.b)(e),
-				experimentName: s.gf
-			}) === s.nf.Enabled
+				experimentName: s.if
+			}) === s.pf.Enabled
 		},
 		"./src/reddit/selectors/experiments/signupUpsellExperiment.ts": function(e, t, n) {
 			"use strict";
@@ -41989,13 +41989,13 @@
 			const i = e => {
 					return Object(r.c)(e, {
 						experimentEligibilitySelector: r.a,
-						experimentName: s.vf
+						experimentName: s.xf
 					}) === s.Ed
 				},
 				a = e => {
 					return Object(r.c)(e, {
 						experimentEligibilitySelector: o.e,
-						experimentName: s.uf
+						experimentName: s.wf
 					}) === s.Ed
 				}
 		},
@@ -42030,9 +42030,9 @@
 					experimentName: r.Uc,
 					experimentEligibilitySelector: e => c(e, t)
 				}), e => e),
-				l = e => e === r.Lf.NoCommunityWidgets,
-				u = e => e === r.Lf.NoRulesModerators,
-				m = e => e === r.Lf.RelatedPostsDu
+				l = e => e === r.Nf.NoCommunityWidgets,
+				u = e => e === r.Nf.NoRulesModerators,
+				m = e => e === r.Nf.RelatedPostsDu
 		},
 		"./src/reddit/selectors/experiments/typingIndicators.ts": function(e, t, n) {
 			"use strict";
@@ -42053,29 +42053,29 @@
 					if (Object(i.a)(e)) return !1;
 					return Object(r.c)(e, {
 						experimentEligibilitySelector: o.e,
-						experimentName: s.Xf
+						experimentName: s.Zf
 					}) === s.Ed
 				},
 				c = e => {
 					return Object(r.c)(e, {
 						experimentEligibilitySelector: o.e,
-						experimentName: s.Yf
+						experimentName: s.ag
 					}) === s.Ed
 				},
 				d = e => {
 					if (Object(i.a)(e)) return !1;
 					const t = Object(r.c)(e, {
 						experimentEligibilitySelector: o.e,
-						experimentName: s.Wf
+						experimentName: s.Yf
 					});
-					return t === s.Mf.TypingIndicators || t === s.Mf.IndicatorsPlusCTA
+					return t === s.Of.TypingIndicators || t === s.Of.IndicatorsPlusCTA
 				},
 				l = e => {
 					if (Object(i.a)(e)) return !1;
 					const t = Object(o.d)(e, {
-						experimentName: s.Wf
+						experimentName: s.Yf
 					});
-					return (null == t ? void 0 : t.variant) === s.Mf.IndicatorsPlusCTA
+					return (null == t ? void 0 : t.variant) === s.Of.IndicatorsPlusCTA
 				}
 		},
 		"./src/reddit/selectors/focusedVerticalSuggestion.ts": function(e, t, n) {
@@ -42328,52 +42328,56 @@
 		},
 		"./src/reddit/selectors/goldPurchaseModals.ts": function(e, t, n) {
 			"use strict";
-			n.d(t, "o", (function() {
+			n.d(t, "q", (function() {
 				return i
-			})), n.d(t, "q", (function() {
-				return a
-			})), n.d(t, "p", (function() {
-				return c
 			})), n.d(t, "s", (function() {
-				return d
+				return a
 			})), n.d(t, "r", (function() {
+				return c
+			})), n.d(t, "u", (function() {
+				return d
+			})), n.d(t, "t", (function() {
 				return l
 			})), n.d(t, "b", (function() {
 				return u
-			})), n.d(t, "n", (function() {
+			})), n.d(t, "p", (function() {
 				return m
 			})), n.d(t, "a", (function() {
 				return p
-			})), n.d(t, "m", (function() {
+			})), n.d(t, "n", (function() {
 				return b
-			})), n.d(t, "c", (function() {
+			})), n.d(t, "o", (function() {
 				return f
-			})), n.d(t, "g", (function() {
+			})), n.d(t, "c", (function() {
 				return C
-			})), n.d(t, "k", (function() {
+			})), n.d(t, "h", (function() {
 				return h
-			})), n.d(t, "u", (function() {
+			})), n.d(t, "l", (function() {
 				return g
-			})), n.d(t, "v", (function() {
-				return _
-			})), n.d(t, "t", (function() {
-				return v
 			})), n.d(t, "w", (function() {
+				return _
+			})), n.d(t, "x", (function() {
+				return v
+			})), n.d(t, "v", (function() {
 				return x
-			})), n.d(t, "e", (function() {
+			})), n.d(t, "y", (function() {
 				return O
 			})), n.d(t, "f", (function() {
 				return y
-			})), n.d(t, "h", (function() {
+			})), n.d(t, "g", (function() {
 				return E
-			})), n.d(t, "j", (function() {
-				return j
 			})), n.d(t, "i", (function() {
+				return j
+			})), n.d(t, "k", (function() {
 				return k
-			})), n.d(t, "l", (function() {
+			})), n.d(t, "j", (function() {
 				return I
-			})), n.d(t, "d", (function() {
+			})), n.d(t, "m", (function() {
 				return w
+			})), n.d(t, "e", (function() {
+				return S
+			})), n.d(t, "d", (function() {
+				return L
 			}));
 			var s = n("./src/reddit/selectors/gold/purchaseCatalog.ts"),
 				r = n("./src/lib/initializeClient/installReducer.ts"),
@@ -42395,21 +42399,23 @@
 						n = (e => e.features.goldPurchase.premiumPurchaseModal.packageId)(e);
 					return t.length && n && t.find(e => e.mobileId === n) || null
 				},
-				b = e => e.features.goldPurchase.premiumPurchaseModal.showModal,
-				f = e => e.features.goldPurchase.payment.paymentMethod,
-				C = e => e.features.goldPurchase.payment.cardName,
-				h = e => e.features.goldPurchase.payment.postalCode,
-				g = e => e.features.goldPurchase.payment.savedCardsPending,
-				_ = e => e.features.goldPurchase.payment.savedCards,
-				v = e => e.features.goldPurchase.payment.rememberCard,
-				x = e => e.features.goldPurchase.payment.useSavedCard,
-				O = e => e.features.goldPurchase.payment.cardValidation.cardCvc,
-				y = e => e.features.goldPurchase.payment.cardValidation.cardExpiry,
-				E = e => e.features.goldPurchase.payment.cardValidation.cardNumber,
-				j = e => e.features.goldPurchase.payment.cardValidation.nameOnCard,
-				k = e => e.features.goldPurchase.payment.stripeToken.errorMessage,
-				I = e => e.features.goldPurchase.payment.stripeToken.pending,
-				w = e => e.features.goldPurchase.payment.paypal.errorMessage
+				b = e => e.features.goldPurchase.premiumPurchaseModal.activePage,
+				f = e => e.features.goldPurchase.premiumPurchaseModal.showModal,
+				C = e => e.features.goldPurchase.payment.paymentMethod,
+				h = e => e.features.goldPurchase.payment.cardName,
+				g = e => e.features.goldPurchase.payment.postalCode,
+				_ = e => e.features.goldPurchase.payment.savedCardsPending,
+				v = e => e.features.goldPurchase.payment.savedCards,
+				x = e => e.features.goldPurchase.payment.rememberCard,
+				O = e => e.features.goldPurchase.payment.useSavedCard,
+				y = e => e.features.goldPurchase.payment.cardValidation.cardCvc,
+				E = e => e.features.goldPurchase.payment.cardValidation.cardExpiry,
+				j = e => e.features.goldPurchase.payment.cardValidation.cardNumber,
+				k = e => e.features.goldPurchase.payment.cardValidation.nameOnCard,
+				I = e => e.features.goldPurchase.payment.stripeToken.errorMessage,
+				w = e => e.features.goldPurchase.payment.stripeToken.pending,
+				S = e => e.features.goldPurchase.payment.paypal.passthrough,
+				L = e => e.features.goldPurchase.payment.paypal.errorMessage
 		},
 		"./src/reddit/selectors/i18n/index.ts": function(e, t, n) {
 			"use strict";
@@ -42424,7 +42430,7 @@
 				i = n("./src/reddit/selectors/experiments/nsfwListingBelow.ts");
 			const a = e => {
 					const t = Object(i.a)(e);
-					return Boolean(t) && !Object(r.bg)(t)
+					return Boolean(t) && !Object(r.dg)(t)
 				},
 				c = Object(s.a)(a, o.d, (e, t) => e && !t)
 		},
@@ -42631,10 +42637,10 @@
 				o = n("./src/reddit/helpers/chooseVariant/index.ts"),
 				i = n("./src/reddit/selectors/posts.ts");
 			const a = e => Object(o.c)(e, {
-					experimentName: r.Ue,
+					experimentName: r.We,
 					experimentEligibilitySelector: o.a
 				}),
-				c = (e, t) => t === r.cf.Enabled && (null == e ? void 0 : e.isCreatedFromAdsUi) || (null == e ? void 0 : e.isSponsored),
+				c = (e, t) => t === r.ef.Enabled && (null == e ? void 0 : e.isCreatedFromAdsUi) || (null == e ? void 0 : e.isSponsored),
 				d = Object(s.a)(i.G, a, (e, t) => c(e, t));
 			Object(s.a)((e, t) => t, a, (e, t) => c(e, t))
 		},
@@ -42855,4 +42861,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommentsPage.89f91f517f0afd18462e.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommentsPage.65d3bd8da42cc602226b.js.map

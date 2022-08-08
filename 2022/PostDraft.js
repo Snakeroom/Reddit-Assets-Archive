@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostDraft.8ae19c0c81255de5f3e9.js
-// Retrieved at 8/8/2022, 2:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostDraft.698c92180de4184c8c6d.js
+// Retrieved at 8/8/2022, 4:10:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostDraft"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -326,7 +326,7 @@
 			})), n.d(t, "c", (function() {
 				return J
 			})), n.d(t, "h", (function() {
-				return z
+				return q
 			})), n.d(t, "f", (function() {
 				return Q
 			})), n.d(t, "d", (function() {
@@ -573,14 +573,14 @@
 							hk: "4Ck6Cm"
 						})
 					}))
-				}, G = Object(i.a)(c.r), Y = Object(i.a)(c.n), q = Object(i.a)(c.s), z = (e, t) => async (n, o, r) => {
+				}, G = Object(i.a)(c.r), Y = Object(i.a)(c.n), z = Object(i.a)(c.s), q = (e, t) => async (n, o, r) => {
 					let {
 						apiContext: i
 					} = r;
 					n(G());
 					const a = await v(i(), e, t);
 					let c = !1;
-					if (a.ok) n(q({
+					if (a.ok) n(z({
 						collectionId: e,
 						newTitle: t
 					})), n(Object(d.f)({
@@ -636,7 +636,7 @@
 								hk: "4Ck6Cm"
 							})
 						}))), c
-					})(o, a))), c && n.push(t(z(o, c))), void 0 !== r && n.push(t(((e, t) => async (n, o, r) => {
+					})(o, a))), c && n.push(t(q(o, c))), void 0 !== r && n.push(t(((e, t) => async (n, o, r) => {
 						let {
 							apiContext: i
 						} = r;
@@ -3068,12 +3068,12 @@
 						rtJsonElementProps: i
 					});
 					switch (r) {
-						case h.Df.SmIcon:
+						case h.Ff.SmIcon:
 							return o.a.createElement(p, {
 								subredditName: s,
 								rtJsonElementProps: i
 							});
-						case h.Df.SmIconHc:
+						case h.Ff.SmIconHc:
 							return o.a.createElement(p, {
 								subredditName: s,
 								isHoverable: !0,
@@ -4737,12 +4737,12 @@
 				c = e => {
 					return Object(r.c)(e, {
 						experimentEligibilitySelector: a,
-						experimentName: s.xf
+						experimentName: s.zf
 					}) || ""
 				},
 				d = e => {
 					const t = c(e);
-					return t === s.Df.SmIcon || t === s.Df.SmIconHc
+					return t === s.Ff.SmIcon || t === s.Ff.SmIconHc
 				},
 				l = (e, t) => {
 					let {
@@ -4768,4 +4768,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostDraft.8ae19c0c81255de5f3e9.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostDraft.698c92180de4184c8c6d.js.map

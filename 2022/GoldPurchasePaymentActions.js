@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/GoldPurchasePaymentActions.1c868e9d3e5a1ac71cda.js
-// Retrieved at 8/3/2022, 12:40:06 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/GoldPurchasePaymentActions.3d774e43571898bdb9d6.js
+// Retrieved at 8/8/2022, 4:10:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["GoldPurchasePaymentActions"], {
 		"./node_modules/@stripe/react-stripe-js/dist/react-stripe.umd.js": function(e, t, r) {
@@ -256,7 +256,7 @@
 				j.propTypes = {
 					children: a.func.isRequired
 				};
-				var v = function(e) {
+				var P = function(e) {
 						var r = t.useRef(e);
 						return t.useEffect((function() {
 								r.current = e
@@ -265,7 +265,7 @@
 								r.current && r.current.apply(r, arguments)
 							}
 					},
-					P = function() {},
+					v = function() {},
 					_ = function(e, r) {
 						var n, o = "".concat((n = e).charAt(0).toUpperCase() + n.slice(1), "Element"),
 							c = r ? function(e) {
@@ -282,48 +282,48 @@
 									c = r.options,
 									i = void 0 === c ? {} : c,
 									s = r.onBlur,
-									d = void 0 === s ? P : s,
+									d = void 0 === s ? v : s,
 									u = r.onFocus,
-									l = void 0 === u ? P : u,
+									l = void 0 === u ? v : u,
 									f = r.onReady,
-									b = void 0 === f ? P : f,
+									b = void 0 === f ? v : f,
 									y = r.onChange,
-									h = void 0 === y ? P : y,
+									h = void 0 === y ? v : y,
 									g = r.onEscape,
-									j = void 0 === g ? P : g,
+									j = void 0 === g ? v : g,
 									_ = r.onClick,
-									E = void 0 === _ ? P : _,
+									E = void 0 === _ ? v : _,
 									C = O("mounts <".concat(o, ">")).elements,
-									k = t.useRef(null),
 									I = t.useRef(null),
-									x = v(b),
-									w = v(d),
-									S = v(l),
-									A = v(E),
-									M = v(h),
-									R = v(j);
+									k = t.useRef(null),
+									x = P(b),
+									w = P(d),
+									S = P(l),
+									A = P(E),
+									M = P(h),
+									R = P(j);
 								t.useLayoutEffect((function() {
-									if (null == k.current && C && null != I.current) {
+									if (null == I.current && C && null != k.current) {
 										var t = C.create(e, i);
-										k.current = t, t.mount(I.current), t.on("ready", (function() {
+										I.current = t, t.mount(k.current), t.on("ready", (function() {
 											return x(t)
 										})), t.on("change", M), t.on("blur", w), t.on("focus", S), t.on("escape", R), t.on("click", A)
 									}
 								}));
 								var T = p(i);
 								return t.useEffect((function() {
-									if (k.current) {
+									if (I.current) {
 										var e = m(i, T, ["paymentRequest"]);
-										e && k.current.update(e)
+										e && I.current.update(e)
 									}
 								}), [i, T]), t.useLayoutEffect((function() {
 									return function() {
-										k.current && k.current.destroy()
+										I.current && I.current.destroy()
 									}
 								}), []), t.createElement("div", {
 									id: n,
 									className: a,
-									ref: I
+									ref: k
 								})
 							};
 						return c.propTypes = {
@@ -339,8 +339,8 @@
 					},
 					E = "undefined" == typeof window,
 					C = _("auBankAccount", E),
-					k = _("card", E),
-					I = _("cardNumber", E),
+					I = _("card", E),
+					k = _("cardNumber", E),
 					x = _("cardExpiry", E),
 					w = _("cardCvc", E),
 					S = _("fpxBank", E),
@@ -353,7 +353,7 @@
 					B = _("linkAuthentication", E),
 					L = _("shippingAddress", E),
 					$ = _("afterpayClearpayMessage", E);
-				e.AfterpayClearpayMessageElement = $, e.AuBankAccountElement = C, e.CardCvcElement = w, e.CardElement = k, e.CardExpiryElement = x, e.CardNumberElement = I, e.Elements = g, e.ElementsConsumer = j, e.EpsBankElement = T, e.FpxBankElement = S, e.IbanElement = A, e.IdealBankElement = M, e.LinkAuthenticationElement = B, e.P24BankElement = R, e.PaymentElement = U, e.PaymentRequestButtonElement = N, e.ShippingAddressElement = L, e.useElements = function() {
+				e.AfterpayClearpayMessageElement = $, e.AuBankAccountElement = C, e.CardCvcElement = w, e.CardElement = I, e.CardExpiryElement = x, e.CardNumberElement = k, e.Elements = g, e.ElementsConsumer = j, e.EpsBankElement = T, e.FpxBankElement = S, e.IbanElement = A, e.IdealBankElement = M, e.LinkAuthenticationElement = B, e.P24BankElement = R, e.PaymentElement = U, e.PaymentRequestButtonElement = N, e.ShippingAddressElement = L, e.useElements = function() {
 					return O("calls useElements()").elements
 				}, e.useStripe = function() {
 					return O("calls useStripe()").stripe
@@ -391,9 +391,9 @@
 			})), r.d(t, "paypalApiError", (function() {
 				return j
 			})), r.d(t, "toggleRememberCard", (function() {
-				return v
-			})), r.d(t, "selectSavedCard", (function() {
 				return P
+			})), r.d(t, "selectSavedCard", (function() {
+				return v
 			})), r.d(t, "deleteSavedCard", (function() {
 				return _
 			})), r.d(t, "savedCardsPending", (function() {
@@ -419,8 +419,8 @@
 				g = Object(a.a)(i.H),
 				O = (e, t) => async (r, a) => {
 					const i = a(),
-						s = Object(c.g)(i),
-						d = Object(c.k)(i),
+						s = Object(c.h)(i),
+						d = Object(c.l)(i),
 						u = t.getElement(n.CardNumberElement);
 					if (!u) return;
 					const {
@@ -441,7 +441,7 @@
 							message: e
 						}))
 					}
-				}, j = Object(a.a)(i.B), v = Object(a.a)(i.N), P = Object(a.a)(i.G), _ = Object(a.a)(i.g), E = Object(a.a)(i.D), C = Object(a.a)(i.E)
+				}, j = Object(a.a)(i.B), P = Object(a.a)(i.N), v = Object(a.a)(i.G), _ = Object(a.a)(i.g), E = Object(a.a)(i.D), C = Object(a.a)(i.E)
 		},
 		"./src/reddit/actions/goldPurchaseModals/premiumPurchaseModal.ts": function(e, t, r) {
 			"use strict";
@@ -454,9 +454,9 @@
 			})), r.d(t, "closePremiumPurchaseModal", (function() {
 				return j
 			})), r.d(t, "stripePremiumPurchaseRequested", (function() {
-				return v
-			})), r.d(t, "paymentBlobCreated", (function() {
 				return P
+			})), r.d(t, "paymentBlobCreated", (function() {
+				return v
 			})), r.d(t, "openWithBlob", (function() {
 				return _
 			}));
@@ -480,7 +480,7 @@
 					r(h(e)), r(Object(u.h)(l.a.ECON_PREMIUM_PURCHASE, t))
 				}, j = () => async e => {
 					e(Object(u.g)(l.a.ECON_PREMIUM_PURCHASE)), e(g())
-				}, v = (e, t) => async (r, n, a) => {
+				}, P = (e, t) => async (r, n, a) => {
 					let {
 						apiContext: c
 					} = a;
@@ -511,7 +511,7 @@
 						});
 						r(Object(d.stripeApiError)(e))
 					}
-				}, P = Object(a.a)(y.z), _ = (e, t) => {
+				}, v = Object(a.a)(y.z), _ = (e, t) => {
 					let {
 						packageId: r,
 						correlationId: o
@@ -535,7 +535,7 @@
 							if (t.error) {
 								const r = Object(s.a)(t.error);
 								e(Object(d.paypalApiError)(r))
-							} else e(P(t))
+							} else e(v(t))
 						} catch (m) {
 							const t = Object(s.a)(m);
 							e(Object(d.paypalApiError)(t))
@@ -773,7 +773,7 @@
 						gildType: g,
 						isAnonymous: O,
 						message: j
-					} = i, v = {
+					} = i, P = {
 						token: y ? y.id : void 0,
 						coins: t,
 						offer_context: l,
@@ -785,11 +785,11 @@
 						remember_card: m,
 						card_id: h,
 						correlation_id: a
-					}, P = `${r.apiUrl}/api/v2/gold/stripe/buy_coins_and_gild`, _ = u ? P : Object(d.a)(P);
+					}, v = `${r.apiUrl}/api/v2/gold/stripe/buy_coins_and_gild`, _ = u ? v : Object(d.a)(v);
 					return Object(o.a)(Object(c.a)(r, [s.a]), {
 						method: n.jb.POST,
 						endpoint: _,
-						data: v
+						data: P
 					}).then(p)
 				}, b = async e => {
 					let {
@@ -817,10 +817,10 @@
 						remember_card: l,
 						card_id: b,
 						correlation_id: r
-					}, j = `${t.apiUrl}/api/v2/gold/stripe/buy_award`, v = i ? j : Object(d.a)(j);
+					}, j = `${t.apiUrl}/api/v2/gold/stripe/buy_award`, P = i ? j : Object(d.a)(j);
 					return Object(o.a)(Object(c.a)(t, [s.a]), {
 						method: n.jb.POST,
-						endpoint: v,
+						endpoint: P,
 						data: O
 					}).then(p)
 				}, y = async e => {
@@ -874,52 +874,56 @@
 		},
 		"./src/reddit/selectors/goldPurchaseModals.ts": function(e, t, r) {
 			"use strict";
-			r.d(t, "o", (function() {
+			r.d(t, "q", (function() {
 				return c
-			})), r.d(t, "q", (function() {
-				return i
-			})), r.d(t, "p", (function() {
-				return s
 			})), r.d(t, "s", (function() {
-				return d
+				return i
 			})), r.d(t, "r", (function() {
+				return s
+			})), r.d(t, "u", (function() {
+				return d
+			})), r.d(t, "t", (function() {
 				return u
 			})), r.d(t, "b", (function() {
 				return l
-			})), r.d(t, "n", (function() {
+			})), r.d(t, "p", (function() {
 				return p
 			})), r.d(t, "a", (function() {
 				return f
-			})), r.d(t, "m", (function() {
+			})), r.d(t, "n", (function() {
 				return m
-			})), r.d(t, "c", (function() {
+			})), r.d(t, "o", (function() {
 				return b
-			})), r.d(t, "g", (function() {
+			})), r.d(t, "c", (function() {
 				return y
-			})), r.d(t, "k", (function() {
+			})), r.d(t, "h", (function() {
 				return h
-			})), r.d(t, "u", (function() {
+			})), r.d(t, "l", (function() {
 				return g
-			})), r.d(t, "v", (function() {
-				return O
-			})), r.d(t, "t", (function() {
-				return j
 			})), r.d(t, "w", (function() {
-				return v
-			})), r.d(t, "e", (function() {
+				return O
+			})), r.d(t, "x", (function() {
+				return j
+			})), r.d(t, "v", (function() {
 				return P
+			})), r.d(t, "y", (function() {
+				return v
 			})), r.d(t, "f", (function() {
 				return _
-			})), r.d(t, "h", (function() {
+			})), r.d(t, "g", (function() {
 				return E
-			})), r.d(t, "j", (function() {
-				return C
 			})), r.d(t, "i", (function() {
-				return k
-			})), r.d(t, "l", (function() {
+				return C
+			})), r.d(t, "k", (function() {
 				return I
-			})), r.d(t, "d", (function() {
+			})), r.d(t, "j", (function() {
+				return k
+			})), r.d(t, "m", (function() {
 				return x
+			})), r.d(t, "e", (function() {
+				return w
+			})), r.d(t, "d", (function() {
+				return S
 			}));
 			var n = r("./src/reddit/selectors/gold/purchaseCatalog.ts"),
 				o = r("./src/lib/initializeClient/installReducer.ts"),
@@ -941,25 +945,27 @@
 						r = (e => e.features.goldPurchase.premiumPurchaseModal.packageId)(e);
 					return t.length && r && t.find(e => e.mobileId === r) || null
 				},
-				m = e => e.features.goldPurchase.premiumPurchaseModal.showModal,
-				b = e => e.features.goldPurchase.payment.paymentMethod,
-				y = e => e.features.goldPurchase.payment.cardName,
-				h = e => e.features.goldPurchase.payment.postalCode,
-				g = e => e.features.goldPurchase.payment.savedCardsPending,
-				O = e => e.features.goldPurchase.payment.savedCards,
-				j = e => e.features.goldPurchase.payment.rememberCard,
+				m = e => e.features.goldPurchase.premiumPurchaseModal.activePage,
+				b = e => e.features.goldPurchase.premiumPurchaseModal.showModal,
+				y = e => e.features.goldPurchase.payment.paymentMethod,
+				h = e => e.features.goldPurchase.payment.cardName,
+				g = e => e.features.goldPurchase.payment.postalCode,
+				O = e => e.features.goldPurchase.payment.savedCardsPending,
+				j = e => e.features.goldPurchase.payment.savedCards,
+				P = e => e.features.goldPurchase.payment.rememberCard,
 				v = e => e.features.goldPurchase.payment.useSavedCard,
-				P = e => e.features.goldPurchase.payment.cardValidation.cardCvc,
-				_ = e => e.features.goldPurchase.payment.cardValidation.cardExpiry,
-				E = e => e.features.goldPurchase.payment.cardValidation.cardNumber,
-				C = e => e.features.goldPurchase.payment.cardValidation.nameOnCard,
+				_ = e => e.features.goldPurchase.payment.cardValidation.cardCvc,
+				E = e => e.features.goldPurchase.payment.cardValidation.cardExpiry,
+				C = e => e.features.goldPurchase.payment.cardValidation.cardNumber,
+				I = e => e.features.goldPurchase.payment.cardValidation.nameOnCard,
 				k = e => e.features.goldPurchase.payment.stripeToken.errorMessage,
-				I = e => e.features.goldPurchase.payment.stripeToken.pending,
-				x = e => e.features.goldPurchase.payment.paypal.errorMessage
+				x = e => e.features.goldPurchase.payment.stripeToken.pending,
+				w = e => e.features.goldPurchase.payment.paypal.passthrough,
+				S = e => e.features.goldPurchase.payment.paypal.errorMessage
 		},
 		"./src/redditGQL/operations/ChangeStripePaymentMethod.json": function(e) {
 			e.exports = JSON.parse('{"id":"ce700fb9b230"}')
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/GoldPurchasePaymentActions.1c868e9d3e5a1ac71cda.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/GoldPurchasePaymentActions.3d774e43571898bdb9d6.js.map

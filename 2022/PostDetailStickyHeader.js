@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostDetailStickyHeader.10f69b988c3f15418974.js
-// Retrieved at 8/4/2022, 7:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostDetailStickyHeader.6f2ee0189c919eb834df.js
+// Retrieved at 8/8/2022, 4:10:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostDetailStickyHeader"], {
 		"./src/reddit/actions/shortcuts/close.ts": function(t, e, s) {
@@ -20,7 +20,7 @@
 				m = s("./src/reddit/selectors/gild.ts"),
 				p = s("./src/reddit/selectors/goldPurchaseModals.ts"),
 				h = s("./src/reddit/actions/shortcuts/utils.ts");
-			const g = [p.s, p.m, t => !!Object(m.d)(t)],
+			const g = [p.u, p.o, t => !!Object(m.d)(t)],
 				x = (t, e) => async (s, m, p) => {
 					let {
 						apiContext: x
@@ -538,4 +538,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostDetailStickyHeader.10f69b988c3f15418974.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostDetailStickyHeader.6f2ee0189c919eb834df.js.map

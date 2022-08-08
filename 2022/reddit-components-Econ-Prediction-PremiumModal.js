@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Econ-Prediction-PremiumModal.0ee316baeaf9f9b10007.js
-// Retrieved at 8/3/2022, 12:40:06 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Econ-Prediction-PremiumModal.c9b4dd7908ebb8d259ea.js
+// Retrieved at 8/8/2022, 4:10:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Econ-Prediction-PremiumModal"], {
 		"./src/reddit/components/Econ/Prediction/PremiumModal/index.m.less": function(e, t, a) {
@@ -23,9 +23,9 @@
 		"./src/reddit/components/Econ/Prediction/PremiumModal/index.tsx": function(e, t, a) {
 			"use strict";
 			a.r(t);
-			var r = a("./src/config.ts"),
-				i = a("./node_modules/react/index.js"),
-				s = a.n(i),
+			var i = a("./src/config.ts"),
+				r = a("./node_modules/react/index.js"),
+				s = a.n(r),
 				c = a("./node_modules/react-redux/es/index.js"),
 				n = a("./src/reddit/actions/economics/predictions/index.ts"),
 				o = a("./src/reddit/selectors/activeModal.ts"),
@@ -56,7 +56,7 @@
 				let {
 					title: t,
 					description: a,
-					footer: r,
+					footer: i,
 					image: n,
 					onClose: o
 				} = e;
@@ -65,7 +65,7 @@
 					M = Object(c.e)(C.l),
 					I = Object(c.e)(C.o),
 					y = Object(P.d)(P.a.GoldPayment, !1);
-				Object(f.a)(p.a), Object(i.useEffect)(() => {
+				Object(f.a)(p.a), Object(r.useEffect)(() => {
 					M.length || I || d(Object(g.b)({
 						correlationId: y
 					})), d(Object(m.d)(E.c.Premium))
@@ -94,7 +94,7 @@
 					className: v.a.description
 				}, a), s.a.createElement("p", {
 					className: v.a.footer
-				}, r))), s.a.createElement("div", {
+				}, i))), s.a.createElement("div", {
 					className: v.a.premium
 				}, s.a.createElement("h3", {
 					className: v.a.benefitsText
@@ -107,7 +107,7 @@
 						d(Object(u.openWithBlob)({
 							correlationId: y,
 							packageId: e
-						})), d(Object(l.h)({
+						})), d(Object(l.i)({
 							renewInterval: t
 						})), N(b.c({
 							renewInterval: t
@@ -133,7 +133,7 @@
 					image: s.a.createElement("img", {
 						alt: "Snoo magician in front of a magic ball",
 						className: v.a.changePrediction,
-						src: `${r.a.assetPath}/img/econ/predictions/change_prediction.png`
+						src: `${i.a.assetPath}/img/econ/predictions/change_prediction.png`
 					})
 				},
 				SNEAK_PEEK: {
@@ -149,7 +149,7 @@
 					image: s.a.createElement("img", {
 						alt: "Snoo peeking into curtains",
 						className: v.a.sneakPeek,
-						src: `${r.a.assetPath}/img/econ/predictions/sneak_peek.png`
+						src: `${i.a.assetPath}/img/econ/predictions/sneak_peek.png`
 					})
 				}
 			};
@@ -175,16 +175,16 @@
 		"./src/reddit/hooks/usePreloadModal.ts": function(e, t, a) {
 			"use strict";
 			a.d(t, "a", (function() {
-				return i
+				return r
 			}));
-			var r = a("./node_modules/react/index.js");
+			var i = a("./node_modules/react/index.js");
 
-			function i(e) {
-				Object(r.useEffect)(() => {
+			function r(e) {
+				Object(i.useEffect)(() => {
 					e()
 				}, [e])
 			}
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Econ-Prediction-PremiumModal.0ee316baeaf9f9b10007.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Econ-Prediction-PremiumModal.c9b4dd7908ebb8d259ea.js.map

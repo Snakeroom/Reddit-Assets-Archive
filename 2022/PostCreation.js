@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostCreation.100be502a74b45a34f74.js
-// Retrieved at 8/8/2022, 2:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostCreation.055e2639e8116e1de242.js
+// Retrieved at 8/8/2022, 4:10:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostCreation", "ChatMessageInput~MembershipPaywallPage~RichTextEditor", "ContributorRequestButton"], {
 		"./node_modules/autosize/dist/autosize.js": function(e, t, n) {
@@ -34150,7 +34150,7 @@
 			const r = e => {
 				return Object(s.c)(e, {
 					experimentEligibilitySelector: s.a,
-					experimentName: o.Re
+					experimentName: o.Te
 				}) === o.Ed
 			}
 		},
@@ -34173,29 +34173,29 @@
 					if (Object(i.a)(e)) return !1;
 					return Object(s.c)(e, {
 						experimentEligibilitySelector: r.e,
-						experimentName: o.Xf
+						experimentName: o.Zf
 					}) === o.Ed
 				},
 				c = e => {
 					return Object(s.c)(e, {
 						experimentEligibilitySelector: r.e,
-						experimentName: o.Yf
+						experimentName: o.ag
 					}) === o.Ed
 				},
 				l = e => {
 					if (Object(i.a)(e)) return !1;
 					const t = Object(s.c)(e, {
 						experimentEligibilitySelector: r.e,
-						experimentName: o.Wf
+						experimentName: o.Yf
 					});
-					return t === o.Mf.TypingIndicators || t === o.Mf.IndicatorsPlusCTA
+					return t === o.Of.TypingIndicators || t === o.Of.IndicatorsPlusCTA
 				},
 				d = e => {
 					if (Object(i.a)(e)) return !1;
 					const t = Object(r.d)(e, {
-						experimentName: o.Wf
+						experimentName: o.Yf
 					});
-					return (null == t ? void 0 : t.variant) === o.Mf.IndicatorsPlusCTA
+					return (null == t ? void 0 : t.variant) === o.Of.IndicatorsPlusCTA
 				}
 		},
 		"./src/reddit/selectors/gold/enabledFeatures.ts": function(e, t, n) {
@@ -34621,4 +34621,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.100be502a74b45a34f74.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.055e2639e8116e1de242.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~SearchResults.70c39e3f02107a25cc7b.js
-// Retrieved at 8/8/2022, 2:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~SearchResults.c5c77ff8f189cf028185.js
+// Retrieved at 8/8/2022, 4:10:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~SearchResults"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -1477,8 +1477,8 @@
 					text: m
 				}))
 			};
-			var U = n("./src/lib/addQueryParams/index.ts"),
-				W = n("./src/reddit/actions/comment/index.ts"),
+			var W = n("./src/lib/addQueryParams/index.ts"),
+				U = n("./src/reddit/actions/comment/index.ts"),
 				V = n("./src/reddit/actions/post.ts"),
 				G = n("./src/reddit/components/HumanDate/index.tsx"),
 				J = n("./src/reddit/helpers/path/index.ts");
@@ -1497,7 +1497,7 @@
 					return r.a.createElement("a", {
 						className: t,
 						"data-testid": "comment_timestamp",
-						href: Object(U.a)(a, {
+						href: Object(W.a)(a, {
 							utm_source: "reddit",
 							utm_medium: "web2x",
 							context: 3
@@ -1525,9 +1525,9 @@
 					}))
 				},
 				z = (e, t, n) => {
-					window.removeEventListener("focus", n), e(Object(W.h)({
+					window.removeEventListener("focus", n), e(Object(U.h)({
 						commentListNodeId: t
-					})), window.setTimeout(() => e(Object(W.h)({
+					})), window.setTimeout(() => e(Object(U.h)({
 						commentListNodeId: t
 					})), 5e3)
 				};
@@ -1910,8 +1910,8 @@
 				}).apply(this, arguments)
 			}
 			const He = d.a.wrapped(f.b, "RightPositionedAuthorFlair", Be.a),
-				Ue = d.a.span("DeletedText", Be.a),
-				We = d.a.wrapped(k.a, "MetaSeparator", Be.a),
+				We = d.a.span("DeletedText", Be.a),
+				Ue = d.a.wrapped(k.a, "MetaSeparator", Be.a),
 				Ve = Object(i.b)(() => Object(a.c)({
 					hasBadges: (e, t) => {
 						let {
@@ -2096,7 +2096,7 @@
 					} = e;
 					return r.a.createElement("div", {
 						className: o
-					}, r.a.createElement(Ue, null, i.deletedBy === O.c.User ? s.fbt._("Comment deleted by user", null, {
+					}, r.a.createElement(We, null, i.deletedBy === O.c.User ? s.fbt._("Comment deleted by user", null, {
 						hk: "1Rtt4V"
 					}) : s.fbt._("Comment removed by moderator", null, {
 						hk: "E1t49"
@@ -2154,7 +2154,7 @@
 						hasContinueThread: !1,
 						numChildren: 0
 					};
-					return r.a.createElement(We, {
+					return r.a.createElement(Ue, {
 						className: Be.a.metaText
 					}, t ? s.fbt._({
 						"*": "More than {number} children",
@@ -3675,10 +3675,10 @@
 				r = n("./src/reddit/helpers/chooseVariant/index.ts"),
 				i = n("./src/reddit/selectors/posts.ts");
 			const a = e => Object(r.c)(e, {
-					experimentName: o.Ue,
+					experimentName: o.We,
 					experimentEligibilitySelector: r.a
 				}),
-				c = (e, t) => t === o.cf.Enabled && (null == e ? void 0 : e.isCreatedFromAdsUi) || (null == e ? void 0 : e.isSponsored),
+				c = (e, t) => t === o.ef.Enabled && (null == e ? void 0 : e.isCreatedFromAdsUi) || (null == e ? void 0 : e.isSponsored),
 				d = Object(s.a)(i.G, a, (e, t) => c(e, t));
 			Object(s.a)((e, t) => t, a, (e, t) => c(e, t))
 		},
@@ -3696,4 +3696,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~SearchResults.70c39e3f02107a25cc7b.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~SearchResults.c5c77ff8f189cf028185.js.map

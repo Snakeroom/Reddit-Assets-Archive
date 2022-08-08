@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Reddit.ae534010f781c6d20017.js
-// Retrieved at 8/8/2022, 3:30:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Reddit.62e673c39319ebefd99a.js
+// Retrieved at 8/8/2022, 4:10:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Reddit"], {
 		"./assets/fonts/BentonSans/font.less": function(e, t, n) {},
@@ -1773,7 +1773,7 @@
 				p = n("./src/reddit/selectors/gild.ts"),
 				b = n("./src/reddit/selectors/goldPurchaseModals.ts"),
 				h = n("./src/reddit/actions/shortcuts/utils.ts");
-			const g = [b.s, b.m, e => !!Object(p.d)(e)],
+			const g = [b.u, b.o, e => !!Object(p.d)(e)],
 				f = (e, t) => async (n, p, b) => {
 					let {
 						apiContext: f
@@ -2300,22 +2300,23 @@
 		"./src/reddit/components/CoinPurchaseModal/async.tsx": function(e, t, n) {
 			"use strict";
 			n.d(t, "a", (function() {
-				return l
+				return d
 			}));
 			n("./node_modules/core-js/modules/web.dom.iterable.js");
 			var s = n("./node_modules/react/index.js"),
 				r = n.n(s),
 				o = n("./src/higherOrderComponents/makeAsync.tsx"),
 				a = n("./src/lib/loadWithRetries/index.ts"),
-				i = n("./src/reddit/components/GlobalModalContainer/registry.ts"),
-				c = n("./src/reddit/constants/modals.ts");
-			const l = () => Object(a.a)(() => Promise.all([n.e("CoinPurchaseModal").then(n.bind(null, "./src/reddit/components/CoinPurchaseModal/index.tsx"))])).then(e => e[0].default),
-				d = Object(o.a)({
+				i = n("./src/reddit/helpers/loadThirdPartyScript.ts"),
+				c = n("./src/reddit/components/GlobalModalContainer/registry.ts"),
+				l = n("./src/reddit/constants/modals.ts");
+			const d = () => Object(a.a)(() => Promise.all([Promise.all([n.e("CoinPurchaseModal~PremiumPurchaseModal"), n.e("CoinPurchaseModal")]).then(n.bind(null, "./src/reddit/components/CoinPurchaseModal/index.tsx")), Object(i.d)().catch(() => {})])).then(e => e[0].default),
+				u = Object(o.a)({
 					ErrorComponent: () => null,
 					LoadingComponent: () => null,
-					getComponent: l
+					getComponent: d
 				});
-			Object(i.b)(c.a.ECON_COIN_PURCHASE, e => r.a.createElement(d, {
+			Object(c.b)(l.a.ECON_COIN_PURCHASE, e => r.a.createElement(u, {
 				onOverlayClick: e,
 				withOverlay: !0
 			}))
@@ -4742,7 +4743,7 @@
 		"./src/reddit/components/PremiumPurchaseModal/Loader.tsx": function(e, t, n) {
 			"use strict";
 			n.d(t, "a", (function() {
-				return l
+				return d
 			}));
 			n("./node_modules/core-js/modules/web.dom.iterable.js");
 			var s = n("./node_modules/react/index.js"),
@@ -4750,14 +4751,15 @@
 				o = n("./src/higherOrderComponents/makeAsync.tsx"),
 				a = n("./src/lib/loadWithRetries/index.ts"),
 				i = n("./src/reddit/components/GlobalModalContainer/registry.ts"),
-				c = n("./src/reddit/constants/modals.ts");
-			const l = () => Object(a.a)(() => Promise.all([n.e("PremiumPurchaseModal").then(n.bind(null, "./src/reddit/components/PremiumPurchaseModal/index.tsx"))])).then(e => e[0].default),
-				d = Object(o.a)({
-					getComponent: l,
+				c = n("./src/reddit/constants/modals.ts"),
+				l = n("./src/reddit/helpers/loadThirdPartyScript.ts");
+			const d = () => Object(a.a)(() => Promise.all([Promise.all([n.e("CoinPurchaseModal~PremiumPurchaseModal"), n.e("PremiumPurchaseModal")]).then(n.bind(null, "./src/reddit/components/PremiumPurchaseModal/index.tsx")), Object(l.d)().catch(() => {})])).then(e => e[0].default),
+				u = Object(o.a)({
+					getComponent: d,
 					ErrorComponent: () => null,
 					LoadingComponent: () => null
 				});
-			Object(i.b)(c.a.ECON_PREMIUM_PURCHASE, () => r.a.createElement(d, null))
+			Object(i.b)(c.a.ECON_PREMIUM_PURCHASE, () => r.a.createElement(u, null))
 		},
 		"./src/reddit/components/Root/AdminPanelLoader.tsx": function(e, t, n) {
 			"use strict";
@@ -12330,7 +12332,7 @@
 				Ki = e => {
 					return Object(Aa.c)(e, {
 						experimentEligibilitySelector: Aa.a,
-						experimentName: Tn.Ve
+						experimentName: Tn.Xe
 					}) === Tn.Ed
 				};
 			var Ji = m.a.memo((function(e) {
@@ -13002,7 +13004,7 @@
 				Il = n("./src/reddit/icons/fonts/Premium/index.tsx"),
 				Al = n("./src/reddit/layout/row/InlineButton/index.tsx");
 			const Tl = e => Object(Aa.c)(e, {
-				experimentName: Tn.Nf,
+				experimentName: Tn.Pf,
 				experimentEligibilitySelector: Aa.a
 			}) === Tn.Ed;
 			var Rl = n("./src/reddit/selectors/experiments/navbarLikeMweb.ts"),
@@ -16955,14 +16957,14 @@
 							}
 						})), Object(B.d)("enabled" === Object(Aa.c)(s.getState(), {
 							experimentEligibilitySelector: Aa.a,
-							experimentName: Tn.Gf,
+							experimentName: Tn.If,
 							expEventOverride: !1
 						})), Object(B.c)("enabled" === Object(Aa.c)(s.getState(), {
 							experimentEligibilitySelector: Aa.a,
-							experimentName: Tn.If
+							experimentName: Tn.Kf
 						})), Object(B.g)("enabled" === Object(Aa.c)(s.getState(), {
 							experimentEligibilitySelector: Aa.a,
-							experimentName: Tn.Hf
+							experimentName: Tn.Jf
 						})), Object(B.f)(Tv.gqlContext), window.addEventListener("beforeunload", () => {
 							const e = s.getState(),
 								t = Object(jf.a)("tab_closed")(e),
@@ -19247,15 +19249,15 @@
 				x = n("./src/lib/getParsedUserAgent/index.ts");
 			const j = Object(a.a)(e => Object(m.c)(e, {
 				experimentEligibilitySelector: e => Object(x.g)(e.meta.userAgent) && Object(p.f)(e),
-				experimentName: l.pf
-			}), e => e === l.Bf.Enabled);
+				experimentName: l.rf
+			}), e => e === l.Df.Enabled);
 			var _ = n("./src/reddit/selectors/responsiveSettings.ts");
 			const P = Object(a.c)({
 					frontpageSignupVariant: u.a,
 					magicLinkVariant: g.a,
 					ssoLoginLinkVariant: e => Object(m.c)(e, {
 						experimentEligibilitySelector: e => !Object(p.e)(e),
-						experimentName: l.rf
+						experimentName: l.tf
 					}),
 					blockingInterstitialVariant: h.e,
 					blockingInterstitialV2Variant: h.f
@@ -19289,7 +19291,7 @@
 					if (P = Object(i.a)(P, {
 							experiment_d2x_2020ify_buttons: "enabled"
 						}), f && (P = Object(i.a)(P, {
-							[`experiment_${l.rf}`]: f
+							[`experiment_${l.tf}`]: f
 						})), E && (P = Object(i.a)(P, {
 							[`experiment_${l.Pd}`]: "enabled"
 						})), x && (P = Object(i.a)(P, {
@@ -19300,7 +19302,7 @@
 						})), P = Object(i.a)(P, {
 							experiment_d2x_onboarding: "enabled"
 						}), _ && (P = Object(i.a)(P, {
-							[`experiment_${l.pf}`]: "enabled"
+							[`experiment_${l.rf}`]: "enabled"
 						})), C && (P = Object(i.a)(P, {
 							[`experiment_${l.Rb}`]: b
 						})), y && (P = Object(i.a)(P, {
@@ -19641,14 +19643,14 @@
 			const a = e => {
 					return Object(r.c)(e, {
 						experimentEligibilitySelector: r.a,
-						experimentName: s.Te
+						experimentName: s.Ve
 					}) === s.Ed
 				},
 				i = e => {
 					if (Object(o.a)(e)) return !1;
 					return Object(r.c)(e, {
 						experimentEligibilitySelector: r.a,
-						experimentName: s.Se
+						experimentName: s.Ue
 					}) === s.Ed
 				},
 				c = e => {
@@ -19838,4 +19840,4 @@
 		["./src/reddit/index.tsx", "runtime~Reddit", "vendors~CommentsPage~ModerationPages~Reddit~reddit-components-ClassicPost~reddit-components-CompactP~d737df3e", "vendors~CommentsPage~Governance~ModListing~ModerationPages~Reddit~Subreddit", "vendors~Chat~Governance~Reddit", "vendors~Reddit", "CommentsPage~Governance~Reddit~ReportFlow~Subreddit~reddit-components-BlankPost~reddit-components-Cl~5351df81", "PostCreation~Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~r~4c415e24", "Governance~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compo~bd4baca2", "Governance~ModListing~Reddit~ReportFlow~Subreddit", "Chat~Governance~Reddit", "Governance~Reddit~Subreddit", "Governance~Reddit~SubredditForkingCTA", "Governance~Reddit", "Reddit~StandalonePostPage", "AuthorHovercard~Reddit"]
 	]
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit.ae534010f781c6d20017.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit.62e673c39319ebefd99a.js.map

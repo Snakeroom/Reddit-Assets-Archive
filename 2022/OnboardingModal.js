@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/OnboardingModal.8b5defb6528bebda2ccb.js
-// Retrieved at 8/8/2022, 2:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/OnboardingModal.8b089c4922ee90c4da5a.js
+// Retrieved at 8/8/2022, 4:10:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["OnboardingModal"], {
 		"./node_modules/lodash/_baseRange.js": function(e, t) {
@@ -396,7 +396,7 @@
 						},
 						forceGeopopular: !0,
 						includeCommunityDUs: !1,
-						includeInterestTopics: !!p && !Object(b.bg)(p),
+						includeInterestTopics: !!p && !Object(b.dg)(p),
 						includeFeaturedAnnouncements: !0,
 						includeLiveEvents: !0,
 						includeIdentity: h && !(null === (r = null === (n = e.user.account) || void 0 === n ? void 0 : n.karma) || void 0 === r ? void 0 : r.total),
@@ -739,7 +739,7 @@
 				}, Fe = Object(de.a)(je.d), Ge = e => async (t, n) => {
 					const r = n(),
 						s = r.platform.currentPage.routeMatch.match;
-					Object(ie.m)(r) || Object(ie.s)(r) || (e || t(Fe()), await t(Ae(s, !0)))
+					Object(ie.o)(r) || Object(ie.u)(r) || (e || t(Fe()), await t(Ae(s, !0)))
 				}, Le = Object(de.a)(je.g), Pe = Object(de.a)(je.f), Me = Object(de.a)(je.e), Be = e => async (t, n, r) => {
 					let {
 						gqlContext: s
@@ -1978,9 +1978,9 @@
 					ie = Object(i.e)(nt.S),
 					ce = Object(i.e)(et.g),
 					de = Object(i.e)($e.a),
-					le = de === je.Kf.CloseOnboarding,
-					ue = de === je.Kf.SkipTopicSelection,
-					me = de === je.Kf.SmartSignal,
+					le = de === je.Mf.CloseOnboarding,
+					ue = de === je.Mf.SkipTopicSelection,
+					me = de === je.Mf.SmartSignal,
 					pe = Object(o.useCallback)(() => {
 						r(Object(p.g)(Ie.a.ONBOARDING_MODAL_D2X)), ae && r(Object(b.g)()), f && (s(Object(A.t)()), Object(ze.a)()), ce && ie && r(Object(u.startChangeUsernameFlow)())
 					}, [r, ie, ce, f, ae, s]),
@@ -4199,4 +4199,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/OnboardingModal.8b5defb6528bebda2ccb.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/OnboardingModal.8b089c4922ee90c4da5a.js.map

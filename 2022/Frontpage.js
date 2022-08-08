@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Frontpage.307e102b816bb2278bd6.js
-// Retrieved at 8/8/2022, 2:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Frontpage.261e1291292c26e56107.js
+// Retrieved at 8/8/2022, 4:10:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Frontpage"], {
 		"./node_modules/intersection-observer/intersection-observer.js": function(e, t) {
@@ -552,7 +552,7 @@
 						},
 						forceGeopopular: !0,
 						includeCommunityDUs: !1,
-						includeInterestTopics: !!p && !Object(b.bg)(p),
+						includeInterestTopics: !!p && !Object(b.dg)(p),
 						includeFeaturedAnnouncements: !0,
 						includeLiveEvents: !0,
 						includeIdentity: f && !(null === (s = null === (a = e.user.account) || void 0 === a ? void 0 : a.karma) || void 0 === s ? void 0 : s.total),
@@ -895,7 +895,7 @@
 				}, Me = Object(le.a)(Oe.d), Le = e => async (t, a) => {
 					const s = a(),
 						n = s.platform.currentPage.routeMatch.match;
-					Object(ie.m)(s) || Object(ie.s)(s) || (e || t(Me()), await t(Te(n, !0)))
+					Object(ie.o)(s) || Object(ie.u)(s) || (e || t(Me()), await t(Te(n, !0)))
 				}, Be = Object(le.a)(Oe.g), Fe = Object(le.a)(Oe.f), Re = Object(le.a)(Oe.e), De = e => async (t, a, s) => {
 					let {
 						gqlContext: n
@@ -7577,4 +7577,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Frontpage.307e102b816bb2278bd6.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Frontpage.261e1291292c26e56107.js.map
