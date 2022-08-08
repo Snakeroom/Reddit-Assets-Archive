@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModListing.dbe332a1f44d0aaa23ba.js
-// Retrieved at 8/4/2022, 7:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModListing.cb138bd7fad81d126aab.js
+// Retrieved at 8/8/2022, 1:00:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModListing"], {
 		"./node_modules/classnames/index.js": function(e, t, n) {
@@ -693,7 +693,7 @@
 			})), n.d(t, "hideSubreddit", (function() {
 				return J
 			})), n.d(t, "unhideSubreddit", (function() {
-				return X
+				return Y
 			}));
 			var r = n("./node_modules/fbt/lib/FbtPublic.js"),
 				s = n("./node_modules/lodash/pick.js"),
@@ -859,7 +859,7 @@
 					n(c(e));
 					const p = await u(o(), a.displayText, e);
 					p.ok ? (await n(B(m.routeMatch.match, !0)), n(d(e))) : n(l(p.body))
-				}, J = e => z(e, !0), X = e => z(e, !1)
+				}, J = e => z(e, !0), Y = e => z(e, !1)
 		},
 		"./src/reddit/actions/postList.ts": function(e, t, n) {
 			"use strict";
@@ -1673,7 +1673,8 @@
 				loadingIconInTopBar: "_1U3KLnHX2TdXL5lNrrv4EW",
 				emptyEditableIconInTopBar: "_3-i_fdY8zqHIo3CjuVzTYE",
 				defaultCommunityIcon: "_1xvdfUtOPDANqHjxzxKX5b",
-				mNightmode: "_1TI6C7sqGL9TRdsq1jRks"
+				mNightmode: "_1TI6C7sqGL9TRdsq1jRks",
+				iconLink: "_35ahToY-XcU6llULyYdy2A"
 			}
 		},
 		"./src/reddit/components/SubredditIcon/index.tsx": function(e, t, n) {
@@ -1764,7 +1765,8 @@
 						color: e.redditStyle ? u.a.alienblue : d
 					}
 				})), e.linkTo ? i.a.createElement("a", y({}, null !== (t = e.linkProps) && void 0 !== t ? t : {}, {
-					href: e.linkTo
+					href: e.linkTo,
+					className: g.a.iconLink
 				}), l) : i.a.createElement(i.a.Fragment, null, l)
 			})
 		},
@@ -2986,7 +2988,7 @@
 			})), n.d(t, "e", (function() {
 				return J
 			})), n.d(t, "d", (function() {
-				return Y
+				return X
 			})), n.d(t, "v", (function() {
 				return ee
 			})), n.d(t, "u", (function() {
@@ -3148,7 +3150,7 @@
 							break
 						}
 						case o.Nb.SUBREDDIT_WIKI:
-							Object(E.a)(X(n, r)(t));
+							Object(E.a)(Y(n, r)(t));
 							break;
 						case o.Nb.COINS:
 							Object(E.a)(H(n, r)(t)), Object(E.a)(q()(t));
@@ -3185,7 +3187,7 @@
 							u && Object(E.a)(Q()(t));
 							break;
 						case o.Nb.GEOTAGGING:
-							u && Object(E.a)(Y()(t));
+							u && Object(E.a)(X()(t));
 							break;
 						case o.Nb.SUBREDDIT_CREATION:
 							u && Object(E.a)(z()(t));
@@ -3509,7 +3511,7 @@
 					noun: "screen",
 					...C(e)
 				}),
-				X = (e, t) => n => ({
+				Y = (e, t) => n => ({
 					source: "global",
 					action: "view",
 					noun: "screen",
@@ -3520,7 +3522,7 @@
 					userSubreddit: I.sb(n),
 					adblock: I.e(n)
 				}),
-				Y = () => e => ({
+				X = () => e => ({
 					source: "global",
 					action: "view",
 					noun: "screen",
@@ -4529,10 +4531,10 @@
 					}, e.apiError.explanation))
 				}
 			}
-			var X = Object(a.b)(z, e => ({
+			var Y = Object(a.b)(z, e => ({
 					hide: t => e(Object(m.hideSubreddit)(t))
 				}))(Object(B.c)(J)),
-				Y = n("./src/lib/lessComponent.tsx"),
+				X = n("./src/lib/lessComponent.tsx"),
 				Z = n("./src/reddit/components/SubredditIcon/index.tsx"),
 				$ = n("./src/lib/classNames/index.ts"),
 				ee = n("./src/reddit/icons/fonts/helpers.tsx");
@@ -4543,7 +4545,7 @@
 				re = n("./src/reddit/selectors/subreddit.ts"),
 				se = n("./src/reddit/components/ModListingSidebar/HideCommunities/SubredditsList/SubredditsListRow/index.m.less"),
 				oe = n.n(se);
-			const ie = Y.a.wrapped(Z.b, "SubredditIcon", oe.a),
+			const ie = X.a.wrapped(Z.b, "SubredditIcon", oe.a),
 				ae = Object(c.c)({
 					isApiPending: K,
 					subredditOrProfile: (e, t) => {
@@ -4643,7 +4645,7 @@
 						hk: "YdVw7"
 					})), e.filtered && i.a.createElement("div", {
 						className: he.a.inputContainer
-					}, i.a.createElement(X, null), i.a.createElement(pe, {
+					}, i.a.createElement(Y, null), i.a.createElement(pe, {
 						hiddenSubredditsNames: e.hiddenSubredditsNames
 					})))
 				}
@@ -5194,11 +5196,11 @@
 							return e
 					}
 				},
-				X = Object(r.c)({
+				Y = Object(r.c)({
 					error: z,
 					pending: J
 				});
-			var Y = function() {
+			var X = function() {
 					let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : null,
 						t = arguments.length > 1 ? arguments[1] : void 0;
 					switch (t.type) {
@@ -5219,8 +5221,8 @@
 					}
 				},
 				Z = Object(r.c)({
-					api: X,
-					result: Y
+					api: Y,
+					result: X
 				});
 			const $ = {};
 			var ee = function() {
@@ -5810,9 +5812,9 @@
 					api: Ge,
 					result: ze
 				});
-			const Xe = {};
-			var Ye = function() {
-				let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : Xe,
+			const Ye = {};
+			var Xe = function() {
+				let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : Ye,
 					t = arguments.length > 1 ? arguments[1] : void 0;
 				switch (t.type) {
 					case s.M:
@@ -5872,7 +5874,7 @@
 					}
 				},
 				et = Object(r.c)({
-					error: Ye,
+					error: Xe,
 					pending: $e
 				});
 			n("./node_modules/core-js/modules/web.dom.iterable.js");
@@ -6385,9 +6387,9 @@
 					error: Qt,
 					pending: zt
 				});
-			const Xt = {};
-			var Yt = function() {
-				let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : Xt,
+			const Yt = {};
+			var Xt = function() {
+				let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : Yt,
 					t = arguments.length > 1 ? arguments[1] : void 0;
 				switch (t.type) {
 					case at.p: {
@@ -6433,7 +6435,7 @@
 				},
 				en = Object(r.c)({
 					api: Jt,
-					itemOrder: Yt,
+					itemOrder: Xt,
 					loadMore: $t
 				});
 			var tn = function() {
@@ -6889,4 +6891,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModListing.dbe332a1f44d0aaa23ba.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModListing.cb138bd7fad81d126aab.js.map

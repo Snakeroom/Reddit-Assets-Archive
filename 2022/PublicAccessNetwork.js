@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PublicAccessNetwork.fcb5e37356564a94afd2.js
-// Retrieved at 8/4/2022, 7:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PublicAccessNetwork.060331e6e5cba7568355.js
+// Retrieved at 8/8/2022, 1:00:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PublicAccessNetwork"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -2392,7 +2392,7 @@
 								},
 								a = await H(d(), Object(J.h)(r, u), u);
 							if (a.ok) {
-								if ([J.f.Public, J.f.PublicSubreddit].includes(o)) {
+								if ([J.f.Public, J.f.PublicAsSubreddit].includes(o)) {
 									if (n(we()), a.body) {
 										const e = Object(q.a)(a.body),
 											t = {
@@ -3834,14 +3834,14 @@
 							state: t
 						} = this, s = [];
 						return t.removalContextType !== S.e.Bulk && (e.isPostCommentAsSubredditEnabled ? (s.push(r.a.createElement(D, {
-							key: S.f.PublicSubreddit,
+							key: S.f.PublicAsSubreddit,
 							showButton: !0,
 							tabIndex: 0,
-							value: S.f.PublicSubreddit
-						}, r.a.createElement("div", null, t.removalContextType === S.e.Post ? j._("Public: Write a sticky comment on the post as {subredditName}", [j._param("subredditName", r.a.createElement(F, null, `r/${e.subredditName}`))], {
-							hk: "4XPuC"
-						}) : j._("Public: Write a reply to the comment as {subredditName}", [j._param("subredditName", r.a.createElement(F, null, `r/${e.subredditName}`))], {
-							hk: "FeqMl"
+							value: S.f.PublicAsSubreddit
+						}, r.a.createElement("div", null, t.removalContextType === S.e.Post ? j._("Public: Write a sticky comment on the post as Mod Team", null, {
+							hk: "er8wA"
+						}) : j._("Public: Write a reply to the comment as Mod Team", null, {
+							hk: "1WMyjM"
 						})))), s.push(r.a.createElement(D, {
 							key: S.f.Public,
 							showButton: !0,
@@ -3877,7 +3877,7 @@
 						})))), s
 					}, this.state = {
 						...I,
-						removalType: e.isPostCommentAsSubredditEnabled ? S.f.PublicSubreddit : S.f.Public,
+						removalType: e.isPostCommentAsSubredditEnabled ? S.f.PublicAsSubreddit : S.f.Public,
 						removalContextType: Object(S.g)(e.itemIds)
 					}
 				}
@@ -3921,7 +3921,7 @@
 					}), r.a.createElement(N, {
 						maxChars: S.a,
 						text: t.message.trim()
-					}), r.a.createElement(H, null, t.removalType !== S.f.Public && t.removalType !== S.f.PublicSubreddit && r.a.createElement(r.a.Fragment, null, r.a.createElement(U, null), j._("A link to the removed content will be appended to your message", null, {
+					}), r.a.createElement(H, null, t.removalType !== S.f.Public && t.removalType !== S.f.PublicAsSubreddit && r.a.createElement(r.a.Fragment, null, r.a.createElement(U, null), j._("A link to the removed content will be appended to your message", null, {
 						hk: "1DbEGF"
 					}))))), r.a.createElement(q, null, r.a.createElement(K, null, r.a.createElement(M, null, j._("Mod note (Only mods will see this note)", null, {
 						hk: "3InAsy"
@@ -4862,7 +4862,7 @@
 				i = 100;
 			var d, c;
 			! function(e) {
-				e.Private = "private", e.PrivateExposed = "private_exposed", e.Public = "public", e.PublicSubreddit = "public_subreddit"
+				e.Private = "private", e.PrivateExposed = "private_exposed", e.Public = "public", e.PublicAsSubreddit = "public_as_subreddit"
 			}(d || (d = {})),
 			function(e) {
 				e.Bulk = "bulk", e.Comment = "comment", e.Post = "link"
@@ -4873,8 +4873,7 @@
 						[t === c.Bulk ? "item_ids" : "item_id"]: e.itemId,
 						message: e.message,
 						title: e.title,
-						type: e.type === d.PublicSubreddit ? d.Public : e.type,
-						use_proxy: e.type === d.PublicSubreddit
+						type: e.type
 					}
 				}
 		},
@@ -7944,4 +7943,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PublicAccessNetwork.fcb5e37356564a94afd2.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PublicAccessNetwork.060331e6e5cba7568355.js.map

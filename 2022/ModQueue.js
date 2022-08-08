@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModQueue.25877270ce6a0f2a5878.js
-// Retrieved at 8/4/2022, 7:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModQueue.679d801789690f4e719a.js
+// Retrieved at 8/8/2022, 1:00:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModQueue"], {
 		"./src/reddit/actions/bulkActions/index.ts": function(e, t, o) {
@@ -484,8 +484,8 @@
 					}
 				}), a
 			}
-			var P = o("./src/reddit/models/ModQueue/index.ts"),
-				I = o("./src/reddit/models/Toast/index.ts"),
+			var I = o("./src/reddit/models/ModQueue/index.ts"),
+				P = o("./src/reddit/models/Toast/index.ts"),
 				N = o("./src/reddit/selectors/modQueue.ts"),
 				C = o("./src/reddit/selectors/subreddit.ts"),
 				M = o("./src/reddit/selectors/telemetry.ts"),
@@ -550,7 +550,7 @@
 						}),
 						v = await Object(c.b)(m(), j);
 					if (!v.ok) return n(f(v.error)), void n(Object(i.f)({
-						kind: I.b.Error,
+						kind: P.b.Error,
 						text: s.fbt._("Oh no! Something went wrong!", null, {
 							hk: "16O2Sk"
 						})
@@ -558,7 +558,7 @@
 					const _ = x(v.body.data);
 					n(O({
 						listingKey: e,
-						page: `${o.page||P.b}`,
+						page: `${o.page||I.b}`,
 						response: _
 					}))
 				}, ee = Object(n.a)(T.k), te = Object(n.a)(T.b), oe = e => async (t, o, r) => {
@@ -582,7 +582,7 @@
 						}),
 						p = await Object(c.b)(n(), b);
 					if (!p.ok) return void t(Object(i.f)({
-						kind: I.b.Error,
+						kind: P.b.Error,
 						text: s.fbt._("Oh no! Something went wrong!", null, {
 							hk: "16O2Sk"
 						})
@@ -614,7 +614,7 @@
 					for (let t = 0; t < O.length; t++) {
 						const o = O[t];
 						let s = e;
-						[P.a.Approve, P.a.Remove, P.a.Spam].includes(e) && (Object(f.a)(o) ? s += "_link" : s += "_comment"), Object(L.a)({
+						[I.a.Approve, I.a.Remove, I.a.Spam].includes(e) && (Object(f.a)(o) ? s += "_link" : s += "_comment"), Object(L.a)({
 							source: "bulk_mod_action",
 							action: "click",
 							noun: s,
@@ -649,92 +649,92 @@
 						}));
 						const o = function(e, t) {
 							switch (e) {
-								case P.a.Approve:
+								case I.a.Approve:
 									return s.fbt._({
 										"*": "{number} posts/comments have been approved",
 										_1: "1 post/comment has been approved"
 									}, [s.fbt._plural(t, "number")], {
 										hk: "2kKhSf"
 									});
-								case P.a.Flair:
+								case I.a.Flair:
 									return s.fbt._({
 										"*": "{number} posts/comments have had flair applied",
 										_1: "1 post/comment has had flair applied"
 									}, [s.fbt._plural(t, "number")], {
 										hk: "3syB5O"
 									});
-								case P.a.IgnoreReports:
+								case I.a.IgnoreReports:
 									return s.fbt._({
 										"*": "{number} posts/comments have had their reports ignored",
 										_1: "1 post/comment has had their reports ignored"
 									}, [s.fbt._plural(t, "number")], {
 										hk: "2WfE4g"
 									});
-								case P.a.Lock:
+								case I.a.Lock:
 									return s.fbt._({
 										"*": "{number} posts/comments have been locked",
 										_1: "1 post/comment has been locked"
 									}, [s.fbt._plural(t, "number")], {
 										hk: "45oMbv"
 									});
-								case P.a.MarkNSFW:
+								case I.a.MarkNSFW:
 									return s.fbt._({
 										"*": "{number} posts/comments have been marked NSFW",
 										_1: "1 post/comment has been marked NSFW"
 									}, [s.fbt._plural(t, "number")], {
 										hk: "oPsQr"
 									});
-								case P.a.RemovalReason:
+								case I.a.RemovalReason:
 									return s.fbt._({
 										"*": "{number} posts/comments have had removal reasons applied",
 										_1: "1 post/comment has had removal reasons applied"
 									}, [s.fbt._plural(t, "number")], {
 										hk: "35Tosn"
 									});
-								case P.a.Remove:
+								case I.a.Remove:
 									return s.fbt._({
 										"*": "{number} posts/comments have been removed",
 										_1: "1 post/comment has been removed"
 									}, [s.fbt._plural(t, "number")], {
 										hk: "B1ZbE"
 									});
-								case P.a.Spam:
+								case I.a.Spam:
 									return s.fbt._({
 										"*": "{number} posts/comments have been marked as spam",
 										_1: "1 post/comment has been marked as spam"
 									}, [s.fbt._plural(t, "number")], {
 										hk: "3OoNfp"
 									});
-								case P.a.Spoiler:
+								case I.a.Spoiler:
 									return s.fbt._({
 										"*": "{number} posts/comments have been marked as spoilers",
 										_1: "1 post/comment has been marked as spoilers"
 									}, [s.fbt._plural(t, "number")], {
 										hk: "1DFW5M"
 									});
-								case P.a.UnignoreReports:
+								case I.a.UnignoreReports:
 									return s.fbt._({
 										"*": "{number} posts/comments have had their reports un-ignored",
 										_1: "1 post/comment has had their reports un-ignored"
 									}, [s.fbt._plural(t, "number")], {
 										hk: "303Hpb"
 									});
-								case P.a.Unlock:
+								case I.a.Unlock:
 									return s.fbt._({
 										"*": "{number} posts/comments have been unlocked",
 										_1: "1 post/comment has been unlocked"
 									}, [s.fbt._plural(t, "number")], {
 										hk: "5gUht"
 									});
-								case P.a.UnmarkNSFW:
+								case I.a.UnmarkNSFW:
 									return s.fbt._({
 										"*": "{number} posts/comments have been un-marked as NSFW",
 										_1: "1 post/comment has been un-marked as NSFW"
 									}, [s.fbt._plural(t, "number")], {
 										hk: "3oSSST"
 									});
-								case P.a.Unspoiler:
-								case P.a.Unspoiler:
+								case I.a.Unspoiler:
+								case I.a.Unspoiler:
 									return s.fbt._({
 										"*": "{number} posts/comments have been un-marked as spoilers",
 										_1: "1 post/comment has been un-marked as spoilers"
@@ -743,14 +743,14 @@
 									})
 							}
 						}(e, O.length);
-						if (e !== P.a.Approve && e !== P.a.Flair) {
+						if (e !== I.a.Approve && e !== I.a.Flair) {
 							let t, n;
 							const u = p.platform.currentPage && p.platform.currentPage.queryParams && p.platform.currentPage.queryParams.subreddit,
 								l = u && Object(C.G)(p, u);
-							e === P.a.Remove && l && O.length > 1 && (t = s.fbt._("Add a removal reason", null, {
+							e === I.a.Remove && l && O.length > 1 && (t = s.fbt._("Add a removal reason", null, {
 								hk: "3gGDCl"
 							}), n = Object(a.fetchReasonsAndOpenModal)(l, O));
-							const m = Object(i.e)(o, I.b.Undo, s.fbt._("UNDO", null, {
+							const m = Object(i.e)(o, P.b.Undo, s.fbt._("UNDO", null, {
 								hk: "49SEAI"
 							}), (() => async (e, t, o) => {
 								let {
@@ -771,7 +771,7 @@
 									ids: u,
 									username: l
 								})) : (e(ne(m.error)), e(Object(i.f)({
-									kind: I.b.Error,
+									kind: P.b.Error,
 									text: s.fbt._("Oh no! Something went wrong!", null, {
 										hk: "16O2Sk"
 									})
@@ -779,14 +779,14 @@
 							})(), t, n);
 							r(Object(i.f)(m))
 						} else {
-							const e = Object(i.e)(o, I.b.SuccessMod);
+							const e = Object(i.e)(o, P.b.SuccessMod);
 							r(Object(i.f)(e))
 						}
 					} else {
 						r(Object(d.a)(h.error));
 						const e = Object(i.e)(s.fbt._("Oh no! Something went wrong!", null, {
 							hk: "16O2Sk"
-						}), I.b.Error);
+						}), P.b.Error);
 						r(Object(i.f)(e))
 					}
 				}, ae = Object(n.a)(T.a), ie = Object(n.a)(T.c), ce = Object(n.a)(T.d)
@@ -1067,8 +1067,8 @@
 				y = o("./src/lib/makeActionCreator/index.ts"),
 				A = o("./src/lib/makeCommentsPageKey/index.ts"),
 				x = o("./src/lib/makeDraftKey/index.ts"),
-				P = o("./src/reddit/actions/bulkActions/index.ts"),
-				I = o("./src/reddit/actions/comment/index.ts"),
+				I = o("./src/reddit/actions/bulkActions/index.ts"),
+				P = o("./src/reddit/actions/comment/index.ts"),
 				N = o("./src/reddit/actions/comment/authoring.ts"),
 				C = o("./src/reddit/actions/comment/moderation.ts"),
 				M = o("./src/reddit/actions/modal.ts"),
@@ -1214,7 +1214,7 @@
 						l = e[0],
 						m = Object(V.a)(l) ? z.e.Post : z.e.Comment,
 						b = m === z.e.Post ? c.posts.models[l] : c.features.comments.models[l],
-						p = m === z.e.Post ? L.S : I.j;
+						p = m === z.e.Post ? L.S : P.j;
 					if (!b || !u) return !1;
 					n(Oe()), n(p({
 						[l]: {
@@ -1240,7 +1240,7 @@
 								},
 								d = await B(i(), Object(z.h)(r, m), m);
 							if (d.ok) {
-								if ([z.f.Public, z.f.PublicSubreddit].includes(s)) {
+								if ([z.f.Public, z.f.PublicAsSubreddit].includes(s)) {
 									if (n(ge()), d.body) {
 										const e = Object(G.a)(d.body),
 											t = {
@@ -1268,7 +1268,7 @@
 												id: e.id,
 												postId: e.postId,
 												commentsPageKey: r
-											})), s && s !== e.id && n(Object(I.j)({
+											})), s && s !== e.id && n(Object(P.j)({
 												[s]: {
 													isStickied: !1
 												}
@@ -1334,7 +1334,7 @@
 								removalReason: t && t.title
 							}
 						};
-						if (d(Object(P.b)(s)), t) {
+						if (d(Object(I.b)(s)), t) {
 							const s = {
 									itemId: e,
 									message: o,
@@ -1450,7 +1450,7 @@
 				a = 100;
 			var i, c;
 			! function(e) {
-				e.Private = "private", e.PrivateExposed = "private_exposed", e.Public = "public", e.PublicSubreddit = "public_subreddit"
+				e.Private = "private", e.PrivateExposed = "private_exposed", e.Public = "public", e.PublicAsSubreddit = "public_as_subreddit"
 			}(i || (i = {})),
 			function(e) {
 				e.Bulk = "bulk", e.Comment = "comment", e.Post = "link"
@@ -1461,8 +1461,7 @@
 						[t === c.Bulk ? "item_ids" : "item_id"]: e.itemId,
 						message: e.message,
 						title: e.title,
-						type: e.type === i.PublicSubreddit ? i.Public : e.type,
-						use_proxy: e.type === i.PublicSubreddit
+						type: e.type
 					}
 				}
 		},
@@ -1536,4 +1535,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModQueue.25877270ce6a0f2a5878.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModQueue.679d801789690f4e719a.js.map
