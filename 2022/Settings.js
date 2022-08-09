@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Settings.a81f73d2c0fc962ba5b8.js
-// Retrieved at 8/9/2022, 9:50:08 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Settings.3349ba050f34bcc8176f.js
+// Retrieved at 8/9/2022, 10:30:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Settings"], {
 		"./node_modules/moment/locale sync recursive ^\\.\\/.*$": function(e, t, n) {
@@ -1173,12 +1173,12 @@
 				_ = Object(r.a)(h.X),
 				y = Object(r.a)(h.W),
 				x = Object(r.a)(h.V),
-				k = Object(r.a)(h.Bb),
-				C = Object(r.a)(h.zb),
-				j = Object(r.a)(h.Ab),
-				E = Object(r.a)(h.Eb),
-				O = Object(r.a)(h.Db),
-				w = Object(r.a)(h.Cb),
+				k = Object(r.a)(h.Eb),
+				C = Object(r.a)(h.Cb),
+				j = Object(r.a)(h.Db),
+				E = Object(r.a)(h.Hb),
+				O = Object(r.a)(h.Gb),
+				w = Object(r.a)(h.Fb),
 				S = e => async t => {
 					t(Object(o.f)({
 						kind: c.b.Error,
@@ -15000,4 +15000,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Settings.a81f73d2c0fc962ba5b8.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Settings.3349ba050f34bcc8176f.js.map

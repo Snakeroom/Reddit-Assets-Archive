@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/gildActions.7391a389a59f66479e75.js
-// Retrieved at 8/8/2022, 4:10:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/gildActions.c93d7b7dcee8d3dbd67e.js
+// Retrieved at 8/9/2022, 10:30:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["gildActions"], {
 		"./src/reddit/actions/gold/econPurchase.ts": function(e, t, r) {
@@ -19,7 +19,7 @@
 					econPurchase: s.a
 				}
 			});
-			const u = Object(a.a)(c.kb),
+			const u = Object(a.a)(c.nb),
 				l = (e, t, r) => async (d, s, a) => {
 					let {
 						gqlContext: c
@@ -523,7 +523,7 @@
 				let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : a,
 					t = arguments.length > 1 ? arguments[1] : void 0;
 				switch (t.type) {
-					case s.kb: {
+					case s.nb: {
 						const r = t.payload;
 						return {
 							...e,
@@ -580,4 +580,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/gildActions.7391a389a59f66479e75.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/gildActions.c93d7b7dcee8d3dbd67e.js.map

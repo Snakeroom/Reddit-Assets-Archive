@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CoinPurchaseModal.312ed270f1df16c88ab0.js
-// Retrieved at 8/8/2022, 4:10:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CoinPurchaseModal.e320d2c24c9e0af7d6ed.js
+// Retrieved at 8/9/2022, 10:30:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CoinPurchaseModal", "gildActions"], {
 		"./src/reddit/actions/economics/powerups/helpers.ts": function(e, t, a) {
@@ -26,7 +26,7 @@
 					econPurchase: s.a
 				}
 			});
-			const l = Object(n.a)(i.kb),
+			const l = Object(n.a)(i.nb),
 				u = (e, t, a) => async (r, s, n) => {
 					let {
 						gqlContext: i
@@ -1889,7 +1889,7 @@
 				let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : n,
 					t = arguments.length > 1 ? arguments[1] : void 0;
 				switch (t.type) {
-					case s.kb: {
+					case s.nb: {
 						const a = t.payload;
 						return {
 							...e,
@@ -1949,4 +1949,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CoinPurchaseModal.312ed270f1df16c88ab0.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CoinPurchaseModal.e320d2c24c9e0af7d6ed.js.map

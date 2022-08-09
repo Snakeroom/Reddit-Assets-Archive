@@ -1,37 +1,37 @@
-// https://www.redditstatic.com/desktop2x/AchievementsActions.b8206fe55398426b9d9b.js
-// Retrieved at 7/28/2022, 9:50:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/AchievementsActions.106c10b13a55e95b3bfc.js
+// Retrieved at 8/9/2022, 10:30:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["AchievementsActions"], {
 		"./src/reddit/actions/economics/powerups/flairs/index.ts": function(e, t, r) {
 			"use strict";
 			r.r(t), r.d(t, "onSubredditUserPowerupsFlairsLoaded", (function() {
-				return O
-			})), r.d(t, "onUsersSupportedSubredditsLoaded", (function() {
-				return y
-			})), r.d(t, "onSubredditUserPowerupsFlairPreferenceUpdateRequested", (function() {
 				return S
-			})), r.d(t, "onSubredditUserPowerupsFlairPreferenceUpdateSuccess", (function() {
+			})), r.d(t, "onUsersSupportedSubredditsLoaded", (function() {
 				return F
-			})), r.d(t, "onSubredditUserPowerupsFlairPreferenceUpdateFailed", (function() {
-				return U
-			})), r.d(t, "onSubredditUserPowerupsFlairVisibilityUpdate", (function() {
+			})), r.d(t, "onSubredditUserPowerupsFlairPreferenceUpdateRequested", (function() {
 				return v
-			})), r.d(t, "getSubredditUserPowerupsFlairsAndSupporterInfo", (function() {
+			})), r.d(t, "onSubredditUserPowerupsFlairPreferenceUpdateSuccess", (function() {
+				return U
+			})), r.d(t, "onSubredditUserPowerupsFlairPreferenceUpdateFailed", (function() {
 				return A
-			})), r.d(t, "getSubredditCurrentUserPowerupsFlairsAndSupporterInfo", (function() {
-				return P
-			})), r.d(t, "shouldFetchCommentsPowerupsInfo", (function() {
+			})), r.d(t, "onSubredditUserPowerupsFlairVisibilityUpdate", (function() {
 				return x
-			})), r.d(t, "getSubredditUserCommentsPowerupsInfoFromCommentLinks", (function() {
-				return _
-			})), r.d(t, "getSubredditUserCommentsPowerupsInfoFromCommentCollection", (function() {
-				return k
-			})), r.d(t, "setSubredditUserAchievementFlair", (function() {
+			})), r.d(t, "getSubredditUserPowerupsFlairsAndSupporterInfo", (function() {
+				return P
+			})), r.d(t, "getSubredditCurrentUserPowerupsFlairsAndSupporterInfo", (function() {
 				return g
-			})), r.d(t, "setSubredditUserSupporterFlair", (function() {
+			})), r.d(t, "shouldFetchCommentsPowerupsInfo", (function() {
+				return _
+			})), r.d(t, "getSubredditUserCommentsPowerupsInfoFromCommentLinks", (function() {
+				return k
+			})), r.d(t, "getSubredditUserCommentsPowerupsInfoFromCommentCollection", (function() {
 				return C
-			})), r.d(t, "setSubredditUserPowerupsFlairsVisibility", (function() {
+			})), r.d(t, "setSubredditUserAchievementFlair", (function() {
+				return E
+			})), r.d(t, "setSubredditUserSupporterFlair", (function() {
 				return L
+			})), r.d(t, "setSubredditUserPowerupsFlairsVisibility", (function() {
+				return D
 			}));
 			r("./node_modules/core-js/modules/web.dom.iterable.js");
 			var i = r("./node_modules/fbt/lib/FbtPublic.js"),
@@ -51,28 +51,30 @@
 				});
 				if (!s.ok || !s.body.data.updateAchievementFlairPreference.ok) throw new Error("Unable to update achievement flair preferences")
 			};
-			var u = r("./src/reddit/actions/gold/powerups.ts"),
-				l = r("./src/reddit/actions/toaster.ts"),
-				b = r("./src/reddit/models/Toast/index.ts"),
-				p = r("./src/reddit/selectors/commentSelector.ts"),
-				f = r("./src/reddit/selectors/gold/powerups/index.ts"),
-				m = r("./src/reddit/selectors/gold/powerups/flairs.ts"),
-				w = r("./src/reddit/selectors/user.ts"),
-				I = r("./src/reddit/actions/economics/powerups/constants.ts"),
-				j = r("./src/lib/initializeClient/installReducer.ts"),
-				h = r("./src/reddit/reducers/features/powerups/index.ts");
-			Object(j.a)({
+			var u = r("./src/reddit/actions/gold/achievementFlairs.ts"),
+				l = r("./src/reddit/actions/gold/powerups.ts"),
+				b = r("./src/reddit/actions/toaster.ts"),
+				p = r("./src/reddit/models/Toast/index.ts"),
+				f = r("./src/reddit/selectors/commentSelector.ts"),
+				m = r("./src/reddit/selectors/experiments/econ/index.ts"),
+				w = r("./src/reddit/selectors/gold/powerups/index.ts"),
+				j = r("./src/reddit/selectors/gold/powerups/flairs.ts"),
+				I = r("./src/reddit/selectors/user.ts"),
+				O = r("./src/reddit/actions/economics/powerups/constants.ts"),
+				h = r("./src/lib/initializeClient/installReducer.ts"),
+				y = r("./src/reddit/reducers/features/powerups/index.ts");
+			Object(h.a)({
 				features: {
-					powerups: h.a
+					powerups: y.a
 				}
 			});
-			const O = Object(s.a)(I.d),
-				y = Object(s.a)(I.i),
-				S = Object(s.a)(I.f),
-				F = Object(s.a)(I.g),
-				U = Object(s.a)(I.e),
-				v = Object(s.a)(I.h),
-				A = (e, t) => async (r, i, s) => {
+			const S = Object(s.a)(O.d),
+				F = Object(s.a)(O.i),
+				v = Object(s.a)(O.f),
+				U = Object(s.a)(O.g),
+				A = Object(s.a)(O.e),
+				x = Object(s.a)(O.h),
+				P = (e, t) => async (r, i, s) => {
 					let {
 						gqlContext: c
 					} = s;
@@ -94,32 +96,29 @@
 								subredditInfoById: i,
 								redditorsInfoByIds: s
 							} = t;
-						await r(O(i)), s && await r(y(s))
+						await r(S(i)), s && await r(F(s))
 					} catch (u) {
 						d.c.captureException(u)
 					}
-				}, P = (e, t) => async (r, i) => {
+				}, g = (e, t) => async (r, i) => {
 					if (!e) return;
 					const s = i(),
-						d = Object(w.k)(s);
-					if (!d || !Object(f.m)(s, {
+						d = Object(I.k)(s);
+					if (!d || !Object(w.m)(s, {
 							subredditId: e
 						})) return;
-					const n = !!Object(m.f)(s, {
+					const n = !!Object(j.f)(s, {
 						subredditId: e,
 						userId: d.id
 					});
-					!t && n || await r(A(e, [d.id]))
-				}, x = e => async (t, r) => {
-					if (!e) return !1;
-					await t(Object(u.j)(e, {
-						fullData: !0
-					}));
-					const i = r();
-					return Object(f.m)(i, {
-						subredditId: e
-					})
-				}, _ = e => async (t, r) => {
+					!t && n || await r(P(e, [d.id]))
+				}, _ = e => async (t, r) => !!e && (Object(m.g)(r()) ? (await t(Object(u.c)(e)), !!Object(j.d)(r(), {
+					subredditId: e
+				})) : (await t(Object(l.j)(e, {
+					fullData: !0
+				})), Object(w.f)(r(), {
+					subredditId: e
+				}))), k = e => async (t, r) => {
 					var i;
 					const s = r(),
 						d = e.map(e => {
@@ -128,109 +127,109 @@
 							} = e;
 							return t
 						}),
-						n = Object(p.d)(s, {
+						n = Object(f.d)(s, {
 							commentIds: d
 						}),
 						o = null === (i = n.find(e => e && e.subredditId)) || void 0 === i ? void 0 : i.subredditId;
-					if (!(await t(x(o)))) return;
+					if (!(await t(_(o)))) return;
 					const c = new Set(n.filter(e => !!(null == e ? void 0 : e.authorId)).map(e => {
 						let {
 							authorId: t
 						} = e;
 						return t
 					}));
-					await t(A(o, Array.from(c)))
-				}, k = (e, t) => async (r, i) => {
+					await t(P(o, Array.from(c)))
+				}, C = (e, t) => async (r, i) => {
 					if (!t) return;
-					if (!(await r(x(e)))) return;
+					if (!(await r(_(e)))) return;
 					const s = new Set;
 					Object.values(t).forEach(e => {
 						s.add(e.authorId)
-					}), await r(A(e, Array.from(s)))
-				}, g = (e, t) => async (r, i) => {
+					}), await r(P(e, Array.from(s)))
+				}, E = (e, t) => async (r, i) => {
 					const s = i(),
-						d = Object(w.k)(s);
+						d = Object(I.k)(s);
 					if (!d) return;
 					const n = d.id,
-						o = Object(m.i)(s, {
+						o = Object(j.i)(s, {
 							subredditId: e,
 							userId: n
 						});
-					r(E({
+					r(T({
 						subredditId: e,
 						userId: n,
 						achievementFlairType: t,
 						supporterFlairType: o
 					}))
-				}, C = (e, t) => async (r, i) => {
+				}, L = (e, t) => async (r, i) => {
 					const s = i(),
-						d = Object(w.k)(s);
+						d = Object(I.k)(s);
 					if (!d) return;
 					const n = d.id,
-						o = Object(m.h)(s, {
+						o = Object(j.h)(s, {
 							subredditId: e,
 							userId: n
 						});
-					r(E({
+					r(T({
 						subredditId: e,
 						userId: n,
 						achievementFlairType: o,
 						supporterFlairType: t
 					}))
-				}, E = e => async (t, r, s) => {
+				}, T = e => async (t, r, s) => {
 					let {
 						gqlContext: n
 					} = s;
 					const o = r(),
-						c = Object(w.k)(o);
+						c = Object(I.k)(o);
 					if (!c) return;
 					const u = c.id;
-					t(S(e));
+					t(v(e));
 					const {
-						subredditId: p,
+						subredditId: l,
 						achievementFlairType: f,
-						supporterFlairType: I
-					} = e, j = [f, I].filter(Boolean), h = Object(m.e)(o, {
-						subredditId: p,
+						supporterFlairType: m
+					} = e, w = [f, m].filter(Boolean), O = Object(j.e)(o, {
+						subredditId: l,
 						userId: u
 					});
 					try {
-						await a(n(), p, j, h), t(F(e))
-					} catch (O) {
-						t(U(e)), d.c.captureException(O), t(Object(l.f)({
-							duration: l.a,
-							kind: b.b.Error,
+						await a(n(), l, w, O), t(U(e))
+					} catch (h) {
+						t(A(e)), d.c.captureException(h), t(Object(b.f)({
+							duration: b.a,
+							kind: p.b.Error,
 							text: i.fbt._("Failed to set preferred achievement flair", null, {
 								hk: "4bEftA"
 							})
 						}))
 					}
-				}, L = (e, t) => async (r, s, n) => {
+				}, D = (e, t) => async (r, s, n) => {
 					let {
 						gqlContext: o
 					} = n;
 					const c = s(),
-						u = Object(w.k)(c);
+						u = Object(I.k)(c);
 					if (!u) return;
-					const p = u.id,
+					const l = u.id,
 						f = {
 							subredditId: e,
-							userId: p
+							userId: l
 						},
-						I = [Object(m.h)(c, f), Object(m.i)(c, f)].filter(Boolean);
-					r(v({
+						m = [Object(j.h)(c, f), Object(j.i)(c, f)].filter(Boolean);
+					r(x({
 						...f,
 						isHidden: t
 					}));
 					try {
-						await a(o(), e, I, t)
-					} catch (j) {
-						r(v({
+						await a(o(), e, m, t)
+					} catch (w) {
+						r(x({
 							...f,
 							isHidden: !t
-						})), d.c.captureException(j), r(Object(l.f)({
-							duration: l.a,
-							kind: b.b.Error,
+						})), d.c.captureException(w), r(Object(b.f)({
+							duration: b.a,
+							kind: p.b.Error,
 							text: i.fbt._("Failed to change flair visibility", null, {
 								hk: "30gQss"
 							})
@@ -246,4 +245,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/AchievementsActions.b8206fe55398426b9d9b.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/AchievementsActions.106c10b13a55e95b3bfc.js.map

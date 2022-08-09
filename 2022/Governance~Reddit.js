@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~Reddit.47dba01986ae645c69d2.js
-// Retrieved at 8/9/2022, 9:50:08 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~Reddit.c71e5f174dc7c28e30d7.js
+// Retrieved at 8/9/2022, 10:30:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~Reddit"], {
 		"./assets/fonts/NotoMono/font.less": function(e, t, n) {},
@@ -7208,7 +7208,7 @@
 							...e
 						}, n)
 					}
-					case ee.qb: {
+					case ee.tb: {
 						const n = {},
 							{
 								topAwardedPosts: r
@@ -10289,7 +10289,7 @@
 							[t.payload.subredditId]: Object.keys(s).map(e => s[e]).sort((e, t) => e.position - t.position)
 						}
 					}
-					case ee.mb: {
+					case ee.pb: {
 						const {
 							powerups: n,
 							subredditId: r
@@ -15692,7 +15692,7 @@
 							}
 						} : e
 					}
-					case ee.qb: {
+					case ee.tb: {
 						const {
 							topAwardedPosts: n
 						} = t.payload;
@@ -16313,10 +16313,10 @@
 				let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : null,
 					t = arguments.length > 1 ? arguments[1] : void 0;
 				switch (t.type) {
-					case ee.pb:
+					case ee.sb:
 						return t.payload;
-					case ee.rb:
-					case ee.qb:
+					case ee.ub:
+					case ee.tb:
 						return null;
 					default:
 						return e
@@ -16326,10 +16326,10 @@
 					let e = arguments.length > 0 && void 0 !== arguments[0] && arguments[0],
 						t = arguments.length > 1 ? arguments[1] : void 0;
 					switch (t.type) {
-						case ee.qb:
-						case ee.pb:
+						case ee.tb:
+						case ee.sb:
 							return !1;
-						case ee.rb:
+						case ee.ub:
 							return !0;
 						default:
 							return e
@@ -16344,7 +16344,7 @@
 					let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : ob,
 						t = arguments.length > 1 ? arguments[1] : void 0;
 					switch (t.type) {
-						case ee.qb: {
+						case ee.tb: {
 							const {
 								topAwardedPosts: e
 							} = t.payload;
@@ -16354,8 +16354,8 @@
 								score: e.score
 							}))
 						}
-						case ee.pb:
-						case ee.rb:
+						case ee.sb:
+						case ee.ub:
 							return ob;
 						default:
 							return e
@@ -20291,7 +20291,7 @@
 				let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : BE,
 					t = arguments.length > 1 ? arguments[1] : void 0;
 				switch (t.type) {
-					case ee.mb: {
+					case ee.pb: {
 						const {
 							recentSupporters: n,
 							subredditId: r
@@ -20339,8 +20339,8 @@
 					t = arguments.length > 1 ? arguments[1] : void 0;
 				var n;
 				switch (t.type) {
-					case ee.nb:
-					case ee.mb: {
+					case ee.qb:
+					case ee.pb: {
 						const {
 							powerups: n,
 							subredditId: r
@@ -20416,7 +20416,7 @@
 				let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : QE,
 					t = arguments.length > 1 ? arguments[1] : void 0;
 				switch (t.type) {
-					case ee.mb: {
+					case ee.pb: {
 						const {
 							powerups: n,
 							subredditId: r
@@ -20456,7 +20456,7 @@
 					let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : KE,
 						t = arguments.length > 1 ? arguments[1] : void 0;
 					switch (t.type) {
-						case ee.mb: {
+						case ee.pb: {
 							const {
 								topSupporters: n,
 								subredditId: r
@@ -20520,7 +20520,7 @@
 					t = arguments.length > 1 ? arguments[1] : void 0;
 				switch (t.type) {
 					case ee.ab:
-					case ee.mb: {
+					case ee.pb: {
 						const {
 							subredditId: n,
 							productOffers: r
@@ -23188,7 +23188,7 @@
 				let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : $S,
 					t = arguments.length > 1 ? arguments[1] : void 0;
 				switch (t.type) {
-					case ee.xb: {
+					case ee.Ab: {
 						const n = t.payload.powerups;
 						if (n) {
 							const {
@@ -23204,7 +23204,7 @@
 						}
 						return e
 					}
-					case ee.mb: {
+					case ee.pb: {
 						const {
 							userPowerups: n
 						} = t.payload, r = ((null == n ? void 0 : n.allocation) || []).filter(e => !!e.subredditInfo).reduce((e, t) => ({
@@ -23259,14 +23259,14 @@
 				let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : null,
 					t = arguments.length > 1 ? arguments[1] : void 0;
 				switch (t.type) {
-					case ee.xb: {
+					case ee.Ab: {
 						const n = t.payload.powerups;
 						return n ? kr()({
 							...e,
 							...n
 						}, "allocation") : e
 					}
-					case ee.mb: {
+					case ee.pb: {
 						const {
 							userPowerups: n
 						} = t.payload;
@@ -23309,10 +23309,10 @@
 					let e = arguments.length > 0 && void 0 !== arguments[0] && arguments[0],
 						t = arguments.length > 1 ? arguments[1] : void 0;
 					switch (t.type) {
-						case ee.wb:
-						case ee.yb:
+						case ee.zb:
+						case ee.Bb:
 							return !1;
-						case ee.xb:
+						case ee.Ab:
 							return !0;
 						default:
 							return e
@@ -23335,11 +23335,11 @@
 				let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : rT,
 					t = arguments.length > 1 ? arguments[1] : void 0;
 				switch (t.type) {
-					case ee.Bb:
+					case ee.Eb:
 						return {
 							...e, status: ZS.PENDING
 						};
-					case ee.Ab: {
+					case ee.Db: {
 						const {
 							subscriptions: n
 						} = t.payload;
@@ -23349,7 +23349,7 @@
 							status: ZS.LOADED
 						} : e
 					}
-					case ee.zb:
+					case ee.Cb:
 						return {
 							...e, status: ZS.FAILED
 						};
@@ -23914,10 +23914,10 @@
 				let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : null,
 					t = arguments.length > 1 ? arguments[1] : void 0;
 				switch (t.type) {
-					case ee.sb:
+					case ee.vb:
 						return t.payload;
-					case ee.ub:
-					case ee.tb:
+					case ee.xb:
+					case ee.wb:
 						return null;
 					default:
 						return e
@@ -23927,10 +23927,10 @@
 					let e = arguments.length > 0 && void 0 !== arguments[0] && arguments[0],
 						t = arguments.length > 1 ? arguments[1] : void 0;
 					switch (t.type) {
-						case ee.tb:
-						case ee.sb:
+						case ee.wb:
+						case ee.vb:
 							return !1;
-						case ee.ub:
+						case ee.xb:
 							return !0;
 						default:
 							return e
@@ -23944,7 +23944,7 @@
 				let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : null,
 					t = arguments.length > 1 ? arguments[1] : void 0;
 				switch (t.type) {
-					case ee.vb:
+					case ee.yb:
 						return t.payload.postId;
 					default:
 						return e
@@ -23955,7 +23955,7 @@
 				let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : VT,
 					t = arguments.length > 1 ? arguments[1] : void 0;
 				switch (t.type) {
-					case ee.tb: {
+					case ee.wb: {
 						const {
 							postId: n,
 							currentRank: r
@@ -23974,7 +23974,7 @@
 					let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : KT,
 						t = arguments.length > 1 ? arguments[1] : void 0;
 					switch (t.type) {
-						case ee.tb: {
+						case ee.wb: {
 							const {
 								postId: n,
 								topAwardersRank: r
@@ -24753,4 +24753,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit.47dba01986ae645c69d2.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit.c71e5f174dc7c28e30d7.js.map

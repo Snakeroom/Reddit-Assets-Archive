@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/FramedGild~GildModal.7e1e4e75cfe021f7db7c.js
-// Retrieved at 8/9/2022, 9:50:08 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/FramedGild~GildModal.ac92961a68b69451b599.js
+// Retrieved at 8/9/2022, 10:30:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["FramedGild~GildModal", "gildActions"], {
 		"./node_modules/@stripe/react-stripe-js/dist/react-stripe.umd.js": function(e, t, r) {
@@ -843,7 +843,7 @@
 					econPurchase: s.a
 				}
 			});
-			const l = Object(a.a)(d.kb),
+			const l = Object(a.a)(d.nb),
 				u = (e, t, r) => async (n, s, a) => {
 					let {
 						gqlContext: d
@@ -5700,7 +5700,7 @@
 				let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : a,
 					t = arguments.length > 1 ? arguments[1] : void 0;
 				switch (t.type) {
-					case s.kb: {
+					case s.nb: {
 						const r = t.payload;
 						return {
 							...e,
@@ -6131,4 +6131,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/FramedGild~GildModal.7e1e4e75cfe021f7db7c.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/FramedGild~GildModal.ac92961a68b69451b599.js.map

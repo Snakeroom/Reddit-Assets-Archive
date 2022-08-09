@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-ConvertToCoinsModal.1a3d979eea42352f458e.js
-// Retrieved at 8/9/2022, 9:50:08 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-ConvertToCoinsModal.7d89a5257699c56e16dd.js
+// Retrieved at 8/9/2022, 10:30:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Governance-TransactionModals-ConvertToCoinsModal"], {
 		"./src/reddit/actions/gold/econPurchase.ts": function(e, t, n) {
@@ -19,7 +19,7 @@
 					econPurchase: a.a
 				}
 			});
-			const d = Object(c.a)(l.kb),
+			const d = Object(c.a)(l.nb),
 				u = (e, t, n) => async (r, a, c) => {
 					let {
 						gqlContext: l
@@ -359,12 +359,12 @@
 				x = Object(a.a)(b.X),
 				E = Object(a.a)(b.W),
 				y = Object(a.a)(b.V),
-				O = Object(a.a)(b.Bb),
-				C = Object(a.a)(b.zb),
-				j = Object(a.a)(b.Ab),
-				w = Object(a.a)(b.Eb),
-				M = Object(a.a)(b.Db),
-				N = Object(a.a)(b.Cb),
+				O = Object(a.a)(b.Eb),
+				C = Object(a.a)(b.Cb),
+				j = Object(a.a)(b.Db),
+				w = Object(a.a)(b.Hb),
+				M = Object(a.a)(b.Gb),
+				N = Object(a.a)(b.Fb),
 				P = e => async t => {
 					t(Object(s.f)({
 						kind: i.b.Error,
@@ -1179,13 +1179,13 @@
 				T = n("./src/reddit/selectors/gold/econPurchase.ts"),
 				D = n("./src/reddit/selectors/gold/productOffers.ts"),
 				G = n("./src/reddit/selectors/gov.ts"),
-				B = n("./src/reddit/components/Governance/TransactionModals/VaultTransactionModal/index.tsx"),
-				F = n("./src/reddit/components/Governance/TransactionModals/ApprovalModal/Details.tsx");
+				F = n("./src/reddit/components/Governance/TransactionModals/VaultTransactionModal/index.tsx"),
+				B = n("./src/reddit/components/Governance/TransactionModals/ApprovalModal/Details.tsx");
 
 			function V(e) {
-				return a.a.createElement(F.b, {
+				return a.a.createElement(B.b, {
 					values: [
-						[Object(F.a)(), e.contractAddress],
+						[Object(B.a)(), e.contractAddress],
 						[d.fbt._("Function", null, {
 							hk: "1Q0dwF"
 						}), "burn"]
@@ -1315,12 +1315,12 @@
 					h = null === (n = null === (t = null == f ? void 0 : f.pricePackages) || void 0 === t ? void 0 : t[0]) || void 0 === n ? void 0 : n.price,
 					g = Object(o.a)(),
 					x = Object(S.a)(),
-					[E, F] = Object(r.useState)(""),
+					[E, B] = Object(r.useState)(""),
 					[R, H] = Object(r.useState)(0);
 				Object(r.useEffect)(() => {
 					if (h && !E) {
 						const e = y.a.minimum(new y.a(h).multipliedBy(K), p).toFixed(0);
-						F(e), H(new y.a(e).dividedBy(h).toNumber())
+						B(e), H(new y.a(e).dividedBy(h).toNumber())
 					}
 				}, [h]);
 				const Q = s.displayConversion,
@@ -1328,11 +1328,11 @@
 						x(Object(A.c)("coins", u, new y.a(E).dividedBy(Q).toFixed(), e))
 					},
 					q = () => g(Object(N.f)());
-				return a.a.createElement(B.a, {
+				return a.a.createElement(F.a, {
 					approvalOverview: a.a.createElement(Z, {
 						pointsAmount: E,
 						onChange: (e, t) => {
-							F(e), H(t)
+							B(e), H(t)
 						},
 						pointsBalance: p,
 						pointsName: s.name,
@@ -2192,7 +2192,7 @@
 				let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : c,
 					t = arguments.length > 1 ? arguments[1] : void 0;
 				switch (t.type) {
-					case a.kb: {
+					case a.nb: {
 						const n = t.payload;
 						return {
 							...e,
@@ -2404,4 +2404,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-ConvertToCoinsModal.1a3d979eea42352f458e.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-ConvertToCoinsModal.7d89a5257699c56e16dd.js.map
