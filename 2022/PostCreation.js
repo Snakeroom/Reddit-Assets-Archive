@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostCreation.b25a09a807dd5fc25a49.js
-// Retrieved at 8/9/2022, 1:40:20 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostCreation.4fcfbee3b03573ce5f90.js
+// Retrieved at 8/9/2022, 5:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostCreation", "ChatMessageInput~MembershipPaywallPage~RichTextEditor", "ContributorRequestButton"], {
 		"./node_modules/autosize/dist/autosize.js": function(e, t, n) {
@@ -28036,9 +28036,9 @@
 					const {
 						theme: d,
 						topics: u
-					} = Object(r.e)(w.rb), [p, h] = Object(o.useState)(!1), b = Object(r.d)(), f = Object(P.a)(), g = Object(o.useMemo)(() => Object(S.c)(), [i.id]), E = Object(o.useMemo)(() => Object.keys(A).reduce((e, t) => (e[A[t]] = d === t, e), {}), [d]);
+					} = Object(r.e)(w.rb), p = Object(r.e)(w.hb), [h, b] = Object(o.useState)(!1), f = Object(r.d)(), g = Object(P.a)(), E = Object(o.useMemo)(() => Object(S.c)(), [i.id]), C = Object(o.useMemo)(() => Object.keys(A).reduce((e, t) => (e[A[t]] = d === t, e), {}), [d]);
 					Object(o.useEffect)(() => {
-						f((() => e => ({
+						g((() => e => ({
 							...I.n(e),
 							source: "global",
 							action: T.c.VIEW,
@@ -28047,10 +28047,10 @@
 								pageType: "liveaudio_create_room"
 							}
 						}))())
-					}, [f]);
-					const C = Object(o.useMemo)(() => c.length > 0, [c]);
+					}, [g]);
+					const x = Object(o.useMemo)(() => c.length > 0, [c]);
 					return s.a.createElement("section", {
-						className: Object(m.a)("talk-creation-form", L.a.talkContainer, E, `talk-creation-theme-${d}`)
+						className: Object(m.a)("talk-creation-form", L.a.talkContainer, C, `talk-creation-theme-${d}`)
 					}, s.a.createElement("main", {
 						className: L.a.padding
 					}, t), s.a.createElement("footer", {
@@ -28063,7 +28063,7 @@
 					}, s.a.createElement("button", {
 						type: "button",
 						onClick: () => (e => {
-							b(Object(a.D)({
+							f(Object(a.D)({
 								theme: e
 							}))
 						})(e),
@@ -28073,7 +28073,7 @@
 						kind: k.b.Button,
 						priority: k.c.Primary,
 						onClick: async () => {
-							f((() => e => ({
+							g((() => e => ({
 								...I.n(e),
 								source: "liveaudio",
 								action: T.c.CLICK,
@@ -28083,31 +28083,32 @@
 									title: Object(w.sb)(e),
 									topicIds: Object(w.rb)(e).topics.map(e => e.id)
 								}
-							}))()), h(!0);
+							}))()), b(!0);
 							const e = await Object(S.b)(n(), i, {
-								ikey: g,
+								ikey: E,
 								roomTitle: c,
 								metadata: JSON.stringify({
 									background: null,
 									theme: d
 								}),
 								platform: M.a.Twilio,
-								topicIds: u.map(e => e.id)
+								topicIds: u.map(e => e.id),
+								sendReplyNotifications: p
 							});
-							if (!e.ok) return b(Object(v.f)({
+							if (!e.ok) return f(Object(v.f)({
 								kind: R.b.Error,
 								text: S.a[M.h.ServiceError]
-							})), void h(!1);
+							})), void b(!1);
 							const t = Object(S.g)(e.body);
-							if (null == t ? void 0 : t.errorState) return b(Object(v.f)({
+							if (null == t ? void 0 : t.errorState) return f(Object(v.f)({
 								kind: R.b.Error,
 								text: S.a[t.errorState.code] || S.a[M.h.ServiceError]
-							})), void h(!1);
+							})), void b(!1);
 							(null == t ? void 0 : t.okState) && (window.location.href = `${O.a.redditUrl}/talk/${t.okState.roomId}`)
 						},
 						className: L.a.createButton,
-						disabled: p || !C
-					}, p ? s.a.createElement(j.a, null) : l.fbt._("Go Live", null, {
+						disabled: h || !x
+					}, h ? s.a.createElement(j.a, null) : l.fbt._("Go Live", null, {
 						hk: "1o8MZ3"
 					})))))
 				}),
@@ -34578,10 +34579,10 @@
 			e.exports = JSON.parse('{"id":"4426c323acf3"}')
 		},
 		"./src/redditGQL/operations/CreateLiveAudioRoomOnProfile.json": function(e) {
-			e.exports = JSON.parse('{"id":"addd6ae52fc0"}')
+			e.exports = JSON.parse('{"id":"e35a47c6aa21"}')
 		},
 		"./src/redditGQL/operations/CreateLiveAudioRoomOrError.json": function(e) {
-			e.exports = JSON.parse('{"id":"742d52ac005e"}')
+			e.exports = JSON.parse('{"id":"f1f366237119"}')
 		},
 		"./src/redditGQL/operations/CreateScheduledPost.json": function(e) {
 			e.exports = JSON.parse('{"id":"1e0a4bfe5ac9"}')
@@ -34621,4 +34622,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.b25a09a807dd5fc25a49.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.4fcfbee3b03573ce5f90.js.map

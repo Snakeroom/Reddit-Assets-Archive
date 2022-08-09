@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/runtime~Reddit.f4384922457e91e4be2f.js
-// Retrieved at 8/9/2022, 5:10:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/runtime~Reddit.5ff423c77e854f52ffb2.js
+// Retrieved at 8/9/2022, 5:50:04 PM by Reddit Dataminer v1.0.0
 ! function(e) {
 	function o(o) {
 		for (var a, n, r = o[0], s = o[1], c = o[2], l = 0, b = []; l < r.length; l++) n = r[l], Object.prototype.hasOwnProperty.call(d, n) && d[n] && b.push(d[n][0]), d[n] = 0;
@@ -1533,7 +1533,7 @@
 						CryptoHarbergerTaxManageModal: "2bf960a5016c5aee05ee",
 						HarbergerTaxManageModal: "368a3f2c94f0f803c4d6",
 						SubredditPremiumUploadModal: "08e44b1d045d86d44c10",
-						PostCreation: "b25a09a807dd5fc25a49",
+						PostCreation: "4fcfbee3b03573ce5f90",
 						"vendors~ModerationPages": "94c34813eaf24a1890ea",
 						ModerationPages: "e4467e95963c896073fa",
 						"vendors~ModStatsChart~Settings~ViewsTooltip": "ca7c845d62fd39d960b6",
@@ -1560,7 +1560,7 @@
 						ChatPost: "cff4849b3c7ee92f47c1",
 						"reddit-components-SidebarNativeAd": "a8e0108482c4743097b0",
 						CommentsPageNativeAd: "689d27296aba0f2ad491",
-						ReportFlow: "6dda7279674f04a41c0c",
+						ReportFlow: "ff0394803ff751e9350f",
 						CreatorStats: "3bea4fa8aacd744c00e6",
 						CrosspostRecommendationsModal: "3f98e058ff74068f3a1d",
 						CryptoVault: "856e19811e10ded17c73",
@@ -1572,7 +1572,7 @@
 						MuxEmbed: "982b3400754d822142c4",
 						NewCommentPill: "bc8181e0dadd1b6a2dfb",
 						PostDetailStickyHeader: "39fc3e258dcf4c06f389",
-						ReportFlowNew: "b58c0bd743ab0e22bba5",
+						ReportFlowNew: "20957e6fc22bcd008d5f",
 						RichTextJsonEmoteTooltip: "17adf81b58a10e957e4e",
 						SubredditMentionWithIcon: "1c2900cc62c7d27d0856",
 						UserAchievementFlair: "3a556716d744dfb1408c",
@@ -1768,4 +1768,4 @@
 	var m = c;
 	t()
 }([]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/runtime~Reddit.f4384922457e91e4be2f.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/runtime~Reddit.5ff423c77e854f52ffb2.js.map
