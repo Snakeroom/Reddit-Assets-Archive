@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/5.08c915da2f762d06b65d.js
-// Retrieved at 8/3/2022, 1:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/5.43977f2268c86beb9afa.js
+// Retrieved at 8/9/2022, 2:40:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	[5], {
 		"./node_modules/@apollo/client/cache/inmemory/types.js": function(e, t) {},
@@ -2894,7 +2894,27 @@
 															kind: "Name",
 															value: "listings"
 														},
-														arguments: [],
+														arguments: [{
+															kind: "Argument",
+															name: {
+																kind: "Name",
+																value: "filter"
+															},
+															value: {
+																kind: "ObjectValue",
+																fields: [{
+																	kind: "ObjectField",
+																	name: {
+																		kind: "Name",
+																		value: "priceUpperBound"
+																	},
+																	value: {
+																		kind: "IntValue",
+																		value: "1"
+																	}
+																}]
+															}
+														}],
 														directives: [],
 														selectionSet: {
 															kind: "SelectionSet",
@@ -3610,11 +3630,11 @@
 							}],
 							loc: {
 								start: 0,
-								end: 3281
+								end: 3313
 							}
 						};
 					Oe.loc.source = {
-						body: 'query AvatarBuilderCatalog {\n  avatarBuilderCatalog {\n    accessories {\n      assets {\n        accessoryId\n        imageUrl\n        slotNumber\n      }\n      isAvailableForCloset\n      capabilityRequired\n      customizableClasses\n      defaultAccessoryId\n      id\n      sectionId\n      state\n      tags\n    }\n    accountId\n    outfits {\n      id\n      sectionId\n      accessoryIds\n      state\n      capabilityRequired\n      customizableClasses\n      tags\n      title\n      subtitle\n      backgroundImage {\n        url\n      }\n      foregroundImage {\n        url\n      }\n      preRenderImage {\n        url\n      }\n      acquiredAt\n      inventoryItem {\n        id\n      }\n      ... on NFTAvatarOutfit {\n        contractAddress\n        tokenId\n        rarity\n        walletAddress\n      }\n    }\n    avatar {\n      ...userAvatarFragment\n    }\n    pastAvatars {\n      ...userAvatarFragment\n    }\n    runways {\n      id\n      title\n      items {\n        id\n        title\n        imageUrl\n        capabilityRequired\n        accessoryIds\n      }\n    }\n    closet {\n      accessoryIds\n      maxSlots\n      occupiedSlots\n    }\n    isActiveClosetSubscription\n    userCapabilities\n    freeStorefrontCollections @client {\n      listings {\n        edges {\n          node {\n            id\n            totalQuantity\n            soldQuantity\n            expiresAt\n            status\n            productOffer {\n              id\n              name\n              description\n              pricePackages {\n                id\n                quantity\n                price\n                currency\n              }\n            }\n            artist {\n              redditorInfo {\n                id\n                ... on Redditor {\n                  prefixedName\n                  icon {\n                    url\n                  }\n                  profile {\n                    title\n                    isNsfw\n                    publicDescriptionText\n                  }\n                }\n              }\n            }\n            item {\n              id\n              name\n              images {\n                url\n              }\n              drop {\n                rarity\n                size\n              }\n              owner {\n                id\n                displayName\n              }\n              benefits {\n                avatarOutfit {\n                  id\n                  accessoryIds\n                  backgroundImage {\n                    url\n                  }\n                  preRenderImage {\n                    url\n                  }\n                }\n              }\n              nft {\n                title\n                description\n                series\n                contractAddress\n                tokenId\n                externalUrls\n                imageUrl\n                tokenUrl\n                mintedAt\n                vendor\n              }\n            }\n          }\n        }\n      }\n    }\n  }\n  globalProductOffers(productTypes: ["nft"]) {\n    offers {\n      id\n      name\n      version\n      type\n      description\n      tags\n      pricePackages {\n        id\n        quantity\n        price\n        currency\n        renewInterval\n        skus {\n          ... on NftSku {\n            ...nftDetailsFragment\n          }\n        }\n      }\n    }\n  }\n}\n',
+						body: 'query AvatarBuilderCatalog {\n  avatarBuilderCatalog {\n    accessories {\n      assets {\n        accessoryId\n        imageUrl\n        slotNumber\n      }\n      isAvailableForCloset\n      capabilityRequired\n      customizableClasses\n      defaultAccessoryId\n      id\n      sectionId\n      state\n      tags\n    }\n    accountId\n    outfits {\n      id\n      sectionId\n      accessoryIds\n      state\n      capabilityRequired\n      customizableClasses\n      tags\n      title\n      subtitle\n      backgroundImage {\n        url\n      }\n      foregroundImage {\n        url\n      }\n      preRenderImage {\n        url\n      }\n      acquiredAt\n      inventoryItem {\n        id\n      }\n      ... on NFTAvatarOutfit {\n        contractAddress\n        tokenId\n        rarity\n        walletAddress\n      }\n    }\n    avatar {\n      ...userAvatarFragment\n    }\n    pastAvatars {\n      ...userAvatarFragment\n    }\n    runways {\n      id\n      title\n      items {\n        id\n        title\n        imageUrl\n        capabilityRequired\n        accessoryIds\n      }\n    }\n    closet {\n      accessoryIds\n      maxSlots\n      occupiedSlots\n    }\n    isActiveClosetSubscription\n    userCapabilities\n    freeStorefrontCollections @client {\n      listings(filter: { priceUpperBound: 1 }) {\n        edges {\n          node {\n            id\n            totalQuantity\n            soldQuantity\n            expiresAt\n            status\n            productOffer {\n              id\n              name\n              description\n              pricePackages {\n                id\n                quantity\n                price\n                currency\n              }\n            }\n            artist {\n              redditorInfo {\n                id\n                ... on Redditor {\n                  prefixedName\n                  icon {\n                    url\n                  }\n                  profile {\n                    title\n                    isNsfw\n                    publicDescriptionText\n                  }\n                }\n              }\n            }\n            item {\n              id\n              name\n              images {\n                url\n              }\n              drop {\n                rarity\n                size\n              }\n              owner {\n                id\n                displayName\n              }\n              benefits {\n                avatarOutfit {\n                  id\n                  accessoryIds\n                  backgroundImage {\n                    url\n                  }\n                  preRenderImage {\n                    url\n                  }\n                }\n              }\n              nft {\n                title\n                description\n                series\n                contractAddress\n                tokenId\n                externalUrls\n                imageUrl\n                tokenUrl\n                mintedAt\n                vendor\n              }\n            }\n          }\n        }\n      }\n    }\n  }\n  globalProductOffers(productTypes: ["nft"]) {\n    offers {\n      id\n      name\n      version\n      type\n      description\n      tags\n      pricePackages {\n        id\n        quantity\n        price\n        currency\n        renewInterval\n        skus {\n          ... on NftSku {\n            ...nftDetailsFragment\n          }\n        }\n      }\n    }\n  }\n}\n',
 						name: "GraphQL request",
 						locationOffset: {
 							line: 1,
@@ -4246,7 +4266,27 @@
 														kind: "Name",
 														value: "listings"
 													},
-													arguments: [],
+													arguments: [{
+														kind: "Argument",
+														name: {
+															kind: "Name",
+															value: "filter"
+														},
+														value: {
+															kind: "ObjectValue",
+															fields: [{
+																kind: "ObjectField",
+																name: {
+																	kind: "Name",
+																	value: "priceUpperBound"
+																},
+																value: {
+																	kind: "IntValue",
+																	value: "1"
+																}
+															}]
+														}
+													}],
 													directives: [],
 													selectionSet: {
 														kind: "SelectionSet",
@@ -6192,11 +6232,11 @@
 						}],
 						loc: {
 							start: 0,
-							end: 7299
+							end: 7331
 						}
 					};
 					De.loc.source = {
-						body: 'query AvatarBuilderCatalogWithStorefront {\n  avatarBuilderCatalog {\n    accessories {\n      assets {\n        accessoryId\n        imageUrl\n        slotNumber\n      }\n      isAvailableForCloset\n      capabilityRequired\n      customizableClasses\n      defaultAccessoryId\n      id\n      sectionId\n      state\n      tags\n    }\n    accountId\n    outfits {\n      id\n      sectionId\n      accessoryIds\n      state\n      capabilityRequired\n      customizableClasses\n      tags\n      title\n      subtitle\n      backgroundImage {\n        url\n      }\n      foregroundImage {\n        url\n      }\n      preRenderImage {\n        url\n      }\n      acquiredAt\n      inventoryItem {\n        id\n        owner {\n          id\n        }\n      }\n      ... on NFTAvatarOutfit {\n        contractAddress\n        tokenId\n        rarity\n        walletAddress\n      }\n    }\n    avatar {\n      ...userAvatarFragment\n    }\n    pastAvatars {\n      ...userAvatarFragment\n    }\n    runways {\n      id\n      title\n      items {\n        id\n        title\n        imageUrl\n        capabilityRequired\n        accessoryIds\n      }\n    }\n    closet {\n      accessoryIds\n      maxSlots\n      occupiedSlots\n    }\n    isActiveClosetSubscription\n    userCapabilities\n    freeStorefrontCollections @client {\n      listings {\n        edges {\n          node {\n            id\n            totalQuantity\n            soldQuantity\n            expiresAt\n            status\n            productOffer {\n              id\n              name\n              description\n              pricePackages {\n                id\n                quantity\n                price\n                currency\n              }\n            }\n            artist {\n              redditorInfo {\n                id\n                ... on Redditor {\n                  prefixedName\n                  icon {\n                    url\n                  }\n                  profile {\n                    title\n                    isNsfw\n                    publicDescriptionText\n                  }\n                }\n              }\n            }\n            item {\n              id\n              name\n              images {\n                url\n              }\n              drop {\n                rarity\n                size\n              }\n              owner {\n                id\n                displayName\n              }\n              benefits {\n                avatarOutfit {\n                  id\n                  accessoryIds\n                  backgroundImage {\n                    url\n                  }\n                  preRenderImage {\n                    url\n                  }\n                }\n              }\n              nft {\n                title\n                description\n                series\n                contractAddress\n                tokenId\n                externalUrls\n                imageUrl\n                tokenUrl\n                mintedAt\n                vendor\n              }\n            }\n          }\n        }\n      }\n    }\n  }\n  globalProductOffers(productTypes: ["nft"]) {\n    offers {\n      id\n      name\n      version\n      type\n      description\n      tags\n      pricePackages {\n        id\n        quantity\n        price\n        currency\n        renewInterval\n        skus {\n          ... on NftSku {\n            ...nftDetailsFragment\n          }\n        }\n      }\n    }\n  }\n  avatarStorefront {\n    listings {\n      edges {\n        node {\n          id\n          totalQuantity\n          soldQuantity\n          expiresAt\n          status\n          productOffer {\n            id\n            name\n            description\n            pricePackages {\n              id\n              quantity\n              price\n              currency\n            }\n          }\n          artist {\n            redditorInfo {\n              id\n              ... on Redditor {\n                prefixedName\n                icon {\n                  url\n                }\n                profile {\n                  title\n                  isNsfw\n                  publicDescriptionText\n                }\n              }\n            }\n          }\n          item {\n            id\n            name\n            images {\n              url\n            }\n            drop {\n              rarity\n              size\n            }\n            owner {\n              id\n              displayName\n            }\n            benefits {\n              avatarOutfit {\n                id\n                accessoryIds\n                backgroundImage {\n                  url\n                }\n                preRenderImage {\n                  url\n                }\n              }\n            }\n            nft {\n              title\n              description\n              series\n              contractAddress\n              tokenId\n              externalUrls\n              imageUrl\n              tokenUrl\n              mintedAt\n              vendor\n            }\n          }\n        }\n      }\n    }\n    artists {\n      edges {\n        node {\n          redditorInfo {\n            id\n            ... on Redditor {\n              prefixedName\n              icon {\n                url\n              }\n              profile {\n                title\n                isNsfw\n                publicDescriptionText\n              }\n            }\n          }\n          listings {\n            edges {\n              node {\n                id\n                totalQuantity\n                soldQuantity\n                expiresAt\n                status\n                productOffer {\n                  id\n                  name\n                  description\n                  pricePackages {\n                    id\n                    quantity\n                    price\n                    currency\n                  }\n                }\n                artist {\n                  redditorInfo {\n                    id\n                    ... on Redditor {\n                      prefixedName\n                      icon {\n                        url\n                      }\n                      profile {\n                        title\n                        isNsfw\n                        publicDescriptionText\n                      }\n                    }\n                  }\n                }\n                item {\n                  id\n                  name\n                  images {\n                    url\n                  }\n                  drop {\n                    rarity\n                    size\n                  }\n                  owner {\n                    id\n                    displayName\n                  }\n                  benefits {\n                    avatarOutfit {\n                      id\n                      accessoryIds\n                      backgroundImage {\n                        url\n                      }\n                      preRenderImage {\n                        url\n                      }\n                    }\n                  }\n                  nft {\n                    title\n                    description\n                    series\n                    contractAddress\n                    tokenId\n                    externalUrls\n                    imageUrl\n                    tokenUrl\n                    mintedAt\n                    vendor\n                  }\n                }\n              }\n            }\n          }\n        }\n      }\n    }\n  }\n}\n',
+						body: 'query AvatarBuilderCatalogWithStorefront {\n  avatarBuilderCatalog {\n    accessories {\n      assets {\n        accessoryId\n        imageUrl\n        slotNumber\n      }\n      isAvailableForCloset\n      capabilityRequired\n      customizableClasses\n      defaultAccessoryId\n      id\n      sectionId\n      state\n      tags\n    }\n    accountId\n    outfits {\n      id\n      sectionId\n      accessoryIds\n      state\n      capabilityRequired\n      customizableClasses\n      tags\n      title\n      subtitle\n      backgroundImage {\n        url\n      }\n      foregroundImage {\n        url\n      }\n      preRenderImage {\n        url\n      }\n      acquiredAt\n      inventoryItem {\n        id\n        owner {\n          id\n        }\n      }\n      ... on NFTAvatarOutfit {\n        contractAddress\n        tokenId\n        rarity\n        walletAddress\n      }\n    }\n    avatar {\n      ...userAvatarFragment\n    }\n    pastAvatars {\n      ...userAvatarFragment\n    }\n    runways {\n      id\n      title\n      items {\n        id\n        title\n        imageUrl\n        capabilityRequired\n        accessoryIds\n      }\n    }\n    closet {\n      accessoryIds\n      maxSlots\n      occupiedSlots\n    }\n    isActiveClosetSubscription\n    userCapabilities\n    freeStorefrontCollections @client {\n      listings(filter: { priceUpperBound: 1 }) {\n        edges {\n          node {\n            id\n            totalQuantity\n            soldQuantity\n            expiresAt\n            status\n            productOffer {\n              id\n              name\n              description\n              pricePackages {\n                id\n                quantity\n                price\n                currency\n              }\n            }\n            artist {\n              redditorInfo {\n                id\n                ... on Redditor {\n                  prefixedName\n                  icon {\n                    url\n                  }\n                  profile {\n                    title\n                    isNsfw\n                    publicDescriptionText\n                  }\n                }\n              }\n            }\n            item {\n              id\n              name\n              images {\n                url\n              }\n              drop {\n                rarity\n                size\n              }\n              owner {\n                id\n                displayName\n              }\n              benefits {\n                avatarOutfit {\n                  id\n                  accessoryIds\n                  backgroundImage {\n                    url\n                  }\n                  preRenderImage {\n                    url\n                  }\n                }\n              }\n              nft {\n                title\n                description\n                series\n                contractAddress\n                tokenId\n                externalUrls\n                imageUrl\n                tokenUrl\n                mintedAt\n                vendor\n              }\n            }\n          }\n        }\n      }\n    }\n  }\n  globalProductOffers(productTypes: ["nft"]) {\n    offers {\n      id\n      name\n      version\n      type\n      description\n      tags\n      pricePackages {\n        id\n        quantity\n        price\n        currency\n        renewInterval\n        skus {\n          ... on NftSku {\n            ...nftDetailsFragment\n          }\n        }\n      }\n    }\n  }\n  avatarStorefront {\n    listings {\n      edges {\n        node {\n          id\n          totalQuantity\n          soldQuantity\n          expiresAt\n          status\n          productOffer {\n            id\n            name\n            description\n            pricePackages {\n              id\n              quantity\n              price\n              currency\n            }\n          }\n          artist {\n            redditorInfo {\n              id\n              ... on Redditor {\n                prefixedName\n                icon {\n                  url\n                }\n                profile {\n                  title\n                  isNsfw\n                  publicDescriptionText\n                }\n              }\n            }\n          }\n          item {\n            id\n            name\n            images {\n              url\n            }\n            drop {\n              rarity\n              size\n            }\n            owner {\n              id\n              displayName\n            }\n            benefits {\n              avatarOutfit {\n                id\n                accessoryIds\n                backgroundImage {\n                  url\n                }\n                preRenderImage {\n                  url\n                }\n              }\n            }\n            nft {\n              title\n              description\n              series\n              contractAddress\n              tokenId\n              externalUrls\n              imageUrl\n              tokenUrl\n              mintedAt\n              vendor\n            }\n          }\n        }\n      }\n    }\n    artists {\n      edges {\n        node {\n          redditorInfo {\n            id\n            ... on Redditor {\n              prefixedName\n              icon {\n                url\n              }\n              profile {\n                title\n                isNsfw\n                publicDescriptionText\n              }\n            }\n          }\n          listings {\n            edges {\n              node {\n                id\n                totalQuantity\n                soldQuantity\n                expiresAt\n                status\n                productOffer {\n                  id\n                  name\n                  description\n                  pricePackages {\n                    id\n                    quantity\n                    price\n                    currency\n                  }\n                }\n                artist {\n                  redditorInfo {\n                    id\n                    ... on Redditor {\n                      prefixedName\n                      icon {\n                        url\n                      }\n                      profile {\n                        title\n                        isNsfw\n                        publicDescriptionText\n                      }\n                    }\n                  }\n                }\n                item {\n                  id\n                  name\n                  images {\n                    url\n                  }\n                  drop {\n                    rarity\n                    size\n                  }\n                  owner {\n                    id\n                    displayName\n                  }\n                  benefits {\n                    avatarOutfit {\n                      id\n                      accessoryIds\n                      backgroundImage {\n                        url\n                      }\n                      preRenderImage {\n                        url\n                      }\n                    }\n                  }\n                  nft {\n                    title\n                    description\n                    series\n                    contractAddress\n                    tokenId\n                    externalUrls\n                    imageUrl\n                    tokenUrl\n                    mintedAt\n                    vendor\n                  }\n                }\n              }\n            }\n          }\n        }\n      }\n    }\n  }\n}\n',
 						name: "GraphQL request",
 						locationOffset: {
 							line: 1,
@@ -34314,7 +34354,7 @@
 							duration: 5e3
 						},
 						uF = {
-							text: lk("Sorry, NFT avatars can't be shared"),
+							text: lk("Your Collectible Avatar is exclusively owned by you, so you can’t share it."),
 							kind: Vu.Error,
 							duration: 5e3
 						},
@@ -57802,14 +57842,16 @@
 						},
 						onClose: t,
 						userId: e,
-						viewEvent: () => (e => h(v(h({}, R_), {
+						viewEvent: () => (e => v(h({}, R_), {
 							action: U.View,
-							noun: x.SecureVault
-						}), e))({}),
-						clickCreateEvent: () => (e => h(v(h({}, R_), {
+							noun: x.SecureVault,
+							marketplace: e
+						}))({}),
+						clickCreateEvent: () => (e => v(h({}, R_), {
 							action: U.Click,
-							noun: x.CreateVault
-						}), e))({}),
+							noun: x.CreateVault,
+							marketplace: e
+						}))({}),
 						viewSuccessEvent: () => O_
 					})
 				},
@@ -73937,4 +73979,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/5.08c915da2f762d06b65d.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/5.43977f2268c86beb9afa.js.map

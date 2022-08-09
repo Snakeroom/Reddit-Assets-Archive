@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/runtime~Reddit.26b0c31981db5f62260c.js
-// Retrieved at 8/9/2022, 1:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/runtime~Reddit.e2a0df5c508fc1f7583e.js
+// Retrieved at 8/9/2022, 2:40:06 PM by Reddit Dataminer v1.0.0
 ! function(e) {
 	function o(o) {
 		for (var a, n, r = o[0], s = o[1], c = o[2], l = 0, b = []; l < r.length; l++) n = r[l], Object.prototype.hasOwnProperty.call(d, n) && d[n] && b.push(d[n][0]), d[n] = 0;
@@ -1364,12 +1364,12 @@
 						2: "533258fec9bdd386d2e4",
 						3: "55b68fcc06f8f4839817",
 						4: "34c5010d3122be632614",
-						5: "08c915da2f762d06b65d",
+						5: "43977f2268c86beb9afa",
 						6: "31564790dcbb8638aa4b",
 						7: "3bf0e3682f9b63482c0b",
 						8: "68526c809f9e10ac36d6",
 						9: "acf0ee91abfc9bc18704",
-						"vendors~MarketplaceClaimModal~MarketplaceInFeedUnit": "d9f33790481c1f83fe98",
+						"vendors~MarketplaceClaimModal~MarketplaceInFeedUnit": "6fa08f02d839378f5869",
 						MarketplaceClaimModal: "bd9772eb9f89d13cbacc",
 						GovernanceTransferPointsModal: "3f2a72a54b8c16cdd6c1",
 						"reddit-components-Governance-TransactionModals-BurnPointsModal~reddit-components-Governance-Transact~8f11de67": "ac4261c1269b0a60d31e",
@@ -1768,4 +1768,4 @@
 	var m = c;
 	t()
 }([]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/runtime~Reddit.26b0c31981db5f62260c.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/runtime~Reddit.e2a0df5c508fc1f7583e.js.map
