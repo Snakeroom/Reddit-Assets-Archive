@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/runtime~Reddit.1270e33bcd5a762b9148.js
-// Retrieved at 8/9/2022, 3:10:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/runtime~Reddit.78cb150b82e1d19d0bb7.js
+// Retrieved at 8/9/2022, 4:40:23 PM by Reddit Dataminer v1.0.0
 ! function(e) {
 	function o(o) {
 		for (var a, n, r = o[0], s = o[1], c = o[2], l = 0, b = []; l < r.length; l++) n = r[l], Object.prototype.hasOwnProperty.call(d, n) && d[n] && b.push(d[n][0]), d[n] = 0;
@@ -1371,7 +1371,7 @@
 						9: "acf0ee91abfc9bc18704",
 						"vendors~MarketplaceClaimModal~MarketplaceInFeedUnit": "6fa08f02d839378f5869",
 						MarketplaceClaimModal: "bd9772eb9f89d13cbacc",
-						GovernanceTransferPointsModal: "3f2a72a54b8c16cdd6c1",
+						GovernanceTransferPointsModal: "5c107ac357f3b0969509",
 						"reddit-components-Governance-TransactionModals-BurnPointsModal~reddit-components-Governance-Transact~8f11de67": "ac4261c1269b0a60d31e",
 						"reddit-components-Governance-TransactionModals-BurnPointsModal": "41c5e64c3fcab8db2f1f",
 						"reddit-pages-meta-ArbitrumPointsMigrationPage": "1d5e3ce06dcd76ebe005",
@@ -1506,16 +1506,16 @@
 						"reddit-components-Governance-GasFeesEducationalModal": "c10c22341bf708d26718",
 						"reddit-components-PostCreationForm-PredictionEditor-InactivityModal": "48433ee0bec18632bd07",
 						"reddit-components-PostCreationForm-PredictionEditor-StartTournamentLimitationModal": "58ddb94920a2ab581fa9",
-						"translations/bn_BD-json": "afc1b3c4ec8b113cba09",
-						"translations/de_DE-json": "1594cee85e1b6cf80c4b",
-						"translations/es_ES-json": "d4336c464b663b0f7eef",
-						"translations/es_MX-json": "ca37439c0c0f0193e9e3",
-						"translations/fr_FR-json": "2d5d6ddf6f584864ea21",
-						"translations/hi_IN-json": "cabef5ba93c1b98ab003",
-						"translations/it_IT-json": "a7eab3af744d1a2b37da",
-						"translations/pseudo-json": "51bdb2c5162b76e886e9",
-						"translations/pt_BR-json": "69c496e8891dddec45a6",
-						"translations/pt_PT-json": "84f862bf1b2e15b0df7e",
+						"translations/bn_BD-json": "64a4e1c49d900e85d587",
+						"translations/de_DE-json": "99a7a5bc59905989b375",
+						"translations/es_ES-json": "d40ad02ae3eb40df513f",
+						"translations/es_MX-json": "95924c51116b082efb55",
+						"translations/fr_FR-json": "467e4adf2d685b60da0f",
+						"translations/hi_IN-json": "b09a2b0c0975aabeeb31",
+						"translations/it_IT-json": "e116239a443b1101bc8e",
+						"translations/pseudo-json": "cf78bb853182d2a467c7",
+						"translations/pt_BR-json": "45e88bff8601d5dc6f4b",
+						"translations/pt_PT-json": "c889bd28b0b3632a7c7e",
 						"vendors~AdminPanel": "eae9f345b12b82989d37",
 						AdminPanel: "e49688b982ff76f93dd7",
 						"vendors~ChatMessageInput~CommentRichUnit~FlairEdit~MembershipPaywallPage~PostCreation~PostRichUnit~R~9deab1a0": "201e0a53b4d00907b96f",
@@ -1662,7 +1662,7 @@
 						"reddit-components-LayerEmbed": "92589678ae6063513552",
 						TimezoneList: "57988e1ba10253d58674",
 						"reddit-components-ScheduledPost-PostSchedulePickerModal": "db1b7ebeb1897e2610af",
-						AwardCreationModal: "7cbf493ca8776dd1701f",
+						AwardCreationModal: "d751bda5e00a0284d744",
 						"reddit-components-Wiki-ModHubWikiManagement": "d61ce3efff70df40ba42",
 						"reddit-components-CommunitySettings-ModPnSettings": "c9a440e37cdce63294e8",
 						"reddit-components-ModHub-ChatSettings": "d01d4a908cabe0534c96",
@@ -1768,4 +1768,4 @@
 	var m = c;
 	t()
 }([]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/runtime~Reddit.1270e33bcd5a762b9148.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/runtime~Reddit.78cb150b82e1d19d0bb7.js.map

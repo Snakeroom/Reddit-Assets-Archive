@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/GovernanceTransferPointsModal.3f2a72a54b8c16cdd6c1.js
-// Retrieved at 8/9/2022, 9:50:08 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/GovernanceTransferPointsModal.5c107ac357f3b0969509.js
+// Retrieved at 8/9/2022, 4:40:23 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["GovernanceTransferPointsModal"], {
 		"./node_modules/lodash/uniqueId.js": function(e, t, n) {
@@ -917,28 +917,26 @@
 					subredditId: e.subredditId
 				})))
 			}
-			var se = n("./src/lib/localizeCurrency/index.ts"),
-				ae = n("./src/reddit/hooks/useLocale.ts"),
+			var se = n("./src/lib/currency/currencies.ts"),
+				ae = n("./src/reddit/controls/LocalizedCurrency/LocalizedCurrency.tsx"),
 				re = n("./src/reddit/icons/svgs/EthCircle/index.tsx"),
 				oe = n("./src/reddit/icons/svgs/Info/index.tsx"),
 				ie = n("./src/reddit/components/Governance/TransferPointsModal/NetworkFees/index.m.less"),
 				ce = n.n(ie);
 
 			function le(e) {
-				const t = Object(ae.a)(),
-					{
-						className: n,
-						fees: s,
-						notEnoughEth: a,
-						onPurchase: r,
-						onShowFeesInfo: o
-					} = e,
-					i = (null == s ? void 0 : s.eth.dividedBy(E).toFixed(6).toString()) || "";
+				const {
+					className: t,
+					fees: n,
+					notEnoughEth: s,
+					onPurchase: a,
+					onShowFeesInfo: r
+				} = e, o = (null == n ? void 0 : n.eth.dividedBy(E).toFixed(6).toString()) || "";
 				return c.a.createElement("div", {
-					className: Object(A.a)(ce.a.container, n)
+					className: Object(A.a)(ce.a.container, t)
 				}, c.a.createElement("div", {
 					className: ce.a.fees
-				}, s ? L.fbt._("Estimated Network fees", null, {
+				}, n ? L.fbt._("Estimated Network fees", null, {
 					hk: "1kEIRY"
 				}) : c.a.createElement(c.a.Fragment, null, c.a.createElement(re.a, {
 					className: ce.a.eth
@@ -946,19 +944,21 @@
 					hk: "EJ2uC"
 				})), c.a.createElement(oe.a, {
 					className: ce.a.infoIcon,
-					onClick: o
-				})), s && c.a.createElement("div", null, L.fbt._("{=[fees in ETH]} {fees in USD}", [L.fbt._param("=[fees in ETH]", c.a.createElement("span", {
+					onClick: r
+				})), n && c.a.createElement("div", null, L.fbt._("{=[fees in ETH]}", [L.fbt._param("=[fees in ETH]", c.a.createElement("span", {
 					className: ce.a.ethFee
-				}, L.fbt._("{fees in ETH}", [L.fbt._param("fees in ETH", i)], {
-					hk: "3uQ1Tx"
-				}))), L.fbt._param("fees in USD", Object(se.b)(100 * +s.usd, {
-					locale: t
-				}))], {
-					hk: "Lg1eJ"
-				})), a && c.a.createElement(F.a, {
+				}, L.fbt._("{fees in ETH}", [L.fbt._param("fees in ETH", o)], {
+					hk: "1FqoyY"
+				})))], {
+					hk: "3LemSn"
+				}), " ", "(", c.a.createElement(ae.a, {
+					num: 100 * +n.usd,
+					type: se.b.Real,
+					currency: se.c
+				}), ")"), s && c.a.createElement(F.a, {
 					className: ce.a.purchaseButton,
 					priority: F.c.Secondary,
-					onClick: r
+					onClick: a
 				}, L.fbt._("Purchase", null, {
 					hk: "3RDmqo"
 				})))
@@ -1927,6 +1927,28 @@
 				})
 			}
 		},
+		"./src/reddit/controls/LocalizedCurrency/LocalizedCurrency.tsx": function(e, t, n) {
+			"use strict";
+			var s = n("./node_modules/react/index.js"),
+				a = n.n(s),
+				r = n("./src/reddit/hooks/useLocale.ts"),
+				o = n("./src/lib/localizeCurrency/index.ts");
+			t.a = e => {
+				let {
+					num: t,
+					className: n,
+					...s
+				} = e;
+				const i = Object(r.a)(),
+					c = Object(o.b)(t, {
+						locale: i,
+						...s
+					});
+				return a.a.createElement("span", {
+					className: n
+				}, c)
+			}
+		},
 		"./src/reddit/endpoints/governance/ftx.ts": function(e, t, n) {
 			"use strict";
 			n.d(t, "b", (function() {
@@ -2304,4 +2326,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/GovernanceTransferPointsModal.3f2a72a54b8c16cdd6c1.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/GovernanceTransferPointsModal.5c107ac357f3b0969509.js.map
