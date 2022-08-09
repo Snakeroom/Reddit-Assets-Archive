@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~CountryPage~Frontpage~GovernanceReleaseNotesModal~ModListing~Mod~e3d63e32.1a8d5b5f400b0e895775.js
-// Retrieved at 8/8/2022, 11:20:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~CountryPage~Frontpage~GovernanceReleaseNotesModal~ModListing~Mod~e3d63e32.5d7c5c52611607d312c8.js
+// Retrieved at 8/9/2022, 12:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~CountryPage~Frontpage~GovernanceReleaseNotesModal~ModListing~Mod~e3d63e32"], {
 		"./src/lib/intersectionObserver/index.ts": function(e, t, s) {
@@ -889,74 +889,74 @@
 					let {
 						gqlContext: t,
 						layout: s,
-						post: i
+						post: i,
+						parentPost: n
 					} = e;
-					var n;
-					const o = Object(P.d)(),
-						r = Object(z.a)(),
-						a = Object(c.useRef)(!1),
-						l = Object(P.e)(Q.b),
+					var o;
+					const r = Object(P.d)(),
+						a = Object(z.a)(),
+						l = Object(c.useRef)(!1),
+						d = Object(P.e)(Q.b),
 						{
-							hideRecommendationFooter: d,
-							recommendationFooterView: m,
-							setRecommendationFooterView: p
+							hideRecommendationFooter: m,
+							recommendationFooterView: p,
+							setRecommendationFooterView: u
 						} = Object(D.a)(),
-						u = i.belongsTo.id,
-						g = i.id,
+						g = i.belongsTo.id,
+						C = i.id,
 						{
-							subredditId: C
-						} = (null === (n = i.recommendationContext) || void 0 === n ? void 0 : n.source) || {},
-						f = Object(P.e)(e => Object(Y.h)(e, {
-							subredditId: u
-						})),
-						v = Object(c.useCallback)(() => {
-							const e = !l,
-								t = a.current ? () => o(Object(y.fb)(g, !0, !1, e)) : d,
-								s = l ? setTimeout(t, 0) : setTimeout(t, 1500);
-							return () => clearTimeout(s)
-						}, [o, d, g, l]);
-					Object(c.useEffect)(() => {
-						m !== V.a.ThankYouView || l || v()
-					}, [o, d, g, m, v, l]);
-					const w = Object(c.useCallback)(() => {
-							a.current = !0, p(l ? V.a.MuteThankYouView : V.a.ThankYouView), r(Object(U.m)(g))
-						}, [g, r, p, l]),
+							subredditId: f,
+							subredditName: v
+						} = (null === (o = i.recommendationContext) || void 0 === o ? void 0 : o.source) || {},
+						w = Object(P.e)(e => Object(Y.h)(e, i, n)),
 						x = Object(c.useCallback)(() => {
+							const e = !d,
+								t = l.current ? () => r(Object(y.fb)(C, !0, !1, e)) : m,
+								s = d ? setTimeout(t, 0) : setTimeout(t, 1500);
+							return () => clearTimeout(s)
+						}, [r, m, C, d]);
+					Object(c.useEffect)(() => {
+						p !== V.a.ThankYouView || d || x()
+					}, [r, m, C, p, x, d]);
+					const I = Object(c.useCallback)(() => {
+							l.current = !0, u(d ? V.a.MuteThankYouView : V.a.ThankYouView), a(Object(U.m)(C))
+						}, [C, a, u, d]),
+						R = Object(c.useCallback)(() => {
 							te({
-								dispatch: o,
+								dispatch: r,
 								gqlContext: t,
-								setRecommendationFooterView: p,
+								setRecommendationFooterView: u,
 								similar: !1,
-								subredditId: u,
-								isCommunityMutingEnabled: l
-							}), a.current = !0, r(Object(U.a)(g))
-						}, [o, t, g, r, p, u, l]),
-						I = Object(c.useCallback)(() => {
-							C && (te({
-								dispatch: o,
+								subredditId: g,
+								isCommunityMutingEnabled: d
+							}), l.current = !0, a(Object(U.a)(C))
+						}, [r, t, C, a, u, g, d]),
+						S = Object(c.useCallback)(() => {
+							f && (te({
+								dispatch: r,
 								gqlContext: t,
-								setRecommendationFooterView: p,
+								setRecommendationFooterView: u,
 								similar: !0,
-								subredditId: C,
-								isCommunityMutingEnabled: l
-							}), a.current = !0, r(Object(U.p)(g)))
-						}, [o, t, g, C, r, p, l]);
-					return m && m !== V.a.None ? h.a.createElement("div", {
+								subredditId: f,
+								isCommunityMutingEnabled: d
+							}), l.current = !0, a(Object(U.p)(C)))
+						}, [r, t, C, f, a, u, d]);
+					return p && p !== V.a.None ? h.a.createElement("div", {
 						className: Object(b.a)($.a.Footer, {
 							[$.a.ClassicLayout]: s === N.g.Classic,
 							[$.a.CompactLayout]: s === N.g.Compact,
 							[$.a.LargeLayout]: s === N.g.Large
 						})
-					}, m === V.a.SeeFewerPostsView && h.a.createElement(se, {
-						displayText: f,
-						seeLessFromThisCommunity: x,
-						seeLessLikeThisCommunity: I,
-						seeLessOfThisPostClick: w
-					}), m === V.a.MuteThankYouView && h.a.createElement(ne, {
-						subredditId: u,
-						subredditName: f,
-						closeThankYouView: v
-					}), m === V.a.ThankYouView && h.a.createElement(ie, null)) : null
+					}, p === V.a.SeeFewerPostsView && h.a.createElement(se, {
+						displayText: v,
+						seeLessFromThisCommunity: R,
+						seeLessLikeThisCommunity: S,
+						seeLessOfThisPostClick: I
+					}), p === V.a.MuteThankYouView && h.a.createElement(ne, {
+						subredditId: g,
+						subredditName: w,
+						closeThankYouView: x
+					}), p === V.a.ThankYouView && h.a.createElement(ie, null)) : null
 				}),
 				re = s("./src/reddit/components/PostList/LoadMore.tsx"),
 				ae = s("./src/reddit/components/PostList/SomethingWrong.tsx"),
@@ -1218,29 +1218,30 @@
 							inSubredditOrProfile: j,
 							postsById: _
 						} = this.props, L = _[e], V = L.crosspostRootId && _[L.crosspostRootId] ? _[L.crosspostRootId] : L;
-						L.crosspostRootId && !_[L.crosspostRootId] && v.c.withScope(e => {
+						let F;
+						L.crosspostRootId && _[L.crosspostRootId] && (F = L), L.crosspostRootId && !_[L.crosspostRootId] && v.c.withScope(e => {
 							e.setExtra("errorType", g.s.API), e.setExtra("description", `Post ${L.id} is crosspost of ${L.crosspostRootId}, but ` + `${L.crosspostRootId} details are missing in the state`), v.c.captureMessage("Crosspost parent details are missing")
 						});
-						const F = this.props.postComponentForLayout({
+						const A = this.props.postComponentForLayout({
 							isCrosspost: !!L.crosspostRootId,
 							layout: i,
 							post: V
 						});
-						let A = `post-list-item-[layout: ${i}]-[postId: ${e}]`;
-						this.props.listingBelowVariant && P && (A += `--${P}`);
-						const H = Te(e, i, s, P, y, x, this.props, t, this.props.hostPostData),
-							W = je(e, i, this.props, t),
-							B = _e(e, this.props, l),
-							U = V.media && V.media.type === ge.o.EMBED ? V.media.provider : null,
-							K = p && !L.isSponsored,
-							q = u && !L.isSponsored && !L.isScoreHidden,
-							D = !!(null == L ? void 0 : L.recommendationContext);
+						let H = `post-list-item-[layout: ${i}]-[postId: ${e}]`;
+						this.props.listingBelowVariant && P && (H += `--${P}`);
+						const W = Te(e, i, s, P, y, x, this.props, t, this.props.hostPostData),
+							B = je(e, i, this.props, t),
+							U = _e(e, this.props, l),
+							K = V.media && V.media.type === ge.o.EMBED ? V.media.provider : null,
+							q = p && !L.isSponsored,
+							D = u && !L.isSponsored && !L.isScoreHidden,
+							z = !!(null == L ? void 0 : L.recommendationContext);
 						T = {
 							estHeight: Object(be.c)(L, i),
 							id: e,
-							isFocusable: !(!V.media || !(i === N.g.Large || i === N.g.Classic && Object(ge.H)(V.media))) && (ge.d.has(V.media.type) && (!U || !ge.s.has(U)) && !V.isSpoiler),
-							trackOnEnteredViewport: H,
-							trackOnExitedViewport: W,
+							isFocusable: !(!V.media || !(i === N.g.Large || i === N.g.Classic && Object(ge.H)(V.media))) && (ge.d.has(V.media.type) && (!K || !ge.s.has(K)) && !V.isSpoiler),
+							trackOnEnteredViewport: W,
+							trackOnExitedViewport: B,
 							render: p => {
 								let {
 									className: u,
@@ -1251,9 +1252,9 @@
 									shouldLoadInitially: T
 								} = p;
 								return h.a.createElement(me, {
-									key: A,
+									key: H,
 									hideRecommendationContext: !!d
-								}, h.a.createElement(F, {
+								}, h.a.createElement(A, {
 									availableWidth: v,
 									className: Object(b.a)(u, this.props.postClassName),
 									currentProfileName: n,
@@ -1262,22 +1263,22 @@
 									forceLoadMedia: T,
 									hostPostData: o,
 									inSubredditOrProfile: j,
-									isCommentCountAnimationEnabled: K,
+									isCommentCountAnimationEnabled: q,
 									isCommentPermalink: r,
 									isCommentsPage: a,
 									isCountAnimShadowTestEnabled: C,
 									isFrontpage: l,
 									isProfilePostListing: c,
 									isTopicPage: m,
-									isVoteCountAnimationEnabled: q,
-									key: A,
+									isVoteCountAnimationEnabled: D,
+									key: H,
 									last: s,
 									listingBelowVariant: f,
 									listingIndex: t,
 									listingKey: P,
 									listingName: y,
 									onceInViewport: O,
-									onClickPost: B,
+									onClickPost: U,
 									onSizeChanged: x,
 									pageLayer: w,
 									postId: e,
@@ -1287,9 +1288,10 @@
 									sendEvent: this.props.sendEvent,
 									shouldHideFlair: R,
 									shouldShowInsightsButton: S
-								}), D && h.a.createElement(oe, {
+								}), z && h.a.createElement(oe, {
 									post: V,
-									layout: i
+									layout: i,
+									parentPost: F
 								}))
 							}
 						}, this.scrollChildCache.set(M, T)
@@ -2407,4 +2409,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~CountryPage~Frontpage~GovernanceReleaseNotesModal~ModListing~Mod~e3d63e32.1a8d5b5f400b0e895775.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~CountryPage~Frontpage~GovernanceReleaseNotesModal~ModListing~Mod~e3d63e32.5d7c5c52611607d312c8.js.map

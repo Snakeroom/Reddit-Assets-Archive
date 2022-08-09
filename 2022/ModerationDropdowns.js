@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModerationDropdowns.bcda78f8b7b04a48bff2.js
-// Retrieved at 8/4/2022, 7:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModerationDropdowns.0faf7408e45e1f69b691.js
+// Retrieved at 8/9/2022, 12:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModerationDropdowns"], {
 		"./src/reddit/actions/economics/predictions/modTools.ts": function(e, t, o) {
@@ -1171,4 +1171,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationDropdowns.bcda78f8b7b04a48bff2.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationDropdowns.0faf7408e45e1f69b691.js.map

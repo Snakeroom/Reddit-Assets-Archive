@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~Reddit~Subreddit.089cd09edea7c4a490a6.js
-// Retrieved at 8/9/2022, 9:50:08 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~Reddit~Subreddit.69075f62ce56cf9ce2a2.js
+// Retrieved at 8/9/2022, 12:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~Reddit~Subreddit"], {
 		"./src/lib/CSSVariableProvider/withTheme.tsx": function(e, t, n) {
@@ -3970,4 +3970,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit~Subreddit.089cd09edea7c4a490a6.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit~Subreddit.69075f62ce56cf9ce2a2.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/NewCommunityProgress.6deac155352b4463be63.js
-// Retrieved at 7/28/2022, 11:00:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/NewCommunityProgress.43b1570bdda85cd1a433.js
+// Retrieved at 8/9/2022, 12:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["NewCommunityProgress"], {
 		"./src/lib/colors/constants.ts": function(e, A, t) {
@@ -1225,4 +1225,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/NewCommunityProgress.6deac155352b4463be63.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/NewCommunityProgress.43b1570bdda85cd1a433.js.map
