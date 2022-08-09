@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Governance-GasFeesEducationalModal.c10c22341bf708d26718.js
-// Retrieved at 8/8/2022, 3:30:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Governance-GasFeesEducationalModal.8204a0ee08cabe1b5adb.js
+// Retrieved at 8/9/2022, 7:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Governance-GasFeesEducationalModal"], {
 		"./src/reddit/components/Governance/GasFeesEducationalModal/index.m.less": function(e, t, a) {
@@ -25,8 +25,8 @@
 			var n = a("./node_modules/fbt/lib/FbtPublic.js"),
 				s = a("./node_modules/react/index.js"),
 				o = a.n(s),
-				c = a("./node_modules/react-redux/es/index.js"),
-				r = a("./src/higherOrderComponents/asModal/index.tsx"),
+				r = a("./node_modules/react-redux/es/index.js"),
+				c = a("./src/higherOrderComponents/asModal/index.tsx"),
 				l = a("./src/reddit/actions/modal.ts");
 			const i = e => {
 				const t = e.getBoundingClientRect();
@@ -79,12 +79,12 @@
 			}), n.fbt._("Fees are calculated based on the network's congestion. The lower your transaction's priority in the network, the lower your fee will be. Right now the Vault selects the lowest fee possible to reduce your costs.", null, {
 				hk: "3tgxHH"
 			})];
-			t.default = Object(r.a)(() => {
-				const e = Object(c.d)(),
+			t.default = Object(c.a)(() => {
+				const e = Object(r.d)(),
 					{
 						purchaseLink: t
-					} = Object(c.e)(e => Object(v.a)(e)),
-					[a, r] = Object(s.useState)(!1),
+					} = Object(r.e)(e => Object(v.a)(e)),
+					[a, c] = Object(s.useState)(!1),
 					E = () => e(Object(l.g)(u.a.CRYPTO_GAS_FEES_EDUCATION)),
 					{
 						openWindow: _,
@@ -111,9 +111,9 @@
 								} = e;
 								const {
 									top: s,
-									left: c
+									left: r
 								} = i(t.currentTarget);
-								a.current = window.open(n, "_blank", `width=500,height=700,left=${c},top=${s}`), o()
+								a.current = window.open(n, "_blank", `width=500,height=700,left=${r},top=${s}`), o()
 							},
 							isWindowOpen: n
 						}
@@ -121,7 +121,7 @@
 						onWindowClose: E
 					});
 				return a ? o.a.createElement(d.a, {
-					onBack: () => r(!1)
+					onBack: () => c(!1)
 				}) : o.a.createElement("div", {
 					className: x.a.container
 				}, o.a.createElement("div", {
@@ -161,7 +161,7 @@
 					hk: "1AA1xW"
 				}), o.a.createElement(f.a, {
 					className: x.a.infoIcon,
-					onClick: () => r(!0)
+					onClick: () => c(!0)
 				})), o.a.createElement(h.t, {
 					className: x.a.button,
 					priority: h.c.Secondary,
@@ -185,8 +185,8 @@
 			var n = a("./node_modules/react/index.js"),
 				s = a.n(n),
 				o = a("./node_modules/react-redux/es/index.js"),
-				c = a("./src/lib/classNames/index.ts"),
-				r = a("./src/reddit/actions/modal.ts"),
+				r = a("./src/lib/classNames/index.ts"),
+				c = a("./src/reddit/actions/modal.ts"),
 				l = a("./src/reddit/icons/svgs/Close/index.tsx"),
 				i = a("./src/reddit/components/Governance/ModalClose/index.m.less"),
 				d = a.n(i);
@@ -196,12 +196,12 @@
 				} = t;
 				return {
 					onClose: () => {
-						e(Object(r.f)()), a && a()
+						e(Object(c.f)()), a && a()
 					}
 				}
 			})((function(e) {
 				return s.a.createElement(l.a, {
-					className: Object(c.a)(d.a.closeIcon, e.className),
+					className: Object(r.a)(d.a.closeIcon, e.className),
 					onClick: e.onClose
 				})
 			}))
@@ -223,8 +223,8 @@
 			var n = a("./node_modules/react/index.js"),
 				s = a.n(n),
 				o = a("./src/lib/classNames/index.ts"),
-				c = a("./src/reddit/icons/svgs/ArrowRight/index.tsx"),
-				r = a("./src/reddit/components/Governance/ModalClose/index.tsx"),
+				r = a("./src/reddit/icons/svgs/ArrowRight/index.tsx"),
+				c = a("./src/reddit/components/Governance/ModalClose/index.tsx"),
 				l = a("./src/reddit/components/Governance/ModalFrame/index.m.less"),
 				i = a.n(l);
 
@@ -235,10 +235,10 @@
 					className: i.a.header
 				}, s.a.createElement("div", {
 					className: i.a.title
-				}, e.onBack ? s.a.createElement(c.a, {
+				}, e.onBack ? s.a.createElement(r.a, {
 					className: i.a.closeIcon,
 					onClick: e.onBack
-				}) : s.a.createElement(r.a, {
+				}) : s.a.createElement(c.a, {
 					className: i.a.closeIcon
 				}), s.a.createElement("div", null, e.title)), s.a.createElement("div", null, e.headerRight)), s.a.createElement("div", {
 					className: i.a.content
@@ -249,7 +249,9 @@
 			e.exports = {
 				button: "_7Ee25wJvkxZ_LHaSL7gm9",
 				grid: "_1vDUEFG58WSS6oMh8CoEqu",
+				imageWrapper: "_5p8jYt_vdSM5UN7GmQqnM",
 				image: "vhoZGZePy-2FjE5gFC9wJ",
+				wideImage: "KPGJUsm5G2rxPSvPVI_Gu",
 				text: "oiclFwcdrYr1O8czq24s"
 			}
 		},
@@ -261,12 +263,12 @@
 			var n = a("./node_modules/fbt/lib/FbtPublic.js"),
 				s = a("./node_modules/react/index.js"),
 				o = a.n(s),
-				c = a("./src/config.ts"),
-				r = a("./src/reddit/controls/Button/index.tsx"),
+				r = a("./src/config.ts"),
+				c = a("./src/reddit/controls/Button/index.tsx"),
 				l = a("./src/reddit/components/Governance/ModalFrame/index.tsx"),
 				i = a("./src/reddit/components/Governance/TransferPointsModal/FeesInfo/index.m.less"),
 				d = a.n(i);
-			const m = e => `${c.a.assetPath}/img/communityPoints/${e}.png`;
+			const m = e => `${r.a.assetPath}/img/communityPoints/${e}.png`;
 
 			function u(e) {
 				return o.a.createElement(l.a, {
@@ -277,37 +279,45 @@
 					onBack: e.onBack
 				}, o.a.createElement("div", {
 					className: d.a.grid
+				}, o.a.createElement("div", {
+					className: d.a.imageWrapper
 				}, o.a.createElement("img", {
 					className: d.a.image,
-					src: m("fees-1")
-				}), o.a.createElement("div", {
+					src: m("network-fees-1")
+				}), " "), o.a.createElement("div", {
 					className: d.a.text
-				}, n.fbt._("Network fees are required to conduct transactions on the blockchain (for example, when sending Points).", null, {
-					hk: "BJBay"
-				})), o.a.createElement("img", {
-					className: d.a.image,
-					src: m("fees-2")
-				}), o.a.createElement("div", {
+				}, n.fbt._("Network fees are required to conduct transactions on the blockchain (for example, when tipping Points).", null, {
+					hk: "STIdJ"
+				})), o.a.createElement("div", {
+					className: d.a.imageWrapper
+				}, o.a.createElement("img", {
+					className: d.a.wideImage,
+					src: m("network-fees-2")
+				})), o.a.createElement("div", {
 					className: d.a.text
 				}, n.fbt._("Network fees go to the blockchain network to pay for transaction integrity and security. Reddit does not receive any of the fees.", null, {
 					hk: "3o0Oqp"
-				})), o.a.createElement("img", {
+				})), o.a.createElement("div", {
+					className: d.a.imageWrapper
+				}, o.a.createElement("img", {
 					className: d.a.image,
-					src: m("fees-3")
-				}), o.a.createElement("div", {
+					src: m("network-fees-3")
+				})), o.a.createElement("div", {
 					className: d.a.text
-				}, n.fbt._("Network fees are paid in the ETH cryptocurrency. In order to make transactions that require a fee, you must have ETH.", null, {
-					hk: "42EHsE"
-				})), o.a.createElement("img", {
-					className: d.a.image,
-					src: m("fees-4")
-				}), o.a.createElement("div", {
+				}, n.fbt._("Network fees are paid in ETH, the native cryptocurrency of the main Ethereum network. You need ETH to tip Points.", null, {
+					hk: "3yR0rI"
+				})), o.a.createElement("div", {
+					className: d.a.imageWrapper
+				}, o.a.createElement("img", {
+					className: d.a.wideImage,
+					src: m("network-fees-4")
+				})), o.a.createElement("div", {
 					className: d.a.text
 				}, n.fbt._("The exact fees depend on the state of the network at that time. The more people using it, the higher the fees. The Vault selects the lowest fee possible to reduce your costs.", null, {
 					hk: "BPqiL"
-				}))), o.a.createElement(r.a, {
+				}))), o.a.createElement(c.a, {
 					className: d.a.button,
-					priority: r.c.Secondary,
+					priority: c.c.Secondary,
 					onClick: e.onBack
 				}, n.fbt._("Continue", null, {
 					hk: "WLaqI"
@@ -339,4 +349,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Governance-GasFeesEducationalModal.c10c22341bf708d26718.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Governance-GasFeesEducationalModal.8204a0ee08cabe1b5adb.js.map

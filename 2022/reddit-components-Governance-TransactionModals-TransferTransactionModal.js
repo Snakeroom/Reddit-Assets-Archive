@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-TransferTransactionModal.bc46827f7a727f78ff64.js
-// Retrieved at 7/12/2022, 6:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-TransferTransactionModal.fdec3e4e0934fc099045.js
+// Retrieved at 8/9/2022, 7:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Governance-TransactionModals-TransferTransactionModal"], {
 		"./node_modules/dijkstrajs/dijkstra.js": function(e, t, r) {
@@ -1333,7 +1333,7 @@
 				fbt: R
 			} = r("./node_modules/fbt/lib/FbtPublic.js");
 
-			function M(e) {
+			function N(e) {
 				const {
 					recipient: t
 				} = e, r = Object(a.e)(A.k);
@@ -1344,8 +1344,8 @@
 						isNSFW: !1,
 						userName: t
 					}),
-					title: R._("Transfer to {recipient}", [R._param("recipient", t === e.recipientAddress ? t : "u/" + t)], {
-						hk: "xSmPq"
+					title: R._("Tip {recipient}", [R._param("recipient", t === e.recipientAddress ? t : "u/" + t)], {
+						hk: "3etq2H"
 					}),
 					subtitle: r && r.displayText ? R._("From {currentUsername}", [R._param("currentUsername", "u/" + r.displayText)], {
 						hk: "onO9l"
@@ -1353,7 +1353,7 @@
 					pointsAmount: e.transferAmount
 				})
 			}
-			const N = e => s.a.createElement(x.b, {
+			const M = e => s.a.createElement(x.b, {
 				values: [
 					[Object(x.c)(), e.recipientAddress],
 					[Object(x.a)(), e.transaction.contractAddress]
@@ -1395,21 +1395,21 @@
 					},
 					U = I.name;
 				return s.a.createElement(T.a, {
-					approvalOverview: s.a.createElement(M, {
+					approvalOverview: s.a.createElement(N, {
 						subredditId: i,
 						recipient: r,
 						recipientAddress: S,
 						transferAmount: c
 					}),
-					approvalDetails: s.a.createElement(N, {
+					approvalDetails: s.a.createElement(M, {
 						transaction: O,
 						recipientAddress: S
 					}),
 					onClose: t,
 					onTransactionSuccess: async e => {
 						t(), B(function(e) {
-							return Object(f.f)(Object(f.e)(o.fbt._("Sending your {pointsName}...", [o.fbt._param("pointsName", e)], {
-								hk: "2LuiyB"
+							return Object(f.f)(Object(f.e)(o.fbt._("Tipping your {pointsName}...", [o.fbt._param("pointsName", e)], {
+								hk: "1sX8mX"
 							}), w.b.SuccessCommunity))
 						}(U)), async function(e, t, r, n, o, i) {
 							await Object(p.a)(t, r), await e(Object(h.a)(Object(d.h)({
@@ -1425,14 +1425,14 @@
 							}))
 						}(B, I, e.hash, i, C, null == P ? void 0 : P.id).then(() => {
 							x(Object(b.d)("transfer", i, L)), B(function(e) {
-								return Object(f.f)(Object(f.e)(o.fbt._("Your {pointsName} were sent!", [o.fbt._param("pointsName", e)], {
-									hk: "4yssJA"
+								return Object(f.f)(Object(f.e)(o.fbt._("Your {pointsName} were tipped!", [o.fbt._param("pointsName", e)], {
+									hk: "4Egy6Y"
 								}), w.b.SuccessCommunityGreen))
 							}(U))
 						}).catch(e => {
 							k(e.toString()), B(function(e) {
-								return Object(f.f)(Object(f.e)(o.fbt._("Failed to send your {pointsName}. Try again later", [o.fbt._param("pointsName", e)], {
-									hk: "yeMQh"
+								return Object(f.f)(Object(f.e)(o.fbt._("Failed to tip your {pointsName}. Try again later", [o.fbt._param("pointsName", e)], {
+									hk: "3UsXlU"
 								}), w.b.Error))
 							}(U))
 						})
@@ -1460,4 +1460,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-TransferTransactionModal.bc46827f7a727f78ff64.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-TransferTransactionModal.fdec3e4e0934fc099045.js.map

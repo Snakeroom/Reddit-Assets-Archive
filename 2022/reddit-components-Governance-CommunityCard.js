@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Governance-CommunityCard.5108402820fd1d4b2574.js
-// Retrieved at 8/9/2022, 6:30:12 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Governance-CommunityCard.1a709fa14d4ab1605b37.js
+// Retrieved at 8/9/2022, 7:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Governance-CommunityCard"], {
 		"./src/lib/bigNumberUtils/percent.ts": function(e, t, n) {
@@ -195,9 +195,9 @@
 			})), n.d(t, "f", (function() {
 				return w
 			})), n.d(t, "g", (function() {
-				return M
-			})), n.d(t, "d", (function() {
 				return L
+			})), n.d(t, "d", (function() {
+				return M
 			})), n.d(t, "e", (function() {
 				return G
 			})), n.d(t, "h", (function() {
@@ -234,8 +234,8 @@
 				T = Object(s.a)(C.u),
 				P = Object(s.a)(C.v),
 				S = Object(s.a)(C.w),
-				M = Object(s.a)(C.x),
-				L = (e, t) => async (n, r, s) => {
+				L = Object(s.a)(C.x),
+				M = (e, t) => async (n, r, s) => {
 					let o, {
 							apiContext: i,
 							gqlContext: c
@@ -456,8 +456,8 @@
 				T = n("./src/reddit/actions/toaster.ts"),
 				P = n("./src/reddit/actions/tooltip.ts"),
 				S = n("./src/reddit/contexts/ApiContext.tsx"),
-				M = n("./src/reddit/controls/Dropdown/index.tsx"),
-				L = n("./src/reddit/controls/Dropdown/Row.tsx"),
+				L = n("./src/reddit/controls/Dropdown/index.tsx"),
+				M = n("./src/reddit/controls/Dropdown/Row.tsx"),
 				G = n("./src/reddit/endpoints/governance/crypto.ts"),
 				R = n("./src/reddit/helpers/governance/ethereum.ts"),
 				D = n("./src/reddit/icons/svgs/Settings/index.tsx"),
@@ -465,9 +465,9 @@
 				B = n("./src/reddit/selectors/tooltip.ts"),
 				V = n("./src/reddit/components/Governance/CommunityCard/CommunityTokens/BlockchainWalletInfo/index.m.less"),
 				F = n.n(V);
-			const W = Object(w.a)(M.a),
+			const W = Object(w.a)(L.a),
 				H = "BlockchainWalletInfo--SettingsMenu";
-			class $ extends i.a.PureComponent {
+			class q extends i.a.PureComponent {
 				constructor() {
 					super(...arguments), this.onCopyToClipboard = () => {
 						Object(A.a)(this.props.publicAddress || "")
@@ -507,17 +507,17 @@
 						tooltipId: H,
 						isOpen: e,
 						renderContentsHidden: !0
-					}, i.a.createElement(L.b, {
+					}, i.a.createElement(M.b, {
 						displayText: s.fbt._("Copy My Wallet Address", null, {
 							hk: "16YUPg"
 						}),
 						onClick: this.onCopyToClipboard
-					}), r.blockchainProvider && i.a.createElement(L.b, {
+					}), r.blockchainProvider && i.a.createElement(M.b, {
 						displayText: s.fbt._("Remove My Wallet", null, {
 							hk: "1rH7ul"
 						}),
 						onClick: this.onRemoveMyWallet
-					}), i.a.createElement(L.b, {
+					}), i.a.createElement(M.b, {
 						displayText: s.fbt._("Track {tokenName} in MetaMask", [s.fbt._param("tokenName", r.name)], {
 							hk: "qDCic"
 						}),
@@ -533,7 +533,7 @@
 					})))) : null
 				}
 			}
-			const Z = Object(b.c)({
+			const $ = Object(b.c)({
 					dropdownIsOpen: Object(B.b)(H),
 					isEthereumProvider: (e, t) => {
 						let {
@@ -548,7 +548,7 @@
 						return Object(l.b)(e, n)
 					}
 				}),
-				q = Object(a.b)(Z, (e, t) => ({
+				Z = Object(a.b)($, (e, t) => ({
 					onGovernanceError: t => {
 						Object(I.a)(e, t)
 					},
@@ -566,7 +566,7 @@
 						}))
 					}
 				}));
-			var Y = Object(S.b)(q($)),
+			var Y = Object(S.b)(Z(q)),
 				Q = n("./src/reddit/icons/svgs/QuarantineWarning/index.tsx"),
 				X = n("./src/reddit/components/Governance/CommunityCard/CommunityTokens/Risk/index.m.less"),
 				J = n.n(X);
@@ -831,20 +831,22 @@
 				fbt: Se
 			} = n("./node_modules/fbt/lib/FbtPublic.js");
 
-			function Me(e) {
+			function Le(e) {
 				const [t, n] = Object(we.a)("MAINNET_ANNOUNCEMENT", !1), r = Object(a.d)(), {
 					openModal: s
 				} = Object(je.a)({
 					subredditId: e.subredditId
 				}), {
-					isMainnet: c,
-					coinConversionEnabled: d,
-					customCrypto: p,
-					isEthereum: f,
-					pointsTotal: v,
-					transferEnabled: C
+					pointsDetails: c
+				} = Object(l.c)(), {
+					isMainnetEnabled: d,
+					coinConversionEnabled: p,
+					customCrypto: f,
+					isEthereum: v,
+					pointsTotal: C,
+					transferEnabled: h
 				} = Object(a.e)(Object(b.c)({
-					isMainnet: u.a,
+					isMainnetEnabled: u.a,
 					coinConversionEnabled: x.d.spPointsCoinConversion,
 					customCrypto: x.d.spCustomCrypto,
 					isEthereum: t => Object(l.a)(t, e.subredditId),
@@ -852,35 +854,37 @@
 					transferEnabled: x.d.spTipping
 				}));
 				Object(o.useEffect)(() => {
-					c && !t && (r(Object(xe.h)(ke.a.GOVERNANCE_MAINNET_LAUNCH)), n(!0))
-				}, [r, c, t, n]);
-				const h = C && !(p && f);
-				return (h || d) && v && "0" !== v ? i.a.createElement("div", {
+					d && !t && (r(Object(xe.h)(ke.a.GOVERNANCE_MAINNET_LAUNCH)), n(!0))
+				}, [r, d, t, n]);
+				const y = h && !(f && v);
+				return (y || p) && C && "0" !== C ? i.a.createElement("div", {
 					className: e.className
 				}, i.a.createElement(Ce, null, Se._("Use Points", null, {
 					hk: "2Mco3v"
-				})), h && i.a.createElement(Ne.a, {
+				})), y && i.a.createElement(Ne.a, {
 					onClick: () => r(Object(E.f)())
 				}, i.a.createElement(Ie.a, {
 					className: Pe.a.icon
-				}), Se._("Transfer", null, {
-					hk: "1MQW1Y"
-				})), d && i.a.createElement(Ne.a, {
+				}), d && (null == c ? void 0 : c.name) ? Se._("Tip {Subreddit community point name}", [Se._param("Subreddit community point name", c.name)], {
+					hk: "3CjOpO"
+				}) : Se._("Tip", null, {
+					hk: "7qTYq"
+				})), p && i.a.createElement(Ne.a, {
 					onClick: () => r(Object(xe.h)(ke.a.CONVERT_TO_COINS))
 				}, i.a.createElement(Ae.a, {
 					className: Pe.a.icon
 				}), Se._("Convert to Reddit Coins", null, {
 					hk: "lqkYM"
-				})), c && i.a.createElement(Ne.a, {
+				})), d && i.a.createElement(Ne.a, {
 					onClick: s
 				}, i.a.createElement(_.a, {
 					className: Pe.a.eth
-				}), Se._("Get ETH for network fees", null, {
-					hk: "4ApVF6"
+				}), Se._("Get Gas Funds for Network Fees", null, {
+					hk: "1uR5ws"
 				}))) : null
 			}
-			var Le = n("./src/reddit/components/Governance/CommunityCard/index.m.less"),
-				Ge = n.n(Le);
+			var Me = n("./src/reddit/components/Governance/CommunityCard/index.m.less"),
+				Ge = n.n(Me);
 			const Re = Object(b.c)({
 				isMainnet: u.a,
 				distribution: (e, t) => e.subreddits.gov.distributions[t.subredditId],
@@ -912,7 +916,7 @@
 					pointsDetails: r,
 					subredditId: o,
 					wallet: a
-				}), i.a.createElement(Me, {
+				}), i.a.createElement(Le, {
 					className: Object(c.a)(Ge.a.section, {
 						[Ge.a.noborder]: e.isMainnet
 					}),
@@ -1960,4 +1964,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Governance-CommunityCard.5108402820fd1d4b2574.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Governance-CommunityCard.1a709fa14d4ab1605b37.js.map

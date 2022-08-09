@@ -1,14 +1,15 @@
-// https://www.redditstatic.com/desktop2x/GovernanceMainnetAnnouncementModal.8c3eeba787e333e16f49.js
-// Retrieved at 5/10/2022, 2:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/GovernanceMainnetAnnouncementModal.77515b243e6bc23640bd.js
+// Retrieved at 8/9/2022, 7:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["GovernanceMainnetAnnouncementModal"], {
 		"./src/reddit/components/Governance/MainnetAnnouncementModal/index.m.less": function(e, n, t) {
 			e.exports = {
-				button: "P6dKOfva0-fnTfkks94qX",
 				grid: "_3Fm4EGLukJY8K8iFJ8YaAd",
 				image: "_8aRgFxhH3EC-RyHoBOOEq",
+				wideImage: "_2o7zupK1z2p-WQ2ooPne4H",
 				sectionHead: "_27ze5qGLaBk_B9-LoDiFhy",
-				text: "_2qH2Y444dCM0TLkkJlmdnE"
+				text: "_2qH2Y444dCM0TLkkJlmdnE",
+				button: "P6dKOfva0-fnTfkks94qX"
 			}
 		},
 		"./src/reddit/components/Governance/MainnetAnnouncementModal/index.tsx": function(e, n, t) {
@@ -26,18 +27,18 @@
 				u = t("./src/reddit/components/Governance/ModalFrame/index.tsx"),
 				v = t("./src/reddit/components/Governance/MainnetAnnouncementModal/index.m.less"),
 				x = t.n(v);
-			const f = e => `${r.a.assetPath}/img/communityPoints/${e}.png`;
+			const h = e => `${r.a.assetPath}/img/communityPoints/${e}.png`;
 			n.default = Object(i.a)((function() {
 				const e = Object(o.d)();
 				return c.a.createElement(u.a, {
-					title: a.fbt._("Points are Now on Main Net", null, {
-						hk: "3P9Cs2"
+					title: a.fbt._("Community Points are now on Mainnet", null, {
+						hk: "476od9"
 					})
 				}, c.a.createElement("div", {
 					className: x.a.grid
 				}, c.a.createElement("img", {
 					className: x.a.image,
-					src: f("fees-1")
+					src: h("mainnet-announcement-1")
 				}), c.a.createElement("div", {
 					className: x.a.section
 				}, c.a.createElement("div", {
@@ -46,11 +47,11 @@
 					hk: "1vjB0J"
 				})), c.a.createElement("div", {
 					className: x.a.text
-				}, a.fbt._("Community Points are now linked to the main Ethereum network. This makes them more secure and useful.", null, {
-					hk: "2hibK9"
+				}, a.fbt._("Points are now linked to the main Ethereum network. This makes them more secure and useful, but also means network fees have to be paid.", null, {
+					hk: "4a44qF"
 				}))), c.a.createElement("img", {
 					className: x.a.image,
-					src: f("fees-2")
+					src: h("mainnet-announcement-2")
 				}), c.a.createElement("div", {
 					className: x.a.section
 				}, c.a.createElement("div", {
@@ -59,21 +60,21 @@
 					hk: "2eNmKO"
 				})), c.a.createElement("div", {
 					className: x.a.text
-				}, a.fbt._("Earning Points and spending them on premium features like Special Memberships will not cost transaction fees for now.", null, {
-					hk: "2yfrZ2"
+				}, a.fbt._("You can earn Points and spend them on premium features like Special Memberships. Reddit pays network fees for these transactions.", null, {
+					hk: "33wZY3"
 				}))), c.a.createElement("img", {
-					className: x.a.image,
-					src: f("fees-4")
+					className: x.a.wideImage,
+					src: h("network-fees-4")
 				}), c.a.createElement("div", {
 					className: x.a.section
 				}, c.a.createElement("div", {
 					className: x.a.sectionHead
-				}, a.fbt._("Transfers require network fees", null, {
-					hk: "3ueEXR"
+				}, a.fbt._("Tips require network fees", null, {
+					hk: "4kwupF"
 				})), c.a.createElement("div", {
 					className: x.a.text
-				}, a.fbt._("Tipping or transferring Points on mainnet requires fees to the blockchain network. You can purchase the necessary crypto to pay these fees via a 3rd party provider through the community sidecard.", null, {
-					hk: "3vPZmA"
+				}, a.fbt._("Tipping Points on mainnet requires fees to the blockchain network. You can purchase the necessary crypto to pay these fees via FTX through the community sidecard.", null, {
+					hk: "4vaHIQ"
 				})))), c.a.createElement(m.a, {
 					className: x.a.button,
 					priority: m.c.Secondary,
@@ -178,4 +179,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/GovernanceMainnetAnnouncementModal.8c3eeba787e333e16f49.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/GovernanceMainnetAnnouncementModal.77515b243e6bc23640bd.js.map
