@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/OnboardingModal.612d3fd77cb3cf2b8949.js
-// Retrieved at 8/9/2022, 12:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/OnboardingModal.c5715a4cdda2fef55e84.js
+// Retrieved at 8/9/2022, 6:30:12 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["OnboardingModal"], {
 		"./node_modules/lodash/_baseRange.js": function(e, t) {
@@ -310,9 +310,9 @@
 			})), n.d(t, "frontpageReloaded", (function() {
 				return Ge
 			})), n.d(t, "morePostsPending", (function() {
-				return Le
-			})), n.d(t, "morePostsLoaded", (function() {
 				return Pe
+			})), n.d(t, "morePostsLoaded", (function() {
+				return Le
 			})), n.d(t, "morePostsFailed", (function() {
 				return Me
 			})), n.d(t, "morePostsRequested", (function() {
@@ -357,8 +357,8 @@
 				A = n("./src/reddit/selectors/experiments/onboarding.ts"),
 				F = n("./src/reddit/selectors/platform.ts"),
 				G = n("./src/reddit/selectors/user.ts"),
-				L = n("./src/redditGQL/operations/Frontpage.json"),
-				P = n("./src/redditGQL/types.ts"),
+				P = n("./src/redditGQL/operations/Frontpage.json"),
+				L = n("./src/redditGQL/types.ts"),
 				M = n("./src/lib/ads/session-signals.ts"),
 				B = n("./src/lib/initializeClient/installReducer.ts"),
 				D = n("./src/reddit/reducers/features/marketplace/index.ts");
@@ -396,7 +396,7 @@
 						},
 						forceGeopopular: !0,
 						includeCommunityDUs: !1,
-						includeInterestTopics: !!p && !Object(b.fg)(p),
+						includeInterestTopics: !!p && !Object(b.gg)(p),
 						includeFeaturedAnnouncements: !0,
 						includeLiveEvents: !0,
 						includeIdentity: h && !(null === (r = null === (n = e.user.account) || void 0 === n ? void 0 : n.karma) || void 0 === r ? void 0 : r.total),
@@ -408,14 +408,14 @@
 							variant: null == v ? void 0 : v.toLowerCase()
 						}
 					};
-					return O ? (_.sort = P.x.Best, _.feedRankingContext.variant = Object(R.b)(e)) : l && (_.sort = l.toUpperCase()), u && (_.range = u.toUpperCase()), a ? _.pageSize = Object(g.a)(i) : d && (_.pageSize = d), x && x.ad && (_.forceAds = {
+					return O ? (_.sort = L.x.Best, _.feedRankingContext.variant = Object(R.b)(e)) : l && (_.sort = l.toUpperCase()), u && (_.range = u.toUpperCase()), a ? _.pageSize = Object(g.a)(i) : d && (_.pageSize = d), x && x.ad && (_.forceAds = {
 						ad: x.ad
 					}), s && (_.after = Object(c.a)(s)), _
 				},
 				q = async (e, t, n, r) => {
 					const s = Date.now(),
 						o = await ((e, t) => Object(u.a)(e, {
-							...L,
+							...P,
 							variables: t
 						}, {
 							traceRequestName: "get_frontpage"
@@ -740,7 +740,7 @@
 					const r = n(),
 						s = r.platform.currentPage.routeMatch.match;
 					Object(ie.o)(r) || Object(ie.u)(r) || (e || t(Fe()), await t(Ae(s, !0)))
-				}, Le = Object(de.a)(je.g), Pe = Object(de.a)(je.f), Me = Object(de.a)(je.e), Be = e => async (t, n, r) => {
+				}, Pe = Object(de.a)(je.g), Le = Object(de.a)(je.f), Me = Object(de.a)(je.e), Be = e => async (t, n, r) => {
 					let {
 						gqlContext: s
 					} = r;
@@ -759,7 +759,7 @@
 							r = i.listings.postOrder.fetchedTokens,
 							c = !(!r[m] || !r[m][p.token]);
 						if (!e && !c) {
-							t(Le({
+							t(Pe({
 								key: m,
 								fetchedToken: p.token
 							}));
@@ -789,7 +789,7 @@
 									...h.body,
 									...Object(_e.a)(i, m, h.body)
 								};
-							if (h.ok) t(Pe({
+							if (h.ok) t(Le({
 								key: m,
 								fetchedToken: p.token,
 								meta: i.meta,
@@ -1130,8 +1130,8 @@
 					definedGender: null,
 					genderCategory: w.a.OPT_OUT
 				},
-				L = e => e === w.a.USER_DEFINED;
-			var P = e => {
+				P = e => e === w.a.USER_DEFINED;
+			var L = e => {
 					let {
 						autoProgressGenderCollection: t,
 						isFlowImprovement: n,
@@ -1150,26 +1150,26 @@
 					const b = e => {
 							var t;
 							let n = null;
-							return L(e) && (n = (null === (t = d.current) || void 0 === t ? void 0 : t.value) || "", p(n)), {
+							return P(e) && (n = (null === (t = d.current) || void 0 === t ? void 0 : t.value) || "", p(n)), {
 								definedGender: n,
 								genderCategory: e
 							}
 						},
 						f = Object(o.useCallback)(e => {
 							var t;
-							i(Object(F.n)()), s(b(e)), L(e) && (null === (t = d.current) || void 0 === t || t.focus())
+							i(Object(F.n)()), s(b(e)), P(e) && (null === (t = d.current) || void 0 === t || t.focus())
 						}, [i, s]),
 						g = Object(o.useCallback)(e => {
 							f(e.value), e.focus()
 						}, [f]),
 						h = Object(o.useCallback)(e => {
-							if (!r || !L(r.genderCategory)) {
+							if (!r || !P(r.genderCategory)) {
 								const t = u.current[e];
 								t && f(t.value)
 							}
 						}, [f, r]),
 						v = (e, o) => {
-							const i = L(e.key);
+							const i = P(e.key);
 							return a.a.createElement("label", {
 								key: e.key
 							}, a.a.createElement("input", {
@@ -1700,7 +1700,7 @@
 				return a.a.createElement("div", {
 					className: `\n      ${te.a.SelectedComponent}\n      ${t===_e.AVATAR&&(d?te.a.SelectedComponentAvatarImproved:te.a.SelectedComponentAvatar)}\n    `,
 					ref: x
-				}, t === _e.GENDER && a.a.createElement(P, {
+				}, t === _e.GENDER && a.a.createElement(L, {
 					autoProgressGenderCollection: s,
 					isFlowImprovement: d,
 					selectedGenderOption: h,
@@ -1740,8 +1740,8 @@
 				Ae = n("./src/reddit/endpoints/subreddit/local.ts"),
 				Fe = n("./src/reddit/endpoints/subreddit/subscriptions.ts");
 			var Ge = n("./src/reddit/models/Onboarding/index.ts"),
-				Le = n("./src/redditGQL/operations/InterestTopicsByIds.json");
-			const Pe = async (e, t, n) => {
+				Pe = n("./src/redditGQL/operations/InterestTopicsByIds.json");
+			const Le = async (e, t, n) => {
 				const r = await ((e, t, n) => {
 					const r = {
 						topicIds: [],
@@ -1751,7 +1751,7 @@
 						...n
 					};
 					return Object(Se.a)(e, {
-						...Le,
+						...Pe,
 						variables: r
 					})
 				})(e(), t, {
@@ -1942,7 +1942,7 @@
 				} = e, r = Object(i.d)(), s = Object(O.a)(), c = Object(i.e)(Je.a), f = ct(c), g = f ? _e.INTERESTS : _e.GENDER, [h, v] = Object(o.useState)(g), E = Object(i.e)(Ye.a), [C, j] = Object(o.useState)(null), I = Object(i.e)(nt.a), [k, y] = Object(o.useState)(f), [N, T] = Object(o.useState)(!1), A = {
 					topics: [],
 					schemeName: void 0
-				}, [P, M] = Object(o.useState)(A), [B, V] = Object(o.useState)(!1), [q, W] = Object(o.useState)(ct(c) && (null == c ? void 0 : c.selectedInterests) || {}), [H, Q] = Object(o.useState)(!1), [z, U] = Object(o.useState)([]), [Z, K] = Object(o.useState)([]), [J, X] = Object(o.useState)({}), [Y, $] = Object(o.useState)(0), {
+				}, [L, M] = Object(o.useState)(A), [B, V] = Object(o.useState)(!1), [q, W] = Object(o.useState)(ct(c) && (null == c ? void 0 : c.selectedInterests) || {}), [H, Q] = Object(o.useState)(!1), [z, U] = Object(o.useState)([]), [Z, K] = Object(o.useState)([]), [J, X] = Object(o.useState)({}), [Y, $] = Object(o.useState)(0), {
 					avatarImage: ee,
 					fetchRandomAvatar: ne,
 					saveAvatar: re
@@ -1980,9 +1980,9 @@
 					ie = Object(i.e)(rt.S),
 					ce = Object(i.e)(tt.g),
 					de = Object(i.e)(et.a),
-					le = de === Ie.Of.CloseOnboarding,
-					ue = de === Ie.Of.SkipTopicSelection,
-					me = de === Ie.Of.SmartSignal,
+					le = de === Ie.Pf.CloseOnboarding,
+					ue = de === Ie.Pf.SkipTopicSelection,
+					me = de === Ie.Pf.SmartSignal,
 					pe = Object(o.useCallback)(() => {
 						r(Object(p.g)(ke.a.ONBOARDING_MODAL_D2X)), ae && r(Object(b.g)()), f && (s(Object(F.t)()), Object(Ue.a)()), ce && ie && r(Object(u.startChangeUsernameFlow)())
 					}, [r, ie, ce, f, ae, s]),
@@ -1996,7 +1996,7 @@
 						const e = Object.keys(q).filter(e => 0 === q[e].length || !q[e].find(e => q[e]));
 						U([]), e.length && async function() {
 							Q(!0);
-							const n = await Pe(t, se, e);
+							const n = await Le(t, se, e);
 							Q(!1), n && U(n)
 						}()
 					}, [t, q, se]),
@@ -2038,7 +2038,7 @@
 					}, [pe, s, h, Ee, ue, ne]),
 					Ae = Object.keys(J).length,
 					Fe = Object.keys(q).length,
-					Le = h === _e.GENDER && !(e => !!e && (!L(null == e ? void 0 : e.genderCategory) || !!(e.definedGender && e.definedGender.length <= w.b)))(C) || h === _e.INTERESTS && Fe < (f ? 1 : 3) || h === _e.COMMUNITIES && Ae < 1;
+					Pe = h === _e.GENDER && !(e => !!e && (!P(null == e ? void 0 : e.genderCategory) || !!(e.definedGender && e.definedGender.length <= w.b)))(C) || h === _e.INTERESTS && Fe < (f ? 1 : 3) || h === _e.COMMUNITIES && Ae < 1;
 				if (h === _e.CELEBRATION || h === _e.AVATAR && !Se) return a.a.createElement(S, null);
 				let Me;
 				f || le ? Me = a.a.createElement("button", {
@@ -2119,7 +2119,7 @@
 					avatarImage: ee,
 					communitiesByTopic: z,
 					fetchRandomAvatar: ne,
-					interests: P,
+					interests: L,
 					isFlowImprovement: E,
 					loadingCommunities: H,
 					loadingInterests: B,
@@ -2136,7 +2136,7 @@
 					})
 				}, a.a.createElement("button", {
 					className: `${te.a.continueButton} ${E&&te.a.continueButtonImproved}`,
-					disabled: Le,
+					disabled: Pe,
 					onClick: ye
 				}, it._("Continue", null, {
 					hk: "15wNPy"
@@ -2681,8 +2681,8 @@
 				A = n("./src/reddit/controls/Button/index.tsx"),
 				F = n("./src/reddit/layout/row/Inline/index.tsx"),
 				G = n("./src/reddit/models/Flair/index.ts"),
-				L = n("./src/reddit/selectors/tooltip.ts"),
-				P = n("./src/reddit/selectors/user.ts"),
+				P = n("./src/reddit/selectors/tooltip.ts"),
+				L = n("./src/reddit/selectors/user.ts"),
 				M = n("./src/reddit/components/Settings/shared/Widgets.m.less"),
 				B = n.n(M);
 
@@ -2781,7 +2781,7 @@
 				le = h.a.div("TickText", B.a),
 				ue = h.a.span("PreSubText", B.a),
 				me = Object(i.c)({
-					isNightModeOn: P.db
+					isNightModeOn: L.db
 				}),
 				pe = Object(o.b)(me)(e => s.a.createElement(K, {
 					last: e.last,
@@ -2869,7 +2869,7 @@
 					})
 				})))),
 				he = Object(i.c)({
-					isOpen: (e, t) => Object(L.b)(t.id)(e)
+					isOpen: (e, t) => Object(P.b)(t.id)(e)
 				}),
 				ve = Object(o.b)(he, (e, t) => ({
 					openDropdown: () => {
@@ -4025,13 +4025,13 @@
 			const o = e => {
 					return !(Object(s.c)(e, {
 						experimentEligibilitySelector: s.a,
-						experimentName: r.ne
-					}) === r.Gd)
+						experimentName: r.oe
+					}) === r.Hd)
 				},
 				a = e => Object(s.c)(e, {
 					experimentEligibilitySelector: s.a,
-					experimentName: r.oe
-				}) === r.Gd
+					experimentName: r.pe
+				}) === r.Hd
 		},
 		"./src/reddit/selectors/experiments/inAppNotification.ts": function(e, t, n) {
 			"use strict";
@@ -4201,4 +4201,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/OnboardingModal.612d3fd77cb3cf2b8949.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/OnboardingModal.c5715a4cdda2fef55e84.js.map

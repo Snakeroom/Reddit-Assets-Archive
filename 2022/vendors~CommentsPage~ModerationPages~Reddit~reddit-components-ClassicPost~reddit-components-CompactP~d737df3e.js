@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/vendors~CommentsPage~ModerationPages~Reddit~reddit-components-ClassicPost~reddit-components-CompactP~d737df3e.018ac3526130b46d3191.js
-// Retrieved at 7/18/2022, 10:40:06 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/vendors~CommentsPage~ModerationPages~Reddit~reddit-components-ClassicPost~reddit-components-CompactP~d737df3e.506a3ece88e0a905b7a3.js
+// Retrieved at 8/9/2022, 6:30:12 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["vendors~CommentsPage~ModerationPages~Reddit~reddit-components-ClassicPost~reddit-components-CompactP~d737df3e"], {
 		"./node_modules/@reddit/i18n-tools/runtime/helpers/locale/index.js": function(e, t, r) {
@@ -332,7 +332,7 @@
 		"./node_modules/@researchgate/react-intersection-observer/lib/es/index.js": function(e, t, r) {
 			"use strict";
 			r.d(t, "a", (function() {
-				return E
+				return k
 			}));
 			var n = r("./node_modules/react/index.js"),
 				o = r.n(n),
@@ -375,15 +375,15 @@
 				return null
 			}
 
-			function d(e, t) {
+			function f(e, t) {
 				for (var r = 0; r < e.length; r++) {
 					var n = u(t, e[r]);
 					n && n.handleChange(e[r])
 				}
 			}
 
-			function f(e) {
-				return c(e) || new IntersectionObserver(d, e)
+			function d(e) {
+				return c(e) || new IntersectionObserver(f, e)
 			}
 			var p = r("./node_modules/invariant/browser.js"),
 				h = r.n(p),
@@ -418,19 +418,19 @@
 			}
 			var y = ["root", "rootMargin", "threshold"],
 				O = ["root", "rootMargin", "threshold", "disabled"],
-				x = Object.prototype,
-				w = x.hasOwnProperty,
-				j = x.toString,
+				j = Object.prototype,
+				w = j.hasOwnProperty,
+				x = j.toString,
 				_ = function(e) {
 					return y.reduce((function(t, r) {
 						if (w.call(e, r)) {
-							var n = "root" === r && "[object String]" === j.call(e[r]);
+							var n = "root" === r && "[object String]" === x.call(e[r]);
 							t[r] = n ? document.querySelector(e[r]) : e[r]
 						}
 						return t
 					}), {})
 				},
-				E = function(e) {
+				k = function(e) {
 					var t, r;
 
 					function n() {
@@ -445,7 +445,7 @@
 							}
 							t.targetNode = e && Object(a.findDOMNode)(e)
 						})), g(v(t), "observe", (function() {
-							return null != t.props.children && !t.props.disabled && (t.targetNode ? (t.observer = f(_(t.props)), t.target = t.targetNode, e = v(t), l.has(e.observer) || l.set(e.observer, new Set), l.get(e.observer).add(e), e.observer.observe(e.target), !0) : (m.errorReporter("ReactIntersectionObserver: Can't find DOM node in the provided children. Make sure to render at least one DOM node in the tree."), !1));
+							return null != t.props.children && !t.props.disabled && (t.targetNode ? (t.observer = d(_(t.props)), t.target = t.targetNode, e = v(t), l.has(e.observer) || l.set(e.observer, new Set), l.get(e.observer).add(e), e.observer.observe(e.target), !0) : (m.errorReporter("ReactIntersectionObserver: Can't find DOM node in the provided children. Make sure to render at least one DOM node in the tree."), !1));
 							var e
 						})), g(v(t), "unobserve", (function(e) {
 							! function(e, t) {
@@ -481,7 +481,7 @@
 						}) : null
 					}, n
 				}(o.a.Component);
-			g(E, "displayName", "IntersectionObserver")
+			g(k, "displayName", "IntersectionObserver")
 		},
 		"./node_modules/@researchgate/react-intersection-observer/node_modules/prop-types/factoryWithThrowingShims.js": function(e, t, r) {
 			"use strict";
@@ -533,6 +533,312 @@
 		"./node_modules/@researchgate/react-intersection-observer/node_modules/prop-types/lib/ReactPropTypesSecret.js": function(e, t, r) {
 			"use strict";
 			e.exports = "SECRET_DO_NOT_PASS_THIS_OR_YOU_WILL_BE_FIRED"
+		},
+		"./node_modules/deep-diff/index.js": function(e, t, r) {
+			var n, o;
+			o = function(e) {
+				var t = ["N", "E", "A", "D"];
+
+				function r(e, t) {
+					e.super_ = t, e.prototype = Object.create(t.prototype, {
+						constructor: {
+							value: e,
+							enumerable: !1,
+							writable: !0,
+							configurable: !0
+						}
+					})
+				}
+
+				function n(e, t) {
+					Object.defineProperty(this, "kind", {
+						value: e,
+						enumerable: !0
+					}), t && t.length && Object.defineProperty(this, "path", {
+						value: t,
+						enumerable: !0
+					})
+				}
+
+				function o(e, t, r) {
+					o.super_.call(this, "E", e), Object.defineProperty(this, "lhs", {
+						value: t,
+						enumerable: !0
+					}), Object.defineProperty(this, "rhs", {
+						value: r,
+						enumerable: !0
+					})
+				}
+
+				function a(e, t) {
+					a.super_.call(this, "N", e), Object.defineProperty(this, "rhs", {
+						value: t,
+						enumerable: !0
+					})
+				}
+
+				function i(e, t) {
+					i.super_.call(this, "D", e), Object.defineProperty(this, "lhs", {
+						value: t,
+						enumerable: !0
+					})
+				}
+
+				function s(e, t, r) {
+					s.super_.call(this, "A", e), Object.defineProperty(this, "index", {
+						value: t,
+						enumerable: !0
+					}), Object.defineProperty(this, "item", {
+						value: r,
+						enumerable: !0
+					})
+				}
+
+				function l(e, t, r) {
+					var n = e.slice((r || t) + 1 || e.length);
+					return e.length = t < 0 ? e.length + t : t, e.push.apply(e, n), e
+				}
+
+				function c(e) {
+					var t = typeof e;
+					return "object" !== t ? t : e === Math ? "math" : null === e ? "null" : Array.isArray(e) ? "array" : "[object Date]" === Object.prototype.toString.call(e) ? "date" : "function" == typeof e.toString && /^\/.*\//.test(e.toString()) ? "regexp" : "object"
+				}
+
+				function u(e) {
+					var t = 0;
+					if (0 === e.length) return t;
+					for (var r = 0; r < e.length; r++) t = (t << 5) - t + e.charCodeAt(r), t &= t;
+					return t
+				}
+
+				function f(e) {
+					var t = 0,
+						r = c(e);
+					if ("array" === r) return e.forEach((function(e) {
+						t += f(e)
+					})), t + u("[type: array, hash: " + t + "]");
+					if ("object" === r) {
+						for (var n in e)
+							if (e.hasOwnProperty(n)) {
+								var o = "[ type: object, key: " + n + ", value hash: " + f(e[n]) + "]";
+								t += u(o)
+							} return t
+					}
+					return t + u("[ type: " + r + " ; value: " + e + "]")
+				}
+
+				function d(e, t, r, n, l, u, p, h) {
+					r = r || [], p = p || [];
+					var b = (l = l || []).slice(0);
+					if (null != u) {
+						if (n) {
+							if ("function" == typeof n && n(b, u)) return;
+							if ("object" == typeof n) {
+								if (n.prefilter && n.prefilter(b, u)) return;
+								if (n.normalize) {
+									var m = n.normalize(b, u, e, t);
+									m && (e = m[0], t = m[1])
+								}
+							}
+						}
+						b.push(u)
+					}
+					"regexp" === c(e) && "regexp" === c(t) && (e = e.toString(), t = t.toString());
+					var v, g, y, O, j = typeof e,
+						w = typeof t,
+						x = "undefined" !== j || p && p.length > 0 && p[p.length - 1].lhs && Object.getOwnPropertyDescriptor(p[p.length - 1].lhs, u),
+						_ = "undefined" !== w || p && p.length > 0 && p[p.length - 1].rhs && Object.getOwnPropertyDescriptor(p[p.length - 1].rhs, u);
+					if (!x && _) r.push(new a(b, t));
+					else if (!_ && x) r.push(new i(b, e));
+					else if (c(e) !== c(t)) r.push(new o(b, e, t));
+					else if ("date" === c(e) && e - t != 0) r.push(new o(b, e, t));
+					else if ("object" === j && null !== e && null !== t) {
+						for (v = p.length - 1; v > -1; --v)
+							if (p[v].lhs === e) {
+								O = !0;
+								break
+							} if (O) e !== t && r.push(new o(b, e, t));
+						else {
+							if (p.push({
+									lhs: e,
+									rhs: t
+								}), Array.isArray(e)) {
+								for (h && (e.sort((function(e, t) {
+										return f(e) - f(t)
+									})), t.sort((function(e, t) {
+										return f(e) - f(t)
+									}))), v = t.length - 1, g = e.length - 1; v > g;) r.push(new s(b, v, new a(void 0, t[v--])));
+								for (; g > v;) r.push(new s(b, g, new i(void 0, e[g--])));
+								for (; v >= 0; --v) d(e[v], t[v], r, n, b, v, p, h)
+							} else {
+								var k = Object.keys(e),
+									E = Object.keys(t);
+								for (v = 0; v < k.length; ++v) y = k[v], (O = E.indexOf(y)) >= 0 ? (d(e[y], t[y], r, n, b, y, p, h), E[O] = null) : d(e[y], void 0, r, n, b, y, p, h);
+								for (v = 0; v < E.length; ++v)(y = E[v]) && d(void 0, t[y], r, n, b, y, p, h)
+							}
+							p.length = p.length - 1
+						}
+					} else e !== t && ("number" === j && isNaN(e) && isNaN(t) || r.push(new o(b, e, t)))
+				}
+
+				function p(e, t, r, n, o) {
+					var a = [];
+					if (d(e, t, a, n, null, null, null, o), r)
+						for (var i = 0; i < a.length; ++i) r(a[i]);
+					return a
+				}
+
+				function h(e, t, r, n) {
+					var o = p(e, t, n ? function(e) {
+						e && n.push(e)
+					} : void 0, r);
+					return n || (o.length ? o : void 0)
+				}
+
+				function b(e, r, n) {
+					if (void 0 === n && r && ~t.indexOf(r.kind) && (n = r), e && n && n.kind) {
+						for (var o = e, a = -1, i = n.path ? n.path.length - 1 : 0; ++a < i;) void 0 === o[n.path[a]] && (o[n.path[a]] = void 0 !== n.path[a + 1] && "number" == typeof n.path[a + 1] ? [] : {}), o = o[n.path[a]];
+						switch (n.kind) {
+							case "A":
+								n.path && void 0 === o[n.path[a]] && (o[n.path[a]] = []),
+									function e(t, r, n) {
+										if (n.path && n.path.length) {
+											var o, a = t[r],
+												i = n.path.length - 1;
+											for (o = 0; o < i; o++) a = a[n.path[o]];
+											switch (n.kind) {
+												case "A":
+													e(a[n.path[o]], n.index, n.item);
+													break;
+												case "D":
+													delete a[n.path[o]];
+													break;
+												case "E":
+												case "N":
+													a[n.path[o]] = n.rhs
+											}
+										} else switch (n.kind) {
+											case "A":
+												e(t[r], n.index, n.item);
+												break;
+											case "D":
+												t = l(t, r);
+												break;
+											case "E":
+											case "N":
+												t[r] = n.rhs
+										}
+										return t
+									}(n.path ? o[n.path[a]] : o, n.index, n.item);
+								break;
+							case "D":
+								delete o[n.path[a]];
+								break;
+							case "E":
+							case "N":
+								o[n.path[a]] = n.rhs
+						}
+					}
+				}
+				return r(o, n), r(a, n), r(i, n), r(s, n), Object.defineProperties(h, {
+					diff: {
+						value: h,
+						enumerable: !0
+					},
+					orderIndependentDiff: {
+						value: function(e, t, r, n) {
+							var o = n ? function(e) {
+									e && n.push(e)
+								} : void 0,
+								a = p(e, t, o, r, !0);
+							return n || (a.length ? a : void 0)
+						},
+						enumerable: !0
+					},
+					observableDiff: {
+						value: p,
+						enumerable: !0
+					},
+					orderIndependentObservableDiff: {
+						value: function(e, t, r, n, o, a, i) {
+							return d(e, t, r, n, o, a, i, !0)
+						},
+						enumerable: !0
+					},
+					orderIndepHash: {
+						value: f,
+						enumerable: !0
+					},
+					applyDiff: {
+						value: function(e, t, r) {
+							e && t && p(e, t, (function(n) {
+								r && !r(e, t, n) || b(e, t, n)
+							}))
+						},
+						enumerable: !0
+					},
+					applyChange: {
+						value: b,
+						enumerable: !0
+					},
+					revertChange: {
+						value: function(e, t, r) {
+							if (e && t && r && r.kind) {
+								var n, o, a = e;
+								for (o = r.path.length - 1, n = 0; n < o; n++) void 0 === a[r.path[n]] && (a[r.path[n]] = {}), a = a[r.path[n]];
+								switch (r.kind) {
+									case "A":
+										! function e(t, r, n) {
+											if (n.path && n.path.length) {
+												var o, a = t[r],
+													i = n.path.length - 1;
+												for (o = 0; o < i; o++) a = a[n.path[o]];
+												switch (n.kind) {
+													case "A":
+														e(a[n.path[o]], n.index, n.item);
+														break;
+													case "D":
+													case "E":
+														a[n.path[o]] = n.lhs;
+														break;
+													case "N":
+														delete a[n.path[o]]
+												}
+											} else switch (n.kind) {
+												case "A":
+													e(t[r], n.index, n.item);
+													break;
+												case "D":
+												case "E":
+													t[r] = n.lhs;
+													break;
+												case "N":
+													t = l(t, r)
+											}
+											return t
+										}(a[r.path[n]], r.index, r.item);
+										break;
+									case "D":
+									case "E":
+										a[r.path[n]] = r.lhs;
+										break;
+									case "N":
+										delete a[r.path[n]]
+								}
+							}
+						},
+						enumerable: !0
+					},
+					isConflict: {
+						value: function() {
+							return "undefined" != typeof $conflict
+						},
+						enumerable: !0
+					}
+				}), h.DeepDiff = h, e && (e.DeepDiff = h), h
+			}(this), void 0 === (n = function() {
+				return o
+			}.call(t, r, t, e)) || (e.exports = n)
 		},
 		"./node_modules/lodash/_arrayEvery.js": function(e, t) {
 			e.exports = function(e, t) {
@@ -643,16 +949,16 @@
 				return (s(e) ? e.ownerDocument : e.document).documentElement
 			}
 
-			function d(e) {
+			function f(e) {
 				return o(u(e)).left + i(e).scrollLeft
 			}
 
-			function f(e) {
+			function d(e) {
 				return a(e).getComputedStyle(e)
 			}
 
 			function p(e) {
-				var t = f(e),
+				var t = d(e),
 					r = t.overflow,
 					n = t.overflowX,
 					o = t.overflowY;
@@ -661,7 +967,7 @@
 
 			function h(e, t, r) {
 				void 0 === r && (r = !1);
-				var n, s, f = u(t),
+				var n, s, d = u(t),
 					h = o(e),
 					b = l(t),
 					m = {
@@ -672,10 +978,10 @@
 						x: 0,
 						y: 0
 					};
-				return (b || !b && !r) && (("body" !== c(t) || p(f)) && (m = (n = t) !== a(n) && l(n) ? {
+				return (b || !b && !r) && (("body" !== c(t) || p(d)) && (m = (n = t) !== a(n) && l(n) ? {
 					scrollLeft: (s = n).scrollLeft,
 					scrollTop: s.scrollTop
-				} : i(n)), l(t) ? ((v = o(t)).x += t.clientLeft, v.y += t.clientTop) : f && (v.x = d(f))), {
+				} : i(n)), l(t) ? ((v = o(t)).x += t.clientLeft, v.y += t.clientTop) : d && (v.x = f(d))), {
 					x: h.left + m.scrollLeft - v.x,
 					y: h.top + m.scrollTop - v.y,
 					width: h.width,
@@ -713,41 +1019,41 @@
 			}
 
 			function y(e) {
-				return l(e) && "fixed" !== f(e).position ? e.offsetParent : null
+				return l(e) && "fixed" !== d(e).position ? e.offsetParent : null
 			}
 
 			function O(e) {
-				for (var t = a(e), r = y(e); r && g(r) && "static" === f(r).position;) r = y(r);
-				return r && "body" === c(r) && "static" === f(r).position ? t : r || function(e) {
+				for (var t = a(e), r = y(e); r && g(r) && "static" === d(r).position;) r = y(r);
+				return r && "body" === c(r) && "static" === d(r).position ? t : r || function(e) {
 					for (var t = m(e); l(t) && ["html", "body"].indexOf(c(t)) < 0;) {
-						var r = f(t);
+						var r = d(t);
 						if ("none" !== r.transform || "none" !== r.perspective || "auto" !== r.willChange) return t;
 						t = t.parentNode
 					}
 					return null
 				}(e) || t
 			}
-			var x = "top",
+			var j = "top",
 				w = "bottom",
-				j = "right",
+				x = "right",
 				_ = "left",
-				E = "auto",
-				k = [x, w, j, _],
-				M = "start",
-				L = "end",
-				S = "clippingParents",
-				A = "viewport",
-				D = "popper",
-				N = "reference",
-				T = k.reduce((function(e, t) {
-					return e.concat([t + "-" + M, t + "-" + L])
+				k = "auto",
+				E = [j, w, x, _],
+				D = "start",
+				A = "end",
+				M = "clippingParents",
+				N = "viewport",
+				S = "popper",
+				L = "reference",
+				P = E.reduce((function(e, t) {
+					return e.concat([t + "-" + D, t + "-" + A])
 				}), []),
-				R = [].concat(k, [E]).reduce((function(e, t) {
-					return e.concat([t, t + "-" + M, t + "-" + L])
+				T = [].concat(E, [k]).reduce((function(e, t) {
+					return e.concat([t, t + "-" + D, t + "-" + A])
 				}), []),
-				P = ["beforeRead", "read", "afterRead", "beforeMain", "main", "afterMain", "beforeWrite", "write", "afterWrite"];
+				I = ["beforeRead", "read", "afterRead", "beforeMain", "main", "afterMain", "beforeWrite", "write", "afterWrite"];
 
-			function I(e) {
+			function R(e) {
 				var t = new Map,
 					r = new Set,
 					n = [];
@@ -764,13 +1070,13 @@
 					}(e)
 				})), n
 			}
-			var B = {
+			var C = {
 				placement: "bottom",
 				modifiers: [],
 				strategy: "absolute"
 			};
 
-			function C() {
+			function B() {
 				for (var e = arguments.length, t = new Array(e), r = 0; r < e; r++) t[r] = arguments[r];
 				return !t.some((function(e) {
 					return !(e && "function" == typeof e.getBoundingClientRect)
@@ -783,13 +1089,13 @@
 					r = t.defaultModifiers,
 					n = void 0 === r ? [] : r,
 					o = t.defaultOptions,
-					a = void 0 === o ? B : o;
+					a = void 0 === o ? C : o;
 				return function(e, t, r) {
 					void 0 === r && (r = a);
 					var o, i, l = {
 							placement: "bottom",
 							orderedModifiers: [],
-							options: Object.assign(Object.assign({}, B), a),
+							options: Object.assign(Object.assign({}, C), a),
 							modifiersData: {},
 							elements: {
 								reference: e,
@@ -800,16 +1106,16 @@
 						},
 						c = [],
 						u = !1,
-						d = {
+						f = {
 							state: l,
 							setOptions: function(r) {
-								f(), l.options = Object.assign(Object.assign(Object.assign({}, a), l.options), r), l.scrollParents = {
+								d(), l.options = Object.assign(Object.assign(Object.assign({}, a), l.options), r), l.scrollParents = {
 									reference: s(e) ? v(e) : e.contextElement ? v(e.contextElement) : [],
 									popper: v(t)
 								};
 								var o = function(e) {
-									var t = I(e);
-									return P.reduce((function(e, r) {
+									var t = R(e);
+									return I.reduce((function(e, r) {
 										return e.concat(t.filter((function(e) {
 											return e.phase === r
 										})))
@@ -837,19 +1143,19 @@
 										var a = o({
 											state: l,
 											name: t,
-											instance: d,
+											instance: f,
 											options: n
 										});
 										c.push(a || function() {})
 									}
-								})), d.update()
+								})), f.update()
 							},
 							forceUpdate: function() {
 								if (!u) {
 									var e = l.elements,
 										t = e.reference,
 										r = e.popper;
-									if (C(t, r)) {
+									if (B(t, r)) {
 										l.rects = {
 											reference: h(t, O(r), "fixed" === l.options.strategy),
 											popper: b(r)
@@ -867,7 +1173,7 @@
 													state: l,
 													options: s,
 													name: c,
-													instance: d
+													instance: f
 												}) || l)
 											} else l.reset = !1, n = -1
 									}
@@ -875,7 +1181,7 @@
 							},
 							update: (o = function() {
 								return new Promise((function(e) {
-									d.forceUpdate(), e(l)
+									f.forceUpdate(), e(l)
 								}))
 							}, function() {
 								return i || (i = new Promise((function(e) {
@@ -885,34 +1191,34 @@
 								}))), i
 							}),
 							destroy: function() {
-								f(), u = !0
+								d(), u = !0
 							}
 						};
-					if (!C(e, t)) return d;
+					if (!B(e, t)) return f;
 
-					function f() {
+					function d() {
 						c.forEach((function(e) {
 							return e()
 						})), c = []
 					}
-					return d.setOptions(r).then((function(e) {
+					return f.setOptions(r).then((function(e) {
 						!u && r.onFirstUpdate && r.onFirstUpdate(e)
-					})), d
+					})), f
 				}
 			}
 			var W = {
 				passive: !0
 			};
 
-			function H(e) {
+			function z(e) {
 				return e.split("-")[0]
 			}
 
-			function q(e) {
+			function H(e) {
 				return e.split("-")[1]
 			}
 
-			function z(e) {
+			function q(e) {
 				return ["top", "bottom"].indexOf(e) >= 0 ? "x" : "y"
 			}
 
@@ -920,12 +1226,12 @@
 				var t, r = e.reference,
 					n = e.element,
 					o = e.placement,
-					a = o ? H(o) : null,
-					i = o ? q(o) : null,
+					a = o ? z(o) : null,
+					i = o ? H(o) : null,
 					s = r.x + r.width / 2 - n.width / 2,
 					l = r.y + r.height / 2 - n.height / 2;
 				switch (a) {
-					case x:
+					case j:
 						t = {
 							x: s,
 							y: r.y - n.height
@@ -937,7 +1243,7 @@
 							y: r.y + r.height
 						};
 						break;
-					case j:
+					case x:
 						t = {
 							x: r.x + r.width,
 							y: l
@@ -955,14 +1261,14 @@
 							y: r.y
 						}
 				}
-				var c = a ? z(a) : null;
+				var c = a ? q(a) : null;
 				if (null != c) {
 					var u = "y" === c ? "height" : "width";
 					switch (i) {
-						case M:
+						case D:
 							t[c] = Math.floor(t[c]) - Math.floor(r[u] / 2 - n[u] / 2);
 							break;
-						case L:
+						case A:
 							t[c] = Math.floor(t[c]) + Math.ceil(r[u] / 2 - n[u] / 2)
 					}
 				}
@@ -983,7 +1289,7 @@
 					s = e.position,
 					l = e.gpuAcceleration,
 					c = e.adaptive,
-					d = function(e) {
+					f = function(e) {
 						var t = e.x,
 							r = e.y,
 							n = window.devicePixelRatio || 1;
@@ -992,21 +1298,21 @@
 							y: Math.round(r * n) / n || 0
 						}
 					}(i),
-					f = d.x,
-					p = d.y,
+					d = f.x,
+					p = f.y,
 					h = i.hasOwnProperty("x"),
 					b = i.hasOwnProperty("y"),
 					m = _,
-					v = x,
+					v = j,
 					g = window;
 				if (c) {
 					var y = O(r);
-					y === a(r) && (y = u(r)), o === x && (v = w, p -= y.clientHeight - n.height, p *= l ? 1 : -1), o === _ && (m = j, f -= y.clientWidth - n.width, f *= l ? 1 : -1)
+					y === a(r) && (y = u(r)), o === j && (v = w, p -= y.clientHeight - n.height, p *= l ? 1 : -1), o === _ && (m = x, d -= y.clientWidth - n.width, d *= l ? 1 : -1)
 				}
-				var E, k = Object.assign({
+				var k, E = Object.assign({
 					position: s
 				}, c && V);
-				return l ? Object.assign(Object.assign({}, k), {}, ((E = {})[v] = b ? "0" : "", E[m] = h ? "0" : "", E.transform = (g.devicePixelRatio || 1) < 2 ? "translate(" + f + "px, " + p + "px)" : "translate3d(" + f + "px, " + p + "px, 0)", E)) : Object.assign(Object.assign({}, k), {}, ((t = {})[v] = b ? p + "px" : "", t[m] = h ? f + "px" : "", t.transform = "", t))
+				return l ? Object.assign(Object.assign({}, E), {}, ((k = {})[v] = b ? "0" : "", k[m] = h ? "0" : "", k.transform = (g.devicePixelRatio || 1) < 2 ? "translate(" + d + "px, " + p + "px)" : "translate3d(" + d + "px, " + p + "px, 0)", k)) : Object.assign(Object.assign({}, E), {}, ((t = {})[v] = b ? p + "px" : "", t[m] = h ? d + "px" : "", t.transform = "", t))
 			}
 			var $ = {
 				left: "right",
@@ -1054,7 +1360,7 @@
 			}
 
 			function Q(e, t) {
-				return t === A ? J(function(e) {
+				return t === N ? J(function(e) {
 					var t = a(e),
 						r = u(e),
 						n = t.visualViewport,
@@ -1065,7 +1371,7 @@
 					return n && (o = n.width, i = n.height, /^((?!chrome|android).)*safari/i.test(navigator.userAgent) || (s = n.offsetLeft, l = n.offsetTop)), {
 						width: o,
 						height: i,
-						x: s + d(e),
+						x: s + f(e),
 						y: l
 					}
 				}(e)) : l(t) ? function(e) {
@@ -1077,9 +1383,9 @@
 						n = e.ownerDocument.body,
 						o = Math.max(t.scrollWidth, t.clientWidth, n ? n.scrollWidth : 0, n ? n.clientWidth : 0),
 						a = Math.max(t.scrollHeight, t.clientHeight, n ? n.scrollHeight : 0, n ? n.clientHeight : 0),
-						s = -r.scrollLeft + d(e),
+						s = -r.scrollLeft + f(e),
 						l = -r.scrollTop;
-					return "rtl" === f(n || t).direction && (s += Math.max(t.clientWidth, n ? n.clientWidth : 0) - o), {
+					return "rtl" === d(n || t).direction && (s += Math.max(t.clientWidth, n ? n.clientWidth : 0) - o), {
 						width: o,
 						height: a,
 						x: s,
@@ -1091,7 +1397,7 @@
 			function ee(e, t, r) {
 				var n = "clippingParents" === t ? function(e) {
 						var t = v(e),
-							r = ["absolute", "fixed"].indexOf(f(e).position) >= 0 && l(e) ? O(e) : e;
+							r = ["absolute", "fixed"].indexOf(d(e).position) >= 0 && l(e) ? O(e) : e;
 						return s(r) ? t.filter((function(e) {
 							return s(e) && Z(e, r)
 						})) : []
@@ -1126,46 +1432,46 @@
 					n = r.placement,
 					a = void 0 === n ? e.placement : n,
 					i = r.boundary,
-					l = void 0 === i ? S : i,
+					l = void 0 === i ? M : i,
 					c = r.rootBoundary,
-					d = void 0 === c ? A : c,
-					f = r.elementContext,
-					p = void 0 === f ? D : f,
+					f = void 0 === c ? N : c,
+					d = r.elementContext,
+					p = void 0 === d ? S : d,
 					h = r.altBoundary,
 					b = void 0 !== h && h,
 					m = r.padding,
 					v = void 0 === m ? 0 : m,
-					g = te("number" != typeof v ? v : re(v, k)),
-					y = p === D ? N : D,
+					g = te("number" != typeof v ? v : re(v, E)),
+					y = p === S ? L : S,
 					O = e.elements.reference,
 					_ = e.rects.popper,
-					E = e.elements[b ? y : p],
-					M = ee(s(E) ? E : E.contextElement || u(e.elements.popper), l, d),
-					L = o(O),
-					T = F({
-						reference: L,
+					k = e.elements[b ? y : p],
+					D = ee(s(k) ? k : k.contextElement || u(e.elements.popper), l, f),
+					A = o(O),
+					P = F({
+						reference: A,
 						element: _,
 						strategy: "absolute",
 						placement: a
 					}),
-					R = J(Object.assign(Object.assign({}, _), T)),
-					P = p === D ? R : L,
-					I = {
-						top: M.top - P.top + g.top,
-						bottom: P.bottom - M.bottom + g.bottom,
-						left: M.left - P.left + g.left,
-						right: P.right - M.right + g.right
+					T = J(Object.assign(Object.assign({}, _), P)),
+					I = p === S ? T : A,
+					R = {
+						top: D.top - I.top + g.top,
+						bottom: I.bottom - D.bottom + g.bottom,
+						left: D.left - I.left + g.left,
+						right: I.right - D.right + g.right
 					},
-					B = e.modifiersData.offset;
-				if (p === D && B) {
-					var C = B[a];
-					Object.keys(I).forEach((function(e) {
-						var t = [j, w].indexOf(e) >= 0 ? 1 : -1,
-							r = [x, w].indexOf(e) >= 0 ? "y" : "x";
-						I[e] += C[r] * t
+					C = e.modifiersData.offset;
+				if (p === S && C) {
+					var B = C[a];
+					Object.keys(R).forEach((function(e) {
+						var t = [x, w].indexOf(e) >= 0 ? 1 : -1,
+							r = [j, w].indexOf(e) >= 0 ? "y" : "x";
+						R[e] += B[r] * t
 					}))
 				}
-				return I
+				return R
 			}
 
 			function oe(e, t, r) {
@@ -1185,7 +1491,7 @@
 			}
 
 			function ie(e) {
-				return [x, j, w, _].some((function(t) {
+				return [j, x, w, _].some((function(t) {
 					return e[t] >= 0
 				}))
 			}
@@ -1242,7 +1548,7 @@
 								a = r.adaptive,
 								i = void 0 === a || a,
 								s = {
-									placement: H(t.placement),
+									placement: z(t.placement),
 									popper: t.elements.popper,
 									popperRect: t.rects.popper,
 									gpuAcceleration: o
@@ -1316,16 +1622,16 @@
 								n = e.name,
 								o = r.offset,
 								a = void 0 === o ? [0, 0] : o,
-								i = R.reduce((function(e, r) {
+								i = T.reduce((function(e, r) {
 									return e[r] = function(e, t, r) {
-										var n = H(e),
-											o = [_, x].indexOf(n) >= 0 ? -1 : 1,
+										var n = z(e),
+											o = [_, j].indexOf(n) >= 0 ? -1 : 1,
 											a = "function" == typeof r ? r(Object.assign(Object.assign({}, t), {}, {
 												placement: e
 											})) : r,
 											i = a[0],
 											s = a[1];
-										return i = i || 0, s = (s || 0) * o, [_, j].indexOf(n) >= 0 ? {
+										return i = i || 0, s = (s || 0) * o, [_, x].indexOf(n) >= 0 ? {
 											x: s,
 											y: i
 										} : {
@@ -1348,12 +1654,12 @@
 								r = e.options,
 								n = e.name;
 							if (!t.modifiersData[n]._skip) {
-								for (var o = r.mainAxis, a = void 0 === o || o, i = r.altAxis, s = void 0 === i || i, l = r.fallbackPlacements, c = r.padding, u = r.boundary, d = r.rootBoundary, f = r.altBoundary, p = r.flipVariations, h = void 0 === p || p, b = r.allowedAutoPlacements, m = t.options.placement, v = H(m), g = l || (v === m || !h ? [K(m)] : function(e) {
-										if (H(e) === E) return [];
+								for (var o = r.mainAxis, a = void 0 === o || o, i = r.altAxis, s = void 0 === i || i, l = r.fallbackPlacements, c = r.padding, u = r.boundary, f = r.rootBoundary, d = r.altBoundary, p = r.flipVariations, h = void 0 === p || p, b = r.allowedAutoPlacements, m = t.options.placement, v = z(m), g = l || (v === m || !h ? [K(m)] : function(e) {
+										if (z(e) === k) return [];
 										var t = K(e);
 										return [Y(e), t, Y(t)]
 									}(m)), y = [m].concat(g).reduce((function(e, r) {
-										return e.concat(H(r) === E ? function(e, t) {
+										return e.concat(z(r) === k ? function(e, t) {
 											void 0 === t && (t = {});
 											var r = t,
 												n = r.placement,
@@ -1362,11 +1668,11 @@
 												i = r.padding,
 												s = r.flipVariations,
 												l = r.allowedAutoPlacements,
-												c = void 0 === l ? R : l,
-												u = q(n),
-												d = (u ? s ? T : T.filter((function(e) {
-													return q(e) === u
-												})) : k).filter((function(e) {
+												c = void 0 === l ? T : l,
+												u = H(n),
+												f = (u ? s ? P : P.filter((function(e) {
+													return H(e) === u
+												})) : E).filter((function(e) {
 													return c.indexOf(e) >= 0
 												})).reduce((function(t, r) {
 													return t[r] = ne(e, {
@@ -1374,57 +1680,57 @@
 														boundary: o,
 														rootBoundary: a,
 														padding: i
-													})[H(r)], t
+													})[z(r)], t
 												}), {});
-											return Object.keys(d).sort((function(e, t) {
-												return d[e] - d[t]
+											return Object.keys(f).sort((function(e, t) {
+												return f[e] - f[t]
 											}))
 										}(t, {
 											placement: r,
 											boundary: u,
-											rootBoundary: d,
+											rootBoundary: f,
 											padding: c,
 											flipVariations: h,
 											allowedAutoPlacements: b
 										}) : r)
-									}), []), O = t.rects.reference, L = t.rects.popper, S = new Map, A = !0, D = y[0], N = 0; N < y.length; N++) {
-									var P = y[N],
-										I = H(P),
-										B = q(P) === M,
-										C = [x, w].indexOf(I) >= 0,
-										U = C ? "width" : "height",
+									}), []), O = t.rects.reference, A = t.rects.popper, M = new Map, N = !0, S = y[0], L = 0; L < y.length; L++) {
+									var I = y[L],
+										R = z(I),
+										C = H(I) === D,
+										B = [j, w].indexOf(R) >= 0,
+										U = B ? "width" : "height",
 										W = ne(t, {
-											placement: P,
+											placement: I,
 											boundary: u,
-											rootBoundary: d,
-											altBoundary: f,
+											rootBoundary: f,
+											altBoundary: d,
 											padding: c
 										}),
-										z = C ? B ? j : _ : B ? w : x;
-									O[U] > L[U] && (z = K(z));
-									var F = K(z),
+										q = B ? C ? x : _ : C ? w : j;
+									O[U] > A[U] && (q = K(q));
+									var F = K(q),
 										V = [];
-									if (a && V.push(W[I] <= 0), s && V.push(W[z] <= 0, W[F] <= 0), V.every((function(e) {
+									if (a && V.push(W[R] <= 0), s && V.push(W[q] <= 0, W[F] <= 0), V.every((function(e) {
 											return e
 										}))) {
-										D = P, A = !1;
+										S = I, N = !1;
 										break
 									}
-									S.set(P, V)
+									M.set(I, V)
 								}
-								if (A)
+								if (N)
 									for (var G = function(e) {
 											var t = y.find((function(t) {
-												var r = S.get(t);
+												var r = M.get(t);
 												if (r) return r.slice(0, e).every((function(e) {
 													return e
 												}))
 											}));
-											if (t) return D = t, "break"
+											if (t) return S = t, "break"
 										}, $ = h ? 3 : 1; $ > 0; $--) {
 										if ("break" === G($)) break
 									}
-								t.placement !== D && (t.modifiersData[n]._skip = !0, t.placement = D, t.reset = !0)
+								t.placement !== S && (t.modifiersData[n]._skip = !0, t.placement = S, t.reset = !0)
 							}
 						},
 						requiresIfExists: ["offset"],
@@ -1446,43 +1752,43 @@
 								l = r.boundary,
 								c = r.rootBoundary,
 								u = r.altBoundary,
-								d = r.padding,
-								f = r.tether,
-								p = void 0 === f || f,
+								f = r.padding,
+								d = r.tether,
+								p = void 0 === d || d,
 								h = r.tetherOffset,
 								m = void 0 === h ? 0 : h,
 								v = ne(t, {
 									boundary: l,
 									rootBoundary: c,
-									padding: d,
+									padding: f,
 									altBoundary: u
 								}),
-								g = H(t.placement),
-								y = q(t.placement),
-								E = !y,
-								k = z(g),
-								L = "x" === k ? "y" : "x",
-								S = t.modifiersData.popperOffsets,
-								A = t.rects.reference,
-								D = t.rects.popper,
-								N = "function" == typeof m ? m(Object.assign(Object.assign({}, t.rects), {}, {
+								g = z(t.placement),
+								y = H(t.placement),
+								k = !y,
+								E = q(g),
+								A = "x" === E ? "y" : "x",
+								M = t.modifiersData.popperOffsets,
+								N = t.rects.reference,
+								S = t.rects.popper,
+								L = "function" == typeof m ? m(Object.assign(Object.assign({}, t.rects), {}, {
 									placement: t.placement
 								})) : m,
-								T = {
+								P = {
 									x: 0,
 									y: 0
 								};
-							if (S) {
+							if (M) {
 								if (a) {
-									var R = "y" === k ? x : _,
-										P = "y" === k ? w : j,
-										I = "y" === k ? "height" : "width",
-										B = S[k],
-										C = S[k] + v[R],
-										U = S[k] - v[P],
-										W = p ? -D[I] / 2 : 0,
-										F = y === M ? A[I] : D[I],
-										V = y === M ? -D[I] : -A[I],
+									var T = "y" === E ? j : _,
+										I = "y" === E ? w : x,
+										R = "y" === E ? "height" : "width",
+										C = M[E],
+										B = M[E] + v[T],
+										U = M[E] - v[I],
+										W = p ? -S[R] / 2 : 0,
+										F = y === D ? N[R] : S[R],
+										V = y === D ? -S[R] : -N[R],
 										G = t.elements.arrow,
 										$ = p && G ? b(G) : {
 											width: 0,
@@ -1494,27 +1800,27 @@
 											bottom: 0,
 											left: 0
 										},
-										X = K[R],
-										Y = K[P],
-										Z = oe(0, A[I], $[I]),
-										J = E ? A[I] / 2 - W - Z - X - N : F - Z - X - N,
-										Q = E ? -A[I] / 2 + W + Z + Y + N : V + Z + Y + N,
+										X = K[T],
+										Y = K[I],
+										Z = oe(0, N[R], $[R]),
+										J = k ? N[R] / 2 - W - Z - X - L : F - Z - X - L,
+										Q = k ? -N[R] / 2 + W + Z + Y + L : V + Z + Y + L,
 										ee = t.elements.arrow && O(t.elements.arrow),
-										te = ee ? "y" === k ? ee.clientTop || 0 : ee.clientLeft || 0 : 0,
-										re = t.modifiersData.offset ? t.modifiersData.offset[t.placement][k] : 0,
-										ae = S[k] + J - re - te,
-										ie = S[k] + Q - re,
-										se = oe(p ? Math.min(C, ae) : C, B, p ? Math.max(U, ie) : U);
-									S[k] = se, T[k] = se - B
+										te = ee ? "y" === E ? ee.clientTop || 0 : ee.clientLeft || 0 : 0,
+										re = t.modifiersData.offset ? t.modifiersData.offset[t.placement][E] : 0,
+										ae = M[E] + J - re - te,
+										ie = M[E] + Q - re,
+										se = oe(p ? Math.min(B, ae) : B, C, p ? Math.max(U, ie) : U);
+									M[E] = se, P[E] = se - C
 								}
 								if (s) {
-									var le = "x" === k ? x : _,
-										ce = "x" === k ? w : j,
-										ue = S[L],
-										de = oe(ue + v[le], ue, ue - v[ce]);
-									S[L] = de, T[L] = de - ue
+									var le = "x" === E ? j : _,
+										ce = "x" === E ? w : x,
+										ue = M[A],
+										fe = oe(ue + v[le], ue, ue - v[ce]);
+									M[A] = fe, P[A] = fe - ue
 								}
-								t.modifiersData[n] = T
+								t.modifiersData[n] = P
 							}
 						},
 						requiresIfExists: ["offset"]
@@ -1527,25 +1833,25 @@
 								n = e.name,
 								o = r.elements.arrow,
 								a = r.modifiersData.popperOffsets,
-								i = H(r.placement),
-								s = z(i),
-								l = [_, j].indexOf(i) >= 0 ? "height" : "width";
+								i = z(r.placement),
+								s = q(i),
+								l = [_, x].indexOf(i) >= 0 ? "height" : "width";
 							if (o && a) {
 								var c = r.modifiersData[n + "#persistent"].padding,
 									u = b(o),
-									d = "y" === s ? x : _,
-									f = "y" === s ? w : j,
+									f = "y" === s ? j : _,
+									d = "y" === s ? w : x,
 									p = r.rects.reference[l] + r.rects.reference[s] - a[s] - r.rects.popper[l],
 									h = a[s] - r.rects.reference[s],
 									m = O(o),
 									v = m ? "y" === s ? m.clientHeight || 0 : m.clientWidth || 0 : 0,
 									g = p / 2 - h / 2,
-									y = c[d],
-									E = v - u[l] - c[f],
-									k = v / 2 - u[l] / 2 + g,
-									M = oe(y, k, E),
-									L = s;
-								r.modifiersData[n] = ((t = {})[L] = M, t.centerOffset = M - k, t)
+									y = c[f],
+									k = v - u[l] - c[d],
+									E = v / 2 - u[l] / 2 + g,
+									D = oe(y, E, k),
+									A = s;
+								r.modifiersData[n] = ((t = {})[A] = D, t.centerOffset = D - E, t)
 							}
 						},
 						effect: function(e) {
@@ -1557,7 +1863,7 @@
 								i = r.padding,
 								s = void 0 === i ? 0 : i;
 							null != a && ("string" != typeof a || (a = t.elements.popper.querySelector(a))) && Z(t.elements.popper, a) && (t.elements.arrow = a, t.modifiersData[n + "#persistent"] = {
-								padding: te("number" != typeof s ? s : re(s, k))
+								padding: te("number" != typeof s ? s : re(s, E))
 							})
 						},
 						requires: ["popperOffsets"],
@@ -1582,15 +1888,15 @@
 								l = ae(i, n),
 								c = ae(s, o, a),
 								u = ie(l),
-								d = ie(c);
+								f = ie(c);
 							t.modifiersData[r] = {
 								referenceClippingOffsets: l,
 								popperEscapeOffsets: c,
 								isReferenceHidden: u,
-								hasPopperEscaped: d
+								hasPopperEscaped: f
 							}, t.attributes.popper = Object.assign(Object.assign({}, t.attributes.popper), {}, {
 								"data-popper-reference-hidden": u,
-								"data-popper-escaped": d
+								"data-popper-escaped": f
 							})
 						}
 					}]
@@ -1604,8 +1910,8 @@
 						return e[r] = n, e
 					}), {})
 				},
-				de = "undefined" != typeof window && window.document && window.document.createElement ? n.useLayoutEffect : n.useEffect,
-				fe = [],
+				fe = "undefined" != typeof window && window.document && window.document.createElement ? n.useLayoutEffect : n.useEffect,
+				de = [],
 				pe = function(e, t, r) {
 					void 0 === r && (r = {});
 					var o = n.useRef(null),
@@ -1613,7 +1919,7 @@
 							onFirstUpdate: r.onFirstUpdate,
 							placement: r.placement || "bottom",
 							strategy: r.strategy || "absolute",
-							modifiers: r.modifiers || fe
+							modifiers: r.modifiers || de
 						},
 						i = n.useState({
 							styles: {
@@ -1659,23 +1965,23 @@
 							};
 							return ce()(o.current, e) ? o.current || e : (o.current = e, e)
 						}), [a.onFirstUpdate, a.placement, a.strategy, a.modifiers, c]),
-						d = n.useRef();
-					return de((function() {
-						d.current && d.current.setOptions(u)
-					}), [u]), de((function() {
+						f = n.useRef();
+					return fe((function() {
+						f.current && f.current.setOptions(u)
+					}), [u]), fe((function() {
 						if (null != e && null != t) {
 							var n = (r.createPopper || se)(e, t, u);
-							return d.current = n,
+							return f.current = n,
 								function() {
-									n.destroy(), d.current = null
+									n.destroy(), f.current = null
 								}
 						}
 					}), [e, t, r.createPopper]), {
-						state: d.current ? d.current.state : null,
+						state: f.current ? f.current.state : null,
 						styles: s.styles,
 						attributes: s.attributes,
-						update: d.current ? d.current.update : null,
-						forceUpdate: d.current ? d.current.forceUpdate : null
+						update: f.current ? f.current.update : null,
+						forceUpdate: f.current ? f.current.forceUpdate : null
 					}
 				}
 		},
@@ -1750,25 +2056,25 @@
 			e.exports = function(e, t, r) {
 				var c = t && r || 0,
 					u = t || [],
-					d = (e = e || {}).node || n,
-					f = void 0 !== e.clockseq ? e.clockseq : o;
-				if (null == d || null == f) {
+					f = (e = e || {}).node || n,
+					d = void 0 !== e.clockseq ? e.clockseq : o;
+				if (null == f || null == d) {
 					var p = a();
-					null == d && (d = n = [1 | p[0], p[1], p[2], p[3], p[4], p[5]]), null == f && (f = o = 16383 & (p[6] << 8 | p[7]))
+					null == f && (f = n = [1 | p[0], p[1], p[2], p[3], p[4], p[5]]), null == d && (d = o = 16383 & (p[6] << 8 | p[7]))
 				}
 				var h = void 0 !== e.msecs ? e.msecs : (new Date).getTime(),
 					b = void 0 !== e.nsecs ? e.nsecs : l + 1,
 					m = h - s + (b - l) / 1e4;
-				if (m < 0 && void 0 === e.clockseq && (f = f + 1 & 16383), (m < 0 || h > s) && void 0 === e.nsecs && (b = 0), b >= 1e4) throw new Error("uuid.v1(): Can't create more than 10M uuids/sec");
-				s = h, l = b, o = f;
+				if (m < 0 && void 0 === e.clockseq && (d = d + 1 & 16383), (m < 0 || h > s) && void 0 === e.nsecs && (b = 0), b >= 1e4) throw new Error("uuid.v1(): Can't create more than 10M uuids/sec");
+				s = h, l = b, o = d;
 				var v = (1e4 * (268435455 & (h += 122192928e5)) + b) % 4294967296;
 				u[c++] = v >>> 24 & 255, u[c++] = v >>> 16 & 255, u[c++] = v >>> 8 & 255, u[c++] = 255 & v;
 				var g = h / 4294967296 * 1e4 & 268435455;
-				u[c++] = g >>> 8 & 255, u[c++] = 255 & g, u[c++] = g >>> 24 & 15 | 16, u[c++] = g >>> 16 & 255, u[c++] = f >>> 8 | 128, u[c++] = 255 & f;
-				for (var y = 0; y < 6; ++y) u[c + y] = d[y];
+				u[c++] = g >>> 8 & 255, u[c++] = 255 & g, u[c++] = g >>> 24 & 15 | 16, u[c++] = g >>> 16 & 255, u[c++] = d >>> 8 | 128, u[c++] = 255 & d;
+				for (var y = 0; y < 6; ++y) u[c + y] = f[y];
 				return t || i(u)
 			}
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/vendors~CommentsPage~ModerationPages~Reddit~reddit-components-ClassicPost~reddit-components-CompactP~d737df3e.018ac3526130b46d3191.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/vendors~CommentsPage~ModerationPages~Reddit~reddit-components-ClassicPost~reddit-components-CompactP~d737df3e.506a3ece88e0a905b7a3.js.map

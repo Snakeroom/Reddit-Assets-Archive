@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/AuthorHovercard~Reddit.c2afeaac3d67352a33d6.js
-// Retrieved at 8/9/2022, 9:50:08 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/AuthorHovercard~Reddit.6b478474d7b1483603f6.js
+// Retrieved at 8/9/2022, 6:30:12 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["AuthorHovercard~Reddit"], {
 		"./src/lib/browser/isIncognito.ts": function(e, t, n) {
@@ -109,9 +109,9 @@
 				g = n("./src/reddit/helpers/parseUrl.ts"),
 				_ = n("./src/reddit/helpers/tabBadging/index.ts"),
 				v = n("./src/reddit/helpers/trackers/notifications.ts"),
-				N = n("./src/reddit/models/Toast/index.ts"),
-				x = n("./src/reddit/selectors/activeModal.ts"),
-				O = n("./src/reddit/selectors/activeModalId.ts"),
+				x = n("./src/reddit/models/Toast/index.ts"),
+				O = n("./src/reddit/selectors/activeModal.ts"),
+				N = n("./src/reddit/selectors/activeModalId.ts"),
 				y = n("./src/reddit/selectors/experiments/delayDnPermission.ts"),
 				k = n("./src/reddit/selectors/experiments/nsfwBlockingExperiment.ts"),
 				j = n("./src/reddit/constants/experiments.ts"),
@@ -119,7 +119,7 @@
 			const C = e => Object(E.c)(e, {
 				experimentName: j.ic,
 				experimentEligibilitySelector: E.a
-			}) === j.Gd;
+			}) === j.Hd;
 			var I = n("./src/reddit/selectors/meta.ts"),
 				P = n("./src/reddit/selectors/user.ts");
 			let S = !1;
@@ -151,10 +151,10 @@
 					const r = i(),
 						d = Object(I.f)(r),
 						u = C(r),
-						m = !!Object(O.a)(r),
+						m = !!Object(N.a)(r),
 						p = Object(y.a)(r),
 						b = Object(k.e)(r),
-						f = Object(x.c)(h.a.NSFW_BLOCKING_MODAL_V2)(r);
+						f = Object(O.c)(h.a.NSFW_BLOCKING_MODAL_V2)(r);
 					if (b || f) return;
 					if (await Object(s.a)() || d) return;
 					await w(r, a);
@@ -174,7 +174,7 @@
 					switch (await Object(r.b)(i.gqlContext)) {
 						case r.a.Success:
 							Object(p.b)(l.a.Granted), v.m(o), e && t(Object(f.f)({
-								kind: N.b.SuccessCommunity,
+								kind: x.b.SuccessCommunity,
 								text: a.fbt._("Changes saved", null, {
 									hk: "wGH5U"
 								})
@@ -196,7 +196,7 @@
 					if (i) {
 						const e = await i.pushManager.getSubscription();
 						e && (e.unsubscribe(), t && n(Object(f.f)({
-							kind: N.b.SuccessCommunity,
+							kind: x.b.SuccessCommunity,
 							text: a.fbt._("Changes saved", null, {
 								hk: "wGH5U"
 							})
@@ -475,9 +475,9 @@
 			};
 			var _ = n("./node_modules/react-redux/es/index.js"),
 				v = n("./src/reddit/controls/Button/index.tsx"),
-				N = n("./src/reddit/controls/InternalLink/index.tsx"),
-				x = n("./src/reddit/helpers/trackers/hotPotato.ts"),
-				O = n("./src/reddit/hooks/useTracking.ts"),
+				x = n("./src/reddit/controls/InternalLink/index.tsx"),
+				O = n("./src/reddit/helpers/trackers/hotPotato.ts"),
+				N = n("./src/reddit/hooks/useTracking.ts"),
 				y = n("./src/reddit/icons/fonts/index.tsx"),
 				k = n("./src/reddit/icons/svgs/HotPotato/index.tsx"),
 				j = n("./src/reddit/selectors/experiments/hotPotato.ts");
@@ -486,13 +486,13 @@
 					onClose: t
 				} = e;
 				const n = Object(_.e)(j.b),
-					s = Object(O.a)(),
+					s = Object(N.a)(),
 					r = Object(i.useCallback)(e => {
-						t && t(e), s(Object(x.a)())
+						t && t(e), s(Object(O.a)())
 					}, [t, s]);
 				return o.a.createElement("div", {
 					className: Object(c.a)(h.a.banner, h.a.hotPotatoBanner)
-				}, o.a.createElement(N.default, {
+				}, o.a.createElement(x.default, {
 					to: `/r/${n}`,
 					className: h.a.bannerContainer,
 					onClick: r
@@ -761,7 +761,7 @@
 						className: w.a.topNavLinks
 					}, o.a.createElement("span", {
 						className: w.a.messagesLinkContainer
-					}, o.a.createElement(N.default, {
+					}, o.a.createElement(x.default, {
 						className: Object(c.a)(w.a.messagesLink, {
 							[w.a.mActive]: m
 						}),
@@ -779,7 +779,7 @@
 					}, o.a.createElement(y.a, {
 						name: "mark_read",
 						className: w.a.icon
-					})), o.a.createElement(N.default, {
+					})), o.a.createElement(x.default, {
 						className: w.a.navLink,
 						onClick: b,
 						to: "/settings/notifications"
@@ -790,7 +790,7 @@
 				},
 				ie = e => o.a.createElement("div", {
 					className: w.a.bottomBar
-				}, o.a.createElement(N.default, {
+				}, o.a.createElement(x.default, {
 					className: w.a.bottomLink,
 					onClick: () => {
 						e.sendInboxClickSeeAll(), e.onBarClick()
@@ -800,7 +800,7 @@
 					hk: "3L3tFc"
 				}))),
 				oe = e => {
-					const t = Object(O.a)(),
+					const t = Object(N.a)(),
 						{
 							clearMessageTabBadgeCount: n,
 							inboxBadgeCount: a,
@@ -816,7 +816,7 @@
 						} = e,
 						[h, g] = Object(Z.a)(f),
 						[_, v] = Object($.a)(f),
-						[N, x] = function(e) {
+						[x, O] = function(e) {
 							let {
 								key: t,
 								userId: n
@@ -858,8 +858,8 @@
 						isDNInboxPromptBannerEnabled: E,
 						isInboxPrivacyPolicyBannerEnabled: m && !_,
 						setInboxPrivacyPolicyBannerSeen: v,
-						isHotPotatoEnabled: u && !N,
-						setHotPotatoBannerSeen: x
+						isHotPotatoEnabled: u && !x,
+						setHotPotatoBannerSeen: O
 					})), (y || i) && o.a.createElement(ie, {
 						sendInboxClickSeeAll: () => t(Object(A.n)()),
 						onBarClick: d
@@ -1064,11 +1064,11 @@
 			})), n.d(t, "b", (function() {
 				return v
 			})), n.d(t, "i", (function() {
-				return N
-			})), n.d(t, "a", (function() {
 				return x
-			})), n.d(t, "n", (function() {
+			})), n.d(t, "a", (function() {
 				return O
+			})), n.d(t, "n", (function() {
+				return N
 			})), n.d(t, "o", (function() {
 				return y
 			})), n.d(t, "h", (function() {
@@ -1165,7 +1165,7 @@
 					noun: "email",
 					source: "email_app_settings"
 				}),
-				N = (e, t) => n => ({
+				x = (e, t) => n => ({
 					...a.n(n),
 					action: c(e),
 					notification: {
@@ -1174,7 +1174,7 @@
 					noun: "notification",
 					source: "notification_app_settings"
 				}),
-				x = e => t => ({
+				O = e => t => ({
 					...a.n(t),
 					source: "email_app_settings",
 					action: c(e),
@@ -1183,7 +1183,7 @@
 						type: "all"
 					}
 				}),
-				O = (e, t, n) => i => ({
+				N = (e, t, n) => i => ({
 					...a.n(i),
 					action: "set_frequency",
 					noun: n,
@@ -1400,7 +1400,7 @@
 				d: "M18.4 14.788c-.662 0-1.2-.537-1.2-1.202l-.012-5.998C17.188 3.625 13.963.4 10 .4 6.037.4 2.811 3.625 2.811 7.586l-.01 6.002c0 .663-.54 1.2-1.2 1.2a1.199 1.199 0 100 2.4h16.8a1.2 1.2 0 100-2.4zm-9.6 3.6H7.6c0 1.324 1.076 2.4 2.4 2.4 1.323 0 2.4-1.076 2.4-2.4H8.8zm-3.6-4.797c0 .422-.087.822-.22 1.197H15.02a3.554 3.554 0 01-.22-1.2l-.013-5.997A4.794 4.794 0 0010 2.8a4.794 4.794 0 00-4.789 4.787l-.01 6.003z"
 			}));
 			const v = h.a.wrapped(_, "BellOutline", p.a),
-				N = e => {
+				x = e => {
 					let {
 						isBannerEnabled: t,
 						isLoggedIn: n
@@ -1433,10 +1433,10 @@
 						hk: "3Jd0SI"
 					}))))
 				};
-			var x = n("./src/reddit/controls/InternalLink/index.tsx");
+			var O = n("./src/reddit/controls/InternalLink/index.tsx");
 
-			function O() {
-				return (O = Object.assign || function(e) {
+			function N() {
+				return (N = Object.assign || function(e) {
 					for (var t = 1; t < arguments.length; t++) {
 						var n = arguments[t];
 						for (var a in n) Object.prototype.hasOwnProperty.call(n, a) && (e[a] = n[a])
@@ -1457,7 +1457,7 @@
 						to: s,
 						kind: u.b.InternalLink
 					},
-					m = i.a.createElement(x.default, {
+					m = i.a.createElement(O.default, {
 						to: s,
 						target: "_blank",
 						rel: "noopener noreferrer",
@@ -1488,7 +1488,7 @@
 					hk: "VSBWM"
 				}) : c.fbt._("That’s ok, maybe you just need the right inspiration. Try posting in {Link: to popular subreddit} , a popular community for discussion.", [c.fbt._param("Link: to popular subreddit", m)], {
 					hk: "1WOK4T"
-				})), i.a.createElement(u.t, O({
+				})), i.a.createElement(u.t, N({
 					className: p.a.emptyStateButton,
 					onClick: a,
 					text: `Visit ${o}`
@@ -1602,28 +1602,28 @@
 						h = Object(o.e)(F.n),
 						g = Object(o.e)(F.D),
 						_ = Object(a.useRef)(h),
-						[v, x] = Object(a.useState)(G.TURN_ON_PN),
-						O = Object(o.e)(e => e.user.accountSettings.changeEmail.api.pending),
+						[v, O] = Object(a.useState)(G.TURN_ON_PN),
+						N = Object(o.e)(e => e.user.accountSettings.changeEmail.api.pending),
 						y = Object(a.useCallback)(() => {
 							f(async (e, t) => {
 								var n, a;
 								let i = Object(F.fb)(t());
 								i.allIds.length || await e(Object(T.a)(R.a.Email));
 								const o = null === (a = null === (n = (i = Object(F.fb)(t())).byId) || void 0 === n ? void 0 : n.EMAIL_DIGEST) || void 0 === a ? void 0 : a.isEnabled;
-								x(o ? G.DONE : G.TURN_ON_DAYLY_DIGEST)
+								O(o ? G.DONE : G.TURN_ON_DAYLY_DIGEST)
 							})
 						}, [f]),
 						k = Object(a.useCallback)(() => {
-							g ? y() : x(G.VERIFY_EMAIL)
+							g ? y() : O(G.VERIFY_EMAIL)
 						}, [g, y]),
 						j = Object(a.useCallback)(() => {
 							f(async (e, t) => {
 								const n = t();
-								Object(F.hb)(n).allIds.length || await e(Object(T.a)(R.a.Push)), Object(D.c)(t(), z) ? x(G.TURN_ON_PN_APP) : k()
+								Object(F.hb)(n).allIds.length || await e(Object(T.a)(R.a.Push)), Object(D.c)(t(), z) ? O(G.TURN_ON_PN_APP) : k()
 							})
 						}, [f, k]),
 						E = Object(a.useCallback)(() => {
-							(() => Object(I.a)() === P.a.Granted)() ? j(): x(G.TURN_ON_PN)
+							(() => Object(I.a)() === P.a.Granted)() ? j(): O(G.TURN_ON_PN)
 						}, [j]),
 						C = Object(a.useCallback)(() => {
 							m(s.b.Email_perms)(), t && b && b(), f(Object(w.h)(A.a))
@@ -1638,8 +1638,8 @@
 								f(Object(L.f)(e)), y()
 							}
 						}, [h, v, y]), Object(a.useEffect)(() => {
-							O && f(Object(w.g)(A.a))
-						}, [O, f]), v === G.DONE) return i.a.createElement(N, {
+							N && f(Object(w.g)(A.a))
+						}, [N, f]), v === G.DONE) return i.a.createElement(x, {
 						isLoggedIn: r,
 						isBannerEnabled: n
 					});
@@ -1694,23 +1694,23 @@
 			const q = e => Object(V.c)(e, {
 					experimentEligibilitySelector: V.a,
 					experimentName: W.Gb
-				}) === W.Nd.MemesNoBadge,
+				}) === W.Od.MemesNoBadge,
 				K = e => Object(V.c)(e, {
 					experimentEligibilitySelector: V.a,
 					experimentName: W.Gb
-				}) === W.Nd.PnEmailNoBadge,
+				}) === W.Od.PnEmailNoBadge,
 				J = e => Object(V.c)(e, {
 					experimentEligibilitySelector: V.a,
 					experimentName: W.Gb
-				}) === W.Nd.KarmaNoBadge,
+				}) === W.Od.KarmaNoBadge,
 				Q = e => Object(V.c)(e, {
 					experimentEligibilitySelector: V.a,
 					experimentName: W.Gb
-				}) === W.Nd.PopularNoBadge,
+				}) === W.Od.PopularNoBadge,
 				Y = e => Object(V.c)(e, {
 					experimentEligibilitySelector: V.a,
 					experimentName: W.Gb
-				}) === W.Nd.CatsNoBadge;
+				}) === W.Od.CatsNoBadge;
 			t.a = e => {
 				let {
 					isBannerEnabled: t,
@@ -1742,7 +1742,7 @@
 					onBtnClick: d(s.b.Karma)
 				}) : h ? i.a.createElement(f, {
 					inTooltip: a
-				}) : i.a.createElement(N, {
+				}) : i.a.createElement(x, {
 					isBannerEnabled: t,
 					isLoggedIn: n
 				})
@@ -1853,7 +1853,7 @@
 			}));
 			var a = n("./src/reddit/constants/experiments.ts"),
 				i = n("./src/reddit/helpers/chooseVariant/index.ts");
-			const o = e => a.Ic.DnNoModal === Object(i.c)(e, {
+			const o = e => a.Jc.DnNoModal === Object(i.c)(e, {
 				experimentEligibilitySelector: i.a,
 				experimentName: a.Db
 			})
@@ -1918,4 +1918,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/AuthorHovercard~Reddit.c2afeaac3d67352a33d6.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/AuthorHovercard~Reddit.6b478474d7b1483603f6.js.map

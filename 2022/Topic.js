@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Topic.1de1b593723a524626ed.js
-// Retrieved at 8/9/2022, 12:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Topic.dbc7b605acd9d5357227.js
+// Retrieved at 8/9/2022, 6:30:12 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Topic"], {
 		"./node_modules/intersection-observer/intersection-observer.js": function(e, t) {
@@ -517,13 +517,13 @@
 					postLayout: h.S,
 					redditStyle: h.D
 				}),
-				I = Object(o.b)(N, e => ({
+				P = Object(o.b)(N, e => ({
 					onListingLayoutChange: (t, s) => e(Object(u.y)(t, s)),
 					openDropdown: () => e(Object(m.h)({
 						tooltipId: C
 					}))
 				}));
-			class P extends i.a.Component {
+			class I extends i.a.Component {
 				constructor() {
 					super(...arguments), this.changeLayout = e => {
 						const {
@@ -597,7 +597,7 @@
 					}), i.a.createElement(g.a.Consumer, null, this.renderDropdown)))
 				}
 			}
-			t.a = w(I(Object(p.c)(Object(l.a)(P))))
+			t.a = w(P(Object(p.c)(Object(l.a)(I))))
 		},
 		"./src/reddit/components/ListingPostList/index.tsx": function(e, t, s) {
 			"use strict";
@@ -723,7 +723,7 @@
 				const t = Object(i.f)().getState(),
 					s = Object(b.a)(t, Object(a.c)());
 				if (e.isD2xPdpSideRailRecsEnabled) {
-					const t = e.d2xPdpSideRailRecsVariant === u.Oc.GreyRereddit || e.d2xPdpSideRailRecsVariant === u.Oc.GreyRedditNoNsfw || e.d2xPdpSideRailRecsVariant === u.Oc.LargeImagePreview ? e.reredditButtons : [];
+					const t = e.d2xPdpSideRailRecsVariant === u.Pc.GreyRereddit || e.d2xPdpSideRailRecsVariant === u.Pc.GreyRedditNoNsfw || e.d2xPdpSideRailRecsVariant === u.Pc.LargeImagePreview ? e.reredditButtons : [];
 					return r.a.createElement(S, {
 						reredditContent: t
 					})
@@ -1241,14 +1241,14 @@
 						className: C.a.SubscribeButton
 					}))
 				},
-				I = s("./src/reddit/components/TopicSidebar/SubredditList/index.m.less"),
-				P = s.n(I);
+				P = s("./src/reddit/components/TopicSidebar/SubredditList/index.m.less"),
+				I = s.n(P);
 			const {
 				fbt: R
 			} = s("./node_modules/fbt/lib/FbtPublic.js"), F = 8, W = Array.from({
 				length: F
 			}).map((e, t) => r.a.createElement(N, {
-				className: P.a.Subreddit,
+				className: I.a.Subreddit,
 				key: t
 			})), B = {
 				enabled: !0,
@@ -1272,24 +1272,24 @@
 						topicUrl: s
 					} = this.props, n = t.slice(0, F);
 					return r.a.createElement(a.a, {
-						className: Object(o.a)(P.a.Container, e)
+						className: Object(o.a)(I.a.Container, e)
 					}, r.a.createElement("div", {
-						className: P.a.Title
+						className: I.a.Title
 					}, r.a.createElement(c.b, {
 						type: c.a.Widget
 					}, R._("Top Communities", null, {
 						hk: "46yzcK"
 					}))), r.a.createElement("div", {
-						className: P.a.SubredditList
+						className: I.a.SubredditList
 					}, n.length > 0 ? n.map(e => r.a.createElement(L, {
-						className: P.a.Subreddit,
+						className: I.a.Subreddit,
 						discoveryUnit: B,
 						key: e,
 						subredditId: e
 					})) : W), t.length > F && r.a.createElement(i.a, {
 						to: s
 					}, r.a.createElement(l.r, {
-						className: P.a.SeeMore,
+						className: I.a.SeeMore,
 						onClick: this.onSeeMoreCommunities
 					}, R._("See more", null, {
 						hk: "2qkY6H"
@@ -1928,9 +1928,9 @@
 				L = s("./src/reddit/layout/page/Listing/index.tsx"),
 				w = s("./src/reddit/pages/ErrorPages/index.tsx"),
 				N = s("./node_modules/react-router-dom/esm/react-router-dom.js"),
-				I = s("./src/reddit/controls/Button/index.tsx"),
-				P = s("./src/reddit/pages/Topic/TopicHeader/TopicTab/index.m.less"),
-				R = s.n(P);
+				P = s("./src/reddit/controls/Button/index.tsx"),
+				I = s("./src/reddit/pages/Topic/TopicHeader/TopicTab/index.m.less"),
+				R = s.n(I);
 			class F extends r.a.Component {
 				constructor() {
 					super(...arguments), this.onClick = () => {
@@ -2075,7 +2075,7 @@
 					return t.length < q ? null : r.a.createElement(N.a, {
 						onClick: this.onClick,
 						to: "#"
-					}, r.a.createElement(I.r, {
+					}, r.a.createElement(P.r, {
 						className: z.a.SeeAllRelatedTopics
 					}, U._("See all {=[Topic name plural]}", [U._param("=[Topic name plural]", r.a.createElement("span", {
 						className: z.a.TopicName
@@ -2265,7 +2265,7 @@
 			} = s("./node_modules/fbt/lib/FbtPublic.js"), Le = Object(k.u)(), we = (e, t) => t.match.params.sort || a.X, Ne = e => {
 				const t = [];
 				return e ? (e.hasPosts && t.push(V.Posts), e.hasSubreddits && t.push(V.Communities), e.childRelationships.length && t.push(V.RelatedTopics), t) : t
-			}, Ie = Object(d.b)(() => Object(i.a)((e, t) => Object(Oe.d)(e, t.match.params.topicSlug), (e, t) => Object(Oe.e)(e, {
+			}, Pe = Object(d.b)(() => Object(i.a)((e, t) => Object(Oe.d)(e, t.match.params.topicSlug), (e, t) => Object(Oe.e)(e, {
 				topicSlug: t.match.params.topicSlug
 			}), (e, t) => Object(Oe.c)(e, {
 				topicSlug: t.match.params.topicSlug
@@ -2289,14 +2289,14 @@
 				topicNamePlural: t
 			})), (e, t) => ({
 				onLoadMorePosts: () => e(Object(l.morePostsRequested)(t.match.params))
-			})), Pe = (e, t) => e === V.Communities ? C.g.Large : t;
+			})), Ie = (e, t) => e === V.Communities ? C.g.Large : t;
 			class Re extends r.a.Component {
 				constructor(e) {
 					var t;
 					super(e), t = this, this.openTab = function(e) {
 						let s = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : 0;
 						t.setState({
-							activeLayout: Pe(e, t.props.layout),
+							activeLayout: Ie(e, t.props.layout),
 							activeRelationshipIndex: s,
 							activeTab: e
 						}), window.scrollTo(0, 0)
@@ -2331,7 +2331,7 @@
 						i = e.tabs[0],
 						o = s || r || i;
 					return {
-						activeLayout: Pe(o, e.layout),
+						activeLayout: Ie(o, e.layout),
 						activeRelationship: t.activeRelationshipIndex,
 						activeTab: o
 					}
@@ -2437,7 +2437,7 @@
 					}))
 				}
 			}
-			t.default = Le(Ie(Re))
+			t.default = Le(Pe(Re))
 		},
 		"./src/reddit/selectors/experiments/d2xPdpSideRailRecs.ts": function(e, t, s) {
 			"use strict";
@@ -2587,4 +2587,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Topic.1de1b593723a524626ed.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Topic.dbc7b605acd9d5357227.js.map

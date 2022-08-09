@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditLeaderboard.b7fc9736fe5fba76154f.js
-// Retrieved at 8/9/2022, 12:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditLeaderboard.bcd207a3ea6c9cebd36b.js
+// Retrieved at 8/9/2022, 6:30:12 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditLeaderboard"], {
 		"./node_modules/lodash/times.js": function(e, t, n) {
@@ -73,7 +73,7 @@
 									icon: e.category_icon,
 									id: e.category_id,
 									name: e.category_name,
-									displayText: Object(u.eg)(e.category_name)
+									displayText: Object(u.fg)(e.category_name)
 								};
 								n.push(s.id), t[s.id] = s
 							}), {
@@ -373,7 +373,7 @@
 				const t = Object(a.f)().getState(),
 					n = Object(p.a)(t, Object(o.c)());
 				if (e.isD2xPdpSideRailRecsEnabled) {
-					const t = e.d2xPdpSideRailRecsVariant === u.Oc.GreyRereddit || e.d2xPdpSideRailRecsVariant === u.Oc.GreyRedditNoNsfw || e.d2xPdpSideRailRecsVariant === u.Oc.LargeImagePreview ? e.reredditButtons : [];
+					const t = e.d2xPdpSideRailRecsVariant === u.Pc.GreyRereddit || e.d2xPdpSideRailRecsVariant === u.Pc.GreyRedditNoNsfw || e.d2xPdpSideRailRecsVariant === u.Pc.LargeImagePreview ? e.reredditButtons : [];
 					return s.a.createElement(_, {
 						reredditContent: t
 					})
@@ -2213,8 +2213,8 @@
 				N = n.n(j),
 				T = n("./node_modules/lodash/upperFirst.js"),
 				w = n.n(T),
-				L = n("./src/reddit/actions/pages/subredditLeaderboard.ts"),
-				P = n("./src/reddit/actions/subreddit/topSubreddits.ts"),
+				P = n("./src/reddit/actions/pages/subredditLeaderboard.ts"),
+				L = n("./src/reddit/actions/subreddit/topSubreddits.ts"),
 				I = n("./src/reddit/components/TopSubredditsWidget/SubredditRankItem.tsx"),
 				B = n("./src/reddit/components/TopSubredditsWidget/SubredditRankItemPlaceholder.tsx"),
 				F = n("./src/reddit/models/GoodContent/index.ts"),
@@ -2249,7 +2249,7 @@
 					isOnFrontpage: e => !!Object(R.g)(e)
 				}),
 				z = Object(o.b)(H, e => ({
-					fetchMoreSubreddits: (t, n) => e(Object(P.b)(t, n))
+					fetchMoreSubreddits: (t, n) => e(Object(L.b)(t, n))
 				}));
 			class J extends i.a.Component {
 				constructor() {
@@ -2281,7 +2281,7 @@
 						categoryName: t,
 						isMod: n,
 						rankings: r
-					} = this.props, s = O()(r), a = s && s.cursor, i = Object(L.checkIsModCategory)(t, n);
+					} = this.props, s = O()(r), a = s && s.cursor, i = Object(P.checkIsModCategory)(t, n);
 					return {
 						after: a,
 						categoryId: e === b.c ? b.f : e,
@@ -2513,7 +2513,7 @@
 					} = t;
 					return Object(g.b)(n.params.categoryName || "")
 				},
-				Se = Object(m.dg)(b.i),
+				Se = Object(m.eg)(b.i),
 				Ee = Object(d.c)({
 					categories: e => Object(ye.b)(e, {
 						categoriesOrder: Se
@@ -2666,4 +2666,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditLeaderboard.b7fc9736fe5fba76154f.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditLeaderboard.bcd207a3ea6c9cebd36b.js.map

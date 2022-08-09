@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-InFeedPostCreation.774a85852b838c150968.js
-// Retrieved at 8/9/2022, 12:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-InFeedPostCreation.78143d0ec154185e9f01.js
+// Retrieved at 8/9/2022, 6:30:12 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-InFeedPostCreation"], {
 		"./src/reddit/components/InFeedPostCreation/index.m.less": function(e, t, n) {
@@ -79,10 +79,10 @@
 						tooltipId: t
 					}))
 				})),
-				W = () => r.fbt._("Create Media Post", null, {
+				g = () => r.fbt._("Create Media Post", null, {
 					hk: "3T3YMO"
 				}),
-				g = () => r.fbt._("Create Link Post", null, {
+				v = () => r.fbt._("Create Link Post", null, {
 					hk: "JUQfs"
 				});
 			t.default = Object(m.c)(L(e => {
@@ -150,7 +150,7 @@
 					type: "text"
 				}), E.media && o.a.createElement(I.t, {
 					className: j.a.Button,
-					"aria-label": W(),
+					"aria-label": g(),
 					priority: I.c.Plain,
 					kind: I.b.InternalLink,
 					size: I.d.M,
@@ -164,13 +164,13 @@
 				}, o.a.createElement(p.c, {
 					caretOnTop: !0,
 					tooltipId: P.Media,
-					text: W()
+					text: g()
 				})), E.link && o.a.createElement(I.t, {
 					className: j.a.Button,
 					priority: I.c.Plain,
 					kind: I.b.InternalLink,
 					size: I.d.M,
-					"aria-label": g(),
+					"aria-label": v(),
 					id: P.Link,
 					onClick: () => O(d.Wb.LINK_ONLY),
 					onMouseEnter: () => m(P.Link),
@@ -181,7 +181,7 @@
 				}, o.a.createElement(p.c, {
 					caretOnTop: !0,
 					tooltipId: P.Media,
-					text: W()
+					text: g()
 				})))
 			}))
 		},
@@ -255,30 +255,30 @@
 			const c = e => {
 					return Object(s.c)(e, {
 						experimentEligibilitySelector: s.a,
-						experimentName: r.Xe
-					}) === r.Gd
+						experimentName: r.Ye
+					}) === r.Hd
 				},
 				i = e => {
 					if (Object(o.a)(e)) return !1;
 					return Object(s.c)(e, {
 						experimentEligibilitySelector: s.a,
-						experimentName: r.We
-					}) === r.Gd
+						experimentName: r.Xe
+					}) === r.Hd
 				},
 				a = e => {
 					return Object(s.c)(e, {
 						experimentEligibilitySelector: s.a,
-						experimentName: r.Le
-					}) === r.Gd
+						experimentName: r.Me
+					}) === r.Hd
 				},
 				d = e => {
 					if (Object(o.a)(e)) return !1;
 					return Object(s.c)(e, {
 						experimentEligibilitySelector: s.a,
-						experimentName: r.Ke
-					}) === r.Gd
+						experimentName: r.Le
+					}) === r.Hd
 				}
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-InFeedPostCreation.774a85852b838c150968.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-InFeedPostCreation.78143d0ec154185e9f01.js.map
