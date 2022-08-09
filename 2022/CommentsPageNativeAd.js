@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CommentsPageNativeAd.c6e75b63cb9b38fc80b9.js
-// Retrieved at 8/8/2022, 6:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CommentsPageNativeAd.689d27296aba0f2ad491.js
+// Retrieved at 8/9/2022, 9:50:08 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CommentsPageNativeAd"], {
 		"./src/reddit/components/BlankPost/index.tsx": function(e, t, s) {
@@ -88,14 +88,14 @@
 				S = s("./src/higherOrderComponents/withAdClickLocation/Locations.ts"),
 				k = s("./src/reddit/components/AuthorLink/index.tsx"),
 				w = s("./src/reddit/components/SponsoredLabel/index.tsx"),
-				L = s("./src/reddit/components/UserIcon/index.tsx"),
-				g = s("./src/reddit/controls/MetaSeparator/index.tsx"),
+				g = s("./src/reddit/components/UserIcon/index.tsx"),
+				L = s("./src/reddit/controls/MetaSeparator/index.tsx"),
 				A = s("./src/reddit/components/CommentsPageNativeAd/index.m.less"),
 				T = s.n(A);
 			var I = e => r.a.createElement("div", {
 					className: T.a.adTopMetaContainer,
 					"data-adclicklocation": S.a.TOP_BAR
-				}, r.a.createElement(L.a, {
+				}, r.a.createElement(g.a, {
 					iconUrl: e.iconUrl,
 					isNSFW: !1,
 					userName: e.author,
@@ -105,7 +105,7 @@
 					className: T.a.authorLink,
 					"data-click-id": "user",
 					author: e.author
-				}, `u/${e.author}`), r.a.createElement(g.a, {
+				}, `u/${e.author}`), r.a.createElement(L.a, {
 					isSmall: !0,
 					className: T.a.metaSeparator
 				}), r.a.createElement(w.a, {
@@ -113,8 +113,8 @@
 				})),
 				M = s("./src/reddit/components/Media/index.tsx"),
 				W = s("./src/reddit/components/PlayButton/index.tsx"),
-				U = s("./src/reddit/components/Thumbnail/index.tsx"),
-				R = s("./src/reddit/icons/svgs/Close/index.tsx");
+				R = s("./src/reddit/components/Thumbnail/index.tsx"),
+				U = s("./src/reddit/icons/svgs/Close/index.tsx");
 
 			function V() {
 				return (V = Object.assign || function(e) {
@@ -140,7 +140,7 @@
 					usePreview: u,
 					mediaExpanded: h
 				} = e;
-				return i && i.media ? h && Object(x.N)(i.media) ? r.a.createElement("div", null, r.a.createElement(R.a, {
+				return i && i.media ? h && Object(x.N)(i.media) ? r.a.createElement("div", null, r.a.createElement(U.a, {
 					className: T.a.close,
 					onClick: s
 				}), r.a.createElement(M.a, {
@@ -156,7 +156,7 @@
 					showCentered: !1,
 					scrollerItemRef: c,
 					isCommentsPage: !0
-				})) : r.a.createElement(U.a, {
+				})) : r.a.createElement(R.a, {
 					className: Object(l.a)(T.a.thumbnail, t),
 					containerClassName: m,
 					crosspost: a,
@@ -167,7 +167,7 @@
 					removeLink: Object(x.N)(i.media),
 					url: Object(x.N)(i.media) ? void 0 : p,
 					usePreview: u
-				}) : r.a.createElement(U.a, {
+				}) : r.a.createElement(R.a, {
 					className: Object(l.a)(T.a.thumbnail, t),
 					containerClassName: m,
 					crosspost: a,
@@ -439,11 +439,11 @@
 				o = s("./src/reddit/constants/experiments.ts"),
 				r = s("./src/reddit/helpers/chooseVariant/index.ts");
 			const n = Object(a.a)(e => Object(r.c)(e, {
-					experimentName: o.Uf,
+					experimentName: o.Wf,
 					experimentEligibilitySelector: r.a
 				}), e => e),
-				i = Object(a.a)(n, e => e === o.Lf)
+				i = Object(a.a)(n, e => e === o.Nf)
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommentsPageNativeAd.c6e75b63cb9b38fc80b9.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommentsPageNativeAd.689d27296aba0f2ad491.js.map

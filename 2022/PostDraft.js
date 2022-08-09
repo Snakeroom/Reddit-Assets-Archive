@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostDraft.4b7dfdec259b0ff50981.js
-// Retrieved at 8/8/2022, 6:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostDraft.8296be7e7f1fd220f544.js
+// Retrieved at 8/9/2022, 9:50:08 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostDraft"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -326,7 +326,7 @@
 			})), n.d(t, "c", (function() {
 				return J
 			})), n.d(t, "h", (function() {
-				return q
+				return z
 			})), n.d(t, "f", (function() {
 				return Q
 			})), n.d(t, "d", (function() {
@@ -573,14 +573,14 @@
 							hk: "4Ck6Cm"
 						})
 					}))
-				}, G = Object(i.a)(c.r), Y = Object(i.a)(c.n), z = Object(i.a)(c.s), q = (e, t) => async (n, o, r) => {
+				}, G = Object(i.a)(c.r), Y = Object(i.a)(c.n), q = Object(i.a)(c.s), z = (e, t) => async (n, o, r) => {
 					let {
 						apiContext: i
 					} = r;
 					n(G());
 					const a = await v(i(), e, t);
 					let c = !1;
-					if (a.ok) n(z({
+					if (a.ok) n(q({
 						collectionId: e,
 						newTitle: t
 					})), n(Object(d.f)({
@@ -636,7 +636,7 @@
 								hk: "4Ck6Cm"
 							})
 						}))), c
-					})(o, a))), c && n.push(t(q(o, c))), void 0 !== r && n.push(t(((e, t) => async (n, o, r) => {
+					})(o, a))), c && n.push(t(z(o, c))), void 0 !== r && n.push(t(((e, t) => async (n, o, r) => {
 						let {
 							apiContext: i
 						} = r;
@@ -2883,7 +2883,7 @@
 				const t = Object(r.f)().getState(),
 					n = Object(b.a)(t, Object(a.c)());
 				if (e.isD2xPdpSideRailRecsEnabled) {
-					const t = e.d2xPdpSideRailRecsVariant === u.Nc.GreyRereddit || e.d2xPdpSideRailRecsVariant === u.Nc.GreyRedditNoNsfw || e.d2xPdpSideRailRecsVariant === u.Nc.LargeImagePreview ? e.reredditButtons : [];
+					const t = e.d2xPdpSideRailRecsVariant === u.Oc.GreyRereddit || e.d2xPdpSideRailRecsVariant === u.Oc.GreyRedditNoNsfw || e.d2xPdpSideRailRecsVariant === u.Oc.LargeImagePreview ? e.reredditButtons : [];
 					return o.a.createElement(C, {
 						reredditContent: t
 					})
@@ -3068,12 +3068,12 @@
 						rtJsonElementProps: i
 					});
 					switch (r) {
-						case h.Ff.SmIcon:
+						case h.Hf.SmIcon:
 							return o.a.createElement(p, {
 								subredditName: s,
 								rtJsonElementProps: i
 							});
-						case h.Ff.SmIconHc:
+						case h.Hf.SmIconHc:
 							return o.a.createElement(p, {
 								subredditName: s,
 								isHoverable: !0,
@@ -4737,12 +4737,12 @@
 				c = e => {
 					return Object(r.c)(e, {
 						experimentEligibilitySelector: a,
-						experimentName: s.zf
+						experimentName: s.Bf
 					}) || ""
 				},
 				d = e => {
 					const t = c(e);
-					return t === s.Ff.SmIcon || t === s.Ff.SmIconHc
+					return t === s.Hf.SmIcon || t === s.Hf.SmIconHc
 				},
 				l = (e, t) => {
 					let {
@@ -4768,4 +4768,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostDraft.4b7dfdec259b0ff50981.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostDraft.8296be7e7f1fd220f544.js.map

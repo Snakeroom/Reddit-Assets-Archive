@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~Reddit~SubredditForkingCTA.0146b7515f04f35b782f.js
-// Retrieved at 8/8/2022, 6:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~Reddit~SubredditForkingCTA.87d311f0fe6b3c9034b0.js
+// Retrieved at 8/9/2022, 9:50:08 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~Reddit~SubredditForkingCTA"], {
 		"./src/lib/bigNumberUtils/percent.ts": function(t, e, r) {
@@ -53,7 +53,7 @@
 			const h = Object(b.a)(t => Object(p.c)(t, {
 				experimentEligibilitySelector: m.Q,
 				experimentName: f.dc
-			}), t => t === f.Ed);
+			}), t => t === f.Gd);
 			var O = r("./src/reddit/actions/toaster.ts");
 			const y = "SUBREDDIT_COUNTRY_SITE__LOADED",
 				_ = "SUBREDDIT_COUNTRY_SITE__CHANGED",
@@ -812,7 +812,7 @@
 				B = Object(n.a)(w.a),
 				W = Object(n.a)(w.F),
 				$ = t => `/r/${t}/about/${D.s}`,
-				H = (t, e) => {
+				z = (t, e) => {
 					const r = t || {
 							duration: s.B,
 							options: []
@@ -833,7 +833,7 @@
 						text: t.text.trim()
 					})).filter(t => !!t.text), o
 				},
-				z = t => {
+				H = t => {
 					const e = t.uploads,
 						r = Object(k.W)(t),
 						n = Object(k.a)(t),
@@ -860,9 +860,9 @@
 					r(W(t)), o = n();
 					const l = Object(k.a)(o),
 						b = _.d.rteVideoPoster(o),
-						f = z(o),
+						f = H(o),
 						p = l === s.Wb.MEDIA;
-					f && (b || p) && (await r(L.f(f)), z(n())) || (t === I.r.Draft ? await r(Object(c.r)(e.draftId)) : t === I.r.ScheduledPost && Object(x.r)(o) ? await r(Q(e)) : t === I.r.ScheduledPost ? await r(J(e)) : await r(Y(e)))
+					f && (b || p) && (await r(L.f(f)), H(n())) || (t === I.r.Draft ? await r(Object(c.r)(e.draftId)) : t === I.r.ScheduledPost && Object(x.r)(o) ? await r(Q(e)) : t === I.r.ScheduledPost ? await r(J(e)) : await r(Y(e)))
 				}, Q = t => async (e, r, s) => {
 					let {
 						gqlContext: n
@@ -882,7 +882,7 @@
 					const {
 						isPoll: m,
 						polls: h
-					} = Object(k.u)(i), _ = H(h, i), j = {
+					} = Object(k.u)(i), _ = z(h, i), j = {
 						...Object(O.e)({
 							poll: m ? _ : void 0,
 							submission: a,
@@ -910,7 +910,7 @@
 					const {
 						isPoll: f,
 						polls: p
-					} = Object(k.u)(i), m = H(p, i), h = {
+					} = Object(k.u)(i), m = z(p, i), h = {
 						duration: m.duration,
 						options: m.options
 					}, y = {
@@ -941,7 +941,7 @@
 							isPoll: b,
 							polls: O
 						} = Object(k.u)(c),
-						y = H(O, c);
+						y = z(O, c);
 					if (!u) return;
 					if (e(U(u)), t.postFieldValidationPending && (await t.postFieldValidationPending, Object(k.x)(r()))) return;
 					let j;
@@ -1415,7 +1415,7 @@
 								postFieldValidationPending: Promise.resolve()
 							})), Object(l.b)(D)
 						}
-						await e(Object(s.b)(`${r.path}`)), p ? p === b.He.NewModule && e(Object(c.h)({
+						await e(Object(s.b)(`${r.path}`)), p ? p === b.Je.NewModule && e(Object(c.h)({
 							tooltipId: u.MOD_WELCOME_TOOLTIP_ID
 						})) : (e(Object(o.h)(f.a.POST_FLOW_UPSELL_MODAL_ID)), Object(k.a)(Object(E.g)()(x))), Object(g.b)(g.a.SubredditCreation), e(Object(T.f)(d, null !== (j = Object(C.bb)(x)) && void 0 !== j ? j : Object(P.j)(x)))
 					} else w.error && Object(k.a)(Object(E.h)(w.error.type, N)(x)), e(U({
@@ -2904,4 +2904,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit~SubredditForkingCTA.0146b7515f04f35b782f.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit~SubredditForkingCTA.87d311f0fe6b3c9034b0.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfileSnoobuilder.60d80eee8af0d421682f.js
-// Retrieved at 8/8/2022, 6:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfileSnoobuilder.059d75272f419c4db4e0.js
+// Retrieved at 8/9/2022, 9:50:08 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfileSnoobuilder"], {
 		"./assets/snoobuilder/Snoobuilder.json": function(e, t, n) {
@@ -3606,7 +3606,7 @@
 				const t = Object(i.f)().getState(),
 					n = Object(h.a)(t, Object(a.c)());
 				if (e.isD2xPdpSideRailRecsEnabled) {
-					const t = e.d2xPdpSideRailRecsVariant === u.Nc.GreyRereddit || e.d2xPdpSideRailRecsVariant === u.Nc.GreyRedditNoNsfw || e.d2xPdpSideRailRecsVariant === u.Nc.LargeImagePreview ? e.reredditButtons : [];
+					const t = e.d2xPdpSideRailRecsVariant === u.Oc.GreyRereddit || e.d2xPdpSideRailRecsVariant === u.Oc.GreyRedditNoNsfw || e.d2xPdpSideRailRecsVariant === u.Oc.LargeImagePreview ? e.reredditButtons : [];
 					return r.a.createElement(w, {
 						reredditContent: t
 					})
@@ -4380,12 +4380,12 @@
 						rtJsonElementProps: o
 					});
 					switch (i) {
-						case b.Ff.SmIcon:
+						case b.Hf.SmIcon:
 							return r.a.createElement(p, {
 								subredditName: s,
 								rtJsonElementProps: o
 							});
-						case b.Ff.SmIconHc:
+						case b.Hf.SmIconHc:
 							return r.a.createElement(p, {
 								subredditName: s,
 								isHoverable: !0,
@@ -5509,12 +5509,12 @@
 				c = e => {
 					return Object(i.c)(e, {
 						experimentEligibilitySelector: a,
-						experimentName: s.zf
+						experimentName: s.Bf
 					}) || ""
 				},
 				d = e => {
 					const t = c(e);
-					return t === s.Ff.SmIcon || t === s.Ff.SmIconHc
+					return t === s.Hf.SmIcon || t === s.Hf.SmIconHc
 				},
 				l = (e, t) => {
 					let {
@@ -5540,4 +5540,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileSnoobuilder.60d80eee8af0d421682f.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileSnoobuilder.059d75272f419c4db4e0.js.map

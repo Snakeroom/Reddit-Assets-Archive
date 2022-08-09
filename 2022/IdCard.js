@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/IdCard.9bac49cb737f19ff0c92.js
-// Retrieved at 8/8/2022, 6:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/IdCard.1d6632d8a575f54dbfe3.js
+// Retrieved at 8/9/2022, 9:50:08 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["IdCard", "AchievementsActions", "ContributorRequestButton"], {
 		"./node_modules/autosize/dist/autosize.js": function(e, t, n) {
@@ -2673,14 +2673,14 @@
 				}
 			}
 			var K = G,
-				Q = n("./src/reddit/components/SubredditUnsavedChangesModal/index.tsx"),
-				J = n("./src/reddit/controls/LoadingIcon/index.tsx"),
+				J = n("./src/reddit/components/SubredditUnsavedChangesModal/index.tsx"),
+				Q = n("./src/reddit/controls/LoadingIcon/index.tsx"),
 				X = n("./src/reddit/helpers/trackers/inlineSubredditEditing.ts"),
 				Y = n("./src/reddit/icons/fonts/index.tsx"),
 				Z = n("./src/reddit/selectors/activeModalId.ts"),
 				$ = n("./src/reddit/selectors/subreddit.ts");
 			const ee = 6,
-				te = `${Q.a}_description`,
+				te = `${J.a}_description`,
 				ne = Object(m.c)({
 					apiPending: $.W,
 					unsavedChangesModalIsOpen: Object(Z.b)(te)
@@ -2732,7 +2732,7 @@
 					}), t && this.containerRef.current && this.containerRef.current.blur()
 				}
 				renderInactiveDescription() {
-					const e = this.props.apiPending ? i.a.createElement(J.a, {
+					const e = this.props.apiPending ? i.a.createElement(Q.a, {
 						className: z.a.loadingIcon,
 						sizePx: ee
 					}) : void 0;
@@ -2796,7 +2796,7 @@
 						tabIndex: 0,
 						onFocus: this.handleOnFocus,
 						onBlur: this.handleOnBlur
-					}, this.state.editing ? this.renderTextArea() : this.renderInactiveDescription(), this.props.unsavedChangesModalIsOpen && i.a.createElement(Q.b, {
+					}, this.state.editing ? this.renderTextArea() : this.renderInactiveDescription(), this.props.unsavedChangesModalIsOpen && i.a.createElement(J.b, {
 						withOverlay: !0,
 						modalId: te,
 						ignoreDefaultFocus: !0,
@@ -2925,8 +2925,8 @@
 				We = n("./src/reddit/helpers/localStorage/index.ts"),
 				Ge = n("./src/reddit/helpers/trackers/communityTopics.ts"),
 				Ke = n("./src/reddit/helpers/trackers/lightbox.ts"),
-				Qe = n("./src/reddit/helpers/trackers/modHub.ts"),
-				Je = n("./src/reddit/icons/fonts/Coin/index.tsx"),
+				Je = n("./src/reddit/helpers/trackers/modHub.ts"),
+				Qe = n("./src/reddit/icons/fonts/Coin/index.tsx"),
 				Xe = n("./src/reddit/icons/fonts/ModSettings/index.tsx"),
 				Ye = n("./src/reddit/models/SubredditRestrictions/index.ts"),
 				Ze = n("./src/reddit/selectors/category.ts"),
@@ -3277,9 +3277,9 @@
 			var Wt = n("./src/reddit/components/IdCard/TopicLinksContainer/async.tsx"),
 				Gt = n("./src/reddit/components/HumanDate/index.tsx"),
 				Kt = n("./src/reddit/components/IdCard/CakeDayBlock/index.m.less"),
-				Qt = n.n(Kt);
+				Jt = n.n(Kt);
 			const {
-				fbt: Jt
+				fbt: Qt
 			} = n("./node_modules/fbt/lib/FbtPublic.js"), Xt = e => {
 				let {
 					cakeDayCreated: t,
@@ -3289,18 +3289,18 @@
 					toggleTooltip: o
 				} = e;
 				return i.a.createElement("div", {
-					className: Object(p.a)(Qt.a.CakeDayContainer, r),
+					className: Object(p.a)(Jt.a.CakeDayContainer, r),
 					onMouseEnter: () => o(n),
 					onMouseLeave: () => o(n)
 				}, i.a.createElement("div", {
-					className: Qt.a.CakeDay,
+					className: Jt.a.CakeDay,
 					id: n
 				}, i.a.createElement(Y.a, {
 					name: "cake",
-					className: Qt.a.cakeIcon
+					className: Jt.a.cakeIcon
 				}), i.a.createElement("span", {
-					className: s ? Qt.a.label : ""
-				}, Jt._("Created {cakeday}", [Jt._param("cakeday", i.a.createElement(Gt.a, {
+					className: s ? Jt.a.label : ""
+				}, Qt._("Created {cakeday}", [Qt._param("cakeday", i.a.createElement(Gt.a, {
 					seconds: t,
 					showDay: !0,
 					shortMonths: !0,
@@ -3414,7 +3414,7 @@
 							rootMargin: `${-(De.f+De.m)}px 0px 0px 0px`,
 							threshold: [$t, en]
 						})), this.subscribeButtonRef && this.subscribeButtonObserver.unobserve(this.subscribeButtonRef), e && (this.subscribeButtonRef = e, this.subscribeButtonObserver.observe(this.subscribeButtonRef)))
-					}, this.onClickModTools = () => this.props.sendEvent(Object(Qe.a)()), this.handleVisitCommunityClick = () => this.props.sendEvent(Object(Ke.a)("visit")), this.getListingNameToUse = () => {
+					}, this.onClickModTools = () => this.props.sendEvent(Object(Je.a)()), this.handleVisitCommunityClick = () => this.props.sendEvent(Object(Ke.a)("visit")), this.getListingNameToUse = () => {
 						const {
 							isLoggedIn: e,
 							listingName: t
@@ -3526,7 +3526,7 @@
 						listingName: k,
 						subreddit: _,
 						idCardWidget: n
-					}), L = I || b || f, A = !I && _.id ? _.id : "", U = y && y.created, H = `IdCard--Subscribers--${b}--${A}`, q = `IdCard--CurrentlyViewing--${b}--${A}`, z = `IdCard--CakeDay--${b}--${A}`, V = `IdCard--CoinCoint--${b}--${A}`, W = u && !b, G = !I && !l && !c, Q = !I && !b && T && !f, J = Q && !d ? i.a.createElement(se, {
+					}), L = I || b || f, A = !I && _.id ? _.id : "", U = y && y.created, H = `IdCard--Subscribers--${b}--${A}`, q = `IdCard--CurrentlyViewing--${b}--${A}`, z = `IdCard--CakeDay--${b}--${A}`, V = `IdCard--CoinCoint--${b}--${A}`, W = u && !b, G = !I && !l && !c, J = !I && !b && T && !f, Q = J && !d ? i.a.createElement(se, {
 						description: F,
 						shouldTruncateDescription: !1,
 						isCommentsPage: !!s,
@@ -3580,7 +3580,7 @@
 						onClick: b ? x : void 0,
 						headerButton: i.a.createElement("div", {
 							className: mt.a.headerButtonsContainer
-						}, !L && _ && g && d !== Re.He.NewModule && i.a.createElement(a.a, {
+						}, !L && _ && g && d !== Re.Je.NewModule && i.a.createElement(a.a, {
 							className: mt.a.ModToolsLink,
 							to: g.posts ? `${_.url}about/modqueue` : `${_.url}about/`,
 							onClick: this.onClickModTools
@@ -3622,18 +3622,18 @@
 						isTargetBlank: f,
 						linkUrl: I ? void 0 : M,
 						subredditIcon: E,
-						canEditIcon: Q,
+						canEditIcon: J,
 						subreddit: _,
 						titleText: R,
 						onOpenFilePicker: this.openIconFilePicker,
 						isInNCPV3Experiment: d,
 						shouldBlurSubredditIcon: m
-					}) : null, J, $, !!Z && !!C && i.a.createElement(i.a.Fragment, null, i.a.createElement("hr", {
+					}) : null, Q, $, !!Z && !!C && i.a.createElement(i.a.Fragment, null, i.a.createElement("hr", {
 						className: mt.a.HorizontalLine
 					}), i.a.createElement("div", {
 						className: mt.a.communityCoinCount,
 						"data-testid": "community-coin-count"
-					}, i.a.createElement(Je.a, {
+					}, i.a.createElement(Qe.a, {
 						className: mt.a.coinIcon
 					}), r.fbt._("{number-community-coins} Coins", [r.fbt._param("number-community-coins", C.toLocaleString())], {
 						hk: "3FSFdY"
@@ -3651,7 +3651,7 @@
 						className: mt.a.coinsTooltipContent
 					}, r.fbt._("The community gets Coins from Awards given by members", null, {
 						hk: "3j3NSH"
-					}))))), (d ? Q && B > 100 : Q) && i.a.createElement(de, {
+					}))))), (d ? J && B > 100 : J) && i.a.createElement(de, {
 						context: Ge.a.idCard,
 						subredditId: A
 					}), !I && W && i.a.createElement(Mt, {
@@ -3663,7 +3663,7 @@
 						isSubmissionPage: f,
 						sendEvent: this.props.sendEvent,
 						subredditId: _.id
-					})), Q && i.a.createElement(qe.a, {
+					})), J && i.a.createElement(qe.a, {
 						key: "icon-file-picker",
 						className: mt.a.iconFilePicker,
 						inputRef: this.setIconFilePickerRef,
@@ -5243,4 +5243,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/IdCard.9bac49cb737f19ff0c92.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/IdCard.1d6632d8a575f54dbfe3.js.map

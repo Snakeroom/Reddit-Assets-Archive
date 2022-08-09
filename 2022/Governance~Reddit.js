@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~Reddit.94baf81b4e687129cd30.js
-// Retrieved at 8/8/2022, 6:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~Reddit.47dba01986ae645c69d2.js
+// Retrieved at 8/9/2022, 9:50:08 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~Reddit"], {
 		"./assets/fonts/NotoMono/font.less": function(e, t, n) {},
@@ -2247,7 +2247,7 @@
 			const w = e => _.d.reCaptchaEnterprise(e) && !Object(T.d)(e),
 				D = e => !!Object(S.c)(e, {
 					experimentEligibilitySelector: Object(I.d)(Object(I.b)(...a.d)),
-					experimentName: f.gf
+					experimentName: f.if
 				}),
 				j = Object(r.b)("LOAD_RECAPTCHA_ENTERPRISE"),
 				A = () => l(e => p()([w, D, e => e.tracking.reCaptchaEnterprise.load === r.a.New], t => t(e)))(async e => {
@@ -4027,7 +4027,7 @@
 						searchQuery: _.searchQuery,
 						structureType: E.c.Recent
 					};
-					k(Object(y.z)(y.a.RECENT, e, D, D, _))
+					k(Object(y.A)(y.a.RECENT, e, D, D, _))
 				}, []);
 				const F = e => e.subredditOrProfileRestrictedName ? `${e.subredditOrProfileRestrictedName} ${e.searchQuery}` : e.searchQuery,
 					{
@@ -4237,7 +4237,7 @@
 						searchQuery: a.searchQuery,
 						structureType: E.c.Search
 					};
-					C(Object(y.z)(y.a.TYPEAHEAD, e, o, _, a))
+					C(Object(y.A)(y.a.TYPEAHEAD, e, o, _, a))
 				}, []);
 				return s.a.createElement(d.a, {
 					"aria-label": a.searchQuery,
@@ -4368,10 +4368,10 @@
 						eventType: Boolean(w) ? "subreddit" : void 0
 					};
 				return Object(r.useEffect)(() => {
-					_(Object(y.u)(U, w, l, I || void 0))
+					_(Object(y.v)(U, w, l, I || void 0))
 				}, []), s.a.createElement(d.a, {
 					onClick: function(e) {
-						_(Object(y.o)(E.a.FullSearchButton, U, w, k.a.Typeahead, I || void 0)), p(e)
+						_(Object(y.p)(E.a.FullSearchButton, U, w, k.a.Typeahead, I || void 0)), p(e)
 					},
 					to: {
 						pathname: L,
@@ -4441,7 +4441,7 @@
 					"data-testid": ce,
 					onClick: () => (e => {
 						const t = v ? y.a.COLLAPSE_NSFW : y.a.EXPAND_NSFW;
-						b(Object(y.t)(t, e)), E(!v)
+						b(Object(y.u)(t, e)), E(!v)
 					})(i)
 				}, s.a.createElement("p", {
 					className: Object(c.a)(T.a.listItemText, T.a.mTypeahead)
@@ -24610,8 +24610,8 @@
 				a = n("./node_modules/reselect/es/index.js");
 			const o = Object(a.a)(e => Object(s.c)(e, {
 				experimentEligibilitySelector: s.a,
-				experimentName: r.Ac
-			}), e => e === r.Ed)
+				experimentName: r.Bc
+			}), e => e === r.Gd)
 		},
 		"./src/reddit/selectors/removedPosts.ts": function(e, t, n) {
 			"use strict";
@@ -24753,4 +24753,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit.94baf81b4e687129cd30.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit.47dba01986ae645c69d2.js.map

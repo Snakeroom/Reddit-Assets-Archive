@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/GovernanceReleaseNotesModal.2343ee57465c614219bd.js
-// Retrieved at 8/8/2022, 6:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/GovernanceReleaseNotesModal.4fb17de903536b007d66.js
+// Retrieved at 8/9/2022, 9:50:08 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["GovernanceReleaseNotesModal"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -762,7 +762,7 @@
 			}
 			var B = n("./src/reddit/components/Governance/ReleaseNotesModal/index.m.less"),
 				P = n.n(B);
-			class D extends o.a.Component {
+			class H extends o.a.Component {
 				constructor() {
 					super(...arguments), this.state = {
 						currentlyViewingIndex: 0
@@ -815,15 +815,15 @@
 					})))
 				}
 			}
-			const H = Object(h.c)({
+			const D = Object(h.c)({
 					releaseNotes: m.f,
 					subreddit: u.r
 				}),
-				F = Object(i.b)(H, e => ({
+				F = Object(i.b)(D, e => ({
 					onClose: () => e(Object(c.f)())
 				})),
 				A = Object(u.u)();
-			t.default = Object(a.a)(A(F(D)))
+			t.default = Object(a.a)(A(F(H)))
 		},
 		"./src/reddit/components/Governance/VaultActionLink/async.ts": function(e, t, n) {
 			"use strict";
@@ -1334,14 +1334,14 @@
 
 				function P(e) {
 					var t;
-					(o || H(e), c) || (t = e.timeStamp, N(Object(u.A)(p, t)))
-				}
-
-				function D(e) {
-					N(Object(u.q)(p, e.timeStamp))
+					(o || D(e), c) || (t = e.timeStamp, N(Object(u.A)(p, t)))
 				}
 
 				function H(e) {
+					N(Object(u.q)(p, e.timeStamp))
+				}
+
+				function D(e) {
 					! function(e) {
 						N(Object(u.D)({
 							metadata: e,
@@ -1356,7 +1356,7 @@
 				}
 
 				function F(e) {
-					s || P(e), o || H(e), N(Object(u.C)(p))
+					s || P(e), o || D(e), N(Object(u.C)(p))
 				}
 
 				function A() {
@@ -1370,9 +1370,9 @@
 						key: p,
 						loop: !0,
 						onBufferingChange: M,
-						onLoadStart: D,
+						onLoadStart: H,
 						onLoadedData: P,
-						onLoadedMetadata: H,
+						onLoadedMetadata: D,
 						onPause: L,
 						onPlaying: F,
 						onTimeUpdate: B,
@@ -2154,7 +2154,7 @@
 			})), n.d(t, "f", (function() {
 				return P
 			})), n.d(t, "h", (function() {
-				return H
+				return D
 			})), n.d(t, "g", (function() {
 				return F
 			})), n.d(t, "i", (function() {
@@ -2280,7 +2280,7 @@
 					if (!o) return;
 					const i = o.length,
 						d = [];
-					for (let a = 0; a < i; a++) d.push(D(o[a], t, n, a, r));
+					for (let a = 0; a < i; a++) d.push(H(o[a], t, n, a, r));
 					return a.a.createElement(c.c, {
 						key: s
 					}, d)
@@ -2299,14 +2299,14 @@
 						const e = o[u].c;
 						e && e.length && i.push(a.a.createElement(c.g, {
 							key: u
-						}, e.map((e, s) => D(e, t, n, s, r))))
+						}, e.map((e, s) => H(e, t, n, s, r))))
 					}
 					const l = e.o ? c.i : c.v;
 					return a.a.createElement(l, {
 						key: s
 					}, i)
 				},
-				D = (e, t, n, s, r) => {
+				H = (e, t, n, s, r) => {
 					switch (e.e) {
 						case h.b:
 							return R(e, t, n, s, r);
@@ -2321,10 +2321,10 @@
 						case h.u:
 							return F(e, t, n, s, r);
 						case h.z:
-							return H(e, t, n, s, r)
+							return D(e, t, n, s, r)
 					}
 				},
-				H = (e, t, n, s, r) => {
+				D = (e, t, n, s, r) => {
 					const o = e.c,
 						i = e.h,
 						d = o.length,
@@ -2606,12 +2606,12 @@
 						rtJsonElementProps: i
 					});
 					switch (o) {
-						case b.Ff.SmIcon:
+						case b.Hf.SmIcon:
 							return r.a.createElement(h, {
 								subredditName: s,
 								rtJsonElementProps: i
 							});
-						case b.Ff.SmIconHc:
+						case b.Hf.SmIconHc:
 							return r.a.createElement(h, {
 								subredditName: s,
 								isHoverable: !0,
@@ -2964,12 +2964,12 @@
 				c = e => {
 					return Object(o.c)(e, {
 						experimentEligibilitySelector: a,
-						experimentName: s.zf
+						experimentName: s.Bf
 					}) || ""
 				},
 				d = e => {
 					const t = c(e);
-					return t === s.Ff.SmIcon || t === s.Ff.SmIconHc
+					return t === s.Hf.SmIcon || t === s.Hf.SmIconHc
 				},
 				l = (e, t) => {
 					let {
@@ -2995,4 +2995,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/GovernanceReleaseNotesModal.2343ee57465c614219bd.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/GovernanceReleaseNotesModal.4fb17de903536b007d66.js.map
