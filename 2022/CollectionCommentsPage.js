@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage.1164f8512d66cbe2a80b.js
-// Retrieved at 8/10/2022, 11:20:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage.0c587b5e02a097a99c1e.js
+// Retrieved at 8/10/2022, 11:30:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage"], {
 		"./node_modules/linkify-it/index.js": function(e, t, s) {
@@ -2912,7 +2912,7 @@
 						onMouseOver: () => Q(m.id),
 						onMouseOut: s
 					}), Object(et.a)(m.author) ? ae ? r.a.createElement(kt.b, {
-						className: yt.a.UserIconContainer,
+						className: Object(c.a)(yt.a.UserIconContainer, le && yt.a.UserIconContainerSmall),
 						subredditOrProfile: ae,
 						linkTo: `/user/${m.author}/`
 					}) : null : r.a.createElement(Le, {
@@ -11322,4 +11322,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage.1164f8512d66cbe2a80b.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage.0c587b5e02a097a99c1e.js.map

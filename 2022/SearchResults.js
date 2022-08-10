@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SearchResults.f102eadcdcd6d8f6fe18.js
-// Retrieved at 8/10/2022, 11:20:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SearchResults.bcc4e93a544794bda375.js
+// Retrieved at 8/10/2022, 11:30:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SearchResults"], {
 		"./node_modules/lodash/_baseDelay.js": function(e, t) {
@@ -1464,7 +1464,7 @@
 						onMouseOver: () => z(m.id),
 						onMouseOut: s
 					}), Object(et.a)(m.author) ? ae ? o.a.createElement(kt.b, {
-						className: yt.a.UserIconContainer,
+						className: Object(d.a)(yt.a.UserIconContainer, le && yt.a.UserIconContainerSmall),
 						subredditOrProfile: ae,
 						linkTo: `/user/${m.author}/`
 					}) : null : o.a.createElement(Re, {
@@ -9014,4 +9014,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SearchResults.f102eadcdcd6d8f6fe18.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SearchResults.bcc4e93a544794bda375.js.map

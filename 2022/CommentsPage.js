@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CommentsPage.6665aa0a06157c6046d0.js
-// Retrieved at 8/10/2022, 11:20:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CommentsPage.22f00c24bf8b3691967b.js
+// Retrieved at 8/10/2022, 11:30:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CommentsPage", "Governance~Reddit~Subreddit~reddit-components-BlankPost~reddit-components-ClassicPost~reddit-compone~3b56c92e", "PostCreation~Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~r~4c415e24", "CollectionCommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~SearchResults", "Governance~ModListing~Reddit~ReportFlow~Subreddit", "CollectionCommentsPage~ModProgressModule~NewCommunityProgress", "CollectionCommentsPage~Subreddit~SubredditWiki", "AchievementsActions"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -13408,7 +13408,7 @@
 						onMouseOver: () => Y(u.id),
 						onMouseOut: n
 					}), Object(et.a)(u.author) ? ae ? o.a.createElement(kt.b, {
-						className: yt.a.UserIconContainer,
+						className: Object(d.a)(yt.a.UserIconContainer, le && yt.a.UserIconContainerSmall),
 						subredditOrProfile: ae,
 						linkTo: `/user/${u.author}/`
 					}) : null : o.a.createElement(Ne, {
@@ -43101,4 +43101,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommentsPage.6665aa0a06157c6046d0.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommentsPage.22f00c24bf8b3691967b.js.map
