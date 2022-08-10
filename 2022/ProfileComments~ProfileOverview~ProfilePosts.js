@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfileComments~ProfileOverview~ProfilePosts.88d855e001a80cab923d.js
-// Retrieved at 8/10/2022, 12:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfileComments~ProfileOverview~ProfilePosts.0dd5081caaf1b3cf7a76.js
+// Retrieved at 8/10/2022, 7:10:03 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfileComments~ProfileOverview~ProfilePosts"], {
 		"./node_modules/linkify-it/index.js": function(e, t, n) {
@@ -2351,7 +2351,7 @@
 					isDropdownMenuOpen: e => Object(N.a)(e) === T,
 					isOwnProfile: (e, t) => Object(j.W)(e, t.profileName),
 					isSnoovatar30Enabled: S.d.snoovatar30,
-					isSubscriptionsPinned: O.b
+					isSubscriptionsPinned: O.c
 				}),
 				B = Object(b.a)(v.a),
 				T = "profile-nav-menu-tooltip",
@@ -3285,7 +3285,7 @@
 					}, o.a.createElement(h.b, {
 						textColor: l
 					})), o.a.createElement(N, {
-						qrCodeAsset: (() => r === _.Oc.Enabled || a === _.ub.BlurredPreview || a === _.ub.NoPreview ? C.d2x_nsfw_signup_blocking_de_v1 : C.d2x_nsfw_signup_blocking_non_us_v1)()
+						qrCodeAsset: (() => r === _.Pc.Enabled || a === _.vb.BlurredPreview || a === _.vb.NoPreview ? C.d2x_nsfw_signup_blocking_de_v1 : C.d2x_nsfw_signup_blocking_non_us_v1)()
 					}))
 				}
 		},
@@ -3980,4 +3980,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileComments~ProfileOverview~ProfilePosts.88d855e001a80cab923d.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileComments~ProfileOverview~ProfilePosts.0dd5081caaf1b3cf7a76.js.map

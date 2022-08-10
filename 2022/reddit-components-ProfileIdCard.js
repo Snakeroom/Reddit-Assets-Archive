@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-ProfileIdCard.413c4b625bc42ff37bc1.js
-// Retrieved at 8/10/2022, 12:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-ProfileIdCard.4c0756a70e55d2da6e31.js
+// Retrieved at 8/10/2022, 7:10:03 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-ProfileIdCard"], {
 		"./node_modules/lodash/compact.js": function(e, t) {
@@ -2433,8 +2433,8 @@
 				Y = r("./src/reddit/helpers/styles/mixins/loading.ts"),
 				Q = r("./src/reddit/models/Gold/Premium/index.ts"),
 				V = r("./src/reddit/selectors/experiments/chatInviteLinkSharing.ts"),
-				X = r("./src/reddit/selectors/experiments/crisisTextLine.ts"),
-				J = r("./src/reddit/selectors/premium.ts"),
+				J = r("./src/reddit/selectors/experiments/crisisTextLine.ts"),
+				X = r("./src/reddit/selectors/premium.ts"),
 				$ = r("./src/reddit/components/ProfileIdCard/footer.m.less"),
 				ee = r.n($);
 
@@ -2450,12 +2450,12 @@
 			const re = Object(i.c)({
 					areModeratedSubredditsPending: I.b,
 					coinsToSpend: P.e,
-					givePremiumModalIsOpen: J.c,
+					givePremiumModalIsOpen: X.c,
 					hasFetchedModerators: I.l,
 					isEmployee: P.N,
 					isLoggedIn: P.Q,
 					profile: I.k,
-					crisisFlowEnabled: X.b,
+					crisisFlowEnabled: J.b,
 					chatInviteLinkSharing: V.a
 				}),
 				ne = e => {
@@ -2719,7 +2719,7 @@
 				currentUserHasSubreddit: P.h,
 				hideNSFWPref: P.F,
 				isModerator: I.g,
-				prefersReducedAnimations: j.c,
+				prefersReducedAnimations: j.d,
 				profile: I.k,
 				profileAboutInfo: I.i,
 				topAwardIcon: (e, t) => {
@@ -2865,7 +2865,7 @@
 					prefShowSnoovatar: B,
 					snoovatarFullBodyAsset: D,
 					username: M
-				} = P, R = !!a && a.id === F, G = !(!a || !a.snoovatarFullBodyAsset), W = O && O.bannerBackgroundImage, H = !!b && b.isNSFW, q = H && c, z = !(!v || !v.userIsSubscriber), K = `/user/${M}/`, Z = j && j.url === K, Y = !v || v.acceptChats, Q = !v || v.acceptPms, V = k && Object(ue.b)(D), X = () => {
+				} = P, R = !!a && a.id === F, G = !(!a || !a.snoovatarFullBodyAsset), W = O && O.bannerBackgroundImage, H = !!b && b.isNSFW, q = H && c, z = !(!v || !v.userIsSubscriber), K = `/user/${M}/`, Z = j && j.url === K, Y = !v || v.acceptChats, Q = !v || v.acceptPms, V = k && Object(ue.b)(D), J = () => {
 					r(e => !e)
 				};
 				return o.a.createElement(o.a.Fragment, null, o.a.createElement(m.a, {
@@ -2907,7 +2907,7 @@
 						},
 						userIsSubscriber: z,
 						isUserBlocked: y,
-						onClickUnblockUser: X,
+						onClickUnblockUser: J,
 						enableFollowers: L
 					}), !!a && !R && !y && Y && xe({
 						userId: F
@@ -2926,9 +2926,9 @@
 					profileIcon: S,
 					bannerBackgroundImage: q ? void 0 : W
 				}), t && o.a.createElement(fe.a, {
-					onClose: X,
+					onClose: J,
 					onConfirm: e => {
-						X(), N(e), _(Object(x.h)(M))
+						J(), N(e), _(Object(x.h)(M))
 					},
 					username: M,
 					withOverlay: !0
@@ -3555,7 +3555,7 @@
 			const a = e => Object(s.c)(e, {
 				experimentName: n.G,
 				experimentEligibilitySelector: () => Object(o.P)(e)
-			}) === n.Id
+			}) === n.Jd
 		},
 		"./src/reddit/selectors/experiments/crisisTextLine.ts": function(e, t, r) {
 			"use strict";
@@ -3588,13 +3588,13 @@
 			const o = e => {
 					return !(Object(s.c)(e, {
 						experimentEligibilitySelector: s.a,
-						experimentName: n.pe
-					}) === n.Id)
+						experimentName: n.qe
+					}) === n.Jd)
 				},
 				a = e => Object(s.c)(e, {
 					experimentEligibilitySelector: s.a,
-					experimentName: n.qe
-				}) === n.Id
+					experimentName: n.re
+				}) === n.Jd
 		},
 		"./src/reddit/selectors/premium.ts": function(e, t, r) {
 			"use strict";
@@ -3623,4 +3623,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ProfileIdCard.413c4b625bc42ff37bc1.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ProfileIdCard.4c0756a70e55d2da6e31.js.map

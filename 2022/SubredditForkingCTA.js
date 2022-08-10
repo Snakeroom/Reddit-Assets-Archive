@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditForkingCTA.48d3b5cdabf842f9e467.js
-// Retrieved at 8/10/2022, 12:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditForkingCTA.8a65919d1cf539887d06.js
+// Retrieved at 8/10/2022, 7:10:03 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditForkingCTA"], {
 		"./node_modules/lodash/xorWith.js": function(t, _, e) {
@@ -178,9 +178,9 @@
 			})), e.d(_, "t", (function() {
 				return C
 			})), e.d(_, "u", (function() {
-				return I
-			})), e.d(_, "r", (function() {
 				return F
+			})), e.d(_, "r", (function() {
+				return I
 			})), e.d(_, "a", (function() {
 				return S
 			})), e.d(_, "s", (function() {
@@ -223,8 +223,8 @@
 				q = n.a.div("ModalAnnotation", u.a),
 				T = n.a.div("ModalMain", u.a),
 				C = n.a.textarea("TextArea", u.a),
-				I = n.a.wrapped(i.l, "WarningButton", u.a),
-				F = n.a.wrapped(i.l, "PrimaryButton", u.a),
+				F = n.a.wrapped(i.l, "WarningButton", u.a),
+				I = n.a.wrapped(i.l, "PrimaryButton", u.a),
 				S = n.a.wrapped(i.o, "CancelButton", u.a),
 				A = n.a.wrapped(i.r, "RemoveButton", u.a),
 				M = t => {
@@ -257,10 +257,10 @@
 				m = e("./src/reddit/helpers/chooseVariant/index.ts"),
 				p = e("./src/reddit/selectors/experiments/utils.ts");
 			const f = Object(u.a)(t => Object(m.c)(t, {
-					experimentName: l.Cf,
+					experimentName: l.Df,
 					experimentEligibilitySelector: m.a
 				}), p.a),
-				b = Object(u.a)(f, t => t === l.If.Enabled);
+				b = Object(u.a)(f, t => t === l.Jf.Enabled);
 			var x = e("./src/reddit/selectors/posts.ts"),
 				y = e("./src/reddit/components/CreateCommunityButton/index.tsx"),
 				h = e("./src/reddit/components/TrackingHelper/index.tsx");
@@ -1436,4 +1436,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditForkingCTA.48d3b5cdabf842f9e467.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditForkingCTA.8a65919d1cf539887d06.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PowerupSuccessModal.8e6f9f9c49a5e3ff21ee.js
-// Retrieved at 6/2/2022, 9:50:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PowerupSuccessModal.538437d1c3a676e4b831.js
+// Retrieved at 8/10/2022, 7:10:03 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PowerupSuccessModal"], {
 		"./src/reddit/components/Econ/Common/PowerupRotatingBolt/index.m.less": function(i, a, x) {
@@ -46,7 +46,7 @@
 			} = x("./node_modules/fbt/lib/FbtPublic.js");
 			a.default = Object(t.a)(() => {
 				const i = Object(k.d)(),
-					a = Object(k.e)(d.c);
+					a = Object(k.e)(d.d);
 				return Object(s.useEffect)(() => {
 					setTimeout(() => {
 						i(Object(r.g)(y.a.ECON_POWERUPS_SUCCESS))
@@ -69,4 +69,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PowerupSuccessModal.8e6f9f9c49a5e3ff21ee.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PowerupSuccessModal.538437d1c3a676e4b831.js.map

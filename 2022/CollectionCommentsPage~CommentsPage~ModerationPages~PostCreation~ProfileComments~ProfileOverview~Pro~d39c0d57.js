@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ModerationPages~PostCreation~ProfileComments~ProfileOverview~Pro~d39c0d57.e1e11d922a6b13bbb71e.js
-// Retrieved at 8/10/2022, 12:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ModerationPages~PostCreation~ProfileComments~ProfileOverview~Pro~d39c0d57.da90a487bf60ccb9b227.js
+// Retrieved at 8/10/2022, 7:10:03 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~ModerationPages~PostCreation~ProfileComments~ProfileOverview~Pro~d39c0d57"], {
 		"./src/lib/unicodeUtils/index.ts": function(e, t, s) {
@@ -734,10 +734,10 @@
 					post: U,
 					tooltipType: V
 				} = e;
-				const J = {
+				const W = {
 						caretOnTop: !1
 					},
-					W = U.isRemoved && !U.modRemovalReason && !U.modNote && U.belongsTo.type === p.a.SUBREDDIT,
+					J = U.isRemoved && !U.modRemovalReason && !U.modNote && U.belongsTo.type === p.a.SUBREDDIT,
 					G = F("Approve", U.id, V),
 					q = F("Archived", U.id, V),
 					X = F("Lock", U.id, V),
@@ -756,7 +756,7 @@
 				}), o.a.createElement(u.c, w({
 					tooltipId: Y,
 					text: R(s)
-				}, J))), U.isArchived && o.a.createElement(r.Fragment, null, o.a.createElement(g.a, {
+				}, W))), U.isArchived && o.a.createElement(r.Fragment, null, o.a.createElement(g.a, {
 					isFilled: !0,
 					className: Object(c.a)(L.a.icon, L.a.archivedIcon),
 					desc: T(),
@@ -766,7 +766,7 @@
 				}), o.a.createElement(u.c, w({
 					tooltipId: q,
 					text: T()
-				}, J))), U.isLocked && !U.isSponsored && o.a.createElement(r.Fragment, null, o.a.createElement(_.a, {
+				}, W))), U.isLocked && !U.isSponsored && o.a.createElement(r.Fragment, null, o.a.createElement(_.a, {
 					isFilled: !0,
 					className: Object(c.a)(L.a.icon, L.a.lockIcon),
 					desc: M(),
@@ -776,7 +776,7 @@
 				}), o.a.createElement(u.c, w({
 					tooltipId: X,
 					text: M()
-				}, J))), i && Object(k.u)(U) && !l && o.a.createElement(r.Fragment, null, o.a.createElement(S.a, {
+				}, W))), i && Object(k.u)(U) && !l && o.a.createElement(r.Fragment, null, o.a.createElement(S.a, {
 					isFilled: !0,
 					className: Object(c.a)(L.a.icon, L.a.stickyIcon),
 					desc: B(),
@@ -786,7 +786,7 @@
 				}), o.a.createElement(u.c, w({
 					tooltipId: $,
 					text: B()
-				}, J))), I && h && o.a.createElement(r.Fragment, null, o.a.createElement(S.a, {
+				}, W))), I && h && o.a.createElement(r.Fragment, null, o.a.createElement(S.a, {
 					isFilled: !0,
 					className: Object(c.a)(L.a.icon, L.a.stickyIcon),
 					desc: P(),
@@ -796,7 +796,7 @@
 				}), o.a.createElement(u.c, w({
 					tooltipId: Q,
 					text: P()
-				}, J))), (U.isApproved || U.approvedBy) && o.a.createElement(r.Fragment, null, o.a.createElement(E.a, {
+				}, W))), (U.isApproved || U.approvedBy) && o.a.createElement(r.Fragment, null, o.a.createElement(E.a, {
 					isFilled: !0,
 					className: Object(c.a)(L.a.icon, L.a.approveIcon),
 					desc: Object(x.a)(U),
@@ -806,14 +806,14 @@
 				}), o.a.createElement(u.c, w({
 					tooltipId: G,
 					text: Object(x.a)(U)
-				}, J))), Object(b.a)(U) && o.a.createElement(r.Fragment, null, o.a.createElement(j.a, {
+				}, W))), Object(b.a)(U) && o.a.createElement(r.Fragment, null, o.a.createElement(j.a, {
 					isFilled: !0,
 					className: Object(c.a)(L.a.icon, L.a.removeIcon),
 					desc: Object(x.b)(U),
 					id: K,
 					onMouseEnter: A(K),
 					onMouseLeave: H
-				}), W && o.a.createElement(m.a, {
+				}), J && o.a.createElement(m.a, {
 					className: L.a.addRemovalReason,
 					onClick: D,
 					text: n.fbt._("Add a removal reason", null, {
@@ -827,7 +827,7 @@
 				})), o.a.createElement(u.c, w({
 					tooltipId: K,
 					text: Object(x.b)(U)
-				}, J))), U.bannedBy && U.isSpam && o.a.createElement(r.Fragment, null, o.a.createElement(y.a, {
+				}, W))), U.bannedBy && U.isSpam && o.a.createElement(r.Fragment, null, o.a.createElement(y.a, {
 					isFilled: !0,
 					className: Object(c.a)(L.a.icon, L.a.spamIcon),
 					desc: Object(x.d)(U),
@@ -837,7 +837,7 @@
 				}), o.a.createElement(u.c, w({
 					tooltipId: Z,
 					text: Object(x.d)(U)
-				}, J))), Object(f.a)(U) && !C && o.a.createElement(r.Fragment, null, o.a.createElement(O.a, {
+				}, W))), Object(f.a)(U) && !C && o.a.createElement(r.Fragment, null, o.a.createElement(O.a, {
 					isFilled: !0,
 					className: Object(c.a)(L.a.icon, L.a.reportIcon),
 					desc: Object(x.c)(U.numReports),
@@ -847,7 +847,7 @@
 				}), o.a.createElement(u.c, w({
 					tooltipId: z,
 					text: Object(x.c)(U.numReports)
-				}, J))))
+				}, W))))
 			}))
 		},
 		"./src/reddit/components/ProfileIdCard/SnoovatarButton/TryItOn.tsx": function(e, t, s) {
@@ -1944,18 +1944,18 @@
 						f: s,
 						t: r
 					} = e, o = [];
-					if (!s) return W(0, r, t);
+					if (!s) return J(0, r, t);
 					const i = Object(n.a)(r);
 					let a = 0,
 						c = 0;
 					const d = s.length;
 					for (; a < d; a++) {
 						const [e, t, n] = s[a], d = t + n, l = i[t], u = i[d] - l;
-						l > c && o.push(W(0, r.substr(c, l - c), `between${a}`)), o.push(W(e, r.substr(l, u), a)), c = l + u
+						l > c && o.push(J(0, r.substr(c, l - c), `between${a}`)), o.push(J(e, r.substr(l, u), a)), c = l + u
 					}
-					return c < r.length && o.push(W(0, r.substr(c), `remaining${a}`)), o
+					return c < r.length && o.push(J(0, r.substr(c), `remaining${a}`)), o
 				},
-				J = {
+				W = {
 					[p.j.monospace]: c.h,
 					[p.j.bold]: c.b,
 					[p.j.italic]: c.f,
@@ -1964,9 +1964,9 @@
 					[p.j.subscript]: c.l,
 					[p.j.superscript]: c.m
 				},
-				W = (e, t, s) => {
+				J = (e, t, s) => {
 					let n = t;
-					return n = o()(J, (t, n, r) => e & parseInt(r, 10) ? a.a.createElement(n, {
+					return n = o()(W, (t, n, r) => e & parseInt(r, 10) ? a.a.createElement(n, {
 						key: s
 					}, t) : t, n)
 				},
@@ -2199,12 +2199,12 @@
 						rtJsonElementProps: i
 					});
 					switch (o) {
-						case b.Jf.SmIcon:
+						case b.Kf.SmIcon:
 							return r.a.createElement(p, {
 								subredditName: n,
 								rtJsonElementProps: i
 							});
-						case b.Jf.SmIconHc:
+						case b.Kf.SmIconHc:
 							return r.a.createElement(p, {
 								subredditName: n,
 								isHoverable: !0,
@@ -2773,12 +2773,12 @@
 				c = e => {
 					return Object(o.c)(e, {
 						experimentEligibilitySelector: a,
-						experimentName: n.Df
+						experimentName: n.Ef
 					}) || ""
 				},
 				d = e => {
 					const t = c(e);
-					return t === n.Jf.SmIcon || t === n.Jf.SmIconHc
+					return t === n.Kf.SmIcon || t === n.Kf.SmIconHc
 				},
 				l = (e, t) => {
 					let {
@@ -2804,4 +2804,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ModerationPages~PostCreation~ProfileComments~ProfileOverview~Pro~d39c0d57.e1e11d922a6b13bbb71e.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ModerationPages~PostCreation~ProfileComments~ProfileOverview~Pro~d39c0d57.da90a487bf60ccb9b227.js.map

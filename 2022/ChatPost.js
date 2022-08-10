@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ChatPost.f8a0eedd0cd862f0b3cb.js
-// Retrieved at 8/10/2022, 12:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ChatPost.4027808502ebe6bd2838.js
+// Retrieved at 8/10/2022, 7:10:03 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ChatPost"], {
 		"./node_modules/lodash/_baseDelay.js": function(e, t) {
@@ -2944,7 +2944,7 @@
 					var o, s;
 					const a = Object(on.a)(),
 						r = Object(d.d)(),
-						i = Object(d.e)(Rn.c),
+						i = Object(d.e)(Rn.d),
 						l = null === (s = null === (o = n.awardingsByCurrentUser) || void 0 === o ? void 0 : o[t.id]) || void 0 === s ? void 0 : s[0];
 					return c.a.createElement(un, {
 						commentId: n.id,
@@ -3170,9 +3170,9 @@
 				Jn = n("./src/reddit/constants/experiments.ts"),
 				Xn = n("./src/reddit/helpers/chooseVariant/index.ts");
 			const Zn = e => Object(Xn.c)(e, {
-					experimentName: Jn.Bb,
+					experimentName: Jn.Cb,
 					experimentEligibilitySelector: Xn.a
-				}) === Jn.xb.Enabled,
+				}) === Jn.yb.Enabled,
 				Yn = (e, t) => {
 					let {
 						commentId: n
@@ -3418,7 +3418,7 @@
 				var a, r, i, l;
 				const m = Object(d.d)(),
 					u = Object(on.a)(),
-					p = Object(d.e)(Rn.c),
+					p = Object(d.e)(Rn.d),
 					h = null !== (r = null === (a = o.awardingsByCurrentUser) || void 0 === a ? void 0 : a[s.id]) && void 0 !== r ? r : [],
 					b = Boolean(h.length);
 				return c.a.createElement("button", {
@@ -3490,7 +3490,7 @@
 							const n = Object(ke.k)(e);
 							return (null == n ? void 0 : n.id) === t.authorId
 						}),
-						m = Object(d.e)(Rn.c),
+						m = Object(d.e)(Rn.d),
 						u = c.a.useCallback(() => {
 							a(Object(pt.i)())
 						}, [a]);
@@ -3567,7 +3567,7 @@
 							var n, o;
 							return Boolean(null === (o = null === (n = t.awardingsByCurrentUser) || void 0 === n ? void 0 : n[e.id]) || void 0 === o ? void 0 : o.length)
 						}), [r, t]),
-						m = Object(d.e)(Rn.c),
+						m = Object(d.e)(Rn.d),
 						u = Object(d.e)(e => Object(bn.b)(n)(e)),
 						p = c.a.useCallback(() => {
 							s(Object(pt.h)({
@@ -5441,4 +5441,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatPost.f8a0eedd0cd862f0b3cb.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatPost.4027808502ebe6bd2838.js.map

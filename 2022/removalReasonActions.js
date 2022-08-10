@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/removalReasonActions.776a3d09b3273432df73.js
-// Retrieved at 8/10/2022, 12:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/removalReasonActions.6cee7b8c52f3749aeea4.js
+// Retrieved at 8/10/2022, 7:10:03 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["removalReasonActions"], {
 		"./node_modules/lodash/map.js": function(e, t, o) {
@@ -236,8 +236,8 @@
 				V = o("./src/reddit/endpoints/publicAccessNetwork/index.ts"),
 				H = o("./src/reddit/featureFlags/index.ts"),
 				q = o("./src/reddit/helpers/comment/index.ts"),
-				W = o("./src/reddit/helpers/correlationIdTracker.ts"),
-				J = o("./src/reddit/helpers/dom/index.ts"),
+				J = o("./src/reddit/helpers/correlationIdTracker.ts"),
+				W = o("./src/reddit/helpers/dom/index.ts"),
 				Q = o("./src/reddit/helpers/localStorage/index.ts"),
 				z = o("./src/reddit/helpers/sessionStorage/index.ts"),
 				X = o("./src/reddit/helpers/trackers/commentsPage.ts"),
@@ -255,8 +255,8 @@
 				ae = o("./node_modules/reselect/es/index.js");
 			const de = Object(ae.a)(e => Object(ce.c)(e, {
 				experimentEligibilitySelector: ce.a,
-				experimentName: ie.Lb
-			}), e => e === ie.Id);
+				experimentName: ie.Mb
+			}), e => e === ie.Jd);
 			var le = o("./src/reddit/selectors/experiments/contributeBeforeSignUp.ts"),
 				me = o("./src/reddit/selectors/experiments/emailEnablement.ts"),
 				ue = o("./src/reddit/selectors/platform.ts"),
@@ -420,7 +420,7 @@
 								text: o
 							}))
 						}
-						Ce(g(), a, m, A).then(() => A.ok && m === T.i.RICH_TEXT ? Object(W.b)(W.a.CommentComposer) : void 0), u || Object(f.d)(), t && Object(z.a)()
+						Ce(g(), a, m, A).then(() => A.ok && m === T.i.RICH_TEXT ? Object(J.b)(J.a.CommentComposer) : void 0), u || Object(f.d)(), t && Object(z.a)()
 					}
 				},
 				Te = e => async (t, o, n) => {
@@ -606,7 +606,7 @@
 						let b = "",
 							p = null;
 						const O = r.user.prefs.commentMode,
-							f = Object(J.d)();
+							f = Object(W.d)();
 						if (f) {
 							const e = f.filter(e => !!e && 10 !== e.charCodeAt(0));
 							if (O === T.i.MARKDOWN) b = e.map(e => `> ${e}\n`).join("");
@@ -691,7 +691,7 @@
 							}
 						})))
 					}
-				}, qe = Object(r.a)(fe.E), We = Object(r.a)(fe.D), Je = Object(r.a)(fe.F), Qe = Object(r.a)(fe.j), ze = Object(r.a)(fe.f), Xe = e => {
+				}, qe = Object(r.a)(fe.E), Je = Object(r.a)(fe.D), We = Object(r.a)(fe.F), Qe = Object(r.a)(fe.j), ze = Object(r.a)(fe.f), Xe = e => {
 					let {
 						id: t,
 						commentsPageKey: o,
@@ -783,7 +783,7 @@
 								})
 							})(a(), t, r, m, u)).ok) {
 							const s = b.body;
-							e(Je({
+							e(We({
 								commentId: t,
 								commentsPageKey: o,
 								draftKey: n
@@ -792,7 +792,7 @@
 									...s.comment
 								}
 							}))
-						} else e(We({
+						} else e(Je({
 							draftKey: n,
 							error: b.error
 						}))
@@ -1532,8 +1532,8 @@
 			var V = o("./src/reddit/helpers/isPost.ts"),
 				H = o("./src/reddit/helpers/r2/normalizeCommentFromR2/index.ts"),
 				q = o("./src/reddit/helpers/routeKey/index.ts"),
-				W = o("./src/reddit/models/ModQueue/index.ts"),
-				J = o("./src/reddit/models/PostDraft/index.ts"),
+				J = o("./src/reddit/models/ModQueue/index.ts"),
+				W = o("./src/reddit/models/PostDraft/index.ts"),
 				Q = o("./src/reddit/models/RemovalReason/index.ts"),
 				z = o("./src/reddit/models/Toast/index.ts"),
 				X = o("./src/reddit/selectors/comments.ts"),
@@ -1689,7 +1689,7 @@
 												sort: v.u,
 												hasSortParam: !0
 											})), b === Q.e.Post) {
-											const o = Object(E.a)(J.c.replyToPost, u);
+											const o = Object(E.a)(W.c.replyToPost, u);
 											i(Object(w.r)({
 												...t,
 												headCommentId: Object(X.w)(l, {
@@ -1709,7 +1709,7 @@
 												}
 											}))
 										} else if (b === Q.e.Comment) {
-											const e = Object(E.a)(J.c.replyToComment, p.id),
+											const e = Object(E.a)(W.c.replyToComment, p.id),
 												o = Object(X.j)(l, {
 													commentId: u,
 													commentsPageKey: s
@@ -1762,7 +1762,7 @@
 					if (p.ok) {
 						const n = {
 							ids: e,
-							operation: W.a.RemovalReason,
+							operation: J.a.RemovalReason,
 							username: m,
 							options: {
 								modNote: r,
@@ -1940,14 +1940,14 @@
 				V = o.n(G),
 				H = o("./src/reddit/reducers/features/comments/visitHighlightingFilter/index.ts");
 			const q = Object(y.a)(v.a),
-				W = e => e === H.a.First ? n.fbt._("First Visit", null, {
+				J = e => e === H.a.First ? n.fbt._("First Visit", null, {
 					hk: "HdDSr"
 				}) : e === H.a.Last ? n.fbt._("Last Visit", null, {
 					hk: "3ubIq3"
 				}) : n.fbt._("None", null, {
 					hk: "4jwXNg"
 				});
-			class J extends r.a.Component {
+			class W extends r.a.Component {
 				constructor() {
 					super(...arguments), this.track = () => {
 						const {
@@ -1985,7 +1985,7 @@
 					}, r.a.createElement(R.b, {
 						className: Object(a.a)(V.a.HighlightPicker, V.a.Row),
 						textClassName: V.a.SortOptionDropdownText,
-						displayText: `${n.fbt._("Highlight",null,{hk:"2ZiUE8"})}: ${W(s)}`,
+						displayText: `${n.fbt._("Highlight",null,{hk:"2ZiUE8"})}: ${J(s)}`,
 						id: t,
 						noHover: !0,
 						onClick: o
@@ -1997,21 +1997,21 @@
 						renderContentsHidden: !0,
 						tooltipId: t
 					}, r.a.createElement(R.b, {
-						displayText: W(H.a.First),
+						displayText: J(H.a.First),
 						isSelected: s === H.a.First,
 						onClick: this.onDropdownClickFirst
 					}), r.a.createElement(R.b, {
-						displayText: W(H.a.Last),
+						displayText: J(H.a.Last),
 						isSelected: s === H.a.Last,
 						onClick: this.onDropdownClickLast
 					}), r.a.createElement(R.b, {
-						displayText: W(H.a.None),
+						displayText: J(H.a.None),
 						isSelected: s === H.a.None,
 						onClick: this.onDropdownClickNone
 					})))
 				}
 			}
-			var Q = J;
+			var Q = W;
 			const z = "CommentSort--SortPicker",
 				X = "CommentSort--HighlightPicker",
 				$ = "CommentSort--Tooltip",
@@ -2916,4 +2916,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/removalReasonActions.776a3d09b3273432df73.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/removalReasonActions.6cee7b8c52f3749aeea4.js.map
