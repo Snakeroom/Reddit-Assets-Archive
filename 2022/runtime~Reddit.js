@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/runtime~Reddit.9b8a5d239b49585bf694.js
-// Retrieved at 8/10/2022, 4:00:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/runtime~Reddit.cdcd9e544c72a79ad86a.js
+// Retrieved at 8/10/2022, 5:00:05 PM by Reddit Dataminer v1.0.0
 ! function(e) {
 	function o(o) {
 		for (var a, n, r = o[0], s = o[1], c = o[2], l = 0, b = []; l < r.length; l++) n = r[l], Object.prototype.hasOwnProperty.call(d, n) && d[n] && b.push(d[n][0]), d[n] = 0;
@@ -1667,7 +1667,7 @@
 						"reddit-components-CommunitySettings-ModPnSettings": "41fd860557f049fe52b9",
 						"reddit-components-ModHub-ChatSettings": "d01d4a908cabe0534c96",
 						"reddit-components-ModHub-Content-ModQueue": "346352b476d0b74b1559",
-						"reddit-components-ModHub-ContentControls": "3f89d8e5903e3f00ac53",
+						"reddit-components-ModHub-ContentControls": "467a96810ba317049e5e",
 						"reddit-components-ModHub-TrafficStats": "db2e066ae3f774cc018a",
 						"reddit-components-ModHub-flairs-PostFlairManagement~reddit-components-ModHub-flairs-UserFlairManagement": "a27de95a1727d5d0a7a0",
 						"reddit-components-ModHub-flairs-PostFlairManagement": "1ae10b54e690784d956e",
@@ -1768,4 +1768,4 @@
 	var m = c;
 	t()
 }([]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/runtime~Reddit.9b8a5d239b49585bf694.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/runtime~Reddit.cdcd9e544c72a79ad86a.js.map

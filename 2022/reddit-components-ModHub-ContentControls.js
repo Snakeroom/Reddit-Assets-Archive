@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-ModHub-ContentControls.3f89d8e5903e3f00ac53.js
-// Retrieved at 8/4/2022, 7:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-ModHub-ContentControls.467a96810ba317049e5e.js
+// Retrieved at 8/10/2022, 5:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-ModHub-ContentControls"], {
 		"./node_modules/lodash/negate.js": function(e, t) {
@@ -123,12 +123,12 @@
 				k = n("./node_modules/lodash/omitBy.js"),
 				S = n.n(k),
 				E = n("./src/reddit/models/PostRequirements/index.ts"),
-				R = n("./src/reddit/selectors/telemetry.ts"),
-				v = n("./src/telemetry/models/PostRequirement.ts");
+				v = n("./src/reddit/selectors/telemetry.ts"),
+				R = n("./src/telemetry/models/PostRequirement.ts");
 			const _ = {
-					[E.a.None]: v.BodyRestrictionPolicy.Optional,
-					[E.a.NotAllowed]: v.BodyRestrictionPolicy.Disabled,
-					[E.a.Required]: v.BodyRestrictionPolicy.Required
+					[E.a.None]: R.BodyRestrictionPolicy.Optional,
+					[E.a.NotAllowed]: R.BodyRestrictionPolicy.Disabled,
+					[E.a.Required]: R.BodyRestrictionPolicy.Required
 				},
 				q = e => {
 					const t = {
@@ -152,10 +152,10 @@
 					source: "post_requirements",
 					action: "save",
 					noun: "settings",
-					...R.n(t),
+					...v.n(t),
 					postRequirement: q(e),
-					subreddit: R.ib(t),
-					userSubreddit: R.sb(t)
+					subreddit: v.ib(t),
+					userSubreddit: v.sb(t)
 				});
 			var T = n("./src/reddit/selectors/activeModalId.ts"),
 				B = n("./src/reddit/selectors/contentControls.ts"),
@@ -613,8 +613,8 @@
 					}))))
 				}
 			}
-			var Re = n("./node_modules/lodash/difference.js"),
-				ve = n.n(Re),
+			var ve = n("./node_modules/lodash/difference.js"),
+				Re = n.n(ve),
 				_e = n("./src/reddit/hooks/useExperimentVariant.ts"),
 				qe = n("./src/reddit/hooks/useTracking.ts"),
 				we = (n("./node_modules/core-js/modules/web.dom.iterable.js"), n("./src/lib/memoizeByReference/index.ts")),
@@ -919,8 +919,8 @@
 					strings: t.hatefulContentFilters.wordlist,
 					onChange: e => {
 						const s = t.hatefulContentFilters.wordlist,
-							i = ve()(e, s),
-							r = ve()(s, e);
+							i = Re()(e, s),
+							r = Re()(s, e);
 						n({
 							...t,
 							hatefulContentFilters: {
@@ -931,7 +931,7 @@
 							source: "community_settings",
 							action: "add",
 							noun: "auto_report_keyword",
-							...Object(R.n)(t),
+							...Object(v.n)(t),
 							setting: {
 								value: e,
 								oldValue: ""
@@ -940,7 +940,7 @@
 							source: "community_settings",
 							action: "remove",
 							noun: "auto_report_keyword",
-							...Object(R.n)(t),
+							...Object(v.n)(t),
 							setting: {
 								value: e,
 								oldValue: ""
@@ -1001,7 +1001,7 @@
 						hk: "48duSv"
 					}).toString()] : []
 				},
-				Rt = e => {
+				vt = e => {
 					const t = e.titleRequiredStrings.enabled ? e.titleRequiredStrings.strings : [];
 					return {
 						blacklistedStrings: e.titleBlacklistedStrings.enabled ? e.titleBlacklistedStrings.strings : [],
@@ -1009,7 +1009,7 @@
 						requiredStrings: t
 					}
 				},
-				vt = e => {
+				Rt = e => {
 					const {
 						bodyRequirement: t,
 						bodyRequiredStrings: n,
@@ -1017,7 +1017,7 @@
 					} = e, i = t.restrictionPolicy !== E.a.NotAllowed, o = t.restrictionPolicy === E.a.Required;
 					return St(o && n.enabled ? n.strings : [], i && s.enabled ? s.strings : [])
 				},
-				_t = vt,
+				_t = Rt,
 				qt = e => kt()(e, e => ({
 					...e
 				})),
@@ -1061,11 +1061,11 @@
 							minLimit: M,
 							maxLimit: O
 						})
-					})(t.titleLength), t.bodyBlacklistedStrings.clientErrors = _t(t), t.bodyRequiredStrings.clientErrors = vt(t), t.titleBlacklistedStrings.clientErrors = (e => {
-						const t = Rt(e);
+					})(t.titleLength), t.bodyBlacklistedStrings.clientErrors = _t(t), t.bodyRequiredStrings.clientErrors = Rt(t), t.titleBlacklistedStrings.clientErrors = (e => {
+						const t = vt(e);
 						return [...St(t.requiredStrings, t.blacklistedStrings), ...Et(t.blacklistedStrings, t.maxTitleLength)]
 					})(t), t.titleRequiredStrings.clientErrors = (e => {
-						const t = Rt(e);
+						const t = vt(e);
 						return [...St(t.requiredStrings, t.blacklistedStrings), ...Et(t.requiredStrings, t.maxTitleLength)]
 					})(t), t
 				},
@@ -1582,21 +1582,33 @@
 						hatefulContentFilters: o,
 						postRequirements: i
 					}
-				};
-			const Gt = "PostReq-discard-confirmation",
-				Vt = 150,
-				Kt = Object(u.c)({
+				},
+				Gt = n("./src/telemetry/models/Event.ts");
+			const Vt = (e, t) => n => ({
+					source: Gt.f.CommunitySettings,
+					action: Gt.d.Save,
+					noun: Gt.e.HarassmentControlLevel,
+					setting: {
+						value: `${e}`,
+						oldValue: `${t}`
+					},
+					subreddit: Object(v.ib)(n),
+					...Object(v.n)(n)
+				}),
+				Kt = "PostReq-discard-confirmation",
+				Jt = 150,
+				Zt = Object(u.c)({
 					allowNavigationCallback: L.a,
-					isDiscardModalOpen: Object(T.b)(Gt),
+					isDiscardModalOpen: Object(T.b)(Kt),
 					isLoading: B.a,
 					contentControls: B.b
 				}),
-				Jt = Object(c.b)(Kt, (e, t) => ({
+				zt = Object(c.b)(Zt, (e, t) => ({
 					closeAllModals: () => e(Object(h.f)()),
 					onSave: n => e(Object(m.b)(t.subredditName, n)),
 					toggleModal: t => e(Object(h.i)(t))
 				}));
-			class Zt extends d.a.Component {
+			class Qt extends d.a.Component {
 				constructor(e) {
 					var t;
 					super(e), t = this, this.formBodyRef = d.a.createRef(), this.isUnmounted = !1, this.resetPendingNavigation = () => {
@@ -1622,16 +1634,7 @@
 						if (l()(i) && l()(o)) return;
 						this.setState({
 							isSavePending: !0
-						}), l()(o) || t(e => ({
-							noun: "harassment_control_level",
-							source: "community_settings",
-							action: "save",
-							setting: {
-								value: `${o.hatefulContentThresholdAbuse}`,
-								oldValue: `${this.state.initialFormState.hatefulContentFilters.hatefulContentThresholdAbuse}`
-							},
-							...Object(R.n)(e)
-						}));
+						}), l()(o) || t(Vt(o.hatefulContentThresholdAbuse, this.state.initialFormState.hatefulContentFilters.hatefulContentThresholdAbuse));
 						const r = await this.props.onSave({
 							hatefulContentFilters: o,
 							postRequirements: i
@@ -1667,7 +1670,7 @@
 						maxWait: 500
 					}), this.focusErrorField = () => {
 						const e = this.formBodyRef.current.querySelector('[aria-invalid="true"]');
-						e instanceof HTMLElement && (e.focus(), e.getBoundingClientRect().top < Vt && (e.scrollIntoView(), window.scroll(0, window.scrollY - Vt)))
+						e instanceof HTMLElement && (e.focus(), e.getBoundingClientRect().top < Jt && (e.scrollIntoView(), window.scroll(0, window.scrollY - Jt)))
 					}, this.onFormFieldBlur = () => {
 						this.updateHasUnsavedChanges(), this.updateHasUnsavedChanges.flush()
 					}, this.onSaveClick = () => {
@@ -1761,7 +1764,7 @@
 						isLoading: t
 					})), d.a.createElement(g.a, {
 						blockOnBeforeUnload: !0,
-						dialogId: Gt,
+						dialogId: Kt,
 						enabled: i
 					}), this.props.isDiscardModalOpen && d.a.createElement(b.a, {
 						actionText: s.fbt._("Discard", null, {
@@ -1779,7 +1782,7 @@
 					}))
 				}
 			}
-			t.default = Jt(Object(x.c)(Zt))
+			t.default = zt(Object(x.c)(Qt))
 		},
 		"./src/reddit/controls/DiscreteSlideSelector/Bars/index.m.less": function(e, t, n) {
 			e.exports = {
@@ -1810,4 +1813,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ModHub-ContentControls.3f89d8e5903e3f00ac53.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ModHub-ContentControls.467a96810ba317049e5e.js.map
