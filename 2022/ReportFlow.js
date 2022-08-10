@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ReportFlow.5c0ce16fb24ed780690c.js
-// Retrieved at 8/9/2022, 6:30:12 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ReportFlow.7d5c2b8f035a25f801a2.js
+// Retrieved at 8/10/2022, 11:20:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ReportFlow", "ReportFlowNew"], {
 		"./node_modules/@reddit/i18n-tools/runtime/helpers/locale/index.js": function(e, t, n) {
@@ -3326,14 +3326,14 @@
 						...p,
 						variables: t
 					});
-					return !!Object(i.c)(n) && (n.body.data.subredditInfoById.allowedPostTypes || []).includes(b.y.Talk)
+					return !!Object(i.c)(n) && (n.body.data.subredditInfoById.allowedPostTypes || []).includes(b.A.Talk)
 				}, R = async (e, t) => {
 					var n, o;
 					const s = await Object(a.a)(e, {
 						...m,
 						variables: t
 					});
-					return !!Object(i.c)(s) && (null !== (o = null === (n = s.body.data.profileByName) || void 0 === n ? void 0 : n.allowedPostTypes) && void 0 !== o ? o : []).includes(b.y.Talk)
+					return !!Object(i.c)(s) && (null !== (o = null === (n = s.body.data.profileByName) || void 0 === n ? void 0 : n.allowedPostTypes) && void 0 !== o ? o : []).includes(b.A.Talk)
 				}, C = async e => {
 					var t;
 					const n = await Object(a.a)(e, u);
@@ -3348,19 +3348,19 @@
 						subredditId: t.id
 					}
 				}), g = () => r()(), O = e => e.data.createAudioRoomOrError || e.data.createAudioRoomOnProfile, w = {
-					[b.h.ServiceError]: o.fbt._("Something's wrong with the talk service right now. Check back later.", null, {
+					[b.i.ServiceError]: o.fbt._("Something's wrong with the talk service right now. Check back later.", null, {
 						hk: "3XqPJS"
 					}),
-					[b.h.UserNotAuthorized]: o.fbt._("You don't have permission to start talks in this community.", null, {
+					[b.i.UserNotAuthorized]: o.fbt._("You don't have permission to start talks in this community.", null, {
 						hk: "1XY1Ss"
 					}),
-					[b.h.RoomLimitExceeded]: o.fbt._("You can only create three talks at one time. To continue, close a talk you're not using.", null, {
+					[b.i.RoomLimitExceeded]: o.fbt._("You can only create three talks at one time. To continue, close a talk you're not using.", null, {
 						hk: "3zPx9X"
 					}),
-					[b.h.ConcurrentRoomLimitExceeded]: o.fbt._("Too many talks are happening right now. Try again later.", null, {
+					[b.i.ConcurrentRoomLimitExceeded]: o.fbt._("Too many talks are happening right now. Try again later.", null, {
 						hk: "2LYXJx"
 					}),
-					[b.h.SubredditRoomLimitExceeded]: o.fbt._("This community can only host two talks at a time. Try again after one has ended.", null, {
+					[b.i.SubredditRoomLimitExceeded]: o.fbt._("This community can only host two talks at a time. Try again after one has ended.", null, {
 						hk: "2mGf21"
 					})
 				}
@@ -3981,4 +3981,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ReportFlow.5c0ce16fb24ed780690c.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ReportFlow.7d5c2b8f035a25f801a2.js.map

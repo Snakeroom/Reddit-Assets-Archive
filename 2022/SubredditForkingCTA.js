@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditForkingCTA.61705690a07744f4141e.js
-// Retrieved at 8/9/2022, 6:30:12 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditForkingCTA.da2baf98d57fd6848d34.js
+// Retrieved at 8/10/2022, 11:20:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditForkingCTA"], {
 		"./node_modules/lodash/xorWith.js": function(t, _, e) {
@@ -178,9 +178,9 @@
 			})), e.d(_, "t", (function() {
 				return C
 			})), e.d(_, "u", (function() {
-				return F
-			})), e.d(_, "r", (function() {
 				return I
+			})), e.d(_, "r", (function() {
+				return F
 			})), e.d(_, "a", (function() {
 				return S
 			})), e.d(_, "s", (function() {
@@ -223,8 +223,8 @@
 				q = n.a.div("ModalAnnotation", u.a),
 				T = n.a.div("ModalMain", u.a),
 				C = n.a.textarea("TextArea", u.a),
-				F = n.a.wrapped(i.l, "WarningButton", u.a),
-				I = n.a.wrapped(i.l, "PrimaryButton", u.a),
+				I = n.a.wrapped(i.l, "WarningButton", u.a),
+				F = n.a.wrapped(i.l, "PrimaryButton", u.a),
 				S = n.a.wrapped(i.o, "CancelButton", u.a),
 				A = n.a.wrapped(i.r, "RemoveButton", u.a),
 				M = t => {
@@ -257,10 +257,10 @@
 				m = e("./src/reddit/helpers/chooseVariant/index.ts"),
 				p = e("./src/reddit/selectors/experiments/utils.ts");
 			const f = Object(u.a)(t => Object(m.c)(t, {
-					experimentName: l.Bf,
+					experimentName: l.Cf,
 					experimentEligibilitySelector: m.a
 				}), p.a),
-				b = Object(u.a)(f, t => t === l.Hf.Enabled);
+				b = Object(u.a)(f, t => t === l.If.Enabled);
 			var x = e("./src/reddit/selectors/posts.ts"),
 				y = e("./src/reddit/components/CreateCommunityButton/index.tsx"),
 				h = e("./src/reddit/components/TrackingHelper/index.tsx");
@@ -1436,4 +1436,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditForkingCTA.61705690a07744f4141e.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditForkingCTA.da2baf98d57fd6848d34.js.map

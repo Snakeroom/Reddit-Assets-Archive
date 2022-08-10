@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfileFollowersPage.d62a94825b1f6898adf7.js
-// Retrieved at 8/9/2022, 6:30:12 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfileFollowersPage.592615471505cac9c77d.js
+// Retrieved at 8/10/2022, 11:20:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfileFollowersPage", "ProfileFollowersAction"], {
 		"./node_modules/lodash/take.js": function(e, t, s) {
@@ -4065,7 +4065,7 @@
 				const t = Object(i.f)().getState(),
 					s = Object(h.a)(t, Object(a.c)());
 				if (e.isD2xPdpSideRailRecsEnabled) {
-					const t = e.d2xPdpSideRailRecsVariant === u.Pc.GreyRereddit || e.d2xPdpSideRailRecsVariant === u.Pc.GreyRedditNoNsfw || e.d2xPdpSideRailRecsVariant === u.Pc.LargeImagePreview ? e.reredditButtons : [];
+					const t = e.d2xPdpSideRailRecsVariant === u.Qc.GreyRereddit || e.d2xPdpSideRailRecsVariant === u.Qc.GreyRedditNoNsfw || e.d2xPdpSideRailRecsVariant === u.Qc.LargeImagePreview ? e.reredditButtons : [];
 					return n.a.createElement(w, {
 						reredditContent: t
 					})
@@ -6137,11 +6137,11 @@
 				d = s("./node_modules/reselect/es/index.js");
 			const l = Object(d.a)(e => Object(n.c)(e, {
 					experimentEligibilitySelector: e => Object(a.h)(e) && Object(i.f)(e),
-					experimentName: r.pc
+					experimentName: r.qc
 				}), o.a),
 				c = Object(d.a)(e => Object(n.c)(e, {
 					experimentEligibilitySelector: e => !Object(a.h)(e) && Object(i.f)(e),
-					experimentName: r.oc
+					experimentName: r.pc
 				}), o.a),
 				u = Object(d.a)(l, c, (e, t) => e || t),
 				m = Object(d.a)(l, c, (e, t) => !(!e && !t))
@@ -6158,13 +6158,13 @@
 			const i = e => {
 					return !(Object(n.c)(e, {
 						experimentEligibilitySelector: n.a,
-						experimentName: r.oe
-					}) === r.Hd)
+						experimentName: r.pe
+					}) === r.Id)
 				},
 				o = e => Object(n.c)(e, {
 					experimentEligibilitySelector: n.a,
-					experimentName: r.pe
-				}) === r.Hd
+					experimentName: r.qe
+				}) === r.Id
 		},
 		"./src/reddit/selectors/followers.ts": function(e, t, s) {
 			"use strict";
@@ -6215,4 +6215,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileFollowersPage.d62a94825b1f6898adf7.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileFollowersPage.592615471505cac9c77d.js.map

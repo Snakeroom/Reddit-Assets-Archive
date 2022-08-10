@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostSetPage.42e54328f66c6f8a93f9.js
-// Retrieved at 8/9/2022, 6:30:12 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostSetPage.2dc5ebbff61df9222264.js
+// Retrieved at 8/10/2022, 11:20:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostSetPage"], {
 		"./node_modules/intersection-observer/intersection-observer.js": function(e, t) {
@@ -757,7 +757,7 @@
 				const t = Object(i.f)().getState(),
 					n = Object(h.a)(t, Object(a.c)());
 				if (e.isD2xPdpSideRailRecsEnabled) {
-					const t = e.d2xPdpSideRailRecsVariant === u.Pc.GreyRereddit || e.d2xPdpSideRailRecsVariant === u.Pc.GreyRedditNoNsfw || e.d2xPdpSideRailRecsVariant === u.Pc.LargeImagePreview ? e.reredditButtons : [];
+					const t = e.d2xPdpSideRailRecsVariant === u.Qc.GreyRereddit || e.d2xPdpSideRailRecsVariant === u.Qc.GreyRedditNoNsfw || e.d2xPdpSideRailRecsVariant === u.Qc.LargeImagePreview ? e.reredditButtons : [];
 					return r.a.createElement(O, {
 						reredditContent: t
 					})
@@ -2294,11 +2294,11 @@
 				c = n("./node_modules/reselect/es/index.js");
 			const d = Object(c.a)(e => Object(r.c)(e, {
 					experimentEligibilitySelector: e => Object(a.h)(e) && Object(i.f)(e),
-					experimentName: s.pc
+					experimentName: s.qc
 				}), o.a),
 				l = Object(c.a)(e => Object(r.c)(e, {
 					experimentEligibilitySelector: e => !Object(a.h)(e) && Object(i.f)(e),
-					experimentName: s.oc
+					experimentName: s.pc
 				}), o.a),
 				u = Object(c.a)(d, l, (e, t) => e || t),
 				m = Object(c.a)(d, l, (e, t) => !(!e && !t))
@@ -2315,14 +2315,14 @@
 			const i = (e, t) => {
 					return Object(r.c)(e, {
 						experimentEligibilitySelector: () => t,
-						experimentName: s.sc
-					}) === s.Hd
+						experimentName: s.tc
+					}) === s.Id
 				},
 				o = e => {
 					return Object(r.c)(e, {
 						experimentEligibilitySelector: r.a,
-						experimentName: s.rc
-					}) === s.Hd
+						experimentName: s.sc
+					}) === s.Id
 				}
 		},
 		"./src/reddit/selectors/focusedVerticalSuggestion.ts": function(e, t, n) {
@@ -2449,4 +2449,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostSetPage.42e54328f66c6f8a93f9.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostSetPage.2dc5ebbff61df9222264.js.map

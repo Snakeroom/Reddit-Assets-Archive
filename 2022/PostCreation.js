@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostCreation.6d60e597fb28f018203c.js
-// Retrieved at 8/9/2022, 6:30:12 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostCreation.320b88e10b909868b3bb.js
+// Retrieved at 8/10/2022, 11:20:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostCreation", "ChatMessageInput~MembershipPaywallPage~RichTextEditor", "ContributorRequestButton"], {
 		"./node_modules/autosize/dist/autosize.js": function(e, t, n) {
@@ -1513,7 +1513,7 @@
 			const le = Object(ce.a)(e => Object(ae.c)(e, {
 				experimentEligibilitySelector: ae.a,
 				experimentName: ie.Lb
-			}), e => e === ie.Hd);
+			}), e => e === ie.Id);
 			var de = n("./src/reddit/selectors/experiments/contributeBeforeSignUp.ts"),
 				ue = n("./src/reddit/selectors/experiments/emailEnablement.ts"),
 				pe = n("./src/reddit/selectors/platform.ts"),
@@ -19351,7 +19351,7 @@
 				const t = Object(r.f)().getState(),
 					n = Object(h.a)(t, Object(a.c)());
 				if (e.isD2xPdpSideRailRecsEnabled) {
-					const t = e.d2xPdpSideRailRecsVariant === u.Pc.GreyRereddit || e.d2xPdpSideRailRecsVariant === u.Pc.GreyRedditNoNsfw || e.d2xPdpSideRailRecsVariant === u.Pc.LargeImagePreview ? e.reredditButtons : [];
+					const t = e.d2xPdpSideRailRecsVariant === u.Qc.GreyRereddit || e.d2xPdpSideRailRecsVariant === u.Qc.GreyRedditNoNsfw || e.d2xPdpSideRailRecsVariant === u.Qc.LargeImagePreview ? e.reredditButtons : [];
 					return s.a.createElement(_, {
 						reredditContent: t
 					})
@@ -24210,14 +24210,14 @@
 						...p,
 						variables: t
 					});
-					return !!Object(a.c)(n) && (n.body.data.subredditInfoById.allowedPostTypes || []).includes(b.y.Talk)
+					return !!Object(a.c)(n) && (n.body.data.subredditInfoById.allowedPostTypes || []).includes(b.A.Talk)
 				}, E = async (e, t) => {
 					var n, o;
 					const s = await Object(i.a)(e, {
 						...m,
 						variables: t
 					});
-					return !!Object(a.c)(s) && (null !== (o = null === (n = s.body.data.profileByName) || void 0 === n ? void 0 : n.allowedPostTypes) && void 0 !== o ? o : []).includes(b.y.Talk)
+					return !!Object(a.c)(s) && (null !== (o = null === (n = s.body.data.profileByName) || void 0 === n ? void 0 : n.allowedPostTypes) && void 0 !== o ? o : []).includes(b.A.Talk)
 				}, C = async e => {
 					var t;
 					const n = await Object(i.a)(e, u);
@@ -24232,19 +24232,19 @@
 						subredditId: t.id
 					}
 				}), y = () => r()(), O = e => e.data.createAudioRoomOrError || e.data.createAudioRoomOnProfile, v = {
-					[b.h.ServiceError]: o.fbt._("Something's wrong with the talk service right now. Check back later.", null, {
+					[b.i.ServiceError]: o.fbt._("Something's wrong with the talk service right now. Check back later.", null, {
 						hk: "3XqPJS"
 					}),
-					[b.h.UserNotAuthorized]: o.fbt._("You don't have permission to start talks in this community.", null, {
+					[b.i.UserNotAuthorized]: o.fbt._("You don't have permission to start talks in this community.", null, {
 						hk: "1XY1Ss"
 					}),
-					[b.h.RoomLimitExceeded]: o.fbt._("You can only create three talks at one time. To continue, close a talk you're not using.", null, {
+					[b.i.RoomLimitExceeded]: o.fbt._("You can only create three talks at one time. To continue, close a talk you're not using.", null, {
 						hk: "3zPx9X"
 					}),
-					[b.h.ConcurrentRoomLimitExceeded]: o.fbt._("Too many talks are happening right now. Try again later.", null, {
+					[b.i.ConcurrentRoomLimitExceeded]: o.fbt._("Too many talks are happening right now. Try again later.", null, {
 						hk: "2LYXJx"
 					}),
-					[b.h.SubredditRoomLimitExceeded]: o.fbt._("This community can only host two talks at a time. Try again after one has ended.", null, {
+					[b.i.SubredditRoomLimitExceeded]: o.fbt._("This community can only host two talks at a time. Try again after one has ended.", null, {
 						hk: "2mGf21"
 					})
 				}
@@ -28097,12 +28097,12 @@
 							});
 							if (!e.ok) return f(Object(v.f)({
 								kind: R.b.Error,
-								text: S.a[M.h.ServiceError]
+								text: S.a[M.i.ServiceError]
 							})), void b(!1);
 							const t = Object(S.g)(e.body);
 							if (null == t ? void 0 : t.errorState) return f(Object(v.f)({
 								kind: R.b.Error,
-								text: S.a[t.errorState.code] || S.a[M.h.ServiceError]
+								text: S.a[t.errorState.code] || S.a[M.i.ServiceError]
 							})), void b(!1);
 							(null == t ? void 0 : t.okState) && (window.location.href = `${O.a.redditUrl}/talk/${t.okState.roomId}`)
 						},
@@ -34100,11 +34100,11 @@
 				c = n("./node_modules/reselect/es/index.js");
 			const l = Object(c.a)(e => Object(s.c)(e, {
 					experimentEligibilitySelector: e => Object(a.h)(e) && Object(r.f)(e),
-					experimentName: o.pc
+					experimentName: o.qc
 				}), i.a),
 				d = Object(c.a)(e => Object(s.c)(e, {
 					experimentEligibilitySelector: e => !Object(a.h)(e) && Object(r.f)(e),
-					experimentName: o.oc
+					experimentName: o.pc
 				}), i.a),
 				u = Object(c.a)(l, d, (e, t) => e || t),
 				p = Object(c.a)(l, d, (e, t) => !(!e && !t))
@@ -34125,7 +34125,7 @@
 			const l = Object(o.a)(a.f, i.f, (e, t) => e && !t),
 				d = e => Object(r.c)(e, {
 					experimentEligibilitySelector: l,
-					experimentName: s.fc
+					experimentName: s.gc
 				}),
 				u = e => !!Object(c.a)(d(e))
 		},
@@ -34137,9 +34137,9 @@
 			var o = n("./src/reddit/constants/experiments.ts"),
 				s = n("./src/reddit/helpers/chooseVariant/index.ts");
 			const r = e => Object(s.c)(e, {
-				experimentName: o.ze,
+				experimentName: o.Ae,
 				experimentEligibilitySelector: s.a
-			}) === o.Ie.Enabled
+			}) === o.Je.Enabled
 		},
 		"./src/reddit/selectors/experiments/presence.ts": function(e, t, n) {
 			"use strict";
@@ -34151,8 +34151,8 @@
 			const r = e => {
 				return Object(s.c)(e, {
 					experimentEligibilitySelector: s.a,
-					experimentName: o.We
-				}) === o.Hd
+					experimentName: o.Xe
+				}) === o.Id
 			}
 		},
 		"./src/reddit/selectors/experiments/typingIndicators.ts": function(e, t, n) {
@@ -34174,29 +34174,29 @@
 					if (Object(i.a)(e)) return !1;
 					return Object(s.c)(e, {
 						experimentEligibilitySelector: r.e,
-						experimentName: o.cg
-					}) === o.Hd
+						experimentName: o.dg
+					}) === o.Id
 				},
 				c = e => {
 					return Object(s.c)(e, {
 						experimentEligibilitySelector: r.e,
-						experimentName: o.dg
-					}) === o.Hd
+						experimentName: o.eg
+					}) === o.Id
 				},
 				l = e => {
 					if (Object(i.a)(e)) return !1;
 					const t = Object(s.c)(e, {
 						experimentEligibilitySelector: r.e,
-						experimentName: o.bg
+						experimentName: o.cg
 					});
-					return t === o.Rf.TypingIndicators || t === o.Rf.IndicatorsPlusCTA
+					return t === o.Sf.TypingIndicators || t === o.Sf.IndicatorsPlusCTA
 				},
 				d = e => {
 					if (Object(i.a)(e)) return !1;
 					const t = Object(r.d)(e, {
-						experimentName: o.bg
+						experimentName: o.cg
 					});
-					return (null == t ? void 0 : t.variant) === o.Rf.IndicatorsPlusCTA
+					return (null == t ? void 0 : t.variant) === o.Sf.IndicatorsPlusCTA
 				}
 		},
 		"./src/reddit/selectors/gold/enabledFeatures.ts": function(e, t, n) {
@@ -34622,4 +34622,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.6d60e597fb28f018203c.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.320b88e10b909868b3bb.js.map

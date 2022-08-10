@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Topic.dbc7b605acd9d5357227.js
-// Retrieved at 8/9/2022, 6:30:12 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Topic.c4d245f888ada69c9692.js
+// Retrieved at 8/10/2022, 11:20:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Topic"], {
 		"./node_modules/intersection-observer/intersection-observer.js": function(e, t) {
@@ -517,13 +517,13 @@
 					postLayout: h.S,
 					redditStyle: h.D
 				}),
-				P = Object(o.b)(N, e => ({
+				I = Object(o.b)(N, e => ({
 					onListingLayoutChange: (t, s) => e(Object(u.y)(t, s)),
 					openDropdown: () => e(Object(m.h)({
 						tooltipId: C
 					}))
 				}));
-			class I extends i.a.Component {
+			class P extends i.a.Component {
 				constructor() {
 					super(...arguments), this.changeLayout = e => {
 						const {
@@ -597,7 +597,7 @@
 					}), i.a.createElement(g.a.Consumer, null, this.renderDropdown)))
 				}
 			}
-			t.a = w(P(Object(p.c)(Object(l.a)(I))))
+			t.a = w(I(Object(p.c)(Object(l.a)(P))))
 		},
 		"./src/reddit/components/ListingPostList/index.tsx": function(e, t, s) {
 			"use strict";
@@ -723,7 +723,7 @@
 				const t = Object(i.f)().getState(),
 					s = Object(b.a)(t, Object(a.c)());
 				if (e.isD2xPdpSideRailRecsEnabled) {
-					const t = e.d2xPdpSideRailRecsVariant === u.Pc.GreyRereddit || e.d2xPdpSideRailRecsVariant === u.Pc.GreyRedditNoNsfw || e.d2xPdpSideRailRecsVariant === u.Pc.LargeImagePreview ? e.reredditButtons : [];
+					const t = e.d2xPdpSideRailRecsVariant === u.Qc.GreyRereddit || e.d2xPdpSideRailRecsVariant === u.Qc.GreyRedditNoNsfw || e.d2xPdpSideRailRecsVariant === u.Qc.LargeImagePreview ? e.reredditButtons : [];
 					return r.a.createElement(S, {
 						reredditContent: t
 					})
@@ -1241,14 +1241,14 @@
 						className: C.a.SubscribeButton
 					}))
 				},
-				P = s("./src/reddit/components/TopicSidebar/SubredditList/index.m.less"),
-				I = s.n(P);
+				I = s("./src/reddit/components/TopicSidebar/SubredditList/index.m.less"),
+				P = s.n(I);
 			const {
 				fbt: R
 			} = s("./node_modules/fbt/lib/FbtPublic.js"), F = 8, W = Array.from({
 				length: F
 			}).map((e, t) => r.a.createElement(N, {
-				className: I.a.Subreddit,
+				className: P.a.Subreddit,
 				key: t
 			})), B = {
 				enabled: !0,
@@ -1272,24 +1272,24 @@
 						topicUrl: s
 					} = this.props, n = t.slice(0, F);
 					return r.a.createElement(a.a, {
-						className: Object(o.a)(I.a.Container, e)
+						className: Object(o.a)(P.a.Container, e)
 					}, r.a.createElement("div", {
-						className: I.a.Title
+						className: P.a.Title
 					}, r.a.createElement(c.b, {
 						type: c.a.Widget
 					}, R._("Top Communities", null, {
 						hk: "46yzcK"
 					}))), r.a.createElement("div", {
-						className: I.a.SubredditList
+						className: P.a.SubredditList
 					}, n.length > 0 ? n.map(e => r.a.createElement(L, {
-						className: I.a.Subreddit,
+						className: P.a.Subreddit,
 						discoveryUnit: B,
 						key: e,
 						subredditId: e
 					})) : W), t.length > F && r.a.createElement(i.a, {
 						to: s
 					}, r.a.createElement(l.r, {
-						className: I.a.SeeMore,
+						className: P.a.SeeMore,
 						onClick: this.onSeeMoreCommunities
 					}, R._("See more", null, {
 						hk: "2qkY6H"
@@ -1928,9 +1928,9 @@
 				L = s("./src/reddit/layout/page/Listing/index.tsx"),
 				w = s("./src/reddit/pages/ErrorPages/index.tsx"),
 				N = s("./node_modules/react-router-dom/esm/react-router-dom.js"),
-				P = s("./src/reddit/controls/Button/index.tsx"),
-				I = s("./src/reddit/pages/Topic/TopicHeader/TopicTab/index.m.less"),
-				R = s.n(I);
+				I = s("./src/reddit/controls/Button/index.tsx"),
+				P = s("./src/reddit/pages/Topic/TopicHeader/TopicTab/index.m.less"),
+				R = s.n(P);
 			class F extends r.a.Component {
 				constructor() {
 					super(...arguments), this.onClick = () => {
@@ -2046,7 +2046,7 @@
 			const {
 				fbt: U
 			} = s("./node_modules/fbt/lib/FbtPublic.js"), q = 5;
-			class K extends r.a.Component {
+			class Q extends r.a.Component {
 				constructor() {
 					super(...arguments), this.onClick = () => {
 						const {
@@ -2075,7 +2075,7 @@
 					return t.length < q ? null : r.a.createElement(N.a, {
 						onClick: this.onClick,
 						to: "#"
-					}, r.a.createElement(P.r, {
+					}, r.a.createElement(I.r, {
 						className: z.a.SeeAllRelatedTopics
 					}, U._("See all {=[Topic name plural]}", [U._param("=[Topic name plural]", r.a.createElement("span", {
 						className: z.a.TopicName
@@ -2086,8 +2086,8 @@
 					})))
 				}
 			}
-			var Y = K,
-				Q = s("./src/lib/prettyPrintNumber/index.ts"),
+			var K = Q,
+				Y = s("./src/lib/prettyPrintNumber/index.ts"),
 				Z = s("./src/reddit/components/Flair/index.tsx"),
 				X = s("./src/reddit/components/SubredditIcon/index.tsx"),
 				$ = s("./src/reddit/components/SubscribeButton/index.tsx"),
@@ -2139,7 +2139,7 @@
 					}, ae._({
 						"*": "{subscribers count} members",
 						_1: "member"
-					}, [ae._plural(n.subscribers, "subscribers count", Object(Q.b)(n.subscribers))], {
+					}, [ae._plural(n.subscribers, "subscribers count", Object(Y.b)(n.subscribers))], {
 						hk: "48BXj1"
 					})), n.isNSFW && r.a.createElement(Z.b, {
 						flair: le
@@ -2265,7 +2265,7 @@
 			} = s("./node_modules/fbt/lib/FbtPublic.js"), Le = Object(k.u)(), we = (e, t) => t.match.params.sort || a.X, Ne = e => {
 				const t = [];
 				return e ? (e.hasPosts && t.push(V.Posts), e.hasSubreddits && t.push(V.Communities), e.childRelationships.length && t.push(V.RelatedTopics), t) : t
-			}, Pe = Object(d.b)(() => Object(i.a)((e, t) => Object(Oe.d)(e, t.match.params.topicSlug), (e, t) => Object(Oe.e)(e, {
+			}, Ie = Object(d.b)(() => Object(i.a)((e, t) => Object(Oe.d)(e, t.match.params.topicSlug), (e, t) => Object(Oe.e)(e, {
 				topicSlug: t.match.params.topicSlug
 			}), (e, t) => Object(Oe.c)(e, {
 				topicSlug: t.match.params.topicSlug
@@ -2289,14 +2289,14 @@
 				topicNamePlural: t
 			})), (e, t) => ({
 				onLoadMorePosts: () => e(Object(l.morePostsRequested)(t.match.params))
-			})), Ie = (e, t) => e === V.Communities ? C.g.Large : t;
+			})), Pe = (e, t) => e === V.Communities ? C.g.Large : t;
 			class Re extends r.a.Component {
 				constructor(e) {
 					var t;
 					super(e), t = this, this.openTab = function(e) {
 						let s = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : 0;
 						t.setState({
-							activeLayout: Ie(e, t.props.layout),
+							activeLayout: Pe(e, t.props.layout),
 							activeRelationshipIndex: s,
 							activeTab: e
 						}), window.scrollTo(0, 0)
@@ -2313,7 +2313,7 @@
 							timerMillis: e,
 							timeSort: this.props.timeSort
 						})
-					}, this.renderNoPosts = () => null, this.renderRelationship = (e, t) => r.a.createElement(Y, {
+					}, this.renderNoPosts = () => null, this.renderRelationship = (e, t) => r.a.createElement(K, {
 						key: e.slug,
 						openTab: this.openTab,
 						relationship: e,
@@ -2331,7 +2331,7 @@
 						i = e.tabs[0],
 						o = s || r || i;
 					return {
-						activeLayout: Ie(o, e.layout),
+						activeLayout: Pe(o, e.layout),
 						activeRelationship: t.activeRelationshipIndex,
 						activeTab: o
 					}
@@ -2437,7 +2437,7 @@
 					}))
 				}
 			}
-			t.default = Le(Pe(Re))
+			t.default = Le(Ie(Re))
 		},
 		"./src/reddit/selectors/experiments/d2xPdpSideRailRecs.ts": function(e, t, s) {
 			"use strict";
@@ -2454,11 +2454,11 @@
 				c = s("./node_modules/reselect/es/index.js");
 			const d = Object(c.a)(e => Object(r.c)(e, {
 					experimentEligibilitySelector: e => Object(a.h)(e) && Object(i.f)(e),
-					experimentName: n.pc
+					experimentName: n.qc
 				}), o.a),
 				l = Object(c.a)(e => Object(r.c)(e, {
 					experimentEligibilitySelector: e => !Object(a.h)(e) && Object(i.f)(e),
-					experimentName: n.oc
+					experimentName: n.pc
 				}), o.a),
 				u = Object(c.a)(d, l, (e, t) => e || t),
 				m = Object(c.a)(d, l, (e, t) => !(!e && !t))
@@ -2587,4 +2587,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Topic.dbc7b605acd9d5357227.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Topic.c4d245f888ada69c9692.js.map

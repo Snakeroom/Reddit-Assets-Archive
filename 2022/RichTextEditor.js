@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/RichTextEditor.af7543b9d2ba9327f823.js
-// Retrieved at 8/9/2022, 6:30:12 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/RichTextEditor.282e3adff3f9d4cac672.js
+// Retrieved at 8/10/2022, 11:20:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["RichTextEditor", "ContributorRequestButton"], {
 		"./node_modules/autosize/dist/autosize.js": function(e, t, n) {
@@ -775,7 +775,7 @@
 			const de = Object(ce.a)(e => Object(ae.c)(e, {
 				experimentEligibilitySelector: ae.a,
 				experimentName: ie.Lb
-			}), e => e === ie.Hd);
+			}), e => e === ie.Id);
 			var le = n("./src/reddit/selectors/experiments/contributeBeforeSignUp.ts"),
 				ue = n("./src/reddit/selectors/experiments/emailEnablement.ts"),
 				me = n("./src/reddit/selectors/platform.ts"),
@@ -5924,29 +5924,29 @@
 					if (Object(i.a)(e)) return !1;
 					return Object(r.c)(e, {
 						experimentEligibilitySelector: s.e,
-						experimentName: o.cg
-					}) === o.Hd
+						experimentName: o.dg
+					}) === o.Id
 				},
 				c = e => {
 					return Object(r.c)(e, {
 						experimentEligibilitySelector: s.e,
-						experimentName: o.dg
-					}) === o.Hd
+						experimentName: o.eg
+					}) === o.Id
 				},
 				d = e => {
 					if (Object(i.a)(e)) return !1;
 					const t = Object(r.c)(e, {
 						experimentEligibilitySelector: s.e,
-						experimentName: o.bg
+						experimentName: o.cg
 					});
-					return t === o.Rf.TypingIndicators || t === o.Rf.IndicatorsPlusCTA
+					return t === o.Sf.TypingIndicators || t === o.Sf.IndicatorsPlusCTA
 				},
 				l = e => {
 					if (Object(i.a)(e)) return !1;
 					const t = Object(s.d)(e, {
-						experimentName: o.bg
+						experimentName: o.cg
 					});
-					return (null == t ? void 0 : t.variant) === o.Rf.IndicatorsPlusCTA
+					return (null == t ? void 0 : t.variant) === o.Sf.IndicatorsPlusCTA
 				}
 		},
 		"./src/redditGQL/operations/CommentToxicity.json": function(e) {
@@ -5963,4 +5963,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RichTextEditor.af7543b9d2ba9327f823.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RichTextEditor.282e3adff3f9d4cac672.js.map

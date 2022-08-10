@@ -1,41 +1,41 @@
-// https://www.redditstatic.com/desktop2x/NotificationsPrePromptLoader.681de91397ce1e6fedfe.js
-// Retrieved at 8/9/2022, 6:30:12 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/NotificationsPrePromptLoader.58802db6f794df74d0b3.js
+// Retrieved at 8/10/2022, 11:20:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["NotificationsPrePromptLoader"], {
-		"./src/reddit/components/NotificationsPrePrompt/index.m.less": function(e, t, c) {
+		"./src/reddit/components/NotificationsPrePrompt/index.m.less": function(e, t, n) {
 			e.exports = {
 				overlay: "_3Ig_EsWWVLquWs2yBBQjec",
 				backgroundAnimation: "_2iwhmPhcdf_cKfsjSxiNTC"
 			}
 		},
-		"./src/reddit/components/NotificationsPrePrompt/index.tsx": function(e, t, c) {
+		"./src/reddit/components/NotificationsPrePrompt/index.tsx": function(e, t, n) {
 			"use strict";
-			c.r(t);
-			var n = c("./node_modules/react/index.js"),
-				r = c.n(n),
-				i = c("./node_modules/react-redux/es/index.js"),
-				s = c("./src/higherOrderComponents/asModal/index.tsx"),
-				o = c("./src/lib/notifications/constants.ts"),
-				a = c("./src/reddit/components/TrackingHelper/index.tsx"),
-				d = c("./src/reddit/constants/experiments.ts"),
-				l = c("./src/reddit/helpers/trackers/notifications.ts"),
-				u = c("./src/reddit/helpers/chooseVariant/index.ts");
+			n.r(t);
+			var r = n("./node_modules/react/index.js"),
+				c = n.n(r),
+				i = n("./node_modules/react-redux/es/index.js"),
+				s = n("./src/higherOrderComponents/asModal/index.tsx"),
+				o = n("./src/lib/notifications/constants.ts"),
+				a = n("./src/reddit/components/TrackingHelper/index.tsx"),
+				d = n("./src/reddit/constants/experiments.ts"),
+				l = n("./src/reddit/helpers/trackers/notifications.ts"),
+				u = n("./src/reddit/helpers/chooseVariant/index.ts");
 
 			function m(e) {
 				const t = Object(u.c)(e, {
 					experimentEligibilitySelector: u.a,
 					experimentName: d.Eb
 				});
-				return !Object(d.gg)(t) && t
+				return !Object(d.hg)(t) && t
 			}
-			var O, b = c("./src/reddit/components/NotificationsPrePrompt/index.m.less"),
-				p = c.n(b);
+			var O, b = n("./src/reddit/components/NotificationsPrePrompt/index.m.less"),
+				p = n.n(b);
 
 			function f() {
 				return (f = Object.assign || function(e) {
 					for (var t = 1; t < arguments.length; t++) {
-						var c = arguments[t];
-						for (var n in c) Object.prototype.hasOwnProperty.call(c, n) && (e[n] = c[n])
+						var n = arguments[t];
+						for (var r in n) Object.prototype.hasOwnProperty.call(n, r) && (e[r] = n[r])
 					}
 					return e
 				}).apply(this, arguments)
@@ -45,20 +45,20 @@
 			const j = Object(s.a)(() => null);
 			t.default = e => {
 				const t = Object(a.b)(),
-					c = Object(i.d)(),
-					[s, u] = Object(n.useState)(),
+					n = Object(i.d)(),
+					[s, u] = Object(r.useState)(),
 					b = Object(i.e)(m),
-					_ = Object(n.useCallback)(() => b === d.Zc.ThreeSeconds ? O.ThreeSec : b === d.Zc.FiveSeconds ? O.FiveSec : O.TenSec, [b]);
-				return Object(n.useEffect)(() => {
+					h = Object(r.useCallback)(() => b === d.ad.ThreeSeconds ? O.ThreeSec : b === d.ad.FiveSeconds ? O.FiveSec : O.TenSec, [b]);
+				return Object(r.useEffect)(() => {
 					if (b) {
-						const e = _();
+						const e = h();
 						u(setTimeout(() => {
-							c(Object(o.k)()), t(Object(l.g)())
+							n(Object(o.k)()), t(Object(l.g)())
 						}, e))
 					}
-				}, [c, b, t, _]), r.a.createElement(j, f({
+				}, [n, b, t, h]), c.a.createElement(j, f({
 					onOverlayClick: () => {
-						b && (clearTimeout(Number(s)), c(Object(o.k)()), t(Object(l.h)()))
+						b && (clearTimeout(Number(s)), n(Object(o.k)()), t(Object(l.h)()))
 					}
 				}, e, {
 					overlayClassName: p.a.overlay,
@@ -68,4 +68,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/NotificationsPrePromptLoader.681de91397ce1e6fedfe.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/NotificationsPrePromptLoader.58802db6f794df74d0b3.js.map

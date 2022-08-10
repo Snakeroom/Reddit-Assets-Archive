@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Frontpage~ModListing.50bf6dbaf7f0fcc4d887.js
-// Retrieved at 8/9/2022, 6:30:12 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Frontpage~ModListing.88b494cbad1d7f0b3ab7.js
+// Retrieved at 8/10/2022, 11:20:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Frontpage~ModListing"], {
 		"./src/reddit/actions/focusedVerticals/index.ts": function(e, t, n) {
@@ -786,10 +786,10 @@
 				}))))))), "ListingSort", D.a),
 				Y = n("./src/reddit/constants/parameters.ts");
 			const J = e => {
-					const t = Z[e];
+					const t = Q[e];
 					return t && t() || ""
 				},
-				Z = {
+				Q = {
 					[b.fc.AllStates]: () => y.fbt._("All", null, {
 						hk: "3FfdRL"
 					}),
@@ -947,8 +947,8 @@
 						hk: "1QaJzt"
 					})
 				};
-			var Q = n("./src/reddit/components/StateSort/index.m.less"),
-				X = n.n(Q);
+			var Z = n("./src/reddit/components/StateSort/index.m.less"),
+				X = n.n(Z);
 
 			function $() {
 				return ($ = Object.assign || function(e) {
@@ -1657,7 +1657,7 @@
 				const t = Object(o.f)().getState(),
 					n = Object(b.a)(t, Object(i.c)());
 				if (e.isD2xPdpSideRailRecsEnabled) {
-					const t = e.d2xPdpSideRailRecsVariant === u.Pc.GreyRereddit || e.d2xPdpSideRailRecsVariant === u.Pc.GreyRedditNoNsfw || e.d2xPdpSideRailRecsVariant === u.Pc.LargeImagePreview ? e.reredditButtons : [];
+					const t = e.d2xPdpSideRailRecsVariant === u.Qc.GreyRereddit || e.d2xPdpSideRailRecsVariant === u.Qc.GreyRedditNoNsfw || e.d2xPdpSideRailRecsVariant === u.Qc.LargeImagePreview ? e.reredditButtons : [];
 					return r.a.createElement(x, {
 						reredditContent: t
 					})
@@ -2483,7 +2483,7 @@
 				const p = Object(a.e)(e => e.subreddits.survey[n]),
 					b = Object(a.e)(e => e.subreddits.progressModule[n]),
 					h = Object(a.e)(u.a),
-					f = h !== d.Ke.NewModule;
+					f = h !== d.Le.NewModule;
 				return (null === (r = null == b ? void 0 : b.cards) || void 0 === r ? void 0 : r.length) > 0 && f ? o.a.createElement(m, {
 					closeModuleOnMount: !!t && t !== l.g.Large,
 					subredditId: n,
@@ -2511,11 +2511,11 @@
 				c = n("./node_modules/reselect/es/index.js");
 			const d = Object(c.a)(e => Object(r.c)(e, {
 					experimentEligibilitySelector: e => Object(i.h)(e) && Object(o.f)(e),
-					experimentName: s.pc
+					experimentName: s.qc
 				}), a.a),
 				l = Object(c.a)(e => Object(r.c)(e, {
 					experimentEligibilitySelector: e => !Object(i.h)(e) && Object(o.f)(e),
-					experimentName: s.oc
+					experimentName: s.pc
 				}), a.a),
 				u = Object(c.a)(d, l, (e, t) => e || t),
 				m = Object(c.a)(d, l, (e, t) => !(!e && !t))
@@ -2533,15 +2533,15 @@
 			const a = e => {
 					const t = Object(r.c)(e, {
 						experimentEligibilitySelector: o.Q,
-						experimentName: s.kd
+						experimentName: s.ld
 					});
-					return !(!t || Object(s.gg)(t))
+					return !(!t || Object(s.hg)(t))
 				},
 				i = e => {
 					return Object(r.c)(e, {
 						experimentEligibilitySelector: o.Q,
-						experimentName: s.kd
-					}) === s.Ld.ListingEnabled
+						experimentName: s.ld
+					}) === s.Md.ListingEnabled
 				}
 		},
 		"./src/reddit/selectors/focusedVerticalSuggestion.ts": function(e, t, n) {
@@ -2668,4 +2668,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Frontpage~ModListing.50bf6dbaf7f0fcc4d887.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Frontpage~ModListing.88b494cbad1d7f0b3ab7.js.map
