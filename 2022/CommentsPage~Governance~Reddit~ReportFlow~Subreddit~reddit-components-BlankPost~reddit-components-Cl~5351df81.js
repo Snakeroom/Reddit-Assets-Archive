@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CommentsPage~Governance~Reddit~ReportFlow~Subreddit~reddit-components-BlankPost~reddit-components-Cl~5351df81.819559756a31cf49ff0d.js
-// Retrieved at 8/10/2022, 11:20:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CommentsPage~Governance~Reddit~ReportFlow~Subreddit~reddit-components-BlankPost~reddit-components-Cl~5351df81.c08da516a4290f0725c2.js
+// Retrieved at 8/10/2022, 12:50:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CommentsPage~Governance~Reddit~ReportFlow~Subreddit~reddit-components-BlankPost~reddit-components-Cl~5351df81"], {
 		"./src/lib/ads/session-signals.ts": function(e, t, r) {
@@ -2830,7 +2830,7 @@
 						} = t;
 						var b, p;
 						const m = Object(ye.c)(e),
-							f = !!m && !Object(_e.hg)(m) && (i || m === _e.wb.Community),
+							f = !!m && !Object(_e.ig)(m) && (i || m === _e.wb.Community),
 							{
 								numberOfAdsSeen: O,
 								numberOfPostsSeen: j
@@ -7125,7 +7125,7 @@
 								experimentName: i.Q,
 								expEventOverride: t
 							});
-							return !!(Object(i.hg)(r) ? void 0 : r)
+							return !!(Object(i.ig)(r) ? void 0 : r)
 						})(r)) || (e => !1 !== e.collapsed)(t)
 					})
 				}
@@ -11147,7 +11147,7 @@
 					} = e.onboarding;
 					if (t.success || t.failure) return t
 				},
-				I = Object(s.a)(b.c, e => e.onboarding.interestTopicRecommendationsState, (e, t) => e && !Object(d.hg)(e) ? t : null),
+				I = Object(s.a)(b.c, e => e.onboarding.interestTopicRecommendationsState, (e, t) => e && !Object(d.ig)(e) ? t : null),
 				h = Object(s.a)(b.c, (e, t) => {
 					let {
 						pageLayer: r
@@ -11843,4 +11843,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommentsPage~Governance~Reddit~ReportFlow~Subreddit~reddit-components-BlankPost~reddit-components-Cl~5351df81.819559756a31cf49ff0d.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommentsPage~Governance~Reddit~ReportFlow~Subreddit~reddit-components-BlankPost~reddit-components-Cl~5351df81.c08da516a4290f0725c2.js.map

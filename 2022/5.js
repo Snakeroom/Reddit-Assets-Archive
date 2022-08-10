@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/5.43977f2268c86beb9afa.js
-// Retrieved at 8/9/2022, 2:40:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/5.33db152529be5d291020.js
+// Retrieved at 8/10/2022, 12:50:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	[5], {
 		"./node_modules/@apollo/client/cache/inmemory/types.js": function(e, t) {},
@@ -42049,6 +42049,23 @@
 							}
 						},
 						directives: []
+					}, {
+						kind: "VariableDefinition",
+						variable: {
+							kind: "Variable",
+							name: {
+								kind: "Name",
+								value: "ikey"
+							}
+						},
+						type: {
+							kind: "NamedType",
+							name: {
+								kind: "Name",
+								value: "String"
+							}
+						},
+						directives: []
 					}],
 					directives: [],
 					selectionSet: {
@@ -42078,6 +42095,19 @@
 											name: {
 												kind: "Name",
 												value: "claimId"
+											}
+										}
+									}, {
+										kind: "ObjectField",
+										name: {
+											kind: "Name",
+											value: "ikey"
+										},
+										value: {
+											kind: "Variable",
+											name: {
+												kind: "Name",
+												value: "ikey"
 											}
 										}
 									}]
@@ -42168,11 +42198,11 @@
 				}],
 				loc: {
 					start: 0,
-					end: 246
+					end: 274
 				}
 			};
 			lr.loc.source = {
-				body: "mutation ClaimFreeNft($claimId: String!) {\n  claimFreeNft(input: { claimId: $claimId }) {\n    ok\n    errors {\n      message\n    }\n    freeNftClaimStatus {\n      id\n      status\n      item {\n        ...NftInventoryItemFragment\n      }\n    }\n  }\n}\n",
+				body: "mutation ClaimFreeNft($claimId: String!, $ikey: String) {\n  claimFreeNft(input: { claimId: $claimId, ikey: $ikey }) {\n    ok\n    errors {\n      message\n    }\n    freeNftClaimStatus {\n      id\n      status\n      item {\n        ...NftInventoryItemFragment\n      }\n    }\n  }\n}\n",
 				name: "GraphQL request",
 				locationOffset: {
 					line: 1,
@@ -73979,4 +74009,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/5.43977f2268c86beb9afa.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/5.33db152529be5d291020.js.map

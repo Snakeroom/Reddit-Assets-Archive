@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModerationPages.926f92821257e5569b17.js
-// Retrieved at 8/10/2022, 11:20:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModerationPages.243eb7afb6c4d0592d79.js
+// Retrieved at 8/10/2022, 12:50:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModerationPages", "CollectionCommentsPage~CommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~RpanListingUnit~S~5809214e", "CommentsPage~Governance~Reddit~ReportFlow~Subreddit~reddit-components-BlankPost~reddit-components-Cl~5351df81", "Governance~Reddit~Subreddit~reddit-components-BlankPost~reddit-components-ClassicPost~reddit-compone~3b56c92e", "PostCreation~Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~r~4c415e24", "Governance~ModListing~Reddit~ReportFlow~Subreddit", "Governance~Reddit~SubredditForkingCTA", "AuthorHovercard~Reddit"], {
 		"./src/chat/controls/Svg/index.m.less": function(e, t, n) {
@@ -9020,7 +9020,7 @@
 						} = t;
 						var m, p;
 						const b = Object(ye.c)(e),
-							h = !!b && !Object(ve.hg)(b) && (o || b === ve.wb.Community),
+							h = !!b && !Object(ve.ig)(b) && (o || b === ve.wb.Community),
 							{
 								numberOfAdsSeen: f,
 								numberOfPostsSeen: g
@@ -55068,7 +55068,7 @@
 								experimentName: o.Q,
 								expEventOverride: t
 							});
-							return !!(Object(o.hg)(n) ? void 0 : n)
+							return !!(Object(o.ig)(n) ? void 0 : n)
 						})(n)) || (e => !1 !== e.collapsed)(t)
 					})
 				}
@@ -71846,7 +71846,7 @@
 					experimentEligibilitySelector: r.a,
 					experimentName: s.Hd
 				});
-				return !(!t || Object(s.hg)(t))
+				return !(!t || Object(s.ig)(t))
 			}
 		},
 		"./src/reddit/selectors/experiments/gqlSubredditPage.ts": function(e, t, n) {
@@ -73259,7 +73259,7 @@
 					} = e.onboarding;
 					if (t.success || t.failure) return t
 				},
-				O = Object(r.a)(m.c, e => e.onboarding.interestTopicRecommendationsState, (e, t) => e && !Object(a.hg)(e) ? t : null),
+				O = Object(r.a)(m.c, e => e.onboarding.interestTopicRecommendationsState, (e, t) => e && !Object(a.ig)(e) ? t : null),
 				x = Object(r.a)(m.c, (e, t) => {
 					let {
 						pageLayer: n
@@ -74800,4 +74800,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.926f92821257e5569b17.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.243eb7afb6c4d0592d79.js.map

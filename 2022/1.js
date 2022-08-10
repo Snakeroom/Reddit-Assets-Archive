@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/1.ae3ed7b47a33362d1fb0.js
-// Retrieved at 7/28/2022, 1:50:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/1.05c6cf1c85ba69280e02.js
+// Retrieved at 8/10/2022, 12:50:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	[1], {
 		"./node_modules/@reddit/crypto/react/config/index.es.js": function(A, e, t) {
@@ -3082,7 +3082,7 @@
 				}), [i, r, a, o, c, A.requestPolicy, A.context])]
 			}
 			var qe = {
-				claimfreenft: "49a8b3b2cde3",
+				claimfreenft: "0b502ff3f983",
 				confirmeconpayment: "c292b130ce51",
 				createeconpayment: "786cafb9a545",
 				createstorefrontorder: "ff0103b3d612",
@@ -7456,4 +7456,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/1.ae3ed7b47a33362d1fb0.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/1.05c6cf1c85ba69280e02.js.map
