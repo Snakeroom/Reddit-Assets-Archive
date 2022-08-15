@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-ClaimPointsModal.192a821ba5790f2c1317.js
-// Retrieved at 8/10/2022, 7:10:03 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-ClaimPointsModal.8ef9103716f9dc0b3a44.js
+// Retrieved at 8/15/2022, 6:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Governance-TransactionModals-ClaimPointsModal"], {
 		"./node_modules/dijkstrajs/dijkstra.js": function(e, t, r) {
@@ -9,12 +9,12 @@
 					var o = {},
 						s = {};
 					s[t] = 0;
-					var i, a, c, d, l, u, f, m = n.PriorityQueue.make();
+					var a, i, c, d, l, u, f, m = n.PriorityQueue.make();
 					for (m.push(t, 0); !m.empty();)
-						for (c in a = (i = m.pop()).value, d = i.cost, l = e[a] || {}) l.hasOwnProperty(c) && (u = d + l[c], f = s[c], (void 0 === s[c] || f > u) && (s[c] = u, m.push(c, u), o[c] = a));
+						for (c in i = (a = m.pop()).value, d = a.cost, l = e[i] || {}) l.hasOwnProperty(c) && (u = d + l[c], f = s[c], (void 0 === s[c] || f > u) && (s[c] = u, m.push(c, u), o[c] = i));
 					if (void 0 !== r && void 0 === s[r]) {
-						var h = ["Could not find a path from ", t, " to ", r, "."].join("");
-						throw new Error(h)
+						var p = ["Could not find a path from ", t, " to ", r, "."].join("");
+						throw new Error(p)
 					}
 					return o
 				},
@@ -65,35 +65,35 @@
 			var n = r("./node_modules/qrcode/lib/can-promise.js"),
 				o = r("./node_modules/qrcode/lib/core/qrcode.js"),
 				s = r("./node_modules/qrcode/lib/renderer/canvas.js"),
-				i = r("./node_modules/qrcode/lib/renderer/svg-tag.js");
+				a = r("./node_modules/qrcode/lib/renderer/svg-tag.js");
 
-			function a(e, t, r, s, i) {
-				var a = [].slice.call(arguments, 1),
-					c = a.length,
-					d = "function" == typeof a[c - 1];
+			function i(e, t, r, s, a) {
+				var i = [].slice.call(arguments, 1),
+					c = i.length,
+					d = "function" == typeof i[c - 1];
 				if (!d && !n()) throw new Error("Callback required as last argument");
 				if (!d) {
 					if (c < 1) throw new Error("Too few arguments provided");
-					return 1 === c ? (r = t, t = s = void 0) : 2 !== c || t.getContext || (s = r, r = t, t = void 0), new Promise((function(n, i) {
+					return 1 === c ? (r = t, t = s = void 0) : 2 !== c || t.getContext || (s = r, r = t, t = void 0), new Promise((function(n, a) {
 						try {
-							var a = o.create(r, s);
-							n(e(a, t, s))
+							var i = o.create(r, s);
+							n(e(i, t, s))
 						} catch (c) {
-							i(c)
+							a(c)
 						}
 					}))
 				}
 				if (c < 2) throw new Error("Too few arguments provided");
-				2 === c ? (i = r, r = t, t = s = void 0) : 3 === c && (t.getContext && void 0 === i ? (i = s, s = void 0) : (i = s, s = r, r = t, t = void 0));
+				2 === c ? (a = r, r = t, t = s = void 0) : 3 === c && (t.getContext && void 0 === a ? (a = s, s = void 0) : (a = s, s = r, r = t, t = void 0));
 				try {
 					var l = o.create(r, s);
-					i(null, e(l, t, s))
+					a(null, e(l, t, s))
 				} catch (u) {
-					i(u)
+					a(u)
 				}
 			}
-			t.create = o.create, t.toCanvas = a.bind(null, s.render), t.toDataURL = a.bind(null, s.renderToDataURL), t.toString = a.bind(null, (function(e, t, r) {
-				return i.render(e, r)
+			t.create = o.create, t.toCanvas = i.bind(null, s.render), t.toDataURL = i.bind(null, s.renderToDataURL), t.toString = i.bind(null, (function(e, t, r) {
+				return a.render(e, r)
 			}))
 		},
 		"./node_modules/qrcode/lib/can-promise.js": function(e, t) {
@@ -105,11 +105,11 @@
 			var n = r("./node_modules/qrcode/lib/core/utils.js").getSymbolSize;
 			t.getRowColCoords = function(e) {
 				if (1 === e) return [];
-				for (var t = Math.floor(e / 7) + 2, r = n(e), o = 145 === r ? 26 : 2 * Math.ceil((r - 13) / (2 * t - 2)), s = [r - 7], i = 1; i < t - 1; i++) s[i] = s[i - 1] - o;
+				for (var t = Math.floor(e / 7) + 2, r = n(e), o = 145 === r ? 26 : 2 * Math.ceil((r - 13) / (2 * t - 2)), s = [r - 7], a = 1; a < t - 1; a++) s[a] = s[a - 1] - o;
 				return s.push(6), s.reverse()
 			}, t.getPositions = function(e) {
 				for (var r = [], n = t.getRowColCoords(e), o = n.length, s = 0; s < o; s++)
-					for (var i = 0; i < o; i++) 0 === s && 0 === i || 0 === s && i === o - 1 || s === o - 1 && 0 === i || r.push([n[s], n[i]]);
+					for (var a = 0; a < o; a++) 0 === s && 0 === a || 0 === s && a === o - 1 || s === o - 1 && 0 === a || r.push([n[s], n[a]]);
 				return r
 			}
 		},
@@ -338,7 +338,7 @@
 				o = 40,
 				s = 10;
 
-			function i(e, r, n) {
+			function a(e, r, n) {
 				switch (e) {
 					case t.Patterns.PATTERN000:
 						return (r + n) % 2 == 0;
@@ -365,11 +365,11 @@
 			}, t.from = function(e) {
 				return t.isValid(e) ? parseInt(e, 10) : void 0
 			}, t.getPenaltyN1 = function(e) {
-				for (var t = e.size, n = 0, o = 0, s = 0, i = null, a = null, c = 0; c < t; c++) {
-					o = s = 0, i = a = null;
+				for (var t = e.size, n = 0, o = 0, s = 0, a = null, i = null, c = 0; c < t; c++) {
+					o = s = 0, a = i = null;
 					for (var d = 0; d < t; d++) {
 						var l = e.get(c, d);
-						l === i ? o++ : (o >= 5 && (n += r + (o - 5)), i = l, o = 1), (l = e.get(d, c)) === a ? s++ : (s >= 5 && (n += r + (s - 5)), a = l, s = 1)
+						l === a ? o++ : (o >= 5 && (n += r + (o - 5)), a = l, o = 1), (l = e.get(d, c)) === i ? s++ : (s >= 5 && (n += r + (s - 5)), i = l, s = 1)
 					}
 					o >= 5 && (n += r + (o - 5)), s >= 5 && (n += r + (s - 5))
 				}
@@ -377,14 +377,14 @@
 			}, t.getPenaltyN2 = function(e) {
 				for (var t = e.size, r = 0, o = 0; o < t - 1; o++)
 					for (var s = 0; s < t - 1; s++) {
-						var i = e.get(o, s) + e.get(o, s + 1) + e.get(o + 1, s) + e.get(o + 1, s + 1);
-						4 !== i && 0 !== i || r++
+						var a = e.get(o, s) + e.get(o, s + 1) + e.get(o + 1, s) + e.get(o + 1, s + 1);
+						4 !== a && 0 !== a || r++
 					}
 				return r * n
 			}, t.getPenaltyN3 = function(e) {
-				for (var t = e.size, r = 0, n = 0, s = 0, i = 0; i < t; i++) {
+				for (var t = e.size, r = 0, n = 0, s = 0, a = 0; a < t; a++) {
 					n = s = 0;
-					for (var a = 0; a < t; a++) n = n << 1 & 2047 | e.get(i, a), a >= 10 && (1488 === n || 93 === n) && r++, s = s << 1 & 2047 | e.get(a, i), a >= 10 && (1488 === s || 93 === s) && r++
+					for (var i = 0; i < t; i++) n = n << 1 & 2047 | e.get(a, i), i >= 10 && (1488 === n || 93 === n) && r++, s = s << 1 & 2047 | e.get(i, a), i >= 10 && (1488 === s || 93 === s) && r++
 				}
 				return r * o
 			}, t.getPenaltyN4 = function(e) {
@@ -392,12 +392,12 @@
 				return Math.abs(Math.ceil(100 * t / r / 5) - 10) * s
 			}, t.applyMask = function(e, t) {
 				for (var r = t.size, n = 0; n < r; n++)
-					for (var o = 0; o < r; o++) t.isReserved(o, n) || t.xor(o, n, i(e, o, n))
+					for (var o = 0; o < r; o++) t.isReserved(o, n) || t.xor(o, n, a(e, o, n))
 			}, t.getBestMask = function(e, r) {
-				for (var n = Object.keys(t.Patterns).length, o = 0, s = 1 / 0, i = 0; i < n; i++) {
-					r(i), t.applyMask(i, e);
-					var a = t.getPenaltyN1(e) + t.getPenaltyN2(e) + t.getPenaltyN3(e) + t.getPenaltyN4(e);
-					t.applyMask(i, e), a < s && (s = a, o = i)
+				for (var n = Object.keys(t.Patterns).length, o = 0, s = 1 / 0, a = 0; a < n; a++) {
+					r(a), t.applyMask(a, e);
+					var i = t.getPenaltyN1(e) + t.getPenaltyN2(e) + t.getPenaltyN3(e) + t.getPenaltyN4(e);
+					t.applyMask(a, e), i < s && (s = i, o = a)
 				}
 				return o
 			}
@@ -481,13 +481,13 @@
 				o = r("./node_modules/qrcode/lib/core/galois-field.js");
 			t.mul = function(e, t) {
 				for (var r = n.alloc(e.length + t.length - 1), s = 0; s < e.length; s++)
-					for (var i = 0; i < t.length; i++) r[s + i] ^= o.mul(e[s], t[i]);
+					for (var a = 0; a < t.length; a++) r[s + a] ^= o.mul(e[s], t[a]);
 				return r
 			}, t.mod = function(e, t) {
 				for (var r = n.from(e); r.length - t.length >= 0;) {
-					for (var s = r[0], i = 0; i < t.length; i++) r[i] ^= o.mul(t[i], s);
-					for (var a = 0; a < r.length && 0 === r[a];) a++;
-					r = r.slice(a)
+					for (var s = r[0], a = 0; a < t.length; a++) r[a] ^= o.mul(t[a], s);
+					for (var i = 0; i < r.length && 0 === r[i];) i++;
+					r = r.slice(i)
 				}
 				return r
 			}, t.generateECPolynomial = function(e) {
@@ -499,45 +499,45 @@
 			var n = r("./node_modules/qrcode/lib/utils/typedarray-buffer.js"),
 				o = r("./node_modules/qrcode/lib/core/utils.js"),
 				s = r("./node_modules/qrcode/lib/core/error-correction-level.js"),
-				i = r("./node_modules/qrcode/lib/core/bit-buffer.js"),
-				a = r("./node_modules/qrcode/lib/core/bit-matrix.js"),
+				a = r("./node_modules/qrcode/lib/core/bit-buffer.js"),
+				i = r("./node_modules/qrcode/lib/core/bit-matrix.js"),
 				c = r("./node_modules/qrcode/lib/core/alignment-pattern.js"),
 				d = r("./node_modules/qrcode/lib/core/finder-pattern.js"),
 				l = r("./node_modules/qrcode/lib/core/mask-pattern.js"),
 				u = r("./node_modules/qrcode/lib/core/error-correction-code.js"),
 				f = r("./node_modules/qrcode/lib/core/reed-solomon-encoder.js"),
 				m = r("./node_modules/qrcode/lib/core/version.js"),
-				h = r("./node_modules/qrcode/lib/core/format-info.js"),
-				p = r("./node_modules/qrcode/lib/core/mode.js"),
+				p = r("./node_modules/qrcode/lib/core/format-info.js"),
+				h = r("./node_modules/qrcode/lib/core/mode.js"),
 				g = r("./node_modules/qrcode/lib/core/segments.js"),
 				b = r("./node_modules/qrcode/node_modules/isarray/index.js");
 
 			function v(e, t, r) {
 				var n, o, s = e.size,
-					i = h.getEncodedBits(t, r);
-				for (n = 0; n < 15; n++) o = 1 == (i >> n & 1), n < 6 ? e.set(n, 8, o, !0) : n < 8 ? e.set(n + 1, 8, o, !0) : e.set(s - 15 + n, 8, o, !0), n < 8 ? e.set(8, s - n - 1, o, !0) : n < 9 ? e.set(8, 15 - n - 1 + 1, o, !0) : e.set(8, 15 - n - 1, o, !0);
+					a = p.getEncodedBits(t, r);
+				for (n = 0; n < 15; n++) o = 1 == (a >> n & 1), n < 6 ? e.set(n, 8, o, !0) : n < 8 ? e.set(n + 1, 8, o, !0) : e.set(s - 15 + n, 8, o, !0), n < 8 ? e.set(8, s - n - 1, o, !0) : n < 9 ? e.set(8, 15 - n - 1 + 1, o, !0) : e.set(8, 15 - n - 1, o, !0);
 				e.set(s - 8, 8, 1, !0)
 			}
 
 			function y(e, t, r) {
-				var s = new i;
+				var s = new a;
 				r.forEach((function(t) {
-					s.put(t.mode.bit, 4), s.put(t.getLength(), p.getCharCountIndicator(t.mode, e)), t.write(s)
+					s.put(t.mode.bit, 4), s.put(t.getLength(), h.getCharCountIndicator(t.mode, e)), t.write(s)
 				}));
-				var a = 8 * (o.getSymbolTotalCodewords(e) - u.getTotalCodewordsCount(e, t));
-				for (s.getLengthInBits() + 4 <= a && s.put(0, 4); s.getLengthInBits() % 8 != 0;) s.putBit(0);
-				for (var c = (a - s.getLengthInBits()) / 8, d = 0; d < c; d++) s.put(d % 2 ? 17 : 236, 8);
+				var i = 8 * (o.getSymbolTotalCodewords(e) - u.getTotalCodewordsCount(e, t));
+				for (s.getLengthInBits() + 4 <= i && s.put(0, 4); s.getLengthInBits() % 8 != 0;) s.putBit(0);
+				for (var c = (i - s.getLengthInBits()) / 8, d = 0; d < c; d++) s.put(d % 2 ? 17 : 236, 8);
 				return function(e, t, r) {
-					for (var s = o.getSymbolTotalCodewords(t), i = u.getTotalCodewordsCount(t, r), a = s - i, c = u.getBlocksCount(t, r), d = c - s % c, l = Math.floor(s / c), m = Math.floor(a / c), h = m + 1, p = l - m, g = new f(p), b = 0, v = new Array(c), y = new Array(c), w = 0, _ = n.from(e.buffer), E = 0; E < c; E++) {
-						var x = E < d ? m : h;
+					for (var s = o.getSymbolTotalCodewords(t), a = u.getTotalCodewordsCount(t, r), i = s - a, c = u.getBlocksCount(t, r), d = c - s % c, l = Math.floor(s / c), m = Math.floor(i / c), p = m + 1, h = l - m, g = new f(h), b = 0, v = new Array(c), y = new Array(c), w = 0, _ = n.from(e.buffer), E = 0; E < c; E++) {
+						var x = E < d ? m : p;
 						v[E] = _.slice(b, b + x), y[E] = g.encode(v[E]), b += x, w = Math.max(w, x)
 					}
 					var j, C, T = n.alloc(s),
-						A = 0;
+						N = 0;
 					for (j = 0; j < w; j++)
-						for (C = 0; C < c; C++) j < v[C].length && (T[A++] = v[C][j]);
-					for (j = 0; j < p; j++)
-						for (C = 0; C < c; C++) T[A++] = y[C][j];
+						for (C = 0; C < c; C++) j < v[C].length && (T[N++] = v[C][j]);
+					for (j = 0; j < h; j++)
+						for (C = 0; C < c; C++) T[N++] = y[C][j];
 					return T
 				}(s, e, t)
 			}
@@ -547,26 +547,26 @@
 				if (b(e)) s = g.fromArray(e);
 				else {
 					if ("string" != typeof e) throw new Error("Invalid data");
-					var i = t;
-					if (!i) {
+					var a = t;
+					if (!a) {
 						var u = g.rawSplit(e);
-						i = m.getBestVersionForData(u, r)
+						a = m.getBestVersionForData(u, r)
 					}
-					s = g.fromString(e, i || 40)
+					s = g.fromString(e, a || 40)
 				}
 				var f = m.getBestVersionForData(s, r);
 				if (!f) throw new Error("The amount of data is too big to be stored in a QR Code");
 				if (t) {
 					if (t < f) throw new Error("\nThe chosen QR Code version cannot contain this amount of data.\nMinimum version required to store current data is: " + f + ".\n")
 				} else t = f;
-				var h = y(t, r, s),
-					p = o.getSymbolSize(t),
-					w = new a(p);
+				var p = y(t, r, s),
+					h = o.getSymbolSize(t),
+					w = new i(h);
 				return function(e, t) {
 						for (var r = e.size, n = d.getPositions(t), o = 0; o < n.length; o++)
-							for (var s = n[o][0], i = n[o][1], a = -1; a <= 7; a++)
-								if (!(s + a <= -1 || r <= s + a))
-									for (var c = -1; c <= 7; c++) i + c <= -1 || r <= i + c || (a >= 0 && a <= 6 && (0 === c || 6 === c) || c >= 0 && c <= 6 && (0 === a || 6 === a) || a >= 2 && a <= 4 && c >= 2 && c <= 4 ? e.set(s + a, i + c, !0, !0) : e.set(s + a, i + c, !1, !0))
+							for (var s = n[o][0], a = n[o][1], i = -1; i <= 7; i++)
+								if (!(s + i <= -1 || r <= s + i))
+									for (var c = -1; c <= 7; c++) a + c <= -1 || r <= a + c || (i >= 0 && i <= 6 && (0 === c || 6 === c) || c >= 0 && c <= 6 && (0 === i || 6 === i) || i >= 2 && i <= 4 && c >= 2 && c <= 4 ? e.set(s + i, a + c, !0, !0) : e.set(s + i, a + c, !1, !0))
 					}(w, t),
 					function(e) {
 						for (var t = e.size, r = 8; r < t - 8; r++) {
@@ -576,24 +576,24 @@
 					}(w),
 					function(e, t) {
 						for (var r = c.getPositions(t), n = 0; n < r.length; n++)
-							for (var o = r[n][0], s = r[n][1], i = -2; i <= 2; i++)
-								for (var a = -2; a <= 2; a++) - 2 === i || 2 === i || -2 === a || 2 === a || 0 === i && 0 === a ? e.set(o + i, s + a, !0, !0) : e.set(o + i, s + a, !1, !0)
+							for (var o = r[n][0], s = r[n][1], a = -2; a <= 2; a++)
+								for (var i = -2; i <= 2; i++) - 2 === a || 2 === a || -2 === i || 2 === i || 0 === a && 0 === i ? e.set(o + a, s + i, !0, !0) : e.set(o + a, s + i, !1, !0)
 					}(w, t), v(w, r, 0), t >= 7 && function(e, t) {
-						for (var r, n, o, s = e.size, i = m.getEncodedBits(t), a = 0; a < 18; a++) r = Math.floor(a / 3), n = a % 3 + s - 8 - 3, o = 1 == (i >> a & 1), e.set(r, n, o, !0), e.set(n, r, o, !0)
+						for (var r, n, o, s = e.size, a = m.getEncodedBits(t), i = 0; i < 18; i++) r = Math.floor(i / 3), n = i % 3 + s - 8 - 3, o = 1 == (a >> i & 1), e.set(r, n, o, !0), e.set(n, r, o, !0)
 					}(w, t),
 					function(e, t) {
-						for (var r = e.size, n = -1, o = r - 1, s = 7, i = 0, a = r - 1; a > 0; a -= 2)
-							for (6 === a && a--;;) {
+						for (var r = e.size, n = -1, o = r - 1, s = 7, a = 0, i = r - 1; i > 0; i -= 2)
+							for (6 === i && i--;;) {
 								for (var c = 0; c < 2; c++)
-									if (!e.isReserved(o, a - c)) {
+									if (!e.isReserved(o, i - c)) {
 										var d = !1;
-										i < t.length && (d = 1 == (t[i] >>> s & 1)), e.set(o, a - c, d), -1 === --s && (i++, s = 7)
+										a < t.length && (d = 1 == (t[a] >>> s & 1)), e.set(o, i - c, d), -1 === --s && (a++, s = 7)
 									} if ((o += n) < 0 || r <= o) {
 									o -= n, n = -n;
 									break
 								}
 							}
-					}(w, h), isNaN(n) && (n = l.getBestMask(w, v.bind(null, w, r))), l.applyMask(n, w), v(w, r, n), {
+					}(w, p), isNaN(n) && (n = l.getBestMask(w, v.bind(null, w, r))), l.applyMask(n, w), v(w, r, n), {
 						modules: w,
 						version: t,
 						errorCorrectionLevel: r,
@@ -603,8 +603,8 @@
 			}
 			t.create = function(e, t) {
 				if (void 0 === e || "" === e) throw new Error("No input text");
-				var r, n, i = s.M;
-				return void 0 !== t && (i = s.from(t.errorCorrectionLevel, s.M), r = m.from(t.version), n = l.from(t.maskPattern), t.toSJISFunc && o.setToSJISFunction(t.toSJISFunc)), w(e, r, i, n)
+				var r, n, a = s.M;
+				return void 0 !== t && (a = s.from(t.errorCorrectionLevel, s.M), r = m.from(t.version), n = l.from(t.maskPattern), t.toSJISFunc && o.setToSJISFunction(t.toSJISFunc)), w(e, r, a, n)
 			}
 		},
 		"./node_modules/qrcode/lib/core/reed-solomon-encoder.js": function(e, t, r) {
@@ -612,23 +612,23 @@
 				o = r("./node_modules/qrcode/lib/core/polynomial.js"),
 				s = r("./node_modules/buffer/index.js").Buffer;
 
-			function i(e) {
+			function a(e) {
 				this.genPoly = void 0, this.degree = e, this.degree && this.initialize(this.degree)
 			}
-			i.prototype.initialize = function(e) {
+			a.prototype.initialize = function(e) {
 				this.degree = e, this.genPoly = o.generateECPolynomial(this.degree)
-			}, i.prototype.encode = function(e) {
+			}, a.prototype.encode = function(e) {
 				if (!this.genPoly) throw new Error("Encoder not initialized");
 				var t = n.alloc(this.degree),
 					r = s.concat([e, t], e.length + this.degree),
-					i = o.mod(r, this.genPoly),
-					a = this.degree - i.length;
-				if (a > 0) {
+					a = o.mod(r, this.genPoly),
+					i = this.degree - a.length;
+				if (i > 0) {
 					var c = n.alloc(this.degree);
-					return i.copy(c, a), c
+					return a.copy(c, i), c
 				}
-				return i
-			}, e.exports = i
+				return a
+			}, e.exports = a
 		},
 		"./node_modules/qrcode/lib/core/regex.js": function(e, t) {
 			var r = "(?:[u3000-u303F]|[u3040-u309F]|[u30A0-u30FF]|[uFF00-uFFEF]|[u4E00-u9FAF]|[u2605-u2606]|[u2190-u2195]|u203B|[u2010u2015u2018u2019u2025u2026u201Cu201Du2225u2260]|[u0391-u0451]|[u00A7u00A8u00B1u00B4u00D7u00F7])+",
@@ -636,21 +636,21 @@
 			t.KANJI = new RegExp(r, "g"), t.BYTE_KANJI = new RegExp("[^A-Z0-9 $%*+\\-./:]+", "g"), t.BYTE = new RegExp(n, "g"), t.NUMERIC = new RegExp("[0-9]+", "g"), t.ALPHANUMERIC = new RegExp("[A-Z $%*+\\-./:]+", "g");
 			var o = new RegExp("^" + r + "$"),
 				s = new RegExp("^[0-9]+$"),
-				i = new RegExp("^[A-Z0-9 $%*+\\-./:]+$");
+				a = new RegExp("^[A-Z0-9 $%*+\\-./:]+$");
 			t.testKanji = function(e) {
 				return o.test(e)
 			}, t.testNumeric = function(e) {
 				return s.test(e)
 			}, t.testAlphanumeric = function(e) {
-				return i.test(e)
+				return a.test(e)
 			}
 		},
 		"./node_modules/qrcode/lib/core/segments.js": function(e, t, r) {
 			var n = r("./node_modules/qrcode/lib/core/mode.js"),
 				o = r("./node_modules/qrcode/lib/core/numeric-data.js"),
 				s = r("./node_modules/qrcode/lib/core/alphanumeric-data.js"),
-				i = r("./node_modules/qrcode/lib/core/byte-data.js"),
-				a = r("./node_modules/qrcode/lib/core/kanji-data.js"),
+				a = r("./node_modules/qrcode/lib/core/byte-data.js"),
+				i = r("./node_modules/qrcode/lib/core/kanji-data.js"),
 				c = r("./node_modules/qrcode/lib/core/regex.js"),
 				d = r("./node_modules/qrcode/lib/core/utils.js"),
 				l = r("./node_modules/dijkstrajs/dijkstra.js");
@@ -683,20 +683,20 @@
 				}))
 			}
 
-			function h(e, t) {
+			function p(e, t) {
 				switch (t) {
 					case n.NUMERIC:
 						return o.getBitsLength(e);
 					case n.ALPHANUMERIC:
 						return s.getBitsLength(e);
 					case n.KANJI:
-						return a.getBitsLength(e);
+						return i.getBitsLength(e);
 					case n.BYTE:
-						return i.getBitsLength(e)
+						return a.getBitsLength(e)
 				}
 			}
 
-			function p(e, t) {
+			function h(e, t) {
 				var r, c = n.getBestModeForData(e);
 				if ((r = n.from(t, c)) !== n.BYTE && r.bit < c.bit) throw new Error('"' + e + '" cannot be encoded with mode ' + n.toString(r) + ".\n Suggested mode is: " + n.toString(c));
 				switch (r !== n.KANJI || d.isKanjiModeEnabled() || (r = n.BYTE), r) {
@@ -705,30 +705,30 @@
 					case n.ALPHANUMERIC:
 						return new s(e);
 					case n.KANJI:
-						return new a(e);
+						return new i(e);
 					case n.BYTE:
-						return new i(e)
+						return new a(e)
 				}
 			}
 			t.fromArray = function(e) {
 				return e.reduce((function(e, t) {
-					return "string" == typeof t ? e.push(p(t, null)) : t.data && e.push(p(t.data, t.mode)), e
+					return "string" == typeof t ? e.push(h(t, null)) : t.data && e.push(h(t.data, t.mode)), e
 				}), [])
 			}, t.fromString = function(e, r) {
 				for (var o = function(e, t) {
 						for (var r = {}, o = {
 								start: {}
-							}, s = ["start"], i = 0; i < e.length; i++) {
-							for (var a = e[i], c = [], d = 0; d < a.length; d++) {
-								var l = a[d],
-									u = "" + i + d;
+							}, s = ["start"], a = 0; a < e.length; a++) {
+							for (var i = e[a], c = [], d = 0; d < i.length; d++) {
+								var l = i[d],
+									u = "" + a + d;
 								c.push(u), r[u] = {
 									node: l,
 									lastCount: 0
 								}, o[u] = {};
 								for (var f = 0; f < s.length; f++) {
 									var m = s[f];
-									r[m] && r[m].node.mode === l.mode ? (o[m][u] = h(r[m].lastCount + l.length, l.mode) - h(r[m].lastCount, l.mode), r[m].lastCount += l.length) : (r[m] && (r[m].lastCount = l.length), o[m][u] = h(l.length, l.mode) + 4 + n.getCharCountIndicator(l.mode, t))
+									r[m] && r[m].node.mode === l.mode ? (o[m][u] = p(r[m].lastCount + l.length, l.mode) - p(r[m].lastCount, l.mode), r[m].lastCount += l.length) : (r[m] && (r[m].lastCount = l.length), o[m][u] = p(l.length, l.mode) + 4 + n.getCharCountIndicator(l.mode, t))
 								}
 							}
 							s = c
@@ -776,13 +776,13 @@
 							}
 						}
 						return t
-					}(m(e, d.isKanjiModeEnabled())), r), s = l.find_path(o.map, "start", "end"), i = [], a = 1; a < s.length - 1; a++) i.push(o.table[s[a]].node);
+					}(m(e, d.isKanjiModeEnabled())), r), s = l.find_path(o.map, "start", "end"), a = [], i = 1; i < s.length - 1; i++) a.push(o.table[s[i]].node);
 				return t.fromArray(function(e) {
 					return e.reduce((function(e, t) {
 						var r = e.length - 1 >= 0 ? e[e.length - 1] : null;
 						return r && r.mode === t.mode ? (e[e.length - 1].data += t.data, e) : (e.push(t), e)
 					}), [])
-				}(i))
+				}(a))
 			}, t.rawSplit = function(e) {
 				return t.fromArray(m(e, d.isKanjiModeEnabled()))
 			}
@@ -816,13 +816,13 @@
 			var n = r("./node_modules/qrcode/lib/core/utils.js"),
 				o = r("./node_modules/qrcode/lib/core/error-correction-code.js"),
 				s = r("./node_modules/qrcode/lib/core/error-correction-level.js"),
-				i = r("./node_modules/qrcode/lib/core/mode.js"),
-				a = r("./node_modules/qrcode/lib/core/version-check.js"),
+				a = r("./node_modules/qrcode/lib/core/mode.js"),
+				i = r("./node_modules/qrcode/lib/core/version-check.js"),
 				c = r("./node_modules/qrcode/node_modules/isarray/index.js"),
 				d = n.getBCHDigit(7973);
 
 			function l(e, t) {
-				return i.getCharCountIndicator(e, t) + 4
+				return a.getCharCountIndicator(e, t) + 4
 			}
 
 			function u(e, t) {
@@ -833,21 +833,21 @@
 				})), r
 			}
 			t.from = function(e, t) {
-				return a.isValid(e) ? parseInt(e, 10) : t
+				return i.isValid(e) ? parseInt(e, 10) : t
 			}, t.getCapacity = function(e, t, r) {
-				if (!a.isValid(e)) throw new Error("Invalid QR Code version");
-				void 0 === r && (r = i.BYTE);
+				if (!i.isValid(e)) throw new Error("Invalid QR Code version");
+				void 0 === r && (r = a.BYTE);
 				var s = 8 * (n.getSymbolTotalCodewords(e) - o.getTotalCodewordsCount(e, t));
-				if (r === i.MIXED) return s;
+				if (r === a.MIXED) return s;
 				var c = s - l(r, e);
 				switch (r) {
-					case i.NUMERIC:
+					case a.NUMERIC:
 						return Math.floor(c / 10 * 3);
-					case i.ALPHANUMERIC:
+					case a.ALPHANUMERIC:
 						return Math.floor(c / 11 * 2);
-					case i.KANJI:
+					case a.KANJI:
 						return Math.floor(c / 13);
-					case i.BYTE:
+					case a.BYTE:
 					default:
 						return Math.floor(c / 8)
 				}
@@ -856,7 +856,7 @@
 				if (c(e)) {
 					if (e.length > 1) return function(e, r) {
 						for (var n = 1; n <= 40; n++) {
-							if (u(e, n) <= t.getCapacity(n, r, i.MIXED)) return n
+							if (u(e, n) <= t.getCapacity(n, r, a.MIXED)) return n
 						}
 					}(e, o);
 					if (0 === e.length) return 1;
@@ -867,7 +867,7 @@
 						if (r <= t.getCapacity(o, n, e)) return o
 				}(n.mode, n.getLength(), o)
 			}, t.getEncodedBits = function(e) {
-				if (!a.isValid(e) || e < 7) throw new Error("Invalid QR Code version");
+				if (!i.isValid(e) || e < 7) throw new Error("Invalid QR Code version");
 				for (var t = e << 12; n.getBCHDigit(t) - d >= 0;) t ^= 7973 << n.getBCHDigit(t) - d;
 				return e << 12 | t
 			}
@@ -884,20 +884,20 @@
 						throw new Error("You need to specify a canvas element")
 					}
 				}()), o = n.getOptions(o);
-				var i = n.getImageWidth(e.modules.size, o),
-					a = s.getContext("2d"),
-					c = a.createImageData(i, i);
+				var a = n.getImageWidth(e.modules.size, o),
+					i = s.getContext("2d"),
+					c = i.createImageData(a, a);
 				return n.qrToImageData(c.data, e, o),
 					function(e, t, r) {
 						e.clearRect(0, 0, t.width, t.height), t.style || (t.style = {}), t.height = r, t.width = r, t.style.height = r + "px", t.style.width = r + "px"
-					}(a, s, i), a.putImageData(c, 0, 0), s
+					}(i, s, a), i.putImageData(c, 0, 0), s
 			}, t.renderToDataURL = function(e, r, n) {
 				var o = n;
 				void 0 !== o || r && r.getContext || (o = r, r = void 0), o || (o = {});
 				var s = t.render(e, r, o),
-					i = o.type || "image/png",
-					a = o.rendererOpts || {};
-				return s.toDataURL(i, a.quality)
+					a = o.type || "image/png",
+					i = o.rendererOpts || {};
+				return s.toDataURL(a, i.quality)
 			}
 		},
 		"./node_modules/qrcode/lib/renderer/svg-tag.js": function(e, t, r) {
@@ -914,21 +914,21 @@
 				return void 0 !== r && (n += " " + r), n
 			}
 			t.render = function(e, t, r) {
-				var i = n.getOptions(t),
-					a = e.modules.size,
+				var a = n.getOptions(t),
+					i = e.modules.size,
 					c = e.modules.data,
-					d = a + 2 * i.margin,
-					l = i.color.light.a ? "<path " + o(i.color.light, "fill") + ' d="M0 0h' + d + "v" + d + 'H0z"/>' : "",
-					u = "<path " + o(i.color.dark, "stroke") + ' d="' + function(e, t, r) {
-						for (var n = "", o = 0, i = !1, a = 0, c = 0; c < e.length; c++) {
+					d = i + 2 * a.margin,
+					l = a.color.light.a ? "<path " + o(a.color.light, "fill") + ' d="M0 0h' + d + "v" + d + 'H0z"/>' : "",
+					u = "<path " + o(a.color.dark, "stroke") + ' d="' + function(e, t, r) {
+						for (var n = "", o = 0, a = !1, i = 0, c = 0; c < e.length; c++) {
 							var d = Math.floor(c % t),
 								l = Math.floor(c / t);
-							d || i || (i = !0), e[c] ? (a++, c > 0 && d > 0 && e[c - 1] || (n += i ? s("M", d + r, .5 + l + r) : s("m", o, 0), o = 0, i = !1), d + 1 < t && e[c + 1] || (n += s("h", a), a = 0)) : o++
+							d || a || (a = !0), e[c] ? (i++, c > 0 && d > 0 && e[c - 1] || (n += a ? s("M", d + r, .5 + l + r) : s("m", o, 0), o = 0, a = !1), d + 1 < t && e[c + 1] || (n += s("h", i), i = 0)) : o++
 						}
 						return n
-					}(c, a, i.margin) + '"/>',
+					}(c, i, a.margin) + '"/>',
 					f = 'viewBox="0 0 ' + d + " " + d + '"',
-					m = '<svg xmlns="http://www.w3.org/2000/svg" ' + (i.width ? 'width="' + i.width + '" height="' + i.width + '" ' : "") + f + ' shape-rendering="crispEdges">' + l + u + "</svg>\n";
+					m = '<svg xmlns="http://www.w3.org/2000/svg" ' + (a.width ? 'width="' + a.width + '" height="' + a.width + '" ' : "") + f + ' shape-rendering="crispEdges">' + l + u + "</svg>\n";
 				return "function" == typeof r && r(null, m), m
 			}
 		},
@@ -971,11 +971,11 @@
 				var n = t.getScale(e, r);
 				return Math.floor((e + 2 * r.margin) * n)
 			}, t.qrToImageData = function(e, r, n) {
-				for (var o = r.modules.size, s = r.modules.data, i = t.getScale(o, n), a = Math.floor((o + 2 * n.margin) * i), c = n.margin * i, d = [n.color.light, n.color.dark], l = 0; l < a; l++)
-					for (var u = 0; u < a; u++) {
-						var f = 4 * (l * a + u),
+				for (var o = r.modules.size, s = r.modules.data, a = t.getScale(o, n), i = Math.floor((o + 2 * n.margin) * a), c = n.margin * a, d = [n.color.light, n.color.dark], l = 0; l < i; l++)
+					for (var u = 0; u < i; u++) {
+						var f = 4 * (l * i + u),
 							m = n.color.light;
-						if (l >= c && u >= c && l < a - c && u < a - c) m = d[s[Math.floor((l - c) / i) * o + Math.floor((u - c) / i)] ? 1 : 0];
+						if (l >= c && u >= c && l < i - c && u < i - c) m = d[s[Math.floor((l - c) / a) * o + Math.floor((u - c) / a)] ? 1 : 0];
 						e[f++] = m.r, e[f++] = m.g, e[f++] = m.b, e[f] = m.a
 					}
 			}
@@ -1011,19 +1011,19 @@
 					}(e, t, r, n);
 					if ("string" == typeof t) return function(e, t) {
 						var r = 0 | u(t),
-							n = a(e, r),
+							n = i(e, r),
 							o = n.write(t);
 						o !== r && (n = n.slice(0, o));
 						return n
 					}(e, t);
 					return function(e, t) {
 						if (s.isBuffer(t)) {
-							var r = 0 | i(t.length),
-								n = a(e, r);
+							var r = 0 | a(t.length),
+								n = i(e, r);
 							return 0 === n.length ? n : (t.copy(n, 0, 0, r), n)
 						}
 						if (t) {
-							if ("undefined" != typeof ArrayBuffer && t.buffer instanceof ArrayBuffer || "length" in t) return "number" != typeof t.length || (o = t.length) != o ? a(e, 0) : d(e, t);
+							if ("undefined" != typeof ArrayBuffer && t.buffer instanceof ArrayBuffer || "length" in t) return "number" != typeof t.length || (o = t.length) != o ? i(e, 0) : d(e, t);
 							if ("Buffer" === t.type && Array.isArray(t.data)) return d(e, t.data)
 						}
 						var o;
@@ -1032,39 +1032,39 @@
 				}(this, e, t, r) : new s(e, t, r)
 			}
 
-			function i(e) {
+			function a(e) {
 				if (e >= o) throw new RangeError("Attempt to allocate Buffer larger than maximum size: 0x" + o.toString(16) + " bytes");
 				return 0 | e
 			}
 
-			function a(e, t) {
+			function i(e, t) {
 				var r;
 				return s.TYPED_ARRAY_SUPPORT ? (r = new Uint8Array(t)).__proto__ = s.prototype : (null === (r = e) && (r = new s(t)), r.length = t), r
 			}
 
 			function c(e, t) {
-				var r = a(e, t < 0 ? 0 : 0 | i(t));
+				var r = i(e, t < 0 ? 0 : 0 | a(t));
 				if (!s.TYPED_ARRAY_SUPPORT)
 					for (var n = 0; n < t; ++n) r[n] = 0;
 				return r
 			}
 
 			function d(e, t) {
-				for (var r = t.length < 0 ? 0 : 0 | i(t.length), n = a(e, r), o = 0; o < r; o += 1) n[o] = 255 & t[o];
+				for (var r = t.length < 0 ? 0 : 0 | a(t.length), n = i(e, r), o = 0; o < r; o += 1) n[o] = 255 & t[o];
 				return n
 			}
 
 			function l(e, t) {
 				var r;
 				t = t || 1 / 0;
-				for (var n = e.length, o = null, s = [], i = 0; i < n; ++i) {
-					if ((r = e.charCodeAt(i)) > 55295 && r < 57344) {
+				for (var n = e.length, o = null, s = [], a = 0; a < n; ++a) {
+					if ((r = e.charCodeAt(a)) > 55295 && r < 57344) {
 						if (!o) {
 							if (r > 56319) {
 								(t -= 3) > -1 && s.push(239, 191, 189);
 								continue
 							}
-							if (i + 1 === n) {
+							if (a + 1 === n) {
 								(t -= 3) > -1 && s.push(239, 191, 189);
 								continue
 							}
@@ -1119,7 +1119,7 @@
 				else {
 					var o = t - e;
 					r = new s(o, void 0);
-					for (var i = 0; i < o; ++i) r[i] = this[i + e]
+					for (var a = 0; a < o; ++a) r[a] = this[a + e]
 				}
 				return r
 			}, s.prototype.copy = function(e, t, r, n) {
@@ -1129,13 +1129,13 @@
 				if (r < 0 || r >= this.length) throw new RangeError("sourceStart out of bounds");
 				if (n < 0) throw new RangeError("sourceEnd out of bounds");
 				n > this.length && (n = this.length), e.length - t < n - r && (n = e.length - t + r);
-				var o, i = n - r;
+				var o, a = n - r;
 				if (this === e && r < t && t < n)
-					for (o = i - 1; o >= 0; --o) e[o + t] = this[o + r];
-				else if (i < 1e3 || !s.TYPED_ARRAY_SUPPORT)
-					for (o = 0; o < i; ++o) e[o + t] = this[o + r];
-				else Uint8Array.prototype.set.call(e, this.subarray(r, r + i), t);
-				return i
+					for (o = a - 1; o >= 0; --o) e[o + t] = this[o + r];
+				else if (a < 1e3 || !s.TYPED_ARRAY_SUPPORT)
+					for (o = 0; o < a; ++o) e[o + t] = this[o + r];
+				else Uint8Array.prototype.set.call(e, this.subarray(r, r + a), t);
+				return a
 			}, s.prototype.fill = function(e, t, r) {
 				if ("string" == typeof e) {
 					if ("string" == typeof t ? (t = 0, r = this.length) : "string" == typeof r && (r = this.length), 1 === e.length) {
@@ -1149,23 +1149,23 @@
 				if (t >>>= 0, r = void 0 === r ? this.length : r >>> 0, e || (e = 0), "number" == typeof e)
 					for (o = t; o < r; ++o) this[o] = e;
 				else {
-					var i = s.isBuffer(e) ? e : new s(e),
-						a = i.length;
-					for (o = 0; o < r - t; ++o) this[o + t] = i[o % a]
+					var a = s.isBuffer(e) ? e : new s(e),
+						i = a.length;
+					for (o = 0; o < r - t; ++o) this[o + t] = a[o % i]
 				}
 				return this
 			}, s.concat = function(e, t) {
 				if (!n(e)) throw new TypeError('"list" argument must be an Array of Buffers');
-				if (0 === e.length) return a(null, 0);
+				if (0 === e.length) return i(null, 0);
 				var r;
 				if (void 0 === t)
 					for (t = 0, r = 0; r < e.length; ++r) t += e[r].length;
 				var o = c(null, t),
-					i = 0;
+					a = 0;
 				for (r = 0; r < e.length; ++r) {
 					var d = e[r];
 					if (!s.isBuffer(d)) throw new TypeError('"list" argument must be an Array of Buffers');
-					d.copy(o, i), i += d.length
+					d.copy(o, a), a += d.length
 				}
 				return o
 			}, s.byteLength = u, s.prototype._isBuffer = !0, s.isBuffer = function(e) {
@@ -1194,20 +1194,20 @@
 				const r = new n.BigNumber(e),
 					o = new n.BigNumber(t),
 					s = new n.BigNumber(r.dividedBy(o)),
-					i = new n.BigNumber("100").multipliedBy(s);
-				return new n.BigNumber(i).toNumber()
+					a = new n.BigNumber("100").multipliedBy(s);
+				return new n.BigNumber(a).toNumber()
 			}
 		},
 		"./src/reddit/actions/governance/errorToast.ts": function(e, t, r) {
 			"use strict";
 			r.d(t, "a", (function() {
-				return i
+				return a
 			}));
 			var n = r("./src/reddit/actions/toaster.ts"),
 				o = r("./src/reddit/helpers/governanceErrorText/index.ts"),
 				s = r("./src/reddit/models/Toast/index.ts");
 
-			function i(e, t) {
+			function a(e, t) {
 				e(Object(n.f)({
 					duration: 5e3,
 					kind: s.b.Error,
@@ -1224,7 +1224,7 @@
 			})), r.d(t, "c", (function() {
 				return x
 			})), r.d(t, "f", (function() {
-				return N
+				return A
 			})), r.d(t, "g", (function() {
 				return R
 			})), r.d(t, "d", (function() {
@@ -1237,16 +1237,16 @@
 			var n = r("./node_modules/fbt/lib/FbtPublic.js"),
 				o = r("./src/lib/makeActionCreator/index.ts"),
 				s = r("./src/lib/prettyPrintNumber/index.ts"),
-				i = r("./src/reddit/actions/modal.ts"),
-				a = r("./src/reddit/actions/post.ts"),
+				a = r("./src/reddit/actions/modal.ts"),
+				i = r("./src/reddit/actions/post.ts"),
 				c = r("./src/reddit/actions/toaster.ts"),
 				d = r("./src/config.ts"),
 				l = r("./src/lib/makeGqlRequest/index.ts"),
 				u = r("./src/reddit/models/Poll/index.ts"),
 				f = r("./src/redditGQL/operations/PollVote.json"),
 				m = r("./src/reddit/endpoints/governance/requester.ts");
-			var h = r("./src/reddit/endpoints/governance/wallet.ts"),
-				p = r("./src/reddit/models/Toast/index.ts"),
+			var p = r("./src/reddit/endpoints/governance/wallet.ts"),
+				h = r("./src/reddit/models/Toast/index.ts"),
 				g = r("./src/reddit/models/Vote/index.ts"),
 				b = r("./src/reddit/selectors/crypto/points.ts"),
 				v = r("./src/reddit/actions/governance/constants.ts"),
@@ -1258,8 +1258,8 @@
 				j = Object(o.a)(v.i),
 				C = Object(o.a)(v.j),
 				T = Object(o.a)(v.k),
-				A = Object(o.a)(v.q),
-				N = Object(o.a)(v.r),
+				N = Object(o.a)(v.q),
+				A = Object(o.a)(v.r),
 				I = Object(o.a)(v.s),
 				O = Object(o.a)(v.t),
 				B = Object(o.a)(v.u),
@@ -1268,13 +1268,13 @@
 				R = Object(o.a)(v.x),
 				S = (e, t) => async (r, n, o) => {
 					let s, {
-							apiContext: i,
+							apiContext: a,
 							gqlContext: c
 						} = o,
-						h = n().polls.models[e];
+						p = n().polls.models[e];
 					if (r(C({
 							pollId: e
-						})), (s = h.type === u.a.GA ? await ((e, t, r) => Object(l.a)(e, {
+						})), (s = p.type === u.a.GA ? await ((e, t, r) => Object(l.a)(e, {
 								...f,
 								variables: {
 									input: {
@@ -1288,36 +1288,36 @@
 									method: "put",
 									endpoint: `${d.a.metaUrl}/polls/${t}/${r}/votes/me/${n}`
 								})
-							}(i(), h.subredditId, e, t)).ok) {
-						if (h.type === u.a.GA) {
+							}(a(), p.subredditId, e, t)).ok) {
+						if (p.type === u.a.GA) {
 							const {
 								options: e
 							} = s.body.data.updatePostPollVoteState.poll;
 							r(E({
-								pollId: h.id,
+								pollId: p.id,
 								optionId: t,
 								options: e
 							}))
 						} else r(T(s.body));
 						const o = n();
-						if ((h = o.polls.models[e]) && Object(u.d)(h)) {
+						if ((p = o.polls.models[e]) && Object(u.d)(p)) {
 							const {
 								postId: e
-							} = h, t = o.posts.models[e];
-							t && t.voteState === g.a.notVoted && r(Object(a.kb)(e))
+							} = p, t = o.posts.models[e];
+							t && t.voteState === g.a.notVoted && r(Object(i.kb)(e))
 						}
 					} else r(j({
 						pollId: e,
 						error: s.error || s.errors[0].message
 					})), Object(y.a)(r, s.error || s.errors[0].messsage)
-				}, q = (e, t) => async (r, o, a) => {
+				}, q = (e, t) => async (r, o, i) => {
 					let {
 						apiContext: l
-					} = a;
+					} = i;
 					var u;
 					r(I());
 					const f = o().transfers.communityPoints.contentId || void 0,
-						h = await
+						p = await
 					function(e, t) {
 						return Object(m.a)(e, {
 							data: {
@@ -1333,23 +1333,23 @@
 						...e,
 						contentId: f
 					});
-					h.ok ? (r(O({
-						...h.body,
+					p.ok ? (r(O({
+						...p.body,
 						subredditId: e.subredditId
 					})), r(Object(c.f)({
-						kind: p.b.SuccessCommunity,
+						kind: h.b.SuccessCommunity,
 						text: n.fbt._("Success! You just transferred {amount} {tokenName} to {recipient}", [n.fbt._param("amount", Object(s.a)(e.amount)), n.fbt._param("tokenName", (null === (u = Object(b.b)(o(), e.subredditId)) || void 0 === u ? void 0 : u.name) || ""), n.fbt._param("recipient", e.recipient)], {
 							hk: "3klrhq"
 						})
-					})), t && r(Object(i.f)())) : (r(A({
-						error: h.error
-					})), Object(y.a)(r, h.error))
+					})), t && r(Object(a.f)())) : (r(N({
+						error: p.error
+					})), Object(y.a)(r, p.error))
 				}, k = e => async (t, r, n) => {
 					let {
 						apiContext: o
 					} = n;
 					t(M());
-					const s = await Object(h.a)(o(), e);
+					const s = await Object(p.a)(o(), e);
 					s.ok ? t(P(s.body)) : t(B({
 						error: s.error
 					}))
@@ -1361,7 +1361,7 @@
 			function n(e, t) {
 				let r = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : 3e4,
 					n = arguments.length > 3 && void 0 !== arguments[3] ? arguments[3] : 3e5;
-				return async (o, s, i) => new Promise((a, c) => {
+				return async (o, s, a) => new Promise((i, c) => {
 					const d = Date.now() + n,
 						l = () => {
 							c(new Error("Timed out while polling for success"))
@@ -1369,9 +1369,9 @@
 						u = async () => {
 							if (Date.now() > d) return l();
 							const n = Date.now();
-							await e(o, s, i);
+							await e(o, s, a);
 							const f = await t(s);
-							if (f) a();
+							if (f) i();
 							else if (!1 === f) c();
 							else {
 								Date.now() + Math.max(r - (Date.now() - n), 0) < d ? setTimeout(u, r) : l()
@@ -1404,29 +1404,29 @@
 			var n = r("./node_modules/react/index.js"),
 				o = r.n(n),
 				s = r("./src/reddit/components/Governance/TokenAmount/index.tsx"),
-				i = r("./src/reddit/components/Governance/TransactionModals/ApprovalModal/Overview.m.less"),
-				a = r.n(i);
+				a = r("./src/reddit/components/Governance/TransactionModals/ApprovalModal/Overview.m.less"),
+				i = r.n(a);
 
 			function c(e) {
 				return o.a.createElement("div", {
-					className: a.a.overview
+					className: i.a.overview
 				}, e.image, o.a.createElement("div", {
-					className: a.a.description
+					className: i.a.description
 				}, o.a.createElement("div", {
-					className: a.a.grid
+					className: i.a.grid
 				}, o.a.createElement("div", {
-					className: a.a.descriptionTitle,
+					className: i.a.descriptionTitle,
 					title: e.title
 				}, e.title), o.a.createElement("div", {
-					className: a.a.amountCell
+					className: i.a.amountCell
 				}, o.a.createElement(s.a, {
 					amount: e.pointsAmount,
-					className: a.a.amount,
+					className: i.a.amount,
 					subredditId: e.subredditId
 				})), o.a.createElement("div", {
-					className: a.a.descriptionSubtitle
+					className: i.a.descriptionSubtitle
 				}, e.subtitle), o.a.createElement("div", {
-					className: a.a.amountSubtext
+					className: i.a.amountSubtext
 				}, e.pointsAmountSubtext))))
 			}
 		},
@@ -1441,16 +1441,16 @@
 			var n = r("./node_modules/fbt/lib/FbtPublic.js"),
 				o = r("./node_modules/react/index.js"),
 				s = r.n(o),
-				i = r("./node_modules/react-redux/es/index.js"),
-				a = r("./node_modules/reselect/es/index.js"),
+				a = r("./node_modules/react-redux/es/index.js"),
+				i = r("./node_modules/reselect/es/index.js"),
 				c = r("./src/higherOrderComponents/asModal/index.tsx"),
 				d = r("./src/lib/makeActionCreator/index.ts"),
 				l = r("./src/reddit/actions/economics/claims/constants.ts");
 			const u = Object(d.a)(l.a),
 				f = Object(d.a)(l.b);
 			var m = r("./src/reddit/actions/economics/me/thunkedActions.ts"),
-				h = r("./src/reddit/actions/governance/index.ts"),
-				p = r("./src/reddit/actions/toaster.ts"),
+				p = r("./src/reddit/actions/governance/index.ts"),
+				h = r("./src/reddit/actions/toaster.ts"),
 				g = r("./src/reddit/actions/util/pollActionForSuccess.ts"),
 				b = r("./src/reddit/endpoints/governance/crypto.ts"),
 				v = r("./src/reddit/helpers/crypto/transactions.ts"),
@@ -1462,8 +1462,8 @@
 				j = r("./src/reddit/selectors/crypto/claims.ts"),
 				C = r("./src/reddit/selectors/crypto/points.ts"),
 				T = r("./src/reddit/selectors/gov.ts"),
-				A = r("./src/lib/addQueryParams/index.ts"),
-				N = r("./src/reddit/icons/svgs/Close/index.tsx"),
+				N = r("./src/lib/addQueryParams/index.ts"),
+				A = r("./src/reddit/icons/svgs/Close/index.tsx"),
 				I = r("./src/reddit/selectors/user.ts"),
 				O = r("./src/reddit/components/Governance/TransactionModals/Common/Bullet.tsx"),
 				B = r("./src/reddit/components/Governance/TransactionModals/Common/QRCode.tsx"),
@@ -1472,13 +1472,13 @@
 			const {
 				fbt: R
 			} = r("./node_modules/fbt/lib/FbtPublic.js");
-			const S = Object(a.c)({
+			const S = Object(i.c)({
 					userId: e => {
 						const t = Object(I.k)(e);
 						return t ? t.id : ""
 					}
 				}),
-				q = Object(i.b)(S)((function(e) {
+				q = Object(a.b)(S)((function(e) {
 					const {
 						onClose: t,
 						userId: r
@@ -1491,7 +1491,7 @@
 						className: P.a.title
 					}, R._("Create Your Vault on Your Smartphone", null, {
 						hk: "247Dqn"
-					})), s.a.createElement(N.a, {
+					})), s.a.createElement(A.a, {
 						className: P.a.closeButton,
 						onClick: t
 					})), s.a.createElement("div", {
@@ -1523,7 +1523,7 @@
 					})))), s.a.createElement("section", {
 						className: P.a.rightSection
 					}, s.a.createElement(B.a, {
-						url: Object(A.a)("http://www.reddit.com/vault/", {
+						url: Object(N.a)("http://www.reddit.com/vault/", {
 							u: r
 						}),
 						scale: 5
@@ -1542,9 +1542,9 @@
 				const {
 					subredditId: t,
 					pointsDetails: r
-				} = e, o = Object(i.e)(t => Object(j.b)(t, e)), a = o && o.pointsToClaim;
-				if (!a) throw new Error("Expected claim amount to approve");
-				const c = Object(i.e)(t => Object(D.V)(t, e));
+				} = e, o = Object(a.e)(t => Object(j.b)(t, e)), i = o && o.pointsToClaim;
+				if (!i) throw new Error("Expected claim amount to approve");
+				const c = Object(a.e)(t => Object(D.V)(t, e));
 				return s.a.createElement(Y.a, {
 					subredditId: t,
 					image: s.a.createElement(L.b, {
@@ -1557,7 +1557,7 @@
 					subtitle: n.fbt._("For your contributions to {subredditName}", [n.fbt._param("subredditName", c.displayText)], {
 						hk: "tFIxU"
 					}),
-					pointsAmount: a
+					pointsAmount: i
 				})
 			}
 			const z = e => s.a.createElement(U.b, {
@@ -1573,40 +1573,40 @@
 				const {
 					onClose: t,
 					subredditId: r
-				} = e, o = Object(i.d)(), c = Object(E.a)(), {
+				} = e, o = Object(a.d)(), c = Object(E.a)(), {
 					currentPointsAmount: d,
 					nextPointsClaim: l,
-					pointsDetails: A
-				} = Object(i.e)(Object(a.c)({
+					pointsDetails: N
+				} = Object(a.e)(Object(i.c)({
 					currentPointsAmount: t => Object(T.e)(t, e),
 					nextPointsClaim: t => Object(j.b)(t, e),
 					pointsDetails: t => Object(C.b)(t, e.subredditId)
 				}));
-				if (!A || !l) throw new Error("No available claim to make");
+				if (!N || !l) throw new Error("No available claim to make");
 				if (!l.address) return s.a.createElement(q, {
 					onClose: t
 				});
-				const N = Object(v.b)(A.contracts.distribution.address, l.round, l.address, l.userKarma, l.signature),
+				const A = Object(v.b)(N.contracts.distribution.address, l.round, l.address, l.userKarma, l.signature),
 					I = e => {
-						c(Object(_.c)("points_claim", r, A.displayConversion, e))
+						c(Object(_.c)("points_claim", r, N.displayConversion, e))
 					},
-					O = Object(w.c)(l.pointsToClaim, A.displayConversion);
+					O = Object(w.c)(l.pointsToClaim, N.displayConversion);
 				return s.a.createElement(k.a, {
 					approvalOverview: s.a.createElement(V, {
-						pointsDetails: A,
+						pointsDetails: N,
 						subredditId: r
 					}),
 					approvalDetails: s.a.createElement(z, {
-						transaction: N
+						transaction: A
 					}),
 					onClose: t,
 					onTransactionSuccess: async e => {
-						t(), o(Object(p.f)(Object(p.e)(n.fbt._("Processing claim...", null, {
+						t(), o(Object(h.f)(Object(h.e)(n.fbt._("Processing claim...", null, {
 							hk: "46c8dF"
 						}), x.b.SuccessCommunity))), o(f({
 							subredditId: r
 						})), async function(e, t, r, n, o) {
-							await Object(y.a)(t, r), await e(Object(g.a)(Object(h.h)({
+							await Object(y.a)(t, r), await e(Object(g.a)(Object(p.h)({
 								subredditId: n
 							}), async e => {
 								const t = Object(T.e)(e(), {
@@ -1616,18 +1616,18 @@
 							})), await e(Object(m.b)({
 								forceFetch: !0
 							}))
-						}(o, A, e.hash, r, d).then(() => {
+						}(o, N, e.hash, r, d).then(() => {
 							c(Object(_.d)("points_claim", r, O)), o(function(e) {
-								return Object(p.f)(Object(p.e)(n.fbt._("Your {pointsName} are ready!", [n.fbt._param("pointsName", e)], {
+								return Object(h.f)(Object(h.e)(n.fbt._("Your {pointsName} are ready!", [n.fbt._param("pointsName", e)], {
 									hk: "2LpLml"
 								}), x.b.SuccessCommunityGreen))
-							}(A.name))
+							}(N.name))
 						}).catch(e => {
 							I(e.toString()), o(function(e) {
-								return Object(p.f)(Object(p.e)(n.fbt._("Failed to claim your {pointsName}. Try again later", [n.fbt._param("pointsName", e)], {
+								return Object(h.f)(Object(h.e)(n.fbt._("Failed to claim your {pointsName}. Try again later", [n.fbt._param("pointsName", e)], {
 									hk: "ch1Bl"
 								}), x.b.Error))
-							}(A.name))
+							}(N.name))
 						}).finally(() => {
 							o(u({
 								subredditId: r
@@ -1636,7 +1636,7 @@
 					},
 					onTransactionFailure: I,
 					subredditId: r,
-					transaction: N,
+					transaction: A,
 					transactionIntent: Object(b.c)(r)
 				})
 			}))
@@ -1680,31 +1680,31 @@
 			var n = r("./node_modules/fbt/lib/FbtPublic.js"),
 				o = r("./node_modules/lodash/uniqueId.js"),
 				s = r.n(o),
-				i = r("./node_modules/raf/index.js"),
-				a = r.n(i),
+				a = r("./node_modules/raf/index.js"),
+				i = r.n(a),
 				c = r("./node_modules/react/index.js"),
 				d = r.n(c),
 				l = r("./src/lib/classNames/index.ts"),
 				u = r("./src/higherOrderComponents/asModal/index.tsx"),
 				f = r("./src/reddit/controls/Button/index.tsx"),
 				m = r("./src/reddit/layout/row/Inline/index.tsx"),
-				h = r("./src/reddit/controls/ErrorText/SeeAllTextModal/index.m.less"),
-				p = r.n(h);
+				p = r("./src/reddit/controls/ErrorText/SeeAllTextModal/index.m.less"),
+				h = r.n(p);
 			var g = Object(u.a)(e => {
 					const {
 						children: t,
 						title: r
 					} = e;
 					return d.a.createElement("div", {
-						className: p.a.wrapper
+						className: h.a.wrapper
 					}, d.a.createElement(m.a, {
-						className: p.a.titleRow
+						className: h.a.titleRow
 					}, r), d.a.createElement("div", {
-						className: p.a.detailsContainer
+						className: h.a.detailsContainer
 					}, t), d.a.createElement(m.a, {
-						className: p.a.buttonRow
+						className: h.a.buttonRow
 					}, d.a.createElement(f.l, {
-						className: p.a.confirmButton,
+						className: h.a.confirmButton,
 						onClick: e.onConfirmed
 					}, n.fbt._("Ok", null, {
 						hk: "2Giu9U"
@@ -1731,7 +1731,7 @@
 					this.calcTextDidOverflow()
 				}
 				calcTextDidOverflow() {
-					a()(() => {
+					i()(() => {
 						const e = this.spanRef.current;
 						if (!e) return;
 						const t = e.scrollWidth > e.clientWidth;
@@ -1752,18 +1752,18 @@
 							hk: "1bCAQ0"
 						})
 					} = this.props, {
-						textHasOverflowed: i,
-						isModalOpen: a
+						textHasOverflowed: a,
+						isModalOpen: i
 					} = this.state;
 					return d.a.createElement("div", {
 						className: Object(l.a)(v.a.wrapper, t)
 					}, d.a.createElement("span", {
 						className: v.a.description,
 						ref: this.spanRef
-					}, e), i && d.a.createElement("span", {
+					}, e), a && d.a.createElement("span", {
 						className: v.a.moreText,
 						onClick: this.toggleModal
-					}, s), a && d.a.createElement(g, {
+					}, s), i && d.a.createElement(g, {
 						onConfirmed: this.toggleModal,
 						title: o
 					}, r || e))
@@ -1776,10 +1776,10 @@
 						errorModalTitle: n,
 						fallbackMessage: o,
 						messages: s = []
-					} = e, i = s.length ? s : o ? [o] : [];
-					return i.length ? d.a.createElement("div", {
+					} = e, a = s.length ? s : o ? [o] : [];
+					return a.length ? d.a.createElement("div", {
 						className: t
-					}, i.map((e, t) => d.a.createElement(y, {
+					}, a.map((e, t) => d.a.createElement(y, {
 						className: r,
 						errorModalTitle: n,
 						key: t
@@ -1815,7 +1815,7 @@
 			r.d(t, "a", (function() {
 				return m
 			})), r.d(t, "b", (function() {
-				return p
+				return h
 			})), r.d(t, "c", (function() {
 				return g
 			})), r.d(t, "d", (function() {
@@ -1825,8 +1825,8 @@
 			var n = r("./node_modules/react/index.js"),
 				o = r.n(n),
 				s = r("./src/lib/classNames/index.ts"),
-				i = r("./src/lib/lessComponent.tsx"),
-				a = r("./src/reddit/controls/ErrorText/index.tsx"),
+				a = r("./src/lib/lessComponent.tsx"),
+				i = r("./src/reddit/controls/ErrorText/index.tsx"),
 				c = r("./src/reddit/icons/svgs/Plus/index.tsx"),
 				d = r("./src/reddit/icons/svgs/Trash2/index.tsx"),
 				l = r("./src/reddit/controls/FormFields/index.m.less"),
@@ -1841,27 +1841,27 @@
 					return e
 				}).apply(this, arguments)
 			}
-			const m = i.a.input("input", u.a),
-				h = e => {
+			const m = a.a.input("input", u.a),
+				p = e => {
 					"LABEL" === e.target.tagName && (e.target.parentElement.firstElementChild.focus(), e.stopPropagation())
 				},
-				p = e => {
+				h = e => {
 					let {
 						label: t,
 						children: r,
 						inputRef: n,
-						className: i,
-						isInvalid: a,
+						className: a,
+						isInvalid: i,
 						...c
 					} = e;
 					const d = void 0 !== c.value && "" !== c.value;
 					return o.a.createElement("div", {
-						className: Object(s.a)(u.a.inputWrapper, i, {
-							[u.a.mIsInvalid]: a
+						className: Object(s.a)(u.a.inputWrapper, a, {
+							[u.a.mIsInvalid]: i
 						}),
-						onClick: h
+						onClick: p
 					}, o.a.createElement(m, f({
-						"aria-invalid": a,
+						"aria-invalid": i,
 						innerRef: n
 					}, c)), t && o.a.createElement("label", {
 						className: Object(s.a)(u.a.label, {
@@ -1874,18 +1874,18 @@
 						label: t,
 						children: r,
 						inputRef: n,
-						isInvalid: i,
-						className: a,
+						isInvalid: a,
+						className: i,
 						redditStyle: c,
 						...d
 					} = e;
 					const l = void 0 !== d.value && "" !== d.value;
 					return o.a.createElement("div", {
-						className: Object(s.a)(u.a.inputMovingLabelWrapper, a, {
-							[u.a.mIsInvalid]: i,
+						className: Object(s.a)(u.a.inputMovingLabelWrapper, i, {
+							[u.a.mIsInvalid]: a,
 							[u.a.mIsRedditStyle]: c
 						}),
-						onClick: h
+						onClick: p
 					}, o.a.createElement(m, f({
 						innerRef: n
 					}, d)), t && o.a.createElement("label", {
@@ -1947,13 +1947,13 @@
 						placeholder: n,
 						errors: s = []
 					} = this.props;
-					return e.map((e, i) => o.a.createElement(p, {
-						inputRef: e => this.setInputRef(e, i),
-						isInvalid: !!s[i],
+					return e.map((e, a) => o.a.createElement(h, {
+						inputRef: e => this.setInputRef(e, a),
+						isInvalid: !!s[a],
 						disabled: t,
 						type: "text",
 						label: r,
-						onChange: e => this.updateValue(e, i),
+						onChange: e => this.updateValue(e, a),
 						placeholder: n,
 						value: e,
 						style: {
@@ -1961,12 +1961,12 @@
 						}
 					}, o.a.createElement("div", {
 						className: u.a.trashContainer,
-						onClick: () => this.removeValue(i)
+						onClick: () => this.removeValue(a)
 					}, o.a.createElement(d.b, {
 						className: u.a.trash
-					})), !!s[i] && o.a.createElement(a.b, {
+					})), !!s[a] && o.a.createElement(i.b, {
 						className: u.a.errorText
-					}, s[i])))
+					}, s[a])))
 				}
 				render() {
 					const {
@@ -1974,19 +1974,19 @@
 						buttonOnTop: t,
 						values: r,
 						maxLength: n,
-						addValueText: i,
-						disabled: a
+						addValueText: a,
+						disabled: i
 					} = this.props;
 					this.focusedInput = null;
-					const c = !(!!n && r.length >= n) && !a;
+					const c = !(!!n && r.length >= n) && !i;
 					return o.a.createElement("div", {
 						className: Object(s.a)(u.a.multiInputWrapper, e)
 					}, t && c && o.a.createElement(b, {
 						onClick: this.addValue,
-						text: i
+						text: a
 					}), this.renderFields(), !t && c && o.a.createElement(b, {
 						onClick: this.addValue,
-						text: i
+						text: a
 					}))
 				}
 			}
@@ -1994,15 +1994,15 @@
 		"./src/reddit/endpoints/governance/wallet.ts": function(e, t, r) {
 			"use strict";
 			r.d(t, "a", (function() {
-				return i
-			})), r.d(t, "b", (function() {
 				return a
+			})), r.d(t, "b", (function() {
+				return i
 			}));
 			var n = r("./src/config.ts"),
 				o = (r("./src/lib/bigNumberUtils/percent.ts"), r("./src/lib/constants/index.ts")),
 				s = r("./src/reddit/endpoints/governance/requester.ts");
 
-			function i(e, t) {
+			function a(e, t) {
 				return Object(s.a)(e, {
 					endpoint: `${n.a.metaUrl}/wallets/${t.subredditId}/me`,
 					method: o.jb.GET
@@ -2021,7 +2021,7 @@
 				})
 			}
 
-			function a(e, t) {
+			function i(e, t) {
 				return Object(s.a)(e, {
 					headers: {
 						"X-HTTP-Method-Override": "GET"
@@ -2103,6 +2103,46 @@
 				payable: !1,
 				stateMutability: "view",
 				type: "function"
+			}, {
+				inputs: [{
+					internalType: "address",
+					name: "spender",
+					type: "address"
+				}, {
+					internalType: "uint256",
+					name: "amount",
+					type: "uint256"
+				}],
+				name: "approve",
+				outputs: [{
+					internalType: "bool",
+					name: "",
+					type: "bool"
+				}],
+				stateMutability: "nonpayable",
+				type: "function"
+			}, {
+				inputs: [{
+					internalType: "address",
+					name: "from",
+					type: "address"
+				}, {
+					internalType: "address",
+					name: "to",
+					type: "address"
+				}, {
+					internalType: "uint256",
+					name: "amount",
+					type: "uint256"
+				}],
+				name: "transferFrom",
+				outputs: [{
+					internalType: "bool",
+					name: "",
+					type: "bool"
+				}],
+				stateMutability: "nonpayable",
+				type: "function"
 			}]
 		},
 		"./src/reddit/helpers/governanceErrorText/index.ts": function(e, t, r) {
@@ -2110,7 +2150,7 @@
 			r.d(t, "a", (function() {
 				return s
 			})), r.d(t, "b", (function() {
-				return i
+				return a
 			}));
 			r("./node_modules/core-js/modules/web.dom.iterable.js");
 			var n = r("./node_modules/fbt/lib/FbtPublic.js");
@@ -2125,7 +2165,7 @@
 				})
 			}
 
-			function i(e) {
+			function a(e) {
 				const t = `${e.type} (${e.code})`;
 				return "message" in e ? `${t}: ${e.message}` : t
 			}
@@ -2203,10 +2243,10 @@
 			var n = r("./node_modules/react/index.js"),
 				o = r.n(n),
 				s = r("./src/lib/classNames/index.ts"),
-				i = r("./src/reddit/icons/svgs/Trash2/index.m.less"),
-				a = r.n(i);
+				a = r("./src/reddit/icons/svgs/Trash2/index.m.less"),
+				i = r.n(a);
 			const c = e => o.a.createElement("svg", {
-				className: Object(s.a)(a.a.icon, e.className),
+				className: Object(s.a)(i.a.icon, e.className),
 				viewBox: "0 0 20 20",
 				xmlns: "http://www.w3.org/2000/svg",
 				onClick: e.onClick
@@ -2231,24 +2271,32 @@
 		},
 		"./src/reddit/selectors/experiments/mainnet.ts": function(e, t, r) {
 			"use strict";
-			r.d(t, "a", (function() {
+			r.d(t, "b", (function() {
 				return s
+			})), r.d(t, "a", (function() {
+				return a
 			}));
 			var n = r("./src/reddit/constants/experiments.ts"),
 				o = r("./src/reddit/helpers/chooseVariant/index.ts");
 			const s = e => {
-				return Object(o.c)(e, {
-					experimentEligibilitySelector: o.a,
-					experimentName: n.se
-				}) === n.Jd
-			}
+					return Object(o.c)(e, {
+						experimentEligibilitySelector: o.a,
+						experimentName: n.te
+					}) === n.Jd
+				},
+				a = e => {
+					return Object(o.c)(e, {
+						experimentEligibilitySelector: o.a,
+						experimentName: n.qe
+					}) === n.Jd
+				}
 		},
 		"./src/reddit/selectors/gov.ts": function(e, t, r) {
 			"use strict";
 			r.d(t, "a", (function() {
-				return i
-			})), r.d(t, "b", (function() {
 				return a
+			})), r.d(t, "b", (function() {
+				return i
 			})), r.d(t, "c", (function() {
 				return c
 			})), r.d(t, "d", (function() {
@@ -2263,11 +2311,11 @@
 			var n = r("./src/reddit/contexts/PageLayer/index.tsx");
 			const o = [],
 				s = {},
-				i = (e, t) => {
+				a = (e, t) => {
 					const r = m(e, t);
 					if (r) return r.mainHeader
 				},
-				a = (e, t) => {
+				i = (e, t) => {
 					const r = m(e, t);
 					return r && r.mainHeader ? r.mainHeader.price : "0"
 				},
@@ -2300,4 +2348,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-ClaimPointsModal.192a821ba5790f2c1317.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-ClaimPointsModal.8ef9103716f9dc0b3a44.js.map

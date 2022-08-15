@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CryptoVault.856e19811e10ded17c73.js
-// Retrieved at 8/4/2022, 2:20:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CryptoVault.85ba9a46b59a88e3f6c5.js
+// Retrieved at 8/15/2022, 6:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CryptoVault"], {
 		"./src/reddit/actions/economics/claims/constants.ts": function(e, t, n) {
@@ -64,9 +64,9 @@
 			})), n.d(t, "r", (function() {
 				return N
 			})), n.d(t, "s", (function() {
-				return y
-			})), n.d(t, "t", (function() {
 				return A
+			})), n.d(t, "t", (function() {
+				return y
 			})), n.d(t, "u", (function() {
 				return h
 			})), n.d(t, "v", (function() {
@@ -94,8 +94,8 @@
 				p = "GOVERNANCE__RELEASE_NOTES_SUCCESS",
 				v = "GOVERNANCE__TRANSFER_FAILURE",
 				N = "GOVERNANCE__TRANSFER_MODAL_OPENED",
-				y = "GOVERNANCE__TRANSFER_PENDING",
-				A = "GOVERNANCE__TRANSFER_SUCCESS",
+				A = "GOVERNANCE__TRANSFER_PENDING",
+				y = "GOVERNANCE__TRANSFER_SUCCESS",
 				h = "GOVERNANCE__WALLETS_FETCH_FAILURE",
 				C = "GOVERNANCE__WALLETS_FETCH_PENDING",
 				g = "GOVERNANCE__WALLETS_FETCH_SUCCESS",
@@ -157,7 +157,7 @@
 		"./src/reddit/components/Governance/VaultActionLink/VaultActionPills.tsx": function(e, t, n) {
 			"use strict";
 			n.r(t), n.d(t, "default", (function() {
-				return y
+				return A
 			}));
 			var r = n("./node_modules/fbt/lib/FbtPublic.js"),
 				i = n("./node_modules/react/index.js"),
@@ -178,7 +178,7 @@
 				v = n("./src/reddit/components/Governance/VaultActionLink/VaultActionPills.m.less"),
 				N = n.n(v);
 
-			function y(e) {
+			function A(e) {
 				const t = Object(s.d)(),
 					n = Object(E.gb)(),
 					r = Object(s.e)(e => Object(E.r)(e, {
@@ -188,7 +188,7 @@
 					c = Object(f.e)(e.content.document).filter(b.b);
 				return r && i && c.length ? o.a.createElement("div", {
 					className: N.a.vaultActionPills
-				}, c.map(e => o.a.createElement(A, {
+				}, c.map(e => o.a.createElement(y, {
 					key: e,
 					url: e,
 					currentSubreddit: r,
@@ -197,7 +197,7 @@
 				}))) : null
 			}
 
-			function A(e) {
+			function y(e) {
 				let {
 					url: t,
 					currentSubreddit: n,
@@ -380,7 +380,7 @@
 					endpoint: `${i.a.metaUrl}/crypto/${t}/registrations/${n}`
 				})
 			}! function(e) {
-				e.Ethereum = "ethereum:1", e.Rinkeby = "ethereum:4", e.ArbitrumRinkeby = "ethereum:5391184", e.ArbitrumNitroDevnet = "ethereum:421612", e.ArbitrumMainnet = "ethereum:42170", e.EthTraderEthereum = "ethereum:1:ethtrader", e.EthTraderRinkeby = "ethereum:4:ethtrader"
+				e.Ethereum = "ethereum:1", e.Rinkeby = "ethereum:4", e.ArbitrumNova = "ethereum:42170", e.ArbitrumRinkeby = "ethereum:5391184", e.ArbitrumNitroDevnet = "ethereum:421612", e.ArbitrumMainnet = "ethereum:42170", e.EthTraderEthereum = "ethereum:1:ethtrader", e.EthTraderRinkeby = "ethereum:4:ethtrader"
 			}(r || (r = {}));
 			const E = (e, t, n) => ({
 					type: "burn-link",
@@ -674,4 +674,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CryptoVault.856e19811e10ded17c73.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CryptoVault.85ba9a46b59a88e3f6c5.js.map

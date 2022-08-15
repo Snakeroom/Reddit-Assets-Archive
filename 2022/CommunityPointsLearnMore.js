@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CommunityPointsLearnMore.2bbc14dfdeb4fda291fc.js
-// Retrieved at 8/9/2022, 7:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CommunityPointsLearnMore.b42a598ba15430b79487.js
+// Retrieved at 8/15/2022, 6:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CommunityPointsLearnMore"], {
 		"./src/reddit/components/Econ/Common/ModalCloseButton/index.m.less": function(e, t, o) {
@@ -436,14 +436,14 @@
 					hk: "3HjKIg"
 				}),
 				pages: [{
-					key: "vault",
-					name: I.fbt._("Vault", null, {
-						hk: "4vC7Cj"
-					})
-				}, {
 					key: "points-on-the-blockchain",
 					name: I.fbt._("Points on the Blockchain", null, {
 						hk: "10M3cB"
+					})
+				}, {
+					key: "vault",
+					name: I.fbt._("Vault", null, {
+						hk: "4vC7Cj"
 					})
 				}, {
 					key: "developers",
@@ -2712,4 +2712,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommunityPointsLearnMore.2bbc14dfdeb4fda291fc.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommunityPointsLearnMore.b42a598ba15430b79487.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/6.31564790dcbb8638aa4b.js
-// Retrieved at 7/14/2022, 11:10:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/6.d1ab48e223b07384ac90.js
+// Retrieved at 8/15/2022, 6:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	[6], {
 		"./src/reddit/icons/svgs/AddCollection/index.tsx": function(e, s, t) {
@@ -1812,6 +1812,23 @@
 				d: "M8.00008 9.92008C9.06047 9.92008 9.92008 9.06047 9.92008 8.00008C9.92008 6.93969 9.06047 6.08008 8.00008 6.08008C6.93969 6.08008 6.08008 6.93969 6.08008 8.00008C6.08008 9.06047 6.93969 9.92008 8.00008 9.92008Z",
 				strokeWidth: "1.25",
 				strokeMiterlimit: "10"
+			}))
+		},
+		"./src/reddit/icons/svgs/LoadingOrbit/index.tsx": function(e, s, t) {
+			"use strict";
+			var n = t("./node_modules/react/index.js"),
+				a = t.n(n);
+			s.a = e => a.a.createElement("svg", {
+				className: e.className,
+				fill: "none",
+				height: "24",
+				width: "24",
+				xmlns: "http://www.w3.org/2000/svg"
+			}, a.a.createElement("path", {
+				clipRule: "evenodd",
+				d: "M.55 15.6c.09.28.4.42.68.32.28-.1.42-.41.34-.7a10.92 10.92 0 0 1 15.47-12.9 2.22 2.22 0 1 0 .63-.9A12 12 0 0 0 .55 15.6zm22.9-7.2a.52.52 0 0 0-.68-.32.56.56 0 0 0-.34.7 10.92 10.92 0 0 1-15.47 12.9 2.22 2.22 0 1 0-.63.9A12 12 0 0 0 23.45 8.4zM12 16.9a4.89 4.89 0 1 0 0-9.78 4.89 4.89 0 0 0 0 9.78z",
+				fill: "#006dc6",
+				fillRule: "evenodd"
 			}))
 		},
 		"./src/reddit/icons/svgs/Location/index.tsx": function(e, s, t) {
@@ -4243,7 +4260,7 @@
 			});
 			t("./src/reddit/icons/svgs/ImagePost/index.tsx"), t("./src/reddit/icons/svgs/ImageUpload/index.tsx"), t("./src/reddit/icons/svgs/Info/index.tsx"), t("./src/reddit/icons/svgs/KarmaGray/index.m.less");
 			t("./src/reddit/icons/svgs/Link/index.tsx"), t("./src/reddit/icons/svgs/LiveChat/index.tsx");
-			t("./src/reddit/icons/svgs/Location/index.tsx"), t("./src/reddit/icons/svgs/Lock/index.tsx");
+			t("./src/reddit/icons/svgs/LoadingOrbit/index.tsx"), t("./src/reddit/icons/svgs/Location/index.tsx"), t("./src/reddit/icons/svgs/Lock/index.tsx");
 			t("./src/reddit/icons/svgs/MarkdownMode/index.tsx"), t("./src/reddit/icons/svgs/Menu/index.tsx"), t("./src/reddit/icons/svgs/Minus/index.tsx"), t("./src/reddit/icons/svgs/MinusCircle/index.tsx"), t("./src/reddit/icons/svgs/Moderate/index.tsx"), t("./src/reddit/icons/svgs/ModLogPosts/index.tsx");
 			t("./src/reddit/icons/svgs/ModRemove/index.tsx");
 			t("./src/reddit/icons/svgs/Negative/index.tsx"), t("./src/reddit/icons/svgs/New/index.tsx");
@@ -4263,4 +4280,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/6.31564790dcbb8638aa4b.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/6.d1ab48e223b07384ac90.js.map

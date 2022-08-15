@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/FeaturedLiveEntrypointAnnouncementsCarousel.ae0b40253117236767b1.js
-// Retrieved at 8/10/2022, 7:10:03 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/FeaturedLiveEntrypointAnnouncementsCarousel.f577ab48acfc50e2a8e0.js
+// Retrieved at 8/15/2022, 6:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["FeaturedLiveEntrypointAnnouncementsCarousel"], {
 		"./src/reddit/components/FeaturedLiveEntrypoint/AnnouncementsCarousel/index.m.less": function(e, n, t) {
@@ -87,13 +87,13 @@
 						...Object(h.n)(n)
 					})
 				},
-				j = e => n => ({
+				O = e => n => ({
 					source: "announcement",
 					action: e,
 					noun: "announcement",
 					...Object(h.n)(n)
 				});
-			var O = t("./src/reddit/hooks/useTracking.ts"),
+			var j = t("./src/reddit/hooks/useTracking.ts"),
 				C = t("./src/reddit/selectors/experiments/index.ts");
 			const E = e => {
 					const n = new Date;
@@ -105,7 +105,7 @@
 				g = (e, n) => t => {
 					if (t.experimentName) {
 						const n = e[t.experimentName.toLowerCase()];
-						if (n && Object(p.jg)(n.variant)) return !1
+						if (n && Object(p.kg)(n.variant)) return !1
 					}
 					return !((n[t.id] || 0) >= t.maxImpressionsCount)
 				};
@@ -205,12 +205,12 @@
 						visibleAnnouncements: t,
 						setActiveIndex: s
 					} = e;
-					const o = Object(O.a)(),
+					const o = Object(j.a)(),
 						[i, c] = Object(a.useState)(!0),
 						r = Object(a.useRef)(null);
 					return {
 						onCarouselNavigate: Object(a.useCallback)(e => () => {
-							"next" === e && n + 1 >= t.length ? s(0) : s("prev" === e && n <= 0 ? t.length - 1 : n + ("next" === e ? 1 : -1)), o(j("next" === e ? "scroll_next" : "scroll_previous")), r.current && window.clearTimeout(r.current), c(!1), r.current = window.setTimeout(() => {
+							"next" === e && n + 1 >= t.length ? s(0) : s("prev" === e && n <= 0 ? t.length - 1 : n + ("next" === e ? 1 : -1)), o(O("next" === e ? "scroll_next" : "scroll_previous")), r.current && window.clearTimeout(r.current), c(!1), r.current = window.setTimeout(() => {
 								c(!0)
 							}, 200)
 						}, [n, o, s, t]),
@@ -225,7 +225,7 @@
 						setIsHidden: n,
 						visibleAnnouncements: t
 					} = e;
-					const s = Object(O.a)();
+					const s = Object(j.a)();
 					return Object(a.useCallback)(() => {
 						n(!0), t.forEach(e => {
 							const {
@@ -233,7 +233,7 @@
 								maxImpressionsCount: t
 							} = e;
 							Object(_.ib)(n, t)
-						}), s(j("dismiss_all")), E(A.i.No)
+						}), s(O("dismiss_all")), E(A.i.No)
 					}, [t, s, n])
 				})({
 					visibleAnnouncements: r,
@@ -244,7 +244,7 @@
 						setActiveIndex: t,
 						visibleAnnouncements: s
 					} = e;
-					const o = Object(O.a)();
+					const o = Object(j.a)();
 					return Object(a.useCallback)(() => {
 						n < 0 || n >= s.length ? t(0) : o(x("click", s[n]))
 					}, [n, o, t, s])
@@ -259,7 +259,7 @@
 						setActiveIndex: t,
 						visibleAnnouncements: s
 					} = e;
-					const o = Object(O.a)(),
+					const o = Object(j.a)(),
 						c = Object(i.e)(C.a, (e, n) => Object.keys(e).length === Object.keys(n).length);
 					Object(a.useEffect)(() => {
 						if (n < 0 || n >= s.length) return void t(0);
@@ -330,4 +330,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/FeaturedLiveEntrypointAnnouncementsCarousel.ae0b40253117236767b1.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/FeaturedLiveEntrypointAnnouncementsCarousel.f577ab48acfc50e2a8e0.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Governance-ClaimPointsBanner.e7e07470d5d775556e1d.js
-// Retrieved at 8/9/2022, 12:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Governance-ClaimPointsBanner.96fbdfee61f4da8b83c0.js
+// Retrieved at 8/15/2022, 6:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Governance-ClaimPointsBanner"], {
 		"./src/lib/constants/specialMembership.ts": function(A, e, t) {
@@ -700,7 +700,7 @@
 					endpoint: `${i.a.metaUrl}/crypto/${e}/registrations/${t}`
 				})
 			}! function(A) {
-				A.Ethereum = "ethereum:1", A.Rinkeby = "ethereum:4", A.ArbitrumRinkeby = "ethereum:5391184", A.ArbitrumNitroDevnet = "ethereum:421612", A.ArbitrumMainnet = "ethereum:42170", A.EthTraderEthereum = "ethereum:1:ethtrader", A.EthTraderRinkeby = "ethereum:4:ethtrader"
+				A.Ethereum = "ethereum:1", A.Rinkeby = "ethereum:4", A.ArbitrumNova = "ethereum:42170", A.ArbitrumRinkeby = "ethereum:5391184", A.ArbitrumNitroDevnet = "ethereum:421612", A.ArbitrumMainnet = "ethereum:42170", A.EthTraderEthereum = "ethereum:1:ethtrader", A.EthTraderRinkeby = "ethereum:4:ethtrader"
 			}(n || (n = {}));
 			const p = (A, e, t) => ({
 					type: "burn-link",
@@ -1649,4 +1649,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Governance-ClaimPointsBanner.e7e07470d5d775556e1d.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Governance-ClaimPointsBanner.96fbdfee61f4da8b83c0.js.map

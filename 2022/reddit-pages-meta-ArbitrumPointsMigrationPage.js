@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-pages-meta-ArbitrumPointsMigrationPage.1d5e3ce06dcd76ebe005.js
-// Retrieved at 7/7/2022, 11:50:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-pages-meta-ArbitrumPointsMigrationPage.418d8473d048a7299ccf.js
+// Retrieved at 8/15/2022, 6:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-pages-meta-ArbitrumPointsMigrationPage"], {
 		"./node_modules/lodash/uniqueId.js": function(e, t, n) {
@@ -443,6 +443,46 @@
 				}],
 				payable: !1,
 				stateMutability: "view",
+				type: "function"
+			}, {
+				inputs: [{
+					internalType: "address",
+					name: "spender",
+					type: "address"
+				}, {
+					internalType: "uint256",
+					name: "amount",
+					type: "uint256"
+				}],
+				name: "approve",
+				outputs: [{
+					internalType: "bool",
+					name: "",
+					type: "bool"
+				}],
+				stateMutability: "nonpayable",
+				type: "function"
+			}, {
+				inputs: [{
+					internalType: "address",
+					name: "from",
+					type: "address"
+				}, {
+					internalType: "address",
+					name: "to",
+					type: "address"
+				}, {
+					internalType: "uint256",
+					name: "amount",
+					type: "uint256"
+				}],
+				name: "transferFrom",
+				outputs: [{
+					internalType: "bool",
+					name: "",
+					type: "bool"
+				}],
+				stateMutability: "nonpayable",
 				type: "function"
 			}]
 		},
@@ -1129,7 +1169,7 @@
 					l1ContractAddress: "0xDF82c9014F127243CE1305DFE54151647d74B27A",
 					l2ContractAddress: "0x138fAFa28a05A38f4d2658b12b0971221A7d5728"
 				}];
-			async function j() {
+			async function M() {
 				const e = new s.ethers.providers.Web3Provider(Object(E.c)()).getSigner(),
 					t = k.map(t => (async function(e, t) {
 						const n = new s.ethers.Contract(t.l1ContractAddress, y.a, e),
@@ -1142,7 +1182,7 @@
 					})(e, t));
 				return (await Promise.all(t)).filter(e => null !== e)
 			}
-			async function M(e, t, n, r) {
+			async function j(e, t, n, r) {
 				const i = new s.ethers.Contract(v, b, e),
 					o = await i.inbox();
 				console.log(`L1GatewayRouter: ${i.address}, inbox: ${o}`);
@@ -1244,7 +1284,7 @@
 									}
 								} else {
 									if ("4" !== a) throw new Error("Wallet must be set to Rinkeby Test Network");
-									n.seqNums = await M(e, t, n.l1ContractAddress, n.balance), n.originalL2Balance = await A(n.l2ContractAddress, t), o(n), u(!0)
+									n.seqNums = await j(e, t, n.l1ContractAddress, n.balance), n.originalL2Balance = await A(n.l2ContractAddress, t), o(n), u(!0)
 								}
 							} catch (e) {
 								throw console.error("Got error while running migration: ", e), c(e.message || e), e
@@ -1364,7 +1404,7 @@
 				} = e;
 				const [a, o] = Object(r.useState)(null);
 				return Object(r.useEffect)(() => {
-					j().then(e => {
+					M().then(e => {
 						o(e)
 					})
 				}, []), a ? a.length ? i.a.createElement(i.a.Fragment, null, i.a.createElement("p", null, i.a.createElement("b", null, "Please choose one to migrate:")), a.map(e => i.a.createElement("p", {
@@ -1385,4 +1425,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-pages-meta-ArbitrumPointsMigrationPage.1d5e3ce06dcd76ebe005.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-pages-meta-ArbitrumPointsMigrationPage.418d8473d048a7299ccf.js.map

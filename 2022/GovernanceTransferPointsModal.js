@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/GovernanceTransferPointsModal.aa03a5745244ece9dcbf.js
-// Retrieved at 8/10/2022, 7:10:03 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/GovernanceTransferPointsModal.5db0d9c4bed02196e8ef.js
+// Retrieved at 8/15/2022, 6:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["GovernanceTransferPointsModal"], {
 		"./node_modules/lodash/uniqueId.js": function(e, t, n) {
@@ -793,7 +793,7 @@
 				L = n.n(D),
 				V = n("./node_modules/fbt/lib/FbtPublic.js");
 			const U = Object(P.c)({
-				isMainnetEnabled: T.a,
+				isMainnetEnabled: T.b,
 				points: (e, t) => {
 					let {
 						subredditId: n
@@ -1184,7 +1184,7 @@
 					subredditId: s,
 					tabIndex: a,
 					onChange: r
-				} = e, [d, u] = Object(i.useState)(n || ""), m = Object(i.useRef)(d), [p, b] = Object(i.useState)(Ge.Empty), h = Object(Pe.a)(), f = Object(l.e)(T.a), v = () => De(f, m, s, h, e => {
+				} = e, [d, u] = Object(i.useState)(n || ""), m = Object(i.useRef)(d), [p, b] = Object(i.useState)(Ge.Empty), h = Object(Pe.a)(), f = Object(l.e)(T.b), v = () => De(f, m, s, h, e => {
 					b(e), e === Ge.Valid && r(m.current, !0)
 				}), x = Object(i.useMemo)(() => o()(v, 300), [m, s, h, b, r, v]);
 				return Object(i.useEffect)(() => {
@@ -1513,7 +1513,7 @@
 				}
 			}
 			const tt = Object(P.c)({
-					isMainnetEnabled: T.a,
+					isMainnetEnabled: T.b,
 					currentWallet: (e, t) => {
 						const n = Object(h.r)(e, t);
 						if (n) return Object(O.a)(e, {
@@ -2068,6 +2068,46 @@
 				payable: !1,
 				stateMutability: "view",
 				type: "function"
+			}, {
+				inputs: [{
+					internalType: "address",
+					name: "spender",
+					type: "address"
+				}, {
+					internalType: "uint256",
+					name: "amount",
+					type: "uint256"
+				}],
+				name: "approve",
+				outputs: [{
+					internalType: "bool",
+					name: "",
+					type: "bool"
+				}],
+				stateMutability: "nonpayable",
+				type: "function"
+			}, {
+				inputs: [{
+					internalType: "address",
+					name: "from",
+					type: "address"
+				}, {
+					internalType: "address",
+					name: "to",
+					type: "address"
+				}, {
+					internalType: "uint256",
+					name: "amount",
+					type: "uint256"
+				}],
+				name: "transferFrom",
+				outputs: [{
+					internalType: "bool",
+					name: "",
+					type: "bool"
+				}],
+				stateMutability: "nonpayable",
+				type: "function"
 			}]
 		},
 		"./src/reddit/helpers/governance/tokens.ts": function(e, t, n) {
@@ -2280,17 +2320,25 @@
 		},
 		"./src/reddit/selectors/experiments/mainnet.ts": function(e, t, n) {
 			"use strict";
-			n.d(t, "a", (function() {
+			n.d(t, "b", (function() {
 				return r
+			})), n.d(t, "a", (function() {
+				return o
 			}));
 			var s = n("./src/reddit/constants/experiments.ts"),
 				a = n("./src/reddit/helpers/chooseVariant/index.ts");
 			const r = e => {
-				return Object(a.c)(e, {
-					experimentEligibilitySelector: a.a,
-					experimentName: s.se
-				}) === s.Jd
-			}
+					return Object(a.c)(e, {
+						experimentEligibilitySelector: a.a,
+						experimentName: s.te
+					}) === s.Jd
+				},
+				o = e => {
+					return Object(a.c)(e, {
+						experimentEligibilitySelector: a.a,
+						experimentName: s.qe
+					}) === s.Jd
+				}
 		},
 		"./src/reddit/selectors/gov.ts": function(e, t, n) {
 			"use strict";
@@ -2346,4 +2394,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/GovernanceTransferPointsModal.aa03a5745244ece9dcbf.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/GovernanceTransferPointsModal.5db0d9c4bed02196e8ef.js.map

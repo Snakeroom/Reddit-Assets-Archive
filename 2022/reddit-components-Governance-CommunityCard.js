@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Governance-CommunityCard.bd2922e3f7cb7905fbe9.js
-// Retrieved at 8/10/2022, 7:10:03 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Governance-CommunityCard.59a49f6dddd2754d1a00.js
+// Retrieved at 8/15/2022, 6:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Governance-CommunityCard"], {
 		"./src/lib/bigNumberUtils/percent.ts": function(e, t, n) {
@@ -466,8 +466,8 @@
 				V = n("./src/reddit/components/Governance/CommunityCard/CommunityTokens/BlockchainWalletInfo/index.m.less"),
 				F = n.n(V);
 			const W = Object(w.a)(L.a),
-				H = "BlockchainWalletInfo--SettingsMenu";
-			class $ extends i.a.PureComponent {
+				q = "BlockchainWalletInfo--SettingsMenu";
+			class H extends i.a.PureComponent {
 				constructor() {
 					super(...arguments), this.onCopyToClipboard = () => {
 						Object(A.a)(this.props.publicAddress || "")
@@ -500,11 +500,11 @@
 						}),
 						role: "menu",
 						onClick: n,
-						id: H
+						id: q
 					}, i.a.createElement(D.a, {
 						className: F.a.settingsIcon
 					})), t && i.a.createElement(W, {
-						tooltipId: H,
+						tooltipId: q,
 						isOpen: e,
 						renderContentsHidden: !0
 					}, i.a.createElement(M.b, {
@@ -533,8 +533,8 @@
 					})))) : null
 				}
 			}
-			const q = Object(b.c)({
-					dropdownIsOpen: Object(B.b)(H),
+			const $ = Object(b.c)({
+					dropdownIsOpen: Object(B.b)(q),
 					isEthereumProvider: (e, t) => {
 						let {
 							subredditId: n
@@ -548,12 +548,12 @@
 						return Object(l.b)(e, n)
 					}
 				}),
-				Z = Object(a.b)(q, (e, t) => ({
+				Z = Object(a.b)($, (e, t) => ({
 					onGovernanceError: t => {
 						Object(I.a)(e, t)
 					},
 					onOpenDropdown: () => e(Object(P.h)({
-						tooltipId: H
+						tooltipId: q
 					})),
 					onWalletRemoved: () => {
 						e(Object(E.h)({
@@ -566,20 +566,20 @@
 						}))
 					}
 				}));
-			var Y = Object(S.b)(Z($)),
+			var Y = Object(S.b)(Z(H)),
 				Q = n("./src/reddit/icons/svgs/QuarantineWarning/index.tsx"),
-				X = n("./src/reddit/components/Governance/CommunityCard/CommunityTokens/Risk/index.m.less"),
-				J = n.n(X);
+				J = n("./src/reddit/components/Governance/CommunityCard/CommunityTokens/Risk/index.m.less"),
+				X = n.n(J);
 
 			function z(e) {
 				return i.a.createElement("div", {
-					className: J.a.risk
+					className: X.a.risk
 				}, i.a.createElement("div", {
-					className: J.a.riskTitle
+					className: X.a.riskTitle
 				}, i.a.createElement(Q.a, {
-					className: J.a.alertIcon
+					className: X.a.alertIcon
 				}), e.title), i.a.createElement("div", {
-					className: J.a.riskBody
+					className: X.a.riskBody
 				}, e.body))
 			}
 			var K = n("./src/reddit/components/Governance/TokenAmount/index.tsx"),
@@ -770,7 +770,7 @@
 				},
 				isLoggedIn: k.Q,
 				nextAvailableClaim: j.b,
-				isMainnetEnabled: u.a
+				isMainnetEnabled: u.b
 			});
 			var me = Object(a.b)(ue, e => ({
 					onFetchMeData: () => e(Object(v.b)()),
@@ -846,7 +846,7 @@
 					pointsTotal: C,
 					transferEnabled: h
 				} = Object(a.e)(Object(b.c)({
-					isMainnetEnabled: u.a,
+					isMainnetEnabled: u.b,
 					coinConversionEnabled: x.d.spPointsCoinConversion,
 					customCrypto: x.d.spCustomCrypto,
 					isEthereum: t => Object(l.a)(t, e.subredditId),
@@ -886,7 +886,7 @@
 			var Me = n("./src/reddit/components/Governance/CommunityCard/index.m.less"),
 				Ge = n.n(Me);
 			const Re = Object(b.c)({
-				isMainnet: u.a,
+				isMainnet: u.b,
 				distribution: (e, t) => e.subreddits.gov.distributions[t.subredditId],
 				pointsDetails: (e, t) => {
 					let {
@@ -1227,7 +1227,7 @@
 					endpoint: `${s.a.metaUrl}/crypto/${t}/registrations/${n}`
 				})
 			}! function(e) {
-				e.Ethereum = "ethereum:1", e.Rinkeby = "ethereum:4", e.ArbitrumRinkeby = "ethereum:5391184", e.ArbitrumNitroDevnet = "ethereum:421612", e.ArbitrumMainnet = "ethereum:42170", e.EthTraderEthereum = "ethereum:1:ethtrader", e.EthTraderRinkeby = "ethereum:4:ethtrader"
+				e.Ethereum = "ethereum:1", e.Rinkeby = "ethereum:4", e.ArbitrumNova = "ethereum:42170", e.ArbitrumRinkeby = "ethereum:5391184", e.ArbitrumNitroDevnet = "ethereum:421612", e.ArbitrumMainnet = "ethereum:42170", e.EthTraderEthereum = "ethereum:1:ethtrader", e.EthTraderRinkeby = "ethereum:4:ethtrader"
 			}(r || (r = {}));
 			const b = (e, t, n) => ({
 					type: "burn-link",
@@ -1895,17 +1895,25 @@
 		},
 		"./src/reddit/selectors/experiments/mainnet.ts": function(e, t, n) {
 			"use strict";
-			n.d(t, "a", (function() {
+			n.d(t, "b", (function() {
 				return o
+			})), n.d(t, "a", (function() {
+				return i
 			}));
 			var r = n("./src/reddit/constants/experiments.ts"),
 				s = n("./src/reddit/helpers/chooseVariant/index.ts");
 			const o = e => {
-				return Object(s.c)(e, {
-					experimentEligibilitySelector: s.a,
-					experimentName: r.se
-				}) === r.Jd
-			}
+					return Object(s.c)(e, {
+						experimentEligibilitySelector: s.a,
+						experimentName: r.te
+					}) === r.Jd
+				},
+				i = e => {
+					return Object(s.c)(e, {
+						experimentEligibilitySelector: s.a,
+						experimentName: r.qe
+					}) === r.Jd
+				}
 		},
 		"./src/reddit/selectors/gov.ts": function(e, t, n) {
 			"use strict";
@@ -1964,4 +1972,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Governance-CommunityCard.bd2922e3f7cb7905fbe9.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Governance-CommunityCard.59a49f6dddd2754d1a00.js.map

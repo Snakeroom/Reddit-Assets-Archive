@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~Reddit~SubredditForkingCTA.f5bbb99af737e5b82a1b.js
-// Retrieved at 8/15/2022, 2:30:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~Reddit~SubredditForkingCTA.a486653dc3b00a081fb5.js
+// Retrieved at 8/15/2022, 6:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~Reddit~SubredditForkingCTA"], {
 		"./src/lib/bigNumberUtils/percent.ts": function(t, e, r) {
@@ -1415,7 +1415,7 @@
 								postFieldValidationPending: Promise.resolve()
 							})), Object(l.b)(D)
 						}
-						await e(Object(n.b)(`${r.path}`)), p ? p === b.Me.NewModule && e(Object(a.h)({
+						await e(Object(n.b)(`${r.path}`)), p ? p === b.Ne.NewModule && e(Object(a.h)({
 							tooltipId: u.MOD_WELCOME_TOOLTIP_ID
 						})) : (e(Object(o.h)(f.a.POST_FLOW_UPSELL_MODAL_ID)), Object(k.a)(Object(E.g)()(x))), Object(j.b)(j.a.SubredditCreation), e(Object(T.f)(i, null !== (g = Object(C.bb)(x)) && void 0 !== g ? g : Object(I.j)(x)))
 					} else w.error && Object(k.a)(Object(E.h)(w.error.type, N)(x)), e(U({
@@ -1730,7 +1730,7 @@
 					endpoint: `${s.a.metaUrl}/crypto/${e}/registrations/${r}`
 				})
 			}! function(t) {
-				t.Ethereum = "ethereum:1", t.Rinkeby = "ethereum:4", t.ArbitrumRinkeby = "ethereum:5391184", t.ArbitrumNitroDevnet = "ethereum:421612", t.ArbitrumMainnet = "ethereum:42170", t.EthTraderEthereum = "ethereum:1:ethtrader", t.EthTraderRinkeby = "ethereum:4:ethtrader"
+				t.Ethereum = "ethereum:1", t.Rinkeby = "ethereum:4", t.ArbitrumNova = "ethereum:42170", t.ArbitrumRinkeby = "ethereum:5391184", t.ArbitrumNitroDevnet = "ethereum:421612", t.ArbitrumMainnet = "ethereum:42170", t.EthTraderEthereum = "ethereum:1:ethtrader", t.EthTraderRinkeby = "ethereum:4:ethtrader"
 			}(n || (n = {}));
 			const f = (t, e, r) => ({
 					type: "burn-link",
@@ -3002,4 +3002,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit~SubredditForkingCTA.f5bbb99af737e5b82a1b.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit~SubredditForkingCTA.a486653dc3b00a081fb5.js.map

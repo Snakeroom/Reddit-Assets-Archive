@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-SubscriptionModal.4d786a42362e1dbdd08c.js
-// Retrieved at 8/10/2022, 7:10:03 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-SubscriptionModal.bcdd7d61f490aa73d442.js
+// Retrieved at 8/15/2022, 6:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Governance-TransactionModals-SubscriptionModal"], {
 		"./node_modules/dijkstrajs/dijkstra.js": function(e, t, r) {
@@ -500,8 +500,8 @@
 				f = r("./node_modules/qrcode/lib/core/reed-solomon-encoder.js"),
 				h = r("./node_modules/qrcode/lib/core/version.js"),
 				m = r("./node_modules/qrcode/lib/core/format-info.js"),
-				g = r("./node_modules/qrcode/lib/core/mode.js"),
-				p = r("./node_modules/qrcode/lib/core/segments.js"),
+				p = r("./node_modules/qrcode/lib/core/mode.js"),
+				g = r("./node_modules/qrcode/lib/core/segments.js"),
 				v = r("./node_modules/qrcode/node_modules/isarray/index.js");
 
 			function b(e, t, r) {
@@ -514,21 +514,21 @@
 			function y(e, t, r) {
 				var i = new s;
 				r.forEach((function(t) {
-					i.put(t.mode.bit, 4), i.put(t.getLength(), g.getCharCountIndicator(t.mode, e)), t.write(i)
+					i.put(t.mode.bit, 4), i.put(t.getLength(), p.getCharCountIndicator(t.mode, e)), t.write(i)
 				}));
 				var a = 8 * (o.getSymbolTotalCodewords(e) - l.getTotalCodewordsCount(e, t));
 				for (i.getLengthInBits() + 4 <= a && i.put(0, 4); i.getLengthInBits() % 8 != 0;) i.putBit(0);
 				for (var u = (a - i.getLengthInBits()) / 8, d = 0; d < u; d++) i.put(d % 2 ? 17 : 236, 8);
 				return function(e, t, r) {
-					for (var i = o.getSymbolTotalCodewords(t), s = l.getTotalCodewordsCount(t, r), a = i - s, u = l.getBlocksCount(t, r), d = u - i % u, c = Math.floor(i / u), h = Math.floor(a / u), m = h + 1, g = c - h, p = new f(g), v = 0, b = new Array(u), y = new Array(u), w = 0, _ = n.from(e.buffer), E = 0; E < u; E++) {
+					for (var i = o.getSymbolTotalCodewords(t), s = l.getTotalCodewordsCount(t, r), a = i - s, u = l.getBlocksCount(t, r), d = u - i % u, c = Math.floor(i / u), h = Math.floor(a / u), m = h + 1, p = c - h, g = new f(p), v = 0, b = new Array(u), y = new Array(u), w = 0, _ = n.from(e.buffer), E = 0; E < u; E++) {
 						var A = E < d ? h : m;
-						b[E] = _.slice(v, v + A), y[E] = p.encode(b[E]), v += A, w = Math.max(w, A)
+						b[E] = _.slice(v, v + A), y[E] = g.encode(b[E]), v += A, w = Math.max(w, A)
 					}
 					var j, T, x = n.alloc(i),
 						B = 0;
 					for (j = 0; j < w; j++)
 						for (T = 0; T < u; T++) j < b[T].length && (x[B++] = b[T][j]);
-					for (j = 0; j < g; j++)
+					for (j = 0; j < p; j++)
 						for (T = 0; T < u; T++) x[B++] = y[T][j];
 					return x
 				}(i, e, t)
@@ -536,15 +536,15 @@
 
 			function w(e, t, r, n) {
 				var i;
-				if (v(e)) i = p.fromArray(e);
+				if (v(e)) i = g.fromArray(e);
 				else {
 					if ("string" != typeof e) throw new Error("Invalid data");
 					var s = t;
 					if (!s) {
-						var l = p.rawSplit(e);
+						var l = g.rawSplit(e);
 						s = h.getBestVersionForData(l, r)
 					}
-					i = p.fromString(e, s || 40)
+					i = g.fromString(e, s || 40)
 				}
 				var f = h.getBestVersionForData(i, r);
 				if (!f) throw new Error("The amount of data is too big to be stored in a QR Code");
@@ -552,8 +552,8 @@
 					if (t < f) throw new Error("\nThe chosen QR Code version cannot contain this amount of data.\nMinimum version required to store current data is: " + f + ".\n")
 				} else t = f;
 				var m = y(t, r, i),
-					g = o.getSymbolSize(t),
-					w = new a(g);
+					p = o.getSymbolSize(t),
+					w = new a(p);
 				return function(e, t) {
 						for (var r = e.size, n = d.getPositions(t), o = 0; o < n.length; o++)
 							for (var i = n[o][0], s = n[o][1], a = -1; a <= 7; a++)
@@ -688,7 +688,7 @@
 				}
 			}
 
-			function g(e, t) {
+			function p(e, t) {
 				var r, u = n.getBestModeForData(e);
 				if ((r = n.from(t, u)) !== n.BYTE && r.bit < u.bit) throw new Error('"' + e + '" cannot be encoded with mode ' + n.toString(r) + ".\n Suggested mode is: " + n.toString(u));
 				switch (r !== n.KANJI || d.isKanjiModeEnabled() || (r = n.BYTE), r) {
@@ -704,7 +704,7 @@
 			}
 			t.fromArray = function(e) {
 				return e.reduce((function(e, t) {
-					return "string" == typeof t ? e.push(g(t, null)) : t.data && e.push(g(t.data, t.mode)), e
+					return "string" == typeof t ? e.push(p(t, null)) : t.data && e.push(p(t.data, t.mode)), e
 				}), [])
 			}, t.fromString = function(e, r) {
 				for (var o = function(e, t) {
@@ -1289,8 +1289,8 @@
 				f = r("./src/reddit/helpers/crypto/transactions.ts"),
 				h = r("./src/reddit/helpers/governance/tokens.ts"),
 				m = r("./src/reddit/helpers/trackers/crypto.ts"),
-				g = r("./src/reddit/hooks/useTracking.ts"),
-				p = r("./src/reddit/models/Badge/managementPage.ts"),
+				p = r("./src/reddit/hooks/useTracking.ts"),
+				g = r("./src/reddit/models/Badge/managementPage.ts"),
 				v = r("./src/reddit/models/Toast/index.ts"),
 				b = r("./src/reddit/selectors/crypto/points.ts"),
 				y = r("./src/reddit/selectors/gov.ts"),
@@ -1343,7 +1343,7 @@
 				const {
 					price: t,
 					subredditId: r
-				} = e, o = Object(s.d)(), _ = Object(g.a)(), {
+				} = e, o = Object(s.d)(), _ = Object(p.a)(), {
 					pointsDetails: E,
 					walletAddress: A
 				} = Object(s.e)(Object(a.c)({
@@ -1374,7 +1374,7 @@
 							})
 						})), o(Object(u.c)({
 							subredditId: r,
-							initialView: p.c.MyBadges
+							initialView: g.c.MyBadges
 						})), e.onPaymentComplete()
 					},
 					onTransactionFailure: e => {
@@ -1453,6 +1453,46 @@
 				payable: !1,
 				stateMutability: "view",
 				type: "function"
+			}, {
+				inputs: [{
+					internalType: "address",
+					name: "spender",
+					type: "address"
+				}, {
+					internalType: "uint256",
+					name: "amount",
+					type: "uint256"
+				}],
+				name: "approve",
+				outputs: [{
+					internalType: "bool",
+					name: "",
+					type: "bool"
+				}],
+				stateMutability: "nonpayable",
+				type: "function"
+			}, {
+				inputs: [{
+					internalType: "address",
+					name: "from",
+					type: "address"
+				}, {
+					internalType: "address",
+					name: "to",
+					type: "address"
+				}, {
+					internalType: "uint256",
+					name: "amount",
+					type: "uint256"
+				}],
+				name: "transferFrom",
+				outputs: [{
+					internalType: "bool",
+					name: "",
+					type: "bool"
+				}],
+				stateMutability: "nonpayable",
+				type: "function"
 			}]
 		},
 		"./src/reddit/hooks/useApiContext.ts": function(e, t, r) {
@@ -1472,18 +1512,26 @@
 		},
 		"./src/reddit/selectors/experiments/mainnet.ts": function(e, t, r) {
 			"use strict";
-			r.d(t, "a", (function() {
+			r.d(t, "b", (function() {
 				return i
+			})), r.d(t, "a", (function() {
+				return s
 			}));
 			var n = r("./src/reddit/constants/experiments.ts"),
 				o = r("./src/reddit/helpers/chooseVariant/index.ts");
 			const i = e => {
-				return Object(o.c)(e, {
-					experimentEligibilitySelector: o.a,
-					experimentName: n.se
-				}) === n.Jd
-			}
+					return Object(o.c)(e, {
+						experimentEligibilitySelector: o.a,
+						experimentName: n.te
+					}) === n.Jd
+				},
+				s = e => {
+					return Object(o.c)(e, {
+						experimentEligibilitySelector: o.a,
+						experimentName: n.qe
+					}) === n.Jd
+				}
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-SubscriptionModal.4d786a42362e1dbdd08c.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-SubscriptionModal.bcdd7d61f490aa73d442.js.map

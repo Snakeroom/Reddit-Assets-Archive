@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit~ReportFlow~Subreddit.e543669649c9745701d3.js
-// Retrieved at 8/15/2022, 2:30:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit~ReportFlow~Subreddit.b1c6b2dfc5b5b9309481.js
+// Retrieved at 8/15/2022, 6:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~ModListing~Reddit~ReportFlow~Subreddit"], {
 		"./src/lib/assertNever.ts": function(t, e, i) {
@@ -821,8 +821,8 @@
 			var D = i("./src/reddit/actions/toaster.ts"),
 				I = i("./src/reddit/actions/widgets/index.ts"),
 				O = i("./src/reddit/constants/modals.ts"),
-				w = i("./src/reddit/helpers/getGenericUploadError.ts"),
-				T = i("./src/reddit/helpers/graphql/normalizeSubredditStylesFromGql/index.ts"),
+				T = i("./src/reddit/helpers/getGenericUploadError.ts"),
+				w = i("./src/reddit/helpers/graphql/normalizeSubredditStylesFromGql/index.ts"),
 				j = i("./src/reddit/helpers/media/index.ts"),
 				k = i("./src/reddit/models/Image/index.tsx"),
 				v = i("./src/reddit/models/StructuredStyles/index.ts"),
@@ -864,7 +864,7 @@
 					try {
 						(E = await Object(_.f)(o(), k.a.StructuredStyles)) && (h = Object(_.m)(E)(r, o, l))
 					} catch (O) {
-						const t = Object(w.a)("webSocket");
+						const t = Object(T.a)("webSocket");
 						return void r(Object(u.f)(n, t))
 					}
 					const y = Object(S.V)(c, {
@@ -1087,7 +1087,7 @@
 							const {
 								data: t
 							} = c.body;
-							t && t.subreddit && t.subreddit.styles && (e = Object(T.a)(t.subreddit.styles))
+							t && t.subreddit && t.subreddit.styles && (e = Object(w.a)(t.subreddit.styles))
 						}
 						i(ct({
 							subredditId: t,
@@ -1146,9 +1146,9 @@
 			})), i.d(e, "e", (function() {
 				return O
 			})), i.d(e, "d", (function() {
-				return w
-			})), i.d(e, "u", (function() {
 				return T
+			})), i.d(e, "u", (function() {
+				return w
 			})), i.d(e, "v", (function() {
 				return j
 			})), i.d(e, "t", (function() {
@@ -1182,8 +1182,8 @@
 				D = "SUBREDDIT_QUESTIONS_LOADED",
 				I = "SUBREDDIT_SURVEY_ANSWERED",
 				O = "SUBREDDIT_SURVEY_DISMISSED",
-				w = "SUBREDDIT_SURVEY_DISMISS",
-				T = "SUBREDDIT_ABOUT_INFO_UPDATE__PENDING",
+				T = "SUBREDDIT_SURVEY_DISMISS",
+				w = "SUBREDDIT_ABOUT_INFO_UPDATE__PENDING",
 				j = "SUBREDDIT_ABOUT_INFO_UPDATE__SUCCESS",
 				k = "SUBREDDIT_ABOUT_INFO_UPDATE__FAILED",
 				v = "MUTE_SUBREDDIT__SUCCESS",
@@ -1226,7 +1226,7 @@
 			i.d(e, "c", (function() {
 				return O
 			})), i.d(e, "e", (function() {
-				return T
+				return w
 			})), i.d(e, "d", (function() {
 				return k
 			})), i.d(e, "h", (function() {
@@ -1278,11 +1278,11 @@
 							subredditId: t
 						}).name,
 						O = Object(g.g)(b),
-						w = Object(E.e)(e);
-					let T = null,
+						T = Object(E.e)(e);
+					let w = null,
 						j = null;
 					try {
-						(T = await Object(l.f)(b, h.a.Widgets)) && (j = Object(l.m)(T)(r, _, p))
+						(w = await Object(l.f)(b, h.a.Widgets)) && (j = Object(l.m)(w)(r, _, p))
 					} catch (v) {
 						const t = Object(f.a)("webSocket");
 						return void r(Object(o.f)(i, t))
@@ -1295,7 +1295,7 @@
 						method: c.jb.POST,
 						type: "json",
 						data: i
-					}))(m(), D, w);
+					}))(m(), D, T);
 					if (k.ok) {
 						let l = k.body;
 						const c = l.id;
@@ -1304,7 +1304,7 @@
 								text: n.fbt._("New calendar added! It may take a few minutes to see your events appear", null, {
 									hk: "4iETrT"
 								})
-							})), T) {
+							})), w) {
 							if (!O) try {
 								await j
 							} catch (v) {}
@@ -1315,15 +1315,15 @@
 							widget: l,
 							widgetId: c
 						})), r(Object(o.e)(i))
-					} else T && T.websocket.close(), r(Object(o.f)(i, k.error))
-				}, w = Object(r.a)(D.i), T = (t, e, i) => async (r, _, p) => {
+					} else w && w.websocket.close(), r(Object(o.f)(i, k.error))
+				}, T = Object(r.a)(D.i), w = (t, e, i) => async (r, _, p) => {
 					const {
 						apiContext: D
 					} = p;
 					r(Object(o.h)(i));
 					const I = e.id,
 						O = _(),
-						T = Object(S.V)(O, {
+						w = Object(S.V)(O, {
 							subredditId: t
 						}).name,
 						j = Object(g.g)(O),
@@ -1344,7 +1344,7 @@
 						method: c.jb.PUT,
 						type: "json",
 						data: i
-					}))(D(), T, k);
+					}))(D(), w, k);
 					if (R.ok) {
 						let l = function(t, e, i) {
 							switch (t.kind) {
@@ -1396,7 +1396,7 @@
 							} catch (L) {}
 							l = await r(F(t, I)) || l
 						}
-						r(w({
+						r(T({
 							subredditId: t,
 							widgetId: I,
 							widget: l
@@ -1709,9 +1709,9 @@
 			})), i.d(e, "o", (function() {
 				return O
 			})), i.d(e, "s", (function() {
-				return w
-			})), i.d(e, "r", (function() {
 				return T
+			})), i.d(e, "r", (function() {
+				return w
 			})), i.d(e, "f", (function() {
 				return j
 			})), i.d(e, "g", (function() {
@@ -1772,8 +1772,8 @@
 						priority: D = _.Primary,
 						redditStyle: I,
 						size: O = u.S,
-						text: w,
-						textClassName: T,
+						text: T,
+						textClassName: w,
 						...j
 					} = t, k = (t => {
 						let {
@@ -1803,7 +1803,7 @@
 						priority: D,
 						redditStyle: I,
 						size: O,
-						text: w
+						text: T
 					}), v = (t => {
 						let {
 							children: e,
@@ -1829,12 +1829,12 @@
 						}))
 					})({
 						children: h,
-						text: w,
+						text: T,
 						Icon: i,
 						iconClassName: n,
 						iconPosition: l,
 						priority: D,
-						textClassName: T
+						textClassName: w
 					});
 					return g === p.InternalLink && (t => "to" in t)(j) ? r.a.createElement(b, a({}, d, j, {
 						className: k
@@ -1871,11 +1871,11 @@
 					kind: p.Button,
 					priority: _.Secondary
 				}, t)),
-				w = t => r.a.createElement(m, a({
+				T = t => r.a.createElement(m, a({
 					kind: p.InternalLink,
 					priority: _.Plain
 				}, t)),
-				T = t => r.a.createElement(m, a({
+				w = t => r.a.createElement(m, a({
 					kind: p.Button,
 					priority: _.Plain
 				}, t)),
@@ -2270,9 +2270,9 @@
 			})), i.d(e, "z", (function() {
 				return O
 			})), i.d(e, "A", (function() {
-				return w
-			})), i.d(e, "M", (function() {
 				return T
+			})), i.d(e, "M", (function() {
+				return w
 			})), i.d(e, "B", (function() {
 				return j
 			})), i.d(e, "m", (function() {
@@ -2404,11 +2404,11 @@
 					noun: "add_option",
 					...S(t)
 				}),
-				w = () => t => ({
+				T = () => t => ({
 					noun: "voting_length",
 					...S(t)
 				}),
-				T = (t, e, i) => {
+				w = (t, e, i) => {
 					"image_upload" === e || "video_upload" === e ? Object(f.a)({
 						noun: e,
 						...S(t)
@@ -2845,35 +2845,35 @@
 				_ = t => {
 					return Object(l.c)(t, {
 						experimentEligibilitySelector: l.a,
-						experimentName: o.Pe
-					}) === o.Re.ContentMatch
+						experimentName: o.Qe
+					}) === o.Se.ContentMatch
 				},
 				f = t => {
 					return Object(l.c)(t, {
 						experimentEligibilitySelector: l.a,
-						experimentName: o.Pe
-					}) === o.Re.ConfidenceAndSuccess
+						experimentName: o.Qe
+					}) === o.Se.ConfidenceAndSuccess
 				},
 				p = t => {
 					const e = Object(l.c)(t, {
 						experimentEligibilitySelector: l.a,
-						experimentName: o.Pe
+						experimentName: o.Qe
 					});
-					return e === o.Re.ContentMatch || e === o.Re.ConfidenceAndSuccess || e === o.eb.Control1 || e === o.eb.Control2
+					return e === o.Se.ContentMatch || e === o.Se.ConfidenceAndSuccess || e === o.eb.Control1 || e === o.eb.Control2
 				},
 				m = t => {
 					const e = Object(l.c)(t, {
 						experimentEligibilitySelector: l.a,
-						experimentName: o.Pe
+						experimentName: o.Qe
 					});
 					return e === o.eb.Control1 || e === o.eb.Control2
 				},
 				b = t => {
 					const e = Object(l.c)(t, {
 						experimentEligibilitySelector: l.a,
-						experimentName: o.Pe
+						experimentName: o.Qe
 					});
-					return e === o.Re.ContentMatch || e === o.Re.ConfidenceAndSuccess
+					return e === o.Se.ContentMatch || e === o.Se.ConfidenceAndSuccess
 				},
 				S = t => t.creations.subredditRec.api.pending,
 				E = t => t.creations.subredditRec.api.error,
@@ -2954,9 +2954,9 @@
 					experimentName: r.Zc,
 					experimentEligibilitySelector: t => c(t, e)
 				}), t => t),
-				d = t => t === r.Sf.NoCommunityWidgets,
-				u = t => t === r.Sf.NoRulesModerators,
-				_ = t => t === r.Sf.RelatedPostsDu
+				d = t => t === r.Tf.NoCommunityWidgets,
+				u = t => t === r.Tf.NoRulesModerators,
+				_ = t => t === r.Tf.RelatedPostsDu
 		},
 		"./src/reddit/selectors/tooltip.ts": function(t, e, i) {
 			"use strict";
@@ -2979,4 +2979,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit~ReportFlow~Subreddit.e543669649c9745701d3.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit~ReportFlow~Subreddit.b1c6b2dfc5b5b9309481.js.map

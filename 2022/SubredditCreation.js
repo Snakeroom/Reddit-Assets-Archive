@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditCreation.b9b6b93a302d945e1a32.js
-// Retrieved at 8/10/2022, 7:10:03 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditCreation.bafe67cdf17899de0067.js
+// Retrieved at 8/15/2022, 6:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditCreation"], {
 		"./node_modules/lodash/_baseRange.js": function(e, t) {
@@ -1829,9 +1829,9 @@
 					experimentEligibilitySelector: r.a,
 					experimentName: a.Id
 				});
-				return !(!t || Object(a.jg)(t))
+				return !(!t || Object(a.kg)(t))
 			}
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditCreation.b9b6b93a302d945e1a32.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditCreation.bafe67cdf17899de0067.js.map

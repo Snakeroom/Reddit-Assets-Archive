@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditWiki.7144919527a2f4dbaae3.js
-// Retrieved at 8/15/2022, 2:30:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditWiki.fa2372b11aa6f271b035.js
+// Retrieved at 8/15/2022, 6:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditWiki"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -8714,12 +8714,12 @@
 						rtJsonElementProps: o
 					});
 					switch (i) {
-						case h.Kf.SmIcon:
+						case h.Lf.SmIcon:
 							return n.a.createElement(p, {
 								subredditName: r,
 								rtJsonElementProps: o
 							});
-						case h.Kf.SmIconHc:
+						case h.Lf.SmIconHc:
 							return n.a.createElement(p, {
 								subredditName: r,
 								isHoverable: !0,
@@ -9181,7 +9181,7 @@
 						} = t;
 						return Object(Re.c)(e, s)
 					},
-					isInNewModuleNCPV3Experiment: e => Object(Le.a)(e) === Pe.Me.NewModule,
+					isInNewModuleNCPV3Experiment: e => Object(Le.a)(e) === Pe.Ne.NewModule,
 					showGovernance: Te.d.spPoints,
 					showLeaderboard: Te.d.spLeaderboard,
 					showPredictionsLeaderboard: (e, t) => {
@@ -10408,12 +10408,12 @@
 			const i = e => {
 					return !(Object(n.c)(e, {
 						experimentEligibilitySelector: n.a,
-						experimentName: r.qe
+						experimentName: r.re
 					}) === r.Jd)
 				},
 				o = e => Object(n.c)(e, {
 					experimentEligibilitySelector: n.a,
-					experimentName: r.re
+					experimentName: r.se
 				}) === r.Jd
 		},
 		"./src/reddit/selectors/subredditMention.ts": function(e, t, s) {
@@ -10439,12 +10439,12 @@
 				d = e => {
 					return Object(i.c)(e, {
 						experimentEligibilitySelector: a,
-						experimentName: r.Ef
+						experimentName: r.Ff
 					}) || ""
 				},
 				c = e => {
 					const t = d(e);
-					return t === r.Kf.SmIcon || t === r.Kf.SmIconHc
+					return t === r.Lf.SmIcon || t === r.Lf.SmIconHc
 				},
 				l = (e, t) => {
 					let {
@@ -10634,4 +10634,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditWiki.7144919527a2f4dbaae3.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditWiki.fa2372b11aa6f271b035.js.map

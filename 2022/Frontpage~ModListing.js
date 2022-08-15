@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Frontpage~ModListing.ad9d893536bea46e04e3.js
-// Retrieved at 8/15/2022, 2:30:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Frontpage~ModListing.228aadec13a68c3b9897.js
+// Retrieved at 8/15/2022, 6:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Frontpage~ModListing"], {
 		"./src/reddit/actions/focusedVerticals/index.ts": function(e, t, n) {
@@ -580,7 +580,7 @@
 			const x = "view--layout--FUE",
 				v = "LayoutSwitch--picker",
 				E = Object(c.a)(g.a),
-				j = {
+				N = {
 					[b.d.Card]: function(e) {
 						return o.a.createElement(S.a, C({}, e, {
 							name: "view_card"
@@ -597,7 +597,7 @@
 						}))
 					}
 				},
-				N = {
+				j = {
 					[b.d.Card]: () => s.fbt._("card", null, {
 						hk: "4qOOHu"
 					}),
@@ -644,7 +644,7 @@
 							layout: n,
 							onLayoutClick: s,
 							postLayout: r
-						} = this.props, a = n || b.e[r], i = e === a, c = j[e], l = N[e];
+						} = this.props, a = n || b.e[r], i = e === a, c = N[e], l = j[e];
 						return o.a.createElement(y.b, C({}, t, {
 							className: Object(d.a)(O.a.LayoutItem, {
 								[O.a.selected]: i,
@@ -768,8 +768,8 @@
 				x = n("./src/reddit/helpers/path/index.ts"),
 				v = n("./src/reddit/helpers/trackers/navigation.ts"),
 				E = n("./src/reddit/icons/svgs/Dropdown/index.tsx"),
-				j = n("./src/reddit/selectors/experiments/bestSortPopular.ts"),
-				N = n("./src/reddit/selectors/experiments/econLeaderboards.ts"),
+				N = n("./src/reddit/selectors/experiments/bestSortPopular.ts"),
+				j = n("./src/reddit/selectors/experiments/econLeaderboards.ts"),
 				T = n("./src/reddit/selectors/tooltip.ts"),
 				I = n("./src/reddit/selectors/user.ts"),
 				P = n("./src/reddit/components/ListingSort/ListingSortIcon.tsx"),
@@ -805,15 +805,15 @@
 						})
 					}))
 				},
-				M = R.a.div("DropdownRowDisabled", D.a),
-				G = Object(l.u)({
+				G = R.a.div("DropdownRowDisabled", D.a),
+				M = Object(l.u)({
 					isFrontpage: l.A,
 					isProfilePage: l.J,
 					pageLayer: e => e
 				}),
 				V = Object(f.c)({
-					isAwardListingExperimentEnabled: N.a,
-					isBestSortPopularEnabled: j.a,
+					isAwardListingExperimentEnabled: j.a,
+					isBestSortPopularEnabled: N.a,
 					user: I.k,
 					dropdownIsOpen: (e, t) => Object(T.b)(t.dropdownId || B)(e),
 					isPopularPage: l.F
@@ -829,7 +829,7 @@
 						}))
 					}
 				});
-			var q = R.a.wrapped(G(K(Object(d.c)(e => r.a.createElement("div", {
+			var q = R.a.wrapped(M(K(Object(d.c)(e => r.a.createElement("div", {
 					className: e.className,
 					onClick: e.onOpenDropdown
 				}, !1 !== e.showTitle && r.a.createElement(F, null, y.fbt._("Sort", null, {
@@ -849,7 +849,7 @@
 					tooltipId: e.dropdownId || B
 				}, t, {
 					renderContentsHidden: !0
-				}), e.disabled ? r.a.createElement(M, null, y.fbt._("Coming soon", null, {
+				}), e.disabled ? r.a.createElement(G, null, y.fbt._("Coming soon", null, {
 					hk: "taPqm"
 				})) : (e.sortOptions || ((e, t, n, s, r) => {
 					const o = [b.W.HOT, b.W.NEW, b.W.TOP, b.W.RISING];
@@ -1368,8 +1368,8 @@
 						}
 					})
 				}))))))),
-				je = n("./src/reddit/constants/listings.ts"),
-				Ne = n("./src/reddit/controls/Button/index.tsx"),
+				Ne = n("./src/reddit/constants/listings.ts"),
+				je = n("./src/reddit/controls/Button/index.tsx"),
 				Te = n("./src/reddit/icons/fonts/index.tsx"),
 				Ie = n("./src/reddit/selectors/meta.ts"),
 				Pe = n("./src/reddit/components/GeneralCleanup/SortViewBar/ListingSort/index.m.less"),
@@ -1393,7 +1393,7 @@
 					isProfilePage: l.J,
 					pageLayer: e => e
 				}),
-				Fe = Object(f.a)((e, t) => t.sortOptions, (e, t) => t.isFrontpage, j.a, I.k, l.F, N.a, Ie.j, (e, t, n, s, r, o, a) => {
+				Fe = Object(f.a)((e, t) => t.sortOptions, (e, t) => t.isFrontpage, N.a, I.k, l.F, j.a, Ie.j, (e, t, n, s, r, o, a) => {
 					if (e) return {
 						isPopularPage: r,
 						sortOptions: e,
@@ -1418,10 +1418,10 @@
 						} = this.props, o = s ? Object(p.a)(n, {
 							sort: e
 						}) : Object(x.a)(n, `${e}/`), i = o.split("?")[0], c = s ? o.replace(i + "?", "") : void 0;
-						return r.a.createElement(Ne.t, {
+						return r.a.createElement(je.t, {
 							className: Object(a.a)(Le.a.SortLink, e === t && Le.a.selected),
-							kind: Ne.b.InternalLink,
-							priority: Ne.c.Plain,
+							kind: je.b.InternalLink,
+							priority: je.c.Plain,
 							Icon: n => r.a.createElement(z, De({}, n, {
 								className: Object(a.a)(Le.a.SortIcon, n.className),
 								sort: e,
@@ -1448,7 +1448,7 @@
 						return r.a.createElement(r.a.Fragment, {
 							key: e
 						}, this.renderSortButton(e), a && r.a.createElement(ge, {
-							baseUrl: je.c[je.b.Popular],
+							baseUrl: Ne.c[Ne.b.Popular],
 							buttonClassName: Le.a.DropdownButton,
 							className: Le.a.CountrySort,
 							disabled: t,
@@ -1525,8 +1525,8 @@
 				}
 			}
 			var Ue = ze(Object(o.b)(Fe)(Object(d.c)(He))),
-				Me = n("./src/reddit/components/GeneralCleanup/SortViewBar/index.m.less"),
-				Ge = n.n(Me);
+				Ge = n("./src/reddit/components/GeneralCleanup/SortViewBar/index.m.less"),
+				Me = n.n(Ge);
 			const Ve = Object(l.u)({
 					isProfilePage: l.J,
 					pageLayer: e => e
@@ -1575,7 +1575,7 @@
 						updateSortPreference: u
 					} = this.props;
 					return r.a.createElement("div", {
-						className: Object(a.a)(Ge.a.Container, t),
+						className: Object(a.a)(Me.a.Container, t),
 						onBlur: this.blurListingBroadcast,
 						onFocus: this.focusListingBroadcast
 					}, r.a.createElement(Ue, {
@@ -1588,7 +1588,7 @@
 						sortOptions: c,
 						timeSort: l
 					}), !o && r.a.createElement(m.a, {
-						className: Ge.a.LayoutSwitch,
+						className: Me.a.LayoutSwitch,
 						subredditId: d
 					}))
 				}
@@ -2042,7 +2042,7 @@
 				x = n.n(C);
 			const {
 				fbt: v
-			} = n("./node_modules/fbt/lib/FbtPublic.js"), E = Object(u.u)(), j = Object(o.b)(() => Object(a.c)({
+			} = n("./node_modules/fbt/lib/FbtPublic.js"), E = Object(u.u)(), N = Object(o.b)(() => Object(a.c)({
 				forceRedditStyle: (e, t) => {
 					const n = Object(u.n)(e, t) || void 0,
 						s = t.redditStyle || Object(f.l)(e, {
@@ -2055,7 +2055,7 @@
 				subredditId: u.n,
 				topPostVariant: h.d
 			}));
-			class N extends r.a.Component {
+			class j extends r.a.Component {
 				constructor() {
 					super(...arguments), this.contentRef = r.a.createRef(), this.state = {
 						isTruncated: !1
@@ -2134,7 +2134,7 @@
 					})))
 				}
 			}
-			t.a = E(j(Object(c.a)(Object(l.c)(N))))
+			t.a = E(N(Object(c.a)(Object(l.c)(j))))
 		},
 		"./src/reddit/connectors/PostList/index.ts": function(e, t, n) {
 			"use strict";
@@ -2225,10 +2225,10 @@
 					showModalOnScroll: () => e(d.cb()),
 					surveyTriggerScrollCounted: () => e(Object(u.l)())
 				}),
-				j = e => Object(b.b)({
+				N = e => Object(b.b)({
 					...e
 				}),
-				N = (e, t, n, s) => {
+				j = (e, t, n, s) => {
 					const {
 						listingKey: r,
 						hostPostData: o,
@@ -2240,8 +2240,8 @@
 					...e,
 					...t,
 					...n,
-					postComponentForLayout: j,
-					postClickEventFactory: N
+					postComponentForLayout: N,
+					postClickEventFactory: j
 				}));
 			t.a = e => Object(m.c)(C(T(e)))
 		},
@@ -2607,7 +2607,7 @@
 				const p = Object(a.e)(e => e.subreddits.survey[n]),
 					b = Object(a.e)(e => e.subreddits.progressModule[n]),
 					h = Object(a.e)(u.a),
-					f = h !== d.Me.NewModule;
+					f = h !== d.Ne.NewModule;
 				return (null === (r = null == b ? void 0 : b.cards) || void 0 === r ? void 0 : r.length) > 0 && f ? o.a.createElement(m, {
 					closeModuleOnMount: !!t && t !== l.g.Large,
 					subredditId: n,
@@ -2659,7 +2659,7 @@
 						experimentEligibilitySelector: o.Q,
 						experimentName: s.md
 					});
-					return !(!t || Object(s.jg)(t))
+					return !(!t || Object(s.kg)(t))
 				},
 				i = e => {
 					return Object(r.c)(e, {
@@ -2792,4 +2792,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Frontpage~ModListing.ad9d893536bea46e04e3.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Frontpage~ModListing.228aadec13a68c3b9897.js.map
