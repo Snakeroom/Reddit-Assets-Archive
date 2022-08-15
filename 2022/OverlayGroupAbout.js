@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/OverlayGroupAbout.535d8e2c93364fc160ab.js
-// Retrieved at 4/25/2022, 2:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/OverlayGroupAbout.b7eda3396b57cde08afe.js
+// Retrieved at 8/15/2022, 3:00:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["OverlayGroupAbout"], {
 		"./src/chat/components/OverlayGroupAbout/index.m.less": function(e, t, n) {
@@ -42,9 +42,9 @@
 				E = n.n(O),
 				T = n("./src/lib/classNames/index.ts");
 			const v = Object(C.a)({
-					channelType: e => Object(g.C)(e, "type"),
+					channelType: e => Object(g.D)(e, "type"),
 					currentChannel: g.m,
-					memberCount: e => Object(g.C)(e, "memberCount"),
+					memberCount: e => Object(g.D)(e, "memberCount"),
 					members: e => Object(N.g)(e),
 					fetchingMembers: N.a,
 					hasMoreMembers: N.e
@@ -83,10 +83,10 @@
 						M = () => {
 							y && (v(Object(r.j)(y)), v(Object(i.T)()))
 						},
-						J = () => {
+						D = () => {
 							v(Object(r.c)())
 						},
-						D = y !== n.name;
+						J = y !== n.name;
 					return s.a.createElement(b.a, {
 						innerContent: !0,
 						isSettings: !0
@@ -133,8 +133,8 @@
 						actionButtonText: a.fbt._("Invite", null, {
 							hk: "uNiGT"
 						}),
-						actionButtonAction: J
-					}, s.a.createElement(I.a, null))), D ? s.a.createElement(_.a, {
+						actionButtonAction: D
+					}, s.a.createElement(I.a, null))), J ? s.a.createElement(_.a, {
 						secondaryButtonAction: w,
 						primaryButtonAction: M,
 						secondaryButtonText: a.fbt._("Cancel", null, {
@@ -227,4 +227,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/OverlayGroupAbout.535d8e2c93364fc160ab.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/OverlayGroupAbout.b7eda3396b57cde08afe.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ChatPost.4027808502ebe6bd2838.js
-// Retrieved at 8/10/2022, 7:10:03 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ChatPost.667d43b3ded050f70048.js
+// Retrieved at 8/15/2022, 3:00:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ChatPost"], {
 		"./node_modules/lodash/_baseDelay.js": function(e, t) {
@@ -2056,15 +2056,12 @@
 			var he = n("./src/reddit/models/Toast/index.ts"),
 				be = n("./src/reddit/selectors/communityAwards.ts"),
 				Ce = n("./src/reddit/selectors/experiments/chat.ts"),
-				ve = n("./src/reddit/selectors/gold/awardIcon.ts");
-
-			function ge(e) {
-				return !!e
-			}
+				ve = n("./src/reddit/selectors/gold/awardIcon.ts"),
+				ge = n("./src/lib/isDefined.ts");
 			const fe = e => "chat_reaction_upvote" === e.id,
 				xe = (e, t) => {
 					var n;
-					return (null !== (n = e.awards.chatReactions.availability[t]) && void 0 !== n ? n : []).map(t => Object(be.a)(e, t)).filter(ge)
+					return (null !== (n = e.awards.chatReactions.availability[t]) && void 0 !== n ? n : []).map(t => Object(be.a)(e, t)).filter(ge.a)
 				},
 				_e = Object(l.a)((e, t) => xe(e, t.subredditId), (e, t) => {
 					var n;
@@ -2076,7 +2073,7 @@
 							award: a,
 							total: r
 						}
-					}).filter(ge)
+					}).filter(ge.a)
 				}, (e, t) => {
 					const n = (e => {
 						const t = e.reduce((e, t, n) => ({
@@ -5441,4 +5438,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatPost.4027808502ebe6bd2838.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatPost.667d43b3ded050f70048.js.map
