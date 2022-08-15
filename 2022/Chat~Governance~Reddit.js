@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.9fbf6210ec6b218cb7fc.js
-// Retrieved at 8/15/2022, 11:20:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.59a8328f8ae035ad8c4c.js
+// Retrieved at 8/15/2022, 1:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Chat~Governance~Reddit"], {
 		"./assets/fonts/IBMPlexSans/font.less": function(e, t, i) {},
@@ -3495,11 +3495,11 @@
 				apiPassThroughHeaders: Object(r.e)({}.API_PASS_THROUGH_HEADERS || ""),
 				appName: {}.APP_NAME || "desktop2x",
 				assetPath: "https://www.redditstatic.com/desktop2x",
-				buildNumber: Object(r.c)("170617"),
+				buildNumber: Object(r.c)("170643"),
 				chatHelpUrl: {}.CHAT_HELP_URL || "https://reddit.zendesk.com/hc/en-us/sections/360008805652-Chat",
 				hlsVersion: "hls 0.12.4",
 				dashVersion: "dash 4.4.0",
-				buildTimestamp: Object(r.b)("1660575203"),
+				buildTimestamp: Object(r.b)("1660583027"),
 				cookieDomain: ".reddit.com",
 				giphyApiKey: "k2kwyMA6VeyHM6ZRT96OXDGaersnx73Z",
 				mediaUrl: "https://www.redditmedia.com",
@@ -6139,14 +6139,14 @@
 					}))
 				},
 				Y = (e, t, i) => {
-					console.log("%cStarting Raven %crelease %cbde8f7a3946cc40a7634fbe5c629a4336f6a88be-production" + ` %cpublic url %c${y.a.sentryClientPublicURL}`, "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
+					console.log("%cStarting Raven %crelease %cea58d58485a496b5f7070dc3170d82570e91484d-production" + ` %cpublic url %c${y.a.sentryClientPublicURL}`, "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
 					let n = [];
 					n = [new RegExp(`^${y.a.assetPath}`, "i")];
 					o.e({
 						attachStacktrace: !0,
 						dsn: y.a.sentryClientPublicURL,
 						whitelistUrls: n,
-						release: "bde8f7a3946cc40a7634fbe5c629a4336f6a88be-production",
+						release: "ea58d58485a496b5f7070dc3170d82570e91484d-production",
 						environment: "production",
 						ignoreErrors: ["$ is not defined"],
 						integrations: [...Object(L.d)(), new d.Integrations.Breadcrumbs({
@@ -6672,7 +6672,7 @@
 							settings: r,
 							statusCode: s,
 							type: o,
-							releaseClient: "bde8f7a3946cc40a7634fbe5c629a4336f6a88be-production",
+							releaseClient: "ea58d58485a496b5f7070dc3170d82570e91484d-production",
 							appName: t.statsAppName,
 							error: n ? JSON.parse(Object(l.a)(n)) : void 0
 						},
@@ -6708,11 +6708,11 @@
 		"./src/lib/logs/timing.js": function(e, t, i) {
 			"use strict";
 			i.d(t, "a", (function() {
-				return a
+				return d
 			})), i.d(t, "b", (function() {
-				return c
+				return l
 			})), i.d(t, "c", (function() {
-				return _
+				return u
 			}));
 			var n = i("./src/lib/constants/index.ts"),
 				r = i("./src/lib/makeRequest/index.ts"),
@@ -6720,11 +6720,6 @@
 			const o = .1;
 
 			function d() {
-				let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : o;
-				return Math.random() > e
-			}
-
-			function a() {
 				if (!s.a || !s.a.timing) return;
 				const e = s.a.timing,
 					t = {};
@@ -6737,22 +6732,14 @@
 				}
 				return i("redirectTiming", "redirectStart", "redirectEnd"), i("startTiming", "fetchStart", "domainLookupStart"), i("dnsTiming", "domainLookupStart", "domainLookupEnd"), i("tcpTiming", "connectStart", "connectEnd"), i("httpsTiming", "secureConnectionStart", "connectEnd"), i("requestTiming", "requestStart", "responseStart"), i("responseTiming", "responseStart", "responseEnd"), i("domLoadingTiming", "domLoading", "domInteractive"), i("domInteractiveTiming", "domInteractive", "domContentLoadedEventStart"), i("domContentLoadedTiming", "domContentLoadedEventStart", "domContentLoadedEventEnd"), t
 			}
+			let a = !0;
 
 			function l(e) {
-				return Object(r.b)({
-					method: n.jb.POST,
-					endpoint: "/timings",
-					data: {
-						rum: e
-					},
-					type: "json"
-				})
-			}
-			let u = !0;
-
-			function c(e) {
-				if (!u) return;
-				if (u = !1, d()) return;
+				if (!a) return;
+				if (a = !1, function() {
+						let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : o;
+						return Math.random() > e
+					}()) return;
 				if (!e) return;
 				const {
 					meta: t,
@@ -6760,14 +6747,23 @@
 				} = e;
 				if (!t || !t.name) return;
 				const {
-					name: n
+					name: s
 				} = t;
-				l({
-					actionName: `d2.client.${n}`,
+				! function(e) {
+					Object(r.b)({
+						method: n.jb.POST,
+						endpoint: "/timings",
+						data: {
+							rum: e
+						},
+						type: "json"
+					})
+				}({
+					actionName: `d2.client.${s}`,
 					routeTiming: i
 				})
 			}
-			const _ = function(e, t) {
+			const u = function(e, t) {
 				let i = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : 0;
 				return (n, r) => {
 					const s = Date.now();
@@ -49541,4 +49537,4 @@
 		"ignored /drone/src/node_modules/readable-stream/lib/internal/streams util": function(e, t) {}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.9fbf6210ec6b218cb7fc.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.59a8328f8ae035ad8c4c.js.map
