@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/NotificationsInbox.12b390e7c451cfacec3d.js
-// Retrieved at 8/10/2022, 7:10:03 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/NotificationsInbox.a04265017e9d0529f9d8.js
+// Retrieved at 8/15/2022, 2:30:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["NotificationsInbox"], {
 		"./src/reddit/actions/pages/notificationsInbox.ts": function(e, t, n) {
@@ -39,10 +39,14 @@
 		},
 		"./src/reddit/actions/subreddit/notifications.ts": function(e, t, n) {
 			"use strict";
-			n.d(t, "a", (function() {
+			n.d(t, "c", (function() {
 				return m
+			})), n.d(t, "a", (function() {
+				return p
 			})), n.d(t, "b", (function() {
 				return g
+			})), n.d(t, "d", (function() {
+				return h
 			}));
 			var i = n("./node_modules/fbt/lib/FbtPublic.js"),
 				s = n("./src/lib/makeActionCreator/index.ts"),
@@ -57,6 +61,23 @@
 				b = Object(s.a)(o.u),
 				f = Object(s.a)(o.t),
 				p = e => {
+					switch (e) {
+						case l.b.FREQUENT:
+							return {
+								isSubredditUpdatesInterestingPostEnabled: !0, isUpdateFromSubredditEnabled: !0
+							};
+						case l.b.LOW:
+							return {
+								isSubredditUpdatesInterestingPostEnabled: !1, isUpdateFromSubredditEnabled: !0
+							};
+						case l.b.OFF:
+						default:
+							return {
+								isSubredditUpdatesInterestingPostEnabled: !1, isUpdateFromSubredditEnabled: !1
+							}
+					}
+				},
+				g = e => {
 					switch (e) {
 						case l.b.OFF:
 							return i.fbt._("Unfollowed. You won’t get updates on new activity anymore.", null, {
@@ -74,36 +95,20 @@
 							return null
 					}
 				};
-			const g = e => {
+			const h = e => {
 				let {
 					subredditId: t,
 					notificationLevel: n,
 					successCallback: s,
 					undoCallback: o
 				} = e;
-				return async (e, g, h) => {
+				return async (e, l, h) => {
 					let {
 						gqlContext: v
 					} = h;
 					var x, C, E;
 					e(b());
-					const _ = (e => {
-							switch (e) {
-								case l.b.FREQUENT:
-									return {
-										isSubredditUpdatesInterestingPostEnabled: !0, isUpdateFromSubredditEnabled: !0
-									};
-								case l.b.LOW:
-									return {
-										isSubredditUpdatesInterestingPostEnabled: !1, isUpdateFromSubredditEnabled: !0
-									};
-								case l.b.OFF:
-								default:
-									return {
-										isSubredditUpdatesInterestingPostEnabled: !1, isUpdateFromSubredditEnabled: !1
-									}
-							}
-						})(n),
+					const _ = p(n),
 						N = await Object(d.b)(v(), t, _);
 					if ((null === (C = null === (x = N.error) || void 0 === x ? void 0 : x.fields) || void 0 === C ? void 0 : C.length) || function(e) {
 							return Boolean(e && e.data && e.data.updateSubredditNotificationSettings)
@@ -122,9 +127,9 @@
 								notificationLevel: n
 							}
 						}
-					})), s && s(), e(o ? Object(c.f)(Object(c.e)(p(n), u.b.Undo, i.fbt._("Undo", null, {
+					})), s && s(), e(o ? Object(c.f)(Object(c.e)(g(n), u.b.Undo, i.fbt._("Undo", null, {
 						hk: "46OwLP"
-					}), Object(r.i)(t, o))) : Object(c.f)(Object(c.e)(p(n), u.b.SuccessCommunityGreen))))
+					}), Object(r.i)(t, o))) : Object(c.f)(Object(c.e)(g(n), u.b.SuccessCommunityGreen))))
 				}
 			}
 		},
@@ -632,7 +637,7 @@
 			});
 			var H = Object(d.b)(W, e => ({
 					clearMessageTabBadgeCount: () => e(Object(u.b)()),
-					decreaseSubredditNotifications: (t, n) => e(Object(b.b)({
+					decreaseSubredditNotifications: (t, n) => e(Object(b.d)({
 						subredditId: t,
 						notificationLevel: p.b.LOW,
 						undoCallback: n
@@ -741,4 +746,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/NotificationsInbox.12b390e7c451cfacec3d.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/NotificationsInbox.a04265017e9d0529f9d8.js.map

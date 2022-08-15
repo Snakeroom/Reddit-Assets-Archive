@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CountryPage~Multireddit.1ed4d5e475555f69b57b.js
-// Retrieved at 8/10/2022, 7:10:03 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CountryPage~Multireddit.0f64ff9e46007b26202f.js
+// Retrieved at 8/15/2022, 2:30:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CountryPage~Multireddit"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -1006,6 +1006,102 @@
 						lastLoadedEnv: "client"
 					}))
 				}
+		},
+		"./src/reddit/actions/subreddit/notifications.ts": function(e, t, n) {
+			"use strict";
+			n.d(t, "c", (function() {
+				return m
+			})), n.d(t, "a", (function() {
+				return b
+			})), n.d(t, "b", (function() {
+				return f
+			})), n.d(t, "d", (function() {
+				return _
+			}));
+			var r = n("./node_modules/fbt/lib/FbtPublic.js"),
+				s = n("./src/lib/makeActionCreator/index.ts"),
+				i = n("./src/reddit/actions/notificationSettingsLayout/index.ts"),
+				o = n("./src/reddit/actions/notificationsInbox/index.ts"),
+				a = n("./src/reddit/actions/subreddit/constants.ts"),
+				c = n("./src/reddit/actions/toaster.ts"),
+				d = n("./src/reddit/endpoints/subreddit/notificationSettings.ts"),
+				l = n("./src/reddit/models/Subreddit/index.ts"),
+				u = n("./src/reddit/models/Toast/index.ts");
+			const m = Object(s.a)(a.v),
+				p = Object(s.a)(a.u),
+				h = Object(s.a)(a.t),
+				b = e => {
+					switch (e) {
+						case l.b.FREQUENT:
+							return {
+								isSubredditUpdatesInterestingPostEnabled: !0, isUpdateFromSubredditEnabled: !0
+							};
+						case l.b.LOW:
+							return {
+								isSubredditUpdatesInterestingPostEnabled: !1, isUpdateFromSubredditEnabled: !0
+							};
+						case l.b.OFF:
+						default:
+							return {
+								isSubredditUpdatesInterestingPostEnabled: !1, isUpdateFromSubredditEnabled: !1
+							}
+					}
+				},
+				f = e => {
+					switch (e) {
+						case l.b.OFF:
+							return r.fbt._("Unfollowed. You won’t get updates on new activity anymore.", null, {
+								hk: "3e1CJR"
+							});
+						case l.b.FREQUENT:
+							return r.fbt._("Followed! Now you’ll get updates on new activity.", null, {
+								hk: "3JzOOa"
+							});
+						case l.b.LOW:
+							return r.fbt._("Success! You will see fewer notifications from this community in the future.", null, {
+								hk: "4x3TS8"
+							});
+						default:
+							return null
+					}
+				};
+			const _ = e => {
+				let {
+					subredditId: t,
+					notificationLevel: n,
+					successCallback: s,
+					undoCallback: a
+				} = e;
+				return async (e, l, _) => {
+					let {
+						gqlContext: g
+					} = _;
+					var x, y, v;
+					e(p());
+					const w = b(n),
+						k = await Object(d.b)(g(), t, w);
+					if ((null === (y = null === (x = k.error) || void 0 === x ? void 0 : x.fields) || void 0 === y ? void 0 : y.length) || function(e) {
+							return Boolean(e && e.data && e.data.updateSubredditNotificationSettings)
+						}(k.body) && (null === (v = k.body.data.updateSubredditNotificationSettings.errors) || void 0 === v ? void 0 : v.length)) return e(h()), e(Object(c.f)({
+						kind: u.b.Error,
+						text: r.fbt._("Failed to change the frequency of notifications from this community, please try again.", null, {
+							hk: "4avFFV"
+						})
+					}));
+					k.ok && (e(Object(i.c)({
+						subredditId: t,
+						notificationLevel: n
+					})), e(m({
+						subredditAboutInfo: {
+							[t]: {
+								notificationLevel: n
+							}
+						}
+					})), s && s(), e(a ? Object(c.f)(Object(c.e)(f(n), u.b.Undo, r.fbt._("Undo", null, {
+						hk: "46OwLP"
+					}), Object(o.i)(t, a))) : Object(c.f)(Object(c.e)(f(n), u.b.SuccessCommunityGreen))))
+				}
+			}
 		},
 		"./src/reddit/components/BackToTop/index.m.less": function(e, t, n) {
 			e.exports = {
@@ -6675,4 +6771,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CountryPage~Multireddit.1ed4d5e475555f69b57b.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CountryPage~Multireddit.0f64ff9e46007b26202f.js.map

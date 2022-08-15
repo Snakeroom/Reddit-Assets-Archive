@@ -1,7 +1,7 @@
-// https://www.redditstatic.com/desktop2x/CommentsPage.088750f6b7d7661659cd.js
-// Retrieved at 8/10/2022, 7:10:03 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CommentsPage.46d44e4f9c8a418cf867.js
+// Retrieved at 8/15/2022, 2:30:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
-	["CommentsPage", "Governance~Reddit~Subreddit~reddit-components-BlankPost~reddit-components-ClassicPost~reddit-compone~3b56c92e", "PostCreation~Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~r~4c415e24", "CollectionCommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~SearchResults", "Governance~ModListing~Reddit~ReportFlow~Subreddit", "CollectionCommentsPage~ModProgressModule~NewCommunityProgress", "CollectionCommentsPage~Subreddit~SubredditWiki", "AchievementsActions"], {
+	["CommentsPage", "PostCreation~Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~r~4c415e24", "Governance~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compo~bd4baca2", "CollectionCommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~SearchResults", "Governance~ModListing~Reddit~ReportFlow~Subreddit", "Governance~ModListing~Reddit~Subreddit", "CollectionCommentsPage~ModProgressModule~NewCommunityProgress", "CollectionCommentsPage~Subreddit~SubredditWiki", "AchievementsActions"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
 			var s;
 			s = function() {
@@ -6630,7 +6630,7 @@
 									isEligibleForContentBlocking: s,
 									allowedMediaInComments: o
 								} = t.postInfoById.subreddit;
-								r(Object(w.a)({
+								r(Object(w.c)({
 									subredditAboutInfo: {
 										[n]: {
 											isEligibleForContentBlocking: s,
@@ -8981,6 +8981,8 @@
 				return S
 			})), n.d(t, "B", (function() {
 				return L
+			})), n.d(t, "C", (function() {
+				return T
 			}));
 			const s = "SUBREDDIT__ADD_TOP_SUBREDDIT_MODELS",
 				r = "SUBREDDIT__ADD_TOP_SUBREDDIT_RANKINGS",
@@ -9009,7 +9011,8 @@
 				I = "SUBREDDIT_ABOUT_INFO_UPDATE__SUCCESS",
 				w = "SUBREDDIT_ABOUT_INFO_UPDATE__FAILED",
 				S = "MUTE_SUBREDDIT__SUCCESS",
-				L = "UNMUTE_SUBREDDIT_SUCCESS"
+				L = "UNMUTE_SUBREDDIT_SUCCESS",
+				T = "UPDATE_MUTE_AND_NOTIFICATION_LEVEL_SUCCESS"
 		},
 		"./src/reddit/actions/subreddit/inlineEditing.ts": function(e, t, n) {
 			"use strict";
@@ -9071,10 +9074,14 @@
 		},
 		"./src/reddit/actions/subreddit/notifications.ts": function(e, t, n) {
 			"use strict";
-			n.d(t, "a", (function() {
+			n.d(t, "c", (function() {
 				return m
+			})), n.d(t, "a", (function() {
+				return f
 			})), n.d(t, "b", (function() {
 				return C
+			})), n.d(t, "d", (function() {
+				return h
 			}));
 			var s = n("./node_modules/fbt/lib/FbtPublic.js"),
 				r = n("./src/lib/makeActionCreator/index.ts"),
@@ -9089,6 +9096,23 @@
 				p = Object(r.a)(a.u),
 				b = Object(r.a)(a.t),
 				f = e => {
+					switch (e) {
+						case l.b.FREQUENT:
+							return {
+								isSubredditUpdatesInterestingPostEnabled: !0, isUpdateFromSubredditEnabled: !0
+							};
+						case l.b.LOW:
+							return {
+								isSubredditUpdatesInterestingPostEnabled: !1, isUpdateFromSubredditEnabled: !0
+							};
+						case l.b.OFF:
+						default:
+							return {
+								isSubredditUpdatesInterestingPostEnabled: !1, isUpdateFromSubredditEnabled: !1
+							}
+					}
+				},
+				C = e => {
 					switch (e) {
 						case l.b.OFF:
 							return s.fbt._("Unfollowed. You won’t get updates on new activity anymore.", null, {
@@ -9106,36 +9130,20 @@
 							return null
 					}
 				};
-			const C = e => {
+			const h = e => {
 				let {
 					subredditId: t,
 					notificationLevel: n,
 					successCallback: r,
 					undoCallback: a
 				} = e;
-				return async (e, C, h) => {
+				return async (e, l, h) => {
 					let {
 						gqlContext: g
 					} = h;
 					var _, v, x;
 					e(p());
-					const O = (e => {
-							switch (e) {
-								case l.b.FREQUENT:
-									return {
-										isSubredditUpdatesInterestingPostEnabled: !0, isUpdateFromSubredditEnabled: !0
-									};
-								case l.b.LOW:
-									return {
-										isSubredditUpdatesInterestingPostEnabled: !1, isUpdateFromSubredditEnabled: !0
-									};
-								case l.b.OFF:
-								default:
-									return {
-										isSubredditUpdatesInterestingPostEnabled: !1, isUpdateFromSubredditEnabled: !1
-									}
-							}
-						})(n),
+					const O = f(n),
 						y = await Object(d.b)(g(), t, O);
 					if ((null === (v = null === (_ = y.error) || void 0 === _ ? void 0 : _.fields) || void 0 === v ? void 0 : v.length) || function(e) {
 							return Boolean(e && e.data && e.data.updateSubredditNotificationSettings)
@@ -9154,9 +9162,9 @@
 								notificationLevel: n
 							}
 						}
-					})), r && r(), e(a ? Object(c.f)(Object(c.e)(f(n), u.b.Undo, s.fbt._("Undo", null, {
+					})), r && r(), e(a ? Object(c.f)(Object(c.e)(C(n), u.b.Undo, s.fbt._("Undo", null, {
 						hk: "46OwLP"
-					}), Object(i.i)(t, a))) : Object(c.f)(Object(c.e)(f(n), u.b.SuccessCommunityGreen))))
+					}), Object(i.i)(t, a))) : Object(c.f)(Object(c.e)(C(n), u.b.SuccessCommunityGreen))))
 				}
 			}
 		},
@@ -30170,6 +30178,32 @@
 					await m(o(), i), n(Object(c.b)(e))
 				}
 		},
+		"./src/reddit/endpoints/subreddit/notificationSettings.ts": function(e, t, n) {
+			"use strict";
+			n.d(t, "a", (function() {
+				return i
+			})), n.d(t, "b", (function() {
+				return a
+			}));
+			var s = n("./src/redditGQL/operations/FetchSubredditsNotificationSettings.json"),
+				r = n("./src/redditGQL/operations/UpdateSubredditNotificationSettings.json"),
+				o = n("./src/lib/makeGqlRequest/index.ts");
+			const i = (e, t) => Object(o.a)(e, {
+					...s,
+					variables: {
+						subredditIds: [t]
+					}
+				}),
+				a = (e, t, n) => Object(o.a)(e, {
+					...r,
+					variables: {
+						input: {
+							...n,
+							subredditId: t
+						}
+					}
+				})
+		},
 		"./src/reddit/endpoints/subreddit/subscriptions.ts": function(e, t, n) {
 			"use strict";
 			n.d(t, "c", (function() {
@@ -43056,6 +43090,9 @@
 		"./src/redditGQL/operations/DismissCommunityProgressCardV2.json": function(e) {
 			e.exports = JSON.parse('{"id":"af0a685394e2"}')
 		},
+		"./src/redditGQL/operations/FetchSubredditsNotificationSettings.json": function(e) {
+			e.exports = JSON.parse('{"id":"5d042135b4c5"}')
+		},
 		"./src/redditGQL/operations/NotificationInboxFeed.json": function(e) {
 			e.exports = JSON.parse('{"id":"36e10bfb5d5e"}')
 		},
@@ -43107,9 +43144,12 @@
 		"./src/redditGQL/operations/UpdateNotificationPreferences.json": function(e) {
 			e.exports = JSON.parse('{"id":"129085be0500"}')
 		},
+		"./src/redditGQL/operations/UpdateSubredditNotificationSettings.json": function(e) {
+			e.exports = JSON.parse('{"id":"0af4f630a2e1"}')
+		},
 		"./src/redditGQL/operations/UserSubredditsNotificationsLevel.json": function(e) {
-			e.exports = JSON.parse('{"id":"8404d1f9e84d"}')
+			e.exports = JSON.parse('{"id":"775bcf2e4ca3"}')
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommentsPage.088750f6b7d7661659cd.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommentsPage.46d44e4f9c8a418cf867.js.map

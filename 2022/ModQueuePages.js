@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModQueuePages.a9059020297636f52989.js
-// Retrieved at 8/10/2022, 7:10:03 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModQueuePages.fa22ef573f29b328d16b.js
+// Retrieved at 8/15/2022, 2:30:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModQueuePages"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -1940,6 +1940,102 @@
 						} else a(u)
 					} else a(ge(b.error))
 				}
+		},
+		"./src/reddit/actions/subreddit/notifications.ts": function(e, t, n) {
+			"use strict";
+			n.d(t, "c", (function() {
+				return u
+			})), n.d(t, "a", (function() {
+				return h
+			})), n.d(t, "b", (function() {
+				return f
+			})), n.d(t, "d", (function() {
+				return x
+			}));
+			var s = n("./node_modules/fbt/lib/FbtPublic.js"),
+				o = n("./src/lib/makeActionCreator/index.ts"),
+				r = n("./src/reddit/actions/notificationSettingsLayout/index.ts"),
+				a = n("./src/reddit/actions/notificationsInbox/index.ts"),
+				i = n("./src/reddit/actions/subreddit/constants.ts"),
+				d = n("./src/reddit/actions/toaster.ts"),
+				c = n("./src/reddit/endpoints/subreddit/notificationSettings.ts"),
+				l = n("./src/reddit/models/Subreddit/index.ts"),
+				m = n("./src/reddit/models/Toast/index.ts");
+			const u = Object(o.a)(i.v),
+				p = Object(o.a)(i.u),
+				b = Object(o.a)(i.t),
+				h = e => {
+					switch (e) {
+						case l.b.FREQUENT:
+							return {
+								isSubredditUpdatesInterestingPostEnabled: !0, isUpdateFromSubredditEnabled: !0
+							};
+						case l.b.LOW:
+							return {
+								isSubredditUpdatesInterestingPostEnabled: !1, isUpdateFromSubredditEnabled: !0
+							};
+						case l.b.OFF:
+						default:
+							return {
+								isSubredditUpdatesInterestingPostEnabled: !1, isUpdateFromSubredditEnabled: !1
+							}
+					}
+				},
+				f = e => {
+					switch (e) {
+						case l.b.OFF:
+							return s.fbt._("Unfollowed. You won’t get updates on new activity anymore.", null, {
+								hk: "3e1CJR"
+							});
+						case l.b.FREQUENT:
+							return s.fbt._("Followed! Now you’ll get updates on new activity.", null, {
+								hk: "3JzOOa"
+							});
+						case l.b.LOW:
+							return s.fbt._("Success! You will see fewer notifications from this community in the future.", null, {
+								hk: "4x3TS8"
+							});
+						default:
+							return null
+					}
+				};
+			const x = e => {
+				let {
+					subredditId: t,
+					notificationLevel: n,
+					successCallback: o,
+					undoCallback: i
+				} = e;
+				return async (e, l, x) => {
+					let {
+						gqlContext: g
+					} = x;
+					var v, O, _;
+					e(p());
+					const E = h(n),
+						k = await Object(c.b)(g(), t, E);
+					if ((null === (O = null === (v = k.error) || void 0 === v ? void 0 : v.fields) || void 0 === O ? void 0 : O.length) || function(e) {
+							return Boolean(e && e.data && e.data.updateSubredditNotificationSettings)
+						}(k.body) && (null === (_ = k.body.data.updateSubredditNotificationSettings.errors) || void 0 === _ ? void 0 : _.length)) return e(b()), e(Object(d.f)({
+						kind: m.b.Error,
+						text: s.fbt._("Failed to change the frequency of notifications from this community, please try again.", null, {
+							hk: "4avFFV"
+						})
+					}));
+					k.ok && (e(Object(r.c)({
+						subredditId: t,
+						notificationLevel: n
+					})), e(u({
+						subredditAboutInfo: {
+							[t]: {
+								notificationLevel: n
+							}
+						}
+					})), o && o(), e(i ? Object(d.f)(Object(d.e)(f(n), m.b.Undo, s.fbt._("Undo", null, {
+						hk: "46OwLP"
+					}), Object(a.i)(t, i))) : Object(d.f)(Object(d.e)(f(n), m.b.SuccessCommunityGreen))))
+				}
+			}
 		},
 		"./src/reddit/components/Comments/Comment/ModToolsFlatlist/RestrictedButton.tsx": function(e, t, n) {
 			"use strict";
@@ -8092,4 +8188,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModQueuePages.a9059020297636f52989.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModQueuePages.fa22ef573f29b328d16b.js.map

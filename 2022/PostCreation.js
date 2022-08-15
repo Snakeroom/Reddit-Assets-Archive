@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostCreation.fff6ee6276d26efdc667.js
-// Retrieved at 8/10/2022, 7:10:03 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostCreation.720ceb270b80bb6996eb.js
+// Retrieved at 8/15/2022, 2:30:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostCreation", "ChatMessageInput~MembershipPaywallPage~RichTextEditor", "ContributorRequestButton"], {
 		"./node_modules/autosize/dist/autosize.js": function(e, t, n) {
@@ -4261,6 +4261,102 @@
 					}
 					Object(h.a)(Object(d.t)(e, a[e], Object(u.q)(t))(c)), n(Object(i.a)(t.subreddit.id, t.id, a))
 				}
+		},
+		"./src/reddit/actions/subreddit/notifications.ts": function(e, t, n) {
+			"use strict";
+			n.d(t, "c", (function() {
+				return p
+			})), n.d(t, "a", (function() {
+				return b
+			})), n.d(t, "b", (function() {
+				return f
+			})), n.d(t, "d", (function() {
+				return g
+			}));
+			var o = n("./node_modules/fbt/lib/FbtPublic.js"),
+				s = n("./src/lib/makeActionCreator/index.ts"),
+				r = n("./src/reddit/actions/notificationSettingsLayout/index.ts"),
+				i = n("./src/reddit/actions/notificationsInbox/index.ts"),
+				a = n("./src/reddit/actions/subreddit/constants.ts"),
+				c = n("./src/reddit/actions/toaster.ts"),
+				l = n("./src/reddit/endpoints/subreddit/notificationSettings.ts"),
+				d = n("./src/reddit/models/Subreddit/index.ts"),
+				u = n("./src/reddit/models/Toast/index.ts");
+			const p = Object(s.a)(a.v),
+				m = Object(s.a)(a.u),
+				h = Object(s.a)(a.t),
+				b = e => {
+					switch (e) {
+						case d.b.FREQUENT:
+							return {
+								isSubredditUpdatesInterestingPostEnabled: !0, isUpdateFromSubredditEnabled: !0
+							};
+						case d.b.LOW:
+							return {
+								isSubredditUpdatesInterestingPostEnabled: !1, isUpdateFromSubredditEnabled: !0
+							};
+						case d.b.OFF:
+						default:
+							return {
+								isSubredditUpdatesInterestingPostEnabled: !1, isUpdateFromSubredditEnabled: !1
+							}
+					}
+				},
+				f = e => {
+					switch (e) {
+						case d.b.OFF:
+							return o.fbt._("Unfollowed. You won’t get updates on new activity anymore.", null, {
+								hk: "3e1CJR"
+							});
+						case d.b.FREQUENT:
+							return o.fbt._("Followed! Now you’ll get updates on new activity.", null, {
+								hk: "3JzOOa"
+							});
+						case d.b.LOW:
+							return o.fbt._("Success! You will see fewer notifications from this community in the future.", null, {
+								hk: "4x3TS8"
+							});
+						default:
+							return null
+					}
+				};
+			const g = e => {
+				let {
+					subredditId: t,
+					notificationLevel: n,
+					successCallback: s,
+					undoCallback: a
+				} = e;
+				return async (e, d, g) => {
+					let {
+						gqlContext: E
+					} = g;
+					var C, x, y;
+					e(m());
+					const O = b(n),
+						v = await Object(l.b)(E(), t, O);
+					if ((null === (x = null === (C = v.error) || void 0 === C ? void 0 : C.fields) || void 0 === x ? void 0 : x.length) || function(e) {
+							return Boolean(e && e.data && e.data.updateSubredditNotificationSettings)
+						}(v.body) && (null === (y = v.body.data.updateSubredditNotificationSettings.errors) || void 0 === y ? void 0 : y.length)) return e(h()), e(Object(c.f)({
+						kind: u.b.Error,
+						text: o.fbt._("Failed to change the frequency of notifications from this community, please try again.", null, {
+							hk: "4avFFV"
+						})
+					}));
+					v.ok && (e(Object(r.c)({
+						subredditId: t,
+						notificationLevel: n
+					})), e(p({
+						subredditAboutInfo: {
+							[t]: {
+								notificationLevel: n
+							}
+						}
+					})), s && s(), e(a ? Object(c.f)(Object(c.e)(f(n), u.b.Undo, o.fbt._("Undo", null, {
+						hk: "46OwLP"
+					}), Object(i.i)(t, a))) : Object(c.f)(Object(c.e)(f(n), u.b.SuccessCommunityGreen))))
+				}
+			}
 		},
 		"./src/reddit/actions/subredditAutocomplete/constants.ts": function(e, t, n) {
 			"use strict";
@@ -34633,4 +34729,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.fff6ee6276d26efdc667.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.720ceb270b80bb6996eb.js.map

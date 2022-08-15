@@ -1,13 +1,13 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-BlankPost.d15b4aadf9cdec274843.js
-// Retrieved at 8/9/2022, 6:30:12 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-BlankPost.5134a4c2d70a092265a3.js
+// Retrieved at 8/15/2022, 2:30:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-BlankPost"], {
-		"./node_modules/@reddit/i18n-tools/runtime/helpers/locale/index.js": function(e, r, t) {
+		"./node_modules/@reddit/i18n-tools/runtime/helpers/locale/index.js": function(e, t, s) {
 			"use strict";
-			Object.defineProperty(r, "__esModule", {
+			Object.defineProperty(t, "__esModule", {
 				value: !0
-			}), r.isPseudoLocale = r.isISOLocaleSupported = r.toISOLocale = r.isoLocaleToR2Language = void 0;
-			const n = t("./node_modules/@reddit/i18n-tools/runtime/helpers/locale/constants.js"),
+			}), t.isPseudoLocale = t.isISOLocaleSupported = t.toISOLocale = t.isoLocaleToR2Language = void 0;
+			const r = s("./node_modules/@reddit/i18n-tools/runtime/helpers/locale/constants.js"),
 				o = new Set([{
 					code: "en",
 					label: "English [en]"
@@ -233,7 +233,7 @@
 				}].map(({
 					code: e
 				}) => e)),
-				a = {
+				i = {
 					af: ["af"],
 					ar: ["ar"],
 					be: ["be-BY"],
@@ -309,96 +309,96 @@
 					zh: ["zh"],
 					"zh-cn": ["zh-CN"]
 				},
-				l = Object.keys(a).reduce((e, r) => (o.has(r) && (e[r] = a[r]), e), {}),
-				s = Object.keys(l).reduce((e, r) => {
-					const t = l[r];
-					return t && t.forEach(t => {
-						e[t] = r
+				n = Object.keys(i).reduce((e, t) => (o.has(t) && (e[t] = i[t]), e), {}),
+				a = Object.keys(n).reduce((e, t) => {
+					const s = n[t];
+					return s && s.forEach(s => {
+						e[s] = t
 					}), e
 				}, {});
-			r.isoLocaleToR2Language = e => s[e], r.toISOLocale = e => {
+			t.isoLocaleToR2Language = e => a[e], t.toISOLocale = e => {
 				if (!e) return;
-				const r = e.match(/^([a-zA-Z]{2,4})(?:[-_]([a-zA-Z]{2,4}))?$/);
-				if (!r) return;
-				const t = r[1];
+				const t = e.match(/^([a-zA-Z]{2,4})(?:[-_]([a-zA-Z]{2,4}))?$/);
 				if (!t) return;
-				let n = t.toLowerCase();
-				const o = r[2];
-				return o && (n = `${n}-${o.toUpperCase()}`), n
+				const s = t[1];
+				if (!s) return;
+				let r = s.toLowerCase();
+				const o = t[2];
+				return o && (r = `${r}-${o.toUpperCase()}`), r
 			};
-			const i = new Set(Object.keys(s));
-			r.isISOLocaleSupported = e => !!e && i.has(e), r.isPseudoLocale = e => !!e && (e === n.PSEUDO_AUTO || Object.values(n.PseudoLocale).includes(e))
+			const d = new Set(Object.keys(a));
+			t.isISOLocaleSupported = e => !!e && d.has(e), t.isPseudoLocale = e => !!e && (e === r.PSEUDO_AUTO || Object.values(r.PseudoLocale).includes(e))
 		},
-		"./node_modules/@researchgate/react-intersection-observer/lib/es/index.js": function(e, r, t) {
+		"./node_modules/@researchgate/react-intersection-observer/lib/es/index.js": function(e, t, s) {
 			"use strict";
-			t.d(r, "a", (function() {
-				return x
+			s.d(t, "a", (function() {
+				return w
 			}));
-			var n = t("./node_modules/react/index.js"),
-				o = t.n(n),
-				a = t("./node_modules/react-dom/index.js"),
-				l = (t("./node_modules/@researchgate/react-intersection-observer/node_modules/prop-types/index.js"), /^-?\d*\.?\d+(px|%)$/);
+			var r = s("./node_modules/react/index.js"),
+				o = s.n(r),
+				i = s("./node_modules/react-dom/index.js"),
+				n = (s("./node_modules/@researchgate/react-intersection-observer/node_modules/prop-types/index.js"), /^-?\d*\.?\d+(px|%)$/);
 
-			function s(e, r) {
-				return Array.isArray(e) && Array.isArray(r) && e.length === r.length ? e.some((function(t, n) {
-					return s(e[n], r[n])
-				})) : e !== r
+			function a(e, t) {
+				return Array.isArray(e) && Array.isArray(t) && e.length === t.length ? e.some((function(s, r) {
+					return a(e[r], t[r])
+				})) : e !== t
 			}
-			var i = new Map;
+			var d = new Map;
 
 			function c(e) {
 				void 0 === e && (e = {});
-				for (var r, t = e.root || null, n = function(e) {
-						var r = (e ? e.trim() : "0px").split(/\s+/).map((function(e) {
-								if (!l.test(e)) throw new Error("rootMargin must be a string literal containing pixels and/or percent values");
+				for (var t, s = e.root || null, r = function(e) {
+						var t = (e ? e.trim() : "0px").split(/\s+/).map((function(e) {
+								if (!n.test(e)) throw new Error("rootMargin must be a string literal containing pixels and/or percent values");
 								return e
 							})),
-							t = r[0],
-							n = void 0 === t ? "0px" : t,
-							o = r[1],
-							a = void 0 === o ? n : o,
-							s = r[2],
-							i = void 0 === s ? n : s,
-							c = r[3];
-						return n + " " + a + " " + i + " " + (void 0 === c ? a : c)
-					}(e.rootMargin), o = Array.isArray(e.threshold) ? e.threshold : [null != e.threshold ? e.threshold : 0], a = i.keys(); r = a.next().value;) {
-					if (!(t !== r.root || n !== r.rootMargin || s(o, r.thresholds))) return r
+							s = t[0],
+							r = void 0 === s ? "0px" : s,
+							o = t[1],
+							i = void 0 === o ? r : o,
+							a = t[2],
+							d = void 0 === a ? r : a,
+							c = t[3];
+						return r + " " + i + " " + d + " " + (void 0 === c ? i : c)
+					}(e.rootMargin), o = Array.isArray(e.threshold) ? e.threshold : [null != e.threshold ? e.threshold : 0], i = d.keys(); t = i.next().value;) {
+					if (!(s !== t.root || r !== t.rootMargin || a(o, t.thresholds))) return t
 				}
 				return null
 			}
 
-			function d(e, r) {
-				var t = i.get(e);
-				if (t)
-					for (var n, o = t.values(); n = o.next().value;)
-						if (n.target === r.target) return n;
+			function l(e, t) {
+				var s = d.get(e);
+				if (s)
+					for (var r, o = s.values(); r = o.next().value;)
+						if (r.target === t.target) return r;
 				return null
 			}
 
-			function u(e, r) {
-				for (var t = 0; t < e.length; t++) {
-					var n = d(r, e[t]);
-					n && n.handleChange(e[t])
+			function u(e, t) {
+				for (var s = 0; s < e.length; s++) {
+					var r = l(t, e[s]);
+					r && r.handleChange(e[s])
 				}
 			}
 
-			function h(e) {
+			function p(e) {
 				return c(e) || new IntersectionObserver(u, e)
 			}
-			var p = t("./node_modules/invariant/browser.js"),
-				b = t.n(p),
-				f = {},
-				v = Object.create(null, {
+			var b = s("./node_modules/invariant/browser.js"),
+				m = s.n(b),
+				h = {},
+				f = Object.create(null, {
 					errorReporter: {
 						configurable: !1,
 						get: function() {
-							return f.errorReporter || function(e) {
-								return b()(!1, e)
+							return h.errorReporter || function(e) {
+								return m()(!1, e)
 							}
 						},
 						set: function(e) {
 							if ("function" != typeof e) throw new Error("ReactIntersectionObserver: `Config.errorReporter` must be a callable");
-							f.errorReporter = e
+							h.errorReporter = e
 						}
 					}
 				});
@@ -408,101 +408,101 @@
 				return e
 			}
 
-			function m(e, r, t) {
-				return r in e ? Object.defineProperty(e, r, {
-					value: t,
+			function v(e, t, s) {
+				return t in e ? Object.defineProperty(e, t, {
+					value: s,
 					enumerable: !0,
 					configurable: !0,
 					writable: !0
-				}) : e[r] = t, e
+				}) : e[t] = s, e
 			}
 			var y = ["root", "rootMargin", "threshold"],
-				_ = ["root", "rootMargin", "threshold", "disabled"],
-				k = Object.prototype,
-				j = k.hasOwnProperty,
-				O = k.toString,
-				N = function(e) {
-					return y.reduce((function(r, t) {
-						if (j.call(e, t)) {
-							var n = "root" === t && "[object String]" === O.call(e[t]);
-							r[t] = n ? document.querySelector(e[t]) : e[t]
+				O = ["root", "rootMargin", "threshold", "disabled"],
+				P = Object.prototype,
+				_ = P.hasOwnProperty,
+				j = P.toString,
+				E = function(e) {
+					return y.reduce((function(t, s) {
+						if (_.call(e, s)) {
+							var r = "root" === s && "[object String]" === j.call(e[s]);
+							t[s] = r ? document.querySelector(e[s]) : e[s]
 						}
-						return r
+						return t
 					}), {})
 				},
-				x = function(e) {
-					var r, t;
+				w = function(e) {
+					var t, s;
 
-					function n() {
-						for (var r, t = arguments.length, n = new Array(t), o = 0; o < t; o++) n[o] = arguments[o];
-						return m(g(r = e.call.apply(e, [this].concat(n)) || this), "handleChange", (function(e) {
-							r.props.onChange(e, r.externalUnobserve)
-						})), m(g(r), "handleNode", (function(e) {
-							var t = r.props.children;
-							if (null != t) {
-								var n = t.ref;
-								n && ("function" == typeof n ? n(e) : "object" == typeof n && (n.current = e))
+					function r() {
+						for (var t, s = arguments.length, r = new Array(s), o = 0; o < s; o++) r[o] = arguments[o];
+						return v(g(t = e.call.apply(e, [this].concat(r)) || this), "handleChange", (function(e) {
+							t.props.onChange(e, t.externalUnobserve)
+						})), v(g(t), "handleNode", (function(e) {
+							var s = t.props.children;
+							if (null != s) {
+								var r = s.ref;
+								r && ("function" == typeof r ? r(e) : "object" == typeof r && (r.current = e))
 							}
-							r.targetNode = e && Object(a.findDOMNode)(e)
-						})), m(g(r), "observe", (function() {
-							return null != r.props.children && !r.props.disabled && (r.targetNode ? (r.observer = h(N(r.props)), r.target = r.targetNode, e = g(r), i.has(e.observer) || i.set(e.observer, new Set), i.get(e.observer).add(e), e.observer.observe(e.target), !0) : (v.errorReporter("ReactIntersectionObserver: Can't find DOM node in the provided children. Make sure to render at least one DOM node in the tree."), !1));
+							t.targetNode = e && Object(i.findDOMNode)(e)
+						})), v(g(t), "observe", (function() {
+							return null != t.props.children && !t.props.disabled && (t.targetNode ? (t.observer = p(E(t.props)), t.target = t.targetNode, e = g(t), d.has(e.observer) || d.set(e.observer, new Set), d.get(e.observer).add(e), e.observer.observe(e.target), !0) : (f.errorReporter("ReactIntersectionObserver: Can't find DOM node in the provided children. Make sure to render at least one DOM node in the tree."), !1));
 							var e
-						})), m(g(r), "unobserve", (function(e) {
-							! function(e, r) {
-								if (i.has(e.observer)) {
-									var t = i.get(e.observer);
-									t.delete(e) && (t.size > 0 ? e.observer.unobserve(r) : (e.observer.disconnect(), i.delete(e.observer)))
+						})), v(g(t), "unobserve", (function(e) {
+							! function(e, t) {
+								if (d.has(e.observer)) {
+									var s = d.get(e.observer);
+									s.delete(e) && (s.size > 0 ? e.observer.unobserve(t) : (e.observer.disconnect(), d.delete(e.observer)))
 								}
-							}(g(r), e)
-						})), m(g(r), "externalUnobserve", (function() {
-							r.unobserve(r.targetNode)
-						})), r
+							}(g(t), e)
+						})), v(g(t), "externalUnobserve", (function() {
+							t.unobserve(t.targetNode)
+						})), t
 					}
-					t = e, (r = n).prototype = Object.create(t.prototype), r.prototype.constructor = r, r.__proto__ = t;
-					var l = n.prototype;
-					return l.getSnapshotBeforeUpdate = function(e) {
-						var r = this;
+					s = e, (t = r).prototype = Object.create(s.prototype), t.prototype.constructor = t, t.__proto__ = s;
+					var n = r.prototype;
+					return n.getSnapshotBeforeUpdate = function(e) {
+						var t = this;
 						this.prevTargetNode = this.targetNode;
-						var t = _.some((function(t) {
-							return s(r.props[t], e[t])
+						var s = O.some((function(s) {
+							return a(t.props[s], e[s])
 						}));
-						return t && this.prevTargetNode && (e.disabled || this.unobserve(this.prevTargetNode)), t
-					}, l.componentDidUpdate = function(e, r, t) {
-						var n = !1;
-						t || (n = this.prevTargetNode !== this.targetNode) && null != this.prevTargetNode && this.unobserve(this.prevTargetNode), (t || n) && this.observe()
-					}, l.componentDidMount = function() {
+						return s && this.prevTargetNode && (e.disabled || this.unobserve(this.prevTargetNode)), s
+					}, n.componentDidUpdate = function(e, t, s) {
+						var r = !1;
+						s || (r = this.prevTargetNode !== this.targetNode) && null != this.prevTargetNode && this.unobserve(this.prevTargetNode), (s || r) && this.observe()
+					}, n.componentDidMount = function() {
 						this.observe()
-					}, l.componentWillUnmount = function() {
+					}, n.componentWillUnmount = function() {
 						this.targetNode && this.unobserve(this.targetNode)
-					}, l.render = function() {
+					}, n.render = function() {
 						var e = this.props.children;
 						return null != e ? o.a.cloneElement(o.a.Children.only(e), {
 							ref: this.handleNode
 						}) : null
-					}, n
+					}, r
 				}(o.a.Component);
-			m(x, "displayName", "IntersectionObserver")
+			v(w, "displayName", "IntersectionObserver")
 		},
-		"./node_modules/@researchgate/react-intersection-observer/node_modules/prop-types/factoryWithThrowingShims.js": function(e, r, t) {
+		"./node_modules/@researchgate/react-intersection-observer/node_modules/prop-types/factoryWithThrowingShims.js": function(e, t, s) {
 			"use strict";
-			var n = t("./node_modules/@researchgate/react-intersection-observer/node_modules/prop-types/lib/ReactPropTypesSecret.js");
+			var r = s("./node_modules/@researchgate/react-intersection-observer/node_modules/prop-types/lib/ReactPropTypesSecret.js");
 
 			function o() {}
 
-			function a() {}
-			a.resetWarningCache = o, e.exports = function() {
-				function e(e, r, t, o, a, l) {
-					if (l !== n) {
-						var s = new Error("Calling PropTypes validators directly is not supported by the `prop-types` package. Use PropTypes.checkPropTypes() to call them. Read more at http://fb.me/use-check-prop-types");
-						throw s.name = "Invariant Violation", s
+			function i() {}
+			i.resetWarningCache = o, e.exports = function() {
+				function e(e, t, s, o, i, n) {
+					if (n !== r) {
+						var a = new Error("Calling PropTypes validators directly is not supported by the `prop-types` package. Use PropTypes.checkPropTypes() to call them. Read more at http://fb.me/use-check-prop-types");
+						throw a.name = "Invariant Violation", a
 					}
 				}
 
-				function r() {
+				function t() {
 					return e
 				}
 				e.isRequired = e;
-				var t = {
+				var s = {
 					array: e,
 					bool: e,
 					func: e,
@@ -511,36 +511,36 @@
 					string: e,
 					symbol: e,
 					any: e,
-					arrayOf: r,
+					arrayOf: t,
 					element: e,
 					elementType: e,
-					instanceOf: r,
+					instanceOf: t,
 					node: e,
-					objectOf: r,
-					oneOf: r,
-					oneOfType: r,
-					shape: r,
-					exact: r,
-					checkPropTypes: a,
+					objectOf: t,
+					oneOf: t,
+					oneOfType: t,
+					shape: t,
+					exact: t,
+					checkPropTypes: i,
 					resetWarningCache: o
 				};
-				return t.PropTypes = t, t
+				return s.PropTypes = s, s
 			}
 		},
-		"./node_modules/@researchgate/react-intersection-observer/node_modules/prop-types/index.js": function(e, r, t) {
-			e.exports = t("./node_modules/@researchgate/react-intersection-observer/node_modules/prop-types/factoryWithThrowingShims.js")()
+		"./node_modules/@researchgate/react-intersection-observer/node_modules/prop-types/index.js": function(e, t, s) {
+			e.exports = s("./node_modules/@researchgate/react-intersection-observer/node_modules/prop-types/factoryWithThrowingShims.js")()
 		},
-		"./node_modules/@researchgate/react-intersection-observer/node_modules/prop-types/lib/ReactPropTypesSecret.js": function(e, r, t) {
+		"./node_modules/@researchgate/react-intersection-observer/node_modules/prop-types/lib/ReactPropTypesSecret.js": function(e, t, s) {
 			"use strict";
 			e.exports = "SECRET_DO_NOT_PASS_THIS_OR_YOU_WILL_BE_FIRED"
 		},
-		"./node_modules/deep-diff/index.js": function(e, r, t) {
-			var n, o;
+		"./node_modules/deep-diff/index.js": function(e, t, s) {
+			var r, o;
 			o = function(e) {
-				var r = ["N", "E", "A", "D"];
+				var t = ["N", "E", "A", "D"];
 
-				function t(e, r) {
-					e.super_ = r, e.prototype = Object.create(r.prototype, {
+				function s(e, t) {
+					e.super_ = t, e.prototype = Object.create(t.prototype, {
 						constructor: {
 							value: e,
 							enumerable: !1,
@@ -550,218 +550,218 @@
 					})
 				}
 
-				function n(e, r) {
+				function r(e, t) {
 					Object.defineProperty(this, "kind", {
 						value: e,
 						enumerable: !0
-					}), r && r.length && Object.defineProperty(this, "path", {
-						value: r,
+					}), t && t.length && Object.defineProperty(this, "path", {
+						value: t,
 						enumerable: !0
 					})
 				}
 
-				function o(e, r, t) {
+				function o(e, t, s) {
 					o.super_.call(this, "E", e), Object.defineProperty(this, "lhs", {
-						value: r,
+						value: t,
 						enumerable: !0
 					}), Object.defineProperty(this, "rhs", {
+						value: s,
+						enumerable: !0
+					})
+				}
+
+				function i(e, t) {
+					i.super_.call(this, "N", e), Object.defineProperty(this, "rhs", {
 						value: t,
 						enumerable: !0
 					})
 				}
 
-				function a(e, r) {
-					a.super_.call(this, "N", e), Object.defineProperty(this, "rhs", {
-						value: r,
+				function n(e, t) {
+					n.super_.call(this, "D", e), Object.defineProperty(this, "lhs", {
+						value: t,
 						enumerable: !0
 					})
 				}
 
-				function l(e, r) {
-					l.super_.call(this, "D", e), Object.defineProperty(this, "lhs", {
-						value: r,
-						enumerable: !0
-					})
-				}
-
-				function s(e, r, t) {
-					s.super_.call(this, "A", e), Object.defineProperty(this, "index", {
-						value: r,
+				function a(e, t, s) {
+					a.super_.call(this, "A", e), Object.defineProperty(this, "index", {
+						value: t,
 						enumerable: !0
 					}), Object.defineProperty(this, "item", {
-						value: t,
+						value: s,
 						enumerable: !0
 					})
 				}
 
-				function i(e, r, t) {
-					var n = e.slice((t || r) + 1 || e.length);
-					return e.length = r < 0 ? e.length + r : r, e.push.apply(e, n), e
+				function d(e, t, s) {
+					var r = e.slice((s || t) + 1 || e.length);
+					return e.length = t < 0 ? e.length + t : t, e.push.apply(e, r), e
 				}
 
 				function c(e) {
-					var r = typeof e;
-					return "object" !== r ? r : e === Math ? "math" : null === e ? "null" : Array.isArray(e) ? "array" : "[object Date]" === Object.prototype.toString.call(e) ? "date" : "function" == typeof e.toString && /^\/.*\//.test(e.toString()) ? "regexp" : "object"
+					var t = typeof e;
+					return "object" !== t ? t : e === Math ? "math" : null === e ? "null" : Array.isArray(e) ? "array" : "[object Date]" === Object.prototype.toString.call(e) ? "date" : "function" == typeof e.toString && /^\/.*\//.test(e.toString()) ? "regexp" : "object"
 				}
 
-				function d(e) {
-					var r = 0;
-					if (0 === e.length) return r;
-					for (var t = 0; t < e.length; t++) r = (r << 5) - r + e.charCodeAt(t), r &= r;
-					return r
+				function l(e) {
+					var t = 0;
+					if (0 === e.length) return t;
+					for (var s = 0; s < e.length; s++) t = (t << 5) - t + e.charCodeAt(s), t &= t;
+					return t
 				}
 
 				function u(e) {
-					var r = 0,
-						t = c(e);
-					if ("array" === t) return e.forEach((function(e) {
-						r += u(e)
-					})), r + d("[type: array, hash: " + r + "]");
-					if ("object" === t) {
-						for (var n in e)
-							if (e.hasOwnProperty(n)) {
-								var o = "[ type: object, key: " + n + ", value hash: " + u(e[n]) + "]";
-								r += d(o)
-							} return r
+					var t = 0,
+						s = c(e);
+					if ("array" === s) return e.forEach((function(e) {
+						t += u(e)
+					})), t + l("[type: array, hash: " + t + "]");
+					if ("object" === s) {
+						for (var r in e)
+							if (e.hasOwnProperty(r)) {
+								var o = "[ type: object, key: " + r + ", value hash: " + u(e[r]) + "]";
+								t += l(o)
+							} return t
 					}
-					return r + d("[ type: " + t + " ; value: " + e + "]")
+					return t + l("[ type: " + s + " ; value: " + e + "]")
 				}
 
-				function h(e, r, t, n, i, d, p, b) {
-					t = t || [], p = p || [];
-					var f = (i = i || []).slice(0);
-					if (null != d) {
-						if (n) {
-							if ("function" == typeof n && n(f, d)) return;
-							if ("object" == typeof n) {
-								if (n.prefilter && n.prefilter(f, d)) return;
-								if (n.normalize) {
-									var v = n.normalize(f, d, e, r);
-									v && (e = v[0], r = v[1])
+				function p(e, t, s, r, d, l, b, m) {
+					s = s || [], b = b || [];
+					var h = (d = d || []).slice(0);
+					if (null != l) {
+						if (r) {
+							if ("function" == typeof r && r(h, l)) return;
+							if ("object" == typeof r) {
+								if (r.prefilter && r.prefilter(h, l)) return;
+								if (r.normalize) {
+									var f = r.normalize(h, l, e, t);
+									f && (e = f[0], t = f[1])
 								}
 							}
 						}
-						f.push(d)
+						h.push(l)
 					}
-					"regexp" === c(e) && "regexp" === c(r) && (e = e.toString(), r = r.toString());
-					var g, m, y, _, k = typeof e,
-						j = typeof r,
-						O = "undefined" !== k || p && p.length > 0 && p[p.length - 1].lhs && Object.getOwnPropertyDescriptor(p[p.length - 1].lhs, d),
-						N = "undefined" !== j || p && p.length > 0 && p[p.length - 1].rhs && Object.getOwnPropertyDescriptor(p[p.length - 1].rhs, d);
-					if (!O && N) t.push(new a(f, r));
-					else if (!N && O) t.push(new l(f, e));
-					else if (c(e) !== c(r)) t.push(new o(f, e, r));
-					else if ("date" === c(e) && e - r != 0) t.push(new o(f, e, r));
-					else if ("object" === k && null !== e && null !== r) {
-						for (g = p.length - 1; g > -1; --g)
-							if (p[g].lhs === e) {
-								_ = !0;
+					"regexp" === c(e) && "regexp" === c(t) && (e = e.toString(), t = t.toString());
+					var g, v, y, O, P = typeof e,
+						_ = typeof t,
+						j = "undefined" !== P || b && b.length > 0 && b[b.length - 1].lhs && Object.getOwnPropertyDescriptor(b[b.length - 1].lhs, l),
+						E = "undefined" !== _ || b && b.length > 0 && b[b.length - 1].rhs && Object.getOwnPropertyDescriptor(b[b.length - 1].rhs, l);
+					if (!j && E) s.push(new i(h, t));
+					else if (!E && j) s.push(new n(h, e));
+					else if (c(e) !== c(t)) s.push(new o(h, e, t));
+					else if ("date" === c(e) && e - t != 0) s.push(new o(h, e, t));
+					else if ("object" === P && null !== e && null !== t) {
+						for (g = b.length - 1; g > -1; --g)
+							if (b[g].lhs === e) {
+								O = !0;
 								break
-							} if (_) e !== r && t.push(new o(f, e, r));
+							} if (O) e !== t && s.push(new o(h, e, t));
 						else {
-							if (p.push({
+							if (b.push({
 									lhs: e,
-									rhs: r
+									rhs: t
 								}), Array.isArray(e)) {
-								for (b && (e.sort((function(e, r) {
-										return u(e) - u(r)
-									})), r.sort((function(e, r) {
-										return u(e) - u(r)
-									}))), g = r.length - 1, m = e.length - 1; g > m;) t.push(new s(f, g, new a(void 0, r[g--])));
-								for (; m > g;) t.push(new s(f, m, new l(void 0, e[m--])));
-								for (; g >= 0; --g) h(e[g], r[g], t, n, f, g, p, b)
+								for (m && (e.sort((function(e, t) {
+										return u(e) - u(t)
+									})), t.sort((function(e, t) {
+										return u(e) - u(t)
+									}))), g = t.length - 1, v = e.length - 1; g > v;) s.push(new a(h, g, new i(void 0, t[g--])));
+								for (; v > g;) s.push(new a(h, v, new n(void 0, e[v--])));
+								for (; g >= 0; --g) p(e[g], t[g], s, r, h, g, b, m)
 							} else {
-								var x = Object.keys(e),
-									w = Object.keys(r);
-								for (g = 0; g < x.length; ++g) y = x[g], (_ = w.indexOf(y)) >= 0 ? (h(e[y], r[y], t, n, f, y, p, b), w[_] = null) : h(e[y], void 0, t, n, f, y, p, b);
-								for (g = 0; g < w.length; ++g)(y = w[g]) && h(void 0, r[y], t, n, f, y, p, b)
+								var w = Object.keys(e),
+									T = Object.keys(t);
+								for (g = 0; g < w.length; ++g) y = w[g], (O = T.indexOf(y)) >= 0 ? (p(e[y], t[y], s, r, h, y, b, m), T[O] = null) : p(e[y], void 0, s, r, h, y, b, m);
+								for (g = 0; g < T.length; ++g)(y = T[g]) && p(void 0, t[y], s, r, h, y, b, m)
 							}
-							p.length = p.length - 1
+							b.length = b.length - 1
 						}
-					} else e !== r && ("number" === k && isNaN(e) && isNaN(r) || t.push(new o(f, e, r)))
+					} else e !== t && ("number" === P && isNaN(e) && isNaN(t) || s.push(new o(h, e, t)))
 				}
 
-				function p(e, r, t, n, o) {
-					var a = [];
-					if (h(e, r, a, n, null, null, null, o), t)
-						for (var l = 0; l < a.length; ++l) t(a[l]);
-					return a
+				function b(e, t, s, r, o) {
+					var i = [];
+					if (p(e, t, i, r, null, null, null, o), s)
+						for (var n = 0; n < i.length; ++n) s(i[n]);
+					return i
 				}
 
-				function b(e, r, t, n) {
-					var o = p(e, r, n ? function(e) {
-						e && n.push(e)
-					} : void 0, t);
-					return n || (o.length ? o : void 0)
+				function m(e, t, s, r) {
+					var o = b(e, t, r ? function(e) {
+						e && r.push(e)
+					} : void 0, s);
+					return r || (o.length ? o : void 0)
 				}
 
-				function f(e, t, n) {
-					if (void 0 === n && t && ~r.indexOf(t.kind) && (n = t), e && n && n.kind) {
-						for (var o = e, a = -1, l = n.path ? n.path.length - 1 : 0; ++a < l;) void 0 === o[n.path[a]] && (o[n.path[a]] = void 0 !== n.path[a + 1] && "number" == typeof n.path[a + 1] ? [] : {}), o = o[n.path[a]];
-						switch (n.kind) {
+				function h(e, s, r) {
+					if (void 0 === r && s && ~t.indexOf(s.kind) && (r = s), e && r && r.kind) {
+						for (var o = e, i = -1, n = r.path ? r.path.length - 1 : 0; ++i < n;) void 0 === o[r.path[i]] && (o[r.path[i]] = void 0 !== r.path[i + 1] && "number" == typeof r.path[i + 1] ? [] : {}), o = o[r.path[i]];
+						switch (r.kind) {
 							case "A":
-								n.path && void 0 === o[n.path[a]] && (o[n.path[a]] = []),
-									function e(r, t, n) {
-										if (n.path && n.path.length) {
-											var o, a = r[t],
-												l = n.path.length - 1;
-											for (o = 0; o < l; o++) a = a[n.path[o]];
-											switch (n.kind) {
+								r.path && void 0 === o[r.path[i]] && (o[r.path[i]] = []),
+									function e(t, s, r) {
+										if (r.path && r.path.length) {
+											var o, i = t[s],
+												n = r.path.length - 1;
+											for (o = 0; o < n; o++) i = i[r.path[o]];
+											switch (r.kind) {
 												case "A":
-													e(a[n.path[o]], n.index, n.item);
+													e(i[r.path[o]], r.index, r.item);
 													break;
 												case "D":
-													delete a[n.path[o]];
+													delete i[r.path[o]];
 													break;
 												case "E":
 												case "N":
-													a[n.path[o]] = n.rhs
+													i[r.path[o]] = r.rhs
 											}
-										} else switch (n.kind) {
+										} else switch (r.kind) {
 											case "A":
-												e(r[t], n.index, n.item);
+												e(t[s], r.index, r.item);
 												break;
 											case "D":
-												r = i(r, t);
+												t = d(t, s);
 												break;
 											case "E":
 											case "N":
-												r[t] = n.rhs
+												t[s] = r.rhs
 										}
-										return r
-									}(n.path ? o[n.path[a]] : o, n.index, n.item);
+										return t
+									}(r.path ? o[r.path[i]] : o, r.index, r.item);
 								break;
 							case "D":
-								delete o[n.path[a]];
+								delete o[r.path[i]];
 								break;
 							case "E":
 							case "N":
-								o[n.path[a]] = n.rhs
+								o[r.path[i]] = r.rhs
 						}
 					}
 				}
-				return t(o, n), t(a, n), t(l, n), t(s, n), Object.defineProperties(b, {
+				return s(o, r), s(i, r), s(n, r), s(a, r), Object.defineProperties(m, {
 					diff: {
-						value: b,
+						value: m,
 						enumerable: !0
 					},
 					orderIndependentDiff: {
-						value: function(e, r, t, n) {
-							var o = n ? function(e) {
-									e && n.push(e)
+						value: function(e, t, s, r) {
+							var o = r ? function(e) {
+									e && r.push(e)
 								} : void 0,
-								a = p(e, r, o, t, !0);
-							return n || (a.length ? a : void 0)
+								i = b(e, t, o, s, !0);
+							return r || (i.length ? i : void 0)
 						},
 						enumerable: !0
 					},
 					observableDiff: {
-						value: p,
+						value: b,
 						enumerable: !0
 					},
 					orderIndependentObservableDiff: {
-						value: function(e, r, t, n, o, a, l) {
-							return h(e, r, t, n, o, a, l, !0)
+						value: function(e, t, s, r, o, i, n) {
+							return p(e, t, s, r, o, i, n, !0)
 						},
 						enumerable: !0
 					},
@@ -770,60 +770,60 @@
 						enumerable: !0
 					},
 					applyDiff: {
-						value: function(e, r, t) {
-							e && r && p(e, r, (function(n) {
-								t && !t(e, r, n) || f(e, r, n)
+						value: function(e, t, s) {
+							e && t && b(e, t, (function(r) {
+								s && !s(e, t, r) || h(e, t, r)
 							}))
 						},
 						enumerable: !0
 					},
 					applyChange: {
-						value: f,
+						value: h,
 						enumerable: !0
 					},
 					revertChange: {
-						value: function(e, r, t) {
-							if (e && r && t && t.kind) {
-								var n, o, a = e;
-								for (o = t.path.length - 1, n = 0; n < o; n++) void 0 === a[t.path[n]] && (a[t.path[n]] = {}), a = a[t.path[n]];
-								switch (t.kind) {
+						value: function(e, t, s) {
+							if (e && t && s && s.kind) {
+								var r, o, i = e;
+								for (o = s.path.length - 1, r = 0; r < o; r++) void 0 === i[s.path[r]] && (i[s.path[r]] = {}), i = i[s.path[r]];
+								switch (s.kind) {
 									case "A":
-										! function e(r, t, n) {
-											if (n.path && n.path.length) {
-												var o, a = r[t],
-													l = n.path.length - 1;
-												for (o = 0; o < l; o++) a = a[n.path[o]];
-												switch (n.kind) {
+										! function e(t, s, r) {
+											if (r.path && r.path.length) {
+												var o, i = t[s],
+													n = r.path.length - 1;
+												for (o = 0; o < n; o++) i = i[r.path[o]];
+												switch (r.kind) {
 													case "A":
-														e(a[n.path[o]], n.index, n.item);
+														e(i[r.path[o]], r.index, r.item);
 														break;
 													case "D":
 													case "E":
-														a[n.path[o]] = n.lhs;
+														i[r.path[o]] = r.lhs;
 														break;
 													case "N":
-														delete a[n.path[o]]
+														delete i[r.path[o]]
 												}
-											} else switch (n.kind) {
+											} else switch (r.kind) {
 												case "A":
-													e(r[t], n.index, n.item);
+													e(t[s], r.index, r.item);
 													break;
 												case "D":
 												case "E":
-													r[t] = n.lhs;
+													t[s] = r.lhs;
 													break;
 												case "N":
-													r = i(r, t)
+													t = d(t, s)
 											}
-											return r
-										}(a[t.path[n]], t.index, t.item);
+											return t
+										}(i[s.path[r]], s.index, s.item);
 										break;
 									case "D":
 									case "E":
-										a[t.path[n]] = t.lhs;
+										i[s.path[r]] = s.lhs;
 										break;
 									case "N":
-										delete a[t.path[n]]
+										delete i[s.path[r]]
 								}
 							}
 						},
@@ -835,99 +835,2026 @@
 						},
 						enumerable: !0
 					}
-				}), b.DeepDiff = b, e && (e.DeepDiff = b), b
-			}(this), void 0 === (n = function() {
+				}), m.DeepDiff = m, e && (e.DeepDiff = m), m
+			}(this), void 0 === (r = function() {
 				return o
-			}.call(r, t, r, e)) || (e.exports = n)
+			}.call(t, s, t, e)) || (e.exports = r)
 		},
-		"./node_modules/lodash/findLastIndex.js": function(e, r, t) {
-			var n = t("./node_modules/lodash/_baseFindIndex.js"),
-				o = t("./node_modules/lodash/_baseIteratee.js"),
-				a = t("./node_modules/lodash/toInteger.js"),
-				l = Math.max,
-				s = Math.min;
-			e.exports = function(e, r, t) {
-				var i = null == e ? 0 : e.length;
-				if (!i) return -1;
-				var c = i - 1;
-				return void 0 !== t && (c = a(t), c = t < 0 ? l(i + c, 0) : s(c, i - 1)), n(e, o(r, 3), c, !0)
+		"./node_modules/lodash/findLastIndex.js": function(e, t, s) {
+			var r = s("./node_modules/lodash/_baseFindIndex.js"),
+				o = s("./node_modules/lodash/_baseIteratee.js"),
+				i = s("./node_modules/lodash/toInteger.js"),
+				n = Math.max,
+				a = Math.min;
+			e.exports = function(e, t, s) {
+				var d = null == e ? 0 : e.length;
+				if (!d) return -1;
+				var c = d - 1;
+				return void 0 !== s && (c = i(s), c = s < 0 ? n(d + c, 0) : a(c, d - 1)), r(e, o(t, 3), c, !0)
 			}
 		},
-		"./node_modules/lodash/uniqWith.js": function(e, r, t) {
-			var n = t("./node_modules/lodash/_baseUniq.js");
-			e.exports = function(e, r) {
-				return r = "function" == typeof r ? r : void 0, e && e.length ? n(e, void 0, r) : []
+		"./node_modules/lodash/uniqWith.js": function(e, t, s) {
+			var r = s("./node_modules/lodash/_baseUniq.js");
+			e.exports = function(e, t) {
+				return t = "function" == typeof t ? t : void 0, e && e.length ? r(e, void 0, t) : []
 			}
 		},
-		"./node_modules/lodash/xor.js": function(e, r, t) {
-			var n = t("./node_modules/lodash/_arrayFilter.js"),
-				o = t("./node_modules/lodash/_baseRest.js"),
-				a = t("./node_modules/lodash/_baseXor.js"),
-				l = t("./node_modules/lodash/isArrayLikeObject.js"),
-				s = o((function(e) {
-					return a(n(e, l))
+		"./node_modules/lodash/xor.js": function(e, t, s) {
+			var r = s("./node_modules/lodash/_arrayFilter.js"),
+				o = s("./node_modules/lodash/_baseRest.js"),
+				i = s("./node_modules/lodash/_baseXor.js"),
+				n = s("./node_modules/lodash/isArrayLikeObject.js"),
+				a = o((function(e) {
+					return i(r(e, n))
 				}));
-			e.exports = s
+			e.exports = a
 		},
-		"./node_modules/uuid/index.js": function(e, r, t) {
-			var n = t("./node_modules/uuid/v1.js"),
-				o = t("./node_modules/uuid/v4.js"),
-				a = o;
-			a.v1 = n, a.v4 = o, e.exports = a
+		"./node_modules/uuid/index.js": function(e, t, s) {
+			var r = s("./node_modules/uuid/v1.js"),
+				o = s("./node_modules/uuid/v4.js"),
+				i = o;
+			i.v1 = r, i.v4 = o, e.exports = i
 		},
-		"./node_modules/uuid/v1.js": function(e, r, t) {
-			var n, o, a = t("./node_modules/uuid/lib/rng-browser.js"),
-				l = t("./node_modules/uuid/lib/bytesToUuid.js"),
-				s = 0,
-				i = 0;
-			e.exports = function(e, r, t) {
-				var c = r && t || 0,
-					d = r || [],
-					u = (e = e || {}).node || n,
-					h = void 0 !== e.clockseq ? e.clockseq : o;
-				if (null == u || null == h) {
-					var p = a();
-					null == u && (u = n = [1 | p[0], p[1], p[2], p[3], p[4], p[5]]), null == h && (h = o = 16383 & (p[6] << 8 | p[7]))
+		"./node_modules/uuid/v1.js": function(e, t, s) {
+			var r, o, i = s("./node_modules/uuid/lib/rng-browser.js"),
+				n = s("./node_modules/uuid/lib/bytesToUuid.js"),
+				a = 0,
+				d = 0;
+			e.exports = function(e, t, s) {
+				var c = t && s || 0,
+					l = t || [],
+					u = (e = e || {}).node || r,
+					p = void 0 !== e.clockseq ? e.clockseq : o;
+				if (null == u || null == p) {
+					var b = i();
+					null == u && (u = r = [1 | b[0], b[1], b[2], b[3], b[4], b[5]]), null == p && (p = o = 16383 & (b[6] << 8 | b[7]))
 				}
-				var b = void 0 !== e.msecs ? e.msecs : (new Date).getTime(),
-					f = void 0 !== e.nsecs ? e.nsecs : i + 1,
-					v = b - s + (f - i) / 1e4;
-				if (v < 0 && void 0 === e.clockseq && (h = h + 1 & 16383), (v < 0 || b > s) && void 0 === e.nsecs && (f = 0), f >= 1e4) throw new Error("uuid.v1(): Can't create more than 10M uuids/sec");
-				s = b, i = f, o = h;
-				var g = (1e4 * (268435455 & (b += 122192928e5)) + f) % 4294967296;
-				d[c++] = g >>> 24 & 255, d[c++] = g >>> 16 & 255, d[c++] = g >>> 8 & 255, d[c++] = 255 & g;
-				var m = b / 4294967296 * 1e4 & 268435455;
-				d[c++] = m >>> 8 & 255, d[c++] = 255 & m, d[c++] = m >>> 24 & 15 | 16, d[c++] = m >>> 16 & 255, d[c++] = h >>> 8 | 128, d[c++] = 255 & h;
-				for (var y = 0; y < 6; ++y) d[c + y] = u[y];
-				return r || l(d)
+				var m = void 0 !== e.msecs ? e.msecs : (new Date).getTime(),
+					h = void 0 !== e.nsecs ? e.nsecs : d + 1,
+					f = m - a + (h - d) / 1e4;
+				if (f < 0 && void 0 === e.clockseq && (p = p + 1 & 16383), (f < 0 || m > a) && void 0 === e.nsecs && (h = 0), h >= 1e4) throw new Error("uuid.v1(): Can't create more than 10M uuids/sec");
+				a = m, d = h, o = p;
+				var g = (1e4 * (268435455 & (m += 122192928e5)) + h) % 4294967296;
+				l[c++] = g >>> 24 & 255, l[c++] = g >>> 16 & 255, l[c++] = g >>> 8 & 255, l[c++] = 255 & g;
+				var v = m / 4294967296 * 1e4 & 268435455;
+				l[c++] = v >>> 8 & 255, l[c++] = 255 & v, l[c++] = v >>> 24 & 15 | 16, l[c++] = v >>> 16 & 255, l[c++] = p >>> 8 | 128, l[c++] = 255 & p;
+				for (var y = 0; y < 6; ++y) l[c + y] = u[y];
+				return t || n(l)
 			}
 		},
-		"./src/reddit/components/BlankPost/index.tsx": function(e, r, t) {
+		"./src/lib/addAllowQuarantinedParam/index.ts": function(e, t, s) {
 			"use strict";
-			t.r(r), t.d(r, "BlankPost", (function() {
+			var r = s("./src/lib/addQueryParams/index.ts");
+			t.a = e => Object(r.a)(e, {
+				allow_quarantined: !0
+			})
+		},
+		"./src/lib/onFocusAndVisibilityChange/index.ts": function(e, t, s) {
+			"use strict";
+			s("./node_modules/core-js/modules/web.dom.iterable.js");
+			var r = s("./node_modules/brcast/dist/brcast.es.js");
+			const o = () => "undefined" != typeof document,
+				i = () => o() && "visible" === document.visibilityState,
+				n = () => ({
+					documentInFocus: i()
+				}),
+				{
+					subscribe: a,
+					unsubscribe: d,
+					setState: c
+				} = Object(r.a)(n()),
+				l = {
+					hidden: "visibilitychange",
+					webkitHidden: "webkitvisibilitychange",
+					mozHidden: "mozvisibilitychange",
+					msHidden: "msvisibilitychange"
+				},
+				u = () => c(n());
+			(() => {
+				const e = (() => {
+					if (!o()) return;
+					const e = Object.keys(l).find(e => e in document);
+					return e ? l[e] : void 0
+				})();
+				e && document.addEventListener(e, u)
+			})(), t.a = {
+				isDocumentHidden: () => !i(),
+				isDocumentVisible: i,
+				subscribe: a,
+				unsubscribe: d
+			}
+		},
+		"./src/reddit/actions/moderatingSubreddits.ts": function(e, t, s) {
+			"use strict";
+			s.d(t, "a", (function() {
+				return a
+			})), s.d(t, "b", (function() {
 				return d
 			}));
-			var n = t("./node_modules/react/index.js"),
-				o = t.n(n),
-				a = t("./src/reddit/components/AdViewability/index.tsx"),
-				l = t("./src/reddit/connectors/PostViewable/index.ts"),
-				s = t("./src/lib/classNames/index.ts"),
-				i = t("./src/reddit/contexts/Post/index.tsx");
-			const c = Object(l.a)(null),
-				d = e => {
+			var r = s("./src/lib/makeActionCreator/index.ts"),
+				o = s("./src/reddit/actions/profile/index.ts"),
+				i = (s("./src/reddit/endpoints/moderator/moderatingSubreddits.ts"), s("./src/reddit/models/User/index.ts")),
+				n = s("./src/reddit/selectors/user.ts");
+			const a = "MOD_PERMS__REQUEST_LOADED",
+				d = (Object(r.a)("MOD_PERMS__REQUEST_PENDING"), Object(r.a)(a), Object(r.a)("MOD_PERMS__REQUEST_FAILED"), () => async (e, t) => {
+					const s = Object(n.k)(t());
+					if (s) {
+						const t = Object(i.e)(s);
+						await e(Object(o.b)(t))
+					}
+				})
+		},
+		"./src/reddit/actions/pages/multireddit/constants.ts": function(e, t, s) {
+			"use strict";
+			s.d(t, "c", (function() {
+				return r
+			})), s.d(t, "b", (function() {
+				return o
+			})), s.d(t, "a", (function() {
+				return i
+			}));
+			const r = "PAGE__MULTIREDDIT_FEED_PENDING",
+				o = "PAGE__MULTIREDDIT_FEED_LOADED",
+				i = "PAGE__MULTIREDDIT_FEED_FAILED"
+		},
+		"./src/reddit/actions/pages/profilePosts.ts": function(e, t, s) {
+			"use strict";
+			s.r(t), s.d(t, "PROFILE_POSTS_PENDING", (function() {
+				return ee
+			})), s.d(t, "PROFILE_POSTS_LOADED", (function() {
+				return te
+			})), s.d(t, "PROFILE_POSTS_FAILED", (function() {
+				return se
+			})), s.d(t, "profilePostsPending", (function() {
+				return re
+			})), s.d(t, "profilePostsLoaded", (function() {
+				return oe
+			})), s.d(t, "profilePostsFailed", (function() {
+				return ie
+			})), s.d(t, "profilePostsRequested", (function() {
+				return ne
+			})), s.d(t, "MORE_POSTS_PENDING", (function() {
+				return ae
+			})), s.d(t, "MORE_POSTS_LOADED", (function() {
+				return de
+			})), s.d(t, "MORE_POSTS_FAILED", (function() {
+				return ce
+			})), s.d(t, "morePostsPending", (function() {
+				return le
+			})), s.d(t, "morePostsLoaded", (function() {
+				return ue
+			})), s.d(t, "morePostsFailed", (function() {
+				return pe
+			})), s.d(t, "morePostsRequested", (function() {
+				return be
+			}));
+			s("./node_modules/core-js/modules/web.dom.iterable.js");
+			var r = s("./node_modules/lodash/pick.js"),
+				o = s.n(r),
+				i = s("./src/lib/makeActionCreator/index.ts"),
+				n = s("./src/lib/makeListingKey/index.ts"),
+				a = s("./src/lib/safeGet/index.ts"),
+				d = s("./src/reddit/actions/contentGate.ts"),
+				c = s("./src/reddit/actions/externalAccount.ts"),
+				l = s("./src/reddit/actions/moderatingSubreddits.ts"),
+				u = s("./src/reddit/actions/pages/profileShared.ts"),
+				p = s("./src/reddit/actions/pinnedPost.ts"),
+				b = s("./src/reddit/actions/platform.ts"),
+				m = s("./src/reddit/actions/profile/index.ts"),
+				h = s("./src/reddit/actions/subreddit.ts"),
+				f = s("./src/reddit/constants/errors.ts"),
+				g = s("./src/reddit/constants/parameters.ts"),
+				v = s("./src/reddit/contexts/PageLayer/index.tsx"),
+				y = s("./src/lib/makeGqlRequest/index.ts"),
+				O = s("./src/redditGQL/operations/ProfileFeed.json");
+			const P = async (e, t) => await Object(y.a)(e, {
+				...O,
+				variables: t
+			}), _ = (e, t) => {
+				const {
+					username: s,
+					profileSort: r,
+					filter: o,
+					listingKey: i
+				} = t, n = {
+					username: s,
+					sort: r.toUpperCase(),
+					filter: o
+				}, d = Object(a.a)(e.listings.postOrder.loadMore, i);
+				if (d) {
+					const {
+						token: e
+					} = d;
+					n.after = btoa(e)
+				}
+				return n
+			};
+			var j = s("./src/config.ts"),
+				E = s("./src/lib/addAllowQuarantinedParam/index.ts"),
+				w = s("./src/lib/constants/index.ts"),
+				T = s("./src/lib/makeApiRequest/index.ts"),
+				C = s("./src/reddit/helpers/addRedesignIdentifier/index.ts"),
+				I = s("./src/reddit/models/RichTextJson/addRTJParam.ts");
+			const S = (e, t, s) => Object(T.a)(e, {
+				data: s,
+				endpoint: Object(C.a)(Object(E.a)(Object(I.a)(`${j.a.gatewayUrl}/desktopapi/v1/user/${t}/posts`))),
+				method: w.jb.GET
+			}).then(e => "pinned" in e.body ? e : "postIds" in e.body ? {
+				...e,
+				body: {
+					...e.body,
+					pinned: e.body.postIds.filter(t => e.body.posts[t] && e.body.posts[t].isPinned).reverse()
+				}
+			} : e);
+			var D = s("./src/reddit/helpers/getTimeSortForListing/index.ts"),
+				x = s("./src/reddit/helpers/graphql/normalizeFlairFromGql/index.ts"),
+				k = s("./src/reddit/helpers/graphql/normalizePostFlairFromGql/index.ts"),
+				A = s("./src/reddit/helpers/graphql/normalizePostFromGql/index.ts"),
+				R = s("./src/reddit/helpers/graphql/normalizeProfileFromGql/index.ts"),
+				N = s("./src/reddit/helpers/graphql/normalizeSubredditFromGql/index.ts"),
+				M = s("./src/reddit/models/Post/index.ts");
+			const F = (e, t) => {
+				if (!Object(M.l)(t) && !Object(M.n)(t)) return null;
+				if (e.posts[t.id]) return t.id;
+				const s = Object(A.f)(t),
+					{
+						id: r
+					} = s;
+				e.posts[r] = s;
+				const {
+					crosspostRoot: o
+				} = t;
+				o && o.type === M.a.Post && o.postInfo && F(e, o.postInfo), s.isStickied && e.pinned.push(r);
+				const {
+					authorFlair: i
+				} = t;
+				if (i) {
+					const t = s.belongsTo.id;
+					e.authorFlair[t] || (e.authorFlair[t] = {}), e.authorFlair[t][s.author] = Object(x.a)(i)[0]
+				}
+				if (Object(M.l)(t)) {
+					const {
+						profile: s
+					} = t;
+					e.profiles[s.id] || (e.profiles[s.id] = Object(R.a)(s))
+				} else if (Object(M.n)(t)) {
+					const {
+						subreddit: s
+					} = t;
+					e.subreddits[s.id] || (e.subreddits[s.id] = Object(N.a)(s)), e.postFlair[s.id] || (e.postFlair[s.id] = Object(k.a)(s))
+				}
+				return r
+			};
+			var L = s("./src/reddit/models/Comment/index.ts"),
+				V = e => {
+					var t;
+					const s = {
+							authorFlair: {},
+							pinned: new Array,
+							postIds: new Array,
+							posts: {},
+							postFlair: {},
+							profiles: {},
+							subreddits: {},
+							token: ""
+						},
+						r = null === (t = null == e ? void 0 : e.redditorInfoByName) || void 0 === t ? void 0 : t.elements;
+					if (!r) return s;
+					const {
+						edges: o
+					} = r;
+					for (const {
+							node: a
+						} of o) {
+						if (!a || a.__typename === L.d.Comment) continue;
+						const e = F(s, a);
+						e && s.postIds.push(e)
+					}
+					const {
+						postIds: i
+					} = s, n = i.length - 1;
+					return n >= 0 && (s.token = i[n]), s
+				},
+				U = s("./node_modules/@sentry/minimal/esm/index.js"),
+				G = s("./node_modules/deep-diff/index.js"),
+				q = s("./src/lib/env/index.ts");
+			const B = new Set(["authorFlair.cssClass", "posts.adSupplementaryText", "posts.allAwardings", "posts.approvedAtUTC", "posts.approvedBy", "posts.attributionInfo", "posts.audioRoom", "posts.bannedAtUTC", "posts.bannedBy", "posts.collapsedBecauseCrowdControl", "posts.ignoreReports", "posts.isApproved", "posts.isAuthorPremium", "posts.isEligibleForLinkedPosts", "posts.isEligibleForQASchema", "posts.isFollowed", "posts.isPinned", "posts.isReactAllowed", "posts.isRemoved", "posts.isSpam", "posts.lastAuthorModNote", "posts.modQueueTriggers", "posts.modReportsDismissed", "posts.pollData", "posts.predictionTournament", "posts.previewComments", "posts.modReports", "posts.numReports", "posts.reactedFrom", "posts.removedBy", "posts.removedByCategory", "posts.topAwardedType", "posts.userReports", "posts.userReportsDismissed", "posts.modReasonBy", "subreddits.answerableQuestions", "subreddits.freeFormReports", "subreddits.isSubscribed", "authorFlair.richtext", "authorFlair.text", "posts.collectionIds", "posts.liveCommentsWebsocket", "posts.thumbnail.url", "posts.discussionType", "posts.eventsOnRender", "posts.flair", "posts.gildings", "posts.media", "posts.goldCount", "posts.sendReplies", "posts.score", "posts.sendReplies", "posts.source.url", "posts.source.outboundUrl", "posts.source.outboundUrlCreated", "posts.source.outboundUrlExpiration", "profiles.acceptFollowers", "profiles.communityIcon", "profiles.icon.url", "posts.upvoteRatio", "subreddits.acceptFollowers", "subreddits.allowChatPostCreation", "subreddits.communityIcon", "subreddits.icon.url", "subreddits.isChatPostFeatureEnabled", "subreddits.primaryColor", "subreddits.subscribers"]),
+				z = (e, t) => {
+					const s = {},
+						r = {};
+					Object.keys(e).forEach(o => {
+						const i = e[o] || {},
+							n = t[o] || {};
+						s[o] = {}, r[o] = 0, Object.keys(i).forEach(e => {
+							const t = i[e],
+								a = n[e],
+								d = Object(G.diff)(t, a, {
+									prefilter: (e, t) => B.has(`${o}.${e.length?`${e.join(".")}.`:""}${t}`) || B.has(`${o}.${t}`),
+									normalize: (e, t, s, r) => s || r ? [s, r] : [s, s]
+								});
+							r[o] = d ? r[o] + d.length : (null == r ? void 0 : r[o]) || 0, d && (s[o][e] = {
+								gatewayThing: t,
+								gqlThing: a,
+								diffResult: d
+							})
+						})
+					});
+					const o = Object.keys(r).reduce((e, t) => e += r[t], 0);
+					return {
+						allDiffs: s,
+						issueCounts: r,
+						totalIssues: o
+					}
+				};
+
+			function $(e) {
+				let {
+					gatewayResponse: t,
+					normalizedGqlResponse: s,
+					rawGqlResponse: r
+				} = e;
+				if (Object(q.a)()) {
+					console.group("GQL Profiles Shadowtest"), console.groupCollapsed("raw gql response"), console.log(r), console.groupEnd(), console.groupCollapsed("normalized gql response"), console.log(s), console.groupEnd(), console.groupCollapsed("gateway response"), console.log(t), console.groupEnd();
+					const {
+						allDiffs: e,
+						issueCounts: o,
+						totalIssues: i
+					} = z(t, s);
+					console.groupCollapsed(`diff: ${i} issues`), console.log("lhs = gateway\nrhs = gql");
+					for (const t in e) {
+						if (console.groupCollapsed(`${t}: ${o[t]} issues`), o[t] > 0)
+							for (const s in e[t]) {
+								const r = e[t][s].diffResult;
+								console.groupCollapsed(`${s}: ${r.length||0} issues`), console.log(r), console.log({
+									gql: e[t][s].gqlThing,
+									gateway: e[t][s].gatewayThing
+								}), console.groupEnd()
+							}
+						console.groupEnd()
+					}
+					console.groupEnd()
+				}
+				if (Object(q.b)()) {
+					const {
+						allDiffs: e,
+						issueCounts: r,
+						totalIssues: o
+					} = z(t, s);
+					if (o <= 0) return;
+					U.l(t => {
+						t.setExtra("info", {
+							allDiffs: e,
+							issueCounts: r,
+							totalIssues: o
+						}), t.setExtra("bypassSampling", !0), U.d("GQL Profiles Shadowtest Diff")
+					})
+				}
+			}
+			var H = s("./src/reddit/helpers/post/index.ts"),
+				W = s("./src/reddit/helpers/timeApiRoute/index.ts"),
+				Q = s("./src/reddit/constants/experiments.ts"),
+				K = s("./src/reddit/helpers/chooseVariant/index.ts");
+			const X = e => {
+				return Object(K.c)(e, {
+					experimentEligibilitySelector: K.a,
+					experimentName: Q.vc
+				}) === Q.Jd
+			};
+			var J = s("./src/reddit/selectors/listings.ts"),
+				Y = s("./src/reddit/selectors/profile.ts"),
+				Z = s("./src/redditGQL/types.ts");
+			const ee = "PAGE__PROFILE_POSTS_PENDING",
+				te = "PAGE__PROFILE_POSTS_LOADED",
+				se = "PAGE__PROFILE_POSTS_FAILED",
+				re = Object(i.a)(ee),
+				oe = Object(i.a)(te),
+				ie = Object(i.a)(se),
+				ne = e => async (t, s, r) => {
+					const {
+						queryParams: i,
+						params: y
+					} = e, {
+						sort: O,
+						t: j
+					} = Object(u.b)(i), {
+						profileName: E
+					} = y, w = Object(n.a)(`u_${E}`, O, i), T = s(), C = Object(a.a)(T.listings.postOrder.ids, w), I = Object(J.c)(T, {
+						listingKey: w
+					}), x = Object(J.d)(T, {
+						listingKey: w
+					});
+					if (await t(m.d(E)), x || C && !I) {
+						if (C) {
+							const e = Object(Y.r)(s(), {
+								profileName: E
+							});
+							t(b.m({
+								title: e
+							}))
+						}
+						return
+					}
+					const k = {
+						...o()(e.queryParams, [...g.k, ...g.j, g.g]),
+						layout: Object(v.S)(T, {}).toLowerCase(),
+						sort: O,
+						t: Object(D.a)(O, j)
+					};
+					t(re({
+						key: w
+					}));
+					const A = await Object(W.a)("profilePosts", () => S(r.apiContext(), E, k));
+					if (!A.ok) return t(ie({
+						account: A.body.data ? A.body.data.account : null,
+						error: A.body.reason ? {
+							type: A.body.reason
+						} : A.error,
+						key: w
+					})), A.body.reason === f.a.DeletedProfile && t(Object(d.s)({
+						profileName: E
+					})), void t(b.n(A.status));
+					const R = A.body;
+					if (await Object(H.a)(r.gqlContext, R.posts).then(e => R.posts = e), X(T)) {
+						const e = _(T, {
+								username: E,
+								profileSort: O,
+								filter: Z.C.Posts,
+								listingKey: w
+							}),
+							t = await P(r.gqlContext(), e);
+						if (t.ok && t.body) {
+							const {
+								data: e
+							} = t.body, s = V(e);
+							$({
+								gatewayResponse: {
+									authorFlair: R.authorFlair,
+									pinned: R.pinned,
+									postIds: R.postIds,
+									posts: R.posts,
+									postFlair: R.postFlair,
+									profiles: R.profiles,
+									subreddits: R.subreddits,
+									token: R.token
+								},
+								normalizedGqlResponse: s,
+								rawGqlResponse: e
+							})
+						}
+					}
+					t(oe({
+						key: w,
+						meta: s().meta,
+						...R
+					}));
+					const N = Object(Y.n)(s(), E),
+						{
+							pinned: M
+						} = R;
+					t(Object(p.h)({
+						profileId: N,
+						pinned: M
+					})), await Promise.all([t(Object(u.c)(E)), t(Object(h.q)()), t(Object(l.b)()), t(c.o(E))])
+				}, ae = "PROFILE_POSTS__MORE_POSTS_PENDING", de = "PROFILE_POSTS__MORE_POSTS_LOADED", ce = "PROFILE_POSTS__MORE_POSTS_FAILED", le = Object(i.a)(ae), ue = Object(i.a)(de), pe = Object(i.a)(ce), be = () => async (e, t, s) => {
 					let {
-						className: r,
-						post: t
+						apiContext: r,
+						gqlContext: i
+					} = s;
+					const a = t(),
+						{
+							currentPage: d
+						} = a.platform;
+					if (!d || !d.routeMatch) return;
+					const {
+						queryParams: c,
+						params: l
+					} = d.routeMatch.match, {
+						sort: p,
+						t: b
+					} = Object(u.b)(c), {
+						profileName: m
+					} = l, h = Object(n.a)(`u_${m}`, p, c), f = Object(J.g)(a, {
+						listingKey: h
+					});
+					if (!f) return;
+					const y = Object(J.d)(a, {
+							listingKey: h
+						}),
+						O = Object(J.e)(a, {
+							listingKey: h,
+							token: f.token
+						});
+					if (y || O) return;
+					e(le({
+						key: h,
+						fetchedToken: f.token
+					}));
+					const j = {
+							after: f.token,
+							dist: f.dist,
+							sort: p,
+							t: b,
+							...o()(c, g.k),
+							layout: Object(v.S)(a, {}).toLowerCase()
+						},
+						E = await S(r(), m, j),
+						w = E.body,
+						T = a.listings.postOrder.ids[h],
+						C = w.postIds || [];
+					await Object(H.a)(i, w.posts).then(e => w.posts = e);
+					const I = {
+						...w,
+						postIds: C.filter(e => !T || !T.includes(e))
+					};
+					if (E.ok) {
+						if (X(a)) {
+							const e = _(a, {
+									username: m,
+									profileSort: p,
+									filter: Z.C.Posts,
+									listingKey: h
+								}),
+								t = await P(i(), e);
+							if (t.ok && t.body) {
+								const {
+									data: e
+								} = t.body, s = V(e);
+								$({
+									gatewayResponse: {
+										authorFlair: I.authorFlair,
+										pinned: I.pinned,
+										postIds: I.postIds,
+										posts: I.posts,
+										postFlair: I.postFlair,
+										profiles: I.profiles,
+										subreddits: I.subreddits,
+										token: I.token
+									},
+									normalizedGqlResponse: s,
+									rawGqlResponse: e
+								})
+							}
+						}
+						e(ue({
+							fetchedToken: f.token,
+							key: h,
+							meta: a.meta,
+							...I
+						})), await e(Object(u.c)(m))
+					} else e(pe({
+						account: E.body.data ? E.body.data.account : null,
+						error: E.error,
+						fetchedToken: f.token,
+						key: h
+					}))
+				}
+		},
+		"./src/reddit/actions/pinnedPost.ts": function(e, t, s) {
+			"use strict";
+			s.d(t, "a", (function() {
+				return m
+			})), s.d(t, "h", (function() {
+				return h
+			})), s.d(t, "d", (function() {
+				return f
+			})), s.d(t, "g", (function() {
+				return g
+			})), s.d(t, "c", (function() {
+				return O
+			})), s.d(t, "f", (function() {
+				return P
+			})), s.d(t, "b", (function() {
+				return E
+			})), s.d(t, "e", (function() {
+				return w
+			})), s.d(t, "i", (function() {
+				return A
+			}));
+			var r = s("./node_modules/fbt/lib/FbtPublic.js"),
+				o = s("./src/lib/constants/index.ts"),
+				i = s("./src/lib/makeActionCreator/index.ts"),
+				n = s("./src/reddit/actions/modal.ts"),
+				a = s("./src/reddit/actions/toaster.ts"),
+				d = s("./src/reddit/constants/modals.ts"),
+				c = s("./src/reddit/endpoints/post/index.tsx"),
+				l = s("./src/reddit/models/Toast/index.ts"),
+				u = s("./src/reddit/selectors/experiments/cnc/index.ts"),
+				p = s("./src/reddit/selectors/posts.ts"),
+				b = s("./src/reddit/selectors/profile.ts");
+			const m = "PINNEDPOST__PINNED_POSTS_LOADED",
+				h = Object(i.a)(m),
+				f = "PINNEDPOST__PIN_POST_SUCCESS",
+				g = "PINNEDPOST__UNPIN_POST_SUCCESS",
+				v = Object(i.a)(f),
+				y = Object(i.a)(g),
+				O = "PINNEDPOST__PIN_POST_PENDING",
+				P = "PINNEDPOST__UNPIN_POST_PENDING",
+				_ = Object(i.a)(O),
+				j = Object(i.a)(P),
+				E = "PINNEDPOST__PIN_POST_FAILURE",
+				w = "PINNEDPOST__UNPIN_POST_FAILURE",
+				T = Object(i.a)(E),
+				C = Object(i.a)(w),
+				I = e => Object(a.f)({
+					buttonAction: A(e, !0),
+					buttonText: r.fbt._("UNDO", null, {
+						hk: "1O9LWh"
+					}),
+					kind: l.b.SuccessMod,
+					text: r.fbt._("Post pinned to profile!", null, {
+						hk: "1hbHLt"
+					})
+				}),
+				S = (e, t) => Object(a.f)({
+					buttonAction: A(e, !0),
+					buttonText: r.fbt._("UNDO", null, {
+						hk: "3YtcK2"
+					}),
+					kind: l.b.SuccessMod,
+					text: t ? r.fbt._("Post unpinned, reload to see changes", null, {
+						hk: "5FF1g"
+					}) : r.fbt._("Post unpinned.", null, {
+						hk: "2BgT0h"
+					})
+				}),
+				D = () => Object(a.f)({
+					kind: l.b.Error,
+					text: r.fbt._("Could not pin post", null, {
+						hk: "3uNHEh"
+					})
+				}),
+				x = () => Object(a.f)({
+					kind: l.b.Error,
+					text: r.fbt._("You can't pin a removed post", null, {
+						hk: "3bdn2y"
+					})
+				}),
+				k = () => Object(a.f)({
+					kind: l.b.Error,
+					text: r.fbt._("Could not unpin post", null, {
+						hk: "o8HG0"
+					})
+				}),
+				A = function(e) {
+					let t = arguments.length > 1 && void 0 !== arguments[1] && arguments[1];
+					return async (s, r, i) => {
+						let {
+							apiContext: a,
+							gqlContext: l
+						} = i;
+						const m = r(),
+							h = m.posts.models[e];
+						if (!h) return;
+						const f = !Object(p.s)(m, {
+							postId: e
+						});
+						if (f && h.isRemoved) return s(x());
+						const g = h.author,
+							O = Object(b.n)(m, g),
+							[P, E, w, A, R] = f ? [_, v, T, I, D] : [j, y, C, S, k];
+						if (f) {
+							if (Object(p.P)(m, {
+									profileName: g
+								}).length >= o.cb) return void s(Object(n.i)(d.a.PINNED_POSTS_LIMIT_REACHED))
+						}
+						const N = Object(p.p)(m, e, g),
+							M = !f && N;
+						s(P({
+							postId: e,
+							profileId: O
+						})), (Object(u.c)(m) ? await Object(c.j)(l(), e, f, !0) : await Object(c.v)(a(), e, f, !0)).ok ? (s(E({
+							postId: e,
+							profileId: O
+						})), t || s(A(e, M))) : (s(w({
+							postId: e,
+							profileId: O
+						})), s(R()))
+					}
+				}
+		},
+		"./src/reddit/actions/postCreation/subredditChange.ts": function(e, t, s) {
+			"use strict";
+			s.d(t, "e", (function() {
+				return _
+			})), s.d(t, "b", (function() {
+				return j
+			})), s.d(t, "a", (function() {
+				return E
+			})), s.d(t, "d", (function() {
+				return w
+			})), s.d(t, "c", (function() {
+				return T
+			}));
+			var r = s("./node_modules/react-router-redux/es/index.js"),
+				o = s("./src/lib/addQueryParams/index.ts"),
+				i = s("./src/lib/constants/index.ts"),
+				n = s("./src/lib/filterQueryParams/index.ts"),
+				a = s("./src/lib/makeActionCreator/index.ts"),
+				d = s("./src/reddit/actions/modal.ts"),
+				c = s("./src/reddit/actions/pages/postCreation.ts"),
+				l = s("./src/reddit/contexts/PageLayer/selectors.ts"),
+				u = s("./src/reddit/helpers/name/index.ts"),
+				p = s("./src/reddit/models/PostCreationForm/index.ts"),
+				b = s("./src/reddit/routes/postCreation/index.ts"),
+				m = s("./src/reddit/routes/postCreation/constants.ts"),
+				h = s("./src/reddit/selectors/postCreations.ts"),
+				f = s("./src/reddit/selectors/platform.ts"),
+				g = s("./src/reddit/selectors/subreddit.ts"),
+				v = s("./src/reddit/actions/postCreation/constants.ts"),
+				y = s("./src/reddit/actions/postCreation/general.ts");
+			const O = Object(a.a)(v.N),
+				P = Object(a.a)(v.O),
+				_ = Object(a.a)(v.M),
+				j = (e, t) => async (s, r, o) => {
+					let {
+						apiContext: n
+					} = o, a = r();
+					const {
+						name: b,
+						isProfile: m
+					} = e, v = Object(f.e)(a), y = v && !m && Object(u.a)(v.name, b), P = a.creations.api.subreddit.change.pending;
+					if (y || P) return;
+					const _ = Object(l.w)(t);
+					if (!b) return void s(E(e, _));
+					s(O(e));
+					const j = m ? {
+						profileName: b
+					} : {
+						subredditName: b
+					};
+					if (await s(Object(c.postCreationPageDataRequested)(j)), m || !Object(h.C)(a)) return s(E(e, _));
+					const w = e.allowedPostTypes || Object(g.z)(r(), {
+						subredditName: b
+					});
+					if (!w) return void s(E(e, _));
+					let T;
+					a = r();
+					const C = Object(h.mb)(a),
+						I = Object(h.C)(a);
+					if (C === i.Wb.MEDIA && I) {
+						const e = Object(h.W)(a),
+							t = Object(p.x)(e),
+							s = Object(h.N)(a) && e.items.length > 1,
+							r = !t && !s;
+						if (s && !w.galleries) T = p.q.GalleryWillBeRemovedGalleryNotAllowed;
+						else if (r && !w.images) T = p.q.ImageWillBeRemoved;
+						else if (t && !w.videos) {
+							const t = a.uploads[e.items[0].uploadKey],
+								s = t && t.metadata.videoDuration || 0;
+							w.images ? s > i.gb && (T = p.q.VideoWillBeRemovedTooLongForGif) : T = p.q.VideoWillBeRemovedMediaNotAllowed
+						}
+					}
+					s(T ? Object(d.i)(T) : E({
+						...e,
+						allowedPostTypes: w
+					}, _))
+				}, E = function(e, t) {
+					let s = !(arguments.length > 2 && void 0 !== arguments[2]) || arguments[2];
+					return async (i, n) => {
+						const {
+							name: a,
+							isProfile: d
+						} = e, c = n().platform.currentPage, l = c.queryParams, u = d ? b.b : b.c;
+						let p = "";
+						p = a ? u(a) : m.b, p = Object(o.a)(p, {
+							...l,
+							draft: t || l.draft
+						}), (t || c.url.toLowerCase() !== p.toLowerCase()) && (i(P(e)), s && i(Object(y.t)(!0)), i(Object(y.i)()), i(Object(r.c)(p)))
+					}
+				}, w = e => async (t, s) => {
+					const i = s().platform.currentPage,
+						n = i.queryParams,
+						a = Object(o.a)(i.url, {
+							...n,
+							collection: e
+						});
+					t(Object(r.c)(a))
+				}, T = () => async (e, t) => {
+					const s = t().platform.currentPage,
+						o = Object(n.a)(s.url, ["collection"]);
+					e(Object(r.c)(o))
+				}
+		},
+		"./src/reddit/actions/postDraft.ts": function(e, t, s) {
+			"use strict";
+			s.d(t, "f", (function() {
+				return D
+			})), s.d(t, "e", (function() {
+				return x
+			})), s.d(t, "d", (function() {
+				return k
+			})), s.d(t, "p", (function() {
+				return M
+			})), s.d(t, "j", (function() {
+				return F
+			})), s.d(t, "l", (function() {
+				return L
+			})), s.d(t, "i", (function() {
+				return V
+			})), s.d(t, "m", (function() {
+				return U
+			})), s.d(t, "k", (function() {
+				return G
+			})), s.d(t, "h", (function() {
+				return q
+			})), s.d(t, "n", (function() {
+				return B
+			})), s.d(t, "s", (function() {
+				return X
+			})), s.d(t, "r", (function() {
+				return J
+			})), s.d(t, "g", (function() {
+				return Y
+			})), s.d(t, "q", (function() {
+				return ee
+			})), s.d(t, "c", (function() {
+				return te
+			})), s.d(t, "a", (function() {
+				return se
+			})), s.d(t, "b", (function() {
+				return re
+			})), s.d(t, "o", (function() {
+				return ae
+			}));
+			var r = s("./src/lib/constants/index.ts"),
+				o = s("./src/lib/formatApiError/index.ts"),
+				i = s("./src/lib/makeActionCreator/index.ts"),
+				n = s("./src/reddit/actions/postCreation/general.ts"),
+				a = s("./src/reddit/actions/postCreation/subredditChange.ts"),
+				d = s("./src/reddit/actions/toaster.ts"),
+				c = s("./src/reddit/contexts/PageLayer/selectors.ts"),
+				l = s("./src/lib/makeApiRequest/index.ts"),
+				u = s("./src/lib/omitHeaders/index.ts"),
+				p = s("./src/reddit/models/StructuredStyles/index.ts");
+			var b = s("./src/reddit/constants/headers.ts"),
+				m = s("./src/reddit/helpers/name/index.ts"),
+				h = s("./src/reddit/models/PostDraft/index.ts"),
+				f = s("./src/reddit/helpers/r2/normalizeProfileSubredditFromR2/index.ts"),
+				g = s("./src/reddit/helpers/r2/normalizeSubredditFromR2/index.ts"),
+				v = s("./src/reddit/models/Subreddit/index.ts");
+			const y = e => {
+				let t = e.drafts.reduce((e, t) => {
+					const s = (e => {
+						let t;
+						return t = "link" === e.kind ? {
+							kind: h.b.Link,
+							body: e.body || void 0
+						} : "markdown" === e.kind ? {
+							kind: h.b.Markdown,
+							body: e.body || void 0
+						} : {
+							kind: h.b.RichText,
+							body: e.body || void 0
+						}, {
+							subredditId: e.subreddit || void 0,
+							contentCategory: e.content_category || void 0,
+							created: e.created,
+							flair: e.flair,
+							id: e.id,
+							isChatPost: !!e.discussion_type,
+							isNSFW: !!e.nsfw,
+							isOriginalContent: !!e.original_content,
+							isSpoiler: !!e.spoiler,
+							modified: e.modified || void 0,
+							sendReplies: !!e.send_replies,
+							isPublicLink: !!e.is_public_link,
+							title: e.title || "",
+							...t
+						}
+					})(t);
+					return e.postDraftIds.push(s.id), e.postDrafts[s.id] = s, e
+				}, {
+					postDraftIds: [],
+					postDrafts: {},
+					profiles: {},
+					subreddits: {}
+				});
+				return t = e.subreddits.reduce((e, t) => {
+					if (t.subreddit_type === v.f.User) {
+						const s = Object(f.a)(t, Object(m.h)(t.display_name_prefixed));
+						e.profiles[s.id] = s
+					} else {
+						const s = Object(g.a)(t);
+						e.subreddits[s.id] = s
+					}
+					return e
+				}, t)
+			};
+			var O = s("./src/reddit/endpoints/post/draft/helpers.ts"),
+				P = s("./src/reddit/models/PostCreationForm/index.ts"),
+				_ = s("./src/reddit/helpers/trackers/postComposer.ts"),
+				j = s("./src/reddit/models/Toast/index.ts"),
+				E = s("./src/reddit/models/User/index.ts"),
+				w = s("./src/reddit/selectors/postCreations.ts"),
+				T = s("./src/reddit/selectors/postDraft.ts"),
+				C = s("./src/reddit/selectors/profile.ts"),
+				I = s("./src/reddit/selectors/subreddit.ts"),
+				S = s("./src/reddit/selectors/user.ts");
+			const D = "POST_DRAFT__LIST_PENDING",
+				x = "POST_DRAFT__LIST_LOADED",
+				k = "POST_DRAFT__LIST_FAILED",
+				A = Object(i.a)(D),
+				R = Object(i.a)(x),
+				N = Object(i.a)(k),
+				M = () => async (e, t, s) => {
+					let {
+						apiContext: o
+					} = s;
+					const i = t();
+					if (!Object(S.k)(i) || Object(T.b)(i)) return;
+					e(A());
+					const n = await (e => Object(l.a)(Object(u.a)(e, [b.a]), {
+						endpoint: `${e.apiUrl}/api/v1/drafts.json`,
+						method: r.jb.GET
+					}))(o());
+					n.ok ? e(R(y(n.body))) : e(N(n.error))
+				}, F = "POST_DRAFT__SAVE_DRAFT_PENDING", L = "POST_DRAFT__SAVE_DRAFT_SUCCEEDED", V = "POST_DRAFT__SAVE_DRAFT_FAILED", U = "POST_DRAFT__SAVE_DRAFT_VALIDATION_FAILED", G = "POST_DRAFT__SAVE_DRAFT_SUBMIT_VALIDATION_FAILED", q = "POST_DRAFT__SAVE_DRAFT_CAPTCHA_REQUIRED", B = "POST_CREATION__TOGGLE_DRAFT_IS_PUBLIC", z = Object(i.a)(F), $ = Object(i.a)(L), H = Object(i.a)(V), W = Object(i.a)(U), Q = Object(i.a)(G), K = Object(i.a)(q), X = Object(i.a)(B), J = e => async (t, s, i) => {
+					let {
+						apiContext: n
+					} = i;
+					const c = s(),
+						p = Object(T.g)(c),
+						m = Object(w.bb)(c);
+					if (p || m) return;
+					const h = Object(T.h)(c, e);
+					if (!h) return;
+					t(z(h)), _.g(c, h);
+					const f = await ((e, t, s) => Object(l.a)(Object(u.a)(e, [b.a]), {
+						endpoint: `${e.apiUrl}/api/v1/draft`,
+						method: s ? r.jb.PUT : r.jb.POST,
+						data: Object(O.a)(t)
+					}).then(e => e.body.fields && Object(P.w)(e.body.fields[0]) ? {
+						...e,
+						body: {},
+						error: {
+							type: r.I.SUBMIT_VALIDATION_ERROR,
+							fields: [{
+								field: e.body.fields[0],
+								msg: e.body.explanation
+							}]
+						}
+					} : e))(n(), h, e);
+					if (f.ok) {
+						const {
+							id: s,
+							draftsCount: r
+						} = Object(O.c)(f.body);
+						t($({
+							draftId: s,
+							draftsCount: r
+						})), e || t(Object(a.a)(h.destSubreddit, s, !1))
+					} else {
+						const e = f.error;
+						e.type === r.I.BAD_CAPTCHA_ERROR ? t(K()) : e.type === r.I.VALIDATION_ERROR ? t(W(e)) : e.type === r.I.SUBMIT_VALIDATION_ERROR ? t(Q(e)) : t(H(e)), t(Object(d.f)({
+							duration: d.a,
+							kind: j.b.Error,
+							text: Object(o.a)(e)
+						}))
+					}
+				}, Y = "POST_DRAFT__LOAD_DRAFT", Z = Object(i.a)(Y), ee = e => async (t, s, r) => {
+					let {
+						apiContext: o
+					} = r;
+					t(Z(e));
+					let i = P.f;
+					const n = s();
+					if (e.subredditId) {
+						const t = Object(I.V)(n, {
+								subredditId: e.subredditId
+							}),
+							s = Object(C.q)(n, {
+								profileId: e.subredditId
+							}),
+							r = Object(S.k)(n);
+						t ? i = {
+							isProfile: !1,
+							name: t.name
+						} : s && r && (i = {
+							isProfile: !0,
+							name: Object(E.e)(r)
+						})
+					}
+					await t(Object(a.a)(i, e.id, !1));
+					const d = Object(T.h)(s(), e.id);
+					d && _.j(s(), d)
+				}, te = "POST_DELETE_DRAFT_SUCCEEDED", se = "POST_DELETE_DRAFT_FAILED", re = "POST_DELETE_DRAFT_PENDING", oe = Object(i.a)(te), ie = Object(i.a)(se), ne = Object(i.a)(re), ae = (e, t) => async (s, i, a) => {
+					let {
+						apiContext: b
+					} = a;
+					const m = i();
+					if (Object(T.a)(m, e)) return;
+					const h = Object(T.d)(m, {
+						draftId: e
+					});
+					h && _.h(m, h), s(ne({
+						draftId: e
+					}));
+					const f = await (async (e, t) => Object(l.a)(Object(u.a)(e, [p.g]), {
+						endpoint: `${e.apiUrl}/api/v1/draft?draft_id=${t}`,
+						method: r.jb.DELETE
+					}))(b(), e);
+					if (f.ok) {
+						const {
+							draftsCount: r
+						} = Object(O.c)(f.body);
+						s(oe({
+							draftId: e,
+							draftsCount: r
+						}));
+						const o = Object(c.w)(t);
+						e === o && s(Object(n.q)(!0, t))
+					} else {
+						const t = f.error;
+						s(ie({
+							draftId: e,
+							apiError: t
+						})), s(Object(d.f)({
+							duration: d.a,
+							kind: j.b.Error,
+							text: Object(o.a)(t)
+						}))
+					}
+				}
+		},
+		"./src/reddit/actions/redditEmbed.ts": function(e, t, s) {
+			"use strict";
+			s.d(t, "b", (function() {
+				return c
+			})), s.d(t, "a", (function() {
+				return l
+			})), s.d(t, "c", (function() {
+				return m
+			}));
+			var r = s("./src/lib/constants/index.ts"),
+				o = s("./src/lib/makeActionCreator/index.ts"),
+				i = s("./src/reddit/actions/tabBadging.ts"),
+				n = s("./src/reddit/endpoints/me/index.ts"),
+				a = s("./src/reddit/helpers/pageActionLoginRedirect.ts"),
+				d = s("./src/reddit/helpers/trackers/screenview.ts");
+			const c = "REDDIT_EMBED_LOADED",
+				l = "REDDIT_EMBED_FAILED",
+				u = Object(o.a)("REDDIT_EMBED_PENDING"),
+				p = Object(o.a)(c),
+				b = Object(o.a)(l),
+				m = (e, t) => async (e, s, r) => {
+					let {
+						apiContext: o
+					} = r;
+					const d = s();
+					e(u());
+					const c = await Object(n.a)(o());
+					c.ok && c.body ? !t || c.body.account ? (e(p(c.body)), e(Object(i.d)()), h(d)) : Object(a.a)(e, d) : e(b(c.error))
+				}, h = e => {
+					e.platform.currentPage && e.platform.currentPage.routeMatch && e.platform.currentPage.routeMatch.route && e.platform.currentPage.routeMatch.route.meta && e.platform.currentPage.routeMatch.route.meta.name && e.platform.currentPage.routeMatch.route.meta.name === r.Nb.INBOX_PAGES && Object(d.g)(e)
+				}
+		},
+		"./src/reddit/components/AdViewability/index.tsx": function(e, t, s) {
+			"use strict";
+			var r = s("./node_modules/lodash/isEqual.js"),
+				o = s.n(r),
+				i = s("./node_modules/react/index.js"),
+				n = s.n(i),
+				a = s("./node_modules/reselect/es/index.js"),
+				d = s("./node_modules/@researchgate/react-intersection-observer/lib/es/index.js"),
+				c = s("./src/lib/ads/index.ts"),
+				l = s("./src/lib/ads/store.ts"),
+				u = s("./src/lib/onFocusAndVisibilityChange/index.ts"),
+				p = s("./src/reddit/connectors/PostViewable/index.ts"),
+				b = s("./src/reddit/constants/adEvents.ts"),
+				m = s("./src/reddit/models/Media/index.ts"),
+				h = s("./src/reddit/selectors/media.ts"),
+				f = s("./src/reddit/selectors/video.ts");
+			const g = [{
+					event: b.a.ViewableImpression,
+					threshold: c.l,
+					viewabilityMinimum: c.m
+				}, {
+					event: b.a.Impression,
+					threshold: c.c,
+					viewabilityMinimum: c.d
+				}, {
+					event: b.a.GalleryItemImpression,
+					threshold: c.c,
+					viewabilityMinimum: c.d
+				}, {
+					event: b.a.VendorFullyInView,
+					threshold: c.b,
+					viewabilityMinimum: c.f
+				}, {
+					event: b.a.GroupMViewable,
+					threshold: c.b,
+					viewabilityMinimum: c.m
+				}, {
+					event: b.a.VendorFullyInViewSeconds5,
+					threshold: c.l,
+					viewabilityMinimum: c.h,
+					remainingTime: c.h,
+					timeViewingInterrupted: 0,
+					cumulative: !0,
+					cumulativeElapsedTime: 0
+				}, {
+					event: b.a.VendorFullyInViewSeconds15,
+					threshold: c.l,
+					viewabilityMinimum: c.g,
+					remainingTime: c.g,
+					timeViewingInterrupted: 0,
+					cumulative: !0,
+					cumulativeElapsedTime: 0
+				}],
+				v = [{
+					event: b.a.VideoViewableImpression,
+					threshold: c.l,
+					viewabilityMinimum: c.k,
+					remainingTime: c.k,
+					timeViewingInterrupted: 0
+				}, {
+					event: b.a.VideoFullyViewableImpression,
+					threshold: c.a,
+					viewabilityMinimum: c.i,
+					remainingTime: c.i,
+					timeViewingInterrupted: 0
+				}, {
+					event: b.a.VideoGroupMViewable,
+					threshold: void 0,
+					viewabilityMinimum: c.k,
+					remainingTime: void 0,
+					timeViewingInterrupted: 0,
+					cumulative: !0,
+					cumulativeElapsedTime: 0,
+					checkAudible: !0
+				}, {
+					event: b.a.VideoVendorFullyViewable50,
+					threshold: c.a,
+					viewabilityMinimum: void 0,
+					remainingTime: void 0,
+					timeViewingInterrupted: 0,
+					cumulative: !0,
+					cumulativeElapsedTime: 0
+				}],
+				y = e => e.map(e => {
+					let {
+						event: t,
+						cumulative: s = !1,
+						cumulativeElapsedTime: r,
+						remainingTime: o,
+						threshold: i = null,
+						viewabilityMinimum: n,
+						checkAudible: a = !1,
+						timeViewingInterrupted: d
 					} = e;
-					return t.isSponsored ? o.a.createElement(a.a, {
-						post: t,
+					return {
+						event: t,
+						cumulative: s,
+						checkAudible: a,
+						timer: null,
+						fired: !1,
+						threshold: i,
+						remainingTime: o,
+						cumulativeElapsedTime: 0,
+						viewabilityMinimum: n,
+						timeViewingInitialized: 0,
+						timeViewingInterrupted: d
+					}
+				}),
+				O = () => y(g),
+				P = () => y(v),
+				_ = [c.c, c.e, c.l, c.j, c.a, c.b],
+				j = [c.c, c.l, c.j, c.a],
+				E = [c.c, c.e, c.l, c.b],
+				w = e => "boolean" == typeof e.cumulative && e.cumulative,
+				T = Object(a.c)({
+					continuousViewingStartedAt: (e, t) => {
+						let {
+							post: s
+						} = t;
+						return Object(f.b)(e, {
+							postId: s.id
+						})
+					},
+					videoDuration: (e, t) => {
+						let {
+							post: s
+						} = t;
+						const r = Object(f.h)(e, {
+							postId: s.id
+						});
+						if (r) return r.length
+					},
+					isAudible: e => Object(h.a)(e),
+					isPlaying: (e, t) => {
+						let {
+							post: s
+						} = t;
+						return Object(f.d)(e, {
+							postId: s.id
+						})
+					},
+					isFullScreen: (e, t) => {
+						let {
+							post: s
+						} = t;
+						return Object(f.e)(e, {
+							postId: s.id
+						})
+					}
+				}),
+				C = Object(p.a)(T);
+			class I extends i.Component {
+				constructor(e) {
+					super(e), this.viewabilityStats = O(), this.videoStats = P(), this.pageInFocus = !0, this.inViewStats = [], this.outOfViewStats = [], this.handleViewabilityChange = e => {
+						this.props.trackDisplay && this.handleThresholds(e, c.r), this.props.trackVideo && this.handleThresholds(e, c.p, !0), this.checkViewabilityByType(e)
+					}, this.checkViewabilityByType = e => {
+						if (o()(this.state.event, e) || this.setState({
+								event: e
+							}), this.props.trackDisplay) {
+							const t = this.props.post.media && Object(m.E)(this.props.post.media);
+							this.viewabilityStats.forEach(s => {
+								(s.event !== b.a.GalleryItemImpression || t) && this.checkViewability(e, s)
+							})
+						}
+						this.props.isPlaying && this.props.trackVideo && this.videoStats.forEach(t => {
+							t.checkAudible && !this.props.isAudible || this.checkViewability(e, t)
+						})
+					}, this.state = {
+						event: null,
+						currentContinuousViewingStartedAt: e.continuousViewingStartedAt
+					}
+				}
+				componentDidMount() {
+					this.visibilityChangeSubscriptionId = u.a.subscribe(e => {
+						this.pageInFocus = e.documentInFocus, this.state.event && this.handleViewabilityChange(this.state.event)
+					})
+				}
+				componentWillUnmount() {
+					const {
+						post: e,
+						trackDisplay: t,
+						trackVideo: s
+					} = this.props;
+					this.visibilityChangeSubscriptionId && u.a.unsubscribe(this.visibilityChangeSubscriptionId), t && (l.d(e.id, c.r, !1), this.viewabilityStats.forEach(e => {
+						w(e) && e.cumulative && this.pauseCumulativeStats(e), this.clearTimer(e)
+					})), s && (l.d(e.id, c.p, !0), this.videoStats.forEach(e => {
+						w(e) && e.cumulative && this.pauseCumulativeStats(e), this.clearTimer(e)
+					})), this.outOfViewStats = [], this.inViewStats = []
+				}
+				componentDidUpdate() {
+					this.props.trackVideo && (this.state.currentContinuousViewingStartedAt === this.props.continuousViewingStartedAt ? (this.handleThresholds(this.state.event, c.p, !0), this.videoStats.forEach(e => {
+						!this.props.isPlaying || e.checkAudible && !this.props.isAudible ? e.cumulative ? this.pauseCumulativeStats(e) : this.pauseViewableStats(e) : this.checkViewability(this.state.event, e)
+					})) : this.resetTimers())
+				}
+				resetTimers() {
+					this.videoStats.forEach(e => {
+						e.cumulative || this.resetTimer(e)
+					}), this.setState({
+						currentContinuousViewingStartedAt: this.props.continuousViewingStartedAt
+					})
+				}
+				resetTimer(e) {
+					this.clearTimer(e), e.timeViewingInitialized = 0, void 0 !== e.viewabilityMinimum && (e.remainingTime = e.viewabilityMinimum)
+				}
+				pauseViewableStats(e) {
+					let t;
+					if (!e.timer || e.fired) return;
+					e.timeViewingInterrupted = Date.now();
+					const s = e.timeViewingInterrupted - e.timeViewingInitialized;
+					t = (e.viewabilityMinimum || 0) - s, e.remainingTime = t > 0 ? t : 0, this.clearTimer(e)
+				}
+				pauseCumulativeStats(e) {
+					let t;
+					e.timer && !e.fired && (e.timeViewingInterrupted = Date.now(), e.cumulativeElapsedTime += e.timeViewingInterrupted - e.timeViewingInitialized, t = (e.viewabilityMinimum || 0) - e.cumulativeElapsedTime, e.remainingTime = t > 0 ? t : 0, this.clearTimer(e))
+				}
+				meetsViewabilityRequirements(e, t) {
+					let s, r = !1,
+						o = !1;
+					return "object" == typeof t ? (s = t.threshold, r = !!t.playing, o = !!t.withSound) : s = t, this.isAdequatelyInView(e, s) && (!r || this.props.isPlaying) && (!o || this.props.isAudible)
+				}
+				handleThresholds(e, t) {
+					let s = arguments.length > 2 && void 0 !== arguments[2] && arguments[2];
+					const {
+						post: r
+					} = this.props, i = t.filter(t => this.meetsViewabilityRequirements(e, t));
+					!o()(i, this.inViewStats) && i.length > 0 && l.b(r.id, i, s);
+					const n = t.filter(t => !this.meetsViewabilityRequirements(e, t));
+					!o()(n, this.outOfViewStats) && n.length > 0 && l.d(r.id, n, s), this.outOfViewStats = n, this.inViewStats = i
+				}
+				isAdequatelyInView(e, t) {
+					return !!this.props.isFullScreen || !!e && e.intersectionRatio >= t && this.pageInFocus
+				}
+				addDurationBasedViewabilityMinimum(e) {
+					this.props.videoDuration ? e.viewabilityMinimum = Math.min(.5 * this.props.videoDuration, c.g) : e.viewabilityMinimum = c.g, e.remainingTime = e.viewabilityMinimum
+				}
+				adjustThreshold(e, t) {
+					const {
+						height: s,
+						width: r
+					} = e.boundingClientRect;
+					return !t.threshold && t.event === b.a.VideoGroupMViewable && this.props.videoDuration && (t.threshold = r * s < 3e5 ? c.a : c.j, t.viewabilityMinimum = .5 * this.props.videoDuration), t.event === b.a.GroupMViewable && r * s > 242500 && (t.threshold = c.l), t
+				}
+				checkViewability(e, t) {
+					if (w(t) && t.event === b.a.VideoVendorFullyViewable50 && this.addDurationBasedViewabilityMinimum(t), e && e.target && this.adjustThreshold(e, t), t.threshold && void 0 !== t.viewabilityMinimum) {
+						if (this.isAdequatelyInView(e, t.threshold) && !t.fired) {
+							if (t.timer) return;
+							const e = this.getLengthForTimer(t);
+							return e > 0 ? this.initTimer(t, e) : this.fireStat(t), void(t.timeViewingInitialized = Date.now())
+						}
+						w(t) && t.cumulative && this.pauseCumulativeStats(t), this.clearTimer(t)
+					}
+				}
+				clearTimer(e) {
+					e.timer && (clearTimeout(e.timer), e.timer = null)
+				}
+				getLengthForTimer(e) {
+					return void 0 !== e.remainingTime ? e.remainingTime : e.viewabilityMinimum || 0
+				}
+				fireStat(e) {
+					setTimeout(() => this.props.onPostViewable(this.props.post, e.event), 0), e.fired = !0
+				}
+				initTimer(e, t) {
+					this.clearTimer(e), e.timer = window.setTimeout(() => {
+						this.fireStat(e)
+					}, t)
+				}
+				render() {
+					const {
+						trackDisplay: e,
+						trackVideo: t
+					} = this.props;
+					let s = _;
+					return e && !t ? s = E : !e && t && (s = j), n.a.createElement(d.a, {
+						threshold: s,
+						onChange: this.handleViewabilityChange
+					}, this.props.children)
+				}
+			}
+			t.a = C(I)
+		},
+		"./src/reddit/components/BlankPost/index.tsx": function(e, t, s) {
+			"use strict";
+			s.r(t), s.d(t, "BlankPost", (function() {
+				return l
+			}));
+			var r = s("./node_modules/react/index.js"),
+				o = s.n(r),
+				i = s("./src/reddit/components/AdViewability/index.tsx"),
+				n = s("./src/reddit/connectors/PostViewable/index.ts"),
+				a = s("./src/lib/classNames/index.ts"),
+				d = s("./src/reddit/contexts/Post/index.tsx");
+			const c = Object(n.a)(null),
+				l = e => {
+					let {
+						className: t,
+						post: s
+					} = e;
+					return s.isSponsored ? o.a.createElement(i.a, {
+						post: s,
 						trackDisplay: !0
 					}, o.a.createElement("div", {
-						className: Object(s.a)(r, `Blank ${t.id}`)
+						className: Object(a.a)(t, `Blank ${s.id}`)
 					})) : null
 				};
-			r.default = Object(i.b)(c(d))
+			t.default = Object(d.b)(c(l))
+		},
+		"./src/reddit/connectors/PostViewable/index.ts": function(e, t, s) {
+			"use strict";
+			var r = s("./node_modules/react-redux/es/index.js"),
+				o = s("./src/reddit/actions/post.ts");
+			t.a = (e, t) => Object(r.b)(e, function() {
+				let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {};
+				return {
+					...e,
+					onPostViewable: o.Q
+				}
+			}(t))
+		},
+		"./src/reddit/constants/errors.ts": function(e, t, s) {
+			"use strict";
+			var r, o;
+			s.d(t, "a", (function() {
+					return r
+				})),
+				function(e) {
+					e.BannedProfile = "BANNED", e.DeletedProfile = "DELETED", e.NotFoundProfile = "NOT_FOUND", e.ForbiddenProfile = "FORBIDDEN"
+				}(r || (r = {})),
+				function(e) {
+					e.Unknown = "Unknown"
+				}(o || (o = {}))
+		},
+		"./src/reddit/contexts/Post/index.tsx": function(e, t, s) {
+			"use strict";
+			s.d(t, "d", (function() {
+				return m
+			})), s.d(t, "a", (function() {
+				return h
+			})), s.d(t, "e", (function() {
+				return f
+			})), s.d(t, "b", (function() {
+				return g
+			}));
+			var r = s("./node_modules/react/index.js"),
+				o = s.n(r),
+				i = s("./node_modules/react-redux/es/index.js"),
+				n = s("./src/reddit/constants/posts.ts"),
+				a = s("./src/reddit/hooks/useMemoShallowEqual.ts"),
+				d = s("./src/reddit/hooks/useUserContext.ts"),
+				c = s("./src/reddit/models/User/index.ts"),
+				l = s("./src/reddit/selectors/posts.ts"),
+				u = s("./src/reddit/selectors/subreddit.ts");
+
+			function p() {
+				return (p = Object.assign || function(e) {
+					for (var t = 1; t < arguments.length; t++) {
+						var s = arguments[t];
+						for (var r in s) Object.prototype.hasOwnProperty.call(s, r) && (e[r] = s[r])
+					}
+					return e
+				}).apply(this, arguments)
+			}
+			const b = o.a.createContext(null);
+
+			function m(e) {
+				const t = Object(i.e)(t => Object(l.G)(t, {
+						postId: e
+					})),
+					{
+						currentUser: s
+					} = Object(d.a)(),
+					r = Object(i.e)(e => t ? Object(u.N)(e, {
+						identifier: t.belongsTo
+					}) : null),
+					o = (null == t ? void 0 : t.belongsTo.type) === n.a.SUBREDDIT ? r : null,
+					p = !(!s || (null == t ? void 0 : t.author) !== Object(c.e)(s)),
+					b = Object(i.e)(i => ({
+						currentUser: s,
+						imageGalleryCurrentItem: Object(l.i)(i, {
+							postId: e
+						}),
+						isModerator: !(!o || !i.moderatingSubreddits[o.name]),
+						post: t,
+						postId: e,
+						subreddit: o,
+						subredditOrProfile: r,
+						userIsOp: p
+					}));
+				return Object(a.a)(b)
+			}
+
+			function h(e) {
+				const {
+					postId: t,
+					children: s
+				} = e, r = m(t);
+				return o.a.createElement(b.Provider, {
+					value: r
+				}, s)
+			}
+
+			function f(e) {
+				const t = e.displayName || e.name;
+
+				function s(s) {
+					return o.a.createElement(b.Consumer, null, r => {
+						if (!r) throw new Error(`No Post context for <${t}/>!`);
+						return o.a.createElement(e, p({}, s, r))
+					})
+				}
+				return s.displayName = `PostContext(${t})`, s
+			}
+
+			function g(e) {
+				const t = e.displayName || e.name;
+
+				function s(t) {
+					const s = m(t.postId);
+					return o.a.createElement(b.Provider, {
+						value: s
+					}, o.a.createElement(e, p({}, t, s)))
+				}
+				return s.displayName = `PostProvider(${t})`, s
+			}
+			t.c = b
+		},
+		"./src/reddit/contexts/User/index.tsx": function(e, t, s) {
+			"use strict";
+			s.d(t, "a", (function() {
+				return l
+			})), s.d(t, "b", (function() {
+				return p
+			})), s.d(t, "c", (function() {
+				return b
+			}));
+			var r = s("./node_modules/react/index.js"),
+				o = s.n(r),
+				i = s("./node_modules/react-redux/es/index.js"),
+				n = s("./src/reddit/hooks/useMemoShallowEqual.ts"),
+				a = s("./src/reddit/reducers/user/prefs/index.ts"),
+				d = s("./src/reddit/selectors/user.ts");
+
+			function c() {
+				return (c = Object.assign || function(e) {
+					for (var t = 1; t < arguments.length; t++) {
+						var s = arguments[t];
+						for (var r in s) Object.prototype.hasOwnProperty.call(s, r) && (e[r] = s[r])
+					}
+					return e
+				}).apply(this, arguments)
+			}
+			const l = o.a.createContext({
+				currentUser: null,
+				modModeEnabled: !1,
+				nightmodeEnabled: !1,
+				prefs: a.a,
+				isLoggedIn: !1
+			});
+
+			function u() {
+				const e = Object(i.e)(e => ({
+					currentUser: Object(d.k)(e),
+					modModeEnabled: e.modModeEnabled,
+					nightmodeEnabled: Object(d.db)(e),
+					prefs: e.user.prefs,
+					isLoggedIn: Object(d.Q)(e)
+				}));
+				return Object(n.a)(e)
+			}
+
+			function p(e) {
+				return o.a.createElement(l.Provider, {
+					value: u()
+				}, e.children)
+			}
+
+			function b(e) {
+				const t = e.displayName || e.name;
+
+				function s(t) {
+					return o.a.createElement(l.Consumer, null, s => o.a.createElement(e, c({}, t, s)))
+				}
+				return s.displayName = `UserContext(${t})`, s
+			}
+		},
+		"./src/reddit/endpoints/me/index.ts": function(e, t, s) {
+			"use strict";
+			s.d(t, "a", (function() {
+				return a
+			}));
+			var r = s("./src/config.ts"),
+				o = s("./src/lib/constants/index.ts"),
+				i = s("./src/lib/makeApiRequest/index.ts"),
+				n = s("./src/reddit/helpers/addRedesignIdentifier/index.ts");
+			const a = e => Object(i.a)(e, {
+				endpoint: Object(n.a)(`${r.a.gatewayUrl}/desktopapi/v1/me`),
+				method: o.jb.GET
+			})
+		},
+		"./src/reddit/hooks/useMemoShallowEqual.ts": function(e, t, s) {
+			"use strict";
+			s.d(t, "a", (function() {
+				return i
+			}));
+			var r = s("./node_modules/react/index.js"),
+				o = s("./node_modules/react-redux/es/index.js");
+
+			function i(e) {
+				const t = Object(r.useRef)(e);
+				return t.current === e || Object(o.c)(t.current, e) || (t.current = e), t.current
+			}
+		},
+		"./src/reddit/hooks/useUserContext.ts": function(e, t, s) {
+			"use strict";
+			s.d(t, "a", (function() {
+				return i
+			}));
+			var r = s("./node_modules/react/index.js"),
+				o = s("./src/reddit/contexts/User/index.tsx");
+
+			function i() {
+				return Object(r.useContext)(o.a)
+			}
+		},
+		"./src/reddit/reducers/user/prefs/index.ts": function(e, t, s) {
+			"use strict";
+			s.d(t, "b", (function() {
+				return r
+			})), s.d(t, "a", (function() {
+				return q
+			}));
+			s("./node_modules/core-js/modules/web.dom.iterable.js");
+			var r, o = s("./node_modules/lodash/isEqual.js"),
+				i = s.n(o),
+				n = s("./node_modules/lodash/merge.js"),
+				a = s.n(n),
+				d = s("./node_modules/lodash/pick.js"),
+				c = s.n(d),
+				l = s("./src/lib/constants/index.ts"),
+				u = s("./src/reddit/actions/comment/constants.ts"),
+				p = s("./src/reddit/actions/contentGate.ts"),
+				b = s("./src/reddit/actions/frontpage/constants.ts"),
+				m = s("./src/reddit/actions/header.ts"),
+				h = s("./src/reddit/actions/modQueue/constants.ts"),
+				f = s("./src/reddit/actions/pages/constants.ts"),
+				g = s("./src/reddit/actions/pages/modListing/constants.ts"),
+				v = s("./src/reddit/actions/pages/multireddit/constants.ts"),
+				y = s("./src/reddit/actions/pages/postCreation.ts"),
+				O = s("./src/reddit/actions/pages/postDraft.ts"),
+				P = s("./src/reddit/actions/pages/profileComments/constants.ts"),
+				_ = s("./src/reddit/actions/pages/profileOverview/constants.ts"),
+				j = s("./src/reddit/actions/pages/profilePosts.ts"),
+				E = s("./src/reddit/actions/pages/search/index.ts"),
+				w = s("./src/reddit/actions/pages/subreddit.ts"),
+				T = s("./src/reddit/actions/pages/topic.ts"),
+				C = s("./src/reddit/actions/postCreation/constants.ts"),
+				I = s("./src/reddit/actions/postDraft.ts"),
+				S = s("./src/reddit/actions/preferences.ts"),
+				D = s("./src/reddit/actions/redditEmbed.ts"),
+				x = s("./src/reddit/actions/search.ts"),
+				k = s("./src/reddit/actions/structuredStyles/constants.ts"),
+				A = s("./src/reddit/actions/subreddit.ts"),
+				R = s("./src/reddit/actions/users.ts"),
+				N = s("./src/reddit/constants/postLayout.ts"),
+				M = s("./src/reddit/constants/preferences.ts"),
+				F = s("./src/reddit/constants/theme.ts"),
+				L = s("./src/reddit/models/PostCreationForm/index.ts"),
+				V = s("./src/reddit/models/PostDraft/index.ts"),
+				U = s("./src/reddit/models/User/index.ts");
+			! function(e) {
+				e.Whitelisted = "whitelisted", e.Everyone = "everyone"
+			}(r || (r = {}));
+			const G = ["acceptPrivateMessages", "allowClickTracking", "autoplayVideo", "collapseReadMessages", "defaultCommentSort", "emailDigests", "emailUnreadMessages", "emailUnsubscribe", "enableFollowers", "feedRecommendationsEnabled", "geopopular", "hideAds", "hideFromRobots", "hideNSFW", "highlightComments", "ignoreSuggestedSort", "inBeta", "labelNSFW", "liveBarRecommendationsEnabled", "markMessagesRead", "nightmode", "over18", "sendWelcomeMessages", "showMessagesInInbox", "showNotifications", "showTwitter", "showUsernameMentionNotifications", "showActiveCommunities", "showPresence", ...M.a, "loginOtpEnabled"],
+				q = {
+					acceptPrivateMessages: void 0,
+					activityRelevantAds: !0,
+					allowClickTracking: !1,
+					autoplayVideo: !0,
+					collapsedTraySections: U.a,
+					commentMode: L.i.RICH_TEXT,
+					countryCode: "",
+					badCommentAutocollapse: l.l.OFF,
+					layout: N.d.Card,
+					rememberCommunityLayout: !1,
+					defaultCommentSort: l.t.CONFIDENCE,
+					editorMode: L.i.RICH_TEXT,
+					enableFollowers: !0,
+					geopopular: void 0,
+					globalTheme: F.a,
+					hamburgerTray: void 0,
+					hasSeenCustomizeFlyout: !0,
+					hideNSFW: !0,
+					ignoreSuggestedSort: !1,
+					labelNSFW: !0,
+					liveBarRecommendationsEnabled: !0,
+					loginOtpEnabled: !1,
+					markMessagesRead: !0,
+					nightmode: !1,
+					openPostInNewTab: !1,
+					over18: !1,
+					profileLayout: void 0,
+					reduceAnimationsFromAwards: !1,
+					rpanDuDismissalTime: void 0,
+					showActiveCommunities: !0,
+					showPresence: !1,
+					showRpanDu: !0,
+					showTwitter: !1,
+					sort: l.Y.Hot,
+					stylesEnabled: !0,
+					subreddit: {},
+					subscriptionsPinned: void 0,
+					surveyLastSeenTime: void 0,
+					thirdPartyDataPersonalizedAds: !0,
+					thirdPartyPersonalizedAds: !0,
+					thirdPartySiteDataPersonalizedAds: !0,
+					thirdPartySiteDataPersonalizedContent: !0,
+					showLocationBasedRecommendations: !0,
+					topContentDismissalTime: 0,
+					topContentTimesDismissed: 0,
+					rememberCommunitySort: !1,
+					useMarkdown: !1,
+					gatedSubredditOptIn: !1,
+					quarantineOptIn: !1
+				},
+				B = {
+					rpanDuDismissalTime: void 0,
+					isContributorRequestTimestamp: 0,
+					stylesEnabled: !0,
+					layout: void 0,
+					sort: void 0
+				},
+				z = (e, t) => {
+					if (!t) return e;
+					const s = c()({
+							...t.account,
+							...t
+						}, G),
+						r = t.subreddit,
+						o = {
+							...e.subreddit
+						};
+					Object.keys(r || {}).forEach(e => {
+						o[e] = {
+							...B,
+							...r && r[e]
+						}
+					});
+					const n = {
+						...e,
+						...s,
+						subreddit: o
+					};
+					if (n.useMarkdown !== e.useMarkdown) {
+						const e = n.useMarkdown ? L.i.MARKDOWN : L.i.RICH_TEXT;
+						n.editorMode = e, n.commentMode = e
+					}
+					return i()(n, e) ? e : n
+				},
+				$ = (e, t, s) => z(e, {
+					subreddit: {
+						[t]: {
+							...B,
+							...e.subreddit[t],
+							...s
+						}
+					}
+				});
+			t.c = function() {
+				let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : q,
+					t = arguments.length > 1 ? arguments[1] : void 0;
+				switch (t.type) {
+					case u.o:
+					case u.v: {
+						const {
+							editorMode: s
+						} = t.payload;
+						return {
+							...e,
+							commentMode: s
+						}
+					}
+					case C.s:
+					case C.Q: {
+						const {
+							editorMode: s
+						} = t.payload;
+						return {
+							...e,
+							editorMode: s
+						}
+					}
+					case m.d:
+						return {
+							...e, subscriptionsPinned: !0
+						};
+					case m.e:
+						return {
+							...e, subscriptionsPinned: !1
+						};
+					case I.g: {
+						const {
+							kind: s
+						} = t.payload;
+						return {
+							...e,
+							editorMode: s === V.b.Markdown ? L.i.MARKDOWN : L.i.RICH_TEXT
+						}
+					}
+					case S.h: {
+						const {
+							layout: s
+						} = t.payload;
+						return e.layout === s ? e : {
+							...e,
+							layout: s
+						}
+					}
+					case S.o:
+						return void 0 !== t.payload ? {
+							...e,
+							rpanDuDismissalTime: t.payload
+						} : e;
+					case S.p: {
+						const {
+							layout: s,
+							subredditId: r
+						} = t.payload;
+						return $(e, r, {
+							layout: s
+						})
+					}
+					case S.f:
+						return {
+							...e, hasSeenCustomizeFlyout: !0
+						};
+					case S.m:
+						return e.profileLayout === t.payload.profileLayout ? e : {
+							...e,
+							profileLayout: t.payload.profileLayout
+						};
+					case p.i:
+						return {
+							...e, over18: !0
+						};
+					case S.c:
+						return void 0 !== t.payload ? {
+							...e,
+							autoplayVideo: t.payload.autoplayVideo
+						} : e;
+					case S.i:
+						return void 0 !== t.payload ? {
+							...e,
+							nightmode: t.payload.nightmode
+						} : e;
+					case p.h:
+						return {
+							...e, gatedSubredditOptIn: t.payload
+						};
+					case p.j:
+						return {
+							...e, quarantineOptIn: t.payload
+						};
+					case S.r:
+						if (void 0 !== t.payload) {
+							const {
+								topContentDismissalTime: s,
+								topContentTimesDismissed: r
+							} = t.payload;
+							return {
+								...e,
+								topContentDismissalTime: s,
+								topContentTimesDismissed: r
+							}
+						}
+						return e;
+					case k.d:
+						return t.payload.isNightmodeOn ? {
+							...e,
+							nightmode: !1,
+							nightmodeTempUpdated: !0
+						} : e;
+					case k.e:
+						return t.payload.nightmodeTempUpdated ? {
+							...e,
+							nightmode: !0,
+							nightmodeTempUpdated: !1
+						} : e;
+					case S.g:
+						return void 0 !== t.payload ? {
+							...e,
+							hamburgerTray: t.payload.set
+						} : {
+							...e,
+							hamburgerTray: !e.hamburgerTray
+						};
+					case S.d:
+						return void 0 !== t.payload ? {
+							...e,
+							collapsedTraySections: a()({}, e.collapsedTraySections, t.payload)
+						} : e;
+					case p.b:
+					case p.c:
+					case p.k:
+					case p.l:
+					case p.g:
+					case p.a:
+					case p.m:
+					case g.e:
+					case g.h:
+					case f.a:
+					case f.e:
+					case f.b:
+					case f.f:
+					case f.d:
+					case f.h:
+					case b.c:
+					case w.SUBREDDIT_LOADED:
+					case v.b:
+					case v.a:
+					case P.e:
+					case _.e:
+					case _.b:
+					case j.PROFILE_POSTS_LOADED:
+					case b.g:
+					case A.i:
+					case x.e:
+					case D.b:
+					case y.PAGE_LOADED:
+					case O.PAGE_LOADED:
+					case S.j:
+					case S.b:
+					case E.c:
+					case S.a:
+					case R.c:
+					case T.TOPIC_DATA_LOADED:
+						return t.payload && t.payload.preferences ? z(e, t.payload.preferences) : e;
+					case S.q: {
+						const {
+							subredditId: s,
+							prefs: r
+						} = t.payload;
+						return $(e, s, r)
+					}
+					case P.d:
+					case _.d:
+					case _.a:
+					case j.PROFILE_POSTS_FAILED: {
+						let s = e;
+						if (t.payload && t.payload.account) {
+							const {
+								nightmode: r,
+								showPresence: o
+							} = t.payload.account;
+							e.nightmode !== r && (s = {
+								...s,
+								nightmode: r
+							}), e.showPresence !== o && (s = {
+								...s,
+								showPresence: o
+							})
+						}
+						return s
+					}
+					case h.h:
+					case h.j:
+					case h.i:
+					case h.g:
+					case h.f:
+					case h.n:
+					case h.m:
+					case h.p:
+					case h.q:
+					case h.w:
+					case h.v:
+						return t.payload && t.payload.response && t.payload.response.preferences ? z(e, t.payload.preferences) : e;
+					case S.n: {
+						const s = t.payload,
+							{
+								enableFollowers: r,
+								showActiveCommunities: o
+							} = s.additional;
+						let i = e;
+						return e.enableFollowers !== r && (i = {
+							...i,
+							enableFollowers: r
+						}), e.showActiveCommunities !== o && (i = {
+							...i,
+							showActiveCommunities: o
+						}), i
+					}
+					default:
+						return e
+				}
+			}
+		},
+		"./src/reddit/routes/postCreation/index.ts": function(e, t, s) {
+			"use strict";
+			s.d(t, "c", (function() {
+				return l
+			})), s.d(t, "b", (function() {
+				return u
+			}));
+			var r = s("./node_modules/@loadable/component/dist/loadable.esm.js"),
+				o = s("./src/lib/constants/index.ts"),
+				i = s("./src/lib/loadableAction/index.ts"),
+				n = s("./src/reddit/routes/postCreation/constants.ts");
+			const a = [n.b, n.c, n.a],
+				d = Object(r.a)({
+					resolved: {},
+					chunkName: () => "PostCreation",
+					isReady(e) {
+						const t = this.resolve(e);
+						return !1 !== this.resolved[t] && !!s.m[t]
+					},
+					importAsync: () => Promise.all([s.e("vendors~CryptoHarbergerTaxManageModal~HarbergerTaxManageModal~ModerationPages~PostCreation~Settings~~f8934a85"), s.e("vendors~ChatMessageInput~CommentRichUnit~FlairEdit~MembershipPaywallPage~PostCreation~PostRichUnit~R~9deab1a0"), s.e("vendors~PostCreation~Subreddit"), s.e("CollectionCommentsPage~CommentsPage~CountryPage~FramedGild~GildModal~GovernanceReleaseNotesModal~Mem~c8b748a6"), s.e("CollectionCommentsPage~CommentsPage~CountryPage~Frontpage~GovernanceReleaseNotesModal~ModListing~Mod~e3d63e32"), s.e("ChatPost~CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~Post~38f39fb8"), s.e("CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~ModerationPages~PostCreation~Profile~9a5d9fab"), s.e("CollectionCommentsPage~CommentsPage~ModerationPages~PostCreation~ProfileComments~ProfileOverview~Pro~d39c0d57"), s.e("PostCreation~Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~r~4c415e24"), s.e("PostCreation")]).then(s.bind(null, "./src/reddit/pages/PostCreation/index.tsx")),
+					requireAsync(e) {
+						const t = this.resolve(e);
+						return this.resolved[t] = !1, this.importAsync(e).then(e => (this.resolved[t] = !0, e))
+					},
+					requireSync(e) {
+						const t = this.resolve(e);
+						return s(t)
+					},
+					resolve() {
+						return "./src/reddit/pages/PostCreation/index.tsx"
+					}
+				}),
+				c = e => `/${e}/submit`,
+				l = (e, t) => {
+					return n.c.replace(/:subredditName/, e) + (t ? `?collection=${t}` : "")
+				},
+				u = e => n.a.replace(/:profileName/, e),
+				p = {
+					action: Object(i.a)(() => Promise.all([s.e("vendors~CryptoHarbergerTaxManageModal~HarbergerTaxManageModal~ModerationPages~PostCreation~Settings~~f8934a85"), s.e("vendors~ChatMessageInput~CommentRichUnit~FlairEdit~MembershipPaywallPage~PostCreation~PostRichUnit~R~9deab1a0"), s.e("vendors~PostCreation~Subreddit"), s.e("CollectionCommentsPage~CommentsPage~CountryPage~FramedGild~GildModal~GovernanceReleaseNotesModal~Mem~c8b748a6"), s.e("CollectionCommentsPage~CommentsPage~CountryPage~Frontpage~GovernanceReleaseNotesModal~ModListing~Mod~e3d63e32"), s.e("ChatPost~CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~Post~38f39fb8"), s.e("CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~ModerationPages~PostCreation~Profile~9a5d9fab"), s.e("CollectionCommentsPage~CommentsPage~ModerationPages~PostCreation~ProfileComments~ProfileOverview~Pro~d39c0d57"), s.e("PostCreation~Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~r~4c415e24"), s.e("PostCreation")]).then(s.bind(null, "./src/reddit/actions/pages/postCreation.ts")).then(e => e.postCreationPageRequested)),
+					component: d,
+					chunk: o.r.POST_CREATION,
+					exact: !0,
+					meta: {
+						name: o.Nb.POST_CREATION
+					},
+					path: a,
+					prefetches: [o.r.COMMENTS_PAGE]
+				};
+			t.a = p
+		},
+		"./src/redditGQL/operations/ProfileFeed.json": function(e) {
+			e.exports = JSON.parse('{"id":"d5bbd27f8c2d"}')
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-BlankPost.d15b4aadf9cdec274843.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-BlankPost.5134a4c2d70a092265a3.js.map
