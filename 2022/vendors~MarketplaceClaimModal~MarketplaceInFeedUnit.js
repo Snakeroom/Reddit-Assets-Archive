@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/vendors~MarketplaceClaimModal~MarketplaceInFeedUnit.bc5a9fcb3c2a0f04a0d7.js
-// Retrieved at 8/10/2022, 12:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/vendors~MarketplaceClaimModal~MarketplaceInFeedUnit.bfa479261ae86409e043.js
+// Retrieved at 8/16/2022, 9:40:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["vendors~MarketplaceClaimModal~MarketplaceInFeedUnit"], {
 		"./node_modules/@reddit/crypto/react/nft-claim/index.es.js": function(e, t, n) {
@@ -9376,7 +9376,7 @@
 								}))(t, i)), e(l[f])
 							}
 						},
-						disabled: !l,
+						disabled: !l || t,
 						loading: t
 					}, r.a.createElement(X, {
 						desc: "CTA: Prompt users to generate their custom NFT based on the faction they have selected"
@@ -9511,8 +9511,8 @@
 					onViewAvatar: u,
 					onEvent: d
 				}) => {
-					const [f, m] = Object(i.useState)(Ym.Selection), [p, h] = Object(i.useState)(null), [v, g] = Object(i.useState)(null), [k, S] = Object(i.useState)(!1), {
-						userHasVault: _
+					const [f, m] = Object(i.useState)(Ym.Selection), [p, h] = Object(i.useState)(null), [v, g] = Object(i.useState)(null), [k, S] = Object(i.useState)(!1), _ = Object(i.useCallback)(() => S(!0), []), {
+						userHasVault: w
 					} = function({
 						userId: e,
 						onError: t
@@ -9538,15 +9538,15 @@
 						}
 					}({
 						userId: t,
-						onError: () => S(!0)
-					}), [w, N] = Object(a.b)(yr);
+						onError: _
+					}), [N, E] = Object(a.b)(yr);
 					Object(i.useEffect)(() => {
 						var e, t;
 						const {
 							data: i,
 							error: r,
 							fetching: a
-						} = w;
+						} = N;
 						if (a) return;
 						const o = i && !i.claimFreeNft.ok,
 							s = i && !(null == (t = null == (e = null == i ? void 0 : i.claimFreeNft) ? void 0 : e.freeNftClaimStatus) ? void 0 : t.item);
@@ -9584,29 +9584,29 @@
 								claimId: n
 							}
 						}), g(l), m(Ym.Reveal)
-					}, [w, d, n]);
-					const E = Object(i.useCallback)(() => {
+					}, [N, d, n]);
+					const x = Object(i.useCallback)(() => {
 						if (!p) return;
 						S(!1);
 						const e = c ? null : B();
-						N({
+						E({
 							claimId: p.id,
 							ikey: e
 						})
-					}, [N, p, c]);
+					}, [E, p, c]);
 					Object(i.useEffect)(() => {
-						f === Ym.Selection && p && null !== _ && (_ ? E() : m(Ym.Secure))
-					}, [p, _, E, f]);
-					const x = w.fetching || !!p && null === _,
-						C = Object(i.useMemo)(() => p && {
+						f === Ym.Selection && p && null !== w && (w ? x() : m(Ym.Secure))
+					}, [p, w, x, f]);
+					const C = N.fetching || !!p && null === w,
+						O = Object(i.useMemo)(() => p && {
 							itemId: p.id,
 							itemName: p.name
 						}, [p]),
-						O = Object(i.useCallback)(() => (e => b(y({}, q), {
+						P = Object(i.useCallback)(() => (e => b(y({}, q), {
 							action: j.View,
 							noun: T.SecureVault,
 							marketplace: e
-						}))(C), [C]);
+						}))(O), [O]);
 					return r.a.createElement("div", {
 						className: Jm
 					}, r.a.createElement(ep, {
@@ -9614,26 +9614,26 @@
 					}, r.a.createElement(Gm, {
 						onClose: e,
 						onSubmit: h,
-						loading: x
+						loading: C
 					})), r.a.createElement(ep, {
 						isVisible: f === Ym.Secure
 					}, p && r.a.createElement(gr, {
-						onSubmit: E,
+						onSubmit: x,
 						onClose: e,
 						userId: t,
-						viewEvent: O,
+						viewEvent: P,
 						clickCreateEvent: () => (e => b(y({}, q), {
 							action: j.Click,
 							noun: T.CreateVault,
 							marketplace: e
-						}))(C),
+						}))(O),
 						viewSuccessEvent: e => ((e, t) => b(y({}, q), {
 							action: j.View,
 							noun: T.VaultConfirmation,
 							marketplace: b(y({}, t), {
 								walletAddress: e
 							})
-						}))(e, C)
+						}))(e, O)
 					})), p && v && r.a.createElement(Cm, {
 						isVisible: f === Ym.Reveal,
 						selectedFactionImage: p.images[0].url,
@@ -9646,4 +9646,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/vendors~MarketplaceClaimModal~MarketplaceInFeedUnit.bc5a9fcb3c2a0f04a0d7.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/vendors~MarketplaceClaimModal~MarketplaceInFeedUnit.bfa479261ae86409e043.js.map
