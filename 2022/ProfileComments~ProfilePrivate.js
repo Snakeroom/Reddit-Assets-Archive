@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfileComments~ProfilePrivate.2a1d76048e1f718585b7.js
-// Retrieved at 8/15/2022, 6:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfileComments~ProfilePrivate.9e1c6c2a4efdb575dda9.js
+// Retrieved at 8/16/2022, 11:20:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfileComments~ProfilePrivate"], {
 		"./src/reddit/components/AdLinkWrapperContent/index.m.less": function(e, t, s) {
@@ -259,7 +259,7 @@
 					} = ze,
 					[qe, Ze] = Object(o.useState)(!1),
 					Qe = Object(o.useCallback)(() => {
-						Ze(!qe), Object(Q.Mb)(), Se(Object(Y.d)(Ce))
+						Ze(!qe), Object(Q.Nb)(), Se(Object(Y.d)(Ce))
 					}, [qe, Ce, Se]);
 				let Xe = n.a.createElement(J.a, {
 					className: oe.a.classicThumbnail,
@@ -2563,11 +2563,11 @@
 				n = s("./src/reddit/constants/experiments.ts"),
 				r = s("./src/reddit/helpers/chooseVariant/index.ts");
 			const i = Object(o.a)(e => Object(r.c)(e, {
-					experimentName: n.ag,
+					experimentName: n.bg,
 					experimentEligibilitySelector: r.a
 				}), e => e),
-				a = Object(o.a)(i, e => e === n.Rf)
+				a = Object(o.a)(i, e => e === n.Sf)
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileComments~ProfilePrivate.2a1d76048e1f718585b7.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileComments~ProfilePrivate.9e1c6c2a4efdb575dda9.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/FramedGild~GildModal.7a11663fc6097b1c6757.js
-// Retrieved at 8/15/2022, 6:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/FramedGild~GildModal.70577cbc8cedb5bdd606.js
+// Retrieved at 8/16/2022, 11:20:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["FramedGild~GildModal", "gildActions"], {
 		"./node_modules/@stripe/react-stripe-js/dist/react-stripe.umd.js": function(e, t, r) {
@@ -3007,7 +3007,7 @@
 					const {
 						isAnonymous: e
 					} = this.props;
-					Object(p.xb)(e)
+					Object(p.yb)(e)
 				}
 				componentDidMount() {
 					document.addEventListener("keydown", this.handleEscapeKey);
@@ -3155,7 +3155,7 @@
 						})
 					})),
 					setIsAnonymous: t => {
-						e(Object(w.setIsAnonymous)(t)), Object(p.xb)(t)
+						e(Object(w.setIsAnonymous)(t)), Object(p.yb)(t)
 					},
 					subredditAboutRequested: t => e(Object(_.u)(t)),
 					subredditLockedCoinsRequested: (t, r) => e(Object(O.a)(t, r)),
@@ -4883,12 +4883,12 @@
 						rtJsonElementProps: o
 					});
 					switch (a) {
-						case h.Lf.SmIcon:
+						case h.Mf.SmIcon:
 							return s.a.createElement(p, {
 								subredditName: n,
 								rtJsonElementProps: o
 							});
-						case h.Lf.SmIconHc:
+						case h.Mf.SmIconHc:
 							return s.a.createElement(p, {
 								subredditName: n,
 								isHoverable: !0,
@@ -6058,12 +6058,12 @@
 				c = e => {
 					return Object(a.c)(e, {
 						experimentEligibilitySelector: i,
-						experimentName: n.Ff
+						experimentName: n.Gf
 					}) || ""
 				},
 				d = e => {
 					const t = c(e);
-					return t === n.Lf.SmIcon || t === n.Lf.SmIconHc
+					return t === n.Mf.SmIcon || t === n.Mf.SmIconHc
 				},
 				l = (e, t) => {
 					let {
@@ -6113,4 +6113,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/FramedGild~GildModal.7a11663fc6097b1c6757.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/FramedGild~GildModal.70577cbc8cedb5bdd606.js.map

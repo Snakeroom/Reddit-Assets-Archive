@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CommunityTopicSurvey.fcffad3f2cc14951a972.js
-// Retrieved at 8/15/2022, 6:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CommunityTopicSurvey.faad01f14d4b43853498.js
+// Retrieved at 8/16/2022, 11:20:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CommunityTopicSurvey"], {
 		"./node_modules/react-uid/dist/es2015/hooks.js": function(e, t, n) {
@@ -196,7 +196,7 @@
 				return 0 === n.length ? o.a.createElement(o.a.Fragment, null, t) : o.a.createElement(o.a.Fragment, null, n[0], o.a.createElement(N.a, {
 					isFeatureFlagEnabled: !0,
 					isUserInTreatment: !0,
-					userVariant: B.Lf.SmIconHc,
+					userVariant: B.Mf.SmIconHc,
 					subredditName: n[1].split("/")[1],
 					rtJsonElementProps: {}
 				}), n[2])
@@ -244,7 +244,7 @@
 				})))
 			}
 
-			function L(e) {
+			function A(e) {
 				const {
 					questionId: t,
 					questionText: n,
@@ -355,7 +355,7 @@
 							inFeed: a
 						});
 					case S.d.SingleWithSubmit:
-						return o.a.createElement(L, {
+						return o.a.createElement(A, {
 							key: O.id,
 							questionId: O.id,
 							questionText: O.questionText,
@@ -366,7 +366,7 @@
 							inFeed: a
 						});
 					case S.d.SingleNoSubmit:
-						return o.a.createElement(L, {
+						return o.a.createElement(A, {
 							key: O.id,
 							questionId: O.id,
 							questionText: O.questionText,
@@ -789,12 +789,12 @@
 						rtJsonElementProps: i
 					});
 					switch (o) {
-						case _.Lf.SmIcon:
+						case _.Mf.SmIcon:
 							return s.a.createElement(b, {
 								subredditName: r,
 								rtJsonElementProps: i
 							});
-						case _.Lf.SmIconHc:
+						case _.Mf.SmIconHc:
 							return s.a.createElement(b, {
 								subredditName: r,
 								isHoverable: !0,
@@ -1066,12 +1066,12 @@
 				c = e => {
 					return Object(o.c)(e, {
 						experimentEligibilitySelector: d,
-						experimentName: r.Ff
+						experimentName: r.Gf
 					}) || ""
 				},
 				a = e => {
 					const t = c(e);
-					return t === r.Lf.SmIcon || t === r.Lf.SmIconHc
+					return t === r.Mf.SmIcon || t === r.Mf.SmIconHc
 				},
 				u = (e, t) => {
 					let {
@@ -1100,4 +1100,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommunityTopicSurvey.fcffad3f2cc14951a972.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommunityTopicSurvey.faad01f14d4b43853498.js.map

@@ -1,64 +1,64 @@
-// https://www.redditstatic.com/desktop2x/NotificationsPrePromptLoader.f78fb1ba6862cb4fcfb9.js
-// Retrieved at 8/15/2022, 6:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/NotificationsPrePromptLoader.16d1de0774660d976c8b.js
+// Retrieved at 8/16/2022, 11:20:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["NotificationsPrePromptLoader"], {
-		"./src/reddit/components/NotificationsPrePrompt/index.m.less": function(e, t, n) {
+		"./src/reddit/components/NotificationsPrePrompt/index.m.less": function(e, t, c) {
 			e.exports = {
 				overlay: "_3Ig_EsWWVLquWs2yBBQjec",
 				backgroundAnimation: "_2iwhmPhcdf_cKfsjSxiNTC"
 			}
 		},
-		"./src/reddit/components/NotificationsPrePrompt/index.tsx": function(e, t, n) {
+		"./src/reddit/components/NotificationsPrePrompt/index.tsx": function(e, t, c) {
 			"use strict";
-			n.r(t);
-			var r = n("./node_modules/react/index.js"),
-				c = n.n(r),
-				i = n("./node_modules/react-redux/es/index.js"),
-				s = n("./src/higherOrderComponents/asModal/index.tsx"),
-				o = n("./src/lib/notifications/constants.ts"),
-				a = n("./src/reddit/components/TrackingHelper/index.tsx"),
-				d = n("./src/reddit/constants/experiments.ts"),
-				l = n("./src/reddit/helpers/trackers/notifications.ts"),
-				u = n("./src/reddit/helpers/chooseVariant/index.ts");
+			c.r(t);
+			var n = c("./node_modules/react/index.js"),
+				r = c.n(n),
+				i = c("./node_modules/react-redux/es/index.js"),
+				s = c("./src/higherOrderComponents/asModal/index.tsx"),
+				o = c("./src/lib/notifications/constants.ts"),
+				a = c("./src/reddit/components/TrackingHelper/index.tsx"),
+				d = c("./src/reddit/constants/experiments.ts"),
+				l = c("./src/reddit/helpers/trackers/notifications.ts"),
+				u = c("./src/reddit/helpers/chooseVariant/index.ts");
 
-			function b(e) {
+			function m(e) {
 				const t = Object(u.c)(e, {
 					experimentEligibilitySelector: u.a,
 					experimentName: d.Fb
 				});
-				return !Object(d.kg)(t) && t
+				return !Object(d.lg)(t) && t
 			}
-			var m, O = n("./src/reddit/components/NotificationsPrePrompt/index.m.less"),
-				p = n.n(O);
+			var O, b = c("./src/reddit/components/NotificationsPrePrompt/index.m.less"),
+				p = c.n(b);
 
 			function f() {
 				return (f = Object.assign || function(e) {
 					for (var t = 1; t < arguments.length; t++) {
-						var n = arguments[t];
-						for (var r in n) Object.prototype.hasOwnProperty.call(n, r) && (e[r] = n[r])
+						var c = arguments[t];
+						for (var n in c) Object.prototype.hasOwnProperty.call(c, n) && (e[n] = c[n])
 					}
 					return e
 				}).apply(this, arguments)
 			}! function(e) {
 				e[e.ThreeSec = 3e3] = "ThreeSec", e[e.FiveSec = 5e3] = "FiveSec", e[e.TenSec = 1e4] = "TenSec"
-			}(m || (m = {}));
+			}(O || (O = {}));
 			const j = Object(s.a)(() => null);
 			t.default = e => {
 				const t = Object(a.b)(),
-					n = Object(i.d)(),
-					[s, u] = Object(r.useState)(),
-					O = Object(i.e)(b),
-					_ = Object(r.useCallback)(() => O === d.bd.ThreeSeconds ? m.ThreeSec : O === d.bd.FiveSeconds ? m.FiveSec : m.TenSec, [O]);
-				return Object(r.useEffect)(() => {
-					if (O) {
+					c = Object(i.d)(),
+					[s, u] = Object(n.useState)(),
+					b = Object(i.e)(m),
+					_ = Object(n.useCallback)(() => b === d.cd.ThreeSeconds ? O.ThreeSec : b === d.cd.FiveSeconds ? O.FiveSec : O.TenSec, [b]);
+				return Object(n.useEffect)(() => {
+					if (b) {
 						const e = _();
 						u(setTimeout(() => {
-							n(Object(o.k)()), t(Object(l.g)())
+							c(Object(o.k)()), t(Object(l.g)())
 						}, e))
 					}
-				}, [n, O, t, _]), c.a.createElement(j, f({
+				}, [c, b, t, _]), r.a.createElement(j, f({
 					onOverlayClick: () => {
-						O && (clearTimeout(Number(s)), n(Object(o.k)()), t(Object(l.h)()))
+						b && (clearTimeout(Number(s)), c(Object(o.k)()), t(Object(l.h)()))
 					}
 				}, e, {
 					overlayClassName: p.a.overlay,
@@ -68,4 +68,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/NotificationsPrePromptLoader.f78fb1ba6862cb4fcfb9.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/NotificationsPrePromptLoader.16d1de0774660d976c8b.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-pages-meta-ArbitrumPointsMigrationPage.418d8473d048a7299ccf.js
-// Retrieved at 8/15/2022, 6:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-pages-meta-ArbitrumPointsMigrationPage.4c8fa4f7b89d44efd6e2.js
+// Retrieved at 8/16/2022, 11:20:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-pages-meta-ArbitrumPointsMigrationPage"], {
 		"./node_modules/lodash/uniqueId.js": function(e, t, n) {
@@ -1323,7 +1323,7 @@
 			const V = "arb-migration-l1";
 
 			function W(e) {
-				e ? Object(N.Eb)(V, e) : window.localStorage && window.localStorage.removeItem(V)
+				e ? Object(N.Fb)(V, e) : window.localStorage && window.localStorage.removeItem(V)
 			}
 
 			function q() {
@@ -1425,4 +1425,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-pages-meta-ArbitrumPointsMigrationPage.418d8473d048a7299ccf.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-pages-meta-ArbitrumPointsMigrationPage.4c8fa4f7b89d44efd6e2.js.map

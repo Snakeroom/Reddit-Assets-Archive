@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-ConvertToCoinsModal.31ce4edcd3d22d6703e7.js
-// Retrieved at 8/15/2022, 6:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-ConvertToCoinsModal.054ae05ea0f215208b4b.js
+// Retrieved at 8/16/2022, 11:20:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Governance-TransactionModals-ConvertToCoinsModal"], {
 		"./src/reddit/actions/gold/econPurchase.ts": function(e, t, n) {
@@ -1194,11 +1194,11 @@
 			}
 			var R = n("./src/reddit/controls/FormFields/index.tsx"),
 				H = n("./src/reddit/controls/LoadingIcon/index.tsx"),
-				q = n("./src/reddit/icons/svgs/CoinV2/index.tsx"),
-				Q = n("./src/reddit/components/Governance/Token/index.tsx"),
-				U = n("./src/reddit/components/Governance/TransactionModals/Common/CurrentBalance.tsx"),
-				J = n("./src/reddit/components/Governance/TransactionModals/ConvertToCoinsModal/ApprovalOverview.m.less"),
-				W = n.n(J);
+				Q = n("./src/reddit/icons/svgs/CoinV2/index.tsx"),
+				U = n("./src/reddit/components/Governance/Token/index.tsx"),
+				q = n("./src/reddit/components/Governance/TransactionModals/Common/CurrentBalance.tsx"),
+				W = n("./src/reddit/components/Governance/TransactionModals/ConvertToCoinsModal/ApprovalOverview.m.less"),
+				J = n.n(W);
 			const {
 				fbt: Y
 			} = n("./node_modules/fbt/lib/FbtPublic.js");
@@ -1218,13 +1218,13 @@
 					tokenConversion: i
 				} = e, l = new E.a(t).dividedBy(i), d = X(n, t);
 				return a.a.createElement("div", {
-					className: W.a.container
+					className: J.a.container
 				}, a.a.createElement("div", {
-					className: W.a.conversion
+					className: J.a.conversion
 				}, a.a.createElement("div", {
-					className: W.a.pointsAmount
+					className: J.a.pointsAmount
 				}, a.a.createElement(R.c, {
-					className: W.a.pointsInput,
+					className: J.a.pointsInput,
 					disabled: !n,
 					type: "number",
 					label: `${o.displayText} ${c}`,
@@ -1242,11 +1242,11 @@
 							s = c ? new E.a(c).multipliedBy(n).toFixed(0) : "";
 						e.onChange(s, c)
 					}
-				}), a.a.createElement(Q.a, {
-					className: W.a.pointsInputIcon,
+				}), a.a.createElement(U.a, {
+					className: J.a.pointsInputIcon,
 					subredditId: o.id
 				})), a.a.createElement("div", {
-					className: W.a.chevron
+					className: J.a.chevron
 				}, a.a.createElement("svg", {
 					width: "8",
 					height: "24",
@@ -1260,24 +1260,24 @@
 					strokeLinecap: "round",
 					strokeLinejoin: "round"
 				}))), a.a.createElement("div", {
-					className: W.a.coinsAmount
-				}, a.a.createElement(q.a, {
-					className: W.a.coinIcon
+					className: J.a.coinsAmount
+				}, a.a.createElement(Q.a, {
+					className: J.a.coinIcon
 				}), !n && s ? a.a.createElement(H.a, {
-					className: W.a.loadingIcon,
+					className: J.a.loadingIcon,
 					sizePx: 5
 				}) : d, a.a.createElement("div", {
-					className: W.a.coinsLabel
+					className: J.a.coinsLabel
 				}, Y._("Reddit Coins", null, {
 					hk: "4n6R5v"
-				})))), a.a.createElement(U.a, {
+				})))), a.a.createElement(q.a, {
 					subredditId: o.id
 				}), n || s ? a.a.createElement("div", {
-					className: W.a.disclaimer
+					className: J.a.disclaimer
 				}, Y._("Note: converted Coins will be only eligible for use in the community you've earned points. You'll see your updated coin balance when giving awards in this community.", null, {
 					hk: "1AgEx3"
 				})) : a.a.createElement("div", {
-					className: W.a.errorLoading
+					className: J.a.errorLoading
 				}, Y._("There was an error loading the conversion price. Please try again later.", null, {
 					hk: "NYpbS"
 				})))
@@ -1323,11 +1323,11 @@
 						B(e), H(new E.a(e).dividedBy(h).toNumber())
 					}
 				}, [h]);
-				const q = s.displayConversion,
-					Q = e => {
-						y(Object(A.c)("coins", u, new E.a(x).dividedBy(q).toFixed(), e))
+				const Q = s.displayConversion,
+					U = e => {
+						y(Object(A.c)("coins", u, new E.a(x).dividedBy(Q).toFixed(), e))
 					},
-					U = () => g(Object(N.f)());
+					q = () => g(Object(N.f)());
 				return a.a.createElement(F.a, {
 					approvalOverview: a.a.createElement(Z, {
 						pointsAmount: x,
@@ -1339,14 +1339,14 @@
 						price: h,
 						pricePending: !h && b,
 						subreddit: c,
-						tokenConversion: q
+						tokenConversion: Q
 					}),
 					approvalDetails: a.a.createElement(V, {
 						contractAddress: l
 					}),
-					onClose: U,
+					onClose: q,
 					onTransactionSuccess: async e => {
-						U(), g(function() {
+						q(), g(function() {
 							const e = Object(P.e)(d.fbt._("Processing your conversion...", null, {
 								hk: "4dA09t"
 							}), T.b.SuccessCommunity);
@@ -1365,19 +1365,19 @@
 								subredditId: r.id
 							}))
 						}(g, s, e.hash, c, v).then(() => {
-							y(Object(A.d)("coins", u, new E.a(x).dividedBy(q).toFixed())), g(function() {
+							y(Object(A.d)("coins", u, new E.a(x).dividedBy(Q).toFixed())), g(function() {
 								const e = Object(P.e)(d.fbt._("Your Coins are ready!", null, {
 									hk: "7ewJ6"
 								}), T.b.SuccessCommunityGreen);
 								return e.duration = 15e3, Object(P.f)(e)
 							}())
 						}).catch(e => {
-							Q(e.toString()), g(Object(P.f)(Object(P.e)(d.fbt._("There was an error while purchasing your Coins. Please try again later", null, {
+							U(e.toString()), g(Object(P.f)(Object(P.e)(d.fbt._("There was an error while purchasing your Coins. Please try again later", null, {
 								hk: "nEHTT"
 							}), T.b.Error)))
 						})
 					},
-					onTransactionFailure: Q,
+					onTransactionFailure: U,
 					subredditId: u,
 					transaction: R ? async () => {
 						const e = await g(Object(w.b)(f, null == f ? void 0 : f.pricePackages[0], R, {
@@ -2262,14 +2262,14 @@
 			const c = e => {
 					return Object(a.c)(e, {
 						experimentEligibilitySelector: a.a,
-						experimentName: r.te
-					}) === r.Jd
+						experimentName: r.ue
+					}) === r.Kd
 				},
 				s = e => {
 					return Object(a.c)(e, {
 						experimentEligibilitySelector: a.a,
-						experimentName: r.qe
-					}) === r.Jd
+						experimentName: r.re
+					}) === r.Kd
 				}
 		},
 		"./src/reddit/selectors/gold/econPurchase.ts": function(e, t, n) {
@@ -2455,4 +2455,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-ConvertToCoinsModal.31ce4edcd3d22d6703e7.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-ConvertToCoinsModal.054ae05ea0f215208b4b.js.map

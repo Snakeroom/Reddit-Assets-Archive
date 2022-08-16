@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-pages-meta-MainnetPointsMigrationPage.9df7a4f9e6f30862ae17.js
-// Retrieved at 8/16/2022, 9:40:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-pages-meta-MainnetPointsMigrationPage.bae2c9a391c88a018865.js
+// Retrieved at 8/16/2022, 11:20:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-pages-meta-MainnetPointsMigrationPage"], {
 		"./node_modules/lodash/uniqueId.js": function(e, t, n) {
@@ -1129,10 +1129,10 @@
 				z = n("./src/reddit/hooks/useLocale.ts"),
 				U = n("./src/reddit/icons/svgs/LoadingOrbit/index.tsx"),
 				Z = n("./src/higherOrderComponents/asModal/index.tsx"),
-				q = n("./src/reddit/components/ModalStyledComponents/index.tsx"),
-				Y = n("./node_modules/@ethersproject/address/lib.esm/index.js"),
-				X = n("./node_modules/lodash/debounce.js"),
-				K = n.n(X),
+				Y = n("./src/reddit/components/ModalStyledComponents/index.tsx"),
+				q = n("./node_modules/@ethersproject/address/lib.esm/index.js"),
+				K = n("./node_modules/lodash/debounce.js"),
+				X = n.n(K),
 				G = n("./src/lib/classNames/index.ts"),
 				J = n("./src/reddit/constants/colors.ts"),
 				Q = n("./src/reddit/controls/FormFields/index.tsx"),
@@ -1152,10 +1152,10 @@
 				} = e;
 				const [a, s] = Object(r.useState)(""), o = Object(r.useRef)(a), [l, c] = Object(r.useState)(se.Empty), d = l === se.Invalid, u = () => {
 					if (ae.test(o.current)) {
-						if (!!Object(Y.a)(o.current)) return c(se.Valid), void n(o.current, !0)
+						if (!!Object(q.a)(o.current)) return c(se.Valid), void n(o.current, !0)
 					}
 					c(se.Invalid)
-				}, m = Object(r.useMemo)(() => K()(u, 300), [o, n, u]);
+				}, m = Object(r.useMemo)(() => X()(u, 300), [o, n, u]);
 				return i.a.createElement("div", {
 					className: Object(G.a)(ne.a.container, t, {
 						[ne.a.invalid]: d
@@ -1237,7 +1237,7 @@
 					"aria-label": oe._("Close", null, {
 						hk: "3fyGPG"
 					})
-				}, i.a.createElement(q.b, {
+				}, i.a.createElement(Y.b, {
 					className: ne.a.closeIcon
 				})), i.a.createElement("h2", null, oe._("Transfer to Mainnet", null, {
 					hk: "4riDgo"
@@ -1490,7 +1490,7 @@
 						checkMigrationStatus: W,
 						updateMigrationState: D,
 						switchToTestnet: Z,
-						switchToMainnet: q
+						switchToMainnet: Y
 					} = be({
 						migrations: n,
 						setMigrations: l,
@@ -1568,7 +1568,7 @@
 							})
 						}
 					},
-					switchToMainnet: q
+					switchToMainnet: Y
 				}), i.a.createElement(H.a, {
 					className: fe.a.token,
 					subredditId: k
@@ -1822,16 +1822,16 @@
 			const r = e => {
 					return Object(s.c)(e, {
 						experimentEligibilitySelector: s.a,
-						experimentName: a.te
-					}) === a.Jd
+						experimentName: a.ue
+					}) === a.Kd
 				},
 				i = e => {
 					return Object(s.c)(e, {
 						experimentEligibilitySelector: s.a,
-						experimentName: a.qe
-					}) === a.Jd
+						experimentName: a.re
+					}) === a.Kd
 				}
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-pages-meta-MainnetPointsMigrationPage.9df7a4f9e6f30862ae17.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-pages-meta-MainnetPointsMigrationPage.bae2c9a391c88a018865.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~Reddit.f94277d58c2e364e6ce0.js
-// Retrieved at 8/15/2022, 6:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~Reddit.f176872f8a632143a544.js
+// Retrieved at 8/16/2022, 11:20:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~Reddit"], {
 		"./assets/fonts/NotoMono/font.less": function(e, t, n) {},
@@ -2291,7 +2291,7 @@
 			const w = e => _.d.reCaptchaEnterprise(e) && !Object(T.d)(e),
 				D = e => !!Object(S.c)(e, {
 					experimentEligibilitySelector: Object(I.d)(Object(I.b)(...a.d)),
-					experimentName: f.mf
+					experimentName: f.nf
 				}),
 				j = Object(r.b)("LOAD_RECAPTCHA_ENTERPRISE"),
 				C = () => l(e => p()([w, D, e => e.tracking.reCaptchaEnterprise.load === r.a.New], t => t(e)))(async e => {
@@ -3016,7 +3016,7 @@
 						action: "view",
 						noun: l,
 						...Object(d.n)(e)
-					}))(f)), Object(i.Db)(), Object(i.Cb)(S), a(g()), n && n()
+					}))(f)), Object(i.Eb)(), Object(i.Db)(S), a(g()), n && n()
 				}, h = e => async (t, n) => {
 					Object(p.a)((e => ({
 						source: l,
@@ -25322,7 +25322,7 @@
 					if (!u(e)) return;
 					const t = Object(o.c)(e, {
 						experimentEligibilitySelector: l,
-						experimentName: a.de,
+						experimentName: a.ee,
 						expEventOverride: !1
 					});
 					return null == t ? void 0 : t.toLocaleLowerCase()
@@ -25345,9 +25345,9 @@
 				},
 				b = e => !!p(e) && Object(o.c)(e, {
 					experimentEligibilitySelector: u,
-					experimentName: a.ee,
+					experimentName: a.fe,
 					expEventOverride: !1
-				}) !== a.fe.Readonly
+				}) !== a.ge.Readonly
 		},
 		"./src/reddit/selectors/experiments/serpTabPreserved.ts": function(e, t, n) {
 			"use strict";
@@ -25359,8 +25359,8 @@
 				a = n("./node_modules/reselect/es/index.js");
 			const o = Object(a.a)(e => Object(s.c)(e, {
 				experimentEligibilitySelector: s.a,
-				experimentName: r.Ec
-			}), e => e === r.Jd)
+				experimentName: r.Fc
+			}), e => e === r.Kd)
 		},
 		"./src/reddit/selectors/removedPosts.ts": function(e, t, n) {
 			"use strict";
@@ -25513,4 +25513,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit.f94277d58c2e364e6ce0.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit.f176872f8a632143a544.js.map

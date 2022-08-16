@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfileSnoobuilder.fa6fd72e95be235c4dbb.js
-// Retrieved at 8/15/2022, 6:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfileSnoobuilder.628b06e148e4e66a5a15.js
+// Retrieved at 8/16/2022, 11:20:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfileSnoobuilder"], {
 		"./assets/snoobuilder/Snoobuilder.json": function(e, t, n) {
@@ -2041,15 +2041,16 @@
 				w = n("./src/reddit/icons/fonts/index.tsx"),
 				C = n("./src/reddit/models/Profile/index.ts"),
 				j = n("./src/reddit/featureFlags/index.ts"),
-				S = n("./src/reddit/selectors/tooltip.ts"),
-				O = n("./src/reddit/selectors/user.ts"),
-				N = n("./src/reddit/selectors/userPrefs.ts"),
-				L = n("./src/server/helpers/profileRedirect.ts"),
-				T = n("./src/reddit/components/ProfileNavMenu/index.m.less"),
-				F = n.n(T);
+				S = n("./src/reddit/selectors/experiments/d2xHistoryTab.ts"),
+				O = n("./src/reddit/selectors/tooltip.ts"),
+				N = n("./src/reddit/selectors/user.ts"),
+				L = n("./src/reddit/selectors/userPrefs.ts"),
+				T = n("./src/server/helpers/profileRedirect.ts"),
+				F = n("./src/reddit/components/ProfileNavMenu/index.m.less"),
+				D = n.n(F);
 
-			function D() {
-				return (D = Object.assign || function(e) {
+			function P() {
+				return (P = Object.assign || function(e) {
 					for (var t = 1; t < arguments.length; t++) {
 						var n = arguments[t];
 						for (var s in n) Object.prototype.hasOwnProperty.call(n, s) && (e[s] = n[s])
@@ -2057,64 +2058,67 @@
 					return e
 				}).apply(this, arguments)
 			}
-			const P = Object(v.u)({
+			const B = Object(v.u)({
 					routeName: v.Z,
 					privateListingType: v.j
 				}),
-				B = Object(p.c)({
-					isDropdownMenuOpen: e => Object(S.a)(e) === I,
-					isOwnProfile: (e, t) => Object(O.W)(e, t.profileName),
+				R = Object(p.c)({
+					isDropdownMenuOpen: e => Object(O.a)(e) === A,
+					isOwnProfile: (e, t) => Object(N.W)(e, t.profileName),
+					isHistoryTabEnabled: S.a,
 					isSnoovatar30Enabled: j.d.snoovatar30,
-					isSubscriptionsPinned: N.c
+					isSubscriptionsPinned: L.c
 				}),
-				R = Object(b.a)(E.a),
-				I = "profile-nav-menu-tooltip",
-				A = y.g + y.q + y.p;
-			var M;
-			t.a = P(Object(u.b)(B, e => ({
+				I = Object(b.a)(E.a),
+				A = "profile-nav-menu-tooltip",
+				M = y.g + y.q + y.p;
+			var z;
+			t.a = B(Object(u.b)(R, e => ({
 					toggleTooltip: t => e(Object(x.h)({
 						tooltipId: t
 					}))
 				}))(e => {
 					let {
 						isDropdownMenuOpen: t,
-						isOwnProfile: n,
-						privateListingType: s,
-						profileName: i,
-						routeName: a,
-						toggleTooltip: u,
-						isSnoovatar30Enabled: m,
-						isSubscriptionsPinned: p,
-						viewBlockedConsent: h
+						isHistoryTabEnabled: n,
+						isOwnProfile: s,
+						privateListingType: i,
+						profileName: a,
+						routeName: u,
+						toggleTooltip: m,
+						isSnoovatar30Enabled: p,
+						isSubscriptionsPinned: h,
+						viewBlockedConsent: b
 					} = e;
-					const [b, _] = Object(d.useState)(!1), x = Object(d.useRef)(null), [v, E] = Object(d.useState)([]), [k, C] = Object(d.useState)([]);
+					const [_, x] = Object(d.useState)(!1), v = Object(d.useRef)(null), [E, k] = Object(d.useState)([]), [C, j] = Object(d.useState)([]);
 					return Object(d.useEffect)(() => {
-						const e = W({
-							profileName: i,
-							isOwnProfile: n,
-							routeName: a,
-							privateListingType: s,
-							isSnoovatar30Enabled: m,
-							viewBlockedConsent: h
+						const e = U({
+							isHistoryTabEnabled: n,
+							profileName: a,
+							isOwnProfile: s,
+							routeName: u,
+							privateListingType: i,
+							isSnoovatar30Enabled: p,
+							viewBlockedConsent: b
 						});
-						E(e.filter(e => e.position === M.MENU));
+						k(e.filter(e => e.position === z.MENU));
 						const t = [],
 							d = c()(() => {
 								const n = document.documentElement.clientWidth - 2 * y.p,
-									s = n > A ? A : n;
+									s = n > M ? M : n;
 								let r = 42;
 								t.forEach(t => {
 									r += t.offsetWidth;
 									const n = e.find(e => e.text.toString().toLowerCase() === t.text);
-									n.position = r > s ? M.DROPDOWN : M.MENU
+									n.position = r > s ? z.DROPDOWN : z.MENU
 								});
-								const i = e.filter(e => e.position === M.MENU);
-								E(e => o()(i, e) ? e : i);
-								const a = e.filter(e => e.position === M.DROPDOWN);
-								C(e => o()(a, e) ? e : a), _(a.length > 0)
+								const i = e.filter(e => e.position === z.MENU);
+								k(e => o()(i, e) ? e : i);
+								const a = e.filter(e => e.position === z.DROPDOWN);
+								j(e => o()(a, e) ? e : a), x(a.length > 0)
 							}, 50);
 						return r.a.read(() => {
-							const e = x.current;
+							const e = v.current;
 							e && (e.childNodes.forEach((e, n) => {
 								t.push({
 									text: e.textContent.toLowerCase(),
@@ -2124,35 +2128,35 @@
 						}), window.addEventListener("resize", d), () => {
 							window.removeEventListener("resize", d)
 						}
-					}, [i, n, a, s, m, h]), l.a.createElement("div", {
-						className: F.a.container
+					}, [n, a, s, u, i, p, b]), l.a.createElement("div", {
+						className: D.a.container
 					}, l.a.createElement(g.a, {
 						bladeOpen: !1,
-						offsetLeft: p ? y.t : 0,
+						offsetLeft: h ? y.t : 0,
 						render: () => l.a.createElement(l.a.Fragment, null, l.a.createElement("div", {
-							className: F.a.menuContainer,
-							ref: x
-						}, v.map(e => l.a.createElement(z, D({}, e, {
+							className: D.a.menuContainer,
+							ref: v
+						}, E.map(e => l.a.createElement(H, P({}, e, {
 							key: e.key
-						})))), b && l.a.createElement("button", {
-							className: Object(f.a)(F.a.mainLink),
-							id: I,
-							onClick: () => u(I)
+						})))), _ && l.a.createElement("button", {
+							className: Object(f.a)(D.a.mainLink),
+							id: A,
+							onClick: () => m(A)
 						}, l.a.createElement(w.a, {
 							name: "overflow_horizontal"
-						})), b && l.a.createElement(R, {
-							className: F.a.dropdown,
+						})), _ && l.a.createElement(I, {
+							className: D.a.dropdown,
 							isOpen: t,
-							tooltipId: I
-						}, k.map(e => l.a.createElement(H, D({}, e, {
+							tooltipId: A
+						}, C.map(e => l.a.createElement(W, P({}, e, {
 							key: e.key
 						})))))
 					}))
 				})),
 				function(e) {
 					e.MENU = "menu", e.DROPDOWN = "dropdown"
-				}(M || (M = {}));
-			const z = e => {
+				}(z || (z = {}));
+			const H = e => {
 					let {
 						isActive: t,
 						text: n,
@@ -2160,18 +2164,18 @@
 						internal: r
 					} = e;
 					return r ? l.a.createElement(k.default, {
-						className: Object(f.a)(F.a.mainLink, {
-							[F.a.isActive]: t
+						className: Object(f.a)(D.a.mainLink, {
+							[D.a.isActive]: t
 						}),
 						to: s
 					}, n) : l.a.createElement("a", {
-						className: Object(f.a)(F.a.mainLink, {
-							[F.a.isActive]: t
+						className: Object(f.a)(D.a.mainLink, {
+							[D.a.isActive]: t
 						}),
 						href: s
 					}, n)
 				},
-				H = e => {
+				W = e => {
 					let {
 						isActive: t,
 						internal: n,
@@ -2179,30 +2183,31 @@
 						text: r
 					} = e;
 					return n ? l.a.createElement(m.a, {
-						className: Object(f.a)(F.a.dropdownLink, {
-							[F.a.isActive]: t
+						className: Object(f.a)(D.a.dropdownLink, {
+							[D.a.isActive]: t
 						}),
 						to: s,
 						rel: "nofollow noopener noreferrer",
 						role: "listitem"
 					}, r) : l.a.createElement("a", {
-						className: Object(f.a)(F.a.dropdownLink),
+						className: Object(f.a)(D.a.dropdownLink),
 						href: s,
 						rel: "nofollow noopener noreferrer",
 						role: "listitem",
 						target: "_blank"
 					}, r)
 				},
-				W = e => {
+				U = e => {
 					let {
 						profileName: t,
 						isOwnProfile: n,
 						routeName: r,
 						privateListingType: i,
-						isSnoovatar30Enabled: o,
-						viewBlockedConsent: a
+						isHistoryTabEnabled: o,
+						isSnoovatar30Enabled: a,
+						viewBlockedConsent: c
 					} = e;
-					const c = n ? [{
+					const d = n ? [{
 						internal: !0,
 						isActive: r === _.Nb.PROFILE_PRIVATE && i === C.b.Saved,
 						key: "profile.mainmenu.saved",
@@ -2210,7 +2215,7 @@
 							hk: "2w1YRh"
 						}),
 						url: `/user/${t}/saved/`,
-						position: M.MENU
+						position: z.MENU
 					}, {
 						internal: !0,
 						isActive: r === _.Nb.PROFILE_PRIVATE && i === C.b.Hidden,
@@ -2219,7 +2224,7 @@
 							hk: "225tka"
 						}),
 						url: `/user/${t}/hidden/`,
-						position: M.MENU
+						position: z.MENU
 					}, {
 						internal: !0,
 						isActive: r === _.Nb.PROFILE_PRIVATE && i === C.b.Upvoted,
@@ -2228,7 +2233,7 @@
 							hk: "RKwFZ"
 						}),
 						url: `/user/${t}/upvoted/`,
-						position: M.MENU
+						position: z.MENU
 					}, {
 						internal: !0,
 						isActive: r === _.Nb.PROFILE_PRIVATE && i === C.b.Downvoted,
@@ -2237,9 +2242,9 @@
 							hk: "2F9IL4"
 						}),
 						url: `/user/${t}/downvoted/`,
-						position: M.MENU
+						position: z.MENU
 					}] : [];
-					n ? (c.push({
+					n ? (d.push({
 						internal: !0,
 						isActive: r === _.Nb.PROFILE_PRIVATE && i === C.b.ReceivedGildings,
 						key: "profile.mainmenu.receiverGildings",
@@ -2247,8 +2252,8 @@
 							hk: "iwLBV"
 						}),
 						url: `/user/${t}/gilded/`,
-						position: M.MENU
-					}), c.push({
+						position: z.MENU
+					}), d.push({
 						internal: !0,
 						isActive: r === _.Nb.PROFILE_PRIVATE && i === C.b.GivenGildings,
 						key: "profile.mainmenu.givenGildings",
@@ -2256,8 +2261,8 @@
 							hk: "2UPYZc"
 						}),
 						url: `/user/${t}/gilded/given/`,
-						position: M.MENU
-					})) : c.push({
+						position: z.MENU
+					})) : d.push({
 						internal: !1,
 						isActive: !1,
 						key: "profile.mainmenu.gildedLegacy",
@@ -2265,9 +2270,19 @@
 							hk: "1YgfYU"
 						}),
 						url: `${h.a.oldRedditUrl}/user/${t}/gilded/`,
-						position: M.MENU
+						position: z.MENU
 					});
-					const d = o ? [{
+					const l = o && n ? [{
+							internal: !0,
+							isActive: r === _.Nb.PROFILE_PRIVATE && i === C.b.History,
+							key: "profile.mainmenu.history",
+							text: s.fbt._("History", null, {
+								hk: "1fv1wp"
+							}),
+							url: `/user/${t}/history/`,
+							position: z.MENU
+						}] : [],
+						u = a ? [{
 							internal: !0,
 							isActive: r === _.Nb.PROFILE_SNOOBUILDER,
 							key: "profile.mainmenu.snoobuilder",
@@ -2275,9 +2290,9 @@
 								hk: "3SSKff"
 							}),
 							url: `/user/${t}/snoo/`,
-							position: M.MENU
+							position: z.MENU
 						}] : [],
-						l = a ? "?consent=true" : "";
+						m = c ? "?consent=true" : "";
 					return [{
 						internal: !0,
 						isActive: r === _.Nb.PROFILE_OVERVIEW,
@@ -2285,8 +2300,8 @@
 						text: s.fbt._("Overview", null, {
 							hk: "2IBbqy"
 						}),
-						url: `/user/${t}/${l}`,
-						position: M.MENU
+						url: `/user/${t}/${m}`,
+						position: z.MENU
 					}, {
 						internal: !0,
 						isActive: r === _.Nb.PROFILE_POSTS,
@@ -2294,8 +2309,8 @@
 						text: s.fbt._("Posts", null, {
 							hk: "a1BoF"
 						}),
-						url: `${Object(L.a)(t)}/${l}`,
-						position: M.MENU
+						url: `${Object(T.a)(t)}/${m}`,
+						position: z.MENU
 					}, {
 						internal: !0,
 						isActive: r === _.Nb.PROFILE_COMMENTS,
@@ -2303,9 +2318,9 @@
 						text: s.fbt._("Comments", null, {
 							hk: "2VwjOc"
 						}),
-						url: `/user/${t}/comments/${l}`,
-						position: M.MENU
-					}, ...d, ...c]
+						url: `/user/${t}/comments/${m}`,
+						position: z.MENU
+					}, ...u, ...l, ...d]
 				}
 		},
 		"./src/reddit/components/ProfileSidebar/index.tsx": function(e, t, n) {
@@ -3615,7 +3630,7 @@
 				const t = Object(i.f)().getState(),
 					n = Object(b.a)(t, Object(a.c)());
 				if (e.isD2xPdpSideRailRecsEnabled) {
-					const t = e.d2xPdpSideRailRecsVariant === u.Rc.GreyRereddit || e.d2xPdpSideRailRecsVariant === u.Rc.GreyRedditNoNsfw || e.d2xPdpSideRailRecsVariant === u.Rc.LargeImagePreview ? e.reredditButtons : [];
+					const t = e.d2xPdpSideRailRecsVariant === u.Sc.GreyRereddit || e.d2xPdpSideRailRecsVariant === u.Sc.GreyRedditNoNsfw || e.d2xPdpSideRailRecsVariant === u.Sc.LargeImagePreview ? e.reredditButtons : [];
 					return r.a.createElement(j, {
 						reredditContent: t,
 						countryCode: e.countryCode
@@ -4390,12 +4405,12 @@
 						rtJsonElementProps: o
 					});
 					switch (i) {
-						case b.Lf.SmIcon:
+						case b.Mf.SmIcon:
 							return r.a.createElement(p, {
 								subredditName: s,
 								rtJsonElementProps: o
 							});
-						case b.Lf.SmIconHc:
+						case b.Mf.SmIconHc:
 							return r.a.createElement(p, {
 								subredditName: s,
 								isHoverable: !0,
@@ -5487,11 +5502,11 @@
 				c = n("./node_modules/reselect/es/index.js");
 			const d = Object(c.a)(e => Object(r.c)(e, {
 					experimentEligibilitySelector: e => Object(a.h)(e) && Object(i.f)(e),
-					experimentName: s.rc
+					experimentName: s.sc
 				}), o.a),
 				l = Object(c.a)(e => Object(r.c)(e, {
 					experimentEligibilitySelector: e => !Object(a.h)(e) && Object(i.f)(e),
-					experimentName: s.qc
+					experimentName: s.rc
 				}), o.a),
 				u = Object(c.a)(d, l, (e, t) => e || t),
 				m = Object(c.a)(d, l, (e, t) => !(!e && !t))
@@ -5519,12 +5534,12 @@
 				c = e => {
 					return Object(i.c)(e, {
 						experimentEligibilitySelector: a,
-						experimentName: s.Ff
+						experimentName: s.Gf
 					}) || ""
 				},
 				d = e => {
 					const t = c(e);
-					return t === s.Lf.SmIcon || t === s.Lf.SmIconHc
+					return t === s.Mf.SmIcon || t === s.Mf.SmIconHc
 				},
 				l = (e, t) => {
 					let {
@@ -5550,4 +5565,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileSnoobuilder.fa6fd72e95be235c4dbb.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileSnoobuilder.628b06e148e4e66a5a15.js.map

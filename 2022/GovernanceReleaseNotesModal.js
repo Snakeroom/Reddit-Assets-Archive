@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/GovernanceReleaseNotesModal.7689ea47306925fcd4bd.js
-// Retrieved at 8/15/2022, 6:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/GovernanceReleaseNotesModal.9e80fe28687627dac0f9.js
+// Retrieved at 8/16/2022, 11:20:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["GovernanceReleaseNotesModal"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -842,17 +842,17 @@
 					hk: "2uULSy"
 				})))
 			}
-			var L = n("./src/reddit/components/Governance/ReleaseNotesModal/SlideIndicator/index.m.less"),
-				M = n.n(L);
+			var M = n("./src/reddit/components/Governance/ReleaseNotesModal/SlideIndicator/index.m.less"),
+				L = n.n(M);
 
 			function R(e) {
 				return i.a.createElement("div", {
-					className: Object(p.a)(M.a.container, e.className)
+					className: Object(p.a)(L.a.container, e.className)
 				}, Array.from({
 					length: e.totalSlides
 				}).map((t, n) => i.a.createElement("div", {
-					className: Object(p.a)(M.a.dot, {
-						[M.a.dotSelected]: n === e.currentSlide
+					className: Object(p.a)(L.a.dot, {
+						[L.a.dotSelected]: n === e.currentSlide
 					})
 				})))
 			}
@@ -1151,13 +1151,13 @@
 					onClick: () => {
 						e.isSponsored && e.post.postId && Object(x.a)(e.post, e.pageType)
 					}
-				}, M(e)) : e.isListing && e.postPermalink ? i.a.createElement(a.a, {
+				}, L(e)) : e.isListing && e.postPermalink ? i.a.createElement(a.a, {
 					target: e.shouldOpenPostInNewTab ? "_blank" : void 0,
 					to: Object(m.a)(e.postPermalink, void 0, t),
 					onClick: e.onPostMediaClick
-				}, M(e)) : M(e)
+				}, L(e)) : L(e)
 			});
-			const L = (e, t) => i.a.createElement(S, {
+			const M = (e, t) => i.a.createElement(S, {
 					altText: t.altText,
 					className: Object(c.a)(t.imageClassName, {
 						[y.a]: !e
@@ -1174,7 +1174,7 @@
 					src: Object(l.a)(t.source),
 					width: t.width
 				}),
-				M = e => {
+				L = e => {
 					let {
 						onClick: t,
 						...n
@@ -1185,7 +1185,7 @@
 						className: `${r?`${y.a} `:""}${n.className||""}`
 					}), n.isListing ? i.a.createElement("div", {
 						className: n.contentImageClassName
-					}, L(r, n)) : i.a.createElement("a", {
+					}, M(r, n)) : i.a.createElement("a", {
 						href: n.originalSource,
 						onClick: t,
 						style: o ? {
@@ -1194,7 +1194,7 @@
 						target: "_blank",
 						rel: u.c,
 						className: k.a.imageLink
-					}, L(r, n), n.shouldBlur && !n.isVideoThumbnail && !n.isNsfwBlockingModalEligible && i.a.createElement(h.a, {
+					}, M(r, n), n.shouldBlur && !n.isVideoThumbnail && !n.isNsfwBlockingModalEligible && i.a.createElement(h.a, {
 						isNSFW: !!n.isNSFW,
 						isSpoiler: !!n.isSpoiler
 					})), n.isListing && !n.showFull && n.height > v.j && Object(v.L)(n.height, n.width) && i.a.createElement("div", {
@@ -1407,11 +1407,11 @@
 					isPromoted: S
 				} = e, T = t && !(S && Object(c.hasAcceptableAds)()), N = Object(a.d)();
 
-				function L(e) {
+				function M(e) {
 					N(e ? Object(u.r)(p) : Object(u.E)(p))
 				}
 
-				function M() {
+				function L() {
 					return N(Object(u.z)({
 						postId: p
 					}))
@@ -1465,11 +1465,11 @@
 						isNotCardView: g,
 						key: p,
 						loop: !0,
-						onBufferingChange: L,
+						onBufferingChange: M,
 						onLoadStart: D,
 						onLoadedData: P,
 						onLoadedMetadata: H,
-						onPause: M,
+						onPause: L,
 						onPlaying: F,
 						onTimeUpdate: B,
 						shouldLoad: b,
@@ -1765,9 +1765,9 @@
 			})), n.d(t, "r", (function() {
 				return N
 			})), n.d(t, "a", (function() {
-				return L
-			})), n.d(t, "w", (function() {
 				return M
+			})), n.d(t, "w", (function() {
+				return L
 			}));
 			var s = n("./node_modules/react/index.js"),
 				r = n.n(s),
@@ -1798,8 +1798,8 @@
 				S = d.a.td("Tdr", a.a),
 				T = d.a.th("Thl", a.a),
 				N = d.a.th("Thc", a.a),
-				L = (d.a.th("Thr", a.a), d.a.wrapped(e => r.a.createElement(i.b, e), "A", a.a)),
-				M = d.a.wrapped(c.a, "A", a.a)
+				M = (d.a.th("Thr", a.a), d.a.wrapped(e => r.a.createElement(i.b, e), "A", a.a)),
+				L = d.a.wrapped(c.a, "A", a.a)
 		},
 		"./src/reddit/components/RichTextJson/index.m.less": function(e, t, n) {
 			e.exports = {
@@ -2222,9 +2222,9 @@
 		"./src/reddit/components/RichTextJson/renderers.tsx": function(e, t, n) {
 			"use strict";
 			n.d(t, "c", (function() {
-				return L
-			})), n.d(t, "d", (function() {
 				return M
+			})), n.d(t, "d", (function() {
+				return L
 			})), n.d(t, "a", (function() {
 				return R
 			})), n.d(t, "b", (function() {
@@ -2336,7 +2336,7 @@
 				S = n("./src/reddit/helpers/isPost.ts"),
 				T = n("./src/reddit/helpers/richTextJson/index.ts"),
 				N = n("./src/reddit/helpers/trackers/getRichTextSourceElement.ts");
-			const L = (e, t, n) => {
+			const M = (e, t, n) => {
 					const s = e.c || [],
 						r = e.l,
 						i = [],
@@ -2350,7 +2350,7 @@
 						key: n
 					}, i)
 				},
-				M = e => a.a.createElement(d.e, {
+				L = e => a.a.createElement(d.e, {
 					key: e
 				}),
 				R = (e, t, n, s, r) => {
@@ -2391,9 +2391,9 @@
 						case h.c:
 							return B(e, s);
 						case h.k:
-							return L(e, n, s);
+							return M(e, n, s);
 						case h.l:
-							return M(s);
+							return L(s);
 						case h.p:
 							return P(e, t, n, s, r);
 						case h.u:
@@ -2684,12 +2684,12 @@
 						rtJsonElementProps: o
 					});
 					switch (i) {
-						case b.Lf.SmIcon:
+						case b.Mf.SmIcon:
 							return r.a.createElement(h, {
 								subredditName: s,
 								rtJsonElementProps: o
 							});
-						case b.Lf.SmIconHc:
+						case b.Mf.SmIconHc:
 							return r.a.createElement(h, {
 								subredditName: s,
 								isHoverable: !0,
@@ -3042,12 +3042,12 @@
 				d = e => {
 					return Object(i.c)(e, {
 						experimentEligibilitySelector: a,
-						experimentName: s.Ff
+						experimentName: s.Gf
 					}) || ""
 				},
 				c = e => {
 					const t = d(e);
-					return t === s.Lf.SmIcon || t === s.Lf.SmIconHc
+					return t === s.Mf.SmIcon || t === s.Mf.SmIconHc
 				},
 				l = (e, t) => {
 					let {
@@ -3073,4 +3073,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/GovernanceReleaseNotesModal.7689ea47306925fcd4bd.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/GovernanceReleaseNotesModal.9e80fe28687627dac0f9.js.map

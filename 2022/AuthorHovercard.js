@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/AuthorHovercard.1cb2864a51b60e08ef01.js
-// Retrieved at 8/15/2022, 6:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/AuthorHovercard.b749a1893437ca21d8b9.js
+// Retrieved at 8/16/2022, 11:20:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["AuthorHovercard"], {
 		"./src/lib/constants/colors.ts": function(e, t, n) {
@@ -1795,7 +1795,7 @@
 					}, [d]);
 					const B = Object(s.d)(),
 						T = Object(r.useCallback)(e => {
-							E(e), Object(x.Eb)("modnote-draft", {
+							E(e), Object(x.Fb)("modnote-draft", {
 								[d]: e
 							})
 						}, [E, d]),
@@ -5374,13 +5374,13 @@
 			const s = e => {
 					return !(Object(a.c)(e, {
 						experimentEligibilitySelector: a.a,
-						experimentName: r.re
-					}) === r.Jd)
+						experimentName: r.se
+					}) === r.Kd)
 				},
 				o = e => Object(a.c)(e, {
 					experimentEligibilitySelector: a.a,
-					experimentName: r.se
-				}) === r.Jd
+					experimentName: r.te
+				}) === r.Kd
 		},
 		"./src/reddit/selectors/experiments/hotPotato.ts": function(e, t, n) {
 			"use strict";
@@ -5404,7 +5404,7 @@
 					if (!m(e)) return;
 					const t = Object(o.c)(e, {
 						experimentEligibilitySelector: l,
-						experimentName: s.de,
+						experimentName: s.ee,
 						expEventOverride: !1
 					});
 					return null == t ? void 0 : t.toLocaleLowerCase()
@@ -5427,9 +5427,9 @@
 				},
 				p = e => !!u(e) && Object(o.c)(e, {
 					experimentEligibilitySelector: m,
-					experimentName: s.ee,
+					experimentName: s.fe,
 					expEventOverride: !1
-				}) !== s.fe.Readonly
+				}) !== s.ge.Readonly
 		},
 		"./src/reddit/selectors/subredditModeration.ts": function(e, t, n) {
 			"use strict";
@@ -5553,4 +5553,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/AuthorHovercard.1cb2864a51b60e08ef01.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/AuthorHovercard.b749a1893437ca21d8b9.js.map
