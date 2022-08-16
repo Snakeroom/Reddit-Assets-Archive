@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-pages-meta-MainnetPointsMigrationPage.0f0cfd8e9d8a90f7ba22.js
-// Retrieved at 8/15/2022, 7:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-pages-meta-MainnetPointsMigrationPage.894cc9570f346bee4b3b.js
+// Retrieved at 8/15/2022, 8:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-pages-meta-MainnetPointsMigrationPage"], {
 		"./node_modules/lodash/uniqueId.js": function(e, t, n) {
@@ -1404,26 +1404,25 @@
 							recipient: n
 						} = e;
 						const a = await (async e => {
-								let {
-									mainnetAddress: t,
-									recipient: n
-								} = e;
-								const a = new s.ethers.providers.JsonRpcProvider(Object(d.i)(d.a.ArbitrumNova)),
-									r = new s.ethers.Contract(t, u.a, a);
-								return await r.balanceOf(n)
-							})({
+							let {
 								mainnetAddress: t,
 								recipient: n
-							}),
-							i = s.ethers.BigNumber.from(a);
+							} = e;
+							const a = new s.ethers.providers.JsonRpcProvider(Object(d.i)(d.a.ArbitrumNova)),
+								r = new s.ethers.Contract(t, u.a, a);
+							return await r.balanceOf(n)
+						})({
+							mainnetAddress: t,
+							recipient: n
+						});
 						return h({
 							updates: {
-								mainnetBalance: new W.BigNumber(a)
+								mainnetBalance: a
 							},
 							token: t
 						}), A({
 							locale: r,
-							balance: i
+							balance: a
 						})
 					},
 					updateMigrationState: h,
@@ -1824,4 +1823,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-pages-meta-MainnetPointsMigrationPage.0f0cfd8e9d8a90f7ba22.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-pages-meta-MainnetPointsMigrationPage.894cc9570f346bee4b3b.js.map
