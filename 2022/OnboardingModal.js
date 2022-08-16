@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/OnboardingModal.bd0afbe3356a227c5858.js
-// Retrieved at 8/16/2022, 11:20:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/OnboardingModal.4850d2791ee2547777b8.js
+// Retrieved at 8/16/2022, 1:10:12 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["OnboardingModal"], {
 		"./node_modules/lodash/_baseRange.js": function(e, t) {
@@ -357,20 +357,21 @@
 				T = n("./src/reddit/selectors/experiments/inAppNotification.ts"),
 				R = n("./src/reddit/selectors/experiments/loggedOutOneFeed.ts"),
 				A = n("./src/reddit/selectors/experiments/onboarding.ts"),
-				F = n("./src/reddit/selectors/platform.ts"),
-				G = n("./src/reddit/selectors/user.ts"),
-				L = n("./src/reddit/selectors/userPrefs.ts"),
-				P = n("./src/redditGQL/operations/Frontpage.json"),
-				M = n("./src/redditGQL/types.ts"),
-				B = n("./src/lib/ads/session-signals.ts"),
-				D = n("./src/lib/initializeClient/installReducer.ts"),
-				V = n("./src/reddit/reducers/features/marketplace/index.ts");
-			Object(D.a)({
+				F = n("./src/reddit/selectors/frontpage.ts"),
+				G = n("./src/reddit/selectors/platform.ts"),
+				L = n("./src/reddit/selectors/user.ts"),
+				P = n("./src/reddit/selectors/userPrefs.ts"),
+				M = n("./src/redditGQL/operations/Frontpage.json"),
+				B = n("./src/redditGQL/types.ts"),
+				D = n("./src/lib/ads/session-signals.ts"),
+				V = n("./src/lib/initializeClient/installReducer.ts"),
+				q = n("./src/reddit/reducers/features/marketplace/index.ts");
+			Object(V.a)({
 				features: {
-					marketplace: V.a
+					marketplace: q.a
 				}
 			});
-			const q = (e, t) => {
+			const W = (e, t) => {
 					var n, r;
 					const {
 						after: s,
@@ -381,17 +382,17 @@
 						sort: l,
 						t: u,
 						correlationId: m
-					} = t, p = Object(A.c)(e), h = Object(G.Z)(e) || Object(G.Q)(e), v = Object(T.a)(e), x = Object(F.q)(e), O = Object(R.b)(e), {
-						numberOfAdsSeen: E,
-						numberOfPostsSeen: C
-					} = Object(B.a)(), _ = {
+					} = t, p = Object(A.c)(e), h = Object(L.Z)(e) || Object(L.Q)(e), v = Object(T.a)(e), x = Object(G.q)(e), O = Object(R.b)(e), E = Object(R.e)(e), C = E === b.ub.LoggedOutUiOnly || E === b.ub.LoggedOutHomeDefpop, _ = Object(F.b)(e), {
+						numberOfAdsSeen: j,
+						numberOfPostsSeen: I
+					} = Object(D.a)(), k = {
 						adContext: {
 							layout: i ? i.toUpperCase() : f.a.Card,
 							reddaid: e.user.reddaid,
 							distance: o,
 							clientSignalSessionData: {
-								adsSeenCount: E,
-								totalPostsSeenCount: C
+								adsSeenCount: j,
+								totalPostsSeenCount: I
 							}
 						},
 						feedRankingContext: {
@@ -411,14 +412,14 @@
 							variant: null == v ? void 0 : v.toLowerCase()
 						}
 					};
-					return O ? (_.sort = M.z.Best, _.feedRankingContext.variant = Object(R.e)(e), _.feedRankingContext.loggedOutAllowNsfw = Object(L.a)(e)) : l && (_.sort = l.toUpperCase()), u && (_.range = u.toUpperCase()), a ? _.pageSize = Object(g.a)(i) : d && (_.pageSize = d), x && x.ad && (_.forceAds = {
+					return O ? (C && (_ || E !== b.ub.LoggedOutHomeDefpop) || (k.sort = B.z.Best, k.feedRankingContext.variant = E), k.feedRankingContext.loggedOutAllowNsfw = Object(P.a)(e)) : l && (k.sort = l.toUpperCase()), u && (k.range = u.toUpperCase()), a ? k.pageSize = Object(g.a)(i) : d && (k.pageSize = d), x && x.ad && (k.forceAds = {
 						ad: x.ad
-					}), s && (_.after = Object(c.a)(s)), _
+					}), s && (k.after = Object(c.a)(s)), k
 				},
-				W = async (e, t, n, r) => {
+				H = async (e, t, n, r) => {
 					const s = Date.now(),
 						o = await ((e, t) => Object(u.a)(e, {
-							...P,
+							...M,
 							variables: t
 						}, {
 							traceRequestName: "get_frontpage"
@@ -585,24 +586,23 @@
 						body: i
 					}
 				};
-			var H = n("./src/lib/pageTitle/index.ts"),
-				Q = n("./src/lib/pageTitle/helpers.ts"),
-				z = n("./src/reddit/actions/login.ts"),
-				U = n("./src/reddit/actions/meta.ts"),
-				Z = n("./src/reddit/actions/platform.ts"),
-				K = n("./src/reddit/actions/toaster.ts"),
-				J = n("./src/reddit/constants/history.ts"),
-				X = n("./src/reddit/constants/page.ts"),
-				Y = n("./src/reddit/constants/parameters.ts"),
-				$ = n("./src/reddit/constants/postLayout.ts"),
-				ee = n("./src/reddit/contexts/PageLayer/index.tsx"),
-				te = n("./src/reddit/helpers/frontpageCardPostCountExperiment.ts"),
-				ne = n("./src/reddit/helpers/getTimeSortForListing/index.ts"),
-				re = n("./src/reddit/models/Toast/index.ts"),
-				se = n("./src/reddit/selectors/experiments/chat.ts"),
-				oe = n("./src/reddit/selectors/experiments/countrySites.ts"),
-				ae = n("./src/reddit/selectors/experiments/frontpageSignup.ts"),
-				ie = n("./src/reddit/selectors/frontpage.ts"),
+			var Q = n("./src/lib/pageTitle/index.ts"),
+				z = n("./src/lib/pageTitle/helpers.ts"),
+				U = n("./src/reddit/actions/login.ts"),
+				Z = n("./src/reddit/actions/meta.ts"),
+				K = n("./src/reddit/actions/platform.ts"),
+				J = n("./src/reddit/actions/toaster.ts"),
+				X = n("./src/reddit/constants/history.ts"),
+				Y = n("./src/reddit/constants/page.ts"),
+				$ = n("./src/reddit/constants/parameters.ts"),
+				ee = n("./src/reddit/constants/postLayout.ts"),
+				te = n("./src/reddit/contexts/PageLayer/index.tsx"),
+				ne = n("./src/reddit/helpers/frontpageCardPostCountExperiment.ts"),
+				re = n("./src/reddit/helpers/getTimeSortForListing/index.ts"),
+				se = n("./src/reddit/models/Toast/index.ts"),
+				oe = n("./src/reddit/selectors/experiments/chat.ts"),
+				ae = n("./src/reddit/selectors/experiments/countrySites.ts"),
+				ie = n("./src/reddit/selectors/experiments/frontpageSignup.ts"),
 				ce = n("./src/reddit/selectors/goldPurchaseModals.ts"),
 				de = n("./src/reddit/selectors/runTimeEnvVars.ts"),
 				le = n("./src/lib/makeActionCreator/index.ts"),
@@ -631,7 +631,7 @@
 					var i, c, d, l, u, p, b, f;
 					const g = s();
 					if (g.listings.postOrder.api.pending[e]) return;
-					const h = $.e[Object(ee.S)(g, {})];
+					const h = ee.e[Object(te.S)(g, {})];
 					t.isMobile = Object(a.e)(g.meta.userAgent), t.recentPostIds = g.posts.recent, t.layout = h, t.useMockData = !!g.platform.currentPage && (!!g.platform.currentPage.queryParams.useMockData && Object(de.b)(g)), n(Se({
 						key: e
 					})), n(Te(!1)); {
@@ -641,14 +641,14 @@
 					}
 					const v = ye()();
 					t.correlationId = v;
-					const x = null === (c = null === (i = Object(F.b)(g)) || void 0 === i ? void 0 : i.routeMatch) || void 0 === c ? void 0 : c.route.chunk,
-						O = Object(G.Q)(g),
-						E = await Object(m.i)(() => W(o.gqlContext(), q(g, t), Object(G.Z)(g), t.statsdPathsForExperiments), {
+					const x = null === (c = null === (i = Object(G.b)(g)) || void 0 === i ? void 0 : i.routeMatch) || void 0 === c ? void 0 : c.route.chunk,
+						O = Object(L.Q)(g),
+						E = await Object(m.i)(() => H(o.gqlContext(), W(s(), t), Object(L.Z)(g), t.statsdPathsForExperiments), {
 							name: "fetchFrontpageData",
 							isLoggedIn: O,
 							page: x
 						});
-					n(Object(Z.n)(E.status));
+					n(Object(K.n)(E.status));
 					const C = `error-${e}`;
 					if (E.ok && E.body) {
 						const r = E.body;
@@ -657,20 +657,20 @@
 							meta: g.meta,
 							correlationId: v,
 							...r
-						})), n(K.g(C)), r.geoFilter && n(Object(U.k)(r.geoFilter)), r.liveBarContent && n(Object(_e.b)(Object(se.a)(g) ? null !== (u = null === (l = null === (d = r.liveBarContent) || void 0 === d ? void 0 : d.items) || void 0 === l ? void 0 : l.edges.map(e => e.node)) && void 0 !== u ? u : [] : null === (p = r.liveBarContent.posts) || void 0 === p ? void 0 : p.map(e => ({
+						})), n(J.g(C)), r.geoFilter && n(Object(Z.k)(r.geoFilter)), r.liveBarContent && n(Object(_e.b)(Object(oe.a)(g) ? null !== (u = null === (l = null === (d = r.liveBarContent) || void 0 === d ? void 0 : d.items) || void 0 === l ? void 0 : l.edges.map(e => e.node)) && void 0 !== u ? u : [] : null === (p = r.liveBarContent.posts) || void 0 === p ? void 0 : p.map(e => ({
 							post: e,
 							__typename: "LiveBarTalk"
 						})))), n(Object(me.b)(he.a.FRONTPAGE));
-						const o = null === (f = null === (b = Object(F.b)(g)) || void 0 === b ? void 0 : b.locationState) || void 0 === f ? void 0 : f[J.b.FeedLoadReason];
-						Object(fe.b)(t.isRefresh ? J.a.UserRefresh : null != o ? o : J.a.InitialLoad)(s())
+						const o = null === (f = null === (b = Object(G.b)(g)) || void 0 === b ? void 0 : b.locationState) || void 0 === f ? void 0 : f[X.b.FeedLoadReason];
+						Object(fe.b)(t.isRefresh ? X.a.UserRefresh : null != o ? o : X.a.InitialLoad)(s())
 					} else {
 						if (n(we({
 								error: E.error,
 								key: e,
 								...E.body
-							})), n(K.f({
+							})), n(J.f({
 								id: C,
-								kind: re.b.Error,
+								kind: se.b.Error,
 								text: r.fbt._("Sorry, we couldn't load posts for this page.", null, {
 									hk: "36ypKx"
 								}),
@@ -690,49 +690,49 @@
 				}, Ae = (e, t) => async (n, r) => {
 					var s;
 					const a = r(),
-						i = Object(ie.a)(a),
+						i = Object(F.a)(a),
 						{
 							sort: c = i
 						} = e.params,
-						l = Object(ue.a)(X.b, c, e.queryParams),
+						l = Object(ue.a)(Y.b, c, e.queryParams),
 						u = a.listings.postOrder.ids[l],
 						m = a.listings.postOrder.api.error[l],
 						p = a.listings.postOrder.api.pending[l],
-						b = Object(oe.b)(a),
-						f = Y.C in e.queryParams && e.queryParams[Y.C].toUpperCase() || "",
+						b = Object(ae.b)(a),
+						f = $.C in e.queryParams && e.queryParams[$.C].toUpperCase() || "",
 						g = f in d.ic && d.ic[f],
-						h = H.e();
-					if (p || u && !m && !t) return void(u && (n(Z.m({
-						title: b ? Object(Q.a)(a, h) : h
-					})), (null === (s = a.listings.postOrder.correlationIds) || void 0 === s ? void 0 : s[l]) && n(Z.o({
+						h = Q.e();
+					if (p || u && !m && !t) return void(u && (n(K.m({
+						title: b ? Object(z.a)(a, h) : h
+					})), (null === (s = a.listings.postOrder.correlationIds) || void 0 === s ? void 0 : s[l]) && n(K.o({
 						correlationId: a.listings.postOrder.correlationIds[l]
 					})), a.sidebarPromotedPosts.firstFetch || window.addEventListener("load", () => {
 						n(Object(me.b)(he.a.FRONTPAGE))
 					})));
-					const v = Object(te.a)(a),
-						x = Object(te.b)(v),
-						O = [Object(te.c)(v)];
+					const v = Object(ne.a)(a),
+						x = Object(ne.b)(v),
+						O = [Object(ne.c)(v)];
 					await n(Re(l, {
-						...o()(e.queryParams, Y.k),
-						...o()(e.queryParams, Y.j),
+						...o()(e.queryParams, $.k),
+						...o()(e.queryParams, $.j),
 						limit: x,
 						sort: c,
 						statsdPathsForExperiments: O,
-						t: Object(ne.a)(c, g)
-					})), n(Z.m({
-						title: b ? Object(Q.a)(a, h) : h
+						t: Object(re.a)(c, g)
+					})), n(K.m({
+						title: b ? Object(z.a)(a, h) : h
 					})), Object(pe.c)(a, {
 						experimentEligibilitySelector: pe.a,
 						experimentName: "redesign_aa"
 					});
-					const E = Object(ae.a)(a, {});
-					Object(ae.e)(E) && n(Object(z.openRegisterModal)())
+					const E = Object(ie.a)(a, {});
+					Object(ie.e)(E) && n(Object(U.openRegisterModal)())
 				}, Fe = () => async (e, t) => {
 					var n, r;
 					const s = t();
 					if (Object(xe.a)(s)) return;
-					const o = null === (r = null === (n = Object(F.b)(t())) || void 0 === n ? void 0 : n.routeMatch) || void 0 === r ? void 0 : r.route.chunk,
-						a = Object(G.Q)(s);
+					const o = null === (r = null === (n = Object(G.b)(t())) || void 0 === n ? void 0 : n.routeMatch) || void 0 === r ? void 0 : r.route.chunk,
+						a = Object(L.Q)(s);
 					return Object(m.i)(() => e(Object(ve.d)()), {
 						name: "frontpageLinksRequested",
 						page: o,
@@ -749,14 +749,14 @@
 						gqlContext: s
 					} = r;
 					const i = n(),
-						c = Object(ie.a)(i),
+						c = Object(F.a)(i),
 						{
 							sort: l = c
 						} = e,
 						u = i.platform.currentPage ? i.platform.currentPage.queryParams : {},
-						m = Object(ue.a)(X.b, l, u),
+						m = Object(ue.a)(Y.b, l, u),
 						p = i.listings.postOrder.loadMore[m],
-						b = u[Y.C] ? u[Y.C].toUpperCase() : "",
+						b = u[$.C] ? u[$.C].toUpperCase() : "",
 						f = b in d.ic && d.ic[b];
 					if (p) {
 						const e = i.listings.postOrder.api.pending[m],
@@ -768,18 +768,18 @@
 								fetchedToken: p.token
 							}));
 							const e = !!i.platform.currentPage && !!i.platform.currentPage.queryParams.useMockData,
-								r = Object(te.a)(i),
-								c = $.a,
-								d = [Object(te.c)(r)],
+								r = Object(ne.a)(i),
+								c = ee.a,
+								d = [Object(ne.c)(r)],
 								b = {
 									after: p.token,
 									dist: p.dist,
-									...o()(u, Y.k),
+									...o()(u, $.k),
 									isMobile: Object(a.e)(i.meta.userAgent),
 									limit: c,
 									sort: l,
-									t: Object(ne.a)(l, f),
-									layout: $.e[Object(ee.S)(i, {})],
+									t: Object(re.a)(l, f),
+									layout: ee.e[Object(te.S)(i, {})],
 									useMockData: e
 								}; {
 								const e = i.platform.lastPage,
@@ -787,7 +787,7 @@
 								t && (b.clickUrl = t)
 							}
 							b.correlationId = i.listings.postOrder.correlationIds[m];
-							const g = () => W(s(), q(i, b), Object(G.Z)(i), d),
+							const g = () => H(s(), W(i, b), Object(L.Z)(i), d),
 								h = await g(),
 								v = {
 									...h.body,
@@ -798,7 +798,7 @@
 								fetchedToken: p.token,
 								meta: i.meta,
 								...v
-							})), Object(fe.b)(J.a.NextPageLoad)(n());
+							})), Object(fe.b)(X.a.NextPageLoad)(n());
 							else {
 								t(De({
 									key: m,
@@ -813,20 +813,20 @@
 					}
 				}, qe = e => async (t, n) => {
 					const r = n(),
-						s = Object(ie.a)(r),
+						s = Object(F.a)(r),
 						{
 							sort: o = s
 						} = e,
 						a = r.platform.currentPage ? r.platform.currentPage.queryParams : {},
-						i = Object(ue.a)(X.b, o, a),
-						c = a[Y.C] ? a[Y.C].toUpperCase() : "",
+						i = Object(ue.a)(Y.b, o, a),
+						c = a[$.C] ? a[$.C].toUpperCase() : "",
 						l = c in d.ic && d.ic[c],
-						u = Object(te.a)(r),
-						m = Object(te.b)(u);
+						u = Object(ne.a)(r),
+						m = Object(ne.b)(u);
 					await t(Re(i, {
 						limit: m,
 						sort: o,
-						t: Object(ne.a)(o, l),
+						t: Object(re.a)(o, l),
 						isRefresh: !0
 					}))
 				}
@@ -4205,4 +4205,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/OnboardingModal.bd0afbe3356a227c5858.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/OnboardingModal.4850d2791ee2547777b8.js.map

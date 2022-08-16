@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/runtime~Reddit.56b5f32760e083aa51d5.js
-// Retrieved at 8/16/2022, 11:20:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/runtime~Reddit.bfe23cd1218d63f1b3c4.js
+// Retrieved at 8/16/2022, 1:10:12 PM by Reddit Dataminer v1.0.0
 ! function(e) {
 	function o(o) {
 		for (var a, n, r = o[0], s = o[1], c = o[2], l = 0, b = []; l < r.length; l++) n = r[l], Object.prototype.hasOwnProperty.call(d, n) && d[n] && b.push(d[n][0]), d[n] = 0;
@@ -1384,7 +1384,7 @@
 						"reddit-components-Governance-TransactionModals-ConvertToCoinsModal": "054ae05ea0f215208b4b",
 						"vendors~ChatPost~RealtimeGQLSubscriptionAsync": "8357ea142b1ccda1881f",
 						RealtimeGQLSubscriptionAsync: "3ec66f76378e70e75289",
-						OnboardingModal: "bd0afbe3356a227c5858",
+						OnboardingModal: "4850d2791ee2547777b8",
 						AchievementsActions: "a2166abdce6c119db285",
 						Acknowledgements: "4f8b46e9fd4509f430f7",
 						Appeal: "c93f68e1677d468a5064",
@@ -1433,7 +1433,7 @@
 						PostDraft: "faf43a86fe1f15ddec8b",
 						ProfileSnoobuilder: "628b06e148e4e66a5a15",
 						"Frontpage~ModListing": "a98538058803624277c5",
-						Frontpage: "b8a3facc88a86b5bac2c",
+						Frontpage: "0888f4373c56857f15cb",
 						PostSetPage: "44b977654d6b1aed6b6f",
 						Topic: "37dcd4175f9ada9820fc",
 						CommunityAwards: "057f0dccbd3d699662fd",
@@ -1773,4 +1773,4 @@
 	var m = c;
 	t()
 }([]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/runtime~Reddit.56b5f32760e083aa51d5.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/runtime~Reddit.bfe23cd1218d63f1b3c4.js.map
