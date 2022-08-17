@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-LargePost.be411cf115f156db15d6.js
-// Retrieved at 8/16/2022, 11:20:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-LargePost.8def1ea935266070a874.js
+// Retrieved at 8/17/2022, 11:40:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-LargePost"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -2238,7 +2238,7 @@
 					}, [ze, ye]);
 					Object(_.a)(Tt, kt);
 					const [Pt, Nt] = Object(n.useState)(!1), wt = Object(n.useCallback)(() => {
-						Nt(!Pt), Object(ue.Nb)(), Qe(Object(fe.d)(Je))
+						Nt(!Pt), Object(ue.Pb)(), Qe(Object(fe.d)(Je))
 					}, [Pt, Qe, Je]), It = De.isSponsored && !(De.media && E.a.has(De.media.type)) && !Ke, At = !!(Q && (null == Ye ? void 0 : Ye.isNSFW)), Lt = Object(n.useRef)({
 						renderingObjectInfo: De
 					}), Dt = Object(n.useCallback)(e => {
@@ -6016,4 +6016,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-LargePost.be411cf115f156db15d6.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-LargePost.8def1ea935266070a874.js.map

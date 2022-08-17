@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Geotagging.a0f43d2a40e84efcf4ec.js
-// Retrieved at 8/16/2022, 11:20:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Geotagging.d3e152fc30c2aa360b26.js
+// Retrieved at 8/17/2022, 11:40:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Geotagging"], {
 		"./node_modules/p-debounce/index.js": function(e, t, s) {
@@ -1479,8 +1479,8 @@
 				}),
 				A = Q("select_location"),
 				W = Q("confirm_location"),
-				D = Q("undo_location"),
-				H = z("verify_location"),
+				H = Q("undo_location"),
+				D = z("verify_location"),
 				J = z("reject_location");
 
 			function Q(e) {
@@ -1517,8 +1517,8 @@
 			} = s("./node_modules/fbt/lib/FbtPublic.js");
 
 			function V(e) {
-				const t = Object(b.A)(Z) || [];
-				t.push(e), Object(b.Fb)(Z, t)
+				const t = Object(b.B)(Z) || [];
+				t.push(e), Object(b.Hb)(Z, t)
 			}
 
 			function Y(e) {
@@ -1577,13 +1577,13 @@
 				}, "No"), r.a.createElement(S.l, {
 					className: E.a.verifyButton,
 					onClick: function() {
-						V(t.id), _(H(t, t.geoPlace.id)), x(), s(t.id), y()
+						V(t.id), _(D(t, t.geoPlace.id)), x(), s(t.id), y()
 					}
 				}, "Yes")) : r.a.createElement(N.a, {
 					disabled: l,
 					onFocus: () => _(M(t)),
 					onPlace: function(e) {
-						d && !e && _(D(t, d.id)), c(e), e && _(A(t, e.id))
+						d && !e && _(H(t, d.id)), c(e), e && _(A(t, e.id))
 					},
 					onSubmit: async function(e) {
 						let {
@@ -1629,7 +1629,7 @@
 									id: "ChIJIQBpAG2ahYAR_6128GcTUEo"
 								})
 							});
-							const s = Object(b.A)(Z) || [];
+							const s = Object(b.B)(Z) || [];
 							i((t.data.geoContributableSubreddits || []).filter(e => !s.includes(e.id)))
 						}).catch(e => {
 							console.error(e), t(!0)
@@ -1733,4 +1733,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Geotagging.a0f43d2a40e84efcf4ec.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Geotagging.d3e152fc30c2aa360b26.js.map

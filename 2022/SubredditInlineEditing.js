@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditInlineEditing.13f05dca4525bed28615.js
-// Retrieved at 8/16/2022, 11:20:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditInlineEditing.3a2cb0199e897b858a72.js
+// Retrieved at 8/17/2022, 11:40:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditInlineEditing"], {
 		"./src/reddit/components/CommunityTopics/NumTopicsSelected.tsx": function(e, t, s) {
@@ -84,10 +84,10 @@
 			}
 			var f = Object(r.b)(void 0, e => ({
 				onDismissTooltip: () => {
-					e(Object(c.i)()), Object(u.Ab)()
+					e(Object(c.i)()), Object(u.Cb)()
 				},
 				onViewTooltip: () => {
-					Object(u.Xb)()
+					Object(u.Zb)()
 				}
 			}))(Object(p.c)(g));
 			const T = "editable-primary-topic-idcard";
@@ -205,7 +205,7 @@
 				componentDidMount() {
 					const e = this.props.onShowTooltip;
 					this.setState({
-						tooltipDismissed: Object(u.r)()
+						tooltipDismissed: Object(u.s)()
 					}, () => {
 						this.isTooltipEnabled() && e && e()
 					})
@@ -808,8 +808,8 @@
 				M = s.n(k),
 				L = s("./src/reddit/components/ContentTooltip/index.tsx"),
 				F = s("./src/reddit/icons/fonts/Info/index.tsx"),
-				A = s("./src/reddit/components/InlineSubredditEditing/InlineCommunityTopics/InfoTooltip/index.m.less"),
-				H = s.n(A);
+				H = s("./src/reddit/components/InlineSubredditEditing/InlineCommunityTopics/InfoTooltip/index.m.less"),
+				A = s.n(H);
 			const {
 				fbt: U
 			} = s("./node_modules/fbt/lib/FbtPublic.js"), K = Object(r.c)({
@@ -848,15 +848,15 @@
 						onMouseEnter: this.onShowTooltip,
 						onMouseLeave: this.props.onHideTooltip
 					}, o.a.createElement(F.a, {
-						className: Object(a.a)(H.a.infoIcon, {
-							[H.a.activeInfoIcon]: this.tooltipIsOpen()
+						className: Object(a.a)(A.a.infoIcon, {
+							[A.a.activeInfoIcon]: this.tooltipIsOpen()
 						})
 					}), o.a.createElement(L.a, {
 						tooltipId: this.state.tooltipId,
 						defaultTooltipPosition: "bottom",
 						caretColor: W
 					}, o.a.createElement("div", {
-						className: H.a.container
+						className: A.a.container
 					}, U._("Adding community topics allow people to find your community. Add a primary topic and sub topics to be discovered more easily.", null, {
 						hk: "2PLIUO"
 					}))))
@@ -1753,4 +1753,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditInlineEditing.13f05dca4525bed28615.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditInlineEditing.3a2cb0199e897b858a72.js.map

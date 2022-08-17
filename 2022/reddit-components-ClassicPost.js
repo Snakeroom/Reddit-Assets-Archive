@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-ClassicPost.f70146a33846ba0df69d.js
-// Retrieved at 8/16/2022, 11:20:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-ClassicPost.d32b9633387228bee529.js
+// Retrieved at 8/17/2022, 11:40:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-ClassicPost"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -1179,7 +1179,7 @@
 					} = Ge,
 					[ze, Ke] = Object(n.useState)(!1),
 					Qe = Object(n.useCallback)(() => {
-						Ke(!ze), Object(Q.Nb)(), we(Object($.d)(xe))
+						Ke(!ze), Object(Q.Pb)(), we(Object($.d)(xe))
 					}, [ze, xe, we]);
 				let Xe = r.a.createElement(Y.a, {
 					className: ne.a.classicThumbnail,
@@ -5887,4 +5887,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ClassicPost.f70146a33846ba0df69d.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ClassicPost.d32b9633387228bee529.js.map

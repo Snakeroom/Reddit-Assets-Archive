@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CommentsPage~Governance~Reddit~ReportFlow~Subreddit~reddit-components-BlankPost~reddit-components-Cl~5351df81.6f0b7ae2d3cb2bf8cd34.js
-// Retrieved at 8/16/2022, 11:20:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CommentsPage~Governance~Reddit~ReportFlow~Subreddit~reddit-components-BlankPost~reddit-components-Cl~5351df81.79ba7596cb0533fadf91.js
+// Retrieved at 8/17/2022, 11:40:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CommentsPage~Governance~Reddit~ReportFlow~Subreddit~reddit-components-BlankPost~reddit-components-Cl~5351df81"], {
 		"./src/lib/ads/session-signals.ts": function(e, t, r) {
@@ -2598,7 +2598,7 @@
 				} = o, u = !!c && c >= 51 && c <= 100, l = !i || Object(p.a)(i), b = d && d.urlParams.subredditName === i, m = Object(re.Q)(n), f = Object(ee.c)(n, {
 					subredditId: Object(Q.G)(n, i)
 				});
-				if (l || b || Object(W.D)() || !u || !m || f) return;
+				if (l || b || Object(W.E)() || !u || !m || f) return;
 				const O = Object(H.d)(t(), {
 					subredditName: i
 				});
@@ -2612,7 +2612,7 @@
 					id: "createPostCta",
 					kind: X.b.Modal,
 					name: "createPostCta",
-					secondButtonAction: async () => Object(W.Gb)(),
+					secondButtonAction: async () => Object(W.Ib)(),
 					secondButtonText: "Dismiss",
 					text: `There have been over ${g} visits to r/${i} in the past week. Create a new post and start the next conversation.`
 				}))
@@ -11844,4 +11844,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommentsPage~Governance~Reddit~ReportFlow~Subreddit~reddit-components-BlankPost~reddit-components-Cl~5351df81.6f0b7ae2d3cb2bf8cd34.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommentsPage~Governance~Reddit~ReportFlow~Subreddit~reddit-components-BlankPost~reddit-components-Cl~5351df81.79ba7596cb0533fadf91.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostCreation.1e953af3b9826a3135e5.js
-// Retrieved at 8/16/2022, 11:20:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostCreation.1628d8442ff7e23a1878.js
+// Retrieved at 8/17/2022, 11:40:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostCreation", "ChatMessageInput~MembershipPaywallPage~RichTextEditor", "ContributorRequestButton"], {
 		"./node_modules/autosize/dist/autosize.js": function(e, t, n) {
@@ -2126,7 +2126,7 @@
 								commentId: e,
 								followState: t
 							})).ok) {
-							Object(Q.wb)(null !== (p = null === (u = null === (d = s().pages) || void 0 === d ? void 0 : d.comments) || void 0 === u ? void 0 : u.followed) && void 0 !== p ? p : [], null === (m = s().user.account) || void 0 === m ? void 0 : m.id);
+							Object(Q.xb)(null !== (p = null === (u = null === (d = s().pages) || void 0 === d ? void 0 : d.comments) || void 0 === u ? void 0 : u.followed) && void 0 !== p ? p : [], null === (m = s().user.account) || void 0 === m ? void 0 : m.id);
 							const e = r ? o.fbt._("Followed! You’ll get updates when there’s new activity.", null, {
 								hk: "2O1Ou3"
 							}) : o.fbt._("Unfollowed. You won’t get updates on this comment anymore.", null, {
@@ -3309,7 +3309,7 @@
 						}),
 						kind: u.b.SuccessCommunity,
 						text: c
-					})), Object(a.tb)(s + 1)
+					})), Object(a.ub)(s + 1)
 				}
 		},
 		"./src/reddit/actions/postCreation/mediaUpload.ts": function(e, t, n) {
@@ -28880,7 +28880,7 @@
 						const {
 							doNotShowOriginalContentDisclaimerClicked: e
 						} = this.props;
-						e(), Object(Ht.qb)(Bt.ORIGINAL_CONTENT_DISCLAIMER, !0), this.setState({
+						e(), Object(Ht.rb)(Bt.ORIGINAL_CONTENT_DISCLAIMER, !0), this.setState({
 							showOCDisclaimer: !1
 						})
 					}, this.handleOriginalContentClick = () => {
@@ -29153,14 +29153,14 @@
 				Sn = n("./src/reddit/helpers/trackers/postCollection.ts");
 			const Tn = [{
 					id: Wt.d,
-					getShowTimesLeft: Ht.J,
-					setShowTimesLeft: Ht.Mb,
+					getShowTimesLeft: Ht.K,
+					setShowTimesLeft: Ht.Ob,
 					tooltipShown: Sn.n,
 					tooltipDismissed: Sn.m
 				}, {
 					id: Wt.c,
-					getShowTimesLeft: Ht.I,
-					setShowTimesLeft: Ht.Lb,
+					getShowTimesLeft: Ht.J,
+					setShowTimesLeft: Ht.Nb,
 					tooltipShown: Sn.f,
 					tooltipDismissed: Sn.e
 				}],
@@ -34729,4 +34729,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.1e953af3b9826a3135e5.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.1628d8442ff7e23a1878.js.map

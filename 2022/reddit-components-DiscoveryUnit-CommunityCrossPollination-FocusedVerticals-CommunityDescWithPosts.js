@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-DiscoveryUnit-CommunityCrossPollination-FocusedVerticals-CommunityDescWithPosts.b5e0205ff45fb3638124.js
-// Retrieved at 8/16/2022, 11:20:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-DiscoveryUnit-CommunityCrossPollination-FocusedVerticals-CommunityDescWithPosts.bd404219080966221d4d.js
+// Retrieved at 8/17/2022, 11:40:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-DiscoveryUnit-CommunityCrossPollination-FocusedVerticals-CommunityDescWithPosts"], {
 		"./src/higherOrderComponents/withClickTracking/index.tsx": function(e, t, s) {
@@ -179,7 +179,7 @@
 							listingPosition: s
 						} = this.props;
 						this.props.sendEvent(Object(b.d)(t, e, s))
-					}, this.getLocalStorageDisabled = Object(u.T)(), this.setLocalStorageDisabled = Object(u.vb)()
+					}, this.getLocalStorageDisabled = Object(u.U)(), this.setLocalStorageDisabled = Object(u.wb)()
 				}
 				componentDidMount() {
 					const {
@@ -364,8 +364,8 @@
 					}
 				}))(Object(l.c)(U)),
 				B = s("./src/reddit/components/DiscoveryUnit/CommunityCrossPollination/SubredditItem/index.tsx"),
-				V = s("./src/reddit/components/DiscoveryUnit/CommunityCrossPollination/FocusedVerticals/CommunityDescWithPosts/index.m.less"),
-				w = s.n(V);
+				w = s("./src/reddit/components/DiscoveryUnit/CommunityCrossPollination/FocusedVerticals/CommunityDescWithPosts/index.m.less"),
+				V = s.n(w);
 			const {
 				fbt: F
 			} = s("./node_modules/fbt/lib/FbtPublic.js"), A = Object(o.c)({
@@ -417,7 +417,7 @@
 						position: i,
 						pubsub: c
 					}), r.a.createElement("div", {
-						className: w.a.topPostsTitle
+						className: V.a.topPostsTitle
 					}, F._("Top post", null, {
 						hk: "3BdOuj"
 					})), d.slice(0, 1).map(e => r.a.createElement(L, {
@@ -1106,4 +1106,4 @@
 		"./src/reddit/icons/fonts/commonStyles.m.less": function(e, t, s) {}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-DiscoveryUnit-CommunityCrossPollination-FocusedVerticals-CommunityDescWithPosts.b5e0205ff45fb3638124.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-DiscoveryUnit-CommunityCrossPollination-FocusedVerticals-CommunityDescWithPosts.bd404219080966221d4d.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Subreddit.88bc5c20647e40722525.js
-// Retrieved at 8/16/2022, 11:20:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Subreddit.1eccfa01eef94afe4a9a.js
+// Retrieved at 8/17/2022, 11:40:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Subreddit", "Frontpage~ModListing", "reddit-components-Econ-PredictionLeaderboard-Sidebar"], {
 		"./node_modules/@reddit/i18n-tools/runtime/helpers/locale/index.js": function(e, t, n) {
@@ -1948,7 +1948,7 @@
 				} = e, n = Object(c.f)(a.a.AWARDED_LISTING_BANNER, i.g), [u, m] = Object(s.useState)(n ? k.Hidden : k.Visible);
 				if (u === k.Hidden) return null;
 				const p = () => {
-					m(k.Visible), Object(c.lb)(a.a.AWARDED_LISTING_BANNER, !1, i.g)
+					m(k.Visible), Object(c.mb)(a.a.AWARDED_LISTING_BANNER, !1, i.g)
 				};
 				return u === k.Dismissed ? r.a.createElement("div", {
 					className: Object(o.a)(g.a.dismissedContainer, t)
@@ -1969,7 +1969,7 @@
 				})), r.a.createElement(j, null), r.a.createElement(l.a, {
 					className: g.a.close,
 					onClick: () => {
-						m(k.Dismissed), Object(c.lb)(a.a.AWARDED_LISTING_BANNER, !0, i.g)
+						m(k.Dismissed), Object(c.mb)(a.a.AWARDED_LISTING_BANNER, !0, i.g)
 					}
 				}))
 			}
@@ -2314,7 +2314,7 @@
 						a = Object(b.b)(_),
 						i = Object(b.b)(E),
 						[c, d] = function(e, t) {
-							const [n, r] = Object(s.useState)(Object(F.P)(e, t));
+							const [n, r] = Object(s.useState)(Object(F.Q)(e, t));
 							return [n, Object(s.useCallback)(() => {
 								const n = Object(F.a)(e, t);
 								r(n)
@@ -2344,7 +2344,7 @@
 							e.stopPropagation(), a.visible ? f() : O()
 						}, [f, O, a.visible]),
 						w = Object(s.useCallback)(t => {
-							t === v.b.FREQUENT && Object(F.db)(e.userId, e.subredditId)
+							t === v.b.FREQUENT && Object(F.eb)(e.userId, e.subredditId)
 						}, [e.subredditId, e.userId]),
 						P = Object(s.useCallback)(s => {
 							const {
@@ -2579,7 +2579,7 @@
 					small: !0,
 					isFullWidth: !0,
 					afterUnsubscribeAction: () => {
-						t && (Object(F.db)(e.userId, t), e.updateSubredditInfo())
+						t && (Object(F.eb)(e.userId, t), e.updateSubredditInfo())
 					}
 				})), e.userIsSubscriber && t && e.notificationLevel && r.a.createElement("div", {
 					className: ae.a.notificationButtonContainer
@@ -3406,7 +3406,7 @@
 			class _ extends o.a.Component {
 				constructor(e) {
 					super(e), this.closeBanner = () => {
-						Object(u.lb)(d.a.CREATE_POST_BANNER, !0, this.props.subreddit.id), this.setState({
+						Object(u.mb)(d.a.CREATE_POST_BANNER, !0, this.props.subreddit.id), this.setState({
 							visible: !1
 						}), this.props.showToast(), this.props.sendEvent(p())
 					}, this.createPost = () => {
@@ -6892,7 +6892,7 @@
 						const {
 							isFullscreen: e
 						} = this.state, t = this.isAnyRedditModalOpened();
-						e && t ? this.closeAnyRedditModal() : this.state.isFullscreen || (this.toggleFullScreen(!0), this.props.sendEvent(Object(S.c)()))
+						e && t ? this.closeAnyRedditModal() : this.state.isFullscreen || (this.toggleFullScreen(!0), this.props.sendEvent(Object(S.b)()))
 					}, this.messenger = new E(this.iframeRef, this.getAuthClientData, this.onMessageClose, this.onMessageSignIn, this.onMessageSyncCoordinates, this.onMessageOpenProfile);
 					const {
 						iframeURL: t,
@@ -14364,12 +14364,10 @@
 		},
 		"./src/reddit/helpers/trackers/hotPotato.ts": function(e, t, n) {
 			"use strict";
-			n.d(t, "c", (function() {
+			n.d(t, "b", (function() {
 				return o
-			})), n.d(t, "b", (function() {
-				return a
 			})), n.d(t, "a", (function() {
-				return i
+				return a
 			}));
 			var s = n("./src/reddit/constants/tracking.ts"),
 				r = n("./src/reddit/selectors/telemetry.ts");
@@ -14384,12 +14382,6 @@
 					action: s.c.CLICK,
 					noun: "hot_potato",
 					source: "nav"
-				}),
-				i = () => e => ({
-					...Object(r.n)(e),
-					action: s.c.CLICK,
-					noun: "hot_potato",
-					source: "inbox"
 				})
 		},
 		"./src/reddit/helpers/trackers/navigation.ts": function(e, t, n) {
@@ -18107,4 +18099,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Subreddit.88bc5c20647e40722525.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Subreddit.1eccfa01eef94afe4a9a.js.map

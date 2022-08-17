@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-pages-meta-MainnetPointsMigrationPage.bae2c9a391c88a018865.js
-// Retrieved at 8/16/2022, 11:20:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-pages-meta-MainnetPointsMigrationPage.a468ba85ccb15b0c3944.js
+// Retrieved at 8/17/2022, 11:40:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-pages-meta-MainnetPointsMigrationPage"], {
 		"./node_modules/lodash/uniqueId.js": function(e, t, n) {
@@ -1834,4 +1834,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-pages-meta-MainnetPointsMigrationPage.bae2c9a391c88a018865.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-pages-meta-MainnetPointsMigrationPage.a468ba85ccb15b0c3944.js.map

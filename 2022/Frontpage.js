@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Frontpage.6bd9e5ec7c7700b7d7eb.js
-// Retrieved at 8/17/2022, 10:10:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Frontpage.b52b6446644c1644fc59.js
+// Retrieved at 8/17/2022, 11:40:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Frontpage"], {
 		"./node_modules/intersection-observer/intersection-observer.js": function(e, t) {
@@ -1788,7 +1788,7 @@
 						j === M.Visible && t === f.a.Achievements && y(Object(b.m)())
 					}, [t, j, y]), j === M.Hidden) return null;
 				const A = () => {
-						C(M.Visible), Object(p.lb)(d.a.AVATAR_LISTING_BANNER, !1, u.c)
+						C(M.Visible), Object(p.mb)(d.a.AVATAR_LISTING_BANNER, !1, u.c)
 					},
 					S = () => {
 						y(Object(b.e)(v)), E(Object(o.b)({
@@ -1796,7 +1796,7 @@
 						}))
 					},
 					I = () => {
-						Object(p.lb)(d.a.AVATAR_LISTING_BANNER, !0, u.c), t === f.a.Achievements ? k() : S()
+						Object(p.mb)(d.a.AVATAR_LISTING_BANNER, !0, u.c), t === f.a.Achievements ? k() : S()
 					};
 				if (j === M.Dismissed) return c.a.createElement("div", {
 					className: Object(n.a)(_.a.dismissedContainer, a)
@@ -1885,7 +1885,7 @@
 						[_.a.closeLight]: v
 					}),
 					onClick: () => {
-						C(M.Dismissed), Object(p.lb)(d.a.AVATAR_LISTING_BANNER, !0, u.c), t !== f.a.Achievements && y(Object(b.k)(v)), t === f.a.Achievements && y(Object(b.j)())
+						C(M.Dismissed), Object(p.mb)(d.a.AVATAR_LISTING_BANNER, !0, u.c), t !== f.a.Achievements && y(Object(b.k)(v)), t === f.a.Achievements && y(Object(b.j)())
 					}
 				}), c.a.createElement("div", {
 					className: _.a.contentWrapper
@@ -2394,13 +2394,13 @@
 					}
 				}
 				async getSubredditForAdoption() {
-					let e = ce.cachedData || Object(z.A)(H.b.SUBREDDITS_FOR_ADOPTION_STORE) || null;
+					let e = ce.cachedData || Object(z.B)(H.b.SUBREDDITS_FOR_ADOPTION_STORE) || null;
 					if (!e || Date.now() - e.fetchedAt > ne) {
 						const t = await $(this.props.apiContext());
 						t.ok && (e = {
 							subreddits: t.body.data.subreddits.map(e => e.name),
 							fetchedAt: Date.now()
-						}, Object(z.Fb)(H.b.SUBREDDITS_FOR_ADOPTION_STORE, e))
+						}, Object(z.Hb)(H.b.SUBREDDITS_FOR_ADOPTION_STORE, e))
 					}
 					return ce.cachedData = e, e ? e.subreddits : []
 				}
@@ -3114,7 +3114,7 @@
 				const s = Object(c.d)(),
 					i = Object(f.a)();
 				Object(n.useEffect)(() => {
-					i(Object(g.r)())
+					i(Object(g.t)())
 				}, []);
 				const l = Object(c.e)(x.c),
 					d = Object(c.e)(_.d),
@@ -7587,4 +7587,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Frontpage.6bd9e5ec7c7700b7d7eb.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Frontpage.b52b6446644c1644fc59.js.map

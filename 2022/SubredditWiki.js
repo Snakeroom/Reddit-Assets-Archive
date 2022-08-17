@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditWiki.1d79752575492b2a5f2b.js
-// Retrieved at 8/16/2022, 11:20:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditWiki.15a38be9088518af1b03.js
+// Retrieved at 8/17/2022, 11:40:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditWiki"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -3445,7 +3445,7 @@
 						o = Object(b.b)(k),
 						a = Object(b.b)(y),
 						[d, c] = function(e, t) {
-							const [s, n] = Object(r.useState)(Object(U.P)(e, t));
+							const [s, n] = Object(r.useState)(Object(U.Q)(e, t));
 							return [s, Object(r.useCallback)(() => {
 								const s = Object(U.a)(e, t);
 								n(s)
@@ -3475,7 +3475,7 @@
 							e.stopPropagation(), o.visible ? f() : O()
 						}, [f, O, o.visible]),
 						S = Object(r.useCallback)(t => {
-							t === x.b.FREQUENT && Object(U.db)(e.userId, e.subredditId)
+							t === x.b.FREQUENT && Object(U.eb)(e.userId, e.subredditId)
 						}, [e.subredditId, e.userId]),
 						P = Object(r.useCallback)(r => {
 							const {
@@ -3710,7 +3710,7 @@
 					small: !0,
 					isFullWidth: !0,
 					afterUnsubscribeAction: () => {
-						t && (Object(U.db)(e.userId, t), e.updateSubredditInfo())
+						t && (Object(U.eb)(e.userId, t), e.updateSubredditInfo())
 					}
 				})), e.userIsSubscriber && t && e.notificationLevel && n.a.createElement("div", {
 					className: oe.a.notificationButtonContainer
@@ -10634,4 +10634,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditWiki.1d79752575492b2a5f2b.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditWiki.15a38be9088518af1b03.js.map

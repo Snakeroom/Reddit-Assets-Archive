@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-pages-meta-ArbitrumPointsMigrationPage.4c8fa4f7b89d44efd6e2.js
-// Retrieved at 8/16/2022, 11:20:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-pages-meta-ArbitrumPointsMigrationPage.29e8f936c0159f6bf936.js
+// Retrieved at 8/17/2022, 11:40:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-pages-meta-ArbitrumPointsMigrationPage"], {
 		"./node_modules/lodash/uniqueId.js": function(e, t, n) {
@@ -1234,12 +1234,12 @@
 				}
 				throw new Error(`Timed out while trying to find redeemable ticket ${e}.`)
 			}
-			async function A(e, t) {
+			async function N(e, t) {
 				const n = new s.ethers.providers.JsonRpcProvider(Object(m.i)(m.a.ArbitrumRinkeby)),
 					a = new s.ethers.Contract(e, y.a, n);
 				return await a.balanceOf(t)
 			}
-			var N = n("./src/reddit/helpers/localStorage/index.ts"),
+			var A = n("./src/reddit/helpers/localStorage/index.ts"),
 				_ = n("./src/reddit/selectors/user.ts"),
 				S = n("./src/reddit/icons/svgs/CheckmarkFitted/index.tsx"),
 				P = n("./src/reddit/icons/svgs/ClearFilled/index.tsx"),
@@ -1280,11 +1280,11 @@
 											for (const s of t) a = await x(s, n), console.log(`Looking for ticket ${a} corresponding to SEQ ${s}`), await O(a, n, e, Date.now() + C);
 											return console.log("All tickets redeemed!"), a
 										}(e, n.seqNums);
-										y(a), h(!0), o(), f(await A(n.l2ContractAddress, t))
+										y(a), h(!0), o(), f(await N(n.l2ContractAddress, t))
 									}
 								} else {
 									if ("4" !== a) throw new Error("Wallet must be set to Rinkeby Test Network");
-									n.seqNums = await j(e, t, n.l1ContractAddress, n.balance), n.originalL2Balance = await A(n.l2ContractAddress, t), o(n), u(!0)
+									n.seqNums = await j(e, t, n.l1ContractAddress, n.balance), n.originalL2Balance = await N(n.l2ContractAddress, t), o(n), u(!0)
 								}
 							} catch (e) {
 								throw console.error("Got error while running migration: ", e), c(e.message || e), e
@@ -1323,7 +1323,7 @@
 			const V = "arb-migration-l1";
 
 			function W(e) {
-				e ? Object(N.Fb)(V, e) : window.localStorage && window.localStorage.removeItem(V)
+				e ? Object(A.Hb)(V, e) : window.localStorage && window.localStorage.removeItem(V)
 			}
 
 			function q() {
@@ -1334,7 +1334,7 @@
 					[p, y] = Object(r.useState)(Object(E.e)()),
 					[b, h] = Object(r.useState)(function() {
 						var e, t;
-						const n = Object(N.A)(V);
+						const n = Object(A.B)(V);
 						return n && (n.balance = a.a.from(n.balance), n.seqNums = null === (e = n.seqNums) || void 0 === e ? void 0 : e.map(e => a.a.from(e)), n.originalL2Balance = null !== (t = n.originalL2Balance) && void 0 !== t ? t : a.a.from(n.originalL2Balance)), n
 					}()),
 					[g, f] = Object(r.useState)((null == b ? void 0 : b.destinationAddress) || ""),
@@ -1425,4 +1425,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-pages-meta-ArbitrumPointsMigrationPage.4c8fa4f7b89d44efd6e2.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-pages-meta-ArbitrumPointsMigrationPage.29e8f936c0159f6bf936.js.map
