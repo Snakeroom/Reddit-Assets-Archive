@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SnoovatarModal.6f83fcb36dc1711f93bc.js
-// Retrieved at 8/16/2022, 11:20:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SnoovatarModal.ccfacf6f316a91c53086.js
+// Retrieved at 8/17/2022, 5:40:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SnoovatarModal"], {
 		"./src/reddit/components/SnoovatarModal/SnoovatarIframe.tsx": function(e, t, a) {
@@ -31,7 +31,7 @@
 				}), u && m.set("source", u);
 				const v = Object(n.e)(e => e.user.session),
 					b = Object(s.useRef)(null),
-					O = Object(s.useCallback)(e => {
+					p = Object(s.useCallback)(e => {
 						v && e && e.postMessage({
 							type: "injectAuth",
 							headers: {
@@ -42,13 +42,13 @@
 					}, [v]);
 				return Object(s.useEffect)(() => {
 					var e;
-					return O(null === (e = null == b ? void 0 : b.current) || void 0 === e ? void 0 : e.contentWindow)
-				}, [b, O]), Object(s.useEffect)(() => {
+					return p(null === (e = null == b ? void 0 : b.current) || void 0 === e ? void 0 : e.contentWindow)
+				}, [b, p]), Object(s.useEffect)(() => {
 					const e = e => {
-						"refreshAuth" === (null == e ? void 0 : e.data) && O(e.source)
+						"refreshAuth" === (null == e ? void 0 : e.data) && p(e.source)
 					};
 					return window.addEventListener("message", e), () => window.removeEventListener("message", e)
-				}, [O]), r.a.createElement("div", {
+				}, [p]), r.a.createElement("div", {
 					className: Object(d.a)(l.a.iframeContainer, t)
 				}, r.a.createElement("iframe", {
 					ref: b,
@@ -80,8 +80,8 @@
 				m = a("./src/reddit/hooks/useTracking.ts"),
 				v = a("./src/reddit/selectors/activeModal.ts"),
 				b = a("./src/reddit/selectors/experiments/econ/index.ts"),
-				O = a("./src/reddit/selectors/experiments/econ/paymentsSandbox.ts"),
-				p = a("./src/reddit/selectors/user.ts"),
+				p = a("./src/reddit/selectors/experiments/econ/paymentsSandbox.ts"),
+				O = a("./src/reddit/selectors/user.ts"),
 				j = a("./src/telemetry/index.ts"),
 				f = a("./src/reddit/components/SnoovatarModal/index.m.less"),
 				_ = a.n(f),
@@ -117,7 +117,7 @@
 				w = Object(r.a)(e => {
 					const t = Object(d.e)(e => e.user.session),
 						[r, n] = Object(o.useState)(!1),
-						l = Object(d.e)(O.a),
+						l = Object(d.e)(p.a),
 						v = Object(o.useMemo)(() => ({
 							headers: {
 								Authorization: `Bearer ${t.accessToken}`
@@ -126,7 +126,7 @@
 						}), [t]),
 						f = Object(m.a)(),
 						x = Object(d.e)(e => v && Object(b.e)(e)),
-						w = Object(d.e)(e => !Object(p.Q)(e) && Object(b.A)(e));
+						w = Object(d.e)(e => !Object(O.Q)(e) && Object(b.A)(e));
 					Object(o.useEffect)(() => {
 						(async () => {
 							await a.e(7).then(a.t.bind(null, "./node_modules/@reddit/avatars/style.css", 7))
@@ -195,8 +195,8 @@
 			}));
 			var s = a("./src/reddit/constants/experiments.ts"),
 				r = a("./src/reddit/selectors/experiments/econ/simpleExperiment.ts");
-			const n = Object(r.a)(s.od)
+			const n = Object(r.a)(s.pd)
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SnoovatarModal.6f83fcb36dc1711f93bc.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SnoovatarModal.ccfacf6f316a91c53086.js.map

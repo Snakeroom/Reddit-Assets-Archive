@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Reddit~StandalonePostPage.dc5eec4e1633a8180d98.js
-// Retrieved at 8/17/2022, 5:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Reddit~StandalonePostPage.aef8fcb9cd37ef220124.js
+// Retrieved at 8/17/2022, 5:40:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Reddit~StandalonePostPage"], {
 		"./src/higherOrderComponents/asModal/helpers.ts": function(e, t, n) {
@@ -442,8 +442,8 @@
 					queryVariables: x,
 					shouldDisjointAnimation: j,
 					subsequentRecurringDelay: C
-				} = e, [y, O] = Object(s.useState)(!1), [w, g] = Object(s.useState)(!0), [_, E] = Object(s.useState)([]), [S, N] = Object(s.useState)(c(p).reverse()), k = Object(s.useRef)(!1), T = Object(s.useRef)(null), I = Object(s.useRef)(e => {}), A = Object(s.useRef)();
-				I.current = Object(s.useCallback)(e => {
+				} = e, [y, O] = Object(s.useState)(!1), [w, g] = Object(s.useState)(!0), [_, E] = Object(s.useState)([]), [S, N] = Object(s.useState)(c(p).reverse()), k = Object(s.useRef)(!1), I = Object(s.useRef)(null), T = Object(s.useRef)(e => {}), A = Object(s.useRef)();
+				T.current = Object(s.useCallback)(e => {
 					let n = e || l();
 					const s = [...S].reverse().join("");
 					let r = parseInt(s) + n;
@@ -458,7 +458,7 @@
 					R = Object(s.useRef)();
 				M.current = Object(s.useCallback)(() => {
 					R.current = setTimeout(() => {
-						I.current();
+						T.current();
 						const e = [..._].reverse().join("");
 						parseInt(e) < t && M.current()
 					}, C())
@@ -472,11 +472,11 @@
 								intersectionRatio: n
 							} = e, s = 1 !== n;
 							t ? (P.current = !0, k.current || (k.current = !0, B.current = setTimeout(() => {
-								I.current(), M.current()
-							}, u())), F.current > 0 && (I.current(F.current), F.current = 0)) : s && (P.current = !1)
+								T.current(), M.current()
+							}, u())), F.current > 0 && (T.current(F.current), F.current = 0)) : s && (P.current = !1)
 						})
 					}, []);
-				Object(i.a)(T, D);
+				Object(i.a)(I, D);
 				const [L, V] = Object(s.useState)(!1), U = Object(s.useCallback)(e => {
 					e.forEach(e => {
 						const {
@@ -488,12 +488,12 @@
 				}, []), W = Object(s.useRef)({
 					rootMargin: "2000px 0px 2000px 0px"
 				});
-				Object(i.a)(T, U, W.current);
+				Object(i.a)(I, U, W.current);
 				const q = Object(o.a)(t);
 				Object(s.useEffect)(() => {
 					if (void 0 !== q && q !== t) {
 						const e = t - q;
-						P.current ? I.current(e) : F.current += e
+						P.current ? T.current(e) : F.current += e
 					}
 					return () => {
 						clearTimeout(B.current), clearTimeout(R.current), clearTimeout(A.current)
@@ -539,7 +539,7 @@
 					className: d.a.srOnly,
 					role: "screen-reader"
 				}, [...S].reverse().join(""))), r.a.createElement("span", {
-					ref: T
+					ref: I
 				}), L && r.a.createElement(a.a, {
 					variables: x,
 					onData: h ? m : f,
@@ -795,12 +795,12 @@
 				S = n("./src/reddit/components/FlairSearch/index.m.less"),
 				N = n.n(S);
 			const k = Object(l.a)(e => e && Object(u.c)(e)),
-				T = Object(i.c)({
+				I = Object(i.c)({
 					areFlairRestrictionsEnabled: d.d.flairRestrictions,
 					isModerator: h.g
 				}),
-				I = Object(a.b)(T);
-			t.a = I(e => {
+				T = Object(a.b)(I);
+			t.a = T(e => {
 				const {
 					flairTemplateType: t,
 					flair: n,
@@ -980,9 +980,9 @@
 			})), n.d(t, "u", (function() {
 				return k
 			})), n.d(t, "r", (function() {
-				return T
-			})), n.d(t, "a", (function() {
 				return I
+			})), n.d(t, "a", (function() {
+				return T
 			})), n.d(t, "s", (function() {
 				return A
 			})), n.d(t, "c", (function() {
@@ -1024,8 +1024,8 @@
 				S = r.a.div("ModalMain", u.a),
 				N = r.a.textarea("TextArea", u.a),
 				k = r.a.wrapped(i.l, "WarningButton", u.a),
-				T = r.a.wrapped(i.l, "PrimaryButton", u.a),
-				I = r.a.wrapped(i.o, "CancelButton", u.a),
+				I = r.a.wrapped(i.l, "PrimaryButton", u.a),
+				T = r.a.wrapped(i.o, "CancelButton", u.a),
 				A = r.a.wrapped(i.r, "RemoveButton", u.a),
 				M = e => {
 					let {
@@ -1514,9 +1514,9 @@
 		"./src/reddit/components/VerticalVotes/votes.tsx": function(e, t, n) {
 			"use strict";
 			n.d(t, "a", (function() {
-				return T
-			})), n.d(t, "b", (function() {
 				return I
+			})), n.d(t, "b", (function() {
+				return T
 			})), n.d(t, "c", (function() {
 				return A
 			})), n.d(t, "d", (function() {
@@ -1605,7 +1605,7 @@
 					[S.a.dark]: Object(g.b)(Object(w.a)(e)),
 					[S.a.nightmode]: e.isNightMode
 				}),
-				T = Object(a.a)(e => {
+				I = Object(a.a)(e => {
 					const {
 						voteIcons: t
 					} = Object(_.a)(e), n = {
@@ -1625,7 +1625,7 @@
 						style: n
 					}))
 				}),
-				I = Object(a.a)(e => {
+				T = Object(a.a)(e => {
 					const {
 						voteIcons: t
 					} = Object(_.a)(e), n = {
@@ -2182,8 +2182,8 @@
 					}
 				}),
 				k = () => 0,
-				T = Object(l.b)(N),
-				I = Object(o.a)(e => {
+				I = Object(l.b)(N),
+				T = Object(o.a)(e => {
 					const t = {
 							color: e.light ? h.a.lightboxHeaderText : S(e)
 						},
@@ -2212,7 +2212,7 @@
 								delta: t
 							}))
 						}, [O, o]),
-						T = Object(i.useRef)({
+						I = Object(i.useRef)({
 							input: {
 								channel: {
 									teamOwner: "CONTENT_AND_COMMUNITIES",
@@ -2221,7 +2221,7 @@
 								}
 							}
 						}),
-						I = !e.isScoreHidden && b && n < C.a,
+						T = !e.isScoreHidden && b && n < C.a,
 						A = Object(v.a)(E),
 						M = n < 0 ? 0 : n;
 					return c.a.createElement("div", {
@@ -2230,7 +2230,7 @@
 						onMouseEnter: j ? A.show : void 0,
 						onMouseLeave: j ? A.hide : void 0,
 						ref: j ? A.target.ref : void 0
-					}, (I || x) && c.a.createElement(c.a.Fragment, null, c.a.createElement(u.b, {
+					}, (T || x) && c.a.createElement(c.a.Fragment, null, c.a.createElement(u.b, {
 						initialDisplayCount: M,
 						countToUpperBound: M,
 						initialDelay: k,
@@ -2240,16 +2240,16 @@
 						postId: o,
 						featureName: u.a.Vote,
 						queryKey: "postVoteCount",
-						queryVariables: T.current,
+						queryVariables: I.current,
 						onDataCB: N,
-						isLoadTestOnly: x && !I
-					})), !I && g, j && y && c.a.createElement(m.a, A, c.a.createElement(p.a, {
+						isLoadTestOnly: x && !T
+					})), !T && g, j && y && c.a.createElement(m.a, A, c.a.createElement(p.a, {
 						className: _.a.viewCount,
 						post: y,
 						showViewCount: !1
 					})))
 				});
-			t.a = T(I)
+			t.a = I(T)
 		},
 		"./src/reddit/controls/TextButton/index.m.less": function(e, t, n) {
 			e.exports = {
@@ -3128,7 +3128,7 @@
 					return Object(r.c)(e, {
 						experimentEligibilitySelector: r.a,
 						experimentName: s.yc
-					}) === s.Tc.Enabled
+					}) === s.Uc.Enabled
 				}
 		},
 		"./src/reddit/selectors/experiments/presence.ts": function(e, t, n) {
@@ -3141,8 +3141,8 @@
 			const o = e => {
 				return Object(r.c)(e, {
 					experimentEligibilitySelector: r.a,
-					experimentName: s.af
-				}) === s.Kd
+					experimentName: s.bf
+				}) === s.Ld
 			}
 		},
 		"./src/reddit/selectors/userPrefs.ts": function(e, t, n) {
@@ -3227,4 +3227,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit~StandalonePostPage.dc5eec4e1633a8180d98.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit~StandalonePostPage.aef8fcb9cd37ef220124.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-ConvertToCoinsModal.054ae05ea0f215208b4b.js
-// Retrieved at 8/16/2022, 11:20:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-ConvertToCoinsModal.4ea552832a9052e486b3.js
+// Retrieved at 8/17/2022, 5:40:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Governance-TransactionModals-ConvertToCoinsModal"], {
 		"./src/reddit/actions/gold/econPurchase.ts": function(e, t, n) {
@@ -59,9 +59,9 @@
 			})), n.d(t, "c", (function() {
 				return k
 			})), n.d(t, "a", (function() {
-				return S
-			})), n.d(t, "f", (function() {
 				return L
+			})), n.d(t, "f", (function() {
+				return T
 			})), n.d(t, "i", (function() {
 				return D
 			}));
@@ -290,7 +290,7 @@
 						duration: l.a,
 						text: e
 					}))
-				}, S = (e, t, n) => async (a, c, s) => {
+				}, L = (e, t, n) => async (a, c, s) => {
 					let {
 						gqlContext: o
 					} = s;
@@ -318,12 +318,12 @@
 							hk: "4yuT5m"
 						})))
 					}
-				}, T = Object(u.a)(f.U), L = e => {
+				}, S = Object(u.a)(f.U), T = e => {
 					let {
 						user: t
 					} = e;
 					return async e => {
-						await e(Object(g.l)(!0)), e(T({
+						await e(Object(g.l)(!0)), e(S({
 							user: t
 						}))
 					}
@@ -338,7 +338,7 @@
 			})), n.d(t, "b", (function() {
 				return A
 			})), n.d(t, "a", (function() {
-				return S
+				return L
 			}));
 			var r = n("./node_modules/fbt/lib/FbtPublic.js"),
 				a = n("./src/lib/makeActionCreator/index.ts"),
@@ -484,7 +484,7 @@
 						});
 						return t(M(e)), t(P(e)), !1
 					}
-				}, S = e => async t => {
+				}, L = e => async t => {
 					const n = await t(A(e));
 					return n ? (t(Object(s.f)({
 						duration: s.a,
@@ -1174,9 +1174,9 @@
 				I = n("./src/reddit/helpers/crypto/transactions.ts"),
 				z = n("./src/reddit/helpers/crypto/vaultTransactions.ts"),
 				A = n("./src/reddit/helpers/trackers/crypto.ts"),
-				S = n("./src/reddit/hooks/useTracking.ts"),
-				T = n("./src/reddit/models/Toast/index.ts"),
-				L = n("./src/reddit/selectors/gold/econPurchase.ts"),
+				L = n("./src/reddit/hooks/useTracking.ts"),
+				S = n("./src/reddit/models/Toast/index.ts"),
+				T = n("./src/reddit/selectors/gold/econPurchase.ts"),
 				D = n("./src/reddit/selectors/gold/productOffers.ts"),
 				G = n("./src/reddit/selectors/gov.ts"),
 				F = n("./src/reddit/components/Governance/TransactionModals/VaultTransactionModal/index.tsx"),
@@ -1310,11 +1310,11 @@
 							})) || void 0 === t ? void 0 : t[0]
 						},
 						productOffersPending: D.g,
-						subredditLockedCoins: e => Object(L.a)(e, m)
+						subredditLockedCoins: e => Object(T.a)(e, m)
 					})),
 					h = null === (n = null === (t = null == f ? void 0 : f.pricePackages) || void 0 === t ? void 0 : t[0]) || void 0 === n ? void 0 : n.price,
 					g = Object(o.a)(),
-					y = Object(S.a)(),
+					y = Object(L.a)(),
 					[x, B] = Object(r.useState)(""),
 					[R, H] = Object(r.useState)(0);
 				Object(r.useEffect)(() => {
@@ -1349,7 +1349,7 @@
 						q(), g(function() {
 							const e = Object(P.e)(d.fbt._("Processing your conversion...", null, {
 								hk: "4dA09t"
-							}), T.b.SuccessCommunity);
+							}), S.b.SuccessCommunity);
 							return e.duration = 15e3, Object(P.f)(e)
 						}()), async function(e, t, n, r, a) {
 							await Object(z.a)(t, n);
@@ -1357,7 +1357,7 @@
 								force: !0
 							});
 							await e(Object(k.a)(c, async e => {
-								const t = Object(L.a)(e(), {
+								const t = Object(T.a)(e(), {
 									subredditId: r.id
 								});
 								return a < t || null
@@ -1368,13 +1368,13 @@
 							y(Object(A.d)("coins", u, new E.a(x).dividedBy(Q).toFixed())), g(function() {
 								const e = Object(P.e)(d.fbt._("Your Coins are ready!", null, {
 									hk: "7ewJ6"
-								}), T.b.SuccessCommunityGreen);
+								}), S.b.SuccessCommunityGreen);
 								return e.duration = 15e3, Object(P.f)(e)
 							}())
 						}).catch(e => {
 							U(e.toString()), g(Object(P.f)(Object(P.e)(d.fbt._("There was an error while purchasing your Coins. Please try again later", null, {
 								hk: "nEHTT"
-							}), T.b.Error)))
+							}), S.b.Error)))
 						})
 					},
 					onTransactionFailure: U,
@@ -2262,14 +2262,14 @@
 			const c = e => {
 					return Object(a.c)(e, {
 						experimentEligibilitySelector: a.a,
-						experimentName: r.ue
-					}) === r.Kd
+						experimentName: r.ve
+					}) === r.Ld
 				},
 				s = e => {
 					return Object(a.c)(e, {
 						experimentEligibilitySelector: a.a,
-						experimentName: r.re
-					}) === r.Kd
+						experimentName: r.se
+					}) === r.Ld
 				}
 		},
 		"./src/reddit/selectors/gold/econPurchase.ts": function(e, t, n) {
@@ -2455,4 +2455,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-ConvertToCoinsModal.054ae05ea0f215208b4b.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-ConvertToCoinsModal.4ea552832a9052e486b3.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/AuthorHovercard~Reddit.137cb3e07dfbb15292a1.js
-// Retrieved at 8/17/2022, 11:40:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/AuthorHovercard~Reddit.a4432a14ddb39c819eb5.js
+// Retrieved at 8/17/2022, 5:40:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["AuthorHovercard~Reddit"], {
 		"./src/lib/browser/isIncognito.ts": function(e, t, n) {
@@ -88,9 +88,9 @@
 			})), n.d(t, "unsubscribeFromPNs", (function() {
 				return A
 			})), n.d(t, "requestBrowserNotificationPermissionPromptByUser", (function() {
-				return R
-			})), n.d(t, "subscribeToPermissionsChange", (function() {
 				return H
+			})), n.d(t, "subscribeToPermissionsChange", (function() {
+				return R
 			}));
 			var i = n("./node_modules/fbt/lib/FbtPublic.js"),
 				a = n("./node_modules/lodash/omit.js"),
@@ -119,7 +119,7 @@
 			const E = e => Object(C.c)(e, {
 				experimentName: j.lc,
 				experimentEligibilitySelector: C.a
-			}) === j.Kd;
+			}) === j.Ld;
 			var I = n("./src/reddit/selectors/meta.ts"),
 				S = n("./src/reddit/selectors/user.ts");
 			let B = !1;
@@ -203,7 +203,7 @@
 						})))
 					}
 				} catch (a) {}
-			}, R = e => async (t, n) => {
+			}, H = e => async (t, n) => {
 				const i = n();
 				if (Object(b.a)(i) === l.c.NotificationsSupported) switch (Object(c.a)()) {
 					case l.a.Default:
@@ -213,7 +213,7 @@
 					case l.a.Denied:
 						t(Object(m.h)(e))
 				}
-			}, H = () => async (e, t) => {
+			}, R = () => async (e, t) => {
 				var n;
 				if (!(null === (n = null === navigator || void 0 === navigator ? void 0 : navigator.permissions) || void 0 === n ? void 0 : n.query)) return;
 				const i = t();
@@ -347,8 +347,8 @@
 				} = e;
 				var g, _, x, O, N, y, k, j, C, E, I, S, B, T, w, P, L;
 				const A = Object(o.d)(),
-					R = Object(m.a)(),
-					[H, U, F] = function(e, t, n) {
+					H = Object(m.a)(),
+					[R, U, F] = function(e, t, n) {
 						const [a, o] = Object(i.useState)(Object(u.r)(e, t) || 0), s = Object(i.useCallback)(() => {
 							o(a + 1), Object(u.Ab)(e, t, a + 1)
 						}, []), r = Object(i.useCallback)(() => {
@@ -363,10 +363,10 @@
 						return !!(null === (n = f(e).dismissedBanners) || void 0 === n ? void 0 : n.find(e => e === t))
 					})(e, n.notificationName));
 				Object(i.useEffect)(() => {
-					U(), t ? (R(Object(d.B)(n.notificationName)), R(Object(d.C)(n.notificationName))) : (R(Object(d.p)(n.notificationName)), R(Object(d.q)(n.notificationName)))
+					U(), t ? (H(Object(d.B)(n.notificationName)), H(Object(d.C)(n.notificationName))) : (H(Object(d.p)(n.notificationName)), H(Object(d.q)(n.notificationName)))
 				}, []);
 				const V = null === (_ = null == n ? void 0 : n.persistence) || void 0 === _ ? void 0 : _.maxViews;
-				if (!n || V && H > V) return null;
+				if (!n || V && R > V) return null;
 				const q = !!(null == n ? void 0 : n.primaryCta),
 					K = !!(null == n ? void 0 : n.secondaryCta),
 					J = !!(null == n ? void 0 : n.titleImage),
@@ -391,7 +391,7 @@
 						backgroundImage: `url(${n.bodyBackgroundImage})`
 					},
 					onClick: e => {
-						e.stopPropagation(), Object(r.e)(n.linkUrl, "_blank"), Z(), R(t ? Object(d.A)(n.notificationName, d.b.BANNER) : Object(d.o)(n.notificationName, d.b.BANNER))
+						e.stopPropagation(), Object(r.e)(n.linkUrl, "_blank"), Z(), H(t ? Object(d.A)(n.notificationName, d.b.BANNER) : Object(d.o)(n.notificationName, d.b.BANNER))
 					}
 				}, a.a.createElement("div", {
 					className: v.a.Content
@@ -425,7 +425,7 @@
 					size: l.d.XS,
 					onClick: e => {
 						var i;
-						e.stopPropagation(), (null === (i = n.primaryCta) || void 0 === i ? void 0 : i.actionType) === p.a.GOTO && n.primaryCta.url && Object(r.e)(n.primaryCta.url, "_blank"), Z(), R(t ? Object(d.A)(n.notificationName, d.b.CTA_1) : Object(d.o)(n.notificationName, d.b.CTA_1))
+						e.stopPropagation(), (null === (i = n.primaryCta) || void 0 === i ? void 0 : i.actionType) === p.a.GOTO && n.primaryCta.url && Object(r.e)(n.primaryCta.url, "_blank"), Z(), H(t ? Object(d.A)(n.notificationName, d.b.CTA_1) : Object(d.o)(n.notificationName, d.b.CTA_1))
 					},
 					style: {
 						...Q
@@ -438,7 +438,7 @@
 					size: l.d.XS,
 					className: v.a.SecondaryButton,
 					onClick: e => {
-						e.stopPropagation(), (null == n ? void 0 : n.secondaryCta) && (n.secondaryCta.actionType === p.a.GOTO && n.secondaryCta.url && Object(r.e)(n.secondaryCta.url, "_blank"), Z(), R(t ? Object(d.A)(n.notificationName, d.b.CTA_2) : Object(d.o)(n.notificationName, d.b.CTA_2)))
+						e.stopPropagation(), (null == n ? void 0 : n.secondaryCta) && (n.secondaryCta.actionType === p.a.GOTO && n.secondaryCta.url && Object(r.e)(n.secondaryCta.url, "_blank"), Z(), H(t ? Object(d.A)(n.notificationName, d.b.CTA_2) : Object(d.o)(n.notificationName, d.b.CTA_2)))
 					},
 					style: {
 						...X
@@ -452,7 +452,7 @@
 					iconClassName: v.a.CloseButtonIcon,
 					priority: l.c.Plain,
 					onClick: e => {
-						e.stopPropagation(), Z(), R(t ? Object(d.A)(n.notificationName, d.b.DISMISS) : Object(d.o)(n.notificationName, d.b.DISMISS))
+						e.stopPropagation(), Z(), H(t ? Object(d.A)(n.notificationName, d.b.DISMISS) : Object(d.o)(n.notificationName, d.b.DISMISS))
 					}
 				}))
 			};
@@ -669,8 +669,8 @@
 				P = "",
 				L = 0,
 				A = "200px",
-				R = "250px",
-				H = "270px",
+				H = "250px",
+				R = "270px",
 				U = 100,
 				F = .5,
 				D = 5,
@@ -693,7 +693,7 @@
 						} = this.props, a = t || n, o = window.innerHeight - M - 2 * z - (a ? U : 0);
 						let s = 0;
 						for (const r in e) s += e[r];
-						return 0 === s ? a ? R : i ? A : H : (a && (s += U), o < s && (s = o + (a ? U : 0)), s)
+						return 0 === s ? a ? H : i ? A : R : (a && (s += U), o < s && (s = o + (a ? U : 0)), s)
 					}, this.setNotificationHeight = (e, t) => {
 						this.setState(n => ({
 							notificationHeights: {
@@ -1558,8 +1558,8 @@
 				P = n("./src/reddit/actions/notificationSettingsLayout/index.ts"),
 				L = n("./src/reddit/actions/toaster.ts"),
 				A = n("./src/reddit/components/Settings/modalIds.ts"),
-				R = n("./src/reddit/models/NotificationSettingsLayout/index.ts"),
-				H = n("./src/reddit/models/Toast/index.ts"),
+				H = n("./src/reddit/models/NotificationSettingsLayout/index.ts"),
+				R = n("./src/reddit/models/Toast/index.ts"),
 				U = n("./src/reddit/selectors/notificationPrefs.ts"),
 				F = n("./src/reddit/selectors/user.ts");
 
@@ -1595,7 +1595,7 @@
 							f(async (e, t) => {
 								var n, i;
 								let a = Object(F.fb)(t());
-								a.allIds.length || await e(Object(P.a)(R.a.Email));
+								a.allIds.length || await e(Object(P.a)(H.a.Email));
 								const o = null === (i = null === (n = (a = Object(F.fb)(t())).byId) || void 0 === n ? void 0 : n.EMAIL_DIGEST) || void 0 === i ? void 0 : i.isEnabled;
 								O(o ? z.DONE : z.TURN_ON_DAYLY_DIGEST)
 							})
@@ -1606,7 +1606,7 @@
 						j = Object(i.useCallback)(() => {
 							f(async (e, t) => {
 								const n = t();
-								Object(F.hb)(n).allIds.length || await e(Object(P.a)(R.a.Push)), Object(U.c)(t(), M) ? O(z.TURN_ON_PN_APP) : k()
+								Object(F.hb)(n).allIds.length || await e(Object(P.a)(H.a.Push)), Object(U.c)(t(), M) ? O(z.TURN_ON_PN_APP) : k()
 							})
 						}, [f, k]),
 						C = Object(i.useCallback)(() => {
@@ -1621,7 +1621,7 @@
 							if (h !== _.current && v === z.VERIFY_EMAIL) {
 								const e = Object(L.e)(c.fbt._("Email successfully updated!", null, {
 									hk: "3iPlUp"
-								}), H.b.SuccessCommunityGreen);
+								}), R.b.SuccessCommunityGreen);
 								f(Object(L.f)(e)), y()
 							}
 						}, [h, v, y]), Object(i.useEffect)(() => {
@@ -1681,23 +1681,23 @@
 			const q = e => Object(V.c)(e, {
 					experimentEligibilitySelector: V.a,
 					experimentName: G.Hb
-				}) === G.Rd.MemesNoBadge,
+				}) === G.Sd.MemesNoBadge,
 				K = e => Object(V.c)(e, {
 					experimentEligibilitySelector: V.a,
 					experimentName: G.Hb
-				}) === G.Rd.PnEmailNoBadge,
+				}) === G.Sd.PnEmailNoBadge,
 				J = e => Object(V.c)(e, {
 					experimentEligibilitySelector: V.a,
 					experimentName: G.Hb
-				}) === G.Rd.KarmaNoBadge,
+				}) === G.Sd.KarmaNoBadge,
 				Y = e => Object(V.c)(e, {
 					experimentEligibilitySelector: V.a,
 					experimentName: G.Hb
-				}) === G.Rd.PopularNoBadge,
+				}) === G.Sd.PopularNoBadge,
 				Z = e => Object(V.c)(e, {
 					experimentEligibilitySelector: V.a,
 					experimentName: G.Hb
-				}) === G.Rd.CatsNoBadge;
+				}) === G.Sd.CatsNoBadge;
 			t.a = e => {
 				let {
 					isBannerEnabled: t,
@@ -1840,7 +1840,7 @@
 			}));
 			var i = n("./src/reddit/constants/experiments.ts"),
 				a = n("./src/reddit/helpers/chooseVariant/index.ts");
-			const o = e => i.Mc.DnNoModal === Object(a.c)(e, {
+			const o = e => i.Nc.DnNoModal === Object(a.c)(e, {
 				experimentEligibilitySelector: a.a,
 				experimentName: i.Eb
 			})
@@ -1905,4 +1905,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/AuthorHovercard~Reddit.137cb3e07dfbb15292a1.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/AuthorHovercard~Reddit.a4432a14ddb39c819eb5.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-pages-meta-MainnetPointsMigrationPage.574b331cb6e0f9b6b0e2.js
-// Retrieved at 8/17/2022, 4:30:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-pages-meta-MainnetPointsMigrationPage.555a9878665ba8e7b0a7.js
+// Retrieved at 8/17/2022, 5:40:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-pages-meta-MainnetPointsMigrationPage"], {
 		"./node_modules/lodash/uniqueId.js": function(e, t, n) {
@@ -1048,11 +1048,11 @@
 					}
 				};
 			var P, B = n("./src/reddit/pages/meta/MainnetPointsMigrationPage/index.m.less"),
-				F = n.n(B);
+				L = n.n(B);
 			! function(e) {
 				e[e.Starting = 0] = "Starting", e[e.Wallet = 1] = "Wallet", e[e.TestNetwork = 2] = "TestNetwork", e[e.Bridge = 3] = "Bridge"
 			}(P || (P = {}));
-			const L = e => {
+			const F = e => {
 					const t = Object(o.d)(),
 						{
 							onConnect: n
@@ -1064,7 +1064,7 @@
 							dispatch: t
 						}))()
 					}, [a, t]), i.a.createElement("div", {
-						className: F.a.spacedFlex
+						className: L.a.spacedFlex
 					}, i.a.createElement(R, {
 						step: P.Wallet,
 						currentStep: a,
@@ -1110,19 +1110,19 @@
 					const r = t < n,
 						o = t === n;
 					return i.a.createElement("div", {
-						className: _()(F.a.connectionStep, {
-							[F.a.isCompleted]: r,
-							[F.a.isCurrentStep]: o
+						className: _()(L.a.connectionStep, {
+							[L.a.isCompleted]: r,
+							[L.a.isCurrentStep]: o
 						})
 					}, i.a.createElement("div", {
-						className: F.a.checkmark
+						className: L.a.checkmark
 					}, r ? i.a.createElement(j.a, {
-						className: F.a.icon,
+						className: L.a.icon,
 						name: "checkmark_fill"
 					}) : t), i.a.createElement("div", {
-						className: F.a.stepChild
+						className: L.a.stepChild
 					}, s), a && i.a.createElement("div", {
-						className: F.a.connectionBar
+						className: L.a.connectionBar
 					}))
 				};
 			var W = n("./src/reddit/controls/LoadingIcon/index.tsx"),
@@ -1133,8 +1133,8 @@
 				Z = n("./src/reddit/components/ModalStyledComponents/index.tsx"),
 				Y = n("./node_modules/@ethersproject/address/lib.esm/index.js"),
 				q = n("./node_modules/lodash/debounce.js"),
-				K = n.n(q),
-				X = n("./src/lib/classNames/index.ts"),
+				X = n.n(q),
+				K = n("./src/lib/classNames/index.ts"),
 				G = n("./src/reddit/constants/colors.ts"),
 				J = n("./src/reddit/controls/FormFields/index.tsx"),
 				Q = n("./src/reddit/icons/svgs/Checkmark/index.tsx"),
@@ -1156,9 +1156,9 @@
 						if (!!Object(Y.a)(o.current)) return c(ae.Valid), void n(o.current, !0)
 					}
 					c(ae.Invalid)
-				}, m = Object(r.useMemo)(() => K()(u, 300), [o, n, u]);
+				}, m = Object(r.useMemo)(() => X()(u, 300), [o, n, u]);
 				return i.a.createElement("div", {
-					className: Object(X.a)(te.a.container, t, {
+					className: Object(K.a)(te.a.container, t, {
 						[te.a.invalid]: d
 					})
 				}, i.a.createElement(J.c, {
@@ -1482,8 +1482,8 @@
 					{
 						transferOut: P,
 						claimTransfer: B,
-						getMainnetBalance: F,
-						checkMigrationStatus: L,
+						getMainnetBalance: L,
+						checkMigrationStatus: F,
 						updateMigrationState: V,
 						switchToTestnet: R,
 						switchToMainnet: W
@@ -1492,13 +1492,13 @@
 						setMigrations: l
 					});
 				Object(r.useEffect)(() => {
-					(f || y) && L({
+					(f || y) && F({
 						destinationAddress: (null == f ? void 0 : f.recipient) || y
 					})
 				}, []), Object(r.useEffect)(() => {
 					let e;
 					return (v || y && !f) && (e = setInterval(async () => {
-						await L({
+						await F({
 							destinationAddress: y
 						}), (!1 === (null == f ? void 0 : f.claimed) || C) && (clearInterval(e), V({
 							updates: {
@@ -1507,16 +1507,16 @@
 							token: m
 						}), (null == f ? void 0 : f.amount) && k(s.ethers.BigNumber.from(f.amount)))
 					}, 2e3)), () => clearInterval(e)
-				}, [y, f, L, C, v, m, V]), Object(r.useEffect)(() => {
+				}, [y, f, F, C, v, m, V]), Object(r.useEffect)(() => {
 					let e;
 					return C && f && (e = setInterval(async () => {
-						const t = await F({
+						const t = await L({
 							mainnetAddress: m,
 							recipient: f.recipient
 						});
 						t.gt(E) && (k(t), j(!1), clearInterval(e))
 					}, 1e3)), () => window.clearInterval(e)
-				}, [F, m, E, C, f]);
+				}, [L, m, E, C, f]);
 				return i.a.createElement("div", {
 					className: he.a.row,
 					key: p
@@ -1553,7 +1553,7 @@
 								updates: {
 									transferStatus: null
 								}
-							}), F({
+							}), L({
 								mainnetAddress: null == f ? void 0 : f.token,
 								recipient: null == f ? void 0 : f.recipient
 							})), S({
@@ -1768,7 +1768,7 @@
 					hk: "32IN7N"
 				})))], {
 					hk: "OvkQK"
-				})))), y || (O = i.a.createElement(L, {
+				})))), y || (O = i.a.createElement(F, {
 					walletAddress: u,
 					network: p,
 					onConnect: k
@@ -1778,25 +1778,25 @@
 					migrations: _,
 					setMigrations: N
 				}))), i.a.createElement("div", {
-					className: F.a.container
+					className: L.a.container
 				}, i.a.createElement("h1", {
-					className: F.a.header
+					className: L.a.header
 				}, i.a.createElement("img", {
 					alt: _e._("Community Points Bridge", null, {
 						hk: "1vd0MS"
 					}),
-					className: F.a.bridgeLogo,
+					className: L.a.bridgeLogo,
 					src: `${a.a.assetPath}/img/communityPoints/migration_bridge.png`
 				}), _e._("Community Points Bridge", null, {
 					hk: "3p57GN"
 				})), i.a.createElement("p", {
-					className: F.a.description
+					className: L.a.description
 				}, _e._("If you moved your Moons or Bricks out of your Vault, you will need to migrate them using this tool in order to get them onto our new system. This tool will help walk you through the necessary steps. NOTE: Most users will not need to use this tool.", null, {
 					hk: "2cW0jd"
 				})), i.a.createElement("div", {
-					className: F.a.content
+					className: L.a.content
 				}, O), !y && i.a.createElement("p", {
-					className: F.a.footer
+					className: L.a.footer
 				}, _e._("This migration tool is designed to work with Chrome + MetaMask. If your Points are in a different wallet, we suggest moving them into MetaMask first. You should be able to use any web3-enabled wallet, but it is untested. Not all wallets will work with our Arbitrum chain. It must be a wallet where you can add a custom network with RPC url and a different chain id.", null, {
 					hk: "25krYi"
 				})))
@@ -1818,16 +1818,16 @@
 			const r = e => {
 					return Object(s.c)(e, {
 						experimentEligibilitySelector: s.a,
-						experimentName: a.ue
-					}) === a.Kd
+						experimentName: a.ve
+					}) === a.Ld
 				},
 				i = e => {
 					return Object(s.c)(e, {
 						experimentEligibilitySelector: s.a,
-						experimentName: a.re
-					}) === a.Kd
+						experimentName: a.se
+					}) === a.Ld
 				}
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-pages-meta-MainnetPointsMigrationPage.574b331cb6e0f9b6b0e2.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-pages-meta-MainnetPointsMigrationPage.555a9878665ba8e7b0a7.js.map

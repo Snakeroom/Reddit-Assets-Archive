@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~Reddit.da0fbf76e3f64cfc9154.js
-// Retrieved at 8/17/2022, 5:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~Reddit.9e853aad6e763692c83a.js
+// Retrieved at 8/17/2022, 5:40:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~Reddit"], {
 		"./assets/fonts/NotoMono/font.less": function(e, t, n) {},
@@ -2291,7 +2291,7 @@
 			const w = e => _.d.reCaptchaEnterprise(e) && !Object(T.d)(e),
 				D = e => !!Object(S.c)(e, {
 					experimentEligibilitySelector: Object(I.d)(Object(I.b)(...a.d)),
-					experimentName: f.nf
+					experimentName: f.of
 				}),
 				j = Object(r.b)("LOAD_RECAPTCHA_ENTERPRISE"),
 				C = () => l(e => p()([w, D, e => e.tracking.reCaptchaEnterprise.load === r.a.New], t => t(e)))(async e => {
@@ -15309,7 +15309,7 @@
 								...t
 							}
 						}
-						const r = fp()(t.payload.posts, Object(bp.i)([bp.o])),
+						const r = fp()(t.payload.posts, Object(bp.i)([bp.p])),
 							s = {};
 						return Object.keys(r).forEach(e => {
 							var t, n;
@@ -16260,7 +16260,7 @@
 						const n = Object(bp.h)(t.payload.meta);
 						return {
 							...e,
-							...fp()(t.payload.posts, Object(bp.i)([n, bp.d, bp.m, bp.n, bp.o, Object(bp.a)(e), Object(bp.b)(e), Object(bp.j)(e), Object(bp.k)(e)]))
+							...fp()(t.payload.posts, Object(bp.i)([n, bp.d, bp.n, bp.o, bp.p, Object(bp.a)(e), Object(bp.b)(e), Object(bp.k)(e), Object(bp.l)(e), Object(bp.j)(e)]))
 						}
 					}
 					case Nd.j:
@@ -16299,7 +16299,7 @@
 						const n = Object(bp.h)(t.payload.meta);
 						return {
 							...e,
-							...fp()(t.payload.posts, Object(bp.i)([n, bp.d, bp.m, bp.n, bp.o, Object(bp.l)(e), Object(bp.j)(e)]))
+							...fp()(t.payload.posts, Object(bp.i)([n, bp.d, bp.n, bp.o, bp.p, Object(bp.m)(e), Object(bp.k)(e)]))
 						}
 					}
 					case vd.s: {
@@ -16308,7 +16308,7 @@
 						for (const r of t.payload) {
 							const t = r,
 								s = Object(bp.h)(t.meta);
-							Object.assign(n, fp()(t.posts, Object(bp.i)([s, bp.d, bp.m, bp.n, Object(bp.l)(e), Object(bp.j)(e)])))
+							Object.assign(n, fp()(t.posts, Object(bp.i)([s, bp.d, bp.n, bp.o, Object(bp.m)(e), Object(bp.k)(e)])))
 						}
 						return {
 							...e,
@@ -16320,7 +16320,7 @@
 							r = e[t.payload.postId];
 						return {
 							...e,
-							...fp()(t.payload.posts, Object(bp.i)([n, bp.d, bp.m, bp.n, Object(bp.l)(e), Object(bp.j)(e)])),
+							...fp()(t.payload.posts, Object(bp.i)([n, bp.d, bp.n, bp.o, Object(bp.m)(e), Object(bp.k)(e)])),
 							[t.payload.postId]: {
 								...r,
 								numDuplicates: t.payload.count
@@ -16331,7 +16331,7 @@
 					case Be.e:
 					case W.c: {
 						const n = Object(bp.h)(t.payload.meta),
-							r = fp()(t.payload.posts, Object(bp.i)([n, bp.m, bp.d, bp.n]));
+							r = fp()(t.payload.posts, Object(bp.i)([n, bp.n, bp.d, bp.o]));
 						return k()({
 							...e
 						}, r, (e, t) => ({
@@ -16425,7 +16425,7 @@
 						} = t.payload;
 						return {
 							...e,
-							...n.reduce((e, t) => (e[t.post.id] = Object(bp.i)([bp.m])(Object(Xr.f)(t.post)), e), {})
+							...n.reduce((e, t) => (e[t.post.id] = Object(bp.i)([bp.n])(Object(Xr.f)(t.post)), e), {})
 						}
 					}
 					case ee.s: {
@@ -16473,7 +16473,7 @@
 						} = n;
 						return {
 							...e,
-							...fp()(r, Object(bp.i)([bp.m, bp.n]))
+							...fp()(r, Object(bp.i)([bp.n, bp.o]))
 						}
 					}
 					case gf.b:
@@ -16585,7 +16585,7 @@
 					case ec.g: {
 						const n = t.payload.subredditTopContent;
 						return n && n.posts && Object.keys(n.posts) ? {
-							...fp()(n.posts, Object(bp.i)([bp.m, bp.n])),
+							...fp()(n.posts, Object(bp.i)([bp.n, bp.o])),
 							...e
 						} : e
 					}
@@ -16596,7 +16596,7 @@
 					case H.g:
 					case _f.b:
 						return {
-							...fp()(t.payload.posts, Object(bp.i)([bp.m, bp.n])), ...e
+							...fp()(t.payload.posts, Object(bp.i)([bp.n, bp.o])), ...e
 						};
 					case Nd.m: {
 						const {
@@ -16675,7 +16675,7 @@
 						} = t.payload;
 						return {
 							...e,
-							[n]: Object(bp.p)(e[n], Object(mp.a)(r))
+							[n]: Object(bp.q)(e[n], Object(mp.a)(r))
 						}
 					}
 					case Of.a:
@@ -25382,7 +25382,7 @@
 					if (!u(e)) return;
 					const t = Object(o.c)(e, {
 						experimentEligibilitySelector: l,
-						experimentName: a.ee,
+						experimentName: a.fe,
 						expEventOverride: !1
 					});
 					return null == t ? void 0 : t.toLocaleLowerCase()
@@ -25405,9 +25405,9 @@
 				},
 				b = e => !!p(e) && Object(o.c)(e, {
 					experimentEligibilitySelector: u,
-					experimentName: a.fe,
+					experimentName: a.ge,
 					expEventOverride: !1
-				}) !== a.ge.Readonly
+				}) !== a.he.Readonly
 		},
 		"./src/reddit/selectors/experiments/serpTabPreserved.ts": function(e, t, n) {
 			"use strict";
@@ -25420,7 +25420,7 @@
 			const o = Object(a.a)(e => Object(s.c)(e, {
 				experimentEligibilitySelector: s.a,
 				experimentName: r.Fc
-			}), e => e === r.Kd)
+			}), e => e === r.Ld)
 		},
 		"./src/reddit/selectors/removedPosts.ts": function(e, t, n) {
 			"use strict";
@@ -25551,7 +25551,7 @@
 			e.exports = JSON.parse('{"id":"074eb98957ec"}')
 		},
 		"./src/redditGQL/operations/SubredditTopContent.json": function(e) {
-			e.exports = JSON.parse('{"id":"aaa4bab5d175"}')
+			e.exports = JSON.parse('{"id":"6bb3e5fdc9b0"}')
 		},
 		"./src/redditGQL/operations/SubredditsCarousel.json": function(e) {
 			e.exports = JSON.parse('{"id":"a818d17baafc"}')
@@ -25573,4 +25573,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit.da0fbf76e3f64cfc9154.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit.9e853aad6e763692c83a.js.map
