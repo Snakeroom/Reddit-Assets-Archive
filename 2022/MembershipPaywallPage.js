@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/MembershipPaywallPage.b747f716e8c6a98b67e5.js
-// Retrieved at 8/9/2022, 12:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/MembershipPaywallPage.017b404d63f7d2cef302.js
+// Retrieved at 8/17/2022, 5:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["MembershipPaywallPage"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -1495,7 +1495,7 @@
 		"./src/reddit/components/OverflowMenu/index.tsx": function(e, t, s) {
 			"use strict";
 			s.d(t, "a", (function() {
-				return v
+				return w
 			}));
 			var i = s("./node_modules/fbt/lib/FbtPublic.js"),
 				n = s("./node_modules/react/index.js"),
@@ -1510,13 +1510,14 @@
 				p = s("./src/reddit/controls/Dropdown/Row.tsx"),
 				h = s("./src/reddit/icons/fonts/index.tsx"),
 				b = s("./src/reddit/selectors/tooltip.ts"),
-				g = s("./src/reddit/components/OverflowMenu/index.m.less"),
-				f = s.n(g);
-			const _ = l.a.wrapped(u.a, "_Dropdown", f.a),
-				x = Object(m.a)(_),
-				y = l.a.button("MenuButton", f.a),
-				v = l.a.wrapped(p.b, "DropdownRow", f.a),
-				w = Object(o.c)({
+				g = s("./src/higherOrderComponents/withAdClickLocation/Locations.ts"),
+				f = s("./src/reddit/components/OverflowMenu/index.m.less"),
+				_ = s.n(f);
+			const x = l.a.wrapped(u.a, "_Dropdown", _.a),
+				y = Object(m.a)(x),
+				v = l.a.button("MenuButton", _.a),
+				w = l.a.wrapped(p.b, "DropdownRow", _.a),
+				C = Object(o.c)({
 					dropdownIsOpen: (e, t) => {
 						let {
 							dropdownId: s
@@ -1524,7 +1525,7 @@
 						return Object(b.b)(s)(e)
 					}
 				}),
-				C = Object(a.b)(w, (e, t) => {
+				k = Object(a.b)(C, (e, t) => {
 					let {
 						dropdownId: s
 					} = t;
@@ -1534,26 +1535,27 @@
 						}))
 					}
 				}),
-				k = e => t => {
+				E = e => t => {
 					e.onClick && e.onClick(), e.toggleDropdown(), t.stopPropagation()
 				};
-			t.b = C(e => r.a.createElement(y, {
+			t.b = k(e => r.a.createElement(v, {
 				"aria-expanded": e.dropdownIsOpen,
 				"aria-haspopup": !0,
 				"aria-label": i.fbt._("more options", null, {
 					hk: "2EnY1x"
 				}),
 				className: Object(c.a)(e.className, {
-					[f.a.mIsEnabled]: !e.disabled && !e.defaultButtonOutline
+					[_.a.mIsEnabled]: !e.disabled && !e.defaultButtonOutline
 				}),
 				disabled: e.disabled,
-				onClick: k(e),
+				onClick: E(e),
 				onMouseDown: e.handleMouseDown,
-				id: e.dropdownId
+				id: e.dropdownId,
+				"data-adclicklocation": g.b.OVERFLOW_MENU
 			}, e.icon ? e.icon : r.a.createElement(h.a, {
 				name: "overflow_horizontal",
-				className: f.a.MenuIcon
-			}), r.a.createElement(x, {
+				className: _.a.MenuIcon
+			}), r.a.createElement(y, {
 				className: e.dropdownClassName,
 				isOpen: e.dropdownIsOpen,
 				tooltipId: e.dropdownId,
@@ -1620,8 +1622,8 @@
 				E || (E = fetch("https://meta.redditmedia.com/public/fortnitebr/giphy_blacklist.json").then(e => e.json()))
 			}
 			var N = s("./node_modules/lodash/debounce.js"),
-				I = s.n(N),
-				O = s("./src/reddit/icons/svgs/Search/index.tsx"),
+				O = s.n(N),
+				I = s("./src/reddit/icons/svgs/Search/index.tsx"),
 				P = s("./src/reddit/selectors/user.ts"),
 				S = s("./src/reddit/components/RichTextEditor/media/GifTooltip/SearchBox/index.m.less"),
 				F = s.n(S);
@@ -1634,7 +1636,7 @@
 						this.setState({
 							query: e.target.value
 						}, this.dispatchOnChange)
-					}, this.dispatchOnChange = I()(() => {
+					}, this.dispatchOnChange = O()(() => {
 						this.props.onChange(this.state.query)
 					}, M), this.focusOnInput = () => {
 						this.elementRef && !1 !== this.props.autofocus && this.elementRef.focus()
@@ -1654,7 +1656,7 @@
 					}, d.a.createElement("button", {
 						className: F.a.searchIconButton,
 						onClick: this.focusOnInput
-					}, d.a.createElement(O.a, {
+					}, d.a.createElement(I.a, {
 						className: F.a.searchIcon
 					})), d.a.createElement("input", {
 						ref: e => this.elementRef = e,
@@ -2089,23 +2091,23 @@
 			var E = s("./src/lib/scheduler/index.ts"),
 				j = s("./src/lib/domUtils/index.ts"),
 				N = s("./src/lib/LinkedListMap/index.ts");
-			const I = (e, t) => e < 0 ? t + e : e % t;
-			class O {
+			const O = (e, t) => e < 0 ? t + e : e % t;
+			class I {
 				constructor(e) {
 					this.head = 0, this.size = 0, this.maxSize = e, this.items = new Array(e)
 				}
 				push(e) {
-					return this.items[this.head] = e, this.head = I(this.head + 1, this.maxSize), this.size < this.maxSize && this.size++, this
+					return this.items[this.head] = e, this.head = O(this.head + 1, this.maxSize), this.size < this.maxSize && this.size++, this
 				}
 				pop() {
 					if (this.size > 0) {
-						const e = I(this.head - 1, this.maxSize),
+						const e = O(this.head - 1, this.maxSize),
 							t = this.items[e];
 						return this.items[e] = void 0, this.head = e, this.size--, t
 					}
 				}
 				forEach(e) {
-					let t = this.size < this.maxSize ? I(this.head - this.size, this.maxSize) : this.head;
+					let t = this.size < this.maxSize ? O(this.head - this.size, this.maxSize) : this.head;
 					for (let s = 0; s < this.size; s++) e(this.items[t], s, this.size), t = (t + 1) % this.maxSize
 				}
 				map(e) {
@@ -2492,7 +2494,7 @@
 							return n >= s + e && n < i
 						}
 						return !1
-					}, this.childMap = le(e), this.containerRef = null, this.itemsInViewport = new N.a("id"), this.loadMoreFired = !1, this.pixelsPerMSRing = new O(Y), this.wrapperRefFNs = {}, this.childRefFns = {}, this.childrenToHide = {}, this.childrenToShow = {}, this.canFocusItems = !0, this.focusedChild = void 0, this.hiddenChildren = {}, this.nextVisibleChildrenIndex = 0, this.lastVisibleEl = null, this.lastVisibleElId = null, this.remeasureWhenShown = {}, this.timeoutForUpdateIdleCallback = re;
+					}, this.childMap = le(e), this.containerRef = null, this.itemsInViewport = new N.a("id"), this.loadMoreFired = !1, this.pixelsPerMSRing = new I(Y), this.wrapperRefFNs = {}, this.childRefFns = {}, this.childrenToHide = {}, this.childrenToShow = {}, this.canFocusItems = !0, this.focusedChild = void 0, this.hiddenChildren = {}, this.nextVisibleChildrenIndex = 0, this.lastVisibleEl = null, this.lastVisibleElId = null, this.remeasureWhenShown = {}, this.timeoutForUpdateIdleCallback = re;
 					const s = this.getVisibleChildren();
 					s.length && (this.lastVisibleElId = s[s.length - 1].id), this.nextVisibleChildrenIndex = s.length, this.updateRenderableChildrenHandle = null, this.state = {
 						renderableChildren: s
@@ -4110,8 +4112,8 @@
 				},
 				j = s("./src/reddit/selectors/economics.ts"),
 				N = s("./src/reddit/components/RichTextEditor/index.tsx"),
-				I = s("./src/reddit/components/RichTextEditor/RTEState/index.tsx"),
-				O = s("./src/reddit/components/ScrollAnimation/index.tsx"),
+				O = s("./src/reddit/components/RichTextEditor/RTEState/index.tsx"),
+				I = s("./src/reddit/components/ScrollAnimation/index.tsx"),
 				P = s("./src/reddit/helpers/richTextEditor/index.ts"),
 				S = s("./src/reddit/pages/meta/MembershipPaywallPage/getSrc.ts"),
 				F = s("./src/reddit/icons/svgs/FormattingBold/index.tsx"),
@@ -4551,13 +4553,13 @@
 					}, n.a.createElement("img", {
 						className: ce.a.rescuerLegs,
 						src: Object(S.a)(s, "rescuer_legs@2x.png")
-					}), n.a.createElement(O.a, {
+					}), n.a.createElement(I.a, {
 						scrollRange: i
 					}, e => n.a.createElement("img", {
 						className: ce.a.rescuerArm,
 						src: Object(S.a)(s, "rescuer_arm@2x.png"),
 						style: e
-					})), n.a.createElement(O.a, {
+					})), n.a.createElement(I.a, {
 						scrollRange: i
 					}, e => n.a.createElement("img", {
 						className: ce.a.rescuerTorso,
@@ -4566,7 +4568,7 @@
 					})), n.a.createElement("img", {
 						className: ce.a.woundedBody,
 						src: Object(S.a)(s, "wounded_body@2x.png")
-					}), n.a.createElement(O.a, {
+					}), n.a.createElement(I.a, {
 						scrollRange: i
 					}, e => n.a.createElement("img", {
 						className: ce.a.woundedHead,
@@ -4600,7 +4602,7 @@
 							subreddit: s,
 							type: "gif"
 						}, e)),
-						rteState: I.a.createInitial(),
+						rteState: O.a.createInitial(),
 						toolbarPosition: "bottom",
 						trackToolbarClick: function() {},
 						onChange: function() {},
@@ -4682,7 +4684,7 @@
 							subreddit: t,
 							type: "emoji"
 						}, e)),
-						rteState: I.a.createInitial(),
+						rteState: O.a.createInitial(),
 						toolbarPosition: "bottom",
 						trackToolbarClick: function() {},
 						onChange: function() {},
@@ -4766,9 +4768,9 @@
 				}
 			}
 			var Ne = s("./src/reddit/pages/meta/MembershipPaywallPage/Benefits/Section/index.m.less"),
-				Ie = s.n(Ne);
+				Oe = s.n(Ne);
 
-			function Oe(e) {
+			function Ie(e) {
 				const t = e.showProgressBar ? 1 / 0 : 6,
 					s = e.items.reduce((e, s) => {
 						const i = be()(e);
@@ -4777,28 +4779,28 @@
 						[]
 					]);
 				return n.a.createElement("section", {
-					className: Object(d.a)(Ie.a.container, e.className)
+					className: Object(d.a)(Oe.a.container, e.className)
 				}, n.a.createElement("header", {
-					className: Ie.a.title
+					className: Oe.a.title
 				}, e.title), n.a.createElement("article", {
-					className: Ie.a.description
+					className: Oe.a.description
 				}, e.description), n.a.createElement("footer", {
-					className: Ie.a.footer
+					className: Oe.a.footer
 				}, e.showProgressBar && n.a.createElement("div", {
-					className: Ie.a.progressBar
+					className: Oe.a.progressBar
 				}, n.a.createElement("div", {
-					className: Ie.a.progressThumb
+					className: Oe.a.progressThumb
 				})), s.map((e, t) => n.a.createElement("div", {
-					className: Ie.a.row,
+					className: Oe.a.row,
 					key: t
 				}, e.map(e => n.a.createElement("div", {
-					className: Ie.a.item,
+					className: Oe.a.item,
 					key: e.text
 				}, n.a.createElement("img", {
-					className: Ie.a.itemIcon,
+					className: Oe.a.itemIcon,
 					src: e.icon
 				}), n.a.createElement("div", {
-					className: Ie.a.itemText
+					className: Oe.a.itemText
 				}, e.text)))))))
 			}
 			var Pe = s("./src/reddit/pages/meta/MembershipPaywallPage/Benefits/StyleBadges/index.m.less"),
@@ -4938,7 +4940,7 @@
 							...f.n(e),
 							subreddit: f.ib(e)
 						})
-					}, n.a.createElement(Oe, {
+					}, n.a.createElement(Ie, {
 						showProgressBar: !0,
 						className: Be.a.section,
 						title: x.fbt._("Loyalty Badges", null, {
@@ -4958,7 +4960,7 @@
 							...f.n(e),
 							subreddit: f.ib(e)
 						})
-					}, n.a.createElement(Oe, {
+					}, n.a.createElement(Ie, {
 						className: Be.a.section,
 						title: x.fbt._("Achievement Badges", null, {
 							hk: "4asfWh"
@@ -5150,19 +5152,19 @@
 				}, n.a.createElement("img", {
 					className: Ye.a.pianoKeyboard,
 					src: Object(S.a)(e.subreddit, "piano_keyboard@2x.png")
-				}), n.a.createElement(O.a, {
+				}), n.a.createElement(I.a, {
 					scrollRange: Je
 				}, t => n.a.createElement("img", {
 					className: Ye.a.pianoCrowdBottom,
 					src: Object(S.a)(e.subreddit, "piano_crowd_bottom@2x.png"),
 					style: t
-				})), n.a.createElement(O.a, {
+				})), n.a.createElement(I.a, {
 					scrollRange: Je
 				}, t => n.a.createElement("img", {
 					className: Ye.a.pianoCrowdTop,
 					src: Object(S.a)(e.subreddit, "piano_crowd_top@2x.png"),
 					style: t
-				})), n.a.createElement(O.a, {
+				})), n.a.createElement(I.a, {
 					scrollRange: Je
 				}, t => n.a.createElement("img", {
 					className: Ye.a.pianoFlier,
@@ -5287,7 +5289,7 @@
 					return Object(j.r)(e, s)
 				}
 			});
-			var It = Object(r.b)(Nt)((function(e) {
+			var Ot = Object(r.b)(Nt)((function(e) {
 					const {
 						className: t,
 						meta: s,
@@ -5306,7 +5308,7 @@
 						onClick: e.onClose
 					}))
 				})),
-				Ot = s("./node_modules/bignumber.js/bignumber.js"),
+				It = s("./node_modules/bignumber.js/bignumber.js"),
 				Pt = s("./src/reddit/components/Economics/SubredditPremium/Badges/ManagementModal/Preview/BadgeCard/CosmeticFooter/PurchaseButton/index.tsx"),
 				St = s("./src/reddit/controls/Button/index.tsx"),
 				Ft = s("./node_modules/react-router-redux/es/index.js"),
@@ -5485,7 +5487,7 @@
 			}
 
 			function $t(e) {
-				return !e.wallet || new Ot.BigNumber(e.wallet.amount).isLessThan(new Ot.BigNumber(e.tokenPrice)) ? n.a.createElement(St.l, {
+				return !e.wallet || new It.BigNumber(e.wallet.amount).isLessThan(new It.BigNumber(e.tokenPrice)) ? n.a.createElement(St.l, {
 					className: Yt.a.notEnoughTokens,
 					disabled: !0
 				}, Jt._("Not enough {token-name}", [Jt._param("token-name", e.tokenName)], {
@@ -5580,7 +5582,7 @@
 						u = (null == o ? void 0 : o.name) || "";
 					return n.a.createElement("div", {
 						className: is.a.container
-					}, n.a.createElement(It, {
+					}, n.a.createElement(Ot, {
 						purchaseType: t.type,
 						subredditId: s.id,
 						onClose: r
@@ -5789,7 +5791,7 @@
 					return Object(j.r)(e, s.id)
 				}
 			});
-			var js, Ns, Is = Object(r.b)(Es)((function(e) {
+			var js, Ns, Os = Object(r.b)(Es)((function(e) {
 					const {
 						className: t,
 						correlationId: s,
@@ -5819,7 +5821,7 @@
 						subredditId: r.id
 					}))
 				})),
-				Os = s("./src/reddit/icons/svgs/Checkmark/index.tsx"),
+				Is = s("./src/reddit/icons/svgs/Checkmark/index.tsx"),
 				Ps = s("./node_modules/react-motion/lib/react-motion.js"),
 				Ss = s("./src/reddit/pages/meta/MembershipPaywallPage/WhatDoYouGet/Testimonials/index.m.less"),
 				Fs = s.n(Ss);
@@ -6087,15 +6089,15 @@
 						className: zs.a.benefits
 					}, a.styleBadges && n.a.createElement("div", {
 						className: zs.a.benefit
-					}, n.a.createElement(Os.a, {
+					}, n.a.createElement(Is.a, {
 						className: zs.a.check
 					}), "Add a badge and color to your username"), a.emotes && n.a.createElement("div", {
 						className: zs.a.benefit
-					}, n.a.createElement(Os.a, {
+					}, n.a.createElement(Is.a, {
 						className: zs.a.check
 					}), "Get access to premium animated emotes"), a.gifs && n.a.createElement("div", {
 						className: zs.a.benefit
-					}, n.a.createElement(Os.a, {
+					}, n.a.createElement(Is.a, {
 						className: zs.a.check
 					}), "Add GIFs to your comments")), n.a.createElement(ws, {
 						subredditId: r.id,
@@ -6128,7 +6130,7 @@
 					href: "https://www.reddit.com/r/FortNiteBR/comments/a1hxn4/the_moment_my_son_discovered_that_his_skin/",
 					target: "_blank",
 					rel: "noopener noreferrer"
-				}, n.a.createElement(O.a, {
+				}, n.a.createElement(I.a, {
 					scrollRange: Gs
 				}, e => n.a.createElement("img", {
 					className: Zs.a.chickenRightArm,
@@ -6137,7 +6139,7 @@
 				})), n.a.createElement("img", {
 					className: Zs.a.chickenTorso,
 					src: Object(S.a)(s, "chicken_torso@2x.png")
-				}), n.a.createElement(O.a, {
+				}), n.a.createElement(I.a, {
 					scrollRange: Gs
 				}, e => n.a.createElement("img", {
 					className: Zs.a.chickenLeftArm,
@@ -6284,7 +6286,7 @@
 							...f.n(e),
 							subreddit: f.ib(e)
 						})
-					}, n.a.createElement(Is, {
+					}, n.a.createElement(Os, {
 						correlationId: this.correlationId,
 						subreddit: t
 					})), n.a.createElement($s, {
@@ -6393,9 +6395,9 @@
 			})), s.d(t, "l", (function() {
 				return N
 			})), s.d(t, "n", (function() {
-				return I
-			})), s.d(t, "e", (function() {
 				return O
+			})), s.d(t, "e", (function() {
+				return I
 			})), s.d(t, "d", (function() {
 				return P
 			})), s.d(t, "j", (function() {
@@ -6524,7 +6526,7 @@
 				return Object.keys(o).map(e => r[e]).find(e => e && e.type === c)
 			}
 
-			function I(e, t, s, i) {
+			function O(e, t, s, i) {
 				const n = e.economics.subredditPremium[t];
 				if (n && n.status === m.a.Fetched) {
 					if (s === o.a.Loyalty || s === o.a.Achievement) return n.data.collections[s];
@@ -6533,8 +6535,8 @@
 				return f
 			}
 
-			function O(e, t) {
-				const s = I(e, t, o.a.Loyalty).find(e => "membership" === e.id);
+			function I(e, t) {
+				const s = O(e, t, o.a.Loyalty).find(e => "membership" === e.id);
 				return s ? [].concat(s.locked, s.unlocked).filter(e => e.position).sort((e, t) => e.position - t.position) : f
 			}
 
@@ -6548,7 +6550,7 @@
 			}
 
 			function S(e, t) {
-				return I(e, t, o.a.Cosmetic, o.c.Gallery).some(e => e.locked.some(e => Object(a.f)(e) || !!e.price))
+				return O(e, t, o.a.Cosmetic, o.c.Gallery).some(e => e.locked.some(e => Object(a.f)(e) || !!e.price))
 			}
 			const F = e => {
 				const t = [],
@@ -6733,4 +6735,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/MembershipPaywallPage.b747f716e8c6a98b67e5.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/MembershipPaywallPage.017b404d63f7d2cef302.js.map

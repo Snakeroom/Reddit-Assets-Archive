@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage.947cf081f8c609048d06.js
-// Retrieved at 8/17/2022, 11:40:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage.352df58975463e045e78.js
+// Retrieved at 8/17/2022, 5:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage"], {
 		"./node_modules/linkify-it/index.js": function(e, t, s) {
@@ -1720,7 +1720,8 @@
 					className: C
 				}, b && !o && !g && r.a.createElement("span", {
 					className: u.a.caption,
-					title: b
+					title: b,
+					"data-adclicklocation": l.a.CTA_CAPTION
 				}, b), !g && r.a.createElement(d.a, {
 					href: m.url.replace(n.a.redditUrl, ""),
 					isSponsored: s.isSponsored,
@@ -4782,18 +4783,19 @@
 				g = s("./src/reddit/models/Post/index.ts"),
 				x = s("./src/reddit/selectors/experiments/loggedOutBlockingInterstitial.ts"),
 				f = s("./src/telemetry/models/Outbound.ts"),
-				C = s("./src/reddit/components/ExpandoButton/index.m.less"),
-				v = s.n(C);
-			const _ = Object(i.b)(null, (e, t) => ({
+				C = s("./src/higherOrderComponents/withAdClickLocation/Locations.ts"),
+				v = s("./src/reddit/components/ExpandoButton/index.m.less"),
+				_ = s.n(v);
+			const O = Object(i.b)(null, (e, t) => ({
 					toggle: () => e(Object(l.x)({
 						postId: t.post.id
 					})),
 					showModalOnPostLinkClick: t => e(Object(l.bb)(Object(u.b)(t.permalink), t.id))
 				})),
-				O = function(e) {
+				y = function(e) {
 					let t = arguments.length > 1 && void 0 !== arguments[1] && arguments[1],
 						s = arguments.length > 2 ? arguments[2] : void 0;
-					const n = Object(d.a)(v.a.icon, v.a.hideOnHover);
+					const n = Object(d.a)(_.a.icon, _.a.hideOnHover);
 					if (t) return r.a.createElement(b.a, {
 						name: "crosspost",
 						className: n
@@ -4841,7 +4843,7 @@
 							})
 					}
 				};
-			t.a = _(e => {
+			t.a = O(e => {
 				const {
 					className: t,
 					crosspost: s,
@@ -4849,36 +4851,37 @@
 					isCommentsPage: l,
 					isExpanded: u,
 					post: h,
-					toggle: C,
-					useMediaIcons: _
-				} = e, y = s || h, E = Object(i.e)(x.b), j = Object(i.e)(x.c), k = t => {
-					(E || j) && (t.preventDefault(), e.showModalOnPostLinkClick(y))
-				}, P = y.media, I = Object(g.p)(h), w = o && !!s;
-				return P && !I && !(("rtjson" === P.type || "text" === P.type || "liveaudio" === P.type) && !Object(p.a)(y)) || !!h.pollData ? r.a.createElement("button", {
+					toggle: v,
+					useMediaIcons: O
+				} = e, E = s || h, j = Object(i.e)(x.b), k = Object(i.e)(x.c), P = t => {
+					(j || k) && (t.preventDefault(), e.showModalOnPostLinkClick(E))
+				}, I = E.media, w = Object(g.p)(h), S = o && !!s;
+				return I && !w && !(("rtjson" === I.type || "text" === I.type || "liveaudio" === I.type) && !Object(p.a)(E)) || !!h.pollData ? r.a.createElement("button", {
 					"aria-expanded": !!u,
 					"aria-haspopup": !0,
 					"aria-label": n.fbt._("Expand content", null, {
 						hk: "1e35IG"
 					}),
-					className: Object(d.a)(t, v.a.outer),
+					className: Object(d.a)(t, _.a.outer),
 					"data-click-id": u ? "expando_close" : "expando_open",
-					onClick: C
+					"data-adclicklocation": C.a.MEDIA,
+					onClick: v
 				}, u ? r.a.createElement(b.a, {
 					name: "collapse",
-					className: v.a.icon
-				}) : _ ? r.a.createElement(r.a.Fragment, null, O(y.media && y.media.type, w, h), r.a.createElement(b.a, {
+					className: _.a.icon
+				}) : O ? r.a.createElement(r.a.Fragment, null, y(E.media && E.media.type, S, h), r.a.createElement(b.a, {
 					name: "expand",
-					className: Object(d.a)(v.a.icon, v.a.showOnHover)
+					className: Object(d.a)(_.a.icon, _.a.showOnHover)
 				})) : r.a.createElement(b.a, {
 					name: "expand",
-					className: v.a.icon
-				})) : y.source && y.source.url ? r.a.createElement(m.b, {
+					className: _.a.icon
+				})) : E.source && E.source.url ? r.a.createElement(m.b, {
 					"aria-label": n.fbt._("Open external content", null, {
 						hk: "2FfpSI"
 					}),
-					className: Object(d.a)(t, v.a.outer),
+					className: Object(d.a)(t, _.a.outer),
 					"data-click-id": "expando_open",
-					href: y.source.url,
+					href: E.source.url,
 					isSponsored: h.isSponsored,
 					postId: h.id,
 					source: h.source,
@@ -4886,19 +4889,19 @@
 					target: "_blank"
 				}, r.a.createElement(b.a, {
 					name: "external_link",
-					className: Object(d.a)(v.a.icon, v.a.outboundLinkIcon)
+					className: Object(d.a)(_.a.icon, _.a.outboundLinkIcon)
 				})) : r.a.createElement(a.a, {
 					"aria-label": n.fbt._("View content", null, {
 						hk: "24KLWF"
 					}),
-					className: Object(d.a)(t, v.a.outer),
+					className: Object(d.a)(t, _.a.outer),
 					"data-click-id": "expando_open",
-					to: Object(c.a)(y.permalink),
+					to: Object(c.a)(E.permalink),
 					rel: "nofollow",
-					onClick: k
+					onClick: P
 				}, r.a.createElement(b.a, {
 					name: "text_post",
-					className: v.a.icon
+					className: _.a.icon
 				}))
 			})
 		},
@@ -11322,4 +11325,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage.947cf081f8c609048d06.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage.352df58975463e045e78.js.map

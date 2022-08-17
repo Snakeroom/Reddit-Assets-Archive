@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Subreddit.1eccfa01eef94afe4a9a.js
-// Retrieved at 8/17/2022, 11:40:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Subreddit.7e0cf0f2f867a9e37a6a.js
+// Retrieved at 8/17/2022, 5:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Subreddit", "Frontpage~ModListing", "reddit-components-Econ-PredictionLeaderboard-Sidebar"], {
 		"./node_modules/@reddit/i18n-tools/runtime/helpers/locale/index.js": function(e, t, n) {
@@ -1120,7 +1120,7 @@
 		"./src/higherOrderComponents/withAdClickLocation/index.tsx": function(e, t, n) {
 			"use strict";
 			n.d(t, "a", (function() {
-				return m
+				return u
 			}));
 			n("./node_modules/core-js/modules/web.dom.iterable.js");
 			var s = n("./node_modules/react/index.js"),
@@ -1151,13 +1151,9 @@
 			});
 			var c = n("./src/higherOrderComponents/withAdClickLocation/Locations.ts"),
 				d = n("./src/telemetry/index.ts");
+			const l = new Set;
 
-			function l(e) {
-				return !!e.dataset.isvideoplayer || !!e.closest(".PostContainer, [data-isvideoplayer]")
-			}
-			const u = new Set;
-
-			function m(e) {
+			function u(e) {
 				function t(t) {
 					const n = Object(o.f)().getState(),
 						{
@@ -1166,16 +1162,18 @@
 							...t
 						};
 					return s && s.isSponsored ? r.a.createElement("div", {
-						onClick: function(e, s) {
-							var r;
-							if (u.has(e.timeStamp)) return;
-							u.add(e.timeStamp);
-							const o = function(e) {
+						onClickCapture: function(e, s) {
+							var r, o;
+							if (l.has(e.timeStamp)) return;
+							l.add(e.timeStamp);
+							const a = function(e) {
 								if (e.dataset.adclicklocation) return e.dataset.adclicklocation;
 								const t = e.closest(".PostContainer, [data-adclicklocation]");
 								return t ? t.dataset.adclicklocation : c.a.UNKNOWN
 							}(e.target);
-							o && Object(d.a)(i(s)(n, o, null === (r = t.post) || void 0 === r ? void 0 : r.postId)), (l(e.target) || l(e.currentTarget)) && e.stopPropagation()
+							a && (! function(e, t) {
+								return Object.values(t).some(t => t === e)
+							}(a, c.b) ? Object(d.a)(i(s)(n, a, null === (o = t.post) || void 0 === o ? void 0 : o.postId)) : Object(d.a)(i(s)(n, c.a.UNKNOWN, null === (r = t.post) || void 0 === r ? void 0 : r.postId)))
 						}
 					}, r.a.createElement(e, t)) : r.a.createElement(e, t)
 				}
@@ -18099,4 +18097,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Subreddit.1eccfa01eef94afe4a9a.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Subreddit.7e0cf0f2f867a9e37a6a.js.map

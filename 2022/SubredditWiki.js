@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditWiki.15a38be9088518af1b03.js
-// Retrieved at 8/17/2022, 11:40:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditWiki.c4a5025eb048d0b31dfd.js
+// Retrieved at 8/17/2022, 5:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditWiki"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -6134,7 +6134,7 @@
 		"./src/reddit/components/OverflowMenu/index.tsx": function(e, t, s) {
 			"use strict";
 			s.d(t, "a", (function() {
-				return k
+				return y
 			}));
 			var r = s("./node_modules/fbt/lib/FbtPublic.js"),
 				n = s("./node_modules/react/index.js"),
@@ -6149,13 +6149,14 @@
 				p = s("./src/reddit/controls/Dropdown/Row.tsx"),
 				b = s("./src/reddit/icons/fonts/index.tsx"),
 				h = s("./src/reddit/selectors/tooltip.ts"),
-				f = s("./src/reddit/components/OverflowMenu/index.m.less"),
-				g = s.n(f);
-			const v = c.a.wrapped(m.a, "_Dropdown", g.a),
-				x = Object(u.a)(v),
-				_ = c.a.button("MenuButton", g.a),
-				k = c.a.wrapped(p.b, "DropdownRow", g.a),
-				y = Object(a.c)({
+				f = s("./src/higherOrderComponents/withAdClickLocation/Locations.ts"),
+				g = s("./src/reddit/components/OverflowMenu/index.m.less"),
+				v = s.n(g);
+			const x = c.a.wrapped(m.a, "_Dropdown", v.a),
+				_ = Object(u.a)(x),
+				k = c.a.button("MenuButton", v.a),
+				y = c.a.wrapped(p.b, "DropdownRow", v.a),
+				O = Object(a.c)({
 					dropdownIsOpen: (e, t) => {
 						let {
 							dropdownId: s
@@ -6163,7 +6164,7 @@
 						return Object(h.b)(s)(e)
 					}
 				}),
-				O = Object(o.b)(y, (e, t) => {
+				w = Object(o.b)(O, (e, t) => {
 					let {
 						dropdownId: s
 					} = t;
@@ -6173,26 +6174,27 @@
 						}))
 					}
 				}),
-				w = e => t => {
+				E = e => t => {
 					e.onClick && e.onClick(), e.toggleDropdown(), t.stopPropagation()
 				};
-			t.b = O(e => i.a.createElement(_, {
+			t.b = w(e => i.a.createElement(k, {
 				"aria-expanded": e.dropdownIsOpen,
 				"aria-haspopup": !0,
 				"aria-label": r.fbt._("more options", null, {
 					hk: "2EnY1x"
 				}),
 				className: Object(d.a)(e.className, {
-					[g.a.mIsEnabled]: !e.disabled && !e.defaultButtonOutline
+					[v.a.mIsEnabled]: !e.disabled && !e.defaultButtonOutline
 				}),
 				disabled: e.disabled,
-				onClick: w(e),
+				onClick: E(e),
 				onMouseDown: e.handleMouseDown,
-				id: e.dropdownId
+				id: e.dropdownId,
+				"data-adclicklocation": f.b.OVERFLOW_MENU
 			}, e.icon ? e.icon : i.a.createElement(b.a, {
 				name: "overflow_horizontal",
-				className: g.a.MenuIcon
-			}), i.a.createElement(x, {
+				className: v.a.MenuIcon
+			}), i.a.createElement(_, {
 				className: e.dropdownClassName,
 				isOpen: e.dropdownIsOpen,
 				tooltipId: e.dropdownId,
@@ -10634,4 +10636,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditWiki.15a38be9088518af1b03.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditWiki.c4a5025eb048d0b31dfd.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-MediumPost.a100512012b58c1322df.js
-// Retrieved at 8/16/2022, 11:20:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-MediumPost.6de267cbd7e7ae68902c.js
+// Retrieved at 8/17/2022, 5:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-MediumPost"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -299,7 +299,7 @@
 		"./src/higherOrderComponents/withAdClickLocation/index.tsx": function(e, t, s) {
 			"use strict";
 			s.d(t, "a", (function() {
-				return m
+				return u
 			}));
 			s("./node_modules/core-js/modules/web.dom.iterable.js");
 			var n = s("./node_modules/react/index.js"),
@@ -330,13 +330,9 @@
 			});
 			var c = s("./src/higherOrderComponents/withAdClickLocation/Locations.ts"),
 				d = s("./src/telemetry/index.ts");
+			const l = new Set;
 
-			function l(e) {
-				return !!e.dataset.isvideoplayer || !!e.closest(".PostContainer, [data-isvideoplayer]")
-			}
-			const u = new Set;
-
-			function m(e) {
+			function u(e) {
 				function t(t) {
 					const s = Object(r.f)().getState(),
 						{
@@ -345,16 +341,18 @@
 							...t
 						};
 					return n && n.isSponsored ? o.a.createElement("div", {
-						onClick: function(e, n) {
-							var o;
-							if (u.has(e.timeStamp)) return;
-							u.add(e.timeStamp);
-							const r = function(e) {
+						onClickCapture: function(e, n) {
+							var o, r;
+							if (l.has(e.timeStamp)) return;
+							l.add(e.timeStamp);
+							const i = function(e) {
 								if (e.dataset.adclicklocation) return e.dataset.adclicklocation;
 								const t = e.closest(".PostContainer, [data-adclicklocation]");
 								return t ? t.dataset.adclicklocation : c.a.UNKNOWN
 							}(e.target);
-							r && Object(d.a)(a(n)(s, r, null === (o = t.post) || void 0 === o ? void 0 : o.postId)), (l(e.target) || l(e.currentTarget)) && e.stopPropagation()
+							i && (! function(e, t) {
+								return Object.values(t).some(t => t === e)
+							}(i, c.b) ? Object(d.a)(a(n)(s, i, null === (r = t.post) || void 0 === r ? void 0 : r.postId)) : Object(d.a)(a(n)(s, c.a.UNKNOWN, null === (o = t.post) || void 0 === o ? void 0 : o.postId)))
 						}
 					}, o.a.createElement(e, t)) : o.a.createElement(e, t)
 				}
@@ -905,7 +903,8 @@
 					className: O
 				}, b && !o && !h && r.a.createElement("span", {
 					className: m.a.caption,
-					title: b
+					title: b,
+					"data-adclicklocation": l.a.CTA_CAPTION
 				}, b), !h && r.a.createElement(c.a, {
 					href: u.url.replace(n.a.redditUrl, ""),
 					isSponsored: s.isSponsored,
@@ -3344,7 +3343,7 @@
 		"./src/reddit/components/VerticalVotes/index.tsx": function(e, t, s) {
 			"use strict";
 			s.d(t, "b", (function() {
-				return C
+				return g
 			}));
 			var n = s("./node_modules/fbt/lib/FbtPublic.js"),
 				o = s("./node_modules/react/index.js"),
@@ -3360,16 +3359,17 @@
 				b = s("./src/reddit/models/Vote/index.ts"),
 				f = s("./src/reddit/selectors/posts.ts"),
 				h = s("./src/reddit/selectors/user.ts"),
-				x = s("./src/reddit/components/VerticalVotes/index.m.less"),
-				v = s.n(x);
-			const O = Object(a.c)({
+				x = s("./src/higherOrderComponents/withAdClickLocation/Locations.ts"),
+				v = s("./src/reddit/components/VerticalVotes/index.m.less"),
+				O = s.n(v);
+			const _ = Object(a.c)({
 					isNightMode: h.db,
 					isAnimatingUpvotePostId: f.k
 				}),
-				_ = Object(i.b)(O),
-				E = e => !e.isCustomIconDisabled && !0 !== e.redditStyle && Object(p.a)(e).voteIcons.upvoteInactive && Object(p.a)(e).voteIcons.upvoteActive,
-				C = e => !e.isCustomIconDisabled && !0 !== e.redditStyle && Object(p.a)(e).voteIcons.downvoteInactive && Object(p.a)(e).voteIcons.downvoteActive;
-			class g extends r.a.Component {
+				E = Object(i.b)(_),
+				C = e => !e.isCustomIconDisabled && !0 !== e.redditStyle && Object(p.a)(e).voteIcons.upvoteInactive && Object(p.a)(e).voteIcons.upvoteActive,
+				g = e => !e.isCustomIconDisabled && !0 !== e.redditStyle && Object(p.a)(e).voteIcons.downvoteInactive && Object(p.a)(e).voteIcons.downvoteActive;
+			class S extends r.a.Component {
 				constructor() {
 					super(...arguments), this.state = {
 						voted: b.a.notVoted
@@ -3405,83 +3405,87 @@
 							shouldShowScore: p = !0,
 							upvoteButtonClassName: f,
 							containerRef: h,
-							model: x,
-							postId: O
+							model: v,
+							postId: _
 						} = e,
-						_ = E(e),
-						g = C(e),
-						S = x.voteState,
-						y = i === O;
+						E = C(e),
+						S = g(e),
+						y = v.voteState,
+						j = i === _;
 					return r.a.createElement("div", {
-						className: Object(c.a)(v.a.votesContainer, e.className),
-						id: `vote-arrows-${x.id}`,
+						className: Object(c.a)(O.a.votesContainer, e.className),
+						id: `vote-arrows-${v.id}`,
 						ref: h
-					}, _ ? r.a.createElement(m.b, {
+					}, E ? r.a.createElement(m.b, {
 						"aria-label": n.fbt._("upvote", null, {
 							hk: "G6dJB"
 						}),
-						"aria-pressed": S === b.a.upvoted,
+						"aria-pressed": y === b.a.upvoted,
 						"data-click-id": "upvote",
+						"data-adclicklocation": x.b.UPVOTE,
 						compact: e.compact,
 						className: e.upvoteClassName,
 						id: e.upvoteTooltipId,
 						isNightMode: o,
 						onClick: this.onUpvote,
-						voteState: S
+						voteState: y
 					}) : r.a.createElement("button", {
 						"aria-label": n.fbt._("upvote", null, {
 							hk: "RguWS"
 						}),
-						"aria-pressed": S === b.a.upvoted,
+						"aria-pressed": y === b.a.upvoted,
 						className: Object(c.a)(l.n, f, {
-							[v.a.bounceUp]: y
+							[O.a.bounceUp]: j
 						}),
 						onClick: this.onUpvote,
 						"data-click-id": "upvote",
+						"data-adclicklocation": x.b.UPVOTE,
 						id: e.upvoteTooltipId
 					}, r.a.createElement(m.d, {
 						compact: e.compact,
 						className: e.upvoteClassName,
-						voteState: S
+						voteState: y
 					})), !e.compact && p && r.a.createElement(u.a, {
-						className: Object(c.a)(v.a.Score, e.scoreClassName),
+						className: Object(c.a)(O.a.Score, e.scoreClassName),
 						flairStyleTemplate: e.flairStyleTemplate,
 						light: e.light,
 						score: e.model.score,
-						voteState: S,
+						voteState: y,
 						shouldShowUpvoteRatioOnHover: a,
 						isScoreHidden: e.model.isScoreHidden,
 						isVoteCountAnimation: !!d,
 						isCountAnimShadowTestEnabled: !!s,
-						postId: O
-					}), g ? r.a.createElement(m.a, {
+						postId: _
+					}), S ? r.a.createElement(m.a, {
 						"aria-label": n.fbt._("downvote", null, {
 							hk: "tNfDV"
 						}),
-						"aria-pressed": S === b.a.downvoted,
+						"aria-pressed": y === b.a.downvoted,
 						"data-click-id": "downvote",
+						"data-adclicklocation": x.b.DOWNVOTE,
 						className: e.downvoteClassName,
 						compact: e.compact,
 						isNightMode: o,
 						onClick: this.onDownvote,
-						voteState: S
+						voteState: y
 					}) : r.a.createElement("button", {
 						"aria-label": n.fbt._("downvote", null, {
 							hk: "1mDjTw"
 						}),
-						"aria-pressed": S === b.a.downvoted,
+						"aria-pressed": y === b.a.downvoted,
 						className: Object(c.a)(l.n, t),
 						onClick: this.onDownvote,
-						"data-click-id": "downvote"
+						"data-click-id": "downvote",
+						"data-adclicklocation": x.b.DOWNVOTE
 					}, r.a.createElement(m.c, {
 						className: e.downvoteClassName,
 						compact: e.compact,
-						voteState: S
+						voteState: y
 					})))
 				}
 			}
-			const S = Object(d.a)(_(g));
-			t.a = S
+			const y = Object(d.a)(E(S));
+			t.a = y
 		},
 		"./src/reddit/connectors/SubscribeButton/index.ts": function(e, t, s) {
 			"use strict";
@@ -5611,4 +5615,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-MediumPost.a100512012b58c1322df.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-MediumPost.6de267cbd7e7ae68902c.js.map

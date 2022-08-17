@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CountryPage~Multireddit~reddit-components-AdHocMultiredditSidebar.e6c4d871b033779d548c.js
-// Retrieved at 8/9/2022, 12:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CountryPage~Multireddit~reddit-components-AdHocMultiredditSidebar.9c8720d401b3b0419c7e.js
+// Retrieved at 8/17/2022, 5:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CountryPage~Multireddit~reddit-components-AdHocMultiredditSidebar"], {
 		"./node_modules/lodash/take.js": function(e, t, i) {
@@ -1736,7 +1736,7 @@
 		"./src/reddit/components/OverflowMenu/index.tsx": function(e, t, i) {
 			"use strict";
 			i.d(t, "a", (function() {
-				return S
+				return j
 			}));
 			var r = i("./node_modules/fbt/lib/FbtPublic.js"),
 				s = i("./node_modules/react/index.js"),
@@ -1751,13 +1751,14 @@
 				b = i("./src/reddit/controls/Dropdown/Row.tsx"),
 				p = i("./src/reddit/icons/fonts/index.tsx"),
 				h = i("./src/reddit/selectors/tooltip.ts"),
-				f = i("./src/reddit/components/OverflowMenu/index.m.less"),
-				x = i.n(f);
-			const y = c.a.wrapped(m.a, "_Dropdown", x.a),
-				O = Object(u.a)(y),
-				g = c.a.button("MenuButton", x.a),
-				S = c.a.wrapped(b.b, "DropdownRow", x.a),
-				j = Object(o.c)({
+				f = i("./src/higherOrderComponents/withAdClickLocation/Locations.ts"),
+				x = i("./src/reddit/components/OverflowMenu/index.m.less"),
+				y = i.n(x);
+			const O = c.a.wrapped(m.a, "_Dropdown", y.a),
+				g = Object(u.a)(O),
+				S = c.a.button("MenuButton", y.a),
+				j = c.a.wrapped(b.b, "DropdownRow", y.a),
+				E = Object(o.c)({
 					dropdownIsOpen: (e, t) => {
 						let {
 							dropdownId: i
@@ -1765,7 +1766,7 @@
 						return Object(h.b)(i)(e)
 					}
 				}),
-				E = Object(d.b)(j, (e, t) => {
+				C = Object(d.b)(E, (e, t) => {
 					let {
 						dropdownId: i
 					} = t;
@@ -1775,26 +1776,27 @@
 						}))
 					}
 				}),
-				C = e => t => {
+				w = e => t => {
 					e.onClick && e.onClick(), e.toggleDropdown(), t.stopPropagation()
 				};
-			t.b = E(e => n.a.createElement(g, {
+			t.b = C(e => n.a.createElement(S, {
 				"aria-expanded": e.dropdownIsOpen,
 				"aria-haspopup": !0,
 				"aria-label": r.fbt._("more options", null, {
 					hk: "2EnY1x"
 				}),
 				className: Object(a.a)(e.className, {
-					[x.a.mIsEnabled]: !e.disabled && !e.defaultButtonOutline
+					[y.a.mIsEnabled]: !e.disabled && !e.defaultButtonOutline
 				}),
 				disabled: e.disabled,
-				onClick: C(e),
+				onClick: w(e),
 				onMouseDown: e.handleMouseDown,
-				id: e.dropdownId
+				id: e.dropdownId,
+				"data-adclicklocation": f.b.OVERFLOW_MENU
 			}, e.icon ? e.icon : n.a.createElement(p.a, {
 				name: "overflow_horizontal",
-				className: x.a.MenuIcon
-			}), n.a.createElement(O, {
+				className: y.a.MenuIcon
+			}), n.a.createElement(g, {
 				className: e.dropdownClassName,
 				isOpen: e.dropdownIsOpen,
 				tooltipId: e.dropdownId,
@@ -2570,4 +2572,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CountryPage~Multireddit~reddit-components-AdHocMultiredditSidebar.e6c4d871b033779d548c.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CountryPage~Multireddit~reddit-components-AdHocMultiredditSidebar.9c8720d401b3b0419c7e.js.map
