@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfileFollowersPage.b3120660fefb29943afb.js
-// Retrieved at 8/17/2022, 5:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfileFollowersPage.f32247c5f574b9bb6b10.js
+// Retrieved at 8/17/2022, 6:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfileFollowersPage", "ProfileFollowersAction"], {
 		"./node_modules/lodash/take.js": function(e, t, s) {
@@ -247,8 +247,8 @@
 				R = s("./src/reddit/helpers/timeApiRoute/index.ts"),
 				F = s("./src/reddit/actions/pages/profileOverview/constants.ts"),
 				M = s("./src/lib/initializeClient/installReducer.ts"),
-				A = s("./node_modules/redux/es/redux.js"),
-				U = s("./src/reddit/actions/profileOverviewChrono/constants.ts");
+				U = s("./node_modules/redux/es/redux.js"),
+				A = s("./src/reddit/actions/profileOverviewChrono/constants.ts");
 			const L = {};
 			var H = function() {
 				let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : L,
@@ -256,8 +256,8 @@
 				switch (t.type) {
 					case F.c:
 					case F.b:
-					case U.c:
-					case U.b: {
+					case A.c:
+					case A.b: {
 						const {
 							key: s
 						} = t.payload;
@@ -267,7 +267,7 @@
 						}
 					}
 					case F.a:
-					case U.a: {
+					case A.a: {
 						const {
 							key: s,
 							error: r
@@ -287,7 +287,7 @@
 						t = arguments.length > 1 ? arguments[1] : void 0;
 					switch (t.type) {
 						case F.c:
-						case U.c: {
+						case A.c: {
 							const {
 								key: s
 							} = t.payload;
@@ -298,8 +298,8 @@
 						}
 						case F.b:
 						case F.a:
-						case U.b:
-						case U.a: {
+						case A.b:
+						case A.a: {
 							const {
 								key: s
 							} = t.payload;
@@ -312,7 +312,7 @@
 							return e
 					}
 				},
-				D = Object(A.c)({
+				D = Object(U.c)({
 					error: H,
 					pending: W
 				});
@@ -330,7 +330,7 @@
 							[s]: {}
 						}
 					}
-					case U.b: {
+					case A.b: {
 						const {
 							key: s,
 							fetchedToken: r
@@ -353,7 +353,7 @@
 						t = arguments.length > 1 ? arguments[1] : void 0;
 					switch (t.type) {
 						case F.b:
-						case U.b: {
+						case A.b: {
 							const {
 								key: s,
 								overviewIds: r
@@ -374,7 +374,7 @@
 						t = arguments.length > 1 ? arguments[1] : void 0;
 					switch (t.type) {
 						case F.b:
-						case U.b: {
+						case A.b: {
 							const {
 								key: s,
 								dist: r,
@@ -392,7 +392,7 @@
 							return e
 					}
 				},
-				Y = Object(A.c)({
+				Y = Object(U.c)({
 					api: D,
 					fetchedTokens: z,
 					ids: G,
@@ -455,7 +455,7 @@
 							return e
 					}
 				},
-				te = Object(A.c)({
+				te = Object(U.c)({
 					error: X,
 					pending: ee
 				}),
@@ -517,7 +517,7 @@
 							return e
 					}
 				},
-				ae = Object(A.c)({
+				ae = Object(U.c)({
 					error: ne,
 					pending: oe
 				});
@@ -536,7 +536,7 @@
 							return e
 					}
 				},
-				ce = Object(A.c)({
+				ce = Object(U.c)({
 					api: ae,
 					models: le
 				}),
@@ -714,14 +714,14 @@
 							return e
 					}
 				},
-				Oe = Object(A.c)({
+				Oe = Object(U.c)({
 					api: te,
 					extraComments: ce,
 					keyToCommentThreadLinkSets: xe,
 					keyToHeadCommentId: ye,
 					keyToPostId: Ie
 				}),
-				we = Object(A.c)({
+				we = Object(U.c)({
 					chrono: Y,
 					conversations: Oe
 				});
@@ -937,7 +937,7 @@
 					}
 				},
 				M = s("./src/reddit/actions/inContextModeration.ts");
-			var A = function() {
+			var U = function() {
 				let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : null,
 					t = arguments.length > 1 ? arguments[1] : void 0;
 				switch (t.type) {
@@ -947,9 +947,9 @@
 						return e
 				}
 			};
-			const U = {};
+			const A = {};
 			var L = function() {
-					let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : U,
+					let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : A,
 						t = arguments.length > 1 ? arguments[1] : void 0;
 					switch (t.type) {
 						case _.r: {
@@ -1084,7 +1084,7 @@
 				Z = Object(S.c)({
 					api: T,
 					fetchedTokens: F,
-					inContext: A,
+					inContext: U,
 					loadMore: L,
 					models: W,
 					search: G,
@@ -1524,8 +1524,8 @@
 				R = s("./src/reddit/components/OverlayAwareTooltip/index.tsx"),
 				F = s("./src/reddit/components/SubscribeButton/index.tsx"),
 				M = s("./src/reddit/components/UserIcon/index.tsx"),
-				A = s("./src/reddit/controls/Button/index.tsx"),
-				U = s("./src/reddit/endpoints/profile/info.ts"),
+				U = s("./src/reddit/controls/Button/index.tsx"),
+				A = s("./src/reddit/endpoints/profile/info.ts"),
 				L = s("./src/reddit/helpers/trackers/authorHovercard.ts"),
 				H = s("./src/reddit/icons/fonts/Info/index.tsx"),
 				B = s("./src/reddit/icons/svgs/Premium/index.tsx"),
@@ -1694,7 +1694,7 @@
 							karma: t
 						}
 					} = e, s = {
-						...U.a,
+						...A.a,
 						...t
 					};
 					return n.a.createElement(Ce, null, n.a.createElement(Ie, null, n.a.createElement(we, null, Object(N.b)(s.fromPosts)), n.a.createElement(Ee, null, E.fbt._({
@@ -1769,18 +1769,18 @@
 						{
 							awardedLastMonth: M
 						} = g,
-						U = !!g.snoovatarFullBodyAsset,
+						A = !!g.snoovatarFullBodyAsset,
 						H = g.isNSFW && a;
 					let B;
-					return B = U ? !H && I && I.bannerBackgroundImage || void 0 : H ? `${_.a.assetPath}/img/user-info-banner.png` : e.user.bannerImage, n.a.createElement(Ne, {
+					return B = A ? !H && I && I.bannerBackgroundImage || void 0 : H ? `${_.a.assetPath}/img/user-info-banner.png` : e.user.bannerImage, n.a.createElement(Ne, {
 						className: r,
 						id: d,
 						style: b
-					}, !U && B && n.a.createElement(_e, {
+					}, !A && B && n.a.createElement(_e, {
 						style: {
 							backgroundImage: `url('${B}')`
 						}
-					}), n.a.createElement(je, null, U ? n.a.createElement(K.a, {
+					}), n.a.createElement(je, null, A ? n.a.createElement(K.a, {
 						isHovercard: !0,
 						bannerBackgroundImage: B,
 						compact: !0,
@@ -1812,7 +1812,7 @@
 						username: x
 					}), l && !j && !C && O && !w && n.a.createElement(he, {
 						contextId: i,
-						priority: A.c.Secondary,
+						priority: U.c.Secondary,
 						userId: g.id,
 						text: E.fbt._("Start Chat", null, {
 							hk: "2mfqRE"
@@ -1851,7 +1851,7 @@
 				};
 			Fe.WrappedComponent = Te;
 			var Me = Fe;
-			const Ae = Object(o.c)({
+			const Ue = Object(o.c)({
 					activeTooltipId: g.a,
 					currentUser: y.k,
 					isLoggedIn: y.Q,
@@ -1930,13 +1930,13 @@
 						})
 					}
 				}),
-				Ue = Object(i.b)(Ae, (e, t) => ({
+				Ae = Object(i.b)(Ue, (e, t) => ({
 					onClickSnoovatar: () => e(Object(a.b)({
 						clickSource: "user_hovercard"
 					})),
 					onHideTooltip: () => e(Object(d.i)())
 				}));
-			t.a = Ue(e => e.isModWithUserNotesPermissions ? n.a.createElement(w.b, {
+			t.a = Ae(e => e.isModWithUserNotesPermissions ? n.a.createElement(w.b, {
 				activeTooltipId: e.activeTooltipId,
 				contextId: e.contextId,
 				currentUser: e.currentUser,
@@ -3374,8 +3374,8 @@
 			var R = s("./src/reddit/components/ResizeSensor/index.tsx"),
 				F = s("./src/reddit/constants/componentSizes.ts"),
 				M = s("./src/reddit/constants/elementClassNames.ts"),
-				A = s("./src/reddit/contexts/InsideOverlay.tsx"),
-				U = s("./src/reddit/selectors/platform.ts"),
+				U = s("./src/reddit/contexts/InsideOverlay.tsx"),
+				A = s("./src/reddit/selectors/platform.ts"),
 				L = s("./src/telemetry/helpers/sendEvent.ts"),
 				H = s("./src/telemetry/helpers/sendTiming.ts"),
 				B = s("./src/reddit/components/Scroller/Simple.m.less"),
@@ -3384,7 +3384,7 @@
 				V = 5 * p.K,
 				z = 3,
 				K = Object(m.c)({
-					isOverlayOpen: U.i
+					isOverlayOpen: A.i
 				}),
 				G = Object(c.b)(K),
 				q = {};
@@ -3911,7 +3911,7 @@
 					return void 0 === e.onLoadMore || "loadMoreToken" in e
 				}
 			}
-			t.b = G(Object(A.b)(ce))
+			t.b = G(Object(U.b)(ce))
 		},
 		"./src/reddit/components/Scroller/getDocumentTop.ts": function(e, t, s) {
 			"use strict";
@@ -4092,7 +4092,7 @@
 				const t = Object(i.f)().getState(),
 					s = Object(b.a)(t, Object(a.c)());
 				if (e.isD2xPdpSideRailRecsEnabled) {
-					const t = e.d2xPdpSideRailRecsVariant === u.Tc.GreyRereddit || e.d2xPdpSideRailRecsVariant === u.Tc.GreyRedditNoNsfw || e.d2xPdpSideRailRecsVariant === u.Tc.LargeImagePreview ? e.reredditButtons : [];
+					const t = e.d2xPdpSideRailRecsVariant === u.Uc.GreyRereddit || e.d2xPdpSideRailRecsVariant === u.Uc.GreyRedditNoNsfw || e.d2xPdpSideRailRecsVariant === u.Uc.LargeImagePreview ? e.reredditButtons : [];
 					return n.a.createElement(_, {
 						reredditContent: t,
 						countryCode: e.countryCode
@@ -6186,13 +6186,13 @@
 			const i = e => {
 					return !(Object(n.c)(e, {
 						experimentEligibilitySelector: n.a,
-						experimentName: r.te
-					}) === r.Ld)
+						experimentName: r.ve
+					}) === r.Nd)
 				},
 				o = e => Object(n.c)(e, {
 					experimentEligibilitySelector: n.a,
-					experimentName: r.ue
-				}) === r.Ld
+					experimentName: r.we
+				}) === r.Nd
 		},
 		"./src/reddit/selectors/followers.ts": function(e, t, s) {
 			"use strict";
@@ -6243,4 +6243,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileFollowersPage.b3120660fefb29943afb.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileFollowersPage.f32247c5f574b9bb6b10.js.map

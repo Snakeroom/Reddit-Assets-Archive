@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/AuthorHovercard~Reddit.a4432a14ddb39c819eb5.js
-// Retrieved at 8/17/2022, 5:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/AuthorHovercard~Reddit.7bacf312930f42a6b73d.js
+// Retrieved at 8/17/2022, 6:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["AuthorHovercard~Reddit"], {
 		"./src/lib/browser/isIncognito.ts": function(e, t, n) {
@@ -109,8 +109,8 @@
 				g = n("./src/reddit/helpers/parseUrl.ts"),
 				_ = n("./src/reddit/helpers/tabBadging/index.ts"),
 				v = n("./src/reddit/helpers/trackers/notifications.ts"),
-				x = n("./src/reddit/models/Toast/index.ts"),
-				O = n("./src/reddit/selectors/activeModal.ts"),
+				O = n("./src/reddit/models/Toast/index.ts"),
+				x = n("./src/reddit/selectors/activeModal.ts"),
 				N = n("./src/reddit/selectors/activeModalId.ts"),
 				y = n("./src/reddit/selectors/experiments/delayDnPermission.ts"),
 				k = n("./src/reddit/selectors/experiments/nsfwBlockingExperiment.ts"),
@@ -119,7 +119,7 @@
 			const E = e => Object(C.c)(e, {
 				experimentName: j.lc,
 				experimentEligibilitySelector: C.a
-			}) === j.Ld;
+			}) === j.Nd;
 			var I = n("./src/reddit/selectors/meta.ts"),
 				S = n("./src/reddit/selectors/user.ts");
 			let B = !1;
@@ -154,7 +154,7 @@
 						m = !!Object(N.a)(r),
 						b = Object(y.a)(r),
 						p = Object(k.e)(r),
-						f = Object(O.c)(h.a.NSFW_BLOCKING_MODAL_V2)(r);
+						f = Object(x.c)(h.a.NSFW_BLOCKING_MODAL_V2)(r);
 					if (p || f) return;
 					if (await Object(s.a)() || d) return;
 					await T(r, i);
@@ -174,7 +174,7 @@
 					switch (await Object(r.b)(a.gqlContext)) {
 						case r.a.Success:
 							Object(b.b)(l.a.Granted), v.m(o), e && t(Object(f.f)({
-								kind: x.b.SuccessCommunity,
+								kind: O.b.SuccessCommunity,
 								text: i.fbt._("Changes saved", null, {
 									hk: "wGH5U"
 								})
@@ -196,7 +196,7 @@
 					if (a) {
 						const e = await a.pushManager.getSubscription();
 						e && (e.unsubscribe(), t && n(Object(f.f)({
-							kind: x.b.SuccessCommunity,
+							kind: O.b.SuccessCommunity,
 							text: i.fbt._("Changes saved", null, {
 								hk: "wGH5U"
 							})
@@ -339,13 +339,13 @@
 			var g = n("./src/reddit/selectors/user.ts"),
 				_ = n("./src/reddit/components/InboxBanner/CommonBanner.m.less"),
 				v = n.n(_);
-			const x = e => {
+			const O = e => {
 				let {
 					isFromMiniInbox: t,
 					banner: n,
 					userId: h
 				} = e;
-				var g, _, x, O, N, y, k, j, C, E, I, S, B, T, w, P, L;
+				var g, _, O, x, N, y, k, j, C, E, I, S, B, T, w, P, L;
 				const A = Object(o.d)(),
 					H = Object(m.a)(),
 					[R, U, F] = function(e, t, n) {
@@ -376,7 +376,7 @@
 						(null === (e = n.persistence) || void 0 === e ? void 0 : e.isDismissible) && (F(), A(Object(c.a)(n.notificationName)))
 					},
 					Q = {
-						backgroundColor: D ? null === (x = null == n ? void 0 : n.primaryCta) || void 0 === x ? void 0 : x.colors.hoverHex : null === (O = null == n ? void 0 : n.primaryCta) || void 0 === O ? void 0 : O.colors.backgroundHex,
+						backgroundColor: D ? null === (O = null == n ? void 0 : n.primaryCta) || void 0 === O ? void 0 : O.colors.hoverHex : null === (x = null == n ? void 0 : n.primaryCta) || void 0 === x ? void 0 : x.colors.backgroundHex,
 						color: null === (N = null == n ? void 0 : n.primaryCta) || void 0 === N ? void 0 : N.text.colorText,
 						borderColor: null === (y = null == n ? void 0 : n.primaryCta) || void 0 === y ? void 0 : y.colors.borderHex
 					},
@@ -462,7 +462,7 @@
 				} = e;
 				const n = Object(o.e)(h),
 					i = Object(o.e)(g.i);
-				return (null == n ? void 0 : n.length) && i ? a.a.createElement(a.a.Fragment, null, null == n ? void 0 : n.map(e => a.a.createElement(x, {
+				return (null == n ? void 0 : n.length) && i ? a.a.createElement(a.a.Fragment, null, null == n ? void 0 : n.map(e => a.a.createElement(O, {
 					banner: e,
 					isFromMiniInbox: t,
 					key: e.notificationName,
@@ -519,8 +519,8 @@
 				g = n("./src/reddit/hooks/useTracking.ts"),
 				_ = n("./src/reddit/icons/fonts/index.tsx"),
 				v = n("./src/reddit/components/InboxBanner/index.m.less"),
-				x = n.n(v);
-			var O = e => {
+				O = n.n(v);
+			var x = e => {
 				let {
 					className: t,
 					closeButtonText: n,
@@ -533,11 +533,11 @@
 				} = e;
 				const u = Object(g.a)();
 				return o.a.createElement("div", {
-					className: Object(c.a)(x.a.banner, t)
+					className: Object(c.a)(O.a.banner, t)
 				}, o.a.createElement("div", {
-					className: x.a.bannerTitleContainer
+					className: O.a.bannerTitleContainer
 				}, r && o.a.createElement("h4", {
-					className: x.a.bannerTitle
+					className: O.a.bannerTitle
 				}, r), i && o.a.createElement(f.t, {
 					onClick: e => {
 						l && l(e), u(Object(h.r)({
@@ -545,17 +545,17 @@
 						}))
 					},
 					Icon: Object(_.b)("close_fill"),
-					className: Object(c.a)(x.a.closeIcon, x.a.closeButton),
+					className: Object(c.a)(O.a.closeIcon, O.a.closeButton),
 					size: f.d.XXS,
 					priority: f.c.Plain
 				})), a && o.a.createElement("p", {
-					className: x.a.bannerDescription
+					className: O.a.bannerDescription
 				}, a), o.a.createElement("div", {
-					className: x.a.bannerButtonsContainer
+					className: O.a.bannerButtonsContainer
 				}, s && o.a.createElement(f.t, {
 					text: s,
 					priority: f.c.Tertiary,
-					className: Object(c.a)(x.a.button, x.a.primaryButton),
+					className: Object(c.a)(O.a.button, O.a.primaryButton),
 					size: f.d.XS,
 					onClick: e => {
 						d && d(e), u(Object(h.r)({
@@ -571,7 +571,7 @@
 					},
 					priority: f.c.Plain,
 					size: f.d.XS,
-					className: Object(c.a)(x.a.button, x.a.closeButton)
+					className: Object(c.a)(O.a.button, O.a.closeButton)
 				})))
 			};
 			const N = e => {
@@ -579,8 +579,8 @@
 					onClose: t,
 					onTurnOnBrowserNotifications: n
 				} = e;
-				return o.a.createElement(O, {
-					className: x.a.dnPromptBanner,
+				return o.a.createElement(x, {
+					className: O.a.dnPromptBanner,
 					titleText: i.fbt._("Don’t miss out on updates — Turn on desktop notifications.", null, {
 						hk: "10oNqB"
 					}),
@@ -889,8 +889,8 @@
 							isPushNotificationsSupported: f,
 							userId: _
 						} = e,
-						[v, x] = Object(K.a)(_),
-						[O, N] = function(e) {
+						[v, O] = Object(K.a)(_),
+						[x, N] = function(e) {
 							const [t, n] = Object(a.useState)(() => Object(J.u)(e));
 							return [t, Object(a.useCallback)(() => {
 								n(!0), Object(J.Bb)(e)
@@ -934,9 +934,9 @@
 					}), o.a.createElement(W, Y({}, e, {
 						isPending: c,
 						onItemClick: u,
-						setDesktopNotificationsPromptSeen: x,
+						setDesktopNotificationsPromptSeen: O,
 						isDNInboxPromptBannerEnabled: S,
-						isInboxPrivacyPolicyBannerEnabled: b && !O,
+						isInboxPrivacyPolicyBannerEnabled: b && !x,
 						setInboxPrivacyPolicyBannerSeen: N,
 						isHotPotatoEnabled: m && !y,
 						setHotPotatoBannerSeen: k
@@ -1114,9 +1114,9 @@
 			})), n.d(t, "b", (function() {
 				return v
 			})), n.d(t, "i", (function() {
-				return x
-			})), n.d(t, "a", (function() {
 				return O
+			})), n.d(t, "a", (function() {
+				return x
 			})), n.d(t, "n", (function() {
 				return N
 			})), n.d(t, "o", (function() {
@@ -1215,7 +1215,7 @@
 					noun: "email",
 					source: "email_app_settings"
 				}),
-				x = (e, t) => n => ({
+				O = (e, t) => n => ({
 					...i.n(n),
 					action: c(e),
 					notification: {
@@ -1224,7 +1224,7 @@
 					noun: "notification",
 					source: "notification_app_settings"
 				}),
-				O = e => t => ({
+				x = e => t => ({
 					...i.n(t),
 					source: "email_app_settings",
 					action: c(e),
@@ -1387,7 +1387,7 @@
 				d: "M18.4 14.788c-.662 0-1.2-.537-1.2-1.202l-.012-5.998C17.188 3.625 13.963.4 10 .4 6.037.4 2.811 3.625 2.811 7.586l-.01 6.002c0 .663-.54 1.2-1.2 1.2a1.199 1.199 0 100 2.4h16.8a1.2 1.2 0 100-2.4zm-9.6 3.6H7.6c0 1.324 1.076 2.4 2.4 2.4 1.323 0 2.4-1.076 2.4-2.4H8.8zm-3.6-4.797c0 .422-.087.822-.22 1.197H15.02a3.554 3.554 0 01-.22-1.2l-.013-5.997A4.794 4.794 0 0010 2.8a4.794 4.794 0 00-4.789 4.787l-.01 6.003z"
 			}));
 			const v = h.a.wrapped(_, "BellOutline", b.a),
-				x = e => {
+				O = e => {
 					let {
 						isBannerEnabled: t,
 						isLoggedIn: n
@@ -1420,7 +1420,7 @@
 						hk: "3Jd0SI"
 					}))))
 				};
-			var O = n("./src/reddit/controls/InternalLink/index.tsx");
+			var x = n("./src/reddit/controls/InternalLink/index.tsx");
 
 			function N() {
 				return (N = Object.assign || function(e) {
@@ -1444,7 +1444,7 @@
 						to: s,
 						kind: u.b.InternalLink
 					},
-					m = a.a.createElement(O.default, {
+					m = a.a.createElement(x.default, {
 						to: s,
 						target: "_blank",
 						rel: "noopener noreferrer",
@@ -1589,7 +1589,7 @@
 						h = Object(o.e)(F.n),
 						g = Object(o.e)(F.D),
 						_ = Object(i.useRef)(h),
-						[v, O] = Object(i.useState)(z.TURN_ON_PN),
+						[v, x] = Object(i.useState)(z.TURN_ON_PN),
 						N = Object(o.e)(e => e.user.accountSettings.changeEmail.api.pending),
 						y = Object(i.useCallback)(() => {
 							f(async (e, t) => {
@@ -1597,20 +1597,20 @@
 								let a = Object(F.fb)(t());
 								a.allIds.length || await e(Object(P.a)(H.a.Email));
 								const o = null === (i = null === (n = (a = Object(F.fb)(t())).byId) || void 0 === n ? void 0 : n.EMAIL_DIGEST) || void 0 === i ? void 0 : i.isEnabled;
-								O(o ? z.DONE : z.TURN_ON_DAYLY_DIGEST)
+								x(o ? z.DONE : z.TURN_ON_DAYLY_DIGEST)
 							})
 						}, [f]),
 						k = Object(i.useCallback)(() => {
-							g ? y() : O(z.VERIFY_EMAIL)
+							g ? y() : x(z.VERIFY_EMAIL)
 						}, [g, y]),
 						j = Object(i.useCallback)(() => {
 							f(async (e, t) => {
 								const n = t();
-								Object(F.hb)(n).allIds.length || await e(Object(P.a)(H.a.Push)), Object(U.c)(t(), M) ? O(z.TURN_ON_PN_APP) : k()
+								Object(F.hb)(n).allIds.length || await e(Object(P.a)(H.a.Push)), Object(U.c)(t(), M) ? x(z.TURN_ON_PN_APP) : k()
 							})
 						}, [f, k]),
 						C = Object(i.useCallback)(() => {
-							(() => Object(I.a)() === S.a.Granted)() ? j(): O(z.TURN_ON_PN)
+							(() => Object(I.a)() === S.a.Granted)() ? j(): x(z.TURN_ON_PN)
 						}, [j]),
 						E = Object(i.useCallback)(() => {
 							m(s.a.Email_perms)(), t && p && p(), f(Object(T.h)(A.a))
@@ -1626,7 +1626,7 @@
 							}
 						}, [h, v, y]), Object(i.useEffect)(() => {
 							N && f(Object(T.g)(A.a))
-						}, [N, f]), v === z.DONE) return a.a.createElement(x, {
+						}, [N, f]), v === z.DONE) return a.a.createElement(O, {
 						isLoggedIn: r,
 						isBannerEnabled: n
 					});
@@ -1681,23 +1681,23 @@
 			const q = e => Object(V.c)(e, {
 					experimentEligibilitySelector: V.a,
 					experimentName: G.Hb
-				}) === G.Sd.MemesNoBadge,
+				}) === G.Ud.MemesNoBadge,
 				K = e => Object(V.c)(e, {
 					experimentEligibilitySelector: V.a,
 					experimentName: G.Hb
-				}) === G.Sd.PnEmailNoBadge,
+				}) === G.Ud.PnEmailNoBadge,
 				J = e => Object(V.c)(e, {
 					experimentEligibilitySelector: V.a,
 					experimentName: G.Hb
-				}) === G.Sd.KarmaNoBadge,
+				}) === G.Ud.KarmaNoBadge,
 				Y = e => Object(V.c)(e, {
 					experimentEligibilitySelector: V.a,
 					experimentName: G.Hb
-				}) === G.Sd.PopularNoBadge,
+				}) === G.Ud.PopularNoBadge,
 				Z = e => Object(V.c)(e, {
 					experimentEligibilitySelector: V.a,
 					experimentName: G.Hb
-				}) === G.Sd.CatsNoBadge;
+				}) === G.Ud.CatsNoBadge;
 			t.a = e => {
 				let {
 					isBannerEnabled: t,
@@ -1729,7 +1729,7 @@
 					onBtnClick: d(s.a.Karma)
 				}) : h ? a.a.createElement(f, {
 					inTooltip: i
-				}) : a.a.createElement(x, {
+				}) : a.a.createElement(O, {
 					isBannerEnabled: t,
 					isLoggedIn: n
 				})
@@ -1840,7 +1840,7 @@
 			}));
 			var i = n("./src/reddit/constants/experiments.ts"),
 				a = n("./src/reddit/helpers/chooseVariant/index.ts");
-			const o = e => i.Nc.DnNoModal === Object(a.c)(e, {
+			const o = e => i.Oc.DnNoModal === Object(a.c)(e, {
 				experimentEligibilitySelector: a.a,
 				experimentName: i.Eb
 			})
@@ -1905,4 +1905,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/AuthorHovercard~Reddit.a4432a14ddb39c819eb5.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/AuthorHovercard~Reddit.7bacf312930f42a6b73d.js.map

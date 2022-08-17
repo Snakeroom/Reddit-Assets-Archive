@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ChatMessageInput~ChatPost.fc70ffceeb1b537be4ea.js
-// Retrieved at 8/17/2022, 5:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ChatMessageInput~ChatPost.55d9762b718807177626.js
+// Retrieved at 8/17/2022, 6:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ChatMessageInput~ChatPost"], {
 		"./node_modules/lodash/_baseReduce.js": function(e, t) {
@@ -616,14 +616,14 @@
 						style: n
 					})
 				},
-				N = e => {
+				L = e => {
 					const t = {};
 					return (!e.showFull && Object(E.L)(e.height, e.width) || e.shouldBlur) && (t.overflow = "hidden"), e.showFull || (t.maxHeight = `${E.j}px`, e.shouldBlur && (t.maxWidth = Object(E.L)(e.height, e.width) ? `${E.z}px` : `${e.width}px`)), e.showCentered && (t.margin = "0 auto"), e.isExpando && e.maxHeight && (t.maxHeight = `${e.maxHeight}px`), o.a.createElement("div", {
 						className: Object(d.a)(y.a.container, e.className),
 						style: t
 					}, e.children)
 				},
-				L = Object(a.b)(() => Object(c.a)(C.F, v.jb, (e, t) => {
+				N = Object(a.b)(() => Object(c.a)(C.F, v.jb, (e, t) => {
 					let {
 						isSponsored: n,
 						postId: s
@@ -636,7 +636,7 @@
 					pageType: s.pageType,
 					post: r
 				})));
-			t.a = L(e => {
+			t.a = N(e => {
 				const t = Object(g.a)();
 				return e.outboundUrl && !e.shouldBlur ? o.a.createElement("a", {
 					"data-adclicklocation": O.a.MEDIA,
@@ -679,7 +679,7 @@
 					} = e;
 					const r = Object(E.L)(n.height, n.width),
 						a = k(n.height) && r;
-					return o.a.createElement(N, I({}, n, {
+					return o.a.createElement(L, I({}, n, {
 						className: `${r?`${j.a} `:""}${n.className||""}`
 					}), n.isListing ? o.a.createElement("div", {
 						className: n.contentImageClassName
@@ -903,14 +903,14 @@
 					showCentered: I,
 					originalSource: k,
 					isPromoted: T
-				} = e, N = t && !(T && Object(d.hasAcceptableAds)()), L = Object(i.d)();
+				} = e, L = t && !(T && Object(d.hasAcceptableAds)()), N = Object(i.d)();
 
 				function S(e) {
-					L(e ? Object(u.r)(p) : Object(u.E)(p))
+					N(e ? Object(u.r)(p) : Object(u.E)(p))
 				}
 
 				function M() {
-					return L(Object(u.z)({
+					return N(Object(u.z)({
 						postId: p
 					}))
 				}
@@ -919,7 +919,7 @@
 					const {
 						target: t
 					} = e;
-					t && t.played && 1 === t.played.length && 0 === t.played.start(0) && t.played.end(0) === t.duration && L(Object(u.s)(p))
+					t && t.played && 1 === t.played.length && 0 === t.played.start(0) && t.played.end(0) === t.duration && N(Object(u.s)(p))
 				}, 200);
 
 				function B(e) {
@@ -928,16 +928,16 @@
 
 				function R(e) {
 					var t;
-					(o || P(e), c) || (t = e.timeStamp, L(Object(u.A)(p, t)))
-				}
-
-				function H(e) {
-					L(Object(u.q)(p, e.timeStamp))
+					(o || H(e), c) || (t = e.timeStamp, N(Object(u.A)(p, t)))
 				}
 
 				function P(e) {
+					N(Object(u.q)(p, e.timeStamp))
+				}
+
+				function H(e) {
 					! function(e) {
-						L(Object(u.D)({
+						N(Object(u.D)({
 							metadata: e,
 							postId: p
 						}))
@@ -950,13 +950,13 @@
 				}
 
 				function F(e) {
-					s || R(e), o || P(e), L(Object(u.C)(p))
+					s || R(e), o || H(e), N(Object(u.C)(p))
 				}
 
 				function A() {
 					const e = {};
 					return I && (e.margin = "0 auto"), w || (e.maxHeight = `${h.e}px`), a.a.createElement(_, {
-						autoplay: N,
+						autoplay: L,
 						className: Object(l.a)(m.a, j.a.styledVideo),
 						height: f,
 						isListing: w,
@@ -964,9 +964,9 @@
 						key: p,
 						loop: !0,
 						onBufferingChange: S,
-						onLoadStart: H,
+						onLoadStart: P,
 						onLoadedData: R,
-						onLoadedMetadata: P,
+						onLoadedMetadata: H,
 						onPause: M,
 						onPlaying: F,
 						onTimeUpdate: B,
@@ -1211,9 +1211,9 @@
 			})), n.d(t, "q", (function() {
 				return T
 			})), n.d(t, "s", (function() {
-				return N
-			})), n.d(t, "r", (function() {
 				return L
+			})), n.d(t, "r", (function() {
+				return N
 			})), n.d(t, "a", (function() {
 				return S
 			})), n.d(t, "w", (function() {
@@ -1246,8 +1246,8 @@
 				I = c.a.td("Tdl", i.a),
 				k = c.a.td("Tdc", i.a),
 				T = c.a.td("Tdr", i.a),
-				N = c.a.th("Thl", i.a),
-				L = c.a.th("Thc", i.a),
+				L = c.a.th("Thl", i.a),
+				N = c.a.th("Thc", i.a),
 				S = (c.a.th("Thr", i.a), c.a.wrapped(e => r.a.createElement(o.b, e), "A", i.a)),
 				M = c.a.wrapped(d.a, "A", i.a)
 		},
@@ -1315,7 +1315,7 @@
 						useExplicitTextColor: O,
 						shouldBlur: w,
 						onClickRevealSpoilerText: y
-					} = e, I = s.document, k = [], T = e.mediaMetadata || null, N = v(I), L = _(I);
+					} = e, I = s.document, k = [], T = e.mediaMetadata || null, L = v(I), N = _(I);
 					if (w && !r && !a) return i.a.createElement(g, {
 						className: Object(c.a)(m.j, n)
 					}, i.a.createElement("div", {
@@ -1324,8 +1324,8 @@
 						className: f.a.unblurButton,
 						onClick: l
 					}, Object(u.b)(!!o, !!d))));
-					if (-1 !== N)
-						for (let i = N; i <= L; i++) {
+					if (-1 !== L)
+						for (let i = L; i <= N; i++) {
 							const e = I[i];
 							switch (e.e) {
 								case h.k:
@@ -1424,7 +1424,7 @@
 			n.d(t, "a", (function() {
 				return k
 			})), n.d(t, "b", (function() {
-				return N
+				return L
 			}));
 			var s = n("./node_modules/fbt/lib/FbtPublic.js"),
 				r = n("./node_modules/react/index.js"),
@@ -1542,7 +1542,7 @@
 						title: s
 					}, s || r) : null
 				},
-				N = (e, t, n, s, r, i, d) => {
+				L = (e, t, n, s, r, i, d) => {
 					const l = b.E(s, e.id);
 					if (r) return [T(e, t, l)];
 					const f = [];
@@ -1682,7 +1682,7 @@
 			})), n.d(t, "f", (function() {
 				return R
 			})), n.d(t, "h", (function() {
-				return P
+				return H
 			})), n.d(t, "g", (function() {
 				return F
 			})), n.d(t, "i", (function() {
@@ -1784,8 +1784,8 @@
 				I = n("./src/reddit/helpers/crypto/vaultActionLink.ts"),
 				k = n("./src/reddit/helpers/isComment.ts"),
 				T = n("./src/reddit/helpers/isPost.ts"),
-				N = n("./src/reddit/helpers/richTextJson/index.ts"),
-				L = n("./src/reddit/helpers/trackers/getRichTextSourceElement.ts");
+				L = n("./src/reddit/helpers/richTextJson/index.ts"),
+				N = n("./src/reddit/helpers/trackers/getRichTextSourceElement.ts");
 			const S = (e, t, n) => {
 					const s = e.c || [],
 						r = e.l,
@@ -1808,7 +1808,7 @@
 					if (!o) return;
 					const a = o.length,
 						d = [];
-					for (let i = 0; i < a; i++) d.push(H(o[i], t, n, i, r));
+					for (let i = 0; i < a; i++) d.push(P(o[i], t, n, i, r));
 					return i.a.createElement(c.c, {
 						key: s
 					}, d)
@@ -1827,14 +1827,14 @@
 						const e = o[u].c;
 						e && e.length && a.push(i.a.createElement(c.g, {
 							key: u
-						}, e.map((e, s) => H(e, t, n, s, r))))
+						}, e.map((e, s) => P(e, t, n, s, r))))
 					}
 					const l = e.o ? c.i : c.v;
 					return i.a.createElement(l, {
 						key: s
 					}, a)
 				},
-				H = (e, t, n, s, r) => {
+				P = (e, t, n, s, r) => {
 					switch (e.e) {
 						case h.b:
 							return D(e, t, n, s, r);
@@ -1849,10 +1849,10 @@
 						case h.u:
 							return F(e, t, n, s, r);
 						case h.z:
-							return P(e, t, n, s, r)
+							return H(e, t, n, s, r)
 					}
 				},
-				P = (e, t, n, s, r) => {
+				H = (e, t, n, s, r) => {
 					const o = e.c,
 						a = e.h,
 						d = o.length,
@@ -1899,7 +1899,7 @@
 						key: e
 					}, i.a.createElement("br", null)))(s);
 					const o = e.c[0];
-					return o.e !== h.m && o.e !== h.a || !Object(N.g)(o.id) ? i.a.createElement(c.j, {
+					return o.e !== h.m && o.e !== h.a || !Object(L.g)(o.id) ? i.a.createElement(c.j, {
 						key: s
 					}, A(e.c, t, n, r)) : Object(O.b)(o, s, n, t)
 				},
@@ -1908,7 +1908,7 @@
 						o = e.length;
 					for (let a = 0; a < o; a++) {
 						const o = e[a];
-						if (o.e === h.A) r.push(V(o, a));
+						if (o.e === h.A) r.push(J(o, a));
 						else if (o.e === h.x) r.push(i.a.createElement(w.a, {
 							key: a,
 							onClickReveal: s
@@ -1932,7 +1932,7 @@
 				U = (e, t, n) => {
 					switch (e.e) {
 						case h.o:
-							const s = V({
+							const s = J({
 								t: e.t,
 								f: e.f
 							}, 0);
@@ -1942,7 +1942,7 @@
 								title: e.a
 							}, s);
 							let r, o;
-							const a = Object(L.a)(t),
+							const a = Object(N.a)(t),
 								d = t.renderingObjectInfo;
 							return d && Object(T.b)(d) && (r = d.postId), d && Object(k.b)(d) && (o = d.id, r = d.postId), i.a.createElement(c.a, {
 								href: e.u,
@@ -1972,7 +1972,7 @@
 							}, e.t)
 					}
 				},
-				V = (e, t) => {
+				J = (e, t) => {
 					const {
 						f: n,
 						t: r
@@ -1988,7 +1988,7 @@
 					}
 					return c < r.length && o.push(W(0, r.substr(c), `remaining${i}`)), o
 				},
-				J = {
+				V = {
 					[h.j.monospace]: c.h,
 					[h.j.bold]: c.b,
 					[h.j.italic]: c.f,
@@ -1999,7 +1999,7 @@
 				},
 				W = (e, t, n) => {
 					let s = t;
-					return s = o()(J, (t, s, r) => e & parseInt(r, 10) ? i.a.createElement(s, {
+					return s = o()(V, (t, s, r) => e & parseInt(r, 10) ? i.a.createElement(s, {
 						key: n
 					}, t) : t, s)
 				},
@@ -2134,12 +2134,12 @@
 						rtJsonElementProps: a
 					});
 					switch (o) {
-						case b.Nf.SmIcon:
+						case b.Pf.SmIcon:
 							return r.a.createElement(h, {
 								subredditName: s,
 								rtJsonElementProps: a
 							});
-						case b.Nf.SmIconHc:
+						case b.Pf.SmIconHc:
 							return r.a.createElement(h, {
 								subredditName: s,
 								isHoverable: !0,
@@ -2586,12 +2586,12 @@
 				c = e => {
 					return Object(o.c)(e, {
 						experimentEligibilitySelector: i,
-						experimentName: s.Hf
+						experimentName: s.Jf
 					}) || ""
 				},
 				d = e => {
 					const t = c(e);
-					return t === s.Nf.SmIcon || t === s.Nf.SmIconHc
+					return t === s.Pf.SmIcon || t === s.Pf.SmIconHc
 				},
 				l = (e, t) => {
 					let {
@@ -2617,4 +2617,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatMessageInput~ChatPost.fc70ffceeb1b537be4ea.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatMessageInput~ChatPost.55d9762b718807177626.js.map

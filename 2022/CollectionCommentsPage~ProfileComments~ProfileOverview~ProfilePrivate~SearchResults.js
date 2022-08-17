@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~SearchResults.0d361deed13e67644b5e.js
-// Retrieved at 8/17/2022, 5:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~SearchResults.248f4bc289e918912874.js
+// Retrieved at 8/17/2022, 6:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~SearchResults"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -1544,7 +1544,7 @@
 				});
 			var F = n("./src/reddit/components/Comments/Comment/TopMeta/cakeDay.m.less"),
 				B = n.n(F);
-			const H = e => {
+			const U = e => {
 				let {
 					className: t,
 					commentId: n,
@@ -1571,7 +1571,7 @@
 					text: m
 				}))
 			};
-			var U = n("./src/lib/addQueryParams/index.ts"),
+			var H = n("./src/lib/addQueryParams/index.ts"),
 				W = n("./src/reddit/actions/comment/index.ts"),
 				V = n("./src/reddit/actions/post.ts"),
 				G = n("./src/reddit/components/HumanDate/index.tsx"),
@@ -1591,7 +1591,7 @@
 					return r.a.createElement("a", {
 						className: t,
 						"data-testid": "comment_timestamp",
-						href: Object(U.a)(a, {
+						href: Object(H.a)(a, {
 							utm_source: "reddit",
 							utm_medium: "web2x",
 							context: 3
@@ -1932,7 +1932,7 @@
 					subredditDisplayText: N,
 					renderContractorBadge: I,
 					renderedInOverlay: S
-				}), a.isAuthorCakeday ? r.a.createElement(H, {
+				}), a.isAuthorCakeday ? r.a.createElement(U, {
 					className: je.a.cakeDay,
 					commentId: a.id,
 					renderedInOverlay: S
@@ -2003,8 +2003,8 @@
 					return e
 				}).apply(this, arguments)
 			}
-			const He = c.a.wrapped(v.b, "RightPositionedAuthorFlair", Fe.a),
-				Ue = c.a.span("DeletedText", Fe.a),
+			const Ue = c.a.wrapped(v.b, "RightPositionedAuthorFlair", Fe.a),
+				He = c.a.span("DeletedText", Fe.a),
 				We = c.a.wrapped(C.a, "MetaSeparator", Fe.a),
 				Ve = Object(i.b)(() => Object(a.c)({
 					hasBadges: (e, t) => {
@@ -2130,7 +2130,7 @@
 				}), o && r.a.createElement(Z, null), o && r.a.createElement(C.c, {
 					className: Fe.a.metaText,
 					key: "crowdControlSeparator"
-				}), u && !F && r.a.createElement(He, {
+				}), u && !F && r.a.createElement(Ue, {
 					flair: u,
 					forceSmallEmojis: m
 				}), !m && r.a.createElement(x.a, {
@@ -2190,7 +2190,7 @@
 					} = e;
 					return r.a.createElement("div", {
 						className: o
-					}, r.a.createElement(Ue, null, i.deletedBy === y.c.User ? s.fbt._("Comment deleted by user", null, {
+					}, r.a.createElement(He, null, i.deletedBy === y.c.User ? s.fbt._("Comment deleted by user", null, {
 						hk: "1Rtt4V"
 					}) : s.fbt._("Comment removed by moderator", null, {
 						hk: "E1t49"
@@ -3102,7 +3102,7 @@
 				const t = Object(r.f)().getState(),
 					n = Object(h.a)(t, Object(a.c)());
 				if (e.isD2xPdpSideRailRecsEnabled) {
-					const t = e.d2xPdpSideRailRecsVariant === m.Tc.GreyRereddit || e.d2xPdpSideRailRecsVariant === m.Tc.GreyRedditNoNsfw || e.d2xPdpSideRailRecsVariant === m.Tc.LargeImagePreview ? e.reredditButtons : [];
+					const t = e.d2xPdpSideRailRecsVariant === m.Uc.GreyRereddit || e.d2xPdpSideRailRecsVariant === m.Uc.GreyRedditNoNsfw || e.d2xPdpSideRailRecsVariant === m.Uc.LargeImagePreview ? e.reredditButtons : [];
 					return o.a.createElement(w, {
 						reredditContent: t,
 						countryCode: e.countryCode
@@ -3797,10 +3797,10 @@
 				r = n("./src/reddit/helpers/chooseVariant/index.ts"),
 				i = n("./src/reddit/selectors/posts.ts");
 			const a = e => Object(r.c)(e, {
-					experimentName: o.ef,
+					experimentName: o.gf,
 					experimentEligibilitySelector: r.a
 				}),
-				d = (e, t) => t === o.mf.Enabled && (null == e ? void 0 : e.isCreatedFromAdsUi) || (null == e ? void 0 : e.isSponsored),
+				d = (e, t) => t === o.of.Enabled && (null == e ? void 0 : e.isCreatedFromAdsUi) || (null == e ? void 0 : e.isSponsored),
 				c = Object(s.a)(i.G, a, (e, t) => d(e, t));
 			Object(s.a)((e, t) => t, a, (e, t) => d(e, t))
 		},
@@ -3818,4 +3818,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~SearchResults.0d361deed13e67644b5e.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~SearchResults.248f4bc289e918912874.js.map

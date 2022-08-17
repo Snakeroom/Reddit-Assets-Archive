@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/NotificationsPrePromptLoader.10a3d95d7dc26be995e5.js
-// Retrieved at 8/17/2022, 5:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/NotificationsPrePromptLoader.36b473f41f61cf9486c0.js
+// Retrieved at 8/17/2022, 6:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["NotificationsPrePromptLoader"], {
 		"./src/reddit/components/NotificationsPrePrompt/index.m.less": function(e, t, n) {
@@ -19,20 +19,20 @@
 				a = n("./src/reddit/components/TrackingHelper/index.tsx"),
 				d = n("./src/reddit/constants/experiments.ts"),
 				l = n("./src/reddit/helpers/trackers/notifications.ts"),
-				m = n("./src/reddit/helpers/chooseVariant/index.ts");
+				u = n("./src/reddit/helpers/chooseVariant/index.ts");
 
-			function u(e) {
-				const t = Object(m.c)(e, {
-					experimentEligibilitySelector: m.a,
+			function m(e) {
+				const t = Object(u.c)(e, {
+					experimentEligibilitySelector: u.a,
 					experimentName: d.Fb
 				});
-				return !Object(d.mg)(t) && t
+				return !Object(d.og)(t) && t
 			}
 			var O, b = n("./src/reddit/components/NotificationsPrePrompt/index.m.less"),
-				p = n.n(b);
+				f = n.n(b);
 
-			function f() {
-				return (f = Object.assign || function(e) {
+			function p() {
+				return (p = Object.assign || function(e) {
 					for (var t = 1; t < arguments.length; t++) {
 						var n = arguments[t];
 						for (var r in n) Object.prototype.hasOwnProperty.call(n, r) && (e[r] = n[r])
@@ -46,26 +46,26 @@
 			t.default = e => {
 				const t = Object(a.b)(),
 					n = Object(i.d)(),
-					[s, m] = Object(r.useState)(),
-					b = Object(i.e)(u),
-					_ = Object(r.useCallback)(() => b === d.dd.ThreeSeconds ? O.ThreeSec : b === d.dd.FiveSeconds ? O.FiveSec : O.TenSec, [b]);
+					[s, u] = Object(r.useState)(),
+					b = Object(i.e)(m),
+					_ = Object(r.useCallback)(() => b === d.fd.ThreeSeconds ? O.ThreeSec : b === d.fd.FiveSeconds ? O.FiveSec : O.TenSec, [b]);
 				return Object(r.useEffect)(() => {
 					if (b) {
 						const e = _();
-						m(setTimeout(() => {
+						u(setTimeout(() => {
 							n(Object(o.k)()), t(Object(l.g)())
 						}, e))
 					}
-				}, [n, b, t, _]), c.a.createElement(j, f({
+				}, [n, b, t, _]), c.a.createElement(j, p({
 					onOverlayClick: () => {
 						b && (clearTimeout(Number(s)), n(Object(o.k)()), t(Object(l.h)()))
 					}
 				}, e, {
-					overlayClassName: p.a.overlay,
+					overlayClassName: f.a.overlay,
 					withOverlay: !0
 				}))
 			}
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/NotificationsPrePromptLoader.10a3d95d7dc26be995e5.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/NotificationsPrePromptLoader.36b473f41f61cf9486c0.js.map

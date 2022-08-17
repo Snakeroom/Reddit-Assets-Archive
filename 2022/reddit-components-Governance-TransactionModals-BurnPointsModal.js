@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-BurnPointsModal.d7f96d2330dc710185c8.js
-// Retrieved at 8/17/2022, 5:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-BurnPointsModal.50f67a279cff00351444.js
+// Retrieved at 8/17/2022, 6:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Governance-TransactionModals-BurnPointsModal"], {
 		"./node_modules/dijkstrajs/dijkstra.js": function(e, t, n) {
@@ -532,13 +532,13 @@
 						var x = _ < c ? m : h;
 						b[_] = w.slice(g, g + x), E[_] = v.encode(b[_]), g += x, y = Math.max(y, x)
 					}
-					var M, j, C = r.alloc(a),
-						N = 0;
+					var M, j, N = r.alloc(a),
+						C = 0;
 					for (M = 0; M < y; M++)
-						for (j = 0; j < i; j++) M < b[j].length && (C[N++] = b[j][M]);
+						for (j = 0; j < i; j++) M < b[j].length && (N[C++] = b[j][M]);
 					for (M = 0; M < p; M++)
-						for (j = 0; j < i; j++) C[N++] = E[j][M];
-					return C
+						for (j = 0; j < i; j++) N[C++] = E[j][M];
+					return N
 				}(a, e, t)
 			}
 
@@ -1709,14 +1709,14 @@
 				x = n("./src/reddit/actions/util/pollActionForSuccess.ts"),
 				M = n("./src/reddit/endpoints/governance/crypto.ts"),
 				j = n("./src/reddit/helpers/crypto/transactions.ts"),
-				C = n("./src/reddit/helpers/crypto/vaultTransactions.ts"),
-				N = n("./src/reddit/helpers/governance/tokens.ts"),
+				N = n("./src/reddit/helpers/crypto/vaultTransactions.ts"),
+				C = n("./src/reddit/helpers/governance/tokens.ts"),
 				A = n("./src/reddit/helpers/trackers/crypto.ts"),
 				T = n("./src/reddit/hooks/useTracking.ts"),
 				B = n("./src/reddit/models/Toast/index.ts"),
 				I = n("./src/reddit/selectors/gov.ts"),
-				L = n("./src/reddit/components/Governance/TransactionModals/VaultTransactionModal/index.tsx"),
-				P = n("./src/lib/classNames/index.ts"),
+				P = n("./src/reddit/components/Governance/TransactionModals/VaultTransactionModal/index.tsx"),
+				L = n("./src/lib/classNames/index.ts"),
 				R = n("./src/reddit/components/Governance/TokenAmount/index.tsx"),
 				z = n("./src/reddit/components/Governance/TransactionModals/ApprovalModal/Details.tsx"),
 				F = n("./src/reddit/components/Governance/TransactionModals/Common/CurrentBalance.tsx"),
@@ -1740,7 +1740,7 @@
 				}), o.a.createElement(F.a, {
 					subredditId: l.id
 				}), o.a.createElement("div", {
-					className: Object(P.a)(k.a.memo, {
+					className: Object(L.a)(k.a.memo, {
 						[k.a.error]: !r
 					})
 				}, r ? c.fbt._("For “{memo}”. Fulfilled by the community, not Reddit.", [c.fbt._param("memo", n)], {
@@ -1773,10 +1773,10 @@
 					pointsDetails: l
 				} = e, s = Object(a.d)(), i = Object(T.a)(), d = () => s(Object(w.f)()), u = r.id, f = Object(a.e)(e => Object(I.e)(e, {
 					subredditId: u
-				})), m = new E.BigNumber(f).isGreaterThanOrEqualTo(t), h = Object(N.c)(t, null == l ? void 0 : l.displayConversion), p = l.contractAddress, v = Object(j.a)(p, t, n), g = e => {
+				})), m = new E.BigNumber(f).isGreaterThanOrEqualTo(t), h = Object(C.c)(t, null == l ? void 0 : l.displayConversion), p = l.contractAddress, v = Object(j.a)(p, t, n), g = e => {
 					i(Object(A.c)("burn_link", u, h, e))
 				}, b = l.name;
-				return o.a.createElement(L.a, {
+				return o.a.createElement(P.a, {
 					approvalOverview: o.a.createElement(q, {
 						burnAmount: t,
 						burnMemo: n,
@@ -1798,7 +1798,7 @@
 						}(b));
 						try {
 							await async function(e, t, n, r, o) {
-								await Object(C.a)(t, n), await e(Object(x.a)(Object(y.h)({
+								await Object(N.a)(t, n), await e(Object(x.a)(Object(y.h)({
 									subredditId: r
 								}), async e => {
 									const t = Object(I.e)(e(), {
@@ -2481,14 +2481,14 @@
 			const a = e => {
 					return Object(o.c)(e, {
 						experimentEligibilitySelector: o.a,
-						experimentName: r.ve
-					}) === r.Ld
+						experimentName: r.xe
+					}) === r.Nd
 				},
 				l = e => {
 					return Object(o.c)(e, {
 						experimentEligibilitySelector: o.a,
-						experimentName: r.se
-					}) === r.Ld
+						experimentName: r.ue
+					}) === r.Nd
 				}
 		},
 		"./src/reddit/selectors/gov.ts": function(e, t, n) {
@@ -2545,4 +2545,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-BurnPointsModal.d7f96d2330dc710185c8.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-BurnPointsModal.50f67a279cff00351444.js.map

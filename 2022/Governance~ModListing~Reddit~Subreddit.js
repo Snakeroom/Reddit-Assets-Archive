@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit~Subreddit.18b6a80cbc5eb6c3de53.js
-// Retrieved at 8/17/2022, 5:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit~Subreddit.42df3da4fd1cc84ea8d9.js
+// Retrieved at 8/17/2022, 6:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~ModListing~Reddit~Subreddit"], {
 		"./src/lib/CSSVariableProvider/withTheme.tsx": function(e, t, n) {
@@ -407,9 +407,9 @@
 			})), n.d(t, "e", (function() {
 				return L
 			})), n.d(t, "b", (function() {
-				return G
-			})), n.d(t, "i", (function() {
 				return F
+			})), n.d(t, "i", (function() {
+				return G
 			})), n.d(t, "f", (function() {
 				return H
 			})), n.d(t, "c", (function() {
@@ -547,7 +547,7 @@
 					s && s !== i && n(M({
 						index: s
 					}))
-				}, M = Object(o.a)(c.g), B = (Object(o.a)(c.h), Object(o.a)(c.f)), G = e => async (t, n, o) => {
+				}, M = Object(o.a)(c.g), B = (Object(o.a)(c.h), Object(o.a)(c.f)), F = e => async (t, n, o) => {
 					let {
 						gqlContext: i
 					} = o;
@@ -570,7 +570,7 @@
 					} else t(Object(d.f)(Object(d.e)(r.fbt._("Failed to hide notification, please try again.", null, {
 						hk: "fL7uB"
 					}), C.b.Error)))
-				}, F = (e, t) => async (n, o, i) => {
+				}, G = (e, t) => async (n, o, i) => {
 					let {
 						gqlContext: s
 					} = i;
@@ -597,7 +597,7 @@
 						});
 						return Object(d.f)(Object(d.e)(n, C.b.Undo, r.fbt._("Undo", null, {
 							hk: "4zFGDk"
-						}), F(e, t)))
+						}), G(e, t)))
 					})()) : n(Object(d.f)(Object(d.e)(r.fbt._("Failed to hide notifications, please try again.", null, {
 						hk: "KEGcB"
 					}), C.b.Error)))
@@ -1382,7 +1382,7 @@
 					iconUrl: b && n ? "https://www.redditstatic.com/avatars/defaults/v2/avatar_default_3.png" : U,
 					isCurrentUser: L,
 					isNSFW: R
-				})), [G, F] = Object(o.useState)(!1), H = Object(o.useMemo)(() => ({
+				})), [F, G] = Object(o.useState)(!1), H = Object(o.useMemo)(() => ({
 					input: {
 						channel: {
 							teamOwner: "CONTENT_AND_COMMUNITIES",
@@ -1394,7 +1394,7 @@
 					const {
 						isOnline: t
 					} = e.subscribe.data;
-					F(t)
+					G(t)
 				}, []), W = Object(o.useRef)(null), [q, K] = Object(o.useState)(!1), Y = Object(o.useCallback)(e => {
 					e.forEach(e => {
 						const {
@@ -1414,7 +1414,7 @@
 					ref: W
 				}, m && i.a.createElement(I, {
 					iconUrl: c
-				}), B, y && (G || h && j) && i.a.createElement(g.default, {
+				}), B, y && (F || h && j) && i.a.createElement(g.default, {
 					showPresence: !0,
 					isHighlighted: f,
 					onceInViewport: T
@@ -2329,7 +2329,7 @@
 			})), n.d(t, "g", (function() {
 				return M
 			})), n.d(t, "b", (function() {
-				return F
+				return G
 			})), n.d(t, "a", (function() {
 				return H
 			})), n.d(t, "n", (function() {
@@ -2501,14 +2501,14 @@
 								draftId: o
 							} = e.match.params, i = Object(s.a)(e.match.params);
 							if (!i) return;
-							G(t, i, o, n, r);
+							F(t, i, o, n, r);
 							break
 						}
 						case i.Nb.SUBREDDIT_WIKI:
 							Object(S.a)(X(n, r)(t));
 							break;
 						case i.Nb.COINS:
-							Object(S.a)(F(n, r)(t)), Object(S.a)(H()(t));
+							Object(S.a)(G(n, r)(t)), Object(S.a)(H()(t));
 							break;
 						case i.Nb.PREMIUM:
 							Object(S.a)(V(n, r)(t)), Object(S.a)(W()(t));
@@ -2784,7 +2784,7 @@
 						actionInfo: N.d(e)
 					})
 				},
-				G = (e, t, n, r, o) => {
+				F = (e, t, n, r, o) => {
 					const i = e.creations.api.page.pending[t],
 						s = !e.creations.api.page.error[t] && !i && !!n,
 						c = Object(E.h)(e, n);
@@ -2803,7 +2803,7 @@
 						...c ? Object(l.r)(e, c) : {}
 					})
 				},
-				F = (e, t) => n => ({
+				G = (e, t) => n => ({
 					source: "coins_marketing",
 					action: "view",
 					noun: "page",
@@ -3441,7 +3441,7 @@
 					return r ? r * o.Sb < 1639443600180 ? void 0 : O(e) : void 0
 				},
 				O = Object(r.a)(e => Object(c.c)(e, {
-					experimentName: i.Ge,
+					experimentName: i.Ie,
 					experimentEligibilitySelector: a.e
 				}), d.a)
 		},
@@ -3560,4 +3560,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit~Subreddit.18b6a80cbc5eb6c3de53.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit~Subreddit.42df3da4fd1cc84ea8d9.js.map
