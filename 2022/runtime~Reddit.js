@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/runtime~Reddit.555462318d573ec77253.js
-// Retrieved at 8/17/2022, 3:30:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/runtime~Reddit.1543f9047b34596bc483.js
+// Retrieved at 8/17/2022, 4:30:04 PM by Reddit Dataminer v1.0.0
 ! function(e) {
 	function o(o) {
 		for (var a, n, r = o[0], s = o[1], c = o[2], l = 0, b = []; l < r.length; l++) n = r[l], Object.prototype.hasOwnProperty.call(d, n) && d[n] && b.push(d[n][0]), d[n] = 0;
@@ -1379,7 +1379,7 @@
 						"reddit-components-Governance-TransactionModals-BurnPointsModal~reddit-components-Governance-Transact~8f11de67": "41c36e050211796c6727",
 						"reddit-components-Governance-TransactionModals-BurnPointsModal": "26c69f9301e8b5fc1fcb",
 						"reddit-pages-meta-ArbitrumPointsMigrationPage": "29e8f936c0159f6bf936",
-						"reddit-pages-meta-MainnetPointsMigrationPage": "a468ba85ccb15b0c3944",
+						"reddit-pages-meta-MainnetPointsMigrationPage": "574b331cb6e0f9b6b0e2",
 						"vendors~reddit-components-Governance-TransactionModals-ConvertToCoinsModal": "987103f31c815cc07845",
 						"reddit-components-Governance-TransactionModals-ConvertToCoinsModal": "054ae05ea0f215208b4b",
 						"vendors~ChatPost~RealtimeGQLSubscriptionAsync": "8357ea142b1ccda1881f",
@@ -1773,4 +1773,4 @@
 	var m = c;
 	t()
 }([]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/runtime~Reddit.555462318d573ec77253.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/runtime~Reddit.1543f9047b34596bc483.js.map
