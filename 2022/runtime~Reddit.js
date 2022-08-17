@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/runtime~Reddit.b089c95ac65b6541b0ab.js
-// Retrieved at 8/17/2022, 12:20:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/runtime~Reddit.555462318d573ec77253.js
+// Retrieved at 8/17/2022, 3:30:06 PM by Reddit Dataminer v1.0.0
 ! function(e) {
 	function o(o) {
 		for (var a, n, r = o[0], s = o[1], c = o[2], l = 0, b = []; l < r.length; l++) n = r[l], Object.prototype.hasOwnProperty.call(d, n) && d[n] && b.push(d[n][0]), d[n] = 0;
@@ -1417,7 +1417,7 @@
 						ProfileComments: "df139ab2a098e4b28783",
 						ProfileOverview: "e9f21545c10e4131734e",
 						ProfilePrivate: "51ea0bb08c59c8b1038a",
-						SearchResults: "23bb330e1f10c80ff705",
+						SearchResults: "576a9bac4942481541fe",
 						ModQueuePages: "8e318d987bf3e2edb1f0",
 						GovernanceReleaseNotesModal: "9e80fe28687627dac0f9",
 						"CountryPage~Multireddit~reddit-components-AdHocMultiredditSidebar": "e6c4d871b033779d548c",
@@ -1606,7 +1606,7 @@
 						LiveVideoPlayer: "c6f87d52a952d383471d",
 						"vendors~dashjs": "518ef1c4a3ea00bc51bc",
 						ContributorRequestButton: "98cfff744c59e2074a06",
-						SubredditSearchCarousel: "f07533725f58ee826143",
+						SubredditSearchCarousel: "5bec7df0fd17febb47b7",
 						CommunityTopicSurvey: "faad01f14d4b43853498",
 						FeaturedLiveEntrypointLegacyAnnouncement: "e84e7dbd112da7babf9d",
 						"reddit-components-BlankPost": "8c1537dbc033d8239b87",
@@ -1773,4 +1773,4 @@
 	var m = c;
 	t()
 }([]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/runtime~Reddit.b089c95ac65b6541b0ab.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/runtime~Reddit.555462318d573ec77253.js.map
