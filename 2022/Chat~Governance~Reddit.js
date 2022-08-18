@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.cea983475ecd57bf0b43.js
-// Retrieved at 8/18/2022, 12:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.8bb4d9c17eff6de400ec.js
+// Retrieved at 8/18/2022, 1:30:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Chat~Governance~Reddit"], {
 		"./assets/fonts/IBMPlexSans/font.less": function(e, t, i) {},
@@ -3538,11 +3538,11 @@
 				apiPassThroughHeaders: Object(r.e)({}.API_PASS_THROUGH_HEADERS || ""),
 				appName: {}.APP_NAME || "desktop2x",
 				assetPath: "https://www.redditstatic.com/desktop2x",
-				buildNumber: Object(r.c)("171083"),
+				buildNumber: Object(r.c)("171098"),
 				chatHelpUrl: {}.CHAT_HELP_URL || "https://reddit.zendesk.com/hc/en-us/sections/360008805652-Chat",
 				hlsVersion: "hls 0.12.4",
 				dashVersion: "dash 4.4.0",
-				buildTimestamp: Object(r.b)("1660838967"),
+				buildTimestamp: Object(r.b)("1660841889"),
 				cookieDomain: ".reddit.com",
 				giphyApiKey: "k2kwyMA6VeyHM6ZRT96OXDGaersnx73Z",
 				mediaUrl: "https://www.redditmedia.com",
@@ -3722,51 +3722,52 @@
 						isFixed: r,
 						targetBox: s,
 						isOverlayOff: o,
-						targetPosition: d,
-						tooltipSize: a,
-						tooltipPosition: l
+						alwaysHandleOverflow: d,
+						targetPosition: a,
+						tooltipSize: l,
+						tooltipPosition: u
 					} = e;
-					const u = document.body,
-						c = u.clientTop || 0,
-						_ = u.clientLeft || 0,
-						[m, p, h, f] = t ? [t.scrollLeft, t.scrollTop, t.scrollWidth, i || t.scrollHeight] : [window.pageXOffset, window.pageYOffset, window.innerWidth, document.body.scrollHeight],
-						b = {
+					const c = document.body,
+						_ = c.clientTop || 0,
+						m = c.clientLeft || 0,
+						[p, h, f, b] = t ? [t.scrollLeft, t.scrollTop, t.scrollWidth, i || t.scrollHeight] : [window.pageXOffset, window.pageYOffset, window.innerWidth, document.body.scrollHeight],
+						g = {
 							bottom: s.bottom,
 							center: s.top + s.height / 2,
 							top: s.top
-						} [d[1]] + {
-							bottom: -a.height,
-							center: -a.height / 2,
+						} [a[1]] + {
+							bottom: -l.height,
+							center: -l.height / 2,
 							top: 0
-						} [l[1]],
-						g = {
+						} [u[1]],
+						w = {
 							left: s.left,
 							center: s.left + s.width / 2,
 							right: s.right
-						} [d[0]] + {
+						} [a[0]] + {
 							left: 0,
-							center: -a.width / 2,
-							right: -a.width
-						} [l[0]];
-					let w, v;
-					r ? (w = b - c, v = g - _) : (v = m + _ + g, w = p + c + b);
-					const y = {
-							left: v,
-							top: w
+							center: -l.width / 2,
+							right: -l.width
+						} [u[0]];
+					let v, y;
+					r ? (v = g - _, y = w - m) : (y = p + m + w, v = h + _ + g);
+					const E = {
+							left: y,
+							top: v
 						},
-						E = {
-							bottom: Math.max(0, w + a.height - f),
-							left: Math.max(0, 0 - v),
-							right: Math.max(0, v + a.width - h),
-							top: Math.max(0, 0 - w)
+						S = {
+							bottom: Math.max(0, v + l.height - b),
+							left: Math.max(0, 0 - y),
+							right: Math.max(0, y + l.width - f),
+							top: Math.max(0, 0 - v)
 						};
-					if (h > 320 && f > 667 && !o && (Boolean(E.left) !== Boolean(E.right) && (E.left ? y.left = 0 : y.left -= E.right), Boolean(E.top) !== Boolean(E.bottom) && (E.top ? y.top = 0 : y.top -= E.bottom)), n && t) {
+					if ((d || f > 320 && b > 667 && !o) && (Boolean(S.left) !== Boolean(S.right) && (S.left ? E.left = 0 : E.left -= S.right), Boolean(S.top) !== Boolean(S.bottom) && (S.top ? E.top = 0 : E.top -= S.bottom)), n && t) {
 						const e = t.getBoundingClientRect();
-						y.top = y.top - e.top, y.left = y.left - e.left
+						E.top = E.top - e.top, E.left = E.left - e.left
 					}
 					return {
-						overflow: E,
-						style: y
+						overflow: S,
+						style: E
 					}
 				};
 
@@ -3781,36 +3782,38 @@
 							isFixed: a,
 							target: l,
 							isOverlayOff: u,
-							targetPosition: c,
-							tooltipPosition: f
+							alwaysHandleOverflow: c,
+							targetPosition: f,
+							tooltipPosition: b
 						} = e;
 						if (!l || !s) return null;
-						const b = s.getBoundingClientRect(),
-							g = l.getBoundingClientRect(),
-							w = h({
+						const g = s.getBoundingClientRect(),
+							w = l.getBoundingClientRect(),
+							v = h({
 								container: t,
 								containerHeight: n,
 								excludeContainerPosition: d,
 								isOverlayOff: u,
+								alwaysHandleOverflow: c,
 								isFixed: !!a,
-								targetBox: g,
-								targetPosition: c || m,
+								targetBox: w,
+								targetPosition: f || m,
 								tooltipSize: {
-									height: b.height,
-									width: b.width
+									height: g.height,
+									width: g.width
 								},
-								tooltipPosition: f || p
+								tooltipPosition: b || p
 							}),
-							v = r()(e, "target", "targetPosition", "tooltipPosition"),
-							y = e.style ? {
-								...w.style,
+							y = r()(e, "target", "targetPosition", "tooltipPosition"),
+							E = e.style ? {
+								...v.style,
 								...e.style
-							} : w.style;
-						return o.a.createElement(i, _({}, v, {
+							} : v.style;
+						return o.a.createElement(i, _({}, y, {
 							className: e.className,
-							overflow: w.overflow,
-							style: y,
-							targetBox: g
+							overflow: v.overflow,
+							style: E,
+							targetBox: w
 						}))
 					});
 				class f extends s.Component {
@@ -6184,14 +6187,14 @@
 					}))
 				},
 				Y = (e, t, i) => {
-					console.log("%cStarting Raven %crelease %cd7e89f1a71fb1fa601b3fe47fee55dbf3c6a4036-production" + ` %cpublic url %c${y.a.sentryClientPublicURL}`, "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
+					console.log("%cStarting Raven %crelease %c094b1824915cd93f58a623f8f51611388a8c3afb-production" + ` %cpublic url %c${y.a.sentryClientPublicURL}`, "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
 					let n = [];
 					n = [new RegExp(`^${y.a.assetPath}`, "i")];
 					o.e({
 						attachStacktrace: !0,
 						dsn: y.a.sentryClientPublicURL,
 						whitelistUrls: n,
-						release: "d7e89f1a71fb1fa601b3fe47fee55dbf3c6a4036-production",
+						release: "094b1824915cd93f58a623f8f51611388a8c3afb-production",
 						environment: "production",
 						ignoreErrors: ["$ is not defined"],
 						integrations: [...Object(L.d)(), new d.Integrations.Breadcrumbs({
@@ -6727,7 +6730,7 @@
 							settings: r,
 							statusCode: s,
 							type: o,
-							releaseClient: "d7e89f1a71fb1fa601b3fe47fee55dbf3c6a4036-production",
+							releaseClient: "094b1824915cd93f58a623f8f51611388a8c3afb-production",
 							appName: t.statsAppName,
 							error: n ? JSON.parse(Object(l.a)(n)) : void 0
 						},
@@ -49655,4 +49658,4 @@
 		"ignored /drone/src/node_modules/readable-stream/lib/internal/streams util": function(e, t) {}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.cea983475ecd57bf0b43.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.8bb4d9c17eff6de400ec.js.map

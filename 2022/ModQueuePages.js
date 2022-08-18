@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModQueuePages.e86cee98dd5b8bc2be11.js
-// Retrieved at 8/18/2022, 11:30:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModQueuePages.4ec3a38a99217b2602ea.js
+// Retrieved at 8/18/2022, 1:30:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModQueuePages"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -2318,9 +2318,10 @@
 					isAuthorDeleted: a,
 					isCommentAuthorBlocked: i,
 					isLivestreaming: c,
-					isStrong: l,
-					onClick: u,
-					style: b
+					isEmbeddedLiveChat: l,
+					isStrong: u,
+					onClick: b,
+					style: h
 				} = e;
 				return n && i ? r.a.createElement("p", {
 					className: Object(d.a)(p.a.commentAuthorLink, t)
@@ -2332,12 +2333,13 @@
 					isAuthorDeleted: a,
 					isCommentAuthorBlocked: i,
 					isLivestreaming: c,
-					isStrong: l,
+					forceOpenInNewTab: l,
+					isStrong: u,
 					linkProps: {
 						"data-testid": "comment_author_link"
 					},
-					onClick: u,
-					style: b
+					onClick: b,
+					style: h
 				}, o.author)
 			};
 			var h = n("./src/reddit/components/Econ/PowerupsFlair/UserAchievementFlair.async.ts"),
@@ -2364,13 +2366,14 @@
 					comment: s,
 					collapsed: o,
 					isLivestreaming: a,
-					isStrong: i,
-					onClick: c,
-					renderedInOverlay: l
+					isEmbeddedLiveChat: i,
+					isStrong: c,
+					onClick: l,
+					renderedInOverlay: m
 				} = e;
-				const m = Object(j.f)(s),
-					u = r.a.createElement(I.b, {
-						ignore: m || !!s.distinguishType && s.distinguishType !== S.G.NONE,
+				const u = Object(j.f)(s),
+					p = r.a.createElement(I.b, {
+						ignore: u || !!s.distinguishType && s.distinguishType !== S.G.NONE,
 						subredditId: s.subredditId,
 						userId: s.authorId
 					}, r.a.createElement(b, {
@@ -2380,16 +2383,17 @@
 						isAuthorDeleted: Object(j.f)(s),
 						isCommentAuthorBlocked: Object(j.g)(s),
 						isLivestreaming: a,
-						isStrong: i,
-						onClick: c
+						isEmbeddedLiveChat: i,
+						isStrong: c,
+						onClick: l
 					}));
-				return m ? u : r.a.createElement(T.b, {
+				return u || i ? p : r.a.createElement(T.b, {
 					className: Object(d.a)(N.a.authorHoverCard, n),
 					collapsed: o,
 					isCommentAuthorBlocked: Object(j.g)(s),
 					postOrComment: s,
-					tooltipType: l ? O.c.Lightbox : void 0
-				}, u)
+					tooltipType: m ? O.c.Lightbox : void 0
+				}, p)
 			};
 			var M = n("./src/config.ts"),
 				P = n("./src/reddit/actions/tooltip.ts"),
@@ -2919,20 +2923,21 @@
 					isBlockingInterstitialV2Enabled: y,
 					isModWithUserNotesPermissions: S,
 					isLivestreaming: I,
-					isPostComment: T,
-					onCommentAuthorClick: w,
-					onCommentTimestampClick: N,
-					renderContractorBadge: M,
-					renderedInOverlay: P,
-					subredditDisplayText: L,
-					userHasNft: A
-				} = e, F = r.a.createElement(r.a.Fragment, null, r.a.createElement(Te.b, {
+					isEmbeddedLiveChat: T,
+					isPostComment: w,
+					onCommentAuthorClick: N,
+					onCommentTimestampClick: M,
+					renderContractorBadge: P,
+					renderedInOverlay: L,
+					subredditDisplayText: A,
+					userHasNft: F
+				} = e, B = r.a.createElement(r.a.Fragment, null, r.a.createElement(Te.b, {
 					commentId: a.id
 				}), r.a.createElement(Te.a, {
 					commentId: a.id,
 					commentsPageKey: c
 				}));
-				if (T) return r.a.createElement(r.a.Fragment, null, r.a.createElement(Ie, {
+				if (w) return r.a.createElement(r.a.Fragment, null, r.a.createElement(Ie, {
 					className: Object(d.a)(n, {
 						[Be.a.collapsed]: s
 					}),
@@ -2944,13 +2949,13 @@
 					isAdmin: k,
 					isModWithUserNotesPermissions: S,
 					isLivestreaming: I,
-					onCommentAuthorClick: w,
-					onCommentTimestampClick: N,
+					onCommentAuthorClick: N,
+					onCommentTimestampClick: M,
 					permalink: i,
-					renderContractorBadge: !!M,
-					renderedInOverlay: P,
-					subredditDisplayText: L
-				}), F);
+					renderContractorBadge: !!P,
+					renderedInOverlay: L,
+					subredditDisplayText: A
+				}), B);
 				if (a.isDeleted) return r.a.createElement(Qe, De({}, e, {
 					className: Object(d.a)(n, Be.a.container, {
 						[Be.a.collapsed]: s
@@ -2961,7 +2966,7 @@
 						[Be.a.collapsed]: s
 					})
 				}));
-				const B = !v && p === Ne.b.Left;
+				const D = !v && p === Ne.b.Left;
 				return r.a.createElement("div", {
 					className: Object(d.a)(n, Be.a.container, {
 						[Be.a.collapsed]: s,
@@ -2969,7 +2974,7 @@
 						[Be.a.liveStreaming]: I
 					}),
 					"data-testid": "comment-top-meta"
-				}, u && B && r.a.createElement(x.b, {
+				}, u && D && r.a.createElement(x.b, {
 					flair: u,
 					forceSmallEmojis: m
 				}), !Object(j.f)(a) && r.a.createElement(f.b, {
@@ -2979,17 +2984,18 @@
 					userId: a.authorId,
 					uniqueIdentifier: a.id
 				}), t && t, r.a.createElement(R, {
-					authorClassName: A ? Be.a.NftAuthor : void 0,
+					authorClassName: F ? Be.a.NftAuthor : void 0,
 					collapsed: s,
 					comment: a,
 					isLivestreaming: I,
+					isEmbeddedLiveChat: T,
 					isStrong: !!m,
-					onClick: w,
-					renderedInOverlay: P
+					onClick: N,
+					renderedInOverlay: L
 				}), o && r.a.createElement(Z, null), o && r.a.createElement(_.c, {
 					className: Be.a.metaText,
 					key: "crowdControlSeparator"
-				}), u && !B && r.a.createElement(Ue, {
+				}), u && !D && r.a.createElement(Ue, {
 					flair: u,
 					forceSmallEmojis: m
 				}), !m && r.a.createElement(g.a, {
@@ -3001,13 +3007,13 @@
 					subredditId: a.subredditId,
 					userId: a.authorId,
 					username: a.author
-				}), F, r.a.createElement(Oe, {
+				}), B, r.a.createElement(Oe, {
 					className: Be.a.authorRole,
 					comment: a,
-					subredditDisplayText: L,
-					renderContractorBadge: !!M,
-					renderedInOverlay: P
-				}), !m && r.a.createElement(r.a.Fragment, null, !a.isDeleted && !T && r.a.createElement(r.a.Fragment, null, r.a.createElement(_.b, {
+					subredditDisplayText: A,
+					renderContractorBadge: !!P,
+					renderedInOverlay: L
+				}), !m && r.a.createElement(r.a.Fragment, null, !a.isDeleted && !w && r.a.createElement(r.a.Fragment, null, r.a.createElement(_.b, {
 					className: Be.a.metaText,
 					isScoreHidden: a.isScoreHidden,
 					score: a.score
@@ -3019,7 +3025,7 @@
 					className: Be.a.MetaLink,
 					comment: a,
 					permalink: i,
-					renderedInOverlay: P,
+					renderedInOverlay: L,
 					isBlockingInterstitialEnabled: C || y
 				}), a.isStickied && r.a.createElement(r.a.Fragment, null, r.a.createElement(_.c, {
 					className: Be.a.separator
@@ -3030,10 +3036,10 @@
 				}))), r.a.createElement(pe, {
 					comment: a,
 					ignoreLock: E,
-					renderedInOverlay: P
+					renderedInOverlay: L
 				}), !h && r.a.createElement(l.a, {
 					thing: a,
-					tooltipType: P ? O.c.Lightbox : void 0
+					tooltipType: L ? O.c.Lightbox : void 0
 				}))
 			});
 			const Qe = e => {
@@ -8188,4 +8194,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModQueuePages.e86cee98dd5b8bc2be11.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModQueuePages.4ec3a38a99217b2602ea.js.map
