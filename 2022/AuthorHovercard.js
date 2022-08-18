@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/AuthorHovercard.755b24cc17549169ca92.js
-// Retrieved at 8/18/2022, 1:30:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/AuthorHovercard.b8ff3788512b5a5b9249.js
+// Retrieved at 8/18/2022, 4:50:03 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["AuthorHovercard"], {
 		"./src/lib/constants/colors.ts": function(e, t, n) {
@@ -2157,11 +2157,11 @@
 						id: h,
 						itemType: v
 					} = o, x = `ModUserNote--Modal--DeleteConfirmation--${h}`, O = Object(b.a)(), _ = Object(r.useCallback)(() => u(Object($.i)(x)), [u, x]), g = Object(r.useCallback)(() => {
-						v && u(Object(i.b)(l, p.id, h, v)), O(Object(m.b)({
+						O(Object(m.b)({
 							subredditId: l,
 							modNote: o
 						}))
-					}, [u, p.id, h, v, l, O, o]), I = Object(r.useCallback)(() => {
+					}, [l, O, o]), I = Object(r.useCallback)(() => {
 						v && u(Object(i.b)(l, p.id, h, v)), O(Object(m.c)({
 							subredditId: l,
 							modNote: o
@@ -5439,4 +5439,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/AuthorHovercard.755b24cc17549169ca92.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/AuthorHovercard.b8ff3788512b5a5b9249.js.map

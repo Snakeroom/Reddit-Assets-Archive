@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/runtime~Reddit.de1778191f148516ab5b.js
-// Retrieved at 8/18/2022, 3:10:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/runtime~Reddit.861f924f69969e2d54a3.js
+// Retrieved at 8/18/2022, 4:50:03 PM by Reddit Dataminer v1.0.0
 ! function(e) {
 	function o(o) {
 		for (var a, n, r = o[0], s = o[1], c = o[2], l = 0, b = []; l < r.length; l++) n = r[l], Object.prototype.hasOwnProperty.call(d, n) && d[n] && b.push(d[n][0]), d[n] = 0;
@@ -1555,7 +1555,7 @@
 						"reddit-components-Governance-TransactionModals-TransferTransactionModal": "fdec3e4e0934fc099045",
 						SignupUpsell: "c97850d8718c34baaeb4",
 						NftProfileUnit: "137ada47a77f501f6f40",
-						AuthorHovercard: "755b24cc17549169ca92",
+						AuthorHovercard: "b8ff3788512b5a5b9249",
 						AwardTooltip: "0dfb102fb1324fe7fb96",
 						CustomBadgeHovercardTooltip: "738d634a91900f3816f4",
 						GovernanceUserPublicPointsDisplay: "a1dcb66648376905a441",
@@ -1773,4 +1773,4 @@
 	var m = c;
 	t()
 }([]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/runtime~Reddit.de1778191f148516ab5b.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/runtime~Reddit.861f924f69969e2d54a3.js.map
