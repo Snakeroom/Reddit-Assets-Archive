@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-pages-meta-MainnetPointsMigrationPage.d1370ba03a23bcb62968.js
-// Retrieved at 8/17/2022, 6:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-pages-meta-MainnetPointsMigrationPage.868f6908f05fa7b3da62.js
+// Retrieved at 8/18/2022, 12:40:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-pages-meta-MainnetPointsMigrationPage"], {
 		"./node_modules/lodash/uniqueId.js": function(e, t, n) {
@@ -117,23 +117,23 @@
 				u = n("./src/higherOrderComponents/asModal/index.tsx"),
 				m = n("./src/reddit/controls/Button/index.tsx"),
 				p = n("./src/reddit/layout/row/Inline/index.tsx"),
-				b = n("./src/reddit/controls/ErrorText/SeeAllTextModal/index.m.less"),
-				h = n.n(b);
+				h = n("./src/reddit/controls/ErrorText/SeeAllTextModal/index.m.less"),
+				b = n.n(h);
 			var f = Object(u.a)(e => {
 					const {
 						children: t,
 						title: n
 					} = e;
 					return c.a.createElement("div", {
-						className: h.a.wrapper
+						className: b.a.wrapper
 					}, c.a.createElement(p.a, {
-						className: h.a.titleRow
+						className: b.a.titleRow
 					}, n), c.a.createElement("div", {
-						className: h.a.detailsContainer
+						className: b.a.detailsContainer
 					}, t), c.a.createElement(p.a, {
-						className: h.a.buttonRow
+						className: b.a.buttonRow
 					}, c.a.createElement(m.l, {
-						className: h.a.confirmButton,
+						className: b.a.confirmButton,
 						onClick: e.onConfirmed
 					}, a.fbt._("Ok", null, {
 						hk: "2Giu9U"
@@ -244,7 +244,7 @@
 			n.d(t, "a", (function() {
 				return p
 			})), n.d(t, "b", (function() {
-				return h
+				return b
 			})), n.d(t, "c", (function() {
 				return f
 			})), n.d(t, "d", (function() {
@@ -271,10 +271,10 @@
 				}).apply(this, arguments)
 			}
 			const p = i.a.input("input", u.a),
-				b = e => {
+				h = e => {
 					"LABEL" === e.target.tagName && (e.target.parentElement.firstElementChild.focus(), e.stopPropagation())
 				},
-				h = e => {
+				b = e => {
 					let {
 						label: t,
 						children: n,
@@ -288,7 +288,7 @@
 						className: Object(r.a)(u.a.inputWrapper, i, {
 							[u.a.mIsInvalid]: o
 						}),
-						onClick: b
+						onClick: h
 					}, s.a.createElement(p, m({
 						"aria-invalid": o,
 						innerRef: a
@@ -314,7 +314,7 @@
 							[u.a.mIsInvalid]: i,
 							[u.a.mIsRedditStyle]: l
 						}),
-						onClick: b
+						onClick: h
 					}, s.a.createElement(p, m({
 						innerRef: a
 					}, c)), t && s.a.createElement("label", {
@@ -376,7 +376,7 @@
 						placeholder: a,
 						errors: r = []
 					} = this.props;
-					return e.map((e, i) => s.a.createElement(h, {
+					return e.map((e, i) => s.a.createElement(b, {
 						inputRef: e => this.setInputRef(e, i),
 						isInvalid: !!r[i],
 						disabled: t,
@@ -592,7 +592,7 @@
 			})), n.d(t, "g", (function() {
 				return p
 			})), n.d(t, "h", (function() {
-				return h
+				return b
 			})), n.d(t, "i", (function() {
 				return f
 			})), n.d(t, "j", (function() {
@@ -665,14 +665,14 @@
 						hexZeroPad: c,
 						toUtf8Bytes: p
 					} = i.utils,
-					b = o.from(a).add(r),
-					h = m,
-					f = "0x" + [l(1)].concat([l(h), o.from(s).toHexString(), o.from(r).toHexString()].map(e => c(e, 32))).concat(l(p(""))).map(e => e.substr(2)).join("");
+					h = o.from(a).add(r),
+					b = m,
+					f = "0x" + [l(1)].concat([l(b), o.from(s).toHexString(), o.from(r).toHexString()].map(e => c(e, 32))).concat(l(p(""))).map(e => e.substr(2)).join("");
 				return async function(e, t, n, a) {
 					return d(e, Promise.resolve(u), "send", [t, n, a])
-				}(e, t, b.toString(), f)
+				}(e, t, h.toString(), f)
 			}
-			const b = {
+			const h = {
 				abi: [{
 					constant: !1,
 					inputs: [{
@@ -689,13 +689,13 @@
 					type: "function"
 				}]
 			};
-			async function h(e, t, n) {
+			async function b(e, t, n) {
 				await l();
 				const s = i() || "";
 				if (t.toLowerCase() !== s.toLowerCase()) throw new Error(a.fbt._("Please select your registered address in MetaMask: {subscriberAddress}", [a.fbt._param("subscriberAddress", t)], {
 					hk: "3rehSL"
 				}).toString());
-				return d(e, Promise.resolve(b), "subscribe", [t, n])
+				return d(e, Promise.resolve(h), "subscribe", [t, n])
 			}
 
 			function f(e) {
@@ -839,7 +839,8 @@
 				token: "_1dKHGDWWta8s_X017XpAhh",
 				transferButton: "_25IEvGw3YSzfrdb7jVr-sh",
 				pointsBalance: "o7Z6VZ5ZSg_RCKEX_KoYx",
-				noValue: "_1ef-lEHMCQCqHKC3lYINMU"
+				noValue: "_1ef-lEHMCQCqHKC3lYINMU",
+				noPoints: "_2Q8ePnUPPMfeJ09BPikrJ8"
 			}
 		},
 		"./src/reddit/pages/meta/MainnetPointsMigrationPage/TransferModal.m.less": function(e, t, n) {
@@ -880,16 +881,19 @@
 				icon: "_2LGoyJRHrc__jyWgHkYTXq",
 				loading: "_1wrEFBE8QXKKvcDtRko3-P",
 				failed: "_252brEeFSzPZRgaCId5FjA",
-				succeeded: "_2otdQ71OV1reuTO_hsxEsv"
+				succeeded: "_2otdQ71OV1reuTO_hsxEsv",
+				unableToClaim: "_3500GU38nx2vqiVVYr72Ah",
+				unableClaimButton: "_3yqf3_kBB86sRqSM1kagvR"
 			}
 		},
 		"./src/reddit/pages/meta/MainnetPointsMigrationPage/index.tsx": function(e, t, n) {
 			"use strict";
 			n.r(t), n.d(t, "MainnetPointsMigrationPage", (function() {
-				return Ne
+				return je
 			})), n.d(t, "default", (function() {
-				return Ce
+				return Oe
 			}));
+			n("./node_modules/core-js/modules/web.dom.iterable.js");
 			var a = n("./src/config.ts"),
 				s = n("./node_modules/ethers/lib.esm/index.js"),
 				r = n("./node_modules/react/index.js"),
@@ -897,7 +901,7 @@
 				o = n("./node_modules/react-redux/es/index.js"),
 				l = n("./src/reddit/actions/governance/index.ts"),
 				c = n("./src/reddit/actions/governance/communityDetails.ts"),
-				d = (n("./node_modules/core-js/modules/web.dom.iterable.js"), n("./src/reddit/endpoints/governance/crypto.ts")),
+				d = n("./src/reddit/endpoints/governance/crypto.ts"),
 				u = n("./src/reddit/helpers/crypto/abis/communityPointsABI.ts"),
 				m = [{
 					inputs: [{
@@ -945,17 +949,11 @@
 					stateMutability: "nonpayable",
 					type: "function"
 				}],
-				b = n("./src/reddit/helpers/governance/ethereum.ts");
-			const h = "t5_3oeyf",
+				h = n("./src/reddit/helpers/governance/ethereum.ts");
+			const b = "t5_3oeyf",
 				f = "t5_2wlj3",
 				g = "t5_2f1ola",
 				v = [{
-					name: "Gigapoints",
-					testnetAddress: "0xb3f17f3142e37577df18464fb30a5ff85854ac5a",
-					mainnetAddress: "0x4a033f47257f33ce02bef098df9f34cf1c806e3e",
-					subredditId: g,
-					subredditName: "gigapoints"
-				}, {
 					name: "Moons",
 					testnetAddress: "0x138fafa28a05a38f4d2658b12b0971221a7d5728",
 					mainnetAddress: "0x0057ac2d777797d31cd3f8f13bf5e927571d6ad0",
@@ -965,12 +963,19 @@
 					name: "Bricks",
 					testnetAddress: "0x2c3eebc3ec8553dd014084a3c44a277418e63a0f",
 					mainnetAddress: "0x6dcb98f460457fe4952e12779ba852f82ecc62c1",
-					subredditId: h,
+					subredditId: b,
 					subredditName: "FortNiteBR"
+				}],
+				y = [...v, {
+					name: "Gigapoints",
+					testnetAddress: "0xb3f17f3142e37577df18464fb30a5ff85854ac5a",
+					mainnetAddress: "0x4a033f47257f33ce02bef098df9f34cf1c806e3e",
+					subredditId: g,
+					subredditName: "gigapoints"
 				}];
-			async function y(e) {
-				const t = new s.ethers.providers.Web3Provider(Object(b.c)()).getSigner(),
-					n = v.map(n => {
+			async function x(e) {
+				const t = new s.ethers.providers.Web3Provider(Object(h.c)()).getSigner(),
+					n = y.map(n => {
 						const a = null == e ? void 0 : e.find(e => {
 							let {
 								mainnetAddress: t
@@ -978,53 +983,57 @@
 							return t === n.mainnetAddress
 						});
 						return async function(e, t, n) {
-							const a = new s.ethers.Contract(t.testnetAddress, u.a, e),
-								r = await a.balanceOf(e.getAddress());
-							if (!(null == n ? void 0 : n.isFetchingStatus) && r.isZero()) return null;
-							return {
-								...t,
-								balance: r
-							}
+							const a = await w(e, t);
+							if (!(null == n ? void 0 : n.isFetchingStatus) && a.balance.isZero()) return null;
+							return a
 						}(t, n, a)
 					});
 				return (await Promise.all(n)).filter(e => null !== e)
 			}
-			var x = n("./src/reddit/hooks/useLocalStorage.ts"),
-				w = n("./src/reddit/selectors/experiments/mainnet.ts"),
-				E = n("./src/reddit/selectors/user.ts"),
-				k = n("./node_modules/classnames/index.js"),
-				_ = n.n(k),
-				N = n("./node_modules/fbt/lib/FbtPublic.js"),
-				C = n("./src/reddit/controls/Button/index.tsx"),
-				j = n("./src/reddit/icons/fonts/index.tsx"),
-				O = n("./src/reddit/actions/toaster.ts"),
-				M = (n("./src/reddit/helpers/localStorage/index.ts"), n("./src/reddit/models/Toast/index.ts"));
-			const T = "mainnet-migration";
+			async function w(e, t) {
+				const n = new s.ethers.Contract(t.testnetAddress, u.a, e),
+					a = await n.balanceOf(e.getAddress());
+				return {
+					...t,
+					balance: a
+				}
+			}
+			var E = n("./src/reddit/hooks/useLocalStorage.ts"),
+				k = n("./src/reddit/selectors/experiments/mainnet.ts"),
+				_ = n("./src/reddit/selectors/user.ts"),
+				N = n("./node_modules/classnames/index.js"),
+				C = n.n(N),
+				j = n("./node_modules/fbt/lib/FbtPublic.js"),
+				O = n("./src/reddit/controls/Button/index.tsx"),
+				M = n("./src/reddit/icons/fonts/index.tsx"),
+				T = n("./src/reddit/actions/toaster.ts"),
+				A = (n("./src/reddit/helpers/localStorage/index.ts"), n("./src/reddit/models/Toast/index.ts"));
+			const S = "mainnet-migration";
 
-			function A(e) {
+			function I(e) {
 				let {
 					locale: t,
 					balance: n
 				} = e;
 				return Number(s.ethers.utils.formatEther(n).split(".")[0]).toLocaleString(t || "en-US")
 			}
-			const S = e => {
+			const P = e => {
 					let {
 						dispatch: t,
 						text: n
 					} = e;
-					return t(Object(O.f)({
-						duration: O.a,
-						kind: M.b.Error,
+					return t(Object(T.f)({
+						duration: T.a,
+						kind: A.b.Error,
 						text: n
 					}))
 				},
-				I = async e => {
+				B = async e => {
 					let {
 						network: t,
 						dispatch: n
 					} = e;
-					const a = Object(b.c)();
+					const a = Object(h.c)();
 					try {
 						await a.request({
 							method: "wallet_switchEthereumChain",
@@ -1033,74 +1042,74 @@
 							}]
 						})
 					} catch (r) {
-						if (4902 === r.code) return void S({
+						if (4902 === r.code) return void P({
 							dispatch: n,
-							text: N.fbt._("This network is not available in your Metamask, please add it", null, {
+							text: j.fbt._("This network is not available in your Metamask, please add it", null, {
 								hk: "3neHZm"
 							})
 						});
-						S({
+						P({
 							dispatch: n,
-							text: N.fbt._("Failed to switch to the network", null, {
+							text: j.fbt._("Failed to switch to the network", null, {
 								hk: "1vSDae"
 							})
 						})
 					}
 				};
-			var P, B = n("./src/reddit/pages/meta/MainnetPointsMigrationPage/index.m.less"),
-				F = n.n(B);
+			var F, V = n("./src/reddit/pages/meta/MainnetPointsMigrationPage/index.m.less"),
+				L = n.n(V);
 			! function(e) {
 				e[e.Starting = 0] = "Starting", e[e.Wallet = 1] = "Wallet", e[e.TestNetwork = 2] = "TestNetwork", e[e.Bridge = 3] = "Bridge"
-			}(P || (P = {}));
-			const L = e => {
+			}(F || (F = {}));
+			const R = e => {
 					const t = Object(o.d)(),
 						{
 							onConnect: n
 						} = e,
-						a = V(e);
+						a = W(e);
 					return Object(r.useEffect)(() => {
-						a === P.TestNetwork && (async () => await I({
+						a === F.TestNetwork && (async () => await B({
 							network: "5391184",
 							dispatch: t
 						}))()
 					}, [a, t]), i.a.createElement("div", {
-						className: F.a.spacedFlex
-					}, i.a.createElement(R, {
-						step: P.Wallet,
+						className: L.a.spacedFlex
+					}, i.a.createElement(D, {
+						step: F.Wallet,
 						currentStep: a,
 						withConnection: !0
-					}, a === P.Wallet ? i.a.createElement(C.t, {
-						onClick: b.b
-					}, N.fbt._("Connect to Metamask", null, {
+					}, a === F.Wallet ? i.a.createElement(O.t, {
+						onClick: h.b
+					}, j.fbt._("Connect to Metamask", null, {
 						hk: "2DzFph"
-					})) : i.a.createElement("p", null, N.fbt._("Connect to Metamask", null, {
+					})) : i.a.createElement("p", null, j.fbt._("Connect to Metamask", null, {
 						hk: "3ASitB"
-					}))), i.a.createElement(R, {
-						step: P.TestNetwork,
+					}))), i.a.createElement(D, {
+						step: F.TestNetwork,
 						currentStep: a,
 						withConnection: !0
-					}, i.a.createElement("p", null, N.fbt._("Switch to {lineBreak} Reddit Test Network", [N.fbt._param("lineBreak", i.a.createElement("br", null))], {
+					}, i.a.createElement("p", null, j.fbt._("Switch to {lineBreak} Reddit Test Network", [j.fbt._param("lineBreak", i.a.createElement("br", null))], {
 						hk: "2ua2Ev"
-					}))), i.a.createElement(R, {
-						step: P.Bridge,
+					}))), i.a.createElement(D, {
+						step: F.Bridge,
 						currentStep: a,
 						withConnection: !1
-					}, a === P.Bridge ? i.a.createElement(C.t, {
+					}, a === F.Bridge ? i.a.createElement(O.t, {
 						onClick: n
-					}, N.fbt._("Connect to Bridge", null, {
+					}, j.fbt._("Connect to Bridge", null, {
 						hk: "4oBHSw"
-					})) : i.a.createElement("p", null, N.fbt._("Connect to Bridge", null, {
+					})) : i.a.createElement("p", null, j.fbt._("Connect to Bridge", null, {
 						hk: "zuSGe"
 					}))))
 				},
-				V = e => {
+				W = e => {
 					let {
 						walletAddress: t,
 						network: n
 					} = e;
-					return t ? "5391184" !== n ? P.TestNetwork : t && "5391184" === n ? P.Bridge : P.Starting : P.Wallet
+					return t ? "5391184" !== n ? F.TestNetwork : t && "5391184" === n ? F.Bridge : F.Starting : F.Wallet
 				},
-				R = e => {
+				D = e => {
 					let {
 						step: t,
 						currentStep: n,
@@ -1110,61 +1119,61 @@
 					const r = t < n,
 						o = t === n;
 					return i.a.createElement("div", {
-						className: _()(F.a.connectionStep, {
-							[F.a.isCompleted]: r,
-							[F.a.isCurrentStep]: o
+						className: C()(L.a.connectionStep, {
+							[L.a.isCompleted]: r,
+							[L.a.isCurrentStep]: o
 						})
 					}, i.a.createElement("div", {
-						className: F.a.checkmark
-					}, r ? i.a.createElement(j.a, {
-						className: F.a.icon,
+						className: L.a.checkmark
+					}, r ? i.a.createElement(M.a, {
+						className: L.a.icon,
 						name: "checkmark_fill"
 					}) : t), i.a.createElement("div", {
-						className: F.a.stepChild
+						className: L.a.stepChild
 					}, s), a && i.a.createElement("div", {
-						className: F.a.connectionBar
+						className: L.a.connectionBar
 					}))
 				};
-			var W = n("./src/reddit/controls/LoadingIcon/index.tsx"),
-				D = n("./src/reddit/components/Governance/Token/index.tsx"),
-				H = n("./src/reddit/hooks/useLocale.ts"),
-				z = n("./src/reddit/icons/svgs/LoadingOrbit/index.tsx"),
-				U = n("./src/higherOrderComponents/asModal/index.tsx"),
-				Z = n("./src/reddit/components/ModalStyledComponents/index.tsx"),
-				Y = n("./node_modules/@ethersproject/address/lib.esm/index.js"),
-				q = n("./node_modules/lodash/debounce.js"),
-				X = n.n(q),
-				K = n("./src/lib/classNames/index.ts"),
-				G = n("./src/reddit/constants/colors.ts"),
-				J = n("./src/reddit/controls/FormFields/index.tsx"),
-				Q = n("./src/reddit/icons/svgs/Checkmark/index.tsx"),
-				$ = n("./src/reddit/icons/svgs/Nsfw/index.tsx"),
-				ee = n("./src/reddit/pages/meta/MainnetPointsMigrationPage/TransferModal.m.less"),
-				te = n.n(ee);
-			const ne = /^0x[0-9a-fA-F]+$/;
-			var ae;
+			var H = n("./src/reddit/controls/LoadingIcon/index.tsx"),
+				U = n("./src/reddit/components/Governance/Token/index.tsx"),
+				z = n("./src/reddit/hooks/useLocale.ts"),
+				Z = n("./src/reddit/icons/svgs/LoadingOrbit/index.tsx"),
+				Y = n("./src/higherOrderComponents/asModal/index.tsx"),
+				q = n("./src/reddit/components/ModalStyledComponents/index.tsx"),
+				K = n("./node_modules/@ethersproject/address/lib.esm/index.js"),
+				X = n("./node_modules/lodash/debounce.js"),
+				G = n.n(X),
+				J = n("./src/lib/classNames/index.ts"),
+				Q = n("./src/reddit/constants/colors.ts"),
+				$ = n("./src/reddit/controls/FormFields/index.tsx"),
+				ee = n("./src/reddit/icons/svgs/Checkmark/index.tsx"),
+				te = n("./src/reddit/icons/svgs/Nsfw/index.tsx"),
+				ne = n("./src/reddit/pages/meta/MainnetPointsMigrationPage/TransferModal.m.less"),
+				ae = n.n(ne);
+			const se = /^0x[0-9a-fA-F]+$/;
+			var re;
 			! function(e) {
 				e[e.Empty = 0] = "Empty", e[e.Valid = 1] = "Valid", e[e.Invalid = 2] = "Invalid"
-			}(ae || (ae = {}));
-			const se = e => {
+			}(re || (re = {}));
+			const ie = e => {
 				let {
 					className: t,
 					onChange: n
 				} = e;
-				const [a, s] = Object(r.useState)(""), o = Object(r.useRef)(a), [l, c] = Object(r.useState)(ae.Empty), d = l === ae.Invalid, u = () => {
-					if (ne.test(o.current)) {
-						if (!!Object(Y.a)(o.current)) return c(ae.Valid), void n(o.current, !0)
+				const [a, s] = Object(r.useState)(""), o = Object(r.useRef)(a), [l, c] = Object(r.useState)(re.Empty), d = l === re.Invalid, u = () => {
+					if (se.test(o.current)) {
+						if (!!Object(K.a)(o.current)) return c(re.Valid), void n(o.current, !0)
 					}
-					c(ae.Invalid)
-				}, m = Object(r.useMemo)(() => X()(u, 300), [o, n, u]);
+					c(re.Invalid)
+				}, m = Object(r.useMemo)(() => G()(u, 300), [o, n, u]);
 				return i.a.createElement("div", {
-					className: Object(K.a)(te.a.container, t, {
-						[te.a.invalid]: d
+					className: Object(J.a)(ae.a.container, t, {
+						[ae.a.invalid]: d
 					})
-				}, i.a.createElement(J.c, {
+				}, i.a.createElement($.c, {
 					redditStyle: !0,
-					className: te.a.input,
-					label: N.fbt._("To Wallet Address", null, {
+					className: ae.a.input,
+					label: j.fbt._("To Wallet Address", null, {
 						hk: "3HUlRg"
 					}),
 					max: 42,
@@ -1176,29 +1185,29 @@
 					}
 				}), function(e) {
 					switch (e) {
-						case ae.Invalid:
-							return i.a.createElement($.a, {
-								className: te.a.icon,
+						case re.Invalid:
+							return i.a.createElement(te.a, {
+								className: ae.a.icon,
 								style: {
-									fill: G.a.warning
+									fill: Q.a.warning
 								}
 							});
-						case ae.Valid:
-							return i.a.createElement(Q.a, {
-								className: te.a.icon
+						case re.Valid:
+							return i.a.createElement(ee.a, {
+								className: ae.a.icon
 							});
 						default:
 							return null
 					}
 				}(l), d && i.a.createElement("div", {
-					className: te.a.message
-				}, N.fbt._("Invalid wallet address", null, {
+					className: ae.a.message
+				}, j.fbt._("Invalid wallet address", null, {
 					hk: "2P3hNT"
 				})))
 			};
 
-			function re() {
-				return (re = Object.assign || function(e) {
+			function oe() {
+				return (oe = Object.assign || function(e) {
 					for (var t = 1; t < arguments.length; t++) {
 						var n = arguments[t];
 						for (var a in n) Object.prototype.hasOwnProperty.call(n, a) && (e[a] = n[a])
@@ -1207,94 +1216,98 @@
 				}).apply(this, arguments)
 			}
 			const {
-				fbt: ie
-			} = n("./node_modules/fbt/lib/FbtPublic.js"), oe = [ie._("Approve a transfer to our Bridge.", null, {
+				fbt: le
+			} = n("./node_modules/fbt/lib/FbtPublic.js"), ce = [le._("Approve a transfer to our Bridge.", null, {
 				hk: "3iNArL"
-			}), ie._("Send your Arbitrum Rinkeby Testnet balance to our Bridge.", null, {
+			}), le._("Send your Arbitrum Rinkeby Testnet balance to our Bridge.", null, {
 				hk: "2eAVhe"
-			}), ie._("Wait up to 5 minutes for the transaction to process.", null, {
+			}), le._("Wait up to 5 minutes for the transaction to process.", null, {
 				hk: "223RL5"
-			}), ie._("Connect your Metamask wallet to Arbitrum Nova Mainnet.", null, {
+			}), le._("Connect your Metamask wallet to Arbitrum Nova Mainnet.", null, {
 				hk: "hoaeX"
-			}), ie._("Claim your points from our Bridge.", null, {
+			}), le._("Claim your points from our Bridge.", null, {
 				hk: "39wkrJ"
-			}), ie._("Transfer the points into your wallet.", null, {
+			}), le._("Transfer the points into your wallet.", null, {
 				hk: "vZ3gk"
-			})], le = Object(U.a)(e => {
+			})], de = Object(Y.a)(e => {
 				let {
 					amount: t,
 					subredditId: n,
 					onTransfer: a,
 					onClose: s
 				} = e;
-				const [o, l] = Object(r.useState)(""), [c, d] = Object(r.useState)(!1);
+				const [o, l] = Object(r.useState)(""), [c, d] = Object(r.useState)(!1), u = Boolean(t);
 				return i.a.createElement("div", {
-					className: te.a.modalWrapper
+					className: ae.a.modalWrapper
 				}, i.a.createElement("div", {
-					className: te.a.header
+					className: ae.a.header
 				}, i.a.createElement("button", {
 					onClick: s,
-					className: te.a.closeButton,
-					"aria-label": ie._("Close", null, {
+					className: ae.a.closeButton,
+					"aria-label": le._("Close", null, {
 						hk: "3fyGPG"
 					})
-				}, i.a.createElement(Z.b, {
-					className: te.a.closeIcon
-				})), i.a.createElement("h2", null, ie._("Transfer to Mainnet", null, {
+				}, i.a.createElement(q.b, {
+					className: ae.a.closeIcon
+				})), i.a.createElement("h2", null, u ? le._("Transfer to Mainnet", null, {
 					hk: "4riDgo"
+				}) : le._("Check claims", null, {
+					hk: "2eKYfK"
 				}))), i.a.createElement("div", {
-					className: te.a.body
+					className: ae.a.body
 				}, i.a.createElement("h3", {
-					className: te.a.subheader
-				}, ie._("How does it work?", null, {
+					className: ae.a.subheader
+				}, le._("How does it work?", null, {
 					hk: "1Cczb"
 				})), i.a.createElement("div", {
-					className: te.a.description
-				}, ie._("Transfer from Reddit Testnet to Arbitrum Nova Mainnet works in 6 steps.", null, {
+					className: ae.a.description
+				}, le._("Transfer from Reddit Testnet to Arbitrum Nova Mainnet works in 6 steps.", null, {
 					hk: "hWNdE"
-				}), i.a.createElement("ol", null, oe.map((e, t) => i.a.createElement("li", {
+				}), i.a.createElement("ol", null, ce.map((e, t) => i.a.createElement("li", {
 					key: t,
-					className: te.a.listItem
-				}, e)))), i.a.createElement("div", {
-					className: te.a.pointSection
+					className: ae.a.listItem
+				}, e)))), u && n && i.a.createElement("div", {
+					className: ae.a.pointSection
 				}, i.a.createElement("span", {
-					className: te.a.point
-				}, i.a.createElement(D.a, {
-					className: te.a.token,
+					className: ae.a.point
+				}, i.a.createElement(U.a, {
+					className: ae.a.token,
 					subredditId: n
-				}), t)), i.a.createElement(se, {
-					className: te.a.input,
+				}), t)), i.a.createElement(ie, {
+					className: ae.a.input,
 					onChange: (e, t) => {
 						l(e), d(t)
 					}
 				}), i.a.createElement("span", {
-					className: te.a.footer
-				}, ie._("Use the same wallet address to speed up claim process.", null, {
+					className: ae.a.footer
+				}, le._("Use the same wallet address to speed up claim process.", null, {
 					hk: "H4lrx"
-				})), i.a.createElement(C.t, {
+				})), i.a.createElement(O.t, {
 					onClick: () => {
 						a(o), s()
 					},
 					disabled: !c || !o,
 					isFullWidth: !0
-				}, ie._("Transfer to Mainnet (via Bridge)", null, {
+				}, u ? le._("Transfer to Mainnet (via Bridge)", null, {
 					hk: "zXbFn"
+				}) : le._("Check for available claims", null, {
+					hk: "3QnZ6Q"
 				}))))
-			}), ce = e => i.a.createElement(le, re({
+			}), ue = e => i.a.createElement(de, oe({
 				withOverlay: !0,
 				onOverlayClick: e.onClose
 			}, e));
-			var de = n("./src/lib/constants/index.ts"),
-				ue = n("./src/reddit/endpoints/governance/requester.ts");
-			var me = n("./src/reddit/hooks/useApiContext.ts");
-			const pe = e => {
+			var me = n("./src/lib/constants/index.ts"),
+				pe = n("./src/reddit/endpoints/governance/requester.ts");
+			var he = n("./src/reddit/hooks/useApiContext.ts");
+			const be = e => {
 				let {
 					migrations: t,
 					setMigrations: n
 				} = e;
-				const r = Object(me.a)(),
+				const r = Object(he.a)(),
 					i = Object(o.d)(),
-					l = new s.ethers.providers.Web3Provider(Object(b.c)()).getSigner(),
+					l = new s.ethers.providers.Web3Provider(Object(h.c)()).getSigner(),
 					c = e => {
 						let {
 							updates: a,
@@ -1349,8 +1362,8 @@
 						} = e;
 						return await
 						function(e, t, n) {
-							return Object(ue.a)(e, {
-								method: de.jb.GET,
+							return Object(pe.a)(e, {
+								method: me.jb.GET,
 								endpoint: `${a.a.metaUrl}/migrationbridge/${t}/${n}`
 							})
 						}(r(), "42170", t).then(e => {
@@ -1429,23 +1442,23 @@
 						}), a
 					},
 					updateMigrationState: c,
-					switchToTestnet: async () => await I({
+					switchToTestnet: async () => await B({
 						network: "5391184",
 						dispatch: i
 					}),
 					switchToMainnet: async () => {
-						await I({
+						await B({
 							network: "42170",
 							dispatch: i
 						})
 					}
 				}
 			};
-			var be = n("./src/reddit/pages/meta/MainnetPointsMigrationPage/MigrationBridge.m.less"),
-				he = n.n(be);
+			var fe = n("./src/reddit/pages/meta/MainnetPointsMigrationPage/MigrationBridge.m.less"),
+				ge = n.n(fe);
 			const {
-				fbt: fe
-			} = n("./node_modules/fbt/lib/FbtPublic.js"), ge = e => {
+				fbt: ve
+			} = n("./node_modules/fbt/lib/FbtPublic.js"), ye = e => {
 				let {
 					migration: t,
 					migrations: n,
@@ -1453,156 +1466,164 @@
 					setMigrations: l
 				} = e;
 				const c = Object(o.d)(),
-					d = Object(H.a)(),
+					d = Object(z.a)(),
 					{
 						balance: u,
 						mainnetAddress: m,
 						subredditId: p,
-						subredditName: b,
-						testnetAddress: h,
+						subredditName: h,
+						testnetAddress: b,
 						transferStatus: f,
 						mainnetBalance: g,
 						isFetchingStatus: v,
-						destinationAddress: y
+						fetchCount: y,
+						destinationAddress: x
 					} = t,
-					[x, w] = Object(r.useState)(!1),
-					[E, k] = Object(r.useState)(s.ethers.utils.parseEther("0")),
-					[_, N] = Object(r.useReducer)(() => !0, !1),
-					[C, j] = Object(r.useState)(!1),
-					O = (null == f ? void 0 : f.claimId) && !(null == f ? void 0 : f.claimed),
-					M = v || C,
-					T = v || void 0 !== (null == f ? void 0 : f.claimed) ? "0" : A({
+					[w, E] = Object(r.useState)(!1),
+					[k, _] = Object(r.useState)(s.ethers.utils.parseEther("0")),
+					[N, C] = Object(r.useReducer)(() => !0, !1),
+					[j, O] = Object(r.useState)(!1),
+					M = (null == f ? void 0 : f.claimId) && !(null == f ? void 0 : f.claimed),
+					T = v || j,
+					A = v || !1 === (null == f ? void 0 : f.claimed) ? "0" : I({
 						locale: d,
 						balance: u
 					}),
-					I = A({
+					S = I({
 						locale: d,
-						balance: g || E
+						balance: g || k
 					}),
 					{
-						transferOut: P,
-						claimTransfer: B,
-						getMainnetBalance: F,
+						transferOut: B,
+						claimTransfer: F,
+						getMainnetBalance: V,
 						checkMigrationStatus: L,
-						updateMigrationState: V,
-						switchToTestnet: R,
-						switchToMainnet: W
-					} = pe({
+						updateMigrationState: R,
+						switchToTestnet: W,
+						switchToMainnet: D
+					} = be({
 						migrations: n,
 						setMigrations: l
 					});
 				Object(r.useEffect)(() => {
-					(f || y) && L({
-						destinationAddress: (null == f ? void 0 : f.recipient) || y
+					(f || x) && L({
+						destinationAddress: (null == f ? void 0 : f.recipient) || x
 					})
 				}, []), Object(r.useEffect)(() => {
 					let e;
-					return (v || y && !f) && (e = setInterval(async () => {
+					return v && void 0 !== y && y < 210 && (e = setInterval(async () => {
 						await L({
-							destinationAddress: y
-						}), (!1 === (null == f ? void 0 : f.claimed) || C) && (clearInterval(e), V({
+							destinationAddress: x
+						}), R({
 							updates: {
-								isFetchingStatus: !1
+								fetchCount: y + 1
 							},
 							token: m
-						}), (null == f ? void 0 : f.amount) && k(s.ethers.BigNumber.from(f.amount)))
+						}), (!1 === (null == f ? void 0 : f.claimed) || j || y >= 209) && (R({
+							updates: {
+								isFetchingStatus: !1,
+								fetchCount: 0
+							},
+							token: m
+						}), (null == f ? void 0 : f.amount) && !1 === (null == f ? void 0 : f.claimed) && _(s.ethers.BigNumber.from(f.amount)), clearInterval(e))
 					}, 2e3)), () => clearInterval(e)
-				}, [y, f, L, C, v, m, V]), Object(r.useEffect)(() => {
+				}, [x, f, L, j, v, m, R, y]), Object(r.useEffect)(() => {
 					let e;
-					return C && f && (e = setInterval(async () => {
-						const t = await F({
+					return j && f && (e = setInterval(async () => {
+						const t = await V({
 							mainnetAddress: m,
 							recipient: f.recipient
 						});
-						t.gt(E) && (k(t), j(!1), clearInterval(e))
+						t.gt(k) && (_(t), O(!1), clearInterval(e))
 					}, 1e3)), () => window.clearInterval(e)
-				}, [F, m, E, C, f]);
+				}, [V, m, k, j, f]);
 				return i.a.createElement("div", {
-					className: he.a.row,
+					className: ge.a.row,
 					key: p
 				}, i.a.createElement("div", {
-					className: he.a.firstColumn
-				}, "r/", b), i.a.createElement("div", {
-					className: he.a.column
-				}, i.a.createElement(ye, {
-					handleTransferClick: () => w(!0),
-					isHidden: "0" === T || v || void 0 !== (null == f ? void 0 : f.claimed),
+					className: ge.a.firstColumn
+				}, "r/", h), i.a.createElement("div", {
+					className: ge.a.column
+				}, i.a.createElement(we, {
+					handleTransferClick: () => E(!0),
+					isHidden: "0" === A || v || void 0 !== (null == f ? void 0 : f.claimed),
 					network: a,
-					switchToTestnet: R,
-					isTransferring: _
-				}), i.a.createElement(D.a, {
-					className: he.a.token,
+					switchToTestnet: W,
+					isTransferring: N
+				}), i.a.createElement(U.a, {
+					className: ge.a.token,
 					subredditId: p
-				}), i.a.createElement(ve, {
-					value: T
+				}), i.a.createElement(xe, {
+					value: A
 				})), i.a.createElement("div", {
-					className: he.a.column
-				}, i.a.createElement(xe, {
-					isClaiming: C,
+					className: ge.a.column
+				}, i.a.createElement(Ee, {
+					isClaiming: j,
 					network: a,
-					isHidden: !O,
+					isHidden: !M,
 					handleClaimTransfer: async () => {
 						var e, t;
 						try {
-							await B({
+							await F({
 								status: f
-							}), j(!0)
+							}), O(!0)
 						} catch (n) {
 							const a = 3 === (null === (e = null == n ? void 0 : n.data) || void 0 === e ? void 0 : e.code);
-							a && (V({
+							a && (R({
 								updates: {
 									transferStatus: null
 								}
-							}), F({
+							}), V({
 								mainnetAddress: null == f ? void 0 : f.token,
 								recipient: null == f ? void 0 : f.recipient
-							})), S({
+							})), P({
 								dispatch: c,
-								text: a ? fe._("Error: Already claimed", null, {
+								text: a ? ve._("Error: Already claimed", null, {
 									hk: "1fRm27"
 								}) : (null === (t = null == n ? void 0 : n.data) || void 0 === t ? void 0 : t.message) || n.message
-							}), j(!1)
+							}), O(!1)
 						}
 					},
-					switchToMainnet: W
-				}), i.a.createElement(D.a, {
-					className: he.a.token,
+					switchToMainnet: D
+				}), i.a.createElement(U.a, {
+					className: ge.a.token,
 					subredditId: p
-				}), i.a.createElement(ve, {
+				}), i.a.createElement(xe, {
 					isPending: v || !1 === (null == f ? void 0 : f.claimed),
-					value: I
-				}), M && i.a.createElement(z.a, {
-					className: he.a.loadingSpinner
-				})), x && i.a.createElement(ce, {
-					amount: T,
+					value: S
+				}), T && i.a.createElement(Z.a, {
+					className: ge.a.loadingSpinner
+				})), w && i.a.createElement(ue, {
+					amount: A,
 					subredditId: p,
-					onClose: () => w(!1),
+					onClose: () => E(!1),
 					onTransfer: async e => {
-						N(), await P({
-							testnetAddress: h,
+						C(), await B({
+							testnetAddress: b,
 							mainnetAddress: m,
 							destinationAddress: e,
 							amount: u
-						}), V({
+						}), R({
 							updates: {
 								destinationAddress: e,
-								isFetchingStatus: !0
+								isFetchingStatus: !0,
+								fetchCount: 0
 							},
 							token: m
-						}), k(s.ethers.BigNumber.from(u))
+						}), _(s.ethers.BigNumber.from(u))
 					}
 				}))
-			}, ve = e => {
+			}, xe = e => {
 				let {
 					value: t,
 					isPending: n
 				} = e;
 				return i.a.createElement("p", {
-					className: _()(he.a.pointsBalance, {
-						[he.a.noValue]: +t <= 0 || n
+					className: C()(ge.a.pointsBalance, {
+						[ge.a.noValue]: +t <= 0 || n
 					})
 				}, t)
-			}, ye = e => {
+			}, we = e => {
 				let {
 					network: t,
 					isHidden: n,
@@ -1610,21 +1631,21 @@
 					handleTransferClick: s,
 					isTransferring: r
 				} = e;
-				return n ? null : "5391184" !== t ? i.a.createElement(C.a, {
-					className: he.a.transferButton,
-					priority: C.c.Secondary,
+				return n ? null : "5391184" !== t ? i.a.createElement(O.a, {
+					className: ge.a.transferButton,
+					priority: O.c.Secondary,
 					onClick: a
-				}, fe._("Connect", null, {
+				}, ve._("Connect", null, {
 					hk: "3U59XL"
-				})) : i.a.createElement(C.a, {
+				})) : i.a.createElement(O.a, {
 					disabled: r,
-					className: he.a.transferButton,
-					priority: C.c.Secondary,
+					className: ge.a.transferButton,
+					priority: O.c.Secondary,
 					onClick: s
-				}, fe._("Transfer", null, {
+				}, ve._("Transfer", null, {
 					hk: "5ICxq"
 				}))
-			}, xe = e => {
+			}, Ee = e => {
 				let {
 					network: t,
 					isHidden: n,
@@ -1633,25 +1654,25 @@
 					isClaiming: o
 				} = e;
 				const [l, c] = Object(r.useReducer)(() => !0, !1);
-				return n ? null : "42170" !== t ? i.a.createElement(C.a, {
-					className: he.a.transferButton,
-					priority: C.c.Secondary,
+				return n ? null : "42170" !== t ? i.a.createElement(O.a, {
+					className: ge.a.transferButton,
+					priority: O.c.Secondary,
 					onClick: s
-				}, fe._("Connect", null, {
+				}, ve._("Connect", null, {
 					hk: "3U59XL"
-				})) : i.a.createElement(C.a, {
+				})) : i.a.createElement(O.a, {
 					disabled: o || l,
-					className: he.a.transferButton,
-					priority: C.c.Primary,
+					className: ge.a.transferButton,
+					priority: O.c.Primary,
 					onClick: () => {
 						c(), a()
 					}
-				}, fe._("Claim", null, {
+				}, ve._("Claim", null, {
 					hk: "47MFix"
 				}))
 			}, {
-				fbt: we
-			} = n("./node_modules/fbt/lib/FbtPublic.js"), Ee = e => {
+				fbt: ke
+			} = n("./node_modules/fbt/lib/FbtPublic.js"), _e = e => {
 				let {
 					walletAddress: t,
 					network: n,
@@ -1659,7 +1680,7 @@
 					setMigrations: s
 				} = e;
 				return Object(r.useEffect)(() => {
-					y(a).then(e => {
+					x(a).then(e => {
 						(null == a ? void 0 : a.length) ? e.forEach(e => {
 							if (!e.balance) return;
 							const t = [...a],
@@ -1677,133 +1698,163 @@
 						}): s(e)
 					})
 				}, []), a ? a.length ? i.a.createElement("div", {
-					className: he.a.table
+					className: ge.a.table
 				}, i.a.createElement("div", {
-					className: he.a.header
+					className: ge.a.header
 				}, i.a.createElement("p", {
-					className: he.a.firstColumn
-				}, we._("Your Community Points", null, {
+					className: ge.a.firstColumn
+				}, ke._("Your Community Points", null, {
 					hk: "1EiZYW"
 				})), i.a.createElement("p", {
-					className: he.a.column
-				}, we._("Rinkeby Test Network", null, {
+					className: ge.a.column
+				}, ke._("Rinkeby Test Network", null, {
 					hk: "2vAmjA"
 				})), i.a.createElement("p", {
-					className: he.a.column
-				}, we._("Arbitrum Nova Mainnet", null, {
+					className: ge.a.column
+				}, ke._("Arbitrum Nova Mainnet", null, {
 					hk: "2GmGaq"
-				}))), a.map(e => i.a.createElement(ge, {
+				}))), a.map(e => i.a.createElement(ye, {
 					key: e.name,
 					migration: e,
 					migrations: a,
 					setMigrations: s,
 					network: n
-				}))) : i.a.createElement(ke, {
+				}))) : i.a.createElement(Ne, {
 					walletAddress: t
-				}) : i.a.createElement(W.a, {
-					className: he.a.loadingSpinner,
+				}) : i.a.createElement(H.a, {
+					className: ge.a.loadingSpinner,
 					sizePx: 14
 				})
-			}, ke = e => {
+			}, Ne = e => {
 				let {
 					walletAddress: t
 				} = e;
-				return i.a.createElement("div", null, i.a.createElement("p", {
-					className: he.a.error
-				}, i.a.createElement("b", null, we._("No Points to migrate", null, {
+				return i.a.createElement("div", {
+					className: ge.a.noPoints
+				}, i.a.createElement("p", {
+					className: ge.a.error
+				}, i.a.createElement("b", null, ke._("No Points to migrate", null, {
 					hk: "4xNSjt"
-				}))), i.a.createElement("p", null, we._("Hmmm... I can't find any unmigrated points for your connected address:", null, {
+				}))), i.a.createElement("p", null, ke._("Hmmm... I can't find any unmigrated points for your connected address:", null, {
 					hk: "3XrFRZ"
-				}), " ", i.a.createElement("b", null, t), "."), i.a.createElement("ul", null, i.a.createElement("li", null, we._("If your Points were already in your Vault, they have already been migrated.", null, {
+				}), " ", i.a.createElement("b", null, t), "."), i.a.createElement("ul", null, i.a.createElement("li", null, ke._("If your Points were already in your Vault, they have already been migrated.", null, {
 					hk: "3fFavJ"
-				})), i.a.createElement("li", null, we._("If your Points were in a different wallet, make sure you send them to this address to migrate them. Or connect that wallet with this wallet software/extension.", null, {
+				})), i.a.createElement("li", null, ke._("If your Points were in a different wallet, make sure you send them to this address to migrate them. Or connect that wallet with this wallet software/extension.", null, {
 					hk: "3SFyoA"
-				})), i.a.createElement("li", null, we._("If you sent your Points to your Vault instead of this address, you will need to import your Vault into this wallet software (e.g. MetaMask). You can do this by using the 12-word phrase available in Vault Settings.", null, {
+				})), i.a.createElement("li", null, ke._("If you sent your Points to your Vault instead of this address, you will need to import your Vault into this wallet software (e.g. MetaMask). You can do this by using the 12-word phrase available in Vault Settings.", null, {
 					hk: "KP4aA"
 				}))))
 			}, {
-				fbt: _e
-			} = n("./node_modules/fbt/lib/FbtPublic.js"), Ne = () => {
+				fbt: Ce
+			} = n("./node_modules/fbt/lib/FbtPublic.js"), je = () => {
 				const e = Object(o.d)(),
-					t = Object(b.c)(),
-					n = Object(o.e)(w.a),
-					d = Object(o.e)(E.Q),
-					[u, m] = Object(r.useState)(Object(b.d)()),
-					[p, v] = Object(r.useState)(Object(b.e)()),
-					[y, k] = Object(r.useReducer)(() => !0, !1),
-					[_, N] = Object(x.a)(T, null),
-					[C, j] = Object(x.a)("mainnet-migration-signer", "");
+					t = Object(h.c)(),
+					n = Object(o.e)(k.a),
+					d = Object(o.e)(_.Q),
+					[u, m] = Object(r.useState)(Object(h.d)()),
+					[p, y] = Object(r.useState)(Object(h.e)()),
+					[x, N] = Object(r.useReducer)(() => !0, !1),
+					[C, j] = Object(r.useState)(!1),
+					[O, M] = Object(E.a)(S, null),
+					[T, A] = Object(E.a)("mainnet-migration-signer", "");
 				Object(r.useEffect)(() => {
 					(async () => {
-						const e = Object(b.d)();
-						e && e !== C && (N(null), j(e))
+						const e = Object(h.d)();
+						e && e !== T && (M(null), A(e))
 					})()
 				}, []), Object(r.useEffect)(() => {
 					d && (e(Object(l.h)({
-						subredditId: h
+						subredditId: b
 					})), e(Object(l.h)({
 						subredditId: f
 					})));
 					const t = window.setInterval(() => {
-						m(Object(b.d)());
-						const e = Object(b.e)();
-						v(s.ethers.BigNumber.from(e).toNumber().toString())
+						m(Object(h.d)());
+						const e = Object(h.e)();
+						y(s.ethers.BigNumber.from(e).toNumber().toString())
 					}, 500);
 					return () => window.clearInterval(t)
-				}, [e, m, v, d]), Object(r.useEffect)(() => {
-					[g, f, h].forEach(t => {
+				}, [e, m, y, d]), Object(r.useEffect)(() => {
+					[g, f, b].forEach(t => {
 						e(Object(c.a)({
 							subredditId: t
 						}))
 					})
 				}, []);
-				let O = null;
-				return n ? O = i.a.createElement("p", null, i.a.createElement("b", null, _e._("Bridge is currently unavailable.", null, {
+				let I = null;
+				n ? I = i.a.createElement("p", null, i.a.createElement("b", null, Ce._("Bridge is currently unavailable.", null, {
 					hk: "1IAbL8"
-				}))) : (d || (O = i.a.createElement("p", null, i.a.createElement("b", null, _e._("Please log in to continue.", null, {
+				}))) : (d || (I = i.a.createElement("p", null, i.a.createElement("b", null, Ce._("Please log in to continue.", null, {
 					hk: "3zILpv"
-				})))), u || t || (O = i.a.createElement("p", null, i.a.createElement("b", null, _e._("Please install {=MetaMask} or an equivalent wallet.", [_e._param("=MetaMask", i.a.createElement("a", {
+				})))), u || t || (I = i.a.createElement("p", null, i.a.createElement("b", null, Ce._("Please install {=MetaMask} or an equivalent wallet.", [Ce._param("=MetaMask", i.a.createElement("a", {
 					href: "https://metamask.io/"
-				}, _e._("MetaMask", null, {
+				}, Ce._("MetaMask", null, {
 					hk: "32IN7N"
 				})))], {
 					hk: "OvkQK"
-				})))), y || (O = i.a.createElement(L, {
+				})))), x || (I = i.a.createElement(R, {
 					walletAddress: u,
 					network: p,
-					onConnect: k
-				})), y && u && p && (O = i.a.createElement(Ee, {
+					onConnect: N
+				})), x && u && p && (I = i.a.createElement(_e, {
 					walletAddress: u,
 					network: p,
-					migrations: _,
-					setMigrations: N
-				}))), i.a.createElement("div", {
-					className: F.a.container
+					migrations: O,
+					setMigrations: M
+				})));
+				return i.a.createElement("div", {
+					className: L.a.container
 				}, i.a.createElement("h1", {
-					className: F.a.header
+					className: L.a.header
 				}, i.a.createElement("img", {
-					alt: _e._("Community Points Bridge", null, {
+					alt: Ce._("Community Points Bridge", null, {
 						hk: "1vd0MS"
 					}),
-					className: F.a.bridgeLogo,
+					className: L.a.bridgeLogo,
 					src: `${a.a.assetPath}/img/communityPoints/migration_bridge.png`
-				}), _e._("Community Points Bridge", null, {
+				}), Ce._("Community Points Bridge", null, {
 					hk: "3p57GN"
 				})), i.a.createElement("p", {
-					className: F.a.description
-				}, _e._("If you moved your Moons or Bricks out of your Vault, you will need to migrate them using this tool in order to get them onto our new system. This tool will help walk you through the necessary steps. NOTE: Most users will not need to use this tool.", null, {
+					className: L.a.description
+				}, Ce._("If you moved your Moons or Bricks out of your Vault, you will need to migrate them using this tool in order to get them onto our new system. This tool will help walk you through the necessary steps. NOTE: Most users will not need to use this tool.", null, {
 					hk: "2cW0jd"
 				})), i.a.createElement("div", {
-					className: F.a.content
-				}, O), !y && i.a.createElement("p", {
-					className: F.a.footer
-				}, _e._("This migration tool is designed to work with Chrome + MetaMask. If your Points are in a different wallet, we suggest moving them into MetaMask first. You should be able to use any web3-enabled wallet, but it is untested. Not all wallets will work with our Arbitrum chain. It must be a wallet where you can add a custom network with RPC url and a different chain id.", null, {
+					className: L.a.content
+				}, I, x && !n && i.a.createElement("div", {
+					className: L.a.unableToClaim
+				}, i.a.createElement("span", null, Ce._("Unable to claim? Click", null, {
+					hk: "tW7mZ"
+				}), " ", i.a.createElement("button", {
+					className: L.a.unableClaimButton,
+					onClick: () => j(!0)
+				}, Ce._("here", null, {
+					hk: "18YZIQ"
+				}))))), !x && i.a.createElement("p", {
+					className: L.a.footer
+				}, Ce._("This migration tool is designed to work with Chrome + MetaMask. If your Points are in a different wallet, we suggest moving them into MetaMask first. You should be able to use any web3-enabled wallet, but it is untested. Not all wallets will work with our Arbitrum chain. It must be a wallet where you can add a custom network with RPC url and a different chain id.", null, {
 					hk: "25krYi"
-				})))
+				})), C && i.a.createElement(ue, {
+					onClose: () => j(!1),
+					onTransfer: async e => {
+						let t = O;
+						if (!(null == t ? void 0 : t.length)) {
+							const e = new s.ethers.providers.Web3Provider(Object(h.c)()).getSigner(),
+								n = v.map(t => w(e, t));
+							t = await Promise.all(n)
+						}
+						const n = t.map(t => ({
+							...t,
+							destinationAddress: e,
+							isFetchingStatus: !0,
+							fetchCount: 0
+						}));
+						M(n)
+					}
+				}))
 			};
 
-			function Ce() {
-				return i.a.createElement(Ne, null)
+			function Oe() {
+				return i.a.createElement(je, null)
 			}
 		},
 		"./src/reddit/selectors/experiments/mainnet.ts": function(e, t, n) {
@@ -1830,4 +1881,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-pages-meta-MainnetPointsMigrationPage.d1370ba03a23bcb62968.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-pages-meta-MainnetPointsMigrationPage.868f6908f05fa7b3da62.js.map
