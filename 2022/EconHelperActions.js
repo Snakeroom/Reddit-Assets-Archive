@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/EconHelperActions.851726a3c9caf012283e.js
-// Retrieved at 7/28/2022, 7:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/EconHelperActions.a440c0359464997c26c7.js
+// Retrieved at 8/18/2022, 11:30:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["EconHelperActions"], {
 		"./node_modules/lodash/_LazyWrapper.js": function(e, t, r) {
@@ -2136,7 +2136,7 @@
 					return !!r && r.hasGifProduct
 				},
 				H = (e, t, r) => {
-					if (Object(b.o)(e, {
+					if (Object(b.n)(e, {
 							subredditId: t
 						})) return !0;
 					const n = "replyToPost" !== r && Object(_.b)(e, {
@@ -2151,7 +2151,7 @@
 					if (!Object(f.b)(e, {
 							subredditId: t
 						})) return !1;
-					if (Object(b.p)(e, {
+					if (Object(b.o)(e, {
 							subredditId: t
 						})) return !0;
 					if (V(e, r)) return !0;
@@ -2212,4 +2212,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EconHelperActions.851726a3c9caf012283e.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EconHelperActions.a440c0359464997c26c7.js.map

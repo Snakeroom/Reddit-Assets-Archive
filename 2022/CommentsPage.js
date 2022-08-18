@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CommentsPage.69da44d3eb36e195fe06.js
-// Retrieved at 8/18/2022, 10:40:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CommentsPage.3e0a537ead5edcc26685.js
+// Retrieved at 8/18/2022, 11:30:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CommentsPage", "PostCreation~Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~r~4c415e24", "Governance~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compo~bd4baca2", "CollectionCommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~SearchResults", "Governance~ModListing~Reddit~ReportFlow~Subreddit", "Governance~ModListing~Reddit~Subreddit", "CollectionCommentsPage~ModProgressModule~NewCommunityProgress", "CollectionCommentsPage~Subreddit~SubredditWiki", "AchievementsActions"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -23276,7 +23276,7 @@
 					onClick: n,
 					disabled: s
 				} = e;
-				return Object(i.e)(l.s) ? o.a.createElement(d.t, {
+				return Object(i.e)(l.q) ? o.a.createElement(d.t, {
 					priority: d.c.Primary,
 					className: t,
 					onClick: n,
@@ -35358,7 +35358,7 @@
 				}),
 				a = e => t => {
 					const n = o.ib(t),
-						i = Object(r.t)(t, {
+						i = Object(r.r)(t, {
 							subredditId: null == n ? void 0 : n.id
 						}),
 						{
@@ -43358,4 +43358,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommentsPage.69da44d3eb36e195fe06.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommentsPage.3e0a537ead5edcc26685.js.map

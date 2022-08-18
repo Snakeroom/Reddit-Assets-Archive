@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditPremiumBadgeHovercardTooltip.573c8ea250e8a2be701d.js
-// Retrieved at 8/4/2022, 7:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditPremiumBadgeHovercardTooltip.42f1196e6bf0ac0c4f02.js
+// Retrieved at 8/18/2022, 11:30:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditPremiumBadgeHovercardTooltip"], {
 		"./node_modules/lodash/_arrayShuffle.js": function(e, t, r) {
@@ -2888,7 +2888,7 @@
 					return !!r && r.hasGifProduct
 				},
 				W = (e, t, r) => {
-					if (Object(b.o)(e, {
+					if (Object(b.n)(e, {
 							subredditId: t
 						})) return !0;
 					const n = "replyToPost" !== r && Object(f.b)(e, {
@@ -2903,7 +2903,7 @@
 					if (!Object(h.b)(e, {
 							subredditId: t
 						})) return !1;
-					if (Object(b.p)(e, {
+					if (Object(b.o)(e, {
 							subredditId: t
 						})) return !0;
 					if (H(e, r)) return !0;
@@ -2964,4 +2964,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditPremiumBadgeHovercardTooltip.573c8ea250e8a2be701d.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditPremiumBadgeHovercardTooltip.42f1196e6bf0ac0c4f02.js.map

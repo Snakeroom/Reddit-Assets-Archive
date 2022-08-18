@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostCreation.7aa1eb663565cb29b487.js
-// Retrieved at 8/18/2022, 10:40:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostCreation.7af6d68e82bda8a694f3.js
+// Retrieved at 8/18/2022, 11:30:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostCreation", "ChatMessageInput~MembershipPaywallPage~RichTextEditor", "ContributorRequestButton"], {
 		"./node_modules/autosize/dist/autosize.js": function(e, t, n) {
@@ -3320,17 +3320,17 @@
 		"./src/reddit/actions/postCreation/mediaUpload.ts": function(e, t, n) {
 			"use strict";
 			n.d(t, "f", (function() {
-				return R
+				return P
 			})), n.d(t, "b", (function() {
-				return D
+				return R
 			})), n.d(t, "a", (function() {
-				return L
+				return M
 			})), n.d(t, "c", (function() {
-				return F
+				return L
 			})), n.d(t, "e", (function() {
-				return B
+				return A
 			})), n.d(t, "d", (function() {
-				return U
+				return F
 			}));
 			n("./node_modules/core-js/modules/web.dom.iterable.js");
 			var o = n("./node_modules/fbt/lib/FbtPublic.js"),
@@ -3358,25 +3358,23 @@
 				subreddit: C.ib(e)
 			});
 			var O = n("./src/reddit/helpers/trackers/postComposer.ts"),
-				v = n("./src/reddit/models/Gold/Powerups/index.ts"),
-				_ = n("./src/reddit/models/PostCreationForm/index.ts"),
-				k = n("./src/reddit/models/Toast/index.ts"),
-				j = n("./src/reddit/selectors/gold/powerups/index.ts"),
-				S = n("./src/reddit/selectors/postCreations.ts"),
-				T = n("./src/reddit/actions/postCreation/constants.ts"),
-				w = n("./src/reddit/actions/postCreation/general.ts");
-			const I = Object(c.a)(T.u),
-				P = Object(c.a)(T.v),
-				N = Object(c.a)(T.t),
-				R = e => async (t, n) => {
-					t(I());
+				v = n("./src/reddit/models/PostCreationForm/index.ts"),
+				_ = n("./src/reddit/models/Toast/index.ts"),
+				k = n("./src/reddit/selectors/postCreations.ts"),
+				j = n("./src/reddit/actions/postCreation/constants.ts"),
+				S = n("./src/reddit/actions/postCreation/general.ts");
+			const T = Object(c.a)(j.u),
+				w = Object(c.a)(j.v),
+				I = Object(c.a)(j.t),
+				P = e => async (t, n) => {
+					t(T());
 					const o = e.map(e => {
 						let {
 							url: n,
 							uploadKey: o
 						} = e;
 						const s = Object(g.b)(Object(g.d)(n), "poster.png");
-						return t(A(s, o))
+						return t(D(s, o))
 					});
 					await Promise.all(o);
 					const s = n().uploads,
@@ -3386,8 +3384,8 @@
 							} = e;
 							return s[t]
 						}).find(e => e.status !== E.a.SUCCESS);
-					t(r ? N(r.error) : P())
-				}, M = (e, t) => ({
+					t(r ? I(r.error) : w())
+				}, N = (e, t) => ({
 					error: t ? {
 						type: e,
 						fields: [{
@@ -3398,25 +3396,25 @@
 						type: e
 					}
 				});
-			const D = "RTE",
-				L = "GALLERY",
-				A = (e, t, n, s) => async (r, a, c) => {
+			const R = "RTE",
+				M = "GALLERY",
+				D = (e, t, n, s) => async (r, a, c) => {
 					let {
 						apiContext: l
 					} = c;
-					const u = Object(S.h)(a()),
-						_ = Date.now();
-					let k = null,
-						T = !1,
-						w = !1,
-						I = !1;
-					const P = e => {
-						if (!I && n && T) {
-							I = !0;
+					const u = Object(k.h)(a()),
+						v = Date.now();
+					let _ = null,
+						j = !1,
+						S = !1,
+						T = !1;
+					const w = e => {
+						if (!T && n && j) {
+							T = !0;
 							const o = a(),
-								s = Date.now() - _,
+								s = Date.now() - v,
 								r = Object(b.c)(b.a.PostComposer);
-							w ? (async e => {
+							S ? (async e => {
 								let {
 									state: t,
 									uploadKey: n,
@@ -3476,7 +3474,7 @@
 							})({
 								state: o,
 								uploadKey: t,
-								assetId: k,
+								assetId: _,
 								isCanceled: e,
 								fileSource: n,
 								uploadDuration: s,
@@ -3484,143 +3482,137 @@
 							}) : O.D(o, t)
 						}
 					};
-					return await r(Object(d.l)(e, t, async c => {
-						T = !0, Object(d.k)(c.id, () => {
-							P(!0)
+					return await r(Object(d.l)(e, t, async a => {
+						j = !0, Object(d.k)(a.id, () => {
+							w(!0)
 						});
 						const {
-							error: b,
-							metadata: E
-						} = await async function(e, t, n) {
-							const s = n && n.allowedPostTypes,
-								r = n && n.name,
-								a = await Object(g.h)(t) || t.type,
-								c = Object(g.c)(t) || void 0;
-							if (!c) return M("UNSUPPORTED_BROWSER");
-							const l = {
-								localUrl: c,
-								mimetype: a
+							error: c,
+							metadata: b
+						} = await async function(e, t) {
+							const n = t && t.allowedPostTypes,
+								s = t && t.name,
+								r = await Object(g.h)(e) || e.type,
+								a = Object(g.c)(e) || void 0;
+							if (!a) return N("UNSUPPORTED_BROWSER");
+							const c = {
+								localUrl: a,
+								mimetype: r
 							};
-							if (!a || !Object(g.j)(a)) return {
+							if (!r || !Object(g.j)(r)) return {
 								error: {
 									type: i.T
 								}
 							};
-							if (a.startsWith("image/")) {
-								if (s && !s.images) {
-									const e = o.fbt._("Images are not allowed in r/{subredditName}", [o.fbt._param("subredditName", r)], {
+							if (r.startsWith("image/")) {
+								if (n && !n.images) {
+									const e = o.fbt._("Images are not allowed in r/{subredditName}", [o.fbt._param("subredditName", s)], {
 										hk: "3C2E7Q"
 									});
-									return M(i.T, e)
+									return N(i.T, e)
 								}
-								if ("image/gif" === a) {
-									if (t.size > i.Z) return M(i.L)
-								} else if (t.size > i.bb) return M(i.R);
-								const e = await Object(f.a)(c);
-								l.width = e.width, l.height = e.height
-							} else if (a.startsWith("video/")) {
-								const a = !(null == n || !n.id) && Object(j.n)(e, {
-										subredditId: n.id,
-										benefit: v.a.HdVideo
-									}),
-									u = a ? 2 * i.fb : i.fb;
-								if (t.size > u) return M(i.pc);
-								let m;
+								if ("image/gif" === r) {
+									if (e.size > i.Z) return N(i.L)
+								} else if (e.size > i.bb) return N(i.R);
+								const t = await Object(f.a)(a);
+								c.width = t.width, c.height = t.height
+							} else if (r.startsWith("video/")) {
+								if (e.size > i.fb) return N(i.pc);
+								let t;
 								try {
-									m = await Object(g.i)(c, !0)
-								} catch (d) {
-									return M(i.T)
+									t = await Object(g.i)(a, !0)
+								} catch (l) {
+									return N(i.T)
 								}
-								if (s) {
+								if (n) {
 									const {
 										videos: e,
-										images: t
-									} = s;
-									if (t && !e && m.duration > i.gb) {
-										const e = o.fbt._("Sorry, r/{subredditName} doesn't allow videos. Please upload a video less than 60 seconds to convert to animated GIF.", [o.fbt._param("subredditName", r)], {
+										images: r
+									} = n;
+									if (r && !e && t.duration > i.gb) {
+										const e = o.fbt._("Sorry, r/{subredditName} doesn't allow videos. Please upload a video less than 60 seconds to convert to animated GIF.", [o.fbt._param("subredditName", s)], {
 											hk: "46ULiz"
 										});
-										return M(i.T, e)
+										return N(i.T, e)
 									}
-									if (!t && !e) {
-										const e = o.fbt._("Videos are not allowed in r/{subredditName}", [o.fbt._param("subredditName", r)], {
+									if (!r && !e) {
+										const e = o.fbt._("Videos are not allowed in r/{subredditName}", [o.fbt._param("subredditName", s)], {
 											hk: "4uTUZb"
 										});
-										return M(i.T, e)
+										return N(i.T, e)
 									}
 								}
-								const p = a ? 2 * i.eb : i.eb;
-								if (m.duration > p) {
-									const e = o.fbt._("Video is too long. Maximum video length is {duration} minutes.", [o.fbt._param("duration", (p / 60).toString())], {
+								if (t.duration > i.eb) {
+									const e = o.fbt._("Video is too long. Maximum video length is {duration} minutes.", [o.fbt._param("duration", (i.eb / 60).toString())], {
 										hk: "20nB6Q"
 									});
-									return M(i.T, e)
+									return N(i.T, e)
 								}
-								if (m.duration < i.mb) {
+								if (t.duration < i.mb) {
 									const e = o.fbt._("Video is too short. Minimum video length is {duration} seconds.", [o.fbt._param("duration", i.mb.toString())], {
 										hk: "49PSW8"
 									});
-									return M(i.T, e)
+									return N(i.T, e)
 								}
-								if (0 === m.height || 0 === m.width) {
+								if (0 === t.height || 0 === t.width) {
 									const e = o.fbt._("Your browser does not support the video codec used for this video. Please try using a different video codec.", null, {
 										hk: "1AC0mg"
 									});
-									return M(i.T, e)
+									return N(i.T, e)
 								}
-								if (m.height < i.nb || m.width < i.ob) {
+								if (t.height < i.nb || t.width < i.ob) {
 									const e = o.fbt._("Videos must be {min_video_width}x{min_video_height} pixels or larger.", [o.fbt._param("min_video_width", i.ob.toString()), o.fbt._param("min_video_height", i.nb.toString())], {
 										hk: "2HSUGl"
 									});
-									return M(i.T, e)
+									return N(i.T, e)
 								}
-								if (t.size / m.duration < i.lb) {
+								if (e.size / t.duration < i.lb) {
 									const e = o.fbt._("Videos must have a bitrate of {min_bitrate}KB/s or larger.", [o.fbt._param("min_bitrate", (i.lb / i.U).toString())], {
 										hk: "1ehgDE"
 									});
-									return M(i.T, e)
+									return N(i.T, e)
 								}
-								l.height = m.height, l.width = m.width, l.videoDuration = m.duration, l.videoFirstFrameUrl = m.firstFrame.dataUrl
+								c.height = t.height, c.width = t.width, c.videoDuration = t.duration, c.videoFirstFrameUrl = t.firstFrame.dataUrl
 							}
 							return {
-								metadata: l
+								metadata: c
 							}
-						}(a(), e, u);
-						if (b || !E) return {
-							error: b
+						}(e, u);
+						if (c || !b) return {
+							error: c
 						};
 						r(Object(d.m)({
 							key: t,
 							metadata: {
 								fileSource: n,
-								...E
+								...b
 							}
-						})), w = !0, s && s();
-						const C = e.name,
-							x = await (async (e, t, n) => Object(m.a)(Object(p.a)(e, [h.a]), {
+						})), S = !0, s && s();
+						const E = e.name,
+							C = await (async (e, t, n) => Object(m.a)(Object(p.a)(e, [h.a]), {
 								endpoint: `${e.apiUrl}/api/media/asset.json`,
 								method: i.jb.POST,
 								data: {
 									filepath: t,
 									mimetype: n
 								}
-							}))(l(), C, E.mimetype);
-						return x.ok ? (k = x.body.asset.asset_id, {
-							uploadLease: x.body.args
+							}))(l(), E, b.mimetype);
+						return C.ok ? (_ = C.body.asset.asset_id, {
+							uploadLease: C.body.args
 						}) : {
-							error: x.error || void 0
+							error: C.error || void 0
 						}
-					}, !0)), P(!1), a().uploads[t] || null
-				}, F = e => async (t, n, o) => {
+					}, !0)), w(!1), a().uploads[t] || null
+				}, L = e => async (t, n, o) => {
 					let {
 						apiContext: s
 					} = o;
 					const r = n().uploads[e];
-					r && !Object(E.c)(r) && await t(A(r.file, r.key, r.metadata.fileSource, void 0))
-				}, B = (e, t, n) => async (s, i) => {
+					r && !Object(E.c)(r) && await t(D(r.file, r.key, r.metadata.fileSource, void 0))
+				}, A = (e, t, n) => async (s, i) => {
 					const c = e.map((e, o) => new Promise(async o => {
 							const i = Object(E.d)(n, r()().slice(-6));
-							await s(A(e, i, t, () => o({
+							await s(D(e, i, t, () => o({
 								uploadKey: i,
 								isValid: !0
 							}))), o({
@@ -3638,11 +3630,11 @@
 							} = s(), i = e.map(e => r[e]).filter(e => e.status === E.a.FAILED && !e.metadata.mimetype).map(e => e.error), c = i.length > t ? t - 1 : i.length, d = i.length - c;
 							i.slice(0, c).forEach(e => n(Object(l.f)({
 								duration: l.a,
-								kind: k.b.Error,
+								kind: _.b.Error,
 								text: Object(a.a)(e)
 							}))), d > 0 && n(Object(l.f)({
 								duration: l.a,
-								kind: k.b.Error,
+								kind: _.b.Error,
 								text: o.fbt._({
 									"*": "Couldn't add {number} more files",
 									_1: "Couldn't add 1 more file"
@@ -3652,39 +3644,39 @@
 							}))
 						}
 					}(u)), d.filter(e => e.isValid).map(e => e.uploadKey)
-				}, U = (e, t) => async (n, s) => {
+				}, F = (e, t) => async (n, s) => {
 					const r = s(),
-						i = Object(S.W)(r),
+						i = Object(k.W)(r),
 						{
 							items: a
 						} = i,
 						c = !a.length && 1 === e.length,
-						m = Object(S.N)(r) && !c;
+						m = Object(k.N)(r) && !c;
 					let p = !1,
 						h = e;
 					if (m) {
-						if (Object(_.x)(i)) return void n(Object(l.f)({
-							kind: k.b.Error,
+						if (Object(v.x)(i)) return void n(Object(l.f)({
+							kind: _.b.Error,
 							text: o.fbt._("Please remove the existing video first. Videos aren't supported within galleries yet.", null, {
 								hk: "3lGxp4"
 							})
 						}));
 						h.some(e => Object(g.m)(e.type)) && n(Object(l.f)({
 							duration: l.a,
-							kind: k.b.Error,
+							kind: _.b.Error,
 							text: o.fbt._("Videos aren’t supported within galleries...yet", null, {
 								hk: "9Cl20"
 							})
 						})), h = h.filter(e => Object(g.l)(e.type));
 						const e = Math.max(0, u.b - a.length);
 						h.length > e && (n(Object(l.f)({
-							kind: k.b.Error,
+							kind: _.b.Error,
 							text: o.fbt._("You have hit the limit of {images_limit} images", [o.fbt._param("images_limit", `${u.b}`)], {
 								hk: "6M4kX"
 							})
 						})), h = h.slice(0, e))
-					} else h = h.slice(0, 1), p = !0, n(Object(d.j)(L, !0));
-					const b = await n(B(h, t, L));
+					} else h = h.slice(0, 1), p = !0, n(Object(d.j)(M, !0));
+					const b = await n(A(h, t, M));
 					if (!b.length) return;
 					const f = b.map(e => ({
 							uploadKey: e,
@@ -3692,7 +3684,7 @@
 							url: ""
 						})),
 						E = 0 === a.length;
-					n(Object(w.d)({
+					n(Object(S.d)({
 						...i,
 						items: p ? f : [...a, ...f],
 						selectedKey: E ? b[0] : b[b.length - 1]
@@ -26245,7 +26237,7 @@
 				}),
 				a = e => t => {
 					const n = r.ib(t),
-						i = Object(s.t)(t, {
+						i = Object(s.r)(t, {
 							subredditId: null == n ? void 0 : n.id
 						}),
 						{
@@ -33125,53 +33117,47 @@
 				}),
 				Ou = n("./src/lib/filterQueryParams/index.ts"),
 				vu = n("./src/reddit/models/ScheduledPost/index.ts"),
-				_u = n("./src/reddit/selectors/gold/powerups/index.ts"),
-				ku = n("./src/reddit/components/PostCreationForm/Tabs/index.m.less"),
-				ju = n.n(ku);
-			const Su = e => s.a.createElement("button", {
-					className: Object(p.a)(ju.a.Tab, e.className, {
-						[ju.a.isActive]: e.active
+				_u = n("./src/reddit/components/PostCreationForm/Tabs/index.m.less"),
+				ku = n.n(_u);
+			const ju = e => s.a.createElement("button", {
+					className: Object(p.a)(ku.a.Tab, e.className, {
+						[ku.a.isActive]: e.active
 					}),
 					disabled: e.disabled,
 					onClick: e.onClick
 				}, e.children),
-				Tu = Object(i.a)(w.d, w.e, w.h, w.S, w.bb, z.r, (e, t) => {
-					const n = Object(z.n)(e, t);
-					return !!n && Object(_u.q)(e, {
-						subredditId: n
-					})
-				}, (e, t) => {
+				Su = Object(i.a)(w.d, w.e, w.h, w.S, w.bb, z.r, (e, t) => {
 					const n = Object(w.h)(e);
 					return Object(U.y)(e) && t.isTalkCreationAllowedForUser && n.isProfile
-				}, (e, t, n, o, s, r, i, a) => {
+				}, (e, t, n, o, s, r, i) => {
 					const {
-						images: c = !0,
-						links: l = !0,
-						text: d = !0,
-						videos: u = !0,
-						talks: m = a
-					} = n.allowedPostTypes || {}, p = !!r && r.isNSFW;
+						images: a = !0,
+						links: c = !0,
+						text: l = !0,
+						videos: d = !0,
+						talks: u = i
+					} = n.allowedPostTypes || {}, m = !!r && r.isNSFW;
 					return {
-						link: s || !l || o && !Object(vu.h)("links"),
-						media: !u && !c && !t || s || p && !i || o && !Object(vu.h)("images"),
-						post: !d && !t || s || o && !Object(vu.h)("text"),
+						link: s || !c || o && !Object(vu.h)("links"),
+						media: !d && !a && !t || s || m || o && !Object(vu.h)("images"),
+						post: !l && !t || s || o && !Object(vu.h)("text"),
 						poll: !e || o && !Object(vu.h)("polls"),
-						talk: s || !m || o && !Object(vu.h)("talks")
+						talk: s || !u || o && !Object(vu.h)("talks")
 					}
 				}),
-				wu = Object(i.c)({
+				Tu = Object(i.c)({
 					canPostAsModerator: w.e,
 					destSubreddit: w.h,
 					govType: e => e.creations.formData.govType,
 					hasCreatedPredictionDrafts: Vc.a,
-					isTabsDisabled: Tu,
+					isTabsDisabled: Su,
 					pending: w.bb,
 					submissionType: w.a,
 					subreddit: z.r,
 					isImageGalleryCreationEnabled: w.N,
 					isPredictionCreationTabEnabled: U.l
 				}),
-				Iu = Object(r.b)(wu, (e, t) => ({
+				wu = Object(r.b)(Tu, (e, t) => ({
 					onChange: (n, o) => {
 						e(a.g({
 							submissionType: n,
@@ -33183,7 +33169,7 @@
 						})(e, t.pageLayer, ["url", "media", "onlyTitle", "text", "selftext", "type"])
 					}
 				}));
-			class Pu extends s.a.PureComponent {
+			class Iu extends s.a.PureComponent {
 				constructor() {
 					super(...arguments), this.onPostTabClick = () => {
 						this.props.isTabsDisabled.post || this.props.onChange(h.Wb.POST, {
@@ -33241,20 +33227,20 @@
 					}) : p && !m && (b = l.fbt._("Video", null, {
 						hk: "3w6DFr"
 					})), s.a.createElement("div", {
-						className: ju.a.Container
+						className: ku.a.Container
 					}, s.a.createElement("div", {
-						className: ju.a.row
-					}, s.a.createElement(Su, {
+						className: ku.a.row
+					}, s.a.createElement(ju, {
 						active: o === h.Wb.POST,
 						disabled: t || n.post,
 						onClick: this.onPostTabClick
 					}, s.a.createElement(he.a, {
 						name: "text_post",
 						isFilled: o === h.Wb.POST,
-						className: ju.a.Icon
+						className: ku.a.Icon
 					}), l.fbt._("Post", null, {
 						hk: "ozUj2"
-					})), s.a.createElement(Su, {
+					})), s.a.createElement(ju, {
 						active: o === h.Wb.MEDIA,
 						disabled: t || n.media,
 						onClick: this.onMediaTabClick
@@ -33265,56 +33251,56 @@
 					}), s.a.createElement(he.a, {
 						name: "image_post",
 						isFilled: o === h.Wb.MEDIA,
-						className: ju.a.Icon
-					}), b), s.a.createElement(Su, {
+						className: ku.a.Icon
+					}), b), s.a.createElement(ju, {
 						active: o === h.Wb.LINK_ONLY,
 						disabled: t || n.link,
 						onClick: this.onLinkTabClick
 					}, s.a.createElement(he.a, {
 						name: "link_post",
 						isFilled: o === h.Wb.LINK_ONLY,
-						className: ju.a.Icon
+						className: ku.a.Icon
 					}), l.fbt._("Link", null, {
 						hk: "1pbEKv"
-					})), s.a.createElement(Su, {
+					})), s.a.createElement(ju, {
 						active: o === h.Wb.POLL,
 						disabled: t || n.poll && !i,
 						onClick: this.onPollTabClick
 					}, s.a.createElement(he.a, {
 						name: "poll_post",
 						isFilled: o === h.Wb.POLL,
-						className: ju.a.Icon
+						className: ku.a.Icon
 					}), n.poll && i && !a ? l.fbt._("Prediction", null, {
 						hk: "3NTNLd"
 					}) : l.fbt._("Poll", null, {
 						hk: "SQdo4"
-					})), a && i && s.a.createElement(Su, {
+					})), a && i && s.a.createElement(ju, {
 						active: o === h.Wb.PREDICTION,
 						disabled: t || !i,
 						onClick: this.onPredictionTabClick
 					}, s.a.createElement(he.a, {
 						name: "prediction",
 						isFilled: "prediction" === o,
-						className: ju.a.Icon
+						className: ku.a.Icon
 					}), l.fbt._("Predictions", null, {
 						hk: "QtPNQ"
-					})), s.a.createElement(Su, {
+					})), s.a.createElement(ju, {
 						active: o === h.Wb.TALK,
 						disabled: t || n.talk || !c,
 						onClick: this.onTalkTabClick
 					}, s.a.createElement(he.a, {
 						name: "audio",
 						isFilled: o === h.Wb.TALK,
-						className: ju.a.Icon
+						className: ku.a.Icon
 					}), l.fbt._("Talk", null, {
 						hk: "30xDP2"
 					}))))
 				}
 			}
-			var Nu = Object(z.u)()(Iu(Pu));
+			var Pu = Object(z.u)()(wu(Iu));
 
-			function Ru() {
-				return (Ru = Object.assign || function(e) {
+			function Nu() {
+				return (Nu = Object.assign || function(e) {
 					for (var t = 1; t < arguments.length; t++) {
 						var n = arguments[t];
 						for (var o in n) Object.prototype.hasOwnProperty.call(n, o) && (e[o] = n[o])
@@ -33322,19 +33308,19 @@
 					return e
 				}).apply(this, arguments)
 			}
-			var Mu = n("./src/reddit/components/PostCreationForm/index.m.less"),
-				Du = n.n(Mu);
-			const Lu = Ue.a.div("FormContent", Du.a),
-				Au = Ue.a.wrapped(y.c, "CrosspostBox", Du.a),
-				Fu = Ue.a.div("FormContainer", Du.a),
-				Bu = Ue.a.div("TabContent", Du.a),
-				Uu = Object(z.u)({
+			var Ru = n("./src/reddit/components/PostCreationForm/index.m.less"),
+				Mu = n.n(Ru);
+			const Du = Ue.a.div("FormContent", Mu.a),
+				Lu = Ue.a.wrapped(y.c, "CrosspostBox", Mu.a),
+				Au = Ue.a.div("FormContainer", Mu.a),
+				Fu = Ue.a.div("TabContent", Mu.a),
+				Bu = Object(z.u)({
 					draftId: z.v,
 					isPostCreationPage: z.G,
 					pageLayer: e => e,
 					sourcePostId: e => Object(z.Y)(e).source_id
 				}),
-				Ku = Object(i.c)({
+				Uu = Object(i.c)({
 					submissionType: w.a,
 					allowNavigationCallback: q.a,
 					contributorRequestPending: e => Object(Y.e)(e, E.e.Post),
@@ -33382,7 +33368,7 @@
 					},
 					isTalkTopicSelectionEnabled: U.x
 				});
-			class Wu extends s.a.Component {
+			class Ku extends s.a.Component {
 				constructor(e) {
 					super(e), this.postFieldValidationPending = null, this.sendStartTypingInputBodyEvent = u()(() => this.props.onStartTypingInput(g.m.BODY)), this.sendStartTypingInputTitleEvent = u()(() => this.props.onStartTypingInput(g.m.TITLE)), this.sendStartTypingInputUrlEvent = u()(() => this.props.onStartTypingInput(g.m.URL)), this.onExternalAccountConnected = () => {
 						this.props.onExternalAccountsDataRequested()
@@ -33500,7 +33486,7 @@
 							const {
 								sourcePostRoot: e
 							} = this.props;
-							return e && s.a.createElement(Au, {
+							return e && s.a.createElement(Lu, {
 								postId: e.id,
 								mediaProps: {
 									isExpando: !1,
@@ -33556,23 +33542,23 @@
 						})
 					}
 					const v = m && m.guidelinesText && m.guidelinesText.trim() || "";
-					return s.a.createElement(Fu, null, s.a.createElement(rc, {
+					return s.a.createElement(Au, null, s.a.createElement(rc, {
 						submissionType: E,
 						submitMode: x
 					}), !r && s.a.createElement(s.a.Fragment, null, s.a.createElement(Uo, {
 						includeUserProfile: n,
 						allowCrosspostableOnly: !!b
 					}), !!v && s.a.createElement("div", {
-						className: Du.a.PostingGuidelines
-					}, v)), s.a.createElement(Lu, null, E !== h.Wb.CROSSPOST && s.a.createElement(Nu, {
+						className: Mu.a.PostingGuidelines
+					}, v)), s.a.createElement(Du, null, E !== h.Wb.CROSSPOST && s.a.createElement(Pu, {
 						isPredictionCreationAllowed: i,
 						isApprovedUser: o,
 						isTalkCreationAllowedForUser: a
 					}), E === h.Wb.TALK && y ? s.a.createElement(F, {
 						subredditOrProfile: y,
 						title: O
-					}, this.renderTabContent()) : s.a.createElement(Bu, null, this.renderTabContent()), r && s.a.createElement(s.a.Fragment, null, s.a.createElement("div", {
-						className: Du.a.postToTitle
+					}, this.renderTabContent()) : s.a.createElement(Fu, null, this.renderTabContent()), r && s.a.createElement(s.a.Fragment, null, s.a.createElement("div", {
+						className: Mu.a.postToTitle
 					}, l.fbt._("Post to", null, {
 						hk: "1t9e1N"
 					})), s.a.createElement(Uo, {
@@ -33580,7 +33566,7 @@
 						allowCrosspostableOnly: !!b,
 						className: Do.a.SubredditRec
 					}), !!v && s.a.createElement("div", {
-						className: Object(p.a)(Du.a.PostingGuidelines, Du.a.isSubredditRec)
+						className: Object(p.a)(Mu.a.PostingGuidelines, Mu.a.isSubredditRec)
 					}, v)), e && s.a.createElement(W.a, null), E !== h.Wb.TALK && s.a.createElement(To, {
 						contributorRequestPending: e,
 						draftId: t,
@@ -33639,7 +33625,7 @@
 					}), E !== h.Wb.TALK && s.a.createElement(Me, null))
 				}
 			}
-			var Hu, zu = Uu(Object(r.b)(Ku, (e, t) => {
+			var Wu, Hu = Bu(Object(r.b)(Uu, (e, t) => {
 					let {
 						draftId: n,
 						sourcePostId: o,
@@ -33711,12 +33697,12 @@
 								isApprovedUser: n
 							}
 						}();
-						return s.a.createElement(e, Ru({}, t, {
+						return s.a.createElement(e, Nu({}, t, {
 							isPredictionCreationAllowed: n,
 							isApprovedUser: o
 						}))
 					}
-				}((Hu = Wu, e => {
+				}((Wu = Ku, e => {
 					const t = Object(B.a)(),
 						[n, i] = Object(o.useState)(!1),
 						a = Object(r.e)(e => Object(w.h)(e)),
@@ -33740,20 +33726,20 @@
 						})()), () => {
 							e = !0
 						}
-					}, [a, t, c, l]), s.a.createElement(Hu, K({}, e, {
+					}, [a, t, c, l]), s.a.createElement(Wu, K({}, e, {
 						isTalkCreationAllowedForUser: n
 					}))
 				})))),
-				Vu = n("./src/reddit/components/PostingSidebar/index.tsx"),
-				Gu = n("./src/reddit/layout/page/Listing/index.tsx"),
-				qu = n("./src/lib/makePostCreationPageKey/index.ts"),
-				Qu = n("./src/reddit/helpers/trackers/screenview.ts"),
-				Yu = n("./src/telemetry/models/Timer.ts");
-			const Ju = Object(i.c)({
+				zu = n("./src/reddit/components/PostingSidebar/index.tsx"),
+				Vu = n("./src/reddit/layout/page/Listing/index.tsx"),
+				Gu = n("./src/lib/makePostCreationPageKey/index.ts"),
+				qu = n("./src/reddit/helpers/trackers/screenview.ts"),
+				Qu = n("./src/telemetry/models/Timer.ts");
+			const Yu = Object(i.c)({
 					destSubreddit: w.h,
 					user: J.k
 				}),
-				Zu = Object(r.b)(Ju, (e, t) => {
+				Ju = Object(r.b)(Yu, (e, t) => {
 					let {
 						pageLayer: n
 					} = t;
@@ -33761,17 +33747,17 @@
 						onResetForm: () => e(a.q(!1, n))
 					}
 				}),
-				Xu = Object(z.u)({
+				Zu = Object(z.u)({
 					draftId: z.v,
 					pageLayer: e => e
 				});
-			class $u extends o.Component {
+			class Xu extends o.Component {
 				componentDidMount() {
 					document.documentElement.scrollTop = document.body.scrollTop = 0;
 					const e = this.props.pageLayer;
 					if (e) {
-						const t = Object(qu.a)(e.urlParams);
-						Be.c.has(t) && this.props.sendEvent(Object(Qu.l)(t, Yu.TimerType.InApp, Be.c.end(t)))
+						const t = Object(Gu.a)(e.urlParams);
+						Be.c.has(t) && this.props.sendEvent(Object(qu.l)(t, Qu.TimerType.InApp, Be.c.end(t)))
 					}
 				}
 				UNSAFE_componentWillReceiveProps(e) {
@@ -33786,16 +33772,16 @@
 						if (!t) return s.a.createElement(C.b, null);
 						if (Object(Go.e)(t).toLowerCase() !== e.name.toLowerCase()) return s.a.createElement(C.a, null)
 					}
-					return s.a.createElement(Gu.a, {
+					return s.a.createElement(Vu.a, {
 						redditStyle: !0,
 						disableFullscreen: !0,
 						navBar: s.a.createElement("div", null),
-						content: s.a.createElement(s.a.Fragment, null, s.a.createElement(c.a, null), s.a.createElement(zu, null)),
-						sidebar: s.a.createElement(Vu.a, null)
+						content: s.a.createElement(s.a.Fragment, null, s.a.createElement(c.a, null), s.a.createElement(Hu, null)),
+						sidebar: s.a.createElement(zu.a, null)
 					})
 				}
 			}
-			t.default = Xu(Zu(Object(_e.c)($u)))
+			t.default = Zu(Ju(Object(_e.c)(Xu)))
 		},
 		"./src/reddit/reducers/economics/paymentSystems/index.ts": function(e, t, n) {
 			"use strict";
@@ -34759,4 +34745,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.7aa1eb663565cb29b487.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.7af6d68e82bda8a694f3.js.map

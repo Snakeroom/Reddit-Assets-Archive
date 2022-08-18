@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/RpanListingUnit.01c0b185b817b8934563.js
-// Retrieved at 8/17/2022, 6:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/RpanListingUnit.051c525746ef60d8ac4e.js
+// Retrieved at 8/18/2022, 11:30:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["RpanListingUnit"], {
 		"./node_modules/lodash/_arrayEvery.js": function(e, t) {
@@ -3702,7 +3702,7 @@
 				}),
 				a = e => t => {
 					const n = o.ib(t),
-						i = Object(r.t)(t, {
+						i = Object(r.r)(t, {
 							subredditId: null == n ? void 0 : n.id
 						}),
 						{
@@ -4536,4 +4536,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RpanListingUnit.01c0b185b817b8934563.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RpanListingUnit.051c525746ef60d8ac4e.js.map
