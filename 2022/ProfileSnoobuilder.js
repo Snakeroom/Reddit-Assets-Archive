@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfileSnoobuilder.9115feef483e9b698088.js
-// Retrieved at 8/17/2022, 6:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfileSnoobuilder.24713c311926d86764f6.js
+// Retrieved at 8/18/2022, 10:40:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfileSnoobuilder"], {
 		"./assets/snoobuilder/Snoobuilder.json": function(e, t, n) {
@@ -3532,9 +3532,7 @@
 				NoneCapitalizeLink: "_3GijmRx58E2GzbuzKVHDex",
 				noneCapitalizeLink: "_3GijmRx58E2GzbuzKVHDex",
 				Copyright: "_34dh2eyzMvJfjCBLeoWiDD",
-				copyright: "_34dh2eyzMvJfjCBLeoWiDD",
-				CountryLinkContainer: "_2G12SFsZiv6I_UJCbuf7qR",
-				countryLinkContainer: "_2G12SFsZiv6I_UJCbuf7qR"
+				copyright: "_34dh2eyzMvJfjCBLeoWiDD"
 			}
 		},
 		"./src/reddit/components/SidebarFooter/index.tsx": function(e, t, n) {
@@ -3636,7 +3634,7 @@
 						countryCode: e.countryCode
 					})
 				}
-				if (!e.isFrontpage) return null;
+				if (!e.isFrontpage && !e.isCountrySitePage) return null;
 				const s = t => {
 					const s = {
 						de: "Deutsch",
@@ -3655,7 +3653,30 @@
 					className: y.a.Widget,
 					redditStyle: e.redditStyle,
 					contentOnly: !0
+				}, !!m.c[e.countryCode] && r.a.createElement("div", {
+					className: y.a.LinkContainer
 				}, r.a.createElement("div", {
+					className: y.a.Column
+				}, r.a.createElement(E, {
+					href: "https://www.redditinc.com/de/policies/user-agreement"
+				}, v._("Impressum", null, {
+					hk: "4cKXSI"
+				})), r.a.createElement(E, {
+					href: "https://reddit.zendesk.com/hc/de/requests/new?ticket_form_id=360000152352",
+					className: y.a.NoneCapitalizeLink
+				}, v._("Report NetzDG Content", null, {
+					hk: "1nszCF"
+				}))), r.a.createElement("div", {
+					className: y.a.Column
+				}, r.a.createElement(E, {
+					href: "https://www.reddithelp.com"
+				}, v._("help", null, {
+					hk: "4lyYaD"
+				})), r.a.createElement(E, {
+					href: "https://reddit.zendesk.com/hc/de/articles/360045289772-Deutschland-Meldungen-nach-dem-Netzwerkdurchsetzungsgesetz-NetzDG-"
+				}, v._("Transparency report", null, {
+					hk: "3CgBdG"
+				})))), r.a.createElement("div", {
 					className: y.a.LinkContainer
 				}, r.a.createElement("div", {
 					className: y.a.Column
@@ -3678,7 +3699,7 @@
 				}, v._("Moderator Guidelines", null, {
 					hk: "2O9otm"
 				})))), (e.isCountrySitePage || e.isCountrySitesEnabled) && r.a.createElement("div", {
-					className: y.a.CountryLinkContainer
+					className: y.a.LinkContainer
 				}, r.a.createElement("div", {
 					className: y.a.Column
 				}, s("en"), s("fr"), s("it")), r.a.createElement("div", {
@@ -5565,4 +5586,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileSnoobuilder.9115feef483e9b698088.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileSnoobuilder.24713c311926d86764f6.js.map

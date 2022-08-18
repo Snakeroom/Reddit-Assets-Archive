@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CountryPage~Multireddit.c4d53d0444517b82a874.js
-// Retrieved at 8/17/2022, 6:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CountryPage~Multireddit.7ddbb016bedfb8350725.js
+// Retrieved at 8/18/2022, 10:40:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CountryPage~Multireddit"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -1279,14 +1279,14 @@
 				P = n("./src/lib/constants/index.ts"),
 				R = n("./src/reddit/selectors/platform.ts"),
 				B = n("./src/reddit/selectors/user.ts");
-			var A = n("./src/reddit/selectors/meta.ts"),
-				z = n("./src/reddit/components/ContentGate/index.m.less"),
-				M = n.n(z);
+			var z = n("./src/reddit/selectors/meta.ts"),
+				A = n("./src/reddit/components/ContentGate/index.m.less"),
+				M = n.n(A);
 			const {
 				fbt: H
 			} = n("./node_modules/fbt/lib/FbtPublic.js"), W = l.a.wrapped(L, "PrivateKey", M.a), U = l.a.div("ButtonsContainer", M.a), G = l.a.div("Container", M.a), q = l.a.div("ContainerExp", M.a), V = l.a.div("Description", M.a), J = l.a.div("PrivateSubredditDetails", M.a), Y = l.a.div("PrivateSubredditDescription", M.a), K = l.a.h3("PrivateSubredditName", M.a), Z = l.a.a("Link", M.a), X = l.a.wrapped(D.n, "LinkRouterButton", M.a), Q = l.a.wrapped(D.m, "LinkButton", M.a), $ = l.a.wrapped(D.q, "SecondaryLinkRouterButton", M.a), ee = l.a.wrapped(D.p, "SecondaryLinkButton", M.a), te = l.a.wrapped(X, "GoHomeLinkButton", M.a), ne = l.a.wrapped(b.a, "CreateCommunityButton", M.a), re = l.a.img("Image", M.a), se = l.a.img("ImagePlaceholder", M.a), ie = l.a.wrapped(X, "LeftLinkRouterButton", M.a), oe = l.a.wrapped(Q, "LeftLinkButton", M.a), ae = l.a.wrapped(ee, "SecondaryLeftLinkButton", M.a), ce = l.a.wrapped($, "SecondaryLeftLinkRouterButton", M.a), de = l.a.h3("Title", M.a), le = l.a.div("PageBody", M.a), ue = l.a.div("InterstitialMessageWrapper", M.a), me = Object(d.c)({
 				isLoggedIn: B.P,
-				origin: A.k,
+				origin: z.k,
 				user: B.k,
 				isPrivateSubredditContributorRequestPending: e => (e => {
 					if (!Object(B.Q)(e)) return !1;
@@ -1302,7 +1302,7 @@
 					const s = 30 * P.B;
 					return r > Date.now() - s
 				})(e),
-				isSeo: A.h
+				isSeo: z.h
 			}), pe = Object(T.u)(), he = Object(o.b)(me, (e, t) => {
 				let {
 					subredditName: n
@@ -2040,8 +2040,8 @@
 				}).apply(this, arguments)
 			}
 			const B = "ListingSort--SortPicker",
-				A = Object(x.a)(P.a.wrapped(k.a, "Dropdown", F.a)),
-				z = P.a.wrapped(I.a, "ListingSortIcon", F.a),
+				z = Object(x.a)(P.a.wrapped(k.a, "Dropdown", F.a)),
+				A = P.a.wrapped(I.a, "ListingSortIcon", F.a),
 				M = (P.a.wrapped(S.b, "DropdownTriangle", F.a), P.a.div("Title", F.a)),
 				H = P.a.wrapped(e => s.a.createElement(E.b, R({}, e, {
 					noHover: !0,
@@ -2094,9 +2094,9 @@
 					displayText: Object(v.a)(e.sort),
 					id: e.dropdownId || B,
 					showDropdownTriangle: !0
-				}, s.a.createElement(z, {
+				}, s.a.createElement(A, {
 					sort: e.sort
-				}))), s.a.createElement(w.a.Consumer, null, t => s.a.createElement(A, R({
+				}))), s.a.createElement(w.a.Consumer, null, t => s.a.createElement(z, R({
 					className: e.dropdownClassName,
 					isOpen: e.dropdownIsOpen,
 					tooltipId: e.dropdownId || B
@@ -2128,7 +2128,7 @@
 						},
 						isSelected: e.sort === t,
 						key: t
-					}, s.a.createElement(z, {
+					}, s.a.createElement(A, {
 						className: e.rowIconClassName,
 						sort: t
 					}))
@@ -2640,8 +2640,8 @@
 			const Pe = new Set([h.W.CONTROVERSIAL, h.W.TOP]),
 				Re = new Set([h.W.CONTROVERSIAL, h.W.RISING]),
 				Be = new Set([h.W.CONTROVERSIAL]),
-				Ae = "ListingSort--Overflow",
-				ze = Object(l.u)({
+				ze = "ListingSort--Overflow",
+				Ae = Object(l.u)({
 					isFrontpage: l.A,
 					isProfilePage: l.J,
 					pageLayer: e => e
@@ -2675,7 +2675,7 @@
 							className: Object(o.a)(Le.a.SortLink, e === t && Le.a.selected),
 							kind: Te.b.InternalLink,
 							priority: Te.c.Plain,
-							Icon: n => s.a.createElement(z, Fe({}, n, {
+							Icon: n => s.a.createElement(A, Fe({}, n, {
 								className: Object(o.a)(Le.a.SortIcon, n.className),
 								sort: e,
 								isFilled: e === t
@@ -2763,7 +2763,7 @@
 					}), u.length > 0 && s.a.createElement(J, Fe({}, this.props, {
 						className: Object(o.a)(Le.a.SortOverflow, e),
 						dropdownClassName: Le.a.Dropdown,
-						dropdownId: Ae,
+						dropdownId: ze,
 						rowClassName: Le.a.DropdownRow,
 						rowIconClassName: Le.a.DropdownRowIcon,
 						rowSelectedClassName: Le.a.DropdownRowSelected,
@@ -2771,13 +2771,13 @@
 						sortOptions: u
 					}), s.a.createElement("button", {
 						className: Le.a.SortOverflowButton,
-						id: Ae
+						id: ze
 					}, s.a.createElement(De.a, {
 						name: "overflow_horizontal"
 					}))))
 				}
 			}
-			var We = ze(Object(i.b)(Me)(Object(d.c)(He))),
+			var We = Ae(Object(i.b)(Me)(Object(d.c)(He))),
 				Ue = n("./src/reddit/components/GeneralCleanup/SortViewBar/index.m.less"),
 				Ge = n.n(Ue);
 			const qe = Object(l.u)({
@@ -3417,14 +3417,14 @@
 
 				function R(e) {
 					var t;
-					(i || A(e), c) || (t = e.timeStamp, N(Object(u.A)(h, t)))
+					(i || z(e), c) || (t = e.timeStamp, N(Object(u.A)(h, t)))
 				}
 
 				function B(e) {
 					N(Object(u.q)(h, e.timeStamp))
 				}
 
-				function A(e) {
+				function z(e) {
 					! function(e) {
 						N(Object(u.D)({
 							metadata: e,
@@ -3438,8 +3438,8 @@
 					})
 				}
 
-				function z(e) {
-					r || R(e), i || A(e), N(Object(u.C)(h))
+				function A(e) {
+					r || R(e), i || z(e), N(Object(u.C)(h))
 				}
 
 				function M() {
@@ -3455,9 +3455,9 @@
 						onBufferingChange: I,
 						onLoadStart: B,
 						onLoadedData: R,
-						onLoadedMetadata: A,
+						onLoadedMetadata: z,
 						onPause: L,
-						onPlaying: z,
+						onPlaying: A,
 						onTimeUpdate: P,
 						shouldLoad: b,
 						shouldPause: y,
@@ -4261,9 +4261,9 @@
 			})), n.d(t, "f", (function() {
 				return R
 			})), n.d(t, "h", (function() {
-				return A
-			})), n.d(t, "g", (function() {
 				return z
+			})), n.d(t, "g", (function() {
+				return A
 			})), n.d(t, "i", (function() {
 				return M
 			})), n.d(t, "e", (function() {
@@ -4426,12 +4426,12 @@
 						case p.p:
 							return R(e, t, n, r, s);
 						case p.u:
-							return z(e, t, n, r, s);
+							return A(e, t, n, r, s);
 						case p.z:
-							return A(e, t, n, r, s)
+							return z(e, t, n, r, s)
 					}
 				},
-				A = (e, t, n, r, s) => {
+				z = (e, t, n, r, s) => {
 					const i = e.c,
 						o = e.h,
 						d = i.length,
@@ -4473,7 +4473,7 @@
 						key: r
 					}, a.a.createElement("thead", null, a.a.createElement(c.t, null, u)), a.a.createElement("tbody", null, m))
 				},
-				z = (e, t, n, r, s) => {
+				A = (e, t, n, r, s) => {
 					if (!e.c || !e.c.length) return (e => a.a.createElement(c.j, {
 						key: e
 					}, a.a.createElement("br", null)))(r);
@@ -4627,9 +4627,7 @@
 				NoneCapitalizeLink: "_3GijmRx58E2GzbuzKVHDex",
 				noneCapitalizeLink: "_3GijmRx58E2GzbuzKVHDex",
 				Copyright: "_34dh2eyzMvJfjCBLeoWiDD",
-				copyright: "_34dh2eyzMvJfjCBLeoWiDD",
-				CountryLinkContainer: "_2G12SFsZiv6I_UJCbuf7qR",
-				countryLinkContainer: "_2G12SFsZiv6I_UJCbuf7qR"
+				copyright: "_34dh2eyzMvJfjCBLeoWiDD"
 			}
 		},
 		"./src/reddit/components/SidebarFooter/index.tsx": function(e, t, n) {
@@ -4731,7 +4729,7 @@
 						countryCode: e.countryCode
 					})
 				}
-				if (!e.isFrontpage) return null;
+				if (!e.isFrontpage && !e.isCountrySitePage) return null;
 				const r = t => {
 					const r = {
 						de: "Deutsch",
@@ -4750,7 +4748,30 @@
 					className: y.a.Widget,
 					redditStyle: e.redditStyle,
 					contentOnly: !0
+				}, !!m.c[e.countryCode] && s.a.createElement("div", {
+					className: y.a.LinkContainer
 				}, s.a.createElement("div", {
+					className: y.a.Column
+				}, s.a.createElement(w, {
+					href: "https://www.redditinc.com/de/policies/user-agreement"
+				}, v._("Impressum", null, {
+					hk: "4cKXSI"
+				})), s.a.createElement(w, {
+					href: "https://reddit.zendesk.com/hc/de/requests/new?ticket_form_id=360000152352",
+					className: y.a.NoneCapitalizeLink
+				}, v._("Report NetzDG Content", null, {
+					hk: "1nszCF"
+				}))), s.a.createElement("div", {
+					className: y.a.Column
+				}, s.a.createElement(w, {
+					href: "https://www.reddithelp.com"
+				}, v._("help", null, {
+					hk: "4lyYaD"
+				})), s.a.createElement(w, {
+					href: "https://reddit.zendesk.com/hc/de/articles/360045289772-Deutschland-Meldungen-nach-dem-Netzwerkdurchsetzungsgesetz-NetzDG-"
+				}, v._("Transparency report", null, {
+					hk: "3CgBdG"
+				})))), s.a.createElement("div", {
 					className: y.a.LinkContainer
 				}, s.a.createElement("div", {
 					className: y.a.Column
@@ -4773,7 +4794,7 @@
 				}, v._("Moderator Guidelines", null, {
 					hk: "2O9otm"
 				})))), (e.isCountrySitePage || e.isCountrySitesEnabled) && s.a.createElement("div", {
-					className: y.a.CountryLinkContainer
+					className: y.a.LinkContainer
 				}, s.a.createElement("div", {
 					className: y.a.Column
 				}, r("en"), r("fr"), r("it")), s.a.createElement("div", {
@@ -6059,7 +6080,7 @@
 		"./src/reddit/pages/Multireddit/index.tsx": function(e, t, n) {
 			"use strict";
 			n.r(t), n.d(t, "EmptyMessage", (function() {
-				return Ae
+				return ze
 			}));
 			var r = n("./node_modules/fbt/lib/FbtPublic.js"),
 				s = n("./node_modules/lodash/fromPairs.js"),
@@ -6134,8 +6155,8 @@
 				P = n("./src/reddit/components/RichTextJson/index.tsx"),
 				R = n("./src/reddit/constants/postLayout.ts"),
 				B = n("./src/reddit/contexts/PageLayer/index.tsx"),
-				A = n("./src/reddit/controls/InternalLink/index.tsx"),
-				z = n("./src/reddit/helpers/name/index.ts"),
+				z = n("./src/reddit/controls/InternalLink/index.tsx"),
+				A = n("./src/reddit/helpers/name/index.ts"),
 				M = n("./src/reddit/models/Flair/index.ts"),
 				H = n("./src/reddit/selectors/multireddit.ts"),
 				W = n("./src/reddit/selectors/user.ts"),
@@ -6391,10 +6412,10 @@
 					hk: "12Ej7M"
 				}), a.a.createElement("span", null, " • "), e.userIsOwner ? a.a.createElement(L, {
 					multireddit: e.multireddit
-				}) : a.a.createElement(a.a.Fragment, null, Oe._("Curated by {multiredditFeedAuthorLink}", [Oe._param("multiredditFeedAuthorLink", a.a.createElement(A.default, {
+				}) : a.a.createElement(a.a.Fragment, null, Oe._("Curated by {multiredditFeedAuthorLink}", [Oe._param("multiredditFeedAuthorLink", a.a.createElement(z.default, {
 					className: Ce.a.usernameLink,
-					to: `/${Object(z.d)(Object(j.i)(e.multireddit.url))}`
-				}, Object(z.d)(Object(j.i)(e.multireddit.url))))], {
+					to: `/${Object(A.d)(Object(j.i)(e.multireddit.url))}`
+				}, Object(A.d)(Object(j.i)(e.multireddit.url))))], {
 					hk: "3AKmgH"
 				}))), a.a.createElement("div", {
 					className: Ce.a.descriptionContainer
@@ -6419,7 +6440,7 @@
 				Pe = n("./src/reddit/selectors/experiments/nsfwBlockingExperiment.ts"),
 				Re = n("./src/reddit/pages/Multireddit/index.m.less"),
 				Be = n.n(Re);
-			const Ae = e => a.a.createElement("div", {
+			const ze = e => a.a.createElement("div", {
 					className: Be.a.emptyMessage
 				}, a.a.createElement(Ie.a, {
 					className: Be.a.planetIcon
@@ -6430,7 +6451,7 @@
 				}) : r.fbt._("There are 0 communities in this custom feed", null, {
 					hk: "tKC2v"
 				}))),
-				ze = Object(B.u)({
+				Ae = Object(B.u)({
 					currentMultireddit: B.d,
 					pageLayer: e => e
 				}),
@@ -6480,7 +6501,7 @@
 				constructor() {
 					super(...arguments), this.noPosts = () => {
 						var e;
-						return a.a.createElement(Ae, {
+						return a.a.createElement(ze, {
 							containsSubreddits: !!((null === (e = this.props.multireddit) || void 0 === e ? void 0 : e.subredditCount) && this.props.multireddit.subredditCount > 0)
 						})
 					}
@@ -6538,7 +6559,7 @@
 					})
 				}
 			}
-			const Je = ze(Object(c.b)(qe, (e, t) => ({
+			const Je = Ae(Object(c.b)(qe, (e, t) => ({
 				onLoadMorePosts: () => e(Object(p.moreOfMyMultiRequested)({
 					sort: t.match.params.sort,
 					multiredditName: t.match.params.multiredditName,
@@ -6771,4 +6792,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CountryPage~Multireddit.c4d53d0444517b82a874.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CountryPage~Multireddit.7ddbb016bedfb8350725.js.map
