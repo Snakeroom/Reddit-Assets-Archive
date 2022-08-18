@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Topic.f24f83a85ed812ff5132.js
-// Retrieved at 8/18/2022, 10:40:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Topic.2657d5f5c65d6949718d.js
+// Retrieved at 8/18/2022, 6:00:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Topic"], {
 		"./node_modules/intersection-observer/intersection-observer.js": function(e, t) {
@@ -968,7 +968,7 @@
 					return e
 				}).apply(this, arguments)
 			}
-			const f = c.e[1] + 24,
+			const f = c.f[1] + 24,
 				x = u.f + 8,
 				v = x + 152 + 16,
 				_ = v + f + 8,
@@ -1022,7 +1022,7 @@
 						this.windowHeight = window.innerHeight
 					}, this.handleResize = i()(() => {
 						this.updateMeasurements(), this.updateState()
-					}, c.K), this.setWrapperRef = e => this.containerEl = e || null, this.state = {
+					}, c.L), this.setWrapperRef = e => this.containerEl = e || null, this.state = {
 						isAdSticky: !0,
 						isBottomSticky: !1,
 						isFooterSticky: !0
@@ -2190,8 +2190,8 @@
 				J = s.n(z);
 			const {
 				fbt: U
-			} = s("./node_modules/fbt/lib/FbtPublic.js"), q = 5;
-			class Y extends r.a.Component {
+			} = s("./node_modules/fbt/lib/FbtPublic.js"), Y = 5;
+			class q extends r.a.Component {
 				constructor() {
 					super(...arguments), this.onClick = () => {
 						const {
@@ -2207,7 +2207,7 @@
 						relatedTopics: t
 					} = this.props.relationship;
 					return r.a.createElement(y, {
-						limit: q,
+						limit: Y,
 						title: e,
 						topics: t
 					}, this.renderSeeMoreButton())
@@ -2217,7 +2217,7 @@
 						namePlural: e,
 						relatedTopics: t
 					} = this.props.relationship;
-					return t.length < q ? null : r.a.createElement(L.a, {
+					return t.length < Y ? null : r.a.createElement(L.a, {
 						onClick: this.onClick,
 						to: "#"
 					}, r.a.createElement(I.r, {
@@ -2231,7 +2231,7 @@
 					})))
 				}
 			}
-			var K = Y,
+			var K = q,
 				Q = s("./src/lib/prettyPrintNumber/index.ts"),
 				Z = s("./src/reddit/components/Flair/index.tsx"),
 				X = s("./src/reddit/components/SubredditIcon/index.tsx"),
@@ -2407,7 +2407,7 @@
 				ke = s.n(Oe);
 			const {
 				fbt: we
-			} = s("./node_modules/fbt/lib/FbtPublic.js"), Ne = Object(k.u)(), je = (e, t) => t.match.params.sort || a.X, Le = e => {
+			} = s("./node_modules/fbt/lib/FbtPublic.js"), Ne = Object(k.u)(), je = (e, t) => t.match.params.sort || a.Y, Le = e => {
 				const t = [];
 				return e ? (e.hasPosts && t.push(V.Posts), e.hasSubreddits && t.push(V.Communities), e.childRelationships.length && t.push(V.RelatedTopics), t) : t
 			}, Ie = Object(d.b)(() => Object(i.a)((e, t) => Object(Ce.d)(e, t.match.params.topicSlug), (e, t) => Object(Ce.e)(e, {
@@ -2732,4 +2732,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Topic.f24f83a85ed812ff5132.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Topic.2657d5f5c65d6949718d.js.map

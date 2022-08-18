@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditCreation.89cd13a61793e2bb68a3.js
-// Retrieved at 8/17/2022, 6:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditCreation.fa1d7870f19474fd0a59.js
+// Retrieved at 8/18/2022, 6:00:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditCreation"], {
 		"./node_modules/lodash/_baseRange.js": function(e, t) {
@@ -251,7 +251,7 @@
 			n.d(t, "n", (function() {
 				return Y
 			})), n.d(t, "k", (function() {
-				return X
+				return q
 			})), n.d(t, "o", (function() {
 				return Z
 			})), n.d(t, "f", (function() {
@@ -363,7 +363,7 @@
 				Q = C.a.div("ControlContainer", A.a),
 				K = C.a.div("TextContainer", A.a),
 				z = C.a.div("ActionContainer", A.a),
-				X = e => {
+				q = e => {
 					let {
 						className: t,
 						direction: n,
@@ -387,12 +387,12 @@
 						})
 					}))
 				},
-				q = C.a.a("Link", A.a),
-				Z = C.a.wrapped(q, "SubtextLink", A.a),
+				X = C.a.a("Link", A.a),
+				Z = C.a.wrapped(X, "SubtextLink", A.a),
 				U = C.a.wrapped(I.a, "LinkIcon", A.a),
 				$ = C.a.button("LinkButton", A.a),
 				ee = C.a.wrapped(S.a, "ArrowRight", A.a),
-				te = e => r.a.createElement(X, {
+				te = e => r.a.createElement(q, {
 					direction: e.direction,
 					disabled: e.disabled,
 					indent: e.indent,
@@ -416,7 +416,7 @@
 				},
 				ie = e => {
 					const t = Object(i.a)();
-					return r.a.createElement(X, {
+					return r.a.createElement(q, {
 						className: e.className,
 						disabled: e.disabled,
 						indent: e.indent,
@@ -443,7 +443,7 @@
 				ue = Object(o.c)({
 					isNightModeOn: L.db
 				}),
-				pe = Object(s.b)(ue)(e => r.a.createElement(X, {
+				pe = Object(s.b)(ue)(e => r.a.createElement(q, {
 					last: e.last,
 					indent: e.indent,
 					disabled: e.disabled,
@@ -485,28 +485,28 @@
 						color: t === e.value.toString() ? e.ticks[t].color : "#878A8C"
 					}
 				}, e.ticks[t].text))))))),
-				he = e => r.a.createElement(X, {
+				he = e => r.a.createElement(q, {
 					last: e.last,
 					indent: e.indent,
 					disabled: e.disabled
 				}, r.a.createElement(K, null, r.a.createElement(D.a, null, r.a.createElement(V, null, e.label)), r.a.createElement(Y, null, e.subtext)), r.a.createElement(z, null, r.a.createElement(Q, null, r.a.createElement(R.o, {
 					onClick: e.onClick
 				}, e.actionText)))),
-				xe = e => r.a.createElement(X, {
+				xe = e => r.a.createElement(q, {
 					className: e.className,
 					last: e.last,
 					indent: e.indent,
 					disabled: e.disabled
-				}, r.a.createElement(K, null, r.a.createElement(q, {
+				}, r.a.createElement(K, null, r.a.createElement(X, {
 					href: e.link,
 					onClick: e.onClick,
 					target: e.openInNewTab ? "_blank" : void 0
-				}, e.label, r.a.createElement(U, null)), r.a.createElement(Y, null, e.subtext)), r.a.createElement(z, null, r.a.createElement(q, {
+				}, e.label, r.a.createElement(U, null)), r.a.createElement(Y, null, e.subtext)), r.a.createElement(z, null, r.a.createElement(X, {
 					href: e.link,
 					onClick: e.onClick,
 					target: e.openInNewTab ? "_blank" : void 0
 				}, r.a.createElement(ee, null)))),
-				be = e => r.a.createElement(X, {
+				be = e => r.a.createElement(q, {
 					className: e.className,
 					disabled: e.disabled,
 					indent: e.indent,
@@ -537,7 +537,7 @@
 							tooltipId: t.id
 						}))
 					}
-				}))(e => r.a.createElement(X, {
+				}))(e => r.a.createElement(q, {
 					last: e.last,
 					indent: e.indent,
 					disabled: e.disabled
@@ -577,7 +577,7 @@
 						{
 							items: c
 						} = o;
-					return r.a.createElement(X, {
+					return r.a.createElement(q, {
 						disabled: t
 					}, r.a.createElement(K, null, r.a.createElement("label", {
 						htmlFor: o.id
@@ -585,7 +585,7 @@
 						className: o.labelClassname
 					}, o.label)), r.a.createElement(Y, null, o.subtext)), r.a.createElement("div", {
 						className: A.a.Wrapper__LineBreak
-					}), r.a.createElement(X, {
+					}), r.a.createElement(q, {
 						last: n,
 						indent: !0,
 						disabled: t
@@ -606,7 +606,7 @@
 						}, n)
 					}))))
 				},
-				fe = e => r.a.createElement(X, {
+				fe = e => r.a.createElement(q, {
 					className: e.className,
 					direction: e.direction,
 					disabled: e.disabled,
@@ -964,8 +964,8 @@
 				Q = n.n(J),
 				K = n("./src/lib/lessComponent.tsx");
 			const z = 21,
-				X = "create-title-info",
-				q = K.a.wrapped(D.a, "Info", Q.a),
+				q = "create-title-info",
+				X = K.a.wrapped(D.a, "Info", Q.a),
 				Z = K.a.wrapped(k.a, "RadioOption", Q.a),
 				U = K.a.wrapped(h.c, "Tooltip", Q.a),
 				$ = K.a.wrapped(F.a, "Public", Q.a),
@@ -992,7 +992,7 @@
 					clearErrors: () => e(Object(m.f)()),
 					onCloseModal: () => e(Object(d.g)(g.a.SUBREDDIT_CREATION_MODAL_ID)),
 					onShowTooltip: () => e(Object(u.f)({
-						tooltipId: X
+						tooltipId: q
 					})),
 					onHideTooltip: () => e(Object(u.i)()),
 					validateSubredditName: t => e(Object(m.i)(t))
@@ -1175,14 +1175,14 @@
 						}, a.fbt._("Community names including capitalization cannot be changed.", null, {
 							hk: "VjrZg"
 						}), s.a.createElement("span", {
-							id: X,
+							id: q,
 							onMouseEnter: o,
 							onMouseLeave: i,
 							className: Q.a.info
-						}, s.a.createElement(q, null), s.a.createElement(U, {
+						}, s.a.createElement(X, null), s.a.createElement(U, {
 							className: Q.a.StyledTooltip,
 							caretOnTop: !0,
-							tooltipId: X,
+							tooltipId: q,
 							text: a.fbt._('Names cannot have spaces (e.g., "r/bookclub" not "r/book club"), must be between 3-21 characters, and underscores ("_") are the only special characters allowed. Avoid using solely trademarked names (e.g., "r/FansOfAcme" not "r/Acme").', null, {
 								hk: "3RsycS"
 							})
@@ -1829,9 +1829,9 @@
 					experimentEligibilitySelector: r.a,
 					experimentName: a.Md
 				});
-				return !(!t || Object(a.og)(t))
+				return !(!t || Object(a.qg)(t))
 			}
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditCreation.89cd13a61793e2bb68a3.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditCreation.fa1d7870f19474fd0a59.js.map

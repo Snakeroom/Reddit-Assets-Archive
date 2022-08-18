@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-ViewReportsDropdown-index.87d1c41a08bd08542901.js
-// Retrieved at 8/10/2022, 11:20:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-ViewReportsDropdown-index.ce92804906d9fc79a261.js
+// Retrieved at 8/18/2022, 6:00:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-ViewReportsDropdown-index"], {
 		"./src/reddit/actions/comment/moderation.ts": function(e, t, o) {
@@ -174,7 +174,7 @@
 						commentId: e
 					});
 					if (!l) return;
-					const p = o === n.ec.Snoozed,
+					const p = o === n.fc.Snoozed,
 						g = {
 							itemId: e,
 							reportText: t,
@@ -206,8 +206,8 @@
 					s(Object(R.j)({
 						[e]: {
 							distinguishType: t,
-							isAdmin: t === n.G.ADMIN,
-							isMod: t === n.G.MODERATOR,
+							isAdmin: t === n.H.ADMIN,
+							isMod: t === n.H.MODERATOR,
 							isStickied: !!o
 						}
 					})), o && b && b !== e && s(Object(R.j)({
@@ -222,7 +222,7 @@
 						id: e,
 						postId: u,
 						commentsPageKey: Object(d.a)(u, null, {
-							sort: n.t.CONFIDENCE,
+							sort: n.u.CONFIDENCE,
 							...l.platform.currentPage.queryParams
 						})
 					})) : (s(Object(R.j)({
@@ -308,7 +308,7 @@
 			class y extends n.a.Component {
 				constructor() {
 					super(...arguments), this.tooltipTarget = null, this.setTooltipTargetRef = e => this.tooltipTarget = e, this.onSnoozeButtonClick = () => {
-						const e = this.props.isSnoozed ? c.ec.None : c.ec.Snoozed;
+						const e = this.props.isSnoozed ? c.fc.None : c.fc.Snoozed;
 						this.props.toggleSnooze(e);
 						const t = Object(h.n)(Object(g.a)(this.props.reportedThingId), this.props.isSnoozed, this.props.reportedThingId, this.props.reason);
 						this.props.sendEvent(t)
@@ -548,4 +548,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ViewReportsDropdown-index.87d1c41a08bd08542901.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ViewReportsDropdown-index.ce92804906d9fc79a261.js.map

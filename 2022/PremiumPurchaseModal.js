@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PremiumPurchaseModal.ff4aa04147f258c910ba.js
-// Retrieved at 8/8/2022, 4:10:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PremiumPurchaseModal.74cfb91d2019555e2550.js
+// Retrieved at 8/18/2022, 6:00:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PremiumPurchaseModal"], {
 		"./src/reddit/actions/goldPurchaseModals/premiumPurchaseModal.ts": function(e, t, r) {
@@ -44,7 +44,7 @@
 						apiContext: c
 					} = o;
 					const d = Object(h.a)(a()),
-						m = (null == d ? void 0 : d.pennies) || n.yb,
+						m = (null == d ? void 0 : d.pennies) || n.zb,
 						u = Object(b.c)(b.a.GoldPayment);
 					r(Object(i.stripeTokenPending)());
 					const P = await r(Object(i.validateAndCreateStripeToken)(e, t));
@@ -237,12 +237,12 @@
 				},
 				B = r("./node_modules/@stripe/react-stripe-js/dist/react-stripe.umd.js"),
 				D = r("./src/lib/currency/currencies.ts"),
-				G = r("./src/lib/localizeCurrency/index.ts"),
-				Y = r("./src/reddit/components/Econ/ProductOfferPurchaseButton/Paypal.tsx"),
+				Y = r("./src/lib/localizeCurrency/index.ts"),
+				G = r("./src/reddit/components/Econ/ProductOfferPurchaseButton/Paypal.tsx"),
 				H = r("./src/reddit/components/Econ/ProductOfferPurchaseButton/Stripe.tsx"),
 				K = r("./src/reddit/components/PaymentMethodSelector/index.tsx"),
-				W = r("./src/reddit/components/StripePaymentForm/index.tsx"),
-				z = r("./src/reddit/hooks/useLocale.ts"),
+				z = r("./src/reddit/components/StripePaymentForm/index.tsx"),
+				W = r("./src/reddit/hooks/useLocale.ts"),
 				Q = r("./src/reddit/hooks/useStripePromise.ts"),
 				X = r("./src/reddit/models/Payments/index.ts");
 			var V = e => s.a.createElement("div", {
@@ -273,10 +273,10 @@
 			})));
 			var Z = e => {
 				const t = Object(Q.a)(),
-					r = Object(z.b)(),
+					r = Object(W.b)(),
 					a = Object(o.d)(),
 					c = Object(o.e)(C.k),
-					n = Object(G.b)(e.total, {
+					n = Object(Y.b)(e.total, {
 						locale: r,
 						type: D.b.Real
 					}),
@@ -297,8 +297,8 @@
 						hk: "1l20Gw"
 					}),
 					b = null != e.selectedPayment,
-					h = e.selectedPayment === d.Hb,
-					P = e.selectedPayment === d.Gb,
+					h = e.selectedPayment === d.Ib,
+					P = e.selectedPayment === d.Hb,
 					y = e.premiumProductOffer && {
 						productsCount: 1,
 						className: F.a.premiumPurchaseButton,
@@ -329,7 +329,7 @@
 					let {
 						stripe: r
 					} = t;
-					return s.a.createElement(W.a, {
+					return s.a.createElement(z.a, {
 						nightmode: e.nightmode,
 						className: F.a.stripeForm,
 						stripe: r
@@ -362,7 +362,7 @@
 					hk: "2gscIO"
 				}))), b && y && s.a.createElement("div", {
 					className: F.a.premiumPurchaseSelectPaymentFooter
-				}, h && s.a.createElement(Y.a, y), P && s.a.createElement(H.a, y))))
+				}, h && s.a.createElement(G.a, y), P && s.a.createElement(H.a, y))))
 			};
 
 			function q() {
@@ -422,8 +422,8 @@
 						premiumProductOffer: _,
 						premiumPrice: k,
 						onLoadSavedCards: v
-					} = e, x = d.yb, N = !1;
-					_ && k ? (x = k, N = C === M.b.Year) : o && (x = o ? o.pennies : d.yb, N = !!o && o.frequency === m.c.Yearly);
+					} = e, x = d.zb, N = !1;
+					_ && k ? (x = k, N = C === M.b.Year) : o && (x = o ? o.pennies : d.zb, N = !!o && o.frequency === m.c.Yearly);
 					const w = Object(a.useCallback)(e => {
 						if (27 === e.keyCode) return p()
 					}, [p]);
@@ -478,4 +478,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PremiumPurchaseModal.ff4aa04147f258c910ba.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PremiumPurchaseModal.74cfb91d2019555e2550.js.map

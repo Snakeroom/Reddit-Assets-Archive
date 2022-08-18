@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/FrontpageSidebar.67142a904617b4fe61f3.js
-// Retrieved at 8/17/2022, 6:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/FrontpageSidebar.dff001fc233103404a3e.js
+// Retrieved at 8/18/2022, 6:00:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["FrontpageSidebar"], {
 		"./node_modules/lodash/_arrayShuffle.js": function(e, t, n) {
@@ -291,14 +291,14 @@
 				Y = n("./src/reddit/constants/headers.ts");
 			const $ = e => Object(X.a)(Object(V.a)(e, [Y.a]), {
 				endpoint: `${e.apiUrl}/api/multi/user/CommunityAdoptionBot/m/adoption_week/`,
-				method: Q.jb.GET,
+				method: Q.kb.GET,
 				type: "json"
 			});
 			var ee = n("./src/reddit/components/SubredditAdoptionWidget/index.m.less"),
 				te = n.n(ee);
 			const {
 				fbt: ne
-			} = n("./node_modules/fbt/lib/FbtPublic.js"), se = 3, re = 30 * Q.kb, ae = "SubredditAdoption";
+			} = n("./node_modules/fbt/lib/FbtPublic.js"), se = 3, re = 30 * Q.lb, ae = "SubredditAdoption";
 			class ie extends d.a.Component {
 				constructor() {
 					super(...arguments), this.state = {
@@ -685,10 +685,10 @@
 			}
 			var Ue = n("./src/reddit/selectors/experiments/utils.ts");
 			const Qe = Object(u.a)(e => Object(Ge.c)(e, {
-					experimentName: De.qe,
+					experimentName: De.se,
 					experimentEligibilitySelector: Ge.a
 				}), Ue.a),
-				qe = Object(u.a)(Qe, e => e === De.se.Enabled);
+				qe = Object(u.a)(Qe, e => e === De.ue.Enabled);
 			var Je = n("./src/reddit/selectors/experiments/loggedOutOneFeed.ts"),
 				He = n("./src/reddit/selectors/experiments/publicAccessNetwork.ts"),
 				Ze = n("./src/reddit/selectors/user.ts");
@@ -796,11 +796,11 @@
 						shouldDisplayDelta: !this.props.isMod && c.id !== Re.l,
 						to: c.path
 					}), d.a.createElement(D.a, {
-						placement: Q.c.ABOVE_THE_FOLD,
+						placement: Q.d.ABOVE_THE_FOLD,
 						listingName: a,
 						removeSidebarSpacer: !1,
 						position: Ve.a.FIRST,
-						sizes: Q.h,
+						sizes: Q.i,
 						placementIndex: e++
 					}), st(this.props) && d.a.createElement(E, null), i && d.a.createElement(h.a, null, d.a.createElement(Ae, null)), s && d.a.createElement(h.a, null, d.a.createElement(p.a, {
 						listingName: a
@@ -808,10 +808,10 @@
 						links: n
 					})), d.a.createElement(W.a, {
 						adComponent: d.a.createElement(D.a, {
-							placement: Q.c.BELOW_THE_FOLD,
+							placement: Q.d.BELOW_THE_FOLD,
 							listingName: a,
 							position: Ve.a.BOTTOM,
-							sizes: Q.o,
+							sizes: Q.p,
 							placementIndex: e++
 						})
 					}, s && d.a.createElement(oe, null)))
@@ -2229,4 +2229,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/FrontpageSidebar.67142a904617b4fe61f3.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/FrontpageSidebar.dff001fc233103404a3e.js.map

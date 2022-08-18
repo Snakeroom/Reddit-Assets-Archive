@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfileComments~ProfilePrivate.1c1f9b4506097ca77609.js
-// Retrieved at 8/17/2022, 6:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfileComments~ProfilePrivate.7e1e286b9e2c342f3c41.js
+// Retrieved at 8/18/2022, 6:00:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfileComments~ProfilePrivate"], {
 		"./src/reddit/components/AdLinkWrapperContent/index.m.less": function(e, t, s) {
@@ -507,7 +507,7 @@
 				h = s.n(u);
 			const {
 				fbt: b
-			} = s("./node_modules/fbt/lib/FbtPublic.js"), x = .75, C = 10 * d.K;
+			} = s("./node_modules/fbt/lib/FbtPublic.js"), x = .75, C = 10 * d.L;
 			class g extends n.a.Component {
 				constructor(e) {
 					super(e), this.commentElement = null, this.handleResize = m()(() => {
@@ -642,7 +642,7 @@
 						let {
 							comment: s
 						} = t;
-						return Object(Z.D)(e, {
+						return Object(Z.E)(e, {
 							commentId: s.postId
 						})
 					},
@@ -967,7 +967,7 @@
 					flair: o,
 					renderedInOverlay: !1
 				}), n.a.createElement("div", null, !t.isDeleted && n.a.createElement(Ve, null, r ? l() : n.a.createElement(O, {
-					height: d.Ub,
+					height: d.Vb,
 					isExpanded: r
 				}, l)), !t.isDeleted && i && n.a.createElement(Me, {
 					comment: t,
@@ -1073,7 +1073,7 @@
 				N = f.a.div("ThumbnailContainer", v.a),
 				R = Object(d.c)({
 					isCurrentUserProfilePost: g.l,
-					isTopicPage: e => !(!e.platform.currentPage || !e.platform.currentPage.meta || e.platform.currentPage.meta.name !== x.Nb.TOPIC),
+					isTopicPage: e => !(!e.platform.currentPage || !e.platform.currentPage.meta || e.platform.currentPage.meta.name !== x.Ob.TOPIC),
 					shouldOpenPostInNewTab: O.jb
 				}),
 				A = Object(i.b)(R);
@@ -2028,7 +2028,7 @@
 				componentDidMount() {
 					if (this.checkAndSendScreenview(), this.timerId) {
 						const e = O.c.end(this.timerId);
-						setTimeout(() => Object(O.b)(a.m.Redesign, {
+						setTimeout(() => Object(O.b)(a.n.Redesign, {
 							type: "mount",
 							component: "overviewChronoList",
 							duration: e
@@ -2042,7 +2042,7 @@
 					if (this.checkAndSendScreenview(), this.timerId && O.c.has(this.timerId)) {
 						const e = O.c.end(this.timerId);
 						if (e < 10) return;
-						setTimeout(() => Object(O.b)(a.m.Redesign, {
+						setTimeout(() => Object(O.b)(a.n.Redesign, {
 							duration: e,
 							type: "mount",
 							component: "overviewChronoList"
@@ -2566,11 +2566,11 @@
 				n = s("./src/reddit/constants/experiments.ts"),
 				r = s("./src/reddit/helpers/chooseVariant/index.ts");
 			const i = Object(o.a)(e => Object(r.c)(e, {
-					experimentName: n.eg,
+					experimentName: n.gg,
 					experimentEligibilitySelector: r.a
 				}), e => e),
-				a = Object(o.a)(i, e => e === n.Vf)
+				a = Object(o.a)(i, e => e === n.Xf)
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileComments~ProfilePrivate.1c1f9b4506097ca77609.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileComments~ProfilePrivate.7e1e286b9e2c342f3c41.js.map

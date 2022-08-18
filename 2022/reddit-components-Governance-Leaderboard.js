@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Governance-Leaderboard.99d1c8fdbe5cb88e4f79.js
-// Retrieved at 8/18/2022, 11:30:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Governance-Leaderboard.e05b7415c5bc909e1289.js
+// Retrieved at 8/18/2022, 6:00:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Governance-Leaderboard"], {
 		"./src/lib/constants/specialMembership.ts": function(e, t, r) {
@@ -481,7 +481,7 @@
 					allBadges: e => e.badges.models,
 					useHovercard: b.d.spSpecialMemberships
 				}),
-				j = e => ({
+				D = e => ({
 					onShowTooltip: t => e(Object(u.f)({
 						tooltipId: t
 					})),
@@ -489,7 +489,7 @@
 					onOpenUploadDialog: () => e(Object(a.j)())
 				});
 
-			function D(e) {
+			function j(e) {
 				const {
 					badgeIds: t,
 					allBadges: r,
@@ -499,8 +499,8 @@
 					badges: o
 				}, n))
 			}
-			const x = Object(o.b)(T, j)(D),
-				R = Object(o.b)(P, j)(D)
+			const x = Object(o.b)(T, D)(j),
+				R = Object(o.b)(P, D)(j)
 		},
 		"./src/reddit/components/Governance/Leaderboard/EntryDivider/index.m.less": function(e, t, r) {
 			e.exports = {
@@ -574,7 +574,7 @@
 				function(e, t) {
 					return Object(m.a)(e, {
 						endpoint: `${u.a.metaUrl}/ratings/${t.subredditId}/points-monthly`,
-						method: l.jb.GET
+						method: l.kb.GET
 					}).then(e => {
 						if (e.ok) {
 							let t = 0;
@@ -642,8 +642,8 @@
 				}))
 			}
 			var P = r("./node_modules/react-router-dom/esm/react-router-dom.js"),
-				j = r("./node_modules/uuid/v4.js"),
-				D = r.n(j),
+				D = r("./node_modules/uuid/v4.js"),
+				j = r.n(D),
 				x = r("./src/reddit/components/Badges/UserDisplay/index.tsx"),
 				R = r("./src/reddit/components/TrackingHelper/index.tsx"),
 				B = r("./src/reddit/featureFlags/index.ts"),
@@ -678,7 +678,7 @@
 			});
 			var F = Object(R.c)(Object(d.b)(G)((function(e) {
 					var t;
-					const r = D()();
+					const r = j()();
 					return i.a.createElement(P.a, {
 						className: Object(I.a)(U.a.container, e.className, {
 							[U.a.currentUser]: e.entry.userId === e.accountId
@@ -1628,9 +1628,9 @@
 			})), r.d(t, "e", (function() {
 				return P
 			})), r.d(t, "d", (function() {
-				return j
-			})), r.d(t, "j", (function() {
 				return D
+			})), r.d(t, "j", (function() {
+				return j
 			})), r.d(t, "p", (function() {
 				return x
 			})), r.d(t, "k", (function() {
@@ -1769,7 +1769,7 @@
 				return r ? [].concat(r.locked, r.unlocked).filter(e => e.position).sort((e, t) => e.position - t.position) : _
 			}
 
-			function j(e, t) {
+			function D(e, t) {
 				const r = e.economics.subredditPremium[t];
 				if (r && r.status === l.a.Fetched) {
 					const e = r.data.collections[d.a.Cosmetic];
@@ -1778,7 +1778,7 @@
 				return _
 			}
 
-			function D(e, t) {
+			function j(e, t) {
 				return T(e, t, d.a.Cosmetic, d.c.Gallery).some(e => e.locked.some(e => Object(i.f)(e) || !!e.price))
 			}
 			const x = e => {
@@ -1912,4 +1912,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Governance-Leaderboard.99d1c8fdbe5cb88e4f79.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Governance-Leaderboard.e05b7415c5bc909e1289.js.map

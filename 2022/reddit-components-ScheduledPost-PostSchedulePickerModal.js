@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-ScheduledPost-PostSchedulePickerModal.db1b7ebeb1897e2610af.js
-// Retrieved at 8/4/2022, 7:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-ScheduledPost-PostSchedulePickerModal.587c4d9e82905d35a52f.js
+// Retrieved at 8/18/2022, 6:00:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-ScheduledPost-PostSchedulePickerModal"], {
 		"./node_modules/lodash/xorWith.js": function(e, t, n) {
@@ -867,7 +867,7 @@
 						hk: "sKXJR"
 					});
 					const a = Object(r.f)(Object(i.a)(t, n));
-					if (a < (Object(r.b)() === e.state.timezoneName ? new Date : new Date(Date.now() - o.B))) return s.fbt._("Submit time needs to be in the future", null, {
+					if (a < (Object(r.b)() === e.state.timezoneName ? new Date : new Date(Date.now() - o.C))) return s.fbt._("Submit time needs to be in the future", null, {
 						hk: "3YJESf"
 					});
 					if (e.maxDate) {
@@ -1817,4 +1817,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ScheduledPost-PostSchedulePickerModal.db1b7ebeb1897e2610af.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ScheduledPost-PostSchedulePickerModal.587c4d9e82905d35a52f.js.map

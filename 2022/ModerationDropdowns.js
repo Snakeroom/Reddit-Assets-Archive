@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModerationDropdowns.0faf7408e45e1f69b691.js
-// Retrieved at 8/9/2022, 12:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModerationDropdowns.aeb7b4e602a0202e5c9f.js
+// Retrieved at 8/18/2022, 6:00:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModerationDropdowns"], {
 		"./src/reddit/actions/economics/predictions/modTools.ts": function(e, t, o) {
@@ -581,9 +581,9 @@
 						onSpoilerPost: A,
 						post: W
 					} = e;
-					var B, V, H, G, U;
-					const K = (null === (B = W.pollData) || void 0 === B ? void 0 : B.isPrediction) && !(null === (V = W.pollData) || void 0 === V ? void 0 : V.resolvedOptionId),
-						Q = (null === (H = W.pollData) || void 0 === H ? void 0 : H.isPrediction) && null !== W.pollData.resolvedOptionId,
+					var B, H, V, G, U;
+					const K = (null === (B = W.pollData) || void 0 === B ? void 0 : B.isPrediction) && !(null === (H = W.pollData) || void 0 === H ? void 0 : H.resolvedOptionId),
+						Q = (null === (V = W.pollData) || void 0 === V ? void 0 : V.isPrediction) && null !== W.pollData.resolvedOptionId,
 						Z = W.flair.filter(e => e.type !== D.f.Nsfw && e.type !== D.f.Spoiler).length > 0,
 						q = Object(j.b)(W),
 						z = !(!W.approvedBy || !q),
@@ -705,7 +705,7 @@
 					},
 					isModToMemberShareEnabled: _.d.modToMemberShare
 				}),
-				V = Object(r.b)(B, (e, t) => {
+				H = Object(r.b)(B, (e, t) => {
 					let {
 						post: o
 					} = t;
@@ -736,8 +736,8 @@
 						onStickyPost: () => e(Object(l.ib)(o.id))
 					}
 				}),
-				H = Object(m.a)(h.a);
-			t.default = W(V(Object(b.c)(e => {
+				V = Object(m.a)(h.a);
+			t.default = W(H(Object(b.c)(e => {
 				let {
 					canEditFlair: t,
 					hasModFullPerms: o,
@@ -768,10 +768,10 @@
 					sendEvent: y,
 					tooltipId: L
 				} = e;
-				const T = F.distinguishType === i.G.MODERATOR,
-					R = T ? i.G.NONE : i.G.MODERATOR,
+				const T = F.distinguishType === i.H.MODERATOR,
+					R = T ? i.H.NONE : i.H.MODERATOR,
 					W = Object(u.b)(F.id, c);
-				return n.a.createElement(H, {
+				return n.a.createElement(V, {
 					className: A.a.dropdown,
 					isOpen: r,
 					tooltipId: L
@@ -1171,4 +1171,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationDropdowns.0faf7408e45e1f69b691.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationDropdowns.aeb7b4e602a0202e5c9f.js.map

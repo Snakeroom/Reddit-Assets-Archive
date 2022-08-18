@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModToMemberShareModal.d9fa60b599be64a01b36.js
-// Retrieved at 8/9/2022, 12:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModToMemberShareModal.bcc5717ba0e00743e669.js
+// Retrieved at 8/18/2022, 6:00:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModToMemberShareModal"], {
 		"./src/reddit/components/CharacterCountdown/index.m.less": function(e, t, s) {
@@ -184,7 +184,7 @@
 				k = s("./src/reddit/helpers/addRedesignIdentifier/index.ts"),
 				S = (e, t, s) => Object(g.a)(Object(C.a)(e, [f.a]), {
 					endpoint: Object(k.a)(`${e.apiUrl}/api/mod_link_share`),
-					method: x.jb.POST,
+					method: x.kb.POST,
 					data: {
 						link_id: t,
 						message: s
@@ -194,12 +194,12 @@
 				N = s("./src/reddit/selectors/telemetry.ts"),
 				P = s("./src/reddit/components/ModToMemberShareModal/index.m.less"),
 				O = s.n(P);
-			const j = 400,
-				v = Object(a.c)({
+			const v = 400,
+				F = Object(a.c)({
 					post: E.u,
 					subreddit: E.v
 				}),
-				F = Object(i.b)(v, (e, t) => ({
+				T = Object(i.b)(F, (e, t) => ({
 					onClose: () => e(Object(d.f)()),
 					showSuccessToast: () => e(Object(m.f)({
 						text: n.fbt._("Messages sent!", null, {
@@ -207,7 +207,7 @@
 						})
 					}))
 				}));
-			class T extends o.a.Component {
+			class j extends o.a.Component {
 				constructor(e) {
 					super(e), this.event = (e, t) => {
 						this.props.sendEvent(s => ({
@@ -296,14 +296,14 @@
 						subredditSameLine: !0
 					}), o.a.createElement(p.t, {
 						className: O.a.textarea,
-						maxLength: j,
+						maxLength: v,
 						onChange: this.onMessageChange,
 						onFocus: this.onMessageFocus,
 						required: !0,
 						value: s
 					}), o.a.createElement(l.a, {
 						text: s,
-						maxChars: j
+						maxChars: v
 					})), o.a.createElement(p.g, null, !1 === i && o.a.createElement("p", {
 						className: O.a.errorText
 					}, "Something went wrong. Try again in a bit."), o.a.createElement(p.a, {
@@ -321,7 +321,7 @@
 					}))))
 				}
 			}
-			t.default = Object(c.a)(Object(h.b)(F(Object(b.c)(T))))
+			t.default = Object(c.a)(Object(h.b)(T(Object(b.c)(j))))
 		},
 		"./src/reddit/components/StructuredStyles/StyledComponents/forms.m.less": function(e, t, s) {
 			e.exports = {
@@ -448,4 +448,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModToMemberShareModal.d9fa60b599be64a01b36.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModToMemberShareModal.bcc5717ba0e00743e669.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/IdCard.90495501abe8b2e9fca2.js
-// Retrieved at 8/18/2022, 1:30:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/IdCard.b31bb1f02ff6198938a3.js
+// Retrieved at 8/18/2022, 6:00:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["IdCard", "AchievementsActions", "ContributorRequestButton"], {
 		"./node_modules/autosize/dist/autosize.js": function(e, t, n) {
@@ -384,7 +384,7 @@
 					shortMonths: o,
 					locale: a = r.DEFAULT_LOCALE
 				} = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : {};
-				const c = new Date(e * s.Sb);
+				const c = new Date(e * s.Tb);
 				return i.a ? new Intl.DateTimeFormat(a, {
 					month: o ? "short" : "long",
 					day: t ? "numeric" : void 0,
@@ -949,7 +949,7 @@
 						type: e.type
 					} : {
 						id: Object(O.n)(l(), e.name),
-						name: `${s.kc}${e.name}`,
+						name: `${s.lc}${e.name}`,
 						type: e.type
 					});
 					if (!Object(k.Q)(l())) return o(Object(d.k)({
@@ -1080,7 +1080,7 @@
 						multiredditPath: e,
 						multiredditsModelsState: o
 					})), (await ((e, t, n) => Object(p.a)(Object(b.a)(e, [h.a]), {
-						method: s.jb.POST,
+						method: s.kb.POST,
 						endpoint: `${e.apiUrl}/api/multi/favorite`,
 						data: {
 							make_favorite: n ? "true" : "false",
@@ -1120,7 +1120,7 @@
 						multiredditPath: e,
 						multiredditsModelsState: c
 					})), (await ((e, t, n) => Object(p.a)(Object(b.a)(e, [h.a]), {
-						method: s.jb.POST,
+						method: s.kb.POST,
 						endpoint: `${e.apiUrl}/api/multi/subscribe`,
 						data: {
 							action: n ? "sub" : "unsub",
@@ -2261,7 +2261,7 @@
 						i = null != n ? n : r;
 					return s.a.createElement(s.a.Fragment, null, function(e) {
 						let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : l.DEFAULT_LOCALE;
-						const n = e * u.Sb;
+						const n = e * u.Tb;
 						return new Date(n).toLocaleString(t, {
 							weekday: "short",
 							month: "short",
@@ -2289,7 +2289,7 @@
 				let n = arguments.length > 2 && void 0 !== arguments[2] && arguments[2],
 					r = arguments.length > 3 && void 0 !== arguments[3] ? arguments[3] : l.DEFAULT_LOCALE;
 				const s = Object(b.e)(e, t),
-					i = new Date(e * u.Sb);
+					i = new Date(e * u.Tb);
 				let o;
 				if (s === b.a.Live || n) return p.fbt._("Now", null, {
 					hk: "Prpcg"
@@ -3594,7 +3594,7 @@
 						onClick: b ? x : void 0,
 						headerButton: i.a.createElement("div", {
 							className: mt.a.headerButtonsContainer
-						}, !L && _ && g && d !== Re.Re.NewModule && i.a.createElement(a.a, {
+						}, !L && _ && g && d !== Re.Te.NewModule && i.a.createElement(a.a, {
 							className: mt.a.ModToolsLink,
 							to: g.posts ? `${_.url}about/modqueue` : `${_.url}about/`,
 							onClick: this.onClickModTools
@@ -4624,7 +4624,7 @@
 						subscribe: o
 					} = t;
 					return Object(i.a)(Object(a.a)(e, [c.a]), {
-						method: s.jb.POST,
+						method: s.kb.POST,
 						endpoint: Object(d.a)(`${e.apiUrl}/api/subscribe`),
 						data: {
 							action: o ? "sub" : "unsub",
@@ -4635,7 +4635,7 @@
 					})
 				},
 				u = (e, t, n) => Object(i.a)(Object(a.a)(e, [c.a]), {
-					method: s.jb.POST,
+					method: s.kb.POST,
 					endpoint: `${e.apiUrl}/api/favorite`,
 					data: {
 						make_favorite: n ? "true" : "false",
@@ -5259,4 +5259,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/IdCard.90495501abe8b2e9fca2.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/IdCard.b31bb1f02ff6198938a3.js.map

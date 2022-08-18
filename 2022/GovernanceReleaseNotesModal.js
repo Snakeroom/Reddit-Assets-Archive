@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/GovernanceReleaseNotesModal.68a6d699c4d596181723.js
-// Retrieved at 8/17/2022, 6:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/GovernanceReleaseNotesModal.d63a0ee8a7e86d6ad6c5.js
+// Retrieved at 8/18/2022, 6:00:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["GovernanceReleaseNotesModal"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -856,8 +856,8 @@
 					})
 				})))
 			}
-			var P = n("./src/reddit/components/Governance/ReleaseNotesModal/index.m.less"),
-				B = n.n(P);
+			var B = n("./src/reddit/components/Governance/ReleaseNotesModal/index.m.less"),
+				P = n.n(B);
 			class D extends i.a.Component {
 				constructor() {
 					super(...arguments), this.state = {
@@ -887,22 +887,22 @@
 					if (!this.props.subreddit) return null;
 					const e = this.props.releaseNotes[this.state.currentlyViewingIndex];
 					return i.a.createElement("div", null, i.a.createElement(c.a, {
-						className: B.a.title
+						className: P.a.title
 					}, s.fbt._("What's New in {subredditName}?", [s.fbt._param("subredditName", this.props.subreddit.displayText)], {
 						hk: "31ALcQ"
 					})), i.a.createElement(k, {
 						releaseNote: e
 					}), i.a.createElement("div", {
-						className: B.a.controls
+						className: P.a.controls
 					}, i.a.createElement(_, {
-						className: B.a.controlBox,
+						className: P.a.controlBox,
 						date: e.created
 					}), i.a.createElement(R, {
-						className: B.a.controlBox,
+						className: P.a.controlBox,
 						currentSlide: this.state.currentlyViewingIndex,
 						totalSlides: this.props.releaseNotes.length
 					}), i.a.createElement(N, {
-						className: B.a.controlBox,
+						className: P.a.controlBox,
 						isFirst: 0 === this.state.currentlyViewingIndex,
 						isLast: this.state.currentlyViewingIndex === this.props.releaseNotes.length - 1,
 						onClose: this.props.onClose,
@@ -1424,11 +1424,11 @@
 					t && t.played && 1 === t.played.length && 0 === t.played.start(0) && t.played.end(0) === t.duration && N(Object(u.s)(p))
 				}, 200);
 
-				function P(e) {
+				function B(e) {
 					e.persist(), R(e)
 				}
 
-				function B(e) {
+				function P(e) {
 					var t;
 					(i || H(e), d) || (t = e.timeStamp, N(Object(u.A)(p, t)))
 				}
@@ -1452,7 +1452,7 @@
 				}
 
 				function F(e) {
-					s || B(e), i || H(e), N(Object(u.C)(p))
+					s || P(e), i || H(e), N(Object(u.C)(p))
 				}
 
 				function A() {
@@ -1467,11 +1467,11 @@
 						loop: !0,
 						onBufferingChange: L,
 						onLoadStart: D,
-						onLoadedData: B,
+						onLoadedData: P,
 						onLoadedMetadata: H,
 						onPause: M,
 						onPlaying: F,
-						onTimeUpdate: P,
+						onTimeUpdate: B,
 						shouldLoad: b,
 						shouldPause: _,
 						showCentered: I,
@@ -2228,9 +2228,9 @@
 			})), n.d(t, "a", (function() {
 				return R
 			})), n.d(t, "b", (function() {
-				return P
-			})), n.d(t, "f", (function() {
 				return B
+			})), n.d(t, "f", (function() {
+				return P
 			})), n.d(t, "h", (function() {
 				return H
 			})), n.d(t, "g", (function() {
@@ -2363,13 +2363,13 @@
 						key: s
 					}, c)
 				},
-				P = (e, t) => {
+				B = (e, t) => {
 					const n = e.c;
 					return a.a.createElement(d.k, {
 						key: t
 					}, a.a.createElement(d.h, null, n.reduce((e, t, n, s) => e += t.t + (n < s.length ? "\n" : ""), "")))
 				},
-				B = (e, t, n, s, r) => {
+				P = (e, t, n, s, r) => {
 					const i = e.c,
 						o = [],
 						c = i.length;
@@ -2389,13 +2389,13 @@
 						case h.b:
 							return R(e, t, n, s, r);
 						case h.c:
-							return P(e, s);
+							return B(e, s);
 						case h.k:
 							return L(e, n, s);
 						case h.l:
 							return M(s);
 						case h.p:
-							return B(e, t, n, s, r);
+							return P(e, t, n, s, r);
 						case h.u:
 							return F(e, t, n, s, r);
 						case h.z:
@@ -2684,12 +2684,12 @@
 						rtJsonElementProps: o
 					});
 					switch (i) {
-						case b.Pf.SmIcon:
+						case b.Rf.SmIcon:
 							return r.a.createElement(h, {
 								subredditName: s,
 								rtJsonElementProps: o
 							});
-						case b.Pf.SmIconHc:
+						case b.Rf.SmIconHc:
 							return r.a.createElement(h, {
 								subredditName: s,
 								isHoverable: !0,
@@ -3042,12 +3042,12 @@
 				d = e => {
 					return Object(i.c)(e, {
 						experimentEligibilitySelector: a,
-						experimentName: s.Jf
+						experimentName: s.Lf
 					}) || ""
 				},
 				c = e => {
 					const t = d(e);
-					return t === s.Pf.SmIcon || t === s.Pf.SmIconHc
+					return t === s.Rf.SmIcon || t === s.Rf.SmIconHc
 				},
 				l = (e, t) => {
 					let {
@@ -3073,4 +3073,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/GovernanceReleaseNotesModal.68a6d699c4d596181723.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/GovernanceReleaseNotesModal.d63a0ee8a7e86d6ad6c5.js.map

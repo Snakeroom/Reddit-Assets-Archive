@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/OnboardingModal.3747d8eff3277ad1d655.js
-// Retrieved at 8/17/2022, 6:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/OnboardingModal.60100f4fb662e9e5472e.js
+// Retrieved at 8/18/2022, 6:00:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["OnboardingModal"], {
 		"./node_modules/lodash/_baseRange.js": function(e, t) {
@@ -400,7 +400,7 @@
 						},
 						forceGeopopular: !0,
 						includeCommunityDUs: !1,
-						includeInterestTopics: !!p && !Object(b.og)(p),
+						includeInterestTopics: !!p && !Object(b.qg)(p),
 						includeFeaturedAnnouncements: !0,
 						includeLiveEvents: !0,
 						includeIdentity: h && !(null === (r = null === (n = e.user.account) || void 0 === n ? void 0 : n.karma) || void 0 === r ? void 0 : r.total),
@@ -572,7 +572,7 @@
 								logKeyType: m.a.gqlNormalizationTiming
 							}];
 						Object(m.h)({
-							name: d.r.FRONTPAGE,
+							name: d.s.FRONTPAGE,
 							isLoggedIn: n,
 							metrics: c,
 							statsdPathsForExperiments: r
@@ -700,7 +700,7 @@
 						p = a.listings.postOrder.api.pending[l],
 						b = Object(ae.b)(a),
 						f = $.C in e.queryParams && e.queryParams[$.C].toUpperCase() || "",
-						g = f in d.ic && d.ic[f],
+						g = f in d.jc && d.jc[f],
 						h = Q.e();
 					if (p || u && !m && !t) return void(u && (n(K.m({
 						title: b ? Object(z.a)(a, h) : h
@@ -757,7 +757,7 @@
 						m = Object(ue.a)(Y.b, l, u),
 						p = i.listings.postOrder.loadMore[m],
 						b = u[$.C] ? u[$.C].toUpperCase() : "",
-						f = b in d.ic && d.ic[b];
+						f = b in d.jc && d.jc[b];
 					if (p) {
 						const e = i.listings.postOrder.api.pending[m],
 							r = i.listings.postOrder.fetchedTokens,
@@ -820,7 +820,7 @@
 						a = r.platform.currentPage ? r.platform.currentPage.queryParams : {},
 						i = Object(ue.a)(Y.b, o, a),
 						c = a[$.C] ? a[$.C].toUpperCase() : "",
-						l = c in d.ic && d.ic[c],
+						l = c in d.jc && d.jc[c],
 						u = Object(ne.a)(r),
 						m = Object(ne.b)(u);
 					await t(Re(i, {
@@ -1197,12 +1197,12 @@
 									var n;
 									const r = e.target;
 									if (r) {
-										if (l.g[e.key] && !r.value) {
+										if (l.h[e.key] && !r.value) {
 											const n = u.current.length - 1;
 											let r;
-											(r = e.keyCode === l.g.ArrowUp || e.keyCode === l.g.ArrowLeft ? u.current[t ? t - 1 : n] : u.current[t === n ? 0 : t + 1]) && g(r)
+											(r = e.keyCode === l.h.ArrowUp || e.keyCode === l.h.ArrowLeft ? u.current[t ? t - 1 : n] : u.current[t === n ? 0 : t + 1]) && g(r)
 										}
-										e.keyCode === l.J && (null === (n = u.current[t]) || void 0 === n || n.focus())
+										e.keyCode === l.K && (null === (n = u.current[t]) || void 0 === n || n.focus())
 									}
 								})(e, o),
 								placeholder: e.displayText,
@@ -1955,7 +1955,7 @@
 					(k || I) && async function() {
 						V(!0);
 						const e = await He(t, se);
-						V(!1), e && ($(Date.now() / l.Sb), M(e))
+						V(!1), e && ($(Date.now() / l.Tb), M(e))
 					}()
 				}, [k, I, t, se]), Object(o.useEffect)(() => {
 					I && Object(ze.a)(null == C ? void 0 : C.genderCategory, I.success)
@@ -1984,9 +1984,9 @@
 					ie = Object(i.e)(rt.S),
 					ce = Object(i.e)(tt.g),
 					de = Object(i.e)(et.a),
-					le = de === Ie.Wf.CloseOnboarding,
-					ue = de === Ie.Wf.SkipTopicSelection,
-					me = de === Ie.Wf.SmartSignal,
+					le = de === Ie.Yf.CloseOnboarding,
+					ue = de === Ie.Yf.SkipTopicSelection,
+					me = de === Ie.Yf.SmartSignal,
 					pe = Object(o.useCallback)(() => {
 						r(Object(p.g)(ke.a.ONBOARDING_MODAL_D2X)), ae && r(Object(b.g)()), f && (s(Object(F.t)()), Object(Ue.a)()), ce && ie && r(Object(u.startChangeUsernameFlow)())
 					}, [r, ie, ce, f, ae, s]),
@@ -2015,7 +2015,7 @@
 					}, [ge, s]),
 					xe = Object(o.useCallback)(async () => {
 						s(Object(F.u)());
-						const e = Date.now() / l.Sb - Y;
+						const e = Date.now() / l.Tb - Y;
 						me && e <= 5 ? (T(!0), W({}), ne(), v(_e.AVATAR)) : (v(_e.COMMUNITIES), fe())
 					}, [fe, s, Y, me, ne]),
 					Oe = Object(o.useCallback)(async () => {
@@ -4029,12 +4029,12 @@
 			const o = e => {
 					return !(Object(s.c)(e, {
 						experimentEligibilitySelector: s.a,
-						experimentName: r.ve
+						experimentName: r.xe
 					}) === r.Nd)
 				},
 				a = e => Object(s.c)(e, {
 					experimentEligibilitySelector: s.a,
-					experimentName: r.we
+					experimentName: r.ye
 				}) === r.Nd
 		},
 		"./src/reddit/selectors/experiments/inAppNotification.ts": function(e, t, n) {
@@ -4205,4 +4205,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/OnboardingModal.3747d8eff3277ad1d655.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/OnboardingModal.60100f4fb662e9e5472e.js.map

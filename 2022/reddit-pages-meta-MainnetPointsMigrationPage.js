@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-pages-meta-MainnetPointsMigrationPage.868f6908f05fa7b3da62.js
-// Retrieved at 8/18/2022, 12:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-pages-meta-MainnetPointsMigrationPage.508efb27553cbc710728.js
+// Retrieved at 8/18/2022, 6:00:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-pages-meta-MainnetPointsMigrationPage"], {
 		"./node_modules/lodash/uniqueId.js": function(e, t, n) {
@@ -463,7 +463,7 @@
 			function i(e, t) {
 				return Object(r.a)(e, {
 					endpoint: `${a.a.metaUrl}/communities/${t.subredditId}/me`,
-					method: s.jb.GET
+					method: s.kb.GET
 				})
 			}
 		},
@@ -998,8 +998,8 @@
 					balance: a
 				}
 			}
-			var E = n("./src/reddit/hooks/useLocalStorage.ts"),
-				k = n("./src/reddit/selectors/experiments/mainnet.ts"),
+			var k = n("./src/reddit/hooks/useLocalStorage.ts"),
+				E = n("./src/reddit/selectors/experiments/mainnet.ts"),
 				_ = n("./src/reddit/selectors/user.ts"),
 				N = n("./node_modules/classnames/index.js"),
 				C = n.n(N),
@@ -1363,7 +1363,7 @@
 						return await
 						function(e, t, n) {
 							return Object(pe.a)(e, {
-								method: me.jb.GET,
+								method: me.kb.GET,
 								endpoint: `${a.a.metaUrl}/migrationbridge/${t}/${n}`
 							})
 						}(r(), "42170", t).then(e => {
@@ -1479,8 +1479,8 @@
 						fetchCount: y,
 						destinationAddress: x
 					} = t,
-					[w, E] = Object(r.useState)(!1),
-					[k, _] = Object(r.useState)(s.ethers.utils.parseEther("0")),
+					[w, k] = Object(r.useState)(!1),
+					[E, _] = Object(r.useState)(s.ethers.utils.parseEther("0")),
 					[N, C] = Object(r.useReducer)(() => !0, !1),
 					[j, O] = Object(r.useState)(!1),
 					M = (null == f ? void 0 : f.claimId) && !(null == f ? void 0 : f.claimed),
@@ -1491,7 +1491,7 @@
 					}),
 					S = I({
 						locale: d,
-						balance: g || k
+						balance: g || E
 					}),
 					{
 						transferOut: B,
@@ -1534,9 +1534,9 @@
 							mainnetAddress: m,
 							recipient: f.recipient
 						});
-						t.gt(k) && (_(t), O(!1), clearInterval(e))
+						t.gt(E) && (_(t), O(!1), clearInterval(e))
 					}, 1e3)), () => window.clearInterval(e)
-				}, [V, m, k, j, f]);
+				}, [V, m, E, j, f]);
 				return i.a.createElement("div", {
 					className: ge.a.row,
 					key: p
@@ -1545,7 +1545,7 @@
 				}, "r/", h), i.a.createElement("div", {
 					className: ge.a.column
 				}, i.a.createElement(we, {
-					handleTransferClick: () => E(!0),
+					handleTransferClick: () => k(!0),
 					isHidden: "0" === A || v || void 0 !== (null == f ? void 0 : f.claimed),
 					network: a,
 					switchToTestnet: W,
@@ -1557,7 +1557,7 @@
 					value: A
 				})), i.a.createElement("div", {
 					className: ge.a.column
-				}, i.a.createElement(Ee, {
+				}, i.a.createElement(ke, {
 					isClaiming: j,
 					network: a,
 					isHidden: !M,
@@ -1596,7 +1596,7 @@
 				})), w && i.a.createElement(ue, {
 					amount: A,
 					subredditId: p,
-					onClose: () => E(!1),
+					onClose: () => k(!1),
 					onTransfer: async e => {
 						C(), await B({
 							testnetAddress: b,
@@ -1645,7 +1645,7 @@
 				}, ve._("Transfer", null, {
 					hk: "5ICxq"
 				}))
-			}, Ee = e => {
+			}, ke = e => {
 				let {
 					network: t,
 					isHidden: n,
@@ -1671,7 +1671,7 @@
 					hk: "47MFix"
 				}))
 			}, {
-				fbt: ke
+				fbt: Ee
 			} = n("./node_modules/fbt/lib/FbtPublic.js"), _e = e => {
 				let {
 					walletAddress: t,
@@ -1703,15 +1703,15 @@
 					className: ge.a.header
 				}, i.a.createElement("p", {
 					className: ge.a.firstColumn
-				}, ke._("Your Community Points", null, {
+				}, Ee._("Your Community Points", null, {
 					hk: "1EiZYW"
 				})), i.a.createElement("p", {
 					className: ge.a.column
-				}, ke._("Rinkeby Test Network", null, {
+				}, Ee._("Rinkeby Test Network", null, {
 					hk: "2vAmjA"
 				})), i.a.createElement("p", {
 					className: ge.a.column
-				}, ke._("Arbitrum Nova Mainnet", null, {
+				}, Ee._("Arbitrum Nova Mainnet", null, {
 					hk: "2GmGaq"
 				}))), a.map(e => i.a.createElement(ye, {
 					key: e.name,
@@ -1733,15 +1733,15 @@
 					className: ge.a.noPoints
 				}, i.a.createElement("p", {
 					className: ge.a.error
-				}, i.a.createElement("b", null, ke._("No Points to migrate", null, {
+				}, i.a.createElement("b", null, Ee._("No Points to migrate", null, {
 					hk: "4xNSjt"
-				}))), i.a.createElement("p", null, ke._("Hmmm... I can't find any unmigrated points for your connected address:", null, {
+				}))), i.a.createElement("p", null, Ee._("Hmmm... I can't find any unmigrated points for your connected address:", null, {
 					hk: "3XrFRZ"
-				}), " ", i.a.createElement("b", null, t), "."), i.a.createElement("ul", null, i.a.createElement("li", null, ke._("If your Points were already in your Vault, they have already been migrated.", null, {
+				}), " ", i.a.createElement("b", null, t), "."), i.a.createElement("ul", null, i.a.createElement("li", null, Ee._("If your Points were already in your Vault, they have already been migrated.", null, {
 					hk: "3fFavJ"
-				})), i.a.createElement("li", null, ke._("If your Points were in a different wallet, make sure you send them to this address to migrate them. Or connect that wallet with this wallet software/extension.", null, {
+				})), i.a.createElement("li", null, Ee._("If your Points were in a different wallet, make sure you send them to this address to migrate them. Or connect that wallet with this wallet software/extension.", null, {
 					hk: "3SFyoA"
-				})), i.a.createElement("li", null, ke._("If you sent your Points to your Vault instead of this address, you will need to import your Vault into this wallet software (e.g. MetaMask). You can do this by using the 12-word phrase available in Vault Settings.", null, {
+				})), i.a.createElement("li", null, Ee._("If you sent your Points to your Vault instead of this address, you will need to import your Vault into this wallet software (e.g. MetaMask). You can do this by using the 12-word phrase available in Vault Settings.", null, {
 					hk: "KP4aA"
 				}))))
 			}, {
@@ -1749,14 +1749,14 @@
 			} = n("./node_modules/fbt/lib/FbtPublic.js"), je = () => {
 				const e = Object(o.d)(),
 					t = Object(h.c)(),
-					n = Object(o.e)(k.a),
+					n = Object(o.e)(E.a),
 					d = Object(o.e)(_.Q),
 					[u, m] = Object(r.useState)(Object(h.d)()),
 					[p, y] = Object(r.useState)(Object(h.e)()),
 					[x, N] = Object(r.useReducer)(() => !0, !1),
 					[C, j] = Object(r.useState)(!1),
-					[O, M] = Object(E.a)(S, null),
-					[T, A] = Object(E.a)("mainnet-migration-signer", "");
+					[O, M] = Object(k.a)(S, null),
+					[T, A] = Object(k.a)("mainnet-migration-signer", "");
 				Object(r.useEffect)(() => {
 					(async () => {
 						const e = Object(h.d)();
@@ -1869,16 +1869,16 @@
 			const r = e => {
 					return Object(s.c)(e, {
 						experimentEligibilitySelector: s.a,
-						experimentName: a.xe
+						experimentName: a.ze
 					}) === a.Nd
 				},
 				i = e => {
 					return Object(s.c)(e, {
 						experimentEligibilitySelector: s.a,
-						experimentName: a.ue
+						experimentName: a.we
 					}) === a.Nd
 				}
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-pages-meta-MainnetPointsMigrationPage.868f6908f05fa7b3da62.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-pages-meta-MainnetPointsMigrationPage.508efb27553cbc710728.js.map

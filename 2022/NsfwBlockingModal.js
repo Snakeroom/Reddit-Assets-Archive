@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/NsfwBlockingModal.cfe6cb0812035ee5c2e5.js
-// Retrieved at 8/17/2022, 6:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/NsfwBlockingModal.19f884dcbda4d73760d5.js
+// Retrieved at 8/18/2022, 6:00:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["NsfwBlockingModal"], {
 		"./src/reddit/components/Footer/index.m.less": function(e, t, n) {
@@ -92,9 +92,9 @@
 					}) : null);
 				return i.a.createElement(m.a, {
 					contentTitle: (() => {
-						if (n === a.r.COMMENTS_PAGE || n === a.r.SUBREDDIT) {
+						if (n === a.s.COMMENTS_PAGE || n === a.s.SUBREDDIT) {
 							if (r) return Object(C.c)(r)
-						} else if ((n === a.r.PROFILE_COMMENTS || n === a.r.PROFILE_OVERVIEW || n === a.r.PROFILE_POSTS) && s) return Object(C.d)(s);
+						} else if ((n === a.s.PROFILE_COMMENTS || n === a.s.PROFILE_OVERVIEW || n === a.s.PROFILE_POSTS) && s) return Object(C.d)(s);
 						return null
 					})()
 				})
@@ -286,4 +286,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/NsfwBlockingModal.cfe6cb0812035ee5c2e5.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/NsfwBlockingModal.19f884dcbda4d73760d5.js.map

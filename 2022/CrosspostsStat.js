@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CrosspostsStat.6779d8c64b2b48d26a85.js
-// Retrieved at 8/9/2022, 12:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CrosspostsStat.a0dc305a8ff5f65427f7.js
+// Retrieved at 8/18/2022, 6:00:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CrosspostsStat"], {
 		"./src/reddit/components/CreatorStats/CrosspostsStat.m.less": function(e, t, s) {
@@ -93,7 +93,7 @@
 			})), s.d(t, "b", (function() {
 				return h
 			})), s.d(t, "a", (function() {
-				return I
+				return k
 			}));
 			var r = s("./node_modules/node-libs-browser/node_modules/url/url.js"),
 				n = s("./src/lib/constants/index.ts"),
@@ -222,7 +222,7 @@
 				x = e => {
 					const t = /comments\/(\w+)\/.*$/.exec(e),
 						s = t && t[1];
-					return s ? `${n.Ib.Post}_${s}` : ""
+					return s ? `${n.Jb.Post}_${s}` : ""
 				},
 				v = async (e, t) => {
 					if (!e.ok) return Object(p.b)(e);
@@ -257,12 +257,12 @@
 					}
 				}, h = (e, t) => Object(o.a)(Object(a.a)(e, [d.a]), {
 					endpoint: Object(_.a)(Object(i.a)(`${e.apiUrl}/api/submit_poll_post.json?resubmit=true`)),
-					method: n.jb.POST,
+					method: n.kb.POST,
 					data: S(t),
 					type: "json"
-				}).then(e => v(e, t)), I = (e, t) => Object(o.a)(Object(a.a)(e, [d.a]), {
+				}).then(e => v(e, t)), k = (e, t) => Object(o.a)(Object(a.a)(e, [d.a]), {
 					endpoint: Object(_.a)(Object(i.a)(`${e.apiUrl}/api/submit_gallery_post.json?resubmit=true`)),
-					method: n.jb.POST,
+					method: n.kb.POST,
 					data: {
 						...S(t),
 						items: t.galleryItems.map(e => ({
@@ -275,10 +275,10 @@
 				}).then(e => v(e, t));
 			t.c = (e, t) => Object(o.a)(Object(a.a)(e, [d.a]), {
 				endpoint: Object(_.a)(Object(i.a)(`${e.apiUrl}/api/submit?resubmit=true`)),
-				method: n.jb.POST,
+				method: n.kb.POST,
 				data: S(t)
 			}).then(async e => await v(e, t))
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CrosspostsStat.6779d8c64b2b48d26a85.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CrosspostsStat.a0dc305a8ff5f65427f7.js.map

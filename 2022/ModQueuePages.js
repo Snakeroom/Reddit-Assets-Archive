@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModQueuePages.4ec3a38a99217b2602ea.js
-// Retrieved at 8/18/2022, 1:30:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModQueuePages.ea5ccac93d5ead2abb83.js
+// Retrieved at 8/18/2022, 6:00:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModQueuePages"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -832,7 +832,7 @@
 						commentId: e
 					});
 					if (!l) return;
-					const m = n === o.ec.Snoozed,
+					const m = n === o.fc.Snoozed,
 						f = {
 							itemId: e,
 							reportText: t,
@@ -864,8 +864,8 @@
 					s(Object(g.j)({
 						[e]: {
 							distinguishType: t,
-							isAdmin: t === o.G.ADMIN,
-							isMod: t === o.G.MODERATOR,
+							isAdmin: t === o.H.ADMIN,
+							isMod: t === o.H.MODERATOR,
 							isStickied: !!n
 						}
 					})), n && b && b !== e && s(Object(g.j)({
@@ -880,7 +880,7 @@
 						id: e,
 						postId: p,
 						commentsPageKey: Object(a.a)(p, null, {
-							sort: o.t.CONFIDENCE,
+							sort: o.u.CONFIDENCE,
 							...l.platform.currentPage.queryParams
 						})
 					})) : (s(Object(g.j)({
@@ -934,11 +934,11 @@
 				_ = n("./src/reddit/helpers/graphql/normalizePostFromGql/index.ts"),
 				E = n("./src/reddit/helpers/graphql/normalizeSubredditFromGql/index.ts");
 			const k = {
-					[o.rb.Edited]: g.v.Edited,
-					[o.rb.Modqueue]: g.v.Mod,
-					[o.rb.Reports]: g.v.Reported,
-					[o.rb.Spam]: g.v.Removed,
-					[o.rb.Unmoderated]: g.v.Unmoderated
+					[o.sb.Edited]: g.v.Edited,
+					[o.sb.Modqueue]: g.v.Mod,
+					[o.sb.Reports]: g.v.Reported,
+					[o.sb.Spam]: g.v.Removed,
+					[o.sb.Unmoderated]: g.v.Unmoderated
 				},
 				C = {
 					comments: g.t.Comment,
@@ -1164,19 +1164,19 @@
 					var p;
 					let b, h, f;
 					switch (t) {
-						case o.rb.Edited:
+						case o.sb.Edited:
 							b = W, h = V, f = H;
 							break;
-						case o.rb.Modqueue:
+						case o.sb.Modqueue:
 							b = B, h = U, f = D;
 							break;
-						case o.rb.Reports:
+						case o.sb.Reports:
 							b = Q, h = G, f = q;
 							break;
-						case o.rb.Spam:
+						case o.sb.Spam:
 							b = J, h = z, f = X;
 							break;
-						case o.rb.Unmoderated:
+						case o.sb.Unmoderated:
 							b = K, h = Z, f = Y;
 							break;
 						default:
@@ -1674,7 +1674,7 @@
 				U = n("./src/reddit/models/RichTextJson/addRTJParam.ts");
 			const W = (e, t) => Object(F.a)(Object(B.a)(e, [D.a]), {
 					endpoint: `${e.apiUrl}/api/v1/modactions/removal_reasons/`,
-					method: j.jb.POST,
+					method: j.kb.POST,
 					type: "json",
 					data: {
 						item_ids: t.itemIds,
@@ -1684,7 +1684,7 @@
 				}),
 				H = (e, t, n) => Object(F.a)(Object(B.a)(e, [D.a]), {
 					endpoint: Object(U.a)(`${e.apiUrl}/api/v1/modactions/removal_${n}_message/`),
-					method: j.jb.POST,
+					method: j.kb.POST,
 					type: "json",
 					data: t
 				});
@@ -1713,7 +1713,7 @@
 					t(Z());
 					const a = await ((e, t) => Object(F.a)(Object(B.a)(e, [D.a]), {
 						endpoint: `${e.apiUrl}/api/v1/${t}/removal_reasons.json`,
-						method: j.jb.GET
+						method: j.kb.GET
 					}))(o(), r);
 					a.ok ? t($({
 						subredditId: e,
@@ -1727,7 +1727,7 @@
 					n(ne());
 					const d = await ((e, t, n) => Object(F.a)(Object(B.a)(e, [D.a]), {
 						endpoint: `${e.apiUrl}/api/v1/${t}/removal_reasons`,
-						method: j.jb.POST,
+						method: j.kb.POST,
 						data: n
 					}))(a(), i, t);
 					if (d.ok) {
@@ -1755,7 +1755,7 @@
 					n(ae());
 					const d = await ((e, t, n) => Object(F.a)(Object(B.a)(e, [D.a]), {
 						endpoint: `${e.apiUrl}/api/v1/${t}/removal_reasons/${n.id}`,
-						method: j.jb.PUT,
+						method: j.kb.PUT,
 						data: {
 							message: n.message,
 							title: n.title
@@ -1778,7 +1778,7 @@
 					n(le());
 					const d = await ((e, t, n) => Object(F.a)(Object(B.a)(e, [D.a]), {
 						endpoint: `${e.apiUrl}/api/v1/${t}/removal_reasons/${n}`,
-						method: j.jb.DELETE
+						method: j.kb.DELETE
 					}))(a(), i, t);
 					d.ok ? (n(me({
 						subredditId: e,
@@ -1845,7 +1845,7 @@
 											s = l.platform.currentPage && l.platform.currentPage.routeMatch;
 										let o = n && s && Object(q.a)(s, l, l.posts.models[e.postId]);
 										if (o || (o = Object(S.a)(e.postId, null, {
-												sort: j.u,
+												sort: j.v,
 												hasSortParam: !0
 											})), p === X.e.Post) {
 											const n = Object(I.a)(J.c.replyToPost, u);
@@ -2150,7 +2150,7 @@
 				} = e;
 				const N = Object(p.b)(n),
 					R = n.isApproved && N,
-					M = !n.isRemoved || n.bannedBy === c.k,
+					M = !n.isRemoved || n.bannedBy === c.l,
 					P = i,
 					L = e => S(Object(f.b)(e, n.id)),
 					A = "chat_comments" === (null == T ? void 0 : T.queryParams.only);
@@ -2168,13 +2168,13 @@
 				}, r.a.createElement(_.a, {
 					className: I.a.icon
 				})), M && r.a.createElement(r.a.Fragment, null, r.a.createElement(y.a, {
-					text: n.bannedBy === c.k ? s.fbt._("Confirm Removal", null, {
+					text: n.bannedBy === c.l ? s.fbt._("Confirm Removal", null, {
 						hk: "3JozXJ"
 					}) : s.fbt._("Remove", null, {
 						hk: "3tYl0U"
 					}),
 					onClick: () => {
-						x(), A && S(Object(f.a)("remove", n.id)), n.bannedBy === c.k ? L("confirm_remove") : L("remove")
+						x(), A && S(Object(f.a)("remove", n.id)), n.bannedBy === c.l ? L("confirm_remove") : L("remove")
 					}
 				}, r.a.createElement(k.a, {
 					className: I.a.icon
@@ -2373,7 +2373,7 @@
 				} = e;
 				const u = Object(j.f)(s),
 					p = r.a.createElement(I.b, {
-						ignore: u || !!s.distinguishType && s.distinguishType !== S.G.NONE,
+						ignore: u || !!s.distinguishType && s.distinguishType !== S.H.NONE,
 						subredditId: s.subredditId,
 						userId: s.authorId
 					}, r.a.createElement(b, {
@@ -2680,8 +2680,8 @@
 					const t = Object(a.d)(),
 						n = function(e) {
 							if (e.isAdmin) return be.Admin;
-							const t = e.isMod || e.distinguishType === S.G.MODERATOR;
-							return t && e.author && Object(fe.a)(e.author) ? be.ModTeam : t ? be.Mod : e.isOp ? be.Op : e.distinguishType === S.G.ALUMNI_ADMIN ? be.AlumniAdmin : e.authorIsContractor ? be.Contractor : null
+							const t = e.isMod || e.distinguishType === S.H.MODERATOR;
+							return t && e.author && Object(fe.a)(e.author) ? be.ModTeam : t ? be.Mod : e.isOp ? be.Op : e.distinguishType === S.H.ALUMNI_ADMIN ? be.AlumniAdmin : e.authorIsContractor ? be.Contractor : null
 						}(e.comment);
 					if (!n) return null;
 					if (n === be.Contractor && !e.renderContractorBadge) return null;
@@ -3452,7 +3452,7 @@
 			}, o.a.createElement(b, {
 				author: e.comment.postAuthor,
 				isUnstyled: !0,
-				isAuthorDeleted: e.comment.postAuthor === m.E
+				isAuthorDeleted: e.comment.postAuthor === m.F
 			}, `u/${e.comment.postAuthor}`)))
 		},
 		"./src/reddit/components/Econ/PowerupsFlair/UserAchievementFlair.async.ts": function(e, t, n) {
@@ -6930,12 +6930,12 @@
 						rtJsonElementProps: a
 					});
 					switch (r) {
-						case h.Pf.SmIcon:
+						case h.Rf.SmIcon:
 							return o.a.createElement(p, {
 								subredditName: s,
 								rtJsonElementProps: a
 							});
-						case h.Pf.SmIconHc:
+						case h.Rf.SmIconHc:
 							return o.a.createElement(p, {
 								subredditName: s,
 								isHoverable: !0,
@@ -8137,7 +8137,7 @@
 				h = e => e.pages.modHub.modQueue.moderatedCommunitiesOrder.data,
 				f = e => {
 					const t = e.platform && e.platform.currentPage;
-					return t && t.meta && (t.meta.name === s.Nb.MODERATION_PAGES || t.meta.name === s.Nb.MODQUEUE_PAGES)
+					return t && t.meta && (t.meta.name === s.Ob.MODERATION_PAGES || t.meta.name === s.Ob.MODQUEUE_PAGES)
 				}
 		},
 		"./src/reddit/selectors/subredditMention.ts": function(e, t, n) {
@@ -8163,12 +8163,12 @@
 				d = e => {
 					return Object(r.c)(e, {
 						experimentEligibilitySelector: i,
-						experimentName: s.Jf
+						experimentName: s.Lf
 					}) || ""
 				},
 				c = e => {
 					const t = d(e);
-					return t === s.Pf.SmIcon || t === s.Pf.SmIconHc
+					return t === s.Rf.SmIcon || t === s.Rf.SmIconHc
 				},
 				l = (e, t) => {
 					let {
@@ -8194,4 +8194,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModQueuePages.4ec3a38a99217b2602ea.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModQueuePages.ea5ccac93d5ead2abb83.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfileFollowersAction.57bb16b384db1298ef86.js
-// Retrieved at 8/4/2022, 2:20:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfileFollowersAction.3d39ef0f26de4b5878d1.js
+// Retrieved at 8/18/2022, 6:00:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfileFollowersAction"], {
 		"./src/lib/makeOverviewConversationsItemKey/index.ts": function(e, t, r) {
@@ -160,7 +160,7 @@
 					}));
 					const m = y.name;
 					if ((await Object(l.c)(c(), {
-							subredditNames: [`${s.kc}${y.name}`],
+							subredditNames: [`${s.lc}${y.name}`],
 							subscribe: t
 						})).ok) {
 						r(k({
@@ -745,7 +745,7 @@
 							data: r,
 							endpoint: Object(f.a)(Object(l.a)(Object(p.a)(Object(v.a)(`${c.a.gatewayUrl}/desktopapi/v1/user/${t}/conversations`)))),
 							traceRequestName: "get_profile_conversations",
-							method: n.jb.GET
+							method: n.kb.GET
 						}).then(e => "pinned" in e.body ? e : "postIds" in e.body ? {
 							...e,
 							body: {
@@ -801,7 +801,7 @@
 							t: f
 						},
 						I = [t(P.d(w))],
-						C = Object(F.a)(w, n.ub, u, e.queryParams);
+						C = Object(F.a)(w, n.vb, u, e.queryParams);
 					if (r().listings.postOrder.ids[C] && !r().listings.postOrder.api.error[C] ? v = !0 : I.push(t(Ee(C, w, j, !0))), I.push(t(Object(i.b)())), await Promise.all(I), v) return;
 					const E = r();
 					if (!E.platform.currentPage) return;
@@ -982,4 +982,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileFollowersAction.57bb16b384db1298ef86.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileFollowersAction.3d39ef0f26de4b5878d1.js.map

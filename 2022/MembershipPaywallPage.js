@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/MembershipPaywallPage.f499a460368b9598f6c6.js
-// Retrieved at 8/18/2022, 11:30:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/MembershipPaywallPage.f5732b4f99fa3ea9162e.js
+// Retrieved at 8/18/2022, 6:00:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["MembershipPaywallPage"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -2007,7 +2007,7 @@
 		"./src/reddit/components/Scroller/Simple.tsx": function(e, t, s) {
 			"use strict";
 			s.d(t, "a", (function() {
-				return K
+				return X
 			}));
 			var i = s("./node_modules/lodash/debounce.js"),
 				n = s.n(i),
@@ -2080,7 +2080,7 @@
 					},
 					u = g()(() => {
 						l(), o = window.setTimeout(d, i)
-					}, p.K);
+					}, p.L);
 				return {
 					cleanup: d,
 					eventHandler: e => {
@@ -2184,7 +2184,7 @@
 				L = s("./src/reddit/components/Scroller/Simple.m.less"),
 				H = s.n(L);
 			const V = T.g,
-				W = 5 * p.K,
+				W = 5 * p.L,
 				Z = 3,
 				G = Object(u.c)({
 					isOverlayOpen: z.i
@@ -2192,11 +2192,11 @@
 				U = Object(d.b)(G),
 				q = {};
 
-			function K(e) {
+			function X(e) {
 				return e === document
 			}
 
-			function X(e) {
+			function K(e) {
 				let t = 0;
 				do {
 					t += e.offsetTop || 0, e = e.offsetParent
@@ -2209,10 +2209,10 @@
 				$ = 1.8,
 				ee = 5,
 				te = 1500,
-				se = 2 * p.K,
+				se = 2 * p.L,
 				ie = 400,
 				ne = 8,
-				re = 5 * p.K,
+				re = 5 * p.L,
 				ae = 30,
 				oe = "object" == typeof performance && "function" == typeof performance.now,
 				ce = () => oe ? performance.now() : Date.now();
@@ -2243,7 +2243,7 @@
 						};
 						B.b.enqueue(new E.a({
 							args: [e, t],
-							cb: (e, t) => Object(D.a)(p.m.Redesign, {
+							cb: (e, t) => Object(D.a)(p.n.Redesign, {
 								data: e,
 								meta: t,
 								type: "scrollfps"
@@ -2309,7 +2309,7 @@
 						clearTimeout(this.updateRenderableChildrenWhenIdleHandle), Object(m.cancelIdleCallback)(this.requestUpdateWhenIdleCallbackHandle)
 					}, this.callOnScrollForItemsChanged = n()(() => {
 						this.handleScroll()
-					}, p.K), this.pauseAllElements = () => {
+					}, p.L), this.pauseAllElements = () => {
 						const e = this.getItemsInViewportWithFilter(this.loadedChildRefFilter),
 							t = [];
 						e.forEach(e => {
@@ -2331,7 +2331,7 @@
 						const t = this.getChildRectangle(e);
 						return t && this.elementIsVisible(t) || !1
 					}, this.loadedChildRefFilter = e => e.loaded, this.resetScrollFramerateAndFocus = () => {
-						this.scrollContainer && (this.pixelsPerMSRing.clear(), this.lastScrollTime = -1, this.needsToPauseViewportItems = !0, null === this.unmountItemsIdleId && (this.unmountItemsIdleId = Object(m.requestIdleCallback)(this.unmountItemsWhileIdle)), setTimeout(this.handleScroll, p.K))
+						this.scrollContainer && (this.pixelsPerMSRing.clear(), this.lastScrollTime = -1, this.needsToPauseViewportItems = !0, null === this.unmountItemsIdleId && (this.unmountItemsIdleId = Object(m.requestIdleCallback)(this.unmountItemsWhileIdle)), setTimeout(this.handleScroll, p.L))
 					}, this.setContainerRef = e => {
 						this.containerRef = e, this.props.innerRef && this.props.innerRef(e)
 					}, this.getChildRectangle = e => {
@@ -2358,12 +2358,12 @@
 						this.fpsMeter && this.fpsMeter.eventHandler(e);
 						for (const t in this.hiddenChildren) this.remeasureWhenShown[t] = !0;
 						this.measurementsInvalid = !0, this.callOnScrollForItemsChanged()
-					}, this.getTotalOffsetTop = () => this.containerRef ? X(this.containerRef) : 0, this.handleContentContainerResize = n()(() => {
+					}, this.getTotalOffsetTop = () => this.containerRef ? K(this.containerRef) : 0, this.handleContentContainerResize = n()(() => {
 						this.pendingResizeHandlerRead || (this.pendingResizeHandlerRead = h.a.read(() => {
 							const e = this.getTotalOffsetTop();
 							e !== this.containerOffsetTop && (this.containerOffsetTop = e, this.handleResize()), this.pendingResizeHandlerRead = null
 						}))
-					}, p.K), this.handleScroll = () => {
+					}, p.L), this.handleScroll = () => {
 						this.pendingScollHandlerRead || (this.pendingScollHandlerRead = h.a.read(() => {
 							if (clearTimeout(this.resetCanFocusTimer), this.cancelPopulateRenderableChildrenWhenIdle(), Object(j.b)() || !this.scrollContainer) return void(this.pendingScollHandlerRead = null);
 							this.updateScrollMetrics();
@@ -2453,7 +2453,7 @@
 							void 0 !== t && (this.hideChild(e, t), this.childrenToHide[e] = void 0)
 						}
 						for (const e in this.childrenToShow) void 0 !== this.childrenToShow[e] && (this.showChild(e), this.childrenToShow[e] = void 0)
-					}, p.K), this.hideChild = (e, t) => {
+					}, p.L), this.hideChild = (e, t) => {
 						const s = this.childMap.get(e);
 						if (!s || !s.el) return;
 						const i = s.el.firstChild;
@@ -2479,7 +2479,7 @@
 								const i = this.getScrollTop() + s.el.getBoundingClientRect().top - (this.props.scrollToChildPadding || 0) - (this.props.viewportTopPadding || 0);
 								setTimeout(() => {
 									this.scrollContainer && (Object(j.c)(this.scrollContainer, i), this.callOnScrollForItemsChanged())
-								}, p.K)
+								}, p.L)
 							}
 						})
 					}, this.isScrollChildTopVisible = e => {
@@ -2597,7 +2597,7 @@
 					return this.props.children.map(e => e.id).join("-")
 				}
 				getScrollTop() {
-					return this.scrollContainer ? K(this.scrollContainer) ? Object(P.a)() : this.scrollContainer.scrollTop : 0
+					return this.scrollContainer ? X(this.scrollContainer) ? Object(P.a)() : this.scrollContainer.scrollTop : 0
 				}
 				updateViewportInfo() {
 					if (this.scrollContainer) {
@@ -2677,7 +2677,7 @@
 					if (!this.containerRef) return !1;
 					const {
 						viewportTopPadding: e = 0
-					} = this.props, t = X(this.containerRef);
+					} = this.props, t = K(this.containerRef);
 					return this.getScrollTop() + e - t > 0
 				}
 				render() {
@@ -4132,37 +4132,37 @@
 				G = s("./src/reddit/components/OverlayAwareTooltip/index.tsx"),
 				U = s("./src/reddit/components/RichTextEditor/emotes/helpers.ts"),
 				q = s("./src/reddit/icons/svgs/Close/index.tsx"),
-				K = s("./src/reddit/pages/meta/MembershipPaywallPage/Benefits/Toolbar/EmoteTooltip/index.m.less"),
-				X = s.n(K);
+				X = s("./src/reddit/pages/meta/MembershipPaywallPage/Benefits/Toolbar/EmoteTooltip/index.m.less"),
+				K = s.n(X);
 
 			function Y(e) {
 				const t = e.emojiPack.emotes,
 					s = Object.keys(t).map(e => t[e]).sort((e, t) => e.id.localeCompare(t.id));
 				return n.a.createElement("div", {
-					className: Object(d.a)(X.a.container, e.className),
+					className: Object(d.a)(K.a.container, e.className),
 					style: e.style
 				}, n.a.createElement("div", {
-					className: X.a.header
+					className: K.a.header
 				}, x.fbt._("Add r/{communityName} emote", [x.fbt._param("communityName", e.subreddit.name)], {
 					hk: "O2Vj2"
 				}), n.a.createElement(q.a, {
-					className: X.a.close,
+					className: K.a.close,
 					onClick: e.onClose
 				})), n.a.createElement("div", {
-					className: X.a.emojis
+					className: K.a.emojis
 				}, n.a.createElement("div", {
-					className: X.a.emojisTitle
+					className: K.a.emojisTitle
 				}, e.emojiPack.title), n.a.createElement("div", {
-					className: X.a.emojisList
+					className: K.a.emojisList
 				}, s.map(t => n.a.createElement("button", {
-					className: X.a.emoji,
+					className: K.a.emoji,
 					onClick: () => e.onSelectEmoji(Object(U.g)(t, e.editorState)),
 					key: t.id
 				}, n.a.createElement("img", {
-					className: X.a.emojiImage,
+					className: K.a.emojiImage,
 					src: t.emoji.path
 				}))))), n.a.createElement("div", {
-					className: X.a.triangle
+					className: K.a.triangle
 				}))
 			}
 			Y.defaultProps = {
@@ -5130,9 +5130,9 @@
 					return Object(j.r)(e, s.id)
 				}
 			});
-			var Ke = Object(r.b)(qe)(Ue),
-				Xe = s("./src/reddit/pages/meta/MembershipPaywallPage/Footer/index.m.less"),
-				Ye = s.n(Xe);
+			var Xe = Object(r.b)(qe)(Ue),
+				Ke = s("./src/reddit/pages/meta/MembershipPaywallPage/Footer/index.m.less"),
+				Ye = s.n(Ke);
 			const Je = [7900, 8240];
 
 			function Qe(e) {
@@ -5442,7 +5442,7 @@
 					return Object(j.x)(e, s.id)
 				}
 			});
-			var Kt = Object(zt.b)(Object(r.b)(qt, (e, t) => {
+			var Xt = Object(zt.b)(Object(r.b)(qt, (e, t) => {
 					let {
 						subreddit: s,
 						onComplete: i
@@ -5457,8 +5457,8 @@
 						}
 					}
 				})(Object(p.c)(Ut))),
-				Xt = s("./src/reddit/components/Economics/SubredditPremium/CheckoutModal/Payment/index.m.less"),
-				Yt = s.n(Xt);
+				Kt = s("./src/reddit/components/Economics/SubredditPremium/CheckoutModal/Payment/index.m.less"),
+				Yt = s.n(Kt);
 			const {
 				fbt: Jt
 			} = s("./node_modules/fbt/lib/FbtPublic.js");
@@ -5473,7 +5473,7 @@
 					productId: e.target.product.id,
 					subreddit: e.subreddit,
 					onPaymentSuccessful: e.onPaymentComplete
-				}), e.target.type === ts.Subscription && e.target.dollarPrice && n.a.createElement(Kt, {
+				}), e.target.type === ts.Subscription && e.target.dollarPrice && n.a.createElement(Xt, {
 					showCards: !0,
 					correlationId: e.correlationId,
 					key: "checkout-purchase-button",
@@ -6154,25 +6154,25 @@
 				})))
 			}
 			var qs = s("./src/reddit/pages/meta/MembershipPaywallPage/WhatDoYouGet/CommentThread/Tip/index.m.less"),
-				Ks = s.n(qs);
+				Xs = s.n(qs);
 
-			function Xs(e) {
+			function Ks(e) {
 				return n.a.createElement("div", {
-					className: Object(d.a)(e.className, Ks.a.container)
+					className: Object(d.a)(e.className, Xs.a.container)
 				}, n.a.createElement("div", {
-					className: Ks.a.circle
+					className: Xs.a.circle
 				}, e.index), n.a.createElement("div", {
-					className: Ks.a.circleShimmer
+					className: Xs.a.circleShimmer
 				}), n.a.createElement("div", {
-					className: Ks.a.tooltipWrapper
+					className: Xs.a.tooltipWrapper
 				}, n.a.createElement("svg", {
-					className: Ks.a.tooltip,
+					className: Xs.a.tooltip,
 					viewBox: "0 0 140 60",
 					xmlns: "http://www.w3.org/2000/svg"
 				}, n.a.createElement("path", {
 					d: "M8 0C3.58172 0 0 3.58172 0 8V42C0 46.4183 3.58172 50 8 50H60.3934L69.6066 59.2132L78.8198 50H132C136.418 50 140 46.4183 140 42V8C140 3.58172 136.418 0 132 0H8Z"
 				})), n.a.createElement("div", {
-					className: Ks.a.tooltipText
+					className: Xs.a.tooltipText
 				}, e.text)))
 			}
 			var Ys = s("./src/reddit/pages/meta/MembershipPaywallPage/WhatDoYouGet/CommentThread/index.m.less"),
@@ -6195,19 +6195,19 @@
 				}), n.a.createElement("img", {
 					className: Js.a.gif,
 					src: "http://giphygifs.s3.amazonaws.com/media/HX3lSnGXZnaWk/giphy.gif"
-				}), n.a.createElement(Xs, {
+				}), n.a.createElement(Ks, {
 					className: Js.a.tip1,
 					index: 1,
 					text: x.fbt._("Get up to 3 badges", null, {
 						hk: "2ftguA"
 					})
-				}), n.a.createElement(Xs, {
+				}), n.a.createElement(Ks, {
 					className: Js.a.tip2,
 					index: 2,
 					text: x.fbt._("Use animated emojis in comments", null, {
 						hk: "1teakj"
 					})
-				}), n.a.createElement(Xs, {
+				}), n.a.createElement(Ks, {
 					className: Js.a.tip3,
 					index: 3,
 					text: x.fbt._("Embed GIF directly in your comments", null, {
@@ -6321,7 +6321,7 @@
 							...f.n(e),
 							subreddit: f.ib(e)
 						})
-					}, n.a.createElement(Ke, {
+					}, n.a.createElement(Xe, {
 						className: ti.a.faq,
 						subreddit: t
 					})), n.a.createElement(u.a, {
@@ -6425,7 +6425,7 @@
 			})), s.d(t, "g", (function() {
 				return q
 			})), s.d(t, "m", (function() {
-				return K
+				return X
 			}));
 			s("./node_modules/core-js/modules/web.dom.iterable.js");
 			var i = s("./src/reddit/featureFlags/index.ts"),
@@ -6679,7 +6679,7 @@
 						if (i && i.data) return !!i.data[s]
 					}
 				},
-				K = e => e.economics.pointsCopy.data
+				X = e => e.economics.pointsCopy.data
 		},
 		"./src/reddit/selectors/gov.ts": function(e, t, s) {
 			"use strict";
@@ -6735,4 +6735,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/MembershipPaywallPage.f499a460368b9598f6c6.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/MembershipPaywallPage.f5732b4f99fa3ea9162e.js.map

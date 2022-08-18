@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/NotificationsInbox.d96775f047a99c2c630a.js
-// Retrieved at 8/17/2022, 11:40:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/NotificationsInbox.8a4656aa1190aa813e7f.js
+// Retrieved at 8/18/2022, 6:00:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["NotificationsInbox"], {
 		"./src/reddit/actions/pages/notificationsInbox.ts": function(e, t, n) {
@@ -408,7 +408,7 @@
 						}, () => this.forceUnsticky = !1)) : y() >= O && this.setState({
 							sticky: !0
 						})
-					}, d.K), this.forceUnsticky = !1, this.wrapperRef = null, this.state = {
+					}, d.L), this.forceUnsticky = !1, this.wrapperRef = null, this.state = {
 						sticky: !1
 					}
 				}
@@ -654,7 +654,7 @@
 				q = n.n(D);
 			const Y = h.a.wrapped(H.a, "Badge", q.a),
 				X = h.a.wrapped(J.a, "Tab", q.a);
-			var K = e => {
+			var V = e => {
 				const {
 					messagesTabBadgeCount: t,
 					notificationsTabBadgeCount: n
@@ -712,14 +712,14 @@
 					hk: "1e9Jn"
 				}))))))
 			};
-			const V = Object(l.c)({
+			const K = Object(l.c)({
 				messagesTabBadgeCount: P.h,
 				notificationsTabBadgeCount: P.a
 			});
-			var Z = Object(d.b)(V, e => ({
+			var Z = Object(d.b)(K, e => ({
 				clearMessageTabBadgeCount: () => e(Object(u.b)()),
 				markAllAsRead: () => e(Object(m.g)())
-			}))(e => a.a.createElement(K, e));
+			}))(e => a.a.createElement(V, e));
 			const $ = Object(o.u)();
 			class ee extends a.a.Component {
 				render() {
@@ -735,4 +735,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/NotificationsInbox.d96775f047a99c2c630a.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/NotificationsInbox.8a4656aa1190aa813e7f.js.map

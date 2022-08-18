@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Chat~RedesignChat.f8802793a0e7f2a73216.js
-// Retrieved at 8/18/2022, 3:10:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Chat~RedesignChat.8d31714275832495c861.js
+// Retrieved at 8/18/2022, 6:00:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Chat~RedesignChat"], {
 		"./src/chat/actions/apiRequestHeaders.ts": function(e, t, n) {
@@ -173,8 +173,8 @@
 						channelId: t && t.channelId
 					}
 				},
-				H = e => e.find(e => !!e.channelId);
-			var F = n("./src/chat/selectors/channelsFilter.ts"),
+				F = e => e.find(e => !!e.channelId);
+			var H = n("./src/chat/selectors/channelsFilter.ts"),
 				G = n("./src/chat/selectors/experiments.ts"),
 				V = n("./node_modules/reselect/es/index.js"),
 				z = n("./src/chat/selectors/liveChat/index.ts");
@@ -298,7 +298,7 @@
 					const {
 						channelId: a
 					} = e, s = e.type === w.b.Direct, c = e.channelState === v.b.JOINED;
-					!Object(D.h)(n(), e.channelId) && s && c && await t(Fe({
+					!Object(D.h)(n(), e.channelId) && s && c && await t(He({
 						[a]: e
 					})), t(Te({
 						channelId: a
@@ -357,7 +357,7 @@
 					const a = n(),
 						s = e || Object(K.e)(a);
 					s && (await t(Ae(s)), await q.a.markChannelAsRead(), t(Object(m.c)()))
-				}, He = Object(o.a)(Y), Fe = Object(o.a)(Z), Ge = Object(o.a)(Q), Ve = Object(o.a)(X), ze = (e, t, n) => {
+				}, Fe = Object(o.a)(Y), He = Object(o.a)(Z), Ge = Object(o.a)(Q), Ve = Object(o.a)(X), ze = (e, t, n) => {
 					const a = e.map(e => ({
 						user_id: e,
 						nickname: t[e].name
@@ -391,7 +391,7 @@
 							}
 						} = i;
 					if (l && d) {
-						a(He());
+						a(Fe());
 						const s = ze(e, u, l);
 						if (s.length < 2) return;
 						const r = await Object(x.b)(o(), d, s, t);
@@ -425,7 +425,7 @@
 									channelId: t
 								} = e,
 								s = Object(k.getRedirectURL)(Object(k.channelUrl)(t));
-							p.sortedKeys.includes(t) ? (a(_e(t)), a(Object(g.m)(t))) : m.sortedKeys.includes(t) ? (a(Object(c.b)(s)), a(Object(g.m)(t))) : (await a(Fe({
+							p.sortedKeys.includes(t) ? (a(_e(t)), a(Object(g.m)(t))) : m.sortedKeys.includes(t) ? (a(Object(c.b)(s)), a(Object(g.m)(t))) : (await a(He({
 								[t]: e
 							})), a(Object(g.m)(t)), await a(Object(c.b)(s))), n && (await q.a.enterChannel(e), await a(Object(h.r)(t, n, E.c.TEXT)))
 						} else a(Ge()), a(Object(g.cb)(e));
@@ -482,7 +482,7 @@
 						e(et({
 							nextLiveChatPostInfo: t
 						}))
-					} else Object(F.a)(n) !== w.f.Live ? e(Xe()) : e(Qe())
+					} else Object(H.a)(n) !== w.f.Live ? e(Xe()) : e(Qe())
 				}, Xe = () => async (e, t) => {
 					const n = t(),
 						a = P(n);
@@ -500,7 +500,7 @@
 					if (n.channels.firstLoaded) {
 						const t = ((e, t) => {
 							const n = [...t ? [B(e)] : [], ...R(e)];
-							return H(n)
+							return F(n)
 						})(n, !!n.platform.currentPage);
 						e(et({
 							nextChannelInfo: t
@@ -1160,9 +1160,9 @@
 			})), n.d(t, "q", (function() {
 				return B
 			})), n.d(t, "s", (function() {
-				return H
-			})), n.d(t, "r", (function() {
 				return F
+			})), n.d(t, "r", (function() {
+				return H
 			})), n.d(t, "A", (function() {
 				return G
 			})), n.d(t, "m", (function() {
@@ -1339,15 +1339,15 @@
 							redditId: e.messageRedditId
 						}
 					}
-				}, H = (e, t, n) => async (a, s) => {
+				}, F = (e, t, n) => async (a, s) => {
 					if (!e.length) return;
 					for await (const c of e) {
 						const e = Object(N.h)(s(), c);
-						(null == e ? void 0 : e.channelId) && (await T.a.enterChannel(e), await a(F(c, t, n)))
+						(null == e ? void 0 : e.channelId) && (await T.a.enterChannel(e), await a(H(c, t, n)))
 					}
 					const r = Object(I.getRedirectURL)(Object(I.channelUrl)(e[e.length - 1]));
 					a(Object(c.b)(r))
-				}, F = (e, t, n) => async (a, s) => {
+				}, H = (e, t, n) => async (a, s) => {
 					var c;
 					const o = s(),
 						i = r.b.match(t),
@@ -1391,7 +1391,7 @@
 							} = e;
 							return Object(g.b)({
 								endpoint: "https://api.embed.ly/1/extract",
-								method: b.jb.GET,
+								method: b.kb.GET,
 								data: {
 									key: f,
 									url: a,
@@ -1607,7 +1607,7 @@
 							subredditsNames: [],
 							userPostsIds: []
 						},
-						u = e => e.startsWith(d.Ib.Comment) || e.startsWith(d.Ib.Post);
+						u = e => e.startsWith(d.Jb.Comment) || e.startsWith(d.Jb.Post);
 					for (const o in e) {
 						const t = s()(e[o].reduce((e, t) => t && (u(t) || "subreddit" === o) && e.push(t) && e || e, []));
 						switch (o) {
@@ -2001,7 +2001,7 @@
 							} = o.user;
 						if (d && l) {
 							let n;
-							const c = Object(a.c)(s.p.CHAT, s.x.CHAT_SENDBIRD_SESSION_KEY, l.id),
+							const c = Object(a.c)(s.q.CHAT, s.y.CHAT_SENDBIRD_SESSION_KEY, l.id),
 								o = Object(a.b)(c);
 							if (o && o.token) n = o;
 							else {
@@ -2032,19 +2032,19 @@
 							session: r
 						} = n.user;
 					if (r && c) {
-						const e = Object(a.c)(s.p.CHAT, s.x.CHAT_SENDBIRD_SESSION_KEY, c.id);
+						const e = Object(a.c)(s.q.CHAT, s.y.CHAT_SENDBIRD_SESSION_KEY, c.id);
 						if (Object(a.b)(e)) {
 							const t = {};
 							Object(a.d)(e, t, new Date)
 						}
 					}
-				}, O = "SENDBIRD__ADD_MEMBERS_TO_KNOWN_CONTACTS", v = Object(c.a)(O), E = "SENDBIRD__SET_REDDIT_CONTACT_LIST", j = 6 * s.Q, _ = Object(c.a)(E), C = () => async (e, t, n) => {
+				}, O = "SENDBIRD__ADD_MEMBERS_TO_KNOWN_CONTACTS", v = Object(c.a)(O), E = "SENDBIRD__SET_REDDIT_CONTACT_LIST", j = 6 * s.R, _ = Object(c.a)(E), C = () => async (e, t, n) => {
 					let {
 						apiContext: c
 					} = n;
 					const r = t(),
 						o = r.contacts.models,
-						d = Object(a.c)(s.p.CHAT, s.x.CHAT_SENDBIRD_CONTACTS_KEY, r.user.account.id),
+						d = Object(a.c)(s.q.CHAT, s.y.CHAT_SENDBIRD_CONTACTS_KEY, r.user.account.id),
 						u = Object(a.b)(d);
 					if (u && u.version === l.a) return void e(_(u.data));
 					const h = t().user.session;
@@ -2060,7 +2060,7 @@
 					let {
 						apiContext: c
 					} = a;
-					if (e.username === s.E) return;
+					if (e.username === s.F) return;
 					Object(d.c)(n(), e.username) || (t(x({
 						username: e.username
 					})), Object(o.b)(c(), e.username).then(n => {
@@ -2187,7 +2187,7 @@
 						const t = await ((e, t) => Object(c.a)(e, {
 							data: t,
 							endpoint: "/refreshproxy",
-							method: s.jb.POST
+							method: s.kb.POST
 						}))(a(), r);
 						if (t.ok) {
 							const n = t.body;
@@ -2277,9 +2277,9 @@
 			})), n.d(t, "C", (function() {
 				return B
 			})), n.d(t, "H", (function() {
-				return H
-			})), n.d(t, "M", (function() {
 				return F
+			})), n.d(t, "M", (function() {
+				return H
 			})), n.d(t, "L", (function() {
 				return G
 			})), n.d(t, "c", (function() {
@@ -2461,7 +2461,7 @@
 						...Object(h.a)(e)
 					})
 				})(n)
-			}, H = () => async (e, t) => {
+			}, F = () => async (e, t) => {
 				(e => Object(m.a)({
 					noun: "leave_chat",
 					source: a.b.ChatSettings,
@@ -2474,7 +2474,7 @@
 					},
 					...Object(h.a)(e)
 				}))(t())
-			}, F = () => async (e, t) => {
+			}, H = () => async (e, t) => {
 				(e => Object(m.a)({
 					noun: "badging",
 					source: a.b.ChatSettings,
@@ -2976,7 +2976,7 @@
 				const c = await Object(i.b)({
 					data: d(e, t.uploadLeaseHeaders),
 					endpoint: t.uploadLeaseUrl,
-					method: r.jb.POST,
+					method: r.kb.POST,
 					type: null,
 					setup: a
 				});
@@ -3161,9 +3161,9 @@
 			})), n.d(t, "i", (function() {
 				return U
 			})), n.d(t, "v", (function() {
-				return H
-			})), n.d(t, "h", (function() {
 				return F
+			})), n.d(t, "h", (function() {
+				return H
 			})), n.d(t, "m", (function() {
 				return V
 			})), n.d(t, "k", (function() {
@@ -3240,7 +3240,7 @@
 						} = l, a = Object(E.a)(t), s = Object(v.a)(n), c = !!a.prefNightmode;
 						e(w(a)), e(L(s)), e(Object(d.switchTheme)(c))
 					} else e(T(l.error))
-				}, U = "USER__USERS_FETCH_COMPLETED", P = Object(i.a)("USER__USERS_FETCH_PENDING"), R = Object(i.a)(U), B = Object(i.a)("USER__USERS_FETCH_FAILED"), H = e => async (t, n, a) => {
+				}, U = "USER__USERS_FETCH_COMPLETED", P = Object(i.a)("USER__USERS_FETCH_PENDING"), R = Object(i.a)(U), B = Object(i.a)("USER__USERS_FETCH_FAILED"), F = e => async (t, n, a) => {
 					let {
 						gqlContext: c
 					} = a;
@@ -3257,7 +3257,7 @@
 							const n = Object(E.b)(e.body.data.redditorsInfoByIds);
 							n ? t(R(n)) : Object(g.b)(`Failed to normalize RedditorsInfoByIds: ${e.body.data.redditorsInfoByIds}`)
 						} else t(B())
-				}, F = "USERS__USERS_ADD_SELECTED", G = Object(i.a)(F), V = e => async t => {
+				}, H = "USERS__USERS_ADD_SELECTED", G = Object(i.a)(H), V = e => async t => {
 					t(G(e)), t(Object(u.k)(e))
 				}, z = "USERS__USERS_REMOVE_SELECTED", W = Object(i.a)(z), K = "USERS__USERS_REMOVE_ALL_SELECTED", q = Object(i.a)(K), Z = "USERS__BLOCK_USER_COMPLETED", Q = Object(i.a)(Z), Y = Object(i.a)("USERS__BLOCK_USER_FAILED"), X = e => async (t, n, a) => {
 					let {
@@ -3385,7 +3385,7 @@
 					t(v());
 					const c = await ((e, t) => Object(i.a)(e, {
 						endpoint: h(`${r.a.gatewayUrl}/desktopapi/v1/prefs`),
-						method: o.jb.GET,
+						method: o.kb.GET,
 						data: {
 							timestamp: t ? Date.now() : void 0
 						}
@@ -3401,7 +3401,7 @@
 							name: t
 						},
 						endpoint: `${e.apiUrl}/api/add_whitelisted?include_model`,
-						method: o.jb.POST
+						method: o.kb.POST
 					}))(r(), e);
 					l.ok ? l.body.id && t(_(l.body.id)) : (t(C()), t(Object(s.g)({
 						toast: c.a.SomethingWentWrong
@@ -3415,7 +3415,7 @@
 							name: t
 						},
 						endpoint: `${e.apiUrl}/api/remove_whitelisted`,
-						method: o.jb.POST
+						method: o.kb.POST
 					}))(r(), e.name)).ok ? t(y(e.id)) : (t(x()), t(Object(s.g)({
 						toast: c.a.SomethingWentWrong
 					})), t(Object(s.c)()))
@@ -4302,8 +4302,8 @@
 				P = n.n(U),
 				R = n("./node_modules/lodash/sortBy.js"),
 				B = n.n(R),
-				H = n("./src/chat/actions/channel.ts"),
-				F = n("./src/chat/actions/container.ts"),
+				F = n("./src/chat/actions/channel.ts"),
+				H = n("./src/chat/actions/container.ts"),
 				G = n("./src/chat/actions/message/index.ts"),
 				V = n("./src/chat/actions/message/inboxScroller.ts"),
 				z = n("./src/chat/actions/message/richUnit.ts"),
@@ -4551,8 +4551,8 @@
 				Ue = e => Boolean(e.match(/^(\/)(\w+)?$/g));
 			var Pe, Re = n("./src/chat/constants/users.ts"),
 				Be = n("./src/chat/endpoints/accounts/index.ts"),
-				He = n("./src/chat/endpoints/sendbird/index.ts"),
-				Fe = n("./src/chat/helpers/urls/index.ts"),
+				Fe = n("./src/chat/endpoints/sendbird/index.ts"),
+				He = n("./src/chat/helpers/urls/index.ts"),
 				Ge = n("./src/chat/models/Channel/utils.ts"),
 				Ve = n("./src/chat/models/Contact/index.ts"),
 				ze = n("./src/chat/selectors/contacts.ts");
@@ -4604,7 +4604,7 @@
 					if (n && t && o) {
 						const e = Object(C.h)(a(), n);
 						if ((null == e ? void 0 : e.type) === X.b.Group) {
-							if (t === xe.E) return;
+							if (t === xe.F) return;
 							let e = [];
 							const s = Object(ze.c)(a(), t);
 							if (s) e = [{
@@ -4621,7 +4621,7 @@
 									}])
 								}
 							}
-							e.length && await Object(He.j)(c(), o, e, Object(Ge.a)(n))
+							e.length && await Object(Fe.j)(c(), o, e, Object(Ge.a)(n))
 						}
 					}
 				}
@@ -4722,7 +4722,7 @@
 						channelId: t
 					} = e;
 					return async (e, n) => {
-						t && e(Object(H.H)(t))
+						t && e(Object(F.H)(t))
 					}
 				}
 			}, {
@@ -4751,7 +4751,7 @@
 						if (n && i && o) {
 							const t = Object(C.h)(a(), n);
 							if ((null == t ? void 0 : t.type) === X.b.Group) {
-								if (i === xe.E) return;
+								if (i === xe.F) return;
 								let t;
 								const s = Object(ze.c)(a(), i);
 								if (s) t = s.id;
@@ -4762,7 +4762,7 @@
 										n && (t = n.id)
 									}
 								}
-								t && e(Object(ye.b)(Object(Fe.userActionUrl)(n, t, Re.a.Kick, {
+								t && e(Object(ye.b)(Object(He.userActionUrl)(n, t, Re.a.Kick, {
 									source: Se.b.ChatView
 								})))
 							}
@@ -4774,7 +4774,7 @@
 				command: "new",
 				description: "Start new chat",
 				action: () => async e => {
-					const t = Object(Fe.getRedirectURL)(Object(Fe.channelUrl)("create"));
+					const t = Object(He.getRedirectURL)(Object(He.channelUrl)("create"));
 					e(Object(ye.b)(t))
 				}
 			}, {
@@ -4790,7 +4790,7 @@
 						if (!t) return;
 						const a = Object(C.r)(n(), t);
 						if (a) {
-							const t = Object(Fe.getRedirectURL)(Object(Fe.channelUrl)(a.channelId));
+							const t = Object(He.getRedirectURL)(Object(He.channelUrl)(a.channelId));
 							e(Object(ye.b)(t))
 						} else e(qe({
 							commandValue: t
@@ -5147,7 +5147,7 @@
 				})),
 				Rt = n("./src/chat/components/MessageTooltip/Picker/SlashCommandList/index.m.less"),
 				Bt = n.n(Rt);
-			var Ht = e => {
+			var Ft = e => {
 					let {
 						channelId: t,
 						inputCommand: n,
@@ -5263,14 +5263,14 @@
 						})
 					}, v)
 				},
-				Ft = n("./src/lib/lessComponent.tsx"),
+				Ht = n("./src/lib/lessComponent.tsx"),
 				Gt = n("./src/chat/components/Snoomoji/index.tsx"),
 				Vt = n("./src/chat/components/MessageTooltip/Picker/icons.list.m.less"),
 				zt = n.n(Vt);
-			const Wt = Ft.a.div("IconWrapper", zt.a);
+			const Wt = Ht.a.div("IconWrapper", zt.a);
 			Wt.displayName = "IconWrapper";
-			const Kt = Ft.a.div("LoadingIndicator", zt.a),
-				qt = Ft.a.wrapped(e => {
+			const Kt = Ht.a.div("LoadingIndicator", zt.a),
+				qt = Ht.a.wrapped(e => {
 					let {
 						children: t,
 						className: n
@@ -5312,9 +5312,9 @@
 				Jt = n("./src/chat/selectors/members.ts"),
 				$t = n("./src/chat/components/MessageTooltip/Picker/Userlist/index.m.less"),
 				en = n.n($t);
-			const tn = Ft.a.div("LoadingIndicator", en.a),
-				nn = Ft.a.wrapped(Yt.a, "ChatMemberList", en.a),
-				an = Ft.a.wrapped(e => {
+			const tn = Ht.a.div("LoadingIndicator", en.a),
+				nn = Ht.a.wrapped(Yt.a, "ChatMemberList", en.a),
+				an = Ht.a.wrapped(e => {
 					let {
 						children: t,
 						className: n
@@ -5336,7 +5336,7 @@
 					super(e), t = this, this.fetchedFilter = "", this.isMount = !1, this.fetchSubredditChannelUsers = D()((function() {
 						let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : "";
 						t.props.fetchSubredditChannelUsers(e)
-					}), xe.Sb, {
+					}), xe.Tb, {
 						leading: !0,
 						trailing: !1
 					}), this.onArrowUpListener = e => {
@@ -5422,7 +5422,7 @@
 			const hn = 19,
 				mn = 12,
 				pn = 6,
-				bn = Ft.a.textarea("Textarea", un.a);
+				bn = Ht.a.textarea("Textarea", un.a);
 			class gn extends r.a.Component {
 				constructor(e) {
 					super(e), this.offset = 0, this.emitChange = this.emitChange.bind(this), this.emitChangeOnce = this.emitChangeOnce.bind(this), this.handleCursor = this.handleCursor.bind(this), this.handleKeyPress = this.handleKeyPress.bind(this), this.handleKeyDown = this.handleKeyDown.bind(this), this.handleSizing = this.handleSizing.bind(this), this._ref = r.a.createRef()
@@ -5870,7 +5870,7 @@
 					}), o && r.a.createElement(dt, {
 						id: ke.d,
 						shouldArrowShow: !1
-					}, r.a.createElement(Ht, {
+					}, r.a.createElement(Ft, {
 						channelId: t,
 						bindArrowDown: e => this.onArrowDownUserlistListener = e,
 						bindArrowUp: e => this.onArrowUpUserlistListener = e,
@@ -5912,7 +5912,7 @@
 					}, r.a.createElement(_n, null))))
 				}
 			}
-			var Hn = Object(o.b)(Rn, (e, t) => {
+			var Fn = Object(o.b)(Rn, (e, t) => {
 					let {
 						channelId: n
 					} = t;
@@ -5960,20 +5960,20 @@
 						}
 					}
 				})(Bn),
-				Fn = n("./src/chat/helpers/time/index.tsx"),
+				Hn = n("./src/chat/helpers/time/index.tsx"),
 				Gn = n("./src/chat/components/DateSplitter/index.m.less"),
 				Vn = n.n(Gn);
 			var zn = e => r.a.createElement("div", {
 					className: Vn.a.TimeWrapper
 				}, r.a.createElement("time", {
 					className: Vn.a.Time
-				}, Object(Fn.a)(e.date))),
+				}, Object(Hn.a)(e.date))),
 				Wn = n("./src/chat/components/Message/Bubble.tsx"),
 				Kn = n("./src/chat/components/Message/LinkedText.tsx"),
 				qn = n("./src/chat/components/Message/SystemMessage.m.less"),
 				Zn = n.n(qn);
-			const Qn = Ft.a.wrapped(Kn.a, "LinkedText", Zn.a);
-			var Yn = Ft.a.wrapped(e => {
+			const Qn = Ht.a.wrapped(Kn.a, "LinkedText", Zn.a);
+			var Yn = Ht.a.wrapped(e => {
 					const {
 						message: t,
 						className: n
@@ -6171,7 +6171,7 @@
 							var n;
 							const a = t[e + 1];
 							return null === (n = null == a ? void 0 : a.sender) || void 0 === n ? void 0 : n.userId
-						})(a, o), f = p === u, O = g === u, v = l - h < 5 * xe.kb, E = m && m - l < 5 * xe.kb, j = !O || O && !E, _ = e.messageType === we.d.SYSTEM && ((e, t) => {
+						})(a, o), f = p === u, O = g === u, v = l - h < 5 * xe.lb, E = m && m - l < 5 * xe.lb, j = !O || O && !E, _ = e.messageType === we.d.SYSTEM && ((e, t) => {
 							const {
 								mentionType: n,
 								mentionedUsers: a,
@@ -6234,8 +6234,8 @@
 				fa = n("./src/chat/components/MessageQuickReplyPicker/index.m.less"),
 				Oa = n.n(fa);
 			const va = ["upvote", "snoo"],
-				Ea = Ft.a.div("SnooWrapper", Oa.a),
-				ja = Ft.a.wrapped(e => {
+				Ea = Ht.a.div("SnooWrapper", Oa.a),
+				ja = Ht.a.wrapped(e => {
 					const {
 						className: t,
 						text: n,
@@ -6257,7 +6257,7 @@
 						}
 					})())
 				}, "ReplyItem", Oa.a);
-			var _a = Ft.a.wrapped(e => {
+			var _a = Ht.a.wrapped(e => {
 					const {
 						className: t,
 						channelId: n
@@ -6390,11 +6390,11 @@
 			}), Ua = Object(o.b)(Da, e => ({
 				getPreviousMessages: () => e(Object(G.v)()),
 				removeAndResetMessages: t => e(Object(V.c)(t)),
-				resetChannelMessageList: t => e(Object(H.M)(t)),
+				resetChannelMessageList: t => e(Object(F.M)(t)),
 				resetRichUnisDataReceived: () => e(Object(z.f)()),
-				windowSizeChanged: t => e(Object(F.windowSizeChangedAction)(t))
+				windowSizeChanged: t => e(Object(H.windowSizeChangedAction)(t))
 			})), Pa = 30, Ra = 2 * wa.a.Messages, Ba = 100;
-			class Ha extends r.a.Component {
+			class Fa extends r.a.Component {
 				constructor(e) {
 					super(e), this.getWindowDimensions = () => {
 						const {
@@ -6549,7 +6549,7 @@
 					}) : null, r.a.createElement(dt, {
 						id: ke.c,
 						shouldArrowShow: !1
-					}, r.a.createElement(ya, null)), !E && r.a.createElement(Hn, {
+					}, r.a.createElement(ya, null)), !E && r.a.createElement(Fn, {
 						className: Aa.a.MessageInput,
 						channelId: e.channelId,
 						isLocked: e.isFrozen,
@@ -6561,7 +6561,7 @@
 					}))
 				}
 			}
-			var Fa = Ua(Ha),
+			var Ha = Ua(Fa),
 				Ga = n("./src/chat/components/MinimizedPortalContainer/index.tsx"),
 				Va = n("./src/higherOrderComponents/makeAsync.tsx"),
 				za = n("./src/lib/loadWithRetries/index.ts");
@@ -6624,10 +6624,10 @@
 				cs = n("./src/chat/controls/OverlayControlBar/index.tsx"),
 				rs = n("./src/chat/controls/OverlayHeader/index.m.less"),
 				os = n.n(rs);
-			const is = Ft.a.header("Header", os.a),
-				ls = Ft.a.h1("Title", os.a),
-				ds = Ft.a.span("Normal", os.a),
-				us = Ft.a.span("Warning", os.a);
+			const is = Ht.a.header("Header", os.a),
+				ls = Ht.a.h1("Title", os.a),
+				ds = Ht.a.span("Normal", os.a),
+				us = Ht.a.span("Warning", os.a);
 			var hs = e => {
 					let {
 						message: t,
@@ -6738,13 +6738,13 @@
 						O = Object(o.e)(C.x),
 						v = Object(c.useMemo)(() => O >= wa.a.InitChannels || !f, [O, f]),
 						E = Object(c.useCallback)(() => {
-							const e = Object(Fe.getShareToNewChatUrl)(t);
+							const e = Object(He.getShareToNewChatUrl)(t);
 							n(Object(ye.b)(e))
 						}, [n, t]),
 						j = Object(c.useCallback)((e, t) => {
 							h(n => e ? [...n, t] : n.filter(e => e !== t))
 						}, []),
-						_ = Object(c.useMemo)(() => Object(Fe.getChatUnitType)(t), [t]),
+						_ = Object(c.useMemo)(() => Object(He.getChatUnitType)(t), [t]),
 						I = Object(c.useMemo)(() => !Boolean(u.length), [u]),
 						y = Object(c.useMemo)(() => bs._({
 							"*": "Share to {amount of chats} chats",
@@ -6782,7 +6782,7 @@
 						primaryButtonText: y,
 						primaryButtonDisabled: I || b,
 						secondaryButtonAction: () => {
-							n(Object(H.P)())
+							n(Object(F.P)())
 						},
 						primaryButtonAction: () => {
 							g(!0), n(Object(G.s)(u, t, we.c.TEXT)), n(Object(l.I)())
@@ -7015,17 +7015,17 @@
 				}),
 				Rs = n("./src/chat/actions/channelsFilter/index.ts"),
 				Bs = n("./src/chat/components/UserMetaInfo/index.m.less"),
-				Hs = n.n(Bs);
-			var Fs = e => {
+				Fs = n.n(Bs);
+			var Hs = e => {
 					let {
 						contact: t
 					} = e;
 					return r.a.createElement("div", {
-						className: Hs.a.UserMetaInfo
+						className: Fs.a.UserMetaInfo
 					}, ((e, t) => {
 						const n = (new Date).getTime(),
-							a = Math.round(Math.abs((e - n) / xe.B)),
-							s = Math.round(Math.abs((e - n) / xe.sc));
+							a = Math.round(Math.abs((e - n) / xe.C)),
+							s = Math.round(Math.abs((e - n) / xe.tc));
 						let c = "";
 						const r = `${a}${oe.fbt._("d",null,{hk:"1d5Wxl"})}`,
 							o = `${s}${oe.fbt._("y",null,{hk:"3DaEfY"})}`;
@@ -7034,7 +7034,7 @@
 				},
 				Gs = n("./src/chat/controls/MediaObject/index.m.less"),
 				Vs = n.n(Gs);
-			const zs = Ft.a.wrapped(e => {
+			const zs = Ht.a.wrapped(e => {
 				const [t, n, a] = r.a.Children.toArray(e.children);
 				return r.a.createElement("div", {
 					className: e.className
@@ -7109,7 +7109,7 @@
 				let {
 					inviterContact: t
 				} = e;
-				return t ? r.a.createElement(ac, null, r.a.createElement(Fs, {
+				return t ? r.a.createElement(ac, null, r.a.createElement(Hs, {
 					contact: t
 				})) : null
 			}, cc = e => {
@@ -7250,10 +7250,10 @@
 					}),
 					primaryButtonText: E,
 					primaryButtonAction: () => {
-						p && (s(Object(H.C)(t, p)), g && s(Object(l.q)()), f && s(Object(l.s)(t, b)))
+						p && (s(Object(F.C)(t, p)), g && s(Object(l.q)()), f && s(Object(l.s)(t, b)))
 					},
 					secondaryButtonAction: () => {
-						s(Object(H.Q)(W.b.INVITED, t))
+						s(Object(F.Q)(W.b.INVITED, t))
 					}
 				}, r.a.createElement(ic, {
 					userName: null === (n = null == m ? void 0 : m.inviter) || void 0 === n ? void 0 : n.name,
@@ -7264,13 +7264,13 @@
 						hk: "1ws6QH"
 					}),
 					secondaryButtonAction: () => {
-						p && (s(Object(H.C)(t, p, !0)), s(Object(l.r)(t)))
+						p && (s(Object(F.C)(t, p, !0)), s(Object(l.r)(t)))
 					},
 					primaryButtonText: nc._("Accept", null, {
 						hk: "249yqF"
 					}),
 					primaryButtonAction: () => {
-						s(Object(H.z)(t)), s(Object(l.p)(t)), h && u === X.f.Requests && s(Object(Rs.d)({
+						s(Object(F.z)(t)), s(Object(l.p)(t)), h && u === X.f.Requests && s(Object(Rs.d)({
 							filter: X.f.ALL
 						}))
 					},
@@ -7392,8 +7392,8 @@
 					isChannelInPendingState: C.L,
 					queryParamsFromUrl: wc.c
 				}),
-				Hc = Object(o.b)(Bc);
-			class Fc extends r.a.Component {
+				Fc = Object(o.b)(Bc);
+			class Hc extends r.a.Component {
 				constructor() {
 					super(...arguments), this.mainRef = r.a.createRef()
 				}
@@ -7442,7 +7442,7 @@
 								});
 								t ? n = r.a.createElement("div", {
 									className: Pc.a.Modal
-								}, t) : e && d && (n = r.a.createElement(r.a.Fragment, null, r.a.createElement(Fa, {
+								}, t) : e && d && (n = r.a.createElement(r.a.Fragment, null, r.a.createElement(Ha, {
 									channel: e
 								}), s && !c && r.a.createElement(M, {
 									dropZoneRef: this.mainRef
@@ -7467,7 +7467,7 @@
 					}, this.getContent(), r.a.createElement(Ls, null))
 				}
 			}
-			t.b = Hc(Fc)
+			t.b = Fc(Hc)
 		},
 		"./src/chat/components/Intro/index.m.less": function(e, t, n) {
 			e.exports = {
@@ -7753,8 +7753,8 @@
 				})(U),
 				R = n("./src/chat/components/Message/LinkedText.tsx"),
 				B = n("./src/lib/portal/index.tsx"),
-				H = n("./src/chat/constants/keys.ts"),
-				F = n("./src/chat/icons/svgs/NavClose/index.tsx"),
+				F = n("./src/chat/constants/keys.ts"),
+				H = n("./src/chat/icons/svgs/NavClose/index.tsx"),
 				G = n("./src/chat/components/MediaPreview/index.m.less"),
 				V = n.n(G);
 			var z = e => {
@@ -7767,7 +7767,7 @@
 						(null == a ? void 0 : a.current) && a.current.focus()
 					}, []);
 					const r = Object(s.useCallback)(e => {
-						e.key === H.h && t()
+						e.key === F.h && t()
 					}, [t]);
 					return c.a.createElement(B.a, null, c.a.createElement("div", {
 						ref: a,
@@ -7779,7 +7779,7 @@
 						"aria-pressed": "false"
 					}, c.a.createElement(O.d, {
 						className: V.a.CloseIcon
-					}, c.a.createElement(F.a, null)), n && c.a.createElement("img", {
+					}, c.a.createElement(H.a, null)), n && c.a.createElement("img", {
 						className: V.a.Image,
 						src: n,
 						onClick: e => e.stopPropagation()
@@ -8090,8 +8090,8 @@
 				},
 				Re = n("./src/chat/components/Snoomoji/index.tsx"),
 				Be = n("./src/chat/controls/Gif/index.tsx"),
-				He = n("./src/chat/controls/TooltipHooked/loader.tsx"),
-				Fe = n("./src/chat/controls/TooltipHooked/TooltipConfig.ts"),
+				Fe = n("./src/chat/controls/TooltipHooked/loader.tsx"),
+				He = n("./src/chat/controls/TooltipHooked/TooltipConfig.ts"),
 				Ge = n("./src/chat/helpers/dom.ts"),
 				Ve = n("./src/chat/helpers/time/index.tsx");
 
@@ -8160,7 +8160,7 @@
 					noPadding: O
 				} = e;
 				var E, j;
-				const _ = Object(l.b)(Object(Fe.h)(Boolean(h))),
+				const _ = Object(l.b)(Object(He.h)(Boolean(h))),
 					C = Object(r.e)(e => Object(Ze.m)(e, null == g ? void 0 : g.channelId)),
 					I = Object(r.e)(e => Object(Ze.l)(e)),
 					y = Object(r.e)($e.a) === Je.a.SETTINGS,
@@ -8195,7 +8195,7 @@
 					className: Xe.a.UserPic,
 					userId: null === (j = null == g ? void 0 : g.sender) || void 0 === j ? void 0 : j.userId,
 					isFlipping: !0
-				}), (null == g ? void 0 : g.createdAt) && c.a.createElement(He.a, {
+				}), (null == g ? void 0 : g.createdAt) && c.a.createElement(Fe.a, {
 					arrowProps: _.arrowProps,
 					popperProps: _.popperProps,
 					visible: _.visible,
@@ -8225,7 +8225,7 @@
 					inPreview: p,
 					showUserPic: b,
 					withButton: g
-				} = e, O = Object(r.e)(e => Object(Qe.b)(e, h.messageData)), v = Object(r.e)(Ze.j), E = Object(l.b)(Object(Fe.b)(n)), j = Object(l.b)(Object(Fe.d)()), _ = Object(l.b)(Object(Fe.e)(n)), C = Object(r.e)(e => Object(Ze.m)(e, h.channelId)), y = Object(r.e)(e => Object(Ze.l)(e)), [x, S] = Object(s.useState)(), N = Object(s.useRef)(x);
+				} = e, O = Object(r.e)(e => Object(Qe.b)(e, h.messageData)), v = Object(r.e)(Ze.j), E = Object(l.b)(Object(He.b)(n)), j = Object(l.b)(Object(He.d)()), _ = Object(l.b)(Object(He.e)(n)), C = Object(r.e)(e => Object(Ze.m)(e, h.channelId)), y = Object(r.e)(e => Object(Ze.l)(e)), [x, S] = Object(s.useState)(), N = Object(s.useRef)(x);
 				Object(s.useEffect)(() => (N.current = x, clearTimeout(Number(N.current))), [x]);
 				const k = C || !y;
 				if (!h) return null;
@@ -8233,7 +8233,7 @@
 					type: T,
 					report: M,
 					collapsedInvitePreview: A
-				} = h.messageData, L = h.messageType === et && h.error && h.clientMessageId, D = T !== ct && T !== lt && (T !== it || T === it && p), U = g && !L && !M, B = h.messageType === tt && U, H = ((e, t, n, s, r, o) => {
+				} = h.messageData, L = h.messageType === et && h.error && h.clientMessageId, D = T !== ct && T !== lt && (T !== it || T === it && p), U = g && !L && !M, B = h.messageType === tt && U, F = ((e, t, n, s, r, o) => {
 					var i, l, d, u, h;
 					const {
 						messageType: m,
@@ -8316,7 +8316,7 @@
 						default:
 							return O
 					}
-				})(h, p, n, O, d, k), F = ((e, t, n, s, r, i, l, d) => c.a.createElement(He.a, {
+				})(h, p, n, O, d, k), H = ((e, t, n, s, r, i, l, d) => c.a.createElement(Fe.a, {
 					popperProps: e.popperProps,
 					visible: e.visible,
 					arrowProps: e.arrowProps,
@@ -8352,7 +8352,7 @@
 					inPreview: l,
 					isMod: r,
 					channelId: d.channelId
-				})), c.a.createElement(He.a, {
+				})), c.a.createElement(Fe.a, {
 					arrowProps: t.arrowProps,
 					popperProps: t.popperProps,
 					visible: t.visible,
@@ -8391,7 +8391,7 @@
 						[Xe.a.richUnit]: mt(h, !d),
 						[Xe.a.richUnitResponsive]: mt(h, d)
 					})
-				}, h.messageType === f.d.USER && c.a.createElement(He.a, {
+				}, h.messageType === f.d.USER && c.a.createElement(Fe.a, {
 					arrowProps: _.arrowProps,
 					popperProps: _.popperProps,
 					visible: _.visible,
@@ -8407,7 +8407,7 @@
 				}(A) ? c.a.createElement(w, {
 					channelId: h.channelId,
 					messageId: h.messageId
-				}) : H), B && F, m && c.a.createElement(dt, null), p && ht(h) && function(e) {
+				}) : F), B && H, m && c.a.createElement(dt, null), p && ht(h) && function(e) {
 					return Boolean(!(null == e ? void 0 : e.shouldCollapse) && (null == e ? void 0 : e.shouldShowReportPrompt))
 				}(A) && c.a.createElement(oe, {
 					channelId: h.channelId,
@@ -9655,19 +9655,19 @@
 				B = Object(c.b)(R, (e, t) => ({
 					changeModeClicked: () => e(Object(T.themeToggle)())
 				})),
-				H = w.a.div("Wrapper", P.a);
+				F = w.a.div("Wrapper", P.a);
 			B(e => {
 				let {
 					changeModeClicked: t,
 					theme: n
 				} = e;
-				return s.a.createElement(H, {
+				return s.a.createElement(F, {
 					onClick: t
 				}, s.a.createElement(D, {
 					active: !0
 				}))
 			});
-			var F = n("./src/chat/constants/channels.ts"),
+			var H = n("./src/chat/constants/channels.ts"),
 				G = n("./src/chat/constants/dropdown.ts"),
 				V = n("./src/chat/controls/Dropdown/Row.tsx"),
 				z = n("./src/chat/controls/TooltipHooked/TooltipConfig.ts"),
@@ -9973,7 +9973,7 @@
 								onViewProfile: a,
 								inviterName: s
 							} = e;
-							if (t && t.channelState === F.b.JOINED) {
+							if (t && t.channelState === H.b.JOINED) {
 								const e = t.members.find(e => e.id !== n);
 								if (e && e.name) return a(e.name)
 							}
@@ -10149,11 +10149,11 @@
 						return (e => e.renameGroupChat)(e).ivVisible
 					}
 				});
-			class He extends a.Component {
+			class Fe extends a.Component {
 				constructor() {
 					super(...arguments), this.displayName = "RenameGroupInput", this.state = {
 						groupName: this.props.name || ""
-					}, this.getAvailableCharacters = () => F.g - this.state.groupName.length, this.hideChannelNameInput = () => {}, this.handleChannelNameInput = e => this.setState({
+					}, this.getAvailableCharacters = () => H.g - this.state.groupName.length, this.hideChannelNameInput = () => {}, this.handleChannelNameInput = e => this.setState({
 						groupName: e
 					}), this.submitGroupName = () => {
 						this.props.onUpdateChannelName(this.state.groupName.trim()), this.props.hideChannelNameInput(), this.props.saveRenamedGroup()
@@ -10188,7 +10188,7 @@
 						}),
 						withBackground: !0,
 						value: n,
-						maxLength: F.g
+						maxLength: H.g
 					}, s.a.createElement(Te.a, {
 						count: r
 					})), s.a.createElement(Ue, null, s.a.createElement(Pe, {
@@ -10198,20 +10198,20 @@
 						hk: "2TSLl5"
 					})), s.a.createElement(Re, {
 						noBorder: !0,
-						disabled: r < 0 || r >= F.g,
+						disabled: r < 0 || r >= H.g,
 						onClick: c
 					}, m.fbt._("Save", null, {
 						hk: "4yMsMq"
 					})))))
 				}
 			}
-			var Fe = Object(c.b)(Be, e => ({
+			var He = Object(c.b)(Be, e => ({
 					onUpdateChannelName: t => e(Object(E.j)(t)),
 					saveRenamedGroup: () => e(Object(u.T)()),
 					hideChannelNameInput: () => e(Object(l.b)({
 						isVisible: !1
 					}))
-				}))(He),
+				}))(Fe),
 				Ge = n("./src/chat/helpers/dom.ts"),
 				Ve = n("./src/chat/icons/svgs/ArrowLeft/index.tsx"),
 				ze = n("./src/chat/components/OverlayNav/index.m.less"),
@@ -10335,7 +10335,7 @@
 						toggleChannelNameInput: v,
 						showMenu: !!i,
 						dropdownId: a
-					}), t && d && s.a.createElement(Fe, {
+					}), t && d && s.a.createElement(He, {
 						channelId: t,
 						name: d
 					}))
@@ -10863,7 +10863,7 @@
 					isEmptyCounter: !0
 				})))
 			};
-			var H = e => {
+			var F = e => {
 					let {
 						className: t
 					} = e;
@@ -10877,7 +10877,7 @@
 						isSelected: e.id === (null == a ? void 0 : a.id)
 					})), !1)
 				},
-				F = n("./src/chat/components/Scroller/index.tsx"),
+				H = n("./src/chat/components/Scroller/index.tsx"),
 				G = n("./node_modules/react-router-redux/es/index.js"),
 				V = n("./src/chat/constants/channels.ts"),
 				z = n("./src/chat/icons/svgs/ChatNew/index.tsx"),
@@ -10912,13 +10912,13 @@
 					t = Object(c.e)(O.q);
 				switch (e) {
 					case Y.f.Live:
-						return s.a.createElement(H, null);
+						return s.a.createElement(F, null);
 					case Y.f.Messages:
 						return s.a.createElement(T, null);
 					case Y.f.Requests:
 						return s.a.createElement(_, null);
 					default:
-						return s.a.createElement(s.a.Fragment, null, t && s.a.createElement(H, null), !t && s.a.createElement(_, null), s.a.createElement(T, null))
+						return s.a.createElement(s.a.Fragment, null, t && s.a.createElement(F, null), !t && s.a.createElement(_, null), s.a.createElement(T, null))
 				}
 			};
 			var te = () => {
@@ -10940,7 +10940,7 @@
 						isEmptyCounter: r && !a
 					}), s.a.createElement("div", {
 						className: $.a.CreateChannelWrapper
-					}, s.a.createElement(Z, null))), o && s.a.createElement(Q.a, null), s.a.createElement(F.a, {
+					}, s.a.createElement(Z, null))), o && s.a.createElement(Q.a, null), s.a.createElement(H.a, {
 						loadMoreRows: () => {
 							!t && n && e(Object(l.F)())
 						},
@@ -12534,7 +12534,7 @@
 							const t = e.getState();
 							e.dispatch(Object(d.sizeChanged)(h.a.EMBED));
 							const a = t.platform.currentPage;
-							a && a.meta && a.meta.name === o.Nb.CHAT_MINIMIZE && e.dispatch(Object(l.P)());
+							a && a.meta && a.meta.name === o.Ob.CHAT_MINIMIZE && e.dispatch(Object(l.P)());
 							const {
 								action: s,
 								noun: c,
@@ -12656,7 +12656,7 @@
 			const j = (e, t) => {
 				const n = t && t.type === o.SIZE_CHANGED ? t.payload : e.container.size,
 					a = n === p.a.MINIMIZED || n === p.a.HIDDEN,
-					s = t && t.type === l.a ? t.payload && t.payload.routeMatch && t.payload.routeMatch.route.meta.name === c.Nb.CHAT_MINIMIZE : e.platform.currentPage && e.platform.currentPage.meta && e.platform.currentPage.meta.name === c.Nb.CHAT_MINIMIZE;
+					s = t && t.type === l.a ? t.payload && t.payload.routeMatch && t.payload.routeMatch.route.meta.name === c.Ob.CHAT_MINIMIZE : e.platform.currentPage && e.platform.currentPage.meta && e.platform.currentPage.meta.name === c.Ob.CHAT_MINIMIZE;
 				return !a && s
 			};
 			t.a = e => {
@@ -12678,7 +12678,7 @@
 					})(a) : s()(() => e.dispatch(Object(d.k)()))
 				};
 				let a;
-				Object(v.a)(e.getState()) === c.Nb.CHAT_MINIMIZE ? s()(async () => {
+				Object(v.a)(e.getState()) === c.Ob.CHAT_MINIMIZE ? s()(async () => {
 					j(e.getState()) ? n() : (await e.dispatch(Object(d.k)(!1)), e.getState().sendbird.session.token && await e.dispatch(Object(i.c)()))
 				}) : n();
 				return i => g => {
@@ -12693,7 +12693,7 @@
 							const t = g.payload !== p.a.MINIMIZED && g.payload !== p.a.HIDDEN;
 							t && (clearTimeout(a), a = null), I && t && !y && n(), !y || g.payload !== p.a.HIDDEN && g.payload !== p.a.MINIMIZED || (a = setTimeout(() => {
 								e.dispatch(Object(h.f)())
-							}, 10 * c.kb));
+							}, 10 * c.lb));
 							break
 						}
 						case l.a: {
@@ -12755,7 +12755,7 @@
 				r = n("./src/chat/actions/channel.ts"),
 				o = n("./src/chat/actions/session.ts"),
 				i = n("./src/chat/helpers/errors.ts");
-			const l = 5 * c.kb;
+			const l = 5 * c.lb;
 			t.a = e => {
 				const t = s()(() => {
 					e.dispatch(Object(o.d)())
@@ -12917,8 +12917,8 @@
 				i = n("./src/lib/constants/index.ts");
 			let l, d;
 			const u = s()(e => {
-				Object(o.d)(l, e, 5 * i.kb)
-			}, 5 * i.Sb, {
+				Object(o.d)(l, e, 5 * i.lb)
+			}, 5 * i.Tb, {
 				leading: !1,
 				trailing: !0
 			});
@@ -12926,7 +12926,7 @@
 			const m = () => {
 				h && clearInterval(h), h = setInterval(() => {
 					void 0 === Object(o.b)(l) && Object(c.c)()
-				}, 5 * i.kb)
+				}, 5 * i.lb)
 			};
 			t.a = e => {
 				if ("undefined" == typeof window) return r.a;
@@ -12940,7 +12940,7 @@
 						}
 					} = t,
 					s = n && n.id || "unknown";
-				l = Object(o.c)(i.p.CHAT, i.x.CHAT_UNREAD_MESSAGE_COUNT_KEY, s), u(a.unreadMessages), m();
+				l = Object(o.c)(i.q.CHAT, i.y.CHAT_UNREAD_MESSAGE_COUNT_KEY, s), u(a.unreadMessages), m();
 				try {
 					window.parent.addEventListener("focus", m)
 				} catch (h) {}
@@ -12972,7 +12972,7 @@
 				s = n("./src/lib/makeApiRequest/index.ts");
 			const c = async e => Object(s.a)(e, {
 				endpoint: `${e.apiUrl}/api/v1/me`,
-				method: a.jb.GET,
+				method: a.kb.GET,
 				data: {
 					raw_json: 1
 				}
@@ -12982,10 +12982,10 @@
 					raw_json: 1
 				},
 				endpoint: `${e.apiUrl}/api/block_user`,
-				method: a.jb.POST
+				method: a.kb.POST
 			}), o = async (e, t) => Object(s.a)(e, {
 				endpoint: `${e.apiUrl}/user/${t}/about`,
-				method: a.jb.GET,
+				method: a.kb.GET,
 				data: {
 					raw_json: 1
 				}
@@ -13073,7 +13073,7 @@
 					return Boolean(null === (t = null == e ? void 0 : e.data) || void 0 === t ? void 0 : t.redditorsInfoByIds)
 				},
 				l = e => Object(s.a)(e, {
-					method: a.jb.GET,
+					method: a.kb.GET,
 					endpoint: `${e.apiUrl}/prefs/blocked.json`
 				}),
 				d = e => Object(c.a)(e, {
@@ -13160,7 +13160,7 @@
 					minute: "2-digit"
 				}).format,
 				o = e => {
-					const t = c - s.B,
+					const t = c - s.C,
 						n = new Date(c).setDate(1),
 						r = new Date(n).setMonth(0),
 						o = new Date(e);
@@ -13365,7 +13365,7 @@
 						className: n,
 						style: u
 					});
-					const h = (e => e.replace(l.Ib.Account + "_", ""))(i),
+					const h = (e => e.replace(l.Jb.Account + "_", ""))(i),
 						{
 							avatar: g,
 							color: f
@@ -13951,7 +13951,7 @@
 
 			function r(e) {
 				if (e.contact_account_id || e.id) return {
-					id: e.contact_account_id || `${a.Ib.Account}_${e.id}`,
+					id: e.contact_account_id || `${a.Jb.Account}_${e.id}`,
 					name: e.name,
 					created: 1e3 * e.created_utc,
 					profileImg: e.profile_img,
@@ -13968,7 +13968,7 @@
 					isNSFW: !1
 				},
 				i = e => ({
-					created: e.date * a.Sb,
+					created: e.date * a.Tb,
 					id: e.id,
 					name: e.name,
 					profileImg: e.icon_img
@@ -14752,7 +14752,7 @@
 			}));
 			var a = n("./src/lib/constants/index.ts"),
 				s = n("./src/lib/convertToCamelCase/index.ts");
-			const c = `${a.Ib.Account}_`,
+			const c = `${a.Jb.Account}_`,
 				r = e => {
 					if (null == e ? void 0 : e.length) return e.reduce((e, t) => {
 						const n = function(e) {
@@ -15122,10 +15122,10 @@
 				P = n.n(U),
 				R = n("./src/chat/actions/channel/dropdown.ts"),
 				B = n("./src/chat/actions/message/inboxScroller.ts"),
-				H = n("./src/chat/constants/channels.ts");
-			const F = {};
+				F = n("./src/chat/constants/channels.ts");
+			const H = {};
 			var G = function() {
-				let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : F,
+				let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : H,
 					t = arguments.length > 1 ? arguments[1] : void 0;
 				switch (t.type) {
 					case b.g:
@@ -15136,7 +15136,7 @@
 					case b.a: {
 						const {
 							channels: n
-						} = t.payload, a = P()(e, (e, t, a) => n[a] && t.channelState === H.b.PARTIAL && (e[a] = n[a]) && e || e, {});
+						} = t.payload, a = P()(e, (e, t, a) => n[a] && t.channelState === F.b.PARTIAL && (e[a] = n[a]) && e || e, {});
 						return {
 							...n,
 							...e,
@@ -15160,7 +15160,7 @@
 							channelId: n
 						} = t.payload, a = {
 							...e[n],
-							channelState: H.b.JOINED
+							channelState: F.b.JOINED
 						};
 						return {
 							...e,
@@ -15186,7 +15186,7 @@
 							a = {
 								...e[n.channelId],
 								...n,
-								channelState: H.b.INVITED
+								channelState: F.b.INVITED
 							},
 							s = {
 								[n.channelId]: a
@@ -16084,8 +16084,8 @@
 							return e
 					}
 				},
-				He = n("./src/chat/actions/message/richUnit.ts");
-			const Fe = {
+				Fe = n("./src/chat/actions/message/richUnit.ts");
+			const He = {
 					posts: {},
 					userPosts: {},
 					comments: {},
@@ -16097,11 +16097,11 @@
 					[t.id.toLowerCase()]: t
 				} : e, {}) : {};
 			var Ve = function() {
-					let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : Fe,
+					let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : He,
 						t = arguments.length > 1 ? arguments[1] : void 0;
 					var n, a, s, c;
 					switch (t.type) {
-						case He.b:
+						case Fe.b:
 							return {
 								...e, posts: {
 									...e.posts,
@@ -16117,7 +16117,7 @@
 									...Ge((null === (c = t.payload) || void 0 === c ? void 0 : c.subreddits) || {})
 								}, dataReceived: !0
 							};
-						case He.a:
+						case Fe.a:
 							return {
 								...e, dataReceived: !1
 							};
@@ -16490,7 +16490,7 @@
 			function Bt(e, t) {
 				return e === t || (0 === e.length && 0 === t.length || !(0 === e.length && t.length > 0) && (!(e.length > 0 && 0 === t.length) && (1 === e.length && 1 === t.length ? e[0] === t[0] : 2 === e.length && 2 === t.length ? e[0] === t[0] && e[1] === t[1] : 3 === e.length && 3 === t.length ? e[0] === t[0] && e[1] === t[1] && e[2] === t[2] : We()(e, t))))
 			}
-			var Ht = function() {
+			var Ft = function() {
 					let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : Rt,
 						t = arguments.length > 1 ? arguments[1] : void 0;
 					switch (t.type) {
@@ -16510,14 +16510,14 @@
 							return e
 					}
 				},
-				Ft = n("./src/chat/actions/uploads/index.ts"),
+				Ht = n("./src/chat/actions/uploads/index.ts"),
 				Gt = n("./src/chat/models/Uploads/index.ts");
 			const Vt = {};
 			var zt = function() {
 				let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : Vt,
 					t = arguments.length > 1 ? arguments[1] : void 0;
 				switch (t.type) {
-					case Ft.a: {
+					case Ht.a: {
 						const {
 							channelId: n,
 							upload: {
@@ -16528,7 +16528,7 @@
 							[n]: [...new Set([...e[n] || [], a])]
 						}
 					}
-					case Ft.c: {
+					case Ht.c: {
 						const {
 							id: n,
 							channelId: a,
@@ -16561,10 +16561,10 @@
 				let e = arguments.length > 0 && void 0 !== arguments[0] && arguments[0],
 					t = arguments.length > 1 ? arguments[1] : void 0;
 				switch (t.type) {
-					case Ft.e:
+					case Ht.e:
 						return t.payload.isDrop;
 					case Tt.b:
-					case Ft.a:
+					case Ht.a:
 						return !1;
 					default:
 						return e
@@ -16574,19 +16574,19 @@
 				let e = arguments.length > 0 && void 0 !== arguments[0] && arguments[0],
 					t = arguments.length > 1 ? arguments[1] : void 0;
 				switch (t.type) {
-					case Ft.e:
+					case Ht.e:
 						return t.payload.isOver;
 					default:
 						return e
 				}
 			};
 			const qt = {};
-			Ft.c;
+			Ht.c;
 			var Zt = function() {
 					let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : qt,
 						t = arguments.length > 1 ? arguments[1] : void 0;
 					switch (t.type) {
-						case Ft.a: {
+						case Ht.a: {
 							const {
 								upload: n
 							} = t.payload;
@@ -16598,7 +16598,7 @@
 								}
 							}
 						}
-						case Ft.c: {
+						case Ht.c: {
 							const {
 								id: n,
 								status: a
@@ -16611,7 +16611,7 @@
 								}
 							}
 						}
-						case Ft.b: {
+						case Ht.b: {
 							const {
 								id: n,
 								progress: a
@@ -16705,7 +16705,7 @@
 						return e
 				}
 			};
-			const cn = n("./src/lib/constants/index.ts").D;
+			const cn = n("./src/lib/constants/index.ts").E;
 			var rn = Object($t.a)((function() {
 				let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : cn,
 					t = arguments.length > 1 ? arguments[1] : void 0;
@@ -16824,7 +16824,7 @@
 				themes: wt,
 				toast: At,
 				tooltipId: Ut,
-				typingIndicator: Ht,
+				typingIndicator: Ft,
 				user: On,
 				uploads: Jt,
 				lastAction: yt.a
@@ -17007,11 +17007,11 @@
 				}),
 				i = {
 					action: c.b,
-					chunk: s.r.CHAT,
+					chunk: s.s.CHAT,
 					component: o,
 					exact: !0,
 					meta: {
-						name: s.Nb.CHAT
+						name: s.Ob.CHAT
 					},
 					path: "/chat/"
 				},
@@ -17038,11 +17038,11 @@
 			l.preload();
 			const d = {
 					action: c.b,
-					chunk: s.r.CHAT_EMPTY,
+					chunk: s.s.CHAT_EMPTY,
 					component: l,
 					exact: !0,
 					meta: {
-						name: s.Nb.CHAT_EMPTY
+						name: s.Ob.CHAT_EMPTY
 					},
 					path: "/chat/empty/"
 				},
@@ -17069,53 +17069,53 @@
 			u.preload();
 			const h = {
 					action: c.c,
-					chunk: s.r.CHAT_MINIMIZE,
+					chunk: s.s.CHAT_MINIMIZE,
 					component: u,
 					exact: !0,
 					meta: {
-						name: s.Nb.CHAT_MINIMIZE
+						name: s.Ob.CHAT_MINIMIZE
 					},
 					path: "/chat/minimize/"
 				},
 				m = ["/chat/", "/chat/:action(share|share_new)/", "/chat/channel/:action(create)/", "/chat/channel/:channelId/:action(block|hide|delete|invite|invite_link_settings|themes|invited|kick|about|leave|privacy_support|nsfw|report|start_group)?/:attr(invite|message|user)?/:attrId?"],
 				p = {
 					action: c.a,
-					chunk: s.r.CHAT,
+					chunk: s.s.CHAT,
 					component: o,
 					exact: !0,
 					meta: {
-						name: s.Nb.CHAT
+						name: s.Ob.CHAT
 					},
 					path: m
 				},
 				b = {
 					action: c.a,
-					chunk: s.r.CHAT,
+					chunk: s.s.CHAT,
 					component: o,
 					exact: !0,
 					meta: {
-						name: s.Nb.CHAT
+						name: s.Ob.CHAT
 					},
 					path: "/chat/livechat/:postId/"
 				},
 				g = ["/chat/user_id/:userIds/"],
 				f = {
 					action: c.e,
-					chunk: s.r.CHAT,
+					chunk: s.s.CHAT,
 					component: o,
 					exact: !0,
 					meta: {
-						name: s.Nb.CHAT
+						name: s.Ob.CHAT
 					},
 					path: g
 				},
 				O = {
 					action: c.d,
-					chunk: s.r.CHAT,
+					chunk: s.s.CHAT,
 					component: o,
 					exact: !0,
 					meta: {
-						name: s.Nb.CHAT
+						name: s.Ob.CHAT
 					},
 					path: ["/chat/share"]
 				};
@@ -17126,10 +17126,10 @@
 			var a = n("./src/lib/constants/index.ts");
 			var s = {
 				action: n("./src/chat/actions/page.ts").b,
-				chunk: a.r.CHAT,
+				chunk: a.s.CHAT,
 				exact: !0,
 				meta: {
-					name: a.Nb.CHAT
+					name: a.Ob.CHAT
 				},
 				path: "/chat/*"
 			};
@@ -17378,8 +17378,8 @@
 				P = n("./src/chat/models/User/member.ts");
 			const R = 2,
 				B = 1e3,
-				H = 100,
-				F = 200;
+				F = 100,
+				H = 200;
 			const G = new class {
 				constructor() {
 					var e = this;
@@ -17394,8 +17394,8 @@
 								e(a)
 							}
 						}, {
-							minTimeout: H,
-							maxTimeout: F,
+							minTimeout: F,
+							maxTimeout: H,
 							randomize: !0,
 							retries: R
 						})
@@ -17478,7 +17478,7 @@
 					e.onReconnectSucceeded = () => {
 						this.dispatch(Object(I.h)(t)), this.dispatch(Object(x.g)({
 							toast: T.a.ConnectionOpen
-						})), Object(d.setTimeout)(() => this.dispatch(Object(x.d)()), 3 * u.Sb);
+						})), Object(d.setTimeout)(() => this.dispatch(Object(x.d)()), 3 * u.Tb);
 						this.dispatch(Object(j.v)(!0)), this.dispatch(Object(m.D)())
 					}, this.self.addConnectionHandler("RECONNECT_SUCCEEDED", e), this.connectionUniqueHandlerID.push("RECONNECT_SUCCEEDED")
 				}
@@ -18975,4 +18975,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~RedesignChat.f8802793a0e7f2a73216.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~RedesignChat.8d31714275832495c861.js.map
