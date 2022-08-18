@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Reddit.d2fb3f9e4c136542be32.js
-// Retrieved at 8/18/2022, 11:30:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Reddit.37654065be9c640165cd.js
+// Retrieved at 8/18/2022, 12:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Reddit"], {
 		"./assets/fonts/BentonSans/font.less": function(e, t, n) {},
@@ -8634,14 +8634,20 @@
 						})
 					}, this.onShowScreen = e => {
 						const {
-							path: t
-						} = this.props, n = t === qe.c.Index || t === qe.c.Register, s = t === qe.c.GoogleOneTap;
-						e === qe.b.SelectAccount ? n ? this.resizeContainer({
+							isAmModalDesignUpdateEnabled: t,
+							path: n
+						} = this.props, s = n === qe.c.Index || n === qe.c.Register, r = n === qe.c.GoogleOneTap, o = () => {
+							this.resizeContainer({
+								height: 640,
+								width: 400
+							})
+						};
+						e === qe.b.SelectAccount ? s ? t ? o() : this.resizeContainer({
 							height: 474,
 							width: 416
-						}) : s && this.setState({
+						}) : r && (t && o(), this.setState({
 							removeHiddenOverlay: !0
-						}) : e === qe.b.Subscribe ? (n && this.restoreContainerSize(), this.restoreIFrameStyles()) : e === qe.b.Email || e === qe.b.UsernameAndPassword ? n && this.restoreContainerSize() : e !== qe.b.EmailOptIn && e !== qe.b.GoogleUI || this.setState({
+						})) : e === qe.b.Subscribe ? (s && this.restoreContainerSize(), this.restoreIFrameStyles()) : e === qe.b.Email || e === qe.b.UsernameAndPassword ? s && this.restoreContainerSize() : e !== qe.b.EmailOptIn && e !== qe.b.GoogleUI || this.setState({
 							removeHiddenOverlay: !1
 						})
 					}
@@ -20075,4 +20081,4 @@
 		["./src/reddit/index.tsx", "runtime~Reddit", "vendors~CommentsPage~ModerationPages~Reddit~reddit-components-ClassicPost~reddit-components-CompactP~d737df3e", "vendors~CommentsPage~Governance~ModListing~ModerationPages~Reddit~Subreddit", "vendors~Chat~Governance~Reddit", "vendors~Reddit", "CommentsPage~Governance~Reddit~ReportFlow~Subreddit~reddit-components-BlankPost~reddit-components-Cl~5351df81", "PostCreation~Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~r~4c415e24", "Governance~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compo~bd4baca2", "Governance~ModListing~Reddit~ReportFlow~Subreddit", "Governance~ModListing~Reddit~Subreddit", "Chat~Governance~Reddit", "Governance~Reddit~SubredditForkingCTA", "Governance~Reddit", "Reddit~StandalonePostPage", "AuthorHovercard~Reddit"]
 	]
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit.d2fb3f9e4c136542be32.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit.37654065be9c640165cd.js.map
