@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/1.05c6cf1c85ba69280e02.js
-// Retrieved at 8/10/2022, 12:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/1.982cf4a5f364704c0179.js
+// Retrieved at 8/18/2022, 2:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	[1], {
 		"./node_modules/@reddit/crypto/react/config/index.es.js": function(A, e, t) {
@@ -3088,6 +3088,8 @@
 				createstorefrontorder: "ff0103b3d612",
 				getclaimednftdetails: "9b57bca81a8c",
 				getfreenftclaimdrops: "d39e664921e0",
+				gettransferamount: "f975ed09f090",
+				initiatenfttransfer: "cd08100ee5da",
 				generatewalletverificationmessage: "cd3aac87446c",
 				getnftdetails: "185c9a2d55b4",
 				getnftsbywalletaddress: "7e0bba436a39",
@@ -5604,6 +5606,7 @@
 				Duplicate: "https://www.redditstatic.com/crypto-assets/v2/duplicate-66af363d56.svg",
 				Ellipse: "https://www.redditstatic.com/crypto-assets/v2/ellipse-2e713b908d.svg",
 				InfoFilled: "https://www.redditstatic.com/crypto-assets/v2/info-filled-24d30a597b.svg",
+				InfoOutline: "https://www.redditstatic.com/crypto-assets/v2/info-outline-53a1c13a2b.svg",
 				Nft: "https://www.redditstatic.com/crypto-assets/v2/nft-31cc27e3a3.svg",
 				Reddit: "https://www.redditstatic.com/crypto-assets/v2/reddit-d9fb338c35.svg",
 				Spotlight: "https://www.redditstatic.com/crypto-assets/v2/spotlight-64a6d1926b.svg",
@@ -7456,4 +7459,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/1.05c6cf1c85ba69280e02.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/1.982cf4a5f364704c0179.js.map

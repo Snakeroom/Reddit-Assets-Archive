@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/runtime~Reddit.f9d729a630a03f9b2759.js
-// Retrieved at 8/18/2022, 1:30:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/runtime~Reddit.cc8afc93d29642ed97a7.js
+// Retrieved at 8/18/2022, 2:20:04 PM by Reddit Dataminer v1.0.0
 ! function(e) {
 	function o(o) {
 		for (var a, n, r = o[0], s = o[1], c = o[2], l = 0, b = []; l < r.length; l++) n = r[l], Object.prototype.hasOwnProperty.call(d, n) && d[n] && b.push(d[n][0]), d[n] = 0;
@@ -658,7 +658,7 @@
 					2: "31d6cfe0d16ae931b73c",
 					3: "31d6cfe0d16ae931b73c",
 					4: "31d6cfe0d16ae931b73c",
-					5: "5891f6b483d1828f4e3e",
+					5: "535edc2a455a8ce54478",
 					6: "548f1977353796700fc5",
 					7: "c41d71d2e13adab63662",
 					8: "c9e76ea1d586f2813b5e",
@@ -1364,16 +1364,16 @@
 						SocialLinkEditor: "SocialLinkEditor"
 					} [e] || e) + "." + {
 						0: "03dae2c538e2ee68618c",
-						1: "05c6cf1c85ba69280e02",
+						1: "982cf4a5f364704c0179",
 						2: "533258fec9bdd386d2e4",
 						3: "55b68fcc06f8f4839817",
-						4: "34c5010d3122be632614",
-						5: "33db152529be5d291020",
+						4: "2ea9683538068b90ebe8",
+						5: "9e5659e620c5073cdbd1",
 						6: "d1ab48e223b07384ac90",
 						7: "3bf0e3682f9b63482c0b",
 						8: "5202f63957936cbbd1f5",
 						9: "acf0ee91abfc9bc18704",
-						"vendors~MarketplaceClaimModal~MarketplaceInFeedUnit": "bfa479261ae86409e043",
+						"vendors~MarketplaceClaimModal~MarketplaceInFeedUnit": "02e57785007b19108402",
 						MarketplaceClaimModal: "c551ee0df1e4fd39c3b5",
 						GovernanceTransferPointsModal: "a7f95ed8f122548faf82",
 						"reddit-components-Governance-TransactionModals-BurnPointsModal~reddit-components-Governance-Transact~8f11de67": "41c36e050211796c6727",
@@ -1554,7 +1554,7 @@
 						webvitals: "f626f135e0d2366368b7",
 						"reddit-components-Governance-TransactionModals-TransferTransactionModal": "fdec3e4e0934fc099045",
 						SignupUpsell: "c97850d8718c34baaeb4",
-						NftProfileUnit: "a89ffd51816389cee29a",
+						NftProfileUnit: "137ada47a77f501f6f40",
 						AuthorHovercard: "755b24cc17549169ca92",
 						AwardTooltip: "0dfb102fb1324fe7fb96",
 						CustomBadgeHovercardTooltip: "738d634a91900f3816f4",
@@ -1773,4 +1773,4 @@
 	var m = c;
 	t()
 }([]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/runtime~Reddit.f9d729a630a03f9b2759.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/runtime~Reddit.cc8afc93d29642ed97a7.js.map

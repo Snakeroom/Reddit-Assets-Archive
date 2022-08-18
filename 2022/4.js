@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/4.34c5010d3122be632614.js
-// Retrieved at 7/28/2022, 1:50:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/4.2ea9683538068b90ebe8.js
+// Retrieved at 8/18/2022, 2:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	[4], {
 		"./node_modules/@reddit/crypto/react/nft-product-card/index.es.js": function(e, t, n) {
@@ -194,9 +194,9 @@
 				return "Minified Material-UI error #" + e + "; visit " + t + " for the full message."
 			}
 			var L = "function" == typeof Symbol && Symbol.for ? Symbol.for("mui.nested") : "__THEME_NESTED__",
-				z = ["checked", "disabled", "error", "focused", "focusVisible", "required", "expanded", "selected"];
+				V = ["checked", "disabled", "error", "focused", "focusVisible", "required", "expanded", "selected"];
 
-			function V(e) {
+			function z(e) {
 				var t = e.theme,
 					n = e.name,
 					r = e.props;
@@ -787,15 +787,15 @@
 				De = "undefined" != typeof globalThis ? globalThis : "undefined" != typeof window && window.Math === Math ? window : "undefined" != typeof self && self.Math === Math ? self : Function("return this")(),
 				Le = "2f1acc6c3a606b082e5eef5e54414ffb";
 			null == De[Le] && (De[Le] = 0);
-			var ze = De[Le]++,
-				Ve = function(e) {
+			var Ve = De[Le]++,
+				ze = function(e) {
 					void 0 === e && (e = {});
 					var t = 0;
 					return function(n, r) {
 						t += 1;
 						var i = "",
 							a = "";
-						return r && (r.options.classNamePrefix && (a = r.options.classNamePrefix), null != r.options.jss.id && (i = String(r.options.jss.id))), e.minify ? "" + (a || "c") + ze + i + t : a + n.key + "-" + ze + (i ? "-" + i : "") + "-" + t
+						return r && (r.options.classNamePrefix && (a = r.options.classNamePrefix), null != r.options.jss.id && (i = String(r.options.jss.id))), e.minify ? "" + (a || "c") + Ve + i + t : a + n.key + "-" + Ve + (i ? "-" + i : "") + "-" + t
 					}
 				},
 				Be = function(e) {
@@ -971,10 +971,10 @@
 							id: {
 								minify: !1
 							},
-							createGenerateId: Ve,
+							createGenerateId: ze,
 							Renderer: W ? Ze : null,
 							plugins: []
-						}, this.generateId = Ve({
+						}, this.generateId = ze({
 							minify: !1
 						});
 						for (var t = 0; t < je.length; t++) this.plugins.use(je[t], {
@@ -1404,23 +1404,23 @@
 					}
 				"Webkit" === At && "msHyphens" in Dt && (At = "ms", Tt = Ft.ms, Mt = "edge"), "Webkit" === At && "-apple-trailing-word" in Dt && (It = "apple")
 			}
-			var zt = {
+			var Vt = {
 				js: At,
 				css: Tt,
 				vendor: It,
 				browser: Mt,
 				isTouch: Rt
 			};
-			var Vt = {
+			var zt = {
 					noPrefill: ["appearance"],
 					supportedProperty: function(e) {
-						return "appearance" === e && ("ms" === zt.js ? "-webkit-" + e : zt.css + e)
+						return "appearance" === e && ("ms" === Vt.js ? "-webkit-" + e : Vt.css + e)
 					}
 				},
 				Bt = {
 					noPrefill: ["color-adjust"],
 					supportedProperty: function(e) {
-						return "color-adjust" === e && ("Webkit" === zt.js ? zt.css + "print-" + e : e)
+						return "color-adjust" === e && ("Webkit" === Vt.js ? Vt.css + "print-" + e : e)
 					}
 				},
 				Wt = /[-\s]+(.)?/g;
@@ -1440,9 +1440,9 @@
 					noPrefill: ["mask"],
 					supportedProperty: function(e, t) {
 						if (!/^mask/.test(e)) return !1;
-						if ("Webkit" === zt.js) {
+						if ("Webkit" === Vt.js) {
 							if ($t("mask-image") in t) return e;
-							if (zt.js + Ht("mask-image") in t) return zt.css + e
+							if (Vt.js + Ht("mask-image") in t) return Vt.css + e
 						}
 						return e
 					}
@@ -1450,44 +1450,44 @@
 				Gt = {
 					noPrefill: ["text-orientation"],
 					supportedProperty: function(e) {
-						return "text-orientation" === e && ("apple" !== zt.vendor || zt.isTouch ? e : zt.css + e)
+						return "text-orientation" === e && ("apple" !== Vt.vendor || Vt.isTouch ? e : Vt.css + e)
 					}
 				},
 				Yt = {
 					noPrefill: ["transform"],
 					supportedProperty: function(e, t, n) {
-						return "transform" === e && (n.transform ? e : zt.css + e)
+						return "transform" === e && (n.transform ? e : Vt.css + e)
 					}
 				},
 				Qt = {
 					noPrefill: ["transition"],
 					supportedProperty: function(e, t, n) {
-						return "transition" === e && (n.transition ? e : zt.css + e)
+						return "transition" === e && (n.transition ? e : Vt.css + e)
 					}
 				},
 				Jt = {
 					noPrefill: ["writing-mode"],
 					supportedProperty: function(e) {
-						return "writing-mode" === e && ("Webkit" === zt.js || "ms" === zt.js && "edge" !== zt.browser ? zt.css + e : e)
+						return "writing-mode" === e && ("Webkit" === Vt.js || "ms" === Vt.js && "edge" !== Vt.browser ? Vt.css + e : e)
 					}
 				},
 				Zt = {
 					noPrefill: ["user-select"],
 					supportedProperty: function(e) {
-						return "user-select" === e && ("Moz" === zt.js || "ms" === zt.js || "apple" === zt.vendor ? zt.css + e : e)
+						return "user-select" === e && ("Moz" === Vt.js || "ms" === Vt.js || "apple" === Vt.vendor ? Vt.css + e : e)
 					}
 				},
 				Kt = {
 					supportedProperty: function(e, t) {
-						return !!/^break-/.test(e) && ("Webkit" === zt.js ? "WebkitColumn" + Ht(e) in t && zt.css + "column-" + e : "Moz" === zt.js && ("page" + Ht(e) in t && "page-" + e))
+						return !!/^break-/.test(e) && ("Webkit" === Vt.js ? "WebkitColumn" + Ht(e) in t && Vt.css + "column-" + e : "Moz" === Vt.js && ("page" + Ht(e) in t && "page-" + e))
 					}
 				},
 				en = {
 					supportedProperty: function(e, t) {
 						if (!/^(border|margin|padding)-inline/.test(e)) return !1;
-						if ("Moz" === zt.js) return e;
+						if ("Moz" === Vt.js) return e;
 						var n = e.replace("-inline", "");
-						return zt.js + Ht(n) in t && zt.css + n
+						return Vt.js + Ht(n) in t && Vt.css + n
 					}
 				},
 				tn = {
@@ -1498,17 +1498,17 @@
 				nn = {
 					supportedProperty: function(e, t) {
 						var n = Ht(e);
-						return "-" === e[0] ? e : "-" === e[0] && "-" === e[1] ? e : zt.js + n in t ? zt.css + e : "Webkit" !== zt.js && "Webkit" + n in t && "-webkit-" + e
+						return "-" === e[0] ? e : "-" === e[0] && "-" === e[1] ? e : Vt.js + n in t ? Vt.css + e : "Webkit" !== Vt.js && "Webkit" + n in t && "-webkit-" + e
 					}
 				},
 				rn = {
 					supportedProperty: function(e) {
-						return "scroll-snap" === e.substring(0, 11) && ("ms" === zt.js ? "" + zt.css + e : e)
+						return "scroll-snap" === e.substring(0, 11) && ("ms" === Vt.js ? "" + Vt.css + e : e)
 					}
 				},
 				an = {
 					supportedProperty: function(e) {
-						return "overscroll-behavior" === e && ("ms" === zt.js ? zt.css + "scroll-chaining" : e)
+						return "overscroll-behavior" === e && ("ms" === Vt.js ? Vt.css + "scroll-chaining" : e)
 					}
 				},
 				on = {
@@ -1523,7 +1523,7 @@
 				sn = {
 					supportedProperty: function(e, t) {
 						var n = on[e];
-						return !!n && (zt.js + Ht(n) in t && zt.css + n)
+						return !!n && (Vt.js + Ht(n) in t && Vt.css + n)
 					}
 				},
 				ln = {
@@ -1537,17 +1537,17 @@
 				},
 				cn = Object.keys(ln),
 				un = function(e) {
-					return zt.css + e
+					return Vt.css + e
 				},
-				dn = [Vt, Bt, Xt, Gt, Yt, Qt, Jt, Zt, Kt, en, tn, nn, rn, an, sn, {
+				dn = [zt, Bt, Xt, Gt, Yt, Qt, Jt, Zt, Kt, en, tn, nn, rn, an, sn, {
 					supportedProperty: function(e, t, n) {
 						var r = n.multiple;
 						if (cn.indexOf(e) > -1) {
 							var i = ln[e];
-							if (!Array.isArray(i)) return zt.js + Ht(i) in t && zt.css + i;
+							if (!Array.isArray(i)) return Vt.js + Ht(i) in t && Vt.css + i;
 							if (!r) return !1;
 							for (var a = 0; a < i.length; a++)
-								if (!(zt.js + Ht(i[0]) in t)) return !1;
+								if (!(Vt.js + Ht(i[0]) in t)) return !1;
 							return i.map(un)
 						}
 						return !1
@@ -1614,7 +1614,7 @@
 					return bn[r] = !1, !1
 				}
 				if (kn[e]) n = n.replace(Sn, wn);
-				else if ("" === yn.style[e] && ("-ms-flex" === (n = zt.css + n) && (yn.style[e] = "-ms-flexbox"), yn.style[e] = n, "" === yn.style[e])) return bn[r] = !1, !1;
+				else if ("" === yn.style[e] && ("-ms-flex" === (n = Vt.css + n) && (yn.style[e] = "-ms-flexbox"), yn.style[e] = n, "" === yn.style[e])) return bn[r] = !1, !1;
 				return yn.style[e] = "", bn[r] = n, bn[r]
 			}
 
@@ -1639,7 +1639,7 @@
 						if ("keyframes" === e.type) {
 							var t = e;
 							t.at = function(e) {
-								return "-" === e[1] ? e : "ms" === zt.js ? e : "@" + zt.css + "keyframes" + e.substr(10)
+								return "-" === e[1] ? e : "ms" === Vt.js ? e : "@" + Vt.css + "keyframes" + e.substr(10)
 							}(t.at)
 						}
 					},
@@ -1723,7 +1723,7 @@
 						return function(e, t) {
 							var r = t.options.name;
 							if (r && 0 === r.indexOf("Mui") && !t.options.link && !n) {
-								if (-1 !== z.indexOf(e.key)) return "Mui-".concat(e.key);
+								if (-1 !== V.indexOf(e.key)) return "Mui-".concat(e.key);
 								var a = "".concat(s).concat(r, "-").concat(e.key);
 								return t.options.theme[L] && "" === o ? "".concat(a, "-").concat(c()) : a
 							}
@@ -1825,7 +1825,7 @@
 				}
 			}
 
-			function zn(e, t) {
+			function Vn(e, t) {
 				var n, r = i.a.useRef([]),
 					a = i.a.useMemo((function() {
 						return {}
@@ -1837,7 +1837,7 @@
 				}), [a])
 			}
 
-			function Vn(e) {
+			function zn(e) {
 				var t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : {},
 					n = t.name,
 					r = t.classNamePrefix,
@@ -1878,7 +1878,7 @@
 						r = k({}, i.a.useContext(Tn), l),
 						o = i.a.useRef(),
 						u = i.a.useRef();
-					zn((function() {
+					Vn((function() {
 						var i = {
 							name: n,
 							state: {},
@@ -2060,7 +2060,7 @@
 							s = t.name,
 							l = E(t, ["defaultTheme", "withTheme", "name"]),
 							c = s,
-							u = Vn(e, k({
+							u = zn(e, k({
 								defaultTheme: r,
 								Component: n,
 								name: s || n.displayName,
@@ -2072,7 +2072,7 @@
 									c = E(e, ["classes", "innerRef"]),
 									d = u(k({}, n.defaultProps, e)),
 									f = c;
-								return ("string" == typeof s || o) && (a = On() || r, s && (f = V({
+								return ("string" == typeof s || o) && (a = On() || r, s && (f = z({
 									theme: a,
 									name: s,
 									props: c
@@ -2293,13 +2293,13 @@
 				return Fr(e)
 			}
 
-			function zr(e, t) {
+			function Vr(e, t) {
 				if (e = Rr(e), t = Mr(t), -1 !== e.type.indexOf("hsl")) e.values[2] += (100 - e.values[2]) * t;
 				else if (-1 !== e.type.indexOf("rgb"))
 					for (var n = 0; n < 3; n += 1) e.values[n] += (255 - e.values[n]) * t;
 				return Fr(e)
 			}
-			var Vr = {
+			var zr = {
 					text: {
 						primary: "rgba(0, 0, 0, 0.87)",
 						secondary: "rgba(0, 0, 0, 0.54)",
@@ -2356,7 +2356,7 @@
 			function Wr(e, t, n, r) {
 				var i = r.light || r,
 					a = r.dark || 1.5 * r;
-				e[t] || (e.hasOwnProperty(n) ? e[t] = e[n] : "light" === t ? e.light = zr(e.main, i) : "dark" === t && (e.dark = Lr(e.main, a)))
+				e[t] || (e.hasOwnProperty(n) ? e[t] = e[n] : "light" === t ? e.light = Vr(e.main, i) : "dark" === t && (e.dark = Lr(e.main, a)))
 			}
 
 			function Ur(e) {
@@ -2409,7 +2409,7 @@
 						var n = Dr(e),
 							r = Dr(t);
 						return (Math.max(n, r) + .05) / (Math.min(n, r) + .05)
-					}(e, Br.text.primary) >= v ? Br.text.primary : Vr.text.primary
+					}(e, Br.text.primary) >= v ? Br.text.primary : zr.text.primary
 				}
 				var w = function(e) {
 						var t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : 500,
@@ -2421,7 +2421,7 @@
 					},
 					N = {
 						dark: Br,
-						light: Vr
+						light: zr
 					};
 				return R(k({
 					common: _r,
@@ -2760,7 +2760,7 @@
 				})),
 				mi = li((function(e) {
 					var t = function(t) {
-							return "light" === e.palette.type ? zr(t, .62) : Lr(t, .5)
+							return "light" === e.palette.type ? Vr(t, .62) : Lr(t, .5)
 						},
 						n = t(e.palette.primary.main),
 						r = t(e.palette.secondary.main);
@@ -3087,8 +3087,8 @@
 				}, Di(e, t)
 			}
 			var Li = Di,
-				zi = Li;
-			var Vi = function(e, t) {
+				Vi = Li;
+			var zi = function(e, t) {
 					if ("function" != typeof t && null !== t) throw new TypeError("Super expression must either be null or a function");
 					e.prototype = Object.create(t && t.prototype, {
 						constructor: {
@@ -3096,7 +3096,7 @@
 							writable: !0,
 							configurable: !0
 						}
-					}), t && zi(e, t)
+					}), t && Vi(e, t)
 				},
 				Bi = function() {},
 				Wi = {};
@@ -3221,7 +3221,7 @@
 				ua = oa(Oi),
 				da = oa(Mi),
 				fa = oa(Fi),
-				ma = oa(Vi),
+				ma = oa(zi),
 				pa = aa(i.a);
 			oa(_.exports), oa(Bi);
 			var ha = Wi;
@@ -3844,7 +3844,7 @@
 					}]), t
 				}(Ma.Component),
 				La = ja.default = Da;
-			var za = {
+			var Va = {
 				button: "_button_q04oj_42",
 				loadingButton: "_loadingButton_q04oj_52",
 				greyTheme: "_greyTheme_q04oj_57",
@@ -3858,7 +3858,7 @@
 				disabled: "_disabled_q04oj_112"
 			};
 
-			function Va(e, t) {
+			function za(e, t) {
 				for (var n = 0; n < t.length; n++) {
 					var r = t[n];
 					r.enumerable = r.enumerable || !1, r.configurable = !0, "value" in r && (r.writable = !0), Object.defineProperty(e, r.key, r)
@@ -4072,11 +4072,11 @@
 				return e && e.querySelector(t)
 			}
 
-			function zo(e, t) {
+			function Vo(e, t) {
 				return t ? Qa(e.querySelectorAll(t)) : []
 			}
 
-			function Vo(e, t) {
+			function zo(e, t) {
 				po(e, t, !1)
 			}
 
@@ -4259,8 +4259,8 @@
 			var Fs = "ArrowLeft",
 				Ds = "ArrowRight",
 				Ls = "rtl",
-				zs = "ttb",
-				Vs = {
+				Vs = "ttb",
+				zs = {
 					width: ["height"],
 					left: ["top", "right"],
 					right: ["bottom", "left"],
@@ -4343,7 +4343,7 @@
 					b = To(r, qs),
 					k = n > -1,
 					S = ko(r, "." + al),
-					w = zo(r, d.focusableNodes || "");
+					w = Vo(r, d.focusableNodes || "");
 
 				function N() {
 					var i = e.splides.map((function(e) {
@@ -4397,7 +4397,7 @@
 						k || (r.id = u.id + "-slide" + ns(t + 1), Co(r, Bs, h ? "tabpanel" : "group"), Co(r, Qs, p.slide), Co(r, qs, b || ts(p.slideLabel, [t + 1, e.length]))), l(r, "click", Ja(s, cs, C)), l(r, "keydown", Ja(s, ps, C)), o([ss, ls, Ns], x), o(Ps, N), m && o(os, E)
 					},
 					destroy: function() {
-						i = !0, a.destroy(), Vo(r, Sl), _o(r, Ks), Co(r, "style", y), Co(r, qs, b || "")
+						i = !0, a.destroy(), zo(r, Sl), _o(r, Ks), Co(r, "style", y), Co(r, qs, b || "")
 					},
 					update: x,
 					style: function(e, t, n) {
@@ -4417,8 +4417,8 @@
 			var Fl = $o + "-interval";
 			var Dl = 10,
 				Ll = 600,
-				zl = .6,
-				Vl = 1.5,
+				Vl = .6,
+				zl = 1.5,
 				Bl = 800;
 			var Wl = {
 				passive: !1,
@@ -4489,9 +4489,9 @@
 					Direction: function(e, t, n) {
 						return {
 							resolve: function(e, t, r) {
-								var i = (r = r || n.direction) !== Ls || t ? r === zs ? 0 : -1 : 1;
-								return Vs[e] && Vs[e][i] || e.replace(/width|left|right/i, (function(e, t) {
-									var n = Vs[e.toLowerCase()][i] || e;
+								var i = (r = r || n.direction) !== Ls || t ? r === Vs ? 0 : -1 : 1;
+								return zs[e] && zs[e][i] || e.replace(/width|left|right/i, (function(e, t) {
+									var n = zs[e.toLowerCase()][i] || e;
 									return t > 0 ? n.charAt(0).toUpperCase() + n.slice(1) : n
 								}))
 							},
@@ -4538,11 +4538,11 @@
 
 						function v(e) {
 							var t = Ks.concat("style");
-							Ya(f), Vo(c, m), Vo(r, p), _o([r, i], t), _o(c, e ? t : ["style", Qs])
+							Ya(f), zo(c, m), zo(r, p), _o([r, i], t), _o(c, e ? t : ["style", Qs])
 						}
 
 						function g() {
-							Vo(c, m), Vo(r, p), m = b(el), p = b(tl), ho(c, m), ho(r, p), Co(c, qs, n.label), Co(c, Xs, n.labelledby)
+							zo(c, m), zo(r, p), m = b(el), p = b(tl), ho(c, m), ho(r, p), Co(c, qs, n.label), Co(c, Xs, n.labelledby)
 						}
 
 						function y(e) {
@@ -4644,7 +4644,7 @@
 								uo(e, (function(e) {
 									if (ao(e) && (e = Fo(e)), lo(e)) {
 										var r = l[t];
-										r ? go(e, r) : vo(c, e), ho(e, n.classes.slide), i = e, s = Ja(a, gs), u = zo(i, "img"), (d = u.length) ? u.forEach((function(e) {
+										r ? go(e, r) : vo(c, e), ho(e, n.classes.slide), i = e, s = Ja(a, gs), u = Vo(i, "img"), (d = u.length) ? u.forEach((function(e) {
 											o(e, "load error", (function() {
 												--d || s()
 											}))
@@ -4688,7 +4688,7 @@
 							v = c.style;
 
 						function g() {
-							i = null, r = n.direction === zs, Po(f, "maxWidth", Wo(n.width)), Po(m, u("paddingLeft"), b(!1)), Po(m, u("paddingRight"), b(!0)), y()
+							i = null, r = n.direction === Vs, Po(f, "maxWidth", Wo(n.width)), Po(m, u("paddingLeft"), b(!1)), Po(m, u("paddingRight"), b(!0)), y()
 						}
 
 						function y() {
@@ -5056,7 +5056,7 @@
 						}
 
 						function S() {
-							a.destroy(), Vo(h, i), r ? (Ro(m ? [v, g] : h), v = g = null) : _o([v, g], Ks)
+							a.destroy(), zo(h, i), r ? (Ro(m ? [v, g] : h), v = g = null) : _o([v, g], Ks)
 						}
 
 						function w(e) {
@@ -5179,7 +5179,7 @@
 								e = c.toPosition(t.Controller.toDest(e % m)) + h
 							}
 							var b = Jo(f, e, 1);
-							p = 1, n = b ? 0 : n || Xo(Qo(e - f) / Vl, Bl), i = o, r = Rs(n, v, Ja(g, f, e, d), 1), l(Ha), s(ws), r.start()
+							p = 1, n = b ? 0 : n || Xo(Qo(e - f) / zl, Bl), i = o, r = Rs(n, v, Ja(g, f, e, d), 1), l(Ha), s(ws), r.start()
 						}
 
 						function v() {
@@ -5189,7 +5189,7 @@
 						function g(t, r, i, a) {
 							var o, s, l = u(),
 								c = (t + (r - t) * (o = a, (s = n.easingFunc) ? s(o) : 1 - Math.pow(1 - o, 4)) - l) * p;
-							m(l + c), e.is(Ol) && !i && f() && (p *= zl, Qo(c) < Dl && h(d(f(!0)), Ll, !1, void 0, !0))
+							m(l + c), e.is(Ol) && !i && f() && (p *= Vl, Qo(c) < Dl && h(d(f(!0)), Ll, !1, void 0, !0))
 						}
 
 						function y() {
@@ -5229,7 +5229,7 @@
 
 						function O() {
 							var e = n.drag;
-							z(!e), o = "free" === e
+							V(!e), o = "free" === e
 						}
 
 						function P(e) {
@@ -5304,7 +5304,7 @@
 							return "undefined" != typeof TouchEvent && e instanceof TouchEvent
 						}
 
-						function z(e) {
+						function V(e) {
 							c = e
 						}
 						return {
@@ -5313,7 +5313,7 @@
 									capture: !0
 								}), p(k, "dragstart", Do), f([as, vs], O)
 							},
-							disable: z,
+							disable: V,
 							isDragging: function() {
 								return s
 							}
@@ -5371,7 +5371,7 @@
 
 						function d() {
 							Ya(u), t.Slides.forEach((function(e) {
-								zo(e.slide, Gl).forEach((function(t) {
+								Vo(e.slide, Gl).forEach((function(t) {
 									var r = To(t, ql),
 										i = To(t, Xl);
 									if (r !== t.src || i !== t.srcset) {
@@ -5399,7 +5399,7 @@
 						function p(e, t) {
 							var n = e[0],
 								r = e[1];
-							Vo(r.slide, bl), "error" !== t.type && (Ro(e[2]), jo(n, ""), s(Is, n, r), s(gs)), l && h()
+							zo(r.slide, bl), "error" !== t.type && (Ro(e[2]), jo(n, ""), s(Is, n, r), s(gs)), l && h()
 						}
 
 						function h() {
@@ -5427,7 +5427,7 @@
 							v = [];
 
 						function g() {
-							r && (Ro(u.pagination ? Qa(r.children) : r), Vo(r, i), Ya(v), r = null), a.destroy()
+							r && (Ro(u.pagination ? Qa(r.children) : r), zo(r, i), Ya(v), r = null), a.destroy()
 						}
 
 						function y(e) {
@@ -5457,7 +5457,7 @@
 								t = S(m());
 							if (e) {
 								var n = e.button;
-								Vo(n, hl), _o(n, Hs), Co(n, Ws, -1)
+								zo(n, hl), _o(n, Hs), Co(n, Ws, -1)
 							}
 							if (t) {
 								var i = t.button;
@@ -5477,7 +5477,7 @@
 										o = n.i18n,
 										s = n.perPage,
 										d = f() ? t : Yo(t / s);
-									ho(r = u.pagination || Oo("ul", a.pagination, u.track.parentElement), i = ul + "--" + k()), Co(r, Bs, "tablist"), Co(r, qs, o.select), Co(r, Ys, k() === zs ? "vertical" : "");
+									ho(r = u.pagination || Oo("ul", a.pagination, u.track.parentElement), i = ul + "--" + k()), Co(r, Bs, "tablist"), Co(r, qs, o.select), Co(r, Ys, k() === Vs ? "vertical" : "");
 									for (var m = 0; m < d; m++) {
 										var p = Oo("li", null, r),
 											h = Oo("button", {
@@ -5530,7 +5530,7 @@
 						}
 
 						function c() {
-							Co(t.Elements.list, Ys, n.direction === zs ? "vertical" : "")
+							Co(t.Elements.list, Ys, n.direction === Vs ? "vertical" : "")
 						}
 
 						function u(t) {
@@ -5776,7 +5776,7 @@
 					get: function() {
 						return this._C.Controller.getIndex()
 					}
-				}]) && Va(t.prototype, n), r && Va(t, r), Object.defineProperty(t, "prototype", {
+				}]) && za(t.prototype, n), r && za(t, r), Object.defineProperty(t, "prototype", {
 					writable: !1
 				}), e
 			}();
@@ -5853,32 +5853,32 @@
 			}) => i.a.createElement("button", {
 				disabled: n,
 				onClick: n ? void 0 : r,
-				className: gi(za.button, e, uc(t), {
-					[za.loadingButton]: o,
-					[za.disabled]: n
+				className: gi(Va.button, e, uc(t), {
+					[Va.loadingButton]: o,
+					[Va.disabled]: n
 				})
 			}, o ? i.a.createElement(nc, {
-				className: za.loadingImage
+				className: Va.loadingImage
 			}) : i.a.createElement(i.a.Fragment, null, a));
 
 			function uc(e) {
 				switch (e) {
 					case "grey":
-						return za.greyTheme;
+						return Va.greyTheme;
 					case "white":
-						return za.whiteTheme;
+						return Va.whiteTheme;
 					case "white_inverted":
-						return za.whiteInvertedTheme;
+						return Va.whiteInvertedTheme;
 					case "outlined":
-						return za.outlinedTheme;
+						return Va.outlinedTheme;
 					case "orange":
-						return za.orangeTheme;
+						return Va.orangeTheme;
 					case "largeOrange":
-						return za.largeOrangeTheme;
+						return Va.largeOrangeTheme;
 					case "blue":
-						return za.blueTheme;
+						return Va.blueTheme;
 					case "blue_inverted":
-						return za.blueInvertedTheme
+						return Va.blueInvertedTheme
 				}
 			}
 			var dc, fc;
@@ -6580,8 +6580,8 @@
 				Fc = "_nftIcon_ryr9r_16",
 				Dc = "_closeIcon_ryr9r_17",
 				Lc = "_naming_ryr9r_27",
-				zc = "_avatarImage_ryr9r_43",
-				Vc = "_front_ryr9r_71",
+				Vc = "_avatarImage_ryr9r_43",
+				zc = "_front_ryr9r_71",
 				Bc = "_back_ryr9r_72",
 				Wc = "_frontBackground_ryr9r_77",
 				Uc = "_clickable_ryr9r_87",
@@ -6745,7 +6745,7 @@
 						collectionSize: d
 					} = t, f = s ? l : c;
 					return i.a.createElement(oc, {
-						className: gi(e, Vc, {
+						className: gi(e, zc, {
 							[Uc]: !!n
 						}),
 						isShadowHidden: o
@@ -6759,7 +6759,7 @@
 						className: gi(Fc, r)
 					}), s && i.a.createElement("img", {
 						src: s,
-						className: zc,
+						className: Vc,
 						alt: "nft-asset"
 					}), i.a.createElement(du, {
 						title: u,
@@ -6813,7 +6813,7 @@
 				yu = "_stepper_u50lk_40";
 			const bu = function(e) {
 				var t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : {};
-				return Vn(e, k({
+				return zn(e, k({
 					defaultTheme: si
 				}, t))
 			}({
@@ -7030,7 +7030,7 @@
 					column: 1
 				}
 			};
-			var Eu, xu, _u, Cu, Ou, Pu, ju, Au, Tu, Iu, Mu, Ru, Fu, Du, Lu, zu, Vu = {};
+			var Eu, xu, _u, Cu, Ou, Pu, ju, Au, Tu, Iu, Mu, Ru, Fu, Du, Lu, Vu, zu = {};
 
 			function Bu(e, t) {
 				for (var n = 0; n < e.definitions.length; n++) {
@@ -7058,6 +7058,7 @@
 					s && i(function(e) {
 						var t, n, r, i;
 						return {
+							id: e.id,
 							title: e.nft.title,
 							description: e.nft.description,
 							series: e.nft.series,
@@ -7112,7 +7113,7 @@
 							})), t.definitions && t.definitions.forEach((function(t) {
 								e(t, n)
 							}))
-						}(e, t), Vu[e.name.value] = t
+						}(e, t), zu[e.name.value] = t
 					}
 				})),
 				function(e, t) {
@@ -7121,7 +7122,7 @@
 						definitions: [Bu(e, t)]
 					};
 					e.hasOwnProperty("loc") && (n.loc = e.loc);
-					var r = Vu[t] || new Set,
+					var r = zu[t] || new Set,
 						i = new Set,
 						a = new Set;
 					for (r.forEach((function(e) {
@@ -7129,7 +7130,7 @@
 						})); a.size > 0;) {
 						var o = a;
 						a = new Set, o.forEach((function(e) {
-							i.has(e) || (i.add(e), (Vu[e] || new Set).forEach((function(e) {
+							i.has(e) || (i.add(e), (zu[e] || new Set).forEach((function(e) {
 								a.add(e)
 							})))
 						}))
@@ -7138,7 +7139,7 @@
 						var r = Bu(e, t);
 						r && n.definitions.push(r)
 					}))
-				}(Nu, "getNftDetails"), (xu = Eu || (Eu = {})).MINTED = "MINTED", xu.MINTING = "MINTING", xu.TRANSFERRING = "TRANSFERRING", (Cu = _u || (_u = {})).Marketplace = "marketplace", Cu.Avatar = "avatar", (Pu = Ou || (Ou = {})).Back = "back", Pu.Click = "click", Pu.Create = "create", Pu.Scroll = "scroll", Pu.Secure = "secure", Pu.Paid = "paid", Pu.View = "view", (Au = ju || (ju = {})).ClaimPostUnit = "claim_post_unit", Au.ClaimNft = "claim_nft", Au.BuyNft = "buy_nft", Au.CreateVault = "create_vault", Au.CompleteTransaction = "complete_transaction", Au.ListingFe = "listing_fe", Au.NftDetails = "nft_details", Au.PaymentError = "payment_error", Au.ProductDetailPage = "product_detail_page", Au.PdpDynamicCta = "pdp_dynamic_cta", Au.MarketplaceArtist = "marketplace_artist", Au.SecureVault = "secure_vault", Au.SelectionUi = "selection_ui", Au.Vault = "vault", Au.VaultConfirmation = "vault_confirmation", (Iu = Tu || (Tu = {})).ClaimFlow = "claim_flow", Iu.Purchase = "purchase", Iu.SetAvatar = "set_avatar", Iu.Transfer = "transfer", Iu.ViewNft = "view_nft", Iu.ClaimFlowContinue = "claim_flow_continue", Iu.ImportCollectibleAvatar = "import_collectible_avatar", (Mu || (Mu = {})).ProductDetailPage = "product_detail_page", (Ru || (Ru = {})).Password = "password", (Du = Fu || (Fu = {})).New = "NEW", Du.ActionRequired = "ACTION_REQUIRED", Du.Pending = "PENDING", Du.Paid = "PAID", Du.Canceled = "CANCELED", Du.Rejected = "REJECTED", Du.Failed = "FAILED", Du.Refunded = "REFUNDED", (zu = Lu || (Lu = {})).AVAILABLE = "AVAILABLE", zu.SOLD_OUT = "SOLD_OUT", zu.EXPIRED = "EXPIRED", Lu.AVAILABLE, Lu.SOLD_OUT, Lu.EXPIRED;
+				}(Nu, "getNftDetails"), (xu = Eu || (Eu = {})).MINTED = "MINTED", xu.MINTING = "MINTING", xu.TRANSFERRING = "TRANSFERRING", (Cu = _u || (_u = {})).Marketplace = "marketplace", Cu.Avatar = "avatar", (Pu = Ou || (Ou = {})).Back = "back", Pu.Click = "click", Pu.Create = "create", Pu.Scroll = "scroll", Pu.Secure = "secure", Pu.Paid = "paid", Pu.View = "view", (Au = ju || (ju = {})).ClaimPostUnit = "claim_post_unit", Au.ClaimNft = "claim_nft", Au.BuyNft = "buy_nft", Au.CreateVault = "create_vault", Au.CompleteTransaction = "complete_transaction", Au.ListingFe = "listing_fe", Au.NftDetails = "nft_details", Au.PaymentError = "payment_error", Au.ProductDetailPage = "product_detail_page", Au.PdpDynamicCta = "pdp_dynamic_cta", Au.MarketplaceArtist = "marketplace_artist", Au.SecureVault = "secure_vault", Au.SelectionUi = "selection_ui", Au.Vault = "vault", Au.VaultConfirmation = "vault_confirmation", (Iu = Tu || (Tu = {})).ClaimFlow = "claim_flow", Iu.Purchase = "purchase", Iu.SetAvatar = "set_avatar", Iu.Transfer = "transfer", Iu.ViewNft = "view_nft", Iu.ClaimFlowContinue = "claim_flow_continue", Iu.ImportCollectibleAvatar = "import_collectible_avatar", (Mu || (Mu = {})).ProductDetailPage = "product_detail_page", (Ru || (Ru = {})).Password = "password", (Du = Fu || (Fu = {})).New = "NEW", Du.ActionRequired = "ACTION_REQUIRED", Du.Pending = "PENDING", Du.Paid = "PAID", Du.Canceled = "CANCELED", Du.Rejected = "REJECTED", Du.Failed = "FAILED", Du.Refunded = "REFUNDED", (Vu = Lu || (Lu = {})).AVAILABLE = "AVAILABLE", Vu.SOLD_OUT = "SOLD_OUT", Vu.EXPIRED = "EXPIRED", Lu.AVAILABLE, Lu.SOLD_OUT, Lu.EXPIRED;
 			const $u = e => ({
 				source: _u.Marketplace,
 				action: Ou.Click,
@@ -7161,39 +7162,39 @@
 				d: "M10.4 4.728h-.3V3.6a3.6 3.6 0 1 0-7.2 0v1.128h-.3a.966.966 0 0 0-.972.972v4.8a.966.966 0 0 0 .972.972h7.8a.966.966 0 0 0 .972-.972V5.7a.967.967 0 0 0-.972-.972ZM4.1 3.6a2.4 2.4 0 1 1 4.8 0v1.128H4.1V3.6Z",
 				fill: "currentColor"
 			}));
-			var qu = "_container_ztn11_42",
-				Xu = "_carousel_ztn11_45",
-				Gu = "_productDetails_ztn11_53",
-				Yu = "_isNightMode_ztn11_65",
-				Qu = "_header_ztn11_69",
-				Ju = "_cardName_ztn11_73",
-				Zu = "_cardAuthor_ztn11_79",
-				Ku = "_cardAuthorClickable_ztn11_93",
-				ed = "_redditLogo_ztn11_99",
-				td = "_scrollContainer_ztn11_104",
-				nd = "_buttonsContainer_ztn11_113",
-				rd = "_artistImg_ztn11_125",
-				id = "_artistName_ztn11_132",
-				ad = "_ctaButton_ztn11_137",
-				od = "_transferCta_ztn11_137",
-				sd = "_tooltip_ztn11_143",
-				ld = "_defaultButtonsContainer_ztn11_178",
-				cd = "_buttonIcon_ztn11_181",
-				ud = "_itemDescription_ztn11_185",
-				dd = "_itemBenefits_ztn11_188",
-				fd = "_heading_ztn11_191",
-				md = "_utilityTable_ztn11_203",
-				pd = "_featureCell_ztn11_213",
-				hd = "_featureImage_ztn11_220",
-				vd = "_featureCopy_ztn11_224",
-				gd = "_blockchainDetails_ztn11_236",
-				yd = "_resaleText_ztn11_239",
-				bd = "_platformFeesLink_ztn11_243",
-				kd = "_nftDetailsHeading_ztn11_247",
-				Sd = "_mintStatus_ztn11_260",
-				wd = "_nftDetailPills_ztn11_272",
-				Nd = "_pill_ztn11_272",
-				Ed = "_pillImage_ztn11_291";
+			var qu = "_container_1a6ma_42",
+				Xu = "_carousel_1a6ma_45",
+				Gu = "_productDetails_1a6ma_53",
+				Yu = "_isNightMode_1a6ma_65",
+				Qu = "_header_1a6ma_69",
+				Ju = "_cardName_1a6ma_73",
+				Zu = "_cardAuthor_1a6ma_79",
+				Ku = "_cardAuthorClickable_1a6ma_93",
+				ed = "_redditLogo_1a6ma_99",
+				td = "_scrollContainer_1a6ma_104",
+				nd = "_buttonsContainer_1a6ma_113",
+				rd = "_artistImg_1a6ma_125",
+				id = "_artistName_1a6ma_132",
+				ad = "_ctaButton_1a6ma_137",
+				od = "_transferCta_1a6ma_137",
+				sd = "_tooltip_1a6ma_143",
+				ld = "_defaultButtonsContainer_1a6ma_178",
+				cd = "_buttonIcon_1a6ma_181",
+				ud = "_itemDescription_1a6ma_185",
+				dd = "_itemBenefits_1a6ma_188",
+				fd = "_heading_1a6ma_191",
+				md = "_utilityTable_1a6ma_203",
+				pd = "_featureCell_1a6ma_213",
+				hd = "_featureImage_1a6ma_220",
+				vd = "_featureCopy_1a6ma_224",
+				gd = "_blockchainDetails_1a6ma_236",
+				yd = "_resaleText_1a6ma_239",
+				bd = "_platformFeesLink_1a6ma_243",
+				kd = "_nftDetailsHeading_1a6ma_247",
+				Sd = "_mintStatus_1a6ma_260",
+				wd = "_nftDetailPills_1a6ma_276",
+				Nd = "_pill_1a6ma_276",
+				Ed = "_pillImage_1a6ma_295";
 			const xd = ({
 				currentUserId: e,
 				nft: t,
@@ -7346,8 +7347,8 @@
 					}))
 				};
 			var Ld = "_container_diy5f_195",
-				zd = "_closeButton_diy5f_202",
-				Vd = "_section_diy5f_205",
+				Vd = "_closeButton_diy5f_202",
+				zd = "_section_diy5f_205",
 				Bd = "_panel_diy5f_208",
 				Wd = "_fullView_diy5f_213",
 				Ud = "_background_diy5f_216";
@@ -7369,11 +7370,11 @@
 					})
 				}, a && i.a.createElement(c.e, {
 					theme: "light",
-					className: zd,
+					className: Vd,
 					onClick: a,
 					contained: !0
 				}), i.a.createElement("div", {
-					className: Vd
+					className: zd
 				}, i.a.createElement($d, {
 					className: Ud
 				}, t)), n && i.a.createElement("div", {
@@ -8538,7 +8539,7 @@
 						className: vd
 					}, i.a.createElement(sc, {
 						desc: "Benefit description: Stand out in comments section"
-					}, "Stand out in Comments"))), i.a.createElement(i.a.Fragment, null, i.a.createElement("img", {
+					}, "Stand out in comments"))), i.a.createElement(i.a.Fragment, null, i.a.createElement("img", {
 						src: c.g.CardExample,
 						className: hd,
 						alt: n.inline("card preview", "alt text: card preview")
@@ -8578,7 +8579,7 @@
 						className: vd
 					}, i.a.createElement(sc, {
 						desc: "Benefit description: you own this specific Collectible"
-					}, "You own your Collectible"))), i.a.createElement(i.a.Fragment, null, i.a.createElement("img", {
+					}, "You own your collectible"))), i.a.createElement(i.a.Fragment, null, i.a.createElement("img", {
 						src: c.g.Transferable,
 						className: hd,
 						alt: n.inline("blockchain transfer icon", "alt text: blockchain transfer icon")
@@ -8676,7 +8677,9 @@
 						}, i.a.createElement(sc, {
 							desc: "Header for the section with external links to NFT item details"
 						}, "DETAILS")), i.a.createElement("div", {
-							className: Sd
+							className: gi(Sd, {
+								[Yu]: m
+							})
 						}, i.a.createElement(Pf, {
 							nft: e
 						})), i.a.createElement(bf, {
@@ -8756,4 +8759,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/4.34c5010d3122be632614.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/4.2ea9683538068b90ebe8.js.map
