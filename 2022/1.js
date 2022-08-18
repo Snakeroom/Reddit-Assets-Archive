@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/1.982cf4a5f364704c0179.js
-// Retrieved at 8/18/2022, 2:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/1.ed1ad87849182312fb89.js
+// Retrieved at 8/18/2022, 6:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	[1], {
 		"./node_modules/@reddit/crypto/react/config/index.es.js": function(A, e, t) {
@@ -3088,8 +3088,10 @@
 				createstorefrontorder: "ff0103b3d612",
 				getclaimednftdetails: "9b57bca81a8c",
 				getfreenftclaimdrops: "d39e664921e0",
+				getredditoridbyname: "195588cfe5b2",
 				gettransferamount: "f975ed09f090",
 				initiatenfttransfer: "cd08100ee5da",
+				processnfttransfer: "4c16e471cfb4",
 				generatewalletverificationmessage: "cd3aac87446c",
 				getnftdetails: "185c9a2d55b4",
 				getnftsbywalletaddress: "7e0bba436a39",
@@ -7459,4 +7461,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/1.982cf4a5f364704c0179.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/1.ed1ad87849182312fb89.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/5.9e5659e620c5073cdbd1.js
-// Retrieved at 8/18/2022, 2:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/5.1fa87918279dd21e6a1e.js
+// Retrieved at 8/18/2022, 6:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	[5], {
 		"./node_modules/@apollo/client/cache/inmemory/types.js": function(e, t) {},
@@ -42292,10 +42292,6 @@
 			}
 			C(g({}, fr), {
 				source: er.Marketplace,
-				action: sr.Scroll,
-				noun: rr.SelectionUi
-			}), C(g({}, fr), {
-				source: er.Marketplace,
 				action: sr.Back,
 				noun: rr.SelectionUi
 			}), (yr = br || (br = {})).New = "NEW", yr.ActionRequired = "ACTION_REQUIRED", yr.Pending = "PENDING", yr.Paid = "PAID", yr.Canceled = "CANCELED", yr.Rejected = "REJECTED", yr.Failed = "FAILED", yr.Refunded = "REFUNDED", (vr = hr || (hr = {})).AVAILABLE = "AVAILABLE", vr.SOLD_OUT = "SOLD_OUT", vr.EXPIRED = "EXPIRED", hr.AVAILABLE, hr.SOLD_OUT, hr.EXPIRED;
@@ -74050,4 +74046,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/5.9e5659e620c5073cdbd1.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/5.1fa87918279dd21e6a1e.js.map
