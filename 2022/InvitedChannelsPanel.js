@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/InvitedChannelsPanel.2011bf95cd3bdf32ead8.js
-// Retrieved at 8/15/2022, 3:00:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/InvitedChannelsPanel.e47eb1d665e92bd02148.js
+// Retrieved at 8/18/2022, 3:10:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["InvitedChannelsPanel"], {
 		"./src/chat/components/Sidebar/InvitedChannelsPanel/index.m.less": function(e, t, n) {
@@ -31,18 +31,18 @@
 				u = n("./src/chat/icons/svgs/ArrowLeft/index.tsx"),
 				p = n("./src/chat/models/Sidebar/index.ts"),
 				j = n("./src/chat/selectors/channels.ts"),
-				O = n("./src/chat/selectors/experiments.ts"),
-				E = n("./src/chat/components/Sidebar/InvitedChannelsPanel/index.m.less"),
-				v = n.n(E);
+				E = n("./src/chat/selectors/experiments.ts"),
+				O = n("./src/chat/components/Sidebar/InvitedChannelsPanel/index.m.less"),
+				v = n.n(O);
 			t.default = () => {
 				const e = Object(r.d)();
 				Object(o.useEffect)(() => {
 					e(Object(h.eb)())
 				}, [e]);
 				const t = Object(r.e)(j.d),
-					n = Object(r.e)(O.f),
+					n = Object(r.e)(E.f),
 					s = Object(r.e)(j.H),
-					E = Object(r.e)(j.b);
+					O = Object(r.e)(j.b);
 				return l.a.createElement(l.a.Fragment, null, l.a.createElement("button", {
 					className: v.a.Header,
 					onClick: () => {
@@ -55,16 +55,16 @@
 					hk: "2zUosI"
 				})), l.a.createElement(b.a, {
 					loadMoreRows: () => {
-						e(Object(d.D)())
+						e(Object(d.E)())
 					},
-					isLoadMoreRowsComplete: () => !s || !!E
+					isLoadMoreRowsComplete: () => !s || !!O
 				}, l.a.createElement("div", {
 					className: v.a.Body
 				}, n && l.a.createElement(x.a, null), l.a.createElement(m.a, {
 					channels: a()(t)
-				}), E && l.a.createElement(_.d, null))))
+				}), O && l.a.createElement(_.d, null))))
 			}
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/InvitedChannelsPanel.2011bf95cd3bdf32ead8.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/InvitedChannelsPanel.e47eb1d665e92bd02148.js.map

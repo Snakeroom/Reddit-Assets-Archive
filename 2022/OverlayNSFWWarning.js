@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/OverlayNSFWWarning.06b757cfecd8fd0fd295.js
-// Retrieved at 8/15/2022, 3:00:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/OverlayNSFWWarning.bbf3d761e1741545aa3c.js
+// Retrieved at 8/18/2022, 3:10:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["OverlayNSFWWarning"], {
 		"./src/chat/components/OverlayNSFWWarning/index.m.less": function(e, n, t) {
@@ -28,7 +28,7 @@
 				x = o.a.p("Text", _.a),
 				p = Object(r.b)(null, e => ({
 					onAccept: n => {
-						e(Object(l.y)(n))
+						e(Object(l.z)(n))
 					}
 				}));
 			n.default = p(e => c.a.createElement(h.a, null, c.a.createElement(i.a, {
@@ -47,4 +47,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/OverlayNSFWWarning.06b757cfecd8fd0fd295.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/OverlayNSFWWarning.bbf3d761e1741545aa3c.js.map

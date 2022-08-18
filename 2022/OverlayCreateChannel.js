@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/OverlayCreateChannel.d0d5ea9a667b812122f6.js
-// Retrieved at 8/15/2022, 3:00:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/OverlayCreateChannel.f3d588b52a7b8725c0f7.js
+// Retrieved at 8/18/2022, 3:10:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["OverlayCreateChannel"], {
 		"./src/chat/components/OverlayCreateChannel/index.m.less": function(e, t, n) {
@@ -149,13 +149,13 @@
 					directChatOpponentId: R.t
 				}),
 				K = Object(h.b)(Z, e => ({
-					onCreateNewChannel: (t, n, s) => e(Object(m.A)(t, n, s)),
-					onInviteUsersToExistingChannel: t => e(Object(m.F)(t)),
+					onCreateNewChannel: (t, n, s) => e(Object(m.B)(t, n, s)),
+					onInviteUsersToExistingChannel: t => e(Object(m.G)(t)),
 					onIdentifyContact: t => e(Object(p.j)({
 						username: t
 					})),
 					onCancelAndGoBack: () => {
-						e(Object(m.N)()), e(Object(b.j)())
+						e(Object(m.P)()), e(Object(b.j)())
 					},
 					onSelectUser: t => e(Object(C.m)(t)),
 					onUnselectUser: t => e(Object(C.t)(t)),
@@ -774,4 +774,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/OverlayCreateChannel.d0d5ea9a667b812122f6.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/OverlayCreateChannel.f3d588b52a7b8725c0f7.js.map
