@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Frontpage.2ca93f33c8e703795f80.js
-// Retrieved at 8/18/2022, 6:00:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Frontpage.1f4fc6d4bb942dc8bd0e.js
+// Retrieved at 8/18/2022, 8:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Frontpage"], {
 		"./node_modules/intersection-observer/intersection-observer.js": function(e, t) {
@@ -507,17 +507,17 @@
 				return e.__typename === C.a.FreeNftFeedElement
 			}
 			var S = a("./src/reddit/models/NotificationInbox/index.ts"),
-				I = a("./src/reddit/selectors/experiments/econ/marketplace.ts"),
-				P = a("./src/reddit/selectors/experiments/inAppNotification.ts"),
-				w = a("./src/reddit/selectors/experiments/loggedOutOneFeed.ts"),
-				T = a("./src/reddit/selectors/experiments/onboarding.ts"),
-				L = a("./src/reddit/selectors/frontpage.ts"),
-				M = a("./src/reddit/selectors/platform.ts"),
-				B = a("./src/reddit/selectors/user.ts"),
-				F = a("./src/reddit/selectors/userPrefs.ts"),
-				R = a("./src/redditGQL/operations/Frontpage.json"),
-				D = a("./src/redditGQL/types.ts"),
-				U = a("./src/lib/ads/session-signals.ts"),
+				I = a("./src/reddit/selectors/adsSignals.ts"),
+				P = a("./src/reddit/selectors/experiments/econ/marketplace.ts"),
+				w = a("./src/reddit/selectors/experiments/inAppNotification.ts"),
+				T = a("./src/reddit/selectors/experiments/loggedOutOneFeed.ts"),
+				L = a("./src/reddit/selectors/experiments/onboarding.ts"),
+				M = a("./src/reddit/selectors/frontpage.ts"),
+				B = a("./src/reddit/selectors/platform.ts"),
+				F = a("./src/reddit/selectors/user.ts"),
+				R = a("./src/reddit/selectors/userPrefs.ts"),
+				D = a("./src/redditGQL/operations/Frontpage.json"),
+				U = a("./src/redditGQL/types.ts"),
 				Z = a("./src/lib/initializeClient/installReducer.ts"),
 				q = a("./src/reddit/reducers/features/marketplace/index.ts");
 			Object(Z.a)({
@@ -536,17 +536,19 @@
 						sort: d,
 						t: u,
 						correlationId: m
-					} = t, p = Object(T.c)(e), f = Object(B.Z)(e) || Object(B.Q)(e), v = Object(P.a)(e), _ = Object(M.q)(e), x = Object(w.b)(e), E = Object(w.e)(e), y = E === b.ub.LoggedOutUiOnly || E === b.ub.LoggedOutHomeDefpop, k = Object(L.b)(e), {
-						numberOfAdsSeen: O,
-						numberOfPostsSeen: N
-					} = Object(U.a)(), j = {
+					} = t, p = Object(L.c)(e), f = Object(F.Z)(e) || Object(F.Q)(e), v = Object(w.a)(e), _ = Object(B.q)(e), x = Object(T.b)(e), E = Object(T.e)(e), y = E === b.ub.LoggedOutUiOnly || E === b.ub.LoggedOutHomeDefpop, k = Object(M.b)(e), {
+						adsSeenCount: O,
+						totalPostsSeenCount: N,
+						sessionStartTime: j
+					} = Object(I.a)(e), C = {
 						adContext: {
 							layout: i ? i.toUpperCase() : h.a.Card,
 							reddaid: e.user.reddaid,
 							distance: r,
 							clientSignalSessionData: {
 								adsSeenCount: O,
-								totalPostsSeenCount: N
+								totalPostsSeenCount: N,
+								sessionStartTime: j
 							}
 						},
 						feedRankingContext: {
@@ -559,21 +561,21 @@
 						includeLiveEvents: !0,
 						includeIdentity: f && !(null === (s = null === (a = e.user.account) || void 0 === a ? void 0 : a.karma) || void 0 === s ? void 0 : s.total),
 						includePostRecommendations: f || x,
-						includeFreeMarketplaceElement: Object(I.a)(e),
+						includeFreeMarketplaceElement: Object(P.a)(e),
 						includeSubredditQuestions: f,
 						recentPostIds: e.posts.recent,
 						notificationContext: {
 							variant: null == v ? void 0 : v.toLowerCase()
 						}
 					};
-					return x ? (y && (k || E !== b.ub.LoggedOutHomeDefpop) || (j.sort = D.z.Best, j.feedRankingContext.variant = E), j.feedRankingContext.loggedOutAllowNsfw = Object(F.a)(e)) : d && (j.sort = d.toUpperCase()), u && (j.range = u.toUpperCase()), c ? j.pageSize = Object(g.a)(i) : l && (j.pageSize = l), _ && _.ad && (j.forceAds = {
+					return x ? (y && (k || E !== b.ub.LoggedOutHomeDefpop) || (C.sort = U.z.Best, C.feedRankingContext.variant = E), C.feedRankingContext.loggedOutAllowNsfw = Object(R.a)(e)) : d && (C.sort = d.toUpperCase()), u && (C.range = u.toUpperCase()), c ? C.pageSize = Object(g.a)(i) : l && (C.pageSize = l), _ && _.ad && (C.forceAds = {
 						ad: _.ad
-					}), n && (j.after = Object(o.a)(n)), j
+					}), n && (C.after = Object(o.a)(n)), C
 				},
 				W = async (e, t, a, s) => {
 					const n = Date.now(),
 						r = await ((e, t) => Object(u.a)(e, {
-							...R,
+							...D,
 							variables: t
 						}, {
 							traceRequestName: "get_frontpage"
@@ -795,9 +797,9 @@
 					}
 					const v = Ce()();
 					t.correlationId = v;
-					const _ = null === (o = null === (i = Object(M.b)(g)) || void 0 === i ? void 0 : i.routeMatch) || void 0 === o ? void 0 : o.route.chunk,
-						x = Object(B.Q)(g),
-						E = await Object(m.i)(() => W(r.gqlContext(), V(n(), t), Object(B.Z)(g), t.statsdPathsForExperiments), {
+					const _ = null === (o = null === (i = Object(B.b)(g)) || void 0 === i ? void 0 : i.routeMatch) || void 0 === o ? void 0 : o.route.chunk,
+						x = Object(F.Q)(g),
+						E = await Object(m.i)(() => W(r.gqlContext(), V(n(), t), Object(F.Z)(g), t.statsdPathsForExperiments), {
 							name: "fetchFrontpageData",
 							isLoggedIn: x,
 							page: _
@@ -815,7 +817,7 @@
 							post: e,
 							__typename: "LiveBarTalk"
 						})))), a(Object(me.b)(fe.a.FRONTPAGE));
-						const r = null === (h = null === (b = Object(M.b)(g)) || void 0 === b ? void 0 : b.locationState) || void 0 === h ? void 0 : h[X.b.FeedLoadReason];
+						const r = null === (h = null === (b = Object(B.b)(g)) || void 0 === b ? void 0 : b.locationState) || void 0 === h ? void 0 : h[X.b.FeedLoadReason];
 						Object(he.b)(t.isRefresh ? X.a.UserRefresh : null != r ? r : X.a.InitialLoad)(n())
 					} else {
 						if (a(Ie({
@@ -835,7 +837,7 @@
 							})), Object(ye.a)(g, {
 								rate: 14
 							})) {
-							const e = Object(w.b)(g);
+							const e = Object(T.b)(g);
 							Object(be.a)(E.ok ? ge.a.ParseError : ge.a.XhrError, e ? ge.b.OneFeed : x ? ge.b.LoggedIn : ge.b.Popular)
 						}
 						const r = E.error;
@@ -844,7 +846,7 @@
 				}, Te = (e, t) => async (a, s) => {
 					var n;
 					const c = s(),
-						i = Object(L.a)(c),
+						i = Object(M.a)(c),
 						{
 							sort: o = i
 						} = e.params,
@@ -885,8 +887,8 @@
 					var a, s;
 					const n = t();
 					if (Object(_e.a)(n)) return;
-					const r = null === (s = null === (a = Object(M.b)(t())) || void 0 === a ? void 0 : a.routeMatch) || void 0 === s ? void 0 : s.route.chunk,
-						c = Object(B.Q)(n);
+					const r = null === (s = null === (a = Object(B.b)(t())) || void 0 === a ? void 0 : a.routeMatch) || void 0 === s ? void 0 : s.route.chunk,
+						c = Object(F.Q)(n);
 					return Object(m.i)(() => e(Object(ve.d)()), {
 						name: "frontpageLinksRequested",
 						page: r,
@@ -903,7 +905,7 @@
 						gqlContext: n
 					} = s;
 					const i = a(),
-						o = Object(L.a)(i),
+						o = Object(M.a)(i),
 						{
 							sort: d = o
 						} = e,
@@ -941,7 +943,7 @@
 								t && (b.clickUrl = t)
 							}
 							b.correlationId = i.listings.postOrder.correlationIds[m];
-							const g = () => W(n(), V(i, b), Object(B.Z)(i), l),
+							const g = () => W(n(), V(i, b), Object(F.Z)(i), l),
 								f = await g(),
 								v = {
 									...f.body,
@@ -967,7 +969,7 @@
 					}
 				}, qe = e => async (t, a) => {
 					const s = a(),
-						n = Object(L.a)(s),
+						n = Object(M.a)(s),
 						{
 							sort: r = n
 						} = e,
@@ -7585,4 +7587,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Frontpage.2ca93f33c8e703795f80.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Frontpage.1f4fc6d4bb942dc8bd0e.js.map
