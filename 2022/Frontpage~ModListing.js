@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Frontpage~ModListing.8e506b1b689072659b65.js
-// Retrieved at 8/18/2022, 6:00:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Frontpage~ModListing.10d30c6adca1842beefd.js
+// Retrieved at 8/22/2022, 4:50:10 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Frontpage~ModListing"], {
 		"./src/reddit/actions/focusedVerticals/index.ts": function(e, t, n) {
@@ -790,11 +790,11 @@
 				F = Object(S.a)(R.a.wrapped(O.a, "Dropdown", D.a)),
 				H = R.a.wrapped(P.a, "ListingSortIcon", D.a),
 				U = (R.a.wrapped(E.b, "DropdownTriangle", D.a), R.a.div("Title", D.a)),
-				G = R.a.wrapped(e => r.a.createElement(C.b, A({}, e, {
+				V = R.a.wrapped(e => r.a.createElement(C.b, A({}, e, {
 					noHover: !0,
 					isSelected: !1
 				})), "Row", D.a),
-				M = e => {
+				G = e => {
 					let {
 						disabled: t,
 						...n
@@ -805,7 +805,7 @@
 						})
 					}))
 				},
-				V = R.a.div("DropdownRowDisabled", D.a),
+				M = R.a.div("DropdownRowDisabled", D.a),
 				W = Object(l.u)({
 					isFrontpage: l.A,
 					isProfilePage: l.J,
@@ -834,9 +834,9 @@
 					onClick: e.onOpenDropdown
 				}, !1 !== e.showTitle && r.a.createElement(U, null, y.fbt._("Sort", null, {
 					hk: "2BfINq"
-				})), r.a.createElement(M, {
+				})), r.a.createElement(G, {
 					disabled: e.disabled
-				}, e.children || r.a.createElement(G, {
+				}, e.children || r.a.createElement(V, {
 					className: e.buttonClassName,
 					displayText: Object(_.a)(e.sort),
 					id: e.dropdownId || B,
@@ -849,7 +849,7 @@
 					tooltipId: e.dropdownId || B
 				}, t, {
 					renderContentsHidden: !0
-				}), e.disabled ? r.a.createElement(V, null, y.fbt._("Coming soon", null, {
+				}), e.disabled ? r.a.createElement(M, null, y.fbt._("Coming soon", null, {
 					hk: "taPqm"
 				})) : (e.sortOptions || ((e, t, n, s, r) => {
 					const o = [b.X.HOT, b.X.NEW, b.X.TOP, b.X.RISING];
@@ -1094,10 +1094,10 @@
 				return r.a.createElement("div", {
 					className: e.className,
 					onClick: e.onOpenDropdown
-				}, r.a.createElement(M, {
+				}, r.a.createElement(G, {
 					className: e.wrapperClassName,
 					disabled: e.disabled
-				}, r.a.createElement(G, {
+				}, r.a.createElement(V, {
 					className: e.buttonClassName,
 					displayText: e.showStateAbbreviations && e.sort ? e.sort : Y(e.sort),
 					id: "StateSort--StateSortPicker",
@@ -1265,10 +1265,10 @@
 					return r.a.createElement(r.a.Fragment, null, r.a.createElement("div", {
 						className: Object(a.a)(me.a.countrySort, e.className),
 						onClick: () => e.dropdownIsOpen ? e.onCloseDropdown(be) : e.onOpenDropdown(be)
-					}, r.a.createElement(M, {
+					}, r.a.createElement(G, {
 						className: e.wrapperClassName,
 						disabled: e.disabled
-					}, r.a.createElement(G, {
+					}, r.a.createElement(V, {
 						className: e.buttonClassName,
 						displayText: (() => t in le ? le[t]() : le[b.A.Everywhere]())(),
 						id: be,
@@ -1329,10 +1329,10 @@
 				}))(Object(d.c)(e => r.a.createElement(Ce, {
 					className: e.className,
 					onClick: e.onOpenDropdown
-				}, r.a.createElement(M, {
+				}, r.a.createElement(G, {
 					className: e.wrapperClassName,
 					disabled: !1
-				}, r.a.createElement(G, {
+				}, r.a.createElement(V, {
 					className: e.buttonClassName,
 					displayText: Object(_.b)(e.timeSort),
 					id: "TimeSort--SortPicker",
@@ -1406,7 +1406,7 @@
 						locale: a
 					}
 				});
-			class Ge extends r.a.Component {
+			class Ve extends r.a.Component {
 				constructor() {
 					super(...arguments), this.changeSort = e => {
 						this.props.onChange(e), this.props.sendEvent(Object(v.b)(e))
@@ -1524,9 +1524,9 @@
 					}))))
 				}
 			}
-			var Me = He(Object(o.b)(Ue)(Object(d.c)(Ge))),
-				Ve = n("./src/reddit/components/GeneralCleanup/SortViewBar/index.m.less"),
-				We = n.n(Ve);
+			var Ge = He(Object(o.b)(Ue)(Object(d.c)(Ve))),
+				Me = n("./src/reddit/components/GeneralCleanup/SortViewBar/index.m.less"),
+				We = n.n(Me);
 			const Xe = Object(l.u)({
 					isProfilePage: l.J,
 					pageLayer: e => e
@@ -1578,7 +1578,7 @@
 						className: Object(a.a)(We.a.Container, t),
 						onBlur: this.blurListingBroadcast,
 						onFocus: this.focusListingBroadcast
-					}, r.a.createElement(Me, {
+					}, r.a.createElement(Ge, {
 						baseUrl: e,
 						disabled: s,
 						geopopularSort: n,
@@ -1778,7 +1778,7 @@
 				const t = Object(o.f)().getState(),
 					n = Object(h.a)(t, Object(i.c)());
 				if (e.isD2xPdpSideRailRecsEnabled) {
-					const t = e.d2xPdpSideRailRecsVariant === u.Uc.GreyRereddit || e.d2xPdpSideRailRecsVariant === u.Uc.GreyRedditNoNsfw || e.d2xPdpSideRailRecsVariant === u.Uc.LargeImagePreview ? e.reredditButtons : [];
+					const t = e.d2xPdpSideRailRecsVariant === u.Vc.GreyRereddit || e.d2xPdpSideRailRecsVariant === u.Vc.GreyRedditNoNsfw || e.d2xPdpSideRailRecsVariant === u.Vc.LargeImagePreview ? e.reredditButtons : [];
 					return r.a.createElement(v, {
 						reredditContent: t,
 						countryCode: e.countryCode
@@ -2628,7 +2628,7 @@
 				const p = Object(a.e)(e => e.subreddits.survey[n]),
 					b = Object(a.e)(e => e.subreddits.progressModule[n]),
 					h = Object(a.e)(u.a),
-					g = h !== d.Te.NewModule;
+					g = h !== d.Ue.NewModule;
 				return (null === (r = null == b ? void 0 : b.cards) || void 0 === r ? void 0 : r.length) > 0 && g ? o.a.createElement(m, {
 					closeModuleOnMount: !!t && t !== l.g.Large,
 					subredditId: n,
@@ -2656,11 +2656,11 @@
 				c = n("./node_modules/reselect/es/index.js");
 			const d = Object(c.a)(e => Object(r.c)(e, {
 					experimentEligibilitySelector: e => Object(i.h)(e) && Object(o.f)(e),
-					experimentName: s.sc
+					experimentName: s.tc
 				}), a.a),
 				l = Object(c.a)(e => Object(r.c)(e, {
 					experimentEligibilitySelector: e => !Object(i.h)(e) && Object(o.f)(e),
-					experimentName: s.rc
+					experimentName: s.sc
 				}), a.a),
 				u = Object(c.a)(d, l, (e, t) => e || t),
 				m = Object(c.a)(d, l, (e, t) => !(!e && !t))
@@ -2678,15 +2678,15 @@
 			const a = e => {
 					const t = Object(r.c)(e, {
 						experimentEligibilitySelector: o.Q,
-						experimentName: s.qd
+						experimentName: s.rd
 					});
-					return !(!t || Object(s.qg)(t))
+					return !(!t || Object(s.rg)(t))
 				},
 				i = e => {
 					return Object(r.c)(e, {
 						experimentEligibilitySelector: o.Q,
-						experimentName: s.qd
-					}) === s.Rd.ListingEnabled
+						experimentName: s.rd
+					}) === s.Sd.ListingEnabled
 				}
 		},
 		"./src/reddit/selectors/focusedVerticalSuggestion.ts": function(e, t, n) {
@@ -2813,4 +2813,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Frontpage~ModListing.8e506b1b689072659b65.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Frontpage~ModListing.10d30c6adca1842beefd.js.map

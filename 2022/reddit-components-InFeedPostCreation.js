@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-InFeedPostCreation.e1a44bedb2ee99f878f5.js
-// Retrieved at 8/18/2022, 6:00:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-InFeedPostCreation.0bdd5c955b32a37bc82e.js
+// Retrieved at 8/22/2022, 4:50:10 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-InFeedPostCreation"], {
 		"./src/reddit/components/InFeedPostCreation/index.m.less": function(e, t, n) {
@@ -36,11 +36,11 @@
 				x = n("./src/reddit/controls/InternalLink/index.tsx"),
 				f = n("./src/reddit/helpers/trackers/postComposer.ts"),
 				_ = n("./src/reddit/icons/fonts/index.tsx"),
-				E = n("./src/reddit/selectors/experiments/onlineIndicator.ts"),
-				N = n("./src/reddit/selectors/subreddit.ts"),
-				O = n("./src/reddit/selectors/user.ts"),
-				U = n("./src/reddit/components/InFeedPostCreation/index.m.less"),
-				j = n.n(U);
+				O = n("./src/reddit/selectors/experiments/onlineIndicator.ts"),
+				E = n("./src/reddit/selectors/subreddit.ts"),
+				U = n("./src/reddit/selectors/user.ts"),
+				N = n("./src/reddit/components/InFeedPostCreation/index.m.less"),
+				j = n.n(N);
 			const C = l.a.wrapped(b.a, "CurrentUserIcon", j.a);
 			var P;
 			! function(e) {
@@ -67,25 +67,25 @@
 					}
 				},
 				M = Object(a.c)({
-					currentUser: O.k,
-					isPresenceConsumptionExpEnabled: E.c,
-					isPresenceTogglePref: O.V,
-					subreddit: N.A,
-					subredditAboutInfo: N.x
+					currentUser: U.k,
+					isPresenceConsumptionExpEnabled: O.c,
+					isPresenceTogglePref: U.V,
+					subreddit: E.A,
+					subredditAboutInfo: E.x
 				}),
-				g = Object(c.b)(M, e => ({
+				L = Object(c.b)(M, e => ({
 					navigateTo: t => e(Object(i.b)(t)),
 					toggleTooltip: t => e(Object(u.h)({
 						tooltipId: t
 					}))
 				})),
-				L = () => r.fbt._("Create Media Post", null, {
+				g = () => r.fbt._("Create Media Post", null, {
 					hk: "3T3YMO"
 				}),
 				v = () => r.fbt._("Create Link Post", null, {
 					hk: "JUQfs"
 				});
-			t.default = Object(m.c)(g(e => {
+			t.default = Object(m.c)(L(e => {
 				let {
 					currentUser: t,
 					isPresenceConsumptionExpEnabled: n,
@@ -98,7 +98,7 @@
 					toggleTooltip: m
 				} = e;
 				const b = (u ? `/r/${u}` : "") + "/submit",
-					E = function(e, t) {
+					O = function(e, t) {
 						if (!e) return {
 							link: !0,
 							media: !0
@@ -118,44 +118,44 @@
 							media: (o || r) && !e.isNSFW
 						}
 					}(a, l),
-					N = e => {
+					E = e => {
 						i(Object(f.x)({
 							actionInfoType: "du",
 							subredditId: null == a ? void 0 : a.id,
 							noun: h(e)
 						}))
 					},
-					O = () => {
-						N(d.Xb.POST), c(b)
+					U = () => {
+						E(d.Xb.POST), c(b)
 					},
-					U = n && s,
+					N = n && s,
 					M = t ? o.a.createElement(x.default, {
 						className: j.a.UserIconWrapper,
 						to: t.url
 					}, o.a.createElement(C, {
 						className: j.a.UserIcon,
-						shouldShowPresenceIndicator: U
+						shouldShowPresenceIndicator: N
 					})) : null;
 				return o.a.createElement("div", {
 					className: j.a.Container
 				}, M, o.a.createElement("input", {
 					name: "createPost",
 					className: j.a.Input,
-					onChange: O,
-					onClick: O,
-					onKeyPress: O,
+					onChange: U,
+					onClick: U,
+					onKeyPress: U,
 					placeholder: r.fbt._("Create Post", null, {
 						hk: "OcnKS"
 					}),
 					type: "text"
-				}), E.media && o.a.createElement(I.t, {
+				}), O.media && o.a.createElement(I.t, {
 					className: j.a.Button,
-					"aria-label": L(),
+					"aria-label": g(),
 					priority: I.c.Plain,
 					kind: I.b.InternalLink,
 					size: I.d.M,
 					id: P.Media,
-					onClick: () => N(d.Xb.MEDIA),
+					onClick: () => E(d.Xb.MEDIA),
 					onMouseEnter: () => m(P.Media),
 					onMouseLeave: () => m(P.Media),
 					to: b + k(d.Xb.MEDIA),
@@ -164,15 +164,15 @@
 				}, o.a.createElement(p.c, {
 					caretOnTop: !0,
 					tooltipId: P.Media,
-					text: L()
-				})), E.link && o.a.createElement(I.t, {
+					text: g()
+				})), O.link && o.a.createElement(I.t, {
 					className: j.a.Button,
 					priority: I.c.Plain,
 					kind: I.b.InternalLink,
 					size: I.d.M,
 					"aria-label": v(),
 					id: P.Link,
-					onClick: () => N(d.Xb.LINK_ONLY),
+					onClick: () => E(d.Xb.LINK_ONLY),
 					onMouseEnter: () => m(P.Link),
 					onMouseLeave: () => m(P.Link),
 					to: b + k(d.Xb.LINK_ONLY),
@@ -181,7 +181,7 @@
 				}, o.a.createElement(p.c, {
 					caretOnTop: !0,
 					tooltipId: P.Media,
-					text: L()
+					text: g()
 				})))
 			}))
 		},
@@ -255,30 +255,30 @@
 			const c = e => {
 					return Object(s.c)(e, {
 						experimentEligibilitySelector: s.a,
-						experimentName: r.hf
-					}) === r.Nd
+						experimentName: r.if
+					}) === r.Od
 				},
 				i = e => {
 					if (Object(o.a)(e)) return !1;
 					return Object(s.c)(e, {
 						experimentEligibilitySelector: s.a,
-						experimentName: r.gf
-					}) === r.Nd
+						experimentName: r.hf
+					}) === r.Od
 				},
 				a = e => {
 					return Object(s.c)(e, {
 						experimentEligibilitySelector: s.a,
-						experimentName: r.Ve
-					}) === r.Nd
+						experimentName: r.We
+					}) === r.Od
 				},
 				d = e => {
 					if (Object(o.a)(e)) return !1;
 					return Object(s.c)(e, {
 						experimentEligibilitySelector: s.a,
-						experimentName: r.Ue
-					}) === r.Nd
+						experimentName: r.Ve
+					}) === r.Od
 				}
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-InFeedPostCreation.e1a44bedb2ee99f878f5.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-InFeedPostCreation.0bdd5c955b32a37bc82e.js.map

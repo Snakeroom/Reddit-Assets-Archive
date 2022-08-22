@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit~ReportFlow~Subreddit.76e53657bc0cef20cc03.js
-// Retrieved at 8/18/2022, 6:00:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit~ReportFlow~Subreddit.f1b90d9231a7d4ae6cc4.js
+// Retrieved at 8/22/2022, 4:50:10 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~ModListing~Reddit~ReportFlow~Subreddit"], {
 		"./src/lib/assertNever.ts": function(t, e, i) {
@@ -776,15 +776,15 @@
 			})), i.d(e, "k", (function() {
 				return G
 			})), i.d(e, "j", (function() {
-				return Y
+				return z
 			})), i.d(e, "e", (function() {
-				return V
+				return Y
 			})), i.d(e, "d", (function() {
 				return X
 			})), i.d(e, "g", (function() {
 				return $
 			})), i.d(e, "c", (function() {
-				return Z
+				return J
 			})), i.d(e, "f", (function() {
 				return et
 			})), i.d(e, "b", (function() {
@@ -903,11 +903,11 @@
 							success: g.ok
 						}
 					})
-				}, W = Object(d.a)(B.l), q = Object(d.a)(B.k), K = Object(d.a)(B.j), Y = t => async (e, i, n) => {
+				}, q = Object(d.a)(B.l), W = Object(d.a)(B.k), K = Object(d.a)(B.j), z = t => async (e, i, n) => {
 					let {
 						apiContext: r
 					} = n;
-					e(W({
+					e(q({
 						subredditId: t
 					}));
 					const o = Object(S.V)(i(), {
@@ -917,7 +917,7 @@
 					if (l.ok) {
 						const n = i().structuredStyles.models[t],
 							r = n ? n.mobileKeyColor : null;
-						e(q({
+						e(W({
 							subredditId: t,
 							styles: {
 								mobileKeyColor: r
@@ -927,11 +927,11 @@
 						subredditId: t,
 						...l.error
 					}))
-				}, z = Object(d.a)(B.d), V = t => async (e, i, n) => {
+				}, V = Object(d.a)(B.d), Y = t => async (e, i, n) => {
 					const r = i(),
 						o = r.structuredStyles.models[t] || {},
 						l = Object(U.db)(r);
-					e(z({
+					e(V({
 						isNightmodeOn: l,
 						styles: o,
 						subredditId: t
@@ -1011,7 +1011,7 @@
 						if (d instanceof Error) throw d;
 						n(Object(_.i)(d))
 					}
-				}, J = Object(d.a)(B.b), Z = (t, e, i) => async (n, o, s) => {
+				}, Z = Object(d.a)(B.b), J = (t, e, i) => async (n, o, s) => {
 					const c = o(),
 						a = c.structuredStyles.models[t] || {},
 						d = c.structuredStyles.draft,
@@ -1022,12 +1022,12 @@
 								...r()(d, i),
 								...e
 							};
-						n(J({
+						n(Z({
 							subredditId: t,
 							styles: o
 						}))
 					} else {
-						n(J({
+						n(Z({
 							subredditId: t,
 							styles: a
 						}))
@@ -1052,7 +1052,7 @@
 					}) ? e(Object(f.i)(O.a.BLADE_UNSAVED_CHANGES)) : e(rt()))
 				}, lt = t => async (e, i) => {
 					const n = i();
-					Object(C.i)(n) || e(Object(U.db)(n) ? Object(f.i)(O.a.BLADE_NIGHTMODE) : V(t))
+					Object(C.i)(n) || e(Object(U.db)(n) ? Object(f.i)(O.a.BLADE_NIGHTMODE) : Y(t))
 				}, st = Object(d.a)(B.i), ct = Object(d.a)(B.h), at = Object(d.a)(B.g), dt = (t, e) => async (i, n, r) => {
 					let {
 						gqlContext: o,
@@ -2298,17 +2298,17 @@
 			})), i.d(e, "r", (function() {
 				return M
 			})), i.d(e, "j", (function() {
-				return W
-			})), i.d(e, "g", (function() {
 				return q
+			})), i.d(e, "g", (function() {
+				return W
 			})), i.d(e, "h", (function() {
 				return K
 			})), i.d(e, "d", (function() {
-				return Y
-			})), i.d(e, "H", (function() {
 				return z
-			})), i.d(e, "i", (function() {
+			})), i.d(e, "H", (function() {
 				return V
+			})), i.d(e, "i", (function() {
+				return Y
 			})), i.d(e, "c", (function() {
 				return H
 			})), i.d(e, "v", (function() {
@@ -2316,9 +2316,9 @@
 			})), i.d(e, "u", (function() {
 				return $
 			})), i.d(e, "G", (function() {
-				return J
-			})), i.d(e, "w", (function() {
 				return Z
+			})), i.d(e, "w", (function() {
+				return J
 			})), i.d(e, "k", (function() {
 				return tt
 			})), i.d(e, "F", (function() {
@@ -2586,14 +2586,14 @@
 						...F(t, e.subredditId)
 					}
 				},
-				W = (t, e) => {
+				q = (t, e) => {
 					Object(f.a)({
 						noun: "draft_load",
 						...S(t),
 						...M(t, e)
 					})
 				},
-				q = (t, e) => {
+				W = (t, e) => {
 					Object(f.a)({
 						noun: e.draftId ? "draft_update" : "draft_create",
 						...S(t),
@@ -2607,21 +2607,21 @@
 						...G(t, e)
 					})
 				},
-				Y = t => {
+				z = t => {
 					Object(f.a)({
 						...S(t),
 						noun: "social_connect_link",
 						action: n.c.CLICK
 					})
 				},
-				z = (t, e) => {
+				V = (t, e) => {
 					Object(f.a)({
 						...S(t),
 						noun: "twitter_share_checkbox",
 						action: Object(p.getToggleAction)(e)
 					})
 				},
-				V = (t, e, i) => {
+				Y = (t, e, i) => {
 					Object(f.a)({
 						...S(t),
 						...M(t, e),
@@ -2661,14 +2661,14 @@
 						id: Object(d.G)(i, t)
 					}
 				}),
-				J = t => {
+				Z = t => {
 					Object(f.a)({
 						...S(t),
 						action: n.c.SKIP,
 						noun: X
 					})
 				},
-				Z = (t, e) => i => ({
+				J = (t, e) => i => ({
 					...S(i),
 					action: n.c.VIEW,
 					noun: `${X}_hover`,
@@ -2845,35 +2845,35 @@
 				_ = t => {
 					return Object(l.c)(t, {
 						experimentEligibilitySelector: l.a,
-						experimentName: o.We
-					}) === o.Ye.ContentMatch
+						experimentName: o.Xe
+					}) === o.Ze.ContentMatch
 				},
 				f = t => {
 					return Object(l.c)(t, {
 						experimentEligibilitySelector: l.a,
-						experimentName: o.We
-					}) === o.Ye.ConfidenceAndSuccess
+						experimentName: o.Xe
+					}) === o.Ze.ConfidenceAndSuccess
 				},
 				p = t => {
 					const e = Object(l.c)(t, {
 						experimentEligibilitySelector: l.a,
-						experimentName: o.We
+						experimentName: o.Xe
 					});
-					return e === o.Ye.ContentMatch || e === o.Ye.ConfidenceAndSuccess || e === o.eb.Control1 || e === o.eb.Control2
+					return e === o.Ze.ContentMatch || e === o.Ze.ConfidenceAndSuccess || e === o.eb.Control1 || e === o.eb.Control2
 				},
 				m = t => {
 					const e = Object(l.c)(t, {
 						experimentEligibilitySelector: l.a,
-						experimentName: o.We
+						experimentName: o.Xe
 					});
 					return e === o.eb.Control1 || e === o.eb.Control2
 				},
 				b = t => {
 					const e = Object(l.c)(t, {
 						experimentEligibilitySelector: l.a,
-						experimentName: o.We
+						experimentName: o.Xe
 					});
-					return e === o.Ye.ContentMatch || e === o.Ye.ConfidenceAndSuccess
+					return e === o.Ze.ContentMatch || e === o.Ze.ConfidenceAndSuccess
 				},
 				S = t => t.creations.subredditRec.api.pending,
 				E = t => t.creations.subredditRec.api.error,
@@ -2951,12 +2951,12 @@
 					return Object(o.O)(i)
 				}, (t, e, i) => !t && !e && i),
 				a = Object(n.a)((t, e) => Object(l.c)(t, {
-					experimentName: r.dd,
+					experimentName: r.ed,
 					experimentEligibilitySelector: t => c(t, e)
 				}), t => t),
-				d = t => t === r.Zf.NoCommunityWidgets,
-				u = t => t === r.Zf.NoRulesModerators,
-				_ = t => t === r.Zf.RelatedPostsDu
+				d = t => t === r.ag.NoCommunityWidgets,
+				u = t => t === r.ag.NoRulesModerators,
+				_ = t => t === r.ag.RelatedPostsDu
 		},
 		"./src/reddit/selectors/tooltip.ts": function(t, e, i) {
 			"use strict";
@@ -2979,4 +2979,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit~ReportFlow~Subreddit.76e53657bc0cef20cc03.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit~ReportFlow~Subreddit.f1b90d9231a7d4ae6cc4.js.map
