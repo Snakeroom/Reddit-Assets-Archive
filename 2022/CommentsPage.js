@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CommentsPage.578fca3b43002099187a.js
-// Retrieved at 8/22/2022, 4:50:10 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CommentsPage.62ef497530b33c5f27fe.js
+// Retrieved at 8/29/2022, 9:30:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CommentsPage", "PostCreation~Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~r~4c415e24", "Governance~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compo~bd4baca2", "CollectionCommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~SearchResults", "Governance~ModListing~Reddit~ReportFlow~Subreddit", "Governance~ModListing~Reddit~Subreddit", "CollectionCommentsPage~ModProgressModule~NewCommunityProgress", "CollectionCommentsPage~Subreddit~SubredditWiki", "AchievementsActions"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -10878,45 +10878,50 @@
 				r = n("./node_modules/react/index.js"),
 				o = n.n(r),
 				i = n("./src/lib/lessComponent.tsx"),
-				a = n("./src/reddit/components/PostModModeDropdown/DropdownHelpers.tsx"),
-				c = n("./src/reddit/icons/svgs/Show/index.tsx"),
-				d = n("./src/reddit/components/CommentModModeDropdown/index.m.less"),
-				l = n.n(d);
-			const u = i.a.wrapped(c.a, "Show", l.a);
-			t.a = e => o.a.createElement(a.g, null, !e.comment.isApproved && o.a.createElement(a.e, {
-				displayText: e.comment.approvedBy ? s.fbt._("Approved", null, {
-					hk: "3BGaEK"
-				}) : s.fbt._("Approve", null, {
-					hk: "7CwFx"
-				}),
-				onClick: e.onApproveComment
-			}, o.a.createElement(a.a, null)), !e.comment.bannedBy && o.a.createElement(o.a.Fragment, null, o.a.createElement(a.e, {
-				displayText: e.comment.isRemoved ? s.fbt._("Removed", null, {
-					hk: "17pv2n"
-				}) : s.fbt._("Remove", null, {
-					hk: "3tYl0U"
-				}),
-				onClick: e.onRemoveComment
-			}, o.a.createElement(a.i, null)), o.a.createElement(a.e, {
-				displayText: e.comment.isSpam ? s.fbt._("Removed as spam", null, {
-					hk: "2Kv9DF"
-				}) : s.fbt._("Remove as spam", null, {
-					hk: "OOps6"
-				}),
-				onClick: e.onSpamComment
-			}, o.a.createElement(a.j, null)), o.a.createElement(a.e, {
-				displayText: e.comment.isLocked ? s.fbt._("Unlock comment", null, {
-					hk: "1canPl"
-				}) : s.fbt._("Lock comment", null, {
-					hk: "Qp5a0"
-				}),
-				onClick: e.onLockComment
-			}, o.a.createElement(a.h, null))), e.comment.collapsedBecauseCrowdControl && o.a.createElement(a.e, {
-				displayText: s.fbt._("Show comment", null, {
-					hk: "9SB86"
-				}),
-				onClick: e.onShowComment
-			}, o.a.createElement(u, null)))
+				a = n("./src/reddit/components/ModModeReports/helpers.ts"),
+				c = n("./src/reddit/components/PostModModeDropdown/DropdownHelpers.tsx"),
+				d = n("./src/reddit/icons/svgs/Show/index.tsx"),
+				l = n("./src/reddit/components/CommentModModeDropdown/index.m.less"),
+				u = n.n(l);
+			const m = i.a.wrapped(d.a, "Show", u.a);
+			t.a = e => {
+				const t = Object(a.b)(e.comment),
+					n = e.comment.isApproved && t;
+				return o.a.createElement(c.g, null, (!e.comment.isApproved || t) && o.a.createElement(c.e, {
+					displayText: n ? s.fbt._("Reapprove", null, {
+						hk: "1XngBU"
+					}) : s.fbt._("Approve", null, {
+						hk: "2219Nh"
+					}),
+					onClick: e.onApproveComment
+				}, o.a.createElement(c.a, null)), !e.comment.bannedBy && o.a.createElement(o.a.Fragment, null, o.a.createElement(c.e, {
+					displayText: e.comment.isRemoved ? s.fbt._("Removed", null, {
+						hk: "17pv2n"
+					}) : s.fbt._("Remove", null, {
+						hk: "3tYl0U"
+					}),
+					onClick: e.onRemoveComment
+				}, o.a.createElement(c.i, null)), o.a.createElement(c.e, {
+					displayText: e.comment.isSpam ? s.fbt._("Removed as spam", null, {
+						hk: "2Kv9DF"
+					}) : s.fbt._("Remove as spam", null, {
+						hk: "OOps6"
+					}),
+					onClick: e.onSpamComment
+				}, o.a.createElement(c.j, null)), o.a.createElement(c.e, {
+					displayText: e.comment.isLocked ? s.fbt._("Unlock comment", null, {
+						hk: "1canPl"
+					}) : s.fbt._("Lock comment", null, {
+						hk: "Qp5a0"
+					}),
+					onClick: e.onLockComment
+				}, o.a.createElement(c.h, null))), e.comment.collapsedBecauseCrowdControl && o.a.createElement(c.e, {
+					displayText: s.fbt._("Show comment", null, {
+						hk: "9SB86"
+					}),
+					onClick: e.onShowComment
+				}, o.a.createElement(m, null)))
+			}
 		},
 		"./src/reddit/components/CommentModModeDropdown/index.m.less": function(e, t, n) {
 			e.exports = {
@@ -12263,7 +12268,7 @@
 					M = a,
 					D = e => I(Object(C.b)(e, n.id)),
 					A = "chat_comments" === (null == S ? void 0 : S.queryParams.only);
-				return o.a.createElement("div", {
+				return console.log(n.bannedBy || T), o.a.createElement("div", {
 					className: t
 				}, (n.bannedBy || T) && o.a.createElement(k.a, {
 					text: P ? s.fbt._("Reapprove", null, {
@@ -43514,4 +43519,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommentsPage.578fca3b43002099187a.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommentsPage.62ef497530b33c5f27fe.js.map

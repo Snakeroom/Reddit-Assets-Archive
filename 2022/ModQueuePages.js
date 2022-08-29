@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModQueuePages.020203c7108f654e9dcb.js
-// Retrieved at 8/22/2022, 4:50:10 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModQueuePages.816d6b7526fb12d868f7.js
+// Retrieved at 8/29/2022, 9:30:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModQueuePages"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -2154,7 +2154,7 @@
 					P = i,
 					L = e => S(Object(f.b)(e, n.id)),
 					A = "chat_comments" === (null == T ? void 0 : T.queryParams.only);
-				return r.a.createElement("div", {
+				return console.log(n.bannedBy || N), r.a.createElement("div", {
 					className: t
 				}, (n.bannedBy || N) && r.a.createElement(y.a, {
 					text: R ? s.fbt._("Reapprove", null, {
@@ -8194,4 +8194,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModQueuePages.020203c7108f654e9dcb.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModQueuePages.816d6b7526fb12d868f7.js.map
