@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~Subreddit~SubredditWiki.9d1756d7608c9b2892ba.js
-// Retrieved at 8/29/2022, 6:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~Subreddit~SubredditWiki.f91ab3a8c2ff7676b84b.js
+// Retrieved at 8/29/2022, 7:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~Subreddit~SubredditWiki", "AchievementsActions"], {
 		"./node_modules/lodash/random.js": function(e, t, r) {
@@ -1670,8 +1670,8 @@
 					})) : null
 				}),
 				A = r("./src/reddit/actions/economics/predictions/index.ts"),
-				D = r("./src/reddit/components/Econ/Prediction/hooks/useTournamentsQuery.ts"),
-				R = r("./src/reddit/contexts/PageLayer/selectors.ts"),
+				R = r("./src/reddit/components/Econ/Prediction/hooks/useTournamentsQuery.ts"),
+				D = r("./src/reddit/contexts/PageLayer/selectors.ts"),
 				H = r("./src/reddit/helpers/trackers/predictions.ts"),
 				W = r("./src/reddit/hooks/useTracking.ts"),
 				U = r("./src/reddit/selectors/features/predictions/tournaments/index.ts");
@@ -1684,7 +1684,7 @@
 				const r = Object(i.d)(),
 					a = Object(T.a)(),
 					o = Object(W.a)(),
-					d = Object(R.Q)(a),
+					d = Object(D.Q)(a),
 					[c, l] = Object(n.useState)(!1),
 					u = Object(i.e)(e => Object(F.V)(e, {
 						subredditId: t
@@ -1698,7 +1698,7 @@
 					b = Object(i.e)(e => Object(U.e)(e, {
 						subredditId: t
 					}));
-				Object(D.a)(t);
+				Object(R.a)(t);
 				return Object(n.useEffect)(() => {
 					!m || c || p || d || (r(Object(A.m)(u.name)), l(!0))
 				}, [m, c, p, d, r, u.name]), m && p ? s.a.createElement(E, {
@@ -1755,9 +1755,9 @@
 						hk: "36nXSp"
 					}))
 				}))),
-				Q = r("./src/lib/CSSVariableProvider/withTheme.tsx"),
-				X = r("./src/higherOrderComponents/makeAsync.tsx");
-			var $ = Object(X.a)({
+				X = r("./src/lib/CSSVariableProvider/withTheme.tsx"),
+				Q = r("./src/higherOrderComponents/makeAsync.tsx");
+			var $ = Object(Q.a)({
 					ErrorComponent: () => null,
 					LoadingComponent: () => null,
 					getComponent: () => r.e("HarbergerTaxBannerPurchaseCTA").then(r.bind(null, "./src/reddit/components/Governance/HarbergerTax/BannerPurchaseCTA/index.tsx")).then(e => e.default)
@@ -1766,7 +1766,7 @@
 				te = r("./src/reddit/constants/screenWidths.ts"),
 				re = r("./src/reddit/models/Theme/index.ts"),
 				ne = r("./src/reddit/models/Theme/NewColorSystem/index.ts");
-			const se = Object(Q.a)(e => {
+			const se = Object(X.a)(e => {
 				let {
 					className: t,
 					children: r,
@@ -2572,8 +2572,8 @@
 					isExpanded: !1
 				},
 				A = m.a.wrapped(o.a, "RawHTMLDisplay", L.a),
-				D = m.a.div("EventContainer", L.a),
-				R = m.a.div("EventTitle", L.a),
+				R = m.a.div("EventContainer", L.a),
+				D = m.a.div("EventTitle", L.a),
 				H = m.a.div("EventDate", L.a),
 				W = m.a.div("EventLocation", L.a),
 				U = m.a.div("EventDescription", L.a),
@@ -2605,9 +2605,9 @@
 					title: e.widget.shortName,
 					truncateThreshold: e.truncateThreshold,
 					widgetKind: e.widget.kind
-				}, e.widget.data.map((t, r) => s.a.createElement(D, {
+				}, e.widget.data.map((t, r) => s.a.createElement(R, {
 					key: `${r}-${t.title}`
-				}, s.a.createElement(R, null, t.titleHtml ? s.a.createElement(A, {
+				}, s.a.createElement(D, null, t.titleHtml ? s.a.createElement(A, {
 					html: t.titleHtml
 				}) : t.title), e.widget.configuration.showDate && t.startTime && s.a.createElement(H, null, s.a.createElement(F.a, {
 					seconds: t.startTime,
@@ -2636,8 +2636,8 @@
 					stylesheet: e => e.stylesheets
 				}),
 				J = Object(i.b)(K),
-				Q = (e, t, r) => `<head>\n  <link rel="stylesheet" href="${e}">\n  <link rel="stylesheet" href="${t}">\n  <base target="_blank">\n</head>\n<body>${r}</body>`;
-			class X extends s.a.Component {
+				X = (e, t, r) => `<head>\n  <link rel="stylesheet" href="${e}">\n  <link rel="stylesheet" href="${t}">\n  <base target="_blank">\n</head>\n<body>${r}</body>`;
+			class Q extends s.a.Component {
 				constructor() {
 					super(...arguments), this.storeRef = e => {
 						this.iframe = e
@@ -2656,7 +2656,7 @@
 					this.iframe && this.iframe.contentWindow && this.iframeContent && (this.iframe.contentWindow.document.body && this.iframe.contentWindow.document.body.childNodes.length || this.writeIFrameDocument())
 				}
 				renderIframeContent(e) {
-					e.widget.stylesheetUrl && e.widget.textHtml && (this.iframeContent = Q(e.stylesheet, e.widget.stylesheetUrl, e.widget.textHtml))
+					e.widget.stylesheetUrl && e.widget.textHtml && (this.iframeContent = X(e.stylesheet, e.widget.stylesheetUrl, e.widget.textHtml))
 				}
 				render() {
 					const {
@@ -2674,7 +2674,7 @@
 					}))
 				}
 			}
-			var $ = J(X),
+			var $ = J(Q),
 				ee = r("./src/reddit/components/Widgets/Image/ImageFrame.m.less"),
 				te = r.n(ee);
 			var re = m.a.div("ImageFrame", te.a),
@@ -3458,7 +3458,7 @@
 				d = e => Object(a.c)(e, {
 					experimentEligibilitySelector: o,
 					experimentName: n.zb
-				}) === n.Qc.Treatment
+				}) === n.Rc.Treatment
 		},
 		"./src/reddit/selectors/experiments/i18n/hiddenPowerups.ts": function(e, t, r) {
 			"use strict";
@@ -3477,8 +3477,8 @@
 				d = e => a.includes(e),
 				c = Object(n.a)(e => Object(i.c)(e, {
 					experimentEligibilitySelector: i.a,
-					experimentName: s.ne
-				}), e => e === s.Qd)
+					experimentName: s.oe
+				}), e => e === s.Rd)
 		},
 		"./src/redditGQL/operations/SubredditUserAchievements.json": function(e) {
 			e.exports = JSON.parse('{"id":"92790c69eba6"}')
@@ -3488,4 +3488,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~Subreddit~SubredditWiki.9d1756d7608c9b2892ba.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~Subreddit~SubredditWiki.f91ab3a8c2ff7676b84b.js.map

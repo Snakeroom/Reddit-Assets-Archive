@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/GovernanceTransferPointsModal.4d9fbcb450652e3ded13.js
-// Retrieved at 8/29/2022, 6:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/GovernanceTransferPointsModal.a5ba7695f2a4a5e7b1f6.js
+// Retrieved at 8/29/2022, 7:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["GovernanceTransferPointsModal"], {
 		"./node_modules/lodash/uniqueId.js": function(e, t, n) {
@@ -788,9 +788,9 @@
 				F = n("./src/reddit/constants/colors.ts"),
 				R = n("./src/reddit/controls/Button/index.tsx"),
 				B = n("./src/reddit/controls/LoadingIcon/index.tsx"),
-				G = n("./src/reddit/selectors/gov.ts"),
-				D = n("./src/reddit/components/Governance/TransferPointsModal/Controls/index.m.less"),
-				L = n.n(D),
+				D = n("./src/reddit/selectors/gov.ts"),
+				G = n("./src/reddit/components/Governance/TransferPointsModal/Controls/index.m.less"),
+				L = n.n(G),
 				V = n("./node_modules/fbt/lib/FbtPublic.js");
 			const U = Object(P.c)({
 				isMainnetEnabled: T.b,
@@ -801,7 +801,7 @@
 					return Object(k.b)(e, n)
 				},
 				transferIsPending: e => e.transfers.communityPoints.api.pending,
-				wallet: G.d
+				wallet: D.d
 			});
 			var W, H = Object(l.b)(U)((function(e) {
 					const {
@@ -1129,18 +1129,18 @@
 				Fe = n.n(Se);
 			const Re = 42,
 				Be = /^0x[0-9a-fA-F]+$/;
-			var Ge;
+			var De;
 			! function(e) {
 				e[e.Empty = 0] = "Empty", e[e.Searching = 1] = "Searching", e[e.Valid = 2] = "Valid", e[e.UserDoesNotHaveAWallet = 3] = "UserDoesNotHaveAWallet", e[e.InputtedWalletAddress = 4] = "InputtedWalletAddress", e[e.InvalidUsername = 5] = "InvalidUsername", e[e.Error = 6] = "Error"
-			}(Ge || (Ge = {}));
-			const De = async (e, t, n, s, a) => {
+			}(De || (De = {}));
+			const Ge = async (e, t, n, s, a) => {
 				const r = t.current;
-				if (!r || r.length <= Ce.b) return void a(Ge.Empty);
+				if (!r || r.length <= Ce.b) return void a(De.Empty);
 				const o = Be.test(r);
 				if (o) try {
-					if (!!Object(je.a)(r)) return void a(e ? Ge.InputtedWalletAddress : Ge.Valid)
+					if (!!Object(je.a)(r)) return void a(e ? De.InputtedWalletAddress : De.Valid)
 				} catch {}
-				r.length <= Ce.a ? (a(Ge.Searching), s(((e, t) => async (n, s, a) => {
+				r.length <= Ce.a ? (a(De.Searching), s(((e, t) => async (n, s, a) => {
 					let {
 						apiContext: r
 					} = a, o = s(), i = Object(Te.Ab)(o, {
@@ -1171,10 +1171,10 @@
 						userId: n,
 						wallet: s
 					} = e;
-					t.current === r && a(n ? s ? Ge.Valid : Ge.UserDoesNotHaveAWallet : o ? Ge.InputtedWalletAddress : Ge.InvalidUsername)
+					t.current === r && a(n ? s ? De.Valid : De.UserDoesNotHaveAWallet : o ? De.InputtedWalletAddress : De.InvalidUsername)
 				}).catch(() => {
-					a(Ge.Error)
-				})) : a(o ? Ge.InputtedWalletAddress : Ge.InvalidUsername)
+					a(De.Error)
+				})) : a(o ? De.InputtedWalletAddress : De.InvalidUsername)
 			};
 
 			function Le(e) {
@@ -1184,8 +1184,8 @@
 					subredditId: s,
 					tabIndex: a,
 					onChange: r
-				} = e, [d, u] = Object(i.useState)(n || ""), m = Object(i.useRef)(d), [p, b] = Object(i.useState)(Ge.Empty), h = Object(Pe.a)(), f = Object(l.e)(T.b), v = () => De(f, m, s, h, e => {
-					b(e), e === Ge.Valid && r(m.current, !0)
+				} = e, [d, u] = Object(i.useState)(n || ""), m = Object(i.useRef)(d), [p, b] = Object(i.useState)(De.Empty), h = Object(Pe.a)(), f = Object(l.e)(T.b), v = () => Ge(f, m, s, h, e => {
+					b(e), e === De.Valid && r(m.current, !0)
 				}), x = Object(i.useMemo)(() => o()(v, 300), [m, s, h, b, r, v]);
 				return Object(i.useEffect)(() => {
 					n && v()
@@ -1212,28 +1212,28 @@
 					}
 				}), function(e) {
 					switch (e) {
-						case Ge.UserDoesNotHaveAWallet:
+						case De.UserDoesNotHaveAWallet:
 							return c.a.createElement(ie.a, {
 								className: Fe.a.icon,
 								style: {
 									fill: F.a.notice
 								}
 							});
-						case Ge.InputtedWalletAddress:
-						case Ge.InvalidUsername:
-						case Ge.Error:
+						case De.InputtedWalletAddress:
+						case De.InvalidUsername:
+						case De.Error:
 							return c.a.createElement(Me.a, {
 								className: Fe.a.icon,
 								style: {
 									fill: F.a.warning
 								}
 							});
-						case Ge.Searching:
+						case De.Searching:
 							return c.a.createElement(B.a, {
 								className: Fe.a.loadingIcon,
 								sizePx: 8
 							});
-						case Ge.Valid:
+						case De.Valid:
 							return c.a.createElement(Ae.a, {
 								className: Fe.a.icon
 							});
@@ -1247,21 +1247,21 @@
 					}
 				}, function(e, t) {
 					switch (e) {
-						case Ge.UserDoesNotHaveAWallet:
+						case De.UserDoesNotHaveAWallet:
 							return V.fbt._("That user does not yet have a Vault.", null, {
 								hk: "ucZYj"
 							});
-						case Ge.InputtedWalletAddress:
+						case De.InputtedWalletAddress:
 							return t ? V.fbt._("Cannot tip to vault addresses.", null, {
 								hk: "2PW4iA"
 							}) : V.fbt._("Invalid Vault address.", null, {
 								hk: "1puAgb"
 							});
-						case Ge.InvalidUsername:
+						case De.InvalidUsername:
 							return V.fbt._("That user does not exist.", null, {
 								hk: "4f8vh9"
 							});
-						case Ge.Error:
+						case De.Error:
 							return V.fbt._("There was an error retrieving that user.", null, {
 								hk: "2F521p"
 							});
@@ -1273,11 +1273,11 @@
 
 			function Ve(e) {
 				switch (e) {
-					case Ge.UserDoesNotHaveAWallet:
+					case De.UserDoesNotHaveAWallet:
 						return F.a.notice;
-					case Ge.InputtedWalletAddress:
-					case Ge.InvalidUsername:
-					case Ge.Error:
+					case De.InputtedWalletAddress:
+					case De.InvalidUsername:
+					case De.Error:
 						return F.a.warning
 				}
 			}
@@ -2330,14 +2330,14 @@
 			const r = e => {
 					return Object(a.c)(e, {
 						experimentEligibilitySelector: a.a,
-						experimentName: s.Ce
-					}) === s.Qd
+						experimentName: s.De
+					}) === s.Rd
 				},
 				o = e => {
 					return Object(a.c)(e, {
 						experimentEligibilitySelector: a.a,
-						experimentName: s.ze
-					}) === s.Qd
+						experimentName: s.Ae
+					}) === s.Rd
 				}
 		},
 		"./src/reddit/selectors/gov.ts": function(e, t, n) {
@@ -2394,4 +2394,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/GovernanceTransferPointsModal.4d9fbcb450652e3ded13.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/GovernanceTransferPointsModal.a5ba7695f2a4a5e7b1f6.js.map

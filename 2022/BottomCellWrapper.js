@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/BottomCellWrapper.2535f81cce1a4ac70669.js
-// Retrieved at 8/29/2022, 6:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/BottomCellWrapper.1f3599703025438a8316.js
+// Retrieved at 8/29/2022, 7:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["BottomCellWrapper", "SignupUpsell"], {
 		"./src/reddit/components/ErrorBoundary/index.tsx": function(e, t, s) {
@@ -179,11 +179,11 @@
 				});
 			var O = s("./src/reddit/hooks/promo/useIsSignupUpsellVariantEligible.ts"),
 				v = s("./src/reddit/icons/svgs/AppleLogo/index.tsx"),
-				S = s("./src/reddit/icons/svgs/Close/index.tsx"),
-				B = s("./src/reddit/icons/svgs/GoogleLogo/index.tsx"),
-				N = s("./src/reddit/selectors/experiments/signupUpsellExperiment.ts"),
-				w = s("./src/reddit/components/Upsell/SignupUpsell/index.m.less"),
-				L = s.n(w);
+				B = s("./src/reddit/icons/svgs/Close/index.tsx"),
+				N = s("./src/reddit/icons/svgs/GoogleLogo/index.tsx"),
+				w = s("./src/reddit/selectors/experiments/signupUpsellExperiment.ts"),
+				S = s("./src/reddit/components/Upsell/SignupUpsell/index.m.less"),
+				L = s.n(S);
 			const k = {
 					S: "small",
 					L: "large"
@@ -209,16 +209,16 @@
 					x = () => {
 						g(), m(Object(r.openRegisterModal)())
 					},
-					w = function() {
-						const e = Object(i.e)(N.b),
-							t = Object(i.e)(N.d),
-							s = Object(i.e)(N.f),
-							o = Object(O.a)(b.Sc.Bottom_sheet),
-							l = Object(O.a)(b.Sc.Bottom_cell),
-							r = Object(O.a)(b.Sc.Bottom_cell_dismissible),
-							c = Object(O.a)(b.Sc.Bottom_cell_dismissible_immediate_trigger),
-							a = Object(O.a)(b.Sc.Bottom_cell_signup_upsell_copy),
-							d = Object(O.a)(b.Sc.Bottom_cell_surprise_install_copy);
+					S = function() {
+						const e = Object(i.e)(w.b),
+							t = Object(i.e)(w.d),
+							s = Object(i.e)(w.f),
+							o = Object(O.a)(b.Tc.Bottom_sheet),
+							l = Object(O.a)(b.Tc.Bottom_cell),
+							r = Object(O.a)(b.Tc.Bottom_cell_dismissible),
+							c = Object(O.a)(b.Tc.Bottom_cell_dismissible_immediate_trigger),
+							a = Object(O.a)(b.Tc.Bottom_cell_signup_upsell_copy),
+							d = Object(O.a)(b.Tc.Bottom_cell_surprise_install_copy);
 						let p;
 						if (e) p = I;
 						else if (t) p = U;
@@ -235,8 +235,8 @@
 						if (e && d) return `${u}bottom_cell_surprise_install_copy.png`;
 						throw new Error("Invalid variant for signup upsell")
 					}(),
-					y = Object(O.a)(b.Sc.Bottom_cell_signup_upsell_copy),
-					H = Object(O.a)(b.Sc.Bottom_cell_surprise_install_copy),
+					y = Object(O.a)(b.Tc.Bottom_cell_signup_upsell_copy),
+					H = Object(O.a)(b.Tc.Bottom_cell_surprise_install_copy),
 					A = y ? o.fbt._("Come join us, we have snacks", null, {
 						hk: "1LUl2W"
 					}) : o.fbt._("Log in or sign up for the best experience", null, {
@@ -261,14 +261,14 @@
 						t(), u(h())
 					},
 					type: "button"
-				}, l.createElement(S.a, null)), l.createElement("div", {
+				}, l.createElement(B.a, null)), l.createElement("div", {
 					className: L.a.title
 				}, A), l.createElement("div", {
 					className: L.a.bottom
 				}, l.createElement("div", {
 					className: L.a.left
 				}, l.createElement(_, {
-					Icon: B.a,
+					Icon: N.a,
 					onClick: () => {
 						x(), u(j(f.Google))
 					},
@@ -315,7 +315,7 @@
 						hk: "2uYhIL"
 					}),
 					className: L.a.img,
-					src: w
+					src: S
 				}), l.createElement("div", {
 					className: L.a.downloadAppLabel
 				}, R))))
@@ -430,9 +430,9 @@
 					experimentName: e,
 					experimentEligibilitySelector: c,
 					throttledVariants: {
-						[o.Sc.Bottom_cell_dismissible]: e,
-						[o.Sc.Bottom_cell_dismissible_immediate_trigger]: e,
-						[o.Sc.Bottom_sheet]: e
+						[o.Tc.Bottom_cell_dismissible]: e,
+						[o.Tc.Bottom_cell_dismissible_immediate_trigger]: e,
+						[o.Tc.Bottom_sheet]: e
 					},
 					expEventOverride: t
 				})
@@ -446,4 +446,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/BottomCellWrapper.2535f81cce1a4ac70669.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/BottomCellWrapper.1f3599703025438a8316.js.map

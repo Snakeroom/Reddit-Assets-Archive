@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Topic.034ffdd47840f4cc71b1.js
-// Retrieved at 8/29/2022, 6:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Topic.b23105c4be7f2c1a15f2.js
+// Retrieved at 8/29/2022, 7:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Topic"], {
 		"./node_modules/intersection-observer/intersection-observer.js": function(e, t) {
@@ -844,7 +844,7 @@
 				const t = Object(i.f)().getState(),
 					s = Object(h.a)(t, Object(a.c)());
 				if (e.isD2xPdpSideRailRecsEnabled) {
-					const t = e.d2xPdpSideRailRecsVariant === u.Xc.GreyRereddit || e.d2xPdpSideRailRecsVariant === u.Xc.GreyRedditNoNsfw || e.d2xPdpSideRailRecsVariant === u.Xc.LargeImagePreview ? e.reredditButtons : [];
+					const t = e.d2xPdpSideRailRecsVariant === u.Yc.GreyRereddit || e.d2xPdpSideRailRecsVariant === u.Yc.GreyRedditNoNsfw || e.d2xPdpSideRailRecsVariant === u.Yc.LargeImagePreview ? e.reredditButtons : [];
 					return r.a.createElement(O, {
 						reredditContent: t,
 						countryCode: e.countryCode
@@ -2190,8 +2190,8 @@
 				J = s.n(z);
 			const {
 				fbt: U
-			} = s("./node_modules/fbt/lib/FbtPublic.js"), q = 5;
-			class Y extends r.a.Component {
+			} = s("./node_modules/fbt/lib/FbtPublic.js"), Y = 5;
+			class q extends r.a.Component {
 				constructor() {
 					super(...arguments), this.onClick = () => {
 						const {
@@ -2207,7 +2207,7 @@
 						relatedTopics: t
 					} = this.props.relationship;
 					return r.a.createElement(y, {
-						limit: q,
+						limit: Y,
 						title: e,
 						topics: t
 					}, this.renderSeeMoreButton())
@@ -2217,7 +2217,7 @@
 						namePlural: e,
 						relatedTopics: t
 					} = this.props.relationship;
-					return t.length < q ? null : r.a.createElement(L.a, {
+					return t.length < Y ? null : r.a.createElement(L.a, {
 						onClick: this.onClick,
 						to: "#"
 					}, r.a.createElement(I.r, {
@@ -2231,7 +2231,7 @@
 					})))
 				}
 			}
-			var K = Y,
+			var K = q,
 				Q = s("./src/lib/prettyPrintNumber/index.ts"),
 				Z = s("./src/reddit/components/Flair/index.tsx"),
 				X = s("./src/reddit/components/SubredditIcon/index.tsx"),
@@ -2732,4 +2732,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Topic.034ffdd47840f4cc71b1.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Topic.b23105c4be7f2c1a15f2.js.map

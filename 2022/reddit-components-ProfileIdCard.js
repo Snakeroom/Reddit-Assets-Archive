@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-ProfileIdCard.0e2397f4e3b2bbcf705d.js
-// Retrieved at 8/29/2022, 6:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-ProfileIdCard.0489590a60572128d607.js
+// Retrieved at 8/29/2022, 7:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-ProfileIdCard"], {
 		"./node_modules/lodash/compact.js": function(e, t) {
@@ -2430,9 +2430,9 @@
 				}),
 				K = r("./src/reddit/constants/modals.ts"),
 				Z = r("./src/reddit/helpers/correlationIdTracker.ts"),
-				Q = r("./src/reddit/helpers/styles/mixins/loading.ts"),
-				V = r("./src/reddit/models/Gold/Premium/index.ts"),
-				Y = r("./src/reddit/selectors/experiments/chatInviteLinkSharing.ts"),
+				V = r("./src/reddit/helpers/styles/mixins/loading.ts"),
+				Y = r("./src/reddit/models/Gold/Premium/index.ts"),
+				Q = r("./src/reddit/selectors/experiments/chatInviteLinkSharing.ts"),
 				X = r("./src/reddit/selectors/experiments/crisisTextLine.ts"),
 				J = r("./src/reddit/selectors/premium.ts"),
 				$ = r("./src/reddit/components/ProfileIdCard/footer.m.less"),
@@ -2456,7 +2456,7 @@
 					isLoggedIn: P.Q,
 					profile: I.k,
 					crisisFlowEnabled: X.b,
-					chatInviteLinkSharing: Y.a
+					chatInviteLinkSharing: Q.a
 				}),
 				ne = e => {
 					let {
@@ -2464,7 +2464,7 @@
 						...r
 					} = e;
 					return o.a.createElement("div", te({}, r, {
-						className: Object(L.a)(ee.a.Shimmer, Object(Q.b)({
+						className: Object(L.a)(ee.a.Shimmer, Object(V.b)({
 							isLoading: t
 						}))
 					}))
@@ -2511,7 +2511,7 @@
 							onClickChatInviteLink: f,
 							onClickUnblockUser: b,
 							isUserBlocked: h
-						} = this.props, v = a && Object(V.d)(n, o).length && !c || o, g = w()([(c || i) && s ? {
+						} = this.props, v = a && Object(Y.d)(n, o).length && !c || o, g = w()([(c || i) && s ? {
 							text: N.fbt._("Profile Moderation", null, {
 								hk: "4x1una"
 							}),
@@ -2865,14 +2865,14 @@
 					prefShowSnoovatar: B,
 					snoovatarFullBodyAsset: D,
 					username: M
-				} = P, R = !!a && a.id === F, G = !(!a || !a.snoovatarFullBodyAsset), W = O && O.bannerBackgroundImage, H = !!b && b.isNSFW, q = H && c, z = !(!v || !v.userIsSubscriber), K = `/user/${M}/`, Z = j && j.url === K, Q = !v || v.acceptChats, V = !v || v.acceptPms, Y = k && Object(ue.b)(D), X = () => {
+				} = P, R = !!a && a.id === F, G = !(!a || !a.snoovatarFullBodyAsset), W = O && O.bannerBackgroundImage, H = !!b && b.isNSFW, q = H && c, z = !(!v || !v.userIsSubscriber), K = `/user/${M}/`, Z = j && j.url === K, V = !v || v.acceptChats, Y = !v || v.acceptPms, Q = k && Object(ue.b)(D), X = () => {
 					r(e => !e)
 				};
 				return o.a.createElement(o.a.Fragment, null, o.a.createElement(m.a, {
 					isEmployee: T,
 					isGold: A,
 					isNSFW: H,
-					isNftPreview: Y,
+					isNftPreview: Q,
 					isOverlay: l,
 					isOwnProfile: R,
 					publicDescription: v ? v.publicDescription : void 0,
@@ -2909,7 +2909,7 @@
 						isUserBlocked: y,
 						onClickUnblockUser: X,
 						enableFollowers: L
-					}), !!a && !R && !y && Q && xe({
+					}), !!a && !R && !y && V && xe({
 						userId: F
 					})),
 					footer: y ? void 0 : o.a.createElement(oe, {
@@ -2919,7 +2919,7 @@
 						allowViewSnoovatar: B,
 						profileName: M,
 						sendEvent: _,
-						userAcceptsPms: V,
+						userAcceptsPms: Y,
 						isUserBlocked: y
 					}),
 					onClickSnoovatar: p,
@@ -3555,7 +3555,7 @@
 			const a = e => Object(s.c)(e, {
 				experimentName: n.G,
 				experimentEligibilitySelector: () => Object(o.P)(e)
-			}) === n.Qd
+			}) === n.Rd
 		},
 		"./src/reddit/selectors/experiments/crisisTextLine.ts": function(e, t, r) {
 			"use strict";
@@ -3588,13 +3588,13 @@
 			const o = e => {
 					return !(Object(s.c)(e, {
 						experimentEligibilitySelector: s.a,
-						experimentName: n.Ae
-					}) === n.Qd)
+						experimentName: n.Be
+					}) === n.Rd)
 				},
 				a = e => Object(s.c)(e, {
 					experimentEligibilitySelector: s.a,
-					experimentName: n.Be
-				}) === n.Qd
+					experimentName: n.Ce
+				}) === n.Rd
 		},
 		"./src/reddit/selectors/premium.ts": function(e, t, r) {
 			"use strict";
@@ -3623,4 +3623,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ProfileIdCard.0e2397f4e3b2bbcf705d.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ProfileIdCard.0489590a60572128d607.js.map

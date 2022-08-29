@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/UpdateCardModal.1dd8de67e083548e8ccf.js
-// Retrieved at 8/29/2022, 6:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/UpdateCardModal.486fe916518d53f05a07.js
+// Retrieved at 8/29/2022, 7:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["UpdateCardModal"], {
 		"./src/reddit/components/UpdateCardModal/index.tsx": function(e, t, r) {
@@ -20,8 +20,8 @@
 				w = r("./src/reddit/models/Toast/index.ts"),
 				b = r("./src/reddit/selectors/activeModalId.ts"),
 				x = r("./src/reddit/actions/goldPurchaseModals/constants.ts");
-			const j = Object(a.a)(x.f),
-				v = e => async (t, r, n) => {
+			const v = Object(a.a)(x.f),
+				j = e => async (t, r, n) => {
 					let {
 						gqlContext: s
 					} = n;
@@ -43,7 +43,7 @@
 							duration: p.a,
 							text: e
 						})), t((() => async (e, t) => {
-							Object(b.b)(m.a)(t()) && (e(Object(u.i)(m.a)), e(j()))
+							Object(b.b)(m.a)(t()) && (e(Object(u.i)(m.a)), e(v()))
 						})())
 					}
 				};
@@ -53,7 +53,7 @@
 				const e = Object(c.d)(),
 					t = Object(n.useStripe)();
 				return Object(o.useEffect)(() => {
-					t && e(v(t))
+					t && e(j(t))
 				}, [t, e]), i.a.createElement(h.a, {
 					sizePx: 15
 				})
@@ -146,8 +146,8 @@
 			}));
 			var n = r("./src/reddit/constants/experiments.ts"),
 				s = r("./src/reddit/selectors/experiments/econ/simpleExperiment.ts");
-			const o = Object(s.a)(n.ud)
+			const o = Object(s.a)(n.vd)
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/UpdateCardModal.1dd8de67e083548e8ccf.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/UpdateCardModal.486fe916518d53f05a07.js.map

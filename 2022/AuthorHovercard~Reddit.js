@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/AuthorHovercard~Reddit.e7975a5cf65841fea2c2.js
-// Retrieved at 8/29/2022, 6:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/AuthorHovercard~Reddit.fb00da877f668c978c31.js
+// Retrieved at 8/29/2022, 7:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["AuthorHovercard~Reddit"], {
 		"./src/lib/browser/isIncognito.ts": function(e, t, n) {
@@ -119,7 +119,7 @@
 			const E = e => Object(C.c)(e, {
 				experimentName: j.nc,
 				experimentEligibilitySelector: C.a
-			}) === j.Qd;
+			}) === j.Rd;
 			var I = n("./src/reddit/selectors/meta.ts"),
 				S = n("./src/reddit/selectors/user.ts");
 			let B = !1;
@@ -369,18 +369,18 @@
 				if (!n || V && H > V) return null;
 				const q = !!(null == n ? void 0 : n.primaryCta),
 					K = !!(null == n ? void 0 : n.secondaryCta),
-					J = !!(null == n ? void 0 : n.titleImage),
-					X = !!(null == n ? void 0 : n.thumbnailImageUrl),
-					Y = () => {
+					Y = !!(null == n ? void 0 : n.titleImage),
+					J = !!(null == n ? void 0 : n.thumbnailImageUrl),
+					Z = () => {
 						var e;
 						(null === (e = n.persistence) || void 0 === e ? void 0 : e.isDismissible) && (F(), A(Object(c.a)(n.notificationName)))
 					},
-					Z = {
+					Q = {
 						backgroundColor: D ? null === (x = null == n ? void 0 : n.primaryCta) || void 0 === x ? void 0 : x.colors.hoverHex : null === (O = null == n ? void 0 : n.primaryCta) || void 0 === O ? void 0 : O.colors.backgroundHex,
 						color: null === (N = null == n ? void 0 : n.primaryCta) || void 0 === N ? void 0 : N.text.colorText,
 						borderColor: null === (y = null == n ? void 0 : n.primaryCta) || void 0 === y ? void 0 : y.colors.borderHex
 					},
-					Q = {
+					X = {
 						backgroundColor: z ? null === (k = null == n ? void 0 : n.secondaryCta) || void 0 === k ? void 0 : k.colors.hoverHex : null === (j = null == n ? void 0 : n.secondaryCta) || void 0 === j ? void 0 : j.colors.backgroundHex,
 						color: null === (C = null == n ? void 0 : n.secondaryCta) || void 0 === C ? void 0 : C.text.colorText,
 						borderColor: null === (E = null == n ? void 0 : n.secondaryCta) || void 0 === E ? void 0 : E.colors.borderHex
@@ -391,13 +391,13 @@
 						backgroundImage: `url(${n.bodyBackgroundImage})`
 					},
 					onClick: e => {
-						e.stopPropagation(), Object(r.e)(n.linkUrl, "_blank"), Y(), R(t ? Object(d.A)(n.notificationName, d.b.BANNER) : Object(d.o)(n.notificationName, d.b.BANNER))
+						e.stopPropagation(), Object(r.e)(n.linkUrl, "_blank"), Z(), R(t ? Object(d.A)(n.notificationName, d.b.BANNER) : Object(d.o)(n.notificationName, d.b.BANNER))
 					}
 				}, a.a.createElement("div", {
 					className: v.a.Content
 				}, a.a.createElement("div", {
 					className: v.a.Heading
-				}, J ? a.a.createElement("img", {
+				}, Y ? a.a.createElement("img", {
 					className: v.a.TitleIcon,
 					src: n.titleImage
 				}) : a.a.createElement("div", {
@@ -412,12 +412,12 @@
 					style: {
 						color: null === (B = n.bodyText) || void 0 === B ? void 0 : B.colorText
 					}
-				}, null === (T = n.bodyText) || void 0 === T ? void 0 : T.text), X && a.a.createElement("img", {
+				}, null === (T = n.bodyText) || void 0 === T ? void 0 : T.text), J && a.a.createElement("img", {
 					src: n.thumbnailImageUrl,
 					className: v.a.Thumbnail
 				})), q || K && a.a.createElement("div", {
 					className: Object(s.a)(v.a.ActionButtons, {
-						[v.a.noMargin]: X
+						[v.a.noMargin]: J
 					})
 				}, q && a.a.createElement(l.t, {
 					text: null === (w = n.primaryCta) || void 0 === w ? void 0 : w.text.text,
@@ -425,10 +425,10 @@
 					size: l.d.XS,
 					onClick: e => {
 						var i;
-						e.stopPropagation(), (null === (i = n.primaryCta) || void 0 === i ? void 0 : i.actionType) === p.a.GOTO && n.primaryCta.url && Object(r.e)(n.primaryCta.url, "_blank"), Y(), R(t ? Object(d.A)(n.notificationName, d.b.CTA_1) : Object(d.o)(n.notificationName, d.b.CTA_1))
+						e.stopPropagation(), (null === (i = n.primaryCta) || void 0 === i ? void 0 : i.actionType) === p.a.GOTO && n.primaryCta.url && Object(r.e)(n.primaryCta.url, "_blank"), Z(), R(t ? Object(d.A)(n.notificationName, d.b.CTA_1) : Object(d.o)(n.notificationName, d.b.CTA_1))
 					},
 					style: {
-						...Z
+						...Q
 					},
 					onMouseEnter: () => M(!0),
 					onMouseLeave: () => M(!1)
@@ -438,10 +438,10 @@
 					size: l.d.XS,
 					className: v.a.SecondaryButton,
 					onClick: e => {
-						e.stopPropagation(), (null == n ? void 0 : n.secondaryCta) && (n.secondaryCta.actionType === p.a.GOTO && n.secondaryCta.url && Object(r.e)(n.secondaryCta.url, "_blank"), Y(), R(t ? Object(d.A)(n.notificationName, d.b.CTA_2) : Object(d.o)(n.notificationName, d.b.CTA_2)))
+						e.stopPropagation(), (null == n ? void 0 : n.secondaryCta) && (n.secondaryCta.actionType === p.a.GOTO && n.secondaryCta.url && Object(r.e)(n.secondaryCta.url, "_blank"), Z(), R(t ? Object(d.A)(n.notificationName, d.b.CTA_2) : Object(d.o)(n.notificationName, d.b.CTA_2)))
 					},
 					style: {
-						...Q
+						...X
 					},
 					onMouseEnter: () => W(!0),
 					onMouseLeave: () => W(!1)
@@ -452,7 +452,7 @@
 					iconClassName: v.a.CloseButtonIcon,
 					priority: l.c.Plain,
 					onClick: e => {
-						e.stopPropagation(), Y(), R(t ? Object(d.A)(n.notificationName, d.b.DISMISS) : Object(d.o)(n.notificationName, d.b.DISMISS))
+						e.stopPropagation(), Z(), R(t ? Object(d.A)(n.notificationName, d.b.DISMISS) : Object(d.o)(n.notificationName, d.b.DISMISS))
 					}
 				}))
 			};
@@ -498,7 +498,7 @@
 		"./src/reddit/components/InboxTooltip/Component.tsx": function(e, t, n) {
 			"use strict";
 			n.d(t, "a", (function() {
-				return Y
+				return Z
 			})), n.d(t, "b", (function() {
 				return ee
 			}));
@@ -797,10 +797,10 @@
 				V = n("./src/reddit/controls/InternalLink/index.tsx"),
 				q = n("./src/reddit/hooks/useLocalStorage.ts");
 			var K = n("./src/reddit/hooks/useDesktopNotificationsPromptSeen.ts"),
-				J = n("./src/reddit/helpers/localStorage/index.ts");
+				Y = n("./src/reddit/helpers/localStorage/index.ts");
 
-			function X() {
-				return (X = Object.assign || function(e) {
+			function J() {
+				return (J = Object.assign || function(e) {
 					for (var t = 1; t < arguments.length; t++) {
 						var n = arguments[t];
 						for (var i in n) Object.prototype.hasOwnProperty.call(n, i) && (e[i] = n[i])
@@ -808,9 +808,9 @@
 					return e
 				}).apply(this, arguments)
 			}
-			const Y = [],
-				Z = l.a.div("StyledDropdown", C.a),
-				Q = e => {
+			const Z = [],
+				Q = l.a.div("StyledDropdown", C.a),
+				X = e => {
 					let {
 						isLoggedIn: t,
 						onMessagesClick: n,
@@ -891,9 +891,9 @@
 						} = e,
 						[v, x] = Object(K.a)(_),
 						[O, N] = function(e) {
-							const [t, n] = Object(a.useState)(() => Object(J.u)(e));
+							const [t, n] = Object(a.useState)(() => Object(Y.u)(e));
 							return [t, Object(a.useCallback)(() => {
-								n(!0), Object(J.Bb)(e)
+								n(!0), Object(Y.Bb)(e)
 							}, [e])]
 						}(_),
 						[y, k] = function(e) {
@@ -913,9 +913,9 @@
 						E = Object(s.a)(),
 						I = E === r.a.Closed || E === r.a.Default || E === r.a.Denied,
 						S = f && I && !v;
-					return o.a.createElement(Z, null, o.a.createElement("div", {
+					return o.a.createElement(Q, null, o.a.createElement("div", {
 						className: C.a.tooltipContainer
-					}, o.a.createElement(Q, {
+					}, o.a.createElement(X, {
 						markAllAsRead: () => {
 							e.markAllAsRead(), t(Object(h.h)({
 								isMiniInbox: !0
@@ -931,7 +931,7 @@
 						sendInboxClickSettings: () => t(Object(h.n)(h.c.MiniInbox)),
 						onBarClick: u,
 						isLoggedIn: p
-					}), o.a.createElement(W, X({}, e, {
+					}), o.a.createElement(W, J({}, e, {
 						isPending: c,
 						onItemClick: u,
 						setDesktopNotificationsPromptSeen: x,
@@ -1681,23 +1681,23 @@
 			const q = e => Object(V.c)(e, {
 					experimentEligibilitySelector: V.a,
 					experimentName: G.Ib
-				}) === G.Xd.MemesNoBadge,
+				}) === G.Yd.MemesNoBadge,
 				K = e => Object(V.c)(e, {
 					experimentEligibilitySelector: V.a,
 					experimentName: G.Ib
-				}) === G.Xd.PnEmailNoBadge,
-				J = e => Object(V.c)(e, {
-					experimentEligibilitySelector: V.a,
-					experimentName: G.Ib
-				}) === G.Xd.KarmaNoBadge,
-				X = e => Object(V.c)(e, {
-					experimentEligibilitySelector: V.a,
-					experimentName: G.Ib
-				}) === G.Xd.PopularNoBadge,
+				}) === G.Yd.PnEmailNoBadge,
 				Y = e => Object(V.c)(e, {
 					experimentEligibilitySelector: V.a,
 					experimentName: G.Ib
-				}) === G.Xd.CatsNoBadge;
+				}) === G.Yd.KarmaNoBadge,
+				J = e => Object(V.c)(e, {
+					experimentEligibilitySelector: V.a,
+					experimentName: G.Ib
+				}) === G.Yd.PopularNoBadge,
+				Z = e => Object(V.c)(e, {
+					experimentEligibilitySelector: V.a,
+					experimentName: G.Ib
+				}) === G.Yd.CatsNoBadge;
 			t.a = e => {
 				let {
 					isBannerEnabled: t,
@@ -1711,9 +1711,9 @@
 					})),
 					u = Object(o.e)(q),
 					m = Object(o.e)(K),
-					b = Object(o.e)(J),
-					p = Object(o.e)(X),
-					h = Object(o.e)(Y);
+					b = Object(o.e)(Y),
+					p = Object(o.e)(J),
+					h = Object(o.e)(Z);
 				return u ? a.a.createElement(E, {
 					inTooltip: i,
 					onBtnClick: d(s.a.Memes)
@@ -1840,7 +1840,7 @@
 			}));
 			var i = n("./src/reddit/constants/experiments.ts"),
 				a = n("./src/reddit/helpers/chooseVariant/index.ts");
-			const o = e => i.Rc.DnNoModal === Object(a.c)(e, {
+			const o = e => i.Sc.DnNoModal === Object(a.c)(e, {
 				experimentEligibilitySelector: a.a,
 				experimentName: i.Eb
 			})
@@ -1905,4 +1905,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/AuthorHovercard~Reddit.e7975a5cf65841fea2c2.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/AuthorHovercard~Reddit.fb00da877f668c978c31.js.map

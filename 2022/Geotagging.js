@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Geotagging.adde78f833c0d9efc26a.js
-// Retrieved at 8/29/2022, 6:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Geotagging.e2c1a63ffdad205bf812.js
+// Retrieved at 8/29/2022, 7:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Geotagging"], {
 		"./node_modules/p-debounce/index.js": function(e, t, s) {
@@ -419,7 +419,7 @@
 				const t = Object(a.f)().getState(),
 					s = Object(h.a)(t, Object(o.c)());
 				if (e.isD2xPdpSideRailRecsEnabled) {
-					const t = e.d2xPdpSideRailRecsVariant === u.Xc.GreyRereddit || e.d2xPdpSideRailRecsVariant === u.Xc.GreyRedditNoNsfw || e.d2xPdpSideRailRecsVariant === u.Xc.LargeImagePreview ? e.reredditButtons : [];
+					const t = e.d2xPdpSideRailRecsVariant === u.Yc.GreyRereddit || e.d2xPdpSideRailRecsVariant === u.Yc.GreyRedditNoNsfw || e.d2xPdpSideRailRecsVariant === u.Yc.LargeImagePreview ? e.reredditButtons : [];
 					return r.a.createElement(O, {
 						reredditContent: t,
 						countryCode: e.countryCode
@@ -1537,12 +1537,12 @@
 				fbt: V
 			} = s("./node_modules/fbt/lib/FbtPublic.js");
 
-			function U(e) {
+			function Y(e) {
 				const t = Object(b.B)(Z) || [];
 				t.push(e), Object(b.Hb)(Z, t)
 			}
 
-			function X(e) {
+			function U(e) {
 				const {
 					subreddit: t,
 					onClose: s
@@ -1582,7 +1582,7 @@
 				}, t.prefixedName)), r.a.createElement("button", {
 					className: S.a.dismiss,
 					onClick: function() {
-						U(t.id), _(R(t)), x(), s(t.id)
+						Y(t.id), _(R(t)), x(), s(t.id)
 					}
 				}, r.a.createElement(q.a, null))), r.a.createElement("p", null, t.publicDescriptionText || t.title), t.geoPlace && !m ? r.a.createElement("div", {
 					className: S.a.questionContainer
@@ -1598,7 +1598,7 @@
 				}, "No"), r.a.createElement(E.l, {
 					className: S.a.verifyButton,
 					onClick: function() {
-						U(t.id), _(H(t, t.geoPlace.id)), x(), s(t.id), y()
+						Y(t.id), _(H(t, t.geoPlace.id)), x(), s(t.id), y()
 					}
 				}, "Yes")) : r.a.createElement(N.a, {
 					disabled: l,
@@ -1631,7 +1631,7 @@
 				}))
 			}
 			const {
-				fbt: Y
+				fbt: X
 			} = s("./node_modules/fbt/lib/FbtPublic.js"), Z = "geotagging-dismissed";
 
 			function $() {
@@ -1665,7 +1665,7 @@
 				function d(e) {
 					o(a + 1)
 				}
-				return e ? r.a.createElement("div", null, r.a.createElement(O, null), Y._("Error loading subreddits", null, {
+				return e ? r.a.createElement("div", null, r.a.createElement(O, null), X._("Error loading subreddits", null, {
 					hk: "4hQNVu"
 				})) : t ? r.a.createElement(r.a.Fragment, null, r.a.createElement(O, null), r.a.createElement(i.a, {
 					isLoading: !0,
@@ -1682,7 +1682,7 @@
 				}), r.a.createElement(i.a, {
 					isLoading: !0,
 					className: S.a.subredditGeotag
-				})) : a >= s.length ? r.a.createElement(v, null) : r.a.createElement(r.a.Fragment, null, r.a.createElement(O, null), s.map(e => r.a.createElement(X, {
+				})) : a >= s.length ? r.a.createElement(v, null) : r.a.createElement(r.a.Fragment, null, r.a.createElement(O, null), s.map(e => r.a.createElement(U, {
 					key: e.id,
 					subreddit: e,
 					onClose: d
@@ -1754,4 +1754,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Geotagging.adde78f833c0d9efc26a.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Geotagging.e2c1a63ffdad205bf812.js.map

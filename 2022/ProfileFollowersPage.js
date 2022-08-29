@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfileFollowersPage.b154b54afc6073364c3d.js
-// Retrieved at 8/29/2022, 6:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfileFollowersPage.f60df71ec3494f789847.js
+// Retrieved at 8/29/2022, 7:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfileFollowersPage", "ProfileFollowersAction"], {
 		"./node_modules/lodash/take.js": function(e, t, s) {
@@ -398,9 +398,9 @@
 					ids: G,
 					loadMore: Y
 				});
-			const X = {};
-			var J = function() {
-				let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : X,
+			const J = {};
+			var X = function() {
+				let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : J,
 					t = arguments.length > 1 ? arguments[1] : void 0;
 				switch (t.type) {
 					case F.f:
@@ -456,7 +456,7 @@
 					}
 				},
 				te = Object(A.c)({
-					error: J,
+					error: X,
 					pending: ee
 				}),
 				se = s("./src/reddit/actions/profileConversations.ts");
@@ -785,7 +785,7 @@
 							type: v.body.reason
 						} : v.error,
 						key: e
-					})), v.body.reason === P.a.DeletedProfile && r(Object(w.s)({
+					})), v.body.reason === P.a.DeletedProfile && r(Object(w.u)({
 						profileName: t
 					})), r(Object(j.n)(v.status))
 				}, Te = e => async (t, s, r) => {
@@ -1096,8 +1096,8 @@
 				}
 			});
 			const Z = Object(o.a)(_.s),
-				X = Object(o.a)(_.r),
-				J = Object(o.a)(_.q),
+				J = Object(o.a)(_.r),
+				X = Object(o.a)(_.q),
 				$ = function(e) {
 					let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : {};
 					return async (s, r, n) => {
@@ -1115,10 +1115,10 @@
 						}));
 						const c = o.subreddits.models[e].name,
 							u = await x(i(), c, t);
-						u.ok ? s(X({
+						u.ok ? s(J({
 							...u.body,
 							fetchedToken: a
-						})) : s(J({
+						})) : s(X({
 							subredditId: e,
 							fetchedToken: a
 						}))
@@ -1539,15 +1539,15 @@
 				Q = s("./src/reddit/actions/subredditModeration/ban.ts"),
 				Y = s("./src/reddit/constants/modals.ts"),
 				Z = s("./src/reddit/components/Hovercards/helpers.ts"),
-				X = s("./src/reddit/icons/fonts/index.tsx"),
-				J = s("./src/reddit/models/ModeratingSubreddits/index.ts"),
+				J = s("./src/reddit/icons/fonts/index.tsx"),
+				X = s("./src/reddit/models/ModeratingSubreddits/index.ts"),
 				$ = s("./src/reddit/selectors/bannedUser.ts"),
 				ee = s("./src/reddit/components/Hovercards/AuthorHovercard/ModActions.m.less"),
 				te = s.n(ee);
 			const {
 				fbt: se
 			} = s("./node_modules/fbt/lib/FbtPublic.js"), re = Object(o.c)({
-				hasModMailPermissions: Object(p.b)(J.c.mail),
+				hasModMailPermissions: Object(p.b)(X.c.mail),
 				isUserBanned: (e, t) => !!Object($.b)(e, {
 					subredditId: t.subredditId,
 					username: t.username
@@ -1578,7 +1578,7 @@
 						onClick: () => {
 							i(this.props.user.id), o(U.e(t))
 						}
-					}, n.a.createElement(X.a, {
+					}, n.a.createElement(J.a, {
 						name: "ban",
 						isFilled: !0,
 						className: te.a.icon
@@ -1589,7 +1589,7 @@
 						onClick: () => {
 							a(), o(U.a(t))
 						}
-					}, n.a.createElement(X.a, {
+					}, n.a.createElement(J.a, {
 						name: "ban",
 						className: te.a.icon
 					}), se._("Ban User", null, {
@@ -1599,7 +1599,7 @@
 						onClick: () => {
 							d(), o(U.d(t))
 						}
-					}, n.a.createElement(X.a, {
+					}, n.a.createElement(J.a, {
 						name: "mod_mute",
 						className: te.a.icon
 					}), se._("Mute User", null, {
@@ -1645,7 +1645,7 @@
 					onClick: () => {
 						e.onToggleUserFlairModal(), e.sendEvent(U.c(e.contextId))
 					}
-				}, n.a.createElement(X.a, {
+				}, n.a.createElement(J.a, {
 					name: "tag",
 					className: te.a.icon
 				}), ae._("Edit user flair", null, {
@@ -3401,8 +3401,8 @@
 				return t
 			}
 			const Z = 10,
-				X = .9,
 				J = .9,
+				X = .9,
 				$ = 1.8,
 				ee = 5,
 				te = 1500,
@@ -3565,8 +3565,8 @@
 							if (clearTimeout(this.resetCanFocusTimer), this.cancelPopulateRenderableChildrenWhenIdle(), Object(_.b)() || !this.scrollContainer) return void(this.pendingScollHandlerRead = null);
 							this.updateScrollMetrics();
 							const e = this.getAveragePixelsPerMilliSecond(),
-								t = e < X,
-								s = e < J,
+								t = e < J,
+								s = e < X,
 								r = e < $;
 							if (this.scrollContainer && !this.loadMoreFired && this.props.onLoadMore) {
 								let e = !1;
@@ -4090,7 +4090,7 @@
 				const t = Object(i.f)().getState(),
 					s = Object(b.a)(t, Object(a.c)());
 				if (e.isD2xPdpSideRailRecsEnabled) {
-					const t = e.d2xPdpSideRailRecsVariant === u.Xc.GreyRereddit || e.d2xPdpSideRailRecsVariant === u.Xc.GreyRedditNoNsfw || e.d2xPdpSideRailRecsVariant === u.Xc.LargeImagePreview ? e.reredditButtons : [];
+					const t = e.d2xPdpSideRailRecsVariant === u.Yc.GreyRereddit || e.d2xPdpSideRailRecsVariant === u.Yc.GreyRedditNoNsfw || e.d2xPdpSideRailRecsVariant === u.Yc.LargeImagePreview ? e.reredditButtons : [];
 					return n.a.createElement(_, {
 						reredditContent: t,
 						countryCode: e.countryCode
@@ -6207,13 +6207,13 @@
 			const i = e => {
 					return !(Object(n.c)(e, {
 						experimentEligibilitySelector: n.a,
-						experimentName: r.Ae
-					}) === r.Qd)
+						experimentName: r.Be
+					}) === r.Rd)
 				},
 				o = e => Object(n.c)(e, {
 					experimentEligibilitySelector: n.a,
-					experimentName: r.Be
-				}) === r.Qd
+					experimentName: r.Ce
+				}) === r.Rd
 		},
 		"./src/reddit/selectors/followers.ts": function(e, t, s) {
 			"use strict";
@@ -6264,4 +6264,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileFollowersPage.b154b54afc6073364c3d.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileFollowersPage.f60df71ec3494f789847.js.map
