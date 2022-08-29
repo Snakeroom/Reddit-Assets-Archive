@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Topic.cd3a1fe6c4bc0255a74f.js
-// Retrieved at 8/29/2022, 11:40:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Topic.034ffdd47840f4cc71b1.js
+// Retrieved at 8/29/2022, 6:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Topic"], {
 		"./node_modules/intersection-observer/intersection-observer.js": function(e, t) {
@@ -844,7 +844,7 @@
 				const t = Object(i.f)().getState(),
 					s = Object(h.a)(t, Object(a.c)());
 				if (e.isD2xPdpSideRailRecsEnabled) {
-					const t = e.d2xPdpSideRailRecsVariant === u.Wc.GreyRereddit || e.d2xPdpSideRailRecsVariant === u.Wc.GreyRedditNoNsfw || e.d2xPdpSideRailRecsVariant === u.Wc.LargeImagePreview ? e.reredditButtons : [];
+					const t = e.d2xPdpSideRailRecsVariant === u.Xc.GreyRereddit || e.d2xPdpSideRailRecsVariant === u.Xc.GreyRedditNoNsfw || e.d2xPdpSideRailRecsVariant === u.Xc.LargeImagePreview ? e.reredditButtons : [];
 					return r.a.createElement(O, {
 						reredditContent: t,
 						countryCode: e.countryCode
@@ -1390,12 +1390,12 @@
 				P = s.n(I);
 			const {
 				fbt: R
-			} = s("./node_modules/fbt/lib/FbtPublic.js"), F = 8, W = Array.from({
+			} = s("./node_modules/fbt/lib/FbtPublic.js"), F = 8, B = Array.from({
 				length: F
 			}).map((e, t) => r.a.createElement(L, {
 				className: P.a.Subreddit,
 				key: t
-			})), B = {
+			})), D = {
 				enabled: !0,
 				id: "xd_103",
 				layout: m.c.Large,
@@ -1404,10 +1404,10 @@
 				unitType: m.e.SubredditListing,
 				url: ""
 			};
-			class D extends r.a.Component {
+			class W extends r.a.Component {
 				constructor() {
 					super(...arguments), this.onSeeMoreCommunities = () => {
-						this.props.onSeeMoreCommunities && (this.props.sendEvent(Object(u.w)(B)), this.props.onSeeMoreCommunities())
+						this.props.onSeeMoreCommunities && (this.props.sendEvent(Object(u.w)(D)), this.props.onSeeMoreCommunities())
 					}
 				}
 				render() {
@@ -1428,10 +1428,10 @@
 						className: P.a.SubredditList
 					}, n.length > 0 ? n.map(e => r.a.createElement(N, {
 						className: P.a.Subreddit,
-						discoveryUnit: B,
+						discoveryUnit: D,
 						key: e,
 						subredditId: e
-					})) : W), t.length > F && r.a.createElement(i.a, {
+					})) : B), t.length > F && r.a.createElement(i.a, {
 						to: s
 					}, r.a.createElement(l.r, {
 						className: P.a.SeeMore,
@@ -1441,7 +1441,7 @@
 					}))))
 				}
 			}
-			t.a = Object(d.c)(D)
+			t.a = Object(d.c)(W)
 		},
 		"./src/reddit/components/TopicSidebar/index.m.less": function(e, t, s) {
 			e.exports = {
@@ -2101,9 +2101,9 @@
 					}, t) : null
 				}
 			}
-			var W = F,
-				B = s("./src/reddit/pages/Topic/TopicHeader/index.m.less"),
-				D = s.n(B);
+			var B = F,
+				D = s("./src/reddit/pages/Topic/TopicHeader/index.m.less"),
+				W = s.n(D);
 
 			function H() {
 				return (H = Object.assign || function(e) {
@@ -2127,7 +2127,7 @@
 						parentRelatedTopics: e
 					} = this.props;
 					return e.length ? r.a.createElement("ul", {
-						className: D.a.parentRelatedTopics
+						className: W.a.parentRelatedTopics
 					}, e.map((e, t) => {
 						let {
 							namePlural: s,
@@ -2136,7 +2136,7 @@
 						return r.a.createElement("li", {
 							key: t
 						}, r.a.createElement(m.default, {
-							className: D.a.link,
+							className: W.a.link,
 							to: n
 						}, s))
 					})) : M._("Topic on Reddit", null, {
@@ -2157,28 +2157,28 @@
 						tabs: i
 					};
 					return r.a.createElement("div", {
-						className: Object(o.a)(D.a.Container, t)
+						className: Object(o.a)(W.a.Container, t)
 					}, r.a.createElement("div", {
-						className: Object(o.a)(D.a.Content, s === O.g.Large ? D.a.cardWidth : D.a.fullWidth)
+						className: Object(o.a)(W.a.Content, s === O.g.Large ? W.a.cardWidth : W.a.fullWidth)
 					}, r.a.createElement("div", {
-						className: D.a.Header
+						className: W.a.Header
 					}, r.a.createElement("div", {
-						className: D.a.Title
+						className: W.a.Title
 					}, r.a.createElement(f.b, {
 						type: f.a.TopicHeader
 					}, a)), r.a.createElement("div", {
-						className: D.a.Subtitle
+						className: W.a.Subtitle
 					}, this.renderSubtitleContent())), r.a.createElement("div", {
-						className: D.a.Tabs
-					}, r.a.createElement(W, H({
+						className: W.a.Tabs
+					}, r.a.createElement(B, H({
 						tab: V.Posts
 					}, c), M._("Posts", null, {
 						hk: "3RLrle"
-					})), r.a.createElement(W, H({
+					})), r.a.createElement(B, H({
 						tab: V.Communities
 					}, c), M._("Communities", null, {
 						hk: "KIwd1"
-					})), r.a.createElement(W, H({
+					})), r.a.createElement(B, H({
 						tab: V.RelatedTopics
 					}, c), M._("Related Topics", null, {
 						hk: "4go2cr"
@@ -2732,4 +2732,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Topic.cd3a1fe6c4bc0255a74f.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Topic.034ffdd47840f4cc71b1.js.map

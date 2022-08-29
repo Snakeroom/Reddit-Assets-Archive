@@ -1,33 +1,30 @@
-// https://www.redditstatic.com/desktop2x/EmailVerificationModals.6607d995cf67b739801f.js
-// Retrieved at 8/4/2022, 2:20:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/EmailVerificationModals.c3706550543d173763b4.js
+// Retrieved at 8/29/2022, 6:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["EmailVerificationModals"], {
 		"./src/lib/colors/constants.ts": function(e, t, a) {
 			"use strict";
 			a.d(t, "b", (function() {
 				return n
-			})), a.d(t, "f", (function() {
+			})), a.d(t, "e", (function() {
 				return s
 			})), a.d(t, "c", (function() {
 				return o
 			})), a.d(t, "a", (function() {
 				return i
-			})), a.d(t, "e", (function() {
-				return r
 			})), a.d(t, "d", (function() {
+				return r
+			})), a.d(t, "f", (function() {
 				return l
 			})), a.d(t, "g", (function() {
 				return c
-			})), a.d(t, "h", (function() {
-				return d
 			}));
 			const n = "#000",
 				s = "#FFF",
 				o = "#FF4500",
 				i = "#0079D3",
-				r = "#24A0ED",
-				l = "#46D160",
-				c = {
+				r = "#46D160",
+				l = {
 					black: n,
 					white: s,
 					orangered: o,
@@ -39,11 +36,11 @@
 					tone5: "#EDEFF1",
 					tone6: "#F6F7F8",
 					tone7: "#FFFFFF",
-					primary: r,
+					primary: "#24A0ED",
 					secondary: "#006CBF",
 					upvote: o,
 					downvote: "#7193FF",
-					positive: l,
+					positive: r,
 					negative: "#EA0027",
 					caution: "#FFB000",
 					admin: o,
@@ -54,8 +51,8 @@
 					nsfw: "#FF585B",
 					spoiler: "#1A1A1B"
 				},
-				d = {
-					...c,
+				c = {
+					...l,
 					tone1: "#D7DADC",
 					tone2: "#818384",
 					tone3: "#565758",
@@ -423,7 +420,7 @@
 					}, o.a.createElement(J.a, {
 						className: Object(l.a)(q.a.checkbox, !r && q.a.unchecked),
 						checkBoxStyle: {
-							backgroundColor: R.f,
+							backgroundColor: R.e,
 							borderRadius: "50%",
 							fill: Object(W.a)(this.props).active,
 							visibility: r ? "visible" : "hidden"
@@ -1089,4 +1086,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EmailVerificationModals.6607d995cf67b739801f.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EmailVerificationModals.c3706550543d173763b4.js.map

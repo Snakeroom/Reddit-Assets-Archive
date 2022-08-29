@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit~ReportFlow~Subreddit.63a00be91e22c35f3c39.js
-// Retrieved at 8/29/2022, 11:40:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit~ReportFlow~Subreddit.a41ea0c34d8a4b154497.js
+// Retrieved at 8/29/2022, 6:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~ModListing~Reddit~ReportFlow~Subreddit"], {
 		"./src/lib/assertNever.ts": function(t, e, i) {
@@ -776,9 +776,9 @@
 			})), i.d(e, "k", (function() {
 				return G
 			})), i.d(e, "j", (function() {
-				return Y
+				return z
 			})), i.d(e, "e", (function() {
-				return V
+				return Y
 			})), i.d(e, "d", (function() {
 				return Q
 			})), i.d(e, "g", (function() {
@@ -903,7 +903,7 @@
 							success: g.ok
 						}
 					})
-				}, q = Object(d.a)(B.l), W = Object(d.a)(B.k), K = Object(d.a)(B.j), Y = t => async (e, i, n) => {
+				}, q = Object(d.a)(B.l), W = Object(d.a)(B.k), K = Object(d.a)(B.j), z = t => async (e, i, n) => {
 					let {
 						apiContext: r
 					} = n;
@@ -927,11 +927,11 @@
 						subredditId: t,
 						...l.error
 					}))
-				}, z = Object(d.a)(B.d), V = t => async (e, i, n) => {
+				}, V = Object(d.a)(B.d), Y = t => async (e, i, n) => {
 					const r = i(),
 						o = r.structuredStyles.models[t] || {},
 						l = Object(U.db)(r);
-					e(z({
+					e(V({
 						isNightmodeOn: l,
 						styles: o,
 						subredditId: t
@@ -1052,7 +1052,7 @@
 					}) ? e(Object(f.i)(O.a.BLADE_UNSAVED_CHANGES)) : e(rt()))
 				}, lt = t => async (e, i) => {
 					const n = i();
-					Object(C.i)(n) || e(Object(U.db)(n) ? Object(f.i)(O.a.BLADE_NIGHTMODE) : V(t))
+					Object(C.i)(n) || e(Object(U.db)(n) ? Object(f.i)(O.a.BLADE_NIGHTMODE) : Y(t))
 				}, st = Object(d.a)(B.i), ct = Object(d.a)(B.h), at = Object(d.a)(B.g), dt = (t, e) => async (i, n, r) => {
 					let {
 						gqlContext: o,
@@ -2304,11 +2304,11 @@
 			})), i.d(e, "h", (function() {
 				return K
 			})), i.d(e, "d", (function() {
-				return Y
-			})), i.d(e, "H", (function() {
 				return z
-			})), i.d(e, "i", (function() {
+			})), i.d(e, "H", (function() {
 				return V
+			})), i.d(e, "i", (function() {
+				return Y
 			})), i.d(e, "c", (function() {
 				return H
 			})), i.d(e, "v", (function() {
@@ -2607,21 +2607,21 @@
 						...G(t, e)
 					})
 				},
-				Y = t => {
+				z = t => {
 					Object(f.a)({
 						...S(t),
 						noun: "social_connect_link",
 						action: n.c.CLICK
 					})
 				},
-				z = (t, e) => {
+				V = (t, e) => {
 					Object(f.a)({
 						...S(t),
 						noun: "twitter_share_checkbox",
 						action: Object(p.getToggleAction)(e)
 					})
 				},
-				V = (t, e, i) => {
+				Y = (t, e, i) => {
 					Object(f.a)({
 						...S(t),
 						...M(t, e),
@@ -2845,35 +2845,35 @@
 				_ = t => {
 					return Object(l.c)(t, {
 						experimentEligibilitySelector: l.a,
-						experimentName: o.Ye
-					}) === o.af.ContentMatch
+						experimentName: o.Ze
+					}) === o.bf.ContentMatch
 				},
 				f = t => {
 					return Object(l.c)(t, {
 						experimentEligibilitySelector: l.a,
-						experimentName: o.Ye
-					}) === o.af.ConfidenceAndSuccess
+						experimentName: o.Ze
+					}) === o.bf.ConfidenceAndSuccess
 				},
 				p = t => {
 					const e = Object(l.c)(t, {
 						experimentEligibilitySelector: l.a,
-						experimentName: o.Ye
+						experimentName: o.Ze
 					});
-					return e === o.af.ContentMatch || e === o.af.ConfidenceAndSuccess || e === o.eb.Control1 || e === o.eb.Control2
+					return e === o.bf.ContentMatch || e === o.bf.ConfidenceAndSuccess || e === o.eb.Control1 || e === o.eb.Control2
 				},
 				m = t => {
 					const e = Object(l.c)(t, {
 						experimentEligibilitySelector: l.a,
-						experimentName: o.Ye
+						experimentName: o.Ze
 					});
 					return e === o.eb.Control1 || e === o.eb.Control2
 				},
 				b = t => {
 					const e = Object(l.c)(t, {
 						experimentEligibilitySelector: l.a,
-						experimentName: o.Ye
+						experimentName: o.Ze
 					});
-					return e === o.af.ContentMatch || e === o.af.ConfidenceAndSuccess
+					return e === o.bf.ContentMatch || e === o.bf.ConfidenceAndSuccess
 				},
 				S = t => t.creations.subredditRec.api.pending,
 				E = t => t.creations.subredditRec.api.error,
@@ -2951,12 +2951,12 @@
 					return Object(o.O)(i)
 				}, (t, e, i) => !t && !e && i),
 				a = Object(n.a)((t, e) => Object(l.c)(t, {
-					experimentName: r.fd,
+					experimentName: r.gd,
 					experimentEligibilitySelector: t => c(t, e)
 				}), t => t),
-				d = t => t === r.bg.NoCommunityWidgets,
-				u = t => t === r.bg.NoRulesModerators,
-				_ = t => t === r.bg.RelatedPostsDu
+				d = t => t === r.cg.NoCommunityWidgets,
+				u = t => t === r.cg.NoRulesModerators,
+				_ = t => t === r.cg.RelatedPostsDu
 		},
 		"./src/reddit/selectors/tooltip.ts": function(t, e, i) {
 			"use strict";
@@ -2979,4 +2979,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit~ReportFlow~Subreddit.63a00be91e22c35f3c39.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit~ReportFlow~Subreddit.a41ea0c34d8a4b154497.js.map

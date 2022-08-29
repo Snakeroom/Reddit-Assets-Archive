@@ -1,33 +1,30 @@
-// https://www.redditstatic.com/desktop2x/NewCommunityProgress.e3b598ba7d3d3f880756.js
-// Retrieved at 8/15/2022, 2:30:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/NewCommunityProgress.fe72dec2586d061f61b9.js
+// Retrieved at 8/29/2022, 6:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["NewCommunityProgress"], {
 		"./src/lib/colors/constants.ts": function(e, A, t) {
 			"use strict";
 			t.d(A, "b", (function() {
 				return n
-			})), t.d(A, "f", (function() {
+			})), t.d(A, "e", (function() {
 				return s
 			})), t.d(A, "c", (function() {
 				return a
 			})), t.d(A, "a", (function() {
 				return r
-			})), t.d(A, "e", (function() {
-				return o
 			})), t.d(A, "d", (function() {
+				return o
+			})), t.d(A, "f", (function() {
 				return c
 			})), t.d(A, "g", (function() {
 				return l
-			})), t.d(A, "h", (function() {
-				return g
 			}));
 			const n = "#000",
 				s = "#FFF",
 				a = "#FF4500",
 				r = "#0079D3",
-				o = "#24A0ED",
-				c = "#46D160",
-				l = {
+				o = "#46D160",
+				c = {
 					black: n,
 					white: s,
 					orangered: a,
@@ -39,11 +36,11 @@
 					tone5: "#EDEFF1",
 					tone6: "#F6F7F8",
 					tone7: "#FFFFFF",
-					primary: o,
+					primary: "#24A0ED",
 					secondary: "#006CBF",
 					upvote: a,
 					downvote: "#7193FF",
-					positive: c,
+					positive: o,
 					negative: "#EA0027",
 					caution: "#FFB000",
 					admin: a,
@@ -54,8 +51,8 @@
 					nsfw: "#FF585B",
 					spoiler: "#1A1A1B"
 				},
-				g = {
-					...l,
+				l = {
+					...c,
 					tone1: "#D7DADC",
 					tone2: "#818384",
 					tone3: "#565758",
@@ -253,7 +250,7 @@
 						U = Object(f.a)(),
 						K = h.b[l],
 						J = K ? Object(N.b)(K) : null !== (z = h.a[l]) && void 0 !== z ? z : Object(N.b)("best"),
-						V = m ? Q.h : Q.g,
+						V = m ? Q.g : Q.f,
 						F = null !== (X = V[d]) && void 0 !== X ? X : V.downvote;
 
 					function S(e) {
@@ -1225,4 +1222,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/NewCommunityProgress.e3b598ba7d3d3f880756.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/NewCommunityProgress.fe72dec2586d061f61b9.js.map

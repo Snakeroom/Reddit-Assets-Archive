@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/GovernanceReleaseNotesModal.25f39a53dfc69398c6c4.js
-// Retrieved at 8/29/2022, 11:40:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/GovernanceReleaseNotesModal.070bd0c75953b28f9446.js
+// Retrieved at 8/29/2022, 6:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["GovernanceReleaseNotesModal"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -918,8 +918,8 @@
 				F = Object(o.b)(H, e => ({
 					onClose: () => e(Object(d.f)())
 				})),
-				A = Object(u.u)();
-			t.default = Object(a.a)(A(F(D)))
+				U = Object(u.u)();
+			t.default = Object(a.a)(U(F(D)))
 		},
 		"./src/reddit/components/Governance/VaultActionLink/async.ts": function(e, t, n) {
 			"use strict";
@@ -1506,7 +1506,7 @@
 					s || P(e), i || H(e), N(Object(u.C)(p))
 				}
 
-				function A() {
+				function U() {
 					const e = {};
 					return S && (e.margin = "0 auto"), O || (e.maxHeight = `${h.e}px`), o.a.createElement(E, {
 						autoplay: T,
@@ -1532,7 +1532,7 @@
 						width: w
 					})
 				}
-				return O ? A() : o.a.createElement("div", {
+				return O ? U() : o.a.createElement("div", {
 					className: Object(l.a)(y.a.container, k, {
 						[y.a.centered]: S
 					})
@@ -1540,7 +1540,7 @@
 					href: I,
 					target: "_blank",
 					rel: "noopener noreferrer"
-				}, A()))
+				}, U()))
 			}
 		},
 		"./src/reddit/components/Media/index.m.less": function(e, t, n) {
@@ -2302,9 +2302,9 @@
 			})), n.d(t, "g", (function() {
 				return F
 			})), n.d(t, "i", (function() {
-				return A
-			})), n.d(t, "e", (function() {
 				return U
+			})), n.d(t, "e", (function() {
+				return A
 			}));
 			var s = n("./src/lib/unicodeUtils/index.ts"),
 				r = n("./node_modules/lodash/reduce.js"),
@@ -2409,7 +2409,7 @@
 						o = s.length;
 					for (let a = 0; a < o; a++) {
 						const e = s[a];
-						i.push(e.e === h.w ? e.t : U(e, t, a))
+						i.push(e.e === h.w ? e.t : A(e, t, a))
 					}
 					const c = d.x[r - 1];
 					return a.a.createElement(c, {
@@ -2487,7 +2487,7 @@
 							} = e;
 						u.push(a.a.createElement(s, {
 							key: d
-						}, A(c, t, n, r))), h[d] = i
+						}, U(c, t, n, r))), h[d] = i
 					}
 					for (let p = 0; p < c; p++) {
 						const e = i[p],
@@ -2500,7 +2500,7 @@
 								} = e[i];
 							o.push(a.a.createElement(s, {
 								key: i
-							}, A(d, t, n, r)))
+							}, U(d, t, n, r)))
 						}
 						m.push(a.a.createElement(d.t, {
 							key: p
@@ -2517,9 +2517,9 @@
 					const i = e.c[0];
 					return i.e !== h.m && i.e !== h.a || !Object(T.g)(i.id) ? a.a.createElement(d.j, {
 						key: s
-					}, A(e.c, t, n, r)) : Object(j.b)(i, s, n, t)
+					}, U(e.c, t, n, r)) : Object(j.b)(i, s, n, t)
 				},
-				A = (e, t, n, s) => {
+				U = (e, t, n, s) => {
 					const r = [],
 						i = e.length;
 					for (let o = 0; o < i; o++) {
@@ -2528,7 +2528,7 @@
 						else if (i.e === h.x) r.push(a.a.createElement(O.a, {
 							key: o,
 							onClickReveal: s
-						}, A(i.c, t, n, s)));
+						}, U(i.c, t, n, s)));
 						else if (i.e === h.n) r.push(a.a.createElement("br", {
 							key: o
 						}));
@@ -2541,11 +2541,11 @@
 									media: e
 								}))
 							}
-						} else r.push(U(i, n, o))
+						} else r.push(A(i, n, o))
 					}
 					return r
 				},
-				U = (e, t, n) => {
+				A = (e, t, n) => {
 					switch (e.e) {
 						case h.o:
 							const s = V({
@@ -2750,12 +2750,12 @@
 						rtJsonElementProps: o
 					});
 					switch (i) {
-						case b.Tf.SmIcon:
+						case b.Uf.SmIcon:
 							return r.a.createElement(h, {
 								subredditName: s,
 								rtJsonElementProps: o
 							});
-						case b.Tf.SmIconHc:
+						case b.Uf.SmIconHc:
 							return r.a.createElement(h, {
 								subredditName: s,
 								isHoverable: !0,
@@ -3108,12 +3108,12 @@
 				d = e => {
 					return Object(i.c)(e, {
 						experimentEligibilitySelector: a,
-						experimentName: s.Nf
+						experimentName: s.Of
 					}) || ""
 				},
 				c = e => {
 					const t = d(e);
-					return t === s.Tf.SmIcon || t === s.Tf.SmIconHc
+					return t === s.Uf.SmIcon || t === s.Uf.SmIconHc
 				},
 				l = (e, t) => {
 					let {
@@ -3139,4 +3139,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/GovernanceReleaseNotesModal.25f39a53dfc69398c6c4.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/GovernanceReleaseNotesModal.070bd0c75953b28f9446.js.map
