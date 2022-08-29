@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/EconPowerupsFlairModal.351d2eb62af0a4a84447.js
-// Retrieved at 8/22/2022, 4:50:10 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/EconPowerupsFlairModal.65a15b4a8b66b8a2f39f.js
+// Retrieved at 8/29/2022, 11:40:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["EconPowerupsFlairModal", "AchievementsActions"], {
 		"./src/reddit/actions/economics/powerups/flairs/index.ts": function(e, t, r) {
@@ -7,9 +7,9 @@
 			r.r(t), r.d(t, "onSubredditUserPowerupsFlairsLoaded", (function() {
 				return E
 			})), r.d(t, "onUsersSupportedSubredditsLoaded", (function() {
-				return O
-			})), r.d(t, "onSubredditUserPowerupsFlairPreferenceUpdateRequested", (function() {
 				return F
+			})), r.d(t, "onSubredditUserPowerupsFlairPreferenceUpdateRequested", (function() {
+				return O
 			})), r.d(t, "onSubredditUserPowerupsFlairPreferenceUpdateSuccess", (function() {
 				return I
 			})), r.d(t, "onSubredditUserPowerupsFlairPreferenceUpdateFailed", (function() {
@@ -69,8 +69,8 @@
 				}
 			});
 			const E = Object(i.a)(w.d),
-				O = Object(i.a)(w.i),
-				F = Object(i.a)(w.f),
+				F = Object(i.a)(w.i),
+				O = Object(i.a)(w.f),
 				I = Object(i.a)(w.g),
 				P = Object(i.a)(w.e),
 				_ = Object(i.a)(w.h),
@@ -96,7 +96,7 @@
 								subredditInfoById: s,
 								redditorsInfoByIds: i
 							} = t;
-						await r(E(s)), i && await r(O(i))
+						await r(E(s)), i && await r(F(i))
 					} catch (l) {
 						a.c.captureException(l)
 					}
@@ -184,7 +184,7 @@
 						c = Object(x.k)(o);
 					if (!c) return;
 					const l = c.id;
-					t(F(e));
+					t(O(e));
 					const {
 						subredditId: u,
 						achievementFlairType: b,
@@ -332,19 +332,19 @@
 				}).apply(this, arguments)
 			}
 			const E = "add-custom-badge-tooltip",
-				O = 100,
-				F = 2 * O,
+				F = 100,
+				O = 2 * F,
 				I = 24;
 			class P extends i.a.Component {
 				constructor() {
 					super(...arguments), this.mouseOverTooltip = void 0, this.enterTimeout = void 0, this.exitTimeout = void 0, this.handleMouseEnter = e => {
 						this.mouseOverTooltip && this.mouseOverTooltip !== e ? this.props.onShowTooltip(e) : (clearTimeout(this.enterTimeout), this.enterTimeout = window.setTimeout(() => {
 							this.mouseOverTooltip === e && this.props.onShowTooltip(e)
-						}, O)), this.mouseOverTooltip = e
+						}, F)), this.mouseOverTooltip = e
 					}, this.handleMouseLeave = () => {
 						clearTimeout(this.exitTimeout), clearTimeout(this.enterTimeout), this.mouseOverTooltip = void 0, this.exitTimeout = window.setTimeout(() => {
 							this.mouseOverTooltip || (clearTimeout(this.enterTimeout), this.props.onHideTooltip())
-						}, F)
+						}, O)
 					}
 				}
 				render() {
@@ -594,8 +594,8 @@
 			};
 			var j = r("./src/reddit/components/Econ/PowerupsFlair/PowerupsFlairModal/index.m.less"),
 				E = r.n(j),
-				O = r("./src/reddit/actions/economics/powerups/flairs/index.ts"),
-				F = r("./src/reddit/components/Econ/PowerupsMarketingModal/async.tsx"),
+				F = r("./src/reddit/actions/economics/powerups/flairs/index.ts"),
+				O = r("./src/reddit/components/Econ/PowerupsMarketingModal/async.tsx"),
 				I = r("./src/reddit/controls/ToggleSwitch/index.tsx"),
 				P = r("./src/reddit/helpers/trackers/userFlair.ts"),
 				_ = r("./src/reddit/hooks/usePreloadModal.ts"),
@@ -723,7 +723,7 @@
 					m = Object(o.e)(e => Object(C.m)(e, {
 						subredditId: t
 					}));
-				if (Object(_.a)(F.a), !c) return null;
+				if (Object(_.a)(O.a), !c) return null;
 				const p = !l && !d;
 				return n.a.createElement("div", {
 					className: s
@@ -739,7 +739,7 @@
 					}),
 					flairs: c.supporterFlairs,
 					onClickFlair: e => {
-						a(Object(O.setSubredditUserSupporterFlair)(t, e))
+						a(Object(F.setSubredditUserSupporterFlair)(t, e))
 					}
 				}), n.a.createElement(V, {
 					className: R.a.flairsSection,
@@ -753,7 +753,7 @@
 					}),
 					flairs: c.achievementFlairs,
 					onClickFlair: e => {
-						a(Object(O.setSubredditUserAchievementFlair)(t, e))
+						a(Object(F.setSubredditUserAchievementFlair)(t, e))
 					}
 				}), n.a.createElement("div", {
 					className: R.a.flairsVisibility
@@ -769,7 +769,7 @@
 					on: m && !u,
 					onToggle: () => {
 						const e = !u;
-						a(Object(O.setSubredditUserPowerupsFlairsVisibility)(t, e)), i(Object(P.d)(e))
+						a(Object(F.setSubredditUserPowerupsFlairsVisibility)(t, e)), i(Object(P.d)(e))
 					}
 				})))
 			};
@@ -1123,8 +1123,8 @@
 				c = e => n.includes(e),
 				d = Object(s.a)(e => Object(a.c)(e, {
 					experimentEligibilitySelector: a.a,
-					experimentName: i.le
-				}), e => e === i.Od)
+					experimentName: i.me
+				}), e => e === i.Pd)
 		},
 		"./src/redditGQL/operations/SubredditUserAchievements.json": function(e) {
 			e.exports = JSON.parse('{"id":"92790c69eba6"}')
@@ -1134,4 +1134,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EconPowerupsFlairModal.351d2eb62af0a4a84447.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EconPowerupsFlairModal.65a15b4a8b66b8a2f39f.js.map

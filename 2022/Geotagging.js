@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Geotagging.e84f578cca8e10395714.js
-// Retrieved at 8/29/2022, 11:20:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Geotagging.7d1d2ea9d039043c56e8.js
+// Retrieved at 8/29/2022, 11:40:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Geotagging"], {
 		"./node_modules/p-debounce/index.js": function(e, t, s) {
@@ -419,7 +419,7 @@
 				const t = Object(a.f)().getState(),
 					s = Object(h.a)(t, Object(o.c)());
 				if (e.isD2xPdpSideRailRecsEnabled) {
-					const t = e.d2xPdpSideRailRecsVariant === u.Vc.GreyRereddit || e.d2xPdpSideRailRecsVariant === u.Vc.GreyRedditNoNsfw || e.d2xPdpSideRailRecsVariant === u.Vc.LargeImagePreview ? e.reredditButtons : [];
+					const t = e.d2xPdpSideRailRecsVariant === u.Wc.GreyRereddit || e.d2xPdpSideRailRecsVariant === u.Wc.GreyRedditNoNsfw || e.d2xPdpSideRailRecsVariant === u.Wc.LargeImagePreview ? e.reredditButtons : [];
 					return r.a.createElement(O, {
 						reredditContent: t,
 						countryCode: e.countryCode
@@ -1498,9 +1498,9 @@
 					userSubreddit: Object(I.g)(e.modPermissions, e.isSubscribed),
 					actionInfo: B
 				}),
-				D = J("select_location"),
-				A = J("confirm_location"),
-				W = J("undo_location"),
+				W = J("select_location"),
+				D = J("confirm_location"),
+				A = J("undo_location"),
 				H = Q("verify_location"),
 				z = Q("reject_location");
 
@@ -1604,7 +1604,7 @@
 					disabled: l,
 					onFocus: () => _(M(t)),
 					onPlace: function(e) {
-						d && !e && _(W(t, d.id)), c(e), e && _(D(t, e.id))
+						d && !e && _(A(t, d.id)), c(e), e && _(W(t, e.id))
 					},
 					onSubmit: async function(e) {
 						let {
@@ -1626,7 +1626,7 @@
 							}),
 							duration: 5e3
 						}));
-						_(A(t, n.id)), x(), s(t.id), y()
+						_(D(t, n.id)), x(), s(t.id), y()
 					}
 				}))
 			}
@@ -1731,11 +1731,11 @@
 				d = s("./node_modules/reselect/es/index.js");
 			const c = Object(d.a)(e => Object(r.c)(e, {
 					experimentEligibilitySelector: e => Object(o.h)(e) && Object(a.f)(e),
-					experimentName: n.tc
+					experimentName: n.uc
 				}), i.a),
 				l = Object(d.a)(e => Object(r.c)(e, {
 					experimentEligibilitySelector: e => !Object(o.h)(e) && Object(a.f)(e),
-					experimentName: n.sc
+					experimentName: n.tc
 				}), i.a),
 				u = Object(d.a)(c, l, (e, t) => e || t),
 				m = Object(d.a)(c, l, (e, t) => !(!e && !t))
@@ -1754,4 +1754,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Geotagging.e84f578cca8e10395714.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Geotagging.7d1d2ea9d039043c56e8.js.map
