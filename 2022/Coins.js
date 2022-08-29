@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Coins.190ea456d777bc7bcc0f.js
-// Retrieved at 8/18/2022, 6:00:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Coins.51c3eda81d816ff84c97.js
+// Retrieved at 8/29/2022, 11:20:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Coins"], {
 		"./node_modules/@stripe/react-stripe-js/dist/react-stripe.umd.js": function(e, t, n) {
@@ -1435,7 +1435,7 @@
 					u = `${n.apiUrl}/api/v2/gold/paypal/initiate_premium_payment`,
 					m = Object(i.a)(u);
 				return Object(a.a)(Object(s.a)(n, [c.a]), {
-					method: r.kb.POST,
+					method: r.mb.POST,
 					endpoint: m,
 					data: d
 				}).then(o.a)
@@ -1452,7 +1452,7 @@
 					correlation_id: l
 				};
 				return Object(a.a)(Object(s.a)(t, [c.a]), {
-					method: r.kb.POST,
+					method: r.mb.POST,
 					endpoint: `${t.apiUrl}/api/v2/gold/paypal/create_coin_purchase_order`,
 					data: d
 				}).then(o.a)
@@ -1471,7 +1471,7 @@
 					thing_id: l
 				};
 				return Object(a.a)(Object(s.a)(t, [c.a]), {
-					method: r.kb.POST,
+					method: r.mb.POST,
 					endpoint: `${t.apiUrl}/api/v2/gold/paypal/create_award_purchase_order`,
 					data: u
 				}).then(o.a)
@@ -1492,7 +1492,7 @@
 					correlation_id: u
 				};
 				return Object(a.a)(Object(s.a)(t, [c.a]), {
-					method: r.kb.POST,
+					method: r.mb.POST,
 					endpoint: `${t.apiUrl}/api/v2/gold/paypal/execute_coin_order`,
 					data: m
 				}).then(o.a)
@@ -1521,7 +1521,7 @@
 					thing_id: b
 				};
 				return Object(a.a)(Object(s.a)(n, [c.a]), {
-					method: r.kb.POST,
+					method: r.mb.POST,
 					endpoint: `${n.apiUrl}/api/v2/gold/paypal/execute_coin_with_gild_order`,
 					data: g
 				}).then(o.a)
@@ -1544,7 +1544,7 @@
 					thing_id: m
 				};
 				return Object(a.a)(Object(s.a)(n, [c.a]), {
-					method: r.kb.POST,
+					method: r.mb.POST,
 					endpoint: `${n.apiUrl}/api/v2/gold/paypal/execute_award_purchase_order`,
 					data: p
 				}).then(o.a)
@@ -1923,9 +1923,9 @@
 						locale: l
 					})))))
 				},
-				z = n("./src/reddit/helpers/styles/mixins/loading.ts"),
-				Q = n("./src/reddit/components/CoinPurchasePackage/placeholder.m.less"),
-				Y = n.n(Q);
+				Q = n("./src/reddit/helpers/styles/mixins/loading.ts"),
+				z = n("./src/reddit/components/CoinPurchasePackage/placeholder.m.less"),
+				Y = n.n(z);
 			var X = e => {
 					let {
 						className: t,
@@ -1933,7 +1933,7 @@
 						...r
 					} = e;
 					const a = n ? Y.a.large : "",
-						s = Object(z.b)(r);
+						s = Object(Q.b)(r);
 					return o.a.createElement("div", {
 						className: Object(D.a)(s, Y.a.packagePlaceholder, a, t)
 					})
@@ -2098,7 +2098,7 @@
 						requestPurchaseCatalog: n
 					} = this.props;
 					e.length || t || n(this.correlationId), document.documentElement.scrollTop = document.body.scrollTop = 0;
-					const r = m.Ob.COINS;
+					const r = m.Qb.COINS;
 					k.c.has(r) && (this.props.sendEvent(Object(E.b)(C.TimerType.InApp, k.c.end(r))), this.props.sendEvent(Object(E.a)())), Object(p.a)(), this.setTargetedOfferTimeout()
 				}
 				componentDidUpdate() {
@@ -2321,4 +2321,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Coins.190ea456d777bc7bcc0f.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Coins.51c3eda81d816ff84c97.js.map

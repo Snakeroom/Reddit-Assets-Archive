@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/MultiredditAddSubredditModal.b56351a91981fcf76db4.js
-// Retrieved at 8/18/2022, 6:00:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/MultiredditAddSubredditModal.a6b499a5754f4d4bf05e.js
+// Retrieved at 8/29/2022, 11:20:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["MultiredditAddSubredditModal"], {
 		"./node_modules/lodash/without.js": function(e, t, r) {
@@ -141,8 +141,8 @@
 								displayName: i.toLowerCase()
 							}
 						}).sort((e, t) => e.displayName.localeCompare(t.displayName)),
-						s = i.filter(e => !e.displayName.startsWith(a.lc)).map(e => e.id),
-						d = i.filter(e => e.displayName.startsWith(a.lc)).map(e => e.id);
+						s = i.filter(e => !e.displayName.startsWith(a.nc)).map(e => e.id),
+						d = i.filter(e => e.displayName.startsWith(a.nc)).map(e => e.id);
 					return {
 						created: e.created_utc,
 						description: e.description_md,
@@ -179,7 +179,7 @@
 					const {
 						gqlContext: s
 					} = i, {
-						sort: d = a.X.HOT,
+						sort: d = a.Z.HOT,
 						multiredditName: n,
 						username: o
 					} = e, c = r(), u = c.platform.currentPage, m = u ? u.queryParams : {}, b = Object(T.d)(c, {
@@ -273,7 +273,7 @@
 									subreddits: []
 								})
 							},
-							method: a.kb.POST
+							method: a.mb.POST
 						}))(c(), r, t);
 						if (p.ok) {
 							const {
@@ -305,7 +305,7 @@
 						c = o && o.routeMatch && o.routeMatch.match;
 					if (!c) return;
 					const u = c.params,
-						b = u.sort || a.X.HOT,
+						b = u.sort || a.Z.HOT,
 						{
 							multiredditName: f,
 							username: h
@@ -317,7 +317,7 @@
 						} = c,
 						O = Object(l.a)(x, b, g),
 						j = p.C in g && g[p.C].toUpperCase() || "",
-						y = a.jc[j] || !1,
+						y = a.lc[j] || !1,
 						C = Object(I.k)(s);
 					(h || C && C.displayText) && await e(Object(m.multiredditFeedRequested)(O, (h || C.displayText).toLowerCase(), f.toLowerCase(), {
 						...d()(g, p.k),
@@ -349,7 +349,7 @@
 								expand_srs: !0,
 								from: t.from
 							},
-							method: a.kb.POST
+							method: a.mb.POST
 						}))(l(), {
 							from: O,
 							displayName: r,
@@ -397,13 +397,13 @@
 						} = m;
 						if (!p) return;
 						const O = s.map(e => `/user/${p.toLowerCase()}/m/${e.toLowerCase()}`).join(","),
-							j = `${"profile"===r.type?a.lc:""}${r.name}`,
+							j = `${"profile"===r.type?a.nc:""}${r.name}`,
 							y = await ((e, t, r) => Object(f.a)(Object(h.a)(e, [x.a]), {
 								endpoint: Object(g.a)(`${e.apiUrl}/api/multi/bulk_add/r/${t}`),
 								data: {
 									paths: r
 								},
-								method: a.kb.PUT
+								method: a.mb.PUT
 							}))(c(), j, O);
 						if (y.ok) {
 							const d = Object(R.M)(l, {
@@ -457,9 +457,9 @@
 						}));
 						const {
 							displayText: p
-						} = m, O = Object(E.h)(p, r), j = `${"profile"===d?a.lc:""}${s}`, y = await ((e, t, r) => Object(f.a)(Object(h.a)(e, [x.a]), {
+						} = m, O = Object(E.h)(p, r), j = `${"profile"===d?a.nc:""}${s}`, y = await ((e, t, r) => Object(f.a)(Object(h.a)(e, [x.a]), {
 							endpoint: Object(g.a)(`${e.apiUrl}/api/multi${r}r/${t}`),
-							method: a.kb.DELETE
+							method: a.mb.DELETE
 						}))(c(), j, O);
 						y.ok ? (e(Object(u.f)()), e(se({
 							id: t,
@@ -494,7 +494,7 @@
 					t(oe());
 					const c = await ((e, t) => Object(f.a)(Object(h.a)(e, [x.a]), {
 						endpoint: Object(g.a)(`${e.apiUrl}/api/multi${t}`),
-						method: a.kb.DELETE
+						method: a.mb.DELETE
 					}))(d(), e);
 					c.ok ? (await t(ce(e)), t(Object(u.f)()), await t(Object(n.b)("/")), t(Object(b.f)({
 						text: i.fbt._("Custom feed deleted!", null, {
@@ -533,7 +533,7 @@
 									}),
 									expand_srs: !0
 								},
-								method: a.kb.PUT
+								method: a.mb.PUT
 							})
 						})({
 							context: c(),
@@ -709,7 +709,7 @@
 						return c += l ? `/${l}` : "", void r(Object(n.c)(Object(a.a)(c, e.queryParams)))
 					}
 					const {
-						sort: c = l.X.HOT
+						sort: c = l.Z.HOT
 					} = e.params, m = {
 						multiredditName: s,
 						username: o
@@ -721,7 +721,7 @@
 						_ = f.listings.postOrder.api.error[g],
 						S = f.listings.postOrder.api.pending[g],
 						v = p.C in e.queryParams && e.queryParams[p.C].toUpperCase() || "",
-						w = v in l.jc && l.jc[v];
+						w = v in l.lc && l.lc[v];
 					if (S || j && !_ && !t) return void(j && (r(u.m({
 						title: Object(C.f)(i(), m)
 					})), f.sidebarPromotedPosts.firstFetch || r(Object(N.b)(E.a.MULTIREDDIT))));
@@ -1479,4 +1479,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/MultiredditAddSubredditModal.b56351a91981fcf76db4.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/MultiredditAddSubredditModal.a6b499a5754f4d4bf05e.js.map

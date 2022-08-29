@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfileFollowersAction.3d39ef0f26de4b5878d1.js
-// Retrieved at 8/18/2022, 6:00:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfileFollowersAction.ada9b604fa444a4095f1.js
+// Retrieved at 8/29/2022, 11:20:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfileFollowersAction"], {
 		"./src/lib/makeOverviewConversationsItemKey/index.ts": function(e, t, r) {
@@ -49,9 +49,9 @@
 			})), r.d(t, "followersRequested", (function() {
 				return _
 			})), r.d(t, "followUserToggled", (function() {
-				return k
-			})), r.d(t, "toggleFollowUser", (function() {
 				return C
+			})), r.d(t, "toggleFollowUser", (function() {
+				return k
 			}));
 			r("./node_modules/core-js/modules/web.dom.iterable.js");
 			var o = r("./node_modules/fbt/lib/FbtPublic.js"),
@@ -146,7 +146,7 @@
 						(null == e ? void 0 : e.searchQuery) ? t(g(o)): (null == e ? void 0 : e.after) ? t(w(o)) : (null == e ? void 0 : e.after) || (null == e ? void 0 : e.searchQuery) || t(O(o))
 					}
 					l.ok || (t(Object(d.d)()), t(j()))
-				}, k = Object(n.a)(v.f), C = (e, t) => async (r, n, a) => {
+				}, C = Object(n.a)(v.f), k = (e, t) => async (r, n, a) => {
 					let {
 						apiContext: c
 					} = a;
@@ -154,16 +154,16 @@
 					const b = n(),
 						y = null === (v = null === (u = b.pages) || void 0 === u ? void 0 : u.followers) || void 0 === v ? void 0 : v.models[e];
 					if (!y) return;
-					r(k({
+					r(C({
 						userId: e,
 						isFollowed: t
 					}));
 					const m = y.name;
 					if ((await Object(l.c)(c(), {
-							subredditNames: [`${s.lc}${y.name}`],
+							subredditNames: [`${s.nc}${y.name}`],
 							subscribe: t
 						})).ok) {
-						r(k({
+						r(C({
 							userId: e,
 							isFollowed: t
 						}));
@@ -180,7 +180,7 @@
 						const s = o.fbt._("Something went wrong", null, {
 							hk: "3i6szH"
 						});
-						r(k({
+						r(C({
 							userId: e,
 							isFollowed: !t
 						})), r(Object(d.f)(Object(d.e)(s, f.b.Error)))
@@ -192,9 +192,9 @@
 			r.r(t), r.d(t, "profileOverviewConversationsPending", (function() {
 				return _e
 			})), r.d(t, "profileOverviewConversationsLoaded", (function() {
-				return ke
-			})), r.d(t, "profileOverviewConversationsFailed", (function() {
 				return Ce
+			})), r.d(t, "profileOverviewConversationsFailed", (function() {
+				return ke
 			})), r.d(t, "profileOverviewChronoPending", (function() {
 				return Le
 			})), r.d(t, "profileOverviewChronoLoaded", (function() {
@@ -230,8 +230,8 @@
 				x = r("./src/reddit/actions/changeUsername.ts"),
 				I = r("./src/reddit/actions/contentGate.ts"),
 				_ = r("./src/reddit/actions/externalAccount.ts"),
-				k = r("./src/reddit/actions/gold/powerups.ts"),
-				C = r("./src/reddit/actions/pinnedPost.ts"),
+				C = r("./src/reddit/actions/gold/powerups.ts"),
+				k = r("./src/reddit/actions/pinnedPost.ts"),
 				L = r("./src/reddit/actions/platform.ts"),
 				P = r("./src/reddit/actions/profile/index.ts"),
 				R = r("./src/reddit/actions/trophyCase.ts"),
@@ -724,8 +724,8 @@
 				}
 			});
 			const _e = Object(j.a)(A.f),
-				ke = Object(j.a)(A.e),
-				Ce = Object(j.a)(A.d),
+				Ce = Object(j.a)(A.e),
+				ke = Object(j.a)(A.d),
 				Le = Object(j.a)(A.c),
 				Pe = Object(j.a)(A.b),
 				Re = Object(j.a)(A.a),
@@ -745,7 +745,7 @@
 							data: r,
 							endpoint: Object(f.a)(Object(l.a)(Object(p.a)(Object(v.a)(`${c.a.gatewayUrl}/desktopapi/v1/user/${t}/conversations`)))),
 							traceRequestName: "get_profile_conversations",
-							method: n.kb.GET
+							method: n.mb.GET
 						}).then(e => "pinned" in e.body ? e : "postIds" in e.body ? {
 							...e,
 							body: {
@@ -760,7 +760,7 @@
 						postIds: j
 					} = O;
 					if (m.ok) {
-						o(ke({
+						o(Ce({
 							key: e,
 							meta: d.meta,
 							profileName: t,
@@ -768,11 +768,11 @@
 							postIds: j
 						}));
 						const r = Object(g.n)(s(), t);
-						o(Object(C.h)({
+						o(Object(k.h)({
 							profileId: r,
 							pinned: h
 						}))
-					} else o(Ce({
+					} else o(ke({
 						account: m.body.data ? m.body.data.account : null,
 						error: m.body.reason ? {
 							type: m.body.reason
@@ -801,8 +801,8 @@
 							t: f
 						},
 						I = [t(P.d(w))],
-						C = Object(F.a)(w, n.vb, u, e.queryParams);
-					if (r().listings.postOrder.ids[C] && !r().listings.postOrder.api.error[C] ? v = !0 : I.push(t(Ee(C, w, j, !0))), I.push(t(Object(i.b)())), await Promise.all(I), v) return;
+						k = Object(F.a)(w, n.xb, u, e.queryParams);
+					if (r().listings.postOrder.ids[k] && !r().listings.postOrder.api.error[k] ? v = !0 : I.push(t(Ee(k, w, j, !0))), I.push(t(Object(i.b)())), await Promise.all(I), v) return;
 					const E = r();
 					if (!E.platform.currentPage) return;
 					if (200 !== E.platform.currentPage.status) return;
@@ -813,7 +813,7 @@
 					t(L.m({
 						title: Se(r(), p)
 					})), Object(h.S)(E) && Object(h.W)(E, p) && t(Object(x.startChangeUsernameFlow)());
-					const N = [t(Object(a.q)()), t(R.b(w, S)), t(P.b(w)), t(_.o(p)), t(P.i(p)), t(k.i(p, A))];
+					const N = [t(Object(a.q)()), t(R.b(w, S)), t(P.b(w)), t(_.o(p)), t(P.i(p)), t(C.i(p, A))];
 					await Promise.all(N)
 				}, Se = (e, t) => Object(g.r)(e, {
 					profileName: t
@@ -982,4 +982,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileFollowersAction.3d39ef0f26de4b5878d1.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileFollowersAction.ada9b604fa444a4095f1.js.map

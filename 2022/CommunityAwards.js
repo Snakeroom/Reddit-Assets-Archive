@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CommunityAwards.6bd249d1b5dd7b8b3efe.js
-// Retrieved at 8/18/2022, 6:00:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CommunityAwards.9a6e46df4e6a4f80f6ae.js
+// Retrieved at 8/29/2022, 11:20:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CommunityAwards"], {
 		"./src/reddit/actions/gold/communityAwards/communityAwards.ts": function(e, t, r) {
@@ -210,7 +210,7 @@
 							a = n.manageableAwards || [], t(G({
 								awards: n.optionalAwards || [],
 								subredditOrProfileId: e
-							})), t(k({
+							})), t(D({
 								subredditOrProfileId: e,
 								disabled: !n.isAwardCreationAllowed
 							}))
@@ -229,7 +229,7 @@
 						duration: o.a,
 						text: e
 					}))
-				}, k = Object(n.a)(O.d), D = e => e.map(e => {
+				}, D = Object(n.a)(O.d), k = e => e.map(e => {
 					let {
 						tag: t,
 						content: r
@@ -275,7 +275,7 @@
 								const r = await Object(m.g)(o(), a, t);
 								if (r.ok) {
 									const a = r.body,
-										d = D(a.data.profileByName.awardingTray.sortedUsableTags);
+										d = k(a.data.profileByName.awardingTray.sortedUsableTags);
 									await n(Q({
 										awards: a.data.profileByName.sortedUsableAwards,
 										tags: d,
@@ -290,7 +290,7 @@
 								const r = await Object(m.f)(o(), e, t);
 								if (r.ok) {
 									const a = r.body,
-										d = D(a.data.subredditInfoById.awardingTray.sortedUsableTags);
+										d = k(a.data.subredditInfoById.awardingTray.sortedUsableTags);
 									await n(Q({
 										awards: a.data.subredditInfoById.sortedUsableAwards,
 										tags: d,
@@ -486,7 +486,7 @@
 						mimetype: d
 					};
 					return Object(n.a)(Object(i.a)(e, [y.a]), {
-						method: a.kb.POST,
+						method: a.mb.POST,
 						endpoint: `${e.apiUrl}/api/v1/community_awards/award_asset_upload_s3`,
 						data: s
 					})
@@ -610,7 +610,7 @@
 						raw_json: 1
 					};
 					return Object(n.a)(Object(i.a)(e, [y.a]), {
-						method: a.kb.POST,
+						method: a.mb.POST,
 						endpoint: `${e.apiUrl}/api/report_award`,
 						data: d
 					}).then(e => e.ok ? {
@@ -713,4 +713,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommunityAwards.6bd249d1b5dd7b8b3efe.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommunityAwards.9a6e46df4e6a4f80f6ae.js.map

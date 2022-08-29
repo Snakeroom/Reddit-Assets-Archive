@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostSetPage.674256bb1f837684c51d.js
-// Retrieved at 8/22/2022, 4:50:10 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostSetPage.9baa6ec95bb15f35b759.js
+// Retrieved at 8/29/2022, 11:20:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostSetPage"], {
 		"./node_modules/intersection-observer/intersection-observer.js": function(e, t) {
@@ -582,11 +582,11 @@
 				let {
 					className: t,
 					profileName: n,
-					timeSort: r = o.jc.ALL
+					timeSort: r = o.lc.ALL
 				} = e;
 				return i.a.createElement(m, {
 					className: t
-				}, r === o.jc.ALL ? s.fbt._("hmm... {profileName} hasn't commented on anything", [s.fbt._param("profileName", `u/${n}`)], {
+				}, r === o.lc.ALL ? s.fbt._("hmm... {profileName} hasn't commented on anything", [s.fbt._param("profileName", `u/${n}`)], {
 					hk: "1MHn3t"
 				}) : s.fbt._("hmm... {profileName} hasn't commented recently", [s.fbt._param("profileName", `u/${n}`)], {
 					hk: "qN3uL"
@@ -596,11 +596,11 @@
 				let {
 					className: t,
 					profileName: n,
-					timeSort: r = o.jc.ALL
+					timeSort: r = o.lc.ALL
 				} = e;
 				return i.a.createElement(m, {
 					className: t
-				}, r === o.jc.ALL ? s.fbt._("hmm... {profileName} hasn't posted anything", [s.fbt._param("profileName", `u/${n}`)], {
+				}, r === o.lc.ALL ? s.fbt._("hmm... {profileName} hasn't posted anything", [s.fbt._param("profileName", `u/${n}`)], {
 					hk: "28vBEd"
 				}) : s.fbt._("hmm... {profileName} hasn't posted recently", [s.fbt._param("profileName", `u/${n}`)], {
 					hk: "38GhqN"
@@ -764,7 +764,7 @@
 				})())))
 			};
 			b.defaultProps = {
-				minimizedLength: c.Ub
+				minimizedLength: c.Wb
 			}, t.a = b
 		},
 		"./src/reddit/components/SidebarFooter/index.m.less": function(e, t, n) {
@@ -2412,7 +2412,7 @@
 						postClassName: y.a.post,
 						noPostsComponent: () => r.a.createElement(a.c, {
 							profileName: t,
-							timeSort: o.jc.ALL
+							timeSort: o.lc.ALL
 						}),
 						shouldShowInsightsButton: C
 					}), j && r.a.createElement(v, {
@@ -2594,4 +2594,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostSetPage.674256bb1f837684c51d.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostSetPage.9baa6ec95bb15f35b759.js.map

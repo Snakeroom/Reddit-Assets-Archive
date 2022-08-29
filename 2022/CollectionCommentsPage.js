@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage.79f03c8d35c7e0279f31.js
-// Retrieved at 8/22/2022, 4:50:10 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage.05cc12791adb09438e3b.js
+// Retrieved at 8/29/2022, 11:20:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage"], {
 		"./node_modules/linkify-it/index.js": function(e, t, s) {
@@ -322,7 +322,7 @@
 					e(h());
 					const b = await (e => Object(d.a)(Object(c.a)(e, [l.a]), {
 						endpoint: `${e.apiUrl}/api/available_subreddit_categories.json?use_extended_categories=true`,
-						method: a.kb.GET
+						method: a.mb.GET
 					}))(n());
 					if (b.ok) {
 						const {
@@ -620,7 +620,7 @@
 			var k = (e, t, s, o, r) => Object(y.a)(e, {
 					data: r,
 					endpoint: j(t, s, o),
-					method: n.kb.GET
+					method: n.mb.GET
 				}),
 				P = s("./src/reddit/endpoints/page/subredditPage.ts"),
 				I = s("./src/reddit/helpers/canonicalUrls.ts"),
@@ -682,7 +682,7 @@
 								identifier: t
 							}),
 							r = Object(i.c)(s.title, o.name).toString();
-						return Object(a.a)(r, C.c, n.jb)
+						return Object(a.a)(r, C.c, n.lb)
 					})(s(), E) || Object(i.e)();
 					t(m.m({
 						title: N
@@ -1028,7 +1028,7 @@
 								sort: u,
 								subredditName: p
 							} = o,
-							b = Object(be.a)(p, f.X[u], {
+							b = Object(be.a)(p, f.Z[u], {
 								t: m
 							});
 						s({
@@ -1116,7 +1116,7 @@
 						isOtherDiscussions: !0
 					}), C = s(), v = Object(te.z)(C, {
 						listingKey: x
-					}), _ = d && (!v || 0 === v.length), O = Object(be.a)(g, f.X[h], {
+					}), _ = d && (!v || 0 === v.length), O = Object(be.a)(g, f.Z[h], {
 						t: b
 					}), y = Object(te.z)(C, {
 						listingKey: O
@@ -1357,7 +1357,7 @@
 											sessionStartTime: a
 										}
 									},
-									range: f.jc.WEEK.toUpperCase(),
+									range: f.lc.WEEK.toUpperCase(),
 									sort: f.Q.TOP,
 									subredditName: i.name
 								},
@@ -3143,7 +3143,11 @@
 						mediaMetadata: m.media && m.media.mediaMetadata,
 						redditStyle: Ue,
 						rtJsonElementProps: Le(e),
-						onClickRevealSpoilerText: Je
+						onClickRevealSpoilerText: Je,
+						mediaProps: {
+							alignLeft: !0,
+							renderSmallMedia: !0
+						}
 					}), r.a.createElement(te.b, {
 						content: _t
 					})), ue && tt && st && r.a.createElement(L.a, {
@@ -4618,7 +4622,7 @@
 				F = O.a.div("ThumbnailContainer", _.a),
 				R = Object(d.c)({
 					isCurrentUserProfilePost: f.l,
-					isTopicPage: e => !(!e.platform.currentPage || !e.platform.currentPage.meta || e.platform.currentPage.meta.name !== g.Ob.TOPIC),
+					isTopicPage: e => !(!e.platform.currentPage || !e.platform.currentPage.meta || e.platform.currentPage.meta.name !== g.Qb.TOPIC),
 					shouldOpenPostInNewTab: C.jb
 				}),
 				A = Object(i.b)(R);
@@ -5483,7 +5487,7 @@
 					hk: "2x1D6M"
 				})), d.a.createElement("span", {
 					className: E.a.separator
-				}, "•"), l && d.a.createElement("span", null, Object(g.a)(new Date(l).getTime() / b.Tb, !0)))))
+				}, "•"), l && d.a.createElement("span", null, Object(g.a)(new Date(l).getTime() / b.Vb, !0)))))
 			};
 			var k = s("./src/reddit/selectors/posts.ts"),
 				P = s("./src/reddit/components/ItemCarousel/helpers.ts"),
@@ -8002,7 +8006,7 @@
 				}),
 				J = Object(d.b)(Q, e => ({
 					loadMorePosts: t => e(Object(b.r)({
-						sort: l.X.HOT,
+						sort: l.Z.HOT,
 						subredditName: t
 					}))
 				}));
@@ -8010,10 +8014,10 @@
 				constructor() {
 					super(...arguments), this.scrollContainer = () => this.props.isOverlay ? document.getElementById(x.e) : null, this.onViewed = (e, t) => Object(E.f)({
 						key: this.listingKey(),
-						sort: l.X.TOP,
+						sort: l.Z.TOP,
 						timerType: t,
 						timerMillis: e,
-						timeSort: l.jc.WEEK
+						timeSort: l.lc.WEEK
 					}), this.onFooterClick = e => {
 						this.props.sendEvent(Object(y.c)("recommended_footer"))
 					}
@@ -8029,8 +8033,8 @@
 						shouldShowNsfwListingBelow: o,
 						subredditOrProfile: r
 					} = this.props;
-					return s || e ? t : o && n && n.id ? Object(z.a)(n.id) : Object(p.a)(r.name, l.X.TOP, {
-						t: l.jc.WEEK
+					return s || e ? t : o && n && n.id ? Object(z.a)(n.id) : Object(p.a)(r.name, l.Z.TOP, {
+						t: l.lc.WEEK
 					})
 				}
 				renderSmallBanner() {
@@ -10483,7 +10487,7 @@
 							this.props.isOverlay || Object(j.d)(j.c.CommentsPage, n, e)
 						}), this.props.inResonatePilot) {
 						const e = this.props.subredditName ? this.props.subredditName.toLowerCase() : "";
-						C.Nb.includes(e) && Object(mt.a)(e)
+						C.Pb.includes(e) && Object(mt.a)(e)
 					}
 					this.props.isLoggedIn && Object(ee.c)() && this.props.submitCommentAfterSignUp(), (null == a ? void 0 : a.isNSFW) && c && o && i()
 				}
@@ -11478,4 +11482,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage.79f03c8d35c7e0279f31.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage.05cc12791adb09438e3b.js.map

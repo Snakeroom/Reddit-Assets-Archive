@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfileComments~ProfilePrivate.037a7b8f2135a026f6da.js
-// Retrieved at 8/22/2022, 4:50:10 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfileComments~ProfilePrivate.e88f69c627c5e8d4e675.js
+// Retrieved at 8/29/2022, 11:20:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfileComments~ProfilePrivate"], {
 		"./src/reddit/components/AdLinkWrapperContent/index.m.less": function(e, t, s) {
@@ -953,7 +953,11 @@
 					className: s,
 					content: Object(Re.a)(t),
 					mediaMetadata: t.media && t.media.mediaMetadata,
-					rtJsonElementProps: Ke(e)
+					rtJsonElementProps: Ke(e),
+					mediaProps: {
+						alignLeft: !0,
+						renderSmallMedia: !0
+					}
 				});
 				return n.a.createElement(We, {
 					className: Object(a.a)({
@@ -967,7 +971,7 @@
 					flair: o,
 					renderedInOverlay: !1
 				}), n.a.createElement("div", null, !t.isDeleted && n.a.createElement(Ve, null, r ? l() : n.a.createElement(O, {
-					height: d.Vb,
+					height: d.Xb,
 					isExpanded: r
 				}, l)), !t.isDeleted && i && n.a.createElement(Me, {
 					comment: t,
@@ -1073,7 +1077,7 @@
 				N = f.a.div("ThumbnailContainer", v.a),
 				R = Object(d.c)({
 					isCurrentUserProfilePost: g.l,
-					isTopicPage: e => !(!e.platform.currentPage || !e.platform.currentPage.meta || e.platform.currentPage.meta.name !== x.Ob.TOPIC),
+					isTopicPage: e => !(!e.platform.currentPage || !e.platform.currentPage.meta || e.platform.currentPage.meta.name !== x.Qb.TOPIC),
 					shouldOpenPostInNewTab: O.jb
 				}),
 				A = Object(i.b)(R);
@@ -2573,4 +2577,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileComments~ProfilePrivate.037a7b8f2135a026f6da.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileComments~ProfilePrivate.e88f69c627c5e8d4e675.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfileComments.25ea86344a64b0e5594f.js
-// Retrieved at 8/18/2022, 6:00:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfileComments.d2798e2595cf44bde0d4.js
+// Retrieved at 8/29/2022, 11:20:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfileComments"], {
 		"./src/reddit/actions/pages/profileComments/index.ts": function(e, t, s) {
@@ -51,7 +51,7 @@
 				return r && (o = Object(w.a)(o)), Object(P.a)(e, {
 					data: s,
 					endpoint: o,
-					method: g.kb.GET
+					method: g.mb.GET
 				})
 			};
 			var E = s("./src/reddit/helpers/getTimeSortForListing/index.ts"),
@@ -448,10 +448,10 @@
 				D = s("./node_modules/lodash/noop.js"),
 				R = s.n(D),
 				W = s("./src/reddit/actions/ads/index.ts"),
-				H = s("./src/reddit/actions/comment/list.ts"),
-				J = s("./src/reddit/actions/post.ts"),
-				V = s("./src/reddit/components/TrackingHelper/index.tsx"),
-				G = s("./src/reddit/helpers/postComponentForLayout/index.tsx"),
+				G = s("./src/reddit/actions/comment/list.ts"),
+				H = s("./src/reddit/actions/post.ts"),
+				J = s("./src/reddit/components/TrackingHelper/index.tsx"),
+				V = s("./src/reddit/helpers/postComponentForLayout/index.tsx"),
 				Z = s("./src/reddit/helpers/trackers/post.ts"),
 				Q = s("./src/reddit/featureFlags/index.ts"),
 				X = s("./src/reddit/selectors/comments.ts"),
@@ -498,13 +498,13 @@
 				},
 				oe = Object(c.c)(re),
 				ne = Object(i.b)(oe, e => ({
-					onBottomViewed: (t, s) => e(Object(H.c)(t, s)),
+					onBottomViewed: (t, s) => e(Object(G.c)(t, s)),
 					adBrandSafetyStatusReceived: t => {
 						e(W.d({
 							isViewSafe: t
 						}))
 					},
-					openPost: t => e(Object(J.L)(t)),
+					openPost: t => e(Object(H.L)(t)),
 					fireAdPixelsOfType: R.a,
 					trackOnPostEnteredViewport: R.a
 				}), (e, t, s) => ({
@@ -512,7 +512,7 @@
 					...t,
 					...s,
 					postClickEventFactory: (e, t) => Object(Z.k)(e, t),
-					postComponentForLayout: G.b
+					postComponentForLayout: V.b
 				}));
 
 			function ae() {
@@ -527,7 +527,7 @@
 			const ie = e => a.a.createElement(U, ae({}, e, {
 					allowModToolsUnderComments: !0
 				})),
-				ce = (e => Object(V.c)(se(ne(e))))(q.a);
+				ce = (e => Object(J.c)(se(ne(e))))(q.a);
 			var de = e => a.a.createElement(ce, ae({}, e, {
 					itemComponent: ie
 				})),
@@ -576,7 +576,7 @@
 					let {
 						match: s
 					} = t;
-					return Object(te.f)(e, d.lc + s.params.profileName)
+					return Object(te.f)(e, d.nc + s.params.profileName)
 				}, je.d, (e, t) => {
 					let {
 						match: s
@@ -677,7 +677,7 @@
 				const I = {
 					sort: y,
 					baseUrl: k,
-					sortOptions: d.Eb,
+					sortOptions: d.Gb,
 					timeSort: w
 				};
 				return a.a.createElement(Oe.a, {
@@ -707,4 +707,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileComments.25ea86344a64b0e5594f.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileComments.d2798e2595cf44bde0d4.js.map

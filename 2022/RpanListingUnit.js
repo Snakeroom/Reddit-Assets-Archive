@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/RpanListingUnit.cb488a6614dc56e2e7cd.js
-// Retrieved at 8/22/2022, 4:50:10 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/RpanListingUnit.d4b1d97a27becd773888.js
+// Retrieved at 8/29/2022, 11:20:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["RpanListingUnit"], {
 		"./node_modules/lodash/_arrayEvery.js": function(e, t) {
@@ -646,7 +646,7 @@
 						})
 					}, []);
 				Object(a.a)(A, F);
-				const [U, V] = Object(s.useState)(!1), G = Object(s.useCallback)(e => {
+				const [U, V] = Object(s.useState)(!1), B = Object(s.useCallback)(e => {
 					e.forEach(e => {
 						const {
 							isIntersecting: t,
@@ -654,10 +654,10 @@
 						} = e, s = 1 !== n;
 						t ? V(!0) : s && V(!1)
 					})
-				}, []), B = Object(s.useRef)({
+				}, []), G = Object(s.useRef)({
 					rootMargin: "2000px 0px 2000px 0px"
 				});
-				Object(a.a)(A, G, B.current);
+				Object(a.a)(A, B, G.current);
 				const H = Object(o.a)(t);
 				Object(s.useEffect)(() => {
 					if (void 0 !== H && H !== t) {
@@ -1500,8 +1500,8 @@
 				F = n("./src/reddit/components/PostLeftRail/index.tsx"),
 				U = n("./src/reddit/components/TrackingHelper/index.tsx"),
 				V = n("./src/reddit/controls/Dropdown/Row.tsx"),
-				G = n("./src/reddit/controls/InternalLink/index.tsx"),
-				B = n("./src/reddit/controls/Score/index.tsx"),
+				B = n("./src/reddit/controls/InternalLink/index.tsx"),
+				G = n("./src/reddit/controls/Score/index.tsx"),
 				H = n("./src/reddit/icons/fonts/index.tsx"),
 				Y = n("./src/reddit/helpers/styles/mixins/index.m.less"),
 				K = n.n(Y),
@@ -1509,7 +1509,7 @@
 				W = n.n(J);
 			const {
 				fbt: q
-			} = n("./node_modules/fbt/lib/FbtPublic.js"), z = 20, Z = l.sc, X = l.sc, Q = Object(c.a)(D.a, {
+			} = n("./node_modules/fbt/lib/FbtPublic.js"), z = 20, Z = l.uc, X = l.uc, Q = Object(c.a)(D.a, {
 				playerName: "RPAN DU Video Player"
 			}), $ = Object(o.b)(() => Object(i.c)({
 				autoplay: A.b,
@@ -1751,7 +1751,7 @@
 				renderTitleAndDescription(e) {
 					return r.a.createElement("div", {
 						className: W.a.titleAndDescriptionContainer
-					}, r.a.createElement(G.default, {
+					}, r.a.createElement(B.default, {
 						to: this.props.location
 					}, r.a.createElement(ee, null), e && r.a.createElement(te, null)))
 				}
@@ -1765,7 +1765,7 @@
 					}))), r.a.createElement("div", {
 						className: W.a.body,
 						ref: this.observableElement
-					}, r.a.createElement(G.default, {
+					}, r.a.createElement(B.default, {
 						to: this.props.location,
 						onClick: this.onStreamClicked,
 						className: W.a.previewLink,
@@ -1778,7 +1778,7 @@
 					return r.a.createElement("div", {
 						className: W.a.body,
 						ref: this.observableElement
-					}, r.a.createElement(G.default, {
+					}, r.a.createElement(B.default, {
 						to: this.props.location,
 						onClick: this.onStreamClicked
 					}, r.a.createElement("div", {
@@ -1963,7 +1963,7 @@
 						[W.a.verticalVotes]: e.isVertical,
 						[W.a.horizontalVotes]: !e.isVertical
 					})
-				}, r.a.createElement(B.a, {
+				}, r.a.createElement(G.a, {
 					className: W.a.score,
 					isScoreHidden: !0,
 					score: 0,
@@ -2764,9 +2764,9 @@
 			})), n.d(t, "clickCloseGildModalEvent", (function() {
 				return V
 			})), n.d(t, "viewKarmaSuccessEvent", (function() {
-				return G
-			})), n.d(t, "clickFilterEvent", (function() {
 				return B
+			})), n.d(t, "clickFilterEvent", (function() {
+				return G
 			})), n.d(t, "clickNextFiltersEvent", (function() {
 				return H
 			})), n.d(t, "clickPreviousFiltersEvent", (function() {
@@ -2949,7 +2949,7 @@
 					action: "click",
 					noun: "close"
 				}),
-				G = e => {
+				B = e => {
 					let {
 						award: t,
 						awardeeKarmaEarned: n,
@@ -2971,7 +2971,7 @@
 						}
 					})
 				},
-				B = e => t => ({
+				G = e => t => ({
 					...p(t),
 					source: "give_gold",
 					action: "click",
@@ -3033,7 +3033,7 @@
 					const {
 						thingId: n,
 						packageId: l
-					} = t, h = !!n, f = o.b(e), v = f ? Object(u.getAwardTypeFromAward)(f) : null, g = h ? v : a.o(e) ? d.GoldPurchaseType.Premium : d.GoldPurchaseType.Coins, _ = n ? Object(p.a)(n) ? "comment" : "post" : void 0, O = l || a.t(e), E = [...Object(i.d)(e), ...Object(i.f)(e)].filter(e => e.mobileId === O)[0], C = t.offerContext || (f && 0 === f.coinPrice ? r.a.StorefrontFreeAward : Object(r.d)(E, h)), x = E ? Math.round(1e4 * (E.baselinePennies - E.pennies) / E.baselinePennies) / 100 : 0, y = E ? Math.round(1e4 * (E.coins - E.baselineCoins) / E.coins) / 100 : 0, S = E ? E.baselinePennies !== E.pennies ? `${x}_percent_price` : E.baselineCoins !== E.coins ? `${y}_percent_bonus` : void 0 : void 0, I = g === d.GoldPurchaseType.Premium ? s.zb : E ? E.pennies : void 0;
+					} = t, h = !!n, f = o.b(e), v = f ? Object(u.getAwardTypeFromAward)(f) : null, g = h ? v : a.o(e) ? d.GoldPurchaseType.Premium : d.GoldPurchaseType.Coins, _ = n ? Object(p.a)(n) ? "comment" : "post" : void 0, O = l || a.t(e), E = [...Object(i.d)(e), ...Object(i.f)(e)].filter(e => e.mobileId === O)[0], C = t.offerContext || (f && 0 === f.coinPrice ? r.a.StorefrontFreeAward : Object(r.d)(E, h)), x = E ? Math.round(1e4 * (E.baselinePennies - E.pennies) / E.baselinePennies) / 100 : 0, y = E ? Math.round(1e4 * (E.coins - E.baselineCoins) / E.coins) / 100 : 0, S = E ? E.baselinePennies !== E.pennies ? `${x}_percent_price` : E.baselineCoins !== E.coins ? `${y}_percent_bonus` : void 0 : void 0, I = g === d.GoldPurchaseType.Premium ? s.Bb : E ? E.pennies : void 0;
 					return {
 						...c.n(e),
 						comment: n ? c.h(e, n) : null,
@@ -4536,4 +4536,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RpanListingUnit.cb488a6614dc56e2e7cd.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RpanListingUnit.d4b1d97a27becd773888.js.map

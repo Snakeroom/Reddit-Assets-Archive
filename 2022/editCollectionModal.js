@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/editCollectionModal.6fbb3c08a92d049c3e62.js
-// Retrieved at 8/18/2022, 6:00:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/editCollectionModal.d1c61b972f682e4afc13.js
+// Retrieved at 8/29/2022, 11:20:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["editCollectionModal"], {
 		"./node_modules/lodash/union.js": function(e, t, n) {
@@ -28,7 +28,7 @@
 					shortMonths: r,
 					locale: i = s.DEFAULT_LOCALE
 				} = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : {};
-				const c = new Date(e * a.Tb);
+				const c = new Date(e * a.Vb);
 				return o.a ? new Intl.DateTimeFormat(i, {
 					month: r ? "short" : "long",
 					day: t ? "numeric" : void 0,
@@ -639,7 +639,7 @@
 						o = null != n ? n : s;
 					return a.a.createElement(a.a.Fragment, null, function(e) {
 						let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : d.DEFAULT_LOCALE;
-						const n = e * u.Tb;
+						const n = e * u.Vb;
 						return new Date(n).toLocaleString(t, {
 							weekday: "short",
 							month: "short",
@@ -667,7 +667,7 @@
 				let n = arguments.length > 2 && void 0 !== arguments[2] && arguments[2],
 					s = arguments.length > 3 && void 0 !== arguments[3] ? arguments[3] : d.DEFAULT_LOCALE;
 				const a = Object(h.e)(e, t),
-					o = new Date(e * u.Tb);
+					o = new Date(e * u.Vb);
 				let r;
 				if (a === h.a.Live || n) return p.fbt._("Now", null, {
 					hk: "Prpcg"
@@ -1244,4 +1244,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/editCollectionModal.6fbb3c08a92d049c3e62.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/editCollectionModal.d1c61b972f682e4afc13.js.map

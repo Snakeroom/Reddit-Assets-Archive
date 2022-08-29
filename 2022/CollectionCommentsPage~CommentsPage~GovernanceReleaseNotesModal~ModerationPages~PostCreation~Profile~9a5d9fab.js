@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~ModerationPages~PostCreation~Profile~9a5d9fab.40775c568dc76348aa2b.js
-// Retrieved at 8/22/2022, 4:50:10 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~ModerationPages~PostCreation~Profile~9a5d9fab.a0af9a30ff8b2193a8d5.js
+// Retrieved at 8/29/2022, 11:20:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~ModerationPages~PostCreation~Profile~9a5d9fab"], {
 		"./src/higherOrderComponents/withClickTracking/index.tsx": function(e, t, s) {
@@ -738,7 +738,7 @@
 						o = R && R[i];
 					if (!o || !o.s) return null;
 					const r = t.caption ? t.caption : V,
-						a = Object(c.a)(F ? `${F} - ${r}` : r, 300, d.jb),
+						a = Object(c.a)(F ? `${F} - ${r}` : r, 300, d.lb),
 						l = [...o && o.s ? [o.s] : [], ...o && o.p ? o.p : []],
 						u = Object(O.d)(b, l);
 					if (!u) return null;
@@ -1414,7 +1414,7 @@
 					} = this.props;
 					if (!n) return;
 					let o = "";
-					return i && (o += i), t && e ? o += `${ve}${t}` : s.title && (o += `${ve}${s.title}`), o.length > Ee ? Object(T.a)(o, Ee, E.jb) : o
+					return i && (o += i), t && e ? o += `${ve}${t}` : s.title && (o += `${ve}${s.title}`), o.length > Ee ? Object(T.a)(o, Ee, E.lb) : o
 				}
 				getVideoExpandoMaxDimensions() {
 					let e, t = Math.max(te.j, this.state.viewportHeight),
@@ -2383,9 +2383,9 @@
 				b = e => e.pages.modHub.modQueue.moderatedCommunitiesOrder.data,
 				g = e => {
 					const t = e.platform && e.platform.currentPage;
-					return t && t.meta && (t.meta.name === i.Ob.MODERATION_PAGES || t.meta.name === i.Ob.MODQUEUE_PAGES)
+					return t && t.meta && (t.meta.name === i.Qb.MODERATION_PAGES || t.meta.name === i.Qb.MODQUEUE_PAGES)
 				}
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~ModerationPages~PostCreation~Profile~9a5d9fab.40775c568dc76348aa2b.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~ModerationPages~PostCreation~Profile~9a5d9fab.a0af9a30ff8b2193a8d5.js.map

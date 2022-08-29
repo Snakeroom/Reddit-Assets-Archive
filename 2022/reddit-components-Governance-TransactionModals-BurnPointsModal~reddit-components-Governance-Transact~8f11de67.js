@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-BurnPointsModal~reddit-components-Governance-Transact~8f11de67.1e93b3de8c13f99923b3.js
-// Retrieved at 8/18/2022, 6:00:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-BurnPointsModal~reddit-components-Governance-Transact~8f11de67.31f636e2effbd0a55d32.js
+// Retrieved at 8/29/2022, 11:20:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Governance-TransactionModals-BurnPointsModal~reddit-components-Governance-Transact~8f11de67"], {
 		"./src/reddit/components/Governance/TransactionModals/ApprovalModal/ApprovalBar.m.less": function(A, e, t) {
@@ -227,8 +227,8 @@
 				l = t("./src/reddit/helpers/crypto/vaultTransactions.ts"),
 				u = t("./src/reddit/hooks/useApiContext.ts"),
 				I = t("./src/reddit/hooks/useSafeState.ts"),
-				p = t("./src/reddit/selectors/crypto/points.ts"),
-				m = t("./src/reddit/selectors/experiments/mainnet.ts"),
+				m = t("./src/reddit/selectors/crypto/points.ts"),
+				p = t("./src/reddit/selectors/experiments/mainnet.ts"),
 				E = t("./src/reddit/selectors/gov.ts"),
 				k = t("./node_modules/fbt/lib/FbtPublic.js"),
 				g = t("./src/lib/classNames/index.ts"),
@@ -538,7 +538,7 @@
 					subredditId: t,
 					transaction: k,
 					transactionIntent: g
-				} = A, x = Object(a.useRef)(!0), [B, C] = Object(I.a)(oA.LOADING_BACKUP, x), [h, f] = Object(I.a)(nA.NOT_LOADED, x), [b, y] = Object(I.a)(null, x), [X, w] = Object(I.a)("", x), R = Object(u.a)(), N = Object(s.e)(e => Object(E.g)(e, A)).toLowerCase(), v = Object(s.e)(e => Object(p.b)(e, A.subredditId)), Q = Object(s.e)(m.b);
+				} = A, x = Object(a.useRef)(!0), [B, C] = Object(I.a)(oA.LOADING_BACKUP, x), [h, f] = Object(I.a)(nA.NOT_LOADED, x), [b, y] = Object(I.a)(null, x), [X, w] = Object(I.a)("", x), R = Object(u.a)(), N = Object(s.e)(e => Object(E.g)(e, A)).toLowerCase(), v = Object(s.e)(e => Object(m.b)(e, A.subredditId)), Q = Object(s.e)(p.b);
 				Object(a.useEffect)(() => (A.transactionIsBlockedOnIOS ? D().then(A => {
 					A && Object(d.b)(A) ? C(oA.REQUEST_VAULT_PASSWORD) : M()
 				}) : M(), () => {
@@ -830,14 +830,14 @@
 							})
 						}(r, l)
 					}
-					const p = u(r.ciphertext);
-					var m, E;
-					if (Object(a.i)((m = I.slice(16, 32), E = p, Object(i.a)(Object(a.b)([m, E])))) !== (r.mac.startsWith("0x") ? r.mac : `0x${r.mac}`).toLowerCase()) return null;
+					const m = u(r.ciphertext);
+					var p, E;
+					if (Object(a.i)((p = I.slice(16, 32), E = m, Object(i.a)(Object(a.b)([p, E])))) !== (r.mac.startsWith("0x") ? r.mac : `0x${r.mac}`).toLowerCase()) return null;
 					const k = function(A, e, t) {
 							const i = new n.a.Counter(u(e)),
 								s = new n.a.ModeOfOperation.ctr(A, i);
 							return Object(a.a)(s.decrypt(t))
-						}(I.slice(0, 16), r.cipherparams.iv, p),
+						}(I.slice(0, 16), r.cipherparams.iv, m),
 						g = n.a.padding.pkcs7.strip(k);
 					return Object(s.h)(g)
 				}
@@ -910,7 +910,7 @@
 					blockchainProvider: d,
 					contracts: l,
 					gasLimit: u
-				} = e, I = d, m = new i.ethers.providers.JsonRpcProvider(Object(s.i)(I), Object(s.h)(I)), E = (null == l ? void 0 : l.timedForwarder.address) || "", k = i.ethers.Wallet.fromMnemonic(t).connect(m), {
+				} = e, I = d, p = new i.ethers.providers.JsonRpcProvider(Object(s.i)(I), Object(s.h)(I)), E = (null == l ? void 0 : l.timedForwarder.address) || "", k = i.ethers.Wallet.fromMnemonic(t).connect(p), {
 					contractAddress: g,
 					contractABI: x,
 					contractMethod: B
@@ -922,7 +922,7 @@
 					ethereumNetwork: I,
 					gasLimit: u,
 					pointsDetails: e,
-					provider: m,
+					provider: p,
 					subredditId: r,
 					timedForwarderAddress: E,
 					transaction: a,
@@ -933,7 +933,7 @@
 					} = A;
 					return e === B
 				});
-				return n && h ? p(C) : async function(A) {
+				return n && h ? m(C) : async function(A) {
 					let {
 						contract: e,
 						contractMethod: t,
@@ -944,7 +944,7 @@
 					return i
 				}(C)
 			}
-			const p = async A => {
+			const m = async A => {
 				const {
 					apiContext: e,
 					ethereumNetwork: t
@@ -960,12 +960,12 @@
 						transaction: l,
 						wallet: I
 					} = A;
-					const p = e.interface.encodeFunctionData(s, l.arguments),
+					const m = e.interface.encodeFunctionData(s, l.arguments),
 						{
-							contractAddress: m,
+							contractAddress: p,
 							contractABI: E
 						} = Object(c.f)(d),
-						k = new i.ethers.Contract(m, E, I),
+						k = new i.ethers.Contract(p, E, I),
 						g = await k.getNonce(I.address),
 						x = g.toNumber(),
 						B = new Date;
@@ -977,7 +977,7 @@
 							value: a.a.from(0),
 							gas: a.a.from(n),
 							nonce: g,
-							data: p,
+							data: m,
 							validUntilTime: a.a.from(C)
 						},
 						f = r.split(":"),
@@ -992,7 +992,7 @@
 							fromAddress: I.address,
 							toContractAddress: t,
 							nonce: x,
-							populatedTransactionData: p,
+							populatedTransactionData: m,
 							validUntilTime: C
 						},
 						signature: b,
@@ -1001,7 +1001,7 @@
 				}(A), l = await
 				function(A, e, t) {
 					return Object(o.a)(A, {
-						method: n.kb.POST,
+						method: n.mb.POST,
 						endpoint: `${r.a.metaUrl}/meta-tx/${e}/relay`,
 						data: JSON.stringify(t)
 					})
@@ -1010,16 +1010,16 @@
 				return {
 					hash: l.body.transactionHash
 				}
-			}, m = 3e4, E = 3e5;
+			}, p = 3e4, E = 3e5;
 
 			function k(A, e) {
 				const t = A.blockchainProvider,
 					a = new i.ethers.providers.JsonRpcProvider(Object(s.i)(t), Object(s.h)(t));
-				let r = Math.floor(E / m) - 1;
+				let r = Math.floor(E / p) - 1;
 				return new Promise((A, i) => {
 					const n = async () => {
 						const t = await a.getTransactionReceipt(e);
-						1 === t.status ? A() : 0 === t.status ? i(new Error(`Transaction ${e} failed on-chain`)) : --r > 0 && setTimeout(n, m)
+						1 === t.status ? A() : 0 === t.status ? i(new Error(`Transaction ${e} failed on-chain`)) : --r > 0 && setTimeout(n, p)
 					};
 					setTimeout(n, Object(s.l)(t))
 				})
@@ -1074,4 +1074,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-BurnPointsModal~reddit-components-Governance-Transact~8f11de67.1e93b3de8c13f99923b3.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-BurnPointsModal~reddit-components-Governance-Transact~8f11de67.31f636e2effbd0a55d32.js.map

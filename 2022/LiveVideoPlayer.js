@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/LiveVideoPlayer.5882211314c5eb4231d6.js
-// Retrieved at 8/22/2022, 4:50:10 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/LiveVideoPlayer.755cd7d0cc48b368e8fe.js
+// Retrieved at 8/29/2022, 11:20:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["LiveVideoPlayer"], {
 		"./node_modules/lodash/isUndefined.js": function(e, t) {
@@ -337,7 +337,7 @@
 						type: e.type
 					} : {
 						id: Object(w.n)(u(), e.name),
-						name: `${r.lc}${e.name}`,
+						name: `${r.nc}${e.name}`,
 						type: e.type
 					});
 					if (!Object(I.Q)(u())) return o(Object(d.k)({
@@ -468,7 +468,7 @@
 						multiredditPath: e,
 						multiredditsModelsState: o
 					})), (await ((e, t, s) => Object(h.a)(Object(b.a)(e, [p.a]), {
-						method: r.kb.POST,
+						method: r.mb.POST,
 						endpoint: `${e.apiUrl}/api/multi/favorite`,
 						data: {
 							make_favorite: s ? "true" : "false",
@@ -508,7 +508,7 @@
 						multiredditPath: e,
 						multiredditsModelsState: c
 					})), (await ((e, t, s) => Object(h.a)(Object(b.a)(e, [p.a]), {
-						method: r.kb.POST,
+						method: r.mb.POST,
 						endpoint: `${e.apiUrl}/api/multi/subscribe`,
 						data: {
 							action: s ? "sub" : "unsub",
@@ -1190,7 +1190,7 @@
 						subscribe: o
 					} = t;
 					return Object(i.a)(Object(a.a)(e, [c.a]), {
-						method: r.kb.POST,
+						method: r.mb.POST,
 						endpoint: Object(d.a)(`${e.apiUrl}/api/subscribe`),
 						data: {
 							action: o ? "sub" : "unsub",
@@ -1201,7 +1201,7 @@
 					})
 				},
 				l = (e, t, s) => Object(i.a)(Object(a.a)(e, [c.a]), {
-					method: r.kb.POST,
+					method: r.mb.POST,
 					endpoint: `${e.apiUrl}/api/favorite`,
 					data: {
 						make_favorite: s ? "true" : "false",
@@ -1958,4 +1958,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/LiveVideoPlayer.5882211314c5eb4231d6.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/LiveVideoPlayer.755cd7d0cc48b368e8fe.js.map

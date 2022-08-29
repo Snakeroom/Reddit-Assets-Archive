@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-ClassicPost.2f1e32c95191549a4bc3.js
-// Retrieved at 8/22/2022, 4:50:10 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-ClassicPost.feb1e9ca9e4ad432f267.js
+// Retrieved at 8/29/2022, 11:20:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-ClassicPost"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -499,21 +499,21 @@
 			}));
 			var n = s("./node_modules/fbt/lib/FbtPublic.js"),
 				o = s("./src/lib/constants/index.ts");
-			const r = [o.tc, o.qb, o.C, o.R, o.lb, o.Tb],
+			const r = [o.vc, o.sb, o.C, o.S, o.nb, o.Vb],
 				i = {
-					[o.Tb]: e => n.fbt._({
+					[o.Vb]: e => n.fbt._({
 						"*": "{number} seconds",
 						_1: "1 second"
 					}, [n.fbt._plural(e, "number")], {
 						hk: "3pTp9Z"
 					}),
-					[o.lb]: e => n.fbt._({
+					[o.nb]: e => n.fbt._({
 						"*": "{number} minutes",
 						_1: "1 minute"
 					}, [n.fbt._plural(e, "number")], {
 						hk: "2gB3sf"
 					}),
-					[o.R]: e => n.fbt._({
+					[o.S]: e => n.fbt._({
 						"*": "{number} hours",
 						_1: "1 hour"
 					}, [n.fbt._plural(e, "number")], {
@@ -525,13 +525,13 @@
 					}, [n.fbt._plural(e, "number")], {
 						hk: "3zIGRH"
 					}),
-					[o.qb]: e => n.fbt._({
+					[o.sb]: e => n.fbt._({
 						"*": "{number} months",
 						_1: "1 month"
 					}, [n.fbt._plural(e, "number")], {
 						hk: "28DQqD"
 					}),
-					[o.tc]: e => n.fbt._({
+					[o.vc]: e => n.fbt._({
 						"*": "{number} years",
 						_1: "1 year"
 					}, [n.fbt._plural(e, "number")], {
@@ -539,28 +539,28 @@
 					})
 				},
 				a = {
-					[o.Tb]: e => n.fbt._("{amount}s", [n.fbt._param("amount", String(e))], {
+					[o.Vb]: e => n.fbt._("{amount}s", [n.fbt._param("amount", String(e))], {
 						hk: "F4qog"
 					}),
-					[o.lb]: e => n.fbt._("{amount}m", [n.fbt._param("amount", String(e))], {
+					[o.nb]: e => n.fbt._("{amount}m", [n.fbt._param("amount", String(e))], {
 						hk: "43tM5H"
 					}),
-					[o.R]: e => n.fbt._("{amount}h", [n.fbt._param("amount", String(e))], {
+					[o.S]: e => n.fbt._("{amount}h", [n.fbt._param("amount", String(e))], {
 						hk: "19NsxU"
 					}),
 					[o.C]: e => n.fbt._("{amount}d", [n.fbt._param("amount", String(e))], {
 						hk: "39MDc9"
 					}),
-					[o.qb]: e => n.fbt._("{amount}m", [n.fbt._param("amount", String(e))], {
+					[o.sb]: e => n.fbt._("{amount}m", [n.fbt._param("amount", String(e))], {
 						hk: "28feBj"
 					}),
-					[o.tc]: e => n.fbt._("{amount}y", [n.fbt._param("amount", String(e))], {
+					[o.vc]: e => n.fbt._("{amount}y", [n.fbt._param("amount", String(e))], {
 						hk: "10bv8G"
 					}),
-					[o.qb]: e => n.fbt._("{amount}m", [n.fbt._param("amount", String(e))], {
+					[o.sb]: e => n.fbt._("{amount}m", [n.fbt._param("amount", String(e))], {
 						hk: "28feBj"
 					}),
-					[o.tc]: e => n.fbt._("{amount}y", [n.fbt._param("amount", String(e))], {
+					[o.vc]: e => n.fbt._("{amount}y", [n.fbt._param("amount", String(e))], {
 						hk: "10bv8G"
 					})
 				};
@@ -571,12 +571,12 @@
 				const c = Date.now(),
 					d = new Date(e).getTime(),
 					l = {
-						[o.tc]: "",
-						[o.qb]: "",
+						[o.vc]: "",
+						[o.sb]: "",
 						[o.C]: "",
-						[o.R]: "",
-						[o.lb]: "",
-						[o.Tb]: ""
+						[o.S]: "",
+						[o.nb]: "",
+						[o.Vb]: ""
 					};
 				let u = d - c;
 				if (u <= 0) return n.fbt._("a moment", null, {
@@ -1641,7 +1641,7 @@
 				L = C.a.div("ThumbnailContainer", E.a),
 				M = Object(c.c)({
 					isCurrentUserProfilePost: v.l,
-					isTopicPage: e => !(!e.platform.currentPage || !e.platform.currentPage.meta || e.platform.currentPage.meta.name !== h.Ob.TOPIC),
+					isTopicPage: e => !(!e.platform.currentPage || !e.platform.currentPage.meta || e.platform.currentPage.meta.name !== h.Qb.TOPIC),
 					shouldOpenPostInNewTab: _.jb
 				}),
 				D = Object(i.b)(M);
@@ -2551,7 +2551,7 @@
 				return a.a.createElement("span", {
 					className: e.className
 				}, t ? c._("Voting closed {timeAgo}", [c._param("timeAgo", a.a.createElement(o.d, {
-					seconds: e.poll.endsAt / n.Tb
+					seconds: e.poll.endsAt / n.Vb
 				}))], {
 					hk: "3OERID"
 				}) : Object(r.a)(new Date(e.poll.endsAt)))
@@ -5831,7 +5831,7 @@
 					} = e.user.prefs;
 					return !(void 0 !== t || !Object(o.b)(e)) || !!t
 				},
-				i = e => !(!e.platform.currentPage || !e.platform.currentPage.meta || e.platform.currentPage.meta.name !== n.Ob.MODERATION_PAGES),
+				i = e => !(!e.platform.currentPage || !e.platform.currentPage.meta || e.platform.currentPage.meta.name !== n.Qb.MODERATION_PAGES),
 				a = e => e.user.prefs.reduceAnimationsFromAwards,
 				c = e => !!e.user.prefs.over18
 		},
@@ -5893,4 +5893,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ClassicPost.2f1e32c95191549a4bc3.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ClassicPost.feb1e9ca9e4ad432f267.js.map

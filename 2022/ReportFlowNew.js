@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ReportFlowNew.6c26224a4480afc80066.js
-// Retrieved at 8/18/2022, 6:00:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ReportFlowNew.93906ff2377c21309176.js
+// Retrieved at 8/29/2022, 11:20:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ReportFlowNew"], {
 		"./src/reddit/actions/blockedRedditors.ts": function(e, t, o) {
@@ -117,7 +117,7 @@
 			})), o.d(t, "a", (function() {
 				return w
 			})), o.d(t, "g", (function() {
-				return x
+				return j
 			}));
 			var r = o("./node_modules/fbt/lib/FbtPublic.js"),
 				s = o("./src/lib/makeActionCreator/index.ts"),
@@ -173,7 +173,7 @@
 							buttonAction: f(e)
 						}))
 					}
-				}, O = "USER_UNBLOCK__PENDING", R = "USER_UNBLOCK__SUCCESS", w = "USER_UNBLOCK__FAILED", _ = Object(s.a)(O), g = Object(s.a)(R), k = Object(s.a)(w), x = e => async (t, o, s) => {
+				}, O = "USER_UNBLOCK__PENDING", R = "USER_UNBLOCK__SUCCESS", w = "USER_UNBLOCK__FAILED", _ = Object(s.a)(O), g = Object(s.a)(R), x = Object(s.a)(w), j = e => async (t, o, s) => {
 					let {
 						apiContext: l
 					} = s;
@@ -195,7 +195,7 @@
 						text: r.fbt._("An error has occured. Please try again later", null, {
 							hk: "2FpsLy"
 						})
-					})), t(k({
+					})), t(x({
 						name: e
 					}))))
 				}
@@ -287,13 +287,13 @@
 				w = o("./src/reddit/actions/userBlocks.ts"),
 				_ = o("./src/lib/makeGqlRequest/index.ts"),
 				g = o("./src/redditGQL/operations/ReportComment.json");
-			const k = (e, t) => Object(_.a)(e, {
+			const x = (e, t) => Object(_.a)(e, {
 				...g,
 				variables: t
 			});
-			var x = o("./src/redditGQL/operations/ReportLiveStream.json");
-			const j = (e, t) => Object(_.a)(e, {
-				...x,
+			var j = o("./src/redditGQL/operations/ReportLiveStream.json");
+			const k = (e, t) => Object(_.a)(e, {
+				...j,
 				variables: t
 			});
 			var v = o("./src/reddit/endpoints/messages/index.ts"),
@@ -498,7 +498,7 @@
 										relativeReportTimeSec: c,
 										...b
 									};
-									h = () => j(r(), {
+									h = () => k(r(), {
 										input: e
 									});
 									break
@@ -516,7 +516,7 @@
 									commentId: a,
 									...b
 								};
-								h = () => k(r(), {
+								h = () => x(r(), {
 									input: t
 								});
 								break;
@@ -634,7 +634,7 @@
 					name: t
 				},
 				endpoint: `${e.apiUrl}/api/block_user`,
-				method: s.kb.POST
+				method: s.mb.POST
 			}), l = async (e, t, o) => Object(n.a)(Object(i.a)(e, [d.a]), {
 				data: {
 					name: o,
@@ -642,22 +642,22 @@
 					type: "enemy"
 				},
 				endpoint: `${e.apiUrl}/api/unfriend`,
-				method: s.kb.POST
+				method: s.mb.POST
 			}), u = async (e, t) => Object(n.a)(Object(i.a)(e, [d.a]), {
 				data: {
 					name: t
 				},
 				endpoint: `${e.apiUrl}/api/add_whitelisted?include_model`,
-				method: s.kb.POST
+				method: s.mb.POST
 			}), p = async (e, t) => Object(n.a)(Object(i.a)(e, [d.a]), {
 				data: {
 					name: t
 				},
 				endpoint: `${e.apiUrl}/api/remove_whitelisted`,
-				method: s.kb.POST
+				method: s.mb.POST
 			}), m = async (e, t) => Object(n.a)(Object(i.a)(e, [d.a]), {
 				endpoint: Object(c.a)(`${r.a.oauthUrl}/user/${t}/about`),
-				method: s.kb.GET,
+				method: s.mb.GET,
 				data: {
 					raw_json: 1
 				}
@@ -691,7 +691,7 @@
 				e.Rule = "rule", e.SiteRule = "siteRule", e.Other = "other", e.FileComplaint = "fileComplaint", e.CrisisTextLine = "crisisTextLine"
 			}(p || (p = {}));
 			const m = (e, t) => Object(s.a)(Object(i.a)(e, [d.a]), {
-					method: r.kb.POST,
+					method: r.mb.POST,
 					endpoint: Object(c.a)(`${e.apiUrl}/api/report`),
 					data: b(t)
 				}),
@@ -724,7 +724,7 @@
 					}
 				},
 				h = (e, t, o) => Object(s.a)(Object(i.a)(e, [d.a]), {
-					method: r.kb.POST,
+					method: r.mb.POST,
 					endpoint: Object(c.a)(`${e.apiUrl}/api/report`),
 					data: f(t, o)
 				}),
@@ -751,9 +751,9 @@
 			})), o.d(t, "c", (function() {
 				return g
 			})), o.d(t, "g", (function() {
-				return k
-			})), o.d(t, "a", (function() {
 				return x
+			})), o.d(t, "a", (function() {
+				return j
 			}));
 			var r = o("./node_modules/fbt/lib/FbtPublic.js"),
 				s = o("./node_modules/uuid/v4.js"),
@@ -798,7 +798,7 @@
 						...o,
 						subredditId: t.id
 					}
-				}), g = () => n()(), k = e => e.data.createAudioRoomOrError || e.data.createAudioRoomOnProfile, x = {
+				}), g = () => n()(), x = e => e.data.createAudioRoomOrError || e.data.createAudioRoomOnProfile, j = {
 					[h.i.ServiceError]: r.fbt._("Something's wrong with the talk service right now. Check back later.", null, {
 						hk: "3XqPJS"
 					}),
@@ -888,11 +888,11 @@
 							}
 						}
 					const {
-						reason: k
+						reason: x
 					} = e;
 					return {
 						reason: "site_reason_selected",
-						site_reason: k.reasonText,
+						site_reason: x.reasonText,
 						additional_info: e.additionalInfo ? e.additionalInfo.join(",") : void 0,
 						custom_text: e.customText,
 						modmail_conv_id: f,
@@ -1004,4 +1004,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ReportFlowNew.6c26224a4480afc80066.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ReportFlowNew.93906ff2377c21309176.js.map

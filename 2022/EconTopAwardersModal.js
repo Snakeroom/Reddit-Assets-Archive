@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/EconTopAwardersModal.33c1666700dec24e457d.js
-// Retrieved at 8/22/2022, 4:50:10 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/EconTopAwardersModal.e9eb61afd7f378af9b2c.js
+// Retrieved at 8/29/2022, 11:20:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["EconTopAwardersModal"], {
 		"./src/lib/currency/centsToDollars/index.ts": function(e, t, r) {
@@ -179,7 +179,7 @@
 				x = r("./src/reddit/models/RichTextJson/addRTJParam.ts");
 			const h = (e, t, r) => Object(p.a)(Object(f.a)(e, [b.a]), {
 				endpoint: Object(v.a)(Object(x.a)(`${e.apiUrl}/api/v1/${t}/banned`)),
-				method: u.kb.GET,
+				method: u.mb.GET,
 				data: r
 			});
 			var I = r("./src/reddit/helpers/normalizeUsername/index.tsx"),
@@ -205,9 +205,9 @@
 						return e
 				}
 			};
-			const k = {};
-			var U = function() {
-					let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : k,
+			const U = {};
+			var k = function() {
+					let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : U,
 						t = arguments.length > 1 ? arguments[1] : void 0;
 					switch (t.type) {
 						case j.s: {
@@ -237,7 +237,7 @@
 				},
 				A = Object(C.c)({
 					error: P,
-					pending: U
+					pending: k
 				});
 			const S = {};
 			var B = function() {
@@ -470,7 +470,7 @@
 					t.username = Object(I.a)(t.username), n(Object(c.h)(r));
 					const g = await ((e, t, r) => Object(p.a)(Object(f.a)(e, [b.a]), {
 						endpoint: `${e.apiUrl}${t}api/friend`,
-						method: u.kb.POST,
+						method: u.mb.POST,
 						data: {
 							api_type: "json",
 							ban_reason: r.reason,
@@ -513,7 +513,7 @@
 					const i = n().subreddits.models[e].url,
 						d = await ((e, t, r) => Object(p.a)(Object(f.a)(e, [b.a]), {
 							endpoint: `${e.apiUrl}${t}api/unfriend`,
-							method: u.kb.POST,
+							method: u.mb.POST,
 							data: {
 								api_type: "json",
 								id: r,
@@ -827,8 +827,8 @@
 					d: "M16.355 12.766c-.905 1.298-1.81 1.976-2.714 2.432-.904.496-1.809.629-2.713.683-.905-.062-1.81-.195-2.714-.692-.905-.458-1.81-1.133-2.714-2.423V12.4l5.428-.183 5.427.183v.366zM82.5 12.766c-.905 1.298-1.81 1.976-2.714 2.432-.904.496-1.809.629-2.713.683-.905-.062-1.81-.195-2.714-.692-.905-.458-1.81-1.133-2.714-2.423V12.4l5.428-.183 5.427.183v.366z",
 					fill: "#FFF1B6"
 				})),
-				k = r("./node_modules/lodash/noop.js"),
-				U = r.n(k),
+				U = r("./node_modules/lodash/noop.js"),
+				k = r.n(U),
 				A = r("./src/lib/currency/currencies.ts"),
 				S = r("./src/lib/localizeCurrency/index.ts"),
 				B = r("./src/reddit/components/Hovercards/AuthorHovercard/UserHovercard.tsx"),
@@ -869,7 +869,7 @@
 					}, u ? d.name : n.a.createElement(B.a, {
 						user: d.name,
 						tooltipId: `topawarder--userhovercard--${d.name}`,
-						sendHoverCardEvent: U.a
+						sendHoverCardEvent: k.a
 					}, R(d.name, d.id === a))), l > 0 && n.a.createElement("span", {
 						className: H.a.score
 					}, Object(S.b)(l, {
@@ -945,7 +945,7 @@
 					}, r && !o ? n.a.createElement(B.a, {
 						user: c,
 						tooltipId: `topawarderwinner-userhovercard--${c}`,
-						sendHoverCardEvent: U.a,
+						sendHoverCardEvent: k.a,
 						wrapperClassName: Q.a.hoverCardWrapper
 					}, c) : c), r && t && n.a.createElement("div", {
 						className: Q.a.score
@@ -1040,8 +1040,8 @@
 				}, [r, h]), Object(a.useEffect)(() => {
 					r && I(Object(m.c)(r))
 				}, [r, I]);
-				const k = () => h(Object(_.g)(d.a.ECON_TOP_AWARDERS)),
-					U = () => {
+				const U = () => h(Object(_.g)(d.a.ECON_TOP_AWARDERS)),
+					k = () => {
 						if (r) {
 							const e = Object(l.d)(l.a.GildingFlow, !0);
 							I(Object(m.b)()), h(Object(p.d)({
@@ -1050,7 +1050,7 @@
 							}))
 						}
 					};
-				if (!r || !i) return k(), null;
+				if (!r || !i) return U(), null;
 				const A = c && c.id === i.authorId,
 					S = !i.isGildable || !!A,
 					B = i.topAwardedType === v.a.Active,
@@ -1063,7 +1063,7 @@
 					className: ee.a.modalHeader
 				}, n.a.createElement(y.a, {
 					className: ee.a.closeIcon,
-					onClick: k
+					onClick: U
 				}), n.a.createElement("h3", {
 					className: ee.a.title
 				}, re._("Top Awarders", null, {
@@ -1120,7 +1120,7 @@
 					hk: "3reZYa"
 				})), n.a.createElement(w.l, {
 					className: ee.a.cta,
-					onClick: U
+					onClick: k
 				}, n.a.createElement(j.a, {
 					className: ee.a.giftIcon
 				}), re._("Give Award", null, {
@@ -1131,7 +1131,7 @@
 					currentRank: o,
 					currentUserId: c && c.id,
 					hideAddAwardButton: S,
-					onGild: U
+					onGild: k
 				}), !x && B && t && n.a.createElement("div", {
 					className: ee.a.anonymousRank
 				}, re._("Anonymous redditors have awarded for {score} Coins", [re._param("score", t.score.toLocaleString())], {
@@ -1253,8 +1253,8 @@
 				y = r("./node_modules/react-router-dom/esm/react-router-dom.js"),
 				C = r("./src/lib/lessComponent.tsx"),
 				P = r("./src/lib/prettyPrintNumber/index.ts"),
-				k = r("./src/reddit/components/Admin/index.tsx"),
-				U = r("./src/reddit/components/ChatButton/index.tsx"),
+				U = r("./src/reddit/components/Admin/index.tsx"),
+				k = r("./src/reddit/components/ChatButton/index.tsx"),
 				A = r("./src/reddit/components/JSAPIContainers/index.tsx"),
 				S = r("./src/reddit/components/OverlayAwareTooltip/index.tsx"),
 				B = r("./src/reddit/components/SubscribeButton/index.tsx"),
@@ -1400,7 +1400,7 @@
 			}
 			const ue = C.a.wrapped(M.a, "UserIcon", le.a),
 				pe = C.a.wrapped(B.a, "SubscribeButton", le.a),
-				fe = C.a.wrapped(U.b, "ChatButton", le.a),
+				fe = C.a.wrapped(k.b, "ChatButton", le.a),
 				be = C.a.wrapped(R.a, "PremiumIcon", le.a),
 				ve = C.a.wrapped(y.a, "UserNameLink", le.a),
 				xe = C.a.div("UserNameMetaData", le.a),
@@ -1416,14 +1416,14 @@
 				ye = C.a.div("UserContainer", le.a),
 				Ce = C.a.div("BottomSpacer", le.a),
 				Pe = C.a.div("Container", le.a),
-				ke = e => n.a.createElement("div", null, n.a.createElement("div", null, n.a.createElement(ve, {
+				Ue = e => n.a.createElement("div", null, n.a.createElement("div", null, n.a.createElement(ve, {
 					to: `/user/${e.userName}/`
 				}, e.title || e.userName), e.user.isGold && n.a.createElement(y.a, {
 					to: "/premium"
-				}, n.a.createElement(be, null)), e.user.isEmployee && n.a.createElement(k.a, null)), n.a.createElement(xe, null, n.a.createElement(he, null, `u/${e.userName}`, n.a.createElement(Ie, null, "•")), n.a.createElement(he, null, (e.user.createdUtc || e.user.created) && n.a.createElement(z.d, {
+				}, n.a.createElement(be, null)), e.user.isEmployee && n.a.createElement(U.a, null)), n.a.createElement(xe, null, n.a.createElement(he, null, `u/${e.userName}`, n.a.createElement(Ie, null, "•")), n.a.createElement(he, null, (e.user.createdUtc || e.user.created) && n.a.createElement(z.d, {
 					seconds: e.user.createdUtc || e.user.created
 				})))),
-				Ue = e => {
+				ke = e => {
 					const {
 						user: {
 							karma: t
@@ -1497,8 +1497,8 @@
 					const y = !!o && Object(W.e)(o) === h,
 						C = !!(null == o ? void 0 : o.snoovatarFullBodyAsset),
 						P = I.accountIcon || `${j.a.assetPath}/img/snoo_user_placeholder.png`,
-						k = null == m ? void 0 : m.flair,
-						U = null == m ? void 0 : m.access,
+						U = null == m ? void 0 : m.flair,
+						k = null == m ? void 0 : m.access,
 						S = (null == g ? void 0 : g.templateIds) && (null === (t = null == g ? void 0 : g.templateIds) || void 0 === t ? void 0 : t.length) > 0,
 						B = null === (r = null == g ? void 0 : g.displaySettings) || void 0 === r ? void 0 : r.isEnabled,
 						{
@@ -1535,11 +1535,11 @@
 						iconUrl: P,
 						isNSFW: I.isNSFW,
 						userName: h
-					}), n.a.createElement(ke, {
+					}), n.a.createElement(Ue, {
 						title: null == p ? void 0 : p.title,
 						user: I,
 						userName: h
-					})), n.a.createElement(Ue, {
+					})), n.a.createElement(ke, {
 						user: I
 					}), M && n.a.createElement(G.a, {
 						recentAwardings: M,
@@ -1561,12 +1561,12 @@
 						getEventFactory: e => Object(H.h)(e ? "unfollow" : "follow", s),
 						isFullWidth: !0,
 						small: !0
-					})), U && s && !y && v && n.a.createElement(se, {
+					})), k && s && !y && v && n.a.createElement(se, {
 						contextId: s,
 						subredditId: v,
 						sendEvent: f,
 						username: h
-					}), k && s && S && B && v && n.a.createElement(ie, {
+					}), U && s && S && B && v && n.a.createElement(ie, {
 						contextId: s,
 						subredditId: v,
 						sendEvent: f,
@@ -1575,7 +1575,7 @@
 						contextId: s,
 						subredditId: v,
 						user: I
-					}), !(U || d) && n.a.createElement(Ce, null))
+					}), !(k || d) && n.a.createElement(Ce, null))
 				},
 				Se = Object(S.a)(Ae),
 				Be = e => {
@@ -2342,8 +2342,8 @@
 					snoovatarUrl: y,
 					title: C,
 					userCreated: P,
-					username: k,
-					url: U,
+					username: U,
+					url: k,
 					isHovercard: A
 				} = e;
 				const S = Object(s.e)(e => !E && !!y && Object(d.f)(e));
@@ -2351,7 +2351,7 @@
 					bannerBackgroundImage: t,
 					editMode: !!f,
 					isNSFW: N,
-					username: k,
+					username: U,
 					isDeletingBanner: !!v,
 					onDeleteBanner: O
 				}), !f && E && n.a.createElement(o.default, {
@@ -2370,23 +2370,23 @@
 					isGold: _,
 					isNSFW: N,
 					title: C,
-					username: k
+					username: U
 				}), n.a.createElement(p.a, {
 					className: b.a.snoovatarUserName,
 					shouldDisplaySnoovatar: !0,
-					username: k,
+					username: U,
 					userCreated: P,
-					url: U
+					url: k
 				}), (E || !a && !!y) && n.a.createElement(l.a, {
 					compact: r,
 					currentUserHasSnoovatar: a,
 					isOwnProfile: E,
 					onClick: w
 				}), S && n.a.createElement(m.a, {
-					username: k,
+					username: U,
 					isHovercard: !!A,
 					share: {
-						username: k
+						username: U
 					}
 				}))
 			}
@@ -2787,4 +2787,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EconTopAwardersModal.33c1666700dec24e457d.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EconTopAwardersModal.e9eb61afd7f378af9b2c.js.map

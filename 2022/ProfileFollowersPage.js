@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfileFollowersPage.32aa28feaa853ca39282.js
-// Retrieved at 8/22/2022, 4:50:10 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfileFollowersPage.e5546b5a358dde9c6207.js
+// Retrieved at 8/29/2022, 11:20:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfileFollowersPage", "ProfileFollowersAction"], {
 		"./node_modules/lodash/take.js": function(e, t, s) {
@@ -167,7 +167,7 @@
 					}));
 					const v = f.name;
 					if ((await Object(c.c)(l(), {
-							subredditNames: [`${n.lc}${f.name}`],
+							subredditNames: [`${n.nc}${f.name}`],
 							subscribe: t
 						})).ok) {
 						s(_({
@@ -752,7 +752,7 @@
 							data: s,
 							endpoint: Object(m.a)(Object(c.a)(Object(p.a)(Object(h.a)(`${l.a.gatewayUrl}/desktopapi/v1/user/${t}/conversations`)))),
 							traceRequestName: "get_profile_conversations",
-							method: i.kb.GET
+							method: i.mb.GET
 						}).then(e => "pinned" in e.body ? e : "postIds" in e.body ? {
 							...e,
 							body: {
@@ -808,7 +808,7 @@
 							t: m
 						},
 						w = [t(N.d(g))],
-						S = Object(T.a)(g, i.vb, u, e.queryParams);
+						S = Object(T.a)(g, i.xb, u, e.queryParams);
 					if (s().listings.postOrder.ids[S] && !s().listings.postOrder.api.error[S] ? h = !0 : w.push(t(Pe(S, g, I, !0))), w.push(t(Object(o.b)())), await Promise.all(w), h) return;
 					const P = s();
 					if (!P.platform.currentPage) return;
@@ -857,7 +857,7 @@
 				v = s("./src/reddit/models/RichTextJson/addRTJParam.ts");
 			const x = (e, t, s) => Object(p.a)(Object(h.a)(e, [b.a]), {
 				endpoint: Object(f.a)(Object(v.a)(`${e.apiUrl}/api/v1/${t}/banned`)),
-				method: m.kb.GET,
+				method: m.mb.GET,
 				data: s
 			});
 			var g = s("./src/reddit/helpers/normalizeUsername/index.tsx"),
@@ -1148,7 +1148,7 @@
 					t.username = Object(g.a)(t.username), n(Object(a.h)(s));
 					const y = await ((e, t, s) => Object(p.a)(Object(h.a)(e, [b.a]), {
 						endpoint: `${e.apiUrl}${t}api/friend`,
-						method: m.kb.POST,
+						method: m.mb.POST,
 						data: {
 							api_type: "json",
 							ban_reason: s.reason,
@@ -1191,7 +1191,7 @@
 					const d = n().subreddits.models[e].url,
 						l = await ((e, t, s) => Object(p.a)(Object(h.a)(e, [b.a]), {
 							endpoint: `${e.apiUrl}${t}api/unfriend`,
-							method: m.kb.POST,
+							method: m.mb.POST,
 							data: {
 								api_type: "json",
 								id: s,
@@ -3976,7 +3976,7 @@
 				})())))
 			};
 			h.defaultProps = {
-				minimizedLength: d.Ub
+				minimizedLength: d.Wb
 			}, t.a = h
 		},
 		"./src/reddit/components/SidebarFooter/index.m.less": function(e, t, s) {
@@ -6264,4 +6264,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileFollowersPage.32aa28feaa853ca39282.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileFollowersPage.e5546b5a358dde9c6207.js.map

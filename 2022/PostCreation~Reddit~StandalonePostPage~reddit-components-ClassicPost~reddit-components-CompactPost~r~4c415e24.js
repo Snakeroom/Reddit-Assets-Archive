@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostCreation~Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~r~4c415e24.5e5cf5621f8c3e010263.js
-// Retrieved at 8/18/2022, 6:00:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostCreation~Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~r~4c415e24.33d4377c42dfd1df38d8.js
+// Retrieved at 8/29/2022, 11:20:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostCreation~Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~r~4c415e24"], {
 		"./src/reddit/actions/gold/communityAwards/index.ts": function(e, t, n) {
@@ -190,7 +190,7 @@
 					const b = Object(p.b)(o()),
 						y = await (async (e, t, n, r, o) => Object(d.a)(Object(i.a)(e, [u.a]), {
 							endpoint: `${c.a.snoovatarUrl}/api/snoovatar?skip_telemetry=true`,
-							method: s.kb.POST,
+							method: s.mb.POST,
 							headers: {
 								"Content-Type": "application/json ",
 								"X-CSRF-Token": o || ""
@@ -213,7 +213,7 @@
 					try {
 						const t = await (async e => Object(d.a)(Object(i.a)(e, [u.a]), {
 							endpoint: `${c.a.snoovatarUrl}/api/account`,
-							method: s.kb.GET
+							method: s.mb.GET
 						}))(r());
 						t.ok && e(m(t.body))
 					} catch (o) {
@@ -226,7 +226,7 @@
 					try {
 						const t = await (async e => Object(d.a)(Object(i.a)(e, [u.a]), {
 							endpoint: `${c.a.snoovatarUrl}/api/snoovatars/random:byId`,
-							method: s.kb.GET
+							method: s.mb.GET
 						}))(r());
 						t.ok && e(h(t.body))
 					} catch (o) {
@@ -1003,7 +1003,7 @@
 					const {
 						thingId: n,
 						packageId: u
-					} = t, m = !!n, g = a.b(e), h = g ? Object(l.getAwardTypeFromAward)(g) : null, b = m ? h : s.o(e) ? i.GoldPurchaseType.Premium : i.GoldPurchaseType.Coins, y = n ? Object(f.a)(n) ? "comment" : "post" : void 0, w = u || s.t(e), O = [...Object(c.d)(e), ...Object(c.f)(e)].filter(e => e.mobileId === w)[0], j = t.offerContext || (g && 0 === g.coinPrice ? o.a.StorefrontFreeAward : Object(o.d)(O, m)), _ = O ? Math.round(1e4 * (O.baselinePennies - O.pennies) / O.baselinePennies) / 100 : 0, I = O ? Math.round(1e4 * (O.coins - O.baselineCoins) / O.coins) / 100 : 0, k = O ? O.baselinePennies !== O.pennies ? `${_}_percent_price` : O.baselineCoins !== O.coins ? `${I}_percent_bonus` : void 0 : void 0, C = b === i.GoldPurchaseType.Premium ? r.zb : O ? O.pennies : void 0;
+					} = t, m = !!n, g = a.b(e), h = g ? Object(l.getAwardTypeFromAward)(g) : null, b = m ? h : s.o(e) ? i.GoldPurchaseType.Premium : i.GoldPurchaseType.Coins, y = n ? Object(f.a)(n) ? "comment" : "post" : void 0, w = u || s.t(e), O = [...Object(c.d)(e), ...Object(c.f)(e)].filter(e => e.mobileId === w)[0], j = t.offerContext || (g && 0 === g.coinPrice ? o.a.StorefrontFreeAward : Object(o.d)(O, m)), _ = O ? Math.round(1e4 * (O.baselinePennies - O.pennies) / O.baselinePennies) / 100 : 0, I = O ? Math.round(1e4 * (O.coins - O.baselineCoins) / O.coins) / 100 : 0, k = O ? O.baselinePennies !== O.pennies ? `${_}_percent_price` : O.baselineCoins !== O.coins ? `${I}_percent_bonus` : void 0 : void 0, C = b === i.GoldPurchaseType.Premium ? r.Bb : O ? O.pennies : void 0;
 					return {
 						...d.n(e),
 						comment: n ? d.h(e, n) : null,
@@ -3829,4 +3829,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation~Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~r~4c415e24.5e5cf5621f8c3e010263.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation~Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~r~4c415e24.33d4377c42dfd1df38d8.js.map

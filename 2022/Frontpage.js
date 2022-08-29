@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Frontpage.ed810dff07741ceae3ea.js
-// Retrieved at 8/22/2022, 4:50:10 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Frontpage.506cb85364644f30e286.js
+// Retrieved at 8/29/2022, 11:20:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Frontpage"], {
 		"./node_modules/intersection-observer/intersection-observer.js": function(e, t) {
@@ -856,7 +856,7 @@
 						p = c.listings.postOrder.api.pending[d],
 						b = Object(ce.b)(c),
 						h = $.C in e.queryParams && e.queryParams[$.C].toUpperCase() || "",
-						g = h in l.jc && l.jc[h],
+						g = h in l.lc && l.lc[h],
 						f = H.e();
 					if (p || u && !m && !t) return void(u && (a(z.m({
 						title: b ? Object(G.a)(c, f) : f
@@ -913,7 +913,7 @@
 						m = Object(ue.a)(Y.b, d, u),
 						p = i.listings.postOrder.loadMore[m],
 						b = u[$.C] ? u[$.C].toUpperCase() : "",
-						h = b in l.jc && l.jc[b];
+						h = b in l.lc && l.lc[b];
 					if (p) {
 						const e = i.listings.postOrder.api.pending[m],
 							s = i.listings.postOrder.fetchedTokens,
@@ -976,7 +976,7 @@
 						c = s.platform.currentPage ? s.platform.currentPage.queryParams : {},
 						i = Object(ue.a)(Y.b, r, c),
 						o = c[$.C] ? c[$.C].toUpperCase() : "",
-						d = o in l.jc && l.jc[o],
+						d = o in l.lc && l.lc[o],
 						u = Object(ae.a)(s),
 						m = Object(ae.b)(u);
 					await t(Pe(i, {
@@ -2379,14 +2379,14 @@
 				Y = a("./src/reddit/constants/headers.ts");
 			const $ = e => Object(J.a)(Object(X.a)(e, [Y.a]), {
 				endpoint: `${e.apiUrl}/api/multi/user/CommunityAdoptionBot/m/adoption_week/`,
-				method: V.kb.GET,
+				method: V.mb.GET,
 				type: "json"
 			});
 			var ee = a("./src/reddit/components/SubredditAdoptionWidget/index.m.less"),
 				te = a.n(ee);
 			const {
 				fbt: ae
-			} = a("./node_modules/fbt/lib/FbtPublic.js"), se = 3, ne = 30 * V.lb, re = "SubredditAdoption";
+			} = a("./node_modules/fbt/lib/FbtPublic.js"), se = 3, ne = 30 * V.nb, re = "SubredditAdoption";
 			class ce extends o.a.Component {
 				constructor() {
 					super(...arguments), this.state = {
@@ -6678,7 +6678,7 @@
 					sort: o
 				} = t;
 				const l = D.C in i && i[D.C].toUpperCase(),
-					d = "string" == typeof l && l in de.jc ? de.jc[l] : de.kc,
+					d = "string" == typeof l && l in de.lc ? de.lc[l] : de.mc,
 					u = Object(h.a)(pe.b, o, i),
 					m = e,
 					p = [];
@@ -7052,7 +7052,7 @@
 					} = t;
 					return a
 				}, (e, t, a, s, c, i) => {
-					return ![r.R, "r/popular"].includes(a) && (i !== n.X.AWARDED && (!!e && (!c.isPermanentlyCanceled && (!t && (!!s && s.show_discovery_unit)))))
+					return ![r.R, "r/popular"].includes(a) && (i !== n.Z.AWARDED && (!!e && (!c.isPermanentlyCanceled && (!t && (!!s && s.show_discovery_unit)))))
 				}),
 				p = Object(s.a)((e, t) => {
 					let {
@@ -7587,4 +7587,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Frontpage.ed810dff07741ceae3ea.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Frontpage.506cb85364644f30e286.js.map

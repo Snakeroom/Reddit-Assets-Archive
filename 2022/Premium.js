@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Premium.77c75caa16f4f8e8ee25.js
-// Retrieved at 8/18/2022, 6:00:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Premium.5fc29245ea942da7207d.js
+// Retrieved at 8/29/2022, 11:20:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Premium"], {
 		"./src/reddit/endpoints/gold/productCatalog/old.index.ts": function(e, r, t) {
@@ -85,7 +85,7 @@
 						h = `${t.apiUrl}/api/v2/gold/stripe/buy_coins`,
 						b = Object(c.a)(h);
 					return Object(a.a)(Object(s.a)(t, [o.a]), {
-						method: n.kb.POST,
+						method: n.mb.POST,
 						endpoint: b,
 						data: g
 					}).then(p)
@@ -121,7 +121,7 @@
 						correlation_id: d
 					}, v = `${t.apiUrl}/api/v2/gold/stripe/buy_coins_and_gild`, j = u ? v : Object(c.a)(v);
 					return Object(a.a)(Object(s.a)(t, [o.a]), {
-						method: n.kb.POST,
+						method: n.mb.POST,
 						endpoint: j,
 						data: O
 					}).then(p)
@@ -153,7 +153,7 @@
 						correlation_id: t
 					}, _ = `${r.apiUrl}/api/v2/gold/stripe/buy_award`, O = i ? _ : Object(c.a)(_);
 					return Object(a.a)(Object(s.a)(r, [o.a]), {
-						method: n.kb.POST,
+						method: n.mb.POST,
 						endpoint: O,
 						data: y
 					}).then(p)
@@ -172,7 +172,7 @@
 						l = `${r.apiUrl}/api/v2/gold/stripe/buy_premium_subscription`,
 						f = Object(c.a)(l);
 					return Object(a.a)(Object(s.a)(r, [o.a]), {
-						method: n.kb.POST,
+						method: n.mb.POST,
 						endpoint: f,
 						data: u
 					}).then(p)
@@ -247,9 +247,9 @@
 			})), t.d(r, "g", (function() {
 				return x
 			})), t.d(r, "i", (function() {
-				return k
-			})), t.d(r, "k", (function() {
 				return C
+			})), t.d(r, "k", (function() {
+				return k
 			})), t.d(r, "j", (function() {
 				return I
 			})), t.d(r, "m", (function() {
@@ -290,8 +290,8 @@
 				v = e => e.features.goldPurchase.payment.useSavedCard,
 				j = e => e.features.goldPurchase.payment.cardValidation.cardCvc,
 				x = e => e.features.goldPurchase.payment.cardValidation.cardExpiry,
-				k = e => e.features.goldPurchase.payment.cardValidation.cardNumber,
-				C = e => e.features.goldPurchase.payment.cardValidation.nameOnCard,
+				C = e => e.features.goldPurchase.payment.cardValidation.cardNumber,
+				k = e => e.features.goldPurchase.payment.cardValidation.nameOnCard,
 				I = e => e.features.goldPurchase.payment.stripeToken.errorMessage,
 				w = e => e.features.goldPurchase.payment.stripeToken.pending,
 				S = e => e.features.goldPurchase.payment.paypal.passthrough,
@@ -308,4 +308,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Premium.77c75caa16f4f8e8ee25.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Premium.5fc29245ea942da7207d.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit~ReportFlow~Subreddit.f1b90d9231a7d4ae6cc4.js
-// Retrieved at 8/22/2022, 4:50:10 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit~ReportFlow~Subreddit.3aea4a1ee499b2202eef.js
+// Retrieved at 8/29/2022, 11:20:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~ModListing~Reddit~ReportFlow~Subreddit"], {
 		"./src/lib/assertNever.ts": function(t, e, i) {
@@ -552,16 +552,16 @@
 				[r.k]: () => n.fbt._("you're not allowed to do that", null, {
 					hk: "1jGKQw"
 				}),
-				[r.M]: () => n.fbt._("GIF size must be less than {max file size}MB", [n.fbt._param("max file size", Math.floor(r.ab / r.ib).toString())], {
+				[r.M]: () => n.fbt._("GIF size must be less than {max file size}MB", [n.fbt._param("max file size", Math.floor(r.cb / r.kb).toString())], {
 					hk: "1zzsdM"
 				}),
-				[r.S]: () => n.fbt._("Image size must be less than {max file size}MB", [n.fbt._param("max file size", Math.floor(r.cb / r.ib).toString())], {
+				[r.U]: () => n.fbt._("Image size must be less than {max file size}MB", [n.fbt._param("max file size", Math.floor(r.eb / r.kb).toString())], {
 					hk: "3H6bF8"
 				}),
-				[r.U]: () => n.fbt._("Sorry, we accept only images (.png, .jpeg, .gif) and videos (.mp4, .mov)", null, {
+				[r.W]: () => n.fbt._("Sorry, we accept only images (.png, .jpeg, .gif) and videos (.mp4, .mov)", null, {
 					hk: "1hw868"
 				}),
-				[r.qc]: () => n.fbt._("Video size must be less than {max file size}GB", [n.fbt._param("max file size", (r.gb / r.ib / 1024).toFixed(1))], {
+				[r.sc]: () => n.fbt._("Video size must be less than {max file size}GB", [n.fbt._param("max file size", (r.ib / r.kb / 1024).toFixed(1))], {
 					hk: "4FkABU"
 				})
 			}
@@ -1251,7 +1251,7 @@
 				u = i("./src/reddit/constants/headers.ts");
 			const _ = async (t, e, i) => Object(a.a)(Object(d.a)(t, [u.a]), {
 				endpoint: `${t.apiUrl}/r/${e}/api/widgets`,
-				method: c.kb.GET,
+				method: c.mb.GET,
 				type: "json",
 				data: {
 					progressive_images: i
@@ -1292,7 +1292,7 @@
 					} catch (v) {}
 					const j = await (async (t, e, i) => Object(a.a)(Object(d.a)(t, [u.a]), {
 						endpoint: `${t.apiUrl}/r/${e}/api/widget`,
-						method: c.kb.POST,
+						method: c.mb.POST,
 						type: "json",
 						data: i
 					}))(m(), D, w);
@@ -1341,7 +1341,7 @@
 					} catch (L) {}
 					const R = await (async (t, e, i) => Object(a.a)(Object(d.a)(t, [u.a]), {
 						endpoint: `${t.apiUrl}/r/${e}/api/widget/${i.id}`,
-						method: c.kb.PUT,
+						method: c.mb.PUT,
 						type: "json",
 						data: i
 					}))(D(), T, j);
@@ -1418,7 +1418,7 @@
 						}).name,
 						p = await (async (t, e, i) => Object(a.a)(Object(d.a)(t, [u.a]), {
 							endpoint: `${t.apiUrl}/r/${e}/api/widget/${i.id}`,
-							method: c.kb.DELETE,
+							method: c.mb.DELETE,
 							type: "json"
 						}))(s(), f, e);
 					p.ok ? (n(Object(o.e)(i)), n(k({
@@ -1434,7 +1434,7 @@
 					}).name;
 					(await (async (t, e, i) => Object(a.a)(Object(d.a)(t, [u.a]), {
 						endpoint: `${t.apiUrl}/r/${e}/api/widget_order/sidebar`,
-						method: c.kb.PATCH,
+						method: c.mb.PATCH,
 						type: "json",
 						data: i
 					}))(o(), l, e)).ok && i(v({
@@ -1454,7 +1454,7 @@
 						t(Object(l.k)(e));
 						const _ = await (async (t, e, i, n) => Object(a.a)(Object(d.a)(t, [u.a]), {
 							endpoint: `${t.apiUrl}/r/${e}/api/widget_image_upload_s3`,
-							method: c.kb.POST,
+							method: c.mb.POST,
 							data: {
 								filepath: i,
 								mimetype: n
@@ -2064,7 +2064,7 @@
 			var n = i("./src/lib/constants/index.ts"),
 				r = i("./src/lib/listingSort/index.ts");
 			e.a = (t, e) => {
-				if (t) return Object(r.a)(t) ? e || n.kc : void 0
+				if (t) return Object(r.a)(t) ? e || n.mc : void 0
 			}
 		},
 		"./src/reddit/helpers/graphql/normalizePostFlairStyleTemplateFromGql/index.ts": function(t, e, i) {
@@ -2904,7 +2904,7 @@
 				},
 				g = t => t.creations.subredditRec.isInputChanged,
 				D = t => {
-					if (!(t.creations.formData.submissionType === n.Xb.POST)) return "";
+					if (!(t.creations.formData.submissionType === n.Zb.POST)) return "";
 					const e = t.creations.formState.editorMode === s.i.RICH_TEXT || null === t.creations.formState.editorMode,
 						i = t.creations.formState.editorMode === s.i.MARKDOWN;
 					if (e) {
@@ -2914,14 +2914,14 @@
 					return i && t.creations.formData.body.markdown || ""
 				},
 				I = t => {
-					return t.creations.formData.submissionType === n.Xb.LINK_ONLY && t.creations.formData.body.link || ""
+					return t.creations.formData.submissionType === n.Zb.LINK_ONLY && t.creations.formData.body.link || ""
 				},
 				O = t => p(t) && (!E(t) || E(t) && g(t)) && (t => {
 					const e = t.creations.formData.title,
 						i = I(t),
 						n = D(t);
 					return !!(e || i || n)
-				})(t) && (t.creations.formData.submissionType === n.Xb.POST || t.creations.formData.submissionType === n.Xb.LINK_ONLY || t.creations.formData.submissionType === n.Xb.CROSSPOST)
+				})(t) && (t.creations.formData.submissionType === n.Zb.POST || t.creations.formData.submissionType === n.Zb.LINK_ONLY || t.creations.formData.submissionType === n.Zb.CROSSPOST)
 		},
 		"./src/reddit/selectors/experiments/topPosts.ts": function(t, e, i) {
 			"use strict";
@@ -2979,4 +2979,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit~ReportFlow~Subreddit.f1b90d9231a7d4ae6cc4.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit~ReportFlow~Subreddit.3aea4a1ee499b2202eef.js.map

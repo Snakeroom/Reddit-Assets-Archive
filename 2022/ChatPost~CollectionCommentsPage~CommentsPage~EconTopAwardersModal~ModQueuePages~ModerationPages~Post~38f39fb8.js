@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ChatPost~CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~Post~38f39fb8.b94dfbc469277bfad9b6.js
-// Retrieved at 8/22/2022, 4:50:10 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ChatPost~CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~Post~38f39fb8.0d126a169fd21d820522.js
+// Retrieved at 8/29/2022, 11:20:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ChatPost~CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~Post~38f39fb8"], {
 		"./src/reddit/actions/economics/subredditPremium/actionCreators.ts": function(e, t, r) {
@@ -2474,7 +2474,7 @@
 						Ae = Object(n.e)(xe),
 						je = Object(p.a)(le),
 						Ee = Object(p.a)(le),
-						ye = g && g.meta && g.meta.name === d.Ob.COMMENTS,
+						ye = g && g.meta && g.meta.name === d.Qb.COMMENTS,
 						Ie = Object(m.a)(O),
 						Ce = Ae === $.b.Left,
 						Te = O.authorIsContractor && !!F && F.type === ee.f.EmployeesOnly,
@@ -2621,13 +2621,13 @@
 							color: me(e)
 						}
 					}, o.a.createElement(T.d, {
-						seconds: O.created / d.Tb
+						seconds: O.created / d.Vb
 					})), o.a.createElement(D, null, o.a.createElement(_.a, {
 						arrowProps: je.arrowProps,
 						popperProps: je.popperProps,
 						visible: je.visible
 					}, o.a.createElement(T.b, {
-						seconds: O.created / d.Tb
+						seconds: O.created / d.Vb
 					})))), Object(v.b)(O) && o.a.createElement(x, {
 						post: O
 					}))
@@ -2827,7 +2827,7 @@
 						mimetype: n
 					};
 					return Object(o.a)(Object(a.a)(e, [g.a]), {
-						method: s.kb.POST,
+						method: s.mb.POST,
 						endpoint: `${e.apiUrl}/api/v1/community_awards/award_asset_upload_s3`,
 						data: i
 					})
@@ -2951,7 +2951,7 @@
 						raw_json: 1
 					};
 					return Object(o.a)(Object(a.a)(e, [g.a]), {
-						method: s.kb.POST,
+						method: s.mb.POST,
 						endpoint: `${e.apiUrl}/api/report_award`,
 						data: n
 					}).then(e => e.ok ? {
@@ -3745,4 +3745,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatPost~CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~Post~38f39fb8.b94dfbc469277bfad9b6.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatPost~CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~Post~38f39fb8.0d126a169fd21d820522.js.map

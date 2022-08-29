@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/EconHelperActions.6c6a0b6b547a68ecde44.js
-// Retrieved at 8/18/2022, 6:00:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/EconHelperActions.e470a1551698bbe5aaa7.js
+// Retrieved at 8/29/2022, 11:20:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["EconHelperActions"], {
 		"./node_modules/lodash/_LazyWrapper.js": function(e, t, r) {
@@ -660,7 +660,7 @@
 						const t = `https://${o.pointsDocsBaseUrl}v1.json?web`,
 							r = await Object(s.b)({
 								endpoint: t,
-								method: n.kb.GET
+								method: n.mb.GET
 							});
 						r.ok && r.body && e(l(r.body))
 					}
@@ -1342,7 +1342,7 @@
 			function d(e, t) {
 				return Object(o.a)(e, {
 					endpoint: `${n.a.metaUrl}/communities/${t.subredditId}/me`,
-					method: s.kb.GET
+					method: s.mb.GET
 				})
 			}
 		},
@@ -1413,7 +1413,7 @@
 			function d(e, t) {
 				return Object(o.a)(e, {
 					endpoint: `${n.a.metaUrl}/wallets/${t.subredditId}/me`,
-					method: s.kb.GET
+					method: s.mb.GET
 				}).then(e => {
 					if (e.ok) {
 						const r = e.body,
@@ -1435,7 +1435,7 @@
 						"X-HTTP-Method-Override": "GET"
 					},
 					endpoint: `${n.a.metaUrl}/wallets/${t.subredditId}`,
-					method: s.kb.POST,
+					method: s.mb.POST,
 					data: t.userIds
 				}).then(e => e.ok ? {
 					...e,
@@ -1908,9 +1908,9 @@
 			})), r.d(t, "y", (function() {
 				return L
 			})), r.d(t, "u", (function() {
-				return k
-			})), r.d(t, "v", (function() {
 				return F
+			})), r.d(t, "v", (function() {
+				return k
 			})), r.d(t, "b", (function() {
 				return G
 			})), r.d(t, "w", (function() {
@@ -2116,11 +2116,11 @@
 					const t = e.economics.paymentSystems;
 					return !!(t.status === u.a.Fetched && t.data && t.data.tips && t.data.tips.usdr && t.data.tips.usdr.allowed)
 				},
-				k = (e, t) => {
+				F = (e, t) => {
 					const r = e.user.ownedBadges[t] || {};
 					return !!Object.keys(r).length
 				},
-				F = e => {
+				k = e => {
 					const t = e.economics.paymentSystems;
 					return t.status === u.a.Fetched && !!t.data && !!t.data.stripe && !!t.data.stripe.stripeAccountId
 				},
@@ -2212,4 +2212,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EconHelperActions.6c6a0b6b547a68ecde44.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EconHelperActions.e470a1551698bbe5aaa7.js.map

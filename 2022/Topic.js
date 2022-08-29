@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Topic.06287070be46ecd0fa9b.js
-// Retrieved at 8/22/2022, 4:50:10 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Topic.ece9fbf524d9db23b150.js
+// Retrieved at 8/29/2022, 11:20:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Topic"], {
 		"./node_modules/intersection-observer/intersection-observer.js": function(e, t) {
@@ -2190,8 +2190,8 @@
 				J = s.n(z);
 			const {
 				fbt: U
-			} = s("./node_modules/fbt/lib/FbtPublic.js"), Y = 5;
-			class q extends r.a.Component {
+			} = s("./node_modules/fbt/lib/FbtPublic.js"), q = 5;
+			class Y extends r.a.Component {
 				constructor() {
 					super(...arguments), this.onClick = () => {
 						const {
@@ -2207,7 +2207,7 @@
 						relatedTopics: t
 					} = this.props.relationship;
 					return r.a.createElement(y, {
-						limit: Y,
+						limit: q,
 						title: e,
 						topics: t
 					}, this.renderSeeMoreButton())
@@ -2217,7 +2217,7 @@
 						namePlural: e,
 						relatedTopics: t
 					} = this.props.relationship;
-					return t.length < Y ? null : r.a.createElement(L.a, {
+					return t.length < q ? null : r.a.createElement(L.a, {
 						onClick: this.onClick,
 						to: "#"
 					}, r.a.createElement(I.r, {
@@ -2231,7 +2231,7 @@
 					})))
 				}
 			}
-			var K = q,
+			var K = Y,
 				Q = s("./src/lib/prettyPrintNumber/index.ts"),
 				Z = s("./src/reddit/components/Flair/index.tsx"),
 				X = s("./src/reddit/components/SubredditIcon/index.tsx"),
@@ -2407,7 +2407,7 @@
 				ke = s.n(Oe);
 			const {
 				fbt: we
-			} = s("./node_modules/fbt/lib/FbtPublic.js"), Ne = Object(k.u)(), je = (e, t) => t.match.params.sort || a.Y, Le = e => {
+			} = s("./node_modules/fbt/lib/FbtPublic.js"), Ne = Object(k.u)(), je = (e, t) => t.match.params.sort || a.ab, Le = e => {
 				const t = [];
 				return e ? (e.hasPosts && t.push(V.Posts), e.hasSubreddits && t.push(V.Communities), e.childRelationships.length && t.push(V.RelatedTopics), t) : t
 			}, Ie = Object(d.b)(() => Object(i.a)((e, t) => Object(Ce.d)(e, t.match.params.topicSlug), (e, t) => Object(Ce.e)(e, {
@@ -2732,4 +2732,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Topic.06287070be46ecd0fa9b.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Topic.ece9fbf524d9db23b150.js.map

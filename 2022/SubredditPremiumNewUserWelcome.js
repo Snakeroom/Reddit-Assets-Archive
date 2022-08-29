@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditPremiumNewUserWelcome.c039e5f985b4267daa9d.js
-// Retrieved at 8/18/2022, 6:00:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditPremiumNewUserWelcome.1a1bcdeeb971fa01438b.js
+// Retrieved at 8/29/2022, 11:20:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditPremiumNewUserWelcome"], {
 		"./node_modules/lodash/flattenDeep.js": function(e, t, n) {
@@ -154,7 +154,7 @@
 						const t = `https://${o.pointsDocsBaseUrl}v1.json?web`,
 							n = await Object(s.b)({
 								endpoint: t,
-								method: r.kb.GET
+								method: r.mb.GET
 							});
 						n.ok && n.body && e(l(n.body))
 					}
@@ -761,8 +761,8 @@
 			var x = n("./node_modules/react-router-dom/esm/react-router-dom.js"),
 				M = n("./src/reddit/helpers/economics/membershipPage.ts"),
 				B = n("./src/reddit/components/Economics/SubredditPremium/constants.ts"),
-				k = n("./src/reddit/components/Economics/SubredditPremium/NewUserWelcome/Message/index.m.less"),
-				T = n.n(k);
+				T = n("./src/reddit/components/Economics/SubredditPremium/NewUserWelcome/Message/index.m.less"),
+				k = n.n(T);
 			const D = Object(c.c)({
 				meta: (e, t) => {
 					let {
@@ -773,22 +773,22 @@
 			});
 			var R = Object(l.c)(Object(o.b)(D)((function(e) {
 					return s.a.createElement("div", {
-						className: Object(a.a)(T.a.container, e.className)
+						className: Object(a.a)(k.a.container, e.className)
 					}, y.fbt._("This community is a part of an exclusive experiment run by Reddit Admins.", null, {
 						hk: "1lZWqG"
 					}), " ", y.fbt._("Hundreds of followers have paid for a", null, {
 						hk: "b6O0n"
 					}), s.a.createElement("div", {
-						className: T.a.branding
+						className: k.a.branding
 					}, s.a.createElement("img", {
-						className: T.a.crown,
+						className: k.a.crown,
 						src: B.a
 					}), e.meta.memberAlt), y.fbt._("subscription.", null, {
 						hk: "2NkoEp"
 					}), " ", y.fbt._("They benefit by getting unique features that Reddit doesn't provide in any other community.", null, {
 						hk: "xffSH"
 					}), " ", s.a.createElement(x.a, {
-						className: T.a.link,
+						className: k.a.link,
 						to: Object(M.a)(e.subreddit.name, e.correlationId),
 						onClick: () => e.sendEvent(t => ({
 							source: "meta",
@@ -1399,7 +1399,7 @@
 			function c(e, t) {
 				return Object(o.a)(e, {
 					endpoint: `${r.a.metaUrl}/communities/${t.subredditId}/me`,
-					method: s.kb.GET
+					method: s.mb.GET
 				})
 			}
 		},
@@ -2101,7 +2101,7 @@
 			})), n.d(t, "p", (function() {
 				return M
 			})), n.d(t, "k", (function() {
-				return T
+				return k
 			})), n.d(t, "r", (function() {
 				return R
 			})), n.d(t, "y", (function() {
@@ -2279,7 +2279,7 @@
 			! function(e) {
 				e[e.Fetched = 0] = "Fetched", e[e.Fetching = 1] = "Fetching", e[e.NotFetched = 2] = "NotFetched"
 			}(B || (B = {}));
-			const k = {
+			const T = {
 					prices: {},
 					member: "Supporter",
 					memberPlural: "Supporters",
@@ -2288,11 +2288,11 @@
 					membership: "Membership",
 					membershipAlt: "Supporter Membership"
 				},
-				T = (e, t) => Object.values(e.products.models).filter(e => e.type === a.a.Membership && t && e.subredditId === t),
+				k = (e, t) => Object.values(e.products.models).filter(e => e.type === a.a.Membership && t && e.subredditId === t),
 				D = (e, t) => {
 					if (!t) return {};
-					const n = k.prices;
-					T(e, t).forEach(e => {
+					const n = T.prices;
+					k(e, t).forEach(e => {
 						e.price && e.currency && (n[e.currency] = e.price)
 					});
 					const r = h(e, t);
@@ -2300,15 +2300,15 @@
 				},
 				R = (e, t) => {
 					var n, r, s, o;
-					const c = (null === (o = null === (s = null === (r = null === (n = e.features) || void 0 === n ? void 0 : n.crypto) || void 0 === r ? void 0 : r.points) || void 0 === s ? void 0 : s[t || ""]) || void 0 === o ? void 0 : o.nomenclature) || k;
+					const c = (null === (o = null === (s = null === (r = null === (n = e.features) || void 0 === n ? void 0 : n.crypto) || void 0 === r ? void 0 : r.points) || void 0 === s ? void 0 : s[t || ""]) || void 0 === o ? void 0 : o.nomenclature) || T;
 					return {
 						prices: D(e, t),
-						member: c.member || k.member,
-						memberPlural: c.memberPlural || k.memberPlural,
-						memberAlt: c.memberAlt || k.memberAlt,
-						memberAltPlural: c.memberAltPlural || k.memberAltPlural,
-						membership: c.membership || k.membership,
-						membershipAlt: c.membershipAlt || k.membershipAlt
+						member: c.member || T.member,
+						memberPlural: c.memberPlural || T.memberPlural,
+						memberAlt: c.memberAlt || T.memberAlt,
+						memberAltPlural: c.memberAltPlural || T.memberAltPlural,
+						membership: c.membership || T.membership,
+						membershipAlt: c.membershipAlt || T.membershipAlt
 					}
 				},
 				U = e => {
@@ -2411,4 +2411,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditPremiumNewUserWelcome.c039e5f985b4267daa9d.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditPremiumNewUserWelcome.1a1bcdeeb971fa01438b.js.map

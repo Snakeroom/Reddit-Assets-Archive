@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-InFeedPostCreation.0bdd5c955b32a37bc82e.js
-// Retrieved at 8/22/2022, 4:50:10 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-InFeedPostCreation.97550a409855e35958f7.js
+// Retrieved at 8/29/2022, 11:20:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-InFeedPostCreation"], {
 		"./src/reddit/components/InFeedPostCreation/index.m.less": function(e, t, n) {
@@ -48,9 +48,9 @@
 			}(P || (P = {}));
 			const k = e => {
 					switch (e) {
-						case d.Xb.MEDIA:
+						case d.Zb.MEDIA:
 							return "?media=true";
-						case d.Xb.LINK_ONLY:
+						case d.Zb.LINK_ONLY:
 							return "?url";
 						default:
 							return ""
@@ -58,9 +58,9 @@
 				},
 				h = e => {
 					switch (e) {
-						case d.Xb.MEDIA:
+						case d.Zb.MEDIA:
 							return "media_post";
-						case d.Xb.LINK_ONLY:
+						case d.Zb.LINK_ONLY:
 							return "link_post";
 						default:
 							return "create_post"
@@ -126,7 +126,7 @@
 						}))
 					},
 					U = () => {
-						E(d.Xb.POST), c(b)
+						E(d.Zb.POST), c(b)
 					},
 					N = n && s,
 					M = t ? o.a.createElement(x.default, {
@@ -155,10 +155,10 @@
 					kind: I.b.InternalLink,
 					size: I.d.M,
 					id: P.Media,
-					onClick: () => E(d.Xb.MEDIA),
+					onClick: () => E(d.Zb.MEDIA),
 					onMouseEnter: () => m(P.Media),
 					onMouseLeave: () => m(P.Media),
-					to: b + k(d.Xb.MEDIA),
+					to: b + k(d.Zb.MEDIA),
 					Icon: Object(_.b)("image_post"),
 					isSquare: !0
 				}, o.a.createElement(p.c, {
@@ -172,10 +172,10 @@
 					size: I.d.M,
 					"aria-label": v(),
 					id: P.Link,
-					onClick: () => E(d.Xb.LINK_ONLY),
+					onClick: () => E(d.Zb.LINK_ONLY),
 					onMouseEnter: () => m(P.Link),
 					onMouseLeave: () => m(P.Link),
-					to: b + k(d.Xb.LINK_ONLY),
+					to: b + k(d.Zb.LINK_ONLY),
 					Icon: Object(_.b)("link_post"),
 					isSquare: !0
 				}, o.a.createElement(p.c, {
@@ -281,4 +281,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-InFeedPostCreation.0bdd5c955b32a37bc82e.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-InFeedPostCreation.97550a409855e35958f7.js.map
