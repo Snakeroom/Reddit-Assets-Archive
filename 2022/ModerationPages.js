@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModerationPages.54942c7d0db9005d4b9a.js
-// Retrieved at 8/29/2022, 9:30:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModerationPages.af0e58d28e69549c2c71.js
+// Retrieved at 8/29/2022, 10:00:17 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModerationPages", "CollectionCommentsPage~CommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~RpanListingUnit~S~5809214e", "CommentsPage~Governance~Reddit~ReportFlow~Subreddit~reddit-components-BlankPost~reddit-components-Cl~5351df81", "PostCreation~Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~r~4c415e24", "Governance~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compo~bd4baca2", "Governance~ModListing~Reddit~ReportFlow~Subreddit", "Governance~ModListing~Reddit~Subreddit", "Governance~Reddit~SubredditForkingCTA", "AuthorHovercard~Reddit"], {
 		"./src/chat/controls/Svg/index.m.less": function(e, t, n) {
@@ -17262,7 +17262,7 @@
 						wikiEditKarma: "number" == typeof(null == D ? void 0 : D.wikiEditKarma) ? null == D ? void 0 : D.wikiEditKarma : void 0
 					}
 				},
-				_ = [h.b.Off, h.b.Lenient, h.b.Moderate, h.b.Strict],
+				_ = [h.b.Unknown, h.b.Off, h.b.Lenient, h.b.Moderate, h.b.Strict],
 				v = e => {
 					if (e) return (null == _ ? void 0 : _[e]) || h.b.Unknown
 				},
@@ -75448,4 +75448,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.54942c7d0db9005d4b9a.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.af0e58d28e69549c2c71.js.map
