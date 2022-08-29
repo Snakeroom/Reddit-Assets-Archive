@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/MultiredditAddSubredditModal.a6b499a5754f4d4bf05e.js
-// Retrieved at 8/29/2022, 11:20:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/MultiredditAddSubredditModal.c3d575148969b6cd25da.js
+// Retrieved at 8/29/2022, 4:40:17 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["MultiredditAddSubredditModal"], {
 		"./node_modules/lodash/without.js": function(e, t, r) {
@@ -847,7 +847,7 @@
 					className: R.a.details
 				}, t ? I._("Community already added to this feed", null, {
 					hk: "3dMmTS"
-				}) : I._({
+				}) : i.subredditCount && I._({
 					"*": "{communities} communities",
 					_1: "1 community"
 				}, [I._plural(i.subredditCount, "communities")], {
@@ -1479,4 +1479,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/MultiredditAddSubredditModal.a6b499a5754f4d4bf05e.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/MultiredditAddSubredditModal.c3d575148969b6cd25da.js.map
