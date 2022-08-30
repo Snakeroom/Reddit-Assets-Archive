@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditWiki~reddit-components-Wiki-ModHubWikiManagement.1e080ea3b10cfe22d579.js
-// Retrieved at 8/29/2022, 11:20:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditWiki~reddit-components-Wiki-ModHubWikiManagement.75d3fb9082f5af5f0f32.js
+// Retrieved at 8/30/2022, 1:30:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditWiki~reddit-components-Wiki-ModHubWikiManagement"], {
 		"./node_modules/autosize/dist/autosize.js": function(e, t, i) {
@@ -1884,20 +1884,20 @@
 						displayText: n.fbt._("View page history", null, {
 							hk: "fy9yY"
 						}),
-						href: `${d}/revisions/${r}`
+						href: `${d}/revisions/${r}/`
 					}), o && a.a.createElement(N.b, {
 						className: R.a.row,
 						displayText: n.fbt._("View page source", null, {
 							hk: "1d5vg5"
 						}),
-						href: `${d}/${r}?${_.I}`,
+						href: `${d}/${r}/?${_.I}`,
 						onClick: this.onViewPageSourceClick
 					}), i && a.a.createElement(N.b, {
 						className: R.a.row,
 						displayText: n.fbt._("View in community", null, {
 							hk: "mSFod"
 						}),
-						href: `/r/${s}/wiki/${r}`
+						href: `/r/${s}/wiki/${r}/`
 					}), a.a.createElement(N.b, {
 						className: R.a.row,
 						displayText: n.fbt._("Copy URL", null, {
@@ -2184,4 +2184,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditWiki~reddit-components-Wiki-ModHubWikiManagement.1e080ea3b10cfe22d579.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditWiki~reddit-components-Wiki-ModHubWikiManagement.75d3fb9082f5af5f0f32.js.map
