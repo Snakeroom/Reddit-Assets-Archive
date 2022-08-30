@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-ConvertToCoinsModal.f1861ab2c5fa825030b8.js
-// Retrieved at 8/29/2022, 7:20:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-ConvertToCoinsModal.ed4a975df829b0e6cf40.js
+// Retrieved at 8/30/2022, 2:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Governance-TransactionModals-ConvertToCoinsModal"], {
 		"./src/reddit/actions/gold/econPurchase.ts": function(e, t, n) {
@@ -1193,8 +1193,8 @@
 				})
 			}
 			var R = n("./src/reddit/controls/FormFields/index.tsx"),
-				H = n("./src/reddit/controls/LoadingIcon/index.tsx"),
-				Q = n("./src/reddit/icons/svgs/CoinV2/index.tsx"),
+				Q = n("./src/reddit/controls/LoadingIcon/index.tsx"),
+				H = n("./src/reddit/icons/svgs/CoinV2/index.tsx"),
 				U = n("./src/reddit/components/Governance/Token/index.tsx"),
 				q = n("./src/reddit/components/Governance/TransactionModals/Common/CurrentBalance.tsx"),
 				W = n("./src/reddit/components/Governance/TransactionModals/ConvertToCoinsModal/ApprovalOverview.m.less"),
@@ -1261,9 +1261,9 @@
 					strokeLinejoin: "round"
 				}))), a.a.createElement("div", {
 					className: J.a.coinsAmount
-				}, a.a.createElement(Q.a, {
+				}, a.a.createElement(H.a, {
 					className: J.a.coinIcon
-				}), !n && s ? a.a.createElement(H.a, {
+				}), !n && s ? a.a.createElement(Q.a, {
 					className: J.a.loadingIcon,
 					sizePx: 5
 				}) : d, a.a.createElement("div", {
@@ -1316,30 +1316,30 @@
 					g = Object(o.a)(),
 					y = Object(S.a)(),
 					[x, B] = Object(r.useState)(""),
-					[R, H] = Object(r.useState)(0);
+					[R, Q] = Object(r.useState)(0);
 				Object(r.useEffect)(() => {
 					if (h && !x) {
 						const e = E.a.minimum(new E.a(h).multipliedBy(K), p).toFixed(0);
-						B(e), H(new E.a(e).dividedBy(h).toNumber())
+						B(e), Q(new E.a(e).dividedBy(h).toNumber())
 					}
 				}, [h]);
-				const Q = s.displayConversion,
+				const H = s.displayConversion,
 					U = e => {
-						y(Object(A.c)("coins", u, new E.a(x).dividedBy(Q).toFixed(), e))
+						y(Object(A.c)("coins", u, new E.a(x).dividedBy(H).toFixed(), e))
 					},
 					q = () => g(Object(N.f)());
 				return a.a.createElement(F.a, {
 					approvalOverview: a.a.createElement(Z, {
 						pointsAmount: x,
 						onChange: (e, t) => {
-							B(e), H(t)
+							B(e), Q(t)
 						},
 						pointsBalance: p,
 						pointsName: s.name,
 						price: h,
 						pricePending: !h && b,
 						subreddit: c,
-						tokenConversion: Q
+						tokenConversion: H
 					}),
 					approvalDetails: a.a.createElement(V, {
 						contractAddress: l
@@ -1365,7 +1365,7 @@
 								subredditId: r.id
 							}))
 						}(g, s, e.hash, c, v).then(() => {
-							y(Object(A.d)("coins", u, new E.a(x).dividedBy(Q).toFixed())), g(function() {
+							y(Object(A.d)("coins", u, new E.a(x).dividedBy(H).toFixed())), g(function() {
 								const e = Object(P.e)(d.fbt._("Your Coins are ready!", null, {
 									hk: "7ewJ6"
 								}), T.b.SuccessCommunityGreen);
@@ -2262,14 +2262,14 @@
 			const c = e => {
 					return Object(a.c)(e, {
 						experimentEligibilitySelector: a.a,
-						experimentName: r.De
-					}) === r.Rd
+						experimentName: r.Be
+					}) === r.Qd
 				},
 				s = e => {
 					return Object(a.c)(e, {
 						experimentEligibilitySelector: a.a,
-						experimentName: r.Ae
-					}) === r.Rd
+						experimentName: r.ye
+					}) === r.Qd
 				}
 		},
 		"./src/reddit/selectors/gold/econPurchase.ts": function(e, t, n) {
@@ -2455,4 +2455,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-ConvertToCoinsModal.f1861ab2c5fa825030b8.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-ConvertToCoinsModal.ed4a975df829b0e6cf40.js.map

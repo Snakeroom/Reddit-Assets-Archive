@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditLeaderboard.6216f8d4cea99e38adba.js
-// Retrieved at 8/29/2022, 7:20:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditLeaderboard.5182efc7b6bbec899dab.js
+// Retrieved at 8/30/2022, 2:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditLeaderboard"], {
 		"./node_modules/lodash/times.js": function(e, t, n) {
@@ -73,7 +73,7 @@
 									icon: e.category_icon,
 									id: e.category_id,
 									name: e.category_name,
-									displayText: Object(u.tg)(e.category_name)
+									displayText: Object(u.rg)(e.category_name)
 								};
 								n.push(s.id), t[s.id] = s
 							}), {
@@ -398,7 +398,7 @@
 				const t = Object(a.f)().getState(),
 					n = Object(g.a)(t, Object(o.c)());
 				if (e.isD2xPdpSideRailRecsEnabled) {
-					const t = e.d2xPdpSideRailRecsVariant === u.Yc.GreyRereddit || e.d2xPdpSideRailRecsVariant === u.Yc.GreyRedditNoNsfw || e.d2xPdpSideRailRecsVariant === u.Yc.LargeImagePreview ? e.reredditButtons : [];
+					const t = e.d2xPdpSideRailRecsVariant === u.Xc.GreyRereddit || e.d2xPdpSideRailRecsVariant === u.Xc.GreyRedditNoNsfw || e.d2xPdpSideRailRecsVariant === u.Xc.LargeImagePreview ? e.reredditButtons : [];
 					return s.a.createElement(O, {
 						reredditContent: t,
 						countryCode: e.countryCode
@@ -2389,7 +2389,7 @@
 					return e
 				}).apply(this, arguments)
 			}
-			const Z = e => {
+			const X = e => {
 				const {
 					category: t,
 					children: n,
@@ -2405,7 +2405,7 @@
 					to: t.path || ""
 				}), n, t.customIcon))
 			};
-			var X = n("./src/reddit/components/Widgets/ThemedWidget/index.tsx"),
+			var Z = n("./src/reddit/components/Widgets/ThemedWidget/index.tsx"),
 				Y = n("./src/reddit/controls/Button/index.tsx"),
 				$ = n("./src/reddit/helpers/name/index.ts");
 			const {
@@ -2457,7 +2457,7 @@
 						}
 					}, s, e && e.map((e, r) => {
 						const s = a + r * n;
-						return i.a.createElement(Z, {
+						return i.a.createElement(X, {
 							category: e,
 							className: t,
 							isActive: h(e.name),
@@ -2479,7 +2479,7 @@
 						headerClassName: s,
 						initialNumberOfCategories: a
 					} = this.props, o = t && a && t.length > a, d = Object(c.a)(n, K.a.container);
-					return i.a.createElement(X.a, {
+					return i.a.createElement(Z.a, {
 						className: d,
 						contentOnly: !0
 					}, i.a.createElement("div", {
@@ -2509,7 +2509,7 @@
 					key: e
 				}, e)
 			};
-			var le = e => i.a.createElement(X.a, {
+			var le = e => i.a.createElement(Z.a, {
 					className: ie.a.Widget,
 					redditStyle: e.redditStyle,
 					contentOnly: !0
@@ -2562,7 +2562,7 @@
 					} = t;
 					return Object(g.b)(n.params.categoryName || "")
 				},
-				Ee = Object(m.sg)(p.i),
+				Ee = Object(m.qg)(p.i),
 				Ce = Object(d.c)({
 					categories: e => Object(ye.b)(e, {
 						categoriesOrder: Ee
@@ -2673,11 +2673,11 @@
 				d = n("./node_modules/reselect/es/index.js");
 			const c = Object(d.a)(e => Object(s.c)(e, {
 					experimentEligibilitySelector: e => Object(o.h)(e) && Object(a.f)(e),
-					experimentName: r.uc
+					experimentName: r.tc
 				}), i.a),
 				l = Object(d.a)(e => Object(s.c)(e, {
 					experimentEligibilitySelector: e => !Object(o.h)(e) && Object(a.f)(e),
-					experimentName: r.tc
+					experimentName: r.sc
 				}), i.a),
 				u = Object(d.a)(c, l, (e, t) => e || t),
 				m = Object(d.a)(c, l, (e, t) => !(!e && !t))
@@ -2715,4 +2715,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditLeaderboard.6216f8d4cea99e38adba.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditLeaderboard.5182efc7b6bbec899dab.js.map

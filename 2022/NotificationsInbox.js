@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/NotificationsInbox.e6b9db903e6e4ffe0f3f.js
-// Retrieved at 8/29/2022, 11:20:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/NotificationsInbox.27b392b19b13d61700c4.js
+// Retrieved at 8/30/2022, 2:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["NotificationsInbox"], {
 		"./src/reddit/actions/pages/notificationsInbox.ts": function(e, t, n) {
@@ -598,9 +598,7 @@
 						userId: s
 					}), a.a.createElement("div", {
 						className: N.a.notificationsContainer
-					}, !r && n && a.a.createElement(x.a, null), !r && !n && a.a.createElement(O.a, {
-						isLoggedIn: !0
-					}), r && this.renderNotifications(), r && !n && e && a.a.createElement(g.a, {
+					}, !r && n && a.a.createElement(x.a, null), !r && !n && a.a.createElement(O.a, null), r && this.renderNotifications(), r && !n && e && a.a.createElement(g.a, {
 						onChange: this.fetchNotifications,
 						rootMargin: "0px 0px 0px 0px",
 						threshold: L
@@ -735,4 +733,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/NotificationsInbox.e6b9db903e6e4ffe0f3f.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/NotificationsInbox.27b392b19b13d61700c4.js.map

@@ -1,18 +1,18 @@
-// https://www.redditstatic.com/desktop2x/PushNotifications.60f44bd501afaa3fcaae.js
-// Retrieved at 1/26/2022, 6:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PushNotifications.ca2a53373db2e2a8bd02.js
+// Retrieved at 8/30/2022, 2:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PushNotifications"], {
 		"./src/lib/notifications/token.ts": function(e, t, i) {
 			"use strict";
 			i.d(t, "a", (function() {
-				return u
-			})), i.d(t, "b", (function() {
 				return d
+			})), i.d(t, "b", (function() {
+				return u
 			}));
 			var n = i("./src/config.ts"),
 				s = i("./src/redditGQL/operations/RegisterWebPushToken.json"),
-				r = i("./src/lib/makeGqlRequest/index.ts"),
-				o = i("./src/lib/serviceWorker/index.ts"),
+				o = i("./src/lib/makeGqlRequest/index.ts"),
+				r = i("./src/lib/serviceWorker/index.ts"),
 				c = i("./src/lib/timezone/index.ts"),
 				a = e => {
 					const t = (e + "=".repeat((4 - e.length % 4) % 4)).replace(/\-/g, "+").replace(/_/g, "/"),
@@ -21,14 +21,14 @@
 					for (let s = 0; s < i.length; ++s) n[s] = i.charCodeAt(s);
 					return n
 				};
-			var u;
+			var d;
 			! function(e) {
 				e[e.Success = 0] = "Success", e[e.FailedGeneric = 1] = "FailedGeneric", e[e.FailedResponse = 2] = "FailedResponse", e[e.FailedGqlReponse = 3] = "FailedGqlReponse", e[e.FailedNoServiceWorker = 4] = "FailedNoServiceWorker", e[e.FailedNoSubscription = 5] = "FailedNoSubscription"
-			}(u || (u = {}));
-			const d = async e => {
+			}(d || (d = {}));
+			const u = async e => {
 				try {
-					const t = await Object(o.a)();
-					if (!t) return u.FailedNoServiceWorker;
+					const t = await Object(r.a)();
+					if (!t) return d.FailedNoServiceWorker;
 					let i = await t.pushManager.getSubscription();
 					if (!i) {
 						const e = {
@@ -37,243 +37,261 @@
 						};
 						i = await t.pushManager.subscribe(e)
 					}
-					if (!i) return u.FailedNoSubscription;
-					const d = await ((e, t) => {
+					if (!i) return d.FailedNoSubscription;
+					const u = await ((e, t) => {
 						const i = {
 							pushToken: JSON.stringify(t),
 							timezoneName: Object(c.b)() || c.a,
 							timestamp: (new Date).toISOString(),
 							language: "en_us"
 						};
-						return Object(r.a)(e(), {
+						return Object(o.a)(e(), {
 							...s,
 							variables: i
 						})
 					})(e, i);
-					if (d && !d.ok) return u.FailedResponse;
-					const l = null == d ? void 0 : d.body.data.registerWebPushToken;
-					return l && !l.ok ? u.FailedGqlReponse : u.Success
+					if (u && !u.ok) return d.FailedResponse;
+					const l = null == u ? void 0 : u.body.data.registerWebPushToken;
+					return l && !l.ok ? d.FailedGqlReponse : d.Success
 				} catch (t) {
-					return console.error(t), u.FailedGeneric
+					return console.error(t), d.FailedGeneric
 				}
 			}
 		},
 		"./src/reddit/actions/notifications/index.ts": function(e, t, i) {
 			"use strict";
 			i.r(t), i.d(t, "initializeServiceWorkerChannel", (function() {
-				return S
-			})), i.d(t, "requestNotificationsPermissions", (function() {
-				return N
-			})), i.d(t, "subscribeForPNs", (function() {
-				return x
-			})), i.d(t, "unsubscribeFromPNs", (function() {
-				return C
-			})), i.d(t, "requestBrowserNotificationPermissionPromptByUser", (function() {
 				return q
+			})), i.d(t, "requestNotificationsPermissions", (function() {
+				return G
+			})), i.d(t, "subscribeForPNs", (function() {
+				return P
+			})), i.d(t, "unsubscribeFromPNs", (function() {
+				return R
+			})), i.d(t, "requestBrowserNotificationPermissionPromptByUser", (function() {
+				return L
 			})), i.d(t, "subscribeToPermissionsChange", (function() {
-				return W
+				return E
 			}));
 			var n = i("./node_modules/fbt/lib/FbtPublic.js"),
 				s = i("./node_modules/lodash/omit.js"),
-				r = i.n(s),
-				o = i("./src/lib/browser/isIncognito.ts"),
+				o = i.n(s),
+				r = i("./src/lib/browser/isIncognito.ts"),
 				c = i("./src/lib/notifications/token.ts"),
 				a = i("./src/lib/notifications/index.ts"),
-				u = i("./src/lib/notifications/constants.ts"),
-				d = i("./src/lib/serviceWorker/index.ts"),
+				d = i("./src/lib/notifications/constants.ts"),
+				u = i("./src/lib/serviceWorker/index.ts"),
 				l = i("./src/reddit/actions/chat/toggle.ts"),
-				b = i("./src/reddit/actions/modal.ts"),
-				f = i("./src/reddit/actions/notifications/utils.ts"),
+				f = i("./src/reddit/actions/modal.ts"),
+				b = i("./src/reddit/actions/notifications/utils.ts"),
 				p = i("./src/reddit/actions/tabBadging.ts"),
 				m = i("./src/reddit/actions/toaster.ts"),
-				g = i("./src/reddit/helpers/parseUrl.ts"),
-				h = i("./src/reddit/helpers/tabBadging/index.ts"),
-				O = i("./src/reddit/helpers/trackers/notifications.ts"),
-				v = i("./src/reddit/models/Toast/index.ts"),
-				j = i("./src/reddit/constants/experiments.ts"),
-				_ = i("./src/reddit/helpers/chooseVariant/index.ts");
-			var k = i("./src/reddit/selectors/meta.ts"),
-				y = i("./src/reddit/selectors/user.ts");
-			let w = !1;
-			const S = async (e, t) => {
-				const i = Object(y.I)(e);
-				if (w) return;
-				if (w = !0, Object(f.a)(e) !== u.c.NotificationsSupported) return;
-				await Object(d.a)();
+				g = i("./src/reddit/constants/modals.ts"),
+				O = i("./src/reddit/helpers/parseUrl.ts"),
+				v = i("./src/reddit/helpers/tabBadging/index.ts"),
+				_ = i("./src/reddit/helpers/trackers/notifications.ts"),
+				h = i("./src/reddit/models/Toast/index.ts"),
+				j = i("./src/reddit/selectors/activeModal.ts"),
+				k = i("./src/reddit/selectors/activeModalId.ts"),
+				y = i("./src/reddit/selectors/experiments/delayDnPermission.ts"),
+				w = i("./src/reddit/selectors/experiments/nsfwBlockingExperiment.ts"),
+				S = i("./src/reddit/constants/experiments.ts"),
+				F = i("./src/reddit/helpers/chooseVariant/index.ts");
+			const N = e => Object(F.c)(e, {
+				experimentName: S.mc,
+				experimentEligibilitySelector: F.a
+			}) === S.Qd;
+			var x = i("./src/reddit/selectors/meta.ts"),
+				C = i("./src/reddit/selectors/user.ts");
+			let W = !1;
+			const q = async (e, t) => {
+				const i = Object(C.P)(e);
+				if (W) return;
+				if (W = !0, Object(b.a)(e) !== d.c.NotificationsSupported) return;
+				await Object(u.a)();
 				navigator.serviceWorker.addEventListener("message", n => {
 					const s = n.data,
-						o = s.command || s.type;
-					if ("registerWithServiceWorker" === o) F(e);
-					else if (o === h.a && i) {
-						const e = r()(s, ["command"]);
+						r = s.command || s.type;
+					if ("registerWithServiceWorker" === r) D(e);
+					else if (r === v.a && i) {
+						const e = o()(s, ["command"]);
 						t(Object(p.f)(e))
-					} else if ("navigate.chat" === o) {
-						const e = Object(g.a)(s.data.href);
+					} else if ("navigate.chat" === r) {
+						const e = Object(O.a)(s.data.href);
 						e && e.pathname && t(Object(l.c)(e.pathname))
 					}
-				}), F(e)
-			}, F = e => {
+				}), D(e)
+			}, D = e => {
 				navigator.serviceWorker.controller && navigator.serviceWorker.controller.postMessage({
 					command: "registerClient",
-					v2EventBoilerPlate: O.c(e)
+					v2EventBoilerPlate: _.c(e)
 				})
-			}, N = (e, t, i = (() => {})) => async (n, s, r) => {
-				const c = s(),
-					d = Object(k.f)(c),
-					l = (e => Object(_.c)(e, {
-						experimentName: j.Fb,
-						experimentEligibilitySelector: _.a
-					}) === j.Xc)(c);
-				if (await Object(o.a)() || d) return;
-				await S(c, n);
-				O.j(c), await Object(a.b)(e, t, () => {
-					l || n(Object(u.o)()), n(Object(u.n)()), O.h(c)
-				}, (e, t) => {
-					n(Object(u.l)()), n(C(t ? u.a.Denied : u.a.Closed)), e && (t ? O.e(c) : O.f(c))
-				}, e => {
-					n(Object(u.m)()), n(x()), e && O.d(c)
-				}, () => {
-					n(Object(u.k)()), i()
-				})
-			}, x = e => async (t, i, s) => {
-				const r = i();
+			}, G = function(e, t) {
+				let i = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : () => {};
+				return async (n, s, o) => {
+					const c = s(),
+						u = Object(x.f)(c),
+						l = N(c),
+						f = !!Object(k.a)(c),
+						b = Object(y.a)(c),
+						p = Object(w.e)(c),
+						m = Object(j.c)(g.a.NSFW_BLOCKING_MODAL_V2)(c);
+					if (p || m) return;
+					if (await Object(r.a)() || u) return;
+					await q(c, n);
+					_.l(c), await Object(a.b)(e, t, () => {
+						l || b || f || n(Object(d.o)()), n(Object(d.n)()), _.j(c)
+					}, (e, t) => {
+						n(Object(d.l)()), n(R(t ? d.a.Denied : d.a.Closed)), e && (t ? _.e(c) : _.f(c)), i()
+					}, e => {
+						n(Object(d.m)()), n(P()), e && _.d(c), i()
+					}, () => {
+						n(Object(d.k)()), i()
+					})
+				}
+			}, P = e => async (t, i, s) => {
+				const o = i();
 				try {
 					switch (await Object(c.b)(s.gqlContext)) {
 						case c.a.Success:
-							Object(f.b)(u.a.Granted), O.k(r), e && t(Object(m.f)({
-								kind: v.b.SuccessCommunity,
+							Object(b.b)(d.a.Granted), _.m(o), e && t(Object(m.f)({
+								kind: h.b.SuccessCommunity,
 								text: n.fbt._("Changes saved", null, {
 									hk: "wGH5U"
 								})
 							}));
 							break;
 						case c.a.FailedResponse:
-							O.i(r, "registration_failed_generally");
+							_.k(o, "registration_failed_generally");
 							break;
 						case c.a.FailedGqlReponse:
-							O.i(r, "registration_failed_in_gql")
+							_.k(o, "registration_failed_in_gql")
 					}
-				} catch (o) {
-					O.i(r, "registration_failed_uncaught_exception"), console.error(o)
+				} catch (r) {
+					_.k(o, "registration_failed_uncaught_exception"), console.error(r)
 				}
-			}, C = (e, t) => async i => {
+			}, R = (e, t) => async i => {
 				try {
-					Object(f.b)(e);
-					const s = await Object(d.a)();
+					Object(b.b)(e);
+					const s = await Object(u.a)();
 					if (s) {
 						const e = await s.pushManager.getSubscription();
 						e && (e.unsubscribe(), t && i(Object(m.f)({
-							kind: v.b.SuccessCommunity,
+							kind: h.b.SuccessCommunity,
 							text: n.fbt._("Changes saved", null, {
 								hk: "wGH5U"
 							})
 						})))
 					}
 				} catch (s) {}
-			}, q = e => async (t, i) => {
+			}, L = e => async (t, i) => {
 				const n = i();
-				if (Object(f.a)(n) === u.c.NotificationsSupported) switch (Object(a.a)()) {
-					case u.a.Default:
-					case u.a.Closed:
-						await t(N(!0, !0));
+				if (Object(b.a)(n) === d.c.NotificationsSupported) switch (Object(a.a)()) {
+					case d.a.Default:
+					case d.a.Closed:
+						await t(G(!0, !0));
 						break;
-					case u.a.Denied:
-						t(Object(b.h)(e))
+					case d.a.Denied:
+						t(Object(f.h)(e))
 				}
-			}, W = () => async (e, t) => {
+			}, E = () => async (e, t) => {
 				var i;
 				if (!(null === (i = null === navigator || void 0 === navigator ? void 0 : navigator.permissions) || void 0 === i ? void 0 : i.query)) return;
 				const n = t();
-				if (Object(f.a)(n) !== u.c.NotificationsSupported) return;
+				if (Object(b.a)(n) !== d.c.NotificationsSupported) return;
 				const s = await navigator.permissions.query({
 					name: "notifications"
 				});
 				s.onchange = () => (t => {
 					switch (t) {
-						case u.a.Denied:
-							e(C(u.a.Denied)), O.e(n);
+						case d.a.Denied:
+							e(R(d.a.Denied)), _.e(n);
 							break;
-						case u.a.Granted:
-							e(x()), O.d(n);
+						case d.a.Granted:
+							e(P()), _.d(n);
 							break;
 						default:
-							e(C(u.a.Default))
+							e(R(d.a.Default))
 					}
 				})(s.state)
 			}
 		},
 		"./src/reddit/helpers/trackers/notifications.ts": function(e, t, i) {
 			"use strict";
-			i.d(t, "h", (function() {
-				return u
-			})), i.d(t, "d", (function() {
+			i.d(t, "j", (function() {
 				return d
+			})), i.d(t, "d", (function() {
+				return u
 			})), i.d(t, "e", (function() {
 				return l
 			})), i.d(t, "f", (function() {
-				return b
-			})), i.d(t, "j", (function() {
+				return f
+			})), i.d(t, "l", (function() {
 				return p
-			})), i.d(t, "k", (function() {
+			})), i.d(t, "m", (function() {
 				return m
-			})), i.d(t, "i", (function() {
+			})), i.d(t, "k", (function() {
 				return g
 			})), i.d(t, "c", (function() {
-				return O
-			})), i.d(t, "b", (function() {
 				return v
-			})), i.d(t, "g", (function() {
-				return j
-			})), i.d(t, "a", (function() {
+			})), i.d(t, "b", (function() {
 				return _
-			})), i.d(t, "l", (function() {
+			})), i.d(t, "i", (function() {
+				return h
+			})), i.d(t, "a", (function() {
+				return j
+			})), i.d(t, "n", (function() {
 				return k
-			})), i.d(t, "m", (function() {
+			})), i.d(t, "o", (function() {
 				return y
+			})), i.d(t, "h", (function() {
+				return w
+			})), i.d(t, "g", (function() {
+				return S
 			}));
 			var n = i("./src/reddit/selectors/telemetry.ts"),
 				s = i("./src/telemetry/index.ts"),
-				r = i("./src/telemetry/models/Event.ts");
-			var o;
+				o = i("./src/telemetry/models/Event.ts");
+			var r;
 			! function(e) {
 				e.FREQUENT = "frequent", e.LOW = "low", e.OFF = "off"
-			}(o || (o = {}));
+			}(r || (r = {}));
 			const c = e => ({
-					...n.m(e),
+					...n.n(e),
 					noun: "desktop_notification_permissions"
 				}),
 				a = e => e ? "enable" : "disable",
-				u = e => {
-					Object(s.a)({
-						...c(e),
-						action: r.c.View,
-						source: "popup"
-					})
-				},
 				d = e => {
 					Object(s.a)({
 						...c(e),
-						action: r.c.Allow,
+						action: o.c.View,
+						source: "popup"
+					})
+				},
+				u = e => {
+					Object(s.a)({
+						...c(e),
+						action: o.c.Allow,
 						source: "popup"
 					})
 				},
 				l = e => {
 					Object(s.a)({
 						...c(e),
-						action: r.c.Block,
+						action: o.c.Block,
 						source: "popup"
 					})
 				},
-				b = e => {
+				f = e => {
 					Object(s.a)({
 						...c(e),
-						action: r.c.Close,
+						action: o.c.Close,
 						source: "popup"
 					})
 				},
-				f = (e, t, i) => ({
-					...n.m(e),
-					actionInfo: n.c(e, {
+				b = (e, t, i) => ({
+					...n.n(e),
+					actionInfo: n.d(e, {
 						success: t,
 						reason: i
 					}),
@@ -281,38 +299,38 @@
 				}),
 				p = e => {
 					Object(s.a)({
-						...f(e, !0),
-						action: r.c.Request,
+						...b(e, !0),
+						action: o.c.Request,
 						source: "notification"
 					})
 				},
 				m = e => {
 					Object(s.a)({
-						...f(e, !0),
-						action: r.c.Register,
+						...b(e, !0),
+						action: o.c.Register,
 						source: "notification"
 					})
 				},
 				g = (e, t) => {
 					Object(s.a)({
-						...f(e, !1, t),
-						action: r.c.Bail,
+						...b(e, !1, t),
+						action: o.c.Bail,
 						source: "notification"
 					})
 				},
-				h = e => ({
-					...n.m(e),
+				O = e => ({
+					...n.n(e),
 					noun: "push_notification"
 				}),
-				O = e => ({
-					...h(e),
-					notification: n.C(e, void 0, void 0),
+				v = e => ({
+					...O(e),
+					notification: n.E(e, void 0, void 0),
 					action: void 0,
 					source: "notification",
 					correlationId: void 0
 				}),
-				v = (e, t) => i => ({
-					...n.m(i),
+				_ = (e, t) => i => ({
+					...n.n(i),
 					action: a(e),
 					email: {
 						type: t
@@ -320,8 +338,8 @@
 					noun: "email",
 					source: "email_app_settings"
 				}),
-				j = (e, t) => i => ({
-					...n.m(i),
+				h = (e, t) => i => ({
+					...n.n(i),
 					action: a(e),
 					notification: {
 						type: t
@@ -329,8 +347,8 @@
 					noun: "notification",
 					source: "notification_app_settings"
 				}),
-				_ = e => t => ({
-					...n.m(t),
+				j = e => t => ({
+					...n.n(t),
 					source: "email_app_settings",
 					action: a(e),
 					noun: "email",
@@ -339,7 +357,7 @@
 					}
 				}),
 				k = (e, t, i) => s => ({
-					...n.m(s),
+					...n.n(s),
 					action: "set_frequency",
 					noun: i,
 					source: "community_notifications",
@@ -349,13 +367,25 @@
 					}
 				}),
 				y = () => e => ({
-					...n.m(e),
-					action: r.c.View,
+					...n.n(e),
+					action: o.c.View,
 					noun: "screen",
 					source: "global",
 					actionInfo: {
 						pageType: "community_alerts"
 					}
+				}),
+				w = () => e => ({
+					...n.n(e),
+					action: "click",
+					noun: "desktop_notification_permissions",
+					source: "overlay"
+				}),
+				S = () => e => ({
+					...n.n(e),
+					action: "auto_dismiss",
+					noun: "desktop_notification_permissions",
+					source: "overlay"
 				})
 		},
 		"./src/redditGQL/operations/RegisterWebPushToken.json": function(e) {
@@ -363,4 +393,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PushNotifications.60f44bd501afaa3fcaae.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PushNotifications.ca2a53373db2e2a8bd02.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-NotificationUnit-Button.56fd0938a3cebdf3bdab.js
-// Retrieved at 8/30/2022, 9:40:06 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-NotificationUnit-Button.159952848e2774d2dfd9.js
+// Retrieved at 8/30/2022, 2:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-NotificationUnit-Button"], {
 		"./node_modules/lodash/map.js": function(t, e, o) {
@@ -240,8 +240,8 @@
 				at = o("./node_modules/reselect/es/index.js");
 			const dt = Object(at.a)(t => Object(ct.c)(t, {
 				experimentEligibilitySelector: ct.a,
-				experimentName: it.Nb
-			}), t => t === it.Rd);
+				experimentName: it.Mb
+			}), t => t === it.Qd);
 			var lt = o("./src/reddit/selectors/experiments/contributeBeforeSignUp.ts"),
 				mt = o("./src/reddit/selectors/experiments/emailEnablement.ts"),
 				ut = o("./src/reddit/selectors/platform.ts"),
@@ -2438,4 +2438,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-NotificationUnit-Button.56fd0938a3cebdf3bdab.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-NotificationUnit-Button.159952848e2774d2dfd9.js.map

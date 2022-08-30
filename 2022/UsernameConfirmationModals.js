@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/UsernameConfirmationModals.f605db6f5e0f3ddbab0f.js
-// Retrieved at 8/30/2022, 9:40:06 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/UsernameConfirmationModals.7e27f292e480439f1c01.js
+// Retrieved at 8/30/2022, 2:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["UsernameConfirmationModals"], {
 		"./src/chat/controls/Svg/index.m.less": function(e, t, n) {
@@ -362,7 +362,7 @@
 					changeUsernameModalOpen: Object(F.b)(R.b),
 					confirmSaveUsernameModalOpen: Object(F.b)(R.d),
 					interceptActionModalOpen: Object(F.b)(R.e),
-					welcomeBackModalOpen: Object(F.b)(R.r)
+					welcomeBackModalOpen: Object(F.b)(R.q)
 				}),
 				z = Object(r.b)(Y, (e, t) => ({
 					closeModal: () => {
@@ -397,8 +397,8 @@
 						}))
 					},
 					saveUsernameSuccess: (t, n) => {
-						e(Object(m.finishChangeUsernameFlow)(t, n)), e(Object(p.h)(R.p)), setTimeout(() => {
-							e(Object(p.g)(R.p))
+						e(Object(m.finishChangeUsernameFlow)(t, n)), e(Object(p.h)(R.o)), setTimeout(() => {
+							e(Object(p.g)(R.o))
 						}, b.a)
 					}
 				})),
@@ -978,4 +978,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/UsernameConfirmationModals.f605db6f5e0f3ddbab0f.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/UsernameConfirmationModals.7e27f292e480439f1c01.js.map

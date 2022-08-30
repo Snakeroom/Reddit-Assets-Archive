@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit~Subreddit.d68aa5b24d943331bb48.js
-// Retrieved at 8/30/2022, 10:30:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit~Subreddit.91ec61fe045941064e0a.js
+// Retrieved at 8/30/2022, 2:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~ModListing~Reddit~Subreddit"], {
 		"./src/lib/CSSVariableProvider/withTheme.tsx": function(e, t, n) {
@@ -3452,7 +3452,7 @@
 					return r ? r * o.Vb < 1639443600180 ? void 0 : O(e) : void 0
 				},
 				O = Object(r.a)(e => Object(c.c)(e, {
-					experimentName: i.Oe,
+					experimentName: i.Me,
 					experimentEligibilitySelector: a.e
 				}), d.a)
 		},
@@ -3471,16 +3471,14 @@
 				return r
 			})), n.d(t, "b", (function() {
 				return o
-			})), n.d(t, "g", (function() {
-				return i
 			})), n.d(t, "f", (function() {
-				return s
+				return i
 			})), n.d(t, "e", (function() {
-				return c
+				return s
 			})), n.d(t, "d", (function() {
-				return a
+				return c
 			})), n.d(t, "c", (function() {
-				return d
+				return a
 			}));
 			const r = e => e.user.notificationPrefs.api.getPreferences.loaded,
 				o = e => e.user.notificationPrefs.api.getPreferences.pending,
@@ -3492,8 +3490,7 @@
 					const o = (e => e.user.notificationPrefs.pushSettingsLayout)(e),
 						i = null === (n = null == o ? void 0 : o.rows) || void 0 === n ? void 0 : n.byId;
 					return i && (null === (r = i[t]) || void 0 === r ? void 0 : r.isEnabled)
-				},
-				d = (e, t) => !t.some(t => a(e, t))
+				}
 		},
 		"./src/reddit/selectors/notificationsInbox.tsx": function(e, t, n) {
 			"use strict";
@@ -3571,4 +3568,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit~Subreddit.d68aa5b24d943331bb48.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit~Subreddit.91ec61fe045941064e0a.js.map

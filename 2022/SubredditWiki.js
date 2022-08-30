@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditWiki.bd625a15c14ea21ea9b7.js
-// Retrieved at 8/30/2022, 9:40:06 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditWiki.6aa535ca3794bfde7e5c.js
+// Retrieved at 8/30/2022, 2:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditWiki"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -5009,7 +5009,7 @@
 			const i = "UserInfoTooltip";
 			t.b = Object(r.a)({
 				ErrorComponent: () => null,
-				getComponent: () => Object(n.a)(() => Promise.all([s.e("AuthorHovercard~Reddit"), s.e("AuthorHovercard")]).then(s.bind(null, "./src/reddit/components/Hovercards/AuthorHovercard/ModIdCard/index.tsx"))).then(e => e.default),
+				getComponent: () => Object(n.a)(() => s.e("AuthorHovercard").then(s.bind(null, "./src/reddit/components/Hovercards/AuthorHovercard/ModIdCard/index.tsx"))).then(e => e.default),
 				LoadingComponent: () => null
 			})
 		},
@@ -8273,7 +8273,7 @@
 				const t = Object(i.f)().getState(),
 					s = Object(h.a)(t, Object(a.c)());
 				if (e.isD2xPdpSideRailRecsEnabled) {
-					const t = e.d2xPdpSideRailRecsVariant === u.Yc.GreyRereddit || e.d2xPdpSideRailRecsVariant === u.Yc.GreyRedditNoNsfw || e.d2xPdpSideRailRecsVariant === u.Yc.LargeImagePreview ? e.reredditButtons : [];
+					const t = e.d2xPdpSideRailRecsVariant === u.Xc.GreyRereddit || e.d2xPdpSideRailRecsVariant === u.Xc.GreyRedditNoNsfw || e.d2xPdpSideRailRecsVariant === u.Xc.LargeImagePreview ? e.reredditButtons : [];
 					return n.a.createElement(j, {
 						reredditContent: t,
 						countryCode: e.countryCode
@@ -8822,12 +8822,12 @@
 						rtJsonElementProps: o
 					});
 					switch (i) {
-						case h.Vf.SmIcon:
+						case h.Tf.SmIcon:
 							return n.a.createElement(p, {
 								subredditName: r,
 								rtJsonElementProps: o
 							});
-						case h.Vf.SmIconHc:
+						case h.Tf.SmIconHc:
 							return n.a.createElement(p, {
 								subredditName: r,
 								isHoverable: !0,
@@ -9289,7 +9289,7 @@
 						} = t;
 						return Object(Fe.c)(e, s)
 					},
-					isInNewModuleNCPV3Experiment: e => Object(Le.a)(e) === Pe.Xe.NewModule,
+					isInNewModuleNCPV3Experiment: e => Object(Le.a)(e) === Pe.Ve.NewModule,
 					showGovernance: Te.d.spPoints,
 					showLeaderboard: Te.d.spLeaderboard,
 					showPredictionsLeaderboard: (e, t) => {
@@ -10495,11 +10495,11 @@
 				d = s("./node_modules/reselect/es/index.js");
 			const c = Object(d.a)(e => Object(n.c)(e, {
 					experimentEligibilitySelector: e => Object(a.h)(e) && Object(i.f)(e),
-					experimentName: r.uc
+					experimentName: r.tc
 				}), o.a),
 				l = Object(d.a)(e => Object(n.c)(e, {
 					experimentEligibilitySelector: e => !Object(a.h)(e) && Object(i.f)(e),
-					experimentName: r.tc
+					experimentName: r.sc
 				}), o.a),
 				u = Object(d.a)(c, l, (e, t) => e || t),
 				m = Object(d.a)(c, l, (e, t) => !(!e && !t))
@@ -10516,13 +10516,13 @@
 			const i = e => {
 					return !(Object(n.c)(e, {
 						experimentEligibilitySelector: n.a,
-						experimentName: r.Be
-					}) === r.Rd)
+						experimentName: r.ze
+					}) === r.Qd)
 				},
 				o = e => Object(n.c)(e, {
 					experimentEligibilitySelector: n.a,
-					experimentName: r.Ce
-				}) === r.Rd
+					experimentName: r.Ae
+				}) === r.Qd
 		},
 		"./src/reddit/selectors/subredditMention.ts": function(e, t, s) {
 			"use strict";
@@ -10547,12 +10547,12 @@
 				d = e => {
 					return Object(i.c)(e, {
 						experimentEligibilitySelector: a,
-						experimentName: r.Pf
+						experimentName: r.Nf
 					}) || ""
 				},
 				c = e => {
 					const t = d(e);
-					return t === r.Vf.SmIcon || t === r.Vf.SmIconHc
+					return t === r.Tf.SmIcon || t === r.Tf.SmIconHc
 				},
 				l = (e, t) => {
 					let {
@@ -10742,4 +10742,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditWiki.bd625a15c14ea21ea9b7.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditWiki.6aa535ca3794bfde7e5c.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-pages-meta-MainnetPointsMigrationPage.223abeffbc3d863c2968.js
-// Retrieved at 8/29/2022, 7:20:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-pages-meta-MainnetPointsMigrationPage.8e3923b9a92b931e7ef5.js
+// Retrieved at 8/30/2022, 2:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-pages-meta-MainnetPointsMigrationPage"], {
 		"./node_modules/lodash/uniqueId.js": function(e, t, n) {
@@ -1143,8 +1143,8 @@
 				K = n("./node_modules/@ethersproject/address/lib.esm/index.js"),
 				X = n("./node_modules/lodash/debounce.js"),
 				G = n.n(X),
-				J = n("./src/lib/classNames/index.ts"),
-				Q = n("./src/reddit/constants/colors.ts"),
+				Q = n("./src/lib/classNames/index.ts"),
+				J = n("./src/reddit/constants/colors.ts"),
 				$ = n("./src/reddit/controls/FormFields/index.tsx"),
 				ee = n("./src/reddit/icons/svgs/Checkmark/index.tsx"),
 				te = n("./src/reddit/icons/svgs/Nsfw/index.tsx"),
@@ -1167,7 +1167,7 @@
 					c(re.Invalid)
 				}, m = Object(r.useMemo)(() => G()(u, 300), [o, n, u]);
 				return i.a.createElement("div", {
-					className: Object(J.a)(ae.a.container, t, {
+					className: Object(Q.a)(ae.a.container, t, {
 						[ae.a.invalid]: d
 					})
 				}, i.a.createElement($.c, {
@@ -1189,7 +1189,7 @@
 							return i.a.createElement(te.a, {
 								className: ae.a.icon,
 								style: {
-									fill: Q.a.warning
+									fill: J.a.warning
 								}
 							});
 						case re.Valid:
@@ -1869,16 +1869,16 @@
 			const r = e => {
 					return Object(s.c)(e, {
 						experimentEligibilitySelector: s.a,
-						experimentName: a.De
-					}) === a.Rd
+						experimentName: a.Be
+					}) === a.Qd
 				},
 				i = e => {
 					return Object(s.c)(e, {
 						experimentEligibilitySelector: s.a,
-						experimentName: a.Ae
-					}) === a.Rd
+						experimentName: a.ye
+					}) === a.Qd
 				}
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-pages-meta-MainnetPointsMigrationPage.223abeffbc3d863c2968.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-pages-meta-MainnetPointsMigrationPage.8e3923b9a92b931e7ef5.js.map
