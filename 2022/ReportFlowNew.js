@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ReportFlowNew.b7d454ce4b27be673d94.js
-// Retrieved at 8/30/2022, 3:10:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ReportFlowNew.0712bb7b4c827e1f5999.js
+// Retrieved at 8/30/2022, 4:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ReportFlowNew"], {
 		"./src/reddit/actions/blockedRedditors.ts": function(e, t, o) {
@@ -406,7 +406,7 @@
 						return e ? JSON.parse(e) : null
 					}
 				};
-			class z extends c.a.Component {
+			class H extends c.a.Component {
 				constructor(e) {
 					super(e), this.getItemMetadata = () => {
 						const {
@@ -600,7 +600,7 @@
 					}))
 				}
 			}
-			t.default = Object(C.b)(M(Object(b.c)(z)))
+			t.default = Object(C.b)(M(Object(b.c)(H)))
 		},
 		"./src/reddit/components/ReportFlow/index.m.less": function(e, t, o) {
 			e.exports = {
@@ -777,14 +777,14 @@
 						...p,
 						variables: t
 					});
-					return !!Object(d.c)(o) && (o.body.data.subredditInfoById.allowedPostTypes || []).includes(h.z.Talk)
+					return !!Object(d.c)(o) && (o.body.data.subredditInfoById.allowedPostTypes || []).includes(h.A.Talk)
 				}, R = async (e, t) => {
 					var o, r;
 					const s = await Object(i.a)(e, {
 						...m,
 						variables: t
 					});
-					return !!Object(d.c)(s) && (null !== (r = null === (o = s.body.data.profileByName) || void 0 === o ? void 0 : o.allowedPostTypes) && void 0 !== r ? r : []).includes(h.z.Talk)
+					return !!Object(d.c)(s) && (null !== (r = null === (o = s.body.data.profileByName) || void 0 === o ? void 0 : o.allowedPostTypes) && void 0 !== r ? r : []).includes(h.A.Talk)
 				}, w = async e => {
 					var t;
 					const o = await Object(i.a)(e, u);
@@ -1004,4 +1004,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ReportFlowNew.b7d454ce4b27be673d94.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ReportFlowNew.0712bb7b4c827e1f5999.js.map

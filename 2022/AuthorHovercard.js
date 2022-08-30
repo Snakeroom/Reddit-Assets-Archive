@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/AuthorHovercard.3233f8aadac72e1c15ad.js
-// Retrieved at 8/30/2022, 3:10:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/AuthorHovercard.6169bf60a54e4f498f8b.js
+// Retrieved at 8/30/2022, 4:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["AuthorHovercard"], {
 		"./src/lib/constants/colors.ts": function(e, t, n) {
@@ -1811,7 +1811,7 @@
 				y = n.n(E),
 				w = n("./src/redditGQL/types.ts");
 			const S = Object(h.a)(_.b),
-				P = ["NONE", w.v.AbuseWarning, w.v.SpamWarning, w.v.SpamWatch, w.v.SolidContributor, w.v.HelpfulUser],
+				P = ["NONE", w.w.AbuseWarning, w.w.SpamWarning, w.w.SpamWatch, w.w.SolidContributor, w.w.HelpfulUser],
 				B = {
 					...k.f,
 					NONE: () => f.fbt._("None", null, {
@@ -1981,68 +1981,68 @@
 				T = n("./src/reddit/components/SubredditIcon/index.tsx"),
 				L = n("./src/reddit/components/CCM/ModUserNotesFilter/index.m.less"),
 				D = n.n(L);
-			const H = [w.n.All, w.n.Note, w.n.Invite, w.n.Ban, w.n.Mute, w.n.ContentChange, w.n.Removal, w.n.Approval, w.n.Spam, w.n.ModAction],
+			const H = [w.o.All, w.o.Note, w.o.Invite, w.o.Ban, w.o.Mute, w.o.ContentChange, w.o.Removal, w.o.Approval, w.o.Spam, w.o.ModAction],
 				F = {
-					[w.n.All]: () => f.fbt._("All", null, {
+					[w.o.All]: () => f.fbt._("All", null, {
 						hk: "SUuCY"
 					}),
-					[w.n.Note]: () => f.fbt._("Notes", null, {
+					[w.o.Note]: () => f.fbt._("Notes", null, {
 						hk: "zqvUY"
 					}),
-					[w.n.Invite]: () => f.fbt._("Invites", null, {
+					[w.o.Invite]: () => f.fbt._("Invites", null, {
 						hk: "3fze0T"
 					}),
-					[w.n.Ban]: () => f.fbt._("Bans/unbans", null, {
+					[w.o.Ban]: () => f.fbt._("Bans/unbans", null, {
 						hk: "1mU3jK"
 					}),
-					[w.n.Mute]: () => f.fbt._("Mutes/unmutes", null, {
+					[w.o.Mute]: () => f.fbt._("Mutes/unmutes", null, {
 						hk: "2BTD9E"
 					}),
-					[w.n.ContentChange]: () => f.fbt._("Content edits", null, {
+					[w.o.ContentChange]: () => f.fbt._("Content edits", null, {
 						hk: "Hqlly"
 					}),
-					[w.n.Removal]: () => f.fbt._("Content removals", null, {
+					[w.o.Removal]: () => f.fbt._("Content removals", null, {
 						hk: "2V0fLd"
 					}),
-					[w.n.Spam]: () => f.fbt._("Spam", null, {
+					[w.o.Spam]: () => f.fbt._("Spam", null, {
 						hk: "1qdhsm"
 					}),
-					[w.n.ModAction]: () => f.fbt._("Mod actions", null, {
+					[w.o.ModAction]: () => f.fbt._("Mod actions", null, {
 						hk: "4eIb6E"
 					}),
-					[w.n.Approval]: () => f.fbt._("Approvals", null, {
+					[w.o.Approval]: () => f.fbt._("Approvals", null, {
 						hk: "3rk4Jx"
 					})
 				},
 				R = {
-					[w.n.All]: () => f.fbt._("All", null, {
+					[w.o.All]: () => f.fbt._("All", null, {
 						hk: "SUuCY"
 					}),
-					[w.n.Note]: () => f.fbt._("Notes", null, {
+					[w.o.Note]: () => f.fbt._("Notes", null, {
 						hk: "zqvUY"
 					}),
-					[w.n.Invite]: () => f.fbt._("Invites", null, {
+					[w.o.Invite]: () => f.fbt._("Invites", null, {
 						hk: "3fze0T"
 					}),
-					[w.n.Ban]: () => f.fbt._("Bans", null, {
+					[w.o.Ban]: () => f.fbt._("Bans", null, {
 						hk: "2mhBLK"
 					}),
-					[w.n.Mute]: () => f.fbt._("Mutes", null, {
+					[w.o.Mute]: () => f.fbt._("Mutes", null, {
 						hk: "4FW14P"
 					}),
-					[w.n.ContentChange]: () => f.fbt._("Edits", null, {
+					[w.o.ContentChange]: () => f.fbt._("Edits", null, {
 						hk: "3Gd5ht"
 					}),
-					[w.n.Removal]: () => f.fbt._("Removals", null, {
+					[w.o.Removal]: () => f.fbt._("Removals", null, {
 						hk: "312qk9"
 					}),
-					[w.n.Spam]: () => f.fbt._("Spam", null, {
+					[w.o.Spam]: () => f.fbt._("Spam", null, {
 						hk: "1qdhsm"
 					}),
-					[w.n.ModAction]: () => f.fbt._("Actions", null, {
+					[w.o.ModAction]: () => f.fbt._("Actions", null, {
 						hk: "3hqNUg"
 					}),
-					[w.n.Approval]: () => f.fbt._("Approvals", null, {
+					[w.o.Approval]: () => f.fbt._("Approvals", null, {
 						hk: "3rk4Jx"
 					})
 				};
@@ -2128,7 +2128,7 @@
 						displayText: _,
 						options: H.map(e => ({
 							displayText: F[e](),
-							icon: v[w.n.All] ? r.a.createElement("span", {
+							icon: v[w.o.All] ? r.a.createElement("span", {
 								className: D.a.typeCountIconInDropdown
 							}, r.a.createElement("span", {
 								className: D.a.typeCountIconInDropdownInner
@@ -2148,37 +2148,37 @@
 				J = n("./src/reddit/components/CCM/ModUserNoteWithIcon/Icon/index.m.less"),
 				V = n.n(J);
 			const q = {
-					[w.m.AddRemovalReason]: "remove",
-					[w.m.AcceptModeratorInvite]: "mod",
-					[w.m.AddContributor]: "user",
-					[w.m.ApproveLink]: "approve",
-					[w.m.ApproveComment]: "approve",
-					[w.m.AddContributor]: "user",
-					[w.m.AddModerator]: "mod",
-					[w.m.BanUser]: "ban",
-					[w.m.InviteModerator]: "mod",
-					[w.m.MuteUser]: "mod_mute",
-					[w.m.RemoveComment]: "remove",
-					[w.m.RemoveContributor]: "block",
-					[w.m.RemoveLink]: "remove",
-					[w.m.RemoveModerator]: "unmod",
-					[w.m.RemoveWikiContributor]: "wiki_ban",
-					[w.m.SpamComment]: "spam",
-					[w.m.SpamLink]: "spam",
-					[w.m.Spoiler]: "spoiler",
-					[w.m.Sticky]: "pin",
-					[w.m.UnbanUser]: "unban",
-					[w.m.UninviteModerator]: "unmod",
-					[w.m.UnmuteUser]: "mod_unmute",
-					[w.m.Unspoiler]: "spoiler",
-					[w.m.Unsticky]: "unpin",
-					[w.m.WikiBanned]: "wiki_ban",
-					[w.m.WikiContributor]: "wiki",
-					[w.m.WikiUnbanned]: "wiki_unban"
+					[w.n.AddRemovalReason]: "remove",
+					[w.n.AcceptModeratorInvite]: "mod",
+					[w.n.AddContributor]: "user",
+					[w.n.ApproveLink]: "approve",
+					[w.n.ApproveComment]: "approve",
+					[w.n.AddContributor]: "user",
+					[w.n.AddModerator]: "mod",
+					[w.n.BanUser]: "ban",
+					[w.n.InviteModerator]: "mod",
+					[w.n.MuteUser]: "mod_mute",
+					[w.n.RemoveComment]: "remove",
+					[w.n.RemoveContributor]: "block",
+					[w.n.RemoveLink]: "remove",
+					[w.n.RemoveModerator]: "unmod",
+					[w.n.RemoveWikiContributor]: "wiki_ban",
+					[w.n.SpamComment]: "spam",
+					[w.n.SpamLink]: "spam",
+					[w.n.Spoiler]: "spoiler",
+					[w.n.Sticky]: "pin",
+					[w.n.UnbanUser]: "unban",
+					[w.n.UninviteModerator]: "unmod",
+					[w.n.UnmuteUser]: "mod_unmute",
+					[w.n.Unspoiler]: "spoiler",
+					[w.n.Unsticky]: "unpin",
+					[w.n.WikiBanned]: "wiki_ban",
+					[w.n.WikiContributor]: "wiki",
+					[w.n.WikiUnbanned]: "wiki_unban"
 				},
 				Q = {
-					[w.v.BotBan]: "bot",
-					[w.v.PermaBan]: "block"
+					[w.w.BotBan]: "bot",
+					[w.w.PermaBan]: "block"
 				};
 			var X = e => {
 					const {
@@ -2231,7 +2231,7 @@
 						year: "numeric",
 						hour: "numeric",
 						minute: "numeric"
-					}).format(new Date(s.createdAt)), E = s.itemType === w.o.Note;
+					}).format(new Date(s.createdAt)), E = s.itemType === w.p.Note;
 					return r.a.createElement("div", {
 						className: Object(d.a)(t, re.a.metadata)
 					}, s.operator && r.a.createElement(ne.default, {
@@ -2278,7 +2278,7 @@
 						m = Object(N.b)(k.e[l || "bot"], {
 							isFilled: !0
 						}),
-						b = ![k.c, w.v.BotBan, w.v.PermaBan].includes(l),
+						b = ![k.c, w.w.BotBan, w.w.PermaBan].includes(l),
 						p = n.postInfo ? null === (s = n.postInfo) || void 0 === s ? void 0 : s.permalink : n.commentInfo ? null === (i = n.commentInfo) || void 0 === i ? void 0 : i.permalink : void 0,
 						f = Object(N.b)("external_link_fill");
 					return u ? r.a.createElement("div", {
@@ -2364,7 +2364,7 @@
 				pe = n("./src/reddit/components/CCM/ModUserNoteWithIcon/Title/index.m.less"),
 				fe = n.n(pe);
 			const he = {
-					[w.m.AddRemovalReason]: e => {
+					[w.n.AddRemovalReason]: e => {
 						const {
 							commentInfo: t
 						} = e, {
@@ -2376,7 +2376,7 @@
 							hk: "e3hBx"
 						}) : void 0
 					},
-					[w.m.BanUser]: e => {
+					[w.n.BanUser]: e => {
 						const {
 							banDays: t,
 							isPermanentBan: n
@@ -2394,96 +2394,96 @@
 					}
 				},
 				ve = {
-					[w.m.AcceptModeratorInvite]: () => f.fbt._("Mod invite accepted", null, {
+					[w.n.AcceptModeratorInvite]: () => f.fbt._("Mod invite accepted", null, {
 						hk: "qf41j"
 					}),
-					[w.m.AddContributor]: () => f.fbt._("Added as contributor", null, {
+					[w.n.AddContributor]: () => f.fbt._("Added as contributor", null, {
 						hk: "3dqHxz"
 					}),
-					[w.m.AddModerator]: () => f.fbt._("Added as moderator", null, {
+					[w.n.AddModerator]: () => f.fbt._("Added as moderator", null, {
 						hk: "1dhUFs"
 					}),
-					[w.m.ApproveComment]: () => f.fbt._("Comment was approved", null, {
+					[w.n.ApproveComment]: () => f.fbt._("Comment was approved", null, {
 						hk: "3yCRAS"
 					}),
-					[w.m.ApproveLink]: () => f.fbt._("Post was approved", null, {
+					[w.n.ApproveLink]: () => f.fbt._("Post was approved", null, {
 						hk: "6tcjn"
 					}),
-					[w.m.BanUser]: e => {
+					[w.n.BanUser]: e => {
 						const {
 							banReason: t
 						} = e;
 						return t
 					},
-					[w.m.AddRemovalReason]: e => {
+					[w.n.AddRemovalReason]: e => {
 						const {
 							description: t
 						} = e;
 						return t
 					},
-					[w.m.InviteModerator]: () => f.fbt._("Mod invite sent", null, {
+					[w.n.InviteModerator]: () => f.fbt._("Mod invite sent", null, {
 						hk: "19xTmf"
 					}),
-					[w.m.MuteUser]: () => f.fbt._("Modmail muted", null, {
+					[w.n.MuteUser]: () => f.fbt._("Modmail muted", null, {
 						hk: "4mxUPa"
 					}),
-					[w.m.RemoveComment]: () => f.fbt._("Comment removed", null, {
+					[w.n.RemoveComment]: () => f.fbt._("Comment removed", null, {
 						hk: "41CO0h"
 					}),
-					[w.m.RemoveContributor]: () => f.fbt._("Removed as contributor", null, {
+					[w.n.RemoveContributor]: () => f.fbt._("Removed as contributor", null, {
 						hk: "33vYlk"
 					}),
-					[w.m.RemoveLink]: () => f.fbt._("Post removed", null, {
+					[w.n.RemoveLink]: () => f.fbt._("Post removed", null, {
 						hk: "1012sS"
 					}),
-					[w.m.RemoveModerator]: () => f.fbt._("Removed as moderator", null, {
+					[w.n.RemoveModerator]: () => f.fbt._("Removed as moderator", null, {
 						hk: "1PZWXB"
 					}),
-					[w.m.RemoveWikiContributor]: () => f.fbt._("Removed as a wiki contributor", null, {
+					[w.n.RemoveWikiContributor]: () => f.fbt._("Removed as a wiki contributor", null, {
 						hk: "9iumD"
 					}),
-					[w.m.SpamComment]: () => f.fbt._("Comment marked as spam", null, {
+					[w.n.SpamComment]: () => f.fbt._("Comment marked as spam", null, {
 						hk: "3Ya0oQ"
 					}),
-					[w.m.SpamLink]: () => f.fbt._("Post marked as spam", null, {
+					[w.n.SpamLink]: () => f.fbt._("Post marked as spam", null, {
 						hk: "1yjDb8"
 					}),
-					[w.m.Spoiler]: () => f.fbt._("Post marked as spoiler", null, {
+					[w.n.Spoiler]: () => f.fbt._("Post marked as spoiler", null, {
 						hk: "JECai"
 					}),
-					[w.m.Sticky]: () => f.fbt._("Post was stickied", null, {
+					[w.n.Sticky]: () => f.fbt._("Post was stickied", null, {
 						hk: "4vkdGE"
 					}),
-					[w.m.UnbanUser]: () => f.fbt._("Unbanned", null, {
+					[w.n.UnbanUser]: () => f.fbt._("Unbanned", null, {
 						hk: "1P5luv"
 					}),
-					[w.m.UninviteModerator]: () => f.fbt._("Mod invite revoked", null, {
+					[w.n.UninviteModerator]: () => f.fbt._("Mod invite revoked", null, {
 						hk: "zyjCA"
 					}),
-					[w.m.UnmuteUser]: () => f.fbt._("Modmail unmuted", null, {
+					[w.n.UnmuteUser]: () => f.fbt._("Modmail unmuted", null, {
 						hk: "496Olb"
 					}),
-					[w.m.Unspoiler]: () => f.fbt._("Post marked as non-spoiler", null, {
+					[w.n.Unspoiler]: () => f.fbt._("Post marked as non-spoiler", null, {
 						hk: "1nWZbp"
 					}),
-					[w.m.Unsticky]: () => f.fbt._("Post was un-stickied", null, {
+					[w.n.Unsticky]: () => f.fbt._("Post was un-stickied", null, {
 						hk: "3b2nJe"
 					}),
-					[w.m.WikiBanned]: () => f.fbt._("Banned from the wiki", null, {
+					[w.n.WikiBanned]: () => f.fbt._("Banned from the wiki", null, {
 						hk: "29ttfV"
 					}),
-					[w.m.WikiContributor]: () => f.fbt._("Added as a wiki contributor", null, {
+					[w.n.WikiContributor]: () => f.fbt._("Added as a wiki contributor", null, {
 						hk: "2IuQMk"
 					}),
-					[w.m.WikiUnbanned]: () => f.fbt._("Unbanned from the wiki", null, {
+					[w.n.WikiUnbanned]: () => f.fbt._("Unbanned from the wiki", null, {
 						hk: "24xAIp"
 					})
 				},
 				xe = {
-					[w.v.BotBan]: () => f.fbt._("Banned by bot", null, {
+					[w.w.BotBan]: () => f.fbt._("Banned by bot", null, {
 						hk: "gc7lV"
 					}),
-					[w.v.PermaBan]: () => f.fbt._("Permanently banned", null, {
+					[w.w.PermaBan]: () => f.fbt._("Permanently banned", null, {
 						hk: "4oNAOs"
 					})
 				};
@@ -2556,48 +2556,48 @@
 				Ce = n.n(Ie);
 			var Ne = e => {
 					const t = {
-							[w.n.Note]: f.fbt._("mod notes", null, {
+							[w.o.Note]: f.fbt._("mod notes", null, {
 								hk: "CN6SZ"
 							}),
-							[w.n.Approval]: f.fbt._("approvals", null, {
+							[w.o.Approval]: f.fbt._("approvals", null, {
 								hk: "AqrdS"
 							}),
-							[w.n.Removal]: f.fbt._("content removals", null, {
+							[w.o.Removal]: f.fbt._("content removals", null, {
 								hk: "kjICL"
 							}),
-							[w.n.Ban]: f.fbt._("bans or unbans", null, {
+							[w.o.Ban]: f.fbt._("bans or unbans", null, {
 								hk: "4jKjdR"
 							}),
-							[w.n.Mute]: f.fbt._("mutes and unmutes", null, {
+							[w.o.Mute]: f.fbt._("mutes and unmutes", null, {
 								hk: "1u2TZT"
 							}),
-							[w.n.Invite]: f.fbt._("invites", null, {
+							[w.o.Invite]: f.fbt._("invites", null, {
 								hk: "r9dPh"
 							}),
-							[w.n.Spam]: f.fbt._("spam removals", null, {
+							[w.o.Spam]: f.fbt._("spam removals", null, {
 								hk: "44iRtH"
 							}),
-							[w.n.ContentChange]: f.fbt._("content edits", null, {
+							[w.o.ContentChange]: f.fbt._("content edits", null, {
 								hk: "1zafY8"
 							}),
-							[w.n.ModAction]: f.fbt._("mod actions", null, {
+							[w.o.ModAction]: f.fbt._("mod actions", null, {
 								hk: "3yLNgz"
 							}),
-							[w.n.All]: f.fbt._("mod actions", null, {
+							[w.o.All]: f.fbt._("mod actions", null, {
 								hk: "2sOss3"
 							})
 						},
 						n = {
-							[w.n.Note]: "user_note",
-							[w.n.Approval]: "approve",
-							[w.n.Removal]: "remove",
-							[w.n.Ban]: "ban",
-							[w.n.Mute]: "mod_mute",
-							[w.n.Invite]: "user",
-							[w.n.Spam]: "spam",
-							[w.n.ContentChange]: "pin",
-							[w.n.ModAction]: "mod",
-							[w.n.All]: "mod"
+							[w.o.Note]: "user_note",
+							[w.o.Approval]: "approve",
+							[w.o.Removal]: "remove",
+							[w.o.Ban]: "ban",
+							[w.o.Mute]: "mod_mute",
+							[w.o.Invite]: "user",
+							[w.o.Spam]: "spam",
+							[w.o.ContentChange]: "pin",
+							[w.o.ModAction]: "mod",
+							[w.o.All]: "mod"
 						},
 						{
 							className: a,
@@ -2625,7 +2625,7 @@
 						className: Ce.a.icon
 					}), r.a.createElement("p", {
 						className: Ce.a.mainLine
-					}, `${b} ${p}`), c === w.n.Note && r.a.createElement("p", {
+					}, `${b} ${p}`), c === w.o.Note && r.a.createElement("p", {
 						className: Ce.a.miscLine
 					}, f.fbt._("Use the field below to create a note.", null, {
 						hk: "1lrCZG"
@@ -2770,7 +2770,7 @@
 							defaultTypeFilter: h,
 							thingId: v
 						} = e,
-						[x, _] = Object(a.useState)(h || w.n.All),
+						[x, _] = Object(a.useState)(h || w.o.All),
 						[g, O] = Object(a.useState)(s),
 						I = Object(o.e)(j.db),
 						C = Object(b.a)(),
@@ -2782,7 +2782,7 @@
 								...e
 							}))
 						},
-						k = x === w.n.All || x === w.n.Note;
+						k = x === w.o.All || x === w.o.Note;
 					Object(a.useEffect)(() => {
 						N(), t(Object(p.q)())
 					}, []);
@@ -2910,7 +2910,7 @@
 						y = !!E && Object(it.e)(E) === u,
 						S = Object(o.e)(e => l ? e.subreddits.models[l] : null),
 						P = Object(o.e)(e => {
-							if (d) return Object(A.g)(e, O.id, l, w.n.All)
+							if (d) return Object(A.g)(e, O.id, l, w.o.All)
 						}),
 						B = Object(a.useCallback)(() => {
 							i(Object(ut.g)(l))
@@ -2957,7 +2957,7 @@
 							}))
 						}, [l, O, s, p]),
 						G = Object(a.useCallback)(e => {
-							e.stopPropagation(), p && p(w.n.Note), l && s(Object(m.a)({
+							e.stopPropagation(), p && p(w.o.Note), l && s(Object(m.a)({
 								subredditId: l,
 								userId: O.id
 							}))
@@ -3378,7 +3378,7 @@
 					const l = Object(o.e)(c.c),
 						u = !!(null == l ? void 0 : l.isModNotesView),
 						[m, b] = Object(a.useState)(!u),
-						[p, f] = Object(a.useState)(w.n.All),
+						[p, f] = Object(a.useState)(w.o.All),
 						h = Object(o.d)();
 					Object(a.useEffect)(() => {
 						h(Object(s.d)(e.userName))
@@ -3388,7 +3388,7 @@
 						e.subredditId && v && h(Object(i.d)(e.subredditId, v))
 					}, [h, e.subredditId, v]);
 					const x = Object(a.useCallback)(e => {
-						b(!m), f(e || w.n.All)
+						b(!m), f(e || w.o.All)
 					}, [m, b]);
 					return !m && e.subredditId && v ? r.a.createElement(He, {
 						className: yt.a.ModUserNotesWrapper,
@@ -6093,72 +6093,72 @@
 			const s = "DEFAULT_MOD_NOTE",
 				i = (e, t) => `LAST_AUTHOR_MOD_NOTE-${e}${t?"-overlay":""}`,
 				c = {
-					[o.v.BotBan]: "#1717604F",
-					[o.v.PermaBan]: "#3E0A514F",
-					[o.v.Ban]: "#5B00414F",
-					[o.v.AbuseWarning]: "#6D001A4F",
-					[o.v.SpamWarning]: "#5423134F",
-					[o.v.SpamWatch]: "#3A26194F",
-					[o.v.SolidContributor]: "#0044414F",
-					[o.v.HelpfulUser]: "#02315C4F",
+					[o.w.BotBan]: "#1717604F",
+					[o.w.PermaBan]: "#3E0A514F",
+					[o.w.Ban]: "#5B00414F",
+					[o.w.AbuseWarning]: "#6D001A4F",
+					[o.w.SpamWarning]: "#5423134F",
+					[o.w.SpamWatch]: "#3A26194F",
+					[o.w.SolidContributor]: "#0044414F",
+					[o.w.HelpfulUser]: "#02315C4F",
 					[s]: "#242424"
 				},
 				d = {
-					[o.v.BotBan]: "#CCD7FF",
-					[o.v.PermaBan]: "#F3CCFF",
-					[o.v.Ban]: "#FFC9D2",
-					[o.v.AbuseWarning]: "#FFD5AE",
-					[o.v.SpamWarning]: "#FFF494",
-					[o.v.SpamWatch]: "#EAD5A2",
-					[o.v.SolidContributor]: "#CBFD9A",
-					[o.v.HelpfulUser]: "#A6EDFF",
+					[o.w.BotBan]: "#CCD7FF",
+					[o.w.PermaBan]: "#F3CCFF",
+					[o.w.Ban]: "#FFC9D2",
+					[o.w.AbuseWarning]: "#FFD5AE",
+					[o.w.SpamWarning]: "#FFF494",
+					[o.w.SpamWatch]: "#EAD5A2",
+					[o.w.SolidContributor]: "#CBFD9A",
+					[o.w.HelpfulUser]: "#A6EDFF",
 					[s]: "#E6E6E6"
 				},
 				l = {
-					[o.v.BotBan]: "bot_fill",
-					[o.v.PermaBan]: "bot_fill",
-					[o.v.Ban]: "ban_fill",
-					[o.v.AbuseWarning]: "spoiler_fill",
-					[o.v.SpamWarning]: "spoiler_fill",
-					[o.v.SpamWatch]: "nsfw_language_fill",
-					[o.v.SolidContributor]: "new_fill",
-					[o.v.HelpfulUser]: "peace_fill",
+					[o.w.BotBan]: "bot_fill",
+					[o.w.PermaBan]: "bot_fill",
+					[o.w.Ban]: "ban_fill",
+					[o.w.AbuseWarning]: "spoiler_fill",
+					[o.w.SpamWarning]: "spoiler_fill",
+					[o.w.SpamWatch]: "nsfw_language_fill",
+					[o.w.SolidContributor]: "new_fill",
+					[o.w.HelpfulUser]: "peace_fill",
 					[s]: "user_note_fill"
 				},
 				u = {
-					[o.v.BotBan]: "#5349DA",
-					[o.v.PermaBan]: "#9C3CAC",
-					[o.v.Ban]: "#DE107F",
-					[o.v.AbuseWarning]: "#FB133A",
-					[o.v.SpamWarning]: "#E79800",
-					[o.v.SpamWatch]: "#9C6926",
-					[o.v.SolidContributor]: "#00A368",
-					[o.v.HelpfulUser]: "#006DC6",
+					[o.w.BotBan]: "#5349DA",
+					[o.w.PermaBan]: "#9C3CAC",
+					[o.w.Ban]: "#DE107F",
+					[o.w.AbuseWarning]: "#FB133A",
+					[o.w.SpamWarning]: "#E79800",
+					[o.w.SpamWatch]: "#9C6926",
+					[o.w.SolidContributor]: "#00A368",
+					[o.w.HelpfulUser]: "#006DC6",
 					[s]: "#818384"
 				},
 				m = {
-					[o.v.BotBan]: () => a.fbt._("Bot Ban", null, {
+					[o.w.BotBan]: () => a.fbt._("Bot Ban", null, {
 						hk: "2kKP5R"
 					}),
-					[o.v.PermaBan]: () => a.fbt._("Perma Ban", null, {
+					[o.w.PermaBan]: () => a.fbt._("Perma Ban", null, {
 						hk: "2NKibN"
 					}),
-					[o.v.Ban]: () => a.fbt._("Ban", null, {
+					[o.w.Ban]: () => a.fbt._("Ban", null, {
 						hk: "4tkpUP"
 					}),
-					[o.v.AbuseWarning]: () => a.fbt._("Abuse Warning", null, {
+					[o.w.AbuseWarning]: () => a.fbt._("Abuse Warning", null, {
 						hk: "3yQJ5"
 					}),
-					[o.v.SpamWarning]: () => a.fbt._("Spam Warning", null, {
+					[o.w.SpamWarning]: () => a.fbt._("Spam Warning", null, {
 						hk: "4sYfYD"
 					}),
-					[o.v.SpamWatch]: () => a.fbt._("Spam Watch", null, {
+					[o.w.SpamWatch]: () => a.fbt._("Spam Watch", null, {
 						hk: "3CoM4o"
 					}),
-					[o.v.SolidContributor]: () => a.fbt._("Good Contributor", null, {
+					[o.w.SolidContributor]: () => a.fbt._("Good Contributor", null, {
 						hk: "31uTvb"
 					}),
-					[o.v.HelpfulUser]: () => a.fbt._("Helpful", null, {
+					[o.w.HelpfulUser]: () => a.fbt._("Helpful", null, {
 						hk: "1iapJ2"
 					})
 				},
@@ -6371,12 +6371,12 @@
 			const o = e => {
 					return !(Object(r.c)(e, {
 						experimentEligibilitySelector: r.a,
-						experimentName: a.ze
+						experimentName: a.Ae
 					}) === a.Qd)
 				},
 				s = e => Object(r.c)(e, {
 					experimentEligibilitySelector: r.a,
-					experimentName: a.Ae
+					experimentName: a.Be
 				}) === a.Qd
 		},
 		"./src/reddit/selectors/muted.ts": function(e, t, n) {
@@ -6556,4 +6556,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/AuthorHovercard.3233f8aadac72e1c15ad.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/AuthorHovercard.6169bf60a54e4f498f8b.js.map

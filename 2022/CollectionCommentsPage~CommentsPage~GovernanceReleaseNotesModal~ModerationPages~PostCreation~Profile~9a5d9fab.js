@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~ModerationPages~PostCreation~Profile~9a5d9fab.711188dbb633086f0d26.js
-// Retrieved at 8/30/2022, 3:10:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~ModerationPages~PostCreation~Profile~9a5d9fab.cccafc08c21241e1d55a.js
+// Retrieved at 8/30/2022, 4:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~ModerationPages~PostCreation~Profile~9a5d9fab"], {
 		"./src/higherOrderComponents/withClickTracking/index.tsx": function(e, t, s) {
@@ -85,16 +85,16 @@
 			const p = Object(r.a)(e => {
 				const t = Object(m.c)(e, {
 					experimentEligibilitySelector: m.a,
-					experimentName: u.He
+					experimentName: u.Ie
 				});
-				return Object(u.sg)(t) ? void 0 : t
+				return Object(u.tg)(t) ? void 0 : t
 			}, e => {
 				const t = Object(m.c)(e, {
 					experimentEligibilitySelector: m.a,
-					experimentName: u.Ie
+					experimentName: u.Je
 				});
-				return Object(u.sg)(t) ? void 0 : t
-			}, (e, t) => e === u.Je.Enabled && t === u.Je.Enabled);
+				return Object(u.tg)(t) ? void 0 : t
+			}, (e, t) => e === u.Ke.Enabled && t === u.Ke.Enabled);
 			var h = s("./src/config.ts");
 			var b = s("./src/reddit/selectors/user.ts");
 			const g = e => {
@@ -611,8 +611,8 @@
 						isVisible: U
 					} = e,
 					G = Object(o.e)(e => Object(C.d)(e, B)),
-					J = G > 0,
-					$ = G < h.length - 1,
+					$ = G > 0,
+					J = G < h.length - 1,
 					Q = Object(p.a)(),
 					K = Object(i.useRef)(null),
 					z = Object(i.useRef)(null),
@@ -652,16 +652,16 @@
 						}))
 					}, [t, B, M]),
 					ae = Object(i.useCallback)(() => {
-						if (!$) return;
+						if (!J) return;
 						const e = G + 1;
 						if (e + 1 >= X) {
 							const e = D(X, h.length);
 							e !== X && Z(e)
 						}
 						ne(e), Q(u.b(B, e)), Q(u.d(B, e + 1)), oe(e)
-					}, [$, G, oe, ne, Q, B, X, h.length]),
+					}, [J, G, oe, ne, Q, B, X, h.length]),
 					de = Object(i.useCallback)(() => {
-						if (!J) return;
+						if (!$) return;
 						const e = G - 1;
 						if (e - 1 <= Y) {
 							const e = k(Y);
@@ -669,7 +669,7 @@
 						}
 						const t = G + 1;
 						ne(e), Q(u.a(B, t)), Q(u.d(B, t - 1)), oe(e)
-					}, [J, G, oe, ne, Q, B, Y]),
+					}, [$, G, oe, ne, Q, B, Y]),
 					le = Object(i.useCallback)(() => {
 						const e = h[G] && h[G].outboundUrl;
 						e && Q(u.c(B, e))
@@ -763,7 +763,7 @@
 				})), !e.shouldBlur && n.a.createElement(n.a.Fragment, null, n.a.createElement(L, {
 					onClick: de,
 					setFocusTo: z,
-					hasMoreSlides: J,
+					hasMoreSlides: $,
 					title: S._("Previous", null, {
 						hk: "3dZcTi"
 					}),
@@ -772,7 +772,7 @@
 				}), n.a.createElement(L, {
 					onClick: ae,
 					setFocusTo: z,
-					hasMoreSlides: $,
+					hasMoreSlides: J,
 					title: S._("Next", null, {
 						hk: "3Ajk1H"
 					}),
@@ -1111,8 +1111,8 @@
 				F = s("./src/reddit/components/PostList/index.tsx"),
 				U = s("./src/reddit/components/RawHTMLDisplay/Media.tsx"),
 				G = s("./src/reddit/components/RichTextJson/index.tsx"),
-				J = s("./src/reddit/constants/componentSizes.ts"),
-				$ = s("./src/reddit/constants/screenWidths.ts"),
+				$ = s("./src/reddit/constants/componentSizes.ts"),
+				J = s("./src/reddit/constants/screenWidths.ts"),
 				Q = s("./src/reddit/contexts/PageLayer/index.tsx"),
 				K = s("./src/reddit/helpers/canPreviewSelfText/index.ts"),
 				z = s("./src/reddit/helpers/getRichTextContent/index.ts"),
@@ -1176,7 +1176,7 @@
 				ye = 1200,
 				Oe = 75,
 				we = "player.js",
-				Ce = J.q + J.p,
+				Ce = $.q + $.p,
 				Ie = e => u.a.createElement("div", {
 					className: Object(f.a)(be.a.visibilityWrapper, {
 						[be.a.displayNone]: !e.isVisible
@@ -1419,7 +1419,7 @@
 				getVideoExpandoMaxDimensions() {
 					let e, t = Math.max(te.j, this.state.viewportHeight),
 						s = Math.min(ye, 16 * t / 9);
-					s === ye && (t = 9 * ye / 16), e = this.state.viewportWidth >= $.c ? this.state.viewportWidth < J.k ? this.state.viewportWidth - Ce - 2 * Oe : this.state.viewportWidth - Ce - J.e - 2 * Oe : this.state.viewportWidth - 2 * Oe;
+					s === ye && (t = 9 * ye / 16), e = this.state.viewportWidth >= J.c ? this.state.viewportWidth < $.k ? this.state.viewportWidth - Ce - 2 * Oe : this.state.viewportWidth - Ce - $.e - 2 * Oe : this.state.viewportWidth - 2 * Oe;
 					const i = this.state.viewportHeight - 2 * Oe;
 					if (s > e) {
 						t *= e / s, s = e
@@ -1536,8 +1536,8 @@
 						post: j,
 						showCentered: N,
 						showFull: P = !1,
-						showPromotedCTA: J,
-						subredditOrProfileDisplayText: $
+						showPromotedCTA: $,
+						subredditOrProfileDisplayText: J
 					} = this.props, {
 						canLoadContent: Q,
 						isBackgrounded: q,
@@ -1883,13 +1883,13 @@
 								post: j,
 								postId: j.id,
 								postTitle: j.title,
-								subredditName: $,
+								subredditName: J,
 								galleryItems: j.media.gallery ? j.media.gallery.items : [],
 								mediaMetadata: j.media.mediaMetadata || {},
 								imageHeight: x,
 								captionHeight: E,
 								isSponsored: j.isSponsored,
-								showPromotedCTA: !!J,
+								showPromotedCTA: !!$,
 								className: this.props.imageBoxClassName,
 								isListing: p,
 								isNSFW: f,
@@ -2388,4 +2388,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~ModerationPages~PostCreation~Profile~9a5d9fab.711188dbb633086f0d26.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~ModerationPages~PostCreation~Profile~9a5d9fab.cccafc08c21241e1d55a.js.map

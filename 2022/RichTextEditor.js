@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/RichTextEditor.b123072b1776d27392da.js
-// Retrieved at 8/30/2022, 3:10:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/RichTextEditor.cf5dfd85ddbf7b3f5e9a.js
+// Retrieved at 8/30/2022, 4:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["RichTextEditor", "ContributorRequestButton"], {
 		"./node_modules/autosize/dist/autosize.js": function(e, t, n) {
@@ -872,7 +872,7 @@
 						const v = x(),
 							k = Object(ne.d)(v, {
 								postId: i
-							}) && Object(se.h)(v),
+							}) && Object(se.i)(v),
 							j = k ? Object(q.a)() : d,
 							w = Object(re.e)(v, {
 								commentId: j
@@ -1002,7 +1002,7 @@
 						commentId: m
 					}), C = y && Object(ne.d)(x, {
 						postId: y.postId
-					}) && Object(se.h)(x), E = C ? Object(q.a)() : b, O = Object(re.e)(x, {
+					}) && Object(se.i)(x), E = C ? Object(q.a)() : b, O = Object(re.e)(x, {
 						commentId: E
 					}), v = Object(he.k)(x);
 					if (!v) return;
@@ -6066,29 +6066,29 @@
 					if (Object(i.a)(e)) return !1;
 					return Object(r.c)(e, {
 						experimentEligibilitySelector: s.e,
-						experimentName: o.ng
+						experimentName: o.og
 					}) === o.Qd
 				},
 				c = e => {
 					return Object(r.c)(e, {
 						experimentEligibilitySelector: s.e,
-						experimentName: o.og
+						experimentName: o.pg
 					}) === o.Qd
 				},
 				d = e => {
 					if (Object(i.a)(e)) return !1;
 					const t = Object(r.c)(e, {
 						experimentEligibilitySelector: s.e,
-						experimentName: o.mg
+						experimentName: o.ng
 					});
-					return t === o.cg.TypingIndicators || t === o.cg.IndicatorsPlusCTA
+					return t === o.dg.TypingIndicators || t === o.dg.IndicatorsPlusCTA
 				},
 				l = e => {
 					if (Object(i.a)(e)) return !1;
 					const t = Object(s.d)(e, {
-						experimentName: o.mg
+						experimentName: o.ng
 					});
-					return (null == t ? void 0 : t.variant) === o.cg.IndicatorsPlusCTA
+					return (null == t ? void 0 : t.variant) === o.dg.IndicatorsPlusCTA
 				}
 		},
 		"./src/redditGQL/operations/CommentToxicity.json": function(e) {
@@ -6105,4 +6105,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RichTextEditor.b123072b1776d27392da.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RichTextEditor.cf5dfd85ddbf7b3f5e9a.js.map

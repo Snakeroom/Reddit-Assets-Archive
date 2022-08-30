@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-BlankPost.8361155f304f174f8217.js
-// Retrieved at 8/30/2022, 2:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-BlankPost.9b2ecfc9b1e42d28ef05.js
+// Retrieved at 8/30/2022, 4:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-BlankPost"], {
 		"./node_modules/@reddit/i18n-tools/runtime/helpers/locale/index.js": function(e, t, s) {
@@ -1277,7 +1277,7 @@
 						const e = _({
 							username: C,
 							profileSort: w,
-							filter: te.B.Posts,
+							filter: te.C.Posts,
 							shouldUseGqlCursor: !0
 						});
 						F = null === (O = null === (y = null === (i = null == (M = await Object(Q.a)("profilePosts", () => P(r.gqlContext(), e))) ? void 0 : M.body) || void 0 === i ? void 0 : i.data) || void 0 === y ? void 0 : y.redditorInfoByName) || void 0 === O ? void 0 : O.__typename
@@ -1313,7 +1313,7 @@
 						const e = _({
 								username: C,
 								profileSort: w,
-								filter: te.B.Posts
+								filter: te.C.Posts
 							}),
 							t = await P(r.gqlContext(), e);
 						if (t.ok && t.body) {
@@ -1389,7 +1389,7 @@
 						const e = _({
 							username: m,
 							profileSort: p,
-							filter: te.B.Posts,
+							filter: te.C.Posts,
 							loadMoreData: f,
 							shouldUseGqlCursor: !0
 						});
@@ -1427,7 +1427,7 @@
 						const e = _({
 								username: m,
 								profileSort: p,
-								filter: te.B.Posts,
+								filter: te.C.Posts,
 								loadMoreData: f
 							}),
 							t = await P(i(), e);
@@ -2907,4 +2907,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-BlankPost.8361155f304f174f8217.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-BlankPost.9b2ecfc9b1e42d28ef05.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compo~bd4baca2.b04a276e3db59b820afa.js
-// Retrieved at 8/30/2022, 3:10:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compo~bd4baca2.87771780ded27335bb98.js
+// Retrieved at 8/30/2022, 4:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compo~bd4baca2"], {
 		"./src/higherOrderComponents/withAdClickLocation/Locations.ts": function(e, t, s) {
@@ -454,7 +454,7 @@
 						const e = T({
 							username: P,
 							profileSort: C,
-							filter: te.B.Posts,
+							filter: te.C.Posts,
 							shouldUseGqlCursor: !0
 						});
 						R = null === (y = null === (_ = null === (o = null == (N = await Object(z.a)("profilePosts", () => j(r.gqlContext(), e))) ? void 0 : N.body) || void 0 === o ? void 0 : o.data) || void 0 === _ ? void 0 : _.redditorInfoByName) || void 0 === y ? void 0 : y.__typename
@@ -490,7 +490,7 @@
 						const e = T({
 								username: P,
 								profileSort: C,
-								filter: te.B.Posts
+								filter: te.C.Posts
 							}),
 							t = await j(r.gqlContext(), e);
 						if (t.ok && t.body) {
@@ -566,7 +566,7 @@
 						const e = T({
 							username: b,
 							profileSort: m,
-							filter: te.B.Posts,
+							filter: te.C.Posts,
 							loadMoreData: h,
 							shouldUseGqlCursor: !0
 						});
@@ -604,7 +604,7 @@
 						const e = T({
 								username: b,
 								profileSort: m,
-								filter: te.B.Posts,
+								filter: te.C.Posts,
 								loadMoreData: h
 							}),
 							t = await j(o(), e);
@@ -4115,4 +4115,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compo~bd4baca2.b04a276e3db59b820afa.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compo~bd4baca2.87771780ded27335bb98.js.map

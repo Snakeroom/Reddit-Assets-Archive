@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Frontpage.423f44ef4f04927adf55.js
-// Retrieved at 8/30/2022, 3:10:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Frontpage.24f8a021b39eea3635a3.js
+// Retrieved at 8/30/2022, 4:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Frontpage"], {
 		"./node_modules/intersection-observer/intersection-observer.js": function(e, t) {
@@ -556,7 +556,7 @@
 						},
 						forceGeopopular: !0,
 						includeCommunityDUs: !1,
-						includeInterestTopics: !!p && !Object(b.sg)(p),
+						includeInterestTopics: !!p && !Object(b.tg)(p),
 						includeFeaturedAnnouncements: !0,
 						includeLiveEvents: !0,
 						includeIdentity: f && !(null === (s = null === (a = e.user.account) || void 0 === a ? void 0 : a.karma) || void 0 === s ? void 0 : s.total),
@@ -568,7 +568,7 @@
 							variant: null == v ? void 0 : v.toLowerCase()
 						}
 					};
-					return x ? (y && (k || E !== b.ub.LoggedOutHomeDefpop) || (C.sort = Z.y.Best, C.feedRankingContext.variant = E), C.feedRankingContext.loggedOutAllowNsfw = Object(R.a)(e)) : d && (C.sort = d.toUpperCase()), u && (C.range = u.toUpperCase()), c ? C.pageSize = Object(g.a)(i) : l && (C.pageSize = l), _ && _.ad && (C.forceAds = {
+					return x ? (y && (k || E !== b.ub.LoggedOutHomeDefpop) || (C.sort = Z.z.Best, C.feedRankingContext.variant = E), C.feedRankingContext.loggedOutAllowNsfw = Object(R.a)(e)) : d && (C.sort = d.toUpperCase()), u && (C.range = u.toUpperCase()), c ? C.pageSize = Object(g.a)(i) : l && (C.pageSize = l), _ && _.ad && (C.forceAds = {
 						ad: _.ad
 					}), n && (C.after = Object(o.a)(n)), C
 				},
@@ -2776,7 +2776,7 @@
 					experimentName: Fe.ue,
 					experimentEligibilitySelector: Ze.a
 				}), qe.a),
-				We = Object(u.a)(Ve, e => e === Fe.we.Enabled);
+				We = Object(u.a)(Ve, e => e === Fe.xe.Enabled);
 			var He = a("./src/reddit/selectors/experiments/loggedOutOneFeed.ts"),
 				Ge = a("./src/reddit/selectors/experiments/publicAccessNetwork.ts"),
 				Ke = a("./src/reddit/selectors/user.ts");
@@ -5493,20 +5493,6 @@
 					e.STYLES_ENTRY_BANNER = "styles_entry_banner", e.CREATE_POST_BANNER = "create_post_banner", e.AWARDED_LISTING_BANNER = "awarded_listing_banner", e.AVATAR_LISTING_BANNER = "avatar_listing_banner"
 				}(s || (s = {}))
 		},
-		"./src/reddit/constants/chat.ts": function(e, t, a) {
-			"use strict";
-			a.d(t, "a", (function() {
-				return s
-			}));
-			var s;
-			! function(e) {
-				e.None = "none", e.Compact = "compact", e.Full = "full_screen"
-			}(s || (s = {}));
-			var n;
-			! function(e) {
-				e.SubredditChatNotifcationFtux = "chat_subreddit_notification_ftux"
-			}(n || (n = {}))
-		},
 		"./src/reddit/constants/subredditLeaderboard.ts": function(e, t, a) {
 			"use strict";
 			a.d(t, "c", (function() {
@@ -6105,7 +6091,7 @@
 					const s = Object(r.j)(e, {
 							streamIdFromPath: t.post.id
 						}),
-						c = t.chat_disabled || a.chatState === n.a.None;
+						c = t.chat_disabled || a.chatState === n.c.None;
 					return {
 						id: a.id,
 						sessionDurationMs: a.sessionDurationMs,
@@ -6116,7 +6102,7 @@
 						timestampMs: a.timestampMs,
 						startTimeMs: a.startTimeMs,
 						volume: a.volume,
-						chatState: c ? n.a.None : n.a.Compact,
+						chatState: c ? n.c.None : n.c.Compact,
 						scrubbingStartMs: a.scrubbingStartMs,
 						scrubbingEndMs: a.scrubbingEndMs,
 						playerType: a.playerType
@@ -7390,12 +7376,12 @@
 			const r = e => {
 					return !(Object(n.c)(e, {
 						experimentEligibilitySelector: n.a,
-						experimentName: s.ze
+						experimentName: s.Ae
 					}) === s.Qd)
 				},
 				c = e => Object(n.c)(e, {
 					experimentEligibilitySelector: n.a,
-					experimentName: s.Ae
+					experimentName: s.Be
 				}) === s.Qd
 		},
 		"./src/reddit/selectors/experiments/inAppNotification.ts": function(e, t, a) {
@@ -7588,4 +7574,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Frontpage.423f44ef4f04927adf55.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Frontpage.24f8a021b39eea3635a3.js.map

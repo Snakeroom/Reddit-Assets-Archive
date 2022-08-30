@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/OverlayBlockUser.08ba18ed7bc280e12b1d.js
-// Retrieved at 8/30/2022, 3:10:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/OverlayBlockUser.d4d89e0d46f384043d64.js
+// Retrieved at 8/30/2022, 4:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["OverlayBlockUser"], {
 		"./src/chat/components/OverlayBlockUser/index.m.less": function(e, t, n) {
@@ -30,7 +30,7 @@
 				}),
 				b = Object(a.b)(k, e => ({
 					onChannelBlock: t => {
-						e(l.n(t)), e(c.W(t))
+						e(l.n(t)), e(c.Y(t))
 					}
 				}))(e => {
 					const {
@@ -64,4 +64,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/OverlayBlockUser.08ba18ed7bc280e12b1d.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/OverlayBlockUser.d4d89e0d46f384043d64.js.map

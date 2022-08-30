@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/vendors~Chat~RedesignChat.d511a7b399cd0a53330e.js
-// Retrieved at 6/27/2022, 2:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/vendors~Chat~RedesignChat.53cd3b091135f8f64886.js
+// Retrieved at 8/30/2022, 4:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["vendors~Chat~RedesignChat"], {
 		"./node_modules/axios/index.js": function(e, n, t) {
@@ -572,8 +572,254 @@
 				}
 			}
 		},
+		"./node_modules/classnames/index.js": function(e, n, t) {
+			var r;
+			! function() {
+				"use strict";
+				var t = {}.hasOwnProperty;
+
+				function i() {
+					for (var e = [], n = 0; n < arguments.length; n++) {
+						var r = arguments[n];
+						if (r) {
+							var s = typeof r;
+							if ("string" === s || "number" === s) e.push(r);
+							else if (Array.isArray(r)) {
+								if (r.length) {
+									var a = i.apply(null, r);
+									a && e.push(a)
+								}
+							} else if ("object" === s)
+								if (r.toString === Object.prototype.toString)
+									for (var o in r) t.call(r, o) && r[o] && e.push(o);
+								else e.push(r.toString())
+						}
+					}
+					return e.join(" ")
+				}
+				e.exports ? (i.default = i, e.exports = i) : void 0 === (r = function() {
+					return i
+				}.apply(n, [])) || (e.exports = r)
+			}()
+		},
 		"./node_modules/form-data/lib/browser.js": function(e, n) {
 			e.exports = "object" == typeof self ? self.FormData : window.FormData
+		},
+		"./node_modules/intersection-observer/intersection-observer.js": function(e, n) {
+			! function(e, n) {
+				"use strict";
+				if ("IntersectionObserver" in e && "IntersectionObserverEntry" in e && "intersectionRatio" in e.IntersectionObserverEntry.prototype) "isIntersecting" in e.IntersectionObserverEntry.prototype || Object.defineProperty(e.IntersectionObserverEntry.prototype, "isIntersecting", {
+					get: function() {
+						return this.intersectionRatio > 0
+					}
+				});
+				else {
+					var t = [];
+					i.prototype.THROTTLE_TIMEOUT = 100, i.prototype.POLL_INTERVAL = null, i.prototype.observe = function(e) {
+						if (!this._observationTargets.some((function(n) {
+								return n.element == e
+							}))) {
+							if (!e || 1 != e.nodeType) throw new Error("target must be an Element");
+							this._registerInstance(), this._observationTargets.push({
+								element: e,
+								entry: null
+							}), this._monitorIntersections(), this._checkForIntersections()
+						}
+					}, i.prototype.unobserve = function(e) {
+						this._observationTargets = this._observationTargets.filter((function(n) {
+							return n.element != e
+						})), this._observationTargets.length || (this._unmonitorIntersections(), this._unregisterInstance())
+					}, i.prototype.disconnect = function() {
+						this._observationTargets = [], this._unmonitorIntersections(), this._unregisterInstance()
+					}, i.prototype.takeRecords = function() {
+						var e = this._queuedEntries.slice();
+						return this._queuedEntries = [], e
+					}, i.prototype._initThresholds = function(e) {
+						var n = e || [0];
+						return Array.isArray(n) || (n = [n]), n.sort().filter((function(e, n, t) {
+							if ("number" != typeof e || isNaN(e) || e < 0 || e > 1) throw new Error("threshold must be a number between 0 and 1 inclusively");
+							return e !== t[n - 1]
+						}))
+					}, i.prototype._parseRootMargin = function(e) {
+						var n = (e || "0px").split(/\s+/).map((function(e) {
+							var n = /^(-?\d*\.?\d+)(px|%)$/.exec(e);
+							if (!n) throw new Error("rootMargin must be specified in pixels or percent");
+							return {
+								value: parseFloat(n[1]),
+								unit: n[2]
+							}
+						}));
+						return n[1] = n[1] || n[0], n[2] = n[2] || n[0], n[3] = n[3] || n[1], n
+					}, i.prototype._monitorIntersections = function() {
+						this._monitoringIntersections || (this._monitoringIntersections = !0, this.POLL_INTERVAL ? this._monitoringInterval = setInterval(this._checkForIntersections, this.POLL_INTERVAL) : (s(e, "resize", this._checkForIntersections, !0), s(n, "scroll", this._checkForIntersections, !0), "MutationObserver" in e && (this._domObserver = new MutationObserver(this._checkForIntersections), this._domObserver.observe(n, {
+							attributes: !0,
+							childList: !0,
+							characterData: !0,
+							subtree: !0
+						}))))
+					}, i.prototype._unmonitorIntersections = function() {
+						this._monitoringIntersections && (this._monitoringIntersections = !1, clearInterval(this._monitoringInterval), this._monitoringInterval = null, a(e, "resize", this._checkForIntersections, !0), a(n, "scroll", this._checkForIntersections, !0), this._domObserver && (this._domObserver.disconnect(), this._domObserver = null))
+					}, i.prototype._checkForIntersections = function() {
+						var n = this._rootIsInDom(),
+							t = n ? this._getRootRect() : {
+								top: 0,
+								bottom: 0,
+								left: 0,
+								right: 0,
+								width: 0,
+								height: 0
+							};
+						this._observationTargets.forEach((function(i) {
+							var s = i.element,
+								a = o(s),
+								l = this._rootContainsTarget(s),
+								u = i.entry,
+								c = n && l && this._computeTargetAndRootIntersection(s, t),
+								d = i.entry = new r({
+									time: e.performance && performance.now && performance.now(),
+									target: s,
+									boundingClientRect: a,
+									rootBounds: t,
+									intersectionRect: c
+								});
+							u ? n && l ? this._hasCrossedThreshold(u, d) && this._queuedEntries.push(d) : u && u.isIntersecting && this._queuedEntries.push(d) : this._queuedEntries.push(d)
+						}), this), this._queuedEntries.length && this._callback(this.takeRecords(), this)
+					}, i.prototype._computeTargetAndRootIntersection = function(t, r) {
+						if ("none" != e.getComputedStyle(t).display) {
+							for (var i, s, a, l, c, d, h, p, f = o(t), _ = u(t), g = !1; !g;) {
+								var y = null,
+									m = 1 == _.nodeType ? e.getComputedStyle(_) : {};
+								if ("none" == m.display) return;
+								if (_ == this.root || _ == n ? (g = !0, y = r) : _ != n.body && _ != n.documentElement && "visible" != m.overflow && (y = o(_)), y && (i = y, s = f, a = void 0, l = void 0, c = void 0, d = void 0, h = void 0, p = void 0, a = Math.max(i.top, s.top), l = Math.min(i.bottom, s.bottom), c = Math.max(i.left, s.left), d = Math.min(i.right, s.right), p = l - a, !(f = (h = d - c) >= 0 && p >= 0 && {
+										top: a,
+										bottom: l,
+										left: c,
+										right: d,
+										width: h,
+										height: p
+									}))) break;
+								_ = u(_)
+							}
+							return f
+						}
+					}, i.prototype._getRootRect = function() {
+						var e;
+						if (this.root) e = o(this.root);
+						else {
+							var t = n.documentElement,
+								r = n.body;
+							e = {
+								top: 0,
+								left: 0,
+								right: t.clientWidth || r.clientWidth,
+								width: t.clientWidth || r.clientWidth,
+								bottom: t.clientHeight || r.clientHeight,
+								height: t.clientHeight || r.clientHeight
+							}
+						}
+						return this._expandRectByRootMargin(e)
+					}, i.prototype._expandRectByRootMargin = function(e) {
+						var n = this._rootMarginValues.map((function(n, t) {
+								return "px" == n.unit ? n.value : n.value * (t % 2 ? e.width : e.height) / 100
+							})),
+							t = {
+								top: e.top - n[0],
+								right: e.right + n[1],
+								bottom: e.bottom + n[2],
+								left: e.left - n[3]
+							};
+						return t.width = t.right - t.left, t.height = t.bottom - t.top, t
+					}, i.prototype._hasCrossedThreshold = function(e, n) {
+						var t = e && e.isIntersecting ? e.intersectionRatio || 0 : -1,
+							r = n.isIntersecting ? n.intersectionRatio || 0 : -1;
+						if (t !== r)
+							for (var i = 0; i < this.thresholds.length; i++) {
+								var s = this.thresholds[i];
+								if (s == t || s == r || s < t != s < r) return !0
+							}
+					}, i.prototype._rootIsInDom = function() {
+						return !this.root || l(n, this.root)
+					}, i.prototype._rootContainsTarget = function(e) {
+						return l(this.root || n, e)
+					}, i.prototype._registerInstance = function() {
+						t.indexOf(this) < 0 && t.push(this)
+					}, i.prototype._unregisterInstance = function() {
+						var e = t.indexOf(this); - 1 != e && t.splice(e, 1)
+					}, e.IntersectionObserver = i, e.IntersectionObserverEntry = r
+				}
+
+				function r(e) {
+					this.time = e.time, this.target = e.target, this.rootBounds = e.rootBounds, this.boundingClientRect = e.boundingClientRect, this.intersectionRect = e.intersectionRect || {
+						top: 0,
+						bottom: 0,
+						left: 0,
+						right: 0,
+						width: 0,
+						height: 0
+					}, this.isIntersecting = !!e.intersectionRect;
+					var n = this.boundingClientRect,
+						t = n.width * n.height,
+						r = this.intersectionRect,
+						i = r.width * r.height;
+					this.intersectionRatio = t ? i / t : this.isIntersecting ? 1 : 0
+				}
+
+				function i(e, n) {
+					var t, r, i, s = n || {};
+					if ("function" != typeof e) throw new Error("callback must be a function");
+					if (s.root && 1 != s.root.nodeType) throw new Error("root must be an Element");
+					this._checkForIntersections = (t = this._checkForIntersections.bind(this), r = this.THROTTLE_TIMEOUT, i = null, function() {
+						i || (i = setTimeout((function() {
+							t(), i = null
+						}), r))
+					}), this._callback = e, this._observationTargets = [], this._queuedEntries = [], this._rootMarginValues = this._parseRootMargin(s.rootMargin), this.thresholds = this._initThresholds(s.threshold), this.root = s.root || null, this.rootMargin = this._rootMarginValues.map((function(e) {
+						return e.value + e.unit
+					})).join(" ")
+				}
+
+				function s(e, n, t, r) {
+					"function" == typeof e.addEventListener ? e.addEventListener(n, t, r || !1) : "function" == typeof e.attachEvent && e.attachEvent("on" + n, t)
+				}
+
+				function a(e, n, t, r) {
+					"function" == typeof e.removeEventListener ? e.removeEventListener(n, t, r || !1) : "function" == typeof e.detatchEvent && e.detatchEvent("on" + n, t)
+				}
+
+				function o(e) {
+					var n;
+					try {
+						n = e.getBoundingClientRect()
+					} catch (t) {}
+					return n ? (n.width && n.height || (n = {
+						top: n.top,
+						right: n.right,
+						bottom: n.bottom,
+						left: n.left,
+						width: n.right - n.left,
+						height: n.bottom - n.top
+					}), n) : {
+						top: 0,
+						bottom: 0,
+						left: 0,
+						right: 0,
+						width: 0,
+						height: 0
+					}
+				}
+
+				function l(e, n) {
+					for (var t = n; t;) {
+						if (t == e) return !0;
+						t = u(t)
+					}
+					return !1
+				}
+
+				function u(e) {
+					var n = e.parentNode;
+					return n && 11 == n.nodeType && n.host ? n.host : n
+				}
+			}(window, document)
 		},
 		"./node_modules/linkify-it/index.js": function(e, n, t) {
 			"use strict";
@@ -998,7 +1244,7 @@
 				return l(e) && "fixed" !== h(e).position ? e.offsetParent : null
 			}
 
-			function C(e) {
+			function E(e) {
 				for (var n = s(e), t = v(e); t && m(t) && "static" === h(t).position;) t = v(t);
 				return t && "body" === u(t) && "static" === h(t).position ? n : t || function(e) {
 					for (var n = g(e); l(n) && ["html", "body"].indexOf(u(n)) < 0;) {
@@ -1009,12 +1255,12 @@
 					return null
 				}(e) || n
 			}
-			var E = "top",
+			var C = "top",
 				b = "bottom",
 				A = "right",
 				U = "left",
 				k = "auto",
-				S = [E, b, A, U],
+				S = [C, b, A, U],
 				I = "start",
 				N = "end",
 				O = "clippingParents",
@@ -1133,7 +1379,7 @@
 										t = e.popper;
 									if (H(n, t)) {
 										l.rects = {
-											reference: f(n, C(t), "fixed" === l.options.strategy),
+											reference: f(n, E(t), "fixed" === l.options.strategy),
 											popper: _(t)
 										}, l.reset = !1, l.placement = l.options.placement, l.orderedModifiers.forEach((function(e) {
 											return l.modifiersData[e.name] = Object.assign({}, e.data)
@@ -1207,7 +1453,7 @@
 					o = t.x + t.width / 2 - r.width / 2,
 					l = t.y + t.height / 2 - r.height / 2;
 				switch (s) {
-					case E:
+					case C:
 						n = {
 							x: o,
 							y: t.y - r.height
@@ -1279,11 +1525,11 @@
 					f = a.hasOwnProperty("x"),
 					_ = a.hasOwnProperty("y"),
 					g = U,
-					y = E,
+					y = C,
 					m = window;
 				if (u) {
-					var v = C(t);
-					v === s(t) && (v = c(t)), i === E && (y = b, p -= v.clientHeight - r.height, p *= l ? 1 : -1), i === U && (g = A, h -= v.clientWidth - r.width, h *= l ? 1 : -1)
+					var v = E(t);
+					v === s(t) && (v = c(t)), i === C && (y = b, p -= v.clientHeight - r.height, p *= l ? 1 : -1), i === U && (g = A, h -= v.clientWidth - r.width, h *= l ? 1 : -1)
 				}
 				var k, S = Object.assign({
 					position: o
@@ -1373,7 +1619,7 @@
 			function ee(e, n, t) {
 				var r = "clippingParents" === n ? function(e) {
 						var n = y(e),
-							t = ["absolute", "fixed"].indexOf(h(e).position) >= 0 && l(e) ? C(e) : e;
+							t = ["absolute", "fixed"].indexOf(h(e).position) >= 0 && l(e) ? E(e) : e;
 						return o(t) ? n.filter((function(e) {
 							return o(e) && Z(e, t)
 						})) : []
@@ -1419,11 +1665,11 @@
 					y = void 0 === g ? 0 : g,
 					m = ne("number" != typeof y ? y : te(y, S)),
 					v = p === T ? w : T,
-					C = e.elements.reference,
+					E = e.elements.reference,
 					U = e.rects.popper,
 					k = e.elements[_ ? v : p],
 					I = ee(o(k) ? k : k.contextElement || c(e.elements.popper), l, d),
-					N = i(C),
+					N = i(E),
 					M = q({
 						reference: N,
 						element: U,
@@ -1443,7 +1689,7 @@
 					var H = F[s];
 					Object.keys(D).forEach((function(e) {
 						var n = [A, b].indexOf(e) >= 0 ? 1 : -1,
-							t = [E, b].indexOf(e) >= 0 ? "y" : "x";
+							t = [C, b].indexOf(e) >= 0 ? "y" : "x";
 						D[e] += H[t] * n
 					}))
 				}
@@ -1467,7 +1713,7 @@
 			}
 
 			function ae(e) {
-				return [E, A, b, U].some((function(n) {
+				return [C, A, b, U].some((function(n) {
 					return e[n] >= 0
 				}))
 			}
@@ -1601,7 +1847,7 @@
 								a = L.reduce((function(e, t) {
 									return e[t] = function(e, n, t) {
 										var r = j(e),
-											i = [U, E].indexOf(r) >= 0 ? -1 : 1,
+											i = [U, C].indexOf(r) >= 0 ? -1 : 1,
 											s = "function" == typeof t ? t(Object.assign(Object.assign({}, n), {}, {
 												placement: e
 											})) : t,
@@ -1669,11 +1915,11 @@
 											flipVariations: f,
 											allowedAutoPlacements: _
 										}) : t)
-									}), []), C = n.rects.reference, N = n.rects.popper, O = new Map, R = !0, T = v[0], w = 0; w < v.length; w++) {
+									}), []), E = n.rects.reference, N = n.rects.popper, O = new Map, R = !0, T = v[0], w = 0; w < v.length; w++) {
 									var P = v[w],
 										D = j(P),
 										F = B(P) === I,
-										H = [E, b].indexOf(D) >= 0,
+										H = [C, b].indexOf(D) >= 0,
 										x = H ? "width" : "height",
 										G = re(n, {
 											placement: P,
@@ -1682,8 +1928,8 @@
 											altBoundary: h,
 											padding: u
 										}),
-										z = H ? F ? A : U : F ? b : E;
-									C[x] > N[x] && (z = W(z));
+										z = H ? F ? A : U : F ? b : C;
+									E[x] > N[x] && (z = W(z));
 									var q = W(z),
 										Q = [];
 									if (s && Q.push(G[D] <= 0), o && Q.push(G[z] <= 0, G[q] <= 0), Q.every((function(e) {
@@ -1756,7 +2002,7 @@
 								};
 							if (O) {
 								if (s) {
-									var L = "y" === S ? E : U,
+									var L = "y" === S ? C : U,
 										P = "y" === S ? b : A,
 										D = "y" === S ? "height" : "width",
 										F = O[S],
@@ -1781,7 +2027,7 @@
 										Z = ie(0, R[D], K[D]),
 										X = k ? R[D] / 2 - G - Z - V - w : q - Z - V - w,
 										$ = k ? -R[D] / 2 + G + Z + J + w : Q + Z + J + w,
-										ee = n.elements.arrow && C(n.elements.arrow),
+										ee = n.elements.arrow && E(n.elements.arrow),
 										ne = ee ? "y" === S ? ee.clientTop || 0 : ee.clientLeft || 0 : 0,
 										te = n.modifiersData.offset ? n.modifiersData.offset[n.placement][S] : 0,
 										se = O[S] + X - te - ne,
@@ -1790,7 +2036,7 @@
 									O[S] = oe, M[S] = oe - F
 								}
 								if (o) {
-									var le = "x" === S ? E : U,
+									var le = "x" === S ? C : U,
 										ue = "x" === S ? b : A,
 										ce = O[N],
 										de = ie(ce + y[le], ce, ce - y[ue]);
@@ -1815,11 +2061,11 @@
 							if (i && s) {
 								var u = t.modifiersData[r + "#persistent"].padding,
 									c = _(i),
-									d = "y" === o ? E : U,
+									d = "y" === o ? C : U,
 									h = "y" === o ? b : A,
 									p = t.rects.reference[l] + t.rects.reference[o] - s[o] - t.rects.popper[l],
 									f = s[o] - t.rects.reference[o],
-									g = C(i),
+									g = E(i),
 									y = g ? "y" === o ? g.clientHeight || 0 : g.clientWidth || 0 : 0,
 									m = p / 2 - f / 2,
 									v = u[d],
@@ -2150,8 +2396,8 @@
 						}
 					}
 
-					function C(e, n, t) {
-						return (C = "undefined" != typeof Reflect && Reflect.get ? Reflect.get : function(e, n, t) {
+					function E(e, n, t) {
+						return (E = "undefined" != typeof Reflect && Reflect.get ? Reflect.get : function(e, n, t) {
 							if (e = function(e, n) {
 									for (; !Object.prototype.hasOwnProperty.call(e, n) && null !== (e = p(e)););
 									return e
@@ -2159,7 +2405,7 @@
 						})(e, n, t || e)
 					}
 
-					function E(e, n) {
+					function C(e, n) {
 						return function(e) {
 							if (Array.isArray(e)) return e
 						}(e) || function(e, n) {
@@ -2957,7 +3203,7 @@
 														validateStatus: a._validateStatus
 													})
 											} else {
-												var v, C, E, b = {
+												var v, E, C, b = {
 													method: n,
 													headers: d
 												};
@@ -2965,10 +3211,10 @@
 													case "GET":
 														break;
 													case "POST":
-														c instanceof t ? ("function" == typeof AbortController && (E = (v = new AbortController).signal, b.signal = E, C = a.cls.FileMessageQueue, (E = i.upload.reqId) && (h.push({
+														c instanceof t ? ("function" == typeof AbortController && (C = (v = new AbortController).signal, b.signal = C, E = a.cls.FileMessageQueue, (C = i.upload.reqId) && (h.push({
 															level: q.supportedLogLevels.DEBUG,
-															messages: ["request id:", E]
-														}), C.uploadRequest[E] = v)), b.body = "function" == typeof c.getBuffer ? c.getBuffer() : c) : (d["Content-Type"] = "application/json; charset=utf-8", b.body = JSON.stringify(c));
+															messages: ["request id:", C]
+														}), E.uploadRequest[C] = v)), b.body = "function" == typeof c.getBuffer ? c.getBuffer() : c) : (d["Content-Type"] = "application/json; charset=utf-8", b.body = JSON.stringify(c));
 														break;
 													case "PUT":
 														c instanceof t ? b.body = "function" == typeof c.getBuffer ? c.getBuffer() : c : (d["Content-Type"] = "application/json; charset=utf-8", b.body = JSON.stringify(c))
@@ -3629,8 +3875,8 @@
 										y = e.includeReactions,
 										m = e.includeThreadInfo,
 										v = e.includeReplies,
-										C = e.includeParentMessageText,
-										E = e.showSubchannelMessagesOnly,
+										E = e.includeParentMessageText,
+										C = e.showSubchannelMessagesOnly,
 										b = e.rootMessageId,
 										A = e.parentMessageId;
 									this.sb.ConnectionManager.ready((function(e, r) {
@@ -3641,7 +3887,7 @@
 											next_limit: String(c),
 											include: String(l),
 											reverse: String(d)
-										}), "timestamp" === o ? e.add("message_ts", a) : "messageId" === o && e.add("message_id", String(a)), h && e.add("message_type", String(h)), Array.isArray(f) && (0 === f.length && ("string" == typeof p ? f.push(p) : f.push("*")), e.add("custom_types", f)), Array.isArray(_) && 0 < _.length && e.add("sender_ids", _), "boolean" == typeof g && e.add("with_sorted_meta_array", g), "boolean" == typeof y && e.add("include_reactions", y), "boolean" == typeof m && e.add("include_thread_info", m), "boolean" == typeof v && e.add("include_replies", v), "boolean" == typeof C && e.add("include_parent_message_text", C), "boolean" == typeof E && s.isOpenChannel() && e.add("show_subchannel_messages_only", E), b && e.add("root_message_id", b), A && e.add("parent_message_id", A), i.get(U, e, t))
+										}), "timestamp" === o ? e.add("message_ts", a) : "messageId" === o && e.add("message_id", String(a)), h && e.add("message_type", String(h)), Array.isArray(f) && (0 === f.length && ("string" == typeof p ? f.push(p) : f.push("*")), e.add("custom_types", f)), Array.isArray(_) && 0 < _.length && e.add("sender_ids", _), "boolean" == typeof g && e.add("with_sorted_meta_array", g), "boolean" == typeof y && e.add("include_reactions", y), "boolean" == typeof m && e.add("include_thread_info", m), "boolean" == typeof v && e.add("include_replies", v), "boolean" == typeof E && e.add("include_parent_message_text", E), "boolean" == typeof C && s.isOpenChannel() && e.add("show_subchannel_messages_only", C), b && e.add("root_message_id", b), A && e.add("parent_message_id", A), i.get(U, e, t))
 									}))
 								}
 							}, {
@@ -4010,8 +4256,8 @@
 										y = e.unreadChannelFilter,
 										m = e.metadataOrderKeyFilter,
 										v = e.hiddenChannelFilter,
-										C = e.searchFilter,
-										E = e.includeFrozen,
+										E = e.searchFilter,
+										C = e.includeFrozen,
 										b = e.includeMetaData;
 									this.sb.ConnectionManager.ready((function(e, A) {
 										e ? t(e, null) : (e = n.Path.MYGROUPCHANNELS.replace("%s", encodeURIComponent(A.userId)), A = new J({
@@ -4023,7 +4269,7 @@
 											show_delivery_receipt: !0,
 											show_empty: String(a),
 											member_state_filter: f
-										}), h && 0 < h.length && A.add("custom_types", h), u && A.add("members_nickname_contains", u), c && A.add("name_contains", c), C.hasOwnProperty("search_query") && C.hasOwnProperty("search_fields") && (A.add("search_query", C.search_query), A.add("search_fields", C.search_fields)), l.userIds && 0 < l.userIds.length && (l.includeMode ? (A.add("members_include_in", l.userIds), A.add("query_type", l.queryType.toUpperCase())) : A.add("members_exactly_in", l.userIds)), d && 0 < d.length && A.add("channel_urls", d), A.add("super_mode", _), A.add("public_mode", g), A.add("unread_filter", y), m && A.add("metadata_order_key", m), p && A.add("custom_type_startswith", p), v && A.add("hidden_mode", v), "boolean" == typeof E && A.add("show_frozen", E), "boolean" == typeof b && A.add("show_metadata", b), r.get(e, A, t))
+										}), h && 0 < h.length && A.add("custom_types", h), u && A.add("members_nickname_contains", u), c && A.add("name_contains", c), E.hasOwnProperty("search_query") && E.hasOwnProperty("search_fields") && (A.add("search_query", E.search_query), A.add("search_fields", E.search_fields)), l.userIds && 0 < l.userIds.length && (l.includeMode ? (A.add("members_include_in", l.userIds), A.add("query_type", l.queryType.toUpperCase())) : A.add("members_exactly_in", l.userIds)), d && 0 < d.length && A.add("channel_urls", d), A.add("super_mode", _), A.add("public_mode", g), A.add("unread_filter", y), m && A.add("metadata_order_key", m), p && A.add("custom_type_startswith", p), v && A.add("hidden_mode", v), "boolean" == typeof C && A.add("show_frozen", C), "boolean" == typeof b && A.add("show_metadata", b), r.get(e, A, t))
 									}))
 								}
 							}, {
@@ -4078,14 +4324,14 @@
 										y = e.isEphemeral,
 										m = e._invitedUserIds,
 										v = void 0 === m ? [] : m,
-										C = e.operatorUserIds,
-										E = e.messageSurvivalSeconds;
+										E = e.operatorUserIds,
+										C = e.messageSurvivalSeconds;
 									this.sb.ConnectionManager.ready((function(e, m) {
 										e ? t(e, null) : (e = n.Path.GROUPCHANNELS, m = new J({
 											user_ids: [m.userId].concat(b(v)).filter((function(e, n, t) {
 												return n === t.indexOf(e)
 											}))
-										}), null !== f && "string" == typeof f && m.add("cover_url", f), V.isFile(_) && m.add("cover_file", _, _.name), null !== l && m.add("channel_url", l), null !== i && m.add("is_distinct", i), null !== s && m.add("is_super", s), null !== a && m.add("is_broadcast", a), null !== o && m.add("is_public", o), null !== u && m.add("is_discoverable", u), null !== c && m.add("strict", c), null !== y && m.add("is_ephemeral", y), g && m.add("access_code", g), null !== d && "string" == typeof d && m.add("name", d), h && m.add("data", h), p && m.add("custom_type", p), Array.isArray(C) && 0 < C.length && m.add("operator_ids", C), null !== E && -1 < E && m.add("message_survival_seconds", E), r.post(e, m, t))
+										}), null !== f && "string" == typeof f && m.add("cover_url", f), V.isFile(_) && m.add("cover_file", _, _.name), null !== l && m.add("channel_url", l), null !== i && m.add("is_distinct", i), null !== s && m.add("is_super", s), null !== a && m.add("is_broadcast", a), null !== o && m.add("is_public", o), null !== u && m.add("is_discoverable", u), null !== c && m.add("strict", c), null !== y && m.add("is_ephemeral", y), g && m.add("access_code", g), null !== d && "string" == typeof d && m.add("name", d), h && m.add("data", h), p && m.add("custom_type", p), Array.isArray(E) && 0 < E.length && m.add("operator_ids", E), null !== C && -1 < C && m.add("message_survival_seconds", C), r.post(e, m, t))
 									}))
 								}
 							}, {
@@ -4374,18 +4620,18 @@
 										y = e.pushNotificationDeliveryOption,
 										m = e.rootMessageId,
 										v = e.parentMessageId,
-										C = e.appleCriticalAlertOptions;
-									this.sb.ConnectionManager.ready((function(e, E) {
+										E = e.appleCriticalAlertOptions;
+									this.sb.ConnectionManager.ready((function(e, C) {
 										var b;
-										e ? t(e, null) : (b = r.cls.FileMessageParams, e = (s ? n.Path.OPENCHANNELS_CHANNELURL_MESSAGES : n.Path.GROUPCHANNELS_CHANNELURL_MESSAGES).replace("%s", encodeURIComponent(i)), E = new J({
+										e ? t(e, null) : (b = r.cls.FileMessageParams, e = (s ? n.Path.OPENCHANNELS_CHANNELURL_MESSAGES : n.Path.GROUPCHANNELS_CHANNELURL_MESSAGES).replace("%s", encodeURIComponent(i)), C = new J({
 											message_type: "FILE",
-											user_id: E.userId,
+											user_id: C.userId,
 											url: a,
 											mention_type: _,
 											mentioned_user_ids: []
-										}), null != o && E.add("file_name", o), null != l && E.add("file_size", l), null != u && E.add("file_type", u), null != c && E.add("custom_field", c), null != d && E.add("custom_type", d), h && E.add("thumbnails", h), p && E.add("require_auth", p), f && 0 < f.length && E.add("sorted_metaarray", f.map((function(e) {
+										}), null != o && C.add("file_name", o), null != l && C.add("file_size", l), null != u && C.add("file_type", u), null != c && C.add("custom_field", c), null != d && C.add("custom_type", d), h && C.add("thumbnails", h), p && C.add("require_auth", p), f && 0 < f.length && C.add("sorted_metaarray", f.map((function(e) {
 											return e.encode()
-										}))), _ === r.cls.BaseMessageParams.MentionType.CHANNEL ? E.add("mentioned_user_ids", []) : Array.isArray(g) && 0 < g.length && E.add("mentioned_user_ids", g), y && y !== b.PushNotificationDeliveryOption.DEFAULT && E.add("push_option", y), m && E.add("root_message_id", m), v && E.add("parent_message_id", v), C && E.add("apple_critical_alert_options", C.serialize()), r.post(e, E, t))
+										}))), _ === r.cls.BaseMessageParams.MentionType.CHANNEL ? C.add("mentioned_user_ids", []) : Array.isArray(g) && 0 < g.length && C.add("mentioned_user_ids", g), y && y !== b.PushNotificationDeliveryOption.DEFAULT && C.add("push_option", y), m && C.add("root_message_id", m), v && C.add("parent_message_id", v), E && C.add("apple_critical_alert_options", E.serialize()), r.post(e, C, t))
 									}))
 								}
 							}, {
@@ -5243,14 +5489,14 @@
 										p = e.mentionedUserIds,
 										f = e.pushNotificationDeliveryOption,
 										_ = e.appleCriticalAlertOptions,
-										g = void 0 === (C = e.requestId) ? null : C,
+										g = void 0 === (E = e.requestId) ? null : E,
 										y = void 0 !== (v = e.silent) && v,
 										m = void 0 === (n = e.rootMessageId) ? null : n,
-										v = void 0 === (C = e.parentMessageId) ? null : C,
-										C = (e = (n = M.get(this._iid)).BaseMessageParams, n.FileMessageParams);
+										v = void 0 === (E = e.parentMessageId) ? null : E,
+										E = (e = (n = M.get(this._iid)).BaseMessageParams, n.FileMessageParams);
 									return (n = {}).channel_url = t, n.url = r, n.name = i || "", n.type = s || "", n.size = a || 0, n.custom = o, l && (n.custom_type = l), u && (n.thumbnails = u), c && (n.require_auth = c), d && 0 < d.length && (n.metaarray = d.map((function(e) {
 										return e.encode()
-									}))), h && (n.mention_type = h), n.mentioned_user_ids = [], h === e.MentionType.CHANNEL ? n.mentioned_user_ids = [] : Array.isArray(p) && 0 < p.length && (n.mentioned_user_ids = p), f && f !== C.PushNotificationDeliveryOption.DEFAULT && (n.push_option = f), _ && (n.apple_critical_alert_options = _.serialize()), y && (n.silent = y), m && (n.root_message_id = m), v && (n.parent_message_id = v), new this("FILE", n, g)
+									}))), h && (n.mention_type = h), n.mentioned_user_ids = [], h === e.MentionType.CHANNEL ? n.mentioned_user_ids = [] : Array.isArray(p) && 0 < p.length && (n.mentioned_user_ids = p), f && f !== E.PushNotificationDeliveryOption.DEFAULT && (n.push_option = f), _ && (n.apple_critical_alert_options = _.serialize()), y && (n.silent = y), m && (n.root_message_id = m), v && (n.parent_message_id = v), new this("FILE", n, g)
 								}
 							}, {
 								key: "bUpdateUserMessage",
@@ -5428,7 +5674,7 @@
 							MESSAGE_ID: "messageId"
 						},
 						ve = new WeakMap,
-						Ce = function() {
+						Ee = function() {
 							function e(n) {
 								o(this, e), this.messageId = 0, this.messageType = e.MESSAGE_TYPE_BASE, this.channelUrl = "", this.data = null, this.customType = null, this.silent = !1, this.createdAt = 0, this.updatedAt = 0, this.channelType = null, this.metaArrays = [], this.reactions = [], this.mentionType = null, this.mentionedUsers = [], this.sendingStatus = null, ve.set(this, 0), this.parentMessageId = 0, this.parentMessageText = null, this.threadInfo = null, this.ogMetaData = null, this.isOperatorMessage = !1, this.appleCriticalAlertOptions = null, n && this.__update(n)
 							}
@@ -5543,7 +5789,7 @@
 								value: function(e) {
 									var n = this,
 										t = M.get(this._iid).Reaction,
-										r = E(ie.parse(arguments, [new ie({
+										r = C(ie.parse(arguments, [new ie({
 											type: _e,
 											constraint: function(e) {
 												return parseInt(e.messageId) === parseInt(n.messageId)
@@ -5564,7 +5810,7 @@
 								value: function(e, n, t, r) {
 									var i = this,
 										s = M.get(this._iid).ThreadedMessageListParams,
-										a = (s = E(ie.parse(arguments, [new ie({
+										a = (s = C(ie.parse(arguments, [new ie({
 											type: "number"
 										}), new ie({
 											type: "string",
@@ -5647,7 +5893,7 @@
 									var n = (i = M.get(this._iid)).ThreadInfo,
 										t = i.ThreadInfoUpdateEvent,
 										r = ve.get(this),
-										i = (t = E(ie.parse(arguments, [new ie({
+										i = (t = C(ie.parse(arguments, [new ie({
 											type: t,
 											constraint: function(e) {
 												return parseInt(e.targetMessageId) === parseInt(r)
@@ -5692,7 +5938,7 @@
 									var t = this,
 										r = (i = M.get(this._iid)).BaseChannel,
 										i = i.MessageRetrievalParams,
-										s = (i = E(ie.parse(arguments, [new ie({
+										s = (i = C(ie.parse(arguments, [new ie({
 											type: i,
 											constraint: function(e) {
 												return e._validate()
@@ -5732,7 +5978,7 @@
 								}
 							}]), e
 						}(),
-						Ee = function() {
+						Ce = function() {
 							function e(n) {
 								o(this, e), this.nickname = "", this.plainProfileUrl = "", this.userId = "", this.connectionStatus = "", this.lastSeenAt = null, this.metaData = {}, this.isActive = !0, this.friendDiscoveryKey = null, this.friendName = null, this._preferredLanguages = null, this.requireAuth = null, n && this.__update(n)
 							}
@@ -5776,7 +6022,7 @@
 								key: "createMetaData",
 								value: function(e, n) {
 									var t = this,
-										r = E(ie.parse(arguments, [new ie({
+										r = C(ie.parse(arguments, [new ie({
 											type: "object",
 											constraint: function(e) {
 												return 0 < Object.keys(e).length && !Array.isArray(e)
@@ -5797,7 +6043,7 @@
 								key: "updateMetaData",
 								value: function(e, n, t) {
 									var r = this,
-										i = E(ie.parse(arguments, [new ie({
+										i = C(ie.parse(arguments, [new ie({
 											type: "object",
 											constraint: function(e) {
 												return !Array.isArray(e) && 0 < Object.keys(e).length && Object.keys(e).map((function(n) {
@@ -5827,7 +6073,7 @@
 								key: "deleteMetaData",
 								value: function(e, n) {
 									var t = this,
-										r = E(ie.parse(arguments, [new ie({
+										r = C(ie.parse(arguments, [new ie({
 											type: "string",
 											constraint: function(e) {
 												return 0 < e.length
@@ -5926,7 +6172,7 @@
 							return u(e, [{
 								key: "__update",
 								value: function(e) {
-									this.url = e.hasOwnProperty("channel_url") ? String(e.channel_url) : "", this.name = e.hasOwnProperty("name") ? String(e.name) : "", this.coverUrl = e.hasOwnProperty("cover_url") ? String(e.cover_url) : "", this.createdAt = e.hasOwnProperty("created_at") ? 1e3 * e.created_at : 0, this.data = e.hasOwnProperty("data") ? String(e.data) : "", this.customType = e.hasOwnProperty("custom_type") ? e.custom_type : "", this.isFrozen = !!e.hasOwnProperty("freeze") && e.freeze, this.isEphemeral = !!e.hasOwnProperty("is_ephemeral") && e.is_ephemeral, e.hasOwnProperty("created_by") && null !== e.created_by && "object" === a(e.created_by) && 0 < Object.keys(e.created_by).length ? this.creator = new Ee(e.created_by) : this.creator = null, e.hasOwnProperty("metadata") && null !== e.metadata && e.hasOwnProperty("ts") && "number" == typeof e.ts && this._refreshMetaData(e.metadata, e.ts)
+									this.url = e.hasOwnProperty("channel_url") ? String(e.channel_url) : "", this.name = e.hasOwnProperty("name") ? String(e.name) : "", this.coverUrl = e.hasOwnProperty("cover_url") ? String(e.cover_url) : "", this.createdAt = e.hasOwnProperty("created_at") ? 1e3 * e.created_at : 0, this.data = e.hasOwnProperty("data") ? String(e.data) : "", this.customType = e.hasOwnProperty("custom_type") ? e.custom_type : "", this.isFrozen = !!e.hasOwnProperty("freeze") && e.freeze, this.isEphemeral = !!e.hasOwnProperty("is_ephemeral") && e.is_ephemeral, e.hasOwnProperty("created_by") && null !== e.created_by && "object" === a(e.created_by) && 0 < Object.keys(e.created_by).length ? this.creator = new Ce(e.created_by) : this.creator = null, e.hasOwnProperty("metadata") && null !== e.metadata && e.hasOwnProperty("ts") && "number" == typeof e.ts && this._refreshMetaData(e.metadata, e.ts)
 								}
 							}, {
 								key: "_addOrUpdateCachedMetaData",
@@ -6006,7 +6252,7 @@
 								key: "getMessageChangeLogsByTimestamp",
 								value: function(e, n, t, r) {
 									var i = this,
-										s = E(ie.parse(arguments, [new ie({
+										s = C(ie.parse(arguments, [new ie({
 											type: "number",
 											constraint: function(e) {
 												return 0 <= e
@@ -6050,7 +6296,7 @@
 								key: "getMessageChangeLogsByToken",
 								value: function(e, n, t, r) {
 									var i = this,
-										s = E(ie.parse(arguments, [new ie({
+										s = C(ie.parse(arguments, [new ie({
 											type: "string",
 											nullable: !0
 										}), new ie({
@@ -6094,7 +6340,7 @@
 									var r = this,
 										i = (s = M.get(this._iid)).BaseChannel,
 										s = s.MessageChangeLogsParams,
-										a = (s = E(ie.parse(arguments, [new ie({
+										a = (s = C(ie.parse(arguments, [new ie({
 											type: "string",
 											nullable: !0
 										}), new ie({
@@ -6129,7 +6375,7 @@
 									var r = this,
 										i = (s = M.get(this._iid)).BaseChannel,
 										s = s.MessageChangeLogsParams,
-										a = (s = E(ie.parse(arguments, [new ie({
+										a = (s = C(ie.parse(arguments, [new ie({
 											type: "number",
 											constraint: function(e) {
 												return 0 <= e
@@ -6188,7 +6434,7 @@
 									for (var n = new(M.get(this._iid).MessageListParams), t = null, r = !1, i = 0, s = 0, a = !1, o = "", l = "", u = null, c = !1, d = !1, h = null, p = arguments.length, f = new Array(1 < p ? p - 1 : 0), _ = 1; _ < p; _++) f[_ - 1] = arguments[_];
 									switch (e) {
 										case "prev":
-											var g = E(ie.parse(f, [new ie({
+											var g = C(ie.parse(f, [new ie({
 												type: "number"
 											}), new ie({
 												type: "boolean"
@@ -6217,7 +6463,7 @@
 											t = g[0], g[1], r = g[2], i = g[3], a = g[4], o = g[5], l = g[6], u = g[7], c = g[8], d = g[9], h = g[10];
 											break;
 										case "next":
-											var y = E(ie.parse(f, [new ie({
+											var y = C(ie.parse(f, [new ie({
 												type: "number"
 											}), new ie({
 												type: "boolean"
@@ -6246,7 +6492,7 @@
 											t = y[0], y[1], r = y[2], s = y[3], a = y[4], o = y[5], l = y[6], u = y[7], c = y[8], d = y[9], h = y[10];
 											break;
 										case "prevnext":
-											t = (y = E(ie.parse(f, [new ie({
+											t = (y = C(ie.parse(f, [new ie({
 												type: "number"
 											}), new ie({
 												type: "number"
@@ -6280,7 +6526,7 @@
 								value: function(e, n, t, r) {
 									var i = this,
 										s = M.get(this._iid).MessageListParams,
-										a = (s = E(ie.parse(arguments, [new ie({
+										a = (s = C(ie.parse(arguments, [new ie({
 											type: "number"
 										}), new ie({
 											type: "string",
@@ -6315,42 +6561,42 @@
 							}, {
 								key: "getPreviousMessagesByTimestamp",
 								value: function(e) {
-									var n = (t = E(this._parseMessageListParams.apply(this, ["prev"].concat(b(ie.toArray(arguments)))), 2))[0],
+									var n = (t = C(this._parseMessageListParams.apply(this, ["prev"].concat(b(ie.toArray(arguments)))), 2))[0],
 										t = t[1];
 									return this._getMessageList(e, be.TIMESTAMP, n, t)
 								}
 							}, {
 								key: "getNextMessagesByTimestamp",
 								value: function(e) {
-									var n = (t = E(this._parseMessageListParams.apply(this, ["next"].concat(b(ie.toArray(arguments)))), 2))[0],
+									var n = (t = C(this._parseMessageListParams.apply(this, ["next"].concat(b(ie.toArray(arguments)))), 2))[0],
 										t = t[1];
 									return this._getMessageList(e, be.TIMESTAMP, n, t)
 								}
 							}, {
 								key: "getPreviousAndNextMessagesByTimestamp",
 								value: function(e) {
-									var n = (t = E(this._parseMessageListParams.apply(this, ["prevnext"].concat(b(ie.toArray(arguments)))), 2))[0],
+									var n = (t = C(this._parseMessageListParams.apply(this, ["prevnext"].concat(b(ie.toArray(arguments)))), 2))[0],
 										t = t[1];
 									return this._getMessageList(e, be.TIMESTAMP, n, t)
 								}
 							}, {
 								key: "getPreviousMessagesByID",
 								value: function(e) {
-									var n = (t = E(this._parseMessageListParams.apply(this, ["prev"].concat(b(ie.toArray(arguments)))), 2))[0],
+									var n = (t = C(this._parseMessageListParams.apply(this, ["prev"].concat(b(ie.toArray(arguments)))), 2))[0],
 										t = t[1];
 									return this._getMessageList(e, be.MESSAGE_ID, n, t)
 								}
 							}, {
 								key: "getNextMessagesByID",
 								value: function(e) {
-									var n = (t = E(this._parseMessageListParams.apply(this, ["next"].concat(b(ie.toArray(arguments)))), 2))[0],
+									var n = (t = C(this._parseMessageListParams.apply(this, ["next"].concat(b(ie.toArray(arguments)))), 2))[0],
 										t = t[1];
 									return this._getMessageList(e, be.MESSAGE_ID, n, t)
 								}
 							}, {
 								key: "getPreviousAndNextMessagesByID",
 								value: function(e) {
-									var n = (t = E(this._parseMessageListParams.apply(this, ["prevnext"].concat(b(ie.toArray(arguments)))), 2))[0],
+									var n = (t = C(this._parseMessageListParams.apply(this, ["prevnext"].concat(b(ie.toArray(arguments)))), 2))[0],
 										t = t[1];
 									return this._getMessageList(e, be.MESSAGE_ID, n, t)
 								}
@@ -6380,17 +6626,17 @@
 										d = e.parentMessageId,
 										h = e.translationTargetLanguages,
 										p = e.appleCriticalAlertOptions,
-										f = void 0 !== (E = e.silent) && E,
+										f = void 0 !== (C = e.silent) && C,
 										_ = e.callback,
 										g = M.get(this._iid),
 										y = g.Command,
 										m = g.UserMessage,
 										v = (t = t || y.generateRequestId(), ot.getInstance(this._iid)),
-										C = {};
+										E = {};
 									Array.isArray(h) && h.forEach((function(e) {
-										return C[e] = ""
+										return E[e] = ""
 									}));
-									var E, b = m.objectify({
+									var C, b = m.objectify({
 										messageId: 0,
 										reqId: t,
 										user: v.currentUser || {},
@@ -6404,11 +6650,11 @@
 										mentionedUserIds: l,
 										rootMessageId: c,
 										parentMessageId: d,
-										translations: C,
+										translations: E,
 										silent: f,
 										createdAt: (new Date).getTime()
 									});
-									if ((E = new m(b)).requestState = v.MessageRequestState.PENDING, E.sendingStatus = v.MessageSendingStatus.PENDING, E.requestedMentionUserIds = l, !v.currentUser) return e = new R("Connection should be made first.", R.CONNECTION_REQUIRED), (g = new m(b)).requestState = v.MessageRequestState.FAILED, g.sendingStatus = v.MessageSendingStatus.FAILED, g.requestedMentionUserIds = l, g.errorCode = e.code, _(e, g), E;
+									if ((C = new m(b)).requestState = v.MessageRequestState.PENDING, C.sendingStatus = v.MessageSendingStatus.PENDING, C.requestedMentionUserIds = l, !v.currentUser) return e = new R("Connection should be made first.", R.CONNECTION_REQUIRED), (g = new m(b)).requestState = v.MessageRequestState.FAILED, g.sendingStatus = v.MessageSendingStatus.FAILED, g.requestedMentionUserIds = l, g.errorCode = e.code, _(e, g), C;
 									var A = y.bMessage({
 										channelUrl: this.url,
 										message: r,
@@ -6425,7 +6671,7 @@
 										pushNotificationDeliveryOption: u,
 										appleCriticalAlertOptions: p
 									});
-									return E.reqId = A.requestId, this.isGroupChannel() && v.getConnectionState() !== v.ConnectionState.OPEN && v.currentUser && !v.connecting && !v.reconnecting && "string" == typeof s && 0 === s.indexOf("SB_VIDEOCHAT") ? O.get(v._iid).container.apiClient.sendUserMessage({
+									return C.reqId = A.requestId, this.isGroupChannel() && v.getConnectionState() !== v.ConnectionState.OPEN && v.currentUser && !v.connecting && !v.reconnecting && "string" == typeof s && 0 === s.indexOf("SB_VIDEOCHAT") ? O.get(v._iid).container.apiClient.sendUserMessage({
 										channelUrl: this.url,
 										isOpenChannel: this.isOpenChannel(),
 										message: r,
@@ -6452,7 +6698,7 @@
 												for (var s in n.lastMessage = i, v.channelHandlers) v.channelHandlers[s].onChannelChanged(n);
 											i.requestState = v.MessageRequestState.SUCCEEDED, i.sendingStatus = v.MessageSendingStatus.SUCCEEDED, _(null, i)
 										}
-									})), E
+									})), C
 								}
 							}, {
 								key: "sendUserMessage",
@@ -6501,7 +6747,7 @@
 										i = r.UserMessage,
 										s = r.UserMessageParams,
 										o = null;
-									return o = (i = E(ie.parse(arguments, [new ie({
+									return o = (i = C(ie.parse(arguments, [new ie({
 										type: i,
 										constraint: function(e) {
 											return 0 === e.messageId && e.isResendable() && e.reqId && e.channelUrl === t.url && "string" == typeof e.message && "string" == typeof e.data && "string" == typeof e.customType && "object" === a(e.translations) && !Array.isArray(e.translations)
@@ -6532,7 +6778,7 @@
 										p = null;
 									if ("number" == typeof e) switch (c.length) {
 										case 3:
-											var f = E(ie.parse(c, [new ie({
+											var f = C(ie.parse(c, [new ie({
 												type: "number"
 											}), new ie({
 												type: u
@@ -6542,7 +6788,7 @@
 											h = f[0], e = f[1], p = f[2], i = f[3];
 											break;
 										case 5:
-											p = new u, f = E(ie.parse(c, [new ie({
+											p = new u, f = C(ie.parse(c, [new ie({
 												type: "number"
 											}), new ie({
 												type: "string",
@@ -6578,7 +6824,7 @@
 									var r = this,
 										i = ot.getInstance(this._iid),
 										s = M.get(this._iid).UserMessage,
-										a = E(ie.parse(arguments, [new ie({
+										a = C(ie.parse(arguments, [new ie({
 											type: s,
 											constraint: function(e) {
 												return e.channelUrl === r.url && e.sendingStatus === i.MessageSendingStatus.SUCCEEDED
@@ -6654,7 +6900,7 @@
 											case 7:
 												r.name = e[1], r.type = e[2], r.size = e[3], r.data = e[4], r.customType = e[5], r.thumbnailSizes = e[6]
 										}
-										t = E(ie.parse([r.file, r.name, r.type, r.size, r.data, r.customType, r.thumbnailSizes], [new ie({
+										t = C(ie.parse([r.file, r.name, r.type, r.size, r.data, r.customType, r.thumbnailSizes], [new ie({
 											type: ["file", "string"]
 										}), new ie({
 											type: "string",
@@ -6751,7 +6997,7 @@
 										s = i.FileMessage,
 										a = i.FileMessageParams,
 										o = null;
-									return o = (s = E(ie.parse(arguments, [new ie({
+									return o = (s = C(ie.parse(arguments, [new ie({
 										type: s,
 										constraint: function(e) {
 											return 0 === e.messageId && e.isResendable() && e.reqId && e.channelUrl === r.url && "string" == typeof e.data && "string" == typeof e.customType && Array.isArray(e.thumbnails)
@@ -6787,7 +7033,7 @@
 										h = null;
 									if ("number" == typeof e) switch (u.length) {
 										case 3:
-											var p = E(ie.parse(u, [new ie({
+											var p = C(ie.parse(u, [new ie({
 												type: "number"
 											}), new ie({
 												type: l
@@ -6797,7 +7043,7 @@
 											c = p[0], e = p[1], h = p[2], r = p[3], h && (h._isUpdate = !0);
 											break;
 										case 4:
-											h = new l, p = E(ie.parse(u, [new ie({
+											h = new l, p = C(ie.parse(u, [new ie({
 												type: "number"
 											}), new ie({
 												type: "string",
@@ -6827,7 +7073,7 @@
 							}, {
 								key: "cancelUploadingFileMessage",
 								value: function(e, n) {
-									var t = E(ie.parse(arguments, [new ie({
+									var t = C(ie.parse(arguments, [new ie({
 											type: ["number", "string"]
 										}), new ie({
 											type: "callback"
@@ -6845,8 +7091,8 @@
 									var r = this,
 										i = ot.getInstance(this._iid),
 										s = M.get(this._iid).ReactionEvent,
-										a = E(ie.parse(arguments, [new ie({
-											type: Ce
+										a = C(ie.parse(arguments, [new ie({
+											type: Ee
 										}), new ie({
 											type: "string",
 											constraint: function(e) {
@@ -6876,8 +7122,8 @@
 									var r = this,
 										i = ot.getInstance(this._iid),
 										s = M.get(this._iid).ReactionEvent,
-										a = E(ie.parse(arguments, [new ie({
-											type: Ce
+										a = C(ie.parse(arguments, [new ie({
+											type: Ee
 										}), new ie({
 											type: "string",
 											constraint: function(e) {
@@ -6905,7 +7151,7 @@
 								key: "deleteMessage",
 								value: function(e, n) {
 									var t = this,
-										r = E(ie.parse(arguments, [new ie({
+										r = C(ie.parse(arguments, [new ie({
 											type: "object",
 											constraint: function(e) {
 												return !Array.isArray(e) && null !== e && e.hasOwnProperty("messageId")
@@ -6929,7 +7175,7 @@
 								value: function(n, t, r) {
 									var i = ((a = M.get(this._iid)).Command, a.UserMessage),
 										s = a.BaseMessageParams,
-										a = (i = E(ie.parse(arguments, [new ie({
+										a = (i = C(ie.parse(arguments, [new ie({
 											type: e
 										}), new ie({
 											type: i
@@ -6961,7 +7207,7 @@
 										s = (N.GroupChannel, N.FileMessage),
 										a = N.BaseMessageParams,
 										o = (N.FileMessageParams, N.User),
-										l = (T = E(ie.parse(arguments, [new ie({
+										l = (T = C(ie.parse(arguments, [new ie({
 											type: e
 										}), new ie({
 											type: s
@@ -6984,7 +7230,7 @@
 										y = t.data,
 										m = t.customType,
 										v = t.mentionType,
-										C = t.mentionedUserIds,
+										E = t.mentionedUserIds,
 										b = t.mentionedUsers,
 										A = t.metaArrays,
 										U = t.thumbnails,
@@ -7008,9 +7254,9 @@
 											data: y,
 											customType: m,
 											mentionType: v,
-											mentionedUserIds: C,
+											mentionedUserIds: E,
 											mentionedUsers: t,
-											requestedMentionUserIds: C,
+											requestedMentionUserIds: E,
 											metaArrays: A,
 											thumbnails: U,
 											requireAuth: k,
@@ -7030,7 +7276,7 @@
 										customType: m,
 										metaArrays: A,
 										mentionType: v,
-										mentionedUserIds: C,
+										mentionedUserIds: E,
 										thumbnailSizes: U,
 										requireAuth: k,
 										pushNotificationDeliveryOption: b,
@@ -7055,7 +7301,7 @@
 										customType: m,
 										metaArrays: A,
 										mentionType: v,
-										mentionedUserIds: C,
+										mentionedUserIds: E,
 										thumbnailSizes: U,
 										requireAuth: k,
 										pushNotificationDeliveryOption: b,
@@ -7075,7 +7321,7 @@
 								key: "addOperators",
 								value: function(e, n) {
 									var t = this,
-										r = E(ie.parse(arguments, [new ie({
+										r = C(ie.parse(arguments, [new ie({
 											type: "array",
 											constraint: function(e) {
 												return Object.keys(e).map((function(n) {
@@ -7102,7 +7348,7 @@
 								key: "removeOperators",
 								value: function(e, n) {
 									var t = this,
-										r = E(ie.parse(arguments, [new ie({
+										r = C(ie.parse(arguments, [new ie({
 											type: "array",
 											constraint: function(e) {
 												return Object.keys(e).map((function(n) {
@@ -7129,7 +7375,7 @@
 								key: "getMetaCounters",
 								value: function(e, n) {
 									var t = this,
-										r = E(ie.parse(arguments, [new ie({
+										r = C(ie.parse(arguments, [new ie({
 											type: "array",
 											constraint: function(e) {
 												return Object.keys(e).map((function(n) {
@@ -7170,7 +7416,7 @@
 								key: "createMetaCounters",
 								value: function(e, n) {
 									var t = this,
-										r = E(ie.parse(arguments, [new ie({
+										r = C(ie.parse(arguments, [new ie({
 											type: "object",
 											constraint: function(e) {
 												return e && !Array.isArray(e) && 0 < Object.keys(e).length && Object.keys(e).map((function(n) {
@@ -7197,7 +7443,7 @@
 								key: "updateMetaCounters",
 								value: function(e, n, t) {
 									var r = this,
-										i = E(ie.parse(arguments, [new ie({
+										i = C(ie.parse(arguments, [new ie({
 											type: "object",
 											constraint: function(e) {
 												return e && !Array.isArray(e) && 0 < Object.keys(e).length && Object.keys(e).map((function(n) {
@@ -7230,7 +7476,7 @@
 								key: "increaseMetaCounters",
 								value: function(e, n) {
 									var t = this,
-										r = E(ie.parse(arguments, [new ie({
+										r = C(ie.parse(arguments, [new ie({
 											type: "object",
 											constraint: function(e) {
 												return e && !Array.isArray(e) && 0 < Object.keys(e).length && Object.keys(e).map((function(n) {
@@ -7259,7 +7505,7 @@
 								key: "decreaseMetaCounters",
 								value: function(e, n) {
 									var t = this,
-										r = E(ie.parse(arguments, [new ie({
+										r = C(ie.parse(arguments, [new ie({
 											type: "object",
 											constraint: function(e) {
 												return e && !Array.isArray(e) && 0 < Object.keys(e).length && Object.keys(e).map((function(n) {
@@ -7291,7 +7537,7 @@
 								key: "deleteMetaCounter",
 								value: function(e, n) {
 									var t = this,
-										r = E(ie.parse(arguments, [new ie({
+										r = C(ie.parse(arguments, [new ie({
 											type: "string"
 										}), new ie({
 											type: "callback"
@@ -7334,7 +7580,7 @@
 								key: "getMetaData",
 								value: function(e, n) {
 									var t = this,
-										r = E(ie.parse(arguments, [new ie({
+										r = C(ie.parse(arguments, [new ie({
 											type: "array",
 											constraint: function(e) {
 												return Object.keys(e).map((function(n) {
@@ -7375,7 +7621,7 @@
 								key: "createMetaData",
 								value: function(e, n) {
 									var t = this,
-										r = E(ie.parse(arguments, [new ie({
+										r = C(ie.parse(arguments, [new ie({
 											type: "object",
 											constraint: function(e) {
 												return e && !Array.isArray(e) && 0 < Object.keys(e).length
@@ -7398,7 +7644,7 @@
 								key: "updateMetaData",
 								value: function(e, n, t) {
 									var r = this,
-										i = E(ie.parse(arguments, [new ie({
+										i = C(ie.parse(arguments, [new ie({
 											type: "object",
 											constraint: function(e) {
 												return e && !Array.isArray(e) && 0 < Object.keys(e).length
@@ -7426,7 +7672,7 @@
 								key: "deleteMetaData",
 								value: function(e, n) {
 									var t = this,
-										r = E(ie.parse(arguments, [new ie({
+										r = C(ie.parse(arguments, [new ie({
 											type: "string"
 										}), new ie({
 											type: "callback"
@@ -7484,8 +7730,8 @@
 								key: "createMessageMetaArrayKeys",
 								value: function(e, n, t) {
 									var r = M.get(this._iid).MessageMetaArray,
-										i = E(ie.parse(arguments, [new ie({
-											type: Ce
+										i = C(ie.parse(arguments, [new ie({
+											type: Ee
 										}), new ie({
 											type: "array",
 											constraint: function(e) {
@@ -7518,8 +7764,8 @@
 								key: "deleteMessageMetaArrayKeys",
 								value: function(e, n, t) {
 									var r = M.get(this._iid).MessageMetaArray,
-										i = E(ie.parse(arguments, [new ie({
-											type: Ce
+										i = C(ie.parse(arguments, [new ie({
+											type: Ee
 										}), new ie({
 											type: "array",
 											constraint: function(e) {
@@ -7552,8 +7798,8 @@
 								key: "addMessageMetaArrayValues",
 								value: function(e, n, t) {
 									var r = M.get(this._iid).MessageMetaArray,
-										i = E(ie.parse(arguments, [new ie({
-											type: Ce
+										i = C(ie.parse(arguments, [new ie({
+											type: Ee
 										}), new ie({
 											type: "object",
 											constraint: function(e) {
@@ -7588,8 +7834,8 @@
 								key: "removeMessageMetaArrayValues",
 								value: function(e, n, t) {
 									var r = M.get(this._iid).MessageMetaArray,
-										i = E(ie.parse(arguments, [new ie({
-											type: Ce
+										i = C(ie.parse(arguments, [new ie({
+											type: Ee
 										}), new ie({
 											type: "object",
 											constraint: function(e) {
@@ -7625,7 +7871,7 @@
 								value: function(e, n, t) {
 									var r = this,
 										i = M.get(this._iid).BaseChannel,
-										s = (i = E(ie.parse(arguments, [new ie({
+										s = (i = C(ie.parse(arguments, [new ie({
 											type: i.ReportCategory
 										}), new ie({
 											type: "string"
@@ -7650,8 +7896,8 @@
 								value: function(e, n, t, r) {
 									var i = this,
 										s = M.get(this._iid).BaseChannel,
-										a = (s = E(ie.parse(arguments, [new ie({
-											type: Ee
+										a = (s = C(ie.parse(arguments, [new ie({
+											type: Ce
 										}), new ie({
 											type: s.ReportCategory
 										}), new ie({
@@ -7678,8 +7924,8 @@
 								value: function(e, n, t, r) {
 									var i = this,
 										s = M.get(this._iid).BaseChannel,
-										a = (s = E(ie.parse(arguments, [new ie({
-											type: Ce
+										a = (s = C(ie.parse(arguments, [new ie({
+											type: Ee
 										}), new ie({
 											type: s.ReportCategory
 										}), new ie({
@@ -7793,25 +8039,25 @@
 								key: "onRawCommandReceived",
 								value: function(e) {
 									var n = this,
-										t = (E = this.cls).Command,
-										r = E.User,
-										i = E.Member,
-										s = E.BaseChannel,
-										o = E.GroupChannel,
-										l = E.OpenChannel,
-										u = E.UserMessage,
-										c = E.FileMessage,
-										d = E.AdminMessage,
-										h = E.BaseMessageParams,
-										p = E.ReactionEvent,
-										f = E.ReadStatus,
-										_ = E.ThreadInfoUpdateEvent,
+										t = (C = this.cls).Command,
+										r = C.User,
+										i = C.Member,
+										s = C.BaseChannel,
+										o = C.GroupChannel,
+										l = C.OpenChannel,
+										u = C.UserMessage,
+										c = C.FileMessage,
+										d = C.AdminMessage,
+										h = C.BaseMessageParams,
+										p = C.ReactionEvent,
+										f = C.ReadStatus,
+										_ = C.ThreadInfoUpdateEvent,
 										g = O.get(this.sb._iid),
-										y = (E = g.container).pinger,
-										m = E.auth,
-										v = E.subscribedUnreadMessageCount,
-										C = E.sessionManager,
-										E = E.ackStateMap,
+										y = (C = g.container).pinger,
+										m = C.auth,
+										v = C.subscribedUnreadMessageCount,
+										E = C.sessionManager,
+										C = C.ackStateMap,
 										b = new t(e),
 										A = b.getJsonElement();
 									if (A.hasOwnProperty("unread_cnt") && "object" === a(A.unread_cnt)) {
@@ -7825,13 +8071,13 @@
 										if (U)
 											for (var T in this.sb.userEventHandlers) this.sb.userEventHandlers[T].onTotalUnreadMessageCountUpdated(v.all, v.custom_types)
 									}
-									if (e = b.requestId)(I = E[e]) && (clearTimeout(I.timer), (I = I.handler) && ("EROR" === b.command ? I(new R(A.message, A.code), null) : I(null, b)), E.hasOwnProperty(e) && delete E[e]);
+									if (e = b.requestId)(I = C[e]) && (clearTimeout(I.timer), (I = I.handler) && ("EROR" === b.command ? I(new R(A.message, A.code), null) : I(null, b)), C.hasOwnProperty(e) && delete C[e]);
 									else switch (y && "LOGI" !== b.command && y.refreshTimer(), b.command) {
 										case "LOGI":
 											this.sb.loginTimer && (clearTimeout(this.sb.loginTimer), this.sb.loginTimer = null, this.sb.onLoginTimerCancel = null, A.hasOwnProperty("error") ? (this.sb.isSessionOpened = !1, this.sb.loginHandler(new R(A.message, A.code), null)) : (this.sb.isSessionOpened = !0, A.hasOwnProperty("key") && (m.sessionKey = A.key), A.hasOwnProperty("ekey") && (m.eKey = A.ekey), A.hasOwnProperty("user_id") && (this.sb.currentUser = new r(A)), "number" == typeof A.ping_interval && 0 < A.ping_interval && g.set("pingInterval", 1e3 * A.ping_interval), "number" == typeof A.pong_timeout && 0 < A.pong_timeout && g.set("pongTimeout", 1e3 * A.pong_timeout), "number" == typeof A.login_ts && g.set("connectedAt", 1e3 * A.login_ts), "number" == typeof A.max_unread_cnt_on_super_group ? g.set("maxUnreadCountOfSuperGroupChannel", A.max_unread_cnt_on_super_group) : g.set("maxUnreadCountOfSuperGroupChannel", S.DEFAULT_MAX_UNREAD_COUNT_OF_SUPER_GROUP_CHANNEL), A.profile_image_encryption && g.set("profileImageEncryption", !0), y && y.start(), A.hasOwnProperty("file_upload_size_limit") && A.hasOwnProperty("premium_feature_list") && A.hasOwnProperty("emoji_hash") && g.set("appInfo", new fe(A)), this.sb.loginHandler(null, this.sb.currentUser)), this.sb.connecting = !1, this.sb.reconnecting = !1);
 											break;
 										case "EXPR":
-											A.hasOwnProperty("expires_in") && "number" == typeof A.expires_in && 0 < A.expires_in && C.refresh((function() {}));
+											A.hasOwnProperty("expires_in") && "number" == typeof A.expires_in && 0 < A.expires_in && E.refresh((function() {}));
 											break;
 										case "MESG":
 										case "FILE":
@@ -8245,15 +8491,15 @@
 												case ke.CATEGORY_CHANNEL_META_COUNTERS_CHANGED:
 													var me = _e.data.hasOwnProperty("created"),
 														ve = _e.data.hasOwnProperty("updated"),
-														Ce = _e.data.hasOwnProperty("deleted");
+														Ee = _e.data.hasOwnProperty("deleted");
 													(_e.isOpenChannel() ? l : o).getChannel(_e.channelUrl, S.INTERNAL_CALL).then((function(e) {
 														var t, r = _e.data.created,
 															i = _e.data.updated,
 															s = _e.data.deleted,
 															a = A.ts;
-														for (t in me && e._addOrUpdateCachedMetaData(r, a), ve && e._addOrUpdateCachedMetaData(i, a), Ce && e._markAsDeletedCachedMetaData(s, a), n.sb.channelHandlers) {
+														for (t in me && e._addOrUpdateCachedMetaData(r, a), ve && e._addOrUpdateCachedMetaData(i, a), Ee && e._markAsDeletedCachedMetaData(s, a), n.sb.channelHandlers) {
 															var o = n.sb.channelHandlers[t];
-															_e.category === ke.CATEGORY_CHANNEL_META_DATA_CHANGED ? (me && o.onMetaDataCreated(e, r), ve && o.onMetaDataUpdated(e, i), Ce && o.onMetaDataDeleted(e, s)) : (me && o.onMetaCountersCreated(e, r), ve && o.onMetaCountersUpdated(e, i), Ce && o.onMetaCountersDeleted(e, s))
+															_e.category === ke.CATEGORY_CHANNEL_META_DATA_CHANGED ? (me && o.onMetaDataCreated(e, r), ve && o.onMetaDataUpdated(e, i), Ee && o.onMetaDataDeleted(e, s)) : (me && o.onMetaCountersCreated(e, r), ve && o.onMetaCountersUpdated(e, i), Ee && o.onMetaCountersDeleted(e, s))
 														}
 													})).catch((function(e) {
 														return q.debug("Discard command:", "`".concat(b.command, "`"), _e.category)
@@ -8272,21 +8518,21 @@
 											}
 											break;
 										case "USEV":
-											var Ee = new ke(A);
-											switch (Ee.category) {
+											var Ce = new ke(A);
+											switch (Ce.category) {
 												case Se.CATEGORY_USER_BLOCK:
 												case Se.CATEGORY_USER_UNBLOCK:
-													var be = Ee.data.blocker.user_id,
-														Ae = Ee.data.blockee.user_id;
+													var be = Ce.data.blocker.user_id,
+														Ae = Ce.data.blockee.user_id;
 													Object.keys(o.cachedChannels).forEach((function(e) {
 														var t = o.cachedChannels[e];
 														try {
-															n.sb.currentUser && (n.sb.currentUser.userId === be ? t.memberMap[Ae].isBlockedByMe = Ee.category === Se.CATEGORY_USER_BLOCK : n.sb.currentUser.userId === Ae && (t.memberMap[be].isBlockingMe = Ee.category === Se.CATEGORY_USER_BLOCK))
+															n.sb.currentUser && (n.sb.currentUser.userId === be ? t.memberMap[Ae].isBlockedByMe = Ce.category === Se.CATEGORY_USER_BLOCK : n.sb.currentUser.userId === Ae && (t.memberMap[be].isBlockingMe = Ce.category === Se.CATEGORY_USER_BLOCK))
 														} catch (e) {}
 													}));
 													break;
 												case Se.CATEGORY_FRIEND_DISCOVERED:
-													var Ue, Ie = Ee.data.friend_discoveries.map((function(e) {
+													var Ue, Ie = Ce.data.friend_discoveries.map((function(e) {
 														return new r(e)
 													}));
 													for (Ue in this.sb.userEventHandlers) this.sb.userEventHandlers[Ue].onFriendsDiscovered(Ie)
@@ -8574,7 +8820,7 @@
 											this.members.push(h), this.memberMap[h.userId] = h
 										}
 									}
-									this.myMemberState = e.member_state || "none", this.myRole = e.my_role || r.Role.NONE, e.hasOwnProperty("is_muted") ? "string" == typeof e.is_muted ? this.myMutedState = e.is_muted : "boolean" == typeof e.is_muted ? this.myMutedState = e.is_muted ? "muted" : "unmuted" : this.myMutedState = "unmuted" : this.myMutedState = "unmuted", e.hasOwnProperty("member_count") && (this.memberCount = parseInt(e.member_count)), e.hasOwnProperty("joined_member_count") && (this.joinedMemberCount = parseInt(e.joined_member_count)), e.hasOwnProperty("last_message") && "object" === a(e.last_message) && e.last_message ? e.last_message instanceof Ce ? this.lastMessage = e.last_message : this.lastMessage = t.buildMessage(e.last_message, this) : this.lastMessage = null, e.hasOwnProperty("inviter") && null !== e.inviter && "object" === a(e.inviter) && 0 < Object.keys(e.inviter).length ? this.inviter = new i(e.inviter) : this.inviter = null, this.invitedAt = e.invited_at || 0, e.hasOwnProperty("is_super") && "boolean" == typeof e.is_super ? this.isSuper = e.is_super : this.isSuper = !1, e.hasOwnProperty("is_broadcast") && "boolean" == typeof e.is_broadcast ? this.isBroadcast = e.is_broadcast : this.isBroadcast = !1, e.hasOwnProperty("is_public") && "boolean" == typeof e.is_public ? this.isPublic = e.is_public : this.isPublic = !1, e.hasOwnProperty("hidden_state") ? this.hiddenState = e.hidden_state : this.hiddenState = r.HiddenState.UNHIDDEN, e.hasOwnProperty("is_discoverable") && "boolean" == typeof e.is_discoverable ? this.isDiscoverable = e.is_discoverable : this.isDiscoverable = this.isPublic, e.hasOwnProperty("ts_message_offset") && (this._messageOffsetTimestamp = e.ts_message_offset), e.hasOwnProperty("message_survival_seconds") && "number" == typeof e.message_survival_seconds && (this.messageSurvivalSeconds = e.message_survival_seconds)
+									this.myMemberState = e.member_state || "none", this.myRole = e.my_role || r.Role.NONE, e.hasOwnProperty("is_muted") ? "string" == typeof e.is_muted ? this.myMutedState = e.is_muted : "boolean" == typeof e.is_muted ? this.myMutedState = e.is_muted ? "muted" : "unmuted" : this.myMutedState = "unmuted" : this.myMutedState = "unmuted", e.hasOwnProperty("member_count") && (this.memberCount = parseInt(e.member_count)), e.hasOwnProperty("joined_member_count") && (this.joinedMemberCount = parseInt(e.joined_member_count)), e.hasOwnProperty("last_message") && "object" === a(e.last_message) && e.last_message ? e.last_message instanceof Ee ? this.lastMessage = e.last_message : this.lastMessage = t.buildMessage(e.last_message, this) : this.lastMessage = null, e.hasOwnProperty("inviter") && null !== e.inviter && "object" === a(e.inviter) && 0 < Object.keys(e.inviter).length ? this.inviter = new i(e.inviter) : this.inviter = null, this.invitedAt = e.invited_at || 0, e.hasOwnProperty("is_super") && "boolean" == typeof e.is_super ? this.isSuper = e.is_super : this.isSuper = !1, e.hasOwnProperty("is_broadcast") && "boolean" == typeof e.is_broadcast ? this.isBroadcast = e.is_broadcast : this.isBroadcast = !1, e.hasOwnProperty("is_public") && "boolean" == typeof e.is_public ? this.isPublic = e.is_public : this.isPublic = !1, e.hasOwnProperty("hidden_state") ? this.hiddenState = e.hidden_state : this.hiddenState = r.HiddenState.UNHIDDEN, e.hasOwnProperty("is_discoverable") && "boolean" == typeof e.is_discoverable ? this.isDiscoverable = e.is_discoverable : this.isDiscoverable = this.isPublic, e.hasOwnProperty("ts_message_offset") && (this._messageOffsetTimestamp = e.ts_message_offset), e.hasOwnProperty("message_survival_seconds") && "number" == typeof e.message_survival_seconds && (this.messageSurvivalSeconds = e.message_survival_seconds)
 								}
 							}, {
 								key: "addMember",
@@ -8666,7 +8912,7 @@
 							}, {
 								key: "invite",
 								value: function(e, n) {
-									var t = E(ie.parse(arguments, [new ie({
+									var t = C(ie.parse(arguments, [new ie({
 											type: "array",
 											constraint: function(e) {
 												return 0 < e.length && e.every((function(e) {
@@ -8687,7 +8933,7 @@
 								key: "inviteWithUserIds",
 								value: function(e, n) {
 									var t = this,
-										r = E(ie.parse(arguments, [new ie({
+										r = C(ie.parse(arguments, [new ie({
 											type: "array",
 											constraint: function(e) {
 												return e.every((function(e) {
@@ -8712,7 +8958,7 @@
 								key: "acceptInvitation",
 								value: function(e, n) {
 									var t = this,
-										r = E(ie.parse(arguments, [new ie({
+										r = C(ie.parse(arguments, [new ie({
 											type: "string",
 											optional: !0,
 											defaultValue: null
@@ -8747,7 +8993,7 @@
 								key: "join",
 								value: function(e, n) {
 									var t = this,
-										r = E(ie.parse(arguments, [new ie({
+										r = C(ie.parse(arguments, [new ie({
 											type: "string",
 											optional: !0,
 											defaultValue: null
@@ -8786,7 +9032,7 @@
 								key: "muteUserWithUserId",
 								value: function(e, n, t, r) {
 									var i = this,
-										s = E(ie.parse(arguments, [new ie({
+										s = C(ie.parse(arguments, [new ie({
 											type: "string"
 										}), new ie({
 											type: "number",
@@ -8824,7 +9070,7 @@
 								key: "unmuteUserWithUserId",
 								value: function(e, n) {
 									var t = this,
-										r = E(ie.parse(arguments, [new ie({
+										r = C(ie.parse(arguments, [new ie({
 											type: "string"
 										}), new ie({
 											type: "callback"
@@ -8849,7 +9095,7 @@
 								key: "banUserWithUserId",
 								value: function(e, n, t, r) {
 									var i = this,
-										s = E(ie.parse(arguments, [new ie({
+										s = C(ie.parse(arguments, [new ie({
 											type: "string"
 										}), new ie({
 											type: "number",
@@ -8885,7 +9131,7 @@
 								key: "unbanUserWithUserId",
 								value: function(e, n) {
 									var t = this,
-										r = E(ie.parse(arguments, [new ie({
+										r = C(ie.parse(arguments, [new ie({
 											type: "string"
 										}), new ie({
 											type: "callback"
@@ -8919,7 +9165,7 @@
 								key: "hide",
 								value: function(e, n, t) {
 									var r = this,
-										i = E(ie.parse(arguments, [new ie({
+										i = C(ie.parse(arguments, [new ie({
 											type: "boolean",
 											optional: !0,
 											defaultValue: !1
@@ -9016,7 +9262,7 @@
 								value: function(e) {
 									var n = ot.getInstance(this._iid),
 										t = M.get(this._iid).Member;
-									if (e instanceof Ce && !e.isAdminMessage() && n.currentUser && !this.isSuper && !this.isBroadcast) {
+									if (e instanceof Ee && !e.isAdminMessage() && n.currentUser && !this.isSuper && !this.isBroadcast) {
 										for (var r = 0, i = e.createdAt, s = this.members, a = 0; a < s.length; a++) {
 											var o = s[a];
 											n.currentUser.userId === o.userId || o.state !== t.JOINED || e.sender && e.sender.userId === o.userId || (this.cachedReadReceiptStatus[o.userId] || 0) < i && r++
@@ -9048,7 +9294,7 @@
 								value: function(e) {
 									var n = ot.getInstance(this._iid),
 										t = M.get(this._iid).Member;
-									if (this.cachedDeliveryReceiptStatus && e instanceof Ce && !e.isAdminMessage() && n.currentUser && !this.isSuper && !this.isBroadcast) {
+									if (this.cachedDeliveryReceiptStatus && e instanceof Ee && !e.isAdminMessage() && n.currentUser && !this.isSuper && !this.isBroadcast) {
 										var r = e.createdAt,
 											i = 0,
 											s = k(this.members);
@@ -9076,7 +9322,7 @@
 								value: function(e) {
 									var n = 1 < arguments.length && void 0 !== arguments[1] && arguments[1],
 										t = ot.getInstance(this._iid);
-									if (t.currentUser && !this.isSuper && !this.isBroadcast && e instanceof Ce && !e.isAdminMessage()) {
+									if (t.currentUser && !this.isSuper && !this.isBroadcast && e instanceof Ee && !e.isAdminMessage()) {
 										for (var r = [], i = 0; i < this.members.length; i++) {
 											var s = this.members[i];
 											(n || s.userId !== t.currentUser.userId && s.userId !== e.sender.userId) && (this.cachedReadReceiptStatus[s.userId] || 0) >= e.createdAt && r.push(s)
@@ -9090,7 +9336,7 @@
 								value: function(e) {
 									var n = 1 < arguments.length && void 0 !== arguments[1] && arguments[1],
 										t = ot.getInstance(this._iid);
-									if (t.currentUser && !this.isSuper && !this.isBroadcast && e instanceof Ce && !e.isAdminMessage()) {
+									if (t.currentUser && !this.isSuper && !this.isBroadcast && e instanceof Ee && !e.isAdminMessage()) {
 										for (var r = [], i = 0; i < this.members.length; i++) {
 											var s = this.members[i];
 											(n || s.userId !== t.currentUser.userId && s.userId !== e.sender.userId) && (this.cachedReadReceiptStatus[s.userId] || 0) < e.createdAt && r.push(s)
@@ -9210,7 +9456,7 @@
 									var t = this,
 										r = (i = M.get(this._iid)).ScheduledUserMessage,
 										i = i.ScheduledUserMessageParams,
-										s = (i = E(ie.parse(arguments, [new ie({
+										s = (i = C(ie.parse(arguments, [new ie({
 											type: i,
 											constraint: function(e) {
 												return "string" == typeof e.message && "string" == typeof e._getScheduleString()
@@ -9290,7 +9536,7 @@
 								value: function(e, n) {
 									var t = this,
 										r = M.get(this._iid).GroupChannel,
-										i = (r = E(ie.parse(arguments, [new ie({
+										i = (r = C(ie.parse(arguments, [new ie({
 											type: r.PushTriggerOption
 										}), new ie({
 											type: "callback"
@@ -9318,7 +9564,7 @@
 								value: function(e, n) {
 									var t = this,
 										r = M.get(this._iid).GroupChannel,
-										i = E(ie.parse(arguments, [new ie({
+										i = C(ie.parse(arguments, [new ie({
 											type: r.CountPreference
 										}), new ie({
 											type: "callback"
@@ -9546,7 +9792,7 @@
 							}, {
 								key: "getChannel",
 								value: function(e, n) {
-									var t, r = E(ie.parse(arguments, [new ie({
+									var t, r = C(ie.parse(arguments, [new ie({
 											type: "string",
 											constraint: function(e) {
 												return 0 < e.length
@@ -9572,7 +9818,7 @@
 								key: "getChannelWithoutCache",
 								value: function(e, n) {
 									var t, r = this,
-										i = E(ie.parse(arguments, [new ie({
+										i = C(ie.parse(arguments, [new ie({
 											type: "string",
 											constraint: function(e) {
 												return 0 < e.length
@@ -9602,7 +9848,7 @@
 								value: function(e, n) {
 									var t = this,
 										r = M.get(this._iid).GroupChannelParams,
-										i = (r = E(ie.parse(arguments, [new ie({
+										i = (r = C(ie.parse(arguments, [new ie({
 											type: r,
 											constraint: function(e) {
 												return e._validate()
@@ -9743,7 +9989,7 @@
 							}]), n
 						}(),
 						He = function() {
-							h(n, Ee);
+							h(n, Ce);
 							var e = v(n);
 
 							function n(t) {
@@ -9805,7 +10051,7 @@
 							}]), n
 						}(),
 						xe = function() {
-							h(n, Ee);
+							h(n, Ce);
 							var e = v(n);
 
 							function n(t) {
@@ -10041,7 +10287,7 @@
 								key: "muteUserWithUserId",
 								value: function(e, n, t, r) {
 									var i = this,
-										s = E(ie.parse(arguments, [new ie({
+										s = C(ie.parse(arguments, [new ie({
 											type: "string"
 										}), new ie({
 											type: "number",
@@ -10079,7 +10325,7 @@
 								key: "unmuteUserWithUserId",
 								value: function(e, n) {
 									var t = this,
-										r = E(ie.parse(arguments, [new ie({
+										r = C(ie.parse(arguments, [new ie({
 											type: "string"
 										}), new ie({
 											type: "callback"
@@ -10104,7 +10350,7 @@
 								key: "banUserWithUserId",
 								value: function(e, n, t) {
 									var r = this,
-										i = E(ie.parse(arguments, [new ie({
+										i = C(ie.parse(arguments, [new ie({
 											type: "string"
 										}), new ie({
 											type: "number",
@@ -10138,7 +10384,7 @@
 								key: "unbanUserWithUserId",
 								value: function(e, n) {
 									var t = this,
-										r = E(ie.parse(arguments, [new ie({
+										r = C(ie.parse(arguments, [new ie({
 											type: "string"
 										}), new ie({
 											type: "callback"
@@ -10204,7 +10450,7 @@
 							}, {
 								key: "getChannel",
 								value: function(e, n) {
-									var t, r = E(ie.parse(arguments, [new ie({
+									var t, r = C(ie.parse(arguments, [new ie({
 											type: "string",
 											constraint: function(e) {
 												return 0 < e.length
@@ -10230,7 +10476,7 @@
 								key: "getChannelWithoutCache",
 								value: function(e, n) {
 									var t, r = this,
-										i = E(ie.parse(arguments, [new ie({
+										i = C(ie.parse(arguments, [new ie({
 											type: "string",
 											constraint: function(e) {
 												return 0 < e.length
@@ -10340,12 +10586,12 @@
 							}]), n
 						}(),
 						Ke = function() {
-							h(n, Ce);
+							h(n, Ee);
 							var e = v(n);
 
 							function n(t) {
 								var r;
-								return o(this, n), (r = e.call(this, t)).messageType = Ce.MESSAGE_TYPE_USER, r.message = null, r._sender = null, r.reqId = "", r.translations = {}, r.requestState = null, r.requestedMentionUserIds = [], r.errorCode = 0, r.messageSurvivalSeconds = -1, r.plugins = [], t && r._update(t), r
+								return o(this, n), (r = e.call(this, t)).messageType = Ee.MESSAGE_TYPE_USER, r.message = null, r._sender = null, r.reqId = "", r.translations = {}, r.requestState = null, r.requestedMentionUserIds = [], r.errorCode = 0, r.messageSurvivalSeconds = -1, r.plugins = [], t && r._update(t), r
 							}
 							return u(n, [{
 								key: "_update",
@@ -10395,8 +10641,8 @@
 										y = e.appleCriticalAlertOptions,
 										m = void 0 === (w = e.mentionType) ? i.MentionType.USERS : w,
 										v = void 0 === (I = e.mentionedUsers) ? [] : I,
-										C = void 0 === (N = e.mentionedUserIds) ? [] : N,
-										E = void 0 === (F = e.requestedMentionUserIds) ? [] : F,
+										E = void 0 === (N = e.mentionedUserIds) ? [] : N,
+										C = void 0 === (F = e.requestedMentionUserIds) ? [] : F,
 										b = void 0 === (O = e.reactions) ? [] : O,
 										A = void 0 === (L = e.metaArrays) ? [] : L,
 										U = void 0 === (R = e.rootMessageId) ? 0 : R,
@@ -10419,7 +10665,7 @@
 											isBlockedByMe: h.isBlockedByMe
 										}), H.channel_url = p.url, H.channel_type = p.channelType === r.CHANNEL_TYPE_OPEN ? r.CHANNEL_TYPE_OPEN : r.CHANNEL_TYPE_GROUP, H.message = f, H.data = _, H.custom_type = g, y && (H.apple_critical_alert_options = y.serialize()), H.translations = I, H.is_global_block = !!T, H.ts = F, H.updated_at = e, H.mention_type = m, H.mentioned_users = v.map((function(e) {
 											return a.objectify(e)
-										})), H.mentioned_user_ids = C, H.requested_mention_user_ids = E, H.reactions = b.map((function(e) {
+										})), H.mentioned_user_ids = E, H.requested_mention_user_ids = C, H.reactions = b.map((function(e) {
 											return e.serialize()
 										})), H.metaarray = {}, A) {
 										var x = A[n].key;
@@ -10433,7 +10679,7 @@
 								}
 							}, {
 								key: "build",
-								value: function(e, n, t, r, i, s, a, o, l, u, c, d, h, p, f, _, g, y, m, v, C, E, b, A, U, k, S, I) {
+								value: function(e, n, t, r, i, s, a, o, l, u, c, d, h, p, f, _, g, y, m, v, E, C, b, A, U, k, S, I) {
 									return this.objectify({
 										messageId: n,
 										reqId: e,
@@ -10445,7 +10691,7 @@
 										appleCriticalAlertOptions: o,
 										mentionType: f,
 										mentionedUsers: _,
-										mentionedUserIds: C,
+										mentionedUserIds: E,
 										requestedMentionUserIds: b,
 										reactions: p,
 										metaArrays: h,
@@ -10454,7 +10700,7 @@
 										parentMessageText: m,
 										threadInfo: v,
 										translations: l,
-										sendingStatus: E,
+										sendingStatus: C,
 										errorCode: A,
 										isGlobalBlocked: u,
 										messageSurvivalSeconds: U,
@@ -10480,12 +10726,12 @@
 							}]), n
 						}(),
 						We = function() {
-							h(n, Ce);
+							h(n, Ee);
 							var e = v(n);
 
 							function n(t) {
 								var r;
-								return o(this, n), (r = e.call(this, t)).messageType = Ce.MESSAGE_TYPE_FILE, r.plainUrl = null, r.name = "File", r.size = 0, r.type = null, r.thumbnails = [], r._sender = null, r.reqId = "", r.requireAuth = null, r.requestState = null, r.requestedMentionUserIds = [], r.errorCode = 0, r.messageSurvivalSeconds = -1, t && r._update(t), r
+								return o(this, n), (r = e.call(this, t)).messageType = Ee.MESSAGE_TYPE_FILE, r.plainUrl = null, r.name = "File", r.size = 0, r.type = null, r.thumbnails = [], r._sender = null, r.reqId = "", r.requireAuth = null, r.requestState = null, r.requestedMentionUserIds = [], r.errorCode = 0, r.messageSurvivalSeconds = -1, t && r._update(t), r
 							}
 							return u(n, [{
 								key: "_update",
@@ -10539,8 +10785,8 @@
 										y = void 0 === (D = e.customType) ? "" : D,
 										m = e.appleCriticalAlertOptions,
 										v = void 0 === (L = e.mentionType) ? r.MentionType.USERS : L,
-										C = void 0 === (N = e.mentionedUsers) ? [] : N,
-										E = void 0 === (H = e.mentionedUserIds) ? [] : H,
+										E = void 0 === (N = e.mentionedUsers) ? [] : N,
+										C = void 0 === (H = e.mentionedUserIds) ? [] : H,
 										b = void 0 === (O = e.requestedMentionUserIds) ? [] : O,
 										A = void 0 === (R = e.reactions) ? [] : R,
 										U = void 0 === (P = e.metaArrays) ? [] : P,
@@ -10562,9 +10808,9 @@
 										user: c,
 										role: n.currentUser && n.currentUser.userId === c.userId ? d.myRole : c.role,
 										isBlockedByMe: c.isBlockedByMe
-									}), x.channel_url = d.url, x.channel_type = d.channelType === t.CHANNEL_TYPE_OPEN ? t.CHANNEL_TYPE_OPEN : t.CHANNEL_TYPE_GROUP, x.url = h, x.name = p, x.type = f, x.size = _, x.custom = g, x.custom_type = y, m && (x.apple_critical_alert_options = m.serialize()), x.thumbnails = N, x.require_auth = O, x.is_global_block = !!L, x.ts = H, x.updated_at = e, x.mention_type = v, x.mentioned_users = C.map((function(e) {
+									}), x.channel_url = d.url, x.channel_type = d.channelType === t.CHANNEL_TYPE_OPEN ? t.CHANNEL_TYPE_OPEN : t.CHANNEL_TYPE_GROUP, x.url = h, x.name = p, x.type = f, x.size = _, x.custom = g, x.custom_type = y, m && (x.apple_critical_alert_options = m.serialize()), x.thumbnails = N, x.require_auth = O, x.is_global_block = !!L, x.ts = H, x.updated_at = e, x.mention_type = v, x.mentioned_users = E.map((function(e) {
 										return s.objectify(e)
-									})), x.mentioned_user_ids = E, x.requested_mention_user_ids = b, x.reactions = A.map((function(e) {
+									})), x.mentioned_user_ids = C, x.requested_mention_user_ids = b, x.reactions = A.map((function(e) {
 										return e.serialize()
 									})), x.metaarray = {};
 									for (var G = 0; G < U.length; G++) {
@@ -10577,7 +10823,7 @@
 								}
 							}, {
 								key: "build",
-								value: function(e, n, t, r, i, s, a, o, l, u, c, d, h, p, f, _, g, y, m, v, C, E, b, A, U, k, S, I, N, O, R) {
+								value: function(e, n, t, r, i, s, a, o, l, u, c, d, h, p, f, _, g, y, m, v, E, C, b, A, U, k, S, I, N, O, R) {
 									return this.objectify({
 										messageId: n,
 										reqId: e,
@@ -10596,8 +10842,8 @@
 										requestedMentionUserIds: S,
 										reactions: y,
 										metaArrays: g,
-										rootMessageId: C,
-										parentMessageId: E,
+										rootMessageId: E,
+										parentMessageId: C,
 										parentMessageText: b,
 										threadInfo: A,
 										thumbnails: p,
@@ -10627,12 +10873,12 @@
 							}]), n
 						}(),
 						Ve = function() {
-							h(n, Ce);
+							h(n, Ee);
 							var e = v(n);
 
 							function n(t) {
 								var r;
-								return o(this, n), (r = e.call(this, t)).messageType = Ce.MESSAGE_TYPE_ADMIN, r.message = "", r.translations = {}, t && r._update(t), r
+								return o(this, n), (r = e.call(this, t)).messageType = Ee.MESSAGE_TYPE_ADMIN, r.message = "", r.translations = {}, t && r._update(t), r
 							}
 							return u(n, [{
 								key: "_update",
@@ -10642,27 +10888,27 @@
 							}], [{
 								key: "objectify",
 								value: function(e) {
-									var n = (E = M.get(this._iid)).BaseChannel,
-										t = E.BaseMessageParams,
-										r = E.User,
-										i = E.ThreadInfo,
-										s = E.OGMetaData,
+									var n = (C = M.get(this._iid)).BaseChannel,
+										t = C.BaseMessageParams,
+										r = C.User,
+										i = C.ThreadInfo,
+										s = C.OGMetaData,
 										a = e.messageId,
 										o = e.channel,
 										l = e.message,
 										u = void 0 === (_ = e.data) ? "" : _,
 										c = void 0 === (m = e.customType) ? "" : m,
-										d = void 0 === (C = e.mentionType) ? t.MentionType.USERS : C,
+										d = void 0 === (E = e.mentionType) ? t.MentionType.USERS : E,
 										h = void 0 === (g = e.mentionedUsers) ? [] : g,
 										p = void 0 === (v = e.reactions) ? [] : v,
 										f = void 0 === (y = e.metaArrays) ? [] : y,
-										_ = void 0 === (E = e.rootMessageId) ? 0 : E,
-										g = (t = void 0 === (m = e.parentMessageId) ? 0 : m, void 0 === (C = e.parentMessageText) ? "" : C),
+										_ = void 0 === (C = e.rootMessageId) ? 0 : C,
+										g = (t = void 0 === (m = e.parentMessageId) ? 0 : m, void 0 === (E = e.parentMessageText) ? "" : E),
 										y = void 0 === (v = e.threadInfo) ? null : v,
-										m = void 0 === (E = e.translations) ? {} : E,
-										v = void 0 !== (C = e.silent) && C,
-										C = void 0 === (E = e.ogMetaData) ? null : E,
-										E = e.createdAt,
+										m = void 0 === (C = e.translations) ? {} : C,
+										v = void 0 !== (E = e.silent) && E,
+										E = void 0 === (C = e.ogMetaData) ? null : C,
+										C = e.createdAt,
 										b = (e = void 0 === (e = e.updatedAt) ? 0 : e, {
 											msg_id: a,
 											channel_url: o.url,
@@ -10671,7 +10917,7 @@
 											data: u,
 											custom_type: c,
 											silent: v,
-											ts: E,
+											ts: C,
 											updated_at: e
 										});
 									b.translations = m, b.mention_type = d, b.mentioned_users = h.map((function(e) {
@@ -10685,7 +10931,7 @@
 									}
 									return b.metaarray_key_order = f.map((function(e) {
 										return e.key
-									})), b.root_message_id = _, b.parent_message_id = t, b.parent_message_text = g, y && (b.thread_info = i.objectify(y)), C && (b.og_tag = s.objectify(C)), b
+									})), b.root_message_id = _, b.parent_message_id = t, b.parent_message_text = g, y && (b.thread_info = i.objectify(y)), E && (b.og_tag = s.objectify(E)), b
 								}
 							}, {
 								key: "build",
@@ -11300,7 +11546,7 @@
 									var i = this,
 										s = M.get(this._iid).BaseChannel,
 										a = null,
-										o = E(ie.parse(arguments, [new ie({
+										o = C(ie.parse(arguments, [new ie({
 											type: "number",
 											optional: !0,
 											defaultValue: this.limit
@@ -11521,7 +11767,7 @@
 							}]), e
 						}(),
 						vn = new WeakMap,
-						Cn = function() {
+						En = function() {
 							function e() {
 								o(this, e), this._mentionType = e.MentionType.USERS, this._mentionedUserIds = [], this._cachedMentionedUsers = [], this._cachedMentionedUserIds = [], this._metaArrays = [], vn.set(this, null), this._parentMessageId = null
 							}
@@ -11644,8 +11890,8 @@
 								}
 							}]), e
 						}(),
-						En = function() {
-							h(n, Cn);
+						Cn = function() {
+							h(n, En);
 							var e = v(n);
 
 							function n() {
@@ -11677,7 +11923,7 @@
 								value: function() {
 									var e = (t = M.get(this._iid)).BaseMessageParams,
 										t = t.AppleCriticalAlertOptions;
-									return C(p(n.prototype), "_validate", this).call(this) && ("string" == typeof this.message || null === this.message) && ("string" == typeof this.data || null === this.data) && ("string" == typeof this.customType || null === this.customType) && Array.isArray(this.translationTargetLanguages) && this.translationTargetLanguages.every((function(e) {
+									return E(p(n.prototype), "_validate", this).call(this) && ("string" == typeof this.message || null === this.message) && ("string" == typeof this.data || null === this.data) && ("string" == typeof this.customType || null === this.customType) && Array.isArray(this.translationTargetLanguages) && this.translationTargetLanguages.every((function(e) {
 										return "string" == typeof e
 									})) && (null === this.pushNotificationDeliveryOption || -1 < Object.keys(e.PushNotificationDeliveryOption).map((function(n) {
 										return e.PushNotificationDeliveryOption[n]
@@ -11686,7 +11932,7 @@
 							}]), n
 						}(),
 						bn = function() {
-							h(n, Cn);
+							h(n, En);
 							var e = v(n);
 
 							function n() {
@@ -11726,7 +11972,7 @@
 								value: function() {
 									var e = (t = M.get(this._iid)).BaseMessageParams,
 										t = t.AppleCriticalAlertOptions;
-									return C(p(n.prototype), "_validate", this).call(this) && (this._isUpdate || V.isFile(this.file) || "string" == typeof this.fileUrl) && ("string" == typeof this.fileName || null === this.fileName) && ("string" == typeof this.mimeType || null === this.mimeType) && ("number" == typeof this.fileSize || null === this.fileSize) && ("string" == typeof this.data || null === this.data) && ("string" == typeof this.customType || null === this.customType) && (null === this._thumbnailSizes || this._thumbnailSizes.every((function(e) {
+									return E(p(n.prototype), "_validate", this).call(this) && (this._isUpdate || V.isFile(this.file) || "string" == typeof this.fileUrl) && ("string" == typeof this.fileName || null === this.fileName) && ("string" == typeof this.mimeType || null === this.mimeType) && ("number" == typeof this.fileSize || null === this.fileSize) && ("string" == typeof this.data || null === this.data) && ("string" == typeof this.customType || null === this.customType) && (null === this._thumbnailSizes || this._thumbnailSizes.every((function(e) {
 										return "object" === a(e) && 0 < e.maxWidth && 0 < e.maxHeight
 									}))) && (null === this.pushNotificationDeliveryOption || -1 < Object.keys(e.PushNotificationDeliveryOption).map((function(n) {
 										return e.PushNotificationDeliveryOption[n]
@@ -11735,7 +11981,7 @@
 							}]), n
 						}(),
 						An = function() {
-							h(n, En);
+							h(n, Cn);
 							var e = v(n);
 
 							function n(t) {
@@ -12083,7 +12329,7 @@
 										s = this;
 									return ge(this._iid, (function(r) {
 										var a, o = M.get(s._iid).BaseChannel,
-											l = E(ie.parse(i, [new ie({
+											l = C(ie.parse(i, [new ie({
 												type: "number"
 											}), new ie({
 												type: "number"
@@ -12119,7 +12365,7 @@
 										s = this;
 									return ge(this._iid, (function(r) {
 										var a, o = M.get(s._iid).BaseChannel,
-											l = E(ie.parse(i, [new ie({
+											l = C(ie.parse(i, [new ie({
 												type: "number"
 											}), new ie({
 												type: "number"
@@ -12155,7 +12401,7 @@
 										a = this;
 									return ge(this._iid, (function(i) {
 										var o, l = M.get(a._iid).BaseChannel,
-											u = E(ie.parse(s, [new ie({
+											u = C(ie.parse(s, [new ie({
 												type: "number"
 											}), new ie({
 												type: "number"
@@ -12342,7 +12588,7 @@
 										MessageTypeFilter: Ue.MessageTypeFilter
 									};
 									var i, s = {
-											User: Ee,
+											User: Ce,
 											Member: He,
 											GroupChannel: Fe,
 											OpenChannel: Ye,
@@ -12353,8 +12599,8 @@
 											MemberListQuery: rn,
 											GroupChannelParams: yn,
 											OpenChannelParams: mn,
-											BaseMessageParams: Cn,
-											UserMessageParams: En,
+											BaseMessageParams: En,
+											UserMessageParams: Cn,
 											FileMessageParams: bn,
 											ScheduledUserMessageParams: An,
 											GroupChannelTotalUnreadMessageCountParams: Un,
@@ -12373,7 +12619,7 @@
 										a = (t = {
 											SessionManager: oe,
 											BaseChannel: Ue,
-											BaseMessage: Ce,
+											BaseMessage: Ee,
 											UserListQuery: qn,
 											ApplicationUserListQuery: Xe,
 											BannedUserListQuery: $e,
@@ -12613,7 +12859,7 @@
 									var s = this,
 										a = (o = O.get(this._iid).container).wsAdapter;
 									(o = o.onlineDetector) && o.start();
-									var o, l = (o = E(ie.parse(arguments, [new ie({
+									var o, l = (o = C(ie.parse(arguments, [new ie({
 										type: "string",
 										constraint: function(e) {
 											return 0 < e.length
@@ -12803,7 +13049,7 @@
 								key: "updateCurrentUserInfo",
 								value: function(e, n, t) {
 									var r = this,
-										i = E(ie.parse(arguments, [new ie({
+										i = C(ie.parse(arguments, [new ie({
 											type: "string",
 											nullable: !0
 										}), new ie({
@@ -12827,7 +13073,7 @@
 								key: "updateCurrentUserInfoWithProfileImage",
 								value: function(e, n, t) {
 									var r = this,
-										i = E(ie.parse(arguments, [new ie({
+										i = C(ie.parse(arguments, [new ie({
 											type: "string",
 											nullable: !0
 										}), new ie({
@@ -12851,7 +13097,7 @@
 								key: "updateCurrentUserInfoWithPreferredLanguages",
 								value: function(e, n) {
 									var t = this,
-										r = E(ie.parse(arguments, [new ie({
+										r = C(ie.parse(arguments, [new ie({
 											type: "array",
 											constraint: function(e) {
 												return e.every((function(e) {
@@ -12875,7 +13121,7 @@
 								key: "registerGCMPushTokenForCurrentUser",
 								value: function(e, n) {
 									var t = this,
-										r = E(ie.parse(arguments, [new ie({
+										r = C(ie.parse(arguments, [new ie({
 											type: "string",
 											constraint: function(e) {
 												return 0 < e.length
@@ -12897,7 +13143,7 @@
 								key: "unregisterGCMPushTokenForCurrentUser",
 								value: function(e, n) {
 									var t = this,
-										r = E(ie.parse(arguments, [new ie({
+										r = C(ie.parse(arguments, [new ie({
 											type: "string",
 											constraint: function(e) {
 												return 0 < e.length
@@ -12928,7 +13174,7 @@
 								key: "registerAPNSPushTokenForCurrentUser",
 								value: function(e, n) {
 									var t = this,
-										r = E(ie.parse(arguments, [new ie({
+										r = C(ie.parse(arguments, [new ie({
 											type: "string",
 											constraint: function(e) {
 												return 0 < e.length
@@ -12950,7 +13196,7 @@
 								key: "unregisterAPNSPushTokenForCurrentUser",
 								value: function(e, n) {
 									var t = this,
-										r = E(ie.parse(arguments, [new ie({
+										r = C(ie.parse(arguments, [new ie({
 											type: "string",
 											constraint: function(e) {
 												return 0 < e.length
@@ -12992,7 +13238,7 @@
 								value: function(e, n, t, r) {
 									var i = this,
 										s = null,
-										a = E(ie.parse(arguments, [new ie({
+										a = C(ie.parse(arguments, [new ie({
 											type: "string",
 											nullable: !0
 										}), new ie({
@@ -13011,7 +13257,7 @@
 									s = a[0], e = a[1], n = a[2], t = a[3], r = a[4];
 									var o = M.get(this._iid).GroupChannelChangeLogsParams,
 										l = null;
-									return s ? (a = E(ie.parse(arguments, [new ie({
+									return s ? (a = C(ie.parse(arguments, [new ie({
 										type: "string",
 										nullable: !0
 									}), new ie({
@@ -13043,7 +13289,7 @@
 								value: function(e, n, t, r) {
 									var i = this,
 										s = null,
-										a = E(ie.parse(arguments, [new ie({
+										a = C(ie.parse(arguments, [new ie({
 											type: "number",
 											constraint: function(e) {
 												return 0 <= e
@@ -13064,7 +13310,7 @@
 									s = a[0], e = a[1], n = a[2], t = a[3], r = a[4];
 									var o = M.get(this._iid).GroupChannelChangeLogsParams,
 										l = null;
-									return s ? (a = E(ie.parse(arguments, [new ie({
+									return s ? (a = C(ie.parse(arguments, [new ie({
 										type: "number",
 										constraint: function(e) {
 											return 0 <= e
@@ -13110,7 +13356,7 @@
 								key: "setChannelInvitationPreference",
 								value: function(e, n) {
 									var t = this,
-										r = E(ie.parse(arguments, [new ie({
+										r = C(ie.parse(arguments, [new ie({
 											type: "boolean"
 										}), new ie({
 											type: "callback"
@@ -13149,7 +13395,7 @@
 								key: "setDoNotDisturb",
 								value: function(e, n, t, r, i, s, a) {
 									var o = this,
-										l = E(ie.parse(arguments, [new ie({
+										l = C(ie.parse(arguments, [new ie({
 											type: "boolean"
 										}), new ie({
 											type: "number",
@@ -13217,7 +13463,7 @@
 								key: "setSnoozePeriod",
 								value: function(e, n, t, r) {
 									var i = this,
-										s = E(ie.parse(arguments, [new ie({
+										s = C(ie.parse(arguments, [new ie({
 											type: "boolean"
 										}), new ie({
 											type: "number",
@@ -13251,7 +13497,7 @@
 							}, {
 								key: "blockUser",
 								value: function(e, n) {
-									var t = E(ie.parse(arguments, [new ie({
+									var t = C(ie.parse(arguments, [new ie({
 											type: "object",
 											constraint: function(e) {
 												return e && e.hasOwnProperty("userId")
@@ -13268,7 +13514,7 @@
 								key: "blockUserWithUserId",
 								value: function(e, n) {
 									var t = this,
-										r = E(ie.parse(arguments, [new ie({
+										r = C(ie.parse(arguments, [new ie({
 											type: "string",
 											constraint: function(e) {
 												return e && (!t.currentUser || e !== t.currentUser.userId)
@@ -13282,14 +13528,14 @@
 											blockedUserId: e
 										}, (function(e, t) {
 											var r = null;
-											e || (r = new Ee(t)), n(e, r)
+											e || (r = new Ce(t)), n(e, r)
 										}))
 									}), n)
 								}
 							}, {
 								key: "unblockUser",
 								value: function(e, n) {
-									var t = E(ie.parse(arguments, [new ie({
+									var t = C(ie.parse(arguments, [new ie({
 											type: "object",
 											constraint: function(e) {
 												return e && e.hasOwnProperty("userId")
@@ -13306,7 +13552,7 @@
 								key: "unblockUserWithUserId",
 								value: function(e, n) {
 									var t = this,
-										r = E(ie.parse(arguments, [new ie({
+										r = C(ie.parse(arguments, [new ie({
 											type: "string",
 											constraint: function(e) {
 												return e && (!t.currentUser || e !== t.currentUser.userId)
@@ -13352,7 +13598,7 @@
 								value: function(e, n) {
 									var t = this,
 										r = M.get(this._iid).GroupChannel,
-										i = (r = E(ie.parse(arguments, [new ie({
+										i = (r = C(ie.parse(arguments, [new ie({
 											type: r.MemberStateFilter,
 											optional: !0,
 											defaultValue: r.MemberStateFilter.ALL
@@ -13385,7 +13631,7 @@
 									var t, r = this,
 										i = (t = M.get(this._iid)).GroupChannel,
 										s = t.GroupChannelTotalUnreadMessageCountParams,
-										a = (t = E(ie.parse(arguments, [new ie({
+										a = (t = C(ie.parse(arguments, [new ie({
 											type: "object",
 											optional: !0,
 											defaultValue: null,
@@ -13412,7 +13658,7 @@
 								key: "getUnreadItemCount",
 								value: function(e, n) {
 									var t = this,
-										r = E(ie.parse(arguments, [new ie({
+										r = C(ie.parse(arguments, [new ie({
 											type: "array",
 											constraint: function(e) {
 												return 0 < e.length && e.every((function(e) {
@@ -13466,7 +13712,7 @@
 								key: "getMyPushTokensByToken",
 								value: function(e, n, t) {
 									var r = this,
-										i = E(ie.parse(arguments, [new ie({
+										i = C(ie.parse(arguments, [new ie({
 											type: "string"
 										}), new ie({
 											type: "string",
@@ -13536,7 +13782,7 @@
 								key: "markAsReadWithChannelUrls",
 								value: function(e, n) {
 									var t = this,
-										r = E(ie.parse(arguments, [new ie({
+										r = C(ie.parse(arguments, [new ie({
 											type: "array",
 											constraint: function(e) {
 												return e.every((function(e) {
@@ -13569,7 +13815,7 @@
 								key: "getFriendChangeLogsByToken",
 								value: function(e, n) {
 									var t = this,
-										r = E(ie.parse(arguments, [new ie({
+										r = C(ie.parse(arguments, [new ie({
 											type: "string",
 											optional: !0,
 											defaultValue: null
@@ -13597,7 +13843,7 @@
 								key: "uploadFriendDiscoveries",
 								value: function(e, n) {
 									var t = this,
-										r = E(ie.parse(arguments, [new ie({
+										r = C(ie.parse(arguments, [new ie({
 											type: "array",
 											constraint: function(e) {
 												return e.every((function(e) {
@@ -13619,7 +13865,7 @@
 							}, {
 								key: "deleteFriendDiscovery",
 								value: function(e, n) {
-									var t = E(ie.parse(arguments, [new ie({
+									var t = C(ie.parse(arguments, [new ie({
 											type: "string"
 										}), new ie({
 											type: "callback"
@@ -13633,7 +13879,7 @@
 								key: "deleteFriendDiscoveries",
 								value: function(e, n) {
 									var t = this,
-										r = E(ie.parse(arguments, [new ie({
+										r = C(ie.parse(arguments, [new ie({
 											type: "array",
 											constraint: function(e) {
 												return e.every((function(e) {
@@ -13656,7 +13902,7 @@
 								key: "addFriends",
 								value: function(e, n) {
 									var t = this,
-										r = E(ie.parse(arguments, [new ie({
+										r = C(ie.parse(arguments, [new ie({
 											type: "array",
 											constraint: function(e) {
 												return e.every((function(e) {
@@ -13681,7 +13927,7 @@
 							}, {
 								key: "deleteFriend",
 								value: function(e, n) {
-									var t = E(ie.parse(arguments, [new ie({
+									var t = C(ie.parse(arguments, [new ie({
 											type: "string"
 										}), new ie({
 											type: "callback"
@@ -13695,7 +13941,7 @@
 								key: "deleteFriends",
 								value: function(e, n) {
 									var t = this,
-										r = E(ie.parse(arguments, [new ie({
+										r = C(ie.parse(arguments, [new ie({
 											type: "array",
 											constraint: function(e) {
 												return e.every((function(e) {
@@ -13718,7 +13964,7 @@
 								key: "getAllEmoji",
 								value: function(e) {
 									var n = this,
-										t = E(ie.parse(arguments, [new ie({
+										t = C(ie.parse(arguments, [new ie({
 											type: "callback"
 										})]), 2),
 										r = t[0];
@@ -13732,7 +13978,7 @@
 								key: "getEmojiCategory",
 								value: function(e, n) {
 									var t = this,
-										r = E(ie.parse(arguments, [new ie({
+										r = C(ie.parse(arguments, [new ie({
 											type: "number",
 											constraint: function(e) {
 												return 0 <= e
@@ -13753,7 +13999,7 @@
 								key: "getEmoji",
 								value: function(e, n) {
 									var t = this,
-										r = E(ie.parse(arguments, [new ie({
+										r = C(ie.parse(arguments, [new ie({
 											type: "string"
 										}), new ie({
 											type: "callback"
@@ -13771,7 +14017,7 @@
 								key: "getAllowFriendDiscovery",
 								value: function(e) {
 									var n = this,
-										t = E(ie.parse(arguments, [new ie({
+										t = C(ie.parse(arguments, [new ie({
 											type: "callback"
 										})]), 2),
 										r = t[0];
@@ -13785,7 +14031,7 @@
 								key: "setAllowFriendDiscovery",
 								value: function(e, n) {
 									var t = this,
-										r = E(ie.parse(arguments, [new ie({
+										r = C(ie.parse(arguments, [new ie({
 											type: "boolean"
 										}), new ie({
 											type: "callback"
@@ -13856,4 +14102,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/vendors~Chat~RedesignChat.d511a7b399cd0a53330e.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/vendors~Chat~RedesignChat.53cd3b091135f8f64886.js.map

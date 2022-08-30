@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/OverlayDirectsEmptyState.6a35ffe3952c3430c5ca.js
-// Retrieved at 8/30/2022, 3:10:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/OverlayDirectsEmptyState.9b2f3a5014a1ba495bde.js
+// Retrieved at 8/30/2022, 4:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["OverlayDirectsEmptyState"], {
 		"./src/chat/components/OverlayDirectsEmptyState/index.m.less": function(e, t, a) {
@@ -33,108 +33,110 @@
 				c = a.n(s),
 				l = a("./node_modules/react-redux/es/index.js"),
 				o = a("./node_modules/react-router-redux/es/index.js"),
-				m = a("./src/chat/components/OverlayNav/index.tsx"),
-				h = a("./src/chat/controls/Button/index.tsx"),
-				i = a("./src/chat/controls/Overlay/index.tsx"),
-				d = a("./src/chat/controls/OverlayControlBar/index.tsx"),
-				u = a("./src/chat/helpers/urls/index.ts"),
-				_ = a("./src/chat/icons/svgs/ChatNew/index.tsx"),
+				m = a("./src/chat/actions/tracking.ts"),
+				h = a("./src/chat/components/OverlayNav/index.tsx"),
+				i = a("./src/chat/controls/Button/index.tsx"),
+				d = a("./src/chat/controls/Overlay/index.tsx"),
+				u = a("./src/chat/controls/OverlayControlBar/index.tsx"),
+				_ = a("./src/chat/helpers/urls/index.ts"),
+				E = a("./src/chat/icons/svgs/ChatNew/index.tsx"),
 				v = a("./src/chat/models/Channel/index.ts"),
 				x = a("./src/chat/selectors/channelsFilter.ts"),
-				E = a("./src/chat/selectors/experiments.ts"),
-				f = a("./src/chat/components/OverlayDirectsEmptyState/index.m.less"),
-				p = a.n(f);
-			const y = Object(l.b)(null, e => ({
+				f = a("./src/chat/selectors/experiments.ts"),
+				p = a("./src/chat/components/OverlayDirectsEmptyState/index.m.less"),
+				b = a.n(p);
+			const g = Object(l.b)(null, e => ({
 					onCreateMessage: () => {
-						const t = Object(u.getRedirectURL)(Object(u.channelUrl)("create"));
+						e(Object(m.E)());
+						const t = Object(_.getRedirectURL)(Object(_.channelUrl)("create"));
 						return e(Object(o.b)(t))
 					}
 				})),
-				b = e => c.a.createElement(i.a, {
+				y = e => c.a.createElement(d.a, {
 					innerContent: !0
-				}, c.a.createElement(m.a, {
+				}, c.a.createElement(h.a, {
 					title: r.fbt._("Start chatting", null, {
 						hk: "3B5dRm"
 					})
 				}), c.a.createElement("div", {
-					className: p.a.OverlayContent
+					className: b.a.OverlayContent
 				}, c.a.createElement("img", {
-					className: p.a.Image,
+					className: b.a.Image,
 					src: `${n.a.assetPath}/img/chat/empty-hero.png`
 				}), c.a.createElement("div", {
-					className: p.a.Info
+					className: b.a.Info
 				}, c.a.createElement("h4", {
-					className: p.a.Header
+					className: b.a.Header
 				}, r.fbt._("Start a direct chat", null, {
 					hk: "4qVzlj"
 				})), c.a.createElement("p", {
-					className: p.a.Text
+					className: b.a.Text
 				}, r.fbt._("You can start a new direct chat with the button below or from someone's profile", null, {
 					hk: "3wS0vs"
-				})))), c.a.createElement(d.a, {
+				})))), c.a.createElement(u.a, {
 					primaryButtonText: r.fbt._("New Chat", null, {
 						hk: "33WSw"
 					}),
 					primaryButtonAction: e.onCreateMessage,
 					primaryButtonOnly: !0
 				})),
-				g = () => c.a.createElement(i.a, {
+				N = () => c.a.createElement(d.a, {
 					innerContent: !0
-				}, c.a.createElement(m.a, {
+				}, c.a.createElement(h.a, {
 					title: "",
 					withBorder: !0
 				}), c.a.createElement("div", {
-					className: p.a.OverlayContent
+					className: b.a.OverlayContent
 				}, c.a.createElement("img", {
-					className: p.a.Image,
+					className: b.a.Image,
 					src: `${n.a.assetPath}/img/chat/empty-hero.png`
 				}), c.a.createElement("div", {
-					className: p.a.InfoV2
+					className: b.a.InfoV2
 				}, c.a.createElement("h4", {
-					className: p.a.HeaderV2
+					className: b.a.HeaderV2
 				}, r.fbt._("Live chats live here", null, {
 					hk: "1iKhTe"
 				})), c.a.createElement("p", {
-					className: p.a.Text
+					className: b.a.Text
 				}, r.fbt._("When a community or person you follow hosts a live chat, you'll find it here.", null, {
 					hk: "1BB3ei"
 				}))))),
-				N = e => c.a.createElement(i.a, {
+				O = e => c.a.createElement(d.a, {
 					innerContent: !0
-				}, c.a.createElement(m.a, {
+				}, c.a.createElement(h.a, {
 					title: "",
 					withBorder: !0
 				}), c.a.createElement("div", {
-					className: p.a.OverlayContent
+					className: b.a.OverlayContent
 				}, c.a.createElement("img", {
-					className: p.a.Image,
+					className: b.a.Image,
 					src: `${n.a.assetPath}/img/chat/empty-hero.png`
 				}), c.a.createElement("div", {
-					className: p.a.InfoV2
+					className: b.a.InfoV2
 				}, c.a.createElement("h4", {
-					className: p.a.HeaderV2
+					className: b.a.HeaderV2
 				}, r.fbt._("Welcome to chat!", null, {
 					hk: "1m6hd2"
 				}), c.a.createElement("br", null), r.fbt._("Let's start a conversation", null, {
 					hk: "1kocrz"
 				})), c.a.createElement("p", {
-					className: p.a.Text
+					className: b.a.Text
 				}, r.fbt._("Invite other redditors or share a link with people you know.", null, {
 					hk: "47BjwW"
-				})), c.a.createElement(h.a, {
+				})), c.a.createElement(i.a, {
 					onClick: e.onCreateMessage,
-					className: p.a.StartChatButton,
+					className: b.a.StartChatButton,
 					primary: !0
-				}, c.a.createElement(_.a, {
-					className: p.a.ChatNew
+				}, c.a.createElement(E.a, {
+					className: b.a.ChatNew
 				}), r.fbt._("Start Chatting", null, {
 					hk: "2xwnNZ"
 				})))));
-			t.default = y(e => {
+			t.default = g(e => {
 				const t = Object(l.e)(x.a);
-				return Object(l.e)(E.q) ? t === v.f.Live ? c.a.createElement(g, null) : c.a.createElement(N, e) : c.a.createElement(b, e)
+				return Object(l.e)(f.r) ? t === v.g.Live ? c.a.createElement(N, null) : c.a.createElement(O, e) : c.a.createElement(y, e)
 			})
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/OverlayDirectsEmptyState.6a35ffe3952c3430c5ca.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/OverlayDirectsEmptyState.9b2f3a5014a1ba495bde.js.map

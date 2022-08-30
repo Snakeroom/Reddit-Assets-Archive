@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/OverlayLinkSharingSettings.c06016a20b7e43b9b5bf.js
-// Retrieved at 8/30/2022, 3:10:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/OverlayLinkSharingSettings.0b60157c4f1c3c565e34.js
+// Retrieved at 8/30/2022, 4:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["OverlayLinkSharingSettings"], {
 		"./src/chat/components/OverlayLinkSharingSettings/index.m.less": function(e, t, n) {
@@ -132,7 +132,7 @@
 					displayText: String(e),
 					onClick: () => {
 						(e => {
-							C(e), w.hide(), k(Object(p.O)(r.a.MEMBER, e))
+							C(e), w.hide(), k(Object(p.Q)(r.a.MEMBER, e))
 						})(e)
 					},
 					tabIndex: 2,
@@ -171,7 +171,7 @@
 						displayText: (null === (n = d.d[e]) || void 0 === n ? void 0 : n.label()) || "",
 						onClick: () => {
 							(e => {
-								g(e), A.hide(), k(Object(p.O)(r.a.TIME, d.d[e].originalLabel))
+								g(e), A.hide(), k(Object(p.Q)(r.a.TIME, d.d[e].originalLabel))
 							})(e)
 						},
 						tabIndex: 3,
@@ -293,4 +293,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/OverlayLinkSharingSettings.c06016a20b7e43b9b5bf.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/OverlayLinkSharingSettings.0b60157c4f1c3c565e34.js.map

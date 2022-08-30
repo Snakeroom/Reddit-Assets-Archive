@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ReportFlow.fa2e396fb58062c1422d.js
-// Retrieved at 8/30/2022, 3:10:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ReportFlow.f47ad6b262b70f11b902.js
+// Retrieved at 8/30/2022, 4:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ReportFlow", "ReportFlowNew"], {
 		"./node_modules/@reddit/i18n-tools/runtime/helpers/locale/index.js": function(e, t, n) {
@@ -1518,16 +1518,16 @@
 				K = n("./src/reddit/actions/userBlocks.ts"),
 				q = n("./src/reddit/models/WhitelistAndBlocked.ts"),
 				W = n("./src/reddit/icons/svgs/ProfileSlashed/index.tsx"),
-				z = n("./src/reddit/components/ReportFlow/FinalPage/index.m.less"),
-				Q = n.n(z);
-			const J = c.a.wrapped(h.a, "blockUserHolder", Q.a),
-				V = c.a.wrapped(W.a, "BlockUserIcon", Q.a),
-				Y = c.a.div("BlockUserHeader", Q.a),
-				X = c.a.div("OptionHolder", Q.a),
-				Z = c.a.div("OptionHeader", Q.a),
-				$ = c.a.div("OptionDescription", Q.a),
-				ee = c.a.a("Link", Q.a),
-				te = c.a.wrapped(h.a, "footer", Q.a),
+				Q = n("./src/reddit/components/ReportFlow/FinalPage/index.m.less"),
+				z = n.n(Q);
+			const J = c.a.wrapped(h.a, "blockUserHolder", z.a),
+				V = c.a.wrapped(W.a, "BlockUserIcon", z.a),
+				Y = c.a.div("BlockUserHeader", z.a),
+				X = c.a.div("OptionHolder", z.a),
+				Z = c.a.div("OptionHeader", z.a),
+				$ = c.a.div("OptionDescription", z.a),
+				ee = c.a.a("Link", z.a),
+				te = c.a.wrapped(h.a, "footer", z.a),
 				ne = "https://www.reddithelp.com/en/categories/rules-reporting/account-and-community-restrictions/what-report-abuse",
 				oe = Object(i.c)({
 					blockUserPending: e => e.user.blocked.api,
@@ -1890,9 +1890,9 @@
 				Ke = n("./src/reddit/models/ReportFlow/index.ts"),
 				qe = n("./src/reddit/selectors/commentSelector.ts"),
 				We = n("./src/reddit/selectors/experiments/crisisTextLine.ts"),
-				ze = n("./src/reddit/selectors/posts.ts"),
-				Qe = n("./src/reddit/components/ReportFlow/_ReportFlow.m.less"),
-				Je = n.n(Qe);
+				Qe = n("./src/reddit/selectors/posts.ts"),
+				ze = n("./src/reddit/components/ReportFlow/_ReportFlow.m.less"),
+				Je = n.n(ze);
 			const Ve = c.a.div("CloseWrapper", Je.a),
 				Ye = c.a.wrapped(Ae.a, "Close", Je.a),
 				Xe = Object(i.c)({
@@ -1917,7 +1917,7 @@
 						let {
 							postId: n
 						} = t;
-						return n ? Object(ze.G)(e, {
+						return n ? Object(Qe.G)(e, {
 							postId: n
 						}) : null
 					},
@@ -1928,7 +1928,7 @@
 						let {
 							postId: n
 						} = t;
-						return n ? Object(ze.V)(e, {
+						return n ? Object(Qe.V)(e, {
 							postId: n
 						}) : null
 					},
@@ -2224,7 +2224,7 @@
 						}))
 					}
 				}),
-				z = async (e, t, n, o, s) => {
+				Q = async (e, t, n, o, s) => {
 					var r;
 					const a = await ((e, t) => {
 						let {
@@ -2253,7 +2253,7 @@
 						return e ? JSON.parse(e) : null
 					}
 				};
-			class Q extends l.a.Component {
+			class z extends l.a.Component {
 				constructor(e) {
 					super(e), this.getItemMetadata = () => {
 						const {
@@ -2395,7 +2395,7 @@
 						gqlContext: n,
 						hostAppName: o
 					} = this.props;
-					z(n(), e, H, o, t).then(e => {
+					Q(n(), e, H, o, t).then(e => {
 						e && this.setState({
 							formComponent: e.component,
 							formState: e.state,
@@ -2447,7 +2447,7 @@
 					}))
 				}
 			}
-			t.default = Object(I.b)(W(Object(h.c)(Q)))
+			t.default = Object(I.b)(W(Object(h.c)(z)))
 		},
 		"./src/reddit/components/ReportFlow/_ReportFlowNewModal.tsx": function(e, t, n) {
 			"use strict";
@@ -3326,14 +3326,14 @@
 						...p,
 						variables: t
 					});
-					return !!Object(i.c)(n) && (n.body.data.subredditInfoById.allowedPostTypes || []).includes(b.z.Talk)
+					return !!Object(i.c)(n) && (n.body.data.subredditInfoById.allowedPostTypes || []).includes(b.A.Talk)
 				}, R = async (e, t) => {
 					var n, o;
 					const s = await Object(a.a)(e, {
 						...m,
 						variables: t
 					});
-					return !!Object(i.c)(s) && (null !== (o = null === (n = s.body.data.profileByName) || void 0 === n ? void 0 : n.allowedPostTypes) && void 0 !== o ? o : []).includes(b.z.Talk)
+					return !!Object(i.c)(s) && (null !== (o = null === (n = s.body.data.profileByName) || void 0 === n ? void 0 : n.allowedPostTypes) && void 0 !== o ? o : []).includes(b.A.Talk)
 				}, C = async e => {
 					var t;
 					const n = await Object(a.a)(e, u);
@@ -3981,4 +3981,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ReportFlow.fa2e396fb58062c1422d.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ReportFlow.f47ad6b262b70f11b902.js.map

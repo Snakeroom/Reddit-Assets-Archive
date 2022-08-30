@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ChatPost.667472d609dffd8a4064.js
-// Retrieved at 8/30/2022, 3:10:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ChatPost.dac0fd534a55c7cc20d1.js
+// Retrieved at 8/30/2022, 4:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ChatPost"], {
 		"./node_modules/lodash/_baseDelay.js": function(e, t) {
@@ -2199,7 +2199,7 @@
 							const {
 								awardId: n,
 								commentId: o
-							} = e, r = se()(), i = Object(Ce.a)(a, n), c = Object(ve.e)(a);
+							} = e, r = se()(), i = Object(Ce.a)(a, n), c = Object(ve.f)(a);
 							if ((e => xe(e) || (e => "chat_reaction_downvote" === e.id)(e))(i)) {
 								const e = xe(i) ? "chat_reaction_downvote" : "chat_reaction_upvote",
 									n = ((e, t, n) => {
@@ -2256,7 +2256,7 @@
 								awardId: o,
 								awardingId: s,
 								commentId: i
-							} = e, c = Object(ve.e)(r);
+							} = e, c = Object(ve.f)(r);
 							await Object(le.c)(a(), {
 								awardingId: s
 							}), c || await Pe(r, {
@@ -3040,7 +3040,7 @@
 						} = t;
 						return Object(Ut.c)(e, n.authorId)
 					},
-					isLivePostCreatorModRoleEnabled: e => Object(ve.g)(e),
+					isLivePostCreatorModRoleEnabled: e => Object(ve.h)(e),
 					isChatCreateOnlyPerm: (e, t) => {
 						let {
 							comment: n
@@ -3091,7 +3091,7 @@
 					availableReactionAwards: f
 				} = e;
 				const x = !!s && s.id === t.authorId,
-					E = Object(d.e)(e => !u && Object(ve.c)(e)),
+					E = Object(d.e)(e => !u && Object(ve.d)(e)),
 					_ = Object(on.a)(),
 					k = c.a.useCallback(() => {
 						_(Object(Ct.f)("other_options", t.id))
@@ -3174,7 +3174,7 @@
 				})))
 			});
 			const Vn = e => {
-				return Object(d.e)(ve.d) ? c.a.createElement(Wn, e) : c.a.createElement(en, e)
+				return Object(d.e)(ve.e) ? c.a.createElement(Wn, e) : c.a.createElement(en, e)
 			};
 			var qn = n("./src/reddit/components/CommentsChat/Comment/Reply/index.tsx"),
 				zn = n("./src/reddit/components/CommentsChat/Comment/SystemMessage/index.m.less"),
@@ -3691,7 +3691,7 @@
 					} = t;
 					return Boolean(e.shortcuts.activeCommentId && n === e.shortcuts.activeCommentId)
 				},
-				isCommentAwardsAndReactionsEnabled: ve.c,
+				isCommentAwardsAndReactionsEnabled: ve.d,
 				isEditing: q.z,
 				prediction: oo.f,
 				isSelectedForReply: (e, t) => {
@@ -3930,7 +3930,7 @@
 				})))
 			}));
 			const Ho = e => {
-				return Object(d.e)(ve.f) ? c.a.createElement(Uo, e) : c.a.createElement(bo, e)
+				return Object(d.e)(ve.g) ? c.a.createElement(Uo, e) : c.a.createElement(bo, e)
 			};
 			var Ko = n("./node_modules/lodash/isEqual.js"),
 				Wo = n.n(Ko),
@@ -4182,8 +4182,8 @@
 					isPending: q.d,
 					liveCommentsWebsocket: Yo.E,
 					moreCommentsLink: q.H,
-					isCommentReactionStreamingKillSwitchEnabled: ve.e,
-					isCommentAwardsAndReactionsEnabled: ve.c,
+					isCommentReactionStreamingKillSwitchEnabled: ve.f,
+					isCommentAwardsAndReactionsEnabled: ve.d,
 					currentUserId: Ie.i
 				}),
 				ss = Object(d.b)(os, (e, t) => ({
@@ -4380,7 +4380,9 @@
 						onData: this.handleReactionStreamData,
 						queryKey: "liveChatCommentReactions"
 					}), _ ? c.a.createElement(Ue.c, {
-						className: a,
+						className: Object(m.a)(a, {
+							[es.a.EmbeddedLiveChatScroller]: i
+						}),
 						isChat: !0
 					}) : c.a.createElement(Zo, {
 						className: Object(m.a)(n, {
@@ -5491,4 +5493,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatPost.667472d609dffd8a4064.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatPost.dac0fd534a55c7cc20d1.js.map

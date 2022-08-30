@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ChatOverlayReport.beb5086361fc966e8bf0.js
-// Retrieved at 8/30/2022, 3:10:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ChatOverlayReport.6a68e4177263dd1f2998.js
+// Retrieved at 8/30/2022, 4:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ChatOverlayReport"], {
 		"./src/chat/components/OverlayReport/CrisisFlow/CrisisFlowPage.m.less": function(e, t, s) {
@@ -112,19 +112,19 @@
 				w = s("./src/chat/components/OverlayReport/CrisisFlow/CrisisMainPage/index.m.less"),
 				S = s.n(w);
 			const {
-				fbt: g
-			} = s("./node_modules/fbt/lib/FbtPublic.js"), A = u.a.div("CrisisContent", S.a), b = u.a.div("CrisisImageContainer", T.a), N = u.a.img("CrisisImage", S.a), L = u.a.h2("CrisisTitle", T.a), v = u.a.p("CrisisDescription", T.a);
-			var F = e => l.a.createElement(A, null, l.a.createElement(b, null, l.a.createElement(N, {
+				fbt: b
+			} = s("./node_modules/fbt/lib/FbtPublic.js"), g = u.a.div("CrisisContent", S.a), A = u.a.div("CrisisImageContainer", T.a), N = u.a.img("CrisisImage", S.a), L = u.a.h2("CrisisTitle", T.a), v = u.a.p("CrisisDescription", T.a);
+			var F = e => l.a.createElement(g, null, l.a.createElement(A, null, l.a.createElement(N, {
 				src: `${r.a.assetPath}/img/crisis-line-icon.png`
-			})), l.a.createElement(L, null, g._("Would you like Reddit to reach out to {username} ?", [g._param("username", l.a.createElement("span", null, "u/", e.username))], {
+			})), l.a.createElement(L, null, b._("Would you like Reddit to reach out to {username} ?", [b._param("username", l.a.createElement("span", null, "u/", e.username))], {
 				hk: "3RFVlj"
-			})), l.a.createElement(v, null, g._("We’ve partnered with {=Crisis Text Line} to provide redditors with support from trained Crisis Counselors, and will reach out (confidentially) to let {username} know that there are people who are here for them.", [g._param("=Crisis Text Line", l.a.createElement("a", {
+			})), l.a.createElement(v, null, b._("We’ve partnered with {=Crisis Text Line} to provide redditors with support from trained Crisis Counselors, and will reach out (confidentially) to let {username} know that there are people who are here for them.", [b._param("=Crisis Text Line", l.a.createElement("a", {
 				href: "https://www.crisistextline.org/",
 				target: "_blank",
 				rel: "noopener noreferrer"
-			}, g._("Crisis Text Line", null, {
+			}, b._("Crisis Text Line", null, {
 				hk: "4ih1Mk"
-			}))), g._param("username", l.a.createElement("strong", null, "u/", e.username))], {
+			}))), b._param("username", l.a.createElement("strong", null, "u/", e.username))], {
 				hk: "3eDxpt"
 			})));
 			var M = e => l.a.createElement("svg", {
@@ -192,7 +192,7 @@
 				y = s.n(x);
 			const {
 				fbt: B
-			} = s("./node_modules/fbt/lib/FbtPublic.js"), j = u.a.div("CrisisImageContainer", T.a), D = u.a.h2("CrisisTitle", T.a), H = u.a.p("CrisisDescription", T.a), U = u.a.div("CrisisOtherActions", y.a), Y = u.a.h4("CrisisOtherActionsTitle", y.a), V = u.a.div("CrisisLinkIconContainer", y.a), G = u.a.div("CrisisLinkText", y.a), W = u.a.h3("CrisisLinkTitle", y.a), K = u.a.p("CrisisLinkDescription", y.a);
+			} = s("./node_modules/fbt/lib/FbtPublic.js"), j = u.a.div("CrisisImageContainer", T.a), D = u.a.h2("CrisisTitle", T.a), H = u.a.p("CrisisDescription", T.a), Y = u.a.div("CrisisOtherActions", y.a), U = u.a.h4("CrisisOtherActionsTitle", y.a), V = u.a.div("CrisisLinkIconContainer", y.a), G = u.a.div("CrisisLinkText", y.a), W = u.a.h3("CrisisLinkTitle", y.a), K = u.a.p("CrisisLinkDescription", y.a);
 			var Z = e => l.a.createElement("div", {
 				className: y.a.CrisisThankYouPage
 			}, l.a.createElement(j, null, l.a.createElement(P, {
@@ -201,7 +201,7 @@
 				hk: "1ePh84"
 			})), l.a.createElement(H, null, B._("We’ve reached out to {username} . By letting us know, you’ve helped connect them to people who are there to listen and provide support.", [B._param("username", l.a.createElement("span", null, "u/", e.username))], {
 				hk: "3X1mGY"
-			})), l.a.createElement(U, null, l.a.createElement(Y, null, B._("Other things you can do", null, {
+			})), l.a.createElement(Y, null, l.a.createElement(U, null, B._("Other things you can do", null, {
 				hk: "4oCunD"
 			})), l.a.createElement("a", {
 				href: "https://www.reddithelp.com/en/categories/rules-reporting/suicide-response/what-do-i-do-if-someone-talks-about-seriously-hurting",
@@ -302,7 +302,7 @@
 							e(Object(p.b)())
 						},
 						onChannelBlock: t => {
-							e(R.n(t)), e(O.W(t)), e(O.X(t))
+							e(R.n(t)), e(O.Y(t)), e(O.Z(t))
 						},
 						showFailToast: () => e(Object(C.f)({
 							kind: E.b.Error,
@@ -311,7 +311,7 @@
 							})
 						})),
 						onCancel: () => e(Object(d.a)()),
-						submitReportMessage: (t, s) => e(Object(O.Z)(t, s))
+						submitReportMessage: (t, s) => e(Object(O.bb)(t, s))
 					}
 				}),
 				_e = async (e, t, s) => {
@@ -502,4 +502,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatOverlayReport.beb5086361fc966e8bf0.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatOverlayReport.6a68e4177263dd1f2998.js.map
