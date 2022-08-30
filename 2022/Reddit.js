@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Reddit.2f618092e333ab663959.js
-// Retrieved at 8/30/2022, 6:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Reddit.6f034e86c12124e99037.js
+// Retrieved at 8/30/2022, 6:40:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Reddit"], {
 		"./assets/fonts/BentonSans/font.less": function(e, t, n) {},
@@ -7069,25 +7069,6 @@
 					if (!o.ok) throw new Error("Unable to update payment information");
 					return o.body.data.changeStripePaymentMethod.sessionId
 				}
-		},
-		"./src/reddit/endpoints/post/convert.ts": function(e, t, n) {
-			"use strict";
-			var s = n("./src/lib/constants/index.ts"),
-				o = n("./src/lib/makeApiRequest/index.ts"),
-				r = n("./src/lib/omitHeaders/index.ts"),
-				a = n("./src/reddit/constants/headers.ts"),
-				i = n("./src/reddit/helpers/addRedesignIdentifier/index.ts"),
-				c = n("./src/reddit/models/PostCreationForm/index.ts");
-			t.a = (e, t, n) => {
-				const l = {
-					output_mode: "markdown" === t ? t : "rtjson"
-				};
-				return t === c.i.MARKDOWN ? l.richtext_json = n : l.markdown_text = n, Object(o.a)(Object(r.a)(e, [a.a]), {
-					endpoint: Object(i.a)(`${e.apiUrl}/api/convert_rte_body_format`),
-					method: s.mb.POST,
-					data: l
-				})
-			}
 		},
 		"./src/reddit/helpers/awards/overlayIds.ts": function(e, t, n) {
 			"use strict";
@@ -21321,4 +21302,4 @@
 		["./src/reddit/index.tsx", "runtime~Reddit", "vendors~CommentsPage~ModerationPages~Reddit~reddit-components-ClassicPost~reddit-components-CompactP~d737df3e", "vendors~CommentsPage~Governance~ModListing~ModerationPages~Reddit~Subreddit", "vendors~Chat~Governance~Reddit", "vendors~Reddit", "CommentsPage~Governance~Reddit~ReportFlow~Subreddit~reddit-components-BlankPost~reddit-components-Cl~5351df81", "PostCreation~Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~r~4c415e24", "Governance~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compo~bd4baca2", "Governance~ModListing~Reddit~ReportFlow~Subreddit", "Governance~ModListing~Reddit~Subreddit", "Chat~Governance~Reddit", "Governance~Reddit~SubredditForkingCTA", "Governance~Reddit", "Reddit~StandalonePostPage"]
 	]
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit.2f618092e333ab663959.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit.6f034e86c12124e99037.js.map

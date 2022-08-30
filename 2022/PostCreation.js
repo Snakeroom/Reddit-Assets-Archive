@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostCreation.a08460a5a5ecbe83270d.js
-// Retrieved at 8/30/2022, 6:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostCreation.68d61a4f64235bce37c4.js
+// Retrieved at 8/30/2022, 6:40:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostCreation", "ChatMessageInput~MembershipPaywallPage~RichTextEditor", "ContributorRequestButton"], {
 		"./node_modules/autosize/dist/autosize.js": function(e, t, n) {
@@ -23976,25 +23976,6 @@
 				} : e)
 			}
 		},
-		"./src/reddit/endpoints/post/convert.ts": function(e, t, n) {
-			"use strict";
-			var o = n("./src/lib/constants/index.ts"),
-				s = n("./src/lib/makeApiRequest/index.ts"),
-				r = n("./src/lib/omitHeaders/index.ts"),
-				i = n("./src/reddit/constants/headers.ts"),
-				a = n("./src/reddit/helpers/addRedesignIdentifier/index.ts"),
-				c = n("./src/reddit/models/PostCreationForm/index.ts");
-			t.a = (e, t, n) => {
-				const l = {
-					output_mode: "markdown" === t ? t : "rtjson"
-				};
-				return t === c.i.MARKDOWN ? l.richtext_json = n : l.markdown_text = n, Object(s.a)(Object(r.a)(e, [i.a]), {
-					endpoint: Object(a.a)(`${e.apiUrl}/api/convert_rte_body_format`),
-					method: o.mb.POST,
-					data: l
-				})
-			}
-		},
 		"./src/reddit/endpoints/post/create.ts": function(e, t, n) {
 			"use strict";
 			n.d(t, "d", (function() {
@@ -34851,4 +34832,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.a08460a5a5ecbe83270d.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.68d61a4f64235bce37c4.js.map

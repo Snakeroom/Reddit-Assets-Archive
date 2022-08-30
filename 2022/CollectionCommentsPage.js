@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage.d26b00e7d20471412038.js
-// Retrieved at 8/30/2022, 4:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage.24c6b8df2b0f3f707d42.js
+// Retrieved at 8/30/2022, 6:40:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage"], {
 		"./node_modules/linkify-it/index.js": function(e, t, s) {
@@ -1765,24 +1765,18 @@
 				r = s("./node_modules/react-redux/es/index.js"),
 				i = s("./src/lib/classNames/index.ts"),
 				a = s("./src/reddit/components/RichTextJson/index.tsx"),
-				d = s("./src/reddit/constants/experiments.ts"),
-				c = s("./src/reddit/helpers/chooseVariant/index.ts"),
-				l = s("./node_modules/reselect/es/index.js");
-			const m = Object(l.a)(e => Object(c.c)(e, {
-				experimentEligibilitySelector: c.a,
-				experimentName: d.Lc
-			}), e => e === d.Qd);
-			var u = s("./src/reddit/components/PostTitle/index.tsx"),
-				p = s("./src/reddit/components/AdSupplementaryText/index.m.less"),
-				b = s.n(p);
-			const h = e => {
+				d = s("./src/reddit/selectors/experiments/supportingLinkAds.ts"),
+				c = s("./src/reddit/components/PostTitle/index.tsx"),
+				l = s("./src/reddit/components/AdSupplementaryText/index.m.less"),
+				m = s.n(l);
+			const u = e => {
 				let t;
 				switch (e) {
-					case u.b.ExtraLarge:
-						t = b.a.ExtraLarge;
+					case c.b.ExtraLarge:
+						t = m.a.ExtraLarge;
 						break;
-					case u.b.Large:
-						t = b.a.Large
+					case c.b.Large:
+						t = m.a.Large
 				}
 				return t
 			};
@@ -1792,11 +1786,11 @@
 					size: s,
 					className: n
 				} = e;
-				return Object(r.e)(m) && t.isSponsored && t.adSupplementaryText ? 0 === t.adSupplementaryText.document.length ? null : o.a.createElement("div", {
-					className: Object(i.a)(n, b.a.AdSupplementaryText),
+				return Object(r.e)(d.a) && t.isSponsored && t.adSupplementaryText && "string" != typeof t.adSupplementaryText ? 0 === t.adSupplementaryText.document.length ? null : o.a.createElement("div", {
+					className: Object(i.a)(n, m.a.AdSupplementaryText),
 					"data-testid": `${t.id}-ad-supplementary-text`
 				}, o.a.createElement(a.b, {
-					className: Object(i.a)(b.a.Content, h(s)),
+					className: Object(i.a)(m.a.Content, u(s)),
 					content: t.adSupplementaryText,
 					rtJsonElementProps: {
 						renderingObjectInfo: void 0
@@ -11487,4 +11481,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage.d26b00e7d20471412038.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage.24c6b8df2b0f3f707d42.js.map

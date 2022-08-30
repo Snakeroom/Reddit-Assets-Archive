@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/runtime~Reddit.909f3990db725cc6fe2e.js
-// Retrieved at 8/30/2022, 6:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/runtime~Reddit.b383f1799c241474faa0.js
+// Retrieved at 8/30/2022, 6:40:04 PM by Reddit Dataminer v1.0.0
 ! function(e) {
 	function o(o) {
 		for (var a, n, r = o[0], s = o[1], c = o[2], l = 0, b = []; l < r.length; l++) n = r[l], Object.prototype.hasOwnProperty.call(d, n) && d[n] && b.push(d[n][0]), d[n] = 0;
@@ -1421,11 +1421,11 @@
 						"CollectionCommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~SearchResults": "ed49257ae984a2424966",
 						"CollectionCommentsPage~ModProgressModule~NewCommunityProgress": "a758b67d7317d97f1854",
 						"CollectionCommentsPage~Subreddit~SubredditWiki": "0ac2f4b6895c7b0b217f",
-						CollectionCommentsPage: "d26b00e7d20471412038",
+						CollectionCommentsPage: "24c6b8df2b0f3f707d42",
 						"ProfileComments~ProfileOverview~ProfilePosts": "5a10e7f518b0ca12167f",
 						"ProfileComments~ProfilePrivate": "aa14a1801a1ed6a1de79",
 						ProfileComments: "a17b0131fcf884f18364",
-						ProfileOverview: "7db9d1d2801d6a5c0035",
+						ProfileOverview: "0458fbd63f4fd96fe11c",
 						ProfilePrivate: "b9406e0b2d5d2e8f3fc4",
 						SearchResults: "8b90b8bb165c28d7043b",
 						ModQueuePages: "adcd8f742bc2c5282653",
@@ -1545,14 +1545,14 @@
 						ModListing: "4cc671d264e747eaf5a0",
 						"vendors~PostCreation~Subreddit": "c6c96fbaf04e2c667eb2",
 						Subreddit: "d79aba902e08acdede8b",
-						CommentsPage: "b5823645c25022402344",
+						CommentsPage: "f2a6debd6859fd7b4075",
 						"vendors~CryptoHarbergerTaxManageModal~HarbergerTaxManageModal~ModerationPages~PostCreation~Settings~~f8934a85": "fbf6b3871488094312c2",
 						CryptoHarbergerTaxManageModal: "181f0168eb5f65004e99",
 						HarbergerTaxManageModal: "870b37fad155e6bd3c6c",
 						SubredditPremiumUploadModal: "4fdfc18a5f6b60a37be6",
-						PostCreation: "a08460a5a5ecbe83270d",
+						PostCreation: "68d61a4f64235bce37c4",
 						"vendors~ModerationPages": "94c34813eaf24a1890ea",
-						ModerationPages: "fa233352234c33192df7",
+						ModerationPages: "0176c737ea1d759b4e1e",
 						"vendors~ModStatsChart~Settings~ViewsTooltip": "ca7c845d62fd39d960b6",
 						"vendors~Settings": "bd649022e03326a556e1",
 						Settings: "6331921ca2a280f94388",
@@ -1607,14 +1607,14 @@
 						"reddit-components-ProfileIdCard": "e74b9ad99bb01b557205",
 						"reddit-components-ViewReportsDropdown-index": "e6c903825edb15005dc1",
 						"reddit-pages-CommentsPage-OtherDiscussions": "bd5cfa493514be1db85f",
-						removalReasonActions: "40fbf26fef6148095ae7",
+						removalReasonActions: "057d042637b2c56bcc78",
 						schedulePickerModal: "674579dd80a30074e591",
 						DevPlatform: "5af8b6c991d79759b339",
 						ChatMessageInput: "0efbe552b8f913d8810a",
-						RichTextEditor: "cf5dfd85ddbf7b3f5e9a",
+						RichTextEditor: "b7d4c680aab4a403e3a9",
 						"reddit-components-ClassicPost": "91a7c2da2c1b74211816",
 						"reddit-components-CompactPost": "1f0298f426951892b6d7",
-						"reddit-components-LargePost": "1ab5dd8b3f600fd190ad",
+						"reddit-components-LargePost": "42bd82edfc484168a789",
 						"reddit-components-MediumPost": "846b686791816f56085b",
 						LiveVideoPlayer: "b0bcf5a79a8d1c03a5f2",
 						"vendors~dashjs": "518ef1c4a3ea00bc51bc",
@@ -1640,7 +1640,7 @@
 						JsonEMEntityView: "858027fa85eb87c716ab",
 						"reddit-components-CrisisFlow-CrisisFlowPage": "319465d039b3100bd853",
 						"reddit-pages-PaypalFinishPage": "81081667b6b74efa1eee",
-						"reddit-components-NotificationUnit-Button": "f2efa827b955c455ab4f",
+						"reddit-components-NotificationUnit-Button": "baa1c0ef2d33ece17a5e",
 						CrisisFlow: "62b76ed742ea76715329",
 						EmailInvitePaintedDoor: "791c4f2b8b89b5ad62f4",
 						"reddit-components-Governance-TransactionModals-SubscriptionModal": "365f1381fad1295ead7e",
@@ -1786,4 +1786,4 @@
 	var m = c;
 	t()
 }([]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/runtime~Reddit.909f3990db725cc6fe2e.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/runtime~Reddit.b383f1799c241474faa0.js.map

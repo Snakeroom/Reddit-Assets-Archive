@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CommentsPage.b5823645c25022402344.js
-// Retrieved at 8/30/2022, 6:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CommentsPage.f2a6debd6859fd7b4075.js
+// Retrieved at 8/30/2022, 6:40:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CommentsPage", "PostCreation~Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~r~4c415e24", "Governance~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compo~bd4baca2", "CollectionCommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~SearchResults", "Governance~ModListing~Reddit~ReportFlow~Subreddit", "Governance~ModListing~Reddit~Subreddit", "CollectionCommentsPage~ModProgressModule~NewCommunityProgress", "CollectionCommentsPage~Subreddit~SubredditWiki", "AchievementsActions"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -10255,24 +10255,18 @@
 				o = n("./node_modules/react-redux/es/index.js"),
 				i = n("./src/lib/classNames/index.ts"),
 				a = n("./src/reddit/components/RichTextJson/index.tsx"),
-				c = n("./src/reddit/constants/experiments.ts"),
-				d = n("./src/reddit/helpers/chooseVariant/index.ts"),
-				l = n("./node_modules/reselect/es/index.js");
-			const u = Object(l.a)(e => Object(d.c)(e, {
-				experimentEligibilitySelector: d.a,
-				experimentName: c.Lc
-			}), e => e === c.Qd);
-			var m = n("./src/reddit/components/PostTitle/index.tsx"),
-				p = n("./src/reddit/components/AdSupplementaryText/index.m.less"),
-				b = n.n(p);
-			const f = e => {
+				c = n("./src/reddit/selectors/experiments/supportingLinkAds.ts"),
+				d = n("./src/reddit/components/PostTitle/index.tsx"),
+				l = n("./src/reddit/components/AdSupplementaryText/index.m.less"),
+				u = n.n(l);
+			const m = e => {
 				let t;
 				switch (e) {
-					case m.b.ExtraLarge:
-						t = b.a.ExtraLarge;
+					case d.b.ExtraLarge:
+						t = u.a.ExtraLarge;
 						break;
-					case m.b.Large:
-						t = b.a.Large
+					case d.b.Large:
+						t = u.a.Large
 				}
 				return t
 			};
@@ -10282,11 +10276,11 @@
 					size: n,
 					className: s
 				} = e;
-				return Object(o.e)(u) && t.isSponsored && t.adSupplementaryText ? 0 === t.adSupplementaryText.document.length ? null : r.a.createElement("div", {
-					className: Object(i.a)(s, b.a.AdSupplementaryText),
+				return Object(o.e)(c.a) && t.isSponsored && t.adSupplementaryText && "string" != typeof t.adSupplementaryText ? 0 === t.adSupplementaryText.document.length ? null : r.a.createElement("div", {
+					className: Object(i.a)(s, u.a.AdSupplementaryText),
 					"data-testid": `${t.id}-ad-supplementary-text`
 				}, r.a.createElement(a.b, {
-					className: Object(i.a)(b.a.Content, f(n)),
+					className: Object(i.a)(u.a.Content, m(n)),
 					content: t.adSupplementaryText,
 					rtJsonElementProps: {
 						renderingObjectInfo: void 0
@@ -30426,25 +30420,6 @@
 					}
 				})
 		},
-		"./src/reddit/endpoints/post/convert.ts": function(e, t, n) {
-			"use strict";
-			var s = n("./src/lib/constants/index.ts"),
-				r = n("./src/lib/makeApiRequest/index.ts"),
-				o = n("./src/lib/omitHeaders/index.ts"),
-				i = n("./src/reddit/constants/headers.ts"),
-				a = n("./src/reddit/helpers/addRedesignIdentifier/index.ts"),
-				c = n("./src/reddit/models/PostCreationForm/index.ts");
-			t.a = (e, t, n) => {
-				const d = {
-					output_mode: "markdown" === t ? t : "rtjson"
-				};
-				return t === c.i.MARKDOWN ? d.richtext_json = n : d.markdown_text = n, Object(r.a)(Object(o.a)(e, [i.a]), {
-					endpoint: Object(a.a)(`${e.apiUrl}/api/convert_rte_body_format`),
-					method: s.mb.POST,
-					data: d
-				})
-			}
-		},
 		"./src/reddit/endpoints/subreddit/newCommunityProgress.ts": function(e, t, n) {
 			"use strict";
 			n.d(t, "d", (function() {
@@ -43586,4 +43561,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommentsPage.b5823645c25022402344.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommentsPage.f2a6debd6859fd7b4075.js.map
