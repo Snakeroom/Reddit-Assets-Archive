@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/vendors~Chat~Governance~Reddit.e1e0852a48d91805a9f6.js
-// Retrieved at 8/22/2022, 4:50:10 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/vendors~Chat~Governance~Reddit.8415172050c3c1ea08a2.js
+// Retrieved at 8/30/2022, 3:10:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["vendors~Chat~Governance~Reddit"], {
 		"./node_modules/@loadable/component/dist/loadable.esm.js": function(e, t, n) {
@@ -7229,7 +7229,7 @@
 			"use strict";
 			(function(e) {
 				var r = n("./node_modules/base64-js/index.js"),
-					o = n("./node_modules/buffer/node_modules/ieee754/index.js"),
+					o = n("./node_modules/ieee754/index.js"),
 					i = n("./node_modules/isarray/index.js");
 
 				function s() {
@@ -7911,36 +7911,6 @@
 					return o
 				}
 			}).call(this, n("./node_modules/webpack/buildin/global.js"))
-		},
-		"./node_modules/buffer/node_modules/ieee754/index.js": function(e, t) {
-			t.read = function(e, t, n, r, o) {
-				var i, s, a = 8 * o - r - 1,
-					u = (1 << a) - 1,
-					c = u >> 1,
-					l = -7,
-					d = n ? o - 1 : 0,
-					f = n ? -1 : 1,
-					h = e[t + d];
-				for (d += f, i = h & (1 << -l) - 1, h >>= -l, l += a; l > 0; i = 256 * i + e[t + d], d += f, l -= 8);
-				for (s = i & (1 << -l) - 1, i >>= -l, l += r; l > 0; s = 256 * s + e[t + d], d += f, l -= 8);
-				if (0 === i) i = 1 - c;
-				else {
-					if (i === u) return s ? NaN : 1 / 0 * (h ? -1 : 1);
-					s += Math.pow(2, r), i -= c
-				}
-				return (h ? -1 : 1) * s * Math.pow(2, i - r)
-			}, t.write = function(e, t, n, r, o, i) {
-				var s, a, u, c = 8 * i - o - 1,
-					l = (1 << c) - 1,
-					d = l >> 1,
-					f = 23 === o ? Math.pow(2, -24) - Math.pow(2, -77) : 0,
-					h = r ? 0 : i - 1,
-					p = r ? 1 : -1,
-					m = t < 0 || 0 === t && 1 / t < 0 ? 1 : 0;
-				for (t = Math.abs(t), isNaN(t) || t === 1 / 0 ? (a = isNaN(t) ? 1 : 0, s = l) : (s = Math.floor(Math.log(t) / Math.LN2), t * (u = Math.pow(2, -s)) < 1 && (s--, u *= 2), (t += s + d >= 1 ? f / u : f * Math.pow(2, 1 - d)) * u >= 2 && (s++, u /= 2), s + d >= l ? (a = 0, s = l) : s + d >= 1 ? (a = (t * u - 1) * Math.pow(2, o), s += d) : (a = t * Math.pow(2, d - 1) * Math.pow(2, o), s = 0)); o >= 8; e[n + h] = 255 & a, h += p, a /= 256, o -= 8);
-				for (s = s << o | a, c += o; c > 0; e[n + h] = 255 & s, h += p, s /= 256, c -= 8);
-				e[n + h - p] |= 128 * m
-			}
 		},
 		"./node_modules/cipher-base/index.js": function(e, t, n) {
 			var r = n("./node_modules/safe-buffer/index.js").Buffer,
@@ -15013,6 +14983,36 @@
 			}), t.chain = function(e) {
 				const t = Object.create(p);
 				return t.val = e, t
+			}
+		},
+		"./node_modules/ieee754/index.js": function(e, t) {
+			t.read = function(e, t, n, r, o) {
+				var i, s, a = 8 * o - r - 1,
+					u = (1 << a) - 1,
+					c = u >> 1,
+					l = -7,
+					d = n ? o - 1 : 0,
+					f = n ? -1 : 1,
+					h = e[t + d];
+				for (d += f, i = h & (1 << -l) - 1, h >>= -l, l += a; l > 0; i = 256 * i + e[t + d], d += f, l -= 8);
+				for (s = i & (1 << -l) - 1, i >>= -l, l += r; l > 0; s = 256 * s + e[t + d], d += f, l -= 8);
+				if (0 === i) i = 1 - c;
+				else {
+					if (i === u) return s ? NaN : 1 / 0 * (h ? -1 : 1);
+					s += Math.pow(2, r), i -= c
+				}
+				return (h ? -1 : 1) * s * Math.pow(2, i - r)
+			}, t.write = function(e, t, n, r, o, i) {
+				var s, a, u, c = 8 * i - o - 1,
+					l = (1 << c) - 1,
+					d = l >> 1,
+					f = 23 === o ? Math.pow(2, -24) - Math.pow(2, -77) : 0,
+					h = r ? 0 : i - 1,
+					p = r ? 1 : -1,
+					m = t < 0 || 0 === t && 1 / t < 0 ? 1 : 0;
+				for (t = Math.abs(t), isNaN(t) || t === 1 / 0 ? (a = isNaN(t) ? 1 : 0, s = l) : (s = Math.floor(Math.log(t) / Math.LN2), t * (u = Math.pow(2, -s)) < 1 && (s--, u *= 2), (t += s + d >= 1 ? f / u : f * Math.pow(2, 1 - d)) * u >= 2 && (s++, u /= 2), s + d >= l ? (a = 0, s = l) : s + d >= 1 ? (a = (t * u - 1) * Math.pow(2, o), s += d) : (a = t * Math.pow(2, d - 1) * Math.pow(2, o), s = 0)); o >= 8; e[n + h] = 255 & a, h += p, a /= 256, o -= 8);
+				for (s = s << o | a, c += o; c > 0; e[n + h] = 255 & s, h += p, s /= 256, c -= 8);
+				e[n + h - p] |= 128 * m
 			}
 		},
 		"./node_modules/inherits/inherits_browser.js": function(e, t) {
@@ -34983,4 +34983,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/vendors~Chat~Governance~Reddit.e1e0852a48d91805a9f6.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/vendors~Chat~Governance~Reddit.8415172050c3c1ea08a2.js.map

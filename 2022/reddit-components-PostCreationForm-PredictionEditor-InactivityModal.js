@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-PostCreationForm-PredictionEditor-InactivityModal.48433ee0bec18632bd07.js
-// Retrieved at 4/25/2022, 12:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-PostCreationForm-PredictionEditor-InactivityModal.b473890fdf8ae5c6a768.js
+// Retrieved at 8/30/2022, 3:10:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-PostCreationForm-PredictionEditor-InactivityModal"], {
 		"./src/reddit/components/PostCreationForm/PredictionEditor/InactivityModal/index.m.less": function(t, e, n) {
@@ -83,4 +83,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-PostCreationForm-PredictionEditor-InactivityModal.48433ee0bec18632bd07.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-PostCreationForm-PredictionEditor-InactivityModal.b473890fdf8ae5c6a768.js.map

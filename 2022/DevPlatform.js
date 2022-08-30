@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/DevPlatform.aad21116b8d25d530793.js
-// Retrieved at 8/22/2022, 4:50:10 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/DevPlatform.5af8b6c991d79759b339.js
+// Retrieved at 8/30/2022, 3:10:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["DevPlatform"], {
 		"./src/devPlatform/components/ContextActions/index.m.less": function(t, e, o) {},
@@ -20,23 +20,23 @@
 				b = o("./src/devPlatform/singleton/runtime.ts"),
 				h = o("./src/reddit/contexts/PageLayer/index.tsx"),
 				g = o("./node_modules/reselect/es/index.js");
-			const f = Object(r.b)(() => Object(g.c)({}), t => ({
+			const v = Object(r.b)(() => Object(g.c)({}), t => ({
 					showToast: (e, o) => {
 						t(Object(a.f)(Object(a.e)(e, o)))
 					}
 				})),
-				v = (t, e) => ({
+				f = (t, e) => ({
 					post: t === p.f.POST ? p.B.fromPartial(e) : void 0,
 					comment: t === p.f.COMMENT ? p.c.fromPartial(e) : void 0,
 					subreddit: t === p.f.SUBREDDIT ? p.K.fromPartial(e) : void 0
 				});
-			e.default = f(t => {
+			e.default = v(t => {
 				const {
 					moderator: e,
 					contextType: o,
 					contextData: a,
 					showToast: u
-				} = t, [g, f] = Object(n.useState)([]), w = Object(r.e)(l.a), O = Object(h.gb)(), x = Object(r.e)(t => Object(h.r)(t, {
+				} = t, [g, v] = Object(n.useState)([]), w = Object(r.e)(l.a), O = Object(h.gb)(), x = Object(r.e)(t => Object(h.r)(t, {
 					pageLayer: O
 				}));
 				Object(n.useEffect)(() => {
@@ -44,7 +44,7 @@
 						if (w && x) {
 							await b.a.init();
 							const t = await b.a.loadSubreddit(x);
-							f(t)
+							v(t)
 						}
 					})()
 				});
@@ -71,7 +71,7 @@
 								null === (a = null === (r = b.a.getActor(t)) || void 0 === r ? void 0 : r.As(p.d)) || void 0 === a || a.OnAction(p.e.fromPartial({
 									actionId: e.actionId,
 									contextType: o,
-									...v(o, n)
+									...f(o, n)
 								})).then(t => {
 									const e = t.success ? c.b.SuccessCommunityGreen : c.b.Error;
 									s(t.message, e)
@@ -97,19 +97,21 @@
 				s = o("./node_modules/@devvit/protos/index.js"),
 				r = o("./node_modules/@devvit/runtimes/platform/browser/BrowserRuntime.js"),
 				a = o("./src/devPlatform/singleton/constants.ts"),
-				i = o("./src/lib/localStorageAvailable/index.ts");
-			const {
-				assetPath: d
-			} = n.a, c = new Map([
-				["bootstrap", `${d}/devplatform/worker.bootstrap.cjs`],
-				["supervisor", `${d}/devplatform/worker.supervisor.cjs`],
-				["redditapi", `${d}/devplatform/worker.redditapi.cjs`],
-				["echo", `${d}/devplatform/worker.echo.cjs`]
+				i = o("./node_modules/@devvit/runtimes/worker.bootstrap.cjs"),
+				d = o("./node_modules/@devvit/runtimes/worker.echo.cjs"),
+				c = o("./node_modules/@devvit/runtimes/worker.redditapi.cjs"),
+				l = o("./node_modules/@devvit/runtimes/worker.supervisor.cjs"),
+				u = o("./src/lib/localStorageAvailable/index.ts");
+			const m = new Map([
+				["bootstrap", i.a],
+				["supervisor", l.a],
+				["redditapi", c.a],
+				["echo", d.a]
 			]);
-			const l = new class {
+			const p = new class {
 				constructor() {
 					var t;
-					if (this.runtime = new r.a(c), this.gatewayUrl = "", this.loadedSubId = "", this.subActors = [], this.mockMetadata = null, this.localStorageAvailable = Object(i.a)(), this.runtimeInitialized = !1, this.debugLogging = !1, this.localStorageAvailable) {
+					if (this.runtime = new r.a(m), this.gatewayUrl = "", this.loadedSubId = "", this.subActors = [], this.mockMetadata = null, this.localStorageAvailable = Object(u.a)(), this.runtimeInitialized = !1, this.debugLogging = !1, this.localStorageAvailable) {
 						this.gatewayUrl = null !== (t = localStorage.getItem(a.b)) && void 0 !== t ? t : n.a.devPlatformGatewayUrl;
 						const e = localStorage.getItem(a.c);
 						e && (this.mockMetadata = JSON.parse(e)), this.debugLogging = "true" === localStorage.getItem(a.d)
@@ -173,7 +175,7 @@
 					}
 				}
 			};
-			e.a = l
+			e.a = p
 		},
 		"./src/higherOrderComponents/withAdClickLocation/Locations.ts": function(t, e, o) {
 			"use strict";
@@ -222,12 +224,12 @@
 				b = o("./src/reddit/icons/fonts/index.tsx"),
 				h = o("./src/reddit/selectors/tooltip.ts"),
 				g = o("./src/higherOrderComponents/withAdClickLocation/Locations.ts"),
-				f = o("./src/reddit/components/OverflowMenu/index.m.less"),
-				v = o.n(f);
-			const w = c.a.wrapped(m.a, "_Dropdown", v.a),
+				v = o("./src/reddit/components/OverflowMenu/index.m.less"),
+				f = o.n(v);
+			const w = c.a.wrapped(m.a, "_Dropdown", f.a),
 				O = Object(u.a)(w),
-				x = c.a.button("MenuButton", v.a),
-				_ = c.a.wrapped(p.b, "DropdownRow", v.a),
+				x = c.a.button("MenuButton", f.a),
+				_ = c.a.wrapped(p.b, "DropdownRow", f.a),
 				A = Object(i.c)({
 					dropdownIsOpen: (t, e) => {
 						let {
@@ -256,7 +258,7 @@
 					hk: "2EnY1x"
 				}),
 				className: Object(d.a)(t.className, {
-					[v.a.mIsEnabled]: !t.disabled && !t.defaultButtonOutline
+					[f.a.mIsEnabled]: !t.disabled && !t.defaultButtonOutline
 				}),
 				disabled: t.disabled,
 				onClick: I(t),
@@ -265,7 +267,7 @@
 				"data-adclicklocation": g.b.OVERFLOW_MENU
 			}, t.icon ? t.icon : r.a.createElement(b.a, {
 				name: "overflow_horizontal",
-				className: v.a.MenuIcon
+				className: f.a.MenuIcon
 			}), r.a.createElement(O, {
 				className: t.dropdownClassName,
 				isOpen: t.dropdownIsOpen,
@@ -326,4 +328,4 @@
 		"ignored /drone/src/node_modules/cron-parser/lib fs": function(t, e) {}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/DevPlatform.aad21116b8d25d530793.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/DevPlatform.5af8b6c991d79759b339.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/BannedUserModal.680a1155827412b14026.js
-// Retrieved at 8/29/2022, 11:20:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/BannedUserModal.96c7fbdf3ad359a29185.js
+// Retrieved at 8/30/2022, 3:10:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["BannedUserModal"], {
 		"./src/reddit/actions/subredditModeration/ban.ts": function(e, t, n) {
@@ -1043,4 +1043,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/BannedUserModal.680a1155827412b14026.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/BannedUserModal.96c7fbdf3ad359a29185.js.map

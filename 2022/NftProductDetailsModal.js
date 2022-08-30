@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/NftProductDetailsModal.e15b822e2adb104ea4e1.js
-// Retrieved at 6/16/2022, 4:10:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/NftProductDetailsModal.8715fe9c29c4e3aef28d.js
+// Retrieved at 8/30/2022, 3:10:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["NftProductDetailsModal"], {
 		"./node_modules/@reddit/crypto/core/wallets/index.es.js": function(e, t, r) {
@@ -128,4 +128,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/NftProductDetailsModal.e15b822e2adb104ea4e1.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/NftProductDetailsModal.8715fe9c29c4e3aef28d.js.map

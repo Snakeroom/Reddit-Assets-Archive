@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CommunityNotificationSettings.55224d7b3a8619ce4460.js
-// Retrieved at 8/30/2022, 2:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CommunityNotificationSettings.fc1eb3cec611ef6bfc20.js
+// Retrieved at 8/30/2022, 3:10:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CommunityNotificationSettings"], {
 		"./node_modules/lodash/times.js": function(e, t, n) {
@@ -797,4 +797,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommunityNotificationSettings.55224d7b3a8619ce4460.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommunityNotificationSettings.fc1eb3cec611ef6bfc20.js.map

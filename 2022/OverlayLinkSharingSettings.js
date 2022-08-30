@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/OverlayLinkSharingSettings.e81c826938f434b11834.js
-// Retrieved at 4/25/2022, 2:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/OverlayLinkSharingSettings.c06016a20b7e43b9b5bf.js
+// Retrieved at 8/30/2022, 3:10:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["OverlayLinkSharingSettings"], {
 		"./src/chat/components/OverlayLinkSharingSettings/index.m.less": function(e, t, n) {
@@ -293,4 +293,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/OverlayLinkSharingSettings.e81c826938f434b11834.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/OverlayLinkSharingSettings.c06016a20b7e43b9b5bf.js.map
