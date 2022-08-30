@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostCreation.1b762dc3400fc78505d9.js
-// Retrieved at 8/29/2022, 7:20:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostCreation.373d807e39afe485b248.js
+// Retrieved at 8/29/2022, 8:10:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostCreation", "ChatMessageInput~MembershipPaywallPage~RichTextEditor", "ContributorRequestButton"], {
 		"./node_modules/autosize/dist/autosize.js": function(e, t, n) {
@@ -18872,7 +18872,9 @@
 						headerText: s.fbt._("Switch to Markdown", null, {
 							hk: "3zGkKa"
 						}),
-						modalText: s.fbt._("Switching to markdown will remove any images, gifs or videos from your post.", null, {
+						modalText: c === He.a.Comment ? s.fbt._("Switching to markdown will remove any images or gifs from your comment.", null, {
+							hk: "371g48"
+						}) : s.fbt._("Switching to markdown will remove any images, gifs or videos from your post.", null, {
 							hk: "3rlwkB"
 						}),
 						trackClick: () => {}
@@ -34849,4 +34851,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.1b762dc3400fc78505d9.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.373d807e39afe485b248.js.map
