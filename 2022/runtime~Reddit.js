@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/runtime~Reddit.d62d8131f4cd7dad0542.js
-// Retrieved at 8/30/2022, 9:40:06 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/runtime~Reddit.de6bf7b48bc5afe6ffc9.js
+// Retrieved at 8/30/2022, 10:30:05 AM by Reddit Dataminer v1.0.0
 ! function(e) {
 	function o(o) {
 		for (var a, n, r = o[0], s = o[1], c = o[2], l = 0, b = []; l < r.length; l++) n = r[l], Object.prototype.hasOwnProperty.call(d, n) && d[n] && b.push(d[n][0]), d[n] = 0;
@@ -1440,7 +1440,7 @@
 						PostDraft: "66b448f91f7f4d877f38",
 						ProfileSnoobuilder: "a6c36fea7fb15093a3e7",
 						"Frontpage~ModListing": "6a2d36ab3d0a33a93727",
-						Frontpage: "402cee617ed88995f9ee",
+						Frontpage: "2983d4689fe1f1643944",
 						PostSetPage: "7a512ba0fa6d2b6eac31",
 						Topic: "b23105c4be7f2c1a15f2",
 						CommunityAwards: "9a6e46df4e6a4f80f6ae",
@@ -1541,14 +1541,14 @@
 						ModListing: "d106ad5994f93511c85c",
 						"vendors~PostCreation~Subreddit": "c6c96fbaf04e2c667eb2",
 						Subreddit: "c2c620f5febe1cb97167",
-						CommentsPage: "ebd37f0f6ed0b216982d",
+						CommentsPage: "76638a4de76d897510c4",
 						"vendors~CryptoHarbergerTaxManageModal~HarbergerTaxManageModal~ModerationPages~PostCreation~Settings~~f8934a85": "fbf6b3871488094312c2",
 						CryptoHarbergerTaxManageModal: "8f4471fcedac39ef6c30",
 						HarbergerTaxManageModal: "c00e479e1875e0c14be5",
 						SubredditPremiumUploadModal: "08e44b1d045d86d44c10",
 						PostCreation: "713168680a0f841c9041",
 						"vendors~ModerationPages": "94c34813eaf24a1890ea",
-						ModerationPages: "5c7b172db8c58bdd9945",
+						ModerationPages: "02b0105e3f99d3576765",
 						"vendors~ModStatsChart~Settings~ViewsTooltip": "ca7c845d62fd39d960b6",
 						"vendors~Settings": "bd649022e03326a556e1",
 						Settings: "89cdd9dd829faee5db28",
@@ -1782,4 +1782,4 @@
 	var m = c;
 	t()
 }([]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/runtime~Reddit.d62d8131f4cd7dad0542.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/runtime~Reddit.de6bf7b48bc5afe6ffc9.js.map

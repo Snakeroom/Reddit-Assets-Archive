@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Frontpage.402cee617ed88995f9ee.js
-// Retrieved at 8/29/2022, 7:20:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Frontpage.2983d4689fe1f1643944.js
+// Retrieved at 8/30/2022, 10:30:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Frontpage"], {
 		"./node_modules/intersection-observer/intersection-observer.js": function(e, t) {
@@ -3471,18 +3471,19 @@
 				};
 			var x = a("./src/reddit/hooks/useTracking.ts"),
 				E = a("./src/reddit/selectors/user.ts"),
-				y = a("./src/reddit/components/LiveBar/index.m.less"),
-				k = a.n(y);
+				y = a("./src/reddit/constants/livebar.ts"),
+				k = a("./src/reddit/components/LiveBar/index.m.less"),
+				O = a.n(k);
 			const {
-				fbt: O
-			} = a("./node_modules/fbt/lib/FbtPublic.js"), N = {
-				[d.chat]: O._("Chat", null, {
+				fbt: N
+			} = a("./node_modules/fbt/lib/FbtPublic.js"), j = {
+				[d.chat]: N._("Chat", null, {
 					hk: "1k9rSM"
 				}),
-				[d.talk]: O._("Talk", null, {
+				[d.talk]: N._("Talk", null, {
 					hk: "35JKc7"
 				})
-			}, j = e => {
+			}, C = e => {
 				let {
 					item: t,
 					activeItemId: a,
@@ -3493,18 +3494,18 @@
 					isNightMode: g,
 					id: f
 				} = e;
-				var v, x, E, y, j, C, A, S, I, w, P, T, L;
+				var v, x, E, k, C, A, S, I, w, P, T, L, M;
 				const {
-					post: M
-				} = t, B = a === M.id, F = (null === (x = null === (v = M.subreddit) || void 0 === v ? void 0 : v.styles) || void 0 === x ? void 0 : x.icon) || (null === (j = null === (y = null === (E = M.profile) || void 0 === E ? void 0 : E.styles) || void 0 === y ? void 0 : y.legacyIcon) || void 0 === j ? void 0 : j.url), R = (null === (C = M.subreddit) || void 0 === C ? void 0 : C.id) || (null === (A = M.profile) || void 0 === A ? void 0 : A.name), D = M.permalink || "", U = t.__typename === d.talk ? null !== (I = null === (S = M.talkRoom) || void 0 === S ? void 0 : S.participantCount) && void 0 !== I ? I : 0 : null !== (w = M.commentCount) && void 0 !== w ? w : 0, Z = t.__typename === d.talk ? null === (P = M.talkRoom) || void 0 === P ? void 0 : P.roomTitle : M.title, q = "SubredditPost" === M.__typename ? Object(b.c)(null === (T = M.subreddit) || void 0 === T ? void 0 : T.name) : Object(b.d)(null === (L = M.profile) || void 0 === L ? void 0 : L.redditorInfo.displayName);
+					post: B
+				} = t, F = a === B.id, R = (null === (x = null === (v = B.subreddit) || void 0 === v ? void 0 : v.styles) || void 0 === x ? void 0 : x.icon) || (null === (C = null === (k = null === (E = B.profile) || void 0 === E ? void 0 : E.styles) || void 0 === k ? void 0 : k.legacyIcon) || void 0 === C ? void 0 : C.url), D = (null === (A = B.subreddit) || void 0 === A ? void 0 : A.id) || (null === (S = B.profile) || void 0 === S ? void 0 : S.name), U = B.permalink || "", Z = t.__typename === d.talk ? null !== (w = null === (I = B.talkRoom) || void 0 === I ? void 0 : I.participantCount) && void 0 !== w ? w : 0 : null !== (P = B.commentCount) && void 0 !== P ? P : 0, q = t.__typename === d.talk ? null === (T = B.talkRoom) || void 0 === T ? void 0 : T.roomTitle : B.title, V = "SubredditPost" === B.__typename ? Object(b.c)(null === (L = B.subreddit) || void 0 === L ? void 0 : L.name) : Object(b.d)(null === (M = B.profile) || void 0 === M ? void 0 : M.redditorInfo.displayName);
 				return n.a.createElement("button", {
 					id: f,
 					onClick: () => {
 						var e, a, s;
 						switch (p(_({
 							liveBarPosition: h,
-							postId: M.id,
-							subredditOrProfileId: R,
+							postId: B.id,
+							subredditOrProfileId: D,
 							itemType: t.__typename,
 							liveAudioRoom: t.post.talkRoom ? {
 								roomId: (null === (e = t.post.talkRoom) || void 0 === e ? void 0 : e.roomId) || "",
@@ -3512,66 +3513,66 @@
 							} : void 0
 						})), t.__typename) {
 							case d.talk:
-								return window.open(`${c.a.redditUrl}/talk/${null===(s=M.talkRoom)||void 0===s?void 0:s.roomId}`);
+								return window.open(`${c.a.redditUrl}/talk/${null===(s=B.talkRoom)||void 0===s?void 0:s.roomId}`);
 							case d.chat:
-								return window.open(D)
+								return window.open(U + `${U.includes("?")?"&":"?"}${y.a}=true`)
 						}
 					},
-					className: Object(i.a)(k.a.pillContainer, {
-						[k.a.nightMode]: g
+					className: Object(i.a)(O.a.pillContainer, {
+						[O.a.nightMode]: g
 					}),
-					onMouseEnter: () => s(M.id)
+					onMouseEnter: () => s(B.id)
 				}, n.a.createElement("div", {
-					className: k.a.subredditIconContainer
+					className: O.a.subredditIconContainer
 				}, n.a.createElement(o, {
-					className: Object(i.a)(k.a.speakerRing, k.a.speakerRingInner, {
-						[k.a.animatedRing]: B
+					className: Object(i.a)(O.a.speakerRing, O.a.speakerRingInner, {
+						[O.a.animatedRing]: F
 					})
-				}), B && n.a.createElement(n.a.Fragment, null, n.a.createElement(l, {
-					className: Object(i.a)(k.a.speakerRing, k.a.speakerRingMiddle)
+				}), F && n.a.createElement(n.a.Fragment, null, n.a.createElement(l, {
+					className: Object(i.a)(O.a.speakerRing, O.a.speakerRingMiddle)
 				}), n.a.createElement(u, {
-					className: Object(i.a)(k.a.speakerRing, k.a.speakerRingOuter)
+					className: Object(i.a)(O.a.speakerRing, O.a.speakerRingOuter)
 				})), n.a.createElement(m.b, {
-					className: Object(i.a)(k.a.subredditIcon, {
-						[k.a.isDefaultIcon]: "" === F
+					className: Object(i.a)(O.a.subredditIcon, {
+						[O.a.isDefaultIcon]: "" === R
 					}),
-					iconUrl: F
+					iconUrl: R
 				})), n.a.createElement("div", {
-					className: Object(i.a)(k.a.detailsInnerContainer)
+					className: Object(i.a)(O.a.detailsInnerContainer)
 				}, n.a.createElement("div", {
-					className: k.a.marqueeTitle
+					className: O.a.marqueeTitle
 				}, n.a.createElement("p", {
-					"data-title-id": `${M.id}`,
-					className: Object(i.a)(k.a.roomTitle, {
-						[k.a.animated]: B && r
+					"data-title-id": `${B.id}`,
+					className: Object(i.a)(O.a.roomTitle, {
+						[O.a.animated]: F && r
 					})
-				}, Z), B && r && n.a.createElement("div", {
-					className: Object(i.a)(k.a.titleFadeContainer, k.a.leftFadeContainer, {
-						[k.a.nightMode]: g
+				}, q), F && r && n.a.createElement("div", {
+					className: Object(i.a)(O.a.titleFadeContainer, O.a.leftFadeContainer, {
+						[O.a.nightMode]: g
 					})
 				}), n.a.createElement("div", {
-					className: Object(i.a)(k.a.titleFadeContainer, k.a.rightFadeContainer, {
-						[k.a.nightMode]: g
+					className: Object(i.a)(O.a.titleFadeContainer, O.a.rightFadeContainer, {
+						[O.a.nightMode]: g
 					})
 				})), n.a.createElement("div", {
-					className: k.a.participantRow
+					className: O.a.participantRow
 				}, n.a.createElement("p", {
-					className: k.a.participantCount
+					className: O.a.participantCount
 				}, n.a.createElement("span", {
-					className: k.a.liveItemType
-				}, N[t.__typename]), U > 0 ? O._("{participantCount} in {subredditName}", [O._param("participantCount", U), O._param("subredditName", q)], {
+					className: O.a.liveItemType
+				}, j[t.__typename]), Z > 0 ? N._("{participantCount} in {subredditName}", [N._param("participantCount", Z), N._param("subredditName", V)], {
 					hk: "2pp9CZ"
-				}) : O._("{subredditName}", [O._param("subredditName", q)], {
+				}) : N._("{subredditName}", [N._param("subredditName", V)], {
 					hk: "JJOAC"
 				})))))
 			};
-			var C = a("./src/reddit/selectors/experiments/chat.ts"),
-				A = a("./node_modules/fbt/lib/FbtPublic.js"),
-				S = a("./src/lib/constants/icons.ts"),
-				I = a("./src/reddit/icons/fonts/index.tsx"),
-				w = a("./src/reddit/components/LiveBar/LiveBarCarousel/index.m.less"),
-				P = a.n(w);
-			var T = e => {
+			var A = a("./src/reddit/selectors/experiments/chat.ts"),
+				S = a("./node_modules/fbt/lib/FbtPublic.js"),
+				I = a("./src/lib/constants/icons.ts"),
+				w = a("./src/reddit/icons/fonts/index.tsx"),
+				P = a("./src/reddit/components/LiveBar/LiveBarCarousel/index.m.less"),
+				T = a.n(P);
+			var L = e => {
 				let {
 					onScrollToElement: t,
 					onChildVisible: a,
@@ -3626,59 +3627,59 @@
 					_ = Object(s.useCallback)(() => v(m), [v, m]),
 					x = Object(s.useCallback)(() => v(d), [v, d]);
 				return n.a.createElement("div", {
-					className: Object(i.a)(P.a.container),
+					className: Object(i.a)(T.a.container),
 					role: "region",
 					"aria-label": "carousel"
 				}, n.a.createElement("div", {
-					className: Object(i.a)(P.a.inner),
+					className: Object(i.a)(T.a.inner),
 					ref: o
 				}, s.Children.map(c, (e, t) => n.a.createElement("div", {
-					className: Object(i.a)(P.a.carouselItem),
+					className: Object(i.a)(T.a.carouselItem),
 					id: e.props.id,
 					key: t,
 					"data-position": t
 				}, e))), n.a.createElement("div", {
-					className: Object(i.a)(P.a.arrowButtonContainer, P.a.leftArrowContainer, {
-						[P.a.nightMode]: l,
-						[P.a.arrowVisible]: b
+					className: Object(i.a)(T.a.arrowButtonContainer, T.a.leftArrowContainer, {
+						[T.a.nightMode]: l,
+						[T.a.arrowVisible]: b
 					})
 				}, n.a.createElement("button", {
-					className: P.a.arrowButton,
+					className: T.a.arrowButton,
 					onClick: x,
-					"aria-label": A.fbt._("previous items", null, {
+					"aria-label": S.fbt._("previous items", null, {
 						hk: "44uTrz"
 					})
-				}, n.a.createElement(I.a, {
-					className: P.a.arrowIcon,
-					name: S.a.caret_left
+				}, n.a.createElement(w.a, {
+					className: T.a.arrowIcon,
+					name: I.a.caret_left
 				}))), n.a.createElement("div", {
-					className: Object(i.a)(P.a.arrowButtonContainer, P.a.rightArrowContainer, {
-						[P.a.nightMode]: l,
-						[P.a.arrowVisible]: g
+					className: Object(i.a)(T.a.arrowButtonContainer, T.a.rightArrowContainer, {
+						[T.a.nightMode]: l,
+						[T.a.arrowVisible]: g
 					})
 				}, n.a.createElement("button", {
-					className: P.a.arrowButton,
+					className: T.a.arrowButton,
 					onClick: _,
-					"aria-label": A.fbt._("next items", null, {
+					"aria-label": S.fbt._("next items", null, {
 						hk: "4EEfgp"
 					})
-				}, n.a.createElement(I.a, {
-					className: P.a.arrowIcon,
-					name: S.a.caret_right
+				}, n.a.createElement(w.a, {
+					className: T.a.arrowIcon,
+					name: I.a.caret_right
 				}))))
 			};
 			const {
-				fbt: L
+				fbt: M
 			} = a("./node_modules/fbt/lib/FbtPublic.js");
 			t.a = e => {
 				let {
 					items: t
 				} = e;
 				const a = Object(s.useRef)(null),
-					[y, O] = Object(s.useState)(""),
-					[N, A] = Object(s.useState)(!1),
+					[y, k] = Object(s.useState)(""),
+					[N, j] = Object(s.useState)(!1),
 					S = Object(r.e)(E.db),
-					I = Object(r.e)(C.a),
+					I = Object(r.e)(A.a),
 					w = Object(s.useRef)([]),
 					P = Object(x.a)();
 				Object(s.useEffect)(() => {
@@ -3687,7 +3688,7 @@
 					t && (e => {
 						if (e) {
 							const t = e.getBoundingClientRect().width;
-							A(t > 152);
+							j(t > 152);
 							const a = t - 152;
 							if (a > 0) {
 								const t = Math.max(145 * a, 2e3);
@@ -3707,11 +3708,11 @@
 						let e = Boolean(y);
 						for (let a = 0; a < t.length && !e; a++) {
 							const s = t[a].post;
-							(null == s ? void 0 : s.talkRoom) && s.talkRoom.isLive && !e && (e = !0, O(s.id))
+							(null == s ? void 0 : s.talkRoom) && s.talkRoom.isLive && !e && (e = !0, k(s.id))
 						}
 					}
 				}, [t, P]);
-				const M = t.filter(e => {
+				const T = t.filter(e => {
 					var t;
 					switch (e.__typename) {
 						case d.talk:
@@ -3721,28 +3722,28 @@
 					}
 				}).map((e, t) => {
 					var a, s, r, h, g, f, v, x, E;
-					if (y || 0 !== t || O(e.post.id), I) return n.a.createElement(j, {
+					if (y || 0 !== t || k(e.post.id), I) return n.a.createElement(C, {
 						id: `lbItem__${e.post.id}`,
 						key: e.post.id,
 						item: e,
 						activeItemId: y,
-						setActiveItemId: O,
+						setActiveItemId: k,
 						titleShouldMarquee: N,
 						sendEvent: P,
 						index: t,
 						isNightMode: S
 					});
 					const {
-						post: C
+						post: j
 					} = e, {
 						id: A,
 						talkRoom: w
-					} = C, {
+					} = j, {
 						roomId: T,
-						roomTitle: M,
+						roomTitle: L,
 						topUsers: B,
 						participantCount: F
-					} = w, R = null == B ? void 0 : B.slice(0, 3), D = y === A, U = (null === (s = null === (a = C.subreddit) || void 0 === a ? void 0 : a.styles) || void 0 === s ? void 0 : s.icon) || (null === (g = null === (h = null === (r = C.profile) || void 0 === r ? void 0 : r.styles) || void 0 === h ? void 0 : h.legacyIcon) || void 0 === g ? void 0 : g.url), Z = (null === (f = C.subreddit) || void 0 === f ? void 0 : f.id) || (null === (v = C.profile) || void 0 === v ? void 0 : v.name), q = "SubredditPost" === C.__typename ? Object(b.c)(null === (x = C.subreddit) || void 0 === x ? void 0 : x.name) : Object(b.d)(null === (E = C.profile) || void 0 === E ? void 0 : E.redditorInfo.displayName);
+					} = w, R = null == B ? void 0 : B.slice(0, 3), D = y === A, U = (null === (s = null === (a = j.subreddit) || void 0 === a ? void 0 : a.styles) || void 0 === s ? void 0 : s.icon) || (null === (g = null === (h = null === (r = j.profile) || void 0 === r ? void 0 : r.styles) || void 0 === h ? void 0 : h.legacyIcon) || void 0 === g ? void 0 : g.url), Z = (null === (f = j.subreddit) || void 0 === f ? void 0 : f.id) || (null === (v = j.profile) || void 0 === v ? void 0 : v.name), q = "SubredditPost" === j.__typename ? Object(b.c)(null === (x = j.subreddit) || void 0 === x ? void 0 : x.name) : Object(b.d)(null === (E = j.profile) || void 0 === E ? void 0 : E.redditorInfo.displayName);
 					return n.a.createElement("button", {
 						id: `talk__${A}`,
 						key: `talk__${T}`,
@@ -3752,85 +3753,85 @@
 								postId: A,
 								liveAudioRoom: {
 									roomId: T,
-									roomTitle: null != M ? M : ""
+									roomTitle: null != L ? L : ""
 								},
 								subredditOrProfileId: Z,
 								itemType: d.talk
 							})), window.open(`${c.a.redditUrl}/talk/${T}`)
 						},
-						className: Object(i.a)(k.a.pillContainer, {
-							[k.a.nightMode]: S
+						className: Object(i.a)(O.a.pillContainer, {
+							[O.a.nightMode]: S
 						}),
-						onMouseEnter: () => O(A)
+						onMouseEnter: () => k(A)
 					}, n.a.createElement("div", {
-						className: k.a.subredditIconContainer
+						className: O.a.subredditIconContainer
 					}, n.a.createElement(o, {
-						className: Object(i.a)(k.a.speakerRing, k.a.speakerRingInner, {
-							[k.a.animatedRing]: D
+						className: Object(i.a)(O.a.speakerRing, O.a.speakerRingInner, {
+							[O.a.animatedRing]: D
 						})
 					}), D && n.a.createElement(n.a.Fragment, null, n.a.createElement(l, {
-						className: Object(i.a)(k.a.speakerRing, k.a.speakerRingMiddle)
+						className: Object(i.a)(O.a.speakerRing, O.a.speakerRingMiddle)
 					}), n.a.createElement(u, {
-						className: Object(i.a)(k.a.speakerRing, k.a.speakerRingOuter)
+						className: Object(i.a)(O.a.speakerRing, O.a.speakerRingOuter)
 					})), n.a.createElement(m.b, {
-						className: Object(i.a)(k.a.subredditIcon, {
-							[k.a.isDefaultIcon]: "" === U
+						className: Object(i.a)(O.a.subredditIcon, {
+							[O.a.isDefaultIcon]: "" === U
 						}),
 						iconUrl: U
 					})), n.a.createElement("div", {
-						className: Object(i.a)(k.a.detailsInnerContainer)
+						className: Object(i.a)(O.a.detailsInnerContainer)
 					}, n.a.createElement("div", {
-						className: k.a.marqueeTitle
+						className: O.a.marqueeTitle
 					}, n.a.createElement("p", {
 						"data-title-id": `${A}`,
-						className: Object(i.a)(k.a.roomTitle, {
-							[k.a.animated]: D && N
+						className: Object(i.a)(O.a.roomTitle, {
+							[O.a.animated]: D && N
 						})
-					}, M), D && N && n.a.createElement("div", {
-						className: Object(i.a)(k.a.titleFadeContainer, k.a.leftFadeContainer, {
-							[k.a.nightMode]: S
+					}, L), D && N && n.a.createElement("div", {
+						className: Object(i.a)(O.a.titleFadeContainer, O.a.leftFadeContainer, {
+							[O.a.nightMode]: S
 						})
 					}), n.a.createElement("div", {
-						className: Object(i.a)(k.a.titleFadeContainer, k.a.rightFadeContainer, {
-							[k.a.nightMode]: S
+						className: Object(i.a)(O.a.titleFadeContainer, O.a.rightFadeContainer, {
+							[O.a.nightMode]: S
 						})
 					})), n.a.createElement("div", {
-						className: k.a.participantRow
+						className: O.a.participantRow
 					}, n.a.createElement("div", {
-						className: k.a.topUsers
+						className: O.a.topUsers
 					}, (null != R ? R : []).map((e, t) => {
 						var a, s;
 						return (e => "Redditor" === (null == e ? void 0 : e.__typename) || !!e.snoovatarIcon)(e) && n.a.createElement("div", {
 							key: `topuser__${t}`,
-							className: Object(i.a)(k.a.userIconContainer, {
-								[k.a.userIconSnoovatar]: Boolean(e.snoovatarIcon)
+							className: Object(i.a)(O.a.userIconContainer, {
+								[O.a.userIconSnoovatar]: Boolean(e.snoovatarIcon)
 							})
 						}, n.a.createElement(p.a, {
 							userName: "",
 							iconUrl: (null === (a = e.icon) || void 0 === a ? void 0 : a.url) || "",
-							className: Object(i.a)(k.a.userIcon, {
-								[k.a.userIconSnoovatar]: Boolean(e.snoovatarIcon),
-								[k.a.nightMode]: S
+							className: Object(i.a)(O.a.userIcon, {
+								[O.a.userIconSnoovatar]: Boolean(e.snoovatarIcon),
+								[O.a.nightMode]: S
 							}),
 							isNSFW: (null === (s = e.profile) || void 0 === s ? void 0 : s.isNsfw) || !1
 						}))
 					})), n.a.createElement("p", {
-						className: k.a.participantCount
-					}, (null != F ? F : 0) > 0 ? L._("{participantCount} in {subredditName}", [L._param("participantCount", F), L._param("subredditName", q)], {
+						className: O.a.participantCount
+					}, (null != F ? F : 0) > 0 ? M._("{participantCount} in {subredditName}", [M._param("participantCount", F), M._param("subredditName", q)], {
 						hk: "2pp9CZ"
-					}) : L._("{subredditName}", [L._param("subredditName", q)], {
+					}) : M._("{subredditName}", [M._param("subredditName", q)], {
 						hk: "JJOAC"
 					})))))
 				});
-				return M.length > 0 && y ? n.a.createElement("div", {
-					className: k.a.outer
+				return T.length > 0 && y ? n.a.createElement("div", {
+					className: O.a.outer
 				}, n.a.createElement("div", {
 					ref: a,
-					className: k.a.scroller
-				}, n.a.createElement(T, {
+					className: O.a.scroller
+				}, n.a.createElement(L, {
 					onScrollToElement: e => {
 						setTimeout(() => {
-							O(e)
+							k(e)
 						}, 500)
 					},
 					onChildVisible: e => {
@@ -3869,7 +3870,7 @@
 							itemType: o.__typename
 						})), w.current.push(c))
 					}
-				}, M))) : null
+				}, T))) : null
 			}
 		},
 		"./src/reddit/components/MiniPost/index.m.less": function(e, t, a) {
@@ -7587,4 +7588,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Frontpage.402cee617ed88995f9ee.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Frontpage.2983d4689fe1f1643944.js.map
