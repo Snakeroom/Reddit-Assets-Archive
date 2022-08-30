@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditWiki~reddit-components-Wiki-ModHubWikiManagement.e2db23bc703e8771903b.js
-// Retrieved at 8/30/2022, 3:10:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditWiki~reddit-components-Wiki-ModHubWikiManagement.3c87a1a7548833877d67.js
+// Retrieved at 8/30/2022, 6:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditWiki~reddit-components-Wiki-ModHubWikiManagement"], {
 		"./node_modules/autosize/dist/autosize.js": function(e, t, i) {
@@ -522,7 +522,9 @@
 				} = t;
 				if (!i && !n) return e;
 				const s = {};
-				return i && (s[k.G] = Object(v.b)(i)), n && (s[k.H] = Object(v.b)(n)), Object(f.a)(e, s)
+				i && (s[k.G] = Object(v.b)(i)), n && (s[k.H] = Object(v.b)(n));
+				const o = e.endsWith("/") ? e : `${e}/`;
+				return Object(f.a)(o, s)
 			}
 			var w = i("./src/reddit/helpers/wiki/makeRevisionsListingKey.ts"),
 				E = i("./src/reddit/helpers/wiki/makeWikiPath.ts"),
@@ -2184,4 +2186,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditWiki~reddit-components-Wiki-ModHubWikiManagement.e2db23bc703e8771903b.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditWiki~reddit-components-Wiki-ModHubWikiManagement.3c87a1a7548833877d67.js.map
