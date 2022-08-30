@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~SearchResults.b287dbead86063987802.js
-// Retrieved at 8/30/2022, 9:40:06 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~SearchResults.4d8342167a3c77ac0a7b.js
+// Retrieved at 8/30/2022, 11:00:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~SearchResults"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -1338,7 +1338,7 @@
 					A = a,
 					L = e => j(Object(f.b)(e, n.id)),
 					P = "chat_comments" === (null == I ? void 0 : I.queryParams.only);
-				return console.log(n.bannedBy || M), r.a.createElement("div", {
+				return r.a.createElement("div", {
 					className: t
 				}, (n.bannedBy || M) && r.a.createElement(w.a, {
 					text: S ? s.fbt._("Reapprove", null, {
@@ -3888,4 +3888,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~SearchResults.b287dbead86063987802.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~SearchResults.4d8342167a3c77ac0a7b.js.map

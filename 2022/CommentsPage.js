@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CommentsPage.76638a4de76d897510c4.js
-// Retrieved at 8/30/2022, 10:30:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CommentsPage.e35ef93c9e6cfaf820e6.js
+// Retrieved at 8/30/2022, 11:00:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CommentsPage", "PostCreation~Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~r~4c415e24", "Governance~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compo~bd4baca2", "CollectionCommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~SearchResults", "Governance~ModListing~Reddit~ReportFlow~Subreddit", "Governance~ModListing~Reddit~Subreddit", "CollectionCommentsPage~ModProgressModule~NewCommunityProgress", "CollectionCommentsPage~Subreddit~SubredditWiki", "AchievementsActions"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -12318,7 +12318,7 @@
 					M = a,
 					D = e => I(Object(C.b)(e, n.id)),
 					A = "chat_comments" === (null == S ? void 0 : S.queryParams.only);
-				return console.log(n.bannedBy || T), o.a.createElement("div", {
+				return o.a.createElement("div", {
 					className: t
 				}, (n.bannedBy || T) && o.a.createElement(k.a, {
 					text: P ? s.fbt._("Reapprove", null, {
@@ -43589,4 +43589,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommentsPage.76638a4de76d897510c4.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommentsPage.e35ef93c9e6cfaf820e6.js.map
