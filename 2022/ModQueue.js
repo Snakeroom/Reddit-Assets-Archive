@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModQueue.7271d04634223809231f.js
-// Retrieved at 8/29/2022, 11:40:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModQueue.f3c04a222b39c0abacea.js
+// Retrieved at 8/30/2022, 9:40:06 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModQueue"], {
 		"./src/reddit/actions/bulkActions/index.ts": function(e, t, o) {
@@ -51,15 +51,15 @@
 				p = o("./src/reddit/models/Toast/index.ts"),
 				f = o("./src/reddit/selectors/commentSelector.ts"),
 				O = o("./src/reddit/selectors/experiments/cnc/index.ts"),
-				v = o("./src/reddit/selectors/user.ts"),
-				j = o("./src/reddit/actions/comment/index.ts"),
+				j = o("./src/reddit/selectors/user.ts"),
+				v = o("./src/reddit/actions/comment/index.ts"),
 				_ = o("./src/reddit/actions/comment/constants.ts");
 			const h = Object(n.a)(_.p),
 				g = e => async (t, o, s) => {
 					let {
 						apiContext: r
 					} = s;
-					o().features.comments.models[e] && (await Object(l.k)(r(), e)).ok && t((e => async t => {
+					o().features.comments.models[e] && (await Object(l.l)(r(), e)).ok && t((e => async t => {
 						t(h({
 							commentId: e
 						}))
@@ -68,11 +68,11 @@
 					let {
 						apiContext: n
 					} = r;
-					if (!Object(v.Q)(o())) return void t(Object(a.i)(u.a.LOGIN_MODAL_ID));
+					if (!Object(j.Q)(o())) return void t(Object(a.i)(u.a.LOGIN_MODAL_ID));
 					const d = o().features.comments.models[e];
 					if (!d) return;
-					const i = d.isLocked ? l.m : l.f;
-					t(Object(j.j)({
+					const i = d.isLocked ? l.n : l.g;
+					t(Object(v.j)({
 						[e]: {
 							isLocked: !d.isLocked
 						}
@@ -83,12 +83,12 @@
 						}) : s.fbt._("comment has been locked", null, {
 							hk: "1pBDQl"
 						})
-					})) : t(Object(j.j)({
+					})) : t(Object(v.j)({
 						[e]: {
 							isLocked: d.isLocked
 						}
 					}))
-				}, R = Object(n.a)(_.I), E = e => async (t, o, r) => {
+				}, R = Object(n.a)(_.J), E = e => async (t, o, r) => {
 					let {
 						apiContext: n,
 						gqlContext: d
@@ -96,7 +96,7 @@
 					const a = o(),
 						u = a.features.comments.models[e],
 						m = a.user.account ? a.user.account.displayText : null;
-					u && m && (t(Object(j.j)({
+					u && m && (t(Object(v.j)({
 						[e]: {
 							isApproved: !0,
 							approvedBy: m,
@@ -113,7 +113,7 @@
 						text: s.fbt._("comment has been approved", null, {
 							hk: "4GfKQi"
 						})
-					})) : t(Object(j.j)({
+					})) : t(Object(v.j)({
 						[e]: {
 							isApproved: u.isApproved,
 							approvedBy: null,
@@ -134,7 +134,7 @@
 					const u = r(),
 						m = u.features.comments.models[e],
 						b = u.user.account ? u.user.account.displayText : null;
-					m && b && (o(Object(j.j)({
+					m && b && (o(Object(v.j)({
 						[e]: {
 							approvedBy: null,
 							bannedBy: b,
@@ -142,14 +142,14 @@
 							isRemoved: !t,
 							isSpam: t
 						}
-					})), (Object(O.a)(u) ? await Object(l.h)(a(), e, t) : await Object(l.i)(d(), e, t)).ok ? o(Object(c.f)({
+					})), (Object(O.a)(u) ? await Object(l.i)(a(), e, t) : await Object(l.j)(d(), e, t)).ok ? o(Object(c.f)({
 						kind: p.b.SuccessMod,
 						text: t ? s.fbt._("comment has been marked as spam", null, {
 							hk: "4fQaFM"
 						}) : s.fbt._("comment has been removed", null, {
 							hk: "1qNTrD"
 						})
-					})) : o(Object(j.j)({
+					})) : o(Object(v.j)({
 						[e]: {
 							approvedBy: m.approvedBy,
 							bannedBy: m.bannedBy,
@@ -164,8 +164,8 @@
 					} = r;
 					const d = o().features.comments.models[e];
 					if (!d) return;
-					const a = d.ignoreReports ? l.l : l.e;
-					t(Object(j.j)({
+					const a = d.ignoreReports ? l.m : l.f;
+					t(Object(v.j)({
 						[e]: {
 							ignoreReports: !d.ignoreReports
 						}
@@ -176,7 +176,7 @@
 						}) : s.fbt._("comment has had its reports ignored", null, {
 							hk: "2q4sCp"
 						})
-					})) : t(Object(j.j)({
+					})) : t(Object(v.j)({
 						[e]: {
 							ignoreReports: d.ignoreReports
 						}
@@ -197,7 +197,7 @@
 						};
 					if ((await Object(m.a)(i(), {
 							input: O
-						})).ok) n(Object(j.j)({
+						})).ok) n(Object(v.j)({
 						[e]: {
 							userReports: Object(b.a)(u.userReports, t, l)
 						}
@@ -218,36 +218,36 @@
 					if (!m) return;
 					const b = m.postId,
 						p = u.postStickiedComments.data[b];
-					s(Object(j.j)({
+					s(Object(v.j)({
 						[e]: {
 							distinguishType: t,
 							isAdmin: t === r.H.ADMIN,
 							isMod: t === r.H.MODERATOR,
 							isStickied: !!o
 						}
-					})), o && p && p !== e && s(Object(j.j)({
+					})), o && p && p !== e && s(Object(v.j)({
 						[p]: {
 							isStickied: !1
 						}
 					}));
-					const f = Object(l.c)(c(), e, t),
-						O = Object(l.d)(c(), e, !!o),
-						v = [f];
-					(o || !o && e === p) && v.push(O), (await Promise.all(v)).every(e => e.ok) ? o && s(R({
+					const f = Object(l.d)(c(), e, t),
+						O = Object(l.e)(c(), e, !!o),
+						j = [f];
+					(o || !o && e === p) && j.push(O), (await Promise.all(j)).every(e => e.ok) ? o && s(R({
 						id: e,
 						postId: b,
 						commentsPageKey: Object(d.a)(b, null, {
 							sort: r.u.CONFIDENCE,
 							...u.platform.currentPage.queryParams
 						})
-					})) : (s(Object(j.j)({
+					})) : (s(Object(v.j)({
 						[e]: {
 							distinguishType: m.distinguishType,
 							isAdmin: m.isAdmin,
 							isMod: m.isMod,
 							isStickied: m.isStickied
 						}
-					})), s(Object(j.j)({
+					})), s(Object(v.j)({
 						[p]: {
 							isStickied: u.features.comments.models[p].isStickied
 						}
@@ -284,23 +284,23 @@
 				p = o("./src/reddit/components/ModQueueList/PostSortDropdown.tsx"),
 				f = o("./src/reddit/helpers/isPost.ts"),
 				O = o("./src/reddit/selectors/commentSelector.ts"),
-				v = o("./src/reddit/selectors/posts.ts"),
-				j = o("./src/redditGQL/types.ts"),
+				j = o("./src/reddit/selectors/posts.ts"),
+				v = o("./src/redditGQL/types.ts"),
 				_ = o("./src/reddit/helpers/graphql/normalizeCommentFromGql/index.ts"),
 				h = o("./src/reddit/helpers/graphql/normalizeFlairFromGql/index.ts"),
 				g = o("./src/reddit/helpers/graphql/normalizePostFromGql/index.ts"),
 				S = o("./src/reddit/helpers/graphql/normalizeSubredditFromGql/index.ts");
 			const R = {
-					[r.ub.Edited]: j.v.Edited,
-					[r.ub.Modqueue]: j.v.Mod,
-					[r.ub.Reports]: j.v.Reported,
-					[r.ub.Spam]: j.v.Removed,
-					[r.ub.Unmoderated]: j.v.Unmoderated
+					[r.ub.Edited]: v.v.Edited,
+					[r.ub.Modqueue]: v.v.Mod,
+					[r.ub.Reports]: v.v.Reported,
+					[r.ub.Spam]: v.v.Removed,
+					[r.ub.Unmoderated]: v.v.Unmoderated
 				},
 				E = {
-					comments: j.t.Comment,
-					links: j.t.Post,
-					chat_comments: j.t.ChatComment
+					comments: v.t.Comment,
+					links: v.t.Post,
+					chat_comments: v.t.ChatComment
 				};
 
 			function k(e) {
@@ -314,7 +314,7 @@
 				s.only && (n = E[s.only]);
 				const d = {};
 				s.after && (d[s.sort === p.a.OldestFirst ? "before" : "after"] = function(e, t) {
-					const o = Object(f.a)(t) ? Object(v.G)(e, {
+					const o = Object(f.a)(t) ? Object(j.G)(e, {
 						postId: t
 					}) : Object(O.b)(e, {
 						commentId: t
@@ -335,7 +335,7 @@
 					...!!s.profile && {
 						subredditIds: [s.profile]
 					},
-					sort: s.sort === p.a.MostReportedFirst ? j.u.SortReports : j.u.SortDate,
+					sort: s.sort === p.a.MostReportedFirst ? v.u.SortReports : v.u.SortDate,
 					...d
 				}
 			}
@@ -543,19 +543,19 @@
 						const e = null === (b = (await Object(u.b)(l(), o.profile)).body[o.profile]) || void 0 === b ? void 0 : b.profileId;
 						o.profile = e
 					}
-					const v = k({
+					const j = k({
 							getState: d,
 							queueType: t,
 							options: o
 						}),
-						j = await Object(c.b)(m(), v);
-					if (!j.ok) return n(f(j.error)), void n(Object(i.f)({
+						v = await Object(c.b)(m(), j);
+					if (!v.ok) return n(f(v.error)), void n(Object(i.f)({
 						kind: P.b.Error,
 						text: s.fbt._("Oh no! Something went wrong!", null, {
 							hk: "16O2Sk"
 						})
 					}));
-					const _ = x(j.body.data);
+					const _ = x(v.body.data);
 					n(O({
 						listingKey: e,
 						page: `${o.page||I.b}`,
@@ -596,9 +596,9 @@
 					r(Object(d.c)());
 					const p = n(),
 						O = Object(C.g)(p),
-						v = p.user.account && p.user.account.displayText;
+						j = p.user.account && p.user.account.displayText;
 					Object(l.d)(l.a.ModQueue);
-					const j = Object(l.c)(l.a.ModQueue);
+					const v = Object(l.c)(l.a.ModQueue);
 					Object(L.a)({
 						source: "bulk_mod_action_menu",
 						action: "click",
@@ -609,7 +609,7 @@
 							paneName: p.platform.currentPage ? p.platform.currentPage.urlParams.pageName : void 0
 						}),
 						screen: N.ab(p),
-						correlationId: j
+						correlationId: v
 					});
 					for (let t = 0; t < O.length; t++) {
 						const o = O[t];
@@ -628,7 +628,7 @@
 							profile: N.U(p, o),
 							screen: N.ab(p),
 							subreddit: N.lb(p, o),
-							correlationId: j
+							correlationId: v
 						})
 					}
 					Object(l.b)(l.a.ModQueue);
@@ -642,7 +642,7 @@
 							...h.body,
 							operation: e,
 							ids: O,
-							username: v,
+							username: j,
 							options: {
 								flair: t
 							}
@@ -819,8 +819,8 @@
 					pageName: p
 				} = e.params, f = e.queryParams, {
 					page: O,
-					profile: v,
-					subreddit: j
+					profile: j,
+					subreddit: v
 				} = f, _ = o();
 				if (!p) return;
 				const h = Object(a.a)({
@@ -836,7 +836,7 @@
 				Object(m.p)(_) || await Object(u.e)(h, p, f)(t, o, s);
 				const E = o();
 				if (r()(E.pages.modHub.modQueue[p].api.error, "type") === n.J.AUTHENTICATION_ERROR) return Object(i.a)(t, E);
-				Object(c.j)(E, j, v), t(l.m({
+				Object(c.j)(E, v, j), t(l.m({
 					title: Object(d.g)()
 				}))
 			}
@@ -882,9 +882,9 @@
 			})), o.d(t, "removalReasonSubmittedPending", (function() {
 				return Oe
 			})), o.d(t, "removalReasonSubmittedSuccess", (function() {
-				return ve
-			})), o.d(t, "removalReasonSubmittedFailed", (function() {
 				return je
+			})), o.d(t, "removalReasonSubmittedFailed", (function() {
+				return ve
 			})), o.d(t, "removalReasonMessagePending", (function() {
 				return _e
 			})), o.d(t, "removalReasonPrivateMessageSuccess", (function() {
@@ -933,7 +933,7 @@
 						return e
 				}
 			};
-			var v = function() {
+			var j = function() {
 					let e = arguments.length > 0 && void 0 !== arguments[0] && arguments[0],
 						t = arguments.length > 1 ? arguments[1] : void 0;
 					switch (t.type) {
@@ -955,9 +955,9 @@
 							return e
 					}
 				},
-				j = Object(n.c)({
+				v = Object(n.c)({
 					error: O,
-					pending: v
+					pending: j
 				});
 			const _ = {};
 			var h = function() {
@@ -1058,7 +1058,7 @@
 					}
 				},
 				E = Object(n.c)({
-					api: j,
+					api: v,
 					models: h,
 					reasonOrder: S,
 					removedItemIds: R
@@ -1205,7 +1205,7 @@
 						subredditId: e,
 						itemIds: t
 					})), o(Object(N.i)(D.a.ADD_REMOVAL_REASON))
-				}, Oe = Object(y.a)("REMOVALREASONS__SUBMIT_PENDING"), ve = Object(y.a)("REMOVALREASONS__SUBMIT_SUCCESS"), je = Object(y.a)("REMOVALREASONS__SUBMIT_FAILED"), _e = Object(y.a)("REMOVALREASONS__MESSAGE_PENDING"), he = Object(y.a)("REMOVALREASONS__MESSAGE_PRIVATE_SUCCESS"), ge = Object(y.a)("REMOVALREASONS__MESSAGE_PUBLIC_SUCCESS"), Se = Object(y.a)("REMOVALREASONS__MESSAGE_FAILED"), Re = (e, t, o, s, r, n) => async (d, a, i) => {
+				}, Oe = Object(y.a)("REMOVALREASONS__SUBMIT_PENDING"), je = Object(y.a)("REMOVALREASONS__SUBMIT_SUCCESS"), ve = Object(y.a)("REMOVALREASONS__SUBMIT_FAILED"), _e = Object(y.a)("REMOVALREASONS__MESSAGE_PENDING"), he = Object(y.a)("REMOVALREASONS__MESSAGE_PRIVATE_SUCCESS"), ge = Object(y.a)("REMOVALREASONS__MESSAGE_PUBLIC_SUCCESS"), Se = Object(y.a)("REMOVALREASONS__MESSAGE_FAILED"), Re = (e, t, o, s, r, n) => async (d, a, i) => {
 					let {
 						apiContext: c
 					} = i;
@@ -1228,9 +1228,9 @@
 							modNote: r,
 							reasonId: t ? t.id : null
 						},
-						v = await U(c(), O);
-					if (v.ok) {
-						if (d(ve()), t) {
+						j = await U(c(), O);
+					if (j.ok) {
+						if (d(je()), t) {
 							d(_e());
 							const r = {
 									itemId: e,
@@ -1294,7 +1294,7 @@
 							}
 							return d(Se(a.error)), !1
 						}
-					} else d(je(v.error)), d(f({
+					} else d(ve(j.error)), d(f({
 						[m]: {
 							modNote: p.modNote,
 							modRemovalReason: p.modRemovalReason,
@@ -1345,7 +1345,7 @@
 								n = await B(c(), Object(z.h)(s, z.e.Bulk), z.e.Bulk);
 							n.ok ? (d(he()), d(m)) : d(Se(n.error))
 						} else d(m)
-					} else d(je(p.error))
+					} else d(ve(p.error))
 				}
 		},
 		"./src/reddit/components/ModQueueList/PostSortDropdown.m.less": function(e, t, o) {
@@ -1375,18 +1375,18 @@
 			! function(e) {
 				e.NewestFirst = "newest", e.OldestFirst = "oldest", e.MostReportedFirst = "most_reported"
 			}(s || (s = {}));
-			const v = l.a.wrapped(m.b, "Row", O.a),
-				j = Object(i.c)({
+			const j = l.a.wrapped(m.b, "Row", O.a),
+				v = Object(i.c)({
 					currentPage: e => e.platform.currentPage,
 					origin: p.k
 				}),
-				_ = Object(a.b)(j);
+				_ = Object(a.b)(v);
 			t.b = _(e => d.a.createElement("div", {
 				className: e.className
 			}, d.a.createElement(b.default, {
 				onClick: e.sendEventWithName("modqueue_sort_newest"),
 				to: Object(u.a)(`${e.origin}${e.currentPage.url}`, ["after", "before", "page", "sort"])
-			}, d.a.createElement(v, {
+			}, d.a.createElement(j, {
 				displayText: r.fbt._("Newest first", null, {
 					hk: "4buqk8"
 				}),
@@ -1396,7 +1396,7 @@
 				to: Object(c.a)(Object(u.a)(`${e.origin}${e.currentPage.url}`, ["after", "before", "page"]), {
 					sort: s.OldestFirst
 				})
-			}, d.a.createElement(v, {
+			}, d.a.createElement(j, {
 				displayText: r.fbt._("Oldest first", null, {
 					hk: "1x9Jdr"
 				}),
@@ -1406,7 +1406,7 @@
 				to: Object(c.a)(Object(u.a)(`${e.origin}${e.currentPage.url}`, ["after", "before", "page"]), {
 					sort: s.MostReportedFirst
 				})
-			}, d.a.createElement(v, {
+			}, d.a.createElement(j, {
 				displayText: r.fbt._("Most reported first", null, {
 					hk: "2ac4Mt"
 				}),
@@ -1537,4 +1537,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModQueue.7271d04634223809231f.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModQueue.f3c04a222b39c0abacea.js.map

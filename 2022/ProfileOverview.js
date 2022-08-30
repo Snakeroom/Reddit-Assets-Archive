@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfileOverview.477f86954f901eb992b3.js
-// Retrieved at 8/29/2022, 7:20:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfileOverview.55b97491b833f1ac91e6.js
+// Retrieved at 8/30/2022, 9:40:06 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfileOverview"], {
 		"./src/lib/makeOverviewConversationsItemKey/index.ts": function(e, t, s) {
@@ -1790,7 +1790,7 @@
 						onToggleReportsDropdown: () => e(Object(T.h)({
 							tooltipId: Se(s.id)
 						})),
-						onToggleSave: () => e(Object(E.n)(s.id)),
+						onToggleSave: () => e(Object(E.o)(s.id)),
 						handleDelete: () => {
 							e(Object(S.i)(ke(s.id))), e(Object(T.h)({
 								tooltipId: _e(o, s.id)
@@ -5527,4 +5527,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileOverview.477f86954f901eb992b3.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileOverview.55b97491b833f1ac91e6.js.map

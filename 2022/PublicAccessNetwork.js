@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PublicAccessNetwork.4ff741c302cd7dbeac3e.js
-// Retrieved at 8/29/2022, 7:20:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PublicAccessNetwork.b51306ada1a75921b102.js
+// Retrieved at 8/30/2022, 9:40:06 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PublicAccessNetwork"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -734,7 +734,7 @@
 					let {
 						apiContext: n
 					} = o;
-					s().features.comments.models[e] && (await Object(m.k)(n(), e)).ok && t((e => async t => {
+					s().features.comments.models[e] && (await Object(m.l)(n(), e)).ok && t((e => async t => {
 						t(O({
 							commentId: e
 						}))
@@ -746,7 +746,7 @@
 					if (!Object(g.Q)(s())) return void t(Object(i.i)(l.a.LOGIN_MODAL_ID));
 					const a = s().features.comments.models[e];
 					if (!a) return;
-					const d = a.isLocked ? m.m : m.f;
+					const d = a.isLocked ? m.n : m.g;
 					t(Object(f.j)({
 						[e]: {
 							isLocked: !a.isLocked
@@ -763,7 +763,7 @@
 							isLocked: a.isLocked
 						}
 					}))
-				}, C = Object(r.a)(S.I), y = e => async (t, s, n) => {
+				}, C = Object(r.a)(S.J), y = e => async (t, s, n) => {
 					let {
 						apiContext: r,
 						gqlContext: a
@@ -817,7 +817,7 @@
 							isRemoved: !t,
 							isSpam: t
 						}
-					})), (Object(v.a)(l) ? await Object(m.h)(i(), e, t) : await Object(m.i)(a(), e, t)).ok ? s(Object(c.f)({
+					})), (Object(v.a)(l) ? await Object(m.i)(i(), e, t) : await Object(m.j)(a(), e, t)).ok ? s(Object(c.f)({
 						kind: b.b.SuccessMod,
 						text: t ? o.fbt._("comment has been marked as spam", null, {
 							hk: "4fQaFM"
@@ -839,7 +839,7 @@
 					} = n;
 					const a = s().features.comments.models[e];
 					if (!a) return;
-					const i = a.ignoreReports ? m.l : m.e;
+					const i = a.ignoreReports ? m.m : m.f;
 					t(Object(f.j)({
 						[e]: {
 							ignoreReports: !a.ignoreReports
@@ -905,8 +905,8 @@
 							isStickied: !1
 						}
 					}));
-					const h = Object(m.c)(c(), e, t),
-						v = Object(m.d)(c(), e, !!s),
+					const h = Object(m.d)(c(), e, t),
+						v = Object(m.e)(c(), e, !!s),
 						g = [h];
 					(s || !s && e === b) && g.push(v), (await Promise.all(g)).every(e => e.ok) ? s && o(C({
 						id: e,
@@ -8026,4 +8026,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PublicAccessNetwork.4ff741c302cd7dbeac3e.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PublicAccessNetwork.b51306ada1a75921b102.js.map

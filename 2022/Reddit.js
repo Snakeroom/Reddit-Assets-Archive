@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Reddit.33d06f477c202313a767.js
-// Retrieved at 8/29/2022, 8:10:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Reddit.c98c30ca45165b01c967.js
+// Retrieved at 8/30/2022, 9:40:06 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Reddit"], {
 		"./assets/fonts/BentonSans/font.less": function(e, t, n) {},
@@ -379,11 +379,11 @@
 							}))
 					}
 				},
-				Oe = Object(o.a)(ge.K),
-				Ce = Object(o.a)(ge.G),
-				ye = Object(o.a)(ge.M),
-				Ee = Object(o.a)(ge.L),
-				xe = Object(o.a)(ge.J),
+				Oe = Object(o.a)(ge.L),
+				Ce = Object(o.a)(ge.H),
+				ye = Object(o.a)(ge.N),
+				Ee = Object(o.a)(ge.M),
+				xe = Object(o.a)(ge.K),
 				je = async (e, t, n, s) => {
 					const r = s.ok && s.body,
 						o = r && r.comment && r.comment.id;
@@ -741,7 +741,7 @@
 						}))
 					}
 				}, Ge = e => async t => {
-					t(Object(he.q)(e)), t(We(e))
+					t(Object(he.r)(e)), t(We(e))
 				}, Be = e => {
 					let {
 						parentCommentId: t,
@@ -754,7 +754,7 @@
 						})), e(Ue({
 							parentCommentId: t,
 							commentsPageKey: n
-						})), e(Object(he.q)({
+						})), e(Object(he.r)({
 							commentId: t,
 							commentsPageKey: n
 						}))
@@ -785,7 +785,7 @@
 							}
 						})))
 					}
-				}, Ve = Object(o.a)(ge.E), Qe = Object(o.a)(ge.D), ze = Object(o.a)(ge.F), Ke = Object(o.a)(ge.j), Je = Object(o.a)(ge.f), Xe = e => {
+				}, Ve = Object(o.a)(ge.F), Qe = Object(o.a)(ge.E), ze = Object(o.a)(ge.G), Ke = Object(o.a)(ge.j), Je = Object(o.a)(ge.f), Xe = e => {
 					let {
 						id: t,
 						commentsPageKey: n,
@@ -836,7 +836,7 @@
 											...e,
 											body: {
 												comment: {
-													...Object(T.b)(t.content)
+													...Object(T.c)(t.content)
 												}
 											}
 										}
@@ -891,7 +891,7 @@
 							error: p.error
 						}))
 					}
-				}, Ye = Object(o.a)(ge.B), Ze = Object(o.a)(ge.A), $e = Object(o.a)(ge.C), et = (e, t) => async (n, s, o) => {
+				}, Ye = Object(o.a)(ge.C), Ze = Object(o.a)(ge.B), $e = Object(o.a)(ge.D), et = (e, t) => async (n, s, o) => {
 					let {
 						apiContext: a
 					} = o;
@@ -954,7 +954,7 @@
 								id: e,
 								expiresAt: Date.now() + 6048e5
 							};
-						if (n(Object(he.o)(i)), (await ((e, t) => Object(E.a)(e, {
+						if (n(Object(he.p)(i)), (await ((e, t) => Object(E.a)(e, {
 								...G,
 								variables: {
 									input: t
@@ -973,7 +973,7 @@
 								kind: te.b.SuccessCommunityGreen,
 								text: e
 							})), Object(ue.a)(b) && o && n(Object(l.c)("comment_follow"))
-						} else n(Object(he.o)(i)), n(h(s.fbt._("Sorry, we had trouble doing that. Please try again.", null, {
+						} else n(Object(he.p)(i)), n(h(s.fbt._("Sorry, we had trouble doing that. Please try again.", null, {
 							hk: "2N0vVk"
 						})))
 					}
@@ -17350,7 +17350,7 @@
 						G = Sn.o(null === (m = l.getState().user.account) || void 0 === m ? void 0 : m.id);
 					l.dispatch(Object(ce.C)({
 						posts: null != F ? F : []
-					})), l.dispatch(Object(V.l)({
+					})), l.dispatch(Object(V.m)({
 						comments: null != G ? G : []
 					})), Object(dm.e)(l.getState()) && l.dispatch(Object(ov.e)()), Object(j.requestIdleCallback)(() => {
 						if (Object(hh.g)(l.getState())) {
@@ -20039,4 +20039,4 @@
 		["./src/reddit/index.tsx", "runtime~Reddit", "vendors~CommentsPage~ModerationPages~Reddit~reddit-components-ClassicPost~reddit-components-CompactP~d737df3e", "vendors~CommentsPage~Governance~ModListing~ModerationPages~Reddit~Subreddit", "vendors~Chat~Governance~Reddit", "vendors~Reddit", "CommentsPage~Governance~Reddit~ReportFlow~Subreddit~reddit-components-BlankPost~reddit-components-Cl~5351df81", "PostCreation~Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~r~4c415e24", "Governance~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compo~bd4baca2", "Governance~ModListing~Reddit~ReportFlow~Subreddit", "Governance~ModListing~Reddit~Subreddit", "Chat~Governance~Reddit", "Governance~Reddit~SubredditForkingCTA", "Governance~Reddit", "Reddit~StandalonePostPage", "AuthorHovercard~Reddit"]
 	]
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit.33d06f477c202313a767.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit.c98c30ca45165b01c967.js.map

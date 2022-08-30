@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ChatPost.1b035eb17b9eea3ed679.js
-// Retrieved at 8/29/2022, 7:20:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ChatPost.d21034da8c27be2a53d4.js
+// Retrieved at 8/30/2022, 9:40:06 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ChatPost"], {
 		"./node_modules/lodash/_baseDelay.js": function(e, t) {
@@ -2528,7 +2528,7 @@
 						onApproveClick: () => e(Object(lt.a)(n.id)),
 						onBlockClick: () => e(Object(ht.h)(n.author)),
 						onUnblockClick: () => e(Object(ht.g)(n.author)),
-						onUpvoteClick: () => e(Object(v.r)(n.id)),
+						onUpvoteClick: () => e(Object(v.s)(n.id)),
 						onDownvoteClick: () => e(Object(v.k)(n.id)),
 						onDistinguishClick: t => e(Object(lt.b)(n.id, t)),
 						onSpamClick: () => e(Object(lt.e)(n.id, !0)),
@@ -4191,7 +4191,7 @@
 					offLiveCommentsSubscribe: (t, n) => e(((e, t) => async () => {
 						F(0, t)
 					})(0, n)),
-					loadMoreComments: n => e(Object(v.m)(t.commentsPageKey, n)),
+					loadMoreComments: n => e(Object(v.n)(t.commentsPageKey, n)),
 					loadBlockedRedditors: () => e(Object(C.g)()),
 					loadComments: async () => await e(Object(te.commentsPageDataRequested)(t.postId, void 0, {
 						sort: u.u.CHAT,
@@ -5491,4 +5491,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatPost.1b035eb17b9eea3ed679.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatPost.d21034da8c27be2a53d4.js.map

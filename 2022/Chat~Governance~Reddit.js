@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.5516c104c9f3b7666044.js
-// Retrieved at 8/29/2022, 8:10:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.0f209ea30aa0475f4d63.js
+// Retrieved at 8/30/2022, 9:40:06 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Chat~Governance~Reddit"], {
 		"./assets/fonts/IBMPlexSans/font.less": function(e, t, i) {},
@@ -3538,11 +3538,11 @@
 				apiPassThroughHeaders: Object(r.e)({}.API_PASS_THROUGH_HEADERS || ""),
 				appName: {}.APP_NAME || "desktop2x",
 				assetPath: "https://www.redditstatic.com/desktop2x",
-				buildNumber: Object(r.c)("171917"),
+				buildNumber: Object(r.c)("171971"),
 				chatHelpUrl: {}.CHAT_HELP_URL || "https://reddit.zendesk.com/hc/en-us/sections/360008805652-Chat",
 				hlsVersion: "hls 0.12.4",
 				dashVersion: "dash 4.4.0",
-				buildTimestamp: Object(r.b)("1661816105"),
+				buildTimestamp: Object(r.b)("1661865053"),
 				cookieDomain: ".reddit.com",
 				giphyApiKey: "k2kwyMA6VeyHM6ZRT96OXDGaersnx73Z",
 				mediaUrl: "https://www.redditmedia.com",
@@ -6205,14 +6205,14 @@
 					}))
 				},
 				z = (e, t, i) => {
-					console.log("%cStarting Raven %crelease %c1bc520240e2e22de061a8ee789fa3881d1a0849e-production" + ` %cpublic url %c${y.a.sentryClientPublicURL}`, "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
+					console.log("%cStarting Raven %crelease %c3d7dc0e2df28fbd5d8d70041085f7d81830a08b8-production" + ` %cpublic url %c${y.a.sentryClientPublicURL}`, "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
 					let n = [];
 					n = [new RegExp(`^${y.a.assetPath}`, "i")];
 					o.e({
 						attachStacktrace: !0,
 						dsn: y.a.sentryClientPublicURL,
 						whitelistUrls: n,
-						release: "1bc520240e2e22de061a8ee789fa3881d1a0849e-production",
+						release: "3d7dc0e2df28fbd5d8d70041085f7d81830a08b8-production",
 						environment: "production",
 						ignoreErrors: ["$ is not defined"],
 						integrations: [...Object(L.d)(), new d.Integrations.Breadcrumbs({
@@ -6748,7 +6748,7 @@
 							settings: r,
 							statusCode: s,
 							type: o,
-							releaseClient: "1bc520240e2e22de061a8ee789fa3881d1a0849e-production",
+							releaseClient: "3d7dc0e2df28fbd5d8d70041085f7d81830a08b8-production",
 							appName: t.statsAppName,
 							error: n ? JSON.parse(Object(l.a)(n)) : void 0
 						},
@@ -9038,7 +9038,7 @@
 		},
 		"./src/reddit/actions/comment/constants.ts": function(e, t, i) {
 			"use strict";
-			i.d(t, "I", (function() {
+			i.d(t, "J", (function() {
 				return n
 			})), i.d(t, "q", (function() {
 				return r
@@ -9064,58 +9064,60 @@
 				return p
 			})), i.d(t, "p", (function() {
 				return h
-			})), i.d(t, "K", (function() {
-				return f
-			})), i.d(t, "G", (function() {
-				return b
-			})), i.d(t, "M", (function() {
-				return g
 			})), i.d(t, "L", (function() {
-				return w
-			})), i.d(t, "J", (function() {
-				return v
-			})), i.d(t, "s", (function() {
-				return y
-			})), i.d(t, "r", (function() {
-				return E
-			})), i.d(t, "n", (function() {
-				return S
-			})), i.d(t, "i", (function() {
-				return T
-			})), i.d(t, "o", (function() {
-				return O
-			})), i.d(t, "v", (function() {
-				return I
-			})), i.d(t, "t", (function() {
-				return R
-			})), i.d(t, "u", (function() {
-				return F
-			})), i.d(t, "E", (function() {
-				return C
-			})), i.d(t, "D", (function() {
-				return N
-			})), i.d(t, "F", (function() {
-				return A
-			})), i.d(t, "j", (function() {
-				return j
-			})), i.d(t, "f", (function() {
-				return P
-			})), i.d(t, "B", (function() {
-				return D
-			})), i.d(t, "A", (function() {
-				return x
-			})), i.d(t, "C", (function() {
-				return L
-			})), i.d(t, "a", (function() {
-				return k
+				return f
 			})), i.d(t, "H", (function() {
+				return b
+			})), i.d(t, "N", (function() {
+				return g
+			})), i.d(t, "A", (function() {
+				return w
+			})), i.d(t, "M", (function() {
+				return v
+			})), i.d(t, "K", (function() {
+				return y
+			})), i.d(t, "s", (function() {
+				return E
+			})), i.d(t, "r", (function() {
+				return S
+			})), i.d(t, "n", (function() {
+				return T
+			})), i.d(t, "i", (function() {
+				return O
+			})), i.d(t, "o", (function() {
+				return I
+			})), i.d(t, "v", (function() {
+				return R
+			})), i.d(t, "t", (function() {
+				return F
+			})), i.d(t, "u", (function() {
+				return C
+			})), i.d(t, "F", (function() {
+				return N
+			})), i.d(t, "E", (function() {
+				return A
+			})), i.d(t, "G", (function() {
+				return j
+			})), i.d(t, "j", (function() {
+				return P
+			})), i.d(t, "f", (function() {
+				return D
+			})), i.d(t, "C", (function() {
+				return x
+			})), i.d(t, "B", (function() {
+				return L
+			})), i.d(t, "D", (function() {
+				return k
+			})), i.d(t, "a", (function() {
 				return B
-			})), i.d(t, "b", (function() {
+			})), i.d(t, "I", (function() {
 				return M
-			})), i.d(t, "w", (function() {
+			})), i.d(t, "b", (function() {
 				return U
-			})), i.d(t, "e", (function() {
+			})), i.d(t, "w", (function() {
 				return G
+			})), i.d(t, "e", (function() {
+				return V
 			}));
 			const n = "COMMENT__STICKIED_COMMENT_SUCCESS",
 				r = "COMMENT__MUTATED",
@@ -9133,29 +9135,30 @@
 				f = "COMMENT__SUBMIT_COMMENT_PENDING",
 				b = "COMMENT__RETRY_COMMENT_SUBMIT_REQUESTED",
 				g = "COMMENT__SUBMIT_REPLY_TO_POST_SUCCESS",
-				w = "COMMENT__SUBMIT_REPLY_TO_COMMENT_SUCCESS",
-				v = "COMMENT__SUBMIT_COMMENT_FAILURE",
-				y = "COMMENT__COMMENT_REPLY_FORM_OPENED",
-				E = "COMMENT__COMMENT_REPLY_FORM_CANCELLED",
-				S = "COMMENT__COMMENT_FORM_MUTATED",
-				T = "COMMENT__COMMENT_DRAFT_CLEARED",
-				O = "COMMENT__COMMENT_FORM_SWITCHED_MODE",
-				I = "INITIALIZE_COMMENT_EDITOR_MODE",
-				R = "COMMENT__DISABLE_AUTOFOCUS",
-				F = "COMMENT__EDIT_COMMENT_ENABLED",
-				C = "COMMENT__REQUEST_EDIT_PENDING",
-				N = "COMMENT__REQUEST_EDIT_FAILURE",
-				A = "COMMENT__REQUEST_EDIT_SUCCESS",
-				j = "COMMENT__COMMENT_EDIT_FORM_CANCELLED",
-				P = "COMMENT__CLEAR_SUBMIT_ERROR",
-				D = "COMMENT__REQUEST_DELETE_PENDING",
-				x = "COMMENT__REQUEST_DELETE_FAILURE",
-				L = "COMMENT__REQUEST_DELETE_SUCCESS",
-				k = "COMMENT__CHANGE_HIGHLIGHT_FILTER",
-				B = "SET_FOLLOWED_COMMENT",
-				M = "CHECK_FOLLOWED_COMMENTS_EXPIRED",
-				U = "INITIALIZE_FOLLOWED_COMMENTS",
-				G = "COMMENT_AWARDS_DATA_UPDATED"
+				w = "RELOAD_COMMENT_MEDIA_SUCCESS",
+				v = "COMMENT__SUBMIT_REPLY_TO_COMMENT_SUCCESS",
+				y = "COMMENT__SUBMIT_COMMENT_FAILURE",
+				E = "COMMENT__COMMENT_REPLY_FORM_OPENED",
+				S = "COMMENT__COMMENT_REPLY_FORM_CANCELLED",
+				T = "COMMENT__COMMENT_FORM_MUTATED",
+				O = "COMMENT__COMMENT_DRAFT_CLEARED",
+				I = "COMMENT__COMMENT_FORM_SWITCHED_MODE",
+				R = "INITIALIZE_COMMENT_EDITOR_MODE",
+				F = "COMMENT__DISABLE_AUTOFOCUS",
+				C = "COMMENT__EDIT_COMMENT_ENABLED",
+				N = "COMMENT__REQUEST_EDIT_PENDING",
+				A = "COMMENT__REQUEST_EDIT_FAILURE",
+				j = "COMMENT__REQUEST_EDIT_SUCCESS",
+				P = "COMMENT__COMMENT_EDIT_FORM_CANCELLED",
+				D = "COMMENT__CLEAR_SUBMIT_ERROR",
+				x = "COMMENT__REQUEST_DELETE_PENDING",
+				L = "COMMENT__REQUEST_DELETE_FAILURE",
+				k = "COMMENT__REQUEST_DELETE_SUCCESS",
+				B = "COMMENT__CHANGE_HIGHLIGHT_FILTER",
+				M = "SET_FOLLOWED_COMMENT",
+				U = "CHECK_FOLLOWED_COMMENTS_EXPIRED",
+				G = "INITIALIZE_FOLLOWED_COMMENTS",
+				V = "COMMENT_AWARDS_DATA_UPDATED"
 		},
 		"./src/reddit/actions/comment/websocket/constants.ts": function(e, t, i) {
 			"use strict";
@@ -23059,6 +23062,8 @@
 		"./src/reddit/helpers/graphql/normalizeCommentFromGql/index.ts": function(e, t, i) {
 			"use strict";
 			i.d(t, "b", (function() {
+				return _
+			})), i.d(t, "c", (function() {
 				return h
 			}));
 			var n = i("./src/lib/constants/index.ts"),
@@ -23074,7 +23079,7 @@
 					var t;
 					let i = {};
 					return (null === (t = null == e ? void 0 : e.richtextMedia) || void 0 === t ? void 0 : t.length) && (i = {
-						mediaMetadata: Object(o.c)(null == e ? void 0 : e.richtextMedia)
+						mediaMetadata: Object(o.c)(null == e ? void 0 : e.richtextMedia, !0)
 					}), {
 						richtextContent: e && e.richtext ? Object(r.h)(e.richtext) : {},
 						type: "rtjson",
@@ -23890,35 +23895,35 @@
 			const q = e => e && e.__typename !== b.c.DeletedRedditor ? "name" in e && e.name || "" : n.F,
 				H = e => !(!e || e.__typename !== b.c.AvailableRedditor) && !!e.isPremiumMember,
 				W = e => e.content && e.content.richtextMedia && e.content.richtextMedia.length ? K(e.content.richtextMedia) : null,
-				K = (e, t) => e.length ? e.reduce((e, t) => {
-					switch (t.__typename) {
+				K = (e, t) => e.length ? e.reduce((e, i) => {
+					switch (i.__typename) {
 						case p.c.ImageAsset:
-							"image/gif" === t.mimetype ? e[t.id] = {
+							"image/gif" === i.mimetype ? e[i.id] = {
 								e: f.r,
-								id: t.id,
+								id: i.id,
 								s: {
-									gif: t.url,
-									x: t.height,
-									y: t.width
+									gif: i.url,
+									x: i.height,
+									y: i.width
 								}
-							} : e[t.id] = {
+							} : e[i.id] = {
 								e: f.s,
-								id: t.id,
+								id: i.id,
 								s: {
-									u: t.url,
-									x: t.height,
-									y: t.width
+									u: i.url,
+									x: t ? i.width : i.height,
+									y: t ? i.height : i.width
 								}
 							};
 							break;
 						case p.c.VideoAsset:
-							e[t.id] = {
-								dashUrl: t.dashUrl,
+							e[i.id] = {
+								dashUrl: i.dashUrl,
 								e: f.t,
-								hlsUrl: t.hlsUrl,
-								id: t.id,
-								x: t.height,
-								y: t.width
+								hlsUrl: i.hlsUrl,
+								id: i.id,
+								x: i.height,
+								y: i.width
 							}
 					}
 					return e
@@ -33303,7 +33308,7 @@
 							[i]: null
 						}
 					}
-					case o.M: {
+					case o.N: {
 						const {
 							draftKey: i
 						} = t.payload, n = e[i];
@@ -33316,8 +33321,8 @@
 							}
 						}
 					}
-					case o.L:
-					case o.F: {
+					case o.M:
+					case o.G: {
 						const {
 							draftKey: i
 						} = t.payload;
@@ -33326,7 +33331,7 @@
 							[i]: null
 						}
 					}
-					case o.K: {
+					case o.L: {
 						const {
 							draftKey: i,
 							draft: n
@@ -33438,8 +33443,8 @@
 							}
 						}
 						case o.j:
-						case o.D:
-						case o.F: {
+						case o.E:
+						case o.G: {
 							const {
 								commentId: i,
 								commentsPageKey: n
@@ -33528,7 +33533,7 @@
 							[i.id]: n(i)
 						}
 					}
-					case o.K: {
+					case o.L: {
 						const {
 							draftKey: i,
 							optimisticComment: n
@@ -33538,8 +33543,8 @@
 							[i]: n
 						} : e
 					}
-					case o.M:
-					case o.L: {
+					case o.N:
+					case o.M: {
 						const {
 							comment: i,
 							draftKey: n
@@ -33550,7 +33555,20 @@
 							[n]: void 0
 						}
 					}
-					case o.G: {
+					case o.A: {
+						const {
+							media: i,
+							commentId: n
+						} = t.payload;
+						return {
+							...e,
+							[n]: {
+								...e[n],
+								media: i
+							}
+						}
+					}
+					case o.H: {
 						const {
 							commentId: i
 						} = t.payload;
@@ -33587,7 +33605,7 @@
 						return i
 					}
 					case A.a:
-					case o.C: {
+					case o.D: {
 						const {
 							id: i
 						} = t.payload;
@@ -33785,12 +33803,12 @@
 					t = arguments.length > 1 ? arguments[1] : void 0;
 				switch (t.type) {
 					case o.r:
-					case o.K:
-					case o.E:
-					case o.M:
 					case o.L:
+					case o.F:
+					case o.N:
+					case o.M:
 					case o.f:
-					case o.F: {
+					case o.G: {
 						const {
 							draftKey: i
 						} = t.payload;
@@ -33799,8 +33817,8 @@
 							[i]: null
 						}
 					}
-					case o.J:
-					case o.D: {
+					case o.K:
+					case o.E: {
 						const {
 							draftKey: i,
 							error: n
@@ -33810,7 +33828,7 @@
 							[i]: n
 						}
 					}
-					case o.A: {
+					case o.B: {
 						const {
 							id: i,
 							error: n
@@ -33820,8 +33838,8 @@
 							[i]: n
 						}
 					}
-					case o.B:
-					case o.C: {
+					case o.C:
+					case o.D: {
 						const {
 							id: i
 						} = t.payload;
@@ -33839,8 +33857,8 @@
 					let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : de,
 						t = arguments.length > 1 ? arguments[1] : void 0;
 					switch (t.type) {
-						case o.K:
-						case o.E: {
+						case o.L:
+						case o.F: {
 							const {
 								draftKey: i
 							} = t.payload;
@@ -33849,11 +33867,11 @@
 								[i]: !0
 							}
 						}
-						case o.L:
 						case o.M:
-						case o.F:
-						case o.J:
-						case o.D: {
+						case o.N:
+						case o.G:
+						case o.K:
+						case o.E: {
 							const {
 								draftKey: i
 							} = t.payload;
@@ -33862,7 +33880,7 @@
 								[i]: !1
 							}
 						}
-						case o.B: {
+						case o.C: {
 							const {
 								id: i
 							} = t.payload;
@@ -33871,8 +33889,8 @@
 								[i]: !0
 							}
 						}
-						case o.C:
-						case o.A: {
+						case o.D:
+						case o.B: {
 							const {
 								id: i
 							} = t.payload;
@@ -44293,7 +44311,7 @@
 			e.exports = JSON.parse('{"id":"34910619f1e9"}')
 		},
 		"./src/redditGQL/operations/GeneralSearch.json": function(e) {
-			e.exports = JSON.parse('{"id":"5564b40d759c"}')
+			e.exports = JSON.parse('{"id":"64a8d154e9cc"}')
 		},
 		"./src/redditGQL/operations/GetPostReactInfo.json": function(e) {
 			e.exports = JSON.parse('{"id":"72e76fc8e5c5"}')
@@ -49756,4 +49774,4 @@
 		"ignored /drone/src/node_modules/readable-stream/lib/internal/streams util": function(e, t) {}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.5516c104c9f3b7666044.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.0f209ea30aa0475f4d63.js.map

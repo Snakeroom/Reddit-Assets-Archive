@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage.8d12d5241f25af8315ca.js
-// Retrieved at 8/29/2022, 7:20:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage.6bcb885c6946a943246a.js
+// Retrieved at 8/30/2022, 9:40:06 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage"], {
 		"./node_modules/linkify-it/index.js": function(e, t, s) {
@@ -2195,7 +2195,7 @@
 						})),
 						onCommentFollow: t => e(Object(f.u)(s.id, t)),
 						onDistinguishComment: (t, n) => e(Object(C.b)(s.id, t, n)),
-						onFollowedCommentExpire: () => e(Object(x.o)({
+						onFollowedCommentExpire: () => e(Object(x.p)({
 							id: s.id,
 							expiresAt: 0
 						})),
@@ -2206,7 +2206,7 @@
 						})),
 						onIgnoreReports: () => e(Object(C.g)(s.id)),
 						onReportClick: () => e(Object(O.c)(s.id)),
-						onToggleSave: () => e(Object(x.n)(s.id)),
+						onToggleSave: () => e(Object(x.o)(s.id)),
 						onToggleDistinguishDropdown: () => e(Object(b.h)({
 							tooltipId: Oe(s.id)
 						})),
@@ -2909,15 +2909,18 @@
 						trackCommentClick: r
 					} = t;
 					return {
-						onCollapseClick: () => e(Object(u.p)({
+						onCollapseClick: () => e(Object(u.q)({
 							commentId: s,
 							commentsPageKey: n,
 							scrollToAndRemeasure: o
 						})),
 						onIgnoreReports: () => e(Object(b.g)(s)),
 						onVoteClick: t => {
-							const [n, o] = t === ee.a.upvoted ? [Object(u.r)(s), "upvote_comment"] : [Object(u.k)(s), "downvote_comment"];
+							const [n, o] = t === ee.a.upvoted ? [Object(u.s)(s), "upvote_comment"] : [Object(u.k)(s), "downvote_comment"];
 							r(o, s)(), e(n)
+						},
+						onMediaReload: () => {
+							e(Object(u.l)(s))
 						}
 					}
 				}),
@@ -2983,13 +2986,14 @@
 						trackCommentClick: Ge,
 						userIconSmall: Ye,
 						userIsBanned: Qe,
-						onClickRevealSpoilerText: Je
-					} = e, Ze = m.isDeleted, Xe = !ee && !Ze && !!f && f.length > 0, $e = Object(l.a)(d.c.edit, m.id), et = Object(l.a)(d.c.replyToComment, m.id), tt = Object(se.a)(me), st = Object(F.a)(m), nt = Object(A.c)(m), ot = m.authorIsContractor && qe === X.f.EmployeesOnly, rt = m.isLocked, it = tt && ue, at = !ee && !Ze && (re || W), dt = W && !m.unrepliableReason, ct = !!g && Object($.e)(g) === m.author, [lt, mt] = Object(o.useState)(null), [ut, pt] = Object(o.useState)(null), bt = Object(o.useRef)(null), ht = Object(Z.f)(m) || Object(Z.g)(m), gt = ht ? Fe : Y.default, xt = Object(Z.f)(m) ? Re : Se;
+						onClickRevealSpoilerText: Je,
+						onMediaReload: Ze
+					} = e, Xe = m.isDeleted, $e = !ee && !Xe && !!f && f.length > 0, et = Object(l.a)(d.c.edit, m.id), tt = Object(l.a)(d.c.replyToComment, m.id), st = Object(se.a)(me), nt = Object(F.a)(m), ot = Object(A.c)(m), rt = m.authorIsContractor && qe === X.f.EmployeesOnly, it = m.isLocked, at = st && ue, dt = !ee && !Xe && (re || W), ct = W && !m.unrepliableReason, lt = !!g && Object($.e)(g) === m.author, [mt, ut] = Object(o.useState)(null), [pt, bt] = Object(o.useState)(null), ht = Object(o.useRef)(null), gt = Object(Z.f)(m) || Object(Z.g)(m), xt = gt ? Fe : Y.default, ft = Object(Z.f)(m) ? Re : Se;
 					Object(o.useEffect)(() => {
-						if (!ee && !Ze && (O && mt(r.a.createElement(P, null)), null !== k)) {
+						if (!ee && !Xe && (O && ut(r.a.createElement(P, null)), null !== k)) {
 							if (k.glowHexColor) {
 								const e = k.glowHexColor;
-								mt(r.a.createElement(E, {
+								ut(r.a.createElement(E, {
 									hexColor: e
 								}))
 							}
@@ -2998,35 +3002,35 @@
 									type: e,
 									assetUrl: t
 								} = k.effectHighlight;
-								pt(r.a.createElement(I.b, {
+								bt(r.a.createElement(I.b, {
 									prefersReducedAnimation: j,
 									type: e,
 									assetUrl: t
 								}))
 							}
 						}
-					}, [ee, Ze, O, j, k]);
-					const ft = Object(q.b)();
-					(K || G) && ft && w >= ie.a - 1 && ze();
-					const Ct = !Ze && !Object(Z.f)(m) && (!Qe || Qe && ct) && !Object(Z.g)(m) && re,
-						vt = Object(o.useCallback)(() => {
-							Ct && le && !ct && Te && Te(m.id)
-						}, [m.id, Te, Ct, le, ct]),
-						_t = Object(z.a)(m),
-						Ot = !!g && Object($.e)(g) === m.author ? null == g ? void 0 : g.accountIcon : m.profileImage,
-						yt = Object(Ce.c)(Ot),
-						Et = !(!yt && !He) && Object(Ce.b)(Ot);
+					}, [ee, Xe, O, j, k]);
+					const Ct = Object(q.b)();
+					(K || G) && Ct && w >= ie.a - 1 && ze();
+					const vt = !Xe && !Object(Z.f)(m) && (!Qe || Qe && lt) && !Object(Z.g)(m) && re,
+						_t = Object(o.useCallback)(() => {
+							vt && le && !lt && Te && Te(m.id)
+						}, [m.id, Te, vt, le, lt]),
+						Ot = Object(z.a)(m),
+						yt = !!g && Object($.e)(g) === m.author ? null == g ? void 0 : g.accountIcon : m.profileImage,
+						Et = Object(Ce.c)(yt),
+						jt = !(!Et && !He) && Object(Ce.b)(yt);
 					return r.a.createElement("div", {
 						key: `comment-${m.id}`,
 						className: Object(c.a)(`Comment ${m.id}`, ge.a.CommentWrapper, {
 							[ge.a.highlightComment]: oe,
-							[ge.a.deleted]: Ze,
+							[ge.a.deleted]: Xe,
 							[ge.a.focused]: _,
 							[ge.a.redesign]: W,
 							[ge.a.topLevel]: !x,
 							[ge.a.noSpacing]: pe
 						})
-					}, lt, ut, !ee && !Ze && ne && r.a.createElement("div", {
+					}, mt, pt, !ee && !Xe && ne && r.a.createElement("div", {
 						className: ge.a.commentPerfMarkVisibility,
 						dangerouslySetInnerHTML: {
 							__html: `\n                <img alt='' src='${fe.a.assetPath}/img/renderTimingPixel.png' style='width: 1px; height: 1px;' onLoad='(__markFirstCommentVisible || function(){})();' />\n              `
@@ -3045,7 +3049,7 @@
 						className: Object(c.a)(ge.a.UserIconContainer, Ye && ge.a.UserIconContainerSmall),
 						subredditOrProfile: Ke,
 						linkTo: `/user/${m.author}/`
-					}) : null : r.a.createElement(xt, {
+					}) : null : r.a.createElement(ft, {
 						alwaysShowChildren: !0,
 						collapsed: i,
 						hoverDivClassName: ge.a.AuthorHoverDiv,
@@ -3053,30 +3057,30 @@
 						postOrComment: m,
 						tooltipIdPrefix: "AvatarUserInfoTooltip",
 						tooltipType: De ? M.c.Lightbox : void 0
-					}, r.a.createElement(gt, {
+					}, r.a.createElement(xt, {
 						className: Object(c.a)(ge.a.UserIconContainer, Ye && ge.a.UserIconContainerSmall),
-						"data-testid": ht ? void 0 : "comment_author_icon",
-						onClick: ht ? void 0 : be,
+						"data-testid": gt ? void 0 : "comment_author_icon",
+						onClick: gt ? void 0 : be,
 						to: `/user/${m.author}/`
-					}, ft ? r.a.createElement(r.a.Fragment, null, y && !Et && r.a.createElement("div", {
+					}, Ct ? r.a.createElement(r.a.Fragment, null, y && !jt && r.a.createElement("div", {
 						className: ge.a.supporterRing
 					}), r.a.createElement(D.a, {
-						isNft: Et,
+						isNft: jt,
 						className: Object(c.a)(ge.a.UserIcon, {
-							[ge.a.v1NftTreatment]: yt
+							[ge.a.v1NftTreatment]: Et
 						}),
-						iconUrl: Ot,
+						iconUrl: yt,
 						isNSFW: m.profileOver18 || !1,
 						nsfwIconUrl: V.a,
 						userName: m.author,
 						isHighlighted: oe,
-						shouldShowPresenceIndicator: Ct && le,
-						onPresenceIndicatorInViewport: vt,
+						shouldShowPresenceIndicator: vt && le,
+						onPresenceIndicatorInViewport: _t,
 						isCommentAuthorBlocked: Object(Z.g)(m),
 						collapsed: i,
-						shouldUseOnlineOverride: ct,
+						shouldUseOnlineOverride: lt,
 						isOnlineOverrideValue: de,
-						isOnlineStatusLoadTest: Ct && ae,
+						isOnlineStatusLoadTest: vt && ae,
 						authorId: m.authorId
 					})) : r.a.createElement("div", {
 						className: ge.a.UserIcon
@@ -3084,14 +3088,14 @@
 						className: Object(c.a)({
 							[ge.a.isActive]: N,
 							[ge.a.isCollapsed]: i,
-							[ge.a.isLocked]: rt && it,
+							[ge.a.isLocked]: it && at,
 							[ge.a.isPendingDeletion]: ce,
-							[ge.a.isRemoved]: !!m.bannedBy && it || m.isDeleted && T
+							[ge.a.isRemoved]: !!m.bannedBy && at || m.isDeleted && T
 						})
 					}, r.a.createElement(Q.a, null, n.fbt._("level {depth}", [n.fbt._param("depth", x + 1)], {
 						hk: "2XnyAV"
 					})), r.a.createElement(Ie, {
-						userHasNft: Et,
+						userHasNft: jt,
 						childrenInfo: t,
 						className: Object(c.a)({
 							[ge.a.collapsed]: i,
@@ -3107,14 +3111,14 @@
 						onCommentAuthorClick: be,
 						onCommentTimestampClick: he,
 						renderedInOverlay: De,
-						renderContractorBadge: ot
+						renderContractorBadge: rt
 					}), !i && r.a.createElement(o.Fragment, null, ee && r.a.createElement(h.a, {
 						className: Object(c.a)(ge.a.EditCommentForm, ge.a.CommentCreation),
 						autofocus: !0,
 						commentsPageKey: u,
 						depth: x,
 						draftType: d.c.edit,
-						draftKey: $e,
+						draftKey: et,
 						postId: Me,
 						rtJson: Object(z.a)(m),
 						mediaMetadata: m.media && m.media.mediaMetadata || void 0,
@@ -3123,39 +3127,40 @@
 						submitAction: e => Object(p.j)({
 							id: m.id,
 							commentsPageKey: u,
-							draftKey: $e,
+							draftKey: et,
 							formData: e
 						}),
 						submitButtonText: n.fbt._("Save Edits", null, {
 							hk: "2NKEFr"
 						})
-					}), !ee && (!Ze || T) && r.a.createElement("div", {
+					}), !ee && (!Xe || T) && r.a.createElement("div", {
 						"data-testid": H.d,
-						ref: bt,
+						ref: ht,
 						className: Object(c.a)(ge.a.CommentBody, {
-							[ge.a.restrictHeight]: !(!We || !bt.current) && bt.current.clientHeight > Oe
+							[ge.a.restrictHeight]: !(!We || !ht.current) && ht.current.clientHeight > Oe
 						})
 					}, Be ? r.a.createElement(S.a, {
 						comment: m,
 						prediction: Be
 					}) : r.a.createElement(B.b, {
-						content: _t,
+						content: Ot,
 						mediaMetadata: m.media && m.media.mediaMetadata,
 						redditStyle: Ue,
 						rtJsonElementProps: Le(e),
 						onClickRevealSpoilerText: Je,
 						mediaProps: {
 							alignLeft: !0,
-							renderSmallMedia: !0
+							renderSmallMedia: !0,
+							onReload: Ze
 						}
 					}), r.a.createElement(te.b, {
-						content: _t
-					})), ue && tt && st && r.a.createElement(L.a, {
+						content: Ot
+					})), ue && st && nt && r.a.createElement(L.a, {
 						thing: m
-					}), ue && tt && nt && r.a.createElement(R.a, {
+					}), ue && st && ot && r.a.createElement(R.a, {
 						onIgnoreReports: _e,
 						reportable: m
-					}), null != v ? v : at && r.a.createElement(Pe, null, dt && r.a.createElement(ke, {
+					}), null != v ? v : dt && r.a.createElement(Pe, null, ct && r.a.createElement(ke, {
 						downvoteButtonClassName: ge.a.voteButton,
 						downvoteClassName: ge.a.upDownVote,
 						model: m,
@@ -3175,7 +3180,7 @@
 						isCommentFocused: _,
 						subreddit: Ke,
 						trackCommentClick: Ge
-					})), Xe && f.map(e => r.a.createElement(je, {
+					})), $e && f.map(e => r.a.createElement(je, {
 						key: e
 					}, e)), Ve && r.a.createElement(h.a, {
 						className: Object(c.a)(ge.a.EditCommentForm, ge.a.CommentCreation),
@@ -3183,7 +3188,7 @@
 						commentsPageKey: u,
 						depth: x,
 						draftType: d.c.replyToComment,
-						draftKey: et,
+						draftKey: tt,
 						isTopLevelComment: !1,
 						parentCommentId: m.id,
 						postId: Me,
@@ -3194,14 +3199,14 @@
 							} = e;
 							return s ? Object(p.v)({
 								commentsPageKey: u,
-								draftKey: et,
+								draftKey: tt,
 								parentCommentDepth: x,
 								parentCommentId: m.id,
 								formData: n,
 								editorMode: t
 							}) : Object(p.o)({
 								commentsPageKey: u,
-								draftKey: et,
+								draftKey: tt,
 								parentCommentDepth: x,
 								parentCommentId: m.id,
 								formData: n,
@@ -3629,7 +3634,7 @@
 				moreCommentsPending: I.G
 			});
 			var se = Object(c.b)(te, (e, t) => ({
-					moreCommentsClicked: () => e(Object(g.m)(t.commentsPageKey, t.moreCommentsId))
+					moreCommentsClicked: () => e(Object(g.n)(t.commentsPageKey, t.moreCommentsId))
 				}))(e => {
 					const {
 						isActive: t,
@@ -3790,7 +3795,7 @@
 							scrollToAndRemeasure: o
 						}))
 					},
-					onShortLineClick: () => e(Object(g.p)({
+					onShortLineClick: () => e(Object(g.q)({
 						commentId: s.id,
 						commentsPageKey: n,
 						scrollToAndRemeasure: o
@@ -11482,4 +11487,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage.8d12d5241f25af8315ca.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage.6bcb885c6946a943246a.js.map

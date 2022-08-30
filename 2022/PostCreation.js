@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostCreation.373d807e39afe485b248.js
-// Retrieved at 8/29/2022, 8:10:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostCreation.713168680a0f841c9041.js
+// Retrieved at 8/30/2022, 9:40:06 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostCreation", "ChatMessageInput~MembershipPaywallPage~RichTextEditor", "ContributorRequestButton"], {
 		"./node_modules/autosize/dist/autosize.js": function(e, t, n) {
@@ -1547,11 +1547,11 @@
 							}))
 					}
 				},
-				Ce = Object(r.a)(fe.K),
-				xe = Object(r.a)(fe.G),
-				ye = Object(r.a)(fe.M),
-				Oe = Object(r.a)(fe.L),
-				ve = Object(r.a)(fe.J),
+				Ce = Object(r.a)(fe.L),
+				xe = Object(r.a)(fe.H),
+				ye = Object(r.a)(fe.N),
+				Oe = Object(r.a)(fe.M),
+				ve = Object(r.a)(fe.K),
 				_e = async (e, t, n, o) => {
 					const s = o.ok && o.body,
 						r = s && s.comment && s.comment.id;
@@ -1909,7 +1909,7 @@
 						}))
 					}
 				}, Ue = e => async t => {
-					t(Object(be.q)(e)), t(ze(e))
+					t(Object(be.r)(e)), t(ze(e))
 				}, Ke = e => {
 					let {
 						parentCommentId: t,
@@ -1922,7 +1922,7 @@
 						})), e(Be({
 							parentCommentId: t,
 							commentsPageKey: n
-						})), e(Object(be.q)({
+						})), e(Object(be.r)({
 							commentId: t,
 							commentsPageKey: n
 						}))
@@ -1953,7 +1953,7 @@
 							}
 						})))
 					}
-				}, Ve = Object(r.a)(fe.E), Ge = Object(r.a)(fe.D), qe = Object(r.a)(fe.F), Je = Object(r.a)(fe.j), Qe = Object(r.a)(fe.f), Ze = e => {
+				}, Ve = Object(r.a)(fe.F), Ge = Object(r.a)(fe.E), qe = Object(r.a)(fe.G), Je = Object(r.a)(fe.j), Qe = Object(r.a)(fe.f), Ze = e => {
 					let {
 						id: t,
 						commentsPageKey: n,
@@ -2004,7 +2004,7 @@
 											...e,
 											body: {
 												comment: {
-													...Object(M.b)(t.content)
+													...Object(M.c)(t.content)
 												}
 											}
 										}
@@ -2059,7 +2059,7 @@
 							error: p.error
 						}))
 					}
-				}, Ye = Object(r.a)(fe.B), Xe = Object(r.a)(fe.A), $e = Object(r.a)(fe.C), et = (e, t) => async (n, o, r) => {
+				}, Ye = Object(r.a)(fe.C), Xe = Object(r.a)(fe.B), $e = Object(r.a)(fe.D), et = (e, t) => async (n, o, r) => {
 					let {
 						apiContext: i
 					} = r;
@@ -2122,7 +2122,7 @@
 								id: e,
 								expiresAt: Date.now() + 6048e5
 							};
-						if (n(Object(be.o)(a)), (await ((e, t) => Object(O.a)(e, {
+						if (n(Object(be.p)(a)), (await ((e, t) => Object(O.a)(e, {
 								...U,
 								variables: {
 									input: t
@@ -2141,7 +2141,7 @@
 								kind: te.b.SuccessCommunityGreen,
 								text: e
 							})), Object(ue.a)(h) && r && n(Object(l.c)("comment_follow"))
-						} else n(Object(be.o)(a)), n(b(o.fbt._("Sorry, we had trouble doing that. Please try again.", null, {
+						} else n(Object(be.p)(a)), n(b(o.fbt._("Sorry, we had trouble doing that. Please try again.", null, {
 							hk: "2N0vVk"
 						})))
 					}
@@ -18872,8 +18872,8 @@
 						headerText: s.fbt._("Switch to Markdown", null, {
 							hk: "3zGkKa"
 						}),
-						modalText: c === He.a.Comment ? s.fbt._("Switching to markdown will remove any images or gifs from your comment.", null, {
-							hk: "371g48"
+						modalText: c === He.a.Comment ? s.fbt._("Switching to markdown will remove any image or GIF from your comment.", null, {
+							hk: "3v46Jt"
 						}) : s.fbt._("Switching to markdown will remove any images, gifs or videos from your post.", null, {
 							hk: "3rlwkB"
 						}),
@@ -34851,4 +34851,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.373d807e39afe485b248.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.713168680a0f841c9041.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/RichTextEditor.91ba152a1cac3ceb836f.js
-// Retrieved at 8/29/2022, 7:20:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/RichTextEditor.52f8642e406b703a0944.js
+// Retrieved at 8/30/2022, 9:40:06 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["RichTextEditor", "ContributorRequestButton"], {
 		"./node_modules/autosize/dist/autosize.js": function(e, t, n) {
@@ -804,11 +804,11 @@
 							}))
 					}
 				},
-				xe = Object(s.a)(fe.K),
-				ye = Object(s.a)(fe.G),
-				Ce = Object(s.a)(fe.M),
-				Ee = Object(s.a)(fe.L),
-				Oe = Object(s.a)(fe.J),
+				xe = Object(s.a)(fe.L),
+				ye = Object(s.a)(fe.H),
+				Ce = Object(s.a)(fe.N),
+				Ee = Object(s.a)(fe.M),
+				Oe = Object(s.a)(fe.K),
 				ve = async (e, t, n, o) => {
 					const r = o.ok && o.body,
 						s = r && r.comment && r.comment.id;
@@ -1166,7 +1166,7 @@
 						}))
 					}
 				}, Le = e => async t => {
-					t(Object(be.q)(e)), t(qe(e))
+					t(Object(be.r)(e)), t(qe(e))
 				}, Ue = e => {
 					let {
 						parentCommentId: t,
@@ -1179,7 +1179,7 @@
 						})), e(ze({
 							parentCommentId: t,
 							commentsPageKey: n
-						})), e(Object(be.q)({
+						})), e(Object(be.r)({
 							commentId: t,
 							commentsPageKey: n
 						}))
@@ -1210,7 +1210,7 @@
 							}
 						})))
 					}
-				}, Ke = Object(s.a)(fe.E), Ge = Object(s.a)(fe.D), Ve = Object(s.a)(fe.F), Xe = Object(s.a)(fe.j), Je = Object(s.a)(fe.f), Qe = e => {
+				}, Ke = Object(s.a)(fe.F), Ge = Object(s.a)(fe.E), Ve = Object(s.a)(fe.G), Xe = Object(s.a)(fe.j), Je = Object(s.a)(fe.f), Qe = e => {
 					let {
 						id: t,
 						commentsPageKey: n,
@@ -1261,7 +1261,7 @@
 											...e,
 											body: {
 												comment: {
-													...Object(I.b)(t.content)
+													...Object(I.c)(t.content)
 												}
 											}
 										}
@@ -1316,7 +1316,7 @@
 							error: p.error
 						}))
 					}
-				}, Ze = Object(s.a)(fe.B), Ye = Object(s.a)(fe.A), $e = Object(s.a)(fe.C), et = (e, t) => async (n, o, s) => {
+				}, Ze = Object(s.a)(fe.C), Ye = Object(s.a)(fe.B), $e = Object(s.a)(fe.D), et = (e, t) => async (n, o, s) => {
 					let {
 						apiContext: i
 					} = s;
@@ -1379,7 +1379,7 @@
 								id: e,
 								expiresAt: Date.now() + 6048e5
 							};
-						if (n(Object(be.o)(a)), (await ((e, t) => Object(E.a)(e, {
+						if (n(Object(be.p)(a)), (await ((e, t) => Object(E.a)(e, {
 								...L,
 								variables: {
 									input: t
@@ -1398,7 +1398,7 @@
 								kind: te.b.SuccessCommunityGreen,
 								text: e
 							})), Object(ue.a)(h) && s && n(Object(d.c)("comment_follow"))
-						} else n(Object(be.o)(a)), n(b(o.fbt._("Sorry, we had trouble doing that. Please try again.", null, {
+						} else n(Object(be.p)(a)), n(b(o.fbt._("Sorry, we had trouble doing that. Please try again.", null, {
 							hk: "2N0vVk"
 						})))
 					}
@@ -6105,4 +6105,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RichTextEditor.91ba152a1cac3ceb836f.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RichTextEditor.52f8642e406b703a0944.js.map

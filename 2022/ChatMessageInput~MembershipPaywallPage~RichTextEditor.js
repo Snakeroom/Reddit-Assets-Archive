@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ChatMessageInput~MembershipPaywallPage~RichTextEditor.47e45525f9a56b584145.js
-// Retrieved at 8/29/2022, 8:10:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ChatMessageInput~MembershipPaywallPage~RichTextEditor.1b113512b928bac19818.js
+// Retrieved at 8/30/2022, 9:40:06 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ChatMessageInput~MembershipPaywallPage~RichTextEditor"], {
 		"./node_modules/draft-js/dist/Draft.css": function(e, t, n) {},
@@ -7123,8 +7123,8 @@
 						headerText: s.fbt._("Switch to Markdown", null, {
 							hk: "3zGkKa"
 						}),
-						modalText: a === We.a.Comment ? s.fbt._("Switching to markdown will remove any images or gifs from your comment.", null, {
-							hk: "371g48"
+						modalText: a === We.a.Comment ? s.fbt._("Switching to markdown will remove any image or GIF from your comment.", null, {
+							hk: "3v46Jt"
 						}) : s.fbt._("Switching to markdown will remove any images, gifs or videos from your post.", null, {
 							hk: "3rlwkB"
 						}),
@@ -8380,4 +8380,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatMessageInput~MembershipPaywallPage~RichTextEditor.47e45525f9a56b584145.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatMessageInput~MembershipPaywallPage~RichTextEditor.1b113512b928bac19818.js.map

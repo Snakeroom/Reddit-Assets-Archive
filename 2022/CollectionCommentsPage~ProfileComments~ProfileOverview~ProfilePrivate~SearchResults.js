@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~SearchResults.9d8a40fba34bc79d1074.js
-// Retrieved at 8/29/2022, 7:20:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~SearchResults.b287dbead86063987802.js
+// Retrieved at 8/30/2022, 9:40:06 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~SearchResults"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -653,7 +653,7 @@
 					let {
 						apiContext: o
 					} = s;
-					n().features.comments.models[e] && (await Object(m.k)(o(), e)).ok && t((e => async t => {
+					n().features.comments.models[e] && (await Object(m.l)(o(), e)).ok && t((e => async t => {
 						t(C({
 							commentId: e
 						}))
@@ -665,7 +665,7 @@
 					if (!Object(v.Q)(n())) return void t(Object(a.i)(l.a.LOGIN_MODAL_ID));
 					const i = n().features.comments.models[e];
 					if (!i) return;
-					const d = i.isLocked ? m.m : m.f;
+					const d = i.isLocked ? m.n : m.g;
 					t(Object(x.j)({
 						[e]: {
 							isLocked: !i.isLocked
@@ -682,7 +682,7 @@
 							isLocked: i.isLocked
 						}
 					}))
-				}, _ = Object(r.a)(g.I), y = e => async (t, n, o) => {
+				}, _ = Object(r.a)(g.J), y = e => async (t, n, o) => {
 					let {
 						apiContext: r,
 						gqlContext: i
@@ -736,7 +736,7 @@
 							isRemoved: !t,
 							isSpam: t
 						}
-					})), (Object(f.a)(l) ? await Object(m.h)(a(), e, t) : await Object(m.i)(i(), e, t)).ok ? n(Object(c.f)({
+					})), (Object(f.a)(l) ? await Object(m.i)(a(), e, t) : await Object(m.j)(i(), e, t)).ok ? n(Object(c.f)({
 						kind: h.b.SuccessMod,
 						text: t ? s.fbt._("comment has been marked as spam", null, {
 							hk: "4fQaFM"
@@ -758,7 +758,7 @@
 					} = o;
 					const i = n().features.comments.models[e];
 					if (!i) return;
-					const a = i.ignoreReports ? m.l : m.e;
+					const a = i.ignoreReports ? m.m : m.f;
 					t(Object(x.j)({
 						[e]: {
 							ignoreReports: !i.ignoreReports
@@ -824,8 +824,8 @@
 							isStickied: !1
 						}
 					}));
-					const b = Object(m.c)(c(), e, t),
-						f = Object(m.d)(c(), e, !!n),
+					const b = Object(m.d)(c(), e, t),
+						f = Object(m.e)(c(), e, !!n),
 						v = [b];
 					(n || !n && e === h) && v.push(f), (await Promise.all(v)).every(e => e.ok) ? n && s(_({
 						id: e,
@@ -3888,4 +3888,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~SearchResults.9d8a40fba34bc79d1074.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~SearchResults.b287dbead86063987802.js.map

@@ -1,13 +1,13 @@
-// https://www.redditstatic.com/desktop2x/ModModeBanners.2b15898f1b97b93b4db6.js
-// Retrieved at 8/29/2022, 11:40:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModModeBanners.40e50b08aac0fee5dc4f.js
+// Retrieved at 8/30/2022, 9:40:06 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModModeBanners"], {
 		"./src/reddit/actions/comment/moderation.ts": function(e, t, s) {
 			"use strict";
 			s.d(t, "d", (function() {
-				return O
-			})), s.d(t, "c", (function() {
 				return j
+			})), s.d(t, "c", (function() {
+				return O
 			})), s.d(t, "f", (function() {
 				return v
 			})), s.d(t, "a", (function() {
@@ -40,23 +40,23 @@
 				R = s("./src/reddit/actions/comment/index.ts"),
 				_ = s("./src/reddit/actions/comment/constants.ts");
 			const f = Object(r.a)(_.p),
-				O = e => async (t, s, o) => {
+				j = e => async (t, s, o) => {
 					let {
 						apiContext: n
 					} = o;
-					s().features.comments.models[e] && (await Object(m.k)(n(), e)).ok && t((e => async t => {
+					s().features.comments.models[e] && (await Object(m.l)(n(), e)).ok && t((e => async t => {
 						t(f({
 							commentId: e
 						}))
 					})(e))
-				}, j = e => async (t, s, n) => {
+				}, O = e => async (t, s, n) => {
 					let {
 						apiContext: r
 					} = n;
 					if (!Object(h.Q)(s())) return void t(Object(d.i)(l.a.LOGIN_MODAL_ID));
 					const a = s().features.comments.models[e];
 					if (!a) return;
-					const i = a.isLocked ? m.m : m.f;
+					const i = a.isLocked ? m.n : m.g;
 					t(Object(R.j)({
 						[e]: {
 							isLocked: !a.isLocked
@@ -73,7 +73,7 @@
 							isLocked: a.isLocked
 						}
 					}))
-				}, v = Object(r.a)(_.I), k = e => async (t, s, n) => {
+				}, v = Object(r.a)(_.J), k = e => async (t, s, n) => {
 					let {
 						apiContext: r,
 						gqlContext: a
@@ -127,7 +127,7 @@
 							isRemoved: !t,
 							isSpam: t
 						}
-					})), (Object(g.a)(l) ? await Object(m.h)(d(), e, t) : await Object(m.i)(a(), e, t)).ok ? s(Object(c.f)({
+					})), (Object(g.a)(l) ? await Object(m.i)(d(), e, t) : await Object(m.j)(a(), e, t)).ok ? s(Object(c.f)({
 						kind: b.b.SuccessMod,
 						text: t ? o.fbt._("comment has been marked as spam", null, {
 							hk: "4fQaFM"
@@ -149,7 +149,7 @@
 					} = n;
 					const a = s().features.comments.models[e];
 					if (!a) return;
-					const d = a.ignoreReports ? m.l : m.e;
+					const d = a.ignoreReports ? m.m : m.f;
 					t(Object(R.j)({
 						[e]: {
 							ignoreReports: !a.ignoreReports
@@ -215,8 +215,8 @@
 							isStickied: !1
 						}
 					}));
-					const x = Object(m.c)(c(), e, t),
-						g = Object(m.d)(c(), e, !!s),
+					const x = Object(m.d)(c(), e, t),
+						g = Object(m.e)(c(), e, !!s),
 						h = [x];
 					(s || !s && e === b) && h.push(g), (await Promise.all(h)).every(e => e.ok) ? s && o(v({
 						id: e,
@@ -492,14 +492,14 @@
 				R = s("./src/reddit/icons/svgs/ChevronDown/index.tsx"),
 				_ = s("./src/reddit/icons/svgs/ChevronUp/index.tsx"),
 				f = s("./src/reddit/icons/svgs/Clock/index.tsx"),
-				O = s("./src/reddit/icons/svgs/Undo/index.tsx"),
-				j = s("./src/reddit/selectors/tooltip.ts"),
+				j = s("./src/reddit/icons/svgs/Undo/index.tsx"),
+				O = s("./src/reddit/selectors/tooltip.ts"),
 				v = s("./src/reddit/components/Reports/SnoozableReport/index.m.less"),
 				k = s.n(v);
 			const {
 				fbt: E
 			} = s("./node_modules/fbt/lib/FbtPublic.js"), C = (e, t) => `SnoozableReport--${t}--${e}`, N = Object(a.b)(() => Object(d.c)({
-				isDropdownOpen: (e, t) => Object(j.b)(C(t.reason, t.reportedThingId))(e)
+				isDropdownOpen: (e, t) => Object(O.b)(C(t.reason, t.reportedThingId))(e)
 			}), (e, t) => ({
 				openDropdown: () => e(Object(m.h)({
 					tooltipId: C(t.reason, t.reportedThingId)
@@ -545,7 +545,7 @@
 						onClick: this.onSnoozeButtonClick
 					}, n.a.createElement("div", {
 						className: k.a.SnoozeButtonContent
-					}, a ? n.a.createElement(n.a.Fragment, null, n.a.createElement(O.a, null), E._("Undo snoozing reports from this user", null, {
+					}, a ? n.a.createElement(n.a.Fragment, null, n.a.createElement(j.a, null), E._("Undo snoozing reports from this user", null, {
 						hk: "4iqfWB"
 					})) : n.a.createElement(n.a.Fragment, null, n.a.createElement(f.a, null), E._("Snooze reports from this user for 7 days", null, {
 						hk: "4cRFyG"
@@ -683,4 +683,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModModeBanners.2b15898f1b97b93b4db6.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModModeBanners.40e50b08aac0fee5dc4f.js.map
