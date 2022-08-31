@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModerationPages.45ac603145a47c0f5605.js
-// Retrieved at 8/31/2022, 12:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModerationPages.3999fe7f91b70b31cead.js
+// Retrieved at 8/31/2022, 1:50:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModerationPages", "CollectionCommentsPage~CommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~RpanListingUnit~S~5809214e", "CommentsPage~Governance~Reddit~ReportFlow~Subreddit~reddit-components-BlankPost~reddit-components-Cl~5351df81", "PostCreation~Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~r~4c415e24", "Governance~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compo~bd4baca2", "Governance~ModListing~Reddit~ReportFlow~Subreddit", "Governance~ModListing~Reddit~Subreddit", "Governance~Reddit~SubredditForkingCTA"], {
 		"./src/chat/controls/Svg/index.m.less": function(e, t, n) {
@@ -66219,7 +66219,7 @@
 									hk: "1IngsO"
 								}),
 								onClick: this.onClickAutomodConfig,
-								path: `${e.subreddit.url}about/wiki/config/automoderator`
+								path: `${e.subreddit.url}about/wiki/config/automoderator/`
 							}))), t && i.a.createElement("div", {
 								className: ne.a.navSection
 							}, i.a.createElement("div", {
@@ -66285,7 +66285,7 @@
 									hk: "wShFl"
 								}),
 								onClick: this.onClickWikiPages,
-								path: `${U.a.redditUrl}${e.subreddit.url}about/wiki/index`
+								path: `${U.a.redditUrl}${e.subreddit.url}about/wiki/index/`
 							}), e.moderatorPermissions.config && !e.isProfile && i.a.createElement(oe.b, {
 								label: p.fbt._("Community settings", null, {
 									hk: "2xOUK6"
@@ -74960,4 +74960,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.45ac603145a47c0f5605.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.3999fe7f91b70b31cead.js.map
