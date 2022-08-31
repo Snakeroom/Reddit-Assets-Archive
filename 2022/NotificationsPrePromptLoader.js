@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/NotificationsPrePromptLoader.0e36375cb60cd9a27668.js
-// Retrieved at 8/31/2022, 2:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/NotificationsPrePromptLoader.b56d38c02d7355c4620b.js
+// Retrieved at 8/31/2022, 6:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["NotificationsPrePromptLoader"], {
 		"./src/reddit/components/NotificationsPrePrompt/index.m.less": function(e, n, t) {
@@ -26,7 +26,7 @@
 					experimentEligibilitySelector: f.a,
 					experimentName: u.Gb
 				});
-				return !Object(u.rg)(n) && n
+				return !Object(u.qg)(n) && n
 			}
 			var p, m = t("./src/reddit/components/NotificationsPrePrompt/index.m.less"),
 				_ = t.n(m);
@@ -48,7 +48,7 @@
 					t = Object(c.d)(),
 					[r, f] = Object(o.useState)(),
 					m = Object(c.e)(l),
-					j = Object(o.useCallback)(() => m === u.hd.ThreeSeconds ? p.ThreeSec : m === u.hd.FiveSeconds ? p.FiveSec : p.TenSec, [m]);
+					j = Object(o.useCallback)(() => m === u.gd.ThreeSeconds ? p.ThreeSec : m === u.gd.FiveSeconds ? p.FiveSec : p.TenSec, [m]);
 				return Object(o.useEffect)(() => {
 					if (m) {
 						const e = j();
@@ -85,15 +85,15 @@
 			})), t.d(n, "c", (function() {
 				return j
 			})), t.d(n, "b", (function() {
-				return h
-			})), t.d(n, "i", (function() {
 				return v
-			})), t.d(n, "a", (function() {
+			})), t.d(n, "i", (function() {
 				return y
+			})), t.d(n, "a", (function() {
+				return h
 			})), t.d(n, "n", (function() {
-				return x
-			})), t.d(n, "o", (function() {
 				return g
+			})), t.d(n, "o", (function() {
+				return x
 			})), t.d(n, "h", (function() {
 				return S
 			})), t.d(n, "g", (function() {
@@ -179,7 +179,7 @@
 					source: "notification",
 					correlationId: void 0
 				}),
-				h = (e, n) => t => ({
+				v = (e, n) => t => ({
 					...o.n(t),
 					action: a(e),
 					email: {
@@ -188,7 +188,7 @@
 					noun: "email",
 					source: "email_app_settings"
 				}),
-				v = (e, n) => t => ({
+				y = (e, n) => t => ({
 					...o.n(t),
 					action: a(e),
 					notification: {
@@ -197,7 +197,7 @@
 					noun: "notification",
 					source: "notification_app_settings"
 				}),
-				y = e => n => ({
+				h = e => n => ({
 					...o.n(n),
 					source: "email_app_settings",
 					action: a(e),
@@ -206,7 +206,7 @@
 						type: "all"
 					}
 				}),
-				x = (e, n, t) => i => ({
+				g = (e, n, t) => i => ({
 					...o.n(i),
 					action: "set_frequency",
 					noun: t,
@@ -216,7 +216,7 @@
 						name: n.toLowerCase()
 					}
 				}),
-				g = () => e => ({
+				x = () => e => ({
 					...o.n(e),
 					action: c.c.View,
 					noun: "screen",
@@ -240,4 +240,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/NotificationsPrePromptLoader.0e36375cb60cd9a27668.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/NotificationsPrePromptLoader.b56d38c02d7355c4620b.js.map

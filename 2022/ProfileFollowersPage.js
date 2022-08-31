@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfileFollowersPage.156f3460ff1e331d4d34.js
-// Retrieved at 8/31/2022, 2:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfileFollowersPage.863743adce7857c33c14.js
+// Retrieved at 8/31/2022, 6:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfileFollowersPage", "ProfileFollowersAction"], {
 		"./node_modules/lodash/take.js": function(e, t, s) {
@@ -313,9 +313,9 @@
 					error: H,
 					pending: W
 				});
-			const z = {};
-			var V = function() {
-				let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : z,
+			const V = {};
+			var z = function() {
+				let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : V,
 					t = arguments.length > 1 ? arguments[1] : void 0;
 				switch (t.type) {
 					case F.b: {
@@ -391,7 +391,7 @@
 				},
 				Z = Object(A.c)({
 					api: D,
-					fetchedTokens: V,
+					fetchedTokens: z,
 					ids: G,
 					loadMore: Y
 				});
@@ -1002,7 +1002,7 @@
 						return e
 				}
 			};
-			var z = function() {
+			var V = function() {
 					let e = arguments.length > 0 && void 0 !== arguments[0] && arguments[0],
 						t = arguments.length > 1 ? arguments[1] : void 0;
 					switch (t.type) {
@@ -1015,9 +1015,9 @@
 							return e
 					}
 				},
-				V = Object(j.c)({
+				z = Object(j.c)({
 					error: D,
-					pending: z
+					pending: V
 				});
 			var K = function() {
 					let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : null,
@@ -1035,7 +1035,7 @@
 					}
 				},
 				G = Object(j.c)({
-					api: V,
+					api: z,
 					result: K
 				});
 			const q = {};
@@ -1528,8 +1528,8 @@
 				B = s("./src/reddit/icons/svgs/Premium/index.tsx"),
 				W = s("./src/reddit/models/Gold/Award.ts"),
 				D = s("./src/reddit/models/User/index.ts"),
-				z = s("./src/reddit/components/HumanDate/index.tsx"),
-				V = s("./src/reddit/components/ProfileIdCard/AwardedLastMonth.tsx"),
+				V = s("./src/reddit/components/HumanDate/index.tsx"),
+				z = s("./src/reddit/components/ProfileIdCard/AwardedLastMonth.tsx"),
 				K = s("./src/reddit/components/ProfileIdCard/UserProfileOverview/UserSnoovatar/index.tsx"),
 				G = s("./src/reddit/actions/inContextModeration.ts"),
 				q = s("./src/reddit/actions/modal.ts"),
@@ -1682,7 +1682,7 @@
 					to: `/user/${e.userName}/`
 				}, e.title || e.userName), e.user.isGold && n.a.createElement(S.a, {
 					to: "/premium"
-				}, n.a.createElement(be, null)), e.user.isEmployee && n.a.createElement(k.a, null)), n.a.createElement(ve, null, n.a.createElement(xe, null, `u/${e.userName}`, n.a.createElement(ge, null, "•")), n.a.createElement(xe, null, (e.user.createdUtc || e.user.created) && n.a.createElement(z.d, {
+				}, n.a.createElement(be, null)), e.user.isEmployee && n.a.createElement(k.a, null)), n.a.createElement(ve, null, n.a.createElement(xe, null, `u/${e.userName}`, n.a.createElement(ge, null, "•")), n.a.createElement(xe, null, (e.user.createdUtc || e.user.created) && n.a.createElement(V.d, {
 					seconds: e.user.createdUtc || e.user.created
 				})))),
 				Pe = e => {
@@ -1803,7 +1803,7 @@
 						userName: x
 					})), n.a.createElement(Pe, {
 						user: g
-					}), M && n.a.createElement(V.a, {
+					}), M && n.a.createElement(z.a, {
 						recentAwardings: M,
 						topAwardIcon: v,
 						username: x
@@ -3378,8 +3378,8 @@
 				B = s("./src/reddit/components/Scroller/Simple.m.less"),
 				W = s.n(B);
 			const D = F.g,
-				z = 5 * p.L,
-				V = 3,
+				V = 5 * p.L,
+				z = 3,
 				K = Object(m.c)({
 					isOverlayOpen: L.i
 				}),
@@ -3618,7 +3618,7 @@
 									cb: s,
 									args: [!1]
 								}))
-							}), this.itemsInViewport = n, this.canFocusItems = t, this.focusedChild = i, this.primaryChild = o, this.measurementsInvalid = !1, this.needsToPauseViewportItems = !1, t ? null === this.unmountItemsIdleId && (this.unmountItemsIdleId = Object(u.requestIdleCallback)(this.unmountItemsWhileIdle)) : (this.resetCanFocusTimer = setTimeout(this.resetScrollFramerateAndFocus, z), null !== this.unmountItemsIdleId && (Object(u.cancelIdleCallback)(this.unmountItemsIdleId), this.unmountItemsIdleId = null)), this.props.onScroll && this.props.onScroll({
+							}), this.itemsInViewport = n, this.canFocusItems = t, this.focusedChild = i, this.primaryChild = o, this.measurementsInvalid = !1, this.needsToPauseViewportItems = !1, t ? null === this.unmountItemsIdleId && (this.unmountItemsIdleId = Object(u.requestIdleCallback)(this.unmountItemsWhileIdle)) : (this.resetCanFocusTimer = setTimeout(this.resetScrollFramerateAndFocus, V), null !== this.unmountItemsIdleId && (Object(u.cancelIdleCallback)(this.unmountItemsIdleId), this.unmountItemsIdleId = null)), this.props.onScroll && this.props.onScroll({
 								getVisibleItemsInViewport: () => this.getItemsInViewportWithFilter(this.visibleChildRefFilter),
 								primaryChild: this.primaryChild ? this.childMap.get(this.primaryChild) : void 0
 							}), this.timeoutForUpdateIdleCallback = 4 * ie, this.schedulePopulateRenderableChildrenWhenIdle(), this.pendingScollHandlerRead = null
@@ -3632,7 +3632,7 @@
 								const r = this.getChildRectangle(s);
 								r && this.elementIsUnmountable(r) && s.loaded && t.push(s)
 							}), !t.length) return;
-						const s = Math.min(Math.ceil(e.timeRemaining() / V), t.length),
+						const s = Math.min(Math.ceil(e.timeRemaining() / z), t.length),
 							r = [];
 						for (let n = 0; n < s; n++) {
 							const e = t[n];
@@ -3709,7 +3709,7 @@
 					this.fpsMeter = this.props.trackingName ? w({
 						fn: this.handleScroll,
 						subscriber: this.sendFPSData,
-						timeout: z
+						timeout: V
 					}) : O(this.handleScroll), this.scrollContainer && this.scrollContainer.addEventListener("scroll", this.fpsMeter.eventHandler), window.addEventListener("resize", this.handleResize)
 				}
 				cleanupScrollHandler() {
@@ -4087,7 +4087,7 @@
 				const t = Object(i.f)().getState(),
 					s = Object(b.a)(t, Object(a.c)());
 				if (e.isD2xPdpSideRailRecsEnabled) {
-					const t = e.d2xPdpSideRailRecsVariant === u.Wc.GreyRereddit || e.d2xPdpSideRailRecsVariant === u.Wc.GreyRedditNoNsfw || e.d2xPdpSideRailRecsVariant === u.Wc.LargeImagePreview ? e.reredditButtons : [];
+					const t = e.d2xPdpSideRailRecsVariant === u.Vc.GreyRereddit || e.d2xPdpSideRailRecsVariant === u.Vc.GreyRedditNoNsfw || e.d2xPdpSideRailRecsVariant === u.Vc.LargeImagePreview ? e.reredditButtons : [];
 					return n.a.createElement(_, {
 						reredditContent: t,
 						countryCode: e.countryCode
@@ -6183,11 +6183,11 @@
 				d = s("./node_modules/reselect/es/index.js");
 			const l = Object(d.a)(e => Object(n.c)(e, {
 					experimentEligibilitySelector: e => Object(a.h)(e) && Object(i.f)(e),
-					experimentName: r.sc
+					experimentName: r.rc
 				}), o.a),
 				c = Object(d.a)(e => Object(n.c)(e, {
 					experimentEligibilitySelector: e => !Object(a.h)(e) && Object(i.f)(e),
-					experimentName: r.rc
+					experimentName: r.qc
 				}), o.a),
 				u = Object(d.a)(l, c, (e, t) => e || t),
 				m = Object(d.a)(l, c, (e, t) => !(!e && !t))
@@ -6204,13 +6204,13 @@
 			const i = e => {
 					return !(Object(n.c)(e, {
 						experimentEligibilitySelector: n.a,
-						experimentName: r.ye
-					}) === r.Pd)
+						experimentName: r.xe
+					}) === r.Od)
 				},
 				o = e => Object(n.c)(e, {
 					experimentEligibilitySelector: n.a,
-					experimentName: r.ze
-				}) === r.Pd
+					experimentName: r.ye
+				}) === r.Od
 		},
 		"./src/reddit/selectors/followers.ts": function(e, t, s) {
 			"use strict";
@@ -6261,4 +6261,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileFollowersPage.156f3460ff1e331d4d34.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileFollowersPage.863743adce7857c33c14.js.map

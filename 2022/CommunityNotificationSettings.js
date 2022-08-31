@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CommunityNotificationSettings.fcb25f0bb94682e57f43.js
-// Retrieved at 8/31/2022, 5:30:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CommunityNotificationSettings.da0fff44c5f6151bd708.js
+// Retrieved at 8/31/2022, 6:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CommunityNotificationSettings"], {
 		"./node_modules/lodash/times.js": function(e, t, n) {
@@ -328,7 +328,7 @@
 						isNsfw: w,
 						isMuted: j
 					} = t,
-					I = j && c === h.Pd,
+					I = j && c === h.Od,
 					L = I ? f.b.OFF : E,
 					F = t.styles.icon || (null === (o = t.styles.legacyIcon) || void 0 === o ? void 0 : o.url),
 					M = null !== (d = t.styles.primaryColor) && void 0 !== d ? d : void 0,
@@ -360,7 +360,7 @@
 								})
 						}
 					})(L),
-					P = [{
+					U = [{
 						displayText: s.fbt._("Frequent", null, {
 							hk: "21spt7"
 						}),
@@ -417,7 +417,7 @@
 				})))), a.a.createElement(g.b, {
 					isCompactStyle: !0,
 					displayText: L,
-					options: P,
+					options: U,
 					onSelect: e => {
 						var t;
 						I ? (y.current = e.value, u(!0)) : (_(Object(O.n)(C, N, null === (t = e.value) || void 0 === t ? void 0 : t.toLowerCase())), i(C, e.value))
@@ -791,4 +791,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommunityNotificationSettings.fcb25f0bb94682e57f43.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommunityNotificationSettings.da0fff44c5f6151bd708.js.map

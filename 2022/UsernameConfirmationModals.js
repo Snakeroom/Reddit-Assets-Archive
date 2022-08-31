@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/UsernameConfirmationModals.39a5bd3d05a1de027479.js
-// Retrieved at 8/30/2022, 3:10:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/UsernameConfirmationModals.84a2d1ebe738cbc9ff01.js
+// Retrieved at 8/31/2022, 6:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["UsernameConfirmationModals"], {
 		"./src/chat/controls/Svg/index.m.less": function(e, t, n) {
@@ -191,7 +191,7 @@
 						kind: C.b.Button,
 						onClick: n,
 						priority: C.c.Primary
-					}, A()), o.a.createElement(C.a, {
+					}, B()), o.a.createElement(C.a, {
 						className: Object(h.a)(v.a.commonBtn, v.a.secondaryBtn),
 						kind: C.b.Button,
 						onClick: r,
@@ -229,13 +229,13 @@
 						kind: C.b.Button,
 						onClick: r,
 						priority: C.c.Primary
-					}, B()), o.a.createElement(C.a, {
+					}, T()), o.a.createElement(C.a, {
 						className: Object(h.a)(v.a.commonBtn, v.a.secondaryBtn),
 						disabled: n,
 						kind: C.b.Button,
 						onClick: c,
 						priority: C.c.Plain
-					}, S())))
+					}, w())))
 				},
 				y = e => {
 					let {
@@ -312,44 +312,44 @@
 						kind: C.b.Button,
 						onClick: r,
 						priority: C.c.Primary
-					}, t ? U() : T(d)), o.a.createElement(C.a, {
+					}, t ? S() : U(d)), o.a.createElement(C.a, {
 						className: Object(h.a)(v.a.commonBtn, v.a.secondaryBtn),
 						kind: C.b.Button,
 						onClick: c,
 						priority: C.c.Plain
-					}, w())))
+					}, A())))
 				},
 				M = () => a.fbt._("Change username", null, {
 					hk: "3l2BGo"
 				}),
-				U = () => a.fbt._("Continue", null, {
+				S = () => a.fbt._("Continue", null, {
 					hk: "1zlSIC"
 				}),
-				T = e => a.fbt._("Continue as {username}", [a.fbt._param("username", e)], {
+				U = e => a.fbt._("Continue as {username}", [a.fbt._param("username", e)], {
 					hk: "2vmCbf"
 				}),
-				S = () => a.fbt._("Go Back", null, {
+				w = () => a.fbt._("Go Back", null, {
 					hk: "3hUBIW"
 				}),
-				A = () => a.fbt._("Keep this Name", null, {
+				B = () => a.fbt._("Keep this Name", null, {
 					hk: "jsI7k"
 				}),
-				B = () => a.fbt._("Yes, Keep this Name", null, {
+				T = () => a.fbt._("Yes, Keep this Name", null, {
 					hk: "4iElQQ"
 				}),
-				w = () => a.fbt._("Log in to a different account", null, {
+				A = () => a.fbt._("Log in to a different account", null, {
 					hk: "2BmtHB"
 				});
 			var I = n("./src/reddit/components/Settings/ChangeUsernameModal.tsx"),
 				R = n("./src/reddit/components/Settings/modalIds.ts"),
 				L = n("./src/reddit/constants/parameters.ts"),
 				P = n("./src/reddit/contexts/ApiContext.tsx"),
-				V = n("./src/reddit/endpoints/user/updateUsername.ts"),
-				H = n("./src/reddit/helpers/trackers/changeUsername.ts"),
-				D = n("./src/reddit/helpers/trackers/onboarding.ts"),
-				W = n("./src/reddit/hooks/useTracking.ts"),
-				K = n("./src/reddit/models/Toast/index.ts"),
-				F = n("./src/reddit/selectors/activeModalId.ts");
+				H = n("./src/reddit/endpoints/user/updateUsername.ts"),
+				D = n("./src/reddit/helpers/trackers/changeUsername.ts"),
+				W = n("./src/reddit/helpers/trackers/onboarding.ts"),
+				K = n("./src/reddit/hooks/useTracking.ts"),
+				F = n("./src/reddit/models/Toast/index.ts"),
+				V = n("./src/reddit/selectors/activeModalId.ts");
 			const G = e => e && e.fields && e.fields.length ? e.fields.map(e => {
 					let {
 						msg: t
@@ -358,13 +358,13 @@
 				}).join(", ") : (() => a.fbt._("Sorry, something went wrong. Try again later.", null, {
 					hk: "3HcWgL"
 				}))(),
-				Y = Object(c.c)({
-					changeUsernameModalOpen: Object(F.b)(R.b),
-					confirmSaveUsernameModalOpen: Object(F.b)(R.d),
-					interceptActionModalOpen: Object(F.b)(R.e),
-					welcomeBackModalOpen: Object(F.b)(R.q)
+				z = Object(c.c)({
+					changeUsernameModalOpen: Object(V.b)(R.b),
+					confirmSaveUsernameModalOpen: Object(V.b)(R.d),
+					interceptActionModalOpen: Object(V.b)(R.e),
+					welcomeBackModalOpen: Object(V.b)(R.q)
 				}),
-				z = Object(r.b)(Y, (e, t) => ({
+				Y = Object(r.b)(z, (e, t) => ({
 					closeModal: () => {
 						e(Object(p.f)()), e(Object(u.d)())
 					},
@@ -392,7 +392,7 @@
 					saveUsernameError: t => {
 						e(Object(b.f)({
 							duration: b.a,
-							kind: K.b.Error,
+							kind: F.b.Error,
 							text: t
 						}))
 					},
@@ -402,7 +402,7 @@
 						}, b.a)
 					}
 				})),
-				X = Object(i.a)(Object(P.b)(z(e => {
+				X = Object(i.a)(Object(P.b)(Y(e => {
 					let {
 						apiContext: t,
 						changeUsernameModalOpen: n,
@@ -414,7 +414,7 @@
 						goBack: m,
 						interceptActionModalOpen: u,
 						isNameEditable: p,
-						isOneTapAutoSession: b,
+						isOneTapSession: b,
 						isResponsiveSettingsEnabled: h,
 						logOutAndOpenLoginModal: f,
 						openInterceptActionModal: g,
@@ -423,57 +423,57 @@
 						username: _,
 						welcomeBackModalOpen: O
 					} = e;
-					const [N, v] = Object(s.useState)(_ || ""), [x, M] = Object(s.useState)(!1), U = Object(W.a)(), T = Object(s.useCallback)(async () => {
+					const [N, v] = Object(s.useState)(_ || ""), [x, M] = Object(s.useState)(!1), S = Object(K.a)(), U = Object(s.useCallback)(async () => {
 						M(!0);
-						const e = await Object(V.a)(t(), N);
-						e.ok ? (U(Object(H.j)()), E(N, _)) : (C(G(e.error)), M(!1))
-					}, [t, _, U, C, E, N]);
+						const e = await Object(H.a)(t(), N);
+						e.ok ? (S(Object(D.j)()), E(N, _)) : (C(G(e.error)), M(!1))
+					}, [t, _, S, C, E, N]);
 					return o.a.createElement(s.Fragment, null, O && o.a.createElement(y, {
 						isNameEditable: p,
 						isResponsive: h,
 						onPrimaryButtonClick: () => {
-							p ? g() : r(), U(Object(D.e)(D.a.CONTINUE))
+							p ? g() : r(), S(Object(W.e)(W.a.CONTINUE))
 						},
 						onSecondaryButtonClick: () => {
-							f(), U(Object(D.e)(D.a.LOGIN_ANOTHER_ACCOUNT))
+							f(), S(Object(W.e)(W.a.LOGIN_ANOTHER_ACCOUNT))
 						},
-						onTooltipView: () => U(Object(D.F)()),
+						onTooltipView: () => S(Object(W.F)()),
 						onView: () => {
-							U(Object(D.f)())
+							S(Object(W.f)())
 						},
 						username: N
 					}), u && o.a.createElement(j, {
 						isResponsive: h,
 						onPrimaryButtonClick: () => {
-							d(), U(Object(D.B)(D.b.KEEP_USERNAME))
+							d(), S(Object(W.B)(W.b.KEEP_USERNAME))
 						},
 						onSecondaryButtonClick: () => {
-							c(), U(Object(D.B)(D.b.CHANGE_USERNAME))
+							c(), S(Object(W.B)(W.b.CHANGE_USERNAME))
 						},
-						onView: () => U(Object(D.C)()),
+						onView: () => S(Object(W.C)()),
 						username: N
 					}), i && o.a.createElement(k, {
 						isResponsive: h,
 						isSaving: x,
 						onPrimaryButtonClick: () => {
-							T(), U(Object(D.D)(D.c.YES_KEEP_USERNAME))
+							U(), S(Object(W.D)(W.c.YES_KEEP_USERNAME))
 						},
 						onSecondaryButtonClick: () => {
-							m(), U(Object(D.D)(D.c.GO_BACK))
+							m(), S(Object(W.D)(W.c.GO_BACK))
 						},
-						onView: () => U(Object(D.E)()),
+						onView: () => S(Object(W.E)()),
 						username: N
 					}), n && o.a.createElement(I.a, {
 						initialUsername: _ || "",
 						isResponsive: h,
 						onClose: r,
 						onContinue: () => {
-							l(), U(Object(H.e)())
+							l(), S(Object(D.e)())
 						},
-						oneTapAutoVariant: !!b,
-						onSelect: () => U(Object(H.f)()),
+						isOneTapSession: b,
+						onSelect: () => S(Object(D.f)()),
 						onUsernameChange: v,
-						onView: () => U(Object(H.i)()),
+						onView: () => S(Object(D.i)()),
 						title: a.fbt._("Change username", null, {
 							hk: "17XB7v"
 						}),
@@ -506,7 +506,7 @@
 			var N = Object(p.b)(e => {
 					const {
 						apiContext: t,
-						oneTapAutoVariant: n,
+						isOneTapSession: n,
 						onSuggestedUsernameClick: s
 					} = e, [o, l] = Object(r.useState)([0, 0]), [m, u] = Object(r.useState)([]), [p, g] = Object(r.useState)(!1), N = Object(r.useCallback)(async () => {
 						g(!0), setTimeout(() => {
@@ -544,7 +544,7 @@
 						N()
 					}, []), c.a.createElement(c.a.Fragment, null, c.a.createElement("div", {
 						className: Object(i.a)(C.a.refreshContainer, {
-							[C.a.oneTapAutoVariantContainer]: n
+							[C.a["m-onetap"]]: n
 						})
 					}, n ? a.fbt._("Need inspiration? Here’s some available usernames:", null, {
 						hk: "2yXDBw"
@@ -557,7 +557,7 @@
 						className: C.a.suggestedUsernames
 					}, m.slice(...o).map(e => c.a.createElement("li", {
 						className: Object(i.a)(C.a.suggestedUsername, {
-							[C.a.oneTapAutoVariantUsername]: n
+							[C.a["m-onetap"]]: n
 						}),
 						key: e,
 						onClick: () => s(e)
@@ -569,14 +569,14 @@
 				k = n("./src/reddit/components/ChangeUsernameTooltip/index.m.less"),
 				y = n.n(k),
 				M = n("./src/reddit/components/Settings/accountModals.m.less"),
-				U = n.n(M);
-			const T = 500,
-				S = 20,
-				A = 3,
-				B = () => a.fbt._("Great name! It's not taken, so it's all yours.", null, {
+				S = n.n(M);
+			const U = 500,
+				w = 20,
+				B = 3,
+				T = () => a.fbt._("Great name! It's not taken, so it's all yours.", null, {
 					hk: "42rpS"
 				}),
-				w = () => a.fbt._("Sorry, this username is taken. Try another.", null, {
+				A = () => a.fbt._("Sorry, this username is taken. Try another.", null, {
 					hk: "2HkykK"
 				}),
 				I = () => a.fbt._("Username must be between 3 and 20 characters.", null, {
@@ -593,9 +593,9 @@
 					error: null,
 					state: l.a.Valid
 				};
-			class V extends c.a.Component {
+			class H extends c.a.Component {
 				constructor() {
-					super(...arguments), this.state = L, this.checkUsername = async e => e.length < A || e.length > S ? {
+					super(...arguments), this.state = L, this.checkUsername = async e => e.length < B || e.length > w ? {
 						error: I(),
 						state: l.a.Invalid
 					} : e === this.props.initialUsername ? P : await this.validateUsername(e), this.validateUsername = async e => {
@@ -605,7 +605,7 @@
 							username: e
 						});
 						return a.ok ? !0 === a.body ? P : {
-							error: w(),
+							error: A(),
 							state: l.a.Invalid
 						} : a.error && a.error.fields && a.error.fields[0] ? {
 							error: a.error.fields[0].msg,
@@ -623,7 +623,7 @@
 							error: t,
 							state: n
 						})
-					}, this.debounceCheckUsername = o()(this.callCheckUsername, T), this.handleContinue = async () => {
+					}, this.debounceCheckUsername = o()(this.callCheckUsername, U), this.handleContinue = async () => {
 						const {
 							username: e
 						} = this.props, {
@@ -653,7 +653,7 @@
 					const {
 						initialUsername: e,
 						isResponsive: t,
-						oneTapAutoVariant: n,
+						isOneTapSession: n,
 						title: s,
 						username: o
 					} = this.props, {
@@ -661,10 +661,10 @@
 						state: d
 					} = this.state, m = d === l.a.Valid, u = o === e;
 					return c.a.createElement(j.a, {
-						bodyClassName: U.a.changeUsernameModalBody,
-						className: Object(i.a)(U.a.changeUsernameModalContainer, {
-							[U.a["m-responsive"]]: t,
-							[U.a.oneTapAutoVariantContainer]: n
+						bodyClassName: S.a.changeUsernameModalBody,
+						className: Object(i.a)(S.a.changeUsernameModalContainer, {
+							[S.a["m-responsive"]]: t,
+							[S.a["m-onetap"]]: n
 						}),
 						onClose: n ? void 0 : this.onCloseModal,
 						title: n ? a.fbt._("Create your username", null, {
@@ -673,27 +673,27 @@
 						description: n ? a.fbt._("Reddit is anonymous, so your username is what you’ll go by here. Choose wisely—because once you get a name, you can’t change it.", null, {
 							hk: "DwpIM"
 						}) : void 0,
-						descriptionClassName: n ? U.a.oneTapAutoVariantModalDesc : void 0
+						descriptionClassName: n ? S.a.oneTapSessionModalDesc : void 0
 					}, c.a.createElement(l.b, {
-						className: Object(i.a)(U.a.input, U.a.usernameInput, {
-							[U.a.oneTapAutoVariantInput]: n
+						className: Object(i.a)(S.a.input, S.a.usernameInput, {
+							[S.a["m-input"]]: n
 						}),
 						errorMessage: r || void 0,
 						onChange: this.updateUsernameField,
 						spellCheck: !1,
-						successMessage: m && !u && B() || void 0,
+						successMessage: m && !u && T() || void 0,
 						value: o,
 						validityState: d || void 0
 					}), c.a.createElement(N, {
-						oneTapAutoVariant: n,
+						isOneTapSession: n,
 						onSuggestedUsernameClick: this.onSuggestedUsernameClickHandler
 					}), c.a.createElement("div", {
 						className: Object(i.a)(y.a.buttonWrapper, {
-							[U.a.buttonWrapper]: n
+							[S.a.buttonWrapper]: n
 						})
 					}, c.a.createElement(v.l, {
 						className: Object(i.a)(y.a.commonBtn, y.a.primaryBtn, {
-							[U.a.oneTapAutoVariantBtn]: n
+							[S.a.oneTapSessionBtn]: n
 						}),
 						disabled: !m,
 						onClick: this.handleContinue
@@ -702,7 +702,7 @@
 					}))))
 				}
 			}
-			t.a = Object(p.b)(V)
+			t.a = Object(p.b)(H)
 		},
 		"./src/reddit/components/Settings/ModalContainer/index.m.less": function(e, t, n) {
 			e.exports = {
@@ -762,17 +762,17 @@
 			e.exports = {
 				suggestedUsernames: "_1E2kAa0tJoEy_JkCDssPe3",
 				suggestedUsername: "YfJBUmZCRoeR0KkYmxUA5",
-				oneTapAutoVariantUsername: "_16Y0COWUKECyI2FCqdK9Ju",
+				"m-onetap": "_Ke5dc1Swy7sLfE4lbPlL",
+				mOnetap: "_Ke5dc1Swy7sLfE4lbPlL",
 				refreshContainer: "_2IjK-L5x_zM-2yHDk5Kkym",
 				refreshButton: "_1Z5t703wkMd44jwxPP0cIw",
-				refreshIcon: "_27lXx2em8b5a9bWaBDnNke",
-				oneTapAutoVariantContainer: "VAqpsps4Wa-oM5htcaJnS"
+				refreshIcon: "_27lXx2em8b5a9bWaBDnNke"
 			}
 		},
 		"./src/reddit/components/Settings/accountModals.m.less": function(e, t, n) {
 			e.exports = {
 				buttonWrapper: "_3bwuX1FpzX5u_wA4guPMPr",
-				oneTapAutoVariantBtn: "_3vIFIa20TgFryEKEuKuhMn",
+				oneTapSessionBtn: "_1QLPcfcbQzhg3-aBUAj_8y",
 				input: "RrqK6usE8PEMhLL7FD-iE",
 				checkboxLabel: "OBgeR3lNas33iO_RB1buN",
 				primaryBtn: "_1ZuJ4cYdwXBjhOxsWSpt_J",
@@ -782,17 +782,17 @@
 				mResponsive: "_1RdzLLJTzHMuKTT451B8mz",
 				changeUsernameModalContainer: "_9hmSLlBvZA-2tPAVajB6F",
 				confirmModalContainer: "ZdQ8dYkTCSltA50W7-IE3",
-				oneTapAutoVariantContainer: "_2hI6h1MuQOILd4WIgeRwUn",
+				"m-onetap": "_3wFXdZQtKsn7b-AVzJAEnm",
+				mOnetap: "_3wFXdZQtKsn7b-AVzJAEnm",
 				changeUsernameModalBody: "_1Yly3HtP1iwII2uUEMTTKL",
 				confirmModalBody: "_1yaWiT2tGW8c-WyQ2DxiNY",
 				confirmModalHeader: "_19OEdjo2DQZ1GMEXsY7vZ3",
 				confirmModalDescription: "JB3thd-iYucgTQHskJ_6g",
-				oneTapAutoVariantModalDesc: "_1QTfB4TH1W_1lBMHGTKMTh",
+				oneTapSessionModalDesc: "_22IqvkHuX5GDYijASUVvJo",
 				saveDescription: "_3Yj6lPp8gZJ6YcXvbva9hO",
 				confirmModalIcon: "_2nFUIwSqAux1OcismY38n4",
 				questionIcon: "pg0_xOJ41KOzSjQt9g3FB",
-				usernameInput: "_1Ti06LupexmG0XRXRqTBZQ",
-				oneTapAutoVariantInput: "_2DV-Tbc67VhL9zYZbQhgzU"
+				usernameInput: "_1Ti06LupexmG0XRXRqTBZQ"
 			}
 		},
 		"./src/reddit/endpoints/user/updateUsername.ts": function(e, t, n) {
@@ -978,4 +978,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/UsernameConfirmationModals.39a5bd3d05a1de027479.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/UsernameConfirmationModals.84a2d1ebe738cbc9ff01.js.map

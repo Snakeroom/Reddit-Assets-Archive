@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/GovernanceReleaseNotesModal.26d85aa8615d4e4f320b.js
-// Retrieved at 8/31/2022, 2:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/GovernanceReleaseNotesModal.6ed9c312b5d6e328be06.js
+// Retrieved at 8/31/2022, 6:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["GovernanceReleaseNotesModal"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -798,7 +798,7 @@
 				j = n.n(w);
 			const O = {};
 
-			function S(e) {
+			function k(e) {
 				return i.a.createElement("div", {
 					className: e.className
 				}, i.a.createElement("div", {
@@ -821,7 +821,7 @@
 					post: e.releaseNote
 				})))
 			}
-			var k = n("./src/reddit/controls/Button/index.tsx"),
+			var S = n("./src/reddit/controls/Button/index.tsx"),
 				I = n("./src/reddit/icons/svgs/ArrowRight/index.tsx"),
 				C = n("./src/reddit/components/Governance/ReleaseNotesModal/SlideChange/index.m.less"),
 				T = n.n(C);
@@ -829,12 +829,12 @@
 			function N(e) {
 				return i.a.createElement("div", {
 					className: Object(p.a)(T.a.container, e.className)
-				}, !e.isFirst && i.a.createElement(k.o, {
+				}, !e.isFirst && i.a.createElement(S.o, {
 					className: T.a.prev,
 					onClick: e.onPrevSlide
 				}, i.a.createElement(I.a, {
 					className: T.a.arrow
-				})), i.a.createElement(k.l, {
+				})), i.a.createElement(S.l, {
 					onClick: e.isLast ? e.onClose : e.onNextSlide
 				}, e.isLast ? s.fbt._("done", null, {
 					hk: "2XjG3a"
@@ -890,7 +890,7 @@
 						className: P.a.title
 					}, s.fbt._("What's New in {subredditName}?", [s.fbt._param("subredditName", this.props.subreddit.displayText)], {
 						hk: "31ALcQ"
-					})), i.a.createElement(S, {
+					})), i.a.createElement(k, {
 						releaseNote: e
 					}), i.a.createElement("div", {
 						className: P.a.controls
@@ -1093,8 +1093,8 @@
 				w = n("./src/reddit/selectors/user.ts"),
 				j = n("./src/reddit/constants/tracking.ts"),
 				O = n("./src/higherOrderComponents/withAdClickLocation/Locations.ts"),
-				S = n("./src/reddit/components/Media/ImageBox/index.m.less"),
-				k = n.n(S);
+				k = n("./src/reddit/components/Media/ImageBox/index.m.less"),
+				S = n.n(k);
 
 			function I() {
 				return (I = Object.assign || function(e) {
@@ -1111,14 +1111,14 @@
 						hk: "1DiDxV"
 					}),
 					className: Object(c.a)(e.className, {
-						[k.a.renderSmallMedia]: e.renderSmallMedia
+						[S.a.renderSmallMedia]: e.renderSmallMedia
 					}),
 					src: e.src
 				}),
 				N = e => {
-					const t = Object(c.a)(k.a.image, b.g, e.className, {
-							[k.a.mShowCentered]: e.showCentered,
-							[k.a.mShowBlurred]: e.shouldBlur
+					const t = Object(c.a)(S.a.image, b.g, e.className, {
+							[S.a.mShowCentered]: e.showCentered,
+							[S.a.mShowBlurred]: e.shouldBlur
 						}),
 						n = {};
 					e.showFull || e.isTall || (n.maxHeight = `${_.j}px`), e.isListing || e.isTall && C(e.height) || (n.maxHeight = `${_.e}px`), e.isExpando && e.maxHeight && (n.maxHeight = `${e.maxHeight}px`), e.isExpando && e.maxWidth && (n.maxWidth = `${e.maxWidth}px`);
@@ -1169,8 +1169,8 @@
 				M = e => {
 					const t = {};
 					return (!e.showFull && Object(_.L)(e.height, e.width) || e.shouldBlur) && (t.overflow = "hidden"), e.showFull || (t.maxHeight = `${_.j}px`, e.shouldBlur && (t.maxWidth = Object(_.L)(e.height, e.width) ? `${_.z}px` : `${e.width}px`)), e.showCentered && (t.margin = "0 auto"), e.isExpando && e.maxHeight && (t.maxHeight = `${e.maxHeight}px`), i.a.createElement("div", {
-						className: Object(c.a)(k.a.container, e.className, {
-							[k.a.alignLeft]: e.alignLeft
+						className: Object(c.a)(S.a.container, e.className, {
+							[S.a.alignLeft]: e.alignLeft
 						}),
 						style: t
 					}, e.children)
@@ -1244,12 +1244,12 @@
 						} : {},
 						target: "_blank",
 						rel: u.c,
-						className: k.a.imageLink
+						className: S.a.imageLink
 					}, R(r, n), n.shouldBlur && !n.isVideoThumbnail && !n.isNsfwBlockingModalEligible && i.a.createElement(h.a, {
 						isNSFW: !!n.isNSFW,
 						isSpoiler: !!n.isSpoiler
 					})), n.isListing && !n.showFull && n.height > _.j && Object(_.L)(n.height, n.width) && i.a.createElement("div", {
-						className: k.a.seeMore
+						className: S.a.seeMore
 					}, s.fbt._("see full image", null, {
 						hk: "1Qygw5"
 					})), n.isVideoThumbnail && i.a.createElement(p.a, {
@@ -1452,8 +1452,8 @@
 					shouldPause: _,
 					width: y,
 					isListing: O,
-					className: S,
-					showCentered: k,
+					className: k,
+					showCentered: S,
 					originalSource: I,
 					isPromoted: C
 				} = e, T = t && !(C && Object(c.hasAcceptableAds)()), N = Object(a.d)();
@@ -1508,7 +1508,7 @@
 
 				function A() {
 					const e = {};
-					return k && (e.margin = "0 auto"), O || (e.maxHeight = `${h.e}px`), o.a.createElement(E, {
+					return S && (e.margin = "0 auto"), O || (e.maxHeight = `${h.e}px`), o.a.createElement(E, {
 						autoplay: T,
 						className: Object(l.a)(m.a, w.a.styledVideo),
 						height: x,
@@ -1525,7 +1525,7 @@
 						onTimeUpdate: B,
 						shouldLoad: b,
 						shouldPause: _,
-						showCentered: k,
+						showCentered: S,
 						showFull: v,
 						source: f,
 						style: e,
@@ -1533,8 +1533,8 @@
 					})
 				}
 				return O ? A() : o.a.createElement("div", {
-					className: Object(l.a)(w.a.container, S, {
-						[w.a.centered]: k
+					className: Object(l.a)(w.a.container, k, {
+						[w.a.centered]: S
 					})
 				}, o.a.createElement("a", {
 					href: I,
@@ -1804,9 +1804,9 @@
 			})), n.d(t, "n", (function() {
 				return O
 			})), n.d(t, "t", (function() {
-				return S
-			})), n.d(t, "p", (function() {
 				return k
+			})), n.d(t, "p", (function() {
+				return S
 			})), n.d(t, "o", (function() {
 				return I
 			})), n.d(t, "q", (function() {
@@ -1843,8 +1843,8 @@
 				w = d.a.sub("Sub", a.a),
 				j = d.a.sup("Sup", a.a),
 				O = d.a.table("Table", a.a),
-				S = d.a.tr("Tr", a.a),
-				k = d.a.td("Tdl", a.a),
+				k = d.a.tr("Tr", a.a),
+				S = d.a.td("Tdl", a.a),
 				I = d.a.td("Tdc", a.a),
 				C = d.a.td("Tdr", a.a),
 				T = d.a.th("Thl", a.a),
@@ -1915,8 +1915,8 @@
 						rtJsonElementProps: w,
 						useExplicitTextColor: j,
 						shouldBlur: O,
-						onClickRevealSpoilerText: S,
-						mediaProps: k
+						onClickRevealSpoilerText: k,
+						mediaProps: S
 					} = e, I = s.document, C = [], T = e.mediaMetadata || null, N = y(I), M = E(I);
 					if (O && !r && !o) return a.a.createElement(g, {
 						className: Object(d.a)(m.j, n)
@@ -1943,13 +1943,13 @@
 									C.push(b.b(e, a));
 									break;
 								case h.p:
-									C.push(b.f(e, T, w, a, S));
+									C.push(b.f(e, T, w, a, k));
 									break;
 								case h.z:
-									C.push(b.h(e, T, w, a, S));
+									C.push(b.h(e, T, w, a, k));
 									break;
 								case h.u:
-									C.push(b.g(e, T, w, a, S));
+									C.push(b.g(e, T, w, a, k));
 									break;
 								case h.h:
 									C.push(Object(p.a)(e, a));
@@ -1957,7 +1957,7 @@
 								case h.m:
 								case h.a:
 								case h.D:
-									C.push(...Object(p.b)(e, a, w, T, _, f, t, k))
+									C.push(...Object(p.b)(e, a, w, T, _, f, t, S))
 							}
 						}
 					return j ? a.a.createElement(g, {
@@ -2092,8 +2092,8 @@
 				}).apply(this, arguments)
 			}
 			const O = /\/(\w+)\/asset\/(\w+)\//,
-				S = y.a.wrapped(v.a, "A", E.a),
-				k = y.a.wrapped(l.a, "ImageBox", E.a),
+				k = y.a.wrapped(v.a, "A", E.a),
+				S = y.a.wrapped(l.a, "ImageBox", E.a),
 				I = y.a.wrapped(e => i.a.createElement("p", e), "Caption", E.a),
 				C = y.a.div("Placeholder", E.a),
 				T = y.a.wrapped(e => {
@@ -2162,7 +2162,7 @@
 					return n && (n.e === x.s ? r = n.s.u : n.e === x.r ? r = n.s.gif : n.e === x.t && (r = (e => {
 						const t = O.exec(e);
 						return t ? `${a.a.redditUrl}/link/${t[1]}/video/${t[2]}/player` : ""
-					})(n.dashUrl))), r ? i.a.createElement(S, {
+					})(n.dashUrl))), r ? i.a.createElement(k, {
 						href: r,
 						key: t,
 						title: s
@@ -2200,7 +2200,7 @@
 							showCentered: !0,
 							showFull: !0,
 							width: h.x
-						}, i.a.createElement(k, {
+						}, i.a.createElement(S, {
 							altText: s,
 							originalSource: h.u,
 							postId: a,
@@ -2230,7 +2230,7 @@
 									[E.a.CommentGifWrapper]: c,
 									[E.a.mHasCaption]: n
 								})
-							}, i.a.createElement(S, {
+							}, i.a.createElement(k, {
 								href: l,
 								key: t,
 								target: "_blank"
@@ -2415,8 +2415,8 @@
 			var w = Object(u.c)(y),
 				j = n("./src/reddit/components/RichTextJson/media.tsx"),
 				O = n("./src/reddit/components/RichTextJson/SpoilerText.tsx"),
-				S = n("./src/reddit/components/SubredditMention/index.tsx"),
-				k = n("./src/reddit/helpers/crypto/vaultActionLink.ts"),
+				k = n("./src/reddit/components/SubredditMention/index.tsx"),
+				S = n("./src/reddit/helpers/crypto/vaultActionLink.ts"),
 				I = n("./src/reddit/helpers/isComment.ts"),
 				C = n("./src/reddit/helpers/isPost.ts"),
 				T = n("./src/reddit/helpers/richTextJson/index.ts"),
@@ -2571,7 +2571,7 @@
 								t: e.t,
 								f: e.f
 							}, 0);
-							if (Object(k.b)(e.u)) return a.a.createElement(d.w, {
+							if (Object(S.b)(e.u)) return a.a.createElement(d.w, {
 								to: e.u,
 								key: n,
 								title: e.a
@@ -2588,7 +2588,7 @@
 								commentId: i
 							}, s);
 						case h.y:
-							return a.a.createElement(S.b, {
+							return a.a.createElement(k.b, {
 								key: n,
 								rtJsonElementProps: t,
 								subredditName: e.t
@@ -2769,12 +2769,12 @@
 						rtJsonElementProps: o
 					});
 					switch (i) {
-						case b.Sf.SmIcon:
+						case b.Rf.SmIcon:
 							return r.a.createElement(h, {
 								subredditName: s,
 								rtJsonElementProps: o
 							});
-						case b.Sf.SmIconHc:
+						case b.Rf.SmIconHc:
 							return r.a.createElement(h, {
 								subredditName: s,
 								isHoverable: !0,
@@ -3127,12 +3127,12 @@
 				d = e => {
 					return Object(i.c)(e, {
 						experimentEligibilitySelector: a,
-						experimentName: s.Mf
+						experimentName: s.Lf
 					}) || ""
 				},
 				c = e => {
 					const t = d(e);
-					return t === s.Sf.SmIcon || t === s.Sf.SmIconHc
+					return t === s.Rf.SmIcon || t === s.Rf.SmIconHc
 				},
 				l = (e, t) => {
 					let {
@@ -3158,4 +3158,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/GovernanceReleaseNotesModal.26d85aa8615d4e4f320b.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/GovernanceReleaseNotesModal.6ed9c312b5d6e328be06.js.map

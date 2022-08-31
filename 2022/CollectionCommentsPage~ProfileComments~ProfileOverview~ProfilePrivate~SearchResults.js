@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~SearchResults.7cac16a67353eeaaa4a5.js
-// Retrieved at 8/31/2022, 2:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~SearchResults.cc8a84fd19cba99a6104.js
+// Retrieved at 8/31/2022, 6:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~SearchResults"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -1623,7 +1623,7 @@
 				V = n("./src/reddit/actions/post.ts"),
 				z = n("./src/reddit/components/HumanDate/index.tsx"),
 				X = n("./src/reddit/helpers/path/index.ts");
-			const G = e => {
+			const q = e => {
 					const {
 						className: t,
 						comment: n,
@@ -1645,7 +1645,7 @@
 						}),
 						id: m,
 						onClick: e => {
-							null == o || o(e), J(l, n.id), c && (e.preventDefault(), l(Object(V.Z)(Object(X.b)(a), n.postId)))
+							null == o || o(e), G(l, n.id), c && (e.preventDefault(), l(Object(V.Z)(Object(X.b)(a), n.postId)))
 						},
 						onMouseEnter: u,
 						onMouseLeave: u,
@@ -1660,12 +1660,12 @@
 						seconds: n.created
 					})))
 				},
-				J = (e, t) => {
+				G = (e, t) => {
 					window.addEventListener("focus", (function n() {
-						q(e, t, n)
+						J(e, t, n)
 					}))
 				},
-				q = (e, t, n) => {
+				J = (e, t, n) => {
 					window.removeEventListener("focus", n), e(Object(W.h)({
 						commentListNodeId: t
 					})), window.setTimeout(() => e(Object(W.h)({
@@ -1941,7 +1941,7 @@
 					hk: "E1t49"
 				})), r.a.createElement(k.c, {
 					className: je.a.separator
-				}), r.a.createElement(G, {
+				}), r.a.createElement(q, {
 					key: "Created",
 					className: je.a.metaText,
 					comment: a,
@@ -1999,7 +1999,7 @@
 					username: a.author
 				}), r.a.createElement(k.c, {
 					className: je.a.separator
-				}), r.a.createElement(G, {
+				}), r.a.createElement(q, {
 					key: "Created",
 					className: je.a.metaText,
 					comment: a,
@@ -2204,7 +2204,7 @@
 				}), r.a.createElement(k.c, {
 					className: Fe.a.metaText,
 					key: "scoreCreatedSeparator"
-				})), r.a.createElement(G, {
+				})), r.a.createElement(q, {
 					key: "Created",
 					className: Fe.a.MetaLink,
 					comment: i,
@@ -2243,14 +2243,14 @@
 						hk: "1Rtt4V"
 					}) : s.fbt._("Comment removed by moderator", null, {
 						hk: "E1t49"
-					})), r.a.createElement(G, {
+					})), r.a.createElement(q, {
 						key: "Created",
 						className: Fe.a.MetaLink,
 						comment: i,
 						permalink: a,
 						renderedInOverlay: l,
 						isBlockingInterstitialEnabled: d || c
-					}), n && Ge({
+					}), n && qe({
 						childrenInfo: t
 					}))
 				},
@@ -2278,18 +2278,18 @@
 					}), r.a.createElement(k.c, {
 						className: Fe.a.metaText,
 						key: "scoreCreatedSeparator"
-					}), r.a.createElement(G, {
+					}), r.a.createElement(q, {
 						key: "Created",
 						className: Fe.a.MetaLink,
 						comment: t,
 						permalink: a,
 						renderedInOverlay: o,
 						isBlockingInterstitialEnabled: d || c
-					}), Ge({
+					}), qe({
 						childrenInfo: s
 					}))
 				},
-				Ge = e => {
+				qe = e => {
 					const {
 						hasContinueThread: t,
 						numChildren: n
@@ -3147,7 +3147,7 @@
 				const t = Object(r.f)().getState(),
 					n = Object(b.a)(t, Object(a.c)());
 				if (e.isD2xPdpSideRailRecsEnabled) {
-					const t = e.d2xPdpSideRailRecsVariant === m.Wc.GreyRereddit || e.d2xPdpSideRailRecsVariant === m.Wc.GreyRedditNoNsfw || e.d2xPdpSideRailRecsVariant === m.Wc.LargeImagePreview ? e.reredditButtons : [];
+					const t = e.d2xPdpSideRailRecsVariant === m.Vc.GreyRereddit || e.d2xPdpSideRailRecsVariant === m.Vc.GreyRedditNoNsfw || e.d2xPdpSideRailRecsVariant === m.Vc.LargeImagePreview ? e.reredditButtons : [];
 					return o.a.createElement(w, {
 						reredditContent: t,
 						countryCode: e.countryCode
@@ -3858,11 +3858,11 @@
 				d = n("./node_modules/reselect/es/index.js");
 			const c = Object(d.a)(e => Object(o.c)(e, {
 					experimentEligibilitySelector: e => Object(a.h)(e) && Object(r.f)(e),
-					experimentName: s.sc
+					experimentName: s.rc
 				}), i.a),
 				l = Object(d.a)(e => Object(o.c)(e, {
 					experimentEligibilitySelector: e => !Object(a.h)(e) && Object(r.f)(e),
-					experimentName: s.rc
+					experimentName: s.qc
 				}), i.a),
 				m = Object(d.a)(c, l, (e, t) => e || t),
 				u = Object(d.a)(c, l, (e, t) => !(!e && !t))
@@ -3877,10 +3877,10 @@
 				r = n("./src/reddit/helpers/chooseVariant/index.ts"),
 				i = n("./src/reddit/selectors/posts.ts");
 			const a = e => Object(r.c)(e, {
-					experimentName: o.jf,
+					experimentName: o.if,
 					experimentEligibilitySelector: r.a
 				}),
-				d = (e, t) => t === o.rf.Enabled && (null == e ? void 0 : e.isCreatedFromAdsUi) || (null == e ? void 0 : e.isSponsored),
+				d = (e, t) => t === o.qf.Enabled && (null == e ? void 0 : e.isCreatedFromAdsUi) || (null == e ? void 0 : e.isSponsored),
 				c = Object(s.a)(i.G, a, (e, t) => d(e, t));
 			Object(s.a)((e, t) => t, a, (e, t) => d(e, t))
 		},
@@ -3898,4 +3898,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~SearchResults.7cac16a67353eeaaa4a5.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~SearchResults.cc8a84fd19cba99a6104.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Reddit~StandalonePostPage.582c93bb0a82fdc02abe.js
-// Retrieved at 8/31/2022, 2:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Reddit~StandalonePostPage.cf46e8a72b9cffeca417.js
+// Retrieved at 8/31/2022, 6:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Reddit~StandalonePostPage"], {
 		"./src/higherOrderComponents/asModal/helpers.ts": function(e, t, n) {
@@ -463,17 +463,17 @@
 						parseInt(e) < t && M.current()
 					}, C())
 				}, [t, C, _]);
-				const P = Object(s.useRef)(0),
-					F = Object(s.useRef)(!1),
+				const F = Object(s.useRef)(0),
+					P = Object(s.useRef)(!1),
 					D = Object(s.useCallback)(e => {
 						e.forEach(e => {
 							const {
 								isIntersecting: t,
 								intersectionRatio: n
 							} = e, s = 1 !== n;
-							t ? (F.current = !0, k.current || (k.current = !0, B.current = setTimeout(() => {
+							t ? (P.current = !0, k.current || (k.current = !0, B.current = setTimeout(() => {
 								T.current(), M.current()
-							}, u())), P.current > 0 && (T.current(P.current), P.current = 0)) : s && (F.current = !1)
+							}, u())), F.current > 0 && (T.current(F.current), F.current = 0)) : s && (P.current = !1)
 						})
 					}, []);
 				Object(i.a)(I, D);
@@ -493,7 +493,7 @@
 				Object(s.useEffect)(() => {
 					if (void 0 !== q && q !== t) {
 						const e = t - q;
-						F.current ? T.current(e) : P.current += e
+						P.current ? T.current(e) : F.current += e
 					}
 					return () => {
 						clearTimeout(B.current), clearTimeout(R.current), clearTimeout(A.current)
@@ -3123,8 +3123,8 @@
 					if (Object(a.a)(e)) return !1;
 					return Object(r.c)(e, {
 						experimentEligibilitySelector: r.a,
-						experimentName: s.zc
-					}) === s.Xc.Enabled
+						experimentName: s.yc
+					}) === s.Wc.Enabled
 				}
 		},
 		"./src/reddit/selectors/experiments/presence.ts": function(e, t, n) {
@@ -3137,8 +3137,8 @@
 			const o = e => {
 				return Object(r.c)(e, {
 					experimentEligibilitySelector: r.a,
-					experimentName: s.gf
-				}) === s.Pd
+					experimentName: s.ff
+				}) === s.Od
 			}
 		},
 		"./src/reddit/selectors/userPrefs.ts": function(e, t, n) {
@@ -3223,4 +3223,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit~StandalonePostPage.582c93bb0a82fdc02abe.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit~StandalonePostPage.cf46e8a72b9cffeca417.js.map
