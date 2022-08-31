@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/NotificationsPrePromptLoader.097a5683b5017af93ea1.js
-// Retrieved at 8/31/2022, 11:40:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/NotificationsPrePromptLoader.1d7f005d4d986f93e7a9.js
+// Retrieved at 8/31/2022, 12:40:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["NotificationsPrePromptLoader"], {
 		"./src/reddit/components/NotificationsPrePrompt/index.m.less": function(e, n, t) {
@@ -26,7 +26,7 @@
 					experimentEligibilitySelector: f.a,
 					experimentName: u.Gb
 				});
-				return !Object(u.rg)(n) && n
+				return !Object(u.qg)(n) && n
 			}
 			var p, m = t("./src/reddit/components/NotificationsPrePrompt/index.m.less"),
 				_ = t.n(m);
@@ -48,7 +48,7 @@
 					t = Object(c.d)(),
 					[r, f] = Object(o.useState)(),
 					m = Object(c.e)(l),
-					j = Object(o.useCallback)(() => m === u.id.ThreeSeconds ? p.ThreeSec : m === u.id.FiveSeconds ? p.FiveSec : p.TenSec, [m]);
+					j = Object(o.useCallback)(() => m === u.hd.ThreeSeconds ? p.ThreeSec : m === u.hd.FiveSeconds ? p.FiveSec : p.TenSec, [m]);
 				return Object(o.useEffect)(() => {
 					if (m) {
 						const e = j();
@@ -85,11 +85,11 @@
 			})), t.d(n, "c", (function() {
 				return j
 			})), t.d(n, "b", (function() {
-				return v
-			})), t.d(n, "i", (function() {
-				return y
-			})), t.d(n, "a", (function() {
 				return h
+			})), t.d(n, "i", (function() {
+				return v
+			})), t.d(n, "a", (function() {
+				return y
 			})), t.d(n, "n", (function() {
 				return x
 			})), t.d(n, "o", (function() {
@@ -179,7 +179,7 @@
 					source: "notification",
 					correlationId: void 0
 				}),
-				v = (e, n) => t => ({
+				h = (e, n) => t => ({
 					...o.n(t),
 					action: a(e),
 					email: {
@@ -188,7 +188,7 @@
 					noun: "email",
 					source: "email_app_settings"
 				}),
-				y = (e, n) => t => ({
+				v = (e, n) => t => ({
 					...o.n(t),
 					action: a(e),
 					notification: {
@@ -197,7 +197,7 @@
 					noun: "notification",
 					source: "notification_app_settings"
 				}),
-				h = e => n => ({
+				y = e => n => ({
 					...o.n(n),
 					source: "email_app_settings",
 					action: a(e),
@@ -240,4 +240,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/NotificationsPrePromptLoader.097a5683b5017af93ea1.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/NotificationsPrePromptLoader.1d7f005d4d986f93e7a9.js.map
