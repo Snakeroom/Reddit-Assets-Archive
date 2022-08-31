@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SnoovatarModal.36411ca2949880706dfa.js
-// Retrieved at 8/31/2022, 12:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SnoovatarModal.6699fb7992cb7c8313ea.js
+// Retrieved at 8/31/2022, 2:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SnoovatarModal"], {
 		"./src/reddit/components/SnoovatarModal/SnoovatarIframe.tsx": function(e, t, a) {
@@ -108,10 +108,10 @@
 				M = c.a.lazy(() => Promise.all([a.e(0), a.e(1), a.e(2), a.e(3), a.e(4), a.e(5)]).then(a.bind(null, "./node_modules/@reddit/avatars/index.es.js")).then(e => ({
 					default: e.DataWrapper
 				}))),
-				A = c.a.lazy(() => Promise.all([a.e(0), a.e(1), a.e(2), a.e(3), a.e(4), a.e(5)]).then(a.bind(null, "./node_modules/@reddit/avatars/index.es.js")).then(e => ({
+				g = c.a.lazy(() => Promise.all([a.e(0), a.e(1), a.e(2), a.e(3), a.e(4), a.e(5)]).then(a.bind(null, "./node_modules/@reddit/avatars/index.es.js")).then(e => ({
 					default: e.LoggedOut
 				}))),
-				g = c.a.lazy(() => Promise.all([a.e(0), a.e(1), a.e(2), a.e(3), a.e(4), a.e(5)]).then(a.bind(null, "./node_modules/@reddit/avatars/index.es.js")).then(e => ({
+				A = c.a.lazy(() => Promise.all([a.e(0), a.e(1), a.e(2), a.e(3), a.e(4), a.e(5)]).then(a.bind(null, "./node_modules/@reddit/avatars/index.es.js")).then(e => ({
 					default: e.Builder
 				}))),
 				w = Object(r.a)(e => {
@@ -126,7 +126,7 @@
 						}), [t]),
 						f = Object(m.a)(),
 						x = Object(d.e)(e => v && Object(b.e)(e)),
-						w = Object(d.e)(e => !Object(p.Q)(e) && Object(b.A)(e));
+						w = Object(d.e)(e => !Object(p.Q)(e) && Object(b.B)(e));
 					Object(o.useEffect)(() => {
 						(async () => {
 							await a.e(7).then(a.t.bind(null, "./node_modules/@reddit/avatars/style.css", 7))
@@ -151,7 +151,7 @@
 						className: _.a.snoovatarModalBuilderV2
 					}, c.a.createElement(o.Suspense, {
 						fallback: c.a.createElement("div", null)
-					}, c.a.createElement(A, {
+					}, c.a.createElement(g, {
 						openLogin: y,
 						fancyBackground: !0
 					})));
@@ -172,7 +172,7 @@
 						authHeaders: v,
 						config: P,
 						sendEvent: j.a
-					}, c.a.createElement(g, {
+					}, c.a.createElement(A, {
 						navState: D
 					})))) : c.a.createElement(E.a, h({
 						className: _.a.snoovatarModalIframeContainer
@@ -199,4 +199,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SnoovatarModal.36411ca2949880706dfa.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SnoovatarModal.6699fb7992cb7c8313ea.js.map

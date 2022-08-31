@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-ClaimPointsModal.7fbf70e9dbbef3312169.js
-// Retrieved at 8/31/2022, 12:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-ClaimPointsModal.adbad5186b666dc3aded.js
+// Retrieved at 8/31/2022, 2:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Governance-TransactionModals-ClaimPointsModal"], {
 		"./node_modules/dijkstrajs/dijkstra.js": function(e, t, r) {
@@ -533,11 +533,11 @@
 						v[E] = _.slice(b, b + x), y[E] = g.encode(v[E]), b += x, w = Math.max(w, x)
 					}
 					var j, C, T = n.alloc(s),
-						N = 0;
+						A = 0;
 					for (j = 0; j < w; j++)
-						for (C = 0; C < c; C++) j < v[C].length && (T[N++] = v[C][j]);
+						for (C = 0; C < c; C++) j < v[C].length && (T[A++] = v[C][j]);
 					for (j = 0; j < h; j++)
-						for (C = 0; C < c; C++) T[N++] = y[C][j];
+						for (C = 0; C < c; C++) T[A++] = y[C][j];
 					return T
 				}(s, e, t)
 			}
@@ -1224,7 +1224,7 @@
 			})), r.d(t, "c", (function() {
 				return x
 			})), r.d(t, "f", (function() {
-				return A
+				return N
 			})), r.d(t, "g", (function() {
 				return R
 			})), r.d(t, "d", (function() {
@@ -1258,8 +1258,8 @@
 				j = Object(o.a)(v.i),
 				C = Object(o.a)(v.j),
 				T = Object(o.a)(v.k),
-				N = Object(o.a)(v.q),
-				A = Object(o.a)(v.r),
+				A = Object(o.a)(v.q),
+				N = Object(o.a)(v.r),
 				I = Object(o.a)(v.s),
 				O = Object(o.a)(v.t),
 				B = Object(o.a)(v.u),
@@ -1341,7 +1341,7 @@
 						text: n.fbt._("Success! You just transferred {amount} {tokenName} to {recipient}", [n.fbt._param("amount", Object(s.a)(e.amount)), n.fbt._param("tokenName", (null === (u = Object(b.b)(o(), e.subredditId)) || void 0 === u ? void 0 : u.name) || ""), n.fbt._param("recipient", e.recipient)], {
 							hk: "3klrhq"
 						})
-					})), t && r(Object(a.f)())) : (r(N({
+					})), t && r(Object(a.f)())) : (r(A({
 						error: p.error
 					})), Object(y.a)(r, p.error))
 				}, k = e => async (t, r, n) => {
@@ -1462,8 +1462,8 @@
 				j = r("./src/reddit/selectors/crypto/claims.ts"),
 				C = r("./src/reddit/selectors/crypto/points.ts"),
 				T = r("./src/reddit/selectors/gov.ts"),
-				N = r("./src/lib/addQueryParams/index.ts"),
-				A = r("./src/reddit/icons/svgs/Close/index.tsx"),
+				A = r("./src/lib/addQueryParams/index.ts"),
+				N = r("./src/reddit/icons/svgs/Close/index.tsx"),
 				I = r("./src/reddit/selectors/user.ts"),
 				O = r("./src/reddit/components/Governance/TransactionModals/Common/Bullet.tsx"),
 				B = r("./src/reddit/components/Governance/TransactionModals/Common/QRCode.tsx"),
@@ -1491,7 +1491,7 @@
 						className: P.a.title
 					}, R._("Create Your Vault on Your Smartphone", null, {
 						hk: "247Dqn"
-					})), s.a.createElement(A.a, {
+					})), s.a.createElement(N.a, {
 						className: P.a.closeButton,
 						onClick: t
 					})), s.a.createElement("div", {
@@ -1523,7 +1523,7 @@
 					})))), s.a.createElement("section", {
 						className: P.a.rightSection
 					}, s.a.createElement(B.a, {
-						url: Object(N.a)("http://www.reddit.com/vault/", {
+						url: Object(A.a)("http://www.reddit.com/vault/", {
 							u: r
 						}),
 						scale: 5
@@ -1576,28 +1576,28 @@
 				} = e, o = Object(a.d)(), c = Object(E.a)(), {
 					currentPointsAmount: d,
 					nextPointsClaim: l,
-					pointsDetails: N
+					pointsDetails: A
 				} = Object(a.e)(Object(i.c)({
 					currentPointsAmount: t => Object(T.e)(t, e),
 					nextPointsClaim: t => Object(j.b)(t, e),
 					pointsDetails: t => Object(C.b)(t, e.subredditId)
 				}));
-				if (!N || !l) throw new Error("No available claim to make");
+				if (!A || !l) throw new Error("No available claim to make");
 				if (!l.address) return s.a.createElement(q, {
 					onClose: t
 				});
-				const A = Object(v.b)(N.contracts.distribution.address, l.round, l.address, l.userKarma, l.signature),
+				const N = Object(v.b)(A.contracts.distribution.address, l.round, l.address, l.userKarma, l.signature),
 					I = e => {
-						c(Object(_.c)("points_claim", r, N.displayConversion, e))
+						c(Object(_.c)("points_claim", r, A.displayConversion, e))
 					},
-					O = Object(w.c)(l.pointsToClaim, N.displayConversion);
+					O = Object(w.c)(l.pointsToClaim, A.displayConversion);
 				return s.a.createElement(k.a, {
 					approvalOverview: s.a.createElement(V, {
-						pointsDetails: N,
+						pointsDetails: A,
 						subredditId: r
 					}),
 					approvalDetails: s.a.createElement(z, {
-						transaction: A
+						transaction: N
 					}),
 					onClose: t,
 					onTransactionSuccess: async e => {
@@ -1616,18 +1616,18 @@
 							})), await e(Object(m.b)({
 								forceFetch: !0
 							}))
-						}(o, N, e.hash, r, d).then(() => {
+						}(o, A, e.hash, r, d).then(() => {
 							c(Object(_.d)("points_claim", r, O)), o(function(e) {
 								return Object(h.f)(Object(h.e)(n.fbt._("Your {pointsName} are ready!", [n.fbt._param("pointsName", e)], {
 									hk: "2LpLml"
 								}), x.b.SuccessCommunityGreen))
-							}(N.name))
+							}(A.name))
 						}).catch(e => {
 							I(e.toString()), o(function(e) {
 								return Object(h.f)(Object(h.e)(n.fbt._("Failed to claim your {pointsName}. Try again later", [n.fbt._param("pointsName", e)], {
 									hk: "ch1Bl"
 								}), x.b.Error))
-							}(N.name))
+							}(A.name))
 						}).finally(() => {
 							o(u({
 								subredditId: r
@@ -1636,7 +1636,7 @@
 					},
 					onTransactionFailure: I,
 					subredditId: r,
-					transaction: A,
+					transaction: N,
 					transactionIntent: Object(b.c)(r)
 				})
 			}))
@@ -2281,14 +2281,14 @@
 			const s = e => {
 					return Object(o.c)(e, {
 						experimentEligibilitySelector: o.a,
-						experimentName: n.ze
-					}) === n.Od
+						experimentName: n.Ae
+					}) === n.Pd
 				},
 				a = e => {
 					return Object(o.c)(e, {
 						experimentEligibilitySelector: o.a,
-						experimentName: n.we
-					}) === n.Od
+						experimentName: n.xe
+					}) === n.Pd
 				}
 		},
 		"./src/reddit/selectors/gov.ts": function(e, t, r) {
@@ -2348,4 +2348,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-ClaimPointsModal.7fbf70e9dbbef3312169.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-ClaimPointsModal.adbad5186b666dc3aded.js.map

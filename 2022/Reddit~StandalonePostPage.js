@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Reddit~StandalonePostPage.b03cd6b91d32f0e83a0a.js
-// Retrieved at 8/31/2022, 12:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Reddit~StandalonePostPage.582c93bb0a82fdc02abe.js
+// Retrieved at 8/31/2022, 2:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Reddit~StandalonePostPage"], {
 		"./src/higherOrderComponents/asModal/helpers.ts": function(e, t, n) {
@@ -463,17 +463,17 @@
 						parseInt(e) < t && M.current()
 					}, C())
 				}, [t, C, _]);
-				const F = Object(s.useRef)(0),
-					P = Object(s.useRef)(!1),
+				const P = Object(s.useRef)(0),
+					F = Object(s.useRef)(!1),
 					D = Object(s.useCallback)(e => {
 						e.forEach(e => {
 							const {
 								isIntersecting: t,
 								intersectionRatio: n
 							} = e, s = 1 !== n;
-							t ? (P.current = !0, k.current || (k.current = !0, B.current = setTimeout(() => {
+							t ? (F.current = !0, k.current || (k.current = !0, B.current = setTimeout(() => {
 								T.current(), M.current()
-							}, u())), F.current > 0 && (T.current(F.current), F.current = 0)) : s && (P.current = !1)
+							}, u())), P.current > 0 && (T.current(P.current), P.current = 0)) : s && (F.current = !1)
 						})
 					}, []);
 				Object(i.a)(I, D);
@@ -493,7 +493,7 @@
 				Object(s.useEffect)(() => {
 					if (void 0 !== q && q !== t) {
 						const e = t - q;
-						P.current ? T.current(e) : F.current += e
+						F.current ? T.current(e) : P.current += e
 					}
 					return () => {
 						clearTimeout(B.current), clearTimeout(R.current), clearTimeout(A.current)
@@ -3137,8 +3137,8 @@
 			const o = e => {
 				return Object(r.c)(e, {
 					experimentEligibilitySelector: r.a,
-					experimentName: s.ff
-				}) === s.Od
+					experimentName: s.gf
+				}) === s.Pd
 			}
 		},
 		"./src/reddit/selectors/userPrefs.ts": function(e, t, n) {
@@ -3223,4 +3223,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit~StandalonePostPage.b03cd6b91d32f0e83a0a.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit~StandalonePostPage.582c93bb0a82fdc02abe.js.map

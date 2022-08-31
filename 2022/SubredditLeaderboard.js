@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditLeaderboard.e3c49f3c14545a84d526.js
-// Retrieved at 8/31/2022, 12:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditLeaderboard.56ec48a38697e978f7d9.js
+// Retrieved at 8/31/2022, 2:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditLeaderboard"], {
 		"./node_modules/lodash/times.js": function(e, t, n) {
@@ -73,7 +73,7 @@
 									icon: e.category_icon,
 									id: e.category_id,
 									name: e.category_name,
-									displayText: Object(u.pg)(e.category_name)
+									displayText: Object(u.qg)(e.category_name)
 								};
 								n.push(s.id), t[s.id] = s
 							}), {
@@ -2373,8 +2373,8 @@
 					})))))
 				}
 			}
-			var J = Object(u.c)(z(Q)),
-				q = n("./node_modules/react-router-dom/esm/react-router-dom.js"),
+			var q = Object(u.c)(z(Q)),
+				J = n("./node_modules/react-router-dom/esm/react-router-dom.js"),
 				K = n("./src/reddit/components/CategoryPickerWidget/index.m.less"),
 				V = n.n(K);
 
@@ -2395,7 +2395,7 @@
 					isActive: s,
 					tabIndex: a
 				} = e, o = Object(c.a)(V.a.categoryLink, s && V.a.active, r);
-				return i.a.createElement("li", null, i.a.createElement(q.a, U({}, t.anchorProps, {
+				return i.a.createElement("li", null, i.a.createElement(J.a, U({}, t.anchorProps, {
 					className: o,
 					"data-active": s,
 					onMouseDown: () => e.onSendEventClick(t.name),
@@ -2560,7 +2560,7 @@
 					} = t;
 					return Object(g.b)(n.params.categoryName || "")
 				},
-				Ee = Object(m.og)(p.i),
+				Ee = Object(m.pg)(p.i),
 				Ce = Object(d.c)({
 					categories: e => Object(ye.b)(e, {
 						categoriesOrder: Ee
@@ -2634,7 +2634,7 @@
 						m = (null === (e = a.find(e => e.id === u)) || void 0 === e ? void 0 : e.displayText) || "";
 					return i.a.createElement(l.a, null, i.a.createElement(k.a, {
 						className: Object(c.a)(t, C.a.mainContent),
-						content: i.a.createElement(J, {
+						content: i.a.createElement(q, {
 							categoryId: u,
 							categoryName: d,
 							categoryDisplayText: m
@@ -2713,4 +2713,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditLeaderboard.e3c49f3c14545a84d526.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditLeaderboard.56ec48a38697e978f7d9.js.map
