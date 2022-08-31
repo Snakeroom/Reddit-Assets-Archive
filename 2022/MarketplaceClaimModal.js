@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/MarketplaceClaimModal.591e58b6055fceecf965.js
-// Retrieved at 8/31/2022, 2:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/MarketplaceClaimModal.0efc8af71d7d97257d04.js
+// Retrieved at 8/31/2022, 7:30:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["MarketplaceClaimModal"], {
 		"./src/reddit/actions/economics/marketplace/constants.ts": function(e, t, n) {
@@ -7,45 +7,48 @@
 			n.d(t, "b", (function() {
 				return r
 			})), n.d(t, "a", (function() {
-				return a
+				return o
 			}));
 			const r = "ECON__MARKETPLACE_ITEM_CLAIMED",
-				a = "ECON__MARKETPLACE_ITEMS_OUT_OF_STOCK"
+				o = "ECON__MARKETPLACE_ITEMS_OUT_OF_STOCK"
 		},
 		"./src/reddit/components/Crypto/CryptoComponentsConfigProvider.tsx": function(e, t, n) {
 			"use strict";
 			n.d(t, "a", (function() {
-				return u
+				return p
 			}));
 			var r = n("./node_modules/@reddit/crypto/react/config/index.es.js"),
+				o = n("./src/lib/env/index.ts"),
 				a = n("./node_modules/react/index.js"),
-				o = n.n(a),
-				s = n("./node_modules/react-redux/es/index.js"),
-				c = n("./src/reddit/hooks/useTracking.ts"),
-				i = n("./src/reddit/selectors/telemetry.ts"),
-				d = n("./src/reddit/selectors/user.ts"),
-				l = n("./src/config.ts");
-			const u = e => {
+				s = n.n(a),
+				c = n("./node_modules/react-redux/es/index.js"),
+				i = n("./src/reddit/endpoints/governance/crypto.ts"),
+				d = n("./src/reddit/hooks/useTracking.ts"),
+				l = n("./src/reddit/selectors/telemetry.ts"),
+				u = n("./src/reddit/selectors/user.ts"),
+				m = n("./src/config.ts");
+			const p = e => {
 				let {
 					children: t
 				} = e;
 				const n = function() {
-					const e = Object(s.e)(m),
-						t = Object(s.e)(d.db),
-						n = Object(c.a)();
-					return Object(a.useMemo)(() => (function(e, t, n) {
+					const e = Object(c.e)(E),
+						t = Object(c.e)(u.db),
+						n = Object(d.a)(),
+						r = Object(o.b)() ? i.a.Ethereum : i.a.Rinkeby;
+					return Object(a.useMemo)(() => (function(e, t, n, r) {
 						return {
 							api: {
 								accessToken: e
 							},
 							fbt: {
 								inline: (e, t) => e,
-								singular: (e, t) => o.a.createElement(o.a.Fragment, null, e),
-								param: (e, t) => o.a.createElement(o.a.Fragment, null, e),
-								plural: (e, t) => o.a.createElement(o.a.Fragment, null, e)
+								singular: (e, t) => s.a.createElement(s.a.Fragment, null, e),
+								param: (e, t) => s.a.createElement(s.a.Fragment, null, e),
+								plural: (e, t) => s.a.createElement(s.a.Fragment, null, e)
 							},
 							gql: {
-								host: l.a.gqlUrl,
+								host: m.a.gqlUrl,
 								fetchOptions: {
 									headers: {
 										Authorization: `Bearer ${e}`
@@ -55,7 +58,7 @@
 							nightModeActive: () => t,
 							sendEvent(e) {
 								n(t => {
-									const n = Object(i.n)(t);
+									const n = Object(l.n)(t);
 									return {
 										...n,
 										...e,
@@ -65,16 +68,17 @@
 										}
 									}
 								})
-							}
+							},
+							blockchainProvider: r
 						}
-					})(e, t, n), [e, t, n])
+					})(e, t, n, r), [e, t, n, r])
 				}();
-				return o.a.createElement(r.a, {
+				return s.a.createElement(r.a, {
 					value: n
 				}, t)
 			};
 
-			function m(e) {
+			function E(e) {
 				var t;
 				return (null === (t = e.user.session) || void 0 === t ? void 0 : t.accessToken) || ""
 			}
@@ -91,8 +95,8 @@
 				return A
 			}));
 			var r = n("./src/higherOrderComponents/asModal/index.tsx"),
-				a = n("./node_modules/react/index.js"),
-				o = n.n(a),
+				o = n("./node_modules/react/index.js"),
+				a = n.n(o),
 				s = n("./node_modules/react-redux/es/index.js"),
 				c = n("./node_modules/@reddit/crypto/react/nft-claim/index.es.js"),
 				i = n("./src/lib/makeActionCreator/index.ts"),
@@ -105,8 +109,8 @@
 				O = n("./src/reddit/selectors/activeModal.ts"),
 				_ = n("./src/reddit/selectors/experiments/econ/index.ts"),
 				f = n("./src/reddit/selectors/user.ts"),
-				C = n("./src/reddit/components/Econ/Marketplace/ClaimModal/index.m.less"),
-				v = n.n(C);
+				v = n("./src/reddit/components/Econ/Marketplace/ClaimModal/index.m.less"),
+				C = n.n(v);
 
 			function b() {
 				return (b = Object.assign || function(e) {
@@ -126,57 +130,56 @@
 							var t;
 							return null === (t = Object(O.a)(e)) || void 0 === t ? void 0 : t.claimId
 						}),
-						a = Object(s.d)(),
+						o = Object(s.d)(),
 						i = Object(s.e)(_.A);
 					if (!n || !r) return null;
-					return o.a.createElement("div", {
-						className: v.a.container
-					}, o.a.createElement(p.a, null, o.a.createElement(c.b, {
+					return a.a.createElement("div", {
+						className: C.a.container
+					}, a.a.createElement(p.a, null, a.a.createElement(c.b, {
 						onClose: t,
 						userId: n,
 						onViewAvatar: () => {
-							t(), a(Object(m.b)({
+							t(), o(Object(m.b)({
 								activeTab: E.a.ME,
 								activeMeSubpage: "MY_STUFF"
 							}))
 						},
-						claimId: r,
 						omitIkey: i,
 						onEvent: e => {
 							var t;
-							"CLAIM_ERROR" === e.type && "NO_NFT_LEFT" === (null === (t = e.data) || void 0 === t ? void 0 : t.status) && a(u({
+							"CLAIM_ERROR" === e.type && "NO_NFT_LEFT" === (null === (t = e.data) || void 0 === t ? void 0 : t.status) && o(u({
 								claimId: r
-							})), "CLAIM_SUCCESS" === e.type && a(l({
+							})), "CLAIM_SUCCESS" === e.type && o(l({
 								claimId: r
 							}))
 						}
 					})))
 				},
 				M = Object(r.a)(A);
-			t.default = e => o.a.createElement(M, b({
+			t.default = e => a.a.createElement(M, b({
 				withOverlay: !0,
 				onOverlayClick: e.onClose,
-				className: v.a.modal
+				className: C.a.modal
 			}, e))
 		},
 		"./src/reddit/helpers/avatarRouting.ts": function(e, t, n) {
 			"use strict";
-			var r, a, o;
+			var r, o, a;
 			n.d(t, "a", (function() {
-					return a
-				})), n.d(t, "b", (function() {
 					return o
+				})), n.d(t, "b", (function() {
+					return a
 				})),
 				function(e) {
 					e.BODY = "body", e.EYES = "eyes", e.HAIR = "hair", e.EXPRESSION = "expression", e.FACIAL_HAIR = "facial hair"
 				}(r || (r = {})),
 				function(e) {
 					e.SHOP = "shop", e.EXPLORE = "explore", e.STYLE = "style", e.ME = "you", e.NFT = "nft"
-				}(a || (a = {})),
+				}(o || (o = {})),
 				function(e) {
 					e.FEATURED = "featured", e.POPULAR = "popular", e.GALLERY = "gallery", e.ARTISTS = "artists", e.ARTIST_PAGE = "artist_page"
-				}(o || (o = {}))
+				}(a || (a = {}))
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/MarketplaceClaimModal.591e58b6055fceecf965.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/MarketplaceClaimModal.0efc8af71d7d97257d04.js.map

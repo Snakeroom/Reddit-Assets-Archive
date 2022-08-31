@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SnoovatarModal.6750370a26ebe0becd37.js
-// Retrieved at 8/31/2022, 6:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SnoovatarModal.cf221e852136acf1049c.js
+// Retrieved at 8/31/2022, 7:30:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SnoovatarModal"], {
 		"./src/reddit/components/SnoovatarModal/SnoovatarIframe.tsx": function(e, t, a) {
@@ -31,7 +31,7 @@
 				}), u && m.set("source", u);
 				const v = Object(n.e)(e => e.user.session),
 					b = Object(s.useRef)(null),
-					O = Object(s.useCallback)(e => {
+					p = Object(s.useCallback)(e => {
 						v && e && e.postMessage({
 							type: "injectAuth",
 							headers: {
@@ -42,13 +42,13 @@
 					}, [v]);
 				return Object(s.useEffect)(() => {
 					var e;
-					return O(null === (e = null == b ? void 0 : b.current) || void 0 === e ? void 0 : e.contentWindow)
-				}, [b, O]), Object(s.useEffect)(() => {
+					return p(null === (e = null == b ? void 0 : b.current) || void 0 === e ? void 0 : e.contentWindow)
+				}, [b, p]), Object(s.useEffect)(() => {
 					const e = e => {
-						"refreshAuth" === (null == e ? void 0 : e.data) && O(e.source)
+						"refreshAuth" === (null == e ? void 0 : e.data) && p(e.source)
 					};
 					return window.addEventListener("message", e), () => window.removeEventListener("message", e)
-				}, [O]), r.a.createElement("div", {
+				}, [p]), r.a.createElement("div", {
 					className: Object(d.a)(l.a.iframeContainer, t)
 				}, r.a.createElement("iframe", {
 					ref: b,
@@ -76,19 +76,20 @@
 				d = a("./node_modules/react-redux/es/index.js"),
 				i = a("./src/reddit/actions/login.ts"),
 				l = a("./src/reddit/actions/snoovatarModal.ts"),
-				u = a("./src/reddit/helpers/trackers/snoovatar.ts"),
-				m = a("./src/reddit/hooks/useTracking.ts"),
-				v = a("./src/reddit/selectors/activeModal.ts"),
-				b = a("./src/reddit/selectors/experiments/econ/index.ts"),
+				u = a("./src/reddit/endpoints/governance/crypto.ts"),
+				m = a("./src/reddit/helpers/trackers/snoovatar.ts"),
+				v = a("./src/reddit/hooks/useTracking.ts"),
+				b = a("./src/reddit/selectors/activeModal.ts"),
+				p = a("./src/reddit/selectors/experiments/econ/index.ts"),
 				O = a("./src/reddit/selectors/experiments/econ/paymentsSandbox.ts"),
-				p = a("./src/reddit/selectors/user.ts"),
-				j = a("./src/telemetry/index.ts"),
-				f = a("./src/reddit/components/SnoovatarModal/index.m.less"),
-				_ = a.n(f),
-				E = a("./src/reddit/components/SnoovatarModal/SnoovatarIframe.tsx");
+				j = a("./src/reddit/selectors/user.ts"),
+				f = a("./src/telemetry/index.ts"),
+				h = a("./src/reddit/components/SnoovatarModal/index.m.less"),
+				E = a.n(h),
+				_ = a("./src/reddit/components/SnoovatarModal/SnoovatarIframe.tsx");
 
-			function h() {
-				return (h = Object.assign || function(e) {
+			function x() {
+				return (x = Object.assign || function(e) {
 					for (var t = 1; t < arguments.length; t++) {
 						var a = arguments[t];
 						for (var s in a) Object.prototype.hasOwnProperty.call(a, s) && (e[s] = a[s])
@@ -96,93 +97,95 @@
 					return e
 				}).apply(this, arguments)
 			}
-			const x = !(Object(n.c)() || Object(n.b)()),
-				S = {
+			const S = !(Object(n.c)() || Object(n.b)()),
+				M = {
 					GRAPHQL_URL: s.a.gqlUrl,
-					IS_DEVELOPMENT: x,
-					IS_PRODUCTION: !x,
+					IS_DEVELOPMENT: S,
+					IS_PRODUCTION: !S,
 					MOCKING_ENABLED: !1,
 					SNOOVATAR_BASE_URL: s.a.snoovatarUrl,
 					SNOOVATAR_API_URL: `${s.a.snoovatarUrl}/api`
 				},
-				M = c.a.lazy(() => Promise.all([a.e(0), a.e(1), a.e(2), a.e(3), a.e(4), a.e(5)]).then(a.bind(null, "./node_modules/@reddit/avatars/index.es.js")).then(e => ({
+				g = c.a.lazy(() => Promise.all([a.e(0), a.e(1), a.e(3), a.e(2), a.e(4), a.e(5)]).then(a.bind(null, "./node_modules/@reddit/avatars/index.es.js")).then(e => ({
 					default: e.DataWrapper
 				}))),
-				g = c.a.lazy(() => Promise.all([a.e(0), a.e(1), a.e(2), a.e(3), a.e(4), a.e(5)]).then(a.bind(null, "./node_modules/@reddit/avatars/index.es.js")).then(e => ({
+				A = c.a.lazy(() => Promise.all([a.e(0), a.e(1), a.e(3), a.e(2), a.e(4), a.e(5)]).then(a.bind(null, "./node_modules/@reddit/avatars/index.es.js")).then(e => ({
 					default: e.LoggedOut
 				}))),
-				A = c.a.lazy(() => Promise.all([a.e(0), a.e(1), a.e(2), a.e(3), a.e(4), a.e(5)]).then(a.bind(null, "./node_modules/@reddit/avatars/index.es.js")).then(e => ({
+				y = c.a.lazy(() => Promise.all([a.e(0), a.e(1), a.e(3), a.e(2), a.e(4), a.e(5)]).then(a.bind(null, "./node_modules/@reddit/avatars/index.es.js")).then(e => ({
 					default: e.Builder
 				}))),
 				w = Object(r.a)(e => {
 					const t = Object(d.e)(e => e.user.session),
 						[r, n] = Object(o.useState)(!1),
 						l = Object(d.e)(O.a),
-						v = Object(o.useMemo)(() => ({
+						b = Object(o.useMemo)(() => ({
 							headers: {
 								Authorization: `Bearer ${t.accessToken}`
 							},
 							expiration: new Date(t.expires).getTime()
 						}), [t]),
-						f = Object(m.a)(),
-						x = Object(d.e)(e => v && Object(b.e)(e)),
-						w = Object(d.e)(e => !Object(p.Q)(e) && Object(b.B)(e));
+						h = Object(v.a)(),
+						w = Object(d.e)(e => b && Object(p.e)(e)),
+						L = Object(d.e)(e => !Object(j.Q)(e) && Object(p.B)(e));
 					Object(o.useEffect)(() => {
 						(async () => {
 							await a.e(7).then(a.t.bind(null, "./node_modules/@reddit/avatars/style.css", 7))
-						})(), f(u.r), n(!0)
-					}, [f]);
-					const L = Object(d.d)(),
-						y = () => L(Object(i.openLoginModal)()),
+						})(), h(m.r), n(!0)
+					}, [h]);
+					const N = Object(d.d)(),
+						T = () => N(Object(i.openLoginModal)()),
 						{
-							activeDetails: N,
-							activeTab: T,
-							activeMeSubpage: k,
-							shopTabState: C
+							activeDetails: k,
+							activeTab: P,
+							activeMeSubpage: C,
+							shopTabState: D
 						} = e,
-						D = Object(o.useMemo)(() => ({
-							activeTab: T || void 0,
-							activeMeSubpage: k || void 0,
-							activeDetails: N || void 0,
-							shopTabState: C || void 0
-						}), [N, T, k, C]);
+						R = Object(o.useMemo)(() => ({
+							activeTab: P || void 0,
+							activeMeSubpage: C || void 0,
+							activeDetails: k || void 0,
+							shopTabState: D || void 0
+						}), [k, P, C, D]);
 					if (!t || !r) return null;
-					if (w) return c.a.createElement("div", {
-						className: _.a.snoovatarModalBuilderV2
+					if (L) return c.a.createElement("div", {
+						className: E.a.snoovatarModalBuilderV2
 					}, c.a.createElement(o.Suspense, {
 						fallback: c.a.createElement("div", null)
-					}, c.a.createElement(g, {
-						openLogin: y,
+					}, c.a.createElement(A, {
+						openLogin: T,
 						fancyBackground: !0
 					})));
-					let P;
-					return P = e.share ? {
-						...S,
+					let U;
+					const B = S ? u.a.Rinkeby : u.a.Ethereum;
+					return U = e.share ? {
+						...M,
 						STRIPE_API_KEY: s.a.stripe.apiKey(l),
 						COPY_SHARE_PARAMS: e.share
 					} : {
-						...S,
+						...M,
 						STRIPE_API_KEY: s.a.stripe.apiKey(l)
-					}, x ? c.a.createElement("div", {
-						className: _.a.snoovatarModalBuilderV2
+					}, w ? c.a.createElement("div", {
+						className: E.a.snoovatarModalBuilderV2
 					}, c.a.createElement(o.Suspense, {
 						fallback: c.a.createElement("div", null)
-					}, c.a.createElement(M, {
+					}, c.a.createElement(g, {
 						accessToken: t.accessToken,
-						authHeaders: v,
-						config: P,
-						sendEvent: j.a
-					}, c.a.createElement(A, {
-						navState: D
-					})))) : c.a.createElement(E.a, h({
-						className: _.a.snoovatarModalIframeContainer
+						authHeaders: b,
+						config: U,
+						sendEvent: f.a,
+						blockchainProvider: B
+					}, c.a.createElement(y, {
+						navState: R
+					})))) : c.a.createElement(_.a, x({
+						className: E.a.snoovatarModalIframeContainer
 					}, e))
 				});
 			t.default = () => {
 				const e = Object(d.d)(),
-					t = Object(d.e)(e => Object(v.a)(e));
-				return c.a.createElement(w, h({}, t, {
-					className: _.a.snoovatarModal,
+					t = Object(d.e)(e => Object(b.a)(e));
+				return c.a.createElement(w, x({}, t, {
+					className: E.a.snoovatarModal,
 					withOverlay: !0,
 					onOverlayClick: () => e(Object(l.a)())
 				}))
@@ -199,4 +202,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SnoovatarModal.6750370a26ebe0becd37.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SnoovatarModal.cf221e852136acf1049c.js.map

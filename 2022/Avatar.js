@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Avatar.46d2b5d4e4a844dbba96.js
-// Retrieved at 8/31/2022, 6:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Avatar.b8e5a63cf17e727dace5.js
+// Retrieved at 8/31/2022, 7:30:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Avatar"], {
 		"./src/reddit/components/SnoovatarModal/SnoovatarIframe.tsx": function(e, t, s) {
@@ -30,8 +30,8 @@
 					return m.set(t, s)
 				}), u && m.set("source", u);
 				const b = Object(r.e)(e => e.user.session),
-					x = Object(a.useRef)(null),
-					p = Object(a.useCallback)(e => {
+					p = Object(a.useRef)(null),
+					v = Object(a.useCallback)(e => {
 						b && e && e.postMessage({
 							type: "injectAuth",
 							headers: {
@@ -42,16 +42,16 @@
 					}, [b]);
 				return Object(a.useEffect)(() => {
 					var e;
-					return p(null === (e = null == x ? void 0 : x.current) || void 0 === e ? void 0 : e.contentWindow)
-				}, [x, p]), Object(a.useEffect)(() => {
+					return v(null === (e = null == p ? void 0 : p.current) || void 0 === e ? void 0 : e.contentWindow)
+				}, [p, v]), Object(a.useEffect)(() => {
 					const e = e => {
-						"refreshAuth" === (null == e ? void 0 : e.data) && p(e.source)
+						"refreshAuth" === (null == e ? void 0 : e.data) && v(e.source)
 					};
 					return window.addEventListener("message", e), () => window.removeEventListener("message", e)
-				}, [p]), n.a.createElement("div", {
+				}, [v]), n.a.createElement("div", {
 					className: Object(d.a)(l.a.iframeContainer, t)
 				}, n.a.createElement("iframe", {
-					ref: x,
+					ref: p,
 					src: `${c.a.snoovatarUrl}/static/client/?${m.toString()}`
 				}))
 			})
@@ -76,89 +76,92 @@
 			"use strict";
 			s.r(t);
 			var a = s("./src/config.ts"),
-				n = s("./node_modules/react/index.js"),
-				r = s.n(n),
-				o = s("./node_modules/react-redux/es/index.js"),
-				c = s("./src/lib/classNames/index.ts"),
-				d = s("./src/lib/env/index.ts"),
+				n = s("./src/lib/classNames/index.ts"),
+				r = s("./src/lib/env/index.ts"),
+				o = s("./node_modules/react/index.js"),
+				c = s.n(o),
+				d = s("./node_modules/react-redux/es/index.js"),
 				i = s("./src/reddit/actions/login.ts"),
 				l = s("./src/reddit/contexts/NavbarExp.ts"),
-				u = s("./src/reddit/helpers/trackers/snoovatar.ts"),
-				m = s("./src/reddit/hooks/useTracking.ts"),
-				b = s("./src/reddit/selectors/experiments/econ/index.ts"),
-				x = s("./src/reddit/selectors/experiments/econ/paymentsSandbox.ts"),
-				p = s("./src/reddit/selectors/user.ts"),
-				v = s("./src/telemetry/index.ts"),
+				u = s("./src/reddit/endpoints/governance/crypto.ts"),
+				m = s("./src/reddit/helpers/trackers/snoovatar.ts"),
+				b = s("./src/reddit/hooks/useTracking.ts"),
+				p = s("./src/reddit/selectors/experiments/econ/index.ts"),
+				v = s("./src/reddit/selectors/experiments/econ/paymentsSandbox.ts"),
+				x = s("./src/reddit/selectors/user.ts"),
+				E = s("./src/telemetry/index.ts"),
 				O = s("./src/reddit/components/SnoovatarModal/SnoovatarIframe.tsx"),
-				E = s("./src/reddit/pages/Avatar/index.m.less"),
-				j = s.n(E);
-			const _ = !(Object(d.c)() || Object(d.b)()),
-				f = {
+				j = s("./src/reddit/pages/Avatar/index.m.less"),
+				_ = s.n(j);
+			const f = !(Object(r.c)() || Object(r.b)()),
+				h = {
 					GRAPHQL_URL: a.a.gqlUrl,
-					IS_DEVELOPMENT: _,
-					IS_PRODUCTION: !_,
+					IS_DEVELOPMENT: f,
+					IS_PRODUCTION: !f,
 					MOCKING_ENABLED: !1,
 					SNOOVATAR_BASE_URL: a.a.snoovatarUrl,
 					SNOOVATAR_API_URL: `${a.a.snoovatarUrl}/api`
 				},
-				h = r.a.lazy(() => Promise.all([s.e(0), s.e(1), s.e(2), s.e(3), s.e(4), s.e(5)]).then(s.bind(null, "./node_modules/@reddit/avatars/index.es.js")).then(e => ({
+				S = c.a.lazy(() => Promise.all([s.e(0), s.e(1), s.e(3), s.e(2), s.e(4), s.e(5)]).then(s.bind(null, "./node_modules/@reddit/avatars/index.es.js")).then(e => ({
 					default: e.DataWrapper
 				}))),
-				S = r.a.lazy(() => Promise.all([s.e(0), s.e(1), s.e(2), s.e(3), s.e(4), s.e(5)]).then(s.bind(null, "./node_modules/@reddit/avatars/index.es.js")).then(e => ({
+				A = c.a.lazy(() => Promise.all([s.e(0), s.e(1), s.e(3), s.e(2), s.e(4), s.e(5)]).then(s.bind(null, "./node_modules/@reddit/avatars/index.es.js")).then(e => ({
 					default: e.LoggedOut
 				}))),
-				A = r.a.lazy(() => Promise.all([s.e(0), s.e(1), s.e(2), s.e(3), s.e(4), s.e(5)]).then(s.bind(null, "./node_modules/@reddit/avatars/index.es.js")).then(e => ({
+				g = c.a.lazy(() => Promise.all([s.e(0), s.e(1), s.e(3), s.e(2), s.e(4), s.e(5)]).then(s.bind(null, "./node_modules/@reddit/avatars/index.es.js")).then(e => ({
 					default: e.Builder
 				})));
 			t.default = function() {
-				const e = Object(o.e)(e => e.user.session),
-					[t, d] = Object(n.useState)(!1),
-					E = Object(n.useContext)(l.a),
-					_ = Object(o.e)(x.a),
-					g = Object(n.useMemo)(() => ({
+				const e = Object(d.e)(e => e.user.session),
+					[t, r] = Object(o.useState)(!1),
+					j = Object(o.useContext)(l.a),
+					N = Object(d.e)(v.a),
+					L = Object(o.useMemo)(() => ({
 						headers: {
 							Authorization: `Bearer ${e.accessToken}`
 						},
 						expiration: new Date(e.expires).getTime()
 					}), [e]),
-					N = Object(m.a)(),
-					L = Object(o.e)(e => g && Object(b.e)(e));
-				Object(n.useEffect)(() => {
+					w = Object(b.a)(),
+					k = Object(d.e)(e => L && Object(p.e)(e));
+				Object(o.useEffect)(() => {
 					(async () => {
 						await s.e(7).then(s.t.bind(null, "./node_modules/@reddit/avatars/style.css", 7))
-					})(), N(u.r), d(!0)
-				}, [N]);
-				const w = Object(o.e)(e => !Object(p.Q)(e) && Object(b.B)(e)),
-					U = Object(o.d)(),
-					k = () => U(Object(i.openLoginModal)());
+					})(), w(m.r), r(!0)
+				}, [w]);
+				const y = Object(d.e)(e => !Object(x.Q)(e) && Object(p.B)(e)),
+					U = Object(d.d)(),
+					M = () => U(Object(i.openLoginModal)());
 				if (!e || !t) return null;
-				if (w) return r.a.createElement("div", {
-					className: Object(c.a)(j.a.container, {
-						[j.a.containerExp]: E
+				if (y) return c.a.createElement("div", {
+					className: Object(n.a)(_.a.container, {
+						[_.a.containerExp]: j
 					})
-				}, r.a.createElement(n.Suspense, {
-					fallback: r.a.createElement("div", null)
-				}, r.a.createElement(S, {
-					openLogin: k,
+				}, c.a.createElement(o.Suspense, {
+					fallback: c.a.createElement("div", null)
+				}, c.a.createElement(A, {
+					openLogin: M,
 					fancyBackground: !0
 				})));
-				const y = {
-					...f,
-					STRIPE_API_KEY: a.a.stripe.apiKey(_)
-				};
-				return r.a.createElement("div", {
-					className: Object(c.a)(j.a.container, {
-						[j.a.containerExp]: E
+				const T = f ? u.a.Rinkeby : u.a.Ethereum,
+					B = {
+						...h,
+						STRIPE_API_KEY: a.a.stripe.apiKey(N)
+					};
+				return c.a.createElement("div", {
+					className: Object(n.a)(_.a.container, {
+						[_.a.containerExp]: j
 					})
-				}, L ? r.a.createElement(n.Suspense, {
-					fallback: r.a.createElement("div", null)
-				}, r.a.createElement(h, {
+				}, k ? c.a.createElement(o.Suspense, {
+					fallback: c.a.createElement("div", null)
+				}, c.a.createElement(S, {
 					accessToken: e.accessToken,
-					authHeaders: g,
-					config: y,
-					sendEvent: v.a
-				}, r.a.createElement(A, null))) : r.a.createElement(O.a, {
-					className: j.a.content
+					authHeaders: L,
+					config: B,
+					sendEvent: E.a,
+					blockchainProvider: T
+				}, c.a.createElement(g, null))) : c.a.createElement(O.a, {
+					className: _.a.content
 				}))
 			}
 		},
@@ -173,4 +176,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Avatar.46d2b5d4e4a844dbba96.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Avatar.b8e5a63cf17e727dace5.js.map
