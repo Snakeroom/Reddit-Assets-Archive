@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~CountryPage~Frontpage~GovernanceReleaseNotesModal~ModListing~Mod~e3d63e32.2f57a7bc284c9fbd720e.js
-// Retrieved at 8/30/2022, 3:10:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~CountryPage~Frontpage~GovernanceReleaseNotesModal~ModListing~Mod~e3d63e32.3095d6a3467a4a8f29bf.js
+// Retrieved at 8/31/2022, 5:30:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~CountryPage~Frontpage~GovernanceReleaseNotesModal~ModListing~Mod~e3d63e32"], {
 		"./src/lib/intersectionObserver/index.ts": function(e, t, s) {
@@ -46,9 +46,9 @@
 		"./src/reddit/actions/subreddit/muting.ts": function(e, t, s) {
 			"use strict";
 			s.d(t, "a", (function() {
-				return g
+				return b
 			})), s.d(t, "b", (function() {
-				return f
+				return C
 			}));
 			var i = s("./node_modules/fbt/lib/FbtPublic.js"),
 				n = s("./src/lib/makeActionCreator/index.ts"),
@@ -61,29 +61,33 @@
 				h = s("./src/reddit/actions/subreddit/constants.ts"),
 				m = s("./src/reddit/actions/subreddit/notifications.ts");
 			const p = Object(n.a)(h.C),
-				u = Object(n.a)(h.f),
-				b = Object(n.a)(h.B),
-				g = e => {
+				u = (Object(n.a)(h.f), Object(n.a)(h.B), e => Object(o.f)({
+					id: e,
+					kind: c.b.Error,
+					text: i.fbt._("An error has occured. Please try again later", null, {
+						hk: "2FpsLy"
+					})
+				})),
+				b = e => {
 					let {
 						subredditId: t,
-						subredditName: s
+						subredditName: s,
+						successCallback: n
 					} = e;
-					return async (e, n, a) => {
+					return async (e, a, d) => {
 						let {
-							gqlContext: d
-						} = a;
-						const h = await ((e, t) => Object(r.a)(e, {
+							gqlContext: h
+						} = d;
+						const m = await ((e, t) => Object(r.a)(e, {
 								...l,
 								variables: {
 									input: {
 										subredditId: t
 									}
 								}
-							}))(d(), t),
-							m = `error-muting-${t}`;
-						h.ok ? (e(u({
-							subredditId: t
-						})), e(Object(o.f)({
+							}))(h(), t),
+							p = `error-muting-${t}`;
+						m.ok ? (n && n(), e(Object(o.f)({
 							kind: c.b.SuccessCommunityGreen,
 							text: i.fbt._("Muted r/{subreddit name}", [i.fbt._param("subreddit name", s)], {
 								hk: "Mg9mO"
@@ -91,40 +95,33 @@
 							buttonText: i.fbt._("Undo", null, {
 								hk: "1lx02Y"
 							}),
-							buttonAction: C({
+							buttonAction: g({
 								subredditId: t,
 								subredditName: s
 							})
-						}))) : e(Object(o.f)({
-							id: m,
-							kind: c.b.Error,
-							text: i.fbt._("An error has occured. Please try again later", null, {
-								hk: "2FpsLy"
-							})
-						}))
+						}))) : e(u(p))
 					}
 				},
-				C = e => {
+				g = e => {
 					let {
 						subredditId: t,
-						subredditName: s
+						subredditName: s,
+						successCallback: n
 					} = e;
-					return async (e, n, l) => {
+					return async (e, l, d) => {
 						let {
-							gqlContext: d
-						} = l;
-						const h = await ((e, t) => Object(r.a)(e, {
+							gqlContext: h
+						} = d;
+						const m = await ((e, t) => Object(r.a)(e, {
 								...a,
 								variables: {
 									input: {
 										subredditId: t
 									}
 								}
-							}))(d(), t),
-							m = `error-unmuting-${t}`;
-						h.ok ? (e(b({
-							subredditId: t
-						})), e(Object(o.f)({
+							}))(h(), t),
+							p = `error-unmuting-${t}`;
+						m.ok ? (n && n(), e(Object(o.f)({
 							kind: c.b.SuccessCommunityGreen,
 							text: i.fbt._("Unmuted r/{subreddit name}", [i.fbt._param("subreddit name", s)], {
 								hk: "Fhnht"
@@ -132,20 +129,14 @@
 							buttonText: i.fbt._("Undo", null, {
 								hk: "2siioQ"
 							}),
-							buttonAction: g({
+							buttonAction: b({
 								subredditId: t,
 								subredditName: s
 							})
-						}))) : e(Object(o.f)({
-							id: m,
-							kind: c.b.Error,
-							text: i.fbt._("An error has occured. Please try again later", null, {
-								hk: "2FpsLy"
-							})
-						}))
+						}))) : e(u(p))
 					}
 				},
-				f = e => {
+				C = e => {
 					let {
 						subredditId: t,
 						notificationLevel: s
@@ -166,7 +157,10 @@
 						}))(l(), t, h)).ok ? (e(p({
 							subredditId: t,
 							notificationLevel: s
-						})), e(Object(o.f)(Object(o.e)(Object(m.b)(s), c.b.SuccessCommunityGreen)))) : e(Object(o.f)({
+						})), e(Object(o.f)({
+							kind: c.b.SuccessCommunityGreen,
+							text: Object(m.b)(s)
+						}))) : e(Object(o.f)({
 							kind: c.b.Error,
 							text: i.fbt._("Failed to change the frequency of notifications from this community, please try again.", null, {
 								hk: "4avFFV"
@@ -2476,4 +2470,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~CountryPage~Frontpage~GovernanceReleaseNotesModal~ModListing~Mod~e3d63e32.2f57a7bc284c9fbd720e.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~CountryPage~Frontpage~GovernanceReleaseNotesModal~ModListing~Mod~e3d63e32.3095d6a3467a4a8f29bf.js.map

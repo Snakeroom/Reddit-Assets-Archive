@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CommunityNotificationSettings.c42c489e6d9aaca56ec9.js
-// Retrieved at 8/31/2022, 2:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CommunityNotificationSettings.fcb25f0bb94682e57f43.js
+// Retrieved at 8/31/2022, 5:30:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CommunityNotificationSettings"], {
 		"./node_modules/lodash/times.js": function(e, t, n) {
@@ -21,9 +21,9 @@
 		"./src/reddit/actions/subreddit/muting.ts": function(e, t, n) {
 			"use strict";
 			n.d(t, "a", (function() {
-				return h
+				return p
 			})), n.d(t, "b", (function() {
-				return O
+				return g
 			}));
 			var i = n("./node_modules/fbt/lib/FbtPublic.js"),
 				s = n("./src/lib/makeActionCreator/index.ts"),
@@ -36,29 +36,33 @@
 				u = n("./src/reddit/actions/subreddit/constants.ts"),
 				m = n("./src/reddit/actions/subreddit/notifications.ts");
 			const b = Object(s.a)(u.C),
-				f = Object(s.a)(u.f),
-				p = Object(s.a)(u.B),
-				h = e => {
+				f = (Object(s.a)(u.f), Object(s.a)(u.B), e => Object(o.f)({
+					id: e,
+					kind: l.b.Error,
+					text: i.fbt._("An error has occured. Please try again later", null, {
+						hk: "2FpsLy"
+					})
+				})),
+				p = e => {
 					let {
 						subredditId: t,
-						subredditName: n
+						subredditName: n,
+						successCallback: s
 					} = e;
-					return async (e, s, a) => {
+					return async (e, a, c) => {
 						let {
-							gqlContext: c
-						} = a;
-						const u = await ((e, t) => Object(r.a)(e, {
+							gqlContext: u
+						} = c;
+						const m = await ((e, t) => Object(r.a)(e, {
 								...d,
 								variables: {
 									input: {
 										subredditId: t
 									}
 								}
-							}))(c(), t),
-							m = `error-muting-${t}`;
-						u.ok ? (e(f({
-							subredditId: t
-						})), e(Object(o.f)({
+							}))(u(), t),
+							b = `error-muting-${t}`;
+						m.ok ? (s && s(), e(Object(o.f)({
 							kind: l.b.SuccessCommunityGreen,
 							text: i.fbt._("Muted r/{subreddit name}", [i.fbt._param("subreddit name", n)], {
 								hk: "Mg9mO"
@@ -66,40 +70,33 @@
 							buttonText: i.fbt._("Undo", null, {
 								hk: "1lx02Y"
 							}),
-							buttonAction: g({
+							buttonAction: h({
 								subredditId: t,
 								subredditName: n
 							})
-						}))) : e(Object(o.f)({
-							id: m,
-							kind: l.b.Error,
-							text: i.fbt._("An error has occured. Please try again later", null, {
-								hk: "2FpsLy"
-							})
-						}))
+						}))) : e(f(b))
 					}
 				},
-				g = e => {
+				h = e => {
 					let {
 						subredditId: t,
-						subredditName: n
+						subredditName: n,
+						successCallback: s
 					} = e;
-					return async (e, s, d) => {
+					return async (e, d, c) => {
 						let {
-							gqlContext: c
-						} = d;
-						const u = await ((e, t) => Object(r.a)(e, {
+							gqlContext: u
+						} = c;
+						const m = await ((e, t) => Object(r.a)(e, {
 								...a,
 								variables: {
 									input: {
 										subredditId: t
 									}
 								}
-							}))(c(), t),
-							m = `error-unmuting-${t}`;
-						u.ok ? (e(p({
-							subredditId: t
-						})), e(Object(o.f)({
+							}))(u(), t),
+							b = `error-unmuting-${t}`;
+						m.ok ? (s && s(), e(Object(o.f)({
 							kind: l.b.SuccessCommunityGreen,
 							text: i.fbt._("Unmuted r/{subreddit name}", [i.fbt._param("subreddit name", n)], {
 								hk: "Fhnht"
@@ -107,20 +104,14 @@
 							buttonText: i.fbt._("Undo", null, {
 								hk: "2siioQ"
 							}),
-							buttonAction: h({
+							buttonAction: p({
 								subredditId: t,
 								subredditName: n
 							})
-						}))) : e(Object(o.f)({
-							id: m,
-							kind: l.b.Error,
-							text: i.fbt._("An error has occured. Please try again later", null, {
-								hk: "2FpsLy"
-							})
-						}))
+						}))) : e(f(b))
 					}
 				},
-				O = e => {
+				g = e => {
 					let {
 						subredditId: t,
 						notificationLevel: n
@@ -141,7 +132,10 @@
 						}))(d(), t, u)).ok ? (e(b({
 							subredditId: t,
 							notificationLevel: n
-						})), e(Object(o.f)(Object(o.e)(Object(m.b)(n), l.b.SuccessCommunityGreen)))) : e(Object(o.f)({
+						})), e(Object(o.f)({
+							kind: l.b.SuccessCommunityGreen,
+							text: Object(m.b)(n)
+						}))) : e(Object(o.f)({
 							kind: l.b.Error,
 							text: i.fbt._("Failed to change the frequency of notifications from this community, please try again.", null, {
 								hk: "4avFFV"
@@ -797,4 +791,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommunityNotificationSettings.c42c489e6d9aaca56ec9.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommunityNotificationSettings.fcb25f0bb94682e57f43.js.map
