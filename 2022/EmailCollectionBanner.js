@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/EmailCollectionBanner.aee214049ae15c1d8cc2.js
-// Retrieved at 8/30/2022, 3:10:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/EmailCollectionBanner.e4952b33b0013ef4f511.js
+// Retrieved at 8/31/2022, 11:40:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["EmailCollectionBanner"], {
 		"./src/reddit/components/EmailCollection/Banner/index.m.less": function(e, t, n) {
@@ -39,8 +39,8 @@
 				h = n("./src/reddit/components/LayoutNavigation/Container.m.less"),
 				x = n.n(h),
 				g = n("./src/lib/lessComponent.tsx");
-			const y = g.a.div("BodyContainer", x.a),
-				E = g.a.div("SidebarPlaceholder", x.a),
+			const E = g.a.div("BodyContainer", x.a),
+				y = g.a.div("SidebarPlaceholder", x.a),
 				_ = g.a.div("InnerContainer", x.a),
 				C = Object(d.c)({
 					bladeOpen: e => !!Object(v.i)(e),
@@ -87,7 +87,7 @@
 					let c = 0;
 					return s && !e && t && (c += m.t), 0 !== this.state.bodyScrollOffset && (c -= this.state.bodyScrollOffset), a.a.createElement("div", {
 						className: this.props.className
-					}, a.a.createElement(y, {
+					}, a.a.createElement(E, {
 						onFocus: r,
 						onBlur: i
 					}, a.a.createElement(u.a, {
@@ -99,22 +99,21 @@
 						considerSidebar: o,
 						offsetLeft: c,
 						render: this.props.render
-					}))), o && a.a.createElement(E, null)))
+					}))), o && a.a.createElement(y, null)))
 				}
 			}
 			var L = g.a.wrapped(N(O), "Component", x.a),
 				S = n("./src/reddit/components/Settings/modalIds.ts"),
 				j = n("./src/reddit/components/TrackingHelper/index.tsx"),
-				k = n("./src/reddit/controls/Button/index.tsx"),
-				w = n("./src/reddit/helpers/trackers/emailCollection.ts"),
+				w = n("./src/reddit/controls/Button/index.tsx"),
+				k = n("./src/reddit/helpers/trackers/emailCollection.ts"),
 				B = n("./src/reddit/icons/svgs/Close/index.tsx"),
 				P = n("./src/reddit/models/User/index.ts"),
-				I = n("./src/reddit/selectors/experiments/emailEnablement.ts"),
-				H = n("./src/reddit/selectors/user.ts"),
-				D = n("./src/reddit/components/EmailCollection/Banner/index.m.less"),
-				q = n.n(D);
+				I = n("./src/reddit/selectors/user.ts"),
+				H = n("./src/reddit/components/EmailCollection/Banner/index.m.less"),
+				D = n.n(H);
 			const {
-				fbt: M
+				fbt: q
 			} = n("./node_modules/fbt/lib/FbtPublic.js");
 			t.default = e => {
 				let {
@@ -122,59 +121,54 @@
 				} = e;
 				const n = Object(o.d)(),
 					d = Object(j.b)(),
-					m = Object(o.e)(H.k),
-					p = Object(o.e)(I.b);
+					m = Object(o.e)(I.k);
 				Object(s.useEffect)(() => {
-					d(Object(w.f)("banner"))
+					d(Object(k.f)("banner"))
 				}, [d]);
-				const u = () => {
-					n(Object(c.h)(S.g)), d(Object(w.a)("banner"))
+				const p = () => {
+					n(Object(c.h)(S.g)), d(Object(k.a)("banner"))
 				};
 				return m ? a.a.createElement("div", {
-					className: Object(r.a)(q.a.wrapper, t)
+					className: Object(r.a)(D.a.wrapper, t)
 				}, a.a.createElement("div", {
-					className: q.a.topLine
+					className: D.a.topLine
 				}), a.a.createElement(L, {
-					containerClassName: q.a.innerContainer,
+					containerClassName: D.a.innerContainer,
 					considerSidebar: !0,
 					render: () => {
 						if (!m) return null;
-						const e = p ? M._("Verify your account", null, {
-								hk: "3lQEit"
-							}) : M._("{username}, add your email to verify your Reddit account.", [M._param("username", Object(P.e)(m))], {
+						const e = q._("{username}, add your email to verify your Reddit account.", [q._param("username", Object(P.e)(m))], {
 								hk: "1WZjMk"
 							}),
-							t = p ? M._("Add an email address to protect access to your account.", null, {
-								hk: "48ivhL"
-							}) : M._("Verify your email to prevent being locked out of your account.", null, {
+							t = q._("Verify your email to prevent being locked out of your account.", null, {
 								hk: "27IsZu"
 							});
 						return a.a.createElement("div", {
-							className: q.a.layout
+							className: D.a.layout
 						}, a.a.createElement(l.a, {
-							className: q.a.envelope
+							className: D.a.envelope
 						}), a.a.createElement("div", {
-							className: q.a.text
+							className: D.a.text
 						}, a.a.createElement("div", {
-							className: q.a.header
+							className: D.a.header
 						}, a.a.createElement("h2", {
-							className: q.a.title
-						}, e), a.a.createElement(k.a, {
-							onClick: u,
-							priority: k.c.Secondary
-						}, M._("Add email", null, {
+							className: D.a.title
+						}, e), a.a.createElement(w.a, {
+							onClick: p,
+							priority: w.c.Secondary
+						}, q._("Add email", null, {
 							hk: "3kllGi"
 						}))), a.a.createElement("p", {
-							className: q.a.description
+							className: D.a.description
 						}, t)))
 					}
 				}), a.a.createElement("button", {
-					className: q.a.close,
+					className: D.a.close,
 					onClick: () => {
-						n(Object(i.a)()), d(Object(w.e)("banner"))
+						n(Object(i.a)()), d(Object(k.e)("banner"))
 					}
 				}, a.a.createElement(B.a, {
-					className: q.a.closeIcon
+					className: D.a.closeIcon
 				}))) : null
 			}
 		},
@@ -360,4 +354,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EmailCollectionBanner.aee214049ae15c1d8cc2.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EmailCollectionBanner.e4952b33b0013ef4f511.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/OnboardingModal.9ab866adbb927cb97c54.js
-// Retrieved at 8/30/2022, 4:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/OnboardingModal.3d3b456ef5c986369943.js
+// Retrieved at 8/31/2022, 11:40:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["OnboardingModal"], {
 		"./node_modules/lodash/_baseRange.js": function(e, t) {
@@ -402,7 +402,7 @@
 						},
 						forceGeopopular: !0,
 						includeCommunityDUs: !1,
-						includeInterestTopics: !!p && !Object(b.tg)(p),
+						includeInterestTopics: !!p && !Object(b.rg)(p),
 						includeFeaturedAnnouncements: !0,
 						includeLiveEvents: !0,
 						includeIdentity: h && !(null === (r = null === (n = e.user.account) || void 0 === n ? void 0 : n.karma) || void 0 === r ? void 0 : r.total),
@@ -1986,9 +1986,9 @@
 					ie = Object(i.e)(rt.S),
 					ce = Object(i.e)(tt.g),
 					de = Object(i.e)(et.a),
-					le = de === Ie.bg.CloseOnboarding,
-					ue = de === Ie.bg.SkipTopicSelection,
-					me = de === Ie.bg.SmartSignal,
+					le = de === Ie.Zf.CloseOnboarding,
+					ue = de === Ie.Zf.SkipTopicSelection,
+					me = de === Ie.Zf.SmartSignal,
 					pe = Object(o.useCallback)(() => {
 						r(Object(p.g)(ke.a.ONBOARDING_MODAL_D2X)), ae && r(Object(b.g)()), f && (s(Object(F.t)()), Object(Ue.a)()), ce && ie && r(Object(u.startChangeUsernameFlow)())
 					}, [r, ie, ce, f, ae, s]),
@@ -4031,13 +4031,13 @@
 			const o = e => {
 					return !(Object(s.c)(e, {
 						experimentEligibilitySelector: s.a,
-						experimentName: r.Ae
-					}) === r.Qd)
+						experimentName: r.ye
+					}) === r.Pd)
 				},
 				a = e => Object(s.c)(e, {
 					experimentEligibilitySelector: s.a,
-					experimentName: r.Be
-				}) === r.Qd
+					experimentName: r.ze
+				}) === r.Pd
 		},
 		"./src/reddit/selectors/experiments/inAppNotification.ts": function(e, t, n) {
 			"use strict";
@@ -4207,4 +4207,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/OnboardingModal.9ab866adbb927cb97c54.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/OnboardingModal.3d3b456ef5c986369943.js.map

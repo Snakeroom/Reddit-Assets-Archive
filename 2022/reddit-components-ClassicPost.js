@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-ClassicPost.91a7c2da2c1b74211816.js
-// Retrieved at 8/30/2022, 4:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-ClassicPost.6c5d2e52e3c8ef0d9032.js
+// Retrieved at 8/31/2022, 11:40:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-ClassicPost"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -3795,22 +3795,18 @@
 			"use strict";
 			var n = s("./node_modules/react-redux/es/index.js"),
 				o = s("./node_modules/reselect/es/index.js"),
-				r = s("./src/reddit/actions/emailVerificationTooltip.ts"),
-				i = s("./src/reddit/actions/subscription/index.ts"),
-				a = s("./src/reddit/selectors/experiments/emailEnablement.ts"),
-				c = s("./src/reddit/selectors/subreddit.ts");
+				r = s("./src/reddit/actions/subscription/index.ts"),
+				i = s("./src/reddit/selectors/subreddit.ts");
 			t.a = Object(n.b)(() => Object(o.c)({
-				userIsSubscriber: c.hb,
-				emailEnablementJoinFollowVoteVariant: a.a
+				userIsSubscriber: i.hb
 			}), (e, t) => {
 				let {
 					identifier: s
 				} = t;
 				return {
-					onSubscribe: () => e(i.d([s], !0)),
-					onSubscriptionsRequested: () => e(i.e()),
-					onUnsubscribe: () => e(i.d([s], !1)),
-					toggleEmailVerificationTooltip: () => e(Object(r.c)("user_follow"))
+					onSubscribe: () => e(r.d([s], !0)),
+					onSubscriptionsRequested: () => e(r.e()),
+					onUnsubscribe: () => e(r.d([s], !1))
 				}
 			})
 		},
@@ -5713,8 +5709,8 @@
 			const r = e => {
 				return Object(o.c)(e, {
 					experimentEligibilitySelector: o.a,
-					experimentName: n.if
-				}) === n.Qd
+					experimentName: n.gf
+				}) === n.Pd
 			}
 		},
 		"./src/reddit/selectors/experiments/web2x_cta.ts": function(e, t, s) {
@@ -5726,10 +5722,10 @@
 				o = s("./src/reddit/constants/experiments.ts"),
 				r = s("./src/reddit/helpers/chooseVariant/index.ts");
 			const i = Object(n.a)(e => Object(r.c)(e, {
-					experimentName: o.jg,
+					experimentName: o.hg,
 					experimentEligibilitySelector: r.a
 				}), e => e),
-				a = Object(n.a)(i, e => e === o.ag)
+				a = Object(n.a)(i, e => e === o.Yf)
 		},
 		"./src/reddit/selectors/removedPosts.ts": function(e, t, s) {
 			"use strict";
@@ -5804,10 +5800,10 @@
 				r = s("./src/reddit/helpers/chooseVariant/index.ts"),
 				i = s("./src/reddit/selectors/posts.ts");
 			const a = e => Object(r.c)(e, {
-					experimentName: o.lf,
+					experimentName: o.jf,
 					experimentEligibilitySelector: r.a
 				}),
-				c = (e, t) => t === o.tf.Enabled && (null == e ? void 0 : e.isCreatedFromAdsUi) || (null == e ? void 0 : e.isSponsored),
+				c = (e, t) => t === o.rf.Enabled && (null == e ? void 0 : e.isCreatedFromAdsUi) || (null == e ? void 0 : e.isSponsored),
 				d = Object(n.a)(i.G, a, (e, t) => c(e, t));
 			Object(n.a)((e, t) => t, a, (e, t) => c(e, t))
 		},
@@ -5893,4 +5889,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ClassicPost.91a7c2da2c1b74211816.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ClassicPost.6c5d2e52e3c8ef0d9032.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-BurnPointsModal.d52c0fd35985ff45c146.js
-// Retrieved at 8/30/2022, 4:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-BurnPointsModal.f306fe608a3b3ce8eb73.js
+// Retrieved at 8/31/2022, 11:40:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Governance-TransactionModals-BurnPointsModal"], {
 		"./node_modules/dijkstrajs/dijkstra.js": function(e, t, n) {
@@ -1717,8 +1717,8 @@
 				I = n("./src/reddit/selectors/gov.ts"),
 				P = n("./src/reddit/components/Governance/TransactionModals/VaultTransactionModal/index.tsx"),
 				L = n("./src/lib/classNames/index.ts"),
-				z = n("./src/reddit/components/Governance/TokenAmount/index.tsx"),
-				R = n("./src/reddit/components/Governance/TransactionModals/ApprovalModal/Details.tsx"),
+				R = n("./src/reddit/components/Governance/TokenAmount/index.tsx"),
+				z = n("./src/reddit/components/Governance/TransactionModals/ApprovalModal/Details.tsx"),
 				F = n("./src/reddit/components/Governance/TransactionModals/Common/CurrentBalance.tsx"),
 				O = n("./src/reddit/components/Governance/TransactionModals/BurnPointsModal/Approval.m.less"),
 				k = n.n(O);
@@ -1733,7 +1733,7 @@
 				} = e;
 				return o.a.createElement("div", {
 					className: k.a.overview
-				}, o.a.createElement(z.a, {
+				}, o.a.createElement(R.a, {
 					amount: t,
 					className: k.a.amount,
 					subredditId: l.id
@@ -1751,9 +1751,9 @@
 			}
 
 			function D(e) {
-				return o.a.createElement(R.b, {
+				return o.a.createElement(z.b, {
 					values: [
-						[Object(R.a)(), e.contractAddress],
+						[Object(z.a)(), e.contractAddress],
 						[c.fbt._("Function", null, {
 							hk: "1Q0dwF"
 						}), "burn"],
@@ -2481,14 +2481,14 @@
 			const a = e => {
 					return Object(o.c)(e, {
 						experimentEligibilitySelector: o.a,
-						experimentName: r.Ce
-					}) === r.Qd
+						experimentName: r.Ae
+					}) === r.Pd
 				},
 				l = e => {
 					return Object(o.c)(e, {
 						experimentEligibilitySelector: o.a,
-						experimentName: r.ze
-					}) === r.Qd
+						experimentName: r.xe
+					}) === r.Pd
 				}
 		},
 		"./src/reddit/selectors/gov.ts": function(e, t, n) {
@@ -2545,4 +2545,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-BurnPointsModal.d52c0fd35985ff45c146.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-BurnPointsModal.f306fe608a3b3ce8eb73.js.map

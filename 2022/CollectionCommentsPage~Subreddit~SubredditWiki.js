@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~Subreddit~SubredditWiki.0ac2f4b6895c7b0b217f.js
-// Retrieved at 8/30/2022, 4:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~Subreddit~SubredditWiki.e2178cdd17c4efc60d77.js
+// Retrieved at 8/31/2022, 11:40:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~Subreddit~SubredditWiki", "AchievementsActions"], {
 		"./node_modules/lodash/random.js": function(e, t, r) {
@@ -1755,9 +1755,9 @@
 						hk: "36nXSp"
 					}))
 				}))),
-				Q = r("./src/lib/CSSVariableProvider/withTheme.tsx"),
-				X = r("./src/higherOrderComponents/makeAsync.tsx");
-			var $ = Object(X.a)({
+				X = r("./src/lib/CSSVariableProvider/withTheme.tsx"),
+				Q = r("./src/higherOrderComponents/makeAsync.tsx");
+			var $ = Object(Q.a)({
 					ErrorComponent: () => null,
 					LoadingComponent: () => null,
 					getComponent: () => r.e("HarbergerTaxBannerPurchaseCTA").then(r.bind(null, "./src/reddit/components/Governance/HarbergerTax/BannerPurchaseCTA/index.tsx")).then(e => e.default)
@@ -1766,7 +1766,7 @@
 				te = r("./src/reddit/constants/screenWidths.ts"),
 				re = r("./src/reddit/models/Theme/index.ts"),
 				ne = r("./src/reddit/models/Theme/NewColorSystem/index.ts");
-			const se = Object(Q.a)(e => {
+			const se = Object(X.a)(e => {
 				let {
 					className: t,
 					children: r,
@@ -2636,8 +2636,8 @@
 					stylesheet: e => e.stylesheets
 				}),
 				J = Object(i.b)(K),
-				Q = (e, t, r) => `<head>\n  <link rel="stylesheet" href="${e}">\n  <link rel="stylesheet" href="${t}">\n  <base target="_blank">\n</head>\n<body>${r}</body>`;
-			class X extends s.a.Component {
+				X = (e, t, r) => `<head>\n  <link rel="stylesheet" href="${e}">\n  <link rel="stylesheet" href="${t}">\n  <base target="_blank">\n</head>\n<body>${r}</body>`;
+			class Q extends s.a.Component {
 				constructor() {
 					super(...arguments), this.storeRef = e => {
 						this.iframe = e
@@ -2656,7 +2656,7 @@
 					this.iframe && this.iframe.contentWindow && this.iframeContent && (this.iframe.contentWindow.document.body && this.iframe.contentWindow.document.body.childNodes.length || this.writeIFrameDocument())
 				}
 				renderIframeContent(e) {
-					e.widget.stylesheetUrl && e.widget.textHtml && (this.iframeContent = Q(e.stylesheet, e.widget.stylesheetUrl, e.widget.textHtml))
+					e.widget.stylesheetUrl && e.widget.textHtml && (this.iframeContent = X(e.stylesheet, e.widget.stylesheetUrl, e.widget.textHtml))
 				}
 				render() {
 					const {
@@ -2674,7 +2674,7 @@
 					}))
 				}
 			}
-			var $ = J(X),
+			var $ = J(Q),
 				ee = r("./src/reddit/components/Widgets/Image/ImageFrame.m.less"),
 				te = r.n(ee);
 			var re = m.a.div("ImageFrame", te.a),
@@ -3477,8 +3477,8 @@
 				d = e => a.includes(e),
 				c = Object(n.a)(e => Object(i.c)(e, {
 					experimentEligibilitySelector: i.a,
-					experimentName: s.me
-				}), e => e === s.Qd)
+					experimentName: s.ke
+				}), e => e === s.Pd)
 		},
 		"./src/redditGQL/operations/SubredditUserAchievements.json": function(e) {
 			e.exports = JSON.parse('{"id":"92790c69eba6"}')
@@ -3488,4 +3488,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~Subreddit~SubredditWiki.0ac2f4b6895c7b0b217f.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~Subreddit~SubredditWiki.e2178cdd17c4efc60d77.js.map

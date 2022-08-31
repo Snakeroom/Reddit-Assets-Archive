@@ -1,41 +1,41 @@
-// https://www.redditstatic.com/desktop2x/NotificationsPrePromptLoader.22a0b972972641a554e1.js
-// Retrieved at 8/30/2022, 4:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/NotificationsPrePromptLoader.097a5683b5017af93ea1.js
+// Retrieved at 8/31/2022, 11:40:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["NotificationsPrePromptLoader"], {
-		"./src/reddit/components/NotificationsPrePrompt/index.m.less": function(e, t, n) {
+		"./src/reddit/components/NotificationsPrePrompt/index.m.less": function(e, n, t) {
 			e.exports = {
 				overlay: "_3Ig_EsWWVLquWs2yBBQjec",
 				backgroundAnimation: "_2iwhmPhcdf_cKfsjSxiNTC"
 			}
 		},
-		"./src/reddit/components/NotificationsPrePrompt/index.tsx": function(e, t, n) {
+		"./src/reddit/components/NotificationsPrePrompt/index.tsx": function(e, n, t) {
 			"use strict";
-			n.r(t);
-			var o = n("./node_modules/react/index.js"),
-				i = n.n(o),
-				c = n("./node_modules/react-redux/es/index.js"),
-				r = n("./src/higherOrderComponents/asModal/index.tsx"),
-				s = n("./src/lib/notifications/constants.ts"),
-				a = n("./src/reddit/components/TrackingHelper/index.tsx"),
-				u = n("./src/reddit/constants/experiments.ts"),
-				d = n("./src/reddit/helpers/trackers/notifications.ts"),
-				f = n("./src/reddit/helpers/chooseVariant/index.ts");
+			t.r(n);
+			var o = t("./node_modules/react/index.js"),
+				i = t.n(o),
+				c = t("./node_modules/react-redux/es/index.js"),
+				r = t("./src/higherOrderComponents/asModal/index.tsx"),
+				s = t("./src/lib/notifications/constants.ts"),
+				a = t("./src/reddit/components/TrackingHelper/index.tsx"),
+				u = t("./src/reddit/constants/experiments.ts"),
+				d = t("./src/reddit/helpers/trackers/notifications.ts"),
+				f = t("./src/reddit/helpers/chooseVariant/index.ts");
 
 			function l(e) {
-				const t = Object(f.c)(e, {
+				const n = Object(f.c)(e, {
 					experimentEligibilitySelector: f.a,
 					experimentName: u.Gb
 				});
-				return !Object(u.tg)(t) && t
+				return !Object(u.rg)(n) && n
 			}
-			var p, m = n("./src/reddit/components/NotificationsPrePrompt/index.m.less"),
-				_ = n.n(m);
+			var p, m = t("./src/reddit/components/NotificationsPrePrompt/index.m.less"),
+				_ = t.n(m);
 
 			function b() {
 				return (b = Object.assign || function(e) {
-					for (var t = 1; t < arguments.length; t++) {
-						var n = arguments[t];
-						for (var o in n) Object.prototype.hasOwnProperty.call(n, o) && (e[o] = n[o])
+					for (var n = 1; n < arguments.length; n++) {
+						var t = arguments[n];
+						for (var o in t) Object.prototype.hasOwnProperty.call(t, o) && (e[o] = t[o])
 					}
 					return e
 				}).apply(this, arguments)
@@ -43,9 +43,9 @@
 				e[e.ThreeSec = 3e3] = "ThreeSec", e[e.FiveSec = 5e3] = "FiveSec", e[e.TenSec = 1e4] = "TenSec"
 			}(p || (p = {}));
 			const O = Object(r.a)(() => null);
-			t.default = e => {
-				const t = Object(a.b)(),
-					n = Object(c.d)(),
+			n.default = e => {
+				const n = Object(a.b)(),
+					t = Object(c.d)(),
 					[r, f] = Object(o.useState)(),
 					m = Object(c.e)(l),
 					j = Object(o.useCallback)(() => m === u.id.ThreeSeconds ? p.ThreeSec : m === u.id.FiveSeconds ? p.FiveSec : p.TenSec, [m]);
@@ -53,12 +53,12 @@
 					if (m) {
 						const e = j();
 						f(setTimeout(() => {
-							n(Object(s.k)()), t(Object(d.g)())
+							t(Object(s.k)()), n(Object(d.g)())
 						}, e))
 					}
-				}, [n, m, t, j]), i.a.createElement(O, b({
+				}, [t, m, n, j]), i.a.createElement(O, b({
 					onOverlayClick: () => {
-						m && (clearTimeout(Number(r)), n(Object(s.k)()), t(Object(d.h)()))
+						m && (clearTimeout(Number(r)), t(Object(s.k)()), n(Object(d.h)()))
 					}
 				}, e, {
 					overlayClassName: _.a.overlay,
@@ -66,42 +66,42 @@
 				}))
 			}
 		},
-		"./src/reddit/helpers/trackers/notifications.ts": function(e, t, n) {
+		"./src/reddit/helpers/trackers/notifications.ts": function(e, n, t) {
 			"use strict";
-			n.d(t, "j", (function() {
+			t.d(n, "j", (function() {
 				return u
-			})), n.d(t, "d", (function() {
+			})), t.d(n, "d", (function() {
 				return d
-			})), n.d(t, "e", (function() {
+			})), t.d(n, "e", (function() {
 				return f
-			})), n.d(t, "f", (function() {
+			})), t.d(n, "f", (function() {
 				return l
-			})), n.d(t, "l", (function() {
+			})), t.d(n, "l", (function() {
 				return m
-			})), n.d(t, "m", (function() {
+			})), t.d(n, "m", (function() {
 				return _
-			})), n.d(t, "k", (function() {
+			})), t.d(n, "k", (function() {
 				return b
-			})), n.d(t, "c", (function() {
+			})), t.d(n, "c", (function() {
 				return j
-			})), n.d(t, "b", (function() {
+			})), t.d(n, "b", (function() {
 				return v
-			})), n.d(t, "i", (function() {
+			})), t.d(n, "i", (function() {
 				return y
-			})), n.d(t, "a", (function() {
+			})), t.d(n, "a", (function() {
 				return h
-			})), n.d(t, "n", (function() {
+			})), t.d(n, "n", (function() {
 				return x
-			})), n.d(t, "o", (function() {
+			})), t.d(n, "o", (function() {
 				return g
-			})), n.d(t, "h", (function() {
+			})), t.d(n, "h", (function() {
 				return S
-			})), n.d(t, "g", (function() {
+			})), t.d(n, "g", (function() {
 				return k
 			}));
-			var o = n("./src/reddit/selectors/telemetry.ts"),
-				i = n("./src/telemetry/index.ts"),
-				c = n("./src/telemetry/models/Event.ts");
+			var o = t("./src/reddit/selectors/telemetry.ts"),
+				i = t("./src/telemetry/index.ts"),
+				c = t("./src/telemetry/models/Event.ts");
 			var r;
 			! function(e) {
 				e.FREQUENT = "frequent", e.LOW = "low", e.OFF = "off"
@@ -139,11 +139,11 @@
 						source: "popup"
 					})
 				},
-				p = (e, t, n) => ({
+				p = (e, n, t) => ({
 					...o.n(e),
 					actionInfo: o.d(e, {
-						success: t,
-						reason: n
+						success: n,
+						reason: t
 					}),
 					noun: "push_token"
 				}),
@@ -161,9 +161,9 @@
 						source: "notification"
 					})
 				},
-				b = (e, t) => {
+				b = (e, n) => {
 					Object(i.a)({
-						...p(e, !1, t),
+						...p(e, !1, n),
 						action: c.c.Bail,
 						source: "notification"
 					})
@@ -179,26 +179,26 @@
 					source: "notification",
 					correlationId: void 0
 				}),
-				v = (e, t) => n => ({
-					...o.n(n),
+				v = (e, n) => t => ({
+					...o.n(t),
 					action: a(e),
 					email: {
-						type: t
+						type: n
 					},
 					noun: "email",
 					source: "email_app_settings"
 				}),
-				y = (e, t) => n => ({
-					...o.n(n),
+				y = (e, n) => t => ({
+					...o.n(t),
 					action: a(e),
 					notification: {
-						type: t
+						type: n
 					},
 					noun: "notification",
 					source: "notification_app_settings"
 				}),
-				h = e => t => ({
-					...o.n(t),
+				h = e => n => ({
+					...o.n(n),
 					source: "email_app_settings",
 					action: a(e),
 					noun: "email",
@@ -206,14 +206,14 @@
 						type: "all"
 					}
 				}),
-				x = (e, t, n) => i => ({
+				x = (e, n, t) => i => ({
 					...o.n(i),
 					action: "set_frequency",
-					noun: n,
+					noun: t,
 					source: "community_notifications",
 					subreddit: {
 						id: e,
-						name: t.toLowerCase()
+						name: n.toLowerCase()
 					}
 				}),
 				g = () => e => ({
@@ -240,4 +240,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/NotificationsPrePromptLoader.22a0b972972641a554e1.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/NotificationsPrePromptLoader.097a5683b5017af93ea1.js.map

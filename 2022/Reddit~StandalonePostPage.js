@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Reddit~StandalonePostPage.7e152c2696b9a303e88d.js
-// Retrieved at 8/30/2022, 4:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Reddit~StandalonePostPage.5fd4d1cfec1dca087c14.js
+// Retrieved at 8/31/2022, 11:40:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Reddit~StandalonePostPage"], {
 		"./src/higherOrderComponents/asModal/helpers.ts": function(e, t, n) {
@@ -463,37 +463,37 @@
 						parseInt(e) < t && M.current()
 					}, C())
 				}, [t, C, _]);
-				const F = Object(s.useRef)(0),
-					P = Object(s.useRef)(!1),
+				const P = Object(s.useRef)(0),
+					F = Object(s.useRef)(!1),
 					D = Object(s.useCallback)(e => {
 						e.forEach(e => {
 							const {
 								isIntersecting: t,
 								intersectionRatio: n
 							} = e, s = 1 !== n;
-							t ? (P.current = !0, k.current || (k.current = !0, B.current = setTimeout(() => {
+							t ? (F.current = !0, k.current || (k.current = !0, B.current = setTimeout(() => {
 								T.current(), M.current()
-							}, u())), F.current > 0 && (T.current(F.current), F.current = 0)) : s && (P.current = !1)
+							}, u())), P.current > 0 && (T.current(P.current), P.current = 0)) : s && (F.current = !1)
 						})
 					}, []);
 				Object(i.a)(I, D);
-				const [L, V] = Object(s.useState)(!1), U = Object(s.useCallback)(e => {
+				const [L, U] = Object(s.useState)(!1), V = Object(s.useCallback)(e => {
 					e.forEach(e => {
 						const {
 							isIntersecting: t,
 							intersectionRatio: n
 						} = e, s = 1 !== n;
-						t ? V(!0) : s && V(!1)
+						t ? U(!0) : s && U(!1)
 					})
 				}, []), W = Object(s.useRef)({
 					rootMargin: "2000px 0px 2000px 0px"
 				});
-				Object(i.a)(I, U, W.current);
+				Object(i.a)(I, V, W.current);
 				const q = Object(o.a)(t);
 				Object(s.useEffect)(() => {
 					if (void 0 !== q && q !== t) {
 						const e = t - q;
-						P.current ? T.current(e) : F.current += e
+						F.current ? T.current(e) : P.current += e
 					}
 					return () => {
 						clearTimeout(B.current), clearTimeout(R.current), clearTimeout(A.current)
@@ -1652,22 +1652,18 @@
 			"use strict";
 			var s = n("./node_modules/react-redux/es/index.js"),
 				r = n("./node_modules/reselect/es/index.js"),
-				o = n("./src/reddit/actions/emailVerificationTooltip.ts"),
-				a = n("./src/reddit/actions/subscription/index.ts"),
-				i = n("./src/reddit/selectors/experiments/emailEnablement.ts"),
-				c = n("./src/reddit/selectors/subreddit.ts");
+				o = n("./src/reddit/actions/subscription/index.ts"),
+				a = n("./src/reddit/selectors/subreddit.ts");
 			t.a = Object(s.b)(() => Object(r.c)({
-				userIsSubscriber: c.hb,
-				emailEnablementJoinFollowVoteVariant: i.a
+				userIsSubscriber: a.hb
 			}), (e, t) => {
 				let {
 					identifier: n
 				} = t;
 				return {
-					onSubscribe: () => e(a.d([n], !0)),
-					onSubscriptionsRequested: () => e(a.e()),
-					onUnsubscribe: () => e(a.d([n], !1)),
-					toggleEmailVerificationTooltip: () => e(Object(o.c)("user_follow"))
+					onSubscribe: () => e(o.d([n], !0)),
+					onSubscriptionsRequested: () => e(o.e()),
+					onUnsubscribe: () => e(o.d([n], !1))
 				}
 			})
 		},
@@ -3141,8 +3137,8 @@
 			const o = e => {
 				return Object(r.c)(e, {
 					experimentEligibilitySelector: r.a,
-					experimentName: s.if
-				}) === s.Qd
+					experimentName: s.gf
+				}) === s.Pd
 			}
 		},
 		"./src/reddit/selectors/userPrefs.ts": function(e, t, n) {
@@ -3227,4 +3223,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit~StandalonePostPage.7e152c2696b9a303e88d.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit~StandalonePostPage.5fd4d1cfec1dca087c14.js.map

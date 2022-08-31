@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/TopWeekPostsDiscoveryUnit.5a1efe0e59c43d68aaae.js
-// Retrieved at 8/30/2022, 3:10:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/TopWeekPostsDiscoveryUnit.5aacaa05d07f91cfd2d3.js
+// Retrieved at 8/31/2022, 11:40:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["TopWeekPostsDiscoveryUnit"], {
 		"./src/reddit/components/DiscoveryUnit/InFeedChaining/Post/Body/index.m.less": function(e, t, s) {
@@ -191,8 +191,8 @@
 				G = s("./src/reddit/controls/Button/index.tsx"),
 				q = s("./src/reddit/controls/InternalLink/index.tsx"),
 				X = s("./src/reddit/components/DiscoveryUnit/InFeedChaining/Post/Header/index.m.less"),
-				V = s.n(X);
-			var Q = e => {
+				Q = s.n(X);
+			var V = e => {
 					const {
 						className: t,
 						getSubscribeEventFactory: s,
@@ -201,24 +201,24 @@
 						subredditOrProfile: o
 					} = e, c = Object(P.h)(o) ? J.a.PROFILE : J.a.SUBREDDIT;
 					return n.a.createElement("div", {
-						className: Object(a.a)(V.a.header, t)
+						className: Object(a.a)(Q.a.header, t)
 					}, n.a.createElement(q.default, {
-						className: V.a.iconLink,
+						className: Q.a.iconLink,
 						"data-redditstyle": !0,
 						to: o.url,
 						onMouseDown: r
 					}, n.a.createElement(R.b, {
-						className: V.a.icon,
+						className: Q.a.icon,
 						subredditOrProfile: o
 					})), n.a.createElement("div", {
-						className: V.a.name
+						className: Q.a.name
 					}, n.a.createElement(q.default, {
-						className: V.a.link,
+						className: Q.a.link,
 						"data-redditstyle": !0,
 						to: o.url,
 						onMouseDown: r
 					}, Object(K.b)(o.displayText || o.name, c))), i && n.a.createElement(z.a, {
-						className: V.a.subscribe,
+						className: Q.a.subscribe,
 						"data-redditstyle": !0,
 						getEventFactory: s,
 						identifier: {
@@ -276,7 +276,7 @@
 						className: ee.a.background,
 						"data-redditstyle": !0,
 						flairStyleTemplate: r
-					}, c && n.a.createElement(Q, {
+					}, c && n.a.createElement(V, {
 						getSubscribeEventFactory: this.getSubscribeEventFactory,
 						onSubredditOrProfileClick: this.trackSubredditOrProfileClicked,
 						subredditOrProfile: c,
@@ -458,20 +458,18 @@
 							doNotHideOtherSubscribeButtons: u,
 							getEventFactory: b,
 							onSubscriptionsRequested: p,
-							toggleEmailVerificationTooltip: h,
-							emailEnablementJoinFollowVoteVariant: x,
-							...v
-						} = this.props, y = Object(c.a)({
+							...h
+						} = this.props, x = Object(c.a)({
 							type: t.type,
 							key: "subscribe"
 						});
 						return n.a.createElement(a.t, m({
 							className: e,
-							priority: v.shouldReverseColor ? a.c.Secondary : a.c.Primary,
+							priority: h.shouldReverseColor ? a.c.Secondary : a.c.Primary,
 							size: a.d.XSP,
-							text: y,
+							text: x,
 							onClick: this.onClick
-						}, v, {
+						}, h, {
 							id: `subscribe-button-${i}`,
 							onMouseEnter: this.onMouseEnter,
 							onMouseLeave: this.onMouseLeave
@@ -497,4 +495,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/TopWeekPostsDiscoveryUnit.5a1efe0e59c43d68aaae.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/TopWeekPostsDiscoveryUnit.5aacaa05d07f91cfd2d3.js.map

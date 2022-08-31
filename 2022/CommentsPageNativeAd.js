@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CommentsPageNativeAd.bce8c8971fa6fddc35a8.js
-// Retrieved at 8/30/2022, 4:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CommentsPageNativeAd.313c6e3e09d5ce672a28.js
+// Retrieved at 8/31/2022, 11:40:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CommentsPageNativeAd"], {
 		"./src/reddit/components/BlankPost/index.tsx": function(e, t, s) {
@@ -81,9 +81,9 @@
 				O = s("./src/reddit/components/JSAPIContainers/index.tsx"),
 				N = s("./src/reddit/components/PostContainer/index.tsx"),
 				f = s("./src/reddit/components/PostTitle/index.tsx"),
-				j = s("./src/reddit/constants/componentTestIds.ts"),
-				P = s("./src/reddit/controls/OutboundLink/index.tsx"),
-				_ = s("./src/reddit/helpers/search/renderMedia.tsx"),
+				P = s("./src/reddit/constants/componentTestIds.ts"),
+				_ = s("./src/reddit/controls/OutboundLink/index.tsx"),
+				j = s("./src/reddit/helpers/search/renderMedia.tsx"),
 				y = s("./src/reddit/components/PostTopMeta/index.tsx"),
 				S = s("./src/higherOrderComponents/withAdClickLocation/Locations.ts"),
 				k = s("./src/reddit/components/AuthorLink/index.tsx"),
@@ -238,7 +238,7 @@
 					const i = Object(l.a)(T.a.styledOutboundLink, {
 						[T.a.ctaExperiment]: o
 					});
-					return r.a.createElement(P.b, {
+					return r.a.createElement(_.b, {
 						className: i,
 						href: a.source.url,
 						postId: a.id,
@@ -264,7 +264,7 @@
 						post: p,
 						redditStyle: h,
 						scrollerItemRef: b,
-						showMedia: P,
+						showMedia: _,
 						showCTAExperiment: S
 					} = this.props;
 					if (p.isBlank) return r.a.createElement(C.default, {
@@ -293,7 +293,7 @@
 						className: Object(l.a)(T.a.contentRow, {
 							[T.a.contentRowExpanded]: this.state.mediaExpanded
 						})
-					}, !(n && !P) && r.a.createElement(F, {
+					}, !(n && !_) && r.a.createElement(F, {
 						isMeta: p.isMeta,
 						post: p,
 						redditStyle: h,
@@ -320,7 +320,7 @@
 						className: k,
 						rel: "nofollow",
 						"data-click-id": "comments",
-						"data-test-id": j.a,
+						"data-test-id": P.a,
 						to: this.props.isOverlay ? Object(u.a)(p.permalink, !0) : Object(z.b)(p.permalink),
 						onClick: this.props.onClick
 					}, a.fbt._("Join the conversation", null, {
@@ -336,7 +336,7 @@
 						showCTAExperiment: S
 					}, p.callToAction)))), r.a.createElement("div", {
 						className: T.a.spacer
-					}), r.a.createElement(O.d, null))), Object(_.a)(p, T.a, b, t, !1, !1)), r.a.createElement("div", {
+					}), r.a.createElement(O.d, null))), Object(j.a)(p, T.a, b, t, !1, !1)), r.a.createElement("div", {
 						className: T.a.commentsSpacer
 					}))
 				}
@@ -439,11 +439,11 @@
 				o = s("./src/reddit/constants/experiments.ts"),
 				r = s("./src/reddit/helpers/chooseVariant/index.ts");
 			const n = Object(a.a)(e => Object(r.c)(e, {
-					experimentName: o.jg,
+					experimentName: o.hg,
 					experimentEligibilitySelector: r.a
 				}), e => e),
-				i = Object(a.a)(n, e => e === o.ag)
+				i = Object(a.a)(n, e => e === o.Yf)
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommentsPageNativeAd.bce8c8971fa6fddc35a8.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommentsPageNativeAd.313c6e3e09d5ce672a28.js.map

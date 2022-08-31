@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Frontpage.24f8a021b39eea3635a3.js
-// Retrieved at 8/30/2022, 4:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Frontpage.f8e1f5a4f1cc6318282c.js
+// Retrieved at 8/31/2022, 11:40:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Frontpage"], {
 		"./node_modules/intersection-observer/intersection-observer.js": function(e, t) {
@@ -556,7 +556,7 @@
 						},
 						forceGeopopular: !0,
 						includeCommunityDUs: !1,
-						includeInterestTopics: !!p && !Object(b.tg)(p),
+						includeInterestTopics: !!p && !Object(b.rg)(p),
 						includeFeaturedAnnouncements: !0,
 						includeLiveEvents: !0,
 						includeIdentity: f && !(null === (s = null === (a = e.user.account) || void 0 === a ? void 0 : a.karma) || void 0 === s ? void 0 : s.total),
@@ -2773,10 +2773,10 @@
 			}
 			var qe = a("./src/reddit/selectors/experiments/utils.ts");
 			const Ve = Object(u.a)(e => Object(Ze.c)(e, {
-					experimentName: Fe.ue,
+					experimentName: Fe.se,
 					experimentEligibilitySelector: Ze.a
 				}), qe.a),
-				We = Object(u.a)(Ve, e => e === Fe.xe.Enabled);
+				We = Object(u.a)(Ve, e => e === Fe.ve.Enabled);
 			var He = a("./src/reddit/selectors/experiments/loggedOutOneFeed.ts"),
 				Ge = a("./src/reddit/selectors/experiments/publicAccessNetwork.ts"),
 				Ke = a("./src/reddit/selectors/user.ts");
@@ -2809,7 +2809,7 @@
 							return Object(Ze.c)(e, {
 								experimentEligibilitySelector: Ke.Q,
 								experimentName: Fe.Nc
-							}) === Fe.Qd
+							}) === Fe.Pd
 						}(e)
 					},
 					isNavbarLikeMwebEnabled: d.a,
@@ -4857,20 +4857,18 @@
 							doNotHideOtherSubscribeButtons: m,
 							getEventFactory: p,
 							onSubscriptionsRequested: b,
-							toggleEmailVerificationTooltip: h,
-							emailEnablementJoinFollowVoteVariant: g,
-							...f
-						} = this.props, v = Object(o.a)({
+							...h
+						} = this.props, g = Object(o.a)({
 							type: t.type,
 							key: "subscribe"
 						});
 						return n.a.createElement(i.t, u({
 							className: e,
-							priority: f.shouldReverseColor ? i.c.Secondary : i.c.Primary,
+							priority: h.shouldReverseColor ? i.c.Secondary : i.c.Primary,
 							size: i.d.XSP,
-							text: v,
+							text: g,
 							onClick: this.onClick
-						}, f, {
+						}, h, {
 							id: `subscribe-button-${r}`,
 							onMouseEnter: this.onMouseEnter,
 							onMouseLeave: this.onMouseLeave
@@ -7358,8 +7356,8 @@
 					return Object(n.c)(e, {
 						experimentEligibilitySelector: o,
 						experimentName: s.jd
-					}) === s.Sd.Enabled
-				}(e) ? l.Achievements : t === s.Td.ControlBanner ? l.CommunitySpacesControl : t === s.Td.EnabledBanner ? l.CommunitySpaces : null
+					}) === s.Rd.Enabled
+				}(e) ? l.Achievements : t === s.Sd.ControlBanner ? l.CommunitySpacesControl : t === s.Sd.EnabledBanner ? l.CommunitySpaces : null
 			}! function(e) {
 				e.Achievements = "achievements", e.CommunitySpaces = "communitySpaces", e.CommunitySpacesControl = "communitySpaces--control"
 			}(l || (l = {}))
@@ -7376,13 +7374,13 @@
 			const r = e => {
 					return !(Object(n.c)(e, {
 						experimentEligibilitySelector: n.a,
-						experimentName: s.Ae
-					}) === s.Qd)
+						experimentName: s.ye
+					}) === s.Pd)
 				},
 				c = e => Object(n.c)(e, {
 					experimentEligibilitySelector: n.a,
-					experimentName: s.Be
-				}) === s.Qd
+					experimentName: s.ze
+				}) === s.Pd
 		},
 		"./src/reddit/selectors/experiments/inAppNotification.ts": function(e, t, a) {
 			"use strict";
@@ -7574,4 +7572,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Frontpage.24f8a021b39eea3635a3.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Frontpage.f8e1f5a4f1cc6318282c.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~Reddit.d29dbe64d73de6a770cc.js
-// Retrieved at 8/30/2022, 4:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~Reddit.c7de422ec17e8031a32b.js
+// Retrieved at 8/31/2022, 11:40:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~Reddit"], {
 		"./assets/fonts/NotoMono/font.less": function(e, t, n) {},
@@ -2331,7 +2331,7 @@
 			const D = e => _.d.reCaptchaEnterprise(e) && !Object(T.d)(e),
 				w = e => !!Object(S.c)(e, {
 					experimentEligibilitySelector: Object(I.d)(Object(I.b)(...a.d)),
-					experimentName: f.vf
+					experimentName: f.tf
 				}),
 				j = Object(r.b)("LOAD_RECAPTCHA_ENTERPRISE"),
 				C = () => l(e => p()([D, w, e => e.tracking.reCaptchaEnterprise.load === r.a.New], t => t(e)))(async e => {
@@ -11261,20 +11261,15 @@
 				}),
 				go = n("./src/reddit/actions/emailVerificationTooltip.ts");
 			const mo = {
-				isShowing: !1,
-				triggerSource: "none"
+				isShowing: !1
 			};
 			var vo = function() {
 					let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : mo,
 						t = arguments.length > 1 ? arguments[1] : void 0;
 					switch (t.type) {
-						case go.b:
-							return {
-								...e, isShowing: !e.isShowing
-							};
 						case go.a:
 							return {
-								...e, triggerSource: t.payload
+								...e, isShowing: !e.isShowing
 							};
 						default:
 							return e
@@ -25518,7 +25513,7 @@
 					if (!u(e)) return;
 					const t = Object(o.c)(e, {
 						experimentEligibilitySelector: l,
-						experimentName: a.je,
+						experimentName: a.he,
 						expEventOverride: !1
 					});
 					return null == t ? void 0 : t.toLocaleLowerCase()
@@ -25541,9 +25536,9 @@
 				},
 				b = e => !!p(e) && Object(o.c)(e, {
 					experimentEligibilitySelector: u,
-					experimentName: a.ke,
+					experimentName: a.ie,
 					expEventOverride: !1
-				}) !== a.le.Readonly
+				}) !== a.je.Readonly
 		},
 		"./src/reddit/selectors/experiments/serpTabPreserved.ts": function(e, t, n) {
 			"use strict";
@@ -25556,7 +25551,7 @@
 			const o = Object(a.a)(e => Object(s.c)(e, {
 				experimentEligibilitySelector: s.a,
 				experimentName: r.Hc
-			}), e => e === r.Qd)
+			}), e => e === r.Pd)
 		},
 		"./src/reddit/selectors/removedPosts.ts": function(e, t, n) {
 			"use strict";
@@ -25709,4 +25704,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit.d29dbe64d73de6a770cc.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit.c7de422ec17e8031a32b.js.map
