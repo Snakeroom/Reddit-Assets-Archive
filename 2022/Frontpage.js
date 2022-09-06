@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Frontpage.1fd38baeccc856a20868.js
-// Retrieved at 9/6/2022, 12:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Frontpage.e15869e200665e2e79e9.js
+// Retrieved at 9/6/2022, 1:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Frontpage"], {
 		"./node_modules/intersection-observer/intersection-observer.js": function(e, t) {
@@ -2004,6 +2004,125 @@
 			}
 			t.a = o
 		},
+		"./src/reddit/components/Econ/Audio/SpeakerRings/SpeakerRingInner.tsx": function(e, t, a) {
+			"use strict";
+			var s = a("./node_modules/react/index.js"),
+				n = a.n(s);
+			t.a = e => {
+				let {
+					className: t,
+					ringId: a
+				} = e;
+				return n.a.createElement("svg", {
+					className: t,
+					xmlns: "http://www.w3.org/2000/svg",
+					width: "49",
+					height: "49",
+					viewBox: "0 0 49 49",
+					fill: "none"
+				}, n.a.createElement("rect", {
+					opacity: "0.8",
+					x: "1",
+					y: "1",
+					width: "46",
+					height: "46",
+					rx: "23",
+					stroke: `url(#paint0_linear_284_569805-${a})`,
+					strokeWidth: "2"
+				}), n.a.createElement("defs", null, n.a.createElement("linearGradient", {
+					id: `paint0_linear_284_569805-${a}`,
+					x1: "-4.24542",
+					y1: "0.154669",
+					x2: "55.6993",
+					y2: "1.87207",
+					gradientUnits: "userSpaceOnUse"
+				}, n.a.createElement("stop", {
+					stopColor: "#FF538C"
+				}), n.a.createElement("stop", {
+					offset: "0.989583",
+					stopColor: "#FFAB39"
+				}))))
+			}
+		},
+		"./src/reddit/components/Econ/Audio/SpeakerRings/SpeakerRingMiddle.tsx": function(e, t, a) {
+			"use strict";
+			var s = a("./node_modules/react/index.js"),
+				n = a.n(s);
+			t.a = e => {
+				let {
+					className: t,
+					ringId: a
+				} = e;
+				return n.a.createElement("svg", {
+					className: t,
+					xmlns: "http://www.w3.org/2000/svg",
+					width: "56",
+					height: "56",
+					viewBox: "0 0 56 56",
+					fill: "none"
+				}, n.a.createElement("rect", {
+					opacity: "0.5",
+					x: "0.934437",
+					y: "1.15466",
+					width: "54",
+					height: "54",
+					rx: "27",
+					stroke: `url(#paint0_linear_284_569806-${a})`
+				}), n.a.createElement("defs", null, n.a.createElement("linearGradient", {
+					id: `paint0_linear_284_569806-${a}`,
+					x1: "-5.50082",
+					y1: "0.65467",
+					x2: "63.1858",
+					y2: "2.62253",
+					gradientUnits: "userSpaceOnUse"
+				}, n.a.createElement("stop", {
+					stopColor: "#FF538C"
+				}), n.a.createElement("stop", {
+					offset: "0.989583",
+					stopColor: "#FFAB39"
+				}))))
+			}
+		},
+		"./src/reddit/components/Econ/Audio/SpeakerRings/SpeakerRingOuter.tsx": function(e, t, a) {
+			"use strict";
+			var s = a("./node_modules/react/index.js"),
+				n = a.n(s);
+			t.a = e => {
+				let {
+					className: t,
+					ringId: a
+				} = e;
+				return n.a.createElement("svg", {
+					className: t,
+					xmlns: "http://www.w3.org/2000/svg",
+					width: "64",
+					height: "64",
+					viewBox: "0 0 64 64",
+					fill: "none"
+				}, n.a.createElement("rect", {
+					opacity: "0.3",
+					x: "0.684437",
+					y: "0.904663",
+					width: "62.5",
+					height: "62.5",
+					rx: "31.25",
+					stroke: `url(#paint0_linear_284_569807-${a})`,
+					strokeWidth: "0.5"
+				}), n.a.createElement("defs", null, n.a.createElement("linearGradient", {
+					id: `paint0_linear_284_569807-${a}`,
+					x1: "-6.36412",
+					y1: "0.654671",
+					x2: "72.3133",
+					y2: "2.90877",
+					gradientUnits: "userSpaceOnUse"
+				}, n.a.createElement("stop", {
+					stopColor: "#FF538C"
+				}), n.a.createElement("stop", {
+					offset: "0.989583",
+					stopColor: "#FFAB39"
+				}))))
+			}
+		},
 		"./src/reddit/components/Econ/Marketplace/InFeedUnit/async.tsx": function(e, t, a) {
 			"use strict";
 			var s = a("./node_modules/@loadable/component/dist/loadable.esm.js");
@@ -3326,118 +3445,20 @@
 		},
 		"./src/reddit/components/LiveBar/index.tsx": function(e, t, a) {
 			"use strict";
-			var s = a("./node_modules/react/index.js"),
-				n = a.n(s),
-				r = a("./node_modules/react-redux/es/index.js"),
-				c = a("./src/config.ts"),
-				i = a("./src/lib/classNames/index.ts");
-			var o = e => {
-				let {
-					className: t
-				} = e;
-				return n.a.createElement("svg", {
-					className: t,
-					xmlns: "http://www.w3.org/2000/svg",
-					width: "49",
-					height: "49",
-					viewBox: "0 0 49 49",
-					fill: "none"
-				}, n.a.createElement("rect", {
-					opacity: "0.8",
-					x: "1.93444",
-					y: "1.15466",
-					width: "46",
-					height: "46",
-					rx: "23",
-					stroke: "url(#paint0_linear_284_569805)",
-					strokeWidth: "2"
-				}), n.a.createElement("defs", null, n.a.createElement("linearGradient", {
-					id: "paint0_linear_284_569805",
-					x1: "-4.24542",
-					y1: "0.154669",
-					x2: "55.6993",
-					y2: "1.87207",
-					gradientUnits: "userSpaceOnUse"
-				}, n.a.createElement("stop", {
-					stopColor: "#FF538C"
-				}), n.a.createElement("stop", {
-					offset: "0.989583",
-					stopColor: "#FFAB39"
-				}))))
-			};
-			var l = e => {
-				let {
-					className: t
-				} = e;
-				return n.a.createElement("svg", {
-					className: t,
-					xmlns: "http://www.w3.org/2000/svg",
-					width: "56",
-					height: "56",
-					viewBox: "0 0 56 56",
-					fill: "none"
-				}, n.a.createElement("rect", {
-					opacity: "0.5",
-					x: "0.934437",
-					y: "1.15466",
-					width: "54",
-					height: "54",
-					rx: "27",
-					stroke: "url(#paint0_linear_284_569806)"
-				}), n.a.createElement("defs", null, n.a.createElement("linearGradient", {
-					id: "paint0_linear_284_569806",
-					x1: "-5.50082",
-					y1: "0.65467",
-					x2: "63.1858",
-					y2: "2.62253",
-					gradientUnits: "userSpaceOnUse"
-				}, n.a.createElement("stop", {
-					stopColor: "#FF538C"
-				}), n.a.createElement("stop", {
-					offset: "0.989583",
-					stopColor: "#FFAB39"
-				}))))
-			};
-			var d, u = e => {
-					let {
-						className: t
-					} = e;
-					return n.a.createElement("svg", {
-						className: t,
-						xmlns: "http://www.w3.org/2000/svg",
-						width: "64",
-						height: "64",
-						viewBox: "0 0 64 64",
-						fill: "none"
-					}, n.a.createElement("rect", {
-						opacity: "0.3",
-						x: "0.684437",
-						y: "0.904663",
-						width: "62.5",
-						height: "62.5",
-						rx: "31.25",
-						stroke: "url(#paint0_linear_284_569807)",
-						strokeWidth: "0.5"
-					}), n.a.createElement("defs", null, n.a.createElement("linearGradient", {
-						id: "paint0_linear_284_569807",
-						x1: "-6.36412",
-						y1: "0.654671",
-						x2: "72.3133",
-						y2: "2.90877",
-						gradientUnits: "userSpaceOnUse"
-					}, n.a.createElement("stop", {
-						stopColor: "#FF538C"
-					}), n.a.createElement("stop", {
-						offset: "0.989583",
-						stopColor: "#FFAB39"
-					}))))
-				},
+			var s, n = a("./node_modules/react/index.js"),
+				r = a.n(n),
+				c = a("./node_modules/react-redux/es/index.js"),
+				i = a("./src/config.ts"),
+				o = a("./src/lib/classNames/index.ts"),
+				l = a("./src/reddit/components/Econ/Audio/SpeakerRings/SpeakerRingInner.tsx"),
+				d = a("./src/reddit/components/Econ/Audio/SpeakerRings/SpeakerRingMiddle.tsx"),
+				u = a("./src/reddit/components/Econ/Audio/SpeakerRings/SpeakerRingOuter.tsx"),
 				m = a("./src/reddit/components/SubredditIcon/index.tsx"),
 				p = a("./src/reddit/components/UserIcon/index.tsx"),
 				b = a("./src/reddit/helpers/name/index.ts");
 			! function(e) {
 				e.talk = "LiveBarTalk", e.chat = "LiveBarChat"
-			}(d || (d = {}));
+			}(s || (s = {}));
 			var h = a("./src/reddit/selectors/telemetry.ts"),
 				g = a("./src/telemetry/models/Event.ts");
 			const f = (e, t, a) => ({
@@ -3446,8 +3467,8 @@
 					subreddit: h.jb(e, a)
 				}),
 				v = {
-					[d.chat]: "live_chat",
-					[d.talk]: "liveaudio"
+					[s.chat]: "live_chat",
+					[s.talk]: "liveaudio"
 				},
 				_ = e => {
 					let {
@@ -3477,18 +3498,18 @@
 			const {
 				fbt: N
 			} = a("./node_modules/fbt/lib/FbtPublic.js"), j = {
-				[d.chat]: N._("Chat", null, {
+				[s.chat]: N._("Chat", null, {
 					hk: "1k9rSM"
 				}),
-				[d.talk]: N._("Talk", null, {
+				[s.talk]: N._("Talk", null, {
 					hk: "35JKc7"
 				})
 			}, C = e => {
 				let {
 					item: t,
 					activeItemId: a,
-					setActiveItemId: s,
-					titleShouldMarquee: r,
+					setActiveItemId: n,
+					titleShouldMarquee: c,
 					sendEvent: p,
 					index: h,
 					isNightMode: g,
@@ -3497,11 +3518,11 @@
 				var v, x, E, k, C, A, S, I, w, P, T, L, M;
 				const {
 					post: B
-				} = t, F = a === B.id, R = (null === (x = null === (v = B.subreddit) || void 0 === v ? void 0 : v.styles) || void 0 === x ? void 0 : x.icon) || (null === (C = null === (k = null === (E = B.profile) || void 0 === E ? void 0 : E.styles) || void 0 === k ? void 0 : k.legacyIcon) || void 0 === C ? void 0 : C.url), D = (null === (A = B.subreddit) || void 0 === A ? void 0 : A.id) || (null === (S = B.profile) || void 0 === S ? void 0 : S.name), U = B.permalink || "", Z = t.__typename === d.talk ? null !== (w = null === (I = B.talkRoom) || void 0 === I ? void 0 : I.participantCount) && void 0 !== w ? w : 0 : null !== (P = B.commentCount) && void 0 !== P ? P : 0, q = t.__typename === d.talk ? null === (T = B.talkRoom) || void 0 === T ? void 0 : T.roomTitle : B.title, V = "SubredditPost" === B.__typename ? Object(b.c)(null === (L = B.subreddit) || void 0 === L ? void 0 : L.name) : Object(b.d)(null === (M = B.profile) || void 0 === M ? void 0 : M.redditorInfo.displayName);
-				return n.a.createElement("button", {
+				} = t, F = a === B.id, R = (null === (x = null === (v = B.subreddit) || void 0 === v ? void 0 : v.styles) || void 0 === x ? void 0 : x.icon) || (null === (C = null === (k = null === (E = B.profile) || void 0 === E ? void 0 : E.styles) || void 0 === k ? void 0 : k.legacyIcon) || void 0 === C ? void 0 : C.url), D = (null === (A = B.subreddit) || void 0 === A ? void 0 : A.id) || (null === (S = B.profile) || void 0 === S ? void 0 : S.name), U = B.permalink || "", Z = t.__typename === s.talk ? null !== (w = null === (I = B.talkRoom) || void 0 === I ? void 0 : I.participantCount) && void 0 !== w ? w : 0 : null !== (P = B.commentCount) && void 0 !== P ? P : 0, q = t.__typename === s.talk ? null === (T = B.talkRoom) || void 0 === T ? void 0 : T.roomTitle : B.title, V = "SubredditPost" === B.__typename ? Object(b.c)(null === (L = B.subreddit) || void 0 === L ? void 0 : L.name) : Object(b.d)(null === (M = B.profile) || void 0 === M ? void 0 : M.redditorInfo.displayName);
+				return r.a.createElement("button", {
 					id: f,
 					onClick: () => {
-						var e, a, s;
+						var e, a, n;
 						switch (p(_({
 							liveBarPosition: h,
 							postId: B.id,
@@ -3512,53 +3533,56 @@
 								roomTitle: (null === (a = t.post.talkRoom) || void 0 === a ? void 0 : a.roomTitle) || ""
 							} : void 0
 						})), t.__typename) {
-							case d.talk:
-								return window.open(`${c.a.redditUrl}/talk/${null===(s=B.talkRoom)||void 0===s?void 0:s.roomId}`);
-							case d.chat:
+							case s.talk:
+								return window.open(`${i.a.redditUrl}/talk/${null===(n=B.talkRoom)||void 0===n?void 0:n.roomId}`);
+							case s.chat:
 								return window.open(U + `${U.includes("?")?"&":"?"}${y.a}=true`)
 						}
 					},
-					className: Object(i.a)(O.a.pillContainer, {
+					className: Object(o.a)(O.a.pillContainer, {
 						[O.a.nightMode]: g
 					}),
-					onMouseEnter: () => s(B.id)
-				}, n.a.createElement("div", {
+					onMouseEnter: () => n(B.id)
+				}, r.a.createElement("div", {
 					className: O.a.subredditIconContainer
-				}, n.a.createElement(o, {
-					className: Object(i.a)(O.a.speakerRing, O.a.speakerRingInner, {
+				}, r.a.createElement(l.a, {
+					ringId: f,
+					className: Object(o.a)(O.a.speakerRing, O.a.speakerRingInner, {
 						[O.a.animatedRing]: F
 					})
-				}), F && n.a.createElement(n.a.Fragment, null, n.a.createElement(l, {
-					className: Object(i.a)(O.a.speakerRing, O.a.speakerRingMiddle)
-				}), n.a.createElement(u, {
-					className: Object(i.a)(O.a.speakerRing, O.a.speakerRingOuter)
-				})), n.a.createElement(m.b, {
-					className: Object(i.a)(O.a.subredditIcon, {
+				}), F && r.a.createElement(r.a.Fragment, null, r.a.createElement(d.a, {
+					ringId: f,
+					className: Object(o.a)(O.a.speakerRing, O.a.speakerRingMiddle)
+				}), r.a.createElement(u.a, {
+					ringId: f,
+					className: Object(o.a)(O.a.speakerRing, O.a.speakerRingOuter)
+				})), r.a.createElement(m.b, {
+					className: Object(o.a)(O.a.subredditIcon, {
 						[O.a.isDefaultIcon]: "" === R
 					}),
 					iconUrl: R
-				})), n.a.createElement("div", {
-					className: Object(i.a)(O.a.detailsInnerContainer)
-				}, n.a.createElement("div", {
+				})), r.a.createElement("div", {
+					className: Object(o.a)(O.a.detailsInnerContainer)
+				}, r.a.createElement("div", {
 					className: O.a.marqueeTitle
-				}, n.a.createElement("p", {
+				}, r.a.createElement("p", {
 					"data-title-id": `${B.id}`,
-					className: Object(i.a)(O.a.roomTitle, {
-						[O.a.animated]: F && r
+					className: Object(o.a)(O.a.roomTitle, {
+						[O.a.animated]: F && c
 					})
-				}, q), F && r && n.a.createElement("div", {
-					className: Object(i.a)(O.a.titleFadeContainer, O.a.leftFadeContainer, {
+				}, q), F && c && r.a.createElement("div", {
+					className: Object(o.a)(O.a.titleFadeContainer, O.a.leftFadeContainer, {
 						[O.a.nightMode]: g
 					})
-				}), n.a.createElement("div", {
-					className: Object(i.a)(O.a.titleFadeContainer, O.a.rightFadeContainer, {
+				}), r.a.createElement("div", {
+					className: Object(o.a)(O.a.titleFadeContainer, O.a.rightFadeContainer, {
 						[O.a.nightMode]: g
 					})
-				})), n.a.createElement("div", {
+				})), r.a.createElement("div", {
 					className: O.a.participantRow
-				}, n.a.createElement("p", {
+				}, r.a.createElement("p", {
 					className: O.a.participantCount
-				}, n.a.createElement("span", {
+				}, r.a.createElement("span", {
 					className: O.a.liveItemType
 				}, j[t.__typename]), Z > 0 ? N._("{participantCount} in {subredditName}", [N._param("participantCount", Z), N._param("subredditName", V)], {
 					hk: "2pp9CZ"
@@ -3576,16 +3600,16 @@
 				let {
 					onScrollToElement: t,
 					onChildVisible: a,
-					children: c
+					children: s
 				} = e;
-				const o = Object(s.createRef)(),
-					l = Object(r.e)(E.db),
-					[d, u] = Object(s.useState)(null),
-					[m, p] = Object(s.useState)(null),
-					[b, h] = Object(s.useState)(!1),
-					[g, f] = Object(s.useState)(!1);
-				Object(s.useEffect)(() => {
-					const e = o.current;
+				const i = Object(n.createRef)(),
+					l = Object(c.e)(E.db),
+					[d, u] = Object(n.useState)(null),
+					[m, p] = Object(n.useState)(null),
+					[b, h] = Object(n.useState)(!1),
+					[g, f] = Object(n.useState)(!1);
+				Object(n.useEffect)(() => {
+					const e = i.current;
 					if (!e) return;
 					const t = () => {
 						const t = e.getBoundingClientRect(),
@@ -3609,12 +3633,12 @@
 					return t(), e.addEventListener("scroll", t), () => {
 						e.removeEventListener("scroll", t)
 					}
-				}, [o, a]), Object(s.useEffect)(() => {
+				}, [i, a]), Object(n.useEffect)(() => {
 					h(Boolean(d)), f(Boolean(m))
 				}, [d, m]);
-				const v = Object(s.useCallback)(e => {
+				const v = Object(n.useCallback)(e => {
 						var a;
-						const s = o.current;
+						const s = i.current;
 						if (!s || !e) return;
 						let n = 0;
 						n = e.offsetLeft + e.getBoundingClientRect().width - s.getBoundingClientRect().width / 2.45, s.scroll({
@@ -3623,47 +3647,47 @@
 						});
 						const r = null === (a = e.id) || void 0 === a ? void 0 : a.split("__")[1];
 						r && t(r)
-					}, [o, t]),
-					_ = Object(s.useCallback)(() => v(m), [v, m]),
-					x = Object(s.useCallback)(() => v(d), [v, d]);
-				return n.a.createElement("div", {
-					className: Object(i.a)(T.a.container),
+					}, [i, t]),
+					_ = Object(n.useCallback)(() => v(m), [v, m]),
+					x = Object(n.useCallback)(() => v(d), [v, d]);
+				return r.a.createElement("div", {
+					className: Object(o.a)(T.a.container),
 					role: "region",
 					"aria-label": "carousel"
-				}, n.a.createElement("div", {
-					className: Object(i.a)(T.a.inner),
-					ref: o
-				}, s.Children.map(c, (e, t) => n.a.createElement("div", {
-					className: Object(i.a)(T.a.carouselItem),
+				}, r.a.createElement("div", {
+					className: Object(o.a)(T.a.inner),
+					ref: i
+				}, n.Children.map(s, (e, t) => r.a.createElement("div", {
+					className: Object(o.a)(T.a.carouselItem),
 					id: e.props.id,
 					key: t,
 					"data-position": t
-				}, e))), n.a.createElement("div", {
-					className: Object(i.a)(T.a.arrowButtonContainer, T.a.leftArrowContainer, {
+				}, e))), r.a.createElement("div", {
+					className: Object(o.a)(T.a.arrowButtonContainer, T.a.leftArrowContainer, {
 						[T.a.nightMode]: l,
 						[T.a.arrowVisible]: b
 					})
-				}, n.a.createElement("button", {
+				}, r.a.createElement("button", {
 					className: T.a.arrowButton,
 					onClick: x,
 					"aria-label": S.fbt._("previous items", null, {
 						hk: "44uTrz"
 					})
-				}, n.a.createElement(w.a, {
+				}, r.a.createElement(w.a, {
 					className: T.a.arrowIcon,
 					name: I.a.caret_left
-				}))), n.a.createElement("div", {
-					className: Object(i.a)(T.a.arrowButtonContainer, T.a.rightArrowContainer, {
+				}))), r.a.createElement("div", {
+					className: Object(o.a)(T.a.arrowButtonContainer, T.a.rightArrowContainer, {
 						[T.a.nightMode]: l,
 						[T.a.arrowVisible]: g
 					})
-				}, n.a.createElement("button", {
+				}, r.a.createElement("button", {
 					className: T.a.arrowButton,
 					onClick: _,
 					"aria-label": S.fbt._("next items", null, {
 						hk: "4EEfgp"
 					})
-				}, n.a.createElement(w.a, {
+				}, r.a.createElement(w.a, {
 					className: T.a.arrowIcon,
 					name: I.a.caret_right
 				}))))
@@ -3675,14 +3699,14 @@
 				let {
 					items: t
 				} = e;
-				const a = Object(s.useRef)(null),
-					[y, k] = Object(s.useState)(""),
-					[N, j] = Object(s.useState)(!1),
-					S = Object(r.e)(E.db),
-					I = Object(r.e)(A.a),
-					w = Object(s.useRef)([]),
+				const a = Object(n.useRef)(null),
+					[y, k] = Object(n.useState)(""),
+					[N, j] = Object(n.useState)(!1),
+					S = Object(c.e)(E.db),
+					I = Object(c.e)(A.a),
+					w = Object(n.useRef)([]),
 					P = Object(x.a)();
-				Object(s.useEffect)(() => {
+				Object(n.useEffect)(() => {
 					var e;
 					const t = null === (e = a.current) || void 0 === e ? void 0 : e.querySelector(`[data-title-id=${y}]`);
 					t && (e => {
@@ -3696,14 +3720,14 @@
 							}
 						}
 					})(t)
-				}, [y]), Object(s.useEffect)(() => {
+				}, [y]), Object(n.useEffect)(() => {
 					P((() => e => ({
 						...h.n(e),
 						source: "live_bar",
 						action: g.d.View,
 						noun: "live_bar_banner"
 					}))())
-				}, [P]), Object(s.useEffect)(() => {
+				}, [P]), Object(n.useEffect)(() => {
 					if (t.length > 0) {
 						let e = Boolean(y);
 						for (let a = 0; a < t.length && !e; a++) {
@@ -3715,14 +3739,14 @@
 				const T = t.filter(e => {
 					var t;
 					switch (e.__typename) {
-						case d.talk:
+						case s.talk:
 							return null === (t = null == e ? void 0 : e.post.talkRoom) || void 0 === t ? void 0 : t.isLive;
-						case d.chat:
+						case s.chat:
 							return I && e.post.subreddit
 					}
 				}).map((e, t) => {
-					var a, s, r, h, g, f, v, x, E;
-					if (y || 0 !== t || k(e.post.id), I) return n.a.createElement(C, {
+					var a, n, c, h, g, f, v, x, E;
+					if (y || 0 !== t || k(e.post.id), I) return r.a.createElement(C, {
 						id: `lbItem__${e.post.id}`,
 						key: e.post.id,
 						item: e,
@@ -3743,8 +3767,8 @@
 						roomTitle: L,
 						topUsers: B,
 						participantCount: F
-					} = w, R = null == B ? void 0 : B.slice(0, 3), D = y === A, U = (null === (s = null === (a = j.subreddit) || void 0 === a ? void 0 : a.styles) || void 0 === s ? void 0 : s.icon) || (null === (g = null === (h = null === (r = j.profile) || void 0 === r ? void 0 : r.styles) || void 0 === h ? void 0 : h.legacyIcon) || void 0 === g ? void 0 : g.url), Z = (null === (f = j.subreddit) || void 0 === f ? void 0 : f.id) || (null === (v = j.profile) || void 0 === v ? void 0 : v.name), q = "SubredditPost" === j.__typename ? Object(b.c)(null === (x = j.subreddit) || void 0 === x ? void 0 : x.name) : Object(b.d)(null === (E = j.profile) || void 0 === E ? void 0 : E.redditorInfo.displayName);
-					return n.a.createElement("button", {
+					} = w, R = null == B ? void 0 : B.slice(0, 3), D = y === A, U = (null === (n = null === (a = j.subreddit) || void 0 === a ? void 0 : a.styles) || void 0 === n ? void 0 : n.icon) || (null === (g = null === (h = null === (c = j.profile) || void 0 === c ? void 0 : c.styles) || void 0 === h ? void 0 : h.legacyIcon) || void 0 === g ? void 0 : g.url), Z = (null === (f = j.subreddit) || void 0 === f ? void 0 : f.id) || (null === (v = j.profile) || void 0 === v ? void 0 : v.name), q = "SubredditPost" === j.__typename ? Object(b.c)(null === (x = j.subreddit) || void 0 === x ? void 0 : x.name) : Object(b.d)(null === (E = j.profile) || void 0 === E ? void 0 : E.redditorInfo.displayName);
+					return r.a.createElement("button", {
 						id: `talk__${A}`,
 						key: `talk__${T}`,
 						onClick: () => {
@@ -3756,66 +3780,69 @@
 									roomTitle: null != L ? L : ""
 								},
 								subredditOrProfileId: Z,
-								itemType: d.talk
-							})), window.open(`${c.a.redditUrl}/talk/${T}`)
+								itemType: s.talk
+							})), window.open(`${i.a.redditUrl}/talk/${T}`)
 						},
-						className: Object(i.a)(O.a.pillContainer, {
+						className: Object(o.a)(O.a.pillContainer, {
 							[O.a.nightMode]: S
 						}),
 						onMouseEnter: () => k(A)
-					}, n.a.createElement("div", {
+					}, r.a.createElement("div", {
 						className: O.a.subredditIconContainer
-					}, n.a.createElement(o, {
-						className: Object(i.a)(O.a.speakerRing, O.a.speakerRingInner, {
+					}, r.a.createElement(l.a, {
+						ringId: A,
+						className: Object(o.a)(O.a.speakerRing, O.a.speakerRingInner, {
 							[O.a.animatedRing]: D
 						})
-					}), D && n.a.createElement(n.a.Fragment, null, n.a.createElement(l, {
-						className: Object(i.a)(O.a.speakerRing, O.a.speakerRingMiddle)
-					}), n.a.createElement(u, {
-						className: Object(i.a)(O.a.speakerRing, O.a.speakerRingOuter)
-					})), n.a.createElement(m.b, {
-						className: Object(i.a)(O.a.subredditIcon, {
+					}), D && r.a.createElement(r.a.Fragment, null, r.a.createElement(d.a, {
+						ringId: A,
+						className: Object(o.a)(O.a.speakerRing, O.a.speakerRingMiddle)
+					}), r.a.createElement(u.a, {
+						ringId: A,
+						className: Object(o.a)(O.a.speakerRing, O.a.speakerRingOuter)
+					})), r.a.createElement(m.b, {
+						className: Object(o.a)(O.a.subredditIcon, {
 							[O.a.isDefaultIcon]: "" === U
 						}),
 						iconUrl: U
-					})), n.a.createElement("div", {
-						className: Object(i.a)(O.a.detailsInnerContainer)
-					}, n.a.createElement("div", {
+					})), r.a.createElement("div", {
+						className: Object(o.a)(O.a.detailsInnerContainer)
+					}, r.a.createElement("div", {
 						className: O.a.marqueeTitle
-					}, n.a.createElement("p", {
+					}, r.a.createElement("p", {
 						"data-title-id": `${A}`,
-						className: Object(i.a)(O.a.roomTitle, {
+						className: Object(o.a)(O.a.roomTitle, {
 							[O.a.animated]: D && N
 						})
-					}, L), D && N && n.a.createElement("div", {
-						className: Object(i.a)(O.a.titleFadeContainer, O.a.leftFadeContainer, {
+					}, L), D && N && r.a.createElement("div", {
+						className: Object(o.a)(O.a.titleFadeContainer, O.a.leftFadeContainer, {
 							[O.a.nightMode]: S
 						})
-					}), n.a.createElement("div", {
-						className: Object(i.a)(O.a.titleFadeContainer, O.a.rightFadeContainer, {
+					}), r.a.createElement("div", {
+						className: Object(o.a)(O.a.titleFadeContainer, O.a.rightFadeContainer, {
 							[O.a.nightMode]: S
 						})
-					})), n.a.createElement("div", {
+					})), r.a.createElement("div", {
 						className: O.a.participantRow
-					}, n.a.createElement("div", {
+					}, r.a.createElement("div", {
 						className: O.a.topUsers
 					}, (null != R ? R : []).map((e, t) => {
 						var a, s;
-						return (e => "Redditor" === (null == e ? void 0 : e.__typename) || !!e.snoovatarIcon)(e) && n.a.createElement("div", {
+						return (e => "Redditor" === (null == e ? void 0 : e.__typename) || !!e.snoovatarIcon)(e) && r.a.createElement("div", {
 							key: `topuser__${t}`,
-							className: Object(i.a)(O.a.userIconContainer, {
+							className: Object(o.a)(O.a.userIconContainer, {
 								[O.a.userIconSnoovatar]: Boolean(e.snoovatarIcon)
 							})
-						}, n.a.createElement(p.a, {
+						}, r.a.createElement(p.a, {
 							userName: "",
 							iconUrl: (null === (a = e.icon) || void 0 === a ? void 0 : a.url) || "",
-							className: Object(i.a)(O.a.userIcon, {
+							className: Object(o.a)(O.a.userIcon, {
 								[O.a.userIconSnoovatar]: Boolean(e.snoovatarIcon),
 								[O.a.nightMode]: S
 							}),
 							isNSFW: (null === (s = e.profile) || void 0 === s ? void 0 : s.isNsfw) || !1
 						}))
-					})), n.a.createElement("p", {
+					})), r.a.createElement("p", {
 						className: O.a.participantCount
 					}, (null != F ? F : 0) > 0 ? M._("{participantCount} in {subredditName}", [M._param("participantCount", F), M._param("subredditName", q)], {
 						hk: "2pp9CZ"
@@ -3823,12 +3850,12 @@
 						hk: "JJOAC"
 					})))))
 				});
-				return T.length > 0 && y ? n.a.createElement("div", {
+				return T.length > 0 && y ? r.a.createElement("div", {
 					className: O.a.outer
-				}, n.a.createElement("div", {
+				}, r.a.createElement("div", {
 					ref: a,
 					className: O.a.scroller
-				}, n.a.createElement(L, {
+				}, r.a.createElement(L, {
 					onScrollToElement: e => {
 						setTimeout(() => {
 							k(e)
@@ -7572,4 +7599,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Frontpage.1fd38baeccc856a20868.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Frontpage.e15869e200665e2e79e9.js.map
