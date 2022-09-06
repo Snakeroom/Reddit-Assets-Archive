@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.f9772df54b76d9baf891.js
-// Retrieved at 9/6/2022, 2:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.9dca4a548b6cfbc415c8.js
+// Retrieved at 9/6/2022, 3:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Chat~Governance~Reddit"], {
 		"./assets/fonts/IBMPlexSans/font.less": function(e, t, i) {},
@@ -3561,11 +3561,11 @@
 				apiPassThroughHeaders: Object(r.e)({}.API_PASS_THROUGH_HEADERS || ""),
 				appName: {}.APP_NAME || "desktop2x",
 				assetPath: "https://www.redditstatic.com/desktop2x",
-				buildNumber: Object(r.c)("172488"),
+				buildNumber: Object(r.c)("172493"),
 				chatHelpUrl: {}.CHAT_HELP_URL || "https://reddit.zendesk.com/hc/en-us/sections/360008805652-Chat",
 				hlsVersion: "hls 0.12.4",
 				dashVersion: "dash 4.4.0",
-				buildTimestamp: Object(r.b)("1662487380"),
+				buildTimestamp: Object(r.b)("1662489872"),
 				cookieDomain: ".reddit.com",
 				giphyApiKey: "k2kwyMA6VeyHM6ZRT96OXDGaersnx73Z",
 				mediaUrl: "https://www.redditmedia.com",
@@ -6228,14 +6228,14 @@
 					}))
 				},
 				Q = (e, t, i) => {
-					console.log("%cStarting Raven %crelease %c6ec3e3eaf12a9713775facd1ecaa2046bc53daaf-production" + ` %cpublic url %c${y.a.sentryClientPublicURL}`, "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
+					console.log("%cStarting Raven %crelease %c1cd100f1a9f16b18ce28311518ebeefd1456e931-production" + ` %cpublic url %c${y.a.sentryClientPublicURL}`, "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
 					let n = [];
 					n = [new RegExp(`^${y.a.assetPath}`, "i")];
 					o.e({
 						attachStacktrace: !0,
 						dsn: y.a.sentryClientPublicURL,
 						whitelistUrls: n,
-						release: "6ec3e3eaf12a9713775facd1ecaa2046bc53daaf-production",
+						release: "1cd100f1a9f16b18ce28311518ebeefd1456e931-production",
 						environment: "production",
 						ignoreErrors: ["$ is not defined"],
 						integrations: [...Object(L.d)(), new d.Integrations.Breadcrumbs({
@@ -6771,7 +6771,7 @@
 							settings: r,
 							statusCode: s,
 							type: o,
-							releaseClient: "6ec3e3eaf12a9713775facd1ecaa2046bc53daaf-production",
+							releaseClient: "1cd100f1a9f16b18ce28311518ebeefd1456e931-production",
 							appName: t.statsAppName,
 							error: n ? JSON.parse(Object(l.a)(n)) : void 0
 						},
@@ -44173,7 +44173,7 @@
 			e.exports = JSON.parse('{"id":"72e76fc8e5c5"}')
 		},
 		"./src/redditGQL/operations/GetSubredditSettings.json": function(e) {
-			e.exports = JSON.parse('{"id":"d9b1156acba4"}')
+			e.exports = JSON.parse('{"id":"a4683de9b633"}')
 		},
 		"./src/redditGQL/operations/ModApprove.json": function(e) {
 			e.exports = JSON.parse('{"id":"660e0733e963"}')
@@ -44236,7 +44236,7 @@
 			e.exports = JSON.parse('{"id":"9d437bfa4b8b"}')
 		},
 		"./src/redditGQL/operations/UpdateSubredditSettings.json": function(e) {
-			e.exports = JSON.parse('{"id":"45bc06f8e487"}')
+			e.exports = JSON.parse('{"id":"1599f1c92638"}')
 		},
 		"./src/redditGQL/operations/UpdateVideoContentPermissionsSetting.json": function(e) {
 			e.exports = JSON.parse('{"id":"5f706173ed69"}')
@@ -49633,4 +49633,4 @@
 		"ignored /drone/src/node_modules/readable-stream/lib/internal/streams util": function(e, t) {}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.f9772df54b76d9baf891.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.9dca4a548b6cfbc415c8.js.map
