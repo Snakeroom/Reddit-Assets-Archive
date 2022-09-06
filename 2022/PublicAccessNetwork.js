@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PublicAccessNetwork.69a3d6f99c81430ae2a2.js
-// Retrieved at 8/31/2022, 6:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PublicAccessNetwork.c07a52bce50806f7b818.js
+// Retrieved at 9/6/2022, 9:30:20 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PublicAccessNetwork"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -284,16 +284,16 @@
 			const p = Object(a.a)(e => {
 				const t = Object(u.c)(e, {
 					experimentEligibilitySelector: u.a,
-					experimentName: m.Fe
+					experimentName: m.De
 				});
-				return Object(m.qg)(t) ? void 0 : t
+				return Object(m.og)(t) ? void 0 : t
 			}, e => {
 				const t = Object(u.c)(e, {
 					experimentEligibilitySelector: u.a,
-					experimentName: m.Ge
+					experimentName: m.Ee
 				});
-				return Object(m.qg)(t) ? void 0 : t
-			}, (e, t) => e === m.He.Enabled && t === m.He.Enabled);
+				return Object(m.og)(t) ? void 0 : t
+			}, (e, t) => e === m.Fe.Enabled && t === m.Fe.Enabled);
 			var b = s("./src/config.ts");
 			var h = s("./src/reddit/selectors/user.ts");
 			const v = e => {
@@ -669,7 +669,7 @@
 									icon: e.category_icon,
 									id: e.category_id,
 									name: e.category_name,
-									displayText: Object(m.pg)(e.category_name)
+									displayText: Object(m.ng)(e.category_name)
 								};
 								s.push(r.id), t[r.id] = r
 							}), {
@@ -1480,9 +1480,9 @@
 							a = Object(se.N)(s(), {
 								identifier: M.belongsTo
 							});
-						if (a && (e => W.Af.Redirect === Object(Q.b)(e, {
+						if (a && (e => W.yf.Redirect === Object(Q.b)(e, {
 								experimentEligibilitySelector: Z,
-								experimentName: W.tf
+								experimentName: W.rf
 							}))(s())) return void t(Object(o.c)(a.url));
 						if ((M.media && M.media.type) === F.o.LIVEVIDEO) {
 							const e = `/rpan${M.belongsTo.type===N.a.SUBREDDIT?a.url:"/"}${Object(g.y)(M.id)}`;
@@ -7941,11 +7941,11 @@
 				d = s("./node_modules/reselect/es/index.js");
 			const c = Object(d.a)(e => Object(r.c)(e, {
 					experimentEligibilitySelector: e => Object(i.h)(e) && Object(n.f)(e),
-					experimentName: o.rc
+					experimentName: o.qc
 				}), a.a),
 				l = Object(d.a)(e => Object(r.c)(e, {
 					experimentEligibilitySelector: e => !Object(i.h)(e) && Object(n.f)(e),
-					experimentName: o.qc
+					experimentName: o.pc
 				}), a.a),
 				m = Object(d.a)(c, l, (e, t) => e || t),
 				u = Object(d.a)(c, l, (e, t) => !(!e && !t))
@@ -7975,8 +7975,8 @@
 				a = s("./src/reddit/selectors/user.ts");
 			const i = Object(o.a)(e => Object(n.c)(e, {
 				experimentEligibilitySelector: a.Q,
-				experimentName: r.Gc
-			}), e => e === r.Od)
+				experimentName: r.Fc
+			}), e => e === r.Md)
 		},
 		"./src/reddit/selectors/i18n/index.ts": function(e, t, s) {
 			"use strict";
@@ -7991,7 +7991,7 @@
 				a = s("./src/reddit/selectors/experiments/nsfwListingBelow.ts");
 			const i = e => {
 					const t = Object(a.a)(e);
-					return Boolean(t) && !Object(r.qg)(t)
+					return Boolean(t) && !Object(r.og)(t)
 				},
 				d = Object(o.a)(i, n.d, (e, t) => e && !t)
 		},
@@ -8012,4 +8012,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PublicAccessNetwork.69a3d6f99c81430ae2a2.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PublicAccessNetwork.c07a52bce50806f7b818.js.map

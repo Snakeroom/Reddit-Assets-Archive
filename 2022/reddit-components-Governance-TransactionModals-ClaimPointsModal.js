@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-ClaimPointsModal.17e00188ff9653abe183.js
-// Retrieved at 8/31/2022, 6:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-ClaimPointsModal.1c72efb2d9141af68fd3.js
+// Retrieved at 9/6/2022, 9:30:20 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Governance-TransactionModals-ClaimPointsModal"], {
 		"./node_modules/dijkstrajs/dijkstra.js": function(e, t, r) {
@@ -1262,8 +1262,8 @@
 				A = Object(o.a)(v.r),
 				I = Object(o.a)(v.s),
 				O = Object(o.a)(v.t),
-				B = Object(o.a)(v.u),
-				M = Object(o.a)(v.v),
+				M = Object(o.a)(v.u),
+				B = Object(o.a)(v.v),
 				P = Object(o.a)(v.w),
 				R = Object(o.a)(v.x),
 				S = (e, t) => async (r, n, o) => {
@@ -1348,9 +1348,9 @@
 					let {
 						apiContext: o
 					} = n;
-					t(M());
+					t(B());
 					const s = await Object(p.a)(o(), e);
-					s.ok ? t(P(s.body)) : t(B({
+					s.ok ? t(P(s.body)) : t(M({
 						error: s.error
 					}))
 				}
@@ -1466,9 +1466,9 @@
 				A = r("./src/reddit/icons/svgs/Close/index.tsx"),
 				I = r("./src/reddit/selectors/user.ts"),
 				O = r("./src/reddit/components/Governance/TransactionModals/Common/Bullet.tsx"),
-				B = r("./src/reddit/components/Governance/TransactionModals/Common/QRCode.tsx"),
-				M = r("./src/reddit/components/Governance/TransactionModals/CreateVaultModal/index.m.less"),
-				P = r.n(M);
+				M = r("./src/reddit/components/Governance/TransactionModals/Common/QRCode.tsx"),
+				B = r("./src/reddit/components/Governance/TransactionModals/CreateVaultModal/index.m.less"),
+				P = r.n(B);
 			const {
 				fbt: R
 			} = r("./node_modules/fbt/lib/FbtPublic.js");
@@ -1522,7 +1522,7 @@
 						hk: "3C5vxO"
 					})))), s.a.createElement("section", {
 						className: P.a.rightSection
-					}, s.a.createElement(B.a, {
+					}, s.a.createElement(M.a, {
 						url: Object(N.a)("http://www.reddit.com/vault/", {
 							u: r
 						}),
@@ -2281,14 +2281,14 @@
 			const s = e => {
 					return Object(o.c)(e, {
 						experimentEligibilitySelector: o.a,
-						experimentName: n.ze
-					}) === n.Od
+						experimentName: n.xe
+					}) === n.Md
 				},
 				a = e => {
 					return Object(o.c)(e, {
 						experimentEligibilitySelector: o.a,
-						experimentName: n.we
-					}) === n.Od
+						experimentName: n.ue
+					}) === n.Md
 				}
 		},
 		"./src/reddit/selectors/gov.ts": function(e, t, r) {
@@ -2348,4 +2348,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-ClaimPointsModal.17e00188ff9653abe183.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-ClaimPointsModal.1c72efb2d9141af68fd3.js.map

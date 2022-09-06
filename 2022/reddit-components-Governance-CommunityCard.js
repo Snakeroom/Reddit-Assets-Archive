@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Governance-CommunityCard.40c93b97a4ce651a3264.js
-// Retrieved at 8/31/2022, 6:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Governance-CommunityCard.e962d47f439f6a5d619a.js
+// Retrieved at 9/6/2022, 9:30:20 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Governance-CommunityCard"], {
 		"./src/lib/bigNumberUtils/percent.ts": function(e, t, n) {
@@ -195,9 +195,9 @@
 			})), n.d(t, "f", (function() {
 				return w
 			})), n.d(t, "g", (function() {
-				return L
-			})), n.d(t, "d", (function() {
 				return M
+			})), n.d(t, "d", (function() {
+				return L
 			})), n.d(t, "e", (function() {
 				return G
 			})), n.d(t, "h", (function() {
@@ -234,8 +234,8 @@
 				T = Object(s.a)(C.u),
 				P = Object(s.a)(C.v),
 				S = Object(s.a)(C.w),
-				L = Object(s.a)(C.x),
-				M = (e, t) => async (n, r, s) => {
+				M = Object(s.a)(C.x),
+				L = (e, t) => async (n, r, s) => {
 					let o, {
 							apiContext: i,
 							gqlContext: c
@@ -456,8 +456,8 @@
 				T = n("./src/reddit/actions/toaster.ts"),
 				P = n("./src/reddit/actions/tooltip.ts"),
 				S = n("./src/reddit/contexts/ApiContext.tsx"),
-				L = n("./src/reddit/controls/Dropdown/index.tsx"),
-				M = n("./src/reddit/controls/Dropdown/Row.tsx"),
+				M = n("./src/reddit/controls/Dropdown/index.tsx"),
+				L = n("./src/reddit/controls/Dropdown/Row.tsx"),
 				G = n("./src/reddit/endpoints/governance/crypto.ts"),
 				R = n("./src/reddit/helpers/governance/ethereum.ts"),
 				D = n("./src/reddit/icons/svgs/Settings/index.tsx"),
@@ -465,7 +465,7 @@
 				B = n("./src/reddit/selectors/tooltip.ts"),
 				V = n("./src/reddit/components/Governance/CommunityCard/CommunityTokens/BlockchainWalletInfo/index.m.less"),
 				F = n.n(V);
-			const W = Object(w.a)(L.a),
+			const W = Object(w.a)(M.a),
 				H = "BlockchainWalletInfo--SettingsMenu";
 			class $ extends i.a.PureComponent {
 				constructor() {
@@ -507,17 +507,17 @@
 						tooltipId: H,
 						isOpen: e,
 						renderContentsHidden: !0
-					}, i.a.createElement(M.b, {
+					}, i.a.createElement(L.b, {
 						displayText: s.fbt._("Copy My Wallet Address", null, {
 							hk: "16YUPg"
 						}),
 						onClick: this.onCopyToClipboard
-					}), r.blockchainProvider && i.a.createElement(M.b, {
+					}), r.blockchainProvider && i.a.createElement(L.b, {
 						displayText: s.fbt._("Remove My Wallet", null, {
 							hk: "1rH7ul"
 						}),
 						onClick: this.onRemoveMyWallet
-					}), i.a.createElement(M.b, {
+					}), i.a.createElement(L.b, {
 						displayText: s.fbt._("Track {tokenName} in MetaMask", [s.fbt._param("tokenName", r.name)], {
 							hk: "qDCic"
 						}),
@@ -831,7 +831,7 @@
 				fbt: Se
 			} = n("./node_modules/fbt/lib/FbtPublic.js");
 
-			function Le(e) {
+			function Me(e) {
 				const [t, n] = Object(we.a)("MAINNET_ANNOUNCEMENT", !1), r = Object(a.d)(), {
 					openModal: s
 				} = Object(je.a)({
@@ -883,8 +883,8 @@
 					hk: "1uR5ws"
 				}))) : null
 			}
-			var Me = n("./src/reddit/components/Governance/CommunityCard/index.m.less"),
-				Ge = n.n(Me);
+			var Le = n("./src/reddit/components/Governance/CommunityCard/index.m.less"),
+				Ge = n.n(Le);
 			const Re = Object(b.c)({
 				isMainnet: u.b,
 				distribution: (e, t) => e.subreddits.gov.distributions[t.subredditId],
@@ -916,7 +916,7 @@
 					pointsDetails: r,
 					subredditId: o,
 					wallet: a
-				}), i.a.createElement(Le, {
+				}), i.a.createElement(Me, {
 					className: Object(c.a)(Ge.a.section, {
 						[Ge.a.noborder]: e.isMainnet
 					}),
@@ -1905,14 +1905,14 @@
 			const o = e => {
 					return Object(s.c)(e, {
 						experimentEligibilitySelector: s.a,
-						experimentName: r.ze
-					}) === r.Od
+						experimentName: r.xe
+					}) === r.Md
 				},
 				i = e => {
 					return Object(s.c)(e, {
 						experimentEligibilitySelector: s.a,
-						experimentName: r.we
-					}) === r.Od
+						experimentName: r.ue
+					}) === r.Md
 				}
 		},
 		"./src/reddit/selectors/gov.ts": function(e, t, n) {
@@ -1972,4 +1972,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Governance-CommunityCard.40c93b97a4ce651a3264.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Governance-CommunityCard.e962d47f439f6a5d619a.js.map

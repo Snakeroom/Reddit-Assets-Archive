@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-pages-meta-MainnetPointsMigrationPage.694fd7d635dbcbbcb70b.js
-// Retrieved at 8/31/2022, 6:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-pages-meta-MainnetPointsMigrationPage.18ab42080d886f5870a4.js
+// Retrieved at 9/6/2022, 9:30:20 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-pages-meta-MainnetPointsMigrationPage"], {
 		"./node_modules/lodash/uniqueId.js": function(e, t, n) {
@@ -891,7 +891,7 @@
 			n.r(t), n.d(t, "MainnetPointsMigrationPage", (function() {
 				return je
 			})), n.d(t, "default", (function() {
-				return Oe
+				return Me
 			}));
 			n("./node_modules/core-js/modules/web.dom.iterable.js");
 			var a = n("./src/config.ts"),
@@ -1004,8 +1004,8 @@
 				N = n("./node_modules/classnames/index.js"),
 				C = n.n(N),
 				j = n("./node_modules/fbt/lib/FbtPublic.js"),
-				O = n("./src/reddit/controls/Button/index.tsx"),
-				M = n("./src/reddit/icons/fonts/index.tsx"),
+				M = n("./src/reddit/controls/Button/index.tsx"),
+				O = n("./src/reddit/icons/fonts/index.tsx"),
 				T = n("./src/reddit/actions/toaster.ts"),
 				A = (n("./src/reddit/helpers/localStorage/index.ts"), n("./src/reddit/models/Toast/index.ts"));
 			const S = "mainnet-migration";
@@ -1078,7 +1078,7 @@
 						step: F.Wallet,
 						currentStep: a,
 						withConnection: !0
-					}, a === F.Wallet ? i.a.createElement(O.t, {
+					}, a === F.Wallet ? i.a.createElement(M.t, {
 						onClick: h.b
 					}, j.fbt._("Connect to Metamask", null, {
 						hk: "2DzFph"
@@ -1094,7 +1094,7 @@
 						step: F.Bridge,
 						currentStep: a,
 						withConnection: !1
-					}, a === F.Bridge ? i.a.createElement(O.t, {
+					}, a === F.Bridge ? i.a.createElement(M.t, {
 						onClick: n
 					}, j.fbt._("Connect to Bridge", null, {
 						hk: "4oBHSw"
@@ -1125,7 +1125,7 @@
 						})
 					}, i.a.createElement("div", {
 						className: L.a.checkmark
-					}, r ? i.a.createElement(M.a, {
+					}, r ? i.a.createElement(O.a, {
 						className: L.a.icon,
 						name: "checkmark_fill"
 					}) : t), i.a.createElement("div", {
@@ -1282,7 +1282,7 @@
 					className: ae.a.footer
 				}, le._("Use the same wallet address to speed up claim process.", null, {
 					hk: "H4lrx"
-				})), i.a.createElement(O.t, {
+				})), i.a.createElement(M.t, {
 					onClick: () => {
 						a(o), s()
 					},
@@ -1482,8 +1482,8 @@
 					[w, E] = Object(r.useState)(!1),
 					[k, _] = Object(r.useState)(s.ethers.utils.parseEther("0")),
 					[N, C] = Object(r.useReducer)(() => !0, !1),
-					[j, O] = Object(r.useState)(!1),
-					M = (null == f ? void 0 : f.claimId) && !(null == f ? void 0 : f.claimed),
+					[j, M] = Object(r.useState)(!1),
+					O = (null == f ? void 0 : f.claimId) && !(null == f ? void 0 : f.claimed),
 					T = v || j,
 					A = v || !1 === (null == f ? void 0 : f.claimed) ? "0" : I({
 						locale: d,
@@ -1534,7 +1534,7 @@
 							mainnetAddress: m,
 							recipient: f.recipient
 						});
-						t.gt(k) && (_(t), O(!1), clearInterval(e))
+						t.gt(k) && (_(t), M(!1), clearInterval(e))
 					}, 1e3)), () => window.clearInterval(e)
 				}, [V, m, k, j, f]);
 				return i.a.createElement("div", {
@@ -1560,13 +1560,13 @@
 				}, i.a.createElement(Ee, {
 					isClaiming: j,
 					network: a,
-					isHidden: !M,
+					isHidden: !O,
 					handleClaimTransfer: async () => {
 						var e, t;
 						try {
 							await F({
 								status: f
-							}), O(!0)
+							}), M(!0)
 						} catch (n) {
 							const a = 3 === (null === (e = null == n ? void 0 : n.data) || void 0 === e ? void 0 : e.code);
 							a && (R({
@@ -1581,7 +1581,7 @@
 								text: a ? ve._("Error: Already claimed", null, {
 									hk: "1fRm27"
 								}) : (null === (t = null == n ? void 0 : n.data) || void 0 === t ? void 0 : t.message) || n.message
-							}), O(!1)
+							}), M(!1)
 						}
 					},
 					switchToMainnet: D
@@ -1631,16 +1631,16 @@
 					handleTransferClick: s,
 					isTransferring: r
 				} = e;
-				return n ? null : "5391184" !== t ? i.a.createElement(O.a, {
+				return n ? null : "5391184" !== t ? i.a.createElement(M.a, {
 					className: ge.a.transferButton,
-					priority: O.c.Secondary,
+					priority: M.c.Secondary,
 					onClick: a
 				}, ve._("Connect", null, {
 					hk: "3U59XL"
-				})) : i.a.createElement(O.a, {
+				})) : i.a.createElement(M.a, {
 					disabled: r,
 					className: ge.a.transferButton,
-					priority: O.c.Secondary,
+					priority: M.c.Secondary,
 					onClick: s
 				}, ve._("Transfer", null, {
 					hk: "5ICxq"
@@ -1654,16 +1654,16 @@
 					isClaiming: o
 				} = e;
 				const [l, c] = Object(r.useReducer)(() => !0, !1);
-				return n ? null : "42170" !== t ? i.a.createElement(O.a, {
+				return n ? null : "42170" !== t ? i.a.createElement(M.a, {
 					className: ge.a.transferButton,
-					priority: O.c.Secondary,
+					priority: M.c.Secondary,
 					onClick: s
 				}, ve._("Connect", null, {
 					hk: "3U59XL"
-				})) : i.a.createElement(O.a, {
+				})) : i.a.createElement(M.a, {
 					disabled: o || l,
 					className: ge.a.transferButton,
-					priority: O.c.Primary,
+					priority: M.c.Primary,
 					onClick: () => {
 						c(), a()
 					}
@@ -1755,12 +1755,12 @@
 					[p, y] = Object(r.useState)(Object(h.e)()),
 					[x, N] = Object(r.useReducer)(() => !0, !1),
 					[C, j] = Object(r.useState)(!1),
-					[O, M] = Object(E.a)(S, null),
+					[M, O] = Object(E.a)(S, null),
 					[T, A] = Object(E.a)("mainnet-migration-signer", "");
 				Object(r.useEffect)(() => {
 					(async () => {
 						const e = Object(h.d)();
-						e && e !== T && (M(null), A(e))
+						e && e !== T && (O(null), A(e))
 					})()
 				}, []), Object(r.useEffect)(() => {
 					d && (e(Object(l.h)({
@@ -1799,8 +1799,8 @@
 				})), x && u && p && (I = i.a.createElement(_e, {
 					walletAddress: u,
 					network: p,
-					migrations: O,
-					setMigrations: M
+					migrations: M,
+					setMigrations: O
 				})));
 				return i.a.createElement("div", {
 					className: L.a.container
@@ -1836,7 +1836,7 @@
 				})), C && i.a.createElement(ue, {
 					onClose: () => j(!1),
 					onTransfer: async e => {
-						let t = O;
+						let t = M;
 						if (!(null == t ? void 0 : t.length)) {
 							const e = new s.ethers.providers.Web3Provider(Object(h.c)()).getSigner(),
 								n = v.map(t => w(e, t));
@@ -1848,12 +1848,12 @@
 							isFetchingStatus: !0,
 							fetchCount: 0
 						}));
-						M(n)
+						O(n)
 					}
 				}))
 			};
 
-			function Oe() {
+			function Me() {
 				return i.a.createElement(je, null)
 			}
 		},
@@ -1869,16 +1869,16 @@
 			const r = e => {
 					return Object(s.c)(e, {
 						experimentEligibilitySelector: s.a,
-						experimentName: a.ze
-					}) === a.Od
+						experimentName: a.xe
+					}) === a.Md
 				},
 				i = e => {
 					return Object(s.c)(e, {
 						experimentEligibilitySelector: s.a,
-						experimentName: a.we
-					}) === a.Od
+						experimentName: a.ue
+					}) === a.Md
 				}
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-pages-meta-MainnetPointsMigrationPage.694fd7d635dbcbbcb70b.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-pages-meta-MainnetPointsMigrationPage.18ab42080d886f5870a4.js.map

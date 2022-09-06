@@ -1,223 +1,208 @@
-// https://www.redditstatic.com/desktop2x/NotificationsPrePromptLoader.b56d38c02d7355c4620b.js
-// Retrieved at 8/31/2022, 6:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/NotificationsPrePromptLoader.e54ea1d47dceed789f85.js
+// Retrieved at 9/6/2022, 9:30:20 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["NotificationsPrePromptLoader"], {
-		"./src/reddit/components/NotificationsPrePrompt/index.m.less": function(e, n, t) {
-			e.exports = {
+		"./src/reddit/components/NotificationsPrePrompt/index.m.less": function(n, t, e) {
+			n.exports = {
 				overlay: "_3Ig_EsWWVLquWs2yBBQjec",
 				backgroundAnimation: "_2iwhmPhcdf_cKfsjSxiNTC"
 			}
 		},
-		"./src/reddit/components/NotificationsPrePrompt/index.tsx": function(e, n, t) {
+		"./src/reddit/components/NotificationsPrePrompt/index.tsx": function(n, t, e) {
 			"use strict";
-			t.r(n);
-			var o = t("./node_modules/react/index.js"),
-				i = t.n(o),
-				c = t("./node_modules/react-redux/es/index.js"),
-				r = t("./src/higherOrderComponents/asModal/index.tsx"),
-				s = t("./src/lib/notifications/constants.ts"),
-				a = t("./src/reddit/components/TrackingHelper/index.tsx"),
-				u = t("./src/reddit/constants/experiments.ts"),
-				d = t("./src/reddit/helpers/trackers/notifications.ts"),
-				f = t("./src/reddit/helpers/chooseVariant/index.ts");
+			e.r(t), e.d(t, "NotificationsPrePrompt", (function() {
+				return p
+			}));
+			var o = e("./node_modules/react/index.js"),
+				i = e.n(o),
+				c = e("./node_modules/react-redux/es/index.js"),
+				r = e("./src/higherOrderComponents/asModal/index.tsx"),
+				s = e("./src/lib/notifications/constants.ts"),
+				a = e("./src/reddit/components/TrackingHelper/index.tsx"),
+				u = e("./src/reddit/helpers/trackers/notifications.ts"),
+				d = e("./src/reddit/components/NotificationsPrePrompt/index.m.less"),
+				f = e.n(d);
 
-			function l(e) {
-				const n = Object(f.c)(e, {
-					experimentEligibilitySelector: f.a,
-					experimentName: u.Gb
-				});
-				return !Object(u.qg)(n) && n
-			}
-			var p, m = t("./src/reddit/components/NotificationsPrePrompt/index.m.less"),
-				_ = t.n(m);
-
-			function b() {
-				return (b = Object.assign || function(e) {
-					for (var n = 1; n < arguments.length; n++) {
-						var t = arguments[n];
-						for (var o in t) Object.prototype.hasOwnProperty.call(t, o) && (e[o] = t[o])
+			function l() {
+				return (l = Object.assign || function(n) {
+					for (var t = 1; t < arguments.length; t++) {
+						var e = arguments[t];
+						for (var o in e) Object.prototype.hasOwnProperty.call(e, o) && (n[o] = e[o])
 					}
-					return e
+					return n
 				}).apply(this, arguments)
-			}! function(e) {
-				e[e.ThreeSec = 3e3] = "ThreeSec", e[e.FiveSec = 5e3] = "FiveSec", e[e.TenSec = 1e4] = "TenSec"
-			}(p || (p = {}));
-			const O = Object(r.a)(() => null);
-			n.default = e => {
-				const n = Object(a.b)(),
-					t = Object(c.d)(),
-					[r, f] = Object(o.useState)(),
-					m = Object(c.e)(l),
-					j = Object(o.useCallback)(() => m === u.gd.ThreeSeconds ? p.ThreeSec : m === u.gd.FiveSeconds ? p.FiveSec : p.TenSec, [m]);
+			}
+			const p = Object(r.a)(() => null);
+			t.default = n => {
+				const t = Object(a.b)(),
+					e = Object(c.d)(),
+					[r, d] = Object(o.useState)();
 				return Object(o.useEffect)(() => {
-					if (m) {
-						const e = j();
-						f(setTimeout(() => {
-							t(Object(s.k)()), n(Object(d.g)())
-						}, e))
-					}
-				}, [t, m, n, j]), i.a.createElement(O, b({
+					d(setTimeout(() => {
+						e(Object(s.k)()), t(Object(u.g)())
+					}, 5e3))
+				}, [e, t]), i.a.createElement(p, l({
 					onOverlayClick: () => {
-						m && (clearTimeout(Number(r)), t(Object(s.k)()), n(Object(d.h)()))
+						clearTimeout(Number(r)), e(Object(s.k)()), t(Object(u.h)())
 					}
-				}, e, {
-					overlayClassName: _.a.overlay,
+				}, n, {
+					overlayClassName: f.a.overlay,
 					withOverlay: !0
 				}))
 			}
 		},
-		"./src/reddit/helpers/trackers/notifications.ts": function(e, n, t) {
+		"./src/reddit/helpers/trackers/notifications.ts": function(n, t, e) {
 			"use strict";
-			t.d(n, "j", (function() {
+			e.d(t, "j", (function() {
 				return u
-			})), t.d(n, "d", (function() {
+			})), e.d(t, "d", (function() {
 				return d
-			})), t.d(n, "e", (function() {
+			})), e.d(t, "e", (function() {
 				return f
-			})), t.d(n, "f", (function() {
+			})), e.d(t, "f", (function() {
 				return l
-			})), t.d(n, "l", (function() {
+			})), e.d(t, "l", (function() {
 				return m
-			})), t.d(n, "m", (function() {
+			})), e.d(t, "m", (function() {
 				return _
-			})), t.d(n, "k", (function() {
-				return b
-			})), t.d(n, "c", (function() {
+			})), e.d(t, "k", (function() {
+				return O
+			})), e.d(t, "c", (function() {
 				return j
-			})), t.d(n, "b", (function() {
-				return v
-			})), t.d(n, "i", (function() {
+			})), e.d(t, "b", (function() {
 				return y
-			})), t.d(n, "a", (function() {
+			})), e.d(t, "i", (function() {
+				return v
+			})), e.d(t, "a", (function() {
 				return h
-			})), t.d(n, "n", (function() {
+			})), e.d(t, "n", (function() {
 				return g
-			})), t.d(n, "o", (function() {
-				return x
-			})), t.d(n, "h", (function() {
-				return S
-			})), t.d(n, "g", (function() {
+			})), e.d(t, "o", (function() {
 				return k
+			})), e.d(t, "h", (function() {
+				return x
+			})), e.d(t, "g", (function() {
+				return w
 			}));
-			var o = t("./src/reddit/selectors/telemetry.ts"),
-				i = t("./src/telemetry/index.ts"),
-				c = t("./src/telemetry/models/Event.ts");
+			var o = e("./src/reddit/selectors/telemetry.ts"),
+				i = e("./src/telemetry/index.ts"),
+				c = e("./src/telemetry/models/Event.ts");
 			var r;
-			! function(e) {
-				e.FREQUENT = "frequent", e.LOW = "low", e.OFF = "off"
+			! function(n) {
+				n.FREQUENT = "frequent", n.LOW = "low", n.OFF = "off"
 			}(r || (r = {}));
-			const s = e => ({
-					...o.n(e),
+			const s = n => ({
+					...o.n(n),
 					noun: "desktop_notification_permissions"
 				}),
-				a = e => e ? "enable" : "disable",
-				u = e => {
+				a = n => n ? "enable" : "disable",
+				u = n => {
 					Object(i.a)({
-						...s(e),
+						...s(n),
 						action: c.c.View,
 						source: "popup"
 					})
 				},
-				d = e => {
+				d = n => {
 					Object(i.a)({
-						...s(e),
+						...s(n),
 						action: c.c.Allow,
 						source: "popup"
 					})
 				},
-				f = e => {
+				f = n => {
 					Object(i.a)({
-						...s(e),
+						...s(n),
 						action: c.c.Block,
 						source: "popup"
 					})
 				},
-				l = e => {
+				l = n => {
 					Object(i.a)({
-						...s(e),
+						...s(n),
 						action: c.c.Close,
 						source: "popup"
 					})
 				},
-				p = (e, n, t) => ({
-					...o.n(e),
-					actionInfo: o.d(e, {
-						success: n,
-						reason: t
+				p = (n, t, e) => ({
+					...o.n(n),
+					actionInfo: o.d(n, {
+						success: t,
+						reason: e
 					}),
 					noun: "push_token"
 				}),
-				m = e => {
+				m = n => {
 					Object(i.a)({
-						...p(e, !0),
+						...p(n, !0),
 						action: c.c.Request,
 						source: "notification"
 					})
 				},
-				_ = e => {
+				_ = n => {
 					Object(i.a)({
-						...p(e, !0),
+						...p(n, !0),
 						action: c.c.Register,
 						source: "notification"
 					})
 				},
-				b = (e, n) => {
+				O = (n, t) => {
 					Object(i.a)({
-						...p(e, !1, n),
+						...p(n, !1, t),
 						action: c.c.Bail,
 						source: "notification"
 					})
 				},
-				O = e => ({
-					...o.n(e),
+				b = n => ({
+					...o.n(n),
 					noun: "push_notification"
 				}),
-				j = e => ({
-					...O(e),
-					notification: o.E(e, void 0, void 0),
+				j = n => ({
+					...b(n),
+					notification: o.E(n, void 0, void 0),
 					action: void 0,
 					source: "notification",
 					correlationId: void 0
 				}),
-				v = (e, n) => t => ({
-					...o.n(t),
-					action: a(e),
+				y = (n, t) => e => ({
+					...o.n(e),
+					action: a(n),
 					email: {
-						type: n
+						type: t
 					},
 					noun: "email",
 					source: "email_app_settings"
 				}),
-				y = (e, n) => t => ({
-					...o.n(t),
-					action: a(e),
+				v = (n, t) => e => ({
+					...o.n(e),
+					action: a(n),
 					notification: {
-						type: n
+						type: t
 					},
 					noun: "notification",
 					source: "notification_app_settings"
 				}),
-				h = e => n => ({
-					...o.n(n),
+				h = n => t => ({
+					...o.n(t),
 					source: "email_app_settings",
-					action: a(e),
+					action: a(n),
 					noun: "email",
 					notification: {
 						type: "all"
 					}
 				}),
-				g = (e, n, t) => i => ({
+				g = (n, t, e) => i => ({
 					...o.n(i),
 					action: "set_frequency",
-					noun: t,
+					noun: e,
 					source: "community_notifications",
 					subreddit: {
-						id: e,
-						name: n.toLowerCase()
+						id: n,
+						name: t.toLowerCase()
 					}
 				}),
-				x = () => e => ({
-					...o.n(e),
+				k = () => n => ({
+					...o.n(n),
 					action: c.c.View,
 					noun: "screen",
 					source: "global",
@@ -225,14 +210,14 @@
 						pageType: "community_alerts"
 					}
 				}),
-				S = () => e => ({
-					...o.n(e),
+				x = () => n => ({
+					...o.n(n),
 					action: "click",
 					noun: "desktop_notification_permissions",
 					source: "overlay"
 				}),
-				k = () => e => ({
-					...o.n(e),
+				w = () => n => ({
+					...o.n(n),
 					action: "auto_dismiss",
 					noun: "desktop_notification_permissions",
 					source: "overlay"
@@ -240,4 +225,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/NotificationsPrePromptLoader.b56d38c02d7355c4620b.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/NotificationsPrePromptLoader.e54ea1d47dceed789f85.js.map

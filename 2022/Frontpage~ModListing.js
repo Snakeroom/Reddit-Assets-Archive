@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Frontpage~ModListing.63a9bfc8c8fa6c08963f.js
-// Retrieved at 8/31/2022, 6:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Frontpage~ModListing.240892341c40fe49b7fe.js
+// Retrieved at 9/6/2022, 9:30:20 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Frontpage~ModListing"], {
 		"./src/reddit/actions/focusedVerticals/index.ts": function(e, t, n) {
@@ -789,7 +789,7 @@
 			const B = "ListingSort--SortPicker",
 				F = Object(S.a)(R.a.wrapped(O.a, "Dropdown", D.a)),
 				H = R.a.wrapped(P.a, "ListingSortIcon", D.a),
-				V = (R.a.wrapped(E.b, "DropdownTriangle", D.a), R.a.div("Title", D.a)),
+				U = (R.a.wrapped(E.b, "DropdownTriangle", D.a), R.a.div("Title", D.a)),
 				G = R.a.wrapped(e => r.a.createElement(C.b, A({}, e, {
 					noHover: !0,
 					isSelected: !1
@@ -805,7 +805,7 @@
 						})
 					}))
 				},
-				U = R.a.div("DropdownRowDisabled", D.a),
+				V = R.a.div("DropdownRowDisabled", D.a),
 				W = Object(l.u)({
 					isFrontpage: l.A,
 					isProfilePage: l.J,
@@ -832,7 +832,7 @@
 			var K = R.a.wrapped(W(z(Object(d.c)(e => r.a.createElement("div", {
 					className: e.className,
 					onClick: e.onOpenDropdown
-				}, !1 !== e.showTitle && r.a.createElement(V, null, y.fbt._("Sort", null, {
+				}, !1 !== e.showTitle && r.a.createElement(U, null, y.fbt._("Sort", null, {
 					hk: "2BfINq"
 				})), r.a.createElement(M, {
 					disabled: e.disabled
@@ -849,7 +849,7 @@
 					tooltipId: e.dropdownId || B
 				}, t, {
 					renderContentsHidden: !0
-				}), e.disabled ? r.a.createElement(U, null, y.fbt._("Coming soon", null, {
+				}), e.disabled ? r.a.createElement(V, null, y.fbt._("Coming soon", null, {
 					hk: "taPqm"
 				})) : (e.sortOptions || ((e, t, n, s, r) => {
 					const o = [b.Z.HOT, b.Z.NEW, b.Z.TOP, b.Z.RISING];
@@ -1393,7 +1393,7 @@
 					isProfilePage: l.J,
 					pageLayer: e => e
 				}),
-				Ve = Object(f.a)((e, t) => t.sortOptions, (e, t) => t.isFrontpage, N.a, I.k, l.F, j.a, Ie.j, (e, t, n, s, r, o, i) => {
+				Ue = Object(f.a)((e, t) => t.sortOptions, (e, t) => t.isFrontpage, N.a, I.k, l.F, j.a, Ie.j, (e, t, n, s, r, o, i) => {
 					if (e) return {
 						isPopularPage: r,
 						sortOptions: e,
@@ -1524,9 +1524,9 @@
 					}))))
 				}
 			}
-			var Me = He(Object(o.b)(Ve)(Object(d.c)(Ge))),
-				Ue = n("./src/reddit/components/GeneralCleanup/SortViewBar/index.m.less"),
-				We = n.n(Ue);
+			var Me = He(Object(o.b)(Ue)(Object(d.c)(Ge))),
+				Ve = n("./src/reddit/components/GeneralCleanup/SortViewBar/index.m.less"),
+				We = n.n(Ve);
 			const Ze = Object(l.u)({
 					isProfilePage: l.J,
 					pageLayer: e => e
@@ -1778,7 +1778,7 @@
 				const t = Object(o.f)().getState(),
 					n = Object(h.a)(t, Object(a.c)());
 				if (e.isD2xPdpSideRailRecsEnabled) {
-					const t = e.d2xPdpSideRailRecsVariant === u.Vc.GreyRereddit || e.d2xPdpSideRailRecsVariant === u.Vc.GreyRedditNoNsfw || e.d2xPdpSideRailRecsVariant === u.Vc.LargeImagePreview ? e.reredditButtons : [];
+					const t = e.d2xPdpSideRailRecsVariant === u.Uc.GreyRereddit || e.d2xPdpSideRailRecsVariant === u.Uc.GreyRedditNoNsfw || e.d2xPdpSideRailRecsVariant === u.Uc.LargeImagePreview ? e.reredditButtons : [];
 					return r.a.createElement(v, {
 						reredditContent: t,
 						countryCode: e.countryCode
@@ -2628,7 +2628,7 @@
 				const p = Object(i.e)(e => e.subreddits.survey[n]),
 					b = Object(i.e)(e => e.subreddits.progressModule[n]),
 					h = Object(i.e)(u.a),
-					f = h !== d.Te.NewModule;
+					f = h !== d.Re.NewModule;
 				return (null === (r = null == b ? void 0 : b.cards) || void 0 === r ? void 0 : r.length) > 0 && f ? o.a.createElement(m, {
 					closeModuleOnMount: !!t && t !== l.g.Large,
 					subredditId: n,
@@ -2656,11 +2656,11 @@
 				c = n("./node_modules/reselect/es/index.js");
 			const d = Object(c.a)(e => Object(r.c)(e, {
 					experimentEligibilitySelector: e => Object(a.h)(e) && Object(o.f)(e),
-					experimentName: s.rc
+					experimentName: s.qc
 				}), i.a),
 				l = Object(c.a)(e => Object(r.c)(e, {
 					experimentEligibilitySelector: e => !Object(a.h)(e) && Object(o.f)(e),
-					experimentName: s.qc
+					experimentName: s.pc
 				}), i.a),
 				u = Object(c.a)(d, l, (e, t) => e || t),
 				m = Object(c.a)(d, l, (e, t) => !(!e && !t))
@@ -2678,15 +2678,15 @@
 			const i = e => {
 					const t = Object(r.c)(e, {
 						experimentEligibilitySelector: o.Q,
-						experimentName: s.rd
+						experimentName: s.pd
 					});
-					return !(!t || Object(s.qg)(t))
+					return !(!t || Object(s.og)(t))
 				},
 				a = e => {
 					return Object(r.c)(e, {
 						experimentEligibilitySelector: o.Q,
-						experimentName: s.rd
-					}) === s.Sd.ListingEnabled
+						experimentName: s.pd
+					}) === s.Qd.ListingEnabled
 				}
 		},
 		"./src/reddit/selectors/focusedVerticalSuggestion.ts": function(e, t, n) {
@@ -2813,4 +2813,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Frontpage~ModListing.63a9bfc8c8fa6c08963f.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Frontpage~ModListing.240892341c40fe49b7fe.js.map

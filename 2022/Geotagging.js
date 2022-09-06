@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Geotagging.bac26c9fe7cded9c140e.js
-// Retrieved at 8/31/2022, 6:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Geotagging.e2ecf36db34e8d0125c9.js
+// Retrieved at 9/6/2022, 9:30:20 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Geotagging"], {
 		"./node_modules/p-debounce/index.js": function(e, t, s) {
@@ -419,7 +419,7 @@
 				const t = Object(a.f)().getState(),
 					s = Object(h.a)(t, Object(o.c)());
 				if (e.isD2xPdpSideRailRecsEnabled) {
-					const t = e.d2xPdpSideRailRecsVariant === u.Vc.GreyRereddit || e.d2xPdpSideRailRecsVariant === u.Vc.GreyRedditNoNsfw || e.d2xPdpSideRailRecsVariant === u.Vc.LargeImagePreview ? e.reredditButtons : [];
+					const t = e.d2xPdpSideRailRecsVariant === u.Uc.GreyRereddit || e.d2xPdpSideRailRecsVariant === u.Uc.GreyRedditNoNsfw || e.d2xPdpSideRailRecsVariant === u.Uc.LargeImagePreview ? e.reredditButtons : [];
 					return r.a.createElement(O, {
 						reredditContent: t,
 						countryCode: e.countryCode
@@ -1534,10 +1534,10 @@
 			var q = s("./src/reddit/icons/svgs/HamburgerClose/index.tsx"),
 				K = s("./src/reddit/models/Toast/index.ts");
 			const {
-				fbt: V
+				fbt: U
 			} = s("./node_modules/fbt/lib/FbtPublic.js");
 
-			function U(e) {
+			function V(e) {
 				const t = Object(b.B)(Z) || [];
 				t.push(e), Object(b.Hb)(Z, t)
 			}
@@ -1562,7 +1562,7 @@
 				function y() {
 					o(Object(j.f)({
 						kind: K.b.SuccessMod,
-						text: V._("Nice work!", null, {
+						text: U._("Nice work!", null, {
 							hk: "2Wu6gX"
 						})
 					}))
@@ -1582,13 +1582,13 @@
 				}, t.prefixedName)), r.a.createElement("button", {
 					className: S.a.dismiss,
 					onClick: function() {
-						U(t.id), _(R(t)), x(), s(t.id)
+						V(t.id), _(R(t)), x(), s(t.id)
 					}
 				}, r.a.createElement(q.a, null))), r.a.createElement("p", null, t.publicDescriptionText || t.title), t.geoPlace && !m ? r.a.createElement("div", {
 					className: S.a.questionContainer
 				}, r.a.createElement("div", {
 					className: S.a.question
-				}, V._("Is this community specific to {place}?", [V._param("place", t.geoPlace.name)], {
+				}, U._("Is this community specific to {place}?", [U._param("place", t.geoPlace.name)], {
 					hk: "bIGM4"
 				})), r.a.createElement(E.o, {
 					className: S.a.rejectButton,
@@ -1598,7 +1598,7 @@
 				}, "No"), r.a.createElement(E.l, {
 					className: S.a.verifyButton,
 					onClick: function() {
-						U(t.id), _(H(t, t.geoPlace.id)), x(), s(t.id), y()
+						V(t.id), _(H(t, t.geoPlace.id)), x(), s(t.id), y()
 					}
 				}, "Yes")) : r.a.createElement(N.a, {
 					disabled: l,
@@ -1621,7 +1621,7 @@
 						});
 						if (u(!1), !a.ok) return o(Object(j.f)({
 							kind: K.b.Error,
-							text: V._("Something went wrong", null, {
+							text: U._("Something went wrong", null, {
 								hk: "2PnKbu"
 							}),
 							duration: 5e3
@@ -1731,11 +1731,11 @@
 				d = s("./node_modules/reselect/es/index.js");
 			const c = Object(d.a)(e => Object(r.c)(e, {
 					experimentEligibilitySelector: e => Object(o.h)(e) && Object(a.f)(e),
-					experimentName: n.rc
+					experimentName: n.qc
 				}), i.a),
 				l = Object(d.a)(e => Object(r.c)(e, {
 					experimentEligibilitySelector: e => !Object(o.h)(e) && Object(a.f)(e),
-					experimentName: n.qc
+					experimentName: n.pc
 				}), i.a),
 				u = Object(d.a)(c, l, (e, t) => e || t),
 				m = Object(d.a)(c, l, (e, t) => !(!e && !t))
@@ -1754,4 +1754,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Geotagging.bac26c9fe7cded9c140e.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Geotagging.e2ecf36db34e8d0125c9.js.map
