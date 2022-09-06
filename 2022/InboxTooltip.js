@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/InboxTooltip.20cb0ed0bb865621808d.js
-// Retrieved at 9/6/2022, 9:30:20 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/InboxTooltip.8a22d2a1d5ed1656879e.js
+// Retrieved at 9/6/2022, 10:10:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["InboxTooltip", "PushNotifications"], {
 		"./src/lib/notifications/token.ts": function(e, t, i) {
@@ -100,7 +100,7 @@
 			const _ = e => Object(y.c)(e, {
 				experimentName: N.kc,
 				experimentEligibilitySelector: y.a
-			}) === N.Md;
+			}) === N.Ld;
 			var P = i("./src/reddit/selectors/meta.ts"),
 				I = i("./src/reddit/selectors/user.ts");
 			let E = !1;
@@ -613,4 +613,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/InboxTooltip.20cb0ed0bb865621808d.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/InboxTooltip.8a22d2a1d5ed1656879e.js.map

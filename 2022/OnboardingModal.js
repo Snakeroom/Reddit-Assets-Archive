@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/OnboardingModal.cb7841bd5c6792284d60.js
-// Retrieved at 9/6/2022, 9:30:20 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/OnboardingModal.79d6cb1a9423dee06d99.js
+// Retrieved at 9/6/2022, 10:10:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["OnboardingModal"], {
 		"./node_modules/lodash/_baseRange.js": function(e, t) {
@@ -308,7 +308,7 @@
 			})), n.d(t, "frontpageRequestedHelper", (function() {
 				return Ae
 			})), n.d(t, "frontpageRequested", (function() {
-				return Ge
+				return Le
 			})), n.d(t, "frontpageReloaded", (function() {
 				return Pe
 			})), n.d(t, "morePostsPending", (function() {
@@ -358,8 +358,8 @@
 				R = n("./src/reddit/selectors/experiments/inAppNotification.ts"),
 				A = n("./src/reddit/selectors/experiments/loggedOutOneFeed.ts"),
 				F = n("./src/reddit/selectors/experiments/onboarding.ts"),
-				G = n("./src/reddit/selectors/frontpage.ts"),
-				L = n("./src/reddit/selectors/platform.ts"),
+				L = n("./src/reddit/selectors/frontpage.ts"),
+				G = n("./src/reddit/selectors/platform.ts"),
 				P = n("./src/reddit/selectors/user.ts"),
 				M = n("./src/reddit/selectors/userPrefs.ts"),
 				B = n("./src/redditGQL/operations/Frontpage.json"),
@@ -382,7 +382,7 @@
 						sort: l,
 						t: u,
 						correlationId: m
-					} = t, p = Object(F.c)(e), h = Object(P.Z)(e) || Object(P.Q)(e), v = Object(R.a)(e), x = Object(L.q)(e), O = Object(A.b)(e), E = Object(A.e)(e), C = E === b.ub.LoggedOutUiOnly || E === b.ub.LoggedOutHomeDefpop, _ = Object(G.b)(e), {
+					} = t, p = Object(F.c)(e), h = Object(P.Z)(e) || Object(P.Q)(e), v = Object(R.a)(e), x = Object(G.q)(e), O = Object(A.b)(e), E = Object(A.e)(e), C = E === b.ub.LoggedOutUiOnly || E === b.ub.LoggedOutHomeDefpop, _ = Object(L.b)(e), {
 						adsSeenCount: j,
 						totalPostsSeenCount: I,
 						sessionStartTime: k
@@ -402,7 +402,7 @@
 						},
 						forceGeopopular: !0,
 						includeCommunityDUs: !1,
-						includeInterestTopics: !!p && !Object(b.og)(p),
+						includeInterestTopics: !!p && !Object(b.ng)(p),
 						includeFeaturedAnnouncements: !0,
 						includeLiveEvents: !0,
 						includeIdentity: h && !(null === (r = null === (n = e.user.account) || void 0 === n ? void 0 : n.karma) || void 0 === r ? void 0 : r.total),
@@ -643,7 +643,7 @@
 					}
 					const v = ye()();
 					t.correlationId = v;
-					const x = null === (c = null === (i = Object(L.b)(g)) || void 0 === i ? void 0 : i.routeMatch) || void 0 === c ? void 0 : c.route.chunk,
+					const x = null === (c = null === (i = Object(G.b)(g)) || void 0 === i ? void 0 : i.routeMatch) || void 0 === c ? void 0 : c.route.chunk,
 						O = Object(P.Q)(g),
 						E = await Object(m.i)(() => H(o.gqlContext(), W(s(), t), Object(P.Z)(g), t.statsdPathsForExperiments), {
 							name: "fetchFrontpageData",
@@ -663,7 +663,7 @@
 							post: e,
 							__typename: "LiveBarTalk"
 						})))), n(Object(me.b)(he.a.FRONTPAGE));
-						const o = null === (f = null === (b = Object(L.b)(g)) || void 0 === b ? void 0 : b.locationState) || void 0 === f ? void 0 : f[X.b.FeedLoadReason];
+						const o = null === (f = null === (b = Object(G.b)(g)) || void 0 === b ? void 0 : b.locationState) || void 0 === f ? void 0 : f[X.b.FeedLoadReason];
 						Object(fe.b)(t.isRefresh ? X.a.UserRefresh : null != o ? o : X.a.InitialLoad)(s())
 					} else {
 						if (n(we({
@@ -692,7 +692,7 @@
 				}, Ae = (e, t) => async (n, r) => {
 					var s;
 					const a = r(),
-						i = Object(G.a)(a),
+						i = Object(L.a)(a),
 						{
 							sort: c = i
 						} = e.params,
@@ -733,25 +733,25 @@
 					var n, r;
 					const s = t();
 					if (Object(xe.a)(s)) return;
-					const o = null === (r = null === (n = Object(L.b)(t())) || void 0 === n ? void 0 : n.routeMatch) || void 0 === r ? void 0 : r.route.chunk,
+					const o = null === (r = null === (n = Object(G.b)(t())) || void 0 === n ? void 0 : n.routeMatch) || void 0 === r ? void 0 : r.route.chunk,
 						a = Object(P.Q)(s);
 					return Object(m.i)(() => e(Object(ve.d)()), {
 						name: "frontpageLinksRequested",
 						page: o,
 						isLoggedIn: a
 					})
-				}, Ge = (e, t) => async n => {
+				}, Le = (e, t) => async n => {
 					await Promise.all([n(Object(i.b)()), n(Ae(e, t)), n(Fe()), n(Object(Oe.c)(Ee.R))])
-				}, Le = Object(le.a)(Ie.e), Pe = e => async (t, n) => {
+				}, Ge = Object(le.a)(Ie.e), Pe = e => async (t, n) => {
 					const r = n(),
 						s = r.platform.currentPage.routeMatch.match;
-					Object(ce.o)(r) || Object(ce.u)(r) || (e || t(Le()), await t(Ge(s, !0)))
+					Object(ce.o)(r) || Object(ce.u)(r) || (e || t(Ge()), await t(Le(s, !0)))
 				}, Me = Object(le.a)(Ie.h), Be = Object(le.a)(Ie.g), De = Object(le.a)(Ie.f), Ve = e => async (t, n, r) => {
 					let {
 						gqlContext: s
 					} = r;
 					const i = n(),
-						c = Object(G.a)(i),
+						c = Object(L.a)(i),
 						{
 							sort: l = c
 						} = e,
@@ -815,7 +815,7 @@
 					}
 				}, qe = e => async (t, n) => {
 					const r = n(),
-						s = Object(G.a)(r),
+						s = Object(L.a)(r),
 						{
 							sort: o = s
 						} = e,
@@ -1132,11 +1132,11 @@
 				R = n.n(T),
 				A = n("./src/reddit/constants/keycodes.ts"),
 				F = n("./src/reddit/helpers/trackers/onboarding.ts");
-			const G = {
+			const L = {
 					definedGender: null,
 					genderCategory: w.a.OPT_OUT
 				},
-				L = e => e === w.a.USER_DEFINED;
+				G = e => e === w.a.USER_DEFINED;
 			var P = e => {
 					let {
 						autoProgressGenderCollection: t,
@@ -1156,26 +1156,26 @@
 					const b = e => {
 							var t;
 							let n = null;
-							return L(e) && (n = (null === (t = d.current) || void 0 === t ? void 0 : t.value) || "", p(n)), {
+							return G(e) && (n = (null === (t = d.current) || void 0 === t ? void 0 : t.value) || "", p(n)), {
 								definedGender: n,
 								genderCategory: e
 							}
 						},
 						f = Object(o.useCallback)(e => {
 							var t;
-							i(Object(F.n)()), s(b(e)), L(e) && (null === (t = d.current) || void 0 === t || t.focus())
+							i(Object(F.n)()), s(b(e)), G(e) && (null === (t = d.current) || void 0 === t || t.focus())
 						}, [i, s]),
 						g = Object(o.useCallback)(e => {
 							f(e.value), e.focus()
 						}, [f]),
 						h = Object(o.useCallback)(e => {
-							if (!r || !L(r.genderCategory)) {
+							if (!r || !G(r.genderCategory)) {
 								const t = u.current[e];
 								t && f(t.value)
 							}
 						}, [f, r]),
 						v = (e, o) => {
-							const i = L(e.key);
+							const i = G(e.key);
 							return a.a.createElement("label", {
 								key: e.key
 							}, a.a.createElement("input", {
@@ -1745,19 +1745,19 @@
 				Re = n("./src/reddit/endpoints/economics/specialMembership.ts"),
 				Ae = n("./src/reddit/endpoints/subreddit/local.ts"),
 				Fe = n("./src/reddit/endpoints/subreddit/subscriptions.ts");
-			var Ge = n("./src/reddit/models/Onboarding/index.ts"),
-				Le = n("./src/redditGQL/operations/InterestTopicsByIds.json");
+			var Le = n("./src/reddit/models/Onboarding/index.ts"),
+				Ge = n("./src/redditGQL/operations/InterestTopicsByIds.json");
 			const Pe = async (e, t, n) => {
 				const r = await ((e, t, n) => {
 					const r = {
 						topicIds: [],
-						schemeName: Ge.b,
+						schemeName: Le.b,
 						maxSubreddits: 10,
 						onboardingFlow: t,
 						...n
 					};
 					return Object(Se.a)(e, {
-						...Le,
+						...Ge,
 						variables: r
 					})
 				})(e(), t, {
@@ -1852,7 +1852,7 @@
 						first: 500,
 						maxChildren: 500,
 						maxDepth: 2,
-						schemeName: Ge.b,
+						schemeName: Le.b,
 						onboardingFlow: t
 					};
 					return Object(Se.a)(e, {
@@ -1898,7 +1898,7 @@
 			}
 			const {
 				fbt: it
-			} = n("./node_modules/fbt/lib/FbtPublic.js"), ct = e => e.type === Ge.d.REONBOARDING, dt = () => Object(f.f)({
+			} = n("./node_modules/fbt/lib/FbtPublic.js"), ct = e => e.type === Le.d.REONBOARDING, dt = () => Object(f.f)({
 				kind: E.b.Error,
 				text: it._("Something went wrong", null, {
 					hk: "22u7ha"
@@ -1952,7 +1952,7 @@
 					avatarImage: ee,
 					fetchRandomAvatar: ne,
 					saveAvatar: re
-				} = _(), se = f ? Ge.c.REONBOARDING_BOTTOM_SHEET : Ge.c.ONBOARDING;
+				} = _(), se = f ? Le.c.REONBOARDING_BOTTOM_SHEET : Le.c.ONBOARDING;
 				Object(o.useEffect)(() => {
 					(k || I) && async function() {
 						V(!0);
@@ -1986,9 +1986,9 @@
 					ie = Object(i.e)(rt.S),
 					ce = Object(i.e)(tt.g),
 					de = Object(i.e)(et.a),
-					le = de === Ie.Wf.CloseOnboarding,
-					ue = de === Ie.Wf.SkipTopicSelection,
-					me = de === Ie.Wf.SmartSignal,
+					le = de === Ie.Vf.CloseOnboarding,
+					ue = de === Ie.Vf.SkipTopicSelection,
+					me = de === Ie.Vf.SmartSignal,
 					pe = Object(o.useCallback)(() => {
 						r(Object(p.g)(ke.a.ONBOARDING_MODAL_D2X)), ae && r(Object(b.g)()), f && (s(Object(F.t)()), Object(Ue.a)()), ce && ie && r(Object(u.startChangeUsernameFlow)())
 					}, [r, ie, ce, f, ae, s]),
@@ -2010,7 +2010,7 @@
 						V(!0), v(_e.INTERESTS), r(Object(st.a)(e))
 					}, [r]),
 					he = Object(o.useCallback)(async () => {
-						s(Object(F.p)()), ge(C || G)
+						s(Object(F.p)()), ge(C || L)
 					}, [ge, C, s]),
 					ve = Object(o.useCallback)(async e => {
 						s(Object(F.p)()), ge(e)
@@ -2044,7 +2044,7 @@
 					}, [pe, s, h, Ee, ue, ne]),
 					Ae = Object.keys(J).length,
 					Fe = Object.keys(q).length,
-					Le = h === _e.GENDER && !(e => !!e && (!L(null == e ? void 0 : e.genderCategory) || !!(e.definedGender && e.definedGender.length <= w.b)))(C) || h === _e.INTERESTS && Fe < (f ? 1 : 3) || h === _e.COMMUNITIES && Ae < 1;
+					Ge = h === _e.GENDER && !(e => !!e && (!G(null == e ? void 0 : e.genderCategory) || !!(e.definedGender && e.definedGender.length <= w.b)))(C) || h === _e.INTERESTS && Fe < (f ? 1 : 3) || h === _e.COMMUNITIES && Ae < 1;
 				if (h === _e.CELEBRATION || h === _e.AVATAR && !Se) return a.a.createElement(S, null);
 				let Me;
 				f || le ? Me = a.a.createElement("button", {
@@ -2142,7 +2142,7 @@
 					})
 				}, a.a.createElement("button", {
 					className: `${te.a.continueButton} ${E&&te.a.continueButtonImproved}`,
-					disabled: Le,
+					disabled: Ge,
 					onClick: ye
 				}, it._("Continue", null, {
 					hk: "15wNPy"
@@ -2686,8 +2686,8 @@
 				R = n.n(T),
 				A = n("./src/reddit/controls/Button/index.tsx"),
 				F = n("./src/reddit/layout/row/Inline/index.tsx"),
-				G = n("./src/reddit/models/Flair/index.ts"),
-				L = n("./src/reddit/selectors/tooltip.ts"),
+				L = n("./src/reddit/models/Flair/index.ts"),
+				G = n("./src/reddit/selectors/tooltip.ts"),
 				P = n("./src/reddit/selectors/user.ts"),
 				M = n("./src/reddit/components/Settings/shared/Widgets.m.less"),
 				B = n.n(M);
@@ -2752,9 +2752,9 @@
 				se = h.a.wrapped(ne, "NSFWFlair", B.a),
 				oe = e => {
 					switch (e.flair) {
-						case G.f.Nsfw:
+						case L.f.Nsfw:
 							return s.a.createElement(se, null, "NSFW");
-						case G.f.Spoiler:
+						case L.f.Spoiler:
 							return s.a.createElement(re, null, "SPOILER");
 						default:
 							return null
@@ -2875,7 +2875,7 @@
 					})
 				})))),
 				he = Object(i.c)({
-					isOpen: (e, t) => Object(L.b)(t.id)(e)
+					isOpen: (e, t) => Object(G.b)(t.id)(e)
 				}),
 				ve = Object(o.b)(he, (e, t) => ({
 					openDropdown: () => {
@@ -4031,13 +4031,13 @@
 			const o = e => {
 					return !(Object(s.c)(e, {
 						experimentEligibilitySelector: s.a,
-						experimentName: r.ve
-					}) === r.Md)
+						experimentName: r.ue
+					}) === r.Ld)
 				},
 				a = e => Object(s.c)(e, {
 					experimentEligibilitySelector: s.a,
-					experimentName: r.we
-				}) === r.Md
+					experimentName: r.ve
+				}) === r.Ld
 		},
 		"./src/reddit/selectors/experiments/inAppNotification.ts": function(e, t, n) {
 			"use strict";
@@ -4207,4 +4207,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/OnboardingModal.cb7841bd5c6792284d60.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/OnboardingModal.79d6cb1a9423dee06d99.js.map

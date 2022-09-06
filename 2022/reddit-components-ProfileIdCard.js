@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-ProfileIdCard.9629037a74c445b74082.js
-// Retrieved at 9/6/2022, 9:30:20 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-ProfileIdCard.b81995cffac2f507713e.js
+// Retrieved at 9/6/2022, 10:10:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-ProfileIdCard"], {
 		"./node_modules/lodash/compact.js": function(e, t) {
@@ -182,7 +182,7 @@
 			})), r.d(t, "a", (function() {
 				return B
 			})), r.d(t, "b", (function() {
-				return D
+				return M
 			}));
 			var n = r("./node_modules/fbt/lib/FbtPublic.js"),
 				s = r("./src/lib/constants/index.ts"),
@@ -418,7 +418,7 @@
 						multiredditPath: e,
 						multiredditsModelsState: a
 					})), i())
-				}, M = Object(a.a)(d.e), D = e => async (t, r, o) => {
+				}, D = Object(a.a)(d.e), M = e => async (t, r, o) => {
 					let {
 						apiContext: a
 					} = o;
@@ -441,7 +441,7 @@
 						u = c[e];
 					if (!u) return void d();
 					const b = !u.isFollowed;
-					t(M({
+					t(D({
 						follow: b,
 						multiredditPath: e,
 						multiredditsModelsState: c
@@ -454,7 +454,7 @@
 							api_type: "json"
 						},
 						type: "json"
-					}))(a(), e, b)).ok || (t(M({
+					}))(a(), e, b)).ok || (t(D({
 						follow: !b,
 						multiredditPath: e,
 						multiredditsModelsState: c
@@ -2414,8 +2414,8 @@
 				T = r("./src/lib/copyToClipboard/index.ts"),
 				A = r("./src/reddit/actions/toaster.ts"),
 				B = r("./src/reddit/endpoints/chat/userSettings.ts"),
-				M = r("./src/reddit/models/Toast/index.ts");
-			var D = r("./src/reddit/actions/gold/modals.ts"),
+				D = r("./src/reddit/models/Toast/index.ts");
+			var M = r("./src/reddit/actions/gold/modals.ts"),
 				R = r("./src/reddit/actions/modal.ts"),
 				G = r("./src/reddit/actions/profile/index.ts"),
 				W = r("./src/reddit/components/CrisisFlow/index.tsx"),
@@ -2647,7 +2647,7 @@
 						addToMultiClicked: () => {
 							e(Object(F.a)(() => Promise.all([r.e("CollectionCommentsPage~CommentsPage~CountryPage~FramedGild~GildModal~GovernanceReleaseNotesModal~Mem~c8b748a6"), r.e("CollectionCommentsPage~CommentsPage~CountryPage~Frontpage~GovernanceReleaseNotesModal~ModListing~Mod~e3d63e32"), r.e("CountryPage~Multireddit~reddit-components-AdHocMultiredditSidebar"), r.e("CountryPage~Multireddit"), r.e("Multireddit")]).then(r.bind(null, "./src/reddit/actions/multireddit/index.ts")).then(e => e.myMultiredditsRequested))(!0, !0)), e(Object(R.h)(K.a.MULTIREDDIT_ADD_SUBREDDIT))
 						},
-						onClickGivePremium: t => e(Object(D.e)({
+						onClickGivePremium: t => e(Object(M.e)({
 							correlationId: t,
 							profileName: n
 						})),
@@ -2669,13 +2669,13 @@
 									Object(T.a)(t);
 									const r = Object(A.e)(N.fbt._("Copied link!", null, {
 										hk: "4a4E1x"
-									}), M.b.SuccessCommunity);
+									}), D.b.SuccessCommunity);
 									e(Object(A.f)(r))
 								}
 							} else {
 								const t = Object(A.e)(N.fbt._("Something went wrong", null, {
 									hk: "22u7ha"
-								}), M.b.Error);
+								}), D.b.Error);
 								e(Object(A.f)(t))
 							}
 						})())
@@ -2861,9 +2861,9 @@
 					isEmployee: T,
 					isGold: A,
 					prefShowSnoovatar: B,
-					snoovatarFullBodyAsset: M,
-					username: D
-				} = P, R = !!a && a.id === F, G = !(!a || !a.snoovatarFullBodyAsset), W = O && O.bannerBackgroundImage, H = !!b && b.isNSFW, q = H && c, z = !(!v || !v.userIsSubscriber), K = `/user/${D}/`, Z = j && j.url === K, Y = !v || v.acceptChats, Q = !v || v.acceptPms, V = k && Object(ue.b)(M), X = () => {
+					snoovatarFullBodyAsset: D,
+					username: M
+				} = P, R = !!a && a.id === F, G = !(!a || !a.snoovatarFullBodyAsset), W = O && O.bannerBackgroundImage, H = !!b && b.isNSFW, q = H && c, z = !(!v || !v.userIsSubscriber), K = `/user/${M}/`, Z = j && j.url === K, Y = !v || v.acceptChats, Q = !v || v.acceptPms, V = k && Object(ue.b)(D), X = () => {
 					r(e => !e)
 				};
 				return o.a.createElement(o.a.Fragment, null, o.a.createElement(m.a, {
@@ -2877,19 +2877,19 @@
 					title: b ? b.title : void 0,
 					url: Z ? null : K,
 					userCreated: U,
-					username: D,
+					username: M,
 					recentAwardings: w,
 					currentUserHasSnoovatar: G,
 					prefersReducedAnimations: !!E,
 					shouldShowSocialLinks: !0,
-					snoovatarUrl: M,
+					snoovatarUrl: D,
 					topAwardIcon: I,
 					actions: o.a.createElement(o.a.Fragment, null, R && !u && ve({
-						username: D,
+						username: M,
 						currentUserHasSubreddit: i,
 						id: F
 					}), !R && C && o.a.createElement(ge, {
-						profileName: D,
+						profileName: M,
 						toggleFollow: (e, t) => {
 							f(e, t), _(t ? (e => t => ({
 								...g(e, t),
@@ -2915,7 +2915,7 @@
 						isModerator: d,
 						isOwnProfile: R,
 						allowViewSnoovatar: B,
-						profileName: D,
+						profileName: M,
 						sendEvent: _,
 						userAcceptsPms: Q,
 						isUserBlocked: y
@@ -2926,9 +2926,9 @@
 				}), t && o.a.createElement(fe.a, {
 					onClose: X,
 					onConfirm: e => {
-						X(), N(e), _(Object(x.h)(D))
+						X(), N(e), _(Object(x.h)(M))
 					},
-					username: D,
+					username: M,
 					withOverlay: !0
 				}))
 			}))
@@ -3553,7 +3553,7 @@
 			const a = e => Object(s.c)(e, {
 				experimentName: n.G,
 				experimentEligibilitySelector: () => Object(o.P)(e)
-			}) === n.Md
+			}) === n.Ld
 		},
 		"./src/reddit/selectors/experiments/crisisTextLine.ts": function(e, t, r) {
 			"use strict";
@@ -3586,13 +3586,13 @@
 			const o = e => {
 					return !(Object(s.c)(e, {
 						experimentEligibilitySelector: s.a,
-						experimentName: n.ve
-					}) === n.Md)
+						experimentName: n.ue
+					}) === n.Ld)
 				},
 				a = e => Object(s.c)(e, {
 					experimentEligibilitySelector: s.a,
-					experimentName: n.we
-				}) === n.Md
+					experimentName: n.ve
+				}) === n.Ld
 		},
 		"./src/reddit/selectors/premium.ts": function(e, t, r) {
 			"use strict";
@@ -3621,4 +3621,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ProfileIdCard.9629037a74c445b74082.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ProfileIdCard.b81995cffac2f507713e.js.map

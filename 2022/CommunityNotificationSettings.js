@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CommunityNotificationSettings.3e2148f12e947f3a6d9d.js
-// Retrieved at 9/6/2022, 9:30:20 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CommunityNotificationSettings.c1c462d34ea8b00bd85a.js
+// Retrieved at 9/6/2022, 10:10:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CommunityNotificationSettings"], {
 		"./node_modules/lodash/times.js": function(e, t, n) {
@@ -328,10 +328,10 @@
 						isNsfw: w,
 						isMuted: j
 					} = t,
-					I = j && c === h.Md,
+					I = j && c === h.Ld,
 					L = I ? f.b.OFF : E,
-					M = t.styles.icon || (null === (o = t.styles.legacyIcon) || void 0 === o ? void 0 : o.url),
-					F = null !== (d = t.styles.primaryColor) && void 0 !== d ? d : void 0,
+					F = t.styles.icon || (null === (o = t.styles.legacyIcon) || void 0 === o ? void 0 : o.url),
+					M = null !== (d = t.styles.primaryColor) && void 0 !== d ? d : void 0,
 					T = (e => {
 						switch (e) {
 							case f.b.OFF:
@@ -397,12 +397,12 @@
 				}, a.a.createElement("div", {
 					className: k.a.subreddit
 				}, a.a.createElement(p.b, {
-					iconUrl: M,
+					iconUrl: F,
 					altText: s.fbt._("Subreddit icon", null, {
 						hk: "gEWhf"
 					}),
 					shouldHideNsfwIcon: w,
-					primaryColor: F,
+					primaryColor: M,
 					className: k.a.subredditIcon
 				}), a.a.createElement("div", {
 					className: k.a.subredditInfo
@@ -791,4 +791,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommunityNotificationSettings.3e2148f12e947f3a6d9d.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommunityNotificationSettings.c1c462d34ea8b00bd85a.js.map
