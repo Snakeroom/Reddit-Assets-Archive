@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CommentsPage.b5af46d619b500c726ac.js
-// Retrieved at 9/6/2022, 4:10:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CommentsPage.dc656c086aa9d39a16d8.js
+// Retrieved at 9/6/2022, 4:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CommentsPage", "PostCreation~Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~r~4c415e24", "Governance~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compo~bd4baca2", "CollectionCommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~SearchResults", "Governance~ModListing~Reddit~ReportFlow~Subreddit", "Governance~ModListing~Reddit~Subreddit", "CollectionCommentsPage~ModProgressModule~NewCommunityProgress", "CollectionCommentsPage~Subreddit~SubredditWiki", "AchievementsActions"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -43317,7 +43317,7 @@
 					const {
 						subscriptionsPinned: t
 					} = e.user.prefs;
-					return !(void 0 !== t || !Object(r.b)(e)) || !!t
+					return !(void 0 !== t || !Object(r.c)(e)) || !!t
 				},
 				i = e => !(!e.platform.currentPage || !e.platform.currentPage.meta || e.platform.currentPage.meta.name !== s.Qb.MODERATION_PAGES),
 				a = e => e.user.prefs.reduceAnimationsFromAwards,
@@ -43474,4 +43474,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommentsPage.b5af46d619b500c726ac.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommentsPage.dc656c086aa9d39a16d8.js.map

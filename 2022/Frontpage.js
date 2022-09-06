@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Frontpage.fe7aa146e27db9fc92a5.js
-// Retrieved at 9/6/2022, 1:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Frontpage.ef0fcedeb8acc3116834.js
+// Retrieved at 9/6/2022, 4:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Frontpage"], {
 		"./node_modules/intersection-observer/intersection-observer.js": function(e, t) {
@@ -536,7 +536,7 @@
 						sort: d,
 						t: u,
 						correlationId: m
-					} = t, p = Object(L.c)(e), f = Object(F.Z)(e) || Object(F.Q)(e), v = Object(P.a)(e), _ = Object(B.q)(e), x = Object(T.b)(e), E = Object(T.e)(e), y = E === b.ub.LoggedOutUiOnly || E === b.ub.LoggedOutHomeDefpop, k = Object(M.b)(e), {
+					} = t, p = Object(L.c)(e), f = Object(F.Z)(e) || Object(F.Q)(e), v = Object(P.a)(e), _ = Object(B.q)(e), x = Object(T.c)(e), E = Object(T.g)(e), y = E === b.ub.LoggedOutUiOnly || E === b.ub.LoggedOutHomeDefpop, k = Object(M.b)(e), {
 						adsSeenCount: O,
 						totalPostsSeenCount: N,
 						sessionStartTime: j
@@ -837,7 +837,7 @@
 							})), Object(ye.a)(g, {
 								rate: 14
 							})) {
-							const e = Object(T.b)(g);
+							const e = Object(T.c)(g);
 							Object(be.a)(E.ok ? ge.a.ParseError : ge.a.XhrError, e ? ge.b.OneFeed : x ? ge.b.LoggedIn : ge.b.Popular)
 						}
 						const r = E.error;
@@ -2910,7 +2910,7 @@
 				tt = Object(u.c)({
 					isMod: Ke.R,
 					isLoggedIn: Ke.P,
-					isLoggedOutOneFeed: He.b,
+					isLoggedOutOneFeed: He.c,
 					shouldShowLocalRecommendations: e => !1 !== e.user.prefs.showLocationBasedRecommendations,
 					currentUser: Ke.k,
 					frontpageLinks: ze.b,
@@ -6659,9 +6659,9 @@
 				isVoteCountAnimationEnabled: ee.h,
 				isCountAnimShadowTestEnabled: ee.e,
 				isLoggedIn: le.Q,
-				isLoggedOutHomeDefpop: Y.a,
-				isLoggedOutOneFeed: Y.b,
-				isLoggedOutUiOnly: Y.c,
+				isLoggedOutHomeDefpop: Y.b,
+				isLoggedOutOneFeed: Y.c,
+				isLoggedOutUiOnly: Y.d,
 				isPopular: Z.F,
 				isRpanDuVisible: e => Object(oe.a)(e, {
 					listingName: ue.R
@@ -7599,4 +7599,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Frontpage.fe7aa146e27db9fc92a5.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Frontpage.ef0fcedeb8acc3116834.js.map

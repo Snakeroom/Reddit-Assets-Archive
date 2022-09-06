@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.0500aa2991d57d65eef5.js
-// Retrieved at 9/6/2022, 4:10:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.81c43f53dc3db08e477e.js
+// Retrieved at 9/6/2022, 4:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Chat~Governance~Reddit"], {
 		"./assets/fonts/IBMPlexSans/font.less": function(e, t, i) {},
@@ -3561,11 +3561,11 @@
 				apiPassThroughHeaders: Object(r.e)({}.API_PASS_THROUGH_HEADERS || ""),
 				appName: {}.APP_NAME || "desktop2x",
 				assetPath: "https://www.redditstatic.com/desktop2x",
-				buildNumber: Object(r.c)("172499"),
+				buildNumber: Object(r.c)("172507"),
 				chatHelpUrl: {}.CHAT_HELP_URL || "https://reddit.zendesk.com/hc/en-us/sections/360008805652-Chat",
 				hlsVersion: "hls 0.12.4",
 				dashVersion: "dash 4.4.0",
-				buildTimestamp: Object(r.b)("1662493081"),
+				buildTimestamp: Object(r.b)("1662495437"),
 				cookieDomain: ".reddit.com",
 				giphyApiKey: "k2kwyMA6VeyHM6ZRT96OXDGaersnx73Z",
 				mediaUrl: "https://www.redditmedia.com",
@@ -6228,14 +6228,14 @@
 					}))
 				},
 				Q = (e, t, i) => {
-					console.log("%cStarting Raven %crelease %c7ecd9006c8eb550d09cc61e457ff8b841055de51-production" + ` %cpublic url %c${y.a.sentryClientPublicURL}`, "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
+					console.log("%cStarting Raven %crelease %c060bb5b86553b6a3e0309ccf0b661355993a90e2-production" + ` %cpublic url %c${y.a.sentryClientPublicURL}`, "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
 					let n = [];
 					n = [new RegExp(`^${y.a.assetPath}`, "i")];
 					o.e({
 						attachStacktrace: !0,
 						dsn: y.a.sentryClientPublicURL,
 						whitelistUrls: n,
-						release: "7ecd9006c8eb550d09cc61e457ff8b841055de51-production",
+						release: "060bb5b86553b6a3e0309ccf0b661355993a90e2-production",
 						environment: "production",
 						ignoreErrors: ["$ is not defined"],
 						integrations: [...Object(L.d)(), new d.Integrations.Breadcrumbs({
@@ -6771,7 +6771,7 @@
 							settings: r,
 							statusCode: s,
 							type: o,
-							releaseClient: "7ecd9006c8eb550d09cc61e457ff8b841055de51-production",
+							releaseClient: "060bb5b86553b6a3e0309ccf0b661355993a90e2-production",
 							appName: t.statsAppName,
 							error: n ? JSON.parse(Object(l.a)(n)) : void 0
 						},
@@ -17622,7 +17622,7 @@
 				e.Enabled = "enabled"
 			}($s || ($s = {})),
 			function(e) {
-				e.LoggedOutOneFeedDefault = "logged_out_one_feed_default", e.LoggedOutHomeDefpop = "lo_d2x_def_pop", e.RemovePopularCommunities = "lo_d2x_no_pop_rr", e.LoggedOutUiOnly = "lo_d2x_ui_only"
+				e.LoggedOutOneFeedDefault = "logged_out_one_feed_default", e.LoggedOutHomeDefpop = "lo_d2x_def_pop", e.RemovePopularCommunities = "lo_d2x_no_pop_rr", e.LoggedOutUiOnly = "lo_d2x_ui_only", e.RemoveRecentCommunities = "lo-d2x-ui-only-norc", e.FilterOutNSFW = "lo_d2x_ui_only_sfwrc"
 			}(Js || (Js = {})),
 			function(e) {
 				e.Removed = "removed"
@@ -17734,7 +17734,7 @@
 					d2x_start_comment_before_sign_up_mx: [Zs.RegOnboarding, Zs.SkipOnboarding],
 					d2x_start_comment_before_sign_up_us: [Zs.RegOnboarding, Zs.SkipOnboarding],
 					d2x_start_comment_before_sign_up_row: [Zs.RegOnboarding, Zs.SkipOnboarding],
-					[ci]: [Js.LoggedOutOneFeedDefault, Js.RemovePopularCommunities, Js.LoggedOutUiOnly, Js.LoggedOutHomeDefpop],
+					[ci]: [Js.LoggedOutOneFeedDefault, Js.RemovePopularCommunities, Js.LoggedOutUiOnly, Js.LoggedOutHomeDefpop, Js.RemoveRecentCommunities, Js.FilterOutNSFW],
 					[mi]: [Sn],
 					[pi]: [Sn],
 					[gi]: [to.SoftBlockingOnce, to.SoftBlockingTwice, to.SoftBlockingThrice],
@@ -49633,4 +49633,4 @@
 		"ignored /drone/src/node_modules/readable-stream/lib/internal/streams util": function(e, t) {}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.0500aa2991d57d65eef5.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.81c43f53dc3db08e477e.js.map

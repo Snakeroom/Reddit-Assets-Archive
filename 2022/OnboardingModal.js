@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/OnboardingModal.8bcdea54c6c2cda56fe9.js
-// Retrieved at 9/6/2022, 1:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/OnboardingModal.170b498324f300c8690e.js
+// Retrieved at 9/6/2022, 4:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["OnboardingModal"], {
 		"./node_modules/lodash/_baseRange.js": function(e, t) {
@@ -382,7 +382,7 @@
 						sort: l,
 						t: u,
 						correlationId: m
-					} = t, p = Object(F.c)(e), h = Object(P.Z)(e) || Object(P.Q)(e), v = Object(R.a)(e), x = Object(G.q)(e), O = Object(A.b)(e), E = Object(A.e)(e), C = E === b.ub.LoggedOutUiOnly || E === b.ub.LoggedOutHomeDefpop, _ = Object(L.b)(e), {
+					} = t, p = Object(F.c)(e), h = Object(P.Z)(e) || Object(P.Q)(e), v = Object(R.a)(e), x = Object(G.q)(e), O = Object(A.c)(e), E = Object(A.g)(e), C = E === b.ub.LoggedOutUiOnly || E === b.ub.LoggedOutHomeDefpop, _ = Object(L.b)(e), {
 						adsSeenCount: j,
 						totalPostsSeenCount: I,
 						sessionStartTime: k
@@ -683,7 +683,7 @@
 							})), Object(Ce.a)(g, {
 								rate: 14
 							})) {
-							const e = Object(A.b)(g);
+							const e = Object(A.c)(g);
 							Object(be.a)(E.ok ? ge.a.ParseError : ge.a.XhrError, e ? ge.b.OneFeed : O ? ge.b.LoggedIn : ge.b.Popular)
 						}
 						const o = E.error;
@@ -4207,4 +4207,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/OnboardingModal.8bcdea54c6c2cda56fe9.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/OnboardingModal.170b498324f300c8690e.js.map

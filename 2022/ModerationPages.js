@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModerationPages.c059f8c682c42333d3ac.js
-// Retrieved at 9/6/2022, 4:10:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModerationPages.528b77e9d2e005de6604.js
+// Retrieved at 9/6/2022, 4:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModerationPages", "CollectionCommentsPage~CommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~RpanListingUnit~S~5809214e", "CommentsPage~Governance~Reddit~ReportFlow~Subreddit~reddit-components-BlankPost~reddit-components-Cl~5351df81", "PostCreation~Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~r~4c415e24", "Governance~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compo~bd4baca2", "Governance~ModListing~Reddit~ReportFlow~Subreddit", "Governance~ModListing~Reddit~Subreddit", "Governance~Reddit~SubredditForkingCTA"], {
 		"./src/chat/controls/Svg/index.m.less": function(e, t, n) {
@@ -72173,16 +72173,20 @@
 		},
 		"./src/reddit/selectors/experiments/loggedOutOneFeed.ts": function(e, t, n) {
 			"use strict";
-			n.d(t, "e", (function() {
+			n.d(t, "g", (function() {
 				return l
-			})), n.d(t, "b", (function() {
-				return u
-			})), n.d(t, "d", (function() {
-				return m
 			})), n.d(t, "c", (function() {
+				return u
+			})), n.d(t, "e", (function() {
+				return m
+			})), n.d(t, "d", (function() {
 				return p
-			})), n.d(t, "a", (function() {
+			})), n.d(t, "b", (function() {
 				return b
+			})), n.d(t, "f", (function() {
+				return f
+			})), n.d(t, "a", (function() {
+				return h
 			}));
 			var s = n("./node_modules/reselect/es/index.js"),
 				r = n("./src/reddit/constants/experiments.ts"),
@@ -72198,7 +72202,9 @@
 				u = e => !!Object(d.a)(l(e)),
 				m = e => l(e) === r.ub.RemovePopularCommunities,
 				p = e => l(e) === r.ub.LoggedOutUiOnly,
-				b = e => l(e) === r.ub.LoggedOutHomeDefpop
+				b = e => l(e) === r.ub.LoggedOutHomeDefpop,
+				f = e => l(e) === r.ub.RemoveRecentCommunities,
+				h = e => l(e) === r.ub.FilterOutNSFW
 		},
 		"./src/reddit/selectors/experiments/mediaInComments.ts": function(e, t, n) {
 			"use strict";
@@ -73845,7 +73851,7 @@
 				r = n("./src/reddit/selectors/experiments/loggedOutOneFeed.ts"),
 				o = n("./src/reddit/selectors/user.ts");
 			const i = e => {
-					const t = Object(r.d)(e);
+					const t = Object(r.e)(e);
 					return !Object(o.Q)(e) && !t && e.seo.linksModule.frontpage || null
 				},
 				a = e => {
@@ -74652,7 +74658,7 @@
 					const {
 						subscriptionsPinned: t
 					} = e.user.prefs;
-					return !(void 0 !== t || !Object(r.b)(e)) || !!t
+					return !(void 0 !== t || !Object(r.c)(e)) || !!t
 				},
 				i = e => !(!e.platform.currentPage || !e.platform.currentPage.meta || e.platform.currentPage.meta.name !== s.Qb.MODERATION_PAGES),
 				a = e => e.user.prefs.reduceAnimationsFromAwards,
@@ -75131,4 +75137,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.c059f8c682c42333d3ac.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.528b77e9d2e005de6604.js.map

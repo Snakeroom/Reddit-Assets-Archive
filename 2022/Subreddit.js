@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Subreddit.8a958c1aa0d46efc0a02.js
-// Retrieved at 9/6/2022, 12:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Subreddit.effc071c3db92d2bf81a.js
+// Retrieved at 9/6/2022, 4:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Subreddit", "Frontpage~ModListing", "reddit-components-Econ-PredictionLeaderboard-Sidebar"], {
 		"./node_modules/@reddit/i18n-tools/runtime/helpers/locale/index.js": function(e, t, n) {
@@ -18144,7 +18144,7 @@
 					const {
 						subscriptionsPinned: t
 					} = e.user.prefs;
-					return !(void 0 !== t || !Object(r.b)(e)) || !!t
+					return !(void 0 !== t || !Object(r.c)(e)) || !!t
 				},
 				a = e => !(!e.platform.currentPage || !e.platform.currentPage.meta || e.platform.currentPage.meta.name !== s.Qb.MODERATION_PAGES),
 				i = e => e.user.prefs.reduceAnimationsFromAwards,
@@ -18211,4 +18211,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Subreddit.8a958c1aa0d46efc0a02.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Subreddit.effc071c3db92d2bf81a.js.map
