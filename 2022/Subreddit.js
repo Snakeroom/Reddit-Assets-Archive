@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Subreddit.1b82cbd6e027998d1d19.js
-// Retrieved at 9/6/2022, 10:10:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Subreddit.8a958c1aa0d46efc0a02.js
+// Retrieved at 9/6/2022, 12:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Subreddit", "Frontpage~ModListing", "reddit-components-Econ-PredictionLeaderboard-Sidebar"], {
 		"./node_modules/@reddit/i18n-tools/runtime/helpers/locale/index.js": function(e, t, n) {
@@ -4393,7 +4393,7 @@
 				} = e;
 				var x;
 				const y = Object(b.a)(),
-					E = Object(l.gb)(),
+					E = Object(l.eb)(),
 					_ = "true" === (null == E ? void 0 : E.queryParams["top-predictors"]),
 					[O, C, j] = Object(p.a)(_),
 					{
@@ -4778,7 +4778,7 @@
 				}).apply(this, arguments)
 			}
 			t.a = Object(g.a)(e => {
-				const t = Object(v.gb)(),
+				const t = Object(v.eb)(),
 					n = null == t ? void 0 : t.queryParams["prediction-tournament-rank"],
 					s = Object(o.e)(t => Object(_.G)(t, e.listingName)),
 					{
@@ -6827,7 +6827,7 @@
 				isHeaderDropdownOpened: e => e.header.isSubscriptionsDropdownOpen,
 				isLoggedIn: P.Q
 			}), R = Object(a.b)(B, e => ({
-				closeSearchDropdown: () => e(Object(m.k)()),
+				closeSearchDropdown: () => e(Object(m.l)()),
 				closeHeaderDropdown: () => e(Object(l.f)()),
 				closeTooltipModal: () => e(Object(b.j)()),
 				openLoginModal: () => e(Object(u.openLoginModal)()),
@@ -11241,12 +11241,12 @@
 						rtJsonElementProps: a
 					});
 					switch (o) {
-						case h.Of.SmIcon:
+						case h.Pf.SmIcon:
 							return r.a.createElement(p, {
 								subredditName: s,
 								rtJsonElementProps: a
 							});
-						case h.Of.SmIconHc:
+						case h.Pf.SmIconHc:
 							return r.a.createElement(p, {
 								subredditName: s,
 								isHoverable: !0,
@@ -15729,7 +15729,7 @@
 		"./src/reddit/hooks/usePageLayer.ts": function(e, t, n) {
 			"use strict";
 			var s = n("./src/reddit/contexts/PageLayer/index.tsx");
-			t.a = s.gb
+			t.a = s.eb
 		},
 		"./src/reddit/hooks/usePromoContext.ts": function(e, t, n) {
 			"use strict";
@@ -17646,7 +17646,7 @@
 						experimentEligibilitySelector: o.Q,
 						experimentName: s.od
 					});
-					return !(!t || Object(s.ng)(t))
+					return !(!t || Object(s.og)(t))
 				},
 				i = e => {
 					return Object(r.c)(e, {
@@ -18074,12 +18074,12 @@
 				c = e => {
 					return Object(o.c)(e, {
 						experimentEligibilitySelector: i,
-						experimentName: s.If
+						experimentName: s.Jf
 					}) || ""
 				},
 				d = e => {
 					const t = c(e);
-					return t === s.Of.SmIcon || t === s.Of.SmIconHc
+					return t === s.Pf.SmIcon || t === s.Pf.SmIconHc
 				},
 				l = (e, t) => {
 					let {
@@ -18211,4 +18211,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Subreddit.1b82cbd6e027998d1d19.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Subreddit.8a958c1aa0d46efc0a02.js.map

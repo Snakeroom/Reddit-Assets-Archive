@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostCreation.34e05648759ecdd1de02.js
-// Retrieved at 9/6/2022, 10:10:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostCreation.4cce8f89987642e13c3e.js
+// Retrieved at 9/6/2022, 12:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostCreation", "ChatMessageInput~MembershipPaywallPage~RichTextEditor", "ContributorRequestButton"], {
 		"./node_modules/autosize/dist/autosize.js": function(e, t, n) {
@@ -11931,7 +11931,7 @@
 				}
 			}
 			t.c = i.a.memo((function(e) {
-				const t = Object(p.gb)(),
+				const t = Object(p.eb)(),
 					n = Object(p.w)(t),
 					o = Object(v.a)(),
 					s = Object(a.e)(s => X(s, {
@@ -26526,7 +26526,7 @@
 		"./src/reddit/hooks/usePageLayer.ts": function(e, t, n) {
 			"use strict";
 			var o = n("./src/reddit/contexts/PageLayer/index.tsx");
-			t.a = o.gb
+			t.a = o.eb
 		},
 		"./src/reddit/hooks/usePostContext.ts": function(e, t, n) {
 			"use strict";
@@ -32317,7 +32317,7 @@
 				fbt: Zl
 			} = n("./node_modules/fbt/lib/FbtPublic.js"), Ql = () => {
 				const e = Object(r.d)(),
-					t = Object(z.gb)(),
+					t = Object(z.eb)(),
 					n = Object(r.e)(e => Object(z.r)(e, {
 						pageLayer: t
 					})),
@@ -33881,7 +33881,7 @@
 							isPredictionCreationAllowed: n,
 							isApprovedUser: o
 						} = function() {
-							const [e, t] = s.a.useState(!1), [n, o] = s.a.useState(!1), i = Object(r.d)(), a = Object(z.gb)(), c = Object(r.e)(e => Object(z.r)(e, {
+							const [e, t] = s.a.useState(!1), [n, o] = s.a.useState(!1), i = Object(r.d)(), a = Object(z.eb)(), c = Object(r.e)(e => Object(z.r)(e, {
 								pageLayer: a
 							})), l = Object(r.e)(e => c && Object(Qe.h)(e, {
 								subredditId: c.id
@@ -34368,7 +34368,7 @@
 			};
 
 			function l() {
-				const e = Object(s.gb)(),
+				const e = Object(s.eb)(),
 					t = Object(o.e)(t => Object(s.r)(t, {
 						pageLayer: e
 					})),
@@ -34490,29 +34490,29 @@
 					if (Object(i.a)(e)) return !1;
 					return Object(s.c)(e, {
 						experimentEligibilitySelector: r.e,
-						experimentName: o.ig
+						experimentName: o.jg
 					}) === o.Ld
 				},
 				c = e => {
 					return Object(s.c)(e, {
 						experimentEligibilitySelector: r.e,
-						experimentName: o.jg
+						experimentName: o.kg
 					}) === o.Ld
 				},
 				l = e => {
 					if (Object(i.a)(e)) return !1;
 					const t = Object(s.c)(e, {
 						experimentEligibilitySelector: r.e,
-						experimentName: o.hg
+						experimentName: o.ig
 					});
-					return t === o.Xf.TypingIndicators || t === o.Xf.IndicatorsPlusCTA
+					return t === o.Yf.TypingIndicators || t === o.Yf.IndicatorsPlusCTA
 				},
 				d = e => {
 					if (Object(i.a)(e)) return !1;
 					const t = Object(r.d)(e, {
-						experimentName: o.hg
+						experimentName: o.ig
 					});
-					return (null == t ? void 0 : t.variant) === o.Xf.IndicatorsPlusCTA
+					return (null == t ? void 0 : t.variant) === o.Yf.IndicatorsPlusCTA
 				}
 		},
 		"./src/reddit/selectors/gold/enabledFeatures.ts": function(e, t, n) {
@@ -34941,4 +34941,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.34e05648759ecdd1de02.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.4cce8f89987642e13c3e.js.map

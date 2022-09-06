@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CryptoVault.268219543b357e9676b2.js
-// Retrieved at 8/30/2022, 3:10:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CryptoVault.3ecfd0997745f9eaa8e1.js
+// Retrieved at 9/6/2022, 12:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CryptoVault"], {
 		"./src/reddit/actions/economics/claims/constants.ts": function(e, t, n) {
@@ -72,9 +72,9 @@
 			})), n.d(t, "v", (function() {
 				return C
 			})), n.d(t, "w", (function() {
-				return g
-			})), n.d(t, "x", (function() {
 				return R
+			})), n.d(t, "x", (function() {
+				return g
 			}));
 			const r = "GOVERNANCE__COMMUNITY_DETAILS_SUCCESS",
 				i = "GOVERNANCE__NEW_SUBREDDIT_SUGGESTED",
@@ -98,8 +98,8 @@
 				y = "GOVERNANCE__TRANSFER_SUCCESS",
 				h = "GOVERNANCE__WALLETS_FETCH_FAILURE",
 				C = "GOVERNANCE__WALLETS_FETCH_PENDING",
-				g = "GOVERNANCE__WALLETS_FETCH_SUCCESS",
-				R = "GOVERNANCE__WALLET_REGISTRATION_MODAL_OPENED"
+				R = "GOVERNANCE__WALLETS_FETCH_SUCCESS",
+				g = "GOVERNANCE__WALLET_REGISTRATION_MODAL_OPENED"
 		},
 		"./src/reddit/components/Governance/Token/index.m.less": function(e, t, n) {
 			e.exports = {
@@ -180,7 +180,7 @@
 
 			function A(e) {
 				const t = Object(s.d)(),
-					n = Object(E.gb)(),
+					n = Object(E.eb)(),
 					r = Object(s.e)(e => Object(E.r)(e, {
 						pageLayer: n
 					})),
@@ -248,7 +248,7 @@
 			}
 			t.default = function(e) {
 				const t = Object(o.d)(),
-					n = Object(a.gb)(),
+					n = Object(a.eb)(),
 					r = Object(o.e)(e => Object(a.r)(e, {
 						pageLayer: n
 					})),
@@ -656,7 +656,7 @@
 			};
 
 			function u() {
-				const e = Object(i.gb)(),
+				const e = Object(i.eb)(),
 					t = Object(r.e)(t => Object(i.r)(t, {
 						pageLayer: e
 					})),
@@ -674,4 +674,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CryptoVault.268219543b357e9676b2.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CryptoVault.3ecfd0997745f9eaa8e1.js.map

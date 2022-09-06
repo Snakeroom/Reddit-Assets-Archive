@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/NsfwBlockingModal.de93024d56549f469331.js
-// Retrieved at 9/6/2022, 10:10:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/NsfwBlockingModal.4459580f9a635aa9eff8.js
+// Retrieved at 9/6/2022, 12:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["NsfwBlockingModal"], {
 		"./src/reddit/components/Footer/index.m.less": function(e, t, n) {
@@ -70,8 +70,8 @@
 				C = n("./src/reddit/helpers/name/index.ts"),
 				p = n("./src/reddit/selectors/platform.ts");
 
-			function f() {
-				return (f = Object.assign || function(e) {
+			function g() {
+				return (g = Object.assign || function(e) {
 					for (var t = 1; t < arguments.length; t++) {
 						var n = arguments[t];
 						for (var r in n) Object.prototype.hasOwnProperty.call(n, r) && (e[r] = n[r])
@@ -80,11 +80,11 @@
 				}).apply(this, arguments)
 			}
 			const {
-				fbt: g
+				fbt: f
 			} = n("./node_modules/fbt/lib/FbtPublic.js"), v = Object(r.a)(e => {
 				const t = Object(d.e)(p.b),
 					n = Object(d.e)(() => t ? Object(b.f)(t) : null),
-					r = Object(d.e)(e => t ? Object(b.ib)(e, {
+					r = Object(d.e)(e => t ? Object(b.gb)(e, {
 						pageLayer: t
 					}) : null),
 					s = Object(d.e)(e => t ? Object(b.Y)(e, {
@@ -99,7 +99,7 @@
 					})()
 				})
 			});
-			t.default = e => i.a.createElement(v, f({}, e, {
+			t.default = e => i.a.createElement(v, g({}, e, {
 				className: Object(s.a)(e.className, _.a.modal),
 				shouldBlurBackground: !0,
 				onOverlayClick: c.a,
@@ -145,8 +145,8 @@
 				b = n("./src/reddit/components/Footer/index.tsx"),
 				C = n("./src/reddit/components/TrackingHelper/index.tsx"),
 				p = n("./src/reddit/constants/experiments.ts"),
-				f = n("./src/reddit/controls/Button/index.tsx"),
-				g = n("./src/reddit/helpers/counters/nsfwblocking.ts"),
+				g = n("./src/reddit/controls/Button/index.tsx"),
+				f = n("./src/reddit/helpers/counters/nsfwblocking.ts"),
 				v = n("./src/reddit/selectors/telemetry.ts");
 			const x = "nsfw_dialog";
 			var h = e => o.a.createElement("svg", {
@@ -194,7 +194,7 @@
 							hk: "RUR2Z"
 						})))(r === j.a.Blurred);
 					return Object(a.useEffect)(() => {
-						Object(g.c)(r)
+						Object(f.c)(r)
 					}, [r]), o.a.createElement("div", {
 						className: Object(d.a)(E.a.mainCta)
 					}, o.a.createElement(h, null), b, o.a.createElement("div", {
@@ -205,7 +205,7 @@
 						hk: "3cUxXS"
 					}))()), o.a.createElement("div", {
 						className: E.a.buttonContainer
-					}, o.a.createElement(f.j, {
+					}, o.a.createElement(g.j, {
 						className: Object(d.a)(E.a.logIn),
 						onClick: () => {
 							n((() => e => ({
@@ -213,11 +213,11 @@
 								source: "xpromo",
 								action: "click",
 								noun: x
-							}))()), m(), Object(g.b)(g.a.Login), t(Object(u.openLoginModal)())
+							}))()), m(), Object(f.b)(f.a.Login), t(Object(u.openLoginModal)())
 						}
 					}, (() => s.fbt._("Log In", null, {
 						hk: "4BITk"
-					}))()), o.a.createElement(f.j, {
+					}))()), o.a.createElement(g.j, {
 						className: E.a.cancel,
 						onClick: () => {
 							Object(i.b)(), n((() => e => ({
@@ -225,7 +225,7 @@
 								source: "xpromo",
 								action: "dismiss",
 								noun: x
-							}))()), Object(g.b)(g.a.Dismiss), t(Object(l.b)("/"))
+							}))()), Object(f.b)(f.a.Dismiss), t(Object(l.b)("/"))
 						}
 					}, (() => s.fbt._("I'm not over 18", null, {
 						hk: "11UX9Q"
@@ -286,4 +286,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/NsfwBlockingModal.de93024d56549f469331.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/NsfwBlockingModal.4459580f9a635aa9eff8.js.map

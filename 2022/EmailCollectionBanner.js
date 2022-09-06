@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/EmailCollectionBanner.e4952b33b0013ef4f511.js
-// Retrieved at 8/31/2022, 11:40:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/EmailCollectionBanner.8ac4d48536d731dd46ee.js
+// Retrieved at 9/6/2022, 12:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["EmailCollectionBanner"], {
 		"./src/reddit/components/EmailCollection/Banner/index.m.less": function(e, t, n) {
@@ -354,4 +354,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EmailCollectionBanner.e4952b33b0013ef4f511.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EmailCollectionBanner.8ac4d48536d731dd46ee.js.map

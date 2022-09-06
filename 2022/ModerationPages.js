@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModerationPages.24edb644236ffcb04c07.js
-// Retrieved at 9/6/2022, 12:20:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModerationPages.5a26b719a8850a94f75c.js
+// Retrieved at 9/6/2022, 12:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModerationPages", "CollectionCommentsPage~CommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~RpanListingUnit~S~5809214e", "CommentsPage~Governance~Reddit~ReportFlow~Subreddit~reddit-components-BlankPost~reddit-components-Cl~5351df81", "PostCreation~Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~r~4c415e24", "Governance~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compo~bd4baca2", "Governance~ModListing~Reddit~ReportFlow~Subreddit", "Governance~ModListing~Reddit~Subreddit", "Governance~Reddit~SubredditForkingCTA"], {
 		"./src/chat/controls/Svg/index.m.less": function(e, t, n) {
@@ -9257,7 +9257,7 @@
 						} = t;
 						var m, p;
 						const b = Object(Ce.c)(e),
-							f = !!b && !Object(_e.ng)(b) && (o || b === _e.xb.Community),
+							f = !!b && !Object(_e.og)(b) && (o || b === _e.xb.Community),
 							{
 								adsSeenCount: h,
 								totalPostsSeenCount: g,
@@ -42833,7 +42833,7 @@
 				}
 			}
 			t.c = i.a.memo((function(e) {
-				const t = Object(p.gb)(),
+				const t = Object(p.eb)(),
 					n = Object(p.w)(t),
 					s = Object(E.a)(),
 					r = Object(a.e)(r => Z(r, {
@@ -55662,7 +55662,7 @@
 								experimentName: o.Q,
 								expEventOverride: t
 							});
-							return !!(Object(o.ng)(n) ? void 0 : n)
+							return !!(Object(o.og)(n) ? void 0 : n)
 						})(n)) || (e => !1 !== e.collapsed)(t)
 					})
 				}
@@ -71650,7 +71650,7 @@
 			};
 
 			function c() {
-				const e = Object(r.gb)(),
+				const e = Object(r.eb)(),
 					t = Object(s.e)(t => Object(r.r)(t, {
 						pageLayer: e
 					})),
@@ -71979,7 +71979,7 @@
 					experimentEligibilitySelector: r.a,
 					experimentName: s.Kd
 				});
-				return !(!t || Object(s.ng)(t))
+				return !(!t || Object(s.og)(t))
 			}
 		},
 		"./src/reddit/selectors/experiments/gqlSubredditPage.ts": function(e, t, n) {
@@ -72534,9 +72534,9 @@
 				}),
 				a = (e, t, n) => {
 					const o = n(e, t);
-					return !(!o || !o.meter) && (o.meter.enabled && s.bg.Enabled === Object(r.c)(e, {
+					return !(!o || !o.meter) && (o.meter.enabled && s.cg.Enabled === Object(r.c)(e, {
 						experimentEligibilitySelector: r.a,
-						experimentName: s.ag
+						experimentName: s.bg
 					}))
 				},
 				d = e => Object(r.c)(e, {
@@ -72639,9 +72639,9 @@
 					experimentName: r.cd,
 					experimentEligibilitySelector: e => d(e, t)
 				}), e => e),
-				l = e => e === r.Wf.NoCommunityWidgets,
-				u = e => e === r.Wf.NoRulesModerators,
-				m = e => e === r.Wf.RelatedPostsDu
+				l = e => e === r.Xf.NoCommunityWidgets,
+				u = e => e === r.Xf.NoRulesModerators,
+				m = e => e === r.Xf.RelatedPostsDu
 		},
 		"./src/reddit/selectors/experiments/web2x_cta.ts": function(e, t, n) {
 			"use strict";
@@ -72652,10 +72652,10 @@
 				r = n("./src/reddit/constants/experiments.ts"),
 				o = n("./src/reddit/helpers/chooseVariant/index.ts");
 			const i = Object(s.a)(e => Object(o.c)(e, {
-					experimentName: r.dg,
+					experimentName: r.eg,
 					experimentEligibilitySelector: o.a
 				}), e => e),
-				a = Object(s.a)(i, e => e === r.Uf)
+				a = Object(s.a)(i, e => e === r.Vf)
 		},
 		"./src/reddit/selectors/externalAccount.ts": function(e, t, n) {
 			"use strict";
@@ -73460,7 +73460,7 @@
 					var t;
 					const n = null === (t = e.platform.currentPage) || void 0 === t ? void 0 : t.urlParams,
 						s = n.subredditName;
-					return Object(p.a)(e) !== i.Vf.TargetedOnboarding || s && Object(o.a)(s, {
+					return Object(p.a)(e) !== i.Wf.TargetedOnboarding || s && Object(o.a)(s, {
 						countryCode: n.countryCode,
 						languageCode: n.languageCode
 					}) || !Object.keys(n).length
@@ -73471,7 +73471,7 @@
 					} = e.onboarding;
 					if (t.success || t.failure) return t
 				},
-				O = Object(r.a)(m.c, e => e.onboarding.interestTopicRecommendationsState, (e, t) => e && !Object(i.ng)(e) ? t : null),
+				O = Object(r.a)(m.c, e => e.onboarding.interestTopicRecommendationsState, (e, t) => e && !Object(i.og)(e) ? t : null),
 				x = Object(r.a)(m.c, (e, t) => {
 					let {
 						pageLayer: n
@@ -75034,4 +75034,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.24edb644236ffcb04c07.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.5a26b719a8850a94f75c.js.map

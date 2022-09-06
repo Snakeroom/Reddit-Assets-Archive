@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Poll.6536769c7e7ab5b4cdb5.js
-// Retrieved at 8/30/2022, 3:10:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Poll.3db35af17a6edcf7f756.js
+// Retrieved at 9/6/2022, 12:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Poll"], {
 		"./src/lib/bigNumberUtils/percent.ts": function(e, t, n) {
@@ -1724,7 +1724,7 @@
 			};
 
 			function l() {
-				const e = Object(o.gb)(),
+				const e = Object(o.eb)(),
 					t = Object(r.e)(t => Object(o.r)(t, {
 						pageLayer: e
 					})),
@@ -1797,4 +1797,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Poll.6536769c7e7ab5b4cdb5.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Poll.3db35af17a6edcf7f756.js.map

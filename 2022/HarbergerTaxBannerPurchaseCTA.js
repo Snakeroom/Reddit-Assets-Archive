@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/HarbergerTaxBannerPurchaseCTA.774d9f31cebac5cf4bb0.js
-// Retrieved at 8/30/2022, 3:10:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/HarbergerTaxBannerPurchaseCTA.ef4f7169ab95068b73ba.js
+// Retrieved at 9/6/2022, 12:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["HarbergerTaxBannerPurchaseCTA"], {
 		"./src/reddit/actions/economics/claims/constants.ts": function(e, t, n) {
@@ -831,7 +831,7 @@
 			};
 
 			function u() {
-				const e = Object(i.gb)(),
+				const e = Object(i.eb)(),
 					t = Object(r.e)(t => Object(i.r)(t, {
 						pageLayer: e
 					})),
@@ -930,4 +930,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/HarbergerTaxBannerPurchaseCTA.774d9f31cebac5cf4bb0.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/HarbergerTaxBannerPurchaseCTA.ef4f7169ab95068b73ba.js.map

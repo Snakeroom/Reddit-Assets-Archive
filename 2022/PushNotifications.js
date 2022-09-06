@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PushNotifications.7a1ba5e0a8932f9e542b.js
-// Retrieved at 9/6/2022, 10:10:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PushNotifications.b8cd0c429b1d7194c21e.js
+// Retrieved at 9/6/2022, 12:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PushNotifications"], {
 		"./src/lib/notifications/token.ts": function(e, t, i) {
@@ -393,4 +393,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PushNotifications.7a1ba5e0a8932f9e542b.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PushNotifications.b8cd0c429b1d7194c21e.js.map

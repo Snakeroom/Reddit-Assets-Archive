@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit~ReportFlow~Subreddit.ad3598db7971003a8265.js
-// Retrieved at 9/6/2022, 10:10:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit~ReportFlow~Subreddit.bc759cd9af7196fc258d.js
+// Retrieved at 9/6/2022, 12:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~ModListing~Reddit~ReportFlow~Subreddit"], {
 		"./src/lib/assertNever.ts": function(t, e, i) {
@@ -780,7 +780,7 @@
 			})), i.d(e, "e", (function() {
 				return Y
 			})), i.d(e, "d", (function() {
-				return Q
+				return X
 			})), i.d(e, "g", (function() {
 				return $
 			})), i.d(e, "c", (function() {
@@ -903,11 +903,11 @@
 							success: g.ok
 						}
 					})
-				}, W = Object(d.a)(B.l), q = Object(d.a)(B.k), K = Object(d.a)(B.j), V = t => async (e, i, n) => {
+				}, q = Object(d.a)(B.l), W = Object(d.a)(B.k), K = Object(d.a)(B.j), V = t => async (e, i, n) => {
 					let {
 						apiContext: r
 					} = n;
-					e(W({
+					e(q({
 						subredditId: t
 					}));
 					const o = Object(S.V)(i(), {
@@ -917,7 +917,7 @@
 					if (l.ok) {
 						const n = i().structuredStyles.models[t],
 							r = n ? n.mobileKeyColor : null;
-						e(q({
+						e(W({
 							subredditId: t,
 							styles: {
 								mobileKeyColor: r
@@ -971,7 +971,7 @@
 							error: a.error
 						}))
 					})(t)(e, i, n), Object(I.g)(t, !1)(e, i, n)
-				}, H = Object(d.a)(B.c), Q = t => async (e, i, n) => {
+				}, H = Object(d.a)(B.c), X = t => async (e, i, n) => {
 					const r = M(t),
 						o = i();
 					for (const t in r)
@@ -988,13 +988,13 @@
 								});
 								i && e(Object(_.h)(i))
 							} e(H(r))
-				}, X = Object(d.a)(B.f), $ = (t, e, i) => async (n, r, o) => {
+				}, Q = Object(d.a)(B.f), $ = (t, e, i) => async (n, r, o) => {
 					const l = r(),
 						s = i || l.structuredStyles.isEditing,
 						c = Object(S.V)(l, {
 							subredditId: s
 						}).name;
-					n(X({
+					n(Q({
 						imageKey: t,
 						uploadId: e.id
 					})), n(Object(_.k)(e));
@@ -2298,9 +2298,9 @@
 			})), i.d(e, "r", (function() {
 				return M
 			})), i.d(e, "j", (function() {
-				return W
-			})), i.d(e, "g", (function() {
 				return q
+			})), i.d(e, "g", (function() {
+				return W
 			})), i.d(e, "h", (function() {
 				return K
 			})), i.d(e, "d", (function() {
@@ -2312,7 +2312,7 @@
 			})), i.d(e, "c", (function() {
 				return H
 			})), i.d(e, "v", (function() {
-				return X
+				return Q
 			})), i.d(e, "u", (function() {
 				return $
 			})), i.d(e, "G", (function() {
@@ -2586,14 +2586,14 @@
 						...F(t, e.subredditId)
 					}
 				},
-				W = (t, e) => {
+				q = (t, e) => {
 					Object(f.a)({
 						noun: "draft_load",
 						...S(t),
 						...M(t, e)
 					})
 				},
-				q = (t, e) => {
+				W = (t, e) => {
 					Object(f.a)({
 						noun: e.draftId ? "draft_update" : "draft_create",
 						...S(t),
@@ -2639,11 +2639,11 @@
 						}
 					})
 				},
-				Q = "community_recommendation",
-				X = () => t => ({
+				X = "community_recommendation",
+				Q = () => t => ({
 					...S(t),
 					action: n.c.VIEW,
-					noun: Q,
+					noun: X,
 					listing: {
 						links: Object(c.c)(t).map(e => Object(d.G)(t, e.name))
 					}
@@ -2651,7 +2651,7 @@
 				$ = (t, e) => i => ({
 					...S(i),
 					action: n.c.CLICK,
-					noun: Q,
+					noun: X,
 					actionInfo: {
 						...u.d(i),
 						position: e
@@ -2665,13 +2665,13 @@
 					Object(f.a)({
 						...S(t),
 						action: n.c.SKIP,
-						noun: Q
+						noun: X
 					})
 				},
 				J = (t, e) => i => ({
 					...S(i),
 					action: n.c.VIEW,
-					noun: `${Q}_hover`,
+					noun: `${X}_hover`,
 					actionInfo: {
 						...u.d(i),
 						position: e
@@ -2954,9 +2954,9 @@
 					experimentName: r.cd,
 					experimentEligibilitySelector: t => c(t, e)
 				}), t => t),
-				d = t => t === r.Wf.NoCommunityWidgets,
-				u = t => t === r.Wf.NoRulesModerators,
-				_ = t => t === r.Wf.RelatedPostsDu
+				d = t => t === r.Xf.NoCommunityWidgets,
+				u = t => t === r.Xf.NoRulesModerators,
+				_ = t => t === r.Xf.RelatedPostsDu
 		},
 		"./src/reddit/selectors/tooltip.ts": function(t, e, i) {
 			"use strict";
@@ -2979,4 +2979,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit~ReportFlow~Subreddit.ad3598db7971003a8265.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit~ReportFlow~Subreddit.bc759cd9af7196fc258d.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-ClassicPost.334b877bbca407d3946f.js
-// Retrieved at 9/6/2022, 10:10:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-ClassicPost.0812f64ec4fb9d3e193a.js
+// Retrieved at 9/6/2022, 12:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-ClassicPost"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -3459,7 +3459,7 @@
 				}
 			}
 			t.c = i.a.memo((function(e) {
-				const t = Object(p.gb)(),
+				const t = Object(p.eb)(),
 					s = Object(p.w)(t),
 					n = Object(C.a)(),
 					o = Object(a.e)(o => Z(o, {
@@ -5732,10 +5732,10 @@
 				o = s("./src/reddit/constants/experiments.ts"),
 				r = s("./src/reddit/helpers/chooseVariant/index.ts");
 			const i = Object(n.a)(e => Object(r.c)(e, {
-					experimentName: o.dg,
+					experimentName: o.eg,
 					experimentEligibilitySelector: r.a
 				}), e => e),
-				a = Object(n.a)(i, e => e === o.Uf)
+				a = Object(n.a)(i, e => e === o.Vf)
 		},
 		"./src/reddit/selectors/removedPosts.ts": function(e, t, s) {
 			"use strict";
@@ -5899,4 +5899,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ClassicPost.334b877bbca407d3946f.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ClassicPost.0812f64ec4fb9d3e193a.js.map

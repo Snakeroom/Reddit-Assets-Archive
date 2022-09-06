@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SearchResults.8cbf97d93e94a0128e49.js
-// Retrieved at 9/6/2022, 10:10:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SearchResults.bd99725077afc25365f6.js
+// Retrieved at 9/6/2022, 12:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SearchResults"], {
 		"./node_modules/lodash/_baseDelay.js": function(e, t) {
@@ -4371,7 +4371,7 @@
 					return r.a.createElement(x.b, null, oe)
 				}),
 				J = Object(B.b)((e => t => {
-					const s = Object(N.gb)(),
+					const s = Object(N.eb)(),
 						n = ((e, t) => {
 							let {
 								postId: s
@@ -4807,7 +4807,7 @@
 						listingKey: r,
 						searchOptions: c,
 						sidebar: d
-					} = e, l = Object(h.gb)(), m = Object(D.a)(), u = Object(B.a)(), {
+					} = e, l = Object(h.eb)(), m = Object(D.a)(), u = Object(B.a)(), {
 						isBlockingInterstitialEnabled: p,
 						isBlockingInterstitialV2Enabled: b,
 						hideNSFWPref: f,
@@ -4958,7 +4958,7 @@
 								listingKey: s,
 								searchOptions: n
 							} = e;
-							const r = Object(h.gb)(),
+							const r = Object(h.eb)(),
 								o = Object(D.a)(),
 								c = Object(a.d)(),
 								d = Object(a.e)(e => Object(U.b)(e, {
@@ -5100,7 +5100,7 @@
 					x = Object(o.useRef)(),
 					O = Object(o.useRef)(null),
 					j = Object(o.useRef)(!1),
-					C = Object(h.gb)(),
+					C = Object(h.eb)(),
 					y = Object(b.b)(),
 					E = Object(a.d)(),
 					{
@@ -5351,7 +5351,7 @@
 					showCTAExperiment: D
 				} = Object(i.e)(t => te(t, e)), A = Object(i.e)(e => Object(F.d)(e, {
 					postId: s
-				})), Z = Object(i.e)(X.b), se = Object(i.e)(X.c), ne = Object(k.gb)(), re = Object(E.b)(), oe = Object(i.d)(), ie = Object(z.a)(), {
+				})), Z = Object(i.e)(X.b), se = Object(i.e)(X.c), ne = Object(k.eb)(), re = Object(E.b)(), oe = Object(i.d)(), ie = Object(z.a)(), {
 					post: ae,
 					subredditOrProfile: ce
 				} = Object(S.d)(s), de = Object(r.useCallback)((e, t) => {
@@ -5707,7 +5707,7 @@
 				qe = Object(A.c)({
 					viewTreatment: ge.x,
 					searchDiscoveryUnitsModels: xe,
-					hasPostResults: ge.n,
+					hasPostResults: ge.o,
 					apiPending: he.d,
 					postIds: F.z,
 					posts: F.y,
@@ -5880,11 +5880,11 @@
 					location: r,
 					searchOptions: a,
 					tab: c
-				} = e, d = Object(i.e)(e => Object(ge.m)(e, {
+				} = e, d = Object(i.e)(e => Object(ge.n)(e, {
 					listingKey: t
-				})), l = Object(i.e)(e => Object(ge.k)(e, {
+				})), l = Object(i.e)(e => Object(ge.l)(e, {
 					listingKey: t
-				})), m = Object(i.e)(e => Object(ge.l)(e, {
+				})), m = Object(i.e)(e => Object(ge.m)(e, {
 					listingKey: t
 				}));
 				return o.a.createElement("div", {
@@ -6120,7 +6120,7 @@
 				const p = Object(_.a)(),
 					b = Object(c.e)(w.kb),
 					h = Object(c.e)(S.x),
-					f = Object(v.gb)(),
+					f = Object(v.eb)(),
 					x = h === k.c.Trending,
 					I = Object(E.a)({}),
 					{
@@ -6323,7 +6323,7 @@
 						let {
 							listingKey: s
 						} = t;
-						return Object(T.m)(e, {
+						return Object(T.n)(e, {
 							listingKey: s
 						})
 					},
@@ -6331,7 +6331,7 @@
 						let {
 							listingKey: s
 						} = t;
-						return Object(T.k)(e, {
+						return Object(T.l)(e, {
 							listingKey: s
 						})
 					},
@@ -6818,7 +6818,7 @@
 				be = e => {
 					const {
 						subreddit: t
-					} = Object(o.e)(t => pe(t, e)), s = Object(c.gb)(), n = Object(c.X)(s), i = Object(c.fb)(s), l = t && !!e.searchOptions.restrict_sr && !e.shouldHideGlobalSearchLink;
+					} = Object(o.e)(t => pe(t, e)), s = Object(c.eb)(), n = Object(c.X)(s), i = Object(c.db)(s), l = t && !!e.searchOptions.restrict_sr && !e.shouldHideGlobalSearchLink;
 					return r.a.createElement(d.a, {
 						className: Object(a.a)(ue.a.ComponentRedesign),
 						"data-testid": "search-results-subnav"
@@ -7232,12 +7232,12 @@
 						rtJsonElementProps: i
 					});
 					switch (o) {
-						case h.Of.SmIcon:
+						case h.Pf.SmIcon:
 							return r.a.createElement(p, {
 								subredditName: n,
 								rtJsonElementProps: i
 							});
-						case h.Of.SmIconHc:
+						case h.Pf.SmIconHc:
 							return r.a.createElement(p, {
 								subredditName: n,
 								isHoverable: !0,
@@ -7337,7 +7337,7 @@
 			const _ = 129,
 				k = Object(h.u)({
 					filterName: e => Object(h.X)(e)[b.e],
-					url: e => Object(h.fb)(e)
+					url: e => Object(h.db)(e)
 				}),
 				S = Object(a.c)({
 					subredditId: (e, t) => Object(j.G)(e, t.subredditName)
@@ -8894,7 +8894,7 @@
 					match: s
 				} = e;
 				const n = Object(c.d)(),
-					r = Object(S.gb)(),
+					r = Object(S.eb)(),
 					u = Object(y.b)(),
 					H = Object(F.a)(),
 					G = Object(i.useRef)(!1),
@@ -8912,7 +8912,7 @@
 						searchQueryId: ee
 					} = Object(c.e)(e => Object(U.a)(e)),
 					te = Object(S.X)(r),
-					se = Object(S.db)(r),
+					se = Object(S.bb)(r),
 					[ne, re] = Object(i.useState)(!1),
 					oe = Object(l.a)(te) || null;
 				Object(L.c)(), Object(i.useEffect)((function() {
@@ -9077,10 +9077,10 @@
 				r = s("./src/reddit/constants/experiments.ts"),
 				o = s("./src/reddit/helpers/chooseVariant/index.ts");
 			const i = Object(n.a)(e => Object(o.c)(e, {
-					experimentName: r.dg,
+					experimentName: r.eg,
 					experimentEligibilitySelector: o.a
 				}), e => e),
-				a = Object(n.a)(i, e => e === r.Uf)
+				a = Object(n.a)(i, e => e === r.Vf)
 		},
 		"./src/reddit/selectors/focusedVerticalSuggestion.ts": function(e, t, s) {
 			"use strict";
@@ -9219,12 +9219,12 @@
 				c = e => {
 					return Object(o.c)(e, {
 						experimentEligibilitySelector: a,
-						experimentName: n.If
+						experimentName: n.Jf
 					}) || ""
 				},
 				d = e => {
 					const t = c(e);
-					return t === n.Of.SmIcon || t === n.Of.SmIconHc
+					return t === n.Pf.SmIcon || t === n.Pf.SmIconHc
 				},
 				l = (e, t) => {
 					let {
@@ -9253,4 +9253,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SearchResults.8cbf97d93e94a0128e49.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SearchResults.bd99725077afc25365f6.js.map
