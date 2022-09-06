@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CommunityNotificationSettings.276d78047ef6201635ba.js
-// Retrieved at 9/6/2022, 12:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CommunityNotificationSettings.fd3095993ce803d5f703.js
+// Retrieved at 9/6/2022, 5:30:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CommunityNotificationSettings"], {
 		"./node_modules/lodash/times.js": function(e, t, n) {
@@ -213,19 +213,19 @@
 					let {
 						gqlContext: O
 					} = g;
-					var S, x, v;
+					var S, x, k;
 					e(b());
-					const y = p(n),
-						k = await Object(c.b)(O(), t, y);
-					if ((null === (x = null === (S = k.error) || void 0 === S ? void 0 : S.fields) || void 0 === x ? void 0 : x.length) || function(e) {
+					const v = p(n),
+						_ = await Object(c.b)(O(), t, v);
+					if ((null === (x = null === (S = _.error) || void 0 === S ? void 0 : S.fields) || void 0 === x ? void 0 : x.length) || function(e) {
 							return Boolean(e && e.data && e.data.updateSubredditNotificationSettings)
-						}(k.body) && (null === (v = k.body.data.updateSubredditNotificationSettings.errors) || void 0 === v ? void 0 : v.length)) return e(f()), e(Object(d.f)({
+						}(_.body) && (null === (k = _.body.data.updateSubredditNotificationSettings.errors) || void 0 === k ? void 0 : k.length)) return e(f()), e(Object(d.f)({
 						kind: u.b.Error,
 						text: i.fbt._("Failed to change the frequency of notifications from this community, please try again.", null, {
 							hk: "4avFFV"
 						})
 					}));
-					k.ok && (e(Object(o.c)({
+					_.ok && (e(Object(o.c)({
 						subredditId: t,
 						notificationLevel: n
 					})), e(m({
@@ -307,10 +307,10 @@
 				O = n("./src/reddit/helpers/trackers/notifications.ts"),
 				S = n("./src/reddit/helpers/trackers/subredditMuting.ts"),
 				x = n("./src/reddit/hooks/useExperimentVariant.ts"),
-				v = n("./src/reddit/hooks/useTracking.ts"),
-				y = n("./src/reddit/components/Settings/Notifications/CommunityNotificationSettings/index.m.less"),
-				k = n.n(y);
-			const _ = e => {
+				k = n("./src/reddit/hooks/useTracking.ts"),
+				v = n("./src/reddit/components/Settings/Notifications/CommunityNotificationSettings/index.m.less"),
+				_ = n.n(v);
+			const y = e => {
 				let {
 					subreddit: t,
 					onUnmute: n,
@@ -319,8 +319,8 @@
 				var o, d;
 				const c = Object(x.a)(h.U),
 					[l, u] = Object(r.useState)(!1),
-					y = Object(r.useRef)(),
-					_ = Object(v.a)(),
+					v = Object(r.useRef)(),
+					y = Object(k.a)(),
 					{
 						id: C,
 						notificationLevel: E,
@@ -331,19 +331,42 @@
 					I = j && c === h.Ld,
 					L = I ? f.b.OFF : E,
 					F = t.styles.icon || (null === (o = t.styles.legacyIcon) || void 0 === o ? void 0 : o.url),
-					M = null !== (d = t.styles.primaryColor) && void 0 !== d ? d : void 0,
-					T = (e => {
+					T = null !== (d = t.styles.primaryColor) && void 0 !== d ? d : void 0,
+					M = (e => {
 						switch (e) {
 							case f.b.OFF:
-								return "Off";
+								return s.fbt._("Off", null, {
+									hk: "1JWIiA"
+								});
 							case f.b.FREQUENT:
-								return "High Frequency";
+								return s.fbt._("High Frequency", null, {
+									hk: "1W8tQh"
+								});
 							case f.b.LOW:
 							default:
-								return "Low"
+								return s.fbt._("Low", null, {
+									hk: "2YMQmI"
+								})
 						}
 					})(L),
 					D = (e => {
+						switch (e) {
+							case f.b.OFF:
+								return s.fbt._("OFF", null, {
+									hk: "2Zjohc"
+								});
+							case f.b.FREQUENT:
+								return s.fbt._("FREQUENT", null, {
+									hk: "3I2QgC"
+								});
+							case f.b.LOW:
+							default:
+								return s.fbt._("LOW", null, {
+									hk: "1qOHXh"
+								})
+						}
+					})(L),
+					U = (e => {
 						switch (e) {
 							case f.b.OFF:
 								return a.a.createElement(b.a, {
@@ -360,7 +383,7 @@
 								})
 						}
 					})(L),
-					U = [{
+					P = [{
 						displayText: s.fbt._("Frequent", null, {
 							hk: "21spt7"
 						}),
@@ -368,7 +391,7 @@
 						value: f.b.FREQUENT,
 						icon: a.a.createElement(b.a, {
 							name: "notification_frequent",
-							className: k.a.dropdownItemIcon
+							className: _.a.dropdownItemIcon
 						})
 					}, {
 						displayText: s.fbt._("Low", null, {
@@ -378,7 +401,7 @@
 						value: f.b.LOW,
 						icon: a.a.createElement(b.a, {
 							name: "notification",
-							className: k.a.dropdownItemIcon
+							className: _.a.dropdownItemIcon
 						})
 					}, {
 						displayText: s.fbt._("Off", null, {
@@ -388,62 +411,62 @@
 						value: f.b.OFF,
 						icon: a.a.createElement(b.a, {
 							name: "notification_off",
-							className: k.a.dropdownItemIcon
+							className: _.a.dropdownItemIcon
 						})
 					}];
 				return a.a.createElement("div", {
-					className: k.a.container,
+					className: _.a.container,
 					key: C
 				}, a.a.createElement("div", {
-					className: k.a.subreddit
+					className: _.a.subreddit
 				}, a.a.createElement(p.b, {
 					iconUrl: F,
 					altText: s.fbt._("Subreddit icon", null, {
 						hk: "gEWhf"
 					}),
 					shouldHideNsfwIcon: w,
-					primaryColor: M,
-					className: k.a.subredditIcon
+					primaryColor: T,
+					className: _.a.subredditIcon
 				}), a.a.createElement("div", {
-					className: k.a.subredditInfo
+					className: _.a.subredditInfo
 				}, a.a.createElement("h4", {
-					className: k.a.subredditInfoName
+					className: _.a.subredditInfoName
 				}, "r/", N), a.a.createElement("span", {
-					className: k.a.subredditInfoNotification
-				}, I ? s.fbt._("{notification level mute}", [s.fbt._param("notification level mute", "Community is muted")], {
-					hk: "2ZgryZ"
-				}) : s.fbt._("Notifications: {notification level}", [s.fbt._param("notification level", T)], {
+					className: _.a.subredditInfoNotification
+				}, I ? s.fbt._("Community is muted", null, {
+					hk: "4ntSSB"
+				}) : s.fbt._("Notifications: {notification level}", [s.fbt._param("notification level", M)], {
 					hk: "2YgR3R"
 				})))), a.a.createElement(g.b, {
 					isCompactStyle: !0,
-					displayText: L,
-					options: U,
+					displayText: D,
+					options: P,
 					onSelect: e => {
 						var t;
-						I ? (y.current = e.value, u(!0)) : (_(Object(O.n)(C, N, null === (t = e.value) || void 0 === t ? void 0 : t.toLowerCase())), i(C, e.value))
+						I ? (v.current = e.value, u(!0)) : (y(Object(O.n)(C, N, null === (t = e.value) || void 0 === t ? void 0 : t.toLowerCase())), i(C, e.value))
 					},
-					buttonClassName: k.a.dropdown,
-					buttonIcon: D
+					buttonClassName: _.a.dropdown,
+					buttonIcon: U
 				}), l && a.a.createElement(m.a, {
 					withOverlay: !0,
-					headerText: s.fbt._("Mute {name of subreddit to unmute}", [s.fbt._param("name of subreddit to unmute", `r/${t.name}`)], {
-						hk: "3SJRSq"
+					headerText: s.fbt._("Unmute {name of subreddit to unmute}", [s.fbt._param("name of subreddit to unmute", `r/${t.name}`)], {
+						hk: "4c7YXB"
 					}),
 					toggleModal: () => u(!1),
-					modalBody: s.fbt._("Mute {name of subreddit to unmute} to turn on notifications. This means their posts will be shown in your feeds and recommendations again.", [s.fbt._param("name of subreddit to unmute", `r/${t.name}`)], {
-						hk: "2cvlJ2"
+					modalBody: s.fbt._("Unmute {name of subreddit to unmute} to turn on notifications. This means their posts will be shown in your feeds and recommendations again.", [s.fbt._param("name of subreddit to unmute", `r/${t.name}`)], {
+						hk: "2Slx6q"
 					}),
 					actionText: s.fbt._("Yes, Unmute", null, {
 						hk: "2kNju2"
 					}),
 					cancelActionText: s.fbt._("Cancel", null, {
-						hk: "3SF5Rx"
+						hk: "2TSLl5"
 					}),
 					onConfirm: () => {
 						var e;
-						_(Object(S.b)()), n({
+						y(Object(S.b)()), n({
 							subredditId: C,
-							notificationLevel: null !== (e = y.current) && void 0 !== e ? e : f.b.LOW
+							notificationLevel: null !== (e = v.current) && void 0 !== e ? e : f.b.LOW
 						})
 					}
 				}))
@@ -484,7 +507,7 @@
 					updateSubredditNotificationLevel: m,
 					clearSubscribedSubredditsList: b
 				} = e;
-				const f = Object(v.a)();
+				const f = Object(k.a)();
 				Object(r.useEffect)(() => (f(Object(O.o)()), t({
 					first: 20
 				}), () => {
@@ -492,13 +515,13 @@
 				}), []);
 				const p = n && n.length > 0;
 				return c ? a.a.createElement("span", {
-					className: k.a.errorMessage,
+					className: _.a.errorMessage,
 					"data-testid": "error-message"
 				}, s.fbt._("There was an issue fetching your subreddits notifications settings. Please try again later.", null, {
 					hk: "1Wt132"
 				})) : l && !p ? a.a.createElement(C.a, {
 					rowsCount: 5
-				}) : p ? a.a.createElement(a.a.Fragment, null, n.map(e => a.a.createElement(_, {
+				}) : p ? a.a.createElement(a.a.Fragment, null, n.map(e => a.a.createElement(y, {
 					subreddit: e,
 					onSelect: m,
 					onUnmute: u,
@@ -515,7 +538,7 @@
 				}, a.a.createElement("div", null)), l && a.a.createElement(C.a, {
 					rowsCount: 1
 				})) : a.a.createElement("span", {
-					className: k.a.errorMessage,
+					className: _.a.errorMessage,
 					"data-testid": "error-message"
 				}, s.fbt._("You do not have subscribed subreddits.", null, {
 					hk: "20pdSk"
@@ -791,4 +814,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommunityNotificationSettings.276d78047ef6201635ba.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommunityNotificationSettings.fd3095993ce803d5f703.js.map
