@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModerationPages.178340754810b052492a.js
-// Retrieved at 9/7/2022, 4:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModerationPages.40ff8db39eef6e8cc4be.js
+// Retrieved at 9/7/2022, 6:10:09 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModerationPages", "CollectionCommentsPage~CommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~RpanListingUnit~S~5809214e", "CommentsPage~Governance~Reddit~ReportFlow~Subreddit~reddit-components-BlankPost~reddit-components-Cl~5351df81", "PostCreation~Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~r~4c415e24", "Governance~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compo~bd4baca2", "Governance~ModListing~Reddit~ReportFlow~Subreddit", "Governance~ModListing~Reddit~Subreddit", "Governance~Reddit~SubredditForkingCTA"], {
 		"./src/chat/controls/Svg/index.m.less": function(e, t, n) {
@@ -72201,7 +72201,7 @@
 				}),
 				u = e => !!Object(d.a)(l(e)),
 				m = e => l(e) === r.ub.RemovePopularCommunities,
-				p = e => l(e) === r.ub.LoggedOutUiOnly,
+				p = e => l(e) === r.ub.LoggedOutUiOnly || f(e) || h(e),
 				b = e => l(e) === r.ub.LoggedOutHomeDefpop,
 				f = e => l(e) === r.ub.RemoveRecentCommunities,
 				h = e => l(e) === r.ub.FilterOutNSFW
@@ -75137,4 +75137,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.178340754810b052492a.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.40ff8db39eef6e8cc4be.js.map

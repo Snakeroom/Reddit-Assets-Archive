@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CommentsPage~Governance~Reddit~ReportFlow~Subreddit~reddit-components-BlankPost~reddit-components-Cl~5351df81.05f4fa7f163aad9e59b2.js
-// Retrieved at 9/7/2022, 1:10:12 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CommentsPage~Governance~Reddit~ReportFlow~Subreddit~reddit-components-BlankPost~reddit-components-Cl~5351df81.da90493429932a990e2f.js
+// Retrieved at 9/7/2022, 6:10:09 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CommentsPage~Governance~Reddit~ReportFlow~Subreddit~reddit-components-BlankPost~reddit-components-Cl~5351df81"], {
 		"./src/lib/name/index.ts": function(e, t, r) {
@@ -10682,7 +10682,7 @@
 				}),
 				l = e => !!Object(c.a)(u(e)),
 				b = e => u(e) === s.ub.RemovePopularCommunities,
-				p = e => u(e) === s.ub.LoggedOutUiOnly,
+				p = e => u(e) === s.ub.LoggedOutUiOnly || f(e) || O(e),
 				m = e => u(e) === s.ub.LoggedOutHomeDefpop,
 				f = e => u(e) === s.ub.RemoveRecentCommunities,
 				O = e => u(e) === s.ub.FilterOutNSFW
@@ -12008,4 +12008,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommentsPage~Governance~Reddit~ReportFlow~Subreddit~reddit-components-BlankPost~reddit-components-Cl~5351df81.05f4fa7f163aad9e59b2.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommentsPage~Governance~Reddit~ReportFlow~Subreddit~reddit-components-BlankPost~reddit-components-Cl~5351df81.da90493429932a990e2f.js.map
