@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PublicAccessNetwork.275807c2933c100e558b.js
-// Retrieved at 9/6/2022, 1:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PublicAccessNetwork.cc6d3243629300717b97.js
+// Retrieved at 9/7/2022, 1:10:12 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PublicAccessNetwork"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -284,16 +284,16 @@
 			const p = Object(a.a)(e => {
 				const t = Object(u.c)(e, {
 					experimentEligibilitySelector: u.a,
-					experimentName: m.Ce
+					experimentName: m.Ae
 				});
-				return Object(m.og)(t) ? void 0 : t
+				return Object(m.mg)(t) ? void 0 : t
 			}, e => {
 				const t = Object(u.c)(e, {
 					experimentEligibilitySelector: u.a,
-					experimentName: m.De
+					experimentName: m.Be
 				});
-				return Object(m.og)(t) ? void 0 : t
-			}, (e, t) => e === m.Ee.Enabled && t === m.Ee.Enabled);
+				return Object(m.mg)(t) ? void 0 : t
+			}, (e, t) => e === m.Ce.Enabled && t === m.Ce.Enabled);
 			var b = s("./src/config.ts");
 			var h = s("./src/reddit/selectors/user.ts");
 			const v = e => {
@@ -669,7 +669,7 @@
 									icon: e.category_icon,
 									id: e.category_id,
 									name: e.category_name,
-									displayText: Object(m.ng)(e.category_name)
+									displayText: Object(m.lg)(e.category_name)
 								};
 								s.push(n.id), t[n.id] = n
 							}), {
@@ -1481,9 +1481,9 @@
 							a = Object(se.N)(s(), {
 								identifier: M.belongsTo
 							});
-						if (a && (e => W.xf.Redirect === Object(J.b)(e, {
+						if (a && (e => W.vf.Redirect === Object(J.b)(e, {
 								experimentEligibilitySelector: Z,
-								experimentName: W.qf
+								experimentName: W.of
 							}))(s())) return void t(Object(o.c)(a.url));
 						if ((M.media && M.media.type) === F.o.LIVEVIDEO) {
 							const e = `/rpan${M.belongsTo.type===N.a.SUBREDDIT?a.url:"/"}${Object(g.z)(M.id)}`;
@@ -7982,7 +7982,7 @@
 				a = s("./src/reddit/selectors/experiments/nsfwListingBelow.ts");
 			const i = e => {
 					const t = Object(a.a)(e);
-					return Boolean(t) && !Object(n.og)(t)
+					return Boolean(t) && !Object(n.mg)(t)
 				},
 				d = Object(o.a)(i, r.d, (e, t) => e && !t)
 		},
@@ -8003,4 +8003,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PublicAccessNetwork.275807c2933c100e558b.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PublicAccessNetwork.cc6d3243629300717b97.js.map

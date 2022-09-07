@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit~Subreddit.fe33b0d1a1d5f9e79f70.js
-// Retrieved at 9/6/2022, 1:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit~Subreddit.d706718abd8b767e4988.js
+// Retrieved at 9/7/2022, 1:10:12 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~ModListing~Reddit~Subreddit"], {
 		"./src/lib/CSSVariableProvider/withTheme.tsx": function(e, t, n) {
@@ -407,9 +407,9 @@
 			})), n.d(t, "e", (function() {
 				return L
 			})), n.d(t, "b", (function() {
-				return G
-			})), n.d(t, "i", (function() {
 				return F
+			})), n.d(t, "i", (function() {
+				return G
 			})), n.d(t, "f", (function() {
 				return H
 			})), n.d(t, "c", (function() {
@@ -547,7 +547,7 @@
 					s && s !== i && n(M({
 						index: s
 					}))
-				}, M = Object(o.a)(c.g), B = (Object(o.a)(c.h), Object(o.a)(c.f)), G = e => async (t, n, o) => {
+				}, M = Object(o.a)(c.g), B = (Object(o.a)(c.h), Object(o.a)(c.f)), F = e => async (t, n, o) => {
 					let {
 						gqlContext: i
 					} = o;
@@ -570,7 +570,7 @@
 					} else t(Object(d.f)(Object(d.e)(r.fbt._("Failed to hide notification, please try again.", null, {
 						hk: "fL7uB"
 					}), N.b.Error)))
-				}, F = (e, t) => async (n, o, i) => {
+				}, G = (e, t) => async (n, o, i) => {
 					let {
 						gqlContext: s
 					} = i;
@@ -597,7 +597,7 @@
 						});
 						return Object(d.f)(Object(d.e)(n, N.b.Undo, r.fbt._("Undo", null, {
 							hk: "4zFGDk"
-						}), F(e, t)))
+						}), G(e, t)))
 					})()) : n(Object(d.f)(Object(d.e)(r.fbt._("Failed to hide notifications, please try again.", null, {
 						hk: "KEGcB"
 					}), N.b.Error)))
@@ -1382,7 +1382,7 @@
 					iconUrl: b && n ? "https://www.redditstatic.com/avatars/defaults/v2/avatar_default_3.png" : U,
 					isCurrentUser: L,
 					isNSFW: R
-				})), [G, F] = Object(o.useState)(!1), H = Object(o.useMemo)(() => ({
+				})), [F, G] = Object(o.useState)(!1), H = Object(o.useMemo)(() => ({
 					input: {
 						channel: {
 							teamOwner: "CONTENT_AND_COMMUNITIES",
@@ -1394,7 +1394,7 @@
 					const {
 						isOnline: t
 					} = e.subscribe.data;
-					F(t)
+					G(t)
 				}, []), Q = Object(o.useRef)(null), [W, q] = Object(o.useState)(!1), K = Object(o.useCallback)(e => {
 					e.forEach(e => {
 						const {
@@ -1414,7 +1414,7 @@
 					ref: Q
 				}, m && i.a.createElement(I, {
 					iconUrl: c
-				}), B, y && (G || h && j) && i.a.createElement(g.default, {
+				}), B, y && (F || h && j) && i.a.createElement(g.default, {
 					showPresence: !0,
 					isHighlighted: f,
 					onceInViewport: T
@@ -2488,7 +2488,7 @@
 							break
 						}
 						case i.Qb.FOLLOWERS:
-							G(t);
+							F(t);
 							break;
 						case i.Qb.PROFILE_MODERATION:
 							l && U(t, !0);
@@ -2509,7 +2509,7 @@
 								draftId: o
 							} = e.match.params, i = Object(s.a)(e.match.params);
 							if (!i) return;
-							F(t, i, o, n, r);
+							G(t, i, o, n, r);
 							break
 						}
 						case i.Qb.SUBREDDIT_WIKI:
@@ -2786,7 +2786,7 @@
 						actionInfo: v.d(e)
 					})
 				},
-				G = e => {
+				F = e => {
 					Object(C.a)({
 						source: "global",
 						action: "view",
@@ -2795,7 +2795,7 @@
 						actionInfo: v.d(e)
 					})
 				},
-				F = (e, t, n, r, o) => {
+				G = (e, t, n, r, o) => {
 					const i = e.creations.api.page.pending[t],
 						s = !e.creations.api.page.error[t] && !i && !!n,
 						c = Object(S.h)(e, n);
@@ -3452,7 +3452,7 @@
 					return r ? r * o.Vb < 1639443600180 ? void 0 : O(e) : void 0
 				},
 				O = Object(r.a)(e => Object(c.c)(e, {
-					experimentName: i.He,
+					experimentName: i.Fe,
 					experimentEligibilitySelector: a.e
 				}), d.a)
 		},
@@ -3568,4 +3568,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit~Subreddit.fe33b0d1a1d5f9e79f70.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit~Subreddit.d706718abd8b767e4988.js.map

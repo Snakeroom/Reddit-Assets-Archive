@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/IdCard.9d2c24be80069a695b97.js
-// Retrieved at 9/6/2022, 12:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/IdCard.0121e4ee1c478f685c28.js
+// Retrieved at 9/7/2022, 1:10:12 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["IdCard", "AchievementsActions", "ContributorRequestButton"], {
 		"./node_modules/autosize/dist/autosize.js": function(e, t, n) {
@@ -2750,14 +2750,14 @@
 				}
 			}
 			var K = G,
-				Q = n("./src/reddit/components/SubredditUnsavedChangesModal/index.tsx"),
-				J = n("./src/reddit/controls/LoadingIcon/index.tsx"),
+				J = n("./src/reddit/components/SubredditUnsavedChangesModal/index.tsx"),
+				Q = n("./src/reddit/controls/LoadingIcon/index.tsx"),
 				X = n("./src/reddit/helpers/trackers/inlineSubredditEditing.ts"),
 				Y = n("./src/reddit/icons/fonts/index.tsx"),
 				Z = n("./src/reddit/selectors/activeModalId.ts"),
 				$ = n("./src/reddit/selectors/subreddit.ts");
 			const ee = 6,
-				te = `${Q.a}_description`,
+				te = `${J.a}_description`,
 				ne = Object(m.c)({
 					apiPending: $.W,
 					unsavedChangesModalIsOpen: Object(Z.b)(te)
@@ -2809,7 +2809,7 @@
 					}), t && this.containerRef.current && this.containerRef.current.blur()
 				}
 				renderInactiveDescription() {
-					const e = this.props.apiPending ? i.a.createElement(J.a, {
+					const e = this.props.apiPending ? i.a.createElement(Q.a, {
 						className: z.a.loadingIcon,
 						sizePx: ee
 					}) : void 0;
@@ -2873,7 +2873,7 @@
 						tabIndex: 0,
 						onFocus: this.handleOnFocus,
 						onBlur: this.handleOnBlur
-					}, this.state.editing ? this.renderTextArea() : this.renderInactiveDescription(), this.props.unsavedChangesModalIsOpen && i.a.createElement(Q.b, {
+					}, this.state.editing ? this.renderTextArea() : this.renderInactiveDescription(), this.props.unsavedChangesModalIsOpen && i.a.createElement(J.b, {
 						withOverlay: !0,
 						modalId: te,
 						ignoreDefaultFocus: !0,
@@ -3002,8 +3002,8 @@
 				We = n("./src/reddit/helpers/localStorage/index.ts"),
 				Ge = n("./src/reddit/helpers/trackers/communityTopics.ts"),
 				Ke = n("./src/reddit/helpers/trackers/lightbox.ts"),
-				Qe = n("./src/reddit/helpers/trackers/modHub.ts"),
-				Je = n("./src/reddit/icons/fonts/Coin/index.tsx"),
+				Je = n("./src/reddit/helpers/trackers/modHub.ts"),
+				Qe = n("./src/reddit/icons/fonts/Coin/index.tsx"),
 				Xe = n("./src/reddit/icons/fonts/ModSettings/index.tsx"),
 				Ye = n("./src/reddit/models/SubredditRestrictions/index.ts"),
 				Ze = n("./src/reddit/selectors/category.ts"),
@@ -3367,8 +3367,8 @@
 				};
 			var Gt = n("./node_modules/history/esm/history.js"),
 				Kt = n("./src/reddit/components/SubredditIcon/index.tsx"),
-				Qt = n("./src/reddit/components/SubredditIcon/EditableSubredditIcon.tsx"),
-				Jt = n("./src/reddit/hooks/useClickSourceData.ts");
+				Jt = n("./src/reddit/components/SubredditIcon/EditableSubredditIcon.tsx"),
+				Qt = n("./src/reddit/hooks/useClickSourceData.ts");
 			const {
 				fbt: Xt
 			} = n("./node_modules/fbt/lib/FbtPublic.js");
@@ -3395,10 +3395,10 @@
 					}) : Xt._("Add icon", null, {
 						hk: "31odkm"
 					}),
-					x = Object(Jt.a)();
+					x = Object(Qt.a)();
 				return i.a.createElement("div", {
 					className: Object(p.a)(lt.a.Title, e.className)
-				}, n && h && !r ? i.a.createElement(Qt.a, {
+				}, n && h && !r ? i.a.createElement(Jt.a, {
 					className: c ? lt.a.largeSubredditIcon : lt.a.subredditIcon,
 					key: u.url,
 					iconUrl: u.url,
@@ -3582,7 +3582,7 @@
 							rootMargin: `${-(Be.f+Be.m)}px 0px 0px 0px`,
 							threshold: [dn, ln]
 						})), this.subscribeButtonRef && this.subscribeButtonObserver.unobserve(this.subscribeButtonRef), e && (this.subscribeButtonRef = e, this.subscribeButtonObserver.observe(this.subscribeButtonRef)))
-					}, this.onClickModTools = () => this.props.sendEvent(Object(Qe.a)()), this.handleVisitCommunityClick = () => this.props.sendEvent(Object(Ke.a)("visit")), this.getListingNameToUse = () => {
+					}, this.onClickModTools = () => this.props.sendEvent(Object(Je.a)()), this.handleVisitCommunityClick = () => this.props.sendEvent(Object(Ke.a)("visit")), this.getListingNameToUse = () => {
 						const {
 							isLoggedIn: e,
 							listingName: t
@@ -3694,7 +3694,7 @@
 						listingName: k,
 						subreddit: _,
 						idCardWidget: n
-					}), M = I || b || f, L = !I && _.id ? _.id : "", U = C && C.created, H = `IdCard--Subscribers--${b}--${L}`, q = `IdCard--CurrentlyViewing--${b}--${L}`, z = `IdCard--CakeDay--${b}--${L}`, V = `IdCard--CoinCoint--${b}--${L}`, W = u && !b, G = !I && !l && !c, Q = !I && !b && j && !f, J = Q && !d ? i.a.createElement(se, {
+					}), M = I || b || f, L = !I && _.id ? _.id : "", U = C && C.created, H = `IdCard--Subscribers--${b}--${L}`, q = `IdCard--CurrentlyViewing--${b}--${L}`, z = `IdCard--CakeDay--${b}--${L}`, V = `IdCard--CoinCoint--${b}--${L}`, W = u && !b, G = !I && !l && !c, J = !I && !b && j && !f, Q = J && !d ? i.a.createElement(se, {
 						description: P,
 						shouldTruncateDescription: !1,
 						isCommentsPage: !!s,
@@ -3750,7 +3750,7 @@
 						onClick: b ? x : void 0,
 						headerButton: i.a.createElement("div", {
 							className: lt.a.headerButtonsContainer
-						}, !M && _ && g && d !== Re.Qe.NewModule && i.a.createElement(a.a, {
+						}, !M && _ && g && d !== Re.Oe.NewModule && i.a.createElement(a.a, {
 							className: lt.a.ModToolsLink,
 							to: g.posts ? `${_.url}about/modqueue` : `${_.url}about/`,
 							onClick: this.onClickModTools
@@ -3795,18 +3795,18 @@
 						isTargetBlank: f,
 						linkUrl: I ? void 0 : A,
 						subredditIcon: E,
-						canEditIcon: Q,
+						canEditIcon: J,
 						subreddit: _,
 						titleText: R,
 						onOpenFilePicker: this.openIconFilePicker,
 						isInNCPV3Experiment: d,
 						shouldBlurSubredditIcon: m
-					}) : null, J, $, !!Z && !!v && i.a.createElement(i.a.Fragment, null, i.a.createElement("hr", {
+					}) : null, Q, $, !!Z && !!v && i.a.createElement(i.a.Fragment, null, i.a.createElement("hr", {
 						className: lt.a.HorizontalLine
 					}), i.a.createElement("div", {
 						className: lt.a.communityCoinCount,
 						"data-testid": "community-coin-count"
-					}, i.a.createElement(Je.a, {
+					}, i.a.createElement(Qe.a, {
 						className: lt.a.coinIcon
 					}), r.fbt._("{number-community-coins} Coins", [r.fbt._param("number-community-coins", v.toLocaleString())], {
 						hk: "3FSFdY"
@@ -3824,7 +3824,7 @@
 						className: lt.a.coinsTooltipContent
 					}, r.fbt._("The community gets Coins from Awards given by members", null, {
 						hk: "3j3NSH"
-					}))))), (d ? Q && D > 100 : Q) && i.a.createElement(de, {
+					}))))), (d ? J && D > 100 : J) && i.a.createElement(de, {
 						context: Ge.a.idCard,
 						subredditId: L
 					}), !I && W && i.a.createElement(Vt, {
@@ -3836,7 +3836,7 @@
 						isSubmissionPage: f,
 						sendEvent: this.props.sendEvent,
 						subredditId: _.id
-					})), Q && i.a.createElement(qe.a, {
+					})), J && i.a.createElement(qe.a, {
 						key: "icon-file-picker",
 						className: lt.a.iconFilePicker,
 						inputRef: this.setIconFilePickerRef,
@@ -5418,4 +5418,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/IdCard.9d2c24be80069a695b97.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/IdCard.0121e4ee1c478f685c28.js.map

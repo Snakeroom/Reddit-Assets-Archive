@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-LargePost.a61782b303531bd5086d.js
-// Retrieved at 9/6/2022, 4:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-LargePost.fc984be90384f7412b35.js
+// Retrieved at 9/7/2022, 1:10:12 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-LargePost"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -2064,8 +2064,8 @@
 				G = s("./src/reddit/components/PostBackgroundWrapper/index.tsx"),
 				z = s("./src/reddit/components/PostContainer/index.tsx"),
 				K = s("./src/reddit/components/PostLeftRail/index.tsx"),
-				X = s("./src/reddit/components/PostMedia/index.tsx"),
-				Z = s("./src/reddit/components/PostOverflowMenu/index.tsx"),
+				Z = s("./src/reddit/components/PostMedia/index.tsx"),
+				X = s("./src/reddit/components/PostOverflowMenu/index.tsx"),
 				Q = s("./src/reddit/icons/fonts/Sticky/index.tsx"),
 				$ = s("./src/reddit/components/PostPinnedHeader/index.m.less"),
 				ee = s.n($);
@@ -2107,7 +2107,7 @@
 			const je = Object(a.a)(T.N, e => e.some(ge.d)),
 				ye = Object(a.a)(je, e => e),
 				Te = (e, t) => Object(Se.c)(e, {
-					experimentName: Ce.bd,
+					experimentName: Ce.Zc,
 					experimentEligibilitySelector: e => {
 						const {
 							listingKey: s
@@ -2258,10 +2258,10 @@
 						postId: Ge,
 						postIds: ze,
 						onceInViewport: Ke,
-						isAdblockAAMitigationEnabled: Xe,
-						isOptionalTextEnabled: Ze,
+						isAdblockAAMitigationEnabled: Ze,
+						isOptionalTextEnabled: Xe,
 						showCTAExperimentDesign: Qe
-					} = e, $e = Object(O.a)(), et = Je, tt = !!e.redditStyle || !!e["data-redditstyle"], st = tt ? void 0 : g, nt = Object(l.a)(Pe), ot = Ne && nt, rt = Object(c.a)(Pe), it = Object(d.a)(Pe), at = Object(J.c)(Me), ct = Object(H.a)(Me), dt = !!Me.media && Me.media.type === E.o.RTJSON, lt = qe && dt, ut = s ? s - K.a : void 0, mt = !!Me.recommendationContext, pt = !(ce && _e || Se) || mt && _e, bt = (e => e === Ce.if.OnlyTitles)(Fe) && !Object(ue.a)(Me), ft = (e => e === Ce.if.MediumHeight)(Fe) && !Object(ue.a)(Me), ht = (e => {
+					} = e, $e = Object(O.a)(), et = Je, tt = !!e.redditStyle || !!e["data-redditstyle"], st = tt ? void 0 : g, nt = Object(l.a)(Pe), ot = Ne && nt, rt = Object(c.a)(Pe), it = Object(d.a)(Pe), at = Object(J.c)(Me), ct = Object(H.a)(Me), dt = !!Me.media && Me.media.type === E.o.RTJSON, lt = qe && dt, ut = s ? s - K.a : void 0, mt = !!Me.recommendationContext, pt = !(ce && _e || Se) || mt && _e, bt = (e => e === Ce.gf.OnlyTitles)(Fe) && !Object(ue.a)(Me), ft = (e => e === Ce.gf.MediumHeight)(Fe) && !Object(ue.a)(Me), ht = (e => {
 						var t;
 						const {
 							post: s,
@@ -2290,7 +2290,7 @@
 					Object(_.a)(kt, Pt);
 					const [Nt, wt] = Object(n.useState)(!1), It = Object(n.useCallback)(() => {
 						wt(!Nt), Object(me.Pb)(), $e(Object(he.d)(Ge))
-					}, [Nt, $e, Ge]), At = Me.isSponsored && !(Me.media && E.a.has(Me.media.type)) && !Xe, Lt = !!($ && (null == Je ? void 0 : Je.isNSFW)), Dt = Object(n.useRef)({
+					}, [Nt, $e, Ge]), At = Me.isSponsored && !(Me.media && E.a.has(Me.media.type)) && !Ze, Lt = !!($ && (null == Je ? void 0 : Je.isNSFW)), Dt = Object(n.useRef)({
 						renderingObjectInfo: Me
 					}), Mt = Object(n.useCallback)(e => {
 						!vt && !_t || Me.media && Object(E.H)(Me.media) || (e.preventDefault(), xt(Object(m.bb)(Object(pe.b)(Me.permalink), Me.id)))
@@ -2372,7 +2372,7 @@
 					}), Me.source && !Me.isSponsored && !(Me.media && Object(E.H)(Me.media)) && !Lt && o.a.createElement(o.a.Fragment, null, o.a.createElement(ie.a, {
 						className: De.a.sourceLink,
 						post: Me
-					}), Ze && Me.media && Me.media.type !== E.o.TEXT && Me.media.type !== E.o.IMAGE && Me.media.richtextContent && o.a.createElement(x.a, {
+					}), Xe && Me.media && Me.media.type !== E.o.TEXT && Me.media.type !== E.o.IMAGE && Me.media.richtextContent && o.a.createElement(x.a, {
 						content: Me.media.richtextContent,
 						rtJsonElementProps: Dt.current
 					}))), o.a.createElement("div", {
@@ -2383,7 +2383,7 @@
 						disableVisited: e.disableVisited,
 						shouldOpenPostInNewTab: Ot,
 						shouldStylePostAfterVisitLink: Ft
-					}, o.a.createElement(X.a, {
+					}, o.a.createElement(Z.a, {
 						isGalleryTileLayoutDefault: de,
 						isListing: !0,
 						isMediumHeight: ft,
@@ -2443,7 +2443,7 @@
 						shouldShowInsightsButton: Ve,
 						showEditPost: lt,
 						showEditFlair: He,
-						useFlatlistBreakpoints: Object(Z.b)({
+						useFlatlistBreakpoints: Object(X.b)({
 							editPost: !1,
 							save: !ot,
 							hide: !1,
@@ -3373,7 +3373,7 @@
 						type: n
 					}, r) : r)
 				},
-				X = e => {
+				Z = e => {
 					let {
 						className: t,
 						disableVisited: s,
@@ -3387,7 +3387,7 @@
 						})
 					}), o)
 				},
-				Z = e => {
+				X = e => {
 					let {
 						disableVisited: t,
 						nowrap: s,
@@ -3422,7 +3422,7 @@
 					} = t, o = Object(a.d)(), r = Object(O.a)(), c = Object(a.e)(U.b), d = Object(a.e)(U.c), u = e => {
 						!c && !d || t.media && Object(y.H)(t.media) || (e.preventDefault(), o(Object(x.bb)(Object(v.b)(t.permalink), t.id)))
 					};
-					if (e.isCommentsPage && !e.isCommentPermalink && !e.shouldLinkWrap) return i.a.createElement(Z, {
+					if (e.isCommentsPage && !e.isCommentPermalink && !e.shouldLinkWrap) return i.a.createElement(X, {
 						nowrap: e.nowrap
 					}, i.a.createElement(ee, e));
 					if (e.isCommentsPageAd && t.source && t.source.url) return i.a.createElement(b.b, {
@@ -3433,7 +3433,7 @@
 					}, i.a.createElement(ee, e)); {
 						const o = t.media && Object(y.H)(t.media) ? Object(_.c)(t.id, s.name) : t.permalink,
 							a = e.isCommentPermalink ? Object(v.b)(o) : Object(h.a)(o, void 0, r);
-						return i.a.createElement(Z, {
+						return i.a.createElement(X, {
 							disableVisited: e.disableVisited,
 							nowrap: e.nowrap
 						}, n ? ((e, t) => {
@@ -3446,7 +3446,7 @@
 								postId: e.id,
 								source: s
 							}, i.a.createElement(ee, t)) : i.a.createElement(ee, t)
-						})(t, e) : i.a.createElement(X, {
+						})(t, e) : i.a.createElement(Z, {
 							className: e.titleLinkClassName,
 							"data-click-id": "body",
 							disableVisited: e.disableVisited,
@@ -5874,7 +5874,7 @@
 					return Object(o.c)(e, {
 						experimentEligibilitySelector: o.a,
 						experimentName: n.xc
-					}) === n.Uc.Enabled
+					}) === n.Tc.Enabled
 				}
 		},
 		"./src/reddit/selectors/experiments/presence.ts": function(e, t, s) {
@@ -5887,8 +5887,8 @@
 			const r = e => {
 				return Object(o.c)(e, {
 					experimentEligibilitySelector: o.a,
-					experimentName: n.cf
-				}) === n.Ld
+					experimentName: n.af
+				}) === n.Jd
 			}
 		},
 		"./src/reddit/selectors/experiments/web2x_cta.ts": function(e, t, s) {
@@ -5900,10 +5900,10 @@
 				o = s("./src/reddit/constants/experiments.ts"),
 				r = s("./src/reddit/helpers/chooseVariant/index.ts");
 			const i = Object(n.a)(e => Object(r.c)(e, {
-					experimentName: o.eg,
+					experimentName: o.cg,
 					experimentEligibilitySelector: r.a
 				}), e => e),
-				a = Object(n.a)(i, e => e === o.Vf)
+				a = Object(n.a)(i, e => e === o.Tf)
 		},
 		"./src/reddit/selectors/i18n/index.ts": function(e, t, s) {
 			"use strict";
@@ -5918,7 +5918,7 @@
 				i = s("./src/reddit/selectors/experiments/nsfwListingBelow.ts");
 			const a = e => {
 					const t = Object(i.a)(e);
-					return Boolean(t) && !Object(o.og)(t)
+					return Boolean(t) && !Object(o.mg)(t)
 				},
 				c = Object(n.a)(a, r.d, (e, t) => e && !t)
 		},
@@ -5995,10 +5995,10 @@
 				r = s("./src/reddit/helpers/chooseVariant/index.ts"),
 				i = s("./src/reddit/selectors/posts.ts");
 			const a = e => Object(r.c)(e, {
-					experimentName: o.ff,
+					experimentName: o.df,
 					experimentEligibilitySelector: r.a
 				}),
-				c = (e, t) => t === o.nf.Enabled && (null == e ? void 0 : e.isCreatedFromAdsUi) || (null == e ? void 0 : e.isSponsored),
+				c = (e, t) => t === o.lf.Enabled && (null == e ? void 0 : e.isCreatedFromAdsUi) || (null == e ? void 0 : e.isSponsored),
 				d = Object(n.a)(i.G, a, (e, t) => c(e, t));
 			Object(n.a)((e, t) => t, a, (e, t) => c(e, t))
 		},
@@ -6084,4 +6084,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-LargePost.a61782b303531bd5086d.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-LargePost.fc984be90384f7412b35.js.map
