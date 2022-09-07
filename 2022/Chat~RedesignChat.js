@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Chat~RedesignChat.7e3051f7a06cd2a2130d.js
-// Retrieved at 9/1/2022, 6:30:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Chat~RedesignChat.bbdd20f36e3433fb7692.js
+// Retrieved at 9/7/2022, 4:40:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Chat~RedesignChat"], {
 		"./src/chat/actions/apiRequestHeaders.ts": function(e, t, n) {
@@ -17421,7 +17421,7 @@
 					meta: {
 						name: s.Qb.CHAT
 					},
-					path: "/chat/"
+					path: ["/chat", "/chat/"]
 				},
 				l = Object(a.a)({
 					resolved: {},
@@ -17485,7 +17485,7 @@
 					},
 					path: "/chat/minimize/"
 				},
-				m = ["/chat/", "/chat/:action(share|share_new)/", "/chat/channel/:action(create)/", "/chat/channel/:channelId/:action(block|hide|delete|invite|invite_link_settings|themes|invited|kick|about|leave|privacy_support|nsfw|report|start_group)?/:attr(invite|message|user)?/:attrId?"],
+				m = ["/chat", "/chat/", "/chat/:action(share|share_new)/", "/chat/channel/:action(create)/", "/chat/channel/:channelId/:action(block|hide|delete|invite|invite_link_settings|themes|invited|kick|about|leave|privacy_support|nsfw|report|start_group)?/:attr(invite|message|user)?/:attrId?"],
 				b = {
 					action: c.a,
 					chunk: s.s.CHAT,
@@ -17539,7 +17539,7 @@
 				meta: {
 					name: a.Qb.CHAT
 				},
-				path: "/chat/*"
+				path: "/chat(.*)"
 			};
 			const c = [...n("./src/chat/routes/chat.ts").b, s];
 			t.a = c
@@ -19551,4 +19551,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~RedesignChat.7e3051f7a06cd2a2130d.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~RedesignChat.bbdd20f36e3433fb7692.js.map
