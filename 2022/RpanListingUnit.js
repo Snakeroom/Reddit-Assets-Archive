@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/RpanListingUnit.b7fdd494fd3343a7048e.js
-// Retrieved at 9/8/2022, 11:00:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/RpanListingUnit.5a4f4aa8f494c25a3151.js
+// Retrieved at 9/8/2022, 11:20:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["RpanListingUnit"], {
 		"./node_modules/lodash/_arrayEvery.js": function(e, t) {
@@ -425,7 +425,7 @@
 							thingId: s,
 							correlationId: n
 						})), e(Object(l.h)(i.a.GOLD_GILD_MODAL));
-						const b = Object(p.M)(a, {
+						const b = Object(p.L)(a, {
 							thingId: s
 						});
 						let h = null;
@@ -669,8 +669,8 @@
 					}
 				}, [t]);
 				const Y = Object(s.useCallback)(() => y(!0), [y]),
-					J = 0 === S.length,
-					K = x || J,
+					K = 0 === S.length,
+					J = x || K,
 					W = Object(s.useRef)(((e, t) => `${t}_${e}_count_anim`)(f, n));
 				return r.a.createElement(r.a.Fragment, null, !b && r.a.createElement("div", {
 					className: l.a.countAnimation
@@ -695,7 +695,7 @@
 						} : {
 							transform: "translateY(0)"
 						}
-					}, K ? r.a.createElement("span", {
+					}, J ? r.a.createElement("span", {
 						className: l.a.digitDelta
 					}, e) : n.map((e, t) => {
 						const s = 0 === t || t === n.length - 1;
@@ -1141,7 +1141,7 @@
 				f = n("./src/reddit/selectors/subreddit.ts");
 			const v = (e, t) => {
 				const n = Object(h.b)(e, t),
-					s = Object(f.L)(e, t);
+					s = Object(f.K)(e, t);
 				return {
 					comment: n,
 					isModerator: !(!s || !s.name) && !!e.moderatingSubreddits[s.name],
@@ -1180,7 +1180,7 @@
 			}));
 			const _ = (e, t) => {
 				const n = Object(h.b)(e, t),
-					s = Object(f.L)(e, t);
+					s = Object(f.K)(e, t);
 				return {
 					comment: n,
 					isModerator: !(!s || !s.name) && !!e.moderatingSubreddits[s.name],
@@ -1206,7 +1206,7 @@
 				}
 			}));
 			var E = Object(o.b)(() => Object(i.c)({
-					subreddit: f.W
+					subreddit: f.V
 				}))(e => r.a.createElement(p, {
 					className: e.className,
 					type: "communityTools",
@@ -1306,7 +1306,7 @@
 				}) : null
 			};
 			var I = Object(o.b)(() => Object(i.c)({
-				subreddit: f.W
+				subreddit: f.V
 			}))(e => r.a.createElement(p, {
 				className: e.className,
 				type: "sidebar",
@@ -1319,7 +1319,7 @@
 				}
 			}));
 			var j = Object(o.b)(() => Object(i.c)({
-				subredditOrProfile: (e, t) => Object(f.O)(e, {
+				subredditOrProfile: (e, t) => Object(f.N)(e, {
 					identifier: t
 				})
 			}))(e => r.a.createElement(p, {
@@ -1338,7 +1338,7 @@
 					let {
 						subredditId: n
 					} = t;
-					return n ? Object(f.W)(e, {
+					return n ? Object(f.V)(e, {
 						subredditId: n
 					}) : null
 				}
@@ -1504,9 +1504,9 @@
 				G = n("./src/reddit/controls/Score/index.tsx"),
 				H = n("./src/reddit/icons/fonts/index.tsx"),
 				Y = n("./src/reddit/helpers/styles/mixins/index.m.less"),
-				J = n.n(Y),
-				K = n("./src/reddit/components/PublicAccessNetwork/ListingUnit/index.m.less"),
-				W = n.n(K);
+				K = n.n(Y),
+				J = n("./src/reddit/components/PublicAccessNetwork/ListingUnit/index.m.less"),
+				W = n.n(J);
 			const {
 				fbt: q
 			} = n("./node_modules/fbt/lib/FbtPublic.js"), z = 20, Z = l.uc, X = l.uc, Q = Object(c.a)(D.a, {
@@ -1729,9 +1729,9 @@
 					} = this.props, t = e === O.g.Classic ? this.renderClassicContent() : e === O.g.Compact ? this.renderCompactContent() : this.renderLargeContent();
 					return r.a.createElement("div", {
 						className: Object(d.a)(W.a.container, {
-							[J.a.largeAndMediumPostStyles]: e === O.g.Large || e === O.g.Medium,
-							[J.a.classicPostStyles]: e === O.g.Classic,
-							[J.a.compactPostStyles]: e === O.g.Compact,
+							[K.a.largeAndMediumPostStyles]: e === O.g.Large || e === O.g.Medium,
+							[K.a.classicPostStyles]: e === O.g.Classic,
+							[K.a.compactPostStyles]: e === O.g.Compact,
 							[W.a.large]: e === O.g.Large || e === O.g.Medium,
 							[W.a.classic]: e === O.g.Classic,
 							[W.a.compact]: e === O.g.Compact
@@ -4536,4 +4536,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RpanListingUnit.b7fdd494fd3343a7048e.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RpanListingUnit.5a4f4aa8f494c25a3151.js.map

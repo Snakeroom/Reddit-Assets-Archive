@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Geotagging.a54f1570c3d8f236a1e7.js
-// Retrieved at 9/8/2022, 11:00:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Geotagging.a2931542eca4669d0de0.js
+// Retrieved at 9/8/2022, 11:20:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Geotagging"], {
 		"./node_modules/p-debounce/index.js": function(e, t, s) {
@@ -881,8 +881,8 @@
 				O = s.n(k);
 			const j = Object(h.c)({
 				isLoggedIn: C.Q,
-				subreddit: v.W,
-				subredditAboutInfo: v.x
+				subreddit: v.V,
+				subredditAboutInfo: v.w
 			});
 			class N extends r.a.Component {
 				constructor() {
@@ -1499,8 +1499,8 @@
 					actionInfo: B
 				}),
 				D = J("select_location"),
-				W = J("confirm_location"),
-				A = J("undo_location"),
+				A = J("confirm_location"),
+				W = J("undo_location"),
 				H = Q("verify_location"),
 				z = Q("reject_location");
 
@@ -1604,7 +1604,7 @@
 					disabled: l,
 					onFocus: () => _(M(t)),
 					onPlace: function(e) {
-						d && !e && _(A(t, d.id)), c(e), e && _(D(t, e.id))
+						d && !e && _(W(t, d.id)), c(e), e && _(D(t, e.id))
 					},
 					onSubmit: async function(e) {
 						let {
@@ -1626,7 +1626,7 @@
 							}),
 							duration: 5e3
 						}));
-						_(W(t, n.id)), x(), s(t.id), y()
+						_(A(t, n.id)), x(), s(t.id), y()
 					}
 				}))
 			}
@@ -1754,4 +1754,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Geotagging.a54f1570c3d8f236a1e7.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Geotagging.a2931542eca4669d0de0.js.map

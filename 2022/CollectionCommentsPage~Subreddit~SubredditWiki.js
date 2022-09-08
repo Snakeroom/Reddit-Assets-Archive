@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~Subreddit~SubredditWiki.d6a2e4128408bc41e3a3.js
-// Retrieved at 9/8/2022, 11:00:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~Subreddit~SubredditWiki.c649714afc40f91f3440.js
+// Retrieved at 9/8/2022, 11:20:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~Subreddit~SubredditWiki", "AchievementsActions"], {
 		"./node_modules/lodash/random.js": function(e, t, r) {
@@ -372,7 +372,7 @@
 				g = Object(s.a)(a.y),
 				f = Object(s.a)(a.w),
 				x = (e, t, r) => async (n, s, i) => {
-					const a = Object(p.B)(s(), {
+					const a = Object(p.A)(s(), {
 						subredditName: e
 					});
 					if (a) return _(a.id, t, r)(n, s, i)
@@ -421,7 +421,7 @@
 
 			function c(e) {
 				const t = Object(i.d)(),
-					r = Object(i.e)(t => Object(d.W)(t, {
+					r = Object(i.e)(t => Object(d.V)(t, {
 						subredditId: e
 					})),
 					n = Object(i.e)(t => Object(o.i)(t, {
@@ -1237,7 +1237,7 @@
 					E = Object(a.e)(e => Object(l.i)(e, {
 						subredditId: r
 					})),
-					O = Object(a.e)(e => Object(_.W)(e, {
+					O = Object(a.e)(e => Object(_.V)(e, {
 						subredditId: r
 					})),
 					j = Object(a.e)(e => Object(l.l)(e, {
@@ -1641,7 +1641,7 @@
 					let {
 						subredditId: r
 					} = t;
-					return Object(F.W)(e, {
+					return Object(F.V)(e, {
 						subredditId: r
 					})
 				}
@@ -1672,8 +1672,8 @@
 				A = r("./src/reddit/actions/economics/predictions/index.ts"),
 				D = r("./src/reddit/components/Econ/Prediction/hooks/useTournamentsQuery.ts"),
 				R = r("./src/reddit/contexts/PageLayer/selectors.ts"),
-				W = r("./src/reddit/helpers/trackers/predictions.ts"),
-				H = r("./src/reddit/hooks/useTracking.ts"),
+				H = r("./src/reddit/helpers/trackers/predictions.ts"),
+				W = r("./src/reddit/hooks/useTracking.ts"),
 				U = r("./src/reddit/selectors/features/predictions/tournaments/index.ts");
 			const {
 				fbt: z
@@ -1683,13 +1683,13 @@
 				} = e;
 				const r = Object(i.d)(),
 					a = Object(T.a)(),
-					o = Object(H.a)(),
+					o = Object(W.a)(),
 					d = Object(R.Q)(a),
 					[c, l] = Object(n.useState)(!1),
-					u = Object(i.e)(e => Object(F.W)(e, {
+					u = Object(i.e)(e => Object(F.V)(e, {
 						subredditId: t
 					})),
-					m = Object(i.e)(e => Object(F.Q)(e, {
+					m = Object(i.e)(e => Object(F.P)(e, {
 						subredditId: t
 					})),
 					p = Object(i.e)(e => Object(U.d)(e, {
@@ -1708,7 +1708,7 @@
 						r(Object(P.p)({
 							subredditId: t,
 							forceState: !1
-						})), o(Object(W.i)())
+						})), o(Object(H.i)())
 					},
 					to: `${u.url}predictions/`
 				}, z._("Predictions", null, {
@@ -1719,12 +1719,12 @@
 					hk: "1o89m4"
 				}))) : null
 			};
-			var q = r("./src/lib/constants/index.ts");
+			var G = r("./src/lib/constants/index.ts");
 			const {
-				fbt: G
+				fbt: q
 			} = r("./node_modules/fbt/lib/FbtPublic.js");
 			const Z = Object(d.u)(),
-				Y = [q.Qb.SUBREDDIT, q.Qb.COMMENTS, q.Qb.COLLECTION_COMMENTS],
+				Y = [G.Qb.SUBREDDIT, G.Qb.COMMENTS, G.Qb.COLLECTION_COMMENTS],
 				K = Object(a.c)({
 					isMetaFilterEnabled: (e, t) => !!e.subreddits.appliedFilters.meta[t.subredditId],
 					isPostsRoute: (e, t) => !!t.pageLayer && !!t.pageLayer.meta && Y.indexOf(t.pageLayer.meta.name) > -1,
@@ -1751,7 +1751,7 @@
 						onClick: e => {
 							r && (e.preventDefault(), o())
 						}
-					}, G._("Posts", null, {
+					}, q._("Posts", null, {
 						hk: "36nXSp"
 					}))
 				}))),
@@ -1804,7 +1804,7 @@
 					homeUrl: t,
 					isTopBannerVariant: r,
 					pageLayer: n
-				} = e, i = !!n && !!n.meta && n.meta.name === q.Qb.SUBREDDIT_WIKI, a = `wiki/${ae.i}`, o = t.endsWith("/") ? t + a : `${t}/${a}`;
+				} = e, i = !!n && !!n.meta && n.meta.name === G.Qb.SUBREDDIT_WIKI, a = `wiki/${ae.i}`, o = t.endsWith("/") ? t + a : `${t}/${a}`;
 				return s.a.createElement(y, {
 					isActive: i,
 					isTopBannerVariant: r,
@@ -2207,7 +2207,7 @@
 					url: e => Object(h.db)(e)
 				}),
 				C = Object(o.c)({
-					subredditId: (e, t) => Object(w.H)(e, t.subredditName)
+					subredditId: (e, t) => Object(w.G)(e, t.subredditName)
 				}),
 				N = Object(a.b)(C),
 				I = l.a.div("WidgetContent", E.a),
@@ -2574,8 +2574,8 @@
 				A = m.a.wrapped(o.a, "RawHTMLDisplay", L.a),
 				D = m.a.div("EventContainer", L.a),
 				R = m.a.div("EventTitle", L.a),
-				W = m.a.div("EventDate", L.a),
-				H = m.a.div("EventLocation", L.a),
+				H = m.a.div("EventDate", L.a),
+				W = m.a.div("EventLocation", L.a),
 				U = m.a.div("EventDescription", L.a),
 				z = m.a.wrapped(P.a, "ToggleDescription", L.a);
 			class V extends s.a.Component {
@@ -2600,7 +2600,7 @@
 					}))) : s.a.createElement(U, null, e.text)
 				}
 			}
-			var q = e => s.a.createElement(d.a, {
+			var G = e => s.a.createElement(d.a, {
 					styles: e.widget.styles,
 					title: e.widget.shortName,
 					truncateThreshold: e.truncateThreshold,
@@ -2609,7 +2609,7 @@
 					key: `${r}-${t.title}`
 				}, s.a.createElement(R, null, t.titleHtml ? s.a.createElement(A, {
 					html: t.titleHtml
-				}) : t.title), e.widget.configuration.showDate && t.startTime && s.a.createElement(W, null, s.a.createElement(F.a, {
+				}) : t.title), e.widget.configuration.showDate && t.startTime && s.a.createElement(H, null, s.a.createElement(F.a, {
 					seconds: t.startTime,
 					showDay: !0
 				}), !t.allDay && e.widget.configuration.showTime && s.a.createElement("span", null, " • ", (e => {
@@ -2617,14 +2617,14 @@
 						r = t.getHours(),
 						n = t.getMinutes();
 					return n < 10 ? `${r}:0${n}` : `${r}:${n}`
-				})(t.startTime), " ")), t.location && e.widget.configuration.showLocation && s.a.createElement(H, null, t.locationHtml ? s.a.createElement(A, {
+				})(t.startTime), " ")), t.location && e.widget.configuration.showLocation && s.a.createElement(W, null, t.locationHtml ? s.a.createElement(A, {
 					html: t.locationHtml
 				}) : t.location), t.description && e.widget.configuration.showDescription && s.a.createElement(V, {
 					text: t.description
 				})))),
-				G = r("./src/reddit/components/TrackingHelper/index.tsx"),
+				q = r("./src/reddit/components/TrackingHelper/index.tsx"),
 				Z = r("./src/reddit/components/Widgets/CommunityList/SubredditList.tsx");
-			var Y = Object(G.c)(e => s.a.createElement(Z.b, {
+			var Y = Object(q.c)(e => s.a.createElement(Z.b, {
 				className: e.className,
 				communities: e.widget.data,
 				sendEvent: e.sendEvent,
@@ -2754,7 +2754,7 @@
 				Oe = m.a.wrapped(me.default, "InternalLink", fe.a),
 				je = m.a.div("LinkContainer", fe.a),
 				ke = Object(a.c)({
-					userIsBanned: he.gb,
+					userIsBanned: he.fb,
 					userIsLoggedIn: v.Q
 				});
 			var Ce = Object(i.b)(ke)(e => {
@@ -2846,7 +2846,7 @@
 						case "community-list":
 							return Y;
 						case "calendar":
-							return q;
+							return G;
 						case "image":
 							return oe;
 						case "custom":
@@ -3488,4 +3488,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~Subreddit~SubredditWiki.d6a2e4128408bc41e3a3.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~Subreddit~SubredditWiki.c649714afc40f91f3440.js.map

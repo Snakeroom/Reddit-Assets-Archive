@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Frontpage.2fa1325bd381c94f1326.js
-// Retrieved at 9/8/2022, 11:00:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Frontpage.9885fd5758caca98478d.js
+// Retrieved at 9/8/2022, 11:20:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Frontpage"], {
 		"./node_modules/intersection-observer/intersection-observer.js": function(e, t) {
@@ -2920,10 +2920,10 @@
 					},
 					bffsLeaderboardVariant: Ze,
 					inRpanTopVideoEntrypointExperiment: Ge.e,
-					rankings: e => Object(Qe.R)(e, $e),
+					rankings: e => Object(Qe.Q)(e, $e),
 					shouldShowTopicsWidget: e => {
 						const t = Object(Ge.e)(e),
-							a = !!Object(Qe.R)(e, $e);
+							a = !!Object(Qe.Q)(e, $e);
 						return (!t || !a) && function(e) {
 							return Object(Ue.c)(e, {
 								experimentEligibilitySelector: Ke.Q,
@@ -3936,7 +3936,7 @@
 					return {
 						crosspost: a,
 						post: t,
-						subredditOrProfile: Object(h.O)(e, {
+						subredditOrProfile: Object(h.N)(e, {
 							identifier: t.belongsTo
 						})
 					}
@@ -7034,7 +7034,7 @@
 					let {
 						listingName: a
 					} = t;
-					return Object(c.H)(e, a.replace(/^r\//, ""))
+					return Object(c.G)(e, a.replace(/^r\//, ""))
 				}, (e, t, a, s) => {
 					if (e && a && s) {
 						return t.subreddit[s]
@@ -7599,4 +7599,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Frontpage.2fa1325bd381c94f1326.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Frontpage.9885fd5758caca98478d.js.map

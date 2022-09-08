@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Multireddit.27227ada6cf5da0d8553.js
-// Retrieved at 9/8/2022, 11:00:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Multireddit.4b229923116f366ad845.js
+// Retrieved at 9/8/2022, 11:20:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Multireddit"], {
 		"./src/higherOrderComponents/withAdClickLocation/Locations.ts": function(e, t, n) {
@@ -346,7 +346,7 @@
 					let {
 						apiContext: b
 					} = m, p = e.map(e => e.type === u.a.SUBREDDIT ? {
-						id: Object(C.H)(d(), e.name),
+						id: Object(C.G)(d(), e.name),
 						name: e.name,
 						type: e.type
 					} : {
@@ -430,7 +430,7 @@
 						apiContext: o
 					} = r;
 					const s = n(),
-						i = Object(C.O)(s, {
+						i = Object(C.N)(s, {
 							identifier: e
 						});
 					if (!i) throw new Error(`actions.subscription -- No subreddit or profile found with id ${e.id}`);
@@ -446,7 +446,7 @@
 							type: e.type,
 							name: i.name
 						},
-						x = () => Object(C.ib)(n(), {
+						x = () => Object(C.hb)(n(), {
 							identifier: h
 						});
 					(x() || (await t(U([h], !0)), x())) && (t(w({
@@ -842,7 +842,7 @@
 				B = e => !e.textColor || e.textColor && !e.backgroundColor ? Object(j.a)(e).postFlairText : "transparent" === e.backgroundColor ? Object(C.a)(Object(j.a)(e).post, O.a.black, O.a.white) : e.textColor === I.e.Dark ? O.a.black : O.a.white,
 				G = b.a.wrapped(R, "TextFlair", g.a),
 				W = b.a.wrapped(P, "RichTextFlair", g.a),
-				H = e => {
+				V = e => {
 					switch (e.type) {
 						case "spoiler":
 							return "#A4A7A8";
@@ -852,8 +852,8 @@
 							return Object(i.i)(.1, Object(j.a)(s()(e, "theme", "redditStyle", "data-redditstyle")).button)
 					}
 				},
-				V = b.a.wrapped(e => {
-					const t = H(e),
+				H = b.a.wrapped(e => {
+					const t = V(e),
 						n = a.a.createElement("span", {
 							className: e.className,
 							style: {
@@ -931,7 +931,7 @@
 						});
 					case I.f.Nsfw:
 					case I.f.Spoiler:
-						return a.a.createElement(V, {
+						return a.a.createElement(H, {
 							className: t,
 							text: o.text,
 							type: o.type
@@ -1757,4 +1757,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Multireddit.27227ada6cf5da0d8553.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Multireddit.4b229923116f366ad845.js.map

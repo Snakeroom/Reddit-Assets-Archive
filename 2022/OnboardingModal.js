@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/OnboardingModal.ef27f544e61af5f7996c.js
-// Retrieved at 9/8/2022, 11:00:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/OnboardingModal.e10dab597209a20d2e6f.js
+// Retrieved at 9/8/2022, 11:20:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["OnboardingModal"], {
 		"./node_modules/lodash/_baseRange.js": function(e, t) {
@@ -4107,7 +4107,7 @@
 			const c = (e, t) => {
 					const n = e.focusedVerticals.interactedSubredditIds && e.focusedVerticals.interactedSubredditIds[t];
 					if (n) {
-						const t = Object(a.W)(e, {
+						const t = Object(a.V)(e, {
 							subredditId: n
 						});
 						return t && t.displayText || ""
@@ -4120,14 +4120,14 @@
 				m = Object(r.a)((e, t) => {
 					const n = p(e, t);
 					if (!n) return u;
-					const r = Object(a.ab)(e, {
+					const r = Object(a.Z)(e, {
 						subredditName: n.name
 					});
 					return r && r.postIds && r.postIds.length ? r.postIds : u
 				}),
 				p = (e, t) => {
 					const n = e.focusedVerticals.recommendedSubredditIds && e.focusedVerticals.recommendedSubredditIds[t];
-					return n ? Object(a.W)(e, {
+					return n ? Object(a.V)(e, {
 						subredditId: n
 					}) : null
 				},
@@ -4207,4 +4207,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/OnboardingModal.ef27f544e61af5f7996c.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/OnboardingModal.e10dab597209a20d2e6f.js.map

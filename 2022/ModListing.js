@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModListing.f339915445f30b697c12.js
-// Retrieved at 9/8/2022, 11:00:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModListing.54e1d5a45cef4b9c1f3b.js
+// Retrieved at 9/8/2022, 11:20:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModListing"], {
 		"./node_modules/classnames/index.js": function(e, t, n) {
@@ -1274,7 +1274,7 @@
 			const f = h.a.wrapped(l.b, "SubredditIcon", p.a),
 				b = h.a.span("Label", p.a),
 				v = Object(c.c)({
-					subredditOrProfile: u.O
+					subredditOrProfile: u.N
 				});
 			var g = Object(d.b)(v)(e => {
 				let {
@@ -2659,7 +2659,7 @@
 				ae = Object(d.c)({
 					isApiPending: K,
 					subredditOrProfile: (e, t) => {
-						const n = Object(re.B)(e, {
+						const n = Object(re.A)(e, {
 							subredditName: t.subredditName
 						});
 						if (!n) {
@@ -4949,4 +4949,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModListing.f339915445f30b697c12.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModListing.54e1d5a45cef4b9c1f3b.js.map

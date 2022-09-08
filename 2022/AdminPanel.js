@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/AdminPanel.ce46e7cd2d7a706c376d.js
-// Retrieved at 9/8/2022, 11:00:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/AdminPanel.b8dec9f2a3e7b56fb806.js
+// Retrieved at 9/8/2022, 11:20:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["AdminPanel"], {
 		"./src/devPlatform/components/AdminPanel/Utilities/DevPlatformConfig/DevPlatformConfigLoader.tsx": function(e, t, n) {
@@ -1394,7 +1394,7 @@
 						const t = e.platform.currentPage;
 						if (t && t.meta && "subreddit" === t.meta.name) {
 							const n = t.urlParams.subredditName;
-							return Object(Gn.B)(e, {
+							return Object(Gn.A)(e, {
 								subredditName: n
 							})
 						}
@@ -1420,7 +1420,7 @@
 						const t = e.platform.currentPage;
 						if (t && t.meta && "subreddit" === t.meta.name) {
 							const n = t.urlParams.subredditName;
-							return Object(Gn.B)(e, {
+							return Object(Gn.A)(e, {
 								subredditName: n
 							})
 						}
@@ -1445,7 +1445,7 @@
 					const t = e.platform.currentPage;
 					if (t && t.meta && "subreddit" === t.meta.name) {
 						const n = t.urlParams.subredditName;
-						return Object(Gn.B)(e, {
+						return Object(Gn.A)(e, {
 							subredditName: n
 						})
 					}
@@ -1937,4 +1937,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/AdminPanel.ce46e7cd2d7a706c376d.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/AdminPanel.b8dec9f2a3e7b56fb806.js.map

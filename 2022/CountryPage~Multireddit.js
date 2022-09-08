@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CountryPage~Multireddit.15c6d6d1ff3045dd699d.js
-// Retrieved at 9/8/2022, 11:00:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CountryPage~Multireddit.b2fcba5c3f687496a231.js
+// Retrieved at 9/8/2022, 11:20:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CountryPage~Multireddit"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -5619,7 +5619,7 @@
 						} = t;
 						return Object(y.D)(e, n, r, s)
 					}),
-					subredditsById: v.db,
+					subredditsById: v.cb,
 					viewportDataLoaded: w.a,
 					pageReferrer: p.V,
 					postListPlaceholderComponent: () => f.a,
@@ -5914,7 +5914,7 @@
 							subredditName: r,
 							[s]: n.id
 						},
-						d = Object(l.B)(e, {
+						d = Object(l.A)(e, {
 							subredditName: r
 						});
 					return d ? {
@@ -6734,7 +6734,7 @@
 			const c = (e, t) => {
 					const n = e.focusedVerticals.interactedSubredditIds && e.focusedVerticals.interactedSubredditIds[t];
 					if (n) {
-						const t = Object(o.W)(e, {
+						const t = Object(o.V)(e, {
 							subredditId: n
 						});
 						return t && t.displayText || ""
@@ -6747,14 +6747,14 @@
 				m = Object(r.a)((e, t) => {
 					const n = p(e, t);
 					if (!n) return u;
-					const r = Object(o.ab)(e, {
+					const r = Object(o.Z)(e, {
 						subredditName: n.name
 					});
 					return r && r.postIds && r.postIds.length ? r.postIds : u
 				}),
 				p = (e, t) => {
 					const n = e.focusedVerticals.recommendedSubredditIds && e.focusedVerticals.recommendedSubredditIds[t];
-					return n ? Object(o.W)(e, {
+					return n ? Object(o.V)(e, {
 						subredditId: n
 					}) : null
 				},
@@ -6854,7 +6854,7 @@
 					let {
 						subredditName: n
 					} = t;
-					const r = Object(o.ab)(e, {
+					const r = Object(o.Z)(e, {
 						subredditName: n
 					});
 					return (r && r.postIds || []).slice(0, 2)
@@ -6877,4 +6877,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CountryPage~Multireddit.15c6d6d1ff3045dd699d.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CountryPage~Multireddit.b2fcba5c3f687496a231.js.map

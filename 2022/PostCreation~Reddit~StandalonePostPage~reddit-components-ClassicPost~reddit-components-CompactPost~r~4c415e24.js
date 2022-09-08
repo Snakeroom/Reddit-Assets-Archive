@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostCreation~Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~r~4c415e24.98a5faaf8d1fab1f3b9b.js
-// Retrieved at 9/8/2022, 11:00:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostCreation~Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~r~4c415e24.c7ac0892903ed76baab5.js
+// Retrieved at 9/8/2022, 11:20:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostCreation~Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~r~4c415e24"], {
 		"./src/reddit/actions/gold/communityAwards/index.ts": function(e, t, n) {
@@ -89,7 +89,7 @@
 							thingId: r,
 							correlationId: n
 						})), e(Object(u.h)(c.a.GOLD_GILD_MODAL));
-						const v = Object(f.M)(s, {
+						const v = Object(f.L)(s, {
 							thingId: r
 						});
 						let m = null;
@@ -724,9 +724,9 @@
 			})), n.d(t, "clickQuestionMarkEvent", (function() {
 				return G
 			})), n.d(t, "clickConfirmAwardEvent", (function() {
-				return N
-			})), n.d(t, "clickGetPremiumEvent", (function() {
 				return L
+			})), n.d(t, "clickGetPremiumEvent", (function() {
+				return N
 			})), n.d(t, "clickAddCoinsButtonEvent", (function() {
 				return D
 			})), n.d(t, "clickNextButtonEvent", (function() {
@@ -881,7 +881,7 @@
 					action: "click",
 					noun: "question"
 				}),
-				N = (e, t) => n => ({
+				L = (e, t) => n => ({
 					...f(n, e),
 					source: "give_gold",
 					action: "click",
@@ -891,7 +891,7 @@
 						...p(t)
 					}
 				}),
-				L = (e, t) => n => ({
+				N = (e, t) => n => ({
 					...f(n, e),
 					source: "give_gold",
 					action: "click",
@@ -1822,15 +1822,15 @@
 					loadMore: E,
 					models: R
 				}),
-				N = n("./src/reddit/actions/grantUserFlair/constants.ts");
-			var L = function() {
+				L = n("./src/reddit/actions/grantUserFlair/constants.ts");
+			var N = function() {
 				let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : null,
 					t = arguments.length > 1 ? arguments[1] : void 0;
 				switch (t.type) {
-					case N.g:
-					case N.i:
+					case L.g:
+					case L.i:
 						return null;
-					case N.f:
+					case L.f:
 						return t.payload;
 					default:
 						return e
@@ -1840,17 +1840,17 @@
 					let e = arguments.length > 0 && void 0 !== arguments[0] && arguments[0],
 						t = arguments.length > 1 ? arguments[1] : void 0;
 					switch (t.type) {
-						case N.i:
+						case L.i:
 							return !0;
-						case N.g:
-						case N.f:
+						case L.g:
+						case L.f:
 							return !1;
 						default:
 							return e
 					}
 				},
 				U = Object(r.c)({
-					error: L,
+					error: N,
 					pending: D
 				}),
 				F = n("./node_modules/lodash/merge.js"),
@@ -1862,8 +1862,8 @@
 				let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : z,
 					t = arguments.length > 1 ? arguments[1] : void 0;
 				switch (t.type) {
-					case N.g:
-					case N.k: {
+					case L.g:
+					case L.k: {
 						const {
 							subredditId: n,
 							flairedUsers: r
@@ -1874,7 +1874,7 @@
 							[n]: r
 						})
 					}
-					case N.c: {
+					case L.c: {
 						const {
 							subredditId: n,
 							userName: r
@@ -1884,9 +1884,9 @@
 							[n]: o
 						}
 					}
-					case N.a:
-					case N.b:
-					case N.h:
+					case L.a:
+					case L.b:
+					case L.h:
 						const {
 							subredditId: n, userName: r, applied: o
 						} = t.payload;
@@ -1906,7 +1906,7 @@
 				let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : H,
 					t = arguments.length > 1 ? arguments[1] : void 0;
 				switch (t.type) {
-					case N.g: {
+					case L.g: {
 						const {
 							key: n,
 							pageInfo: r
@@ -1924,10 +1924,10 @@
 				let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : null,
 					t = arguments.length > 1 ? arguments[1] : void 0;
 				switch (t.type) {
-					case N.l:
-					case N.k:
+					case L.l:
+					case L.k:
 						return null;
-					case N.j:
+					case L.j:
 						return t.payload;
 					default:
 						return e
@@ -1937,10 +1937,10 @@
 					let e = arguments.length > 0 && void 0 !== arguments[0] && arguments[0],
 						t = arguments.length > 1 ? arguments[1] : void 0;
 					switch (t.type) {
-						case N.l:
+						case L.l:
 							return !0;
-						case N.k:
-						case N.j:
+						case L.k:
+						case L.j:
 							return !1;
 						default:
 							return e
@@ -1954,13 +1954,13 @@
 					let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : null,
 						t = arguments.length > 1 ? arguments[1] : void 0;
 					switch (t.type) {
-						case N.k: {
+						case L.k: {
 							const {
 								searchResult: e
 							} = t.payload;
 							return e
 						}
-						case N.c: {
+						case L.c: {
 							const {
 								userName: n
 							} = t.payload;
@@ -1979,7 +1979,7 @@
 					let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : Z,
 						t = arguments.length > 1 ? arguments[1] : void 0;
 					switch (t.type) {
-						case N.g: {
+						case L.g: {
 							const {
 								key: n,
 								userOrder: r
@@ -1989,7 +1989,7 @@
 								[n]: r
 							}
 						}
-						case N.a: {
+						case L.a: {
 							const {
 								key: n,
 								userName: r
@@ -2004,7 +2004,7 @@
 							}
 							return e
 						}
-						case N.c: {
+						case L.c: {
 							const {
 								userName: n
 							} = t.payload, r = {};
@@ -2406,7 +2406,7 @@
 					userOrder: Se
 				});
 			const Ge = {};
-			var Ne = function() {
+			var Le = function() {
 				let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : Ge,
 					t = arguments.length > 1 ? arguments[1] : void 0;
 				switch (t.type) {
@@ -2432,9 +2432,9 @@
 						return e
 				}
 			};
-			const Le = {};
+			const Ne = {};
 			var De = function() {
-				let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : Le,
+				let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : Ne,
 					t = arguments.length > 1 ? arguments[1] : void 0;
 				switch (t.type) {
 					case o.y: {
@@ -2671,7 +2671,7 @@
 					editableModerators: be,
 					editableUserOrder: Ce,
 					invitedModerators: Re,
-					invitePending: Ne,
+					invitePending: Le,
 					loadMoreModerators: Fe,
 					loadMoreEditableModerators: De,
 					models: Ke,
@@ -3000,9 +3000,9 @@
 						return e
 				}
 			};
-			const Nt = {};
-			var Lt = function() {
-					let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : Nt,
+			const Lt = {};
+			var Nt = function() {
+					let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : Lt,
 						t = arguments.length > 1 ? arguments[1] : void 0;
 					switch (t.type) {
 						case st.i: {
@@ -3024,7 +3024,7 @@
 				Dt = Object(r.c)({
 					api: St,
 					itemOrder: Gt,
-					loadMore: Lt
+					loadMore: Nt
 				});
 			var Ut = function() {
 				let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : null,
@@ -3829,4 +3829,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation~Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~r~4c415e24.98a5faaf8d1fab1f3b9b.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation~Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~r~4c415e24.c7ac0892903ed76baab5.js.map

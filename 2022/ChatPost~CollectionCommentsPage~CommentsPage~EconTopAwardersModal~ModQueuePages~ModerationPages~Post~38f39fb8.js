@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ChatPost~CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~Post~38f39fb8.2895cd551aad20770ebc.js
-// Retrieved at 9/8/2022, 11:00:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ChatPost~CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~Post~38f39fb8.3aaef8cdec65cdd461e3.js
+// Retrieved at 9/8/2022, 11:20:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ChatPost~CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~Post~38f39fb8"], {
 		"./src/reddit/actions/economics/subredditPremium/actionCreators.ts": function(e, t, r) {
@@ -349,8 +349,8 @@
 				Q = r("./src/reddit/components/AwardBadges/AwardPill/index.m.less"),
 				V = r.n(Q);
 			const J = 3500,
-				Y = 500;
-			class K extends n.a.PureComponent {
+				K = 500;
+			class Y extends n.a.PureComponent {
 				constructor(e) {
 					super(e), this.imageRef = n.a.createRef(), this.triggerAnimation = () => {
 						const {
@@ -382,7 +382,7 @@
 							e(t), this.setState({
 								hoverStateTriggered: !0
 							})
-						}, Y)
+						}, K)
 					}, this.handleMouseLeave = () => {
 						const {
 							onHideTooltip: e
@@ -464,7 +464,7 @@
 					}))
 				}
 			}
-			var $ = K,
+			var $ = Y,
 				X = r("./src/reddit/icons/svgs/Chevron/index.tsx"),
 				Z = r("./src/reddit/components/AwardBadges/AwardPlaqueScrollButton/index.m.less"),
 				ee = r.n(Z);
@@ -1701,7 +1701,7 @@
 				f = r("./src/reddit/selectors/subreddit.ts");
 			const w = (e, t) => {
 				const r = Object(b.b)(e, t),
-					s = Object(f.L)(e, t);
+					s = Object(f.K)(e, t);
 				return {
 					comment: r,
 					isModerator: !(!s || !s.name) && !!e.moderatingSubreddits[s.name],
@@ -1740,7 +1740,7 @@
 			}));
 			const g = (e, t) => {
 				const r = Object(b.b)(e, t),
-					s = Object(f.L)(e, t);
+					s = Object(f.K)(e, t);
 				return {
 					comment: r,
 					isModerator: !(!s || !s.name) && !!e.moderatingSubreddits[s.name],
@@ -1766,7 +1766,7 @@
 				}
 			}));
 			var x = Object(n.b)(() => Object(a.c)({
-					subreddit: f.W
+					subreddit: f.V
 				}))(e => o.a.createElement(p, {
 					className: e.className,
 					type: "communityTools",
@@ -1866,7 +1866,7 @@
 				}) : null
 			};
 			var I = Object(n.b)(() => Object(a.c)({
-				subreddit: f.W
+				subreddit: f.V
 			}))(e => o.a.createElement(p, {
 				className: e.className,
 				type: "sidebar",
@@ -1879,7 +1879,7 @@
 				}
 			}));
 			var C = Object(n.b)(() => Object(a.c)({
-				subredditOrProfile: (e, t) => Object(f.O)(e, {
+				subredditOrProfile: (e, t) => Object(f.N)(e, {
 					identifier: t
 				})
 			}))(e => o.a.createElement(p, {
@@ -1898,7 +1898,7 @@
 					let {
 						subredditId: r
 					} = t;
-					return r ? Object(f.W)(e, {
+					return r ? Object(f.V)(e, {
 						subredditId: r
 					}) : null
 				}
@@ -2353,8 +2353,8 @@
 					onMouseLeave: e.onMouseLeave
 				}, o.a.createElement(z.a, null, e.desc)),
 				J = (r("./src/reddit/icons/fonts/Premium/index.tsx"), r("./src/reddit/components/UserIcon/index.tsx")),
-				Y = r("./src/reddit/constants/postLayout.ts"),
-				K = r("./src/reddit/contexts/PageLayer/index.tsx"),
+				K = r("./src/reddit/constants/postLayout.ts"),
+				Y = r("./src/reddit/contexts/PageLayer/index.tsx"),
 				$ = r("./src/reddit/models/Flair/index.ts"),
 				X = r("./src/reddit/models/NewStructuredStyles/index.ts"),
 				Z = r("./src/reddit/models/Post/index.ts"),
@@ -2379,7 +2379,7 @@
 			const me = e => Object(G.a)(Object(U.a)(e), X.a.metaText, X.b.metaText),
 				pe = l.a.wrapped(H.b, "MetaSeparator", de.a),
 				he = l.a.span("text", de.a),
-				be = Object(K.u)(),
+				be = Object(Y.u)(),
 				fe = e => {
 					const t = Object(p.a)(le),
 						r = ce._("Reddit admin, speaking officially", null, {
@@ -2481,10 +2481,10 @@
 						Ne = () => o.a.createElement(pe, {
 							className: e.metaSeparatorClassName
 						}, "•"),
-						Se = Object(n.e)(e => Object(K.S)(e, {
+						Se = Object(n.e)(e => Object(Y.S)(e, {
 							pageLayer: g
 						})),
-						ke = Y.e[Se] === Y.d.Card,
+						ke = K.e[Se] === K.d.Card,
 						Me = q && ke || !!ye,
 						Le = Q && (q || !!ye),
 						Be = o.a.createElement(o.a.Fragment, null, ie && Ce && o.a.createElement("div", {
@@ -3743,4 +3743,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatPost~CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~Post~38f39fb8.2895cd551aad20770ebc.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatPost~CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~Post~38f39fb8.3aaef8cdec65cdd461e3.js.map

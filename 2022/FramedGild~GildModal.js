@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/FramedGild~GildModal.b2ffbe4cd0d06737e695.js
-// Retrieved at 9/8/2022, 11:00:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/FramedGild~GildModal.f3635c73adcee83adfd7.js
+// Retrieved at 9/8/2022, 11:20:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["FramedGild~GildModal", "gildActions"], {
 		"./node_modules/@stripe/react-stripe-js/dist/react-stripe.umd.js": function(e, t, r) {
@@ -1086,7 +1086,7 @@
 						commentId: r
 					}), s = Object(A.k)(e), a = e.gild, {
 						isAnonymous: o
-					} = a, i = !o && s && (s.username || s.displayText) ? s.username || s.displayText : void 0, c = n ? n.author : void 0, d = Object(S.M)(e, {
+					} = a, i = !o && s && (s.username || s.displayText) ? s.username || s.displayText : void 0, c = n ? n.author : void 0, d = Object(S.L)(e, {
 						thingId: r
 					});
 					return ne({
@@ -1119,10 +1119,10 @@
 						})
 					}
 					if (h.awardType === b.f.Moderator && void 0 === e.subredditCoins) {
-						const t = Object(S.M)(s, {
+						const t = Object(S.L)(s, {
 								thingId: p
 							}),
-							r = t && Object(S.E)(s, {
+							r = t && Object(S.D)(s, {
 								subredditName: t.name
 							});
 						r && (e.subredditCoins = r - h.coinPrice)
@@ -1198,7 +1198,7 @@
 							})), a ? r : n)
 						}
 					}
-					const D = Object(S.M)(s, {
+					const D = Object(S.L)(s, {
 						thingId: p
 					});
 					if (D && Object(k.a)(s, {
@@ -2784,7 +2784,7 @@
 						subredditId: n
 					} = t, s = n;
 					if (!n) {
-						const t = Object(G.M)(e, {
+						const t = Object(G.L)(e, {
 							thingId: r
 						});
 						s = t && t.id
@@ -2838,7 +2838,7 @@
 							subredditId: n
 						} = t, s = n;
 						if (!n) {
-							const t = Object(G.M)(e, {
+							const t = Object(G.L)(e, {
 								thingId: r
 							});
 							if (!t) return !1;
@@ -2879,17 +2879,17 @@
 					purchaseCatalogPending: M.o,
 					showPurchaseModal: B.u,
 					selectedAward: L.b,
-					subreddit: G.M,
+					subreddit: G.L,
 					subredditCoins: (e, t) => {
 						let {
 							thingId: r,
 							subredditId: n
 						} = t;
-						const s = Object(G.M)(e, {
+						const s = Object(G.L)(e, {
 								thingId: r
 							}),
 							a = s ? s.id : n;
-						return Object(G.D)(e, {
+						return Object(G.C)(e, {
 							subredditId: a
 						})
 					},
@@ -2899,7 +2899,7 @@
 							subredditId: n
 						} = t, s = n;
 						if (!n) {
-							const t = Object(G.M)(e, {
+							const t = Object(G.L)(e, {
 								thingId: r
 							});
 							s = t && t.id
@@ -5447,7 +5447,7 @@
 							subredditName: n,
 							[s]: r.id
 						},
-						d = Object(l.B)(e, {
+						d = Object(l.A)(e, {
 							subredditName: n
 						});
 					return d ? {
@@ -6166,7 +6166,7 @@
 					let {
 						subredditName: r
 					} = t;
-					const n = Object(o.ab)(e, {
+					const n = Object(o.Z)(e, {
 						subredditName: r
 					});
 					return (n && n.postIds || []).slice(0, 2)
@@ -6198,4 +6198,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/FramedGild~GildModal.b2ffbe4cd0d06737e695.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/FramedGild~GildModal.f3635c73adcee83adfd7.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage.3e6ab28b86ed67473634.js
-// Retrieved at 9/8/2022, 11:00:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage.1533b654a2524175e4c9.js
+// Retrieved at 9/8/2022, 11:20:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage"], {
 		"./node_modules/linkify-it/index.js": function(e, t, s) {
@@ -678,7 +678,7 @@
 							collectionId: t.id
 						});
 						if (!s) return "";
-						const o = Object(D.O)(e, {
+						const o = Object(D.N)(e, {
 								identifier: t
 							}),
 							r = Object(i.c)(s.title, o.name).toString();
@@ -689,12 +689,12 @@
 					}));
 					const R = s().posts.models[g];
 					if (R) {
-						const n = Object(D.O)(s(), {
+						const n = Object(D.N)(s(), {
 							identifier: R.belongsTo
 						});
 						if (!R.isSponsored)
 							if (R.belongsTo.type === v.a.SUBREDDIT) {
-								!!Object(D.V)(O, {
+								!!Object(D.U)(O, {
 									subredditId: R.belongsTo.id
 								}) || await t(h.o(n.name))
 							} else await t(p.d(n.name));
@@ -1220,7 +1220,7 @@
 						o = Object(te.G)(t, {
 							postId: s
 						}).belongsTo,
-						r = Object(se.O)(t, {
+						r = Object(se.N)(t, {
 							identifier: o
 						}),
 						i = Object(Ke.c)(t, {
@@ -1303,7 +1303,7 @@
 									});
 								return s && n ? `${e.posts.models[t].title} : ${s.name}` : ""
 							})(s(), u),
-							i = Object(se.O)(s(), {
+							i = Object(se.N)(s(), {
 								identifier: R.belongsTo
 							});
 						if (i && (e => q.vf.Redirect === Object(G.b)(e, {
@@ -1324,7 +1324,7 @@
 								await e
 							}
 						} else {
-							if (!!!Object(se.V)(s(), {
+							if (!!!Object(se.U)(s(), {
 									subredditId: R.belongsTo.id
 								})) {
 								const e = Object(me.i)(() => t(P.o(i.name)), {
@@ -2370,7 +2370,7 @@
 						let {
 							subreddit: s
 						} = t;
-						return s ? Object(W.y)(e, {
+						return s ? Object(W.x)(e, {
 							subredditName: s.name
 						}) : void 0
 					},
@@ -2833,7 +2833,7 @@
 					isOnlineUserPref: U.V,
 					userIsBanned: (e, t) => {
 						const s = Object(gt.b)(e, t);
-						return !!s && Object(W.hb)(e, {
+						return !!s && Object(W.gb)(e, {
 							subredditId: s.subredditId
 						})
 					},
@@ -4262,7 +4262,7 @@
 					isLoggedIn: B.Q,
 					postSEOV2IdCardVariant: R.h,
 					shouldShowReredditPromo: A.a,
-					widgets: Object(u.a)(M.w)
+					widgets: Object(u.a)(M.v)
 				}),
 				q = Object(d.b)(K);
 			class G extends a.a.Component {
@@ -5210,8 +5210,8 @@
 					className: h.a.icon
 				}),
 				x = Object(a.c)({
-					subreddit: u.B,
-					subredditAboutInfo: u.y
+					subreddit: u.A,
+					subredditAboutInfo: u.x
 				}),
 				f = Object(i.b)(x);
 			t.a = f(e => {
@@ -5543,7 +5543,7 @@
 				Object(a.useEffect)(() => {
 					P(Object(F.u)(o))
 				}, [P, o]);
-				const I = Object(c.e)(e => Object(u.W)(e, {
+				const I = Object(c.e)(e => Object(u.V)(e, {
 						subredditId: t
 					})),
 					S = Object(c.e)(e => e);
@@ -5573,7 +5573,7 @@
 							actionInfo: {
 								reason: `${n}`
 							},
-							subreddit: Object(u.W)(e, {
+							subreddit: Object(u.V)(e, {
 								subredditId: s
 							})
 						})
@@ -5719,7 +5719,7 @@
 						crosspostIds: [],
 						postUrls: {}
 					}), [r]),
-					B = Object(c.e)(e => Object(u.C)(e, F)),
+					B = Object(c.e)(e => Object(u.B)(e, F)),
 					W = Object(c.e)(e => Object(k.L)(e, A)),
 					z = Object(c.e)(e => Object(k.L)(e, R)),
 					H = B.reduce((e, t) => (e[b ? t.name.toLocaleLowerCase() : t.id] = t, e), {}),
@@ -9009,7 +9009,7 @@
 						} = t;
 						return Object(v.D)(e, s, n, o)
 					}),
-					subredditsById: _.db,
+					subredditsById: _.cb,
 					viewportDataLoaded: O.a,
 					pageReferrer: p.V,
 					postListPlaceholderComponent: () => g.a,
@@ -10232,7 +10232,7 @@
 						let {
 							subredditName: s
 						} = t;
-						return s ? Object(ie.y)(e, {
+						return s ? Object(ie.x)(e, {
 							subredditName: s
 						}) : void 0
 					},
@@ -10250,7 +10250,7 @@
 						let {
 							subredditName: s
 						} = t;
-						const n = Object(ie.H)(e, s);
+						const n = Object(ie.G)(e, s);
 						return !!n && Object(Ie.i)(e, n)
 					},
 					isNsfwBlurSubreddit: oe.e,
@@ -11261,7 +11261,7 @@
 			const d = (e, t) => {
 					const s = e.focusedVerticals.interactedSubredditIds && e.focusedVerticals.interactedSubredditIds[t];
 					if (s) {
-						const t = Object(i.W)(e, {
+						const t = Object(i.V)(e, {
 							subredditId: s
 						});
 						return t && t.displayText || ""
@@ -11274,14 +11274,14 @@
 				u = Object(n.a)((e, t) => {
 					const s = p(e, t);
 					if (!s) return m;
-					const n = Object(i.ab)(e, {
+					const n = Object(i.Z)(e, {
 						subredditName: s.name
 					});
 					return n && n.postIds && n.postIds.length ? n.postIds : m
 				}),
 				p = (e, t) => {
 					const s = e.focusedVerticals.recommendedSubredditIds && e.focusedVerticals.recommendedSubredditIds[t];
-					return s ? Object(i.W)(e, {
+					return s ? Object(i.V)(e, {
 						subredditId: s
 					}) : null
 				},
@@ -11425,4 +11425,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage.3e6ab28b86ed67473634.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage.1533b654a2524175e4c9.js.map

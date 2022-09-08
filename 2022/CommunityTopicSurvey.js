@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CommunityTopicSurvey.5c3b5f57b13b72d15222.js
-// Retrieved at 9/8/2022, 11:00:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CommunityTopicSurvey.33029554e56777629ad9.js
+// Retrieved at 9/8/2022, 11:20:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CommunityTopicSurvey"], {
 		"./node_modules/react-uid/dist/es2015/hooks.js": function(e, t, n) {
@@ -61,7 +61,7 @@
 		"./src/reddit/components/CommunityTopicSurvey/index.tsx": function(e, t, n) {
 			"use strict";
 			n.r(t), n.d(t, "default", (function() {
-				return A
+				return F
 			}));
 			var r = n("./node_modules/fbt/lib/FbtPublic.js"),
 				s = n("./node_modules/react/index.js"),
@@ -94,7 +94,7 @@
 					source: "community_tagging",
 					action: "view",
 					noun: "verify_topics_module",
-					subreddit: Object(m.W)(n, {
+					subreddit: Object(m.V)(n, {
 						subredditId: t
 					}),
 					raterTag: b(e)
@@ -103,7 +103,7 @@
 					source: "community_tagging",
 					action: "click",
 					noun: "select_answer",
-					subreddit: Object(m.W)(r, {
+					subreddit: Object(m.V)(r, {
 						subredditId: n
 					}),
 					raterTag: b(e, t)
@@ -112,7 +112,7 @@
 					source: "community_tagging",
 					action: "click",
 					noun: "submit",
-					subreddit: Object(m.W)(r, {
+					subreddit: Object(m.V)(r, {
 						subredditId: n
 					}),
 					raterTag: b(e, t)
@@ -121,7 +121,7 @@
 					source: "community_tagging",
 					action: "click",
 					noun: "close",
-					subreddit: Object(m.W)(n, {
+					subreddit: Object(m.V)(n, {
 						subredditId: t
 					}),
 					raterTag: b(e)
@@ -244,7 +244,7 @@
 				})))
 			}
 
-			function F(e) {
+			function A(e) {
 				const {
 					questionId: t,
 					questionText: n,
@@ -290,7 +290,7 @@
 				})))
 			}
 
-			function A(e) {
+			function F(e) {
 				var t;
 				const {
 					subredditId: n,
@@ -355,7 +355,7 @@
 							inFeed: a
 						});
 					case S.d.SingleWithSubmit:
-						return o.a.createElement(F, {
+						return o.a.createElement(A, {
 							key: O.id,
 							questionId: O.id,
 							questionText: O.questionText,
@@ -366,7 +366,7 @@
 							inFeed: a
 						});
 					case S.d.SingleNoSubmit:
-						return o.a.createElement(F, {
+						return o.a.createElement(A, {
 							key: O.id,
 							questionId: O.id,
 							questionText: O.questionText,
@@ -923,7 +923,7 @@
 							subredditName: r,
 							[s]: n.id
 						},
-						a = Object(u.B)(e, {
+						a = Object(u.A)(e, {
 							subredditName: r
 						});
 					return a ? {
@@ -1089,7 +1089,7 @@
 					let {
 						subredditName: n
 					} = t;
-					const r = Object(i.ab)(e, {
+					const r = Object(i.Z)(e, {
 						subredditName: n
 					});
 					return (r && r.postIds || []).slice(0, 2)
@@ -1100,4 +1100,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommunityTopicSurvey.5c3b5f57b13b72d15222.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommunityTopicSurvey.33029554e56777629ad9.js.map

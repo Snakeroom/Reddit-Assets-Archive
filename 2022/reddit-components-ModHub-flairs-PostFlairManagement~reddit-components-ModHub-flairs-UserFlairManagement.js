@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-ModHub-flairs-PostFlairManagement~reddit-components-ModHub-flairs-UserFlairManagement.c298aa078f23a4553443.js
-// Retrieved at 9/8/2022, 11:00:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-ModHub-flairs-PostFlairManagement~reddit-components-ModHub-flairs-UserFlairManagement.881f0e50e8687ebada13.js
+// Retrieved at 9/8/2022, 11:20:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-ModHub-flairs-PostFlairManagement~reddit-components-ModHub-flairs-UserFlairManagement"], {
 		"./src/reddit/actions/flairManagement/constants.ts": function(e, t, s) {
@@ -2036,7 +2036,7 @@
 				if (Object(u.i)(e) || Object(g.rb)(e)) return;
 				const s = C(e, t);
 				if (!s) return;
-				const a = Object(h.H)(e, s);
+				const a = Object(h.G)(e, s);
 				if (!a) return;
 				if (Object(g.qb)(e, {
 						subredditId: a
@@ -2046,7 +2046,7 @@
 			}), (e, t) => {
 				const s = C(e, t);
 				if (!s) return;
-				const a = Object(h.y)(e, {
+				const a = Object(h.x)(e, {
 					subredditName: s
 				});
 				return a ? a.emojisCustomSize : void 0
@@ -2058,7 +2058,7 @@
 				if (Object(g.Q)(e)) return !s.hideNSFW;
 				const a = C(e, t);
 				if (a) {
-					const t = Object(h.B)(e, {
+					const t = Object(h.A)(e, {
 						subredditName: a
 					});
 					return !(!t || !t.isNSFW)
@@ -2126,4 +2126,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ModHub-flairs-PostFlairManagement~reddit-components-ModHub-flairs-UserFlairManagement.c298aa078f23a4553443.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ModHub-flairs-PostFlairManagement~reddit-components-ModHub-flairs-UserFlairManagement.881f0e50e8687ebada13.js.map

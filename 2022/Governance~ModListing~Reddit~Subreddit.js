@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit~Subreddit.a7cc294c04d4b3089f43.js
-// Retrieved at 9/8/2022, 11:00:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit~Subreddit.d706718abd8b767e4988.js
+// Retrieved at 9/8/2022, 11:20:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~ModListing~Reddit~Subreddit"], {
 		"./src/lib/CSSVariableProvider/withTheme.tsx": function(e, t, n) {
@@ -2760,7 +2760,7 @@
 							success: t
 						}),
 						profile: v.T(e, Object(O.n)(e, r)),
-						subreddit: v.jb(e, Object(I.H)(e, n)),
+						subreddit: v.jb(e, Object(I.G)(e, n)),
 						userSubreddit: v.sb(e),
 						adblock: v.e(e)
 					})
@@ -2772,7 +2772,7 @@
 						noun: "screen",
 						...T(e),
 						profile: v.T(e, Object(O.n)(e, n)),
-						subreddit: v.jb(e, Object(I.H)(e, t)),
+						subreddit: v.jb(e, Object(I.G)(e, t)),
 						userSubreddit: v.sb(e),
 						adblock: v.e(e)
 					})
@@ -3441,7 +3441,7 @@
 							subredditId: t
 						})) return;
 					if (Object(f.N)(e)) return O(e);
-					const n = Object(b.K)(e, {
+					const n = Object(b.J)(e, {
 						identifier: {
 							id: t,
 							type: s.a.SUBREDDIT
@@ -3568,4 +3568,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit~Subreddit.a7cc294c04d4b3089f43.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit~Subreddit.d706718abd8b767e4988.js.map

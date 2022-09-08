@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditCreation.464afe8d3a6d080f5d26.js
-// Retrieved at 9/8/2022, 11:00:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditCreation.67ff5d1f74cacd870593.js
+// Retrieved at 9/8/2022, 11:20:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditCreation"], {
 		"./node_modules/lodash/_baseRange.js": function(e, t) {
@@ -976,10 +976,10 @@
 				re = K.a.wrapped(y.b, "ErrorText", Q.a),
 				se = Object(o.c)({
 					error: W.f,
-					isCreatePending: W.l,
+					isCreatePending: W.k,
 					isEmailInviteExperimentEnabled: A.a,
 					isEmployee: H.N,
-					crosspostId: W.k,
+					crosspostId: W.j,
 					userDoesNotHaveEnoughExpToCreateCommunity: e => !Object(H.pb)(e),
 					userIsSuspended: H.X,
 					allTags: G.e,
@@ -1834,4 +1834,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditCreation.464afe8d3a6d080f5d26.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditCreation.67ff5d1f74cacd870593.js.map

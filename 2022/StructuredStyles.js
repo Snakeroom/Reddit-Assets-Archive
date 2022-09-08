@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/StructuredStyles.09b9951456bb84a98429.js
-// Retrieved at 9/8/2022, 11:00:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/StructuredStyles.d692a58f2e15d616c9d0.js
+// Retrieved at 9/8/2022, 11:20:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["StructuredStyles"], {
 		"./node_modules/linkify-it/index.js": function(e, t, n) {
@@ -375,7 +375,7 @@
 				x = e => async (t, s) => {
 					t(p());
 					const i = s(),
-						o = Object(c.W)(i, {
+						o = Object(c.V)(i, {
 							subredditId: e
 						}).name,
 						u = i.structuredStyles.models[e],
@@ -540,7 +540,7 @@
 					});
 					if (m.ok) {
 						const n = t(),
-							a = m.body && m.body.length ? m.body.map(e => Object(d.H)(n, e)).filter(e => !!e).reduce((e, t) => (e[t] = !0, e), {}) : {};
+							a = m.body && m.body.length ? m.body.map(e => Object(d.G)(n, e)).filter(e => !!e).reduce((e, t) => (e[t] = !0, e), {}) : {};
 						e(h({
 							subredditIds: a
 						}))
@@ -746,7 +746,7 @@
 				b = n("./src/reddit/selectors/subreddit.ts");
 			const f = (e, t) => {
 				const n = Object(g.b)(e, t),
-					a = Object(b.L)(e, t);
+					a = Object(b.K)(e, t);
 				return {
 					comment: n,
 					isModerator: !(!a || !a.name) && !!e.moderatingSubreddits[a.name],
@@ -785,7 +785,7 @@
 			}));
 			const v = (e, t) => {
 				const n = Object(g.b)(e, t),
-					a = Object(b.L)(e, t);
+					a = Object(b.K)(e, t);
 				return {
 					comment: n,
 					isModerator: !(!a || !a.name) && !!e.moderatingSubreddits[a.name],
@@ -811,7 +811,7 @@
 				}
 			}));
 			var _ = Object(s.b)(() => Object(i.c)({
-					subreddit: b.W
+					subreddit: b.V
 				}))(e => r.a.createElement(h, {
 					className: e.className,
 					type: "communityTools",
@@ -911,7 +911,7 @@
 				}) : null
 			};
 			var I = Object(s.b)(() => Object(i.c)({
-				subreddit: b.W
+				subreddit: b.V
 			}))(e => r.a.createElement(h, {
 				className: e.className,
 				type: "sidebar",
@@ -924,7 +924,7 @@
 				}
 			}));
 			var w = Object(s.b)(() => Object(i.c)({
-				subredditOrProfile: (e, t) => Object(b.O)(e, {
+				subredditOrProfile: (e, t) => Object(b.N)(e, {
 					identifier: t
 				})
 			}))(e => r.a.createElement(h, {
@@ -943,7 +943,7 @@
 					let {
 						subredditId: n
 					} = t;
-					return n ? Object(b.W)(e, {
+					return n ? Object(b.V)(e, {
 						subredditId: n
 					}) : null
 				}
@@ -1204,7 +1204,7 @@
 				isImportExportThemesEnabled: Q.d.importExportThemes,
 				isStylingRestrictedDueToQuarantine: J.j,
 				moderatorPermissions: Y.n,
-				subreddit: X.W
+				subreddit: X.V
 			});
 			class ne extends r.a.Component {
 				constructor() {
@@ -1757,7 +1757,7 @@
 						activeModalId: M.a,
 						draftStyles: (e, n) => wt()(e.structuredStyles.draft, t),
 						savedStyles: (e, t) => e.structuredStyles.models[t.subredditId],
-						subreddit: X.W,
+						subreddit: X.V,
 						isExportPending: J.d
 					}),
 					a = Object(o.b)(n, (e, n) => ({
@@ -4981,7 +4981,7 @@
 						let {
 							subredditId: n
 						} = t;
-						return Object(X.W)(e, {
+						return Object(X.V)(e, {
 							subredditId: n
 						}).name
 					}
@@ -5087,7 +5087,7 @@
 			const yi = s.a.wrapped(Z.b, "FormElementDescription", Si.a),
 				ki = Object(c.c)({
 					rulesWidget: le.h,
-					subreddit: X.W
+					subreddit: X.V
 				});
 			var Ii = Object(o.b)(ki, e => ({
 					refreshRulesWidget: (t, n) => e(Object(nn.f)(t, n))
@@ -7788,7 +7788,7 @@
 					shouldPrettyPrint: b,
 					explanationText: f,
 					shouldShowSubredditOnlineUsers: E = !1
-				} = e, v = Object(i.e)(e => Object(c.y)(e, {
+				} = e, v = Object(i.e)(e => Object(c.x)(e, {
 					subredditName: r
 				})), x = Object(d.c)(r), _ = void 0 !== m ? a.fbt._({
 					"*": "{number} members",
@@ -9305,4 +9305,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/StructuredStyles.09b9951456bb84a98429.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/StructuredStyles.d692a58f2e15d616c9d0.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Econ-Prediction.fac92b8be82d4dbf0504.js
-// Retrieved at 9/8/2022, 11:00:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Econ-Prediction.efc7bf644b0e8a296d47.js
+// Retrieved at 9/8/2022, 11:20:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Econ-Prediction"], {
 		"./src/lib/constants/specialMembership.ts": function(e, t, n) {
@@ -418,7 +418,7 @@
 
 			function d(e) {
 				const t = Object(r.d)(),
-					n = Object(r.e)(t => Object(a.W)(t, {
+					n = Object(r.e)(t => Object(a.V)(t, {
 						subredditId: e
 					})),
 					s = Object(r.e)(t => Object(c.i)(t, {
@@ -662,21 +662,21 @@
 				U = n("./src/reddit/components/Econ/Prediction/PredictionEducationMessage/PredictionEndedEducationMessage/index.m.less"),
 				G = n.n(U);
 			const {
-				fbt: W
+				fbt: V
 			} = n("./node_modules/fbt/lib/FbtPublic.js");
 
-			function Y(e) {
+			function W(e) {
 				let {
 					didParticipate: t
 				} = e;
-				const n = W._("This prediction has ended", null, {
+				const n = V._("This prediction has ended", null, {
 						hk: "3VMLnq"
 					}),
-					s = o.a.createElement(o.a.Fragment, null, W._("The outcome is pending.", null, {
+					s = o.a.createElement(o.a.Fragment, null, V._("The outcome is pending.", null, {
 						hk: "4tsv1U"
 					}), t && o.a.createElement("div", {
 						className: G.a.notificationBlurb
-					}, W._("You'll be notified when the results are in.", null, {
+					}, V._("You'll be notified when the results are in.", null, {
 						hk: "45tyVv"
 					})));
 				return o.a.createElement("div", null, o.a.createElement(R.a, {
@@ -684,7 +684,7 @@
 					message: s
 				}))
 			}
-			var V = n("./src/reddit/components/Econ/Prediction/PredictionEducationMessage/PredictionFeatureEducationMessage/index.tsx");
+			var Y = n("./src/reddit/components/Econ/Prediction/PredictionEducationMessage/PredictionFeatureEducationMessage/index.tsx");
 
 			function K() {
 				const e = P.fbt._("Choose the answer", null, {
@@ -786,9 +786,9 @@
 				} = t, a = s < Date.now(), d = !L()(i), l = a && n && !r;
 				return a ? r ? o.a.createElement(Q, {
 					prediction: t
-				}) : l ? o.a.createElement(K, null) : o.a.createElement(Y, {
+				}) : l ? o.a.createElement(K, null) : o.a.createElement(W, {
 					didParticipate: !!c
-				}) : o.a.createElement(V.a, {
+				}) : o.a.createElement(Y.a, {
 					isTokens: d,
 					storageKey: T.a.feature
 				})
@@ -941,7 +941,7 @@
 				} = e;
 				const s = Object(k.a)(),
 					i = Object(ve.a)(),
-					c = Object(r.e)(e => Object(Pe.W)(e, {
+					c = Object(r.e)(e => Object(Pe.V)(e, {
 						subredditId: t
 					})),
 					d = Object(r.e)(e => Object(fe.b)(e, {
@@ -1489,11 +1489,11 @@
 			})), n.d(t, "b", (function() {
 				return G
 			})), n.d(t, "w", (function() {
-				return W
-			})), n.d(t, "s", (function() {
-				return Y
-			})), n.d(t, "t", (function() {
 				return V
+			})), n.d(t, "s", (function() {
+				return W
+			})), n.d(t, "t", (function() {
+				return Y
 			})), n.d(t, "g", (function() {
 				return q
 			})), n.d(t, "m", (function() {
@@ -1706,11 +1706,11 @@
 					if (!n) return;
 					return e.economics.emotes[n]
 				},
-				W = (e, t) => {
+				V = (e, t) => {
 					const n = t && e.economics.gifs[t];
 					return !!n && n.hasGifProduct
 				},
-				Y = (e, t, n) => {
+				W = (e, t, n) => {
 					if (Object(f.n)(e, {
 							subredditId: t
 						})) return !0;
@@ -1719,7 +1719,7 @@
 					});
 					return !(!s || !Object(r.a)(s))
 				},
-				V = (e, t, n) => {
+				Y = (e, t, n) => {
 					if (Object(p.a)(e)) return !(!t || !Object(m.B)(e, {
 						subredditId: t
 					})) || (!!z(e, t) || !(!s.d.spGiphy(e) || !K(e, n)));
@@ -1731,7 +1731,7 @@
 						})) return !0;
 					if (K(e, n)) return !0;
 					const o = s.d.spGiphy(e),
-						r = W(e, t);
+						r = V(e, t);
 					return !!z(e, t) || o && r
 				},
 				K = (e, t) => {
@@ -1742,7 +1742,7 @@
 				},
 				z = (e, t) => {
 					const n = s.d.spGiphy(e),
-						o = W(e, t);
+						o = V(e, t);
 					return n && o
 				},
 				q = (e, t, n) => {
@@ -1755,4 +1755,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Econ-Prediction.fac92b8be82d4dbf0504.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Econ-Prediction.efc7bf644b0e8a296d47.js.map
