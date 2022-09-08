@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ChatMessageInput.cd7cecda797517edb75d.js
-// Retrieved at 9/6/2022, 1:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ChatMessageInput.91ee54550e9db64a16ec.js
+// Retrieved at 9/8/2022, 1:40:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ChatMessageInput"], {
 		"./node_modules/linkify-it/index.js": function(e, t, s) {
@@ -1267,8 +1267,8 @@
 				ne = Object($.u)(),
 				ie = Object(u.b)(() => Object(l.c)({
 					draft: U.i,
-					errorMsgs: U.M,
-					errorType: U.N,
+					errorMsgs: U.L,
+					errorType: U.M,
 					hasError: U.v,
 					isChatPost: B.d,
 					isLivePostSpamRateEnabled: J.j,
@@ -2879,4 +2879,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatMessageInput.cd7cecda797517edb75d.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatMessageInput.91ee54550e9db64a16ec.js.map

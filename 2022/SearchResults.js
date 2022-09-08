@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SearchResults.7726109ec35c2893f605.js
-// Retrieved at 9/8/2022, 11:20:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SearchResults.d6b5e8359c56a8ad0f24.js
+// Retrieved at 9/8/2022, 1:40:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SearchResults"], {
 		"./node_modules/lodash/_baseDelay.js": function(e, t) {
@@ -852,7 +852,7 @@
 						let {
 							comment: s
 						} = t;
-						return Object(F.E)(e, {
+						return Object(F.D)(e, {
 							commentId: s.id
 						})
 					},
@@ -914,7 +914,7 @@
 						let {
 							comment: s
 						} = t;
-						return Object(F.K)(e, {
+						return Object(F.J)(e, {
 							commentId: s.id
 						})
 					},
@@ -945,14 +945,6 @@
 						})) || void 0 === n ? void 0 : n.unrepliableReason
 					},
 					isTrueblockPCBlockeeEnabled: B.e,
-					isParentCommentsAuthorBlocked: (e, t) => {
-						let {
-							comment: s
-						} = t;
-						return Object(F.D)(e, {
-							commentId: s.id
-						})
-					},
 					isDevPlatformEnabled: e => Object(Oe.a)(e)
 				});
 			class Fe extends o.a.Component {
@@ -1031,10 +1023,9 @@
 						trackCommentClick: L,
 						isPostUnrepliable: F,
 						isTrueblockPCBlockeeEnabled: B,
-						isParentCommentsAuthorBlocked: D,
-						isDevPlatformEnabled: A
-					} = this.props, U = Object(P.a)(O), V = !!s && s.displayText === e.author, H = !!s && s.isEmployee, G = B && e.unrepliableReason, K = B && F, J = !(D && B) && !(y && B) && !(Object(M.g)(e) && B) && !(F && B) && !G && !K && !(I && I.userIsBanned) && (k || v || y && _ || U && p || e.isLocked ? U && p : p || m), Q = Object($.a)(e), te = U && V && !e.bannedBy, se = V && H && !e.bannedBy, re = te || se, oe = !(Object(M.g)(e) && B) && s && e.isGildable && !K && !(G && "[deleted]" === e.author), ce = !v && !G, me = [];
-					J && me.push(o.a.createElement(we, {
+						isDevPlatformEnabled: D
+					} = this.props, A = Object(P.a)(O), U = !!s && s.displayText === e.author, V = !!s && s.isEmployee, H = B && e.unrepliableReason, G = B && F, K = !(y && B) && !(Object(M.g)(e) && B) && !(F && B) && !H && !G && !(I && I.userIsBanned) && (k || v || y && _ || A && p || e.isLocked ? A && p : p || m), J = Object($.a)(e), Q = A && U && !e.bannedBy, te = U && V && !e.bannedBy, se = Q || te, re = !(Object(M.g)(e) && B) && s && e.isGildable && !G && !(H && "[deleted]" === e.author), oe = !v && !H, ce = [];
+					K && ce.push(o.a.createElement(we, {
 						disabled: b,
 						key: "reply",
 						onClick: () => {
@@ -1042,7 +1033,7 @@
 						}
 					}, o.a.createElement(je, null), n.fbt._("Reply", null, {
 						hk: "dq9W0"
-					}))), oe && me.push({
+					}))), re && ce.push({
 						breakpointGroup: C.LoggedInUser,
 						icon: o.a.createElement(de.a, null),
 						isIconOverflowOnly: !0,
@@ -1051,7 +1042,7 @@
 						text: () => n.fbt._("Give Award", null, {
 							hk: "1GmM1v"
 						})
-					}), me.push(o.a.createElement(ne.a, {
+					}), ce.push(o.a.createElement(ne.a, {
 						dropdownId: `${e.id}-comment-share-menu`,
 						key: "share",
 						permalink: i,
@@ -1061,7 +1052,7 @@
 						onClick: () => this.sendCommentEventWithName("share")
 					}, n.fbt._("Share", null, {
 						hk: "3Ak3Tw"
-					})))), V || me.push({
+					})))), U || ce.push({
 						breakpointGroup: C.LoggedInUser,
 						icon: o.a.createElement(he.a, null),
 						isIconOverflowOnly: !0,
@@ -1070,7 +1061,7 @@
 						text: () => n.fbt._("Report", null, {
 							hk: "4oVcnd"
 						})
-					}), me.push({
+					}), ce.push({
 						breakpointGroup: C.LoggedInUser,
 						icon: o.a.createElement(le.a, {
 							name: e.isSaved ? "saved" : "save"
@@ -1083,7 +1074,7 @@
 						}) : () => n.fbt._("Save", null, {
 							hk: "4yMsMq"
 						})
-					}), V && me.push({
+					}), U && ce.push({
 						breakpointGroup: C.LoggedInUser,
 						icon: o.a.createElement(le.a, {
 							name: "edit"
@@ -1094,7 +1085,7 @@
 						text: () => n.fbt._("Edit", null, {
 							hk: "1nftDt"
 						})
-					}), ce && me.push({
+					}), oe && ce.push({
 						breakpointGroup: C.LoggedInUser,
 						icon: o.a.createElement(le.a, {
 							name: "notification",
@@ -1109,13 +1100,13 @@
 							hk: "1vo8lJ"
 						})
 					});
-					const pe = me.map(e => o.a.isValidElement(e) ? e : o.a.createElement(we, {
+					const me = ce.map(e => o.a.isValidElement(e) ? e : o.a.createElement(we, {
 							className: q(e.breakpointGroup, j.HideIfVWSmaller),
 							disabled: b,
 							key: e.key,
 							onClick: e.onClick
 						}, !e.isIconOverflowOnly && e.icon, e.text())),
-						Oe = me.map(e => o.a.isValidElement(e) ? null : o.a.createElement(ke, {
+						pe = ce.map(e => o.a.isValidElement(e) ? null : o.a.createElement(ke, {
 							className: q(e.breakpointGroup, j.HideIfVWLarger),
 							displayText: e.text(),
 							key: e.key,
@@ -1126,17 +1117,17 @@
 						className: Object(d.a)(Y({
 							depth: c,
 							isInOverlay: S,
-							isModModeEnabled: U && g || A,
-							isFollowCommentEnabled: ce
+							isModModeEnabled: A && g || D,
+							isFollowCommentEnabled: oe
 						}), t)
-					}, pe, o.a.createElement(_e, {
-						className: V ? void 0 : q(C.LoggedInUser, j.HideIfVWLarger)
+					}, me, o.a.createElement(_e, {
+						className: U ? void 0 : q(C.LoggedInUser, j.HideIfVWLarger)
 					}, o.a.createElement(ee.b, {
 						className: ve.a.overflowMenu,
 						disabled: b,
 						dropdownId: Re(e.id),
 						onClick: () => w(Object(ae.b)("comment_overflow_menu", e.id))
-					}, Oe, V && o.a.createElement(o.a.Fragment, null, o.a.createElement(ke, {
+					}, pe, U && o.a.createElement(o.a.Fragment, null, o.a.createElement(ke, {
 						displayText: n.fbt._("Delete comment", null, {
 							hk: "4lMUDO"
 						}),
@@ -1170,10 +1161,10 @@
 						toggleModal: T,
 						trackClick: () => {},
 						withOverlay: !0
-					}), U && o.a.createElement(o.a.Fragment, null, g && o.a.createElement(Ne, {
+					}), A && o.a.createElement(o.a.Fragment, null, g && o.a.createElement(Ne, {
 						className: q(C.Moderator, j.HideIfVWSmaller),
 						comment: e,
-						isCommentAuthor: V
+						isCommentAuthor: U
 					}), o.a.createElement(Ee, {
 						className: g ? q(C.Moderator, j.HideIfVWLarger) : void 0,
 						dropdownId: `${e.id}-mod-actions-menu`,
@@ -1183,7 +1174,7 @@
 						comment: e,
 						tooltipId: `${e.id}-mod-actions-menu`
 					}))), Object($.c)(e) && !g && o.a.createElement(z.a, {
-						text: `${Q}`,
+						text: `${J}`,
 						onClick: () => {
 							f(), this.sendCommentModEventWithName("comment_report_menu")
 						},
@@ -1195,7 +1186,7 @@
 							x(), this.sendCommentReportEvent(e.ignoreReports ? "restore_reports" : "ignore_reports")
 						},
 						tooltipId: Me(e.id)
-					}), e.ignoreReports ? o.a.createElement(ye, null) : o.a.createElement(Ce, null)), re && o.a.createElement(z.a, {
+					}), e.ignoreReports ? o.a.createElement(ye, null) : o.a.createElement(Ce, null)), se && o.a.createElement(z.a, {
 						onClick: this.handleDistinguishToggle,
 						selected: this.props.isDistinguishDropdownOpen
 					}, o.a.createElement(ue.a, null), o.a.createElement(Z.a, {
@@ -1204,8 +1195,8 @@
 						isModDistinguished: e.isMod,
 						isStickied: e.isStickied,
 						isTopLevelComment: !e.parentId,
-						isUserEmployee: H,
-						isUserMod: U,
+						isUserEmployee: V,
+						isUserMod: A,
 						onDistinguishComment: h,
 						sendEventWithName: this.sendCommentDistinguishEvent,
 						tooltipId: Pe(e.id)
@@ -1365,7 +1356,7 @@
 					isAdmin: H.K,
 					isEditing: F.z,
 					isLoggedIn: H.Q,
-					isPendingDeletion: F.E,
+					isPendingDeletion: F.D,
 					isPresenceConsumptionExpEnabled: gt.c,
 					moderatorPermissions: (e, t) => {
 						const s = Object(xt.b)(e, t);
@@ -1375,10 +1366,10 @@
 					},
 					prediction: Ct.f,
 					modModeEnabled: it.U,
-					errorMsgs: F.I,
-					replyFormOpen: F.L,
+					errorMsgs: F.H,
+					replyFormOpen: F.K,
 					subreddit: it.r,
-					subredditType: F.O,
+					subredditType: F.N,
 					showNftSpecialtyTreatment: ft.b,
 					hasSupporterRing: vt.a,
 					isOnlineConsumptionLoadTest: gt.a,
@@ -9248,4 +9239,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SearchResults.7726109ec35c2893f605.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SearchResults.d6b5e8359c56a8ad0f24.js.map

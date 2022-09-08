@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ChatPost.437a069bfbda9c2cb3e4.js
-// Retrieved at 9/8/2022, 11:20:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ChatPost.5ddd6182540b7052934c.js
+// Retrieved at 9/8/2022, 1:40:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ChatPost"], {
 		"./node_modules/lodash/_baseDelay.js": function(e, t) {
@@ -3244,7 +3244,7 @@
 					},
 					comment: z.b,
 					commentPermalink: q.m,
-					errorMsgs: q.I,
+					errorMsgs: q.H,
 					flair: q.e,
 					isActive: (e, t) => {
 						let {
@@ -3683,7 +3683,7 @@
 				},
 				comment: z.b,
 				commentPermalink: q.m,
-				errorMsgs: q.I,
+				errorMsgs: q.H,
 				flair: q.e,
 				isActive: (e, t) => {
 					let {
@@ -3699,7 +3699,7 @@
 						commentId: n,
 						commentsPageKey: o
 					} = t;
-					return Object(q.L)(e, {
+					return Object(q.K)(e, {
 						commentId: n,
 						commentsPageKey: o
 					})
@@ -4181,7 +4181,7 @@
 					chatCommentLinks: q.g,
 					isPending: q.d,
 					liveCommentsWebsocket: Yo.E,
-					moreCommentsLink: q.H,
+					moreCommentsLink: q.G,
 					isCommentReactionStreamingKillSwitchEnabled: ve.f,
 					isCommentAwardsAndReactionsEnabled: ve.d,
 					currentUserId: Ie.i
@@ -5493,4 +5493,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatPost.437a069bfbda9c2cb3e4.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatPost.5ddd6182540b7052934c.js.map

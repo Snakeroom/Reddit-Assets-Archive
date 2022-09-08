@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage.1533b654a2524175e4c9.js
-// Retrieved at 9/8/2022, 11:20:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage.a45710aef228ebc68693.js
+// Retrieved at 9/8/2022, 1:40:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage"], {
 		"./node_modules/linkify-it/index.js": function(e, t, s) {
@@ -2300,7 +2300,7 @@
 						let {
 							comment: s
 						} = t;
-						return Object(A.E)(e, {
+						return Object(A.D)(e, {
 							commentId: s.id
 						})
 					},
@@ -2362,7 +2362,7 @@
 						let {
 							comment: s
 						} = t;
-						return Object(A.K)(e, {
+						return Object(A.J)(e, {
 							commentId: s.id
 						})
 					},
@@ -2393,14 +2393,6 @@
 						})) || void 0 === n ? void 0 : n.unrepliableReason
 					},
 					isTrueblockPCBlockeeEnabled: M.e,
-					isParentCommentsAuthorBlocked: (e, t) => {
-						let {
-							comment: s
-						} = t;
-						return Object(A.D)(e, {
-							commentId: s.id
-						})
-					},
 					isDevPlatformEnabled: e => Object(fe.a)(e)
 				});
 			class Ae extends r.a.Component {
@@ -2479,10 +2471,9 @@
 						trackCommentClick: R,
 						isPostUnrepliable: A,
 						isTrueblockPCBlockeeEnabled: M,
-						isParentCommentsAuthorBlocked: B,
-						isDevPlatformEnabled: D
-					} = this.props, V = Object(T.a)(f), W = !!s && s.displayText === e.author, U = !!s && s.isEmployee, H = M && e.unrepliableReason, K = M && A, Y = !(B && M) && !(y && M) && !(Object(F.g)(e) && M) && !(A && M) && !H && !K && !(S && S.userIsBanned) && (k || v || y && j || V && p || e.isLocked ? V && p : p || m), X = Object($.a)(e), te = V && W && !e.bannedBy, se = W && U && !e.bannedBy, oe = te || se, re = !(Object(F.g)(e) && M) && s && e.isGildable && !K && !(H && "[deleted]" === e.author), de = !v && !H, me = [];
-					Y && me.push(r.a.createElement(Ie, {
+						isDevPlatformEnabled: B
+					} = this.props, D = Object(T.a)(f), V = !!s && s.displayText === e.author, W = !!s && s.isEmployee, U = M && e.unrepliableReason, H = M && A, K = !(y && M) && !(Object(F.g)(e) && M) && !(A && M) && !U && !H && !(S && S.userIsBanned) && (k || v || y && j || D && p || e.isLocked ? D && p : p || m), Y = Object($.a)(e), X = D && V && !e.bannedBy, te = V && W && !e.bannedBy, se = X || te, oe = !(Object(F.g)(e) && M) && s && e.isGildable && !H && !(U && "[deleted]" === e.author), re = !v && !U, de = [];
+					K && de.push(r.a.createElement(Ie, {
 						disabled: b,
 						key: "reply",
 						onClick: () => {
@@ -2490,7 +2481,7 @@
 						}
 					}, r.a.createElement(_e, null), n.fbt._("Reply", null, {
 						hk: "dq9W0"
-					}))), re && me.push({
+					}))), oe && de.push({
 						breakpointGroup: O.LoggedInUser,
 						icon: r.a.createElement(ce.a, null),
 						isIconOverflowOnly: !0,
@@ -2499,7 +2490,7 @@
 						text: () => n.fbt._("Give Award", null, {
 							hk: "1GmM1v"
 						})
-					}), me.push(r.a.createElement(ne.a, {
+					}), de.push(r.a.createElement(ne.a, {
 						dropdownId: `${e.id}-comment-share-menu`,
 						key: "share",
 						permalink: i,
@@ -2509,7 +2500,7 @@
 						onClick: () => this.sendCommentEventWithName("share")
 					}, n.fbt._("Share", null, {
 						hk: "3Ak3Tw"
-					})))), W || me.push({
+					})))), V || de.push({
 						breakpointGroup: O.LoggedInUser,
 						icon: r.a.createElement(he.a, null),
 						isIconOverflowOnly: !0,
@@ -2518,7 +2509,7 @@
 						text: () => n.fbt._("Report", null, {
 							hk: "4oVcnd"
 						})
-					}), me.push({
+					}), de.push({
 						breakpointGroup: O.LoggedInUser,
 						icon: r.a.createElement(le.a, {
 							name: e.isSaved ? "saved" : "save"
@@ -2531,7 +2522,7 @@
 						}) : () => n.fbt._("Save", null, {
 							hk: "4yMsMq"
 						})
-					}), W && me.push({
+					}), V && de.push({
 						breakpointGroup: O.LoggedInUser,
 						icon: r.a.createElement(le.a, {
 							name: "edit"
@@ -2542,7 +2533,7 @@
 						text: () => n.fbt._("Edit", null, {
 							hk: "1nftDt"
 						})
-					}), de && me.push({
+					}), re && de.push({
 						breakpointGroup: O.LoggedInUser,
 						icon: r.a.createElement(le.a, {
 							name: "notification",
@@ -2557,13 +2548,13 @@
 							hk: "1vo8lJ"
 						})
 					});
-					const pe = me.map(e => r.a.isValidElement(e) ? e : r.a.createElement(Ie, {
+					const me = de.map(e => r.a.isValidElement(e) ? e : r.a.createElement(Ie, {
 							className: q(e.breakpointGroup, _.HideIfVWSmaller),
 							disabled: b,
 							key: e.key,
 							onClick: e.onClick
 						}, !e.isIconOverflowOnly && e.icon, e.text())),
-						fe = me.map(e => r.a.isValidElement(e) ? null : r.a.createElement(ke, {
+						pe = de.map(e => r.a.isValidElement(e) ? null : r.a.createElement(ke, {
 							className: q(e.breakpointGroup, _.HideIfVWLarger),
 							displayText: e.text(),
 							key: e.key,
@@ -2574,17 +2565,17 @@
 						className: Object(c.a)(G({
 							depth: d,
 							isInOverlay: P,
-							isModModeEnabled: V && C || D,
-							isFollowCommentEnabled: de
+							isModModeEnabled: D && C || B,
+							isFollowCommentEnabled: re
 						}), t)
-					}, pe, r.a.createElement(je, {
-						className: W ? void 0 : q(O.LoggedInUser, _.HideIfVWLarger)
+					}, me, r.a.createElement(je, {
+						className: V ? void 0 : q(O.LoggedInUser, _.HideIfVWLarger)
 					}, r.a.createElement(ee.b, {
 						className: ve.a.overflowMenu,
 						disabled: b,
 						dropdownId: Le(e.id),
 						onClick: () => I(Object(ae.b)("comment_overflow_menu", e.id))
-					}, fe, W && r.a.createElement(r.a.Fragment, null, r.a.createElement(ke, {
+					}, pe, V && r.a.createElement(r.a.Fragment, null, r.a.createElement(ke, {
 						displayText: n.fbt._("Delete comment", null, {
 							hk: "4lMUDO"
 						}),
@@ -2618,10 +2609,10 @@
 						toggleModal: N,
 						trackClick: () => {},
 						withOverlay: !0
-					}), V && r.a.createElement(r.a.Fragment, null, C && r.a.createElement(we, {
+					}), D && r.a.createElement(r.a.Fragment, null, C && r.a.createElement(we, {
 						className: q(O.Moderator, _.HideIfVWSmaller),
 						comment: e,
-						isCommentAuthor: W
+						isCommentAuthor: V
 					}), r.a.createElement(Ee, {
 						className: C ? q(O.Moderator, _.HideIfVWLarger) : void 0,
 						dropdownId: `${e.id}-mod-actions-menu`,
@@ -2631,7 +2622,7 @@
 						comment: e,
 						tooltipId: `${e.id}-mod-actions-menu`
 					}))), Object($.c)(e) && !C && r.a.createElement(Q.a, {
-						text: `${X}`,
+						text: `${Y}`,
 						onClick: () => {
 							x(), this.sendCommentModEventWithName("comment_report_menu")
 						},
@@ -2643,7 +2634,7 @@
 							g(), this.sendCommentReportEvent(e.ignoreReports ? "restore_reports" : "ignore_reports")
 						},
 						tooltipId: Fe(e.id)
-					}), e.ignoreReports ? r.a.createElement(ye, null) : r.a.createElement(Oe, null)), oe && r.a.createElement(Q.a, {
+					}), e.ignoreReports ? r.a.createElement(ye, null) : r.a.createElement(Oe, null)), se && r.a.createElement(Q.a, {
 						onClick: this.handleDistinguishToggle,
 						selected: this.props.isDistinguishDropdownOpen
 					}, r.a.createElement(ue.a, null), r.a.createElement(Z.a, {
@@ -2652,8 +2643,8 @@
 						isModDistinguished: e.isMod,
 						isStickied: e.isStickied,
 						isTopLevelComment: !e.parentId,
-						isUserEmployee: U,
-						isUserMod: V,
+						isUserEmployee: W,
+						isUserMod: D,
 						onDistinguishComment: h,
 						sendEventWithName: this.sendCommentDistinguishEvent,
 						tooltipId: Te(e.id)
@@ -2813,7 +2804,7 @@
 					isAdmin: U.K,
 					isEditing: A.z,
 					isLoggedIn: U.Q,
-					isPendingDeletion: A.E,
+					isPendingDeletion: A.D,
 					isPresenceConsumptionExpEnabled: Ct.c,
 					moderatorPermissions: (e, t) => {
 						const s = Object(gt.b)(e, t);
@@ -2823,10 +2814,10 @@
 					},
 					prediction: Ot.f,
 					modModeEnabled: it.U,
-					errorMsgs: A.I,
-					replyFormOpen: A.L,
+					errorMsgs: A.H,
+					replyFormOpen: A.K,
 					subreddit: it.r,
-					subredditType: A.O,
+					subredditType: A.N,
 					showNftSpecialtyTreatment: xt.b,
 					hasSupporterRing: vt.a,
 					isOnlineConsumptionLoadTest: Ct.a,
@@ -3568,8 +3559,8 @@
 			const {
 				fbt: Z
 			} = s("./node_modules/fbt/lib/FbtPublic.js"), X = p.a.div("MoreCommentsItemWrapper", J.a), $ = p.a.p("MoreComments", J.a), ee = p.a.wrapped($, "MoreCommentsInteractive", J.a), te = Object(l.c)({
-				moreCommentsItem: I.F,
-				moreCommentsPending: I.G
+				moreCommentsItem: I.E,
+				moreCommentsPending: I.F
 			});
 			var se = Object(c.b)(te, (e, t) => ({
 					moreCommentsClicked: () => e(Object(g.n)(t.commentsPageKey, t.moreCommentsId))
@@ -9794,7 +9785,7 @@
 			} = s("./node_modules/fbt/lib/FbtPublic.js"), O = Object(i.c)({
 				isSubredditDiscoveryCrosspostEnabled: f.a,
 				headComment: x.x,
-				post: x.J
+				post: x.I
 			}), y = e => {
 				var t;
 				const s = Object(g.a)(),
@@ -11425,4 +11416,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage.1533b654a2524175e4c9.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage.a45710aef228ebc68693.js.map
