@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/MultiredditAddSubredditModal.473e82b39e94cf383b4f.js
-// Retrieved at 9/6/2022, 1:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/MultiredditAddSubredditModal.7b6a28df3ff2d9ccd99c.js
+// Retrieved at 9/8/2022, 11:00:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["MultiredditAddSubredditModal"], {
 		"./node_modules/lodash/without.js": function(e, t, r) {
@@ -406,7 +406,7 @@
 								method: a.mb.PUT
 							}))(c(), j, O);
 						if (y.ok) {
-							const d = Object(R.M)(l, {
+							const d = Object(R.N)(l, {
 									identifier: r
 								}) || t && t.id || "",
 								n = s.map(e => Object(E.h)(p, e));
@@ -571,7 +571,7 @@
 						if (!l || !l.subredditIds) return;
 						e(he());
 						const u = i && i.reduce((e, t) => {
-								const r = Object(R.G)(a, t) || Object(R.H)(a, t);
+								const r = Object(R.H)(a, t) || Object(R.I)(a, t);
 								return r ? [...e, r] : e
 							}, []),
 							m = await Object(_.a)(n(), {
@@ -1479,4 +1479,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/MultiredditAddSubredditModal.473e82b39e94cf383b4f.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/MultiredditAddSubredditModal.7b6a28df3ff2d9ccd99c.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CoinPurchaseModal.cf9d965b53f1cd591427.js
-// Retrieved at 9/6/2022, 1:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CoinPurchaseModal.1ec5211eb3ec32d4ca54.js
+// Retrieved at 9/8/2022, 11:00:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CoinPurchaseModal", "gildActions"], {
 		"./src/reddit/actions/economics/powerups/helpers.ts": function(e, t, a) {
@@ -120,13 +120,13 @@
 				}, {
 					query: a ? {} : Object(S.b)()
 				}),
-				D = (e, t, a) => Object(G.a)(e, {
+				F = (e, t, a) => Object(G.a)(e, {
 					...B,
 					variables: t
 				}, {
 					query: a ? {} : Object(S.b)()
 				});
-			var F = a("./src/reddit/helpers/awards/getAwardItemId.ts"),
+			var D = a("./src/reddit/helpers/awards/getAwardItemId.ts"),
 				K = a("./src/reddit/helpers/awards/message.ts"),
 				q = a("./src/reddit/helpers/correlationIdTracker.ts"),
 				Q = a("./src/reddit/helpers/isPost.ts"),
@@ -201,7 +201,7 @@
 										message: Object(K.d)(d.message, d.selectedAward, l),
 										nodeId: e
 									},
-									m = Object(Q.a)(e) ? L : D,
+									m = Object(Q.a)(e) ? L : F,
 									p = await m(c(), {
 										input: u
 									}, a);
@@ -269,7 +269,7 @@
 						commentId: a
 					}), s = Object(N.k)(e), n = e.gild, {
 						isAnonymous: c
-					} = n, o = !c && s && (s.username || s.displayText) ? s.username || s.displayText : void 0, d = r ? r.author : void 0, i = Object(M.L)(e, {
+					} = n, o = !c && s && (s.username || s.displayText) ? s.username || s.displayText : void 0, d = r ? r.author : void 0, i = Object(M.M)(e, {
 						thingId: a
 					});
 					return re({
@@ -302,10 +302,10 @@
 						})
 					}
 					if (g.awardType === b.f.Moderator && void 0 === e.subredditCoins) {
-						const t = Object(M.L)(s, {
+						const t = Object(M.M)(s, {
 								thingId: p
 							}),
-							a = t && Object(M.D)(s, {
+							a = t && Object(M.E)(s, {
 								subredditName: t.name
 							});
 						a && (e.subredditCoins = a - g.coinPrice)
@@ -357,7 +357,7 @@
 							awarderKarmaReceived: h
 						}) : T
 					})), setTimeout(() => {
-						const e = Object(F.a)(m, p),
+						const e = Object(D.a)(m, p),
 							t = document.getElementById(e);
 						t && t.dispatchEvent(new Event("awardAdded"))
 					}, 10);
@@ -381,7 +381,7 @@
 							})), n ? a : r)
 						}
 					}
-					const L = Object(M.L)(s, {
+					const L = Object(M.M)(s, {
 						thingId: p
 					});
 					if (L && Object(I.a)(s, {
@@ -1219,7 +1219,7 @@
 				R = a.n(B);
 			const {
 				fbt: L
-			} = a("./node_modules/fbt/lib/FbtPublic.js"), D = e => {
+			} = a("./node_modules/fbt/lib/FbtPublic.js"), F = e => {
 				let {
 					award: t,
 					coinBalance: a,
@@ -1293,7 +1293,7 @@
 					coinBalance: a
 				}), _ && c.a.createElement(O.a, M), A && c.a.createElement(m.a, M))
 			};
-			var F = a("./src/reddit/components/ModalStyledComponents/index.tsx"),
+			var D = a("./src/reddit/components/ModalStyledComponents/index.tsx"),
 				K = a("./src/reddit/hooks/useLocale.ts"),
 				q = a("./src/reddit/icons/fonts/Coin/index.tsx");
 			const {
@@ -1327,7 +1327,7 @@
 				}), c.a.createElement("button", {
 					className: R.a.closeButton,
 					onClick: e.onCloseClick
-				}, c.a.createElement(F.b, {
+				}, c.a.createElement(D.b, {
 					className: R.a.closeIcon,
 					"data-redditstyle": !0
 				})))
@@ -1376,7 +1376,7 @@
 					}), c.a.createElement("button", {
 						className: R.a.closeButton,
 						onClick: e.onCloseClick
-					}, c.a.createElement(F.b, {
+					}, c.a.createElement(D.b, {
 						className: Object(b.a)(R.a.closeIcon, R.a.awardPurchase),
 						"data-redditstyle": !0
 					})))
@@ -1459,7 +1459,7 @@
 						stripe: a,
 						elements: r
 					} = t;
-					return c.a.createElement(D, {
+					return c.a.createElement(F, {
 						award: e.selectedAward,
 						coinBalance: e.coinBalance,
 						gildThingId: e.gildThingId,
@@ -1581,7 +1581,7 @@
 					return e
 				}).apply(this, arguments)
 			}
-			const D = Object(c.c)({
+			const F = Object(c.c)({
 					activePage: x.q,
 					allowNavigationCallback: e => {
 						const t = Object(E.a)(e);
@@ -1610,7 +1610,7 @@
 						return `u/${Object(y.e)(t)}`
 					}
 				}),
-				F = Object(n.b)(D, (e, t) => ({
+				D = Object(n.b)(F, (e, t) => ({
 					closeModal: () => {
 						e(Object(l.a)()), e(Object(d.a)())
 					},
@@ -1732,7 +1732,7 @@
 				}
 			}
 			const q = Object(o.a)(K);
-			t.default = F(Object(g.c)(class extends s.a.PureComponent {
+			t.default = D(Object(g.c)(class extends s.a.PureComponent {
 				constructor() {
 					super(...arguments), this.onTryCloseModal = () => {
 						const {
@@ -1949,4 +1949,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CoinPurchaseModal.cf9d965b53f1cd591427.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CoinPurchaseModal.1ec5211eb3ec32d4ca54.js.map

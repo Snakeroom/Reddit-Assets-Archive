@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CountryPage~Multireddit~reddit-components-AdHocMultiredditSidebar.78c250b870699aec4b0d.js
-// Retrieved at 9/6/2022, 1:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CountryPage~Multireddit~reddit-components-AdHocMultiredditSidebar.8b7bb65a0026104aa6cd.js
+// Retrieved at 9/8/2022, 11:00:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CountryPage~Multireddit~reddit-components-AdHocMultiredditSidebar"], {
 		"./node_modules/lodash/take.js": function(e, t, i) {
@@ -434,7 +434,7 @@
 								method: o.mb.PUT
 							}))(c(), g, O);
 						if (S.ok) {
-							const n = Object(D.M)(l, {
+							const n = Object(D.N)(l, {
 									identifier: i
 								}) || t && t.id || "",
 								d = s.map(e => Object(I.h)(p, e));
@@ -599,7 +599,7 @@
 						if (!l || !l.subredditIds) return;
 						e(fe());
 						const u = r && r.reduce((e, t) => {
-								const i = Object(D.G)(o, t) || Object(D.H)(o, t);
+								const i = Object(D.H)(o, t) || Object(D.I)(o, t);
 								return i ? [...e, i] : e
 							}, []),
 							m = await Object(j.a)(d(), {
@@ -885,7 +885,7 @@
 			const h = p.a.wrapped(l.b, "SubredditIcon", b.a),
 				f = p.a.span("Label", b.a),
 				x = Object(c.c)({
-					subredditOrProfile: u.N
+					subredditOrProfile: u.O
 				});
 			var y = Object(a.b)(x)(e => {
 				let {
@@ -2078,7 +2078,7 @@
 					shouldPrettyPrint: f,
 					explanationText: x,
 					shouldShowSubredditOnlineUsers: y = !1
-				} = e, O = Object(d.e)(e => Object(l.x)(e, {
+				} = e, O = Object(d.e)(e => Object(l.y)(e, {
 					subredditName: s
 				})), g = Object(c.c)(s), S = void 0 !== m ? r.fbt._({
 					"*": "{number} members",
@@ -2572,4 +2572,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CountryPage~Multireddit~reddit-components-AdHocMultiredditSidebar.78c250b870699aec4b0d.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CountryPage~Multireddit~reddit-components-AdHocMultiredditSidebar.8b7bb65a0026104aa6cd.js.map

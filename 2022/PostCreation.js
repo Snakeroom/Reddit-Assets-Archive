@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostCreation.fb032556f5caccd19455.js
-// Retrieved at 9/7/2022, 4:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostCreation.9be8e19c7d9faef17fb0.js
+// Retrieved at 9/8/2022, 11:00:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostCreation", "ChatMessageInput~MembershipPaywallPage~RichTextEditor", "ContributorRequestButton"], {
 		"./node_modules/autosize/dist/autosize.js": function(e, t, n) {
@@ -4541,7 +4541,7 @@
 					});
 					if (m.ok) {
 						const n = t(),
-							o = m.body && m.body.length ? m.body.map(e => Object(l.G)(n, e)).filter(e => !!e).reduce((e, t) => (e[t] = !0, e), {}) : {};
+							o = m.body && m.body.length ? m.body.map(e => Object(l.H)(n, e)).filter(e => !!e).reduce((e, t) => (e[t] = !0, e), {}) : {};
 						e(p({
 							subredditIds: o
 						}))
@@ -4680,7 +4680,7 @@
 					let {
 						apiContext: p
 					} = m, h = e.map(e => e.type === u.a.SUBREDDIT ? {
-						id: Object(O.G)(l(), e.name),
+						id: Object(O.H)(l(), e.name),
 						name: e.name,
 						type: e.type
 					} : {
@@ -4764,7 +4764,7 @@
 						apiContext: s
 					} = o;
 					const r = n(),
-						i = Object(O.N)(r, {
+						i = Object(O.O)(r, {
 							identifier: e
 						});
 					if (!i) throw new Error(`actions.subscription -- No subreddit or profile found with id ${e.id}`);
@@ -4780,7 +4780,7 @@
 							type: e.type,
 							name: i.name
 						},
-						C = () => Object(O.hb)(n(), {
+						C = () => Object(O.ib)(n(), {
 							identifier: E
 						});
 					(C() || (await t(R([E], !0)), C())) && (t(M({
@@ -7167,7 +7167,7 @@
 
 			function l(e) {
 				const t = Object(r.d)(),
-					n = Object(r.e)(t => Object(c.V)(t, {
+					n = Object(r.e)(t => Object(c.W)(t, {
 						subredditId: e
 					})),
 					o = Object(r.e)(t => Object(a.i)(t, {
@@ -8038,7 +8038,7 @@
 						let {
 							post: n
 						} = t;
-						return Object(g.V)(e, {
+						return Object(g.W)(e, {
 							subredditId: n.belongsTo.id
 						}).name
 					}
@@ -9376,7 +9376,7 @@
 							subredditId: n
 						}
 					} = t;
-					return n ? Object(j.V)(e, {
+					return n ? Object(j.W)(e, {
 						subredditId: n
 					}) : void 0
 				},
@@ -11364,7 +11364,7 @@
 				},
 				k = Object(c.c)({
 					flairData: C.d,
-					subreddit: x.V
+					subreddit: x.W
 				});
 			class S extends i.a.Component {
 				constructor(e) {
@@ -12169,7 +12169,7 @@
 					const o = Object(f.r)(e, {
 						pageLayer: n
 					});
-					return o && Object(y.U)(e, {
+					return o && Object(y.V)(e, {
 						subredditId: o.id
 					})
 				}, e => (e || []).filter(e => R.has(e.kind))),
@@ -12342,7 +12342,7 @@
 				h = n.n(p);
 			const b = c.a.wrapped(l.a, "Banner", h.a),
 				f = Object(i.b)(() => Object(a.c)({
-					restrictions: m.p,
+					restrictions: m.q,
 					subreddit: u.e
 				}));
 			t.a = f(e => {
@@ -21060,7 +21060,7 @@
 				r = n("./src/reddit/actions/subscription/index.ts"),
 				i = n("./src/reddit/selectors/subreddit.ts");
 			t.a = Object(o.b)(() => Object(s.c)({
-				userIsSubscriber: i.hb
+				userIsSubscriber: i.ib
 			}), (e, t) => {
 				let {
 					identifier: n
@@ -22557,7 +22557,7 @@
 					shouldPrettyPrint: f,
 					explanationText: g,
 					shouldShowSubredditOnlineUsers: E = !1
-				} = e, C = Object(i.e)(e => Object(d.x)(e, {
+				} = e, C = Object(i.e)(e => Object(d.y)(e, {
 					subredditName: s
 				})), x = Object(l.c)(s), y = void 0 !== m ? o.fbt._({
 					"*": "{number} members",
@@ -29418,7 +29418,7 @@
 					{
 						subredditName: b
 					} = (null == h ? void 0 : h.urlParams) || {},
-					f = Object(r.e)(e => Object(Z.G)(e, b)),
+					f = Object(r.e)(e => Object(Z.H)(e, b)),
 					g = Object(r.e)(U.l);
 				return s.a.createElement(_e.a, {
 					withOverlay: !0,
@@ -29498,7 +29498,7 @@
 					y = Object(r.e)(e => Object(ht.p)(e, {
 						pageLayer: x
 					})),
-					v = Object(r.e)(e => Object(Z.V)(e, {
+					v = Object(r.e)(e => Object(Z.W)(e, {
 						subredditId: y
 					})),
 					_ = Object(r.e)(e => Object(Vn.b)(e, {
@@ -29675,7 +29675,7 @@
 					});
 					const {
 						isCrosspostableSubreddit: d
-					} = Object(Z.x)(e, {
+					} = Object(Z.y)(e, {
 						subredditName: a
 					});
 					if (!d) return l.fbt._("This community does not allow for crossposting of any posts", null, {
@@ -29792,7 +29792,7 @@
 					postSchedule: w.db,
 					postToTwitter: w.fb,
 					isEditingScheduledPost: e => !!Object(Se.r)(e),
-					showContributorRequestFlow: e => Object(Z.u)(e, E.e.Post),
+					showContributorRequestFlow: e => Object(Z.v)(e, E.e.Post),
 					showScheduledPosts: w.jb,
 					stickyPosition: w.lb,
 					submissionType: w.a,
@@ -30137,7 +30137,7 @@
 								subredditId: n
 							}
 						} = t;
-						return n ? Object(Z.V)(e, {
+						return n ? Object(Z.W)(e, {
 							subredditId: n
 						}) : void 0
 					},
@@ -31941,7 +31941,7 @@
 					{
 						subredditName: i
 					} = (null == o ? void 0 : o.urlParams) || {},
-					a = Object(r.e)(e => Object(Z.G)(e, i)),
+					a = Object(r.e)(e => Object(Z.H)(e, i)),
 					c = Object(r.e)(e => Object(Vn.b)(e, {
 						subredditId: a
 					})) || {
@@ -31978,7 +31978,7 @@
 						let {
 							subredditId: n
 						} = t;
-						return !!n && Object(Z.P)(e, {
+						return !!n && Object(Z.Q)(e, {
 							subredditId: n
 						})
 					},
@@ -34941,4 +34941,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.fb032556f5caccd19455.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.9be8e19c7d9faef17fb0.js.map

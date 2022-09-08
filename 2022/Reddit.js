@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Reddit.3b9d5298f475688af149.js
-// Retrieved at 9/8/2022, 9:20:10 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Reddit.b360822826e4784a7758.js
+// Retrieved at 9/8/2022, 11:00:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Reddit"], {
 		"./assets/fonts/BentonSans/font.less": function(e, t, n) {},
@@ -1680,7 +1680,7 @@
 						Object(c.Q)(d) || n.push(e(Object(a.t)()));
 						const u = Object(s.a)(l, null);
 						n.push(e(Object(r.subredditDataRequested)(u, l, {}))), await Promise.all(n);
-						const m = Object(i.G)(t(), l);
+						const m = Object(i.H)(t(), l);
 						await e(Object(o.a)({
 							subredditId: m,
 							skip: ["badges", "tips", "wallets"]
@@ -5037,7 +5037,7 @@
 						const o = s || Object(N.n)(e, {
 							page: n
 						});
-						return (null == o ? void 0 : o.belongsTo) ? Object(w.N)(e, {
+						return (null == o ? void 0 : o.belongsTo) ? Object(w.O)(e, {
 							identifier: o.belongsTo
 						}) : null
 					},
@@ -5111,7 +5111,7 @@
 							return {
 								source: "sticky_banner",
 								action: "click",
-								noun: (null == t ? void 0 : t.name) && Object(w.hb)(e, {
+								noun: (null == t ? void 0 : t.name) && Object(w.ib)(e, {
 									identifier: {
 										name: t.name,
 										type: "subreddit"
@@ -6301,7 +6301,7 @@
 				if (Object(p.i)(e) || Object(h.rb)(e)) return;
 				const n = v(e, t);
 				if (!n) return;
-				const s = Object(b.G)(e, n);
+				const s = Object(b.H)(e, n);
 				if (!s) return;
 				if (Object(h.qb)(e, {
 						subredditId: s
@@ -6311,7 +6311,7 @@
 			}), (e, t) => {
 				const n = v(e, t);
 				if (!n) return;
-				const s = Object(b.x)(e, {
+				const s = Object(b.y)(e, {
 					subredditName: n
 				});
 				return s ? s.emojisCustomSize : void 0
@@ -6323,7 +6323,7 @@
 				if (Object(h.Q)(e)) return !n.hideNSFW;
 				const s = v(e, t);
 				if (s) {
-					const t = Object(b.A)(e, {
+					const t = Object(b.B)(e, {
 						subredditName: s
 					});
 					return !(!t || !t.isNSFW)
@@ -10228,7 +10228,7 @@
 						const t = Object(An.o)(e, {
 								pageLayer: n
 							}) || go.e,
-							s = Object(vo.A)(e, {
+							s = Object(vo.B)(e, {
 								subredditName: t
 							});
 						if (s) return {
@@ -12898,7 +12898,7 @@
 						pageLayer: o
 					})),
 					G = Object(he.e)(Ga.j),
-					H = Object(he.e)(e => Object(vo.A)(e, {
+					H = Object(he.e)(e => Object(vo.B)(e, {
 						subredditName: j ? j.title.replace("r/", "") : ""
 					})),
 					q = Object(he.e)(e => Object(Ba.a)(e)),
@@ -17634,7 +17634,7 @@
 					if (n.type === ie.b) {
 						const s = e.getState(),
 							o = (s.platform.currentPage.urlParams.subredditName || "").toLowerCase(),
-							r = Object(vo.G)(s, o) || "",
+							r = Object(vo.H)(s, o) || "",
 							i = (s.subreddits.about[r] || {}).advertiserCategory;
 						a.trigger("pageview", {
 							...ha()(n.payload.location, "pathname", "search", "hash"),
@@ -18158,7 +18158,7 @@
 								queryParams: o
 							},
 							a = s.subredditName,
-							i = Object(vo.G)(n, a) || "";
+							i = Object(vo.H)(n, a) || "";
 						if (Gf(i, {
 								country: n.meta.country
 							}), i) {
@@ -18178,13 +18178,13 @@
 						}), t(y(n)), t(x(Array.from(s)))
 					})(b));
 					const h = (p.platform.currentPage.urlParams.subredditName || "").toLowerCase(),
-						g = Object(vo.G)(p, h) || "";
+						g = Object(vo.H)(p, h) || "";
 					if (h) {
 						l.dispatch(O(g, h));
 						const e = Object(En.e)(p);
 						e && l.dispatch(C(e))
 					}
-					const f = Object(vo.G)(p, h) || "",
+					const f = Object(vo.H)(p, h) || "",
 						E = (p.subreddits.about[f] || {}).advertiserCategory;
 					a.setup({
 						jailUrl: "https://www.redditmedia.com/gtm/jail",
@@ -18208,7 +18208,7 @@
 								currentPage: o
 							} = e.platform,
 							a = (o.urlParams.subredditName || "").toLowerCase(),
-							i = Object(vo.G)(e, a) || "";
+							i = Object(vo.H)(e, a) || "";
 						if (Object(L.a)(), Gf(i, {
 								country: e.meta.country
 							}), o && o.meta) {
@@ -21233,4 +21233,4 @@
 		["./src/reddit/index.tsx", "runtime~Reddit", "vendors~CommentsPage~ModerationPages~Reddit~reddit-components-ClassicPost~reddit-components-CompactP~d737df3e", "vendors~CommentsPage~Governance~ModListing~ModerationPages~Reddit~Subreddit", "vendors~Chat~Governance~Reddit", "vendors~Reddit", "CommentsPage~Governance~Reddit~ReportFlow~Subreddit~reddit-components-BlankPost~reddit-components-Cl~5351df81", "PostCreation~Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~r~4c415e24", "Governance~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compo~bd4baca2", "Governance~ModListing~Reddit~ReportFlow~Subreddit", "Governance~ModListing~Reddit~Subreddit", "Chat~Governance~Reddit", "Governance~Reddit~SubredditForkingCTA", "Governance~Reddit", "Reddit~StandalonePostPage"]
 	]
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit.3b9d5298f475688af149.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit.b360822826e4784a7758.js.map

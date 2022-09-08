@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostSetPage.5e77043e54969750233c.js
-// Retrieved at 9/7/2022, 1:10:12 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostSetPage.7f7a9f7fc898079b9ca0.js
+// Retrieved at 9/8/2022, 11:00:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostSetPage"], {
 		"./node_modules/intersection-observer/intersection-observer.js": function(e, t) {
@@ -2005,7 +2005,7 @@
 						} = t;
 						return Object(_.D)(e, n, s, r)
 					}),
-					subredditsById: v.cb,
+					subredditsById: v.db,
 					viewportDataLoaded: E.a,
 					pageReferrer: p.V,
 					postListPlaceholderComponent: () => f.a,
@@ -2503,7 +2503,7 @@
 			const c = (e, t) => {
 					const n = e.focusedVerticals.interactedSubredditIds && e.focusedVerticals.interactedSubredditIds[t];
 					if (n) {
-						const t = Object(o.V)(e, {
+						const t = Object(o.W)(e, {
 							subredditId: n
 						});
 						return t && t.displayText || ""
@@ -2516,14 +2516,14 @@
 				m = Object(s.a)((e, t) => {
 					const n = p(e, t);
 					if (!n) return u;
-					const s = Object(o.Z)(e, {
+					const s = Object(o.ab)(e, {
 						subredditName: n.name
 					});
 					return s && s.postIds && s.postIds.length ? s.postIds : u
 				}),
 				p = (e, t) => {
 					const n = e.focusedVerticals.recommendedSubredditIds && e.focusedVerticals.recommendedSubredditIds[t];
-					return n ? Object(o.V)(e, {
+					return n ? Object(o.W)(e, {
 						subredditId: n
 					}) : null
 				},
@@ -2594,4 +2594,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostSetPage.5e77043e54969750233c.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostSetPage.7f7a9f7fc898079b9ca0.js.map

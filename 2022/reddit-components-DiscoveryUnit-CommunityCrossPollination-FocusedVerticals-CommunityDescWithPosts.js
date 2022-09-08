@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-DiscoveryUnit-CommunityCrossPollination-FocusedVerticals-CommunityDescWithPosts.704a5a912bb5f0fc4e06.js
-// Retrieved at 9/6/2022, 12:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-DiscoveryUnit-CommunityCrossPollination-FocusedVerticals-CommunityDescWithPosts.a0242aa80a6821c81f39.js
+// Retrieved at 9/8/2022, 11:00:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-DiscoveryUnit-CommunityCrossPollination-FocusedVerticals-CommunityDescWithPosts"], {
 		"./src/higherOrderComponents/withClickTracking/index.tsx": function(e, t, s) {
@@ -234,8 +234,8 @@
 				}))(Object(l.c)(C)),
 				O = s("./src/reddit/actions/post.ts"),
 				g = s("./src/reddit/components/ClassicPost/Thumbnail.tsx"),
-				j = s("./src/reddit/components/Collection/PostAndPostEventMeta/index.tsx"),
-				y = s("./src/reddit/components/PostContainer/index.tsx"),
+				y = s("./src/reddit/components/Collection/PostAndPostEventMeta/index.tsx"),
+				j = s("./src/reddit/components/PostContainer/index.tsx"),
 				I = s("./src/reddit/components/SubredditNameLink/index.tsx"),
 				k = s("./src/reddit/components/SubscribeButton/Inline.tsx"),
 				f = s("./src/reddit/constants/posts.ts"),
@@ -297,7 +297,7 @@
 						shouldShowBiggerJoin: n,
 						subreddit: i
 					} = this.props;
-					return e ? r.a.createElement(y.a, {
+					return e ? r.a.createElement(j.a, {
 						className: Object(c.a)(D.a.postContainer, {
 							[D.a.hideBottomBorder]: t
 						}),
@@ -349,7 +349,7 @@
 						}
 					}, e.title)), r.a.createElement("div", {
 						className: D.a.bottomline
-					}, r.a.createElement(j.b, {
+					}, r.a.createElement(y.b, {
 						post: e
 					}))))) : null
 				}
@@ -365,10 +365,10 @@
 				}))(Object(l.c)(U)),
 				B = s("./src/reddit/components/DiscoveryUnit/CommunityCrossPollination/SubredditItem/index.tsx"),
 				w = s("./src/reddit/components/DiscoveryUnit/CommunityCrossPollination/FocusedVerticals/CommunityDescWithPosts/index.m.less"),
-				V = s.n(w);
+				F = s.n(w);
 			const {
-				fbt: F
-			} = s("./node_modules/fbt/lib/FbtPublic.js"), A = Object(o.c)({
+				fbt: V
+			} = s("./node_modules/fbt/lib/FbtPublic.js"), R = Object(o.c)({
 				isFeatureFlag: m.d,
 				isPending: m.e,
 				subredditData: (e, t) => {
@@ -383,7 +383,7 @@
 					} = t;
 					return Object(m.k)(e, s)
 				}
-			}), R = Object(i.b)(A);
+			}), A = Object(i.b)(R);
 			class H extends r.a.PureComponent {
 				render() {
 					const {
@@ -417,8 +417,8 @@
 						position: i,
 						pubsub: c
 					}), r.a.createElement("div", {
-						className: V.a.topPostsTitle
-					}, F._("Top post", null, {
+						className: F.a.topPostsTitle
+					}, V._("Top post", null, {
 						hk: "3BdOuj"
 					})), a.slice(0, 1).map(e => r.a.createElement(L, {
 						key: e,
@@ -431,7 +431,7 @@
 					})))
 				}
 			}
-			t.default = R(H)
+			t.default = A(H)
 		},
 		"./src/reddit/components/DiscoveryUnit/CommunityCrossPollination/FocusedVerticals/Wrapper/index.m.less": function(e, t, s) {
 			e.exports = {
@@ -504,10 +504,10 @@
 				O = s.n(_);
 			const {
 				fbt: g
-			} = s("./node_modules/fbt/lib/FbtPublic.js"), j = Object(c.c)({
-				subreddit: C.V,
-				subredditAboutInfo: C.x
-			}), y = Object(i.b)(j);
+			} = s("./node_modules/fbt/lib/FbtPublic.js"), y = Object(c.c)({
+				subreddit: C.W,
+				subredditAboutInfo: C.y
+			}), j = Object(i.b)(y);
 			class I extends r.a.Component {
 				constructor() {
 					super(...arguments), this.hasFiredViewEvent = !1, this.trackViewEvent = () => {
@@ -614,7 +614,7 @@
 					}, c))))
 				}
 			}
-			t.a = y(Object(m.c)(I))
+			t.a = j(Object(m.c)(I))
 		},
 		"./src/reddit/components/EventPost/PostEventMeta/index.m.less": function(e, t, s) {
 			e.exports = {
@@ -658,8 +658,8 @@
 				_ = E.a.span("Container", h.a),
 				O = E.a.wrapped(c.a, "CalendarIcon", h.a),
 				g = E.a.wrapped(b, "LiveIcon", h.a),
-				j = E.a.div("LoadingState", h.a);
-			class y extends n.Component {
+				y = E.a.div("LoadingState", h.a);
+			class j extends n.Component {
 				constructor(e) {
 					super(e), this.state = {
 						mounted: !1
@@ -693,7 +693,7 @@
 						const e = Object(o.a)({
 							isLoading: !0
 						});
-						l = r.a.createElement(j, {
+						l = r.a.createElement(y, {
 							className: e
 						})
 					}
@@ -708,7 +708,7 @@
 					}, u)
 				}
 			}
-			t.a = y
+			t.a = j
 		},
 		"./src/reddit/components/PostContainer/index.m.less": function(e, t, s) {
 			e.exports = {
@@ -757,8 +757,8 @@
 				_ = s("./src/higherOrderComponents/withAdClickLocation/index.tsx"),
 				O = s("./src/higherOrderComponents/withAdClickLocation/Locations.ts"),
 				g = s("./src/reddit/components/PostContainer/index.m.less"),
-				j = s.n(g);
-			const y = Object(p.a)(() => Object(i.c)({
+				y = s.n(g);
+			const j = Object(p.a)(() => Object(i.c)({
 					basePixelMetadata: Object(x.a)((e, t) => {
 						let {
 							post: s
@@ -818,7 +818,7 @@
 								e && e.outboundUrl && h(Object(d.c)(l.id, e.outboundUrl))
 							}
 						},
-						className: Object(v.a)(j.a.WrappedPost, n, `Post ${l.id}`, {
+						className: Object(v.a)(y.a.WrappedPost, n, `Post ${l.id}`, {
 							promotedlink: l.isSponsored
 						}),
 						"data-testid": I,
@@ -834,7 +834,7 @@
 					}, e) : e)(_))
 				}
 			}
-			t.a = y(Object(_.a)(Object(C.a)(Object(b.c)(k))))
+			t.a = j(Object(_.a)(Object(C.a)(Object(b.c)(k))))
 		},
 		"./src/reddit/controls/MetaData/index.m.less": function(e, t, s) {
 			e.exports = {
@@ -1022,7 +1022,7 @@
 							subredditName: n,
 							[r]: s.id
 						},
-						a = Object(l.A)(e, {
+						a = Object(l.B)(e, {
 							subredditName: n
 						});
 					return a ? {
@@ -1116,4 +1116,4 @@
 		"./src/reddit/icons/fonts/commonStyles.m.less": function(e, t, s) {}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-DiscoveryUnit-CommunityCrossPollination-FocusedVerticals-CommunityDescWithPosts.704a5a912bb5f0fc4e06.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-DiscoveryUnit-CommunityCrossPollination-FocusedVerticals-CommunityDescWithPosts.a0242aa80a6821c81f39.js.map

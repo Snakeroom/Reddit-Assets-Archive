@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~SearchResults.171ddd7d242b2ca5783f.js
-// Retrieved at 9/7/2022, 1:10:12 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~SearchResults.f5334eeb1b0810354a3c.js
+// Retrieved at 9/8/2022, 11:00:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~SearchResults"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -1640,12 +1640,12 @@
 						commentListNodeId: t
 					})), 5e3)
 				};
-			var K = n("./src/reddit/components/Comments/Comment/TopMeta/crowdControl.m.less"),
-				Q = n.n(K);
+			var Q = n("./src/reddit/components/Comments/Comment/TopMeta/crowdControl.m.less"),
+				K = n.n(Q);
 			const {
 				fbt: Y
 			} = n("./node_modules/fbt/lib/FbtPublic.js"), Z = () => r.a.createElement(k.a, {
-				className: Q.a.crowdControlText
+				className: K.a.crowdControlText
 			}, Y._("Crowd Control", null, {
 				hk: "4WgEW"
 			}));
@@ -2029,7 +2029,7 @@
 						return !!Object(Ne.q)(e, n.subredditId, n.authorId).length
 					},
 					subredditDisplayText: (e, t) => {
-						const n = Object(Le.K)(e, {
+						const n = Object(Le.L)(e, {
 							commentId: t.comment.id
 						});
 						return n ? n.displayText : ""
@@ -3866,4 +3866,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~SearchResults.171ddd7d242b2ca5783f.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~SearchResults.f5334eeb1b0810354a3c.js.map

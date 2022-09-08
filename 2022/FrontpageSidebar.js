@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/FrontpageSidebar.84af9ab4e85430521e6a.js
-// Retrieved at 9/7/2022, 1:10:12 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/FrontpageSidebar.6aeb2afa67f8e1165c21.js
+// Retrieved at 9/8/2022, 11:00:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["FrontpageSidebar"], {
 		"./node_modules/lodash/_arrayShuffle.js": function(e, t, n) {
@@ -713,10 +713,10 @@
 					},
 					bffsLeaderboardVariant: Me,
 					inRpanTopVideoEntrypointExperiment: He.e,
-					rankings: e => Object(ze.Q)(e, $e),
+					rankings: e => Object(ze.R)(e, $e),
 					shouldShowTopicsWidget: e => {
 						const t = Object(He.e)(e),
-							n = !!Object(ze.Q)(e, $e);
+							n = !!Object(ze.R)(e, $e);
 						return (!t || !n) && function(e) {
 							return Object(Ge.c)(e, {
 								experimentEligibilitySelector: Ze.Q,
@@ -873,7 +873,7 @@
 					return {
 						crosspost: n,
 						post: t,
-						subredditOrProfile: Object(g.N)(e, {
+						subredditOrProfile: Object(g.O)(e, {
 							identifier: t.belongsTo
 						})
 					}
@@ -2227,4 +2227,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/FrontpageSidebar.84af9ab4e85430521e6a.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/FrontpageSidebar.6aeb2afa67f8e1165c21.js.map

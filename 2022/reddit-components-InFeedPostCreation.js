@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-InFeedPostCreation.87d26b365c6aafbe09f3.js
-// Retrieved at 9/7/2022, 1:10:12 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-InFeedPostCreation.61394e08e87b40fd3a21.js
+// Retrieved at 9/8/2022, 11:00:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-InFeedPostCreation"], {
 		"./src/reddit/components/InFeedPostCreation/index.m.less": function(e, t, n) {
@@ -70,8 +70,8 @@
 					currentUser: U.k,
 					isPresenceConsumptionExpEnabled: E.c,
 					isPresenceTogglePref: U.V,
-					subreddit: O.A,
-					subredditAboutInfo: O.x
+					subreddit: O.B,
+					subredditAboutInfo: O.y
 				}),
 				L = Object(c.b)(M, e => ({
 					navigateTo: t => e(Object(i.b)(t)),
@@ -281,4 +281,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-InFeedPostCreation.87d26b365c6aafbe09f3.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-InFeedPostCreation.61394e08e87b40fd3a21.js.map

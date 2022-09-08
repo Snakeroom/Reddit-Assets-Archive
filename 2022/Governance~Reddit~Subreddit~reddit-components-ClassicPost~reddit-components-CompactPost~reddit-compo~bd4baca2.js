@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compo~bd4baca2.c52a42714200558a55a1.js
-// Retrieved at 9/7/2022, 4:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compo~bd4baca2.aebf1595ebecaed110c8.js
+// Retrieved at 9/8/2022, 11:00:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compo~bd4baca2"], {
 		"./src/higherOrderComponents/withAdClickLocation/Locations.ts": function(e, t, s) {
@@ -321,8 +321,8 @@
 				V = s("./node_modules/@sentry/minimal/esm/index.js"),
 				G = s("./node_modules/deep-diff/index.js"),
 				q = s("./src/lib/env/index.ts");
-			const B = new Set(["authorFlair.cssClass", "posts.adSupplementaryText", "posts.allAwardings", "posts.approvedAtUTC", "posts.approvedBy", "posts.attributionInfo", "posts.audioRoom", "posts.bannedAtUTC", "posts.bannedBy", "posts.collapsedBecauseCrowdControl", "posts.ignoreReports", "posts.isApproved", "posts.isAuthorPremium", "posts.isEligibleForLinkedPosts", "posts.isEligibleForQASchema", "posts.isFollowed", "posts.isPinned", "posts.isReactAllowed", "posts.isRemoved", "posts.isSpam", "posts.lastAuthorModNote", "posts.modQueueTriggers", "posts.modReportsDismissed", "posts.pollData", "posts.predictionTournament", "posts.previewComments", "posts.modReports", "posts.numReports", "posts.reactedFrom", "posts.removedBy", "posts.removedByCategory", "posts.topAwardedType", "posts.userReports", "posts.userReportsDismissed", "posts.modReasonBy", "subreddits.answerableQuestions", "subreddits.freeFormReports", "subreddits.isSubscribed", "authorFlair.richtext", "authorFlair.text", "posts.collectionIds", "posts.liveCommentsWebsocket", "posts.thumbnail.url", "posts.discussionType", "posts.eventsOnRender", "posts.flair", "posts.gildings", "posts.media", "posts.goldCount", "posts.sendReplies", "posts.score", "posts.sendReplies", "posts.source.url", "posts.source.outboundUrl", "posts.source.outboundUrlCreated", "posts.source.outboundUrlExpiration", "profiles.acceptFollowers", "profiles.communityIcon", "profiles.icon.url", "posts.upvoteRatio", "subreddits.acceptFollowers", "subreddits.allowChatPostCreation", "subreddits.communityIcon", "subreddits.icon.url", "subreddits.isChatPostFeatureEnabled", "subreddits.primaryColor", "subreddits.subscribers"]),
-				W = (e, t) => {
+			const W = new Set(["authorFlair.cssClass", "posts.adSupplementaryText", "posts.allAwardings", "posts.approvedAtUTC", "posts.approvedBy", "posts.attributionInfo", "posts.audioRoom", "posts.bannedAtUTC", "posts.bannedBy", "posts.collapsedBecauseCrowdControl", "posts.ignoreReports", "posts.isApproved", "posts.isAuthorPremium", "posts.isEligibleForLinkedPosts", "posts.isEligibleForQASchema", "posts.isFollowed", "posts.isPinned", "posts.isReactAllowed", "posts.isRemoved", "posts.isSpam", "posts.lastAuthorModNote", "posts.modQueueTriggers", "posts.modReportsDismissed", "posts.pollData", "posts.predictionTournament", "posts.previewComments", "posts.modReports", "posts.numReports", "posts.reactedFrom", "posts.removedBy", "posts.removedByCategory", "posts.topAwardedType", "posts.userReports", "posts.userReportsDismissed", "posts.modReasonBy", "subreddits.answerableQuestions", "subreddits.freeFormReports", "subreddits.isSubscribed", "authorFlair.richtext", "authorFlair.text", "posts.collectionIds", "posts.liveCommentsWebsocket", "posts.thumbnail.url", "posts.discussionType", "posts.eventsOnRender", "posts.flair", "posts.gildings", "posts.media", "posts.goldCount", "posts.sendReplies", "posts.score", "posts.sendReplies", "posts.source.url", "posts.source.outboundUrl", "posts.source.outboundUrlCreated", "posts.source.outboundUrlExpiration", "profiles.acceptFollowers", "profiles.communityIcon", "profiles.icon.url", "posts.upvoteRatio", "subreddits.acceptFollowers", "subreddits.allowChatPostCreation", "subreddits.communityIcon", "subreddits.icon.url", "subreddits.isChatPostFeatureEnabled", "subreddits.primaryColor", "subreddits.subscribers"]),
+				B = (e, t) => {
 					const s = {},
 						r = {};
 					Object.keys(e).forEach(i => {
@@ -332,7 +332,7 @@
 							const t = o[e],
 								a = n[e],
 								d = Object(G.diff)(t, a, {
-									prefilter: (e, t) => B.has(`${i}.${e.length?`${e.join(".")}.`:""}${t}`) || B.has(`${i}.${t}`),
+									prefilter: (e, t) => W.has(`${i}.${e.length?`${e.join(".")}.`:""}${t}`) || W.has(`${i}.${t}`),
 									normalize: (e, t, s, r) => s || r ? [s, r] : [s, s]
 								});
 							r[i] = d ? r[i] + d.length : (null == r ? void 0 : r[i]) || 0, d && (s[i][e] = {
@@ -362,7 +362,7 @@
 						allDiffs: e,
 						issueCounts: i,
 						totalIssues: o
-					} = W(t, s);
+					} = B(t, s);
 					console.groupCollapsed(`diff: ${o} issues`), console.log("lhs = gateway\nrhs = gql");
 					for (const t in e) {
 						if (console.groupCollapsed(`${t}: ${i[t]} issues`), i[t] > 0)
@@ -382,7 +382,7 @@
 						allDiffs: e,
 						issueCounts: r,
 						totalIssues: i
-					} = W(t, s);
+					} = B(t, s);
 					if (i <= 0) return;
 					V.l(t => {
 						t.setExtra("info", {
@@ -810,7 +810,7 @@
 						subredditName: p
 					};
 					if (await s(Object(c.postCreationPageDataRequested)(E)), b || !Object(f.C)(a)) return s(S(e, T));
-					const C = e.allowedPostTypes || Object(O.z)(r(), {
+					const C = e.allowedPostTypes || Object(O.A)(r(), {
 						subredditName: p
 					});
 					if (!C) return void s(S(e, T));
@@ -885,7 +885,7 @@
 			})), s.d(t, "h", (function() {
 				return q
 			})), s.d(t, "n", (function() {
-				return B
+				return W
 			})), s.d(t, "s", (function() {
 				return J
 			})), s.d(t, "r", (function() {
@@ -995,7 +995,7 @@
 						method: r.mb.GET
 					}))(i());
 					n.ok ? e(A(_(n.body))) : e(L(n.error))
-				}, R = "POST_DRAFT__SAVE_DRAFT_PENDING", M = "POST_DRAFT__SAVE_DRAFT_SUCCEEDED", U = "POST_DRAFT__SAVE_DRAFT_FAILED", V = "POST_DRAFT__SAVE_DRAFT_VALIDATION_FAILED", G = "POST_DRAFT__SAVE_DRAFT_SUBMIT_VALIDATION_FAILED", q = "POST_DRAFT__SAVE_DRAFT_CAPTCHA_REQUIRED", B = "POST_CREATION__TOGGLE_DRAFT_IS_PUBLIC", W = Object(o.a)(R), $ = Object(o.a)(M), H = Object(o.a)(U), z = Object(o.a)(V), Q = Object(o.a)(G), Y = Object(o.a)(q), J = Object(o.a)(B), K = e => async (t, s, o) => {
+				}, R = "POST_DRAFT__SAVE_DRAFT_PENDING", M = "POST_DRAFT__SAVE_DRAFT_SUCCEEDED", U = "POST_DRAFT__SAVE_DRAFT_FAILED", V = "POST_DRAFT__SAVE_DRAFT_VALIDATION_FAILED", G = "POST_DRAFT__SAVE_DRAFT_SUBMIT_VALIDATION_FAILED", q = "POST_DRAFT__SAVE_DRAFT_CAPTCHA_REQUIRED", W = "POST_CREATION__TOGGLE_DRAFT_IS_PUBLIC", B = Object(o.a)(R), $ = Object(o.a)(M), H = Object(o.a)(U), z = Object(o.a)(V), Q = Object(o.a)(G), Y = Object(o.a)(q), J = Object(o.a)(W), K = e => async (t, s, o) => {
 					let {
 						apiContext: n
 					} = o;
@@ -1005,7 +1005,7 @@
 					if (m || b) return;
 					const f = Object(x.h)(c, e);
 					if (!f) return;
-					t(W(f)), T.g(c, f);
+					t(B(f)), T.g(c, f);
 					const h = await ((e, t, s) => Object(l.a)(Object(u.a)(e, [p.a]), {
 						endpoint: `${e.apiUrl}/api/v1/draft`,
 						method: s ? r.mb.PUT : r.mb.POST,
@@ -1046,7 +1046,7 @@
 					let o = j.f;
 					const n = s();
 					if (e.subredditId) {
-						const t = Object(v.V)(n, {
+						const t = Object(v.W)(n, {
 								subredditId: e.subredditId
 							}),
 							s = Object(P.q)(n, {
@@ -1167,7 +1167,7 @@
 						apiContext: o
 					} = i;
 					const n = r(),
-						a = Object(p.V)(n, {
+						a = Object(p.W)(n, {
 							subredditId: e
 						}).name;
 					s(f());
@@ -1184,7 +1184,7 @@
 						apiContext: o
 					} = i;
 					const n = r(),
-						a = Object(p.V)(n, {
+						a = Object(p.W)(n, {
 							subredditId: e
 						}).name;
 					s(_());
@@ -1201,7 +1201,7 @@
 						apiContext: c
 					} = o;
 					const m = i(),
-						b = Object(p.V)(m, {
+						b = Object(p.W)(m, {
 							subredditId: t
 						}).name;
 					s(E());
@@ -1238,7 +1238,7 @@
 						apiContext: n
 					} = o;
 					const c = i(),
-						l = Object(p.V)(c, {
+						l = Object(p.W)(c, {
 							subredditId: t
 						}).name;
 					if (s(P()), (await Object(d.b)(n(), e, l)).ok) {
@@ -1267,7 +1267,7 @@
 						b = Object(m.d)(c, {
 							subredditId: t
 						}).templateIds,
-						f = Object(p.V)(c, {
+						f = Object(p.W)(c, {
 							subredditId: t
 						}).name;
 					if (s(F({
@@ -1351,7 +1351,7 @@
 					} = e;
 					return async (e, o, n) => {
 						const a = o(),
-							d = Object(g.V)(a, {
+							d = Object(g.W)(a, {
 								subredditId: t
 							});
 						if (!d) return !1;
@@ -1388,7 +1388,7 @@
 						...E
 					} = s;
 					let S = E;
-					const C = Object(g.V)(u, {
+					const C = Object(g.W)(u, {
 						subredditId: e
 					});
 					if (!C) return !1;
@@ -1462,7 +1462,7 @@
 						apiContext: o
 					} = i;
 					const n = r(),
-						a = Object(g.V)(n, {
+						a = Object(g.W)(n, {
 							subredditId: e
 						});
 					if (!a) return !1;
@@ -1644,7 +1644,7 @@
 					let {
 						apiContext: p
 					} = m, b = e.map(e => e.type === u.a.SUBREDDIT ? {
-						id: Object(E.G)(c(), e.name),
+						id: Object(E.H)(c(), e.name),
 						name: e.name,
 						type: e.type
 					} : {
@@ -1728,7 +1728,7 @@
 						apiContext: i
 					} = r;
 					const o = s(),
-						n = Object(E.N)(o, {
+						n = Object(E.O)(o, {
 							identifier: e
 						});
 					if (!n) throw new Error(`actions.subscription -- No subreddit or profile found with id ${e.id}`);
@@ -1744,7 +1744,7 @@
 							type: e.type,
 							name: n.name
 						},
-						_ = () => Object(E.hb)(s(), {
+						_ = () => Object(E.ib)(s(), {
 							identifier: g
 						});
 					(_() || (await t(D([g], !0)), _())) && (t(A({
@@ -2355,7 +2355,7 @@
 				V = e => !e.textColor || e.textColor && !e.backgroundColor ? Object(x.a)(e).postFlairText : "transparent" === e.backgroundColor ? Object(E.a)(Object(x.a)(e).post, y.a.black, y.a.white) : e.textColor === C.e.Dark ? y.a.black : y.a.white,
 				G = p.a.wrapped(M, "TextFlair", v.a),
 				q = p.a.wrapped(U, "RichTextFlair", v.a),
-				B = e => {
+				W = e => {
 					switch (e.type) {
 						case "spoiler":
 							return "#A4A7A8";
@@ -2365,8 +2365,8 @@
 							return Object(n.i)(.1, Object(x.a)(o()(e, "theme", "redditStyle", "data-redditstyle")).button)
 					}
 				},
-				W = p.a.wrapped(e => {
-					const t = B(e),
+				B = p.a.wrapped(e => {
+					const t = W(e),
 						s = d.a.createElement("span", {
 							className: e.className,
 							style: {
@@ -2444,7 +2444,7 @@
 						});
 					case C.f.Nsfw:
 					case C.f.Spoiler:
-						return d.a.createElement(W, {
+						return d.a.createElement(B, {
 							className: t,
 							text: i.text,
 							type: i.type
@@ -2588,7 +2588,7 @@
 						let {
 							post: s
 						} = t;
-						return Object(O.V)(e, {
+						return Object(O.W)(e, {
 							subredditId: s.belongsTo.id
 						}).name
 					}
@@ -3254,7 +3254,7 @@
 					{
 						currentUser: s
 					} = Object(d.a)(),
-					r = Object(o.e)(e => t ? Object(u.N)(e, {
+					r = Object(o.e)(e => t ? Object(u.O)(e, {
 						identifier: t.belongsTo
 					}) : null),
 					i = (null == t ? void 0 : t.belongsTo.type) === n.a.SUBREDDIT ? r : null,
@@ -3784,14 +3784,14 @@
 					gatedSubredditOptIn: !1,
 					quarantineOptIn: !1
 				},
-				B = {
+				W = {
 					rpanDuDismissalTime: void 0,
 					isContributorRequestTimestamp: 0,
 					stylesEnabled: !0,
 					layout: void 0,
 					sort: void 0
 				},
-				W = (e, t) => {
+				B = (e, t) => {
 					if (!t) return e;
 					const s = c()({
 							...t.account,
@@ -3803,7 +3803,7 @@
 						};
 					Object.keys(r || {}).forEach(e => {
 						i[e] = {
-							...B,
+							...W,
 							...r && r[e]
 						}
 					});
@@ -3818,10 +3818,10 @@
 					}
 					return o()(n, e) ? e : n
 				},
-				$ = (e, t, s) => W(e, {
+				$ = (e, t, s) => B(e, {
 					subreddit: {
 						[t]: {
-							...B,
+							...W,
 							...e.subreddit[t],
 							...s
 						}
@@ -3995,7 +3995,7 @@
 					case I.a:
 					case A.c:
 					case x.TOPIC_DATA_LOADED:
-						return t.payload && t.payload.preferences ? W(e, t.payload.preferences) : e;
+						return t.payload && t.payload.preferences ? B(e, t.payload.preferences) : e;
 					case I.q: {
 						const {
 							subredditId: s,
@@ -4034,7 +4034,7 @@
 					case f.q:
 					case f.w:
 					case f.v:
-						return t.payload && t.payload.response && t.payload.response.preferences ? W(e, t.payload.preferences) : e;
+						return t.payload && t.payload.response && t.payload.response.preferences ? B(e, t.payload.preferences) : e;
 					case I.n: {
 						const s = t.payload,
 							{
@@ -4113,4 +4113,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compo~bd4baca2.c52a42714200558a55a1.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compo~bd4baca2.aebf1595ebecaed110c8.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModQueuePages.7ee1b2a9d23b90355287.js
-// Retrieved at 9/7/2022, 1:10:12 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModQueuePages.9c52b7950863f20e577c.js
+// Retrieved at 9/8/2022, 11:00:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModQueuePages"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -1389,7 +1389,7 @@
 						if (e !== T.a.Approve && e !== T.a.Flair) {
 							let t, r;
 							const l = b.platform.currentPage && b.platform.currentPage.queryParams && b.platform.currentPage.queryParams.subreddit,
-								m = l && Object(M.G)(b, l);
+								m = l && Object(M.H)(b, l);
 							e === T.a.Remove && m && f.length > 1 && (t = s.fbt._("Add a removal reason", null, {
 								hk: "3gGDCl"
 							}), r = Object(i.fetchReasonsAndOpenModal)(m, f));
@@ -2877,7 +2877,7 @@
 						return !!Object(we.q)(e, n.subredditId, n.authorId).length
 					},
 					subredditDisplayText: (e, t) => {
-						const n = Object(Le.K)(e, {
+						const n = Object(Le.L)(e, {
 							commentId: t.comment.id
 						});
 						return n ? n.displayText : ""
@@ -3252,7 +3252,7 @@
 					comment: (e, t) => Object(k.b)(e, t),
 					commentPermalink: E.m,
 					flair: E.e,
-					subreddit: C.K
+					subreddit: C.L
 				}),
 				L = Object(r.b)(P, (e, t) => {
 					let {
@@ -4680,7 +4680,7 @@
 						let {
 							subredditName: n
 						} = t;
-						return n ? Object(v.A)(e, {
+						return n ? Object(v.B)(e, {
 							subredditName: n
 						}) : null
 					}
@@ -5439,7 +5439,7 @@
 					modQueueListingItems: _e.d,
 					origin: Oe.k,
 					selectedItems: _e.g,
-					subredditId: (e, t) => t.subredditName ? Object(Ee.G)(e, t.subredditName) : null
+					subredditId: (e, t) => t.subredditName ? Object(Ee.H)(e, t.subredditName) : null
 				}),
 				Nt = Object(c.b)(wt, e => ({
 					addSelectedItems: t => e(Object(p.a)({
@@ -5652,7 +5652,7 @@
 				},
 				j = Object(d.c)({
 					flairData: v.d,
-					subreddit: O.V
+					subreddit: O.W
 				});
 			class y extends a.a.Component {
 				constructor(e) {
@@ -7585,7 +7585,7 @@
 							subredditName: s,
 							[o]: n.id
 						},
-						c = Object(l.A)(e, {
+						c = Object(l.B)(e, {
 							subredditName: s
 						});
 					return c ? {
@@ -8283,7 +8283,7 @@
 					let {
 						subredditName: n
 					} = t;
-					const s = Object(a.Z)(e, {
+					const s = Object(a.ab)(e, {
 						subredditName: n
 					});
 					return (s && s.postIds || []).slice(0, 2)
@@ -8291,4 +8291,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModQueuePages.7ee1b2a9d23b90355287.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModQueuePages.9c52b7950863f20e577c.js.map

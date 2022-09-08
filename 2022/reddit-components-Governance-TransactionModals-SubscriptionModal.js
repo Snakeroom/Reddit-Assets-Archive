@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-SubscriptionModal.26a3b563c55e5906ad63.js
-// Retrieved at 9/7/2022, 1:10:12 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-SubscriptionModal.35684fc674c63c3c08b3.js
+// Retrieved at 9/8/2022, 11:00:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Governance-TransactionModals-SubscriptionModal"], {
 		"./node_modules/dijkstrajs/dijkstra.js": function(e, t, r) {
@@ -1306,7 +1306,7 @@
 				C = r.n(P);
 
 			function I(e) {
-				const t = Object(s.e)(t => Object(T.V)(t, e)),
+				const t = Object(s.e)(t => Object(T.W)(t, e)),
 					r = Object(s.e)(t => Object(j.r)(t, e.subredditId)),
 					o = r.membershipAlt,
 					a = r.prices.points,
@@ -1534,4 +1534,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-SubscriptionModal.26a3b563c55e5906ad63.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-SubscriptionModal.35684fc674c63c3c08b3.js.map
