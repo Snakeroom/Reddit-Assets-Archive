@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Reddit.9363e1160818e357fd36.js
-// Retrieved at 9/8/2022, 1:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Reddit.5d1613c16d50b2e4de2e.js
+// Retrieved at 9/8/2022, 2:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Reddit"], {
 		"./assets/fonts/BentonSans/font.less": function(e, t, n) {},
@@ -9070,7 +9070,7 @@
 				})), m.a.createElement(ut, {
 					href: "https://www.reddit.com/help/healthycommunities/"
 				}, s.fbt._("Mod policy", null, {
-					hk: "18VnG9"
+					hk: "1Hw2HM"
 				})), m.a.createElement(dt, null, s.fbt._("© 2019 Reddit, Inc. All rights reserved", null, {
 					hk: "1AMxtg"
 				}))),
@@ -14327,8 +14327,8 @@
 						className: r ? zl.a.basicLink : "",
 						href: "https://www.redditinc.com/policies/moderator-guidelines",
 						onClick: () => o(Object(Br.c)("mod_policy")),
-						title: s.fbt._("Moderator Guidelines", null, {
-							hk: "2AfPVY"
+						title: s.fbt._("Moderator Code of Conduct", null, {
+							hk: "vJzm8"
 						})
 					}))
 				};
@@ -21233,4 +21233,4 @@
 		["./src/reddit/index.tsx", "runtime~Reddit", "vendors~CommentsPage~ModerationPages~Reddit~reddit-components-ClassicPost~reddit-components-CompactP~d737df3e", "vendors~CommentsPage~Governance~ModListing~ModerationPages~Reddit~Subreddit", "vendors~Chat~Governance~Reddit", "vendors~Reddit", "CommentsPage~Governance~Reddit~ReportFlow~Subreddit~reddit-components-BlankPost~reddit-components-Cl~5351df81", "PostCreation~Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~r~4c415e24", "Governance~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compo~bd4baca2", "Governance~ModListing~Reddit~ReportFlow~Subreddit", "Governance~ModListing~Reddit~Subreddit", "Chat~Governance~Reddit", "Governance~Reddit~SubredditForkingCTA", "Governance~Reddit", "Reddit~StandalonePostPage"]
 	]
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit.9363e1160818e357fd36.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit.5d1613c16d50b2e4de2e.js.map

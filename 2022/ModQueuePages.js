@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModQueuePages.f07b188c52ece6e24ae9.js
-// Retrieved at 9/8/2022, 1:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModQueuePages.bc7f471c1191a58faa2c.js
+// Retrieved at 9/8/2022, 2:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModQueuePages"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -8045,8 +8045,8 @@
 				href: `${N.a.redditUrl}/help/healthycommunities/`,
 				rel: R.c,
 				target: R.d.BLANK
-			}, v.fbt._("Moderator guidelines", null, {
-				hk: "15P5n5"
+			}, v.fbt._("Moderator code of conduct", null, {
+				hk: "259o41"
 			})), a.a.createElement(B, {
 				to: "/r/modsupport",
 				rel: R.c,
@@ -8291,4 +8291,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModQueuePages.f07b188c52ece6e24ae9.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModQueuePages.bc7f471c1191a58faa2c.js.map

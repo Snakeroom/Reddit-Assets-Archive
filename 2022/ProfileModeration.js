@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfileModeration.ee1c14cca596a9b7639c.js
-// Retrieved at 8/30/2022, 3:10:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfileModeration.4b64f33af213baf13b9c.js
+// Retrieved at 9/8/2022, 2:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfileModeration"], {
 		"./node_modules/lodash/_baseRange.js": function(e, t) {
@@ -301,7 +301,7 @@
 			})), n.d(t, "k", (function() {
 				return J
 			})), n.d(t, "o", (function() {
-				return K
+				return X
 			})), n.d(t, "f", (function() {
 				return $
 			})), n.d(t, "l", (function() {
@@ -323,9 +323,9 @@
 			})), n.d(t, "i", (function() {
 				return ve
 			})), n.d(t, "c", (function() {
-				return Ee
-			})), n.d(t, "e", (function() {
 				return Ce
+			})), n.d(t, "e", (function() {
+				return Ee
 			})), n.d(t, "h", (function() {
 				return _e
 			}));
@@ -347,10 +347,10 @@
 				x = n("./src/lib/lessComponent.tsx"),
 				g = n("./src/reddit/icons/svgs/Dropdown/index.tsx"),
 				v = n("./src/reddit/controls/Select/index.m.less"),
-				E = n.n(v);
+				C = n.n(v);
 
-			function C() {
-				return (C = Object.assign || function(e) {
+			function E() {
+				return (E = Object.assign || function(e) {
 					for (var t = 1; t < arguments.length; t++) {
 						var n = arguments[t];
 						for (var a in n) Object.prototype.hasOwnProperty.call(n, a) && (e[a] = n[a])
@@ -358,9 +358,9 @@
 					return e
 				}).apply(this, arguments)
 			}
-			const _ = x.a.span("Wrapper", E.a),
-				y = x.a.select("Inner", E.a),
-				k = x.a.wrapped(g.b, "Caret", E.a);
+			const _ = x.a.span("Wrapper", C.a),
+				y = x.a.select("Inner", C.a),
+				k = x.a.wrapped(g.b, "Caret", C.a);
 
 			function w(e) {
 				let {
@@ -373,9 +373,9 @@
 				} : {};
 				return r.a.createElement(_, {
 					className: t
-				}, r.a.createElement(y, C({
+				}, r.a.createElement(y, E({
 					className: n
-				}, a)), r.a.createElement(k, C({
+				}, a)), r.a.createElement(k, E({
 					isSubreddit: !0
 				}, o)))
 			}
@@ -394,8 +394,8 @@
 				B = n("./src/reddit/components/Settings/shared/Widgets.m.less"),
 				D = n.n(B);
 
-			function G() {
-				return (G = Object.assign || function(e) {
+			function W() {
+				return (W = Object.assign || function(e) {
 					for (var t = 1; t < arguments.length; t++) {
 						var n = arguments[t];
 						for (var a in n) Object.prototype.hasOwnProperty.call(n, a) && (e[a] = n[a])
@@ -403,7 +403,7 @@
 					return e
 				}).apply(this, arguments)
 			}
-			const W = Object(d.a)(h.a),
+			const G = Object(d.a)(h.a),
 				A = x.a.wrapped(T.a, "Circle", D.a),
 				z = x.a.h3("Label", D.a),
 				U = x.a.wrapped(S.c, "Subtext", D.a),
@@ -423,7 +423,7 @@
 						last: d,
 						...u
 					} = e;
-					return r.a.createElement("div", G({}, u, {
+					return r.a.createElement("div", W({}, u, {
 						className: Object(l.a)(D.a.Wrapper, t, {
 							[D.a.mColumn]: "column" === n,
 							[D.a.mDisabled]: !!i,
@@ -435,8 +435,8 @@
 						})
 					}))
 				},
-				X = x.a.a("Link", D.a),
-				K = x.a.wrapped(X, "SubtextLink", D.a),
+				K = x.a.a("Link", D.a),
+				X = x.a.wrapped(K, "SubtextLink", D.a),
 				Z = x.a.wrapped(R.a, "LinkIcon", D.a),
 				$ = x.a.button("LinkButton", D.a),
 				ee = x.a.wrapped(O.a, "ArrowRight", D.a),
@@ -545,11 +545,11 @@
 					last: e.last,
 					indent: e.indent,
 					disabled: e.disabled
-				}, r.a.createElement(Q, null, r.a.createElement(X, {
+				}, r.a.createElement(Q, null, r.a.createElement(K, {
 					href: e.link,
 					onClick: e.onClick,
 					target: e.openInNewTab ? "_blank" : void 0
-				}, e.label, r.a.createElement(Z, null)), r.a.createElement(U, null, e.subtext)), r.a.createElement(Y, null, r.a.createElement(X, {
+				}, e.label, r.a.createElement(Z, null)), r.a.createElement(U, null, e.subtext)), r.a.createElement(Y, null, r.a.createElement(K, {
 					href: e.link,
 					onClick: e.onClick,
 					target: e.openInNewTab ? "_blank" : void 0
@@ -597,7 +597,7 @@
 					id: `SettingDropdown--${e.id}`
 				}, e.displayTitle || e.selected), r.a.createElement(g.b, {
 					className: D.a.DropdownTriangle
-				}), r.a.createElement(W, {
+				}), r.a.createElement(G, {
 					container: void 0,
 					isOpen: e.isOpen,
 					renderContentsHidden: !0,
@@ -654,14 +654,14 @@
 						}, n)
 					}))))
 				},
-				Ee = e => r.a.createElement(J, {
+				Ce = e => r.a.createElement(J, {
 					className: e.className,
 					direction: e.direction,
 					disabled: e.disabled,
 					indent: e.indent,
 					last: e.last
 				}, r.a.createElement(Q, null, r.a.createElement(z, null, e.label), r.a.createElement(U, null, e.subtext)), r.a.createElement(Y, null, e.children)),
-				Ce = e => r.a.createElement(te, {
+				Ee = e => r.a.createElement(te, {
 					isCreateCommunity: e.isCreateCommunity,
 					isRequired: e.isRequired,
 					label: e.label,
@@ -780,9 +780,9 @@
 			})), n.d(t, "c", (function() {
 				return v
 			})), n.d(t, "d", (function() {
-				return E
-			})), n.d(t, "j", (function() {
 				return C
+			})), n.d(t, "j", (function() {
+				return E
 			}));
 			var a = n("./src/lib/lessComponent.tsx"),
 				r = n("./src/reddit/components/StructuredStyles/StyledComponents/forms.m.less"),
@@ -801,8 +801,8 @@
 				x = a.a.h3("FormElementTitle", o.a),
 				g = a.a.div("FormElementDescription", o.a),
 				v = a.a.div("FormElementError", o.a),
-				E = a.a.div("FormElementSubGroup", o.a),
-				C = a.a.li("FormListItem", o.a)
+				C = a.a.div("FormElementSubGroup", o.a),
+				E = a.a.li("FormListItem", o.a)
 		},
 		"./src/reddit/components/StructuredStyles/StyledComponents/inputs.m.less": function(e, t, n) {
 			e.exports = {
@@ -918,8 +918,8 @@
 			}(a || (a = {}));
 			const g = d.a.wrapped(h.a, "Gear", b.a),
 				v = d.a.h3("Title", b.a),
-				E = d.a.div("TabNavContainer", b.a),
-				C = d.a.div("Tabs", b.a),
+				C = d.a.div("TabNavContainer", b.a),
+				E = d.a.div("Tabs", b.a),
 				_ = d.a.wrapped(e => {
 					let {
 						active: t,
@@ -981,7 +981,7 @@
 					} = this.props, a = Object(l.a)({
 						[b.a.mResponsive]: t
 					});
-					return i.a.createElement(E, {
+					return i.a.createElement(C, {
 						className: Object(l.a)(a, this.props.className),
 						innerRef: e,
 						onTouchMove: n
@@ -989,7 +989,7 @@
 						className: Object(l.a)(a, {
 							[b.a.mConstrainWidth]: !!this.props.constrainWidth
 						})
-					}, y(this.props.icon), this.props.title), i.a.createElement(C, {
+					}, y(this.props.icon), this.props.title), i.a.createElement(E, {
 						className: Object(l.a)(a, {
 							[b.a.mConstrainWidth]: !!this.props.constrainWidth
 						}),
@@ -1020,9 +1020,9 @@
 		"./src/reddit/controls/ErrorText/index.tsx": function(e, t, n) {
 			"use strict";
 			n.d(t, "a", (function() {
-				return E
-			})), n.d(t, "c", (function() {
 				return C
+			})), n.d(t, "c", (function() {
+				return E
 			}));
 			var a = n("./node_modules/fbt/lib/FbtPublic.js"),
 				r = n("./node_modules/lodash/uniqueId.js"),
@@ -1116,7 +1116,7 @@
 					}, n || e))
 				}
 			}
-			const E = e => {
+			const C = e => {
 					const {
 						className: t,
 						errorClassName: n,
@@ -1132,7 +1132,7 @@
 						key: t
 					}, e))) : null
 				},
-				C = e => c.a.createElement(E, {
+				E = e => c.a.createElement(C, {
 					fallbackMessage: a.fbt._("Something went wrong", null, {
 						hk: "Cw1BT"
 					}),
@@ -1537,16 +1537,16 @@
 						isResponsiveSettingsEnabled: !1
 					}, a.fbt._("Profile moderation", null, {
 						hk: "3wd5uz"
-					})), o.a.createElement(C, null, o.a.createElement(b.c, null, a.fbt._("If you don't post to your profile, you probably won't need (or want) to use your profile moderation tools. If you're someone who posts directly to your own profile, you can use your profile moderation tools to review and manage the comments on your posts. Just like you would in a community, the same {=Mod Guidelines} and {=Content Policy} applies to posts and conversations on your profile, so make sure you're familiar with them before diving in.", [a.fbt._param("=Mod Guidelines", o.a.createElement(f.o, {
+					})), o.a.createElement(E, null, o.a.createElement(b.c, null, a.fbt._("If you don't post to your profile, you probably won't need (or want) to use your profile moderation tools. If you're someone who posts directly to your own profile, you can use your profile moderation tools to review and manage the comments on your posts. Just like you would in a community, the same {=Mod Code of Conduct} and {=Content Policy} applies to posts and conversations on your profile, so make sure you're familiar with them before diving in.", [a.fbt._param("=Mod Code of Conduct", o.a.createElement(f.o, {
 						href: "https://www.redditinc.com/policies/moderator-guidelines"
-					}, a.fbt._("Mod Guidelines", null, {
-						hk: "2trNmX"
+					}, a.fbt._("Mod Code of Conduct", null, {
+						hk: "3TTp7q"
 					}))), a.fbt._param("=Content Policy", o.a.createElement(f.o, {
 						href: "https://www.redditinc.com/policies/content-policy"
 					}, a.fbt._("Content Policy", null, {
-						hk: "1vUbXh"
+						hk: "3QUXVS"
 					})))], {
-						hk: "4371FX"
+						hk: "2Rzkl6"
 					})), o.a.createElement(b.c, null, a.fbt._("You can access your profile moderation tools on the web by going to your profile, clicking {=Other Options}, and selecting {=Profile Moderation}. (Profile moderation tools are currently unavailable on mobile.)", [a.fbt._param("=Other Options", o.a.createElement("span", {
 						className: g.a.italicizedText
 					}, a.fbt._("Other Options", null, {
@@ -1559,21 +1559,21 @@
 						hk: "2e5ifE"
 					})), o.a.createElement(b.c, null, a.fbt._("There are few different things you can do with your profile tools:", null, {
 						hk: "bESXp"
-					}))), o.a.createElement(E, {
+					}))), o.a.createElement(C, {
 						title: a.fbt._("View your traffic", null, {
 							hk: "SKtCX"
 						}),
 						url: `${p.a.redditUrl}/${t}/about/traffic/`
 					}, a.fbt._("Get an idea of how many people have visited your profile by seeing your page views, how many followers you have, and how they've changed over time.", null, {
 						hk: "43PqCG"
-					})), o.a.createElement(E, {
+					})), o.a.createElement(C, {
 						title: a.fbt._("Add moderators", null, {
 							hk: "2FvAOt"
 						}),
 						url: `${p.a.redditUrl}/${t}/about/moderators/`
 					}, a.fbt._("If your profile posts get a lot of comments and you need some help with moderation, you can add people as moderators and manage their permissions.", null, {
 						hk: "2hM6CG"
-					})), o.a.createElement(E, {
+					})), o.a.createElement(C, {
 						title: a.fbt._("Manage Automod", null, {
 							hk: "2Eymm3"
 						}),
@@ -1584,21 +1584,21 @@
 						hk: "4m1eHw"
 					})))], {
 						hk: "2AQ3AO"
-					})), o.a.createElement(E, {
+					})), o.a.createElement(C, {
 						title: a.fbt._("View your moderation log", null, {
 							hk: "4vesa8"
 						}),
 						url: `${p.a.redditUrl}/${t}/about/log/`
 					}, a.fbt._("The moderation log (or mod log for short) lists all the mod actions taken by you, moderators, and Automod on your profile.", null, {
 						hk: "3q9UXF"
-					})), o.a.createElement(E, {
+					})), o.a.createElement(C, {
 						title: a.fbt._("Manage your moderation queue", null, {
 							hk: "FV138"
 						}),
 						url: `${p.a.redditUrl}/${t}/about/modqueue/`
 					}, a.fbt._("If someone reports a comment or post on your profile, they show up in your moderation queue to approve or remove.", null, {
 						hk: "1DRP9K"
-					})), o.a.createElement(E, {
+					})), o.a.createElement(C, {
 						title: a.fbt._("Ban accounts from your profile", null, {
 							hk: "3jWJsX"
 						}),
@@ -1617,28 +1617,28 @@
 						hk: "3dVcxM"
 					})))], {
 						hk: "2MvHIu"
-					})))), o.a.createElement(E, {
+					})))), o.a.createElement(C, {
 						title: a.fbt._("Edit user flairs", null, {
 							hk: "85b9g"
 						}),
 						url: `${p.a.redditUrl}/${t}/about/flair/`
 					}, a.fbt._("Flair is text that displays next to a redditor's username and works like a label. For example, you could add flair to someone's account who works with you so other people know who they are.", null, {
 						hk: "3BRK80"
-					})), o.a.createElement(E, {
+					})), o.a.createElement(C, {
 						title: a.fbt._("Review spam", null, {
 							hk: "3ty6Kf"
 						}),
 						url: `${p.a.redditUrl}/${t}/about/spam/`
 					}, a.fbt._("Reddit automatically removes comments that get flagged by our spam filter. However, if you'd like to review your spam to make sure something didn't accidentally get flagged, you can.", null, {
 						hk: "1k4TDU"
-					})), o.a.createElement(E, {
+					})), o.a.createElement(C, {
 						title: a.fbt._("Manage awards", null, {
 							hk: "rmIhT"
 						}),
 						url: `/${t}/about/awards/`
 					}, a.fbt._("If you'd like to turn off specific awards on your profile posts, you can toggle them on or off.", null, {
 						hk: "4cEKjQ"
-					})), o.a.createElement(C, null, a.fbt._("Have any questions?", null, {
+					})), o.a.createElement(E, null, a.fbt._("Have any questions?", null, {
 						hk: "2CrEjq"
 					}), " ", o.a.createElement(f.o, {
 						href: "https://www.reddithelp.com/en/submit-request"
@@ -1648,7 +1648,7 @@
 				}
 			}
 
-			function E(e) {
+			function C(e) {
 				let {
 					title: t,
 					url: n,
@@ -1661,7 +1661,7 @@
 				})
 			}
 
-			function C(e) {
+			function E(e) {
 				let {
 					children: t
 				} = e;
@@ -1709,4 +1709,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileModeration.ee1c14cca596a9b7639c.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileModeration.4b64f33af213baf13b9c.js.map

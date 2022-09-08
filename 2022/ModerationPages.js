@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModerationPages.86471cba1d725443a2ec.js
-// Retrieved at 9/8/2022, 1:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModerationPages.516027ef44b85e9ab99a.js
+// Retrieved at 9/8/2022, 2:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModerationPages", "CollectionCommentsPage~CommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~RpanListingUnit~S~5809214e", "CommentsPage~Governance~Reddit~ReportFlow~Subreddit~reddit-components-BlankPost~reddit-components-Cl~5351df81", "PostCreation~Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~r~4c415e24", "Governance~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compo~bd4baca2", "Governance~ModListing~Reddit~ReportFlow~Subreddit", "Governance~ModListing~Reddit~Subreddit", "Governance~Reddit~SubredditForkingCTA"], {
 		"./src/chat/controls/Svg/index.m.less": function(e, t, n) {
@@ -66507,8 +66507,8 @@
 								path: U.a.redditModHelpUrl
 							}), i.a.createElement(oe.b, {
 								isExternal: !0,
-								label: p.fbt._("Moderator guidelines", null, {
-									hk: "3marKI"
+								label: p.fbt._("Moderator code of conduct", null, {
+									hk: "fl2JE"
 								}),
 								onClick: this.onClickModGuidelines,
 								path: "https://www.reddit.com/help/healthycommunities/"
@@ -75120,4 +75120,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.86471cba1d725443a2ec.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.516027ef44b85e9ab99a.js.map

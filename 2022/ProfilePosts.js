@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfilePosts.8f0dcf8b71aa41ddc586.js
-// Retrieved at 9/8/2022, 11:20:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfilePosts.48fdbba2578f831ddc4a.js
+// Retrieved at 9/8/2022, 2:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfilePosts"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -3034,8 +3034,8 @@
 					hk: "1DyxZS"
 				})), n.a.createElement(E, {
 					href: "https://www.redditinc.com/policies/moderator-guidelines"
-				}, O._("Moderator Guidelines", null, {
-					hk: "2O9otm"
+				}, O._("Moderator Code of Conduct", null, {
+					hk: "tWEG"
 				})))), n.a.createElement("div", {
 					className: y.a.Copyright
 				}, O._("Reddit Inc © {year}. All rights reserved", [O._param("year", (new Date).getFullYear().toString())], {
@@ -3114,8 +3114,8 @@
 					hk: "1DyxZS"
 				})), n.a.createElement(E, {
 					href: "https://www.redditinc.com/policies/moderator-guidelines"
-				}, O._("Moderator Guidelines", null, {
-					hk: "2O9otm"
+				}, O._("Moderator Code of Conduct", null, {
+					hk: "tWEG"
 				})))), (e.isCountrySitePage || e.isCountrySitesEnabled) && n.a.createElement("div", {
 					className: y.a.LinkContainer
 				}, n.a.createElement("div", {
@@ -4530,4 +4530,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfilePosts.8f0dcf8b71aa41ddc586.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfilePosts.48fdbba2578f831ddc4a.js.map

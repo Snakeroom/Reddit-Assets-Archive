@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Geotagging.a2931542eca4669d0de0.js
-// Retrieved at 9/8/2022, 11:20:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Geotagging.5ddf7967c3d868438df1.js
+// Retrieved at 9/8/2022, 2:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Geotagging"], {
 		"./node_modules/p-debounce/index.js": function(e, t, s) {
@@ -407,8 +407,8 @@
 					hk: "1DyxZS"
 				})), r.a.createElement(y, {
 					href: "https://www.redditinc.com/policies/moderator-guidelines"
-				}, S._("Moderator Guidelines", null, {
-					hk: "2O9otm"
+				}, S._("Moderator Code of Conduct", null, {
+					hk: "tWEG"
 				})))), r.a.createElement("div", {
 					className: _.a.Copyright
 				}, S._("Reddit Inc © {year}. All rights reserved", [S._param("year", (new Date).getFullYear().toString())], {
@@ -487,8 +487,8 @@
 					hk: "1DyxZS"
 				})), r.a.createElement(y, {
 					href: "https://www.redditinc.com/policies/moderator-guidelines"
-				}, S._("Moderator Guidelines", null, {
-					hk: "2O9otm"
+				}, S._("Moderator Code of Conduct", null, {
+					hk: "tWEG"
 				})))), (e.isCountrySitePage || e.isCountrySitesEnabled) && r.a.createElement("div", {
 					className: _.a.LinkContainer
 				}, r.a.createElement("div", {
@@ -1498,9 +1498,9 @@
 					userSubreddit: Object(I.g)(e.modPermissions, e.isSubscribed),
 					actionInfo: B
 				}),
-				D = J("select_location"),
-				A = J("confirm_location"),
-				W = J("undo_location"),
+				W = J("select_location"),
+				D = J("confirm_location"),
+				A = J("undo_location"),
 				H = Q("verify_location"),
 				z = Q("reject_location");
 
@@ -1604,7 +1604,7 @@
 					disabled: l,
 					onFocus: () => _(M(t)),
 					onPlace: function(e) {
-						d && !e && _(W(t, d.id)), c(e), e && _(D(t, e.id))
+						d && !e && _(A(t, d.id)), c(e), e && _(W(t, e.id))
 					},
 					onSubmit: async function(e) {
 						let {
@@ -1626,7 +1626,7 @@
 							}),
 							duration: 5e3
 						}));
-						_(A(t, n.id)), x(), s(t.id), y()
+						_(D(t, n.id)), x(), s(t.id), y()
 					}
 				}))
 			}
@@ -1754,4 +1754,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Geotagging.a2931542eca4669d0de0.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Geotagging.5ddf7967c3d868438df1.js.map

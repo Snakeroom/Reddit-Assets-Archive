@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CommentsPage.18accc5775bfc3c4d9b3.js
-// Retrieved at 9/8/2022, 1:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CommentsPage.22ea0ae5b43d76bfe7ee.js
+// Retrieved at 9/8/2022, 2:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CommentsPage", "PostCreation~Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~r~4c415e24", "Governance~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compo~bd4baca2", "CollectionCommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~SearchResults", "Governance~ModListing~Reddit~ReportFlow~Subreddit", "Governance~ModListing~Reddit~Subreddit", "CollectionCommentsPage~ModProgressModule~NewCommunityProgress", "CollectionCommentsPage~Subreddit~SubredditWiki", "AchievementsActions"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -24243,8 +24243,8 @@
 					hk: "1DyxZS"
 				})), r.a.createElement(O, {
 					href: "https://www.redditinc.com/policies/moderator-guidelines"
-				}, x._("Moderator Guidelines", null, {
-					hk: "2O9otm"
+				}, x._("Moderator Code of Conduct", null, {
+					hk: "tWEG"
 				})))), r.a.createElement("div", {
 					className: v.a.Copyright
 				}, x._("Reddit Inc © {year}. All rights reserved", [x._param("year", (new Date).getFullYear().toString())], {
@@ -24323,8 +24323,8 @@
 					hk: "1DyxZS"
 				})), r.a.createElement(O, {
 					href: "https://www.redditinc.com/policies/moderator-guidelines"
-				}, x._("Moderator Guidelines", null, {
-					hk: "2O9otm"
+				}, x._("Moderator Code of Conduct", null, {
+					hk: "tWEG"
 				})))), (e.isCountrySitePage || e.isCountrySitesEnabled) && r.a.createElement("div", {
 					className: v.a.LinkContainer
 				}, r.a.createElement("div", {
@@ -43465,4 +43465,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommentsPage.18accc5775bfc3c4d9b3.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommentsPage.22ea0ae5b43d76bfe7ee.js.map
