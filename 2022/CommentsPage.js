@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CommentsPage.7b4da74f230d6c5d5257.js
-// Retrieved at 9/12/2022, 2:10:03 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CommentsPage.a77d8b604688f6a9e8ff.js
+// Retrieved at 9/12/2022, 2:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CommentsPage", "PostCreation~Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~r~4c415e24", "Governance~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compo~bd4baca2", "CollectionCommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~SearchResults", "Governance~ModListing~Reddit~ReportFlow~Subreddit", "Governance~ModListing~Reddit~Subreddit", "CollectionCommentsPage~ModProgressModule~NewCommunityProgress", "CollectionCommentsPage~Subreddit~SubredditWiki", "AchievementsActions"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -21677,7 +21677,7 @@
 							isCommentPermalink: n,
 							post: s
 						} = e;
-						return n ? Te.g.Classic : Object(Fe.c)(s) ? Te.g.Large : Object(Re.b)(s) ? Te.g.Large : t ? Te.g.Large : !s.media || Object(R.p)(s) || Mt(s) ? Te.g.Medium : Te.g.Large
+						return n ? Te.g.Classic : Object(Fe.c)(s) ? Te.g.Large : Object(Re.c)(s) ? Te.g.Large : t ? Te.g.Large : !s.media || Object(R.p)(s) || Mt(s) ? Te.g.Medium : Te.g.Large
 					})(e),
 					tn = Object(a.e)(gt.b),
 					nn = Object(oe.b)(Ae),
@@ -21929,7 +21929,7 @@
 				}, i.a.createElement(le.a, {
 					onIgnoreReports: Ce,
 					reportable: Ae
-				})), Object(Re.b)(Ae) && i.a.createElement(J.a, {
+				})), Object(Re.c)(Ae) && i.a.createElement(J.a, {
 					post: Ae
 				}), i.a.createElement(ie.d, null), !!tn && i.a.createElement(k.a, {
 					itemIds: nn,
@@ -43471,4 +43471,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommentsPage.7b4da74f230d6c5d5257.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommentsPage.a77d8b604688f6a9e8ff.js.map

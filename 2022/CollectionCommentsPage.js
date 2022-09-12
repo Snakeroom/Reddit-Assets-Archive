@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage.b7c6cf8332de6eb86d37.js
-// Retrieved at 9/12/2022, 2:10:03 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage.fe136ae78c5f446a9215.js
+// Retrieved at 9/12/2022, 2:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage"], {
 		"./node_modules/linkify-it/index.js": function(e, t, s) {
@@ -7129,7 +7129,7 @@
 							isCommentPermalink: s,
 							post: n
 						} = e;
-						return s ? Ne.g.Classic : Object(Be.c)(n) ? Ne.g.Large : Object(Me.b)(n) ? Ne.g.Large : t ? Ne.g.Large : !n.media || Object(M.p)(n) || Ft(n) ? Ne.g.Medium : Ne.g.Large
+						return s ? Ne.g.Classic : Object(Be.c)(n) ? Ne.g.Large : Object(Me.c)(n) ? Ne.g.Large : t ? Ne.g.Large : !n.media || Object(M.p)(n) || Ft(n) ? Ne.g.Medium : Ne.g.Large
 					})(e),
 					ts = Object(a.e)(ft.b),
 					ss = Object(re.b)(Ae),
@@ -7381,7 +7381,7 @@
 				}, i.a.createElement(le.a, {
 					onIgnoreReports: ge,
 					reportable: Ae
-				})), Object(Me.b)(Ae) && i.a.createElement(Z.a, {
+				})), Object(Me.c)(Ae) && i.a.createElement(Z.a, {
 					post: Ae
 				}), i.a.createElement(ie.d, null), !!ts && i.a.createElement(k.a, {
 					itemIds: ss,
@@ -11416,4 +11416,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage.b7c6cf8332de6eb86d37.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage.fe136ae78c5f446a9215.js.map

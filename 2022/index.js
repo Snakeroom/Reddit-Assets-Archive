@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/index.e9031f778ee3f34b92ae.js
-// Retrieved at 9/12/2022, 2:10:03 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/index.ab25e5993ec0ab47d725.js
+// Retrieved at 9/12/2022, 2:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["index"], {
 		"./src/reddit/components/Econ/Audio/MuteIcon.tsx": function(e, t, n) {
@@ -188,146 +188,276 @@
 				}))
 			}
 		},
+		"./src/reddit/components/Econ/Audio/UpcomingTalk/index.m.less": function(e, t, n) {
+			e.exports = {
+				upcomingTalkCard: "_1ng4vZrRsv4atm7KiZqzi",
+				upcomingTalkContainer: "_2zQOetr4IrprS8H-cDkAyF",
+				upcomingTalkInfo: "_1jr6igJaJjdBSf6gQILUHz",
+				upcomingTalkLabel: "_24TGrjt1qFqchgJsm9regX",
+				upcomingTalkHost: "_37h0RGkgWTCbecBmJVgL4V",
+				StartTalkButton: "cw7J5pVSXn74JXDoOYlf",
+				startTalkButton: "cw7J5pVSXn74JXDoOYlf",
+				isNightMode: "jnzL83t6CY_CK_unbB0gI",
+				MicrophoneIcon: "_2pbYJFUWfuaX3M5enGW62T",
+				microphoneIcon: "_2pbYJFUWfuaX3M5enGW62T",
+				hostAvatar: "_3QTjosw2bqonj6JPtDic5U",
+				snoovatar: "_3YF-FxrjtGM2LtVtg_R8V_",
+				snoovatarHeadshotContainer: "nU336w0rssAqUStSYM_xR",
+				isImage: "_3qKfFw1Pvju3jBDzGxH6Wd",
+				classicView: "_3BVeVQiYsH7FAegU2VUmV-"
+			}
+		},
+		"./src/reddit/components/Econ/Audio/UpcomingTalk/index.tsx": function(e, t, n) {
+			"use strict";
+			var a = n("./node_modules/react/index.js"),
+				o = n.n(a),
+				s = n("./node_modules/react-redux/es/index.js"),
+				r = n("./src/lib/classNames/index.ts"),
+				i = n("./src/reddit/actions/profile/index.ts"),
+				c = n("./src/reddit/components/UserIcon/index.tsx"),
+				d = n("./src/reddit/selectors/user.ts"),
+				l = n("./src/reddit/components/Econ/Audio/SpeakerRings/index.tsx"),
+				m = n("./src/reddit/components/Econ/Audio/UpcomingTalk/index.m.less"),
+				u = n.n(m),
+				p = n("./src/reddit/controls/Button/index.tsx");
+			var g = e => o.a.createElement("svg", {
+				width: "15",
+				height: "19",
+				viewBox: "0 0 15 19",
+				xmlns: "http://www.w3.org/2000/svg"
+			}, o.a.createElement("path", {
+				d: "M8.125 15.9701V17.7501H9.925V19.0001H5.08V17.7501H6.88V15.9701C5.18411 15.8688 3.58787 15.1352 2.40663 13.9141C1.22538 12.6931 0.545039 11.0734 0.5 9.3751H1.75C1.80295 10.8493 2.43767 12.2424 3.51528 13.2497C4.59288 14.2571 6.02562 14.7965 7.5 14.7501C8.97438 14.7965 10.4071 14.2571 11.4847 13.2497C12.5623 12.2424 13.197 10.8493 13.25 9.3751H14.5C14.4551 11.0726 13.7754 12.6916 12.5952 13.9125C11.415 15.1334 9.82 15.8676 8.125 15.9701ZM3.5 8.9481V4.0481C3.5 2.98723 3.92143 1.96981 4.67157 1.21967C5.42172 0.469523 6.43913 0.0480957 7.5 0.0480957C8.56087 0.0480957 9.57828 0.469523 10.3284 1.21967C11.0786 1.96981 11.5 2.98723 11.5 4.0481V8.9481C11.5 10.009 11.0786 11.0264 10.3284 11.7765C9.57828 12.5267 8.56087 12.9481 7.5 12.9481C6.43913 12.9481 5.42172 12.5267 4.67157 11.7765C3.92143 11.0264 3.5 10.009 3.5 8.9481ZM4.75 8.9481C4.75 9.67744 5.03973 10.3769 5.55546 10.8926C6.07118 11.4084 6.77065 11.6981 7.5 11.6981C8.22935 11.6981 8.92882 11.4084 9.44454 10.8926C9.96027 10.3769 10.25 9.67744 10.25 8.9481V4.0481C10.25 3.31875 9.96027 2.61928 9.44454 2.10355C8.92882 1.58783 8.22935 1.2981 7.5 1.2981C6.77065 1.2981 6.07118 1.58783 5.55546 2.10355C5.03973 2.61928 4.75 3.31875 4.75 4.0481V8.9481Z"
+			}));
+			const {
+				fbt: b
+			} = n("./node_modules/fbt/lib/FbtPublic.js"), v = () => o.a.createElement("span", {
+				className: u.a.MicrophoneIcon
+			}, o.a.createElement(g, null));
+			var E = e => {
+				let {} = e;
+				const t = Object(s.e)(d.db);
+				return o.a.createElement(p.t, {
+					"data-testid": "audioroom-upcoming-start-talk",
+					Icon: v,
+					className: Object(r.a)(u.a.StartTalkButton, {
+						[u.a.isNightMode]: t
+					}),
+					priority: p.c.Secondary,
+					size: p.d.M,
+					iconPosition: p.h.L,
+					text: o.a.createElement("span", {
+						className: u.a.StartTalkButtonText
+					}, b._("Start talk", null, {
+						hk: "46EMgy"
+					})),
+					onClick: () => {}
+				})
+			};
+			const {
+				fbt: x
+			} = n("./node_modules/fbt/lib/FbtPublic.js");
+			t.a = e => {
+				let {
+					author: t,
+					postId: n,
+					isClassicView: m = !1
+				} = e;
+				const p = Object(s.d)(),
+					g = Object(s.e)(d.F),
+					b = Object(s.e)(d.db),
+					v = Object(s.e)(e => Object(d.Db)(e, {
+						postId: n
+					})),
+					f = Object(s.e)(e => Object(d.Ab)(e, {
+						userName: t
+					}));
+				Object(a.useEffect)(() => {
+					f || p(Object(i.d)(t))
+				}, [p, t, n, f]);
+				const h = () => o.a.createElement("div", {
+					"data-testid": "audioroom-avatar-upcoming",
+					key: `audioPostAvatar--${t}`,
+					className: Object(r.a)(u.a.hostAvatar, {
+						[u.a.classicView]: m
+					})
+				}, o.a.createElement("div", {
+					className: u.a.snoovatar
+				}, o.a.createElement(c.a, {
+					userName: t,
+					isNSFW: !g,
+					className: u.a.isImage
+				})), o.a.createElement(l.a, {
+					ringId: `${n}`,
+					className: Object(r.a)(u.a.hostRings, {
+						[u.a.nightMode]: b
+					}),
+					ringClassName: "hostRing"
+				}));
+				return m ? o.a.createElement(h, null) : o.a.createElement("div", {
+					className: u.a.upcomingTalkCard,
+					"data-testid": "audioroom-card-upcoming"
+				}, o.a.createElement("div", {
+					className: u.a.upcomingTalkContainer
+				}, o.a.createElement(h, null), o.a.createElement("div", {
+					className: u.a.upcomingTalkInfo
+				}, o.a.createElement("div", {
+					className: u.a.upcomingTalkLabel
+				}, x._("Upcoming Talk", null, {
+					hk: "464Rq3"
+				})), o.a.createElement("div", {
+					className: u.a.upcomingTalkHost
+				}, "u/", t), v && o.a.createElement(E, null))))
+			}
+		},
 		"./src/reddit/components/Econ/Audio/index.tsx": function(e, t, n) {
 			"use strict";
 			n.r(t), n.d(t, "AudioPostBody", (function() {
-				return f
+				return h
 			}));
 			var a = n("./node_modules/react/index.js"),
 				o = n.n(a),
-				s = n("./src/lib/classNames/index.ts"),
-				r = n("./src/reddit/controls/Button/index.tsx"),
-				i = n("./src/reddit/models/Audio/index.ts"),
-				c = n("./src/reddit/components/Econ/Audio/index.m.less"),
-				d = n.n(c),
-				l = (n("./node_modules/core-js/modules/web.dom.iterable.js"), n("./src/config.ts")),
-				u = n("./node_modules/react-redux/es/index.js"),
-				m = n("./src/reddit/selectors/user.ts"),
-				p = n("./src/reddit/components/Econ/Audio/MuteIcon.tsx"),
-				g = n("./src/reddit/components/Econ/Audio/SpeakerRings/index.tsx");
+				s = n("./node_modules/react-redux/es/index.js"),
+				r = n("./src/lib/classNames/index.ts"),
+				i = n("./src/reddit/controls/Button/index.tsx"),
+				c = n("./src/reddit/models/Audio/index.ts"),
+				d = n("./src/reddit/selectors/experiments/econ/index.ts"),
+				l = n("./src/reddit/components/Econ/Audio/index.m.less"),
+				m = n.n(l),
+				u = (n("./node_modules/core-js/modules/web.dom.iterable.js"), n("./src/config.ts")),
+				p = n("./src/reddit/selectors/user.ts"),
+				g = n("./src/reddit/components/Econ/Audio/MuteIcon.tsx"),
+				b = n("./src/reddit/components/Econ/Audio/SpeakerRings/index.tsx");
 			const {
-				fbt: b
+				fbt: v
 			} = n("./node_modules/fbt/lib/FbtPublic.js");
-			var v = e => {
-				let {
-					isListener: t = !1,
-					postId: n
-				} = e;
-				const [r, i] = Object(a.useState)(new Set), [c, v] = Object(a.useState)(new Set), E = Object(u.e)(m.db), [f, x] = Object(a.useState)(-1);
-				Object(a.useEffect)(() => {
-					const e = new Set;
-					for (; e.size < 13;) {
-						const t = h();
-						e.has(t) || (r.size < 6 ? r.add(t) : c.size < 7 && c.add(t), e.add(t))
-					}
-					i(r), v(c)
-				}, [r, c]), Object(a.useEffect)(() => {
-					const e = setInterval(() => {
-						const e = Math.floor(6 * Math.random());
-						x(e), setTimeout(() => x(-1), 3500)
-					}, 4e3);
-					return () => clearInterval(e)
-				}, []);
-				const h = () => Math.floor(40 * Math.random() + 1),
-					O = t ? Array.from(c) : Array.from(r);
-				return o.a.createElement(o.a.Fragment, null, O && (null == O ? void 0 : O.map((e, a) => {
-					return t ? o.a.createElement("div", {
-						key: `audioPostAvatar--${e}`,
-						className: d.a.listener
-					}, o.a.createElement("img", {
-						className: Object(s.a)(d.a.snoovatar, d.a.isListener),
-						src: `${l.a.assetPath}/img/talk/avatars/${e}.png`,
-						alt: b._("Reddit Talk", null, {
-							hk: "XNl4V"
-						})
-					})) : o.a.createElement("div", {
-						key: `audioPostAvatar--${e}`,
-						className: d.a.speaker
-					}, a === f && o.a.createElement("div", {
-						className: d.a.speakerRings
-					}, o.a.createElement(g.a, {
-						ringId: `${n}-${e}`,
-						className: E ? d.a.nightMode : "",
-						ringClassName: "speakerRing",
-						isAnimated: !0
-					})), o.a.createElement("img", {
-						className: d.a.snoovatar,
-						src: `${l.a.assetPath}/img/talk/avatars/${e}.png`,
-						alt: b._("Reddit Talk", null, {
-							hk: "XNl4V"
-						})
-					}), a !== f && o.a.createElement("div", {
-						className: d.a.muteContainer
-					}, o.a.createElement(p.a, {
-						className: d.a.muteIcon
+			var E = e => {
+					let {
+						isListener: t = !1,
+						postId: n
+					} = e;
+					const [i, c] = Object(a.useState)(new Set), [d, l] = Object(a.useState)(new Set), E = Object(s.e)(p.db), [x, f] = Object(a.useState)(-1);
+					Object(a.useEffect)(() => {
+						const e = new Set;
+						for (; e.size < 13;) {
+							const t = h();
+							e.has(t) || (i.size < 6 ? i.add(t) : d.size < 7 && d.add(t), e.add(t))
+						}
+						c(i), l(d)
+					}, [i, d]), Object(a.useEffect)(() => {
+						let e;
+						const t = setInterval(() => {
+							const t = Math.floor(6 * Math.random());
+							f(t), e = setTimeout(() => f(-1), 3500)
+						}, 4e3);
+						return () => {
+							clearInterval(t), clearTimeout(e)
+						}
+					}, []);
+					const h = () => Math.floor(40 * Math.random() + 1),
+						_ = t ? Array.from(d) : Array.from(i);
+					return o.a.createElement(o.a.Fragment, null, _ && (null == _ ? void 0 : _.map((e, a) => {
+						return t ? o.a.createElement("div", {
+							key: `audioPostAvatar--${e}`,
+							className: m.a.listener
+						}, o.a.createElement("img", {
+							className: Object(r.a)(m.a.snoovatar, m.a.isListener),
+							src: `${u.a.assetPath}/img/talk/avatars/${e}.png`,
+							alt: v._("Reddit Talk", null, {
+								hk: "XNl4V"
+							})
+						})) : o.a.createElement("div", {
+							key: `audioPostAvatar--${e}`,
+							className: m.a.speaker
+						}, a === x && o.a.createElement("div", {
+							className: m.a.speakerRings
+						}, o.a.createElement(b.a, {
+							ringId: `${n}-${e}`,
+							className: E ? m.a.nightMode : "",
+							ringClassName: "speakerRing",
+							isAnimated: !0
+						})), o.a.createElement("img", {
+							className: m.a.snoovatar,
+							src: `${u.a.assetPath}/img/talk/avatars/${e}.png`,
+							alt: v._("Reddit Talk", null, {
+								hk: "XNl4V"
+							})
+						}), a !== x && o.a.createElement("div", {
+							className: m.a.muteContainer
+						}, o.a.createElement(g.a, {
+							className: m.a.muteIcon
+						})))
 					})))
-				})))
-			};
+				},
+				x = n("./src/reddit/components/Econ/Audio/UpcomingTalk/index.tsx");
 			const {
-				fbt: E
-			} = n("./node_modules/fbt/lib/FbtPublic.js"), f = e => {
+				fbt: f
+			} = n("./node_modules/fbt/lib/FbtPublic.js"), h = e => {
 				let {
 					post: t
 				} = e;
 				const {
 					audioRoom: n,
-					postId: a
+					postId: a,
+					author: l
 				} = t, {
-					recordingStatus: c
-				} = n;
+					recordingStatus: u
+				} = n, p = Object(s.e)(d.t);
 				return (() => {
-					const e = [i.a.NotAvailable, i.a.Removed].includes(null != c ? c : i.a.NotAvailable);
-					return !n.isLive && e ? o.a.createElement("div", {
-						className: d.a.endedContainer,
+					const e = [c.a.NotAvailable, c.a.Removed].includes(null != u ? u : c.a.NotAvailable);
+					return p && n.roomStatus === c.b.NotStarted ? o.a.createElement(x.a, {
+						postId: a,
+						author: l
+					}) : !n.isLive && e ? o.a.createElement("div", {
+						className: m.a.endedContainer,
 						"data-testid": "audioroom-card-ended"
-					}, o.a.createElement(p.a, {
-						className: d.a.muteIcon
-					}), o.a.createElement("p", null, E._("This talk has ended", null, {
+					}, o.a.createElement(g.a, {
+						className: m.a.muteIcon
+					}), o.a.createElement("p", null, f._("This talk has ended", null, {
 						hk: "3ygafp"
 					}))) : o.a.createElement(o.a.Fragment, null, o.a.createElement("a", {
 						href: `https://www.reddit.com/talk/${n.roomId}`,
 						target: "_blank",
 						rel: "noopener noreferrer",
-						className: d.a.liveContainer,
+						className: m.a.liveContainer,
 						"data-testid": `audioroom-card-${n.isLive?"live":"ended"}`
 					}, o.a.createElement("div", {
-						className: Object(s.a)(d.a.userRow)
-					}, o.a.createElement(v, {
+						className: Object(r.a)(m.a.userRow)
+					}, o.a.createElement(E, {
 						postId: a
 					})), o.a.createElement("div", {
-						className: Object(s.a)(d.a.userRow, d.a.isListener)
-					}, o.a.createElement(v, {
+						className: Object(r.a)(m.a.userRow, m.a.isListener)
+					}, o.a.createElement(E, {
 						postId: a,
 						isListener: !0
 					}))), o.a.createElement("div", {
-						className: d.a.buttonContainer
-					}, !n.isLive && c === i.a.Processing && o.a.createElement(r.a, {
-						kind: r.b.Button,
-						priority: r.c.Primary,
-						className: d.a.processingButton,
+						className: m.a.buttonContainer
+					}, !n.isLive && u === c.a.Processing && o.a.createElement(i.a, {
+						kind: i.b.Button,
+						priority: i.c.Primary,
+						className: m.a.processingButton,
 						disabled: !0
-					}, E._("Creating Recording...", null, {
+					}, f._("Creating Recording...", null, {
 						hk: "4gtXIC"
-					})), !n.isLive && c === i.a.Available && o.a.createElement(r.a, {
-						kind: r.b.ExternalLink,
-						priority: r.c.Secondary,
+					})), !n.isLive && u === c.a.Available && o.a.createElement(i.a, {
+						kind: i.b.ExternalLink,
+						priority: i.c.Secondary,
 						href: `https://www.reddit.com/talk/${n.roomId}`,
 						target: "_blank",
 						rel: "noopener noreferrer"
-					}, E._("Listen to Recording", null, {
+					}, f._("Listen to Recording", null, {
 						hk: "tBHae"
-					})), n.isLive && o.a.createElement(r.a, {
-						kind: r.b.ExternalLink,
-						priority: r.c.Primary,
+					})), n.isLive && o.a.createElement(i.a, {
+						kind: i.b.ExternalLink,
+						priority: i.c.Primary,
 						href: `https://www.reddit.com/talk/${n.roomId}`,
 						target: "_blank",
 						rel: "noopener noreferrer"
-					}, E._("Tune In", null, {
+					}, f._("Tune In", null, {
 						hk: "1NLAor"
 					}))))
 				})()
 			};
-			t.default = f
+			t.default = h
 		},
 		"./src/reddit/components/Econ/Prediction/Confetti/index.m.less": function(e, t, n) {
 			e.exports = {
@@ -339,7 +469,7 @@
 		"./src/reddit/components/Econ/Prediction/Confetti/index.tsx": function(e, t, n) {
 			"use strict";
 			n.d(t, "a", (function() {
-				return u
+				return m
 			}));
 			var a = n("./src/config.ts"),
 				o = n("./node_modules/fbt/lib/FbtPublic.js"),
@@ -358,7 +488,7 @@
 					return e
 				}).apply(this, arguments)
 			}
-			const u = e => {
+			const m = e => {
 				let {
 					className: t,
 					...n
@@ -448,16 +578,16 @@
 			});
 			var d = n("./src/reddit/hooks/useTracking.ts"),
 				l = n("./src/reddit/models/Prediction/index.ts"),
-				u = n("./src/reddit/models/Prediction/Tournament/index.ts"),
-				m = n("./src/reddit/selectors/poll/index.ts"),
+				m = n("./src/reddit/models/Prediction/Tournament/index.ts"),
+				u = n("./src/reddit/selectors/poll/index.ts"),
 				p = n("./src/lib/classNames/index.ts"),
 				g = n("./src/reddit/contexts/PageLayer/index.tsx"),
 				b = n("./src/reddit/selectors/user.ts"),
 				v = n("./src/reddit/components/Econ/Prediction/TournamentPostBody/PredictionContainer/index.m.less"),
 				E = n.n(v);
 
-			function f() {
-				return (f = Object.assign || function(e) {
+			function x() {
+				return (x = Object.assign || function(e) {
 					for (var t = 1; t < arguments.length; t++) {
 						var n = arguments[t];
 						for (var a in n) Object.prototype.hasOwnProperty.call(n, a) && (e[a] = n[a])
@@ -465,7 +595,7 @@
 					return e
 				}).apply(this, arguments)
 			}
-			const x = e => {
+			const f = e => {
 				let {
 					className: t,
 					...n
@@ -473,7 +603,7 @@
 				const a = Object(g.eb)(),
 					r = Object(g.x)(a),
 					i = Object(s.e)(b.db);
-				return o.a.createElement("div", f({}, n, {
+				return o.a.createElement("div", x({}, n, {
 					className: Object(p.a)(t, E.a.container, {
 						[E.a.commentsPage]: r,
 						[E.a.isNightMode]: i
@@ -484,23 +614,23 @@
 				}))
 			};
 			var h = n("./src/reddit/components/Econ/Prediction/Confetti/index.tsx"),
-				O = n("./src/reddit/controls/InternalLink/index.tsx"),
-				_ = n("./src/reddit/selectors/posts.ts"),
-				P = n("./src/reddit/components/Econ/Prediction/TournamentPostBody/ViewTournamentLink/index.m.less"),
-				j = n.n(P);
+				_ = n("./src/reddit/controls/InternalLink/index.tsx"),
+				O = n("./src/reddit/selectors/posts.ts"),
+				j = n("./src/reddit/components/Econ/Prediction/TournamentPostBody/ViewTournamentLink/index.m.less"),
+				k = n.n(j);
 			const {
-				fbt: k
+				fbt: P
 			} = n("./node_modules/fbt/lib/FbtPublic.js"), I = e => {
 				let {
 					className: t,
 					postId: n
 				} = e;
 				const a = Object(d.a)(),
-					r = Object(s.e)(e => Object(_.V)(e, {
+					r = Object(s.e)(e => Object(O.V)(e, {
 						postId: n
 					}));
-				return o.a.createElement(O.default, {
-					className: Object(p.a)(j.a.viewTournament, t),
+				return o.a.createElement(_.default, {
+					className: Object(p.a)(k.a.viewTournament, t),
 					to: `${null==r?void 0:r.url}predictions/`,
 					onClick: () => a((e => t => ({
 						...c(t, e),
@@ -508,58 +638,58 @@
 						action: "click",
 						noun: "view_tournament"
 					}))(n))
-				}, k._("Go to Tournament", null, {
+				}, P._("Go to Tournament", null, {
 					hk: "1QaAgH"
 				}))
 			};
 			var N = n("./src/reddit/components/Econ/Prediction/TournamentSnoosImage/index.tsx"),
-				w = n("./src/reddit/components/Econ/Prediction/TournamentPostBody/PredictionPostCard/index.m.less"),
-				y = n.n(w);
+				C = n("./src/reddit/components/Econ/Prediction/TournamentPostBody/PredictionPostCard/index.m.less"),
+				w = n.n(C);
 			const {
 				fbt: S
-			} = n("./node_modules/fbt/lib/FbtPublic.js"), A = e => {
+			} = n("./node_modules/fbt/lib/FbtPublic.js"), T = e => {
 				let {
 					header: t,
 					description: n,
 					cta: a
 				} = e;
 				return o.a.createElement("section", {
-					className: y.a.container
+					className: w.a.container
 				}, o.a.createElement(h.a, {
-					className: y.a.confetti
+					className: w.a.confetti
 				}), o.a.createElement(N.a, {
-					className: y.a.image
+					className: w.a.image
 				}), o.a.createElement("div", {
-					className: y.a.label
+					className: w.a.label
 				}, o.a.createElement("div", {
-					className: y.a.header
+					className: w.a.header
 				}, t), o.a.createElement("div", null, n)), a)
-			}, C = e => {
+			}, A = e => {
 				let {
 					postId: t
 				} = e;
-				const n = Object(s.e)(e => Object(_.V)(e, {
+				const n = Object(s.e)(e => Object(O.V)(e, {
 					postId: t
 				}));
-				return o.a.createElement(A, {
+				return o.a.createElement(T, {
 					header: S._("Tournament has ended!", null, {
 						hk: "2mCj47"
 					}),
 					description: S._("Your destiny has been decided", null, {
 						hk: "vGyB7"
 					}),
-					cta: o.a.createElement(O.default, {
-						className: y.a.cta,
+					cta: o.a.createElement(_.default, {
+						className: w.a.cta,
 						to: `${null==n?void 0:n.url}predictions/`
 					}, S._("View Results", null, {
 						hk: "1UFWjc"
 					}))
 				})
-			}, T = e => {
+			}, y = e => {
 				let {
 					postId: t
 				} = e;
-				return o.a.createElement(A, {
+				return o.a.createElement(T, {
 					header: S._("Your predictions are in!", null, {
 						hk: "FZJZS"
 					}),
@@ -567,17 +697,17 @@
 						hk: "1Brw70"
 					}),
 					cta: o.a.createElement(I, {
-						className: y.a.cta,
+						className: w.a.cta,
 						postId: t
 					})
 				})
 			};
-			var L = n("./node_modules/fbt/lib/FbtPublic.js"),
-				R = n("./src/reddit/components/Econ/Prediction/TournamentPostBody/PredictionsCarousel/PredictionsProgress/index.m.less"),
-				F = n.n(R);
+			var V = n("./node_modules/fbt/lib/FbtPublic.js"),
+				F = n("./src/reddit/components/Econ/Prediction/TournamentPostBody/PredictionsCarousel/PredictionsProgress/index.m.less"),
+				M = n.n(F);
 
-			function B() {
-				return (B = Object.assign || function(e) {
+			function L() {
+				return (L = Object.assign || function(e) {
 					for (var t = 1; t < arguments.length; t++) {
 						var n = arguments[t];
 						for (var a in n) Object.prototype.hasOwnProperty.call(n, a) && (e[a] = n[a])
@@ -585,7 +715,7 @@
 					return e
 				}).apply(this, arguments)
 			}
-			const M = e => {
+			const B = e => {
 				let {
 					value: t,
 					count: n,
@@ -594,39 +724,39 @@
 				} = e;
 				const i = Object(s.e)(b.db),
 					c = Math.floor(100 * t / n);
-				return o.a.createElement("div", B({
-					className: Object(p.a)(F.a.container, a, {
-						[F.a.isNightMode]: i
+				return o.a.createElement("div", L({
+					className: Object(p.a)(M.a.container, a, {
+						[M.a.isNightMode]: i
 					})
 				}, r), o.a.createElement("div", {
-					className: F.a.bar
+					className: M.a.bar
 				}, o.a.createElement("div", {
-					className: F.a.progress,
+					className: M.a.progress,
 					style: {
 						width: `${c}%`
 					}
 				})), o.a.createElement("div", {
-					className: F.a.label
-				}, L.fbt._("{progress} of {count} predicted", [L.fbt._param("progress", t.toString()), L.fbt._param("count", n.toString())], {
+					className: M.a.label
+				}, V.fbt._("{progress} of {count} predicted", [V.fbt._param("progress", t.toString()), V.fbt._param("count", n.toString())], {
 					hk: "1dMoEh"
 				})))
 			};
-			var V = n("./src/reddit/icons/fonts/index.tsx"),
-				$ = n("./src/reddit/components/Econ/Prediction/PredictionCard/PredictionBody/index.tsx"),
-				D = n("./src/reddit/components/Econ/Prediction/PredictionModal/index.tsx"),
-				G = n("./src/reddit/actions/economics/helpers/index.ts"),
-				U = n("./src/reddit/actions/economics/predictions/index.ts"),
-				z = n("./src/reddit/actions/post.ts"),
-				H = n("./src/reddit/components/Econ/Prediction/hooks/useDelayedUpvoteAnimation.tsx"),
-				W = n("./src/reddit/helpers/trackers/predictions.ts"),
-				X = n("./src/reddit/hooks/useToast.tsx"),
-				Z = n("./src/reddit/models/Vote/index.ts"),
-				K = n("./src/reddit/selectors/experiments/econ/index.ts");
+			var R = n("./src/reddit/icons/fonts/index.tsx"),
+				U = n("./src/reddit/components/Econ/Prediction/PredictionCard/PredictionBody/index.tsx"),
+				$ = n("./src/reddit/components/Econ/Prediction/PredictionModal/index.tsx"),
+				D = n("./src/reddit/actions/economics/helpers/index.ts"),
+				H = n("./src/reddit/actions/economics/predictions/index.ts"),
+				G = n("./src/reddit/actions/post.ts"),
+				W = n("./src/reddit/components/Econ/Prediction/hooks/useDelayedUpvoteAnimation.tsx"),
+				X = n("./src/reddit/helpers/trackers/predictions.ts"),
+				z = n("./src/reddit/hooks/useToast.tsx"),
+				J = n("./src/reddit/models/Vote/index.ts"),
+				Y = n("./src/reddit/selectors/experiments/econ/index.ts");
 			const {
-				fbt: Y
+				fbt: Z
 			} = n("./node_modules/fbt/lib/FbtPublic.js");
 			var q = n("./src/reddit/components/Econ/Prediction/TournamentPostBody/TournamentPrediction/index.m.less"),
-				J = n.n(q);
+				K = n.n(q);
 
 			function Q() {
 				return (Q = Object.assign || function(e) {
@@ -647,19 +777,19 @@
 				} = e;
 				const {
 					isLoading: c,
-					selectedOption: u,
-					selectOption: m,
+					selectedOption: m,
+					selectOption: u,
 					predict: p,
 					cancelAction: g
 				} = function(e, t, n) {
 					const a = Object(s.d)(),
 						r = Object(s.e)(b.e),
-						i = Object(s.e)(K.k),
+						i = Object(s.e)(Y.k),
 						c = Object(d.a)(),
-						u = Object(X.a)(),
+						m = Object(z.a)(),
 						{
-							startDelayedUpvoteAnimation: m
-						} = Object(H.a)(n.id),
+							startDelayedUpvoteAnimation: u
+						} = Object(W.a)(n.id),
 						{
 							id: p,
 							endsAt: g,
@@ -667,71 +797,71 @@
 						} = t,
 						{
 							id: E,
-							voteState: f
+							voteState: x
 						} = n,
-						x = t.userSelection,
-						[h, O] = o.a.useState(!1),
-						[_, P] = o.a.useState(null),
-						[j, k] = o.a.useState(!1),
+						f = t.userSelection,
+						[h, _] = o.a.useState(!1),
+						[O, j] = o.a.useState(null),
+						[k, P] = o.a.useState(!1),
 						I = g < Date.now();
 					return {
 						isLoading: h,
-						isShowingVoteAnimation: j,
+						isShowingVoteAnimation: k,
 						selectedOption: v.find(e => {
 							let {
 								id: t
 							} = e;
-							return t === _
+							return t === O
 						}),
 						selectOption: e => {
-							I || x || P(e.id)
+							I || f || j(e.id)
 						},
 						predict: async t => {
-							if (t.currency === l.a.Coins && t.amount > r) return Object(G.promptUserToBuyMoreCoins)(), void c(W.b);
-							if (I) return u(Y._("Error: Failed to make prediction. This prediction has already ended", null, {
+							if (t.currency === l.a.Coins && t.amount > r) return Object(D.promptUserToBuyMoreCoins)(), void c(X.b);
+							if (I) return m(Z._("Error: Failed to make prediction. This prediction has already ended", null, {
 								hk: "22UWEr"
-							})), void P(null);
-							if (!p || !_) throw new Error("Invalid arguments, optionId and pollId must be strings");
-							O(!0), c(Object(W.o)({
+							})), void j(null);
+							if (!p || !O) throw new Error("Invalid arguments, optionId and pollId must be strings");
+							_(!0), c(Object(X.o)({
 								pollId: p,
 								selectedNumberTokens: t.amount
 							}));
 							try {
-								await a(Object(U.s)({
+								await a(Object(H.s)({
 									coinPackageId: t.id,
-									selectedOptionId: _,
+									selectedOptionId: O,
 									price: t.amount,
 									pollId: p,
 									tournamentId: e,
 									tournamentPostId: n.id
-								})), i && f < Z.a.upvoted && (a(Object(z.kb)(E)), a(Object(z.kb)(p)), m()), O(!1), P(null), k(!0)
+								})), i && x < J.a.upvoted && (a(Object(G.kb)(E)), a(Object(G.kb)(p)), u()), _(!1), j(null), P(!0)
 							} catch (o) {
-								O(!1), P(null), u(Y._("Error: Failed to make prediction, please try again later", null, {
+								_(!1), j(null), m(Z._("Error: Failed to make prediction, please try again later", null, {
 									hk: "1tECsx"
 								}))
 							}
 						},
 						cancelAction: o.a.useCallback(() => {
-							P(null)
+							j(null)
 						}, []),
 						hideAnimation: o.a.useCallback(() => {
-							k(!1)
+							P(!1)
 						}, [])
 					}
 				}(n, t, a);
-				return o.a.createElement(o.a.Fragment, null, o.a.createElement($.a, Q({
+				return o.a.createElement(o.a.Fragment, null, o.a.createElement(U.a, Q({
 					prediction: t,
-					selectedOptionId: u ? u.id : null,
-					onSelectOption: m
-				}, i)), !!u && o.a.createElement(D.a, {
-					className: J.a.modal,
+					selectedOptionId: m ? m.id : null,
+					onSelectOption: u
+				}, i)), !!m && o.a.createElement($.a, {
+					className: K.a.modal,
 					isCreatingVote: c,
 					onOverlayClick: g,
 					onCancel: g,
 					onPredict: async e => {
 						await p(e), r && r()
 					},
-					option: u,
+					option: m,
 					pollId: t.id,
 					tournamentId: n,
 					withOverlay: !0
@@ -754,8 +884,8 @@
 						i = Object(d.a)(),
 						{
 							index: l,
-							isFirstSlide: u,
-							isLastSlide: m,
+							isFirstSlide: m,
+							isLastSlide: u,
 							nextSlide: g,
 							prevSlide: v
 						} = function(e) {
@@ -782,7 +912,7 @@
 						style: {
 							left: n < l ? "-100%" : n > l ? "100%" : 0
 						}
-					})), !u && o.a.createElement("button", {
+					})), !m && o.a.createElement("button", {
 						className: Object(p.a)(ne.a.slideButton, ne.a.prev),
 						onClick: () => {
 							i((e => t => ({
@@ -792,11 +922,11 @@
 								noun: "previous_post"
 							}))(t.id)), v()
 						}
-					}, o.a.createElement(V.a, {
+					}, o.a.createElement(R.a, {
 						name: "caret_left",
 						className: ne.a.icon,
 						isFilled: !0
-					})), !m && o.a.createElement("button", {
+					})), !u && o.a.createElement("button", {
 						className: Object(p.a)(ne.a.slideButton, ne.a.next),
 						onClick: () => {
 							i((e => t => ({
@@ -806,11 +936,11 @@
 								noun: "next_post"
 							}))(t.id)), g()
 						}
-					}, o.a.createElement(V.a, {
+					}, o.a.createElement(R.a, {
 						name: "caret_right",
 						className: ne.a.icon,
 						isFilled: !0
-					})), o.a.createElement(M, {
+					})), o.a.createElement(B, {
 						className: ne.a.counter,
 						value: r,
 						count: n.length
@@ -823,7 +953,7 @@
 					const {
 						tournamentId: n,
 						status: a
-					} = t.predictionTournament, i = Object(d.a)(), p = Object(s.e)(e => Object(m.h)(e, n)), g = o.a.useMemo(() => p.filter(e => !e.isSpoiler && !e.isNSFW && !e.resolvedOptionId && e.predictionStatus === l.b.Open && e.endsAt > Date.now()).sort(r.a).map(e => e.id), [p.length]).map(e => p.find(t => t.id === e)).filter(e => Boolean(e)), b = g.some(e => {
+					} = t.predictionTournament, i = Object(d.a)(), p = Object(s.e)(e => Object(u.h)(e, n)), g = o.a.useMemo(() => p.filter(e => !e.isSpoiler && !e.isNSFW && !e.resolvedOptionId && e.predictionStatus === l.b.Open && e.endsAt > Date.now()).sort(r.a).map(e => e.id), [p.length]).map(e => p.find(t => t.id === e)).filter(e => Boolean(e)), b = g.some(e => {
 						let {
 							userSelection: t,
 							endsAt: n,
@@ -832,7 +962,7 @@
 						return !t && n > Date.now() && a === l.b.Open
 					});
 					return o.a.useEffect(() => {
-						if (a === u.a.Closed) return;
+						if (a === m.a.Closed) return;
 						const e = b ? (e => t => ({
 							...c(t, e),
 							source: "predictions",
@@ -845,12 +975,12 @@
 							noun: "predicted_all_post"
 						}))(t.id);
 						i(e)
-					}, [t.id, a, b, i]), a === u.a.Closed ? o.a.createElement(x, null, o.a.createElement(C, {
+					}, [t.id, a, b, i]), a === m.a.Closed ? o.a.createElement(f, null, o.a.createElement(A, {
 						postId: t.id
-					})) : o.a.createElement(x, null, b ? o.a.createElement(ae, {
+					})) : o.a.createElement(f, null, b ? o.a.createElement(ae, {
 						post: t,
 						predictions: g
-					}) : o.a.createElement(T, {
+					}) : o.a.createElement(y, {
 						postId: t.id
 					}))
 				};
@@ -929,4 +1059,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/index.e9031f778ee3f34b92ae.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/index.ab25e5993ec0ab47d725.js.map
