@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfileOverview.32fb35aab637c98b3d79.js
-// Retrieved at 9/12/2022, 12:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfileOverview.abd32e6868e461fed15d.js
+// Retrieved at 9/12/2022, 2:10:03 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfileOverview"], {
 		"./src/lib/makeOverviewConversationsItemKey/index.ts": function(e, t, s) {
@@ -2894,7 +2894,7 @@
 						isAdblockAAMitigationEnabled: Qe,
 						isOptionalTextEnabled: Xe,
 						showCTAExperimentDesign: Ye
-					} = e, $e = Object(g.a)(), et = He, tt = !!e.redditStyle || !!e["data-redditstyle"], st = tt ? void 0 : E, ot = Object(l.a)(Ie), nt = Se && ot, rt = Object(d.a)(Ie), it = Object(c.a)(Ie), at = Object(H.c)(Fe), dt = Object(K.a)(Fe), ct = !!Fe.media && Fe.media.type === P.o.RTJSON, lt = Je && ct, mt = s ? s - Z.a : void 0, pt = !!Fe.recommendationContext, ut = !(de && ve || je) || pt && ve, bt = (e => e === Ce.gf.OnlyTitles)(Ae) && !Object(me.a)(Fe), ht = (e => e === Ce.gf.MediumHeight)(Ae) && !Object(me.a)(Fe), xt = (e => {
+					} = e, $e = Object(g.a)(), et = He, tt = !!e.redditStyle || !!e["data-redditstyle"], st = tt ? void 0 : E, ot = Object(l.a)(Ie), nt = Se && ot, rt = Object(d.a)(Ie), it = Object(c.a)(Ie), at = Object(H.c)(Fe), dt = Object(K.a)(Fe), ct = !!Fe.media && Fe.media.type === P.o.RTJSON, lt = Je && ct, mt = s ? s - Z.a : void 0, pt = !!Fe.recommendationContext, ut = !(de && ve || je) || pt && ve, bt = (e => e === Ce.ff.OnlyTitles)(Ae) && !Object(me.a)(Fe), ht = (e => e === Ce.ff.MediumHeight)(Ae) && !Object(me.a)(Fe), xt = (e => {
 						var t;
 						const {
 							post: s,
@@ -5484,10 +5484,10 @@
 				n = s("./src/reddit/constants/experiments.ts"),
 				r = s("./src/reddit/helpers/chooseVariant/index.ts");
 			const i = Object(o.a)(e => Object(r.c)(e, {
-					experimentName: n.dg,
+					experimentName: n.cg,
 					experimentEligibilitySelector: r.a
 				}), e => e),
-				a = Object(o.a)(i, e => e === n.Uf)
+				a = Object(o.a)(i, e => e === n.Tf)
 		},
 		"./src/reddit/selectors/focusedVerticalSuggestion.ts": function(e, t, s) {
 			"use strict";
@@ -5618,4 +5618,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileOverview.32fb35aab637c98b3d79.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileOverview.abd32e6868e461fed15d.js.map

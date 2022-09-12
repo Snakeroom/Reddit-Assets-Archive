@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-pages-meta-ArbitrumPointsMigrationPage.f5caf88a4dc78edfbe5e.js
-// Retrieved at 8/30/2022, 3:10:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-pages-meta-ArbitrumPointsMigrationPage.156a0bfbd01a685dd54e.js
+// Retrieved at 9/12/2022, 2:10:03 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-pages-meta-ArbitrumPointsMigrationPage"], {
 		"./node_modules/lodash/uniqueId.js": function(e, t, n) {
@@ -66,8 +66,8 @@
 						hk: "2Giu9U"
 					}))))
 				}),
-				g = n("./src/reddit/controls/ErrorText/index.m.less"),
-				f = n.n(g);
+				f = n("./src/reddit/controls/ErrorText/index.m.less"),
+				g = n.n(f);
 			class w extends c.a.Component {
 				constructor(e) {
 					super(e), this.spanRef = c.a.createRef(), this.toggleModal = () => {
@@ -112,12 +112,12 @@
 						isModalOpen: o
 					} = this.state;
 					return c.a.createElement("div", {
-						className: Object(d.a)(f.a.wrapper, t)
+						className: Object(d.a)(g.a.wrapper, t)
 					}, c.a.createElement("span", {
-						className: f.a.description,
+						className: g.a.description,
 						ref: this.spanRef
 					}, e), i && c.a.createElement("span", {
-						className: f.a.moreText,
+						className: g.a.moreText,
 						onClick: this.toggleModal
 					}, r), o && c.a.createElement(h, {
 						onConfirmed: this.toggleModal,
@@ -250,16 +250,16 @@
 						})
 					}, t), n)
 				},
-				g = e => s.a.createElement("div", {
+				f = e => s.a.createElement("div", {
 					className: Object(r.a)(u.a.addValueButton, e.className),
 					onClick: e.onClick
 				}, e.text, " ", s.a.createElement(l.a, {
 					className: u.a.plus
 				}));
-			var f;
+			var g;
 			! function(e) {
 				e[e.ADD = 0] = "ADD", e[e.REMOVE = 1] = "REMOVE"
-			}(f || (f = {}));
+			}(g || (g = {}));
 			class w extends s.a.Component {
 				constructor() {
 					super(...arguments), this.state = {
@@ -267,7 +267,7 @@
 					}, this.addValue = () => {
 						const e = this.props.values.slice();
 						this.props.buttonOnTop ? e.unshift("") : e.push(""), this.props.onChange(e), this.props.onEvent && this.props.onEvent({
-							action: f.ADD
+							action: g.ADD
 						})
 					}, this.updateValue = (e, t) => {
 						const n = this.props.values.slice();
@@ -276,7 +276,7 @@
 						const t = this.props.values.slice(),
 							n = t[e];
 						t.splice(e, 1), this.props.onChange(t), this.props.onEvent && this.props.onEvent({
-							action: f.REMOVE,
+							action: g.REMOVE,
 							value: n,
 							index: e
 						})
@@ -337,10 +337,10 @@
 					const l = !(!!a && n.length >= a) && !o;
 					return s.a.createElement("div", {
 						className: Object(r.a)(u.a.multiInputWrapper, e)
-					}, t && l && s.a.createElement(g, {
+					}, t && l && s.a.createElement(f, {
 						onClick: this.addValue,
 						text: i
-					}), this.renderFields(), !t && l && s.a.createElement(g, {
+					}), this.renderFields(), !t && l && s.a.createElement(f, {
 						onClick: this.addValue,
 						text: i
 					}))
@@ -507,7 +507,7 @@
 			})), n.d(t, "i", (function() {
 				return h
 			})), n.d(t, "j", (function() {
-				return g
+				return f
 			}));
 			n("./node_modules/core-js/modules/web.dom.iterable.js");
 			var a = n("./node_modules/fbt/lib/FbtPublic.js");
@@ -538,7 +538,7 @@
 			}
 			const c = 4001;
 			async function d(e, t, a, r) {
-				const [i, o] = await Promise.all([n.e(0).then(n.bind(null, "./node_modules/ethers/lib.esm/index.js")).then(e => e.ethers), t.then(e => e.abi)]);
+				const [i, o] = await Promise.all([n.e("vendors~Avatar~CryptoLibEthers~GovernanceTransferPointsModal~MarketplaceClaimModal~MarketplaceInFeed~1befd72a").then(n.bind(null, "./node_modules/ethers/lib.esm/index.js")).then(e => e.ethers), t.then(e => e.abi)]);
 				await l();
 				const c = new i.providers.Web3Provider(s()).getSigner(),
 					d = new i.Contract(e, o, c),
@@ -567,7 +567,7 @@
 			};
 			const m = 1;
 			async function p(e, t, a, s, r) {
-				const i = await n.e(0).then(n.bind(null, "./node_modules/ethers/lib.esm/index.js")).then(e => e.ethers),
+				const i = await n.e("vendors~Avatar~CryptoLibEthers~GovernanceTransferPointsModal~MarketplaceClaimModal~MarketplaceInFeed~1befd72a").then(n.bind(null, "./node_modules/ethers/lib.esm/index.js")).then(e => e.ethers),
 					{
 						BigNumber: o
 					} = i,
@@ -631,7 +631,7 @@
 				})
 			}
 
-			function g(e) {
+			function f(e) {
 				return new Promise((t, n) => {
 					s().sendAsync({
 						method: "metamask_watchAsset",
@@ -733,7 +733,7 @@
 			n.r(t), n.d(t, "ArbitrumPointsMigrationPage", (function() {
 				return q
 			})), n.d(t, "default", (function() {
-				return Y
+				return U
 			}));
 			n("./node_modules/core-js/modules/web.dom.iterable.js");
 			var a = n("./node_modules/@ethersproject/bignumber/lib.esm/bignumber.js"),
@@ -838,8 +838,8 @@
 					type: "function"
 				}],
 				h = n("./node_modules/@ethersproject/bytes/lib.esm/index.js"),
-				g = n("./node_modules/@ethersproject/keccak256/lib.esm/index.js"),
-				f = n("./node_modules/@ethersproject/contracts/lib.esm/index.js"),
+				f = n("./node_modules/@ethersproject/keccak256/lib.esm/index.js"),
+				g = n("./node_modules/@ethersproject/contracts/lib.esm/index.js"),
 				w = [{
 					anonymous: !1,
 					inputs: [{
@@ -1138,10 +1138,10 @@
 				return async function(e, t, n) {
 					const s = await async function(e, t) {
 						const n = a.a.from((await t.getNetwork()).chainId);
-						return Object(g.a)(Object(h.b)([Object(h.p)(n.toHexString(), 32), Object(h.p)((s = e, s.or(a.a.from(1).shl(255))).toHexString(), 32)]));
+						return Object(f.a)(Object(h.b)([Object(h.p)(n.toHexString(), 32), Object(h.p)((s = e, s.or(a.a.from(1).shl(255))).toHexString(), 32)]));
 						var s
 					}(e, t);
-					return Object(g.a)(Object(h.b)([Object(h.p)(s, 32), Object(h.p)(a.a.from(n).toHexString(), 32)]))
+					return Object(f.a)(Object(h.b)([Object(h.p)(s, 32), Object(h.p)(a.a.from(n).toHexString(), 32)]))
 				}(e, t, 0)
 			}
 			var E = n("./src/reddit/helpers/governance/ethereum.ts");
@@ -1192,7 +1192,7 @@
 				const d = await c.wait();
 				console.log("Receipt:", d);
 				const u = await async function(e, t, n) {
-					const s = new f.b(t, w, n).interface,
+					const s = new g.b(t, w, n).interface,
 						r = s.getEvent("InboxMessageDelivered"),
 						i = s.getEvent("InboxMessageDeliveredFromOrigin"),
 						o = s.getEventTopic(r),
@@ -1234,24 +1234,24 @@
 				}
 				throw new Error(`Timed out while trying to find redeemable ticket ${e}.`)
 			}
-			async function N(e, t) {
+			async function A(e, t) {
 				const n = new s.ethers.providers.JsonRpcProvider(Object(m.i)(m.a.ArbitrumRinkeby)),
 					a = new s.ethers.Contract(e, y.a, n);
 				return await a.balanceOf(t)
 			}
-			var A = n("./src/reddit/helpers/localStorage/index.ts"),
+			var N = n("./src/reddit/helpers/localStorage/index.ts"),
 				_ = n("./src/reddit/selectors/user.ts"),
-				S = n("./src/reddit/icons/svgs/CheckmarkFitted/index.tsx"),
-				P = n("./src/reddit/icons/svgs/ClearFilled/index.tsx"),
+				P = n("./src/reddit/icons/svgs/CheckmarkFitted/index.tsx"),
+				S = n("./src/reddit/icons/svgs/ClearFilled/index.tsx"),
 				I = n("./src/reddit/pages/meta/ArbitrumPointsMigrationPage/index.m.less"),
 				L = n.n(I);
 			const F = () => i.a.createElement(u.a, {
 					className: L.a.loading
 				}),
-				B = () => i.a.createElement(S.a, {
+				B = () => i.a.createElement(P.a, {
 					className: L.a.succeeded
 				}),
-				D = () => i.a.createElement(P.a, {
+				D = () => i.a.createElement(S.a, {
 					className: L.a.failed
 				}),
 				R = "5391184";
@@ -1263,7 +1263,7 @@
 					network: a,
 					saveMigrationState: o
 				} = e;
-				const [l, c] = Object(r.useState)(""), [d, u] = Object(r.useState)(!!n.seqNums), [p, y] = Object(r.useState)(void 0), [b, h] = Object(r.useState)(!1), [g, f] = Object(r.useState)(null), w = [i.a.createElement("p", {
+				const [l, c] = Object(r.useState)(""), [d, u] = Object(r.useState)(!!n.seqNums), [p, y] = Object(r.useState)(void 0), [b, h] = Object(r.useState)(!1), [f, g] = Object(r.useState)(null), w = [i.a.createElement("p", {
 					key: "migrating"
 				}, i.a.createElement("b", null, "Migrating ", s.ethers.utils.formatEther(n.balance), " ", n.name, " ", "to ", t, "...")), i.a.createElement("p", {
 					key: "warning"
@@ -1280,11 +1280,11 @@
 											for (const s of t) a = await x(s, n), console.log(`Looking for ticket ${a} corresponding to SEQ ${s}`), await O(a, n, e, Date.now() + C);
 											return console.log("All tickets redeemed!"), a
 										}(e, n.seqNums);
-										y(a), h(!0), o(), f(await N(n.l2ContractAddress, t))
+										y(a), h(!0), o(), g(await A(n.l2ContractAddress, t))
 									}
 								} else {
 									if ("4" !== a) throw new Error("Wallet must be set to Rinkeby Test Network");
-									n.seqNums = await j(e, t, n.l1ContractAddress, n.balance), n.originalL2Balance = await N(n.l2ContractAddress, t), o(n), u(!0)
+									n.seqNums = await j(e, t, n.l1ContractAddress, n.balance), n.originalL2Balance = await A(n.l2ContractAddress, t), o(n), u(!0)
 								}
 							} catch (e) {
 								throw console.error("Got error while running migration: ", e), c(e.message || e), e
@@ -1294,11 +1294,11 @@
 						key: "l1-success"
 					}, i.a.createElement(B, null), " L1-to-L2 transfer transaction completed.")), b && w.push(i.a.createElement("p", {
 						key: "l2-success"
-					}, i.a.createElement(B, null), " L2 tickets successfully redeemed.")), g) {
+					}, i.a.createElement(B, null), " L2 tickets successfully redeemed.")), f) {
 					const e = n.originalL2Balance || 0;
-					g.gt(e) && w.push(i.a.createElement("p", {
+					f.gt(e) && w.push(i.a.createElement("p", {
 						key: "balance"
-					}, i.a.createElement(B, null), " L2 balance of ", n.name, " went from", " ", s.ethers.utils.formatEther(e), " to", " ", s.ethers.utils.formatEther(g), ".")), w.push(i.a.createElement("p", {
+					}, i.a.createElement(B, null), " L2 balance of ", n.name, " went from", " ", s.ethers.utils.formatEther(e), " to", " ", s.ethers.utils.formatEther(f), ".")), w.push(i.a.createElement("p", {
 						key: "balance"
 					}, i.a.createElement(B, null), " Migration complete", p ? i.a.createElement("span", null, " ", "at", " ", i.a.createElement("a", {
 						href: `https://testnet.redditspace.com/tx/${p}/token-transfers`,
@@ -1308,7 +1308,7 @@
 				}
 				return l ? w.push(i.a.createElement("p", {
 					key: "error"
-				}, i.a.createElement(D, null), " Encountered an error: ", l.toString())) : d ? b ? g || w.push(i.a.createElement("p", {
+				}, i.a.createElement(D, null), " Encountered an error: ", l.toString())) : d ? b ? f || w.push(i.a.createElement("p", {
 					key: "l2-pending"
 				}, i.a.createElement(F, null), " Loading L2 balance...")) : a !== R ? (w.push(i.a.createElement("p", {
 					key: "change-network"
@@ -1323,7 +1323,7 @@
 			const V = "arb-migration-l1";
 
 			function W(e) {
-				e ? Object(A.Hb)(V, e) : window.localStorage && window.localStorage.removeItem(V)
+				e ? Object(N.Hb)(V, e) : window.localStorage && window.localStorage.removeItem(V)
 			}
 
 			function q() {
@@ -1334,17 +1334,17 @@
 					[p, y] = Object(r.useState)(Object(E.e)()),
 					[b, h] = Object(r.useState)(function() {
 						var e, t;
-						const n = Object(A.B)(V);
+						const n = Object(N.B)(V);
 						return n && (n.balance = a.a.from(n.balance), n.seqNums = null === (e = n.seqNums) || void 0 === e ? void 0 : e.map(e => a.a.from(e)), n.originalL2Balance = null !== (t = n.originalL2Balance) && void 0 !== t ? t : a.a.from(n.originalL2Balance)), n
 					}()),
-					[g, f] = Object(r.useState)((null == b ? void 0 : b.destinationAddress) || ""),
+					[f, g] = Object(r.useState)((null == b ? void 0 : b.destinationAddress) || ""),
 					[w, x] = Object(r.useState)(""),
 					v = Object(o.e)(e => e.user.wallets),
 					T = [...new Set(Object.values(v).map(e => e.latest.publicAddress).filter(e => !!e))];
 
 				function C(e) {
 					try {
-						(e = s.ethers.utils.getAddress(e)) && "0x0000000000000000000000000000000000000000" !== e ? (b.destinationAddress = e, f(e)) : alert("Invalid address!")
+						(e = s.ethers.utils.getAddress(e)) && "0x0000000000000000000000000000000000000000" !== e ? (b.destinationAddress = e, g(e)) : alert("Invalid address!")
 					} catch {
 						alert("Invalid address!")
 					}
@@ -1361,8 +1361,8 @@
 					return () => window.clearInterval(t)
 				}, [e, m, y, n]);
 				let k = null;
-				return k = n ? u ? b || "4" === p ? b ? g ? i.a.createElement(H, {
-					destinationAddress: g,
+				return k = n ? u ? b || "4" === p ? b ? f ? i.a.createElement(H, {
+					destinationAddress: f,
 					migration: b,
 					network: p,
 					saveMigrationState: W
@@ -1383,7 +1383,7 @@
 					style: {
 						display: "inline-block"
 					}
-				}, "Custom"))) : i.a.createElement(U, {
+				}, "Custom"))) : i.a.createElement(G, {
 					setMigration: h,
 					walletAddress: u
 				}) : i.a.createElement("p", null, i.a.createElement("b", null, "Please select the Rinkeby Test Network in your wallet and reload this page.")) : i.a.createElement(i.a.Fragment, null, i.a.createElement("p", null, "This migration tool is designed to work with Chrome + MetaMask. If your Points are in a different wallet, we suggest moving them into MetaMask first. You should be able to use any web3-enabled wallet, but it is untested. Not all wallets will work with our Arbitrum chain. It must be a wallet where you can add a custom network with RPC url and a different chain id."), i.a.createElement("p", null, t ? i.a.createElement(c.l, {
@@ -1397,7 +1397,7 @@
 				}, "Let's get those Points moved over"), i.a.createElement("p", null, "If you moved your Moons or Bricks out of your Vault, you will need to migrate them using this tool in order to get them onto our new system. This tool will help walk you through the necessary steps."), k)
 			}
 
-			function U(e) {
+			function G(e) {
 				let {
 					setMigration: t,
 					walletAddress: n
@@ -1419,10 +1419,10 @@
 				})))
 			}
 
-			function Y() {
+			function U() {
 				return i.a.createElement(q, null)
 			}
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-pages-meta-ArbitrumPointsMigrationPage.f5caf88a4dc78edfbe5e.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-pages-meta-ArbitrumPointsMigrationPage.156a0bfbd01a685dd54e.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ReportFlowNew.3760073683b6cef4ed42.js
-// Retrieved at 9/12/2022, 1:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ReportFlowNew.dce21b0060839c7a044a.js
+// Retrieved at 9/12/2022, 2:10:03 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ReportFlowNew"], {
 		"./src/reddit/actions/blockedRedditors.ts": function(e, t, o) {
@@ -739,79 +739,78 @@
 		"./src/reddit/endpoints/talk/index.ts": function(e, t, o) {
 			"use strict";
 			o.d(t, "h", (function() {
-				return f
+				return h
 			})), o.d(t, "f", (function() {
-				return O
+				return f
 			})), o.d(t, "e", (function() {
-				return R
+				return O
 			})), o.d(t, "d", (function() {
-				return w
+				return R
 			})), o.d(t, "b", (function() {
-				return _
+				return w
 			})), o.d(t, "c", (function() {
-				return g
+				return _
 			})), o.d(t, "g", (function() {
-				return x
+				return g
 			})), o.d(t, "a", (function() {
-				return j
+				return x
 			}));
 			var r = o("./node_modules/fbt/lib/FbtPublic.js"),
-				s = o("./node_modules/uuid/v4.js"),
-				n = o.n(s),
-				i = o("./src/lib/makeGqlRequest/index.ts"),
-				d = o("./src/lib/makeRequest/index.ts"),
-				c = o("./src/reddit/models/Subreddit/index.ts"),
-				a = o("./src/redditGQL/operations/CreateLiveAudioRoomOnProfile.json"),
-				l = o("./src/redditGQL/operations/CreateLiveAudioRoomOrError.json"),
-				u = o("./src/redditGQL/operations/GetAvailableAudioRoomTopics.json"),
-				p = o("./src/redditGQL/operations/GetSubredditAllowedPostTypes.json"),
-				m = o("./src/redditGQL/operations/GetUserProfileAllowedPostTypes.json"),
-				b = o("./src/redditGQL/operations/ReportTalk.json"),
-				h = o("./src/redditGQL/types.ts");
-			const f = (e, t) => Object(i.a)(e, {
-					...b,
+				s = o("./node_modules/uuid/dist/esm-browser/v4.js"),
+				n = o("./src/lib/makeGqlRequest/index.ts"),
+				i = o("./src/lib/makeRequest/index.ts"),
+				d = o("./src/reddit/models/Subreddit/index.ts"),
+				c = o("./src/redditGQL/operations/CreateLiveAudioRoomOnProfile.json"),
+				a = o("./src/redditGQL/operations/CreateLiveAudioRoomOrError.json"),
+				l = o("./src/redditGQL/operations/GetAvailableAudioRoomTopics.json"),
+				u = o("./src/redditGQL/operations/GetSubredditAllowedPostTypes.json"),
+				p = o("./src/redditGQL/operations/GetUserProfileAllowedPostTypes.json"),
+				m = o("./src/redditGQL/operations/ReportTalk.json"),
+				b = o("./src/redditGQL/types.ts");
+			const h = (e, t) => Object(n.a)(e, {
+					...m,
 					variables: t
 				}),
-				O = async (e, t) => {
-					const o = await Object(i.a)(e, {
+				f = async (e, t) => {
+					const o = await Object(n.a)(e, {
+						...u,
+						variables: t
+					});
+					return !!Object(i.c)(o) && (o.body.data.subredditInfoById.allowedPostTypes || []).includes(b.B.Talk)
+				}, O = async (e, t) => {
+					var o, r;
+					const s = await Object(n.a)(e, {
 						...p,
 						variables: t
 					});
-					return !!Object(d.c)(o) && (o.body.data.subredditInfoById.allowedPostTypes || []).includes(h.B.Talk)
-				}, R = async (e, t) => {
-					var o, r;
-					const s = await Object(i.a)(e, {
-						...m,
-						variables: t
-					});
-					return !!Object(d.c)(s) && (null !== (r = null === (o = s.body.data.profileByName) || void 0 === o ? void 0 : o.allowedPostTypes) && void 0 !== r ? r : []).includes(h.B.Talk)
-				}, w = async e => {
+					return !!Object(i.c)(s) && (null !== (r = null === (o = s.body.data.profileByName) || void 0 === o ? void 0 : o.allowedPostTypes) && void 0 !== r ? r : []).includes(b.B.Talk)
+				}, R = async e => {
 					var t;
-					const o = await Object(i.a)(e, u);
-					return Object(d.c)(o) && null !== (t = o.body.data.availableAudioRoomTopics) && void 0 !== t ? t : []
-				}, _ = (e, t, o) => t.type === c.f.User ? Object(i.a)(e, {
-					...a,
+					const o = await Object(n.a)(e, l);
+					return Object(i.c)(o) && null !== (t = o.body.data.availableAudioRoomTopics) && void 0 !== t ? t : []
+				}, w = (e, t, o) => t.type === d.f.User ? Object(n.a)(e, {
+					...c,
 					variables: o
-				}) : Object(i.a)(e, {
-					...l,
+				}) : Object(n.a)(e, {
+					...a,
 					variables: {
 						...o,
 						subredditId: t.id
 					}
-				}), g = () => n()(), x = e => e.data.createAudioRoomOrError || e.data.createAudioRoomOnProfile, j = {
-					[h.i.ServiceError]: r.fbt._("Something's wrong with the talk service right now. Check back later.", null, {
+				}), _ = () => Object(s.a)(), g = e => e.data.createAudioRoomOrError || e.data.createAudioRoomOnProfile, x = {
+					[b.i.ServiceError]: r.fbt._("Something's wrong with the talk service right now. Check back later.", null, {
 						hk: "3XqPJS"
 					}),
-					[h.i.UserNotAuthorized]: r.fbt._("You don't have permission to start talks in this community.", null, {
+					[b.i.UserNotAuthorized]: r.fbt._("You don't have permission to start talks in this community.", null, {
 						hk: "1XY1Ss"
 					}),
-					[h.i.RoomLimitExceeded]: r.fbt._("You can only create three talks at one time. To continue, close a talk you're not using.", null, {
+					[b.i.RoomLimitExceeded]: r.fbt._("You can only create three talks at one time. To continue, close a talk you're not using.", null, {
 						hk: "3zPx9X"
 					}),
-					[h.i.ConcurrentRoomLimitExceeded]: r.fbt._("Too many talks are happening right now. Try again later.", null, {
+					[b.i.ConcurrentRoomLimitExceeded]: r.fbt._("Too many talks are happening right now. Try again later.", null, {
 						hk: "2LYXJx"
 					}),
-					[h.i.SubredditRoomLimitExceeded]: r.fbt._("This community can only host two talks at a time. Try again after one has ended.", null, {
+					[b.i.SubredditRoomLimitExceeded]: r.fbt._("This community can only host two talks at a time. Try again after one has ended.", null, {
 						hk: "2mGf21"
 					})
 				}
@@ -1004,4 +1003,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ReportFlowNew.3760073683b6cef4ed42.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ReportFlowNew.dce21b0060839c7a044a.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/LiveVideoPlayer~PublicAccessNetwork~RpanListingUnit.51cded78bcde7cd05197.js
-// Retrieved at 9/12/2022, 11:30:07 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/LiveVideoPlayer~PublicAccessNetwork~RpanListingUnit.5bae79751e1ffde053db.js
+// Retrieved at 9/12/2022, 2:10:03 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["LiveVideoPlayer~PublicAccessNetwork~RpanListingUnit"], {
 		"./src/lib/VideoSession/VideoSessionManager.ts": function(e, t, s) {
@@ -42,11 +42,10 @@
 				}
 			}
 			var i = s("./src/lib/VideoSession/util.ts"),
-				c = s("./node_modules/uuid/v4.js"),
-				l = s.n(c);
-			const d = 1e4;
+				c = s("./node_modules/uuid/dist/esm-browser/v4.js");
+			const l = 1e4;
 
-			function u(e, t) {
+			function d(e, t) {
 				return {
 					startedAt: e,
 					expectedAt: e + t,
@@ -54,24 +53,24 @@
 				}
 			}
 
-			function m(e) {
+			function u(e) {
 				let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : 0;
-				const s = h(e, arguments.length > 2 ? arguments[2] : void 0);
+				const s = m(e, arguments.length > 2 ? arguments[2] : void 0);
 				for (var a = arguments.length, r = new Array(a > 3 ? a - 3 : 0), n = 3; n < a; n++) r[n - 3] = arguments[n];
 				return function(e) {
 					let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : 0;
 					const s = Date.now();
 					for (var a = arguments.length, r = new Array(a > 2 ? a - 2 : 0), n = 2; n < a; n++) r[n - 2] = arguments[n];
 					return setTimeout((function() {
-						const a = u(s, t);
+						const a = d(s, t);
 						for (var r = arguments.length, n = new Array(r), o = 0; o < r; o++) n[o] = arguments[o];
 						return e(a, ...n)
 					}), t, ...r)
 				}(s, t, ...r)
 			}
 
-			function h(e) {
-				let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : d;
+			function m(e) {
+				let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : l;
 				return function(s) {
 					const a = function(e, t) {
 						const {
@@ -87,7 +86,7 @@
 					return e(a, ...n)
 				}
 			}
-			var p = class {
+			var h = class {
 				constructor(e) {
 					this.handleTimeout = e => {
 						let {
@@ -103,7 +102,7 @@
 						onError: s,
 						onHeartbeat: a
 					} = e;
-					this.delayIterator = null, this.id = l()(), this.meta = t, this.onError = s, this.onHeartbeat = a, this.sessionTimer = new o, this.startedAt = 0, this.watchTimer = new o
+					this.delayIterator = null, this.id = Object(c.a)(), this.meta = t, this.onError = s, this.onHeartbeat = a, this.sessionTimer = new o, this.startedAt = 0, this.watchTimer = new o
 				}
 				get isPaused() {
 					return !!this.timeout
@@ -141,7 +140,7 @@
 						value: e,
 						done: t
 					} = this.delayIterator.next();
-					t || "number" != typeof e || (this.timeout = m(this.handleTimeout, e))
+					t || "number" != typeof e || (this.timeout = u(this.handleTimeout, e))
 				}
 				pauseHeartbeats() {
 					this.pauseWatchTimer(), this.watchTimer.lap(), this.emitHeartbeat(), this.clearTimeout()
@@ -176,17 +175,17 @@
 					this.timeout && (clearTimeout(this.timeout), delete this.timeout)
 				}
 			};
-			const v = new WeakMap;
-			class b {
+			const p = new WeakMap;
+			class v {
 				constructor(e, t) {
 					if (this.handlePause = () => {
-							const e = v.get(this);
+							const e = p.get(this);
 							e && !e.isPaused && e.pauseWatchTimer()
 						}, this.handlePlay = () => {
-							const e = v.get(this);
+							const e = p.get(this);
 							e && !e.isPaused && e.startWatchTimer()
 						}, this.handleError = e => {
-							const t = v.get(this);
+							const t = p.get(this);
 							if (!t || t.id !== e.id) return;
 							const {
 								meta: s
@@ -199,7 +198,7 @@
 							} = e;
 							var a;
 							if (!this.video) return;
-							const r = v.get(this);
+							const r = p.get(this);
 							if (!r || r.id !== s.id) return;
 							const n = {
 								...s,
@@ -213,10 +212,10 @@
 					this.idleTimer = new o, this.onHeartbeat = t.onHeartbeat, this.attachVideo(e)
 				}
 				get idle() {
-					return this.idleTimer.time >= b.IDLE_THRESHOLD
+					return this.idleTimer.time >= v.IDLE_THRESHOLD
 				}
 				get sessionStats() {
-					const e = v.get(this);
+					const e = p.get(this);
 					return e && e.stats
 				}
 				get videoStats() {
@@ -255,31 +254,31 @@
 						onError: this.handleError,
 						onHeartbeat: this.handleHeartbeat
 					};
-					return new p(t)
+					return new h(t)
 				}
 				startSession(e) {
 					if (!this.video) return;
-					let t = v.get(this);
-					t && !this.idle || (this.destroySession(), t = this.createSession(e), v.set(this, t)), this.idleTimer.reset(), t.startHeartbeats(this.video.paused)
+					let t = p.get(this);
+					t && !this.idle || (this.destroySession(), t = this.createSession(e), p.set(this, t)), this.idleTimer.reset(), t.startHeartbeats(this.video.paused)
 				}
 				pauseSession() {
 					if (!this.video) return;
-					const e = v.get(this);
+					const e = p.get(this);
 					e && (e.pauseHeartbeats(), this.idleTimer.start())
 				}
 				endSession() {
 					this.pauseSession(), this.destroySession()
 				}
 				destroySession() {
-					const e = v.get(this);
-					e && (e.destroy(), v.delete(this))
+					const e = p.get(this);
+					e && (e.destroy(), p.delete(this))
 				}
 				destroy() {
 					this.endSession(), this.detachVideo(), delete this.onHeartbeat
 				}
 			}
-			b.IDLE_THRESHOLD = Object(i.a)(300);
-			t.a = b
+			v.IDLE_THRESHOLD = Object(i.a)(300);
+			t.a = v
 		},
 		"./src/lib/VideoSession/util.ts": function(e, t, s) {
 			"use strict";
@@ -1683,4 +1682,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/LiveVideoPlayer~PublicAccessNetwork~RpanListingUnit.51cded78bcde7cd05197.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/LiveVideoPlayer~PublicAccessNetwork~RpanListingUnit.5bae79751e1ffde053db.js.map

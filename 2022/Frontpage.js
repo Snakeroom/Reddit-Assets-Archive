@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Frontpage.a2591a147dd664d35a89.js
-// Retrieved at 9/12/2022, 1:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Frontpage.6aef64697fa4def8ff97.js
+// Retrieved at 9/12/2022, 2:10:03 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Frontpage"], {
 		"./node_modules/intersection-observer/intersection-observer.js": function(e, t) {
@@ -450,31 +450,31 @@
 		"./src/reddit/actions/frontpage/index.ts": function(e, t, a) {
 			"use strict";
 			a.r(t), a.d(t, "frontpagePending", (function() {
-				return Ae
+				return Ce
 			})), a.d(t, "frontpageLoaded", (function() {
-				return Se
+				return Ae
 			})), a.d(t, "frontpageFailed", (function() {
-				return Ie
+				return Se
 			})), a.d(t, "frontpageFirstLoaded", (function() {
-				return we
+				return Ie
 			})), a.d(t, "frontpageDataRequested", (function() {
-				return Pe
+				return we
 			})), a.d(t, "frontpageRequestedHelper", (function() {
-				return Te
+				return Pe
 			})), a.d(t, "frontpageRequested", (function() {
-				return Me
+				return Le
 			})), a.d(t, "frontpageReloaded", (function() {
-				return Fe
+				return Be
 			})), a.d(t, "morePostsPending", (function() {
-				return Re
+				return Fe
 			})), a.d(t, "morePostsLoaded", (function() {
-				return De
+				return Re
 			})), a.d(t, "morePostsFailed", (function() {
-				return Ue
+				return De
 			})), a.d(t, "morePostsRequested", (function() {
-				return Ze
+				return Ue
 			})), a.d(t, "refreshFeed", (function() {
-				return qe
+				return Ze
 			}));
 			a("./node_modules/core-js/modules/web.dom.iterable.js");
 			var s = a("./node_modules/fbt/lib/FbtPublic.js"),
@@ -777,25 +777,24 @@
 				ke = a("./src/reddit/actions/liveBar/index.ts"),
 				Oe = a("./src/reddit/helpers/filterListingResponse/index.ts"),
 				Ne = a("./src/reddit/actions/frontpage/constants.ts"),
-				je = a("./node_modules/uuid/v4.js"),
-				Ce = a.n(je);
-			const Ae = Object(de.a)(Ne.d),
-				Se = Object(de.a)(Ne.c),
-				Ie = Object(de.a)(Ne.a),
-				we = Object(de.a)(Ne.b),
-				Pe = (e, t) => async (a, n, r) => {
+				je = a("./node_modules/uuid/dist/esm-browser/v4.js");
+			const Ce = Object(de.a)(Ne.d),
+				Ae = Object(de.a)(Ne.c),
+				Se = Object(de.a)(Ne.a),
+				Ie = Object(de.a)(Ne.b),
+				we = (e, t) => async (a, n, r) => {
 					var i, o, l, d, u, p, b, h;
 					const g = n();
 					if (g.listings.postOrder.api.pending[e]) return;
 					const f = ee.e[Object(te.S)(g, {})];
-					t.isMobile = Object(c.e)(g.meta.userAgent), t.recentPostIds = g.posts.recent, t.layout = f, t.useMockData = !!g.platform.currentPage && (!!g.platform.currentPage.queryParams.useMockData && Object(le.b)(g)), a(Ae({
+					t.isMobile = Object(c.e)(g.meta.userAgent), t.recentPostIds = g.posts.recent, t.layout = f, t.useMockData = !!g.platform.currentPage && (!!g.platform.currentPage.queryParams.useMockData && Object(le.b)(g)), a(Ce({
 						key: e
-					})), a(we(!1)); {
+					})), a(Ie(!1)); {
 						const e = g.platform.currentPage,
 							a = e && e.url;
 						a && (t.clickUrl = a)
 					}
-					const v = Ce()();
+					const v = Object(je.a)();
 					t.correlationId = v;
 					const _ = null === (o = null === (i = Object(B.b)(g)) || void 0 === i ? void 0 : i.routeMatch) || void 0 === o ? void 0 : o.route.chunk,
 						x = Object(F.Q)(g),
@@ -808,7 +807,7 @@
 					const y = `error-${e}`;
 					if (E.ok && E.body) {
 						const s = E.body;
-						a(Se({
+						a(Ae({
 							key: e,
 							meta: g.meta,
 							correlationId: v,
@@ -820,7 +819,7 @@
 						const r = null === (h = null === (b = Object(B.b)(g)) || void 0 === b ? void 0 : b.locationState) || void 0 === h ? void 0 : h[X.b.FeedLoadReason];
 						Object(he.b)(t.isRefresh ? X.a.UserRefresh : null != r ? r : X.a.InitialLoad)(n())
 					} else {
-						if (a(Ie({
+						if (a(Se({
 								error: E.error,
 								key: e,
 								...E.body
@@ -833,7 +832,7 @@
 								buttonText: s.fbt._("Retry", null, {
 									hk: "1XMjgA"
 								}),
-								buttonAction: Pe(e, t)
+								buttonAction: we(e, t)
 							})), Object(ye.a)(g, {
 								rate: 14
 							})) {
@@ -843,7 +842,7 @@
 						const r = E.error;
 						Object(he.a)(r ? `${E.status||"000"}: ${r.type}` : "000: UNKNOWN_ERROR")(n())
 					}
-				}, Te = (e, t) => async (a, s) => {
+				}, Pe = (e, t) => async (a, s) => {
 					var n;
 					const c = s(),
 						i = Object(M.a)(c),
@@ -868,7 +867,7 @@
 					const v = Object(ae.a)(c),
 						_ = Object(ae.b)(v),
 						x = [Object(ae.c)(v)];
-					await a(Pe(d, {
+					await a(we(d, {
 						...r()(e.queryParams, $.k),
 						...r()(e.queryParams, $.j),
 						limit: _,
@@ -883,7 +882,7 @@
 					});
 					const E = Object(ie.a)(c, {});
 					Object(ie.e)(E) && a(Object(K.openRegisterModal)())
-				}, Le = () => async (e, t) => {
+				}, Te = () => async (e, t) => {
 					var a, s;
 					const n = t();
 					if (Object(_e.a)(n)) return;
@@ -894,13 +893,13 @@
 						page: r,
 						isLoggedIn: c
 					})
-				}, Me = (e, t) => async a => {
-					await Promise.all([a(Object(i.b)()), a(Te(e, t)), a(Le()), a(Object(xe.c)(Ee.R))])
-				}, Be = Object(de.a)(Ne.e), Fe = e => async (t, a) => {
+				}, Le = (e, t) => async a => {
+					await Promise.all([a(Object(i.b)()), a(Pe(e, t)), a(Te()), a(Object(xe.c)(Ee.R))])
+				}, Me = Object(de.a)(Ne.e), Be = e => async (t, a) => {
 					const s = a(),
 						n = s.platform.currentPage.routeMatch.match;
-					Object(oe.o)(s) || Object(oe.u)(s) || (e || t(Be()), await t(Me(n, !0)))
-				}, Re = Object(de.a)(Ne.h), De = Object(de.a)(Ne.g), Ue = Object(de.a)(Ne.f), Ze = e => async (t, a, s) => {
+					Object(oe.o)(s) || Object(oe.u)(s) || (e || t(Me()), await t(Le(n, !0)))
+				}, Fe = Object(de.a)(Ne.h), Re = Object(de.a)(Ne.g), De = Object(de.a)(Ne.f), Ue = e => async (t, a, s) => {
 					let {
 						gqlContext: n
 					} = s;
@@ -919,7 +918,7 @@
 							s = i.listings.postOrder.fetchedTokens,
 							o = !(!s[m] || !s[m][p.token]);
 						if (!e && !o) {
-							t(Re({
+							t(Fe({
 								key: m,
 								fetchedToken: p.token
 							}));
@@ -949,14 +948,14 @@
 									...f.body,
 									...Object(Oe.a)(i, m, f.body)
 								};
-							if (f.ok) t(De({
+							if (f.ok) t(Re({
 								key: m,
 								fetchedToken: p.token,
 								meta: i.meta,
 								...v
 							})), Object(he.b)(X.a.NextPageLoad)(a());
 							else {
-								t(Ue({
+								t(De({
 									key: m,
 									error: f.error,
 									fetchedToken: p.token,
@@ -967,7 +966,7 @@
 							}
 						}
 					}
-				}, qe = e => async (t, a) => {
+				}, Ze = e => async (t, a) => {
 					const s = a(),
 						n = Object(M.a)(s),
 						{
@@ -979,7 +978,7 @@
 						d = o in l.mc && l.mc[o],
 						u = Object(ae.a)(s),
 						m = Object(ae.b)(u);
-					await t(Pe(i, {
+					await t(we(i, {
 						limit: m,
 						sort: r,
 						t: Object(se.a)(r, d),
@@ -2133,7 +2132,7 @@
 					const t = this.resolve(e);
 					return !1 !== this.resolved[t] && !!a.m[t]
 				},
-				importAsync: () => Promise.all([a.e(0), a.e(1), a.e(3), a.e("MarketplaceInFeedUnit")]).then(a.bind(null, "./src/reddit/components/Econ/Marketplace/InFeedUnit/index.tsx")),
+				importAsync: () => Promise.all([a.e("vendors~Avatar~CryptoLibEthers~GovernanceTransferPointsModal~MarketplaceClaimModal~MarketplaceInFeed~1befd72a"), a.e("vendors~Avatar~ChatPost~MarketplaceClaimModal~MarketplaceInFeedUnit~NftProfileUnit~RealtimeGQLSubscr~bfab320d"), a.e("vendors~Avatar~MarketplaceClaimModal~MarketplaceInFeedUnit~NftProfileUnit~SnoovatarModal"), a.e(0), a.e(1), a.e("MarketplaceInFeedUnit")]).then(a.bind(null, "./src/reddit/components/Econ/Marketplace/InFeedUnit/index.tsx")),
 				requireAsync(e) {
 					const t = this.resolve(e);
 					return this.resolved[t] = !1, this.importAsync(e).then(e => (this.resolved[t] = !0, e))
@@ -2892,10 +2891,10 @@
 			}
 			var qe = a("./src/reddit/selectors/experiments/utils.ts");
 			const Ve = Object(u.a)(e => Object(Ue.c)(e, {
-					experimentName: Fe.me,
+					experimentName: Fe.le,
 					experimentEligibilitySelector: Ue.a
 				}), qe.a),
-				We = Object(u.a)(Ve, e => e === Fe.pe.Enabled);
+				We = Object(u.a)(Ve, e => e === Fe.oe.Enabled);
 			var He = a("./src/reddit/selectors/experiments/loggedOutOneFeed.ts"),
 				Ge = a("./src/reddit/selectors/experiments/publicAccessNetwork.ts"),
 				Ke = a("./src/reddit/selectors/user.ts");
@@ -2928,7 +2927,7 @@
 							return Object(Ue.c)(e, {
 								experimentEligibilitySelector: Ke.Q,
 								experimentName: Fe.Ic
-							}) === Fe.Jd
+							}) === Fe.Id
 						}(e)
 					},
 					isNavbarLikeMwebEnabled: d.a,
@@ -7383,8 +7382,8 @@
 					return Object(n.c)(e, {
 						experimentEligibilitySelector: o,
 						experimentName: s.cd
-					}) === s.Ld.Enabled
-				}(e) ? l.Achievements : t === s.Md.ControlBanner ? l.CommunitySpacesControl : t === s.Md.EnabledBanner ? l.CommunitySpaces : null
+					}) === s.Kd.Enabled
+				}(e) ? l.Achievements : t === s.Ld.ControlBanner ? l.CommunitySpacesControl : t === s.Ld.EnabledBanner ? l.CommunitySpaces : null
 			}! function(e) {
 				e.Achievements = "achievements", e.CommunitySpaces = "communitySpaces", e.CommunitySpacesControl = "communitySpaces--control"
 			}(l || (l = {}))
@@ -7401,13 +7400,13 @@
 			const r = e => {
 					return !(Object(n.c)(e, {
 						experimentEligibilitySelector: n.a,
-						experimentName: s.se
-					}) === s.Jd)
+						experimentName: s.re
+					}) === s.Id)
 				},
 				c = e => Object(n.c)(e, {
 					experimentEligibilitySelector: n.a,
-					experimentName: s.te
-				}) === s.Jd
+					experimentName: s.se
+				}) === s.Id
 		},
 		"./src/reddit/selectors/experiments/inAppNotification.ts": function(e, t, a) {
 			"use strict";
@@ -7599,4 +7598,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Frontpage.a2591a147dd664d35a89.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Frontpage.6aef64697fa4def8ff97.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CustomBadgeHovercardTooltip.958ea4470d901e1e04b7.js
-// Retrieved at 9/8/2022, 1:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CustomBadgeHovercardTooltip.8b147970ff7da0f8f4f4.js
+// Retrieved at 9/12/2022, 2:10:03 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CustomBadgeHovercardTooltip"], {
 		"./src/lib/constants/specialMembership.ts": function(e, t, r) {
@@ -81,22 +81,21 @@
 				d = r("./src/reddit/components/OverlayAwareTooltip/index.tsx"),
 				a = r("./src/reddit/selectors/tooltip.ts"),
 				u = r("./node_modules/fbt/lib/FbtPublic.js"),
-				l = r("./node_modules/uuid/v4.js"),
-				m = r.n(l),
-				p = r("./src/lib/classNames/index.ts"),
-				b = r("./src/reddit/actions/economics/subredditPremium/actionCreators.ts"),
-				f = r("./src/reddit/components/TrackingHelper/index.tsx"),
-				h = r("./src/reddit/controls/Button/index.tsx"),
-				_ = r("./src/reddit/helpers/economics/membershipPage.ts"),
-				y = r("./src/reddit/icons/svgs/AddSquare/index.tsx"),
-				C = r("./src/reddit/icons/svgs/Crown/index.tsx"),
-				O = r("./src/reddit/selectors/economics.ts"),
-				E = r("./src/reddit/selectors/telemetry.ts"),
-				S = r("./src/reddit/components/Badges/UserDisplay/AddCustomTooltip/index.m.less"),
-				g = r.n(S);
-			class I extends n.a.Component {
+				l = r("./node_modules/uuid/dist/esm-browser/v4.js"),
+				m = r("./src/lib/classNames/index.ts"),
+				p = r("./src/reddit/actions/economics/subredditPremium/actionCreators.ts"),
+				b = r("./src/reddit/components/TrackingHelper/index.tsx"),
+				f = r("./src/reddit/controls/Button/index.tsx"),
+				h = r("./src/reddit/helpers/economics/membershipPage.ts"),
+				_ = r("./src/reddit/icons/svgs/AddSquare/index.tsx"),
+				y = r("./src/reddit/icons/svgs/Crown/index.tsx"),
+				C = r("./src/reddit/selectors/economics.ts"),
+				O = r("./src/reddit/selectors/telemetry.ts"),
+				E = r("./src/reddit/components/Badges/UserDisplay/AddCustomTooltip/index.m.less"),
+				S = r.n(E);
+			class g extends n.a.Component {
 				constructor(e) {
-					super(e), this.correlationId = e.correlationId || m()()
+					super(e), this.correlationId = e.correlationId || Object(l.a)()
 				}
 				componentDidMount() {
 					this.props.sendEvent(e => ({
@@ -104,68 +103,68 @@
 						action: "open",
 						noun: "custom_badges_hover_card",
 						correlationId: this.correlationId,
-						...E.n(e),
-						subreddit: E.ib(e)
+						...O.n(e),
+						subreddit: O.ib(e)
 					}))
 				}
 				onOpenUploadDialog() {
 					this.props.onHideTooltip(), this.props.onOpenUploadDialog()
 				}
 				render() {
-					const e = this.props.userIsPremiumSubscriber === O.a.Subscribed,
+					const e = this.props.userIsPremiumSubscriber === C.a.Subscribed,
 						t = this.props.subreddit && this.props.subreddit.name || "",
 						r = this.props.meta;
 					return n.a.createElement("div", {
-						className: Object(p.a)(this.props.className, g.a.container),
+						className: Object(m.a)(this.props.className, S.a.container),
 						style: this.props.style
 					}, n.a.createElement("header", {
-						className: g.a.header
+						className: S.a.header
 					}, e ? u.fbt._("Custom Badge", null, {
 						hk: "4xui7o"
 					}) : u.fbt._("Upload Badge", null, {
 						hk: "41J8Iq"
 					})), n.a.createElement("article", {
-						className: g.a.content
+						className: S.a.content
 					}, e ? u.fbt._("Create a custom badge. Share it with other {memberAltPlural} for a reward.", [u.fbt._param("memberAltPlural", r.memberAltPlural)], {
 						hk: "1GYswu"
 					}) : u.fbt._("Users without a {membershipAlt} can design and upload badges and receive 3 months of {membership} for free.", [u.fbt._param("membershipAlt", r.membershipAlt), u.fbt._param("membership", r.membership)], {
 						hk: "lVti0"
 					})), n.a.createElement("footer", {
-						className: g.a.footer
-					}, n.a.createElement(h.r, {
-						className: g.a.link,
+						className: S.a.footer
+					}, n.a.createElement(f.r, {
+						className: S.a.link,
 						onClick: () => this.onOpenUploadDialog()
-					}, n.a.createElement(y.a, {
-						className: g.a.addCustomIcon
+					}, n.a.createElement(_.a, {
+						className: S.a.addCustomIcon
 					}), u.fbt._("upload custom badge", null, {
 						hk: "26VOvM"
-					})), !e && n.a.createElement(h.s, {
-						className: g.a.link,
+					})), !e && n.a.createElement(f.s, {
+						className: S.a.link,
 						disabled: !this.props.subreddit,
-						to: Object(_.a)(t, this.correlationId),
+						to: Object(h.a)(t, this.correlationId),
 						onClick: e => {
 							e.stopPropagation(), this.props.sendEvent(e => ({
 								source: "meta",
 								action: "click",
 								noun: "custom_badge_hover_open_learn_more",
 								correlationId: this.correlationId,
-								...E.n(e),
-								subreddit: E.ib(e)
+								...O.n(e),
+								subreddit: O.ib(e)
 							}))
 						}
-					}, n.a.createElement(C.a, {
-						className: g.a.crown
+					}, n.a.createElement(y.a, {
+						className: S.a.crown
 					}), u.fbt._("Get {membershipAlt}", [u.fbt._param("membershipAlt", r.membershipAlt)], {
 						hk: "2RRNNM"
 					}))))
 				}
 			}
-			const P = Object(c.c)({
+			const I = Object(c.c)({
 				meta: (e, t) => {
 					let {
 						subredditId: r
 					} = t;
-					return Object(O.r)(e, r)
+					return Object(C.r)(e, r)
 				},
 				subreddit: (e, t) => {
 					let {
@@ -177,14 +176,14 @@
 					let {
 						subredditId: r
 					} = t;
-					return Object(O.x)(e, r)
+					return Object(C.x)(e, r)
 				}
 			});
-			var v = Object(f.c)(Object(o.b)(P, e => ({
-				onOpenUploadDialog: () => e(Object(b.j)())
-			}))(I));
-			const A = Object(d.a)(v, [i.a.Click, i.a.Keydown]);
-			const M = Object(c.c)({
+			var P = Object(b.c)(Object(o.b)(I, e => ({
+				onOpenUploadDialog: () => e(Object(p.j)())
+			}))(g));
+			const v = Object(d.a)(P, [i.a.Click, i.a.Keydown]);
+			const A = Object(c.c)({
 				isOpen: (e, t) => {
 					let {
 						tooltipId: r
@@ -192,8 +191,8 @@
 					return Object(a.b)(r)(e)
 				}
 			});
-			t.default = Object(o.b)(M)((function(e) {
-				return e.isOpen ? n.a.createElement(A, e) : null
+			t.default = Object(o.b)(A)((function(e) {
+				return e.isOpen ? n.a.createElement(v, e) : null
 			}))
 		},
 		"./src/reddit/components/OverlayAwareTooltip/index.tsx": function(e, t, r) {
@@ -905,4 +904,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CustomBadgeHovercardTooltip.958ea4470d901e1e04b7.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CustomBadgeHovercardTooltip.8b147970ff7da0f8f4f4.js.map

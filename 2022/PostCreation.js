@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostCreation.b4cd00abdb71fe605ad0.js
-// Retrieved at 9/12/2022, 1:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostCreation.d8f9546b5296a08fd3f0.js
+// Retrieved at 9/12/2022, 2:10:03 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostCreation", "ChatMessageInput~MembershipPaywallPage~RichTextEditor", "ContributorRequestButton"], {
 		"./node_modules/autosize/dist/autosize.js": function(e, t, n) {
@@ -1517,7 +1517,7 @@
 			const ce = Object(ae.a)(e => Object(ie.c)(e, {
 				experimentEligibilitySelector: ie.a,
 				experimentName: re.Lb
-			}), e => e === re.Jd);
+			}), e => e === re.Id);
 			var le = n("./src/reddit/selectors/experiments/contributeBeforeSignUp.ts"),
 				de = n("./src/reddit/selectors/platform.ts"),
 				ue = n("./src/reddit/selectors/posts.ts"),
@@ -3317,64 +3317,63 @@
 		"./src/reddit/actions/postCreation/mediaUpload.ts": function(e, t, n) {
 			"use strict";
 			n.d(t, "f", (function() {
-				return M
+				return R
 			})), n.d(t, "b", (function() {
-				return L
+				return D
 			})), n.d(t, "a", (function() {
-				return A
+				return L
 			})), n.d(t, "c", (function() {
-				return B
+				return F
 			})), n.d(t, "e", (function() {
-				return U
+				return B
 			})), n.d(t, "d", (function() {
-				return K
+				return U
 			}));
 			n("./node_modules/core-js/modules/web.dom.iterable.js");
 			var o = n("./node_modules/fbt/lib/FbtPublic.js"),
-				s = n("./node_modules/uuid/v4.js"),
-				r = n.n(s),
-				i = n("./src/lib/constants/index.ts"),
-				a = n("./src/lib/formatApiError/index.ts"),
-				c = n("./src/lib/makeActionCreator/index.ts"),
-				l = n("./src/reddit/actions/toaster.ts"),
-				d = n("./src/reddit/actions/upload.ts"),
-				u = n("./src/reddit/components/PostCreationForm/MediaInput/ImageGalleryDrop/constants.ts"),
-				m = n("./src/lib/makeApiRequest/index.ts"),
-				p = n("./src/lib/makeGqlRequest/index.ts"),
-				h = n("./src/lib/omitHeaders/index.ts"),
-				b = n("./src/reddit/constants/headers.ts"),
-				f = n("./src/redditGQL/operations/CreateMediaUploadLease.json");
-			var g = n("./src/reddit/helpers/correlationIdTracker.ts"),
-				E = n("./src/reddit/helpers/imagePreview/index.ts"),
-				C = n("./src/reddit/helpers/media/index.ts"),
-				x = n("./src/reddit/models/Upload/index.ts"),
-				y = n("./src/reddit/selectors/telemetry.ts"),
-				v = n("./src/telemetry/index.ts");
-			const O = e => ({
-				...y.n(e),
-				screen: y.ab(e),
-				profile: y.S(e),
-				subreddit: y.ib(e)
+				s = n("./node_modules/uuid/dist/esm-browser/v4.js"),
+				r = n("./src/lib/constants/index.ts"),
+				i = n("./src/lib/formatApiError/index.ts"),
+				a = n("./src/lib/makeActionCreator/index.ts"),
+				c = n("./src/reddit/actions/toaster.ts"),
+				l = n("./src/reddit/actions/upload.ts"),
+				d = n("./src/reddit/components/PostCreationForm/MediaInput/ImageGalleryDrop/constants.ts"),
+				u = n("./src/lib/makeApiRequest/index.ts"),
+				m = n("./src/lib/makeGqlRequest/index.ts"),
+				p = n("./src/lib/omitHeaders/index.ts"),
+				h = n("./src/reddit/constants/headers.ts"),
+				b = n("./src/redditGQL/operations/CreateMediaUploadLease.json");
+			var f = n("./src/reddit/helpers/correlationIdTracker.ts"),
+				g = n("./src/reddit/helpers/imagePreview/index.ts"),
+				E = n("./src/reddit/helpers/media/index.ts"),
+				C = n("./src/reddit/models/Upload/index.ts"),
+				x = n("./src/reddit/selectors/telemetry.ts"),
+				y = n("./src/telemetry/index.ts");
+			const v = e => ({
+				...x.n(e),
+				screen: x.ab(e),
+				profile: x.S(e),
+				subreddit: x.ib(e)
 			});
-			var _ = n("./src/reddit/helpers/trackers/postComposer.ts"),
-				k = n("./src/reddit/models/PostCreationForm/index.ts"),
-				S = n("./src/reddit/models/Toast/index.ts"),
-				j = n("./src/reddit/selectors/postCreations.ts"),
-				T = n("./src/reddit/helpers/graphql/normalizeUploadLeaseFromGql/index.ts"),
-				w = n("./src/reddit/actions/postCreation/constants.ts"),
-				I = n("./src/reddit/actions/postCreation/general.ts");
-			const P = Object(c.a)(w.u),
-				N = Object(c.a)(w.v),
-				R = Object(c.a)(w.t),
-				M = e => async (t, n) => {
-					t(P());
+			var O = n("./src/reddit/helpers/trackers/postComposer.ts"),
+				_ = n("./src/reddit/models/PostCreationForm/index.ts"),
+				k = n("./src/reddit/models/Toast/index.ts"),
+				S = n("./src/reddit/selectors/postCreations.ts"),
+				j = n("./src/reddit/helpers/graphql/normalizeUploadLeaseFromGql/index.ts"),
+				T = n("./src/reddit/actions/postCreation/constants.ts"),
+				w = n("./src/reddit/actions/postCreation/general.ts");
+			const I = Object(a.a)(T.u),
+				P = Object(a.a)(T.v),
+				N = Object(a.a)(T.t),
+				R = e => async (t, n) => {
+					t(I());
 					const o = e.map(e => {
 						let {
 							url: n,
 							uploadKey: o
 						} = e;
-						const s = Object(C.b)(Object(C.d)(n), "poster.png");
-						return t(F(s, o))
+						const s = Object(E.b)(Object(E.d)(n), "poster.png");
+						return t(A(s, o))
 					});
 					await Promise.all(o);
 					const s = n().uploads,
@@ -3383,9 +3382,9 @@
 								uploadKey: t
 							} = e;
 							return s[t]
-						}).find(e => e.status !== x.a.SUCCESS);
-					t(r ? R(r.error) : N())
-				}, D = (e, t) => ({
+						}).find(e => e.status !== C.a.SUCCESS);
+					t(r ? N(r.error) : P())
+				}, M = (e, t) => ({
 					error: t ? {
 						type: e,
 						fields: [{
@@ -3396,25 +3395,25 @@
 						type: e
 					}
 				});
-			const L = "RTE",
-				A = "GALLERY",
-				F = (e, t, n, s, r, a) => async (c, u, k) => {
+			const D = "RTE",
+				L = "GALLERY",
+				A = (e, t, n, s, i, a) => async (d, _, T) => {
 					let {
 						apiContext: w,
 						gqlContext: I
-					} = k;
-					const P = Object(j.h)(u()),
+					} = T;
+					const P = Object(S.h)(_()),
 						N = Date.now();
 					let R = null,
-						M = !1,
+						D = !1,
 						L = !1,
 						A = !1;
 					const F = e => {
-						if (!A && n && M) {
+						if (!A && n && D) {
 							A = !0;
-							const o = u(),
+							const o = _(),
 								s = Date.now() - N,
-								r = Object(g.c)(g.a.PostComposer);
+								r = Object(f.c)(f.a.PostComposer);
 							L ? (async e => {
 								let {
 									state: t,
@@ -3426,7 +3425,7 @@
 									correlationId: a
 								} = e;
 								const c = t.uploads[n],
-									l = s || c.status === x.a.CANCELED,
+									l = s || c.status === C.a.CANCELED,
 									{
 										file: d,
 										url: u,
@@ -3435,7 +3434,7 @@
 									} = c,
 									h = m.mimetype || d.type,
 									b = h.startsWith("video/"),
-									f = c.status === x.a.SUCCESS;
+									f = c.status === C.a.SUCCESS;
 								let g = "";
 								p ? g = JSON.stringify(p) : l && (g = "canceled");
 								const E = {
@@ -3443,14 +3442,14 @@
 									height: m.height,
 									duration: m.videoDuration && Math.round(1e3 * m.videoDuration)
 								};
-								Object(v.a)({
+								Object(y.a)({
 									source: "post_composer",
 									action: "upload",
 									correlationId: a,
 									noun: b ? "video" : "image",
-									...O(t),
+									...v(t),
 									actionInfo: {
-										...y.d(t),
+										...x.d(t),
 										success: f,
 										...g ? {
 											reason: g
@@ -3480,12 +3479,12 @@
 								fileSource: n,
 								uploadDuration: s,
 								correlationId: r
-							}) : _.D(o, t)
+							}) : O.D(o, t)
 						}
 					};
-					return await c(Object(d.l)(e, t, async u => {
-						var g, x, y, v;
-						M = !0, Object(d.k)(u.id, () => {
+					return await d(Object(l.l)(e, t, async f => {
+						var C, x, y, v;
+						D = !0, Object(l.k)(f.id, () => {
 							F(!0)
 						});
 						const {
@@ -3493,92 +3492,92 @@
 							metadata: _
 						} = await async function(e, t, n) {
 							const s = t && t.allowedPostTypes,
-								r = t && t.name,
-								a = await Object(C.h)(e) || e.type,
-								c = Object(C.c)(e) || void 0;
-							if (!c) return D("UNSUPPORTED_BROWSER");
+								i = t && t.name,
+								a = await Object(E.h)(e) || e.type,
+								c = Object(E.c)(e) || void 0;
+							if (!c) return M("UNSUPPORTED_BROWSER");
 							const l = {
 								localUrl: c,
 								mimetype: a
 							};
-							if (!a || !Object(C.k)(a)) return {
+							if (!a || !Object(E.k)(a)) return {
 								error: {
-									type: i.W
+									type: r.W
 								}
 							};
 							if (a.startsWith("image/")) {
 								if (s && !s.images) {
-									const e = o.fbt._("Images are not allowed in r/{subredditName}", [o.fbt._param("subredditName", r)], {
+									const e = o.fbt._("Images are not allowed in r/{subredditName}", [o.fbt._param("subredditName", i)], {
 										hk: "3C2E7Q"
 									});
-									return D(i.W, e)
+									return M(r.W, e)
 								}
 								if ("image/gif" === a) {
-									if (e.size > i.cb) return D(i.M)
-								} else if (e.size > i.eb) return D(i.U);
-								const t = await Object(E.a)(c);
+									if (e.size > r.cb) return M(r.M)
+								} else if (e.size > r.eb) return M(r.U);
+								const t = await Object(g.a)(c);
 								if (n && (t.width < n || t.height < n)) {
 									const e = o.fbt._("Image must be {min_image_width}x{min_image_height} pixels or larger.", [o.fbt._param("min_image_width", n.toString()), o.fbt._param("min_image_height", n.toString())], {
 										hk: "2WFKgs"
 									});
-									return D(i.T, e)
+									return M(r.T, e)
 								}
 								l.width = t.width, l.height = t.height
 							} else if (a.startsWith("video/")) {
-								if (e.size > i.ib) return D(i.tc);
+								if (e.size > r.ib) return M(r.tc);
 								let t;
 								try {
-									t = await Object(C.j)(c, !0)
+									t = await Object(E.j)(c, !0)
 								} catch (d) {
-									return D(i.W)
+									return M(r.W)
 								}
 								if (s) {
 									const {
 										videos: e,
 										images: n
 									} = s;
-									if (n && !e && t.duration > i.jb) {
-										const e = o.fbt._("Sorry, r/{subredditName} doesn't allow videos. Please upload a video less than 60 seconds to convert to animated GIF.", [o.fbt._param("subredditName", r)], {
+									if (n && !e && t.duration > r.jb) {
+										const e = o.fbt._("Sorry, r/{subredditName} doesn't allow videos. Please upload a video less than 60 seconds to convert to animated GIF.", [o.fbt._param("subredditName", i)], {
 											hk: "46ULiz"
 										});
-										return D(i.W, e)
+										return M(r.W, e)
 									}
 									if (!n && !e) {
-										const e = o.fbt._("Videos are not allowed in r/{subredditName}", [o.fbt._param("subredditName", r)], {
+										const e = o.fbt._("Videos are not allowed in r/{subredditName}", [o.fbt._param("subredditName", i)], {
 											hk: "4uTUZb"
 										});
-										return D(i.W, e)
+										return M(r.W, e)
 									}
 								}
-								if (t.duration > i.hb) {
-									const e = o.fbt._("Video is too long. Maximum video length is {duration} minutes.", [o.fbt._param("duration", (i.hb / 60).toString())], {
+								if (t.duration > r.hb) {
+									const e = o.fbt._("Video is too long. Maximum video length is {duration} minutes.", [o.fbt._param("duration", (r.hb / 60).toString())], {
 										hk: "20nB6Q"
 									});
-									return D(i.W, e)
+									return M(r.W, e)
 								}
-								if (t.duration < i.pb) {
-									const e = o.fbt._("Video is too short. Minimum video length is {duration} seconds.", [o.fbt._param("duration", i.pb.toString())], {
+								if (t.duration < r.pb) {
+									const e = o.fbt._("Video is too short. Minimum video length is {duration} seconds.", [o.fbt._param("duration", r.pb.toString())], {
 										hk: "49PSW8"
 									});
-									return D(i.W, e)
+									return M(r.W, e)
 								}
 								if (0 === t.height || 0 === t.width) {
 									const e = o.fbt._("Your browser does not support the video codec used for this video. Please try using a different video codec.", null, {
 										hk: "1AC0mg"
 									});
-									return D(i.W, e)
+									return M(r.W, e)
 								}
-								if (t.height < i.qb || t.width < i.rb) {
-									const e = o.fbt._("Videos must be {min_video_width}x{min_video_height} pixels or larger.", [o.fbt._param("min_video_width", i.rb.toString()), o.fbt._param("min_video_height", i.qb.toString())], {
+								if (t.height < r.qb || t.width < r.rb) {
+									const e = o.fbt._("Videos must be {min_video_width}x{min_video_height} pixels or larger.", [o.fbt._param("min_video_width", r.rb.toString()), o.fbt._param("min_video_height", r.qb.toString())], {
 										hk: "2HSUGl"
 									});
-									return D(i.W, e)
+									return M(r.W, e)
 								}
-								if (e.size / t.duration < i.ob) {
-									const e = o.fbt._("Videos must have a bitrate of {min_bitrate}KB/s or larger.", [o.fbt._param("min_bitrate", (i.ob / i.X).toString())], {
+								if (e.size / t.duration < r.ob) {
+									const e = o.fbt._("Videos must have a bitrate of {min_bitrate}KB/s or larger.", [o.fbt._param("min_bitrate", (r.ob / r.X).toString())], {
 										hk: "1ehgDE"
 									});
-									return D(i.W, e)
+									return M(r.W, e)
 								}
 								l.height = t.height, l.width = t.width, l.videoDuration = t.duration, l.videoFirstFrameUrl = t.firstFrame.dataUrl
 							}
@@ -3589,19 +3588,19 @@
 						if (O || !_) return {
 							error: O
 						};
-						if (c(Object(d.m)({
+						if (d(Object(l.m)({
 								key: t,
 								metadata: {
 									fileSource: n,
 									..._
 								}
-							})), L = !0, s && s(), r) {
+							})), L = !0, s && s(), i) {
 							const e = _.mimetype,
-								t = e && i.R[e];
+								t = e && r.R[e];
 							if (e && t) {
 								const e = await (async (e, t) => {
-									return await Object(p.a)(e, {
-										...f,
+									return await Object(m.a)(e, {
+										...b,
 										variables: {
 											input: {
 												mimetype: t
@@ -3611,8 +3610,8 @@
 								})(I(), t);
 								if (e.ok) {
 									const t = e.body,
-										n = (null === (g = t.data.createMediaUploadLease) || void 0 === g ? void 0 : g.uploadLease.uploadLeaseUrl) || "",
-										o = Object(T.a)({
+										n = (null === (C = t.data.createMediaUploadLease) || void 0 === C ? void 0 : C.uploadLease.uploadLeaseUrl) || "",
+										o = Object(j.a)({
 											uploadLeaseUrl: n,
 											uploadLeaseHeaders: null === (x = t.data.createMediaUploadLease) || void 0 === x ? void 0 : x.uploadLease.uploadLeaseHeaders
 										});
@@ -3633,8 +3632,8 @@
 									}
 								}
 							}
-							return c(Object(l.f)({
-								kind: S.b.Error,
+							return d(Object(c.f)({
+								kind: k.b.Error,
 								text: o.fbt._("Only .jpeg and .png image types are are allowed", null, {
 									hk: "30Ms4V"
 								}),
@@ -3643,53 +3642,53 @@
 								error: void 0
 							}
 						}
-						const k = e.name,
-							j = await (async (e, t, n) => Object(m.a)(Object(h.a)(e, [b.a]), {
+						const S = e.name,
+							T = await (async (e, t, n) => Object(u.a)(Object(p.a)(e, [h.a]), {
 								endpoint: `${e.apiUrl}/api/media/asset.json`,
-								method: i.mb.POST,
+								method: r.mb.POST,
 								data: {
 									filepath: t,
 									mimetype: n
 								}
-							}))(w(), k, _.mimetype);
-						return j.ok ? (R = j.body.asset.asset_id, {
-							uploadLease: j.body.args
+							}))(w(), S, _.mimetype);
+						return T.ok ? (R = T.body.asset.asset_id, {
+							uploadLease: T.body.args
 						}) : {
-							error: j.error || void 0
+							error: T.error || void 0
 						}
-					}, !0)), F(!1), u().uploads[t] || null
-				}, B = e => async (t, n, o) => {
+					}, !0)), F(!1), _().uploads[t] || null
+				}, F = e => async (t, n, o) => {
 					let {
 						apiContext: s
 					} = o;
 					const r = n().uploads[e];
-					r && !Object(x.c)(r) && await t(F(r.file, r.key, r.metadata.fileSource, void 0))
-				}, U = (e, t, n, s, i) => async (c, d) => {
+					r && !Object(C.c)(r) && await t(A(r.file, r.key, r.metadata.fileSource, void 0))
+				}, B = (e, t, n, r, a) => async (l, d) => {
 					const u = e.map((e, o) => new Promise(async o => {
-							const a = Object(x.d)(n, r()().slice(-6));
-							await c(F(e, a, t, () => o({
-								uploadKey: a,
+							const i = Object(C.d)(n, Object(s.a)().slice(-6));
+							await l(A(e, i, t, () => o({
+								uploadKey: i,
 								isValid: !0
-							}), s, i)), o({
-								uploadKey: a,
+							}), r, a)), o({
+								uploadKey: i,
 								isValid: !1
 							})
 						})),
 						m = await Promise.all(u),
 						p = m.map(e => e.uploadKey);
-					return c(function(e) {
+					return l(function(e) {
 						let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : 3;
 						return async (n, s) => {
 							const {
 								uploads: r
-							} = s(), i = e.map(e => r[e]).filter(e => e.status === x.a.FAILED && !e.metadata.mimetype).map(e => e.error), c = i.length > t ? t - 1 : i.length, d = i.length - c;
-							i.slice(0, c).forEach(e => n(Object(l.f)({
-								duration: l.a,
-								kind: S.b.Error,
-								text: Object(a.a)(e)
-							}))), d > 0 && n(Object(l.f)({
-								duration: l.a,
-								kind: S.b.Error,
+							} = s(), a = e.map(e => r[e]).filter(e => e.status === C.a.FAILED && !e.metadata.mimetype).map(e => e.error), l = a.length > t ? t - 1 : a.length, d = a.length - l;
+							a.slice(0, l).forEach(e => n(Object(c.f)({
+								duration: c.a,
+								kind: k.b.Error,
+								text: Object(i.a)(e)
+							}))), d > 0 && n(Object(c.f)({
+								duration: c.a,
+								kind: k.b.Error,
 								text: o.fbt._({
 									"*": "Couldn't add {number} more files",
 									_1: "Couldn't add 1 more file"
@@ -3699,39 +3698,39 @@
 							}))
 						}
 					}(p)), m.filter(e => e.isValid).map(e => e.uploadKey)
-				}, K = (e, t) => async (n, s) => {
+				}, U = (e, t) => async (n, s) => {
 					const r = s(),
-						i = Object(j.W)(r),
+						i = Object(S.W)(r),
 						{
 							items: a
 						} = i,
-						c = !a.length && 1 === e.length,
-						m = Object(j.N)(r) && !c;
+						u = !a.length && 1 === e.length,
+						m = Object(S.N)(r) && !u;
 					let p = !1,
 						h = e;
 					if (m) {
-						if (Object(k.x)(i)) return void n(Object(l.f)({
-							kind: S.b.Error,
+						if (Object(_.x)(i)) return void n(Object(c.f)({
+							kind: k.b.Error,
 							text: o.fbt._("Please remove the existing video first. Videos aren't supported within galleries yet.", null, {
 								hk: "3lGxp4"
 							})
 						}));
-						h.some(e => Object(C.n)(e.type)) && n(Object(l.f)({
-							duration: l.a,
-							kind: S.b.Error,
+						h.some(e => Object(E.n)(e.type)) && n(Object(c.f)({
+							duration: c.a,
+							kind: k.b.Error,
 							text: o.fbt._("Videos aren’t supported within galleries...yet", null, {
 								hk: "9Cl20"
 							})
-						})), h = h.filter(e => Object(C.m)(e.type));
-						const e = Math.max(0, u.b - a.length);
-						h.length > e && (n(Object(l.f)({
-							kind: S.b.Error,
-							text: o.fbt._("You have hit the limit of {images_limit} images", [o.fbt._param("images_limit", `${u.b}`)], {
+						})), h = h.filter(e => Object(E.m)(e.type));
+						const e = Math.max(0, d.b - a.length);
+						h.length > e && (n(Object(c.f)({
+							kind: k.b.Error,
+							text: o.fbt._("You have hit the limit of {images_limit} images", [o.fbt._param("images_limit", `${d.b}`)], {
 								hk: "6M4kX"
 							})
 						})), h = h.slice(0, e))
-					} else h = h.slice(0, 1), p = !0, n(Object(d.j)(A, !0));
-					const b = await n(U(h, t, A));
+					} else h = h.slice(0, 1), p = !0, n(Object(l.j)(L, !0));
+					const b = await n(B(h, t, L));
 					if (!b.length) return;
 					const f = b.map(e => ({
 							uploadKey: e,
@@ -3739,7 +3738,7 @@
 							url: ""
 						})),
 						g = 0 === a.length;
-					n(Object(I.d)({
+					n(Object(w.d)({
 						...i,
 						items: p ? f : [...a, ...f],
 						selectedKey: g ? b[0] : b[b.length - 1]
@@ -4874,79 +4873,78 @@
 		"./src/reddit/actions/upload.ts": function(e, t, n) {
 			"use strict";
 			n.d(t, "d", (function() {
-				return d
+				return l
 			})), n.d(t, "h", (function() {
-				return u
+				return d
 			})), n.d(t, "c", (function() {
-				return m
+				return u
 			})), n.d(t, "e", (function() {
-				return p
+				return m
 			})), n.d(t, "g", (function() {
-				return h
+				return p
 			})), n.d(t, "b", (function() {
-				return b
+				return h
 			})), n.d(t, "a", (function() {
-				return f
+				return b
 			})), n.d(t, "f", (function() {
-				return g
+				return f
 			})), n.d(t, "m", (function() {
-				return x
+				return C
 			})), n.d(t, "k", (function() {
-				return j
+				return S
 			})), n.d(t, "l", (function() {
-				return w
+				return T
 			})), n.d(t, "i", (function() {
-				return I
+				return w
 			})), n.d(t, "j", (function() {
-				return P
+				return I
 			}));
 			n("./node_modules/core-js/modules/web.dom.iterable.js");
 			var o = n("./node_modules/lodash/get.js"),
 				s = n.n(o),
-				r = n("./node_modules/uuid/v4.js"),
-				i = n.n(r),
-				a = n("./src/lib/makeActionCreator/index.ts"),
-				c = n("./src/lib/uploadToS3/index.ts"),
-				l = n("./src/reddit/models/Upload/index.ts");
-			const d = "UPLOAD_PENDING",
-				u = "UPLOAD_UPLOADING",
-				m = "UPLOAD_METADATA_CHANGED",
-				p = "UPLOAD_PROGRESS",
-				h = "UPLOAD_SUCCESS",
-				b = "UPLOAD_FAILED",
-				f = "UPLOAD_CANCELED",
-				g = "UPLOAD_REMOVED",
-				E = Object(a.a)(d),
-				C = Object(a.a)(u),
-				x = Object(a.a)(m),
-				y = Object(a.a)(p),
-				v = Object(a.a)(h),
-				O = Object(a.a)(b),
-				_ = Object(a.a)(f),
-				k = Object(a.a)(g),
-				S = new Map,
+				r = n("./node_modules/uuid/dist/esm-browser/v4.js"),
+				i = n("./src/lib/makeActionCreator/index.ts"),
+				a = n("./src/lib/uploadToS3/index.ts"),
+				c = n("./src/reddit/models/Upload/index.ts");
+			const l = "UPLOAD_PENDING",
+				d = "UPLOAD_UPLOADING",
+				u = "UPLOAD_METADATA_CHANGED",
+				m = "UPLOAD_PROGRESS",
+				p = "UPLOAD_SUCCESS",
+				h = "UPLOAD_FAILED",
+				b = "UPLOAD_CANCELED",
+				f = "UPLOAD_REMOVED",
+				g = Object(i.a)(l),
+				E = Object(i.a)(d),
+				C = Object(i.a)(u),
+				x = Object(i.a)(m),
+				y = Object(i.a)(p),
+				v = Object(i.a)(h),
+				O = Object(i.a)(b),
+				_ = Object(i.a)(f),
+				k = new Map,
+				S = (e, t) => {
+					const n = k.get(e) || [];
+					n.push(t), k.set(e, n)
+				},
 				j = (e, t) => {
-					const n = S.get(e) || [];
-					n.push(t), S.set(e, n)
+					const n = k.get(e);
+					n && n.forEach(n => n(e, t)), k.delete(e)
 				},
-				T = (e, t) => {
-					const n = S.get(e);
-					n && n.forEach(n => n(e, t)), S.delete(e)
-				},
-				w = function(e, t, n) {
+				T = function(e, t, n) {
 					let o = arguments.length > 3 && void 0 !== arguments[3] && arguments[3];
-					return async (r, a, d) => {
+					return async (i, l, d) => {
 						let {
 							apiContext: u
 						} = d;
 						const m = t;
-						if (a().uploads[m] && Object(l.c)(a().uploads[m])) return;
-						const p = i()(),
+						if (l().uploads[m] && Object(c.c)(l().uploads[m])) return;
+						const p = Object(r.a)(),
 							h = () => {
-								const e = a().uploads[m];
-								return !e || e.id !== p || e.status === l.a.CANCELED
+								const e = l().uploads[m];
+								return !e || e.id !== p || e.status === c.a.CANCELED
 							};
-						r(E({
+						i(g({
 							key: m,
 							id: p,
 							file: e
@@ -4954,40 +4952,40 @@
 						const {
 							uploadLease: b,
 							error: f
-						} = await n(a().uploads[m]);
+						} = await n(l().uploads[m]);
 						if (h()) return;
-						if (f || !b) return void r(O({
+						if (f || !b) return void i(v({
 							key: m,
 							error: f
 						}));
-						let g;
-						j(p, () => {
-							g && g.abort()
-						}), r(C({
+						let C;
+						S(p, () => {
+							C && C.abort()
+						}), i(E({
 							key: m
 						}));
-						const x = await Object(c.a)(e, b, e => (g = e, o && e.on("progress", e => {
+						const O = await Object(a.a)(e, b, e => (C = e, o && e.on("progress", e => {
 							if (!h() && "upload" === e.direction) {
 								const t = {
 									percent: e.percent,
 									total: e.total,
 									uploaded: e.loaded
 								};
-								r(y({
+								i(x({
 									key: m,
 									progress: t
 								}))
 							}
 						}), e));
-						if (g = null, !h())
-							if (x.ok) {
-								const e = decodeURIComponent(x.body.PostResponse.Location);
-								r(v({
+						if (C = null, !h())
+							if (O.ok) {
+								const e = decodeURIComponent(O.body.PostResponse.Location);
+								i(y({
 									key: m,
 									url: e
 								}))
 							} else {
-								const e = s()(x, "body.Error.Message.0"),
+								const e = s()(O, "body.Error.Message.0"),
 									t = {
 										type: "ERROR",
 										...e ? {
@@ -4997,29 +4995,29 @@
 											}]
 										} : {}
 									};
-								r(O({
+								i(v({
 									key: m,
 									error: t
 								}))
 							}
 					}
 				},
-				I = function(e) {
+				w = function(e) {
 					let t = arguments.length > 1 && void 0 !== arguments[1] && arguments[1];
 					return (n, o) => {
 						const s = o().uploads[e];
-						s && (T(s.id, t), n(t ? k({
+						s && (j(s.id, t), n(t ? _({
 							key: e
-						}) : _({
+						}) : O({
 							key: e
 						})))
 					}
 				},
-				P = function(e) {
+				I = function(e) {
 					let t = arguments.length > 1 && void 0 !== arguments[1] && arguments[1];
 					return (n, o) => {
 						Object.keys(o().uploads).forEach(o => {
-							o.startsWith(e) && n(I(o, t))
+							o.startsWith(e) && n(w(o, t))
 						})
 					}
 				}
@@ -5777,93 +5775,92 @@
 			var o = n("./node_modules/react/index.js"),
 				s = n.n(o),
 				r = n("./node_modules/react-redux/es/index.js"),
-				i = n("./node_modules/uuid/v4.js"),
-				a = n.n(i),
-				c = n("./src/higherOrderComponents/asModal/index.tsx"),
-				l = n("./src/reddit/actions/comment/authoring.ts"),
-				d = n("./src/reddit/actions/modal.ts"),
-				u = n("./src/reddit/components/ModalStyledComponents/index.tsx"),
-				m = n("./src/reddit/components/TrackingHelper/index.tsx"),
-				p = n("./src/reddit/controls/TextButton/index.tsx"),
-				h = n("./src/reddit/constants/tracking.ts"),
-				b = n("./src/reddit/selectors/telemetry.ts");
-			const f = e => ({
+				i = n("./node_modules/uuid/dist/esm-browser/v4.js"),
+				a = n("./src/higherOrderComponents/asModal/index.tsx"),
+				c = n("./src/reddit/actions/comment/authoring.ts"),
+				l = n("./src/reddit/actions/modal.ts"),
+				d = n("./src/reddit/components/ModalStyledComponents/index.tsx"),
+				u = n("./src/reddit/components/TrackingHelper/index.tsx"),
+				m = n("./src/reddit/controls/TextButton/index.tsx"),
+				p = n("./src/reddit/constants/tracking.ts"),
+				h = n("./src/reddit/selectors/telemetry.ts");
+			const b = e => ({
 					source: "toxicity_modal",
-					...b.n(e),
-					screen: b.ab(e),
-					subreddit: b.ib(e)
+					...h.n(e),
+					screen: h.ab(e),
+					subreddit: h.ib(e)
 				}),
-				g = e => t => ({
-					action: h.c.VIEW,
+				f = e => t => ({
+					action: p.c.VIEW,
 					noun: "modal",
 					correlationId: e,
-					...f(t)
+					...b(t)
 				}),
-				E = e => t => ({
-					action: h.c.CLICK,
+				g = e => t => ({
+					action: p.c.CLICK,
 					noun: "submit",
 					correlationId: e,
-					...f(t)
+					...b(t)
 				}),
-				C = e => t => ({
-					action: h.c.CLICK,
+				E = e => t => ({
+					action: p.c.CLICK,
 					noun: "edit",
 					correlationId: e,
-					...f(t)
+					...b(t)
 				}),
-				x = e => t => ({
-					action: h.c.CLICK,
+				C = e => t => ({
+					action: p.c.CLICK,
 					noun: "close",
 					correlationId: e,
-					...f(t)
+					...b(t)
 				});
-			var y = n("./src/reddit/layout/twoCol/ExpandLeft/index.tsx");
+			var x = n("./src/reddit/layout/twoCol/ExpandLeft/index.tsx");
 			const {
-				fbt: v
-			} = n("./node_modules/fbt/lib/FbtPublic.js"), O = Object(r.b)(null, (e, t) => ({
+				fbt: y
+			} = n("./node_modules/fbt/lib/FbtPublic.js"), v = Object(r.b)(null, (e, t) => ({
 				closeModal: () => {
-					e(Object(d.g)(l.t))
+					e(Object(l.g)(c.t))
 				},
 				continue: () => {
 					t.onSubmit()
 				}
 			}));
-			class _ extends s.a.Component {
+			class O extends s.a.Component {
 				constructor(e) {
 					super(e), this.state = {
-						correlationId: a()()
+						correlationId: Object(i.a)()
 					}
 				}
 				componentDidMount() {
-					this.props.modalSeen(), this.props.sendEvent(g(this.state.correlationId))
+					this.props.modalSeen(), this.props.sendEvent(f(this.state.correlationId))
 				}
 				render() {
-					return s.a.createElement(u.e, null, s.a.createElement(u.i, null, s.a.createElement(y.a, null, s.a.createElement(u.q, null, v._("Are you sure you want to post that?", null, {
+					return s.a.createElement(d.e, null, s.a.createElement(d.i, null, s.a.createElement(x.a, null, s.a.createElement(d.q, null, y._("Are you sure you want to post that?", null, {
 						hk: "4yXqtu"
-					})), s.a.createElement(p.a, {
-						onClick: () => {
-							this.props.sendEvent(x(this.state.correlationId)), this.props.closeModal()
-						}
-					}, s.a.createElement(u.b, null)))), s.a.createElement(u.l, null, s.a.createElement(u.p, null, v._("A reminder from the mods: Please follow community rules when commenting.", null, {
-						hk: "Hdi9f"
-					}))), s.a.createElement(u.g, null, s.a.createElement(u.a, {
+					})), s.a.createElement(m.a, {
 						onClick: () => {
 							this.props.sendEvent(C(this.state.correlationId)), this.props.closeModal()
-						},
-						"data-redditstyle": !0
-					}, v._("Go back and edit", null, {
-						hk: "3nGNI7"
-					})), s.a.createElement(u.r, {
+						}
+					}, s.a.createElement(d.b, null)))), s.a.createElement(d.l, null, s.a.createElement(d.p, null, y._("A reminder from the mods: Please follow community rules when commenting.", null, {
+						hk: "Hdi9f"
+					}))), s.a.createElement(d.g, null, s.a.createElement(d.a, {
 						onClick: () => {
-							this.props.sendEvent(E(this.state.correlationId)), this.props.continue()
+							this.props.sendEvent(E(this.state.correlationId)), this.props.closeModal()
 						},
 						"data-redditstyle": !0
-					}, v._("Comment", null, {
+					}, y._("Go back and edit", null, {
+						hk: "3nGNI7"
+					})), s.a.createElement(d.r, {
+						onClick: () => {
+							this.props.sendEvent(g(this.state.correlationId)), this.props.continue()
+						},
+						"data-redditstyle": !0
+					}, y._("Comment", null, {
 						hk: "1leYg7"
 					}))))
 				}
 			}
-			t.a = Object(c.a)(O(Object(m.c)(_)))
+			t.a = Object(a.a)(v(Object(u.c)(O)))
 		},
 		"./src/reddit/components/CommentCreation/getCancelModalId.ts": function(e, t, n) {
 			"use strict";
@@ -24421,79 +24418,78 @@
 		"./src/reddit/endpoints/talk/index.ts": function(e, t, n) {
 			"use strict";
 			n.d(t, "h", (function() {
-				return f
+				return b
 			})), n.d(t, "f", (function() {
-				return g
+				return f
 			})), n.d(t, "e", (function() {
-				return E
+				return g
 			})), n.d(t, "d", (function() {
-				return C
+				return E
 			})), n.d(t, "b", (function() {
-				return x
+				return C
 			})), n.d(t, "c", (function() {
-				return y
+				return x
 			})), n.d(t, "g", (function() {
-				return v
+				return y
 			})), n.d(t, "a", (function() {
-				return O
+				return v
 			}));
 			var o = n("./node_modules/fbt/lib/FbtPublic.js"),
-				s = n("./node_modules/uuid/v4.js"),
-				r = n.n(s),
-				i = n("./src/lib/makeGqlRequest/index.ts"),
-				a = n("./src/lib/makeRequest/index.ts"),
-				c = n("./src/reddit/models/Subreddit/index.ts"),
-				l = n("./src/redditGQL/operations/CreateLiveAudioRoomOnProfile.json"),
-				d = n("./src/redditGQL/operations/CreateLiveAudioRoomOrError.json"),
-				u = n("./src/redditGQL/operations/GetAvailableAudioRoomTopics.json"),
-				m = n("./src/redditGQL/operations/GetSubredditAllowedPostTypes.json"),
-				p = n("./src/redditGQL/operations/GetUserProfileAllowedPostTypes.json"),
-				h = n("./src/redditGQL/operations/ReportTalk.json"),
-				b = n("./src/redditGQL/types.ts");
-			const f = (e, t) => Object(i.a)(e, {
-					...h,
+				s = n("./node_modules/uuid/dist/esm-browser/v4.js"),
+				r = n("./src/lib/makeGqlRequest/index.ts"),
+				i = n("./src/lib/makeRequest/index.ts"),
+				a = n("./src/reddit/models/Subreddit/index.ts"),
+				c = n("./src/redditGQL/operations/CreateLiveAudioRoomOnProfile.json"),
+				l = n("./src/redditGQL/operations/CreateLiveAudioRoomOrError.json"),
+				d = n("./src/redditGQL/operations/GetAvailableAudioRoomTopics.json"),
+				u = n("./src/redditGQL/operations/GetSubredditAllowedPostTypes.json"),
+				m = n("./src/redditGQL/operations/GetUserProfileAllowedPostTypes.json"),
+				p = n("./src/redditGQL/operations/ReportTalk.json"),
+				h = n("./src/redditGQL/types.ts");
+			const b = (e, t) => Object(r.a)(e, {
+					...p,
 					variables: t
 				}),
-				g = async (e, t) => {
-					const n = await Object(i.a)(e, {
+				f = async (e, t) => {
+					const n = await Object(r.a)(e, {
+						...u,
+						variables: t
+					});
+					return !!Object(i.c)(n) && (n.body.data.subredditInfoById.allowedPostTypes || []).includes(h.B.Talk)
+				}, g = async (e, t) => {
+					var n, o;
+					const s = await Object(r.a)(e, {
 						...m,
 						variables: t
 					});
-					return !!Object(a.c)(n) && (n.body.data.subredditInfoById.allowedPostTypes || []).includes(b.B.Talk)
-				}, E = async (e, t) => {
-					var n, o;
-					const s = await Object(i.a)(e, {
-						...p,
-						variables: t
-					});
-					return !!Object(a.c)(s) && (null !== (o = null === (n = s.body.data.profileByName) || void 0 === n ? void 0 : n.allowedPostTypes) && void 0 !== o ? o : []).includes(b.B.Talk)
-				}, C = async e => {
+					return !!Object(i.c)(s) && (null !== (o = null === (n = s.body.data.profileByName) || void 0 === n ? void 0 : n.allowedPostTypes) && void 0 !== o ? o : []).includes(h.B.Talk)
+				}, E = async e => {
 					var t;
-					const n = await Object(i.a)(e, u);
-					return Object(a.c)(n) && null !== (t = n.body.data.availableAudioRoomTopics) && void 0 !== t ? t : []
-				}, x = (e, t, n) => t.type === c.f.User ? Object(i.a)(e, {
-					...l,
+					const n = await Object(r.a)(e, d);
+					return Object(i.c)(n) && null !== (t = n.body.data.availableAudioRoomTopics) && void 0 !== t ? t : []
+				}, C = (e, t, n) => t.type === a.f.User ? Object(r.a)(e, {
+					...c,
 					variables: n
-				}) : Object(i.a)(e, {
-					...d,
+				}) : Object(r.a)(e, {
+					...l,
 					variables: {
 						...n,
 						subredditId: t.id
 					}
-				}), y = () => r()(), v = e => e.data.createAudioRoomOrError || e.data.createAudioRoomOnProfile, O = {
-					[b.i.ServiceError]: o.fbt._("Something's wrong with the talk service right now. Check back later.", null, {
+				}), x = () => Object(s.a)(), y = e => e.data.createAudioRoomOrError || e.data.createAudioRoomOnProfile, v = {
+					[h.i.ServiceError]: o.fbt._("Something's wrong with the talk service right now. Check back later.", null, {
 						hk: "3XqPJS"
 					}),
-					[b.i.UserNotAuthorized]: o.fbt._("You don't have permission to start talks in this community.", null, {
+					[h.i.UserNotAuthorized]: o.fbt._("You don't have permission to start talks in this community.", null, {
 						hk: "1XY1Ss"
 					}),
-					[b.i.RoomLimitExceeded]: o.fbt._("You can only create three talks at one time. To continue, close a talk you're not using.", null, {
+					[h.i.RoomLimitExceeded]: o.fbt._("You can only create three talks at one time. To continue, close a talk you're not using.", null, {
 						hk: "3zPx9X"
 					}),
-					[b.i.ConcurrentRoomLimitExceeded]: o.fbt._("Too many talks are happening right now. Try again later.", null, {
+					[h.i.ConcurrentRoomLimitExceeded]: o.fbt._("Too many talks are happening right now. Try again later.", null, {
 						hk: "2LYXJx"
 					}),
-					[b.i.SubredditRoomLimitExceeded]: o.fbt._("This community can only host two talks at a time. Try again after one has ended.", null, {
+					[h.i.SubredditRoomLimitExceeded]: o.fbt._("This community can only host two talks at a time. Try again after one has ended.", null, {
 						hk: "2mGf21"
 					})
 				}
@@ -34460,9 +34456,9 @@
 			var o = n("./src/reddit/constants/experiments.ts"),
 				s = n("./src/reddit/helpers/chooseVariant/index.ts");
 			const r = e => Object(s.c)(e, {
-				experimentName: o.De,
+				experimentName: o.Ce,
 				experimentEligibilitySelector: s.a
-			}) === o.Me.Enabled
+			}) === o.Le.Enabled
 		},
 		"./src/reddit/selectors/experiments/presence.ts": function(e, t, n) {
 			"use strict";
@@ -34474,8 +34470,8 @@
 			const r = e => {
 				return Object(s.c)(e, {
 					experimentEligibilitySelector: s.a,
-					experimentName: o.af
-				}) === o.Jd
+					experimentName: o.Ze
+				}) === o.Id
 			}
 		},
 		"./src/reddit/selectors/experiments/typingIndicators.ts": function(e, t, n) {
@@ -34497,29 +34493,29 @@
 					if (Object(i.a)(e)) return !1;
 					return Object(s.c)(e, {
 						experimentEligibilitySelector: r.e,
-						experimentName: o.ig
-					}) === o.Jd
+						experimentName: o.hg
+					}) === o.Id
 				},
 				c = e => {
 					return Object(s.c)(e, {
 						experimentEligibilitySelector: r.e,
-						experimentName: o.jg
-					}) === o.Jd
+						experimentName: o.ig
+					}) === o.Id
 				},
 				l = e => {
 					if (Object(i.a)(e)) return !1;
 					const t = Object(s.c)(e, {
 						experimentEligibilitySelector: r.e,
-						experimentName: o.hg
+						experimentName: o.gg
 					});
-					return t === o.Xf.TypingIndicators || t === o.Xf.IndicatorsPlusCTA
+					return t === o.Wf.TypingIndicators || t === o.Wf.IndicatorsPlusCTA
 				},
 				d = e => {
 					if (Object(i.a)(e)) return !1;
 					const t = Object(r.d)(e, {
-						experimentName: o.hg
+						experimentName: o.gg
 					});
-					return (null == t ? void 0 : t.variant) === o.Xf.IndicatorsPlusCTA
+					return (null == t ? void 0 : t.variant) === o.Wf.IndicatorsPlusCTA
 				}
 		},
 		"./src/reddit/selectors/gold/enabledFeatures.ts": function(e, t, n) {
@@ -34948,4 +34944,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.b4cd00abdb71fe605ad0.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.d8f9546b5296a08fd3f0.js.map

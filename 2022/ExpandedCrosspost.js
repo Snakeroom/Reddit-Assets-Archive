@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ExpandedCrosspost.3a4cd603466595ec5ff2.js
-// Retrieved at 8/30/2022, 3:10:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ExpandedCrosspost.93751142d4149c8b3b95.js
+// Retrieved at 9/12/2022, 2:10:03 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ExpandedCrosspost"], {
 		"./src/reddit/components/ExpandedCrossposts/index.m.less": function(s, e, t) {
@@ -59,4 +59,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ExpandedCrosspost.3a4cd603466595ec5ff2.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ExpandedCrosspost.93751142d4149c8b3b95.js.map

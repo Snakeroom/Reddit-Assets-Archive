@@ -1,7 +1,7 @@
-// https://www.redditstatic.com/desktop2x/vendors~Settings.bd649022e03326a556e1.js
-// Retrieved at 7/7/2022, 11:50:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/vendors~Settings.86b1cfc53320ea8eef91.js
+// Retrieved at 9/12/2022, 2:10:03 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
-	["vendors~Settings", "vendors~reddit-components-Governance-TransactionModals-ConvertToCoinsModal"], {
+	["vendors~Settings"], {
 		"./node_modules/@stripe/react-stripe-js/dist/react-stripe.umd.js": function(e, t, r) {
 			! function(e, t) {
 				"use strict";
@@ -1795,4 +1795,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/vendors~Settings.bd649022e03326a556e1.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/vendors~Settings.86b1cfc53320ea8eef91.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PowerupsEmotesTooltip.c8ee173b5679eeff45c0.js
-// Retrieved at 8/30/2022, 3:10:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PowerupsEmotesTooltip.bd80532bddbf26e0b61c.js
+// Retrieved at 9/12/2022, 2:10:03 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PowerupsEmotesTooltip"], {
 		"./src/reddit/actions/economics/powerups/helpers.ts": function(e, t, o) {
@@ -12,103 +12,102 @@
 		"./src/reddit/actions/economics/powerups/index.ts": function(e, t, o) {
 			"use strict";
 			o.d(t, "b", (function() {
-				return h
+				return b
 			})), o.d(t, "a", (function() {
-				return f
+				return x
 			}));
-			var s = o("./node_modules/uuid/v4.js"),
-				n = o.n(s),
-				i = o("./src/lib/makeActionCreator/index.ts"),
-				a = o("./src/lib/sentry/index.ts"),
-				r = o("./src/lib/uploadToS3/index.ts"),
-				c = o("./src/reddit/endpoints/gold/powerups/index.ts"),
-				d = o("./src/reddit/helpers/media/index.ts"),
-				l = o("./src/reddit/selectors/user.ts"),
-				m = o("./src/reddit/actions/economics/powerups/constants.ts"),
-				u = o("./src/reddit/actions/economics/powerups/helpers.ts");
-			const p = Object(i.a)(m.b),
-				b = Object(i.a)(m.c),
-				h = e => {
+			var s = o("./node_modules/uuid/dist/esm-browser/v4.js"),
+				n = o("./src/lib/makeActionCreator/index.ts"),
+				i = o("./src/lib/sentry/index.ts"),
+				a = o("./src/lib/uploadToS3/index.ts"),
+				r = o("./src/reddit/endpoints/gold/powerups/index.ts"),
+				c = o("./src/reddit/helpers/media/index.ts"),
+				d = o("./src/reddit/selectors/user.ts"),
+				l = o("./src/reddit/actions/economics/powerups/constants.ts"),
+				m = o("./src/reddit/actions/economics/powerups/helpers.ts");
+			const u = Object(n.a)(l.b),
+				p = Object(n.a)(l.c),
+				b = e => {
 					let {
 						subredditId: t,
 						file: o
 					} = e;
-					return async (e, s) => {
-						var i;
+					return async (e, n) => {
+						var a;
 						try {
-							const a = s(),
-								r = null === (i = Object(l.k)(a)) || void 0 === i ? void 0 : i.id;
+							const i = n(),
+								r = null === (a = Object(d.k)(i)) || void 0 === a ? void 0 : a.id;
 							if (!r) throw new Error("Failed to get current user during emoji upload");
-							const c = await Object(d.h)(o);
-							if (!c) throw new Error("Cannot determine file mimeType");
+							const m = await Object(c.h)(o);
+							if (!m) throw new Error("Cannot determine file mimeType");
 							const {
 								file: u,
 								width: p,
 								height: b
-							} = await Object(d.p)(o, m.a), h = await e(E({
+							} = await Object(c.p)(o, l.a), x = await e(h({
 								subredditId: t,
-								mimeType: c
+								mimeType: m
 							}, {
 								userId: r
-							})), f = await x({
+							})), f = await j({
 								file: u,
-								s3UploadLease: h
+								s3UploadLease: x
 							}, {
 								subredditId: t,
 								userId: r
 							});
-							return await e(j({
+							return await e(E({
 								subredditId: t,
-								mimeType: c,
+								mimeType: m,
 								url: f,
 								x: p,
 								y: b,
-								nonce: n()()
+								nonce: Object(s.a)()
 							}))
 						} catch (r) {
-							throw a.c.captureException(r), r
+							throw i.c.captureException(r), r
 						}
 					}
 				},
-				E = (e, t) => async (o, s, n) => {
+				h = (e, t) => async (o, s, n) => {
 					let {
 						gqlContext: i
 					} = n;
-					const a = await Object(c.c)(i(), {
+					const a = await Object(r.c)(i(), {
 						input: e
 					});
 					if (a.error || !a.ok) throw new Error(`Failed to get emoji upload lease. subredditId: ${e.subredditId}; userId: ${t.userId}`);
 					const {
-						ok: r,
+						ok: c,
 						errors: d,
 						s3UploadLease: l
 					} = a.body.data.generateCustomEmojiUploadLease;
-					if (!r || d) throw new Error(`Failed to get emoji upload lease: ${Object(u.a)(d)}. subredditId: ${e.subredditId}; userId: ${t.userId}`);
+					if (!c || d) throw new Error(`Failed to get emoji upload lease: ${Object(m.a)(d)}. subredditId: ${e.subredditId}; userId: ${t.userId}`);
 					return l
-				}, j = e => async (t, o, s) => {
+				}, E = e => async (t, o, s) => {
 					let {
 						gqlContext: n
 					} = s;
-					const i = await Object(c.a)(n(), {
+					const i = await Object(r.a)(n(), {
 						input: e
 					});
 					if (i.error || !i.ok) throw new Error("Failed to create custom emoji");
 					const {
 						ok: a,
-						errors: r,
+						errors: d,
 						emoji: l
 					} = i.body.data.createCustomEmoji;
-					if (!a || r) throw new Error(`Failed to create custom emoji: ${Object(u.a)(r)}`);
-					const m = l.emojiIcon.url;
-					await Object(d.o)(m);
+					if (!a || d) throw new Error(`Failed to create custom emoji: ${Object(m.a)(d)}`);
+					const p = l.emojiIcon.url;
+					await Object(c.o)(p);
 					const {
 						subredditId: b
 					} = e;
-					return t(p({
+					return t(u({
 						subredditId: b,
 						emoji: l
 					})), l
-				}, x = async (e, t) => {
+				}, j = async (e, t) => {
 					let {
 						file: o,
 						s3UploadLease: s
@@ -116,37 +115,37 @@
 						subredditId: n,
 						userId: i
 					} = t;
-					const a = await Object(r.a)(o, s);
-					if (!a.ok) throw new Error(`Failed to upload custom emoji to S3. subredditId: ${n}; userId: ${i}`);
-					const c = a.body.PostResponse;
+					const r = await Object(a.a)(o, s);
+					if (!r.ok) throw new Error(`Failed to upload custom emoji to S3. subredditId: ${n}; userId: ${i}`);
+					const c = r.body.PostResponse;
 					return `https://${c.Bucket}.s3.amazonaws.com/${c.Key}`
-				}, f = e => {
+				}, x = e => {
 					let {
 						emojiId: t,
 						subredditId: o
 					} = e;
 					return async (e, s, n) => {
 						let {
-							gqlContext: i
+							gqlContext: a
 						} = n;
-						const r = await Object(c.b)(i(), {
+						const c = await Object(r.b)(a(), {
 							input: {
 								id: t
 							}
 						});
-						if (r.error || !r.ok) {
+						if (c.error || !c.ok) {
 							const e = new Error("Failed to delete custom emoji");
-							throw a.c.captureException(e), e
+							throw i.c.captureException(e), e
 						}
 						const {
 							ok: d,
 							errors: l
-						} = r.body.data.deleteCustomEmoji;
+						} = c.body.data.deleteCustomEmoji;
 						if (!d || l) {
-							const e = new Error(`Failed to delete custom emoji: ${Object(u.a)(l)}`);
-							throw a.c.captureException(e), e
+							const e = new Error(`Failed to delete custom emoji: ${Object(m.a)(l)}`);
+							throw i.c.captureException(e), e
 						}
-						return e(b({
+						return e(p({
 							subredditId: o,
 							emojiId: t
 						})), d
@@ -778,4 +777,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PowerupsEmotesTooltip.c8ee173b5679eeff45c0.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PowerupsEmotesTooltip.bd80532bddbf26e0b61c.js.map

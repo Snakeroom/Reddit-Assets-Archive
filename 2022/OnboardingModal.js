@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/OnboardingModal.f6dcb6518f572168d160.js
-// Retrieved at 9/12/2022, 1:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/OnboardingModal.14781a944937af36d3eb.js
+// Retrieved at 9/12/2022, 2:10:03 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["OnboardingModal"], {
 		"./node_modules/lodash/_baseRange.js": function(e, t) {
@@ -296,31 +296,31 @@
 		"./src/reddit/actions/frontpage/index.ts": function(e, t, n) {
 			"use strict";
 			n.r(t), n.d(t, "frontpagePending", (function() {
-				return Se
+				return ye
 			})), n.d(t, "frontpageLoaded", (function() {
-				return Ne
+				return Se
 			})), n.d(t, "frontpageFailed", (function() {
-				return we
+				return Ne
 			})), n.d(t, "frontpageFirstLoaded", (function() {
-				return Te
+				return we
 			})), n.d(t, "frontpageDataRequested", (function() {
-				return Re
+				return Te
 			})), n.d(t, "frontpageRequestedHelper", (function() {
-				return Ae
+				return Re
 			})), n.d(t, "frontpageRequested", (function() {
-				return Ge
+				return Fe
 			})), n.d(t, "frontpageReloaded", (function() {
-				return Pe
+				return Le
 			})), n.d(t, "morePostsPending", (function() {
-				return Me
+				return Pe
 			})), n.d(t, "morePostsLoaded", (function() {
-				return Be
+				return Me
 			})), n.d(t, "morePostsFailed", (function() {
-				return De
+				return Be
 			})), n.d(t, "morePostsRequested", (function() {
-				return Ve
+				return De
 			})), n.d(t, "refreshFeed", (function() {
-				return qe
+				return Ve
 			}));
 			n("./node_modules/core-js/modules/web.dom.iterable.js");
 			var r = n("./node_modules/fbt/lib/FbtPublic.js"),
@@ -623,25 +623,24 @@
 				_e = n("./src/reddit/actions/liveBar/index.ts"),
 				je = n("./src/reddit/helpers/filterListingResponse/index.ts"),
 				Ie = n("./src/reddit/actions/frontpage/constants.ts"),
-				ke = n("./node_modules/uuid/v4.js"),
-				ye = n.n(ke);
-			const Se = Object(le.a)(Ie.d),
-				Ne = Object(le.a)(Ie.c),
-				we = Object(le.a)(Ie.a),
-				Te = Object(le.a)(Ie.b),
-				Re = (e, t) => async (n, s, o) => {
+				ke = n("./node_modules/uuid/dist/esm-browser/v4.js");
+			const ye = Object(le.a)(Ie.d),
+				Se = Object(le.a)(Ie.c),
+				Ne = Object(le.a)(Ie.a),
+				we = Object(le.a)(Ie.b),
+				Te = (e, t) => async (n, s, o) => {
 					var i, c, d, l, u, p, b, f;
 					const g = s();
 					if (g.listings.postOrder.api.pending[e]) return;
 					const h = ee.e[Object(te.S)(g, {})];
-					t.isMobile = Object(a.e)(g.meta.userAgent), t.recentPostIds = g.posts.recent, t.layout = h, t.useMockData = !!g.platform.currentPage && (!!g.platform.currentPage.queryParams.useMockData && Object(de.b)(g)), n(Se({
+					t.isMobile = Object(a.e)(g.meta.userAgent), t.recentPostIds = g.posts.recent, t.layout = h, t.useMockData = !!g.platform.currentPage && (!!g.platform.currentPage.queryParams.useMockData && Object(de.b)(g)), n(ye({
 						key: e
-					})), n(Te(!1)); {
+					})), n(we(!1)); {
 						const e = g.platform.currentPage,
 							n = e && e.url;
 						n && (t.clickUrl = n)
 					}
-					const v = ye()();
+					const v = Object(ke.a)();
 					t.correlationId = v;
 					const x = null === (c = null === (i = Object(L.b)(g)) || void 0 === i ? void 0 : i.routeMatch) || void 0 === c ? void 0 : c.route.chunk,
 						O = Object(P.Q)(g),
@@ -654,7 +653,7 @@
 					const C = `error-${e}`;
 					if (E.ok && E.body) {
 						const r = E.body;
-						n(Ne({
+						n(Se({
 							key: e,
 							meta: g.meta,
 							correlationId: v,
@@ -666,7 +665,7 @@
 						const o = null === (f = null === (b = Object(L.b)(g)) || void 0 === b ? void 0 : b.locationState) || void 0 === f ? void 0 : f[X.b.FeedLoadReason];
 						Object(fe.b)(t.isRefresh ? X.a.UserRefresh : null != o ? o : X.a.InitialLoad)(s())
 					} else {
-						if (n(we({
+						if (n(Ne({
 								error: E.error,
 								key: e,
 								...E.body
@@ -679,7 +678,7 @@
 								buttonText: r.fbt._("Retry", null, {
 									hk: "1XMjgA"
 								}),
-								buttonAction: Re(e, t)
+								buttonAction: Te(e, t)
 							})), Object(Ce.a)(g, {
 								rate: 14
 							})) {
@@ -689,7 +688,7 @@
 						const o = E.error;
 						Object(fe.a)(o ? `${E.status||"000"}: ${o.type}` : "000: UNKNOWN_ERROR")(s())
 					}
-				}, Ae = (e, t) => async (n, r) => {
+				}, Re = (e, t) => async (n, r) => {
 					var s;
 					const a = r(),
 						i = Object(G.a)(a),
@@ -714,7 +713,7 @@
 					const v = Object(ne.a)(a),
 						x = Object(ne.b)(v),
 						O = [Object(ne.c)(v)];
-					await n(Re(l, {
+					await n(Te(l, {
 						...o()(e.queryParams, $.k),
 						...o()(e.queryParams, $.j),
 						limit: x,
@@ -729,7 +728,7 @@
 					});
 					const E = Object(ie.a)(a, {});
 					Object(ie.e)(E) && n(Object(U.openRegisterModal)())
-				}, Fe = () => async (e, t) => {
+				}, Ae = () => async (e, t) => {
 					var n, r;
 					const s = t();
 					if (Object(xe.a)(s)) return;
@@ -740,13 +739,13 @@
 						page: o,
 						isLoggedIn: a
 					})
-				}, Ge = (e, t) => async n => {
-					await Promise.all([n(Object(i.b)()), n(Ae(e, t)), n(Fe()), n(Object(Oe.c)(Ee.R))])
-				}, Le = Object(le.a)(Ie.e), Pe = e => async (t, n) => {
+				}, Fe = (e, t) => async n => {
+					await Promise.all([n(Object(i.b)()), n(Re(e, t)), n(Ae()), n(Object(Oe.c)(Ee.R))])
+				}, Ge = Object(le.a)(Ie.e), Le = e => async (t, n) => {
 					const r = n(),
 						s = r.platform.currentPage.routeMatch.match;
-					Object(ce.o)(r) || Object(ce.u)(r) || (e || t(Le()), await t(Ge(s, !0)))
-				}, Me = Object(le.a)(Ie.h), Be = Object(le.a)(Ie.g), De = Object(le.a)(Ie.f), Ve = e => async (t, n, r) => {
+					Object(ce.o)(r) || Object(ce.u)(r) || (e || t(Ge()), await t(Fe(s, !0)))
+				}, Pe = Object(le.a)(Ie.h), Me = Object(le.a)(Ie.g), Be = Object(le.a)(Ie.f), De = e => async (t, n, r) => {
 					let {
 						gqlContext: s
 					} = r;
@@ -765,7 +764,7 @@
 							r = i.listings.postOrder.fetchedTokens,
 							c = !(!r[m] || !r[m][p.token]);
 						if (!e && !c) {
-							t(Me({
+							t(Pe({
 								key: m,
 								fetchedToken: p.token
 							}));
@@ -795,14 +794,14 @@
 									...h.body,
 									...Object(je.a)(i, m, h.body)
 								};
-							if (h.ok) t(Be({
+							if (h.ok) t(Me({
 								key: m,
 								fetchedToken: p.token,
 								meta: i.meta,
 								...v
 							})), Object(fe.b)(X.a.NextPageLoad)(n());
 							else {
-								t(De({
+								t(Be({
 									key: m,
 									error: h.error,
 									fetchedToken: p.token,
@@ -813,7 +812,7 @@
 							}
 						}
 					}
-				}, qe = e => async (t, n) => {
+				}, Ve = e => async (t, n) => {
 					const r = n(),
 						s = Object(G.a)(r),
 						{
@@ -825,7 +824,7 @@
 						l = c in d.mc && d.mc[c],
 						u = Object(ne.a)(r),
 						m = Object(ne.b)(u);
-					await t(Re(i, {
+					await t(Te(i, {
 						limit: m,
 						sort: o,
 						t: Object(re.a)(o, l),
@@ -1986,9 +1985,9 @@
 					ie = Object(i.e)(rt.S),
 					ce = Object(i.e)(tt.g),
 					de = Object(i.e)(et.a),
-					le = de === Ie.Vf.CloseOnboarding,
-					ue = de === Ie.Vf.SkipTopicSelection,
-					me = de === Ie.Vf.SmartSignal,
+					le = de === Ie.Uf.CloseOnboarding,
+					ue = de === Ie.Uf.SkipTopicSelection,
+					me = de === Ie.Uf.SmartSignal,
 					pe = Object(o.useCallback)(() => {
 						r(Object(p.g)(ke.a.ONBOARDING_MODAL_D2X)), ae && r(Object(b.g)()), f && (s(Object(F.t)()), Object(Ue.a)()), ce && ie && r(Object(u.startChangeUsernameFlow)())
 					}, [r, ie, ce, f, ae, s]),
@@ -4031,13 +4030,13 @@
 			const o = e => {
 					return !(Object(s.c)(e, {
 						experimentEligibilitySelector: s.a,
-						experimentName: r.se
-					}) === r.Jd)
+						experimentName: r.re
+					}) === r.Id)
 				},
 				a = e => Object(s.c)(e, {
 					experimentEligibilitySelector: s.a,
-					experimentName: r.te
-				}) === r.Jd
+					experimentName: r.se
+				}) === r.Id
 		},
 		"./src/reddit/selectors/experiments/inAppNotification.ts": function(e, t, n) {
 			"use strict";
@@ -4207,4 +4206,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/OnboardingModal.f6dcb6518f572168d160.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/OnboardingModal.14781a944937af36d3eb.js.map

@@ -1,43 +1,42 @@
-// https://www.redditstatic.com/desktop2x/Trending.e852fbfaa05be9737f02.js
-// Retrieved at 9/12/2022, 11:30:07 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Trending.1075ee4452a6f0973de7.js
+// Retrieved at 9/12/2022, 2:10:03 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Trending"], {
 		"./src/reddit/actions/search/trending.ts": function(e, t, s) {
 			"use strict";
 			s.d(t, "a", (function() {
-				return b
+				return u
 			})), s.d(t, "b", (function() {
-				return g
+				return h
 			}));
 			var r = s("./src/lib/makeActionCreator/index.ts"),
-				n = s("./node_modules/uuid/v4.js"),
-				i = s.n(n),
-				a = s("./src/lib/constants/index.ts"),
-				d = (s("./node_modules/core-js/modules/web.dom.iterable.js"), s("./src/lib/extractQueryParams/index.ts"));
-			var o = s("./src/lib/makeApiRequest/index.ts"),
-				c = s("./src/lib/omitHeaders/index.ts"),
-				l = s("./src/reddit/constants/headers.ts"),
-				m = s("./src/reddit/helpers/r2/normalizePostFromR2/index.ts"),
-				p = s("./src/reddit/models/Search/index.ts");
-			var u = (e, t) => {
+				n = s("./node_modules/uuid/dist/esm-browser/v4.js"),
+				i = s("./src/lib/constants/index.ts"),
+				a = (s("./node_modules/core-js/modules/web.dom.iterable.js"), s("./src/lib/extractQueryParams/index.ts"));
+			var d = s("./src/lib/makeApiRequest/index.ts"),
+				o = s("./src/lib/omitHeaders/index.ts"),
+				c = s("./src/reddit/constants/headers.ts"),
+				l = s("./src/reddit/helpers/r2/normalizePostFromR2/index.ts"),
+				m = s("./src/reddit/models/Search/index.ts");
+			var p = (e, t) => {
 				const s = {
 					withAds: 1,
-					ad: Object(d.a)(window.location.href).get("ad"),
+					ad: Object(a.a)(window.location.href).get("ad"),
 					subplacement: t
 				};
-				return Object(o.a)(Object(c.a)(e, [l.a]), {
+				return Object(d.a)(Object(o.a)(e, [c.a]), {
 					endpoint: `${e.apiUrl}/api/trending_searches_v1.json`,
-					method: a.mb.GET,
+					method: i.mb.GET,
 					data: s
 				})
 			};
-			const b = "PAGE__TRENDING_SEARCHES_LOADED",
-				h = Object(r.a)(b),
-				g = e => async (t, s, r) => {
+			const u = "PAGE__TRENDING_SEARCHES_LOADED",
+				b = Object(r.a)(u),
+				h = e => async (t, s, r) => {
 					let {
-						apiContext: n
+						apiContext: i
 					} = r;
-					const a = await u(n(), e);
+					const a = await p(i(), e);
 					if (a.ok) {
 						const s = (e => {
 							const t = [];
@@ -45,27 +44,27 @@
 								const s = e.body.trending_searches.length;
 								for (let r = 0; r < s; r++) {
 									const s = e.body.trending_searches[r],
-										n = s.results.data.children.length > 0 ? s.results.data.children[0].data : null,
+										i = s.results.data.children.length > 0 ? s.results.data.children[0].data : null,
 										a = {
-											id: i()(),
-											post: n ? Object(m.a)(n) : null,
+											id: Object(n.a)(),
+											post: i ? Object(l.a)(i) : null,
 											rawQuery: s.query_string,
 											searchQuery: s.display_string,
-											section: p.c.trending,
+											section: m.c.trending,
 											isWhitelisted: s.is_subreddit_whitelisted,
-											subredditInfo: n ? {
-												icon: n.sr_detail.community_icon || n.sr_detail.icon_img,
-												displayText: n.sr_detail.display_name_prefixed
+											subredditInfo: i ? {
+												icon: i.sr_detail.community_icon || i.sr_detail.icon_img,
+												displayText: i.sr_detail.display_name_prefixed
 											} : null,
 											subredditOccurrences: s.subreddit_occurences - 1,
-											type: p.b.text
+											type: m.b.text
 										};
 									t.push(a)
 								}
 							}
 							return t
 						})(a);
-						return t(h({
+						return t(b({
 							items: s,
 							subplacement: e
 						})), s
@@ -470,4 +469,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Trending.e852fbfaa05be9737f02.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Trending.1075ee4452a6f0973de7.js.map

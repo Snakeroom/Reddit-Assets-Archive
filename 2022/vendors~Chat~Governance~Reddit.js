@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/vendors~Chat~Governance~Reddit.8415172050c3c1ea08a2.js
-// Retrieved at 8/30/2022, 3:10:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/vendors~Chat~Governance~Reddit.fe3619c096d523e32082.js
+// Retrieved at 9/12/2022, 2:10:03 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["vendors~Chat~Governance~Reddit"], {
 		"./node_modules/@loadable/component/dist/loadable.esm.js": function(e, t, n) {
@@ -15056,73 +15056,71 @@
 				return "[object Array]" == n.call(e)
 			}
 		},
-		"./node_modules/js-cookie/src/js.cookie.js": function(e, t, n) {
-			var r, o;
-			! function(i) {
-				if (void 0 === (o = "function" == typeof(r = i) ? r.call(t, n, t, e) : r) || (e.exports = o), !0, e.exports = i(), !!0) {
-					var s = window.Cookies,
-						a = window.Cookies = i();
-					a.noConflict = function() {
-						return window.Cookies = s, a
+		"./node_modules/js-cookie/dist/js.cookie.js": function(e, t, n) {
+			e.exports = function() {
+				"use strict";
+
+				function e(e) {
+					for (var t = 1; t < arguments.length; t++) {
+						var n = arguments[t];
+						for (var r in n) e[r] = n[r]
 					}
+					return e
 				}
-			}((function() {
-				function e() {
-					for (var e = 0, t = {}; e < arguments.length; e++) {
-						var n = arguments[e];
-						for (var r in n) t[r] = n[r]
-					}
-					return t
-				}
-				return function t(n) {
-					function r(t, o, i) {
-						var s;
+				return function t(n, r) {
+					function o(t, o, i) {
 						if ("undefined" != typeof document) {
-							if (arguments.length > 1) {
-								if ("number" == typeof(i = e({
-										path: "/"
-									}, r.defaults, i)).expires) {
-									var a = new Date;
-									a.setMilliseconds(a.getMilliseconds() + 864e5 * i.expires), i.expires = a
-								}
-								try {
-									s = JSON.stringify(o), /^[\{\[]/.test(s) && (o = s)
-								} catch (p) {}
-								return o = n.write ? n.write(o, t) : encodeURIComponent(String(o)).replace(/%(23|24|26|2B|3A|3C|3E|3D|2F|3F|40|5B|5D|5E|60|7B|7D|7C)/g, decodeURIComponent), t = (t = (t = encodeURIComponent(String(t))).replace(/%(23|24|26|2B|5E|60|7C)/g, decodeURIComponent)).replace(/[\(\)]/g, escape), document.cookie = [t, "=", o, i.expires ? "; expires=" + i.expires.toUTCString() : "", i.path ? "; path=" + i.path : "", i.domain ? "; domain=" + i.domain : "", i.secure ? "; secure" : ""].join("")
-							}
-							t || (s = {});
-							for (var u = document.cookie ? document.cookie.split("; ") : [], c = /(%[0-9A-Z]{2})+/g, l = 0; l < u.length; l++) {
-								var d = u[l].split("="),
-									f = d.slice(1).join("=");
-								'"' === f.charAt(0) && (f = f.slice(1, -1));
-								try {
-									var h = d[0].replace(c, decodeURIComponent);
-									if (f = n.read ? n.read(f, h) : n(f, h) || f.replace(c, decodeURIComponent), this.json) try {
-										f = JSON.parse(f)
-									} catch (p) {}
-									if (t === h) {
-										s = f;
-										break
-									}
-									t || (s[h] = f)
-								} catch (p) {}
-							}
-							return s
+							"number" == typeof(i = e({}, r, i)).expires && (i.expires = new Date(Date.now() + 864e5 * i.expires)), i.expires && (i.expires = i.expires.toUTCString()), t = encodeURIComponent(t).replace(/%(2[346B]|5E|60|7C)/g, decodeURIComponent).replace(/[()]/g, escape);
+							var s = "";
+							for (var a in i) i[a] && (s += "; " + a, !0 !== i[a] && (s += "=" + i[a].split(";")[0]));
+							return document.cookie = t + "=" + n.write(o, t) + s
 						}
 					}
-					return r.set = r, r.get = function(e) {
-						return r.call(r, e)
-					}, r.getJSON = function() {
-						return r.apply({
-							json: !0
-						}, [].slice.call(arguments))
-					}, r.defaults = {}, r.remove = function(t, n) {
-						r(t, "", e(n, {
-							expires: -1
-						}))
-					}, r.withConverter = t, r
-				}((function() {}))
-			}))
+					return Object.create({
+						set: o,
+						get: function(e) {
+							if ("undefined" != typeof document && (!arguments.length || e)) {
+								for (var t = document.cookie ? document.cookie.split("; ") : [], r = {}, o = 0; o < t.length; o++) {
+									var i = t[o].split("="),
+										s = i.slice(1).join("=");
+									try {
+										var a = decodeURIComponent(i[0]);
+										if (r[a] = n.read(s, a), e === a) break
+									} catch (u) {}
+								}
+								return e ? r[e] : r
+							}
+						},
+						remove: function(t, n) {
+							o(t, "", e({}, n, {
+								expires: -1
+							}))
+						},
+						withAttributes: function(n) {
+							return t(this.converter, e({}, this.attributes, n))
+						},
+						withConverter: function(n) {
+							return t(e({}, this.converter, n), this.attributes)
+						}
+					}, {
+						attributes: {
+							value: Object.freeze(r)
+						},
+						converter: {
+							value: Object.freeze(n)
+						}
+					})
+				}({
+					read: function(e) {
+						return '"' === e[0] && (e = e.slice(1, -1)), e.replace(/(%[\dA-F]{2})+/gi, decodeURIComponent)
+					},
+					write: function(e) {
+						return encodeURIComponent(e).replace(/%(2[346BF]|3[AC-F]|40|5[BDE]|60|7[BCD])/g, decodeURIComponent)
+					}
+				}, {
+					path: "/"
+				})
+			}()
 		},
 		"./node_modules/json-stringify-safe/stringify.js": function(e, t) {
 			function n(e, t) {
@@ -33396,39 +33394,32 @@
 				}
 			}).call(this, n("./node_modules/process/browser.js"))
 		},
-		"./node_modules/uuid/lib/bytesToUuid.js": function(e, t) {
-			for (var n = [], r = 0; r < 256; ++r) n[r] = (r + 256).toString(16).substr(1);
-			e.exports = function(e, t) {
-				var r = t || 0,
-					o = n;
-				return [o[e[r++]], o[e[r++]], o[e[r++]], o[e[r++]], "-", o[e[r++]], o[e[r++]], "-", o[e[r++]], o[e[r++]], "-", o[e[r++]], o[e[r++]], "-", o[e[r++]], o[e[r++]], o[e[r++]], o[e[r++]], o[e[r++]], o[e[r++]]].join("")
+		"./node_modules/uuid/dist/esm-browser/v4.js": function(e, t, n) {
+			"use strict";
+			var r, o = new Uint8Array(16);
+
+			function i() {
+				if (!r && !(r = "undefined" != typeof crypto && crypto.getRandomValues && crypto.getRandomValues.bind(crypto) || "undefined" != typeof msCrypto && "function" == typeof msCrypto.getRandomValues && msCrypto.getRandomValues.bind(msCrypto))) throw new Error("crypto.getRandomValues() not supported. See https://github.com/uuidjs/uuid#getrandomvalues-not-supported");
+				return r(o)
 			}
-		},
-		"./node_modules/uuid/lib/rng-browser.js": function(e, t) {
-			var n = "undefined" != typeof crypto && crypto.getRandomValues && crypto.getRandomValues.bind(crypto) || "undefined" != typeof msCrypto && "function" == typeof window.msCrypto.getRandomValues && msCrypto.getRandomValues.bind(msCrypto);
-			if (n) {
-				var r = new Uint8Array(16);
-				e.exports = function() {
-					return n(r), r
+			var s = /^(?:[0-9a-f]{8}-[0-9a-f]{4}-[1-5][0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}|00000000-0000-0000-0000-000000000000)$/i;
+			for (var a = function(e) {
+					return "string" == typeof e && s.test(e)
+				}, u = [], c = 0; c < 256; ++c) u.push((c + 256).toString(16).substr(1));
+			var l = function(e) {
+				var t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : 0,
+					n = (u[e[t + 0]] + u[e[t + 1]] + u[e[t + 2]] + u[e[t + 3]] + "-" + u[e[t + 4]] + u[e[t + 5]] + "-" + u[e[t + 6]] + u[e[t + 7]] + "-" + u[e[t + 8]] + u[e[t + 9]] + "-" + u[e[t + 10]] + u[e[t + 11]] + u[e[t + 12]] + u[e[t + 13]] + u[e[t + 14]] + u[e[t + 15]]).toLowerCase();
+				if (!a(n)) throw TypeError("Stringified UUID is invalid");
+				return n
+			};
+			t.a = function(e, t, n) {
+				var r = (e = e || {}).random || (e.rng || i)();
+				if (r[6] = 15 & r[6] | 64, r[8] = 63 & r[8] | 128, t) {
+					n = n || 0;
+					for (var o = 0; o < 16; ++o) t[n + o] = r[o];
+					return t
 				}
-			} else {
-				var o = new Array(16);
-				e.exports = function() {
-					for (var e, t = 0; t < 16; t++) 0 == (3 & t) && (e = 4294967296 * Math.random()), o[t] = e >>> ((3 & t) << 3) & 255;
-					return o
-				}
-			}
-		},
-		"./node_modules/uuid/v4.js": function(e, t, n) {
-			var r = n("./node_modules/uuid/lib/rng-browser.js"),
-				o = n("./node_modules/uuid/lib/bytesToUuid.js");
-			e.exports = function(e, t, n) {
-				var i = t && n || 0;
-				"string" == typeof e && (t = "binary" === e ? new Array(16) : null, e = null);
-				var s = (e = e || {}).random || (e.rng || r)();
-				if (s[6] = 15 & s[6] | 64, s[8] = 63 & s[8] | 128, t)
-					for (var a = 0; a < 16; ++a) t[i + a] = s[a];
-				return t || o(s)
+				return l(r)
 			}
 		},
 		"./node_modules/value-equal/index.js": function(e, t, n) {
@@ -34983,4 +34974,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/vendors~Chat~Governance~Reddit.8415172050c3c1ea08a2.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/vendors~Chat~Governance~Reddit.fe3619c096d523e32082.js.map

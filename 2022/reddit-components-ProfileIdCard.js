@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-ProfileIdCard.6cb0d55f60473b03b4e2.js
-// Retrieved at 9/12/2022, 1:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-ProfileIdCard.06a281b4e1fcf3d54954.js
+// Retrieved at 9/12/2022, 2:10:03 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-ProfileIdCard"], {
 		"./node_modules/lodash/compact.js": function(e, t) {
@@ -182,7 +182,7 @@
 			})), r.d(t, "a", (function() {
 				return B
 			})), r.d(t, "b", (function() {
-				return M
+				return D
 			}));
 			var n = r("./node_modules/fbt/lib/FbtPublic.js"),
 				s = r("./src/lib/constants/index.ts"),
@@ -418,7 +418,7 @@
 						multiredditPath: e,
 						multiredditsModelsState: a
 					})), i())
-				}, D = Object(a.a)(d.e), M = e => async (t, r, o) => {
+				}, M = Object(a.a)(d.e), D = e => async (t, r, o) => {
 					let {
 						apiContext: a
 					} = o;
@@ -441,7 +441,7 @@
 						u = c[e];
 					if (!u) return void d();
 					const b = !u.isFollowed;
-					t(D({
+					t(M({
 						follow: b,
 						multiredditPath: e,
 						multiredditsModelsState: c
@@ -454,7 +454,7 @@
 							api_type: "json"
 						},
 						type: "json"
-					}))(a(), e, b)).ok || (t(D({
+					}))(a(), e, b)).ok || (t(M({
 						follow: !b,
 						multiredditPath: e,
 						multiredditsModelsState: c
@@ -702,7 +702,7 @@
 					const t = this.resolve(e);
 					return !1 !== this.resolved[t] && !!r.m[t]
 				},
-				importAsync: () => Promise.all([r.e(1), r.e("NftProfileUnit")]).then(r.bind(null, "./src/reddit/components/Econ/Marketplace/NftProfileUnit/index.tsx")),
+				importAsync: () => Promise.all([r.e("vendors~Avatar~CryptoLibEthers~GovernanceTransferPointsModal~MarketplaceClaimModal~MarketplaceInFeed~1befd72a"), r.e("vendors~Avatar~ChatPost~MarketplaceClaimModal~MarketplaceInFeedUnit~NftProfileUnit~RealtimeGQLSubscr~bfab320d"), r.e("vendors~Avatar~MarketplaceClaimModal~MarketplaceInFeedUnit~NftProfileUnit~SnoovatarModal"), r.e(0), r.e("NftProfileUnit")]).then(r.bind(null, "./src/reddit/components/Econ/Marketplace/NftProfileUnit/index.tsx")),
 				requireAsync(e) {
 					const t = this.resolve(e);
 					return this.resolved[t] = !1, this.importAsync(e).then(e => (this.resolved[t] = !0, e))
@@ -2304,7 +2304,7 @@
 					url: w,
 					isHovercard: U
 				} = e;
-				const L = Object(o.e)(e => !C && !!E && Object(d.f)(e));
+				const L = Object(o.e)(e => !C && !!E && Object(d.e)(e));
 				return s.a.createElement(s.a.Fragment, null, s.a.createElement(m.a, {
 					bannerBackgroundImage: t,
 					editMode: !!f,
@@ -2421,8 +2421,8 @@
 				T = r("./src/lib/copyToClipboard/index.ts"),
 				A = r("./src/reddit/actions/toaster.ts"),
 				B = r("./src/reddit/endpoints/chat/userSettings.ts"),
-				D = r("./src/reddit/models/Toast/index.ts");
-			var M = r("./src/reddit/actions/gold/modals.ts"),
+				M = r("./src/reddit/models/Toast/index.ts");
+			var D = r("./src/reddit/actions/gold/modals.ts"),
 				R = r("./src/reddit/actions/modal.ts"),
 				G = r("./src/reddit/actions/profile/index.ts"),
 				W = r("./src/reddit/components/CrisisFlow/index.tsx"),
@@ -2435,11 +2435,11 @@
 				}),
 				K = r("./src/reddit/constants/modals.ts"),
 				Z = r("./src/reddit/helpers/correlationIdTracker.ts"),
-				Y = r("./src/reddit/helpers/styles/mixins/loading.ts"),
-				Q = r("./src/reddit/models/Gold/Premium/index.ts"),
+				Q = r("./src/reddit/helpers/styles/mixins/loading.ts"),
+				Y = r("./src/reddit/models/Gold/Premium/index.ts"),
 				V = r("./src/reddit/selectors/experiments/chatInviteLinkSharing.ts"),
-				J = r("./src/reddit/selectors/experiments/crisisTextLine.ts"),
-				X = r("./src/reddit/selectors/premium.ts"),
+				X = r("./src/reddit/selectors/experiments/crisisTextLine.ts"),
+				J = r("./src/reddit/selectors/premium.ts"),
 				$ = r("./src/reddit/components/ProfileIdCard/footer.m.less"),
 				ee = r.n($);
 
@@ -2455,12 +2455,12 @@
 			const re = Object(i.c)({
 					areModeratedSubredditsPending: I.b,
 					coinsToSpend: P.e,
-					givePremiumModalIsOpen: X.c,
+					givePremiumModalIsOpen: J.c,
 					hasFetchedModerators: I.l,
 					isEmployee: P.N,
 					isLoggedIn: P.Q,
 					profile: I.k,
-					crisisFlowEnabled: J.b,
+					crisisFlowEnabled: X.b,
 					chatInviteLinkSharing: V.a
 				}),
 				ne = e => {
@@ -2469,7 +2469,7 @@
 						...r
 					} = e;
 					return o.a.createElement("div", te({}, r, {
-						className: Object(L.a)(ee.a.Shimmer, Object(Y.b)({
+						className: Object(L.a)(ee.a.Shimmer, Object(Q.b)({
 							isLoading: t
 						}))
 					}))
@@ -2516,7 +2516,7 @@
 							onClickChatInviteLink: f,
 							onClickUnblockUser: b,
 							isUserBlocked: h
-						} = this.props, v = a && Object(Q.d)(n, o).length && !c || o, x = w()([(c || i) && s ? {
+						} = this.props, v = a && Object(Y.d)(n, o).length && !c || o, x = w()([(c || i) && s ? {
 							text: N.fbt._("Profile Moderation", null, {
 								hk: "4x1una"
 							}),
@@ -2654,7 +2654,7 @@
 						addToMultiClicked: () => {
 							e(Object(F.a)(() => Promise.all([r.e("CollectionCommentsPage~CommentsPage~CountryPage~FramedGild~GildModal~GovernanceReleaseNotesModal~Mem~c8b748a6"), r.e("CollectionCommentsPage~CommentsPage~CountryPage~Frontpage~GovernanceReleaseNotesModal~ModListing~Mod~e3d63e32"), r.e("CountryPage~Multireddit~reddit-components-AdHocMultiredditSidebar"), r.e("CountryPage~Multireddit"), r.e("Multireddit")]).then(r.bind(null, "./src/reddit/actions/multireddit/index.ts")).then(e => e.myMultiredditsRequested))(!0, !0)), e(Object(R.h)(K.a.MULTIREDDIT_ADD_SUBREDDIT))
 						},
-						onClickGivePremium: t => e(Object(M.e)({
+						onClickGivePremium: t => e(Object(D.e)({
 							correlationId: t,
 							profileName: n
 						})),
@@ -2676,13 +2676,13 @@
 									Object(T.a)(t);
 									const r = Object(A.e)(N.fbt._("Copied link!", null, {
 										hk: "4a4E1x"
-									}), D.b.SuccessCommunity);
+									}), M.b.SuccessCommunity);
 									e(Object(A.f)(r))
 								}
 							} else {
 								const t = Object(A.e)(N.fbt._("Something went wrong", null, {
 									hk: "22u7ha"
-								}), D.b.Error);
+								}), M.b.Error);
 								e(Object(A.f)(t))
 							}
 						})())
@@ -2868,9 +2868,9 @@
 					isEmployee: T,
 					isGold: A,
 					prefShowSnoovatar: B,
-					snoovatarFullBodyAsset: D,
-					username: M
-				} = P, R = !!a && a.id === F, G = !(!a || !a.snoovatarFullBodyAsset), W = O && O.bannerBackgroundImage, H = !!b && b.isNSFW, q = H && c, z = !(!v || !v.userIsSubscriber), K = `/user/${M}/`, Z = j && j.url === K, Y = !v || v.acceptChats, Q = !v || v.acceptPms, V = k && Object(ue.b)(D), J = () => {
+					snoovatarFullBodyAsset: M,
+					username: D
+				} = P, R = !!a && a.id === F, G = !(!a || !a.snoovatarFullBodyAsset), W = O && O.bannerBackgroundImage, H = !!b && b.isNSFW, q = H && c, z = !(!v || !v.userIsSubscriber), K = `/user/${D}/`, Z = j && j.url === K, Q = !v || v.acceptChats, Y = !v || v.acceptPms, V = k && Object(ue.b)(M), X = () => {
 					r(e => !e)
 				};
 				return o.a.createElement(o.a.Fragment, null, o.a.createElement(m.a, {
@@ -2884,19 +2884,19 @@
 					title: b ? b.title : void 0,
 					url: Z ? null : K,
 					userCreated: U,
-					username: M,
+					username: D,
 					recentAwardings: w,
 					currentUserHasSnoovatar: G,
 					prefersReducedAnimations: !!E,
 					shouldShowSocialLinks: !0,
-					snoovatarUrl: D,
+					snoovatarUrl: M,
 					topAwardIcon: I,
 					actions: o.a.createElement(o.a.Fragment, null, R && !u && ve({
-						username: M,
+						username: D,
 						currentUserHasSubreddit: i,
 						id: F
 					}), !R && C && o.a.createElement(xe, {
-						profileName: M,
+						profileName: D,
 						toggleFollow: (e, t) => {
 							f(e, t), _(t ? (e => t => ({
 								...x(e, t),
@@ -2912,9 +2912,9 @@
 						},
 						userIsSubscriber: z,
 						isUserBlocked: y,
-						onClickUnblockUser: J,
+						onClickUnblockUser: X,
 						enableFollowers: L
-					}), !!a && !R && !y && Y && ge({
+					}), !!a && !R && !y && Q && ge({
 						userId: F
 					})),
 					footer: y ? void 0 : o.a.createElement(oe, {
@@ -2922,20 +2922,20 @@
 						isModerator: d,
 						isOwnProfile: R,
 						allowViewSnoovatar: B,
-						profileName: M,
+						profileName: D,
 						sendEvent: _,
-						userAcceptsPms: Q,
+						userAcceptsPms: Y,
 						isUserBlocked: y
 					}),
 					onClickSnoovatar: p,
 					profileIcon: S,
 					bannerBackgroundImage: q ? void 0 : W
 				}), t && o.a.createElement(fe.a, {
-					onClose: J,
+					onClose: X,
 					onConfirm: e => {
-						J(), N(e), _(Object(g.h)(M))
+						X(), N(e), _(Object(g.h)(D))
 					},
-					username: M,
+					username: D,
 					withOverlay: !0
 				}))
 			}))
@@ -3560,7 +3560,7 @@
 			const a = e => Object(s.c)(e, {
 				experimentName: n.G,
 				experimentEligibilitySelector: () => Object(o.P)(e)
-			}) === n.Jd
+			}) === n.Id
 		},
 		"./src/reddit/selectors/experiments/crisisTextLine.ts": function(e, t, r) {
 			"use strict";
@@ -3593,13 +3593,13 @@
 			const o = e => {
 					return !(Object(s.c)(e, {
 						experimentEligibilitySelector: s.a,
-						experimentName: n.se
-					}) === n.Jd)
+						experimentName: n.re
+					}) === n.Id)
 				},
 				a = e => Object(s.c)(e, {
 					experimentEligibilitySelector: s.a,
-					experimentName: n.te
-				}) === n.Jd
+					experimentName: n.se
+				}) === n.Id
 		},
 		"./src/reddit/selectors/premium.ts": function(e, t, r) {
 			"use strict";
@@ -3628,4 +3628,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ProfileIdCard.6cb0d55f60473b03b4e2.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ProfileIdCard.06a281b4e1fcf3d54954.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/GifTooltip.cc217e2f25c7f014de77.js
-// Retrieved at 8/18/2022, 11:30:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/GifTooltip.b0a81ba6d0e729352c48.js
+// Retrieved at 9/12/2022, 2:10:03 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["GifTooltip"], {
 		"./src/reddit/components/RichTextEditor/media/GifTooltip/General/async.ts": function(e, t, s) {
@@ -80,16 +80,15 @@
 			var i = s("./node_modules/react/index.js"),
 				o = s.n(i),
 				r = s("./node_modules/react-redux/es/index.js"),
-				n = s("./node_modules/uuid/v4.js"),
-				d = s.n(n),
-				c = s("./src/reddit/selectors/experiments/mediaInComments.ts"),
-				l = s("./src/reddit/selectors/gold/powerups/index.ts"),
-				a = s("./src/reddit/components/RichTextEditor/media/GifTooltip/General/async.ts"),
-				p = s("./src/reddit/components/RichTextEditor/media/GifTooltip/Powerups/async.ts"),
-				m = s("./src/reddit/components/RichTextEditor/media/GifTooltip/SpecialMemberships/async.ts");
+				n = s("./node_modules/uuid/dist/esm-browser/v4.js"),
+				d = s("./src/reddit/selectors/experiments/mediaInComments.ts"),
+				c = s("./src/reddit/selectors/gold/powerups/index.ts"),
+				l = s("./src/reddit/components/RichTextEditor/media/GifTooltip/General/async.ts"),
+				a = s("./src/reddit/components/RichTextEditor/media/GifTooltip/Powerups/async.ts"),
+				p = s("./src/reddit/components/RichTextEditor/media/GifTooltip/SpecialMemberships/async.ts");
 
-			function u() {
-				return (u = Object.assign || function(e) {
+			function m() {
+				return (m = Object.assign || function(e) {
 					for (var t = 1; t < arguments.length; t++) {
 						var s = arguments[t];
 						for (var i in s) Object.prototype.hasOwnProperty.call(s, i) && (e[i] = s[i])
@@ -100,16 +99,16 @@
 			t.default = e => {
 				const {
 					subreddit: t
-				} = e, s = t.id, n = Object(i.useRef)(d()()), h = Object(r.e)(e => Object(c.a)(e)), T = Object(r.e)(e => Object(l.f)(e, {
+				} = e, s = t.id, u = Object(i.useRef)(Object(n.a)()), h = Object(r.e)(e => Object(d.a)(e)), T = Object(r.e)(e => Object(c.f)(e, {
 					subredditId: s
 				}));
-				return h ? o.a.createElement(a.a, e) : T ? o.a.createElement(p.a, u({}, e, {
-					correlationId: n.current
-				})) : o.a.createElement(m.a, u({}, e, {
-					correlationId: n.current
+				return h ? o.a.createElement(l.a, e) : T ? o.a.createElement(a.a, m({}, e, {
+					correlationId: u.current
+				})) : o.a.createElement(p.a, m({}, e, {
+					correlationId: u.current
 				}))
 			}
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/GifTooltip.cc217e2f25c7f014de77.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/GifTooltip.b0a81ba6d0e729352c48.js.map

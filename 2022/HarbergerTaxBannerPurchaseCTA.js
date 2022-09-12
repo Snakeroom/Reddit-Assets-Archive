@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/HarbergerTaxBannerPurchaseCTA.ef4f7169ab95068b73ba.js
-// Retrieved at 9/6/2022, 12:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/HarbergerTaxBannerPurchaseCTA.761d8d08fcbaf24b129a.js
+// Retrieved at 9/12/2022, 2:10:03 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["HarbergerTaxBannerPurchaseCTA"], {
 		"./src/reddit/actions/economics/claims/constants.ts": function(e, t, n) {
@@ -58,11 +58,11 @@
 			})), n.d(t, "o", (function() {
 				return O
 			})), n.d(t, "p", (function() {
-				return N
+				return p
 			})), n.d(t, "q", (function() {
 				return A
 			})), n.d(t, "r", (function() {
-				return p
+				return N
 			})), n.d(t, "s", (function() {
 				return h
 			})), n.d(t, "t", (function() {
@@ -70,9 +70,9 @@
 			})), n.d(t, "u", (function() {
 				return R
 			})), n.d(t, "v", (function() {
-				return y
-			})), n.d(t, "w", (function() {
 				return C
+			})), n.d(t, "w", (function() {
+				return y
 			})), n.d(t, "x", (function() {
 				return g
 			}));
@@ -91,14 +91,14 @@
 				m = "GOVERNANCE__PUBLIC_WALLET_INFO_PENDING",
 				f = "GOVERNANCE__PUBLIC_WALLET_INFO_SUCCESS",
 				O = "GOVERNANCE__RELEASE_NOTES_MODAL_OPENED",
-				N = "GOVERNANCE__RELEASE_NOTES_SUCCESS",
+				p = "GOVERNANCE__RELEASE_NOTES_SUCCESS",
 				A = "GOVERNANCE__TRANSFER_FAILURE",
-				p = "GOVERNANCE__TRANSFER_MODAL_OPENED",
+				N = "GOVERNANCE__TRANSFER_MODAL_OPENED",
 				h = "GOVERNANCE__TRANSFER_PENDING",
 				v = "GOVERNANCE__TRANSFER_SUCCESS",
 				R = "GOVERNANCE__WALLETS_FETCH_FAILURE",
-				y = "GOVERNANCE__WALLETS_FETCH_PENDING",
-				C = "GOVERNANCE__WALLETS_FETCH_SUCCESS",
+				C = "GOVERNANCE__WALLETS_FETCH_PENDING",
+				y = "GOVERNANCE__WALLETS_FETCH_SUCCESS",
 				g = "GOVERNANCE__WALLET_REGISTRATION_MODAL_OPENED"
 		},
 		"./src/reddit/actions/harbergerTax/actionCreators.ts": function(e, t, n) {
@@ -196,21 +196,21 @@
 				m = n("./src/reddit/featureFlags/component.tsx"),
 				f = n("./src/reddit/helpers/governance/ethereum.ts"),
 				O = n("./src/reddit/helpers/governance/tokens.ts"),
-				N = n("./src/reddit/selectors/crypto/points.ts"),
+				p = n("./src/reddit/selectors/crypto/points.ts"),
 				A = n("./src/reddit/selectors/crypto/wallet.ts"),
-				p = n("./src/reddit/selectors/gov.ts"),
+				N = n("./src/reddit/selectors/gov.ts"),
 				h = n("./src/reddit/components/Governance/HarbergerTax/BannerPurchaseCTA/index.m.less"),
 				v = n.n(h);
 			const R = Object(c.c)({
 					cost: (e, t) => {
 						const n = Object(E.r)(e, t);
-						if (n) return Object(p.b)(e, {
+						if (n) return Object(N.b)(e, {
 							subredditId: n.id
 						})
 					},
 					pointsDetails: (e, t) => {
 						const n = Object(E.r)(e, t);
-						return Object(N.b)(e, null == n ? void 0 : n.id)
+						return Object(p.b)(e, null == n ? void 0 : n.id)
 					},
 					publicAddress: (e, t) => {
 						const n = Object(E.r)(e, t);
@@ -223,14 +223,14 @@
 						const n = Object(E.r)(e, t),
 							r = e.user.account;
 						if (n && r) {
-							return Object(p.c)(e, {
+							return Object(N.c)(e, {
 								subredditId: n.id
 							}).ownerId === r.id
 						}
 						return !1
 					}
 				}),
-				y = Object(o.b)(R, e => ({
+				C = Object(o.b)(R, e => ({
 					onHideTooltip: () => e(Object(l.i)()),
 					onOpenManageFlow: (t, n) => e(n ? Object(a.a)({
 						subredditId: t
@@ -246,8 +246,8 @@
 						tooltipId: t
 					}))
 				})),
-				C = Object(E.u)();
-			t.default = Object(m.a)("spHarberger", C(y((function(e) {
+				y = Object(E.u)();
+			t.default = Object(m.a)("spHarberger", y(C((function(e) {
 				const {
 					cost: t,
 					publicAddress: n,
@@ -257,20 +257,20 @@
 					onOpenManageFlow: l,
 					onOpenPurchaseFlow: E,
 					onShowTooltip: m,
-					pointsDetails: N
+					pointsDetails: p
 				} = e;
-				if (!t || !N || !o) return null;
+				if (!t || !p || !o) return null;
 				const A = Object(f.f)(),
-					p = !c && (!A || !!!n || N.inTransition),
+					N = !c && (!A || !!!n || p.inTransition),
 					h = `harberger-cta-${o.id}`;
 				return s.a.createElement("div", {
 					className: Object(d.a)(v.a.container, {
-						[v.a.disabled]: p
+						[v.a.disabled]: N
 					}),
 					id: h,
 					onClick: () => {
-						if (p) return;
-						const e = !!N.blockchainProvider;
+						if (N) return;
+						const e = !!p.blockchainProvider;
 						c ? l(o.id, e) : E(o.id, e)
 					},
 					onMouseOver: () => m(h),
@@ -282,7 +282,7 @@
 				}), s.a.createElement(b.a, {
 					className: v.a.token,
 					subredditId: o.id
-				}), Object(u.a)(Object(O.c)(t, N.displayConversion))), p && s.a.createElement(_.c, {
+				}), Object(u.a)(Object(O.c)(t, p.displayConversion))), N && s.a.createElement(_.c, {
 					tooltipId: h,
 					text: A ? r.fbt._("You must register your wallet address to purchase the banner", null, {
 						hk: "38o58h"
@@ -367,7 +367,7 @@
 			})), n.d(t, "f", (function() {
 				return O
 			})), n.d(t, "n", (function() {
-				return N
+				return p
 			}));
 			var r, i = n("./src/config.ts"),
 				s = n("./src/reddit/endpoints/governance/requester.ts");
@@ -477,7 +477,7 @@
 					recipientAddress: n,
 					amount: r
 				});
-			async function N(e, t) {
+			async function p(e, t) {
 				return await Object(s.a)(e, {
 					method: "put",
 					endpoint: `${i.a.metaUrl}/crypto/ethereum/transaction-intent`,
@@ -537,7 +537,7 @@
 			}
 			const u = 4001;
 			async function a(e, t, r, s) {
-				const [o, c] = await Promise.all([n.e(0).then(n.bind(null, "./node_modules/ethers/lib.esm/index.js")).then(e => e.ethers), t.then(e => e.abi)]);
+				const [o, c] = await Promise.all([n.e("vendors~Avatar~CryptoLibEthers~GovernanceTransferPointsModal~MarketplaceClaimModal~MarketplaceInFeed~1befd72a").then(n.bind(null, "./node_modules/ethers/lib.esm/index.js")).then(e => e.ethers), t.then(e => e.abi)]);
 				await d();
 				const u = new o.providers.Web3Provider(i()).getSigner(),
 					a = new o.Contract(e, c, u),
@@ -566,7 +566,7 @@
 			};
 			const b = 1;
 			async function _(e, t, r, i, s) {
-				const o = await n.e(0).then(n.bind(null, "./node_modules/ethers/lib.esm/index.js")).then(e => e.ethers),
+				const o = await n.e("vendors~Avatar~CryptoLibEthers~GovernanceTransferPointsModal~MarketplaceClaimModal~MarketplaceInFeed~1befd72a").then(n.bind(null, "./node_modules/ethers/lib.esm/index.js")).then(e => e.ethers),
 					{
 						BigNumber: c
 					} = o,
@@ -930,4 +930,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/HarbergerTaxBannerPurchaseCTA.ef4f7169ab95068b73ba.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/HarbergerTaxBannerPurchaseCTA.761d8d08fcbaf24b129a.js.map

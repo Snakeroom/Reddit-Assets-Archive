@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Governance-Leaderboard.c4a8fb1892c0ba64d9a9.js
-// Retrieved at 9/12/2022, 11:30:07 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Governance-Leaderboard.3ee2be9da1df78860fb6.js
+// Retrieved at 9/12/2022, 2:10:03 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Governance-Leaderboard"], {
 		"./src/lib/constants/specialMembership.ts": function(e, t, r) {
@@ -481,7 +481,7 @@
 					allBadges: e => e.badges.models,
 					useHovercard: b.d.spSpecialMemberships
 				}),
-				D = e => ({
+				j = e => ({
 					onShowTooltip: t => e(Object(u.f)({
 						tooltipId: t
 					})),
@@ -489,7 +489,7 @@
 					onOpenUploadDialog: () => e(Object(a.j)())
 				});
 
-			function j(e) {
+			function D(e) {
 				const {
 					badgeIds: t,
 					allBadges: r,
@@ -499,8 +499,8 @@
 					badges: o
 				}, n))
 			}
-			const x = Object(o.b)(T, D)(j),
-				R = Object(o.b)(P, D)(j)
+			const x = Object(o.b)(T, j)(D),
+				R = Object(o.b)(P, j)(D)
 		},
 		"./src/reddit/components/Governance/Leaderboard/EntryDivider/index.m.less": function(e, t, r) {
 			e.exports = {
@@ -642,17 +642,16 @@
 				}))
 			}
 			var P = r("./node_modules/react-router-dom/esm/react-router-dom.js"),
-				D = r("./node_modules/uuid/v4.js"),
-				j = r.n(D),
-				x = r("./src/reddit/components/Badges/UserDisplay/index.tsx"),
-				R = r("./src/reddit/components/TrackingHelper/index.tsx"),
-				B = r("./src/reddit/featureFlags/index.ts"),
-				M = r("./src/reddit/helpers/governance/tokens.ts"),
-				L = r("./src/reddit/selectors/telemetry.ts"),
-				k = r("./src/reddit/components/Governance/Leaderboard/EntryUser/index.m.less"),
-				U = r.n(k);
-			const w = (e, t, r) => n => {
-				const s = L.n(n);
+				j = r("./node_modules/uuid/dist/esm-browser/v4.js"),
+				D = r("./src/reddit/components/Badges/UserDisplay/index.tsx"),
+				x = r("./src/reddit/components/TrackingHelper/index.tsx"),
+				R = r("./src/reddit/featureFlags/index.ts"),
+				B = r("./src/reddit/helpers/governance/tokens.ts"),
+				M = r("./src/reddit/selectors/telemetry.ts"),
+				L = r("./src/reddit/components/Governance/Leaderboard/EntryUser/index.m.less"),
+				k = r.n(L);
+			const U = (e, t, r) => n => {
+				const s = M.n(n);
 				return {
 					action: e,
 					correlationId: t,
@@ -663,12 +662,12 @@
 						...s.actionInfo,
 						reason: r
 					},
-					subreddit: L.ib(n)
+					subreddit: M.ib(n)
 				}
 			};
-			const G = Object(c.c)({
+			const w = Object(c.c)({
 				accountId: e => e.user.account ? e.user.account.id : void 0,
-				badgesEnabled: e => B.d.spBadges(e),
+				badgesEnabled: e => R.d.spBadges(e),
 				pointsDetails: (e, t) => {
 					let {
 						subredditId: r
@@ -676,43 +675,43 @@
 					return Object(C.b)(e, r)
 				}
 			});
-			var F = Object(R.c)(Object(d.b)(G)((function(e) {
+			var G = Object(x.c)(Object(d.b)(w)((function(e) {
 					var t;
-					const r = j()();
+					const r = Object(j.a)();
 					return i.a.createElement(P.a, {
-						className: Object(I.a)(U.a.container, e.className, {
-							[U.a.currentUser]: e.entry.userId === e.accountId
+						className: Object(I.a)(k.a.container, e.className, {
+							[k.a.currentUser]: e.entry.userId === e.accountId
 						}),
 						to: `/user/${e.entry.userName}/`,
 						onClick: () => {
-							e.sendEvent(w("click", r, e.entry.userName))
+							e.sendEvent(U("click", r, e.entry.userName))
 						},
 						onMouseEnter: () => {
-							e.sendEvent(w("hover", r, e.entry.userName))
+							e.sendEvent(U("hover", r, e.entry.userName))
 						}
 					}, i.a.createElement("div", {
-						className: U.a.user
+						className: k.a.user
 					}, e.badgesEnabled && i.a.createElement("div", {
-						className: U.a.badgeContainer
-					}, i.a.createElement(x.c, {
-						className: U.a.badge,
+						className: k.a.badgeContainer
+					}, i.a.createElement(D.c, {
+						className: k.a.badge,
 						correlationId: r,
 						subredditId: e.subredditId,
 						uniqueIdentifier: e.uniqueIdentifier,
 						userId: e.entry.userId
 					})), i.a.createElement("div", {
-						className: U.a.username
+						className: k.a.username
 					}, e.entry.userName)), i.a.createElement("div", {
-						className: U.a.rank
+						className: k.a.rank
 					}, i.a.createElement("div", {
-						className: U.a.points
-					}, Object(N.a)(Object(M.c)(e.entry.score, null === (t = e.pointsDetails) || void 0 === t ? void 0 : t.displayConversion))), i.a.createElement("div", {
-						className: U.a.position
+						className: k.a.points
+					}, Object(N.a)(Object(B.c)(e.entry.score, null === (t = e.pointsDetails) || void 0 === t ? void 0 : t.displayConversion))), i.a.createElement("div", {
+						className: k.a.position
 					}, `#${Object(N.a)(e.entry.position.toString())}`)))
 				}))),
-				H = r("./src/reddit/components/Governance/Leaderboard/index.m.less"),
-				V = r.n(H);
-			class $ extends i.a.Component {
+				F = r("./src/reddit/components/Governance/Leaderboard/index.m.less"),
+				H = r.n(F);
+			class V extends i.a.Component {
 				componentDidMount() {
 					this.props.onFetchLeaderboardData()
 				}
@@ -723,26 +722,26 @@
 							hk: "4Bb1G7"
 						})
 					}, this.props.subreddit && i.a.createElement("div", {
-						className: V.a.description
+						className: H.a.description
 					}, s.fbt._("Scores are updated regularly based on the top contributors who earned the most {community-points-name} each month.", [s.fbt._param("community-points-name", this.props.tokenName)], {
 						hk: "25uyZ3"
 					})), i.a.createElement("div", {
-						className: V.a.header
+						className: H.a.header
 					}, i.a.createElement("div", {
-						className: V.a.topUsers
+						className: H.a.topUsers
 					}, s.fbt._("top 10 users", null, {
 						hk: "pe871"
 					})), i.a.createElement("div", {
-						className: V.a.tokens
+						className: H.a.tokens
 					}, this.props.tokenName)), (() => this.props.leaderboardErrored ? i.a.createElement("div", {
-						className: V.a.error
+						className: H.a.error
 					}, i.a.createElement(v.a, {
-						className: V.a.errorIcon
+						className: H.a.errorIcon
 					})) : this.props.leaderboard ? i.a.createElement(o.Fragment, null, this.props.leaderboard.map(e => {
 						switch (e.type) {
 							case n.User:
-								return i.a.createElement(F, {
-									className: V.a.entryUser,
+								return i.a.createElement(G, {
+									className: H.a.entryUser,
 									entry: e,
 									subredditId: this.props.subredditId,
 									uniqueIdentifier: this.props.uniqueId,
@@ -750,7 +749,7 @@
 								});
 							case n.Divider:
 								return i.a.createElement(T, {
-									className: V.a.divider,
+									className: H.a.divider,
 									entry: e,
 									key: "divider"
 								})
@@ -758,12 +757,12 @@
 					})) : Array.from({
 						length: 8
 					}).map((e, t) => i.a.createElement("div", {
-						className: V.a.loading,
+						className: H.a.loading,
 						key: t
 					})))())
 				}
 			}
-			const W = Object(c.c)({
+			const $ = Object(c.c)({
 				tokenName: (e, t) => {
 					let {
 						subredditId: r
@@ -792,14 +791,14 @@
 					return Object(g.z)(e, r)
 				}
 			});
-			t.default = Object(d.b)(W, (e, t) => {
+			t.default = Object(d.b)($, (e, t) => {
 				let {
 					subredditId: r
 				} = t;
 				return {
 					onFetchLeaderboardData: () => e(O(r))
 				}
-			})($)
+			})(V)
 		},
 		"./src/reddit/endpoints/governance/badges.ts": function(e, t, r) {
 			"use strict";
@@ -1628,9 +1627,9 @@
 			})), r.d(t, "e", (function() {
 				return P
 			})), r.d(t, "d", (function() {
-				return D
-			})), r.d(t, "j", (function() {
 				return j
+			})), r.d(t, "j", (function() {
+				return D
 			})), r.d(t, "p", (function() {
 				return x
 			})), r.d(t, "k", (function() {
@@ -1769,7 +1768,7 @@
 				return r ? [].concat(r.locked, r.unlocked).filter(e => e.position).sort((e, t) => e.position - t.position) : _
 			}
 
-			function D(e, t) {
+			function j(e, t) {
 				const r = e.economics.subredditPremium[t];
 				if (r && r.status === l.a.Fetched) {
 					const e = r.data.collections[d.a.Cosmetic];
@@ -1778,7 +1777,7 @@
 				return _
 			}
 
-			function j(e, t) {
+			function D(e, t) {
 				return T(e, t, d.a.Cosmetic, d.c.Gallery).some(e => e.locked.some(e => Object(i.f)(e) || !!e.price))
 			}
 			const x = e => {
@@ -1912,4 +1911,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Governance-Leaderboard.c4a8fb1892c0ba64d9a9.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Governance-Leaderboard.3ee2be9da1df78860fb6.js.map

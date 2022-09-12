@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/GovernanceWalletRegistration.674dc169ff01debc1816.js
-// Retrieved at 9/12/2022, 11:30:07 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/GovernanceWalletRegistration.21f5bbd5e2f862de6bfc.js
+// Retrieved at 9/12/2022, 2:10:03 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["GovernanceWalletRegistration"], {
 		"./src/chat/controls/Svg/index.m.less": function(e, t, n) {
@@ -143,11 +143,11 @@
 			})), n.d(t, "t", (function() {
 				return x
 			})), n.d(t, "u", (function() {
-				return y
-			})), n.d(t, "v", (function() {
-				return N
-			})), n.d(t, "w", (function() {
 				return k
+			})), n.d(t, "v", (function() {
+				return y
+			})), n.d(t, "w", (function() {
+				return N
 			})), n.d(t, "x", (function() {
 				return O
 			}));
@@ -171,9 +171,9 @@
 				E = "GOVERNANCE__TRANSFER_MODAL_OPENED",
 				_ = "GOVERNANCE__TRANSFER_PENDING",
 				x = "GOVERNANCE__TRANSFER_SUCCESS",
-				y = "GOVERNANCE__WALLETS_FETCH_FAILURE",
-				N = "GOVERNANCE__WALLETS_FETCH_PENDING",
-				k = "GOVERNANCE__WALLETS_FETCH_SUCCESS",
+				k = "GOVERNANCE__WALLETS_FETCH_FAILURE",
+				y = "GOVERNANCE__WALLETS_FETCH_PENDING",
+				N = "GOVERNANCE__WALLETS_FETCH_SUCCESS",
 				O = "GOVERNANCE__WALLET_REGISTRATION_MODAL_OPENED"
 		},
 		"./src/reddit/actions/governance/errorToast.ts": function(e, t, n) {
@@ -200,7 +200,7 @@
 			})), n.d(t, "b", (function() {
 				return _
 			})), n.d(t, "c", (function() {
-				return y
+				return k
 			})), n.d(t, "f", (function() {
 				return j
 			})), n.d(t, "g", (function() {
@@ -232,9 +232,9 @@
 			const E = Object(a.a)(C.b),
 				_ = Object(a.a)(C.c),
 				x = Object(a.a)(C.e),
-				y = (Object(a.a)(C.f), Object(a.a)(C.g), Object(a.a)(C.h)),
-				N = Object(a.a)(C.i),
-				k = Object(a.a)(C.j),
+				k = (Object(a.a)(C.f), Object(a.a)(C.g), Object(a.a)(C.h)),
+				y = Object(a.a)(C.i),
+				N = Object(a.a)(C.j),
 				O = Object(a.a)(C.k),
 				w = Object(a.a)(C.q),
 				j = Object(a.a)(C.r),
@@ -250,7 +250,7 @@
 							gqlContext: c
 						} = a,
 						p = r().polls.models[e];
-					if (n(k({
+					if (n(N({
 							pollId: e
 						})), (s = p.type === u.a.GA ? await ((e, t, n) => Object(l.a)(e, {
 								...m,
@@ -284,7 +284,7 @@
 							} = p, t = a.posts.models[e];
 							t && t.voteState === f.a.notVoted && n(Object(i.kb)(e))
 						}
-					} else n(N({
+					} else n(y({
 						pollId: e,
 						error: s.error || s.errors[0].message
 					})), Object(g.a)(n, s.error || s.errors[0].messsage)
@@ -586,59 +586,58 @@
 				l = n("./src/reddit/helpers/governance/ethereum.ts"),
 				u = n("./src/reddit/icons/svgs/Close/index.tsx"),
 				m = n("./src/reddit/selectors/telemetry.ts"),
-				b = n("./node_modules/uuid/v4.js"),
-				p = n.n(b),
-				h = n("./src/config.ts"),
-				f = n("./src/reddit/controls/Button/index.tsx"),
-				v = n("./src/reddit/icons/svgs/ArrowRight/index.tsx"),
-				C = n("./src/reddit/components/Governance/WalletRegistration/Common/Cards/index.m.less"),
-				g = n.n(C);
+				b = n("./node_modules/uuid/dist/esm-browser/v4.js"),
+				p = n("./src/config.ts"),
+				h = n("./src/reddit/controls/Button/index.tsx"),
+				f = n("./src/reddit/icons/svgs/ArrowRight/index.tsx"),
+				v = n("./src/reddit/components/Governance/WalletRegistration/Common/Cards/index.m.less"),
+				C = n.n(v);
 			const {
-				fbt: E
+				fbt: g
 			} = n("./node_modules/fbt/lib/FbtPublic.js");
 
-			function _(e) {
-				const t = `url(${h.a.assetPath}/img/communityPoints/registration/ethtrader/about.svg)`;
+			function E(e) {
+				const t = `url(${p.a.assetPath}/img/communityPoints/registration/ethtrader/about.svg)`;
 				return a.a.createElement("div", {
-					className: Object(o.a)(g.a.card, g.a.aboutCard)
+					className: Object(o.a)(C.a.card, C.a.aboutCard)
 				}, a.a.createElement("div", {
-					className: g.a.text
+					className: C.a.text
 				}, a.a.createElement("div", {
-					className: g.a.header
-				}, E._("Donuts Are No Longer Centralized!", null, {
+					className: C.a.header
+				}, g._("Donuts Are No Longer Centralized!", null, {
 					hk: "45RssI"
 				})), a.a.createElement("div", {
-					className: g.a.body
-				}, E._("Backed by {=smart contracts} developed by mod u/carlslarson, Donuts are now ERC-20 tokens that you own and control on the Ethereum blockchain! Register to earn Donuts for your contributions to the subreddit and use them to buy perks in the community, like a special membership, higher weighting in polls, or the ability to control the top banner. Follow this simple wizard to register. Note: Donuts are not driven nor developed by Reddit.", [E._param("=smart contracts", a.a.createElement("a", {
+					className: C.a.body
+				}, g._("Backed by {=smart contracts} developed by mod u/carlslarson, Donuts are now ERC-20 tokens that you own and control on the Ethereum blockchain! Register to earn Donuts for your contributions to the subreddit and use them to buy perks in the community, like a special membership, higher weighting in polls, or the ability to control the top banner. Follow this simple wizard to register. Note: Donuts are not driven nor developed by Reddit.", [g._param("=smart contracts", a.a.createElement("a", {
 					href: "https://github.com/daonuts",
-					className: g.a.link,
+					className: C.a.link,
 					rel: "noopener noreferrer",
 					target: "_blank"
-				}, E._("smart contracts", null, {
+				}, g._("smart contracts", null, {
 					hk: "40dMKO"
 				})))], {
 					hk: "4gEJ3V"
 				}))), a.a.createElement("div", {
-					className: g.a.cta
+					className: C.a.cta
 				}, a.a.createElement("div", {
-					className: g.a.image,
+					className: C.a.image,
 					style: {
 						backgroundImage: t
 					}
-				}), a.a.createElement(f.l, {
-					className: g.a.button,
+				}), a.a.createElement(h.l, {
+					className: C.a.button,
 					onClick: e.onNextStep
-				}, E._("Start", null, {
+				}, g._("Start", null, {
 					hk: "3So7as"
-				}), a.a.createElement(v.a, {
-					className: g.a.buttonIcon
+				}), a.a.createElement(f.a, {
+					className: C.a.buttonIcon
 				}))))
 			}
-			var x = n("./src/reddit/icons/svgs/Link/index.tsx");
+			var _ = n("./src/reddit/icons/svgs/Link/index.tsx");
 			const {
-				fbt: y
+				fbt: x
 			} = n("./node_modules/fbt/lib/FbtPublic.js");
-			class N extends a.a.Component {
+			class k extends a.a.Component {
 				componentDidMount() {
 					this.intervalId = window.setInterval(() => {
 						Object(l.d)() && (this.props.onNextStep(), window.clearInterval(this.intervalId))
@@ -648,44 +647,44 @@
 					window.clearInterval(this.intervalId)
 				}
 				render() {
-					const e = `url(${h.a.assetPath}/img/communityPoints/registration/ethtrader/connect.svg)`;
+					const e = `url(${p.a.assetPath}/img/communityPoints/registration/ethtrader/connect.svg)`;
 					return a.a.createElement("div", {
-						className: Object(o.a)(g.a.card, g.a.connectCard)
+						className: Object(o.a)(C.a.card, C.a.connectCard)
 					}, a.a.createElement("div", {
-						className: g.a.text
+						className: C.a.text
 					}, a.a.createElement("div", {
-						className: g.a.header
-					}, y._("Connect Reddit to MetaMask", null, {
+						className: C.a.header
+					}, x._("Connect Reddit to MetaMask", null, {
 						hk: "1uL476"
 					})), a.a.createElement("div", {
-						className: g.a.body
-					}, y._("This will allow Reddit to see your wallet’s public key and allow Reddit to request your signature on messages and transactions.", null, {
+						className: C.a.body
+					}, x._("This will allow Reddit to see your wallet’s public key and allow Reddit to request your signature on messages and transactions.", null, {
 						hk: "1IBG48"
 					}))), a.a.createElement("div", {
-						className: g.a.cta
+						className: C.a.cta
 					}, a.a.createElement("div", {
-						className: g.a.image,
+						className: C.a.image,
 						style: {
 							backgroundImage: e
 						}
-					}), a.a.createElement(f.o, {
-						className: g.a.button,
+					}), a.a.createElement(h.o, {
+						className: C.a.button,
 						onClick: l.b
-					}, y._("Connect", null, {
+					}, x._("Connect", null, {
 						hk: "3rApnz"
-					}), a.a.createElement(x.a, {
-						className: g.a.buttonIcon
+					}), a.a.createElement(_.a, {
+						className: C.a.buttonIcon
 					}))))
 				}
 			}
-			var k = n("./src/chat/icons/svgs/Refresh/index.tsx"),
-				O = n("./src/reddit/icons/svgs/CircleCheck/index.tsx"),
-				w = n("./src/reddit/icons/svgs/DownvoteCircle/index.tsx"),
-				j = n("./src/reddit/components/Governance/WalletRegistration/Common/pageReload.ts");
+			var y = n("./src/chat/icons/svgs/Refresh/index.tsx"),
+				N = n("./src/reddit/icons/svgs/CircleCheck/index.tsx"),
+				O = n("./src/reddit/icons/svgs/DownvoteCircle/index.tsx"),
+				w = n("./src/reddit/components/Governance/WalletRegistration/Common/pageReload.ts");
 			const {
-				fbt: I
-			} = n("./node_modules/fbt/lib/FbtPublic.js"), A = "https://metamask.io/", M = "https://chrome.google.com/webstore/detail/metamask/nkbihfbeogaeaoehlefnkodbefgpgknn";
-			class R extends a.a.Component {
+				fbt: j
+			} = n("./node_modules/fbt/lib/FbtPublic.js"), I = "https://metamask.io/", A = "https://chrome.google.com/webstore/detail/metamask/nkbihfbeogaeaoehlefnkodbefgpgknn";
+			class M extends a.a.Component {
 				constructor() {
 					super(...arguments), this.state = {
 						clickedInstallButton: !1,
@@ -696,70 +695,70 @@
 					const {
 						clickedInstallButton: e,
 						isMetaMaskInstalled: t
-					} = this.state, n = `url(${h.a.assetPath}/img/communityPoints/registration/ethtrader/metamask.svg)`;
+					} = this.state, n = `url(${p.a.assetPath}/img/communityPoints/registration/ethtrader/metamask.svg)`;
 					return a.a.createElement("div", {
-						className: Object(o.a)(g.a.card, g.a.metaMaskCard)
+						className: Object(o.a)(C.a.card, C.a.metaMaskCard)
 					}, a.a.createElement("div", {
-						className: g.a.text
+						className: C.a.text
 					}, a.a.createElement("div", {
-						className: g.a.header
-					}, I._("Install the MetaMask Browser Extension", null, {
+						className: C.a.header
+					}, j._("Install the MetaMask Browser Extension", null, {
 						hk: "3MOJpi"
-					}), t && a.a.createElement(O.a, {
-						className: g.a.installedCheckmark
+					}), t && a.a.createElement(N.a, {
+						className: C.a.installedCheckmark
 					})), a.a.createElement("div", {
-						className: g.a.body
+						className: C.a.body
 					}, a.a.createElement("p", {
-						className: g.a.paragraph
-					}, I._('{=MetaMask} is an Ethereum Wallet trusted by millions. The extension allows you to manage decentralized tokens and to access Ethereum-powered decentralized applications, or "Dapps", directly in your browser. You will need to reload the page after you install the extension.', [I._param("=MetaMask", a.a.createElement("a", {
-						href: A,
-						className: g.a.link,
+						className: C.a.paragraph
+					}, j._('{=MetaMask} is an Ethereum Wallet trusted by millions. The extension allows you to manage decentralized tokens and to access Ethereum-powered decentralized applications, or "Dapps", directly in your browser. You will need to reload the page after you install the extension.', [j._param("=MetaMask", a.a.createElement("a", {
+						href: I,
+						className: C.a.link,
 						rel: "noopener noreferrer",
 						target: "_blank"
-					}, I._("MetaMask", null, {
+					}, j._("MetaMask", null, {
 						hk: "2TWNyh"
 					})))], {
 						hk: "2k97Gi"
 					})), a.a.createElement("p", {
-						className: g.a.paragraph
-					}, I._("Disclaimer: MetaMask is not affiliated with Reddit and the following is not an advertisement or an endorsement. You understand that Reddit is not responsible for any actions or inactions or harm caused by using Metamask.", null, {
+						className: C.a.paragraph
+					}, j._("Disclaimer: MetaMask is not affiliated with Reddit and the following is not an advertisement or an endorsement. You understand that Reddit is not responsible for any actions or inactions or harm caused by using Metamask.", null, {
 						hk: "3l0TTn"
 					})))), a.a.createElement("div", {
-						className: g.a.cta
+						className: C.a.cta
 					}, a.a.createElement("div", {
-						className: g.a.image,
+						className: C.a.image,
 						style: {
 							backgroundImage: n
 						}
-					}), t ? a.a.createElement(f.l, {
-						className: g.a.button,
+					}), t ? a.a.createElement(h.l, {
+						className: C.a.button,
 						onClick: this.props.onNextStep
-					}, I._("Continue", null, {
+					}, j._("Continue", null, {
 						hk: "4aMeJj"
-					}), a.a.createElement(v.a, {
-						className: g.a.buttonIcon
-					})) : e ? a.a.createElement(f.l, {
-						className: g.a.button,
-						onClick: j.a
-					}, I._("Reload page", null, {
+					}), a.a.createElement(f.a, {
+						className: C.a.buttonIcon
+					})) : e ? a.a.createElement(h.l, {
+						className: C.a.button,
+						onClick: w.a
+					}, j._("Reload page", null, {
 						hk: "14fa9z"
-					}), a.a.createElement(k.a, {
-						className: g.a.buttonIcon
-					})) : a.a.createElement(f.p, {
-						className: g.a.button,
-						href: M,
+					}), a.a.createElement(y.a, {
+						className: C.a.buttonIcon
+					})) : a.a.createElement(h.p, {
+						className: C.a.button,
+						href: A,
 						target: "_blank",
 						onClick: () => this.setState({
 							clickedInstallButton: !0
 						})
-					}, I._("Get Extension", null, {
+					}, j._("Get Extension", null, {
 						hk: "ey9hD"
-					}), a.a.createElement(w.a, {
-						className: g.a.buttonIcon
+					}), a.a.createElement(O.a, {
+						className: C.a.buttonIcon
 					}))))
 				}
 			}
-			var S = e => a.a.createElement("svg", {
+			var R = e => a.a.createElement("svg", {
 				className: e.className,
 				viewBox: "0 0 16 16",
 				xmlns: "http://www.w3.org/2000/svg"
@@ -769,46 +768,46 @@
 				d: "M15.8278 7.71709L15.0447 4.57483C14.625 2.89562 13.3316 1.55632 11.6691 1.07957L8.55662 0.187113C6.89279 -0.289905 5.08599 0.160525 3.84157 1.36271L2.71763 2.44761C2.53644 2.36832 2.33627 2.32433 2.12583 2.32433C1.30975 2.32433 0.648193 2.98589 0.648193 3.80197C0.648193 4.04193 0.705395 4.26854 0.806908 4.46889C0.547962 4.86933 0.348128 5.30713 0.216101 5.76783C-0.0184979 6.58567 -0.0337468 7.45525 0.172179 8.28326L0.956131 11.4246C1.37437 13.1039 2.66792 14.4434 4.33188 14.9206L7.44436 15.813C7.88293 15.9387 8.33114 16 8.77675 16C10.0206 16 11.2423 15.5223 12.1597 14.6373L14.4886 12.3879C15.1013 11.7956 15.5492 11.0501 15.7838 10.232C16.0184 9.41402 16.0337 8.54438 15.8278 7.71709ZM1.49235 5.1373C1.3296 5.41768 1.2027 5.71619 1.11403 6.0254L1.1138 6.02619L1.12933 6.03038C1.68311 6.18912 2.14176 6.55399 2.42093 7.05766C2.74741 7.64566 3.49279 7.85908 4.08163 7.53351C4.50625 7.29819 5.00386 7.21289 5.48114 7.29298C5.49328 7.29502 5.50522 7.29751 5.51697 7.30043L5.51718 7.29966L5.52028 7.28888C5.9132 5.9186 7.34177 5.12764 8.71097 5.52026C10.0802 5.91287 10.8725 7.34067 10.4796 8.71095L10.4765 8.72174L10.4763 8.72248C10.4982 8.72797 10.5199 8.73512 10.5414 8.74399C10.9964 8.93206 11.3633 9.25932 11.6022 9.69034C11.9285 10.279 12.6727 10.4925 13.2614 10.1661C13.7602 9.88952 14.3369 9.82179 14.8857 9.97507L14.8858 9.97443C15.0726 9.32325 15.0903 8.62246 14.9212 7.94274L14.8549 7.67671C14.6858 7.91679 14.4065 8.07365 14.0906 8.07365C13.5746 8.07365 13.1563 7.65538 13.1563 7.13942C13.1563 6.62346 13.5746 6.20519 14.0906 6.20519C14.2427 6.20519 14.3864 6.24157 14.5134 6.30611L14.1384 4.80136C13.7983 3.44025 12.7592 2.36408 11.4116 1.97765L9.03074 1.29494C9.04152 1.36569 9.04712 1.43814 9.04712 1.5119C9.04712 2.30045 8.40787 2.9397 7.61932 2.9397C6.83077 2.9397 6.19152 2.30045 6.19152 1.5119C6.19152 1.35 6.21847 1.1944 6.26812 1.04933C5.61024 1.21321 4.99488 1.5474 4.49033 2.03482L3.41264 3.07513C3.53412 3.28974 3.60346 3.53776 3.60346 3.80197C3.60346 4.61804 2.9419 5.2796 2.12583 5.2796C1.89912 5.2796 1.68434 5.22854 1.49235 5.1373ZM9.5796 8.4607C9.32715 9.32787 8.41534 9.83083 7.54641 9.5815C6.67774 9.33244 6.17075 8.42271 6.41825 7.54642C6.62509 6.82522 7.28509 6.3544 8.00049 6.3544C8.15024 6.3544 8.30247 6.37499 8.45339 6.41832C8.87593 6.53947 9.22601 6.81779 9.4391 7.20201C9.6522 7.5863 9.70277 8.03074 9.5796 8.4607ZM5.32631 8.2143C5.36094 8.22011 5.39532 8.22195 5.42898 8.22016C5.5179 9.25462 6.23114 10.1763 7.2889 10.4796C8.35052 10.784 9.4479 10.3763 10.0703 9.53999C10.1042 9.56716 10.1424 9.59003 10.1845 9.60744C10.4421 9.71386 10.6497 9.89913 10.785 10.1432C11.1781 10.8523 11.9147 11.253 12.6732 11.253C13.0263 11.253 13.3842 11.1662 13.7143 10.9832C13.9612 10.8463 14.2415 10.7998 14.5159 10.848C14.3345 11.1636 14.1078 11.4565 13.8392 11.7161L11.5106 13.9653C10.5009 14.9394 9.0495 15.3014 7.70185 14.915L4.58934 14.0225C3.24062 13.6358 2.2016 12.5596 1.86259 11.1988L1.07866 8.05709C0.988196 7.69351 0.951205 7.3239 0.964941 6.95908C1.23698 7.06081 1.4616 7.25386 1.604 7.51089C1.99761 8.21939 2.73477 8.61983 3.49383 8.61983C3.84677 8.61983 4.2044 8.53323 4.53428 8.35076C4.77839 8.21548 5.05235 8.1681 5.32631 8.2143ZM11.4706 5.87934C12.2076 5.87934 12.8052 5.28182 12.8052 4.54474C12.8052 3.80765 12.2076 3.21013 11.4706 3.21013C10.7335 3.21013 10.136 3.80765 10.136 4.54474C10.136 5.28182 10.7335 5.87934 11.4706 5.87934ZM6.4448 4.28874C6.4448 4.8047 6.02653 5.22296 5.51057 5.22296C4.99462 5.22296 4.57635 4.8047 4.57635 4.28874C4.57635 3.77278 4.99462 3.35451 5.51057 3.35451C6.02653 3.35451 6.4448 3.77278 6.4448 4.28874Z"
 			}));
 			const {
-				fbt: L
+				fbt: S
 			} = n("./node_modules/fbt/lib/FbtPublic.js");
 
-			function T(e) {
-				const t = `url(${h.a.assetPath}/img/communityPoints/registration/ethtrader/registered.svg)`,
+			function L(e) {
+				const t = `url(${p.a.assetPath}/img/communityPoints/registration/ethtrader/registered.svg)`,
 					{
 						onNextStep: n,
 						points: r
 					} = e;
 				return a.a.createElement("div", {
-					className: Object(o.a)(g.a.card, g.a.registeredCard)
+					className: Object(o.a)(C.a.card, C.a.registeredCard)
 				}, a.a.createElement("div", {
-					className: g.a.text
+					className: C.a.text
 				}, a.a.createElement("div", {
-					className: g.a.header
-				}, L._("That’s It, You Are Registered!", null, {
+					className: C.a.header
+				}, S._("That’s It, You Are Registered!", null, {
 					hk: "3gVrKp"
 				})), a.a.createElement("div", {
-					className: g.a.body
+					className: C.a.body
 				}, a.a.createElement("p", {
-					className: g.a.paragraph
-				}, L._("Your wallet will receive Donuts after the next regular distribution based on the karma you earn in this subreddit.", null, {
+					className: C.a.paragraph
+				}, S._("Your wallet will receive Donuts after the next regular distribution based on the karma you earn in this subreddit.", null, {
 					hk: "3qEBK1"
 				})), a.a.createElement("p", {
-					className: g.a.paragraph
-				}, L._("To view your balance in MetaMask, you’ll need to {=track} the Donut token by clicking the button below. After that, go earn more Donuts by creating some great content on r/EthTrader!", [L._param("=track", a.a.createElement("span", {
-					className: g.a.bold
-				}, L._("track", null, {
+					className: C.a.paragraph
+				}, S._("To view your balance in MetaMask, you’ll need to {=track} the Donut token by clicking the button below. After that, go earn more Donuts by creating some great content on r/EthTrader!", [S._param("=track", a.a.createElement("span", {
+					className: C.a.bold
+				}, S._("track", null, {
 					hk: "3r4sf1"
 				})))], {
 					hk: "urtXU"
 				})))), a.a.createElement("div", {
-					className: g.a.cta
+					className: C.a.cta
 				}, a.a.createElement("div", {
-					className: g.a.image,
+					className: C.a.image,
 					style: {
 						backgroundImage: t
 					}
-				}), a.a.createElement(f.l, {
-					className: g.a.button,
+				}), a.a.createElement(h.l, {
+					className: C.a.button,
 					onClick: () => {
 						var e, t;
 						if (r && r.contractAddress) {
@@ -821,23 +820,23 @@
 							Object(l.j)(a).then(n)
 						} else n()
 					}
-				}, r ? L._("Track Donuts", null, {
+				}, r ? S._("Track Donuts", null, {
 					hk: "3gEZnQ"
-				}) : L._("Finish", null, {
+				}) : S._("Finish", null, {
 					hk: "4kSXmt"
-				}), a.a.createElement(S, {
-					className: g.a.buttonIcon
+				}), a.a.createElement(R, {
+					className: C.a.buttonIcon
 				}))))
 			}
-			var P = n("./src/reddit/actions/governance/errorToast.ts"),
-				G = n("./src/reddit/actions/toaster.ts"),
-				W = n("./src/reddit/contexts/ApiContext.tsx"),
-				D = n("./src/reddit/controls/Checkbox/index.tsx"),
-				B = n("./src/reddit/endpoints/governance/crypto.ts"),
-				U = n("./src/reddit/icons/svgs/Post/index.tsx"),
-				V = n("./src/reddit/models/Toast/index.ts"),
-				F = n("./node_modules/fbt/lib/FbtPublic.js");
-			class H extends a.a.Component {
+			var T = n("./src/reddit/actions/governance/errorToast.ts"),
+				P = n("./src/reddit/actions/toaster.ts"),
+				G = n("./src/reddit/contexts/ApiContext.tsx"),
+				W = n("./src/reddit/controls/Checkbox/index.tsx"),
+				D = n("./src/reddit/endpoints/governance/crypto.ts"),
+				B = n("./src/reddit/icons/svgs/Post/index.tsx"),
+				U = n("./src/reddit/models/Toast/index.ts"),
+				V = n("./node_modules/fbt/lib/FbtPublic.js");
+			class F extends a.a.Component {
 				constructor() {
 					super(...arguments), this.state = {
 						approvalChecked: !1
@@ -848,29 +847,29 @@
 					}, this.runVerification = async () => {
 						var e;
 						const t = Object(l.d)();
-						if (!t) return void this.props.onError(F.fbt._("Please select an Ethereum wallet in your provider", null, {
+						if (!t) return void this.props.onError(V.fbt._("Please select an Ethereum wallet in your provider", null, {
 							hk: "25u6on"
 						}));
 						const n = null === (e = this.props.points) || void 0 === e ? void 0 : e.blockchainProvider;
 						if (!n || !n.startsWith("ethereum")) throw new Error("expected Ethereum provider");
 						if (n.split(":")[1] !== Object(l.e)()) {
-							const e = Object(B.j)(n);
-							return void this.props.onError(F.fbt._("Please select the {providerName} in MetaMask", [F.fbt._param("providerName", e)], {
+							const e = Object(D.j)(n);
+							return void this.props.onError(V.fbt._("Please select the {providerName} in MetaMask", [V.fbt._param("providerName", e)], {
 								hk: "2uEOyT"
 							}))
 						}
-						const r = await Object(B.k)(this.props.apiContext(), n, t);
+						const r = await Object(D.k)(this.props.apiContext(), n, t);
 						if (!r.ok) return void this.props.onGovernanceError(r.error);
 						const a = r.body.payload;
 						let s;
 						try {
 							s = await Object(l.i)(a)
 						} catch (i) {
-							return console.error(i), void(i.code !== l.a && this.props.onError(i.message || F.fbt._("An error occured while trying to sign the registration message.", null, {
+							return console.error(i), void(i.code !== l.a && this.props.onError(i.message || V.fbt._("An error occured while trying to sign the registration message.", null, {
 								hk: "30ALRP"
 							})))
 						}
-						const o = await Object(B.m)(this.props.apiContext(), n, {
+						const o = await Object(D.m)(this.props.apiContext(), n, {
 							registrationType: "crypto-registration-EIP712",
 							address: t,
 							signature: s
@@ -881,134 +880,134 @@
 				render() {
 					const {
 						approvalChecked: e
-					} = this.state, t = `url(${h.a.assetPath}/img/communityPoints/registration/ethtrader/verify.svg)`;
+					} = this.state, t = `url(${p.a.assetPath}/img/communityPoints/registration/ethtrader/verify.svg)`;
 					return a.a.createElement("div", {
-						className: Object(o.a)(g.a.card, g.a.verifyCard)
+						className: Object(o.a)(C.a.card, C.a.verifyCard)
 					}, a.a.createElement("div", {
-						className: g.a.text
+						className: C.a.text
 					}, a.a.createElement("div", {
-						className: g.a.header
-					}, F.fbt._("Sign a Verification Message", null, {
+						className: C.a.header
+					}, V.fbt._("Sign a Verification Message", null, {
 						hk: "35rjb4"
 					})), a.a.createElement("div", {
-						className: g.a.body
-					}, F.fbt._("Sign a message (not a transaction), to verify that the wallet is yours. This will not be sent to the blockchain and will not cost you anything.", null, {
+						className: C.a.body
+					}, V.fbt._("Sign a message (not a transaction), to verify that the wallet is yours. This will not be sent to the blockchain and will not cost you anything.", null, {
 						hk: "e0c0N"
 					}))), a.a.createElement("div", {
-						className: g.a.cta
+						className: C.a.cta
 					}, a.a.createElement("div", {
-						className: g.a.image,
+						className: C.a.image,
 						style: {
 							backgroundImage: t
 						}
 					}), a.a.createElement("div", {
-						className: g.a.approvalMessage
-					}, a.a.createElement(D.a, {
+						className: C.a.approvalMessage
+					}, a.a.createElement(W.a, {
 						isCheckboxSelected: e,
 						toggleCheckbox: this.toggleApprovalCheckbox
 					}), a.a.createElement("div", {
 						onClick: this.toggleApprovalCheckbox
-					}, F.fbt._("I understand and agree to allow Reddit to publicly display my wallet address linked to my username", null, {
+					}, V.fbt._("I understand and agree to allow Reddit to publicly display my wallet address linked to my username", null, {
 						hk: "1fQEnc"
-					}))), a.a.createElement(f.o, {
-						className: g.a.button,
+					}))), a.a.createElement(h.o, {
+						className: C.a.button,
 						onClick: this.runVerification,
 						disabled: !e
-					}, F.fbt._("Verify in MetaMask", null, {
+					}, V.fbt._("Verify in MetaMask", null, {
 						hk: "4yHWv"
-					}), a.a.createElement(U.a, {
-						className: g.a.buttonIcon
+					}), a.a.createElement(B.a, {
+						className: C.a.buttonIcon
 					}))))
 				}
 			}
-			var $ = Object(W.b)(Object(s.b)(void 0, e => ({
-				onGovernanceError: t => Object(P.a)(e, t),
-				onError: t => e(Object(G.f)({
+			var H = Object(G.b)(Object(s.b)(void 0, e => ({
+				onGovernanceError: t => Object(T.a)(e, t),
+				onError: t => e(Object(P.f)({
 					duration: 5e3,
-					kind: V.b.Error,
+					kind: U.b.Error,
 					text: t
 				}))
-			}))(H));
+			}))(F));
 
-			function q(e) {
-				const t = `url(${h.a.assetPath}/img/communityPoints/registration/ethtrader/wallet.svg)`;
+			function $(e) {
+				const t = `url(${p.a.assetPath}/img/communityPoints/registration/ethtrader/wallet.svg)`;
 				return a.a.createElement("div", {
-					className: Object(o.a)(g.a.card, g.a.walletCard)
+					className: Object(o.a)(C.a.card, C.a.walletCard)
 				}, a.a.createElement("div", {
-					className: g.a.text
+					className: C.a.text
 				}, a.a.createElement("div", {
-					className: g.a.header
-				}, F.fbt._("Create a Wallet", null, {
+					className: C.a.header
+				}, V.fbt._("Create a Wallet", null, {
 					hk: "M5zQ2"
 				})), a.a.createElement("div", {
-					className: g.a.body
-				}, F.fbt._("Create your MetaMask account and Ethereum wallet by following the instructions in MetaMask after you install the extension.", null, {
+					className: C.a.body
+				}, V.fbt._("Create your MetaMask account and Ethereum wallet by following the instructions in MetaMask after you install the extension.", null, {
 					hk: "4DQsB7"
 				}))), a.a.createElement("div", {
-					className: g.a.cta
+					className: C.a.cta
 				}, a.a.createElement("div", {
-					className: g.a.image,
+					className: C.a.image,
 					style: {
 						backgroundImage: t
 					}
-				}), a.a.createElement(f.o, {
-					className: g.a.button,
+				}), a.a.createElement(h.o, {
+					className: C.a.button,
 					onClick: e.onNextStep
-				}, F.fbt._("Next", null, {
+				}, V.fbt._("Next", null, {
 					hk: "2mEXAi"
-				}), a.a.createElement(v.a, {
-					className: g.a.buttonIcon
+				}), a.a.createElement(f.a, {
+					className: C.a.buttonIcon
 				}))))
 			}
-			var Z, Y = n("./src/reddit/components/Governance/WalletRegistration/Common/Countdown.tsx"),
-				J = n("./src/reddit/components/Governance/WalletRegistration/Common/index.m.less"),
-				Q = n.n(J);
+			var q, Z = n("./src/reddit/components/Governance/WalletRegistration/Common/Countdown.tsx"),
+				Y = n("./src/reddit/components/Governance/WalletRegistration/Common/index.m.less"),
+				J = n.n(Y);
 
-			function X(e) {
+			function Q(e) {
 				const {
 					children: t,
 					isActive: n
 				} = e;
 				return a.a.createElement("div", {
-					className: Object(o.a)(Q.a.tab, {
-						[Q.a.tabActive]: n
+					className: Object(o.a)(J.a.tab, {
+						[J.a.tabActive]: n
 					})
 				}, t)
 			}! function(e) {
 				e[e.About = 0] = "About", e[e.MetaMask = 1] = "MetaMask", e[e.Wallet = 2] = "Wallet", e[e.Connect = 3] = "Connect", e[e.Verify = 4] = "Verify", e[e.Registered = 5] = "Registered"
-			}(Z || (Z = {}));
-			const z = [{
-				id: Z.About,
-				name: () => F.fbt._("About", null, {
+			}(q || (q = {}));
+			const X = [{
+				id: q.About,
+				name: () => V.fbt._("About", null, {
 					hk: "1jX7pr"
 				})
 			}, {
-				id: Z.MetaMask,
-				name: () => F.fbt._("MetaMask", null, {
+				id: q.MetaMask,
+				name: () => V.fbt._("MetaMask", null, {
 					hk: "2Y184A"
 				})
 			}, {
-				id: Z.Wallet,
-				name: () => F.fbt._("Wallet", null, {
+				id: q.Wallet,
+				name: () => V.fbt._("Wallet", null, {
 					hk: "3qALAf"
 				})
 			}, {
-				id: Z.Connect,
-				name: () => F.fbt._("Connect", null, {
+				id: q.Connect,
+				name: () => V.fbt._("Connect", null, {
 					hk: "3GMXUP"
 				})
 			}, {
-				id: Z.Verify,
-				name: () => F.fbt._("Verify", null, {
+				id: q.Verify,
+				name: () => V.fbt._("Verify", null, {
 					hk: "WHMgJ"
 				})
 			}, {
-				id: Z.Registered,
-				name: () => F.fbt._("Registered", null, {
+				id: q.Registered,
+				name: () => V.fbt._("Registered", null, {
 					hk: "1U7VpD"
 				})
 			}];
-			class K extends a.a.Component {
+			class z extends a.a.Component {
 				constructor() {
 					super(...arguments), this.setRef = e => {
 						this.el = e, this.updateActiveTabLine()
@@ -1020,9 +1019,9 @@
 				updateActiveTabLine() {
 					const e = this.el;
 					if (!e) return;
-					const t = e.getElementsByClassName(Q.a.tabActive)[0];
+					const t = e.getElementsByClassName(J.a.tabActive)[0];
 					if (t) {
-						const n = e.getElementsByClassName(Q.a.activeTabLine)[0];
+						const n = e.getElementsByClassName(J.a.activeTabLine)[0];
 						n.style.left = t.offsetLeft + "px", n.style.top = t.offsetTop + t.offsetHeight - 3 + "px", n.style.width = t.offsetWidth + "px"
 					}
 				}
@@ -1031,26 +1030,26 @@
 						activeTab: e
 					} = this.props;
 					return a.a.createElement("div", {
-						className: Q.a.tabBar,
+						className: J.a.tabBar,
 						ref: this.setRef
-					}, z.map(t => a.a.createElement(X, {
+					}, X.map(t => a.a.createElement(Q, {
 						isActive: e === t.id,
 						key: t.id
 					}, t.name())), a.a.createElement("div", {
-						className: Q.a.activeTabLine
+						className: J.a.activeTabLine
 					}))
 				}
 			}
 			const {
-				fbt: ee
+				fbt: K
 			} = n("./node_modules/fbt/lib/FbtPublic.js");
-			class te extends a.a.Component {
+			class ee extends a.a.Component {
 				constructor(e) {
 					super(e), this.onNextStep = () => {
 						const {
 							activeTab: e
 						} = this.state;
-						if (e === Z.Registered) return this.props.onRefreshWallet(), this.props.onComplete(), void this.props.sendEvent(e => {
+						if (e === q.Registered) return this.props.onRefreshWallet(), this.props.onComplete(), void this.props.sendEvent(e => {
 							const t = m.n(e);
 							return {
 								source: "meta",
@@ -1061,14 +1060,14 @@
 								subreddit: m.ib(e)
 							}
 						});
-						const t = e === Z.About ? Z.MetaMask : e === Z.MetaMask ? Z.Wallet : e === Z.Wallet ? Z.Connect : e === Z.Connect ? Z.Verify : Z.Registered;
+						const t = e === q.About ? q.MetaMask : e === q.MetaMask ? q.Wallet : e === q.Wallet ? q.Connect : e === q.Connect ? q.Verify : q.Registered;
 						this.setState({
 							activeTab: t
 						}), this.sendViewTabEvent(t)
-					}, this.correlationId = p()();
-					const t = Object(j.b)(e.pageLayer);
+					}, this.correlationId = Object(b.a)();
+					const t = Object(w.b)(e.pageLayer);
 					this.state = {
-						activeTab: t && Object(l.f)() ? Z.Wallet : Z.About
+						activeTab: t && Object(l.f)() ? q.Wallet : q.About
 					}
 				}
 				async componentDidMount() {
@@ -1099,21 +1098,21 @@
 						subredditId: r
 					} = this.props, {
 						activeTab: s
-					} = this.state, i = s === Z.About ? _ : s === Z.MetaMask ? R : s === Z.Wallet ? q : s === Z.Connect ? N : s === Z.Verify ? $ : T;
+					} = this.state, i = s === q.About ? E : s === q.MetaMask ? M : s === q.Wallet ? $ : s === q.Connect ? k : s === q.Verify ? H : L;
 					return a.a.createElement("article", {
-						className: Object(o.a)(Q.a.container, e)
-					}, a.a.createElement(Y.a, {
+						className: Object(o.a)(J.a.container, e)
+					}, a.a.createElement(Z.a, {
 						subredditId: r
 					}), a.a.createElement("button", {
-						className: Q.a.closeButton,
+						className: J.a.closeButton,
 						onClick: t
 					}, a.a.createElement(u.a, {
-						className: Q.a.closeIcon
+						className: J.a.closeIcon
 					})), a.a.createElement("div", {
-						className: Q.a.title
-					}, ee._("Register for Donuts Distribution on the Ethereum Blockchain", null, {
+						className: J.a.title
+					}, K._("Register for Donuts Distribution on the Ethereum Blockchain", null, {
 						hk: "3kf8PF"
-					})), a.a.createElement(K, {
+					})), a.a.createElement(z, {
 						activeTab: s
 					}), a.a.createElement(i, {
 						onNextStep: this.onNextStep,
@@ -1121,12 +1120,12 @@
 					}))
 				}
 			}
-			const ne = Object(s.b)(void 0, (e, t) => ({
+			const te = Object(s.b)(void 0, (e, t) => ({
 				onRefreshWallet: () => e(Object(i.h)({
 					subredditId: t.subredditId
 				}))
 			}));
-			t.a = ne(Object(c.c)(Object(d.u)()(te)))
+			t.a = te(Object(c.c)(Object(d.u)()(ee)))
 		},
 		"./src/reddit/components/Governance/WalletRegistration/Common/pageReload.ts": function(e, t, n) {
 			"use strict";
@@ -1511,7 +1510,7 @@
 			}
 			const d = 4001;
 			async function l(e, t, r, s) {
-				const [o, i] = await Promise.all([n.e(0).then(n.bind(null, "./node_modules/ethers/lib.esm/index.js")).then(e => e.ethers), t.then(e => e.abi)]);
+				const [o, i] = await Promise.all([n.e("vendors~Avatar~CryptoLibEthers~GovernanceTransferPointsModal~MarketplaceClaimModal~MarketplaceInFeed~1befd72a").then(n.bind(null, "./node_modules/ethers/lib.esm/index.js")).then(e => e.ethers), t.then(e => e.abi)]);
 				await c();
 				const d = new o.providers.Web3Provider(a()).getSigner(),
 					l = new o.Contract(e, i, d),
@@ -1540,7 +1539,7 @@
 			};
 			const m = 1;
 			async function b(e, t, r, a, s) {
-				const o = await n.e(0).then(n.bind(null, "./node_modules/ethers/lib.esm/index.js")).then(e => e.ethers),
+				const o = await n.e("vendors~Avatar~CryptoLibEthers~GovernanceTransferPointsModal~MarketplaceClaimModal~MarketplaceInFeed~1befd72a").then(n.bind(null, "./node_modules/ethers/lib.esm/index.js")).then(e => e.ethers),
 					{
 						BigNumber: i
 					} = o,
@@ -1942,4 +1941,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/GovernanceWalletRegistration.674dc169ff01debc1816.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/GovernanceWalletRegistration.21f5bbd5e2f862de6bfc.js.map

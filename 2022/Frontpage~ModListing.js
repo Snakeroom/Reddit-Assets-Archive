@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Frontpage~ModListing.f54a0887bc1b98e8a74f.js
-// Retrieved at 9/12/2022, 12:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Frontpage~ModListing.44a6206c9b1b4f417ca5.js
+// Retrieved at 9/12/2022, 2:10:03 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Frontpage~ModListing"], {
 		"./src/reddit/actions/focusedVerticals/index.ts": function(e, t, n) {
@@ -356,7 +356,7 @@
 						const t = this.resolve(e);
 						return !1 !== this.resolved[t] && !!n.m[t]
 					},
-					importAsync: () => Promise.all([n.e(6), n.e(8)]).then(n.bind(null, "./src/reddit/components/ContentSurvey/index.tsx")),
+					importAsync: () => Promise.all([n.e(2), n.e(4)]).then(n.bind(null, "./src/reddit/components/ContentSurvey/index.tsx")),
 					requireAsync(e) {
 						const t = this.resolve(e);
 						return this.resolved[t] = !1, this.importAsync(e).then(e => (this.resolved[t] = !0, e))
@@ -789,8 +789,8 @@
 			const B = "ListingSort--SortPicker",
 				F = Object(S.a)(R.a.wrapped(O.a, "Dropdown", D.a)),
 				H = R.a.wrapped(P.a, "ListingSortIcon", D.a),
-				G = (R.a.wrapped(j.b, "DropdownTriangle", D.a), R.a.div("Title", D.a)),
-				M = R.a.wrapped(e => r.a.createElement(C.b, A({}, e, {
+				M = (R.a.wrapped(j.b, "DropdownTriangle", D.a), R.a.div("Title", D.a)),
+				G = R.a.wrapped(e => r.a.createElement(C.b, A({}, e, {
 					noHover: !0,
 					isSelected: !1
 				})), "Row", D.a),
@@ -832,11 +832,11 @@
 			var K = R.a.wrapped(W(z(Object(d.c)(e => r.a.createElement("div", {
 					className: e.className,
 					onClick: e.onOpenDropdown
-				}, !1 !== e.showTitle && r.a.createElement(G, null, y.fbt._("Sort", null, {
+				}, !1 !== e.showTitle && r.a.createElement(M, null, y.fbt._("Sort", null, {
 					hk: "2BfINq"
 				})), r.a.createElement(U, {
 					disabled: e.disabled
-				}, e.children || r.a.createElement(M, {
+				}, e.children || r.a.createElement(G, {
 					className: e.buttonClassName,
 					displayText: Object(_.a)(e.sort),
 					id: e.dropdownId || B,
@@ -1097,7 +1097,7 @@
 				}, r.a.createElement(U, {
 					className: e.wrapperClassName,
 					disabled: e.disabled
-				}, r.a.createElement(M, {
+				}, r.a.createElement(G, {
 					className: e.buttonClassName,
 					displayText: e.showStateAbbreviations && e.sort ? e.sort : Y(e.sort),
 					id: "StateSort--StateSortPicker",
@@ -1268,7 +1268,7 @@
 					}, r.a.createElement(U, {
 						className: e.wrapperClassName,
 						disabled: e.disabled
-					}, r.a.createElement(M, {
+					}, r.a.createElement(G, {
 						className: e.buttonClassName,
 						displayText: (() => t in le ? le[t]() : le[b.A.Everywhere]())(),
 						id: be,
@@ -1332,7 +1332,7 @@
 				}, r.a.createElement(U, {
 					className: e.wrapperClassName,
 					disabled: !1
-				}, r.a.createElement(M, {
+				}, r.a.createElement(G, {
 					className: e.buttonClassName,
 					displayText: Object(_.b)(e.timeSort),
 					id: "TimeSort--SortPicker",
@@ -1393,7 +1393,7 @@
 					isProfilePage: l.J,
 					pageLayer: e => e
 				}),
-				Ge = Object(f.a)((e, t) => t.sortOptions, (e, t) => t.isFrontpage, E.a, I.k, l.F, N.a, Ie.j, (e, t, n, s, r, o, a) => {
+				Me = Object(f.a)((e, t) => t.sortOptions, (e, t) => t.isFrontpage, E.a, I.k, l.F, N.a, Ie.j, (e, t, n, s, r, o, a) => {
 					if (e) return {
 						isPopularPage: r,
 						sortOptions: e,
@@ -1406,7 +1406,7 @@
 						locale: a
 					}
 				});
-			class Me extends r.a.Component {
+			class Ge extends r.a.Component {
 				constructor() {
 					super(...arguments), this.changeSort = e => {
 						this.props.onChange(e), this.props.sendEvent(Object(v.b)(e))
@@ -1524,7 +1524,7 @@
 					}))))
 				}
 			}
-			var Ue = He(Object(o.b)(Ge)(Object(d.c)(Me))),
+			var Ue = He(Object(o.b)(Me)(Object(d.c)(Ge))),
 				Ve = n("./src/reddit/components/GeneralCleanup/SortViewBar/index.m.less"),
 				We = n.n(Ve);
 			const Ze = Object(l.u)({
@@ -2604,7 +2604,7 @@
 					const t = this.resolve(e);
 					return !1 !== this.resolved[t] && !!n.m[t]
 				},
-				importAsync: () => Promise.all([n.e(6), n.e("CollectionCommentsPage~ModProgressModule~NewCommunityProgress"), n.e("NewCommunityProgress")]).then(n.bind(null, "./src/reddit/components/NewCommunityProgress/NewCommunityProgress.tsx")),
+				importAsync: () => Promise.all([n.e(2), n.e("CollectionCommentsPage~ModProgressModule~NewCommunityProgress"), n.e("NewCommunityProgress")]).then(n.bind(null, "./src/reddit/components/NewCommunityProgress/NewCommunityProgress.tsx")),
 				requireAsync(e) {
 					const t = this.resolve(e);
 					return this.resolved[t] = !1, this.importAsync(e).then(e => (this.resolved[t] = !0, e))
@@ -2628,7 +2628,7 @@
 				const p = Object(a.e)(e => e.subreddits.survey[n]),
 					b = Object(a.e)(e => e.subreddits.progressModule[n]),
 					h = Object(a.e)(u.a),
-					f = h !== d.Oe.NewModule;
+					f = h !== d.Ne.NewModule;
 				return (null === (r = null == b ? void 0 : b.cards) || void 0 === r ? void 0 : r.length) > 0 && f ? o.a.createElement(m, {
 					closeModuleOnMount: !!t && t !== l.g.Large,
 					subredditId: n,
@@ -2678,15 +2678,15 @@
 			const a = e => {
 					const t = Object(r.c)(e, {
 						experimentEligibilitySelector: o.Q,
-						experimentName: s.md
+						experimentName: s.ld
 					});
 					return !(!t || Object(s.ng)(t))
 				},
 				i = e => {
 					return Object(r.c)(e, {
 						experimentEligibilitySelector: o.Q,
-						experimentName: s.md
-					}) === s.Nd.ListingEnabled
+						experimentName: s.ld
+					}) === s.Md.ListingEnabled
 				}
 		},
 		"./src/reddit/selectors/focusedVerticalSuggestion.ts": function(e, t, n) {
@@ -2813,4 +2813,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Frontpage~ModListing.f54a0887bc1b98e8a74f.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Frontpage~ModListing.44a6206c9b1b4f417ca5.js.map

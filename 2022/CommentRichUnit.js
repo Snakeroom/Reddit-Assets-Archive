@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CommentRichUnit.7190869f289139cb736d.js
-// Retrieved at 8/30/2022, 3:10:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CommentRichUnit.3fbe486b1e44546712dc.js
+// Retrieved at 9/12/2022, 2:10:03 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CommentRichUnit"], {
 		"./src/chat/components/Message/RichUnit/Comment/CommentRichUnit.m.less": function(e, t, n) {
@@ -124,4 +124,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommentRichUnit.7190869f289139cb736d.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommentRichUnit.3fbe486b1e44546712dc.js.map

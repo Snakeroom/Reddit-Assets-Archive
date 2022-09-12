@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/vendors~CommentsPage~ModerationPages~Reddit~reddit-components-ClassicPost~reddit-components-CompactP~d737df3e.506a3ece88e0a905b7a3.js
-// Retrieved at 8/9/2022, 6:30:12 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/vendors~CommentsPage~ModerationPages~Reddit~reddit-components-ClassicPost~reddit-components-CompactP~d737df3e.31f8d07ab88edabff736.js
+// Retrieved at 9/12/2022, 2:10:03 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["vendors~CommentsPage~ModerationPages~Reddit~reddit-components-ClassicPost~reddit-components-CompactP~d737df3e"], {
 		"./node_modules/@reddit/i18n-tools/runtime/helpers/locale/index.js": function(e, t, r) {
@@ -418,12 +418,12 @@
 			}
 			var y = ["root", "rootMargin", "threshold"],
 				O = ["root", "rootMargin", "threshold", "disabled"],
-				j = Object.prototype,
-				w = j.hasOwnProperty,
-				x = j.toString,
+				w = Object.prototype,
+				j = w.hasOwnProperty,
+				x = w.toString,
 				_ = function(e) {
 					return y.reduce((function(t, r) {
-						if (w.call(e, r)) {
+						if (j.call(e, r)) {
 							var n = "root" === r && "[object String]" === x.call(e[r]);
 							t[r] = n ? document.querySelector(e[r]) : e[r]
 						}
@@ -644,15 +644,15 @@
 						b.push(u)
 					}
 					"regexp" === c(e) && "regexp" === c(t) && (e = e.toString(), t = t.toString());
-					var v, g, y, O, j = typeof e,
-						w = typeof t,
-						x = "undefined" !== j || p && p.length > 0 && p[p.length - 1].lhs && Object.getOwnPropertyDescriptor(p[p.length - 1].lhs, u),
-						_ = "undefined" !== w || p && p.length > 0 && p[p.length - 1].rhs && Object.getOwnPropertyDescriptor(p[p.length - 1].rhs, u);
+					var v, g, y, O, w = typeof e,
+						j = typeof t,
+						x = "undefined" !== w || p && p.length > 0 && p[p.length - 1].lhs && Object.getOwnPropertyDescriptor(p[p.length - 1].lhs, u),
+						_ = "undefined" !== j || p && p.length > 0 && p[p.length - 1].rhs && Object.getOwnPropertyDescriptor(p[p.length - 1].rhs, u);
 					if (!x && _) r.push(new a(b, t));
 					else if (!_ && x) r.push(new i(b, e));
 					else if (c(e) !== c(t)) r.push(new o(b, e, t));
 					else if ("date" === c(e) && e - t != 0) r.push(new o(b, e, t));
-					else if ("object" === j && null !== e && null !== t) {
+					else if ("object" === w && null !== e && null !== t) {
 						for (v = p.length - 1; v > -1; --v)
 							if (p[v].lhs === e) {
 								O = !0;
@@ -678,7 +678,7 @@
 							}
 							p.length = p.length - 1
 						}
-					} else e !== t && ("number" === j && isNaN(e) && isNaN(t) || r.push(new o(b, e, t)))
+					} else e !== t && ("number" === w && isNaN(e) && isNaN(t) || r.push(new o(b, e, t)))
 				}
 
 				function p(e, t, r, n, o) {
@@ -1033,12 +1033,12 @@
 					return null
 				}(e) || t
 			}
-			var j = "top",
-				w = "bottom",
+			var w = "top",
+				j = "bottom",
 				x = "right",
 				_ = "left",
 				k = "auto",
-				E = [j, w, x, _],
+				E = [w, j, x, _],
 				D = "start",
 				A = "end",
 				M = "clippingParents",
@@ -1231,13 +1231,13 @@
 					s = r.x + r.width / 2 - n.width / 2,
 					l = r.y + r.height / 2 - n.height / 2;
 				switch (a) {
-					case j:
+					case w:
 						t = {
 							x: s,
 							y: r.y - n.height
 						};
 						break;
-					case w:
+					case j:
 						t = {
 							x: s,
 							y: r.y + r.height
@@ -1303,11 +1303,11 @@
 					h = i.hasOwnProperty("x"),
 					b = i.hasOwnProperty("y"),
 					m = _,
-					v = j,
+					v = w,
 					g = window;
 				if (c) {
 					var y = O(r);
-					y === a(r) && (y = u(r)), o === j && (v = w, p -= y.clientHeight - n.height, p *= l ? 1 : -1), o === _ && (m = x, d -= y.clientWidth - n.width, d *= l ? 1 : -1)
+					y === a(r) && (y = u(r)), o === w && (v = j, p -= y.clientHeight - n.height, p *= l ? 1 : -1), o === _ && (m = x, d -= y.clientWidth - n.width, d *= l ? 1 : -1)
 				}
 				var k, E = Object.assign({
 					position: s
@@ -1466,8 +1466,8 @@
 				if (p === S && C) {
 					var B = C[a];
 					Object.keys(R).forEach((function(e) {
-						var t = [x, w].indexOf(e) >= 0 ? 1 : -1,
-							r = [j, w].indexOf(e) >= 0 ? "y" : "x";
+						var t = [x, j].indexOf(e) >= 0 ? 1 : -1,
+							r = [w, j].indexOf(e) >= 0 ? "y" : "x";
 						R[e] += B[r] * t
 					}))
 				}
@@ -1491,7 +1491,7 @@
 			}
 
 			function ie(e) {
-				return [j, x, w, _].some((function(t) {
+				return [w, x, j, _].some((function(t) {
 					return e[t] >= 0
 				}))
 			}
@@ -1625,7 +1625,7 @@
 								i = T.reduce((function(e, r) {
 									return e[r] = function(e, t, r) {
 										var n = z(e),
-											o = [_, j].indexOf(n) >= 0 ? -1 : 1,
+											o = [_, w].indexOf(n) >= 0 ? -1 : 1,
 											a = "function" == typeof r ? r(Object.assign(Object.assign({}, t), {}, {
 												placement: e
 											})) : r,
@@ -1697,7 +1697,7 @@
 									var I = y[L],
 										R = z(I),
 										C = H(I) === D,
-										B = [j, w].indexOf(R) >= 0,
+										B = [w, j].indexOf(R) >= 0,
 										U = B ? "width" : "height",
 										W = ne(t, {
 											placement: I,
@@ -1706,7 +1706,7 @@
 											altBoundary: d,
 											padding: c
 										}),
-										q = B ? C ? x : _ : C ? w : j;
+										q = B ? C ? x : _ : C ? j : w;
 									O[U] > A[U] && (q = K(q));
 									var F = K(q),
 										V = [];
@@ -1780,8 +1780,8 @@
 								};
 							if (M) {
 								if (a) {
-									var T = "y" === E ? j : _,
-										I = "y" === E ? w : x,
+									var T = "y" === E ? w : _,
+										I = "y" === E ? j : x,
 										R = "y" === E ? "height" : "width",
 										C = M[E],
 										B = M[E] + v[T],
@@ -1814,8 +1814,8 @@
 									M[E] = se, P[E] = se - C
 								}
 								if (s) {
-									var le = "x" === E ? j : _,
-										ce = "x" === E ? w : x,
+									var le = "x" === E ? w : _,
+										ce = "x" === E ? j : x,
 										ue = M[A],
 										fe = oe(ue + v[le], ue, ue - v[ce]);
 									M[A] = fe, P[A] = fe - ue
@@ -1839,8 +1839,8 @@
 							if (o && a) {
 								var c = r.modifiersData[n + "#persistent"].padding,
 									u = b(o),
-									f = "y" === s ? j : _,
-									d = "y" === s ? w : x,
+									f = "y" === s ? w : _,
+									d = "y" === s ? j : x,
 									p = r.rects.reference[l] + r.rects.reference[s] - a[s] - r.rects.popper[l],
 									h = a[s] - r.rects.reference[s],
 									m = O(o),
@@ -2041,40 +2041,7 @@
 					throw i
 				}
 			}
-		},
-		"./node_modules/uuid/index.js": function(e, t, r) {
-			var n = r("./node_modules/uuid/v1.js"),
-				o = r("./node_modules/uuid/v4.js"),
-				a = o;
-			a.v1 = n, a.v4 = o, e.exports = a
-		},
-		"./node_modules/uuid/v1.js": function(e, t, r) {
-			var n, o, a = r("./node_modules/uuid/lib/rng-browser.js"),
-				i = r("./node_modules/uuid/lib/bytesToUuid.js"),
-				s = 0,
-				l = 0;
-			e.exports = function(e, t, r) {
-				var c = t && r || 0,
-					u = t || [],
-					f = (e = e || {}).node || n,
-					d = void 0 !== e.clockseq ? e.clockseq : o;
-				if (null == f || null == d) {
-					var p = a();
-					null == f && (f = n = [1 | p[0], p[1], p[2], p[3], p[4], p[5]]), null == d && (d = o = 16383 & (p[6] << 8 | p[7]))
-				}
-				var h = void 0 !== e.msecs ? e.msecs : (new Date).getTime(),
-					b = void 0 !== e.nsecs ? e.nsecs : l + 1,
-					m = h - s + (b - l) / 1e4;
-				if (m < 0 && void 0 === e.clockseq && (d = d + 1 & 16383), (m < 0 || h > s) && void 0 === e.nsecs && (b = 0), b >= 1e4) throw new Error("uuid.v1(): Can't create more than 10M uuids/sec");
-				s = h, l = b, o = d;
-				var v = (1e4 * (268435455 & (h += 122192928e5)) + b) % 4294967296;
-				u[c++] = v >>> 24 & 255, u[c++] = v >>> 16 & 255, u[c++] = v >>> 8 & 255, u[c++] = 255 & v;
-				var g = h / 4294967296 * 1e4 & 268435455;
-				u[c++] = g >>> 8 & 255, u[c++] = 255 & g, u[c++] = g >>> 24 & 15 | 16, u[c++] = g >>> 16 & 255, u[c++] = d >>> 8 | 128, u[c++] = 255 & d;
-				for (var y = 0; y < 6; ++y) u[c + y] = f[y];
-				return t || i(u)
-			}
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/vendors~CommentsPage~ModerationPages~Reddit~reddit-components-ClassicPost~reddit-components-CompactP~d737df3e.506a3ece88e0a905b7a3.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/vendors~CommentsPage~ModerationPages~Reddit~reddit-components-ClassicPost~reddit-components-CompactP~d737df3e.31f8d07ab88edabff736.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditPremiumNewUserWelcome.fc3edddcdad9538d7f2d.js
-// Retrieved at 9/12/2022, 11:30:07 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditPremiumNewUserWelcome.7e200d70495e13188323.js
+// Retrieved at 9/12/2022, 2:10:03 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditPremiumNewUserWelcome"], {
 		"./node_modules/lodash/flattenDeep.js": function(e, t, n) {
@@ -706,126 +706,125 @@
 				s = n.n(r),
 				o = n("./node_modules/react-redux/es/index.js"),
 				c = n("./node_modules/reselect/es/index.js"),
-				i = n("./node_modules/uuid/v4.js"),
-				d = n.n(i),
-				a = n("./src/lib/classNames/index.ts"),
-				u = n("./src/reddit/actions/economics/banners/thunkedActions.ts"),
-				l = n("./src/reddit/components/TrackingHelper/index.tsx"),
-				m = n("./src/reddit/constants/postLayout.ts"),
-				b = n("./src/reddit/contexts/ApiContext.tsx"),
-				p = n("./src/reddit/contexts/PageLayer/index.tsx"),
-				f = n("./src/reddit/endpoints/economics/banners.ts"),
-				_ = n("./src/reddit/icons/svgs/Close/index.tsx"),
-				g = n("./src/reddit/models/Badge/managementPage.ts"),
-				h = n("./src/reddit/selectors/economics.ts"),
-				E = n("./src/reddit/selectors/subreddit.ts"),
-				O = n("./src/reddit/selectors/telemetry.ts"),
-				y = n("./node_modules/fbt/lib/FbtPublic.js"),
-				j = n("./src/reddit/icons/svgs/Admin/index.tsx"),
-				C = n("./src/reddit/components/Economics/SubredditPremium/NewUserWelcome/Header/index.m.less"),
-				N = n.n(C);
+				i = n("./node_modules/uuid/dist/esm-browser/v4.js"),
+				d = n("./src/lib/classNames/index.ts"),
+				a = n("./src/reddit/actions/economics/banners/thunkedActions.ts"),
+				u = n("./src/reddit/components/TrackingHelper/index.tsx"),
+				l = n("./src/reddit/constants/postLayout.ts"),
+				m = n("./src/reddit/contexts/ApiContext.tsx"),
+				b = n("./src/reddit/contexts/PageLayer/index.tsx"),
+				p = n("./src/reddit/endpoints/economics/banners.ts"),
+				f = n("./src/reddit/icons/svgs/Close/index.tsx"),
+				_ = n("./src/reddit/models/Badge/managementPage.ts"),
+				g = n("./src/reddit/selectors/economics.ts"),
+				h = n("./src/reddit/selectors/subreddit.ts"),
+				E = n("./src/reddit/selectors/telemetry.ts"),
+				O = n("./node_modules/fbt/lib/FbtPublic.js"),
+				y = n("./src/reddit/icons/svgs/Admin/index.tsx"),
+				j = n("./src/reddit/components/Economics/SubredditPremium/NewUserWelcome/Header/index.m.less"),
+				C = n.n(j);
 
-			function S(e) {
+			function N(e) {
 				const {
 					className: t,
 					subreddit: n
 				} = e;
 				return s.a.createElement("header", {
-					className: Object(a.a)(t, N.a.container)
+					className: Object(d.a)(t, C.a.container)
 				}, s.a.createElement("div", {
-					className: N.a.tagline
-				}, s.a.createElement(j.a, {
-					className: N.a.adminIcon
-				}), y.fbt._("a note from reddit admins", null, {
+					className: C.a.tagline
+				}, s.a.createElement(y.a, {
+					className: C.a.adminIcon
+				}), O.fbt._("a note from reddit admins", null, {
 					hk: "3addaI"
 				})), s.a.createElement("div", {
-					className: N.a.title
-				}, y.fbt._("Welcome to r/{communityName}!", [y.fbt._param("communityName", n.name)], {
+					className: C.a.title
+				}, O.fbt._("Welcome to r/{communityName}!", [O.fbt._param("communityName", n.name)], {
 					hk: "2LQnel"
 				})))
 			}
-			var v = n("./src/reddit/pages/meta/MembershipPaywallPage/WhatDoYouGet/CommentThread/Footer/index.tsx"),
-				I = n("./src/reddit/components/Economics/SubredditPremium/NewUserWelcome/Jumper/index.m.less"),
-				P = n.n(I);
-			const A = [0, 500];
+			var S = n("./src/reddit/pages/meta/MembershipPaywallPage/WhatDoYouGet/CommentThread/Footer/index.tsx"),
+				v = n("./src/reddit/components/Economics/SubredditPremium/NewUserWelcome/Jumper/index.m.less"),
+				I = n.n(v);
+			const P = [0, 500];
 
-			function w(e) {
+			function A(e) {
 				return s.a.createElement("div", {
-					className: Object(a.a)(P.a.container, e.className)
-				}, s.a.createElement(v.a, {
-					className: P.a.assets,
-					scrollRange: A,
+					className: Object(d.a)(I.a.container, e.className)
+				}, s.a.createElement(S.a, {
+					className: I.a.assets,
+					scrollRange: P,
 					subreddit: e.subreddit
 				}))
 			}
-			var x = n("./node_modules/react-router-dom/esm/react-router-dom.js"),
-				M = n("./src/reddit/helpers/economics/membershipPage.ts"),
-				B = n("./src/reddit/components/Economics/SubredditPremium/constants.ts"),
-				T = n("./src/reddit/components/Economics/SubredditPremium/NewUserWelcome/Message/index.m.less"),
-				k = n.n(T);
-			const D = Object(c.c)({
+			var w = n("./node_modules/react-router-dom/esm/react-router-dom.js"),
+				x = n("./src/reddit/helpers/economics/membershipPage.ts"),
+				M = n("./src/reddit/components/Economics/SubredditPremium/constants.ts"),
+				B = n("./src/reddit/components/Economics/SubredditPremium/NewUserWelcome/Message/index.m.less"),
+				T = n.n(B);
+			const k = Object(c.c)({
 				meta: (e, t) => {
 					let {
 						subreddit: n
 					} = t;
-					return Object(h.r)(e, n.id)
+					return Object(g.r)(e, n.id)
 				}
 			});
-			var R = Object(l.c)(Object(o.b)(D)((function(e) {
+			var D = Object(u.c)(Object(o.b)(k)((function(e) {
 					return s.a.createElement("div", {
-						className: Object(a.a)(k.a.container, e.className)
-					}, y.fbt._("This community is a part of an exclusive experiment run by Reddit Admins.", null, {
+						className: Object(d.a)(T.a.container, e.className)
+					}, O.fbt._("This community is a part of an exclusive experiment run by Reddit Admins.", null, {
 						hk: "1lZWqG"
-					}), " ", y.fbt._("Hundreds of followers have paid for a", null, {
+					}), " ", O.fbt._("Hundreds of followers have paid for a", null, {
 						hk: "b6O0n"
 					}), s.a.createElement("div", {
-						className: k.a.branding
+						className: T.a.branding
 					}, s.a.createElement("img", {
-						className: k.a.crown,
-						src: B.a
-					}), e.meta.memberAlt), y.fbt._("subscription.", null, {
+						className: T.a.crown,
+						src: M.a
+					}), e.meta.memberAlt), O.fbt._("subscription.", null, {
 						hk: "2NkoEp"
-					}), " ", y.fbt._("They benefit by getting unique features that Reddit doesn't provide in any other community.", null, {
+					}), " ", O.fbt._("They benefit by getting unique features that Reddit doesn't provide in any other community.", null, {
 						hk: "xffSH"
-					}), " ", s.a.createElement(x.a, {
-						className: k.a.link,
-						to: Object(M.a)(e.subreddit.name, e.correlationId),
+					}), " ", s.a.createElement(w.a, {
+						className: T.a.link,
+						to: Object(x.a)(e.subreddit.name, e.correlationId),
 						onClick: () => e.sendEvent(t => ({
 							source: "meta",
 							action: "click",
 							noun: "new_user_welcome_learn_more",
 							correlationId: e.correlationId,
-							...O.n(t),
-							subreddit: O.ib(t)
+							...E.n(t),
+							subreddit: E.ib(t)
 						}))
-					}, y.fbt._("You can learn more here", null, {
+					}, O.fbt._("You can learn more here", null, {
 						hk: "49vQ0b"
-					})), y.fbt._(".", null, {
+					})), O.fbt._(".", null, {
 						hk: "2crLys"
 					}))
 				}))),
-				U = n("./src/reddit/actions/economics/subredditPremium/actionCreators.ts"),
-				L = n("./src/reddit/actions/economics/subredditPremium/thunkedActions.ts"),
-				F = n("./src/reddit/components/Economics/SubredditPremium/Badges/ManagementModal/Preview/BadgeCard/Content/index.tsx"),
-				G = n("./src/reddit/controls/Button/index.tsx"),
-				$ = n("./src/reddit/endpoints/economics/emojis.ts"),
-				W = n("./src/reddit/selectors/products.ts"),
-				V = n("./src/reddit/components/Economics/SubredditPremium/NewUserWelcome/NewbieBadge/index.m.less"),
-				H = n.n(V);
-			const Y = "newbie_badge";
-			class q extends s.a.Component {
+				R = n("./src/reddit/actions/economics/subredditPremium/actionCreators.ts"),
+				U = n("./src/reddit/actions/economics/subredditPremium/thunkedActions.ts"),
+				L = n("./src/reddit/components/Economics/SubredditPremium/Badges/ManagementModal/Preview/BadgeCard/Content/index.tsx"),
+				F = n("./src/reddit/controls/Button/index.tsx"),
+				G = n("./src/reddit/endpoints/economics/emojis.ts"),
+				$ = n("./src/reddit/selectors/products.ts"),
+				W = n("./src/reddit/components/Economics/SubredditPremium/NewUserWelcome/NewbieBadge/index.m.less"),
+				V = n.n(W);
+			const H = "newbie_badge";
+			class Y extends s.a.Component {
 				constructor() {
 					super(...arguments), this.onApply = async () => {
-						(await Object($.a)(this.props.apiContext(), {
-							productId: Y,
+						(await Object(G.a)(this.props.apiContext(), {
+							productId: H,
 							subredditId: this.props.subredditId
 						})).ok && (this.props.onBadgeApplied(), this.props.sendEvent(e => ({
 							source: "meta",
 							action: "click",
 							noun: "new_user_welcome_claim_badge",
 							correlationId: this.props.correlationId,
-							...O.n(e),
-							subreddit: O.ib(e)
+							...E.n(e),
+							subreddit: E.ib(e)
 						})))
 					}
 				}
@@ -836,45 +835,45 @@
 						subredditId: n
 					} = this.props;
 					return t ? s.a.createElement("div", {
-						className: Object(a.a)(H.a.container, e)
+						className: Object(d.a)(V.a.container, e)
 					}, s.a.createElement("div", {
-						className: H.a.label
-					}, y.fbt._("you just unlocked your first achievement badge", null, {
+						className: V.a.label
+					}, O.fbt._("you just unlocked your first achievement badge", null, {
 						hk: "MbVkT"
 					})), s.a.createElement("div", {
-						className: H.a.badge
-					}, s.a.createElement(F.a, {
+						className: V.a.badge
+					}, s.a.createElement(L.a, {
 						fullWidth: !0,
 						badge: t,
 						subredditId: n,
-						type: g.a.Achievement
-					}), s.a.createElement(G.l, {
+						type: _.a.Achievement
+					}), s.a.createElement(F.l, {
 						onClick: this.onApply
-					}, y.fbt._("apply", null, {
+					}, O.fbt._("apply", null, {
 						hk: "3BGbhR"
 					})))) : null
 				}
 			}
-			const z = Object(c.c)({
-				newbieBadge: e => Object(W.a)(e, Y)
+			const q = Object(c.c)({
+				newbieBadge: e => Object($.a)(e, H)
 			});
-			var K = Object(b.b)(Object(l.c)(Object(o.b)(z, (e, t) => {
+			var z = Object(m.b)(Object(u.c)(Object(o.b)(q, (e, t) => {
 					let {
 						subredditId: n
 					} = t;
 					return {
 						onBadgeApplied: () => {
-							e(Object(L.d)(n, {
-								id: Y
-							})), e(Object(U.b)(g.a.Achievement)), e(Object(U.c)({
+							e(Object(U.d)(n, {
+								id: H
+							})), e(Object(R.b)(_.a.Achievement)), e(Object(R.c)({
 								subredditId: n
 							}))
 						}
 					}
-				})(q))),
-				Q = n("./src/reddit/components/Economics/SubredditPremium/NewUserWelcome/index.m.less"),
-				Z = n.n(Q);
-			class X extends s.a.Component {
+				})(Y))),
+				K = n("./src/reddit/components/Economics/SubredditPremium/NewUserWelcome/index.m.less"),
+				Q = n.n(K);
+			class Z extends s.a.Component {
 				constructor(e) {
 					super(e), this.hasFiredViewEvent = !1, this.dismissBanner = () => {
 						const {
@@ -883,7 +882,7 @@
 						e && this.props.onDismissBanner(e.id)
 					}, this.state = {
 						userWasUnsubscribed: !e.userIsSubscribed
-					}, this.correlationId = d()()
+					}, this.correlationId = Object(i.a)()
 				}
 				componentDidUpdate(e) {
 					const t = this.props.subreddit;
@@ -902,50 +901,50 @@
 						action: "view",
 						noun: "new_user_welcome",
 						correlationId: this.correlationId,
-						...O.n(e),
-						subreddit: O.ib(e)
+						...E.n(e),
+						subreddit: E.ib(e)
 					}))), s.a.createElement("article", {
-						className: Object(a.a)(Z.a.container, e)
-					}, s.a.createElement(S, {
-						className: Z.a.header,
+						className: Object(d.a)(Q.a.container, e)
+					}, s.a.createElement(N, {
+						className: Q.a.header,
 						subreddit: n
-					}), s.a.createElement(w, {
-						className: Z.a.jumper,
+					}), s.a.createElement(A, {
+						className: Q.a.jumper,
 						subreddit: n
-					}), s.a.createElement(R, {
-						className: Z.a.message,
+					}), s.a.createElement(D, {
+						className: Q.a.message,
 						correlationId: this.correlationId,
 						subreddit: n
-					}), s.a.createElement(K, {
-						className: Z.a.newbieBadge,
+					}), s.a.createElement(z, {
+						className: Q.a.newbieBadge,
 						correlationId: this.correlationId,
 						subredditId: n.id
-					}), s.a.createElement(_.a, {
-						className: Z.a.close,
+					}), s.a.createElement(f.a, {
+						className: Q.a.close,
 						onClick: this.dismissBanner
 					}))) : null
 				}
 			}
-			const J = Object(c.c)({
+			const X = Object(c.c)({
 					bannerIsDismissed: (e, t) => {
-						const n = Object(p.n)(e, t);
-						return n ? Object(h.g)(e, n, f.a.NewUserWelcome) : void 0
+						const n = Object(b.n)(e, t);
+						return n ? Object(g.g)(e, n, p.a.NewUserWelcome) : void 0
 					},
 					eligibleForBanner: (e, t) => {
 						const n = e.user.account,
-							r = Object(p.r)(e, t);
+							r = Object(b.r)(e, t);
 						if (!n) return !1;
-						if (Object(p.S)(e, t) !== m.g.Large) return !1;
+						if (Object(b.S)(e, t) !== l.g.Large) return !1;
 						if (r) {
-							const t = Object(h.f)(e, r.id)[g.a.Achievement];
-							if (t && t.type === Y) return !1
+							const t = Object(g.f)(e, r.id)[_.a.Achievement];
+							if (t && t.type === H) return !1
 						}
 						return !0
 					},
-					subreddit: p.r,
+					subreddit: b.r,
 					userIsSubscribed: (e, t) => {
-						const n = Object(p.r)(e, t);
-						return !!n && Object(E.hb)(e, {
+						const n = Object(b.r)(e, t);
+						return !!n && Object(h.hb)(e, {
 							identifier: {
 								name: n.name,
 								type: "subreddit"
@@ -953,14 +952,14 @@
 						})
 					}
 				}),
-				ee = Object(l.c)(X),
-				te = Object(o.b)(J, e => ({
-					onDismissBanner: t => e(Object(u.a)(t, f.a.NewUserWelcome)),
-					onFetchDismissedBanners: t => e(Object(u.b)(t))
-				}))(ee),
-				ne = Object(p.u)()(te),
-				re = Object(b.b)(ne);
-			t.default = Object(b.b)(re)
+				J = Object(u.c)(Z),
+				ee = Object(o.b)(X, e => ({
+					onDismissBanner: t => e(Object(a.a)(t, p.a.NewUserWelcome)),
+					onFetchDismissedBanners: t => e(Object(a.b)(t))
+				}))(J),
+				te = Object(b.u)()(ee),
+				ne = Object(m.b)(te);
+			t.default = Object(m.b)(ne)
 		},
 		"./src/reddit/components/Economics/SubredditPremium/constants.ts": function(e, t, n) {
 			"use strict";
@@ -2411,4 +2410,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditPremiumNewUserWelcome.fc3edddcdad9538d7f2d.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditPremiumNewUserWelcome.7e200d70495e13188323.js.map
