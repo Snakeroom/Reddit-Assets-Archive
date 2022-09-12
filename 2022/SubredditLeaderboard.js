@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditLeaderboard.1542c75f9757337cdf31.js
-// Retrieved at 9/12/2022, 2:10:03 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditLeaderboard.f54b169a0ae4f7ba6d54.js
+// Retrieved at 9/12/2022, 3:50:03 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditLeaderboard"], {
 		"./node_modules/lodash/times.js": function(e, t, n) {
@@ -1335,7 +1335,7 @@
 				};
 
 			function T(e, t) {
-				return t || `${h.g}${Object(k.h)(e)}/`
+				return t || `${h.g}${Object(k.i)(e)}/`
 			}
 			const w = e => {
 				return c.a.createElement("div", {
@@ -1889,7 +1889,7 @@
 			}));
 			var r = n("./src/reddit/helpers/name/index.ts");
 			const s = (e, t) => t.map(t => {
-					const n = Object(r.h)(t.name),
+					const n = Object(r.i)(t.name),
 						s = n.split(" & ").join("_and_");
 					return {
 						...t,
@@ -1897,7 +1897,7 @@
 						path: t.path || `${e}${s}/`
 					}
 				}),
-				a = e => Object(r.h)(e).split("_and_").join(" & ")
+				a = e => Object(r.i)(e).split("_and_").join(" & ")
 		},
 		"./src/reddit/helpers/graphql/normalizeTopSubredditsFromGql/index.ts": function(e, t, n) {
 			"use strict";
@@ -2448,7 +2448,7 @@
 						onItemClick: l
 					} = this.props, {
 						isExpanded: u
-					} = this.state, m = !u && d && n * d, b = a + (e ? n * e.length : 0), g = Object(c.a)(V.a.categoryList, u && V.a.expanded), h = e => !(!o || o !== Object($.h)(e)), y = i.a.createElement("ul", {
+					} = this.state, m = !u && d && n * d, b = a + (e ? n * e.length : 0), g = Object(c.a)(V.a.categoryList, u && V.a.expanded), h = e => !(!o || o !== Object($.i)(e)), y = i.a.createElement("ul", {
 						className: g,
 						style: {
 							height: m || b
@@ -2523,7 +2523,7 @@
 				pe = n("./src/reddit/components/SidebarStickyBottom/index.tsx"),
 				be = n("./src/reddit/components/TopSubredditsWidget/Container.tsx");
 			const ge = e => {
-					const t = e.categoryName && Object($.h)(e.categoryName);
+					const t = e.categoryName && Object($.i)(e.categoryName);
 					return i.a.createElement("div", {
 						className: E.a.SidebarLeft
 					}, i.a.createElement(ue.a, null, i.a.createElement(re, {
@@ -2713,4 +2713,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditLeaderboard.1542c75f9757337cdf31.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditLeaderboard.f54b169a0ae4f7ba6d54.js.map

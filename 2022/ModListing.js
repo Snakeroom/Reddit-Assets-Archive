@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModListing.2780b281c85cd4dd2959.js
-// Retrieved at 9/12/2022, 2:10:03 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModListing.4132a088c726ada9298b.js
+// Retrieved at 9/12/2022, 3:50:03 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModListing"], {
 		"./node_modules/classnames/index.js": function(e, t, n) {
@@ -641,11 +641,11 @@
 					method: i.mb.GET
 				});
 			const O = (e, t, n, r) => Object(h.a)(Object(f.a)(e, [b.a]), {
-					endpoint: `${e.apiUrl}/api/filter/user/${t}/f/mod/${Object(g.c)(n)}`,
+					endpoint: `${e.apiUrl}/api/filter/user/${t}/f/mod/${Object(g.d)(n)}`,
 					method: r ? i.mb.PUT : i.mb.DELETE,
 					data: {
 						model: JSON.stringify({
-							name: Object(g.i)(n)
+							name: Object(g.j)(n)
 						})
 					}
 				}),
@@ -4949,4 +4949,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModListing.2780b281c85cd4dd2959.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModListing.4132a088c726ada9298b.js.map

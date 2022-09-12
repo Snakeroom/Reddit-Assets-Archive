@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditWiki.0cf916482c147d2a3a17.js
-// Retrieved at 9/12/2022, 2:10:03 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditWiki.59ec2e25419be9425a87.js
+// Retrieved at 9/12/2022, 3:50:03 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditWiki"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -8078,7 +8078,7 @@
 					className: j.a.metaLine
 				}, E && F && o.a.createElement("span", {
 					className: j.a.meta
-				}, Object(x.c)(F)), o.a.createElement("span", {
+				}, Object(x.d)(F)), o.a.createElement("span", {
 					className: j.a.meta
 				}, r.fbt._({
 					"*": "{number} points",
@@ -9002,7 +9002,7 @@
 						className: V.a.metaLine
 					}, r && !!n && a.a.createElement("span", {
 						className: V.a.meta
-					}, Object(q.h)(n) ? Object(T.d)(n.displayText || n.name) : Object(T.c)(n.displayText || n.name)), a.a.createElement("span", {
+					}, Object(q.h)(n) ? Object(T.e)(n.displayText || n.name) : Object(T.d)(n.displayText || n.name)), a.a.createElement("span", {
 						className: V.a.meta
 					}, J._({
 						"*": "{score} points",
@@ -9069,7 +9069,7 @@
 							containerOnClick: s,
 							postId: e.id,
 							redditStyle: n,
-							showSubredditName: Object(g.a)(Object(T.h)(t)),
+							showSubredditName: Object(g.a)(Object(T.i)(t)),
 							thumbnailOnClick: s
 						}))
 					}
@@ -9112,7 +9112,7 @@
 						"data-redditstyle": o,
 						onPostClick: this.openLargePost,
 						showSubredditMeta: !1,
-						showSubredditName: Object(g.a)(Object(T.h)(s)),
+						showSubredditName: Object(g.a)(Object(T.i)(s)),
 						trendingPost: f
 					})), x.map(this.renderSmallPost), e, _.map(this.renderSmallPost), d && a.a.createElement(P.r, {
 						className: ee.a.SeeMore,
@@ -10741,4 +10741,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditWiki.0cf916482c147d2a3a17.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditWiki.59ec2e25419be9425a87.js.map

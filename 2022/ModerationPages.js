@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModerationPages.af4d6b07b6e6622cb1f3.js
-// Retrieved at 9/12/2022, 2:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModerationPages.68e664abc273459159ac.js
+// Retrieved at 9/12/2022, 3:50:03 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModerationPages", "CollectionCommentsPage~CommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~RpanListingUnit~S~5809214e", "CommentsPage~Governance~Reddit~ReportFlow~Subreddit~reddit-components-BlankPost~reddit-components-Cl~5351df81", "PostCreation~Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~r~4c415e24", "Governance~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compo~bd4baca2", "Governance~ModListing~Reddit~ReportFlow~Subreddit", "Governance~ModListing~Reddit~Subreddit", "Governance~Reddit~SubredditForkingCTA"], {
 		"./src/chat/controls/Svg/index.m.less": function(e, t, n) {
@@ -1406,15 +1406,15 @@
 			const r = /^u_[\w-]+$/;
 
 			function o(e) {
-				return r.test(Object(s.h)(e))
+				return r.test(Object(s.i)(e))
 			}
 
 			function i(e) {
-				return `u_${Object(s.h)(e)}`
+				return `u_${Object(s.i)(e)}`
 			}
 
 			function a(e, t) {
-				return Object(s.h)(e) === Object(s.h)(t)
+				return Object(s.i)(e) === Object(s.i)(t)
 			}
 		},
 		"./src/lib/omitKey/index.ts": function(e, t, n) {
@@ -12706,7 +12706,7 @@
 				});
 				return t = e.subreddits.reduce((e, t) => {
 					if (t.subreddit_type === g.f.User) {
-						const n = Object(h.a)(t, Object(b.h)(t.display_name_prefixed));
+						const n = Object(h.a)(t, Object(b.i)(t.display_name_prefixed));
 						e.profiles[n.id] = n
 					} else {
 						const n = Object(_.a)(t);
@@ -41295,7 +41295,7 @@
 						subreddit: t,
 						user: n,
 						onHoverActionText: s
-					} = this.props, r = t && Object(j.h)(t) && n ? Object(y.d)(Object(k.e)(n)) : t ? t.displayText : "", o = e.postIds.length;
+					} = this.props, r = t && Object(j.h)(t) && n ? Object(y.e)(Object(k.e)(n)) : t ? t.displayText : "", o = e.postIds.length;
 					return i.a.createElement(R, {
 						onClick: this.onClick,
 						className: T.a.container
@@ -55499,7 +55499,7 @@
 					}
 				},
 				v = e => {
-					const t = Object(l.h)(e.destSubreddit.name);
+					const t = Object(l.i)(e.destSubreddit.name);
 					return {
 						...e.destSubreddit.isProfile ? {
 							sr: `u_${t}`,
@@ -72783,7 +72783,7 @@
 					let {
 						unitName: n
 					} = t;
-					const r = e.discoveryUnits.nameToId[Object(s.h)(n)];
+					const r = e.discoveryUnits.nameToId[Object(s.i)(n)];
 					return e.discoveryUnits.models[r]
 				},
 				d = e => a(e, {
@@ -75739,7 +75739,7 @@
 						return n ? {
 							profile: {
 								id: n.id,
-								name: Object(o.h)(n.name)
+								name: Object(o.i)(n.name)
 							}
 						} : {}
 					}
@@ -75753,7 +75753,7 @@
 						subreddit: {
 							categoryName: s ? s.contentCategory : null,
 							id: n.id,
-							name: Object(o.h)(n.name)
+							name: Object(o.i)(n.name)
 						}
 					}
 				})
@@ -76134,4 +76134,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.af4d6b07b6e6622cb1f3.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.68e664abc273459159ac.js.map

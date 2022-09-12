@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ChatMessageInput~MembershipPaywallPage~RichTextEditor.82773fced28bac49ab6b.js
-// Retrieved at 9/12/2022, 2:10:03 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ChatMessageInput~MembershipPaywallPage~RichTextEditor.bfbaf791dc8af60bfafa.js
+// Retrieved at 9/12/2022, 3:50:03 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ChatMessageInput~MembershipPaywallPage~RichTextEditor"], {
 		"./node_modules/draft-js/dist/Draft.css": function(e, t, n) {},
@@ -521,7 +521,7 @@
 						let {
 							gqlContext: r
 						} = s;
-						const c = Object(l.h)(e);
+						const c = Object(l.i)(e);
 						if (!c) return;
 						const u = o(),
 							g = u.subredditAutocomplete;
@@ -5723,7 +5723,7 @@
 						key: e.name,
 						onEntrySelect: this.onEntrySelect,
 						onEntryFocus: this.onEntryFocus
-					}, Object(Vr.c)(e.name)))) : null
+					}, Object(Vr.d)(e.name)))) : null
 				}
 			}
 			var Jr = Object(h.b)(Yr, (e, t) => ({
@@ -5803,7 +5803,7 @@
 						onEntryFocus: this.onEntryFocus,
 						onEntrySelect: this.onEntrySelect,
 						isFocused: t === this.state.selectedSuggestionIndex
-					}, Object(Vr.d)(e)))) : null
+					}, Object(Vr.e)(e)))) : null
 				}
 			}
 			var ei = Object(h.b)(Zr)($r),
@@ -8380,4 +8380,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatMessageInput~MembershipPaywallPage~RichTextEditor.82773fced28bac49ab6b.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatMessageInput~MembershipPaywallPage~RichTextEditor.bfbaf791dc8af60bfafa.js.map

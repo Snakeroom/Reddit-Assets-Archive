@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditMentionWithIcon.252f09ea95ab4683d47a.js
-// Retrieved at 9/12/2022, 2:10:03 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditMentionWithIcon.d9b35320dbf6e9e37329.js
+// Retrieved at 9/12/2022, 3:50:03 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditMentionWithIcon"], {
 		"./src/higherOrderComponents/withAdClickLocation/Locations.ts": function(e, t, s) {
@@ -2321,7 +2321,7 @@
 						return s ? {
 							profile: {
 								id: s.id,
-								name: Object(r.h)(s.name)
+								name: Object(r.i)(s.name)
 							}
 						} : {}
 					}
@@ -2335,7 +2335,7 @@
 						subreddit: {
 							categoryName: n ? n.contentCategory : null,
 							id: s.id,
-							name: Object(r.h)(s.name)
+							name: Object(r.i)(s.name)
 						}
 					}
 				})
@@ -2351,4 +2351,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditMentionWithIcon.252f09ea95ab4683d47a.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditMentionWithIcon.d9b35320dbf6e9e37329.js.map

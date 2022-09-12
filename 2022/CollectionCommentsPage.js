@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage.fe136ae78c5f446a9215.js
-// Retrieved at 9/12/2022, 2:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage.639e3d7151007a277ebe.js
+// Retrieved at 9/12/2022, 3:50:03 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage"], {
 		"./node_modules/linkify-it/index.js": function(e, t, s) {
@@ -7861,7 +7861,7 @@
 						c = r.url;
 					return o ? (c = R.c[R.b.Popular], d = W._("Explore more of Reddit", null, {
 						hk: "2wgFkH"
-					})) : d = n ? W._("See more posts like this in {subredditName}", [W._param("subredditName", Object(M.c)(r.displayText))], {
+					})) : d = n ? W._("See more posts like this in {subredditName}", [W._param("subredditName", Object(M.d)(r.displayText))], {
 						hk: "pLxW5"
 					}) : W._("Continue browsing in {subredditName}", [W._param("subredditName", r.displayText)], {
 						hk: "2gUyTU"
@@ -10583,7 +10583,7 @@
 						isEmbeddedInLiveChatIframe: S
 					} = this.state;
 					if ((null == O ? void 0 : O.isNSFW) && I && v) return m.a.createElement(H.a, {
-						contentTitle: Object(ct.c)(I)
+						contentTitle: Object(ct.d)(I)
 					});
 					const N = Object(ye.f)(E);
 					if (!O) {
@@ -11416,4 +11416,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage.fe136ae78c5f446a9215.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage.639e3d7151007a277ebe.js.map

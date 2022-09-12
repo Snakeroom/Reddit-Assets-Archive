@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Trending.1075ee4452a6f0973de7.js
-// Retrieved at 9/12/2022, 2:10:03 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Trending.218e4cd7fbff6ba6dd2d.js
+// Retrieved at 9/12/2022, 3:50:03 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Trending"], {
 		"./src/reddit/actions/search/trending.ts": function(e, t, s) {
@@ -199,7 +199,7 @@
 					className: S.a.metaLine
 				}, w && V && a.a.createElement("span", {
 					className: S.a.meta
-				}, Object(y.c)(V)), a.a.createElement("span", {
+				}, Object(y.d)(V)), a.a.createElement("span", {
 					className: S.a.meta
 				}, r.fbt._({
 					"*": "{number} points",
@@ -469,4 +469,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Trending.1075ee4452a6f0973de7.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Trending.218e4cd7fbff6ba6dd2d.js.map

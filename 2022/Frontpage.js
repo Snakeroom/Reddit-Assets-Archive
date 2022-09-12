@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Frontpage.6aef64697fa4def8ff97.js
-// Retrieved at 9/12/2022, 2:10:03 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Frontpage.b41a9b7f112ee316edcb.js
+// Retrieved at 9/12/2022, 3:50:03 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Frontpage"], {
 		"./node_modules/intersection-observer/intersection-observer.js": function(e, t) {
@@ -2546,7 +2546,7 @@
 						hk: "487Ffc"
 					})), o.a.createElement("div", {
 						className: te.a.description
-					}, ae._("{subreddits list} and more are looking for moderators!", [ae._param("subreddits list", o.a.createElement("strong", null, e.map(Q.c).join(", ") + (e.length > 1 ? "," : "")))], {
+					}, ae._("{subreddits list} and more are looking for moderators!", [ae._param("subreddits list", o.a.createElement("strong", null, e.map(Q.d).join(", ") + (e.length > 1 ? "," : "")))], {
 						hk: "2Tb946"
 					}))), o.a.createElement(v.n, {
 						className: te.a.button,
@@ -3517,7 +3517,7 @@
 				var v, x, E, k, C, A, S, I, w, P, T, L, M;
 				const {
 					post: B
-				} = t, F = a === B.id, R = (null === (x = null === (v = B.subreddit) || void 0 === v ? void 0 : v.styles) || void 0 === x ? void 0 : x.icon) || (null === (C = null === (k = null === (E = B.profile) || void 0 === E ? void 0 : E.styles) || void 0 === k ? void 0 : k.legacyIcon) || void 0 === C ? void 0 : C.url), D = (null === (A = B.subreddit) || void 0 === A ? void 0 : A.id) || (null === (S = B.profile) || void 0 === S ? void 0 : S.name), U = B.permalink || "", Z = t.__typename === s.talk ? null !== (w = null === (I = B.talkRoom) || void 0 === I ? void 0 : I.participantCount) && void 0 !== w ? w : 0 : null !== (P = B.commentCount) && void 0 !== P ? P : 0, q = t.__typename === s.talk ? null === (T = B.talkRoom) || void 0 === T ? void 0 : T.roomTitle : B.title, V = "SubredditPost" === B.__typename ? Object(b.c)(null === (L = B.subreddit) || void 0 === L ? void 0 : L.name) : Object(b.d)(null === (M = B.profile) || void 0 === M ? void 0 : M.redditorInfo.displayName);
+				} = t, F = a === B.id, R = (null === (x = null === (v = B.subreddit) || void 0 === v ? void 0 : v.styles) || void 0 === x ? void 0 : x.icon) || (null === (C = null === (k = null === (E = B.profile) || void 0 === E ? void 0 : E.styles) || void 0 === k ? void 0 : k.legacyIcon) || void 0 === C ? void 0 : C.url), D = (null === (A = B.subreddit) || void 0 === A ? void 0 : A.id) || (null === (S = B.profile) || void 0 === S ? void 0 : S.name), U = B.permalink || "", Z = t.__typename === s.talk ? null !== (w = null === (I = B.talkRoom) || void 0 === I ? void 0 : I.participantCount) && void 0 !== w ? w : 0 : null !== (P = B.commentCount) && void 0 !== P ? P : 0, q = t.__typename === s.talk ? null === (T = B.talkRoom) || void 0 === T ? void 0 : T.roomTitle : B.title, V = "SubredditPost" === B.__typename ? Object(b.d)(null === (L = B.subreddit) || void 0 === L ? void 0 : L.name) : Object(b.e)(null === (M = B.profile) || void 0 === M ? void 0 : M.redditorInfo.displayName);
 				return r.a.createElement("button", {
 					id: f,
 					onClick: () => {
@@ -3766,7 +3766,7 @@
 						roomTitle: L,
 						topUsers: B,
 						participantCount: F
-					} = w, R = null == B ? void 0 : B.slice(0, 3), D = y === A, U = (null === (n = null === (a = j.subreddit) || void 0 === a ? void 0 : a.styles) || void 0 === n ? void 0 : n.icon) || (null === (g = null === (h = null === (c = j.profile) || void 0 === c ? void 0 : c.styles) || void 0 === h ? void 0 : h.legacyIcon) || void 0 === g ? void 0 : g.url), Z = (null === (f = j.subreddit) || void 0 === f ? void 0 : f.id) || (null === (v = j.profile) || void 0 === v ? void 0 : v.name), q = "SubredditPost" === j.__typename ? Object(b.c)(null === (x = j.subreddit) || void 0 === x ? void 0 : x.name) : Object(b.d)(null === (E = j.profile) || void 0 === E ? void 0 : E.redditorInfo.displayName);
+					} = w, R = null == B ? void 0 : B.slice(0, 3), D = y === A, U = (null === (n = null === (a = j.subreddit) || void 0 === a ? void 0 : a.styles) || void 0 === n ? void 0 : n.icon) || (null === (g = null === (h = null === (c = j.profile) || void 0 === c ? void 0 : c.styles) || void 0 === h ? void 0 : h.legacyIcon) || void 0 === g ? void 0 : g.url), Z = (null === (f = j.subreddit) || void 0 === f ? void 0 : f.id) || (null === (v = j.profile) || void 0 === v ? void 0 : v.name), q = "SubredditPost" === j.__typename ? Object(b.d)(null === (x = j.subreddit) || void 0 === x ? void 0 : x.name) : Object(b.e)(null === (E = j.profile) || void 0 === E ? void 0 : E.redditorInfo.displayName);
 					return r.a.createElement("button", {
 						id: `talk__${A}`,
 						key: `talk__${T}`,
@@ -5367,7 +5367,7 @@
 				};
 
 			function S(e, t) {
-				return t || `${g.g}${Object(_.h)(e)}/`
+				return t || `${g.g}${Object(_.i)(e)}/`
 			}
 			const I = e => {
 				return l.a.createElement("div", {
@@ -7598,4 +7598,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Frontpage.6aef64697fa4def8ff97.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Frontpage.b41a9b7f112ee316edcb.js.map

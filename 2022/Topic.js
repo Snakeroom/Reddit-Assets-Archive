@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Topic.299172d4a11d229dffca.js
-// Retrieved at 9/12/2022, 2:10:03 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Topic.3073ccb92e8ffea07443.js
+// Retrieved at 9/12/2022, 3:50:03 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Topic"], {
 		"./node_modules/intersection-observer/intersection-observer.js": function(e, t) {
@@ -1342,7 +1342,7 @@
 						to: s.url
 					}, r.a.createElement("div", {
 						className: O.a.Name
-					}, Object(y.c)(s.displayText || s.name)), r.a.createElement("div", {
+					}, Object(y.d)(s.displayText || s.name)), r.a.createElement("div", {
 						className: O.a.Members
 					}, p.fbt._({
 						"*": "{subscribers count} members",
@@ -2264,7 +2264,7 @@
 						isLoggedIn: s,
 						subreddit: n,
 						subredditAboutInfo: i
-					} = e, a = Object(te.c)(n.displayText || n.name);
+					} = e, a = Object(te.d)(n.displayText || n.name);
 					return r.a.createElement("div", {
 						className: Object(o.a)(oe.a.Container, t)
 					}, r.a.createElement(X.b, {
@@ -2732,4 +2732,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Topic.299172d4a11d229dffca.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Topic.3073ccb92e8ffea07443.js.map

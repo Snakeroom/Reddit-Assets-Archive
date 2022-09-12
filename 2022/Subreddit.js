@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Subreddit.3ead7c5df2dcdbf72966.js
-// Retrieved at 9/12/2022, 2:10:03 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Subreddit.40bf28c4c97fca57bf00.js
+// Retrieved at 9/12/2022, 3:50:03 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Subreddit", "Frontpage~ModListing", "reddit-components-Econ-PredictionLeaderboard-Sidebar"], {
 		"./node_modules/@reddit/i18n-tools/runtime/helpers/locale/index.js": function(e, t, n) {
@@ -10162,7 +10162,7 @@
 					className: S.a.metaLine
 				}, C && A && a.a.createElement("span", {
 					className: S.a.meta
-				}, Object(v.c)(A)), a.a.createElement("span", {
+				}, Object(v.d)(A)), a.a.createElement("span", {
 					className: S.a.meta
 				}, s.fbt._({
 					"*": "{number} points",
@@ -11388,7 +11388,7 @@
 						className: z.a.metaLine
 					}, s && !!r && i.a.createElement("span", {
 						className: z.a.meta
-					}, Object(q.h)(r) ? Object(T.d)(r.displayText || r.name) : Object(T.c)(r.displayText || r.name)), i.a.createElement("span", {
+					}, Object(q.h)(r) ? Object(T.e)(r.displayText || r.name) : Object(T.d)(r.displayText || r.name)), i.a.createElement("span", {
 						className: z.a.meta
 					}, J._({
 						"*": "{score} points",
@@ -11455,7 +11455,7 @@
 							containerOnClick: n,
 							postId: e.id,
 							redditStyle: r,
-							showSubredditName: Object(g.a)(Object(T.h)(t)),
+							showSubredditName: Object(g.a)(Object(T.i)(t)),
 							thumbnailOnClick: n
 						}))
 					}
@@ -11498,7 +11498,7 @@
 						"data-redditstyle": a,
 						onPostClick: this.openLargePost,
 						showSubredditMeta: !1,
-						showSubredditName: Object(g.a)(Object(T.h)(n)),
+						showSubredditName: Object(g.a)(Object(T.i)(n)),
 						trendingPost: f
 					})), v.map(this.renderSmallPost), e, y.map(this.renderSmallPost), c && i.a.createElement(P.r, {
 						className: ee.a.SeeMore,
@@ -17140,7 +17140,7 @@
 							subredditName: U,
 							topPostsVariant: X
 						}))), (null == T ? void 0 : T.isNSFW) && S === we.a.NoPreview) return u.a.createElement(ae.a, {
-						contentTitle: Object(be.c)(U)
+						contentTitle: Object(be.d)(U)
 					});
 					const Ee = Object(pe.a)(e, N, U);
 					if (Ee && !p) return u.a.createElement(A.default, Ee);
@@ -18177,4 +18177,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Subreddit.3ead7c5df2dcdbf72966.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Subreddit.40bf28c4c97fca57bf00.js.map
