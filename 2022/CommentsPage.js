@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CommentsPage.05876f80e41da8833096.js
-// Retrieved at 9/12/2022, 12:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CommentsPage.e0389351038684b7bfdc.js
+// Retrieved at 9/12/2022, 1:40:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CommentsPage", "PostCreation~Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~r~4c415e24", "Governance~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compo~bd4baca2", "CollectionCommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~SearchResults", "Governance~ModListing~Reddit~ReportFlow~Subreddit", "Governance~ModListing~Reddit~Subreddit", "CollectionCommentsPage~ModProgressModule~NewCommunityProgress", "CollectionCommentsPage~Subreddit~SubredditWiki", "AchievementsActions"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -7160,7 +7160,7 @@
 						const e = O({
 							username: I,
 							profileSort: j,
-							filter: te.C.Posts,
+							filter: te.D.Posts,
 							shouldUseGqlCursor: !0
 						});
 						R = null === (v = null === (_ = null === (o = null == (A = await Object(Z.a)("profilePosts", () => x(s.gqlContext(), e))) ? void 0 : A.body) || void 0 === o ? void 0 : o.data) || void 0 === _ ? void 0 : _.redditorInfoByName) || void 0 === v ? void 0 : v.__typename
@@ -7196,7 +7196,7 @@
 						const e = O({
 								username: I,
 								profileSort: j,
-								filter: te.C.Posts
+								filter: te.D.Posts
 							}),
 							t = await x(s.gqlContext(), e);
 						if (t.ok && t.body) {
@@ -7272,7 +7272,7 @@
 						const e = O({
 							username: b,
 							profileSort: m,
-							filter: te.C.Posts,
+							filter: te.D.Posts,
 							loadMoreData: C,
 							shouldUseGqlCursor: !0
 						});
@@ -7310,7 +7310,7 @@
 						const e = O({
 								username: b,
 								profileSort: m,
-								filter: te.C.Posts,
+								filter: te.D.Posts,
 								loadMoreData: C
 							}),
 							t = await x(o(), e);
@@ -43472,4 +43472,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommentsPage.05876f80e41da8833096.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommentsPage.e0389351038684b7bfdc.js.map

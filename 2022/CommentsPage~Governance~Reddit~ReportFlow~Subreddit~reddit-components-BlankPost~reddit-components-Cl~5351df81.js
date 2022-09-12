@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CommentsPage~Governance~Reddit~ReportFlow~Subreddit~reddit-components-BlankPost~reddit-components-Cl~5351df81.26a79ff0b2e3ed67acba.js
-// Retrieved at 9/12/2022, 12:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CommentsPage~Governance~Reddit~ReportFlow~Subreddit~reddit-components-BlankPost~reddit-components-Cl~5351df81.9285e63190151d21b938.js
+// Retrieved at 9/12/2022, 1:40:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CommentsPage~Governance~Reddit~ReportFlow~Subreddit~reddit-components-BlankPost~reddit-components-Cl~5351df81"], {
 		"./src/lib/name/index.ts": function(e, t, r) {
@@ -1136,7 +1136,7 @@
 							isStartImmediately: !0,
 							subredditId: e,
 							predictionDrafts: a,
-							currency: f.G.Tokens,
+							currency: f.H.Tokens,
 							tokenIcon: u
 						}),
 						b = Object(E.a)(l);
@@ -4627,9 +4627,9 @@
 						modQueueSettings: U
 					} = e;
 					return {
-						allowGalleries: _.includes(O.A.Gallery),
-						allowImages: _.includes(O.A.Image),
-						allowPolls: _.includes(O.A.Poll),
+						allowGalleries: _.includes(O.B.Gallery),
+						allowImages: _.includes(O.B.Image),
+						allowPolls: _.includes(O.B.Poll),
 						archivePostsEnabled: s,
 						allowDiscovery: i,
 						allowChatPostCreation: d,
@@ -4683,19 +4683,19 @@
 				},
 				y = e => e ? h.indexOf(e) : 0,
 				T = e => {
-					if (e) return Object.values(O.F).find(t => t === (null == e ? void 0 : e.toUpperCase()))
+					if (e) return Object.values(O.G).find(t => t === (null == e ? void 0 : e.toUpperCase()))
 				},
 				S = e => {
 					if (e) return Object.values(O.f).find(t => t === (null == e ? void 0 : e.toUpperCase()))
 				},
 				E = e => {
-					if (e) return Object.values(O.J).find(t => t === (null == e ? void 0 : e.toUpperCase()))
+					if (e) return Object.values(O.K).find(t => t === (null == e ? void 0 : e.toUpperCase()))
 				},
 				x = e => {
-					if (e) return e > 0 ? O.H.Enabled : O.H.Disabled
+					if (e) return e > 0 ? O.I.Enabled : O.I.Disabled
 				},
 				C = e => {
-					if (e) return e === O.H.Enabled ? 1 : 0
+					if (e) return e === O.I.Enabled ? 1 : 0
 				},
 				w = e => {
 					let {
@@ -8954,7 +8954,7 @@
 					return r ? {
 						__typename: "ModUserNote",
 						id: t,
-						itemType: b.p.Ban,
+						itemType: b.q.Ban,
 						createdAt: new Date(1e3 * e.bannedAtUTC),
 						operator: {
 							id: e.bannedById,
@@ -8964,7 +8964,7 @@
 							id: e.id,
 							displayName: e.username
 						},
-						label: b.w.Ban,
+						label: b.x.Ban,
 						note: r
 					} : null
 				},
@@ -8972,7 +8972,7 @@
 					return {
 						__typename: "ModActionNote",
 						id: m(e),
-						itemType: b.p.Ban,
+						itemType: b.q.Ban,
 						createdAt: new Date(1e3 * e.bannedAtUTC),
 						operator: {
 							id: e.bannedById,
@@ -8998,7 +8998,7 @@
 						const {
 							subredditId: r,
 							newModNote: n
-						} = t.payload, s = Object(d.d)(r, n.user.id, b.o.All);
+						} = t.payload, s = Object(d.d)(r, n.user.id, b.p.All);
 						return {
 							...e,
 							[s]: n.id
@@ -9008,7 +9008,7 @@
 						const {
 							subredditId: n,
 							lastAuthorModNote: s
-						} = t.payload, i = null === (r = null == s ? void 0 : s.user) || void 0 === r ? void 0 : r.id, o = Object(d.d)(n, i, b.o.All);
+						} = t.payload, i = null === (r = null == s ? void 0 : s.user) || void 0 === r ? void 0 : r.id, o = Object(d.d)(n, i, b.p.All);
 						return {
 							...e,
 							[o]: s.id
@@ -9022,7 +9022,7 @@
 						return n.forEach(e => {
 							var t;
 							const n = null === (t = null == e ? void 0 : e.user) || void 0 === t ? void 0 : t.id,
-								i = Object(d.d)(r, n, b.o.All);
+								i = Object(d.d)(r, n, b.p.All);
 							s[i] = e.id
 						}), {
 							...e,
@@ -9037,7 +9037,7 @@
 						} = n, i = n.id;
 						if (!n.modNote) return e;
 						const o = p(n),
-							c = Object(d.d)(s, i, b.o.All);
+							c = Object(d.d)(s, i, b.p.All);
 						return {
 							...e,
 							[c]: o
@@ -9142,10 +9142,10 @@
 							newModNote: s,
 							filter: i
 						} = t.payload;
-						if (i !== b.o.All && i !== b.o.Note) return e;
+						if (i !== b.p.All && i !== b.p.Note) return e;
 						const o = null === (r = null == s ? void 0 : s.user) || void 0 === r ? void 0 : r.id,
 							c = Object(d.d)(n, o, i),
-							a = i === b.o.All ? b.o.Note : b.o.All,
+							a = i === b.p.All ? b.p.Note : b.p.All,
 							u = Object(d.d)(n, o, a);
 						return {
 							...e,
@@ -9173,7 +9173,7 @@
 							subredditId: r,
 							userId: n,
 							noteId: s
-						} = t.payload, i = Object(d.d)(r, n, b.o.All), o = Object(d.d)(r, n, b.o.Note), c = e[i] ? e[i].filter(e => e !== s) : [], a = e[o] ? e[o].filter(e => e !== s) : [];
+						} = t.payload, i = Object(d.d)(r, n, b.p.All), o = Object(d.d)(r, n, b.p.Note), c = e[i] ? e[i].filter(e => e !== s) : [], a = e[o] ? e[o].filter(e => e !== s) : [];
 						return {
 							...e,
 							...e[i] ? {
@@ -9189,7 +9189,7 @@
 							bannedUsers: r
 						} = t.payload, n = Object.values(r)[0], {
 							subredditId: s
-						} = n, i = n.id, o = Object(d.d)(s, i, b.o.All), c = Object(d.d)(s, i, b.o.Note), a = Object(d.d)(s, i, b.o.Ban), u = m(n), l = p(n), f = e[o] ? [l, u, ...e[o]] : [], O = e[c] ? [l, ...e[c]] : [], g = e[a] ? [u, ...e[a]] : [];
+						} = n, i = n.id, o = Object(d.d)(s, i, b.p.All), c = Object(d.d)(s, i, b.p.Note), a = Object(d.d)(s, i, b.p.Ban), u = m(n), l = p(n), f = e[o] ? [l, u, ...e[o]] : [], O = e[c] ? [l, ...e[c]] : [], g = e[a] ? [u, ...e[a]] : [];
 						return {
 							...e,
 							...e[o] ? {
@@ -9216,13 +9216,13 @@
 						const {
 							subredditId: r,
 							newModNote: n
-						} = t.payload, s = Object(d.d)(r, n.user.id, b.o.All);
+						} = t.payload, s = Object(d.d)(r, n.user.id, b.p.All);
 						return {
 							...e,
 							[s]: {
 								...e[s],
-								[b.o.All]: (e[s][b.o.All] || 0) + 1,
-								[b.o.Note]: (e[s][b.o.Note] || 0) + 1
+								[b.p.All]: (e[s][b.p.All] || 0) + 1,
+								[b.p.Note]: (e[s][b.p.Note] || 0) + 1
 							}
 						}
 					}
@@ -9231,7 +9231,7 @@
 							subredditId: r,
 							userId: n,
 							totalCounts: s
-						} = t.payload, i = Object(d.d)(r, n, b.o.All);
+						} = t.payload, i = Object(d.d)(r, n, b.p.All);
 						return {
 							...e,
 							[i]: Object.keys(s).reduce((e, t) => (e[t] = s[t].totalCount, e), {})
@@ -9241,14 +9241,14 @@
 						const {
 							subredditId: r,
 							userId: n
-						} = t.payload, s = Object(d.d)(r, n, b.o.All);
+						} = t.payload, s = Object(d.d)(r, n, b.p.All);
 						return {
 							...e,
 							...void 0 !== e[s] ? {
 								[s]: {
 									...e[s],
-									[b.o.All]: (e[s][b.o.All] || 1) - 1,
-									[b.o.Note]: (e[s][b.o.Note] || 1) - 1
+									[b.p.All]: (e[s][b.p.All] || 1) - 1,
+									[b.p.Note]: (e[s][b.p.Note] || 1) - 1
 								}
 							} : null
 						}
@@ -11298,12 +11298,12 @@
 				},
 				b = (e, t, r) => {
 					if (!t || !r) return;
-					const n = e.features.modUserNotes.lastAuthorModNotes[Object(s.d)(r, t, i.o.All)];
+					const n = e.features.modUserNotes.lastAuthorModNotes[Object(s.d)(r, t, i.p.All)];
 					return n ? e.features.modUserNotes.models[n] : void 0
 				},
 				p = (e, t, r) => {
 					if (!t || !r) return;
-					return e.features.modUserNotes.totalCount[Object(s.d)(r, t, i.o.All)]
+					return e.features.modUserNotes.totalCount[Object(s.d)(r, t, i.p.All)]
 				},
 				m = (e, t, r, n) => {
 					if (!n) return;
@@ -12081,4 +12081,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommentsPage~Governance~Reddit~ReportFlow~Subreddit~reddit-components-BlankPost~reddit-components-Cl~5351df81.26a79ff0b2e3ed67acba.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommentsPage~Governance~Reddit~ReportFlow~Subreddit~reddit-components-BlankPost~reddit-components-Cl~5351df81.9285e63190151d21b938.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostCreation.f41878dd583dc51c2fb2.js
-// Retrieved at 9/12/2022, 12:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostCreation.b4cd00abdb71fe605ad0.js
+// Retrieved at 9/12/2022, 1:40:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostCreation", "ChatMessageInput~MembershipPaywallPage~RichTextEditor", "ContributorRequestButton"], {
 		"./node_modules/autosize/dist/autosize.js": function(e, t, n) {
@@ -24459,14 +24459,14 @@
 						...m,
 						variables: t
 					});
-					return !!Object(a.c)(n) && (n.body.data.subredditInfoById.allowedPostTypes || []).includes(b.A.Talk)
+					return !!Object(a.c)(n) && (n.body.data.subredditInfoById.allowedPostTypes || []).includes(b.B.Talk)
 				}, E = async (e, t) => {
 					var n, o;
 					const s = await Object(i.a)(e, {
 						...p,
 						variables: t
 					});
-					return !!Object(a.c)(s) && (null !== (o = null === (n = s.body.data.profileByName) || void 0 === n ? void 0 : n.allowedPostTypes) && void 0 !== o ? o : []).includes(b.A.Talk)
+					return !!Object(a.c)(s) && (null !== (o = null === (n = s.body.data.profileByName) || void 0 === n ? void 0 : n.allowedPostTypes) && void 0 !== o ? o : []).includes(b.B.Talk)
 				}, C = async e => {
 					var t;
 					const n = await Object(i.a)(e, u);
@@ -34948,4 +34948,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.f41878dd583dc51c2fb2.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.b4cd00abdb71fe605ad0.js.map
