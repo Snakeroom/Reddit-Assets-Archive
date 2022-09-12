@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compo~bd4baca2.c5d4d137681156a9f430.js
-// Retrieved at 9/12/2022, 11:30:07 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compo~bd4baca2.494b0b25a6bd054b2a42.js
+// Retrieved at 9/12/2022, 12:00:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compo~bd4baca2"], {
 		"./src/higherOrderComponents/withAdClickLocation/Locations.ts": function(e, t, s) {
@@ -2679,16 +2679,36 @@
 				LoadingComponent: o
 			})
 		},
+		"./src/reddit/components/HumanDate/HumanDate.tsx": function(e, t, s) {
+			"use strict";
+			var r = s("./node_modules/react/index.js"),
+				i = s.n(r),
+				o = s("./src/lib/humanizeDate/index.ts"),
+				n = s("./src/reddit/hooks/useLocale.ts");
+			t.a = function(e) {
+				let {
+					seconds: t,
+					...s
+				} = e;
+				var r;
+				const a = Object(n.a)(),
+					d = {
+						...s,
+						locale: null !== (r = s.locale) && void 0 !== r ? r : a
+					};
+				return i.a.createElement(i.a.Fragment, null, Object(o.a)(t, d))
+			}
+		},
 		"./src/reddit/components/HumanDate/index.tsx": function(e, t, s) {
 			"use strict";
 			s.d(t, "d", (function() {
 				return a
 			})), s.d(t, "a", (function() {
-				return c
+				return d.a
 			})), s.d(t, "b", (function() {
-				return m
+				return u
 			})), s.d(t, "c", (function() {
-				return O
+				return h
 			}));
 			var r = s("./node_modules/react/index.js"),
 				i = s.n(r),
@@ -2707,23 +2727,10 @@
 						};
 					return i.a.createElement(i.a.Fragment, null, Object(o.d)(t, d))
 				},
-				d = s("./src/lib/humanizeDate/index.ts");
-			var c = function(e) {
-					let {
-						seconds: t,
-						...s
-					} = e;
-					var r;
-					const o = Object(n.a)(),
-						a = {
-							...s,
-							locale: null !== (r = s.locale) && void 0 !== r ? r : o
-						};
-					return i.a.createElement(i.a.Fragment, null, Object(d.a)(t, a))
-				},
-				l = s("./node_modules/@reddit/i18n-tools/runtime/helpers/locale/constants.js"),
-				u = s("./src/lib/constants/index.ts");
-			var m = function(e) {
+				d = s("./src/reddit/components/HumanDate/HumanDate.tsx"),
+				c = s("./node_modules/@reddit/i18n-tools/runtime/helpers/locale/constants.js"),
+				l = s("./src/lib/constants/index.ts");
+			var u = function(e) {
 					let {
 						seconds: t,
 						locale: s
@@ -2731,8 +2738,8 @@
 					const r = Object(n.a)(),
 						o = null != s ? s : r;
 					return i.a.createElement(i.a.Fragment, null, function(e) {
-						let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : l.DEFAULT_LOCALE;
-						const s = e * u.Vb;
+						let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : c.DEFAULT_LOCALE;
+						const s = e * l.Vb;
 						return new Date(s).toLocaleString(t, {
 							weekday: "short",
 							month: "short",
@@ -2745,38 +2752,38 @@
 						})
 					}(t, o))
 				},
-				p = s("./node_modules/fbt/lib/FbtPublic.js"),
-				b = s("./src/lib/eventTools/index.ts");
+				m = s("./node_modules/fbt/lib/FbtPublic.js"),
+				p = s("./src/lib/eventTools/index.ts");
 
-			function f(e) {
-				let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : l.DEFAULT_LOCALE;
+			function b(e) {
+				let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : c.DEFAULT_LOCALE;
 				return e.toLocaleDateString(t, {
 					month: "numeric",
 					day: "numeric"
 				})
 			}
 
-			function h(e, t) {
+			function f(e, t) {
 				let s = arguments.length > 2 && void 0 !== arguments[2] && arguments[2],
-					r = arguments.length > 3 && void 0 !== arguments[3] ? arguments[3] : l.DEFAULT_LOCALE;
-				const i = Object(b.e)(e, t),
-					o = new Date(e * u.Vb);
+					r = arguments.length > 3 && void 0 !== arguments[3] ? arguments[3] : c.DEFAULT_LOCALE;
+				const i = Object(p.e)(e, t),
+					o = new Date(e * l.Vb);
 				let n;
-				if (i === b.a.Live || s) return p.fbt._("Now", null, {
+				if (i === p.a.Live || s) return m.fbt._("Now", null, {
 					hk: "Prpcg"
 				});
-				return i === b.a.Future ? n = Object(b.d)(e) ? p.fbt._("Today", null, {
+				return i === p.a.Future ? n = Object(p.d)(e) ? m.fbt._("Today", null, {
 					hk: "1sZpnp"
-				}).toString() : Object(b.b)(e) >= 5 ? f(o, r) : function(e) {
-					let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : l.DEFAULT_LOCALE;
+				}).toString() : Object(p.b)(e) >= 5 ? b(o, r) : function(e) {
+					let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : c.DEFAULT_LOCALE;
 					return e.toLocaleDateString(t, {
 						weekday: "long"
 					})
-				}(o, r) : i === b.a.Past && (n = Object(b.d)(e) ? p.fbt._("Today", null, {
+				}(o, r) : i === p.a.Past && (n = Object(p.d)(e) ? m.fbt._("Today", null, {
 					hk: "1sZpnp"
-				}).toString() : f(o, r)), `${n} @ ${function(e){let t=arguments.length>1&&void 0!==arguments[1]?arguments[1]:l.DEFAULT_LOCALE;return e.toLocaleTimeString(t,{hour12:!0,hour:"numeric",minute:"2-digit"}).replace(/ /g,"").toUpperCase()}(o,r)}`
+				}).toString() : b(o, r)), `${n} @ ${function(e){let t=arguments.length>1&&void 0!==arguments[1]?arguments[1]:c.DEFAULT_LOCALE;return e.toLocaleTimeString(t,{hour12:!0,hour:"numeric",minute:"2-digit"}).replace(/ /g,"").toUpperCase()}(o,r)}`
 			}
-			var O = function(e) {
+			var h = function(e) {
 				let {
 					startTime: t,
 					endTime: s,
@@ -2785,7 +2792,7 @@
 				} = e;
 				const a = Object(n.a)(),
 					d = null != o ? o : a;
-				return i.a.createElement(i.a.Fragment, null, h(t, s, r, d))
+				return i.a.createElement(i.a.Fragment, null, f(t, s, r, d))
 			};
 			s("./src/lib/humanizeUTCDate/index.tsx")
 		},
@@ -4113,4 +4120,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compo~bd4baca2.c5d4d137681156a9f430.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compo~bd4baca2.494b0b25a6bd054b2a42.js.map

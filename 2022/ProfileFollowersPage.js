@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfileFollowersPage.cc65e3d3bbe5554d4977.js
-// Retrieved at 9/12/2022, 11:30:07 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfileFollowersPage.9a1fa7d8c620e74cc98f.js
+// Retrieved at 9/12/2022, 12:00:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfileFollowersPage", "ProfileFollowersAction"], {
 		"./node_modules/lodash/take.js": function(e, t, s) {
@@ -4826,11 +4826,12 @@
 				className: e.className,
 				to: `${r.a.redditUrl}/user/${e.username}`
 			}, i.a.createElement(a.a, {
+				subredditId: e.subredditId,
 				user: e.username,
 				sendHoverCardEvent: e.sendHoverCardEvent,
-				subredditId: e.subredditId,
 				tooltipId: e.tooltipId
 			}, i.a.createElement(m, {
+				className: e.iconClassName,
 				style: {
 					height: e.iconSize || "32px",
 					width: e.iconSize || "32px"
@@ -6261,4 +6262,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileFollowersPage.cc65e3d3bbe5554d4977.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileFollowersPage.9a1fa7d8c620e74cc98f.js.map
