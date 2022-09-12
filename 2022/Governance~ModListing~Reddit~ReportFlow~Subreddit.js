@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit~ReportFlow~Subreddit.e8375a1326fdd777fdc0.js
-// Retrieved at 9/12/2022, 11:30:07 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit~ReportFlow~Subreddit.94a4c9a846f256be4480.js
+// Retrieved at 9/12/2022, 12:50:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~ModListing~Reddit~ReportFlow~Subreddit"], {
 		"./src/lib/assertNever.ts": function(t, e, i) {
@@ -776,7 +776,7 @@
 			})), i.d(e, "k", (function() {
 				return G
 			})), i.d(e, "j", (function() {
-				return V
+				return z
 			})), i.d(e, "e", (function() {
 				return Y
 			})), i.d(e, "d", (function() {
@@ -903,11 +903,11 @@
 							success: g.ok
 						}
 					})
-				}, q = Object(d.a)(B.l), W = Object(d.a)(B.k), K = Object(d.a)(B.j), V = t => async (e, i, n) => {
+				}, W = Object(d.a)(B.l), q = Object(d.a)(B.k), K = Object(d.a)(B.j), z = t => async (e, i, n) => {
 					let {
 						apiContext: r
 					} = n;
-					e(q({
+					e(W({
 						subredditId: t
 					}));
 					const o = Object(S.V)(i(), {
@@ -917,7 +917,7 @@
 					if (l.ok) {
 						const n = i().structuredStyles.models[t],
 							r = n ? n.mobileKeyColor : null;
-						e(W({
+						e(q({
 							subredditId: t,
 							styles: {
 								mobileKeyColor: r
@@ -927,11 +927,11 @@
 						subredditId: t,
 						...l.error
 					}))
-				}, z = Object(d.a)(B.d), Y = t => async (e, i, n) => {
+				}, V = Object(d.a)(B.d), Y = t => async (e, i, n) => {
 					const r = i(),
 						o = r.structuredStyles.models[t] || {},
 						l = Object(U.db)(r);
-					e(z({
+					e(V({
 						isNightmodeOn: l,
 						styles: o,
 						subredditId: t
@@ -2298,15 +2298,15 @@
 			})), i.d(e, "r", (function() {
 				return M
 			})), i.d(e, "j", (function() {
-				return q
-			})), i.d(e, "g", (function() {
 				return W
+			})), i.d(e, "g", (function() {
+				return q
 			})), i.d(e, "h", (function() {
 				return K
 			})), i.d(e, "d", (function() {
-				return V
-			})), i.d(e, "H", (function() {
 				return z
+			})), i.d(e, "H", (function() {
+				return V
 			})), i.d(e, "i", (function() {
 				return Y
 			})), i.d(e, "c", (function() {
@@ -2586,14 +2586,14 @@
 						...F(t, e.subredditId)
 					}
 				},
-				q = (t, e) => {
+				W = (t, e) => {
 					Object(f.a)({
 						noun: "draft_load",
 						...S(t),
 						...M(t, e)
 					})
 				},
-				W = (t, e) => {
+				q = (t, e) => {
 					Object(f.a)({
 						noun: e.draftId ? "draft_update" : "draft_create",
 						...S(t),
@@ -2607,14 +2607,14 @@
 						...G(t, e)
 					})
 				},
-				V = t => {
+				z = t => {
 					Object(f.a)({
 						...S(t),
 						noun: "social_connect_link",
 						action: n.c.CLICK
 					})
 				},
-				z = (t, e) => {
+				V = (t, e) => {
 					Object(f.a)({
 						...S(t),
 						noun: "twitter_share_checkbox",
@@ -2954,9 +2954,9 @@
 					experimentName: r.ad,
 					experimentEligibilitySelector: t => c(t, e)
 				}), t => t),
-				d = t => t === r.Vf.NoCommunityWidgets,
-				u = t => t === r.Vf.NoRulesModerators,
-				_ = t => t === r.Vf.RelatedPostsDu
+				d = t => t === r.Wf.NoCommunityWidgets,
+				u = t => t === r.Wf.NoRulesModerators,
+				_ = t => t === r.Wf.RelatedPostsDu
 		},
 		"./src/reddit/selectors/tooltip.ts": function(t, e, i) {
 			"use strict";
@@ -2979,4 +2979,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit~ReportFlow~Subreddit.e8375a1326fdd777fdc0.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit~ReportFlow~Subreddit.94a4c9a846f256be4480.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/RpanListingUnit.13a2add39fca2d801160.js
-// Retrieved at 9/12/2022, 11:30:07 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/RpanListingUnit.446555e3457abd8d3994.js
+// Retrieved at 9/12/2022, 12:50:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["RpanListingUnit"], {
 		"./node_modules/lodash/_arrayEvery.js": function(e, t) {
@@ -54,13 +54,13 @@
 					experimentEligibilitySelector: m.a,
 					experimentName: u.Ae
 				});
-				return Object(u.mg)(t) ? void 0 : t
+				return Object(u.ng)(t) ? void 0 : t
 			}, e => {
 				const t = Object(m.c)(e, {
 					experimentEligibilitySelector: m.a,
 					experimentName: u.Be
 				});
-				return Object(u.mg)(t) ? void 0 : t
+				return Object(u.ng)(t) ? void 0 : t
 			}, (e, t) => e === u.Ce.Enabled && t === u.Ce.Enabled);
 			var b = n("./src/config.ts");
 			var h = n("./src/reddit/selectors/user.ts");
@@ -4536,4 +4536,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RpanListingUnit.13a2add39fca2d801160.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RpanListingUnit.446555e3457abd8d3994.js.map
