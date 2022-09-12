@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/AuthorHovercard.acb7bac6745c1d5e2599.js
-// Retrieved at 9/8/2022, 11:20:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/AuthorHovercard.43dabd4a8367b14849da.js
+// Retrieved at 9/12/2022, 10:40:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["AuthorHovercard"], {
 		"./src/lib/constants/colors.ts": function(e, t, n) {
@@ -2784,7 +2784,9 @@
 						},
 						k = x === w.o.All || x === w.o.Note;
 					Object(a.useEffect)(() => {
-						N(), t(Object(p.q)())
+						N({
+							forceLoad: !0
+						}), t(Object(p.q)())
 					}, []);
 					const E = {
 						subredditId: s,
@@ -2807,13 +2809,15 @@
 						userId: c,
 						onChangeSubredditId: e => {
 							O(e), N({
-								subredditId: e
+								subredditId: e,
+								forceLoad: !0
 							})
 						},
 						filter: x,
 						onChangeFilter: e => {
 							_(e), N({
-								filter: e
+								filter: e,
+								forceLoad: !0
 							})
 						},
 						onChangeView: f
@@ -6556,4 +6560,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/AuthorHovercard.acb7bac6745c1d5e2599.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/AuthorHovercard.43dabd4a8367b14849da.js.map

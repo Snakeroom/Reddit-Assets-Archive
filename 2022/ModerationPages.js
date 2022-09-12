@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModerationPages.cdafc18b63bd32ce9ebf.js
-// Retrieved at 9/8/2022, 8:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModerationPages.034c05a1988ea86811b3.js
+// Retrieved at 9/12/2022, 10:40:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModerationPages", "CollectionCommentsPage~CommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~RpanListingUnit~S~5809214e", "CommentsPage~Governance~Reddit~ReportFlow~Subreddit~reddit-components-BlankPost~reddit-components-Cl~5351df81", "PostCreation~Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~r~4c415e24", "Governance~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compo~bd4baca2", "Governance~ModListing~Reddit~ReportFlow~Subreddit", "Governance~ModListing~Reddit~Subreddit", "Governance~Reddit~SubredditForkingCTA"], {
 		"./src/chat/controls/Svg/index.m.less": function(e, t, n) {
@@ -16665,19 +16665,20 @@
 					var i;
 					const c = n(),
 						{
-							subredditId: l,
-							userId: u,
-							before: p,
-							filter: b
+							forceLoad: l,
+							subredditId: u,
+							userId: p,
+							before: b,
+							filter: _
 						} = e,
-						_ = Object(f.d)(l, u, b, p),
-						g = c.features.modUserNotes.fetchedTokens[_];
-					if (!c.features.modUserNotes.api.pending[_] && !g) {
+						g = Object(f.d)(u, p, _, b),
+						v = c.features.modUserNotes.fetchedTokens[g] && !l;
+					if (!c.features.modUserNotes.api.pending[g] && !v) {
 						t(C({
-							subredditId: l,
-							userId: u,
-							filter: b,
-							fetchedToken: p
+							subredditId: u,
+							userId: p,
+							filter: _,
+							fetchedToken: b
 						}));
 						try {
 							const e = await ((e, t) => Object(d.a)(e, {
@@ -16687,10 +16688,10 @@
 									last: 25
 								}
 							}))(r(), {
-								subredditId: l,
-								userId: u,
-								filter: b,
-								before: p
+								subredditId: u,
+								userId: p,
+								filter: _,
+								before: b
 							});
 							if (e.ok) {
 								const {
@@ -16707,10 +16708,10 @@
 										e && e.node && r.push(e.node)
 									}), t(k({
 										notes: r,
-										subredditId: l,
-										userId: u,
-										filter: b,
-										fetchedToken: p,
+										subredditId: u,
+										userId: p,
+										filter: _,
+										fetchedToken: b,
 										loadMoreToken: s.hasNextPage ? s.endCursor : null
 									}))
 								}
@@ -16719,10 +16720,10 @@
 								} = e.body;
 								s && s.length && o.c.captureException(s)
 							} else t(I({
-								subredditId: l,
-								userId: u,
-								filter: b,
-								fetchedToken: p
+								subredditId: u,
+								userId: p,
+								filter: _,
+								fetchedToken: b
 							})), t(Object(a.f)({
 								kind: h.b.Error,
 								text: j._("Oops, something went wrong. Try again.", null, {
@@ -16730,8 +16731,8 @@
 								}),
 								duration: 3e3
 							}))
-						} catch (v) {
-							o.c.captureException(v), t(Object(a.f)({
+						} catch (x) {
+							o.c.captureException(x), t(Object(a.f)({
 								kind: h.b.Error,
 								text: j._("Oops, something went wrong. Try again.", null, {
 									hk: "2VQ3RW"
@@ -67456,10 +67457,54 @@
 							return e
 					}
 				},
-				m = n("./src/redditGQL/types.ts");
-			const p = {};
-			var b = function() {
-				let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : p,
+				m = (n("./node_modules/core-js/modules/web.dom.iterable.js"), n("./src/redditGQL/types.ts"));
+			const p = e => `${e.subredditId}--${e.bannedAtUTC}-usernote`,
+				b = e => `${e.subredditId}--${e.bannedAtUTC}-actionnote`,
+				f = e => {
+					const t = p(e),
+						{
+							modNote: n
+						} = e;
+					return n ? {
+						__typename: "ModUserNote",
+						id: t,
+						itemType: m.p.Ban,
+						createdAt: new Date(1e3 * e.bannedAtUTC),
+						operator: {
+							id: e.bannedById,
+							displayName: e.bannedBy
+						},
+						user: {
+							id: e.id,
+							displayName: e.username
+						},
+						label: m.w.Ban,
+						note: n
+					} : null
+				},
+				h = e => {
+					return {
+						__typename: "ModActionNote",
+						id: b(e),
+						itemType: m.p.Ban,
+						createdAt: new Date(1e3 * e.bannedAtUTC),
+						operator: {
+							id: e.bannedById,
+							displayName: e.bannedBy
+						},
+						user: {
+							id: e.id,
+							displayName: e.username
+						},
+						description: e.banMessage,
+						longDescription: e.banMessage,
+						banDays: e.duration,
+						isPermanentBan: !e.duration
+					}
+				},
+				_ = {};
+			var g = function() {
+				let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : _,
 					t = arguments.length > 1 ? arguments[1] : void 0;
 				var n;
 				switch (t.type) {
@@ -67498,13 +67543,27 @@
 							...r
 						}
 					}
+					case r.p: {
+						const {
+							bannedUsers: n
+						} = t.payload, s = Object.values(n)[0], {
+							subredditId: r
+						} = s, o = s.id;
+						if (!s.modNote) return e;
+						const a = p(s),
+							d = Object(i.d)(r, o, m.o.All);
+						return {
+							...e,
+							[d]: a
+						}
+					}
 					default:
 						return e
 				}
 			};
-			const f = {};
-			var h = function() {
-					let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : f,
+			const v = {};
+			var x = function() {
+					let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : v,
 						t = arguments.length > 1 ? arguments[1] : void 0;
 					switch (t.type) {
 						case r.T: {
@@ -67522,10 +67581,10 @@
 							return e
 					}
 				},
-				_ = n("./node_modules/icepick/icepick.js");
-			const g = {};
-			var v = function() {
-					let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : g,
+				O = n("./node_modules/icepick/icepick.js");
+			const E = {};
+			var y = function() {
+					let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : E,
 						t = arguments.length > 1 ? arguments[1] : void 0;
 					switch (t.type) {
 						case r.Q: {
@@ -67550,13 +67609,13 @@
 							const {
 								lastAuthorModNotes: n
 							} = t.payload;
-							return Object(_.merge)(e, n.reduce((e, t) => (e[t.id] = t, e), {}))
+							return Object(O.merge)(e, n.reduce((e, t) => (e[t.id] = t, e), {}))
 						}
 						case r.T: {
 							const {
 								notes: n
 							} = t.payload;
-							return Object(_.merge)(e, n.reduce((e, t) => (e[t.id] = t, e), {}))
+							return Object(O.merge)(e, n.reduce((e, t) => (e[t.id] = t, e), {}))
 						}
 						case r.R: {
 							const {
@@ -67566,15 +67625,28 @@
 							};
 							return delete s[n], s
 						}
+						case r.p: {
+							const {
+								bannedUsers: n
+							} = t.payload;
+							return Object(O.merge)(e, Object.values(n).reduce((e, t) => {
+								const n = b(t),
+									s = h(t);
+								e[n] = s;
+								const r = p(t),
+									o = f(t);
+								return o ? (e[r] = o, e) : e
+							}, {}))
+						}
 						default:
 							return e
 					}
 				},
-				x = n("./node_modules/lodash/uniq.js"),
-				O = n.n(x);
-			const E = {};
-			var y = function() {
-				let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : E,
+				j = n("./node_modules/lodash/uniq.js"),
+				C = n.n(j);
+			const k = {};
+			var I = function() {
+				let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : k,
 					t = arguments.length > 1 ? arguments[1] : void 0;
 				var n;
 				switch (t.type) {
@@ -67604,7 +67676,7 @@
 						} = t.payload, a = Object(i.d)(s, r, o), d = n.map(e => e.id);
 						return e[a] ? {
 							...e,
-							[a]: O()([...e[a], ...d])
+							[a]: C()([...e[a], ...d])
 						} : {
 							...e,
 							[a]: d
@@ -67626,14 +67698,32 @@
 							} : null
 						}
 					}
+					case r.p: {
+						const {
+							bannedUsers: n
+						} = t.payload, s = Object.values(n)[0], {
+							subredditId: r
+						} = s, o = s.id, a = Object(i.d)(r, o, m.o.All), d = Object(i.d)(r, o, m.o.Note), c = Object(i.d)(r, o, m.o.Ban), l = b(s), u = p(s), f = e[a] ? [u, l, ...e[a]] : [], h = e[d] ? [u, ...e[d]] : [], _ = e[c] ? [l, ...e[c]] : [];
+						return {
+							...e,
+							...e[a] ? {
+								[a]: f
+							} : null,
+							...e[d] ? {
+								[d]: h
+							} : null,
+							...e[c] ? {
+								[c]: _
+							} : null
+						}
+					}
 					default:
 						return e
 				}
 			};
-			n("./node_modules/core-js/modules/web.dom.iterable.js");
-			const j = {};
-			var C = function() {
-				let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : j,
+			const S = {};
+			var w = function() {
+				let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : S,
 					t = arguments.length > 1 ? arguments[1] : void 0;
 				switch (t.type) {
 					case r.Q: {
@@ -67684,11 +67774,11 @@
 			t.a = Object(s.c)({
 				api: c,
 				fetchedTokens: u,
-				lastAuthorModNotes: b,
-				loadMore: h,
-				models: v,
-				order: y,
-				totalCount: C
+				lastAuthorModNotes: g,
+				loadMore: x,
+				models: y,
+				order: I,
+				totalCount: w
 			})
 		},
 		"./src/reddit/reducers/features/userFlair/index.ts": function(e, t, n) {
@@ -75120,4 +75210,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.cdafc18b63bd32ce9ebf.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.034c05a1988ea86811b3.js.map
