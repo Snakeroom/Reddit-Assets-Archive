@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit~ReportFlow~Subreddit.c79c1d38831e65eb0ffd.js
-// Retrieved at 9/8/2022, 11:20:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit~ReportFlow~Subreddit.e8375a1326fdd777fdc0.js
+// Retrieved at 9/12/2022, 11:30:07 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~ModListing~Reddit~ReportFlow~Subreddit"], {
 		"./src/lib/assertNever.ts": function(t, e, i) {
@@ -561,7 +561,7 @@
 				[r.W]: () => n.fbt._("Sorry, we accept only images (.png, .jpeg, .gif) and videos (.mp4, .mov)", null, {
 					hk: "1hw868"
 				}),
-				[r.sc]: () => n.fbt._("Video size must be less than {max file size}GB", [n.fbt._param("max file size", (r.ib / r.kb / 1024).toFixed(1))], {
+				[r.tc]: () => n.fbt._("Video size must be less than {max file size}GB", [n.fbt._param("max file size", (r.ib / r.kb / 1024).toFixed(1))], {
 					hk: "4FkABU"
 				})
 			}
@@ -2064,7 +2064,7 @@
 			var n = i("./src/lib/constants/index.ts"),
 				r = i("./src/lib/listingSort/index.ts");
 			e.a = (t, e) => {
-				if (t) return Object(r.a)(t) ? e || n.mc : void 0
+				if (t) return Object(r.a)(t) ? e || n.nc : void 0
 			}
 		},
 		"./src/reddit/helpers/graphql/normalizePostFlairStyleTemplateFromGql/index.ts": function(t, e, i) {
@@ -2979,4 +2979,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit~ReportFlow~Subreddit.c79c1d38831e65eb0ffd.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit~ReportFlow~Subreddit.e8375a1326fdd777fdc0.js.map

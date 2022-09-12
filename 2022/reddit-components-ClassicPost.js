@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-ClassicPost.c535e322f27bb607d52f.js
-// Retrieved at 9/8/2022, 11:20:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-ClassicPost.ef2632484b0c2566f7c3.js
+// Retrieved at 9/12/2022, 11:30:07 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-ClassicPost"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -499,7 +499,7 @@
 			}));
 			var n = s("./node_modules/fbt/lib/FbtPublic.js"),
 				r = s("./src/lib/constants/index.ts");
-			const o = [r.vc, r.sb, r.C, r.S, r.nb, r.Vb],
+			const o = [r.wc, r.sb, r.C, r.S, r.nb, r.Vb],
 				i = {
 					[r.Vb]: e => n.fbt._({
 						"*": "{number} seconds",
@@ -531,7 +531,7 @@
 					}, [n.fbt._plural(e, "number")], {
 						hk: "28DQqD"
 					}),
-					[r.vc]: e => n.fbt._({
+					[r.wc]: e => n.fbt._({
 						"*": "{number} years",
 						_1: "1 year"
 					}, [n.fbt._plural(e, "number")], {
@@ -554,13 +554,13 @@
 					[r.sb]: e => n.fbt._("{amount}m", [n.fbt._param("amount", String(e))], {
 						hk: "28feBj"
 					}),
-					[r.vc]: e => n.fbt._("{amount}y", [n.fbt._param("amount", String(e))], {
+					[r.wc]: e => n.fbt._("{amount}y", [n.fbt._param("amount", String(e))], {
 						hk: "10bv8G"
 					}),
 					[r.sb]: e => n.fbt._("{amount}m", [n.fbt._param("amount", String(e))], {
 						hk: "28feBj"
 					}),
-					[r.vc]: e => n.fbt._("{amount}y", [n.fbt._param("amount", String(e))], {
+					[r.wc]: e => n.fbt._("{amount}y", [n.fbt._param("amount", String(e))], {
 						hk: "10bv8G"
 					})
 				};
@@ -571,7 +571,7 @@
 				const c = Date.now(),
 					d = new Date(e).getTime(),
 					l = {
-						[r.vc]: "",
+						[r.wc]: "",
 						[r.sb]: "",
 						[r.C]: "",
 						[r.S]: "",
@@ -5996,4 +5996,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ClassicPost.c535e322f27bb607d52f.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ClassicPost.ef2632484b0c2566f7c3.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfilePrivate.74d2b5dc802a453fcec0.js
-// Retrieved at 9/8/2022, 11:20:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfilePrivate.cd8bfe38bdfe536c00f0.js
+// Retrieved at 9/12/2022, 11:30:07 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfilePrivate"], {
 		"./node_modules/lodash/take.js": function(e, t, i) {
@@ -361,11 +361,11 @@
 				let {
 					className: t,
 					profileName: i,
-					timeSort: n = o.lc.ALL
+					timeSort: n = o.mc.ALL
 				} = e;
 				return r.a.createElement(u, {
 					className: t
-				}, n === o.lc.ALL ? s.fbt._("hmm... {profileName} hasn't commented on anything", [s.fbt._param("profileName", `u/${i}`)], {
+				}, n === o.mc.ALL ? s.fbt._("hmm... {profileName} hasn't commented on anything", [s.fbt._param("profileName", `u/${i}`)], {
 					hk: "1MHn3t"
 				}) : s.fbt._("hmm... {profileName} hasn't commented recently", [s.fbt._param("profileName", `u/${i}`)], {
 					hk: "qN3uL"
@@ -375,11 +375,11 @@
 				let {
 					className: t,
 					profileName: i,
-					timeSort: n = o.lc.ALL
+					timeSort: n = o.mc.ALL
 				} = e;
 				return r.a.createElement(u, {
 					className: t
-				}, n === o.lc.ALL ? s.fbt._("hmm... {profileName} hasn't posted anything", [s.fbt._param("profileName", `u/${i}`)], {
+				}, n === o.mc.ALL ? s.fbt._("hmm... {profileName} hasn't posted anything", [s.fbt._param("profileName", `u/${i}`)], {
 					hk: "28vBEd"
 				}) : s.fbt._("hmm... {profileName} hasn't posted recently", [s.fbt._param("profileName", `u/${i}`)], {
 					hk: "38GhqN"
@@ -2779,4 +2779,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfilePrivate.74d2b5dc802a453fcec0.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfilePrivate.cd8bfe38bdfe536c00f0.js.map

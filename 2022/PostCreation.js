@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostCreation.86cfa9d3b19a2a054ae1.js
-// Retrieved at 9/8/2022, 2:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostCreation.bd97e9afddc55dc87205.js
+// Retrieved at 9/12/2022, 11:30:07 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostCreation", "ChatMessageInput~MembershipPaywallPage~RichTextEditor", "ContributorRequestButton"], {
 		"./node_modules/autosize/dist/autosize.js": function(e, t, n) {
@@ -1226,7 +1226,7 @@
 			}));
 			var o = n("./node_modules/fbt/lib/FbtPublic.js"),
 				s = n("./src/lib/constants/index.ts");
-			const r = [s.vc, s.sb, s.C, s.S, s.nb, s.Vb],
+			const r = [s.wc, s.sb, s.C, s.S, s.nb, s.Vb],
 				i = {
 					[s.Vb]: e => o.fbt._({
 						"*": "{number} seconds",
@@ -1258,7 +1258,7 @@
 					}, [o.fbt._plural(e, "number")], {
 						hk: "28DQqD"
 					}),
-					[s.vc]: e => o.fbt._({
+					[s.wc]: e => o.fbt._({
 						"*": "{number} years",
 						_1: "1 year"
 					}, [o.fbt._plural(e, "number")], {
@@ -1281,13 +1281,13 @@
 					[s.sb]: e => o.fbt._("{amount}m", [o.fbt._param("amount", String(e))], {
 						hk: "28feBj"
 					}),
-					[s.vc]: e => o.fbt._("{amount}y", [o.fbt._param("amount", String(e))], {
+					[s.wc]: e => o.fbt._("{amount}y", [o.fbt._param("amount", String(e))], {
 						hk: "10bv8G"
 					}),
 					[s.sb]: e => o.fbt._("{amount}m", [o.fbt._param("amount", String(e))], {
 						hk: "28feBj"
 					}),
-					[s.vc]: e => o.fbt._("{amount}y", [o.fbt._param("amount", String(e))], {
+					[s.wc]: e => o.fbt._("{amount}y", [o.fbt._param("amount", String(e))], {
 						hk: "10bv8G"
 					})
 				};
@@ -1298,7 +1298,7 @@
 				const c = Date.now(),
 					l = new Date(e).getTime(),
 					d = {
-						[s.vc]: "",
+						[s.wc]: "",
 						[s.sb]: "",
 						[s.C]: "",
 						[s.S]: "",
@@ -3525,7 +3525,7 @@
 								}
 								l.width = t.width, l.height = t.height
 							} else if (a.startsWith("video/")) {
-								if (e.size > i.ib) return D(i.sc);
+								if (e.size > i.ib) return D(i.tc);
 								let t;
 								try {
 									t = await Object(C.j)(c, !0)
@@ -4685,7 +4685,7 @@
 						type: e.type
 					} : {
 						id: Object(v.n)(l(), e.name),
-						name: `${s.nc}${e.name}`,
+						name: `${s.oc}${e.name}`,
 						type: e.type
 					});
 					if (!Object(k.Q)(l())) return i(Object(c.k)({
@@ -34941,4 +34941,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.86cfa9d3b19a2a054ae1.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.bd97e9afddc55dc87205.js.map

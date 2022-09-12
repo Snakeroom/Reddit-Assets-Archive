@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CommentsPage.22ea0ae5b43d76bfe7ee.js
-// Retrieved at 9/8/2022, 2:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CommentsPage.d16c3de7cec8a570e43e.js
+// Retrieved at 9/12/2022, 11:30:07 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CommentsPage", "PostCreation~Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~r~4c415e24", "Governance~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compo~bd4baca2", "CollectionCommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~SearchResults", "Governance~ModListing~Reddit~ReportFlow~Subreddit", "Governance~ModListing~Reddit~Subreddit", "CollectionCommentsPage~ModProgressModule~NewCommunityProgress", "CollectionCommentsPage~Subreddit~SubredditWiki", "AchievementsActions"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -2519,7 +2519,7 @@
 				[r.W]: () => s.fbt._("Sorry, we accept only images (.png, .jpeg, .gif) and videos (.mp4, .mov)", null, {
 					hk: "1hw868"
 				}),
-				[r.sc]: () => s.fbt._("Video size must be less than {max file size}GB", [s.fbt._param("max file size", (r.ib / r.kb / 1024).toFixed(1))], {
+				[r.tc]: () => s.fbt._("Video size must be less than {max file size}GB", [s.fbt._param("max file size", (r.ib / r.kb / 1024).toFixed(1))], {
 					hk: "4FkABU"
 				})
 			}
@@ -2995,7 +2995,7 @@
 			}));
 			var s = n("./node_modules/fbt/lib/FbtPublic.js"),
 				r = n("./src/lib/constants/index.ts");
-			const o = [r.vc, r.sb, r.C, r.S, r.nb, r.Vb],
+			const o = [r.wc, r.sb, r.C, r.S, r.nb, r.Vb],
 				i = {
 					[r.Vb]: e => s.fbt._({
 						"*": "{number} seconds",
@@ -3027,7 +3027,7 @@
 					}, [s.fbt._plural(e, "number")], {
 						hk: "28DQqD"
 					}),
-					[r.vc]: e => s.fbt._({
+					[r.wc]: e => s.fbt._({
 						"*": "{number} years",
 						_1: "1 year"
 					}, [s.fbt._plural(e, "number")], {
@@ -3050,13 +3050,13 @@
 					[r.sb]: e => s.fbt._("{amount}m", [s.fbt._param("amount", String(e))], {
 						hk: "28feBj"
 					}),
-					[r.vc]: e => s.fbt._("{amount}y", [s.fbt._param("amount", String(e))], {
+					[r.wc]: e => s.fbt._("{amount}y", [s.fbt._param("amount", String(e))], {
 						hk: "10bv8G"
 					}),
 					[r.sb]: e => s.fbt._("{amount}m", [s.fbt._param("amount", String(e))], {
 						hk: "28feBj"
 					}),
-					[r.vc]: e => s.fbt._("{amount}y", [s.fbt._param("amount", String(e))], {
+					[r.wc]: e => s.fbt._("{amount}y", [s.fbt._param("amount", String(e))], {
 						hk: "10bv8G"
 					})
 				};
@@ -3067,7 +3067,7 @@
 				const c = Date.now(),
 					d = new Date(e).getTime(),
 					l = {
-						[r.vc]: "",
+						[r.wc]: "",
 						[r.sb]: "",
 						[r.C]: "",
 						[r.S]: "",
@@ -4404,7 +4404,7 @@
 						commentId: e
 					});
 					if (!l) return;
-					const u = n === r.hc.Snoozed,
+					const u = n === r.ic.Snoozed,
 						C = {
 							itemId: e,
 							reportText: t,
@@ -6501,7 +6501,7 @@
 											sessionStartTime: a
 										}
 									},
-									range: g.lc.WEEK.toUpperCase(),
+									range: g.mc.WEEK.toUpperCase(),
 									sort: g.Q.TOP,
 									subredditName: i.name
 								},
@@ -9428,7 +9428,7 @@
 						type: e.type
 					} : {
 						id: Object(O.n)(d(), e.name),
-						name: `${r.nc}${e.name}`,
+						name: `${r.oc}${e.name}`,
 						type: e.type
 					});
 					if (!Object(j.Q)(d())) return i(Object(c.k)({
@@ -23696,7 +23696,7 @@
 						sort: l.Z.TOP,
 						timerType: t,
 						timerMillis: e,
-						timeSort: l.lc.WEEK
+						timeSort: l.mc.WEEK
 					}), this.onFooterClick = e => {
 						this.props.sendEvent(Object(y.c)("recommended_footer"))
 					}
@@ -23713,7 +23713,7 @@
 						subredditOrProfile: o
 					} = this.props;
 					return n || e ? t : r && s && s.id ? Object(H.a)(s.id) : Object(p.a)(o.name, l.Z.TOP, {
-						t: l.lc.WEEK
+						t: l.mc.WEEK
 					})
 				}
 				renderSmallBanner() {
@@ -30726,7 +30726,7 @@
 			var s = n("./src/lib/constants/index.ts"),
 				r = n("./src/lib/listingSort/index.ts");
 			t.a = (e, t) => {
-				if (e) return Object(r.a)(e) ? t || s.mc : void 0
+				if (e) return Object(r.a)(e) ? t || s.nc : void 0
 			}
 		},
 		"./src/reddit/helpers/graphql/normalizePostFlairStyleTemplateFromGql/index.ts": function(e, t, n) {
@@ -34553,7 +34553,7 @@
 							break;
 						case o.Qb.SETTINGS: {
 							const r = e;
-							Object(k.a)(Z(n, s)(t)), r.match.params.page === o.gc.Profile && Object(m.l)(t);
+							Object(k.a)(Z(n, s)(t)), r.match.params.page === o.hc.Profile && Object(m.l)(t);
 							break
 						}
 						case o.Qb.POST_CREATION:
@@ -34963,13 +34963,13 @@
 				te = (e, t, n, s, r, i) => a => {
 					var c, d;
 					let l = !0;
-					if (t.type.indexOf(o.fc.Posts) > -1) {
+					if (t.type.indexOf(o.gc.Posts) > -1) {
 						const {
 							api: t
 						} = a.listings.listingOrder;
 						l = l && !t.error[e] && !t.pending[e]
 					}
-					if (t.type.indexOf(o.fc.Subreddits) > -1 || t.type.indexOf(o.fc.Users) > -1) {
+					if (t.type.indexOf(o.gc.Subreddits) > -1 || t.type.indexOf(o.gc.Users) > -1) {
 						const {
 							api: t
 						} = a.listings.postOrder;
@@ -43465,4 +43465,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommentsPage.22ea0ae5b43d76bfe7ee.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommentsPage.d16c3de7cec8a570e43e.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage.a45710aef228ebc68693.js
-// Retrieved at 9/8/2022, 1:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage.52573bedb2b25ff490cb.js
+// Retrieved at 9/12/2022, 11:30:07 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage"], {
 		"./node_modules/linkify-it/index.js": function(e, t, s) {
@@ -1358,7 +1358,7 @@
 											sessionStartTime: a
 										}
 									},
-									range: f.lc.WEEK.toUpperCase(),
+									range: f.mc.WEEK.toUpperCase(),
 									sort: f.Q.TOP,
 									subredditName: i.name
 								},
@@ -7951,7 +7951,7 @@
 						sort: l.Z.TOP,
 						timerType: t,
 						timerMillis: e,
-						timeSort: l.lc.WEEK
+						timeSort: l.mc.WEEK
 					}), this.onFooterClick = e => {
 						this.props.sendEvent(Object(y.c)("recommended_footer"))
 					}
@@ -7968,7 +7968,7 @@
 						subredditOrProfile: r
 					} = this.props;
 					return s || e ? t : o && n && n.id ? Object(z.a)(n.id) : Object(p.a)(r.name, l.Z.TOP, {
-						t: l.lc.WEEK
+						t: l.mc.WEEK
 					})
 				}
 				renderSmallBanner() {
@@ -11416,4 +11416,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage.a45710aef228ebc68693.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage.52573bedb2b25ff490cb.js.map

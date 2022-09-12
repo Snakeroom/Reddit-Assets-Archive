@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~Reddit.d9faeb5ed3ef63937c7c.js
-// Retrieved at 9/8/2022, 1:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~Reddit.0e14f8e16f9976ea1a62.js
+// Retrieved at 9/12/2022, 11:30:07 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~Reddit"], {
 		"./assets/fonts/NotoMono/font.less": function(e, t, n) {},
@@ -183,7 +183,7 @@
 			}));
 			var r = n("./node_modules/fbt/lib/FbtPublic.js"),
 				s = n("./src/lib/constants/index.ts");
-			const a = [s.vc, s.sb, s.C, s.S, s.nb, s.Vb],
+			const a = [s.wc, s.sb, s.C, s.S, s.nb, s.Vb],
 				o = {
 					[s.Vb]: e => r.fbt._({
 						"*": "{number} seconds",
@@ -215,7 +215,7 @@
 					}, [r.fbt._plural(e, "number")], {
 						hk: "28DQqD"
 					}),
-					[s.vc]: e => r.fbt._({
+					[s.wc]: e => r.fbt._({
 						"*": "{number} years",
 						_1: "1 year"
 					}, [r.fbt._plural(e, "number")], {
@@ -238,13 +238,13 @@
 					[s.sb]: e => r.fbt._("{amount}m", [r.fbt._param("amount", String(e))], {
 						hk: "28feBj"
 					}),
-					[s.vc]: e => r.fbt._("{amount}y", [r.fbt._param("amount", String(e))], {
+					[s.wc]: e => r.fbt._("{amount}y", [r.fbt._param("amount", String(e))], {
 						hk: "10bv8G"
 					}),
 					[s.sb]: e => r.fbt._("{amount}m", [r.fbt._param("amount", String(e))], {
 						hk: "28feBj"
 					}),
-					[s.vc]: e => r.fbt._("{amount}y", [r.fbt._param("amount", String(e))], {
+					[s.wc]: e => r.fbt._("{amount}y", [r.fbt._param("amount", String(e))], {
 						hk: "10bv8G"
 					})
 				};
@@ -255,7 +255,7 @@
 				const i = Date.now(),
 					d = new Date(e).getTime(),
 					l = {
-						[s.vc]: "",
+						[s.wc]: "",
 						[s.sb]: "",
 						[s.C]: "",
 						[s.S]: "",
@@ -5281,43 +5281,42 @@
 		"./src/reddit/helpers/getSearchUrl/index.ts": function(e, t, n) {
 			"use strict";
 			n.d(t, "a", (function() {
-				return i
+				return c
 			}));
 			var r = n("./src/lib/constants/index.ts"),
 				s = n("./src/lib/search/index.ts"),
 				a = n("./src/reddit/constants/parameters.ts"),
-				o = n("./src/reddit/models/Search/index.ts"),
-				c = n("./src/reddit/reducers/search/searchScope/index.ts");
+				o = n("./src/reddit/models/Search/index.ts");
 
-			function i(e) {
+			function c(e) {
 				let {
 					searchItem: t,
 					searchOptions: n,
-					activeSearchScope: i,
-					includeNsfwResults: d
+					activeSearchScope: c,
+					includeNsfwResults: i
 				} = e;
-				var l;
-				let u;
-				const p = [];
-				if (t.isTypeaheadSuggestion) u = `/${t.isProfile?t.searchQuery.replace("u/","user/"):t.searchQuery}`;
+				var d;
+				let l;
+				const u = [];
+				if (t.isTypeaheadSuggestion) l = `/${t.isProfile?t.searchQuery.replace("u/","user/"):t.searchQuery}`;
 				else {
-					if (p.push(`${a.p}=${Object(s.b)(t.rawQuery||t.searchQuery)}`), u = "/search/", t.section !== o.c.trending && t.section !== o.c.recent || n && n.source && p.push(`source=${n.source}`), null == i ? void 0 : i.enabled) switch (i.type) {
-						case c.a.Subreddit:
-							const e = i.payload;
-							u = `/r/${e.name}${u}`, p.push(`${a.s}=1`), p.push(`${a.A}=${e.isNSFW?"1":""}`);
+					if (u.push(`${a.p}=${Object(s.b)(t.rawQuery||t.searchQuery)}`), l = "/search/", t.section !== o.c.trending && t.section !== o.c.recent || n && n.source && u.push(`source=${n.source}`), null == c ? void 0 : c.enabled) switch (c.type) {
+						case r.bc.Subreddit:
+							const e = c.payload;
+							l = `/r/${e.name}${l}`, u.push(`${a.s}=1`), u.push(`${a.A}=${e.isNSFW?"1":""}`);
 							break;
-						case c.a.Multireddit:
-							const t = i.payload;
-							u = `/user/${t.url.split("/")[2]}/m/${t.name}${u}`, p.push(`${a.s}=1`), p.push(`${a.A}=${t.isNSFW?"1":""}`), p.push(`${a.i}=1`);
+						case r.bc.Multireddit:
+							const t = c.payload;
+							l = `/user/${t.url.split("/")[2]}/m/${t.name}${l}`, u.push(`${a.s}=1`), u.push(`${a.A}=${t.isNSFW?"1":""}`), u.push(`${a.i}=1`);
 							break;
-						case c.a.SyntaxScoped:
-							u = `/${null===(l=i.payload)||void 0===l?void 0:l.title}${u}`, p.push(`${a.s}=1`)
-					} else t.subredditOrProfileRestrictedName && (u = `/${t.subredditOrProfileRestrictedName}${u}`, p.push(`${a.s}=1`));
-					d && p.push(`${a.h}=1`), (null == n ? void 0 : n.t) && n.t !== r.lc.ALL && p.push(`${a.C}=${n.t}`), (null == n ? void 0 : n.sort) && p.push(`${a.y}=${n.sort}`), (null == n ? void 0 : n.type) && (n.type.includes(r.fc.Posts) || p.push(`${a.D}=${n.type[0]}`))
+						case r.bc.SyntaxScoped:
+							l = `/${null===(d=c.payload)||void 0===d?void 0:d.title}${l}`, u.push(`${a.s}=1`)
+					} else t.subredditOrProfileRestrictedName && (l = `/${t.subredditOrProfileRestrictedName}${l}`, u.push(`${a.s}=1`));
+					i && u.push(`${a.h}=1`), (null == n ? void 0 : n.t) && n.t !== r.mc.ALL && u.push(`${a.C}=${n.t}`), (null == n ? void 0 : n.sort) && u.push(`${a.y}=${n.sort}`), (null == n ? void 0 : n.type) && (n.type.includes(r.gc.Posts) || u.push(`${a.D}=${n.type[0]}`))
 				}
 				return {
-					url: u,
-					qs: p.join("&")
+					url: l,
+					qs: u.join("&")
 				}
 			}
 		},
@@ -9011,7 +9010,7 @@
 					case qn.g: {
 						const {
 							profileName: n
-						} = t.payload, r = G.nc + n.toLocaleLowerCase(), s = Object(Mn.a)(e, r) || {}, a = {
+						} = t.payload, r = G.oc + n.toLocaleLowerCase(), s = Object(Mn.a)(e, r) || {}, a = {
 							profileDeleted: t.type === qn.e,
 							profileDoesNotExist: t.type === qn.f,
 							profileSuspended: t.type === qn.g,
@@ -12488,7 +12487,7 @@
 							key: n,
 							type: r
 						} = t.payload;
-						return -1 === r.indexOf(G.fc.Users) ? e : {
+						return -1 === r.indexOf(G.gc.Users) ? e : {
 							...e,
 							[n]: null
 						}
@@ -12501,7 +12500,7 @@
 							success: s,
 							type: a
 						} = t.payload;
-						return -1 === a.indexOf(G.fc.Users) || s && s.authors ? e : {
+						return -1 === a.indexOf(G.gc.Users) || s && s.authors ? e : {
 							...e,
 							[n]: r
 						}
@@ -12521,7 +12520,7 @@
 								key: n,
 								type: r
 							} = t.payload;
-							return -1 === r.indexOf(G.fc.Users) ? e : {
+							return -1 === r.indexOf(G.gc.Users) ? e : {
 								...e,
 								[n]: !0
 							}
@@ -12534,7 +12533,7 @@
 								key: n,
 								type: r
 							} = t.payload;
-							return -1 === r.indexOf(G.fc.Users) ? e : {
+							return -1 === r.indexOf(G.gc.Users) ? e : {
 								...e,
 								[n]: !1
 							}
@@ -12558,7 +12557,7 @@
 							key: r,
 							type: s
 						} = t.payload;
-						if (-1 === s.indexOf(G.fc.Users)) return e;
+						if (-1 === s.indexOf(G.gc.Users)) return e;
 						const a = e[r];
 						return {
 							...e,
@@ -12583,7 +12582,7 @@
 							authorOrder: r,
 							type: s
 						} = t.payload;
-						return -1 !== s.indexOf(G.fc.Users) && e[n] ? {
+						return -1 !== s.indexOf(G.gc.Users) && e[n] ? {
 							...e,
 							[n]: e[n].concat(r)
 						} : e
@@ -12594,7 +12593,7 @@
 							authorOrder: r,
 							type: s
 						} = t.payload;
-						return -1 === s.indexOf(G.fc.Users) ? e : {
+						return -1 === s.indexOf(G.gc.Users) ? e : {
 							...e,
 							[n]: r
 						}
@@ -12615,7 +12614,7 @@
 								tokens: r,
 								type: s
 							} = t.payload;
-							return -1 === s.indexOf(G.fc.Users) ? e : r.authors ? {
+							return -1 === s.indexOf(G.gc.Users) ? e : r.authors ? {
 								...e,
 								[n]: {
 									token: r.authors
@@ -12645,7 +12644,7 @@
 							key: n,
 							type: r
 						} = t.payload;
-						return -1 === r.indexOf(G.fc.Comments) ? e : {
+						return -1 === r.indexOf(G.gc.Comments) ? e : {
 							...e,
 							[n]: null
 						}
@@ -12658,7 +12657,7 @@
 							success: s,
 							type: a
 						} = t.payload;
-						return -1 === a.indexOf(G.fc.Comments) || s && s.comments ? e : {
+						return -1 === a.indexOf(G.gc.Comments) || s && s.comments ? e : {
 							...e,
 							[n]: r
 						}
@@ -12678,7 +12677,7 @@
 								key: n,
 								type: r
 							} = t.payload;
-							return -1 === r.indexOf(G.fc.Comments) ? e : {
+							return -1 === r.indexOf(G.gc.Comments) ? e : {
 								...e,
 								[n]: !0
 							}
@@ -12691,7 +12690,7 @@
 								key: n,
 								type: r
 							} = t.payload;
-							return -1 === r.indexOf(G.fc.Comments) ? e : {
+							return -1 === r.indexOf(G.gc.Comments) ? e : {
 								...e,
 								[n]: !1
 							}
@@ -12715,7 +12714,7 @@
 							key: r,
 							type: s
 						} = t.payload;
-						if (-1 === s.indexOf(G.fc.Comments)) return e;
+						if (-1 === s.indexOf(G.gc.Comments)) return e;
 						const a = e[r];
 						return {
 							...e,
@@ -12740,7 +12739,7 @@
 							commentOrder: r,
 							type: s
 						} = t.payload;
-						return -1 !== s.indexOf(G.fc.Comments) && e[n] ? {
+						return -1 !== s.indexOf(G.gc.Comments) && e[n] ? {
 							...e,
 							[n]: e[n].concat(r)
 						} : e
@@ -12751,7 +12750,7 @@
 							commentOrder: r,
 							type: s
 						} = t.payload;
-						return -1 === s.indexOf(G.fc.Comments) ? e : {
+						return -1 === s.indexOf(G.gc.Comments) ? e : {
 							...e,
 							[n]: r
 						}
@@ -12772,7 +12771,7 @@
 								tokens: r,
 								type: s
 							} = t.payload;
-							return -1 === s.indexOf(G.fc.Comments) ? e : r.comments ? {
+							return -1 === s.indexOf(G.gc.Comments) ? e : r.comments ? {
 								...e,
 								[n]: {
 									token: r.comments
@@ -12802,7 +12801,7 @@
 							key: n,
 							type: r
 						} = t.payload;
-						return -1 === r.indexOf(G.fc.Subreddits) ? e : {
+						return -1 === r.indexOf(G.gc.Subreddits) ? e : {
 							...e,
 							[n]: null
 						}
@@ -12815,7 +12814,7 @@
 							success: s,
 							type: a
 						} = t.payload;
-						return -1 === a.indexOf(G.fc.Subreddits) || s && s.communities ? e : {
+						return -1 === a.indexOf(G.gc.Subreddits) || s && s.communities ? e : {
 							...e,
 							[n]: r
 						}
@@ -12835,7 +12834,7 @@
 								key: n,
 								type: r
 							} = t.payload;
-							return -1 === r.indexOf(G.fc.Subreddits) ? e : {
+							return -1 === r.indexOf(G.gc.Subreddits) ? e : {
 								...e,
 								[n]: !0
 							}
@@ -12848,7 +12847,7 @@
 								key: n,
 								type: r
 							} = t.payload;
-							return -1 === r.indexOf(G.fc.Subreddits) ? e : {
+							return -1 === r.indexOf(G.gc.Subreddits) ? e : {
 								...e,
 								[n]: !1
 							}
@@ -12872,7 +12871,7 @@
 							key: r,
 							type: s
 						} = t.payload;
-						if (-1 === s.indexOf(G.fc.Subreddits)) return e;
+						if (-1 === s.indexOf(G.gc.Subreddits)) return e;
 						const a = e[r];
 						return {
 							...e,
@@ -12897,7 +12896,7 @@
 							communityOrder: r,
 							type: s
 						} = t.payload;
-						return -1 !== s.indexOf(G.fc.Subreddits) && e[n] ? {
+						return -1 !== s.indexOf(G.gc.Subreddits) && e[n] ? {
 							...e,
 							[n]: e[n].concat(r)
 						} : e
@@ -12908,7 +12907,7 @@
 							communityOrder: r,
 							type: s
 						} = t.payload;
-						return -1 === s.indexOf(G.fc.Subreddits) ? e : {
+						return -1 === s.indexOf(G.gc.Subreddits) ? e : {
 							...e,
 							[n]: r
 						}
@@ -12929,7 +12928,7 @@
 								tokens: r,
 								type: s
 							} = t.payload;
-							return -1 === s.indexOf(G.fc.Subreddits) ? e : r.communities ? {
+							return -1 === s.indexOf(G.gc.Subreddits) ? e : r.communities ? {
 								...e,
 								[n]: {
 									token: r.communities
@@ -12959,7 +12958,7 @@
 							key: n,
 							type: r
 						} = t.payload;
-						return -1 === r.indexOf(G.fc.Subreddits) && -1 === r.indexOf(G.fc.Users) ? e : {
+						return -1 === r.indexOf(G.gc.Subreddits) && -1 === r.indexOf(G.gc.Users) ? e : {
 							...e,
 							[n]: null
 						}
@@ -12971,7 +12970,7 @@
 							error: r,
 							type: s
 						} = t.payload;
-						return -1 === s.indexOf(G.fc.Subreddits) && -1 === s.indexOf(G.fc.Users) ? e : {
+						return -1 === s.indexOf(G.gc.Subreddits) && -1 === s.indexOf(G.gc.Users) ? e : {
 							...e,
 							[n]: r
 						}
@@ -13011,7 +13010,7 @@
 								key: n,
 								type: r
 							} = t.payload;
-							return -1 === r.indexOf(G.fc.Subreddits) && -1 === r.indexOf(G.fc.Users) ? e : {
+							return -1 === r.indexOf(G.gc.Subreddits) && -1 === r.indexOf(G.gc.Users) ? e : {
 								...e,
 								[n]: !0
 							}
@@ -13024,7 +13023,7 @@
 								key: n,
 								type: r
 							} = t.payload;
-							return -1 === r.indexOf(G.fc.Subreddits) && -1 === r.indexOf(G.fc.Users) ? e : {
+							return -1 === r.indexOf(G.gc.Subreddits) && -1 === r.indexOf(G.gc.Users) ? e : {
 								...e,
 								[n]: !1
 							}
@@ -13067,7 +13066,7 @@
 							key: r,
 							type: s
 						} = t.payload;
-						if (-1 === s.indexOf(G.fc.Subreddits) && -1 === s.indexOf(G.fc.Users)) return e;
+						if (-1 === s.indexOf(G.gc.Subreddits) && -1 === s.indexOf(G.gc.Users)) return e;
 						const a = e[r];
 						return {
 							...e,
@@ -13105,7 +13104,7 @@
 							listingOrder: r,
 							type: s
 						} = t.payload;
-						return -1 === s.indexOf(G.fc.Subreddits) && -1 === s.indexOf(G.fc.Users) ? e : {
+						return -1 === s.indexOf(G.gc.Subreddits) && -1 === s.indexOf(G.gc.Users) ? e : {
 							...e,
 							[n]: e[n].concat(r)
 						}
@@ -13116,7 +13115,7 @@
 							listingOrder: r,
 							type: s
 						} = t.payload;
-						return -1 === s.indexOf(G.fc.Subreddits) && -1 === s.indexOf(G.fc.Users) ? e : {
+						return -1 === s.indexOf(G.gc.Subreddits) && -1 === s.indexOf(G.gc.Users) ? e : {
 							...e,
 							[n]: r
 						}
@@ -13137,7 +13136,7 @@
 								tokens: r,
 								type: s
 							} = t.payload;
-							return -1 === s.indexOf(G.fc.Subreddits) && -1 === s.indexOf(G.fc.Users) ? e : r.listings ? {
+							return -1 === s.indexOf(G.gc.Subreddits) && -1 === s.indexOf(G.gc.Users) ? e : r.listings ? {
 								...e,
 								[n]: {
 									token: r.listings
@@ -13229,7 +13228,7 @@
 							key: n,
 							type: r
 						} = t.payload;
-						return -1 === r.indexOf(G.fc.Posts) ? e : {
+						return -1 === r.indexOf(G.gc.Posts) ? e : {
 							...e,
 							[n]: null
 						}
@@ -13269,7 +13268,7 @@
 							success: s,
 							type: a
 						} = t.payload;
-						return -1 === a.indexOf(G.fc.Posts) || s && s.posts ? e : {
+						return -1 === a.indexOf(G.gc.Posts) || s && s.posts ? e : {
 							...e,
 							[r]: n
 						}
@@ -13316,7 +13315,7 @@
 								key: n,
 								type: r
 							} = t.payload;
-							return -1 === r.indexOf(G.fc.Posts) ? e : {
+							return -1 === r.indexOf(G.gc.Posts) ? e : {
 								...e,
 								[n]: !0
 							}
@@ -13390,7 +13389,7 @@
 								key: n,
 								type: r
 							} = t.payload;
-							return -1 === r.indexOf(G.fc.Posts) ? e : {
+							return -1 === r.indexOf(G.gc.Posts) ? e : {
 								...e,
 								[n]: !1
 							}
@@ -13503,7 +13502,7 @@
 								key: r,
 								type: s
 							} = t.payload;
-							if (s.indexOf(G.fc.Posts) > -1) {
+							if (s.indexOf(G.gc.Posts) > -1) {
 								const t = e[r];
 								return {
 									...e,
@@ -13606,7 +13605,7 @@
 								postOrder: r,
 								type: s
 							} = t.payload;
-							return -1 === s.indexOf(G.fc.Posts) ? e : {
+							return -1 === s.indexOf(G.gc.Posts) ? e : {
 								...e,
 								[n]: r
 							}
@@ -13617,7 +13616,7 @@
 								postOrder: r,
 								type: s
 							} = t.payload;
-							return -1 === s.indexOf(G.fc.Posts) ? e : {
+							return -1 === s.indexOf(G.gc.Posts) ? e : {
 								...e,
 								[n]: e[n].concat(r)
 							}
@@ -13714,7 +13713,7 @@
 							tokens: r,
 							type: s
 						} = t.payload;
-						return -1 === s.indexOf(G.fc.Posts) ? e : r.posts ? {
+						return -1 === s.indexOf(G.gc.Posts) ? e : r.posts ? {
 							...e,
 							[n]: {
 								token: r.posts
@@ -13775,7 +13774,7 @@
 							default:
 								return n
 						}
-					}))(G.fc.Posts, G.ec.Posts)
+					}))(G.gc.Posts, G.fc.Posts)
 				}),
 				Zd = Object(X.c)({
 					activeKey: Ai,
@@ -19184,22 +19183,24 @@
 				}
 			};
 			var Ug = function() {
-					let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : "",
-						t = arguments.length > 1 ? arguments[1] : void 0;
-					switch (t.type) {
-						case ye.c:
-						case Ze.j: {
-							const {
-								searchQuery: e
-							} = t.payload;
-							return e || ""
-						}
-						default:
-							return e
+				let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : "",
+					t = arguments.length > 1 ? arguments[1] : void 0;
+				switch (t.type) {
+					case ye.c:
+					case Ze.j: {
+						const {
+							searchQuery: e
+						} = t.payload;
+						return e || ""
 					}
+					default:
+						return e
+				}
+			};
+			const Mg = {
+					enabled: !1
 				},
-				Mg = n("./src/reddit/reducers/search/searchScope/index.ts");
-			const Fg = Object.create(null);
+				Fg = Object.create(null);
 			var Bg = function() {
 					let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : Fg,
 						t = arguments.length > 1 ? arguments[1] : void 0;
@@ -19265,7 +19266,26 @@
 				},
 				Kg = Object(X.c)({
 					isDropdownOpen: kg,
-					searchScope: Mg.b,
+					searchScope: function() {
+						let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : Mg,
+							t = arguments.length > 1 ? arguments[1] : void 0;
+						switch (t.type) {
+							case Ze.a:
+								return {
+									...e, enabled: !1
+								};
+							case Ze.b:
+								return {
+									...e, enabled: !0
+								};
+							case Ze.h:
+								return {
+									...e, enabled: t.payload.enabled, type: t.payload.type, payload: t.payload.payload
+								};
+							default:
+								return e
+						}
+					},
 					searchQuery: Ug,
 					typeahead: Qg,
 					viewTreatment: Wg,
@@ -25313,41 +25333,6 @@
 				})
 			}
 		},
-		"./src/reddit/reducers/search/searchScope/index.ts": function(e, t, n) {
-			"use strict";
-			n.d(t, "a", (function() {
-				return r
-			})), n.d(t, "b", (function() {
-				return o
-			}));
-			var r, s = n("./src/reddit/actions/search.ts");
-			! function(e) {
-				e[e.Subreddit = 0] = "Subreddit", e[e.Multireddit = 1] = "Multireddit", e[e.SyntaxScoped = 2] = "SyntaxScoped"
-			}(r || (r = {}));
-			const a = {
-					enabled: !1
-				},
-				o = function() {
-					let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : a,
-						t = arguments.length > 1 ? arguments[1] : void 0;
-					switch (t.type) {
-						case s.a:
-							return {
-								...e, enabled: !1
-							};
-						case s.b:
-							return {
-								...e, enabled: !0
-							};
-						case s.h:
-							return {
-								...e, enabled: t.payload.enabled, type: t.payload.type, payload: t.payload.payload
-							};
-						default:
-							return e
-					}
-				}
-		},
 		"./src/reddit/routes/premium/index.ts": function(e, t, n) {
 			"use strict";
 			n.d(t, "b", (function() {
@@ -25711,4 +25696,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit.d9faeb5ed3ef63937c7c.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit.0e14f8e16f9976ea1a62.js.map

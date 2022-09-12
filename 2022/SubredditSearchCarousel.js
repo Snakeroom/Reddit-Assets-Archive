@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditSearchCarousel.d63ec1276d40da74b69a.js
-// Retrieved at 9/8/2022, 11:20:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditSearchCarousel.b1e4fdb300a7678f6e77.js
+// Retrieved at 9/12/2022, 11:30:07 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditSearchCarousel"], {
 		"./src/reddit/actions/subreddit/subredditCarousel.ts": function(e, t, s) {
@@ -107,12 +107,12 @@
 					[_, S] = Object(c.useState)(null),
 					[h, O] = Object(c.useState)(null),
 					[C, B] = Object(c.useState)(0),
-					[I, k] = Object(c.useState)(void 0),
-					g = Object(l.e)(e => Object(E.B)(e, u));
+					[I, g] = Object(c.useState)(void 0),
+					k = Object(l.e)(e => Object(E.B)(e, u));
 				Object(c.useEffect)(() => {
 					(null == u ? void 0 : u.length) && f(Object(b.e)(u))
 				}, [u]);
-				const w = (null == g ? void 0 : g.filter(e => !e.isNsfw && !e.isSubscribed)) || [],
+				const w = (null == k ? void 0 : k.filter(e => !e.isNsfw && !e.isSubscribed)) || [],
 					A = e => () => {
 						if (!h) return;
 						const t = Math.sign(e) ? h.scrollLeft % 249 : 249 % h.scrollLeft,
@@ -126,7 +126,7 @@
 					if (!_) return;
 					const e = o()(() => {
 						const e = Math.floor(_.clientWidth / 249);
-						B(e), k((e > 1 ? 249 * e : 237) - 8)
+						B(e), g((e > 1 ? 249 * e : 237) - 8)
 					}, 30);
 					return window.addEventListener("resize", e), e(), () => {
 						window.removeEventListener("resize", e)
@@ -311,9 +311,9 @@
 				return Object(n.useEffect)(() => {
 					t && s(Object(o.d)("SUBREDDIT_CAROUSEL_SEARCH_KEY", {
 						q: t,
-						sort: r.cc.Relevance,
-						t: r.lc.ALL,
-						type: [r.fc.Subreddits]
+						sort: r.dc.Relevance,
+						t: r.mc.ALL,
+						type: [r.gc.Subreddits]
 					}))
 				}, [t]), a.a.createElement(c.a, {
 					className: b.a.wrapper,
@@ -472,4 +472,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditSearchCarousel.d63ec1276d40da74b69a.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditSearchCarousel.b1e4fdb300a7678f6e77.js.map

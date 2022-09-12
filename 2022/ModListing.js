@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModListing.54e1d5a45cef4b9c1f3b.js
-// Retrieved at 9/8/2022, 11:20:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModListing.de9b6542da3a81853f36.js
+// Retrieved at 9/12/2022, 11:30:07 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModListing"], {
 		"./node_modules/classnames/index.js": function(e, t, n) {
@@ -759,7 +759,7 @@
 
 			function U(e) {
 				const t = m.C in e && e[m.C].toUpperCase() || "";
-				return t in i.lc && i.lc[t]
+				return t in i.mc && i.mc[t]
 			}
 			const q = Object(a.a)(S.c),
 				K = Object(a.a)(S.b),
@@ -2663,7 +2663,7 @@
 							subredditName: t.subredditName
 						});
 						if (!n) {
-							const n = (e => e.startsWith(c.nc) ? e.slice(2) : e)(t.subredditName);
+							const n = (e => e.startsWith(c.oc) ? e.slice(2) : e)(t.subredditName);
 							return n && Object(ne.k)(e, {
 								profileName: n
 							}) || null
@@ -2799,7 +2799,7 @@
 				}, Me.k, Me.d, (e, t, n, r, o) => {
 					const i = s()([...Object(l.a)(e)]),
 						a = Ie.C in i && i[Ie.C].toUpperCase(),
-						d = "string" == typeof a && a in c.lc ? c.lc[a] : c.mc,
+						d = "string" == typeof a && a in c.mc ? c.mc[a] : c.nc,
 						m = n ? Ee.f : Ee.e;
 					return {
 						filtered: n,
@@ -4949,4 +4949,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModListing.54e1d5a45cef4b9c1f3b.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModListing.de9b6542da3a81853f36.js.map

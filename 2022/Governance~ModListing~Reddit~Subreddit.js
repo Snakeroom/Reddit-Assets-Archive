@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit~Subreddit.d706718abd8b767e4988.js
-// Retrieved at 9/8/2022, 11:20:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit~Subreddit.10b38d801619a4cd6e31.js
+// Retrieved at 9/12/2022, 11:30:07 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~ModListing~Reddit~Subreddit"], {
 		"./src/lib/CSSVariableProvider/withTheme.tsx": function(e, t, n) {
@@ -2495,7 +2495,7 @@
 							break;
 						case i.Qb.SETTINGS: {
 							const o = e;
-							Object(C.a)(K(n, r)(t)), o.match.params.page === i.gc.Profile && Object(b.l)(t);
+							Object(C.a)(K(n, r)(t)), o.match.params.page === i.hc.Profile && Object(b.l)(t);
 							break
 						}
 						case i.Qb.POST_CREATION:
@@ -2905,13 +2905,13 @@
 				te = (e, t, n, r, o, s) => c => {
 					var a, d;
 					let u = !0;
-					if (t.type.indexOf(i.fc.Posts) > -1) {
+					if (t.type.indexOf(i.gc.Posts) > -1) {
 						const {
 							api: t
 						} = c.listings.listingOrder;
 						u = u && !t.error[e] && !t.pending[e]
 					}
-					if (t.type.indexOf(i.fc.Subreddits) > -1 || t.type.indexOf(i.fc.Users) > -1) {
+					if (t.type.indexOf(i.gc.Subreddits) > -1 || t.type.indexOf(i.gc.Users) > -1) {
 						const {
 							api: t
 						} = c.listings.postOrder;
@@ -3568,4 +3568,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit~Subreddit.d706718abd8b767e4988.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit~Subreddit.10b38d801619a4cd6e31.js.map

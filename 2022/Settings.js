@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Settings.6123f7ab35a0206ecc66.js
-// Retrieved at 9/8/2022, 1:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Settings.51fbcbf2f0b94fc20298.js
+// Retrieved at 9/12/2022, 11:30:07 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Settings"], {
 		"./node_modules/moment/locale sync recursive ^\\.\\/.*$": function(e, t, n) {
@@ -1706,11 +1706,11 @@
 					if (!Object(k.Q)(e)) return Object(L.a)(t, e)
 				}
 				const {
-					page: v = a.gc.Account
+					page: v = a.hc.Account
 				} = e.params;
-				if (v === a.gc.Gold) return void t(Object(r.c)("/settings/premium"));
+				if (v === a.hc.Gold) return void t(Object(r.c)("/settings/premium"));
 				const _ = [];
-				v === a.gc.Profile && (_.push(t(Object(N.a)())), _.push(t(Object(I.g)()))), v === a.gc.Account && (_.push(t(Object(b.o)())), _.push(t(Object(d.b)()))), v === a.gc.Notifications && _.push(t(w())), v !== a.gc.Privacy && v !== a.gc.Messaging || _.push(t(Object(l.b)())), v === a.gc.Premium && (_.push(t(Object(N.a)())), _.push(t(Object(h.l)(!0)))), await Promise.all(_); {
+				v === a.hc.Profile && (_.push(t(Object(N.a)())), _.push(t(Object(I.g)()))), v === a.hc.Account && (_.push(t(Object(b.o)())), _.push(t(Object(d.b)()))), v === a.hc.Notifications && _.push(t(w())), v !== a.hc.Privacy && v !== a.hc.Messaging || _.push(t(Object(l.b)())), v === a.hc.Premium && (_.push(t(Object(N.a)())), _.push(t(Object(h.l)(!0)))), await Promise.all(_); {
 					const e = n(),
 						a = e.platform.currentPage,
 						{
@@ -8777,22 +8777,22 @@
 					return t && t() || ""
 				},
 				i = {
-					[r.lc.HOUR]: () => s.fbt._("Now", null, {
+					[r.mc.HOUR]: () => s.fbt._("Now", null, {
 						hk: "ZmhY"
 					}),
-					[r.lc.DAY]: () => s.fbt._("Today", null, {
+					[r.mc.DAY]: () => s.fbt._("Today", null, {
 						hk: "40Ugu1"
 					}),
-					[r.lc.WEEK]: () => s.fbt._("This Week", null, {
+					[r.mc.WEEK]: () => s.fbt._("This Week", null, {
 						hk: "14tmoK"
 					}),
-					[r.lc.MONTH]: () => s.fbt._("This Month", null, {
+					[r.mc.MONTH]: () => s.fbt._("This Month", null, {
 						hk: "34dbM3"
 					}),
-					[r.lc.YEAR]: () => s.fbt._("This Year", null, {
+					[r.mc.YEAR]: () => s.fbt._("This Year", null, {
 						hk: "14RJsa"
 					}),
-					[r.lc.ALL]: () => s.fbt._("All Time", null, {
+					[r.mc.ALL]: () => s.fbt._("All Time", null, {
 						hk: "3qt6Ct"
 					})
 				},
@@ -12667,7 +12667,7 @@
 					selectedKey: e.sort
 				})
 			};
-			const cs = [m.lc.HOUR, m.lc.DAY, m.lc.WEEK, m.lc.MONTH, m.lc.YEAR, m.lc.ALL];
+			const cs = [m.mc.HOUR, m.mc.DAY, m.mc.WEEK, m.mc.MONTH, m.mc.YEAR, m.mc.ALL];
 			var ls = e => {
 					const {
 						dropdownId: t
@@ -14352,70 +14352,70 @@
 				uo = n("./src/reddit/pages/Settings/index.m.less"),
 				mo = n.n(uo);
 			const po = (e, t, n, r) => [{
-					key: m.gc.Account,
+					key: m.hc.Account,
 					title: s.fbt._("Account", null, {
 						hk: "kL0Ow"
 					})
 				}, {
-					key: m.gc.Profile,
+					key: m.hc.Profile,
 					title: s.fbt._("Profile", null, {
 						hk: "4AiObW"
 					})
 				}, {
-					key: m.gc.Privacy,
+					key: m.hc.Privacy,
 					title: s.fbt._("Safety & Privacy", null, {
 						hk: "4hchEz"
 					})
 				}, {
-					key: m.gc.Feed,
+					key: m.hc.Feed,
 					title: s.fbt._("Feed Settings", null, {
 						hk: "4Giq2p"
 					})
 				}, {
-					key: m.gc.Notifications,
+					key: m.hc.Notifications,
 					title: s.fbt._("Notifications", null, {
 						hk: "fklVW"
 					})
 				}, {
-					key: m.gc.EmailsSettings,
+					key: m.hc.EmailsSettings,
 					title: s.fbt._("Emails", null, {
 						hk: "3YKR0a"
 					})
 				}, {
-					key: m.gc.Premium,
+					key: m.hc.Premium,
 					title: s.fbt._("Subscriptions", null, {
 						hk: "48xste"
 					})
 				}, {
 					className: mo.a.CreatorTab,
-					key: m.gc.Creator,
+					key: m.hc.Creator,
 					title: s.fbt._("Reddit Creator", null, {
 						hk: "45BriY"
 					}),
 					disabled: !e
 				}, {
 					className: mo.a.PaymentsTab,
-					key: m.gc.Payments,
+					key: m.hc.Payments,
 					title: s.fbt._("Payments", null, {
 						hk: "31LCer"
 					}),
 					disabled: !n.length
 				}, {
 					className: mo.a.SpecialMembershipTab,
-					key: m.gc.SpecialMembership,
+					key: m.hc.SpecialMembership,
 					title: s.fbt._("Special Memberships", null, {
 						hk: "3ZoNj3"
 					}),
 					disabled: !t
 				}, {
 					className: mo.a.MessagingTab,
-					key: m.gc.Messaging,
+					key: m.hc.Messaging,
 					title: s.fbt._("Chat & Messaging", null, {
 						hk: "3uLoYZ"
 					})
 				}, {
 					className: mo.a.MessagingTab,
-					key: m.gc.Dsp,
+					key: m.hc.Dsp,
 					title: s.fbt._("DSP", null, {
 						hk: "zmi11"
 					}),
@@ -14532,7 +14532,7 @@
 						}))
 					}, this.getSource = () => {
 						const e = this.props.match.params.page;
-						return e && e !== m.gc.Account ? `settings_${e}` : "settings"
+						return e && e !== m.hc.Account ? `settings_${e}` : "settings"
 					}, this.getTrackingValue = function(e, n) {
 						let s = arguments.length > 2 && void 0 !== arguments[2] && arguments[2];
 						const r = s ? t.props.prefs[e] : n;
@@ -14552,34 +14552,34 @@
 							update: this.update
 						};
 						switch (e) {
-							case m.gc.Account:
+							case m.hc.Account:
 								return a.a.createElement(wt, c);
-							case m.gc.EmailsSettings:
+							case m.hc.EmailsSettings:
 								return a.a.createElement(lo, c);
-							case m.gc.Profile:
+							case m.hc.Profile:
 								return a.a.createElement($r, c);
-							case m.gc.Premium:
+							case m.hc.Premium:
 								return a.a.createElement(Ks.b, c);
-							case m.gc.Notifications:
+							case m.hc.Notifications:
 								return a.a.createElement(Ms, c);
-							case m.gc.Privacy:
+							case m.hc.Privacy:
 								return a.a.createElement(fr, c);
-							case m.gc.Messaging:
+							case m.hc.Messaging:
 								return a.a.createElement(pn, c);
-							case m.gc.Feed:
+							case m.hc.Feed:
 								return a.a.createElement(ws, c);
-							case m.gc.Payments:
+							case m.hc.Payments:
 								return a.a.createElement(Ys, null);
-							case m.gc.Creator: {
+							case m.hc.Creator: {
 								const e = Object(p.a)(r.search);
 								return o ? a.a.createElement(Tn, {
 									stripeConnectCode: e.get("code"),
 									stripeConnectStateToken: e.get("state")
 								}) : null
 							}
-							case m.gc.SpecialMembership:
+							case m.hc.SpecialMembership:
 								return i ? a.a.createElement(to, null) : null;
-							case m.gc.Dsp:
+							case m.hc.Dsp:
 								return this.state.dspAvailable ? a.a.createElement(ts, null) : null;
 							default:
 								return a.a.createElement(wt, c)
@@ -14588,12 +14588,12 @@
 						e.preventDefault()
 					}, this.onPremiumTabClick = () => {
 						this.props.sendEvent(Object(ro.f)())
-					}, this.getTabClickHandler = e => this.props.isResponsiveSettingsEnabled ? this.preventTabClickEvent : e === m.gc.Premium ? this.onPremiumTabClick : void 0, this.isScrolling = !1, this.resetScrolling = () => {
+					}, this.getTabClickHandler = e => this.props.isResponsiveSettingsEnabled ? this.preventTabClickEvent : e === m.hc.Premium ? this.onPremiumTabClick : void 0, this.isScrolling = !1, this.resetScrolling = () => {
 						this.isScrolling = !1
 					}, this.startScrolling = () => {
 						this.isScrolling = !0
 					}, this.tabTouchEndHandlerCache = {}, this.getTabTouchEndHandler = e => (this.tabTouchEndHandlerCache[e] || (this.tabTouchEndHandlerCache[e] = () => {
-						this.isScrolling || (e === m.gc.Premium && this.onPremiumTabClick(), this.props.changeTab(e))
+						this.isScrolling || (e === m.hc.Premium && this.onPremiumTabClick(), this.props.changeTab(e))
 					}), this.tabTouchEndHandlerCache[e]), this.tabRefCache = {}, this.getTabRef = e => (this.tabRefCache[e] || (this.tabRefCache[e] = a.a.createRef()), this.tabRefCache[e]), this.renderTab = (e, t) => {
 						const {
 							match: {
@@ -14625,7 +14625,7 @@
 						const {
 							match: {
 								params: {
-									page: e = m.gc.Account
+									page: e = m.hc.Account
 								}
 							}
 						} = this.props, t = this.tabRefCache[e];
@@ -15172,4 +15172,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Settings.6123f7ab35a0206ecc66.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Settings.51fbcbf2f0b94fc20298.js.map

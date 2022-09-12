@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SearchResults.d6b5e8359c56a8ad0f24.js
-// Retrieved at 9/8/2022, 1:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SearchResults.f3f0f2c6d0a62ea6c346.js
+// Retrieved at 9/12/2022, 11:30:07 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SearchResults"], {
 		"./node_modules/lodash/_baseDelay.js": function(e, t) {
@@ -269,14 +269,14 @@
 					let f;
 					x && d && (f = Object(b.h)(x, d));
 					const v = Object(a.b)(h || d, x, r);
-					!O(n) || r.type.length && !l()(r.type, [i.fc.Posts, i.fc.Subreddits, i.fc.Users]) || t(Object(m.d)(v, {
+					!O(n) || r.type.length && !l()(r.type, [i.gc.Posts, i.gc.Subreddits, i.gc.Users]) || t(Object(m.d)(v, {
 						...r,
-						type: [i.fc.Comments]
+						type: [i.gc.Comments]
 					}, h, x, f, !0)), await t(Object(m.d)(v, r, h, x, f));
 					let j = !1;
 					const {
 						type: C = []
-					} = r, y = C.indexOf(i.fc.Posts) > -1, E = C.indexOf(i.fc.Users) > -1, _ = C.indexOf(i.fc.Subreddits) > -1;
+					} = r, y = C.indexOf(i.gc.Posts) > -1, E = C.indexOf(i.gc.Users) > -1, _ = C.indexOf(i.gc.Subreddits) > -1;
 					y && n.listings.postOrder.api.error[v] && (j = !0), E && n.listings.authorOrder.api.error[v] && (j = !0), _ && n.listings.communityOrder.api.error[v] && (j = !0), t(j ? u.m({
 						title: Object(c.e)()
 					}) : u.m({
@@ -4941,7 +4941,7 @@
 					viewportDataLoaded: O.a
 				}),
 				Ee = {
-					[d.ec.Comments]: {
+					[d.fc.Comments]: {
 						cacheName: "comment",
 						Component: e => {
 							let {
@@ -5058,25 +5058,25 @@
 								}))))
 							})
 						},
-						moreResultsTypes: [d.fc.Comments],
+						moreResultsTypes: [d.gc.Comments],
 						Placeholder: Y.a,
 						selector: Ce,
 						telemetryComponentName: "commentSearchResults",
 						telemetryViewEvent: fe.c
 					},
-					[d.ec.Subreddits]: {
+					[d.fc.Subreddits]: {
 						cacheName: "community",
 						Component: he,
-						moreResultsTypes: [d.fc.Subreddits],
+						moreResultsTypes: [d.gc.Subreddits],
 						Placeholder: xe.a,
 						selector: ye,
 						telemetryComponentName: "communitySearchResults",
 						telemetryViewEvent: fe.d
 					},
-					[d.ec.Users]: {
+					[d.fc.Users]: {
 						cacheName: "author",
 						Component: he,
-						moreResultsTypes: [d.fc.Users],
+						moreResultsTypes: [d.gc.Users],
 						Placeholder: xe.a,
 						selector: je,
 						telemetryComponentName: "authorSearchResults",
@@ -5759,7 +5759,7 @@
 					inSubredditOrProfile: !1,
 					noPostsComponent: Ke,
 					onLoadMore: function() {
-						h(Object(u.n)([d.fc.Posts]))
+						h(Object(u.n)([d.gc.Posts]))
 					},
 					searchOptions: a
 				})) : o.a.createElement(Pe, {
@@ -5793,7 +5793,7 @@
 					identifiers: n,
 					listingKey: t,
 					searchOptions: s,
-					componentType: d.ec.Comments
+					componentType: d.fc.Comments
 				}), a && o.a.Children.toArray(Ze()(3, ze()(o.a.createElement($e.a, {
 					className: tt.a.loadMoreItem,
 					isLoading: !0
@@ -5817,7 +5817,7 @@
 						identifiers: n,
 						listingKey: t,
 						searchOptions: s,
-						componentType: d.ec.Subreddits
+						componentType: d.fc.Subreddits
 					}), rt(n, r) && o.a.Children.toArray(Ze()(3, ze()(o.a.createElement(nt.a, {
 						className: tt.a.loadMoreItem,
 						isLoading: !0
@@ -5841,7 +5841,7 @@
 					identifiers: n,
 					listingKey: t,
 					searchOptions: s,
-					componentType: d.ec.Users
+					componentType: d.fc.Users
 				}), rt(n, r) && o.a.Children.toArray(Ze()(3, ze()(o.a.createElement(nt.a, {
 					className: tt.a.loadMoreItem,
 					isLoading: !0
@@ -6137,7 +6137,7 @@
 						condition: !0,
 						active: t === g.h.Posts,
 						target: y.b.Posts,
-						contentType: d.fc.Posts,
+						contentType: d.gc.Posts,
 						text: n.fbt._("Posts", null, {
 							hk: "vNVpl"
 						})
@@ -6146,7 +6146,7 @@
 						condition: !s.is_multi && !s.restrict_sr,
 						active: t === g.h.Listings,
 						target: y.b.Communities,
-						contentType: d.fc.Subreddits,
+						contentType: d.gc.Subreddits,
 						text: n.fbt._("Communities", null, {
 							hk: "45NgGC"
 						})
@@ -6155,7 +6155,7 @@
 						condition: !s.is_multi && !s.restrict_sr,
 						active: t === g.h.People,
 						target: y.b.People,
-						contentType: d.fc.Users,
+						contentType: d.gc.Users,
 						text: n.fbt._("People", null, {
 							hk: "Ttxbf"
 						})
@@ -6164,7 +6164,7 @@
 						condition: !(s.source === m.a.Trending || s.source === m.a.PromotedTrend),
 						active: t === g.h.Comments,
 						target: y.b.Comments,
-						contentType: d.fc.Comments,
+						contentType: d.gc.Comments,
 						text: n.fbt._("Comments", null, {
 							hk: "z0DGA"
 						}),
@@ -6383,14 +6383,14 @@
 					}, n.fbt._("Communities", null, {
 						hk: "3cMR66"
 					})), l ? o.a.createElement(o.a.Fragment, null, !x.is_multi && o.a.createElement(C.b, {
-						componentType: c.ec.Subreddits,
+						componentType: c.fc.Subreddits,
 						identifiers: i,
 						listingKey: m,
 						searchOptions: x,
 						sidebar: !0
 					}), I && o.a.createElement(S.default, {
 						to: Object(w.b)({
-							searchType: c.fc.Subreddits,
+							searchType: c.gc.Subreddits,
 							pageLayer: R
 						})
 					}, o.a.createElement("p", {
@@ -6409,14 +6409,14 @@
 					}, n.fbt._("People", null, {
 						hk: "2M8TqB"
 					})), d ? o.a.createElement(o.a.Fragment, null, !x.is_multi && o.a.createElement(C.b, {
-						componentType: c.ec.Users,
+						componentType: c.fc.Users,
 						identifiers: t,
 						listingKey: m,
 						searchOptions: x,
 						sidebar: !0
 					}), T && o.a.createElement(S.default, {
 						to: Object(w.b)({
-							searchType: c.fc.Users,
+							searchType: c.gc.Users,
 							pageLayer: R
 						})
 					}, o.a.createElement("p", {
@@ -6551,7 +6551,7 @@
 				A = s("./src/reddit/selectors/telemetry.ts");
 			const U = (e, t) => {
 					const s = M()([...Object(L.a)(e)]);
-					return Object(m.wc)(s.sort) && (t.sort = s.sort), Object(m.xc)(s.t) && (t.t = s.t), t
+					return Object(m.xc)(s.sort) && (t.sort = s.sort), Object(m.yc)(s.t) && (t.t = s.t), t
 				},
 				V = (e, t, s, n) => () => e(e => ({
 					...Object(D.g)(e),
@@ -6660,21 +6660,21 @@
 						type: l
 					})))))
 				},
-				J = [m.cc.Relevance, m.cc.Hot, m.cc.Top, m.cc.New, m.cc.Comments],
+				J = [m.dc.Relevance, m.dc.Hot, m.dc.Top, m.dc.New, m.dc.Comments],
 				z = {
-					[m.cc.Hot]: () => u.fbt._("Hot", null, {
+					[m.dc.Hot]: () => u.fbt._("Hot", null, {
 						hk: "3c99Ga"
 					}),
-					[m.cc.Relevance]: () => u.fbt._("Relevance", null, {
+					[m.dc.Relevance]: () => u.fbt._("Relevance", null, {
 						hk: "LvJkD"
 					}),
-					[m.cc.Top]: () => u.fbt._("Top", null, {
+					[m.dc.Top]: () => u.fbt._("Top", null, {
 						hk: "bijGV"
 					}),
-					[m.cc.New]: () => u.fbt._("New", null, {
+					[m.dc.New]: () => u.fbt._("New", null, {
 						hk: "23egpt"
 					}),
-					[m.cc.Comments]: () => u.fbt._("Most Comments", null, {
+					[m.dc.Comments]: () => u.fbt._("Most Comments", null, {
 						hk: "4k1FoM"
 					})
 				};
@@ -6688,24 +6688,24 @@
 					return e
 				}).apply(this, arguments)
 			}
-			const Z = [m.lc.HOUR, m.lc.DAY, m.lc.WEEK, m.lc.MONTH, m.lc.YEAR, m.lc.ALL],
+			const Z = [m.mc.HOUR, m.mc.DAY, m.mc.WEEK, m.mc.MONTH, m.mc.YEAR, m.mc.ALL],
 				Q = {
-					[m.lc.HOUR]: () => u.fbt._("Past Hour", null, {
+					[m.mc.HOUR]: () => u.fbt._("Past Hour", null, {
 						hk: "4qCarL"
 					}),
-					[m.lc.DAY]: () => u.fbt._("Past 24 Hours", null, {
+					[m.mc.DAY]: () => u.fbt._("Past 24 Hours", null, {
 						hk: "GI5qN"
 					}),
-					[m.lc.WEEK]: () => u.fbt._("Past Week", null, {
+					[m.mc.WEEK]: () => u.fbt._("Past Week", null, {
 						hk: "3jQHYQ"
 					}),
-					[m.lc.MONTH]: () => u.fbt._("Past Month", null, {
+					[m.mc.MONTH]: () => u.fbt._("Past Month", null, {
 						hk: "11eVJy"
 					}),
-					[m.lc.YEAR]: () => u.fbt._("Past Year", null, {
+					[m.mc.YEAR]: () => u.fbt._("Past Year", null, {
 						hk: "38MavC"
 					}),
-					[m.lc.ALL]: () => u.fbt._("All Time", null, {
+					[m.mc.ALL]: () => u.fbt._("All Time", null, {
 						hk: "2buTB7"
 					})
 				};
@@ -6719,9 +6719,9 @@
 					return e
 				}).apply(this, arguments)
 			}
-			const ee = [m.bc.Sort, m.bc.Time],
+			const ee = [m.cc.Sort, m.cc.Time],
 				te = {
-					[m.bc.Sort]: e => {
+					[m.cc.Sort]: e => {
 						let t = Object(o.e)(b.w);
 						t = t !== m.Tb ? t : void 0;
 						const {
@@ -6741,10 +6741,10 @@
 							label: c ? n[i] : u.fbt._("Sort", null, {
 								hk: "2COMme"
 							}),
-							type: m.bc.Sort
+							type: m.cc.Sort
 						}))
 					},
-					[m.bc.Time]: e => {
+					[m.cc.Time]: e => {
 						const t = Object(o.e)(b.w),
 							{
 								options: s,
@@ -6765,7 +6765,7 @@
 							label: e.queryParams[p.C] ? n[i] : u.fbt._("Time", null, {
 								hk: "3hL0P3"
 							}),
-							type: m.bc.Filter
+							type: m.cc.Filter
 						}))
 					}
 				};
@@ -6875,7 +6875,7 @@
 					}, {
 						pathname: o,
 						search: l
-					} = i.a.parse(s), m = t ? c.dc.ToSubreddit : c.dc.ToGlobal, h = t ? r.a.createElement(r.a.Fragment, null, r.a.createElement("span", null, g._("Show results from", null, {
+					} = i.a.parse(s), m = t ? c.ec.ToSubreddit : c.ec.ToGlobal, h = t ? r.a.createElement(r.a.Fragment, null, r.a.createElement("span", null, g._("Show results from", null, {
 						hk: "3aVDvz"
 					})), r.a.createElement(d.b, {
 						className: O.a.subredditIcon,
@@ -7933,7 +7933,7 @@
 			}));
 			var n = s("./src/lib/constants/index.ts"),
 				r = s("./src/reddit/constants/page.ts");
-			const o = (e, t) => e.includes(n.fc.Comments) ? r.h.Comments : t || e.includes(n.fc.Posts) ? r.h.Posts : e.includes(n.fc.Users) && !e.includes(n.fc.Subreddits) ? r.h.People : r.h.Listings
+			const o = (e, t) => e.includes(n.gc.Comments) ? r.h.Comments : t || e.includes(n.gc.Posts) ? r.h.Posts : e.includes(n.gc.Users) && !e.includes(n.gc.Subreddits) ? r.h.People : r.h.Listings
 		},
 		"./src/reddit/helpers/search/switchSearchScope.ts": function(e, t, s) {
 			"use strict";
@@ -8933,7 +8933,7 @@
 					ue = Object(T.a)(de.type, me),
 					pe = {
 						...de,
-						type: [d.fc.Posts, d.fc.Subreddits, d.fc.Users]
+						type: [d.gc.Posts, d.gc.Subreddits, d.gc.Users]
 					},
 					be = Object(m.b)(ae, ce, pe),
 					he = {
@@ -9239,4 +9239,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SearchResults.d6b5e8359c56a8ad0f24.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SearchResults.f3f0f2c6d0a62ea6c346.js.map

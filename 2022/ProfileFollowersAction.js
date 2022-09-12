@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfileFollowersAction.5a446ec1f3936619b7ce.js
-// Retrieved at 9/6/2022, 12:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfileFollowersAction.a84c709a5c2576c98dfc.js
+// Retrieved at 9/12/2022, 11:30:07 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfileFollowersAction"], {
 		"./src/lib/makeOverviewConversationsItemKey/index.ts": function(e, t, r) {
@@ -157,7 +157,7 @@
 					}));
 					const v = p.name;
 					if ((await Object(c.c)(a(), {
-							subredditNames: [`${s.nc}${p.name}`],
+							subredditNames: [`${s.oc}${p.name}`],
 							subscribe: t
 						})).ok) {
 						r(I({
@@ -979,4 +979,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileFollowersAction.5a446ec1f3936619b7ce.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileFollowersAction.a84c709a5c2576c98dfc.js.map
