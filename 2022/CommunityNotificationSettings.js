@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CommunityNotificationSettings.f5a76bb20351e95624e6.js
-// Retrieved at 9/12/2022, 2:10:03 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CommunityNotificationSettings.40ded55c4767bff8799c.js
+// Retrieved at 9/13/2022, 1:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CommunityNotificationSettings"], {
 		"./node_modules/lodash/times.js": function(e, t, n) {
@@ -464,7 +464,7 @@
 					}),
 					onConfirm: () => {
 						var e;
-						y(Object(S.b)()), n({
+						y(Object(S.c)()), n({
 							subredditId: C,
 							notificationLevel: null !== (e = v.current) && void 0 !== e ? e : f.b.LOW
 						})
@@ -763,24 +763,35 @@
 			"use strict";
 			n.d(t, "a", (function() {
 				return o
-			})), n.d(t, "b", (function() {
+			})), n.d(t, "c", (function() {
 				return r
+			})), n.d(t, "b", (function() {
+				return a
 			}));
 			var i = n("./src/reddit/selectors/telemetry.ts"),
 				s = n("./src/telemetry/models/Event.ts");
-			const o = e => t => ({
-					source: s.f.UserReport,
+			const o = () => e => ({
+					source: s.f.HomeFeed,
 					action: s.d.Click,
 					noun: s.e.MuteSubreddit,
 					targetUser: {
-						id: e
+						id: i.qb(e).id
 					},
-					...i.n(t)
+					...i.n(e)
 				}),
 				r = () => e => ({
 					source: s.f.CommunityNotificationsSettings,
 					action: s.d.Click,
 					noun: s.e.UnmuteSubreddit,
+					targetUser: {
+						id: i.qb(e).id
+					},
+					...i.n(e)
+				}),
+				a = () => e => ({
+					source: s.f.PopularFeed,
+					action: s.d.Click,
+					noun: s.e.MuteSubreddit,
 					targetUser: {
 						id: i.qb(e).id
 					},
@@ -814,4 +825,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommunityNotificationSettings.f5a76bb20351e95624e6.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommunityNotificationSettings.40ded55c4767bff8799c.js.map
