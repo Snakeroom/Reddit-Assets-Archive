@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CommentsPage.b371cc853a479b61cce1.js
-// Retrieved at 9/13/2022, 3:30:03 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CommentsPage.3c8ee359ade06c405833.js
+// Retrieved at 9/13/2022, 4:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CommentsPage", "PostCreation~Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~r~4c415e24", "Governance~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compo~bd4baca2", "CollectionCommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~SearchResults", "Governance~ModListing~Reddit~ReportFlow~Subreddit", "Governance~ModListing~Reddit~Subreddit", "CollectionCommentsPage~ModProgressModule~NewCommunityProgress", "CollectionCommentsPage~SearchResults", "AchievementsActions"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -11169,7 +11169,7 @@
 					}, r.a.createElement(v, null)))
 				},
 				O = n("./src/devPlatform/components/ContextActions/ContextActionsLoader.tsx"),
-				y = n("./src/devPlatform/singleton/constants.ts");
+				y = n("./src/devPlatform/constants.ts");
 			const E = b.a.wrapped(l.a, "StyledDropdown", _.a),
 				j = Object(i.c)({
 					isDropdownOpen: (e, t) => {
@@ -13032,7 +13032,7 @@
 				be = n("./src/reddit/icons/fonts/ModActions/index.tsx"),
 				fe = n("./src/reddit/icons/fonts/Report/index.tsx"),
 				Ce = n("./src/devPlatform/components/ContextActions/ContextActionsLoader.tsx"),
-				he = n("./src/devPlatform/singleton/constants.ts"),
+				he = n("./src/devPlatform/constants.ts"),
 				ge = n("./src/reddit/selectors/experiments/devPlatform.ts"),
 				_e = n("./src/reddit/components/Comments/Comment/Flatlist/index.m.less"),
 				ve = n.n(_e);
@@ -43666,4 +43666,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommentsPage.b371cc853a479b61cce1.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommentsPage.3c8ee359ade06c405833.js.map

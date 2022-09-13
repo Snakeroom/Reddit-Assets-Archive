@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModerationPages.a76d7566e91486457569.js
-// Retrieved at 9/13/2022, 3:30:03 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModerationPages.27121361ee4e826cc023.js
+// Retrieved at 9/13/2022, 4:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModerationPages", "CollectionCommentsPage~CommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~RpanListingUnit~S~5809214e", "CommentsPage~Governance~Reddit~ReportFlow~Subreddit~reddit-components-BlankPost~reddit-components-Cl~5351df81", "PostCreation~Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~r~4c415e24", "Governance~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compo~bd4baca2", "Governance~ModListing~Reddit~ReportFlow~Subreddit", "Governance~ModListing~Reddit~Subreddit", "Governance~Reddit~SubredditForkingCTA"], {
 		"./src/chat/controls/Svg/index.m.less": function(e, t, n) {
@@ -82,7 +82,7 @@
 				}) : null
 			}
 		},
-		"./src/devPlatform/singleton/constants.ts": function(e, t, n) {
+		"./src/devPlatform/constants.ts": function(e, t, n) {
 			"use strict";
 			n.d(t, "b", (function() {
 				return s
@@ -90,16 +90,19 @@
 				return r
 			})), n.d(t, "d", (function() {
 				return o
-			})), n.d(t, "a", (function() {
+			})), n.d(t, "e", (function() {
 				return i
+			})), n.d(t, "a", (function() {
+				return a
 			}));
 			const s = "devvit-gateway-url",
 				r = "devvit-mock-metadata",
-				o = "devvit-debug-logging";
-			var i;
+				o = "devvit-debug-logging",
+				i = "DEV_PLAT__OPEN_USER_INPUT_MODAL";
+			var a;
 			! function(e) {
 				e[e.POST = 0] = "POST", e[e.COMMENT = 1] = "COMMENT", e[e.SUBREDDIT = 2] = "SUBREDDIT", e[e.UNRECOGNIZED = -1] = "UNRECOGNIZED"
-			}(i || (i = {}))
+			}(a || (a = {}))
 		},
 		"./src/higherOrderComponents/asModal/helpers.ts": function(e, t, n) {
 			"use strict";
@@ -42337,7 +42340,7 @@
 			var ve = n("./src/reddit/actions/subreddit/muting.ts"),
 				xe = n("./src/reddit/helpers/trackers/subredditMuting.ts"),
 				Oe = n("./src/devPlatform/components/ContextActions/ContextActionsLoader.tsx"),
-				Ee = n("./src/devPlatform/singleton/constants.ts"),
+				Ee = n("./src/devPlatform/constants.ts"),
 				Ce = n("./src/reddit/components/PostOverflowMenu/index.m.less"),
 				ye = n.n(Ce);
 			const je = b.a.wrapped(D.b, "DropdownRow", ye.a),
@@ -76393,4 +76396,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.a76d7566e91486457569.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.27121361ee4e826cc023.js.map

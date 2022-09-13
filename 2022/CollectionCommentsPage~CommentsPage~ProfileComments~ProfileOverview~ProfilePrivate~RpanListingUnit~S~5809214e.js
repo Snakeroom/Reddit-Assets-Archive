@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~RpanListingUnit~S~5809214e.c90ccaebaa90b60183a8.js
-// Retrieved at 9/13/2022, 3:30:03 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~RpanListingUnit~S~5809214e.b5da7f71b24fe1b6fa07.js
+// Retrieved at 9/13/2022, 4:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~RpanListingUnit~S~5809214e"], {
 		"./src/devPlatform/components/ContextActions/ContextActionsLoader.tsx": function(e, t, o) {
@@ -43,7 +43,7 @@
 				}) : null
 			}
 		},
-		"./src/devPlatform/singleton/constants.ts": function(e, t, o) {
+		"./src/devPlatform/constants.ts": function(e, t, o) {
 			"use strict";
 			o.d(t, "b", (function() {
 				return s
@@ -51,16 +51,19 @@
 				return n
 			})), o.d(t, "d", (function() {
 				return r
-			})), o.d(t, "a", (function() {
+			})), o.d(t, "e", (function() {
 				return i
+			})), o.d(t, "a", (function() {
+				return a
 			}));
 			const s = "devvit-gateway-url",
 				n = "devvit-mock-metadata",
-				r = "devvit-debug-logging";
-			var i;
+				r = "devvit-debug-logging",
+				i = "DEV_PLAT__OPEN_USER_INPUT_MODAL";
+			var a;
 			! function(e) {
 				e[e.POST = 0] = "POST", e[e.COMMENT = 1] = "COMMENT", e[e.SUBREDDIT = 2] = "SUBREDDIT", e[e.UNRECOGNIZED = -1] = "UNRECOGNIZED"
-			}(i || (i = {}))
+			}(a || (a = {}))
 		},
 		"./src/reddit/actions/eventPosts/index.ts": function(e, t, o) {
 			"use strict";
@@ -3238,7 +3241,7 @@
 			var Oe = o("./src/reddit/actions/subreddit/muting.ts"),
 				ve = o("./src/reddit/helpers/trackers/subredditMuting.ts"),
 				ge = o("./src/devPlatform/components/ContextActions/ContextActionsLoader.tsx"),
-				_e = o("./src/devPlatform/singleton/constants.ts"),
+				_e = o("./src/devPlatform/constants.ts"),
 				ke = o("./src/reddit/components/PostOverflowMenu/index.m.less"),
 				Ee = o.n(ke);
 			const je = b.a.wrapped(L.b, "DropdownRow", Ee.a),
@@ -4995,4 +4998,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~RpanListingUnit~S~5809214e.c90ccaebaa90b60183a8.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~RpanListingUnit~S~5809214e.b5da7f71b24fe1b6fa07.js.map

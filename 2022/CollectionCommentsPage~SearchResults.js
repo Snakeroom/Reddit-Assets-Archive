@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~SearchResults.1d6d47cd2e81afd3025f.js
-// Retrieved at 9/13/2022, 3:30:03 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~SearchResults.576acd1bae0738f0d847.js
+// Retrieved at 9/13/2022, 4:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~SearchResults"], {
 		"./node_modules/lodash/_baseDelay.js": function(e, t) {
@@ -828,7 +828,7 @@
 				be = s("./src/reddit/icons/fonts/ModActions/index.tsx"),
 				he = s("./src/reddit/icons/fonts/Report/index.tsx"),
 				ge = s("./src/devPlatform/components/ContextActions/ContextActionsLoader.tsx"),
-				fe = s("./src/devPlatform/singleton/constants.ts"),
+				fe = s("./src/devPlatform/constants.ts"),
 				Ce = s("./src/reddit/selectors/experiments/devPlatform.ts"),
 				xe = s("./src/reddit/components/Comments/Comment/Flatlist/index.m.less"),
 				Oe = s.n(xe);
@@ -2992,4 +2992,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~SearchResults.1d6d47cd2e81afd3025f.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~SearchResults.576acd1bae0738f0d847.js.map
