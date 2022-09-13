@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/AuthorHovercard.31158d69a808d520b105.js
-// Retrieved at 9/12/2022, 2:10:03 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/AuthorHovercard.017a02d4148480d7cb30.js
+// Retrieved at 9/13/2022, 3:30:03 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["AuthorHovercard"], {
 		"./src/lib/constants/colors.ts": function(e, t, n) {
@@ -304,7 +304,7 @@
 					result: z
 				});
 			const J = {};
-			var V = function() {
+			var q = function() {
 					let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : J,
 						t = arguments.length > 1 ? arguments[1] : void 0;
 					switch (t.type) {
@@ -343,18 +343,18 @@
 							return e
 					}
 				},
-				q = Object(y.c)({
+				V = Object(y.c)({
 					api: U,
 					fetchedTokens: A,
 					inContext: T,
 					loadMore: D,
 					models: R,
 					search: Z,
-					userOrder: V
+					userOrder: q
 				});
 			Object(E.a)({
 				features: {
-					banned: q
+					banned: V
 				}
 			});
 			const Q = Object(s.a)(j.s),
@@ -482,10 +482,10 @@
 				}, ce = (e, t) => async (n, a) => {
 					const r = a();
 					await Promise.all([(async () => {
-						if (!Object(I.b)(u.a.BAN_USER)(r) && !Object(N.S)(r, {
+						if (!Object(I.b)(u.a.BAN_USER)(r) && !Object(N.T)(r, {
 								subredditId: e
 							})) {
-							const t = Object(N.V)(r, {
+							const t = Object(N.W)(r, {
 								subredditId: e
 							});
 							await n(Object(d.o)(t.name))
@@ -1264,8 +1264,8 @@
 				z = n("./src/reddit/components/ProfileIdCard/UserProfileOverview/UserSnoovatar/index.tsx"),
 				Z = n("./src/reddit/actions/inContextModeration.ts"),
 				J = n("./src/reddit/actions/modal.ts"),
-				V = n("./src/reddit/actions/subredditModeration/ban.ts"),
-				q = n("./src/reddit/constants/modals.ts"),
+				q = n("./src/reddit/actions/subredditModeration/ban.ts"),
+				V = n("./src/reddit/constants/modals.ts"),
 				Q = n("./src/reddit/components/Hovercards/helpers.ts"),
 				X = n("./src/reddit/icons/fonts/index.tsx"),
 				Y = n("./src/reddit/models/ModeratingSubreddits/index.ts"),
@@ -1342,8 +1342,8 @@
 						contextId: r
 					} = t;
 					return {
-						onUnbanUser: t => e(Object(V.e)(a, t)),
-						requestUserBanInfo: () => e(Object(V.c)(a, {
+						onUnbanUser: t => e(Object(q.e)(a, t)),
+						requestUserBanInfo: () => e(Object(q.c)(a, {
 							username: n
 						})),
 						toggleBanModal: () => {
@@ -1351,14 +1351,14 @@
 								username: n,
 								subredditId: a,
 								contextId: r
-							})), e(Object(V.a)(a, n))
+							})), e(Object(q.a)(a, n))
 						},
 						toggleMuteModal: () => {
 							e(Object(Z.d)({
 								username: n,
 								subredditId: a,
 								contextId: r
-							})), e(Object(J.i)(q.a.MUTE_USER))
+							})), e(Object(J.i)(V.a.MUTE_USER))
 						}
 					}
 				})(re),
@@ -1619,7 +1619,7 @@
 							subredditId: n
 						}) : void 0
 					},
-					isCurrentUserBanned: (e, t) => !!Object(x.o)(t) && Object(x.gb)(e, t),
+					isCurrentUserBanned: (e, t) => !!Object(x.o)(t) && Object(x.hb)(e, t),
 					userProfileStyles: (e, t) => Object(v.m)(e, Object(h.n)(e, t.userName)),
 					acceptChats: (e, t) => {
 						const n = Object(h.i)(e, {
@@ -1650,7 +1650,7 @@
 						let {
 							userName: n
 						} = t;
-						return Object(x.hb)(e, {
+						return Object(x.ib)(e, {
 							identifier: {
 								name: n,
 								type: "profile"
@@ -2146,8 +2146,8 @@
 				z = n("./src/reddit/components/CCM/ModUserNoteWithIcon/index.m.less"),
 				Z = n.n(z),
 				J = n("./src/reddit/components/CCM/ModUserNoteWithIcon/Icon/index.m.less"),
-				V = n.n(J);
-			const q = {
+				q = n.n(J);
+			const V = {
 					[w.o.AddRemovalReason]: "remove",
 					[w.o.AcceptModeratorInvite]: "mod",
 					[w.o.AddContributor]: "user",
@@ -2185,11 +2185,11 @@
 						className: t,
 						actionType: n,
 						label: a
-					} = e, o = n ? q[n] || "mod" : a && Q[a] || "user_note";
+					} = e, o = n ? V[n] || "mod" : a && Q[a] || "user_note";
 					if (!o) return null;
 					const s = Object(N.b)(o);
 					return r.a.createElement(s, {
-						className: Object(d.a)(t, V.a.icon)
+						className: Object(d.a)(t, q.a.icon)
 					})
 				},
 				Y = n("./src/reddit/selectors/activeModalId.ts"),
@@ -2608,7 +2608,7 @@
 						l = Object(o.e)(e => Object(j.zb)(e, {
 							userId: i
 						})),
-						u = Object(o.e)(e => Object(M.V)(e, {
+						u = Object(o.e)(e => Object(M.W)(e, {
 							subredditId: s
 						})),
 						m = t[c],
@@ -2842,10 +2842,10 @@
 				ze = n("./src/reddit/helpers/trackers/authorHovercard.ts"),
 				Ze = n("./src/reddit/helpers/trackers/marketplace/claims.ts"),
 				Je = n("./src/reddit/components/Admin/index.tsx"),
-				Ve = n("./src/reddit/components/AnonymousSnoovatar/index.m.less"),
-				qe = n.n(Ve);
+				qe = n("./src/reddit/components/AnonymousSnoovatar/index.m.less"),
+				Ve = n.n(qe);
 			var Qe = e => r.a.createElement("img", {
-					className: Object(d.a)(e.className, qe.a.anonymousSnoovatar),
+					className: Object(d.a)(e.className, Ve.a.anonymousSnoovatar),
 					src: `${Re.a.assetPath}/img/anonymous_snoo.png`
 				}),
 				Xe = n("./src/reddit/components/ChatButton/index.tsx"),
@@ -3729,8 +3729,8 @@
 				if (!n || z && L > z) return null;
 				const Z = !!(null == n ? void 0 : n.primaryCta),
 					J = !!(null == n ? void 0 : n.secondaryCta),
-					V = !!(null == n ? void 0 : n.titleImage),
-					q = !!(null == n ? void 0 : n.thumbnailImageUrl),
+					q = !!(null == n ? void 0 : n.titleImage),
+					V = !!(null == n ? void 0 : n.thumbnailImageUrl),
 					Q = () => {
 						var e;
 						(null === (e = n.persistence) || void 0 === e ? void 0 : e.isDismissible) && (H(), M(Object(c.a)(n.notificationName)))
@@ -3757,7 +3757,7 @@
 					className: _.a.Content
 				}, r.a.createElement("div", {
 					className: _.a.Heading
-				}, V ? r.a.createElement("img", {
+				}, q ? r.a.createElement("img", {
 					className: _.a.TitleIcon,
 					src: n.titleImage
 				}) : r.a.createElement("div", {
@@ -3772,12 +3772,12 @@
 					style: {
 						color: null === (S = n.bodyText) || void 0 === S ? void 0 : S.colorText
 					}
-				}, null === (P = n.bodyText) || void 0 === P ? void 0 : P.text), q && r.a.createElement("img", {
+				}, null === (P = n.bodyText) || void 0 === P ? void 0 : P.text), V && r.a.createElement("img", {
 					src: n.thumbnailImageUrl,
 					className: _.a.Thumbnail
 				})), Z || J && r.a.createElement("div", {
 					className: Object(s.a)(_.a.ActionButtons, {
-						[_.a.noMargin]: q
+						[_.a.noMargin]: V
 					})
 				}, Z && r.a.createElement(d.t, {
 					text: null === (U = n.primaryCta) || void 0 === U ? void 0 : U.text.text,
@@ -4151,10 +4151,10 @@
 				z = n("./src/reddit/controls/InternalLink/index.tsx"),
 				Z = n("./src/reddit/hooks/useLocalStorage.ts");
 			var J = n("./src/reddit/hooks/useDesktopNotificationsPromptSeen.ts"),
-				V = n("./src/reddit/helpers/localStorage/index.ts");
+				q = n("./src/reddit/helpers/localStorage/index.ts");
 
-			function q() {
-				return (q = Object.assign || function(e) {
+			function V() {
+				return (V = Object.assign || function(e) {
 					for (var t = 1; t < arguments.length; t++) {
 						var n = arguments[t];
 						for (var a in n) Object.prototype.hasOwnProperty.call(n, a) && (e[a] = n[a])
@@ -4245,9 +4245,9 @@
 						} = e,
 						[_, g] = Object(J.a)(x),
 						[O, I] = function(e) {
-							const [t, n] = Object(r.useState)(() => Object(V.u)(e));
+							const [t, n] = Object(r.useState)(() => Object(q.u)(e));
 							return [t, Object(r.useCallback)(() => {
-								n(!0), Object(V.Bb)(e)
+								n(!0), Object(q.Bb)(e)
 							}, [e])]
 						}(x),
 						[C, N] = function(e) {
@@ -4285,7 +4285,7 @@
 						sendInboxClickSettings: () => t(Object(h.n)(h.c.MiniInbox)),
 						onBarClick: u,
 						isLoggedIn: p
-					}), o.a.createElement(G, q({}, e, {
+					}), o.a.createElement(G, V({}, e, {
 						isPending: c,
 						onItemClick: u,
 						setDesktopNotificationsPromptSeen: g,
@@ -6567,4 +6567,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/AuthorHovercard.31158d69a808d520b105.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/AuthorHovercard.017a02d4148480d7cb30.js.map

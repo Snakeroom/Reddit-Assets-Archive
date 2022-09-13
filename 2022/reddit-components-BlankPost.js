@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-BlankPost.17582ac6eaefb0dbb7a8.js
-// Retrieved at 9/12/2022, 3:50:03 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-BlankPost.104234b9f9e3c9aa102b.js
+// Retrieved at 9/13/2022, 3:30:03 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-BlankPost"], {
 		"./node_modules/@reddit/i18n-tools/runtime/helpers/locale/index.js": function(e, t, s) {
@@ -1836,7 +1836,7 @@
 					let i = P.f;
 					const n = s();
 					if (e.subredditId) {
-						const t = Object(S.V)(n, {
+						const t = Object(S.W)(n, {
 								subredditId: e.subredditId
 							}),
 							s = Object(C.q)(n, {
@@ -2295,7 +2295,7 @@
 					{
 						currentUser: s
 					} = Object(d.a)(),
-					r = Object(i.e)(e => t ? Object(u.N)(e, {
+					r = Object(i.e)(e => t ? Object(u.O)(e, {
 						identifier: t.belongsTo
 					}) : null),
 					o = (null == t ? void 0 : t.belongsTo.type) === n.a.SUBREDDIT ? r : null,
@@ -2874,4 +2874,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-BlankPost.17582ac6eaefb0dbb7a8.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-BlankPost.104234b9f9e3c9aa102b.js.map

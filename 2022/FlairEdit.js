@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/FlairEdit.5ba7fd0fde05c6da5729.js
-// Retrieved at 9/12/2022, 2:10:03 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/FlairEdit.fdaae5b6db3ad74ff73d.js
+// Retrieved at 9/13/2022, 3:30:03 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["FlairEdit"], {
 		"./node_modules/draft-js/dist/Draft.css": function(e, t, o) {},
@@ -104,7 +104,7 @@
 			})), o.d(t, "d", (function() {
 				return H
 			})), o.d(t, "m", (function() {
-				return z
+				return Y
 			}));
 			var s = o("./node_modules/fbt/lib/FbtPublic.js"),
 				n = o("./node_modules/lodash/forEach.js"),
@@ -177,7 +177,7 @@
 					} = e;
 					return async (e, s, n) => {
 						const i = s(),
-							p = Object(y.V)(i, {
+							p = Object(y.W)(i, {
 								subredditId: o
 							}).name;
 						e(Object(u.k)(t));
@@ -217,7 +217,7 @@
 						subredditId: l,
 						emojiName: p,
 						settings: m
-					} = e, f = Object(j.a)(i.url), g = s(), E = Object(y.V)(g, {
+					} = e, f = Object(j.a)(i.url), g = s(), E = Object(y.W)(g, {
 						subredditId: l
 					}).name, x = await (async (e, t, o, s, n) => Object(a.a)(Object(c.a)(e, [d.a]), {
 						endpoint: `${e.apiUrl}/api/v1/${t}/emoji.json`,
@@ -278,7 +278,7 @@
 					} = s;
 					const i = o();
 					if (Object(O.a)(i, e)) return;
-					const r = Object(y.V)(i, {
+					const r = Object(y.W)(i, {
 						subredditId: e
 					}).name;
 					t(P(e));
@@ -303,7 +303,7 @@
 						apiContext: l
 					} = i;
 					const p = n(),
-						m = Object(y.V)(p, {
+						m = Object(y.W)(p, {
 							subredditId: t
 						}).name,
 						u = await (async (e, t, o) => Object(a.a)(Object(c.a)(e, [d.a]), {
@@ -332,7 +332,7 @@
 						apiContext: l
 					} = i;
 					const p = n(),
-						m = Object(y.V)(p, {
+						m = Object(y.W)(p, {
 							subredditId: e
 						}).name;
 					if ((await (async (e, t, o) => Object(a.a)(Object(c.a)(e, [d.a]), {
@@ -353,12 +353,12 @@
 							hk: "22u7ha"
 						})
 					}))
-				}, H = "EMOJI_PERMISSIONS_UPDATED", V = Object(m.a)(H), z = (e, t, o, n) => async (i, l, p) => {
+				}, H = "EMOJI_PERMISSIONS_UPDATED", z = Object(m.a)(H), Y = (e, t, o, n) => async (i, l, p) => {
 					let {
 						apiContext: m
 					} = p;
 					const u = l(),
-						f = Object(y.V)(u, {
+						f = Object(y.W)(u, {
 							subredditId: n
 						}).name;
 					(await (async (e, t, o, s) => Object(a.a)(Object(c.a)(e, [d.a]), {
@@ -370,7 +370,7 @@
 							user_flair_allowed: s.userFlairAllowed,
 							mod_flair_only: s.modFlairOnly
 						}
-					}))(m(), e, f, o)).ok ? (i(V({
+					}))(m(), e, f, o)).ok ? (i(z({
 						emojiName: e,
 						isSnoomoji: t,
 						settings: o,
@@ -629,12 +629,12 @@
 			var J = Object(c.b)(K, W)(G),
 				H = o("./src/reddit/controls/IconTooltip/index.tsx");
 			o("./node_modules/draft-js/dist/Draft.css");
-			const V = /\r?\n|\r/g;
-			var z, Y = e => e.replace(V, ""),
+			const z = /\r?\n|\r/g;
+			var Y, V = e => e.replace(z, ""),
 				q = o("./src/reddit/components/RichTextEditor/Tooltip/index.tsx");
 			! function(e) {
 				e.AddImage = "add_image", e.Add = "add", e.Delete = "delete", e.Edit = "edit", e.EnableOff = "enable_off", e.EnableOn = "enable_on"
-			}(z || (z = {}));
+			}(Y || (Y = {}));
 			const Q = ":",
 				X = /:[A-Za-z0-9_-]+/g;
 			var $ = o("./src/reddit/controls/ImageDisplay/index.tsx"),
@@ -922,7 +922,7 @@
 						} = this.props, i = this.editorRef.getClipboard(), r = o.getSelection(), a = e.length - (r.getEndOffset() - r.getStartOffset()), c = o.getCurrentContent().getPlainText().length + a;
 						if (n && c > n) return Pe;
 						if (i && i.first().getText() === e) return Ne;
-						const l = Y(e);
+						const l = V(e);
 						let d = o.getCurrentContent();
 						d = s.Modifier.replaceText(d, r, l);
 						const p = s.EditorState.push(o, d, "insert-characters");
@@ -1014,11 +1014,11 @@
 					targetPosition: ["right", "top"],
 					tooltipPosition: ["right", "bottom"]
 				},
-				Ve = {
+				ze = {
 					targetPosition: ["right", "bottom"],
 					tooltipPosition: ["right", "top"]
 				},
-				ze = e => {
+				Ye = e => {
 					const t = [];
 					return e.type === Be.f.Richtext ? e.richtext.forEach(e => {
 						e.e === Be.c.Emoji ? t.push({
@@ -1034,7 +1034,7 @@
 						text: e.text
 					}), t
 				},
-				Ye = e => {
+				Ve = e => {
 					return function(e) {
 						let t = arguments.length > 1 && void 0 !== arguments[1] && arguments[1];
 						if (!e) return s.EditorState.createEmpty(_e());
@@ -1075,7 +1075,7 @@
 							currentContent: n,
 							selection: l
 						}), t && (o = s.EditorState.forceSelection(o, l)), o
-					}(ze(e))
+					}(Ye(e))
 				},
 				qe = (e, t, o, s, n) => {
 					const i = (e => {
@@ -1129,7 +1129,7 @@
 						cssClass: n
 					}
 				},
-				Qe = (e, t) => i()(ze(e), ze(t)),
+				Qe = (e, t) => i()(Ye(e), Ye(t)),
 				Xe = Object(d.a)(u.a.wrapped(b.a, "Component", We.a)),
 				$e = e => {
 					e.stopPropagation(), e.nativeEvent.stopImmediatePropagation()
@@ -1189,7 +1189,7 @@
 					}, this.onBlur = () => {
 						this.props.onBlur && this.props.onBlur()
 					}, this.state = {
-						editorState: Ye(e.flair)
+						editorState: Ve(e.flair)
 					}
 				}
 				focus() {
@@ -1205,7 +1205,7 @@
 					e.subredditId !== this.props.subredditId && this.props.onGetSubredditEmojis(this.props.subredditId);
 					const t = e.flair,
 						o = qe(this.state.editorState, t.backgroundColor, t.templateId, t.textColor, t.cssClass);
-					Qe(o, t) || this.setEditorState(Ye(t))
+					Qe(o, t) || this.setEditorState(Ve(t))
 				}
 				renderCompactHelperText(e) {
 					const t = this.props.flairTemplate || E.a;
@@ -1279,7 +1279,7 @@
 						isOverlay: !0,
 						isOpen: c,
 						tooltipId: o
-					}, this.state.shouldPositionPickerOnTop ? He : Ve), a.a.createElement("div", {
+					}, this.state.shouldPositionPickerOnTop ? He : ze), a.a.createElement("div", {
 						onClick: $e
 					}, a.a.createElement(J, {
 						flairTemplateType: i,
@@ -1870,4 +1870,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/FlairEdit.5ba7fd0fde05c6da5729.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/FlairEdit.fdaae5b6db3ad74ff73d.js.map

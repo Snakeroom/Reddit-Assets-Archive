@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/RelatedSubredditsCarousel.a6c7cb872bce9466bbee.js
-// Retrieved at 9/12/2022, 2:10:03 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/RelatedSubredditsCarousel.5eb705f35e0dee0da0cd.js
+// Retrieved at 9/13/2022, 3:30:03 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["RelatedSubredditsCarousel"], {
 		"./src/reddit/actions/subreddit/relatedSubreddits.ts": function(e, t, s) {
@@ -97,10 +97,10 @@
 					u = Object(d.e)(e => ((e, t) => {
 						const {
 							name: s
-						} = Object(o.V)(e, {
+						} = Object(o.W)(e, {
 							subredditId: t
 						}) || {};
-						return Object(o.hb)(e, {
+						return Object(o.ib)(e, {
 							identifier: {
 								name: s,
 								type: "subreddit"
@@ -229,7 +229,7 @@
 						source: "similar_communities",
 						action: "view",
 						noun: "module",
-						subreddit: e ? Object(O.V)(t, {
+						subreddit: e ? Object(O.W)(t, {
 							subredditId: e
 						}) : void 0
 					}))(d))
@@ -304,7 +304,7 @@
 					actionInfo: {
 						reason: `${s}`
 					},
-					subreddit: Object(O.V)(r, {
+					subreddit: Object(O.W)(r, {
 						subredditId: t
 					})
 				}))(e ? "unsubsribe" : "subscribe", t, s), [t]);
@@ -385,4 +385,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RelatedSubredditsCarousel.a6c7cb872bce9466bbee.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RelatedSubredditsCarousel.5eb705f35e0dee0da0cd.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Multireddit.dfb37746cec696a78d9d.js
-// Retrieved at 9/12/2022, 2:10:03 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Multireddit.479df9ee9549f083e6b6.js
+// Retrieved at 9/13/2022, 3:30:03 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Multireddit"], {
 		"./src/higherOrderComponents/withAdClickLocation/Locations.ts": function(e, t, n) {
@@ -430,7 +430,7 @@
 						apiContext: o
 					} = r;
 					const s = n(),
-						i = Object(D.N)(s, {
+						i = Object(D.O)(s, {
 							identifier: e
 						});
 					if (!i) throw new Error(`actions.subscription -- No subreddit or profile found with id ${e.id}`);
@@ -446,7 +446,7 @@
 							type: e.type,
 							name: i.name
 						},
-						x = () => Object(D.hb)(n(), {
+						x = () => Object(D.ib)(n(), {
 							identifier: h
 						});
 					(x() || (await t(U([h], !0)), x())) && (t(w({
@@ -1764,4 +1764,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Multireddit.dfb37746cec696a78d9d.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Multireddit.479df9ee9549f083e6b6.js.map

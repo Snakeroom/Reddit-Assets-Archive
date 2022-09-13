@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CommunityNotificationSettings.40ded55c4767bff8799c.js
-// Retrieved at 9/13/2022, 1:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CommunityNotificationSettings.87ff4a45d7723b3b2ec7.js
+// Retrieved at 9/13/2022, 3:30:03 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CommunityNotificationSettings"], {
 		"./node_modules/lodash/times.js": function(e, t, n) {
@@ -21,9 +21,13 @@
 		"./src/reddit/actions/subreddit/muting.ts": function(e, t, n) {
 			"use strict";
 			n.d(t, "a", (function() {
-				return p
+				return S
 			})), n.d(t, "b", (function() {
-				return g
+				return k
+			})), n.d(t, "c", (function() {
+				return v
+			})), n.d(t, "d", (function() {
+				return y
 			}));
 			var i = n("./node_modules/fbt/lib/FbtPublic.js"),
 				s = n("./src/lib/makeActionCreator/index.ts"),
@@ -32,86 +36,142 @@
 				a = n("./src/redditGQL/operations/DeleteSubredditMuteSettings.json"),
 				d = n("./src/redditGQL/operations/UpdateSubredditMuteSettings.json"),
 				c = n("./src/redditGQL/operations/UpdateSubredditMuteAndNotificationLevelSettings.json");
-			var l = n("./src/reddit/models/Toast/index.ts"),
-				u = n("./src/reddit/actions/subreddit/constants.ts"),
-				m = n("./src/reddit/actions/subreddit/notifications.ts");
-			const b = Object(s.a)(u.C),
-				f = (Object(s.a)(u.f), Object(s.a)(u.B), e => Object(o.f)({
+			const l = (e, t) => Object(r.a)(e, {
+					...d,
+					variables: {
+						input: {
+							subredditId: t
+						}
+					}
+				}),
+				u = (e, t) => Object(r.a)(e, {
+					...a,
+					variables: {
+						input: {
+							subredditId: t
+						}
+					}
+				});
+			var m = n("./src/reddit/models/Toast/index.ts"),
+				b = n("./src/reddit/actions/subreddit/constants.ts"),
+				f = n("./src/reddit/actions/subreddit/notifications.ts");
+			const p = e => Object(o.f)({
 					id: e,
-					kind: l.b.Error,
+					kind: m.b.Error,
 					text: i.fbt._("An error has occured. Please try again later", null, {
 						hk: "2FpsLy"
 					})
-				})),
-				p = e => {
+				}),
+				h = (e, t) => Object(o.f)({
+					kind: m.b.SuccessCommunityGreen,
+					text: i.fbt._("Muted r/{subreddit name}", [i.fbt._param("subreddit name", e)], {
+						hk: "Mg9mO"
+					}),
+					buttonText: i.fbt._("Undo", null, {
+						hk: "1lx02Y"
+					}),
+					buttonAction: t
+				}),
+				g = (e, t) => Object(o.f)({
+					kind: m.b.SuccessCommunityGreen,
+					text: i.fbt._("Unmuted r/{subreddit name}", [i.fbt._param("subreddit name", e)], {
+						hk: "Fhnht"
+					}),
+					buttonText: i.fbt._("Undo", null, {
+						hk: "2siioQ"
+					}),
+					buttonAction: t
+				}),
+				O = Object(s.a)(b.C),
+				S = (Object(s.a)(b.f), Object(s.a)(b.B), e => {
 					let {
 						subredditId: t,
 						subredditName: n,
-						successCallback: s
+						successCallback: i
 					} = e;
-					return async (e, a, c) => {
+					return async (e, s, o) => {
 						let {
-							gqlContext: u
-						} = c;
-						const m = await ((e, t) => Object(r.a)(e, {
-								...d,
-								variables: {
-									input: {
-										subredditId: t
-									}
-								}
-							}))(u(), t),
-							b = `error-muting-${t}`;
-						m.ok ? (s && s(), e(Object(o.f)({
-							kind: l.b.SuccessCommunityGreen,
-							text: i.fbt._("Muted r/{subreddit name}", [i.fbt._param("subreddit name", n)], {
-								hk: "Mg9mO"
-							}),
-							buttonText: i.fbt._("Undo", null, {
-								hk: "1lx02Y"
-							}),
-							buttonAction: h({
-								subredditId: t,
-								subredditName: n
-							})
-						}))) : e(f(b))
+							gqlContext: r
+						} = o;
+						if ((await l(r(), t)).ok) i && i(), h(n, x({
+							subredditId: t,
+							subredditName: n
+						}));
+						else {
+							e(p(`error-muting-${t}`))
+						}
 					}
-				},
-				h = e => {
+				}),
+				x = e => {
 					let {
 						subredditId: t,
 						subredditName: n,
-						successCallback: s
+						successCallback: i
 					} = e;
-					return async (e, d, c) => {
+					return async (e, s, o) => {
 						let {
-							gqlContext: u
-						} = c;
-						const m = await ((e, t) => Object(r.a)(e, {
-								...a,
-								variables: {
-									input: {
-										subredditId: t
-									}
-								}
-							}))(u(), t),
-							b = `error-unmuting-${t}`;
-						m.ok ? (s && s(), e(Object(o.f)({
-							kind: l.b.SuccessCommunityGreen,
-							text: i.fbt._("Unmuted r/{subreddit name}", [i.fbt._param("subreddit name", n)], {
-								hk: "Fhnht"
-							}),
-							buttonText: i.fbt._("Undo", null, {
-								hk: "2siioQ"
-							}),
-							buttonAction: p({
-								subredditId: t,
-								subredditName: n
-							})
-						}))) : e(f(b))
+							gqlContext: r
+						} = o;
+						if ((await u(r(), t)).ok) i && i(), g(n, S({
+							subredditId: t,
+							subredditName: n
+						}));
+						else {
+							e(p(`error-muting-${t}`))
+						}
 					}
 				},
-				g = e => {
+				k = e => {
+					let {
+						subredditId: t,
+						subredditName: n,
+						successCallback: i
+					} = e;
+					return async (e, s, o) => {
+						let {
+							gqlContext: r
+						} = o;
+						if ((await l(r(), t)).ok) i && i(), e(Object(f.c)({
+							subredditAboutInfo: {
+								[t]: {
+									isMuted: !0
+								}
+							}
+						})), e(h(n, v({
+							subredditId: t,
+							subredditName: n
+						})));
+						else {
+							e(p(`error-muting-${t}`))
+						}
+					}
+				},
+				v = e => {
+					let {
+						subredditId: t,
+						subredditName: n,
+						successCallback: i
+					} = e;
+					return async (e, s, o) => {
+						let {
+							gqlContext: r
+						} = o;
+						if ((await u(r(), t)).ok) i && i(), e(Object(f.c)({
+							subredditAboutInfo: {
+								[t]: {
+									isMuted: !1
+								}
+							}
+						})), e(g(n, k({
+							subredditId: t,
+							subredditName: n
+						})));
+						else {
+							e(p(`error-muting-${t}`))
+						}
+					}
+				},
+				y = e => {
 					let {
 						subredditId: t,
 						notificationLevel: n
@@ -120,7 +180,7 @@
 						let {
 							gqlContext: d
 						} = a;
-						const u = Object(m.a)(n);
+						const l = Object(f.a)(n);
 						(await ((e, t, n) => Object(r.a)(e, {
 							...c,
 							variables: {
@@ -129,14 +189,14 @@
 									subredditId: t
 								}
 							}
-						}))(d(), t, u)).ok ? (e(b({
+						}))(d(), t, l)).ok ? (e(O({
 							subredditId: t,
 							notificationLevel: n
 						})), e(Object(o.f)({
-							kind: l.b.SuccessCommunityGreen,
-							text: Object(m.b)(n)
+							kind: m.b.SuccessCommunityGreen,
+							text: Object(f.b)(n)
 						}))) : e(Object(o.f)({
-							kind: l.b.Error,
+							kind: m.b.Error,
 							text: i.fbt._("Failed to change the frequency of notifications from this community, please try again.", null, {
 								hk: "4avFFV"
 							})
@@ -216,16 +276,16 @@
 					var S, x, k;
 					e(b());
 					const v = p(n),
-						_ = await Object(c.b)(O(), t, v);
-					if ((null === (x = null === (S = _.error) || void 0 === S ? void 0 : S.fields) || void 0 === x ? void 0 : x.length) || function(e) {
+						y = await Object(c.b)(O(), t, v);
+					if ((null === (x = null === (S = y.error) || void 0 === S ? void 0 : S.fields) || void 0 === x ? void 0 : x.length) || function(e) {
 							return Boolean(e && e.data && e.data.updateSubredditNotificationSettings)
-						}(_.body) && (null === (k = _.body.data.updateSubredditNotificationSettings.errors) || void 0 === k ? void 0 : k.length)) return e(f()), e(Object(d.f)({
+						}(y.body) && (null === (k = y.body.data.updateSubredditNotificationSettings.errors) || void 0 === k ? void 0 : k.length)) return e(f()), e(Object(d.f)({
 						kind: u.b.Error,
 						text: i.fbt._("Failed to change the frequency of notifications from this community, please try again.", null, {
 							hk: "4avFFV"
 						})
 					}));
-					_.ok && (e(Object(o.c)({
+					y.ok && (e(Object(o.c)({
 						subredditId: t,
 						notificationLevel: n
 					})), e(m({
@@ -309,8 +369,8 @@
 				x = n("./src/reddit/hooks/useExperimentVariant.ts"),
 				k = n("./src/reddit/hooks/useTracking.ts"),
 				v = n("./src/reddit/components/Settings/Notifications/CommunityNotificationSettings/index.m.less"),
-				_ = n.n(v);
-			const y = e => {
+				y = n.n(v);
+			const C = e => {
 				let {
 					subreddit: t,
 					onUnmute: n,
@@ -320,19 +380,19 @@
 				const c = Object(x.a)(h.U),
 					[l, u] = Object(r.useState)(!1),
 					v = Object(r.useRef)(),
-					y = Object(k.a)(),
+					C = Object(k.a)(),
 					{
-						id: C,
-						notificationLevel: E,
-						name: N,
+						id: _,
+						notificationLevel: N,
+						name: E,
 						isNsfw: w,
 						isMuted: j
 					} = t,
 					I = j && c === h.Id,
-					L = I ? f.b.OFF : E,
+					L = I ? f.b.OFF : N,
 					F = t.styles.icon || (null === (o = t.styles.legacyIcon) || void 0 === o ? void 0 : o.url),
-					T = null !== (d = t.styles.primaryColor) && void 0 !== d ? d : void 0,
-					M = (e => {
+					M = null !== (d = t.styles.primaryColor) && void 0 !== d ? d : void 0,
+					T = (e => {
 						switch (e) {
 							case f.b.OFF:
 								return s.fbt._("Off", null, {
@@ -391,7 +451,7 @@
 						value: f.b.FREQUENT,
 						icon: a.a.createElement(b.a, {
 							name: "notification_frequent",
-							className: _.a.dropdownItemIcon
+							className: y.a.dropdownItemIcon
 						})
 					}, {
 						displayText: s.fbt._("Low", null, {
@@ -401,7 +461,7 @@
 						value: f.b.LOW,
 						icon: a.a.createElement(b.a, {
 							name: "notification",
-							className: _.a.dropdownItemIcon
+							className: y.a.dropdownItemIcon
 						})
 					}, {
 						displayText: s.fbt._("Off", null, {
@@ -411,31 +471,31 @@
 						value: f.b.OFF,
 						icon: a.a.createElement(b.a, {
 							name: "notification_off",
-							className: _.a.dropdownItemIcon
+							className: y.a.dropdownItemIcon
 						})
 					}];
 				return a.a.createElement("div", {
-					className: _.a.container,
-					key: C
+					className: y.a.container,
+					key: _
 				}, a.a.createElement("div", {
-					className: _.a.subreddit
+					className: y.a.subreddit
 				}, a.a.createElement(p.b, {
 					iconUrl: F,
 					altText: s.fbt._("Subreddit icon", null, {
 						hk: "gEWhf"
 					}),
 					shouldHideNsfwIcon: w,
-					primaryColor: T,
-					className: _.a.subredditIcon
+					primaryColor: M,
+					className: y.a.subredditIcon
 				}), a.a.createElement("div", {
-					className: _.a.subredditInfo
+					className: y.a.subredditInfo
 				}, a.a.createElement("h4", {
-					className: _.a.subredditInfoName
-				}, "r/", N), a.a.createElement("span", {
-					className: _.a.subredditInfoNotification
+					className: y.a.subredditInfoName
+				}, "r/", E), a.a.createElement("span", {
+					className: y.a.subredditInfoNotification
 				}, I ? s.fbt._("Community is muted", null, {
 					hk: "4ntSSB"
-				}) : s.fbt._("Notifications: {notification level}", [s.fbt._param("notification level", M)], {
+				}) : s.fbt._("Notifications: {notification level}", [s.fbt._param("notification level", T)], {
 					hk: "2YgR3R"
 				})))), a.a.createElement(g.b, {
 					isCompactStyle: !0,
@@ -443,9 +503,9 @@
 					options: P,
 					onSelect: e => {
 						var t;
-						I ? (v.current = e.value, u(!0)) : (y(Object(O.n)(C, N, null === (t = e.value) || void 0 === t ? void 0 : t.toLowerCase())), i(C, e.value))
+						I ? (v.current = e.value, u(!0)) : (C(Object(O.n)(_, E, null === (t = e.value) || void 0 === t ? void 0 : t.toLowerCase())), i(_, e.value))
 					},
-					buttonClassName: _.a.dropdown,
+					buttonClassName: y.a.dropdown,
 					buttonIcon: U
 				}), l && a.a.createElement(m.a, {
 					withOverlay: !0,
@@ -464,27 +524,27 @@
 					}),
 					onConfirm: () => {
 						var e;
-						y(Object(S.c)()), n({
-							subredditId: C,
+						C(Object(S.c)()), n({
+							subredditId: _,
 							notificationLevel: null !== (e = v.current) && void 0 !== e ? e : f.b.LOW
 						})
 					}
 				}))
 			};
-			var C = n("./src/reddit/components/Settings/Notifications/LoadingSection.tsx"),
-				E = n("./src/reddit/selectors/user.ts");
-			const N = Object(o.c)({
-					cursor: E.sb,
-					hasError: E.tb,
-					hasNextPage: E.ub,
-					isPending: E.vb,
-					subreddits: E.wb
+			var _ = n("./src/reddit/components/Settings/Notifications/LoadingSection.tsx"),
+				N = n("./src/reddit/selectors/user.ts");
+			const E = Object(o.c)({
+					cursor: N.sb,
+					hasError: N.tb,
+					hasNextPage: N.ub,
+					isPending: N.vb,
+					subreddits: N.wb
 				}),
-				w = Object(d.b)(N, e => ({
+				w = Object(d.b)(E, e => ({
 					clearSubscribedSubredditsList: () => e(Object(c.c)()),
 					fetchSubscribesSubreddits: t => e(Object(c.b)(t)),
 					updateSubredditMuteAndNotificationLevelSettings: t => {
-						e(Object(l.b)(t))
+						e(Object(l.d)(t))
 					},
 					updateSubredditNotificationLevel: (t, n) => e(Object(u.d)({
 						subredditId: t,
@@ -515,13 +575,13 @@
 				}), []);
 				const p = n && n.length > 0;
 				return c ? a.a.createElement("span", {
-					className: _.a.errorMessage,
+					className: y.a.errorMessage,
 					"data-testid": "error-message"
 				}, s.fbt._("There was an issue fetching your subreddits notifications settings. Please try again later.", null, {
 					hk: "1Wt132"
-				})) : l && !p ? a.a.createElement(C.a, {
+				})) : l && !p ? a.a.createElement(_.a, {
 					rowsCount: 5
-				}) : p ? a.a.createElement(a.a.Fragment, null, n.map(e => a.a.createElement(y, {
+				}) : p ? a.a.createElement(a.a.Fragment, null, n.map(e => a.a.createElement(C, {
 					subreddit: e,
 					onSelect: m,
 					onUnmute: u,
@@ -535,10 +595,10 @@
 					},
 					rootMargin: "0px 0px 0px 0px",
 					threshold: .5
-				}, a.a.createElement("div", null)), l && a.a.createElement(C.a, {
+				}, a.a.createElement("div", null)), l && a.a.createElement(_.a, {
 					rowsCount: 1
 				})) : a.a.createElement("span", {
-					className: _.a.errorMessage,
+					className: y.a.errorMessage,
 					"data-testid": "error-message"
 				}, s.fbt._("You do not have subscribed subreddits.", null, {
 					hk: "20pdSk"
@@ -825,4 +885,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommunityNotificationSettings.40ded55c4767bff8799c.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommunityNotificationSettings.87ff4a45d7723b3b2ec7.js.map

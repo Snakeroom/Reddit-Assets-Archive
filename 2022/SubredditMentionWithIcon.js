@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditMentionWithIcon.d9b35320dbf6e9e37329.js
-// Retrieved at 9/12/2022, 3:50:03 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditMentionWithIcon.8716595c2d2bc5e51be3.js
+// Retrieved at 9/13/2022, 3:30:03 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditMentionWithIcon"], {
 		"./src/higherOrderComponents/withAdClickLocation/Locations.ts": function(e, t, s) {
@@ -314,7 +314,7 @@
 						apiContext: i
 					} = n;
 					const r = s(),
-						o = Object(j.N)(r, {
+						o = Object(j.O)(r, {
 							identifier: e
 						});
 					if (!o) throw new Error(`actions.subscription -- No subreddit or profile found with id ${e.id}`);
@@ -330,7 +330,7 @@
 							type: e.type,
 							name: o.name
 						},
-						S = () => Object(j.hb)(s(), {
+						S = () => Object(j.ib)(s(), {
 							identifier: _
 						});
 					(S() || (await t(L([_], !0)), S())) && (t(D({
@@ -628,7 +628,7 @@
 			const {
 				fbt: x
 			} = s("./node_modules/fbt/lib/FbtPublic.js"), j = Object(d.c)({
-				subreddit: S.V,
+				subreddit: S.W,
 				subredditAboutInfo: S.x
 			}), y = Object(r.b)(j);
 			class C extends i.a.Component {
@@ -848,7 +848,7 @@
 							subredditName: e
 						}) && !!Object(E.x)(r, {
 							subredditName: e
-						}) || !!Object(E.eb)(r, {
+						}) || !!Object(E.fb)(r, {
 							subredditName: e
 						}),
 						c = Object(I.d)(r, {
@@ -923,7 +923,7 @@
 				return {
 					crosspost: s,
 					post: t,
-					subredditOrProfile: Object(E.N)(e, {
+					subredditOrProfile: Object(E.O)(e, {
 						identifier: t.belongsTo
 					})
 				}
@@ -1618,7 +1618,7 @@
 				r = s("./src/reddit/actions/subscription/index.ts"),
 				o = s("./src/reddit/selectors/subreddit.ts");
 			t.a = Object(n.b)(() => Object(i.c)({
-				userIsSubscriber: o.hb
+				userIsSubscriber: o.ib
 			}), (e, t) => {
 				let {
 					identifier: s
@@ -2351,4 +2351,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditMentionWithIcon.d9b35320dbf6e9e37329.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditMentionWithIcon.8716595c2d2bc5e51be3.js.map

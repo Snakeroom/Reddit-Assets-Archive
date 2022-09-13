@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-ClaimPointsModal.27b79000ca3965d0ceec.js
-// Retrieved at 9/12/2022, 2:10:03 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-ClaimPointsModal.13412bd1adfebf06c662.js
+// Retrieved at 9/13/2022, 3:30:03 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Governance-TransactionModals-ClaimPointsModal"], {
 		"./node_modules/lodash/uniqueId.js": function(e, t, n) {
@@ -371,7 +371,7 @@
 					pointsDetails: n
 				} = e, a = Object(o.e)(t => Object(w.b)(t, e)), i = a && a.pointsToClaim;
 				if (!i) throw new Error("Expected claim amount to approve");
-				const c = Object(o.e)(t => Object(L.V)(t, e));
+				const c = Object(o.e)(t => Object(L.W)(t, e));
 				return r.a.createElement(V.a, {
 					subredditId: t,
 					image: r.a.createElement(F.b, {
@@ -387,7 +387,7 @@
 					pointsAmount: i
 				})
 			}
-			const q = e => r.a.createElement(G.b, {
+			const W = e => r.a.createElement(G.b, {
 				values: [
 					[s.fbt._("Karma earned", null, {
 						hk: "46NXlD"
@@ -423,7 +423,7 @@
 						pointsDetails: _,
 						subredditId: n
 					}),
-					approvalDetails: r.a.createElement(q, {
+					approvalDetails: r.a.createElement(W, {
 						transaction: I
 					}),
 					onClose: t,
@@ -1175,4 +1175,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-ClaimPointsModal.27b79000ca3965d0ceec.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-ClaimPointsModal.13412bd1adfebf06c662.js.map

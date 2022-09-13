@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/4.d9cabd5c226ddcedb5f3.js
-// Retrieved at 9/12/2022, 2:10:03 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/4.d0a1fc5141c5259a5ac6.js
+// Retrieved at 9/13/2022, 3:30:03 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	[4], {
 		"./node_modules/lodash/_baseRange.js": function(e, t) {
@@ -100,7 +100,7 @@
 					ratingResponse: a,
 					subredditId: o,
 					children: p
-				} = e, x = null !== (t = Object(r.e)(e => Object(v.V)(e, {
+				} = e, x = null !== (t = Object(r.e)(e => Object(v.W)(e, {
 					subredditId: o
 				}))) && void 0 !== t ? t : {}, f = Object(d.a)();
 				return s.a.createElement("div", {
@@ -138,7 +138,7 @@
 		"./src/reddit/components/ContentSurvey/index.tsx": function(e, t, n) {
 			"use strict";
 			n.r(t), n.d(t, "default", (function() {
-				return U
+				return W
 			}));
 			var a = n("./node_modules/icepick/icepick.js"),
 				s = n("./node_modules/lodash/flatMap.js"),
@@ -296,7 +296,7 @@
 			} = n("./node_modules/fbt/lib/FbtPublic.js");
 			var H;
 
-			function U(e) {
+			function W(e) {
 				var t, n;
 				const {
 					subredditId: s,
@@ -403,7 +403,7 @@
 					progressCurrent: z ? C - 1 : 0,
 					progressTotal: z ? w.length - 1 : 0,
 					disableNext: j || y === H.Survey && !R,
-					buttonText: W(y)
+					buttonText: U(y)
 				}, l.a.createElement("div", {
 					className: m.a.result
 				}, l.a.createElement("p", {
@@ -486,7 +486,7 @@
 				}, e.contentRatingReasonText)))))
 			}
 
-			function W(e) {
+			function U(e) {
 				switch (e) {
 					case H.Intro:
 						return q._("Start Survey", null, {
@@ -1070,4 +1070,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/4.d9cabd5c226ddcedb5f3.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/4.d0a1fc5141c5259a5ac6.js.map

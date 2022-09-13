@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditPremiumBlockchainCheckoutModal.8d1e8a4e0ae4a9d65917.js
-// Retrieved at 9/12/2022, 2:10:03 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditPremiumBlockchainCheckoutModal.d04a0b7bd7944aea05ec.js
+// Retrieved at 9/13/2022, 3:30:03 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditPremiumBlockchainCheckoutModal"], {
 		"./node_modules/lodash/uniqueId.js": function(e, t, s) {
@@ -151,11 +151,11 @@
 				})),
 				H = s("./src/reddit/icons/svgs/Close/index.tsx"),
 				G = s("./src/reddit/components/Economics/SubredditPremium/BlockchainCheckoutModal/Header/index.m.less"),
-				V = s.n(G);
+				W = s.n(G);
 			const {
-				fbt: W
+				fbt: U
 			} = s("./node_modules/fbt/lib/FbtPublic.js");
-			const U = Object(d.c)({
+			const V = Object(d.c)({
 				meta: (e, t) => {
 					let {
 						subredditId: s
@@ -163,18 +163,18 @@
 					return Object(I.r)(e, s)
 				}
 			});
-			var X = Object(c.b)(U)((function(e) {
+			var X = Object(c.b)(V)((function(e) {
 					const {
 						meta: t
 					} = e;
 					return i.a.createElement("header", {
-						className: V.a.container
+						className: W.a.container
 					}, i.a.createElement("div", {
-						className: V.a.text
-					}, W._("Purchase {membership name}", [W._param("membership name", t.membershipAlt)], {
+						className: W.a.text
+					}, U._("Purchase {membership name}", [U._param("membership name", t.membershipAlt)], {
 						hk: "OO3Gk"
 					})), i.a.createElement(H.a, {
-						className: V.a.close,
+						className: W.a.close,
 						onClick: e.onClose
 					}))
 				})),
@@ -331,7 +331,7 @@
 						} = t;
 						return Object(I.o)(e, s)
 					},
-					subreddit: T.V,
+					subreddit: T.W,
 					wallet: g.d
 				}),
 				$ = Object(c.b)(Q, (e, t) => ({
@@ -1092,4 +1092,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditPremiumBlockchainCheckoutModal.8d1e8a4e0ae4a9d65917.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditPremiumBlockchainCheckoutModal.d04a0b7bd7944aea05ec.js.map

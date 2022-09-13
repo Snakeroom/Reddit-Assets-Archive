@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/GovernanceReleaseNotesModal.d83c87afcfe5036c3419.js
-// Retrieved at 9/12/2022, 2:10:03 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/GovernanceReleaseNotesModal.b53e85fddb7e45b26eea.js
+// Retrieved at 9/13/2022, 3:30:03 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["GovernanceReleaseNotesModal"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -564,6 +564,192 @@
 					return s[n] = t, s
 				}
 		},
+		"./src/reddit/actions/subreddit/muting.ts": function(e, t, n) {
+			"use strict";
+			n.d(t, "a", (function() {
+				return v
+			})), n.d(t, "b", (function() {
+				return E
+			})), n.d(t, "c", (function() {
+				return y
+			})), n.d(t, "d", (function() {
+				return w
+			}));
+			var s = n("./node_modules/fbt/lib/FbtPublic.js"),
+				r = n("./src/lib/makeActionCreator/index.ts"),
+				i = n("./src/reddit/actions/toaster.ts"),
+				o = n("./src/lib/makeGqlRequest/index.ts"),
+				a = n("./src/redditGQL/operations/DeleteSubredditMuteSettings.json"),
+				d = n("./src/redditGQL/operations/UpdateSubredditMuteSettings.json"),
+				c = n("./src/redditGQL/operations/UpdateSubredditMuteAndNotificationLevelSettings.json");
+			const l = (e, t) => Object(o.a)(e, {
+					...d,
+					variables: {
+						input: {
+							subredditId: t
+						}
+					}
+				}),
+				u = (e, t) => Object(o.a)(e, {
+					...a,
+					variables: {
+						input: {
+							subredditId: t
+						}
+					}
+				});
+			var m = n("./src/reddit/models/Toast/index.ts"),
+				h = n("./src/reddit/actions/subreddit/constants.ts"),
+				p = n("./src/reddit/actions/subreddit/notifications.ts");
+			const b = e => Object(i.f)({
+					id: e,
+					kind: m.b.Error,
+					text: s.fbt._("An error has occured. Please try again later", null, {
+						hk: "2FpsLy"
+					})
+				}),
+				f = (e, t) => Object(i.f)({
+					kind: m.b.SuccessCommunityGreen,
+					text: s.fbt._("Muted r/{subreddit name}", [s.fbt._param("subreddit name", e)], {
+						hk: "Mg9mO"
+					}),
+					buttonText: s.fbt._("Undo", null, {
+						hk: "1lx02Y"
+					}),
+					buttonAction: t
+				}),
+				x = (e, t) => Object(i.f)({
+					kind: m.b.SuccessCommunityGreen,
+					text: s.fbt._("Unmuted r/{subreddit name}", [s.fbt._param("subreddit name", e)], {
+						hk: "Fhnht"
+					}),
+					buttonText: s.fbt._("Undo", null, {
+						hk: "2siioQ"
+					}),
+					buttonAction: t
+				}),
+				g = Object(r.a)(h.C),
+				v = (Object(r.a)(h.f), Object(r.a)(h.B), e => {
+					let {
+						subredditId: t,
+						subredditName: n,
+						successCallback: s
+					} = e;
+					return async (e, r, i) => {
+						let {
+							gqlContext: o
+						} = i;
+						if ((await l(o(), t)).ok) s && s(), f(n, _({
+							subredditId: t,
+							subredditName: n
+						}));
+						else {
+							e(b(`error-muting-${t}`))
+						}
+					}
+				}),
+				_ = e => {
+					let {
+						subredditId: t,
+						subredditName: n,
+						successCallback: s
+					} = e;
+					return async (e, r, i) => {
+						let {
+							gqlContext: o
+						} = i;
+						if ((await u(o(), t)).ok) s && s(), x(n, v({
+							subredditId: t,
+							subredditName: n
+						}));
+						else {
+							e(b(`error-muting-${t}`))
+						}
+					}
+				},
+				E = e => {
+					let {
+						subredditId: t,
+						subredditName: n,
+						successCallback: s
+					} = e;
+					return async (e, r, i) => {
+						let {
+							gqlContext: o
+						} = i;
+						if ((await l(o(), t)).ok) s && s(), e(Object(p.c)({
+							subredditAboutInfo: {
+								[t]: {
+									isMuted: !0
+								}
+							}
+						})), e(f(n, y({
+							subredditId: t,
+							subredditName: n
+						})));
+						else {
+							e(b(`error-muting-${t}`))
+						}
+					}
+				},
+				y = e => {
+					let {
+						subredditId: t,
+						subredditName: n,
+						successCallback: s
+					} = e;
+					return async (e, r, i) => {
+						let {
+							gqlContext: o
+						} = i;
+						if ((await u(o(), t)).ok) s && s(), e(Object(p.c)({
+							subredditAboutInfo: {
+								[t]: {
+									isMuted: !1
+								}
+							}
+						})), e(x(n, E({
+							subredditId: t,
+							subredditName: n
+						})));
+						else {
+							e(b(`error-muting-${t}`))
+						}
+					}
+				},
+				w = e => {
+					let {
+						subredditId: t,
+						notificationLevel: n
+					} = e;
+					return async (e, r, a) => {
+						let {
+							gqlContext: d
+						} = a;
+						const l = Object(p.a)(n);
+						(await ((e, t, n) => Object(o.a)(e, {
+							...c,
+							variables: {
+								input: {
+									...n,
+									subredditId: t
+								}
+							}
+						}))(d(), t, l)).ok ? (e(g({
+							subredditId: t,
+							notificationLevel: n
+						})), e(Object(i.f)({
+							kind: m.b.SuccessCommunityGreen,
+							text: Object(p.b)(n)
+						}))) : e(Object(i.f)({
+							kind: m.b.Error,
+							text: s.fbt._("Failed to change the frequency of notifications from this community, please try again.", null, {
+								hk: "4avFFV"
+							})
+						}))
+					}
+				}
+		},
 		"./src/reddit/actions/subreddit/notifications.ts": function(e, t, n) {
 			"use strict";
 			n.d(t, "c", (function() {
@@ -824,16 +1010,16 @@
 			var S = n("./src/reddit/controls/Button/index.tsx"),
 				I = n("./src/reddit/icons/svgs/ArrowRight/index.tsx"),
 				C = n("./src/reddit/components/Governance/ReleaseNotesModal/SlideChange/index.m.less"),
-				T = n.n(C);
+				N = n.n(C);
 
-			function N(e) {
+			function T(e) {
 				return i.a.createElement("div", {
-					className: Object(p.a)(T.a.container, e.className)
+					className: Object(p.a)(N.a.container, e.className)
 				}, !e.isFirst && i.a.createElement(S.o, {
-					className: T.a.prev,
+					className: N.a.prev,
 					onClick: e.onPrevSlide
 				}, i.a.createElement(I.a, {
-					className: T.a.arrow
+					className: N.a.arrow
 				})), i.a.createElement(S.l, {
 					onClick: e.isLast ? e.onClose : e.onNextSlide
 				}, e.isLast ? s.fbt._("done", null, {
@@ -858,7 +1044,7 @@
 			}
 			var B = n("./src/reddit/components/Governance/ReleaseNotesModal/index.m.less"),
 				P = n.n(B);
-			class H extends i.a.Component {
+			class D extends i.a.Component {
 				constructor() {
 					super(...arguments), this.state = {
 						currentlyViewingIndex: 0
@@ -901,7 +1087,7 @@
 						className: P.a.controlBox,
 						currentSlide: this.state.currentlyViewingIndex,
 						totalSlides: this.props.releaseNotes.length
-					}), i.a.createElement(N, {
+					}), i.a.createElement(T, {
 						className: P.a.controlBox,
 						isFirst: 0 === this.state.currentlyViewingIndex,
 						isLast: this.state.currentlyViewingIndex === this.props.releaseNotes.length - 1,
@@ -911,15 +1097,15 @@
 					})))
 				}
 			}
-			const D = Object(h.c)({
+			const F = Object(h.c)({
 					releaseNotes: m.f,
 					subreddit: u.r
 				}),
-				F = Object(o.b)(D, e => ({
+				H = Object(o.b)(F, e => ({
 					onClose: () => e(Object(d.f)())
 				})),
 				A = Object(u.u)();
-			t.default = Object(a.a)(A(F(H)))
+			t.default = Object(a.a)(A(H(D)))
 		},
 		"./src/reddit/components/Governance/VaultActionLink/async.ts": function(e, t, n) {
 			"use strict";
@@ -1106,7 +1292,7 @@
 				}).apply(this, arguments)
 			}
 			const C = e => e > 2 * _.e,
-				T = e => i.a.createElement("img", {
+				N = e => i.a.createElement("img", {
 					alt: e.altText || s.fbt._("Comment image", null, {
 						hk: "1DiDxV"
 					}),
@@ -1115,7 +1301,7 @@
 					}),
 					src: e.src
 				}),
-				N = e => {
+				T = e => {
 					const t = Object(c.a)(S.a.image, b.g, e.className, {
 							[S.a.mShowCentered]: e.showCentered,
 							[S.a.mShowBlurred]: e.shouldBlur
@@ -1153,9 +1339,9 @@
 					return e.renderSmallMedia ? i.a.createElement("div", {
 						ref: o,
 						style: f.current
-					}, a ? i.a.createElement(T, I({}, e, {
+					}, a ? i.a.createElement(N, I({}, e, {
 						className: t
-					})) : i.a.createElement("noscript", null, i.a.createElement(T, I({}, e, {
+					})) : i.a.createElement("noscript", null, i.a.createElement(N, I({}, e, {
 						className: t
 					})))) : i.a.createElement("img", {
 						alt: e.altText || s.fbt._("Post image", null, {
@@ -1207,7 +1393,7 @@
 					onClick: e.onPostMediaClick
 				}, B(e)) : B(e)
 			});
-			const R = (e, t) => i.a.createElement(N, {
+			const R = (e, t) => i.a.createElement(T, {
 					altText: t.altText,
 					className: Object(c.a)(t.imageClassName, {
 						[j.a]: !e
@@ -1456,14 +1642,14 @@
 					showCentered: S,
 					originalSource: I,
 					isPromoted: C
-				} = e, T = t && !(C && Object(c.hasAcceptableAds)()), N = Object(a.d)();
+				} = e, N = t && !(C && Object(c.hasAcceptableAds)()), T = Object(a.d)();
 
 				function M(e) {
-					N(e ? Object(u.r)(p) : Object(u.E)(p))
+					T(e ? Object(u.r)(p) : Object(u.E)(p))
 				}
 
 				function L() {
-					return N(Object(u.z)({
+					return T(Object(u.z)({
 						postId: p
 					}))
 				}
@@ -1472,7 +1658,7 @@
 					const {
 						target: t
 					} = e;
-					t && t.played && 1 === t.played.length && 0 === t.played.start(0) && t.played.end(0) === t.duration && N(Object(u.s)(p))
+					t && t.played && 1 === t.played.length && 0 === t.played.start(0) && t.played.end(0) === t.duration && T(Object(u.s)(p))
 				}, 200);
 
 				function B(e) {
@@ -1481,16 +1667,16 @@
 
 				function P(e) {
 					var t;
-					(i || D(e), d) || (t = e.timeStamp, N(Object(u.A)(p, t)))
-				}
-
-				function H(e) {
-					N(Object(u.q)(p, e.timeStamp))
+					(i || F(e), d) || (t = e.timeStamp, T(Object(u.A)(p, t)))
 				}
 
 				function D(e) {
+					T(Object(u.q)(p, e.timeStamp))
+				}
+
+				function F(e) {
 					! function(e) {
-						N(Object(u.D)({
+						T(Object(u.D)({
 							metadata: e,
 							postId: p
 						}))
@@ -1502,14 +1688,14 @@
 					})
 				}
 
-				function F(e) {
-					s || P(e), i || D(e), N(Object(u.C)(p))
+				function H(e) {
+					s || P(e), i || F(e), T(Object(u.C)(p))
 				}
 
 				function A() {
 					const e = {};
 					return S && (e.margin = "0 auto"), O || (e.maxHeight = `${h.e}px`), o.a.createElement(E, {
-						autoplay: T,
+						autoplay: N,
 						className: Object(l.a)(m.a, w.a.styledVideo),
 						height: x,
 						isListing: O,
@@ -1517,11 +1703,11 @@
 						key: p,
 						loop: !0,
 						onBufferingChange: M,
-						onLoadStart: H,
+						onLoadStart: D,
 						onLoadedData: P,
-						onLoadedMetadata: D,
+						onLoadedMetadata: F,
 						onPause: L,
-						onPlaying: F,
+						onPlaying: H,
 						onTimeUpdate: B,
 						shouldLoad: b,
 						shouldPause: _,
@@ -1812,9 +1998,9 @@
 			})), n.d(t, "q", (function() {
 				return C
 			})), n.d(t, "s", (function() {
-				return T
-			})), n.d(t, "r", (function() {
 				return N
+			})), n.d(t, "r", (function() {
+				return T
 			})), n.d(t, "a", (function() {
 				return M
 			})), n.d(t, "w", (function() {
@@ -1847,8 +2033,8 @@
 				S = d.a.td("Tdl", a.a),
 				I = d.a.td("Tdc", a.a),
 				C = d.a.td("Tdr", a.a),
-				T = d.a.th("Thl", a.a),
-				N = d.a.th("Thc", a.a),
+				N = d.a.th("Thl", a.a),
+				T = d.a.th("Thc", a.a),
 				M = (d.a.th("Thr", a.a), d.a.wrapped(e => r.a.createElement(i.b, e), "A", a.a)),
 				L = d.a.wrapped(c.a, "A", a.a)
 		},
@@ -1917,7 +2103,7 @@
 						shouldBlur: O,
 						onClickRevealSpoilerText: k,
 						mediaProps: S
-					} = e, I = s.document, C = [], T = e.mediaMetadata || null, N = y(I), M = E(I);
+					} = e, I = s.document, C = [], N = e.mediaMetadata || null, T = y(I), M = E(I);
 					if (O && !r && !o) return a.a.createElement(g, {
 						className: Object(d.a)(m.j, n)
 					}, a.a.createElement("div", {
@@ -1926,8 +2112,8 @@
 						className: x.a.unblurButton,
 						onClick: l
 					}, Object(u.b)(!!i, !!c))));
-					if (-1 !== N)
-						for (let a = N; a <= M; a++) {
+					if (-1 !== T)
+						for (let a = T; a <= M; a++) {
 							const e = I[a];
 							switch (e.e) {
 								case h.k:
@@ -1937,19 +2123,19 @@
 									C.push(b.d(a));
 									break;
 								case h.b:
-									C.push(b.a(e, T, w, a));
+									C.push(b.a(e, N, w, a));
 									break;
 								case h.c:
 									C.push(b.b(e, a));
 									break;
 								case h.p:
-									C.push(b.f(e, T, w, a, k));
+									C.push(b.f(e, N, w, a, k));
 									break;
 								case h.z:
-									C.push(b.h(e, T, w, a, k));
+									C.push(b.h(e, N, w, a, k));
 									break;
 								case h.u:
-									C.push(b.g(e, T, w, a, k));
+									C.push(b.g(e, N, w, a, k));
 									break;
 								case h.h:
 									C.push(Object(p.a)(e, a));
@@ -1957,7 +2143,7 @@
 								case h.m:
 								case h.a:
 								case h.D:
-									C.push(...Object(p.b)(e, a, w, T, _, f, t, S))
+									C.push(...Object(p.b)(e, a, w, N, _, f, t, S))
 							}
 						}
 					return j ? a.a.createElement(g, {
@@ -2027,7 +2213,7 @@
 		"./src/reddit/components/RichTextJson/media.tsx": function(e, t, n) {
 			"use strict";
 			n.d(t, "a", (function() {
-				return N
+				return T
 			})), n.d(t, "b", (function() {
 				return L
 			}));
@@ -2096,7 +2282,7 @@
 				S = y.a.wrapped(l.a, "ImageBox", E.a),
 				I = y.a.wrapped(e => i.a.createElement("p", e), "Caption", E.a),
 				C = y.a.div("Placeholder", E.a),
-				T = y.a.wrapped(e => {
+				N = y.a.wrapped(e => {
 					let {
 						className: t,
 						e: n,
@@ -2132,7 +2318,7 @@
 						onClick: d
 					}))
 				}, "Placeholder", E.a),
-				N = (e, t) => {
+				T = (e, t) => {
 					let {
 						c: n,
 						x: s,
@@ -2172,7 +2358,7 @@
 					const h = x.E(s, e.id);
 					if (r) return [M(e, t, h)];
 					const f = [];
-					return !h || h.e === x.s && null === h.s.x && null === h.s.y ? f.push(((e, t, n, s) => i.a.createElement(T, {
+					return !h || h.e === x.s && null === h.s.x && null === h.s.y ? f.push(((e, t, n, s) => i.a.createElement(N, {
 						e,
 						key: t,
 						renderSmallMedia: n,
@@ -2307,7 +2493,7 @@
 		"./src/reddit/components/RichTextJson/renderers.tsx": function(e, t, n) {
 			"use strict";
 			n.d(t, "c", (function() {
-				return N
+				return T
 			})), n.d(t, "d", (function() {
 				return M
 			})), n.d(t, "a", (function() {
@@ -2317,11 +2503,11 @@
 			})), n.d(t, "f", (function() {
 				return B
 			})), n.d(t, "h", (function() {
-				return H
-			})), n.d(t, "g", (function() {
 				return D
-			})), n.d(t, "i", (function() {
+			})), n.d(t, "g", (function() {
 				return F
+			})), n.d(t, "i", (function() {
+				return H
 			})), n.d(t, "e", (function() {
 				return A
 			}));
@@ -2419,8 +2605,8 @@
 				S = n("./src/reddit/helpers/isComment.ts"),
 				I = n("./src/reddit/helpers/isPost.ts"),
 				C = n("./src/reddit/helpers/richTextJson/index.ts"),
-				T = n("./src/reddit/helpers/trackers/getRichTextSourceElement.ts");
-			const N = (e, t, n) => {
+				N = n("./src/reddit/helpers/trackers/getRichTextSourceElement.ts");
+			const T = (e, t, n) => {
 					const s = e.c || [],
 						r = e.l,
 						i = [],
@@ -2475,18 +2661,18 @@
 						case m.c:
 							return R(e, s);
 						case m.k:
-							return N(e, n, s);
+							return T(e, n, s);
 						case m.l:
 							return M(s);
 						case m.p:
 							return B(e, t, n, s, r);
 						case m.u:
-							return D(e, t, n, s, r);
+							return F(e, t, n, s, r);
 						case m.z:
-							return H(e, t, n, s, r)
+							return D(e, t, n, s, r)
 					}
 				},
-				H = (e, t, n, s, r) => {
+				D = (e, t, n, s, r) => {
 					const i = e.c,
 						o = e.h,
 						c = i.length,
@@ -2505,7 +2691,7 @@
 							} = e;
 						u.push(a.a.createElement(s, {
 							key: d
-						}, F(c, t, n, r))), h[d] = i
+						}, H(c, t, n, r))), h[d] = i
 					}
 					for (let p = 0; p < c; p++) {
 						const e = i[p],
@@ -2518,7 +2704,7 @@
 								} = e[i];
 							o.push(a.a.createElement(s, {
 								key: i
-							}, F(d, t, n, r)))
+							}, H(d, t, n, r)))
 						}
 						m.push(a.a.createElement(d.t, {
 							key: p
@@ -2528,16 +2714,16 @@
 						key: s
 					}, a.a.createElement("thead", null, a.a.createElement(d.t, null, u)), a.a.createElement("tbody", null, m))
 				},
-				D = (e, t, n, s, r) => {
+				F = (e, t, n, s, r) => {
 					if (!e.c || !e.c.length) return (e => a.a.createElement(d.j, {
 						key: e
 					}, a.a.createElement("br", null)))(s);
 					const i = e.c[0];
 					return i.e !== m.m && i.e !== m.a || !Object(C.g)(i.id) ? a.a.createElement(d.j, {
 						key: s
-					}, F(e.c, t, n, r)) : Object(w.b)(i, s, n, t)
+					}, H(e.c, t, n, r)) : Object(w.b)(i, s, n, t)
 				},
-				F = (e, t, n, s) => {
+				H = (e, t, n, s) => {
 					const r = [],
 						i = e.length;
 					for (let o = 0; o < i; o++) {
@@ -2546,7 +2732,7 @@
 						else if (i.e === m.x) r.push(a.a.createElement(j.a, {
 							key: o,
 							onClickReveal: s
-						}, F(i.c, t, n, s)));
+						}, H(i.c, t, n, s)));
 						else if (i.e === m.n) r.push(a.a.createElement("br", {
 							key: o
 						}));
@@ -2576,7 +2762,7 @@
 								title: e.a
 							}, s);
 							let r, i;
-							const o = Object(T.a)(t),
+							const o = Object(N.a)(t),
 								c = t.renderingObjectInfo;
 							return c && Object(I.b)(c) && (r = c.postId), c && Object(S.b)(c) && (i = c.id, r = c.postId), a.a.createElement(d.a, {
 								href: e.u,
@@ -2611,18 +2797,18 @@
 						f: n,
 						t: r
 					} = e, i = [];
-					if (!n) return G(0, r, t);
+					if (!n) return V(0, r, t);
 					const o = Object(s.a)(r);
 					let a = 0,
 						d = 0;
 					const c = n.length;
 					for (; a < c; a++) {
 						const [e, t, s] = n[a], c = t + s, l = o[t], u = o[c] - l;
-						l > d && i.push(G(0, r.substr(d, l - d), `between${a}`)), i.push(G(e, r.substr(l, u), a)), d = l + u
+						l > d && i.push(V(0, r.substr(d, l - d), `between${a}`)), i.push(V(e, r.substr(l, u), a)), d = l + u
 					}
-					return d < r.length && i.push(G(0, r.substr(d), `remaining${a}`)), i
+					return d < r.length && i.push(V(0, r.substr(d), `remaining${a}`)), i
 				},
-				V = {
+				G = {
 					[m.j.monospace]: d.h,
 					[m.j.bold]: d.b,
 					[m.j.italic]: d.f,
@@ -2631,9 +2817,9 @@
 					[m.j.subscript]: d.l,
 					[m.j.superscript]: d.m
 				},
-				G = (e, t, n) => {
+				V = (e, t, n) => {
 					let s = t;
-					return s = i()(V, (t, s, r) => e & parseInt(r, 10) ? a.a.createElement(s, {
+					return s = i()(G, (t, s, r) => e & parseInt(r, 10) ? a.a.createElement(s, {
 						key: n
 					}, t) : t, s)
 				},
@@ -3149,12 +3335,21 @@
 					let {
 						subredditName: n
 					} = t;
-					const s = Object(o.Z)(e, {
+					const s = Object(o.ab)(e, {
 						subredditName: n
 					});
 					return (s && s.postIds || []).slice(0, 2)
 				}
+		},
+		"./src/redditGQL/operations/DeleteSubredditMuteSettings.json": function(e) {
+			e.exports = JSON.parse('{"id":"c518a45f60a5"}')
+		},
+		"./src/redditGQL/operations/UpdateSubredditMuteAndNotificationLevelSettings.json": function(e) {
+			e.exports = JSON.parse('{"id":"2620d72fd633"}')
+		},
+		"./src/redditGQL/operations/UpdateSubredditMuteSettings.json": function(e) {
+			e.exports = JSON.parse('{"id":"432f6b475ece"}')
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/GovernanceReleaseNotesModal.d83c87afcfe5036c3419.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/GovernanceReleaseNotesModal.b53e85fddb7e45b26eea.js.map

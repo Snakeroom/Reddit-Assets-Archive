@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/LiveVideoPlayer.31efabb1f527027c1d2b.js
-// Retrieved at 9/12/2022, 2:10:03 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/LiveVideoPlayer.520b00f260ac27231217.js
+// Retrieved at 9/13/2022, 3:30:03 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["LiveVideoPlayer"], {
 		"./node_modules/lodash/isUndefined.js": function(e, t) {
@@ -414,7 +414,7 @@
 						apiContext: r
 					} = n;
 					const i = s(),
-						o = Object(g.N)(i, {
+						o = Object(g.O)(i, {
 							identifier: e
 						});
 					if (!o) throw new Error(`actions.subscription -- No subreddit or profile found with id ${e.id}`);
@@ -430,7 +430,7 @@
 							type: e.type,
 							name: o.name
 						},
-						_ = () => Object(g.hb)(s(), {
+						_ = () => Object(g.ib)(s(), {
 							identifier: O
 						});
 					(_() || (await t(P([O], !0)), _())) && (t(M({
@@ -1954,4 +1954,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/LiveVideoPlayer.31efabb1f527027c1d2b.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/LiveVideoPlayer.520b00f260ac27231217.js.map
