@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/AuthorHovercard.5a7edd78c0be16c4128a.js
-// Retrieved at 9/14/2022, 6:00:03 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/AuthorHovercard.ffed9a04a4c22df1770e.js
+// Retrieved at 9/14/2022, 6:30:03 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["AuthorHovercard"], {
 		"./src/lib/constants/colors.ts": function(e, t, n) {
@@ -6567,4 +6567,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/AuthorHovercard.5a7edd78c0be16c4128a.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/AuthorHovercard.ffed9a04a4c22df1770e.js.map

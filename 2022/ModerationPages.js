@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModerationPages.ba764059c1ff2498e8b8.js
-// Retrieved at 9/14/2022, 6:00:03 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModerationPages.65a657f650052c13279e.js
+// Retrieved at 9/14/2022, 6:30:03 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModerationPages", "CollectionCommentsPage~CommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~RpanListingUnit~S~5809214e", "CommentsPage~Governance~Reddit~ReportFlow~Subreddit~reddit-components-BlankPost~reddit-components-Cl~5351df81", "PostCreation~Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~r~4c415e24", "Governance~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compo~bd4baca2", "Governance~ModListing~Reddit~ReportFlow~Subreddit", "Governance~ModListing~Reddit~Subreddit", "Governance~Reddit~SubredditForkingCTA"], {
 		"./src/chat/controls/Svg/index.m.less": function(e, t, n) {
@@ -4365,7 +4365,7 @@
 							isStartImmediately: !0,
 							subredditId: e,
 							predictionDrafts: c,
-							currency: b.I.Tokens,
+							currency: b.J.Tokens,
 							tokenIcon: l
 						}),
 						m = Object(j.a)(u);
@@ -8704,7 +8704,7 @@
 						const e = E({
 							username: I,
 							profileSort: j,
-							filter: te.E.Posts,
+							filter: te.F.Posts,
 							shouldUseGqlCursor: !0
 						});
 						D = null === (x = null === (v = null === (o = null == (L = await Object(K.a)("profilePosts", () => O(s.gqlContext(), e))) ? void 0 : L.body) || void 0 === o ? void 0 : o.data) || void 0 === v ? void 0 : v.redditorInfoByName) || void 0 === x ? void 0 : x.__typename
@@ -8740,7 +8740,7 @@
 						const e = E({
 								username: I,
 								profileSort: j,
-								filter: te.E.Posts
+								filter: te.F.Posts
 							}),
 							t = await O(s.gqlContext(), e);
 						if (t.ok && t.body) {
@@ -8816,7 +8816,7 @@
 						const e = E({
 							username: b,
 							profileSort: m,
-							filter: te.E.Posts,
+							filter: te.F.Posts,
 							loadMoreData: h,
 							shouldUseGqlCursor: !0
 						});
@@ -8854,7 +8854,7 @@
 						const e = E({
 								username: b,
 								profileSort: m,
-								filter: te.E.Posts,
+								filter: te.F.Posts,
 								loadMoreData: h
 							}),
 							t = await O(o(), e);
@@ -17424,19 +17424,19 @@
 				},
 				C = e => e ? O.indexOf(e) : 0,
 				y = e => {
-					if (e) return Object.values(h.H).find(t => t === (null == e ? void 0 : e.toUpperCase()))
+					if (e) return Object.values(h.I).find(t => t === (null == e ? void 0 : e.toUpperCase()))
 				},
 				j = e => {
 					if (e) return Object.values(h.f).find(t => t === (null == e ? void 0 : e.toUpperCase()))
 				},
 				k = e => {
-					if (e) return Object.values(h.L).find(t => t === (null == e ? void 0 : e.toUpperCase()))
+					if (e) return Object.values(h.M).find(t => t === (null == e ? void 0 : e.toUpperCase()))
 				},
 				I = e => {
-					if (e) return e > 0 ? h.J.Enabled : h.J.Disabled
+					if (e) return e > 0 ? h.K.Enabled : h.K.Disabled
 				},
 				S = e => {
-					if (e) return e === h.J.Enabled ? 1 : 0
+					if (e) return e === h.K.Enabled ? 1 : 0
 				},
 				w = e => {
 					let {
@@ -25297,24 +25297,24 @@
 					})
 				},
 				_ = {
-					[r.H.Low]: s.fbt._("Low", null, {
+					[r.I.Low]: s.fbt._("Low", null, {
 						hk: "4k3iTe"
 					}),
-					[r.H.High]: s.fbt._("High (default)", null, {
+					[r.I.High]: s.fbt._("High (default)", null, {
 						hk: "2GOHsH"
 					}),
-					[r.H.All]: s.fbt._("All", null, {
+					[r.I.All]: s.fbt._("All", null, {
 						hk: "gl6gc"
 					})
 				},
 				g = {
-					[r.H.Low]: s.fbt._("Low (default)", null, {
+					[r.I.Low]: s.fbt._("Low (default)", null, {
 						hk: "2tqJd7"
 					}),
-					[r.H.High]: s.fbt._("High", null, {
+					[r.I.High]: s.fbt._("High", null, {
 						hk: "ABfkc"
 					}),
-					[r.H.All]: s.fbt._("All", null, {
+					[r.I.All]: s.fbt._("All", null, {
 						hk: "3bPDOM"
 					})
 				},
@@ -26712,8 +26712,8 @@
 					} = t, w = Object(a.e)(Ge.b), N = Object(a.e)(qe.a), P = Object(a.e)(e => ((e, t) => {
 						const n = t && e.subreddits.about[t];
 						return Boolean(n && n.isMediaInCommentsSettingShown)
-					})(e, d)), R = Object(a.e)(Be.g), A = Object(Ue.a)(Fe.Af) === Fe.Hd, M = w && P, L = (null == _ ? void 0 : _.allowedMediaTypes) || [], D = null === S ? "nullValue" : S, F = Object(o.useCallback)(() => s(!l, "archivePostsEnabled"), [l, s]), U = e => e.toUpperCase() === He.H.All, B = e => {
-						const n = U(t[e]) ? He.H.Low : He.H.All;
+					})(e, d)), R = Object(a.e)(Be.g), A = Object(Ue.a)(Fe.Af) === Fe.Hd, M = w && P, L = (null == _ ? void 0 : _.allowedMediaTypes) || [], D = null === S ? "nullValue" : S, F = Object(o.useCallback)(() => s(!l, "archivePostsEnabled"), [l, s]), U = e => e.toUpperCase() === He.I.All, B = e => {
+						const n = U(t[e]) ? He.I.Low : He.I.All;
 						s(n, e)
 					};
 					return i.a.createElement(k.a, null, i.a.createElement(y, null, i.a.createElement(k.b, null, G.fbt._("Post and Comment settings", null, {
@@ -76401,4 +76401,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.ba764059c1ff2498e8b8.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.65a657f650052c13279e.js.map
