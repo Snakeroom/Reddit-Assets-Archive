@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CommentsPage~Governance~Reddit~ReportFlow~Subreddit~reddit-components-BlankPost~reddit-components-Cl~5351df81.fdeaad2ff0691fef1b7b.js
-// Retrieved at 9/14/2022, 10:30:06 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CommentsPage~Governance~Reddit~ReportFlow~Subreddit~reddit-components-BlankPost~reddit-components-Cl~5351df81.7616dd8b55a2c437d32d.js
+// Retrieved at 9/14/2022, 12:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CommentsPage~Governance~Reddit~ReportFlow~Subreddit~reddit-components-BlankPost~reddit-components-Cl~5351df81"], {
 		"./src/lib/name/index.ts": function(e, t, r) {
@@ -2849,7 +2849,7 @@
 					const e = await Object(Re.a)(a.gqlContext, Ot.posts);
 					Ot.posts = e;
 					const t = await Object(et.a)(a.apiContext(), Ot.posts, Ge);
-					Ot.posts = t
+					t && (Ot.posts = t)
 				}
 				o(D.n(pt.status));
 				const jt = `error-${e}`,
@@ -6991,7 +6991,7 @@
 						return t
 					}
 				}, o = async (e, t, r) => {
-					if (!Object(s.a)(r)) return t;
+					if (!Object(s.a)(r) || !t) return t;
 					const n = {};
 					for (const [s, o] of Object.entries(t)) n[s] = i(o) ? await d(e, o) : o;
 					return n
@@ -12083,4 +12083,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommentsPage~Governance~Reddit~ReportFlow~Subreddit~reddit-components-BlankPost~reddit-components-Cl~5351df81.fdeaad2ff0691fef1b7b.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommentsPage~Governance~Reddit~ReportFlow~Subreddit~reddit-components-BlankPost~reddit-components-Cl~5351df81.7616dd8b55a2c437d32d.js.map
