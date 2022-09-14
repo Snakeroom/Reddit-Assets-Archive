@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ReportFlowNew.dce21b0060839c7a044a.js
-// Retrieved at 9/12/2022, 2:10:03 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ReportFlowNew.346b2287abb5e7612059.js
+// Retrieved at 9/14/2022, 12:50:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ReportFlowNew"], {
 		"./src/reddit/actions/blockedRedditors.ts": function(e, t, o) {
@@ -299,8 +299,8 @@
 			var v = o("./src/reddit/endpoints/messages/index.ts"),
 				y = o("./src/reddit/endpoints/post/report.ts"),
 				S = o("./src/redditGQL/operations/ReportForm.json");
-			var L = o("./src/reddit/endpoints/talk/index.ts"),
-				C = o("./src/reddit/contexts/ApiContext.tsx"),
+			var C = o("./src/reddit/endpoints/talk/index.ts"),
+				L = o("./src/reddit/contexts/ApiContext.tsx"),
 				I = o("./src/reddit/models/Post/index.ts"),
 				F = o("./src/reddit/models/Toast/index.ts"),
 				E = o("./src/reddit/models/WhitelistAndBlocked.ts"),
@@ -487,7 +487,7 @@
 											postId: a,
 											...b
 										};
-									h = () => Object(L.h)(r(), {
+									h = () => Object(C.h)(r(), {
 										input: o
 									});
 									break
@@ -600,7 +600,7 @@
 					}))
 				}
 			}
-			t.default = Object(C.b)(M(Object(b.c)(H)))
+			t.default = Object(L.b)(M(Object(b.c)(H)))
 		},
 		"./src/reddit/components/ReportFlow/index.m.less": function(e, t, o) {
 			e.exports = {
@@ -776,14 +776,14 @@
 						...u,
 						variables: t
 					});
-					return !!Object(i.c)(o) && (o.body.data.subredditInfoById.allowedPostTypes || []).includes(b.B.Talk)
+					return !!Object(i.c)(o) && (o.body.data.subredditInfoById.allowedPostTypes || []).includes(b.C.Talk)
 				}, O = async (e, t) => {
 					var o, r;
 					const s = await Object(n.a)(e, {
 						...p,
 						variables: t
 					});
-					return !!Object(i.c)(s) && (null !== (r = null === (o = s.body.data.profileByName) || void 0 === o ? void 0 : o.allowedPostTypes) && void 0 !== r ? r : []).includes(b.B.Talk)
+					return !!Object(i.c)(s) && (null !== (r = null === (o = s.body.data.profileByName) || void 0 === o ? void 0 : o.allowedPostTypes) && void 0 !== r ? r : []).includes(b.C.Talk)
 				}, R = async e => {
 					var t;
 					const o = await Object(n.a)(e, l);
@@ -1003,4 +1003,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ReportFlowNew.dce21b0060839c7a044a.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ReportFlowNew.346b2287abb5e7612059.js.map

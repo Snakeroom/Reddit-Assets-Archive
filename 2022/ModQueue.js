@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModQueue.3dac345aebe314935ed6.js
-// Retrieved at 9/13/2022, 3:30:03 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModQueue.caf4fda109126a462c9c.js
+// Retrieved at 9/14/2022, 12:50:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModQueue"], {
 		"./src/reddit/actions/bulkActions/index.ts": function(e, t, o) {
@@ -291,16 +291,16 @@
 				g = o("./src/reddit/helpers/graphql/normalizePostFromGql/index.ts"),
 				S = o("./src/reddit/helpers/graphql/normalizeSubredditFromGql/index.ts");
 			const R = {
-					[r.ub.Edited]: v.w.Edited,
-					[r.ub.Modqueue]: v.w.Mod,
-					[r.ub.Reports]: v.w.Reported,
-					[r.ub.Spam]: v.w.Removed,
-					[r.ub.Unmoderated]: v.w.Unmoderated
+					[r.ub.Edited]: v.x.Edited,
+					[r.ub.Modqueue]: v.x.Mod,
+					[r.ub.Reports]: v.x.Reported,
+					[r.ub.Spam]: v.x.Removed,
+					[r.ub.Unmoderated]: v.x.Unmoderated
 				},
 				E = {
-					comments: v.u.Comment,
-					links: v.u.Post,
-					chat_comments: v.u.ChatComment
+					comments: v.v.Comment,
+					links: v.v.Post,
+					chat_comments: v.v.ChatComment
 				};
 
 			function k(e) {
@@ -335,7 +335,7 @@
 					...!!s.profile && {
 						subredditIds: [s.profile]
 					},
-					sort: s.sort === p.a.MostReportedFirst ? v.v.SortReports : v.v.SortDate,
+					sort: s.sort === p.a.MostReportedFirst ? v.w.SortReports : v.w.SortDate,
 					...d
 				}
 			}
@@ -489,11 +489,11 @@
 				C = o("./src/reddit/selectors/modQueue.ts"),
 				M = o("./src/reddit/selectors/subreddit.ts"),
 				N = o("./src/reddit/selectors/telemetry.ts"),
-				w = o("./src/telemetry/index.ts"),
-				L = o("./src/lib/initializeClient/installReducer.ts"),
+				L = o("./src/telemetry/index.ts"),
+				w = o("./src/lib/initializeClient/installReducer.ts"),
 				D = o("./src/reddit/reducers/pages/modHub/index.ts"),
 				T = o("./src/reddit/actions/modQueue/constants.ts");
-			Object(L.a)({
+			Object(w.a)({
 				pages: {
 					modHub: D.a
 				}
@@ -599,7 +599,7 @@
 						j = p.user.account && p.user.account.displayText;
 					Object(l.d)(l.a.ModQueue);
 					const v = Object(l.c)(l.a.ModQueue);
-					Object(w.a)({
+					Object(L.a)({
 						source: "bulk_mod_action_menu",
 						action: "click",
 						noun: e,
@@ -614,7 +614,7 @@
 					for (let t = 0; t < O.length; t++) {
 						const o = O[t];
 						let s = e;
-						[I.a.Approve, I.a.Remove, I.a.Spam].includes(e) && (Object(f.a)(o) ? s += "_link" : s += "_comment"), Object(w.a)({
+						[I.a.Approve, I.a.Remove, I.a.Spam].includes(e) && (Object(f.a)(o) ? s += "_link" : s += "_comment"), Object(L.a)({
 							source: "bulk_mod_action",
 							action: "click",
 							noun: s,
@@ -1072,8 +1072,8 @@
 				C = o("./src/reddit/actions/comment/authoring.ts"),
 				M = o("./src/reddit/actions/comment/moderation.ts"),
 				N = o("./src/reddit/actions/modal.ts"),
-				w = o("./src/reddit/actions/post.ts"),
-				L = o("./src/reddit/actions/toaster.ts"),
+				L = o("./src/reddit/actions/post.ts"),
+				w = o("./src/reddit/actions/toaster.ts"),
 				D = o("./src/reddit/constants/modals.ts"),
 				T = o("./src/lib/makeApiRequest/index.ts"),
 				F = o("./src/lib/omitHeaders/index.ts"),
@@ -1147,7 +1147,7 @@
 						o(se({
 							subredditId: e,
 							reason: n
-						})), o(Object(L.f)({
+						})), o(Object(w.f)({
 							kind: W.b.SuccessMod,
 							text: s.fbt._("Removal reason added!", null, {
 								hk: "2WSh8N"
@@ -1171,7 +1171,7 @@
 					i.ok ? (o(ae({
 						subredditId: e,
 						reason: t
-					})), o(Object(L.f)({
+					})), o(Object(w.f)({
 						kind: W.b.SuccessMod,
 						text: s.fbt._("Removal reason saved", null, {
 							hk: "28ScuL"
@@ -1190,7 +1190,7 @@
 					i.ok ? (o(le({
 						subredditId: e,
 						reasonId: t
-					})), o(Object(L.f)({
+					})), o(Object(w.f)({
 						kind: W.b.SuccessMod,
 						text: s.fbt._("Removal reason deleted", null, {
 							hk: "4xzgsa"
@@ -1214,7 +1214,7 @@
 						m = e[0],
 						b = Object(H.a)(m) ? z.e.Post : z.e.Comment,
 						p = b === z.e.Post ? u.posts.models[m] : u.features.comments.models[m],
-						f = b === z.e.Post ? w.S : P.j;
+						f = b === z.e.Post ? L.S : P.j;
 					if (!p || !l) return !1;
 					d(Oe()), d(f({
 						[m]: {
@@ -1310,7 +1310,7 @@
 						l = u.user.account && u.user.account.displayText;
 					if (!l) return;
 					d(Oe());
-					const m = Object(L.f)({
+					const m = Object(w.f)({
 							kind: W.b.SuccessMod,
 							text: s.fbt._({
 								"*": "Added removal reason for {number} posts/comments",
@@ -1537,4 +1537,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModQueue.3dac345aebe314935ed6.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModQueue.caf4fda109126a462c9c.js.map
