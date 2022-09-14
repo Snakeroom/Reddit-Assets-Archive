@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/removalReasonActions.b2f9585405ec5ecec050.js
-// Retrieved at 9/14/2022, 4:30:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/removalReasonActions.8d2fdcc151d75d721fd3.js
+// Retrieved at 9/14/2022, 6:00:03 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["removalReasonActions"], {
 		"./node_modules/lodash/map.js": function(e, t, o) {
@@ -254,8 +254,8 @@
 				ce = o("./node_modules/reselect/es/index.js");
 			const ae = Object(ce.a)(e => Object(ie.c)(e, {
 				experimentEligibilitySelector: ie.a,
-				experimentName: re.Lb
-			}), e => e === re.Id);
+				experimentName: re.Kb
+			}), e => e === re.Hd);
 			var de = o("./src/reddit/selectors/experiments/contributeBeforeSignUp.ts"),
 				le = o("./src/reddit/selectors/platform.ts"),
 				me = o("./src/reddit/selectors/posts.ts"),
@@ -351,7 +351,7 @@
 						const C = g(),
 							v = Object(te.d)(C, {
 								postId: i
-							}) && Object(se.i)(C),
+							}) && Object(se.h)(C),
 							R = v ? Object(V.a)() : d,
 							k = Object(ne.e)(C, {
 								commentId: R
@@ -481,7 +481,7 @@
 						commentId: u
 					}), S = _ && Object(te.d)(g, {
 						postId: _.postId
-					}) && Object(se.i)(g), x = S ? Object(V.a)() : f, y = Object(ne.e)(g, {
+					}) && Object(se.h)(g), x = S ? Object(V.a)() : f, y = Object(ne.e)(g, {
 						commentId: x
 					}), C = Object(ue.k)(g);
 					if (!C) return;
@@ -2880,11 +2880,11 @@
 				l = Object(n.a)(d, e => !!e),
 				m = e => {
 					const t = d(e);
-					return !!t && a(e, t) === s.hb.SkipOnboarding
+					return !!t && a(e, t) === s.gb.SkipOnboarding
 				},
 				u = e => {
 					const t = d(e);
-					return !!t && a(e, t) === s.hb.RegOnboarding
+					return !!t && a(e, t) === s.gb.RegOnboarding
 				}
 		},
 		"./src/redditGQL/operations/CommentToxicity.json": function(e) {
@@ -2901,4 +2901,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/removalReasonActions.b2f9585405ec5ecec050.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/removalReasonActions.8d2fdcc151d75d721fd3.js.map

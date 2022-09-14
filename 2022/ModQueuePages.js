@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModQueuePages.dde04d4ea268eb24bb1d.js
-// Retrieved at 9/14/2022, 4:30:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModQueuePages.7c285fbf54558a870236.js
+// Retrieved at 9/14/2022, 6:00:03 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModQueuePages"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -4646,7 +4646,7 @@
 				N = Object(d.c)({
 					currentPage: e => e.platform.currentPage,
 					origin: y.k,
-					isModQChatCommentsFilterEnabled: S.k
+					isModQChatCommentsFilterEnabled: S.j
 				});
 			var M = Object(i.b)(N)(e => a.a.createElement("div", null, a.a.createElement(j.default, {
 					onClick: e.sendEventWithName("content_type_both"),
@@ -4694,8 +4694,8 @@
 				F = n("./src/reddit/selectors/user.ts");
 			const B = e => Object(A.c)(e, {
 				experimentEligibilitySelector: F.Q,
-				experimentName: L.jc
-			}) === L.Id;
+				experimentName: L.ic
+			}) === L.Hd;
 			var D = n("./src/reddit/components/ModQueueList/SortByNumReportsTooltip.m.less"),
 				U = n.n(D);
 			const W = e => {
@@ -4853,7 +4853,7 @@
 					isPostTypeFilterDropdownOpen: Object(O.b)(ie),
 					isSubredditFilterDropdownOpen: Object(O.b)(ae),
 					isPostSortDropdownOpen: Object(O.b)(de),
-					isModQChatCommentsFilterEnabled: S.k,
+					isModQChatCommentsFilterEnabled: S.j,
 					profile: (e, t) => {
 						let {
 							profileName: n
@@ -7212,12 +7212,12 @@
 						rtJsonElementProps: a
 					});
 					switch (r) {
-						case h.Pf.SmIcon:
+						case h.Of.SmIcon:
 							return o.a.createElement(p, {
 								subredditName: s,
 								rtJsonElementProps: a
 							});
-						case h.Pf.SmIconHc:
+						case h.Of.SmIconHc:
 							return o.a.createElement(p, {
 								subredditName: s,
 								isHoverable: !0,
@@ -8445,12 +8445,12 @@
 				d = e => {
 					return Object(r.c)(e, {
 						experimentEligibilitySelector: i,
-						experimentName: s.If
+						experimentName: s.Hf
 					}) || ""
 				},
 				c = e => {
 					const t = d(e);
-					return t === s.Pf.SmIcon || t === s.Pf.SmIconHc
+					return t === s.Of.SmIcon || t === s.Of.SmIconHc
 				},
 				l = (e, t) => {
 					let {
@@ -8485,4 +8485,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModQueuePages.dde04d4ea268eb24bb1d.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModQueuePages.7c285fbf54558a870236.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SearchResults.a20747cdea5929cfc772.js
-// Retrieved at 9/14/2022, 4:30:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SearchResults.493c2dad238895b46c8b.js
+// Retrieved at 9/14/2022, 6:00:03 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SearchResults"], {
 		"./src/devPlatform/components/ContextActions/ContextActionsLoader.tsx": function(e, t, s) {
@@ -112,8 +112,8 @@
 				f = s("./node_modules/reselect/es/index.js");
 			const O = Object(f.a)(e => Object(x.c)(e, {
 					experimentEligibilitySelector: x.a,
-					experimentName: h.Db
-				}), e => e === h.Id),
+					experimentName: h.Cb
+				}), e => e === h.Hd),
 				j = e => n.fbt._("reddit.com: search results - {query}", [n.fbt._param("query", e || "None")], {
 					hk: "1XOKAg"
 				}),
@@ -4454,8 +4454,8 @@
 				x = s("./node_modules/reselect/es/index.js");
 			const f = Object(x.a)(e => Object(h.c)(e, {
 					experimentEligibilitySelector: h.a,
-					experimentName: b.Fc
-				}), e => e === b.Id),
+					experimentName: b.Ec
+				}), e => e === b.Hd),
 				O = () => {
 					const e = Object(i.e)(f),
 						[t, s] = Object(a.useState)(!1);
@@ -5705,12 +5705,12 @@
 						rtJsonElementProps: a
 					});
 					switch (o) {
-						case h.Pf.SmIcon:
+						case h.Of.SmIcon:
 							return r.a.createElement(p, {
 								subredditName: n,
 								rtJsonElementProps: a
 							});
-						case h.Pf.SmIconHc:
+						case h.Of.SmIconHc:
 							return r.a.createElement(p, {
 								subredditName: n,
 								isHoverable: !0,
@@ -7145,10 +7145,10 @@
 				o = s("./node_modules/reselect/es/index.js");
 			const a = Object(o.a)(e => Object(r.c)(e, {
 				experimentEligibilitySelector: r.a,
-				experimentName: n.zf
+				experimentName: n.yf
 			}), e => ({
-				isSubEnlarged: e === n.Nf.Variant1 || e === n.Nf.Variant3,
-				withCommunityDescription: e === n.Nf.Variant2 || e === n.Nf.Variant3
+				isSubEnlarged: e === n.Mf.Variant1 || e === n.Mf.Variant3,
+				withCommunityDescription: e === n.Mf.Variant2 || e === n.Mf.Variant3
 			}))
 		},
 		"./src/reddit/selectors/experiments/web2x_cta.ts": function(e, t, s) {
@@ -7160,10 +7160,10 @@
 				r = s("./src/reddit/constants/experiments.ts"),
 				o = s("./src/reddit/helpers/chooseVariant/index.ts");
 			const a = Object(n.a)(e => Object(o.c)(e, {
-					experimentName: r.eg,
+					experimentName: r.dg,
 					experimentEligibilitySelector: o.a
 				}), e => e),
-				c = Object(n.a)(a, e => e === r.Vf)
+				c = Object(n.a)(a, e => e === r.Uf)
 		},
 		"./src/reddit/selectors/searchQueryId.ts": function(e, t, s) {
 			"use strict";
@@ -7195,12 +7195,12 @@
 				i = e => {
 					return Object(o.c)(e, {
 						experimentEligibilitySelector: c,
-						experimentName: n.If
+						experimentName: n.Hf
 					}) || ""
 				},
 				d = e => {
 					const t = i(e);
-					return t === n.Pf.SmIcon || t === n.Pf.SmIconHc
+					return t === n.Of.SmIcon || t === n.Of.SmIconHc
 				},
 				l = (e, t) => {
 					let {
@@ -7226,4 +7226,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SearchResults.a20747cdea5929cfc772.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SearchResults.493c2dad238895b46c8b.js.map

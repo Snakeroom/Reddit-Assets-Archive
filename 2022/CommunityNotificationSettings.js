@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CommunityNotificationSettings.016513f6cc6e3e8d8535.js
-// Retrieved at 9/14/2022, 4:30:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CommunityNotificationSettings.49c6eecada00ae837288.js
+// Retrieved at 9/14/2022, 6:00:03 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CommunityNotificationSettings"], {
 		"./node_modules/lodash/times.js": function(e, t, n) {
@@ -377,7 +377,7 @@
 					onSelect: i
 				} = e;
 				var o, d;
-				const c = Object(x.a)(h.U),
+				const c = Object(x.a)(h.T),
 					[l, u] = Object(r.useState)(!1),
 					v = Object(r.useRef)(),
 					C = Object(k.a)(),
@@ -388,11 +388,11 @@
 						isNsfw: w,
 						isMuted: j
 					} = t,
-					I = j && c === h.Id,
+					I = j && c === h.Hd,
 					L = I ? f.b.OFF : N,
 					F = t.styles.icon || (null === (o = t.styles.legacyIcon) || void 0 === o ? void 0 : o.url),
-					M = null !== (d = t.styles.primaryColor) && void 0 !== d ? d : void 0,
-					T = (e => {
+					T = null !== (d = t.styles.primaryColor) && void 0 !== d ? d : void 0,
+					M = (e => {
 						switch (e) {
 							case f.b.OFF:
 								return s.fbt._("Off", null, {
@@ -485,7 +485,7 @@
 						hk: "gEWhf"
 					}),
 					shouldHideNsfwIcon: w,
-					primaryColor: M,
+					primaryColor: T,
 					className: y.a.subredditIcon
 				}), a.a.createElement("div", {
 					className: y.a.subredditInfo
@@ -495,7 +495,7 @@
 					className: y.a.subredditInfoNotification
 				}, I ? s.fbt._("Community is muted", null, {
 					hk: "4ntSSB"
-				}) : s.fbt._("Notifications: {notification level}", [s.fbt._param("notification level", T)], {
+				}) : s.fbt._("Notifications: {notification level}", [s.fbt._param("notification level", M)], {
 					hk: "2YgR3R"
 				})))), a.a.createElement(g.b, {
 					isCompactStyle: !0,
@@ -885,4 +885,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommunityNotificationSettings.016513f6cc6e3e8d8535.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommunityNotificationSettings.49c6eecada00ae837288.js.map

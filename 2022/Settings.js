@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Settings.db53af3223539b8dfc65.js
-// Retrieved at 9/14/2022, 4:30:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Settings.e109ff1e15dc12306c17.js
+// Retrieved at 9/14/2022, 6:00:03 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Settings"], {
 		"./node_modules/moment/locale sync recursive ^\\.\\/.*$": function(e, t, n) {
@@ -11362,8 +11362,8 @@
 				se = n("./src/reddit/helpers/chooseVariant/index.ts");
 			const re = Object(c.a)(e => Object(se.c)(e, {
 				experimentEligibilitySelector: N.Q,
-				experimentName: ne.V
-			}), e => e === ne.fb.Enabled);
+				experimentName: ne.U
+			}), e => e === ne.eb.Enabled);
 			var ae = n("./src/reddit/selectors/meta.ts"),
 				oe = n("./src/reddit/components/Settings/AccountPrefsSection/index.m.less"),
 				ie = n.n(oe);
@@ -13178,8 +13178,8 @@
 				}), e => e === ne.c.Enabled),
 				ir = Object(c.a)(e => Object(se.c)(e, {
 					experimentEligibilitySelector: N.Q,
-					experimentName: ne.S
-				}), e => e === ne.cb.Enabled);
+					experimentName: ne.R
+				}), e => e === ne.bb.Enabled);
 			var cr = n("./src/lib/hooks/usePrevious.ts"),
 				lr = n("./src/telemetry/models/Event.ts");
 			const dr = we.a.span("SubheaderLink", rn.a),
@@ -14436,9 +14436,9 @@
 					},
 					isDspEnabled: e => {
 						return Object(se.c)(e, {
-							experimentName: ne.bd,
+							experimentName: ne.ad,
 							experimentEligibilitySelector: se.a
-						}) === ne.Id
+						}) === ne.Hd
 					}
 				}),
 				bo = Object(fe.u)(),
@@ -14987,7 +14987,7 @@
 			const o = e => Object(r.c)(e, {
 				experimentName: s.G,
 				experimentEligibilitySelector: () => Object(a.P)(e)
-			}) === s.Id
+			}) === s.Hd
 		},
 		"./src/reddit/selectors/experiments/econ/marketplace.ts": function(e, t, n) {
 			"use strict";
@@ -15001,13 +15001,13 @@
 			const a = e => {
 					return !(Object(r.c)(e, {
 						experimentEligibilitySelector: r.a,
-						experimentName: s.re
-					}) === s.Id)
+						experimentName: s.qe
+					}) === s.Hd)
 				},
 				o = e => Object(r.c)(e, {
 					experimentEligibilitySelector: r.a,
-					experimentName: s.se
-				}) === s.Id
+					experimentName: s.re
+				}) === s.Hd
 		},
 		"./src/reddit/selectors/gold/productOffers.ts": function(e, t, n) {
 			"use strict";
@@ -15171,4 +15171,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Settings.db53af3223539b8dfc65.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Settings.e109ff1e15dc12306c17.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditCreation.e4e9297482f28b6b3654.js
-// Retrieved at 9/14/2022, 4:30:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditCreation.24560e90ffdcd4496014.js
+// Retrieved at 9/14/2022, 6:00:03 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditCreation"], {
 		"./node_modules/lodash/_baseRange.js": function(e, t) {
@@ -346,8 +346,8 @@
 				P = n("./src/reddit/components/Settings/shared/Widgets.m.less"),
 				A = n.n(P);
 
-			function H() {
-				return (H = Object.assign || function(e) {
+			function G() {
+				return (G = Object.assign || function(e) {
 					for (var t = 1; t < arguments.length; t++) {
 						var n = arguments[t];
 						for (var a in n) Object.prototype.hasOwnProperty.call(n, a) && (e[a] = n[a])
@@ -356,7 +356,7 @@
 				}).apply(this, arguments)
 			}
 			const W = Object(d.a)(h.a),
-				G = C.a.wrapped(T.a, "Circle", A.a),
+				H = C.a.wrapped(T.a, "Circle", A.a),
 				V = C.a.h3("Label", A.a),
 				Y = C.a.wrapped(O.c, "Subtext", A.a),
 				J = C.a.wrapped(u.a, "HoverTooltip", A.a),
@@ -375,7 +375,7 @@
 						last: d,
 						...m
 					} = e;
-					return r.a.createElement("div", H({}, m, {
+					return r.a.createElement("div", G({}, m, {
 						className: Object(l.a)(A.a.Wrapper, t, {
 							[A.a.mColumn]: "column" === n,
 							[A.a.mDisabled]: !!o,
@@ -400,7 +400,7 @@
 					last: e.last
 				}, r.a.createElement(K, {
 					className: e.textContainerClassName
-				}, r.a.createElement(V, null, e.label, e.isRequired && r.a.createElement(G, null)), r.a.createElement(Y, null, e.subtext)), r.a.createElement(z, null, e.children)),
+				}, r.a.createElement(V, null, e.label, e.isRequired && r.a.createElement(H, null)), r.a.createElement(Y, null, e.subtext)), r.a.createElement(z, null, e.children)),
 				ne = C.a.div("StyledFlair", A.a),
 				ae = C.a.wrapped(ne, "SpoilerFlair", A.a),
 				re = C.a.wrapped(ne, "NSFWFlair", A.a),
@@ -926,9 +926,9 @@
 				L = n("./src/reddit/models/Subreddit/index.ts"),
 				P = n("./src/reddit/models/SubredditRestrictions/index.ts"),
 				A = n("./src/reddit/selectors/experiments/emailInvite.ts"),
-				H = n("./src/reddit/selectors/subreddit.ts"),
+				G = n("./src/reddit/selectors/subreddit.ts"),
 				W = n("./src/reddit/selectors/tags.ts"),
-				G = n("./src/reddit/selectors/user.ts"),
+				H = n("./src/reddit/selectors/user.ts"),
 				V = n("./src/lib/formatApiError/index.ts");
 			const Y = (e, t) => {
 				if (!e) return {};
@@ -975,13 +975,13 @@
 				ae = K.a.wrapped(B.a, "CloseButton", Q.a),
 				re = K.a.wrapped(y.b, "ErrorText", Q.a),
 				se = Object(o.c)({
-					error: H.f,
-					isCreatePending: H.k,
+					error: G.f,
+					isCreatePending: G.k,
 					isEmailInviteExperimentEnabled: A.a,
-					isEmployee: G.N,
-					crosspostId: H.j,
-					userDoesNotHaveEnoughExpToCreateCommunity: e => !Object(G.pb)(e),
-					userIsSuspended: G.X,
+					isEmployee: H.N,
+					crosspostId: G.j,
+					userDoesNotHaveEnoughExpToCreateCommunity: e => !Object(H.pb)(e),
+					userIsSuspended: H.X,
 					allTags: W.e,
 					existingTags: W.f,
 					newTags: W.g,
@@ -1827,11 +1827,11 @@
 			const s = e => {
 				const t = Object(r.c)(e, {
 					experimentEligibilitySelector: r.a,
-					experimentName: a.Hd
+					experimentName: a.Gd
 				});
-				return !(!t || Object(a.pg)(t))
+				return !(!t || Object(a.og)(t))
 			}
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditCreation.e4e9297482f28b6b3654.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditCreation.24560e90ffdcd4496014.js.map

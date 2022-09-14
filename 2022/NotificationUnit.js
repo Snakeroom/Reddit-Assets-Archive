@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/NotificationUnit.71fe4e6fbe18d0fa10c8.js
-// Retrieved at 9/14/2022, 10:00:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/NotificationUnit.e7cc8e22396f8b19602a.js
+// Retrieved at 9/14/2022, 6:00:03 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["NotificationUnit"], {
 		"./src/reddit/components/NotificationUnit/Avatar.tsx": function(e, t, i) {
@@ -453,17 +453,17 @@
 							isInAppNotification: R,
 							isInTooltip: Z,
 							notification: W,
-							shouldHideActionButton: q,
-							setActiveOverflowMenuId: K,
-							onItemClick: Y
+							shouldHideActionButton: X,
+							setActiveOverflowMenuId: q,
+							onItemClick: K
 						} = e;
 					if (!W) return null;
 					const {
 						avatar: $,
 						body: J,
 						context: Q,
-						deeplinkUrl: X,
-						isHideNotifEligible: G,
+						deeplinkUrl: G,
+						isHideNotifEligible: Y,
 						isToggleLowUpdateFromSubredditEligible: ee,
 						isToggleNotificationUpdateEligible: te,
 						isToggleUpdateFromSubredditEligible: ie,
@@ -482,8 +482,8 @@
 						isViewed: !0,
 						type: le
 					}, we = Q.messageType === v.a.AwardReceived, Oe = le === v.a.LifecyclePostSuggestions, Ae = we ? null === (w = null == Q ? void 0 : Q.awarding) || void 0 === w ? void 0 : w.id : "", Ie = null === (_ = null === (U = null == Q ? void 0 : Q.awarding) || void 0 === U ? void 0 : U.target) || void 0 === _ ? void 0 : _.permalink, je = null === (S = null === (y = null == Q ? void 0 : Q.awarding) || void 0 === y ? void 0 : y.award) || void 0 === S ? void 0 : S.id;
-					let Te = (null === (k = null == Q ? void 0 : Q.post) || void 0 === k ? void 0 : k.permalink) || X;
-					we && Ie ? Te = Ie : Oe && X && (Te = X);
+					let Te = (null === (k = null == Q ? void 0 : Q.post) || void 0 === k ? void 0 : k.permalink) || G;
+					we && Ie ? Te = Ie : Oe && G && (Te = G);
 					const Ue = null === (H = null === (M = null == Q ? void 0 : Q.awarding) || void 0 === M ? void 0 : M.awarder) || void 0 === H ? void 0 : H.isAcceptingChats,
 						_e = e => {
 							C(Object(b.l)({
@@ -519,7 +519,7 @@
 							className: O.a.contentContainer
 						}, l.a.createElement(u.a, {
 							dropdownId: ve,
-							isHideNotifEligible: G,
+							isHideNotifEligible: Y,
 							isInTooltip: Z,
 							isOverflowMenuOpen: Ne,
 							isToggleNotificationUpdateEligible: te,
@@ -530,7 +530,7 @@
 								awardId: je
 							})),
 							sentAt: se,
-							setActiveOverflowMenuId: K,
+							setActiveOverflowMenuId: q,
 							title: re,
 							isInAppNotification: R
 						}), z && pe && !be && !R && l.a.createElement(m.a, {
@@ -540,7 +540,7 @@
 							className: Object(c.a)(O.a.body, {
 								[O.a.inAppNotification]: R
 							})
-						}, J), !q && (Ue || we || ge || B && R) && l.a.createElement(I, {
+						}, J), !X && (Ue || we || ge || B && R) && l.a.createElement(I, {
 							context: Q,
 							notificationId: ae,
 							isUnread: fe,
@@ -564,7 +564,7 @@
 										hk: "3sVhIi"
 									}),
 									duration: x.a
-								}))) : Z && Y && Y(), ke({
+								}))) : Z && K && K(), ke({
 									postId: de,
 									subredditId: me,
 									awardId: je,
@@ -599,7 +599,7 @@
 							e.isInTooltip && e.setActiveOverflowMenuId && e.setActiveOverflowMenuId(j), e.blockAwarder && e.blockAwarder(Ae), _e(b.e.BlockAwarder)
 						},
 						isInTooltip: Z,
-						isHideNotifEligible: G,
+						isHideNotifEligible: Y,
 						isOpen: Ne,
 						isToggleLowUpdateFromSubredditEligible: ee,
 						isToggleNotificationUpdateEligible: te,
@@ -770,20 +770,20 @@
 				o = i("./src/reddit/selectors/experiments/index.ts"),
 				s = i("./src/reddit/selectors/experiments/utils.ts");
 			const r = e => Object(a.c)(e, {
-					experimentName: n.Yb,
+					experimentName: n.Xb,
 					experimentEligibilitySelector: o.e
-				}) === n.ib.topOfFeedWithCTAs,
+				}) === n.hb.topOfFeedWithCTAs,
 				l = e => (e => Object(a.c)(e, {
-					experimentName: n.Yb,
+					experimentName: n.Xb,
 					experimentEligibilitySelector: o.e
-				}) === n.ib.topOfFeedNoCTAs)(e) || r(e),
+				}) === n.hb.topOfFeedNoCTAs)(e) || r(e),
 				c = e => Object(a.c)(e, {
-					experimentName: n.Yb,
+					experimentName: n.Xb,
 					experimentEligibilitySelector: o.e
-				}) === n.ib.floatInFeed,
+				}) === n.hb.floatInFeed,
 				d = e => {
 					const t = Object(a.c)(e, {
-						experimentName: n.Yb,
+						experimentName: n.Xb,
 						experimentEligibilitySelector: o.e
 					});
 					return Object(s.a)(t)
@@ -791,4 +791,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/NotificationUnit.71fe4e6fbe18d0fa10c8.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/NotificationUnit.e7cc8e22396f8b19602a.js.map
