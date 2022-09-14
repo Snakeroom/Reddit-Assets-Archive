@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModerationPages.4bfd2d1fc2a0a75c004a.js
-// Retrieved at 9/14/2022, 10:30:06 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModerationPages.f4da26ac55db8299d3f7.js
+// Retrieved at 9/14/2022, 11:20:03 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModerationPages", "CollectionCommentsPage~CommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~RpanListingUnit~S~5809214e", "CommentsPage~Governance~Reddit~ReportFlow~Subreddit~reddit-components-BlankPost~reddit-components-Cl~5351df81", "PostCreation~Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~r~4c415e24", "Governance~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compo~bd4baca2", "Governance~ModListing~Reddit~ReportFlow~Subreddit", "Governance~ModListing~Reddit~Subreddit", "Governance~Reddit~SubredditForkingCTA"], {
 		"./src/chat/controls/Svg/index.m.less": function(e, t, n) {
@@ -52244,11 +52244,12 @@
 					})),
 					{
 						currentUser: n
-					} = Object(d.a)(),
-					s = Object(o.e)(e => t ? Object(u.O)(e, {
-						identifier: t.belongsTo
-					}) : null),
-					r = (null == t ? void 0 : t.belongsTo.type) === i.a.SUBREDDIT ? s : null,
+					} = Object(d.a)();
+				let s = Object(o.e)(e => t ? Object(u.O)(e, {
+					identifier: t.belongsTo
+				}) : null);
+				s || (null == t ? void 0 : t.belongsTo.type) !== i.a.PROFILE || (s = t.profile);
+				const r = (null == t ? void 0 : t.belongsTo.type) === i.a.SUBREDDIT ? s : null,
 					m = !(!n || (null == t ? void 0 : t.author) !== Object(c.e)(n)),
 					p = Object(o.e)(o => ({
 						currentUser: n,
@@ -76397,4 +76398,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.4bfd2d1fc2a0a75c004a.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.f4da26ac55db8299d3f7.js.map
