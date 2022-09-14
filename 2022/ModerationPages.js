@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModerationPages.57355cac8b042620d0a8.js
-// Retrieved at 9/14/2022, 10:00:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModerationPages.4bfd2d1fc2a0a75c004a.js
+// Retrieved at 9/14/2022, 10:30:06 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModerationPages", "CollectionCommentsPage~CommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~RpanListingUnit~S~5809214e", "CommentsPage~Governance~Reddit~ReportFlow~Subreddit~reddit-components-BlankPost~reddit-components-Cl~5351df81", "PostCreation~Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~r~4c415e24", "Governance~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compo~bd4baca2", "Governance~ModListing~Reddit~ReportFlow~Subreddit", "Governance~ModListing~Reddit~Subreddit", "Governance~Reddit~SubredditForkingCTA"], {
 		"./src/chat/controls/Svg/index.m.less": function(e, t, n) {
@@ -73177,8 +73177,9 @@
 			const c = e => {
 					return Object(r.c)(e, {
 						experimentEligibilitySelector: r.a,
-						experimentName: s.T
-					}) === s.db.Enabled
+						experimentName: s.T,
+						expEventOverride: !1
+					}) === s.db.Linked
 				},
 				l = (e, t) => {
 					let {
@@ -76396,4 +76397,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.57355cac8b042620d0a8.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.4bfd2d1fc2a0a75c004a.js.map
