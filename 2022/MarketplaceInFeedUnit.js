@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/MarketplaceInFeedUnit.673b638f3a15b8ef7f75.js
-// Retrieved at 9/14/2022, 10:00:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/MarketplaceInFeedUnit.eab91992b326c9aaa4bc.js
+// Retrieved at 9/14/2022, 4:30:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["MarketplaceInFeedUnit"], {
 		"./src/reddit/components/AvatarBuilder/useMarketplaceConfig.tsx": function(e, t, n) {
@@ -50,7 +50,7 @@
 						},
 						j = Object(s.useCallback)(e => {
 							O(t => {
-								const n = u.n(t);
+								const n = u.o(t);
 								return {
 									...n,
 									...e,
@@ -97,7 +97,7 @@
 						nightModeActive: () => n,
 						sendEvent(e) {
 							c(t => {
-								const n = u.n(t);
+								const n = u.o(t);
 								return {
 									...n,
 									...e,
@@ -297,19 +297,19 @@
 			}));
 			var r = n("./src/reddit/selectors/telemetry.ts");
 			const c = () => e => ({
-					...Object(r.n)(e),
+					...Object(r.o)(e),
 					source: "marketplace",
 					action: "view",
 					noun: "claim_post_unit"
 				}),
 				s = () => e => ({
-					...Object(r.n)(e),
+					...Object(r.o)(e),
 					source: "marketplace",
 					action: "click",
 					noun: "claim_post_unit"
 				}),
 				a = () => e => ({
-					...Object(r.n)(e),
+					...Object(r.o)(e),
 					source: "marketplace",
 					action: "close",
 					noun: "claim_post_unit"
@@ -319,7 +319,7 @@
 				e.Profile = "profile", e.Hovercard = "hovercard"
 			}(o || (o = {}));
 			const i = e => t => {
-				const n = Object(r.n)(t);
+				const n = Object(r.o)(t);
 				return {
 					...n,
 					source: "marketplace",
@@ -357,4 +357,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/MarketplaceInFeedUnit.673b638f3a15b8ef7f75.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/MarketplaceInFeedUnit.eab91992b326c9aaa4bc.js.map

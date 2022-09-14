@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Avatar.17edd0d16f1c9248a3c4.js
-// Retrieved at 9/14/2022, 10:00:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Avatar.320d3f9801d680c072aa.js
+// Retrieved at 9/14/2022, 4:30:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Avatar"], {
 		"./src/reddit/components/AvatarBuilder/index.m.less": function(e, t, a) {
@@ -178,7 +178,7 @@
 						},
 						_ = Object(s.useCallback)(e => {
 							O(t => {
-								const a = u.n(t);
+								const a = u.o(t);
 								return {
 									...a,
 									...e,
@@ -225,7 +225,7 @@
 						nightModeActive: () => a,
 						sendEvent(e) {
 							r(t => {
-								const a = u.n(t);
+								const a = u.o(t);
 								return {
 									...a,
 									...e,
@@ -265,4 +265,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Avatar.17edd0d16f1c9248a3c4.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Avatar.320d3f9801d680c072aa.js.map

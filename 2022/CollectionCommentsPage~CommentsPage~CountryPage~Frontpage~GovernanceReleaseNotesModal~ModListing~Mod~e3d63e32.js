@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~CountryPage~Frontpage~GovernanceReleaseNotesModal~ModListing~Mod~e3d63e32.54e24a79aae3eb0b9989.js
-// Retrieved at 9/13/2022, 3:30:03 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~CountryPage~Frontpage~GovernanceReleaseNotesModal~ModListing~Mod~e3d63e32.defa0c848c8e69b571a4.js
+// Retrieved at 9/14/2022, 4:30:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~CountryPage~Frontpage~GovernanceReleaseNotesModal~ModListing~Mod~e3d63e32"], {
 		"./src/lib/intersectionObserver/index.ts": function(e, t, s) {
@@ -2330,27 +2330,27 @@
 					action: n.d.Click,
 					noun: n.e.MuteSubreddit,
 					targetUser: {
-						id: i.qb(e).id
+						id: i.rb(e).id
 					},
-					...i.n(e)
+					...i.o(e)
 				}),
 				r = () => e => ({
 					source: n.f.CommunityNotificationsSettings,
 					action: n.d.Click,
 					noun: n.e.UnmuteSubreddit,
 					targetUser: {
-						id: i.qb(e).id
+						id: i.rb(e).id
 					},
-					...i.n(e)
+					...i.o(e)
 				}),
 				a = () => e => ({
 					source: n.f.PopularFeed,
 					action: n.d.Click,
 					noun: n.e.MuteSubreddit,
 					targetUser: {
-						id: i.qb(e).id
+						id: i.rb(e).id
 					},
-					...i.n(e)
+					...i.o(e)
 				})
 		},
 		"./src/reddit/hooks/useRecommendationPostContext.ts": function(e, t, s) {
@@ -2366,4 +2366,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~CountryPage~Frontpage~GovernanceReleaseNotesModal~ModListing~Mod~e3d63e32.54e24a79aae3eb0b9989.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~CountryPage~Frontpage~GovernanceReleaseNotesModal~ModListing~Mod~e3d63e32.defa0c848c8e69b571a4.js.map

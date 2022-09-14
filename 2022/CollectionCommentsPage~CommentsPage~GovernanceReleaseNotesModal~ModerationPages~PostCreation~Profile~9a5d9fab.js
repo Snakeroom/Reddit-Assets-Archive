@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~ModerationPages~PostCreation~Profile~9a5d9fab.c8a2ab265c138338b3d8.js
-// Retrieved at 9/14/2022, 10:00:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~ModerationPages~PostCreation~Profile~9a5d9fab.93ee14d1ef379b3f8f66.js
+// Retrieved at 9/14/2022, 4:30:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~ModerationPages~PostCreation~Profile~9a5d9fab"], {
 		"./src/higherOrderComponents/withClickTracking/index.tsx": function(e, t, s) {
@@ -38,7 +38,7 @@
 						}
 						return {
 							...i,
-							actionInfo: Object(r.R)(s, n)
+							actionInfo: Object(r.S)(s, n)
 						}
 					})), u(n.target, n.currentTarget, c.anchorsAndButtons) && i(n)
 				}
@@ -612,8 +612,8 @@
 					} = e,
 					G = Object(o.e)(e => Object(C.d)(e, B)),
 					$ = G > 0,
-					J = G < h.length - 1,
-					Q = Object(p.a)(),
+					Q = G < h.length - 1,
+					J = Object(p.a)(),
 					K = Object(i.useRef)(null),
 					z = Object(i.useRef)(null),
 					[Y, q] = Object(i.useState)(U ? G : -1),
@@ -652,14 +652,14 @@
 						}))
 					}, [t, B, M]),
 					ae = Object(i.useCallback)(() => {
-						if (!J) return;
+						if (!Q) return;
 						const e = G + 1;
 						if (e + 1 >= X) {
 							const e = D(X, h.length);
 							e !== X && Z(e)
 						}
-						ne(e), Q(u.b(B, e)), Q(u.d(B, e + 1)), oe(e)
-					}, [J, G, oe, ne, Q, B, X, h.length]),
+						ne(e), J(u.b(B, e)), J(u.d(B, e + 1)), oe(e)
+					}, [Q, G, oe, ne, J, B, X, h.length]),
 					de = Object(i.useCallback)(() => {
 						if (!$) return;
 						const e = G - 1;
@@ -668,12 +668,12 @@
 							e !== Y && q(e)
 						}
 						const t = G + 1;
-						ne(e), Q(u.a(B, t)), Q(u.d(B, t - 1)), oe(e)
-					}, [$, G, oe, ne, Q, B, Y]),
+						ne(e), J(u.a(B, t)), J(u.d(B, t - 1)), oe(e)
+					}, [$, G, oe, ne, J, B, Y]),
 					le = Object(i.useCallback)(() => {
 						const e = h[G] && h[G].outboundUrl;
-						e && Q(u.c(B, e))
-					}, [Q, B, G, h]);
+						e && J(u.c(B, e))
+					}, [J, B, G, h]);
 				m(y.a.ArrowLeft, K.current, de), m(y.a.ArrowRight, K.current, ae);
 				const ce = h[G] && h[G].caption,
 					ue = h[G] && h[G].outboundUrl,
@@ -772,7 +772,7 @@
 				}), n.a.createElement(L, {
 					onClick: ae,
 					setFocusTo: z,
-					hasMoreSlides: J,
+					hasMoreSlides: Q,
 					title: S._("Next", null, {
 						hk: "3Ajk1H"
 					}),
@@ -1112,8 +1112,8 @@
 				U = s("./src/reddit/components/RawHTMLDisplay/Media.tsx"),
 				G = s("./src/reddit/components/RichTextJson/index.tsx"),
 				$ = s("./src/reddit/constants/componentSizes.ts"),
-				J = s("./src/reddit/constants/screenWidths.ts"),
-				Q = s("./src/reddit/contexts/PageLayer/index.tsx"),
+				Q = s("./src/reddit/constants/screenWidths.ts"),
+				J = s("./src/reddit/contexts/PageLayer/index.tsx"),
 				K = s("./src/reddit/helpers/canPreviewSelfText/index.ts"),
 				z = s("./src/reddit/helpers/getRichTextContent/index.ts"),
 				Y = s("./src/reddit/helpers/mediaGallery/index.tsx"),
@@ -1191,7 +1191,7 @@
 					} = e;
 					return !!t.media && Se.has(t.media.type)
 				},
-				Ne = Object(Q.u)(),
+				Ne = Object(J.u)(),
 				Le = Object(p.c)({
 					canUseOCRAltText: (e, t) => Object(oe.b)(e, t.post),
 					OCRAltText: (e, t) => {
@@ -1419,7 +1419,7 @@
 				getVideoExpandoMaxDimensions() {
 					let e, t = Math.max(te.j, this.state.viewportHeight),
 						s = Math.min(ye, 16 * t / 9);
-					s === ye && (t = 9 * ye / 16), e = this.state.viewportWidth >= J.c ? this.state.viewportWidth < $.k ? this.state.viewportWidth - Ce - 2 * Oe : this.state.viewportWidth - Ce - $.e - 2 * Oe : this.state.viewportWidth - 2 * Oe;
+					s === ye && (t = 9 * ye / 16), e = this.state.viewportWidth >= Q.c ? this.state.viewportWidth < $.k ? this.state.viewportWidth - Ce - 2 * Oe : this.state.viewportWidth - Ce - $.e - 2 * Oe : this.state.viewportWidth - 2 * Oe;
 					const i = this.state.viewportHeight - 2 * Oe;
 					if (s > e) {
 						t *= e / s, s = e
@@ -1537,9 +1537,9 @@
 						showCentered: N,
 						showFull: P = !1,
 						showPromotedCTA: $,
-						subredditOrProfileDisplayText: J
+						subredditOrProfileDisplayText: Q
 					} = this.props, {
-						canLoadContent: Q,
+						canLoadContent: J,
 						isBackgrounded: q,
 						shouldPause: se,
 						shouldStop: ie,
@@ -1574,7 +1574,7 @@
 						we = this.shouldBlur(),
 						Ce = !((null === (e = j.pollData) || void 0 === e ? void 0 : e.isPrediction) && !d),
 						Te = !(!j.isSponsored || !j.source),
-						je = Object(ue.tb)() || "",
+						je = Object(ue.ub)() || "",
 						Se = j.isSponsored ? Object(F.b)(j.id, {
 							fireAdPixelsOfType: o,
 							openPost: T
@@ -1585,7 +1585,7 @@
 					if (me && we) return u.a.createElement(R.a, ge({}, ye, {
 						blurSrc: me
 					}), u.a.createElement(Ie, {
-						isVisible: Q
+						isVisible: J
 					}, u.a.createElement(D.a, ge({}, ve, {
 						altText: this.getAltText(),
 						className: this.props.imageBoxClassName,
@@ -1612,7 +1612,7 @@
 							if (!P && !Object(K.a)(j)) return null;
 							const n = j.isMeta ? Object(ee.a)(e, j.id) : e;
 							return u.a.createElement(u.a.Fragment, null, Ce && u.a.createElement(B.a, {
-								canLoadContent: Q,
+								canLoadContent: J,
 								className: s,
 								"data-click-id": "text",
 								"data-adclicklocation": h.a.MEDIA,
@@ -1675,7 +1675,7 @@
 							return this.props.isMiniCard && j.preview && j.preview.url ? u.a.createElement(R.a, ge({}, ye, {
 								alwaysWrapMedia: !0
 							}), u.a.createElement(Ie, {
-								isVisible: Q
+								isVisible: J
 							}, u.a.createElement(u.a.Fragment, null, u.a.createElement(D.a, ge({}, ve, {
 								className: this.props.imageBoxClassName,
 								contentImageClassName: this.props.imageBoxContentImageClassName,
@@ -1691,7 +1691,7 @@
 								originalSource: j.preview.url,
 								onPostMediaClick: this.handlePostMediaClick
 							})), u.a.createElement(W.a, null)))) : te.h.has(j.media.provider) ? j.media.provider === te.v.Twitter ? u.a.createElement(u.a.Fragment, null, u.a.createElement(V.a, {
-								canLoadContent: Q,
+								canLoadContent: J,
 								embedBoxChildRef: this.storeChildRef,
 								mediaContainerProps: ye,
 								onIframeLoaded: this.onIframeLoaded,
@@ -1705,7 +1705,7 @@
 								alwaysWrapMedia: !0,
 								height: c ? pe : te.j,
 								width: c ? he : te.j * (16 / 9)
-							}), Q && u.a.createElement(_.a, {
+							}), J && u.a.createElement(_.a, {
 								childRef: this.storeChildRef,
 								height: c ? pe : te.j,
 								width: c ? he : void 0,
@@ -1721,7 +1721,7 @@
 								rtJsonElementProps: ke(this.props)
 							})) : u.a.createElement(u.a.Fragment, null, u.a.createElement(R.a, ge({}, ye, {
 								alwaysWrapMedia: !0
-							}), Q && u.a.createElement(_.a, ge({}, ve, {
+							}), J && u.a.createElement(_.a, ge({}, ve, {
 								isResponsive: c || j.media.provider === te.v.IFrameEmbed,
 								title: j.title,
 								childRef: this.storeChildRef,
@@ -1738,7 +1738,7 @@
 							return e > te.j && (t = he / pe * (e = te.j)), u.a.createElement(R.a, ge({}, ye, {
 								blurSrc: Ee ? j.media.gifBackgroundImage : void 0
 							}), u.a.createElement(Ie, {
-								isVisible: Q
+								isVisible: J
 							}, u.a.createElement(H.a, ge({}, ve, {
 								isNotCardView: g,
 								height: c ? void 0 : e,
@@ -1759,7 +1759,7 @@
 							if (this.props.isMiniCard && e) return u.a.createElement(u.a.Fragment, null, u.a.createElement(R.a, ge({}, ye, {
 								alwaysWrapMedia: !0
 							}), u.a.createElement(Ie, {
-								isVisible: Q
+								isVisible: J
 							}, u.a.createElement(u.a.Fragment, null, u.a.createElement(D.a, ge({}, ve, {
 								className: this.props.imageBoxClassName,
 								contentImageClassName: this.props.imageBoxContentImageClassName,
@@ -1791,7 +1791,7 @@
 								n = u.a.createElement(R.a, ge({}, ye, {
 									alwaysWrapMedia: !0,
 									isVideo: !0
-								}), Q && u.a.createElement(fe, {
+								}), J && u.a.createElement(fe, {
 									autoPlay: t && !1 === se,
 									isExpando: c,
 									shouldLoad: !0,
@@ -1827,10 +1827,10 @@
 						}
 						case te.o.LIVEVIDEO:
 							return u.a.createElement(Ie, {
-								isVisible: Q
+								isVisible: J
 							}, u.a.createElement(xe, {
 								className: this.props.isMiniCard ? be.a.miniCardVideo : void 0,
-								canLoad: Q,
+								canLoad: J,
 								postId: j.id,
 								postTitle: j.title,
 								shouldPause: de || le,
@@ -1844,7 +1844,7 @@
 								blurSrc: Ee ? l : void 0,
 								isExpando: !!c
 							}), u.a.createElement(Ie, {
-								isVisible: Q
+								isVisible: J
 							}, u.a.createElement(D.a, ge({}, ve, {
 								altText: this.getAltText(),
 								className: this.props.imageBoxClassName,
@@ -1878,12 +1878,12 @@
 								className: be.a.galleryMediaContainer,
 								isGalleryTileLayout: m
 							}), u.a.createElement(Ie, {
-								isVisible: Q
+								isVisible: J
 							}, u.a.createElement(k.a, {
 								post: j,
 								postId: j.id,
 								postTitle: j.title,
-								subredditName: J,
+								subredditName: Q,
 								galleryItems: j.media.gallery ? j.media.gallery.items : [],
 								mediaMetadata: j.media.mediaMetadata || {},
 								imageHeight: x,
@@ -1899,7 +1899,7 @@
 								onClickRevealBlurred: this.onClickRevealBlurred,
 								isTileLayout: !!m,
 								shouldShowTileLayoutOption: this.props.shouldShowGalleryTileOption,
-								isVisible: Q
+								isVisible: J
 							}), ae && u.a.createElement(L.a, {
 								content: re,
 								rtJsonElementProps: ke(this.props)
@@ -2198,16 +2198,16 @@
 				o = s("./src/reddit/selectors/media.ts"),
 				r = s("./src/reddit/selectors/telemetry.ts");
 			const a = (e, t, s) => ({
-					gallery: r.r(e, t, s),
-					post: r.J(e, t),
-					...r.n(e)
+					gallery: r.s(e, t, s),
+					post: r.K(e, t),
+					...r.o(e)
 				}),
 				d = (e, t) => s => ({
 					...a(s, e, t),
 					action: i.c.VIEW,
 					noun: "media",
 					source: "gallery",
-					media: r.B(s, e)
+					media: r.C(s, e)
 				}),
 				l = (e, t) => s => {
 					const d = Object(n.a)(t),
@@ -2218,7 +2218,7 @@
 						noun: "outbound_url",
 						source: "gallery",
 						media: {
-							...r.B(s, e),
+							...r.C(s, e),
 							outboundUrl: t,
 							outboundDomain: d ? d.hostname : void 0
 						}
@@ -2388,4 +2388,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~ModerationPages~PostCreation~Profile~9a5d9fab.c8a2ab265c138338b3d8.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~ModerationPages~PostCreation~Profile~9a5d9fab.93ee14d1ef379b3f8f66.js.map

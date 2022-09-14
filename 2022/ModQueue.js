@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModQueue.caf4fda109126a462c9c.js
-// Retrieved at 9/14/2022, 12:50:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModQueue.c93b4e6fa39178fdafe2.js
+// Retrieved at 9/14/2022, 4:30:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModQueue"], {
 		"./src/reddit/actions/bulkActions/index.ts": function(e, t, o) {
@@ -501,8 +501,8 @@
 			const F = Object(n.a)(T.j),
 				Q = Object(n.a)(T.i),
 				q = Object(n.a)(T.h),
-				U = Object(n.a)(T.g),
-				B = Object(n.a)(T.f),
+				B = Object(n.a)(T.g),
+				U = Object(n.a)(T.f),
 				H = Object(n.a)(T.e),
 				V = Object(n.a)(T.n),
 				G = Object(n.a)(T.m),
@@ -522,7 +522,7 @@
 					let p, f, O;
 					switch (t) {
 						case r.ub.Edited:
-							p = U, f = H, O = B;
+							p = B, f = H, O = U;
 							break;
 						case r.ub.Modqueue:
 							p = F, f = q, O = Q;
@@ -603,12 +603,12 @@
 						source: "bulk_mod_action_menu",
 						action: "click",
 						noun: e,
-						...N.n(p),
+						...N.o(p),
 						actionInfo: N.d(p, {
 							count: O.length,
 							paneName: p.platform.currentPage ? p.platform.currentPage.urlParams.pageName : void 0
 						}),
-						screen: N.ab(p),
+						screen: N.bb(p),
 						correlationId: v
 					});
 					for (let t = 0; t < O.length; t++) {
@@ -618,16 +618,16 @@
 							source: "bulk_mod_action",
 							action: "click",
 							noun: s,
-							...N.n(p),
+							...N.o(p),
 							actionInfo: N.d(p, {
 								count: O.length,
 								paneName: p.platform.currentPage ? p.platform.currentPage.urlParams.pageName : void 0
 							}),
 							comment: N.h(p, o),
-							post: N.J(p, o),
-							profile: N.U(p, o),
-							screen: N.ab(p),
-							subreddit: N.lb(p, o),
+							post: N.K(p, o),
+							profile: N.V(p, o),
+							screen: N.bb(p),
+							subreddit: N.mb(p, o),
 							correlationId: v
 						})
 					}
@@ -1079,7 +1079,7 @@
 				F = o("./src/lib/omitHeaders/index.ts"),
 				Q = o("./src/reddit/constants/headers.ts"),
 				q = o("./src/reddit/models/RichTextJson/addRTJParam.ts");
-			const U = (e, t) => Object(T.a)(Object(F.a)(e, [Q.a]), {
+			const B = (e, t) => Object(T.a)(Object(F.a)(e, [Q.a]), {
 					endpoint: `${e.apiUrl}/api/v1/modactions/removal_reasons/`,
 					method: k.mb.POST,
 					type: "json",
@@ -1089,7 +1089,7 @@
 						mod_note: t.modNote
 					}
 				}),
-				B = (e, t, o) => Object(T.a)(Object(F.a)(e, [Q.a]), {
+				U = (e, t, o) => Object(T.a)(Object(F.a)(e, [Q.a]), {
 					endpoint: Object(q.a)(`${e.apiUrl}/api/v1/modactions/removal_${o}_message/`),
 					method: k.mb.POST,
 					type: "json",
@@ -1228,7 +1228,7 @@
 							modNote: r,
 							reasonId: t ? t.id : null
 						},
-						j = await U(c(), O);
+						j = await B(c(), O);
 					if (j.ok) {
 						if (d(je()), t) {
 							d(_e());
@@ -1239,7 +1239,7 @@
 									isLocked: n,
 									type: s
 								},
-								a = await B(c(), Object(z.h)(r, b), b);
+								a = await U(c(), Object(z.h)(r, b), b);
 							if (a.ok) {
 								if ([z.f.Public, z.f.PublicAsSubreddit].includes(s)) {
 									if (d(ge()), a.body) {
@@ -1324,7 +1324,7 @@
 							modNote: n,
 							reasonId: t ? t.id : null
 						},
-						p = await U(c(), b);
+						p = await B(c(), b);
 					if (p.ok) {
 						const s = {
 							ids: e,
@@ -1342,7 +1342,7 @@
 									title: t.title,
 									type: r
 								},
-								n = await B(c(), Object(z.h)(s, z.e.Bulk), z.e.Bulk);
+								n = await U(c(), Object(z.h)(s, z.e.Bulk), z.e.Bulk);
 							n.ok ? (d(he()), d(m)) : d(Se(n.error))
 						} else d(m)
 					} else d(ve(p.error))
@@ -1537,4 +1537,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModQueue.caf4fda109126a462c9c.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModQueue.c93b4e6fa39178fdafe2.js.map

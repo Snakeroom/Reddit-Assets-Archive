@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/FramedGild~GildModal.8cf93dcf5744c43fe536.js
-// Retrieved at 9/14/2022, 10:00:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/FramedGild~GildModal.3263a176077d91d890cf.js
+// Retrieved at 9/14/2022, 4:30:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["FramedGild~GildModal", "gildActions"], {
 		"./node_modules/@stripe/react-stripe-js/dist/react-stripe.umd.js": function(e, t, r) {
@@ -4419,10 +4419,10 @@
 							ext: i,
 							s: c
 						} = e;
-						if (Object(h.g)(s)) {
+						if (Object(h.h)(s)) {
 							const e = n.renderingObjectInfo,
 								d = !!e && Object(b.b)(e),
-								l = i || Object(h.f)(s);
+								l = i || Object(h.g)(s);
 							return a.a.createElement("div", {
 								className: Object(o.a)({
 									[w.a.MediaWrapper]: !d,
@@ -4567,7 +4567,7 @@
 						}, O)
 					}, this.sendEvent = e => {
 						this.props.sendEvent(t => {
-							const r = p.n(t);
+							const r = p.o(t);
 							return {
 								source: "meta",
 								action: e,
@@ -4577,7 +4577,7 @@
 									...r.actionInfo,
 									reason: this.props.node.id
 								},
-								subreddit: p.ib(t)
+								subreddit: p.jb(t)
 							}
 						})
 					}
@@ -4732,7 +4732,7 @@
 						key: e
 					}, i.a.createElement("br", null)))(n);
 					const a = e.c[0];
-					return a.e !== m.m && a.e !== m.a || !Object(P.g)(a.id) ? i.a.createElement(c.j, {
+					return a.e !== m.m && a.e !== m.a || !Object(P.h)(a.id) ? i.a.createElement(c.j, {
 						key: n
 					}, G(e.c, t, r, s)) : Object(y.b)(a, n, r, t)
 				},
@@ -5415,15 +5415,15 @@
 				e.LINK = "link", e.DISCOVERY_UNIT = "discovery_unit"
 			}(s || (s = {}));
 			const m = e => ({
-					...u.n(e),
+					...u.o(e),
 					source: s.LINK,
 					action: a.c.CLICK,
 					noun: n.INTERNAL_LINK
 				}),
 				p = e => ({
-					...u.n(e),
+					...u.o(e),
 					source: s,
-					screen: u.ab(e),
+					screen: u.bb(e),
 					discoveryUnit: {
 						id: "xd_100",
 						name: n.SUBREDDIT_HOVERCARD,
@@ -5468,8 +5468,8 @@
 					if (!r || !Object(i.b)(r) && !Object(o.b)(r)) return {};
 					const n = Object(i.b)(r) ? r.belongsTo.id : r.subredditId;
 					return {
-						post: u.J(e, r.id),
-						subreddit: u.jb(e, n),
+						post: u.K(e, r.id),
+						subreddit: u.kb(e, n),
 						...b(e, t)
 					}
 				},
@@ -5482,44 +5482,44 @@
 					source: "global",
 					action: a.c.VIEW,
 					noun: n.SUBREDDIT_HOVERCARD,
-					subreddit: u.kb(t, e),
-					screen: u.ab(t)
+					subreddit: u.lb(t, e),
+					screen: u.bb(t)
 				}),
 				v = (e, t) => r => ({
 					...p(r),
 					source: s.DISCOVERY_UNIT,
 					action: a.c.VIEW,
 					noun: n.ITEM_POST,
-					post: u.J(r, t),
-					subreddit: u.kb(r, e),
-					screen: u.ab(r)
+					post: u.K(r, t),
+					subreddit: u.lb(r, e),
+					screen: u.bb(r)
 				}),
 				O = (e, t) => r => ({
 					...p(r),
 					source: s.DISCOVERY_UNIT,
 					action: a.c.CLICK,
 					noun: n.ITEM_POST,
-					post: u.J(r, t),
-					subreddit: u.kb(r, e),
-					screen: u.ab(r)
+					post: u.K(r, t),
+					subreddit: u.lb(r, e),
+					screen: u.bb(r)
 				}),
 				j = e => t => ({
 					...p(t),
-					subreddit: u.jb(t, e) || null,
+					subreddit: u.kb(t, e) || null,
 					source: s.DISCOVERY_UNIT,
 					action: a.c.CLICK,
 					noun: n.HEADER_SUBREDDIT
 				}),
 				w = e => t => ({
 					...p(t),
-					subreddit: u.jb(t, e) || null,
+					subreddit: u.kb(t, e) || null,
 					source: s.DISCOVERY_UNIT,
 					action: a.c.CLICK,
 					noun: n.HEADER_SUBREDDIT_SUBSCRIBE
 				}),
 				x = e => t => ({
 					...p(t),
-					subreddit: u.jb(t, e) || null,
+					subreddit: u.kb(t, e) || null,
 					source: s.DISCOVERY_UNIT,
 					action: a.c.CLICK,
 					noun: n.HEADER_SUBREDDIT_UNSUBSCRIBE
@@ -6197,4 +6197,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/FramedGild~GildModal.8cf93dcf5744c43fe536.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/FramedGild~GildModal.3263a176077d91d890cf.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/GovernanceWalletRegistration.21f5bbd5e2f862de6bfc.js
-// Retrieved at 9/12/2022, 2:10:03 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/GovernanceWalletRegistration.8c46c1edefeda63edd5f.js
+// Retrieved at 9/14/2022, 4:30:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["GovernanceWalletRegistration"], {
 		"./src/chat/controls/Svg/index.m.less": function(e, t, n) {
@@ -1050,14 +1050,14 @@
 							activeTab: e
 						} = this.state;
 						if (e === q.Registered) return this.props.onRefreshWallet(), this.props.onComplete(), void this.props.sendEvent(e => {
-							const t = m.n(e);
+							const t = m.o(e);
 							return {
 								source: "meta",
 								action: "complete",
 								noun: "wallet_registration",
 								correlationId: this.correlationId,
 								...t,
-								subreddit: m.ib(e)
+								subreddit: m.jb(e)
 							}
 						});
 						const t = e === q.About ? q.MetaMask : e === q.MetaMask ? q.Wallet : e === q.Wallet ? q.Connect : e === q.Connect ? q.Verify : q.Registered;
@@ -1075,7 +1075,7 @@
 				}
 				sendViewTabEvent(e) {
 					this.props.sendEvent(t => {
-						const n = m.n(t);
+						const n = m.o(t);
 						return {
 							source: "meta",
 							action: "view",
@@ -1086,7 +1086,7 @@
 								...n.actionInfo,
 								paneName: e + ""
 							},
-							subreddit: m.ib(t)
+							subreddit: m.jb(t)
 						}
 					})
 				}
@@ -1941,4 +1941,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/GovernanceWalletRegistration.21f5bbd5e2f862de6bfc.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/GovernanceWalletRegistration.8c46c1edefeda63edd5f.js.map

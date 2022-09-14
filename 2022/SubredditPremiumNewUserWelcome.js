@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditPremiumNewUserWelcome.9bddc4206b7c16847672.js
-// Retrieved at 9/13/2022, 3:30:03 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditPremiumNewUserWelcome.4ba0b0d8699a615146b2.js
+// Retrieved at 9/14/2022, 4:30:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditPremiumNewUserWelcome"], {
 		"./node_modules/lodash/flattenDeep.js": function(e, t, n) {
@@ -794,8 +794,8 @@
 							action: "click",
 							noun: "new_user_welcome_learn_more",
 							correlationId: e.correlationId,
-							...E.n(t),
-							subreddit: E.ib(t)
+							...E.o(t),
+							subreddit: E.jb(t)
 						}))
 					}, O.fbt._("You can learn more here", null, {
 						hk: "49vQ0b"
@@ -823,8 +823,8 @@
 							action: "click",
 							noun: "new_user_welcome_claim_badge",
 							correlationId: this.props.correlationId,
-							...E.n(e),
-							subreddit: E.ib(e)
+							...E.o(e),
+							subreddit: E.jb(e)
 						})))
 					}
 				}
@@ -901,8 +901,8 @@
 						action: "view",
 						noun: "new_user_welcome",
 						correlationId: this.correlationId,
-						...E.n(e),
-						subreddit: E.ib(e)
+						...E.o(e),
+						subreddit: E.jb(e)
 					}))), s.a.createElement("article", {
 						className: Object(d.a)(Q.a.container, e)
 					}, s.a.createElement(N, {
@@ -2410,4 +2410,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditPremiumNewUserWelcome.9bddc4206b7c16847672.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditPremiumNewUserWelcome.4ba0b0d8699a615146b2.js.map

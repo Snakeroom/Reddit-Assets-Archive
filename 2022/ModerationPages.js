@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModerationPages.8f3f6f6f948b631812b0.js
-// Retrieved at 9/14/2022, 12:50:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModerationPages.a65adbafd6be83846a1f.js
+// Retrieved at 9/14/2022, 4:30:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModerationPages", "CollectionCommentsPage~CommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~RpanListingUnit~S~5809214e", "CommentsPage~Governance~Reddit~ReportFlow~Subreddit~reddit-components-BlankPost~reddit-components-Cl~5351df81", "PostCreation~Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~r~4c415e24", "Governance~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compo~bd4baca2", "Governance~ModListing~Reddit~ReportFlow~Subreddit", "Governance~ModListing~Reddit~Subreddit", "Governance~Reddit~SubredditForkingCTA"], {
 		"./src/chat/controls/Svg/index.m.less": function(e, t, n) {
@@ -258,7 +258,7 @@
 				o = n("./node_modules/react-redux/es/index.js"),
 				i = n("./src/reddit/selectors/telemetry.ts");
 			const a = e => (e, t, n) => ({
-				...i.n(e),
+				...i.o(e),
 				source: "post",
 				action: "click",
 				noun: "ad",
@@ -268,16 +268,16 @@
 				actionInfo: i.d(e),
 				adblock: i.e(e),
 				app: i.f(e),
-				feed: i.q(e),
-				geo: i.s(e),
-				platform: i.H(e),
-				referrer: i.X(e),
-				request: i.Y(e),
-				screen: i.ab(e),
-				session: i.eb(e),
-				user: i.qb(e),
-				media: n ? i.B(e, n) : null,
-				post: n ? i.J(e, n) : null
+				feed: i.r(e),
+				geo: i.t(e),
+				platform: i.I(e),
+				referrer: i.Y(e),
+				request: i.Z(e),
+				screen: i.bb(e),
+				session: i.fb(e),
+				user: i.rb(e),
+				media: n ? i.C(e, n) : null,
+				post: n ? i.K(e, n) : null
 			});
 			var d = n("./src/higherOrderComponents/withAdClickLocation/Locations.ts"),
 				c = n("./src/telemetry/index.ts");
@@ -6656,12 +6656,12 @@
 						source: "bulk_mod_action_menu",
 						action: "click",
 						noun: e,
-						...R.n(b),
+						...R.o(b),
 						actionInfo: R.d(b, {
 							count: h.length,
 							paneName: b.platform.currentPage ? b.platform.currentPage.urlParams.pageName : void 0
 						}),
-						screen: R.ab(b),
+						screen: R.bb(b),
 						correlationId: g
 					});
 					for (let t = 0; t < h.length; t++) {
@@ -6671,16 +6671,16 @@
 							source: "bulk_mod_action",
 							action: "click",
 							noun: s,
-							...R.n(b),
+							...R.o(b),
 							actionInfo: R.d(b, {
 								count: h.length,
 								paneName: b.platform.currentPage ? b.platform.currentPage.urlParams.pageName : void 0
 							}),
 							comment: R.h(b, n),
-							post: R.J(b, n),
-							profile: R.U(b, n),
-							screen: R.ab(b),
-							subreddit: R.lb(b, n),
+							post: R.K(b, n),
+							profile: R.V(b, n),
+							screen: R.bb(b),
+							subreddit: R.mb(b, n),
 							correlationId: g
 						})
 					}
@@ -7721,12 +7721,12 @@
 						source: _.b.Chat,
 						action: _.a.OptOut,
 						noun: "down_to_chat_subreddit",
-						subreddit: Object(h.ib)(e),
+						subreddit: Object(h.jb)(e),
 						setting: {
 							oldValue: t,
 							value: n
 						},
-						...Object(h.n)(e)
+						...Object(h.o)(e)
 					})
 				}, A = (e, t) => async (n, s) => {
 					t.forEach(t => {
@@ -11864,10 +11864,10 @@
 				x = n("./src/reddit/selectors/telemetry.ts"),
 				O = n("./src/telemetry/index.ts");
 			const E = e => ({
-				...x.n(e),
-				screen: x.ab(e),
-				profile: x.S(e),
-				subreddit: x.ib(e)
+				...x.o(e),
+				screen: x.bb(e),
+				profile: x.T(e),
+				subreddit: x.jb(e)
 			});
 			var C = n("./src/reddit/helpers/trackers/postComposer.ts"),
 				y = n("./src/reddit/models/PostCreationForm/index.ts"),
@@ -22669,12 +22669,12 @@
 					actionInfo: {
 						pageType: t ? "post_detail" : "home"
 					},
-					listing: Object(w.y)(o, void 0, {
+					listing: Object(w.z)(o, void 0, {
 						oldSort: n,
 						sort: s,
 						source: r
 					}),
-					userSubreddit: Object(w.sb)(o)
+					userSubreddit: Object(w.tb)(o)
 				}),
 				N = (e, t) => n => ({
 					source: "comment_highlighting",
@@ -22682,8 +22682,8 @@
 					noun: e
 				}),
 				P = e => ({
-					subreddit: Object(w.ib)(e),
-					userSubreddit: Object(w.sb)(e)
+					subreddit: Object(w.jb)(e),
+					userSubreddit: Object(w.tb)(e)
 				}),
 				R = e => t => ({
 					source: "contest_mode",
@@ -32499,9 +32499,9 @@
 				M = n("./src/reddit/helpers/flair.ts"),
 				L = n("./src/reddit/selectors/telemetry.ts");
 			const D = e => ({
-					subreddit: L.ib(e),
-					profile: L.S(e),
-					userSubreddit: L.sb(e)
+					subreddit: L.jb(e),
+					profile: L.T(e),
+					userSubreddit: L.tb(e)
 				}),
 				F = e => t => ({
 					source: "grant_user_flair",
@@ -35916,9 +35916,9 @@
 				E = n("./src/reddit/controls/Button/index.tsx"),
 				C = n("./src/reddit/selectors/telemetry.ts");
 			const y = e => ({
-					subreddit: C.ib(e),
-					profile: C.S(e),
-					userSubreddit: C.sb(e)
+					subreddit: C.jb(e),
+					profile: C.T(e),
+					userSubreddit: C.tb(e)
 				}),
 				j = (e, t) => n => ({
 					source: "emoji",
@@ -39760,8 +39760,8 @@
 				Q = n("./src/reddit/components/ConfirmUserActionModal/index.tsx"),
 				J = n("./src/reddit/selectors/telemetry.ts");
 			const Y = e => ({
-					screen: J.ab(e),
-					subreddit: J.ib(e)
+					screen: J.bb(e),
+					subreddit: J.jb(e)
 				}),
 				X = e => t => ({
 					source: "remove_mod_invite",
@@ -44690,9 +44690,9 @@
 							action: "click",
 							noun: e,
 							comment: n && Object(y.h)(s, n) || null,
-							post: n && Object(y.J)(s, n) || null,
-							screen: Object(y.ab)(s),
-							subreddit: Object(y.jb)(s, this.props.subredditId),
+							post: n && Object(y.K)(s, n) || null,
+							screen: Object(y.bb)(s),
+							subreddit: Object(y.kb)(s, this.props.subredditId),
 							...t || {}
 						}))
 					}, this.onSelectRemovalType = e => {
@@ -49301,9 +49301,9 @@
 				R = n("./src/reddit/controls/Sortable/index.tsx"),
 				A = n("./src/reddit/selectors/telemetry.ts");
 			const M = e => ({
-					subreddit: A.ib(e),
-					profile: A.S(e),
-					userSubreddit: A.sb(e)
+					subreddit: A.jb(e),
+					profile: A.T(e),
+					userSubreddit: A.tb(e)
 				}),
 				L = e => t => ({
 					source: "rules",
@@ -50388,7 +50388,7 @@
 							const t = n.getState(),
 								s = e(t);
 							Object(a.a)({
-								...i.n(t),
+								...i.o(t),
 								...s
 							})
 						}
@@ -56250,7 +56250,7 @@
 					let t = [];
 					if (e.document) {
 						const n = e.document || [];
-						t = Object(o.d)(n)
+						t = Object(o.e)(n)
 					}
 					return t
 				},
@@ -57004,8 +57004,8 @@
 						source: "feed",
 						action: "remove",
 						noun: "ad",
-						...i.n(e),
-						listing: i.y(e, t)
+						...i.o(e),
+						listing: i.z(e, t)
 					}) : g.push(n.id)
 				}
 				return {
@@ -58681,8 +58681,8 @@
 					source: "post",
 					action: "view",
 					noun: "programmatic_ad",
-					...o.n(r),
-					subreddit: o.ib(r),
+					...o.o(r),
+					subreddit: o.jb(r),
 					programmatic: {
 						adUnit: null !== e && null !== t ? `DESKTOP ${e}x${t} ${n}` : `DESKTOP ${n}`,
 						count: 1,
@@ -58721,14 +58721,14 @@
 			var s = n("./src/reddit/constants/blade.ts"),
 				r = n("./src/reddit/selectors/telemetry.ts");
 			const o = (e, t) => n => ({
-					...r.n(n),
+					...r.o(n),
 					source: s.c.Appearance,
 					action: "click",
 					noun: e,
 					actionInfo: r.d(n, {
 						paneName: t
 					}),
-					subreddit: r.ib(n)
+					subreddit: r.jb(n)
 				}),
 				i = e => o("save_style", e),
 				a = e => o("cancel_style", e),
@@ -58736,15 +58736,15 @@
 					source: s.c.Structure,
 					action: "click",
 					noun: e,
-					screen: r.ab(t),
-					subreddit: r.ib(t)
+					screen: r.bb(t),
+					subreddit: r.jb(t)
 				}),
 				c = e => t => ({
 					source: s.c.Appearance,
 					action: "click",
 					noun: e,
-					screen: r.ab(t),
-					subreddit: r.ib(t)
+					screen: r.bb(t),
+					subreddit: r.jb(t)
 				}),
 				l = (e, t) => n => ({
 					source: "colorpicker",
@@ -58753,8 +58753,8 @@
 					actionInfo: r.d(n, {
 						paneName: s.f[t]
 					}),
-					screen: r.ab(n),
-					subreddit: r.ib(n)
+					screen: r.bb(n),
+					subreddit: r.jb(n)
 				}),
 				u = e => t => ({
 					source: s.g[e],
@@ -58763,12 +58763,12 @@
 					actionInfo: r.d(t, {
 						paneName: s.f[e]
 					}),
-					screen: r.ab(t),
-					subreddit: r.ib(t)
+					screen: r.bb(t),
+					subreddit: r.jb(t)
 				}),
 				m = e => ({
-					screen: r.ab(e),
-					subreddit: r.ib(e)
+					screen: r.bb(e),
+					subreddit: r.jb(e)
 				}),
 				p = () => e => ({
 					source: s.c.Appearance,
@@ -58795,16 +58795,16 @@
 					...m(t)
 				}),
 				_ = (e, t) => ({
-					...r.n(e),
+					...r.o(e),
 					...h(t)(e)
 				}),
 				g = e => t => ({
 					source: s.c.MenuLinks,
 					action: "click",
 					noun: e ? "wiki_link_on" : "wiki_link_off",
-					screen: r.ab(t),
-					subreddit: r.ib(t),
-					userSubreddit: r.sb(t)
+					screen: r.bb(t),
+					subreddit: r.jb(t),
+					userSubreddit: r.tb(t)
 				})
 		},
 		"./src/reddit/helpers/trackers/comment.ts": function(e, t, n) {
@@ -58828,11 +58828,11 @@
 						source: "comment",
 						action: "view",
 						noun: o ? "collapsed_comment" : "comment",
-						...r.n(t),
-						profile: r.S(t),
-						post: r.J(t, n),
-						media: r.B(t, n),
-						subreddit: r.ib(t),
+						...r.o(t),
+						profile: r.T(t),
+						post: r.K(t, n),
+						media: r.C(t, n),
+						subreddit: r.jb(t),
 						comment: r.h(t, n)
 					})
 				},
@@ -58846,11 +58846,11 @@
 						source: "comment",
 						action: "consume",
 						noun: o ? "collapsed_comment" : "comment",
-						...r.n(t),
-						profile: r.S(t),
-						post: r.J(t, n),
-						media: r.B(t, n),
-						subreddit: r.ib(t),
+						...r.o(t),
+						profile: r.T(t),
+						post: r.K(t, n),
+						media: r.C(t, n),
+						subreddit: r.jb(t),
 						comment: r.h(t, n)
 					})
 				},
@@ -58858,13 +58858,13 @@
 					source: "online_presence",
 					action: "view",
 					noun: "user",
-					user: r.qb(t),
-					subreddit: r.ib(t),
-					post: r.J(t, e),
+					user: r.rb(t),
+					subreddit: r.jb(t),
+					post: r.K(t, e),
 					actionInfo: r.d(t),
 					app: r.f(t),
-					referrer: r.X(t),
-					session: r.eb(t)
+					referrer: r.Y(t),
+					session: r.fb(t)
 				})
 		},
 		"./src/reddit/helpers/trackers/commentsChat.ts": function(e, t, n) {
@@ -58899,10 +58899,10 @@
 				a = n("./src/reddit/selectors/telemetry.ts"),
 				d = n("./src/telemetry/models/Event.ts");
 			const c = (e, t) => ({
-					...Object(a.n)(e),
-					subreddit: Object(a.ib)(e),
-					profile: Object(a.S)(e),
-					post: Object(a.J)(e, t),
+					...Object(a.o)(e),
+					subreddit: Object(a.jb)(e),
+					profile: Object(a.T)(e),
+					post: Object(a.K)(e, t),
 					comment: Object(a.h)(e, t)
 				}),
 				l = (e, t) => {
@@ -58916,7 +58916,7 @@
 							commentsPageKey: r
 						},
 						c = t && r && Object(o.j)(e, d) || 0;
-					return Object(a.y)(e, void 0, {
+					return Object(a.z)(e, void 0, {
 						depth: c
 					})
 				},
@@ -58927,9 +58927,9 @@
 				m = (e, t) => n => ({
 					action: "load",
 					noun: e,
-					post: Object(a.J)(n, t),
+					post: Object(a.K)(n, t),
 					source: d.b.ChatView,
-					subreddit: Object(a.ib)(n)
+					subreddit: Object(a.jb)(n)
 				}),
 				p = (e, t) => n => ({
 					...c(n, t),
@@ -58953,7 +58953,7 @@
 					source: "chat_post",
 					action: r.c.SUBMIT,
 					noun: "reply",
-					post: Object(a.J)(t, e),
+					post: Object(a.K)(t, e),
 					comment: Object(a.h)(t, e),
 					actionInfo: Object(a.d)(t, {
 						reason: "live_post",
@@ -58976,7 +58976,7 @@
 					source: "chat_post",
 					action: r.c.VIEW,
 					noun: "warning",
-					post: Object(a.J)(t, e),
+					post: Object(a.K)(t, e),
 					actionInfo: {
 						pageType: "spam_rate_countdown"
 					}
@@ -58986,7 +58986,7 @@
 					source: "chat_post",
 					action: r.c.CLOSE,
 					noun: "warning",
-					post: Object(a.J)(t, e),
+					post: Object(a.K)(t, e),
 					actionInfo: {
 						pageType: "spam_rate_countdown"
 					}
@@ -59070,11 +59070,11 @@
 					return {
 						source: "comment_composer",
 						action: s.c.CLICK,
-						...Object(d.n)(e),
-						screen: Object(d.ab)(e),
-						subreddit: Object(d.ib)(e),
-						post: t ? Object(d.J)(e, t) : null,
-						profile: Object(d.S)(e),
+						...Object(d.o)(e),
+						screen: Object(d.bb)(e),
+						subreddit: Object(d.jb)(e),
+						post: t ? Object(d.K)(e, t) : null,
+						profile: Object(d.T)(e),
 						correlationId: Object(r.c)(r.a.CommentComposer)
 					}
 				},
@@ -59091,7 +59091,7 @@
 						noun: "comment",
 						...l(e),
 						comment: r ? Object(d.h)(e, r) : null,
-						listing: Object(d.y)(e, void 0, {
+						listing: Object(d.z)(e, void 0, {
 							depth: a
 						}),
 						commentComposer: {
@@ -59128,10 +59128,10 @@
 					source: "comment",
 					noun: "delete",
 					action: "click",
-					...Object(d.n)(t),
-					screen: Object(d.ab)(t),
-					subreddit: Object(d.ib)(t),
-					post: Object(d.J)(t, e)
+					...Object(d.o)(t),
+					screen: Object(d.bb)(t),
+					subreddit: Object(d.jb)(t),
+					post: Object(d.K)(t, e)
 				}), h = e => Object(c.a)({
 					noun: "edit",
 					...l(e)
@@ -59196,10 +59196,10 @@
 				o = n("./src/reddit/helpers/correlationIdTracker.ts"),
 				i = n("./src/reddit/helpers/trackers/gild.ts");
 			const a = e => ({
-					...r.n(e),
-					screen: r.ab(e),
-					subreddit: r.ib(e),
-					userSubreddit: r.sb(e)
+					...r.o(e),
+					screen: r.bb(e),
+					subreddit: r.jb(e),
+					userSubreddit: r.tb(e)
 				}),
 				d = e => ({
 					awardId: e.id,
@@ -59293,8 +59293,8 @@
 					action: "click",
 					noun: n,
 					goldPurchase: d(e),
-					profile: r.T(s, t),
-					subreddit: r.jb(s, t)
+					profile: r.U(s, t),
+					subreddit: r.kb(s, t)
 				}),
 				h = (e, t) => f(e, t, "disable_in_community"),
 				_ = (e, t) => f(e, t, "enable_in_community")
@@ -59386,8 +59386,8 @@
 						value: m(t),
 						oldValue: m(n)
 					},
-					subreddit: i.ib(s),
-					...i.n(s)
+					subreddit: i.jb(s),
+					...i.o(s)
 				}),
 				b = (e, t, n) => s => ({
 					source: u(e),
@@ -59397,23 +59397,23 @@
 						value: m(t),
 						oldValue: m(n)
 					},
-					subreddit: i.ib(s),
-					...i.n(s)
+					subreddit: i.jb(s),
+					...i.o(s)
 				}),
 				f = e => t => ({
 					source: "community_settings",
 					action: "click",
 					noun: c[e],
-					...i.n(t)
+					...i.o(t)
 				}),
 				h = e => t => ({
 					source: c[e],
 					action: "click",
 					noun: "r2_community_settings",
-					...i.n(t)
+					...i.o(t)
 				}),
 				_ = (e, t, n, s) => r => ({
-					...i.n(r),
+					...i.o(r),
 					source: "mod_tools",
 					action: e,
 					noun: t,
@@ -59423,7 +59423,7 @@
 							oldValue: String(s)
 						}
 					},
-					subreddit: i.ib(r),
+					subreddit: i.jb(r),
 					actionInfo: i.d(r, {
 						reason: "welcome_message"
 					})
@@ -59431,12 +59431,12 @@
 				g = (e, t) => n => {
 					var s;
 					return {
-						...i.n(n),
+						...i.o(n),
 						source: "language" === e.toLowerCase() ? "mod_tools" : "community_settings",
 						action: "click",
 						noun: e,
-						subreddit: i.ib(n),
-						subredditId: null === (s = i.ib(n)) || void 0 === s ? void 0 : s.id,
+						subreddit: i.jb(n),
+						subredditId: null === (s = i.jb(n)) || void 0 === s ? void 0 : s.id,
 						actionInfo: {
 							settingValue: String(t)
 						}
@@ -59445,12 +59445,12 @@
 				v = (e, t, n) => s => {
 					var r;
 					return {
-						...i.n(s),
+						...i.o(s),
 						source: "language" === e.toLowerCase() ? "mod_tools" : "community_settings",
 						action: "save",
 						noun: e,
-						subreddit: i.ib(s),
-						subredditId: null === (r = i.ib(s)) || void 0 === r ? void 0 : r.id,
+						subreddit: i.jb(s),
+						subredditId: null === (r = i.jb(s)) || void 0 === r ? void 0 : r.id,
 						setting: {
 							value: String(t),
 							oldValue: String(n)
@@ -59537,9 +59537,9 @@
 					} : null
 				},
 				u = (e, t, n) => ({
-					...o.n(e),
+					...o.o(e),
 					subreddit: {
-						...o.ib(e) || {},
+						...o.jb(e) || {},
 						id: t,
 						...d(e, t)
 					},
@@ -59785,25 +59785,25 @@
 					}
 				},
 				a = (e, t) => n => ({
-					...Object(o.n)(n),
+					...Object(o.o)(n),
 					action: r.c.VIEW,
 					noun: "aggregate_stats",
 					source: "creator_stats",
-					subreddit: Object(o.ib)(n),
-					post: Object(o.J)(n, e),
-					userSubreddit: Object(o.sb)(n),
+					subreddit: Object(o.jb)(n),
+					post: Object(o.K)(n, e),
+					userSubreddit: Object(o.tb)(n),
 					actionInfo: Object(o.d)(n, {
 						reason: i(t)
 					})
 				}),
 				d = (e, t) => n => ({
-					...Object(o.n)(n),
+					...Object(o.o)(n),
 					action: r.c.CLICK,
 					noun: e,
 					source: "creator_stats",
-					post: Object(o.J)(n, t),
-					subreddit: Object(o.ib)(n),
-					userSubreddit: Object(o.sb)(n)
+					post: Object(o.K)(n, t),
+					subreddit: Object(o.jb)(n),
+					userSubreddit: Object(o.tb)(n)
 				}),
 				c = e => {
 					switch (e) {
@@ -59821,28 +59821,28 @@
 					}
 				},
 				l = e => t => ({
-					...Object(o.n)(t),
+					...Object(o.o)(t),
 					action: r.c.CLICK,
 					noun: "post_stats",
 					source: "post",
 					actionInfo: Object(o.d)(t, {
 						pageType: "profile"
 					}),
-					post: Object(o.J)(t, e, void 0, 0),
-					profile: Object(o.S)(t)
+					post: Object(o.K)(t, e, void 0, 0),
+					profile: Object(o.T)(t)
 				}),
 				u = (e, t, n) => s => ({
-					...Object(o.n)(s),
+					...Object(o.o)(s),
 					action: r.c.LOAD,
 					noun: "insights",
 					source: "post_stats",
 					actionInfo: Object(o.d)(s, {
 						reason: c(t)
 					}),
-					post: Object(o.J)(s, e, void 0, n)
+					post: Object(o.K)(s, e, void 0, n)
 				}),
 				m = (e, t, n, s, i, a) => d => ({
-					...Object(o.n)(d),
+					...Object(o.o)(d),
 					action: r.c.CLICK,
 					noun: "community",
 					source: "post_stats",
@@ -59850,8 +59850,8 @@
 						pageType: "post_stats",
 						reason: "stats"
 					}),
-					post: Object(o.J)(d, e, void 0, a),
-					subreddit: Object(o.ib)(d),
+					post: Object(o.K)(d, e, void 0, a),
+					subreddit: Object(o.jb)(d),
 					outbound: {
 						postId: n,
 						url: t,
@@ -59860,7 +59860,7 @@
 					}
 				}),
 				p = (e, t, n) => s => ({
-					...Object(o.n)(s),
+					...Object(o.o)(s),
 					action: r.c.CLICK,
 					noun: "share",
 					source: "post_stats",
@@ -59868,8 +59868,8 @@
 						pageType: "post_stats",
 						reason: c(t)
 					}),
-					post: Object(o.J)(s, e, void 0, n),
-					subreddit: Object(o.ib)(s)
+					post: Object(o.K)(s, e, void 0, n),
+					subreddit: Object(o.jb)(s)
 				})
 		},
 		"./src/reddit/helpers/trackers/emailInvite.ts": function(e, t, n) {
@@ -59887,8 +59887,8 @@
 					source: e,
 					action: "click",
 					noun: "invite_via_email",
-					...r.n(t),
-					subreddit: r.ib(t),
+					...r.o(t),
+					subreddit: r.jb(t),
 					actionInfo: r.d(t),
 					correlationId: Object(s.d)(s.a.SubredditCreation, !1)
 				}),
@@ -59896,8 +59896,8 @@
 					source: "email_invite_painted_door",
 					action: "view",
 					noun: "modal",
-					...r.n(e),
-					subreddit: r.ib(e),
+					...r.o(e),
+					subreddit: r.jb(e),
 					actionInfo: r.d(e),
 					correlationId: Object(s.c)(s.a.SubredditCreation)
 				}),
@@ -59905,8 +59905,8 @@
 					source: "email_invite_painted_door",
 					action: "click",
 					noun: e,
-					...r.n(t),
-					subreddit: r.ib(t),
+					...r.o(t),
+					subreddit: r.jb(t),
 					actionInfo: r.d(t),
 					correlationId: Object(s.c)(s.a.SubredditCreation)
 				})
@@ -59934,7 +59934,7 @@
 						source: "meta",
 						action: "hover",
 						noun: "achieve_flair",
-						...i.n(a),
+						...i.o(a),
 						subreddit: {
 							id: t
 						},
@@ -59950,7 +59950,7 @@
 					source: "powerups",
 					action: "click",
 					noun: "view_your_achievements",
-					...i.n(e)
+					...i.o(e)
 				})
 		},
 		"./src/reddit/helpers/trackers/feed.ts": function(e, t, n) {
@@ -59963,24 +59963,24 @@
 			var s = n("./src/reddit/selectors/telemetry.ts"),
 				r = n("./src/telemetry/index.ts");
 			const o = e => t => Object(r.a)({
-					...s.n(t),
+					...s.o(t),
 					actionInfo: s.d(t, {
 						reason: e
 					}),
 					source: "feed",
 					action: "load",
 					noun: "serving",
-					feed: s.q(t)
+					feed: s.r(t)
 				}),
 				i = e => t => Object(r.a)({
-					...s.n(t),
+					...s.o(t),
 					actionInfo: s.d(t, {
 						reason: e
 					}),
 					source: "feed",
 					action: "fail",
 					noun: "serving",
-					feed: s.q(t)
+					feed: s.r(t)
 				})
 		},
 		"./src/reddit/helpers/trackers/freeAwardOffer.ts": function(e, t, n) {
@@ -60001,8 +60001,8 @@
 						offerContext: o.a.StorefrontFreeAward
 					}),
 					correlationId: Object(s.d)(s.a.GoldPayment, !1),
-					profile: i.S(e),
-					subreddit: i.ib(e)
+					profile: i.T(e),
+					subreddit: i.jb(e)
 				}),
 				d = () => e => ({
 					source: "free_award_offer",
@@ -60110,17 +60110,17 @@
 						commentId: t
 					});
 					return {
-						...i.n(e),
+						...i.o(e),
 						actionInfo: i.d(e, {
 							reason: r ? "live_post" : void 0,
 							...n
 						}),
 						comment: t ? i.h(e, t) : void 0,
 						correlationId: Object(l.b)(e) || Object(d.d)(d.a.GildingFlow, !1),
-						post: t ? i.J(e, t) : void 0,
-						screen: i.ab(e),
-						subreddit: i.ib(e),
-						userSubreddit: i.sb(e),
+						post: t ? i.K(e, t) : void 0,
+						screen: i.bb(e),
+						subreddit: i.jb(e),
+						userSubreddit: i.tb(e),
 						listing: t ? Object(s.i)(e, t) : void 0
 					}
 				},
@@ -60129,7 +60129,7 @@
 					source: Object(c.a)(e) ? "comment" : "post",
 					action: "click",
 					noun: "give_gold",
-					feed: i.q(n)
+					feed: i.r(n)
 				}),
 				f = e => t => ({
 					...p(t, e),
@@ -60142,7 +60142,7 @@
 					source: Object(c.a)(e) ? "comment" : "post",
 					action: "click",
 					noun: "add_award",
-					feed: i.q(t)
+					feed: i.r(t)
 				}),
 				_ = (e, t) => n => ({
 					...p(n, t),
@@ -60351,12 +60351,12 @@
 						packageId: l
 					} = t, f = !!n, h = o.b(e), _ = h ? Object(u.getAwardTypeFromAward)(h) : null, g = f ? _ : a.o(e) ? c.GoldPurchaseType.Premium : c.GoldPurchaseType.Coins, v = n ? Object(p.a)(n) ? "comment" : "post" : void 0, x = l || a.t(e), O = [...Object(i.d)(e), ...Object(i.f)(e)].filter(e => e.mobileId === x)[0], E = t.offerContext || (h && 0 === h.coinPrice ? r.a.StorefrontFreeAward : Object(r.d)(O, f)), C = O ? Math.round(1e4 * (O.baselinePennies - O.pennies) / O.baselinePennies) / 100 : 0, y = O ? Math.round(1e4 * (O.coins - O.baselineCoins) / O.coins) / 100 : 0, j = O ? O.baselinePennies !== O.pennies ? `${C}_percent_price` : O.baselineCoins !== O.coins ? `${y}_percent_bonus` : void 0 : void 0, k = g === c.GoldPurchaseType.Premium ? s.Bb : O ? O.pennies : void 0;
 					return {
-						...d.n(e),
+						...d.o(e),
 						comment: n ? d.h(e, n) : null,
 						correlationId: a.r(e) || Object(m.d)(m.a.GoldPayment, !1),
-						post: n ? d.J(e, n) : null,
-						screen: d.ab(e),
-						subreddit: n ? d.ib(e) : null,
+						post: n ? d.K(e, n) : null,
+						screen: d.bb(e),
+						subreddit: n ? d.jb(e) : null,
 						goldPurchase: {
 							...h ? Object(b.a)(h) : null,
 							type: g,
@@ -60566,7 +60566,7 @@
 						type: r
 					} = e;
 					return e => ({
-						...l.n(e),
+						...l.o(e),
 						action: c.c.VIEW,
 						noun: "inbox_notification",
 						source: "inbox",
@@ -60588,7 +60588,7 @@
 						type: r
 					} = e;
 					return e => ({
-						...l.n(e),
+						...l.o(e),
 						action: c.c.VIEW,
 						noun: "notification",
 						source: "in_app_notification",
@@ -60603,7 +60603,7 @@
 					})
 				},
 				b = () => e => ({
-					...l.n(e),
+					...l.o(e),
 					action: c.c.RECEIVE,
 					noun: "notification",
 					source: "in_app_notification"
@@ -60618,7 +60618,7 @@
 					} = e;
 					return e => {
 						Object(u.a)({
-							...l.n(e),
+							...l.o(e),
 							action: "receive",
 							noun: "inbox_notification",
 							source: i.Inbox,
@@ -60641,7 +60641,7 @@
 						dnPromptAction: t
 					} = e;
 					return e => ({
-						...l.n(e),
+						...l.o(e),
 						action: c.c.CLICK,
 						noun: "inbox_banner",
 						source: "inbox",
@@ -60666,7 +60666,7 @@
 						subredditId: d
 					} = e;
 					return e => ({
-						...l.n(e),
+						...l.o(e),
 						action: c.c.CLICK,
 						noun: "inbox_notification",
 						source: "inbox",
@@ -60704,7 +60704,7 @@
 						subredditId: d
 					} = e;
 					return e => ({
-						...l.n(e),
+						...l.o(e),
 						action: c.c.CLICK,
 						noun: "notification",
 						source: "in_app_notification",
@@ -60736,7 +60736,7 @@
 						tab: n
 					} = e;
 					return e => ({
-						...l.n(e),
+						...l.o(e),
 						action: c.c.VIEW,
 						noun: "inbox",
 						source: i.Inbox,
@@ -60752,7 +60752,7 @@
 						tab: n
 					} = e;
 					return e => ({
-						...l.n(e),
+						...l.o(e),
 						action: c.c.VIEW,
 						noun: "mini_inbox",
 						source: i.Inbox,
@@ -60767,7 +60767,7 @@
 						badgeCount: t
 					} = e;
 					return e => ({
-						...l.n(e),
+						...l.o(e),
 						action: c.c.CLICK,
 						noun: "inbox",
 						source: i.Nav,
@@ -60785,7 +60785,7 @@
 						awardId: o
 					} = e;
 					return e => ({
-						...l.n(e),
+						...l.o(e),
 						action: c.c.CLICK,
 						noun: "inbox_notification_overflow",
 						source: i.Inbox,
@@ -60810,7 +60810,7 @@
 						type: r
 					} = e;
 					return e => ({
-						...l.n(e),
+						...l.o(e),
 						action: c.c.VIEW,
 						noun: "inbox_notification_overflow",
 						source: i.Inbox,
@@ -60837,7 +60837,7 @@
 						type: o
 					} = e;
 					return e => ({
-						...l.n(e),
+						...l.o(e),
 						action: c.c.CLICK,
 						noun: "overflow_option",
 						source: i.Inbox,
@@ -60864,7 +60864,7 @@
 						type: o
 					} = e;
 					return e => ({
-						...l.n(e),
+						...l.o(e),
 						action: c.c.UNDO,
 						noun: "overflow_option",
 						source: i.Inbox,
@@ -60887,7 +60887,7 @@
 						actionInfoType: t
 					} = e;
 					return e => ({
-						...l.n(e),
+						...l.o(e),
 						action: c.c.CLICK,
 						noun: "empty_state_cta",
 						source: i.Inbox,
@@ -60898,7 +60898,7 @@
 					})
 				},
 				S = e => t => ({
-					...l.n(t),
+					...l.o(t),
 					action: c.c.CLICK,
 					noun: "notification_app_settings",
 					source: i.Inbox,
@@ -60908,7 +60908,7 @@
 					}
 				}),
 				w = () => e => ({
-					...l.n(e),
+					...l.o(e),
 					action: c.c.CLICK,
 					noun: "see_all",
 					source: i.Inbox,
@@ -60918,7 +60918,7 @@
 					}
 				}),
 				T = () => e => ({
-					...l.n(e),
+					...l.o(e),
 					action: c.c.CLICK,
 					noun: "messages",
 					source: i.Inbox
@@ -60928,7 +60928,7 @@
 						isMiniInbox: t
 					} = e;
 					return e => ({
-						...l.n(e),
+						...l.o(e),
 						action: c.c.CLICK,
 						noun: "mark_all_as_read",
 						source: i.Inbox,
@@ -60943,7 +60943,7 @@
 				e.DISMISS = "dismiss", e.BANNER = "banner", e.CTA_1 = "cta1", e.CTA_2 = "cta2"
 			}(P || (P = {}));
 			const R = (e, t) => n => ({
-					...l.n(n),
+					...l.o(n),
 					action: c.c.CLICK,
 					noun: "inbox_banner",
 					source: "inbox",
@@ -60956,7 +60956,7 @@
 					}
 				}),
 				A = (e, t) => n => ({
-					...l.n(n),
+					...l.o(n),
 					action: c.c.CLICK,
 					noun: "inbox_banner",
 					source: "mini_inbox",
@@ -60969,7 +60969,7 @@
 					}
 				}),
 				M = e => t => ({
-					...l.n(t),
+					...l.o(t),
 					action: c.c.RECEIVE,
 					noun: "inbox_banner",
 					source: "inbox",
@@ -60981,7 +60981,7 @@
 					}
 				}),
 				L = e => t => ({
-					...l.n(t),
+					...l.o(t),
 					action: c.c.RECEIVE,
 					noun: "inbox_banner",
 					source: "mini_inbox",
@@ -60993,7 +60993,7 @@
 					}
 				}),
 				D = e => t => ({
-					...l.n(t),
+					...l.o(t),
 					action: c.c.VIEW,
 					noun: "inbox_banner",
 					source: "mini_inbox",
@@ -61005,7 +61005,7 @@
 					}
 				}),
 				F = e => t => ({
-					...l.n(t),
+					...l.o(t),
 					action: c.c.VIEW,
 					noun: "inbox_banner",
 					source: "inbox",
@@ -61036,8 +61036,8 @@
 				e.SubredditInlineTooltip = "subreddit_inline_tooltip", e.EditSubredditIcon = "edit_subreddit_icon", e.EditSubredditDescription = "edit_subreddit_description", e.SaveDescription = "save_description", e.Error = "error"
 			}(s || (s = {}));
 			const i = e => ({
-					subreddit: o.ib(e),
-					userSubreddit: o.sb(e)
+					subreddit: o.jb(e),
+					userSubreddit: o.tb(e)
 				}),
 				a = e => ({
 					source: "subreddit_tooltip",
@@ -61072,7 +61072,7 @@
 					noun: s.Error,
 					action: r.c.VIEW,
 					...i(e),
-					...o.n(e),
+					...o.o(e),
 					actionInfo: o.d(e, {
 						reason: t
 					})
@@ -61097,16 +61097,16 @@
 				i = n("./src/reddit/selectors/platform.ts"),
 				a = n("./src/reddit/selectors/telemetry.ts");
 			const d = e => ({
-					profile: a.S(e),
-					screen: a.ab(e),
-					subreddit: a.ib(e)
+					profile: a.T(e),
+					screen: a.bb(e),
+					subreddit: a.jb(e)
 				}),
 				c = (e, t, n) => s => ({
 					source: Object(i.i)(s) || n ? "post_lightbox" : "post_detail",
 					action: "click",
 					noun: t,
 					...d(s),
-					post: a.J(s, e)
+					post: a.K(s, e)
 				}),
 				l = (e, t, n, s) => r => {
 					const i = n ? a.h(r, n) : null,
@@ -61122,7 +61122,7 @@
 					}
 				},
 				u = (e, t) => n => {
-					const s = a.j(n);
+					const s = a.k(n);
 					return s ? c(s.id, e, t)(n) : {
 						source: Object(i.i)(n) || t ? "post_lightbox" : "post_detail",
 						action: "click",
@@ -61132,15 +61132,15 @@
 				},
 				m = (e, t) => n => Object(r.a)({
 					...c(e, t)(n),
-					...a.n(n)
+					...a.o(n)
 				}),
 				p = e => t => ({
 					source: "id_card",
 					action: s.c.CLICK,
 					noun: e,
 					...d(t),
-					post: a.j(t),
-					userSubreddit: a.sb(t)
+					post: a.k(t),
+					userSubreddit: a.tb(t)
 				})
 		},
 		"./src/reddit/helpers/trackers/marketplace/claims.ts": function(e, t, n) {
@@ -61158,19 +61158,19 @@
 			}));
 			var s = n("./src/reddit/selectors/telemetry.ts");
 			const r = () => e => ({
-					...Object(s.n)(e),
+					...Object(s.o)(e),
 					source: "marketplace",
 					action: "view",
 					noun: "claim_post_unit"
 				}),
 				o = () => e => ({
-					...Object(s.n)(e),
+					...Object(s.o)(e),
 					source: "marketplace",
 					action: "click",
 					noun: "claim_post_unit"
 				}),
 				i = () => e => ({
-					...Object(s.n)(e),
+					...Object(s.o)(e),
 					source: "marketplace",
 					action: "close",
 					noun: "claim_post_unit"
@@ -61180,7 +61180,7 @@
 				e.Profile = "profile", e.Hovercard = "hovercard"
 			}(a || (a = {}));
 			const d = e => t => {
-				const n = Object(s.n)(t);
+				const n = Object(s.o)(t);
 				return {
 					...n,
 					source: "marketplace",
@@ -61211,10 +61211,10 @@
 			}));
 			var s = n("./src/reddit/selectors/telemetry.ts");
 			const r = e => ({
-					screen: s.ab(e),
-					subreddit: s.ib(e),
-					profile: s.S(e),
-					userSubreddit: s.sb(e)
+					screen: s.bb(e),
+					subreddit: s.jb(e),
+					profile: s.T(e),
+					userSubreddit: s.tb(e)
 				}),
 				o = e => t => ({
 					source: "mod_hub_nav",
@@ -61279,8 +61279,8 @@
 			}));
 			var s = n("./src/reddit/selectors/telemetry.ts");
 			const r = e => ({
-					subreddit: s.ib(e),
-					userSubreddit: s.sb(e)
+					subreddit: s.jb(e),
+					userSubreddit: s.tb(e)
 				}),
 				o = () => e => ({
 					source: "mod_log",
@@ -61318,7 +61318,7 @@
 						noun: "user_profile",
 						post: n,
 						comment: r,
-						...s.n(e),
+						...s.o(e),
 						actionInfo: s.d(e, {
 							reason: t
 						})
@@ -61336,7 +61336,7 @@
 						noun: (null == r ? void 0 : r.id) ? "comment" : "post",
 						post: n,
 						comment: r,
-						...s.n(e),
+						...s.o(e),
 						actionInfo: s.d(e, {
 							reason: t
 						})
@@ -61354,7 +61354,7 @@
 						noun: "content_policy",
 						post: n,
 						comment: r,
-						...s.n(e),
+						...s.o(e),
 						actionInfo: s.d(e, {
 							reason: t
 						})
@@ -61372,7 +61372,7 @@
 						noun: "show_details",
 						post: n,
 						comment: r,
-						...s.n(e),
+						...s.o(e),
 						actionInfo: s.d(e, {
 							reason: t
 						})
@@ -61482,7 +61482,7 @@
 					action: "view",
 					noun: "modnote_quickaccess",
 					correlationId: Object(s.d)(s.a.ModNotes),
-					...r.n(t),
+					...r.o(t),
 					...o(0, e)
 				}),
 				d = e => t => {
@@ -61491,7 +61491,7 @@
 						action: "close",
 						noun: "modnote_quickaccess",
 						correlationId: Object(s.c)(s.a.ModNotes),
-						...r.n(t),
+						...r.o(t),
 						...o(0, e)
 					};
 					return Object(s.b)(s.a.ModNotes), n
@@ -61501,7 +61501,7 @@
 					action: "click",
 					noun: "relatedcontent_modnote_quickaccess",
 					correlationId: Object(s.c)(s.a.ModNotes),
-					...r.n(t),
+					...r.o(t),
 					...o(0, e)
 				}),
 				l = e => t => ({
@@ -61509,7 +61509,7 @@
 					action: "click",
 					noun: "relatedcontent_modnote_user_profile_hovercard",
 					correlationId: Object(s.c)(s.a.ModNotes),
-					...r.n(t),
+					...r.o(t),
 					...o(0, e)
 				}),
 				u = e => t => ({
@@ -61517,7 +61517,7 @@
 					action: "click",
 					noun: "relatedcontent_modlog",
 					correlationId: Object(s.c)(s.a.ModNotes),
-					...r.n(t),
+					...r.o(t),
 					...o(0, e)
 				}),
 				m = e => t => ({
@@ -61525,7 +61525,7 @@
 					action: "click",
 					noun: "expand_modlog_quickaccess",
 					correlationId: Object(s.c)(s.a.ModNotes),
-					...r.n(t),
+					...r.o(t),
 					...o(0, e)
 				}),
 				p = e => t => ({
@@ -61533,7 +61533,7 @@
 					action: "click",
 					noun: "expand_modlog_user_profile_hovercard",
 					correlationId: Object(s.c)(s.a.ModNotes),
-					...r.n(t),
+					...r.o(t),
 					...o(0, e)
 				}),
 				b = e => t => ({
@@ -61541,7 +61541,7 @@
 					action: "click",
 					noun: "expand_modnote_modlog",
 					correlationId: Object(s.c)(s.a.ModNotes),
-					...r.n(t),
+					...r.o(t),
 					...o(0, e)
 				}),
 				f = e => t => ({
@@ -61549,7 +61549,7 @@
 					action: "click",
 					noun: "username_modnote_quickaccess",
 					correlationId: Object(s.c)(s.a.ModNotes),
-					...r.n(t),
+					...r.o(t),
 					...o(0, e)
 				}),
 				h = e => t => ({
@@ -61557,7 +61557,7 @@
 					action: "click",
 					noun: "mod_username_modnote_user_profile_hovercard",
 					correlationId: Object(s.c)(s.a.ModNotes),
-					...r.n(t),
+					...r.o(t),
 					...o(0, e)
 				}),
 				_ = e => t => ({
@@ -61565,7 +61565,7 @@
 					action: "click",
 					noun: "username_modlog",
 					correlationId: Object(s.c)(s.a.ModNotes),
-					...r.n(t),
+					...r.o(t),
 					...o(0, e)
 				}),
 				g = e => t => ({
@@ -61573,7 +61573,7 @@
 					action: "view",
 					noun: "user_profile_hovercard",
 					correlationId: Object(s.d)(s.a.ModNotes, !1),
-					...r.n(t),
+					...r.o(t),
 					...o(0, e)
 				}),
 				v = e => t => ({
@@ -61581,7 +61581,7 @@
 					action: "click",
 					noun: "add_note_user_profile_hovercard",
 					correlationId: Object(s.c)(s.a.ModNotes),
-					...r.n(t),
+					...r.o(t),
 					...o(0, e)
 				}),
 				x = e => t => ({
@@ -61589,7 +61589,7 @@
 					action: "click",
 					noun: "user_mod_log_user_profile_hovercard",
 					correlationId: Object(s.c)(s.a.ModNotes),
-					...r.n(t),
+					...r.o(t),
 					...o(0, e)
 				}),
 				O = e => t => ({
@@ -61597,7 +61597,7 @@
 					action: "click",
 					noun: "send_modmail_user_profile_hovercard",
 					correlationId: Object(s.c)(s.a.ModNotes),
-					...r.n(t),
+					...r.o(t),
 					...o(0, e)
 				}),
 				E = e => t => ({
@@ -61605,7 +61605,7 @@
 					action: "view",
 					noun: "modlog",
 					correlationId: Object(s.c)(s.a.ModNotes),
-					...r.n(t),
+					...r.o(t),
 					...o(0, e)
 				}),
 				C = e => t => ({
@@ -61613,7 +61613,7 @@
 					action: "close",
 					noun: "modlog",
 					correlationId: Object(s.c)(s.a.ModNotes),
-					...r.n(t),
+					...r.o(t),
 					...o(0, e)
 				}),
 				y = e => t => ({
@@ -61621,7 +61621,7 @@
 					action: "click",
 					noun: "type_filter_modlog",
 					correlationId: Object(s.c)(s.a.ModNotes),
-					...r.n(t),
+					...r.o(t),
 					...o(0, e)
 				}),
 				j = e => t => ({
@@ -61629,7 +61629,7 @@
 					action: "click",
 					noun: "subreddit_filter_modlog",
 					correlationId: Object(s.c)(s.a.ModNotes),
-					...r.n(t),
+					...r.o(t),
 					...o(0, e)
 				}),
 				k = e => t => ({
@@ -61637,7 +61637,7 @@
 					action: "select",
 					noun: "type_modlog",
 					correlationId: Object(s.c)(s.a.ModNotes),
-					...r.n(t),
+					...r.o(t),
 					...o(0, e)
 				}),
 				I = e => t => ({
@@ -61645,7 +61645,7 @@
 					action: "select",
 					noun: "subreddit_modlog",
 					correlationId: Object(s.c)(s.a.ModNotes),
-					...r.n(t),
+					...r.o(t),
 					...o(0, e)
 				}),
 				S = e => t => ({
@@ -61653,7 +61653,7 @@
 					action: "submit",
 					noun: "submit_note_modlog",
 					correlationId: Object(s.c)(s.a.ModNotes),
-					...r.n(t),
+					...r.o(t),
 					...o(0, e)
 				}),
 				w = e => t => ({
@@ -61661,7 +61661,7 @@
 					action: "click",
 					noun: "delete_modnote_modlog",
 					correlationId: Object(s.c)(s.a.ModNotes),
-					...r.n(t),
+					...r.o(t),
 					...o(0, e)
 				}),
 				T = e => t => ({
@@ -61669,7 +61669,7 @@
 					action: "click",
 					noun: "cancel_deletemodnote",
 					correlationId: Object(s.c)(s.a.ModNotes),
-					...r.n(t),
+					...r.o(t),
 					...o(0, e)
 				}),
 				N = e => t => ({
@@ -61677,7 +61677,7 @@
 					action: "click",
 					noun: "delete_deletemodnote",
 					correlationId: Object(s.c)(s.a.ModNotes),
-					...r.n(t),
+					...r.o(t),
 					...o(0, e)
 				})
 		},
@@ -61715,10 +61715,10 @@
 			var s = n("./src/reddit/constants/tracking.ts"),
 				r = n("./src/reddit/selectors/telemetry.ts");
 			const o = e => ({
-					screen: Object(r.ab)(e),
-					profile: Object(r.S)(e),
-					subreddit: Object(r.ib)(e),
-					userSubreddit: Object(r.sb)(e)
+					screen: Object(r.bb)(e),
+					profile: Object(r.T)(e),
+					subreddit: Object(r.jb)(e),
+					userSubreddit: Object(r.tb)(e)
 				}),
 				i = e => t => ({
 					source: "nav",
@@ -61730,22 +61730,25 @@
 					source: "post_mod_action_menu",
 					action: "click",
 					noun: e,
-					post: Object(r.J)(n, t),
+					post: Object(r.K)(n, t),
 					...o(n)
 				}),
 				d = (e, t) => n => ({
 					source: "comment",
 					action: "click",
 					noun: e,
-					post: Object(r.J)(n, t),
+					post: Object(r.K)(n, t),
 					comment: Object(r.h)(n, t),
+					media: {
+						mimetype: Object(r.j)(n, t)
+					},
 					...o(n)
 				}),
 				c = (e, t) => n => ({
 					source: "comment",
 					action: s.c.CLICK,
 					noun: e,
-					post: Object(r.J)(n, t),
+					post: Object(r.K)(n, t),
 					comment: Object(r.h)(n, t),
 					actionInfo: {
 						pageType: "chat_live_post"
@@ -61756,7 +61759,7 @@
 					source: "comment",
 					action: s.c.UNDO,
 					noun: e,
-					post: Object(r.J)(n, t),
+					post: Object(r.K)(n, t),
 					comment: Object(r.h)(n, t),
 					...o(n)
 				}),
@@ -61764,7 +61767,7 @@
 					source: "comment_overflow_menu",
 					action: "click",
 					noun: e,
-					post: Object(r.J)(n, t),
+					post: Object(r.K)(n, t),
 					comment: Object(r.h)(n, t),
 					...o(n)
 				}),
@@ -61772,7 +61775,7 @@
 					source: "mod_distinguish_menu",
 					action: "click",
 					noun: e,
-					post: Object(r.J)(n, t),
+					post: Object(r.K)(n, t),
 					comment: Object(r.h)(n, t),
 					...o(n)
 				}),
@@ -61780,7 +61783,7 @@
 					source: "comment_mod_action_menu",
 					action: "click",
 					noun: e,
-					post: Object(r.J)(n, t),
+					post: Object(r.K)(n, t),
 					comment: Object(r.h)(n, t),
 					...o(n)
 				}),
@@ -61789,37 +61792,37 @@
 					action: "click",
 					noun: e,
 					comment: Object(r.h)(n, t),
-					post: Object(r.J)(n, t),
+					post: Object(r.K)(n, t),
 					...o(n)
 				}),
 				f = (e, t) => n => ({
 					source: "post_report_menu",
 					action: "click",
 					noun: e,
-					post: Object(r.J)(n, t),
+					post: Object(r.K)(n, t),
 					...o(n)
 				}),
 				h = (e, t) => n => ({
 					source: "post",
 					action: "click",
 					noun: e,
-					post: Object(r.J)(n, t),
-					subreddit: Object(r.lb)(n, t)
+					post: Object(r.K)(n, t),
+					subreddit: Object(r.mb)(n, t)
 				}),
 				_ = (e, t) => n => ({
 					source: "comment",
 					action: "click",
 					noun: e,
 					comment: Object(r.h)(n, t),
-					post: Object(r.J)(n, t),
-					subreddit: Object(r.lb)(n, t)
+					post: Object(r.K)(n, t),
+					subreddit: Object(r.mb)(n, t)
 				}),
 				g = (e, t, n, s) => o => ({
 					source: e ? "comment" : "post",
 					action: "click",
 					noun: t ? "unsnooze_reporter" : "snooze_reporter",
-					post: Object(r.J)(o, n),
-					subreddit: Object(r.lb)(o, n),
+					post: Object(r.K)(o, n),
+					subreddit: Object(r.mb)(o, n),
 					actionInfo: {
 						reason: s
 					},
@@ -61849,9 +61852,9 @@
 			var s = n("./src/lib/constants/index.ts"),
 				r = n("./src/reddit/selectors/telemetry.ts");
 			const o = e => ({
-					screen: r.ab(e),
-					profile: r.S(e),
-					subreddit: r.ib(e)
+					screen: r.bb(e),
+					profile: r.T(e),
+					subreddit: r.jb(e)
 				}),
 				i = e => {
 					switch (e) {
@@ -61960,17 +61963,17 @@
 				},
 				m = (e, t) => {
 					const n = {
-						...d.n(e),
+						...d.o(e),
 						action: o.c.CLICK,
-						subreddit: d.ib(e)
+						subreddit: d.jb(e)
 					};
 					return void 0 === t ? n : {
 						...n,
-						post: d.J(e, t),
-						postCollection: d.L(e, {
+						post: d.K(e, t),
+						postCollection: d.M(e, {
 							postId: t
 						}),
-						postEvent: d.M(e, {
+						postEvent: d.N(e, {
 							postId: t
 						})
 					}
@@ -61996,8 +61999,8 @@
 					noun: r.eventEducationGotIt
 				}),
 				_ = e => ({
-					...d.n(e),
-					subreddit: d.ib(e),
+					...d.o(e),
+					subreddit: d.jb(e),
 					source: s.postComposer
 				}),
 				g = (e, t) => n => ({
@@ -62029,12 +62032,12 @@
 					noun: r.collectionSelect
 				}),
 				C = e => t => ({
-					...d.n(t),
-					subreddit: d.ib(t),
+					...d.o(t),
+					subreddit: d.jb(t),
 					source: s.collectionComposer,
 					action: o.c.CLICK,
 					noun: r.collectionDelete,
-					postCollection: d.K(t, {
+					postCollection: d.L(t, {
 						collectionId: e
 					})
 				}),
@@ -62042,7 +62045,7 @@
 					...m(t),
 					source: s.collectionComposer,
 					noun: r.collectionEdit,
-					postCollection: d.K(t, {
+					postCollection: d.L(t, {
 						collectionId: e
 					})
 				}),
@@ -62168,8 +62171,8 @@
 				_ = e => ({
 					source: "post_composer",
 					action: s.c.CLICK,
-					...u.n(e),
-					screen: u.ab(e),
+					...u.o(e),
+					screen: u.bb(e),
 					correlationId: Object(r.c)(r.a.PostComposer)
 				}),
 				g = (e, t) => "self" !== t ? {} : {
@@ -62190,7 +62193,7 @@
 				O = e => t => ({
 					..._(t),
 					noun: "subreddit_choice",
-					subreddit: e ? u.jb(t, e) : void 0,
+					subreddit: e ? u.kb(t, e) : void 0,
 					actionInfo: u.g(t)
 				}),
 				E = () => e => ({
@@ -62230,12 +62233,12 @@
 				I = (e, t, n, s) => {
 					Object(p.a)({
 						noun: "post",
-						subreddit: u.ib(e),
+						subreddit: u.jb(e),
 						postComposer: {
 							type: t,
 							...g(e, t)
 						},
-						post: n ? u.J(e, n) : null,
+						post: n ? u.K(e, n) : null,
 						..._(e),
 						correlationId: s
 					})
@@ -62250,7 +62253,7 @@
 				w = (e, t) => {
 					Object(p.a)({
 						noun: "save",
-						subreddit: u.ib(e),
+						subreddit: u.jb(e),
 						postComposer: {
 							type: t,
 							...g(e, t)
@@ -62320,11 +62323,11 @@
 				},
 				U = (e, t) => {
 					if (t) {
-						const n = u.jb(e, t);
+						const n = u.kb(e, t);
 						if (n) return {
 							subreddit: n
 						};
-						const s = u.T(e, t);
+						const s = u.U(e, t);
 						if (s) return {
 							profile: s
 						}
@@ -62500,7 +62503,7 @@
 					..._(t),
 					action: "add",
 					noun: "flair",
-					subreddit: u.jb(t, e)
+					subreddit: u.kb(t, e)
 				}),
 				ne = () => e => ({
 					..._(e),
@@ -62532,7 +62535,7 @@
 							type: t
 						},
 						correlationId: Object(r.d)(r.a.PostComposer, !1),
-						subreddit: n ? u.jb(e, n) : void 0
+						subreddit: n ? u.kb(e, n) : void 0
 					})
 				},
 				ie = () => e => ({
@@ -62584,20 +62587,20 @@
 				}),
 				b = e => {
 					Object(m.a)({
-						...u.n(e),
+						...u.o(e),
 						source: s.postComposer,
 						action: a.c.CLICK,
 						noun: "event_create",
-						subreddit: u.ib(e)
+						subreddit: u.jb(e)
 					})
 				},
 				f = e => {
 					Object(m.a)({
-						...u.n(e),
+						...u.o(e),
 						source: s.postComposer,
 						action: a.c.CLICK,
 						noun: "event_edit",
-						subreddit: u.ib(e),
+						subreddit: u.jb(e),
 						postEvent: x(e),
 						postComposer: O(e)
 					})
@@ -62651,15 +62654,15 @@
 					const n = {
 						source: s.eventComposer,
 						action: a.c.CLICK,
-						subreddit: u.ib(e)
+						subreddit: u.jb(e)
 					};
 					return t ? {
 						...n,
-						post: u.J(e, t),
-						postEvent: u.M(e, {
+						post: u.K(e, t),
+						postEvent: u.N(e, {
 							postId: t
 						}),
-						postCollection: u.L(e, {
+						postCollection: u.M(e, {
 							postId: t
 						})
 					} : n
@@ -62691,37 +62694,37 @@
 						source: "post",
 						action: "click",
 						noun: "post_flair",
-						...o.n(n),
+						...o.o(n),
 						actionInfo: o.d(n),
 						correlationId: Object(s.c)(s.a.SearchResults),
-						post: o.J(n, e),
+						post: o.K(n, e),
 						search: {
-							...o.N(n, t),
+							...o.O(n, t),
 							query: i,
-							queryId: o.cb(n, r.a.SERP),
+							queryId: o.db(n, r.a.SERP),
 							impressionId: a.a.get(r.a.SERP)
 						},
-						subreddit: o.ib(n)
+						subreddit: o.jb(n)
 					}
 				},
 				c = e => t => ({
 					source: "post_flair_widget",
 					action: "click",
 					noun: "post_flair_search",
-					...o.n(t),
+					...o.o(t),
 					actionInfo: o.d(t),
 					correlationId: Object(s.c)(s.a.SearchResults),
-					search: o.N(t, e),
-					subreddit: o.ib(t)
+					search: o.O(t, e),
+					subreddit: o.jb(t)
 				}),
 				l = e => t => {
 					const n = Object(i.g)(e);
 					return {
-						...o.n(t),
+						...o.o(t),
 						action: "click",
 						noun: "post_flair",
 						source: "post_flair_widget",
-						subreddit: o.ib(t),
+						subreddit: o.jb(t),
 						postFlair: {
 							id: e.templateId,
 							title: n
@@ -62729,20 +62732,20 @@
 					}
 				},
 				u = () => e => ({
-					...o.n(e),
+					...o.o(e),
 					action: "click",
 					noun: "overflow",
 					source: "post_flair_widget",
-					subreddit: o.ib(e)
+					subreddit: o.jb(e)
 				}),
 				m = e => t => {
 					const n = Object(i.g)(e);
 					return {
-						...o.n(t),
+						...o.o(t),
 						action: "click",
 						noun: "clear",
 						source: "post_flair_widget",
-						subreddit: o.ib(t),
+						subreddit: o.jb(t),
 						postFlair: {
 							id: e.templateId,
 							title: n
@@ -62751,14 +62754,14 @@
 				},
 				p = (e, t) => n => {
 					const s = Object(i.g)(e),
-						d = o.J(n, t),
+						d = o.K(n, t),
 						c = `flair_name:'${s}'`;
 					return {
-						...o.n(n),
+						...o.o(n),
 						action: "click",
 						noun: "post_flair",
 						source: "post",
-						subreddit: o.ib(n),
+						subreddit: o.jb(n),
 						postFlair: {
 							id: e.templateId,
 							title: s
@@ -62770,11 +62773,11 @@
 							subredditName: d ? d.subredditName : void 0,
 							postFlairName: s,
 							originElement: "post_flair",
-							queryId: o.cb(n, r.a.SERP),
+							queryId: o.db(n, r.a.SERP),
 							impressionId: a.a.get(r.a.SERP),
-							originPageType: n.platform.currentPage ? o.u(n.platform.currentPage) : void 0
+							originPageType: n.platform.currentPage ? o.v(n.platform.currentPage) : void 0
 						},
-						feed: o.q(n)
+						feed: o.r(n)
 					}
 				}
 		},
@@ -62814,12 +62817,12 @@
 			var s = n("./src/reddit/helpers/correlationIdTracker.ts"),
 				r = n("./src/reddit/selectors/telemetry.ts");
 			const o = (e, t, n) => ({
-					...r.n(e),
+					...r.o(e),
 					correlationId: Object(s.d)(s.a.PowerupsFlow, !1),
-					profile: r.S(e),
-					subreddit: r.ib(e),
+					profile: r.T(e),
+					subreddit: r.jb(e),
 					powerups: {
-						...r.nb(e),
+						...r.ob(e),
 						freeCount: t,
 						paidCount: n
 					}
@@ -62875,7 +62878,7 @@
 					noun: "benefit",
 					...o(t),
 					powerups: {
-						...r.nb(t),
+						...r.ob(t),
 						benefit: e
 					}
 				}),
@@ -62906,7 +62909,7 @@
 					noun: "add_custom_emojis",
 					...o(n),
 					powerups: {
-						...r.nb(n),
+						...r.ob(n),
 						emojiCount: e
 					}
 				}),
@@ -62916,7 +62919,7 @@
 					noun: "custom_emojis",
 					...o(n),
 					powerups: {
-						...r.nb(n),
+						...r.ob(n),
 						emojiCount: e
 					}
 				}),
@@ -62929,7 +62932,7 @@
 						noun: "custom_emojis",
 						...o(n),
 						powerups: {
-							...r.nb(n),
+							...r.ob(n),
 							emojiCount: e
 						}
 					})
@@ -62938,7 +62941,7 @@
 					source: "meta",
 					action: "open",
 					noun: "gif_tooltip",
-					subreddit: t ? r.jb(n, t) : void 0,
+					subreddit: t ? r.kb(n, t) : void 0,
 					...o(n),
 					correlationId: e
 				}),
@@ -62950,8 +62953,8 @@
 						value: String(t),
 						oldValue: String(n)
 					},
-					subreddit: r.ib(s),
-					...r.n(s)
+					subreddit: r.jb(s),
+					...r.o(s)
 				})
 		},
 		"./src/reddit/helpers/trackers/scheduledPosts.ts": function(e, t, n) {
@@ -63010,10 +63013,10 @@
 			var s = n("./src/reddit/models/ScheduledPost/index.ts"),
 				r = n("./src/reddit/selectors/telemetry.ts");
 			const o = e => ({
-					...r.n(e),
-					screen: r.ab(e),
-					subreddit: r.ib(e),
-					userSubreddit: r.sb(e)
+					...r.o(e),
+					screen: r.bb(e),
+					subreddit: r.jb(e),
+					userSubreddit: r.tb(e)
 				}),
 				i = e => ({
 					id: e.id,
@@ -63449,8 +63452,8 @@
 					}
 				},
 				S = e => ({
-					...j.n(e),
-					userPreferences: j.rb(e)
+					...j.o(e),
+					userPreferences: j.sb(e)
 				}),
 				w = e => {
 					let {
@@ -63478,24 +63481,24 @@
 								success: c,
 								...l
 							}),
-							customFeed: j.l(e),
-							listing: j.y(e, t, {
+							customFeed: j.m(e),
+							listing: j.z(e, t, {
 								sort: n,
 								sortTime: o
 							}),
-							subreddit: j.ib(e),
-							timer: j.ob(s, r),
-							userSubreddit: j.sb(e),
+							subreddit: j.jb(e),
+							timer: j.pb(s, r),
+							userSubreddit: j.tb(e),
 							adblock: j.e(e),
 							postFlair: {
 								title: i
 							},
-							predictions: a ? Object(j.Q)(e) : void 0
+							predictions: a ? Object(j.R)(e) : void 0
 						}
 					}
 				},
 				T = (e, t, n, s, r) => o => {
-					const i = j.y(o, e);
+					const i = j.z(o, e);
 					i && (i.sort = t, r && (i.sortTime = r));
 					const {
 						api: a
@@ -63509,16 +63512,16 @@
 						actionInfo: j.d(o, {
 							success: d
 						}),
-						profile: j.S(o),
-						snoovatar: j.fb(o),
-						subreddit: j.ib(o),
-						timer: j.ob(n, s),
-						userSubreddit: j.sb(o),
+						profile: j.T(o),
+						snoovatar: j.gb(o),
+						subreddit: j.jb(o),
+						timer: j.pb(n, s),
+						userSubreddit: j.tb(o),
 						adblock: j.e(o)
 					}
 				},
 				N = (e, t, n, s, r) => o => {
-					const i = j.y(o, e);
+					const i = j.z(o, e);
 					i && (i.sort = t, r && (i.sortTime = r));
 					const {
 						api: a
@@ -63532,15 +63535,15 @@
 						actionInfo: j.d(o, {
 							success: d
 						}),
-						profile: j.S(o),
-						subreddit: j.ib(o),
-						timer: j.ob(n, s),
-						userSubreddit: j.sb(o),
+						profile: j.T(o),
+						subreddit: j.jb(o),
+						timer: j.pb(n, s),
+						userSubreddit: j.tb(o),
 						adblock: j.e(o)
 					}
 				},
 				P = (e, t, n, s, r) => o => {
-					const i = j.V(o, e);
+					const i = j.W(o, e);
 					i && (i.sort = t, r && (i.sortTime = r));
 					const {
 						api: a
@@ -63554,10 +63557,10 @@
 						actionInfo: j.d(o, {
 							success: d
 						}),
-						profile: j.S(o),
-						subreddit: j.ib(o),
-						timer: j.ob(n, s),
-						userSubreddit: j.sb(o),
+						profile: j.T(o),
+						subreddit: j.jb(o),
+						timer: j.pb(n, s),
+						userSubreddit: j.tb(o),
 						adblock: j.e(o)
 					}
 				},
@@ -63571,10 +63574,10 @@
 						actionInfo: j.d(s, {
 							success: r
 						}),
-						profile: j.S(s),
-						subreddit: j.ib(s),
-						timer: j.ob(n, t),
-						userSubreddit: j.sb(s),
+						profile: j.T(s),
+						subreddit: j.jb(s),
+						timer: j.pb(n, t),
+						userSubreddit: j.tb(s),
 						adblock: j.e(s)
 					}
 				},
@@ -63592,19 +63595,19 @@
 								reason: "live_bar"
 							} : {}
 						}),
-						post: j.J(i, t),
-						profile: j.S(i),
-						subreddit: j.ib(i),
-						timer: j.ob(s, r),
-						userSubreddit: j.sb(i),
+						post: j.K(i, t),
+						profile: j.T(i),
+						subreddit: j.jb(i),
+						timer: j.pb(s, r),
+						userSubreddit: j.tb(i),
 						adblock: j.e(i),
-						postEvent: j.M(i, {
+						postEvent: j.N(i, {
 							postId: t
 						}),
-						postCollection: j.L(i, {
+						postCollection: j.M(i, {
 							postId: t
 						}),
-						listing: j.y(i, void 0, {
+						listing: j.z(i, void 0, {
 							sort: o
 						})
 					};
@@ -63621,10 +63624,10 @@
 						actionInfo: j.d(s, {
 							success: r
 						}),
-						post: o ? j.J(s, o) : void 0,
-						subreddit: j.ib(s),
-						timer: j.ob(t, n),
-						userSubreddit: j.sb(s),
+						post: o ? j.K(s, o) : void 0,
+						subreddit: j.jb(s),
+						timer: j.pb(t, n),
+						userSubreddit: j.tb(s),
 						adblock: j.e(s)
 					}
 				},
@@ -63648,9 +63651,9 @@
 						actionInfo: j.d(e, {
 							success: t
 						}),
-						profile: j.T(e, Object(h.n)(e, s)),
-						subreddit: j.jb(e, Object(_.G)(e, n)),
-						userSubreddit: j.sb(e),
+						profile: j.U(e, Object(h.n)(e, s)),
+						subreddit: j.kb(e, Object(_.G)(e, n)),
+						userSubreddit: j.tb(e),
 						adblock: j.e(e)
 					})
 				},
@@ -63660,9 +63663,9 @@
 						action: "view",
 						noun: "screen",
 						...S(e),
-						profile: j.T(e, Object(h.n)(e, n)),
-						subreddit: j.jb(e, Object(_.G)(e, t)),
-						userSubreddit: j.sb(e),
+						profile: j.U(e, Object(h.n)(e, n)),
+						subreddit: j.kb(e, Object(_.G)(e, t)),
+						userSubreddit: j.tb(e),
 						adblock: j.e(e)
 					})
 				},
@@ -63696,9 +63699,9 @@
 						actionInfo: j.d(e, {
 							success: i
 						}),
-						subreddit: j.ib(e),
-						timer: j.ob(s, r),
-						userSubreddit: j.sb(e),
+						subreddit: j.jb(e),
+						timer: j.pb(s, r),
+						userSubreddit: j.tb(e),
 						adblock: j.e(e),
 						...a ? Object(u.r)(e, a) : {}
 					})
@@ -63709,7 +63712,7 @@
 					noun: "page",
 					correlationId: Object(O.c)(O.a.GoldPayment),
 					...S(n),
-					timer: j.ob(e, t),
+					timer: j.pb(e, t),
 					adblock: j.e(n)
 				}),
 				H = () => e => ({
@@ -63724,7 +63727,7 @@
 					noun: "page",
 					correlationId: Object(O.c)(O.a.GoldPayment),
 					...S(n),
-					timer: j.ob(e, t),
+					timer: j.pb(e, t),
 					adblock: j.e(n)
 				}),
 				V = () => e => ({
@@ -63738,20 +63741,20 @@
 					action: "view",
 					noun: "page",
 					...S(n),
-					timer: j.ob(e, t)
+					timer: j.pb(e, t)
 				}),
 				K = (e, t) => n => ({
 					source: "global",
 					action: "view",
 					noun: "screen",
 					...S(n),
-					timer: j.ob(e, t)
+					timer: j.pb(e, t)
 				}),
 				Q = () => e => ({
 					source: "global",
 					action: "view",
 					noun: "screen",
-					subreddit: j.ib(e),
+					subreddit: j.jb(e),
 					...S(e)
 				}),
 				J = () => e => ({
@@ -63771,10 +63774,10 @@
 					action: "view",
 					noun: "screen",
 					...S(n),
-					customFeed: j.l(n),
-					subreddit: j.ib(n),
-					timer: j.ob(e, t),
-					userSubreddit: j.sb(n),
+					customFeed: j.m(n),
+					subreddit: j.jb(n),
+					timer: j.pb(e, t),
+					userSubreddit: j.tb(n),
 					adblock: j.e(n)
 				}),
 				Z = () => e => ({
@@ -63806,37 +63809,37 @@
 						} = a.listings.postOrder;
 						l = l && !t.error[e] && !t.pending[e]
 					}
-					const u = j.G(a, r);
+					const u = j.H(a, r);
 					return {
 						...C.g(a, t),
 						...$,
-						...j.n(a),
+						...j.o(a),
 						actionInfo: j.d(a, {
 							success: l,
 							paneName: u
 						}),
-						timer: j.ob(n, s),
+						timer: j.pb(n, s),
 						search: {
-							...j.bb(a, t, E.a.SERP, !0, r || void 0),
+							...j.cb(a, t, E.a.SERP, !0, r || void 0),
 							sort: null !== (d = t.sort) && void 0 !== d ? d : o.Tb,
 							range: null !== (c = t.t) && void 0 !== c ? c : o.Ub
 						},
 						...ee(i),
-						userPreferences: j.db(a)
+						userPreferences: j.eb(a)
 					}
 				},
 				ne = (e, t, n) => s => ({
-					...j.n(s),
+					...j.o(s),
 					...$,
 					actionInfo: {
 						...j.d(s),
 						pageType: "search_dropdown"
 					},
 					search: {
-						...j.bb(s, e, E.a.Typeahead, !0, t || void 0)
+						...j.cb(s, e, E.a.Typeahead, !0, t || void 0)
 					},
 					...ee(n),
-					userPreferences: j.db(s)
+					userPreferences: j.eb(s)
 				}),
 				se = (e, t) => {
 					Object(k.a)({
@@ -63869,11 +63872,11 @@
 			var s = n("./src/reddit/constants/tracking.ts"),
 				r = n("./src/reddit/selectors/telemetry.ts");
 			const o = () => e => ({
-				...Object(r.n)(e),
+				...Object(r.o)(e),
 				source: "post",
 				action: s.c.CLICK,
 				noun: "share_chat",
-				subreddit: Object(r.ib)(e)
+				subreddit: Object(r.jb)(e)
 			})
 		},
 		"./src/reddit/helpers/trackers/snoovatar.ts": function(e, t, n) {
@@ -63929,7 +63932,7 @@
 						source: e,
 						action: "click",
 						noun: "edit_snoovatar",
-						...o.n(t)
+						...o.o(t)
 					};
 					return Object(r.a)(t) && Object.assign(n, a), n
 				},
@@ -63943,52 +63946,52 @@
 						source: e,
 						action: "click",
 						noun: "copy_avatar",
-						...o.n(n),
+						...o.o(n),
 						snoovatar: {
 							userGenerated: s
 						}
 					}
 				},
 				l = e => ({
-					...o.n(e),
+					...o.o(e),
 					source: "avatar",
 					action: "click",
 					noun: "try_this_look_post",
-					snoovatar: o.gb(e)
+					snoovatar: o.hb(e)
 				}),
 				u = e => ({
-					...o.n(e),
+					...o.o(e),
 					source: "global",
 					action: "view",
 					noun: "screen",
 					actionInfo: {
 						pageType: "snoovatar_builder"
 					},
-					snoovatar: o.gb(e)
+					snoovatar: o.hb(e)
 				}),
 				m = e => ({
-					...o.n(e),
+					...o.o(e),
 					source: "avatar_builder",
 					action: "click",
 					noun: "close",
-					snoovatar: o.gb(e)
+					snoovatar: o.hb(e)
 				}),
 				p = e => ({
 					source: "nav",
 					action: "view",
 					noun: "avatar_marketing",
-					...o.n(e),
+					...o.o(e),
 					...a
 				}),
 				b = e => ({
 					source: "nav",
 					action: "click",
 					noun: "avatar_marketing",
-					...o.n(e),
+					...o.o(e),
 					...a
 				}),
 				f = e => t => ({
-					...o.n(t),
+					...o.o(t),
 					source: "snoovatar",
 					action: "set_to_profile",
 					noun: "snoovatar",
@@ -64000,8 +64003,8 @@
 					source: "avatar",
 					action: e,
 					noun: "community_spaces",
-					...o.n(n),
-					snoovatar: o.gb(n),
+					...o.o(n),
+					snoovatar: o.hb(n),
 					actionInfo: {
 						paneName: "avatar_community_spaces" + (t ? "_control" : "")
 					}
@@ -64013,14 +64016,14 @@
 					source: e,
 					action: t,
 					noun: n,
-					...o.n(s),
-					snoovatar: o.gb(s)
+					...o.o(s),
+					snoovatar: o.hb(s)
 				}),
 				O = x("anniversary_achievement", "view", "anniversary_achievement"),
 				E = x("anniversary_achievement", "click", "close"),
 				C = x("anniversary_achievement", "click", "equip"),
 				y = e => () => t => ({
-					...o.n(t),
+					...o.o(t),
 					source: "gold_top_nav",
 					action: e,
 					noun: "quick_create_cta"
@@ -64031,11 +64034,11 @@
 					source: e,
 					action: t,
 					noun: n,
-					...o.n(s),
+					...o.o(s),
 					actionInfo: {
 						pageType: "onboarding"
 					},
-					snoovatar: o.gb(s)
+					snoovatar: o.hb(s)
 				}),
 				S = e => I("onboarding", "click", e),
 				w = () => I("avatar", "view", "onboarding")
@@ -64080,13 +64083,13 @@
 					}
 				},
 				i = e => t => ({
-					...Object(r.n)(t),
+					...Object(r.o)(t),
 					action: s.c.CLICK,
 					noun: "add_social_link",
 					source: e
 				}),
 				a = e => t => ({
-					...Object(r.n)(t),
+					...Object(r.o)(t),
 					action: s.c.CLICK,
 					noun: "social_link",
 					source: "add_social_link",
@@ -64095,32 +64098,32 @@
 					})
 				}),
 				d = e => t => ({
-					...Object(r.n)(t),
+					...Object(r.o)(t),
 					action: s.c.CLICK,
 					noun: "save",
 					source: "add_social_link",
 					...o(e)
 				}),
 				c = e => t => ({
-					...Object(r.n)(t),
+					...Object(r.o)(t),
 					action: s.c.CLICK,
 					noun: "edit_social_link",
 					source: "profile_settings",
 					...o(e)
 				}),
 				l = e => t => ({
-					...Object(r.n)(t),
+					...Object(r.o)(t),
 					action: s.c.CLICK,
 					noun: "delete_social_link",
 					source: "profile_settings",
 					...o(e)
 				}),
 				u = e => t => ({
-					...Object(r.n)(t),
+					...Object(r.o)(t),
 					action: s.c.CLICK,
 					noun: "social_link",
 					source: "profile",
-					profile: Object(r.S)(t),
+					profile: Object(r.T)(t),
 					...o(e)
 				})
 		},
@@ -64149,7 +64152,7 @@
 					source: e,
 					noun: "create_community_button",
 					action: "click",
-					...r.n(t),
+					...r.o(t),
 					actionInfo: r.d(t, {
 						settingValue: t.user.account && t.user.account.isMod ? "existing_mod" : "new_mod"
 					}),
@@ -64159,7 +64162,7 @@
 					source: "community_form",
 					noun: "save_community_button",
 					action: "click",
-					...r.n(o),
+					...r.o(o),
 					actionInfo: r.d(o, {
 						settingValue: e
 					}),
@@ -64178,7 +64181,7 @@
 					source: "community_form",
 					noun: "cancel",
 					action: "click",
-					...r.n(e),
+					...r.o(e),
 					actionInfo: r.d(e),
 					correlationId: Object(s.c)(s.a.SubredditCreation)
 				}),
@@ -64186,7 +64189,7 @@
 					source: "community_form",
 					noun: "error_message",
 					action: "view",
-					...r.n(n),
+					...r.o(n),
 					actionInfo: r.d(n, {
 						reason: e,
 						settingValue: t
@@ -64197,28 +64200,28 @@
 					source: "user_dropdown",
 					noun: "create_community",
 					action: "click",
-					...r.n(e),
+					...r.o(e),
 					actionInfo: r.d(e)
 				}),
 				l = () => e => ({
 					source: "community_first_post",
 					noun: "modal",
 					action: "view",
-					...r.n(e),
+					...r.o(e),
 					actionInfo: r.d(e)
 				}),
 				u = () => e => ({
 					source: "community_first_post",
 					noun: "modal",
 					action: "click",
-					...r.n(e),
+					...r.o(e),
 					actionInfo: r.d(e)
 				}),
 				m = () => e => ({
 					source: "community_first_post",
 					noun: "modal",
 					action: "dismiss",
-					...r.n(e),
+					...r.o(e),
 					actionInfo: r.d(e)
 				})
 		},
@@ -64236,7 +64239,7 @@
 					source: "post",
 					noun: "forking_module",
 					action: "click",
-					...s.n(e),
+					...s.o(e),
 					actionInfo: s.d(e, {
 						settingValue: e.user.account && e.user.account.isMod ? "existing_mod" : "new_mod"
 					})
@@ -64245,14 +64248,14 @@
 					source: "post",
 					noun: "forking_module",
 					action: "dismiss",
-					...s.n(e),
+					...s.o(e),
 					actionInfo: s.d(e)
 				}),
 				i = e => e => ({
 					source: "post",
 					noun: "forking_module",
 					action: "view",
-					...s.n(e),
+					...s.o(e),
 					actionInfo: s.d(e)
 				})
 		},
@@ -64274,10 +64277,10 @@
 					source: "id_card",
 					action: "click",
 					noun: "user_flair_picker",
-					...o.n(e)
+					...o.o(e)
 				}),
 				a = e => t => {
-					const n = o.ib(t),
+					const n = o.jb(t),
 						i = Object(r.r)(t, {
 							subredditId: null == n ? void 0 : n.id
 						}),
@@ -64291,7 +64294,7 @@
 						source: "user_flair_picker",
 						action: "click",
 						noun: "user_flair",
-						...o.n(t),
+						...o.o(t),
 						subreddit: n,
 						userFlair: {
 							id: null == a ? void 0 : a.id,
@@ -64310,7 +64313,7 @@
 					source: "user_flair_picker",
 					action: "click",
 					noun: "edit_user_flair",
-					...o.n(e)
+					...o.o(e)
 				}),
 				c = e => t => ({
 					source: "user_flair_picker",
@@ -64320,8 +64323,8 @@
 						value: e ? "0" : "1",
 						oldValue: e ? "1" : "0"
 					},
-					subreddit: o.ib(t),
-					...o.n(t)
+					subreddit: o.jb(t),
+					...o.o(t)
 				})
 		},
 		"./src/reddit/helpers/validateFlairCssClass.ts": function(e, t, n) {
@@ -64607,14 +64610,14 @@
 					noun: "outbound_link",
 					action: "click",
 					source: "link",
-					...Object(i.n)(a),
+					...Object(i.o)(a),
 					actionInfo: Object(i.d)(a),
-					geo: Object(i.s)(a),
-					screen: Object(i.ab)(a),
-					subreddit: Object(i.ib)(a),
-					outbound: Object(i.F)(a, e, t, s, n)
+					geo: Object(i.t)(a),
+					screen: Object(i.bb)(a),
+					subreddit: Object(i.jb)(a),
+					outbound: Object(i.G)(a, e, t, s, n)
 				};
-				return n && (d.comment = Object(i.h)(a, n)), s && (d.post = Object(i.J)(a, s)), r && (d.socialLink = Object(o.g)({
+				return n && (d.comment = Object(i.h)(a, n)), s && (d.post = Object(i.K)(a, s)), r && (d.socialLink = Object(o.g)({
 					socialLinkType: r
 				}).socialLink), d
 			};
@@ -76398,4 +76401,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.8f3f6f6f948b631812b0.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.a65adbafd6be83846a1f.js.map

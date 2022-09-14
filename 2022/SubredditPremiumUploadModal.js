@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditPremiumUploadModal.47592e9b5fd569aa37d6.js
-// Retrieved at 9/12/2022, 2:10:03 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditPremiumUploadModal.daf9a94c3e4b63f28e75.js
+// Retrieved at 9/14/2022, 4:30:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditPremiumUploadModal"], {
 		"./src/reddit/components/Economics/SubredditPremium/UploadModal/ImageUpload/index.m.less": function(e, t, a) {
@@ -97,8 +97,8 @@
 			a.r(t);
 			var s = a("./node_modules/polished/dist/polished.es.js"),
 				n = a("./node_modules/react/index.js"),
-				r = a.n(n),
-				o = a("./node_modules/react-redux/es/index.js"),
+				o = a.n(n),
+				r = a("./node_modules/react-redux/es/index.js"),
 				i = a("./node_modules/reselect/es/index.js"),
 				l = a("./src/higherOrderComponents/asModal/index.tsx"),
 				d = a("./src/reddit/actions/governance/errorToast.ts"),
@@ -123,14 +123,14 @@
 				O = a.n(N);
 
 			function j() {
-				return r.a.createElement("svg", {
+				return o.a.createElement("svg", {
 					className: O.a.uploadDropImage,
 					width: "120",
 					height: "120",
 					viewBox: "0 0 148 148",
 					fill: "none",
 					xmlns: "http://www.w3.org/2000/svg"
-				}, r.a.createElement("rect", {
+				}, o.a.createElement("rect", {
 					x: "0.5",
 					y: "0.5",
 					width: "147",
@@ -138,7 +138,7 @@
 					rx: "7.5",
 					stroke: "#878A8C",
 					strokeDasharray: "8 5"
-				}), r.a.createElement("path", {
+				}), o.a.createElement("path", {
 					fillRule: "evenodd",
 					clipRule: "evenodd",
 					d: "M81.1381 65.0875C81.1973 65.0859 81.2565 65.0859 81.3141 65.0859C85.2213 65.0859 88.4005 68.2635 88.4005 72.1707C88.4005 73.0539 87.6837 73.7707 86.8005 73.7707C85.9157 73.7707 85.2005 73.0539 85.2005 72.1707C85.2005 70.0283 83.4565 68.2859 81.3141 68.2859C81.0565 68.2859 80.8069 68.3163 80.5637 68.3627C79.8645 68.4987 79.1461 68.1499 78.8261 67.5035C77.3829 64.6027 74.4837 62.7995 71.2565 62.7995C66.5941 62.7995 62.8005 66.5931 62.8005 71.2571C62.8005 72.1403 62.0837 72.8571 61.2005 72.8571C60.3157 72.8571 59.6005 72.1403 59.6005 71.2571C59.6005 64.8299 64.8293 59.5995 71.2565 59.5995C75.3269 59.5995 79.0181 61.6763 81.1381 65.0875ZM74.612 69.324C74.8072 69.404 74.9848 69.5224 75.132 69.6696L79.932 74.4696C80.556 75.0936 80.556 76.1064 79.932 76.732C79.6184 77.044 79.2088 77.2008 78.7992 77.2008C78.3912 77.2008 77.9816 77.044 77.668 76.732L75.5992 74.6632V85.2008C75.5992 86.084 74.884 86.8008 73.9992 86.8008C73.116 86.8008 72.3992 86.084 72.3992 85.2008V74.6632L70.332 76.732C69.7064 77.356 68.6936 77.356 68.068 76.732C67.444 76.1064 67.444 75.0936 68.068 74.4696L72.868 69.6696C73.0152 69.5224 73.1928 69.404 73.388 69.324C73.78 69.1624 74.22 69.1624 74.612 69.324Z",
@@ -154,29 +154,29 @@
 					image: t,
 					onChange: a
 				} = e;
-				return r.a.createElement(S.a, {
+				return o.a.createElement(S.a, {
 					onDrop: e => a(e[0]),
-					render: s => r.a.createElement("div", {
+					render: s => o.a.createElement("div", {
 						className: Object(w.a)(O.a.container, {
 							[O.a.isOver]: s
 						})
-					}, r.a.createElement("div", {
+					}, o.a.createElement("div", {
 						className: O.a.label
 					}, M._("Image", null, {
 						hk: "34LRIF"
-					}), t && r.a.createElement("button", {
+					}), t && o.a.createElement("button", {
 						className: O.a.trashIcon,
 						onClick: () => e.onChange()
-					}, r.a.createElement(k.a, null))), r.a.createElement("label", {
+					}, o.a.createElement(k.a, null))), o.a.createElement("label", {
 						className: O.a.dropTarget
-					}, t ? r.a.createElement("div", {
+					}, t ? o.a.createElement("div", {
 						className: O.a.imagePreview
-					}, r.a.createElement("div", {
+					}, o.a.createElement("div", {
 						className: O.a.image,
 						style: {
 							backgroundImage: `url(${t.url})`
 						}
-					})) : r.a.createElement(j, null), r.a.createElement("input", {
+					})) : o.a.createElement(j, null), o.a.createElement("input", {
 						type: "file",
 						className: O.a.imageInput,
 						onChange: e => {
@@ -202,7 +202,7 @@
 				}).apply(this, arguments)
 			}
 			const U = 1e3;
-			class A extends r.a.Component {
+			class A extends o.a.Component {
 				constructor() {
 					super(...arguments), this.state = {
 						showErrorMessage: !1
@@ -226,20 +226,20 @@
 						isValid: t,
 						label: a,
 						...s
-					} = this.props, n = s.maxLength, o = n ? n - (this.props.value + "").length : void 0;
-					return r.a.createElement("div", {
+					} = this.props, n = s.maxLength, r = n ? n - (this.props.value + "").length : void 0;
+					return o.a.createElement("div", {
 						className: T.a.container
-					}, r.a.createElement("div", {
+					}, o.a.createElement("div", {
 						className: T.a.labelRow
-					}, r.a.createElement("div", {
+					}, o.a.createElement("div", {
 						className: T.a.label
-					}, a), void 0 !== o && r.a.createElement("div", {
+					}, a), void 0 !== r && o.a.createElement("div", {
 						className: T.a.remainingCharacters
-					}, o)), r.a.createElement(D.c, B({
+					}, r)), o.a.createElement(D.c, B({
 						className: Object(w.a)(T.a.input, {
 							[T.a.error]: !!this.props.value && !t
 						})
-					}, s)), this.state.showErrorMessage && e && r.a.createElement("div", {
+					}, s)), this.state.showErrorMessage && e && o.a.createElement("div", {
 						className: T.a.errorMessage
 					}, e))
 				}
@@ -267,7 +267,7 @@
 			function K(e) {
 				return z(e) && J(e) && G(e)
 			}
-			const V = e => r.a.createElement("li", {
+			const V = e => o.a.createElement("li", {
 				className: Object(w.a)(F.a.requirement, {
 					[F.a.error]: e.isError
 				})
@@ -279,48 +279,48 @@
 					type: a,
 					username: s,
 					usernameColor: n
-				} = e, o = t && !z(t), i = t && !J(t), l = t && !G(t);
-				return r.a.createElement("div", {
+				} = e, r = t && !z(t), i = t && !J(t), l = t && !G(t);
+				return o.a.createElement("div", {
 					className: F.a.container
-				}, r.a.createElement("div", {
+				}, o.a.createElement("div", {
 					className: F.a.label
 				}, H._("Requirements", null, {
 					hk: "3zOmGP"
-				})), r.a.createElement("div", {
+				})), o.a.createElement("div", {
 					className: F.a.requirements
-				}, r.a.createElement("ul", null, r.a.createElement(V, {
-					isError: o
+				}, o.a.createElement("ul", null, o.a.createElement(V, {
+					isError: r
 				}, H._("PNG or GIF with transparency", null, {
 					hk: "4GzqFi"
-				})), r.a.createElement(V, {
+				})), o.a.createElement(V, {
 					isError: i
 				}, H._("Height and width exactly 120×120px", null, {
 					hk: "3WlJuk"
-				})), r.a.createElement(V, {
+				})), o.a.createElement(V, {
 					isError: l
 				}, H._("File size limited to {max-file-size} KB", [H._param("max-file-size", q)], {
 					hk: "2i3L33"
-				})), r.a.createElement(V, null, H._("Add 4px black outline", null, {
+				})), o.a.createElement(V, null, H._("Add 4px black outline", null, {
 					hk: "2mHGJn"
-				}))), r.a.createElement("br", null), a === v.b.Badge && t && n ? r.a.createElement("div", null, r.a.createElement("div", {
+				}))), o.a.createElement("br", null), a === v.b.Badge && t && n ? o.a.createElement("div", null, o.a.createElement("div", {
 					className: F.a.label
 				}, H._("Preview", null, {
 					hk: "cOBjy"
-				})), r.a.createElement("div", {
+				})), o.a.createElement("div", {
 					className: F.a.preview
-				}, r.a.createElement("div", {
+				}, o.a.createElement("div", {
 					className: F.a.badgePreview,
 					style: {
 						backgroundImage: `url(${t.url})`
 					}
-				}), r.a.createElement("div", {
+				}), o.a.createElement("div", {
 					className: F.a.username,
 					style: {
 						color: n
 					}
-				}, s))) : r.a.createElement(r.a.Fragment, null, H._("Follow this", null, {
+				}, s))) : o.a.createElement(o.a.Fragment, null, H._("Follow this", null, {
 					hk: "3w0v6n"
-				}), " ", r.a.createElement(L.default, {
+				}), " ", o.a.createElement(L.default, {
 					className: F.a.link,
 					to: "https://www.reddit.com/r/FortNiteBR/wiki/badgeemojiguide"
 				}, H._("artistic guide", null, {
@@ -337,85 +337,85 @@
 			const {
 				fbt: $
 			} = a("./node_modules/fbt/lib/FbtPublic.js");
-			var ee = e => r.a.createElement("div", {
+			var ee = e => o.a.createElement("div", {
 					className: Q.a.badgePreview
-				}, r.a.createElement("div", {
+				}, o.a.createElement("div", {
 					className: Q.a.image,
 					style: {
 						backgroundImage: `url(${e.image.url})`
 					}
-				}), r.a.createElement("div", {
+				}), o.a.createElement("div", {
 					className: Q.a.text
-				}, r.a.createElement("div", {
+				}, o.a.createElement("div", {
 					className: Q.a.meta
 				}, $._("Community-Created Badges", null, {
 					hk: "4mvsBi"
-				})), r.a.createElement("div", {
+				})), o.a.createElement("div", {
 					className: Q.a.name
-				}, e.name), r.a.createElement("div", {
+				}, e.name), o.a.createElement("div", {
 					className: Q.a.caption
-				}, e.description)), r.a.createElement(Y.a, {
+				}, e.description)), o.a.createElement(Y.a, {
 					className: Q.a.chevron
 				})),
 				te = a("./src/reddit/components/Economics/SubredditPremium/UploadModal/SubmissionComplete/index.m.less"),
 				ae = a.n(te);
 			const {
 				fbt: se
-			} = a("./node_modules/fbt/lib/FbtPublic.js"), ne = e => r.a.createElement("div", {
+			} = a("./node_modules/fbt/lib/FbtPublic.js"), ne = e => o.a.createElement("div", {
 				className: ae.a.emotePreview
-			}, r.a.createElement("div", {
+			}, o.a.createElement("div", {
 				className: Object(w.a)(ae.a.image, ae.a.emotePreviewImage),
 				style: {
 					backgroundImage: `url(${e.image.url})`
 				}
-			}), r.a.createElement("div", {
+			}), o.a.createElement("div", {
 				className: ae.a.emotePreviewName
 			}, ":", e.name, ":"));
 
-			function re(e) {
+			function oe(e) {
 				const {
 					description: t,
 					image: a,
 					name: s,
 					onCloseModal: n
 				} = e;
-				return r.a.createElement(m.e, {
+				return o.a.createElement(m.e, {
 					className: ae.a.modalBody
-				}, r.a.createElement(m.i, {
+				}, o.a.createElement(m.i, {
 					className: ae.a.modalHeader
-				}, r.a.createElement(m.q, {
+				}, o.a.createElement(m.q, {
 					className: ae.a.title
 				}, se._("Thanks!", null, {
 					hk: "SMfWZ"
-				})), r.a.createElement(f.a, {
+				})), o.a.createElement(f.a, {
 					onClick: n
-				}, r.a.createElement(m.b, null))), r.a.createElement(m.l, {
+				}, o.a.createElement(m.b, null))), o.a.createElement(m.l, {
 					className: ae.a.modalMain
-				}, r.a.createElement("div", {
+				}, o.a.createElement("div", {
 					className: ae.a.modMessage
 				}, se._("Give us a couple of days to review. We'll keep you posted. – Mods", null, {
 					hk: "2XafSh"
-				})), e.type === v.b.Badge ? r.a.createElement(ee, {
+				})), e.type === v.b.Badge ? o.a.createElement(ee, {
 					image: a,
 					name: s,
 					description: t
-				}) : r.a.createElement(ne, e)), r.a.createElement(m.g, null, r.a.createElement(g.l, {
+				}) : o.a.createElement(ne, e)), o.a.createElement(m.g, null, o.a.createElement(g.l, {
 					onClick: n
 				}, se._("Okay", null, {
 					hk: "406S0g"
 				}))))
 			}
-			var oe = a("./node_modules/fbt/lib/FbtPublic.js"),
+			var re = a("./node_modules/fbt/lib/FbtPublic.js"),
 				ie = a("./src/reddit/controls/DropdownSelector/index.tsx"),
 				le = a("./src/reddit/components/Economics/SubredditPremium/UploadModal/TypeSelector/index.m.less"),
 				de = a.n(le);
 			const ce = [{
-				displayText: () => oe.fbt._("Badge", null, {
+				displayText: () => re.fbt._("Badge", null, {
 					hk: "41rGrX"
 				}),
 				value: v.b.Badge
 			}, {
-				displayText: () => oe.fbt._("Emoji", null, {
+				displayText: () => re.fbt._("Emoji", null, {
 					hk: "20CBIq"
 				}),
 				value: v.b.Emote
@@ -423,9 +423,9 @@
 
 			function me(e) {
 				const t = ce.find(t => t.value === e.type) || ce[0];
-				return r.a.createElement("div", {
+				return o.a.createElement("div", {
 					className: de.a.container
-				}, r.a.createElement(ie.a, {
+				}, o.a.createElement(ie.a, {
 					className: de.a.selector,
 					displayText: t.displayText(),
 					options: ce.map(e => ({
@@ -444,7 +444,7 @@
 			const {
 				fbt: fe
 			} = a("./node_modules/fbt/lib/FbtPublic.js"), ve = /^#?[0-9a-f]{6}$/i;
-			class Ee extends r.a.Component {
+			class Ee extends o.a.Component {
 				constructor(e) {
 					super(e), this.onInputChange = e => {
 						let t = e.currentTarget.value.toLowerCase();
@@ -457,23 +457,23 @@
 					}
 				}
 				render() {
-					return r.a.createElement("div", {
+					return o.a.createElement("div", {
 						className: be.a.container
-					}, r.a.createElement("div", {
+					}, o.a.createElement("div", {
 						className: be.a.label
 					}, fe._("Username color", null, {
 						hk: "4EQjHC"
-					})), r.a.createElement("div", {
+					})), o.a.createElement("div", {
 						className: be.a.control
-					}, r.a.createElement("div", {
+					}, o.a.createElement("div", {
 						className: be.a.colorSwatch
-					}, r.a.createElement("input", {
+					}, o.a.createElement("input", {
 						className: be.a.colorInput,
 						disabled: this.props.disabled,
 						onChange: this.onInputChange,
 						type: "color",
 						value: this.state.value || he.a.alienblue
-					})), r.a.createElement(D.c, {
+					})), o.a.createElement(D.c, {
 						className: be.a.textInput,
 						disabled: this.props.disabled,
 						onChange: this.onInputChange,
@@ -481,7 +481,7 @@
 							hk: "4FrAf4"
 						}),
 						value: this.state.value
-					})), this.props.errorMessage && r.a.createElement("div", {
+					})), this.props.errorMessage && o.a.createElement("div", {
 						className: be.a.errorMessage
 					}, this.props.errorMessage))
 				}
@@ -491,7 +491,7 @@
 			const {
 				fbt: Ce
 			} = a("./node_modules/fbt/lib/FbtPublic.js"), ye = e => !!e.match(/^[a-zA-Z0-9][-'!a-zA-Z0-9_ ]{0,62}[a-zA-Z0-9]$/), we = e => !!e.match(/^[a-zA-Z0-9][a-zA-Z0-9_]{0,18}[a-zA-Z0-9]$/), Se = e => !!e.match(/^[a-zA-Z0-9]{1}.{1,119}$/), ke = /[^a-z0-9_]/g, Ne = .65, Oe = .075;
-			class je extends r.a.Component {
+			class je extends o.a.Component {
 				constructor(e) {
 					super(e), this.onTypeSelected = e => {
 						this.setState({
@@ -570,7 +570,7 @@
 				}
 				sendEvent(e, t) {
 					this.props.sendEvent(a => {
-						const s = C.n(a);
+						const s = C.o(a);
 						return {
 							source: "meta",
 							action: e,
@@ -580,7 +580,7 @@
 								...s.actionInfo,
 								...t
 							},
-							subreddit: C.ib(a)
+							subreddit: C.jb(a)
 						}
 					})
 				}
@@ -591,19 +591,19 @@
 						image: a,
 						name: s,
 						submitted: n,
-						type: r,
-						uploading: o,
+						type: o,
+						uploading: r,
 						usernameColor: i,
 						usernameColorError: l
 					} = this.state;
-					switch (r) {
+					switch (o) {
 						case v.b.Badge:
 							if (!ye(s) || !i.length || l || !Se(t + e())) return !1;
 							break;
 						case v.b.Emote:
 							if (!we(s)) return !1
 					}
-					return !o && !n && a && K(a)
+					return !r && !n && a && K(a)
 				}
 				getNameErrorMessage() {
 					const {
@@ -638,7 +638,7 @@
 						byUserNameSuffix: a,
 						description: s,
 						image: n,
-						name: o,
+						name: r,
 						submitted: i,
 						type: l,
 						uploading: d,
@@ -646,44 +646,44 @@
 						usernameColorError: u
 					} = this.state;
 					if (!t) return null;
-					if (i) return r.a.createElement(re, {
+					if (i) return o.a.createElement(oe, {
 						type: l,
 						image: n,
-						name: o,
+						name: r,
 						description: s + a(),
 						onCloseModal: this.closeModal
 					});
-					const p = l === v.b.Badge ? ye(o) : we(o),
+					const p = l === v.b.Badge ? ye(r) : we(r),
 						h = p ? void 0 : this.getNameErrorMessage(),
 						E = Se(s + a()),
 						x = E ? void 0 : this.getDescriptionErrorMessage();
-					return r.a.createElement(m.e, {
+					return o.a.createElement(m.e, {
 						className: _e.a.modalBody
-					}, r.a.createElement(m.i, {
+					}, o.a.createElement(m.i, {
 						className: _e.a.modalHeader
-					}, r.a.createElement(m.q, {
+					}, o.a.createElement(m.q, {
 						className: _e.a.title
 					}, Ce._("Upload Badge or Emoji", null, {
 						hk: "2xnG8y"
-					})), r.a.createElement(f.a, {
+					})), o.a.createElement(f.a, {
 						disabled: d,
 						onClick: this.closeModal
-					}, r.a.createElement(m.b, null))), r.a.createElement(m.l, null, r.a.createElement(me, {
+					}, o.a.createElement(m.b, null))), o.a.createElement(m.l, null, o.a.createElement(me, {
 						type: l,
 						onItemTypeSelected: this.onTypeSelected
-					}), r.a.createElement("div", {
+					}), o.a.createElement("div", {
 						className: _e.a.imageAndRequirements
-					}, r.a.createElement(I, {
+					}, o.a.createElement(I, {
 						onChange: this.onImageChanged,
 						image: n
-					}), r.a.createElement(W, {
+					}), o.a.createElement(W, {
 						type: l,
 						image: n,
 						username: e,
 						usernameColor: c
-					})), l === v.b.Badge ? r.a.createElement(r.a.Fragment, null, r.a.createElement("div", {
+					})), l === v.b.Badge ? o.a.createElement(o.a.Fragment, null, o.a.createElement("div", {
 						className: _e.a.nameAndColor
-					}, r.a.createElement(A, {
+					}, o.a.createElement(A, {
 						disabled: d,
 						label: Ce._("Name", null, {
 							hk: "3bae6P"
@@ -695,15 +695,15 @@
 						placeholder: Ce._("Name of badge", null, {
 							hk: "29yp12"
 						}),
-						value: o,
+						value: r,
 						isValid: p,
 						errorMessage: h
-					}), r.a.createElement(Ee, {
+					}), o.a.createElement(Ee, {
 						disabled: d,
 						onChange: this.onUsernameColorChanged,
 						value: c,
 						errorMessage: u
-					})), r.a.createElement(A, {
+					})), o.a.createElement(A, {
 						disabled: d,
 						label: Ce._("Description", null, {
 							hk: "Kltti"
@@ -718,7 +718,7 @@
 						value: s,
 						isValid: E,
 						errorMessage: x
-					})) : r.a.createElement(r.a.Fragment, null, r.a.createElement(A, {
+					})) : o.a.createElement(o.a.Fragment, null, o.a.createElement(A, {
 						disabled: d,
 						label: Ce._("Ticker", null, {
 							hk: "2iIv3r"
@@ -728,23 +728,23 @@
 						placeholder: Ce._(":your_emoji_name:", null, {
 							hk: "2cQ0Lq"
 						}),
-						value: o ? `:${o}:` : "",
+						value: r ? `:${r}:` : "",
 						isValid: p,
 						errorMessage: h
-					}), !h && r.a.createElement("div", {
+					}), !h && o.a.createElement("div", {
 						className: _e.a.tickerDescription
 					}, Ce._("Be creative. This is what users can type to enter in your emoji.", null, {
 						hk: "2FMSyr"
-					})))), r.a.createElement(m.g, null, r.a.createElement(m.a, {
+					})))), o.a.createElement(m.g, null, o.a.createElement(m.a, {
 						disabled: d,
 						onClick: this.closeModal
 					}, Ce._("Cancel", null, {
 						hk: "2TSLl5"
-					})), r.a.createElement(g.l, {
+					})), o.a.createElement(g.l, {
 						className: _e.a.submitButton,
 						disabled: !this.canSubmit(),
 						onClick: this.upload
-					}, d ? r.a.createElement(b.a, {
+					}, d ? o.a.createElement(b.a, {
 						sizePx: 10
 					}) : Ce._("Submit For Review", null, {
 						hk: "7Y4Q7"
@@ -763,7 +763,7 @@
 					}
 				}),
 				Ie = Object(h.u)();
-			t.default = Object(l.a)(Object(p.b)(Object(u.c)(Ie(Object(o.b)(Me, (e, t) => ({
+			t.default = Object(l.a)(Object(p.b)(Object(u.c)(Ie(Object(r.b)(Me, (e, t) => ({
 				onClose: () => e(Object(c.f)()),
 				onGovernanceError: t => {
 					Object(d.a)(e, t)
@@ -816,8 +816,8 @@
 			}));
 			var s = a("./src/lib/lessComponent.tsx"),
 				n = a("./src/reddit/controls/Input/ModalInput.tsx"),
-				r = a("./src/reddit/icons/svgs/Checkbox/index.tsx"),
-				o = a("./src/reddit/icons/svgs/CheckboxSelected/index.tsx"),
+				o = a("./src/reddit/icons/svgs/Checkbox/index.tsx"),
+				r = a("./src/reddit/icons/svgs/CheckboxSelected/index.tsx"),
 				i = a("./src/reddit/icons/svgs/RadioOff/index.tsx"),
 				l = a("./src/reddit/icons/svgs/RadioOn/index.tsx"),
 				d = a("./src/reddit/components/StructuredStyles/StyledComponents/inputs.m.less"),
@@ -826,8 +826,8 @@
 				u = s.a.input("Input", c.a),
 				p = s.a.wrapped(l.a, "RadioOn", c.a),
 				h = s.a.wrapped(i.a, "RadioOff", c.a),
-				g = s.a.wrapped(r.a, "Checkbox", c.a),
-				b = s.a.wrapped(o.a, "CheckboxSelected", c.a),
+				g = s.a.wrapped(o.a, "Checkbox", c.a),
+				b = s.a.wrapped(r.a, "CheckboxSelected", c.a),
 				f = s.a.textarea("Textarea", c.a),
 				v = s.a.label("StyledLabel", c.a),
 				E = s.a.input("StyledFileInput", c.a)
@@ -855,8 +855,8 @@
 			}));
 			var s = a("./node_modules/react/index.js"),
 				n = a.n(s),
-				r = a("./src/reddit/controls/DropdownSelector/index.m.less"),
-				o = a.n(r),
+				o = a("./src/reddit/controls/DropdownSelector/index.m.less"),
+				r = a.n(o),
 				i = a("./src/lib/classNames/index.ts"),
 				l = a("./src/reddit/controls/Dropdown/Row.tsx"),
 				d = a("./src/reddit/controls/LoadingIcon/index.tsx"),
@@ -890,7 +890,7 @@
 						if (e.relatedTarget === this.dropdownButton.current) t = !0;
 						else {
 							if (!this.menuItems.current) return;
-							const a = this.menuItems.current.getElementsByClassName(o.a.menuOption);
+							const a = this.menuItems.current.getElementsByClassName(r.a.menuOption);
 							for (let s = 0; s < a.length; s++) e.relatedTarget === a[s] && (t = !0)
 						}
 						this.setState({
@@ -907,7 +907,7 @@
 						if (32 === e.keyCode || 13 === e.keyCode) this.onSelectOption(e, t, !0);
 						else if (38 === e.keyCode || 40 === e.keyCode) {
 							if (e.preventDefault(), !this.menuItems.current) return;
-							const t = this.menuItems.current.getElementsByClassName(o.a.menuOption);
+							const t = this.menuItems.current.getElementsByClassName(r.a.menuOption);
 							for (let a = 0; a < t.length; a++) t[a] === e.target && (38 === e.keyCode && a > 0 && t[a - 1].focus(), 40 === e.keyCode && a < t.length - 1 && t[a + 1].focus())
 						}
 					}
@@ -920,7 +920,7 @@
 				}
 				focusOnFirstOption() {
 					if (!this.menuItems.current) return;
-					const e = this.menuItems.current.getElementsByClassName(o.a.menuOption);
+					const e = this.menuItems.current.getElementsByClassName(r.a.menuOption);
 					e.length && e[0].focus()
 				}
 				getDropdownMenuItems() {
@@ -930,10 +930,10 @@
 						isTopicsStyle: a,
 						menuOptionClassName: s
 					} = this.props;
-					return e.map((e, r) => n.a.createElement(l.b, {
-						key: r + e.displayText,
-						className: Object(i.a)(o.a.menuOption, s, {
-							[o.a.topics]: a
+					return e.map((e, o) => n.a.createElement(l.b, {
+						key: o + e.displayText,
+						className: Object(i.a)(r.a.menuOption, s, {
+							[r.a.topics]: a
 						}),
 						noIcon: Boolean(e.icon),
 						onKeydown: t => this.handleOptionKeyDown(t, e),
@@ -950,7 +950,7 @@
 						className: t,
 						displayText: a,
 						isCompactStyle: s,
-						isTopicsStyle: r,
+						isTopicsStyle: o,
 						menuItemsClassName: l,
 						name: u,
 						isSaving: p,
@@ -962,17 +962,17 @@
 					return n.a.createElement("div", {
 						ref: this.containerRef,
 						id: this.props.id,
-						className: Object(i.a)(o.a.dropdownMenu, t, {
-							[o.a.topics]: r
+						className: Object(i.a)(r.a.dropdownMenu, t, {
+							[r.a.topics]: o
 						})
 					}, n.a.createElement("button", {
 						onClick: g ? void 0 : this.handleDropdownClick,
-						className: Object(i.a)(e, o.a.selector, {
-							[o.a.compact]: s
+						className: Object(i.a)(e, r.a.selector, {
+							[r.a.compact]: s
 						}, {
-							[o.a.topics]: r
+							[r.a.topics]: o
 						}, {
-							[o.a.disabled]: g
+							[r.a.disabled]: g
 						}),
 						name: u,
 						role: "menu",
@@ -980,19 +980,19 @@
 						onBlur: g ? void 0 : this.handleDropdownBlur,
 						onKeyDown: g ? void 0 : this.handleDropdownKeyDown
 					}, n.a.createElement("span", {
-						className: o.a.selectorContent,
+						className: r.a.selectorContent,
 						tabIndex: -1
 					}, h && n.a.createElement("span", {
-						className: o.a.buttonIcon
+						className: r.a.buttonIcon
 					}, h), a), g ? null : p ? n.a.createElement(d.a, {
 						sizePx: 8,
-						className: o.a.loadingIcon
+						className: r.a.loadingIcon
 					}) : n.a.createElement(c.a, {
 						name: "caret_down"
 					})), n.a.createElement("div", {
-						className: Object(i.a)(o.a.menuItems, l, {
-							[o.a.topics]: r,
-							[o.a.isClosed]: !b
+						className: Object(i.a)(r.a.menuItems, l, {
+							[r.a.topics]: o,
+							[r.a.isClosed]: !b
 						}),
 						onMouseDown: m,
 						ref: this.menuItems
@@ -1005,8 +1005,8 @@
 			"use strict";
 			var s = a("./node_modules/lodash/flow.js"),
 				n = a.n(s),
-				r = a("./node_modules/react/index.js"),
-				o = a.n(r),
+				o = a("./node_modules/react/index.js"),
+				r = a.n(o),
 				i = a("./node_modules/react-dnd/lib/index.js"),
 				l = a("./node_modules/react-dnd-html5-backend/lib/index.js"),
 				d = a("./src/reddit/helpers/dragDropContext/index.ts");
@@ -1022,9 +1022,9 @@
 					isOver: t.isOver(),
 					canDrop: t.canDrop()
 				})), d.a);
-			class u extends o.a.Component {
+			class u extends r.a.Component {
 				render() {
-					return this.props.connectDropTarget ? this.props.connectDropTarget(o.a.createElement("div", {
+					return this.props.connectDropTarget ? this.props.connectDropTarget(r.a.createElement("div", {
 						className: this.props.className
 					}, this.props.render(this.props.isOver, this.props.canDrop))) : null
 				}
@@ -1042,9 +1042,9 @@
 			"use strict";
 			var s = a("./node_modules/react/index.js"),
 				n = a.n(s),
-				r = a("./src/lib/classNames/index.ts"),
-				o = a("./src/reddit/controls/LoadingIcon/index.m.less"),
-				i = a.n(o);
+				o = a("./src/lib/classNames/index.ts"),
+				r = a("./src/reddit/controls/LoadingIcon/index.m.less"),
+				i = a.n(r);
 			t.a = e => {
 				let {
 					center: t,
@@ -1052,7 +1052,7 @@
 					sizePx: s = 10
 				} = e;
 				return n.a.createElement("div", {
-					className: Object(r.a)(i.a.loadingIcon, a, {
+					className: Object(o.a)(i.a.loadingIcon, a, {
 						[i.a.mCentered]: t
 					}),
 					style: {
@@ -1075,21 +1075,21 @@
 			})), a.d(t, "d", (function() {
 				return d
 			}));
-			var s, n, r = a("./src/config.ts"),
-				o = a("./src/reddit/endpoints/governance/requester.ts");
+			var s, n, o = a("./src/config.ts"),
+				r = a("./src/reddit/endpoints/governance/requester.ts");
 
 			function i(e, t, a, s) {
 				const n = `assetType=${a}&assetStatus=${s}`;
-				return Object(o.a)(e, {
+				return Object(r.a)(e, {
 					method: "get",
-					endpoint: `${r.a.metaUrl}/modtools/${t}/assets?${n}`
+					endpoint: `${o.a.metaUrl}/modtools/${t}/assets?${n}`
 				})
 			}
 
 			function l(e, t, a) {
 				const n = new FormData;
-				return n.append("assetType", a.assetType), n.append("assetName", a.assetName), n.append("upfile", a.imageFile), a.assetType === s.Badge && (n.append("badgeColor", a.badgeColor || ""), n.append("badgeDescription", a.badgeDescription || "")), Object(o.a)(e, {
-					endpoint: `${r.a.metaUrl}/modtools/${t}/assets`,
+				return n.append("assetType", a.assetType), n.append("assetName", a.assetName), n.append("upfile", a.imageFile), a.assetType === s.Badge && (n.append("badgeColor", a.badgeColor || ""), n.append("badgeDescription", a.badgeDescription || "")), Object(r.a)(e, {
+					endpoint: `${o.a.metaUrl}/modtools/${t}/assets`,
 					method: "post",
 					type: null,
 					data: n
@@ -1097,8 +1097,8 @@
 			}
 
 			function d(e, t, a, s, n) {
-				return Object(o.a)(e, {
-					endpoint: `${r.a.metaUrl}/modtools/${t}/assets/${a}s/${s}`,
+				return Object(r.a)(e, {
+					endpoint: `${o.a.metaUrl}/modtools/${t}/assets/${a}s/${s}`,
 					method: "patch",
 					data: n
 				})
@@ -1113,9 +1113,9 @@
 			"use strict";
 			var s = a("./node_modules/react-dnd/lib/index.js"),
 				n = a("./node_modules/react-dnd-html5-backend/lib/index.js"),
-				r = a.n(n);
-			t.a = Object(s.DragDropContext)(r.a)
+				o = a.n(n);
+			t.a = Object(s.DragDropContext)(o.a)
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditPremiumUploadModal.47592e9b5fd569aa37d6.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditPremiumUploadModal.daf9a94c3e4b63f28e75.js.map

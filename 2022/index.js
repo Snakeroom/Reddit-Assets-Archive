@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/index.ab25e5993ec0ab47d725.js
-// Retrieved at 9/12/2022, 2:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/index.66e7c3edd722189f256b.js
+// Retrieved at 9/14/2022, 4:30:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["index"], {
 		"./src/reddit/components/Econ/Audio/MuteIcon.tsx": function(e, t, n) {
@@ -570,11 +570,11 @@
 				r = n("./src/reddit/helpers/predictions/index.ts"),
 				i = n("./src/reddit/selectors/telemetry.ts");
 			const c = (e, t) => ({
-				...Object(i.n)(e),
-				poll: Object(i.O)(e, t),
-				post: Object(i.J)(e, t),
-				predictions: Object(i.P)(e, t),
-				subreddit: Object(i.ib)(e)
+				...Object(i.o)(e),
+				poll: Object(i.P)(e, t),
+				post: Object(i.K)(e, t),
+				predictions: Object(i.Q)(e, t),
+				subreddit: Object(i.jb)(e)
 			});
 			var d = n("./src/reddit/hooks/useTracking.ts"),
 				l = n("./src/reddit/models/Prediction/index.ts"),
@@ -750,10 +750,10 @@
 				W = n("./src/reddit/components/Econ/Prediction/hooks/useDelayedUpvoteAnimation.tsx"),
 				X = n("./src/reddit/helpers/trackers/predictions.ts"),
 				z = n("./src/reddit/hooks/useToast.tsx"),
-				J = n("./src/reddit/models/Vote/index.ts"),
-				Y = n("./src/reddit/selectors/experiments/econ/index.ts");
+				Y = n("./src/reddit/models/Vote/index.ts"),
+				Z = n("./src/reddit/selectors/experiments/econ/index.ts");
 			const {
-				fbt: Z
+				fbt: J
 			} = n("./node_modules/fbt/lib/FbtPublic.js");
 			var q = n("./src/reddit/components/Econ/Prediction/TournamentPostBody/TournamentPrediction/index.m.less"),
 				K = n.n(q);
@@ -784,7 +784,7 @@
 				} = function(e, t, n) {
 					const a = Object(s.d)(),
 						r = Object(s.e)(b.e),
-						i = Object(s.e)(Y.k),
+						i = Object(s.e)(Z.k),
 						c = Object(d.a)(),
 						m = Object(z.a)(),
 						{
@@ -818,7 +818,7 @@
 						},
 						predict: async t => {
 							if (t.currency === l.a.Coins && t.amount > r) return Object(D.promptUserToBuyMoreCoins)(), void c(X.b);
-							if (I) return m(Z._("Error: Failed to make prediction. This prediction has already ended", null, {
+							if (I) return m(J._("Error: Failed to make prediction. This prediction has already ended", null, {
 								hk: "22UWEr"
 							})), void j(null);
 							if (!p || !O) throw new Error("Invalid arguments, optionId and pollId must be strings");
@@ -834,9 +834,9 @@
 									pollId: p,
 									tournamentId: e,
 									tournamentPostId: n.id
-								})), i && x < J.a.upvoted && (a(Object(G.kb)(E)), a(Object(G.kb)(p)), u()), _(!1), j(null), P(!0)
+								})), i && x < Y.a.upvoted && (a(Object(G.kb)(E)), a(Object(G.kb)(p)), u()), _(!1), j(null), P(!0)
 							} catch (o) {
-								_(!1), j(null), m(Z._("Error: Failed to make prediction, please try again later", null, {
+								_(!1), j(null), m(J._("Error: Failed to make prediction, please try again later", null, {
 									hk: "1tECsx"
 								}))
 							}
@@ -1059,4 +1059,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/index.ab25e5993ec0ab47d725.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/index.66e7c3edd722189f256b.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/MarketplaceClaimModal.1a0e0210ed56d3b1be16.js
-// Retrieved at 9/14/2022, 10:00:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/MarketplaceClaimModal.8f8df47d7a5954674d93.js
+// Retrieved at 9/14/2022, 4:30:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["MarketplaceClaimModal"], {
 		"./src/reddit/actions/economics/marketplace/constants.ts": function(e, t, n) {
@@ -60,7 +60,7 @@
 						},
 						A = Object(a.useCallback)(e => {
 							O(t => {
-								const n = u.n(t);
+								const n = u.o(t);
 								return {
 									...n,
 									...e,
@@ -107,7 +107,7 @@
 						nightModeActive: () => n,
 						sendEvent(e) {
 							s(t => {
-								const n = u.n(t);
+								const n = u.o(t);
 								return {
 									...n,
 									...e,
@@ -276,4 +276,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/MarketplaceClaimModal.1a0e0210ed56d3b1be16.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/MarketplaceClaimModal.8f8df47d7a5954674d93.js.map

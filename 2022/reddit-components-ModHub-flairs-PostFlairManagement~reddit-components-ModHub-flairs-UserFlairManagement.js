@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-ModHub-flairs-PostFlairManagement~reddit-components-ModHub-flairs-UserFlairManagement.ffc54b30962521848129.js
-// Retrieved at 9/13/2022, 3:30:03 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-ModHub-flairs-PostFlairManagement~reddit-components-ModHub-flairs-UserFlairManagement.3158d261f058f73cf780.js
+// Retrieved at 9/14/2022, 4:30:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-ModHub-flairs-PostFlairManagement~reddit-components-ModHub-flairs-UserFlairManagement"], {
 		"./src/reddit/actions/flairManagement/constants.ts": function(e, t, s) {
@@ -323,9 +323,9 @@
 				C = s("./src/reddit/selectors/telemetry.ts");
 			const E = e => e === f.d.LinkFlair ? "postflairmanagement" : "userflairmanagement",
 				v = e => ({
-					...C.n(e),
-					subreddit: C.ib(e),
-					userSubreddit: C.sb(e)
+					...C.o(e),
+					subreddit: C.jb(e),
+					userSubreddit: C.tb(e)
 				}),
 				x = e => t => s => ({
 					...v(s),
@@ -348,8 +348,8 @@
 				k = x("add"),
 				w = T("assign_own"),
 				O = T("enable"),
-				I = T("mods_only"),
-				j = T("edit_text"),
+				j = T("mods_only"),
+				I = T("edit_text"),
 				P = (e, t) => t ? k(e) : y(e),
 				D = e => T("post_flair_template")(f.d.LinkFlair, e),
 				N = (e, t) => s => ({
@@ -603,14 +603,14 @@
 				ke = s("./node_modules/reselect/es/index.js"),
 				we = s("./src/reddit/actions/tooltip.ts"),
 				Oe = s("./src/reddit/components/StructuredStyles/ColorPicker/BaseColorPicker.tsx"),
-				Ie = s("./src/reddit/selectors/tooltip.ts");
-			const je = ["right", "top"],
+				je = s("./src/reddit/selectors/tooltip.ts");
+			const Ie = ["right", "top"],
 				Pe = Object(ke.c)({
 					isDropdownOpen: (e, t) => {
 						let {
 							tooltipId: s
 						} = t;
-						return Object(Ie.b)(s)(e)
+						return Object(je.b)(s)(e)
 					}
 				});
 			var De = Object(_e.b)(Pe, (e, t) => ({
@@ -618,7 +618,7 @@
 				}))(e => o.a.createElement("div", {
 					id: e.tooltipId
 				}, o.a.createElement(Oe.a, {
-					dropdownPosition: je,
+					dropdownPosition: Ie,
 					isDropdownOpen: e.isDropdownOpen,
 					onChange: e.onChange,
 					onToggleDropdown: e.onToggleDropdown,
@@ -772,8 +772,8 @@
 									source: "layout_switch",
 									action: "click",
 									noun: a,
-									screen: Object(C.ab)(e),
-									subreddit: Object(C.ib)(e)
+									screen: Object(C.bb)(e),
+									subreddit: Object(C.jb)(e)
 								})))
 							})(n.layout),
 							l = () => e.toggleTooltip(r),
@@ -1071,8 +1071,8 @@
 				kt = s("./src/reddit/components/ModHub/flairs/FlairManagement/FlairTemplateEditor/index.m.less"),
 				wt = s.n(kt);
 			const Ot = "flair-management-emoji-picker",
-				It = {},
-				jt = 250,
+				jt = {},
+				It = 250,
 				Pt = Ee()(u.d, 0).map(e => ({
 					value: e,
 					displayText: e.toString()
@@ -1123,7 +1123,7 @@
 					}, this.onTogglePostAppearanceSettings = () => {
 						const {
 							templateDraft: e
-						} = this.props, t = e.styleTemplate ? void 0 : It;
+						} = this.props, t = e.styleTemplate ? void 0 : jt;
 						this.props.onChange({
 							...e,
 							styleTemplate: t
@@ -1186,7 +1186,7 @@
 					const e = this.containerRef.current;
 					if (!e) return;
 					const t = e.getBoundingClientRect().top,
-						s = window.scrollY + t - jt;
+						s = window.scrollY + t - It;
 					window.scrollTo(0, s)
 				}
 				render() {
@@ -1583,7 +1583,7 @@
 						flairTemplateType: s
 					} = this.props, a = !e.id;
 					if (!t) return;
-					e.modOnly !== t.modOnly && this.props.sendEvent(I(s, !!e.modOnly)), e.textEditable !== t.textEditable && this.props.sendEvent(j(s, !!e.textEditable)), !!e.styleTemplate != !!t.styleTemplate && this.props.sendEvent(D(!!e.styleTemplate));
+					e.modOnly !== t.modOnly && this.props.sendEvent(j(s, !!e.modOnly)), e.textEditable !== t.textEditable && this.props.sendEvent(I(s, !!e.textEditable)), !!e.styleTemplate != !!t.styleTemplate && this.props.sendEvent(D(!!e.styleTemplate));
 					const n = e.allowableContent || f.a.All;
 					n !== (t.allowableContent || f.a.All) && this.props.sendEvent(M(s, n)), Object(b.l)(e) !== Object(b.l)(t) && this.props.sendEvent(R(s, Object(b.l)(e))), this.props.sendEvent(P(s, a))
 				}
@@ -2126,4 +2126,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ModHub-flairs-PostFlairManagement~reddit-components-ModHub-flairs-UserFlairManagement.ffc54b30962521848129.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ModHub-flairs-PostFlairManagement~reddit-components-ModHub-flairs-UserFlairManagement.3158d261f058f73cf780.js.map

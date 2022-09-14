@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/UsernameConfirmationModals.2e104832b57160277a86.js
-// Retrieved at 9/12/2022, 2:10:03 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/UsernameConfirmationModals.f810b7efa7dba80dc55b.js
+// Retrieved at 9/14/2022, 4:30:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["UsernameConfirmationModals"], {
 		"./src/chat/controls/Svg/index.m.less": function(e, t, n) {
@@ -873,7 +873,7 @@
 				},
 				f = e => e.payload.args && "string" == typeof e.payload.args[0] && e.payload.args[0] || "",
 				g = (e, t) => n => ({
-					...Object(u.n)(n),
+					...Object(u.o)(n),
 					action: l.c.VIEW,
 					actionInfo: Object(u.d)(n, {
 						reason: t ? h(Object(m.a)(n)) : void 0
@@ -882,7 +882,7 @@
 					source: e
 				}),
 				C = (e, t) => n => ({
-					...Object(u.n)(n),
+					...Object(u.o)(n),
 					action: l.c.CLICK,
 					noun: a.CHANGE_USERNAME_INITIAL,
 					popup: {
@@ -891,13 +891,13 @@
 					source: e
 				}),
 				E = () => e => ({
-					...Object(u.n)(e),
+					...Object(u.o)(e),
 					action: l.c.VIEW,
 					noun: a.CHANGE_USERNAME_CONFIRMATION,
 					source: p
 				}),
 				_ = e => t => ({
-					...Object(u.n)(t),
+					...Object(u.o)(t),
 					action: l.c.CLICK,
 					noun: a.CHANGE_USERNAME_CONFIRMATION,
 					source: p,
@@ -906,13 +906,13 @@
 					}
 				}),
 				O = () => e => ({
-					...Object(u.n)(e),
+					...Object(u.o)(e),
 					action: l.c.VIEW,
 					noun: a.CHANGE_USERNAME_INPUT,
 					source: p
 				}),
 				N = () => e => ({
-					...Object(u.n)(e),
+					...Object(u.o)(e),
 					action: l.c.CLICK,
 					noun: a.CHANGE_USERNAME_INPUT,
 					popup: {
@@ -921,13 +921,13 @@
 					source: p
 				}),
 				v = () => e => ({
-					...Object(u.n)(e),
+					...Object(u.o)(e),
 					action: l.c.SELECT,
 					noun: a.CHANGE_USERNAME_INPUT,
 					source: p
 				}),
 				x = () => e => ({
-					...Object(u.n)(e),
+					...Object(u.o)(e),
 					action: l.c.VIEW,
 					noun: a.CHANGE_USERNAME_SUCCESS,
 					source: "toast"
@@ -978,4 +978,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/UsernameConfirmationModals.2e104832b57160277a86.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/UsernameConfirmationModals.f810b7efa7dba80dc55b.js.map

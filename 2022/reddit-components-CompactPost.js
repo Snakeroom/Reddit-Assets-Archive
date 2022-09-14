@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-CompactPost.31b847061855a51b5c09.js
-// Retrieved at 9/14/2022, 10:00:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-CompactPost.31037ec636c823e5d163.js
+// Retrieved at 9/14/2022, 4:30:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-CompactPost"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -307,7 +307,7 @@
 				r = s("./node_modules/react-redux/es/index.js"),
 				i = s("./src/reddit/selectors/telemetry.ts");
 			const a = e => (e, t, s) => ({
-				...i.n(e),
+				...i.o(e),
 				source: "post",
 				action: "click",
 				noun: "ad",
@@ -317,16 +317,16 @@
 				actionInfo: i.d(e),
 				adblock: i.e(e),
 				app: i.f(e),
-				feed: i.q(e),
-				geo: i.s(e),
-				platform: i.H(e),
-				referrer: i.X(e),
-				request: i.Y(e),
-				screen: i.ab(e),
-				session: i.eb(e),
-				user: i.qb(e),
-				media: s ? i.B(e, s) : null,
-				post: s ? i.J(e, s) : null
+				feed: i.r(e),
+				geo: i.t(e),
+				platform: i.I(e),
+				referrer: i.Y(e),
+				request: i.Z(e),
+				screen: i.bb(e),
+				session: i.fb(e),
+				user: i.rb(e),
+				media: s ? i.C(e, s) : null,
+				post: s ? i.K(e, s) : null
 			});
 			var c = s("./src/higherOrderComponents/withAdClickLocation/Locations.ts"),
 				d = s("./src/telemetry/index.ts");
@@ -4236,16 +4236,16 @@
 				i = s("./src/reddit/selectors/platform.ts"),
 				a = s("./src/reddit/selectors/telemetry.ts");
 			const c = e => ({
-					profile: a.S(e),
-					screen: a.ab(e),
-					subreddit: a.ib(e)
+					profile: a.T(e),
+					screen: a.bb(e),
+					subreddit: a.jb(e)
 				}),
 				d = (e, t, s) => n => ({
 					source: Object(i.i)(n) || s ? "post_lightbox" : "post_detail",
 					action: "click",
 					noun: t,
 					...c(n),
-					post: a.J(n, e)
+					post: a.K(n, e)
 				}),
 				l = (e, t, s, n) => o => {
 					const i = s ? a.h(o, s) : null,
@@ -4261,7 +4261,7 @@
 					}
 				},
 				u = (e, t) => s => {
-					const n = a.j(s);
+					const n = a.k(s);
 					return n ? d(n.id, e, t)(s) : {
 						source: Object(i.i)(s) || t ? "post_lightbox" : "post_detail",
 						action: "click",
@@ -4271,15 +4271,15 @@
 				},
 				m = (e, t) => s => Object(o.a)({
 					...d(e, t)(s),
-					...a.n(s)
+					...a.o(s)
 				}),
 				p = e => t => ({
 					source: "id_card",
 					action: n.c.CLICK,
 					noun: e,
 					...c(t),
-					post: a.j(t),
-					userSubreddit: a.sb(t)
+					post: a.k(t),
+					userSubreddit: a.tb(t)
 				})
 		},
 		"./src/reddit/helpers/trackers/modTools.ts": function(e, t, s) {
@@ -4316,10 +4316,10 @@
 			var n = s("./src/reddit/constants/tracking.ts"),
 				o = s("./src/reddit/selectors/telemetry.ts");
 			const r = e => ({
-					screen: Object(o.ab)(e),
-					profile: Object(o.S)(e),
-					subreddit: Object(o.ib)(e),
-					userSubreddit: Object(o.sb)(e)
+					screen: Object(o.bb)(e),
+					profile: Object(o.T)(e),
+					subreddit: Object(o.jb)(e),
+					userSubreddit: Object(o.tb)(e)
 				}),
 				i = e => t => ({
 					source: "nav",
@@ -4331,22 +4331,25 @@
 					source: "post_mod_action_menu",
 					action: "click",
 					noun: e,
-					post: Object(o.J)(s, t),
+					post: Object(o.K)(s, t),
 					...r(s)
 				}),
 				c = (e, t) => s => ({
 					source: "comment",
 					action: "click",
 					noun: e,
-					post: Object(o.J)(s, t),
+					post: Object(o.K)(s, t),
 					comment: Object(o.h)(s, t),
+					media: {
+						mimetype: Object(o.j)(s, t)
+					},
 					...r(s)
 				}),
 				d = (e, t) => s => ({
 					source: "comment",
 					action: n.c.CLICK,
 					noun: e,
-					post: Object(o.J)(s, t),
+					post: Object(o.K)(s, t),
 					comment: Object(o.h)(s, t),
 					actionInfo: {
 						pageType: "chat_live_post"
@@ -4357,7 +4360,7 @@
 					source: "comment",
 					action: n.c.UNDO,
 					noun: e,
-					post: Object(o.J)(s, t),
+					post: Object(o.K)(s, t),
 					comment: Object(o.h)(s, t),
 					...r(s)
 				}),
@@ -4365,7 +4368,7 @@
 					source: "comment_overflow_menu",
 					action: "click",
 					noun: e,
-					post: Object(o.J)(s, t),
+					post: Object(o.K)(s, t),
 					comment: Object(o.h)(s, t),
 					...r(s)
 				}),
@@ -4373,7 +4376,7 @@
 					source: "mod_distinguish_menu",
 					action: "click",
 					noun: e,
-					post: Object(o.J)(s, t),
+					post: Object(o.K)(s, t),
 					comment: Object(o.h)(s, t),
 					...r(s)
 				}),
@@ -4381,7 +4384,7 @@
 					source: "comment_mod_action_menu",
 					action: "click",
 					noun: e,
-					post: Object(o.J)(s, t),
+					post: Object(o.K)(s, t),
 					comment: Object(o.h)(s, t),
 					...r(s)
 				}),
@@ -4390,37 +4393,37 @@
 					action: "click",
 					noun: e,
 					comment: Object(o.h)(s, t),
-					post: Object(o.J)(s, t),
+					post: Object(o.K)(s, t),
 					...r(s)
 				}),
 				f = (e, t) => s => ({
 					source: "post_report_menu",
 					action: "click",
 					noun: e,
-					post: Object(o.J)(s, t),
+					post: Object(o.K)(s, t),
 					...r(s)
 				}),
 				h = (e, t) => s => ({
 					source: "post",
 					action: "click",
 					noun: e,
-					post: Object(o.J)(s, t),
-					subreddit: Object(o.lb)(s, t)
+					post: Object(o.K)(s, t),
+					subreddit: Object(o.mb)(s, t)
 				}),
 				x = (e, t) => s => ({
 					source: "comment",
 					action: "click",
 					noun: e,
 					comment: Object(o.h)(s, t),
-					post: Object(o.J)(s, t),
-					subreddit: Object(o.lb)(s, t)
+					post: Object(o.K)(s, t),
+					subreddit: Object(o.mb)(s, t)
 				}),
 				v = (e, t, s, n) => r => ({
 					source: e ? "comment" : "post",
 					action: "click",
 					noun: t ? "unsnooze_reporter" : "snooze_reporter",
-					post: Object(o.J)(r, s),
-					subreddit: Object(o.lb)(r, s),
+					post: Object(o.K)(r, s),
+					subreddit: Object(o.mb)(r, s),
 					actionInfo: {
 						reason: n
 					},
@@ -4494,10 +4497,10 @@
 			var n = s("./src/reddit/models/ScheduledPost/index.ts"),
 				o = s("./src/reddit/selectors/telemetry.ts");
 			const r = e => ({
-					...o.n(e),
-					screen: o.ab(e),
-					subreddit: o.ib(e),
-					userSubreddit: o.sb(e)
+					...o.o(e),
+					screen: o.bb(e),
+					subreddit: o.jb(e),
+					userSubreddit: o.tb(e)
 				}),
 				i = e => ({
 					id: e.id,
@@ -4700,10 +4703,10 @@
 					source: "id_card",
 					action: "click",
 					noun: "user_flair_picker",
-					...r.n(e)
+					...r.o(e)
 				}),
 				a = e => t => {
-					const s = r.ib(t),
+					const s = r.jb(t),
 						i = Object(o.r)(t, {
 							subredditId: null == s ? void 0 : s.id
 						}),
@@ -4717,7 +4720,7 @@
 						source: "user_flair_picker",
 						action: "click",
 						noun: "user_flair",
-						...r.n(t),
+						...r.o(t),
 						subreddit: s,
 						userFlair: {
 							id: null == a ? void 0 : a.id,
@@ -4736,7 +4739,7 @@
 					source: "user_flair_picker",
 					action: "click",
 					noun: "edit_user_flair",
-					...r.n(e)
+					...r.o(e)
 				}),
 				d = e => t => ({
 					source: "user_flair_picker",
@@ -4746,8 +4749,8 @@
 						value: e ? "0" : "1",
 						oldValue: e ? "1" : "0"
 					},
-					subreddit: r.ib(t),
-					...r.n(t)
+					subreddit: r.jb(t),
+					...r.o(t)
 				})
 		},
 		"./src/reddit/hooks/useIsRemovedOrDeletedPost.ts": function(e, t, s) {
@@ -5682,4 +5685,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-CompactPost.31b847061855a51b5c09.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-CompactPost.31037ec636c823e5d163.js.map

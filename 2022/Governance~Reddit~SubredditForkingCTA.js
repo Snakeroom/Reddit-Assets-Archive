@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~Reddit~SubredditForkingCTA.d46f97a2b18d85b36650.js
-// Retrieved at 9/14/2022, 10:00:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~Reddit~SubredditForkingCTA.dee585f54144f85b5868.js
+// Retrieved at 9/14/2022, 4:30:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~Reddit~SubredditForkingCTA"], {
 		"./src/lib/bigNumberUtils/percent.ts": function(t, e, r) {
@@ -26,7 +26,7 @@
 			})), r.d(e, "c", (function() {
 				return g
 			})), r.d(e, "g", (function() {
-				return E
+				return S
 			})), r.d(e, "d", (function() {
 				return I
 			})), r.d(e, "e", (function() {
@@ -59,8 +59,8 @@
 				y = "SUBREDDIT_COUNTRY_SITE__CHANGED",
 				g = "SUBREDDIT_COUNTRY_SITE__UPDATE_SUCCESS",
 				j = Object(s.a)(_),
-				S = Object(s.a)(g),
-				E = Object(s.a)(y),
+				E = Object(s.a)(g),
+				S = Object(s.a)(y),
 				I = t => async (e, r, n) => {
 					let {
 						gqlContext: s
@@ -96,7 +96,7 @@
 						duration: 5e3
 					}));
 					const o = d.body;
-					r(S({
+					r(E({
 						subredditId: t,
 						subredditCountrySite: o.data.updateSubredditCountrySiteSettings.subreddit.countrySiteSettings
 					}))
@@ -113,7 +113,7 @@
 						a = await c(d(), o);
 					if (a.ok) {
 						const e = a.body;
-						r(S({
+						r(E({
 							subredditId: t,
 							subredditCountrySite: e.data.updateSubredditCountrySiteSettings.subreddit.countrySiteSettings
 						}))
@@ -186,9 +186,9 @@
 			})), r.d(e, "s", (function() {
 				return j
 			})), r.d(e, "t", (function() {
-				return S
-			})), r.d(e, "u", (function() {
 				return E
+			})), r.d(e, "u", (function() {
+				return S
 			})), r.d(e, "v", (function() {
 				return I
 			})), r.d(e, "w", (function() {
@@ -215,8 +215,8 @@
 				y = "GOVERNANCE__TRANSFER_FAILURE",
 				g = "GOVERNANCE__TRANSFER_MODAL_OPENED",
 				j = "GOVERNANCE__TRANSFER_PENDING",
-				S = "GOVERNANCE__TRANSFER_SUCCESS",
-				E = "GOVERNANCE__WALLETS_FETCH_FAILURE",
+				E = "GOVERNANCE__TRANSFER_SUCCESS",
+				S = "GOVERNANCE__WALLETS_FETCH_FAILURE",
 				I = "GOVERNANCE__WALLETS_FETCH_PENDING",
 				P = "GOVERNANCE__WALLETS_FETCH_SUCCESS",
 				v = "GOVERNANCE__WALLET_REGISTRATION_MODAL_OPENED"
@@ -245,7 +245,7 @@
 			})), r.d(e, "b", (function() {
 				return j
 			})), r.d(e, "c", (function() {
-				return E
+				return S
 			})), r.d(e, "f", (function() {
 				return k
 			})), r.d(e, "g", (function() {
@@ -276,8 +276,8 @@
 				y = r("./src/reddit/actions/governance/errorToast.ts");
 			const g = Object(s.a)(_.b),
 				j = Object(s.a)(_.c),
-				S = Object(s.a)(_.e),
-				E = (Object(s.a)(_.f), Object(s.a)(_.g), Object(s.a)(_.h)),
+				E = Object(s.a)(_.e),
+				S = (Object(s.a)(_.f), Object(s.a)(_.g), Object(s.a)(_.h)),
 				I = Object(s.a)(_.i),
 				P = Object(s.a)(_.j),
 				v = Object(s.a)(_.k),
@@ -316,7 +316,7 @@
 							const {
 								options: t
 							} = i.body.data.updatePostPollVoteState.poll;
-							r(S({
+							r(E({
 								pollId: m.id,
 								optionId: e,
 								options: t
@@ -413,13 +413,13 @@
 				y = r("./src/reddit/models/Upload/index.ts"),
 				g = r("./src/reddit/selectors/telemetry.ts"),
 				j = r("./src/telemetry/index.ts");
-			const S = t => ({
-				...g.n(t),
-				screen: g.ab(t),
-				profile: g.S(t),
-				subreddit: g.ib(t)
+			const E = t => ({
+				...g.o(t),
+				screen: g.bb(t),
+				profile: g.T(t),
+				subreddit: g.jb(t)
 			});
-			var E = r("./src/reddit/helpers/trackers/postComposer.ts"),
+			var S = r("./src/reddit/helpers/trackers/postComposer.ts"),
 				I = r("./src/reddit/models/PostCreationForm/index.ts"),
 				P = r("./src/reddit/models/Toast/index.ts"),
 				v = r("./src/reddit/selectors/postCreations.ts"),
@@ -511,7 +511,7 @@
 									action: "upload",
 									correlationId: o,
 									noun: p ? "video" : "image",
-									...S(e),
+									...E(e),
 									actionInfo: {
 										...g.d(e),
 										success: h,
@@ -543,16 +543,16 @@
 								fileSource: r,
 								uploadDuration: s,
 								correlationId: i
-							}) : E.D(n, e)
+							}) : S.D(n, e)
 						}
 					};
 					return await u(Object(c.l)(t, e, async h => {
-						var y, g, j, S;
+						var y, g, j, E;
 						R = !0, Object(c.k)(h.id, () => {
 							M(!0)
 						});
 						const {
-							error: E,
+							error: S,
 							metadata: I
 						} = await async function(t, e, r) {
 							const s = e && e.allowedPostTypes,
@@ -649,8 +649,8 @@
 								metadata: c
 							}
 						}(t, N, o);
-						if (E || !I) return {
-							error: E
+						if (S || !I) return {
+							error: S
 						};
 						if (u(Object(c.m)({
 								key: e,
@@ -683,7 +683,7 @@
 										uploadLease: n
 									}
 								} {
-									const e = null === (S = t.body.data.createMediaUploadLease) || void 0 === S ? void 0 : S.errors;
+									const e = null === (E = t.body.data.createMediaUploadLease) || void 0 === E ? void 0 : E.errors;
 									let r = null;
 									return e && (r = {
 										fields: [{
@@ -837,8 +837,8 @@
 				y = r("./src/reddit/featureFlags/index.ts"),
 				g = r("./src/reddit/helpers/graphql/normalizeSubredditScheduledPostsFromGql/index.ts"),
 				j = r("./src/reddit/helpers/scheduledPosts/index.ts"),
-				S = r("./src/reddit/helpers/trackers/postComposer.ts"),
-				E = r("./src/reddit/helpers/trackers/scheduledPosts.ts"),
+				E = r("./src/reddit/helpers/trackers/postComposer.ts"),
+				S = r("./src/reddit/helpers/trackers/scheduledPosts.ts"),
 				I = r("./src/reddit/models/Poll/index.ts"),
 				P = r("./src/reddit/models/PostCreationForm/index.ts"),
 				v = r("./src/reddit/models/User/index.ts"),
@@ -927,7 +927,7 @@
 							subredditId: f,
 							scheduledPostId: b
 						});
-					if (m && Object(i.a)(Object(E.r)(m)(d)), e(U(a)), t.postFieldValidationPending && (await t.postFieldValidationPending, Object(k.x)(r()))) return;
+					if (m && Object(i.a)(Object(S.r)(m)(d)), e(U(a)), t.postFieldValidationPending && (await t.postFieldValidationPending, Object(k.x)(r()))) return;
 					const {
 						isPoll: p,
 						polls: h
@@ -939,11 +939,11 @@
 							subredditId: c.id,
 							scheduledPostId: b
 						})
-					}, S = await Object(_.a)(s(), g);
-					if (S.ok) return e(Object(u.e)({
+					}, E = await Object(_.a)(s(), g);
+					if (E.ok) return e(Object(u.e)({
 						subredditId: c.id
 					})), void e(Object(l.a)($(c.name), !1));
-					const I = S.error;
+					const I = E.error;
 					e(G(I))
 				}, J = t => async (e, r, n) => {
 					let {
@@ -976,7 +976,7 @@
 							subredditId: c.id
 						}));
 						const t = y.body.data.createScheduledPost.scheduledPost;
-						return t && Object(i.a)(Object(E.o)(Object(g.d)(t))(d)), void e(Object(l.a)($(c.name), !1))
+						return t && Object(i.a)(Object(S.o)(Object(g.d)(t))(d)), void e(Object(l.a)($(c.name), !1))
 					}
 					const j = y.error;
 					e(G(j))
@@ -1058,10 +1058,10 @@
 						const t = g.error;
 						t.type === n.J.BAD_CAPTCHA_ERROR ? e(W()) : t.type === n.J.VALIDATION_ERROR ? e(F(t)) : t.type === n.J.SUBMIT_VALIDATION_ERROR ? e(V(t)) : e(G(t))
 					}
-					const E = Object(R.o)(u.kind),
+					const S = Object(R.o)(u.kind),
 						I = g.ok && g.body && g.body.id && Object(A.x)(g.body.id),
 						x = r();
-					S.B(x, E, I, t.correlationId)
+					E.B(x, S, I, t.correlationId)
 				}
 		},
 		"./src/reddit/actions/scheduledPosts/constants.ts": function(t, e, r) {
@@ -1103,9 +1103,9 @@
 			})), r.d(e, "p", (function() {
 				return j
 			})), r.d(e, "q", (function() {
-				return S
-			})), r.d(e, "v", (function() {
 				return E
+			})), r.d(e, "v", (function() {
+				return S
 			})), r.d(e, "s", (function() {
 				return I
 			})), r.d(e, "x", (function() {
@@ -1140,10 +1140,10 @@
 				j = () => n.fbt._("Unable to delete scheduled post", null, {
 					hk: "23nWms"
 				}),
-				S = () => n.fbt._("Successfully deleted scheduled post", null, {
+				E = () => n.fbt._("Successfully deleted scheduled post", null, {
 					hk: "1Lk7r2"
 				}),
-				E = () => n.fbt._("Unable to submit scheduled post", null, {
+				S = () => n.fbt._("Unable to submit scheduled post", null, {
 					hk: "vCW43"
 				}),
 				I = () => n.fbt._("Retry", null, {
@@ -1214,13 +1214,13 @@
 							...r,
 							id: e
 						}),
-						S = y.body;
-					if (!(y.ok && S && S.data && S.data.updateScheduledPost && S.data.updateScheduledPost.ok && S.data.updateScheduledPost.scheduledPost)) return s(Object(o.f)({
+						E = y.body;
+					if (!(y.ok && E && E.data && E.data.updateScheduledPost && E.data.updateScheduledPost.ok && E.data.updateScheduledPost.scheduledPost)) return s(Object(o.f)({
 						message: y.error && y.error.fields && y.error.fields.length && y.error.fields[0].msg || n.fbt._("Unknown error", null, {
 							hk: "fXs5s"
 						})
 					})), void s(Object(c.f)(Object(c.e)(a.t(), m.b.Error, a.s(), j(t, e, r))));
-					s(Object(c.f)(Object(c.e)(a.w(), m.b.SuccessCommunity))), g(s, Object(l.d)(S.data.updateScheduledPost.scheduledPost))
+					s(Object(c.f)(Object(c.e)(a.w(), m.b.SuccessCommunity))), g(s, Object(l.d)(E.data.updateScheduledPost.scheduledPost))
 				}
 		},
 		"./src/reddit/actions/scheduledPosts/index.ts": function(t, e, r) {
@@ -1263,8 +1263,8 @@
 				y = Object(s.a)(i.j),
 				g = Object(s.a)(i.o),
 				j = Object(s.a)(i.d),
-				S = Object(s.a)(i.f),
-				E = Object(s.a)(i.m),
+				E = Object(s.a)(i.f),
+				S = Object(s.a)(i.m),
 				I = Object(s.a)(i.a),
 				P = Object(s.a)(i.c),
 				v = Object(s.a)(i.e),
@@ -1331,7 +1331,7 @@
 						u = await Object(a.b)(s(), o);
 					u.ok ? N(e, Object(c.e)(u.body.data), o) : e(v())
 				}, N = (t, e, r) => {
-					Object(c.b)(e) ? t(S(e)) : Object(c.a)(e) ? t(I(e)) : Object(c.c)(e) ? t(E(e)) : k(t, r)
+					Object(c.b)(e) ? t(E(e)) : Object(c.a)(e) ? t(I(e)) : Object(c.c)(e) ? t(S(e)) : k(t, r)
 				}, A = (t, e) => async (r, s, i) => {
 					const o = {},
 						a = s();
@@ -1404,8 +1404,8 @@
 			var y = r("./src/lib/makeGqlRequest/index.ts"),
 				g = r("./src/redditGQL/operations/ValidateCreateSubreddit.json");
 			var j = r("./src/reddit/helpers/correlationIdTracker.ts"),
-				S = r("./src/reddit/helpers/trackers/subredditCreation.ts"),
-				E = r("./src/reddit/selectors/experiments/newCommunityProgressV3.ts"),
+				E = r("./src/reddit/helpers/trackers/subredditCreation.ts"),
+				S = r("./src/reddit/selectors/experiments/newCommunityProgressV3.ts"),
 				I = r("./src/reddit/selectors/meta.ts"),
 				P = r("./src/reddit/selectors/posts.ts"),
 				v = r("./src/reddit/selectors/subreddit.ts"),
@@ -1445,10 +1445,10 @@
 					if (w.ok) {
 						const r = w.body,
 							i = r.fullname;
-						Object(k.a)(Object(S.d)(A, t, i)(T)), e(L({
+						Object(k.a)(Object(E.d)(A, t, i)(T)), e(L({
 							subredditName: N
 						}));
-						const m = await Object(E.b)(T);
+						const m = await Object(S.b)(T);
 						if (D) {
 							const t = Object(P.G)(T, {
 								postId: D
@@ -1466,8 +1466,8 @@
 						}
 						await e(Object(n.b)(`${r.path}`)), m ? m === b.Ne.NewModule && e(Object(c.h)({
 							tooltipId: u.MOD_WELCOME_TOOLTIP_ID
-						})) : (e(Object(o.h)(f.a.POST_FLOW_UPSELL_MODAL_ID)), Object(k.a)(Object(S.g)()(T))), Object(j.b)(j.a.SubredditCreation), e(Object(x.f)(i, null !== (g = Object(C.bb)(T)) && void 0 !== g ? g : Object(I.j)(T)))
-					} else w.error && Object(k.a)(Object(S.h)(w.error.type, N)(T)), e(U({
+						})) : (e(Object(o.h)(f.a.POST_FLOW_UPSELL_MODAL_ID)), Object(k.a)(Object(E.g)()(T))), Object(j.b)(j.a.SubredditCreation), e(Object(x.f)(i, null !== (g = Object(C.bb)(T)) && void 0 !== g ? g : Object(I.j)(T)))
+					} else w.error && Object(k.a)(Object(E.h)(w.error.type, N)(T)), e(U({
 						subredditName: N,
 						error: w.error
 					}))
@@ -1500,7 +1500,7 @@
 						e(U({
 							subredditName: t,
 							error: r
-						})), r && Object(k.a)(Object(S.h)(r.type, t)(i))
+						})), r && Object(k.a)(Object(E.h)(r.type, t)(i))
 					} else await e(M())
 				}
 		},
@@ -1553,8 +1553,8 @@
 				y = Object(d.a)(l),
 				g = Object(d.a)(b),
 				j = Object(d.a)(f),
-				S = Object(d.a)(m),
-				E = Object(d.a)(p),
+				E = Object(d.a)(m),
+				S = Object(d.a)(p),
 				I = Object(d.a)(h),
 				P = new Map,
 				v = (t, e) => {
@@ -1588,7 +1588,7 @@
 							error: h
 						} = await r(c().uploads[b]);
 						if (m()) return;
-						if (h || !p) return void d(S({
+						if (h || !p) return void d(E({
 							key: b,
 							error: h
 						}));
@@ -1598,7 +1598,7 @@
 						}), d(_({
 							key: b
 						}));
-						const E = await Object(o.a)(t, p, t => (y = t, n && t.on("progress", t => {
+						const S = await Object(o.a)(t, p, t => (y = t, n && t.on("progress", t => {
 							if (!m() && "upload" === t.direction) {
 								const e = {
 									percent: t.percent,
@@ -1612,14 +1612,14 @@
 							}
 						}), t));
 						if (y = null, !m())
-							if (E.ok) {
-								const t = decodeURIComponent(E.body.PostResponse.Location);
+							if (S.ok) {
+								const t = decodeURIComponent(S.body.PostResponse.Location);
 								d(j({
 									key: b,
 									url: t
 								}))
 							} else {
-								const t = s()(E, "body.Error.Message.0"),
+								const t = s()(S, "body.Error.Message.0"),
 									e = {
 										type: "ERROR",
 										...t ? {
@@ -1629,7 +1629,7 @@
 											}]
 										} : {}
 									};
-								d(S({
+								d(E({
 									key: b,
 									error: e
 								}))
@@ -1642,7 +1642,7 @@
 						const s = n().uploads[t];
 						s && (C(s.id, e), r(e ? I({
 							key: t
-						}) : E({
+						}) : S({
 							key: t
 						})))
 					}
@@ -1868,9 +1868,9 @@
 			})), r.d(e, "e", (function() {
 				return j
 			})), r.d(e, "b", (function() {
-				return S
-			})), r.d(e, "a", (function() {
 				return E
+			})), r.d(e, "a", (function() {
+				return S
 			}));
 			var n = r("./node_modules/node-libs-browser/node_modules/url/url.js"),
 				s = r("./src/lib/constants/index.ts"),
@@ -2032,12 +2032,12 @@
 							draftsCount: o
 						}
 					}
-				}, S = (t, e) => Object(i.a)(Object(d.a)(t, [o.a]), {
+				}, E = (t, e) => Object(i.a)(Object(d.a)(t, [o.a]), {
 					endpoint: Object(p.a)(Object(a.a)(`${t.apiUrl}/api/submit_poll_post.json?resubmit=true`)),
 					method: s.mb.POST,
 					data: y(e),
 					type: "json"
-				}).then(t => j(t, e)), E = (t, e) => Object(i.a)(Object(d.a)(t, [o.a]), {
+				}).then(t => j(t, e)), S = (t, e) => Object(i.a)(Object(d.a)(t, [o.a]), {
 					endpoint: Object(p.a)(Object(a.a)(`${t.apiUrl}/api/submit_gallery_post.json?resubmit=true`)),
 					method: s.mb.POST,
 					data: {
@@ -2069,7 +2069,7 @@
 			})), r.d(e, "e", (function() {
 				return O
 			})), r.d(e, "a", (function() {
-				return S
+				return E
 			}));
 			r("./node_modules/core-js/modules/web.dom.iterable.js");
 			var n = r("./src/lib/makeGqlRequest/index.ts"),
@@ -2206,7 +2206,7 @@
 					let e = [];
 					if (t.document) {
 						const r = t.document || [];
-						e = Object(i.d)(r)
+						e = Object(i.e)(r)
 					}
 					return e
 				},
@@ -2215,7 +2215,7 @@
 							text: t.text.trim()
 						})).filter(t => !!t.text), t.options.length)) return t.duration = Math.floor(t.duration / 864e5), t
 				},
-				S = (t, e) => Object(n.a)(t, {
+				E = (t, e) => Object(n.a)(t, {
 					...c,
 					variables: {
 						input: e
@@ -2378,9 +2378,9 @@
 			})), r.d(e, "f", (function() {
 				return g
 			})), r.d(e, "e", (function() {
-				return S
-			})), r.d(e, "h", (function() {
 				return E
+			})), r.d(e, "h", (function() {
+				return S
 			})), r.d(e, "g", (function() {
 				return I
 			}));
@@ -2507,7 +2507,7 @@
 						weekday: "long"
 					})
 				},
-				S = t => {
+				E = t => {
 					const e = (t => {
 						const [e, r] = O(t);
 						if (e && r) {
@@ -2560,7 +2560,7 @@
 						hk: "1jBuYc"
 					})
 				},
-				E = t => {
+				S = t => {
 					let e = null;
 					t.frequency && (e = t.frequency), (t.byWeekDays.length > 1 || t.byMonthDays.length > 1 || t.interval > 1) && (e = b.b);
 					const r = Object(c.f)(t.publishAt),
@@ -2616,7 +2616,7 @@
 					source: t,
 					noun: "create_community_button",
 					action: "click",
-					...s.n(e),
+					...s.o(e),
 					actionInfo: s.d(e, {
 						settingValue: e.user.account && e.user.account.isMod ? "existing_mod" : "new_mod"
 					}),
@@ -2626,7 +2626,7 @@
 					source: "community_form",
 					noun: "save_community_button",
 					action: "click",
-					...s.n(i),
+					...s.o(i),
 					actionInfo: s.d(i, {
 						settingValue: t
 					}),
@@ -2645,7 +2645,7 @@
 					source: "community_form",
 					noun: "cancel",
 					action: "click",
-					...s.n(t),
+					...s.o(t),
 					actionInfo: s.d(t),
 					correlationId: Object(n.c)(n.a.SubredditCreation)
 				}),
@@ -2653,7 +2653,7 @@
 					source: "community_form",
 					noun: "error_message",
 					action: "view",
-					...s.n(r),
+					...s.o(r),
 					actionInfo: s.d(r, {
 						reason: t,
 						settingValue: e
@@ -2664,28 +2664,28 @@
 					source: "user_dropdown",
 					noun: "create_community",
 					action: "click",
-					...s.n(t),
+					...s.o(t),
 					actionInfo: s.d(t)
 				}),
 				u = () => t => ({
 					source: "community_first_post",
 					noun: "modal",
 					action: "view",
-					...s.n(t),
+					...s.o(t),
 					actionInfo: s.d(t)
 				}),
 				l = () => t => ({
 					source: "community_first_post",
 					noun: "modal",
 					action: "click",
-					...s.n(t),
+					...s.o(t),
 					actionInfo: s.d(t)
 				}),
 				b = () => t => ({
 					source: "community_first_post",
 					noun: "modal",
 					action: "dismiss",
-					...s.n(t),
+					...s.o(t),
 					actionInfo: s.d(t)
 				})
 		},
@@ -2884,9 +2884,9 @@
 			})), r.d(e, "m", (function() {
 				return j
 			})), r.d(e, "n", (function() {
-				return S
-			})), r.d(e, "d", (function() {
 				return E
+			})), r.d(e, "d", (function() {
+				return S
 			})), r.d(e, "e", (function() {
 				return I
 			})), r.d(e, "o", (function() {
@@ -3012,7 +3012,7 @@
 						}), o
 					})(e)
 				},
-				S = t => {
+				E = t => {
 					let {
 						scheduledPost: e
 					} = t;
@@ -3022,7 +3022,7 @@
 						n = r.find(t => t.type === s.f.Richtext);
 					return n || (r.find(t => t.type === s.f.Text) || null)
 				},
-				E = t => t.posts.scheduledPosts[i.g.recurringPosts].editModal.scheduledPostId,
+				S = t => t.posts.scheduledPosts[i.g.recurringPosts].editModal.scheduledPostId,
 				I = t => t.posts.scheduledPosts[i.g.recurringPosts].editModal.subredditId,
 				P = t => t.posts.scheduledPosts.api.pendingUpdate,
 				v = t => t.posts.scheduledPosts.api.creationToken
@@ -3050,4 +3050,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit~SubredditForkingCTA.d46f97a2b18d85b36650.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit~SubredditForkingCTA.dee585f54144f85b5868.js.map

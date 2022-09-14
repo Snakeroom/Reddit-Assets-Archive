@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage.091221710e8a13110db9.js
-// Retrieved at 9/14/2022, 10:00:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage.ea7a983a91a8fbdd95ed.js
+// Retrieved at 9/14/2022, 4:30:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage", "AchievementsActions"], {
 		"./node_modules/linkify-it/index.js": function(e, t, s) {
@@ -2838,7 +2838,7 @@
 				Le = s("./src/lib/promo/withShowSignupUpsell.tsx"),
 				Fe = s("./src/reddit/selectors/telemetry.ts");
 			const Ae = e => t => ({
-				...Object(Fe.n)(t),
+				...Object(Fe.o)(t),
 				source: "post_detail",
 				action: "view",
 				noun: "few_comments",
@@ -4557,7 +4557,7 @@
 				a = e => {
 					var t, s, a;
 					if ((null == e ? void 0 : e.media) && Object(o.K)(e.media) && (null === (s = null === (t = e.media.richtextContent) || void 0 === t ? void 0 : t.document) || void 0 === s ? void 0 : s.length) > 0) {
-						const t = Object(r.e)(e.media.richtextContent.document, !0);
+						const t = Object(r.f)(e.media.richtextContent.document, !0);
 						return 0 === t.length ? [] : null === (a = t.reduce) || void 0 === a ? void 0 : a.call(t, (e, t) => {
 							var s;
 							const {
@@ -4674,7 +4674,7 @@
 						noun: "post_post",
 						post: e,
 						subreddit: t,
-						..._.n(s)
+						..._.o(s)
 					}))(s, k)(w))
 				}, []);
 				return d.a.createElement(f.a, {
@@ -4687,7 +4687,7 @@
 							noun: "post_post",
 							post: e,
 							subreddit: t,
-							..._.n(s)
+							..._.o(s)
 						}))(s, k)(w))
 					}
 				}, d.a.createElement("div", {
@@ -4843,7 +4843,7 @@
 						noun: "community_post",
 						post: e,
 						subreddit: t,
-						..._.n(s)
+						..._.o(s)
 					}))(O, P)(S))
 				}, []);
 				const N = Object(a.useCallback)(e => {
@@ -4899,7 +4899,7 @@
 							noun: "community_post",
 							post: e,
 							subreddit: t,
-							..._.n(s)
+							..._.o(s)
 						}))(O, P)(S))
 					}
 				}, d.a.createElement("div", {
@@ -7732,7 +7732,7 @@
 						post: s
 					} = t;
 					return s
-				}, P.b, I.c, T.Y, T.ib, (e, t, s, n, r) => {
+				}, P.b, I.c, T.Z, T.jb, (e, t, s, n, r) => {
 					const o = !!e;
 					let i, a = "";
 					if (e && (i = {
@@ -8548,7 +8548,7 @@
 						className: Object(l.a)(E.a.logIn),
 						onClick: () => {
 							s((() => e => ({
-								...Object(v.n)(e),
+								...Object(v.o)(e),
 								source: "xpromo",
 								action: "click",
 								noun: _
@@ -8560,7 +8560,7 @@
 						className: E.a.cancel,
 						onClick: () => {
 							Object(c.b)(), s((() => e => ({
-								...Object(v.n)(e),
+								...Object(v.o)(e),
 								source: "xpromo",
 								action: "dismiss",
 								noun: _
@@ -8599,7 +8599,7 @@
 					const t = Object(h.b)();
 					i.a.useEffect(() => {
 						t((() => e => ({
-							...Object(v.n)(e),
+							...Object(v.o)(e),
 							source: "xpromo",
 							action: "view",
 							noun: _
@@ -9088,7 +9088,7 @@
 				b = s("./src/reddit/components/Widgets/ThemedWidget/index.tsx"),
 				h = s("./src/reddit/selectors/telemetry.ts");
 			const g = e => ({
-					...h.n(e),
+					...h.o(e),
 					source: "global",
 					noun: "discovery_unit",
 					action: "view",
@@ -9098,7 +9098,7 @@
 					}
 				}),
 				x = e => ({
-					...h.n(e),
+					...h.o(e),
 					source: "post",
 					noun: "upvote",
 					action: "click",
@@ -9108,7 +9108,7 @@
 					}
 				}),
 				f = e => ({
-					...h.n(e),
+					...h.o(e),
 					source: "post",
 					noun: "comments",
 					action: "click",
@@ -10378,7 +10378,7 @@
 					noun: "crosspost",
 					post: e,
 					subreddit: t,
-					...n.n(s)
+					...n.o(s)
 				}),
 				o = (e, t) => s => ({
 					source: "post_discovery",
@@ -10386,13 +10386,13 @@
 					noun: "crosspost",
 					post: e,
 					subreddit: t,
-					...n.n(s)
+					...n.o(s)
 				}),
 				i = () => e => ({
 					source: "post_discovery",
 					action: "click",
 					noun: "crosspost_see_all",
-					...n.n(e)
+					...n.o(e)
 				})
 		},
 		"./src/reddit/helpers/trackers/otherDiscussions.ts": function(e, t, s) {
@@ -10404,23 +10404,23 @@
 			}));
 			var n = s("./src/reddit/selectors/telemetry.ts");
 			const r = (e, t) => ({
-					...Object(n.n)(e),
-					media: Object(n.B)(e, t),
-					profile: Object(n.S)(e),
-					subreddit: Object(n.ib)(e) || Object(n.lb)(e, t)
+					...Object(n.o)(e),
+					media: Object(n.C)(e, t),
+					profile: Object(n.T)(e),
+					subreddit: Object(n.jb)(e) || Object(n.mb)(e, t)
 				}),
 				o = e => t => ({
 					source: "post",
 					action: "click",
 					noun: "other_discussions",
-					post: Object(n.J)(t, e),
+					post: Object(n.K)(t, e),
 					...r(t, e)
 				}),
 				i = e => t => ({
 					source: "other_discussions",
 					action: "click",
 					noun: "dismiss",
-					post: Object(n.J)(t, e),
+					post: Object(n.K)(t, e),
 					...r(t, e)
 				})
 		},
@@ -10472,19 +10472,19 @@
 			const o = "poll",
 				i = "predictions",
 				a = e => ({
-					...Object(r.n)(e),
+					...Object(r.o)(e),
 					source: o,
 					action: "select",
 					noun: "poll_option"
 				}),
 				d = e => ({
-					...Object(r.n)(e),
+					...Object(r.o)(e),
 					source: o,
 					action: "select",
 					noun: "prediction_option"
 				}),
 				c = e => ({
-					...Object(r.n)(e),
+					...Object(r.o)(e),
 					source: o,
 					action: "view",
 					noun: "predict_option_modal"
@@ -10496,11 +10496,11 @@
 						totalStakeAmount: n
 					} = e;
 					return e => ({
-						...Object(r.n)(e),
+						...Object(r.o)(e),
 						source: o,
 						action: "confirm",
 						noun: "predict",
-						poll: Object(r.I)(e, t, !1, void 0, s),
+						poll: Object(r.J)(e, t, !1, void 0, s),
 						goldPurchase: {
 							numberCoins: n
 						}
@@ -10512,11 +10512,11 @@
 						selectedNumberTokens: s
 					} = e;
 					return e => ({
-						...Object(r.n)(e),
+						...Object(r.o)(e),
 						source: o,
 						action: "confirm",
 						noun: "predict",
-						poll: Object(r.I)(e, t, !1, void 0, void 0, s)
+						poll: Object(r.J)(e, t, !1, void 0, void 0, s)
 					})
 				},
 				u = e => {
@@ -10529,16 +10529,16 @@
 						const a = s === n.a.Coins ? i : void 0,
 							d = s === n.a.Tokens ? i : void 0;
 						return {
-							...Object(r.n)(e),
+							...Object(r.o)(e),
 							source: o,
 							action: "close",
 							noun: "prediction_modal",
-							poll: Object(r.I)(e, t, !1, a, d)
+							poll: Object(r.J)(e, t, !1, a, d)
 						}
 					}
 				},
 				p = e => ({
-					...Object(r.n)(e),
+					...Object(r.o)(e),
 					source: o,
 					action: "click",
 					noun: "add_coins"
@@ -10548,7 +10548,7 @@
 						targetUserId: t
 					} = e;
 					return e => ({
-						...Object(r.n)(e),
+						...Object(r.o)(e),
 						source: i,
 						action: "click",
 						noun: "leaderboard_profile",
@@ -10562,7 +10562,7 @@
 						pageType: t
 					} = e;
 					return e => ({
-						...Object(r.n)(e),
+						...Object(r.o)(e),
 						source: i,
 						action: "click",
 						noun: "tournament",
@@ -10572,7 +10572,7 @@
 					})
 				},
 				g = () => e => ({
-					...Object(r.n)(e),
+					...Object(r.o)(e),
 					source: "global",
 					action: "view",
 					noun: "screen",
@@ -10581,19 +10581,19 @@
 					}
 				}),
 				x = () => e => ({
-					...Object(r.n)(e),
+					...Object(r.o)(e),
 					source: "mod_tool_predict",
 					action: "click",
 					noun: "end_tournament"
 				}),
 				f = () => e => ({
-					...Object(r.n)(e),
+					...Object(r.o)(e),
 					source: "mod_tool_predict",
 					action: "click",
 					noun: "rename_tournament"
 				}),
 				v = e => t => ({
-					...Object(r.n)(t),
+					...Object(r.o)(t),
 					source: "mod_tool_predict",
 					action: "click",
 					noun: "enable_predictions",
@@ -10604,45 +10604,45 @@
 						value: e ? "1" : "0",
 						oldValue: e ? "0" : "1"
 					},
-					subreddit: Object(r.ib)(t)
+					subreddit: Object(r.jb)(t)
 				}),
 				_ = () => e => ({
-					...Object(r.n)(e),
+					...Object(r.o)(e),
 					source: i,
 					action: "click",
 					noun: "next"
 				}),
 				y = () => e => ({
-					...Object(r.n)(e),
+					...Object(r.o)(e),
 					source: i,
 					action: "click",
 					noun: "add_more"
 				}),
 				C = () => e => ({
-					...Object(r.n)(e),
+					...Object(r.o)(e),
 					source: i,
 					action: "click",
 					noun: "start_tournament"
 				}),
 				O = () => e => ({
-					...Object(r.n)(e),
+					...Object(r.o)(e),
 					source: "menu_links_bar",
 					action: "click",
 					noun: "predictions_tab"
 				}),
 				E = () => e => ({
-					...Object(r.n)(e),
+					...Object(r.o)(e),
 					source: "predictions_tab",
 					action: "view",
 					noun: "predictions_how_it_works",
-					subreddit: Object(r.ib)(e)
+					subreddit: Object(r.jb)(e)
 				}),
 				j = () => e => ({
-					...Object(r.n)(e),
+					...Object(r.o)(e),
 					source: "predictions_how_it_works",
 					action: "click",
 					noun: "learn_more",
-					subreddit: Object(r.ib)(e)
+					subreddit: Object(r.jb)(e)
 				})
 		},
 		"./src/reddit/helpers/trackers/subredditWiki.ts": function(e, t, s) {
@@ -10687,9 +10687,9 @@
 			var n = s("./src/reddit/models/SubredditWikiPage/index.ts"),
 				r = s("./src/reddit/selectors/telemetry.ts");
 			const o = e => ({
-					...r.n(e),
-					subreddit: r.ib(e),
-					userSubreddit: r.sb(e)
+					...r.o(e),
+					subreddit: r.jb(e),
+					userSubreddit: r.tb(e)
 				}),
 				i = () => e => ({
 					source: "wiki",
@@ -12856,4 +12856,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage.091221710e8a13110db9.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage.ea7a983a91a8fbdd95ed.js.map

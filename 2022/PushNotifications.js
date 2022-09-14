@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PushNotifications.4585f75d2217deadaeb3.js
-// Retrieved at 9/14/2022, 10:00:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PushNotifications.054e01e02cda1cfb9873.js
+// Retrieved at 9/14/2022, 4:30:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PushNotifications"], {
 		"./src/lib/notifications/token.ts": function(e, t, i) {
@@ -71,7 +71,7 @@
 			})), i.d(t, "requestBrowserNotificationPermissionPromptByUser", (function() {
 				return L
 			})), i.d(t, "subscribeToPermissionsChange", (function() {
-				return E
+				return A
 			}));
 			var n = i("./node_modules/fbt/lib/FbtPublic.js"),
 				s = i("./node_modules/lodash/omit.js"),
@@ -194,7 +194,7 @@
 					case d.a.Denied:
 						t(Object(f.h)(e))
 				}
-			}, E = () => async (e, t) => {
+			}, A = () => async (e, t) => {
 				var i;
 				if (!(null === (i = null === navigator || void 0 === navigator ? void 0 : navigator.permissions) || void 0 === i ? void 0 : i.query)) return;
 				const n = t();
@@ -257,7 +257,7 @@
 				e.FREQUENT = "frequent", e.LOW = "low", e.OFF = "off"
 			}(r || (r = {}));
 			const c = e => ({
-					...n.n(e),
+					...n.o(e),
 					noun: "desktop_notification_permissions"
 				}),
 				a = e => e ? "enable" : "disable",
@@ -290,7 +290,7 @@
 					})
 				},
 				b = (e, t, i) => ({
-					...n.n(e),
+					...n.o(e),
 					actionInfo: n.d(e, {
 						success: t,
 						reason: i
@@ -319,18 +319,18 @@
 					})
 				},
 				O = e => ({
-					...n.n(e),
+					...n.o(e),
 					noun: "push_notification"
 				}),
 				v = e => ({
 					...O(e),
-					notification: n.E(e, void 0, void 0),
+					notification: n.F(e, void 0, void 0),
 					action: void 0,
 					source: "notification",
 					correlationId: void 0
 				}),
 				_ = (e, t) => i => ({
-					...n.n(i),
+					...n.o(i),
 					action: a(e),
 					email: {
 						type: t
@@ -339,7 +339,7 @@
 					source: "email_app_settings"
 				}),
 				h = (e, t) => i => ({
-					...n.n(i),
+					...n.o(i),
 					action: a(e),
 					notification: {
 						type: t
@@ -348,7 +348,7 @@
 					source: "notification_app_settings"
 				}),
 				j = e => t => ({
-					...n.n(t),
+					...n.o(t),
 					source: "email_app_settings",
 					action: a(e),
 					noun: "email",
@@ -357,7 +357,7 @@
 					}
 				}),
 				k = (e, t, i) => s => ({
-					...n.n(s),
+					...n.o(s),
 					action: "set_frequency",
 					noun: i,
 					source: "community_notifications",
@@ -367,7 +367,7 @@
 					}
 				}),
 				y = () => e => ({
-					...n.n(e),
+					...n.o(e),
 					action: o.c.View,
 					noun: "screen",
 					source: "global",
@@ -376,13 +376,13 @@
 					}
 				}),
 				w = () => e => ({
-					...n.n(e),
+					...n.o(e),
 					action: "click",
 					noun: "desktop_notification_permissions",
 					source: "overlay"
 				}),
 				S = () => e => ({
-					...n.n(e),
+					...n.o(e),
 					action: "auto_dismiss",
 					noun: "desktop_notification_permissions",
 					source: "overlay"
@@ -393,4 +393,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PushNotifications.4585f75d2217deadaeb3.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PushNotifications.054e01e02cda1cfb9873.js.map

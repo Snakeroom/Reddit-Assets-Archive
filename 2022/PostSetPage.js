@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostSetPage.97297bc8b00e7ef2f92c.js
-// Retrieved at 9/14/2022, 10:00:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostSetPage.00997d3d267945905639.js
+// Retrieved at 9/14/2022, 4:30:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostSetPage"], {
 		"./node_modules/intersection-observer/intersection-observer.js": function(e, t) {
@@ -1629,11 +1629,11 @@
 							source: "trophy",
 							action: "click",
 							noun: "trophy",
-							...l.n(t),
+							...l.o(t),
 							actionInfo: Object(l.d)(t, {
 								paneName: "profile_about"
 							}),
-							profile: l.S(t),
+							profile: l.T(t),
 							trophy: e
 						}))({
 							id: t.id,
@@ -2339,37 +2339,37 @@
 					source: r.COMMUNITY_WIDGETS,
 					action: i.c.CLICK,
 					noun: s.SEE_MORE,
-					widget: Object(o.wb)(n, {
+					widget: Object(o.xb)(n, {
 						subredditId: e,
 						widgetKind: t
 					}),
-					...o.n
+					...o.o
 				}),
 				a = (e, t) => n => ({
 					source: r.POST,
 					action: i.c.CLICK,
 					noun: s.REREDDIT_PROMO,
-					post: o.J(n, e),
-					subreddit: o.ib(n),
+					post: o.K(n, e),
+					subreddit: o.jb(n),
 					...t && {
 						banner: {
 							buttonText: t,
 							id: s.REREDDIT_PROMO
 						}
 					},
-					...o.n(n)
+					...o.o(n)
 				}),
 				c = () => e => ({
 					source: r.SIDEBAR,
 					action: i.c.VIEW,
 					noun: s.TOPICS_WIDGET,
-					...o.n(e)
+					...o.o(e)
 				}),
 				l = e => t => ({
 					source: r.TOPICS_WIDGET,
 					action: i.c.CLICK,
 					noun: s.TOPIC,
-					...o.n(t),
+					...o.o(t),
 					topicMetadata: {
 						displayName: e
 					}
@@ -2789,4 +2789,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostSetPage.97297bc8b00e7ef2f92c.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostSetPage.00997d3d267945905639.js.map

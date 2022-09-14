@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Settings.d4ea41aaf9b9efa13cbb.js
-// Retrieved at 9/14/2022, 12:50:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Settings.db53af3223539b8dfc65.js
+// Retrieved at 9/14/2022, 4:30:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Settings"], {
 		"./node_modules/moment/locale sync recursive ^\\.\\/.*$": function(e, t, n) {
@@ -9980,21 +9980,21 @@
 			}));
 			var s = n("./src/reddit/selectors/telemetry.ts");
 			const r = e => t => ({
-					...Object(s.n)(t),
+					...Object(s.o)(t),
 					source: "meta",
 					action: e,
 					noun: "feed_claim_points_banner",
-					subreddit: Object(s.ib)(t)
+					subreddit: Object(s.jb)(t)
 				}),
 				a = () => r("view"),
 				o = () => r("tap"),
 				i = () => r("dismiss"),
 				c = e => t => ({
-					...Object(s.n)(t),
+					...Object(s.o)(t),
 					source: "meta",
 					action: "click",
 					noun: "cancel_membership_with_points",
-					subreddit: Object(s.jb)(t, e)
+					subreddit: Object(s.kb)(t, e)
 				})
 		},
 		"./src/reddit/helpers/trackers/followers.ts": function(e, t, n) {
@@ -10007,13 +10007,13 @@
 			var s = n("./src/reddit/constants/tracking.ts"),
 				r = n("./src/reddit/selectors/telemetry.ts");
 			const a = e => t => ({
-					...Object(r.n)(t),
+					...Object(r.o)(t),
 					action: s.c.CLICK,
 					noun: `follower_list_page_${e?"follow":"unfollow"}`,
 					source: "profile"
 				}),
 				o = () => e => ({
-					...Object(r.n)(e),
+					...Object(r.o)(e),
 					action: s.c.CLICK,
 					noun: "follower_list_cta",
 					source: "profile"
@@ -10034,19 +10034,19 @@
 			}));
 			var s = n("./src/reddit/selectors/telemetry.ts");
 			const r = () => e => ({
-					...Object(s.n)(e),
+					...Object(s.o)(e),
 					source: "marketplace",
 					action: "view",
 					noun: "claim_post_unit"
 				}),
 				a = () => e => ({
-					...Object(s.n)(e),
+					...Object(s.o)(e),
 					source: "marketplace",
 					action: "click",
 					noun: "claim_post_unit"
 				}),
 				o = () => e => ({
-					...Object(s.n)(e),
+					...Object(s.o)(e),
 					source: "marketplace",
 					action: "close",
 					noun: "claim_post_unit"
@@ -10056,7 +10056,7 @@
 				e.Profile = "profile", e.Hovercard = "hovercard"
 			}(i || (i = {}));
 			const c = e => t => {
-				const n = Object(s.n)(t);
+				const n = Object(s.o)(t);
 				return {
 					...n,
 					source: "marketplace",
@@ -10111,7 +10111,7 @@
 				e.FREQUENT = "frequent", e.LOW = "low", e.OFF = "off"
 			}(o || (o = {}));
 			const i = e => ({
-					...s.n(e),
+					...s.o(e),
 					noun: "desktop_notification_permissions"
 				}),
 				c = e => e ? "enable" : "disable",
@@ -10144,7 +10144,7 @@
 					})
 				},
 				p = (e, t, n) => ({
-					...s.n(e),
+					...s.o(e),
 					actionInfo: s.d(e, {
 						success: t,
 						reason: n
@@ -10173,18 +10173,18 @@
 					})
 				},
 				g = e => ({
-					...s.n(e),
+					...s.o(e),
 					noun: "push_notification"
 				}),
 				v = e => ({
 					...g(e),
-					notification: s.E(e, void 0, void 0),
+					notification: s.F(e, void 0, void 0),
 					action: void 0,
 					source: "notification",
 					correlationId: void 0
 				}),
 				_ = (e, t) => n => ({
-					...s.n(n),
+					...s.o(n),
 					action: c(e),
 					email: {
 						type: t
@@ -10193,7 +10193,7 @@
 					source: "email_app_settings"
 				}),
 				y = (e, t) => n => ({
-					...s.n(n),
+					...s.o(n),
 					action: c(e),
 					notification: {
 						type: t
@@ -10202,7 +10202,7 @@
 					source: "notification_app_settings"
 				}),
 				x = e => t => ({
-					...s.n(t),
+					...s.o(t),
 					source: "email_app_settings",
 					action: c(e),
 					noun: "email",
@@ -10211,7 +10211,7 @@
 					}
 				}),
 				k = (e, t, n) => r => ({
-					...s.n(r),
+					...s.o(r),
 					action: "set_frequency",
 					noun: n,
 					source: "community_notifications",
@@ -10221,7 +10221,7 @@
 					}
 				}),
 				C = () => e => ({
-					...s.n(e),
+					...s.o(e),
 					action: a.c.View,
 					noun: "screen",
 					source: "global",
@@ -10230,13 +10230,13 @@
 					}
 				}),
 				j = () => e => ({
-					...s.n(e),
+					...s.o(e),
 					action: "click",
 					noun: "desktop_notification_permissions",
 					source: "overlay"
 				}),
 				E = () => e => ({
-					...s.n(e),
+					...s.o(e),
 					action: "auto_dismiss",
 					noun: "desktop_notification_permissions",
 					source: "overlay"
@@ -10277,7 +10277,7 @@
 					action: "click",
 					noun: "price",
 					correlationId: Object(s.c)(s.a.GoldPayment),
-					...a.n(t),
+					...a.o(t),
 					...o(t, e)
 				}),
 				l = () => e => ({
@@ -10285,13 +10285,13 @@
 					action: "click",
 					noun: "manage",
 					correlationId: Object(s.c)(s.a.GoldPayment),
-					...a.n(e)
+					...a.o(e)
 				}),
 				d = e => t => ({
 					source: "premium_marketing",
 					action: "click",
 					noun: "premium_benefit",
-					...a.n(t),
+					...a.o(t),
 					goldPurchase: {
 						premiumMarketingBenefit: e
 					}
@@ -10333,9 +10333,9 @@
 				a = n("./src/telemetry/models/GoldPurchase.ts"),
 				o = n("./src/reddit/helpers/correlationIdTracker.ts");
 			const i = e => ({
-					...s.n(e),
+					...s.o(e),
 					correlationId: Object(o.c)(o.a.PremiumSettings),
-					screen: s.ab(e)
+					screen: s.bb(e)
 				}),
 				c = () => e => ({
 					...i(e),
@@ -12369,7 +12369,7 @@
 						source: "dsp_settings",
 						action: "view",
 						noun: "page",
-						actionInfo: Wn.n(e).actionInfo
+						actionInfo: Wn.o(e).actionInfo
 					}
 				},
 				qn = () => e => {
@@ -12377,7 +12377,7 @@
 						source: "dsp_settings",
 						action: "submit",
 						noun: "page",
-						actionInfo: Wn.n(e).actionInfo
+						actionInfo: Wn.o(e).actionInfo
 					}
 				},
 				Qn = () => e => {
@@ -12385,7 +12385,7 @@
 						source: "dsp_settings",
 						action: "submit",
 						noun: "error",
-						actionInfo: Wn.n(e).actionInfo
+						actionInfo: Wn.o(e).actionInfo
 					}
 				};
 			var Vn = n("./src/reddit/components/Settings/DspForm.m.less"),
@@ -13251,7 +13251,7 @@
 							targetUser: {
 								id: e
 							},
-							...Wn.n(t)
+							...Wn.o(t)
 						}))(n[n.length - 1].id))
 					}, [n, A, I]), a.a.createElement(be.a, null, a.a.createElement(pe.b, {
 						isResponsiveSettingsEnabled: y
@@ -13290,7 +13290,7 @@
 								targetUser: {
 									id: e
 								},
-								...Wn.n(t)
+								...Wn.o(t)
 							}))(s))
 						},
 						list: n,
@@ -15171,4 +15171,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Settings.d4ea41aaf9b9efa13cbb.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Settings.db53af3223539b8dfc65.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/GovernanceReleaseNotesModal.ecc051c8f84c4c030c5d.js
-// Retrieved at 9/14/2022, 10:00:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/GovernanceReleaseNotesModal.7ba75e84579d4da70970.js
+// Retrieved at 9/14/2022, 4:30:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["GovernanceReleaseNotesModal"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -2406,10 +2406,10 @@
 							ext: a,
 							s: d
 						} = e;
-						if (Object(b.g)(r)) {
+						if (Object(b.h)(r)) {
 							const e = s.renderingObjectInfo,
 								c = !!e && Object(p.b)(e),
-								l = a || Object(b.f)(r);
+								l = a || Object(b.g)(r);
 							return i.a.createElement("div", {
 								className: Object(o.a)({
 									[E.a.MediaWrapper]: !c,
@@ -2554,7 +2554,7 @@
 						}, v)
 					}, this.sendEvent = e => {
 						this.props.sendEvent(t => {
-							const n = h.n(t);
+							const n = h.o(t);
 							return {
 								source: "meta",
 								action: e,
@@ -2564,7 +2564,7 @@
 									...n.actionInfo,
 									reason: this.props.node.id
 								},
-								subreddit: h.ib(t)
+								subreddit: h.jb(t)
 							}
 						})
 					}
@@ -2719,7 +2719,7 @@
 						key: e
 					}, a.a.createElement("br", null)))(s);
 					const i = e.c[0];
-					return i.e !== m.m && i.e !== m.a || !Object(C.g)(i.id) ? a.a.createElement(d.j, {
+					return i.e !== m.m && i.e !== m.a || !Object(C.h)(i.id) ? a.a.createElement(d.j, {
 						key: s
 					}, H(e.c, t, n, r)) : Object(w.b)(i, s, n, t)
 				},
@@ -3088,15 +3088,15 @@
 				e.LINK = "link", e.DISCOVERY_UNIT = "discovery_unit"
 			}(r || (r = {}));
 			const m = e => ({
-					...u.n(e),
+					...u.o(e),
 					source: r.LINK,
 					action: i.c.CLICK,
 					noun: s.INTERNAL_LINK
 				}),
 				h = e => ({
-					...u.n(e),
+					...u.o(e),
 					source: r,
-					screen: u.ab(e),
+					screen: u.bb(e),
 					discoveryUnit: {
 						id: "xd_100",
 						name: s.SUBREDDIT_HOVERCARD,
@@ -3141,8 +3141,8 @@
 					if (!n || !Object(a.b)(n) && !Object(o.b)(n)) return {};
 					const s = Object(a.b)(n) ? n.belongsTo.id : n.subredditId;
 					return {
-						post: u.J(e, n.id),
-						subreddit: u.jb(e, s),
+						post: u.K(e, n.id),
+						subreddit: u.kb(e, s),
 						...p(e, t)
 					}
 				},
@@ -3155,44 +3155,44 @@
 					source: "global",
 					action: i.c.VIEW,
 					noun: s.SUBREDDIT_HOVERCARD,
-					subreddit: u.kb(t, e),
-					screen: u.ab(t)
+					subreddit: u.lb(t, e),
+					screen: u.bb(t)
 				}),
 				g = (e, t) => n => ({
 					...h(n),
 					source: r.DISCOVERY_UNIT,
 					action: i.c.VIEW,
 					noun: s.ITEM_POST,
-					post: u.J(n, t),
-					subreddit: u.kb(n, e),
-					screen: u.ab(n)
+					post: u.K(n, t),
+					subreddit: u.lb(n, e),
+					screen: u.bb(n)
 				}),
 				v = (e, t) => n => ({
 					...h(n),
 					source: r.DISCOVERY_UNIT,
 					action: i.c.CLICK,
 					noun: s.ITEM_POST,
-					post: u.J(n, t),
-					subreddit: u.kb(n, e),
-					screen: u.ab(n)
+					post: u.K(n, t),
+					subreddit: u.lb(n, e),
+					screen: u.bb(n)
 				}),
 				_ = e => t => ({
 					...h(t),
-					subreddit: u.jb(t, e) || null,
+					subreddit: u.kb(t, e) || null,
 					source: r.DISCOVERY_UNIT,
 					action: i.c.CLICK,
 					noun: s.HEADER_SUBREDDIT
 				}),
 				E = e => t => ({
 					...h(t),
-					subreddit: u.jb(t, e) || null,
+					subreddit: u.kb(t, e) || null,
 					source: r.DISCOVERY_UNIT,
 					action: i.c.CLICK,
 					noun: s.HEADER_SUBREDDIT_SUBSCRIBE
 				}),
 				y = e => t => ({
 					...h(t),
-					subreddit: u.jb(t, e) || null,
+					subreddit: u.kb(t, e) || null,
 					source: r.DISCOVERY_UNIT,
 					action: i.c.CLICK,
 					noun: s.HEADER_SUBREDDIT_UNSUBSCRIBE
@@ -3352,4 +3352,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/GovernanceReleaseNotesModal.ecc051c8f84c4c030c5d.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/GovernanceReleaseNotesModal.7ba75e84579d4da70970.js.map

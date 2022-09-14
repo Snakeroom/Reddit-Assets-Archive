@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-ModHub-ContentControls.b4fdebdf76bc242abc5b.js
-// Retrieved at 9/12/2022, 2:10:03 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-ModHub-ContentControls.79ce940831fe8fd28a1a.js
+// Retrieved at 9/14/2022, 4:30:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-ModHub-ContentControls"], {
 		"./node_modules/lodash/negate.js": function(e, t) {
@@ -152,10 +152,10 @@
 					source: "post_requirements",
 					action: "save",
 					noun: "settings",
-					...v.n(t),
+					...v.o(t),
 					postRequirement: q(e),
-					subreddit: v.ib(t),
-					userSubreddit: v.sb(t)
+					subreddit: v.jb(t),
+					userSubreddit: v.tb(t)
 				});
 			var T = n("./src/reddit/selectors/activeModalId.ts"),
 				B = n("./src/reddit/selectors/contentControls.ts"),
@@ -931,7 +931,7 @@
 							source: "community_settings",
 							action: "add",
 							noun: "auto_report_keyword",
-							...Object(v.n)(t),
+							...Object(v.o)(t),
 							setting: {
 								value: e,
 								oldValue: ""
@@ -940,7 +940,7 @@
 							source: "community_settings",
 							action: "remove",
 							noun: "auto_report_keyword",
-							...Object(v.n)(t),
+							...Object(v.o)(t),
 							setting: {
 								value: e,
 								oldValue: ""
@@ -1592,8 +1592,8 @@
 						value: `${e}`,
 						oldValue: `${t}`
 					},
-					subreddit: Object(v.ib)(n),
-					...Object(v.n)(n)
+					subreddit: Object(v.jb)(n),
+					...Object(v.o)(n)
 				}),
 				Kt = "PostReq-discard-confirmation",
 				Jt = 150,
@@ -1813,4 +1813,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ModHub-ContentControls.b4fdebdf76bc242abc5b.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ModHub-ContentControls.79ce940831fe8fd28a1a.js.map

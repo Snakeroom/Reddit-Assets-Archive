@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditHovercard.56236ae7d19f54198630.js
-// Retrieved at 9/13/2022, 3:30:03 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditHovercard.f472b36e1eafa9948f00.js
+// Retrieved at 9/14/2022, 4:30:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditHovercard"], {
 		"./src/reddit/components/CommunityType/index.m.less": function(e, t, s) {
@@ -253,17 +253,17 @@
 					source: "subreddit_hovercard",
 					action: "click",
 					noun: t,
-					post: s ? a.J(o, s) : void 0,
-					subreddit: a.jb(o, e),
-					screen: a.ab(o)
+					post: s ? a.K(o, s) : void 0,
+					subreddit: a.kb(o, e),
+					screen: a.bb(o)
 				}),
 				c = (e, t) => s => ({
 					source: "subreddit_hovercard",
 					action: "view",
 					noun: "hover_subreddit_hovercard",
-					post: t ? a.J(s, t) : void 0,
-					subreddit: a.jb(s, e),
-					screen: a.ab(s)
+					post: t ? a.K(s, t) : void 0,
+					subreddit: a.kb(s, e),
+					screen: a.bb(s)
 				});
 			var u = s("./node_modules/react-redux/es/index.js"),
 				p = s("./node_modules/reselect/es/index.js"),
@@ -309,7 +309,7 @@
 				_1: " Online"
 			}, [P._plural(e.subredditAboutInfo.accountsActive)], {
 				hk: "3OMjYw"
-			})))), J = Object(T.a)(e => {
+			})))), q = Object(T.a)(e => {
 				const {
 					className: t,
 					hideNSFWPref: s,
@@ -355,9 +355,9 @@
 					style: c
 				})
 			});
-			var q = e => {
+			var J = e => {
 				const t = e.activeTooltipId === e.tooltipId;
-				return r.a.createElement(J, H({
+				return r.a.createElement(q, H({
 					isOpen: t
 				}, e))
 			};
@@ -373,7 +373,7 @@
 				className: e.className,
 				id: e.tooltipId,
 				onMouseLeave: e.onHideTooltip
-			}, r.a.createElement(q, {
+			}, r.a.createElement(J, {
 				activeTooltipId: e.activeTooltipId,
 				hideNSFWPref: e.hideNSFWPref,
 				hoverId: e.hoverId,
@@ -873,4 +873,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditHovercard.56236ae7d19f54198630.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditHovercard.f472b36e1eafa9948f00.js.map

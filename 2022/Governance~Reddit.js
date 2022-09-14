@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~Reddit.ec7527167ddaebdfee20.js
-// Retrieved at 9/14/2022, 12:50:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~Reddit.3d3d62ac5378364a0dc8.js
+// Retrieved at 9/14/2022, 4:30:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~Reddit"], {
 		"./assets/fonts/NotoMono/font.less": function(e, t, n) {},
@@ -628,7 +628,7 @@
 									value: e,
 									oldValue: t
 								},
-								...Object(c.n)(n)
+								...Object(c.o)(n)
 							}))(h, e)(p)), n.ok) {
 							const e = l.a[h];
 							t(b({
@@ -1898,12 +1898,12 @@
 						source: g.b.Chat,
 						action: g.a.OptOut,
 						noun: "down_to_chat_subreddit",
-						subreddit: Object(y.ib)(e),
+						subreddit: Object(y.jb)(e),
 						setting: {
 							oldValue: t,
 							value: n
 						},
-						...Object(y.n)(e)
+						...Object(y.o)(e)
 					})
 				}, L = (e, t) => async (n, r) => {
 					t.forEach(t => {
@@ -3033,7 +3033,7 @@
 							source: l,
 							action: "click",
 							noun: "close",
-							...Object(d.n)(e)
+							...Object(d.o)(e)
 						}))(f))
 					}));
 					const S = [..._, Date.now()].slice(Math.max(_.length + 1 - 1, 0));
@@ -3041,14 +3041,14 @@
 						source: l,
 						action: "view",
 						noun: l,
-						...Object(d.n)(e)
+						...Object(d.o)(e)
 					}))(f)), Object(i.Gb)(), Object(i.Fb)(S), a(g()), n && n()
 				}, h = e => async (t, n) => {
 					Object(p.a)((e => ({
 						source: l,
 						action: "click",
 						noun: "upvote",
-						...Object(d.n)(e)
+						...Object(d.o)(e)
 					}))(n())), Object(u.c)(n(), {
 						postId: e
 					}) && t(Object(o.kb)(e))
@@ -5619,9 +5619,9 @@
 					action: "view",
 					source: "commentlist",
 					noun: "bottom",
-					...s.n(e),
-					listing: s.y(e, t),
-					subreddit: s.ib(e)
+					...s.o(e),
+					listing: s.z(e, t),
+					subreddit: s.jb(e)
 				})
 			}
 		},
@@ -5700,9 +5700,9 @@
 			}(r || (r = {}));
 			const g = "discovery_unit",
 				m = (e, t, n) => ({
-					...p.n(e),
+					...p.o(e),
 					source: g,
-					screen: p.ab(e),
+					screen: p.bb(e),
 					discoveryUnit: {
 						id: t.id,
 						type: t.unitType,
@@ -5723,11 +5723,11 @@
 				},
 				O = (e, t) => n => v(n, e, t),
 				_ = (e, t, n, r) => "unitName" in t ? m(e, t, r) : ((e, t, n) => ({
-					...p.n(e),
+					...p.o(e),
 					source: "search",
-					screen: p.ab(e),
+					screen: p.bb(e),
 					search: n ? {
-						...p.bb(e, n, c.a.SERP),
+						...p.cb(e, n, c.a.SERP),
 						structureType: p.c.Trending
 					} : null,
 					discoveryUnit: {
@@ -5741,7 +5741,7 @@
 					..._(e, t, s, a),
 					action: "view",
 					noun: r.ITEM_POST,
-					post: p.J(e, n)
+					post: p.K(e, n)
 				}),
 				S = e => {
 					let {
@@ -5791,7 +5791,7 @@
 						i = C[a],
 						l = Object(f.a)(s, i).filter(e => !e.post || !(e.post.isSponsored && e.post.isBlank)).findIndex(e => e.id === o.id) + n;
 					return {
-						...p.n(s),
+						...p.o(s),
 						source: "search",
 						action: t,
 						noun: r.TRENDING,
@@ -5808,17 +5808,17 @@
 						}),
 						search: {
 							originElement: c === T.SEARCH_DROPDOWN ? "search_dropdown" : void 0,
-							originPageType: s.platform.currentPage ? p.u(s.platform.currentPage) : void 0,
+							originPageType: s.platform.currentPage ? p.v(s.platform.currentPage) : void 0,
 							query: o.rawQuery,
 							structureType: p.c.Trending,
 							impressionId: y.a.get(a),
-							queryId: p.cb(s, a)
+							queryId: p.db(s, a)
 						}
 					}
 				},
 				P = (e, t, n, r, s, a, c) => {
 					Object(h.a)({
-						...p.n(e),
+						...p.o(e),
 						...Object(i.m)({
 							state: e,
 							postId: n,
@@ -5852,7 +5852,7 @@
 						source: g,
 						action: o.c.CLICK,
 						noun: r.ITEM_POST,
-						post: p.J(a, t)
+						post: p.K(a, t)
 					}
 				},
 				U = function() {
@@ -5881,7 +5881,7 @@
 					source: g,
 					action: o.c.CLICK,
 					noun: r.ITEM_POST,
-					post: p.J(s, n)
+					post: p.K(s, n)
 				}),
 				G = (e, t, n, r) => {
 					Object(h.a)(q(t, n, r)(e))
@@ -5897,7 +5897,7 @@
 						source: g,
 						action: o.c.CLICK,
 						noun: "item_post_subreddit",
-						post: p.J(s, t)
+						post: p.K(s, t)
 					}
 				},
 				H = () => ({
@@ -5919,7 +5919,7 @@
 					return e => ({
 						...v(e, r),
 						actionInfo: Q(e, 0, n),
-						subreddit: p.jb(e, t)
+						subreddit: p.kb(e, t)
 					})
 				},
 				V = (e, t, n) => {
@@ -5934,7 +5934,7 @@
 					return e => ({
 						...m(e, s),
 						actionInfo: Q(e, 0, n),
-						subreddit: p.jb(e, t) || null,
+						subreddit: p.kb(e, t) || null,
 						source: g,
 						action: o.c.VIEW,
 						noun: r.ITEM_SUBREDDIT
@@ -5945,7 +5945,7 @@
 					return e => ({
 						...m(e, s),
 						actionInfo: Q(e, 0, n),
-						post: p.J(e, t) || null,
+						post: p.K(e, t) || null,
 						source: g,
 						action: o.c.CLICK,
 						noun: r.ITEM_POST
@@ -5956,8 +5956,8 @@
 					return e => ({
 						...m(e, a),
 						actionInfo: Q(e, 0, s),
-						subreddit: p.jb(e, n) || null,
-						post: p.J(e, t) || null,
+						subreddit: p.kb(e, n) || null,
+						post: p.K(e, t) || null,
 						source: g,
 						action: o.c.CLICK,
 						noun: r.ITEM_POST_SUBREDDIT
@@ -5968,7 +5968,7 @@
 					return e => ({
 						...m(e, s),
 						actionInfo: Q(e, 0, n),
-						subreddit: p.jb(e, t) || null,
+						subreddit: p.kb(e, t) || null,
 						source: g,
 						action: o.c.CLICK,
 						noun: r.ITEM_SUBREDDIT
@@ -5979,8 +5979,8 @@
 					return e => ({
 						...m(e, a),
 						actionInfo: Q(e, 0, n),
-						subreddit: p.jb(e, t) || null,
-						post: s ? p.J(e, s) : null,
+						subreddit: p.kb(e, t) || null,
+						post: s ? p.K(e, s) : null,
 						source: g,
 						action: o.c.CLICK,
 						noun: r.ITEM_SUBREDDIT_SUBSCRIBE
@@ -5991,8 +5991,8 @@
 					return e => ({
 						...m(e, a),
 						actionInfo: Q(e, 0, n),
-						subreddit: p.jb(e, t) || null,
-						post: s ? p.J(e, s) : null,
+						subreddit: p.kb(e, t) || null,
+						post: s ? p.K(e, s) : null,
 						source: g,
 						action: o.c.CLICK,
 						noun: r.ITEM_SUBREDDIT_UNSUBSCRIBE
@@ -6003,7 +6003,7 @@
 					return e => ({
 						...m(e, s),
 						actionInfo: Q(e, 0, n),
-						subreddit: p.jb(e, t) || null,
+						subreddit: p.kb(e, t) || null,
 						source: g,
 						action: o.c.CLICK,
 						noun: r.ITEM_SUBREDDIT_HIDE
@@ -6014,7 +6014,7 @@
 					return e => ({
 						...m(e, s),
 						actionInfo: Q(e, 0, n),
-						subreddit: p.jb(e, t) || null,
+						subreddit: p.kb(e, t) || null,
 						source: g,
 						action: o.c.CLICK,
 						noun: r.HEADER_SUBREDDIT
@@ -6090,10 +6090,10 @@
 			var r = n("./src/reddit/models/ScheduledPost/index.ts"),
 				s = n("./src/reddit/selectors/telemetry.ts");
 			const a = e => ({
-					...s.n(e),
-					screen: s.ab(e),
-					subreddit: s.ib(e),
-					userSubreddit: s.sb(e)
+					...s.o(e),
+					screen: s.bb(e),
+					subreddit: s.jb(e),
+					userSubreddit: s.tb(e)
 				}),
 				o = e => ({
 					id: e.id,
@@ -6292,7 +6292,7 @@
 					source: "post",
 					noun: "forking_module",
 					action: "click",
-					...r.n(e),
+					...r.o(e),
 					actionInfo: r.d(e, {
 						settingValue: e.user.account && e.user.account.isMod ? "existing_mod" : "new_mod"
 					})
@@ -6301,14 +6301,14 @@
 					source: "post",
 					noun: "forking_module",
 					action: "dismiss",
-					...r.n(e),
+					...r.o(e),
 					actionInfo: r.d(e)
 				}),
 				o = e => e => ({
 					source: "post",
 					noun: "forking_module",
 					action: "view",
-					...r.n(e),
+					...r.o(e),
 					actionInfo: r.d(e)
 				})
 		},
@@ -25568,7 +25568,7 @@
 				s = n("./src/reddit/selectors/telemetry.ts");
 
 			function a(e) {
-				const t = Object(s.p)(e, r.Dc);
+				const t = Object(s.q)(e, r.Dc);
 				return {
 					experimentState: e,
 					isActive: (null == t ? void 0 : t.variant) === r.Id,
@@ -25727,4 +25727,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit.ec7527167ddaebdfee20.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit.3d3d62ac5378364a0dc8.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfileFollowersPage.005e36500f47b4047dc1.js
-// Retrieved at 9/14/2022, 10:00:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfileFollowersPage.397e314f3015b3a9ac04.js
+// Retrieved at 9/14/2022, 4:30:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfileFollowersPage", "ProfileFollowersAction"], {
 		"./node_modules/lodash/take.js": function(e, t, r) {
@@ -4652,11 +4652,11 @@
 							source: "trophy",
 							action: "click",
 							noun: "trophy",
-							...c.n(t),
+							...c.o(t),
 							actionInfo: Object(c.d)(t, {
 								paneName: "profile_about"
 							}),
-							profile: c.S(t),
+							profile: c.T(t),
 							trophy: e
 						}))({
 							id: t.id,
@@ -5434,13 +5434,13 @@
 			var s = r("./src/reddit/constants/tracking.ts"),
 				n = r("./src/reddit/selectors/telemetry.ts");
 			const i = e => t => ({
-					...Object(n.n)(t),
+					...Object(n.o)(t),
 					action: s.c.CLICK,
 					noun: `follower_list_page_${e?"follow":"unfollow"}`,
 					source: "profile"
 				}),
 				o = () => e => ({
-					...Object(n.n)(e),
+					...Object(n.o)(e),
 					action: s.c.CLICK,
 					noun: "follower_list_cta",
 					source: "profile"
@@ -5461,19 +5461,19 @@
 			}));
 			var s = r("./src/reddit/selectors/telemetry.ts");
 			const n = () => e => ({
-					...Object(s.n)(e),
+					...Object(s.o)(e),
 					source: "marketplace",
 					action: "view",
 					noun: "claim_post_unit"
 				}),
 				i = () => e => ({
-					...Object(s.n)(e),
+					...Object(s.o)(e),
 					source: "marketplace",
 					action: "click",
 					noun: "claim_post_unit"
 				}),
 				o = () => e => ({
-					...Object(s.n)(e),
+					...Object(s.o)(e),
 					source: "marketplace",
 					action: "close",
 					noun: "claim_post_unit"
@@ -5483,7 +5483,7 @@
 				e.Profile = "profile", e.Hovercard = "hovercard"
 			}(a || (a = {}));
 			const d = e => t => {
-				const r = Object(s.n)(t);
+				const r = Object(s.o)(t);
 				return {
 					...r,
 					source: "marketplace",
@@ -5520,37 +5520,37 @@
 					source: n.COMMUNITY_WIDGETS,
 					action: i.c.CLICK,
 					noun: s.SEE_MORE,
-					widget: Object(o.wb)(r, {
+					widget: Object(o.xb)(r, {
 						subredditId: e,
 						widgetKind: t
 					}),
-					...o.n
+					...o.o
 				}),
 				d = (e, t) => r => ({
 					source: n.POST,
 					action: i.c.CLICK,
 					noun: s.REREDDIT_PROMO,
-					post: o.J(r, e),
-					subreddit: o.ib(r),
+					post: o.K(r, e),
+					subreddit: o.jb(r),
 					...t && {
 						banner: {
 							buttonText: t,
 							id: s.REREDDIT_PROMO
 						}
 					},
-					...o.n(r)
+					...o.o(r)
 				}),
 				l = () => e => ({
 					source: n.SIDEBAR,
 					action: i.c.VIEW,
 					noun: s.TOPICS_WIDGET,
-					...o.n(e)
+					...o.o(e)
 				}),
 				c = e => t => ({
 					source: n.TOPICS_WIDGET,
 					action: i.c.CLICK,
 					noun: s.TOPIC,
-					...o.n(t),
+					...o.o(t),
 					topicMetadata: {
 						displayName: e
 					}
@@ -6262,4 +6262,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileFollowersPage.005e36500f47b4047dc1.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileFollowersPage.397e314f3015b3a9ac04.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/LiveVideoPlayer.520b00f260ac27231217.js
-// Retrieved at 9/13/2022, 3:30:03 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/LiveVideoPlayer.594e46ee7e37765fb8d5.js
+// Retrieved at 9/14/2022, 4:30:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["LiveVideoPlayer"], {
 		"./node_modules/lodash/isUndefined.js": function(e, t) {
@@ -1299,9 +1299,9 @@
 			}(n || (n = {}));
 			const a = (e, t) => {
 					if (t) {
-						const s = o.B(e, t.post.id),
-							n = o.J(e, t.post.id),
-							r = o.ib(e);
+						const s = o.C(e, t.post.id),
+							n = o.K(e, t.post.id),
+							r = o.jb(e);
 						if (t.post.authorInfo && n && (n.authorId = t.post.authorInfo.id), s) {
 							s.streamPublicId = t.stream.stream_id, s.id = t.stream.stream_id;
 							const n = Object(i.j)(e, {
@@ -1316,7 +1316,7 @@
 						}
 					}
 					return {
-						subreddit: o.ib(e)
+						subreddit: o.jb(e)
 					}
 				},
 				d = (e, t, s) => {
@@ -1494,8 +1494,8 @@
 					source: "post",
 					action: "view",
 					noun: "post",
-					profile: o.S(t),
-					screen: o.ab(t),
+					profile: o.T(t),
+					screen: o.bb(t),
 					...a(t, e)
 				}),
 				k = e => t => {
@@ -1504,8 +1504,8 @@
 						source: "post",
 						action: "consume",
 						noun: "post",
-						profile: o.S(t),
-						screen: o.ab(t),
+						profile: o.T(t),
+						screen: o.bb(t),
 						...s
 					}
 				},
@@ -1526,7 +1526,7 @@
 					action: "click",
 					noun: "subscribe",
 					...a(t, e),
-					targetSubreddit: o.ib(t)
+					targetSubreddit: o.jb(t)
 				}),
 				P = (e, t) => s => ({
 					source: "stream_player",
@@ -1954,4 +1954,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/LiveVideoPlayer.520b00f260ac27231217.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/LiveVideoPlayer.594e46ee7e37765fb8d5.js.map

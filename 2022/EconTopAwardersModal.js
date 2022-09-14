@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/EconTopAwardersModal.4570035425075bc81ec0.js
-// Retrieved at 9/14/2022, 10:00:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/EconTopAwardersModal.021f2c98db778fa442e7.js
+// Retrieved at 9/14/2022, 4:30:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["EconTopAwardersModal"], {
 		"./src/lib/currency/centsToDollars/index.ts": function(e, t, r) {
@@ -2548,19 +2548,19 @@
 			}));
 			var a = r("./src/reddit/selectors/telemetry.ts");
 			const n = () => e => ({
-					...Object(a.n)(e),
+					...Object(a.o)(e),
 					source: "marketplace",
 					action: "view",
 					noun: "claim_post_unit"
 				}),
 				s = () => e => ({
-					...Object(a.n)(e),
+					...Object(a.o)(e),
 					source: "marketplace",
 					action: "click",
 					noun: "claim_post_unit"
 				}),
 				o = () => e => ({
-					...Object(a.n)(e),
+					...Object(a.o)(e),
 					source: "marketplace",
 					action: "close",
 					noun: "claim_post_unit"
@@ -2570,7 +2570,7 @@
 				e.Profile = "profile", e.Hovercard = "hovercard"
 			}(c || (c = {}));
 			const i = e => t => {
-				const r = Object(a.n)(t);
+				const r = Object(a.o)(t);
 				return {
 					...r,
 					source: "marketplace",
@@ -2787,4 +2787,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EconTopAwardersModal.4570035425075bc81ec0.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EconTopAwardersModal.021f2c98db778fa442e7.js.map

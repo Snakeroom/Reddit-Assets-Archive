@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/NsfwBlockingModal.2e16c48b8f41c8017ad6.js
-// Retrieved at 9/14/2022, 10:00:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/NsfwBlockingModal.985351ecae0d9dfed089.js
+// Retrieved at 9/14/2022, 4:30:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["NsfwBlockingModal"], {
 		"./src/reddit/components/Footer/index.m.less": function(e, t, n) {
@@ -209,7 +209,7 @@
 						className: Object(d.a)(E.a.logIn),
 						onClick: () => {
 							n((() => e => ({
-								...Object(v.n)(e),
+								...Object(v.o)(e),
 								source: "xpromo",
 								action: "click",
 								noun: x
@@ -221,7 +221,7 @@
 						className: E.a.cancel,
 						onClick: () => {
 							Object(i.b)(), n((() => e => ({
-								...Object(v.n)(e),
+								...Object(v.o)(e),
 								source: "xpromo",
 								action: "dismiss",
 								noun: x
@@ -260,7 +260,7 @@
 					const t = Object(C.b)();
 					o.a.useEffect(() => {
 						t((() => e => ({
-							...Object(v.n)(e),
+							...Object(v.o)(e),
 							source: "xpromo",
 							action: "view",
 							noun: x
@@ -286,4 +286,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/NsfwBlockingModal.2e16c48b8f41c8017ad6.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/NsfwBlockingModal.985351ecae0d9dfed089.js.map

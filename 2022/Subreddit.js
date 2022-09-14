@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Subreddit.1781a08c44eb660dcd8f.js
-// Retrieved at 9/14/2022, 12:50:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Subreddit.844a66e5db568d39a467.js
+// Retrieved at 9/14/2022, 4:30:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Subreddit", "AchievementsActions", "reddit-components-Econ-PredictionLeaderboard-Sidebar"], {
 		"./node_modules/@reddit/i18n-tools/runtime/helpers/locale/index.js": function(e, t, n) {
@@ -1114,7 +1114,7 @@
 				o = n("./node_modules/react-redux/es/index.js"),
 				a = n("./src/reddit/selectors/telemetry.ts");
 			const i = e => (e, t, n) => ({
-				...a.n(e),
+				...a.o(e),
 				source: "post",
 				action: "click",
 				noun: "ad",
@@ -1124,16 +1124,16 @@
 				actionInfo: a.d(e),
 				adblock: a.e(e),
 				app: a.f(e),
-				feed: a.q(e),
-				geo: a.s(e),
-				platform: a.H(e),
-				referrer: a.X(e),
-				request: a.Y(e),
-				screen: a.ab(e),
-				session: a.eb(e),
-				user: a.qb(e),
-				media: n ? a.B(e, n) : null,
-				post: n ? a.J(e, n) : null
+				feed: a.r(e),
+				geo: a.t(e),
+				platform: a.I(e),
+				referrer: a.Y(e),
+				request: a.Z(e),
+				screen: a.bb(e),
+				session: a.fb(e),
+				user: a.rb(e),
+				media: n ? a.C(e, n) : null,
+				post: n ? a.K(e, n) : null
 			});
 			var c = n("./src/higherOrderComponents/withAdClickLocation/Locations.ts"),
 				d = n("./src/telemetry/index.ts");
@@ -2493,11 +2493,11 @@
 				T = n("./src/reddit/controls/Button/index.tsx"),
 				L = n("./src/reddit/selectors/telemetry.ts");
 			const B = e => t => ({
-				...L.n(t),
+				...L.o(t),
 				source: "community",
 				action: "set_frequency",
 				noun: e,
-				subreddit: L.ib(t)
+				subreddit: L.jb(t)
 			});
 			var A = n("./src/reddit/hooks/useTracking.ts"),
 				M = n("./src/reddit/icons/svgs/CommunityDefault/filled.tsx");
@@ -2837,17 +2837,17 @@
 					getEventFactory: e => {
 						const t = e ? "unsubscribe" : "subscribe";
 						return p ? (e => t => ({
-							...L.n(t),
+							...L.o(t),
 							source: "sticky_banner",
 							action: Y.c.CLICK,
 							noun: e,
-							subreddit: L.ib(t)
+							subreddit: L.jb(t)
 						}))(t) : (e => t => ({
-							...L.n(t),
+							...L.o(t),
 							source: "id_banner",
 							action: Y.c.CLICK,
 							noun: e,
-							subreddit: L.ib(t)
+							subreddit: L.jb(t)
 						}))(t)
 					},
 					identifier: {
@@ -6358,7 +6358,7 @@
 				session: e => e.user.session,
 				telemetryDefaults: e => {
 					const t = {
-							...Object(w.n)(e),
+							...Object(w.o)(e),
 							...{
 								action: S.d.Load,
 								source: S.f.Experiment,
@@ -9674,10 +9674,10 @@
 							ext: i,
 							s: c
 						} = e;
-						if (Object(h.g)(s)) {
+						if (Object(h.h)(s)) {
 							const e = r.renderingObjectInfo,
 								d = !!e && Object(b.b)(e),
-								l = i || Object(h.f)(s);
+								l = i || Object(h.g)(s);
 							return o.a.createElement("div", {
 								className: Object(a.a)({
 									[y.a.MediaWrapper]: !d,
@@ -9822,7 +9822,7 @@
 						}, v)
 					}, this.sendEvent = e => {
 						this.props.sendEvent(t => {
-							const n = p.n(t);
+							const n = p.o(t);
 							return {
 								source: "meta",
 								action: e,
@@ -9832,7 +9832,7 @@
 									...n.actionInfo,
 									reason: this.props.node.id
 								},
-								subreddit: p.ib(t)
+								subreddit: p.jb(t)
 							}
 						})
 					}
@@ -9987,7 +9987,7 @@
 						key: e
 					}, i.a.createElement("br", null)))(r);
 					const o = e.c[0];
-					return o.e !== m.m && o.e !== m.a || !Object(S.g)(o.id) ? i.a.createElement(c.j, {
+					return o.e !== m.m && o.e !== m.a || !Object(S.h)(o.id) ? i.a.createElement(c.j, {
 						key: r
 					}, F(e.c, t, n, s)) : Object(O.b)(o, r, n, t)
 				},
@@ -11878,7 +11878,7 @@
 				je = n("./src/reddit/selectors/telemetry.ts"),
 				Ce = n("./src/telemetry/models/Subreddit.ts");
 			const Ne = e => t => ({
-					...je.n(t),
+					...je.o(t),
 					action: _e.c.CLICK,
 					noun: "link",
 					source: "subreddit_subreddit_link",
@@ -11888,7 +11888,7 @@
 					}
 				}),
 				ke = e => t => n => ({
-					...je.n(n),
+					...je.o(n),
 					action: _e.c.CLICK,
 					noun: Object(Ce.getSubscribeEventNoun)(e.type, t),
 					source: "subreddit_subreddit_link",
@@ -12456,7 +12456,7 @@
 						className: Object(l.a)(j.a.logIn),
 						onClick: () => {
 							n((() => e => ({
-								...Object(v.n)(e),
+								...Object(v.o)(e),
 								source: "xpromo",
 								action: "click",
 								noun: E
@@ -12468,7 +12468,7 @@
 						className: j.a.cancel,
 						onClick: () => {
 							Object(d.b)(), n((() => e => ({
-								...Object(v.n)(e),
+								...Object(v.o)(e),
 								source: "xpromo",
 								action: "dismiss",
 								noun: E
@@ -12507,7 +12507,7 @@
 					const t = Object(h.b)();
 					a.a.useEffect(() => {
 						t((() => e => ({
-							...Object(v.n)(e),
+							...Object(v.o)(e),
 							source: "xpromo",
 							action: "view",
 							noun: E
@@ -15186,9 +15186,9 @@
 			}(r || (r = {}));
 			const g = "discovery_unit",
 				x = (e, t, n) => ({
-					...m.n(e),
+					...m.o(e),
 					source: g,
-					screen: m.ab(e),
+					screen: m.bb(e),
 					discoveryUnit: {
 						id: t.id,
 						type: t.unitType,
@@ -15209,11 +15209,11 @@
 				},
 				y = (e, t) => n => v(n, e, t),
 				_ = (e, t, n, r) => "unitName" in t ? x(e, t, r) : ((e, t, n) => ({
-					...m.n(e),
+					...m.o(e),
 					source: "search",
-					screen: m.ab(e),
+					screen: m.bb(e),
 					search: n ? {
-						...m.bb(e, n, i.a.SERP),
+						...m.cb(e, n, i.a.SERP),
 						structureType: m.c.Trending
 					} : null,
 					discoveryUnit: {
@@ -15227,7 +15227,7 @@
 					..._(e, t, s, o),
 					action: "view",
 					noun: r.ITEM_POST,
-					post: m.J(e, n)
+					post: m.K(e, n)
 				}),
 				j = e => {
 					let {
@@ -15277,7 +15277,7 @@
 						c = S[o],
 						l = Object(p.a)(s, c).filter(e => !e.post || !(e.post.isSponsored && e.post.isBlank)).findIndex(e => e.id === a.id) + n;
 					return {
-						...m.n(s),
+						...m.o(s),
 						source: "search",
 						action: t,
 						noun: r.TRENDING,
@@ -15294,17 +15294,17 @@
 						}),
 						search: {
 							originElement: i === C.SEARCH_DROPDOWN ? "search_dropdown" : void 0,
-							originPageType: s.platform.currentPage ? m.u(s.platform.currentPage) : void 0,
+							originPageType: s.platform.currentPage ? m.v(s.platform.currentPage) : void 0,
 							query: a.rawQuery,
 							structureType: m.c.Trending,
 							impressionId: f.a.get(o),
-							queryId: m.cb(s, o)
+							queryId: m.db(s, o)
 						}
 					}
 				},
 				P = (e, t, n, r, s, o, i) => {
 					Object(h.a)({
-						...m.n(e),
+						...m.o(e),
 						...Object(c.m)({
 							state: e,
 							postId: n,
@@ -15338,7 +15338,7 @@
 						source: g,
 						action: a.c.CLICK,
 						noun: r.ITEM_POST,
-						post: m.J(o, t)
+						post: m.K(o, t)
 					}
 				},
 				R = function() {
@@ -15367,7 +15367,7 @@
 					source: g,
 					action: a.c.CLICK,
 					noun: r.ITEM_POST,
-					post: m.J(s, n)
+					post: m.K(s, n)
 				}),
 				W = (e, t, n, r) => {
 					Object(h.a)(H(t, n, r)(e))
@@ -15383,7 +15383,7 @@
 						source: g,
 						action: a.c.CLICK,
 						noun: "item_post_subreddit",
-						post: m.J(s, t)
+						post: m.K(s, t)
 					}
 				},
 				V = () => ({
@@ -15405,7 +15405,7 @@
 					return e => ({
 						...v(e, r),
 						actionInfo: G(e, 0, n),
-						subreddit: m.jb(e, t)
+						subreddit: m.kb(e, t)
 					})
 				},
 				z = (e, t, n) => {
@@ -15420,7 +15420,7 @@
 					return e => ({
 						...x(e, s),
 						actionInfo: G(e, 0, n),
-						subreddit: m.jb(e, t) || null,
+						subreddit: m.kb(e, t) || null,
 						source: g,
 						action: a.c.VIEW,
 						noun: r.ITEM_SUBREDDIT
@@ -15431,7 +15431,7 @@
 					return e => ({
 						...x(e, s),
 						actionInfo: G(e, 0, n),
-						post: m.J(e, t) || null,
+						post: m.K(e, t) || null,
 						source: g,
 						action: a.c.CLICK,
 						noun: r.ITEM_POST
@@ -15442,8 +15442,8 @@
 					return e => ({
 						...x(e, o),
 						actionInfo: G(e, 0, s),
-						subreddit: m.jb(e, n) || null,
-						post: m.J(e, t) || null,
+						subreddit: m.kb(e, n) || null,
+						post: m.K(e, t) || null,
 						source: g,
 						action: a.c.CLICK,
 						noun: r.ITEM_POST_SUBREDDIT
@@ -15454,7 +15454,7 @@
 					return e => ({
 						...x(e, s),
 						actionInfo: G(e, 0, n),
-						subreddit: m.jb(e, t) || null,
+						subreddit: m.kb(e, t) || null,
 						source: g,
 						action: a.c.CLICK,
 						noun: r.ITEM_SUBREDDIT
@@ -15465,8 +15465,8 @@
 					return e => ({
 						...x(e, o),
 						actionInfo: G(e, 0, n),
-						subreddit: m.jb(e, t) || null,
-						post: s ? m.J(e, s) : null,
+						subreddit: m.kb(e, t) || null,
+						post: s ? m.K(e, s) : null,
 						source: g,
 						action: a.c.CLICK,
 						noun: r.ITEM_SUBREDDIT_SUBSCRIBE
@@ -15477,8 +15477,8 @@
 					return e => ({
 						...x(e, o),
 						actionInfo: G(e, 0, n),
-						subreddit: m.jb(e, t) || null,
-						post: s ? m.J(e, s) : null,
+						subreddit: m.kb(e, t) || null,
+						post: s ? m.K(e, s) : null,
 						source: g,
 						action: a.c.CLICK,
 						noun: r.ITEM_SUBREDDIT_UNSUBSCRIBE
@@ -15489,7 +15489,7 @@
 					return e => ({
 						...x(e, s),
 						actionInfo: G(e, 0, n),
-						subreddit: m.jb(e, t) || null,
+						subreddit: m.kb(e, t) || null,
 						source: g,
 						action: a.c.CLICK,
 						noun: r.ITEM_SUBREDDIT_HIDE
@@ -15500,7 +15500,7 @@
 					return e => ({
 						...x(e, s),
 						actionInfo: G(e, 0, n),
-						subreddit: m.jb(e, t) || null,
+						subreddit: m.kb(e, t) || null,
 						source: g,
 						action: a.c.CLICK,
 						noun: r.HEADER_SUBREDDIT
@@ -15547,13 +15547,13 @@
 			var r = n("./src/reddit/constants/tracking.ts"),
 				s = n("./src/reddit/selectors/telemetry.ts");
 			const o = () => e => ({
-					...Object(s.n)(e),
+					...Object(s.o)(e),
 					action: r.c.CLICK,
 					noun: "preview",
 					source: "hot_potato"
 				}),
 				a = () => e => ({
-					...Object(s.n)(e),
+					...Object(s.o)(e),
 					action: r.c.CLICK,
 					noun: "hot_potato",
 					source: "nav"
@@ -15573,9 +15573,9 @@
 			n("./src/reddit/constants/categories.tsx");
 			var r = n("./src/reddit/selectors/telemetry.ts");
 			const s = e => ({
-					screen: r.ab(e),
-					profile: r.S(e),
-					subreddit: r.ib(e)
+					screen: r.bb(e),
+					profile: r.T(e),
+					subreddit: r.jb(e)
 				}),
 				o = e => t => ({
 					action: "click",
@@ -15680,7 +15680,7 @@
 			const c = function() {
 					let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : o;
 					return t => ({
-						...Object(s.n)(t),
+						...Object(s.o)(t),
 						action: r.c.CLICK,
 						noun: i.EXIT,
 						onboarding: {
@@ -15692,79 +15692,79 @@
 					})
 				},
 				d = () => e => ({
-					...Object(s.n)(e),
+					...Object(s.o)(e),
 					action: r.c.DISMISS,
 					noun: i.CREATE_ACCOUNT_SCREEN_DROPDOWN,
 					source: a
 				}),
 				l = () => e => ({
-					...Object(s.n)(e),
+					...Object(s.o)(e),
 					action: r.c.VIEW,
 					noun: i.CREATE_ACCOUNT_SCREEN_DROPDOWN,
 					source: a
 				}),
 				u = e => t => ({
-					...Object(s.n)(t),
+					...Object(s.o)(t),
 					action: r.c.DISMISS,
 					noun: e,
 					source: a
 				}),
 				m = () => e => ({
-					...Object(s.n)(e),
+					...Object(s.o)(e),
 					source: a,
 					action: r.c.VIEW,
 					noun: i.ONBOARDING_GENDER_COLLECTION
 				}),
 				p = () => e => ({
-					...Object(s.n)(e),
+					...Object(s.o)(e),
 					source: a,
 					action: r.c.VIEW,
 					noun: i.ONBOARDING_INTEREST
 				}),
 				b = () => e => ({
-					...Object(s.n)(e),
+					...Object(s.o)(e),
 					source: a,
 					action: r.c.VIEW,
 					noun: i.ONBOARDING_COMMUNITY_RECOMMENDATIONS
 				}),
 				h = () => e => ({
-					...Object(s.n)(e),
+					...Object(s.o)(e),
 					source: a,
 					action: r.c.SUBMIT,
 					noun: i.ONBOARDING_GENDER_COLLECTION
 				}),
 				f = () => e => ({
-					...Object(s.n)(e),
+					...Object(s.o)(e),
 					source: a,
 					action: r.c.SUBMIT,
 					noun: i.ONBOARDING_INTEREST
 				}),
 				g = () => e => ({
-					...Object(s.n)(e),
+					...Object(s.o)(e),
 					source: a,
 					action: r.c.SUBMIT,
 					noun: i.ONBOARDING_COMMUNITY_RECOMMENDATIONS
 				}),
 				x = () => e => ({
-					...Object(s.n)(e),
+					...Object(s.o)(e),
 					source: a,
 					action: r.c.SKIP,
 					noun: i.ONBOARDING_GENDER_COLLECTION
 				}),
 				v = () => e => ({
-					...Object(s.n)(e),
+					...Object(s.o)(e),
 					source: a,
 					action: r.c.SKIP,
 					noun: i.ONBOARDING_INTEREST
 				}),
 				E = () => e => ({
-					...Object(s.n)(e),
+					...Object(s.o)(e),
 					source: a,
 					action: r.c.SELECT,
 					noun: i.GENDER
 				}),
 				y = (e, t, n, o, c) => d => ({
-					...Object(s.n)(d),
+					...Object(s.o)(d),
 					source: a,
 					action: e ? r.c.SELECT : r.c.DESELECT,
 					actionInfo: {
@@ -15778,7 +15778,7 @@
 					}
 				}),
 				_ = (e, t, n, o, c, d) => l => ({
-					...Object(s.n)(l),
+					...Object(s.o)(l),
 					source: a,
 					action: e ? r.c.SELECT : r.c.DESELECT,
 					actionInfo: {
@@ -15794,7 +15794,7 @@
 					}
 				}),
 				O = (e, t) => n => ({
-					...Object(s.n)(n),
+					...Object(s.o)(n),
 					source: a,
 					action: r.c.CLICK,
 					noun: i.VIEW_MORE,
@@ -15804,19 +15804,19 @@
 					}
 				}),
 				j = () => e => ({
-					...Object(s.n)(e),
+					...Object(s.o)(e),
 					source: "topic_chaining_prompt",
 					action: r.c.VIEW,
 					noun: i.TOPIC_PREVIEW
 				}),
 				C = () => e => ({
-					...Object(s.n)(e),
+					...Object(s.o)(e),
 					source: "topic_chaining_prompt",
 					action: r.c.CLICK,
 					noun: i.TOPIC_PREVIEW
 				}),
 				N = (e, t) => n => ({
-					...Object(s.n)(n),
+					...Object(s.o)(n),
 					source: "topic_chaining_prompt",
 					action: r.c.SELECT,
 					noun: i.CATEGORY,
@@ -15826,13 +15826,13 @@
 					}
 				}),
 				k = () => e => ({
-					...Object(s.n)(e),
+					...Object(s.o)(e),
 					source: "topic_chaining_prompt",
 					action: r.c.DISMISS,
 					noun: i.TOPIC_PREVIEW
 				}),
 				w = (e, t, n, o) => c => ({
-					...Object(s.n)(c),
+					...Object(s.o)(c),
 					source: a,
 					action: r.c.VIEW,
 					noun: e ? i.CATEGORY : i.SUB_CATEGORY,
@@ -15846,7 +15846,7 @@
 					}
 				}),
 				S = (e, t, n, o, c) => d => ({
-					...Object(s.n)(d),
+					...Object(s.o)(d),
 					source: a,
 					action: r.c.VIEW,
 					actionInfo: {
@@ -15873,13 +15873,13 @@
 				e.GO_BACK = "go_back", e.YES_KEEP_USERNAME = "yes_keep_username"
 			}(L || (L = {}));
 			const B = () => e => ({
-					...Object(s.n)(e),
+					...Object(s.o)(e),
 					action: r.c.VIEW,
 					noun: i.GOOGLE_ACCOUNT_CONFIRMATION_SCREEN,
 					source: a
 				}),
 				A = e => t => ({
-					...Object(s.n)(t),
+					...Object(s.o)(t),
 					action: r.c.CLICK,
 					actionInfo: {
 						...Object(s.d)(t),
@@ -15889,13 +15889,13 @@
 					source: a
 				}),
 				M = () => e => ({
-					...Object(s.n)(e),
+					...Object(s.o)(e),
 					action: r.c.VIEW,
 					noun: i.USERNAME_CONFIRMATION_SCREEN,
 					source: a
 				}),
 				R = e => t => ({
-					...Object(s.n)(t),
+					...Object(s.o)(t),
 					action: r.c.CLICK,
 					actionInfo: {
 						...Object(s.d)(t),
@@ -15905,13 +15905,13 @@
 					source: a
 				}),
 				D = () => e => ({
-					...Object(s.n)(e),
+					...Object(s.o)(e),
 					action: r.c.VIEW,
 					noun: i.USERNAME_SECOND_CONFIRMATION_SCREEN,
 					source: a
 				}),
 				F = e => t => ({
-					...Object(s.n)(t),
+					...Object(s.o)(t),
 					action: r.c.CLICK,
 					actionInfo: {
 						...Object(s.d)(t),
@@ -15921,7 +15921,7 @@
 					source: a
 				}),
 				U = () => e => ({
-					...Object(s.n)(e),
+					...Object(s.o)(e),
 					action: r.c.VIEW,
 					noun: i.USERNAME_TOOLTIP,
 					source: a
@@ -15975,19 +15975,19 @@
 			const o = "poll",
 				a = "predictions",
 				i = e => ({
-					...Object(s.n)(e),
+					...Object(s.o)(e),
 					source: o,
 					action: "select",
 					noun: "poll_option"
 				}),
 				c = e => ({
-					...Object(s.n)(e),
+					...Object(s.o)(e),
 					source: o,
 					action: "select",
 					noun: "prediction_option"
 				}),
 				d = e => ({
-					...Object(s.n)(e),
+					...Object(s.o)(e),
 					source: o,
 					action: "view",
 					noun: "predict_option_modal"
@@ -15999,11 +15999,11 @@
 						totalStakeAmount: r
 					} = e;
 					return e => ({
-						...Object(s.n)(e),
+						...Object(s.o)(e),
 						source: o,
 						action: "confirm",
 						noun: "predict",
-						poll: Object(s.I)(e, t, !1, void 0, n),
+						poll: Object(s.J)(e, t, !1, void 0, n),
 						goldPurchase: {
 							numberCoins: r
 						}
@@ -16015,11 +16015,11 @@
 						selectedNumberTokens: n
 					} = e;
 					return e => ({
-						...Object(s.n)(e),
+						...Object(s.o)(e),
 						source: o,
 						action: "confirm",
 						noun: "predict",
-						poll: Object(s.I)(e, t, !1, void 0, void 0, n)
+						poll: Object(s.J)(e, t, !1, void 0, void 0, n)
 					})
 				},
 				m = e => {
@@ -16032,16 +16032,16 @@
 						const i = n === r.a.Coins ? a : void 0,
 							c = n === r.a.Tokens ? a : void 0;
 						return {
-							...Object(s.n)(e),
+							...Object(s.o)(e),
 							source: o,
 							action: "close",
 							noun: "prediction_modal",
-							poll: Object(s.I)(e, t, !1, i, c)
+							poll: Object(s.J)(e, t, !1, i, c)
 						}
 					}
 				},
 				p = e => ({
-					...Object(s.n)(e),
+					...Object(s.o)(e),
 					source: o,
 					action: "click",
 					noun: "add_coins"
@@ -16051,7 +16051,7 @@
 						targetUserId: t
 					} = e;
 					return e => ({
-						...Object(s.n)(e),
+						...Object(s.o)(e),
 						source: a,
 						action: "click",
 						noun: "leaderboard_profile",
@@ -16065,7 +16065,7 @@
 						pageType: t
 					} = e;
 					return e => ({
-						...Object(s.n)(e),
+						...Object(s.o)(e),
 						source: a,
 						action: "click",
 						noun: "tournament",
@@ -16075,7 +16075,7 @@
 					})
 				},
 				f = () => e => ({
-					...Object(s.n)(e),
+					...Object(s.o)(e),
 					source: "global",
 					action: "view",
 					noun: "screen",
@@ -16084,19 +16084,19 @@
 					}
 				}),
 				g = () => e => ({
-					...Object(s.n)(e),
+					...Object(s.o)(e),
 					source: "mod_tool_predict",
 					action: "click",
 					noun: "end_tournament"
 				}),
 				x = () => e => ({
-					...Object(s.n)(e),
+					...Object(s.o)(e),
 					source: "mod_tool_predict",
 					action: "click",
 					noun: "rename_tournament"
 				}),
 				v = e => t => ({
-					...Object(s.n)(t),
+					...Object(s.o)(t),
 					source: "mod_tool_predict",
 					action: "click",
 					noun: "enable_predictions",
@@ -16107,45 +16107,45 @@
 						value: e ? "1" : "0",
 						oldValue: e ? "0" : "1"
 					},
-					subreddit: Object(s.ib)(t)
+					subreddit: Object(s.jb)(t)
 				}),
 				E = () => e => ({
-					...Object(s.n)(e),
+					...Object(s.o)(e),
 					source: a,
 					action: "click",
 					noun: "next"
 				}),
 				y = () => e => ({
-					...Object(s.n)(e),
+					...Object(s.o)(e),
 					source: a,
 					action: "click",
 					noun: "add_more"
 				}),
 				_ = () => e => ({
-					...Object(s.n)(e),
+					...Object(s.o)(e),
 					source: a,
 					action: "click",
 					noun: "start_tournament"
 				}),
 				O = () => e => ({
-					...Object(s.n)(e),
+					...Object(s.o)(e),
 					source: "menu_links_bar",
 					action: "click",
 					noun: "predictions_tab"
 				}),
 				j = () => e => ({
-					...Object(s.n)(e),
+					...Object(s.o)(e),
 					source: "predictions_tab",
 					action: "view",
 					noun: "predictions_how_it_works",
-					subreddit: Object(s.ib)(e)
+					subreddit: Object(s.jb)(e)
 				}),
 				C = () => e => ({
-					...Object(s.n)(e),
+					...Object(s.o)(e),
 					source: "predictions_how_it_works",
 					action: "click",
 					noun: "learn_more",
-					subreddit: Object(s.ib)(e)
+					subreddit: Object(s.jb)(e)
 				})
 		},
 		"./src/reddit/helpers/trackers/predictionsLeaderboard.ts": function(e, t, n) {
@@ -16169,8 +16169,8 @@
 			}));
 			var r = n("./src/reddit/selectors/telemetry.ts");
 			const s = e => ({
-					...Object(r.n)(e),
-					subreddit: Object(r.ib)(e)
+					...Object(r.o)(e),
+					subreddit: Object(r.jb)(e)
 				}),
 				o = {
 					source: "global",
@@ -16340,9 +16340,9 @@
 			}(r || (r = {}));
 			const i = (e, t) => {
 					if (t) {
-						const n = a.B(e, t.post.id),
-							r = a.J(e, t.post.id),
-							s = a.ib(e);
+						const n = a.C(e, t.post.id),
+							r = a.K(e, t.post.id),
+							s = a.jb(e);
 						if (t.post.authorInfo && r && (r.authorId = t.post.authorInfo.id), n) {
 							n.streamPublicId = t.stream.stream_id, n.id = t.stream.stream_id;
 							const r = Object(o.j)(e, {
@@ -16357,7 +16357,7 @@
 						}
 					}
 					return {
-						subreddit: a.ib(e)
+						subreddit: a.jb(e)
 					}
 				},
 				c = (e, t, n) => {
@@ -16535,8 +16535,8 @@
 					source: "post",
 					action: "view",
 					noun: "post",
-					profile: a.S(t),
-					screen: a.ab(t),
+					profile: a.T(t),
+					screen: a.bb(t),
 					...i(t, e)
 				}),
 				S = e => t => {
@@ -16545,8 +16545,8 @@
 						source: "post",
 						action: "consume",
 						noun: "post",
-						profile: a.S(t),
-						screen: a.ab(t),
+						profile: a.T(t),
+						screen: a.bb(t),
 						...n
 					}
 				},
@@ -16567,7 +16567,7 @@
 					action: "click",
 					noun: "subscribe",
 					...i(t, e),
-					targetSubreddit: a.ib(t)
+					targetSubreddit: a.jb(t)
 				}),
 				L = (e, t) => n => ({
 					source: "stream_player",
@@ -16667,7 +16667,7 @@
 					source: e,
 					noun: "create_community_button",
 					action: "click",
-					...s.n(t),
+					...s.o(t),
 					actionInfo: s.d(t, {
 						settingValue: t.user.account && t.user.account.isMod ? "existing_mod" : "new_mod"
 					}),
@@ -16677,7 +16677,7 @@
 					source: "community_form",
 					noun: "save_community_button",
 					action: "click",
-					...s.n(o),
+					...s.o(o),
 					actionInfo: s.d(o, {
 						settingValue: e
 					}),
@@ -16696,7 +16696,7 @@
 					source: "community_form",
 					noun: "cancel",
 					action: "click",
-					...s.n(e),
+					...s.o(e),
 					actionInfo: s.d(e),
 					correlationId: Object(r.c)(r.a.SubredditCreation)
 				}),
@@ -16704,7 +16704,7 @@
 					source: "community_form",
 					noun: "error_message",
 					action: "view",
-					...s.n(n),
+					...s.o(n),
 					actionInfo: s.d(n, {
 						reason: e,
 						settingValue: t
@@ -16715,28 +16715,28 @@
 					source: "user_dropdown",
 					noun: "create_community",
 					action: "click",
-					...s.n(e),
+					...s.o(e),
 					actionInfo: s.d(e)
 				}),
 				l = () => e => ({
 					source: "community_first_post",
 					noun: "modal",
 					action: "view",
-					...s.n(e),
+					...s.o(e),
 					actionInfo: s.d(e)
 				}),
 				u = () => e => ({
 					source: "community_first_post",
 					noun: "modal",
 					action: "click",
-					...s.n(e),
+					...s.o(e),
 					actionInfo: s.d(e)
 				}),
 				m = () => e => ({
 					source: "community_first_post",
 					noun: "modal",
 					action: "dismiss",
-					...s.n(e),
+					...s.o(e),
 					actionInfo: s.d(e)
 				})
 		},
@@ -16771,15 +16771,15 @@
 				e.LINK = "link", e.DISCOVERY_UNIT = "discovery_unit"
 			}(s || (s = {}));
 			const m = e => ({
-					...u.n(e),
+					...u.o(e),
 					source: s.LINK,
 					action: o.c.CLICK,
 					noun: r.INTERNAL_LINK
 				}),
 				p = e => ({
-					...u.n(e),
+					...u.o(e),
 					source: s,
-					screen: u.ab(e),
+					screen: u.bb(e),
 					discoveryUnit: {
 						id: "xd_100",
 						name: r.SUBREDDIT_HOVERCARD,
@@ -16824,8 +16824,8 @@
 					if (!n || !Object(i.b)(n) && !Object(a.b)(n)) return {};
 					const r = Object(i.b)(n) ? n.belongsTo.id : n.subredditId;
 					return {
-						post: u.J(e, n.id),
-						subreddit: u.jb(e, r),
+						post: u.K(e, n.id),
+						subreddit: u.kb(e, r),
 						...b(e, t)
 					}
 				},
@@ -16838,44 +16838,44 @@
 					source: "global",
 					action: o.c.VIEW,
 					noun: r.SUBREDDIT_HOVERCARD,
-					subreddit: u.kb(t, e),
-					screen: u.ab(t)
+					subreddit: u.lb(t, e),
+					screen: u.bb(t)
 				}),
 				x = (e, t) => n => ({
 					...p(n),
 					source: s.DISCOVERY_UNIT,
 					action: o.c.VIEW,
 					noun: r.ITEM_POST,
-					post: u.J(n, t),
-					subreddit: u.kb(n, e),
-					screen: u.ab(n)
+					post: u.K(n, t),
+					subreddit: u.lb(n, e),
+					screen: u.bb(n)
 				}),
 				v = (e, t) => n => ({
 					...p(n),
 					source: s.DISCOVERY_UNIT,
 					action: o.c.CLICK,
 					noun: r.ITEM_POST,
-					post: u.J(n, t),
-					subreddit: u.kb(n, e),
-					screen: u.ab(n)
+					post: u.K(n, t),
+					subreddit: u.lb(n, e),
+					screen: u.bb(n)
 				}),
 				E = e => t => ({
 					...p(t),
-					subreddit: u.jb(t, e) || null,
+					subreddit: u.kb(t, e) || null,
 					source: s.DISCOVERY_UNIT,
 					action: o.c.CLICK,
 					noun: r.HEADER_SUBREDDIT
 				}),
 				y = e => t => ({
 					...p(t),
-					subreddit: u.jb(t, e) || null,
+					subreddit: u.kb(t, e) || null,
 					source: s.DISCOVERY_UNIT,
 					action: o.c.CLICK,
 					noun: r.HEADER_SUBREDDIT_SUBSCRIBE
 				}),
 				_ = e => t => ({
 					...p(t),
-					subreddit: u.jb(t, e) || null,
+					subreddit: u.kb(t, e) || null,
 					source: s.DISCOVERY_UNIT,
 					action: o.c.CLICK,
 					noun: r.HEADER_SUBREDDIT_UNSUBSCRIBE
@@ -16923,9 +16923,9 @@
 			var r = n("./src/reddit/models/SubredditWikiPage/index.ts"),
 				s = n("./src/reddit/selectors/telemetry.ts");
 			const o = e => ({
-					...s.n(e),
-					subreddit: s.ib(e),
-					userSubreddit: s.sb(e)
+					...s.o(e),
+					subreddit: s.jb(e),
+					userSubreddit: s.tb(e)
 				}),
 				a = () => e => ({
 					source: "wiki",
@@ -19732,4 +19732,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Subreddit.1781a08c44eb660dcd8f.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Subreddit.844a66e5db568d39a467.js.map
