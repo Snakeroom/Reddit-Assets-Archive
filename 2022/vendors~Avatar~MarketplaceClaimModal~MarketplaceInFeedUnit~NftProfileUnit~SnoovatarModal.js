@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/vendors~Avatar~MarketplaceClaimModal~MarketplaceInFeedUnit~NftProfileUnit~SnoovatarModal.d6d1f086c83fbd4ceb3c.js
-// Retrieved at 9/14/2022, 3:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/vendors~Avatar~MarketplaceClaimModal~MarketplaceInFeedUnit~NftProfileUnit~SnoovatarModal.4dcc7775bfab5c969be6.js
+// Retrieved at 9/15/2022, 11:50:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["vendors~Avatar~MarketplaceClaimModal~MarketplaceInFeedUnit~NftProfileUnit~SnoovatarModal"], {
 		"./node_modules/@apollo/client/cache/core/types/Cache.js": function(e, t, s) {
@@ -44761,7 +44761,9 @@
 									data: r
 								} = yield e.mutate({
 									mutation: Pp,
-									variables: de({}, t)
+									variables: {
+										input: t
+									}
 								});
 								if (null == (a = null == r ? void 0 : r.createStorefrontOrder) || !a.ok) throw s((null == (i = null == r ? void 0 : r.createStorefrontOrder.errors) ? void 0 : i[0].code) || "other"), SS(null == r ? void 0 : r.createStorefrontOrder, xS) ? new Error("Sorry, purchases are not allowed in your location.") : SS(null == r ? void 0 : r.createStorefrontOrder, NS) ? new Error("Sorry, you have reached the purchase limit.") : new Error("Error creating the order. You were not charged, please try again.");
 								return null == (o = r.createStorefrontOrder.order) ? void 0 : o.id
@@ -45960,18 +45962,19 @@
 							n = t,
 							{
 								fromAddress: l,
-								data: c
+								toAddress: c,
+								data: d
 							} = n,
-							d = pe(n, ["fromAddress", "data"]),
-							u = ((e, t, s) => {
+							u = pe(n, ["fromAddress", "toAddress", "data"]),
+							p = ((e, t, s) => {
 								const a = gb.Buffer.alloc(0);
 								return z.utils.hexConcat(["0xf242432a", z.utils.defaultAbiCoder.encode(["address", "address", "uint256", "uint256", "bytes"], [e, t, s, 1, a])]).slice(2).toUpperCase()
 							})(l, s, o);
-						if (u !== c) throw new Error("Transfer data does not match");
-						return yield e._signTypedData(r, WB, ue(de({}, d), {
-							data: `0x${u}`,
+						if (p !== d) throw new Error("Transfer data does not match");
+						return yield e._signTypedData(r, WB, ue(de({}, u), {
+							data: `0x${p}`,
 							from: l,
-							to: s
+							to: c
 						}))
 					}));
 				var YB = (e => (e.To = "To", e.Password = "Password", e))(YB || {}),
@@ -46489,54 +46492,55 @@
 							}
 						}, [Y, G, H]);
 						const Z = Object(A.useCallback)(() => me(void 0, null, (function*() {
-							var e;
+							var e, t, a, i, o;
 							h(!0);
 							try {
-								const t = Object(C.a)(),
+								const r = Object(C.a)(),
 									{
-										data: a,
-										errors: i
+										data: n,
+										errors: l
 									} = yield O({
 										variables: {
 											input: {
-												iKey: t,
+												iKey: r,
 												itemId: s,
 												recipientAddress: N
 											}
 										}
-									});
-								if (i) throw i[0];
+									}), c = null == (e = null == n ? void 0 : n.initiateNftTransfer) ? void 0 : e.errors;
+								if (l) throw l[0];
+								if (c) throw new Error(null == (t = c[0]) ? void 0 : t.message);
 								const {
-									params: o,
-									transferId: r
-								} = null != (e = null == a ? void 0 : a.initiateNftTransfer) ? e : {}, {
-									domain: n,
-									request: l
-								} = null != o ? o : {};
-								if (!r || !n || !l) throw new Error("Missing required parameters from NFT transfer initialization");
+									params: d,
+									transferId: u
+								} = null != (a = null == n ? void 0 : n.initiateNftTransfer) ? a : {};
+								if (!u || !d) throw new Error("Missing required parameters from NFT transfer initialization");
 								const {
-									chainId: c,
-									verifyingContract: d
-								} = n, {
-									fromAddress: u
-								} = l;
-								S(u);
-								const p = yield x(l, d, c, s);
-								if (!p) return void h(!1);
+									domain: {
+										chainId: p,
+										verifyingContract: m
+									},
+									request: f
+								} = d;
+								S(f.fromAddress);
+								const b = yield x(f, m, p, s);
+								if (!b) return void h(!1);
 								const {
-									errors: m
+									data: y,
+									errors: A
 								} = yield j({
 									variables: {
 										input: {
-											transferId: r,
-											signature: p
+											transferId: u,
+											signature: b
 										}
 									}
-								});
-								if (m) throw m[0];
+								}), g = null == (i = null == y ? void 0 : y.processNftTransfer) ? void 0 : i.errors;
+								if (A) throw A[0];
+								if (g) throw new Error(null == (o = g[0]) ? void 0 : o.message);
 								W()
-							} catch (t) {
-								Y(t)
+							} catch (r) {
+								Y(r)
 							}
 						})), [x, Y, W, O, s, j, N]);
 						return Gf(Hf, {
@@ -63093,4 +63097,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/vendors~Avatar~MarketplaceClaimModal~MarketplaceInFeedUnit~NftProfileUnit~SnoovatarModal.d6d1f086c83fbd4ceb3c.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/vendors~Avatar~MarketplaceClaimModal~MarketplaceInFeedUnit~NftProfileUnit~SnoovatarModal.4dcc7775bfab5c969be6.js.map
