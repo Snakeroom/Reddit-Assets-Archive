@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.bd0b1a93beda8298dd7f.js
-// Retrieved at 9/14/2022, 6:30:03 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.f44571a017f3ee45cffa.js
+// Retrieved at 9/15/2022, 10:00:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Chat~Governance~Reddit"], {
 		"./assets/fonts/IBMPlexSans/font.less": function(e, t, i) {},
@@ -3559,11 +3559,11 @@
 				apiPassThroughHeaders: Object(r.e)({}.API_PASS_THROUGH_HEADERS || ""),
 				appName: {}.APP_NAME || "desktop2x",
 				assetPath: "https://www.redditstatic.com/desktop2x",
-				buildNumber: Object(r.c)("173182"),
+				buildNumber: Object(r.c)("173197"),
 				chatHelpUrl: {}.CHAT_HELP_URL || "https://reddit.zendesk.com/hc/en-us/sections/360008805652-Chat",
 				hlsVersion: "hls 0.12.4",
 				dashVersion: "dash 4.4.0",
-				buildTimestamp: Object(r.b)("1663192747"),
+				buildTimestamp: Object(r.b)("1663248458"),
 				cookieDomain: ".reddit.com",
 				giphyApiKey: "k2kwyMA6VeyHM6ZRT96OXDGaersnx73Z",
 				mediaUrl: "https://www.redditmedia.com",
@@ -6232,14 +6232,14 @@
 					}))
 				},
 				Q = (e, t, i) => {
-					console.log("%cStarting Raven %crelease %cc8830b202aa18a7dc51f3b566d86c6acf164f3ff-production" + ` %cpublic url %c${y.a.sentryClientPublicURL}`, "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
+					console.log("%cStarting Raven %crelease %c876da70fa3cc78b7456d69984c926968451f5a48-production" + ` %cpublic url %c${y.a.sentryClientPublicURL}`, "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
 					let n = [];
 					n = [new RegExp(`^${y.a.assetPath}`, "i")];
 					o.e({
 						attachStacktrace: !0,
 						dsn: y.a.sentryClientPublicURL,
 						whitelistUrls: n,
-						release: "c8830b202aa18a7dc51f3b566d86c6acf164f3ff-production",
+						release: "876da70fa3cc78b7456d69984c926968451f5a48-production",
 						environment: "production",
 						ignoreErrors: ["$ is not defined"],
 						integrations: [...Object(L.d)(), new d.Integrations.Breadcrumbs({
@@ -6775,7 +6775,7 @@
 							settings: r,
 							statusCode: s,
 							type: o,
-							releaseClient: "c8830b202aa18a7dc51f3b566d86c6acf164f3ff-production",
+							releaseClient: "876da70fa3cc78b7456d69984c926968451f5a48-production",
 							appName: t.statsAppName,
 							error: n ? JSON.parse(Object(l.a)(n)) : void 0
 						},
@@ -9043,7 +9043,7 @@
 				s.chatStore.dispatch(o(e))
 			}, b = (e, t) => async (n, s) => {
 				const o = s();
-				if (Object(u.b)(o)) return n(Object(a.d)(e)); {
+				if (Object(u.b)(o)) return n(Object(a.e)(e)); {
 					const o = (await (() => Object(r.a)(() => Promise.all([i.e("vendors~Chat~RedesignChat"), i.e("Chat~RedesignChat"), i.e("RedesignChat")]).then(i.bind(null, "./src/chat/helpers/urls/index.ts"))).then(e => e.channelUserIdUrl))())(e);
 					await m(n, s, o, t)
 				}
@@ -10322,27 +10322,32 @@
 		},
 		"./src/reddit/actions/matrixChat/constants.ts": function(e, t, i) {
 			"use strict";
-			i.d(t, "b", (function() {
+			i.d(t, "c", (function() {
 				return n
-			})), i.d(t, "a", (function() {
+			})), i.d(t, "b", (function() {
 				return r
-			})), i.d(t, "c", (function() {
+			})), i.d(t, "d", (function() {
 				return s
+			})), i.d(t, "a", (function() {
+				return o
 			}));
 			const n = "MATRIX_CHAT_SET_URL",
 				r = "MATRIX_CHAT_SET_STATE",
-				s = "MATRIX_CHAT_START_CHAT_WITH_USER"
+				s = "MATRIX_CHAT_START_CHAT_WITH_USER",
+				o = "MATRIX_CHAT_SET_NOTIFICATIONS_COUNT"
 		},
 		"./src/reddit/actions/matrixChat/index.ts": function(e, t, i) {
 			"use strict";
-			i.d(t, "c", (function() {
+			i.d(t, "d", (function() {
 				return f
-			})), i.d(t, "b", (function() {
+			})), i.d(t, "c", (function() {
 				return b
-			})), i.d(t, "d", (function() {
-				return v
-			})), i.d(t, "a", (function() {
+			})), i.d(t, "b", (function() {
+				return g
+			})), i.d(t, "e", (function() {
 				return w
+			})), i.d(t, "a", (function() {
+				return y
 			}));
 			var n, r = i("./node_modules/fbt/lib/FbtPublic.js"),
 				s = i("./src/lib/cache/index.ts"),
@@ -10371,7 +10376,7 @@
 				m = i("./src/reddit/models/Toast/index.ts"),
 				p = i("./src/reddit/selectors/user.ts"),
 				h = i("./src/reddit/actions/matrixChat/constants.ts");
-			const f = Object(d.a)(h.b),
+			const f = Object(d.a)(h.c),
 				b = e => (t, i) => {
 					const r = i(),
 						d = Object(p.i)(r);
@@ -10390,12 +10395,13 @@
 						Object(s.d)(t, i, o.vc)
 					}
 					return t({
-						type: h.a,
+						type: h.b,
 						payload: e
 					})
 				},
-				g = Object(d.a)(h.c),
-				v = e => async (t, i, n) => {
+				g = Object(d.a)(h.a),
+				v = Object(d.a)(h.d),
+				w = e => async (t, i, n) => {
 					let {
 						gqlContext: s
 					} = n;
@@ -10408,10 +10414,10 @@
 						}), m.b.Error);
 						return t(Object(c.f)(e))
 					}
-					t(g({
+					t(v({
 						username: o
 					}))
-				}, w = e => async t => {
+				}, y = e => async t => {
 					const i = l(e),
 						n = Object(s.b)(i);
 					n && t(b({
@@ -34784,26 +34790,33 @@
 					let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : o,
 						t = arguments.length > 1 ? arguments[1] : void 0;
 					switch (t.type) {
-						case s.b:
+						case s.c:
 							const {
 								url: i
 							} = t.payload;
 							return {
 								...e, url: i
 							};
-						case s.a:
+						case s.b:
 							const {
 								state: r
 							} = t.payload;
 							return {
 								...e, state: r
 							};
-						case s.c:
+						case s.a:
 							const {
-								username: o
+								count: o
 							} = t.payload;
 							return {
-								...e, state: n.CHAT_WITH_USER, username: o
+								...e, notificationsCount: o
+							};
+						case s.d:
+							const {
+								username: d
+							} = t.payload;
+							return {
+								...e, state: n.CHAT_WITH_USER, username: d
 							};
 						default:
 							return e
@@ -49692,4 +49705,4 @@
 		"ignored /drone/src/node_modules/readable-stream/lib/internal/streams util": function(e, t) {}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.bd0b1a93beda8298dd7f.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.f44571a017f3ee45cffa.js.map

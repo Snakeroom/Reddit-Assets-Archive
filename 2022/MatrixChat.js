@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/MatrixChat.3aa2bb4b9d842ab4f7ad.js
-// Retrieved at 9/12/2022, 2:10:03 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/MatrixChat.e77b3776d9a5816c7e23.js
+// Retrieved at 9/15/2022, 10:00:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["MatrixChat"], {
 		"./src/reddit/components/IFrame/index.m.less": function(e, t, a) {
@@ -14,14 +14,14 @@
 				s = a.n(n),
 				r = a("./src/lib/classNames/index.ts");
 			var c = a("./src/reddit/components/IFrame/index.m.less"),
-				o = a.n(c);
+				i = a.n(c);
 			t.a = e => {
 				let {
 					src: t,
 					className: a,
 					onLoad: c
 				} = e;
-				const i = Object(n.useRef)(null),
+				const o = Object(n.useRef)(null),
 					d = function(e) {
 						const [t, a] = Object(n.useState)(0);
 						return Object(n.useEffect)(() => {
@@ -30,14 +30,14 @@
 					}(t);
 				return s.a.createElement("iframe", {
 					key: d,
-					className: Object(r.a)(o.a.IFrame, a),
-					ref: i,
+					className: Object(r.a)(i.a.IFrame, a),
+					ref: o,
 					src: t,
 					onLoad: () => {
 						const e = (() => {
 							var e, t;
 							try {
-								return null === (t = null === (e = i.current) || void 0 === e ? void 0 : e.contentWindow) || void 0 === t ? void 0 : t.document
+								return null === (t = null === (e = o.current) || void 0 === e ? void 0 : e.contentWindow) || void 0 === t ? void 0 : t.document
 							} catch (a) {}
 						})();
 						e && c && c(e)
@@ -55,25 +55,31 @@
 				closeBtn: "_1O8fhvoUDQCc6xR_kTVwxz"
 			}
 		},
+		"./src/reddit/components/MatrixChat/MinimizedChat/index.m.less": function(e, t, a) {
+			e.exports = {
+				container: "XnTJFdgGnHy_r9dV1Ezq8",
+				titleContainer: "_12DakgjN8uMuRRPaPyLu2N",
+				notificationsBadge: "_2_G8AiSLv08c4T_gxptwUt"
+			}
+		},
 		"./src/reddit/components/MatrixChat/index.m.less": function(e, t, a) {
 			e.exports = {
 				container: "_33u6YbC6AlnzIulwsYr05H",
 				main: "_3cIQAjonpVpMgj97-cQoWL",
-				hidden: "_2WjiIh10sMeANfnbMEowgV",
-				minimizedChat: "_3TjRLgcOyxxeAJ8Ks9YSsx"
+				hidden: "_2WjiIh10sMeANfnbMEowgV"
 			}
 		},
 		"./src/reddit/components/MatrixChat/index.tsx": function(e, t, a) {
 			"use strict";
 			a.r(t), a.d(t, "MatrixChat", (function() {
-				return p
+				return w
 			}));
 			var n = a("./node_modules/fbt/lib/FbtPublic.js"),
 				s = a("./node_modules/react/index.js"),
 				r = a.n(s),
 				c = a("./node_modules/react-redux/es/index.js"),
-				o = a("./src/lib/classNames/index.ts"),
-				i = a("./src/lib/portal/index.tsx"),
+				i = a("./src/lib/classNames/index.ts"),
+				o = a("./src/lib/portal/index.tsx"),
 				d = a("./src/reddit/actions/matrixChat/index.ts"),
 				l = a("./src/reddit/components/IFrame/index.tsx"),
 				m = a("./src/reddit/components/ModalStyledComponents/index.tsx"),
@@ -89,14 +95,14 @@
 					return e
 				}).apply(this, arguments)
 			}
-			const E = e => {
+			const O = e => {
 				let {
 					className: t,
 					onClose: a,
 					...s
 				} = e;
 				return r.a.createElement("div", x({
-					className: Object(o.a)(b.a.container, t)
+					className: Object(i.a)(b.a.container, t)
 				}, s), r.a.createElement("nav", {
 					className: b.a.nav
 				}), r.a.createElement("section", {
@@ -112,75 +118,113 @@
 					onClick: a
 				}, r.a.createElement(m.b, null))), r.a.createElement("div", null)))
 			};
-			var O, f = a("./src/reddit/hooks/useToast.tsx"),
-				I = a("./src/reddit/icons/svgs/Close/index.tsx"),
+			var f = a("./src/lib/prettyPrintNumber/index.ts"),
+				E = a("./src/reddit/icons/svgs/Close/index.tsx"),
 				j = a("./src/reddit/reducers/features/matrixChat/index.ts"),
 				h = a("./src/reddit/selectors/features/matrixChat/index.ts"),
-				_ = a("./src/reddit/selectors/user.ts"),
-				M = a("./src/reddit/components/MatrixChat/index.m.less"),
-				C = a.n(M);
+				p = a("./src/reddit/components/MatrixChat/MinimizedChat/index.m.less"),
+				I = a.n(p);
+
+			function C() {
+				return (C = Object.assign || function(e) {
+					for (var t = 1; t < arguments.length; t++) {
+						var a = arguments[t];
+						for (var n in a) Object.prototype.hasOwnProperty.call(a, n) && (e[n] = a[n])
+					}
+					return e
+				}).apply(this, arguments)
+			}
+			const N = e => {
+				let {
+					className: t,
+					...a
+				} = e;
+				const s = Object(c.d)(),
+					o = Object(c.e)(h.a);
+				return r.a.createElement("section", C({
+					className: Object(i.a)(I.a.container, t),
+					onClick: () => {
+						s(Object(d.c)({
+							state: j.b.NORMAL
+						}))
+					}
+				}, a), r.a.createElement("div", {
+					className: I.a.titleContainer
+				}, n.fbt._("Chat", null, {
+					hk: "2Joznw"
+				}), o && o > 0 && r.a.createElement("span", {
+					className: I.a.notificationsBadge
+				}, Object(f.b)(o))), r.a.createElement("button", {
+					type: "button",
+					onClick: e => {
+						null == e || e.stopPropagation(), s(Object(d.c)({
+							state: j.b.CLOSED
+						}))
+					}
+				}, r.a.createElement(E.a, null)))
+			};
+			var _, v = a("./src/reddit/hooks/useToast.tsx"),
+				M = a("./src/reddit/selectors/user.ts"),
+				L = a("./src/reddit/components/MatrixChat/index.m.less"),
+				g = a.n(L);
 			! function(e) {
-				e.CLOSE = "matrix-chat.close", e.MINIMIZE = "matrix-chat.minimize", e.MAXIMIZE = "matrix-chat.maximize", e.LOADED = "matrix-chat.loaded"
-			}(O || (O = {}));
-			const p = () => {
-				const [e, t] = r.a.useState(!1), a = r.a.useRef(null), s = Object(c.d)(), m = Object(c.e)(_.i), u = Object(c.e)(h.b), b = Object(c.e)(h.a), x = Object(c.e)(h.c), M = Object(f.a)(), p = b === j.b.CHAT_WITH_USER ? `${u}/user/${x}` : u, v = e => {
-					null == e || e.stopPropagation(), s(Object(d.b)({
+				e.CLOSE = "matrix-chat.close", e.MINIMIZE = "matrix-chat.minimize", e.MAXIMIZE = "matrix-chat.maximize", e.LOADED = "matrix-chat.loaded", e.NOTIFICATIONS = "matrix-chat.notifications"
+			}(_ || (_ = {}));
+			const w = () => {
+				const [e, t] = r.a.useState(!1), a = r.a.useRef(null), s = Object(c.d)(), m = Object(c.e)(M.i), u = Object(c.e)(h.c), b = Object(c.e)(h.b), x = Object(c.e)(h.d), f = Object(v.a)(), E = b === j.b.CHAT_WITH_USER ? `${u}/user/${x}` : u, p = e => {
+					null == e || e.stopPropagation(), s(Object(d.c)({
 						state: j.b.CLOSED
 					}))
 				};
 				return r.a.useLayoutEffect(() => {
 					const e = e => {
-						e.data === O.CLOSE && v(), e.data === O.MINIMIZE && s(Object(d.b)({
-							state: j.b.MINIMIZED
-						})), e.data === O.MAXIMIZE && s(Object(d.b)({
-							state: j.b.MINIMIZED
-						})), e.data === O.LOADED && (t(!0), clearTimeout(a.current || void 0))
+						var n, r;
+						if (e.data === _.CLOSE && p(), e.data === _.MINIMIZE && s(Object(d.c)({
+								state: j.b.MINIMIZED
+							})), e.data === _.MAXIMIZE && s(Object(d.c)({
+								state: j.b.MINIMIZED
+							})), e.data === _.LOADED && (t(!0), clearTimeout(a.current || void 0)), 0 === (null === (r = null === (n = e.data) || void 0 === n ? void 0 : n.indexOf) || void 0 === r ? void 0 : r.call(n, _.NOTIFICATIONS))) {
+							const [, t] = e.data.split(":");
+							s(Object(d.b)({
+								count: parseInt(t, 10)
+							}))
+						}
 					};
 					return window.addEventListener("message", e), () => window.document.removeEventListener("message", e)
 				}, []), r.a.useEffect(() => {
-					b === j.b.CLOSED && (t(!1), clearTimeout(a.current || void 0))
+					b === j.b.CLOSED && a.current && clearTimeout(a.current)
 				}, [b]), r.a.useEffect(() => {
 					b !== j.b.NORMAL || e || (a.current = window.setTimeout(() => {
-						v(), M(n.fbt._("Oops, something went wrong. Try again.", null, {
+						p(), f(n.fbt._("Oops, something went wrong. Try again.", null, {
 							hk: "4mYDx0"
 						}))
 					}, 3e4))
 				}, [b, e]), r.a.useEffect(() => {
 					m && s(Object(d.a)(m))
-				}, [m]), b === j.b.CLOSED ? null : r.a.createElement(i.a, null, b === j.b.MINIMIZED && r.a.createElement("section", {
-					className: Object(o.a)(C.a.container, C.a.minimizedChat),
-					onClick: () => {
-						s(Object(d.b)({
-							state: j.b.NORMAL
-						}))
-					}
-				}, n.fbt._("Chat", null, {
-					hk: "2Joznw"
-				}), r.a.createElement("button", {
-					type: "button",
-					onClick: v
-				}, r.a.createElement(I.a, null))), !e && b !== j.b.MINIMIZED && r.a.createElement(E, {
-					className: Object(o.a)(C.a.container, C.a.main),
-					onClose: v
+				}, [m]), r.a.createElement(o.a, null, b === j.b.MINIMIZED && r.a.createElement(N, {
+					className: g.a.container
+				}), !e && b === j.b.NORMAL && r.a.createElement(O, {
+					className: Object(i.a)(g.a.container, g.a.main),
+					onClose: p
 				}), r.a.createElement(l.a, {
-					className: Object(o.a)(C.a.container, C.a.main, {
-						[C.a.hidden]: !e || b === j.b.MINIMIZED
+					className: Object(i.a)(g.a.container, g.a.main, {
+						[g.a.hidden]: !(e && b === j.b.NORMAL)
 					}),
-					src: p
+					src: E
 				}))
 			}
 		},
 		"./src/reddit/hooks/useToast.tsx": function(e, t, a) {
 			"use strict";
 			a.d(t, "a", (function() {
-				return o
+				return i
 			}));
 			var n = a("./node_modules/react/index.js"),
 				s = a("./node_modules/react-redux/es/index.js"),
 				r = a("./src/reddit/actions/toaster.ts"),
 				c = a("./src/reddit/models/Toast/index.ts");
 
-			function o() {
+			function i() {
 				const e = function() {
 					const e = Object(s.d)();
 					return Object(n.useCallback)(t => e(Object(r.f)(t)), [e])
@@ -195,4 +239,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/MatrixChat.3aa2bb4b9d842ab4f7ad.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/MatrixChat.e77b3776d9a5816c7e23.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Reddit.89e7ce8714d07f789043.js
-// Retrieved at 9/14/2022, 6:30:03 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Reddit.9f67abe7af20b9f1ae6b.js
+// Retrieved at 9/15/2022, 10:00:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Reddit"], {
 		"./assets/fonts/BentonSans/font.less": function(e, t, n) {},
@@ -15418,7 +15418,9 @@
 			const sm = () => {
 					const e = Object(Ci.a)(),
 						t = Object(he.d)(),
-						n = Object(he.e)(nm.b);
+						n = Object(he.e)(nm.c),
+						o = Object(he.e)(nm.b),
+						r = Object(he.e)(nm.a);
 					return m.a.createElement(m.a.Fragment, null, m.a.createElement("span", {
 						className: lc.a.iconWrapper,
 						onMouseEnter: () => {
@@ -15430,11 +15432,15 @@
 						className: lc.a.link,
 						href: n,
 						onClick: e => {
-							e.preventDefault(), t(Object(em.b)({
-								state: tm.b.NORMAL
+							const n = o !== tm.b.NORMAL ? tm.b.NORMAL : tm.b.CLOSED;
+							e.preventDefault(), t(Object(em.c)({
+								state: n
 							}))
 						}
-					}, m.a.createElement(no.a, {
+					}, r && r > 0 && m.a.createElement(jo.a, {
+						isActive: !0,
+						unreadCount: r
+					}), m.a.createElement(no.a, {
 						name: "chat_group",
 						className: lc.a.icon2020
 					}))), m.a.createElement(Oi.a, {
@@ -21011,12 +21017,14 @@
 		},
 		"./src/reddit/selectors/features/matrixChat/index.ts": function(e, t, n) {
 			"use strict";
-			n.d(t, "b", (function() {
+			n.d(t, "c", (function() {
 				return r
-			})), n.d(t, "a", (function() {
+			})), n.d(t, "b", (function() {
 				return a
-			})), n.d(t, "c", (function() {
+			})), n.d(t, "a", (function() {
 				return i
+			})), n.d(t, "d", (function() {
+				return c
 			}));
 			var s = n("./src/lib/initializeClient/installReducer.ts"),
 				o = n("./src/reddit/reducers/features/matrixChat/index.ts");
@@ -21034,6 +21042,10 @@
 					return (null === (n = null === (t = e.features) || void 0 === t ? void 0 : t.matrixChat) || void 0 === n ? void 0 : n.state) || o.a.state
 				},
 				i = e => {
+					var t, n;
+					return null === (n = null === (t = e.features) || void 0 === t ? void 0 : t.matrixChat) || void 0 === n ? void 0 : n.notificationsCount
+				},
+				c = e => {
 					var t, n;
 					return null === (n = null === (t = e.features) || void 0 === t ? void 0 : t.matrixChat) || void 0 === n ? void 0 : n.username
 				}
@@ -21237,4 +21249,4 @@
 		["./src/reddit/index.tsx", "runtime~Reddit", "vendors~CommentsPage~ModerationPages~Reddit~reddit-components-ClassicPost~reddit-components-CompactP~d737df3e", "vendors~CommentsPage~Governance~ModListing~ModerationPages~Reddit~Subreddit", "vendors~Chat~Governance~Reddit", "vendors~Reddit", "CommentsPage~Governance~Reddit~ReportFlow~Subreddit~reddit-components-BlankPost~reddit-components-Cl~5351df81", "PostCreation~Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~r~4c415e24", "Governance~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compo~bd4baca2", "Governance~ModListing~Reddit~ReportFlow~Subreddit", "Governance~ModListing~Reddit~Subreddit", "Chat~Governance~Reddit", "Governance~Reddit~SubredditForkingCTA", "Governance~Reddit", "Reddit~StandalonePostPage"]
 	]
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit.89e7ce8714d07f789043.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit.9f67abe7af20b9f1ae6b.js.map

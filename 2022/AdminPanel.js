@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/AdminPanel.f336cb3fc454040d5e95.js
-// Retrieved at 9/14/2022, 6:00:03 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/AdminPanel.dfc7a637f00bb827c7f4.js
+// Retrieved at 9/15/2022, 10:00:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["AdminPanel"], {
 		"./src/devPlatform/components/AdminPanel/Utilities/DevPlatformConfig/DevPlatformConfigLoader.tsx": function(e, t, n) {
@@ -1353,7 +1353,7 @@
 				Rn = n("./src/reddit/selectors/features/matrixChat/index.ts");
 			const Hn = () => {
 				const e = Object(p.d)(),
-					t = Object(p.e)(Rn.b),
+					t = Object(p.e)(Rn.c),
 					[n, s] = a.a.useState(t);
 				return a.a.createElement(gn.a, {
 					title: Ve.fbt._("Matrix Chat URL", null, {
@@ -1365,7 +1365,7 @@
 				}), a.a.createElement("div", null, a.a.createElement(Ne.a, {
 					priority: Ne.c.Plain,
 					onClick: () => {
-						e(Object(Vn.c)({
+						e(Object(Vn.d)({
 							url: n
 						}))
 					}
@@ -1375,7 +1375,7 @@
 					priority: Ne.c.Plain,
 					onClick: () => {
 						const t = Mn.a.matrixChatUrl;
-						s(t), e(Object(Vn.c)({
+						s(t), e(Object(Vn.d)({
 							url: t
 						}))
 					}
@@ -1937,4 +1937,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/AdminPanel.f336cb3fc454040d5e95.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/AdminPanel.dfc7a637f00bb827c7f4.js.map
