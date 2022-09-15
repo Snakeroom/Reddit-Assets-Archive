@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditWiki.8a3ad29f281062ef8eb0.js
-// Retrieved at 9/14/2022, 6:00:03 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditWiki.7fe6c9497b55ea8bc24f.js
+// Retrieved at 9/15/2022, 10:50:03 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditWiki", "AchievementsActions"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, r) {
@@ -5072,57 +5072,54 @@
 			"use strict";
 			var s = r("./node_modules/react/index.js"),
 				n = r.n(s),
-				i = r("./node_modules/react-redux/es/index.js"),
-				a = r("./src/lib/classNames/index.ts"),
-				o = r("./src/reddit/controls/ImageInput/index.tsx"),
-				d = r("./src/reddit/controls/LoadingIcon/index.tsx"),
-				c = r("./src/reddit/icons/fonts/index.tsx"),
-				l = r("./src/reddit/models/ApiRequestState/index.ts"),
-				u = r("./src/reddit/selectors/experiments/profileAvatarChangeFix.ts"),
-				m = r("./src/reddit/components/EditableImage/index.m.less"),
-				p = r.n(m);
+				i = r("./src/lib/classNames/index.ts"),
+				a = r("./src/reddit/controls/ImageInput/index.tsx"),
+				o = r("./src/reddit/controls/LoadingIcon/index.tsx"),
+				d = r("./src/reddit/icons/fonts/index.tsx"),
+				c = r("./src/reddit/models/ApiRequestState/index.ts"),
+				l = r("./src/reddit/components/EditableImage/index.m.less"),
+				u = r.n(l);
 			const {
-				fbt: b
+				fbt: m
 			} = r("./node_modules/fbt/lib/FbtPublic.js");
 			t.a = e => {
 				let {
 					altText: t,
 					children: r,
 					className: s,
-					isProfileCard: m,
-					isLoading: b,
-					imageUrl: h,
-					onFileSelected: f
+					isProfileCard: l,
+					isLoading: m,
+					imageUrl: p,
+					onFileSelected: b
 				} = e;
-				const g = Object(i.e)(u.a);
 				return n.a.createElement("div", {
-					className: Object(a.a)(p.a.Container, s)
+					className: Object(i.a)(u.a.Container, s)
 				}, n.a.createElement("label", {
-					className: p.a.HitBox
+					className: u.a.HitBox
 				}, n.a.createElement("span", {
-					className: p.a.ImageContainer,
+					className: u.a.ImageContainer,
 					role: "presentation"
-				}, h ? n.a.createElement("img", {
+				}, p ? n.a.createElement("img", {
 					alt: t,
-					className: p.a.Image,
-					src: h
-				}) : r), n.a.createElement(o.a, {
-					className: p.a.ImageUploader,
+					className: u.a.Image,
+					src: p
+				}) : r), n.a.createElement(a.a, {
+					className: u.a.ImageUploader,
 					multiple: !1,
 					onChange: e => {
-						const t = Object(l.b)();
-						f(e, t)
+						const t = Object(c.b)();
+						b(e, t)
 					},
-					isPending: g ? b : void 0
-				}), !b && n.a.createElement("div", {
-					className: Object(a.a)(p.a.EditButton, {
-						[p.a.profileCard]: m
+					isPending: m
+				}), !m && n.a.createElement("div", {
+					className: Object(i.a)(u.a.EditButton, {
+						[u.a.profileCard]: l
 					})
-				}, n.a.createElement(c.a, {
+				}, n.a.createElement(d.a, {
 					name: "add_media",
-					className: p.a.EditIcon
-				}))), b && n.a.createElement(d.a, {
-					className: p.a.LoadingIcon,
+					className: u.a.EditIcon
+				}))), m && n.a.createElement(o.a, {
+					className: u.a.LoadingIcon,
 					sizePx: 80
 				}))
 			}
@@ -9945,7 +9942,7 @@
 				const t = Object(i.f)().getState(),
 					r = Object(h.a)(t, Object(o.c)());
 				if (e.isD2xPdpSideRailRecsEnabled) {
-					const t = e.d2xPdpSideRailRecsVariant === u.Rc.GreyRereddit || e.d2xPdpSideRailRecsVariant === u.Rc.GreyRedditNoNsfw || e.d2xPdpSideRailRecsVariant === u.Rc.LargeImagePreview ? e.reredditButtons : [];
+					const t = e.d2xPdpSideRailRecsVariant === u.Qc.GreyRereddit || e.d2xPdpSideRailRecsVariant === u.Qc.GreyRedditNoNsfw || e.d2xPdpSideRailRecsVariant === u.Qc.LargeImagePreview ? e.reredditButtons : [];
 					return n.a.createElement(j, {
 						reredditContent: t,
 						countryCode: e.countryCode
@@ -10494,12 +10491,12 @@
 						rtJsonElementProps: a
 					});
 					switch (i) {
-						case h.Of.SmIcon:
+						case h.Nf.SmIcon:
 							return n.a.createElement(p, {
 								subredditName: s,
 								rtJsonElementProps: a
 							});
-						case h.Of.SmIconHc:
+						case h.Nf.SmIconHc:
 							return n.a.createElement(p, {
 								subredditName: s,
 								isHoverable: !0,
@@ -11365,7 +11362,7 @@
 						} = t;
 						return Object(Be.c)(e, r)
 					},
-					isInNewModuleNCPV3Experiment: e => Object(De.a)(e) === Pe.Me.NewModule,
+					isInNewModuleNCPV3Experiment: e => Object(De.a)(e) === Pe.Le.NewModule,
 					showGovernance: Te.d.spPoints,
 					showLeaderboard: Te.d.spLeaderboard,
 					showPredictionsLeaderboard: (e, t) => {
@@ -14061,8 +14058,8 @@
 			const o = e => n.e[Object(i.S)(e, {})] === n.d.Card,
 				d = e => Object(a.c)(e, {
 					experimentEligibilitySelector: o,
-					experimentName: s.yb
-				}) === s.Kc.Treatment
+					experimentName: s.xb
+				}) === s.Jc.Treatment
 		},
 		"./src/reddit/selectors/experiments/d2xPdpSideRailRecs.ts": function(e, t, r) {
 			"use strict";
@@ -14079,11 +14076,11 @@
 				d = r("./node_modules/reselect/es/index.js");
 			const c = Object(d.a)(e => Object(n.c)(e, {
 					experimentEligibilitySelector: e => Object(o.h)(e) && Object(i.f)(e),
-					experimentName: s.pc
+					experimentName: s.oc
 				}), a.a),
 				l = Object(d.a)(e => Object(n.c)(e, {
 					experimentEligibilitySelector: e => !Object(o.h)(e) && Object(i.f)(e),
-					experimentName: s.oc
+					experimentName: s.nc
 				}), a.a),
 				u = Object(d.a)(c, l, (e, t) => e || t),
 				m = Object(d.a)(c, l, (e, t) => !(!e && !t))
@@ -14100,13 +14097,13 @@
 			const i = e => {
 					return !(Object(n.c)(e, {
 						experimentEligibilitySelector: n.a,
-						experimentName: s.qe
-					}) === s.Hd)
+						experimentName: s.pe
+					}) === s.Gd)
 				},
 				a = e => Object(n.c)(e, {
 					experimentEligibilitySelector: n.a,
-					experimentName: s.re
-				}) === s.Hd
+					experimentName: s.qe
+				}) === s.Gd
 		},
 		"./src/reddit/selectors/experiments/i18n/hiddenPowerups.ts": function(e, t, r) {
 			"use strict";
@@ -14125,8 +14122,8 @@
 				d = e => a.includes(e),
 				c = Object(s.a)(e => Object(i.c)(e, {
 					experimentEligibilitySelector: i.a,
-					experimentName: n.ce
-				}), e => e === n.Hd)
+					experimentName: n.be
+				}), e => e === n.Gd)
 		},
 		"./src/reddit/selectors/subredditMention.ts": function(e, t, r) {
 			"use strict";
@@ -14151,12 +14148,12 @@
 				d = e => {
 					return Object(i.c)(e, {
 						experimentEligibilitySelector: o,
-						experimentName: s.Hf
+						experimentName: s.Gf
 					}) || ""
 				},
 				c = e => {
 					const t = d(e);
-					return t === s.Of.SmIcon || t === s.Of.SmIconHc
+					return t === s.Nf.SmIcon || t === s.Nf.SmIconHc
 				},
 				l = (e, t) => {
 					let {
@@ -14361,4 +14358,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditWiki.8a3ad29f281062ef8eb0.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditWiki.7fe6c9497b55ea8bc24f.js.map

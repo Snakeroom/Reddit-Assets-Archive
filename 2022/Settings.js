@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Settings.98304c67d75d615bd079.js
-// Retrieved at 9/14/2022, 6:30:03 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Settings.f7aa4a51c48a4d9482ba.js
+// Retrieved at 9/15/2022, 10:50:03 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Settings"], {
 		"./node_modules/moment/locale sync recursive ^\\.\\/.*$": function(e, t, n) {
@@ -2941,57 +2941,54 @@
 			"use strict";
 			var s = n("./node_modules/react/index.js"),
 				r = n.n(s),
-				a = n("./node_modules/react-redux/es/index.js"),
-				o = n("./src/lib/classNames/index.ts"),
-				i = n("./src/reddit/controls/ImageInput/index.tsx"),
-				c = n("./src/reddit/controls/LoadingIcon/index.tsx"),
-				l = n("./src/reddit/icons/fonts/index.tsx"),
-				d = n("./src/reddit/models/ApiRequestState/index.ts"),
-				u = n("./src/reddit/selectors/experiments/profileAvatarChangeFix.ts"),
-				m = n("./src/reddit/components/EditableImage/index.m.less"),
-				p = n.n(m);
+				a = n("./src/lib/classNames/index.ts"),
+				o = n("./src/reddit/controls/ImageInput/index.tsx"),
+				i = n("./src/reddit/controls/LoadingIcon/index.tsx"),
+				c = n("./src/reddit/icons/fonts/index.tsx"),
+				l = n("./src/reddit/models/ApiRequestState/index.ts"),
+				d = n("./src/reddit/components/EditableImage/index.m.less"),
+				u = n.n(d);
 			const {
-				fbt: b
+				fbt: m
 			} = n("./node_modules/fbt/lib/FbtPublic.js");
 			t.a = e => {
 				let {
 					altText: t,
 					children: n,
 					className: s,
-					isProfileCard: m,
-					isLoading: b,
-					imageUrl: h,
-					onFileSelected: f
+					isProfileCard: d,
+					isLoading: m,
+					imageUrl: p,
+					onFileSelected: b
 				} = e;
-				const g = Object(a.e)(u.a);
 				return r.a.createElement("div", {
-					className: Object(o.a)(p.a.Container, s)
+					className: Object(a.a)(u.a.Container, s)
 				}, r.a.createElement("label", {
-					className: p.a.HitBox
+					className: u.a.HitBox
 				}, r.a.createElement("span", {
-					className: p.a.ImageContainer,
+					className: u.a.ImageContainer,
 					role: "presentation"
-				}, h ? r.a.createElement("img", {
+				}, p ? r.a.createElement("img", {
 					alt: t,
-					className: p.a.Image,
-					src: h
-				}) : n), r.a.createElement(i.a, {
-					className: p.a.ImageUploader,
+					className: u.a.Image,
+					src: p
+				}) : n), r.a.createElement(o.a, {
+					className: u.a.ImageUploader,
 					multiple: !1,
 					onChange: e => {
-						const t = Object(d.b)();
-						f(e, t)
+						const t = Object(l.b)();
+						b(e, t)
 					},
-					isPending: g ? b : void 0
-				}), !b && r.a.createElement("div", {
-					className: Object(o.a)(p.a.EditButton, {
-						[p.a.profileCard]: m
+					isPending: m
+				}), !m && r.a.createElement("div", {
+					className: Object(a.a)(u.a.EditButton, {
+						[u.a.profileCard]: d
 					})
-				}, r.a.createElement(l.a, {
+				}, r.a.createElement(c.a, {
 					name: "add_media",
-					className: p.a.EditIcon
-				}))), b && r.a.createElement(c.a, {
-					className: p.a.LoadingIcon,
+					className: u.a.EditIcon
+				}))), m && r.a.createElement(i.a, {
+					className: u.a.LoadingIcon,
 					sizePx: 80
 				}))
 			}
@@ -11362,8 +11359,8 @@
 				se = n("./src/reddit/helpers/chooseVariant/index.ts");
 			const re = Object(c.a)(e => Object(se.c)(e, {
 				experimentEligibilitySelector: N.Q,
-				experimentName: ne.U
-			}), e => e === ne.eb.Enabled);
+				experimentName: ne.T
+			}), e => e === ne.db.Enabled);
 			var ae = n("./src/reddit/selectors/meta.ts"),
 				oe = n("./src/reddit/components/Settings/AccountPrefsSection/index.m.less"),
 				ie = n.n(oe);
@@ -13178,8 +13175,8 @@
 				}), e => e === ne.c.Enabled),
 				ir = Object(c.a)(e => Object(se.c)(e, {
 					experimentEligibilitySelector: N.Q,
-					experimentName: ne.R
-				}), e => e === ne.bb.Enabled);
+					experimentName: ne.Q
+				}), e => e === ne.ab.Enabled);
 			var cr = n("./src/lib/hooks/usePrevious.ts"),
 				lr = n("./src/telemetry/models/Event.ts");
 			const dr = we.a.span("SubheaderLink", rn.a),
@@ -14436,9 +14433,9 @@
 					},
 					isDspEnabled: e => {
 						return Object(se.c)(e, {
-							experimentName: ne.ad,
+							experimentName: ne.Zc,
 							experimentEligibilitySelector: se.a
-						}) === ne.Hd
+						}) === ne.Gd
 					}
 				}),
 				bo = Object(fe.u)(),
@@ -14985,9 +14982,9 @@
 				r = n("./src/reddit/helpers/chooseVariant/index.ts"),
 				a = n("./src/reddit/selectors/user.ts");
 			const o = e => Object(r.c)(e, {
-				experimentName: s.G,
+				experimentName: s.F,
 				experimentEligibilitySelector: () => Object(a.P)(e)
-			}) === s.Hd
+			}) === s.Gd
 		},
 		"./src/reddit/selectors/experiments/econ/marketplace.ts": function(e, t, n) {
 			"use strict";
@@ -15001,13 +14998,13 @@
 			const a = e => {
 					return !(Object(r.c)(e, {
 						experimentEligibilitySelector: r.a,
-						experimentName: s.qe
-					}) === s.Hd)
+						experimentName: s.pe
+					}) === s.Gd)
 				},
 				o = e => Object(r.c)(e, {
 					experimentEligibilitySelector: r.a,
-					experimentName: s.re
-				}) === s.Hd
+					experimentName: s.qe
+				}) === s.Gd
 		},
 		"./src/reddit/selectors/gold/productOffers.ts": function(e, t, n) {
 			"use strict";
@@ -15171,4 +15168,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Settings.98304c67d75d615bd079.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Settings.f7aa4a51c48a4d9482ba.js.map

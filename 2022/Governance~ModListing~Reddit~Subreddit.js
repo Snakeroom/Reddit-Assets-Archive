@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit~Subreddit.5f243f0823f6d859e43c.js
-// Retrieved at 9/14/2022, 6:00:03 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit~Subreddit.6bbc90469d882546973d.js
+// Retrieved at 9/15/2022, 10:50:03 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~ModListing~Reddit~Subreddit"], {
 		"./src/lib/CSSVariableProvider/withTheme.tsx": function(e, t, n) {
@@ -403,9 +403,9 @@
 		"./src/reddit/actions/notificationsInbox/index.ts": function(e, t, n) {
 			"use strict";
 			n.d(t, "d", (function() {
-				return A
-			})), n.d(t, "e", (function() {
 				return L
+			})), n.d(t, "e", (function() {
+				return A
 			})), n.d(t, "b", (function() {
 				return G
 			})), n.d(t, "i", (function() {
@@ -461,7 +461,7 @@
 			const k = Object(o.a)(c.e),
 				P = Object(o.a)(c.b),
 				w = Object(o.a)(c.a),
-				A = e => async (t, n, r) => {
+				L = e => async (t, n, r) => {
 					let {
 						gqlContext: o
 					} = r;
@@ -483,7 +483,7 @@
 						t(R(p.notifications, e.length))
 					}
 					t(P(p)), t(Object(s.b)(p.banners))
-				}, L = () => async (e, t, n) => {
+				}, A = () => async (e, t, n) => {
 					let {
 						gqlContext: r
 					} = n;
@@ -1332,11 +1332,10 @@
 				g = n("./src/reddit/components/UserIcon/PresenceDot.tsx"),
 				_ = n("./src/reddit/components/UserIcon/SnoovatarHeadshot.tsx"),
 				x = n("./src/reddit/components/UserIcon/UserIcon.tsx"),
-				h = n("./src/reddit/selectors/user.ts"),
-				j = n("./src/reddit/selectors/experiments/profileAvatarChangeFix.ts");
+				h = n("./src/reddit/selectors/user.ts");
 
-			function E() {
-				return (E = Object.assign || function(e) {
+			function j() {
+				return (j = Object.assign || function(e) {
 					for (var t = 1; t < arguments.length; t++) {
 						var n = arguments[t];
 						for (var r in n) Object.prototype.hasOwnProperty.call(n, r) && (e[r] = n[r])
@@ -1344,16 +1343,15 @@
 					return e
 				}).apply(this, arguments)
 			}
-			const S = () => {},
-				v = Object(c.c)({
+			const E = () => {},
+				S = Object(c.c)({
 					currentUser: h.k,
 					isNightMode: h.db,
 					shouldHideNSFW: h.F,
-					user: h.Ab,
-					isProfileAvatarChangeFixEnabled: j.a
+					user: h.Ab
 				}),
-				C = Object(s.b)(v);
-			t.a = C(e => {
+				v = Object(s.b)(S);
+			t.a = v(e => {
 				const {
 					authorId: t,
 					collapsed: n,
@@ -1364,7 +1362,7 @@
 					isNft: p,
 					isNSFW: m,
 					shouldUseOnlineOverride: h,
-					isOnlineOverrideValue: j,
+					isOnlineOverrideValue: S,
 					isOnlineStatusLoadTest: v,
 					isProfileIcon: C,
 					omitResponsivePresenceWrapper: N,
@@ -1372,17 +1370,16 @@
 					shouldShowPresenceIndicator: y,
 					user: k,
 					userName: P,
-					isProfileAvatarChangeFixEnabled: w,
-					...A
-				} = e, L = !!s && Object(l.e)(s) === P, D = L ? s : k, U = D && D.accountIcon || c, R = k ? k.isNSFW : m, M = Object(d.a)(U) && !b, B = M ? i.a.createElement(_.a, {
-					headshot: U,
+					...w
+				} = e, L = !!s && Object(l.e)(s) === P, A = L ? s : k, D = A && A.accountIcon || c, U = k ? k.isNSFW : m, R = Object(d.a)(D) && !b, M = R ? i.a.createElement(_.a, {
+					headshot: D,
 					className: e.className,
 					hasNftBorder: p && Object(d.d)(c)
-				}) : i.a.createElement(x.b, E({}, A, {
-					iconUrl: b && n ? "https://www.redditstatic.com/avatars/defaults/v2/avatar_default_3.png" : U,
+				}) : i.a.createElement(x.b, j({}, w, {
+					iconUrl: b && n ? "https://www.redditstatic.com/avatars/defaults/v2/avatar_default_3.png" : D,
 					isCurrentUser: L,
-					isNSFW: R
-				})), [G, F] = Object(o.useState)(!1), H = Object(o.useMemo)(() => ({
+					isNSFW: U
+				})), [B, G] = Object(o.useState)(!1), F = Object(o.useMemo)(() => ({
 					input: {
 						channel: {
 							teamOwner: "CONTENT_AND_COMMUNITIES",
@@ -1390,37 +1387,37 @@
 							userID: t
 						}
 					}
-				}), [t]), V = Object(o.useCallback)(e => {
+				}), [t]), H = Object(o.useCallback)(e => {
 					const {
 						isOnline: t
 					} = e.subscribe.data;
-					F(t)
-				}, []), Q = Object(o.useRef)(null), [W, K] = Object(o.useState)(!1), q = Object(o.useCallback)(e => {
+					G(t)
+				}, []), V = Object(o.useRef)(null), [Q, W] = Object(o.useState)(!1), K = Object(o.useCallback)(e => {
 					e.forEach(e => {
 						const {
 							isIntersecting: t,
 							intersectionRatio: n
 						} = e, r = 1 !== n;
-						t ? K(!0) : r && K(!1)
+						t ? W(!0) : r && W(!1)
 					})
-				}, []), Y = Object(o.useRef)({
+				}, []), q = Object(o.useRef)({
 					rootMargin: "750px 0px 1000px 0px"
 				});
-				return Object(u.a)(Q, q, Y.current), N ? B : i.a.createElement("div", {
+				return Object(u.a)(V, K, q.current), N ? M : i.a.createElement("div", {
 					className: Object(r.a)(O.a.userIconWrapper, {
-						[O.a.hasHeadShotWrapper]: M,
-						[O.a.isProfileIcon]: C && w
+						[O.a.hasHeadShotWrapper]: R,
+						[O.a.isProfileIcon]: C
 					}),
-					ref: Q
+					ref: V
 				}, p && i.a.createElement(I, {
 					iconUrl: c
-				}), B, y && (G || h && j) && i.a.createElement(g.default, {
+				}), M, y && (B || h && S) && i.a.createElement(g.default, {
 					showPresence: !0,
 					isHighlighted: f,
 					onceInViewport: T
-				}), (y || v) && !h && W && i.a.createElement(a.a, {
-					variables: H,
-					onData: y ? V : S,
+				}), (y || v) && !h && Q && i.a.createElement(a.a, {
+					variables: F,
+					onData: y ? H : E,
 					queryKey: "isUserOnline"
 				}))
 			})
@@ -1817,9 +1814,9 @@
 			})), n.d(t, "b", (function() {
 				return w
 			})), n.d(t, "o", (function() {
-				return A
-			})), n.d(t, "A", (function() {
 				return L
+			})), n.d(t, "A", (function() {
+				return A
 			})), n.d(t, "p", (function() {
 				return D
 			})), n.d(t, "B", (function() {
@@ -2234,7 +2231,7 @@
 			! function(e) {
 				e.DISMISS = "dismiss", e.BANNER = "banner", e.CTA_1 = "cta1", e.CTA_2 = "cta2"
 			}(w || (w = {}));
-			const A = (e, t) => n => ({
+			const L = (e, t) => n => ({
 					...u.o(n),
 					action: d.c.CLICK,
 					noun: "inbox_banner",
@@ -2247,7 +2244,7 @@
 						id: e
 					}
 				}),
-				L = (e, t) => n => ({
+				A = (e, t) => n => ({
 					...u.o(n),
 					action: d.c.CLICK,
 					noun: "inbox_banner",
@@ -2322,9 +2319,9 @@
 			})), n.d(t, "o", (function() {
 				return w
 			})), n.d(t, "s", (function() {
-				return A
-			})), n.d(t, "c", (function() {
 				return L
+			})), n.d(t, "c", (function() {
+				return A
 			})), n.d(t, "l", (function() {
 				return D
 			})), n.d(t, "p", (function() {
@@ -2403,7 +2400,7 @@
 								{
 									sortToUse: l
 								} = Object(d.a)(t, s);
-							Object(C.a)(L(c, s, a, n, r, l)(t));
+							Object(C.a)(A(c, s, a, n, r, l)(t));
 							break
 						}
 						case i.Qb.INDEX:
@@ -2484,7 +2481,7 @@
 						case i.Qb.PROFILE_PRIVATE: {
 							const o = Object(u.d)(e, t);
 							if (!o) return;
-							Object(C.a)(A(o)(r, n)(t));
+							Object(C.a)(L(o)(r, n)(t));
 							break
 						}
 						case i.Qb.FOLLOWERS:
@@ -2672,7 +2669,7 @@
 						adblock: v.e(i)
 					}
 				},
-				A = e => (t, n) => r => {
+				L = e => (t, n) => r => {
 					const o = !r.profilePrivatePage.api.error[e] && !r.profilePrivatePage.api.pending[e];
 					return {
 						source: "global",
@@ -2689,7 +2686,7 @@
 						adblock: v.e(r)
 					}
 				},
-				L = (e, t, n, r, o, i) => s => {
+				A = (e, t, n, r, o, i) => s => {
 					const {
 						api: c
 					} = s.pages.comments, a = !c.error[e] && !c.pending[e], d = new URLSearchParams(window.location.search).has(x.a), u = {
@@ -3452,18 +3449,9 @@
 					return r ? r * o.Vb < 1639443600180 ? void 0 : O(e) : void 0
 				},
 				O = Object(r.a)(e => Object(c.c)(e, {
-					experimentName: i.De,
+					experimentName: i.Ce,
 					experimentEligibilitySelector: a.e
 				}), d.a)
-		},
-		"./src/reddit/selectors/experiments/profileAvatarChangeFix.ts": function(e, t, n) {
-			"use strict";
-			n.d(t, "a", (function() {
-				return i
-			}));
-			var r = n("./src/reddit/constants/experiments.ts"),
-				o = n("./src/reddit/selectors/experiments/econ/simpleExperiment.ts");
-			const i = Object(o.a)(r.v)
 		},
 		"./src/reddit/selectors/notificationPrefs.ts": function(e, t, n) {
 			"use strict";
@@ -3568,4 +3556,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit~Subreddit.5f243f0823f6d859e43c.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit~Subreddit.6bbc90469d882546973d.js.map

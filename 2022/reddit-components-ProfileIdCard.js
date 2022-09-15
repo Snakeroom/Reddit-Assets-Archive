@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-ProfileIdCard.873e3731b5c8d360e41b.js
-// Retrieved at 9/14/2022, 6:30:03 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-ProfileIdCard.bb2af43aebe58fe803d3.js
+// Retrieved at 9/15/2022, 10:50:03 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-ProfileIdCard"], {
 		"./node_modules/lodash/compact.js": function(e, t) {
@@ -744,57 +744,54 @@
 			"use strict";
 			var n = r("./node_modules/react/index.js"),
 				s = r.n(n),
-				o = r("./node_modules/react-redux/es/index.js"),
-				a = r("./src/lib/classNames/index.ts"),
-				i = r("./src/reddit/controls/ImageInput/index.tsx"),
-				c = r("./src/reddit/controls/LoadingIcon/index.tsx"),
-				d = r("./src/reddit/icons/fonts/index.tsx"),
-				l = r("./src/reddit/models/ApiRequestState/index.ts"),
-				u = r("./src/reddit/selectors/experiments/profileAvatarChangeFix.ts"),
-				m = r("./src/reddit/components/EditableImage/index.m.less"),
-				p = r.n(m);
+				o = r("./src/lib/classNames/index.ts"),
+				a = r("./src/reddit/controls/ImageInput/index.tsx"),
+				i = r("./src/reddit/controls/LoadingIcon/index.tsx"),
+				c = r("./src/reddit/icons/fonts/index.tsx"),
+				d = r("./src/reddit/models/ApiRequestState/index.ts"),
+				l = r("./src/reddit/components/EditableImage/index.m.less"),
+				u = r.n(l);
 			const {
-				fbt: f
+				fbt: m
 			} = r("./node_modules/fbt/lib/FbtPublic.js");
 			t.a = e => {
 				let {
 					altText: t,
 					children: r,
 					className: n,
-					isProfileCard: m,
-					isLoading: f,
-					imageUrl: b,
-					onFileSelected: h
+					isProfileCard: l,
+					isLoading: m,
+					imageUrl: p,
+					onFileSelected: f
 				} = e;
-				const v = Object(o.e)(u.a);
 				return s.a.createElement("div", {
-					className: Object(a.a)(p.a.Container, n)
+					className: Object(o.a)(u.a.Container, n)
 				}, s.a.createElement("label", {
-					className: p.a.HitBox
+					className: u.a.HitBox
 				}, s.a.createElement("span", {
-					className: p.a.ImageContainer,
+					className: u.a.ImageContainer,
 					role: "presentation"
-				}, b ? s.a.createElement("img", {
+				}, p ? s.a.createElement("img", {
 					alt: t,
-					className: p.a.Image,
-					src: b
-				}) : r), s.a.createElement(i.a, {
-					className: p.a.ImageUploader,
+					className: u.a.Image,
+					src: p
+				}) : r), s.a.createElement(a.a, {
+					className: u.a.ImageUploader,
 					multiple: !1,
 					onChange: e => {
-						const t = Object(l.b)();
-						h(e, t)
+						const t = Object(d.b)();
+						f(e, t)
 					},
-					isPending: v ? f : void 0
-				}), !f && s.a.createElement("div", {
-					className: Object(a.a)(p.a.EditButton, {
-						[p.a.profileCard]: m
+					isPending: m
+				}), !m && s.a.createElement("div", {
+					className: Object(o.a)(u.a.EditButton, {
+						[u.a.profileCard]: l
 					})
-				}, s.a.createElement(d.a, {
+				}, s.a.createElement(c.a, {
 					name: "add_media",
-					className: p.a.EditIcon
-				}))), f && s.a.createElement(c.a, {
-					className: p.a.LoadingIcon,
+					className: u.a.EditIcon
+				}))), m && s.a.createElement(i.a, {
+					className: u.a.LoadingIcon,
 					sizePx: 80
 				}))
 			}
@@ -2756,8 +2753,8 @@
 				page: O.b,
 				allowNFTs: e => Object(y.c)(e, {
 					experimentEligibilitySelector: y.a,
-					experimentName: E.w
-				}) === E.y.Enabled,
+					experimentName: E.v
+				}) === E.x.Enabled,
 				isUserBlocked: P.L
 			}), ve = e => {
 				let {
@@ -3558,9 +3555,9 @@
 				s = r("./src/reddit/helpers/chooseVariant/index.ts"),
 				o = r("./src/reddit/selectors/user.ts");
 			const a = e => Object(s.c)(e, {
-				experimentName: n.G,
+				experimentName: n.F,
 				experimentEligibilitySelector: () => Object(o.P)(e)
-			}) === n.Hd
+			}) === n.Gd
 		},
 		"./src/reddit/selectors/experiments/crisisTextLine.ts": function(e, t, r) {
 			"use strict";
@@ -3593,13 +3590,13 @@
 			const o = e => {
 					return !(Object(s.c)(e, {
 						experimentEligibilitySelector: s.a,
-						experimentName: n.qe
-					}) === n.Hd)
+						experimentName: n.pe
+					}) === n.Gd)
 				},
 				a = e => Object(s.c)(e, {
 					experimentEligibilitySelector: s.a,
-					experimentName: n.re
-				}) === n.Hd
+					experimentName: n.qe
+				}) === n.Gd
 		},
 		"./src/reddit/selectors/premium.ts": function(e, t, r) {
 			"use strict";
@@ -3628,4 +3625,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ProfileIdCard.873e3731b5c8d360e41b.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ProfileIdCard.bb2af43aebe58fe803d3.js.map

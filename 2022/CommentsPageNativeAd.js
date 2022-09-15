@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CommentsPageNativeAd.c6cab70bd43508029542.js
-// Retrieved at 9/14/2022, 6:00:03 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CommentsPageNativeAd.dafd1f1b1c9ba5af09f8.js
+// Retrieved at 9/15/2022, 10:50:03 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CommentsPageNativeAd"], {
 		"./src/reddit/components/BlankPost/index.tsx": function(e, t, s) {
@@ -113,8 +113,8 @@
 				})),
 				M = s("./src/reddit/components/Media/index.tsx"),
 				W = s("./src/reddit/components/PlayButton/index.tsx"),
-				U = s("./src/reddit/components/Thumbnail/index.tsx"),
-				R = s("./src/reddit/icons/svgs/Close/index.tsx");
+				R = s("./src/reddit/components/Thumbnail/index.tsx"),
+				U = s("./src/reddit/icons/svgs/Close/index.tsx");
 
 			function V() {
 				return (V = Object.assign || function(e) {
@@ -140,7 +140,7 @@
 					usePreview: u,
 					mediaExpanded: h
 				} = e;
-				return i && i.media ? h && Object(x.N)(i.media) ? r.a.createElement("div", null, r.a.createElement(R.a, {
+				return i && i.media ? h && Object(x.N)(i.media) ? r.a.createElement("div", null, r.a.createElement(U.a, {
 					className: T.a.close,
 					onClick: s
 				}), r.a.createElement(M.a, {
@@ -156,7 +156,7 @@
 					showCentered: !1,
 					scrollerItemRef: c,
 					isCommentsPage: !0
-				})) : r.a.createElement(U.a, {
+				})) : r.a.createElement(R.a, {
 					className: Object(l.a)(T.a.thumbnail, t),
 					containerClassName: m,
 					crosspost: a,
@@ -167,7 +167,7 @@
 					removeLink: Object(x.N)(i.media),
 					url: Object(x.N)(i.media) ? void 0 : p,
 					usePreview: u
-				}) : r.a.createElement(U.a, {
+				}) : r.a.createElement(R.a, {
 					className: Object(l.a)(T.a.thumbnail, t),
 					containerClassName: m,
 					crosspost: a,
@@ -439,11 +439,11 @@
 				o = s("./src/reddit/constants/experiments.ts"),
 				r = s("./src/reddit/helpers/chooseVariant/index.ts");
 			const n = Object(a.a)(e => Object(r.c)(e, {
-					experimentName: o.dg,
+					experimentName: o.cg,
 					experimentEligibilitySelector: r.a
 				}), e => e),
-				i = Object(a.a)(n, e => e === o.Uf)
+				i = Object(a.a)(n, e => e === o.Tf)
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommentsPageNativeAd.c6cab70bd43508029542.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommentsPageNativeAd.dafd1f1b1c9ba5af09f8.js.map

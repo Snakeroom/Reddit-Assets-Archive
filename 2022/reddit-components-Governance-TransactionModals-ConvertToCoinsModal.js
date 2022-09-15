@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-ConvertToCoinsModal.f32c1829c18480740e2f.js
-// Retrieved at 9/14/2022, 6:00:03 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-ConvertToCoinsModal.11e94684f1a34ce54913.js
+// Retrieved at 9/15/2022, 10:50:03 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Governance-TransactionModals-ConvertToCoinsModal"], {
 		"./node_modules/@stripe/react-stripe-js/dist/react-stripe.umd.js": function(e, t, n) {
@@ -1562,8 +1562,8 @@
 			var V = n("./src/reddit/controls/FormFields/index.tsx"),
 				U = n("./src/reddit/controls/LoadingIcon/index.tsx"),
 				q = n("./src/reddit/icons/svgs/CoinV2/index.tsx"),
-				H = n("./src/reddit/components/Governance/Token/index.tsx"),
-				W = n("./src/reddit/components/Governance/TransactionModals/Common/CurrentBalance.tsx"),
+				W = n("./src/reddit/components/Governance/Token/index.tsx"),
+				H = n("./src/reddit/components/Governance/TransactionModals/Common/CurrentBalance.tsx"),
 				Q = n("./src/reddit/components/Governance/TransactionModals/ConvertToCoinsModal/ApprovalOverview.m.less"),
 				J = n.n(Q);
 			const {
@@ -1609,7 +1609,7 @@
 							s = c ? new O.a(c).multipliedBy(n).toFixed(0) : "";
 						e.onChange(s, c)
 					}
-				}), a.a.createElement(H.a, {
+				}), a.a.createElement(W.a, {
 					className: J.a.pointsInputIcon,
 					subredditId: o.id
 				})), a.a.createElement("div", {
@@ -1637,7 +1637,7 @@
 					className: J.a.coinsLabel
 				}, Y._("Reddit Coins", null, {
 					hk: "4n6R5v"
-				})))), a.a.createElement(W.a, {
+				})))), a.a.createElement(H.a, {
 					subredditId: o.id
 				}), n || s ? a.a.createElement("div", {
 					className: J.a.disclaimer
@@ -1691,10 +1691,10 @@
 					}
 				}, [h]);
 				const q = s.displayConversion,
-					H = e => {
+					W = e => {
 						g(Object(S.c)("coins", u, new O.a(E).dividedBy(q).toFixed(), e))
 					},
-					W = () => y(Object(P.f)());
+					H = () => y(Object(P.f)());
 				return a.a.createElement(G.a, {
 					approvalOverview: a.a.createElement(Z, {
 						pointsAmount: E,
@@ -1711,9 +1711,9 @@
 					approvalDetails: a.a.createElement(R, {
 						contractAddress: l
 					}),
-					onClose: W,
+					onClose: H,
 					onTransactionSuccess: async e => {
-						W(), y(function() {
+						H(), y(function() {
 							const e = Object(N.e)(d.fbt._("Processing your conversion...", null, {
 								hk: "4dA09t"
 							}), z.b.SuccessCommunity);
@@ -1739,12 +1739,12 @@
 								return e.duration = 15e3, Object(N.f)(e)
 							}())
 						}).catch(e => {
-							H(e.toString()), y(Object(N.f)(Object(N.e)(d.fbt._("There was an error while purchasing your Coins. Please try again later", null, {
+							W(e.toString()), y(Object(N.f)(Object(N.e)(d.fbt._("There was an error while purchasing your Coins. Please try again later", null, {
 								hk: "nEHTT"
 							}), z.b.Error)))
 						})
 					},
-					onTransactionFailure: H,
+					onTransactionFailure: W,
 					subredditId: u,
 					transaction: V ? async () => {
 						const e = await y(Object(w.b)(f, null == f ? void 0 : f.pricePackages[0], V, {
@@ -2629,14 +2629,14 @@
 			const c = e => {
 					return Object(a.c)(e, {
 						experimentEligibilitySelector: a.a,
-						experimentName: r.se
-					}) === r.Hd
+						experimentName: r.re
+					}) === r.Gd
 				},
 				s = e => {
 					return Object(a.c)(e, {
 						experimentEligibilitySelector: a.a,
-						experimentName: r.pe
-					}) === r.Hd
+						experimentName: r.oe
+					}) === r.Gd
 				}
 		},
 		"./src/reddit/selectors/gold/econPurchase.ts": function(e, t, n) {
@@ -2822,4 +2822,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-ConvertToCoinsModal.f32c1829c18480740e2f.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-ConvertToCoinsModal.11e94684f1a34ce54913.js.map

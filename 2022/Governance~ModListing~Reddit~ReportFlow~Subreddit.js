@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit~ReportFlow~Subreddit.3c7730a6ec05941cf111.js
-// Retrieved at 9/14/2022, 6:00:03 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit~ReportFlow~Subreddit.e93acfc503af756128c2.js
+// Retrieved at 9/15/2022, 10:50:03 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~ModListing~Reddit~ReportFlow~Subreddit"], {
 		"./src/lib/assertNever.ts": function(t, e, i) {
@@ -776,11 +776,11 @@
 			})), i.d(e, "k", (function() {
 				return W
 			})), i.d(e, "j", (function() {
-				return z
+				return Y
 			})), i.d(e, "e", (function() {
 				return H
 			})), i.d(e, "d", (function() {
-				return Q
+				return V
 			})), i.d(e, "g", (function() {
 				return $
 			})), i.d(e, "c", (function() {
@@ -885,7 +885,7 @@
 									name: t
 								});
 								e && Object(j.j)(e) && (I[t] = i[t])
-							} Object.keys(I).length && r(V(I)), r(Object(u.e)(n)), r(P({
+							} Object.keys(I).length && r(Q(I)), r(Object(u.e)(n)), r(P({
 							subredditId: t,
 							styles: {
 								...d,
@@ -903,7 +903,7 @@
 							success: g.ok
 						}
 					})
-				}, G = Object(d.a)(B.l), q = Object(d.a)(B.k), K = Object(d.a)(B.j), z = t => async (e, i, n) => {
+				}, G = Object(d.a)(B.l), q = Object(d.a)(B.k), K = Object(d.a)(B.j), Y = t => async (e, i, n) => {
 					let {
 						apiContext: r
 					} = n;
@@ -927,11 +927,11 @@
 						subredditId: t,
 						...l.error
 					}))
-				}, Y = Object(d.a)(B.d), H = t => async (e, i, n) => {
+				}, z = Object(d.a)(B.d), H = t => async (e, i, n) => {
 					const r = i(),
 						o = r.structuredStyles.models[t] || {},
 						l = Object(U.db)(r);
-					e(Y({
+					e(z({
 						isNightmodeOn: l,
 						styles: o,
 						subredditId: t
@@ -971,7 +971,7 @@
 							error: a.error
 						}))
 					})(t)(e, i, n), Object(I.g)(t, !1)(e, i, n)
-				}, V = Object(d.a)(B.c), Q = t => async (e, i, n) => {
+				}, Q = Object(d.a)(B.c), V = t => async (e, i, n) => {
 					const r = M(t),
 						o = i();
 					for (const t in r)
@@ -987,7 +987,7 @@
 									name: t
 								});
 								i && e(Object(_.h)(i))
-							} e(V(r))
+							} e(Q(r))
 				}, X = Object(d.a)(B.f), $ = (t, e, i) => async (n, r, o) => {
 					const l = r(),
 						s = i || l.structuredStyles.isEditing,
@@ -1003,7 +1003,7 @@
 						const i = await Object(_.g)(r(), a, e, j.a.StructuredStyles);
 						if (i) {
 							const e = i.url;
-							n(Object(_.j)(i)), n(V({
+							n(Object(_.j)(i)), n(Q({
 								[t]: e
 							}))
 						}
@@ -2304,13 +2304,13 @@
 			})), i.d(e, "h", (function() {
 				return K
 			})), i.d(e, "d", (function() {
-				return z
-			})), i.d(e, "H", (function() {
 				return Y
+			})), i.d(e, "H", (function() {
+				return z
 			})), i.d(e, "i", (function() {
 				return H
 			})), i.d(e, "c", (function() {
-				return V
+				return Q
 			})), i.d(e, "v", (function() {
 				return X
 			})), i.d(e, "u", (function() {
@@ -2607,14 +2607,14 @@
 						...W(t, e)
 					})
 				},
-				z = t => {
+				Y = t => {
 					Object(f.a)({
 						...S(t),
 						noun: "social_connect_link",
 						action: n.c.CLICK
 					})
 				},
-				Y = (t, e) => {
+				z = (t, e) => {
 					Object(f.a)({
 						...S(t),
 						noun: "twitter_share_checkbox",
@@ -2629,7 +2629,7 @@
 						action: i ? n.c.ENABLE : n.c.DISABLE
 					})
 				},
-				V = t => {
+				Q = t => {
 					Object(f.a)({
 						...S(t),
 						noun: "create_community",
@@ -2639,11 +2639,11 @@
 						}
 					})
 				},
-				Q = "community_recommendation",
+				V = "community_recommendation",
 				X = () => t => ({
 					...S(t),
 					action: n.c.VIEW,
-					noun: Q,
+					noun: V,
 					listing: {
 						links: Object(c.c)(t).map(e => Object(d.G)(t, e.name))
 					}
@@ -2651,7 +2651,7 @@
 				$ = (t, e) => i => ({
 					...S(i),
 					action: n.c.CLICK,
-					noun: Q,
+					noun: V,
 					actionInfo: {
 						...u.d(i),
 						position: e
@@ -2665,13 +2665,13 @@
 					Object(f.a)({
 						...S(t),
 						action: n.c.SKIP,
-						noun: Q
+						noun: V
 					})
 				},
 				J = (t, e) => i => ({
 					...S(i),
 					action: n.c.VIEW,
-					noun: `${Q}_hover`,
+					noun: `${V}_hover`,
 					actionInfo: {
 						...u.d(i),
 						position: e
@@ -2844,35 +2844,35 @@
 				_ = t => {
 					return Object(l.c)(t, {
 						experimentEligibilitySelector: l.a,
-						experimentName: o.Pe
-					}) === o.Re.ContentMatch
+						experimentName: o.Oe
+					}) === o.Qe.ContentMatch
 				},
 				f = t => {
 					return Object(l.c)(t, {
 						experimentEligibilitySelector: l.a,
-						experimentName: o.Pe
-					}) === o.Re.ConfidenceAndSuccess
+						experimentName: o.Oe
+					}) === o.Qe.ConfidenceAndSuccess
 				},
 				p = t => {
 					const e = Object(l.c)(t, {
 						experimentEligibilitySelector: l.a,
-						experimentName: o.Pe
+						experimentName: o.Oe
 					});
-					return e === o.Re.ContentMatch || e === o.Re.ConfidenceAndSuccess || e === o.db.Control1 || e === o.db.Control2
+					return e === o.Qe.ContentMatch || e === o.Qe.ConfidenceAndSuccess || e === o.cb.Control1 || e === o.cb.Control2
 				},
 				m = t => {
 					const e = Object(l.c)(t, {
 						experimentEligibilitySelector: l.a,
-						experimentName: o.Pe
+						experimentName: o.Oe
 					});
-					return e === o.db.Control1 || e === o.db.Control2
+					return e === o.cb.Control1 || e === o.cb.Control2
 				},
 				b = t => {
 					const e = Object(l.c)(t, {
 						experimentEligibilitySelector: l.a,
-						experimentName: o.Pe
+						experimentName: o.Oe
 					});
-					return e === o.Re.ContentMatch || e === o.Re.ConfidenceAndSuccess
+					return e === o.Qe.ContentMatch || e === o.Qe.ConfidenceAndSuccess
 				},
 				S = t => t.creations.subredditRec.api.pending,
 				E = t => t.creations.subredditRec.api.error,
@@ -2950,12 +2950,12 @@
 					return Object(o.O)(i)
 				}, (t, e, i) => !t && !e && i),
 				a = Object(n.a)((t, e) => Object(l.c)(t, {
-					experimentName: r.Zc,
+					experimentName: r.Yc,
 					experimentEligibilitySelector: t => c(t, e)
 				}), t => t),
-				d = t => t === r.Wf.NoCommunityWidgets,
-				u = t => t === r.Wf.NoRulesModerators,
-				_ = t => t === r.Wf.RelatedPostsDu
+				d = t => t === r.Vf.NoCommunityWidgets,
+				u = t => t === r.Vf.NoRulesModerators,
+				_ = t => t === r.Vf.RelatedPostsDu
 		},
 		"./src/reddit/selectors/tooltip.ts": function(t, e, i) {
 			"use strict";
@@ -2978,4 +2978,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit~ReportFlow~Subreddit.3c7730a6ec05941cf111.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit~ReportFlow~Subreddit.e93acfc503af756128c2.js.map
