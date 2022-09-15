@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CommunityNotificationSettings.61fa7cf6e29ee3f2bc7a.js
-// Retrieved at 9/15/2022, 10:50:03 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CommunityNotificationSettings.0ef0777f78e24709cfdd.js
+// Retrieved at 9/15/2022, 2:40:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CommunityNotificationSettings"], {
 		"./node_modules/lodash/times.js": function(e, t, n) {
@@ -377,7 +377,7 @@
 					onSelect: i
 				} = e;
 				var o, d;
-				const c = Object(x.a)(h.S),
+				const c = Object(x.a)(h.R),
 					[l, u] = Object(r.useState)(!1),
 					v = Object(r.useRef)(),
 					C = Object(k.a)(),
@@ -388,7 +388,7 @@
 						isNsfw: w,
 						isMuted: j
 					} = t,
-					I = j && c === h.Gd,
+					I = j && c === h.Fd,
 					L = I ? f.b.OFF : N,
 					F = t.styles.icon || (null === (o = t.styles.legacyIcon) || void 0 === o ? void 0 : o.url),
 					M = null !== (d = t.styles.primaryColor) && void 0 !== d ? d : void 0,
@@ -885,4 +885,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommunityNotificationSettings.61fa7cf6e29ee3f2bc7a.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommunityNotificationSettings.0ef0777f78e24709cfdd.js.map

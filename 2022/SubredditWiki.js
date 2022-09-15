@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditWiki.7fe6c9497b55ea8bc24f.js
-// Retrieved at 9/15/2022, 10:50:03 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditWiki.b852475a52072f024127.js
+// Retrieved at 9/15/2022, 2:40:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditWiki", "AchievementsActions"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, r) {
@@ -9942,7 +9942,7 @@
 				const t = Object(i.f)().getState(),
 					r = Object(h.a)(t, Object(o.c)());
 				if (e.isD2xPdpSideRailRecsEnabled) {
-					const t = e.d2xPdpSideRailRecsVariant === u.Qc.GreyRereddit || e.d2xPdpSideRailRecsVariant === u.Qc.GreyRedditNoNsfw || e.d2xPdpSideRailRecsVariant === u.Qc.LargeImagePreview ? e.reredditButtons : [];
+					const t = e.d2xPdpSideRailRecsVariant === u.Pc.GreyRereddit || e.d2xPdpSideRailRecsVariant === u.Pc.GreyRedditNoNsfw || e.d2xPdpSideRailRecsVariant === u.Pc.LargeImagePreview ? e.reredditButtons : [];
 					return n.a.createElement(j, {
 						reredditContent: t,
 						countryCode: e.countryCode
@@ -10491,12 +10491,12 @@
 						rtJsonElementProps: a
 					});
 					switch (i) {
-						case h.Nf.SmIcon:
+						case h.Mf.SmIcon:
 							return n.a.createElement(p, {
 								subredditName: s,
 								rtJsonElementProps: a
 							});
-						case h.Nf.SmIconHc:
+						case h.Mf.SmIconHc:
 							return n.a.createElement(p, {
 								subredditName: s,
 								isHoverable: !0,
@@ -11362,7 +11362,7 @@
 						} = t;
 						return Object(Be.c)(e, r)
 					},
-					isInNewModuleNCPV3Experiment: e => Object(De.a)(e) === Pe.Le.NewModule,
+					isInNewModuleNCPV3Experiment: e => Object(De.a)(e) === Pe.Ke.NewModule,
 					showGovernance: Te.d.spPoints,
 					showLeaderboard: Te.d.spLeaderboard,
 					showPredictionsLeaderboard: (e, t) => {
@@ -14058,8 +14058,8 @@
 			const o = e => n.e[Object(i.S)(e, {})] === n.d.Card,
 				d = e => Object(a.c)(e, {
 					experimentEligibilitySelector: o,
-					experimentName: s.xb
-				}) === s.Jc.Treatment
+					experimentName: s.wb
+				}) === s.Ic.Treatment
 		},
 		"./src/reddit/selectors/experiments/d2xPdpSideRailRecs.ts": function(e, t, r) {
 			"use strict";
@@ -14076,11 +14076,11 @@
 				d = r("./node_modules/reselect/es/index.js");
 			const c = Object(d.a)(e => Object(n.c)(e, {
 					experimentEligibilitySelector: e => Object(o.h)(e) && Object(i.f)(e),
-					experimentName: s.oc
+					experimentName: s.nc
 				}), a.a),
 				l = Object(d.a)(e => Object(n.c)(e, {
 					experimentEligibilitySelector: e => !Object(o.h)(e) && Object(i.f)(e),
-					experimentName: s.nc
+					experimentName: s.mc
 				}), a.a),
 				u = Object(d.a)(c, l, (e, t) => e || t),
 				m = Object(d.a)(c, l, (e, t) => !(!e && !t))
@@ -14097,13 +14097,13 @@
 			const i = e => {
 					return !(Object(n.c)(e, {
 						experimentEligibilitySelector: n.a,
-						experimentName: s.pe
-					}) === s.Gd)
+						experimentName: s.oe
+					}) === s.Fd)
 				},
 				a = e => Object(n.c)(e, {
 					experimentEligibilitySelector: n.a,
-					experimentName: s.qe
-				}) === s.Gd
+					experimentName: s.pe
+				}) === s.Fd
 		},
 		"./src/reddit/selectors/experiments/i18n/hiddenPowerups.ts": function(e, t, r) {
 			"use strict";
@@ -14122,8 +14122,8 @@
 				d = e => a.includes(e),
 				c = Object(s.a)(e => Object(i.c)(e, {
 					experimentEligibilitySelector: i.a,
-					experimentName: n.be
-				}), e => e === n.Gd)
+					experimentName: n.ae
+				}), e => e === n.Fd)
 		},
 		"./src/reddit/selectors/subredditMention.ts": function(e, t, r) {
 			"use strict";
@@ -14148,12 +14148,12 @@
 				d = e => {
 					return Object(i.c)(e, {
 						experimentEligibilitySelector: o,
-						experimentName: s.Gf
+						experimentName: s.Ff
 					}) || ""
 				},
 				c = e => {
 					const t = d(e);
-					return t === s.Nf.SmIcon || t === s.Nf.SmIconHc
+					return t === s.Mf.SmIcon || t === s.Mf.SmIconHc
 				},
 				l = (e, t) => {
 					let {
@@ -14358,4 +14358,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditWiki.7fe6c9497b55ea8bc24f.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditWiki.b852475a52072f024127.js.map

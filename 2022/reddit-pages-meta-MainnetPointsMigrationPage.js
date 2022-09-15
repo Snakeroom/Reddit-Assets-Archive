@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-pages-meta-MainnetPointsMigrationPage.7d2b3eb5135545f88f68.js
-// Retrieved at 9/15/2022, 10:50:03 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-pages-meta-MainnetPointsMigrationPage.0825c65ce9bd3c0d90a7.js
+// Retrieved at 9/15/2022, 2:40:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-pages-meta-MainnetPointsMigrationPage"], {
 		"./node_modules/lodash/uniqueId.js": function(e, t, n) {
@@ -1138,8 +1138,8 @@
 				U = n("./src/reddit/components/Governance/Token/index.tsx"),
 				z = n("./src/reddit/hooks/useLocale.ts"),
 				Z = n("./src/reddit/icons/svgs/LoadingOrbit/index.tsx"),
-				Y = n("./src/higherOrderComponents/asModal/index.tsx"),
-				q = n("./src/reddit/components/ModalStyledComponents/index.tsx"),
+				q = n("./src/higherOrderComponents/asModal/index.tsx"),
+				Y = n("./src/reddit/components/ModalStyledComponents/index.tsx"),
 				G = n("./node_modules/@ethersproject/address/lib.esm/index.js"),
 				K = n("./node_modules/lodash/debounce.js"),
 				X = n.n(K),
@@ -1229,7 +1229,7 @@
 				hk: "39wkrJ"
 			}), le._("Transfer the points into your wallet.", null, {
 				hk: "vZ3gk"
-			})], de = Object(Y.a)(e => {
+			})], de = Object(q.a)(e => {
 				let {
 					amount: t,
 					subredditId: n,
@@ -1247,7 +1247,7 @@
 					"aria-label": le._("Close", null, {
 						hk: "3fyGPG"
 					})
-				}, i.a.createElement(q.b, {
+				}, i.a.createElement(Y.b, {
 					className: ae.a.closeIcon
 				})), i.a.createElement("h2", null, u ? le._("Transfer to Mainnet", null, {
 					hk: "4riDgo"
@@ -1869,16 +1869,16 @@
 			const r = e => {
 					return Object(s.c)(e, {
 						experimentEligibilitySelector: s.a,
-						experimentName: a.re
-					}) === a.Gd
+						experimentName: a.qe
+					}) === a.Fd
 				},
 				i = e => {
 					return Object(s.c)(e, {
 						experimentEligibilitySelector: s.a,
-						experimentName: a.oe
-					}) === a.Gd
+						experimentName: a.ne
+					}) === a.Fd
 				}
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-pages-meta-MainnetPointsMigrationPage.7d2b3eb5135545f88f68.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-pages-meta-MainnetPointsMigrationPage.0825c65ce9bd3c0d90a7.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Governance-CommunityCard.6867141b53619f31499d.js
-// Retrieved at 9/15/2022, 10:50:03 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Governance-CommunityCard.b14d27cc58d52c2f4335.js
+// Retrieved at 9/15/2022, 2:40:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Governance-CommunityCard"], {
 		"./src/lib/bigNumberUtils/percent.ts": function(e, t, n) {
@@ -463,11 +463,11 @@
 				D = n("./src/reddit/icons/svgs/Settings/index.tsx"),
 				U = n("./src/reddit/models/Toast/index.ts"),
 				B = n("./src/reddit/selectors/tooltip.ts"),
-				V = n("./src/reddit/components/Governance/CommunityCard/CommunityTokens/BlockchainWalletInfo/index.m.less"),
-				F = n.n(V);
+				F = n("./src/reddit/components/Governance/CommunityCard/CommunityTokens/BlockchainWalletInfo/index.m.less"),
+				V = n.n(F);
 			const W = Object(w.a)(M.a),
-				H = "BlockchainWalletInfo--SettingsMenu";
-			class $ extends a.a.PureComponent {
+				q = "BlockchainWalletInfo--SettingsMenu";
+			class H extends a.a.PureComponent {
 				constructor() {
 					super(...arguments), this.onCopyToClipboard = () => {
 						Object(A.a)(this.props.publicAddress || "")
@@ -485,26 +485,26 @@
 						publicAddress: o
 					} = this.props;
 					return r && o ? a.a.createElement("div", {
-						className: F.a.publicAddressSection
+						className: V.a.publicAddressSection
 					}, a.a.createElement("div", {
-						className: F.a.publicAddress,
+						className: V.a.publicAddress,
 						title: o
 					}, "publicAddress"), a.a.createElement("div", {
-						className: F.a.yourWalletAddress
+						className: V.a.yourWalletAddress
 					}, s.fbt._("Your Wallet Address", null, {
 						hk: "3mvAs1"
 					}), t && a.a.createElement("button", {
-						className: F.a.settingsButton,
+						className: V.a.settingsButton,
 						title: s.fbt._("Wallet address settings", null, {
 							hk: "3AlpJV"
 						}),
 						role: "menu",
 						onClick: n,
-						id: H
+						id: q
 					}, a.a.createElement(D.a, {
-						className: F.a.settingsIcon
+						className: V.a.settingsIcon
 					})), t && a.a.createElement(W, {
-						tooltipId: H,
+						tooltipId: q,
 						isOpen: e,
 						renderContentsHidden: !0
 					}, a.a.createElement(L.b, {
@@ -533,8 +533,8 @@
 					})))) : null
 				}
 			}
-			const q = Object(b.c)({
-					dropdownIsOpen: Object(B.b)(H),
+			const $ = Object(b.c)({
+					dropdownIsOpen: Object(B.b)(q),
 					isEthereumProvider: (e, t) => {
 						let {
 							subredditId: n
@@ -548,12 +548,12 @@
 						return Object(l.b)(e, n)
 					}
 				}),
-				Z = Object(i.b)(q, (e, t) => ({
+				Z = Object(i.b)($, (e, t) => ({
 					onGovernanceError: t => {
 						Object(I.a)(e, t)
 					},
 					onOpenDropdown: () => e(Object(P.h)({
-						tooltipId: H
+						tooltipId: q
 					})),
 					onWalletRemoved: () => {
 						e(Object(E.h)({
@@ -566,7 +566,7 @@
 						}))
 					}
 				}));
-			var Y = Object(S.b)(Z($)),
+			var Y = Object(S.b)(Z(H)),
 				Q = n("./src/reddit/icons/svgs/QuarantineWarning/index.tsx"),
 				X = n("./src/reddit/components/Governance/CommunityCard/CommunityTokens/Risk/index.m.less"),
 				J = n.n(X);
@@ -1905,14 +1905,14 @@
 			const o = e => {
 					return Object(s.c)(e, {
 						experimentEligibilitySelector: s.a,
-						experimentName: r.re
-					}) === r.Gd
+						experimentName: r.qe
+					}) === r.Fd
 				},
 				a = e => {
 					return Object(s.c)(e, {
 						experimentEligibilitySelector: s.a,
-						experimentName: r.oe
-					}) === r.Gd
+						experimentName: r.ne
+					}) === r.Fd
 				}
 		},
 		"./src/reddit/selectors/gov.ts": function(e, t, n) {
@@ -1972,4 +1972,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Governance-CommunityCard.6867141b53619f31499d.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Governance-CommunityCard.b14d27cc58d52c2f4335.js.map

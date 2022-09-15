@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModListing.7c16ebfd69f5979ba8b2.js
-// Retrieved at 9/15/2022, 10:50:03 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModListing.c87c01072d64f4b3bc31.js
+// Retrieved at 9/15/2022, 2:40:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModListing"], {
 		"./node_modules/classnames/index.js": function(e, t, n) {
@@ -3539,7 +3539,7 @@
 				const p = Object(i.e)(e => e.subreddits.survey[n]),
 					h = Object(i.e)(e => e.subreddits.progressModule[n]),
 					b = Object(i.e)(u.a),
-					f = b !== c.Le.NewModule;
+					f = b !== c.Ke.NewModule;
 				return (null === (s = null == h ? void 0 : h.cards) || void 0 === s ? void 0 : s.length) > 0 && f ? o.a.createElement(m, {
 					closeModuleOnMount: !!t && t !== l.g.Large,
 					subredditId: n,
@@ -5580,15 +5580,15 @@
 			const i = e => {
 					const t = Object(s.c)(e, {
 						experimentEligibilitySelector: o.Q,
-						experimentName: r.jd
+						experimentName: r.id
 					});
-					return !(!t || Object(r.ng)(t))
+					return !(!t || Object(r.mg)(t))
 				},
 				a = e => {
 					return Object(s.c)(e, {
 						experimentEligibilitySelector: o.Q,
-						experimentName: r.jd
-					}) === r.Kd.ListingEnabled
+						experimentName: r.id
+					}) === r.Jd.ListingEnabled
 				}
 		},
 		"./src/reddit/selectors/experiments/navbarLikeMweb.ts": function(e, t, n) {
@@ -5599,9 +5599,9 @@
 			var r = n("./src/reddit/constants/experiments.ts"),
 				s = n("./src/reddit/helpers/chooseVariant/index.ts");
 			const o = e => Object(s.c)(e, {
-				experimentName: r.Ae,
+				experimentName: r.ze,
 				experimentEligibilitySelector: s.a
-			}) === r.Je.Enabled
+			}) === r.Ie.Enabled
 		},
 		"./src/reddit/selectors/focusedVerticalSuggestion.ts": function(e, t, n) {
 			"use strict";
@@ -5783,4 +5783,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModListing.7c16ebfd69f5979ba8b2.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModListing.c87c01072d64f4b3bc31.js.map
