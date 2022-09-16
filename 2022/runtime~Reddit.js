@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/runtime~Reddit.c6f5dccd1b19b3a71ac5.js
-// Retrieved at 9/15/2022, 2:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/runtime~Reddit.477518f1342f9e90a2c4.js
+// Retrieved at 9/16/2022, 1:00:05 PM by Reddit Dataminer v1.0.0
 ! function(e) {
 	function o(o) {
 		for (var a, n, r = o[0], s = o[1], c = o[2], l = 0, P = []; l < r.length; l++) n = r[l], Object.prototype.hasOwnProperty.call(d, n) && d[n] && P.push(d[n][0]), d[n] = 0;
@@ -1508,15 +1508,15 @@
 						"reddit-components-PostCreationForm-PredictionEditor-InactivityModal": "1afbd8ec8a3297bf5fc6",
 						"reddit-components-PostCreationForm-PredictionEditor-StartTournamentLimitationModal": "2f0d09f08aea580cb5d5",
 						"translations/bn_BD-json": "10864db7ea6acbf5d9fb",
-						"translations/de_DE-json": "dc78d5fad14a588a5756",
-						"translations/es_ES-json": "01e05f03600e3dfb42d4",
-						"translations/es_MX-json": "f7274bf81b38ba6a481f",
-						"translations/fr_FR-json": "dbb6e6ff365ad7c5ab42",
+						"translations/de_DE-json": "9c6042f47ae6910a1f12",
+						"translations/es_ES-json": "0a27a820a27bcd93e835",
+						"translations/es_MX-json": "b9014a13981c8d52f150",
+						"translations/fr_FR-json": "1df887b43048e682ce55",
 						"translations/hi_IN-json": "8021db17cb3dd0f4e93b",
-						"translations/it_IT-json": "76e4eac1f7c1c9ba5235",
+						"translations/it_IT-json": "fefc1e0b1cc2ef856d41",
 						"translations/pseudo-json": "28dccf1ab6b41bd83d71",
-						"translations/pt_BR-json": "e7a077eba50cabcb4b81",
-						"translations/pt_PT-json": "21c70c7c8e2d99b46f95",
+						"translations/pt_BR-json": "4befb94029ce789b3dfd",
+						"translations/pt_PT-json": "2b79c3d00819b375441f",
 						"vendors~AdminPanel": "eae9f345b12b82989d37",
 						AdminPanel: "b9500306a017b35f048a",
 						"vendors~Avatar~ChatPost~MarketplaceClaimModal~MarketplaceInFeedUnit~NftProfileUnit~RealtimeGQLSubscr~bfab320d": "d86f220f3e5fadf79e66",
@@ -1525,8 +1525,8 @@
 						GovernanceTransferPointsModal: "670d9d19196d931ed1d5",
 						"reddit-pages-meta-ArbitrumPointsMigrationPage": "156a0bfbd01a685dd54e",
 						"reddit-pages-meta-MainnetPointsMigrationPage": "0825c65ce9bd3c0d90a7",
-						"vendors~Avatar~MarketplaceClaimModal~MarketplaceInFeedUnit~NftProfileUnit~SnoovatarModal": "4dcc7775bfab5c969be6",
-						MarketplaceClaimModal: "129df9bc782be29a1b2e",
+						"vendors~Avatar~MarketplaceClaimModal~MarketplaceInFeedUnit~NftProfileUnit~SnoovatarModal": "23211bb3fbc6756250cd",
+						MarketplaceClaimModal: "768e788691145ee57b1c",
 						Avatar: "52a31d6bd6ec872fb40b",
 						SnoovatarModal: "c2c0d2b98d6b9f317a0d",
 						"vendors~reddit-components-Governance-TransactionModals-BurnPointsModal~reddit-components-Governance-~339111b0": "003c5a051b1aaec502e5",
@@ -1568,7 +1568,7 @@
 						CustomBadgeHovercardTooltip: "23199f4dced6bdcdbec8",
 						GovernanceUserPublicPointsDisplay: "c55ba0366cee87c4cc78",
 						SubredditPremiumBadgeHovercardTooltip: "b4da74d45bcaac4dff65",
-						NftProfileUnit: "d60f43f0b008a96ec0fe",
+						NftProfileUnit: "deac305251c4f8a84e68",
 						gildActions: "bd9c66b6ff8c32d4e4b3",
 						"reddit-components-SidebarNativeAd": "42618bde0eed35ec9df3",
 						CommentsPageNativeAd: "74b14573fe223964da28",
@@ -1632,7 +1632,7 @@
 						"reddit-components-DiscoveryUnit-CommunityCrossPollination-FocusedVerticals-CommunityDescWithPosts": "7f2021212d051e322fe9",
 						"reddit-components-InFeedPostCreation": "57b47c39b584527e87df",
 						"reddit-components-TabBadger-Component": "ee59e2e20682d80c658f",
-						MarketplaceInFeedUnit: "3afaf4a4c8228ff26e11",
+						MarketplaceInFeedUnit: "30fd732ebae41bd33fa6",
 						RpanListingUnit: "1ee5b1aa4896b0d9d2f9",
 						StructuredStyles: "6f2ae15ca40d50935fa0",
 						JsonEMEntityView: "858027fa85eb87c716ab",
@@ -1786,4 +1786,4 @@
 	var m = c;
 	t()
 }([]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/runtime~Reddit.c6f5dccd1b19b3a71ac5.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/runtime~Reddit.477518f1342f9e90a2c4.js.map

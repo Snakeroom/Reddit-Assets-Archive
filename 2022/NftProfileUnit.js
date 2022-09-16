@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/NftProfileUnit.d60f43f0b008a96ec0fe.js
-// Retrieved at 9/15/2022, 2:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/NftProfileUnit.deac305251c4f8a84e68.js
+// Retrieved at 9/16/2022, 1:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["NftProfileUnit"], {
 		"./node_modules/classnames/index.js": function(t, e, r) {
@@ -147,7 +147,7 @@
 		"./src/reddit/components/Crypto/CryptoComponentsConfigProvider.tsx": function(t, e, r) {
 			"use strict";
 			r.d(e, "a", (function() {
-				return h
+				return d
 			}));
 			var n = r("./node_modules/@reddit/crypto/react/config/index.es.js"),
 				i = r("./node_modules/@reddit/marketplace/marketplace.es.js"),
@@ -156,14 +156,26 @@
 				a = r("./node_modules/react-redux/es/index.js"),
 				u = r("./src/reddit/components/AvatarBuilder/useMarketplaceConfig.tsx"),
 				f = r("./src/reddit/selectors/experiments/econ/index.ts");
-			const c = t => {
+
+			function c() {
+				return (c = Object.assign || function(t) {
+					for (var e = 1; e < arguments.length; e++) {
+						var r = arguments[e];
+						for (var n in r) Object.prototype.hasOwnProperty.call(r, n) && (t[n] = r[n])
+					}
+					return t
+				}).apply(this, arguments)
+			}
+			const l = t => {
 					let {
 						children: e
 					} = t;
 					const r = Object(u.b)();
-					return s.a.createElement(i.d, r, e)
+					return s.a.createElement(i.d, c({}, r, {
+						shouldContainModal: !1
+					}), e)
 				},
-				l = t => {
+				h = t => {
 					let {
 						children: e
 					} = t;
@@ -172,11 +184,11 @@
 						value: r
 					}, e)
 				},
-				h = t => {
+				d = t => {
 					let {
 						children: e
 					} = t;
-					return Object(a.e)(f.g) ? s.a.createElement(c, null, e) : s.a.createElement(l, null, e)
+					return Object(a.e)(f.g) ? s.a.createElement(l, null, e) : s.a.createElement(h, null, e)
 				}
 		},
 		"./src/reddit/components/Econ/Marketplace/NftProfileUnit/index.m.less": function(t, e, r) {
@@ -1770,4 +1782,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/NftProfileUnit.d60f43f0b008a96ec0fe.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/NftProfileUnit.deac305251c4f8a84e68.js.map

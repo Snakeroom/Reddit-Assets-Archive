@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/vendors~Avatar~MarketplaceClaimModal~MarketplaceInFeedUnit~NftProfileUnit~SnoovatarModal.4dcc7775bfab5c969be6.js
-// Retrieved at 9/15/2022, 11:50:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/vendors~Avatar~MarketplaceClaimModal~MarketplaceInFeedUnit~NftProfileUnit~SnoovatarModal.23211bb3fbc6756250cd.js
+// Retrieved at 9/16/2022, 1:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["vendors~Avatar~MarketplaceClaimModal~MarketplaceInFeedUnit~NftProfileUnit~SnoovatarModal"], {
 		"./node_modules/@apollo/client/cache/core/types/Cache.js": function(e, t, s) {
@@ -44811,9 +44811,7 @@
 									data: o
 								} = yield e.mutate({
 									mutation: Dp,
-									variables: {
-										input: t
-									}
+									variables: de({}, t)
 								});
 								if (null == (a = null == o ? void 0 : o.createEconPayment) || !a.ok) throw s((null == (i = null == o ? void 0 : o.createEconPayment.errors) ? void 0 : i[0].code) || "other"), SS(null == o ? void 0 : o.createEconPayment, ES) ? new Error("Sorry, we just sold out of this item! We have issued you a refund.") : SS(null == o ? void 0 : o.createEconPayment, RS) ? new Error("Sorry, you have reached the purchase limit.") : new Error("Error creating the payment. You were not charged, please try again.");
 								return o.createEconPayment
@@ -52177,7 +52175,8 @@
 						children: t,
 						config: s,
 						sendEvent: a,
-						isNightMode: i
+						isNightMode: i,
+						shouldContainModal: o = !0
 					}) => e ? Wf("div", {
 						className: "avatar-wrapper",
 						children: Wf(Kf, {
@@ -52186,6 +52185,7 @@
 								authHeaders: e,
 								sendEvent: a,
 								isNightMode: i,
+								shouldContainModal: o,
 								children: t
 							})
 						})
@@ -52194,9 +52194,10 @@
 						authHeaders: e,
 						children: t,
 						sendEvent: s,
-						isNightMode: a
+						isNightMode: a,
+						shouldContainModal: i
 					}) => {
-						const i = (() => {
+						const o = (() => {
 								const {
 									GRAPHQL_URL: e,
 									IS_PRODUCTION: t,
@@ -52290,15 +52291,15 @@
 									})
 								}
 							})(),
-							o = Object(A.useMemo)(() => i(e), []);
+							r = Object(A.useMemo)(() => o(e), []);
 						return Wf(h.a, {
-							client: o,
-							children: !Object(k.isNil)(o.extract()) && Wf(FP, {
+							client: r,
+							children: !Object(k.isNil)(r.extract()) && Wf(FP, {
 								children: Wf(LP, {
 									sendEvent: s,
 									isNightMode: a,
 									children: Gf(Hf, {
-										children: [t, Wf("div", {
+										children: [t, i && Wf("div", {
 											id: "avatar-modal"
 										})]
 									})
@@ -63097,4 +63098,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/vendors~Avatar~MarketplaceClaimModal~MarketplaceInFeedUnit~NftProfileUnit~SnoovatarModal.4dcc7775bfab5c969be6.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/vendors~Avatar~MarketplaceClaimModal~MarketplaceInFeedUnit~NftProfileUnit~SnoovatarModal.23211bb3fbc6756250cd.js.map
