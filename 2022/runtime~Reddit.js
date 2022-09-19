@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/runtime~Reddit.58edda8f1498a9c1741b.js
-// Retrieved at 9/19/2022, 11:40:03 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/runtime~Reddit.fe6931c175926f9cd3d0.js
+// Retrieved at 9/19/2022, 12:20:04 PM by Reddit Dataminer v1.0.0
 ! function(e) {
 	function o(o) {
 		for (var a, n, r = o[0], s = o[1], c = o[2], l = 0, P = []; l < r.length; l++) n = r[l], Object.prototype.hasOwnProperty.call(d, n) && d[n] && P.push(d[n][0]), d[n] = 0;
@@ -889,7 +889,7 @@
 					removalReasonActions: "4e69976e3cfd0a5cd23b",
 					schedulePickerModal: "02db6c064a04ff668d5c",
 					"ChatMessageInput~ChatPost": "d9490d635199c305f487",
-					ChatPost: "dfca736e791bb6514571",
+					ChatPost: "366a4fda179f56541aea",
 					ChatMessageInput: "5d8ca994e55a0172f585",
 					RichTextEditor: "62b1eba3c8a387c67c67",
 					"reddit-components-ClassicPost": "ac9eeddf34173d6ad1ca",
@@ -1605,7 +1605,7 @@
 						removalReasonActions: "a22e9f97811fc8713b6a",
 						schedulePickerModal: "d8390607bbb48c36edd9",
 						"ChatMessageInput~ChatPost": "3c038912c0f8e1e362e2",
-						ChatPost: "38f301fd9b9988e75841",
+						ChatPost: "c3236affbf5fc29ba534",
 						ChatMessageInput: "41ee7b13dd563a017172",
 						RichTextEditor: "68c08c083e102d6ce813",
 						"reddit-components-ClassicPost": "dcef704a504b94c32c77",
@@ -1786,4 +1786,4 @@
 	var m = c;
 	t()
 }([]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/runtime~Reddit.58edda8f1498a9c1741b.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/runtime~Reddit.fe6931c175926f9cd3d0.js.map
