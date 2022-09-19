@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CountryPage~Multireddit.1b16776d14d259d780f1.js
-// Retrieved at 9/15/2022, 2:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CountryPage~Multireddit.78af1e8882cde88287f7.js
+// Retrieved at 9/19/2022, 1:30:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CountryPage~Multireddit"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -3528,12 +3528,12 @@
 						rtJsonElementProps: o
 					});
 					switch (i) {
-						case b.Mf.SmIcon:
+						case b.Nf.SmIcon:
 							return s.a.createElement(h, {
 								subredditName: r,
 								rtJsonElementProps: o
 							});
-						case b.Mf.SmIconHc:
+						case b.Nf.SmIconHc:
 							return s.a.createElement(h, {
 								subredditName: r,
 								isHoverable: !0,
@@ -4726,15 +4726,15 @@
 			const o = e => {
 					const t = Object(s.c)(e, {
 						experimentEligibilitySelector: i.Q,
-						experimentName: r.id
+						experimentName: r.jd
 					});
-					return !(!t || Object(r.mg)(t))
+					return !(!t || Object(r.ng)(t))
 				},
 				a = e => {
 					return Object(s.c)(e, {
 						experimentEligibilitySelector: i.Q,
-						experimentName: r.id
-					}) === r.Jd.ListingEnabled
+						experimentName: r.jd
+					}) === r.Kd.ListingEnabled
 				}
 		},
 		"./src/reddit/selectors/focusedVerticalSuggestion.ts": function(e, t, n) {
@@ -4867,12 +4867,12 @@
 				c = e => {
 					return Object(i.c)(e, {
 						experimentEligibilitySelector: a,
-						experimentName: r.Ff
+						experimentName: r.Gf
 					}) || ""
 				},
 				d = e => {
 					const t = c(e);
-					return t === r.Mf.SmIcon || t === r.Mf.SmIconHc
+					return t === r.Nf.SmIcon || t === r.Nf.SmIconHc
 				},
 				l = (e, t) => {
 					let {
@@ -4901,4 +4901,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CountryPage~Multireddit.1b16776d14d259d780f1.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CountryPage~Multireddit.78af1e8882cde88287f7.js.map

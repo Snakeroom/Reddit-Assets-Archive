@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Reddit~StandalonePostPage.19dda8d48299e64cf200.js
-// Retrieved at 9/15/2022, 2:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Reddit~StandalonePostPage.b0996799cc12931c1f70.js
+// Retrieved at 9/19/2022, 1:30:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Reddit~StandalonePostPage"], {
 		"./src/higherOrderComponents/asModal/helpers.ts": function(e, t, n) {
@@ -3126,8 +3126,8 @@
 					if (Object(a.a)(e)) return !1;
 					return Object(r.c)(e, {
 						experimentEligibilitySelector: r.a,
-						experimentName: s.uc
-					}) === s.Qc.Enabled
+						experimentName: s.vc
+					}) === s.Rc.Enabled
 				}
 		},
 		"./src/reddit/selectors/experiments/presence.ts": function(e, t, n) {
@@ -3140,8 +3140,8 @@
 			const o = e => {
 				return Object(r.c)(e, {
 					experimentEligibilitySelector: r.a,
-					experimentName: s.We
-				}) === s.Fd
+					experimentName: s.Xe
+				}) === s.Gd
 			}
 		},
 		"./src/reddit/selectors/userPrefs.ts": function(e, t, n) {
@@ -3226,4 +3226,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit~StandalonePostPage.19dda8d48299e64cf200.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit~StandalonePostPage.b0996799cc12931c1f70.js.map

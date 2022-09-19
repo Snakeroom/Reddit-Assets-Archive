@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModQueuePages.9f6f27cc5029ba4f5aa9.js
-// Retrieved at 9/15/2022, 2:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModQueuePages.0a47125cf8dec6702d8e.js
+// Retrieved at 9/19/2022, 1:30:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModQueuePages"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -4694,8 +4694,8 @@
 				F = n("./src/reddit/selectors/user.ts");
 			const B = e => Object(A.c)(e, {
 				experimentEligibilitySelector: F.Q,
-				experimentName: L.gc
-			}) === L.Fd;
+				experimentName: L.hc
+			}) === L.Gd;
 			var D = n("./src/reddit/components/ModQueueList/SortByNumReportsTooltip.m.less"),
 				U = n.n(D);
 			const W = e => {
@@ -7212,12 +7212,12 @@
 						rtJsonElementProps: a
 					});
 					switch (r) {
-						case h.Mf.SmIcon:
+						case h.Nf.SmIcon:
 							return o.a.createElement(p, {
 								subredditName: s,
 								rtJsonElementProps: a
 							});
-						case h.Mf.SmIconHc:
+						case h.Nf.SmIconHc:
 							return o.a.createElement(p, {
 								subredditName: s,
 								isHoverable: !0,
@@ -8445,12 +8445,12 @@
 				d = e => {
 					return Object(r.c)(e, {
 						experimentEligibilitySelector: i,
-						experimentName: s.Ff
+						experimentName: s.Gf
 					}) || ""
 				},
 				c = e => {
 					const t = d(e);
-					return t === s.Mf.SmIcon || t === s.Mf.SmIconHc
+					return t === s.Nf.SmIcon || t === s.Nf.SmIconHc
 				},
 				l = (e, t) => {
 					let {
@@ -8485,4 +8485,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModQueuePages.9f6f27cc5029ba4f5aa9.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModQueuePages.0a47125cf8dec6702d8e.js.map

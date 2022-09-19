@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Governance-CommunityCard.b14d27cc58d52c2f4335.js
-// Retrieved at 9/15/2022, 2:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Governance-CommunityCard.70e3da85aeb2d62b18bd.js
+// Retrieved at 9/19/2022, 1:30:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Governance-CommunityCard"], {
 		"./src/lib/bigNumberUtils/percent.ts": function(e, t, n) {
@@ -463,11 +463,11 @@
 				D = n("./src/reddit/icons/svgs/Settings/index.tsx"),
 				U = n("./src/reddit/models/Toast/index.ts"),
 				B = n("./src/reddit/selectors/tooltip.ts"),
-				F = n("./src/reddit/components/Governance/CommunityCard/CommunityTokens/BlockchainWalletInfo/index.m.less"),
-				V = n.n(F);
+				V = n("./src/reddit/components/Governance/CommunityCard/CommunityTokens/BlockchainWalletInfo/index.m.less"),
+				F = n.n(V);
 			const W = Object(w.a)(M.a),
-				q = "BlockchainWalletInfo--SettingsMenu";
-			class H extends a.a.PureComponent {
+				H = "BlockchainWalletInfo--SettingsMenu";
+			class $ extends a.a.PureComponent {
 				constructor() {
 					super(...arguments), this.onCopyToClipboard = () => {
 						Object(A.a)(this.props.publicAddress || "")
@@ -485,26 +485,26 @@
 						publicAddress: o
 					} = this.props;
 					return r && o ? a.a.createElement("div", {
-						className: V.a.publicAddressSection
+						className: F.a.publicAddressSection
 					}, a.a.createElement("div", {
-						className: V.a.publicAddress,
+						className: F.a.publicAddress,
 						title: o
 					}, "publicAddress"), a.a.createElement("div", {
-						className: V.a.yourWalletAddress
+						className: F.a.yourWalletAddress
 					}, s.fbt._("Your Wallet Address", null, {
 						hk: "3mvAs1"
 					}), t && a.a.createElement("button", {
-						className: V.a.settingsButton,
+						className: F.a.settingsButton,
 						title: s.fbt._("Wallet address settings", null, {
 							hk: "3AlpJV"
 						}),
 						role: "menu",
 						onClick: n,
-						id: q
+						id: H
 					}, a.a.createElement(D.a, {
-						className: V.a.settingsIcon
+						className: F.a.settingsIcon
 					})), t && a.a.createElement(W, {
-						tooltipId: q,
+						tooltipId: H,
 						isOpen: e,
 						renderContentsHidden: !0
 					}, a.a.createElement(L.b, {
@@ -533,8 +533,8 @@
 					})))) : null
 				}
 			}
-			const $ = Object(b.c)({
-					dropdownIsOpen: Object(B.b)(q),
+			const q = Object(b.c)({
+					dropdownIsOpen: Object(B.b)(H),
 					isEthereumProvider: (e, t) => {
 						let {
 							subredditId: n
@@ -548,12 +548,12 @@
 						return Object(l.b)(e, n)
 					}
 				}),
-				Z = Object(i.b)($, (e, t) => ({
+				Z = Object(i.b)(q, (e, t) => ({
 					onGovernanceError: t => {
 						Object(I.a)(e, t)
 					},
 					onOpenDropdown: () => e(Object(P.h)({
-						tooltipId: q
+						tooltipId: H
 					})),
 					onWalletRemoved: () => {
 						e(Object(E.h)({
@@ -566,7 +566,7 @@
 						}))
 					}
 				}));
-			var Y = Object(S.b)(Z(H)),
+			var Y = Object(S.b)(Z($)),
 				Q = n("./src/reddit/icons/svgs/QuarantineWarning/index.tsx"),
 				X = n("./src/reddit/components/Governance/CommunityCard/CommunityTokens/Risk/index.m.less"),
 				J = n.n(X);
@@ -1905,14 +1905,14 @@
 			const o = e => {
 					return Object(s.c)(e, {
 						experimentEligibilitySelector: s.a,
-						experimentName: r.qe
-					}) === r.Fd
+						experimentName: r.re
+					}) === r.Gd
 				},
 				a = e => {
 					return Object(s.c)(e, {
 						experimentEligibilitySelector: s.a,
-						experimentName: r.ne
-					}) === r.Fd
+						experimentName: r.oe
+					}) === r.Gd
 				}
 		},
 		"./src/reddit/selectors/gov.ts": function(e, t, n) {
@@ -1972,4 +1972,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Governance-CommunityCard.b14d27cc58d52c2f4335.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Governance-CommunityCard.70e3da85aeb2d62b18bd.js.map

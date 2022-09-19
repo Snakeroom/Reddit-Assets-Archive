@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/NsfwBlockingModal.41d502e06df493aab1f1.js
-// Retrieved at 9/15/2022, 2:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/NsfwBlockingModal.6f854dcadb8cb9401bbd.js
+// Retrieved at 9/19/2022, 1:30:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["NsfwBlockingModal"], {
 		"./src/reddit/components/Footer/index.m.less": function(e, t, n) {
@@ -169,11 +169,11 @@
 				j = n("./src/reddit/selectors/experiments/nsfwBlockingExperiment.ts"),
 				k = n("./src/reddit/components/Upsell/NsfwBlocking/index.m.less"),
 				E = n.n(k);
-			const y = {
+			const O = {
 					d2x_nsfw_signup_blocking_de_v1: `${s.a.assetPath}/img/nsfw-blocking-promo/d2x_nsfw_signup_blocking_de_v1_QR-code.jpeg`,
 					d2x_nsfw_signup_blocking_non_us_v1: `${s.a.assetPath}/img/nsfw-blocking-promo/d2x_nsfw_signup_blocking_de_v1_QR-code.jpeg`
 				},
-				O = e => {
+				y = e => {
 					const t = Object(c.d)(),
 						n = Object(C.b)(),
 						s = Object(c.e)(j.f),
@@ -271,7 +271,7 @@
 					} = e, s = Object(c.e)(j.g), r = Object(c.e)(j.h), a = Object(c.e)(j.f), l = a === j.a.Blurred ? b.a.White : a === j.a.NoPreview ? b.a.Grey : void 0;
 					return o.a.createElement("div", {
 						className: E.a.container
-					}, o.a.createElement(O, {
+					}, o.a.createElement(y, {
 						contentTitle: n
 					}), o.a.createElement("div", {
 						className: Object(d.a)(E.a.footerWrapper, {
@@ -280,10 +280,10 @@
 					}, o.a.createElement(b.b, {
 						textColor: l
 					})), o.a.createElement(w, {
-						qrCodeAsset: (() => s === p.Nc.Enabled || r === p.sb.BlurredPreview || r === p.sb.NoPreview ? y.d2x_nsfw_signup_blocking_de_v1 : y.d2x_nsfw_signup_blocking_non_us_v1)()
+						qrCodeAsset: (() => s === p.Oc.Enabled || r === p.sb.BlurredPreview || r === p.sb.NoPreview ? O.d2x_nsfw_signup_blocking_de_v1 : O.d2x_nsfw_signup_blocking_non_us_v1)()
 					}))
 				}
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/NsfwBlockingModal.41d502e06df493aab1f1.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/NsfwBlockingModal.6f854dcadb8cb9401bbd.js.map

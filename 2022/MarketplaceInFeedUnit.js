@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/MarketplaceInFeedUnit.30fd732ebae41bd33fa6.js
-// Retrieved at 9/16/2022, 1:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/MarketplaceInFeedUnit.1f859b15f72aedcdbf26.js
+// Retrieved at 9/19/2022, 1:30:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["MarketplaceInFeedUnit"], {
 		"./src/reddit/components/AvatarBuilder/useMarketplaceConfig.tsx": function(e, t, n) {
@@ -42,13 +42,13 @@
 							},
 							expiration: c
 						}), [n, c]),
-						j = {
+						k = {
 							...b,
 							STRIPE_API_KEY: r.a.stripe.apiKey(e),
 							ACCESS_TOKEN: n,
 							BLOCKCHAIN_PROVIDER: f
 						},
-						k = Object(a.useCallback)(e => {
+						j = Object(a.useCallback)(e => {
 							O(t => {
 								const n = u.o(t);
 								return {
@@ -65,10 +65,10 @@
 						}, [O]);
 					return Object(a.useMemo)(() => ({
 						authHeaders: _,
-						config: j,
+						config: k,
 						isNightMode: s,
-						sendEvent: k
-					}), [_, j, s, k])
+						sendEvent: j
+					}), [_, k, s, j])
 				},
 				f = () => {
 					const e = Object(o.e)(e => e.user.session),
@@ -193,8 +193,8 @@
 				O = n("./src/reddit/helpers/trackers/marketplace/claims.ts"),
 				f = n("./src/reddit/hooks/useLocalStorage.ts"),
 				_ = n("./src/reddit/hooks/usePreloadModal.ts"),
-				j = n("./src/reddit/hooks/useTracking.ts"),
-				k = n("./src/reddit/selectors/gold/marketplace/claimFlow.ts"),
+				k = n("./src/reddit/hooks/useTracking.ts"),
+				j = n("./src/reddit/selectors/gold/marketplace/claimFlow.ts"),
 				x = n("./src/reddit/components/ConfirmUserActionModal/index.tsx"),
 				E = n("./src/reddit/components/Econ/Marketplace/InFeedUnit/confirmDismissModalStyles.m.less"),
 				h = n.n(E);
@@ -236,8 +236,8 @@
 					layout: t
 				} = e;
 				const n = Object(d.d)(),
-					x = Object(j.a)(),
-					E = Object(d.e)(k.a),
+					x = Object(k.a)(),
+					E = Object(d.e)(j.a),
 					[h, C] = Object(o.useState)(!1),
 					[I, y] = Object(o.useState)(!1);
 				Object(_.a)(m.a);
@@ -365,8 +365,8 @@
 			}));
 			var r = n("./src/reddit/constants/experiments.ts"),
 				c = n("./src/reddit/selectors/experiments/econ/simpleExperiment.ts");
-			const a = Object(c.a)(r.jd)
+			const a = Object(c.a)(r.kd)
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/MarketplaceInFeedUnit.30fd732ebae41bd33fa6.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/MarketplaceInFeedUnit.1f859b15f72aedcdbf26.js.map

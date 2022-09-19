@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/removalReasonActions.a22e9f97811fc8713b6a.js
-// Retrieved at 9/15/2022, 2:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/removalReasonActions.8b70faf469c6dd3becce.js
+// Retrieved at 9/19/2022, 1:30:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["removalReasonActions"], {
 		"./node_modules/lodash/map.js": function(e, t, o) {
@@ -88,7 +88,7 @@
 			})), o.d(t, "h", (function() {
 				return Ue
 			})), o.d(t, "k", (function() {
-				return Fe
+				return Be
 			})), o.d(t, "e", (function() {
 				return Ge
 			})), o.d(t, "d", (function() {
@@ -230,8 +230,8 @@
 				};
 			var K = o("./src/redditGQL/operations/UpdateComment.json");
 			var U = o("./src/redditGQL/operations/UpdateCommentFollowState.json");
-			var F = o("./src/reddit/endpoints/post/index.tsx"),
-				B = o("./src/reddit/endpoints/post/convert.ts"),
+			var B = o("./src/reddit/endpoints/post/index.tsx"),
+				F = o("./src/reddit/endpoints/post/convert.ts"),
 				G = o("./src/reddit/endpoints/publicAccessNetwork/index.ts"),
 				H = o("./src/reddit/featureFlags/index.ts"),
 				V = o("./src/reddit/helpers/comment/index.ts"),
@@ -254,8 +254,8 @@
 				ce = o("./node_modules/reselect/es/index.js");
 			const ae = Object(ce.a)(e => Object(ie.c)(e, {
 				experimentEligibilitySelector: ie.a,
-				experimentName: re.Ib
-			}), e => e === re.Fd);
+				experimentName: re.Jb
+			}), e => e === re.Gd);
 			var de = o("./src/reddit/selectors/experiments/contributeBeforeSignUp.ts"),
 				le = o("./src/reddit/selectors/platform.ts"),
 				me = o("./src/reddit/selectors/posts.ts"),
@@ -564,7 +564,7 @@
 					})), s(Object(p.c)(e));
 					else {
 						s(Object(p.b)(o));
-						const r = await Object(B.a)(c(), e, a ? t : JSON.stringify(t));
+						const r = await Object(F.a)(c(), e, a ? t : JSON.stringify(t));
 						if (r.ok) {
 							const t = r.body.output;
 							s(Object(p.a)(o)), s(Pe({
@@ -663,10 +663,10 @@
 							commentsPageKey: o
 						}))
 					}
-				}, Fe = (e, t) => o => o(Me({
+				}, Be = (e, t) => o => o(Me({
 					draftKey: e,
 					formData: t
-				})), Be = Object(r.a)(be.u), Ge = e => {
+				})), Fe = Object(r.a)(be.u), Ge = e => {
 					let {
 						commentId: t,
 						commentMode: o,
@@ -676,7 +676,7 @@
 					} = e;
 					return async (e, i) => {
 						const c = i();
-						c.user.account && (Q.c(c), e(Be({
+						c.user.account && (Q.c(c), e(Fe({
 							commentId: t,
 							commentsPageKey: n,
 							draftKey: s,
@@ -836,7 +836,7 @@
 						[e]: {
 							sendReplies: r
 						}
-					})), (await Object(F.s)(s(), e, r)).ok || t(Object(pe.j)({
+					})), (await Object(B.s)(s(), e, r)).ok || t(Object(pe.j)({
 						[e]: {
 							sendReplies: !r
 						}
@@ -1509,8 +1509,8 @@
 				L = o("./src/lib/makeApiRequest/index.ts"),
 				K = o("./src/lib/omitHeaders/index.ts"),
 				U = o("./src/reddit/constants/headers.ts"),
-				F = o("./src/reddit/models/RichTextJson/addRTJParam.ts");
-			const B = (e, t) => Object(L.a)(Object(K.a)(e, [U.a]), {
+				B = o("./src/reddit/models/RichTextJson/addRTJParam.ts");
+			const F = (e, t) => Object(L.a)(Object(K.a)(e, [U.a]), {
 					endpoint: `${e.apiUrl}/api/v1/modactions/removal_reasons/`,
 					method: v.mb.POST,
 					type: "json",
@@ -1521,7 +1521,7 @@
 					}
 				}),
 				G = (e, t, o) => Object(L.a)(Object(K.a)(e, [U.a]), {
-					endpoint: Object(F.a)(`${e.apiUrl}/api/v1/modactions/removal_${o}_message/`),
+					endpoint: Object(B.a)(`${e.apiUrl}/api/v1/modactions/removal_${o}_message/`),
 					method: v.mb.POST,
 					type: "json",
 					data: t
@@ -1659,7 +1659,7 @@
 							modNote: s,
 							reasonId: t ? t.id : null
 						},
-						h = await B(d(), f);
+						h = await F(d(), f);
 					if (h.ok) {
 						if (i(he()), t) {
 							i(ge());
@@ -1755,7 +1755,7 @@
 							modNote: r,
 							reasonId: t ? t.id : null
 						},
-						b = await B(d(), p);
+						b = await F(d(), p);
 					if (b.ok) {
 						const n = {
 							ids: e,
@@ -1931,8 +1931,8 @@
 				L = o("./src/reddit/selectors/comments.ts"),
 				K = o("./src/reddit/selectors/moderatorPermissions.ts"),
 				U = o("./src/reddit/selectors/posts.ts"),
-				F = o("./src/reddit/selectors/tooltip.ts"),
-				B = o("./src/reddit/selectors/user.ts"),
+				B = o("./src/reddit/selectors/tooltip.ts"),
+				F = o("./src/reddit/selectors/user.ts"),
 				G = o("./src/reddit/components/CommentSort/CommentSort.m.less"),
 				H = o.n(G),
 				V = o("./src/reddit/reducers/features/comments/visitHighlightingFilter/index.ts");
@@ -2023,8 +2023,8 @@
 						})
 					},
 					contestModeModalIsOpen: Object(D.b)("CommentSort--ContestMode--Modal"),
-					dropdownIsOpen: Object(F.b)(Q),
-					highlightIsOpen: Object(F.b)(X),
+					dropdownIsOpen: Object(B.b)(Q),
+					highlightIsOpen: Object(B.b)(X),
 					hasModeratorPostPermissions: (e, t) => {
 						let {
 							postId: o
@@ -2040,7 +2040,7 @@
 						let {
 							postId: o
 						} = t;
-						const n = Object(B.v)(e),
+						const n = Object(F.v)(e),
 							s = !!Object(K.m)(e, {
 								postId: o
 							}),
@@ -2121,11 +2121,11 @@
 						hk: "2AkJRZ"
 					}) : n.fbt._("Start contest?", null, {
 						hk: "2PQPOu"
-					}), F = I ? n.fbt._("End", null, {
+					}), B = I ? n.fbt._("End", null, {
 						hk: "1Q8KqM"
 					}) : n.fbt._("Start", null, {
 						hk: "Mjvpj"
-					}), B = I ? n.fbt._("Ending contest mode will make comment vote scores visible and disable random comment ordering.", null, {
+					}), F = I ? n.fbt._("Ending contest mode will make comment vote scores visible and disable random comment ordering.", null, {
 						hk: "3PXrGq"
 					}) : n.fbt._("Starting a contest will hide comment vote scores and randomize the order of the comments for non-mods.", null, {
 						hk: "EDqlf"
@@ -2215,9 +2215,9 @@
 						selectedSort: h,
 						trackHighlight: w
 					})), s && r.a.createElement(_.a, {
-						actionText: F,
+						actionText: B,
 						headerText: U,
-						modalText: B,
+						modalText: F,
 						onConfirm: this.setContestMode,
 						toggleModal: v,
 						withOverlay: !0
@@ -2901,4 +2901,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/removalReasonActions.a22e9f97811fc8713b6a.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/removalReasonActions.8b70faf469c6dd3becce.js.map

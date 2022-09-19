@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/MarketplaceClaimModal.768e788691145ee57b1c.js
-// Retrieved at 9/16/2022, 1:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/MarketplaceClaimModal.94005f77364592b9cf37.js
+// Retrieved at 9/19/2022, 1:30:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["MarketplaceClaimModal"], {
 		"./src/reddit/actions/economics/marketplace/constants.ts": function(e, t, n) {
@@ -180,7 +180,7 @@
 		"./src/reddit/components/Econ/Marketplace/ClaimModal/index.tsx": function(e, t, n) {
 			"use strict";
 			n.r(t), n.d(t, "MarketplaceClaim", (function() {
-				return C
+				return j
 			}));
 			var r = n("./node_modules/@reddit/crypto/react/nft-claim/index.es.js"),
 				s = n("./node_modules/@reddit/marketplace/marketplace.es.js"),
@@ -199,10 +199,10 @@
 				b = n("./src/reddit/selectors/experiments/econ/index.ts"),
 				f = n("./src/reddit/selectors/user.ts"),
 				v = n("./src/reddit/components/Econ/Marketplace/ClaimModal/index.m.less"),
-				j = n.n(v);
+				A = n.n(v);
 
-			function A() {
-				return (A = Object.assign || function(e) {
+			function C() {
+				return (C = Object.assign || function(e) {
 					for (var t = 1; t < arguments.length; t++) {
 						var n = arguments[t];
 						for (var r in n) Object.prototype.hasOwnProperty.call(n, r) && (e[r] = n[r])
@@ -210,7 +210,7 @@
 					return e
 				}).apply(this, arguments)
 			}
-			const C = e => {
+			const j = e => {
 					let {
 						onClose: t
 					} = e;
@@ -229,7 +229,7 @@
 								activeMeSubpage: "MY_STUFF"
 							}))
 						},
-						A = e => {
+						C = e => {
 							var t;
 							"CLAIM_ERROR" === e.type && "NO_NFT_LEFT" === (null === (t = e.data) || void 0 === t ? void 0 : t.status) && o(p({
 								claimId: a
@@ -238,25 +238,25 @@
 							}))
 						};
 					return c.a.createElement("div", {
-						className: j.a.container
+						className: A.a.container
 					}, c.a.createElement(O.a, null, l ? c.a.createElement(s.c, {
 						onClose: t,
 						userId: n,
 						onViewAvatar: v,
 						omitIkey: d,
-						onEvent: A
+						onEvent: C
 					}) : c.a.createElement(r.b, {
 						onClose: t,
 						userId: n,
 						onViewAvatar: v,
 						omitIkey: d,
-						onEvent: A
+						onEvent: C
 					})))
 				},
-				x = Object(a.a)(C);
-			t.default = e => c.a.createElement(x, A({
+				x = Object(a.a)(j);
+			t.default = e => c.a.createElement(x, C({
 				withOverlay: !0,
-				className: j.a.modal
+				className: A.a.modal
 			}, e))
 		},
 		"./src/reddit/helpers/avatarRouting.ts": function(e, t, n) {
@@ -284,8 +284,8 @@
 			}));
 			var r = n("./src/reddit/constants/experiments.ts"),
 				s = n("./src/reddit/selectors/experiments/econ/simpleExperiment.ts");
-			const a = Object(s.a)(r.jd)
+			const a = Object(s.a)(r.kd)
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/MarketplaceClaimModal.768e788691145ee57b1c.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/MarketplaceClaimModal.94005f77364592b9cf37.js.map
