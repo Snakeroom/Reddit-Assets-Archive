@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-LargePost.585ca97580f2a44d77d9.js
-// Retrieved at 9/19/2022, 3:20:11 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-LargePost.aed9c70813c2b36bebbf.js
+// Retrieved at 9/19/2022, 5:30:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-LargePost"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -2115,7 +2115,7 @@
 			const je = Object(a.a)(T.N, e => e.some(ge.d)),
 				ye = Object(a.a)(je, e => e),
 				Te = (e, t) => Object(Se.c)(e, {
-					experimentName: Ce.Zc,
+					experimentName: Ce.ad,
 					experimentEligibilitySelector: e => {
 						const {
 							listingKey: s
@@ -2269,7 +2269,7 @@
 						isAdblockAAMitigationEnabled: Ze,
 						isOptionalTextEnabled: Qe,
 						showCTAExperimentDesign: Xe
-					} = e, $e = Object(O.a)(), et = qe, tt = !!e.redditStyle || !!e["data-redditstyle"], st = tt ? void 0 : g, nt = Object(l.a)(Pe), ot = Ne && nt, rt = Object(c.a)(Pe), it = Object(d.a)(Pe), at = Object(q.c)(Me), ct = Object(H.a)(Me), dt = !!Me.media && Me.media.type === E.o.RTJSON, lt = Ke && dt, ut = s ? s - z.a : void 0, mt = !!Me.recommendationContext, pt = !(ce && _e || Se) || mt && _e, bt = (e => e === Ce.ff.OnlyTitles)(Fe) && !Object(ue.a)(Me), ft = (e => e === Ce.ff.MediumHeight)(Fe) && !Object(ue.a)(Me), ht = (e => {
+					} = e, $e = Object(O.a)(), et = qe, tt = !!e.redditStyle || !!e["data-redditstyle"], st = tt ? void 0 : g, nt = Object(l.a)(Pe), ot = Ne && nt, rt = Object(c.a)(Pe), it = Object(d.a)(Pe), at = Object(q.c)(Me), ct = Object(H.a)(Me), dt = !!Me.media && Me.media.type === E.o.RTJSON, lt = Ke && dt, ut = s ? s - z.a : void 0, mt = !!Me.recommendationContext, pt = !(ce && _e || Se) || mt && _e, bt = (e => e === Ce.gf.OnlyTitles)(Fe) && !Object(ue.a)(Me), ft = (e => e === Ce.gf.MediumHeight)(Fe) && !Object(ue.a)(Me), ht = (e => {
 						var t;
 						const {
 							post: s,
@@ -5884,8 +5884,8 @@
 					if (Object(i.a)(e)) return !1;
 					return Object(o.c)(e, {
 						experimentEligibilitySelector: o.a,
-						experimentName: n.wc
-					}) === n.Tc.Enabled
+						experimentName: n.xc
+					}) === n.Uc.Enabled
 				}
 		},
 		"./src/reddit/selectors/experiments/presence.ts": function(e, t, s) {
@@ -5898,8 +5898,8 @@
 			const r = e => {
 				return Object(o.c)(e, {
 					experimentEligibilitySelector: o.a,
-					experimentName: n.Ze
-				}) === n.Id
+					experimentName: n.af
+				}) === n.Jd
 			}
 		},
 		"./src/reddit/selectors/experiments/web2x_cta.ts": function(e, t, s) {
@@ -5911,10 +5911,10 @@
 				o = s("./src/reddit/constants/experiments.ts"),
 				r = s("./src/reddit/helpers/chooseVariant/index.ts");
 			const i = Object(n.a)(e => Object(r.c)(e, {
-					experimentName: o.eg,
+					experimentName: o.fg,
 					experimentEligibilitySelector: r.a
 				}), e => e),
-				a = Object(n.a)(i, e => e === o.Vf)
+				a = Object(n.a)(i, e => e === o.Wf)
 		},
 		"./src/reddit/selectors/i18n/index.ts": function(e, t, s) {
 			"use strict";
@@ -5929,7 +5929,7 @@
 				i = s("./src/reddit/selectors/experiments/nsfwListingBelow.ts");
 			const a = e => {
 					const t = Object(i.a)(e);
-					return Boolean(t) && !Object(o.pg)(t)
+					return Boolean(t) && !Object(o.qg)(t)
 				},
 				c = Object(n.a)(a, r.d, (e, t) => e && !t)
 		},
@@ -6006,10 +6006,10 @@
 				r = s("./src/reddit/helpers/chooseVariant/index.ts"),
 				i = s("./src/reddit/selectors/posts.ts");
 			const a = e => Object(r.c)(e, {
-					experimentName: o.cf,
+					experimentName: o.df,
 					experimentEligibilitySelector: r.a
 				}),
-				c = (e, t) => t === o.kf.Enabled && (null == e ? void 0 : e.isCreatedFromAdsUi) || (null == e ? void 0 : e.isSponsored),
+				c = (e, t) => t === o.lf.Enabled && (null == e ? void 0 : e.isCreatedFromAdsUi) || (null == e ? void 0 : e.isSponsored),
 				d = Object(n.a)(i.G, a, (e, t) => c(e, t));
 			Object(n.a)((e, t) => t, a, (e, t) => c(e, t))
 		},
@@ -6095,4 +6095,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-LargePost.585ca97580f2a44d77d9.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-LargePost.aed9c70813c2b36bebbf.js.map

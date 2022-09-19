@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/InboxTooltip.0c10660fda64708e5dd6.js
-// Retrieved at 9/19/2022, 3:20:11 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/InboxTooltip.23e8e81a05fa8a02ee89.js
+// Retrieved at 9/19/2022, 5:30:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["InboxTooltip", "PushNotifications"], {
 		"./src/lib/notifications/token.ts": function(e, t, i) {
@@ -100,12 +100,12 @@
 			const _ = e => Object(y.c)(e, {
 				experimentName: N.jc,
 				experimentEligibilitySelector: y.a
-			}) === N.Id;
-			var I = i("./src/reddit/selectors/meta.ts"),
-				P = i("./src/reddit/selectors/user.ts");
+			}) === N.Jd;
+			var P = i("./src/reddit/selectors/meta.ts"),
+				I = i("./src/reddit/selectors/user.ts");
 			let E = !1;
 			const F = async (e, t) => {
-				const i = Object(P.P)(e);
+				const i = Object(I.P)(e);
 				if (E) return;
 				if (E = !0, Object(f.a)(e) !== d.c.NotificationsSupported) return;
 				await Object(u.a)();
@@ -130,7 +130,7 @@
 				let i = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : () => {};
 				return async (n, o, s) => {
 					const c = o(),
-						u = Object(I.f)(c),
+						u = Object(P.f)(c),
 						l = _(c),
 						b = !!Object(k.a)(c),
 						f = Object(S.a)(c),
@@ -390,15 +390,15 @@
 					markAllAsRead: N,
 					markNotificationAsRead: y,
 					messagesBadgeCount: _,
-					notifications: I,
-					showBrowserNotificationsPermissionSettings: P,
+					notifications: P,
+					showBrowserNotificationsPermissionSettings: I,
 					updateInboxActivitySeenState: E,
 					userId: F
 				} = e;
 				const C = Object(f.a)(),
 					[B, A] = Object(n.useState)("");
 				return Object(n.useEffect)(() => {
-					if (k && !I.length && x) {
+					if (k && !P.length && x) {
 						c({
 							first: 5
 						})
@@ -429,9 +429,9 @@
 					markAllAsRead: N,
 					markNotificationAsRead: y,
 					messagesBadgeCount: _,
-					notifications: I,
+					notifications: P,
 					setActiveOverflowMenuId: A,
-					showBrowserNotificationsPermissionSettings: P,
+					showBrowserNotificationsPermissionSettings: I,
 					userId: F
 				})
 			})
@@ -613,4 +613,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/InboxTooltip.0c10660fda64708e5dd6.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/InboxTooltip.23e8e81a05fa8a02ee89.js.map
