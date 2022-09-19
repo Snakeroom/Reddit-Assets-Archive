@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CommentsPage.6549b2da5a6c1c886961.js
-// Retrieved at 9/15/2022, 2:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CommentsPage.d3b33633cc0f6eedcdbb.js
+// Retrieved at 9/19/2022, 12:50:03 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CommentsPage", "PostCreation~Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~r~4c415e24", "Governance~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compo~bd4baca2", "CollectionCommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~SearchResults", "Governance~ModListing~Reddit~ReportFlow~Subreddit", "Governance~ModListing~Reddit~Subreddit", "CollectionCommentsPage~ModProgressModule~NewCommunityProgress", "CollectionCommentsPage~SearchResults", "AchievementsActions"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -10440,19 +10440,21 @@
 				r = n.n(s),
 				o = n("./node_modules/react-redux/es/index.js"),
 				i = n("./src/lib/classNames/index.ts"),
-				a = n("./src/reddit/components/RichTextJson/index.tsx"),
-				c = n("./src/reddit/selectors/experiments/supportingLinkAds.ts"),
-				d = n("./src/reddit/components/PostTitle/index.tsx"),
-				l = n("./src/reddit/components/AdSupplementaryText/index.m.less"),
-				u = n.n(l);
-			const m = e => {
+				a = n("./src/reddit/actions/post.ts"),
+				c = n("./src/reddit/components/RichTextJson/index.tsx"),
+				d = n("./src/reddit/constants/adEvents.ts"),
+				l = n("./src/reddit/selectors/experiments/supportingLinkAds.ts"),
+				u = n("./src/reddit/components/PostTitle/index.tsx"),
+				m = n("./src/reddit/components/AdSupplementaryText/index.m.less"),
+				p = n.n(m);
+			const b = e => {
 				let t;
 				switch (e) {
-					case d.b.ExtraLarge:
-						t = u.a.ExtraLarge;
+					case u.b.ExtraLarge:
+						t = p.a.ExtraLarge;
 						break;
-					case d.b.Large:
-						t = u.a.Large
+					case u.b.Large:
+						t = p.a.Large
 				}
 				return t
 			};
@@ -10462,16 +10464,22 @@
 					size: n,
 					className: s
 				} = e;
-				return Object(o.e)(c.a) && t.isSponsored && t.adSupplementaryText && "string" != typeof t.adSupplementaryText ? 0 === t.adSupplementaryText.document.length ? null : r.a.createElement("div", {
-					className: Object(i.a)(s, u.a.AdSupplementaryText),
-					"data-testid": `${t.id}-ad-supplementary-text`
-				}, r.a.createElement(a.b, {
-					className: Object(i.a)(u.a.Content, m(n)),
+				const u = Object(o.d)();
+				if (!Object(o.e)(l.a) || !t.isSponsored || !t.adSupplementaryText || "string" == typeof t.adSupplementaryText) return null;
+				if (0 === t.adSupplementaryText.document.length) return null;
+				return r.a.createElement("div", {
+					className: Object(i.a)(s, p.a.AdSupplementaryText),
+					"data-testid": `${t.id}-ad-supplementary-text`,
+					onClick: e => {
+						e.target instanceof HTMLAnchorElement && u(Object(a.z)(t, d.a.Click))
+					}
+				}, r.a.createElement(c.b, {
+					className: Object(i.a)(p.a.Content, b(n)),
 					content: t.adSupplementaryText,
 					rtJsonElementProps: {
 						renderingObjectInfo: void 0
 					}
-				})) : null
+				}))
 			}
 		},
 		"./src/reddit/components/AdViewability/index.tsx": function(e, t, n) {
@@ -43658,4 +43666,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommentsPage.6549b2da5a6c1c886961.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommentsPage.d3b33633cc0f6eedcdbb.js.map

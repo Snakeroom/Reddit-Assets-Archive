@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-LargePost.40313e475cd05a66a030.js
-// Retrieved at 9/15/2022, 2:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-LargePost.ad093a82372b3d7e9219.js
+// Retrieved at 9/19/2022, 12:50:03 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-LargePost"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -896,19 +896,21 @@
 				o = s.n(n),
 				r = s("./node_modules/react-redux/es/index.js"),
 				i = s("./src/lib/classNames/index.ts"),
-				a = s("./src/reddit/components/RichTextJson/index.tsx"),
-				c = s("./src/reddit/selectors/experiments/supportingLinkAds.ts"),
-				d = s("./src/reddit/components/PostTitle/index.tsx"),
-				l = s("./src/reddit/components/AdSupplementaryText/index.m.less"),
-				u = s.n(l);
-			const m = e => {
+				a = s("./src/reddit/actions/post.ts"),
+				c = s("./src/reddit/components/RichTextJson/index.tsx"),
+				d = s("./src/reddit/constants/adEvents.ts"),
+				l = s("./src/reddit/selectors/experiments/supportingLinkAds.ts"),
+				u = s("./src/reddit/components/PostTitle/index.tsx"),
+				m = s("./src/reddit/components/AdSupplementaryText/index.m.less"),
+				p = s.n(m);
+			const b = e => {
 				let t;
 				switch (e) {
-					case d.b.ExtraLarge:
-						t = u.a.ExtraLarge;
+					case u.b.ExtraLarge:
+						t = p.a.ExtraLarge;
 						break;
-					case d.b.Large:
-						t = u.a.Large
+					case u.b.Large:
+						t = p.a.Large
 				}
 				return t
 			};
@@ -918,16 +920,22 @@
 					size: s,
 					className: n
 				} = e;
-				return Object(r.e)(c.a) && t.isSponsored && t.adSupplementaryText && "string" != typeof t.adSupplementaryText ? 0 === t.adSupplementaryText.document.length ? null : o.a.createElement("div", {
-					className: Object(i.a)(n, u.a.AdSupplementaryText),
-					"data-testid": `${t.id}-ad-supplementary-text`
-				}, o.a.createElement(a.b, {
-					className: Object(i.a)(u.a.Content, m(s)),
+				const u = Object(r.d)();
+				if (!Object(r.e)(l.a) || !t.isSponsored || !t.adSupplementaryText || "string" == typeof t.adSupplementaryText) return null;
+				if (0 === t.adSupplementaryText.document.length) return null;
+				return o.a.createElement("div", {
+					className: Object(i.a)(n, p.a.AdSupplementaryText),
+					"data-testid": `${t.id}-ad-supplementary-text`,
+					onClick: e => {
+						e.target instanceof HTMLAnchorElement && u(Object(a.z)(t, d.a.Click))
+					}
+				}, o.a.createElement(c.b, {
+					className: Object(i.a)(p.a.Content, b(s)),
 					content: t.adSupplementaryText,
 					rtJsonElementProps: {
 						renderingObjectInfo: void 0
 					}
-				})) : null
+				}))
 			}
 		},
 		"./src/reddit/components/CallToActionButton/index.m.less": function(e, t, s) {
@@ -6087,4 +6095,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-LargePost.40313e475cd05a66a030.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-LargePost.ad093a82372b3d7e9219.js.map

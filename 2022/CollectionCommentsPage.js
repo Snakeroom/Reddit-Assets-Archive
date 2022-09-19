@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage.d45cf0f72352db9a1f85.js
-// Retrieved at 9/15/2022, 2:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage.fa677b7f88c25c747a3e.js
+// Retrieved at 9/19/2022, 12:50:03 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage", "AchievementsActions"], {
 		"./node_modules/linkify-it/index.js": function(e, t, s) {
@@ -2030,19 +2030,21 @@
 				r = s.n(n),
 				o = s("./node_modules/react-redux/es/index.js"),
 				i = s("./src/lib/classNames/index.ts"),
-				a = s("./src/reddit/components/RichTextJson/index.tsx"),
-				d = s("./src/reddit/selectors/experiments/supportingLinkAds.ts"),
-				c = s("./src/reddit/components/PostTitle/index.tsx"),
-				l = s("./src/reddit/components/AdSupplementaryText/index.m.less"),
-				m = s.n(l);
-			const u = e => {
+				a = s("./src/reddit/actions/post.ts"),
+				d = s("./src/reddit/components/RichTextJson/index.tsx"),
+				c = s("./src/reddit/constants/adEvents.ts"),
+				l = s("./src/reddit/selectors/experiments/supportingLinkAds.ts"),
+				m = s("./src/reddit/components/PostTitle/index.tsx"),
+				u = s("./src/reddit/components/AdSupplementaryText/index.m.less"),
+				p = s.n(u);
+			const b = e => {
 				let t;
 				switch (e) {
-					case c.b.ExtraLarge:
-						t = m.a.ExtraLarge;
+					case m.b.ExtraLarge:
+						t = p.a.ExtraLarge;
 						break;
-					case c.b.Large:
-						t = m.a.Large
+					case m.b.Large:
+						t = p.a.Large
 				}
 				return t
 			};
@@ -2052,16 +2054,22 @@
 					size: s,
 					className: n
 				} = e;
-				return Object(o.e)(d.a) && t.isSponsored && t.adSupplementaryText && "string" != typeof t.adSupplementaryText ? 0 === t.adSupplementaryText.document.length ? null : r.a.createElement("div", {
-					className: Object(i.a)(n, m.a.AdSupplementaryText),
-					"data-testid": `${t.id}-ad-supplementary-text`
-				}, r.a.createElement(a.b, {
-					className: Object(i.a)(m.a.Content, u(s)),
+				const m = Object(o.d)();
+				if (!Object(o.e)(l.a) || !t.isSponsored || !t.adSupplementaryText || "string" == typeof t.adSupplementaryText) return null;
+				if (0 === t.adSupplementaryText.document.length) return null;
+				return r.a.createElement("div", {
+					className: Object(i.a)(n, p.a.AdSupplementaryText),
+					"data-testid": `${t.id}-ad-supplementary-text`,
+					onClick: e => {
+						e.target instanceof HTMLAnchorElement && m(Object(a.z)(t, c.a.Click))
+					}
+				}, r.a.createElement(d.b, {
+					className: Object(i.a)(p.a.Content, b(s)),
 					content: t.adSupplementaryText,
 					rtJsonElementProps: {
 						renderingObjectInfo: void 0
 					}
-				})) : null
+				}))
 			}
 		},
 		"./src/reddit/components/CommentCreation/LoggedOutCommentForm/index.m.less": function(e, t, s) {
@@ -12856,4 +12864,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage.d45cf0f72352db9a1f85.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage.fa677b7f88c25c747a3e.js.map
