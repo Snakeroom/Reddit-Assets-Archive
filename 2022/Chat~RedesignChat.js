@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Chat~RedesignChat.efbd66e1fc6cd1fa5a89.js
-// Retrieved at 9/14/2022, 6:30:03 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Chat~RedesignChat.02507bc6232fb1209080.js
+// Retrieved at 9/19/2022, 6:50:03 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Chat~RedesignChat"], {
 		"./src/chat/actions/apiRequestHeaders.ts": function(e, t, n) {
@@ -11207,8 +11207,6 @@
 						switch (e.engagementType) {
 							case re.l.Previewed:
 								return s.a.createElement(s.a.Fragment, null, s.a.createElement(ae, {
-									width: "12",
-									height: "12",
 									className: ie.a.Clock
 								}), i.fbt._("Visited · {subreddit path}", [i.fbt._param("subreddit path", n)], {
 									hk: "3Dw7HG"
@@ -11246,9 +11244,9 @@
 						[ie.a.selected]: n
 					}),
 					ref: h
-				}, s.a.createElement(he, null, s.a.createElement("div", {
+				}, s.a.createElement("div", {
 					className: ie.a.SubredditIcon
-				}, (null === (o = b.subreddit.styles) || void 0 === o ? void 0 : o.icon) ? s.a.createElement("img", {
+				}, s.a.createElement(he, null, (null === (o = b.subreddit.styles) || void 0 === o ? void 0 : o.icon) ? s.a.createElement("img", {
 					className: ie.a.Icon,
 					src: null === (l = b.subreddit.styles) || void 0 === l ? void 0 : l.icon
 				}) : s.a.createElement("i", {
@@ -19559,4 +19557,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~RedesignChat.efbd66e1fc6cd1fa5a89.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~RedesignChat.02507bc6232fb1209080.js.map
