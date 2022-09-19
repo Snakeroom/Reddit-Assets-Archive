@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/devPlatform-components-ContextActions.f77e91641adf11fbba9d.js
-// Retrieved at 9/13/2022, 4:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/devPlatform-components-ContextActions.604cdeef057c96c14e00.js
+// Retrieved at 9/19/2022, 6:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["devPlatform-components-ContextActions"], {
 		"./src/devPlatform/components/ContextActions/index.m.less": function(t, e, o) {},
@@ -49,9 +49,9 @@
 					}
 				})),
 				S = (t, e) => ({
-					post: t === h.h.POST ? h.D.fromPartial(e) : void 0,
+					post: t === h.h.POST ? h.E.fromPartial(e) : void 0,
 					comment: t === h.h.COMMENT ? h.c.fromPartial(e) : void 0,
-					subreddit: t === h.h.SUBREDDIT ? h.M.fromPartial(e) : void 0
+					subreddit: t === h.h.SUBREDDIT ? h.O.fromPartial(e) : void 0
 				});
 			e.default = I(t => {
 				const {
@@ -222,10 +222,10 @@
 				loadActor(t) {
 					const e = t.hostname.split("."),
 						o = {
-							"devvit-installation": s.L.fromPartial({
+							"devvit-installation": s.N.fromPartial({
 								values: [e[0]]
 							}),
-							"devvit-actor": s.L.fromPartial({
+							"devvit-actor": s.N.fromPartial({
 								values: [e[2]]
 							})
 						};
@@ -453,4 +453,4 @@
 		"ignored /drone/src/node_modules/cron-parser/lib fs": function(t, e) {}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/devPlatform-components-ContextActions.f77e91641adf11fbba9d.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/devPlatform-components-ContextActions.604cdeef057c96c14e00.js.map

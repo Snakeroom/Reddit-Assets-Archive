@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/5.3de5214867f184cc992e.js
-// Retrieved at 9/13/2022, 4:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/5.a7ce968202ecd24cc11b.js
+// Retrieved at 9/19/2022, 6:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	[5], {
 		"./node_modules/lodash/uniqueId.js": function(e, t, n) {
@@ -108,7 +108,7 @@
 						configForm: l,
 						onCloseClick: i
 					} = this.props, u = [];
-					for (const c of l.fields) switch (Object(d.Q)(c.fieldType)) {
+					for (const c of l.fields) switch (Object(d.U)(c.fieldType)) {
 						case d.d.STRING:
 							u.push(a.a.createElement(I, {
 								key: c.key
@@ -230,11 +230,11 @@
 				V = Object(r.b)(B, e => ({
 					closeUserInputModal: () => e(Object(i.a)())
 				})),
-				L = Object(l.a)(e => e.action && e.onAction ? a.a.createElement(S, {
+				U = Object(l.a)(e => e.action && e.onAction ? a.a.createElement(S, {
 					action: e.action,
 					onAction: e.onAction
 				}) : null);
-			t.default = V(e => a.a.createElement(L, P({}, e, {
+			t.default = V(e => a.a.createElement(U, P({}, e, {
 				withOverlay: !0,
 				onOverlayClick: e.closeUserInputModal
 			})))
@@ -807,4 +807,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/5.3de5214867f184cc992e.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/5.a7ce968202ecd24cc11b.js.map
