@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-ClaimPointsModal.039506deb5a350128024.js
-// Retrieved at 9/19/2022, 1:30:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-ClaimPointsModal.1056eeef5b319423e819.js
+// Retrieved at 9/19/2022, 3:20:11 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Governance-TransactionModals-ClaimPointsModal"], {
 		"./node_modules/lodash/uniqueId.js": function(e, t, n) {
@@ -51,7 +51,7 @@
 			})), n.d(t, "c", (function() {
 				return C
 			})), n.d(t, "f", (function() {
-				return T
+				return I
 			})), n.d(t, "g", (function() {
 				return P
 			})), n.d(t, "d", (function() {
@@ -86,8 +86,8 @@
 				E = Object(a.a)(h.j),
 				N = Object(a.a)(h.k),
 				_ = Object(a.a)(h.q),
-				T = Object(a.a)(h.r),
-				I = Object(a.a)(h.s),
+				I = Object(a.a)(h.r),
+				T = Object(a.a)(h.s),
 				M = Object(a.a)(h.t),
 				k = Object(a.a)(h.u),
 				S = Object(a.a)(h.v),
@@ -142,7 +142,7 @@
 						apiContext: l
 					} = i;
 					var u;
-					n(I());
+					n(T());
 					const m = a().transfers.communityPoints.contentId || void 0,
 						b = await
 					function(e, t) {
@@ -290,8 +290,8 @@
 				E = n("./src/reddit/selectors/crypto/points.ts"),
 				N = n("./src/reddit/selectors/gov.ts"),
 				_ = n("./src/lib/addQueryParams/index.ts"),
-				T = n("./src/reddit/icons/svgs/Close/index.tsx"),
-				I = n("./src/reddit/selectors/user.ts"),
+				I = n("./src/reddit/icons/svgs/Close/index.tsx"),
+				T = n("./src/reddit/selectors/user.ts"),
 				M = n("./src/reddit/components/Governance/TransactionModals/Common/Bullet.tsx"),
 				k = n("./src/reddit/components/Governance/TransactionModals/Common/QRCode.tsx"),
 				S = n("./src/reddit/components/Governance/TransactionModals/CreateVaultModal/index.m.less"),
@@ -301,7 +301,7 @@
 			} = n("./node_modules/fbt/lib/FbtPublic.js");
 			const B = Object(i.c)({
 					userId: e => {
-						const t = Object(I.k)(e);
+						const t = Object(T.k)(e);
 						return t ? t.id : ""
 					}
 				}),
@@ -318,7 +318,7 @@
 						className: A.a.title
 					}, P._("Create Your Vault on Your Smartphone", null, {
 						hk: "247Dqn"
-					})), r.a.createElement(T.a, {
+					})), r.a.createElement(I.a, {
 						className: A.a.closeButton,
 						onClick: t
 					})), r.a.createElement("div", {
@@ -359,8 +359,8 @@
 			Object(c.a)(D);
 			var R = n("./src/reddit/components/Governance/TransactionModals/VaultTransactionModal/index.tsx"),
 				F = n("./src/reddit/components/SubredditIcon/index.tsx"),
-				G = n("./src/reddit/selectors/subreddit.ts"),
-				L = n("./src/reddit/components/Governance/TransactionModals/ApprovalModal/Details.tsx"),
+				L = n("./src/reddit/selectors/subreddit.ts"),
+				G = n("./src/reddit/components/Governance/TransactionModals/ApprovalModal/Details.tsx"),
 				V = n("./src/reddit/components/Governance/TransactionModals/ApprovalModal/Overview.tsx"),
 				H = n("./src/reddit/components/Governance/TransactionModals/ClaimPointsModal/Approval.m.less"),
 				Y = n.n(H);
@@ -371,7 +371,7 @@
 					pointsDetails: n
 				} = e, a = Object(o.e)(t => Object(w.b)(t, e)), i = a && a.pointsToClaim;
 				if (!i) throw new Error("Expected claim amount to approve");
-				const c = Object(o.e)(t => Object(G.W)(t, e));
+				const c = Object(o.e)(t => Object(L.W)(t, e));
 				return r.a.createElement(V.a, {
 					subredditId: t,
 					image: r.a.createElement(F.b, {
@@ -387,13 +387,13 @@
 					pointsAmount: i
 				})
 			}
-			const W = e => r.a.createElement(L.b, {
+			const W = e => r.a.createElement(G.b, {
 				values: [
 					[s.fbt._("Karma earned", null, {
 						hk: "46NXlD"
 					}), e.transaction.arguments[2]],
-					[Object(L.c)(), e.transaction.arguments[1]],
-					[Object(L.a)(), e.transaction.contractAddress]
+					[Object(G.c)(), e.transaction.arguments[1]],
+					[Object(G.a)(), e.transaction.contractAddress]
 				]
 			});
 			t.default = Object(c.a)((function(e) {
@@ -413,8 +413,8 @@
 				if (!l.address) return r.a.createElement(D, {
 					onClose: t
 				});
-				const T = Object(h.b)(_.contracts.distribution.address, l.round, l.address, l.userKarma, l.signature),
-					I = e => {
+				const I = Object(h.b)(_.contracts.distribution.address, l.round, l.address, l.userKarma, l.signature),
+					T = e => {
 						c(Object(y.c)("points_claim", n, _.displayConversion, e))
 					},
 					M = Object(j.c)(l.pointsToClaim, _.displayConversion);
@@ -424,7 +424,7 @@
 						subredditId: n
 					}),
 					approvalDetails: r.a.createElement(W, {
-						transaction: T
+						transaction: I
 					}),
 					onClose: t,
 					onTransactionSuccess: async e => {
@@ -450,7 +450,7 @@
 								}), C.b.SuccessCommunityGreen))
 							}(_.name))
 						}).catch(e => {
-							I(e.toString()), a(function(e) {
+							T(e.toString()), a(function(e) {
 								return Object(f.f)(Object(f.e)(s.fbt._("Failed to claim your {pointsName}. Try again later", [s.fbt._param("pointsName", e)], {
 									hk: "ch1Bl"
 								}), C.b.Error))
@@ -461,9 +461,9 @@
 							}))
 						})
 					},
-					onTransactionFailure: I,
+					onTransactionFailure: T,
 					subredditId: n,
-					transaction: T,
+					transaction: I,
 					transactionIntent: Object(x.c)(n)
 				})
 			}))
@@ -1108,14 +1108,14 @@
 			const r = e => {
 					return Object(a.c)(e, {
 						experimentEligibilitySelector: a.a,
-						experimentName: s.re
-					}) === s.Gd
+						experimentName: s.te
+					}) === s.Id
 				},
 				o = e => {
 					return Object(a.c)(e, {
 						experimentEligibilitySelector: a.a,
-						experimentName: s.oe
-					}) === s.Gd
+						experimentName: s.qe
+					}) === s.Id
 				}
 		},
 		"./src/reddit/selectors/gov.ts": function(e, t, n) {
@@ -1175,4 +1175,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-ClaimPointsModal.039506deb5a350128024.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-ClaimPointsModal.1056eeef5b319423e819.js.map

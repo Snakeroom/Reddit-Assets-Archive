@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-BurnPointsModal.69460f38d320c6910fd9.js
-// Retrieved at 9/19/2022, 1:30:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-BurnPointsModal.257f253c55fe44d41070.js
+// Retrieved at 9/19/2022, 3:20:11 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Governance-TransactionModals-BurnPointsModal"], {
 		"./node_modules/lodash/uniqueId.js": function(e, t, a) {
@@ -544,8 +544,8 @@
 				T = a("./src/reddit/selectors/gov.ts"),
 				L = a("./src/reddit/components/Governance/TransactionModals/VaultTransactionModal/index.tsx"),
 				A = a("./src/lib/classNames/index.ts"),
-				k = a("./src/reddit/components/Governance/TokenAmount/index.tsx"),
-				I = a("./src/reddit/components/Governance/TransactionModals/ApprovalModal/Details.tsx"),
+				I = a("./src/reddit/components/Governance/TokenAmount/index.tsx"),
+				k = a("./src/reddit/components/Governance/TransactionModals/ApprovalModal/Details.tsx"),
 				D = a("./src/reddit/components/Governance/TransactionModals/Common/CurrentBalance.tsx"),
 				B = a("./src/reddit/components/Governance/TransactionModals/BurnPointsModal/Approval.m.less"),
 				V = a.n(B);
@@ -560,7 +560,7 @@
 				} = e;
 				return l.a.createElement("div", {
 					className: V.a.overview
-				}, l.a.createElement(k.a, {
+				}, l.a.createElement(I.a, {
 					amount: t,
 					className: V.a.amount,
 					subredditId: s.id
@@ -577,10 +577,10 @@
 				})))
 			}
 
-			function G(e) {
-				return l.a.createElement(I.b, {
+			function P(e) {
+				return l.a.createElement(k.b, {
 					values: [
-						[Object(I.a)(), e.contractAddress],
+						[Object(k.a)(), e.contractAddress],
 						[i.fbt._("Function", null, {
 							hk: "1Q0dwF"
 						}), "burn"],
@@ -590,7 +590,7 @@
 					]
 				})
 			}
-			const P = 15e3;
+			const G = 15e3;
 
 			function S(e) {
 				const {
@@ -611,7 +611,7 @@
 						subreddit: n,
 						pointsName: x
 					}),
-					approvalDetails: l.a.createElement(G, {
+					approvalDetails: l.a.createElement(P, {
 						contractAddress: v,
 						memo: a
 					}),
@@ -621,7 +621,7 @@
 							const t = Object(N.e)(i.fbt._("Burning your {pointsName}...", [i.fbt._param("pointsName", e)], {
 								hk: "2LoC1g"
 							}), F.b.SuccessCommunity);
-							return t.duration = P, Object(N.f)(t)
+							return t.duration = G, Object(N.f)(t)
 						}(x));
 						try {
 							await async function(e, t, a, n, l) {
@@ -639,7 +639,7 @@
 								const t = Object(N.e)(i.fbt._("Your {pointsName} were burnt!", [i.fbt._param("pointsName", e)], {
 									hk: "1BHX95"
 								}), F.b.SuccessCommunityGreen);
-								return t.duration = P, Object(N.f)(t)
+								return t.duration = G, Object(N.f)(t)
 							}(x))
 						} catch (t) {
 							b(t.toString()), r(function(e) {
@@ -1308,14 +1308,14 @@
 			const c = e => {
 					return Object(l.c)(e, {
 						experimentEligibilitySelector: l.a,
-						experimentName: n.re
-					}) === n.Gd
+						experimentName: n.te
+					}) === n.Id
 				},
 				s = e => {
 					return Object(l.c)(e, {
 						experimentEligibilitySelector: l.a,
-						experimentName: n.oe
-					}) === n.Gd
+						experimentName: n.qe
+					}) === n.Id
 				}
 		},
 		"./src/reddit/selectors/gov.ts": function(e, t, a) {
@@ -1372,4 +1372,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-BurnPointsModal.69460f38d320c6910fd9.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-BurnPointsModal.257f253c55fe44d41070.js.map
