@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Chat~RedesignChat.02507bc6232fb1209080.js
-// Retrieved at 9/19/2022, 6:50:03 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Chat~RedesignChat.46e2b5ab064844ae8700.js
+// Retrieved at 9/20/2022, 1:40:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Chat~RedesignChat"], {
 		"./src/chat/actions/apiRequestHeaders.ts": function(e, t, n) {
@@ -11253,11 +11253,11 @@
 					className: D()(`${ie.a.DefaultIcon} icon icon-community`, {
 						[ie.a.DefaultIconDark]: O
 					})
-				}), s.a.createElement("span", {
+				})), s.a.createElement("span", {
 					className: ie.a.LiveLabel
 				}, i.fbt._("LIVE", null, {
 					hk: "1N5y3d"
-				})))), s.a.createElement("div", {
+				}))), s.a.createElement("div", {
 					className: ie.a.PostDetails
 				}, s.a.createElement("h4", {
 					className: ie.a.PostTitle
@@ -19557,4 +19557,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~RedesignChat.02507bc6232fb1209080.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~RedesignChat.46e2b5ab064844ae8700.js.map
