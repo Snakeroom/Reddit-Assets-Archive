@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/removalReasonActions.d3a8a9032af7ac2288b5.js
-// Retrieved at 9/19/2022, 5:30:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/removalReasonActions.b31956beb83c892e1c01.js
+// Retrieved at 9/20/2022, 11:00:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["removalReasonActions"], {
 		"./node_modules/lodash/map.js": function(e, t, o) {
@@ -255,7 +255,7 @@
 			const ae = Object(ce.a)(e => Object(ie.c)(e, {
 				experimentEligibilitySelector: ie.a,
 				experimentName: re.Kb
-			}), e => e === re.Jd);
+			}), e => e === re.Kd);
 			var de = o("./src/reddit/selectors/experiments/contributeBeforeSignUp.ts"),
 				le = o("./src/reddit/selectors/platform.ts"),
 				me = o("./src/reddit/selectors/posts.ts"),
@@ -1018,6 +1018,7 @@
 						[e]: {
 							isApproved: !0,
 							approvedBy: u,
+							approvedAtUTC: Date.now(),
 							bannedBy: null,
 							isRemoved: !1,
 							isSpam: !1,
@@ -1056,6 +1057,7 @@
 						[e]: {
 							approvedBy: null,
 							bannedBy: p,
+							bannedAtUTC: Date.now(),
 							isApproved: !1,
 							isRemoved: !t,
 							isSpam: t
@@ -2891,7 +2893,7 @@
 			e.exports = JSON.parse('{"id":"445164f0825f"}')
 		},
 		"./src/redditGQL/operations/CreateComment.json": function(e) {
-			e.exports = JSON.parse('{"id":"20b8e2a8e312"}')
+			e.exports = JSON.parse('{"id":"a3eae58411e4"}')
 		},
 		"./src/redditGQL/operations/UpdateComment.json": function(e) {
 			e.exports = JSON.parse('{"id":"3954b4d4b89c"}')
@@ -2901,4 +2903,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/removalReasonActions.d3a8a9032af7ac2288b5.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/removalReasonActions.b31956beb83c892e1c01.js.map

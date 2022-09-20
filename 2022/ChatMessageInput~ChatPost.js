@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ChatMessageInput~ChatPost.ba5cf4d6f543b3c2b536.js
-// Retrieved at 9/19/2022, 5:30:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ChatMessageInput~ChatPost.ea989147891290d8f32b.js
+// Retrieved at 9/20/2022, 11:00:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ChatMessageInput~ChatPost"], {
 		"./node_modules/lodash/_baseReduce.js": function(e, t) {
@@ -699,13 +699,13 @@
 					onClick: () => {
 						e.isSponsored && e.post.postId && Object(f.a)(e.post, e.pageType)
 					}
-				}, D(e)) : e.isListing && e.postPermalink ? a.a.createElement(i.a, {
+				}, B(e)) : e.isListing && e.postPermalink ? a.a.createElement(i.a, {
 					target: e.shouldOpenPostInNewTab ? "_blank" : void 0,
 					to: Object(m.a)(e.postPermalink, void 0, t),
 					onClick: e.onPostMediaClick
-				}, D(e)) : D(e)
+				}, B(e)) : B(e)
 			});
-			const B = (e, t) => a.a.createElement(N, {
+			const R = (e, t) => a.a.createElement(N, {
 					altText: t.altText,
 					className: Object(d.a)(t.imageClassName, {
 						[O.a]: !e
@@ -723,7 +723,7 @@
 					width: t.width,
 					renderSmallMedia: t.renderSmallMedia
 				}),
-				D = e => {
+				B = e => {
 					let {
 						onClick: t,
 						...n
@@ -734,7 +734,7 @@
 						className: `${r?`${O.a} `:""}${n.className||""}`
 					}), n.isListing ? a.a.createElement("div", {
 						className: n.contentImageClassName
-					}, B(r, n)) : a.a.createElement("a", {
+					}, R(r, n)) : a.a.createElement("a", {
 						href: n.originalSource,
 						onClick: t,
 						style: o ? {
@@ -743,7 +743,7 @@
 						target: "_blank",
 						rel: u.c,
 						className: I.a.imageLink
-					}, B(r, n), n.shouldBlur && !n.isVideoThumbnail && !n.isNsfwBlockingModalEligible && a.a.createElement(h.a, {
+					}, R(r, n), n.shouldBlur && !n.isVideoThumbnail && !n.isNsfwBlockingModalEligible && a.a.createElement(h.a, {
 						isNSFW: !!n.isNSFW,
 						isSpoiler: !!n.isSpoiler
 					})), n.isListing && !n.showFull && n.height > C.j && Object(C.L)(n.height, n.width) && a.a.createElement("div", {
@@ -965,7 +965,7 @@
 						postId: p
 					}))
 				}
-				const B = r()(e => {
+				const R = r()(e => {
 					if (n) return;
 					const {
 						target: t
@@ -973,11 +973,11 @@
 					t && t.played && 1 === t.played.length && 0 === t.played.start(0) && t.played.end(0) === t.duration && N(Object(u.s)(p))
 				}, 200);
 
-				function D(e) {
-					e.persist(), B(e)
+				function B(e) {
+					e.persist(), R(e)
 				}
 
-				function R(e) {
+				function D(e) {
 					var t;
 					(a || P(e), c) || (t = e.timeStamp, N(Object(u.A)(p, t)))
 				}
@@ -1001,7 +1001,7 @@
 				}
 
 				function F(e) {
-					s || R(e), a || P(e), N(Object(u.C)(p))
+					s || D(e), a || P(e), N(Object(u.C)(p))
 				}
 
 				function A() {
@@ -1016,11 +1016,11 @@
 						loop: !0,
 						onBufferingChange: S,
 						onLoadStart: H,
-						onLoadedData: R,
+						onLoadedData: D,
 						onLoadedMetadata: P,
 						onPause: M,
 						onPlaying: F,
-						onTimeUpdate: D,
+						onTimeUpdate: B,
 						shouldLoad: b,
 						shouldPause: C,
 						showCentered: I,
@@ -1763,9 +1763,9 @@
 			})), n.d(t, "a", (function() {
 				return M
 			})), n.d(t, "b", (function() {
-				return B
+				return R
 			})), n.d(t, "f", (function() {
-				return D
+				return B
 			})), n.d(t, "h", (function() {
 				return H
 			})), n.d(t, "g", (function() {
@@ -1892,18 +1892,18 @@
 					if (!a) return;
 					const o = a.length,
 						d = [];
-					for (let i = 0; i < o; i++) d.push(R(a[i], t, n, i, r));
+					for (let i = 0; i < o; i++) d.push(D(a[i], t, n, i, r));
 					return i.a.createElement(c.c, {
 						key: s
 					}, d)
 				},
-				B = (e, t) => {
+				R = (e, t) => {
 					const n = e.c;
 					return i.a.createElement(c.k, {
 						key: t
 					}, i.a.createElement(c.h, null, n.reduce((e, t, n, s) => e += t.t + (n < s.length ? "\n" : ""), "")))
 				},
-				D = (e, t, n, s, r) => {
+				B = (e, t, n, s, r) => {
 					const a = e.c,
 						o = [],
 						d = a.length;
@@ -1911,25 +1911,25 @@
 						const e = a[u].c;
 						e && e.length && o.push(i.a.createElement(c.g, {
 							key: u
-						}, e.map((e, s) => R(e, t, n, s, r))))
+						}, e.map((e, s) => D(e, t, n, s, r))))
 					}
 					const l = e.o ? c.i : c.v;
 					return i.a.createElement(l, {
 						key: s
 					}, o)
 				},
-				R = (e, t, n, s, r) => {
+				D = (e, t, n, s, r) => {
 					switch (e.e) {
 						case m.b:
 							return M(e, t, n, s, r);
 						case m.c:
-							return B(e, s);
+							return R(e, s);
 						case m.k:
 							return N(e, n, s);
 						case m.l:
 							return S(s);
 						case m.p:
-							return D(e, t, n, s, r);
+							return B(e, t, n, s, r);
 						case m.u:
 							return P(e, t, n, s, r);
 						case m.z:
@@ -2218,12 +2218,12 @@
 						rtJsonElementProps: o
 					});
 					switch (a) {
-						case b.Qf.SmIcon:
+						case b.Rf.SmIcon:
 							return r.a.createElement(h, {
 								subredditName: s,
 								rtJsonElementProps: o
 							});
-						case b.Qf.SmIconHc:
+						case b.Rf.SmIconHc:
 							return r.a.createElement(h, {
 								subredditName: s,
 								isHoverable: !0,
@@ -2670,12 +2670,12 @@
 				c = e => {
 					return Object(a.c)(e, {
 						experimentEligibilitySelector: i,
-						experimentName: s.Jf
+						experimentName: s.Kf
 					}) || ""
 				},
 				d = e => {
 					const t = c(e);
-					return t === s.Qf.SmIcon || t === s.Qf.SmIconHc
+					return t === s.Rf.SmIcon || t === s.Rf.SmIconHc
 				},
 				l = (e, t) => {
 					let {
@@ -2701,4 +2701,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatMessageInput~ChatPost.ba5cf4d6f543b3c2b536.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatMessageInput~ChatPost.ea989147891290d8f32b.js.map

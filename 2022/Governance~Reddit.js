@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~Reddit.6089edb8cd9ae6f4f7d4.js
-// Retrieved at 9/19/2022, 5:30:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~Reddit.9360d8fb1c1880d146cd.js
+// Retrieved at 9/20/2022, 11:00:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~Reddit"], {
 		"./assets/fonts/NotoMono/font.less": function(e, t, n) {},
@@ -2331,7 +2331,7 @@
 			const D = e => _.d.reCaptchaEnterprise(e) && !Object(T.d)(e),
 				w = e => !!Object(S.c)(e, {
 					experimentEligibilitySelector: Object(I.d)(Object(I.b)(...a.d)),
-					experimentName: f.nf
+					experimentName: f.of
 				}),
 				j = Object(r.b)("LOAD_RECAPTCHA_ENTERPRISE"),
 				C = () => l(e => p()([D, w, e => e.tracking.reCaptchaEnterprise.load === r.a.New], t => t(e)))(async e => {
@@ -4498,7 +4498,7 @@
 							function() {
 								let e = {};
 								A && U.type.length && (Object(se.d)(j, {
-									experimentName: te.Dc
+									experimentName: te.Ec
 								}), C && (e = {
 									...U
 								}));
@@ -7600,9 +7600,9 @@
 						return Oe(e, t.payload);
 					case fe.i:
 					case fe.f:
-					case fe.m:
-					case fe.p:
-					case fe.v:
+					case fe.n:
+					case fe.q:
+					case fe.w:
 						return Oe(e, t.payload.response);
 					case ge.r: {
 						const {
@@ -8013,9 +8013,9 @@
 					case R.e:
 					case R.h:
 					case fe.f:
-					case fe.m:
-					case fe.p:
-					case fe.v:
+					case fe.n:
+					case fe.q:
+					case fe.w:
 					case j.r:
 					case be.f:
 					case D.c:
@@ -12363,9 +12363,9 @@
 						}
 						case fe.i:
 						case fe.f:
-						case fe.m:
-						case fe.p:
-						case fe.v: {
+						case fe.n:
+						case fe.q:
+						case fe.w: {
 							if (e) return e;
 							const {
 								response: n
@@ -14021,9 +14021,9 @@
 					}
 					case fe.i:
 					case fe.f:
-					case fe.m:
-					case fe.p:
-					case fe.v: {
+					case fe.n:
+					case fe.q:
+					case fe.w: {
 						const {
 							response: n
 						} = t.payload, {
@@ -14038,7 +14038,7 @@
 					}
 					case H.f:
 					case R.e:
-					case fe.k: {
+					case fe.l: {
 						const n = t.payload,
 							{
 								moderatingSubreddits: r,
@@ -16140,9 +16140,9 @@
 						}
 						case fe.i:
 						case fe.f:
-						case fe.m:
-						case fe.p:
-						case fe.v: {
+						case fe.n:
+						case fe.q:
+						case fe.w: {
 							const {
 								response: n
 							} = t.payload;
@@ -16623,9 +16623,9 @@
 					}
 					case fe.i:
 					case fe.f:
-					case fe.m:
-					case fe.p:
-					case fe.v: {
+					case fe.n:
+					case fe.q:
+					case fe.w: {
 						const {
 							response: n
 						} = t.payload, {
@@ -16637,7 +16637,7 @@
 						}
 					}
 					case Tf.b:
-					case fe.s: {
+					case fe.t: {
 						const {
 							operation: n,
 							ids: r,
@@ -18196,10 +18196,10 @@
 						return Object(ce.merge)(e, t.payload.profiles);
 					case fe.i:
 					case fe.f:
-					case fe.m:
-					case fe.p:
-					case fe.v:
-					case fe.k: {
+					case fe.n:
+					case fe.q:
+					case fe.w:
+					case fe.l: {
 						const {
 							response: n
 						} = t.payload, r = n && n.profiles;
@@ -20954,7 +20954,7 @@
 					case C.b:
 					case R.e:
 					case R.h:
-					case fe.k:
+					case fe.l:
 					case j.r:
 					case j.u:
 					case Ou.h:
@@ -20997,9 +20997,9 @@
 						return GE(e, t.payload.subreddits || {});
 					case fe.f:
 					case fe.i:
-					case fe.m:
-					case fe.p:
-					case fe.v: {
+					case fe.n:
+					case fe.q:
+					case fe.w: {
 						const {
 							response: n
 						} = t.payload, {
@@ -22698,12 +22698,12 @@
 						case fe.i:
 						case fe.g:
 						case fe.f:
+						case fe.o:
 						case fe.n:
-						case fe.m:
-						case fe.p:
 						case fe.q:
+						case fe.r:
+						case fe.x:
 						case fe.w:
-						case fe.v:
 							if (t.payload && t.payload.response && t.payload.response.preferences && "nightmode" in t.payload.response.preferences) {
 								const {
 									nightmode: e
@@ -23316,14 +23316,14 @@
 						} : e;
 					case fe.i:
 					case fe.f:
-					case fe.m:
-					case fe.p:
-					case fe.v:
+					case fe.n:
+					case fe.q:
+					case fe.w:
 					case fe.h:
 					case fe.e:
-					case fe.l:
-					case fe.o:
-					case fe.u: {
+					case fe.m:
+					case fe.p:
+					case fe.v: {
 						const {
 							response: n
 						} = t.payload;
@@ -24639,6 +24639,8 @@
 							} = t.payload;
 							return VT(e, n)
 						}
+						case fe.k:
+							return VT(e, t.payload || {});
 						case Ou.l: {
 							const {
 								user: n
@@ -25533,7 +25535,7 @@
 					if (!u(e)) return;
 					const t = Object(o.c)(e, {
 						experimentEligibilitySelector: l,
-						experimentName: a.be,
+						experimentName: a.ce,
 						expEventOverride: !1
 					});
 					return null == t ? void 0 : t.toLocaleLowerCase()
@@ -25556,9 +25558,9 @@
 				},
 				b = e => !!p(e) && Object(o.c)(e, {
 					experimentEligibilitySelector: u,
-					experimentName: a.ce,
+					experimentName: a.de,
 					expEventOverride: !1
-				}) !== a.de.Readonly
+				}) !== a.ee.Readonly
 		},
 		"./src/reddit/selectors/experiments/serpTabPreserved.ts": function(e, t, n) {
 			"use strict";
@@ -25569,10 +25571,10 @@
 				s = n("./src/reddit/selectors/telemetry.ts");
 
 			function a(e) {
-				const t = Object(s.q)(e, r.Dc);
+				const t = Object(s.q)(e, r.Ec);
 				return {
 					experimentState: e,
-					isActive: (null == t ? void 0 : t.variant) === r.Jd,
+					isActive: (null == t ? void 0 : t.variant) === r.Kd,
 					isBucketed: !!(null == t ? void 0 : t.variant)
 				}
 			}
@@ -25706,7 +25708,7 @@
 			e.exports = JSON.parse('{"id":"074eb98957ec"}')
 		},
 		"./src/redditGQL/operations/SubredditTopContent.json": function(e) {
-			e.exports = JSON.parse('{"id":"6bb3e5fdc9b0"}')
+			e.exports = JSON.parse('{"id":"5ce7e1291628"}')
 		},
 		"./src/redditGQL/operations/SubredditsCarousel.json": function(e) {
 			e.exports = JSON.parse('{"id":"a818d17baafc"}')
@@ -25728,4 +25730,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit.6089edb8cd9ae6f4f7d4.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit.9360d8fb1c1880d146cd.js.map
