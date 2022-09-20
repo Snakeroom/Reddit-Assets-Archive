@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModerationPages.c17b69ee3bb6f1da0264.js
-// Retrieved at 9/20/2022, 6:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModerationPages.3a3938996a73addc7491.js
+// Retrieved at 9/20/2022, 6:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModerationPages", "CollectionCommentsPage~CommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~RpanListingUnit~S~5809214e", "CommentsPage~Governance~Reddit~ReportFlow~Subreddit~reddit-components-BlankPost~reddit-components-Cl~5351df81", "Governance~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compo~bd4baca2", "Reddit~RpanListingUnit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPos~93b34f9d", "Governance~ModListing~Reddit~ReportFlow~Subreddit", "ModListing~PostCreation~Reddit~StandalonePostPage~Subreddit", "Governance~ModListing~Reddit", "Governance~Reddit~SubredditForkingCTA"], {
 		"./src/chat/controls/Svg/index.m.less": function(e, t, n) {
@@ -21174,7 +21174,7 @@
 		"./src/reddit/components/BannedUserList/index.tsx": function(e, t, n) {
 			"use strict";
 			n.d(t, "b", (function() {
-				return K
+				return Y
 			}));
 			var s = n("./src/config.ts"),
 				r = n("./node_modules/fbt/lib/FbtPublic.js"),
@@ -21204,18 +21204,34 @@
 				S = n("./src/reddit/components/Comments/UnthreadedComment/index.tsx"),
 				w = n("./src/reddit/components/CompactPost/index.tsx"),
 				T = n("./src/reddit/contexts/PageLayer/index.tsx"),
-				N = n("./src/reddit/components/BannedUserList/ExpandedComponent.m.less"),
-				P = n.n(N);
+				N = n("./src/reddit/contexts/Post/index.tsx"),
+				P = n("./src/reddit/selectors/commentSelector.ts"),
+				R = n("./src/reddit/components/BannedUserList/ExpandedComponent.m.less"),
+				A = n.n(R);
 			const {
-				fbt: R
-			} = n("./node_modules/fbt/lib/FbtPublic.js"), A = Object(T.u)({
+				fbt: M
+			} = n("./node_modules/fbt/lib/FbtPublic.js"), L = Object(T.u)({
 				currentProfileName: T.i,
 				isCommentsPage: T.x,
 				isCommentPermalink: T.w,
 				isProfilePostListing: T.L,
 				pageLayer: e => e
-			}), M = I.a.wrapped(S.c, "UnthreadedComment", P.a), L = I.a.div("BanReason", P.a), D = I.a.div("ExpandedComponentContainer", P.a), F = I.a.div("ModNote", P.a), U = I.a.div("ModNoteContainer", P.a), B = I.a.div("SectionTitle", P.a), q = I.a.div("ContextContainer", P.a), G = e => () => {};
-			var H = A(e => {
+			}), D = I.a.wrapped(S.c, "UnthreadedComment", A.a), F = I.a.div("BanReason", A.a), U = I.a.div("ExpandedComponentContainer", A.a), B = I.a.div("ModNote", A.a), q = I.a.div("ModNoteContainer", A.a), G = I.a.div("SectionTitle", A.a), H = I.a.div("ContextContainer", A.a), W = e => () => {}, V = e => {
+				let {
+					commentId: t
+				} = e;
+				const n = Object(a.e)(e => Object(P.b)(e, {
+					commentId: t
+				}));
+				return n && n.postId ? i.a.createElement(N.a, {
+					postId: n.postId
+				}, i.a.createElement(D, {
+					commentId: t,
+					highlight: !1,
+					trackClick: W
+				})) : null
+			};
+			var z = L(e => {
 					const {
 						currentProfileName: t,
 						isCommentPermalink: n,
@@ -21224,11 +21240,11 @@
 						pageLayer: o,
 						user: a
 					} = e;
-					return i.a.createElement(D, null, a.modNote && i.a.createElement(U, null, i.a.createElement(B, null, R._("Mod note:", null, {
+					return i.a.createElement(U, null, a.modNote && i.a.createElement(q, null, i.a.createElement(G, null, M._("Mod note:", null, {
 						hk: "2LBtSw"
-					})), i.a.createElement(F, null, a.modNote)), i.a.createElement("div", null, i.a.createElement(B, null, R._("Banned For:", null, {
+					})), i.a.createElement(B, null, a.modNote)), i.a.createElement("div", null, i.a.createElement(G, null, M._("Banned For:", null, {
 						hk: "3UbXsX"
-					})), i.a.createElement(L, null, a.reason), (a.postId || a.commentId) && i.a.createElement(q, null, a.postId && i.a.createElement(w.default, {
+					})), i.a.createElement(F, null, a.reason), (a.postId || a.commentId) && i.a.createElement(H, null, a.postId && i.a.createElement(w.default, {
 						currentProfileName: t,
 						isCommentsPage: s,
 						isCommentPermalink: n,
@@ -21238,16 +21254,14 @@
 						postId: a.postId,
 						hideModTools: !0,
 						inSubredditOrProfile: !0
-					}), a.commentId && i.a.createElement(M, {
-						commentId: a.commentId,
-						highlight: !1,
-						trackClick: G
+					}), a.commentId && i.a.createElement(V, {
+						commentId: a.commentId
 					}))))
 				}),
-				W = n("./src/reddit/components/BannedUserList/index.m.less"),
-				V = n.n(W);
-			const z = 48,
-				K = e => null == e ? r.fbt._("Permanent", null, {
+				K = n("./src/reddit/components/BannedUserList/index.m.less"),
+				Q = n.n(K);
+			const J = 48,
+				Y = e => null == e ? r.fbt._("Permanent", null, {
 					hk: "3pNDzS"
 				}) : r.fbt._({
 					"*": "{number} days left",
@@ -21255,7 +21269,7 @@
 				}, [r.fbt._plural(e, "number")], {
 					hk: "3VM32a"
 				}),
-				Q = Object(d.c)({
+				X = Object(d.c)({
 					bannedUsers: j.h,
 					bannedUsersList: j.d,
 					bannedUsersListPending: j.c,
@@ -21265,7 +21279,7 @@
 					searchPending: j.f,
 					searchResult: j.g
 				}),
-				J = Object(a.b)(Q, (e, t) => {
+				Z = Object(a.b)(X, (e, t) => {
 					let {
 						subredditId: n
 					} = t;
@@ -21278,7 +21292,7 @@
 						toggleBanUserModal: () => e(Object(l.i)("ModerationPage--Modal--AddUser"))
 					}
 				});
-			class Y extends i.a.Component {
+			class $ extends i.a.Component {
 				constructor(e) {
 					super(e), this.handleBanUserToggled = e => {
 						if (e) {
@@ -21305,10 +21319,10 @@
 						this.props.loadMoreToken && this.props.loadMore(this.props.loadMoreToken)
 					}, this.renderBannedUser = e => {
 						const t = this.props.bannedUsers[e] || this.props.searchResult,
-							n = K(t.duration);
+							n = Y(t.duration);
 						return t ? i.a.createElement(x.b, {
 							description: t.reason,
-							expandedComponent: i.a.createElement(H, {
+							expandedComponent: i.a.createElement(z, {
 								user: t
 							}),
 							pageName: c.kc.Banned,
@@ -21362,7 +21376,7 @@
 						loadMoreToken: n,
 						onLoadMore: this.onLoadMore
 					}, e.bannedUsersList.map(e => ({
-						estHeight: z,
+						estHeight: J,
 						id: e.id,
 						render: () => this.renderBannedUser(e.id)
 					})))), e.isBanUserModalOpen && this.renderAddBannedUserModal(), e.isConfirmModalOpen && t.userId && t.username && i.a.createElement(m.a, {
@@ -21390,11 +21404,11 @@
 						})
 					}, i.a.createElement(E.a, {
 						name: "ban",
-						className: V.a.BanIcon
+						className: Q.a.BanIcon
 					}))), e.isBanUserModalOpen && this.renderAddBannedUserModal())
 				}
 			}
-			t.a = J(Y)
+			t.a = Z($)
 		},
 		"./src/reddit/components/BlockNavigation/index.tsx": function(e, t, n) {
 			"use strict";
@@ -76493,4 +76507,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.c17b69ee3bb6f1da0264.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.3a3938996a73addc7491.js.map
