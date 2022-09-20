@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/4.d0a1fc5141c5259a5ac6.js
-// Retrieved at 9/13/2022, 3:30:03 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/4.cf244547cb15531f27c1.js
+// Retrieved at 9/20/2022, 6:40:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	[4], {
 		"./node_modules/lodash/_baseRange.js": function(e, t) {
@@ -232,10 +232,10 @@
 					hk: "2mEXAi"
 				}))))
 			}
-			var O = n("./src/redditGQL/operations/SubmitContentRatingSurvey.json"),
-				S = n("./src/lib/makeGqlRequest/index.ts");
-			var L, A = (e, t) => Object(S.a)(e, {
-					...O,
+			var S = n("./src/redditGQL/operations/SubmitContentRatingSurvey.json"),
+				O = n("./src/lib/makeGqlRequest/index.ts");
+			var L, A = (e, t) => Object(O.a)(e, {
+					...S,
 					variables: t
 				}),
 				T = n("./src/reddit/helpers/trackers/contentTag.ts"),
@@ -243,9 +243,9 @@
 			! function(e) {
 				e.Accepted = "ACCEPTED", e.Pending = "PENDING"
 			}(L || (L = {}));
-			var F = n("./src/reddit/models/Toast/index.ts"),
-				I = n("./node_modules/lodash/mapValues.js"),
-				B = n.n(I),
+			var I = n("./src/reddit/models/Toast/index.ts"),
+				F = n("./node_modules/lodash/mapValues.js"),
+				B = n.n(F),
 				R = n("./src/reddit/controls/CheckboxInput/index.tsx");
 
 			function z(e) {
@@ -258,7 +258,7 @@
 				var n
 			}
 
-			function V(e) {
+			function P(e) {
 				let {
 					question: t,
 					selectedAnswers: n,
@@ -290,7 +290,7 @@
 					id: e.id
 				}, e.answerText))))
 			}
-			var P = n("./src/reddit/components/ContentSurvey/RatingCard.tsx");
+			var V = n("./src/reddit/components/ContentSurvey/RatingCard.tsx");
 			const {
 				fbt: q
 			} = n("./node_modules/fbt/lib/FbtPublic.js");
@@ -336,13 +336,13 @@
 				Object(i.useEffect)(() => {
 					N && (v.c.captureException(N), f(Object(p.f)(Object(p.e)(q._("An error occurred", null, {
 						hk: "1VDETi"
-					}), F.b.Error))))
+					}), I.b.Error))))
 				}, [N, f]);
-				const [O, S] = Object(i.useState)(null);
+				const [S, O] = Object(i.useState)(null);
 				if (!r) return null;
 				if (!r.isEligible) return null;
 
-				function I(e, t) {
+				function F(e, t) {
 					x(Object(a.setIn)(u, [e], t)), _(Object(T.a)(E.pageType))
 				}
 				const B = null !== (t = u[null == E ? void 0 : E.id]) && void 0 !== t ? t : {},
@@ -351,7 +351,7 @@
 				return l.a.createElement(M, {
 					activeSlide: C,
 					advance: async function() {
-						if (y === H.Survey && C === w.length && S(function(e, t) {
+						if (y === H.Survey && C === w.length && O(function(e, t) {
 								var n;
 								let a = null,
 									s = [];
@@ -386,11 +386,11 @@
 								}
 							}), f(Object(p.f)(Object(p.e)(q._("Thanks for setting up your Content Tag!", null, {
 								hk: "3HW5GV"
-							}), F.b.SuccessCommunityGreen))), f({
+							}), I.b.SuccessCommunityGreen))), f({
 								type: g.A,
 								payload: {
 									id: s,
-									response: O
+									response: S
 								}
 							}), void(N || o())
 						}
@@ -454,33 +454,33 @@
 					hk: "2x33OC"
 				})), w.map(e => {
 					var t;
-					return l.a.createElement(V, {
+					return l.a.createElement(P, {
 						key: e.id,
 						question: e,
 						selectedAnswers: null !== (t = u[e.id]) && void 0 !== t ? t : {},
-						onChange: I
+						onChange: F
 					})
-				}), O && l.a.createElement("div", {
+				}), S && l.a.createElement("div", {
 					key: "result",
 					className: m.a.result
 				}, l.a.createElement("p", {
 					className: m.a.heading
 				}, q._("Your Content Tag:", null, {
 					hk: "2OUAzB"
-				})), l.a.createElement(P.a, {
-					ratingResponse: O,
+				})), l.a.createElement(V.a, {
+					ratingResponse: S,
 					subredditId: s
 				}, l.a.createElement("p", {
 					className: m.a.ratingAudience
-				}, O.rating.name), l.a.createElement("p", {
+				}, S.rating.name), l.a.createElement("p", {
 					className: m.a.ratingDescription
-				}, O.rating.description, " ", l.a.createElement("br", null), q._("(Note: Only moderators can see this tag.)", null, {
+				}, S.rating.description, " ", l.a.createElement("br", null), q._("(Note: Only moderators can see this tag.)", null, {
 					hk: "2PN50Z"
 				}))), l.a.createElement("p", {
 					className: m.a.reasonsHeader
 				}, q._("Posts and discussions include:", null, {
 					hk: "12MdUE"
-				})), l.a.createElement("ul", null, O.ratingReasons.map(e => l.a.createElement("li", {
+				})), l.a.createElement("ul", null, S.ratingReasons.map(e => l.a.createElement("li", {
 					key: e.id,
 					className: m.a.reason
 				}, e.contentRatingReasonText)))))
@@ -558,24 +558,33 @@
 			var a = n("./node_modules/react/index.js"),
 				s = n.n(a),
 				r = n("./src/lib/classNames/index.ts"),
-				o = n("./src/reddit/icons/svgs/Checkbox/index.tsx"),
-				c = n("./src/reddit/icons/svgs/CheckboxSelected/index.tsx"),
-				i = n("./src/reddit/layout/row/Inline/index.tsx"),
-				l = n("./src/reddit/controls/CheckboxInput/index.m.less"),
-				d = n.n(l);
-			t.a = e => s.a.createElement(i.a, {
-				"aria-checked": !!e.value,
-				"aria-disabled": e.disabled,
-				"aria-labelledby": e.name,
-				className: Object(r.a)(e.className, d.a.checkboxInput, e.disabled ? d.a.disabled : null),
-				onClick: e.onChange && !e.disabled ? () => e.onChange(!e.value) : void 0,
-				role: "checkbox"
-			}, s.a.createElement("input", {
-				value: e.value ? e.value.toString() : "",
-				type: "hidden"
-			}), e.value ? s.a.createElement(c.a, {
-				className: d.a.checkboxSelected
-			}) : s.a.createElement(o.a, null), e.children)
+				o = n("./src/reddit/constants/keycodes.ts"),
+				c = n("./src/reddit/icons/svgs/Checkbox/index.tsx"),
+				i = n("./src/reddit/icons/svgs/CheckboxSelected/index.tsx"),
+				l = n("./src/reddit/layout/row/Inline/index.tsx"),
+				d = n("./src/reddit/controls/CheckboxInput/index.m.less"),
+				u = n.n(d);
+			t.a = e => {
+				const t = e.onChange && !e.disabled ? t => {
+						t.key !== o.b.Enter && t.key !== o.b.Space || e.onChange(!e.value)
+					} : void 0,
+					n = e.onChange && !e.disabled ? () => e.onChange(!e.value) : void 0;
+				return s.a.createElement(l.a, {
+					"aria-checked": !!e.value,
+					"aria-disabled": e.disabled,
+					"aria-labelledby": e.name,
+					className: Object(r.a)(e.className, u.a.checkboxInput, e.disabled ? u.a.disabled : null),
+					onClick: n,
+					onKeyPress: t,
+					role: "checkbox",
+					tabIndex: 0
+				}, s.a.createElement("input", {
+					value: e.value ? e.value.toString() : "",
+					type: "hidden"
+				}), e.value ? s.a.createElement(i.a, {
+					className: u.a.checkboxSelected
+				}) : s.a.createElement(c.a, null), e.children)
+			}
 		},
 		"./src/reddit/hooks/useGqlContext.ts": function(e, t, n) {
 			"use strict";
@@ -1070,4 +1079,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/4.d0a1fc5141c5259a5ac6.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/4.cf244547cb15531f27c1.js.map

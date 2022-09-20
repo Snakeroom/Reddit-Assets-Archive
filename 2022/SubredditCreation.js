@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditCreation.ab58c0b3f4583b0849e3.js
-// Retrieved at 9/20/2022, 11:00:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditCreation.8168087bd605f23b02a6.js
+// Retrieved at 9/20/2022, 6:40:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditCreation"], {
 		"./node_modules/lodash/_baseRange.js": function(e, t) {
@@ -311,8 +311,8 @@
 				}).apply(this, arguments)
 			}
 			const _ = C.a.span("Wrapper", f.a),
-				N = C.a.select("Inner", f.a),
-				y = C.a.wrapped(v.b, "Caret", f.a);
+				y = C.a.select("Inner", f.a),
+				N = C.a.wrapped(v.b, "Caret", f.a);
 
 			function w(e) {
 				let {
@@ -325,15 +325,15 @@
 				} : {};
 				return r.a.createElement(_, {
 					className: t
-				}, r.a.createElement(N, g({
+				}, r.a.createElement(y, g({
 					className: n
-				}, a)), r.a.createElement(y, g({
+				}, a)), r.a.createElement(N, g({
 					isSubreddit: !0
 				}, s)))
 			}
 			var k = n("./src/reddit/controls/ToggleSwitch/index.tsx"),
-				O = n("./src/reddit/controls/Typography/index.tsx"),
-				S = n("./src/reddit/icons/svgs/ArrowRight/index.tsx"),
+				S = n("./src/reddit/controls/Typography/index.tsx"),
+				O = n("./src/reddit/icons/svgs/ArrowRight/index.tsx"),
 				T = n("./src/reddit/icons/svgs/Circle/index.tsx"),
 				j = n("./src/reddit/icons/svgs/OutboundLink/index.tsx"),
 				I = n("./node_modules/lodash/range.js"),
@@ -358,7 +358,7 @@
 			const G = Object(d.a)(h.a),
 				H = C.a.wrapped(T.a, "Circle", A.a),
 				V = C.a.h3("Label", A.a),
-				Y = C.a.wrapped(O.c, "Subtext", A.a),
+				Y = C.a.wrapped(S.c, "Subtext", A.a),
 				J = C.a.wrapped(u.a, "HoverTooltip", A.a),
 				Q = C.a.div("ControlContainer", A.a),
 				K = C.a.div("TextContainer", A.a),
@@ -391,7 +391,7 @@
 				Z = C.a.wrapped(q, "SubtextLink", A.a),
 				U = C.a.wrapped(j.a, "LinkIcon", A.a),
 				$ = C.a.button("LinkButton", A.a),
-				ee = C.a.wrapped(S.a, "ArrowRight", A.a),
+				ee = C.a.wrapped(O.a, "ArrowRight", A.a),
 				te = e => r.a.createElement(X, {
 					direction: e.direction,
 					disabled: e.disabled,
@@ -909,12 +909,12 @@
 				f = n("./src/reddit/components/TrackingHelper/index.tsx"),
 				g = n("./src/reddit/constants/modals.ts"),
 				_ = n("./src/reddit/controls/Button/index.tsx"),
-				N = n("./src/reddit/controls/CheckboxInput/index.tsx"),
-				y = n("./src/reddit/controls/ErrorText/index.tsx"),
+				y = n("./src/reddit/controls/CheckboxInput/index.tsx"),
+				N = n("./src/reddit/controls/ErrorText/index.tsx"),
 				w = n("./src/reddit/controls/RadioInput/index.tsx"),
 				k = n("./src/reddit/controls/RadioInput/RadioOption/index.tsx"),
-				O = n("./src/reddit/controls/TextButton/index.tsx"),
-				S = n("./src/reddit/helpers/trackers/emailInvite.ts"),
+				S = n("./src/reddit/controls/TextButton/index.tsx"),
+				O = n("./src/reddit/helpers/trackers/emailInvite.ts"),
 				T = n("./src/reddit/helpers/trackers/screenview.ts"),
 				j = n("./src/reddit/helpers/trackers/subredditCreation.ts"),
 				I = n("./src/reddit/icons/svgs/Admin/index.tsx"),
@@ -973,7 +973,7 @@
 				te = K.a.wrapped(F.a, "Private", Q.a),
 				ne = K.a.wrapped(I.a, "Employee", Q.a),
 				ae = K.a.wrapped(B.a, "CloseButton", Q.a),
-				re = K.a.wrapped(y.b, "ErrorText", Q.a),
+				re = K.a.wrapped(N.b, "ErrorText", Q.a),
 				se = Object(o.c)({
 					error: W.f,
 					isCreatePending: W.k,
@@ -1077,7 +1077,7 @@
 						const {
 							sendEvent: e
 						} = this.props;
-						e(Object(S.a)("community_creation")), this.setState({
+						e(Object(O.a)("community_creation")), this.setState({
 							showEmailInviteModal: !0
 						})
 					}, this.onCloseInviteViaEmailModal = () => {
@@ -1206,7 +1206,7 @@
 						className: Q.a.subtitle
 					}, a.fbt._("Adult content", null, {
 						hk: "20arB"
-					})), s.a.createElement(N.a, {
+					})), s.a.createElement(y.a, {
 						name: "over18",
 						value: h,
 						onChange: this.onUpdateOver18,
@@ -1221,7 +1221,7 @@
 						className: Object(c.a)(Q.a.field, {
 							[Q.a.isCreatePending]: t
 						})
-					}, s.a.createElement(O.a, {
+					}, s.a.createElement(S.a, {
 						className: Q.a.textButton,
 						onClick: this.onInviteViaEmailClick
 					}, a.fbt._("Invite members via email", null, {
@@ -1265,24 +1265,33 @@
 			var a = n("./node_modules/react/index.js"),
 				r = n.n(a),
 				s = n("./src/lib/classNames/index.ts"),
-				i = n("./src/reddit/icons/svgs/Checkbox/index.tsx"),
-				o = n("./src/reddit/icons/svgs/CheckboxSelected/index.tsx"),
-				l = n("./src/reddit/layout/row/Inline/index.tsx"),
-				c = n("./src/reddit/controls/CheckboxInput/index.m.less"),
-				d = n.n(c);
-			t.a = e => r.a.createElement(l.a, {
-				"aria-checked": !!e.value,
-				"aria-disabled": e.disabled,
-				"aria-labelledby": e.name,
-				className: Object(s.a)(e.className, d.a.checkboxInput, e.disabled ? d.a.disabled : null),
-				onClick: e.onChange && !e.disabled ? () => e.onChange(!e.value) : void 0,
-				role: "checkbox"
-			}, r.a.createElement("input", {
-				value: e.value ? e.value.toString() : "",
-				type: "hidden"
-			}), e.value ? r.a.createElement(o.a, {
-				className: d.a.checkboxSelected
-			}) : r.a.createElement(i.a, null), e.children)
+				i = n("./src/reddit/constants/keycodes.ts"),
+				o = n("./src/reddit/icons/svgs/Checkbox/index.tsx"),
+				l = n("./src/reddit/icons/svgs/CheckboxSelected/index.tsx"),
+				c = n("./src/reddit/layout/row/Inline/index.tsx"),
+				d = n("./src/reddit/controls/CheckboxInput/index.m.less"),
+				m = n.n(d);
+			t.a = e => {
+				const t = e.onChange && !e.disabled ? t => {
+						t.key !== i.b.Enter && t.key !== i.b.Space || e.onChange(!e.value)
+					} : void 0,
+					n = e.onChange && !e.disabled ? () => e.onChange(!e.value) : void 0;
+				return r.a.createElement(c.a, {
+					"aria-checked": !!e.value,
+					"aria-disabled": e.disabled,
+					"aria-labelledby": e.name,
+					className: Object(s.a)(e.className, m.a.checkboxInput, e.disabled ? m.a.disabled : null),
+					onClick: n,
+					onKeyPress: t,
+					role: "checkbox",
+					tabIndex: 0
+				}, r.a.createElement("input", {
+					value: e.value ? e.value.toString() : "",
+					type: "hidden"
+				}), e.value ? r.a.createElement(l.a, {
+					className: m.a.checkboxSelected
+				}) : r.a.createElement(o.a, null), e.children)
+			}
 		},
 		"./src/reddit/controls/ErrorText/SeeAllTextModal/index.m.less": function(e, t, n) {
 			e.exports = {
@@ -1834,4 +1843,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditCreation.ab58c0b3f4583b0849e3.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditCreation.8168087bd605f23b02a6.js.map

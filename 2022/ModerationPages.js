@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModerationPages.b459c9563621af156382.js
-// Retrieved at 9/20/2022, 11:00:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModerationPages.c17b69ee3bb6f1da0264.js
+// Retrieved at 9/20/2022, 6:40:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModerationPages", "CollectionCommentsPage~CommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~RpanListingUnit~S~5809214e", "CommentsPage~Governance~Reddit~ReportFlow~Subreddit~reddit-components-BlankPost~reddit-components-Cl~5351df81", "Governance~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compo~bd4baca2", "Reddit~RpanListingUnit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPos~93b34f9d", "Governance~ModListing~Reddit~ReportFlow~Subreddit", "ModListing~PostCreation~Reddit~StandalonePostPage~Subreddit", "Governance~ModListing~Reddit", "Governance~Reddit~SubredditForkingCTA"], {
 		"./src/chat/controls/Svg/index.m.less": function(e, t, n) {
@@ -52794,24 +52794,33 @@
 			var s = n("./node_modules/react/index.js"),
 				r = n.n(s),
 				o = n("./src/lib/classNames/index.ts"),
-				i = n("./src/reddit/icons/svgs/Checkbox/index.tsx"),
-				a = n("./src/reddit/icons/svgs/CheckboxSelected/index.tsx"),
-				d = n("./src/reddit/layout/row/Inline/index.tsx"),
-				c = n("./src/reddit/controls/CheckboxInput/index.m.less"),
-				l = n.n(c);
-			t.a = e => r.a.createElement(d.a, {
-				"aria-checked": !!e.value,
-				"aria-disabled": e.disabled,
-				"aria-labelledby": e.name,
-				className: Object(o.a)(e.className, l.a.checkboxInput, e.disabled ? l.a.disabled : null),
-				onClick: e.onChange && !e.disabled ? () => e.onChange(!e.value) : void 0,
-				role: "checkbox"
-			}, r.a.createElement("input", {
-				value: e.value ? e.value.toString() : "",
-				type: "hidden"
-			}), e.value ? r.a.createElement(a.a, {
-				className: l.a.checkboxSelected
-			}) : r.a.createElement(i.a, null), e.children)
+				i = n("./src/reddit/constants/keycodes.ts"),
+				a = n("./src/reddit/icons/svgs/Checkbox/index.tsx"),
+				d = n("./src/reddit/icons/svgs/CheckboxSelected/index.tsx"),
+				c = n("./src/reddit/layout/row/Inline/index.tsx"),
+				l = n("./src/reddit/controls/CheckboxInput/index.m.less"),
+				u = n.n(l);
+			t.a = e => {
+				const t = e.onChange && !e.disabled ? t => {
+						t.key !== i.b.Enter && t.key !== i.b.Space || e.onChange(!e.value)
+					} : void 0,
+					n = e.onChange && !e.disabled ? () => e.onChange(!e.value) : void 0;
+				return r.a.createElement(c.a, {
+					"aria-checked": !!e.value,
+					"aria-disabled": e.disabled,
+					"aria-labelledby": e.name,
+					className: Object(o.a)(e.className, u.a.checkboxInput, e.disabled ? u.a.disabled : null),
+					onClick: n,
+					onKeyPress: t,
+					role: "checkbox",
+					tabIndex: 0
+				}, r.a.createElement("input", {
+					value: e.value ? e.value.toString() : "",
+					type: "hidden"
+				}), e.value ? r.a.createElement(d.a, {
+					className: u.a.checkboxSelected
+				}) : r.a.createElement(a.a, null), e.children)
+			}
 		},
 		"./src/reddit/controls/CheckboxMenuItem/index.m.less": function(e, t, n) {
 			e.exports = {
@@ -76484,4 +76493,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.b459c9563621af156382.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.c17b69ee3bb6f1da0264.js.map

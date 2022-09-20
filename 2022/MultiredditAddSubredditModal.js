@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/MultiredditAddSubredditModal.79c17980b87d58983e3c.js
-// Retrieved at 9/20/2022, 11:00:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/MultiredditAddSubredditModal.7ab8a65828bc08882de4.js
+// Retrieved at 9/20/2022, 6:40:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["MultiredditAddSubredditModal"], {
 		"./node_modules/lodash/without.js": function(e, t, r) {
@@ -28,21 +28,21 @@
 			})), r.d(t, "myMultiredditsRequested", (function() {
 				return W
 			})), r.d(t, "createFailure", (function() {
-				return J
+				return K
 			})), r.d(t, "createPending", (function() {
 				return H
 			})), r.d(t, "createSuccess", (function() {
-				return K
+				return J
 			})), r.d(t, "createRequested", (function() {
 				return Q
 			})), r.d(t, "reloadCurrentMultiredditFeedRequested", (function() {
 				return B
 			})), r.d(t, "duplicateFailure", (function() {
-				return X
-			})), r.d(t, "duplicatePending", (function() {
 				return $
-			})), r.d(t, "duplicateSuccess", (function() {
+			})), r.d(t, "duplicatePending", (function() {
 				return V
+			})), r.d(t, "duplicateSuccess", (function() {
+				return X
 			})), r.d(t, "duplicateRequested", (function() {
 				return Y
 			})), r.d(t, "addSubredditPending", (function() {
@@ -112,9 +112,9 @@
 				_ = r("./src/reddit/endpoints/subreddit/recommendations.ts"),
 				S = r("./src/reddit/helpers/filterListingResponse/index.ts"),
 				k = r("./src/reddit/helpers/graphql/normalizeMultiredditDataFromGql/index.ts"),
-				N = r("./src/reddit/helpers/graphql/normalizeMultiredditListingFromGql/index.ts"),
-				F = r("./src/reddit/helpers/graphql/normalizeSubredditFromGql/index.ts"),
-				v = e => {
+				v = r("./src/reddit/helpers/graphql/normalizeMultiredditListingFromGql/index.ts"),
+				N = r("./src/reddit/helpers/graphql/normalizeSubredditFromGql/index.ts"),
+				F = e => {
 					let t = e.over_18 || !1;
 					if (!t)
 						for (const n of e.subreddits)
@@ -209,13 +209,13 @@
 						{
 							data: k
 						} = _.body,
-						F = Object(N.a)(k);
+						N = Object(v.a)(k);
 					_.ok && k && k.multireddit ? t(A({
 						fetchedToken: f.token,
 						key: p,
 						meta: c.meta,
-						...F,
-						...Object(S.a)(c, p, F),
+						...N,
+						...Object(S.a)(c, p, N),
 						multiredditsModelsState: c.multireddits.models
 					})) : t(L({
 						error: {
@@ -224,7 +224,7 @@
 						fetchedToken: f.token,
 						key: p,
 						..._.body,
-						...Object(S.a)(c, p, F)
+						...Object(S.a)(c, p, N)
 					}))
 				}, D = Object(c.a)(q.t), z = Object(c.a)(q.u), W = function(e) {
 					let t = arguments.length > 1 && void 0 !== arguments[1] && arguments[1];
@@ -249,7 +249,7 @@
 							}))
 						}
 					}
-				}, J = Object(c.a)(q.e), H = Object(c.a)(q.f), K = Object(c.a)(q.g), Q = e => {
+				}, K = Object(c.a)(q.e), H = Object(c.a)(q.f), J = Object(c.a)(q.g), Q = e => {
 					let {
 						description: t,
 						displayName: r,
@@ -279,8 +279,8 @@
 							const {
 								id: t
 							} = m;
-							if (await e(K({
-									multireddit: v(p.body.data),
+							if (await e(J({
+									multireddit: F(p.body.data),
 									multiredditsModelsState: l.multireddits.models,
 									userId: t
 								})), s) {
@@ -293,7 +293,7 @@
 									hk: "258cY9"
 								})
 							}))
-						} else e(J(p.error))
+						} else e(K(p.error))
 					}
 				}, B = () => async (e, t, r) => {
 					let {
@@ -325,7 +325,7 @@
 						sort: b,
 						t: Object(M.a)(b, y)
 					}))
-				}, X = Object(c.a)(q.k), $ = Object(c.a)(q.l), V = Object(c.a)(q.m), Y = e => {
+				}, $ = Object(c.a)(q.k), V = Object(c.a)(q.l), X = Object(c.a)(q.m), Y = e => {
 					let {
 						description: t,
 						displayName: r,
@@ -340,7 +340,7 @@
 							p = Object(I.k)(m);
 						if (!p || !p.displayText) return;
 						const O = Object(E.h)((d || p.displayText).toLowerCase(), s.toLowerCase());
-						e($());
+						e(V());
 						const j = await ((e, t) => Object(f.a)(Object(h.a)(e, [x.a]), {
 							endpoint: Object(g.a)(`${e.apiUrl}/api/multi/copy`),
 							data: {
@@ -356,8 +356,8 @@
 							description: t
 						});
 						if (j.ok) {
-							const t = v(j.body.data);
-							e(Object(u.f)()), e(V({
+							const t = F(j.body.data);
+							e(Object(u.f)()), e(X({
 								multireddit: t,
 								multiredditsModelsState: m.multireddits.models,
 								userId: p.id
@@ -370,7 +370,7 @@
 								}),
 								buttonAction: Object(n.b)(t.url)
 							}))
-						} else e(X(j.error)), e(Object(b.f)({
+						} else e($(j.error)), e(Object(b.f)({
 							text: i.fbt._("Something went wrong duplicating {multiName}", [i.fbt._param("multiName", s)], {
 								hk: "4bzN2D"
 							})
@@ -542,7 +542,7 @@
 							multipath: s,
 							visibility: d
 						});
-						m.ok ? (await e(be(v(m.body.data))), e(Object(u.f)()), e(Object(b.f)({
+						m.ok ? (await e(be(F(m.body.data))), e(Object(u.f)()), e(Object(b.f)({
 							text: i.fbt._("Custom feed updated!", null, {
 								hk: "39R30f"
 							})
@@ -585,7 +585,7 @@
 							} = m.body;
 							e(xe({
 								multipath: c,
-								subreddits: Object(F.b)(t)
+								subreddits: Object(N.b)(t)
 							}))
 						} else e(fe(m.error))
 					}
@@ -627,9 +627,9 @@
 				_ = r("./src/reddit/selectors/user.ts"),
 				S = r("./src/lib/makeActionCreator/index.ts"),
 				k = r("./src/lib/makeListingKey/index.ts"),
-				N = r("./src/reddit/actions/ads/index.ts"),
-				F = r("./src/reddit/helpers/canonicalUrls.ts"),
-				v = r("./src/reddit/helpers/timeApiRoute/index.ts"),
+				v = r("./src/reddit/actions/ads/index.ts"),
+				N = r("./src/reddit/helpers/canonicalUrls.ts"),
+				F = r("./src/reddit/helpers/timeApiRoute/index.ts"),
 				E = r("./src/reddit/reducers/sidebarPromotedPosts/models/index.ts"),
 				w = r("./src/reddit/actions/pages/multireddit/constants.ts");
 			const T = Object(S.a)(w.c),
@@ -650,7 +650,7 @@
 							sort: s.sort ? s.sort.toUpperCase() : void 0,
 							range: s.t ? s.t.toUpperCase() : void 0
 						},
-						y = await Object(v.a)("multireddit", () => Object(c.a)(b(), x)),
+						y = await Object(F.a)("multireddit", () => Object(c.a)(b(), x)),
 						{
 							data: C
 						} = y.body,
@@ -674,7 +674,7 @@
 							multiredditName: r,
 							username: t
 						})), window.addEventListener("load", () => {
-							n(Object(N.b)(E.a.MULTIREDDIT))
+							n(Object(v.b)(E.a.MULTIREDDIT))
 						})
 					} else d && n(m.f({
 						id: S,
@@ -720,11 +720,11 @@
 						j = f.listings.postOrder.ids[g],
 						_ = f.listings.postOrder.api.error[g],
 						S = f.listings.postOrder.api.pending[g],
-						v = p.C in e.queryParams && e.queryParams[p.C].toUpperCase() || "",
-						w = v in l.mc && l.mc[v];
+						F = p.C in e.queryParams && e.queryParams[p.C].toUpperCase() || "",
+						w = F in l.mc && l.mc[F];
 					if (S || j && !_ && !t) return void(j && (r(u.m({
 						title: Object(C.f)(i(), m)
-					})), f.sidebarPromotedPosts.firstFetch || r(Object(N.b)(E.a.MULTIREDDIT))));
+					})), f.sidebarPromotedPosts.firstFetch || r(Object(v.b)(E.a.MULTIREDDIT))));
 					await r(I(g, o, s, {
 						...d()(e.queryParams, p.k),
 						...d()(e.queryParams, p.j),
@@ -734,7 +734,7 @@
 					const T = i();
 					Object(C.d)(T, m) && r(u.m({
 						title: Object(C.f)(i(), m)
-					})), Object(F.e)(T, r, e)
+					})), Object(N.e)(T, r, e)
 				}
 		},
 		"./src/reddit/components/CharacterCountdown/index.m.less": function(e, t, r) {
@@ -808,12 +808,12 @@
 				_ = r("./src/reddit/contexts/PageLayer/index.tsx"),
 				S = r("./src/reddit/controls/Button/index.tsx"),
 				k = r("./src/reddit/controls/LoadingIcon/index.tsx"),
-				N = r("./src/reddit/helpers/multireddit/index.ts"),
-				F = r("./src/reddit/layout/twoCol/ExpandLeft/index.tsx"),
-				v = r("./src/reddit/models/Multireddit/index.ts"),
+				v = r("./src/reddit/helpers/multireddit/index.ts"),
+				N = r("./src/reddit/layout/twoCol/ExpandLeft/index.tsx"),
+				F = r("./src/reddit/models/Multireddit/index.ts"),
 				E = r("./src/reddit/models/Subreddit/index.ts"),
 				w = r("./src/reddit/selectors/multireddit.ts"),
-				T = r("./src/reddit/controls/Checkbox/index.tsx"),
+				T = r("./src/reddit/controls/CheckboxInput/index.tsx"),
 				P = r("./src/reddit/components/MultiredditAddSubredditModal/index.m.less"),
 				R = r.n(P);
 			const {
@@ -825,17 +825,19 @@
 					isSelected: r,
 					multireddit: i,
 					onCheck: s,
-					recentRef: d
+					recentRef: n
 				} = e;
+				const a = t;
 				return c.a.createElement("div", {
 					className: R.a.listItem,
-					onClick: s,
-					ref: d
+					onClick: a ? d.a : s,
+					ref: n
 				}, c.a.createElement(T.a, {
+					name: "addSubreddit",
 					className: R.a.checkbox,
-					disabled: t,
-					isCheckboxSelected: r || t,
-					toggleCheckbox: s
+					disabled: a,
+					value: r || t,
+					onChange: a ? d.a : s
 				}), c.a.createElement("img", {
 					src: i.icon,
 					className: R.a.icon
@@ -917,7 +919,7 @@
 							showCreateSuccess: !1
 						})
 					}, this.onCreateSubmit = () => {
-						const e = Object(N.a)({
+						const e = Object(v.a)({
 							displayText: this.state.creatingName,
 							myMultireddits: this.props.myMultireddits,
 							thisMultireddit: null
@@ -986,7 +988,7 @@
 					} = this;
 					return c.a.createElement(j.a, {
 						forceRedditTheme: !0
-					}, c.a.createElement(x.e, null, c.a.createElement(x.i, null, c.a.createElement(F.a, null, c.a.createElement(x.q, null, i.fbt._("Add community to Custom Feed", null, {
+					}, c.a.createElement(x.e, null, c.a.createElement(x.i, null, c.a.createElement(N.a, null, c.a.createElement(x.q, null, i.fbt._("Add community to Custom Feed", null, {
 						hk: "1twPIx"
 					})), c.a.createElement("button", {
 						onClick: s
@@ -1014,22 +1016,22 @@
 						label: i.fbt._("new custom feed", null, {
 							hk: "2C1GUB"
 						}),
-						maxLength: v.c,
+						maxLength: F.c,
 						onChange: this.onCreatingChange,
 						onKeyDown: this.onCreateKeyDown,
 						state: this.getCreateState(),
 						value: a
 					}), p ? c.a.createElement(O.c, {
 						className: R.a.createErrorMsg
-					}, o === v.a.SameName ? i.fbt._("A custom feed with that name already exists", null, {
+					}, o === F.a.SameName ? i.fbt._("A custom feed with that name already exists", null, {
 						hk: "1WJHG3"
-					}) : o === v.a.TooShort ? i.fbt._("Name must contain at least two alphanumeric characters", null, {
+					}) : o === F.a.TooShort ? i.fbt._("Name must contain at least two alphanumeric characters", null, {
 						hk: "3TWc1H"
 					}) : i.fbt._("Something went wrong with this name, maybe try something else?", null, {
 						hk: "N6k8D"
 					})) : c.a.createElement(h.a, {
 						text: a,
-						maxChars: v.c
+						maxChars: F.c
 					}), !f && !p && (e ? c.a.createElement(k.a, {
 						className: Object(b.a)(R.a.createSubmitBtn, R.a.loading),
 						sizePx: L
@@ -1283,37 +1285,45 @@
 				j = i.a.div("FormElementSubGroup", d.a),
 				y = i.a.li("FormListItem", d.a)
 		},
-		"./src/reddit/controls/Checkbox/index.m.less": function(e, t, r) {
+		"./src/reddit/controls/CheckboxInput/index.m.less": function(e, t, r) {
 			e.exports = {
-				CheckboxIcon: "WYS1s7GjzJiaX4fu-xZOJ",
-				checkboxIcon: "WYS1s7GjzJiaX4fu-xZOJ",
-				redditStyle: "J_lIqJrnicKj84OhD29vQ",
-				disabled: "n0Me225oxRbL3aLt7kQA8"
+				checkboxInput: "_2BPowd18EKTnfZFrj5kY3G",
+				disabled: "_303iMx_S0pgrbpYhsYTV6K",
+				checkboxSelected: "_2VtQ8EjxlJXdicVJhc73gQ"
 			}
 		},
-		"./src/reddit/controls/Checkbox/index.tsx": function(e, t, r) {
+		"./src/reddit/controls/CheckboxInput/index.tsx": function(e, t, r) {
 			"use strict";
 			var i = r("./node_modules/react/index.js"),
 				s = r.n(i),
 				d = r("./src/lib/classNames/index.ts"),
-				n = r("./src/reddit/icons/fonts/index.tsx"),
-				a = r("./src/reddit/controls/Checkbox/index.m.less"),
-				o = r.n(a);
-			t.a = e => s.a.createElement("button", {
-				"aria-checked": e.isHalfCheckboxSelected ? "mixed" : e.isCheckboxSelected,
-				className: e.className,
-				onClick: t => {
-					e.toggleCheckbox && (t.stopPropagation(), e.toggleCheckbox())
-				},
-				disabled: e.disabled
-			}, s.a.createElement(n.a, {
-				name: e.isHalfCheckboxSelected ? "checkbox_dismiss_fill" : e.isCheckboxSelected ? "checkbox_fill" : "checkbox",
-				className: Object(d.a)({
-					[o.a.redditStyle]: e.redditStyle,
-					[o.a.disabled]: e.disabled
-				}),
-				style: e.checkBoxStyle
-			}))
+				n = r("./src/reddit/constants/keycodes.ts"),
+				a = r("./src/reddit/icons/svgs/Checkbox/index.tsx"),
+				o = r("./src/reddit/icons/svgs/CheckboxSelected/index.tsx"),
+				c = r("./src/reddit/layout/row/Inline/index.tsx"),
+				l = r("./src/reddit/controls/CheckboxInput/index.m.less"),
+				u = r.n(l);
+			t.a = e => {
+				const t = e.onChange && !e.disabled ? t => {
+						t.key !== n.b.Enter && t.key !== n.b.Space || e.onChange(!e.value)
+					} : void 0,
+					r = e.onChange && !e.disabled ? () => e.onChange(!e.value) : void 0;
+				return s.a.createElement(c.a, {
+					"aria-checked": !!e.value,
+					"aria-disabled": e.disabled,
+					"aria-labelledby": e.name,
+					className: Object(d.a)(e.className, u.a.checkboxInput, e.disabled ? u.a.disabled : null),
+					onClick: r,
+					onKeyPress: t,
+					role: "checkbox",
+					tabIndex: 0
+				}, s.a.createElement("input", {
+					value: e.value ? e.value.toString() : "",
+					type: "hidden"
+				}), e.value ? s.a.createElement(o.a, {
+					className: u.a.checkboxSelected
+				}) : s.a.createElement(a.a, null), e.children)
+			}
 		},
 		"./src/reddit/controls/Input/index.tsx": function(e, t, r) {
 			"use strict";
@@ -1479,4 +1489,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/MultiredditAddSubredditModal.79c17980b87d58983e3c.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/MultiredditAddSubredditModal.7ab8a65828bc08882de4.js.map

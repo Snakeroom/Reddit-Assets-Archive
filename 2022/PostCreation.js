@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostCreation.8cba4014db33ff9844e8.js
-// Retrieved at 9/20/2022, 11:00:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostCreation.e1be5089f2bb6ed6f4e8.js
+// Retrieved at 9/20/2022, 6:40:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostCreation", "ChatMessageInput~MembershipPaywallPage~RichTextEditor", "ContributorRequestButton"], {
 		"./node_modules/autosize/dist/autosize.js": function(e, t, n) {
@@ -21127,24 +21127,33 @@
 			var o = n("./node_modules/react/index.js"),
 				r = n.n(o),
 				s = n("./src/lib/classNames/index.ts"),
-				i = n("./src/reddit/icons/svgs/Checkbox/index.tsx"),
-				a = n("./src/reddit/icons/svgs/CheckboxSelected/index.tsx"),
-				c = n("./src/reddit/layout/row/Inline/index.tsx"),
-				l = n("./src/reddit/controls/CheckboxInput/index.m.less"),
-				d = n.n(l);
-			t.a = e => r.a.createElement(c.a, {
-				"aria-checked": !!e.value,
-				"aria-disabled": e.disabled,
-				"aria-labelledby": e.name,
-				className: Object(s.a)(e.className, d.a.checkboxInput, e.disabled ? d.a.disabled : null),
-				onClick: e.onChange && !e.disabled ? () => e.onChange(!e.value) : void 0,
-				role: "checkbox"
-			}, r.a.createElement("input", {
-				value: e.value ? e.value.toString() : "",
-				type: "hidden"
-			}), e.value ? r.a.createElement(a.a, {
-				className: d.a.checkboxSelected
-			}) : r.a.createElement(i.a, null), e.children)
+				i = n("./src/reddit/constants/keycodes.ts"),
+				a = n("./src/reddit/icons/svgs/Checkbox/index.tsx"),
+				c = n("./src/reddit/icons/svgs/CheckboxSelected/index.tsx"),
+				l = n("./src/reddit/layout/row/Inline/index.tsx"),
+				d = n("./src/reddit/controls/CheckboxInput/index.m.less"),
+				u = n.n(d);
+			t.a = e => {
+				const t = e.onChange && !e.disabled ? t => {
+						t.key !== i.b.Enter && t.key !== i.b.Space || e.onChange(!e.value)
+					} : void 0,
+					n = e.onChange && !e.disabled ? () => e.onChange(!e.value) : void 0;
+				return r.a.createElement(l.a, {
+					"aria-checked": !!e.value,
+					"aria-disabled": e.disabled,
+					"aria-labelledby": e.name,
+					className: Object(s.a)(e.className, u.a.checkboxInput, e.disabled ? u.a.disabled : null),
+					onClick: n,
+					onKeyPress: t,
+					role: "checkbox",
+					tabIndex: 0
+				}, r.a.createElement("input", {
+					value: e.value ? e.value.toString() : "",
+					type: "hidden"
+				}), e.value ? r.a.createElement(c.a, {
+					className: u.a.checkboxSelected
+				}) : r.a.createElement(a.a, null), e.children)
+			}
 		},
 		"./src/reddit/controls/ContentType/index.m.less": function(e, t, n) {
 			e.exports = {
@@ -35901,4 +35910,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.8cba4014db33ff9844e8.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.e1be5089f2bb6ed6f4e8.js.map
