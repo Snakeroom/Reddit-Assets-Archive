@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditTopContent.c78e0ff4ef92d18cd1c5.js
-// Retrieved at 9/20/2022, 11:00:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditTopContent.a2a57a45ba43da4b5365.js
+// Retrieved at 9/21/2022, 5:10:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditTopContent"], {
 		"./src/lib/getShortenedLink.ts": function(e, t, s) {
@@ -444,11 +444,12 @@
 						showAuthorBlock: x = !1,
 						showMetaLine: g = !0,
 						showSubscribeBlock: f = !1,
-						subredditOrProfile: C
+						subredditOrProfile: C,
+						theme: k
 					} = this.props, {
-						media: k
-					} = a || p, y = Object(ie.p)(p);
-					let E = k && r.a.createElement(Z.a, {
+						media: y
+					} = a || p, E = Object(ie.p)(p);
+					let v = y && r.a.createElement(Z.a, {
 							autoplayPref: e,
 							availableWidth: t,
 							className: le.a.media,
@@ -465,15 +466,15 @@
 							showCentered: !1,
 							showFull: !1
 						}),
-						v = !1;
-					k && E && (k.type !== re.o.RTJSON && k.type !== re.o.TEXT ? (E = r.a.createElement("div", {
+						O = !1;
+					y && v && (y.type !== re.o.RTJSON && y.type !== re.o.TEXT ? (v = r.a.createElement("div", {
 						className: pe.a.mediaWrapper
-					}, E), v = !0) : k && k.content && Object(se.a)(p) && (E = r.a.createElement("div", {
+					}, v), O = !0) : y && y.content && Object(se.a)(p, null == k ? void 0 : k.subredditContext) && (v = r.a.createElement("div", {
 						className: pe.a.textWrapper
-					}, E)));
-					const O = !v && !y;
-					let _;
-					return C && (_ = Object(oe.h)(C) ? Object(ne.b)(C) : Object(ne.c)(C)), r.a.createElement(X.a, {
+					}, v)));
+					const _ = !O && !E;
+					let j;
+					return C && (j = Object(oe.h)(C) ? Object(ne.b)(C) : Object(ne.c)(C)), r.a.createElement(X.a, {
 						className: Object(l.a)(pe.a.container, me.a.largeAndMediumActiveStyles, me.a.largeAndMediumPostStyles, le.a.postContainer, Object(ae.a)(this.props), s),
 						post: p,
 						onClick: u,
@@ -491,11 +492,11 @@
 						className: Object(l.a)(pe.a.innerContainer, le.a.innerContainer)
 					}, f && C && r.a.createElement(q, be({
 						created: p.created
-					}, _)), x && C && r.a.createElement(U, be({
+					}, j)), x && C && r.a.createElement(U, be({
 						created: p.created,
 						author: p.author
-					}, _)), r.a.createElement($.c, {
-						className: O ? pe.a.postTitle : pe.a.postTitleCompact,
+					}, j)), r.a.createElement($.c, {
+						className: _ ? pe.a.postTitle : pe.a.postTitleCompact,
 						disableFlair: !0,
 						hideSourceLink: !0,
 						post: p,
@@ -507,9 +508,9 @@
 						hideNSFWPref: d,
 						post: p,
 						subredditOrProfile: C
-					}), (v || y) && r.a.createElement("div", {
+					}), (O || E) && r.a.createElement("div", {
 						className: pe.a.flexSpacer
-					}), y && r.a.createElement("div", {
+					}), E && r.a.createElement("div", {
 						className: pe.a.mediaWrapper
 					}, r.a.createElement(Y.a, {
 						className: pe.a.thumbnailWrapper,
@@ -517,7 +518,7 @@
 						thumbnailContainerClassName: pe.a.thumbnailContainer,
 						post: p,
 						templatePlaceholderImage: o && o.postPlaceholderImage
-					})), E, r.a.createElement("div", {
+					})), v, r.a.createElement("div", {
 						className: pe.a.metaWrapper
 					}, r.a.createElement("span", {
 						className: pe.a.meta
@@ -2014,4 +2015,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditTopContent.c78e0ff4ef92d18cd1c5.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditTopContent.a2a57a45ba43da4b5365.js.map

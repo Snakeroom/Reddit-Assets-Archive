@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/TopWeekPostsDiscoveryUnit.329eb60c099ff2f84e67.js
-// Retrieved at 9/20/2022, 11:00:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/TopWeekPostsDiscoveryUnit.d6f79507dee812c2a794.js
+// Retrieved at 9/21/2022, 5:10:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["TopWeekPostsDiscoveryUnit"], {
 		"./src/lib/getShortenedLink.ts": function(e, t, s) {
@@ -480,11 +480,12 @@
 						showAuthorBlock: x = !1,
 						showMetaLine: f = !0,
 						showSubscribeBlock: g = !1,
-						subredditOrProfile: C
+						subredditOrProfile: C,
+						theme: y
 					} = this.props, {
-						media: y
-					} = r || p, v = Object(ie.p)(p);
-					let E = y && a.a.createElement(K.a, {
+						media: v
+					} = r || p, E = Object(ie.p)(p);
+					let O = v && a.a.createElement(K.a, {
 							autoplayPref: e,
 							availableWidth: t,
 							className: le.a.media,
@@ -501,15 +502,15 @@
 							showCentered: !1,
 							showFull: !1
 						}),
-						O = !1;
-					y && E && (y.type !== ae.o.RTJSON && y.type !== ae.o.TEXT ? (E = a.a.createElement("div", {
+						k = !1;
+					v && O && (v.type !== ae.o.RTJSON && v.type !== ae.o.TEXT ? (O = a.a.createElement("div", {
 						className: pe.a.mediaWrapper
-					}, E), O = !0) : y && y.content && Object(se.a)(p) && (E = a.a.createElement("div", {
+					}, O), k = !0) : v && v.content && Object(se.a)(p, null == y ? void 0 : y.subredditContext) && (O = a.a.createElement("div", {
 						className: pe.a.textWrapper
-					}, E)));
-					const k = !O && !v;
-					let P;
-					return C && (P = Object(oe.h)(C) ? Object(ne.b)(C) : Object(ne.c)(C)), a.a.createElement(X.a, {
+					}, O)));
+					const P = !k && !E;
+					let _;
+					return C && (_ = Object(oe.h)(C) ? Object(ne.b)(C) : Object(ne.c)(C)), a.a.createElement(X.a, {
 						className: Object(l.a)(pe.a.container, me.a.largeAndMediumActiveStyles, me.a.largeAndMediumPostStyles, le.a.postContainer, Object(re.a)(this.props), s),
 						post: p,
 						onClick: u,
@@ -527,11 +528,11 @@
 						className: Object(l.a)(pe.a.innerContainer, le.a.innerContainer)
 					}, g && C && a.a.createElement(q, be({
 						created: p.created
-					}, P)), x && C && a.a.createElement(U, be({
+					}, _)), x && C && a.a.createElement(U, be({
 						created: p.created,
 						author: p.author
-					}, P)), a.a.createElement($.c, {
-						className: k ? pe.a.postTitle : pe.a.postTitleCompact,
+					}, _)), a.a.createElement($.c, {
+						className: P ? pe.a.postTitle : pe.a.postTitleCompact,
 						disableFlair: !0,
 						hideSourceLink: !0,
 						post: p,
@@ -543,9 +544,9 @@
 						hideNSFWPref: d,
 						post: p,
 						subredditOrProfile: C
-					}), (O || v) && a.a.createElement("div", {
+					}), (k || E) && a.a.createElement("div", {
 						className: pe.a.flexSpacer
-					}), v && a.a.createElement("div", {
+					}), E && a.a.createElement("div", {
 						className: pe.a.mediaWrapper
 					}, a.a.createElement(Z.a, {
 						className: pe.a.thumbnailWrapper,
@@ -553,7 +554,7 @@
 						thumbnailContainerClassName: pe.a.thumbnailContainer,
 						post: p,
 						templatePlaceholderImage: o && o.postPlaceholderImage
-					})), E, a.a.createElement("div", {
+					})), O, a.a.createElement("div", {
 						className: pe.a.metaWrapper
 					}, a.a.createElement("span", {
 						className: pe.a.meta
@@ -944,10 +945,11 @@
 						forceLoadMedia: c,
 						post: l,
 						shouldPause: d,
-						scrollerItemRef: m
+						scrollerItemRef: m,
+						theme: u
 					} = e, {
-						media: u
-					} = a || l, p = u && n.a.createElement(k.a, {
+						media: p
+					} = a || l, b = p && n.a.createElement(k.a, {
 						autoplayPref: t,
 						availableWidth: s,
 						className: L.a.media,
@@ -966,9 +968,9 @@
 						showCentered: !1,
 						showFull: !1
 					});
-					let b, h = !0;
-					const x = !!l.source && Object(O.a)(l.source.url) || !!l.thumbnail && Object(O.a)(l.thumbnail.url);
-					return !u && x ? (h = !1, b = n.a.createElement(n.a.Fragment, null, n.a.createElement("div", {
+					let h, x = !0;
+					const f = !!l.source && Object(O.a)(l.source.url) || !!l.thumbnail && Object(O.a)(l.thumbnail.url);
+					return !p && f ? (x = !1, h = n.a.createElement(n.a.Fragment, null, n.a.createElement("div", {
 						className: M.a.flexSpacer
 					}), n.a.createElement("div", {
 						className: M.a.mediaWrapper
@@ -982,27 +984,27 @@
 						showPlaceholderContentType: !i || !i.postPlaceholderImage,
 						templatePlaceholderImage: i ? i.postPlaceholderImage : F,
 						usePreview: !0
-					})))) : u && p ? u.type !== w.o.RTJSON && u.type !== w.o.TEXT ? (h = !1, b = n.a.createElement(n.a.Fragment, null, n.a.createElement("div", {
+					})))) : p && b ? p.type !== w.o.RTJSON && p.type !== w.o.TEXT ? (x = !1, h = n.a.createElement(n.a.Fragment, null, n.a.createElement("div", {
 						className: M.a.flexSpacer
 					}), n.a.createElement("div", {
 						className: M.a.mediaWrapper
-					}, p))) : b = Object(S.a)(l) || Object(N.d)(l) && Object(j.a)(l) ? n.a.createElement("div", {
+					}, b))) : h = Object(S.a)(l) || Object(N.d)(l) && Object(j.a)(l, null == u ? void 0 : u.subredditContext) ? n.a.createElement("div", {
 						className: M.a.textWrapper
-					}, p) : n.a.createElement("div", {
+					}, b) : n.a.createElement("div", {
 						className: M.a.flexSpacer
-					}) : b = n.a.createElement("div", {
+					}) : h = n.a.createElement("div", {
 						className: M.a.flexSpacer
 					}), n.a.createElement("div", {
 						className: Object(o.a)(M.a.body, r)
 					}, n.a.createElement(_.c, {
-						className: h ? M.a.postTitle : M.a.postTitleCompact,
+						className: x ? M.a.postTitle : M.a.postTitleCompact,
 						"data-redditstyle": !0,
 						hideSourceLink: !0,
 						post: l,
 						size: _.b.Large,
 						showNSFWSpoilerFlairsOnly: !0,
 						titleColor: i && i.postTitleColor
-					}), b)
+					}), h)
 				},
 				B = s("./node_modules/fbt/lib/FbtPublic.js"),
 				W = s("./src/lib/prettyPrintNumber/index.ts"),
@@ -2388,4 +2390,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/TopWeekPostsDiscoveryUnit.329eb60c099ff2f84e67.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/TopWeekPostsDiscoveryUnit.d6f79507dee812c2a794.js.map
