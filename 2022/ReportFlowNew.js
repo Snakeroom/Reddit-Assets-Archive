@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ReportFlowNew.acbc20b623de9db8d9ca.js
-// Retrieved at 9/14/2022, 6:30:03 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ReportFlowNew.044ed8ece25078db5165.js
+// Retrieved at 9/22/2022, 12:10:13 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ReportFlowNew"], {
 		"./src/reddit/actions/blockedRedditors.ts": function(e, t, o) {
@@ -117,7 +117,7 @@
 			})), o.d(t, "a", (function() {
 				return w
 			})), o.d(t, "g", (function() {
-				return k
+				return v
 			}));
 			var r = o("./node_modules/fbt/lib/FbtPublic.js"),
 				s = o("./src/lib/makeActionCreator/index.ts"),
@@ -173,7 +173,7 @@
 							buttonAction: f(e)
 						}))
 					}
-				}, O = "USER_UNBLOCK__PENDING", R = "USER_UNBLOCK__SUCCESS", w = "USER_UNBLOCK__FAILED", _ = Object(s.a)(O), g = Object(s.a)(R), j = Object(s.a)(w), k = e => async (t, o, s) => {
+				}, O = "USER_UNBLOCK__PENDING", R = "USER_UNBLOCK__SUCCESS", w = "USER_UNBLOCK__FAILED", _ = Object(s.a)(O), j = Object(s.a)(R), g = Object(s.a)(w), v = e => async (t, o, s) => {
 					let {
 						apiContext: l
 					} = s;
@@ -183,7 +183,7 @@
 						b = u.user.blocked.data.filter(t => t.name === e)[0];
 					m && (t(_({
 						name: e
-					})), (await Object(d.c)(l(), m, e)).ok ? (t(g({
+					})), (await Object(d.c)(l(), m, e)).ok ? (t(j({
 						name: e
 					})), b && b.id && t(Object(n.h)(b.id)), t(i.f({
 						kind: a.b.SuccessCommunity,
@@ -195,7 +195,7 @@
 						text: r.fbt._("An error has occured. Please try again later", null, {
 							hk: "2FpsLy"
 						})
-					})), t(j({
+					})), t(g({
 						name: e
 					}))))
 				}
@@ -295,25 +295,25 @@
 				});
 			var w = o("./src/reddit/components/FormBuilder/async.tsx"),
 				_ = o("./src/reddit/actions/userBlocks.ts"),
-				g = o("./src/lib/makeGqlRequest/index.ts"),
-				j = o("./src/redditGQL/operations/ReportComment.json");
-			const k = (e, t) => Object(g.a)(e, {
-				...j,
+				j = o("./src/lib/makeGqlRequest/index.ts"),
+				g = o("./src/redditGQL/operations/ReportComment.json");
+			const v = (e, t) => Object(j.a)(e, {
+				...g,
 				variables: t
 			});
 			var x = o("./src/redditGQL/operations/ReportLiveStream.json");
-			const v = (e, t) => Object(g.a)(e, {
+			const k = (e, t) => Object(j.a)(e, {
 				...x,
 				variables: t
 			});
-			var y = o("./src/reddit/endpoints/messages/index.ts"),
-				L = o("./src/reddit/endpoints/post/report.ts"),
-				S = o("./src/redditGQL/operations/ReportForm.json");
+			var L = o("./src/reddit/endpoints/messages/index.ts"),
+				S = o("./src/reddit/endpoints/post/report.ts"),
+				y = o("./src/redditGQL/operations/ReportForm.json");
 			var C = o("./src/reddit/endpoints/talk/index.ts"),
 				I = o("./src/reddit/contexts/ApiContext.tsx"),
 				E = o("./src/reddit/models/Post/index.ts"),
-				F = o("./src/reddit/models/Toast/index.ts"),
-				A = o("./src/reddit/models/WhitelistAndBlocked.ts"),
+				A = o("./src/reddit/models/Toast/index.ts"),
+				F = o("./src/reddit/models/WhitelistAndBlocked.ts"),
 				P = o("./src/reddit/selectors/commentSelector.ts"),
 				T = o("./src/reddit/selectors/meta.ts"),
 				G = o("./src/reddit/selectors/posts.ts"),
@@ -380,7 +380,7 @@
 							e(Object(_.h)(t))
 						},
 						showFailToast: () => e(Object(p.f)({
-							kind: F.b.Error,
+							kind: A.b.Error,
 							text: s.fbt._("Something went wrong!", null, {
 								hk: "1BEFhz"
 							})
@@ -396,8 +396,8 @@
 							hostAppName: s,
 							locale: n
 						} = t;
-						return Object(g.a)(e, {
-							...S,
+						return Object(j.a)(e, {
+							...y,
 							variables: {
 								itemId: o,
 								hostAppName: s,
@@ -447,7 +447,7 @@
 							blockUserPending: o,
 							sendEvent: r
 						} = this.props;
-						o.new !== A.a.pending && (this.props.onBlockUser(e), r(O(t)))
+						o.new !== F.a.pending && (this.props.onBlockUser(e), r(O(t)))
 					}, this.onOpenCtlFlow = () => {
 						this.props.postMessage && this.props.postMessage({
 							type: "openCtl"
@@ -508,7 +508,7 @@
 										relativeReportTimeSec: a,
 										...b
 									};
-									h = () => v(r(), {
+									h = () => k(r(), {
 										input: e
 									});
 									break
@@ -517,7 +517,7 @@
 									postId: c,
 									...b
 								};
-								h = () => Object(L.d)(r(), {
+								h = () => Object(S.d)(r(), {
 									input: e
 								});
 								break;
@@ -526,7 +526,7 @@
 									commentId: c,
 									...b
 								};
-								h = () => (this.props.sendEvent(R(c)), k(r(), {
+								h = () => (this.props.sendEvent(R(c)), v(r(), {
 									input: t
 								}));
 								break;
@@ -535,7 +535,7 @@
 									messageId: c,
 									...b
 								};
-								h = () => Object(y.a)(r(), {
+								h = () => Object(L.a)(r(), {
 									input: s
 								});
 								break;
@@ -749,27 +749,29 @@
 		"./src/reddit/endpoints/talk/index.ts": function(e, t, o) {
 			"use strict";
 			o.d(t, "k", (function() {
-				return O
-			})), o.d(t, "g", (function() {
 				return R
-			})), o.d(t, "f", (function() {
+			})), o.d(t, "g", (function() {
 				return w
-			})), o.d(t, "e", (function() {
+			})), o.d(t, "f", (function() {
 				return _
+			})), o.d(t, "e", (function() {
+				return j
 			})), o.d(t, "c", (function() {
 				return g
 			})), o.d(t, "j", (function() {
-				return j
-			})), o.d(t, "d", (function() {
-				return k
-			})), o.d(t, "h", (function() {
-				return x
-			})), o.d(t, "a", (function() {
 				return v
-			})), o.d(t, "i", (function() {
-				return y
-			})), o.d(t, "b", (function() {
+			})), o.d(t, "d", (function() {
+				return x
+			})), o.d(t, "h", (function() {
+				return k
+			})), o.d(t, "a", (function() {
 				return L
+			})), o.d(t, "i", (function() {
+				return S
+			})), o.d(t, "b", (function() {
+				return y
+			})), o.d(t, "l", (function() {
+				return C
 			}));
 			var r = o("./node_modules/fbt/lib/FbtPublic.js"),
 				s = o("./node_modules/uuid/dist/esm-browser/v4.js"),
@@ -784,25 +786,26 @@
 				m = o("./src/redditGQL/operations/PrepareLiveAudioRoom.json"),
 				b = o("./src/redditGQL/operations/PrepareLiveAudioRoomOnProfile.json"),
 				h = o("./src/redditGQL/operations/ReportTalk.json"),
-				f = o("./src/redditGQL/types.ts");
-			const O = (e, t) => Object(n.a)(e, {
+				f = o("./src/redditGQL/operations/StartLiveAudioRoom.json"),
+				O = o("./src/redditGQL/types.ts");
+			const R = (e, t) => Object(n.a)(e, {
 					...h,
 					variables: t
 				}),
-				R = async (e, t) => {
+				w = async (e, t) => {
 					const o = await Object(n.a)(e, {
 						...u,
 						variables: t
 					});
-					return !!Object(i.c)(o) && (o.body.data.subredditInfoById.allowedPostTypes || []).includes(f.C.Talk)
-				}, w = async (e, t) => {
+					return !!Object(i.c)(o) && (o.body.data.subredditInfoById.allowedPostTypes || []).includes(O.C.Talk)
+				}, _ = async (e, t) => {
 					var o, r;
 					const s = await Object(n.a)(e, {
 						...p,
 						variables: t
 					});
-					return !!Object(i.c)(s) && (null !== (r = null === (o = s.body.data.profileByName) || void 0 === o ? void 0 : o.allowedPostTypes) && void 0 !== r ? r : []).includes(f.C.Talk)
-				}, _ = async e => {
+					return !!Object(i.c)(s) && (null !== (r = null === (o = s.body.data.profileByName) || void 0 === o ? void 0 : o.allowedPostTypes) && void 0 !== r ? r : []).includes(O.C.Talk)
+				}, j = async e => {
 					var t;
 					const o = await Object(n.a)(e, l);
 					return Object(i.c)(o) && null !== (t = o.body.data.availableAudioRoomTopics) && void 0 !== t ? t : []
@@ -815,7 +818,7 @@
 						...o,
 						subredditId: t.id
 					}
-				}), j = (e, t, o) => t.type === d.f.User ? Object(n.a)(e, {
+				}), v = (e, t, o) => t.type === d.f.User ? Object(n.a)(e, {
 					...b,
 					variables: {
 						input: o
@@ -828,30 +831,33 @@
 							subredditId: t.id
 						}
 					}
-				}), k = () => Object(s.a)(), x = e => e.data.createAudioRoomOrError || e.data.createAudioRoomOnProfile, v = {
-					[f.i.ServiceError]: r.fbt._("Something's wrong with the talk service right now. Check back later.", null, {
+				}), x = () => Object(s.a)(), k = e => e.data.createAudioRoomOrError || e.data.createAudioRoomOnProfile || e.data.startAudioRoom, L = {
+					[O.i.ServiceError]: r.fbt._("Something's wrong with the talk service right now. Check back later.", null, {
 						hk: "3XqPJS"
 					}),
-					[f.i.UserNotAuthorized]: r.fbt._("You don't have permission to start talks in this community.", null, {
+					[O.i.UserNotAuthorized]: r.fbt._("You don't have permission to start talks in this community.", null, {
 						hk: "1XY1Ss"
 					}),
-					[f.i.RoomLimitExceeded]: r.fbt._("You can only create three talks at one time. To continue, close a talk you're not using.", null, {
+					[O.i.RoomLimitExceeded]: r.fbt._("You can only create three talks at one time. To continue, close a talk you're not using.", null, {
 						hk: "3zPx9X"
 					}),
-					[f.i.ConcurrentRoomLimitExceeded]: r.fbt._("Too many talks are happening right now. Try again later.", null, {
+					[O.i.ConcurrentRoomLimitExceeded]: r.fbt._("Too many talks are happening right now. Try again later.", null, {
 						hk: "2LYXJx"
 					}),
-					[f.i.SubredditRoomLimitExceeded]: r.fbt._("This community can only host two talks at a time. Try again after one has ended.", null, {
+					[O.i.SubredditRoomLimitExceeded]: r.fbt._("This community can only host two talks at a time. Try again after one has ended.", null, {
 						hk: "2mGf21"
 					})
-				}, y = e => e.data.prepareAudioRoom || e.data.prepareAudioRoomOnProfile, L = {
-					[f.E.ServiceError]: r.fbt._("Something's wrong with the talk service right now. Check back later.", null, {
+				}, S = e => e.data.prepareAudioRoom || e.data.prepareAudioRoomOnProfile, y = {
+					[O.E.ServiceError]: r.fbt._("Something's wrong with the talk service right now. Check back later.", null, {
 						hk: "3XqPJS"
 					}),
-					[f.E.UserNotAuthorized]: r.fbt._("You don't have permission to start talks in this community.", null, {
+					[O.E.UserNotAuthorized]: r.fbt._("You don't have permission to start talks in this community.", null, {
 						hk: "1XY1Ss"
 					})
-				}
+				}, C = (e, t) => Object(n.a)(e, {
+					...f,
+					variables: t
+				})
 		},
 		"./src/reddit/helpers/reportPage/index.ts": function(e, t, o) {
 			"use strict";
@@ -908,12 +914,12 @@
 					const R = new RegExp(m),
 						w = new RegExp(b),
 						_ = [];
-					let g;
+					let j;
 					if (e.subredditName) {
 						const t = e.subredditName.trim();
 						if (w.test(t)) {
 							const e = w.exec(t);
-							e && e.length > 1 && (g = e[1])
+							e && e.length > 1 && (j = e[1])
 						}
 					}
 					if (e.usernames && e.usernames.length)
@@ -925,16 +931,16 @@
 							}
 						}
 					const {
-						reason: j
+						reason: g
 					} = e;
 					return {
 						reason: "site_reason_selected",
-						site_reason: j.reasonText,
+						site_reason: g.reasonText,
 						additional_info: e.additionalInfo ? e.additionalInfo.join(",") : void 0,
 						custom_text: e.customText,
 						modmail_conv_id: f,
 						modmail_msg_id: O,
-						sr_name: g,
+						sr_name: j,
 						thing_id: h,
 						usernames: _.length ? _.join(",") : void 0
 					}
@@ -1044,7 +1050,10 @@
 		},
 		"./src/redditGQL/operations/ReportTalk.json": function(e) {
 			e.exports = JSON.parse('{"id":"139ca5b89cf9"}')
+		},
+		"./src/redditGQL/operations/StartLiveAudioRoom.json": function(e) {
+			e.exports = JSON.parse('{"id":"6e7ab4bd4873"}')
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ReportFlowNew.acbc20b623de9db8d9ca.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ReportFlowNew.044ed8ece25078db5165.js.map

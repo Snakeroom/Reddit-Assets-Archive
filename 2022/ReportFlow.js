@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ReportFlow.d2ca19c3b2565ce027e5.js
-// Retrieved at 9/22/2022, 10:00:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ReportFlow.4602b1af4e8264c328bc.js
+// Retrieved at 9/22/2022, 12:10:13 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ReportFlow", "ReportFlowNew"], {
 		"./node_modules/@reddit/i18n-tools/runtime/helpers/locale/index.js": function(e, t, n) {
@@ -3265,27 +3265,29 @@
 		"./src/reddit/endpoints/talk/index.ts": function(e, t, n) {
 			"use strict";
 			n.d(t, "k", (function() {
-				return x
-			})), n.d(t, "g", (function() {
 				return R
-			})), n.d(t, "f", (function() {
+			})), n.d(t, "g", (function() {
 				return C
-			})), n.d(t, "e", (function() {
+			})), n.d(t, "f", (function() {
 				return g
-			})), n.d(t, "c", (function() {
+			})), n.d(t, "e", (function() {
 				return _
-			})), n.d(t, "j", (function() {
+			})), n.d(t, "c", (function() {
 				return O
-			})), n.d(t, "d", (function() {
+			})), n.d(t, "j", (function() {
 				return w
-			})), n.d(t, "h", (function() {
+			})), n.d(t, "d", (function() {
 				return v
-			})), n.d(t, "a", (function() {
+			})), n.d(t, "h", (function() {
 				return E
-			})), n.d(t, "i", (function() {
+			})), n.d(t, "a", (function() {
 				return S
-			})), n.d(t, "b", (function() {
+			})), n.d(t, "i", (function() {
 				return y
+			})), n.d(t, "b", (function() {
+				return k
+			})), n.d(t, "l", (function() {
+				return I
 			}));
 			var o = n("./node_modules/fbt/lib/FbtPublic.js"),
 				s = n("./node_modules/uuid/dist/esm-browser/v4.js"),
@@ -3300,29 +3302,30 @@
 				m = n("./src/redditGQL/operations/PrepareLiveAudioRoom.json"),
 				h = n("./src/redditGQL/operations/PrepareLiveAudioRoomOnProfile.json"),
 				b = n("./src/redditGQL/operations/ReportTalk.json"),
-				f = n("./src/redditGQL/types.ts");
-			const x = (e, t) => Object(r.a)(e, {
+				f = n("./src/redditGQL/operations/StartLiveAudioRoom.json"),
+				x = n("./src/redditGQL/types.ts");
+			const R = (e, t) => Object(r.a)(e, {
 					...b,
 					variables: t
 				}),
-				R = async (e, t) => {
+				C = async (e, t) => {
 					const n = await Object(r.a)(e, {
 						...u,
 						variables: t
 					});
-					return !!Object(a.c)(n) && (n.body.data.subredditInfoById.allowedPostTypes || []).includes(f.C.Talk)
-				}, C = async (e, t) => {
+					return !!Object(a.c)(n) && (n.body.data.subredditInfoById.allowedPostTypes || []).includes(x.C.Talk)
+				}, g = async (e, t) => {
 					var n, o;
 					const s = await Object(r.a)(e, {
 						...p,
 						variables: t
 					});
-					return !!Object(a.c)(s) && (null !== (o = null === (n = s.body.data.profileByName) || void 0 === n ? void 0 : n.allowedPostTypes) && void 0 !== o ? o : []).includes(f.C.Talk)
-				}, g = async e => {
+					return !!Object(a.c)(s) && (null !== (o = null === (n = s.body.data.profileByName) || void 0 === n ? void 0 : n.allowedPostTypes) && void 0 !== o ? o : []).includes(x.C.Talk)
+				}, _ = async e => {
 					var t;
 					const n = await Object(r.a)(e, c);
 					return Object(a.c)(n) && null !== (t = n.body.data.availableAudioRoomTopics) && void 0 !== t ? t : []
-				}, _ = (e, t, n) => t.type === i.f.User ? Object(r.a)(e, {
+				}, O = (e, t, n) => t.type === i.f.User ? Object(r.a)(e, {
 					...l,
 					variables: n
 				}) : Object(r.a)(e, {
@@ -3331,7 +3334,7 @@
 						...n,
 						subredditId: t.id
 					}
-				}), O = (e, t, n) => t.type === i.f.User ? Object(r.a)(e, {
+				}), w = (e, t, n) => t.type === i.f.User ? Object(r.a)(e, {
 					...h,
 					variables: {
 						input: n
@@ -3344,30 +3347,33 @@
 							subredditId: t.id
 						}
 					}
-				}), w = () => Object(s.a)(), v = e => e.data.createAudioRoomOrError || e.data.createAudioRoomOnProfile, E = {
-					[f.i.ServiceError]: o.fbt._("Something's wrong with the talk service right now. Check back later.", null, {
+				}), v = () => Object(s.a)(), E = e => e.data.createAudioRoomOrError || e.data.createAudioRoomOnProfile || e.data.startAudioRoom, S = {
+					[x.i.ServiceError]: o.fbt._("Something's wrong with the talk service right now. Check back later.", null, {
 						hk: "3XqPJS"
 					}),
-					[f.i.UserNotAuthorized]: o.fbt._("You don't have permission to start talks in this community.", null, {
+					[x.i.UserNotAuthorized]: o.fbt._("You don't have permission to start talks in this community.", null, {
 						hk: "1XY1Ss"
 					}),
-					[f.i.RoomLimitExceeded]: o.fbt._("You can only create three talks at one time. To continue, close a talk you're not using.", null, {
+					[x.i.RoomLimitExceeded]: o.fbt._("You can only create three talks at one time. To continue, close a talk you're not using.", null, {
 						hk: "3zPx9X"
 					}),
-					[f.i.ConcurrentRoomLimitExceeded]: o.fbt._("Too many talks are happening right now. Try again later.", null, {
+					[x.i.ConcurrentRoomLimitExceeded]: o.fbt._("Too many talks are happening right now. Try again later.", null, {
 						hk: "2LYXJx"
 					}),
-					[f.i.SubredditRoomLimitExceeded]: o.fbt._("This community can only host two talks at a time. Try again after one has ended.", null, {
+					[x.i.SubredditRoomLimitExceeded]: o.fbt._("This community can only host two talks at a time. Try again after one has ended.", null, {
 						hk: "2mGf21"
 					})
-				}, S = e => e.data.prepareAudioRoom || e.data.prepareAudioRoomOnProfile, y = {
-					[f.E.ServiceError]: o.fbt._("Something's wrong with the talk service right now. Check back later.", null, {
+				}, y = e => e.data.prepareAudioRoom || e.data.prepareAudioRoomOnProfile, k = {
+					[x.E.ServiceError]: o.fbt._("Something's wrong with the talk service right now. Check back later.", null, {
 						hk: "3XqPJS"
 					}),
-					[f.E.UserNotAuthorized]: o.fbt._("You don't have permission to start talks in this community.", null, {
+					[x.E.UserNotAuthorized]: o.fbt._("You don't have permission to start talks in this community.", null, {
 						hk: "1XY1Ss"
 					})
-				}
+				}, I = (e, t) => Object(r.a)(e, {
+					...f,
+					variables: t
+				})
 		},
 		"./src/reddit/helpers/matchRedditUrls/index.ts": function(e, t, n) {
 			"use strict";
@@ -3988,7 +3994,10 @@
 		},
 		"./src/redditGQL/operations/ReportTalk.json": function(e) {
 			e.exports = JSON.parse('{"id":"139ca5b89cf9"}')
+		},
+		"./src/redditGQL/operations/StartLiveAudioRoom.json": function(e) {
+			e.exports = JSON.parse('{"id":"6e7ab4bd4873"}')
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ReportFlow.d2ca19c3b2565ce027e5.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ReportFlow.4602b1af4e8264c328bc.js.map
