@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~SearchResults.5a1149c71018ac96ae8f.js
-// Retrieved at 9/22/2022, 10:00:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~SearchResults.7e95265c69ae1939df2e.js
+// Retrieved at 9/22/2022, 10:30:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~SearchResults"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -2376,25 +2376,19 @@
 				r = n("./src/lib/eventTools/index.ts"),
 				i = n("./src/reddit/helpers/styles/mixins/loading.ts"),
 				a = n("./src/reddit/icons/fonts/Calendar/index.tsx"),
-				c = n("./src/lib/classNames/index.ts"),
-				d = n("./src/reddit/icons/fonts/helpers.tsx"),
-				l = n("./src/reddit/icons/fonts/commonStyles.m.less"),
-				m = n.n(l);
-			var u = e => s.a.createElement("i", {
-					className: Object(c.a)(Object(d.b)("live", e.isFilled), m.a.liveIcon, e.className)
-				}),
-				p = n("./src/reddit/components/HumanDate/index.tsx"),
-				b = n("./src/reddit/components/EventPost/PostEventMeta/index.m.less"),
-				h = n.n(b),
-				v = n("./src/lib/lessComponent.tsx");
-			const f = v.a.span("PostEventFutureText", h.a),
-				x = v.a.span("PostEventPastText", h.a),
-				C = v.a.span("PostEventNowText", h.a),
-				_ = v.a.span("Container", h.a),
-				g = v.a.wrapped(a.a, "CalendarIcon", h.a),
-				E = v.a.wrapped(u, "LiveIcon", h.a),
-				O = v.a.div("LoadingState", h.a);
-			class k extends o.Component {
+				c = n("./src/reddit/icons/fonts/Live/index.tsx"),
+				d = n("./src/reddit/components/HumanDate/index.tsx"),
+				l = n("./src/reddit/components/EventPost/PostEventMeta/index.m.less"),
+				m = n.n(l),
+				u = n("./src/lib/lessComponent.tsx");
+			const p = u.a.span("PostEventFutureText", m.a),
+				b = u.a.span("PostEventPastText", m.a),
+				h = u.a.span("PostEventNowText", m.a),
+				v = u.a.span("Container", m.a),
+				f = u.a.wrapped(a.a, "CalendarIcon", m.a),
+				x = u.a.wrapped(c.a, "LiveIcon", m.a),
+				C = u.a.div("LoadingState", m.a);
+			class _ extends o.Component {
 				constructor(e) {
 					super(e), this.state = {
 						mounted: !1
@@ -2417,9 +2411,9 @@
 						eventEnd: o,
 						eventIsLive: a,
 						eventStart: c
-					} = n, d = Object(r.e)(c, o);
-					let l, m;
-					if (this.state.mounted || d === r.a.Live) l = s.a.createElement(p.c, {
+					} = n, l = Object(r.e)(c, o);
+					let m, u;
+					if (this.state.mounted || l === r.a.Live) m = s.a.createElement(d.c, {
 						startTime: c,
 						endTime: o,
 						isLive: a
@@ -2428,22 +2422,22 @@
 						const e = Object(i.a)({
 							isLoading: !0
 						});
-						l = s.a.createElement(O, {
+						m = s.a.createElement(C, {
 							className: e
 						})
 					}
-					if (a) m = s.a.createElement(C, null, s.a.createElement(E, null), l);
-					else if (d === r.a.Future) m = s.a.createElement(f, null, s.a.createElement(g, null), l);
+					if (a) u = s.a.createElement(h, null, s.a.createElement(x, null), m);
+					else if (l === r.a.Future) u = s.a.createElement(p, null, s.a.createElement(f, null), m);
 					else {
-						if (d !== r.a.Past) return null;
-						m = s.a.createElement(x, null, s.a.createElement(g, null), l)
+						if (l !== r.a.Past) return null;
+						u = s.a.createElement(b, null, s.a.createElement(f, null), m)
 					}
-					return s.a.createElement(_, {
+					return s.a.createElement(v, {
 						className: e
-					}, m)
+					}, u)
 				}
 			}
-			t.a = k
+			t.a = _
 		},
 		"./src/reddit/components/ModModeBanners/index.m.less": function(e, t, n) {
 			e.exports = {
@@ -3054,6 +3048,18 @@
 				className: `${Object(r.b)("ignore_reports",e.isFilled)} ${e.className}`
 			})
 		},
+		"./src/reddit/icons/fonts/Live/index.tsx": function(e, t, n) {
+			"use strict";
+			var o = n("./node_modules/react/index.js"),
+				s = n.n(o),
+				r = n("./src/lib/classNames/index.ts"),
+				i = n("./src/reddit/icons/fonts/helpers.tsx"),
+				a = n("./src/reddit/icons/fonts/commonStyles.m.less"),
+				c = n.n(a);
+			t.a = e => s.a.createElement("i", {
+				className: Object(r.a)(Object(i.b)("live", e.isFilled), c.a.liveIcon, e.className)
+			})
+		},
 		"./src/reddit/icons/svgs/CircleCheckLight/index.tsx": function(e, t, n) {
 			"use strict";
 			n.d(t, "a", (function() {
@@ -3121,4 +3127,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~SearchResults.5a1149c71018ac96ae8f.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~SearchResults.7e95265c69ae1939df2e.js.map

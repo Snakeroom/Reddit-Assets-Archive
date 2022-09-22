@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ChatMessageInput.41ee7b13dd563a017172.js
-// Retrieved at 9/15/2022, 2:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ChatMessageInput.686bac218af0b775a914.js
+// Retrieved at 9/22/2022, 10:30:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ChatMessageInput"], {
 		"./node_modules/linkify-it/index.js": function(e, t, s) {
@@ -1232,53 +1232,50 @@
 				D = s("./src/reddit/controls/ErrorText/index.tsx"),
 				A = s("./src/reddit/helpers/richTextEditor/index.ts"),
 				F = s("./src/reddit/helpers/trackers/rpan.ts"),
-				I = s("./src/reddit/icons/fonts/helpers.tsx");
-			var S = e => d.a.createElement("i", {
-					className: Object(m.a)(Object(I.b)("history", e.isFilled), e.className)
-				}),
-				L = s("./src/reddit/icons/svgs/Close/index.tsx"),
-				P = s("./src/reddit/icons/svgs/Send/index.tsx"),
-				T = s("./src/reddit/icons/svgs/Send2/index.tsx"),
-				N = s("./src/reddit/models/Post/index.ts"),
-				z = s("./src/reddit/models/PostCreationForm/index.ts"),
-				B = s("./src/reddit/selectors/chatPost.ts"),
-				U = s("./src/reddit/selectors/comments.ts"),
-				M = s("./src/reddit/selectors/posts.ts"),
-				R = s("./src/reddit/selectors/PublicAccessNetwork/api.ts"),
-				G = s("./src/reddit/selectors/user.ts"),
-				K = s("./src/reddit/components/CommentsChat/MessageInput/AwardButton.tsx"),
-				q = s("./src/lib/constants/index.ts"),
-				V = s("./src/lib/makeGqlRequest/index.ts"),
-				W = s("./src/redditGQL/operations/CreateLiveChatAssociation.json");
-			var Z = s("./src/reddit/components/CommentsChat/MessageInput/index.m.less"),
-				H = s.n(Z),
-				$ = s("./src/reddit/contexts/PageLayer/index.tsx"),
-				Q = s("./src/reddit/helpers/chat/isEmbeddedLiveChat.ts"),
-				Y = s("./src/reddit/helpers/trackers/commentsChat.ts"),
-				J = s("./src/reddit/selectors/experiments/chat.ts"),
-				X = s("./src/redditGQL/types.ts");
-			const ee = "chat_submission_from_rte",
-				te = 1e3,
-				se = 15,
-				re = 15e3,
-				ne = Object($.u)(),
-				ie = Object(u.b)(() => Object(l.c)({
-					draft: U.i,
-					errorMsgs: U.L,
-					errorType: U.M,
-					hasError: U.v,
-					isChatPost: B.d,
-					isLivePostSpamRateEnabled: J.h,
-					isOptimisticUIEnabled: J.g,
+				I = s("./src/reddit/icons/fonts/Clock/index.tsx"),
+				S = s("./src/reddit/icons/svgs/Close/index.tsx"),
+				L = s("./src/reddit/icons/svgs/Send/index.tsx"),
+				P = s("./src/reddit/icons/svgs/Send2/index.tsx"),
+				T = s("./src/reddit/models/Post/index.ts"),
+				N = s("./src/reddit/models/PostCreationForm/index.ts"),
+				z = s("./src/reddit/selectors/chatPost.ts"),
+				B = s("./src/reddit/selectors/comments.ts"),
+				U = s("./src/reddit/selectors/posts.ts"),
+				M = s("./src/reddit/selectors/PublicAccessNetwork/api.ts"),
+				R = s("./src/reddit/selectors/user.ts"),
+				G = s("./src/reddit/components/CommentsChat/MessageInput/AwardButton.tsx"),
+				K = s("./src/lib/constants/index.ts"),
+				q = s("./src/lib/makeGqlRequest/index.ts"),
+				V = s("./src/redditGQL/operations/CreateLiveChatAssociation.json");
+			var W = s("./src/reddit/components/CommentsChat/MessageInput/index.m.less"),
+				Z = s.n(W),
+				H = s("./src/reddit/contexts/PageLayer/index.tsx"),
+				$ = s("./src/reddit/helpers/chat/isEmbeddedLiveChat.ts"),
+				Q = s("./src/reddit/helpers/trackers/commentsChat.ts"),
+				Y = s("./src/reddit/selectors/experiments/chat.ts"),
+				J = s("./src/redditGQL/types.ts");
+			const X = "chat_submission_from_rte",
+				ee = 1e3,
+				te = 15,
+				se = 15e3,
+				re = Object(H.u)(),
+				ne = Object(u.b)(() => Object(l.c)({
+					draft: B.i,
+					errorMsgs: B.L,
+					errorType: B.M,
+					hasError: B.v,
+					isChatPost: z.d,
+					isLivePostSpamRateEnabled: Y.h,
+					isOptimisticUIEnabled: Y.g,
 					liveStreamingChatCharacterLimit: e => {
-						const t = Object(R.a)(e);
+						const t = Object(M.a)(e);
 						return t ? t - 3 : 197
 					},
 					pending: (e, t) => e.features.comments.submit.pending[t.draftKey],
-					post: M.G,
-					isLiveChatInChatTabEnabled: J.c,
-					currentUserId: G.i,
-					isTalkPost: Object(l.a)(M.G, e => Object(N.w)(e))
+					post: U.G,
+					isLiveChatInChatTabEnabled: Y.c,
+					currentUserId: R.i,
+					isTalkPost: Object(l.a)(U.G, e => Object(T.w)(e))
 				}), (e, t) => {
 					let {
 						isEditing: s,
@@ -1334,8 +1331,8 @@
 							let {
 								gqlContext: n
 							} = r;
-							return Object(V.a)(n(), {
-								...W,
+							return Object(q.a)(n(), {
+								...V,
 								variables: {
 									input: e
 								}
@@ -1350,7 +1347,7 @@
 						})())
 					}
 				});
-			class ae extends d.a.Component {
+			class ie extends d.a.Component {
 				constructor(e) {
 					super(e), this.showLiveChatTooltipIfCreatedAssociation = () => {
 						this.props.currentUserId && this.state.hasCreatedLiveChatAssociation && this.props.setLiveChatTooltipShowState(k.b.IS_SHOWING, this.props.currentUserId)
@@ -1369,7 +1366,7 @@
 						})), this.props.isLivestreaming && t && this.passChangeToLivestreaming()
 					}, this.handleFocus = () => {
 						this.props.isLivestreaming && this.passChangeToLivestreaming(), this.props.onFocusMessageInput && this.props.onFocusMessageInput()
-					}, this.passChangeToLivestreaming = o()(() => this.props.onLivestreamingChatMessageEdit(), te, {
+					}, this.passChangeToLivestreaming = o()(() => this.props.onLivestreamingChatMessageEdit(), ee, {
 						leading: !1,
 						trailing: !0
 					}), this.handleSubmit = e => {
@@ -1385,21 +1382,21 @@
 						} = this.props;
 						if (this.canSubmit()) {
 							const e = {
-								commentMode: z.i.RICH_TEXT,
+								commentMode: N.i.RICH_TEXT,
 								draftType: p.c.replyToComment,
 								rteState: this.state.rteState,
 								hasFocus: !0,
 								text: ""
 							};
-							this.cleanInputForm(), n(e, z.i.RICH_TEXT, t), s && setTimeout(() => this.focusOnForm(), 50), this.isAllowedToCreateLiveChatAssociation() && this.associationTimerId && !this.state.messageSent && (this.props.createChatTabAssociation({
+							this.cleanInputForm(), n(e, N.i.RICH_TEXT, t), s && setTimeout(() => this.focusOnForm(), 50), this.isAllowedToCreateLiveChatAssociation() && this.associationTimerId && !this.state.messageSent && (this.props.createChatTabAssociation({
 								postId: this.props.postId,
-								engagementType: X.l.Participated
+								engagementType: J.l.Participated
 							}), clearTimeout(this.associationTimerId), this.setState({
 								messageSent: !0,
 								hasCreatedLiveChatAssociation: !0
 							}), !this.isEmbeddedLiveChat() && this.props.fetchLiveChatPosts())
 						}
-						r && i(Object(F.z)(e)), t && i(Object(Y.d)(t.id))
+						r && i(Object(F.z)(e)), t && i(Object(Q.d)(t.id))
 					}, this.canSubmit = () => Boolean(!this.props.pending && this.state.hasChanged && !this.state.showError && (!this.props.isLivePostSpamRateEnabled || !this.state.spamTimeoutDraftKey)), this.state = {
 						hasChanged: !1,
 						showError: e.hasError,
@@ -1422,11 +1419,11 @@
 					this.isAllowedToCreateLiveChatAssociation() && (this.associationTimerId = setTimeout(() => {
 						this.props.createChatTabAssociation({
 							postId: this.props.postId,
-							engagementType: X.l.Previewed
+							engagementType: J.l.Previewed
 						}), this.setState({
 							hasCreatedLiveChatAssociation: !0
 						}), !this.isEmbeddedLiveChat() && this.props.fetchLiveChatPosts()
-					}, re), window.addEventListener("beforeunload", this.showLiveChatTooltipIfCreatedAssociation))
+					}, se), window.addEventListener("beforeunload", this.showLiveChatTooltipIfCreatedAssociation))
 				}
 				UNSAFE_componentWillReceiveProps(e) {
 					!this.props.isEditing && this.props.draft && this.props.draft.rteState && e.draft && null === e.draft.rteState && this.cleanInputForm(), this.isReplyCommentChanged(e) && e.replyComment && this.focusOnForm(), e.hasError !== this.props.hasError && this.setState({
@@ -1434,18 +1431,18 @@
 					})
 				}
 				componentDidUpdate(e) {
-					e.pending && !this.props.pending && this.focusOnForm(), this.props.isChatPost && this.props.isLivePostSpamRateEnabled && this.props.errorType === q.J.RATELIMIT && e.errorType !== this.props.errorType && (this.props.sendEvent(Object(Y.e)(this.props.postId)), this.setState({
+					e.pending && !this.props.pending && this.focusOnForm(), this.props.isChatPost && this.props.isLivePostSpamRateEnabled && this.props.errorType === K.J.RATELIMIT && e.errorType !== this.props.errorType && (this.props.sendEvent(Object(Q.e)(this.props.postId)), this.setState({
 						spamTimeoutDraftKey: this.props.draftKey
 					}))
 				}
 				componentWillUnmount() {
-					this.props.isLivePostSpamRateEnabled && this.state.spamTimeoutDraftKey && this.props.sendEvent(Object(Y.a)(this.props.postId)), this.isAllowedToCreateLiveChatAssociation() && (this.showLiveChatTooltipIfCreatedAssociation(), this.associationTimerId && clearTimeout(this.associationTimerId), window.removeEventListener("beforeunload", this.showLiveChatTooltipIfCreatedAssociation))
+					this.props.isLivePostSpamRateEnabled && this.state.spamTimeoutDraftKey && this.props.sendEvent(Object(Q.a)(this.props.postId)), this.isAllowedToCreateLiveChatAssociation() && (this.showLiveChatTooltipIfCreatedAssociation(), this.associationTimerId && clearTimeout(this.associationTimerId), window.removeEventListener("beforeunload", this.showLiveChatTooltipIfCreatedAssociation))
 				}
 				isAllowedToCreateLiveChatAssociation() {
 					return this.props.isLiveChatInChatTabEnabled && !this.props.isLivestreaming && !this.props.isTalkPost
 				}
 				isEmbeddedLiveChat() {
-					return this.props.pageLayer && Object(Q.b)(this.props.pageLayer)
+					return this.props.pageLayer && Object($.b)(this.props.pageLayer)
 				}
 				cleanInputForm() {
 					this.setState({
@@ -1474,15 +1471,15 @@
 						hk: "RIcb6"
 					}) : r.fbt._("Send a message (use the Enter key)", null, {
 						hk: "3yojgj"
-					}), C = _.isGildable && c && !o, w = c, k = a === q.J.RATELIMIT && parseInt(null === (e = null == n ? void 0 : n[0]) || void 0 === e ? void 0 : e.replace(/\D/g, "")) || se;
+					}), C = _.isGildable && c && !o, w = c, k = a === K.J.RATELIMIT && parseInt(null === (e = null == n ? void 0 : n[0]) || void 0 === e ? void 0 : e.replace(/\D/g, "")) || te;
 					return d.a.createElement("div", {
-						className: Object(m.a)(H.a.FormWrapper, {
-							[H.a.LivestreamingWrapper]: c,
-							[H.a.v2]: t,
-							[H.a.V2ChatPost]: !c && t && !o
+						className: Object(m.a)(Z.a.FormWrapper, {
+							[Z.a.LivestreamingWrapper]: c,
+							[Z.a.v2]: t,
+							[Z.a.V2ChatPost]: !c && t && !o
 						})
 					}, u && !!this.state.spamTimeoutDraftKey && d.a.createElement("p", {
-						className: H.a.spamTimeout
+						className: Z.a.spamTimeout
 					}, r.fbt._("Time until you can message", null, {
 						hk: "3mkJ7J"
 					}), " ", d.a.createElement(j, {
@@ -1492,34 +1489,34 @@
 								spamTimeoutDraftKey: null
 							})
 						}
-					}), d.a.createElement(S, null)), !o && g && d.a.createElement(x.a, {
+					}), d.a.createElement(I.a, null)), !o && g && d.a.createElement(x.a, {
 						commentId: g.id,
 						isMessageComposer: !0,
 						isLivestreaming: c,
 						onReplyClick: s
 					}), d.a.createElement("div", {
-						className: H.a.inputLine
+						className: Z.a.inputLine
 					}, d.a.createElement("form", {
-						className: Object(m.a)(H.a.Form, {
-							[H.a.Editing]: o
+						className: Object(m.a)(Z.a.Form, {
+							[Z.a.Editing]: o
 						}),
 						onSubmit: this.handleSubmit,
 						onReset: this.handleCancel
-					}, !t && d.a.createElement(oe, {
+					}, !t && d.a.createElement(ae, {
 						isEditing: !!o,
 						isLivestreaming: !!c
 					}), d.a.createElement(E.a, {
-						className: Object(m.a)(H.a.RichTextEditor, {
-							[H.a.Livestreaming]: c && !o,
-							[H.a.Editing]: !c && o,
-							[H.a.isV2ChatPost]: !c && t,
-							[H.a.isEmbeddedLiveChat]: y
+						className: Object(m.a)(Z.a.RichTextEditor, {
+							[Z.a.Livestreaming]: c && !o,
+							[Z.a.Editing]: !c && o,
+							[Z.a.isV2ChatPost]: !c && t,
+							[Z.a.isEmbeddedLiveChat]: y
 						}),
 						focusableContentRTEClassName: Object(m.a)({
-							[H.a.LivestreamingFocusableContent]: c && !o,
-							[H.a.V2ChatPostFocusableContent]: !c && t
+							[Z.a.LivestreamingFocusableContent]: c && !o,
+							[Z.a.V2ChatPostFocusableContent]: !c && t
 						}),
-						dataTestId: ee,
+						dataTestId: X,
 						editorType: A.a.Comment,
 						initialMinHeight: 20,
 						initialHeight: void 0,
@@ -1531,29 +1528,29 @@
 						placeholderText: v,
 						readOnly: b,
 						showSubmitButton: w && !this.state.showError,
-						submitButtonClassName: Object(m.a)(H.a.insetSubmitButton, H.a.submitButton),
+						submitButtonClassName: Object(m.a)(Z.a.insetSubmitButton, Z.a.submitButton),
 						submitOnEnter: !0,
 						trackToolbarClick: i.a,
 						hideToolbar: !0,
 						noBorder: !0,
 						isChatPost: !0
 					}), o && d.a.createElement(O.e, {
-						className: Object(m.a)(H.a.ChatButton, {
-							[H.a.LivestreamingResetButton]: c
+						className: Object(m.a)(Z.a.ChatButton, {
+							[Z.a.LivestreamingResetButton]: c
 						}),
 						type: "reset"
-					}, d.a.createElement(L.a, null)), !w && d.a.createElement(O.e, {
-						className: Object(m.a)(H.a.ChatButton, {
-							[H.a.LivestreamingChatButton]: c && !o,
-							[H.a.LivestreamingResetButton]: c && o,
-							[H.a.v2ChatPostButton]: !c && !o && t
+					}, d.a.createElement(S.a, null)), !w && d.a.createElement(O.e, {
+						className: Object(m.a)(Z.a.ChatButton, {
+							[Z.a.LivestreamingChatButton]: c && !o,
+							[Z.a.LivestreamingResetButton]: c && o,
+							[Z.a.v2ChatPostButton]: !c && !o && t
 						}),
 						type: "submit",
 						disabled: !this.canSubmit(),
 						"aria-label": r.fbt._("send a message", null, {
 							hk: "4bL65Y"
 						})
-					}, t ? d.a.createElement(T.a, null) : d.a.createElement(P.a, null))), C && d.a.createElement(K.a, {
+					}, t ? d.a.createElement(P.a, null) : d.a.createElement(L.a, null))), C && d.a.createElement(G.a, {
 						showSubmitInsideTextArea: w,
 						isLivestreaming: c,
 						sendEvent: l,
@@ -1562,13 +1559,13 @@
 					})), this.state.showError && Object(D.c)(n.length ? n : [`Input text must be less than ${h} characters`]))
 				}
 			}
-			const oe = e => {
+			const ae = e => {
 				let {
 					isEditing: t,
 					isLivestreaming: s
 				} = e;
 				return s ? null : t ? d.a.createElement(C.a, {
-					className: H.a.SmallChatUserIcon,
+					className: Z.a.SmallChatUserIcon,
 					height: 20,
 					width: 20
 				}) : d.a.createElement(C.a, {
@@ -1576,7 +1573,7 @@
 					width: 25
 				})
 			};
-			t.default = ne(ie(ae))
+			t.default = re(ne(ie))
 		},
 		"./src/reddit/components/FocusableContent/index.m.less": function(e, t, s) {
 			e.exports = {
@@ -2224,6 +2221,16 @@
 					...o(s, t),
 					...d(s)
 				})
+		},
+		"./src/reddit/icons/fonts/Clock/index.tsx": function(e, t, s) {
+			"use strict";
+			var r = s("./node_modules/react/index.js"),
+				n = s.n(r),
+				i = s("./src/lib/classNames/index.ts"),
+				a = s("./src/reddit/icons/fonts/helpers.tsx");
+			t.a = e => n.a.createElement("i", {
+				className: Object(i.a)(Object(a.b)("history", e.isFilled), e.className)
+			})
 		},
 		"./src/reddit/icons/svgs/Send2/index.tsx": function(e, t, s) {
 			"use strict";
@@ -2876,4 +2883,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatMessageInput.41ee7b13dd563a017172.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatMessageInput.686bac218af0b775a914.js.map
