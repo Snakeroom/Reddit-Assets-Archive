@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-ClassicPost.1610306ab4a09079e74b.js
-// Retrieved at 9/22/2022, 12:10:13 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-ClassicPost.6f358b88ec8f5c587498.js
+// Retrieved at 9/22/2022, 2:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-ClassicPost"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -1954,12 +1954,12 @@
 						});
 						if (!e.ok) return l(Object(E.f)({
 							kind: C.b.Error,
-							text: O.a[g.i.ServiceError]
+							text: O.a[g.j.ServiceError]
 						})), void c(!1);
 						const s = Object(O.h)(e.body);
 						if (null == s ? void 0 : s.errorState) return l(Object(E.f)({
 							kind: C.b.Error,
-							text: O.a[s.errorState.code] || O.a[g.i.ServiceError]
+							text: O.a[s.errorState.code] || O.a[g.j.ServiceError]
 						})), void c(!1);
 						(null == s ? void 0 : s.okState) && (window.location.href = `${p.a.redditUrl}/talk/${t}`)
 					}
@@ -4264,14 +4264,14 @@
 						...u,
 						variables: t
 					});
-					return !!Object(a.c)(s) && (s.body.data.subredditInfoById.allowedPostTypes || []).includes(v.C.Talk)
+					return !!Object(a.c)(s) && (s.body.data.subredditInfoById.allowedPostTypes || []).includes(v.D.Talk)
 				}, O = async (e, t) => {
 					var s, n;
 					const o = await Object(r.a)(e, {
 						...m,
 						variables: t
 					});
-					return !!Object(a.c)(o) && (null !== (n = null === (s = o.body.data.profileByName) || void 0 === s ? void 0 : s.allowedPostTypes) && void 0 !== n ? n : []).includes(v.C.Talk)
+					return !!Object(a.c)(o) && (null !== (n = null === (s = o.body.data.profileByName) || void 0 === s ? void 0 : s.allowedPostTypes) && void 0 !== n ? n : []).includes(v.D.Talk)
 				}, E = async e => {
 					var t;
 					const s = await Object(r.a)(e, l);
@@ -4299,26 +4299,26 @@
 						}
 					}
 				}), S = () => Object(o.a)(), j = e => e.data.createAudioRoomOrError || e.data.createAudioRoomOnProfile || e.data.startAudioRoom, k = {
-					[v.i.ServiceError]: n.fbt._("Something's wrong with the talk service right now. Check back later.", null, {
+					[v.j.ServiceError]: n.fbt._("Something's wrong with the talk service right now. Check back later.", null, {
 						hk: "3XqPJS"
 					}),
-					[v.i.UserNotAuthorized]: n.fbt._("You don't have permission to start talks in this community.", null, {
+					[v.j.UserNotAuthorized]: n.fbt._("You don't have permission to start talks in this community.", null, {
 						hk: "1XY1Ss"
 					}),
-					[v.i.RoomLimitExceeded]: n.fbt._("You can only create three talks at one time. To continue, close a talk you're not using.", null, {
+					[v.j.RoomLimitExceeded]: n.fbt._("You can only create three talks at one time. To continue, close a talk you're not using.", null, {
 						hk: "3zPx9X"
 					}),
-					[v.i.ConcurrentRoomLimitExceeded]: n.fbt._("Too many talks are happening right now. Try again later.", null, {
+					[v.j.ConcurrentRoomLimitExceeded]: n.fbt._("Too many talks are happening right now. Try again later.", null, {
 						hk: "2LYXJx"
 					}),
-					[v.i.SubredditRoomLimitExceeded]: n.fbt._("This community can only host two talks at a time. Try again after one has ended.", null, {
+					[v.j.SubredditRoomLimitExceeded]: n.fbt._("This community can only host two talks at a time. Try again after one has ended.", null, {
 						hk: "2mGf21"
 					})
 				}, y = e => e.data.prepareAudioRoom || e.data.prepareAudioRoomOnProfile, N = {
-					[v.E.ServiceError]: n.fbt._("Something's wrong with the talk service right now. Check back later.", null, {
+					[v.F.ServiceError]: n.fbt._("Something's wrong with the talk service right now. Check back later.", null, {
 						hk: "3XqPJS"
 					}),
-					[v.E.UserNotAuthorized]: n.fbt._("You don't have permission to start talks in this community.", null, {
+					[v.F.UserNotAuthorized]: n.fbt._("You don't have permission to start talks in this community.", null, {
 						hk: "1XY1Ss"
 					})
 				}, P = (e, t) => Object(r.a)(e, {
@@ -6207,4 +6207,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ClassicPost.1610306ab4a09079e74b.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ClassicPost.6f358b88ec8f5c587498.js.map

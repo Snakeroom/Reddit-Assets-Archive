@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Chat~RedesignChat.46e2b5ab064844ae8700.js
-// Retrieved at 9/20/2022, 1:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Chat~RedesignChat.d5dbe8b62afd1a47b3ec.js
+// Retrieved at 9/22/2022, 2:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Chat~RedesignChat"], {
 		"./src/chat/actions/apiRequestHeaders.ts": function(e, t, n) {
@@ -11205,13 +11205,13 @@
 						const t = e.post,
 							n = Object(a.useMemo)(() => me(t.subreddit.path), [t.subreddit.path]);
 						switch (e.engagementType) {
-							case re.l.Previewed:
+							case re.m.Previewed:
 								return s.a.createElement(s.a.Fragment, null, s.a.createElement(ae, {
 									className: ie.a.Clock
 								}), i.fbt._("Visited · {subreddit path}", [i.fbt._param("subreddit path", n)], {
 									hk: "3Dw7HG"
 								}));
-							case re.l.Participated:
+							case re.m.Participated:
 							default:
 								return i.fbt._("Chatting in {subreddit path}", [i.fbt._param("subreddit path", n)], {
 									hk: "4qYADV"
@@ -15446,7 +15446,7 @@
 				},
 				M = e => {
 					var t;
-					return (null === (t = e.post.media) || void 0 === t ? void 0 : t.typeHint) === N.m.Rpan
+					return (null === (t = e.post.media) || void 0 === t ? void 0 : t.typeHint) === N.n.Rpan
 				},
 				L = (e, t, n) => e[t] ? {
 					...e,
@@ -19056,9 +19056,9 @@
 				c = n("./src/chat/selectors/liveChat/index.ts"),
 				r = n("./src/redditGQL/types.ts");
 			const o = {
-					[r.l.Previewed]: "recently_viewed",
-					[r.l.Participated]: "engaged",
-					[r.l.Unknown]: "unknown"
+					[r.m.Previewed]: "recently_viewed",
+					[r.m.Participated]: "engaged",
+					[r.m.Unknown]: "unknown"
 				},
 				i = e => {
 					return {
@@ -19557,4 +19557,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~RedesignChat.46e2b5ab064844ae8700.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~RedesignChat.d5dbe8b62afd1a47b3ec.js.map

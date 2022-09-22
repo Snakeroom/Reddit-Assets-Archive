@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compo~bd4baca2.39e7246cbfb3497e9017.js
-// Retrieved at 9/22/2022, 10:30:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compo~bd4baca2.24fe69095e67b7f91b34.js
+// Retrieved at 9/22/2022, 2:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compo~bd4baca2"], {
 		"./src/higherOrderComponents/withAdClickLocation/Locations.ts": function(e, t, s) {
@@ -454,7 +454,7 @@
 						const e = T({
 							username: P,
 							profileSort: x,
-							filter: te.F.Posts,
+							filter: te.G.Posts,
 							shouldUseGqlCursor: !0
 						});
 						R = null === (y = null === (_ = null === (o = null == (N = await Object(z.a)("profilePosts", () => j(r.gqlContext(), e))) ? void 0 : N.body) || void 0 === o ? void 0 : o.data) || void 0 === _ ? void 0 : _.redditorInfoByName) || void 0 === y ? void 0 : y.__typename
@@ -490,7 +490,7 @@
 						const e = T({
 								username: P,
 								profileSort: x,
-								filter: te.F.Posts
+								filter: te.G.Posts
 							}),
 							t = await j(r.gqlContext(), e);
 						if (t.ok && t.body) {
@@ -566,7 +566,7 @@
 						const e = T({
 							username: b,
 							profileSort: m,
-							filter: te.F.Posts,
+							filter: te.G.Posts,
 							loadMoreData: h,
 							shouldUseGqlCursor: !0
 						});
@@ -604,7 +604,7 @@
 						const e = T({
 								username: b,
 								profileSort: m,
-								filter: te.F.Posts,
+								filter: te.G.Posts,
 								loadMoreData: h
 							}),
 							t = await j(o(), e);
@@ -4114,11 +4114,11 @@
 			t.a = m
 		},
 		"./src/redditGQL/operations/ProfileFeed.json": function(e) {
-			e.exports = JSON.parse('{"id":"4aba1eb026c0"}')
+			e.exports = JSON.parse('{"id":"c4f0fa053950"}')
 		},
 		"./src/redditGQL/operations/SubscribedSubreddits.json": function(e) {
 			e.exports = JSON.parse('{"id":"13af47cf5fb3"}')
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compo~bd4baca2.39e7246cbfb3497e9017.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compo~bd4baca2.24fe69095e67b7f91b34.js.map

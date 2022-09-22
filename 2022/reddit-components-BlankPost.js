@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-BlankPost.8f876f883cd2fb06d884.js
-// Retrieved at 9/22/2022, 10:30:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-BlankPost.b8211a928fc622ad0b93.js
+// Retrieved at 9/22/2022, 2:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-BlankPost"], {
 		"./node_modules/@reddit/i18n-tools/runtime/helpers/locale/index.js": function(e, t, s) {
@@ -1244,7 +1244,7 @@
 						const e = _({
 							username: C,
 							profileSort: w,
-							filter: te.F.Posts,
+							filter: te.G.Posts,
 							shouldUseGqlCursor: !0
 						});
 						F = null === (O = null === (y = null === (i = null == (M = await Object(Q.a)("profilePosts", () => P(r.gqlContext(), e))) ? void 0 : M.body) || void 0 === i ? void 0 : i.data) || void 0 === y ? void 0 : y.redditorInfoByName) || void 0 === O ? void 0 : O.__typename
@@ -1280,7 +1280,7 @@
 						const e = _({
 								username: C,
 								profileSort: w,
-								filter: te.F.Posts
+								filter: te.G.Posts
 							}),
 							t = await P(r.gqlContext(), e);
 						if (t.ok && t.body) {
@@ -1356,7 +1356,7 @@
 						const e = _({
 							username: m,
 							profileSort: p,
-							filter: te.F.Posts,
+							filter: te.G.Posts,
 							loadMoreData: f,
 							shouldUseGqlCursor: !0
 						});
@@ -1394,7 +1394,7 @@
 						const e = _({
 								username: m,
 								profileSort: p,
-								filter: te.F.Posts,
+								filter: te.G.Posts,
 								loadMoreData: f
 							}),
 							t = await P(i(), e);
@@ -2871,8 +2871,8 @@
 			t.a = p
 		},
 		"./src/redditGQL/operations/ProfileFeed.json": function(e) {
-			e.exports = JSON.parse('{"id":"4aba1eb026c0"}')
+			e.exports = JSON.parse('{"id":"c4f0fa053950"}')
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-BlankPost.8f876f883cd2fb06d884.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-BlankPost.b8211a928fc622ad0b93.js.map

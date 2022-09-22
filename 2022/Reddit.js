@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Reddit.5d9aff789c98516f9494.js
-// Retrieved at 9/22/2022, 12:10:13 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Reddit.80c8455d17445d75c79d.js
+// Retrieved at 9/22/2022, 2:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Reddit"], {
 		"./assets/fonts/BentonSans/font.less": function(e, t, n) {},
@@ -22640,7 +22640,7 @@
 			e.exports = JSON.parse('{"id":"445164f0825f"}')
 		},
 		"./src/redditGQL/operations/CreateComment.json": function(e) {
-			e.exports = JSON.parse('{"id":"a3eae58411e4"}')
+			e.exports = JSON.parse('{"id":"0c0d16c7d7cf"}')
 		},
 		"./src/redditGQL/operations/EconAdminPanelQuery.json": function(e) {
 			e.exports = JSON.parse('{"id":"d47c78bc4284"}')
@@ -22661,7 +22661,7 @@
 			e.exports = JSON.parse('{"id":"26f251bf8753"}')
 		},
 		"./src/redditGQL/operations/UpdateComment.json": function(e) {
-			e.exports = JSON.parse('{"id":"3954b4d4b89c"}')
+			e.exports = JSON.parse('{"id":"78a7acf0a62f"}')
 		},
 		"./src/redditGQL/operations/UpdateCommentFollowState.json": function(e) {
 			e.exports = JSON.parse('{"id":"0a2ed51664c5"}')
@@ -22697,4 +22697,4 @@
 		["./src/reddit/index.tsx", "runtime~Reddit", "vendors~CommentsPage~ModerationPages~Reddit~reddit-components-ClassicPost~reddit-components-CompactP~d737df3e", "vendors~CommentsPage~Governance~ModListing~ModerationPages~Reddit~Subreddit", "vendors~Chat~Governance~Reddit", "vendors~Reddit", "CommentsPage~Governance~Reddit~ReportFlow~Subreddit~reddit-components-BlankPost~reddit-components-Cl~5351df81", "Governance~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compo~bd4baca2", "Reddit~RpanListingUnit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPos~93b34f9d", "ModListing~PostCreation~Reddit~StandalonePostPage~Subreddit", "Governance~ModListing~Reddit~ReportFlow~Subreddit", "Chat~Governance~Reddit", "Governance~Reddit~SubredditForkingCTA", "Governance~ModListing~Reddit", "Governance~Reddit"]
 	]
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit.5d9aff789c98516f9494.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit.80c8455d17445d75c79d.js.map

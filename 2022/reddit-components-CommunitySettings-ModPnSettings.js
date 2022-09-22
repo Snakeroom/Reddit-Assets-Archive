@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-CommunitySettings-ModPnSettings.b60b2a38c30d369e120a.js
-// Retrieved at 9/14/2022, 6:30:03 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-CommunitySettings-ModPnSettings.1edf1ebd105f7848d098.js
+// Retrieved at 9/22/2022, 2:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-CommunitySettings-ModPnSettings"], {
 		"./node_modules/lodash/times.js": function(e, t, n) {
@@ -61,8 +61,8 @@
 			}
 			var u = n("./src/reddit/selectors/telemetry.ts"),
 				g = n("./src/redditGQL/types.ts");
-			const m = Object.values(g.s),
-				p = Object.values(g.t),
+			const m = Object.values(g.t),
+				p = Object.values(g.u),
 				b = e => t => {
 					return {
 						source: "mod_pn_settings",
@@ -474,7 +474,7 @@
 							return {
 								subredditId: t,
 								name: n,
-								status: e.isEnabled ? g.u.Enabled : g.u.Disabled
+								status: e.isEnabled ? g.v.Enabled : g.v.Disabled
 							}
 						}
 						if (p.includes(n)) {
@@ -682,4 +682,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-CommunitySettings-ModPnSettings.b60b2a38c30d369e120a.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-CommunitySettings-ModPnSettings.1edf1ebd105f7848d098.js.map

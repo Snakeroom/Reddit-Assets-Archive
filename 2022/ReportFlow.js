@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ReportFlow.4602b1af4e8264c328bc.js
-// Retrieved at 9/22/2022, 12:10:13 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ReportFlow.78dc82feb0f84d2998fb.js
+// Retrieved at 9/22/2022, 2:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ReportFlow", "ReportFlowNew"], {
 		"./node_modules/@reddit/i18n-tools/runtime/helpers/locale/index.js": function(e, t, n) {
@@ -842,7 +842,7 @@
 						return e
 				}
 			};
-			var N = Object(g.c)({
+			var F = Object(g.c)({
 				api: k,
 				openedFromModalPage: T,
 				postOrCommentId: j,
@@ -859,10 +859,10 @@
 			});
 			Object(C.a)({
 				features: {
-					reportFlow: N
+					reportFlow: F
 				}
 			});
-			const F = Object(s.a)(_.e),
+			const N = Object(s.a)(_.e),
 				A = Object(s.a)(_.d),
 				P = Object(s.a)(_.c),
 				M = (e, t) => async (n, s, r) => {
@@ -874,7 +874,7 @@
 						c = l.features.reportFlow.api.pending[i],
 						u = l.features.reportFlow.userIsMod;
 					if (c) return;
-					n(F({
+					n(N({
 						id: i
 					}));
 					const m = await Object(p.b)(a(), e),
@@ -1460,8 +1460,8 @@
 						})
 					}, o))
 				},
-				N = Object(b.a)(R.a),
-				F = c.a.wrapped(N, "Dropdown", O.a),
+				F = Object(b.a)(R.a),
+				N = c.a.wrapped(F, "Dropdown", O.a),
 				A = c.a.wrapped(g.b, "DropdownTriangle", O.a),
 				P = c.a.wrapped(C.b, "Row", O.a);
 			var M = n("./src/reddit/components/ReportFlow/FileAComplaint/index.m.less"),
@@ -1604,7 +1604,7 @@
 						isChosen: !!d
 					}, o.fbt._("Select a rule", null, {
 						hk: "26hOYU"
-					})), r.a.createElement(F, {
+					})), r.a.createElement(N, {
 						isFixed: !0,
 						isOpen: t.dropdownIsOpen,
 						tooltipId: pe
@@ -1683,7 +1683,7 @@
 				Ce = n.n(Re);
 			const ge = "ReportFlow--SubredditRules",
 				_e = "Custom response",
-				Oe = c.a.wrapped(F, "Dropdown", Ce.a),
+				Oe = c.a.wrapped(N, "Dropdown", Ce.a),
 				we = c.a.wrapped(I, "DropdownRow", Ce.a),
 				ve = c.a.wrapped(fe.i, "FreeFormTextArea", Ce.a),
 				Ee = Object(i.c)({
@@ -1761,7 +1761,7 @@
 				Te = n("./src/reddit/components/ReportFlow/FirstPage/index.m.less"),
 				je = n.n(Te);
 			const Le = c.a.wrapped(x.l, "SubmitButton", je.a);
-			class Ne extends r.a.Component {
+			class Fe extends r.a.Component {
 				constructor(e) {
 					super(e), this.state = {
 						rulesSequence: new ke.a
@@ -1843,7 +1843,7 @@
 					}))))
 				}
 			}
-			var Fe = Ne,
+			var Ne = Fe,
 				Ae = n("./src/reddit/icons/svgs/Close/index.tsx"),
 				Pe = n("./src/reddit/components/ReportFlow/Title/index.m.less"),
 				Me = n.n(Pe);
@@ -1963,7 +1963,7 @@
 					if (i && a[i])
 						for (const o of a[i].rules) o.kind !== n && o.kind !== Ke.a.All || l.push(0 !== o.violationReason.length ? o.violationReason : o.shortName);
 					const d = this.props.isLiveStreaming ? t.liveStreamingRules : t.sitewideRules;
-					return r.a.createElement(Fe, {
+					return r.a.createElement(Ne, {
 						isLiveStreaming: t.isLiveStreaming,
 						onSubmit: this.onSubmit,
 						onClose: t.onCloseReportFlow,
@@ -2127,8 +2127,8 @@
 				T = n("./src/reddit/contexts/ApiContext.tsx"),
 				j = n("./src/reddit/models/Post/index.ts"),
 				L = n("./src/reddit/models/Toast/index.ts"),
-				N = n("./src/reddit/models/WhitelistAndBlocked.ts"),
-				F = n("./src/reddit/selectors/commentSelector.ts"),
+				F = n("./src/reddit/models/WhitelistAndBlocked.ts"),
+				N = n("./src/reddit/selectors/commentSelector.ts"),
 				A = n("./src/reddit/selectors/meta.ts"),
 				P = n("./src/reddit/selectors/posts.ts"),
 				M = n("./src/reddit/selectors/user.ts"),
@@ -2155,7 +2155,7 @@
 						let {
 							commentId: n
 						} = t;
-						return n ? Object(F.b)(e, {
+						return n ? Object(N.b)(e, {
 							commentId: n
 						}) : null
 					},
@@ -2171,7 +2171,7 @@
 						const {
 							commentId: o,
 							postId: s
-						} = t, r = o ? Object(F.b)(e, {
+						} = t, r = o ? Object(N.b)(e, {
 							commentId: o
 						}) : null, a = s ? Object(P.G)(e, {
 							postId: s
@@ -2261,7 +2261,7 @@
 							blockUserPending: n,
 							sendEvent: o
 						} = this.props;
-						n.new !== N.a.pending && (this.props.onBlockUser(e), o(x(t)))
+						n.new !== F.a.pending && (this.props.onBlockUser(e), o(x(t)))
 					}, this.onOpenCtlFlow = () => {
 						this.props.postMessage && this.props.postMessage({
 							type: "openCtl"
@@ -3313,14 +3313,14 @@
 						...u,
 						variables: t
 					});
-					return !!Object(a.c)(n) && (n.body.data.subredditInfoById.allowedPostTypes || []).includes(x.C.Talk)
+					return !!Object(a.c)(n) && (n.body.data.subredditInfoById.allowedPostTypes || []).includes(x.D.Talk)
 				}, g = async (e, t) => {
 					var n, o;
 					const s = await Object(r.a)(e, {
 						...p,
 						variables: t
 					});
-					return !!Object(a.c)(s) && (null !== (o = null === (n = s.body.data.profileByName) || void 0 === n ? void 0 : n.allowedPostTypes) && void 0 !== o ? o : []).includes(x.C.Talk)
+					return !!Object(a.c)(s) && (null !== (o = null === (n = s.body.data.profileByName) || void 0 === n ? void 0 : n.allowedPostTypes) && void 0 !== o ? o : []).includes(x.D.Talk)
 				}, _ = async e => {
 					var t;
 					const n = await Object(r.a)(e, c);
@@ -3348,26 +3348,26 @@
 						}
 					}
 				}), v = () => Object(s.a)(), E = e => e.data.createAudioRoomOrError || e.data.createAudioRoomOnProfile || e.data.startAudioRoom, S = {
-					[x.i.ServiceError]: o.fbt._("Something's wrong with the talk service right now. Check back later.", null, {
+					[x.j.ServiceError]: o.fbt._("Something's wrong with the talk service right now. Check back later.", null, {
 						hk: "3XqPJS"
 					}),
-					[x.i.UserNotAuthorized]: o.fbt._("You don't have permission to start talks in this community.", null, {
+					[x.j.UserNotAuthorized]: o.fbt._("You don't have permission to start talks in this community.", null, {
 						hk: "1XY1Ss"
 					}),
-					[x.i.RoomLimitExceeded]: o.fbt._("You can only create three talks at one time. To continue, close a talk you're not using.", null, {
+					[x.j.RoomLimitExceeded]: o.fbt._("You can only create three talks at one time. To continue, close a talk you're not using.", null, {
 						hk: "3zPx9X"
 					}),
-					[x.i.ConcurrentRoomLimitExceeded]: o.fbt._("Too many talks are happening right now. Try again later.", null, {
+					[x.j.ConcurrentRoomLimitExceeded]: o.fbt._("Too many talks are happening right now. Try again later.", null, {
 						hk: "2LYXJx"
 					}),
-					[x.i.SubredditRoomLimitExceeded]: o.fbt._("This community can only host two talks at a time. Try again after one has ended.", null, {
+					[x.j.SubredditRoomLimitExceeded]: o.fbt._("This community can only host two talks at a time. Try again after one has ended.", null, {
 						hk: "2mGf21"
 					})
 				}, y = e => e.data.prepareAudioRoom || e.data.prepareAudioRoomOnProfile, k = {
-					[x.E.ServiceError]: o.fbt._("Something's wrong with the talk service right now. Check back later.", null, {
+					[x.F.ServiceError]: o.fbt._("Something's wrong with the talk service right now. Check back later.", null, {
 						hk: "3XqPJS"
 					}),
-					[x.E.UserNotAuthorized]: o.fbt._("You don't have permission to start talks in this community.", null, {
+					[x.F.UserNotAuthorized]: o.fbt._("You don't have permission to start talks in this community.", null, {
 						hk: "1XY1Ss"
 					})
 				}, I = (e, t) => Object(r.a)(e, {
@@ -4000,4 +4000,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ReportFlow.4602b1af4e8264c328bc.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ReportFlow.78dc82feb0f84d2998fb.js.map

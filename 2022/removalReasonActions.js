@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/removalReasonActions.c2979f24d44d57fae76f.js
-// Retrieved at 9/22/2022, 10:00:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/removalReasonActions.f993a8202f0b0c632707.js
+// Retrieved at 9/22/2022, 2:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["removalReasonActions"], {
 		"./node_modules/lodash/map.js": function(e, t, o) {
@@ -2893,14 +2893,14 @@
 			e.exports = JSON.parse('{"id":"445164f0825f"}')
 		},
 		"./src/redditGQL/operations/CreateComment.json": function(e) {
-			e.exports = JSON.parse('{"id":"a3eae58411e4"}')
+			e.exports = JSON.parse('{"id":"0c0d16c7d7cf"}')
 		},
 		"./src/redditGQL/operations/UpdateComment.json": function(e) {
-			e.exports = JSON.parse('{"id":"3954b4d4b89c"}')
+			e.exports = JSON.parse('{"id":"78a7acf0a62f"}')
 		},
 		"./src/redditGQL/operations/UpdateCommentFollowState.json": function(e) {
 			e.exports = JSON.parse('{"id":"0a2ed51664c5"}')
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/removalReasonActions.c2979f24d44d57fae76f.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/removalReasonActions.f993a8202f0b0c632707.js.map

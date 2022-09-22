@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CommentsPage.7e2ea0aac475ca382254.js
-// Retrieved at 9/22/2022, 10:30:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CommentsPage.86c14684f85c381f5969.js
+// Retrieved at 9/22/2022, 2:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CommentsPage", "Governance~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compo~bd4baca2", "Reddit~RpanListingUnit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPos~93b34f9d", "CollectionCommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~SearchResults", "Governance~ModListing~Reddit~ReportFlow~Subreddit", "ModListing~PostCreation~Reddit~StandalonePostPage~Subreddit", "CollectionCommentsPage~ModProgressModule~NewCommunityProgress", "Governance~ModListing~Reddit", "CollectionCommentsPage~SearchResults", "AchievementsActions"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -7162,7 +7162,7 @@
 						const e = O({
 							username: I,
 							profileSort: j,
-							filter: te.F.Posts,
+							filter: te.G.Posts,
 							shouldUseGqlCursor: !0
 						});
 						R = null === (v = null === (_ = null === (o = null == (D = await Object(K.a)("profilePosts", () => x(s.gqlContext(), e))) ? void 0 : D.body) || void 0 === o ? void 0 : o.data) || void 0 === _ ? void 0 : _.redditorInfoByName) || void 0 === v ? void 0 : v.__typename
@@ -7198,7 +7198,7 @@
 						const e = O({
 								username: I,
 								profileSort: j,
-								filter: te.F.Posts
+								filter: te.G.Posts
 							}),
 							t = await x(s.gqlContext(), e);
 						if (t.ok && t.body) {
@@ -7274,7 +7274,7 @@
 						const e = O({
 							username: b,
 							profileSort: m,
-							filter: te.F.Posts,
+							filter: te.G.Posts,
 							loadMoreData: C,
 							shouldUseGqlCursor: !0
 						});
@@ -7312,7 +7312,7 @@
 						const e = O({
 								username: b,
 								profileSort: m,
-								filter: te.F.Posts,
+								filter: te.G.Posts,
 								loadMoreData: C
 							}),
 							t = await x(o(), e);
@@ -44228,7 +44228,7 @@
 			e.exports = JSON.parse('{"id":"662c7500e8b7"}')
 		},
 		"./src/redditGQL/operations/CreateComment.json": function(e) {
-			e.exports = JSON.parse('{"id":"a3eae58411e4"}')
+			e.exports = JSON.parse('{"id":"0c0d16c7d7cf"}')
 		},
 		"./src/redditGQL/operations/CrowdControlLevelInfo.json": function(e) {
 			e.exports = JSON.parse('{"id":"0100b521f182"}')
@@ -44264,7 +44264,7 @@
 			e.exports = JSON.parse('{"id":"bd47943e9fad"}')
 		},
 		"./src/redditGQL/operations/ProfileFeed.json": function(e) {
-			e.exports = JSON.parse('{"id":"4aba1eb026c0"}')
+			e.exports = JSON.parse('{"id":"c4f0fa053950"}')
 		},
 		"./src/redditGQL/operations/SubredditGeoRecommendationViaFocusVertical.json": function(e) {
 			e.exports = JSON.parse('{"id":"dd6aa8aaf456"}')
@@ -44288,7 +44288,7 @@
 			e.exports = JSON.parse('{"id":"1bc1df66f049"}')
 		},
 		"./src/redditGQL/operations/UpdateComment.json": function(e) {
-			e.exports = JSON.parse('{"id":"3954b4d4b89c"}')
+			e.exports = JSON.parse('{"id":"78a7acf0a62f"}')
 		},
 		"./src/redditGQL/operations/UpdateCommentFollowState.json": function(e) {
 			e.exports = JSON.parse('{"id":"0a2ed51664c5"}')
@@ -44313,4 +44313,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommentsPage.7e2ea0aac475ca382254.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommentsPage.86c14684f85c381f5969.js.map
