@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfileComments.b0d909bebfe9d0c1e7f8.js
-// Retrieved at 9/20/2022, 11:00:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfileComments.b03e7178de72c452129e.js
+// Retrieved at 9/22/2022, 10:00:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfileComments"], {
 		"./src/reddit/actions/pages/profileComments/index.ts": function(e, t, s) {
@@ -363,8 +363,8 @@
 				q = s("./src/reddit/controls/OutboundLink/styled.tsx"),
 				z = s("./src/reddit/models/Media/index.ts"),
 				Z = s("./src/reddit/components/ClassicPost/Thumbnail.tsx"),
-				X = s("./src/reddit/connectors/ClassicPost/index.tsx"),
-				Q = s("./src/reddit/constants/postLayout.ts"),
+				Q = s("./src/reddit/connectors/ClassicPost/index.tsx"),
+				X = s("./src/reddit/constants/postLayout.ts"),
 				$ = s("./src/reddit/helpers/hasModFlairPermissions/index.ts"),
 				Y = s("./src/reddit/helpers/hasModFullPermissions/index.ts"),
 				ee = s("./src/reddit/helpers/hasModPostPermissions/index.ts"),
@@ -404,7 +404,7 @@
 					isFrontpage: y,
 					isGalleryTileLayoutDefault: w,
 					isLoggedIn: I,
-					isOverlay: X,
+					isOverlay: Q,
 					imageGalleryCurrentItem: re,
 					moderatorPermissions: ie,
 					modModeEnabled: le,
@@ -449,7 +449,7 @@
 						post: xe,
 						inSubredditOrProfile: f,
 						isCurrentUserProfilePost: P,
-						isOverlay: X,
+						isOverlay: Q,
 						shouldShowSubscribeButton: !(y && I) || He && I,
 						subredditOrProfile: ke
 					},
@@ -458,10 +458,10 @@
 						source: qe
 					} = Ge,
 					[ze, Ze] = Object(o.useState)(!1),
-					Xe = Object(o.useCallback)(() => {
+					Qe = Object(o.useCallback)(() => {
 						Ze(!ze), Object(te.Pb)(), Se(Object(ne.d)(ge))
 					}, [ze, ge, Se]);
-				let Qe = n.a.createElement(Z.a, {
+				let Xe = n.a.createElement(Z.a, {
 					className: de.a.classicThumbnail,
 					crosspost: Le && xe,
 					isMeta: xe.isMeta,
@@ -470,7 +470,7 @@
 					templatePlaceholderImage: Ne && Ne.postPlaceholderImage,
 					removeLink: Ke
 				});
-				Object(x.c)(xe) && (Qe = n.a.createElement(_, {
+				Object(x.c)(xe) && (Xe = n.a.createElement(_, {
 					post: xe
 				}));
 				const $e = n.a.createElement(W.a, {
@@ -478,7 +478,7 @@
 						[de.a.mFirst]: O,
 						[de.a.shouldShowOverflow]: je
 					}, t),
-					isOverlay: X,
+					isOverlay: Q,
 					style: {
 						...Object(oe.d)(e),
 						...Object(oe.b)(Ne)
@@ -506,7 +506,7 @@
 					className: de.a.mainBody
 				}, n.a.createElement("div", {
 					className: Ue ? de.a.expandoContainer : de.a.thumbnailContainer
-				}, !Ue && Qe, n.a.createElement(T.a, {
+				}, !Ue && Xe, n.a.createElement(T.a, {
 					crosspost: Le,
 					className: de.a.rightExpando,
 					isExpanded: !!g,
@@ -519,7 +519,7 @@
 					"data-click-id": "body"
 				}, !!xe.recommendationContext && n.a.createElement(B.a, {
 					content: xe.recommendationContext.content,
-					layout: Q.g.Classic,
+					layout: X.g.Classic,
 					post: xe
 				}), n.a.createElement(H.c, {
 					className: be ? de.a.titleWithPoll : void 0,
@@ -529,7 +529,7 @@
 					redditStyle: fe,
 					size: H.b.Medium,
 					titleColor: Ne && Ne.postTitleColor,
-					isOverlay: X
+					isOverlay: Q
 				}, xe.source && !Le && !xe.isSurveyAd && n.a.createElement(q.a, {
 					href: xe.source.url,
 					isSponsored: xe.isSponsored,
@@ -574,16 +574,16 @@
 					hasModPostPerms: Me,
 					hasModFullPerms: Ae,
 					hostPostData: j,
-					isOverlay: !!X,
+					isOverlay: !!Q,
 					modModeEnabled: le,
-					onClickInsightsButton: Xe,
+					onClickInsightsButton: Qe,
 					onIgnoreReports: pe,
 					onOpenReportsDropdown: ue,
 					post: xe,
 					shouldShowInsightsButton: je,
 					showEditPost: Ve,
 					showEditFlair: ve,
-					tooltipType: X ? J.c.Lightbox : void 0,
+					tooltipType: Q ? J.c.Lightbox : void 0,
 					useFlatlistBreakpoints: Object(U.b)({
 						editPost: !Fe,
 						hide: !Fe,
@@ -597,7 +597,7 @@
 				})));
 				return n.a.createElement(G.b, null, $e)
 			});
-			t.default = Object(X.a)(le)
+			t.default = Object(Q.a)(le)
 		},
 		"./src/reddit/components/CommentBodyExpander/index.m.less": function(e, t, s) {
 			e.exports = {
@@ -795,8 +795,8 @@
 				q = s("./src/reddit/models/Comment/index.ts"),
 				z = s("./src/reddit/selectors/activeModalId.ts"),
 				Z = s("./src/reddit/selectors/comments.ts"),
-				X = s("./src/reddit/selectors/moderatorPermissions.ts"),
-				Q = s("./src/reddit/selectors/posts.ts"),
+				Q = s("./src/reddit/selectors/moderatorPermissions.ts"),
+				X = s("./src/reddit/selectors/posts.ts"),
 				$ = s("./src/reddit/selectors/tooltip.ts"),
 				Y = s("./src/reddit/selectors/experiments/antievil/index.tsx"),
 				ee = s("./src/reddit/selectors/experiments/reportingRevampDesktop.ts"),
@@ -850,7 +850,7 @@
 						let {
 							comment: s
 						} = t;
-						return Object(X.n)(e, {
+						return Object(Q.n)(e, {
 							subredditId: s.subredditId
 						})
 					},
@@ -860,7 +860,7 @@
 						let {
 							comment: s
 						} = t;
-						return Object(Q.B)(e, {
+						return Object(X.B)(e, {
 							postId: s.postId
 						})
 					},
@@ -884,7 +884,7 @@
 						let {
 							comment: s
 						} = t;
-						return Object(Q.V)(e, {
+						return Object(X.V)(e, {
 							postId: s.postId
 						})
 					},
@@ -3241,8 +3241,8 @@
 				q = s("./src/reddit/helpers/postComponentForLayout/index.tsx"),
 				z = s("./src/reddit/helpers/trackers/post.ts"),
 				Z = s("./src/reddit/featureFlags/index.ts"),
-				X = s("./src/reddit/selectors/comments.ts"),
-				Q = s("./src/reddit/selectors/posts.ts"),
+				Q = s("./src/reddit/selectors/comments.ts"),
+				X = s("./src/reddit/selectors/posts.ts"),
 				$ = s("./src/reddit/selectors/profileComments.ts"),
 				Y = s("./src/reddit/selectors/subreddit.ts"),
 				ee = s("./src/reddit/selectors/tracking.ts"),
@@ -3257,10 +3257,10 @@
 					loadMore: $.d,
 					subredditsById: Y.db,
 					viewportDataLoaded: ee.a,
-					commentsById: X.q,
+					commentsById: Q.q,
 					itemIds: $.f,
 					itemIdToPostId: $.e,
-					postsById: Q.J,
+					postsById: X.J,
 					estimateItemHeight: e => (e, t, s) => {
 						if (s) switch (t) {
 							case w.g.Medium:
@@ -3501,11 +3501,11 @@
 				n = s("./src/reddit/constants/experiments.ts"),
 				r = s("./src/reddit/helpers/chooseVariant/index.ts");
 			const a = Object(o.a)(e => Object(r.c)(e, {
-					experimentName: n.gg,
+					experimentName: n.fg,
 					experimentEligibilitySelector: r.a
 				}), e => e),
-				i = Object(o.a)(a, e => e === n.Xf)
+				i = Object(o.a)(a, e => e === n.Wf)
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileComments.b0d909bebfe9d0c1e7f8.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileComments.b03e7178de72c452129e.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostDraft.93eaad6dac1fd504441b.js
-// Retrieved at 9/20/2022, 11:00:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostDraft.a2a1bd74f7bdb4d1be03.js
+// Retrieved at 9/22/2022, 10:00:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostDraft"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -326,7 +326,7 @@
 			})), n.d(t, "c", (function() {
 				return G
 			})), n.d(t, "h", (function() {
-				return K
+				return q
 			})), n.d(t, "f", (function() {
 				return Q
 			})), n.d(t, "d", (function() {
@@ -573,7 +573,7 @@
 							hk: "4Ck6Cm"
 						})
 					}))
-				}, J = Object(i.a)(c.r), z = Object(i.a)(c.n), Y = Object(i.a)(c.s), K = (e, t) => async (n, r, o) => {
+				}, J = Object(i.a)(c.r), z = Object(i.a)(c.n), Y = Object(i.a)(c.s), q = (e, t) => async (n, r, o) => {
 					let {
 						apiContext: i
 					} = o;
@@ -599,7 +599,7 @@
 						}))
 					}
 					return c
-				}, q = Object(i.a)(c.l), X = Object(i.a)(c.m), Z = Object(i.a)(c.k), Q = e => async (t, n) => {
+				}, K = Object(i.a)(c.l), X = Object(i.a)(c.m), Z = Object(i.a)(c.k), Q = e => async (t, n) => {
 					const s = n();
 					if (Object(S.b)(s) || Object(S.c)(s)) return void t(Object(a.bb)(Object(O.b)(e.permalink), e.id));
 					const o = s.platform.currentPage.locationState;
@@ -636,11 +636,11 @@
 								hk: "4Ck6Cm"
 							})
 						}))), c
-					})(r, a))), c && n.push(t(K(r, c))), void 0 !== o && n.push(t(((e, t) => async (n, r, o) => {
+					})(r, a))), c && n.push(t(q(r, c))), void 0 !== o && n.push(t(((e, t) => async (n, r, o) => {
 						let {
 							apiContext: i
 						} = o;
-						n(q());
+						n(K());
 						const a = await C(i(), e, t);
 						let c = !1;
 						if (a.ok) n(X({
@@ -2976,7 +2976,7 @@
 				const t = Object(o.f)().getState(),
 					n = Object(h.a)(t, Object(a.c)());
 				if (e.isD2xPdpSideRailRecsEnabled) {
-					const t = e.d2xPdpSideRailRecsVariant === u.Uc.GreyRereddit || e.d2xPdpSideRailRecsVariant === u.Uc.GreyRedditNoNsfw || e.d2xPdpSideRailRecsVariant === u.Uc.LargeImagePreview ? e.reredditButtons : [];
+					const t = e.d2xPdpSideRailRecsVariant === u.Tc.GreyRereddit || e.d2xPdpSideRailRecsVariant === u.Tc.GreyRedditNoNsfw || e.d2xPdpSideRailRecsVariant === u.Tc.LargeImagePreview ? e.reredditButtons : [];
 					return r.a.createElement(O, {
 						reredditContent: t,
 						countryCode: e.countryCode
@@ -3185,12 +3185,12 @@
 						rtJsonElementProps: i
 					});
 					switch (o) {
-						case h.Rf.SmIcon:
+						case h.Qf.SmIcon:
 							return r.a.createElement(p, {
 								subredditName: s,
 								rtJsonElementProps: i
 							});
-						case h.Rf.SmIconHc:
+						case h.Qf.SmIconHc:
 							return r.a.createElement(p, {
 								subredditName: s,
 								isHoverable: !0,
@@ -4822,11 +4822,11 @@
 				c = n("./node_modules/reselect/es/index.js");
 			const d = Object(c.a)(e => Object(r.c)(e, {
 					experimentEligibilitySelector: e => Object(a.h)(e) && Object(o.f)(e),
-					experimentName: s.rc
+					experimentName: s.qc
 				}), i.a),
 				l = Object(c.a)(e => Object(r.c)(e, {
 					experimentEligibilitySelector: e => !Object(a.h)(e) && Object(o.f)(e),
-					experimentName: s.qc
+					experimentName: s.pc
 				}), i.a),
 				u = Object(c.a)(d, l, (e, t) => e || t),
 				m = Object(c.a)(d, l, (e, t) => !(!e && !t))
@@ -4854,12 +4854,12 @@
 				c = e => {
 					return Object(o.c)(e, {
 						experimentEligibilitySelector: a,
-						experimentName: s.Kf
+						experimentName: s.Jf
 					}) || ""
 				},
 				d = e => {
 					const t = c(e);
-					return t === s.Rf.SmIcon || t === s.Rf.SmIconHc
+					return t === s.Qf.SmIcon || t === s.Qf.SmIconHc
 				},
 				l = (e, t) => {
 					let {
@@ -4885,4 +4885,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostDraft.93eaad6dac1fd504441b.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostDraft.a2a1bd74f7bdb4d1be03.js.map

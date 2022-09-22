@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~CountryPage~Frontpage~GovernanceReleaseNotesModal~ModListing~Mod~e3d63e32.1eb136d5ef16f7144a2f.js
-// Retrieved at 9/20/2022, 11:00:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~CountryPage~Frontpage~GovernanceReleaseNotesModal~ModListing~Mod~e3d63e32.ddc6ca742e2a3ff1783d.js
+// Retrieved at 9/22/2022, 10:00:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~CountryPage~Frontpage~GovernanceReleaseNotesModal~ModListing~Mod~e3d63e32"], {
 		"./src/lib/intersectionObserver/index.ts": function(e, t, s) {
@@ -950,8 +950,8 @@
 					}), u === R.a.ThankYouView && m.a.createElement(z, null)) : null
 				}),
 				Y = s("./src/reddit/components/PostList/LoadMore.tsx"),
-				$ = s("./src/reddit/components/PostList/SomethingWrong.tsx"),
-				J = s("./src/reddit/components/Scroller/Simple.tsx"),
+				J = s("./src/reddit/components/PostList/SomethingWrong.tsx"),
+				$ = s("./src/reddit/components/Scroller/Simple.tsx"),
 				X = s("./src/reddit/constants/adEvents.ts"),
 				Z = s("./src/reddit/constants/componentSizes.ts"),
 				ee = s("./src/reddit/contexts/OneFeed/index.ts");
@@ -1313,7 +1313,7 @@
 						className: t,
 						isLoading: !e,
 						layout: i
-					}), !!e && m.a.createElement($.a, {
+					}), !!e && m.a.createElement(J.a, {
 						apiError: e,
 						onTryAgain: n
 					}))
@@ -1334,7 +1334,7 @@
 						isLoading: !!t,
 						layout: i,
 						countOverride: ve[i]
-					}), !!e && m.a.createElement($.a, {
+					}), !!e && m.a.createElement(J.a, {
 						apiError: e,
 						onTryAgain: o
 					}))
@@ -1373,7 +1373,7 @@
 					i && (f = xe(f, i()));
 					const C = this.props.measureScrollFPS ? `post-listings-${r}` : void 0,
 						v = (a ? Object(n.e)(a) : null) || o;
-					return m.a.createElement(h.Fragment, null, m.a.createElement(J.b, {
+					return m.a.createElement(h.Fragment, null, m.a.createElement($.b, {
 						innerRef: this.updateScrollerRef,
 						className: v ? me.a.truncatedPostList : Object(g.a)(me.a.postList, this.props.className),
 						contentContainerRef: e,
@@ -1606,8 +1606,8 @@
 				} while (e);
 				return t
 			}
-			const $ = 10,
-				J = .9,
+			const J = 10,
+				$ = .9,
 				X = .9,
 				Z = 1.8,
 				ee = 5,
@@ -1771,7 +1771,7 @@
 							if (clearTimeout(this.resetCanFocusTimer), this.cancelPopulateRenderableChildrenWhenIdle(), Object(I.b)() || !this.scrollContainer) return void(this.pendingScollHandlerRead = null);
 							this.updateScrollMetrics();
 							const e = this.getAveragePixelsPerMilliSecond(),
-								t = e < J,
+								t = e < $,
 								s = e < X,
 								i = e < Z;
 							if (this.scrollContainer && !this.loadMoreFired && this.props.onLoadMore) {
@@ -1897,7 +1897,7 @@
 							return n >= s + e && n < i
 						}
 						return !1
-					}, this.childMap = de(e), this.containerRef = null, this.itemsInViewport = new S.a("id"), this.loadMoreFired = !1, this.pixelsPerMSRing = new M($), this.wrapperRefFNs = {}, this.childRefFns = {}, this.childrenToHide = {}, this.childrenToShow = {}, this.canFocusItems = !0, this.focusedChild = void 0, this.hiddenChildren = {}, this.nextVisibleChildrenIndex = 0, this.lastVisibleEl = null, this.lastVisibleElId = null, this.remeasureWhenShown = {}, this.timeoutForUpdateIdleCallback = oe;
+					}, this.childMap = de(e), this.containerRef = null, this.itemsInViewport = new S.a("id"), this.loadMoreFired = !1, this.pixelsPerMSRing = new M(J), this.wrapperRefFNs = {}, this.childRefFns = {}, this.childrenToHide = {}, this.childrenToShow = {}, this.canFocusItems = !0, this.focusedChild = void 0, this.hiddenChildren = {}, this.nextVisibleChildrenIndex = 0, this.lastVisibleEl = null, this.lastVisibleElId = null, this.remeasureWhenShown = {}, this.timeoutForUpdateIdleCallback = oe;
 					const s = this.getVisibleChildren();
 					s.length && (this.lastVisibleElId = s[s.length - 1].id), this.nextVisibleChildrenIndex = s.length, this.updateRenderableChildrenHandle = null, this.state = {
 						renderableChildren: s
@@ -2514,12 +2514,12 @@
 				},
 				P = e => v(e) && (e => Object(c.c)(e, {
 					experimentEligibilitySelector: h.Q,
-					experimentName: d.ic
-				}) === d.Kd)(e) || !1
+					experimentName: d.hc
+				}) === d.Jd)(e) || !1
 		},
 		"./src/redditGQL/operations/UpdateRecommendationPreferences.json": function(e) {
 			e.exports = JSON.parse('{"id":"fa7b23e7dbc7"}')
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~CountryPage~Frontpage~GovernanceReleaseNotesModal~ModListing~Mod~e3d63e32.1eb136d5ef16f7144a2f.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~CountryPage~Frontpage~GovernanceReleaseNotesModal~ModListing~Mod~e3d63e32.ddc6ca742e2a3ff1783d.js.map

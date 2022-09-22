@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-ProfileIdCard.38cdee20d4b51da639b7.js
-// Retrieved at 9/20/2022, 11:00:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-ProfileIdCard.3be05f089a9e69fcd79e.js
+// Retrieved at 9/22/2022, 10:00:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-ProfileIdCard"], {
 		"./node_modules/lodash/compact.js": function(e, t) {
@@ -2424,19 +2424,19 @@
 				G = r("./src/reddit/actions/profile/index.ts"),
 				W = r("./src/reddit/components/CrisisFlow/index.tsx"),
 				H = r("./src/higherOrderComponents/makeAsync.tsx"),
-				K = r("./src/lib/loadWithRetries/index.ts");
-			var q = Object(H.a)({
-					getComponent: () => Object(K.a)(() => r.e("GivePremiumModal").then(r.bind(null, "./src/reddit/components/GivePremiumModal/index.tsx"))).then(e => e.default),
+				q = r("./src/lib/loadWithRetries/index.ts");
+			var z = Object(H.a)({
+					getComponent: () => Object(q.a)(() => r.e("GivePremiumModal").then(r.bind(null, "./src/reddit/components/GivePremiumModal/index.tsx"))).then(e => e.default),
 					ErrorComponent: () => null,
 					LoadingComponent: () => null
 				}),
-				z = r("./src/reddit/constants/modals.ts"),
+				K = r("./src/reddit/constants/modals.ts"),
 				Z = r("./src/reddit/helpers/correlationIdTracker.ts"),
 				Q = r("./src/reddit/helpers/styles/mixins/loading.ts"),
 				Y = r("./src/reddit/models/Gold/Premium/index.ts"),
 				V = r("./src/reddit/selectors/experiments/chatInviteLinkSharing.ts"),
-				X = r("./src/reddit/selectors/experiments/crisisTextLine.ts"),
-				J = r("./src/reddit/selectors/premium.ts"),
+				J = r("./src/reddit/selectors/experiments/crisisTextLine.ts"),
+				X = r("./src/reddit/selectors/premium.ts"),
 				$ = r("./src/reddit/components/ProfileIdCard/footer.m.less"),
 				ee = r.n($);
 
@@ -2452,12 +2452,12 @@
 			const re = Object(i.c)({
 					areModeratedSubredditsPending: I.b,
 					coinsToSpend: P.e,
-					givePremiumModalIsOpen: J.c,
+					givePremiumModalIsOpen: X.c,
 					hasFetchedModerators: I.l,
 					isEmployee: P.N,
 					isLoggedIn: P.Q,
 					profile: I.k,
-					crisisFlowEnabled: X.b,
+					crisisFlowEnabled: J.b,
 					chatInviteLinkSharing: V.a
 				}),
 				ne = e => {
@@ -2633,7 +2633,7 @@
 					}, o.a.createElement(b.r, {
 						className: ee.a.expandButton,
 						onClick: this.moreOptionsToggled
-					}, s)), e && o.a.createElement(q, null), this.state.showCrisisModal && o.a.createElement(W.b, {
+					}, s)), e && o.a.createElement(z, null), this.state.showCrisisModal && o.a.createElement(W.b, {
 						withOverlay: !0,
 						overlayCustomStyles: W.a,
 						fromUserProfile: !0,
@@ -2649,7 +2649,7 @@
 					} = t;
 					return {
 						addToMultiClicked: () => {
-							e(Object(F.a)(() => Promise.all([r.e("CollectionCommentsPage~CommentsPage~CountryPage~FramedGild~GildModal~GovernanceReleaseNotesModal~Mem~c8b748a6"), r.e("CollectionCommentsPage~CommentsPage~CountryPage~Frontpage~GovernanceReleaseNotesModal~ModListing~Mod~e3d63e32"), r.e("CountryPage~Frontpage~ModListing~Multireddit~ProfileComments~ProfileOverview~ProfilePosts~Subreddit"), r.e("CountryPage~Multireddit~reddit-components-AdHocMultiredditSidebar"), r.e("CountryPage~Multireddit"), r.e("Multireddit")]).then(r.bind(null, "./src/reddit/actions/multireddit/index.ts")).then(e => e.myMultiredditsRequested))(!0, !0)), e(Object(R.h)(z.a.MULTIREDDIT_ADD_SUBREDDIT))
+							e(Object(F.a)(() => Promise.all([r.e("CollectionCommentsPage~CommentsPage~CountryPage~FramedGild~GildModal~GovernanceReleaseNotesModal~Mem~c8b748a6"), r.e("CollectionCommentsPage~CommentsPage~CountryPage~Frontpage~GovernanceReleaseNotesModal~ModListing~Mod~e3d63e32"), r.e("CountryPage~Frontpage~ModListing~Multireddit~ProfileComments~ProfileOverview~ProfilePosts~Subreddit"), r.e("CountryPage~Multireddit~reddit-components-AdHocMultiredditSidebar"), r.e("CountryPage~Multireddit"), r.e("Multireddit")]).then(r.bind(null, "./src/reddit/actions/multireddit/index.ts")).then(e => e.myMultiredditsRequested))(!0, !0)), e(Object(R.h)(K.a.MULTIREDDIT_ADD_SUBREDDIT))
 						},
 						onClickGivePremium: t => e(Object(D.e)({
 							correlationId: t,
@@ -2867,7 +2867,7 @@
 					prefShowSnoovatar: B,
 					snoovatarFullBodyAsset: M,
 					username: D
-				} = P, R = !!a && a.id === F, G = !(!a || !a.snoovatarFullBodyAsset), W = O && O.bannerBackgroundImage, H = !!b && b.isNSFW, K = H && c, q = !(!v || !v.userIsSubscriber), z = `/user/${D}/`, Z = j && j.url === z, Q = !v || v.acceptChats, Y = !v || v.acceptPms, V = k && Object(ue.b)(M), X = () => {
+				} = P, R = !!a && a.id === F, G = !(!a || !a.snoovatarFullBodyAsset), W = O && O.bannerBackgroundImage, H = !!b && b.isNSFW, q = H && c, z = !(!v || !v.userIsSubscriber), K = `/user/${D}/`, Z = j && j.url === K, Q = !v || v.acceptChats, Y = !v || v.acceptPms, V = k && Object(ue.b)(M), J = () => {
 					r(e => !e)
 				};
 				return o.a.createElement(o.a.Fragment, null, o.a.createElement(m.a, {
@@ -2879,7 +2879,7 @@
 					isOwnProfile: R,
 					publicDescription: v ? v.publicDescription : void 0,
 					title: b ? b.title : void 0,
-					url: Z ? null : z,
+					url: Z ? null : K,
 					userCreated: U,
 					username: D,
 					recentAwardings: w,
@@ -2907,9 +2907,9 @@
 								noun: n.FOLLOW
 							}))(F))
 						},
-						userIsSubscriber: q,
+						userIsSubscriber: z,
 						isUserBlocked: y,
-						onClickUnblockUser: X,
+						onClickUnblockUser: J,
 						enableFollowers: L
 					}), !!a && !R && !y && Q && xe({
 						userId: F
@@ -2926,11 +2926,11 @@
 					}),
 					onClickSnoovatar: p,
 					profileIcon: S,
-					bannerBackgroundImage: K ? void 0 : W
+					bannerBackgroundImage: q ? void 0 : W
 				}), t && o.a.createElement(fe.a, {
-					onClose: X,
+					onClose: J,
 					onConfirm: e => {
-						X(), N(e), _(Object(x.h)(D))
+						J(), N(e), _(Object(x.h)(D))
 					},
 					username: D,
 					withOverlay: !0
@@ -3557,7 +3557,7 @@
 			const a = e => Object(s.c)(e, {
 				experimentName: n.F,
 				experimentEligibilitySelector: () => Object(o.P)(e)
-			}) === n.Kd
+			}) === n.Jd
 		},
 		"./src/reddit/selectors/experiments/crisisTextLine.ts": function(e, t, r) {
 			"use strict";
@@ -3590,13 +3590,13 @@
 			const o = e => {
 					return !(Object(s.c)(e, {
 						experimentEligibilitySelector: s.a,
-						experimentName: n.te
-					}) === n.Kd)
+						experimentName: n.se
+					}) === n.Jd)
 				},
 				a = e => Object(s.c)(e, {
 					experimentEligibilitySelector: s.a,
-					experimentName: n.ue
-				}) === n.Kd
+					experimentName: n.te
+				}) === n.Jd
 		},
 		"./src/reddit/selectors/premium.ts": function(e, t, r) {
 			"use strict";
@@ -3625,4 +3625,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ProfileIdCard.38cdee20d4b51da639b7.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ProfileIdCard.3be05f089a9e69fcd79e.js.map

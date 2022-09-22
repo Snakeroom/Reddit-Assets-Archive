@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compo~bd4baca2.88dcbf3ac83f3eefec80.js
-// Retrieved at 9/20/2022, 11:00:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compo~bd4baca2.9cd0446abcf03b47f655.js
+// Retrieved at 9/22/2022, 10:00:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compo~bd4baca2"], {
 		"./src/higherOrderComponents/withAdClickLocation/Locations.ts": function(e, t, s) {
@@ -401,14 +401,14 @@
 			const X = e => {
 					return Object(K.c)(e, {
 						experimentEligibilitySelector: K.a,
-						experimentName: Y.vc
-					}) === Y.Kd
+						experimentName: Y.uc
+					}) === Y.Jd
 				},
 				J = e => {
 					return Object(K.c)(e, {
 						experimentEligibilitySelector: K.a,
-						experimentName: Y.wc
-					}) === Y.Kd
+						experimentName: Y.vc
+					}) === Y.Jd
 				};
 			var Z = s("./src/reddit/selectors/listings.ts"),
 				ee = s("./src/reddit/selectors/profile.ts"),
@@ -4121,4 +4121,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compo~bd4baca2.88dcbf3ac83f3eefec80.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compo~bd4baca2.9cd0446abcf03b47f655.js.map
