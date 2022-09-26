@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostCreation.7572513945e69987c036.js
-// Retrieved at 9/22/2022, 2:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostCreation.e1b65752043e5e3fa33b.js
+// Retrieved at 9/26/2022, 11:00:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostCreation", "ChatMessageInput~MembershipPaywallPage~RichTextEditor", "ContributorRequestButton"], {
 		"./node_modules/autosize/dist/autosize.js": function(e, t, n) {
@@ -27401,56 +27401,82 @@
 		},
 		"./src/reddit/helpers/trackers/talkCreation.ts": function(e, t, n) {
 			"use strict";
-			n.d(t, "c", (function() {
-				return i
-			})), n.d(t, "d", (function() {
+			n.d(t, "d", (function() {
 				return a
-			})), n.d(t, "a", (function() {
+			})), n.d(t, "e", (function() {
 				return c
-			})), n.d(t, "b", (function() {
+			})), n.d(t, "a", (function() {
 				return l
+			})), n.d(t, "b", (function() {
+				return d
+			})), n.d(t, "c", (function() {
+				return u
+			})), n.d(t, "f", (function() {
+				return m
 			}));
-			var o = n("./src/reddit/constants/tracking.ts"),
-				r = n("./src/reddit/selectors/postCreations.ts"),
-				s = n("./src/reddit/selectors/telemetry.ts");
-			const i = () => e => ({
-					...s.o(e),
+			var o = n("./src/lib/eventTools/index.ts"),
+				r = n("./src/reddit/constants/tracking.ts"),
+				s = n("./src/reddit/selectors/postCreations.ts"),
+				i = n("./src/reddit/selectors/telemetry.ts");
+			const a = () => e => ({
+					...i.o(e),
 					source: "global",
-					action: o.c.VIEW,
-					noun: o.b.SCREEN,
+					action: r.c.VIEW,
+					noun: r.b.SCREEN,
 					actionInfo: {
 						pageType: "liveaudio_create_room"
 					}
 				}),
-				a = () => e => ({
-					...s.o(e),
+				c = () => e => ({
+					...i.o(e),
 					source: "global",
-					action: o.c.VIEW,
-					noun: o.b.SCREEN,
+					action: r.c.VIEW,
+					noun: r.b.SCREEN,
 					actionInfo: {
 						pageType: "liveaudio_create_topic_picker"
 					}
 				}),
-				c = () => e => ({
-					...s.o(e),
+				l = () => e => ({
+					...i.o(e),
 					source: "liveaudio",
-					action: o.c.CLICK,
+					action: r.c.CLICK,
 					noun: "go_live",
-					subreddit: s.jb(e),
+					subreddit: i.jb(e),
 					liveAudioRoom: {
-						title: Object(r.sb)(e),
-						topicIds: Object(r.rb)(e).topics.map(e => e.id)
+						title: Object(s.sb)(e),
+						topicIds: Object(s.rb)(e).topics.map(e => e.id)
 					}
 				}),
-				l = () => e => ({
-					...s.o(e),
+				d = () => e => ({
+					...i.o(e),
 					source: "liveaudio",
-					action: o.c.CLICK,
+					action: r.c.CLICK,
 					noun: "schedule",
-					subreddit: s.jb(e),
+					subreddit: i.jb(e),
 					liveAudioRoom: {
-						title: Object(r.sb)(e),
-						topicIds: Object(r.rb)(e).topics.map(e => e.id)
+						title: Object(s.sb)(e),
+						topicIds: Object(s.rb)(e).topics.map(e => e.id)
+					}
+				}),
+				u = () => e => ({
+					...i.o(e),
+					source: "post_composer",
+					action: r.c.CLICK,
+					noun: "overflow",
+					subreddit: i.jb(e),
+					liveAudioRoom: {
+						title: Object(s.sb)(e)
+					}
+				}),
+				m = e => t => ({
+					...i.o(t),
+					source: "global",
+					action: r.c.VIEW,
+					noun: r.b.SCREEN,
+					subreddit: i.jb(t),
+					post: i.K(t, e),
+					postEvent: {
+						eventState: o.a.Future
 					}
 				})
 		},
@@ -29387,7 +29413,7 @@
 						isUpcoming: m
 					} = Object(s.e)(A.rb), h = Object(s.e)(A.hb), b = Object(s.e)(L.t), f = Object(s.e)(F.k), [g, E] = Object(o.useState)(!1), C = Object(s.d)(), x = Object(P.a)(), y = Object(o.useMemo)(() => Object(w.d)(), [i.id]), j = Object(o.useMemo)(() => Object.keys(W).reduce((e, t) => (e[W[t]] = d === t, e), {}), [d]);
 					Object(o.useEffect)(() => {
-						x(Object(I.c)())
+						x(Object(I.d)())
 					}, [x]);
 					const R = async () => {
 						x(Object(I.b)()), E(!0);
@@ -29411,12 +29437,12 @@
 							kind: M.b.Error,
 							text: w.b[t.errorState.code] || w.b[B.F.ServiceError]
 						})), void E(!1);
-						if ((null == t ? void 0 : t.okState) && t.okState.postId)
+						if ((null == t ? void 0 : t.okState) && t.okState.postId && i)
 							if (i.type === N.f.User) {
 								const e = `/user/${Object(D.e)(f).replace(/^u\//,"")}/comments/${t.okState.postId.replace(k.b,"")}`;
 								C(Object(_.a)(e, !1))
 							} else {
-								const e = `${"/"!==i.url.charAt(-1)?`${i.url}/`:i.url}comments/${t.okState.postId.replace(k.b,"")}`;
+								const e = `${"/"!==i.url.slice(-1)?`${i.url}/`:i.url}comments/${t.okState.postId.replace(k.b,"")}`;
 								C(Object(_.a)(e, !1))
 							}
 					}, U = async () => {
@@ -29554,7 +29580,7 @@
 					})
 				};
 				Object(o.useEffect)(() => {
-					d(Object(I.d)()), x()
+					d(Object(I.e)()), x()
 				}, [d]);
 				const y = Object(fe.b)({
 					isLoading: !0
@@ -34289,9 +34315,9 @@
 			var gu = () => {
 					const [e, t] = Object(o.useState)(!1), {
 						isUpcoming: n
-					} = Object(s.e)(A.rb), i = Object(s.d)(), c = () => {
+					} = Object(s.e)(A.rb), i = Object(s.d)(), c = Object(P.a)(), d = () => {
 						t(!1)
-					}, d = e => {
+					}, u = e => {
 						i(Object(a.D)({
 							isUpcoming: e
 						}))
@@ -34311,19 +34337,19 @@
 							hk: "SRR8Q"
 						}),
 						onClick: n ? () => {
-							d(!1)
+							u(!1)
 						} : () => {
-							t(!0)
+							c(Object(I.c)()), t(!0)
 						}
 					}, n && r.a.createElement(ae.b, {
 						className: bu.a.ScheduleRemoveButton
 					})), e && r.a.createElement(fu, {
-						onClickClose: c,
+						onClickClose: d,
 						className: bu.a.Modal,
 						withOverlay: !0,
-						onOverlayClick: c,
+						onOverlayClick: d,
 						onClickConfirm: () => {
-							d(!0), t(!1)
+							u(!0), t(!1)
 						},
 						overlayCustomStyles: {
 							backgroundColor: "rgba(28, 28, 28, 0.3)"
@@ -36524,4 +36550,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.7572513945e69987c036.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.e1b65752043e5e3fa33b.js.map
