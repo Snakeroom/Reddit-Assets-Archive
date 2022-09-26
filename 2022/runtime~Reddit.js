@@ -1,10 +1,10 @@
-// https://www.redditstatic.com/desktop2x/runtime~Reddit.a1f4a09089ff483585a4.js
-// Retrieved at 9/26/2022, 11:30:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/runtime~Reddit.6250ce222fc7422b4003.js
+// Retrieved at 9/26/2022, 1:20:04 PM by Reddit Dataminer v1.0.0
 ! function(e) {
 	function o(o) {
-		for (var a, n, r = o[0], s = o[1], c = o[2], l = 0, b = []; l < r.length; l++) n = r[l], Object.prototype.hasOwnProperty.call(d, n) && d[n] && b.push(d[n][0]), d[n] = 0;
+		for (var a, n, r = o[0], s = o[1], c = o[2], l = 0, P = []; l < r.length; l++) n = r[l], Object.prototype.hasOwnProperty.call(d, n) && d[n] && P.push(d[n][0]), d[n] = 0;
 		for (a in s) Object.prototype.hasOwnProperty.call(s, a) && (e[a] = s[a]);
-		for (m && m(o); b.length;) b.shift()();
+		for (m && m(o); P.length;) P.shift()();
 		return i.push.apply(i, c || []), t()
 	}
 
@@ -1014,12 +1014,12 @@
 				var m;
 				if ((c = (m = l[s]).getAttribute("data-href")) === a || c === d) return o()
 			}
-			var b = document.createElement("link");
-			b.rel = "stylesheet", b.type = "text/css", b.onload = o, b.onerror = function(o) {
+			var P = document.createElement("link");
+			P.rel = "stylesheet", P.type = "text/css", P.onload = o, P.onerror = function(o) {
 				var a = o && o.target && o.target.src || d,
 					i = new Error("Loading CSS chunk " + e + " failed.\n(" + a + ")");
-				i.code = "CSS_CHUNK_LOAD_FAILED", i.request = a, delete n[e], b.parentNode.removeChild(b), t(i)
-			}, b.href = d, document.getElementsByTagName("head")[0].appendChild(b)
+				i.code = "CSS_CHUNK_LOAD_FAILED", i.request = a, delete n[e], P.parentNode.removeChild(P), t(i)
+			}, P.href = d, document.getElementsByTagName("head")[0].appendChild(P)
 		})).then((function() {
 			n[e] = 0
 		})));
@@ -1508,16 +1508,16 @@
 						"reddit-components-Governance-GasFeesEducationalModal": "aac2b6392fd36c22f379",
 						"reddit-components-PostCreationForm-PredictionEditor-InactivityModal": "1afbd8ec8a3297bf5fc6",
 						"reddit-components-PostCreationForm-PredictionEditor-StartTournamentLimitationModal": "2f0d09f08aea580cb5d5",
-						"translations/bn_BD-json": "d00abda936067d066a2a",
-						"translations/de_DE-json": "8ae26b6e60c407e9a335",
-						"translations/es_ES-json": "0999eb26603e64711e4e",
-						"translations/es_MX-json": "ef0a9eea9274ff928f8b",
-						"translations/fr_FR-json": "ea49bfb244c474616175",
-						"translations/hi_IN-json": "bc5883d605cd0f337b42",
-						"translations/it_IT-json": "db7553b4e1f2a1168592",
-						"translations/pseudo-json": "bcd8162cb181c7149ffb",
-						"translations/pt_BR-json": "05bc2cf9d6b276dcc495",
-						"translations/pt_PT-json": "e013608858f2593c8c3b",
+						"translations/bn_BD-json": "612febd50bbf6547a832",
+						"translations/de_DE-json": "6b6bd932d918ab0a653a",
+						"translations/es_ES-json": "c56bc5e7e5482a77e452",
+						"translations/es_MX-json": "daedef9c2b3f127700b9",
+						"translations/fr_FR-json": "7317828318fd3ca4bd6f",
+						"translations/hi_IN-json": "764990c00ca7c3cd3a12",
+						"translations/it_IT-json": "028ca121d24fe5a3098d",
+						"translations/pseudo-json": "8f747daa6910018e3145",
+						"translations/pt_BR-json": "0d37c4fc00f0bc848990",
+						"translations/pt_PT-json": "13307c2d849dcfc438fd",
 						"vendors~AdminPanel": "eae9f345b12b82989d37",
 						AdminPanel: "0d9993632a1b7b85311e",
 						"vendors~Avatar~ChatPost~MarketplaceClaimModal~MarketplaceInFeedUnit~NftProfileUnit~RealtimeGQLSubscr~bfab320d": "d86f220f3e5fadf79e66",
@@ -1543,15 +1543,15 @@
 						RedesignChat: "b8ed06a060a77715acf3",
 						ModListing: "d45841c580ebb6539504",
 						"vendors~PostCreation~Subreddit": "c6c96fbaf04e2c667eb2",
-						Subreddit: "ba2b79947687567607de",
-						CommentsPage: "dbbbb6adb417182793db",
+						Subreddit: "3bb74b81dba15ecb5a24",
+						CommentsPage: "35297db7c5f976cd65b0",
 						"vendors~CryptoHarbergerTaxManageModal~HarbergerTaxManageModal~ModerationPages~PostCreation~Settings~~f8934a85": "fbf6b3871488094312c2",
 						CryptoHarbergerTaxManageModal: "6da03e73843809e83841",
 						HarbergerTaxManageModal: "1f5af6faaf06a2191136",
 						SubredditPremiumUploadModal: "daf9a94c3e4b63f28e75",
 						PostCreation: "e1b65752043e5e3fa33b",
 						"vendors~ModerationPages": "94c34813eaf24a1890ea",
-						ModerationPages: "04a45f6eed7a705840df",
+						ModerationPages: "dfc202d83313ebc5ccea",
 						"vendors~ModStatsChart~Settings~ViewsTooltip": "ca7c845d62fd39d960b6",
 						"vendors~Settings": "86b1cfc53320ea8eef91",
 						Settings: "5ff5e10bc7e2072626d4",
@@ -1786,4 +1786,4 @@
 	var m = c;
 	t()
 }([]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/runtime~Reddit.a1f4a09089ff483585a4.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/runtime~Reddit.6250ce222fc7422b4003.js.map

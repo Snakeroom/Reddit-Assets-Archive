@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModerationPages.04a45f6eed7a705840df.js
-// Retrieved at 9/26/2022, 11:30:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModerationPages.dfc202d83313ebc5ccea.js
+// Retrieved at 9/26/2022, 1:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModerationPages", "CollectionCommentsPage~CommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~RpanListingUnit~S~5809214e", "CommentsPage~Governance~Reddit~ReportFlow~Subreddit~reddit-components-BlankPost~reddit-components-Cl~5351df81", "Governance~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compo~bd4baca2", "Reddit~RpanListingUnit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPos~93b34f9d", "Governance~ModListing~Reddit~ReportFlow~Subreddit", "ModListing~PostCreation~Reddit~StandalonePostPage~Subreddit", "Governance~ModListing~Reddit", "Governance~Reddit~SubredditForkingCTA"], {
 		"./src/chat/controls/Svg/index.m.less": function(e, t, n) {
@@ -51337,16 +51337,17 @@
 					shouldShowPresenceIndicator: w,
 					user: T,
 					userName: N,
-					...P
-				} = e, R = !!i && Object(u.e)(i) === N, A = R ? i : T, M = A && A.accountIcon || a, L = T ? T.isNSFW : f, D = Object(c.a)(M) && !m, F = D ? o.a.createElement(v.a, {
-					headshot: M,
+					wrapperClassName: P,
+					...R
+				} = e, A = !!i && Object(u.e)(i) === N, M = A ? i : T, L = M && M.accountIcon || a, D = T ? T.isNSFW : f, F = Object(c.a)(L) && !m, U = F ? o.a.createElement(v.a, {
+					headshot: L,
 					className: e.className,
 					hasNftBorder: b && Object(c.d)(a)
-				}) : o.a.createElement(x.b, E({}, P, {
-					iconUrl: m && n ? "https://www.redditstatic.com/avatars/defaults/v2/avatar_default_3.png" : M,
-					isCurrentUser: R,
-					isNSFW: L
-				})), [U, B] = Object(r.useState)(!1), q = Object(r.useMemo)(() => ({
+				}) : o.a.createElement(x.b, E({}, R, {
+					iconUrl: m && n ? "https://www.redditstatic.com/avatars/defaults/v2/avatar_default_3.png" : L,
+					isCurrentUser: A,
+					isNSFW: D
+				})), [B, q] = Object(r.useState)(!1), G = Object(r.useMemo)(() => ({
 					input: {
 						channel: {
 							teamOwner: "CONTENT_AND_COMMUNITIES",
@@ -51354,37 +51355,37 @@
 							userID: t
 						}
 					}
-				}), [t]), G = Object(r.useCallback)(e => {
+				}), [t]), H = Object(r.useCallback)(e => {
 					const {
 						isOnline: t
 					} = e.subscribe.data;
-					B(t)
-				}, []), H = Object(r.useRef)(null), [W, V] = Object(r.useState)(!1), z = Object(r.useCallback)(e => {
+					q(t)
+				}, []), W = Object(r.useRef)(null), [V, z] = Object(r.useState)(!1), K = Object(r.useCallback)(e => {
 					e.forEach(e => {
 						const {
 							isIntersecting: t,
 							intersectionRatio: n
 						} = e, s = 1 !== n;
-						t ? V(!0) : s && V(!1)
+						t ? z(!0) : s && z(!1)
 					})
-				}, []), K = Object(r.useRef)({
+				}, []), Q = Object(r.useRef)({
 					rootMargin: "750px 0px 1000px 0px"
 				});
-				return Object(l.a)(H, z, K.current), I ? F : o.a.createElement("div", {
+				return Object(l.a)(W, K, Q.current), I ? U : o.a.createElement("div", {
 					className: Object(s.a)(h.a.userIconWrapper, {
-						[h.a.hasHeadShotWrapper]: D,
+						[h.a.hasHeadShotWrapper]: F,
 						[h.a.isProfileIcon]: k
-					}),
-					ref: H
+					}, P),
+					ref: W
 				}, b && o.a.createElement(_, {
 					iconUrl: a
-				}), F, w && (U || O && C) && o.a.createElement(g.default, {
+				}), U, w && (B || O && C) && o.a.createElement(g.default, {
 					showPresence: !0,
 					isHighlighted: p,
 					onceInViewport: S
-				}), (w || j) && !O && W && o.a.createElement(d.a, {
-					variables: q,
-					onData: w ? G : y,
+				}), (w || j) && !O && V && o.a.createElement(d.a, {
+					variables: G,
+					onData: w ? H : y,
 					queryKey: "isUserOnline"
 				}))
 			})
@@ -77357,4 +77358,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.04a45f6eed7a705840df.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.dfc202d83313ebc5ccea.js.map

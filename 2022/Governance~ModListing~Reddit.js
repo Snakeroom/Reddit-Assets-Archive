@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit.de2215924d70b32ebd71.js
-// Retrieved at 9/22/2022, 10:00:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit.8cca14e66b77fb9b9222.js
+// Retrieved at 9/26/2022, 1:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~ModListing~Reddit"], {
 		"./src/lib/CSSVariableProvider/withTheme.tsx": function(e, t, n) {
@@ -1370,16 +1370,17 @@
 					shouldShowPresenceIndicator: y,
 					user: k,
 					userName: P,
-					...w
-				} = e, L = !!s && Object(l.e)(s) === P, A = L ? s : k, D = A && A.accountIcon || c, U = k ? k.isNSFW : m, R = Object(d.a)(D) && !b, M = R ? i.a.createElement(_.a, {
-					headshot: D,
+					wrapperClassName: w,
+					...L
+				} = e, A = !!s && Object(l.e)(s) === P, D = A ? s : k, U = D && D.accountIcon || c, R = k ? k.isNSFW : m, M = Object(d.a)(U) && !b, B = M ? i.a.createElement(_.a, {
+					headshot: U,
 					className: e.className,
 					hasNftBorder: p && Object(d.d)(c)
-				}) : i.a.createElement(x.b, j({}, w, {
-					iconUrl: b && n ? "https://www.redditstatic.com/avatars/defaults/v2/avatar_default_3.png" : D,
-					isCurrentUser: L,
-					isNSFW: U
-				})), [B, G] = Object(o.useState)(!1), F = Object(o.useMemo)(() => ({
+				}) : i.a.createElement(x.b, j({}, L, {
+					iconUrl: b && n ? "https://www.redditstatic.com/avatars/defaults/v2/avatar_default_3.png" : U,
+					isCurrentUser: A,
+					isNSFW: R
+				})), [G, F] = Object(o.useState)(!1), H = Object(o.useMemo)(() => ({
 					input: {
 						channel: {
 							teamOwner: "CONTENT_AND_COMMUNITIES",
@@ -1387,37 +1388,37 @@
 							userID: t
 						}
 					}
-				}), [t]), H = Object(o.useCallback)(e => {
+				}), [t]), V = Object(o.useCallback)(e => {
 					const {
 						isOnline: t
 					} = e.subscribe.data;
-					G(t)
-				}, []), V = Object(o.useRef)(null), [Q, W] = Object(o.useState)(!1), K = Object(o.useCallback)(e => {
+					F(t)
+				}, []), Q = Object(o.useRef)(null), [W, K] = Object(o.useState)(!1), q = Object(o.useCallback)(e => {
 					e.forEach(e => {
 						const {
 							isIntersecting: t,
 							intersectionRatio: n
 						} = e, r = 1 !== n;
-						t ? W(!0) : r && W(!1)
+						t ? K(!0) : r && K(!1)
 					})
-				}, []), q = Object(o.useRef)({
+				}, []), Y = Object(o.useRef)({
 					rootMargin: "750px 0px 1000px 0px"
 				});
-				return Object(u.a)(V, K, q.current), N ? M : i.a.createElement("div", {
+				return Object(u.a)(Q, q, Y.current), N ? B : i.a.createElement("div", {
 					className: Object(r.a)(O.a.userIconWrapper, {
-						[O.a.hasHeadShotWrapper]: R,
+						[O.a.hasHeadShotWrapper]: M,
 						[O.a.isProfileIcon]: C
-					}),
-					ref: V
+					}, w),
+					ref: Q
 				}, p && i.a.createElement(I, {
 					iconUrl: c
-				}), M, y && (B || h && S) && i.a.createElement(g.default, {
+				}), B, y && (G || h && S) && i.a.createElement(g.default, {
 					showPresence: !0,
 					isHighlighted: f,
 					onceInViewport: T
-				}), (y || v) && !h && Q && i.a.createElement(a.a, {
-					variables: F,
-					onData: y ? H : E,
+				}), (y || v) && !h && W && i.a.createElement(a.a, {
+					variables: H,
+					onData: y ? V : E,
 					queryKey: "isUserOnline"
 				}))
 			})
@@ -3556,4 +3557,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit.de2215924d70b32ebd71.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit.8cca14e66b77fb9b9222.js.map

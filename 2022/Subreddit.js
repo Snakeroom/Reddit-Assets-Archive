@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Subreddit.ba2b79947687567607de.js
-// Retrieved at 9/22/2022, 2:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Subreddit.3bb74b81dba15ecb5a24.js
+// Retrieved at 9/26/2022, 1:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Subreddit", "Governance~ModListing~Reddit", "AchievementsActions", "reddit-components-Econ-PredictionLeaderboard-Sidebar"], {
 		"./node_modules/@reddit/i18n-tools/runtime/helpers/locale/index.js": function(e, t, n) {
@@ -13462,16 +13462,17 @@
 					shouldShowPresenceIndicator: k,
 					user: w,
 					userName: P,
-					...T
-				} = e, L = !!i && Object(u.e)(i) === P, A = L ? i : w, B = A && A.accountIcon || a, R = w ? w.isNSFW : h, M = Object(d.a)(B) && !m, D = M ? o.a.createElement(v.a, {
-					headshot: B,
+					wrapperClassName: T,
+					...L
+				} = e, A = !!i && Object(u.e)(i) === P, B = A ? i : w, R = B && B.accountIcon || a, M = w ? w.isNSFW : h, D = Object(d.a)(R) && !m, F = D ? o.a.createElement(v.a, {
+					headshot: R,
 					className: e.className,
 					hasNftBorder: b && Object(d.d)(a)
-				}) : o.a.createElement(E.b, O({}, T, {
-					iconUrl: m && n ? "https://www.redditstatic.com/avatars/defaults/v2/avatar_default_3.png" : B,
-					isCurrentUser: L,
-					isNSFW: R
-				})), [F, U] = Object(s.useState)(!1), W = Object(s.useMemo)(() => ({
+				}) : o.a.createElement(E.b, O({}, L, {
+					iconUrl: m && n ? "https://www.redditstatic.com/avatars/defaults/v2/avatar_default_3.png" : R,
+					isCurrentUser: A,
+					isNSFW: M
+				})), [U, W] = Object(s.useState)(!1), H = Object(s.useMemo)(() => ({
 					input: {
 						channel: {
 							teamOwner: "CONTENT_AND_COMMUNITIES",
@@ -13479,37 +13480,37 @@
 							userID: t
 						}
 					}
-				}), [t]), H = Object(s.useCallback)(e => {
+				}), [t]), V = Object(s.useCallback)(e => {
 					const {
 						isOnline: t
 					} = e.subscribe.data;
-					U(t)
-				}, []), V = Object(s.useRef)(null), [G, q] = Object(s.useState)(!1), K = Object(s.useCallback)(e => {
+					W(t)
+				}, []), G = Object(s.useRef)(null), [q, K] = Object(s.useState)(!1), z = Object(s.useCallback)(e => {
 					e.forEach(e => {
 						const {
 							isIntersecting: t,
 							intersectionRatio: n
 						} = e, r = 1 !== n;
-						t ? q(!0) : r && q(!1)
+						t ? K(!0) : r && K(!1)
 					})
-				}, []), z = Object(s.useRef)({
+				}, []), Q = Object(s.useRef)({
 					rootMargin: "750px 0px 1000px 0px"
 				});
-				return Object(l.a)(V, K, z.current), N ? D : o.a.createElement("div", {
+				return Object(l.a)(G, z, Q.current), N ? F : o.a.createElement("div", {
 					className: Object(r.a)(f.a.userIconWrapper, {
-						[f.a.hasHeadShotWrapper]: M,
+						[f.a.hasHeadShotWrapper]: D,
 						[f.a.isProfileIcon]: I
-					}),
-					ref: V
+					}, T),
+					ref: G
 				}, b && o.a.createElement(g, {
 					iconUrl: a
-				}), D, k && (F || _ && j) && o.a.createElement(x.default, {
+				}), F, k && (U || _ && j) && o.a.createElement(x.default, {
 					showPresence: !0,
 					isHighlighted: p,
 					onceInViewport: S
-				}), (k || C) && !_ && G && o.a.createElement(c.a, {
-					variables: W,
-					onData: k ? H : y,
+				}), (k || C) && !_ && q && o.a.createElement(c.a, {
+					variables: H,
+					onData: k ? V : y,
 					queryKey: "isUserOnline"
 				}))
 			})
@@ -22176,4 +22177,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Subreddit.ba2b79947687567607de.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Subreddit.3bb74b81dba15ecb5a24.js.map

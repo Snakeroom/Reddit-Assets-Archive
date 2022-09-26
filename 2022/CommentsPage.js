@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CommentsPage.dbbbb6adb417182793db.js
-// Retrieved at 9/26/2022, 11:30:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CommentsPage.35297db7c5f976cd65b0.js
+// Retrieved at 9/26/2022, 1:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CommentsPage", "Governance~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compo~bd4baca2", "Reddit~RpanListingUnit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPos~93b34f9d", "CollectionCommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~SearchResults", "Governance~ModListing~Reddit~ReportFlow~Subreddit", "ModListing~PostCreation~Reddit~StandalonePostPage~Subreddit", "CollectionCommentsPage~ModProgressModule~NewCommunityProgress", "Governance~ModListing~Reddit", "CollectionCommentsPage~SearchResults", "AchievementsActions"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -26860,16 +26860,17 @@
 					shouldShowPresenceIndicator: S,
 					user: L,
 					userName: T,
-					...P
-				} = e, N = !!i && Object(u.e)(i) === T, M = N ? i : L, A = M && M.accountIcon || a, D = L ? L.isNSFW : f, R = Object(d.a)(A) && !m, F = R ? o.a.createElement(_.a, {
-					headshot: A,
+					wrapperClassName: P,
+					...N
+				} = e, M = !!i && Object(u.e)(i) === T, A = M ? i : L, D = A && A.accountIcon || a, R = L ? L.isNSFW : f, F = Object(d.a)(D) && !m, B = F ? o.a.createElement(_.a, {
+					headshot: D,
 					className: e.className,
 					hasNftBorder: b && Object(d.d)(a)
-				}) : o.a.createElement(v.b, O({}, P, {
-					iconUrl: m && n ? "https://www.redditstatic.com/avatars/defaults/v2/avatar_default_3.png" : A,
-					isCurrentUser: N,
-					isNSFW: D
-				})), [B, U] = Object(r.useState)(!1), V = Object(r.useMemo)(() => ({
+				}) : o.a.createElement(v.b, O({}, N, {
+					iconUrl: m && n ? "https://www.redditstatic.com/avatars/defaults/v2/avatar_default_3.png" : D,
+					isCurrentUser: M,
+					isNSFW: R
+				})), [U, V] = Object(r.useState)(!1), W = Object(r.useMemo)(() => ({
 					input: {
 						channel: {
 							teamOwner: "CONTENT_AND_COMMUNITIES",
@@ -26877,37 +26878,37 @@
 							userID: t
 						}
 					}
-				}), [t]), W = Object(r.useCallback)(e => {
+				}), [t]), H = Object(r.useCallback)(e => {
 					const {
 						isOnline: t
 					} = e.subscribe.data;
-					U(t)
-				}, []), H = Object(r.useRef)(null), [G, q] = Object(r.useState)(!1), z = Object(r.useCallback)(e => {
+					V(t)
+				}, []), G = Object(r.useRef)(null), [q, z] = Object(r.useState)(!1), K = Object(r.useCallback)(e => {
 					e.forEach(e => {
 						const {
 							isIntersecting: t,
 							intersectionRatio: n
 						} = e, s = 1 !== n;
-						t ? q(!0) : s && q(!1)
+						t ? z(!0) : s && z(!1)
 					})
-				}, []), K = Object(r.useRef)({
+				}, []), Z = Object(r.useRef)({
 					rootMargin: "750px 0px 1000px 0px"
 				});
-				return Object(l.a)(H, z, K.current), I ? F : o.a.createElement("div", {
+				return Object(l.a)(G, K, Z.current), I ? B : o.a.createElement("div", {
 					className: Object(s.a)(C.a.userIconWrapper, {
-						[C.a.hasHeadShotWrapper]: R,
+						[C.a.hasHeadShotWrapper]: F,
 						[C.a.isProfileIcon]: k
-					}),
-					ref: H
+					}, P),
+					ref: G
 				}, b && o.a.createElement(h, {
 					iconUrl: a
-				}), F, S && (B || x && E) && o.a.createElement(g.default, {
+				}), B, S && (U || x && E) && o.a.createElement(g.default, {
 					showPresence: !0,
 					isHighlighted: p,
 					onceInViewport: w
-				}), (S || j) && !x && G && o.a.createElement(c.a, {
-					variables: V,
-					onData: S ? W : y,
+				}), (S || j) && !x && q && o.a.createElement(c.a, {
+					variables: W,
+					onData: S ? H : y,
 					queryKey: "isUserOnline"
 				}))
 			})
@@ -44313,4 +44314,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommentsPage.dbbbb6adb417182793db.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommentsPage.35297db7c5f976cd65b0.js.map
