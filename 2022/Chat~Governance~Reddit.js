@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.4df5fce91fa1eb6a4617.js
-// Retrieved at 9/26/2022, 6:30:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.2ca2e2cf0007ed4fa341.js
+// Retrieved at 9/26/2022, 7:40:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Chat~Governance~Reddit"], {
 		"./assets/fonts/IBMPlexSans/font.less": function(e, t, i) {},
@@ -3559,11 +3559,11 @@
 				apiPassThroughHeaders: Object(r.e)({}.API_PASS_THROUGH_HEADERS || ""),
 				appName: {}.APP_NAME || "desktop2x",
 				assetPath: "https://www.redditstatic.com/desktop2x",
-				buildNumber: Object(r.c)("173899"),
+				buildNumber: Object(r.c)("173909"),
 				chatHelpUrl: {}.CHAT_HELP_URL || "https://reddit.zendesk.com/hc/en-us/sections/360008805652-Chat",
 				hlsVersion: "hls 0.12.4",
 				dashVersion: "dash 4.4.0",
-				buildTimestamp: Object(r.b)("1664228987"),
+				buildTimestamp: Object(r.b)("1664233956"),
 				cookieDomain: ".reddit.com",
 				giphyApiKey: "k2kwyMA6VeyHM6ZRT96OXDGaersnx73Z",
 				mediaUrl: "https://www.redditmedia.com",
@@ -5065,6 +5065,7 @@
 					FRONTPAGE: "Frontpage",
 					GEOTAGGING: "Geotagging",
 					INTERNATIONAL_SITE_PAGE: "InternationalSitePage",
+					HAPPENING_NOW: "HappeningNow",
 					META_ARBITRUM_POINTS_MIGRATION_PAGE: "MetaArbitrumPointsMigrationPage",
 					META_MAINNET_POINTS_MIGRATION_PAGE: "MetaMainnetPointsMigrationPage",
 					META_COMMUNITY_POINTS_LEARN_MORE_PAGE: "MetaCommunityPointsLearnMorePage",
@@ -5440,6 +5441,7 @@
 					FOLLOWERS: "followers",
 					GEOTAGGING: "geotagging",
 					INTERNATIONAL_SITE_PAGE: "internationalSitePage",
+					HAPPENING_NOW: "happeningNow",
 					META_ARBITRUM_POINTS_MIGRATION_PAGE: "metaArbitrumPointsMigrationPage",
 					META_MAINNET_POINTS_MIGRATION_PAGE: "metaMainnetPointsMigrationPage",
 					META_COMMUNITY_POINTS_LEARN_MORE_PAGE: "metaCommunityPointsLearnMorePage",
@@ -6237,14 +6239,14 @@
 					}))
 				},
 				Y = (e, t, i) => {
-					console.log("%cStarting Raven %crelease %c4bfd87d3203b113588a5e473b490d08999525b7e-production" + ` %cpublic url %c${y.a.sentryClientPublicURL}`, "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
+					console.log("%cStarting Raven %crelease %c23efcf887debffe7dce64ae14af4ecd8f0153a80-production" + ` %cpublic url %c${y.a.sentryClientPublicURL}`, "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
 					let n = [];
 					n = [new RegExp(`^${y.a.assetPath}`, "i")];
 					o.e({
 						attachStacktrace: !0,
 						dsn: y.a.sentryClientPublicURL,
 						whitelistUrls: n,
-						release: "4bfd87d3203b113588a5e473b490d08999525b7e-production",
+						release: "23efcf887debffe7dce64ae14af4ecd8f0153a80-production",
 						environment: "production",
 						ignoreErrors: ["$ is not defined"],
 						integrations: [...Object(L.d)(), new d.Integrations.Breadcrumbs({
@@ -6780,7 +6782,7 @@
 							settings: r,
 							statusCode: s,
 							type: o,
-							releaseClient: "4bfd87d3203b113588a5e473b490d08999525b7e-production",
+							releaseClient: "23efcf887debffe7dce64ae14af4ecd8f0153a80-production",
 							appName: t.statsAppName,
 							error: n ? JSON.parse(Object(l.a)(n)) : void 0
 						},
@@ -7619,11 +7621,11 @@
 				return l
 			})), i.d(t, "g", (function() {
 				return u
-			})), i.d(t, "i", (function() {
-				return c
 			})), i.d(t, "h", (function() {
-				return _
+				return c
 			})), i.d(t, "j", (function() {
+				return _
+			})), i.d(t, "i", (function() {
 				return m
 			})), i.d(t, "k", (function() {
 				return p
@@ -7637,8 +7639,10 @@
 				return g
 			})), i.d(t, "p", (function() {
 				return v
-			})), i.d(t, "f", (function() {
+			})), i.d(t, "q", (function() {
 				return w
+			})), i.d(t, "f", (function() {
+				return y
 			}));
 			var n = i("./node_modules/fbt/lib/FbtPublic.js"),
 				r = i("./src/reddit/constants/page.ts");
@@ -7657,37 +7661,40 @@
 				l = () => n.fbt._("Reddit - Dive into anything", null, {
 					hk: "3basF2"
 				}),
-				u = () => n.fbt._("Moderation Queue", null, {
+				u = () => n.fbt._("Happening Now", null, {
+					hk: "2Cc3NW"
+				}),
+				c = () => n.fbt._("Moderation Queue", null, {
 					hk: "48r06Q"
 				}),
-				c = () => n.fbt._("Notifications", null, {
+				_ = () => n.fbt._("Notifications", null, {
 					hk: "OUIeh"
 				}),
-				_ = () => n.fbt._("Gas Funds", null, {
+				m = () => n.fbt._("Gas Funds", null, {
 					hk: "32lYuY"
 				}),
-				m = () => n.fbt._("Predictions - Become the World's Greatest Predictor", null, {
+				p = () => n.fbt._("Predictions - Become the World's Greatest Predictor", null, {
 					hk: "43GFss"
 				}),
-				p = () => n.fbt._("Reddit Premium - Enjoy Exclusive Features and VIP Status", null, {
+				h = () => n.fbt._("Reddit Premium - Enjoy Exclusive Features and VIP Status", null, {
 					hk: "4eqnyx"
 				}),
-				h = () => n.fbt._("Reddit Live", null, {
+				f = () => n.fbt._("Reddit Live", null, {
 					hk: "3xjxUD"
 				}),
-				f = () => n.fbt._("Reddit Settings", null, {
+				b = () => n.fbt._("Reddit Settings", null, {
 					hk: "4f8xQM"
 				}),
-				b = e => n.fbt._("Submit to {subreddit}", [n.fbt._param("subreddit", e)], {
+				g = e => n.fbt._("Submit to {subreddit}", [n.fbt._param("subreddit", e)], {
 					hk: "1sykEm"
 				}),
-				g = () => n.fbt._("Today’s Top Communities", null, {
+				v = () => n.fbt._("Today’s Top Communities", null, {
 					hk: "2dcUEX"
 				}),
-				v = () => n.fbt._("Reddit Talk - Live Audio Conversations in Your Favorite Communities", null, {
+				w = () => n.fbt._("Reddit Talk - Live Audio Conversations in Your Favorite Communities", null, {
 					hk: "4C3LAO"
 				}),
-				w = e => {
+				y = e => {
 					switch (e) {
 						case r.d.All:
 							return `r/${n.fbt._("all",null,{hk:"CpUKZ"})}`;
@@ -42093,6 +42100,8 @@
 							return "framed_gild";
 						case "framedModal":
 							return "framed_modal";
+						case "happeningNow":
+							return "happening_now";
 						case "metaArbitrumPointsMigrationPage":
 							return "meta_arbitrum_points_migration_page";
 						case "metaMainnetPointsMigrationPage":
@@ -49731,4 +49740,4 @@
 		"ignored /drone/src/node_modules/readable-stream/lib/internal/streams util": function(e, t) {}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.4df5fce91fa1eb6a4617.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.2ca2e2cf0007ed4fa341.js.map
