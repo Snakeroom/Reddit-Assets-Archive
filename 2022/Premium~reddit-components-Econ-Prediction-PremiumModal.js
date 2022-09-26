@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Premium~reddit-components-Econ-Prediction-PremiumModal.334dceb075ad730051b2.js
-// Retrieved at 9/14/2022, 4:30:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Premium~reddit-components-Econ-Prediction-PremiumModal.54d9322d3cb30807b73d.js
+// Retrieved at 9/26/2022, 1:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Premium~reddit-components-Econ-Prediction-PremiumModal"], {
 		"./node_modules/@stripe/react-stripe-js/dist/react-stripe.umd.js": function(e, t, r) {
@@ -1127,7 +1127,7 @@
 						apiContext: i
 					} = o;
 					const l = Object(b.a)(n()),
-						u = (null == l ? void 0 : l.pennies) || s.Bb,
+						u = (null == l ? void 0 : l.pennies) || s.Cb,
 						m = Object(f.c)(f.a.GoldPayment);
 					r(Object(d.stripeTokenPending)());
 					const h = await r(Object(d.validateAndCreateStripeToken)(e, t));
@@ -1574,7 +1574,7 @@
 					u = `${r.apiUrl}/api/v2/gold/paypal/initiate_premium_payment`,
 					m = Object(s.a)(u);
 				return Object(a.a)(Object(o.a)(r, [i.a]), {
-					method: n.mb.POST,
+					method: n.nb.POST,
 					endpoint: m,
 					data: l
 				}).then(c.a)
@@ -1591,7 +1591,7 @@
 					correlation_id: d
 				};
 				return Object(a.a)(Object(o.a)(t, [i.a]), {
-					method: n.mb.POST,
+					method: n.nb.POST,
 					endpoint: `${t.apiUrl}/api/v2/gold/paypal/create_coin_purchase_order`,
 					data: l
 				}).then(c.a)
@@ -1610,7 +1610,7 @@
 					thing_id: d
 				};
 				return Object(a.a)(Object(o.a)(t, [i.a]), {
-					method: n.mb.POST,
+					method: n.nb.POST,
 					endpoint: `${t.apiUrl}/api/v2/gold/paypal/create_award_purchase_order`,
 					data: u
 				}).then(c.a)
@@ -1631,7 +1631,7 @@
 					correlation_id: u
 				};
 				return Object(a.a)(Object(o.a)(t, [i.a]), {
-					method: n.mb.POST,
+					method: n.nb.POST,
 					endpoint: `${t.apiUrl}/api/v2/gold/paypal/execute_coin_order`,
 					data: m
 				}).then(c.a)
@@ -1660,7 +1660,7 @@
 					thing_id: b
 				};
 				return Object(a.a)(Object(o.a)(r, [i.a]), {
-					method: n.mb.POST,
+					method: n.nb.POST,
 					endpoint: `${r.apiUrl}/api/v2/gold/paypal/execute_coin_with_gild_order`,
 					data: h
 				}).then(c.a)
@@ -1683,7 +1683,7 @@
 					thing_id: m
 				};
 				return Object(a.a)(Object(o.a)(r, [i.a]), {
-					method: n.mb.POST,
+					method: n.nb.POST,
 					endpoint: `${r.apiUrl}/api/v2/gold/paypal/execute_award_purchase_order`,
 					data: p
 				}).then(c.a)
@@ -2439,7 +2439,7 @@
 						sendEvent: a
 					} = this.props;
 					e.length || t || r(this.correlationId), n(), document.documentElement.scrollTop = document.body.scrollTop = 0;
-					const o = l.Qb.PREMIUM;
+					const o = l.Rb.PREMIUM;
 					y.c.has(o) && (a(Object(g.n)(v.TimerType.InApp, y.c.end(o))), a(Object(g.m)())), Object(m.a)()
 				}
 				render() {
@@ -2648,4 +2648,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Premium~reddit-components-Econ-Prediction-PremiumModal.334dceb075ad730051b2.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Premium~reddit-components-Econ-Prediction-PremiumModal.54d9322d3cb30807b73d.js.map

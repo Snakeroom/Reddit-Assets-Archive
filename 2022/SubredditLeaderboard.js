@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditLeaderboard.d009dca92a26a87a79c5.js
-// Retrieved at 9/22/2022, 10:00:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditLeaderboard.fb19b4b800624c4b2918.js
+// Retrieved at 9/26/2022, 1:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditLeaderboard"], {
 		"./node_modules/lodash/times.js": function(e, t, r) {
@@ -57,7 +57,7 @@
 					e(g());
 					const b = await (e => Object(d.a)(Object(c.a)(e, [l.a]), {
 						endpoint: `${e.apiUrl}/api/available_subreddit_categories.json?use_extended_categories=true`,
-						method: o.mb.GET
+						method: o.nb.GET
 					}))(n());
 					if (b.ok) {
 						const {
@@ -589,7 +589,7 @@
 						this.windowHeight = window.innerHeight
 					}, this.handleResize = a()(() => {
 						this.updateMeasurements(), this.updateState()
-					}, d.L), this.setWrapperRef = e => this.containerEl = e || null, this.state = {
+					}, d.M), this.setWrapperRef = e => this.containerEl = e || null, this.state = {
 						isAdSticky: !0,
 						isBottomSticky: !1,
 						isFooterSticky: !0
@@ -2267,8 +2267,8 @@
 				F = r("./src/reddit/models/GoodContent/index.ts"),
 				D = r("./src/reddit/selectors/platform.ts"),
 				R = r("./src/reddit/selectors/subreddit.ts"),
-				W = r("./src/reddit/selectors/subredditLeaderboard.ts"),
-				M = r("./src/reddit/selectors/user.ts");
+				M = r("./src/reddit/selectors/subredditLeaderboard.ts"),
+				W = r("./src/reddit/selectors/user.ts");
 			const A = 25,
 				G = .5,
 				H = Object(d.c)({
@@ -2276,15 +2276,15 @@
 						let {
 							categoryId: r
 						} = t;
-						return Object(W.c)(e, r)
+						return Object(M.c)(e, r)
 					},
 					hasNextPage: (e, t) => {
 						let {
 							categoryId: r
 						} = t;
-						return Object(W.b)(e, r)
+						return Object(M.b)(e, r)
 					},
-					isMod: M.R,
+					isMod: W.R,
 					rankings: (e, t) => {
 						let {
 							categoryId: r
@@ -2302,7 +2302,7 @@
 				constructor() {
 					super(...arguments), this.fetchMoreSubreddits = e => {
 						const t = this.makeFetchVariables(),
-							r = Object(W.d)(this.props.categoryId, this.props.categoryName);
+							r = Object(M.d)(this.props.categoryId, this.props.categoryName);
 						e.isIntersecting && t.after && this.props.fetchMoreSubreddits(t, r)
 					}, this.sendLeaderboardSubredditEventClick = e => this.props.sendEvent(Object(y.f)(e, this.props.categoryName || p.e)), this.renderSubredditRankItemPlaceholders = () => i.a.createElement(i.a.Fragment, null, j()(5, e => i.a.createElement(B.a, {
 						key: e,
@@ -2713,4 +2713,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditLeaderboard.d009dca92a26a87a79c5.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditLeaderboard.fb19b4b800624c4b2918.js.map

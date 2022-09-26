@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/GivePremiumModal.6e4534251a4a44ee3107.js
-// Retrieved at 9/14/2022, 4:30:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/GivePremiumModal.7eac8980fc1065fd03c1.js
+// Retrieved at 9/26/2022, 1:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["GivePremiumModal", "givePremiumTrackers"], {
 		"./src/reddit/components/CoinBalance/index.m.less": function(e, t, n) {
@@ -79,7 +79,7 @@
 					correlation_id: i
 				};
 				return Object(f.a)(Object(C.a)(e, [v.a]), {
-					method: b.mb.POST,
+					method: b.nb.POST,
 					endpoint: `${e.apiUrl}/api/v2/gold/give_premium`,
 					data: c
 				}).then(e => e.ok ? {
@@ -98,11 +98,11 @@
 					if (o) {
 						const n = ((e, t) => {
 							switch (!0) {
-								case e && e.error && e.error.type && e.error.type === b.J.AUTHENTICATION_ERROR:
+								case e && e.error && e.error.type && e.error.type === b.K.AUTHENTICATION_ERROR:
 									return s.fbt._("There was an authentication error", null, {
 										hk: "12YR0w"
 									});
-								case e && e.error && e.error.type && e.error.type === b.J.INVALID_PREMIUM_AMOUNT:
+								case e && e.error && e.error.type && e.error.type === b.K.INVALID_PREMIUM_AMOUNT:
 									return s.fbt._("That Premium gift amount is invalid.", null, {
 										hk: "3XzSbH"
 									});
@@ -135,7 +135,7 @@
 				R = n("./src/reddit/controls/DropdownSelector/index.tsx"),
 				A = n("./src/reddit/controls/LoadingIcon/index.tsx"),
 				B = n("./src/reddit/controls/TextButton/index.tsx"),
-				J = n("./src/reddit/layout/twoCol/ExpandLeft/index.tsx"),
+				K = n("./src/reddit/layout/twoCol/ExpandLeft/index.tsx"),
 				U = n("./src/reddit/models/Gold/Premium/index.ts"),
 				F = n("./src/reddit/selectors/user.ts");
 
@@ -148,14 +148,14 @@
 					return e
 				}).apply(this, arguments)
 			}
-			const K = 10,
-				W = Object(a.c)({
+			const W = 10,
+				H = Object(a.c)({
 					coinBalance: F.e,
 					isEmployee: F.N,
 					isPending: y.b,
 					recipientName: y.d
 				}),
-				H = Object(c.b)(W, e => ({
+				V = Object(c.b)(H, e => ({
 					closeModal: () => e(Object(P.b)()),
 					onGivePremium: (t, n, s, o, i) => {
 						e(((e, t, n, s) => async (o, i, c) => {
@@ -176,7 +176,7 @@
 						})(t, n, s, o ? i : ""))
 					}
 				}));
-			class V extends i.a.PureComponent {
+			class z extends i.a.PureComponent {
 				constructor() {
 					super(...arguments), this.state = {
 						includeMessage: !1,
@@ -280,7 +280,7 @@
 					} = this.state, u = Object(U.e)(d), p = c ? [l.a.messageInputOpen] : "";
 					return i.a.createElement(L.e, {
 						className: e
-					}, i.a.createElement(L.i, null, i.a.createElement(J.a, null, i.a.createElement(L.q, null, s.fbt._("Give Premium", null, {
+					}, i.a.createElement(L.i, null, i.a.createElement(K.a, null, i.a.createElement(L.q, null, s.fbt._("Give Premium", null, {
 						hk: "4APAYj"
 					})), i.a.createElement(B.a, {
 						onClick: this.onClickClose
@@ -322,7 +322,7 @@
 						placeholder: s.fbt._("Type here...", null, {
 							hk: "1O7V4Q"
 						})
-					}))), i.a.createElement(L.g, null, i.a.createElement(J.a, {
+					}))), i.a.createElement(L.g, null, i.a.createElement(K.a, {
 						className: l.a.coinCountSection
 					}, i.a.createElement(T.a, {
 						className: l.a.coinCount,
@@ -340,14 +340,14 @@
 						onClick: this.onGivePremium
 					}, n ? i.a.createElement(A.a, {
 						className: l.a.loadingIcon,
-						sizePx: K
+						sizePx: W
 					}) : s.fbt._("Confirm", null, {
 						hk: "2nHzsu"
 					}))))))
 				}
 			}
-			const z = Object(d.a)(Object(u.c)(V));
-			t.default = H(e => i.a.createElement(z, G({}, e, {
+			const X = Object(d.a)(Object(u.c)(z));
+			t.default = V(e => i.a.createElement(X, G({}, e, {
 				withOverlay: !0,
 				onOverlayClick: e.closeModal
 			})))
@@ -582,23 +582,23 @@
 					for (const t of e) {
 						const e = t[0] || "";
 						switch (e) {
-							case s.J.NO_STRIPE_SUBSCRIPTION:
-							case s.J.USER_DOESNT_EXIST:
-							case s.J.USER_REQUIRED_ERROR:
-							case s.J.VALIDATION_ERROR:
+							case s.K.NO_STRIPE_SUBSCRIPTION:
+							case s.K.USER_DOESNT_EXIST:
+							case s.K.USER_REQUIRED_ERROR:
+							case s.K.VALIDATION_ERROR:
 								return e;
-							case s.J.NO_USER:
-							case s.J.NO_TEXT:
-							case s.J.NO_URL:
-								return s.J.VALIDATION_ERROR;
-							case s.J.CREDIT_CARD_FAILURE:
-							case s.J.CREDIT_CARD_FAILURE_GENERIC:
-								return s.J.CREDIT_CARD_FAILURE;
+							case s.K.NO_USER:
+							case s.K.NO_TEXT:
+							case s.K.NO_URL:
+								return s.K.VALIDATION_ERROR;
+							case s.K.CREDIT_CARD_FAILURE:
+							case s.K.CREDIT_CARD_FAILURE_GENERIC:
+								return s.K.CREDIT_CARD_FAILURE;
 							default:
-								if (e.startsWith("SUBMIT_VALIDATION")) return s.J.SUBMIT_VALIDATION_ERROR
+								if (e.startsWith("SUBMIT_VALIDATION")) return s.K.SUBMIT_VALIDATION_ERROR
 						}
 					}
-					return s.J.VALIDATION_ERROR
+					return s.K.VALIDATION_ERROR
 				},
 				i = e => {
 					const t = e.body;
@@ -784,4 +784,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/GivePremiumModal.6e4534251a4a44ee3107.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/GivePremiumModal.7eac8980fc1065fd03c1.js.map

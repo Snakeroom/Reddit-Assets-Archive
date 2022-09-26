@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/GoldPurchasePaymentActions.a1bef049a415023b9805.js
-// Retrieved at 9/12/2022, 11:30:07 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/GoldPurchasePaymentActions.4e673dfe61f1408f4927.js
+// Retrieved at 9/26/2022, 1:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["GoldPurchasePaymentActions"], {
 		"./node_modules/@stripe/react-stripe-js/dist/react-stripe.umd.js": function(e, t, r) {
@@ -349,11 +349,11 @@
 					R = _("p24Bank", E),
 					T = _("epsBank", E),
 					U = _("payment", E),
-					B = _("paymentRequestButton", E),
-					N = _("linkAuthentication", E),
+					N = _("paymentRequestButton", E),
+					B = _("linkAuthentication", E),
 					L = _("shippingAddress", E),
 					$ = _("afterpayClearpayMessage", E);
-				e.AfterpayClearpayMessageElement = $, e.AuBankAccountElement = C, e.CardCvcElement = w, e.CardElement = k, e.CardExpiryElement = x, e.CardNumberElement = I, e.Elements = g, e.ElementsConsumer = j, e.EpsBankElement = T, e.FpxBankElement = S, e.IbanElement = A, e.IdealBankElement = M, e.LinkAuthenticationElement = N, e.P24BankElement = R, e.PaymentElement = U, e.PaymentRequestButtonElement = B, e.ShippingAddressElement = L, e.useElements = function() {
+				e.AfterpayClearpayMessageElement = $, e.AuBankAccountElement = C, e.CardCvcElement = w, e.CardElement = k, e.CardExpiryElement = x, e.CardNumberElement = I, e.Elements = g, e.ElementsConsumer = j, e.EpsBankElement = T, e.FpxBankElement = S, e.IbanElement = A, e.IdealBankElement = M, e.LinkAuthenticationElement = B, e.P24BankElement = R, e.PaymentElement = U, e.PaymentRequestButtonElement = N, e.ShippingAddressElement = L, e.useElements = function() {
 					return O("calls useElements()").elements
 				}, e.useStripe = function() {
 					return O("calls useStripe()").stripe
@@ -485,7 +485,7 @@
 						apiContext: c
 					} = a;
 					const u = Object(b.a)(n()),
-						l = (null == u ? void 0 : u.pennies) || i.Bb,
+						l = (null == u ? void 0 : u.pennies) || i.Cb,
 						p = Object(m.c)(m.a.GoldPayment);
 					r(Object(d.stripeTokenPending)());
 					const y = await r(Object(d.validateAndCreateStripeToken)(e, t));
@@ -577,7 +577,7 @@
 					l = `${r.apiUrl}/api/v2/gold/paypal/initiate_premium_payment`,
 					p = Object(i.a)(l);
 				return Object(o.a)(Object(a.a)(r, [c.a]), {
-					method: n.mb.POST,
+					method: n.nb.POST,
 					endpoint: p,
 					data: u
 				}).then(s.a)
@@ -594,7 +594,7 @@
 					correlation_id: d
 				};
 				return Object(o.a)(Object(a.a)(t, [c.a]), {
-					method: n.mb.POST,
+					method: n.nb.POST,
 					endpoint: `${t.apiUrl}/api/v2/gold/paypal/create_coin_purchase_order`,
 					data: u
 				}).then(s.a)
@@ -613,7 +613,7 @@
 					thing_id: d
 				};
 				return Object(o.a)(Object(a.a)(t, [c.a]), {
-					method: n.mb.POST,
+					method: n.nb.POST,
 					endpoint: `${t.apiUrl}/api/v2/gold/paypal/create_award_purchase_order`,
 					data: l
 				}).then(s.a)
@@ -634,7 +634,7 @@
 					correlation_id: l
 				};
 				return Object(o.a)(Object(a.a)(t, [c.a]), {
-					method: n.mb.POST,
+					method: n.nb.POST,
 					endpoint: `${t.apiUrl}/api/v2/gold/paypal/execute_coin_order`,
 					data: p
 				}).then(s.a)
@@ -663,7 +663,7 @@
 					thing_id: b
 				};
 				return Object(o.a)(Object(a.a)(r, [c.a]), {
-					method: n.mb.POST,
+					method: n.nb.POST,
 					endpoint: `${r.apiUrl}/api/v2/gold/paypal/execute_coin_with_gild_order`,
 					data: y
 				}).then(s.a)
@@ -686,7 +686,7 @@
 					thing_id: p
 				};
 				return Object(o.a)(Object(a.a)(r, [c.a]), {
-					method: n.mb.POST,
+					method: n.nb.POST,
 					endpoint: `${r.apiUrl}/api/v2/gold/paypal/execute_award_purchase_order`,
 					data: f
 				}).then(s.a)
@@ -751,7 +751,7 @@
 						y = `${r.apiUrl}/api/v2/gold/stripe/buy_coins`,
 						h = Object(d.a)(y);
 					return Object(o.a)(Object(c.a)(r, [s.a]), {
-						method: n.mb.POST,
+						method: n.nb.POST,
 						endpoint: h,
 						data: b
 					}).then(p)
@@ -787,7 +787,7 @@
 						correlation_id: a
 					}, v = `${r.apiUrl}/api/v2/gold/stripe/buy_coins_and_gild`, _ = u ? v : Object(d.a)(v);
 					return Object(o.a)(Object(c.a)(r, [s.a]), {
-						method: n.mb.POST,
+						method: n.nb.POST,
 						endpoint: _,
 						data: P
 					}).then(p)
@@ -819,7 +819,7 @@
 						correlation_id: r
 					}, j = `${t.apiUrl}/api/v2/gold/stripe/buy_award`, P = i ? j : Object(d.a)(j);
 					return Object(o.a)(Object(c.a)(t, [s.a]), {
-						method: n.mb.POST,
+						method: n.nb.POST,
 						endpoint: P,
 						data: O
 					}).then(p)
@@ -838,7 +838,7 @@
 						l = `${t.apiUrl}/api/v2/gold/stripe/buy_premium_subscription`,
 						f = Object(d.a)(l);
 					return Object(o.a)(Object(c.a)(t, [s.a]), {
-						method: n.mb.POST,
+						method: n.nb.POST,
 						endpoint: f,
 						data: u
 					}).then(p)
@@ -863,7 +863,7 @@
 			var n = r("./node_modules/fbt/lib/FbtPublic.js"),
 				o = r("./src/lib/constants/index.ts");
 			t.a = () => ({
-				type: o.J.SERVER_ERROR,
+				type: o.K.SERVER_ERROR,
 				fields: [{
 					field: "",
 					msg: n.fbt._("Something went wrong.", null, {
@@ -968,4 +968,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/GoldPurchasePaymentActions.a1bef049a415023b9805.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/GoldPurchasePaymentActions.4e673dfe61f1408f4927.js.map

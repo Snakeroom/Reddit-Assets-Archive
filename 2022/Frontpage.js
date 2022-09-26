@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Frontpage.8897a59968ae26890e02.js
-// Retrieved at 9/22/2022, 2:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Frontpage.d02eddda60d365ce2cc6.js
+// Retrieved at 9/26/2022, 1:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Frontpage"], {
 		"./node_modules/intersection-observer/intersection-observer.js": function(e, t) {
@@ -856,7 +856,7 @@
 								logKeyType: m.a.gqlNormalizationTiming
 							}];
 						Object(m.h)({
-							name: l.s.FRONTPAGE,
+							name: l.t.FRONTPAGE,
 							isLoggedIn: a,
 							metrics: o,
 							statsdPathsForExperiments: s
@@ -983,7 +983,7 @@
 						p = c.listings.postOrder.api.pending[d],
 						b = Object(ce.b)(c),
 						h = $.C in e.queryParams && e.queryParams[$.C].toUpperCase() || "",
-						g = h in l.mc && l.mc[h],
+						g = h in l.nc && l.nc[h],
 						f = H.e();
 					if (p || u && !m && !t) return void(u && (a(Q.m({
 						title: b ? Object(G.a)(c, f) : f
@@ -1040,7 +1040,7 @@
 						m = Object(ue.a)(Y.b, d, u),
 						p = i.listings.postOrder.loadMore[m],
 						b = u[$.C] ? u[$.C].toUpperCase() : "",
-						h = b in l.mc && l.mc[b];
+						h = b in l.nc && l.nc[b];
 					if (p) {
 						const e = i.listings.postOrder.api.pending[m],
 							s = i.listings.postOrder.fetchedTokens,
@@ -1103,7 +1103,7 @@
 						c = s.platform.currentPage ? s.platform.currentPage.queryParams : {},
 						i = Object(ue.a)(Y.b, r, c),
 						o = c[$.C] ? c[$.C].toUpperCase() : "",
-						d = o in l.mc && l.mc[o],
+						d = o in l.nc && l.nc[o],
 						u = Object(ae.a)(s),
 						m = Object(ae.b)(u);
 					await t(Pe(i, {
@@ -2462,12 +2462,12 @@
 				y = f.a.wrapped(m.n, "SubmitLink", h.a),
 				x = e => {
 					switch (e) {
-						case l.Z.RISING:
+						case l.ab.RISING:
 							return s.fbt._("Create a new post and take all the glory", null, {
 								hk: "1NhXUe"
 							});
-						case l.Z.TOP:
-						case l.Z.CONTROVERSIAL:
+						case l.ab.TOP:
+						case l.ab.CONTROVERSIAL:
 							return null;
 						default:
 							return s.fbt._("Be the first to till this fertile land.", null, {
@@ -2487,12 +2487,12 @@
 						className: h.a.PrimaryText
 					}, (e => {
 						switch (e) {
-							case l.Z.RISING:
+							case l.ab.RISING:
 								return s.fbt._("Looks like nothing is rising fast enough in this subreddit", null, {
 									hk: "kJ3Te"
 								});
-							case l.Z.TOP:
-							case l.Z.CONTROVERSIAL:
+							case l.ab.TOP:
+							case l.ab.CONTROVERSIAL:
 								return s.fbt._("No posts were found using the {listing sort option} sort. Try changing the sort.", [s.fbt._param("listing sort option", r()(e))], {
 									hk: "48BeCW"
 								});
@@ -2884,14 +2884,14 @@
 				Y = a("./src/reddit/constants/headers.ts");
 			const $ = e => Object(J.a)(Object(X.a)(e, [Y.a]), {
 				endpoint: `${e.apiUrl}/api/multi/user/CommunityAdoptionBot/m/adoption_week/`,
-				method: V.mb.GET,
+				method: V.nb.GET,
 				type: "json"
 			});
 			var ee = a("./src/reddit/components/SubredditAdoptionWidget/index.m.less"),
 				te = a.n(ee);
 			const {
 				fbt: ae
-			} = a("./node_modules/fbt/lib/FbtPublic.js"), se = 3, ne = 30 * V.nb, re = "SubredditAdoption";
+			} = a("./node_modules/fbt/lib/FbtPublic.js"), se = 3, ne = 30 * V.ob, re = "SubredditAdoption";
 			class ce extends o.a.Component {
 				constructor() {
 					super(...arguments), this.state = {
@@ -7324,7 +7324,7 @@
 					sort: o
 				} = t;
 				const l = D.C in i && i[D.C].toUpperCase(),
-					d = "string" == typeof l && l in de.mc ? de.mc[l] : de.nc,
+					d = "string" == typeof l && l in de.nc ? de.nc[l] : de.oc,
 					u = Object(h.a)(pe.b, o, i),
 					m = e,
 					p = [];
@@ -7736,7 +7736,7 @@
 				u = Object(s.a)(d, e => {
 					if (!e) return !1;
 					if (!e.rpanDuDismissalTime) return !1;
-					return new Date(e.rpanDuDismissalTime).getTime() > Date.now() - 30 * n.C
+					return new Date(e.rpanDuDismissalTime).getTime() > Date.now() - 30 * n.D
 				}),
 				m = Object(s.a)(o.a, u, (e, t) => {
 					let {
@@ -7756,7 +7756,7 @@
 					} = t;
 					return a
 				}, (e, t, a, s, c, i) => {
-					return ![r.R, "r/popular"].includes(a) && (i !== n.Z.AWARDED && (!!e && (!c.isPermanentlyCanceled && (!t && (!!s && s.show_discovery_unit)))))
+					return ![r.R, "r/popular"].includes(a) && (i !== n.ab.AWARDED && (!!e && (!c.isPermanentlyCanceled && (!t && (!!s && s.show_discovery_unit)))))
 				}),
 				p = Object(s.a)((e, t) => {
 					let {
@@ -8425,4 +8425,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Frontpage.8897a59968ae26890e02.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Frontpage.d02eddda60d365ce2cc6.js.map

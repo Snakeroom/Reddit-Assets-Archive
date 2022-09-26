@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/RpanListingUnit.d9700a644136c246c1be.js
-// Retrieved at 9/22/2022, 10:00:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/RpanListingUnit.67928c285566f91f123f.js
+// Retrieved at 9/26/2022, 1:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["RpanListingUnit"], {
 		"./node_modules/lodash/_arrayEvery.js": function(e, t) {
@@ -123,8 +123,8 @@
 					playerVersion: N,
 					respectDoNotTrack: x,
 					saltLength: y,
-					saltTimeToLive: T,
-					viewerUserIdLength: D
+					saltTimeToLive: D,
+					viewerUserIdLength: T
 				} = {
 					...g,
 					...t
@@ -276,7 +276,7 @@
 						}
 					}
 				}
-				A.displayName = C(e), A.ANONYMOUS_USER_ID = s, A.DEBUG = d, A.DISABLE_COOKIES = u, A.DURATION_LIVE = 1 / 0, A.ENV_KEY = m, A.LOCAL_STORAGE_SALT_KEY = f, A.LOCAL_STORAGE_VIEWER_USER_ID_KEY = _, A.PLAYER_NAME = I, A.PLAYER_VERSION = N, A.RESPECT_DO_NOT_TRACK = x, A.SALT_LENGTH = y, A.SALT_TIME_TO_LIVE = T, A.STREAM_TYPE_LIVE = "live", A.STREAM_TYPE_ON_DEMAND = "on-demand", A.VIEWER_USER_ID_LENGTH = D;
+				A.displayName = C(e), A.ANONYMOUS_USER_ID = s, A.DEBUG = d, A.DISABLE_COOKIES = u, A.DURATION_LIVE = 1 / 0, A.ENV_KEY = m, A.LOCAL_STORAGE_SALT_KEY = f, A.LOCAL_STORAGE_VIEWER_USER_ID_KEY = _, A.PLAYER_NAME = I, A.PLAYER_VERSION = N, A.RESPECT_DO_NOT_TRACK = x, A.SALT_LENGTH = y, A.SALT_TIME_TO_LIVE = D, A.STREAM_TYPE_LIVE = "live", A.STREAM_TYPE_ON_DEMAND = "on-demand", A.VIEWER_USER_ID_LENGTH = T;
 				const L = Object(n.forwardRef)((e, t) => r.a.createElement(A, S({}, e, {
 						forwardedRef: t
 					}))),
@@ -394,7 +394,7 @@
 			})), s.d(t, "h", (function() {
 				return y
 			})), s.d(t, "i", (function() {
-				return T
+				return D
 			}));
 			var n = s("./node_modules/react/index.js"),
 				r = s.n(n),
@@ -637,7 +637,7 @@
 					url: e.subredditOrProfile.title
 				}
 			}));
-			var T = Object(i.b)(() => Object(o.c)({
+			var D = Object(i.b)(() => Object(o.c)({
 				subreddit: (e, t) => {
 					let {
 						subredditId: s
@@ -692,39 +692,39 @@
 				N = s("./src/reddit/models/PublicAccessNetwork/index.ts"),
 				x = s("./src/reddit/models/Vote/index.ts"),
 				y = s("./src/reddit/selectors/experiments/publicAccessNetwork.ts"),
-				T = s("./src/reddit/selectors/platform.ts"),
-				D = s("./src/reddit/selectors/PublicAccessNetwork/streams.ts"),
+				D = s("./src/reddit/selectors/platform.ts"),
+				T = s("./src/reddit/selectors/PublicAccessNetwork/streams.ts"),
 				A = s("./src/reddit/selectors/user.ts"),
 				L = s("./src/reddit/components/ClassicPost/Placeholder.tsx"),
 				R = s("./src/reddit/components/Flatlist/index.tsx"),
 				j = s("./src/reddit/components/Flatlist/constants.ts"),
 				M = s("./src/reddit/components/Flatlist/ResponsiveRow.tsx"),
 				P = s("./src/reddit/components/HlsVideo/index.tsx"),
-				U = s("./src/reddit/components/OverflowMenu/index.tsx"),
-				w = s("./src/reddit/components/PostBackgroundWrapper/index.tsx"),
+				w = s("./src/reddit/components/OverflowMenu/index.tsx"),
+				U = s("./src/reddit/components/PostBackgroundWrapper/index.tsx"),
 				k = s("./src/reddit/components/PostLeftRail/index.tsx"),
 				V = s("./src/reddit/components/TrackingHelper/index.tsx"),
 				F = s("./src/reddit/controls/Dropdown/Row.tsx"),
 				H = s("./src/reddit/controls/InternalLink/index.tsx"),
 				Y = s("./src/reddit/controls/Score/index.tsx"),
 				B = s("./src/reddit/icons/fonts/index.tsx"),
-				W = s("./src/reddit/helpers/styles/mixins/index.m.less"),
-				G = s.n(W),
-				K = s("./src/reddit/components/PublicAccessNetwork/ListingUnit/index.m.less"),
-				J = s.n(K);
+				K = s("./src/reddit/helpers/styles/mixins/index.m.less"),
+				W = s.n(K),
+				G = s("./src/reddit/components/PublicAccessNetwork/ListingUnit/index.m.less"),
+				q = s.n(G);
 			const {
-				fbt: q
-			} = s("./node_modules/fbt/lib/FbtPublic.js"), Z = 20, z = l.vc, $ = l.vc, X = Object(c.a)(P.a, {
+				fbt: Z
+			} = s("./node_modules/fbt/lib/FbtPublic.js"), z = 20, J = l.wc, $ = l.wc, X = Object(c.a)(P.a, {
 				playerName: "RPAN DU Video Player"
 			}), Q = Object(i.b)(() => Object(o.c)({
 				autoplay: A.b,
 				isLoggedIn: A.Q,
-				isOverlayOpen: T.i,
+				isOverlayOpen: D.i,
 				location: (e, t) => {
 					let {
 						listingName: s
 					} = t;
-					const n = Object(D.m)(e, {
+					const n = Object(T.m)(e, {
 						listingName: s
 					});
 					let r;
@@ -740,11 +740,11 @@
 					let {
 						listingName: s
 					} = t;
-					return Object(D.m)(e, {
+					return Object(T.m)(e, {
 						listingName: s
 					})
 				},
-				streamById: e => t => Object(D.l)(e, t),
+				streamById: e => t => Object(T.l)(e, t),
 				rpanDuThresholdVariant: y.h,
 				inRpanDUPreloadExperiment: y.b,
 				inRpanDuTargetingExperiment: y.c
@@ -759,12 +759,12 @@
 					pageSize: 1
 				}))
 			})), ee = () => r.a.createElement("h3", {
-				className: J.a.title
-			}, q._("Top livestream", null, {
+				className: q.a.title
+			}, Z._("Top livestream", null, {
 				hk: "4od1tZ"
 			})), te = () => r.a.createElement("p", {
-				className: J.a.description
-			}, q._("Live from the internet, this is RPAN", null, {
+				className: q.a.description
+			}, Z._("Live from the internet, this is RPAN", null, {
 				hk: "Bnxtg"
 			}));
 			class se extends n.Component {
@@ -774,9 +774,9 @@
 					}, this.handleUnsuccessfulPlayback = () => {
 						const e = Number(Object(S.P)());
 						if (e) {
-							if (Date.now() - e >= z) {
+							if (Date.now() - e >= J) {
 								Object(S.bb)();
-								const e = 30 * l.C,
+								const e = 30 * l.D,
 									t = Date.now() - e + $;
 								this.props.onHideRpanUnit(t, {
 									showToast: !1
@@ -877,7 +877,7 @@
 				}
 				endTimeTracker() {
 					if (this.timerId && a.c.has(this.timerId)) {
-						Math.round(a.c.end(this.timerId)) / 1e3 >= Z ? this.handleSuccessfulPlayback() : this.handleUnsuccessfulPlayback()
+						Math.round(a.c.end(this.timerId)) / 1e3 >= z ? this.handleSuccessfulPlayback() : this.handleUnsuccessfulPlayback()
 					}
 				}
 				componentDidMount() {
@@ -933,104 +933,104 @@
 						layout: e
 					} = this.props, t = e === O.g.Classic ? this.renderClassicContent() : e === O.g.Compact ? this.renderCompactContent() : this.renderLargeContent();
 					return r.a.createElement("div", {
-						className: Object(d.a)(J.a.container, {
-							[G.a.largeAndMediumPostStyles]: e === O.g.Large || e === O.g.Medium,
-							[G.a.classicPostStyles]: e === O.g.Classic,
-							[G.a.compactPostStyles]: e === O.g.Compact,
-							[J.a.large]: e === O.g.Large || e === O.g.Medium,
-							[J.a.classic]: e === O.g.Classic,
-							[J.a.compact]: e === O.g.Compact
+						className: Object(d.a)(q.a.container, {
+							[W.a.largeAndMediumPostStyles]: e === O.g.Large || e === O.g.Medium,
+							[W.a.classicPostStyles]: e === O.g.Classic,
+							[W.a.compactPostStyles]: e === O.g.Compact,
+							[q.a.large]: e === O.g.Large || e === O.g.Medium,
+							[q.a.classic]: e === O.g.Classic,
+							[q.a.compact]: e === O.g.Compact
 						}, this.props.className)
 					}, e !== O.g.Large && r.a.createElement(k.b, {
-						className: J.a.leftRail,
+						className: q.a.leftRail,
 						withoutComputedStyles: e === O.g.Compact
 					}, r.a.createElement(ne, {
 						isVertical: !0
 					}), e === O.g.Compact && r.a.createElement(ne, {
 						isVertical: !1
-					})), r.a.createElement(w.a, {
-						className: J.a.backgroundWrapper,
+					})), r.a.createElement(U.a, {
+						className: q.a.backgroundWrapper,
 						onClick: this.onHeaderClicked
 					}, t))
 				}
 				renderTitleAndDescription(e) {
 					return r.a.createElement("div", {
-						className: J.a.titleAndDescriptionContainer
+						className: q.a.titleAndDescriptionContainer
 					}, r.a.createElement(H.default, {
 						to: this.props.location
 					}, r.a.createElement(ee, null), e && r.a.createElement(te, null)))
 				}
 				renderLargeContent() {
 					return r.a.createElement(r.a.Fragment, null, r.a.createElement("div", {
-						className: J.a.header
+						className: q.a.header
 					}, this.renderTitleAndDescription(), r.a.createElement("div", {
-						className: J.a.flatListContainer
+						className: q.a.flatListContainer
 					}, r.a.createElement(oe, {
 						onClick: this.onHideUnitClicked
 					}))), r.a.createElement("div", {
-						className: J.a.body,
+						className: q.a.body,
 						ref: this.observableElement
 					}, r.a.createElement(H.default, {
 						to: this.props.location,
 						onClick: this.onStreamClicked,
-						className: J.a.previewLink,
+						className: q.a.previewLink,
 						tabIndex: 0
 					}, r.a.createElement("div", {
-						className: J.a.previewContainer
+						className: q.a.previewContainer
 					}, this.renderThumbnail()), this.renderInfo())))
 				}
 				renderClassicContent() {
 					return r.a.createElement("div", {
-						className: J.a.body,
+						className: q.a.body,
 						ref: this.observableElement
 					}, r.a.createElement(H.default, {
 						to: this.props.location,
 						onClick: this.onStreamClicked
 					}, r.a.createElement("div", {
-						className: J.a.thumbnailContainer
+						className: q.a.thumbnailContainer
 					}, this.renderThumbnail())), r.a.createElement("div", {
-						className: J.a.main
+						className: q.a.main
 					}, this.renderLiveStatus(), this.renderTitleAndDescription(!0), r.a.createElement("div", {
-						className: J.a.flatListContainer
+						className: q.a.flatListContainer
 					}, r.a.createElement(re, {
 						onClick: this.onHeaderClicked
 					}), r.a.createElement(R.a, {
-						className: J.a.flatlistSeparator
+						className: q.a.flatlistSeparator
 					}), r.a.createElement("div", null, r.a.createElement(ie, {
 						onClick: this.onHideUnitClicked
 					})))))
 				}
 				renderCompactContent() {
 					return r.a.createElement("div", {
-						className: J.a.body,
+						className: q.a.body,
 						ref: this.observableElement
 					}, r.a.createElement("div", {
-						className: J.a.main
+						className: q.a.main
 					}, r.a.createElement(re, {
 						onClick: this.onHeaderClicked
 					}), this.renderLiveStatus(), this.renderTitleAndDescription(!0), r.a.createElement("div", {
-						className: J.a.flatListContainer
+						className: q.a.flatListContainer
 					}, r.a.createElement(oe, {
 						onClick: this.onHideUnitClicked
 					}))))
 				}
 				renderInfo() {
 					if (this.props.stream && this.state.isReady) return r.a.createElement("div", {
-						className: J.a.infoContainer
+						className: q.a.infoContainer
 					}, this.renderExpandIcon(), this.renderLiveStatus(), this.renderWatcherCount())
 				}
 				renderExpandIcon() {
 					return r.a.createElement("div", {
-						className: J.a.bigExpando
+						className: q.a.bigExpando
 					}, r.a.createElement(B.a, {
 						name: "expand",
-						className: J.a.bigExpandoIcon
+						className: q.a.bigExpandoIcon
 					}))
 				}
 				renderLiveStatus() {
 					return this.isLive ? r.a.createElement("span", {
-						className: Object(d.a)(J.a.liveStatus, {
-							[J.a.compact]: this.props.layout === O.g.Compact
+						className: Object(d.a)(q.a.liveStatus, {
+							[q.a.compact]: this.props.layout === O.g.Compact
 						})
 					}, r.a.createElement(f.g, null)) : null
 				}
@@ -1039,18 +1039,18 @@
 					if (!this.isLive) return null;
 					const t = Math.max(1, (null === (e = this.props.stream) || void 0 === e ? void 0 : e.continuous_watchers) || 0);
 					return r.a.createElement("span", {
-						className: J.a.watchingCount
-					}, q._({
+						className: q.a.watchingCount
+					}, Z._({
 						"*": "{number} watchers",
 						_1: "1 watcher"
-					}, [q._plural(t, "number")], {
+					}, [Z._plural(t, "number")], {
 						hk: "33zJ5F"
 					}))
 				}
 				renderThumbnail() {
 					return r.a.createElement("div", {
-						className: Object(d.a)(J.a.thumbnail, {
-							[J.a.loading]: !this.state.isReady
+						className: Object(d.a)(q.a.thumbnail, {
+							[q.a.loading]: !this.state.isReady
 						})
 					}, this.renderVideo())
 				}
@@ -1165,11 +1165,11 @@
 			}
 			const ne = e => r.a.createElement(L.a, {
 					className: Object(d.a)({
-						[J.a.verticalVotes]: e.isVertical,
-						[J.a.horizontalVotes]: !e.isVertical
+						[q.a.verticalVotes]: e.isVertical,
+						[q.a.horizontalVotes]: !e.isVertical
 					})
 				}, r.a.createElement(Y.a, {
-					className: J.a.score,
+					className: q.a.score,
 					isScoreHidden: !0,
 					score: 0,
 					voteState: x.a.notVoted
@@ -1179,11 +1179,11 @@
 						onClick: t
 					} = e;
 					return r.a.createElement("button", {
-						className: J.a.expandoButton,
+						className: q.a.expandoButton,
 						onClick: t
 					}, r.a.createElement(B.a, {
 						name: "expand",
-						className: J.a.expandoIcon
+						className: q.a.expandoIcon
 					}))
 				},
 				ie = e => {
@@ -1192,7 +1192,7 @@
 						isLoggedIn: s
 					} = e;
 					return r.a.createElement(M.a, {
-						displayText: q._("Show me less of this", null, {
+						displayText: Z._("Show me less of this", null, {
 							hk: "4t8AKC"
 						}),
 						flatlistItem: j.a.Hide,
@@ -1208,17 +1208,17 @@
 					let {
 						onClick: t
 					} = e;
-					return r.a.createElement(U.b, {
-						className: J.a.overflowMenu,
-						dropdownClassName: J.a.overflowDropdown,
+					return r.a.createElement(w.b, {
+						className: q.a.overflowMenu,
+						dropdownClassName: q.a.overflowDropdown,
 						dropdownId: "rpan-du-overflow"
 					}, r.a.createElement(F.b, {
-						className: J.a.overflowItem,
-						displayText: q._("Show me less of this", null, {
+						className: q.a.overflowItem,
+						displayText: Z._("Show me less of this", null, {
 							hk: "2c4uFK"
 						}),
-						iconWrapperClassName: J.a.overflowItemIconWrapper,
-						textClassName: J.a.overflowItemText,
+						iconWrapperClassName: q.a.overflowItemIconWrapper,
+						textClassName: q.a.overflowItemText,
 						onClick: t
 					}, r.a.createElement(B.a, {
 						name: "hide"
@@ -1331,23 +1331,23 @@
 					for (const t of e) {
 						const e = t[0] || "";
 						switch (e) {
-							case n.J.NO_STRIPE_SUBSCRIPTION:
-							case n.J.USER_DOESNT_EXIST:
-							case n.J.USER_REQUIRED_ERROR:
-							case n.J.VALIDATION_ERROR:
+							case n.K.NO_STRIPE_SUBSCRIPTION:
+							case n.K.USER_DOESNT_EXIST:
+							case n.K.USER_REQUIRED_ERROR:
+							case n.K.VALIDATION_ERROR:
 								return e;
-							case n.J.NO_USER:
-							case n.J.NO_TEXT:
-							case n.J.NO_URL:
-								return n.J.VALIDATION_ERROR;
-							case n.J.CREDIT_CARD_FAILURE:
-							case n.J.CREDIT_CARD_FAILURE_GENERIC:
-								return n.J.CREDIT_CARD_FAILURE;
+							case n.K.NO_USER:
+							case n.K.NO_TEXT:
+							case n.K.NO_URL:
+								return n.K.VALIDATION_ERROR;
+							case n.K.CREDIT_CARD_FAILURE:
+							case n.K.CREDIT_CARD_FAILURE_GENERIC:
+								return n.K.CREDIT_CARD_FAILURE;
 							default:
-								if (e.startsWith("SUBMIT_VALIDATION")) return n.J.SUBMIT_VALIDATION_ERROR
+								if (e.startsWith("SUBMIT_VALIDATION")) return n.K.SUBMIT_VALIDATION_ERROR
 						}
 					}
-					return n.J.VALIDATION_ERROR
+					return n.K.VALIDATION_ERROR
 				},
 				i = e => {
 					const t = e.body;
@@ -1470,9 +1470,9 @@
 			})), s.d(t, "x", (function() {
 				return y
 			})), s.d(t, "u", (function() {
-				return T
-			})), s.d(t, "a", (function() {
 				return D
+			})), s.d(t, "a", (function() {
+				return T
 			})), s.d(t, "s", (function() {
 				return A
 			})), s.d(t, "v", (function() {
@@ -1630,14 +1630,14 @@
 					noun: "recurring_post_composer",
 					...i(e)
 				}),
-				T = () => (e, t) => ({
+				D = () => (e, t) => ({
 					source: "recurring_post_composer",
 					action: "click",
 					noun: "update",
 					...i(e),
 					scheduledPost: o(t)
 				}),
-				D = () => e => ({
+				T = () => e => ({
 					source: "recurring_post_composer",
 					action: "click",
 					noun: "cancel",
@@ -1992,4 +1992,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RpanListingUnit.d9700a644136c246c1be.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RpanListingUnit.67928c285566f91f123f.js.map

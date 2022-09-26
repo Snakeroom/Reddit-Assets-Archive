@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Multireddit.ff9f1dea4bd716bf9423.js
-// Retrieved at 9/22/2022, 10:00:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Multireddit.a9480757dd581d6fecec.js
+// Retrieved at 9/26/2022, 1:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Multireddit"], {
 		"./src/higherOrderComponents/withAdClickLocation/Locations.ts": function(e, t, n) {
@@ -39,7 +39,7 @@
 					shortMonths: i,
 					locale: c = r.DEFAULT_LOCALE
 				} = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : {};
-				const a = new Date(e * o.Vb);
+				const a = new Date(e * o.Wb);
 				return s.a ? new Intl.DateTimeFormat(c, {
 					month: i ? "short" : "long",
 					day: t ? "numeric" : void 0,
@@ -351,7 +351,7 @@
 						type: e.type
 					} : {
 						id: Object(S.n)(d(), e.name),
-						name: `${o.oc}${e.name}`,
+						name: `${o.pc}${e.name}`,
 						type: e.type
 					});
 					if (!Object(I.Q)(d())) return i(Object(a.k)({
@@ -482,7 +482,7 @@
 						multiredditPath: e,
 						multiredditsModelsState: i
 					})), (await ((e, t, n) => Object(m.a)(Object(b.a)(e, [p.a]), {
-						method: o.mb.POST,
+						method: o.nb.POST,
 						endpoint: `${e.apiUrl}/api/multi/favorite`,
 						data: {
 							make_favorite: n ? "true" : "false",
@@ -522,7 +522,7 @@
 						multiredditPath: e,
 						multiredditsModelsState: a
 					})), (await ((e, t, n) => Object(m.a)(Object(b.a)(e, [p.a]), {
-						method: o.mb.POST,
+						method: o.nb.POST,
 						endpoint: `${e.apiUrl}/api/multi/subscribe`,
 						data: {
 							action: n ? "sub" : "unsub",
@@ -1023,7 +1023,7 @@
 						s = null != n ? n : r;
 					return o.a.createElement(o.a.Fragment, null, function(e) {
 						let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : d.DEFAULT_LOCALE;
-						const n = e * l.Vb;
+						const n = e * l.Wb;
 						return new Date(n).toLocaleString(t, {
 							weekday: "short",
 							month: "short",
@@ -1051,7 +1051,7 @@
 				let n = arguments.length > 2 && void 0 !== arguments[2] && arguments[2],
 					r = arguments.length > 3 && void 0 !== arguments[3] ? arguments[3] : d.DEFAULT_LOCALE;
 				const o = Object(b.e)(e, t),
-					s = new Date(e * l.Vb);
+					s = new Date(e * l.Wb);
 				let i;
 				if (o === b.a.Live || n) return m.fbt._("Now", null, {
 					hk: "Prpcg"
@@ -1427,7 +1427,7 @@
 						subscribe: i
 					} = t;
 					return Object(s.a)(Object(c.a)(e, [a.a]), {
-						method: o.mb.POST,
+						method: o.nb.POST,
 						endpoint: Object(d.a)(`${e.apiUrl}/api/subscribe`),
 						data: {
 							action: i ? "sub" : "unsub",
@@ -1438,7 +1438,7 @@
 					})
 				},
 				u = (e, t, n) => Object(s.a)(Object(c.a)(e, [a.a]), {
-					method: o.mb.POST,
+					method: o.nb.POST,
 					endpoint: `${e.apiUrl}/api/favorite`,
 					data: {
 						make_favorite: n ? "true" : "false",
@@ -1764,4 +1764,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Multireddit.ff9f1dea4bd716bf9423.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Multireddit.a9480757dd581d6fecec.js.map

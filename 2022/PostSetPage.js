@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostSetPage.91f0a12e505c294c14ae.js
-// Retrieved at 9/22/2022, 10:00:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostSetPage.eee1cc63d6ec5d2c30ba.js
+// Retrieved at 9/26/2022, 1:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostSetPage"], {
 		"./node_modules/intersection-observer/intersection-observer.js": function(e, t) {
@@ -768,11 +768,11 @@
 				let {
 					className: t,
 					profileName: n,
-					timeSort: r = o.mc.ALL
+					timeSort: r = o.nc.ALL
 				} = e;
 				return i.a.createElement(m, {
 					className: t
-				}, r === o.mc.ALL ? s.fbt._("hmm... {profileName} hasn't commented on anything", [s.fbt._param("profileName", `u/${n}`)], {
+				}, r === o.nc.ALL ? s.fbt._("hmm... {profileName} hasn't commented on anything", [s.fbt._param("profileName", `u/${n}`)], {
 					hk: "1MHn3t"
 				}) : s.fbt._("hmm... {profileName} hasn't commented recently", [s.fbt._param("profileName", `u/${n}`)], {
 					hk: "qN3uL"
@@ -782,11 +782,11 @@
 				let {
 					className: t,
 					profileName: n,
-					timeSort: r = o.mc.ALL
+					timeSort: r = o.nc.ALL
 				} = e;
 				return i.a.createElement(m, {
 					className: t
-				}, r === o.mc.ALL ? s.fbt._("hmm... {profileName} hasn't posted anything", [s.fbt._param("profileName", `u/${n}`)], {
+				}, r === o.nc.ALL ? s.fbt._("hmm... {profileName} hasn't posted anything", [s.fbt._param("profileName", `u/${n}`)], {
 					hk: "28vBEd"
 				}) : s.fbt._("hmm... {profileName} hasn't posted recently", [s.fbt._param("profileName", `u/${n}`)], {
 					hk: "38GhqN"
@@ -950,7 +950,7 @@
 				})())))
 			};
 			b.defaultProps = {
-				minimizedLength: a.Wb
+				minimizedLength: a.Xb
 			}, t.a = b
 		},
 		"./src/reddit/components/SidebarFooter/index.m.less": function(e, t, n) {
@@ -1505,7 +1505,7 @@
 						this.windowHeight = window.innerHeight
 					}, this.handleResize = i()(() => {
 						this.updateMeasurements(), this.updateState()
-					}, a.L), this.setWrapperRef = e => this.containerEl = e || null, this.state = {
+					}, a.M), this.setWrapperRef = e => this.containerEl = e || null, this.state = {
 						isAdSticky: !0,
 						isBottomSticky: !1,
 						isFooterSticky: !0
@@ -2598,7 +2598,7 @@
 						postClassName: y.a.post,
 						noPostsComponent: () => r.a.createElement(d.c, {
 							profileName: t,
-							timeSort: o.mc.ALL
+							timeSort: o.nc.ALL
 						}),
 						shouldShowInsightsButton: C
 					}), j && r.a.createElement(v, {
@@ -2789,4 +2789,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostSetPage.91f0a12e505c294c14ae.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostSetPage.eee1cc63d6ec5d2c30ba.js.map

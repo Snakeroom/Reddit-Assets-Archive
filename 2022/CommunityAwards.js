@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CommunityAwards.db114e6cf41dcaa40551.js
-// Retrieved at 9/13/2022, 3:30:03 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CommunityAwards.f0c9a0bd7d8c286a7e53.js
+// Retrieved at 9/26/2022, 1:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CommunityAwards"], {
 		"./src/reddit/actions/gold/communityAwards/communityAwards.ts": function(e, t, r) {
@@ -27,15 +27,15 @@
 			})), r.d(t, "awardSheetInfoPending", (function() {
 				return U
 			})), r.d(t, "awardSheetInfoFailed", (function() {
-				return J
-			})), r.d(t, "awardSheetInfoLoaded", (function() {
 				return Q
-			})), r.d(t, "removeCommunityAward", (function() {
+			})), r.d(t, "awardSheetInfoLoaded", (function() {
 				return F
+			})), r.d(t, "removeCommunityAward", (function() {
+				return q
 			})), r.d(t, "removeCommunityAwardSuccessful", (function() {
 				return M
 			})), r.d(t, "disableAwardinCommunity", (function() {
-				return W
+				return H
 			})), r.d(t, "enableAwardinCommunity", (function() {
 				return X
 			}));
@@ -276,13 +276,13 @@
 								if (r.ok) {
 									const a = r.body,
 										d = k(a.data.profileByName.awardingTray.sortedUsableTags);
-									await n(Q({
+									await n(F({
 										awards: a.data.profileByName.sortedUsableAwards,
 										tags: d,
 										subredditOrProfileId: e,
 										thingId: t
 									}))
-								} else await n(J({
+								} else await n(Q({
 									subredditOrProfileId: e,
 									thingId: t
 								}))
@@ -291,33 +291,33 @@
 								if (r.ok) {
 									const a = r.body,
 										d = k(a.data.subredditInfoById.awardingTray.sortedUsableTags);
-									await n(Q({
+									await n(F({
 										awards: a.data.subredditInfoById.sortedUsableAwards,
 										tags: d,
 										subredditOrProfileId: e,
 										thingId: t
 									}))
-								} else await n(J({
+								} else await n(Q({
 									subredditOrProfileId: e,
 									thingId: t
 								}))
 							}
 						} catch (b) {
-							d.c.captureException(b), await n(J({
+							d.c.captureException(b), await n(Q({
 								subredditOrProfileId: e,
 								thingId: t
 							}))
 						}
 					}
-				}, U = Object(n.a)(O.c), J = Object(n.a)(O.a), Q = Object(n.a)(O.b), F = (e, t) => async (r, n, i) => {
+				}, U = Object(n.a)(O.c), Q = Object(n.a)(O.a), F = Object(n.a)(O.b), q = (e, t) => async (r, n, i) => {
 					let {
 						gqlContext: s
 					} = i;
-					r(q());
+					r(K());
 					try {
 						if ((await Object(m.m)(s(), t)).error) {
 							const e = A();
-							await r(H(e))
+							await r(B(e))
 						} else {
 							await r(M({
 								awardId: t,
@@ -337,26 +337,26 @@
 					} catch (u) {
 						d.c.captureException(u);
 						const e = A();
-						await r(H(e))
+						await r(B(e))
 					}
-				}, q = Object(n.a)(O.gb), M = Object(n.a)(O.hb), B = Object(n.a)(O.fb), H = e => async (t, r) => {
-					await t(B(e)), t(Object(o.f)({
+				}, K = Object(n.a)(O.gb), M = Object(n.a)(O.hb), J = Object(n.a)(O.fb), B = e => async (t, r) => {
+					await t(J(e)), t(Object(o.f)({
 						kind: c.b.Error,
 						duration: o.a,
 						text: e
 					}))
-				}, W = (e, t) => async (r, n, i) => {
+				}, H = (e, t) => async (r, n, i) => {
 					let {
 						gqlContext: s
 					} = i;
-					r(V());
+					r(W());
 					let u = a.fbt._("There was a problem disabling the {award name} Award. Please try again.", [a.fbt._param("award name", t.name)], {
 							hk: "3KNLaD"
 						}),
-						b = K(u),
+						b = z(u),
 						l = c.b.Error;
 					try {
-						(await Object(m.h)(s(), t.id, e.id)).ok && (b = z({
+						(await Object(m.h)(s(), t.id, e.id)).ok && (b = V({
 							awardId: t.id,
 							subredditId: e.id
 						}), u = a.fbt._("{award name} Award successfully disabled in {subreddit or profile prefixed name}!", [a.fbt._param("award name", t.name), a.fbt._param("subreddit or profile prefixed name", e.displayText)], {
@@ -371,7 +371,7 @@
 							kind: l
 						}))
 					}
-				}, V = Object(n.a)(O.k), z = Object(n.a)(O.l), K = Object(n.a)(O.j), X = (e, t) => async (r, n, i) => {
+				}, W = Object(n.a)(O.k), V = Object(n.a)(O.l), z = Object(n.a)(O.j), X = (e, t) => async (r, n, i) => {
 					let {
 						gqlContext: s
 					} = i;
@@ -486,7 +486,7 @@
 						mimetype: d
 					};
 					return Object(n.a)(Object(i.a)(e, [y.a]), {
-						method: a.mb.POST,
+						method: a.nb.POST,
 						endpoint: `${e.apiUrl}/api/v1/community_awards/award_asset_upload_s3`,
 						data: s
 					})
@@ -610,7 +610,7 @@
 						raw_json: 1
 					};
 					return Object(n.a)(Object(i.a)(e, [y.a]), {
-						method: a.mb.POST,
+						method: a.nb.POST,
 						endpoint: `${e.apiUrl}/api/report_award`,
 						data: d
 					}).then(e => e.ok ? {
@@ -641,23 +641,23 @@
 					for (const t of e) {
 						const e = t[0] || "";
 						switch (e) {
-							case a.J.NO_STRIPE_SUBSCRIPTION:
-							case a.J.USER_DOESNT_EXIST:
-							case a.J.USER_REQUIRED_ERROR:
-							case a.J.VALIDATION_ERROR:
+							case a.K.NO_STRIPE_SUBSCRIPTION:
+							case a.K.USER_DOESNT_EXIST:
+							case a.K.USER_REQUIRED_ERROR:
+							case a.K.VALIDATION_ERROR:
 								return e;
-							case a.J.NO_USER:
-							case a.J.NO_TEXT:
-							case a.J.NO_URL:
-								return a.J.VALIDATION_ERROR;
-							case a.J.CREDIT_CARD_FAILURE:
-							case a.J.CREDIT_CARD_FAILURE_GENERIC:
-								return a.J.CREDIT_CARD_FAILURE;
+							case a.K.NO_USER:
+							case a.K.NO_TEXT:
+							case a.K.NO_URL:
+								return a.K.VALIDATION_ERROR;
+							case a.K.CREDIT_CARD_FAILURE:
+							case a.K.CREDIT_CARD_FAILURE_GENERIC:
+								return a.K.CREDIT_CARD_FAILURE;
 							default:
-								if (e.startsWith("SUBMIT_VALIDATION")) return a.J.SUBMIT_VALIDATION_ERROR
+								if (e.startsWith("SUBMIT_VALIDATION")) return a.K.SUBMIT_VALIDATION_ERROR
 						}
 					}
-					return a.J.VALIDATION_ERROR
+					return a.K.VALIDATION_ERROR
 				},
 				d = e => {
 					const t = e.body;
@@ -713,4 +713,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommunityAwards.db114e6cf41dcaa40551.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommunityAwards.f0c9a0bd7d8c286a7e53.js.map

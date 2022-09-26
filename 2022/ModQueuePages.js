@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModQueuePages.eb6f6d11c19a984ad17f.js
-// Retrieved at 9/22/2022, 2:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModQueuePages.b9e929199f6e5bb7d8d2.js
+// Retrieved at 9/26/2022, 1:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModQueuePages"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -809,7 +809,7 @@
 						commentId: e
 					});
 					if (!l) return;
-					const m = n === s.ic.Snoozed,
+					const m = n === s.jc.Snoozed,
 						f = {
 							itemId: e,
 							reportText: t,
@@ -841,8 +841,8 @@
 					o(Object(x.j)({
 						[e]: {
 							distinguishType: t,
-							isAdmin: t === s.H.ADMIN,
-							isMod: t === s.H.MODERATOR,
+							isAdmin: t === s.I.ADMIN,
+							isMod: t === s.I.MODERATOR,
 							isStickied: !!n
 						}
 					})), n && b && b !== e && o(Object(x.j)({
@@ -857,7 +857,7 @@
 						id: e,
 						postId: p,
 						commentsPageKey: Object(i.a)(p, null, {
-							sort: s.u.CONFIDENCE,
+							sort: s.v.CONFIDENCE,
 							...l.platform.currentPage.queryParams
 						})
 					})) : (o(Object(x.j)({
@@ -912,11 +912,11 @@
 				k = n("./src/reddit/helpers/graphql/normalizePostFromGql/index.ts"),
 				C = n("./src/reddit/helpers/graphql/normalizeSubredditFromGql/index.ts");
 			const E = {
-					[s.ub.Edited]: O.y.Edited,
-					[s.ub.Modqueue]: O.y.Mod,
-					[s.ub.Reports]: O.y.Reported,
-					[s.ub.Spam]: O.y.Removed,
-					[s.ub.Unmoderated]: O.y.Unmoderated
+					[s.vb.Edited]: O.y.Edited,
+					[s.vb.Modqueue]: O.y.Mod,
+					[s.vb.Reports]: O.y.Reported,
+					[s.vb.Spam]: O.y.Removed,
+					[s.vb.Unmoderated]: O.y.Unmoderated
 				},
 				j = {
 					comments: O.w.Comment,
@@ -1206,19 +1206,19 @@
 					var p;
 					let b, h, f;
 					switch (t) {
-						case s.ub.Edited:
+						case s.vb.Edited:
 							b = H, h = G, f = Q;
 							break;
-						case s.ub.Modqueue:
+						case s.vb.Modqueue:
 							b = W, h = q, f = V;
 							break;
-						case s.ub.Reports:
+						case s.vb.Reports:
 							b = z, h = K, f = J;
 							break;
-						case s.ub.Spam:
+						case s.vb.Spam:
 							b = X, h = Y, f = Z;
 							break;
-						case s.ub.Unmoderated:
+						case s.vb.Unmoderated:
 							b = $, h = te, f = ee;
 							break;
 						default:
@@ -1719,7 +1719,7 @@
 				U = n("./src/reddit/models/RichTextJson/addRTJParam.ts");
 			const W = (e, t) => Object(L.a)(Object(D.a)(e, [B.a]), {
 					endpoint: `${e.apiUrl}/api/v1/modactions/removal_reasons/`,
-					method: j.mb.POST,
+					method: j.nb.POST,
 					type: "json",
 					data: {
 						item_ids: t.itemIds,
@@ -1729,7 +1729,7 @@
 				}),
 				V = (e, t, n) => Object(L.a)(Object(D.a)(e, [B.a]), {
 					endpoint: Object(U.a)(`${e.apiUrl}/api/v1/modactions/removal_${n}_message/`),
-					method: j.mb.POST,
+					method: j.nb.POST,
 					type: "json",
 					data: t
 				});
@@ -1758,7 +1758,7 @@
 					t(Y());
 					const i = await ((e, t) => Object(L.a)(Object(D.a)(e, [B.a]), {
 						endpoint: `${e.apiUrl}/api/v1/${t}/removal_reasons.json`,
-						method: j.mb.GET
+						method: j.nb.GET
 					}))(s(), r);
 					i.ok ? t($({
 						subredditId: e,
@@ -1772,7 +1772,7 @@
 					n(ne());
 					const d = await ((e, t, n) => Object(L.a)(Object(D.a)(e, [B.a]), {
 						endpoint: `${e.apiUrl}/api/v1/${t}/removal_reasons`,
-						method: j.mb.POST,
+						method: j.nb.POST,
 						data: n
 					}))(i(), a, t);
 					if (d.ok) {
@@ -1800,7 +1800,7 @@
 					n(ie());
 					const d = await ((e, t, n) => Object(L.a)(Object(D.a)(e, [B.a]), {
 						endpoint: `${e.apiUrl}/api/v1/${t}/removal_reasons/${n.id}`,
-						method: j.mb.PUT,
+						method: j.nb.PUT,
 						data: {
 							message: n.message,
 							title: n.title
@@ -1823,7 +1823,7 @@
 					n(le());
 					const d = await ((e, t, n) => Object(L.a)(Object(D.a)(e, [B.a]), {
 						endpoint: `${e.apiUrl}/api/v1/${t}/removal_reasons/${n}`,
-						method: j.mb.DELETE
+						method: j.nb.DELETE
 					}))(i(), a, t);
 					d.ok ? (n(me({
 						subredditId: e,
@@ -1890,7 +1890,7 @@
 											o = l.platform.currentPage && l.platform.currentPage.routeMatch;
 										let s = n && o && Object(Q.a)(o, l, l.posts.models[e.postId]);
 										if (s || (s = Object(I.a)(e.postId, null, {
-												sort: j.v,
+												sort: j.w,
 												hasSortParam: !0
 											})), p === J.e.Post) {
 											const n = Object(w.a)(z.c.replyToPost, u);
@@ -2618,7 +2618,7 @@
 				} = e;
 				const u = Object(j.f)(o),
 					p = r.a.createElement(w.b, {
-						ignore: u || !!o.distinguishType && o.distinguishType !== I.H.NONE,
+						ignore: u || !!o.distinguishType && o.distinguishType !== I.I.NONE,
 						subredditId: o.subredditId,
 						userId: o.authorId
 					}, r.a.createElement(b, {
@@ -2927,8 +2927,8 @@
 					const t = Object(i.d)(),
 						n = function(e) {
 							if (e.isAdmin) return he.Admin;
-							const t = e.isMod || e.distinguishType === I.H.MODERATOR;
-							return t && e.author && Object(ve.a)(e.author) ? he.ModTeam : t ? he.Mod : e.isOp ? he.Op : e.distinguishType === I.H.ALUMNI_ADMIN ? he.AlumniAdmin : e.authorIsContractor ? he.Contractor : null
+							const t = e.isMod || e.distinguishType === I.I.MODERATOR;
+							return t && e.author && Object(ve.a)(e.author) ? he.ModTeam : t ? he.Mod : e.isOp ? he.Op : e.distinguishType === I.I.ALUMNI_ADMIN ? he.AlumniAdmin : e.authorIsContractor ? he.Contractor : null
 						}(e.comment);
 					if (!n) return null;
 					if (n === he.Contractor && !e.renderContractorBadge) return null;
@@ -3674,7 +3674,7 @@
 			}, s.a.createElement(b, {
 				author: e.comment.postAuthor,
 				isUnstyled: !0,
-				isAuthorDeleted: e.comment.postAuthor === m.F
+				isAuthorDeleted: e.comment.postAuthor === m.G
 			}, `u/${e.comment.postAuthor}`)))
 		},
 		"./src/reddit/components/ContentTooltip/index.m.less": function(e, t, n) {
@@ -5375,4 +5375,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModQueuePages.eb6f6d11c19a984ad17f.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModQueuePages.b9e929199f6e5bb7d8d2.js.map

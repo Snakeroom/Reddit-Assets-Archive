@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PennyPurchaseModal.cb4b2952358ea4b9f249.js
-// Retrieved at 9/22/2022, 10:00:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PennyPurchaseModal.c4a6d9d58112760bc200.js
+// Retrieved at 9/26/2022, 1:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PennyPurchaseModal"], {
 		"./node_modules/@stripe/stripe-js/dist/stripe.esm.js": function(e, t, a) {
@@ -581,8 +581,8 @@
 				R = a("./src/reddit/components/CoinPurchaseModal/index.m.less"),
 				D = a.n(R);
 			const {
-				fbt: F
-			} = a("./node_modules/fbt/lib/FbtPublic.js"), L = e => {
+				fbt: L
+			} = a("./node_modules/fbt/lib/FbtPublic.js"), F = e => {
 				let {
 					award: t,
 					coinBalance: a,
@@ -610,7 +610,7 @@
 					}, o.a.createElement(f.a, {
 						className: D.a.balance,
 						coinBalance: a
-					}), c === d.Kb && ((null == t ? void 0 : t.pennyPrice) && r ? o.a.createElement(T, {
+					}), c === d.Lb && ((null == t ? void 0 : t.pennyPrice) && r ? o.a.createElement(T, {
 						awardId: t.id,
 						className: Object(h.a)(D.a.purchaseButton, D.a.paypalCheckoutButton),
 						pennies: t.pennyPrice,
@@ -618,20 +618,20 @@
 					}) : n && o.a.createElement(T, {
 						className: Object(h.a)(D.a.purchaseButton, D.a.paypalCheckoutButton),
 						coinPackage: n
-					})), c === d.Jb && o.a.createElement(I.l, {
+					})), c === d.Kb && o.a.createElement(I.l, {
 						className: D.a.purchaseButton,
 						"data-redditstyle": !0,
 						disabled: i || s,
 						onClick: e
-					}, F._("Complete purchase", null, {
+					}, L._("Complete purchase", null, {
 						hk: "3d1QJR"
 					})))
 				}
 				const N = null == k ? void 0 : k.pricePackages.find(e => e.id === (null == n ? void 0 : n.mobileId));
 				if (!k || !N || !n) return null;
 				if (!(null != c)) return null;
-				const _ = c === d.Kb,
-					S = c === d.Jb,
+				const _ = c === d.Lb,
+					S = c === d.Kb,
 					M = {
 						className: D.a.purchaseButton,
 						productOffer: k,
@@ -695,7 +695,7 @@
 					"data-redditstyle": !0
 				})))
 			};
-			var J = e => {
+			var W = e => {
 					const t = Object(Q.a)(),
 						a = [];
 					if (e.purchasePackage && a.push(n.fbt._("{coinCount} will automatically be spent on this {awardName} Award.", [n.fbt._param("coinCount", Object(l.b)(e.award.coinPrice, {
@@ -744,7 +744,7 @@
 						"data-redditstyle": !0
 					})))
 				},
-				W = a("./src/reddit/components/PaymentMethodSelector/index.tsx"),
+				J = a("./src/reddit/components/PaymentMethodSelector/index.tsx"),
 				U = a("./src/reddit/components/StripePaymentForm/index.tsx"),
 				K = a("./src/reddit/helpers/createEmojiText/index.tsx");
 			const Y = e => {
@@ -753,7 +753,7 @@
 					s = e.purchasePackage ? e.purchasePackage.pennies : e.selectedAward.pennyPrice || 0;
 				return o.a.createElement(r.Elements, {
 					stripe: a
-				}, o.a.createElement(o.a.Fragment, null, e.gildThingId ? o.a.createElement(J, {
+				}, o.a.createElement(o.a.Fragment, null, e.gildThingId ? o.a.createElement(W, {
 					coinBalance: e.coinBalance,
 					award: e.selectedAward,
 					purchasePackage: e.purchasePackage,
@@ -766,14 +766,14 @@
 					onCloseClick: e.onCloseModal
 				}), o.a.createElement("div", {
 					className: D.a.purchaseBody
-				}, o.a.createElement(W.a, {
+				}, o.a.createElement(J.a, {
 					className: D.a.selectPayment,
 					gildThingId: e.gildThingId,
 					nightmode: e.nightmode,
 					selectedPayment: e.selectedPayment,
 					onPaymentSelected: e.onPaymentSelected,
 					paymentMethods: e.purchaseMethods
-				}), e.selectedPayment === d.Jb && o.a.createElement(r.ElementsConsumer, null, t => {
+				}), e.selectedPayment === d.Kb && o.a.createElement(r.ElementsConsumer, null, t => {
 					let {
 						stripe: a
 					} = t;
@@ -789,9 +789,9 @@
 					locale: t
 				}))], {
 					hk: "3dx6W8"
-				}))), e.selectedPayment === d.Kb && e.paypalErrorMessage && o.a.createElement("div", {
+				}))), e.selectedPayment === d.Lb && e.paypalErrorMessage && o.a.createElement("div", {
 					className: D.a.errorMessage
-				}, e.paypalErrorMessage), e.selectedPayment === d.Jb && e.stripeErrorMessage && o.a.createElement("div", {
+				}, e.paypalErrorMessage), e.selectedPayment === d.Kb && e.stripeErrorMessage && o.a.createElement("div", {
 					className: D.a.errorMessage
 				}, e.stripeErrorMessage), o.a.createElement("div", {
 					className: D.a.agreementLink
@@ -822,7 +822,7 @@
 						stripe: a,
 						elements: r
 					} = t;
-					return o.a.createElement(L, {
+					return o.a.createElement(F, {
 						award: e.selectedAward,
 						coinBalance: e.coinBalance,
 						gildThingId: e.gildThingId,
@@ -1048,8 +1048,8 @@
 				l = a("./src/reddit/components/PaymentMethodSelector/index.m.less"),
 				m = a.n(l);
 			const u = {
-					[c.Jb]: ["visa.png", "mastercard.png", "amex.png", "discover.jpg"],
-					[c.Kb]: ["paypal.png"]
+					[c.Kb]: ["visa.png", "mastercard.png", "amex.png", "discover.jpg"],
+					[c.Lb]: ["paypal.png"]
 				},
 				p = e => s.a.createElement("label", {
 					className: Object(o.a)(e.className, m.a.paymentOption, {
@@ -1077,10 +1077,10 @@
 								sendEvent: n
 							} = this.props;
 						switch (t) {
-							case c.Jb:
+							case c.Kb:
 								n(Object(i.e)(a));
 								break;
-							case c.Kb:
+							case c.Lb:
 								n(Object(i.f)(a))
 						}
 						return r(t)
@@ -2020,7 +2020,7 @@
 				o = a("./src/reddit/selectors/experiments/econ/simpleExperiment.ts");
 			const c = Object(o.a)(s.Ue),
 				d = Object(o.a)(s.Ve),
-				i = Object(r.a)([c, d], (e, t) => new Set([e && n.Kb, t && n.Jb].filter(e => !!e)))
+				i = Object(r.a)([c, d], (e, t) => new Set([e && n.Lb, t && n.Kb].filter(e => !!e)))
 		},
 		"./src/reddit/selectors/experiments/econ/paymentsSandbox.ts": function(e, t, a) {
 			"use strict";
@@ -2066,4 +2066,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PennyPurchaseModal.cb4b2952358ea4b9f249.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PennyPurchaseModal.c4a6d9d58112760bc200.js.map

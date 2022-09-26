@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfileSnoobuilder.eefaae4a6508aa015161.js
-// Retrieved at 9/22/2022, 10:00:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfileSnoobuilder.48a00ad7dedb91d331e1.js
+// Retrieved at 9/26/2022, 1:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfileSnoobuilder"], {
 		"./assets/snoobuilder/Snoobuilder.json": function(e, t, n) {
@@ -833,21 +833,21 @@
 					d: "M16.64,2.32a4.5,4.5,0,0,0-7,5.57L4.85,12.69,3.59,13.95h0L2.34,15.2a1,1,0,0,0,0,1.41l1.25,1.25h0l.42.42a1,1,0,0,0,1.41-1.41L5,16.46H5a.78.78,0,0,1,0-1.09.79.79,0,0,1,1.09,0h0l.42.42a1,1,0,0,0,1.41-1.41L7.52,14h0L7,13.4l4.1-4.1a4.5,4.5,0,0,0,5.57-7Zm-1.41,5a2.5,2.5,0,1,1,0-3.54A2.5,2.5,0,0,1,15.22,7.27Z"
 				})),
 				P = n("./src/reddit/models/ContentGate.ts"),
-				B = n("./src/lib/constants/index.ts"),
-				R = n("./src/reddit/selectors/platform.ts"),
+				R = n("./src/lib/constants/index.ts"),
+				B = n("./src/reddit/selectors/platform.ts"),
 				I = n("./src/reddit/selectors/user.ts");
 			var M = n("./src/reddit/selectors/meta.ts"),
 				A = n("./src/reddit/components/ContentGate/index.m.less"),
 				z = n.n(A);
 			const {
 				fbt: H
-			} = n("./node_modules/fbt/lib/FbtPublic.js"), W = l.a.wrapped(D, "PrivateKey", z.a), U = l.a.div("ButtonsContainer", z.a), q = l.a.div("Container", z.a), G = l.a.div("ContainerExp", z.a), V = l.a.div("Description", z.a), J = l.a.div("PrivateSubredditDetails", z.a), Z = l.a.div("PrivateSubredditDescription", z.a), Y = l.a.h3("PrivateSubredditName", z.a), K = l.a.a("Link", z.a), X = l.a.wrapped(L.n, "LinkRouterButton", z.a), Q = l.a.wrapped(L.m, "LinkButton", z.a), $ = l.a.wrapped(L.q, "SecondaryLinkRouterButton", z.a), ee = l.a.wrapped(L.p, "SecondaryLinkButton", z.a), te = l.a.wrapped(X, "GoHomeLinkButton", z.a), ne = l.a.wrapped(b.a, "CreateCommunityButton", z.a), se = l.a.img("Image", z.a), re = l.a.img("ImagePlaceholder", z.a), ie = l.a.wrapped(X, "LeftLinkRouterButton", z.a), oe = l.a.wrapped(Q, "LeftLinkButton", z.a), ae = l.a.wrapped(ee, "SecondaryLeftLinkButton", z.a), ce = l.a.wrapped($, "SecondaryLeftLinkRouterButton", z.a), de = l.a.h3("Title", z.a), le = l.a.div("PageBody", z.a), ue = l.a.div("InterstitialMessageWrapper", z.a), me = Object(d.c)({
+			} = n("./node_modules/fbt/lib/FbtPublic.js"), W = l.a.wrapped(D, "PrivateKey", z.a), U = l.a.div("ButtonsContainer", z.a), q = l.a.div("Container", z.a), G = l.a.div("ContainerExp", z.a), V = l.a.div("Description", z.a), J = l.a.div("PrivateSubredditDetails", z.a), Z = l.a.div("PrivateSubredditDescription", z.a), Y = l.a.h3("PrivateSubredditName", z.a), K = l.a.a("Link", z.a), X = l.a.wrapped(L.n, "LinkRouterButton", z.a), $ = l.a.wrapped(L.m, "LinkButton", z.a), Q = l.a.wrapped(L.q, "SecondaryLinkRouterButton", z.a), ee = l.a.wrapped(L.p, "SecondaryLinkButton", z.a), te = l.a.wrapped(X, "GoHomeLinkButton", z.a), ne = l.a.wrapped(b.a, "CreateCommunityButton", z.a), se = l.a.img("Image", z.a), re = l.a.img("ImagePlaceholder", z.a), ie = l.a.wrapped(X, "LeftLinkRouterButton", z.a), oe = l.a.wrapped($, "LeftLinkButton", z.a), ae = l.a.wrapped(ee, "SecondaryLeftLinkButton", z.a), ce = l.a.wrapped(Q, "SecondaryLeftLinkRouterButton", z.a), de = l.a.h3("Title", z.a), le = l.a.div("PageBody", z.a), ue = l.a.div("InterstitialMessageWrapper", z.a), me = Object(d.c)({
 				isLoggedIn: I.P,
 				origin: M.k,
 				user: I.k,
 				isPrivateSubredditContributorRequestPending: e => (e => {
 					if (!Object(I.Q)(e)) return !1;
-					const t = Object(R.d)(e);
+					const t = Object(B.d)(e);
 					if (!t) return !1;
 					const n = Object(I.f)(e, t);
 					if (!n) return !1;
@@ -856,7 +856,7 @@
 						isContributorRequestTimestamp: s
 					} = n;
 					if (!s) return !1;
-					const r = 30 * B.C;
+					const r = 30 * R.D;
 					return s > Date.now() - r
 				})(e),
 				isSeo: M.h
@@ -1015,7 +1015,7 @@
 								redditStyle: !0
 							}, H._("No Thank You", null, {
 								hk: "4B26AR"
-							})), i.a.createElement(Q, {
+							})), i.a.createElement($, {
 								href: `${s.a.redditUrl}/prefs/update`,
 								redditStyle: !0
 							}, H._("Verify Email", null, {
@@ -1703,11 +1703,11 @@
 					onClick: () => {
 						e.isSponsored && e.post.postId && Object(_.a)(e.post, e.pageType)
 					}
-				}, B(e)) : e.isListing && e.postPermalink ? i.a.createElement(a.a, {
+				}, R(e)) : e.isListing && e.postPermalink ? i.a.createElement(a.a, {
 					target: e.shouldOpenPostInNewTab ? "_blank" : void 0,
 					to: Object(m.a)(e.postPermalink, void 0, t),
 					onClick: e.onPostMediaClick
-				}, B(e)) : B(e)
+				}, R(e)) : R(e)
 			});
 			const P = (e, t) => i.a.createElement(T, {
 					altText: t.altText,
@@ -1727,7 +1727,7 @@
 					width: t.width,
 					renderSmallMedia: t.renderSmallMedia
 				}),
-				B = e => {
+				R = e => {
 					let {
 						onClick: t,
 						...n
@@ -1977,11 +1977,11 @@
 					t && t.played && 1 === t.played.length && 0 === t.played.start(0) && t.played.end(0) === t.duration && T(Object(u.s)(h))
 				}, 200);
 
-				function B(e) {
+				function R(e) {
 					e.persist(), P(e)
 				}
 
-				function R(e) {
+				function B(e) {
 					var t;
 					(i || M(e), c) || (t = e.timeStamp, T(Object(u.A)(h, t)))
 				}
@@ -2005,7 +2005,7 @@
 				}
 
 				function A(e) {
-					s || R(e), i || M(e), T(Object(u.C)(h))
+					s || B(e), i || M(e), T(Object(u.C)(h))
 				}
 
 				function z() {
@@ -2020,11 +2020,11 @@
 						loop: !0,
 						onBufferingChange: F,
 						onLoadStart: I,
-						onLoadedData: R,
+						onLoadedData: B,
 						onLoadedMetadata: M,
 						onPause: D,
 						onPlaying: A,
-						onTimeUpdate: B,
+						onTimeUpdate: R,
 						shouldLoad: b,
 						shouldPause: y,
 						showCentered: S,
@@ -2109,11 +2109,11 @@
 					return e
 				}).apply(this, arguments)
 			}
-			const B = Object(v.u)({
+			const R = Object(v.u)({
 					routeName: v.Z,
 					privateListingType: v.j
 				}),
-				R = Object(p.c)({
+				B = Object(p.c)({
 					isDropdownMenuOpen: e => Object(O.a)(e) === M,
 					isOwnProfile: (e, t) => Object(N.W)(e, t.profileName),
 					isHistoryTabEnabled: S.a,
@@ -2124,7 +2124,7 @@
 				M = "profile-nav-menu-tooltip",
 				A = y.g + y.q + y.p;
 			var z;
-			t.a = B(Object(u.b)(R, e => ({
+			t.a = R(Object(u.b)(B, e => ({
 					toggleTooltip: t => e(Object(x.h)({
 						tooltipId: t
 					}))
@@ -2260,7 +2260,7 @@
 					} = e;
 					const d = n ? [{
 						internal: !0,
-						isActive: r === _.Qb.PROFILE_PRIVATE && i === C.b.Saved,
+						isActive: r === _.Rb.PROFILE_PRIVATE && i === C.b.Saved,
 						key: "profile.mainmenu.saved",
 						text: s.fbt._("Saved", null, {
 							hk: "2w1YRh"
@@ -2269,7 +2269,7 @@
 						position: z.MENU
 					}, {
 						internal: !0,
-						isActive: r === _.Qb.PROFILE_PRIVATE && i === C.b.Hidden,
+						isActive: r === _.Rb.PROFILE_PRIVATE && i === C.b.Hidden,
 						key: "profile.mainmenu.hidden",
 						text: s.fbt._("Hidden", null, {
 							hk: "225tka"
@@ -2278,7 +2278,7 @@
 						position: z.MENU
 					}, {
 						internal: !0,
-						isActive: r === _.Qb.PROFILE_PRIVATE && i === C.b.Upvoted,
+						isActive: r === _.Rb.PROFILE_PRIVATE && i === C.b.Upvoted,
 						key: "profile.mainmenu.upvoted",
 						text: s.fbt._("Upvoted", null, {
 							hk: "RKwFZ"
@@ -2287,7 +2287,7 @@
 						position: z.MENU
 					}, {
 						internal: !0,
-						isActive: r === _.Qb.PROFILE_PRIVATE && i === C.b.Downvoted,
+						isActive: r === _.Rb.PROFILE_PRIVATE && i === C.b.Downvoted,
 						key: "profile.mainmenu.downvoted",
 						text: s.fbt._("Downvoted", null, {
 							hk: "2F9IL4"
@@ -2297,7 +2297,7 @@
 					}] : [];
 					n ? (d.push({
 						internal: !0,
-						isActive: r === _.Qb.PROFILE_PRIVATE && i === C.b.ReceivedGildings,
+						isActive: r === _.Rb.PROFILE_PRIVATE && i === C.b.ReceivedGildings,
 						key: "profile.mainmenu.receiverGildings",
 						text: s.fbt._("Awards received", null, {
 							hk: "iwLBV"
@@ -2306,7 +2306,7 @@
 						position: z.MENU
 					}), d.push({
 						internal: !0,
-						isActive: r === _.Qb.PROFILE_PRIVATE && i === C.b.GivenGildings,
+						isActive: r === _.Rb.PROFILE_PRIVATE && i === C.b.GivenGildings,
 						key: "profile.mainmenu.givenGildings",
 						text: s.fbt._("Awards given", null, {
 							hk: "2UPYZc"
@@ -2325,7 +2325,7 @@
 					});
 					const l = o && n ? [{
 							internal: !0,
-							isActive: r === _.Qb.PROFILE_PRIVATE && i === C.b.History,
+							isActive: r === _.Rb.PROFILE_PRIVATE && i === C.b.History,
 							key: "profile.mainmenu.history",
 							text: s.fbt._("History", null, {
 								hk: "1fv1wp"
@@ -2335,7 +2335,7 @@
 						}] : [],
 						u = a ? [{
 							internal: !0,
-							isActive: r === _.Qb.PROFILE_SNOOBUILDER,
+							isActive: r === _.Rb.PROFILE_SNOOBUILDER,
 							key: "profile.mainmenu.snoobuilder",
 							text: s.fbt._("Snoobuilder", null, {
 								hk: "3SSKff"
@@ -2346,7 +2346,7 @@
 						m = c ? "?consent=true" : "";
 					return [{
 						internal: !0,
-						isActive: r === _.Qb.PROFILE_OVERVIEW,
+						isActive: r === _.Rb.PROFILE_OVERVIEW,
 						key: "profile.mainmenu.overview",
 						text: s.fbt._("Overview", null, {
 							hk: "2IBbqy"
@@ -2355,7 +2355,7 @@
 						position: z.MENU
 					}, {
 						internal: !0,
-						isActive: r === _.Qb.PROFILE_POSTS,
+						isActive: r === _.Rb.PROFILE_POSTS,
 						key: "profile.mainmenu.posts",
 						text: s.fbt._("Posts", null, {
 							hk: "a1BoF"
@@ -2364,7 +2364,7 @@
 						position: z.MENU
 					}, {
 						internal: !0,
-						isActive: r === _.Qb.PROFILE_COMMENTS,
+						isActive: r === _.Rb.PROFILE_COMMENTS,
 						key: "profile.mainmenu.comments",
 						text: s.fbt._("Comments", null, {
 							hk: "2VwjOc"
@@ -3199,7 +3199,7 @@
 			})), n.d(t, "b", (function() {
 				return P
 			})), n.d(t, "f", (function() {
-				return B
+				return R
 			})), n.d(t, "h", (function() {
 				return I
 			})), n.d(t, "g", (function() {
@@ -3326,7 +3326,7 @@
 					if (!i) return;
 					const o = i.length,
 						d = [];
-					for (let a = 0; a < o; a++) d.push(R(i[a], t, n, a, r));
+					for (let a = 0; a < o; a++) d.push(B(i[a], t, n, a, r));
 					return a.a.createElement(c.c, {
 						key: s
 					}, d)
@@ -3337,7 +3337,7 @@
 						key: t
 					}, a.a.createElement(c.h, null, n.reduce((e, t, n, s) => e += t.t + (n < s.length ? "\n" : ""), "")))
 				},
-				B = (e, t, n, s, r) => {
+				R = (e, t, n, s, r) => {
 					const i = e.c,
 						o = [],
 						d = i.length;
@@ -3345,14 +3345,14 @@
 						const e = i[u].c;
 						e && e.length && o.push(a.a.createElement(c.g, {
 							key: u
-						}, e.map((e, s) => R(e, t, n, s, r))))
+						}, e.map((e, s) => B(e, t, n, s, r))))
 					}
 					const l = e.o ? c.i : c.v;
 					return a.a.createElement(l, {
 						key: s
 					}, o)
 				},
-				R = (e, t, n, s, r) => {
+				B = (e, t, n, s, r) => {
 					switch (e.e) {
 						case m.b:
 							return D(e, t, n, s, r);
@@ -3363,7 +3363,7 @@
 						case m.l:
 							return F(s);
 						case m.p:
-							return B(e, t, n, s, r);
+							return R(e, t, n, s, r);
 						case m.u:
 							return M(e, t, n, s, r);
 						case m.z:
@@ -3598,7 +3598,7 @@
 				})())))
 			};
 			h.defaultProps = {
-				minimizedLength: c.Wb
+				minimizedLength: c.Xb
 			}, t.a = h
 		},
 		"./src/reddit/components/SidebarFooter/index.m.less": function(e, t, n) {
@@ -4153,7 +4153,7 @@
 						this.windowHeight = window.innerHeight
 					}, this.handleResize = i()(() => {
 						this.updateMeasurements(), this.updateState()
-					}, c.L), this.setWrapperRef = e => this.containerEl = e || null, this.state = {
+					}, c.M), this.setWrapperRef = e => this.containerEl = e || null, this.state = {
 						isAdSticky: !0,
 						isBottomSticky: !1,
 						isFooterSticky: !0
@@ -5670,4 +5670,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileSnoobuilder.eefaae4a6508aa015161.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileSnoobuilder.48a00ad7dedb91d331e1.js.map

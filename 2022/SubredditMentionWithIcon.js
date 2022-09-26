@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditMentionWithIcon.8b0bc06bb48cdf1968a3.js
-// Retrieved at 9/20/2022, 11:00:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditMentionWithIcon.6c6182418151eb58a329.js
+// Retrieved at 9/26/2022, 1:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditMentionWithIcon"], {
 		"./src/higherOrderComponents/withAdClickLocation/Locations.ts": function(e, t, s) {
@@ -235,7 +235,7 @@
 						type: e.type
 					} : {
 						id: Object(x.n)(a(), e.name),
-						name: `${i.oc}${e.name}`,
+						name: `${i.pc}${e.name}`,
 						type: e.type
 					});
 					if (!Object(j.Q)(a())) return o(Object(c.k)({
@@ -366,7 +366,7 @@
 						multiredditPath: e,
 						multiredditsModelsState: o
 					})), (await ((e, t, s) => Object(b.a)(Object(m.a)(e, [p.a]), {
-						method: i.mb.POST,
+						method: i.nb.POST,
 						endpoint: `${e.apiUrl}/api/multi/favorite`,
 						data: {
 							make_favorite: s ? "true" : "false",
@@ -406,7 +406,7 @@
 						multiredditPath: e,
 						multiredditsModelsState: c
 					})), (await ((e, t, s) => Object(b.a)(Object(m.a)(e, [p.a]), {
-						method: i.mb.POST,
+						method: i.nb.POST,
 						endpoint: `${e.apiUrl}/api/multi/subscribe`,
 						data: {
 							action: s ? "sub" : "unsub",
@@ -1066,7 +1066,7 @@
 						this.props.showTooltip(e), this.props.sendEvent(Object(Z.f)(this.props.subredditName)), this.props.postIds.map(e => this.props.sendEvent(Object(Z.g)(this.props.subredditName, e)))
 					}, this.onClickPost = e => {
 						this.props.sendEvent(Object(Z.b)(this.props.subredditName, e))
-					}, this.handleScroll = i()(() => this.loadSubredditData && this.loadSubredditData(), l.L), this.loadSubredditData = () => {
+					}, this.handleScroll = i()(() => this.loadSubredditData && this.loadSubredditData(), l.M), this.loadSubredditData = () => {
 						const {
 							subreddit: e,
 							subredditAboutInfo: t,
@@ -1133,7 +1133,7 @@
 					if (!r || !d || Object(S.k)(r)) return this.renderDefault();
 					const {
 						uniqueId: a
-					} = this.state, b = Object(u.a)(this.props.subredditName, l.Z.TOP), m = r.isNSFW && e || r.type === S.f.EmployeesOnly && !t || r.type === S.f.Private && !d.userIsSubscriber, p = m || r.isQuarantined || r.isNSFW;
+					} = this.state, b = Object(u.a)(this.props.subredditName, l.ab.TOP), m = r.isNSFW && e || r.type === S.f.EmployeesOnly && !t || r.type === S.f.Private && !d.userIsSubscriber, p = m || r.isQuarantined || r.isNSFW;
 					return o.a.createElement("span", {
 						className: se.a.subredditMentionContainer,
 						onMouseEnter: this.onShowTooltip,
@@ -1751,7 +1751,7 @@
 						subscribe: o
 					} = t;
 					return Object(r.a)(Object(d.a)(e, [c.a]), {
-						method: i.mb.POST,
+						method: i.nb.POST,
 						endpoint: Object(a.a)(`${e.apiUrl}/api/subscribe`),
 						data: {
 							action: o ? "sub" : "unsub",
@@ -1762,7 +1762,7 @@
 					})
 				},
 				u = (e, t, s) => Object(r.a)(Object(d.a)(e, [c.a]), {
-					method: i.mb.POST,
+					method: i.nb.POST,
 					endpoint: `${e.apiUrl}/api/favorite`,
 					data: {
 						make_favorite: s ? "true" : "false",
@@ -2351,4 +2351,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditMentionWithIcon.8b0bc06bb48cdf1968a3.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditMentionWithIcon.6c6182418151eb58a329.js.map

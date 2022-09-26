@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-ModHub-Content-ModQueue.09c431d034f53066deee.js
-// Retrieved at 9/22/2022, 10:30:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-ModHub-Content-ModQueue.d0f31f2c03327c13fe11.js
+// Retrieved at 9/26/2022, 1:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-ModHub-Content-ModQueue"], {
 		"./src/reddit/components/CrowdControlAdoptionCampaign/CrowdControlModQueueCTA.m.less": function(e, t, n) {
@@ -101,9 +101,9 @@
 				g = n("./src/reddit/components/ModHub/InfoLink/index.tsx"),
 				h = n("./src/reddit/components/ModHub/StyledComponents/index.tsx"),
 				w = n("./src/reddit/components/ModQueueList/index.tsx"),
-				k = n("./src/reddit/components/ModQueueList/LayoutNavigation.tsx"),
-				E = n("./src/reddit/components/ModHub/Content/index.m.less"),
-				L = n.n(E);
+				E = n("./src/reddit/components/ModQueueList/LayoutNavigation.tsx"),
+				k = n("./src/reddit/components/ModHub/Content/index.m.less"),
+				L = n.n(k);
 			t.default = e => {
 				const {
 					showCrowdControlCampaign: t,
@@ -143,12 +143,12 @@
 					}
 				})(e.pageName), i.a.createElement(g.a, {
 					linkUrl: `${o.a.redditModHelpUrl}/hc/en-us/articles/360010090132`
-				})), i.a.createElement(k.a, {
+				})), i.a.createElement(E.a, {
 					hideSubredditFilter: !0,
 					postTypeFilter: e.postTypeFilter,
 					postSort: e.postSort,
 					sendEventWithName: e.sendEventWithName,
-					showTypeFilter: e.pageName !== d.kc.Unmoderated,
+					showTypeFilter: e.pageName !== d.lc.Unmoderated,
 					subredditName: e.subredditName
 				}), i.a.createElement(w.a, {
 					after: e.after,
@@ -192,4 +192,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ModHub-Content-ModQueue.09c431d034f53066deee.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ModHub-Content-ModQueue.d0f31f2c03327c13fe11.js.map

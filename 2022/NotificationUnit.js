@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/NotificationUnit.775da3d468ee31a82045.js
-// Retrieved at 9/22/2022, 10:00:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/NotificationUnit.0c93c8ff111f30bfe02b.js
+// Retrieved at 9/26/2022, 1:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["NotificationUnit"], {
 		"./src/reddit/components/NotificationUnit/Avatar.tsx": function(e, t, i) {
@@ -350,7 +350,7 @@
 					title: x
 				} = e, h = (i || b || f || u) && !d, E = Object(o.a)(p.a.menuButton, {
 					[p.a.isOpen]: m
-				}), w = Date.parse(N) / s.Vb;
+				}), w = Date.parse(N) / s.Wb;
 				return a.a.createElement("span", {
 					className: p.a.topBar
 				}, a.a.createElement("span", {
@@ -449,8 +449,8 @@
 						[P, L] = Object(r.useState)(!1),
 						{
 							activeOverflowMenuId: V,
-							isInboxPostEmbedEnabled: z,
-							isInAppNotification: W,
+							isInboxPostEmbedEnabled: W,
+							isInAppNotification: z,
 							isInTooltip: R,
 							notification: Z,
 							shouldHideActionButton: q,
@@ -473,9 +473,9 @@
 						sentAt: se,
 						title: re
 					} = Z, le = null == X ? void 0 : X.messageType, ce = null === (i = null === (t = null == X ? void 0 : X.comment) || void 0 === t ? void 0 : t.parent) || void 0 === i ? void 0 : i.id, de = null === (n = null == X ? void 0 : X.post) || void 0 === n ? void 0 : n.id, pe = null == X ? void 0 : X.post, me = null === (s = null == X ? void 0 : X.subreddit) || void 0 === s ? void 0 : s.id, ue = null == X ? void 0 : X.isBodyHidden, be = null == X ? void 0 : X.isPostHidden, fe = !oe, ve = `notif-${R?"tooltip":""}-menu-${ae}`, Ne = ve === V, ge = X.messageType === v.a.CommentReply, xe = ge ? ce : de, he = Object(c.a)(e.className, O.a.notificationItem, {
-						[O.a.unread]: fe && !W,
+						[O.a.unread]: fe && !z,
 						[O.a.isNightMode]: F,
-						[O.a.inAppNotification]: W
+						[O.a.inAppNotification]: z
 					}), Ee = {
 						id: ae,
 						isClicked: !!oe,
@@ -501,7 +501,7 @@
 							e.markNotificationAsRead(ae, le)
 						},
 						ke = e => {
-							if (W) return C(Object(b.g)({
+							if (z) return C(Object(b.g)({
 								...Ee,
 								...e
 							}));
@@ -514,7 +514,7 @@
 							avatar: J,
 							iconType: ne,
 							messageType: le,
-							isInAppNotification: W
+							isInAppNotification: z
 						}), l.a.createElement("span", {
 							className: O.a.contentContainer
 						}, l.a.createElement(u.a, {
@@ -532,15 +532,15 @@
 							sentAt: se,
 							setActiveOverflowMenuId: K,
 							title: re,
-							isInAppNotification: W
-						}), z && pe && !be && !W && l.a.createElement(m.a, {
+							isInAppNotification: z
+						}), W && pe && !be && !z && l.a.createElement(m.a, {
 							isUnread: fe,
 							post: pe
-						}), (!z || z && !ue) && l.a.createElement("span", {
+						}), (!W || W && !ue) && l.a.createElement("span", {
 							className: Object(c.a)(O.a.body, {
-								[O.a.inAppNotification]: W
+								[O.a.inAppNotification]: z
 							})
-						}, Q), !q && (Ue || we || ge || B && W) && l.a.createElement(I, {
+						}, Q), !q && (Ue || we || ge || B && z) && l.a.createElement(I, {
 							context: X,
 							notificationId: ae,
 							isUnread: fe,
@@ -548,14 +548,14 @@
 							onEvent: ke,
 							deeplinkUrl: Te,
 							isNightMode: F,
-							isInAppNotification: W
-						})), W && (null == X ? void 0 : X.post) ? l.a.createElement(m.b, {
+							isInAppNotification: z
+						})), z && (null == X ? void 0 : X.post) ? l.a.createElement(m.b, {
 							isInAppNotification: !0,
 							post: X.post
 						}) : null),
 						He = {
 							className: Object(c.a)(O.a.link, {
-								[O.a.inAppNotification]: W
+								[O.a.inAppNotification]: z
 							}),
 							onClick: e => {
 								(null == pe ? void 0 : pe.removedByCategory) ? (e.preventDefault(), D(Object(x.f)({
@@ -580,7 +580,7 @@
 						href: Te,
 						target: "_blank",
 						rel: "noopener noreferrer"
-					}), Me)), W ? null : l.a.createElement(p.a, {
+					}), Me)), z ? null : l.a.createElement(p.a, {
 						decreaseSubUpdates: () => {
 							const t = b.e.DecreaseSubredditUpdates;
 							e.isInTooltip && e.setActiveOverflowMenuId && e.setActiveOverflowMenuId(j), me && e.decreaseSubredditNotifications && e.decreaseSubredditNotifications(me, () => ye(t)), _e(t)
@@ -610,7 +610,7 @@
 					}), l.a.createElement(a.a, {
 						onChange: e => {
 							if (e.isIntersecting && !P) {
-								if (W) return C(Object(b.v)({
+								if (z) return C(Object(b.v)({
 									...Ee
 								}));
 								C(Object(b.y)({
@@ -791,4 +791,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/NotificationUnit.775da3d468ee31a82045.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/NotificationUnit.0c93c8ff111f30bfe02b.js.map

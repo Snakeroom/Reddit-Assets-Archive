@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/NewCommentPill.ba93df884d332cdf51bd.js
-// Retrieved at 9/12/2022, 2:10:03 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/NewCommentPill.85f575c6bbce2007f347.js
+// Retrieved at 9/26/2022, 1:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["NewCommentPill"], {
 		"./node_modules/lodash/_arraySampleSize.js": function(e, t, s) {
@@ -81,8 +81,8 @@
 				C = s("./src/lib/constants/index.ts"),
 				N = s("./src/lib/makeCommentsPageKey/index.ts"),
 				I = s("./src/lib/scroll/index.ts"),
-				x = s("./src/reddit/components/NewCommentPill/index.m.less"),
-				v = s.n(x);
+				v = s("./src/reddit/components/NewCommentPill/index.m.less"),
+				x = s.n(v);
 			const y = (e, t) => {
 				let {
 					type: s,
@@ -94,7 +94,7 @@
 				let {
 					commentId: t,
 					postId: s,
-					isNightMode: x,
+					isNightMode: v,
 					isOverlay: E
 				} = e;
 				const T = Object(o.useRef)(null),
@@ -126,7 +126,7 @@
 						if (!R) return;
 						B(!1), k.current && (clearTimeout(k.current), k.current = null), L.current && (L.current = null), J.current = 2, (() => {
 							const e = new URLSearchParams(location.search);
-							e.get(j.y) !== C.u.NEW && (e.set(j.y, C.u.NEW), K(Object(i.b)(Object(r.c)({
+							e.get(j.y) !== C.v.NEW && (e.set(j.y, C.v.NEW), K(Object(i.b)(Object(r.c)({
 								pathname: location.pathname,
 								search: e.toString()
 							}, {
@@ -134,14 +134,14 @@
 							}))));
 							const n = Object(N.a)(s, t, {
 								hasSortParam: !0,
-								sort: C.u.NEW
+								sort: C.v.NEW
 							});
 							K(Object(d.commentsPageRemoveLoadedFull)({
 								key: n
 							})), K(Object(d.commentsPageDataRequested)(s, t, {
 								hasSortParam: !0,
-								sort: C.u.NEW
-							}, C.u.NEW))
+								sort: C.v.NEW
+							}, C.v.NEW))
 						})(), Object(I.a)(!!E), T.current = setTimeout(() => S({
 							type: "reset"
 						}), 1e3)
@@ -170,31 +170,31 @@
 					onData: q,
 					queryKey: "topLevelCommentCountChange"
 				}), a.a.createElement("div", {
-					className: Object(g.a)(v.a.wrapper, {
-						[v.a.isOverlayWrapper]: E,
-						[v.a.wrapperVisible]: M,
-						[v.a.joinOptimizationsM2]: !E && D && U
+					className: Object(g.a)(x.a.wrapper, {
+						[x.a.isOverlayWrapper]: E,
+						[x.a.wrapperVisible]: M,
+						[x.a.joinOptimizationsM2]: !E && D && U
 					})
 				}, a.a.createElement(u.a, {
-					className: v.a.pillContainer
+					className: x.a.pillContainer
 				}, a.a.createElement(m.a, {
-					className: Object(g.a)(v.a.pillButton, {
-						[v.a.isNightMode]: x
+					className: Object(g.a)(x.a.pillButton, {
+						[x.a.isNightMode]: v
 					}),
 					onClick: z,
 					variant: m.b.BUTTON
 				}, a.a.createElement(b.a, {
 					iconsKey: s,
 					shouldShowPresenceDot: !0,
-					memberIconClassName: Object(g.a)(v.a.memberIcon, {
-						[v.a.isNightMode]: x
+					memberIconClassName: Object(g.a)(x.a.memberIcon, {
+						[x.a.isNightMode]: v
 					}),
-					presenceDotOutlineClassName: Object(g.a)(v.a.presenceDotOutlineClass, {
-						[v.a.isNightMode]: x
+					presenceDotOutlineClassName: Object(g.a)(x.a.presenceDotOutlineClass, {
+						[x.a.isNightMode]: v
 					})
 				}), a.a.createElement("span", {
-					className: Object(g.a)(v.a.newCommentsText, {
-						[v.a.isNightMode]: x
+					className: Object(g.a)(x.a.newCommentsText, {
+						[x.a.isNightMode]: v
 					})
 				}, P > 1 ? n.fbt._("{number of new comments} new comments", [n.fbt._param("number of new comments", Object(f.formatPresenceNumber)(P))], {
 					hk: "2jSNSA"
@@ -480,8 +480,8 @@
 							}
 						}
 					}), [l]),
-					[I, x] = Object(u.useState)(0),
-					[v, y] = Object(u.useState)(0),
+					[I, v] = Object(u.useState)(0),
+					[x, y] = Object(u.useState)(0),
 					E = Object(u.useCallback)(a()(e => {
 						e(0), w(null)
 					}, j.e), []),
@@ -493,24 +493,24 @@
 							numUsers: t,
 							__typename: s
 						} = e.subscribe.data;
-						T(t, "PostReadingCountMessageData" === s ? x : y)
+						T(t, "PostReadingCountMessageData" === s ? v : y)
 					}, []),
 					P = Object(u.useRef)(""),
 					[S, w] = Object(u.useState)(null),
 					D = Object(u.useRef)(null);
 				Object(u.useEffect)(() => {
 					if (!t && !o) return void(S && w(null));
-					if (I >= j.a || v >= j.b) return P.current = ((e, t) => {
+					if (I >= j.a || x >= j.b) return P.current = ((e, t) => {
 						return t >= j.b ? n.fbt._("{number of people typing} people typing...", [n.fbt._param("number of people typing", h(t))], {
 							hk: "31RibC"
 						}) : n.fbt._("{number of users reading} people here", [n.fbt._param("number of users reading", h(e))], {
 							hk: "3foy5g"
 						})
-					})(I, v), void(S || w(Date.now()));
+					})(I, x), void(S || w(Date.now()));
 					if (!S) return;
 					const e = Date.now() - S;
 					e >= j.f ? w(null) : D.current = setTimeout(() => w(null), j.f - e)
-				}, [S, t, o, I, v]);
+				}, [S, t, o, I, x]);
 				const {
 					className: U,
 					shouldMount: A,
@@ -617,4 +617,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/NewCommentPill.ba93df884d332cdf51bd.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/NewCommentPill.85f575c6bbce2007f347.js.map

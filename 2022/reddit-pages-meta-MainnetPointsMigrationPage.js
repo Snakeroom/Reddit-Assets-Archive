@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-pages-meta-MainnetPointsMigrationPage.35befa65292b90494c26.js
-// Retrieved at 9/22/2022, 10:00:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-pages-meta-MainnetPointsMigrationPage.1fab42ee24ea17f73981.js
+// Retrieved at 9/26/2022, 1:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-pages-meta-MainnetPointsMigrationPage"], {
 		"./node_modules/lodash/uniqueId.js": function(e, t, n) {
@@ -463,7 +463,7 @@
 			function i(e, t) {
 				return Object(r.a)(e, {
 					endpoint: `${a.a.metaUrl}/communities/${t.subredditId}/me`,
-					method: s.mb.GET
+					method: s.nb.GET
 				})
 			}
 		},
@@ -1363,7 +1363,7 @@
 						return await
 						function(e, t, n) {
 							return Object(pe.a)(e, {
-								method: me.mb.GET,
+								method: me.nb.GET,
 								endpoint: `${a.a.metaUrl}/migrationbridge/${t}/${n}`
 							})
 						}(r(), "42170", t).then(e => {
@@ -1881,4 +1881,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-pages-meta-MainnetPointsMigrationPage.35befa65292b90494c26.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-pages-meta-MainnetPointsMigrationPage.1fab42ee24ea17f73981.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CountryPage~Multireddit.e01d6d769c0a1df23d31.js
-// Retrieved at 9/22/2022, 10:00:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CountryPage~Multireddit.ee9869ebaa7f98020301.js
+// Retrieved at 9/26/2022, 1:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CountryPage~Multireddit"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -1163,7 +1163,7 @@
 						isContributorRequestTimestamp: r
 					} = n;
 					if (!r) return !1;
-					const s = 30 * P.C;
+					const s = 30 * P.D;
 					return r > Date.now() - s
 				})(e),
 				isSeo: M.h
@@ -4604,7 +4604,7 @@
 					let {
 						match: n
 					} = t;
-					return n.params.sort || l.Z.HOT
+					return n.params.sort || l.ab.HOT
 				},
 				He = (e, t) => {
 					let {
@@ -4631,7 +4631,7 @@
 				qe = Object(d.a)(ze, He, Ue, (e, t, n) => Object(m.a)(n, e, t)),
 				Ve = Object(d.a)(He, e => {
 					const t = p.C in e && e[p.C].toUpperCase();
-					return "string" == typeof t && t in l.mc ? l.mc[t] : l.nc
+					return "string" == typeof t && t in l.nc ? l.nc[t] : l.oc
 				}),
 				We = Object(d.c)({
 					isNsfwBlurSubreddit: Pe.e,
@@ -4901,4 +4901,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CountryPage~Multireddit.e01d6d769c0a1df23d31.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CountryPage~Multireddit.ee9869ebaa7f98020301.js.map
