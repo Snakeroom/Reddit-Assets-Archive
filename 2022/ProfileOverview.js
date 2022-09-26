@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfileOverview.45b26e3b24730a25e157.js
-// Retrieved at 9/22/2022, 10:30:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfileOverview.25d281fca3f2f45e027f.js
+// Retrieved at 9/26/2022, 11:30:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfileOverview"], {
 		"./node_modules/linkify-it/index.js": function(e, t, s) {
@@ -1717,7 +1717,7 @@
 					className: n
 				} = e;
 				const u = Object(o.d)();
-				if (!Object(o.e)(l.a) || !t.isSponsored || !t.adSupplementaryText || "string" == typeof t.adSupplementaryText) return null;
+				if (!Object(o.e)(l.a) || !t.isSponsored && !t.isCreatedFromAdsUi || !t.adSupplementaryText || "string" == typeof t.adSupplementaryText) return null;
 				if (0 === t.adSupplementaryText.document.length) return null;
 				return r.a.createElement("div", {
 					className: Object(a.a)(n, p.a.AdSupplementaryText),
@@ -6608,4 +6608,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileOverview.45b26e3b24730a25e157.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileOverview.25d281fca3f2f45e027f.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModerationPages.559adc34d2e17de1f5ac.js
-// Retrieved at 9/26/2022, 11:00:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModerationPages.04a45f6eed7a705840df.js
+// Retrieved at 9/26/2022, 11:30:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModerationPages", "CollectionCommentsPage~CommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~RpanListingUnit~S~5809214e", "CommentsPage~Governance~Reddit~ReportFlow~Subreddit~reddit-components-BlankPost~reddit-components-Cl~5351df81", "Governance~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compo~bd4baca2", "Reddit~RpanListingUnit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPos~93b34f9d", "Governance~ModListing~Reddit~ReportFlow~Subreddit", "ModListing~PostCreation~Reddit~StandalonePostPage~Subreddit", "Governance~ModListing~Reddit", "Governance~Reddit~SubredditForkingCTA"], {
 		"./src/chat/controls/Svg/index.m.less": function(e, t, n) {
@@ -57319,7 +57319,7 @@
 			n("./node_modules/core-js/modules/web.dom.iterable.js");
 			var s = n("./src/reddit/endpoints/post/convert.ts"),
 				r = n("./src/reddit/selectors/experiments/supportingLinkAds.ts");
-			const o = e => !(!e.isSponsored || !e.adSupplementaryText || "string" != typeof e.adSupplementaryText),
+			const o = e => !(!e.isSponsored && !e.isCreatedFromAdsUi || !e.adSupplementaryText || "string" != typeof e.adSupplementaryText),
 				i = async (e, t) => {
 					try {
 						const n = await Object(s.a)(e, "rtjson", t.adSupplementaryText);
@@ -77357,4 +77357,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.559adc34d2e17de1f5ac.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.04a45f6eed7a705840df.js.map

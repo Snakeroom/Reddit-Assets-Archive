@@ -1,10 +1,10 @@
-// https://www.redditstatic.com/desktop2x/runtime~Reddit.4727dce7409fdf4f4e84.js
-// Retrieved at 9/26/2022, 11:00:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/runtime~Reddit.a1f4a09089ff483585a4.js
+// Retrieved at 9/26/2022, 11:30:05 AM by Reddit Dataminer v1.0.0
 ! function(e) {
 	function o(o) {
-		for (var a, n, r = o[0], s = o[1], c = o[2], l = 0, P = []; l < r.length; l++) n = r[l], Object.prototype.hasOwnProperty.call(d, n) && d[n] && P.push(d[n][0]), d[n] = 0;
+		for (var a, n, r = o[0], s = o[1], c = o[2], l = 0, b = []; l < r.length; l++) n = r[l], Object.prototype.hasOwnProperty.call(d, n) && d[n] && b.push(d[n][0]), d[n] = 0;
 		for (a in s) Object.prototype.hasOwnProperty.call(s, a) && (e[a] = s[a]);
-		for (m && m(o); P.length;) P.shift()();
+		for (m && m(o); b.length;) b.shift()();
 		return i.push.apply(i, c || []), t()
 	}
 
@@ -1014,12 +1014,12 @@
 				var m;
 				if ((c = (m = l[s]).getAttribute("data-href")) === a || c === d) return o()
 			}
-			var P = document.createElement("link");
-			P.rel = "stylesheet", P.type = "text/css", P.onload = o, P.onerror = function(o) {
+			var b = document.createElement("link");
+			b.rel = "stylesheet", b.type = "text/css", b.onload = o, b.onerror = function(o) {
 				var a = o && o.target && o.target.src || d,
 					i = new Error("Loading CSS chunk " + e + " failed.\n(" + a + ")");
-				i.code = "CSS_CHUNK_LOAD_FAILED", i.request = a, delete n[e], P.parentNode.removeChild(P), t(i)
-			}, P.href = d, document.getElementsByTagName("head")[0].appendChild(P)
+				i.code = "CSS_CHUNK_LOAD_FAILED", i.request = a, delete n[e], b.parentNode.removeChild(b), t(i)
+			}, b.href = d, document.getElementsByTagName("head")[0].appendChild(b)
 		})).then((function() {
 			n[e] = 0
 		})));
@@ -1408,12 +1408,12 @@
 						"CollectionCommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~SearchResults": "7e95265c69ae1939df2e",
 						"CollectionCommentsPage~ModProgressModule~NewCommunityProgress": "95a21e7698a698b8de83",
 						"CollectionCommentsPage~SearchResults": "07b507791ec461d37957",
-						CollectionCommentsPage: "f5cf519666878635bc78",
+						CollectionCommentsPage: "6f076eb247f56ddcc668",
 						"ProfileComments~ProfileOverview~ProfilePrivate": "693a1c99d0d1931bb21a",
 						ProfilePrivate: "29e245e55c8616f69464",
 						"CountryPage~Frontpage~ModListing~Multireddit~ProfileComments~ProfileOverview~ProfilePosts~Subreddit": "8f3c97662fd17309da9c",
 						ProfileComments: "902e7167cb4883c8aa80",
-						ProfileOverview: "45b26e3b24730a25e157",
+						ProfileOverview: "25d281fca3f2f45e027f",
 						SearchResults: "d362eb9fc0213842e1ee",
 						"ModQueuePages~reddit-components-ModHub-Content-ModQueue": "7eb50ac61b94f59f79de",
 						ModQueuePages: "eb6f6d11c19a984ad17f",
@@ -1544,14 +1544,14 @@
 						ModListing: "d45841c580ebb6539504",
 						"vendors~PostCreation~Subreddit": "c6c96fbaf04e2c667eb2",
 						Subreddit: "ba2b79947687567607de",
-						CommentsPage: "86c14684f85c381f5969",
+						CommentsPage: "dbbbb6adb417182793db",
 						"vendors~CryptoHarbergerTaxManageModal~HarbergerTaxManageModal~ModerationPages~PostCreation~Settings~~f8934a85": "fbf6b3871488094312c2",
 						CryptoHarbergerTaxManageModal: "6da03e73843809e83841",
 						HarbergerTaxManageModal: "1f5af6faaf06a2191136",
 						SubredditPremiumUploadModal: "daf9a94c3e4b63f28e75",
 						PostCreation: "e1b65752043e5e3fa33b",
 						"vendors~ModerationPages": "94c34813eaf24a1890ea",
-						ModerationPages: "559adc34d2e17de1f5ac",
+						ModerationPages: "04a45f6eed7a705840df",
 						"vendors~ModStatsChart~Settings~ViewsTooltip": "ca7c845d62fd39d960b6",
 						"vendors~Settings": "86b1cfc53320ea8eef91",
 						Settings: "5ff5e10bc7e2072626d4",
@@ -1611,7 +1611,7 @@
 						RichTextEditor: "758e59ddd131a1bef3b3",
 						"reddit-components-ClassicPost": "1eced089a13a8e47edd9",
 						"reddit-components-CompactPost": "fecb1fcc4ca246595b7b",
-						"reddit-components-LargePost": "e44fc69a9c991f4a1dd4",
+						"reddit-components-LargePost": "0ffff2a13b767ea04778",
 						"reddit-components-MediumPost": "635d67f85532596cfb3d",
 						LiveVideoPlayer: "594e46ee7e37765fb8d5",
 						"vendors~dashjs": "518ef1c4a3ea00bc51bc",
@@ -1786,4 +1786,4 @@
 	var m = c;
 	t()
 }([]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/runtime~Reddit.4727dce7409fdf4f4e84.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/runtime~Reddit.a1f4a09089ff483585a4.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CommentsPage~Governance~Reddit~ReportFlow~Subreddit~reddit-components-BlankPost~reddit-components-Cl~5351df81.67a99230ca8c0660a346.js
-// Retrieved at 9/22/2022, 2:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CommentsPage~Governance~Reddit~ReportFlow~Subreddit~reddit-components-BlankPost~reddit-components-Cl~5351df81.e5cd9c781b189dea6514.js
+// Retrieved at 9/26/2022, 11:30:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CommentsPage~Governance~Reddit~ReportFlow~Subreddit~reddit-components-BlankPost~reddit-components-Cl~5351df81"], {
 		"./src/lib/name/index.ts": function(e, t, r) {
@@ -6979,7 +6979,7 @@
 			r("./node_modules/core-js/modules/web.dom.iterable.js");
 			var n = r("./src/reddit/endpoints/post/convert.ts"),
 				s = r("./src/reddit/selectors/experiments/supportingLinkAds.ts");
-			const i = e => !(!e.isSponsored || !e.adSupplementaryText || "string" != typeof e.adSupplementaryText),
+			const i = e => !(!e.isSponsored && !e.isCreatedFromAdsUi || !e.adSupplementaryText || "string" != typeof e.adSupplementaryText),
 				d = async (e, t) => {
 					try {
 						const r = await Object(n.a)(e, "rtjson", t.adSupplementaryText);
@@ -12078,4 +12078,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommentsPage~Governance~Reddit~ReportFlow~Subreddit~reddit-components-BlankPost~reddit-components-Cl~5351df81.67a99230ca8c0660a346.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommentsPage~Governance~Reddit~ReportFlow~Subreddit~reddit-components-BlankPost~reddit-components-Cl~5351df81.e5cd9c781b189dea6514.js.map
