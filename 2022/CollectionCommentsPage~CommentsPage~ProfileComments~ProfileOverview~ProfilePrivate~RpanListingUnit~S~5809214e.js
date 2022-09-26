@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~RpanListingUnit~S~5809214e.d35c6b36ba5cc7a115f8.js
-// Retrieved at 9/26/2022, 1:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~RpanListingUnit~S~5809214e.786f428696769c64ff53.js
+// Retrieved at 9/26/2022, 3:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~RpanListingUnit~S~5809214e"], {
 		"./src/devPlatform/components/ContextActions/ContextActionsLoader.tsx": function(e, t, o) {
@@ -3802,7 +3802,7 @@
 							hk: "If1yt"
 						}),
 						onConfirm: () => {
-							this.handleMuteModal(), t.onMuteClick(a, o), this.toggleHide(), d && this.props.sendEvent(Object(ve.a)()), c && this.props.sendEvent(Object(ve.b)())
+							this.handleMuteModal(), t.onMuteClick(a, o), this.toggleHide(), d && this.props.sendEvent(Object(ve.b)()), c && this.props.sendEvent(Object(ve.c)())
 						},
 						withOverlay: !0
 					}))
@@ -5006,4 +5006,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~RpanListingUnit~S~5809214e.d35c6b36ba5cc7a115f8.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~RpanListingUnit~S~5809214e.786f428696769c64ff53.js.map

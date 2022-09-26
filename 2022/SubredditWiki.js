@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditWiki.970077a4c730baa3850a.js
-// Retrieved at 9/26/2022, 1:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditWiki.499fbfc70a189b287e55.js
+// Retrieved at 9/26/2022, 3:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditWiki", "AchievementsActions"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, r) {
@@ -4140,30 +4140,34 @@
 				oe = r("./src/reddit/components/CommunityIdTopBar/index.m.less"),
 				de = r.n(oe),
 				ce = r("./src/reddit/icons/svgs/VideoMute/index.tsx"),
-				le = r("./src/reddit/components/CommunityIdTopBar/MuteButton/index.m.less"),
-				ue = r.n(le);
+				le = r("./src/reddit/helpers/trackers/subredditMuting.ts"),
+				ue = r("./src/reddit/components/CommunityIdTopBar/MuteButton/index.m.less"),
+				me = r.n(ue);
 			const {
-				fbt: me
-			} = r("./node_modules/fbt/lib/FbtPublic.js"), pe = e => {
+				fbt: pe
+			} = r("./node_modules/fbt/lib/FbtPublic.js"), be = e => {
 				let {
 					onClickUnmute: t
 				} = e;
+				const r = Object(B.a)();
 				return s.a.createElement(T.t, {
 					priority: T.c.Plain,
-					className: ue.a.muteButton,
-					onClick: t
+					className: me.a.muteButton,
+					onClick: () => {
+						r(Object(le.f)()), t()
+					}
 				}, s.a.createElement(ce.a, {
-					className: ue.a.muteIcon
+					className: me.a.muteIcon
 				}), s.a.createElement("span", {
-					className: ue.a.muteDefault
-				}, me._("Muted", null, {
+					className: me.a.muteDefault
+				}, pe._("Muted", null, {
 					hk: "incHh"
 				})), s.a.createElement("span", {
-					className: ue.a.muteHover
-				}, me._("Unmute", null, {
+					className: me.a.muteHover
+				}, pe._("Unmute", null, {
 					hk: "4qbgbm"
 				})))
-			}, be = c.a.img("SubredditIcon", de.a), he = Object(a.c)({
+			}, he = c.a.img("SubredditIcon", de.a), fe = Object(a.c)({
 				isNsfwBlurSubreddit: re.e,
 				notificationLevel: se.J,
 				isMuted: se.I,
@@ -4206,11 +4210,11 @@
 						subredditId: r
 					}) : void 0
 				}
-			}), fe = {
+			}), ge = {
 				threshold: [.5, .001],
 				rootMargin: `${1-V.f}px 0px 0px 0px`
 			};
-			t.a = Object(i.b)(he, (e, t) => ({
+			t.a = Object(i.b)(fe, (e, t) => ({
 				_updateSubredditInfo: () => {
 					var r;
 					const n = t.subredditId || (null === (r = t.subreddit) || void 0 === r ? void 0 : r.id);
@@ -4259,7 +4263,7 @@
 				Object($.a)("resize", ((e, t, r) => () => {
 					var n;
 					e(t && r ? null === (n = t.getBoundingClientRect()) || void 0 === n ? void 0 : n.height : void 0)
-				})(g, x, m)), Object(Q.a)(h, _, fe);
+				})(g, x, m)), Object(Q.a)(h, _, ge);
 				const y = e.subreddit && Object(Z.a)(e),
 					k = !!(e.theme && Object(l.a)(e).banner.showCommunityIcon && y),
 					w = r.charAt(0).toUpperCase() + r.slice(1),
@@ -4275,7 +4279,7 @@
 					}) : s.a.createElement(D.a, {
 						className: de.a.DefaultIcon
 					}),
-					C = k ? s.a.createElement(be, {
+					C = k ? s.a.createElement(he, {
 						className: Object(o.a)(de.a.SubredditIconImg, {
 							[de.a.blur]: e.isNsfwBlurSubreddit
 						}),
@@ -4347,7 +4351,7 @@
 					afterUnsubscribeAction: () => {
 						t && (Object(U.eb)(e.userId, t), e.updateSubredditInfo())
 					}
-				})), S && s.a.createElement(pe, {
+				})), S && s.a.createElement(be, {
 					onClickUnmute: e.unmuteSubreddit
 				}), e.userIsSubscriber && !S && t && e.notificationLevel && s.a.createElement("div", {
 					className: de.a.notificationButtonContainer
@@ -13412,6 +13416,78 @@
 					noun: n.HEADER_SUBREDDIT_UNSUBSCRIBE
 				})
 		},
+		"./src/reddit/helpers/trackers/subredditMuting.ts": function(e, t, r) {
+			"use strict";
+			r.d(t, "b", (function() {
+				return i
+			})), r.d(t, "e", (function() {
+				return a
+			})), r.d(t, "c", (function() {
+				return o
+			})), r.d(t, "f", (function() {
+				return d
+			})), r.d(t, "a", (function() {
+				return c
+			})), r.d(t, "d", (function() {
+				return l
+			}));
+			var n = r("./src/reddit/selectors/telemetry.ts"),
+				s = r("./src/telemetry/models/Event.ts");
+			const i = () => e => ({
+					source: s.f.HomeFeed,
+					action: s.d.Click,
+					noun: s.e.MuteSubreddit,
+					targetUser: {
+						id: n.rb(e).id
+					},
+					...n.o(e)
+				}),
+				a = () => e => ({
+					source: s.f.CommunityNotificationsSettings,
+					action: s.d.Click,
+					noun: s.e.UnmuteSubreddit,
+					targetUser: {
+						id: n.rb(e).id
+					},
+					...n.o(e)
+				}),
+				o = () => e => ({
+					source: s.f.PopularFeed,
+					action: s.d.Click,
+					noun: s.e.MuteSubreddit,
+					targetUser: {
+						id: n.rb(e).id
+					},
+					...n.o(e)
+				}),
+				d = () => e => ({
+					source: s.f.SubredditIdBanner,
+					action: s.d.Click,
+					noun: s.e.UnmuteSubreddit,
+					targetUser: {
+						id: n.rb(e).id
+					},
+					...n.o(e)
+				}),
+				c = () => e => ({
+					source: s.f.AboutCommunityOverflow,
+					action: s.d.Click,
+					noun: s.e.MuteSubreddit,
+					targetUser: {
+						id: n.rb(e).id
+					},
+					...n.o(e)
+				}),
+				l = () => e => ({
+					source: s.f.AboutCommunityOverflow,
+					action: s.d.Click,
+					noun: s.e.UnmuteSubreddit,
+					targetUser: {
+						id: n.rb(e).id
+					},
+					...n.o(e)
+				})
+		},
 		"./src/reddit/helpers/trackers/widgets.ts": function(e, t, r) {
 			"use strict";
 			r.d(t, "b", (function() {
@@ -14358,4 +14434,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditWiki.970077a4c730baa3850a.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditWiki.499fbfc70a189b287e55.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostCreation.8e960e5abcb05d5fdbcd.js
-// Retrieved at 9/26/2022, 1:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostCreation.fe863958b4cafdd4cdf5.js
+// Retrieved at 9/26/2022, 3:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostCreation", "ChatMessageInput~MembershipPaywallPage~RichTextEditor", "ContributorRequestButton"], {
 		"./node_modules/autosize/dist/autosize.js": function(e, t, n) {
@@ -27399,6 +27399,78 @@
 				T = e => S("onboarding", "click", e),
 				w = () => S("avatar", "view", "onboarding")
 		},
+		"./src/reddit/helpers/trackers/subredditMuting.ts": function(e, t, n) {
+			"use strict";
+			n.d(t, "b", (function() {
+				return s
+			})), n.d(t, "e", (function() {
+				return i
+			})), n.d(t, "c", (function() {
+				return a
+			})), n.d(t, "f", (function() {
+				return c
+			})), n.d(t, "a", (function() {
+				return l
+			})), n.d(t, "d", (function() {
+				return d
+			}));
+			var o = n("./src/reddit/selectors/telemetry.ts"),
+				r = n("./src/telemetry/models/Event.ts");
+			const s = () => e => ({
+					source: r.f.HomeFeed,
+					action: r.d.Click,
+					noun: r.e.MuteSubreddit,
+					targetUser: {
+						id: o.rb(e).id
+					},
+					...o.o(e)
+				}),
+				i = () => e => ({
+					source: r.f.CommunityNotificationsSettings,
+					action: r.d.Click,
+					noun: r.e.UnmuteSubreddit,
+					targetUser: {
+						id: o.rb(e).id
+					},
+					...o.o(e)
+				}),
+				a = () => e => ({
+					source: r.f.PopularFeed,
+					action: r.d.Click,
+					noun: r.e.MuteSubreddit,
+					targetUser: {
+						id: o.rb(e).id
+					},
+					...o.o(e)
+				}),
+				c = () => e => ({
+					source: r.f.SubredditIdBanner,
+					action: r.d.Click,
+					noun: r.e.UnmuteSubreddit,
+					targetUser: {
+						id: o.rb(e).id
+					},
+					...o.o(e)
+				}),
+				l = () => e => ({
+					source: r.f.AboutCommunityOverflow,
+					action: r.d.Click,
+					noun: r.e.MuteSubreddit,
+					targetUser: {
+						id: o.rb(e).id
+					},
+					...o.o(e)
+				}),
+				d = () => e => ({
+					source: r.f.AboutCommunityOverflow,
+					action: r.d.Click,
+					noun: r.e.UnmuteSubreddit,
+					targetUser: {
+						id: o.rb(e).id
+					},
+					...o.o(e)
+				})
+		},
 		"./src/reddit/helpers/trackers/talkCreation.ts": function(e, t, n) {
 			"use strict";
 			n.d(t, "d", (function() {
@@ -36550,4 +36622,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.8e960e5abcb05d5fdbcd.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.fe863958b4cafdd4cdf5.js.map

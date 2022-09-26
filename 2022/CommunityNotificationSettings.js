@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CommunityNotificationSettings.341c6d3bc9da3f0f3944.js
-// Retrieved at 9/22/2022, 10:00:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CommunityNotificationSettings.81e2039624649af2822f.js
+// Retrieved at 9/26/2022, 3:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CommunityNotificationSettings"], {
 		"./node_modules/lodash/times.js": function(e, t, n) {
@@ -27,7 +27,7 @@
 			})), n.d(t, "c", (function() {
 				return v
 			})), n.d(t, "d", (function() {
-				return y
+				return C
 			}));
 			var i = n("./node_modules/fbt/lib/FbtPublic.js"),
 				s = n("./src/lib/makeActionCreator/index.ts"),
@@ -171,7 +171,7 @@
 						}
 					}
 				},
-				y = e => {
+				C = e => {
 					let {
 						subredditId: t,
 						notificationLevel: n
@@ -276,16 +276,16 @@
 					var S, x, k;
 					e(b());
 					const v = p(n),
-						y = await Object(c.b)(O(), t, v);
-					if ((null === (x = null === (S = y.error) || void 0 === S ? void 0 : S.fields) || void 0 === x ? void 0 : x.length) || function(e) {
+						C = await Object(c.b)(O(), t, v);
+					if ((null === (x = null === (S = C.error) || void 0 === S ? void 0 : S.fields) || void 0 === x ? void 0 : x.length) || function(e) {
 							return Boolean(e && e.data && e.data.updateSubredditNotificationSettings)
-						}(y.body) && (null === (k = y.body.data.updateSubredditNotificationSettings.errors) || void 0 === k ? void 0 : k.length)) return e(f()), e(Object(d.f)({
+						}(C.body) && (null === (k = C.body.data.updateSubredditNotificationSettings.errors) || void 0 === k ? void 0 : k.length)) return e(f()), e(Object(d.f)({
 						kind: u.b.Error,
 						text: i.fbt._("Failed to change the frequency of notifications from this community, please try again.", null, {
 							hk: "4avFFV"
 						})
 					}));
-					y.ok && (e(Object(o.c)({
+					C.ok && (e(Object(o.c)({
 						subredditId: t,
 						notificationLevel: n
 					})), e(m({
@@ -369,8 +369,8 @@
 				x = n("./src/reddit/hooks/useExperimentVariant.ts"),
 				k = n("./src/reddit/hooks/useTracking.ts"),
 				v = n("./src/reddit/components/Settings/Notifications/CommunityNotificationSettings/index.m.less"),
-				y = n.n(v);
-			const C = e => {
+				C = n.n(v);
+			const y = e => {
 				let {
 					subreddit: t,
 					onUnmute: n,
@@ -380,7 +380,7 @@
 				const c = Object(x.a)(h.R),
 					[l, u] = Object(r.useState)(!1),
 					v = Object(r.useRef)(),
-					C = Object(k.a)(),
+					y = Object(k.a)(),
 					{
 						id: _,
 						notificationLevel: N,
@@ -451,7 +451,7 @@
 						value: f.b.FREQUENT,
 						icon: a.a.createElement(b.a, {
 							name: "notification_frequent",
-							className: y.a.dropdownItemIcon
+							className: C.a.dropdownItemIcon
 						})
 					}, {
 						displayText: s.fbt._("Low", null, {
@@ -461,7 +461,7 @@
 						value: f.b.LOW,
 						icon: a.a.createElement(b.a, {
 							name: "notification",
-							className: y.a.dropdownItemIcon
+							className: C.a.dropdownItemIcon
 						})
 					}, {
 						displayText: s.fbt._("Off", null, {
@@ -471,14 +471,14 @@
 						value: f.b.OFF,
 						icon: a.a.createElement(b.a, {
 							name: "notification_off",
-							className: y.a.dropdownItemIcon
+							className: C.a.dropdownItemIcon
 						})
 					}];
 				return a.a.createElement("div", {
-					className: y.a.container,
+					className: C.a.container,
 					key: _
 				}, a.a.createElement("div", {
-					className: y.a.subreddit
+					className: C.a.subreddit
 				}, a.a.createElement(p.b, {
 					iconUrl: F,
 					altText: s.fbt._("Subreddit icon", null, {
@@ -486,13 +486,13 @@
 					}),
 					shouldHideNsfwIcon: w,
 					primaryColor: M,
-					className: y.a.subredditIcon
+					className: C.a.subredditIcon
 				}), a.a.createElement("div", {
-					className: y.a.subredditInfo
+					className: C.a.subredditInfo
 				}, a.a.createElement("h4", {
-					className: y.a.subredditInfoName
+					className: C.a.subredditInfoName
 				}, "r/", E), a.a.createElement("span", {
-					className: y.a.subredditInfoNotification
+					className: C.a.subredditInfoNotification
 				}, I ? s.fbt._("Community is muted", null, {
 					hk: "4ntSSB"
 				}) : s.fbt._("Notifications: {notification level}", [s.fbt._param("notification level", T)], {
@@ -503,9 +503,9 @@
 					options: P,
 					onSelect: e => {
 						var t;
-						I ? (v.current = e.value, u(!0)) : (C(Object(O.n)(_, E, null === (t = e.value) || void 0 === t ? void 0 : t.toLowerCase())), i(_, e.value))
+						I ? (v.current = e.value, u(!0)) : (y(Object(O.n)(_, E, null === (t = e.value) || void 0 === t ? void 0 : t.toLowerCase())), i(_, e.value))
 					},
-					buttonClassName: y.a.dropdown,
+					buttonClassName: C.a.dropdown,
 					buttonIcon: U
 				}), l && a.a.createElement(m.a, {
 					withOverlay: !0,
@@ -524,7 +524,7 @@
 					}),
 					onConfirm: () => {
 						var e;
-						C(Object(S.c)()), n({
+						y(Object(S.e)()), n({
 							subredditId: _,
 							notificationLevel: null !== (e = v.current) && void 0 !== e ? e : f.b.LOW
 						})
@@ -575,13 +575,13 @@
 				}), []);
 				const p = n && n.length > 0;
 				return c ? a.a.createElement("span", {
-					className: y.a.errorMessage,
+					className: C.a.errorMessage,
 					"data-testid": "error-message"
 				}, s.fbt._("There was an issue fetching your subreddits notifications settings. Please try again later.", null, {
 					hk: "1Wt132"
 				})) : l && !p ? a.a.createElement(_.a, {
 					rowsCount: 5
-				}) : p ? a.a.createElement(a.a.Fragment, null, n.map(e => a.a.createElement(C, {
+				}) : p ? a.a.createElement(a.a.Fragment, null, n.map(e => a.a.createElement(y, {
 					subreddit: e,
 					onSelect: m,
 					onUnmute: u,
@@ -598,7 +598,7 @@
 				}, a.a.createElement("div", null)), l && a.a.createElement(_.a, {
 					rowsCount: 1
 				})) : a.a.createElement("span", {
-					className: y.a.errorMessage,
+					className: C.a.errorMessage,
 					"data-testid": "error-message"
 				}, s.fbt._("You do not have subscribed subreddits.", null, {
 					hk: "20pdSk"
@@ -821,12 +821,18 @@
 		},
 		"./src/reddit/helpers/trackers/subredditMuting.ts": function(e, t, n) {
 			"use strict";
-			n.d(t, "a", (function() {
+			n.d(t, "b", (function() {
 				return o
-			})), n.d(t, "c", (function() {
+			})), n.d(t, "e", (function() {
 				return r
-			})), n.d(t, "b", (function() {
+			})), n.d(t, "c", (function() {
 				return a
+			})), n.d(t, "f", (function() {
+				return d
+			})), n.d(t, "a", (function() {
+				return c
+			})), n.d(t, "d", (function() {
+				return l
 			}));
 			var i = n("./src/reddit/selectors/telemetry.ts"),
 				s = n("./src/telemetry/models/Event.ts");
@@ -852,6 +858,33 @@
 					source: s.f.PopularFeed,
 					action: s.d.Click,
 					noun: s.e.MuteSubreddit,
+					targetUser: {
+						id: i.rb(e).id
+					},
+					...i.o(e)
+				}),
+				d = () => e => ({
+					source: s.f.SubredditIdBanner,
+					action: s.d.Click,
+					noun: s.e.UnmuteSubreddit,
+					targetUser: {
+						id: i.rb(e).id
+					},
+					...i.o(e)
+				}),
+				c = () => e => ({
+					source: s.f.AboutCommunityOverflow,
+					action: s.d.Click,
+					noun: s.e.MuteSubreddit,
+					targetUser: {
+						id: i.rb(e).id
+					},
+					...i.o(e)
+				}),
+				l = () => e => ({
+					source: s.f.AboutCommunityOverflow,
+					action: s.d.Click,
+					noun: s.e.UnmuteSubreddit,
 					targetUser: {
 						id: i.rb(e).id
 					},
@@ -885,4 +918,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommunityNotificationSettings.341c6d3bc9da3f0f3944.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommunityNotificationSettings.81e2039624649af2822f.js.map

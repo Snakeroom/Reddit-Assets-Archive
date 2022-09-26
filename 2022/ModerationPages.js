@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModerationPages.3ea442647437a20f29ec.js
-// Retrieved at 9/26/2022, 1:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModerationPages.a2424cc039cb0f9afc0b.js
+// Retrieved at 9/26/2022, 3:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModerationPages", "CollectionCommentsPage~CommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~RpanListingUnit~S~5809214e", "CommentsPage~Governance~Reddit~ReportFlow~Subreddit~reddit-components-BlankPost~reddit-components-Cl~5351df81", "Governance~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compo~bd4baca2", "Reddit~RpanListingUnit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPos~93b34f9d", "Governance~ModListing~Reddit~ReportFlow~Subreddit", "ModListing~PostCreation~Reddit~StandalonePostPage~Subreddit", "Governance~ModListing~Reddit", "Governance~Reddit~SubredditForkingCTA"], {
 		"./src/chat/controls/Svg/index.m.less": function(e, t, n) {
@@ -43282,7 +43282,7 @@
 							hk: "If1yt"
 						}),
 						onConfirm: () => {
-							this.handleMuteModal(), t.onMuteClick(a, n), this.toggleHide(), c && this.props.sendEvent(Object(xe.a)()), d && this.props.sendEvent(Object(xe.b)())
+							this.handleMuteModal(), t.onMuteClick(a, n), this.toggleHide(), c && this.props.sendEvent(Object(xe.b)()), d && this.props.sendEvent(Object(xe.c)())
 						},
 						withOverlay: !0
 					}))
@@ -65063,6 +65063,78 @@
 					actionInfo: s.d(e)
 				})
 		},
+		"./src/reddit/helpers/trackers/subredditMuting.ts": function(e, t, n) {
+			"use strict";
+			n.d(t, "b", (function() {
+				return o
+			})), n.d(t, "e", (function() {
+				return i
+			})), n.d(t, "c", (function() {
+				return a
+			})), n.d(t, "f", (function() {
+				return d
+			})), n.d(t, "a", (function() {
+				return c
+			})), n.d(t, "d", (function() {
+				return l
+			}));
+			var s = n("./src/reddit/selectors/telemetry.ts"),
+				r = n("./src/telemetry/models/Event.ts");
+			const o = () => e => ({
+					source: r.f.HomeFeed,
+					action: r.d.Click,
+					noun: r.e.MuteSubreddit,
+					targetUser: {
+						id: s.rb(e).id
+					},
+					...s.o(e)
+				}),
+				i = () => e => ({
+					source: r.f.CommunityNotificationsSettings,
+					action: r.d.Click,
+					noun: r.e.UnmuteSubreddit,
+					targetUser: {
+						id: s.rb(e).id
+					},
+					...s.o(e)
+				}),
+				a = () => e => ({
+					source: r.f.PopularFeed,
+					action: r.d.Click,
+					noun: r.e.MuteSubreddit,
+					targetUser: {
+						id: s.rb(e).id
+					},
+					...s.o(e)
+				}),
+				d = () => e => ({
+					source: r.f.SubredditIdBanner,
+					action: r.d.Click,
+					noun: r.e.UnmuteSubreddit,
+					targetUser: {
+						id: s.rb(e).id
+					},
+					...s.o(e)
+				}),
+				c = () => e => ({
+					source: r.f.AboutCommunityOverflow,
+					action: r.d.Click,
+					noun: r.e.MuteSubreddit,
+					targetUser: {
+						id: s.rb(e).id
+					},
+					...s.o(e)
+				}),
+				l = () => e => ({
+					source: r.f.AboutCommunityOverflow,
+					action: r.d.Click,
+					noun: r.e.UnmuteSubreddit,
+					targetUser: {
+						id: s.rb(e).id
+					},
+					...s.o(e)
+				})
+		},
 		"./src/reddit/helpers/trackers/talkCreation.ts": function(e, t, n) {
 			"use strict";
 			n.d(t, "d", (function() {
@@ -77358,4 +77430,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.3ea442647437a20f29ec.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.a2424cc039cb0f9afc0b.js.map

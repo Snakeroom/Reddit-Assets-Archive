@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Subreddit.63b2ed4c0aceab138645.js
-// Retrieved at 9/26/2022, 1:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Subreddit.fd99623f192738f97356.js
+// Retrieved at 9/26/2022, 3:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Subreddit", "Governance~ModListing~Reddit", "AchievementsActions", "reddit-components-Econ-PredictionLeaderboard-Sidebar"], {
 		"./node_modules/@reddit/i18n-tools/runtime/helpers/locale/index.js": function(e, t, n) {
@@ -3235,30 +3235,34 @@
 				ae = n("./src/reddit/components/CommunityIdTopBar/index.m.less"),
 				ce = n.n(ae),
 				de = n("./src/reddit/icons/svgs/VideoMute/index.tsx"),
-				le = n("./src/reddit/components/CommunityIdTopBar/MuteButton/index.m.less"),
-				ue = n.n(le);
+				le = n("./src/reddit/helpers/trackers/subredditMuting.ts"),
+				ue = n("./src/reddit/components/CommunityIdTopBar/MuteButton/index.m.less"),
+				me = n.n(ue);
 			const {
-				fbt: me
-			} = n("./node_modules/fbt/lib/FbtPublic.js"), pe = e => {
+				fbt: pe
+			} = n("./node_modules/fbt/lib/FbtPublic.js"), be = e => {
 				let {
 					onClickUnmute: t
 				} = e;
+				const n = Object(R.a)();
 				return s.a.createElement(T.t, {
 					priority: T.c.Plain,
-					className: ue.a.muteButton,
-					onClick: t
+					className: me.a.muteButton,
+					onClick: () => {
+						n(Object(le.f)()), t()
+					}
 				}, s.a.createElement(de.a, {
-					className: ue.a.muteIcon
+					className: me.a.muteIcon
 				}), s.a.createElement("span", {
-					className: ue.a.muteDefault
-				}, me._("Muted", null, {
+					className: me.a.muteDefault
+				}, pe._("Muted", null, {
 					hk: "incHh"
 				})), s.a.createElement("span", {
-					className: ue.a.muteHover
-				}, me._("Unmute", null, {
+					className: me.a.muteHover
+				}, pe._("Unmute", null, {
 					hk: "4qbgbm"
 				})))
-			}, be = d.a.img("SubredditIcon", ce.a), he = Object(i.c)({
+			}, he = d.a.img("SubredditIcon", ce.a), fe = Object(i.c)({
 				isNsfwBlurSubreddit: ne.e,
 				notificationLevel: se.J,
 				isMuted: se.I,
@@ -3301,11 +3305,11 @@
 						subredditId: n
 					}) : void 0
 				}
-			}), fe = {
+			}), ge = {
 				threshold: [.5, .001],
 				rootMargin: `${1-K.f}px 0px 0px 0px`
 			};
-			t.a = Object(o.b)(he, (e, t) => ({
+			t.a = Object(o.b)(fe, (e, t) => ({
 				_updateSubredditInfo: () => {
 					var n;
 					const r = t.subredditId || (null === (n = t.subreddit) || void 0 === n ? void 0 : n.id);
@@ -3354,7 +3358,7 @@
 				Object($.a)("resize", ((e, t, n) => () => {
 					var r;
 					e(t && n ? null === (r = t.getBoundingClientRect()) || void 0 === r ? void 0 : r.height : void 0)
-				})(g, x, m)), Object(X.a)(h, E, fe);
+				})(g, x, m)), Object(X.a)(h, E, ge);
 				const _ = e.subreddit && Object(Y.a)(e),
 					O = !!(e.theme && Object(l.a)(e).banner.showCommunityIcon && _),
 					y = n.charAt(0).toUpperCase() + n.slice(1),
@@ -3370,7 +3374,7 @@
 					}) : s.a.createElement(B.a, {
 						className: ce.a.DefaultIcon
 					}),
-					N = O ? s.a.createElement(be, {
+					N = O ? s.a.createElement(he, {
 						className: Object(a.a)(ce.a.SubredditIconImg, {
 							[ce.a.blur]: e.isNsfwBlurSubreddit
 						}),
@@ -3442,7 +3446,7 @@
 					afterUnsubscribeAction: () => {
 						t && (Object(U.eb)(e.userId, t), e.updateSubredditInfo())
 					}
-				})), w && s.a.createElement(pe, {
+				})), w && s.a.createElement(be, {
 					onClickUnmute: e.unmuteSubreddit
 				}), e.userIsSubscriber && !w && t && e.notificationLevel && s.a.createElement("div", {
 					className: ce.a.notificationButtonContainer
@@ -22177,4 +22181,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Subreddit.63b2ed4c0aceab138645.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Subreddit.fd99623f192738f97356.js.map
