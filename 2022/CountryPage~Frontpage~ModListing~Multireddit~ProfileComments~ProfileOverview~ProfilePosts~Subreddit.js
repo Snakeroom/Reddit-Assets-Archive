@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CountryPage~Frontpage~ModListing~Multireddit~ProfileComments~ProfileOverview~ProfilePosts~Subreddit.9cff9e93e43f54a2ac9e.js
-// Retrieved at 9/26/2022, 3:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CountryPage~Frontpage~ModListing~Multireddit~ProfileComments~ProfileOverview~ProfilePosts~Subreddit.88f70d63431167549dca.js
+// Retrieved at 9/26/2022, 6:30:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CountryPage~Frontpage~ModListing~Multireddit~ProfileComments~ProfileOverview~ProfilePosts~Subreddit"], {
 		"./src/reddit/actions/subreddit/muting.ts": function(e, t, n) {
@@ -286,8 +286,7 @@
 		},
 		"./src/reddit/components/BackToTop/index.m.less": function(e, t, n) {
 			e.exports = {
-				container: "_365FiUZ11efXHV7l7fNp6K",
-				button: "_1m03hmspTHlre1O1CXbY9Y"
+				container: "_365FiUZ11efXHV7l7fNp6K"
 			}
 		},
 		"./src/reddit/components/BackToTop/index.tsx": function(e, t, n) {
@@ -317,7 +316,6 @@
 					className: Object(o.a)(t, c.a.container),
 					style: r
 				}, s.a.createElement(i.l, {
-					className: c.a.button,
 					onClick: () => u(n)
 				}, l._("Back to Top", null, {
 					hk: "YjBtV"
@@ -619,14 +617,14 @@
 					isProfilePage: l.J,
 					pageLayer: e => e
 				}),
-				Y = Object(f.c)({
+				K = Object(f.c)({
 					isAwardListingExperimentEnabled: j.a,
 					isBestSortPopularEnabled: v.a,
 					user: D.k,
 					dropdownIsOpen: (e, t) => Object(T.b)(t.dropdownId || A)(e),
 					isPopularPage: l.F
 				}),
-				K = Object(o.b)(Y, (e, t) => {
+				Y = Object(o.b)(K, (e, t) => {
 					let {
 						dropdownId: n,
 						pageLayer: r
@@ -637,7 +635,7 @@
 						}))
 					}
 				});
-			var q = P.a.wrapped(z(K(Object(c.c)(e => s.a.createElement("div", {
+			var q = P.a.wrapped(z(Y(Object(c.c)(e => s.a.createElement("div", {
 					className: e.className,
 					onClick: e.onOpenDropdown
 				}, !1 !== e.showTitle && s.a.createElement(H, null, w.fbt._("Sort", null, {
@@ -1335,11 +1333,11 @@
 			var Ge = Ue(Object(o.b)(He)(Object(c.c)(We))),
 				Me = n("./src/reddit/components/GeneralCleanup/SortViewBar/index.m.less"),
 				ze = n.n(Me);
-			const Ye = Object(l.u)({
+			const Ke = Object(l.u)({
 					isProfilePage: l.J,
 					pageLayer: e => e
 				}),
-				Ke = Object(o.b)(null, (e, t) => {
+				Ye = Object(o.b)(null, (e, t) => {
 					let {
 						subredditId: n
 					} = t;
@@ -1401,7 +1399,7 @@
 					}))
 				}
 			}
-			t.a = Ye(Ke(Object(c.c)(qe)))
+			t.a = Ke(Ye(Object(c.c)(qe)))
 		},
 		"./src/reddit/components/ListingSort/ListingSortIcon.tsx": function(e, t, n) {
 			"use strict";
@@ -2246,4 +2244,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CountryPage~Frontpage~ModListing~Multireddit~ProfileComments~ProfileOverview~ProfilePosts~Subreddit.9cff9e93e43f54a2ac9e.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CountryPage~Frontpage~ModListing~Multireddit~ProfileComments~ProfileOverview~ProfilePosts~Subreddit.88f70d63431167549dca.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostSetPage.9c26281078f3e7445bdc.js
-// Retrieved at 9/26/2022, 3:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostSetPage.91bc88dc8de8088f2b99.js
+// Retrieved at 9/26/2022, 6:30:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostSetPage"], {
 		"./node_modules/intersection-observer/intersection-observer.js": function(e, t) {
@@ -672,8 +672,7 @@
 		},
 		"./src/reddit/components/BackToTop/index.m.less": function(e, t, n) {
 			e.exports = {
-				container: "_365FiUZ11efXHV7l7fNp6K",
-				button: "_1m03hmspTHlre1O1CXbY9Y"
+				container: "_365FiUZ11efXHV7l7fNp6K"
 			}
 		},
 		"./src/reddit/components/BackToTop/index.tsx": function(e, t, n) {
@@ -703,7 +702,6 @@
 					className: Object(i.a)(t, c.a.container),
 					style: r
 				}, s.a.createElement(d.l, {
-					className: c.a.button,
 					onClick: () => u(n)
 				}, l._("Back to Top", null, {
 					hk: "YjBtV"
@@ -2861,4 +2859,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostSetPage.9c26281078f3e7445bdc.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostSetPage.91bc88dc8de8088f2b99.js.map

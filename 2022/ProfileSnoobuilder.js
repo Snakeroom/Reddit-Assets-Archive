@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfileSnoobuilder.48a00ad7dedb91d331e1.js
-// Retrieved at 9/26/2022, 1:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfileSnoobuilder.952a0553d5f7fc67ba6b.js
+// Retrieved at 9/26/2022, 6:30:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfileSnoobuilder"], {
 		"./assets/snoobuilder/Snoobuilder.json": function(e, t, n) {
@@ -662,8 +662,7 @@
 		},
 		"./src/reddit/components/BackToTop/index.m.less": function(e, t, n) {
 			e.exports = {
-				container: "_365FiUZ11efXHV7l7fNp6K",
-				button: "_1m03hmspTHlre1O1CXbY9Y"
+				container: "_365FiUZ11efXHV7l7fNp6K"
 			}
 		},
 		"./src/reddit/components/BackToTop/index.tsx": function(e, t, n) {
@@ -693,7 +692,6 @@
 					className: Object(i.a)(t, d.a.container),
 					style: s
 				}, r.a.createElement(a.l, {
-					className: d.a.button,
 					onClick: () => u(n)
 				}, l._("Back to Top", null, {
 					hk: "YjBtV"
@@ -841,7 +839,7 @@
 				z = n.n(A);
 			const {
 				fbt: H
-			} = n("./node_modules/fbt/lib/FbtPublic.js"), W = l.a.wrapped(D, "PrivateKey", z.a), U = l.a.div("ButtonsContainer", z.a), q = l.a.div("Container", z.a), G = l.a.div("ContainerExp", z.a), V = l.a.div("Description", z.a), J = l.a.div("PrivateSubredditDetails", z.a), Z = l.a.div("PrivateSubredditDescription", z.a), Y = l.a.h3("PrivateSubredditName", z.a), K = l.a.a("Link", z.a), X = l.a.wrapped(L.n, "LinkRouterButton", z.a), $ = l.a.wrapped(L.m, "LinkButton", z.a), Q = l.a.wrapped(L.q, "SecondaryLinkRouterButton", z.a), ee = l.a.wrapped(L.p, "SecondaryLinkButton", z.a), te = l.a.wrapped(X, "GoHomeLinkButton", z.a), ne = l.a.wrapped(b.a, "CreateCommunityButton", z.a), se = l.a.img("Image", z.a), re = l.a.img("ImagePlaceholder", z.a), ie = l.a.wrapped(X, "LeftLinkRouterButton", z.a), oe = l.a.wrapped($, "LeftLinkButton", z.a), ae = l.a.wrapped(ee, "SecondaryLeftLinkButton", z.a), ce = l.a.wrapped(Q, "SecondaryLeftLinkRouterButton", z.a), de = l.a.h3("Title", z.a), le = l.a.div("PageBody", z.a), ue = l.a.div("InterstitialMessageWrapper", z.a), me = Object(d.c)({
+			} = n("./node_modules/fbt/lib/FbtPublic.js"), W = l.a.wrapped(D, "PrivateKey", z.a), U = l.a.div("ButtonsContainer", z.a), q = l.a.div("Container", z.a), G = l.a.div("ContainerExp", z.a), V = l.a.div("Description", z.a), J = l.a.div("PrivateSubredditDetails", z.a), Z = l.a.div("PrivateSubredditDescription", z.a), K = l.a.h3("PrivateSubredditName", z.a), Y = l.a.a("Link", z.a), X = l.a.wrapped(L.n, "LinkRouterButton", z.a), $ = l.a.wrapped(L.m, "LinkButton", z.a), Q = l.a.wrapped(L.q, "SecondaryLinkRouterButton", z.a), ee = l.a.wrapped(L.p, "SecondaryLinkButton", z.a), te = l.a.wrapped(X, "GoHomeLinkButton", z.a), ne = l.a.wrapped(b.a, "CreateCommunityButton", z.a), se = l.a.img("Image", z.a), re = l.a.img("ImagePlaceholder", z.a), ie = l.a.wrapped(X, "LeftLinkRouterButton", z.a), oe = l.a.wrapped($, "LeftLinkButton", z.a), ae = l.a.wrapped(ee, "SecondaryLeftLinkButton", z.a), ce = l.a.wrapped(Q, "SecondaryLeftLinkRouterButton", z.a), de = l.a.h3("Title", z.a), le = l.a.div("PageBody", z.a), ue = l.a.div("InterstitialMessageWrapper", z.a), me = Object(d.c)({
 				isLoggedIn: I.P,
 				origin: M.k,
 				user: I.k,
@@ -958,7 +956,7 @@
 					case P.a.PrivateSubreddit:
 						return i.a.createElement("div", null, i.a.createElement(W, null), i.a.createElement(de, null, "r/", T, " ", H._("is a private community", null, {
 							hk: "7zZmq"
-						})), L && L.length && i.a.createElement(J, null, i.a.createElement(Y, null, "r/", T), i.a.createElement(Z, null, i.a.createElement("div", null, L))), i.a.createElement(V, null, H._("The moderators of", null, {
+						})), L && L.length && i.a.createElement(J, null, i.a.createElement(K, null, "r/", T), i.a.createElement(Z, null, i.a.createElement("div", null, L))), i.a.createElement(V, null, H._("The moderators of", null, {
 							hk: "3QSrbr"
 						}), " ", "r/", T, " ", H._("have set this community as private.", null, {
 							hk: "3zhD9F"
@@ -992,7 +990,7 @@
 							src: `${s.a.assetPath}/img/content-gate-icons/quarantined.png`
 						}), i.a.createElement(de, null, H._("Are you sure you want to view this community?", null, {
 							hk: "2BtxLM"
-						})), i.a.createElement(V, null, H._("This community is {=quarantined}", [H._param("=quarantined", i.a.createElement(K, {
+						})), i.a.createElement(V, null, H._("This community is {=quarantined}", [H._param("=quarantined", i.a.createElement(Y, {
 							href: "https://www.reddithelp.com/en/categories/reddit-101/rules-reporting/account-and-community-restrictions/quarantined-subreddits"
 						}, H._("quarantined", null, {
 							hk: "2XqfJa"
@@ -1117,7 +1115,7 @@
 										hk: "2IAF6m"
 									});
 								case P.a.ProfileSuspended:
-									return i.a.createElement(i.a.Fragment, null, H._("This account has been {=suspended} .", [H._param("=suspended", i.a.createElement(K, {
+									return i.a.createElement(i.a.Fragment, null, H._("This account has been {=suspended} .", [H._param("=suspended", i.a.createElement(Y, {
 										href: "https://www.reddithelp.com/en/categories/reddit-101/rules-reporting/account-and-community-restrictions/suspensions"
 									}, H._("suspended", null, {
 										hk: "3nHGgi"
@@ -5670,4 +5668,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileSnoobuilder.48a00ad7dedb91d331e1.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileSnoobuilder.952a0553d5f7fc67ba6b.js.map

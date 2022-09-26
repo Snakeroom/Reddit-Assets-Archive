@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfilePrivate.aa06a7287f71316b1791.js
-// Retrieved at 9/26/2022, 3:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfilePrivate.ef98de747a14cdc2606f.js
+// Retrieved at 9/26/2022, 6:30:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfilePrivate"], {
 		"./src/reddit/actions/pages/profilePrivate/index.ts": function(e, t, i) {
@@ -580,8 +580,7 @@
 		},
 		"./src/reddit/components/BackToTop/index.m.less": function(e, t, i) {
 			e.exports = {
-				container: "_365FiUZ11efXHV7l7fNp6K",
-				button: "_1m03hmspTHlre1O1CXbY9Y"
+				container: "_365FiUZ11efXHV7l7fNp6K"
 			}
 		},
 		"./src/reddit/components/BackToTop/index.tsx": function(e, t, i) {
@@ -611,7 +610,6 @@
 					className: Object(n.a)(t, l.a.container),
 					style: s
 				}, r.a.createElement(d.l, {
-					className: l.a.button,
 					onClick: () => u(i)
 				}, c._("Back to Top", null, {
 					hk: "YjBtV"
@@ -2796,4 +2794,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfilePrivate.aa06a7287f71316b1791.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfilePrivate.ef98de747a14cdc2606f.js.map

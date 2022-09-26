@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfileFollowersPage.6ba49b076722fca8b4eb.js
-// Retrieved at 9/26/2022, 1:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfileFollowersPage.3393294ab0f1063f6eac.js
+// Retrieved at 9/26/2022, 6:30:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfileFollowersPage", "ProfileFollowersAction"], {
 		"./node_modules/lodash/take.js": function(e, t, r) {
@@ -1278,8 +1278,7 @@
 		},
 		"./src/reddit/components/BackToTop/index.m.less": function(e, t, r) {
 			e.exports = {
-				container: "_365FiUZ11efXHV7l7fNp6K",
-				button: "_1m03hmspTHlre1O1CXbY9Y"
+				container: "_365FiUZ11efXHV7l7fNp6K"
 			}
 		},
 		"./src/reddit/components/BackToTop/index.tsx": function(e, t, r) {
@@ -1309,7 +1308,6 @@
 					className: Object(i.a)(t, l.a.container),
 					style: s
 				}, n.a.createElement(a.l, {
-					className: l.a.button,
 					onClick: () => u(r)
 				}, c._("Back to Top", null, {
 					hk: "YjBtV"
@@ -6259,4 +6257,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileFollowersPage.6ba49b076722fca8b4eb.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileFollowersPage.3393294ab0f1063f6eac.js.map

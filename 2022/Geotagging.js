@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Geotagging.239a448e0e9b8dfcd2df.js
-// Retrieved at 9/26/2022, 1:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Geotagging.a8837fea8fb28db0c911.js
+// Retrieved at 9/26/2022, 6:30:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Geotagging"], {
 		"./node_modules/p-debounce/index.js": function(e, t, s) {
@@ -23,8 +23,7 @@
 		},
 		"./src/reddit/components/BackToTop/index.m.less": function(e, t, s) {
 			e.exports = {
-				container: "_365FiUZ11efXHV7l7fNp6K",
-				button: "_1m03hmspTHlre1O1CXbY9Y"
+				container: "_365FiUZ11efXHV7l7fNp6K"
 			}
 		},
 		"./src/reddit/components/BackToTop/index.tsx": function(e, t, s) {
@@ -54,7 +53,6 @@
 					className: Object(a.a)(t, c.a.container),
 					style: n
 				}, r.a.createElement(o.l, {
-					className: c.a.button,
 					onClick: () => u(s)
 				}, l._("Back to Top", null, {
 					hk: "YjBtV"
@@ -1753,4 +1751,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Geotagging.239a448e0e9b8dfcd2df.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Geotagging.a8837fea8fb28db0c911.js.map

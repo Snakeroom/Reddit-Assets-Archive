@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditWiki.499fbfc70a189b287e55.js
-// Retrieved at 9/26/2022, 3:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditWiki.1f8ce1f17a211f88f9ab.js
+// Retrieved at 9/26/2022, 6:30:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditWiki", "AchievementsActions"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, r) {
@@ -951,7 +951,7 @@
 			})), r.d(t, "subredditWikiDataFailed", (function() {
 				return Ve
 			})), r.d(t, "fetchSubredditWikiData", (function() {
-				return Ye
+				return Ze
 			})), r.d(t, "handleWikiRedirects", (function() {
 				return Xe
 			})), r.d(t, "subredditWikDataRequested", (function() {
@@ -1139,9 +1139,9 @@
 					}
 				},
 				J = r("./src/reddit/actions/wiki/wikiPageSettings/constants.ts");
-			const Y = {};
-			var Z = function() {
-					let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : Y,
+			const Z = {};
+			var Y = function() {
+					let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : Z,
 						t = arguments.length > 1 ? arguments[1] : void 0;
 					switch (t.type) {
 						case J.c: {
@@ -1740,7 +1740,7 @@
 					diff: H,
 					directory: G,
 					pages: K,
-					pageSettings: Z,
+					pageSettings: Y,
 					revisions: de,
 					wikiBannedContributors: je,
 					wikiContributors: He
@@ -1763,7 +1763,7 @@
 				Je = (e, t) => !!Object(w.b)(e, {
 					subredditName: t
 				}),
-				Ye = e => async (t, r, s) => {
+				Ze = e => async (t, r, s) => {
 					const {
 						canShowFailToast: a,
 						wikiPageName: d
@@ -1800,9 +1800,9 @@
 						buttonText: n.fbt._("Retry", null, {
 							hk: "mgOpG"
 						}),
-						buttonAction: Ye(e)
+						buttonAction: Ze(e)
 					}))), !(!m.ok || !i()(p.data.subreddit)) || !(!m.ok || !b)
-				}, Ze = function(e) {
+				}, Ye = function(e) {
 					let t = arguments.length > 1 && void 0 !== arguments[1] && arguments[1];
 					return async (r, n) => {
 						const s = n(),
@@ -1847,7 +1847,7 @@
 							O = (h || r) && !Je(w, d),
 							E = !!c && !Ke(w, d, c, p),
 							j = [];
-						j.push(s(Ze(d))), (O || E) && j.push(s(Ye({
+						j.push(s(Ye(d))), (O || E) && j.push(s(Ze({
 							includeDirectory: O,
 							includePageData: E,
 							revisionId: p,
@@ -2488,7 +2488,7 @@
 							return e
 					}
 				},
-				Y = Object(I.c)({
+				Z = Object(I.c)({
 					api: T,
 					fetchedTokens: L,
 					inContext: D,
@@ -2499,10 +2499,10 @@
 				});
 			Object(C.a)({
 				features: {
-					banned: Y
+					banned: Z
 				}
 			});
-			const Z = Object(a.a)(j.s),
+			const Y = Object(a.a)(j.s),
 				X = Object(a.a)(j.r),
 				Q = Object(a.a)(j.q),
 				$ = function(e) {
@@ -2516,7 +2516,7 @@
 							d = Object(_.e)(e, o),
 							c = a.features.banned.fetchedTokens[d];
 						if (a.features.banned.api.pending[d] || c) return;
-						r(Z({
+						r(Y({
 							subredditId: e,
 							fetchedToken: o
 						}));
@@ -3671,8 +3671,7 @@
 		},
 		"./src/reddit/components/BackToTop/index.m.less": function(e, t, r) {
 			e.exports = {
-				container: "_365FiUZ11efXHV7l7fNp6K",
-				button: "_1m03hmspTHlre1O1CXbY9Y"
+				container: "_365FiUZ11efXHV7l7fNp6K"
 			}
 		},
 		"./src/reddit/components/BackToTop/index.tsx": function(e, t, r) {
@@ -3702,7 +3701,6 @@
 					className: Object(i.a)(t, c.a.container),
 					style: n
 				}, s.a.createElement(o.l, {
-					className: c.a.button,
 					onClick: () => u(r)
 				}, l._("Back to Top", null, {
 					hk: "YjBtV"
@@ -4125,8 +4123,8 @@
 				V = r("./src/reddit/constants/componentSizes.ts"),
 				K = r("./src/reddit/constants/postLayout.ts"),
 				J = r("./src/reddit/constants/posts.ts"),
-				Y = r("./src/reddit/featureFlags/index.ts"),
-				Z = r("./src/reddit/helpers/getSubredditIcon/index.ts"),
+				Z = r("./src/reddit/featureFlags/index.ts"),
+				Y = r("./src/reddit/helpers/getSubredditIcon/index.ts"),
 				X = r("./src/reddit/constants/tracking.ts");
 			var Q = r("./src/reddit/hooks/useIntersectionObserver.ts"),
 				$ = r("./src/reddit/hooks/useWindowEvent.ts"),
@@ -4171,7 +4169,7 @@
 				isNsfwBlurSubreddit: re.e,
 				notificationLevel: se.J,
 				isMuted: se.I,
-				spPollsEnabled: Y.d.spPolls,
+				spPollsEnabled: Z.d.spPolls,
 				subredditInlineEditingEnabled: (e, t) => {
 					let {
 						subredditId: r
@@ -4264,7 +4262,7 @@
 					var n;
 					e(t && r ? null === (n = t.getBoundingClientRect()) || void 0 === n ? void 0 : n.height : void 0)
 				})(g, x, m)), Object(Q.a)(h, _, ge);
-				const y = e.subreddit && Object(Z.a)(e),
+				const y = e.subreddit && Object(Y.a)(e),
 					k = !!(e.theme && Object(l.a)(e).banner.showCommunityIcon && y),
 					w = r.charAt(0).toUpperCase() + r.slice(1),
 					O = !!e.subreddit && e.subredditInlineEditingEnabled,
@@ -4519,7 +4517,7 @@
 				U = r.n(A);
 			const {
 				fbt: W
-			} = r("./node_modules/fbt/lib/FbtPublic.js"), H = l.a.wrapped(F, "PrivateKey", U.a), z = l.a.div("ButtonsContainer", U.a), G = l.a.div("Container", U.a), q = l.a.div("ContainerExp", U.a), V = l.a.div("Description", U.a), K = l.a.div("PrivateSubredditDetails", U.a), J = l.a.div("PrivateSubredditDescription", U.a), Y = l.a.h3("PrivateSubredditName", U.a), Z = l.a.a("Link", U.a), X = l.a.wrapped(S.n, "LinkRouterButton", U.a), Q = l.a.wrapped(S.m, "LinkButton", U.a), $ = l.a.wrapped(S.q, "SecondaryLinkRouterButton", U.a), ee = l.a.wrapped(S.p, "SecondaryLinkButton", U.a), te = l.a.wrapped(X, "GoHomeLinkButton", U.a), re = l.a.wrapped(h.a, "CreateCommunityButton", U.a), ne = l.a.img("Image", U.a), se = l.a.img("ImagePlaceholder", U.a), ie = l.a.wrapped(X, "LeftLinkRouterButton", U.a), ae = l.a.wrapped(Q, "LeftLinkButton", U.a), oe = l.a.wrapped(ee, "SecondaryLeftLinkButton", U.a), de = l.a.wrapped($, "SecondaryLeftLinkRouterButton", U.a), ce = l.a.h3("Title", U.a), le = l.a.div("PageBody", U.a), ue = l.a.div("InterstitialMessageWrapper", U.a), me = Object(c.c)({
+			} = r("./node_modules/fbt/lib/FbtPublic.js"), H = l.a.wrapped(F, "PrivateKey", U.a), z = l.a.div("ButtonsContainer", U.a), G = l.a.div("Container", U.a), q = l.a.div("ContainerExp", U.a), V = l.a.div("Description", U.a), K = l.a.div("PrivateSubredditDetails", U.a), J = l.a.div("PrivateSubredditDescription", U.a), Z = l.a.h3("PrivateSubredditName", U.a), Y = l.a.a("Link", U.a), X = l.a.wrapped(S.n, "LinkRouterButton", U.a), Q = l.a.wrapped(S.m, "LinkButton", U.a), $ = l.a.wrapped(S.q, "SecondaryLinkRouterButton", U.a), ee = l.a.wrapped(S.p, "SecondaryLinkButton", U.a), te = l.a.wrapped(X, "GoHomeLinkButton", U.a), re = l.a.wrapped(h.a, "CreateCommunityButton", U.a), ne = l.a.img("Image", U.a), se = l.a.img("ImagePlaceholder", U.a), ie = l.a.wrapped(X, "LeftLinkRouterButton", U.a), ae = l.a.wrapped(Q, "LeftLinkButton", U.a), oe = l.a.wrapped(ee, "SecondaryLeftLinkButton", U.a), de = l.a.wrapped($, "SecondaryLeftLinkRouterButton", U.a), ce = l.a.h3("Title", U.a), le = l.a.div("PageBody", U.a), ue = l.a.div("InterstitialMessageWrapper", U.a), me = Object(c.c)({
 				isLoggedIn: R.P,
 				origin: M.k,
 				user: R.k,
@@ -4636,7 +4634,7 @@
 					case L.a.PrivateSubreddit:
 						return i.a.createElement("div", null, i.a.createElement(H, null), i.a.createElement(ce, null, "r/", P, " ", W._("is a private community", null, {
 							hk: "7zZmq"
-						})), S && S.length && i.a.createElement(K, null, i.a.createElement(Y, null, "r/", P), i.a.createElement(J, null, i.a.createElement("div", null, S))), i.a.createElement(V, null, W._("The moderators of", null, {
+						})), S && S.length && i.a.createElement(K, null, i.a.createElement(Z, null, "r/", P), i.a.createElement(J, null, i.a.createElement("div", null, S))), i.a.createElement(V, null, W._("The moderators of", null, {
 							hk: "3QSrbr"
 						}), " ", "r/", P, " ", W._("have set this community as private.", null, {
 							hk: "3zhD9F"
@@ -4670,7 +4668,7 @@
 							src: `${n.a.assetPath}/img/content-gate-icons/quarantined.png`
 						}), i.a.createElement(ce, null, W._("Are you sure you want to view this community?", null, {
 							hk: "2BtxLM"
-						})), i.a.createElement(V, null, W._("This community is {=quarantined}", [W._param("=quarantined", i.a.createElement(Z, {
+						})), i.a.createElement(V, null, W._("This community is {=quarantined}", [W._param("=quarantined", i.a.createElement(Y, {
 							href: "https://www.reddithelp.com/en/categories/reddit-101/rules-reporting/account-and-community-restrictions/quarantined-subreddits"
 						}, W._("quarantined", null, {
 							hk: "2XqfJa"
@@ -4795,7 +4793,7 @@
 										hk: "2IAF6m"
 									});
 								case L.a.ProfileSuspended:
-									return i.a.createElement(i.a.Fragment, null, W._("This account has been {=suspended} .", [W._param("=suspended", i.a.createElement(Z, {
+									return i.a.createElement(i.a.Fragment, null, W._("This account has been {=suspended} .", [W._param("=suspended", i.a.createElement(Y, {
 										href: "https://www.reddithelp.com/en/categories/reddit-101/rules-reporting/account-and-community-restrictions/suspensions"
 									}, W._("suspended", null, {
 										hk: "3nHGgi"
@@ -5532,8 +5530,8 @@
 				V = r("./src/reddit/actions/inContextModeration.ts"),
 				K = r("./src/reddit/actions/modal.ts"),
 				J = r("./src/reddit/actions/subredditModeration/ban.ts"),
-				Y = r("./src/reddit/constants/modals.ts"),
-				Z = r("./src/reddit/components/Hovercards/helpers.ts"),
+				Z = r("./src/reddit/constants/modals.ts"),
+				Y = r("./src/reddit/components/Hovercards/helpers.ts"),
 				X = r("./src/reddit/icons/fonts/index.tsx"),
 				Q = r("./src/reddit/models/ModeratingSubreddits/index.ts"),
 				$ = r("./src/reddit/selectors/bannedUser.ts"),
@@ -5568,7 +5566,7 @@
 					} = this.props;
 					return s.a.createElement("div", {
 						className: e
-					}, n ? s.a.createElement(Z.a, {
+					}, n ? s.a.createElement(Y.a, {
 						role: "button",
 						onClick: () => {
 							i(this.props.user.id), a(M.e(t))
@@ -5579,7 +5577,7 @@
 						className: te.a.icon
 					}), re._("Unban User", null, {
 						hk: "1aASyW"
-					})) : s.a.createElement(Z.a, {
+					})) : s.a.createElement(Y.a, {
 						role: "button",
 						onClick: () => {
 							o(), a(M.a(t))
@@ -5589,7 +5587,7 @@
 						className: te.a.icon
 					}), re._("Ban User", null, {
 						hk: "3OhuLx"
-					})), r && s.a.createElement(Z.a, {
+					})), r && s.a.createElement(Y.a, {
 						role: "button",
 						onClick: () => {
 							d(), a(M.d(t))
@@ -5625,7 +5623,7 @@
 								username: r,
 								subredditId: n,
 								contextId: s
-							})), e(Object(K.i)(Y.a.MUTE_USER))
+							})), e(Object(K.i)(Z.a.MUTE_USER))
 						}
 					}
 				})(se),
@@ -5635,7 +5633,7 @@
 			} = r("./node_modules/fbt/lib/FbtPublic.js");
 			var de = Object(i.b)(null, (e, t) => ({
 					onToggleUserFlairModal: () => e(Object(ae.g)(t.subredditId, t.username))
-				}))(e => s.a.createElement(Z.a, {
+				}))(e => s.a.createElement(Y.a, {
 					role: "button",
 					onClick: () => {
 						e.onToggleUserFlairModal(), e.sendEvent(M.c(e.contextId))
@@ -10797,12 +10795,12 @@
 			} = r("./node_modules/fbt/lib/FbtPublic.js");
 			const K = Object(d.u)(),
 				J = [q.Rb.SUBREDDIT, q.Rb.COMMENTS, q.Rb.COLLECTION_COMMENTS],
-				Y = Object(a.c)({
+				Z = Object(a.c)({
 					isMetaFilterEnabled: (e, t) => !!e.subreddits.appliedFilters.meta[t.subredditId],
 					isPostsRoute: (e, t) => !!t.pageLayer && !!t.pageLayer.meta && J.indexOf(t.pageLayer.meta.name) > -1,
 					isPredictionsPage: (e, t) => !!t.pageLayer && Object(d.P)(t.pageLayer)
 				});
-			var Z = K(Object(i.b)(Y, (e, t) => ({
+			var Y = K(Object(i.b)(Z, (e, t) => ({
 					onTurnOffMetaFilter: () => e(Object(T.p)({
 						subredditId: t.subredditId,
 						forceState: !1
@@ -10899,7 +10897,7 @@
 				layout: e.layout,
 				disableFullscreen: e.disableFullscreen,
 				maxWidth: e.maxWidth
-			}, e.subredditId && s.a.createElement(s.a.Fragment, null, s.a.createElement(Z, {
+			}, e.subredditId && s.a.createElement(s.a.Fragment, null, s.a.createElement(Y, {
 				homeUrl: e.homeUrl,
 				isTopBannerVariant: e.isTopBannerVariant,
 				subredditId: e.subredditId
@@ -11027,7 +11025,7 @@
 				K = r.n(V);
 			const {
 				fbt: J
-			} = r("./node_modules/fbt/lib/FbtPublic.js"), Y = e => e.type === G.f.Nsfw || e.type === G.f.Spoiler, Z = Object(c.c)({
+			} = r("./node_modules/fbt/lib/FbtPublic.js"), Z = e => e.type === G.f.Nsfw || e.type === G.f.Spoiler, Y = Object(c.c)({
 				post: B.G,
 				subredditOrProfile: B.V
 			});
@@ -11057,7 +11055,7 @@
 						subredditOrProfile: s
 					} = this.props, i = {
 						post: t
-					}, a = Object(U.a)(Object(z.b)(i)), d = t.flair.filter(Y);
+					}, a = Object(U.a)(Object(z.b)(i)), d = t.flair.filter(Z);
 					return o.a.createElement("div", {
 						className: Object(N.a)(K.a.container, e, {
 							[K.a.redditStyle]: r
@@ -11097,7 +11095,7 @@
 					}))))
 				}
 			}
-			var Q = Object(d.b)(Z, e => ({
+			var Q = Object(d.b)(Y, e => ({
 					openLightbox: t => e(Object(F.a)(t.permalink))
 				}), null, {
 					forwardRef: !0
@@ -12455,10 +12453,10 @@
 				truncateThreshold: e.truncateThreshold,
 				widget: e.widget
 			}));
-			const Y = Object(a.c)({
+			const Z = Object(a.c)({
 					stylesheet: e => e.stylesheets
 				}),
-				Z = Object(i.b)(Y),
+				Y = Object(i.b)(Z),
 				X = (e, t, r) => `<head>\n  <link rel="stylesheet" href="${e}">\n  <link rel="stylesheet" href="${t}">\n  <base target="_blank">\n</head>\n<body>${r}</body>`;
 			class Q extends s.a.Component {
 				constructor() {
@@ -12497,7 +12495,7 @@
 					}))
 				}
 			}
-			var $ = Z(Q),
+			var $ = Y(Q),
 				ee = r("./src/reddit/components/Widgets/Image/ImageFrame.m.less"),
 				te = r.n(ee);
 			var re = m.a.div("ImageFrame", te.a),
@@ -14434,4 +14432,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditWiki.499fbfc70a189b287e55.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditWiki.1f8ce1f17a211f88f9ab.js.map
