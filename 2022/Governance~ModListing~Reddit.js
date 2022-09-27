@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit.89a3ef7fd151ce8abe86.js
-// Retrieved at 9/26/2022, 1:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit.55410a97e5f2aa47e529.js
+// Retrieved at 9/27/2022, 10:50:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~ModListing~Reddit"], {
 		"./src/lib/CSSVariableProvider/withTheme.tsx": function(e, t, n) {
@@ -2926,7 +2926,7 @@
 						}),
 						timer: v.pb(n, r),
 						search: {
-							...v.cb(c, t, j.a.SERP, !0, o || void 0),
+							...v.cb(c, t, j.a.SERP, o || void 0),
 							sort: null !== (a = t.sort) && void 0 !== a ? a : i.Ub,
 							range: null !== (d = t.t) && void 0 !== d ? d : i.Vb
 						},
@@ -2941,9 +2941,7 @@
 						...v.d(r),
 						pageType: "search_dropdown"
 					},
-					search: {
-						...v.cb(r, e, j.a.Typeahead, !0, t || void 0)
-					},
+					search: v.cb(r, e, j.a.Typeahead, t || void 0),
 					...ee(n),
 					userPreferences: v.eb(r)
 				}),
@@ -3557,4 +3555,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit.89a3ef7fd151ce8abe86.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit.55410a97e5f2aa47e529.js.map

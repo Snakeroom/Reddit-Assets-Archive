@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SearchResults.d9229a19ac1dfc961aa0.js
-// Retrieved at 9/26/2022, 7:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SearchResults.a1f78054cdd7cf04c6e8.js
+// Retrieved at 9/27/2022, 10:50:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SearchResults"], {
 		"./src/devPlatform/components/ContextActions/ContextActionsLoader.tsx": function(e, t, s) {
@@ -3652,22 +3652,18 @@
 					},
 					X = () => {
 						const e = _.slice(0, H).map((e, t) => ((e, t) => {
-							let s, n = k;
-							! function(e) {
+							let s;
+							s = function(e) {
 								return void 0 !== e.type
-							}(e) ? s = e: (s = e.id, n = {
-								...k,
-								id: e.id,
-								eventType: e.type
-							});
-							const r = `${T}-search-${t}-${S}`,
-								o = Object(Oe.b)(s, S, () => B(E, n, e, S, y));
-							let c;
-							if (void 0 === (c = i.get(r))) {
+							}(e) ? e.id : e;
+							const n = `${T}-search-${t}-${S}`,
+								r = Object(Oe.b)(s, S, () => B(E, k, e, S, y));
+							let o;
+							if (void 0 === (o = i.get(n))) {
 								const n = `${T}-search-item-[id:${s}]`;
-								c = {
+								o = {
 									estHeight: 32,
-									trackOnEnteredViewport: o,
+									trackOnEnteredViewport: r,
 									id: s,
 									render: () => a.a.createElement(I, {
 										className: ve.a.separatedCommunity,
@@ -3680,7 +3676,7 @@
 									})
 								}
 							}
-							return i.set(r, c), c
+							return i.set(n, o), o
 						})(e, t));
 						return a.a.createElement(p.b, {
 							key: S,
@@ -4153,20 +4149,12 @@
 						searchDiscoveryUnit: c,
 						sendEvent: i
 					} = n;
-					return i(Object(R.s)(e, {
-						...o,
-						id: e,
-						eventType: "post"
-					}, a, R.E[t], r, c)), Object(Fe.k)(e, t)
+					return i(Object(R.s)(e, o, a, R.E[t], r, c)), Object(Fe.k)(e, t)
 				},
 				Ge = Object(a.b)(He, (e, t) => ({
 					...Object(De.b)(e),
 					trackOnPostEnteredViewport: e => {
-						t.sendEvent(Object(R.x)(t.listingKey, e, {
-							...t.searchOptions,
-							id: e,
-							eventType: "post"
-						}, t.pageLayer, t.searchDiscoveryUnit))
+						t.sendEvent(Object(R.x)(t.listingKey, e, t.searchOptions, t.pageLayer, t.searchDiscoveryUnit))
 					}
 				}), (e, t, s) => ({
 					...e,
@@ -7226,4 +7214,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SearchResults.d9229a19ac1dfc961aa0.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SearchResults.a1f78054cdd7cf04c6e8.js.map

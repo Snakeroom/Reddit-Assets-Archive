@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Subreddit.f815c2db43d99399fdc0.js
-// Retrieved at 9/26/2022, 6:10:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Subreddit.876eff63271c43f1ffc6.js
+// Retrieved at 9/27/2022, 10:50:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Subreddit", "Governance~ModListing~Reddit", "AchievementsActions", "reddit-components-Econ-PredictionLeaderboard-Sidebar"], {
 		"./node_modules/@reddit/i18n-tools/runtime/helpers/locale/index.js": function(e, t, n) {
@@ -18619,7 +18619,7 @@
 						}),
 						timer: C.pb(n, r),
 						search: {
-							...C.cb(a, t, O.a.SERP, !0, s || void 0),
+							...C.cb(a, t, O.a.SERP, s || void 0),
 							sort: null !== (c = t.sort) && void 0 !== c ? c : o.Ub,
 							range: null !== (d = t.t) && void 0 !== d ? d : o.Vb
 						},
@@ -18634,9 +18634,7 @@
 						...C.d(r),
 						pageType: "search_dropdown"
 					},
-					search: {
-						...C.cb(r, e, O.a.Typeahead, !0, t || void 0)
-					},
+					search: C.cb(r, e, O.a.Typeahead, t || void 0),
 					...ee(n),
 					userPreferences: C.eb(r)
 				}),
@@ -22181,4 +22179,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Subreddit.f815c2db43d99399fdc0.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Subreddit.876eff63271c43f1ffc6.js.map

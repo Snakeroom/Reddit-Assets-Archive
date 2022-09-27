@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Reddit.8a635a237b8898c0ffab.js
-// Retrieved at 9/26/2022, 7:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Reddit.9b944cd7a27fcfce8ac5.js
+// Retrieved at 9/27/2022, 10:50:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Reddit"], {
 		"./assets/fonts/BentonSans/font.less": function(e, t, n) {},
@@ -14201,25 +14201,13 @@
 								},
 								d = {},
 								u = !0;
-							if (E && E.searchQuery === re)(c = E).id || (c.id = Object(Oa.a)()), c.section === Sa.c.recent ? (d = Object(Ta.c)(Ta.a.SEARCH_DROPDOWN, ae, c.isProfile || c.isSubreddit), a = ya.a.Recent, Ee(o, c, l)) : c.section === Sa.c.typeahead ? (d = Object(Ta.c)(Ta.a.TYPEAHEAD, ae), u = !1, _e(o, c, l, l, b.filter(e => e.isSubreddit))) : c.section === Sa.c.trending ? (d = Object(Ta.c)(Ta.a.TYPEAHEAD, ae), a = (null === (n = c.post) || void 0 === n ? void 0 : n.isSponsored) ? ya.a.PromotedTrend : ya.a.Trending, M((e, t) => Object(Da.u)({
-								state: t(),
-								trendingSearch: c,
-								telemetrySource: ka.a.Typeahead
-							}))) : xe(o, o, ln.c.Search, Ua.a.RECENT);
-							else {
-								c = Ne(o);
-								const e = H.enabled,
-									t = {
-										...Object(ya.e)({
-											q: re,
-											restrict_sr: e ? "1" : ""
-										}),
-										id: (null == B ? void 0 : B.id) || "",
-										eventType: H.type === P.cc.Subreddit && e ? "subreddit" : void 0
-									};
-								w(Object(Ua.p)(ln.a.FullSearchButton, t, e, ka.a.Typeahead, r || void 0))
-							}
-							if (fe(c), me(u), !c.searchQuery) return;
+							if (E && E.searchQuery === re ? ((c = E).id || (c.id = Object(Oa.a)()), c.section === Sa.c.recent ? (d = Object(Ta.c)(Ta.a.SEARCH_DROPDOWN, ae, c.isProfile || c.isSubreddit), a = ya.a.Recent, Ee(o, c, l)) : c.section === Sa.c.typeahead ? (d = Object(Ta.c)(Ta.a.TYPEAHEAD, ae), u = !1, _e(o, c, l, l, b.filter(e => e.isSubreddit))) : c.section === Sa.c.trending ? (d = Object(Ta.c)(Ta.a.TYPEAHEAD, ae), a = (null === (n = c.post) || void 0 === n ? void 0 : n.isSponsored) ? ya.a.PromotedTrend : ya.a.Trending, M((e, t) => Object(Da.u)({
+									state: t(),
+									trendingSearch: c,
+									telemetrySource: ka.a.Typeahead
+								}))) : xe(o, o, ln.c.Search, Ua.a.RECENT)) : (c = Ne(o), w(Object(Ua.p)(ln.a.FullSearchButton, Object(ya.e)({
+									q: re
+								}), ka.a.Typeahead, r || void 0))), fe(c), me(u), !c.searchQuery) return;
 							let m = {
 								source: a
 							};
@@ -14239,7 +14227,7 @@
 						})(e)
 					},
 					onFocusSearchBar: () => {
-						Object(Ko.c)(Ko.a.SearchResults) || Object(Ko.d)(Ko.a.SearchResults), Qa.a.update(ka.a.Typeahead), w(Object(Ua.p)(ln.a.SearchBar, le, H.enabled, ka.a.Typeahead, r || void 0)), R || ((() => M(Object(xa.m)()))(), w(Object(Fa.u)(le, null != r ? r : void 0, Object(Ha.b)({
+						Object(Ko.c)(Ko.a.SearchResults) || Object(Ko.d)(Ko.a.SearchResults), Qa.a.update(ka.a.Typeahead), w(Object(Ua.p)(ln.a.SearchBar, le, ka.a.Typeahead, r || void 0)), R || ((() => M(Object(xa.m)()))(), w(Object(Fa.u)(le, null != r ? r : void 0, Object(Ha.b)({
 							pageLayer: r
 						})))), ke(re)
 					},
@@ -22913,4 +22901,4 @@
 		["./src/reddit/index.tsx", "runtime~Reddit", "vendors~CommentsPage~ModerationPages~Reddit~reddit-components-ClassicPost~reddit-components-CompactP~d737df3e", "vendors~CommentsPage~Governance~ModListing~ModerationPages~Reddit~Subreddit", "vendors~Chat~Governance~Reddit", "vendors~Reddit", "CommentsPage~Governance~Reddit~ReportFlow~Subreddit~reddit-components-BlankPost~reddit-components-Cl~5351df81", "Governance~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compo~bd4baca2", "Reddit~RpanListingUnit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPos~93b34f9d", "ModListing~PostCreation~Reddit~StandalonePostPage~Subreddit", "Governance~ModListing~Reddit~ReportFlow~Subreddit", "Chat~Governance~Reddit", "Governance~Reddit~SubredditForkingCTA", "Governance~ModListing~Reddit", "Governance~Reddit"]
 	]
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit.8a635a237b8898c0ffab.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit.9b944cd7a27fcfce8ac5.js.map

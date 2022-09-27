@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CommentsPage.708583e6a5171bdd9a91.js
-// Retrieved at 9/26/2022, 7:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CommentsPage.f21f91c8f253654703a0.js
+// Retrieved at 9/27/2022, 10:50:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CommentsPage", "Governance~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compo~bd4baca2", "Reddit~RpanListingUnit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPos~93b34f9d", "CollectionCommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~SearchResults", "Governance~ModListing~Reddit~ReportFlow~Subreddit", "ModListing~PostCreation~Reddit~StandalonePostPage~Subreddit", "CollectionCommentsPage~ModProgressModule~NewCommunityProgress", "Governance~ModListing~Reddit", "CollectionCommentsPage~SearchResults", "AchievementsActions"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -35777,7 +35777,7 @@
 						}),
 						timer: j.pb(n, s),
 						search: {
-							...j.cb(a, t, O.a.SERP, !0, r || void 0),
+							...j.cb(a, t, O.a.SERP, r || void 0),
 							sort: null !== (c = t.sort) && void 0 !== c ? c : o.Ub,
 							range: null !== (d = t.t) && void 0 !== d ? d : o.Vb
 						},
@@ -35792,9 +35792,7 @@
 						...j.d(s),
 						pageType: "search_dropdown"
 					},
-					search: {
-						...j.cb(s, e, O.a.Typeahead, !0, t || void 0)
-					},
+					search: j.cb(s, e, O.a.Typeahead, t || void 0),
 					...ee(n),
 					userPreferences: j.eb(s)
 				}),
@@ -44396,4 +44394,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommentsPage.708583e6a5171bdd9a91.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommentsPage.f21f91c8f253654703a0.js.map

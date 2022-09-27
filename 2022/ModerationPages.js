@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModerationPages.2d1e7503e08c4c8131de.js
-// Retrieved at 9/26/2022, 7:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModerationPages.92f835bc9aabc2ce80b3.js
+// Retrieved at 9/27/2022, 10:50:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModerationPages", "CollectionCommentsPage~CommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~RpanListingUnit~S~5809214e", "CommentsPage~Governance~Reddit~ReportFlow~Subreddit~reddit-components-BlankPost~reddit-components-Cl~5351df81", "Governance~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compo~bd4baca2", "Reddit~RpanListingUnit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPos~93b34f9d", "Governance~ModListing~Reddit~ReportFlow~Subreddit", "ModListing~PostCreation~Reddit~StandalonePostPage~Subreddit", "Governance~ModListing~Reddit", "Governance~Reddit~SubredditForkingCTA"], {
 		"./src/chat/controls/Svg/index.m.less": function(e, t, n) {
@@ -64438,7 +64438,7 @@
 						}),
 						timer: j.pb(n, s),
 						search: {
-							...j.cb(a, t, E.a.SERP, !0, r || void 0),
+							...j.cb(a, t, E.a.SERP, r || void 0),
 							sort: null !== (d = t.sort) && void 0 !== d ? d : o.Ub,
 							range: null !== (c = t.t) && void 0 !== c ? c : o.Vb
 						},
@@ -64453,9 +64453,7 @@
 						...j.d(s),
 						pageType: "search_dropdown"
 					},
-					search: {
-						...j.cb(s, e, E.a.Typeahead, !0, t || void 0)
-					},
+					search: j.cb(s, e, E.a.Typeahead, t || void 0),
 					...ee(n),
 					userPreferences: j.eb(s)
 				}),
@@ -77126,4 +77124,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.2d1e7503e08c4c8131de.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.92f835bc9aabc2ce80b3.js.map

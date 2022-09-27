@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~Reddit.ef7e7e434aa15db726b6.js
-// Retrieved at 9/26/2022, 7:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~Reddit.184e257da15f9ab544f8.js
+// Retrieved at 9/27/2022, 10:50:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~Reddit"], {
 		"./assets/fonts/NotoMono/font.less": function(e, t, n) {},
@@ -4309,43 +4309,35 @@
 					I = Object(ae.a)(),
 					S = Object(re.Z)(I),
 					D = Object(a.d)(),
-					w = Object(a.e)(e => Object(re.t)(e, {
-						pageLayer: I
-					})),
 					{
-						experimentState: j,
-						isActive: A,
-						isBucketed: C
+						experimentState: w,
+						isActive: j,
+						isBucketed: A
 					} = Object(a.e)(oe.a),
-					R = Object(a.e)(ie.j),
-					P = Object(a.e)(O.kb),
+					C = Object(a.e)(ie.j),
+					R = Object(a.e)(O.kb),
 					{
-						nsfwSessionSetting: N
+						nsfwSessionSetting: P
 					} = Object(f.b)(),
-					L = Object(a.e)(ce.r),
-					k = Object(a.e)(ce.d),
-					U = Object(u.e)({
+					N = Object(a.e)(ce.r),
+					L = Object(a.e)(ce.d),
+					k = Object(u.e)({
 						...z()(S || {}, ne.t),
 						q: n.searchQuery,
-						restrict_sr: R.enabled ? "1" : ""
-					}),
-					M = {
-						...U,
-						id: (null == w ? void 0 : w.id) || "",
-						eventType: R.enabled ? "subreddit" : void 0
-					};
+						restrict_sr: C.enabled ? "1" : ""
+					});
 				return Object(r.useEffect)(() => {
-					_(Object(y.v)(M, R.enabled, o, I || void 0))
+					_(Object(y.v)(k, o, I || void 0))
 				}, []), s.a.createElement("button", {
 					type: "submit",
 					onClick: function(e) {
-						_(Object(y.p)(E.a.FullSearchButton, M, R.enabled, x.a.Typeahead, I || void 0)), l(e),
+						_(Object(y.p)(E.a.FullSearchButton, k, x.a.Typeahead, I || void 0)), l(e),
 							function() {
 								let e = {};
-								C && U.type.length && (Object(se.d)(j, {
+								A && k.type.length && (Object(se.d)(w, {
 									experimentName: te.Dc
-								}), A && (e = {
-									...U
+								}), j && (e = {
+									...k
 								}));
 								const {
 									url: t,
@@ -4353,12 +4345,12 @@
 								} = Object(h.a)({
 									searchItem: n,
 									searchOptions: e,
-									activeSearchScope: R,
-									includeNsfwResults: P && N
+									activeSearchScope: C,
+									includeNsfwResults: R && P
 								}), s = {
 									...Object(b.c)(b.a.TYPEAHEAD, d),
-									routeName: L,
-									subredditName: k
+									routeName: N,
+									subredditName: L
 								};
 								D(Object(J.b)(Object(X.c)({
 									pathname: t,
@@ -25407,4 +25399,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit.ef7e7e434aa15db726b6.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit.184e257da15f9ab544f8.js.map
