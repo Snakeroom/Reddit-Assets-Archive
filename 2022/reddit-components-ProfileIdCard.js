@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-ProfileIdCard.11e348a471aa734437af.js
-// Retrieved at 9/26/2022, 6:10:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-ProfileIdCard.0520892f2602230416ad.js
+// Retrieved at 9/27/2022, 11:50:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-ProfileIdCard"], {
 		"./node_modules/lodash/compact.js": function(e, t) {
@@ -2084,90 +2084,87 @@
 		"./src/reddit/components/ProfileIdCard/UserProfileOverview/UserSnoovatar/AvatarImage.tsx": function(e, t, r) {
 			"use strict";
 			r.d(t, "a", (function() {
-				return C
+				return O
 			}));
 			var n = r("./node_modules/fbt/lib/FbtPublic.js"),
 				s = r("./src/lib/classNames/index.ts"),
 				o = r("./node_modules/react/index.js"),
 				a = r.n(o),
-				i = r("./node_modules/react-redux/es/index.js"),
-				c = r("./src/reddit/components/Econ/Marketplace/NftProfileUnit/async.ts"),
-				d = r("./src/reddit/helpers/trackers/marketplace/claims.ts"),
-				l = r("./src/reddit/helpers/userSnoovatar/index.ts"),
-				u = r("./src/reddit/selectors/experiments/econ/marketplace.ts"),
-				m = r("./src/reddit/components/ProfileIdCard/UserProfileOverview/UserSnoovatar/index.m.less"),
-				p = r.n(m);
+				i = r("./src/reddit/components/Econ/Marketplace/NftProfileUnit/async.ts"),
+				c = r("./src/reddit/helpers/trackers/marketplace/claims.ts"),
+				d = r("./src/reddit/helpers/userSnoovatar/index.ts"),
+				l = r("./src/reddit/components/ProfileIdCard/UserProfileOverview/UserSnoovatar/index.m.less"),
+				u = r.n(l);
 			r("./node_modules/core-js/modules/web.dom.iterable.js");
-			const f = 25;
+			const m = 25;
 
-			function b(e, t) {
+			function p(e, t) {
 				return Object.keys(t).filter(t => 0 === t.indexOf(e)).map(e => t[e])
 			}
 
-			function h(e) {
+			function f(e) {
 				return e[Math.floor(Math.random() * e.length)]
 			}
-			const v = b("particleDelay", p.a),
-				g = b("particleX", p.a),
-				x = b("particleFloat", p.a),
-				_ = () => {
-					const e = h(g),
-						t = h(x),
-						r = h(v);
-					return Object(s.a)(p.a.particle, e, t, r)
+			const b = p("particleDelay", u.a),
+				h = p("particleX", u.a),
+				v = p("particleFloat", u.a),
+				g = () => {
+					const e = f(h),
+						t = f(v),
+						r = f(b);
+					return Object(s.a)(u.a.particle, e, t, r)
 				};
-			class O extends a.a.Component {
+			class x extends a.a.Component {
 				shouldComponentUpdate() {
 					return !1
 				}
 				render() {
 					const e = [];
-					for (let t = 0; t < f; t++) e.push(this.createParticle(t));
+					for (let t = 0; t < m; t++) e.push(this.createParticle(t));
 					return a.a.createElement("div", {
 						role: "presentation",
-						className: p.a.particleWrapper
+						className: u.a.particleWrapper
 					}, e)
 				}
 				createParticle(e) {
 					return a.a.createElement("div", {
 						key: e,
-						className: `${_()}`
+						className: `${g()}`
 					})
 				}
 			}
-			var I = O;
-			const C = e => {
+			var _ = x;
+			const O = e => {
 				let {
 					className: t,
 					isGold: r,
 					snoovatarUrl: o,
-					prefersReducedAnimations: m,
-					origin: f
+					prefersReducedAnimations: l,
+					origin: m
 				} = e;
-				const b = Object(i.e)(u.b),
-					h = o && Object(l.d)(o) && b,
-					v = f === d.a.Profile,
-					g = f === d.a.Hovercard;
-				return h ? a.a.createElement("div", {
+				const p = o && Object(d.d)(o),
+					f = m === c.a.Profile,
+					b = m === c.a.Hovercard;
+				return p ? a.a.createElement("div", {
 					className: Object(s.a)({
-						[p.a.profileTreatment]: v,
-						[p.a.hovercardTreatment]: g
+						[u.a.profileTreatment]: f,
+						[u.a.hovercardTreatment]: b
 					})
 				}, a.a.createElement("div", {
-					className: p.a.nftProfileUnitContainer
-				}, a.a.createElement(c.a, {
-					className: p.a.nftProfileUnit,
+					className: u.a.nftProfileUnitContainer
+				}, a.a.createElement(i.a, {
+					className: u.a.nftProfileUnit,
 					imageUrl: o,
-					origin: f
+					origin: m
 				}))) : a.a.createElement("div", {
-					className: Object(s.a)(p.a.snoovatarContainer, t)
+					className: Object(s.a)(u.a.snoovatarContainer, t)
 				}, r && a.a.createElement(a.a.Fragment, null, a.a.createElement("div", {
-					className: p.a.topGlow
+					className: u.a.topGlow
 				}), a.a.createElement("div", {
-					className: p.a.bottomGlow
-				}), !m && a.a.createElement(I, null)), a.a.createElement("img", {
-					className: Object(s.a)(p.a.snoovatar, {
-						[p.a.premiumGlow]: r
+					className: u.a.bottomGlow
+				}), !l && a.a.createElement(_, null)), a.a.createElement("img", {
+					className: Object(s.a)(u.a.snoovatar, {
+						[u.a.premiumGlow]: r
 					}),
 					src: o,
 					alt: n.fbt._("User Avatar", null, {
@@ -2435,8 +2432,8 @@
 				Q = r("./src/reddit/helpers/styles/mixins/loading.ts"),
 				Y = r("./src/reddit/models/Gold/Premium/index.ts"),
 				V = r("./src/reddit/selectors/experiments/chatInviteLinkSharing.ts"),
-				J = r("./src/reddit/selectors/experiments/crisisTextLine.ts"),
-				X = r("./src/reddit/selectors/premium.ts"),
+				X = r("./src/reddit/selectors/experiments/crisisTextLine.ts"),
+				J = r("./src/reddit/selectors/premium.ts"),
 				$ = r("./src/reddit/components/ProfileIdCard/footer.m.less"),
 				ee = r.n($);
 
@@ -2452,12 +2449,12 @@
 			const re = Object(i.c)({
 					areModeratedSubredditsPending: I.b,
 					coinsToSpend: P.e,
-					givePremiumModalIsOpen: X.c,
+					givePremiumModalIsOpen: J.c,
 					hasFetchedModerators: I.l,
 					isEmployee: P.N,
 					isLoggedIn: P.Q,
 					profile: I.k,
-					crisisFlowEnabled: J.b,
+					crisisFlowEnabled: X.b,
 					chatInviteLinkSharing: V.a
 				}),
 				ne = e => {
@@ -2867,7 +2864,7 @@
 					prefShowSnoovatar: B,
 					snoovatarFullBodyAsset: M,
 					username: D
-				} = P, R = !!a && a.id === F, G = !(!a || !a.snoovatarFullBodyAsset), W = O && O.bannerBackgroundImage, H = !!b && b.isNSFW, q = H && c, z = !(!v || !v.userIsSubscriber), K = `/user/${D}/`, Z = j && j.url === K, Q = !v || v.acceptChats, Y = !v || v.acceptPms, V = k && Object(ue.b)(M), J = () => {
+				} = P, R = !!a && a.id === F, G = !(!a || !a.snoovatarFullBodyAsset), W = O && O.bannerBackgroundImage, H = !!b && b.isNSFW, q = H && c, z = !(!v || !v.userIsSubscriber), K = `/user/${D}/`, Z = j && j.url === K, Q = !v || v.acceptChats, Y = !v || v.acceptPms, V = k && Object(ue.b)(M), X = () => {
 					r(e => !e)
 				};
 				return o.a.createElement(o.a.Fragment, null, o.a.createElement(m.a, {
@@ -2909,7 +2906,7 @@
 						},
 						userIsSubscriber: z,
 						isUserBlocked: y,
-						onClickUnblockUser: J,
+						onClickUnblockUser: X,
 						enableFollowers: L
 					}), !!a && !R && !y && Q && xe({
 						userId: F
@@ -2928,9 +2925,9 @@
 					profileIcon: S,
 					bannerBackgroundImage: q ? void 0 : W
 				}), t && o.a.createElement(fe.a, {
-					onClose: J,
+					onClose: X,
 					onConfirm: e => {
-						J(), N(e), _(Object(x.h)(D))
+						X(), N(e), _(Object(x.h)(D))
 					},
 					username: D,
 					withOverlay: !0
@@ -3578,26 +3575,6 @@
 					experimentName: n.o
 				})
 		},
-		"./src/reddit/selectors/experiments/econ/marketplace.ts": function(e, t, r) {
-			"use strict";
-			r.d(t, "a", (function() {
-				return o
-			})), r.d(t, "b", (function() {
-				return a
-			}));
-			var n = r("./src/reddit/constants/experiments.ts"),
-				s = r("./src/reddit/helpers/chooseVariant/index.ts");
-			const o = e => {
-					return !(Object(s.c)(e, {
-						experimentEligibilitySelector: s.a,
-						experimentName: n.se
-					}) === n.Jd)
-				},
-				a = e => Object(s.c)(e, {
-					experimentEligibilitySelector: s.a,
-					experimentName: n.te
-				}) === n.Jd
-		},
 		"./src/reddit/selectors/premium.ts": function(e, t, r) {
 			"use strict";
 			r.d(t, "c", (function() {
@@ -3625,4 +3602,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ProfileIdCard.11e348a471aa734437af.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ProfileIdCard.0520892f2602230416ad.js.map

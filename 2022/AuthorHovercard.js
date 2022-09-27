@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/AuthorHovercard.db9f93d6997e30edde79.js
-// Retrieved at 9/26/2022, 6:10:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/AuthorHovercard.fae73a45423ecb837332.js
+// Retrieved at 9/27/2022, 11:50:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["AuthorHovercard"], {
 		"./src/lib/constants/colors.ts": function(e, t, n) {
@@ -5089,90 +5089,87 @@
 		"./src/reddit/components/ProfileIdCard/UserProfileOverview/UserSnoovatar/AvatarImage.tsx": function(e, t, n) {
 			"use strict";
 			n.d(t, "a", (function() {
-				return C
+				return O
 			}));
 			var r = n("./node_modules/fbt/lib/FbtPublic.js"),
 				a = n("./src/lib/classNames/index.ts"),
 				o = n("./node_modules/react/index.js"),
 				s = n.n(o),
-				i = n("./node_modules/react-redux/es/index.js"),
-				c = n("./src/reddit/components/Econ/Marketplace/NftProfileUnit/async.ts"),
-				d = n("./src/reddit/helpers/trackers/marketplace/claims.ts"),
-				l = n("./src/reddit/helpers/userSnoovatar/index.ts"),
-				u = n("./src/reddit/selectors/experiments/econ/marketplace.ts"),
-				m = n("./src/reddit/components/ProfileIdCard/UserProfileOverview/UserSnoovatar/index.m.less"),
-				b = n.n(m);
+				i = n("./src/reddit/components/Econ/Marketplace/NftProfileUnit/async.ts"),
+				c = n("./src/reddit/helpers/trackers/marketplace/claims.ts"),
+				d = n("./src/reddit/helpers/userSnoovatar/index.ts"),
+				l = n("./src/reddit/components/ProfileIdCard/UserProfileOverview/UserSnoovatar/index.m.less"),
+				u = n.n(l);
 			n("./node_modules/core-js/modules/web.dom.iterable.js");
-			const p = 25;
+			const m = 25;
 
-			function f(e, t) {
+			function b(e, t) {
 				return Object.keys(t).filter(t => 0 === t.indexOf(e)).map(e => t[e])
 			}
 
-			function h(e) {
+			function p(e) {
 				return e[Math.floor(Math.random() * e.length)]
 			}
-			const v = f("particleDelay", b.a),
-				x = f("particleX", b.a),
-				_ = f("particleFloat", b.a),
-				g = () => {
-					const e = h(x),
-						t = h(_),
-						n = h(v);
-					return Object(a.a)(b.a.particle, e, t, n)
+			const f = b("particleDelay", u.a),
+				h = b("particleX", u.a),
+				v = b("particleFloat", u.a),
+				x = () => {
+					const e = p(h),
+						t = p(v),
+						n = p(f);
+					return Object(a.a)(u.a.particle, e, t, n)
 				};
-			class O extends s.a.Component {
+			class _ extends s.a.Component {
 				shouldComponentUpdate() {
 					return !1
 				}
 				render() {
 					const e = [];
-					for (let t = 0; t < p; t++) e.push(this.createParticle(t));
+					for (let t = 0; t < m; t++) e.push(this.createParticle(t));
 					return s.a.createElement("div", {
 						role: "presentation",
-						className: b.a.particleWrapper
+						className: u.a.particleWrapper
 					}, e)
 				}
 				createParticle(e) {
 					return s.a.createElement("div", {
 						key: e,
-						className: `${g()}`
+						className: `${x()}`
 					})
 				}
 			}
-			var I = O;
-			const C = e => {
+			var g = _;
+			const O = e => {
 				let {
 					className: t,
 					isGold: n,
 					snoovatarUrl: o,
-					prefersReducedAnimations: m,
-					origin: p
+					prefersReducedAnimations: l,
+					origin: m
 				} = e;
-				const f = Object(i.e)(u.b),
-					h = o && Object(l.d)(o) && f,
-					v = p === d.a.Profile,
-					x = p === d.a.Hovercard;
-				return h ? s.a.createElement("div", {
+				const b = o && Object(d.d)(o),
+					p = m === c.a.Profile,
+					f = m === c.a.Hovercard;
+				return b ? s.a.createElement("div", {
 					className: Object(a.a)({
-						[b.a.profileTreatment]: v,
-						[b.a.hovercardTreatment]: x
+						[u.a.profileTreatment]: p,
+						[u.a.hovercardTreatment]: f
 					})
 				}, s.a.createElement("div", {
-					className: b.a.nftProfileUnitContainer
-				}, s.a.createElement(c.a, {
-					className: b.a.nftProfileUnit,
+					className: u.a.nftProfileUnitContainer
+				}, s.a.createElement(i.a, {
+					className: u.a.nftProfileUnit,
 					imageUrl: o,
-					origin: p
+					origin: m
 				}))) : s.a.createElement("div", {
-					className: Object(a.a)(b.a.snoovatarContainer, t)
+					className: Object(a.a)(u.a.snoovatarContainer, t)
 				}, n && s.a.createElement(s.a.Fragment, null, s.a.createElement("div", {
-					className: b.a.topGlow
+					className: u.a.topGlow
 				}), s.a.createElement("div", {
-					className: b.a.bottomGlow
-				}), !m && s.a.createElement(I, null)), s.a.createElement("img", {
-					className: Object(a.a)(b.a.snoovatar, {
-						[b.a.premiumGlow]: n
+					className: u.a.bottomGlow
+				}), !l && s.a.createElement(g, null)), s.a.createElement("img", {
+					className: Object(a.a)(u.a.snoovatar, {
+						[u.a.premiumGlow]: n
 					}),
 					src: o,
 					alt: r.fbt._("User Avatar", null, {
@@ -6367,26 +6364,6 @@
 				b = e => e.features.banned.search.result,
 				p = e => e.features.banned.inContext
 		},
-		"./src/reddit/selectors/experiments/econ/marketplace.ts": function(e, t, n) {
-			"use strict";
-			n.d(t, "a", (function() {
-				return o
-			})), n.d(t, "b", (function() {
-				return s
-			}));
-			var r = n("./src/reddit/constants/experiments.ts"),
-				a = n("./src/reddit/helpers/chooseVariant/index.ts");
-			const o = e => {
-					return !(Object(a.c)(e, {
-						experimentEligibilitySelector: a.a,
-						experimentName: r.se
-					}) === r.Jd)
-				},
-				s = e => Object(a.c)(e, {
-					experimentEligibilitySelector: a.a,
-					experimentName: r.te
-				}) === r.Jd
-		},
 		"./src/reddit/selectors/muted.ts": function(e, t, n) {
 			"use strict";
 			n.d(t, "g", (function() {
@@ -6564,4 +6541,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/AuthorHovercard.db9f93d6997e30edde79.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/AuthorHovercard.fae73a45423ecb837332.js.map

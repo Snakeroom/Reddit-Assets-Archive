@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~ModerationPages~PostCreation~Profile~9a5d9fab.0d31dbebae728dcd337a.js
-// Retrieved at 9/26/2022, 1:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~ModerationPages~PostCreation~Profile~9a5d9fab.791f265e8ef55a8eaad5.js
+// Retrieved at 9/27/2022, 11:50:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~ModerationPages~PostCreation~Profile~9a5d9fab"], {
 		"./src/higherOrderComponents/withClickTracking/index.tsx": function(e, t, s) {
@@ -85,16 +85,16 @@
 			const h = Object(a.a)(e => {
 				const t = Object(m.c)(e, {
 					experimentEligibilitySelector: m.a,
-					experimentName: u.Ae
+					experimentName: u.ze
 				});
-				return Object(u.qg)(t) ? void 0 : t
+				return Object(u.pg)(t) ? void 0 : t
 			}, e => {
 				const t = Object(m.c)(e, {
 					experimentEligibilitySelector: m.a,
-					experimentName: u.Be
+					experimentName: u.Ae
 				});
-				return Object(u.qg)(t) ? void 0 : t
-			}, (e, t) => e === u.Ce.Enabled && t === u.Ce.Enabled);
+				return Object(u.pg)(t) ? void 0 : t
+			}, (e, t) => e === u.Be.Enabled && t === u.Be.Enabled);
 			var p = s("./src/config.ts");
 			var g = s("./src/reddit/selectors/user.ts");
 			const b = e => {
@@ -614,8 +614,8 @@
 					J = G > 0,
 					K = G < p.length - 1,
 					Y = Object(h.a)(),
-					$ = Object(i.useRef)(null),
 					z = Object(i.useRef)(null),
+					$ = Object(i.useRef)(null),
 					[q, Q] = Object(i.useState)(U ? G : -1),
 					[X, Z] = Object(i.useState)(U ? G : -1),
 					ee = Object(l.a)(U),
@@ -635,7 +635,7 @@
 							}, 1e3)) : (q < 0 || X - q == 0) && clearTimeout(se.current)
 						})
 					}, [q, X, p.length]);
-				Object(a.a)(z, ie);
+				Object(a.a)($, ie);
 				const ne = Object(i.useCallback)(e => {
 						t(Object(x.f)({
 							postId: B,
@@ -674,7 +674,7 @@
 						const e = p[G] && p[G].outboundUrl;
 						e && Y(u.c(B, e))
 					}, [Y, B, G, p]);
-				m(y.a.ArrowLeft, $.current, de), m(y.a.ArrowRight, $.current, re);
+				m(y.a.ArrowLeft, z.current, de), m(y.a.ArrowRight, z.current, re);
 				const ce = p[G] && p[G].caption,
 					ue = p[G] && p[G].outboundUrl,
 					me = ((e, t, s) => {
@@ -692,7 +692,7 @@
 				return n.a.createElement("div", {
 					"data-adclicklocation": I.a.MEDIA,
 					className: Object(r.a)(S.a.outerContainer),
-					ref: $,
+					ref: z,
 					tabIndex: 0
 				}, M ? n.a.createElement(n.a.Fragment, null, n.a.createElement("div", {
 					className: Object(r.a)(S.a.tilesWrapper, {
@@ -726,7 +726,7 @@
 				})) : n.a.createElement("div", {
 					className: S.a.slideshowContainer,
 					tabIndex: -1,
-					ref: z,
+					ref: $,
 					onClick: e.onClickRevealBlurred,
 					style: me
 				}, n.a.createElement("div", {
@@ -762,7 +762,7 @@
 					})
 				})), !e.shouldBlur && n.a.createElement(n.a.Fragment, null, n.a.createElement(N, {
 					onClick: de,
-					setFocusTo: z,
+					setFocusTo: $,
 					hasMoreSlides: J,
 					title: j._("Previous", null, {
 						hk: "3dZcTi"
@@ -771,7 +771,7 @@
 					className: S.a.prevButton
 				}), n.a.createElement(N, {
 					onClick: re,
-					setFocusTo: z,
+					setFocusTo: $,
 					hasMoreSlides: K,
 					title: j._("Next", null, {
 						hk: "3Ajk1H"
@@ -1114,8 +1114,8 @@
 				J = s("./src/reddit/constants/componentSizes.ts"),
 				K = s("./src/reddit/constants/screenWidths.ts"),
 				Y = s("./src/reddit/contexts/PageLayer/index.tsx"),
-				$ = s("./src/reddit/helpers/canPreviewSelfText/index.ts"),
-				z = s("./src/reddit/helpers/getRichTextContent/index.ts"),
+				z = s("./src/reddit/helpers/canPreviewSelfText/index.ts"),
+				$ = s("./src/reddit/helpers/getRichTextContent/index.ts"),
 				q = s("./src/reddit/helpers/mediaGallery/index.tsx"),
 				Q = s("./src/reddit/helpers/path/index.ts"),
 				X = s("./src/reddit/helpers/postHasSelfText/index.ts"),
@@ -1607,9 +1607,9 @@
 					if (!L.media) return null;
 					switch (L.media.type) {
 						case te.o.RTJSON:
-							const e = Object(z.a)(L, null);
+							const e = Object($.a)(L, null);
 							if (null === e) return null;
-							if (!J && !Object($.a)(L, null === (t = this.props.theme) || void 0 === t ? void 0 : t.subredditContext)) return null;
+							if (!J && !Object(z.a)(L, null === (t = this.props.theme) || void 0 === t ? void 0 : t.subredditContext)) return null;
 							const o = L.isMeta ? Object(ee.a)(e, L.id) : e;
 							return u.a.createElement(u.a.Fragment, null, Te && u.a.createElement(B.a, {
 								canLoadContent: Q,
@@ -2243,4 +2243,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~ModerationPages~PostCreation~Profile~9a5d9fab.0d31dbebae728dcd337a.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~ModerationPages~PostCreation~Profile~9a5d9fab.791f265e8ef55a8eaad5.js.map

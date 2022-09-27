@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/OnboardingModal.6ba5a81e0a580d3d4d59.js
-// Retrieved at 9/26/2022, 7:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/OnboardingModal.a55fb2600630b014ed38.js
+// Retrieved at 9/27/2022, 11:50:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["OnboardingModal"], {
 		"./node_modules/lodash/_baseRange.js": function(e, t) {
@@ -402,7 +402,7 @@
 						},
 						forceGeopopular: !0,
 						includeCommunityDUs: !1,
-						includeInterestTopics: !!p && !Object(b.qg)(p),
+						includeInterestTopics: !!p && !Object(b.pg)(p),
 						includeFeaturedAnnouncements: !0,
 						includeLiveEvents: !0,
 						includeIdentity: h && !(null === (r = null === (n = e.user.account) || void 0 === n ? void 0 : n.karma) || void 0 === r ? void 0 : r.total),
@@ -1927,9 +1927,9 @@
 					se = Object(i.e)(et.S),
 					ae = Object(i.e)(Ye.g),
 					oe = Object(i.e)(Ze.a),
-					ie = oe === Ee.Xf.CloseOnboarding,
-					ce = oe === Ee.Xf.SkipTopicSelection,
-					de = oe === Ee.Xf.SmartSignal,
+					ie = oe === Ee.Wf.CloseOnboarding,
+					ce = oe === Ee.Wf.SkipTopicSelection,
+					de = oe === Ee.Wf.SmartSignal,
 					le = Object(a.useCallback)(() => {
 						r(Object(p.g)(_e.a.ONBOARDING_MODAL_D2X)), re && r(Object(b.g)()), f && (s(Object(A.t)()), Object(He.a)()), ae && se && r(Object(u.startChangeUsernameFlow)())
 					}, [r, se, ae, f, re, s]),
@@ -3919,21 +3919,15 @@
 			"use strict";
 			n.d(t, "a", (function() {
 				return a
-			})), n.d(t, "b", (function() {
-				return o
 			}));
 			var r = n("./src/reddit/constants/experiments.ts"),
 				s = n("./src/reddit/helpers/chooseVariant/index.ts");
 			const a = e => {
-					return !(Object(s.c)(e, {
-						experimentEligibilitySelector: s.a,
-						experimentName: r.se
-					}) === r.Jd)
-				},
-				o = e => Object(s.c)(e, {
+				return !(Object(s.c)(e, {
 					experimentEligibilitySelector: s.a,
-					experimentName: r.te
-				}) === r.Jd
+					experimentName: r.se
+				}) === r.Jd)
+			}
 		},
 		"./src/reddit/selectors/experiments/inAppNotification.ts": function(e, t, n) {
 			"use strict";
@@ -4103,4 +4097,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/OnboardingModal.6ba5a81e0a580d3d4d59.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/OnboardingModal.a55fb2600630b014ed38.js.map
