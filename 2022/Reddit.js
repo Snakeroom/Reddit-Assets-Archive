@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Reddit.9b944cd7a27fcfce8ac5.js
-// Retrieved at 9/27/2022, 10:50:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Reddit.3ecce009b1565e24cc3c.js
+// Retrieved at 9/27/2022, 11:10:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Reddit"], {
 		"./assets/fonts/BentonSans/font.less": function(e, t, n) {},
@@ -7518,9 +7518,11 @@
 		"./src/reddit/controls/Search/SearchBar/index.m.less": function(e, t, n) {
 			e.exports = {
 				searchBar: "_1DeR7_QiQnu2UK0e2dDfYD",
-				searchBarExp: "_2cQyXGCHzUUwjteF5E1eO7",
-				inputLabel: "_1t0x2fnX0IYp1-sp47CSHI",
+				form: "_1ugesNSGtWAUEmFe-hdnyI",
 				input: "_1K7ubH9z5v9E6C19j2fjQU",
+				isOpen: "h5AN6BnHrFmiSiSIKQbi0",
+				dismissButton: "_3XsEUsC3uEaiEi63QWpAM",
+				inputLabel: "_1t0x2fnX0IYp1-sp47CSHI",
 				iconContainer: "cNtxQ5c1PdvcDe82u_yz9",
 				icon: "_3ylUT2QX58nnEl8r4H26ys"
 			}
@@ -13885,28 +13887,32 @@
 			const ui = e => {
 					let {
 						inputRef: t,
-						onChange: n,
-						onClickDismissCommunityPill: r,
-						onFocusSearchBar: o,
-						onFormSubmit: a,
-						onKeyDown: i,
-						searchQuery: c,
-						showCommunityPill: l,
-						communityPill: d
+						isOpen: n,
+						onChange: r,
+						onClearSearchQuery: o,
+						onClickDismissCommunityPill: a,
+						onFocusSearchBar: i,
+						onFormSubmit: c,
+						onKeyDown: l,
+						searchQuery: d,
+						showCommunityPill: u,
+						communityPill: p
 					} = e;
-					const u = m.a.useContext(Se.a),
-						p = l && d ? s.fbt._("Search within {subredditName}", [s.fbt._param("subredditName", d.title)], {
-							hk: "2B6J3t"
-						}) : s.fbt._("Search all of Reddit", null, {
-							hk: "1Fi1f5"
-						});
-					return m.a.createElement("form", {
+					var b;
+					const h = u && p ? s.fbt._("Search within {subredditName}", [s.fbt._param("subredditName", p.title)], {
+						hk: "2B6J3t"
+					}) : s.fbt._("Search all of Reddit", null, {
+						hk: "1Fi1f5"
+					});
+					return m.a.createElement("div", {
+						className: Object(Ce.a)(di.a.searchBar, n && di.a.isOpen)
+					}, m.a.createElement("form", {
 						action: "/search/",
 						autoComplete: "off",
-						className: Object(Ce.a)(di.a.searchBar, u && di.a.searchBarExp),
+						className: di.a.form,
 						method: "get",
-						onSubmit: a,
-						onFocus: o,
+						onSubmit: c,
+						onFocus: i,
 						role: "search"
 					}, m.a.createElement("label", {
 						className: di.a.inputLabel,
@@ -13919,25 +13925,34 @@
 						className: di.a.icon
 					})), m.a.createElement(ba.a, {
 						"aria-live": "assertive"
-					}, p)), l && d && m.a.createElement(ci, {
-						onClickDismiss: r,
-						content: d
+					}, h)), u && p && m.a.createElement(ci, {
+						onClickDismiss: a,
+						content: p
 					}), m.a.createElement("input", {
 						className: di.a.input,
-						defaultValue: c,
+						defaultValue: d,
 						id: "header-search-bar",
 						name: "q",
 						onChange: Ya()((function() {
 							var e;
-							n((null === (e = null == t ? void 0 : t.current) || void 0 === e ? void 0 : e.value) || "")
+							r((null === (e = null == t ? void 0 : t.current) || void 0 === e ? void 0 : e.value) || "")
 						}), 200),
-						onKeyDown: i,
-						placeholder: s.fbt._("Search Reddit", null, {
-							hk: "34Vfom"
+						onKeyDown: l,
+						placeholder: s.fbt._("{Text}", [s.fbt._param("Text", "Search Reddit")], {
+							hk: "DG9dX"
 						}),
 						ref: t,
 						type: "search"
-					}))
+					})), (null === (b = null == t ? void 0 : t.current) || void 0 === b ? void 0 : b.value) ? m.a.createElement("button", {
+						"aria-label": s.fbt._("Remove search bar text", null, {
+							hk: "4twCsS"
+						}),
+						className: di.a.dismissButton,
+						"data-testid": "search-bar-dismiss-button",
+						onClick: o
+					}, m.a.createElement(tr.a, {
+						name: "clear"
+					})) : null)
 				},
 				mi = /r\/([0-9a-zA-Z]*)\s/gi;
 
@@ -14182,6 +14197,7 @@
 					ref: k
 				}, m.a.createElement(ui, {
 					inputRef: N,
+					isOpen: R,
 					onChange: e => {
 						const t = e.trim(),
 							n = mi.exec(e);
@@ -14243,6 +14259,7 @@
 							Pe(l - 1)
 						} else e.key === zo.b.Backspace && !re && H.enabled && je()
 					},
+					onClearSearchQuery: Oe,
 					onClickDismissCommunityPill: je,
 					showCommunityPill: H.enabled,
 					communityPill: function() {
@@ -22901,4 +22918,4 @@
 		["./src/reddit/index.tsx", "runtime~Reddit", "vendors~CommentsPage~ModerationPages~Reddit~reddit-components-ClassicPost~reddit-components-CompactP~d737df3e", "vendors~CommentsPage~Governance~ModListing~ModerationPages~Reddit~Subreddit", "vendors~Chat~Governance~Reddit", "vendors~Reddit", "CommentsPage~Governance~Reddit~ReportFlow~Subreddit~reddit-components-BlankPost~reddit-components-Cl~5351df81", "Governance~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compo~bd4baca2", "Reddit~RpanListingUnit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPos~93b34f9d", "ModListing~PostCreation~Reddit~StandalonePostPage~Subreddit", "Governance~ModListing~Reddit~ReportFlow~Subreddit", "Chat~Governance~Reddit", "Governance~Reddit~SubredditForkingCTA", "Governance~ModListing~Reddit", "Governance~Reddit"]
 	]
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit.9b944cd7a27fcfce8ac5.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit.3ecce009b1565e24cc3c.js.map

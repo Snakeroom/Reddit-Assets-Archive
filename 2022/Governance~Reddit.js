@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~Reddit.184e257da15f9ab544f8.js
-// Retrieved at 9/27/2022, 10:50:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~Reddit.34f5ae5a51ccb7b1dacb.js
+// Retrieved at 9/27/2022, 11:10:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~Reddit"], {
 		"./assets/fonts/NotoMono/font.less": function(e, t, n) {},
@@ -4478,7 +4478,6 @@
 					onUpdateSearchQuery: j
 				} = e, A = Object(a.d)(), [C, R] = Object(r.useState)(null), [P, N] = Object(r.useState)(n), [L, M] = Object(r.useState)(new Array(he).fill(!1)), B = !!(null === (t = y.searchQuery) || void 0 === t ? void 0 : t.trim()), F = l || i, G = 0 === f.length && !l && (!B || b >= 0), q = {
 					width: P ? `${P}px` : "inherit",
-					marginTop: "7px",
 					overflow: "auto"
 				};
 				g && (q.zIndex = H.g), Object(r.useEffect)(() => {
@@ -25399,4 +25398,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit.184e257da15f9ab544f8.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit.34f5ae5a51ccb7b1dacb.js.map

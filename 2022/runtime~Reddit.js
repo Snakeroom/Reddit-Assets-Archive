@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/runtime~Reddit.766cbe5e2e2f1fefb82d.js
-// Retrieved at 9/27/2022, 10:50:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/runtime~Reddit.413740f598cfb1683ad6.js
+// Retrieved at 9/27/2022, 11:10:04 AM by Reddit Dataminer v1.0.0
 ! function(e) {
 	function o(o) {
 		for (var a, n, r = o[0], s = o[1], c = o[2], l = 0, P = []; l < r.length; l++) n = r[l], Object.prototype.hasOwnProperty.call(d, n) && d[n] && P.push(d[n][0]), d[n] = 0;
@@ -1509,16 +1509,16 @@
 						"reddit-components-Governance-GasFeesEducationalModal": "aac2b6392fd36c22f379",
 						"reddit-components-PostCreationForm-PredictionEditor-InactivityModal": "1afbd8ec8a3297bf5fc6",
 						"reddit-components-PostCreationForm-PredictionEditor-StartTournamentLimitationModal": "abdf9807a94137c7f52f",
-						"translations/bn_BD-json": "272cea296868c56ee79a",
-						"translations/de_DE-json": "3df2beece8c462a9bc4b",
-						"translations/es_ES-json": "9fadf8e76b015ca5eb6e",
-						"translations/es_MX-json": "b38d666eb1cdb718c0d9",
-						"translations/fr_FR-json": "332eb68f39d1211bf306",
-						"translations/hi_IN-json": "b077e5c0a6a10b932c35",
-						"translations/it_IT-json": "6487830bfa9779ac471e",
-						"translations/pseudo-json": "36bb7ca0572075e09bc9",
-						"translations/pt_BR-json": "679b3633c73aa195ebb4",
-						"translations/pt_PT-json": "0929c4a2ee75bf03990b",
+						"translations/bn_BD-json": "e59161077b6fa6893bd2",
+						"translations/de_DE-json": "bd0f117e4af11bebdaac",
+						"translations/es_ES-json": "26c95c8fe3d95a9f5f2b",
+						"translations/es_MX-json": "4f606866580320d3a38c",
+						"translations/fr_FR-json": "723969f076ce6b9a9171",
+						"translations/hi_IN-json": "718ce11248ecd0a62791",
+						"translations/it_IT-json": "e6ac68efd7e2fac7ac07",
+						"translations/pseudo-json": "f7405f8542cff82b3f9c",
+						"translations/pt_BR-json": "0975f1098113866bbe12",
+						"translations/pt_PT-json": "bd993ce2a6c996c12bb6",
 						"vendors~AdminPanel": "eae9f345b12b82989d37",
 						AdminPanel: "647afd4f67689758f396",
 						"vendors~Avatar~ChatPost~MarketplaceClaimModal~MarketplaceInFeedUnit~NftProfileUnit~RealtimeGQLSubscr~bfab320d": "d86f220f3e5fadf79e66",
@@ -1786,4 +1786,4 @@
 	var m = c;
 	t()
 }([]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/runtime~Reddit.766cbe5e2e2f1fefb82d.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/runtime~Reddit.413740f598cfb1683ad6.js.map
