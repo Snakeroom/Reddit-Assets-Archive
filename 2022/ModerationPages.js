@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModerationPages.0391ec85e83c64dd7aa8.js
-// Retrieved at 9/27/2022, 11:50:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModerationPages.94593f3331804047b1a2.js
+// Retrieved at 9/28/2022, 3:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModerationPages", "CollectionCommentsPage~CommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~RpanListingUnit~S~5809214e", "CommentsPage~Governance~Reddit~ReportFlow~Subreddit~reddit-components-BlankPost~reddit-components-Cl~5351df81", "Governance~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compo~bd4baca2", "Reddit~RpanListingUnit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPos~93b34f9d", "Governance~ModListing~Reddit~ReportFlow~Subreddit", "ModListing~PostCreation~Reddit~StandalonePostPage~Subreddit", "Governance~ModListing~Reddit", "Governance~Reddit~SubredditForkingCTA"], {
 		"./src/chat/controls/Svg/index.m.less": function(e, t, n) {
@@ -22465,7 +22465,8 @@
 					useFlatlistBreakpoints: Object(G.b)({
 						editPost: !De,
 						hide: !De,
-						report: !De
+						report: !De,
+						mute: !De
 					})
 				})), r.a.createElement(R.d, null))), Object(ne.a)(he, de.a, ve, _, Ie, I), Ce && Qe && r.a.createElement(b.a, {
 					className: de.a.creatorStatsContainer,
@@ -28287,7 +28288,8 @@
 							save: !1,
 							gild: !1,
 							hide: !1,
-							report: !1
+							report: !1,
+							mute: !1
 						})
 					}), !xe && o.a.createElement(Ie, {
 						crosspost: s,
@@ -53509,6 +53511,7 @@
 				row: "_3LwUIE7yX7CZQKmD2L87vf",
 				topics: "kR_ljR-F8vtc-ORj1uipB",
 				checkmark: "_3Iua3qlR9JiTwjjk6NKye1",
+				muteSubreddit: "ui39KJ4PwbdKkxvIBbLbV",
 				modNotes: "sK8_uuNiAqPNlw-HoD2HG",
 				mIsSelected: "_1IKtbRloF_LV1hPqMzP3MC",
 				mIsInteractive: "_1oYEKCssGFjqxQ9jJMNj5G"
@@ -77101,4 +77104,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.0391ec85e83c64dd7aa8.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.94593f3331804047b1a2.js.map
