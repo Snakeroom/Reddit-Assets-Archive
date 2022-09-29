@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Geotagging.6c3fcc22c4b94ab598f2.js
-// Retrieved at 9/27/2022, 11:50:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Geotagging.fc47f4da143f26ff7de0.js
+// Retrieved at 9/29/2022, 1:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Geotagging"], {
 		"./node_modules/p-debounce/index.js": function(e, t, s) {
@@ -416,7 +416,7 @@
 				const t = Object(a.f)().getState(),
 					s = Object(h.a)(t, Object(o.c)());
 				if (e.isD2xPdpSideRailRecsEnabled) {
-					const t = e.d2xPdpSideRailRecsVariant === u.Tc.GreyRereddit || e.d2xPdpSideRailRecsVariant === u.Tc.GreyRedditNoNsfw || e.d2xPdpSideRailRecsVariant === u.Tc.LargeImagePreview ? e.reredditButtons : [];
+					const t = e.d2xPdpSideRailRecsVariant === u.Uc.GreyRereddit || e.d2xPdpSideRailRecsVariant === u.Uc.GreyRedditNoNsfw || e.d2xPdpSideRailRecsVariant === u.Uc.LargeImagePreview ? e.reredditButtons : [];
 					return r.a.createElement(O, {
 						reredditContent: t,
 						countryCode: e.countryCode
@@ -702,7 +702,7 @@
 				}), i.a.createElement(j, null)), i.a.createElement(k, null, i.a.createElement(O, null), i.a.createElement(j, null)), i.a.createElement(k, null, i.a.createElement("div", {
 					className: Object(l.a)(_.a.LoadingNav, t.isLoading && _.a.loading)
 				}), i.a.createElement(j, null)))))
-			}, T = Object(c.a)({
+			}, w = Object(c.a)({
 				getComponent: () => Object(m.a)(() => Promise.all([s.e("vendors~CryptoHarbergerTaxManageModal~HarbergerTaxManageModal~ModerationPages~PostCreation~Settings~~f8934a85"), s.e("StructuredStyles")]).then(s.bind(null, "./src/reddit/components/StructuredStyles/BladeDrawer/index.tsx"))).then(e => e.default),
 				ErrorComponent: () => i.a.createElement(N, {
 					gradientType: "posts",
@@ -712,16 +712,16 @@
 					gradientType: "posts",
 					isLoading: !0
 				})
-			}), w = Object(d.c)({
+			}), T = Object(d.c)({
 				isEditing: x.i,
 				isSubscriptionsPinned: f.c,
 				moderatorPermissions: g.n
 			});
-			t.a = Object(o.b)(w)(e => {
+			t.a = Object(o.b)(T)(e => {
 				const t = e.moderatorPermissions && r()(e.moderatorPermissions).some(e => e);
 				return e.moderatorPermissions && t && e.isEditing ? i.a.createElement("div", {
 					className: Object(l.a)(_.a.Container, e.isSubscriptionsPinned && _.a.isSubscriptionPinned)
-				}, e.children, i.a.createElement(T, {
+				}, e.children, i.a.createElement(w, {
 					subredditId: e.subredditId
 				})) : i.a.createElement(a.Fragment, null, e.children)
 			})
@@ -934,12 +934,12 @@
 					})) : null
 				}
 			}
-			var T = Object(p.b)(j)(Object(c.c)(N)),
-				w = s("./src/reddit/helpers/styles/mixins/loading.ts");
+			var w = Object(p.b)(j)(Object(c.c)(N)),
+				T = s("./src/reddit/helpers/styles/mixins/loading.ts");
 			var P = e => {
 					const {
 						className: t
-					} = e, s = Object(w.b)({
+					} = e, s = Object(T.b)({
 						isLoading: !0
 					});
 					return r.a.createElement("div", {
@@ -998,7 +998,7 @@
 						hk: "46yzcK"
 					}))), r.a.createElement("div", {
 						className: I.a.SubredditList
-					}, n.length > 0 ? n.map(e => r.a.createElement(T, {
+					}, n.length > 0 ? n.map(e => r.a.createElement(w, {
 						className: I.a.Subreddit,
 						discoveryUnit: R,
 						key: e,
@@ -1101,7 +1101,7 @@
 				subredditId: u.n,
 				topPostVariant: h.d
 			}));
-			class T extends r.a.Component {
+			class w extends r.a.Component {
 				constructor() {
 					super(...arguments), this.contentRef = r.a.createRef(), this.state = {
 						isTruncated: !1
@@ -1180,7 +1180,7 @@
 					})))
 				}
 			}
-			t.a = j(N(Object(d.a)(Object(l.c)(T))))
+			t.a = j(N(Object(d.a)(Object(l.c)(w))))
 		},
 		"./src/reddit/endpoints/geotagging/setSubredditGeoPlace.ts": function(e, t, s) {
 			"use strict";
@@ -1465,12 +1465,12 @@
 			}
 			var j = s("./src/reddit/actions/toaster.ts"),
 				N = s("./src/reddit/components/GeoForm/GeoForm.tsx"),
-				T = s("./src/reddit/components/SubredditIcon/index.tsx"),
-				w = s("./src/reddit/endpoints/geotagging/setSubredditGeoPlace.ts"),
+				w = s("./src/reddit/components/SubredditIcon/index.tsx"),
+				T = s("./src/reddit/endpoints/geotagging/setSubredditGeoPlace.ts"),
 				P = s("./src/redditGQL/operations/SuggestSubredditGeoPlace.json"),
 				L = async (e, t) => Object(l.a)(e, {
 					...P,
-					variables: Object(w.b)(t)
+					variables: Object(T.b)(t)
 				}), I = s("./src/reddit/helpers/graphql/normalizeSubredditFromGql/index.ts");
 			const G = "crowdsource",
 				F = {
@@ -1531,10 +1531,10 @@
 			var q = s("./src/reddit/icons/svgs/HamburgerClose/index.tsx"),
 				K = s("./src/reddit/models/Toast/index.ts");
 			const {
-				fbt: V
+				fbt: U
 			} = s("./node_modules/fbt/lib/FbtPublic.js");
 
-			function U(e) {
+			function V(e) {
 				const t = Object(b.B)(Z) || [];
 				t.push(e), Object(b.Hb)(Z, t)
 			}
@@ -1559,7 +1559,7 @@
 				function y() {
 					o(Object(j.f)({
 						kind: K.b.SuccessMod,
-						text: V._("Nice work!", null, {
+						text: U._("Nice work!", null, {
 							hk: "2Wu6gX"
 						})
 					}))
@@ -1568,7 +1568,7 @@
 					className: S.a.subredditGeotag
 				}, r.a.createElement("div", {
 					className: S.a.subredditTitle
-				}, r.a.createElement(T.b, {
+				}, r.a.createElement(w.b, {
 					className: S.a.icon,
 					subredditOrProfile: Object(I.a)(t),
 					linkTo: t.path
@@ -1579,13 +1579,13 @@
 				}, t.prefixedName)), r.a.createElement("button", {
 					className: S.a.dismiss,
 					onClick: function() {
-						U(t.id), _(R(t)), x(), s(t.id)
+						V(t.id), _(R(t)), x(), s(t.id)
 					}
 				}, r.a.createElement(q.a, null))), r.a.createElement("p", null, t.publicDescriptionText || t.title), t.geoPlace && !m ? r.a.createElement("div", {
 					className: S.a.questionContainer
 				}, r.a.createElement("div", {
 					className: S.a.question
-				}, V._("Is this community specific to {place}?", [V._param("place", t.geoPlace.name)], {
+				}, U._("Is this community specific to {place}?", [U._param("place", t.geoPlace.name)], {
 					hk: "bIGM4"
 				})), r.a.createElement(E.o, {
 					className: S.a.rejectButton,
@@ -1595,7 +1595,7 @@
 				}, "No"), r.a.createElement(E.l, {
 					className: S.a.verifyButton,
 					onClick: function() {
-						U(t.id), _(H(t, t.geoPlace.id)), x(), s(t.id), y()
+						V(t.id), _(H(t, t.geoPlace.id)), x(), s(t.id), y()
 					}
 				}, "Yes")) : r.a.createElement(N.a, {
 					disabled: l,
@@ -1618,7 +1618,7 @@
 						});
 						if (u(!1), !a.ok) return o(Object(j.f)({
 							kind: K.b.Error,
-							text: V._("Something went wrong", null, {
+							text: U._("Something went wrong", null, {
 								hk: "2PnKbu"
 							}),
 							duration: 5e3
@@ -1751,4 +1751,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Geotagging.6c3fcc22c4b94ab598f2.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Geotagging.fc47f4da143f26ff7de0.js.map
