@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/MatrixChat.e77b3776d9a5816c7e23.js
-// Retrieved at 9/15/2022, 10:00:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/MatrixChat.55e5c67dbb8b3634267b.js
+// Retrieved at 9/29/2022, 4:30:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["MatrixChat"], {
 		"./src/reddit/components/IFrame/index.m.less": function(e, t, a) {
@@ -239,4 +239,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/MatrixChat.e77b3776d9a5816c7e23.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/MatrixChat.55e5c67dbb8b3634267b.js.map

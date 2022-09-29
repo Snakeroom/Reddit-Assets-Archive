@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/EconManagement2.132cc943519192bd530a.js
-// Retrieved at 9/12/2022, 2:10:03 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/EconManagement2.b014b916523f2106945b.js
+// Retrieved at 9/29/2022, 4:30:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["EconManagement2"], {
 		"./src/reddit/controls/SearchBar/index.m.less": function(e, a, t) {
@@ -393,4 +393,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EconManagement2.132cc943519192bd530a.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EconManagement2.b014b916523f2106945b.js.map

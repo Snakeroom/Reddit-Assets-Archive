@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PushNotifications.6eafe8da84ac4a4a7be8.js
-// Retrieved at 9/29/2022, 1:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PushNotifications.289d29333343c000d738.js
+// Retrieved at 9/29/2022, 4:30:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PushNotifications"], {
 		"./src/lib/notifications/token.ts": function(e, t, i) {
@@ -65,11 +65,11 @@
 			})), i.d(t, "requestNotificationsPermissions", (function() {
 				return G
 			})), i.d(t, "subscribeForPNs", (function() {
-				return P
-			})), i.d(t, "unsubscribeFromPNs", (function() {
-				return R
-			})), i.d(t, "requestBrowserNotificationPermissionPromptByUser", (function() {
 				return L
+			})), i.d(t, "unsubscribeFromPNs", (function() {
+				return P
+			})), i.d(t, "requestBrowserNotificationPermissionPromptByUser", (function() {
+				return R
 			})), i.d(t, "subscribeToPermissionsChange", (function() {
 				return A
 			}));
@@ -100,7 +100,7 @@
 			const N = e => Object(F.c)(e, {
 				experimentName: S.jc,
 				experimentEligibilitySelector: F.a
-			}) === S.Kd;
+			}) === S.Ld;
 			var x = i("./src/reddit/selectors/meta.ts"),
 				C = i("./src/reddit/selectors/user.ts");
 			let W = !1;
@@ -142,14 +142,14 @@
 					_.l(c), await Object(a.b)(e, t, () => {
 						l || b || f || n(Object(d.o)()), n(Object(d.n)()), _.j(c)
 					}, (e, t) => {
-						n(Object(d.l)()), n(R(t ? d.a.Denied : d.a.Closed)), e && (t ? _.e(c) : _.f(c)), i()
+						n(Object(d.l)()), n(P(t ? d.a.Denied : d.a.Closed)), e && (t ? _.e(c) : _.f(c)), i()
 					}, e => {
-						n(Object(d.m)()), n(P()), e && _.d(c), i()
+						n(Object(d.m)()), n(L()), e && _.d(c), i()
 					}, () => {
 						n(Object(d.k)()), i()
 					})
 				}
-			}, P = e => async (t, i, s) => {
+			}, L = e => async (t, i, s) => {
 				const o = i();
 				try {
 					switch (await Object(c.b)(s.gqlContext)) {
@@ -170,7 +170,7 @@
 				} catch (r) {
 					_.k(o, "registration_failed_uncaught_exception"), console.error(r)
 				}
-			}, R = (e, t) => async i => {
+			}, P = (e, t) => async i => {
 				try {
 					Object(b.b)(e);
 					const s = await Object(u.a)();
@@ -184,7 +184,7 @@
 						})))
 					}
 				} catch (s) {}
-			}, L = e => async (t, i) => {
+			}, R = e => async (t, i) => {
 				const n = i();
 				if (Object(b.a)(n) === d.c.NotificationsSupported) switch (Object(a.a)()) {
 					case d.a.Default:
@@ -205,13 +205,13 @@
 				s.onchange = () => (t => {
 					switch (t) {
 						case d.a.Denied:
-							e(R(d.a.Denied)), _.e(n);
+							e(P(d.a.Denied)), _.e(n);
 							break;
 						case d.a.Granted:
-							e(P()), _.d(n);
+							e(L()), _.d(n);
 							break;
 						default:
-							e(R(d.a.Default))
+							e(P(d.a.Default))
 					}
 				})(s.state)
 			}
@@ -393,4 +393,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PushNotifications.6eafe8da84ac4a4a7be8.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PushNotifications.289d29333343c000d738.js.map

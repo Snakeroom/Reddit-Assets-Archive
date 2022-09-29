@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/4.cf244547cb15531f27c1.js
-// Retrieved at 9/20/2022, 6:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/4.4fc0bc90b274844acd84.js
+// Retrieved at 9/29/2022, 4:30:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	[4], {
 		"./node_modules/lodash/_baseRange.js": function(e, t) {
@@ -1079,4 +1079,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/4.cf244547cb15531f27c1.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/4.4fc0bc90b274844acd84.js.map

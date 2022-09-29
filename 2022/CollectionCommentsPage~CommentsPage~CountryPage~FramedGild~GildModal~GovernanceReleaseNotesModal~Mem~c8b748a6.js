@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~CountryPage~FramedGild~GildModal~GovernanceReleaseNotesModal~Mem~c8b748a6.f1dcc8ad455e23ce76ea.js
-// Retrieved at 9/29/2022, 1:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~CountryPage~FramedGild~GildModal~GovernanceReleaseNotesModal~Mem~c8b748a6.e141d3ae1b70d7bcd2a7.js
+// Retrieved at 9/29/2022, 4:30:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~CountryPage~FramedGild~GildModal~GovernanceReleaseNotesModal~Mem~c8b748a6"], {
 		"./src/lib/colors/constants.ts": function(e, t, s) {
@@ -1310,7 +1310,7 @@
 						let i = arguments.length > 2 && void 0 !== arguments[2] && arguments[2];
 						const a = t.HTML5StreamPlayerVideo;
 						if (a && null != t.props.postId) {
-							const a = i ? N.b(t.props.postId, e, s) : N.a(t.props.postId, e, s);
+							const a = i ? N.c(t.props.postId, e, s) : N.a(t.props.postId, e, s);
 							t.props.sendEvent(a)
 						}
 					}, this.resetMediaPlayer = () => {
@@ -1755,7 +1755,7 @@
 								this.getVideoQualityList(), this.getAudioInfo(), null != this.props.postId && this.props.onPlayable(performance.now()), this.controlBarApi && !this.state.hideControlBar && this.controlBarApi.setCurrentTime(0), this.props.shouldCreateFakeThumbnail && this.createFakeThumbnail()
 							}), this.dashPlayer.on(e.MediaPlayer.events.BUFFER_EMPTY, e => {
 								if (null != this.props.postId && Date.now() > this.state.ignoreUnderrunsUntil) {
-									const e = N.c(this.props.postId);
+									const e = N.d(this.props.postId);
 									this.props.sendEvent(e), this.setState({
 										ignoreUnderrunsUntil: Date.now() + st
 									})
@@ -2671,10 +2671,10 @@
 				a = s("./src/reddit/constants/experiments.ts"),
 				o = s("./src/reddit/helpers/chooseVariant/index.ts");
 			const n = Object(i.a)(e => Object(o.c)(e, {
-					experimentName: a.eg,
+					experimentName: a.fg,
 					experimentEligibilitySelector: o.a
 				}), e => e),
-				r = Object(i.a)(n, e => e === a.Wf)
+				r = Object(i.a)(n, e => e === a.Xf)
 		},
 		"./src/reddit/selectors/experiments/videoReactions.ts": function(e, t, s) {
 			"use strict";
@@ -2689,12 +2689,12 @@
 			const n = e => Object(a.c)(e, {
 					experimentName: i.yb,
 					experimentEligibilitySelector: o.e
-				}) === i.Kd,
+				}) === i.Ld,
 				r = e => Object(a.c)(e, {
 					experimentName: i.wc,
 					experimentEligibilitySelector: a.a
-				}) === i.Kd
+				}) === i.Ld
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~CountryPage~FramedGild~GildModal~GovernanceReleaseNotesModal~Mem~c8b748a6.f1dcc8ad455e23ce76ea.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~CountryPage~FramedGild~GildModal~GovernanceReleaseNotesModal~Mem~c8b748a6.e141d3ae1b70d7bcd2a7.js.map

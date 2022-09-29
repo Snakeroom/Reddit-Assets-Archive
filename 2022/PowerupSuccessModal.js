@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PowerupSuccessModal.7ef3f9b702a6a0b7f960.js
-// Retrieved at 9/12/2022, 2:10:03 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PowerupSuccessModal.4af675a0e84b2b4ed597.js
+// Retrieved at 9/29/2022, 4:30:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PowerupSuccessModal"], {
 		"./src/reddit/components/Econ/Common/PowerupRotatingBolt/index.m.less": function(i, a, x) {
@@ -69,4 +69,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PowerupSuccessModal.7ef3f9b702a6a0b7f960.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PowerupSuccessModal.4af675a0e84b2b4ed597.js.map

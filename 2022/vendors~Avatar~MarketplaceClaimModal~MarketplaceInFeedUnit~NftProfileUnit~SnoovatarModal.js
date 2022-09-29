@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/vendors~Avatar~MarketplaceClaimModal~MarketplaceInFeedUnit~NftProfileUnit~SnoovatarModal.bd35c729d0223afaf32b.js
-// Retrieved at 9/29/2022, 2:30:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/vendors~Avatar~MarketplaceClaimModal~MarketplaceInFeedUnit~NftProfileUnit~SnoovatarModal.10cf697eeaf7b68dbcb3.js
+// Retrieved at 9/29/2022, 4:30:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["vendors~Avatar~MarketplaceClaimModal~MarketplaceInFeedUnit~NftProfileUnit~SnoovatarModal"], {
 		"./node_modules/@apollo/client/cache/core/types/Cache.js": function(e, t, n) {
@@ -3452,7 +3452,7 @@
 						h = e.allowPinchZoom,
 						g = e.as,
 						v = void 0 === g ? "div" : g,
-						y = Object(Kt.k)(e, ["forwardProps", "children", "className", "removeScrollBar", "enabled", "shards", "sideCar", "noIsolation", "inert", "allowPinchZoom", "as"]),
+						y = Object(Kt.l)(e, ["forwardProps", "children", "className", "removeScrollBar", "enabled", "shards", "sideCar", "noIsolation", "inert", "allowPinchZoom", "as"]),
 						b = p,
 						w = Jt([n, t]),
 						k = Object(Kt.a)(Object(Kt.a)({}, y), o);
@@ -3673,7 +3673,7 @@
 					}), [e]), i.useEffect((function() {
 						if (e.inert) {
 							document.body.classList.add("block-interactivity-".concat(o));
-							var t = Object(Kt.l)([e.lockRef.current], (e.shards || []).map(Sn), !0).filter(Boolean);
+							var t = Object(Kt.m)([e.lockRef.current], (e.shards || []).map(Sn), !0).filter(Boolean);
 							return t.forEach((function(e) {
 									return e.classList.add("allow-interactivity-".concat(o))
 								})),
@@ -43603,4 +43603,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/vendors~Avatar~MarketplaceClaimModal~MarketplaceInFeedUnit~NftProfileUnit~SnoovatarModal.bd35c729d0223afaf32b.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/vendors~Avatar~MarketplaceClaimModal~MarketplaceInFeedUnit~NftProfileUnit~SnoovatarModal.10cf697eeaf7b68dbcb3.js.map
