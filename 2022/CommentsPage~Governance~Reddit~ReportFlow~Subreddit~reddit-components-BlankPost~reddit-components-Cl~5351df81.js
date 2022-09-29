@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CommentsPage~Governance~Reddit~ReportFlow~Subreddit~reddit-components-BlankPost~reddit-components-Cl~5351df81.03204933326db6bd45aa.js
-// Retrieved at 9/27/2022, 11:50:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CommentsPage~Governance~Reddit~ReportFlow~Subreddit~reddit-components-BlankPost~reddit-components-Cl~5351df81.61ce391f60e6ff26f9a9.js
+// Retrieved at 9/29/2022, 11:10:06 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CommentsPage~Governance~Reddit~ReportFlow~Subreddit~reddit-components-BlankPost~reddit-components-Cl~5351df81"], {
 		"./src/lib/name/index.ts": function(e, t, r) {
@@ -2794,7 +2794,7 @@
 								sessionStartTime: j
 							} = Object(he.a)(e),
 							_ = Object(ye.f)(e),
-							I = Object(ve.a)(e),
+							I = Object(ve.c)(e),
 							h = {
 								subredditName: s,
 								isFake: i,
@@ -10593,55 +10593,6 @@
 					return !1
 				}
 		},
-		"./src/reddit/selectors/experiments/communityDirectoryBacklinks/index.ts": function(e, t, r) {
-			"use strict";
-			r.d(t, "a", (function() {
-				return a
-			})), r.d(t, "b", (function() {
-				return u
-			}));
-			var n = r("./src/reddit/constants/experiments.ts"),
-				s = r("./src/reddit/helpers/chooseVariant/index.ts"),
-				i = r("./src/server/helpers/canonicalUrl.tsx");
-			const d = (e, t) => e.find(e => t <= e);
-
-			function o(e, t) {
-				return Object(i.c)(`/best/communities/${e}/#${t}`)
-			}
-
-			function c(e, t) {
-				return e > 50 ? {
-					percentile: d([0, 1, 5, 10, 20, 50], t),
-					position: e
-				} : {
-					position: e
-				}
-			}
-			const a = e => {
-					return Object(s.c)(e, {
-						experimentEligibilitySelector: s.a,
-						experimentName: n.Q,
-						expEventOverride: !1
-					}) === n.ab.Linked
-				},
-				u = (e, t) => {
-					let {
-						subredditId: r,
-						subredditAboutInfo: n
-					} = t;
-					if (a(e) && r && (null == n ? void 0 : n.directoryRankings)) return function(e, t) {
-						const r = null === (n = e.rankings) || void 0 === n ? void 0 : n[0];
-						var n;
-						if (r && r.position > 0 && t) {
-							const e = Math.ceil(r.position / r.totalRanked * 100);
-							if (e <= 50) return {
-								url: o(r.pageNumber, t),
-								...c(r.position, e)
-							}
-						}
-					}(n.directoryRankings, r)
-				}
-		},
 		"./src/reddit/selectors/experiments/crosspostRecommendations.ts": function(e, t, r) {
 			"use strict";
 			r.d(t, "b", (function() {
@@ -12078,4 +12029,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommentsPage~Governance~Reddit~ReportFlow~Subreddit~reddit-components-BlankPost~reddit-components-Cl~5351df81.03204933326db6bd45aa.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommentsPage~Governance~Reddit~ReportFlow~Subreddit~reddit-components-BlankPost~reddit-components-Cl~5351df81.61ce391f60e6ff26f9a9.js.map

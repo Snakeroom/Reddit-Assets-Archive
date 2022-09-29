@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/IdCard.e6432191f34ed279237b.js
-// Retrieved at 9/27/2022, 11:50:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/IdCard.c753d12121c793d01eb6.js
+// Retrieved at 9/29/2022, 11:10:06 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["IdCard", "AchievementsActions", "ContributorRequestButton"], {
 		"./node_modules/autosize/dist/autosize.js": function(e, t, n) {
@@ -3548,16 +3548,7 @@
 						let {
 							subredditName: n
 						} = t;
-						const r = Object(te.A)(e, {
-								subredditName: n
-							}),
-							s = Object(te.x)(e, {
-								subredditName: n
-							});
-						return Object(rt.b)(e, {
-							subredditId: null == r ? void 0 : r.id,
-							subredditAboutInfo: s
-						})
+						return Object(rt.a)(e, n)
 					}
 				}))(Object(F.c)(e => {
 					let {
@@ -3876,7 +3867,7 @@
 						})
 					},
 					isInNCPV3Experiment: ot.a,
-					showCommunityDirectoryBacklink: rt.a,
+					showCommunityDirectoryBacklink: rt.c,
 					isCommunityMutingEnabled: nt.b
 				}), (e, t) => ({
 					addToMultiClicked: () => {
@@ -5914,4 +5905,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/IdCard.e6432191f34ed279237b.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/IdCard.c753d12121c793d01eb6.js.map
