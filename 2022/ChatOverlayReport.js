@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ChatOverlayReport.1fd27a6244cf155da1ff.js
-// Retrieved at 9/12/2022, 2:10:03 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ChatOverlayReport.7cad867ce1f876f87cc1.js
+// Retrieved at 9/29/2022, 11:50:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ChatOverlayReport"], {
 		"./src/chat/components/OverlayReport/CrisisFlow/CrisisFlowPage.m.less": function(e, t, s) {
@@ -302,7 +302,7 @@
 							e(Object(p.b)())
 						},
 						onChannelBlock: t => {
-							e(R.n(t)), e(O.Y(t)), e(O.Z(t))
+							e(R.m(t)), e(O.Y(t)), e(O.Z(t))
 						},
 						showFailToast: () => e(Object(C.f)({
 							kind: E.b.Error,
@@ -502,4 +502,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatOverlayReport.1fd27a6244cf155da1ff.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatOverlayReport.7cad867ce1f876f87cc1.js.map

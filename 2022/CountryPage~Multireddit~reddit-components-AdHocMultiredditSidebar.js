@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CountryPage~Multireddit~reddit-components-AdHocMultiredditSidebar.df7429f57f8d41dbb84a.js
-// Retrieved at 9/26/2022, 1:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CountryPage~Multireddit~reddit-components-AdHocMultiredditSidebar.908321aa46434425df78.js
+// Retrieved at 9/29/2022, 11:50:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CountryPage~Multireddit~reddit-components-AdHocMultiredditSidebar"], {
 		"./node_modules/lodash/take.js": function(e, t, i) {
@@ -725,7 +725,7 @@
 					if (!a) {
 						let t = r();
 						if (t.user.session && t.user.session.unsafeLoggedOut) return void i(Object(d.c)("/"));
-						!t.user.account && t.user.session && await i(b.t()), t = r();
+						!t.user.account && t.user.session && await i(b.s()), t = r();
 						const {
 							account: n
 						} = t.user;
@@ -2572,4 +2572,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CountryPage~Multireddit~reddit-components-AdHocMultiredditSidebar.df7429f57f8d41dbb84a.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CountryPage~Multireddit~reddit-components-AdHocMultiredditSidebar.908321aa46434425df78.js.map

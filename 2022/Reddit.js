@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Reddit.a084cfe4b02839f1f0fc.js
-// Retrieved at 9/29/2022, 11:10:06 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Reddit.6fd75442071ef2f40977.js
+// Retrieved at 9/29/2022, 11:50:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Reddit"], {
 		"./assets/fonts/BentonSans/font.less": function(e, t, n) {},
@@ -1635,7 +1635,7 @@
 				t(Object(s.c)({
 					correlationId: Object(o.d)(o.a.GildingFlow),
 					thingId: c
-				})), Object(a.Q)(i) || await t(r.t());
+				})), Object(a.Q)(i) || await t(r.s());
 				const l = n();
 				if (!Object(a.Q)(l)) return t(Object(s.f)())
 			}
@@ -1649,7 +1649,7 @@
 				r = n("./src/reddit/selectors/user.ts");
 			const o = e => async (e, t) => {
 				const n = t();
-				Object(r.Q)(n) || await e(s.t());
+				Object(r.Q)(n) || await e(s.s());
 				const o = t();
 				if (!Object(r.Q)(o)) throw new Error("Failed to login")
 			}
@@ -1774,7 +1774,7 @@
 			t.a = () => async (e, t) => {
 				e(Object(r.m)({
 					title: Object(s.a)()
-				})), await e(Object(o.t)()), Object(a.Q)(t()) || e(Object(i.openLoginModal)())
+				})), await e(Object(o.s)()), Object(a.Q)(t()) || e(Object(i.openLoginModal)())
 			}
 		},
 		"./src/reddit/actions/pages/econManagement.ts": function(e, t, n) {
@@ -1786,7 +1786,7 @@
 				i = n("./src/reddit/routes/econManagement/index.ts"),
 				c = n("./src/reddit/selectors/user.ts");
 			t.a = () => async (e, t) => {
-				await e(Object(a.t)());
+				await e(Object(a.s)());
 				const n = t(),
 					l = Object(c.Q)(n),
 					d = Object(c.N)(n);
@@ -1806,7 +1806,7 @@
 				c = n("./src/reddit/selectors/user.ts");
 			n("./src/reddit/actions/economics/econManagement/index.ts");
 			t.a = () => async (e, t) => {
-				await e(Object(a.t)());
+				await e(Object(a.s)());
 				const n = t(),
 					l = Object(c.Q)(n),
 					d = Object(c.N)(n);
@@ -1828,7 +1828,7 @@
 			t.a = () => async (e, t) => {
 				e(Object(o.m)({
 					title: Object(s.d)()
-				})), Object(i.Q)(t()) || await e(Object(a.t)()), await e(Object(r.b)()).then(() => {
+				})), Object(i.Q)(t()) || await e(Object(a.s)()), await e(Object(r.b)()).then(() => {
 					if (t().economics.me.data) return e(Object(r.a)())
 				})
 			}
@@ -1859,7 +1859,7 @@
 					if (l) {
 						const n = [],
 							d = t();
-						Object(c.Q)(d) || n.push(e(Object(a.t)()));
+						Object(c.Q)(d) || n.push(e(Object(a.s)()));
 						const u = Object(s.a)(l, null);
 						n.push(e(Object(o.subredditDataRequested)(u, l, {}))), await Promise.all(n);
 						const m = Object(i.G)(t(), l);
@@ -1881,7 +1881,7 @@
 			t.a = () => async (e, t) => {
 				e(Object(r.m)({
 					title: Object(s.k)()
-				})), await e(Object(a.t)()), Object(i.Q)(t()) && await e(Object(o.q)())
+				})), await e(Object(a.s)()), Object(i.Q)(t()) && await e(Object(o.q)())
 			}
 		},
 		"./src/reddit/actions/pages/talk.ts": function(e, t, n) {
@@ -2097,7 +2097,7 @@
 							}
 						}))(u(), e, t, n, v);
 					if (!O.ok) throw new Error("User avatar failed to save");
-					return s(Object(p.A)(O.body)), {
+					return s(Object(p.y)(O.body)), {
 						accountIcon: null === (h = null === (b = O.body) || void 0 === b ? void 0 : b.avatar) || void 0 === h ? void 0 : h.headshot_image_url,
 						fullBodySnoovatar: null === (f = null === (g = O.body) || void 0 === g ? void 0 : g.avatar) || void 0 === f ? void 0 : f.image_url
 					}
@@ -2145,7 +2145,7 @@
 				l = n("./src/telemetry/index.ts");
 			const d = () => async (e, t) => {
 				const n = t();
-				Object(l.a)(Object(i.l)(n)), e(Object(o.t)({
+				Object(l.a)(Object(i.l)(n)), e(Object(o.s)({
 					forceFetch: !0
 				})), await e(Object(r.g)(a.a.SNOOVATAR_MODAL))
 			};
@@ -16724,7 +16724,7 @@
 					logoutUser: t => {
 						(null == t ? void 0 : t.contentWindow) && t.contentWindow.postMessage({
 							type: "disableAutoSelect"
-						}, Object(Vd.a)()), e(Object(be.q)())
+						}, Object(Vd.a)()), e(Object(be.p)())
 					},
 					onChatClick: () => e(Object(W.f)()),
 					onDismissCustomizeFlyout: () => e(Object($c.u)()),
@@ -16745,7 +16745,7 @@
 					toggleChangeEmailModal: () => {
 						e(Object(Zc.b)()), e(Object(wt.i)(ol.a))
 					},
-					resendEmail: () => e(Object(be.x)(il.a)),
+					resendEmail: () => e(Object(be.v)(il.a)),
 					requestCreatePost: () => {
 						t.pageLayer && e(Yc.p(t.pageLayer))
 					},
@@ -19083,18 +19083,16 @@
 			Object(o.e)(o.b.EntryPointStart);
 			const Sv = Object(D.a)({
 					actionDispatchers: {
-						reddaidReceived: be.u,
-						loidReceived: be.r,
-						sessionTrackerReceived: be.z
+						loidReceived: be.q,
+						sessionTrackerReceived: be.x
 					},
 					authHeaders: {
 						[Ng.a]: "desktop2x"
 					},
 					cookies: d.a,
 					receivedActions: {
-						reddaidReceived: be.d,
 						loidReceived: be.b,
-						sessionTrackerReceived: be.k,
+						sessionTrackerReceived: be.j,
 						userAuthenticated: de.c,
 						userLoggedOut: de.d,
 						userReauthenticated: de.e,
@@ -20873,7 +20871,7 @@
 				h = n("./src/reddit/routes/meta/constants.ts");
 			const g = {
 					action: () => async (e, t) => {
-						Object(b.Q)(t()) || await e(Object(d.t)())
+						Object(b.Q)(t()) || await e(Object(d.s)())
 					},
 					chunk: r.t.META_ARBITRUM_POINTS_MIGRATION_PAGE,
 					component: Object(s.a)({
@@ -20904,7 +20902,7 @@
 				},
 				f = {
 					action: () => async (e, t) => {
-						Object(b.Q)(t()) || await e(Object(d.t)())
+						Object(b.Q)(t()) || await e(Object(d.s)())
 					},
 					chunk: r.t.META_MAINNET_POINTS_MIGRATION_PAGE,
 					component: Object(s.a)({
@@ -21024,7 +21022,7 @@
 				},
 				y = e => async (t, n) => {
 					const s = Object(p.a)(e.queryParams);
-					Object(b.Q)(n()) || await t(Object(d.t)()), s && setTimeout(async () => {
+					Object(b.Q)(n()) || await t(Object(d.s)()), s && setTimeout(async () => {
 						await t(Object(o.c)(`/r/${encodeURIComponent(s.subreddit)}/`)), m.d.spBurnLinks(n()) && t(Object(a.h)(u.a.CRYPTO_BURN_POINTS, s))
 					}, 0)
 				}, x = {
@@ -22918,4 +22916,4 @@
 		["./src/reddit/index.tsx", "runtime~Reddit", "vendors~CommentsPage~ModerationPages~Reddit~reddit-components-ClassicPost~reddit-components-CompactP~d737df3e", "vendors~CommentsPage~Governance~ModListing~ModerationPages~Reddit~Subreddit", "vendors~Chat~Governance~Reddit", "vendors~Reddit", "CommentsPage~Governance~Reddit~ReportFlow~Subreddit~reddit-components-BlankPost~reddit-components-Cl~5351df81", "Governance~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compo~bd4baca2", "Reddit~RpanListingUnit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPos~93b34f9d", "ModListing~PostCreation~Reddit~StandalonePostPage~Subreddit", "Governance~ModListing~Reddit~ReportFlow~Subreddit", "Chat~Governance~Reddit", "Governance~Reddit~SubredditForkingCTA", "Governance~ModListing~Reddit", "Governance~Reddit"]
 	]
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit.a084cfe4b02839f1f0fc.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit.6fd75442071ef2f40977.js.map

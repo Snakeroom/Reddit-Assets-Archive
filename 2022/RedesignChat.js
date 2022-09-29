@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/RedesignChat.4dc9abf229797003e173.js
-// Retrieved at 9/26/2022, 1:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/RedesignChat.c79a8bd682eaea631866.js
+// Retrieved at 9/29/2022, 11:50:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["RedesignChat"], {
 		"./node_modules/lodash/uniqueId.js": function(e, t, n) {
@@ -29,9 +29,9 @@
 			}));
 			var s = n("./node_modules/react/index.js"),
 				a = n.n(s),
-				r = n("./node_modules/history/esm/history.js"),
-				c = n("./node_modules/js-cookie/dist/js.cookie.js"),
-				i = n.n(c),
+				c = n("./node_modules/history/esm/history.js"),
+				r = n("./node_modules/js-cookie/dist/js.cookie.js"),
+				i = n.n(r),
 				o = n("./node_modules/redux-thunk/es/index.js"),
 				d = n("./src/lib/constants/index.ts"),
 				u = n("./src/lib/initializeClient/index.tsx"),
@@ -62,21 +62,21 @@
 			function S(e) {
 				return void 0 !== e ? e : -1
 			}
-			const A = C.a.wrapped(e => a.a.createElement("div", {
+			const k = C.a.wrapped(e => a.a.createElement("div", {
 					className: e.className
 				}, e.children), "BasePortalContainer", N.a),
-				D = C.a.wrapped(e => {
+				A = C.a.wrapped(e => {
 					const t = Object(j.d)(),
 						n = Object(s.useRef)(null),
-						r = e => {
+						c = e => {
 							var s;
 							if (e.target instanceof Node && e.target) {
 								const a = Boolean(null === (s = null == n ? void 0 : n.current) || void 0 === s ? void 0 : s.contains(e.target));
 								t(Object(_.changeFocus)(a))
 							}
 						};
-					return Object(s.useEffect)(() => (document.addEventListener("focusin", r), () => {
-						document.removeEventListener("focusin", r)
+					return Object(s.useEffect)(() => (document.addEventListener("focusin", c), () => {
+						document.removeEventListener("focusin", c)
 					})), a.a.createElement("div", {
 						ref: n,
 						className: e.className,
@@ -86,15 +86,15 @@
 						}
 					}, e.children)
 				}, "EmbedPortalContainer", N.a),
-				k = C.a.wrapped(e => a.a.createElement("div", {
+				D = C.a.wrapped(e => a.a.createElement("div", {
 					className: e.className,
 					style: {
 						width: `${S(T.width)}px`,
 						height: `${S(T.height)}px`
 					}
 				}, e.children), "HiddenPortalContainer", N.a),
-				R = C.a.wrapped(w.a, "MinimizedRedesignPortalContainer", N.a),
-				I = A,
+				I = C.a.wrapped(w.a, "MinimizedRedesignPortalContainer", N.a),
+				R = k,
 				L = Object(E.a)({
 					container: e => e && e.container && e.container.size
 				});
@@ -102,15 +102,15 @@
 			function U(e) {
 				switch (e.container) {
 					case M.a.EMBED:
-						return a.a.createElement(D, null, e.children);
+						return a.a.createElement(A, null, e.children);
 					case M.a.HIDDEN:
-						return a.a.createElement(k, null, e.children);
+						return a.a.createElement(D, null, e.children);
 					case M.a.FULL:
-						return a.a.createElement(I, null, e.children);
+						return a.a.createElement(R, null, e.children);
 					case M.a.MINIMIZED:
-						return a.a.createElement(R, null);
+						return a.a.createElement(I, null);
 					default:
-						return a.a.createElement(D, null, e.children)
+						return a.a.createElement(A, null, e.children)
 				}
 			}
 			var q = n("./src/chat/customMiddleware/channelsFilter.ts"),
@@ -132,8 +132,8 @@
 				ne = n.n(te),
 				se = n("./src/chat/constants/theme.ts"),
 				ae = n("./src/chat/models/Theme/index.ts"),
-				re = n("./src/chat/reducers/experiments/helpers.ts"),
-				ce = n("./src/chat/reducers/meta/index.ts"),
+				ce = n("./src/chat/reducers/experiments/helpers.ts"),
+				re = n("./src/chat/reducers/meta/index.ts"),
 				ie = n("./src/chat/reducers/platform/index.ts"),
 				oe = n("./src/lib/env/index.ts");
 			const de = (e, t) => {
@@ -141,11 +141,10 @@
 					const {
 						account: s,
 						language: a,
-						loid: r,
-						prefs: c,
-						reddaid: i,
-						session: o,
-						sessionTracker: d
+						loid: c,
+						prefs: r,
+						session: i,
+						sessionTracker: o
 					} = e.user;
 					return t.user = {
 						...t.user,
@@ -160,18 +159,17 @@
 							totalKarma: null === (n = s.karma) || void 0 === n ? void 0 : n.total
 						} : null,
 						language: a,
-						loid: r,
+						loid: c,
 						prefs: {
-							...c,
+							...r,
 							invitePolicy: e.user.chatSettings.invitePolicy
 						},
-						reddaid: i,
-						sessionTracker: d,
-						session: o && o.unsafeLoggedOut ? null : o
+						sessionTracker: o,
+						session: i && i.unsafeLoggedOut ? null : i
 					}, t
 				},
 				ue = e => (e.meta = {
-					...ce.a,
+					...re.a,
 					isRedesign: !0
 				}, e),
 				le = e => {
@@ -192,26 +190,26 @@
 				},
 				he = (e, t, n) => {
 					const s = ne()(),
-						a = Object(r.c)(t.location, void 0, s),
-						c = Object(l.a)(Object(r.e)(a), n),
+						a = Object(c.c)(t.location, void 0, s),
+						r = Object(l.a)(Object(c.e)(a), n),
 						i = Object(ie.b)(ie.a, Object(p.e)({
 							location: a,
 							action: "PUSH",
-							routeMatch: c
+							routeMatch: r
 						}));
 					return e.platform = {
 						...i
 					}, e
 				},
 				me = (e, t) => {
-					var n, s, a, r, c;
+					var n, s, a, c, r;
 					const i = {},
 						o = null === (n = e.platform.currentPage) || void 0 === n ? void 0 : n.queryParams;
 					for (const u in null === (a = null === (s = null == e ? void 0 : e.user) || void 0 === s ? void 0 : s.experiments) || void 0 === a ? void 0 : a.byName) i[u] = {
-						...null === (c = null === (r = null == e ? void 0 : e.user) || void 0 === r ? void 0 : r.experiments) || void 0 === c ? void 0 : c.byName[u],
+						...null === (r = null === (c = null == e ? void 0 : e.user) || void 0 === c ? void 0 : c.experiments) || void 0 === r ? void 0 : r.byName[u],
 						isOverride: !1
 					};
-					const d = Object(re.a)(i, o);
+					const d = Object(ce.a)(i, o);
 					return t.experiments = {
 						models: {
 							...i,
@@ -227,16 +225,14 @@
 				ge = n("./src/chat/routes/index.ts");
 			const fe = Object(m.a)({
 					actionDispatchers: {
-						reddaidReceived: v.r,
-						loidReceived: v.q,
-						sessionTrackerReceived: v.u
+						loidReceived: v.p,
+						sessionTrackerReceived: v.s
 					},
 					cookies: i.a,
 					receivedActions: {
 						headersReceived: g.a,
 						loidReceived: v.e,
-						reddaidReceived: v.f,
-						sessionTrackerReceived: v.g,
+						sessionTrackerReceived: v.f,
 						userAuthenticated: x.a,
 						userLoggedOut: x.b,
 						userReauthenticated: x.c
@@ -248,8 +244,8 @@
 			function xe(e, t) {
 				let n = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : "/chat/minimize";
 				const s = document.getElementById("2x-container"),
-					c = document.createElement("div");
-				return s.appendChild(c), Object(u.a)({
+					r = document.createElement("div");
+				return s.appendChild(r), Object(u.a)({
 					reducerMap: be.a,
 					routes: ge.a,
 					apiContext: fe.apiContext,
@@ -264,7 +260,7 @@
 						return a.a.createElement("div", null, Object(O.d)(a.a.createElement(n, null, Object(y.a)(e, t)), document.body))
 					}(e, t)),
 					appName: d.n.Chat,
-					history: Object(r.d)({
+					history: Object(c.d)({
 						initialEntries: [n],
 						initialIndex: 0
 					}),
@@ -286,14 +282,14 @@
 							routes: n,
 							store: s
 						} = e;
-						return s.dispatch(Object(v.l)()), t.listen((e, t) => {
-							const a = Object(l.a)(Object(r.e)(e), n);
-							s.dispatch(Object(p.d)(e, t, a)), s.dispatch(Object(v.l)())
+						return s.dispatch(Object(v.k)()), t.listen((e, t) => {
+							const a = Object(l.a)(Object(c.e)(e), n);
+							s.dispatch(Object(p.d)(e, t, a)), s.dispatch(Object(v.k)())
 						}), "undefined" != typeof window && window.addEventListener("load", async () => {
 							s.dispatch(Object(f.a)(!1, !1))
 						}), {}
 					},
-					target: c,
+					target: r,
 					timingsSampleRate: 1
 				})
 			}
@@ -305,14 +301,14 @@
 			})), n.d(t, "b", (function() {
 				return a
 			})), n.d(t, "d", (function() {
-				return r
-			})), n.d(t, "a", (function() {
 				return c
+			})), n.d(t, "a", (function() {
+				return r
 			}));
 			const s = "APP_BADGES__PENDING",
 				a = "APP_BADGES__LOADED",
-				r = "APP_BADGES__UPDATED",
-				c = "APP_BADGES__FAILED"
+				c = "APP_BADGES__UPDATED",
+				r = "APP_BADGES__FAILED"
 		},
 		"./src/reddit/actions/appBadgeIndicators/index.ts": function(e, t, n) {
 			"use strict";
@@ -329,10 +325,10 @@
 			}));
 			var s = n("./src/lib/makeActionCreator/index.ts"),
 				a = n("./src/reddit/actions/appBadgeIndicators/constants.ts"),
-				r = n("./src/reddit/actions/tabBadging.ts"),
-				c = n("./src/lib/makeGqlRequest/index.ts"),
+				c = n("./src/reddit/actions/tabBadging.ts"),
+				r = n("./src/lib/makeGqlRequest/index.ts"),
 				i = n("./src/redditGQL/operations/BadgeIndicators.json"),
-				o = e => Object(c.a)(e, {
+				o = e => Object(r.a)(e, {
 					...i
 				}),
 				d = n("./src/reddit/models/Badge/index.ts");
@@ -382,7 +378,7 @@
 							}(t.body)
 						}
 					}(s);
-					a ? (e(l(a)), e(Object(r.d)())) : e(m())
+					a ? (e(l(a)), e(Object(c.d)())) : e(m())
 				};
 			const p = () => async e => {
 				const t = b({
@@ -397,23 +393,23 @@
 			n.r(t);
 			var s = n("./node_modules/lodash/isEqual.js"),
 				a = n.n(s),
-				r = n("./src/chat/actions/message/unreadCount.ts"),
-				c = n("./src/chat/actions/surveyTrigger/index.ts"),
+				c = n("./src/chat/actions/message/unreadCount.ts"),
+				r = n("./src/chat/actions/surveyTrigger/index.ts"),
 				i = n("./src/reddit/actions/appBadgeIndicators/index.ts"),
 				o = n("./src/reddit/actions/survey/index.ts"),
 				d = n("./src/reddit/actions/tabBadging.ts");
 			t.default = (e, t) => n => {
 				switch (n.type) {
-					case r.a: {
+					case c.a: {
 						const s = n.payload,
-							r = Object(d.b)(t());
-						if (!a()(s, r)) {
+							c = Object(d.b)(t());
+						if (!a()(s, c)) {
 							const t = Object(i.d)(s.unreadMessages, s.hasNewMessages);
 							e(Object(i.a)(t)), e(Object(d.d)())
 						}
 					}
 					break;
-				case c.a:
+				case r.a:
 					e(Object(o.h)())
 				}
 			}
@@ -435,15 +431,15 @@
 			}));
 			var s = n("./node_modules/reselect/es/index.js"),
 				a = n("./src/lib/fastdom/index.ts"),
-				r = n("./src/lib/makeActionCreator/index.ts"),
-				c = n("./src/reddit/contexts/PageLayer/selectors.ts"),
+				c = n("./src/lib/makeActionCreator/index.ts"),
+				r = n("./src/reddit/contexts/PageLayer/selectors.ts"),
 				i = n("./src/reddit/helpers/tabBadging/index.ts"),
 				o = n("./src/reddit/models/Badge/index.ts"),
 				d = n("./src/reddit/selectors/appBadges.ts"),
 				u = n("./src/reddit/selectors/user.ts"),
 				l = n("./src/reddit/actions/appBadgeIndicators/index.ts");
 			const h = "TAB__UPDATE_HAS_UNREAD_MESSAGES_BADGE",
-				m = Object(r.a)(h),
+				m = Object(c.a)(h),
 				b = (e, t) => {
 					e <= 0 ? a.a.write(() => {
 						Object(i.b)(!1), window.document.title = t
@@ -458,7 +454,7 @@
 				}),
 				f = () => async (e, t) => {
 					const n = t(),
-						s = Object(c.g)(n, {});
+						s = Object(r.g)(n, {});
 					if (!(Object(u.P)(n) || Object(u.Q)(n)) || !s) return;
 					const a = Object(d.i)(n);
 					b(a, s), e(m({
@@ -476,25 +472,25 @@
 				}, x = e => async (t, n) => {
 					const s = n(),
 						a = Object(d.e)(s),
-						r = Object(d.h)(s),
+						c = Object(d.h)(s),
 						{
-							basicChannelCount: c,
+							basicChannelCount: r,
 							inboxCount: i
 						} = e;
-					if (a !== c) {
+					if (a !== r) {
 						const e = Object(l.e)({
-							count: c,
+							count: r,
 							key: o.c.ChatTab
 						});
 						t(Object(l.a)(e))
 					}
-					if (i && i !== r) {
+					if (i && i !== c) {
 						const e = Object(l.e)({
 							count: i,
 							key: o.c.MessageTab
 						});
 						t(Object(l.a)(e))
-					}(a !== c || i && i !== r) && t(f())
+					}(a !== r || i && i !== c) && t(f())
 				}
 		},
 		"./src/reddit/helpers/tabBadging/index.ts": function(e, t, n) {
@@ -508,16 +504,16 @@
 			}));
 			var s = n("./src/config.ts");
 			const a = `${s.a.assetPath}/img/favicon/badged-favicon-32x32.png`,
-				r = `${s.a.assetPath}/img/favicon/badged-favicon-16x16.png`,
-				c = `${s.a.assetPath}/img/favicon/favicon-32x32.png`,
+				c = `${s.a.assetPath}/img/favicon/badged-favicon-16x16.png`,
+				r = `${s.a.assetPath}/img/favicon/favicon-32x32.png`,
 				i = `${s.a.assetPath}/img/favicon/favicon-16x16.png`,
 				o = "badgeCountSync",
 				d = e => window.document.querySelector(`link[href="${e}"]`),
 				u = function() {
 					let e = !(arguments.length > 0 && void 0 !== arguments[0]) || arguments[0];
-					const t = d(e ? c : a),
-						n = d(e ? i : r);
-					t && n && (t.href = e ? a : c, n.href = e ? r : i)
+					const t = d(e ? r : a),
+						n = d(e ? i : c);
+					t && n && (t.href = e ? a : r, n.href = e ? c : i)
 				},
 				l = e => {
 					navigator && navigator.serviceWorker && navigator.serviceWorker.controller && navigator.serviceWorker.controller.postMessage({
@@ -539,10 +535,10 @@
 			})), n.d(t, "c", (function() {
 				return a
 			})), n.d(t, "b", (function() {
-				return r
+				return c
 			}));
 			n("./node_modules/core-js/modules/web.dom.iterable.js");
-			var s, a, r, c = n("./src/config.ts");
+			var s, a, c, r = n("./src/config.ts");
 
 			function i(e) {
 				return "userId" in e
@@ -556,34 +552,34 @@
 				const s = n.media[0],
 					a = Object.keys(s);
 				if (s["0x0"]) return s["0x0"];
-				let r = {
+				let c = {
 					width: 1 / 0,
 					height: 1 / 0,
 					url: ""
 				};
 				if (a.forEach(n => {
 						const a = s[n],
-							[c, i] = n.split("x").map(e => parseInt(e));
-						(c < r.width && c >= e || i < r.height && i >= t) && (r = {
+							[r, i] = n.split("x").map(e => parseInt(e));
+						(r < c.width && r >= e || i < c.height && i >= t) && (c = {
 							height: i,
-							width: c,
+							width: r,
 							url: a
 						})
-					}), !r.url && a.length) {
+					}), !c.url && a.length) {
 					const e = Object.keys(s)[0],
 						t = s[e],
 						[n, a] = e.split("x").map(e => parseInt(e));
-					r = {
+					c = {
 						height: a,
 						width: n,
 						url: t
 					}
 				}
-				return r.url
+				return c.url
 			}
 
 			function u(e) {
-				return e.startsWith("https") ? e : `${c.a.assetPath}/${e}`
+				return e.startsWith("https") ? e : `${r.a.assetPath}/${e}`
 			}
 
 			function l(e, t, n) {
@@ -601,16 +597,16 @@
 			}(a || (a = {})),
 			function(e) {
 				e.Numbered = "NUMBERED", e.Filled = "FILLED"
-			}(r || (r = {}))
+			}(c || (c = {}))
 		},
 		"./src/reddit/selectors/appBadges.ts": function(e, t, n) {
 			"use strict";
 			n.d(t, "b", (function() {
 				return a
 			})), n.d(t, "e", (function() {
-				return r
-			})), n.d(t, "d", (function() {
 				return c
+			})), n.d(t, "d", (function() {
+				return r
 			})), n.d(t, "c", (function() {
 				return i
 			})), n.d(t, "f", (function() {
@@ -626,24 +622,24 @@
 			}));
 			var s = n("./node_modules/reselect/es/index.js");
 			const a = e => e.appBadges.badges,
-				r = Object(s.a)(a, e => {
+				c = Object(s.a)(a, e => {
 					var t;
 					return (null === (t = e.chatUnreadMessages) || void 0 === t ? void 0 : t.count) || 0
 				}),
-				c = Object(s.a)(a, e => e && e.chatRooms && e.chatRooms.count || 0),
+				r = Object(s.a)(a, e => e && e.chatRooms && e.chatRooms.count || 0),
 				i = Object(s.a)(a, e => e && e.chatRoomMentions && e.chatRoomMentions.count || 0),
-				o = Object(s.a)(r, a, (e, t) => {
+				o = Object(s.a)(c, a, (e, t) => {
 					var n;
 					return 0 === e && !!(null === (n = t.chatHasNewMessages) || void 0 === n ? void 0 : n.isShowing)
 				}),
 				d = Object(s.a)(a, e => e && e.activityTab && e.activityTab.count || 0),
 				u = Object(s.a)(a, e => e && e.messageTab && e.messageTab.count || 0),
 				l = Object(s.a)(d, u, (e, t) => e + t),
-				h = Object(s.a)(r, l, (e, t) => e + t)
+				h = Object(s.a)(c, l, (e, t) => e + t)
 		},
 		"./src/redditGQL/operations/BadgeIndicators.json": function(e) {
 			e.exports = JSON.parse('{"id":"9d105ce5d71a"}')
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RedesignChat.4dc9abf229797003e173.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RedesignChat.c79a8bd682eaea631866.js.map

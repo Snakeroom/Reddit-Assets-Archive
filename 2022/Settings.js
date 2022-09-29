@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Settings.67866596b2cfa7ebdc24.js
-// Retrieved at 9/27/2022, 11:50:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Settings.457b1ff87f03201b88bc.js
+// Retrieved at 9/29/2022, 11:50:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Settings"], {
 		"./node_modules/moment/locale sync recursive ^\\.\\/.*$": function(e, t, n) {
@@ -1689,7 +1689,7 @@
 				B = n("./src/reddit/reducers/economics/paymentSystems/index.ts"),
 				U = n("./src/reddit/selectors/externalAccount.ts");
 			const F = e => async (t, n) => {
-				await t(Object(A.t)());
+				await t(Object(A.s)());
 				const f = [t(Object(P.s)()), t(Object(P.A)(!0)), t(Object(p.a)())];
 				n().economics.paymentSystems.status === B.a.NotFetched && f.push(t((() => async (e, t, n) => {
 					let {
@@ -11229,8 +11229,8 @@
 					}
 				}),
 				H = Object(o.b)(G, e => ({
-					changeEmail: t => e(Object(y.v)(t)),
-					sendResetEmail: t => e(Object(y.y)(t)),
+					changeEmail: t => e(Object(y.t)(t)),
+					sendResetEmail: t => e(Object(y.w)(t)),
 					showErrorToast: t => e(Object(A.f)({
 						duration: A.a,
 						kind: U.b.Error,
@@ -11380,7 +11380,7 @@
 					changeLanguage: t => e(Object(E.g)(t)),
 					openChangeEmailModal: () => e(Object(_.i)(Z.a)),
 					openSSOCreatePasswordForEmailModal: () => e(Object(_.h)(Z.l)),
-					resendEmail: () => e(Object(y.x)())
+					resendEmail: () => e(Object(y.v)())
 				})),
 				de = e => {
 					let {
@@ -11818,7 +11818,7 @@
 				}),
 				jt = Object(o.b)(Ct, (e, t) => ({
 					deactivate: t => {
-						e(Object(y.w)(t))
+						e(Object(y.u)(t))
 					},
 					openSSOCreatePasswordForLinkGoogleModal: () => e(Object(_.h)(Z.k)),
 					optOut: async () => {
@@ -11827,7 +11827,7 @@
 							domain: xe.a.cookieDomain
 						}), await e(Object(g.b)()), window.location.href = `${xe.a.redditUrl}/prefs`
 					},
-					resendEmail: () => e(Object(y.x)()),
+					resendEmail: () => e(Object(y.v)()),
 					toggleChangePasswordModal: () => e(Object(v.openChangePasswordModal)()),
 					toggleDeactivateModal: () => e(Object(_.i)("deactivate_modal_id")),
 					toggleOptoutModal: () => e(Object(_.i)("settins_optout_modal_id"))
@@ -15145,4 +15145,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Settings.67866596b2cfa7ebdc24.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Settings.457b1ff87f03201b88bc.js.map

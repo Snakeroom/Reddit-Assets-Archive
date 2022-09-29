@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CommentsPage~Governance~Reddit~ReportFlow~Subreddit~reddit-components-BlankPost~reddit-components-Cl~5351df81.61ce391f60e6ff26f9a9.js
-// Retrieved at 9/29/2022, 11:10:06 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CommentsPage~Governance~Reddit~ReportFlow~Subreddit~reddit-components-BlankPost~reddit-components-Cl~5351df81.25f9f9c56f8770538ece.js
+// Retrieved at 9/29/2022, 11:50:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CommentsPage~Governance~Reddit~ReportFlow~Subreddit~reddit-components-BlankPost~reddit-components-Cl~5351df81"], {
 		"./src/lib/name/index.ts": function(e, t, r) {
@@ -2801,7 +2801,6 @@
 								sort: u,
 								adContext: {
 									layout: o ? o.toUpperCase() : _e.a.Card,
-									reddaid: e.user.reddaid,
 									clientSignalSessionData: {
 										adsSeenCount: O,
 										totalPostsSeenCount: g,
@@ -6519,7 +6518,6 @@
 						includeIdentity: x && !e.user.account,
 						adContext: {
 							layout: O ? O.toUpperCase() : u.a.Card,
-							reddaid: e.user.reddaid,
 							clientSignalSessionData: {
 								adsSeenCount: P,
 								totalPostsSeenCount: D,
@@ -12029,4 +12027,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommentsPage~Governance~Reddit~ReportFlow~Subreddit~reddit-components-BlankPost~reddit-components-Cl~5351df81.61ce391f60e6ff26f9a9.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommentsPage~Governance~Reddit~ReportFlow~Subreddit~reddit-components-BlankPost~reddit-components-Cl~5351df81.25f9f9c56f8770538ece.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Settings-CreatePasswordSSOModal.fd3e08a53819b137f707.js
-// Retrieved at 9/12/2022, 2:10:03 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Settings-CreatePasswordSSOModal.fbd812c2027613bcb5b8.js
+// Retrieved at 9/29/2022, 11:50:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Settings-CreatePasswordSSOModal"], {
 		"./src/reddit/components/EmailCollection/Envelope/index.m.less": function(e, s, t) {
@@ -58,13 +58,13 @@
 				p = t("./src/reddit/components/EmailCollection/Envelope/index.tsx"),
 				u = t("./src/reddit/components/Settings/ModalContainer/index.tsx"),
 				v = t("./src/reddit/controls/Button/index.tsx"),
-				b = t("./src/reddit/components/Settings/CreatePasswordSSOModal/index.m.less"),
-				w = t.n(b);
+				w = t("./src/reddit/components/Settings/CreatePasswordSSOModal/index.m.less"),
+				b = t.n(w);
 			const h = e => {
 				let {
 					isResponsiveSettingsEnabled: s
 				} = e;
-				return s ? w.a.mResponsive : ""
+				return s ? b.a.mResponsive : ""
 			};
 			var g = e => a.a.createElement(u.a, {
 					className: h(e),
@@ -77,9 +77,9 @@
 						hk: "1gDhgD"
 					})
 				}, a.a.createElement("div", {
-					className: w.a.buttonWrapper
+					className: b.a.buttonWrapper
 				}, a.a.createElement(v.l, {
-					className: Object(m.a)(w.a.commonBtn, w.a.primaryBtn),
+					className: Object(m.a)(b.a.commonBtn, b.a.primaryBtn),
 					onClick: e.onClose,
 					redditStyle: !0
 				}, c.fbt._("Ok", null, {
@@ -91,7 +91,7 @@
 				let {
 					isResponsiveSettingsEnabled: s
 				} = e;
-				return s ? w.a.mResponsive : ""
+				return s ? b.a.mResponsive : ""
 			};
 			var k, y = e => {
 				const s = Object(O.a)();
@@ -105,7 +105,7 @@
 					onClose: e.isResponsiveSettingsEnabled ? void 0 : e.onClose,
 					title: e.title
 				}, a.a.createElement("div", {
-					className: w.a.buttonWrapper
+					className: b.a.buttonWrapper
 				}, a.a.createElement(v.o, {
 					onClick: () => {
 						s(Object(C.b)("cancel")), e.onClose()
@@ -114,7 +114,7 @@
 				}, c.fbt._("Cancel", null, {
 					hk: "2TSLl5"
 				})), a.a.createElement(v.l, {
-					className: Object(m.a)(w.a.commonBtn, w.a.primaryBtn),
+					className: Object(m.a)(b.a.commonBtn, b.a.primaryBtn),
 					onClick: () => {
 						s(Object(C.b)("continue")), e.handleContinueClick()
 					},
@@ -282,7 +282,7 @@
 					closeResetPasswordForDeactivateAccountModal: () => e(Object(r.g)(A.k)),
 					closeResetPasswordForGoogleLinkModal: () => e(Object(r.g)(A.m)),
 					closeResetPasswordForGoogleUnlinkModal: () => e(Object(r.g)(A.n)),
-					sendResetEmail: s => e(Object(i.y)(s))
+					sendResetEmail: s => e(Object(i.w)(s))
 				}));
 			s.default = L(e => e.userEmail && e.username ? a.a.createElement(R, e) : null)
 		},
@@ -318,7 +318,7 @@
 					iconClassName: p,
 					onClose: u,
 					title: v,
-					titleClassName: b
+					titleClassName: w
 				} = e;
 				return a.a.createElement("div", {
 					className: Object(n.a)(i.a.container, o)
@@ -332,7 +332,7 @@
 				}, m && a.a.createElement("div", {
 					className: Object(n.a)(i.a.icon, p)
 				}, m), a.a.createElement("h2", {
-					className: Object(n.a)(i.a.title, b)
+					className: Object(n.a)(i.a.title, w)
 				}, v)), r && a.a.createElement("p", {
 					className: Object(n.a)(i.a.description, c)
 				}, r), a.a.createElement("div", {
@@ -383,4 +383,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Settings-CreatePasswordSSOModal.fd3e08a53819b137f707.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Settings-CreatePasswordSSOModal.fbd812c2027613bcb5b8.js.map

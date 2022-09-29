@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-SidebarNativeAd.e262952a226ecc0df171.js
-// Retrieved at 9/26/2022, 1:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-SidebarNativeAd.eb5183468c5b93221e9b.js
+// Retrieved at 9/29/2022, 11:50:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-SidebarNativeAd"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -939,7 +939,7 @@
 							}
 						}))(u(), e, t, n, g);
 					if (!_.ok) throw new Error("User avatar failed to save");
-					return r(Object(p.A)(_.body)), {
+					return r(Object(p.y)(_.body)), {
 						accountIcon: null === (f = null === (b = _.body) || void 0 === b ? void 0 : b.avatar) || void 0 === f ? void 0 : f.headshot_image_url,
 						fullBodySnoovatar: null === (v = null === (h = _.body) || void 0 === h ? void 0 : h.avatar) || void 0 === v ? void 0 : v.image_url
 					}
@@ -987,7 +987,7 @@
 				d = n("./src/telemetry/index.ts");
 			const l = () => async (e, t) => {
 				const n = t();
-				Object(d.a)(Object(a.l)(n)), e(Object(s.t)({
+				Object(d.a)(Object(a.l)(n)), e(Object(s.s)({
 					forceFetch: !0
 				})), await e(Object(o.g)(i.a.SNOOVATAR_MODAL))
 			};
@@ -4635,4 +4635,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-SidebarNativeAd.e262952a226ecc0df171.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-SidebarNativeAd.eb5183468c5b93221e9b.js.map

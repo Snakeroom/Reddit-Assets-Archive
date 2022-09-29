@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Frontpage.bec4b9ba0e2794a1d018.js
-// Retrieved at 9/27/2022, 11:50:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Frontpage.856d157d8c09eb424399.js
+// Retrieved at 9/29/2022, 11:50:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Frontpage"], {
 		"./node_modules/intersection-observer/intersection-observer.js": function(e, t) {
@@ -671,7 +671,6 @@
 					} = Object(I.a)(e), C = {
 						adContext: {
 							layout: i ? i.toUpperCase() : h.a.Card,
-							reddaid: e.user.reddaid,
 							distance: r,
 							clientSignalSessionData: {
 								adsSeenCount: O,
@@ -8419,4 +8418,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Frontpage.bec4b9ba0e2794a1d018.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Frontpage.856d157d8c09eb424399.js.map

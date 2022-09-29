@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/AdminPanel.8f3ec4874cf9ffa417b8.js
-// Retrieved at 9/27/2022, 11:50:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/AdminPanel.ea22ab82a5a0429b93f9.js
+// Retrieved at 9/29/2022, 11:50:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["AdminPanel"], {
 		"./src/devPlatform/components/AdminPanel/Utilities/DevPlatformConfig/DevPlatformConfigLoader.tsx": function(e, t, n) {
@@ -1199,7 +1199,7 @@
 						type: "date",
 						value: _n(e.created),
 						onChange: n => {
-							t(Object(bn.s)({
+							t(Object(bn.r)({
 								account: {
 									...e,
 									created: Cn(n.target.value)
@@ -1937,4 +1937,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/AdminPanel.8f3ec4874cf9ffa417b8.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/AdminPanel.ea22ab82a5a0429b93f9.js.map

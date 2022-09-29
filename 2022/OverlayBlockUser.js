@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/OverlayBlockUser.fe029b12f98c95649c5c.js
-// Retrieved at 9/12/2022, 2:10:03 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/OverlayBlockUser.5242b78a8913433027ab.js
+// Retrieved at 9/29/2022, 11:50:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["OverlayBlockUser"], {
 		"./src/chat/components/OverlayBlockUser/index.m.less": function(e, t, n) {
@@ -22,15 +22,15 @@
 				d = n("./src/chat/components/OverlayNav/index.tsx"),
 				i = n("./src/chat/controls/Overlay/index.tsx"),
 				u = n("./src/chat/controls/OverlayControlBar/index.tsx"),
-				h = n("./src/chat/helpers/chatSelector.ts"),
-				m = n("./src/chat/components/OverlayBlockUser/index.m.less"),
-				_ = n.n(m);
-			const k = Object(h.a)({
+				m = n("./src/chat/helpers/chatSelector.ts"),
+				h = n("./src/chat/components/OverlayBlockUser/index.m.less"),
+				_ = n.n(h);
+			const k = Object(m.a)({
 					blockedUser: (e, t) => e.contacts.models[t.blockedUserId]
 				}),
 				b = Object(a.b)(k, e => ({
 					onChannelBlock: t => {
-						e(l.n(t)), e(c.Y(t))
+						e(l.m(t)), e(c.Y(t))
 					}
 				}))(e => {
 					const {
@@ -64,4 +64,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/OverlayBlockUser.fe029b12f98c95649c5c.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/OverlayBlockUser.5242b78a8913433027ab.js.map

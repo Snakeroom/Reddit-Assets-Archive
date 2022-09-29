@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/OverlayCreateChannel.d93cd24a7dfcba57d805.js
-// Retrieved at 9/12/2022, 2:10:03 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/OverlayCreateChannel.1b0f2adb771c6d212991.js
+// Retrieved at 9/29/2022, 11:50:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["OverlayCreateChannel"], {
 		"./src/chat/components/OverlayCreateChannel/index.m.less": function(e, t, n) {
@@ -157,9 +157,9 @@
 					onCancelAndGoBack: () => {
 						e(Object(m.P)()), e(Object(b.j)())
 					},
-					onSelectUser: t => e(Object(C.m)(t)),
-					onUnselectUser: t => e(Object(C.t)(t)),
-					removeAllSelectedUsers: () => e(Object(C.s)()),
+					onSelectUser: t => e(Object(C.l)(t)),
+					onUnselectUser: t => e(Object(C.r)(t)),
+					removeAllSelectedUsers: () => e(Object(C.q)()),
 					requestSuggestedContacts: () => e(Object(p.m)())
 				})),
 				J = e => {
@@ -774,4 +774,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/OverlayCreateChannel.d93cd24a7dfcba57d805.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/OverlayCreateChannel.1b0f2adb771c6d212991.js.map

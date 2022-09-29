@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Appeal.19d1acdf1c04d0ec75e6.js
-// Retrieved at 9/26/2022, 1:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Appeal.fbf0cec9a30e4c75144f.js
+// Retrieved at 9/29/2022, 11:50:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Appeal"], {
 		"./src/lib/validateEmail/index.ts": function(e, a, t) {
@@ -256,7 +256,7 @@
 					currentUser: v.k
 				}),
 				D = Object(i.b)(S, e => ({
-					logoutUser: () => e(Object(p.q)()),
+					logoutUser: () => e(Object(p.p)()),
 					onSubmitAppeal: (a, t) => e(y(a, t))
 				}));
 			class w extends l.a.Component {
@@ -530,4 +530,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Appeal.19d1acdf1c04d0ec75e6.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Appeal.fbf0cec9a30e4c75144f.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CommentsPage.b727845adbf032079be2.js
-// Retrieved at 9/29/2022, 11:10:06 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CommentsPage.df92f0c03e50a74ac28a.js
+// Retrieved at 9/29/2022, 11:50:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CommentsPage", "Governance~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compo~bd4baca2", "Reddit~RpanListingUnit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPos~93b34f9d", "CollectionCommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~SearchResults", "Governance~ModListing~Reddit~ReportFlow~Subreddit", "ModListing~PostCreation~Reddit~StandalonePostPage~Subreddit", "CollectionCommentsPage~ModProgressModule~NewCommunityProgress", "Governance~ModListing~Reddit", "CollectionCommentsPage~SearchResults", "AchievementsActions"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -6495,7 +6495,6 @@
 								l = {
 									adContext: {
 										layout: P.a.Card,
-										reddaid: n().user.reddaid,
 										sourcePostId: m,
 										clientSignalSessionData: {
 											adsSeenCount: r,
@@ -8561,7 +8560,7 @@
 							}
 						}))(u(), e, t, n, g);
 					if (!_.ok) throw new Error("User avatar failed to save");
-					return s(Object(p.A)(_.body)), {
+					return s(Object(p.y)(_.body)), {
 						accountIcon: null === (f = null === (b = _.body) || void 0 === b ? void 0 : b.avatar) || void 0 === f ? void 0 : f.headshot_image_url,
 						fullBodySnoovatar: null === (h = null === (C = _.body) || void 0 === C ? void 0 : C.avatar) || void 0 === h ? void 0 : h.image_url
 					}
@@ -8609,7 +8608,7 @@
 				d = n("./src/telemetry/index.ts");
 			const l = () => async (e, t) => {
 				const n = t();
-				Object(d.a)(Object(a.l)(n)), e(Object(o.t)({
+				Object(d.a)(Object(a.l)(n)), e(Object(o.s)({
 					forceFetch: !0
 				})), await e(Object(r.g)(i.a.SNOOVATAR_MODAL))
 			};
@@ -44450,4 +44449,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommentsPage.b727845adbf032079be2.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommentsPage.df92f0c03e50a74ac28a.js.map
