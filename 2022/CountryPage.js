@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CountryPage.34fd74fd7c5c91c16a0a.js
-// Retrieved at 9/29/2022, 4:30:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CountryPage.20ecca1ca9472e717acf.js
+// Retrieved at 9/29/2022, 6:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CountryPage"], {
 		"./src/reddit/actions/pages/countrySite/index.ts": function(e, t, s) {
@@ -242,7 +242,7 @@
 					const i = null === (n = null === (s = null == t ? void 0 : t.pageLayer) || void 0 === s ? void 0 : s.urlParams) || void 0 === n ? void 0 : n.countryCode,
 						d = null === (o = null === (r = null == t ? void 0 : t.pageLayer) || void 0 === r ? void 0 : r.urlParams) || void 0 === o ? void 0 : o.languageCode,
 						a = i ? `${d}-${i}` : `${d}`;
-					return l.d + `--[cc:'${a}']`
+					return l.d + "--[cc:" + `'${a}']`
 				},
 				S = Object(i.a)(v, P, (e, t) => Object(a.a)(t, e)),
 				L = Object(i.c)({
@@ -302,4 +302,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CountryPage.34fd74fd7c5c91c16a0a.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CountryPage.20ecca1ca9472e717acf.js.map

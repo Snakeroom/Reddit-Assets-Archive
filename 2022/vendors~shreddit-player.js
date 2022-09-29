@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/vendors~shreddit-player.71db0e372d8844ee8e3b.js
-// Retrieved at 9/29/2022, 4:30:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/vendors~shreddit-player.7a77b29ef3845f605e98.js
+// Retrieved at 9/29/2022, 6:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["vendors~shreddit-player"], {
 		"./node_modules/@reddit/faceplate/lib/custom-event.js": function(e, t, r) {
@@ -119,7 +119,7 @@
 				e[e.emergency = 0] = "emergency", e[e.alert = 1] = "alert", e[e.critical = 2] = "critical", e[e.error = 3] = "error", e[e.warning = 4] = "warning", e[e.notice = 5] = "notice", e[e.info = 6] = "info", e[e.success = 7] = "success", e[e.debug = 8] = "debug", e[e.none = 9] = "none"
 			}(_ || (_ = {})),
 			function(e) {
-				e.Programmatic = "programmatic", e.Eager = "eager", e.Action = "action", e.Lazy = "lazy", e.Preload = "preload"
+				e.Programmatic = "programmatic", e.Eager = "eager", e.Action = "action", e.Intent = "intent", e.Lazy = "lazy", e.Preload = "preload"
 			}(y || (y = {})),
 			function(e) {
 				e.Get = "get", e.Post = "post", e.Dialog = "dialog", e.Log = "log"
@@ -191,10 +191,6 @@
         height: inherit;
         width: inherit;
         margin: auto;
-        max-height: inherit;
-        max-width: inherit;
-        min-height: inherit;
-        min-width: inherit;
         position: relative;
         overflow: hidden;
         border-radius: inherit;
@@ -206,6 +202,10 @@
       }
 
       * {
+        max-height: inherit;
+        max-width: inherit;
+        min-height: inherit;
+        min-width: inherit;
         object-fit: inherit;
       }
     `
@@ -7215,4 +7215,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/vendors~shreddit-player.71db0e372d8844ee8e3b.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/vendors~shreddit-player.7a77b29ef3845f605e98.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Reddit.a3dc70b0fdac11548f39.js
-// Retrieved at 9/29/2022, 5:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Reddit.4b217a5d27ac6d20fea7.js
+// Retrieved at 9/29/2022, 6:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Reddit"], {
 		"./assets/fonts/BentonSans/font.less": function(e, t, n) {},
@@ -2535,7 +2535,6 @@
 				showSuspended: "_3o7sV2ySJ76-f1ktwzclmi",
 				offline: "_1OVuPhC0s89CZodD5qWMWP",
 				navExperiment: "_32g3BKfzA1V3Y0eaczZbYl",
-				inline: "_2aHCVoJEFfwy05xpKqUif2",
 				overlayContentWrapper: "_2DJXORCrmcNpPTSq0LqL6i",
 				mIsCommentsLightbox: "_26pbaCw90eAC80WRqUfICJ",
 				mIsLargeCommentsLightbox: "_2zCdbqYzIDmabv-Dk_ILKk",
@@ -2545,6 +2544,7 @@
 				removeTopPadding: "_33N4WmnRV24-NLLnXKccj3",
 				pinnedSubscriptions: "zoWOQnp55WuhEugRSwfw1",
 				removeOverflow: "_1TESSB-XqnzjiOpUWj2dND",
+				inline: "_2aHCVoJEFfwy05xpKqUif2",
 				withUpsell: "_1kFzDy0hQVq-CvguZsCcmV",
 				lightboxHeaderWrapper: "_3obgdFz00GvpqpuX8QCsNK",
 				lightboxHeaderWrapperExp: "_1k5guql3KcBJzH7i7UCr7Y",
@@ -6078,12 +6078,14 @@
 				}, []), Object(a.e)(e => Object(c.b)(e) || Object(l.N)(e) || Object(l.M)(e)) ? o.a.createElement(d, null) : null
 			}
 		},
+		"./src/reddit/components/Root/faceplate.less": function(e, t, n) {},
 		"./src/reddit/components/Root/index.m.less": function(e, t, n) {
 			e.exports = {
 				container: "_1VP69d9lk-Wk9zokOaylL",
 				containerExp: "KDkLHOpoLUZvoYQUBe9nF"
 			}
 		},
+		"./src/reddit/components/Root/tailwind.css": function(e, t, n) {},
 		"./src/reddit/components/ShortcutIndexModal/index.m.less": function(e, t, n) {
 			e.exports = {
 				ColumnLabel: "_3RwBfA8Nrz_fZLCoxbAAmA",
@@ -9848,7 +9850,7 @@
 				be = n("./src/reddit/actions/users.ts"),
 				he = n("./node_modules/react-redux/es/index.js"),
 				ge = n("./node_modules/react-router/esm/react-router.js"),
-				fe = (n("./assets/fonts/redesignIcon2020/redesignFont2020.css"), n("./assets/fonts/BentonSans/font.less"), n("./assets/fonts/IBMPlexSans/font.less"), n("./assets/fonts/NotoMono/font.less"), n("./assets/fonts/NotoSans/font.less"), n("./assets/fonts/RedditSans/font.less"), n("./assets/fonts/VCR/font.less"), n("./src/reddit/components/Crypto/componentStyles.css"), n("./src/reddit/components/Root/index.m.less")),
+				fe = (n("./assets/fonts/redesignIcon2020/redesignFont2020.css"), n("./assets/fonts/BentonSans/font.less"), n("./assets/fonts/IBMPlexSans/font.less"), n("./assets/fonts/NotoMono/font.less"), n("./assets/fonts/NotoSans/font.less"), n("./assets/fonts/RedditSans/font.less"), n("./assets/fonts/VCR/font.less"), n("./src/reddit/components/Root/faceplate.less"), n("./src/reddit/components/Crypto/componentStyles.css"), n("./src/reddit/components/Root/tailwind.css"), n("./src/reddit/components/Root/index.m.less")),
 				ve = n.n(fe),
 				Oe = n("./src/reddit/components/Root/AdminPanelLoader.tsx"),
 				Ce = n("./src/lib/classNames/index.ts"),
@@ -18198,8 +18200,8 @@
 						};
 					return m.a.createElement(u.Fragment, null, m.a.createElement(ah, b), n && !r && m.a.createElement(Hm, {
 						className: Object(Ce.a)(Th.a.header, ih(Th.a, b), {
-							[Th.a.inline]: c
-						})
+							"relative w-100": c
+						}, "flex-grow-0 flex-shrink-0 top-0 left-0 right-0 fixed z-[80]")
 					}), m.a.createElement(mh, {
 						className: Object(Ce.a)(Th.a.offlineBanner, ih(Th.a, b)),
 						online: a.online,
@@ -18533,26 +18535,30 @@
 			}
 			const Cg = Object(X.c)({
 					isNavbarLikeMwebEnabled: Rl.a,
+					isNightmode: v.db,
 					theme: e => e.themes.current
 				}),
 				yg = Object(he.b)(Cg, {})(e => {
 					let {
 						children: t,
 						theme: n,
-						isNavbarLikeMwebEnabled: s
+						isNightmode: s,
+						isNavbarLikeMwebEnabled: r
 					} = e;
-					const r = Object(Ve.a)({
+					const o = Object(Ve.a)({
 						theme: n
 					});
 					return m.a.createElement(Se.a.Provider, {
-						value: s
+						value: r
 					}, m.a.createElement("div", {
 						className: Object(Ce.a)(ve.a.container, {
-							[ve.a.containerExp]: s
-						}),
+							[ve.a.containerExp]: r,
+							"theme-light": !s,
+							"theme-dark": s
+						}, "theme-beta"),
 						style: {
-							"--background": r.body,
-							"--canvas": r.canvas
+							"--background": o.body,
+							"--canvas": o.canvas
 						}
 					}, t))
 				});
@@ -22916,4 +22922,4 @@
 		["./src/reddit/index.tsx", "runtime~Reddit", "vendors~CommentsPage~ModerationPages~Reddit~reddit-components-ClassicPost~reddit-components-CompactP~d737df3e", "vendors~CommentsPage~Governance~ModListing~ModerationPages~Reddit~Subreddit", "vendors~Chat~Governance~Reddit", "vendors~Reddit", "CommentsPage~Governance~Reddit~ReportFlow~Subreddit~reddit-components-BlankPost~reddit-components-Cl~5351df81", "Governance~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compo~bd4baca2", "Reddit~RpanListingUnit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPos~93b34f9d", "ModListing~PostCreation~Reddit~StandalonePostPage~Subreddit", "Governance~ModListing~Reddit~ReportFlow~Subreddit", "Chat~Governance~Reddit", "Governance~Reddit~SubredditForkingCTA", "Governance~ModListing~Reddit", "Governance~Reddit"]
 	]
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit.a3dc70b0fdac11548f39.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit.4b217a5d27ac6d20fea7.js.map
