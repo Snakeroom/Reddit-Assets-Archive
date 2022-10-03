@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostDetailStickyHeader.4581adaa288354f19469.js
-// Retrieved at 9/29/2022, 4:30:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostDetailStickyHeader.9180fa451d1bb0dfbb64.js
+// Retrieved at 10/3/2022, 2:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostDetailStickyHeader"], {
 		"./src/reddit/actions/shortcuts/close.ts": function(t, e, s) {
@@ -33,9 +33,9 @@
 						E = Object(h.c)(f),
 						O = Object(b.b)(f),
 						C = Object(u.a)(f),
-						k = [i.a.NsfwBlockingModal].includes(C),
-						j = [a.a.NSFW_BLOCKING_MODAL_V2].includes(O),
-						S = k || j;
+						j = [i.a.NsfwBlockingModal].includes(C),
+						k = [a.a.NSFW_BLOCKING_MODAL_V2].includes(O),
+						S = j || k;
 					if (_ && "true" === _.contentEditable && v && E) s(o.b({
 						parentCommentId: v,
 						commentsPageKey: E
@@ -172,17 +172,17 @@
 				E = s("./src/reddit/controls/Button/index.tsx"),
 				O = s("./src/reddit/helpers/postCollection.ts"),
 				C = s("./src/reddit/icons/fonts/index.tsx"),
-				k = s("./src/reddit/icons/svgs/Subreddit/index.tsx"),
-				j = s("./src/reddit/models/Media/index.ts"),
+				j = s("./src/reddit/icons/svgs/Subreddit/index.tsx"),
+				k = s("./src/reddit/models/Media/index.ts"),
 				S = s("./src/reddit/models/Vote/index.ts"),
 				L = s("./src/reddit/selectors/experiments/joinOptimizations.ts"),
-				V = s("./src/reddit/selectors/experiments/postActionBarAnimation.ts"),
-				w = s("./src/reddit/selectors/platform.ts"),
-				B = s("./src/reddit/selectors/subreddit.ts"),
-				M = s("./src/reddit/selectors/telemetry.ts"),
-				N = s("./src/reddit/contexts/Post/index.tsx"),
-				P = s("./src/reddit/components/LightboxHeader/index.m.less"),
-				A = s.n(P);
+				P = s("./src/reddit/selectors/experiments/postActionBarAnimation.ts"),
+				V = s("./src/reddit/selectors/platform.ts"),
+				w = s("./src/reddit/selectors/subreddit.ts"),
+				B = s("./src/reddit/selectors/telemetry.ts"),
+				M = s("./src/reddit/contexts/Post/index.tsx"),
+				N = s("./src/reddit/components/LightboxHeader/index.m.less"),
+				A = s.n(N);
 			const D = Object(a.c)({
 					subreddit: (t, e) => {
 						let {
@@ -190,14 +190,14 @@
 							post: n
 						} = e;
 						if (!s && !n) return null;
-						const o = n || Object(w.n)(t, {
+						const o = n || Object(V.n)(t, {
 							page: s
 						});
-						return (null == o ? void 0 : o.belongsTo) ? Object(B.O)(t, {
+						return (null == o ? void 0 : o.belongsTo) ? Object(w.P)(t, {
 							identifier: o.belongsTo
 						}) : null
 					},
-					post: w.n,
+					post: V.n,
 					joinOptimizationsLightboxHeaderEnabled: t => Object(L.a)(t) || Object(L.d)(t) || Object(L.c)(t),
 					isVoteCountAnimation: (t, e) => {
 						let {
@@ -205,10 +205,10 @@
 							post: n
 						} = e;
 						if (!s && !n) return !1;
-						const o = s && Object(w.n)(t, {
+						const o = s && Object(V.n)(t, {
 							page: s
 						}) || n;
-						return !!o && Object(V.g)(t, {
+						return !!o && Object(P.g)(t, {
 							post: o
 						})
 					}
@@ -233,17 +233,17 @@
 					}
 				})),
 				y = {
-					[j.o.GIFVIDEO]: l.a.gif_post,
-					[j.o.IMAGE]: l.a.image_post,
-					[j.o.TEXT]: l.a.text_post,
-					[j.o.RTJSON]: l.a.text_post,
-					[j.o.VIDEO]: l.a.video_post,
-					[j.o.EMBED]: l.a.embed,
-					[j.o.LIVEVIDEO]: l.a.video_live,
-					[j.o.GALLERY]: l.a.media_gallery,
-					[j.o.LIVEAUDIO]: l.a.audio
+					[k.o.GIFVIDEO]: l.a.gif_post,
+					[k.o.IMAGE]: l.a.image_post,
+					[k.o.TEXT]: l.a.text_post,
+					[k.o.RTJSON]: l.a.text_post,
+					[k.o.VIDEO]: l.a.video_post,
+					[k.o.EMBED]: l.a.embed,
+					[k.o.LIVEVIDEO]: l.a.video_live,
+					[k.o.GALLERY]: l.a.media_gallery,
+					[k.o.LIVEAUDIO]: l.a.audio
 				},
-				H = t => y[(null == t ? void 0 : t.media) ? t.media.type : j.o.EMBED];
+				H = t => y[(null == t ? void 0 : t.media) ? t.media.type : k.o.EMBED];
 			class T extends i.a.Component {
 				constructor() {
 					super(...arguments), this.state = {
@@ -267,13 +267,13 @@
 							return {
 								source: "sticky_banner",
 								action: "click",
-								noun: (null == e ? void 0 : e.name) && Object(B.ib)(t, {
+								noun: (null == e ? void 0 : e.name) && Object(w.jb)(t, {
 									identifier: {
 										name: e.name,
 										type: "subreddit"
 									}
 								}) ? "subscribe" : "unsubscribe",
-								post: s ? M.K(t, s.id) : void 0,
+								post: s ? B.K(t, s.id) : void 0,
 								subreddit: e
 							}
 						})
@@ -295,7 +295,7 @@
 						post: l,
 						useAdaptiveStyles: u,
 						isVoteCountAnimation: b
-					} = this.props, h = H(l), _ = !l && (null === (t = null == a ? void 0 : a.meta) || void 0 === t ? void 0 : t.name) === d.Rb.META_MEMBERSHIP_PAYWALL_PAGE, E = l ? N.a : function(t) {
+					} = this.props, h = H(l), _ = !l && (null === (t = null == a ? void 0 : a.meta) || void 0 === t ? void 0 : t.name) === d.Rb.META_MEMBERSHIP_PAYWALL_PAGE, E = l ? M.a : function(t) {
 						let {
 							children: e,
 							postId: s
@@ -335,7 +335,7 @@
 						post: l,
 						nowrap: !0,
 						sendEvent: this.props.sendEvent
-					}), this.props.showSubreddit && this.props.subreddit && i.a.createElement(i.a.Fragment, null, i.a.createElement(k.a, {
+					}), this.props.showSubreddit && this.props.subreddit && i.a.createElement(i.a.Fragment, null, i.a.createElement(j.a, {
 						className: A.a.srIcon
 					}), i.a.createElement(x.a, {
 						to: this.props.subreddit.url,
@@ -454,9 +454,9 @@
 			})), s.d(e, "f", (function() {
 				return C
 			})), s.d(e, "e", (function() {
-				return k
-			})), s.d(e, "d", (function() {
 				return j
+			})), s.d(e, "d", (function() {
+				return k
 			})), s.d(e, "h", (function() {
 				return S
 			})), s.d(e, "c", (function() {
@@ -497,8 +497,8 @@
 				E = t => i("a_upvote", t),
 				O = t => r("a_upvote", t),
 				C = t => i("z_downvote", t),
-				k = t => r("z_downvote", t),
-				j = o("c_create_post"),
+				j = t => r("z_downvote", t),
+				k = o("c_create_post"),
 				S = t => i("l_go_to_link", t),
 				L = t => r("r_comment", t);
 			o("q_navigation")
@@ -538,4 +538,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostDetailStickyHeader.4581adaa288354f19469.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostDetailStickyHeader.9180fa451d1bb0dfbb64.js.map

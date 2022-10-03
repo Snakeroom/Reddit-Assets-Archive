@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~Reddit.bb9e4265fb707148e304.js
-// Retrieved at 9/29/2022, 4:30:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~Reddit.0b51c976e8dc23fc5e05.js
+// Retrieved at 10/3/2022, 2:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~Reddit"], {
 		"./assets/fonts/NotoMono/font.less": function(e, t, n) {},
@@ -1005,7 +1005,7 @@
 					} = e;
 					return async (e, r, s) => {
 						const a = r(),
-							u = Object(_.W)(a, {
+							u = Object(_.X)(a, {
 								subredditId: n
 							}).name;
 						e(Object(f.k)(t));
@@ -1045,7 +1045,7 @@
 						subredditId: d,
 						emojiName: u,
 						settings: p
-					} = e, h = Object(y.a)(a.url), m = r(), g = Object(_.W)(m, {
+					} = e, h = Object(y.a)(a.url), m = r(), g = Object(_.X)(m, {
 						subredditId: d
 					}).name, E = await (async (e, t, n, r, s) => Object(c.a)(Object(i.a)(e, [l.a]), {
 						endpoint: `${e.apiUrl}/api/v1/${t}/emoji.json`,
@@ -1106,7 +1106,7 @@
 					} = r;
 					const a = n();
 					if (Object(O.a)(a, e)) return;
-					const o = Object(_.W)(a, {
+					const o = Object(_.X)(a, {
 						subredditId: e
 					}).name;
 					t(P(e));
@@ -1131,7 +1131,7 @@
 						apiContext: d
 					} = a;
 					const u = s(),
-						p = Object(_.W)(u, {
+						p = Object(_.X)(u, {
 							subredditId: t
 						}).name,
 						f = await (async (e, t, n) => Object(c.a)(Object(i.a)(e, [l.a]), {
@@ -1160,7 +1160,7 @@
 						apiContext: d
 					} = a;
 					const u = s(),
-						p = Object(_.W)(u, {
+						p = Object(_.X)(u, {
 							subredditId: e
 						}).name;
 					if ((await (async (e, t, n) => Object(c.a)(Object(i.a)(e, [l.a]), {
@@ -1186,7 +1186,7 @@
 						apiContext: p
 					} = u;
 					const f = d(),
-						h = Object(_.W)(f, {
+						h = Object(_.X)(f, {
 							subredditId: s
 						}).name;
 					(await (async (e, t, n, r) => Object(c.a)(Object(i.a)(e, [l.a]), {
@@ -1287,7 +1287,7 @@
 				E = e => async (t, a) => {
 					t(b());
 					const o = a(),
-						i = Object(l.W)(o, {
+						i = Object(l.X)(o, {
 							subredditId: e
 						}).name,
 						u = o.structuredStyles.models[e],
@@ -2176,7 +2176,7 @@
 			const D = e => _.d.reCaptchaEnterprise(e) && !Object(T.d)(e),
 				w = e => !!Object(S.c)(e, {
 					experimentEligibilitySelector: Object(I.d)(Object(I.b)(...a.d)),
-					experimentName: f.of
+					experimentName: f.pf
 				}),
 				j = Object(r.b)("LOAD_RECAPTCHA_ENTERPRISE"),
 				A = () => l(e => p()([D, w, e => e.tracking.reCaptchaEnterprise.load === r.a.New], t => t(e)))(async e => {
@@ -2479,7 +2479,7 @@
 					let {
 						gqlContext: a
 					} = s;
-					const d = Object(u.W)(n(), {
+					const d = Object(u.X)(n(), {
 						subredditId: e
 					});
 					if (void 0 === d) {
@@ -2709,7 +2709,7 @@
 					});
 					if (p.ok) {
 						const n = t(),
-							r = p.body && p.body.length ? p.body.map(e => Object(d.G)(n, e)).filter(e => !!e).reduce((e, t) => (e[t] = !0, e), {}) : {};
+							r = p.body && p.body.length ? p.body.map(e => Object(d.H)(n, e)).filter(e => !!e).reduce((e, t) => (e[t] = !0, e), {}) : {};
 						e(f({
 							subredditIds: r
 						}))
@@ -4335,7 +4335,7 @@
 							function() {
 								let e = {};
 								A && k.type.length && (Object(se.d)(w, {
-									experimentName: te.Ec
+									experimentName: te.Fc
 								}), j && (e = {
 									...k
 								}));
@@ -4799,7 +4799,7 @@
 				subredditsByName: Object(i.a)((e, t) => {
 					const n = {};
 					return t.subredditIcons && t.subredditIcons.map(t => {
-						n[t.subredditName] = Object(u.A)(e, {
+						n[t.subredditName] = Object(u.B)(e, {
 							subredditName: t.subredditName
 						})
 					}), n
@@ -5369,7 +5369,7 @@
 							a = e.platform.currentPage,
 							o = a && a.urlParams.subredditName,
 							i = s || o || "",
-							d = Object(c.G)(e, i);
+							d = Object(c.H)(e, i);
 						d && e.structuredStyles.models[d] || r.add("structuredStyles"), e.user.prefs.subreddit[d] || r.add("prefsSubreddit")
 					}
 					return [...r].join(",")
@@ -25161,7 +25161,7 @@
 				}),
 				p = Object(a.a)(u, c.c, (e, t) => t.isFlairModOnly, (e, t) => t.flairTemplateType, (e, t, n, r) => e.filter(e => !(e.modFlairOnly && !t || e.modFlairOnly && !n) && (!(!e.userFlairAllowed && r === o.d.UserFlair) && !(!e.postFlairAllowed && r === o.d.LinkFlair)))),
 				f = Object(a.a)(l, (e, t) => t.subredditId, (e, t) => Object.keys(e[t].snoomojis)),
-				b = (e, t) => Object(i.x)(e, {
+				b = (e, t) => Object(i.y)(e, {
 					subredditName: t
 				}).emojisEnabled,
 				h = {
@@ -25198,7 +25198,7 @@
 					if (!u(e)) return;
 					const t = Object(o.c)(e, {
 						experimentEligibilitySelector: l,
-						experimentName: a.de,
+						experimentName: a.ee,
 						expEventOverride: !1
 					});
 					return null == t ? void 0 : t.toLocaleLowerCase()
@@ -25221,9 +25221,9 @@
 				},
 				b = e => !!p(e) && Object(o.c)(e, {
 					experimentEligibilitySelector: u,
-					experimentName: a.ee,
+					experimentName: a.fe,
 					expEventOverride: !1
-				}) !== a.fe.Readonly
+				}) !== a.ge.Readonly
 		},
 		"./src/reddit/selectors/experiments/serpTabPreserved.ts": function(e, t, n) {
 			"use strict";
@@ -25234,10 +25234,10 @@
 				s = n("./src/reddit/selectors/telemetry.ts");
 
 			function a(e) {
-				const t = Object(s.q)(e, r.Ec);
+				const t = Object(s.q)(e, r.Fc);
 				return {
 					experimentState: e,
-					isActive: (null == t ? void 0 : t.variant) === r.Ld,
+					isActive: (null == t ? void 0 : t.variant) === r.Md,
 					isBucketed: !!(null == t ? void 0 : t.variant)
 				}
 			}
@@ -25387,4 +25387,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit.bb9e4265fb707148e304.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit.0b51c976e8dc23fc5e05.js.map

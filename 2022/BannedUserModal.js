@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/BannedUserModal.360290ab325e8ec348e3.js
-// Retrieved at 9/29/2022, 4:30:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/BannedUserModal.d2a20f3faf6b287f81b5.js
+// Retrieved at 10/3/2022, 2:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["BannedUserModal"], {
 		"./src/reddit/actions/subredditModeration/ban.ts": function(e, t, n) {
@@ -94,7 +94,7 @@
 					pending: L
 				});
 			const B = {};
-			var T = function() {
+			var U = function() {
 					let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : B,
 						t = arguments.length > 1 ? arguments[1] : void 0;
 					switch (t.type) {
@@ -112,12 +112,12 @@
 							return e
 					}
 				},
-				U = n("./src/reddit/actions/inContextModeration.ts");
+				T = n("./src/reddit/actions/inContextModeration.ts");
 			var N = function() {
 				let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : null,
 					t = arguments.length > 1 ? arguments[1] : void 0;
 				switch (t.type) {
-					case U.a:
+					case T.a:
 						return t.payload;
 					default:
 						return e
@@ -259,7 +259,7 @@
 				},
 				K = Object(O.c)({
 					api: I,
-					fetchedTokens: T,
+					fetchedTokens: U,
 					inContext: N,
 					loadMore: A,
 					models: q,
@@ -271,8 +271,8 @@
 					banned: K
 				}
 			});
-			const V = Object(o.a)(k.s),
-				z = Object(o.a)(k.r),
+			const z = Object(o.a)(k.s),
+				V = Object(o.a)(k.r),
 				Y = Object(o.a)(k.q),
 				$ = function(e) {
 					let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : {};
@@ -285,13 +285,13 @@
 							i = Object(C.e)(e, d),
 							l = o.features.banned.fetchedTokens[i];
 						if (o.features.banned.api.pending[i] || l) return;
-						n(V({
+						n(z({
 							subredditId: e,
 							fetchedToken: d
 						}));
 						const c = o.subreddits.models[e].name,
 							u = await x(a(), c, t);
-						u.ok ? n(z({
+						u.ok ? n(V({
 							...u.body,
 							fetchedToken: d
 						})) : n(Y({
@@ -396,10 +396,10 @@
 				}, ie = (e, t) => async (n, s) => {
 					const r = s();
 					await Promise.all([(async () => {
-						if (!Object(S.b)(u.a.BAN_USER)(r) && !Object(w.T)(r, {
+						if (!Object(S.b)(u.a.BAN_USER)(r) && !Object(w.U)(r, {
 								subredditId: e
 							})) {
-							const t = Object(w.W)(r, {
+							const t = Object(w.X)(r, {
 								subredditId: e
 							});
 							await n(Object(l.o)(t.name))
@@ -498,7 +498,7 @@
 					hk: "2To19l"
 				})],
 				f = Object(d.c)({
-					subredditRules: m.V
+					subredditRules: m.W
 				}),
 				g = Object(o.b)(f);
 			class x extends a.a.Component {
@@ -626,8 +626,8 @@
 				L = l.a.wrapped(p.s, "UnbanButton", M.a),
 				I = l.a.wrapped(p.p, "ModalText", M.a),
 				B = l.a.div("DescriptionText", M.a),
-				T = l.a.span("Bullet", M.a),
-				U = l.a.wrapped(B, "VisibilityNote", M.a),
+				U = l.a.span("Bullet", M.a),
+				T = l.a.wrapped(B, "VisibilityNote", M.a),
 				N = l.a.wrapped(p.g, "ModalFooter", M.a),
 				P = l.a.div("FooterRow", M.a),
 				A = Object(d.c)({
@@ -784,7 +784,7 @@
 						togglePermanent: this.togglePermanent
 					})), a.a.createElement(N, null, a.a.createElement(P, null, a.a.createElement(I, null, s.fbt._("Note to include in ban message", null, {
 						hk: "44jlkB"
-					}), a.a.createElement(T, null, "•"))), a.a.createElement(P, null, a.a.createElement(p.t, {
+					}), a.a.createElement(U, null, "•"))), a.a.createElement(P, null, a.a.createElement(p.t, {
 						onChange: e => this.setState({
 							banMessage: e.currentTarget.value
 						}),
@@ -800,7 +800,7 @@
 						onClick: this.onRemove
 					}, a.a.createElement(R, null), s.fbt._("Unban", null, {
 						hk: "3zNsVi"
-					})) : a.a.createElement(U, null, a.a.createElement(T, null, "•"), s.fbt._("Visible to banned user", null, {
+					})) : a.a.createElement(T, null, a.a.createElement(U, null, "•"), s.fbt._("Visible to banned user", null, {
 						hk: "1PQbxq"
 					})), a.a.createElement(x.a, null, a.a.createElement(p.a, {
 						onClick: e.toggleModal,
@@ -1043,4 +1043,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/BannedUserModal.360290ab325e8ec348e3.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/BannedUserModal.d2a20f3faf6b287f81b5.js.map

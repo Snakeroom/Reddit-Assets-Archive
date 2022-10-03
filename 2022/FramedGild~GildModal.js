@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/FramedGild~GildModal.2ebcb14c56144ce3c5f1.js
-// Retrieved at 9/29/2022, 4:30:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/FramedGild~GildModal.6b1361f04ea777ddcef0.js
+// Retrieved at 10/3/2022, 2:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["FramedGild~GildModal", "gildActions"], {
 		"./node_modules/@stripe/react-stripe-js/dist/react-stripe.umd.js": function(e, t, r) {
@@ -1086,7 +1086,7 @@
 						commentId: r
 					}), s = Object(A.k)(e), a = e.gild, {
 						isAnonymous: o
-					} = a, i = !o && s && (s.username || s.displayText) ? s.username || s.displayText : void 0, c = n ? n.author : void 0, d = Object(S.M)(e, {
+					} = a, i = !o && s && (s.username || s.displayText) ? s.username || s.displayText : void 0, c = n ? n.author : void 0, d = Object(S.N)(e, {
 						thingId: r
 					});
 					return ne({
@@ -1119,10 +1119,10 @@
 						})
 					}
 					if (h.awardType === b.f.Moderator && void 0 === e.subredditCoins) {
-						const t = Object(S.M)(s, {
+						const t = Object(S.N)(s, {
 								thingId: p
 							}),
-							r = t && Object(S.D)(s, {
+							r = t && Object(S.E)(s, {
 								subredditName: t.name
 							});
 						r && (e.subredditCoins = r - h.coinPrice)
@@ -1198,7 +1198,7 @@
 							})), a ? r : n)
 						}
 					}
-					const D = Object(S.M)(s, {
+					const D = Object(S.N)(s, {
 						thingId: p
 					});
 					if (D && Object(k.a)(s, {
@@ -2784,7 +2784,7 @@
 						subredditId: n
 					} = t, s = n;
 					if (!n) {
-						const t = Object(G.M)(e, {
+						const t = Object(G.N)(e, {
 							thingId: r
 						});
 						s = t && t.id
@@ -2838,7 +2838,7 @@
 							subredditId: n
 						} = t, s = n;
 						if (!n) {
-							const t = Object(G.M)(e, {
+							const t = Object(G.N)(e, {
 								thingId: r
 							});
 							if (!t) return !1;
@@ -2879,17 +2879,17 @@
 					purchaseCatalogPending: M.o,
 					showPurchaseModal: B.u,
 					selectedAward: L.b,
-					subreddit: G.M,
+					subreddit: G.N,
 					subredditCoins: (e, t) => {
 						let {
 							thingId: r,
 							subredditId: n
 						} = t;
-						const s = Object(G.M)(e, {
+						const s = Object(G.N)(e, {
 								thingId: r
 							}),
 							a = s ? s.id : n;
-						return Object(G.C)(e, {
+						return Object(G.D)(e, {
 							subredditId: a
 						})
 					},
@@ -2899,7 +2899,7 @@
 							subredditId: n
 						} = t, s = n;
 						if (!n) {
-							const t = Object(G.M)(e, {
+							const t = Object(G.N)(e, {
 								thingId: r
 							});
 							s = t && t.id
@@ -4967,12 +4967,12 @@
 						rtJsonElementProps: o
 					});
 					switch (a) {
-						case h.Rf.SmIcon:
+						case h.Sf.SmIcon:
 							return s.a.createElement(p, {
 								subredditName: n,
 								rtJsonElementProps: o
 							});
-						case h.Rf.SmIconHc:
+						case h.Sf.SmIconHc:
 							return s.a.createElement(p, {
 								subredditName: n,
 								isHoverable: !0,
@@ -5446,7 +5446,7 @@
 							subredditName: n,
 							[s]: r.id
 						},
-						d = Object(l.A)(e, {
+						d = Object(l.B)(e, {
 							subredditName: n
 						});
 					return d ? {
@@ -6142,12 +6142,12 @@
 				c = e => {
 					return Object(a.c)(e, {
 						experimentEligibilitySelector: i,
-						experimentName: n.Kf
+						experimentName: n.Lf
 					}) || ""
 				},
 				d = e => {
 					const t = c(e);
-					return t === n.Rf.SmIcon || t === n.Rf.SmIconHc
+					return t === n.Sf.SmIcon || t === n.Sf.SmIconHc
 				},
 				l = (e, t) => {
 					let {
@@ -6165,7 +6165,7 @@
 					let {
 						subredditName: r
 					} = t;
-					const n = Object(o.ab)(e, {
+					const n = Object(o.bb)(e, {
 						subredditName: r
 					});
 					return (n && n.postIds || []).slice(0, 2)
@@ -6197,4 +6197,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/FramedGild~GildModal.2ebcb14c56144ce3c5f1.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/FramedGild~GildModal.6b1361f04ea777ddcef0.js.map

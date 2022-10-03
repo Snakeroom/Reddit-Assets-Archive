@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ReportFlow.84ce478269c55a5e3dc9.js
-// Retrieved at 9/29/2022, 4:30:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ReportFlow.10368b517f783de37ffb.js
+// Retrieved at 10/3/2022, 2:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ReportFlow", "ReportFlowNew"], {
 		"./node_modules/@reddit/i18n-tools/runtime/helpers/locale/index.js": function(e, t, n) {
@@ -1688,7 +1688,7 @@
 				ve = c.a.wrapped(fe.i, "FreeFormTextArea", Ce.a),
 				Ee = Object(i.c)({
 					dropdownIsOpen: Object(ue.b)(ge),
-					freeFormReports: xe.F
+					freeFormReports: xe.G
 				});
 			class Se extends r.a.Component {
 				constructor(e) {
@@ -2132,10 +2132,10 @@
 				A = n("./src/reddit/constants/experiments.ts"),
 				P = n("./src/reddit/helpers/chooseVariant/index.ts");
 			const M = Object(c.a)(e => Object(P.c)(e, {
-					experimentName: A.Dc,
+					experimentName: A.Ec,
 					experimentEligibilitySelector: P.a
 				}), e => e),
-				D = Object(c.a)(M, e => e === A.Ld);
+				D = Object(c.a)(M, e => e === A.Md);
 			var B = n("./src/reddit/selectors/meta.ts"),
 				U = n("./src/reddit/selectors/posts.ts"),
 				G = n("./src/reddit/selectors/user.ts"),
@@ -4013,4 +4013,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ReportFlow.84ce478269c55a5e3dc9.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ReportFlow.10368b517f783de37ffb.js.map

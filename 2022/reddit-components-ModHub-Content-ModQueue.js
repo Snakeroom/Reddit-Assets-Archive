@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-ModHub-Content-ModQueue.94127798030b8bdf8c76.js
-// Retrieved at 9/29/2022, 4:30:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-ModHub-Content-ModQueue.b5f2665fa13a01f84ea4.js
+// Retrieved at 10/3/2022, 2:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-ModHub-Content-ModQueue"], {
 		"./src/reddit/components/CrowdControlAdoptionCampaign/CrowdControlModQueueCTA.m.less": function(e, t, n) {
@@ -19,13 +19,13 @@
 			var o = n("./src/config.ts"),
 				s = n("./node_modules/fbt/lib/FbtPublic.js"),
 				r = n("./node_modules/react/index.js"),
-				i = n.n(r),
-				a = n("./src/lib/classNames/index.ts"),
+				a = n.n(r),
+				i = n("./src/lib/classNames/index.ts"),
 				d = n("./src/lib/constants/index.ts"),
 				c = n("./src/reddit/constants/postLayout.ts"),
 				l = n("./src/reddit/components/TrackingHelper/index.tsx"),
-				u = n("./src/reddit/controls/Button/index.tsx"),
-				m = n("./src/reddit/controls/InternalLink/index.tsx"),
+				m = n("./src/reddit/controls/Button/index.tsx"),
+				u = n("./src/reddit/controls/InternalLink/index.tsx"),
 				p = n("./src/reddit/controls/Link/index.m.less"),
 				b = n.n(p),
 				C = n("./src/reddit/selectors/telemetry.ts");
@@ -47,22 +47,22 @@
 							...C.o(e)
 						}))())
 					}, [o]);
-					return i.a.createElement("aside", {
+					return a.a.createElement("aside", {
 						className: _.a.container
-					}, i.a.createElement("div", {
+					}, a.a.createElement("div", {
 						className: _.a.iconWrapper
-					}, i.a.createElement(f.a, {
+					}, a.a.createElement(f.a, {
 						name: "crowd_control",
 						className: _.a.icon
-					})), i.a.createElement("div", {
+					})), a.a.createElement("div", {
 						className: _.a.contentWrapper
-					}, i.a.createElement("h1", {
+					}, a.a.createElement("h1", {
 						className: _.a.heading
 					}, s.fbt._("Your community may benefit from Crowd Control", null, {
 						hk: "1SXwBi"
-					})), i.a.createElement("p", {
+					})), a.a.createElement("p", {
 						className: _.a.description
-					}, s.fbt._("Crowd Control is a community setting that lets you automatically filter posts or comments from within your community (i.e., people with negative karma in your community). {=Try it out}.", [s.fbt._param("=Try it out", i.a.createElement(m.default, {
+					}, s.fbt._("Crowd Control is a community setting that lets you automatically filter posts or comments from within your community (i.e., people with negative karma in your community). {=Try it out}.", [s.fbt._param("=Try it out", a.a.createElement(u.default, {
 						className: `${b.a.link} ${_.a.link}`,
 						to: `/r/${t}/about/edit?page=safety`,
 						onClick: () => {
@@ -78,7 +78,7 @@
 						hk: "3r1RpO"
 					})))], {
 						hk: "FEBdR"
-					}))), i.a.createElement(u.t, {
+					}))), a.a.createElement(m.t, {
 						onClick: () => {
 							o((() => e => ({
 								source: "modqueue",
@@ -88,33 +88,36 @@
 								...C.o(e)
 							}))()), n()
 						},
-						priority: u.c.PlainLink,
+						priority: m.c.PlainLink,
 						Icon: Object(f.b)("close"),
 						isSquare: !0,
-						size: u.d.XXS,
+						size: m.d.XXS,
 						"aria-label": s.fbt._("Dismiss crowd control message", null, {
 							hk: "1aTxpe"
 						})
 					}))
 				},
 				y = n("./src/reddit/components/CrowdControlAdoptionCampaign/useCrowdControlCampaign.tsx"),
-				g = n("./src/reddit/components/ModHub/InfoLink/index.tsx"),
-				h = n("./src/reddit/components/ModHub/StyledComponents/index.tsx"),
+				E = n("./src/reddit/components/ModHub/InfoLink/index.tsx"),
+				g = n("./src/reddit/components/ModHub/StyledComponents/index.tsx"),
+				h = n("./src/reddit/components/ModQueueActivitySummaryCards/async.ts"),
 				w = n("./src/reddit/components/ModQueueList/index.tsx"),
-				E = n("./src/reddit/components/ModQueueList/LayoutNavigation.tsx"),
-				k = n("./src/reddit/components/ModHub/Content/index.m.less"),
-				L = n.n(k);
+				k = n("./src/reddit/components/ModQueueList/LayoutNavigation.tsx"),
+				v = n("./src/reddit/components/ModHub/Content/index.m.less"),
+				L = n.n(v);
 			t.default = e => {
 				const {
 					showCrowdControlCampaign: t,
 					dismissCrowdControlCampaign: n
 				} = Object(y.a)();
-				return i.a.createElement(h.a, {
-					className: Object(a.a)(L.a.container, e.layout === c.g.Large ? L.a.isLargePostLayout : void 0)
-				}, t && i.a.createElement(N, {
+				return a.a.createElement(g.a, {
+					className: Object(i.a)(L.a.container, e.layout === c.g.Large ? L.a.isLargePostLayout : void 0)
+				}, t && a.a.createElement(N, {
 					subredditName: e.subredditName,
 					onDismiss: n
-				}), i.a.createElement(h.b, null, (e => {
+				}), a.a.createElement("div", {
+					className: L.a.titleContainer
+				}, a.a.createElement(g.b, null, (e => {
 					switch (e) {
 						case "modqueue":
 							return s.fbt._("Mod Queue", null, {
@@ -141,16 +144,18 @@
 								hk: "XBRcQ"
 							})
 					}
-				})(e.pageName), i.a.createElement(g.a, {
+				})(e.pageName), a.a.createElement(E.a, {
 					linkUrl: `${o.a.redditModHelpUrl}/hc/en-us/articles/360010090132`
-				})), i.a.createElement(E.a, {
+				})), e.isRealtimeMQUpdatesExperimentEnabled ? a.a.createElement(h.a, {
+					className: L.a.modActivity
+				}) : a.a.createElement("div", null)), a.a.createElement(k.a, {
 					hideSubredditFilter: !0,
 					postTypeFilter: e.postTypeFilter,
 					postSort: e.postSort,
 					sendEventWithName: e.sendEventWithName,
 					showTypeFilter: e.pageName !== d.lc.Unmoderated,
 					subredditName: e.subredditName
-				}), i.a.createElement(w.a, {
+				}), a.a.createElement(w.a, {
 					after: e.after,
 					layout: e.layout,
 					sendEventWithName: e.sendEventWithName,
@@ -178,18 +183,18 @@
 			var o = n("./node_modules/react/index.js"),
 				s = n.n(o),
 				r = n("./src/lib/classNames/index.ts"),
-				i = n("./src/reddit/constants/colors.ts"),
-				a = n("./src/reddit/icons/fonts/helpers.tsx"),
+				a = n("./src/reddit/constants/colors.ts"),
+				i = n("./src/reddit/icons/fonts/helpers.tsx"),
 				d = n("./src/reddit/icons/fonts/Coin/index.m.less"),
 				c = n.n(d);
 			const l = n("./src/lib/lessComponent.tsx").a.wrapped(e => s.a.createElement("i", {
-				className: Object(r.a)(e.className, Object(a.b)("coins", e.isFilled)),
+				className: Object(r.a)(e.className, Object(i.b)("coins", e.isFilled)),
 				style: {
-					color: e.fillColor || i.a.gold
+					color: e.fillColor || a.a.gold
 				}
 			}), "CoinIcon", c.a);
 			t.a = l
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ModHub-Content-ModQueue.94127798030b8bdf8c76.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ModHub-Content-ModQueue.b5f2665fa13a01f84ea4.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/NewCommunityProgress.b8e086709059e3edd2f7.js
-// Retrieved at 9/29/2022, 4:30:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/NewCommunityProgress.ad6d5f1997e5006f5111.js
+// Retrieved at 10/3/2022, 2:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["NewCommunityProgress"], {
 		"./src/lib/colors/constants.ts": function(e, A, t) {
@@ -518,7 +518,7 @@
 				const I = Object(n.useRef)(null),
 					[p, x] = Object(n.useState)(!A),
 					b = Object(a.e)(w.db),
-					M = Object(a.e)(e => Object(m.cb)(e, t)),
+					M = Object(a.e)(e => Object(m.db)(e, t)),
 					j = Object(f.a)();
 				Object(n.useEffect)(() => {
 					j(Object(C.g)(r, p ? "expanded_module" : "collapses_module"))
@@ -1222,4 +1222,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/NewCommunityProgress.b8e086709059e3edd2f7.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/NewCommunityProgress.ad6d5f1997e5006f5111.js.map

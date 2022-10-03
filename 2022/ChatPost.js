@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ChatPost.7d18fc821e02ecceea73.js
-// Retrieved at 9/29/2022, 4:30:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ChatPost.f6ba881c68b0f7369618.js
+// Retrieved at 10/3/2022, 2:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ChatPost"], {
 		"./node_modules/backo2/index.js": function(e, t) {
@@ -1912,7 +1912,7 @@
 						return !!Object(Me.q)(e, n.subredditId, n.authorId).length
 					},
 					subredditDisplayText: (e, t) => {
-						const n = Object(Pe.L)(e, {
+						const n = Object(Pe.M)(e, {
 							commentId: t.comment.id
 						});
 						return n ? n.displayText : ""
@@ -5575,7 +5575,7 @@
 					subreddit: n
 				} = e;
 				let s = n && `r/${n}` || t && `u/${t}` || "all";
-				return "comments" !== e.onlyOfType && "links" !== e.onlyOfType && "chat_comments" !== e.onlyOfType || (s += `--[${e.onlyOfType}]`), e.sort !== o.a.NewestFirst && (s += `--[${e.sort}]`), s
+				return "comments" !== e.onlyOfType && "links" !== e.onlyOfType && "chat_comments" !== e.onlyOfType || (s += `--[${e.onlyOfType}]`), e.sort && e.sort !== o.a.NewestFirst && (s += `--[${e.sort}]`), s
 			}
 		},
 		"./src/reddit/helpers/modTooltipTemplates/index.ts": function(e, t, n) {
@@ -6030,24 +6030,39 @@
 					return !!n && n.includes(t)
 				}
 		},
+		"./src/reddit/selectors/experiments/modqueueActionBarUXImprovements.ts": function(e, t, n) {
+			"use strict";
+			n.d(t, "a", (function() {
+				return a
+			}));
+			var o = n("./src/reddit/constants/experiments.ts"),
+				s = n("./src/reddit/helpers/chooseVariant/index.ts"),
+				r = n("./src/reddit/selectors/user.ts");
+			const a = e => Object(s.c)(e, {
+				experimentEligibilitySelector: r.Q,
+				experimentName: o.hc
+			}) === o.Md
+		},
 		"./src/reddit/selectors/modQueue.ts": function(e, t, n) {
 			"use strict";
-			n.d(t, "e", (function() {
+			n.d(t, "f", (function() {
+				return m
+			})), n.d(t, "e", (function() {
+				return u
+			})), n.d(t, "g", (function() {
 				return p
-			})), n.d(t, "d", (function() {
+			})), n.d(t, "i", (function() {
 				return h
-			})), n.d(t, "f", (function() {
+			})), n.d(t, "a", (function() {
 				return b
 			})), n.d(t, "h", (function() {
 				return f
-			})), n.d(t, "a", (function() {
-				return v
-			})), n.d(t, "g", (function() {
-				return C
 			})), n.d(t, "c", (function() {
-				return g
+				return v
+			})), n.d(t, "d", (function() {
+				return C
 			})), n.d(t, "b", (function() {
-				return _
+				return g
 			}));
 			n("./node_modules/core-js/modules/web.dom.iterable.js");
 			var o = n("./src/lib/constants/index.ts"),
@@ -6056,9 +6071,7 @@
 				a = n("./src/lib/initializeClient/installReducer.ts"),
 				i = n("./src/reddit/reducers/features/comments/index.ts"),
 				c = n("./src/reddit/reducers/pages/modHub/index.ts"),
-				d = n("./src/reddit/constants/experiments.ts"),
-				l = n("./src/reddit/helpers/chooseVariant/index.ts"),
-				m = n("./src/reddit/selectors/user.ts");
+				d = n("./src/reddit/selectors/experiments/modqueueActionBarUXImprovements.ts");
 			Object(a.a)({
 				features: {
 					comments: i.a
@@ -6067,45 +6080,47 @@
 					modHub: c.a
 				}
 			});
-			const u = (e, t) => Object(s.a)({
+			const l = (e, t) => Object(s.a)({
 					onlyOfType: t.queryParams.only,
 					profile: t.profileName,
 					sort: t.queryParams.sort,
 					subreddit: t.subredditName
 				}),
-				p = Object(r.a)((e, t) => {
+				m = Object(r.a)((e, t) => {
 					var n, o, s;
 					const {
 						pageName: r,
 						page: a
-					} = t, i = u(0, t);
+					} = t, i = l(0, t);
 					if (!(null === (s = null === (o = null === (n = e.pages.modHub.modQueue[r]) || void 0 === n ? void 0 : n.itemOrder) || void 0 === o ? void 0 : o[i]) || void 0 === s ? void 0 : s[a])) return;
 					const c = e.pages.modHub.modQueue[r].itemOrder[i][a];
 					return c ? c.map(t => e.posts.models[t] || e.features.comments.models[t]) : []
 				}),
-				h = (e, t) => {
+				u = (e, t) => {
 					var n;
 					const {
 						pageName: o
 					} = t;
 					return null === (n = e.pages.modHub.modQueue[o]) || void 0 === n || !n.api || e.pages.modHub.modQueue[o].api.pending
 				},
-				b = (e, t) => {
+				p = (e, t) => {
 					var n;
-					const o = u(0, t);
+					const o = l(0, t);
 					return null === (n = e.pages.modHub.modQueue[t.pageName]) || void 0 === n ? void 0 : n.loadMore[o]
 				},
-				f = e => Object.keys(e.pages.modHub.modQueue.bulkAction.selectedItems),
-				v = e => e.pages.modHub.modQueue.bulkAction.api.pending,
-				C = e => e.pages.modHub.modQueue.moderatedCommunitiesOrder.data,
-				g = e => {
+				h = e => Object.keys(e.pages.modHub.modQueue.bulkAction.selectedItems),
+				b = e => e.pages.modHub.modQueue.bulkAction.api.pending,
+				f = e => e.pages.modHub.modQueue.moderatedCommunitiesOrder.data,
+				v = e => {
 					const t = e.platform && e.platform.currentPage;
 					return t && t.meta && (t.meta.name === o.Rb.MODERATION_PAGES || t.meta.name === o.Rb.MODQUEUE_PAGES)
 				},
-				_ = e => g(e) && (e => Object(l.c)(e, {
-					experimentEligibilitySelector: m.Q,
-					experimentName: d.hc
-				}) === d.Ld)(e) || !1
+				C = e => {
+					var t;
+					const n = e.platform && e.platform.currentPage;
+					return (null === (t = null == n ? void 0 : n.meta) || void 0 === t ? void 0 : t.name) === o.Rb.MODQUEUE_PAGES
+				},
+				g = e => v(e) && Object(d.a)(e) || !1
 		},
 		"./src/redditGQL/operations/AvailableAwards.json": function(e) {
 			e.exports = JSON.parse('{"id":"4778ed491384"}')
@@ -6124,4 +6139,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatPost.7d18fc821e02ecceea73.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatPost.f6ba881c68b0f7369618.js.map

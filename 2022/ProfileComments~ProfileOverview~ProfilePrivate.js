@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfileComments~ProfileOverview~ProfilePrivate.eb80a7fb06fed965a3a6.js
-// Retrieved at 9/29/2022, 4:30:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfileComments~ProfileOverview~ProfilePrivate.c6ca0cb06d54166be806.js
+// Retrieved at 10/3/2022, 2:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfileComments~ProfileOverview~ProfilePrivate"], {
 		"./node_modules/lodash/take.js": function(e, t, s) {
@@ -205,8 +205,8 @@
 				q = s("./src/reddit/components/PublicAccessNetwork/LiveVideoPlayer/videoContext.tsx"),
 				J = s("./src/reddit/controls/OutboundLink/styled.tsx"),
 				K = s("./src/reddit/models/Media/index.ts"),
-				X = s("./src/reddit/components/ClassicPost/Thumbnail.tsx"),
-				Q = s("./src/reddit/connectors/ClassicPost/index.tsx"),
+				Q = s("./src/reddit/components/ClassicPost/Thumbnail.tsx"),
+				X = s("./src/reddit/connectors/ClassicPost/index.tsx"),
 				Z = s("./src/reddit/constants/postLayout.ts"),
 				Y = s("./src/reddit/helpers/hasModFlairPermissions/index.ts"),
 				$ = s("./src/reddit/helpers/hasModFullPermissions/index.ts"),
@@ -247,7 +247,7 @@
 					isFrontpage: k,
 					isGalleryTileLayoutDefault: I,
 					isLoggedIn: N,
-					isOverlay: Q,
+					isOverlay: X,
 					imageGalleryCurrentItem: re,
 					moderatorPermissions: ae,
 					modModeEnabled: le,
@@ -292,7 +292,7 @@
 						post: he,
 						inSubredditOrProfile: v,
 						isCurrentUserProfilePost: j,
-						isOverlay: Q,
+						isOverlay: X,
 						shouldShowSubscribeButton: !(k && N) || Ge && N,
 						subredditOrProfile: ye
 					},
@@ -300,11 +300,11 @@
 					{
 						source: Je
 					} = qe,
-					[Ke, Xe] = Object(n.useState)(!1),
-					Qe = Object(n.useCallback)(() => {
-						Xe(!Ke), Object(te.Pb)(), Se(Object(oe.d)(fe))
+					[Ke, Qe] = Object(n.useState)(!1),
+					Xe = Object(n.useCallback)(() => {
+						Qe(!Ke), Object(te.Pb)(), Se(Object(oe.d)(fe))
 					}, [Ke, fe, Se]);
-				let Ze = o.a.createElement(X.a, {
+				let Ze = o.a.createElement(Q.a, {
 					className: de.a.classicThumbnail,
 					crosspost: Le && he,
 					isMeta: he.isMeta,
@@ -321,7 +321,7 @@
 						[de.a.mFirst]: g,
 						[de.a.shouldShowOverflow]: Ce
 					}, t),
-					isOverlay: Q,
+					isOverlay: X,
 					style: {
 						...Object(ne.d)(e),
 						...Object(ne.b)(Te)
@@ -372,7 +372,7 @@
 					redditStyle: ve,
 					size: G.b.Medium,
 					titleColor: Te && Te.postTitleColor,
-					isOverlay: Q
+					isOverlay: X
 				}, he.source && !Le && !he.isSurveyAd && o.a.createElement(J.a, {
 					href: he.source.url,
 					isSponsored: he.isSponsored,
@@ -417,16 +417,16 @@
 					hasModPostPerms: Me,
 					hasModFullPerms: Ae,
 					hostPostData: C,
-					isOverlay: !!Q,
+					isOverlay: !!X,
 					modModeEnabled: le,
-					onClickInsightsButton: Qe,
+					onClickInsightsButton: Xe,
 					onIgnoreReports: ue,
 					onOpenReportsDropdown: pe,
 					post: he,
 					shouldShowInsightsButton: Ce,
 					showEditPost: Ue,
 					showEditFlair: Oe,
-					tooltipType: Q ? z.c.Lightbox : void 0,
+					tooltipType: X ? z.c.Lightbox : void 0,
 					useFlatlistBreakpoints: Object(H.b)({
 						editPost: !Fe,
 						hide: !Fe,
@@ -441,7 +441,7 @@
 				})));
 				return o.a.createElement(q.b, null, Ye)
 			});
-			t.default = Object(Q.a)(le)
+			t.default = Object(X.a)(le)
 		},
 		"./src/reddit/components/CommentBodyExpander/index.m.less": function(e, t, s) {
 			e.exports = {
@@ -638,8 +638,8 @@
 				q = s("./src/reddit/models/PostDraft/index.ts"),
 				J = s("./src/reddit/models/Comment/index.ts"),
 				K = s("./src/reddit/selectors/activeModalId.ts"),
-				X = s("./src/reddit/selectors/comments.ts"),
-				Q = s("./src/reddit/selectors/moderatorPermissions.ts"),
+				Q = s("./src/reddit/selectors/comments.ts"),
+				X = s("./src/reddit/selectors/moderatorPermissions.ts"),
 				Z = s("./src/reddit/selectors/posts.ts"),
 				Y = s("./src/reddit/selectors/tooltip.ts"),
 				$ = s("./src/reddit/selectors/experiments/antievil/index.tsx"),
@@ -685,7 +685,7 @@
 						let {
 							comment: s
 						} = t;
-						return Object(X.D)(e, {
+						return Object(Q.D)(e, {
 							commentId: s.postId
 						})
 					},
@@ -694,7 +694,7 @@
 						let {
 							comment: s
 						} = t;
-						return Object(Q.n)(e, {
+						return Object(X.n)(e, {
 							subredditId: s.subredditId
 						})
 					},
@@ -712,7 +712,7 @@
 						let {
 							comment: s
 						} = t;
-						return Object(X.m)(e, {
+						return Object(Q.m)(e, {
 							commentId: s.id
 						})
 					},
@@ -979,7 +979,7 @@
 				Ue = he.a.div("CommentBody", Be.a),
 				He = Object(r.b)(() => Object(i.c)({
 					comment: (e, t) => Object(Ae.b)(e, t),
-					flair: X.e
+					flair: Q.e
 				})),
 				Ve = Object(c.b)(e => ({
 					renderingObjectInfo: e.comment
@@ -2251,8 +2251,8 @@
 					q = B("Approve", U.id, H),
 					J = B("Archived", U.id, H),
 					K = B("Lock", U.id, H),
-					X = B("Mod", U.id, H),
-					Q = B("Remove", U.id, H),
+					Q = B("Mod", U.id, H),
+					X = B("Remove", U.id, H),
 					Z = B("Report", U.id, H),
 					Y = B("Spam", U.id, H),
 					$ = B("Sticky", U.id, H),
@@ -2264,7 +2264,7 @@
 					isFilled: !0,
 					className: Object(d.a)(S.a.icon, S.a.modIcon)
 				}), r.a.createElement(m.c, w({
-					tooltipId: X,
+					tooltipId: Q,
 					text: R(s)
 				}, G))), U.isArchived && r.a.createElement(o.Fragment, null, r.a.createElement(g.a, {
 					isFilled: !0,
@@ -2320,8 +2320,8 @@
 					isFilled: !0,
 					className: Object(d.a)(S.a.icon, S.a.removeIcon),
 					desc: Object(h.b)(U),
-					id: Q,
-					onMouseEnter: W(Q),
+					id: X,
+					onMouseEnter: W(X),
 					onMouseLeave: P
 				}), z && r.a.createElement(u.a, {
 					className: S.a.addRemovalReason,
@@ -2330,12 +2330,12 @@
 						hk: "1YDo3"
 					})
 				}), (U.modRemovalReason || U.modNote) && r.a.createElement(T, {
-					onMouseEnter: W(Q),
+					onMouseEnter: W(X),
 					onMouseLeave: P
 				}, n.fbt._("Removal reason", null, {
 					hk: "2DhKVZ"
 				})), r.a.createElement(m.c, w({
-					tooltipId: Q,
+					tooltipId: X,
 					text: Object(h.b)(U)
 				}, G))), U.bannedBy && U.isSpam && r.a.createElement(o.Fragment, null, r.a.createElement(y.a, {
 					isFilled: !0,
@@ -4621,10 +4621,10 @@
 				o = s("./src/reddit/constants/experiments.ts"),
 				r = s("./src/reddit/helpers/chooseVariant/index.ts");
 			const i = Object(n.a)(e => Object(r.c)(e, {
-					experimentName: o.gg,
+					experimentName: o.hg,
 					experimentEligibilitySelector: r.a
 				}), e => e),
-				a = Object(n.a)(i, e => e === o.Xf)
+				a = Object(n.a)(i, e => e === o.Yf)
 		},
 		"./src/redditGQL/operations/CreateLiveAudioRoomOnProfile.json": function(e) {
 			e.exports = JSON.parse('{"id":"e35a47c6aa21"}')
@@ -4655,4 +4655,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileComments~ProfileOverview~ProfilePrivate.eb80a7fb06fed965a3a6.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileComments~ProfileOverview~ProfilePrivate.c6ca0cb06d54166be806.js.map

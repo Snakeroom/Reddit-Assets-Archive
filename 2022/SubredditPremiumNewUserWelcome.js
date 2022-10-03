@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditPremiumNewUserWelcome.a0aa8288ed73cea28723.js
-// Retrieved at 9/29/2022, 4:30:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditPremiumNewUserWelcome.cec08204a4a4b8866751.js
+// Retrieved at 10/3/2022, 2:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditPremiumNewUserWelcome"], {
 		"./node_modules/lodash/flattenDeep.js": function(e, t, n) {
@@ -944,7 +944,7 @@
 					subreddit: b.r,
 					userIsSubscribed: (e, t) => {
 						const n = Object(b.r)(e, t);
-						return !!n && Object(h.ib)(e, {
+						return !!n && Object(h.jb)(e, {
 							identifier: {
 								name: n.name,
 								type: "subreddit"
@@ -2410,4 +2410,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditPremiumNewUserWelcome.a0aa8288ed73cea28723.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditPremiumNewUserWelcome.cec08204a4a4b8866751.js.map

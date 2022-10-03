@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/AwardTooltip.9016ce8697918d208e2a.js
-// Retrieved at 9/29/2022, 4:30:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/AwardTooltip.5d5bfe03a2bf7ca21452.js
+// Retrieved at 10/3/2022, 2:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["AwardTooltip"], {
 		"./src/reddit/components/AwardTooltip/index.m.less": function(e, t, o) {
@@ -60,14 +60,14 @@
 				return null
 			};
 			var j = o("./src/reddit/components/AwardTooltip/index.m.less"),
-				I = o.n(j);
-			const N = Object(d.c)({
+				N = o.n(j);
+			const I = Object(d.c)({
 					currentUser: x.k,
 					moderatorPermissions: (e, t) => {
 						let {
 							postOrComment: o
 						} = t;
-						const r = Object(b.M)(e, {
+						const r = Object(b.N)(e, {
 							thingId: o.id
 						});
 						return r ? Object(w.n)(e, {
@@ -78,7 +78,7 @@
 						let {
 							postOrComment: o
 						} = t;
-						return Object(b.M)(e, {
+						return Object(b.N)(e, {
 							thingId: o.id
 						})
 					},
@@ -94,7 +94,7 @@
 						})
 					}
 				}),
-				y = Object(i.b)(N, (e, t) => {
+				y = Object(i.b)(I, (e, t) => {
 					let {
 						tooltipId: o
 					} = t;
@@ -112,12 +112,12 @@
 						onOpenReportFlow: t
 					} = this.props;
 					return n.a.createElement("button", {
-						className: Object(c.a)(I.a.awardReport),
+						className: Object(c.a)(N.a.awardReport),
 						onClick: () => {
 							t(), e()
 						}
 					}, n.a.createElement(_.a, {
-						className: I.a.awardReportIcon
+						className: N.a.awardReportIcon
 					}))
 				}
 				renderHideButton() {
@@ -126,12 +126,12 @@
 						onHideAward: t
 					} = this.props;
 					return n.a.createElement("button", {
-						className: I.a.awardHide,
+						className: N.a.awardHide,
 						onClick: () => {
 							t(), e()
 						}
 					}, n.a.createElement(O.a, {
-						className: I.a.awardHideIcon
+						className: N.a.awardHideIcon
 					}), r.fbt._("Hide", null, {
 						hk: "4kciEW"
 					}))
@@ -143,12 +143,12 @@
 						onClickPremium: o
 					} = this.props, s = e.awardSubType === u.d.Premium, i = !!t && t.isGold;
 					return s ? i ? null : n.a.createElement(g.k, {
-						className: I.a.premiumCta,
+						className: N.a.premiumCta,
 						onClick: o
 					}, r.fbt._("Get Premium", null, {
 						hk: "Yapo5"
 					})) : n.a.createElement("a", {
-						className: I.a.howToLink,
+						className: N.a.howToLink,
 						href: "https://www.reddithelp.com/en/categories/reddit-101/reddit-basics/what-are-awards",
 						target: "_blank",
 						rel: "noopener noreferrer"
@@ -177,35 +177,35 @@
 						tooltipId: d,
 						defaultTooltipPosition: "top"
 					}, n.a.createElement("div", {
-						className: Object(c.a)(I.a.headerBar, {
-							[I.a.headerBarPremium]: p
+						className: Object(c.a)(N.a.headerBar, {
+							[N.a.headerBarPremium]: p
 						})
 					}, h && this.renderHideButton(), this.renderReporterButton()), n.a.createElement("div", {
-						className: I.a.awardDetails
+						className: N.a.awardDetails
 					}, n.a.createElement("div", {
-						className: I.a.awardIconContainer
+						className: N.a.awardIconContainer
 					}, n.a.createElement("div", {
-						className: I.a.awardIcon,
+						className: N.a.awardIcon,
 						style: {
 							backgroundImage: `url("${t}")`
 						}
 					})), n.a.createElement("div", {
-						className: I.a.awardName
+						className: N.a.awardName
 					}, r.fbt._("{award-name} Award", [r.fbt._param("award-name", e.name)], {
 						hk: "2QpjYF"
 					})), n.a.createElement("p", {
-						className: I.a.awardDescription
+						className: N.a.awardDescription
 					}, n.a.createElement(v, {
 						award: e
 					})), e.awardType === u.f.Community && a && n.a.createElement("div", {
-						className: I.a.subreddit
+						className: N.a.subreddit
 					}, n.a.createElement(C.b, {
-						className: I.a.subredditIcon,
+						className: N.a.subredditIcon,
 						subredditOrProfile: a
 					}), `r/${a.name}`), e.awardType === u.f.Moderator && n.a.createElement("div", {
-						className: I.a.subreddit
+						className: N.a.subreddit
 					}, n.a.createElement(P.a, {
-						className: Object(c.a)(I.a.subredditIcon, I.a.modShield)
+						className: Object(c.a)(N.a.subredditIcon, N.a.modShield)
 					}), r.fbt._("Exclusive mod-given Award", null, {
 						hk: "1VGGho"
 					})), this.renderCta()))
@@ -511,4 +511,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/AwardTooltip.9016ce8697918d208e2a.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/AwardTooltip.5d5bfe03a2bf7ca21452.js.map

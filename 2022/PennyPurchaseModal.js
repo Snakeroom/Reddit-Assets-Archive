@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PennyPurchaseModal.5167a2a836815d3821ad.js
-// Retrieved at 9/29/2022, 4:30:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PennyPurchaseModal.5f3c58925b488f844365.js
+// Retrieved at 10/3/2022, 2:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PennyPurchaseModal"], {
 		"./node_modules/@stripe/stripe-js/dist/stripe.esm.js": function(e, t, a) {
@@ -491,7 +491,7 @@
 		"./src/reddit/components/CoinPurchaseModal/SelectPaymentPage.tsx": function(e, t, a) {
 			"use strict";
 			a.d(t, "a", (function() {
-				return Y
+				return X
 			}));
 			var r = a("./node_modules/@stripe/react-stripe-js/dist/react-stripe.umd.js"),
 				n = a("./node_modules/fbt/lib/FbtPublic.js"),
@@ -658,9 +658,9 @@
 			};
 			var G = a("./src/reddit/components/ModalStyledComponents/index.tsx"),
 				Q = a("./src/reddit/hooks/useLocale.ts"),
-				V = a("./src/reddit/icons/fonts/Coin/index.tsx");
+				q = a("./src/reddit/icons/fonts/Coin/index.tsx");
 			const {
-				fbt: q
+				fbt: V
 			} = a("./node_modules/fbt/lib/FbtPublic.js");
 			var H = e => {
 				var t;
@@ -670,11 +670,11 @@
 					style: {
 						backgroundImage: `url("${x.a.assetPath}/img/gold/coins-hero.jpg")`
 					}
-				}, o.a.createElement(V.a, {
+				}, o.a.createElement(q.a, {
 					className: D.a.coinIcon
 				}), o.a.createElement("div", {
 					className: D.a.titleMain
-				}, q._("Buy {amount}!", [q._param("amount", Object(l.b)(e.purchasePackage.coins, {
+				}, V._("Buy {amount}!", [V._param("amount", Object(l.b)(e.purchasePackage.coins, {
 					locale: a,
 					type: i.b.Reddit,
 					currency: i.a
@@ -682,7 +682,7 @@
 					hk: "3VNw69"
 				})), o.a.createElement("div", {
 					className: D.a.titleDescription
-				}, q._("You're purchasing Coins for yourself, {userName}!", [q._param("userName", e.userName)], {
+				}, V._("You're purchasing Coins for yourself, {userName}!", [V._param("userName", e.userName)], {
 					hk: "ZGCBt"
 				})), o.a.createElement("img", {
 					className: D.a.goldPackage,
@@ -747,7 +747,7 @@
 				J = a("./src/reddit/components/PaymentMethodSelector/index.tsx"),
 				U = a("./src/reddit/components/StripePaymentForm/index.tsx"),
 				K = a("./src/reddit/helpers/createEmojiText/index.tsx");
-			const Y = e => {
+			const X = e => {
 				const t = Object(Q.a)(),
 					a = Object(c.a)(),
 					s = e.purchasePackage ? e.purchasePackage.pennies : e.selectedAward.pennyPrice || 0;
@@ -2018,8 +2018,8 @@
 				n = a("./src/lib/constants/index.ts"),
 				s = a("./src/reddit/constants/experiments.ts"),
 				o = a("./src/reddit/selectors/experiments/econ/simpleExperiment.ts");
-			const c = Object(o.a)(s.Ve),
-				d = Object(o.a)(s.We),
+			const c = Object(o.a)(s.We),
+				d = Object(o.a)(s.Xe),
 				i = Object(r.a)([c, d], (e, t) => new Set([e && n.Lb, t && n.Kb].filter(e => !!e)))
 		},
 		"./src/reddit/selectors/experiments/econ/paymentsSandbox.ts": function(e, t, a) {
@@ -2029,7 +2029,7 @@
 			}));
 			var r = a("./src/reddit/constants/experiments.ts"),
 				n = a("./src/reddit/selectors/experiments/econ/simpleExperiment.ts");
-			const s = Object(n.a)(r.pd)
+			const s = Object(n.a)(r.qd)
 		},
 		"./src/redditGQL/operations/CancelEconRecurringPayment.json": function(e) {
 			e.exports = JSON.parse('{"id":"ac36f7489268"}')
@@ -2066,4 +2066,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PennyPurchaseModal.5167a2a836815d3821ad.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PennyPurchaseModal.5f3c58925b488f844365.js.map

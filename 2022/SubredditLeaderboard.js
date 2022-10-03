@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditLeaderboard.e62d0a5f87a2a5a6034f.js
-// Retrieved at 9/29/2022, 4:30:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditLeaderboard.099302bab4727b568e68.js
+// Retrieved at 10/3/2022, 2:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditLeaderboard"], {
 		"./node_modules/lodash/times.js": function(e, t, r) {
@@ -73,7 +73,7 @@
 									icon: e.category_icon,
 									id: e.category_id,
 									name: e.category_name,
-									displayText: Object(u.qg)(e.category_name)
+									displayText: Object(u.rg)(e.category_name)
 								};
 								r.push(s.id), t[s.id] = s
 							}), {
@@ -396,7 +396,7 @@
 				const t = Object(a.f)().getState(),
 					r = Object(g.a)(t, Object(o.c)());
 				if (e.isD2xPdpSideRailRecsEnabled) {
-					const t = e.d2xPdpSideRailRecsVariant === u.Vc.GreyRereddit || e.d2xPdpSideRailRecsVariant === u.Vc.GreyRedditNoNsfw || e.d2xPdpSideRailRecsVariant === u.Vc.LargeImagePreview ? e.reredditButtons : [];
+					const t = e.d2xPdpSideRailRecsVariant === u.Wc.GreyRereddit || e.d2xPdpSideRailRecsVariant === u.Wc.GreyRedditNoNsfw || e.d2xPdpSideRailRecsVariant === u.Wc.LargeImagePreview ? e.reredditButtons : [];
 					return s.a.createElement(O, {
 						reredditContent: t,
 						countryCode: e.countryCode
@@ -2265,8 +2265,8 @@
 				F = r("./src/reddit/models/GoodContent/index.ts"),
 				D = r("./src/reddit/selectors/platform.ts"),
 				R = r("./src/reddit/selectors/subreddit.ts"),
-				M = r("./src/reddit/selectors/subredditLeaderboard.ts"),
-				W = r("./src/reddit/selectors/user.ts");
+				W = r("./src/reddit/selectors/subredditLeaderboard.ts"),
+				M = r("./src/reddit/selectors/user.ts");
 			const A = 25,
 				G = .5,
 				H = Object(d.c)({
@@ -2274,22 +2274,22 @@
 						let {
 							categoryId: r
 						} = t;
-						return Object(M.c)(e, r)
+						return Object(W.c)(e, r)
 					},
 					hasNextPage: (e, t) => {
 						let {
 							categoryId: r
 						} = t;
-						return Object(M.b)(e, r)
+						return Object(W.b)(e, r)
 					},
-					isMod: W.R,
+					isMod: M.R,
 					rankings: (e, t) => {
 						let {
 							categoryId: r
 						} = t;
-						return Object(R.R)(e, r)
+						return Object(R.S)(e, r)
 					},
-					subreddits: R.db,
+					subreddits: R.eb,
 					isOnLeaderboardPage: e => !!Object(D.h)(e),
 					isOnFrontpage: e => !!Object(D.g)(e)
 				}),
@@ -2300,7 +2300,7 @@
 				constructor() {
 					super(...arguments), this.fetchMoreSubreddits = e => {
 						const t = this.makeFetchVariables(),
-							r = Object(M.d)(this.props.categoryId, this.props.categoryName);
+							r = Object(W.d)(this.props.categoryId, this.props.categoryName);
 						e.isIntersecting && t.after && this.props.fetchMoreSubreddits(t, r)
 					}, this.sendLeaderboardSubredditEventClick = e => this.props.sendEvent(Object(y.f)(e, this.props.categoryName || p.e)), this.renderSubredditRankItemPlaceholders = () => i.a.createElement(i.a.Fragment, null, j()(5, e => i.a.createElement(B.a, {
 						key: e,
@@ -2373,8 +2373,8 @@
 			}
 			var q = Object(u.c)(z(Q)),
 				J = r("./node_modules/react-router-dom/esm/react-router-dom.js"),
-				V = r("./src/reddit/components/CategoryPickerWidget/index.m.less"),
-				K = r.n(V);
+				K = r("./src/reddit/components/CategoryPickerWidget/index.m.less"),
+				V = r.n(K);
 
 			function U() {
 				return (U = Object.assign || function(e) {
@@ -2392,7 +2392,7 @@
 					className: n,
 					isActive: s,
 					tabIndex: a
-				} = e, o = Object(c.a)(K.a.categoryLink, s && K.a.active, n);
+				} = e, o = Object(c.a)(V.a.categoryLink, s && V.a.active, n);
 				return i.a.createElement("li", null, i.a.createElement(J.a, U({}, t.anchorProps, {
 					className: o,
 					"data-active": s,
@@ -2446,7 +2446,7 @@
 						onItemClick: l
 					} = this.props, {
 						isExpanded: u
-					} = this.state, m = !u && d && r * d, b = a + (e ? r * e.length : 0), g = Object(c.a)(K.a.categoryList, u && K.a.expanded), h = e => !(!o || o !== Object($.i)(e)), y = i.a.createElement("ul", {
+					} = this.state, m = !u && d && r * d, b = a + (e ? r * e.length : 0), g = Object(c.a)(V.a.categoryList, u && V.a.expanded), h = e => !(!o || o !== Object($.i)(e)), y = i.a.createElement("ul", {
 						className: g,
 						style: {
 							height: m || b
@@ -2463,7 +2463,7 @@
 						}, e.name === p.m ? p.k : e.displayText || e.name)
 					}));
 					return i.a.createElement("div", {
-						className: Object(c.a)(K.a.categoryListContainer, n)
+						className: Object(c.a)(V.a.categoryListContainer, n)
 					}, y)
 				}
 				render() {
@@ -2474,16 +2474,16 @@
 						header: n,
 						headerClassName: s,
 						initialNumberOfCategories: a
-					} = this.props, o = t && a && t.length > a, d = Object(c.a)(r, K.a.container);
+					} = this.props, o = t && a && t.length > a, d = Object(c.a)(r, V.a.container);
 					return i.a.createElement(X.a, {
 						className: d,
 						contentOnly: !0
 					}, i.a.createElement("div", {
-						className: Object(c.a)(K.a.header, s)
+						className: Object(c.a)(V.a.header, s)
 					}, i.a.createElement("h2", null, n || ee._("Categories", null, {
 						hk: "46zLMb"
 					}))), this.renderCategoryList(), o && i.a.createElement(Y.r, {
-						className: Object(c.a)(K.a.button, e),
+						className: Object(c.a)(V.a.button, e),
 						onClick: this.toggleExpanded
 					}, o && !this.state.isExpanded ? ee._("Show More", null, {
 						hk: "1pCiqD"
@@ -2558,7 +2558,7 @@
 					} = t;
 					return Object(g.b)(r.params.categoryName || "")
 				},
-				Ce = Object(m.pg)(p.i),
+				Ce = Object(m.qg)(p.i),
 				Ee = Object(d.c)({
 					categories: e => Object(ye.b)(e, {
 						categoriesOrder: Ce
@@ -2711,4 +2711,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditLeaderboard.e62d0a5f87a2a5a6034f.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditLeaderboard.099302bab4727b568e68.js.map

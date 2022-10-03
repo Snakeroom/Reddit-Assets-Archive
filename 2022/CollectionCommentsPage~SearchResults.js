@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~SearchResults.9b333ae916c3b6d4c1b1.js
-// Retrieved at 9/29/2022, 4:30:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~SearchResults.83ec885bfc2de1fcc549.js
+// Retrieved at 10/3/2022, 2:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~SearchResults"], {
 		"./node_modules/lodash/_baseDelay.js": function(e, t) {
@@ -946,7 +946,7 @@
 						let {
 							subreddit: s
 						} = t;
-						return s ? Object(B.x)(e, {
+						return s ? Object(B.y)(e, {
 							subredditName: s.name
 						}) : void 0
 					},
@@ -1398,7 +1398,7 @@
 					isOnlineUserPref: U.V,
 					userIsBanned: (e, t) => {
 						const s = Object(ht.b)(e, t);
-						return !!s && Object(B.hb)(e, {
+						return !!s && Object(B.ib)(e, {
 							subredditId: s.subredditId
 						})
 					},
@@ -1955,7 +1955,7 @@
 				const t = Object(o.f)().getState(),
 					s = Object(h.a)(t, Object(d.c)());
 				if (e.isD2xPdpSideRailRecsEnabled) {
-					const t = e.d2xPdpSideRailRecsVariant === m.Vc.GreyRereddit || e.d2xPdpSideRailRecsVariant === m.Vc.GreyRedditNoNsfw || e.d2xPdpSideRailRecsVariant === m.Vc.LargeImagePreview ? e.reredditButtons : [];
+					const t = e.d2xPdpSideRailRecsVariant === m.Wc.GreyRereddit || e.d2xPdpSideRailRecsVariant === m.Wc.GreyRedditNoNsfw || e.d2xPdpSideRailRecsVariant === m.Wc.LargeImagePreview ? e.reredditButtons : [];
 					return r.a.createElement(w, {
 						reredditContent: t,
 						countryCode: e.countryCode
@@ -2243,7 +2243,7 @@
 					url: e => Object(h.db)(e)
 				}),
 				S = Object(d.c)({
-					subredditId: (e, t) => Object(v.G)(e, t.subredditName)
+					subredditId: (e, t) => Object(v.H)(e, t.subredditName)
 				}),
 				_ = Object(i.b)(S),
 				I = l.a.div("WidgetContent", E.a),
@@ -2569,7 +2569,7 @@
 						} = t;
 						return Object(O.D)(e, s, n, r)
 					}),
-					subredditsById: v.db,
+					subredditsById: v.eb,
 					viewportDataLoaded: y.a,
 					pageReferrer: p.V,
 					postListPlaceholderComponent: () => g.a,
@@ -2946,7 +2946,7 @@
 			const a = (e, t) => {
 					const s = e.focusedVerticals.interactedSubredditIds && e.focusedVerticals.interactedSubredditIds[t];
 					if (s) {
-						const t = Object(i.W)(e, {
+						const t = Object(i.X)(e, {
 							subredditId: s
 						});
 						return t && t.displayText || ""
@@ -2959,14 +2959,14 @@
 				u = Object(n.a)((e, t) => {
 					const s = p(e, t);
 					if (!s) return m;
-					const n = Object(i.ab)(e, {
+					const n = Object(i.bb)(e, {
 						subredditName: s.name
 					});
 					return n && n.postIds && n.postIds.length ? n.postIds : m
 				}),
 				p = (e, t) => {
 					const s = e.focusedVerticals.recommendedSubredditIds && e.focusedVerticals.recommendedSubredditIds[t];
-					return s ? Object(i.W)(e, {
+					return s ? Object(i.X)(e, {
 						subredditId: s
 					}) : null
 				},
@@ -3046,4 +3046,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~SearchResults.9b333ae916c3b6d4c1b1.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~SearchResults.83ec885bfc2de1fcc549.js.map

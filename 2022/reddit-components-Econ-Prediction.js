@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Econ-Prediction.74f78ecb72a30944dcea.js
-// Retrieved at 9/29/2022, 4:30:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Econ-Prediction.abb867909ce1a285ddcb.js
+// Retrieved at 10/3/2022, 2:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Econ-Prediction"], {
 		"./src/lib/constants/specialMembership.ts": function(e, t, n) {
@@ -418,7 +418,7 @@
 
 			function d(e) {
 				const t = Object(r.d)(),
-					n = Object(r.e)(t => Object(a.W)(t, {
+					n = Object(r.e)(t => Object(a.X)(t, {
 						subredditId: e
 					})),
 					s = Object(r.e)(t => Object(c.i)(t, {
@@ -700,10 +700,10 @@
 			}
 			var z = n("./src/reddit/components/Econ/Prediction/TournamentTokenIcon/index.tsx"),
 				q = n("./src/reddit/icons/svgs/CoinV2/index.tsx"),
-				H = n("./src/reddit/components/Econ/Prediction/PredictionEducationMessage/PredictionResolvedEducationMessage/index.m.less"),
-				Z = n.n(H);
+				X = n("./src/reddit/components/Econ/Prediction/PredictionEducationMessage/PredictionResolvedEducationMessage/index.m.less"),
+				H = n.n(X);
 			const {
-				fbt: X
+				fbt: Z
 			} = n("./node_modules/fbt/lib/FbtPublic.js"), Q = e => {
 				let {
 					prediction: t
@@ -721,55 +721,55 @@
 					} = e;
 					return t === i
 				})) || void 0 === n ? void 0 : n.userStakeAmount) || 0, m = s ? o.a.createElement(z.a, {
-					className: Z.a.coinIcon,
+					className: H.a.coinIcon,
 					tournamentId: s
 				}) : o.a.createElement(q.a, {
-					className: Z.a.coinIcon
+					className: H.a.coinIcon
 				});
 				return d && !l ? o.a.createElement("div", null, o.a.createElement(R.a, {
-					title: X._("Better luck next time", null, {
+					title: Z._("Better luck next time", null, {
 						hk: "1KYUZf"
 					}),
-					message: o.a.createElement(o.a.Fragment, null, X._("Sorry, your prediction was wrong this time.", null, {
+					message: o.a.createElement(o.a.Fragment, null, Z._("Sorry, your prediction was wrong this time.", null, {
 						hk: "4aEoP2"
 					}), !!u && o.a.createElement("div", {
-						className: Z.a.wonOrLostAmountRow
-					}, X._("You lost {lostAmount}", [X._param("lostAmount", o.a.createElement("div", {
-						className: Z.a.wonOrLostAmount
+						className: H.a.wonOrLostAmountRow
+					}, Z._("You lost {lostAmount}", [Z._param("lostAmount", o.a.createElement("div", {
+						className: H.a.wonOrLostAmount
 					}, m, u))], {
 						hk: "6091x"
 					})))
 				})) : d && l && u && !c ? o.a.createElement("div", null, o.a.createElement(R.a, {
-					title: X._("And the winner is... EVERYONE!", null, {
+					title: Z._("And the winner is... EVERYONE!", null, {
 						hk: "2qfnkC"
 					}),
-					message: o.a.createElement(o.a.Fragment, null, X._("Well, and no one.", null, {
+					message: o.a.createElement(o.a.Fragment, null, Z._("Well, and no one.", null, {
 						hk: "2nGCUb"
 					}), o.a.createElement("div", {
-						className: Z.a.wonOrLostAmountRow
-					}, X._("You've been refunded {refundedAmount}", [X._param("refundedAmount", o.a.createElement("div", {
-						className: Z.a.wonOrLostAmount
+						className: H.a.wonOrLostAmountRow
+					}, Z._("You've been refunded {refundedAmount}", [Z._param("refundedAmount", o.a.createElement("div", {
+						className: H.a.wonOrLostAmount
 					}, m, u))], {
 						hk: "49bOe9"
 					})))
 				})) : d && l ? o.a.createElement("div", null, o.a.createElement(R.a, {
-					title: X._("And the winner is... YOU!", null, {
+					title: Z._("And the winner is... YOU!", null, {
 						hk: "19q97O"
 					}),
-					message: o.a.createElement(o.a.Fragment, null, X._("It’s confirmed—Your prediction was spot on.", null, {
+					message: o.a.createElement(o.a.Fragment, null, Z._("It’s confirmed—Your prediction was spot on.", null, {
 						hk: "3AtcRD"
 					}), !!c && o.a.createElement("div", {
-						className: Z.a.wonOrLostAmountRow
-					}, X._("You won {wonAmount}", [X._param("wonAmount", o.a.createElement("div", {
-						className: Z.a.wonOrLostAmount
+						className: H.a.wonOrLostAmountRow
+					}, Z._("You won {wonAmount}", [Z._param("wonAmount", o.a.createElement("div", {
+						className: H.a.wonOrLostAmount
 					}, m, u + c))], {
 						hk: "1zg0cH"
 					})))
 				})) : o.a.createElement("div", null, o.a.createElement(R.a, {
-					title: X._("This prediction has ended", null, {
+					title: Z._("This prediction has ended", null, {
 						hk: "3VMLnq"
 					}),
-					message: X._("The outcome has been provided.", null, {
+					message: Z._("The outcome has been provided.", null, {
 						hk: "4ccLzU"
 					})
 				}))
@@ -941,7 +941,7 @@
 				} = e;
 				const s = Object(k.a)(),
 					i = Object(ve.a)(),
-					c = Object(r.e)(e => Object(xe.W)(e, {
+					c = Object(r.e)(e => Object(xe.X)(e, {
 						subredditId: t
 					})),
 					d = Object(r.e)(e => Object(fe.b)(e, {
@@ -1497,7 +1497,7 @@
 			})), n.d(t, "g", (function() {
 				return q
 			})), n.d(t, "m", (function() {
-				return H
+				return X
 			}));
 			n("./node_modules/core-js/modules/web.dom.iterable.js");
 			var s = n("./src/reddit/featureFlags/index.ts"),
@@ -1751,8 +1751,8 @@
 						if (s && s.data) return !!s.data[n]
 					}
 				},
-				H = e => e.economics.pointsCopy.data
+				X = e => e.economics.pointsCopy.data
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Econ-Prediction.74f78ecb72a30944dcea.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Econ-Prediction.abb867909ce1a285ddcb.js.map

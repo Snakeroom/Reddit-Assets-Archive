@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/gildActions.31ec26f58395c16eb54e.js
-// Retrieved at 9/29/2022, 4:30:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/gildActions.d512e4f24623ea8e89cf.js
+// Retrieved at 10/3/2022, 2:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["gildActions"], {
 		"./src/reddit/actions/gold/econPurchase.ts": function(e, t, r) {
@@ -104,23 +104,23 @@
 				S = r("./src/reddit/selectors/user.ts"),
 				E = r("./src/reddit/endpoints/awards/index.ts"),
 				R = r("./src/lib/makeGqlRequest/index.ts"),
-				T = r("./src/reddit/helpers/addRedesignIdentifier/index.ts"),
-				q = r("./src/redditGQL/operations/GildComment.json"),
-				N = r("./src/redditGQL/operations/GildPost.json");
-			const D = (e, t, r) => Object(R.a)(e, {
-					...N,
-					variables: t
-				}, {
-					query: r ? {} : Object(T.b)()
-				}),
-				K = (e, t, r) => Object(R.a)(e, {
+				N = r("./src/reddit/helpers/addRedesignIdentifier/index.ts"),
+				T = r("./src/redditGQL/operations/GildComment.json"),
+				q = r("./src/redditGQL/operations/GildPost.json");
+			const K = (e, t, r) => Object(R.a)(e, {
 					...q,
 					variables: t
 				}, {
-					query: r ? {} : Object(T.b)()
+					query: r ? {} : Object(N.b)()
+				}),
+				D = (e, t, r) => Object(R.a)(e, {
+					...T,
+					variables: t
+				}, {
+					query: r ? {} : Object(N.b)()
 				});
-			var M = r("./src/reddit/helpers/awards/getAwardItemId.ts"),
-				Q = r("./src/reddit/helpers/awards/message.ts"),
+			var Q = r("./src/reddit/helpers/awards/getAwardItemId.ts"),
+				M = r("./src/reddit/helpers/awards/message.ts"),
 				B = r("./src/reddit/helpers/correlationIdTracker.ts"),
 				F = r("./src/reddit/helpers/isPost.ts"),
 				J = r("./src/reddit/helpers/trackers/gild.ts"),
@@ -159,7 +159,7 @@
 										awardId: i.id,
 										isAnonymous: c,
 										nonce: u,
-										message: Object(Q.d)(o, i)
+										message: Object(M.d)(o, i)
 									}, r),
 									b = await Object(E.a)(a(), {
 										thingId: e
@@ -191,10 +191,10 @@
 										gildingTypeId: o.selectedAward.id,
 										isAnonymous: o.isAnonymous,
 										isGildFunded: !1,
-										message: Object(Q.d)(o.message, o.selectedAward, u),
+										message: Object(M.d)(o.message, o.selectedAward, u),
 										nodeId: e
 									},
-									b = Object(F.a)(e) ? D : K,
+									b = Object(F.a)(e) ? K : D,
 									m = await b(n(), {
 										input: l
 									}, r);
@@ -262,7 +262,7 @@
 						commentId: r
 					}), s = Object(S.k)(e), a = e.gild, {
 						isAnonymous: n
-					} = a, i = !n && s && (s.username || s.displayText) ? s.username || s.displayText : void 0, o = d ? d.author : void 0, c = Object(C.M)(e, {
+					} = a, i = !n && s && (s.username || s.displayText) ? s.username || s.displayText : void 0, o = d ? d.author : void 0, c = Object(C.N)(e, {
 						thingId: r
 					});
 					return de({
@@ -295,10 +295,10 @@
 						})
 					}
 					if (g.awardType === w.f.Moderator && void 0 === e.subredditCoins) {
-						const t = Object(C.M)(s, {
+						const t = Object(C.N)(s, {
 								thingId: m
 							}),
-							r = t && Object(C.D)(s, {
+							r = t && Object(C.E)(s, {
 								subredditName: t.name
 							});
 						r && (e.subredditCoins = r - g.coinPrice)
@@ -338,33 +338,33 @@
 						numberCoins: R,
 						thingId: m
 					})(s)), t(Object(c.g)(p.a.GOLD_GILD_MODAL));
-					const T = Object(G.a)(s, {
+					const N = Object(G.a)(s, {
 						award: g,
 						minSize: 64,
 						postOrCommentId: m
 					});
 					t(Object(l.f)({
-						customIconAsset: T,
+						customIconAsset: N,
 						kind: I.b.SuccessAward,
 						text: f > 0 ? O({
 							awarderKarmaReceived: f
 						}) : E
 					})), setTimeout(() => {
-						const e = Object(M.a)(b, m),
+						const e = Object(Q.a)(b, m),
 							t = document.getElementById(e);
 						t && t.dispatchEvent(new Event("awardAdded"))
 					}, 10);
-					const q = Date.now();
+					const T = Date.now();
 					await t(Object(o.b)({
 						correlationId: y,
 						forceLoad: !0
 					}));
-					const N = Date.now() - q;
+					const q = Date.now() - T;
 					if (R > 0) {
 						const e = Object(L.f)(r()).filter(e => v.a.has(e.dealInfo.type));
 						if (e.length) {
-							const r = Math.max(900 - N, 10),
-								d = Math.max(300 - N, 10),
+							const r = Math.max(900 - q, 10),
+								d = Math.max(300 - q, 10),
 								a = Object(F.a)(m) && Object(h.q)(Object(P.G)(s, {
 									postId: m
 								}));
@@ -374,15 +374,15 @@
 							})), a ? r : d)
 						}
 					}
-					const D = Object(C.M)(s, {
+					const K = Object(C.N)(s, {
 						thingId: m
 					});
-					if (D && Object(_.a)(s, {
-							subredditId: D.id
-						}) && t(Object(H.a)(D.id, D.name, {
+					if (K && Object(_.a)(s, {
+							subredditId: K.id
+						}) && t(Object(H.a)(K.id, K.name, {
 							force: !0
-						})), 0 === R && D) {
-						t(Object(n.a)(D.id, m, void 0, !0));
+						})), 0 === R && K) {
+						t(Object(n.a)(K.id, m, void 0, !0));
 						const e = 399,
 							d = Object(L.d)(r()).reduce((t, r) => {
 								const d = Math.abs(r.pennies - e);
@@ -580,4 +580,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/gildActions.31ec26f58395c16eb54e.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/gildActions.d512e4f24623ea8e89cf.js.map

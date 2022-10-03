@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/OnboardingModal.2eec1cbdda96e12bbd37.js
-// Retrieved at 9/29/2022, 4:30:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/OnboardingModal.1a25a43493f526b1f282.js
+// Retrieved at 10/3/2022, 2:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["OnboardingModal"], {
 		"./node_modules/lodash/_baseRange.js": function(e, t) {
@@ -401,7 +401,7 @@
 						},
 						forceGeopopular: !0,
 						includeCommunityDUs: !1,
-						includeInterestTopics: !!p && !Object(b.rg)(p),
+						includeInterestTopics: !!p && !Object(b.sg)(p),
 						includeFeaturedAnnouncements: !0,
 						includeLiveEvents: !0,
 						includeIdentity: h && !(null === (r = null === (n = e.user.account) || void 0 === n ? void 0 : n.karma) || void 0 === r ? void 0 : r.total),
@@ -1926,9 +1926,9 @@
 					se = Object(i.e)(et.S),
 					ae = Object(i.e)(Ye.g),
 					oe = Object(i.e)(Ze.a),
-					ie = oe === Ee.Yf.CloseOnboarding,
-					ce = oe === Ee.Yf.SkipTopicSelection,
-					de = oe === Ee.Yf.SmartSignal,
+					ie = oe === Ee.Zf.CloseOnboarding,
+					ce = oe === Ee.Zf.SkipTopicSelection,
+					de = oe === Ee.Zf.SmartSignal,
 					le = Object(a.useCallback)(() => {
 						r(Object(p.g)(_e.a.ONBOARDING_MODAL_D2X)), re && r(Object(b.g)()), f && (s(Object(A.t)()), Object(He.a)()), ae && se && r(Object(u.startChangeUsernameFlow)())
 					}, [r, se, ae, f, re, s]),
@@ -3924,8 +3924,8 @@
 			const a = e => {
 				return !(Object(s.c)(e, {
 					experimentEligibilitySelector: s.a,
-					experimentName: r.ue
-				}) === r.Ld)
+					experimentName: r.ve
+				}) === r.Md)
 			}
 		},
 		"./src/reddit/selectors/experiments/inAppNotification.ts": function(e, t, n) {
@@ -3996,7 +3996,7 @@
 			const c = (e, t) => {
 					const n = e.focusedVerticals.interactedSubredditIds && e.focusedVerticals.interactedSubredditIds[t];
 					if (n) {
-						const t = Object(o.W)(e, {
+						const t = Object(o.X)(e, {
 							subredditId: n
 						});
 						return t && t.displayText || ""
@@ -4009,14 +4009,14 @@
 				m = Object(r.a)((e, t) => {
 					const n = p(e, t);
 					if (!n) return u;
-					const r = Object(o.ab)(e, {
+					const r = Object(o.bb)(e, {
 						subredditName: n.name
 					});
 					return r && r.postIds && r.postIds.length ? r.postIds : u
 				}),
 				p = (e, t) => {
 					const n = e.focusedVerticals.recommendedSubredditIds && e.focusedVerticals.recommendedSubredditIds[t];
-					return n ? Object(o.W)(e, {
+					return n ? Object(o.X)(e, {
 						subredditId: n
 					}) : null
 				},
@@ -4096,4 +4096,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/OnboardingModal.2eec1cbdda96e12bbd37.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/OnboardingModal.1a25a43493f526b1f282.js.map

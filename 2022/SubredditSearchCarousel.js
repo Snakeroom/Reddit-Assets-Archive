@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditSearchCarousel.341ee4a9750d20008d93.js
-// Retrieved at 9/29/2022, 4:30:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditSearchCarousel.8181f5b67be5268d4371.js
+// Retrieved at 10/3/2022, 2:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditSearchCarousel"], {
 		"./src/reddit/actions/subreddit/subredditCarousel.ts": function(e, t, s) {
@@ -106,9 +106,9 @@
 				const f = Object(l.d)(),
 					[_, S] = Object(c.useState)(null),
 					[h, O] = Object(c.useState)(null),
-					[C, B] = Object(c.useState)(0),
-					[I, k] = Object(c.useState)(void 0),
-					g = Object(l.e)(e => Object(E.B)(e, u));
+					[C, I] = Object(c.useState)(0),
+					[B, k] = Object(c.useState)(void 0),
+					g = Object(l.e)(e => Object(E.C)(e, u));
 				Object(c.useEffect)(() => {
 					(null == u ? void 0 : u.length) && f(Object(b.e)(u))
 				}, [u]);
@@ -126,7 +126,7 @@
 					if (!_) return;
 					const e = o()(() => {
 						const e = Math.floor(_.clientWidth / 249);
-						B(e), k((e > 1 ? 249 * e : 237) - 8)
+						I(e), k((e > 1 ? 249 * e : 237) - 8)
 					}, 30);
 					return window.addEventListener("resize", e), e(), () => {
 						window.removeEventListener("resize", e)
@@ -136,7 +136,7 @@
 						source: "similar_communities",
 						action: "view",
 						noun: "module",
-						subreddit: e ? Object(E.W)(t, {
+						subreddit: e ? Object(E.X)(t, {
 							subredditId: e
 						}) : void 0
 					}))(a))
@@ -146,7 +146,7 @@
 				}, d.a.createElement("div", {
 					className: x.a.carouselHeader,
 					style: {
-						width: I
+						width: B
 					}
 				}, d.a.createElement("h3", {
 					className: x.a.carouselTitle
@@ -170,7 +170,7 @@
 					ref: O,
 					className: x.a.carouselWrapper,
 					style: {
-						width: I
+						width: B
 					}
 				}, null == w ? void 0 : w.map((e, t) => {
 					let {
@@ -211,7 +211,7 @@
 					actionInfo: {
 						reason: `${s}`
 					},
-					subreddit: Object(E.W)(r, {
+					subreddit: Object(E.X)(r, {
 						subredditId: t
 					})
 				}))(e ? "unsubsribe" : "subscribe", t, s), [t]);
@@ -305,7 +305,7 @@
 						subreddits: Object(d.p)(e, {
 							listingKey: "SUBREDDIT_CAROUSEL_SEARCH_KEY"
 						}),
-						parentSubredditId: Object(l.G)(e, t)
+						parentSubredditId: Object(l.H)(e, t)
 					})),
 					p = Object(n.useMemo)(() => null == u ? void 0 : u.map(e => e.id), [u]);
 				return Object(n.useEffect)(() => {
@@ -472,4 +472,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditSearchCarousel.341ee4a9750d20008d93.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditSearchCarousel.8181f5b67be5268d4371.js.map

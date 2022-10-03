@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit.8fd8f657d882bc479098.js
-// Retrieved at 9/29/2022, 4:30:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit.9671911b00241809152d.js
+// Retrieved at 10/3/2022, 2:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~ModListing~Reddit"], {
 		"./src/lib/CSSVariableProvider/withTheme.tsx": function(e, t, n) {
@@ -2762,7 +2762,7 @@
 							success: t
 						}),
 						profile: C.U(e, Object(O.n)(e, r)),
-						subreddit: C.kb(e, Object(I.G)(e, n)),
+						subreddit: C.kb(e, Object(I.H)(e, n)),
 						userSubreddit: C.tb(e),
 						adblock: C.e(e)
 					})
@@ -2774,7 +2774,7 @@
 						noun: "screen",
 						...y(e),
 						profile: C.U(e, Object(O.n)(e, n)),
-						subreddit: C.kb(e, Object(I.G)(e, t)),
+						subreddit: C.kb(e, Object(I.H)(e, t)),
 						userSubreddit: C.tb(e),
 						adblock: C.e(e)
 					})
@@ -3441,7 +3441,7 @@
 							subredditId: t
 						})) return;
 					if (Object(f.N)(e)) return O(e);
-					const n = Object(b.K)(e, {
+					const n = Object(b.L)(e, {
 						identifier: {
 							id: t,
 							type: s.a.SUBREDDIT
@@ -3452,7 +3452,7 @@
 					return r ? r * o.Wb < 1639443600180 ? void 0 : O(e) : void 0
 				},
 				O = Object(r.a)(e => Object(c.c)(e, {
-					experimentName: i.Ge,
+					experimentName: i.He,
 					experimentEligibilitySelector: a.e
 				}), d.a)
 		},
@@ -3559,4 +3559,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit.8fd8f657d882bc479098.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit.9671911b00241809152d.js.map

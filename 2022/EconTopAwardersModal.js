@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/EconTopAwardersModal.1624fb5c2fe79663a202.js
-// Retrieved at 9/29/2022, 4:30:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/EconTopAwardersModal.de9caa3f3a290b9f7331.js
+// Retrieved at 10/3/2022, 2:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["EconTopAwardersModal"], {
 		"./src/lib/currency/centsToDollars/index.ts": function(e, t, r) {
@@ -542,10 +542,10 @@
 				}, ie = (e, t) => async (r, a) => {
 					const n = a();
 					await Promise.all([(async () => {
-						if (!Object(N.b)(m.a.BAN_USER)(n) && !Object(E.T)(n, {
+						if (!Object(N.b)(m.a.BAN_USER)(n) && !Object(E.U)(n, {
 								subredditId: e
 							})) {
-							const t = Object(E.W)(n, {
+							const t = Object(E.X)(n, {
 								subredditId: e
 							});
 							await r(Object(d.o)(t.name))
@@ -1623,7 +1623,7 @@
 							subredditId: r
 						}) : void 0
 					},
-					isCurrentUserBanned: (e, t) => !!Object(h.o)(t) && Object(h.hb)(e, t),
+					isCurrentUserBanned: (e, t) => !!Object(h.p)(t) && Object(h.ib)(e, t),
 					userProfileStyles: (e, t) => Object(x.m)(e, Object(v.n)(e, t.userName)),
 					acceptChats: (e, t) => {
 						const r = Object(v.i)(e, {
@@ -1636,7 +1636,7 @@
 							subredditId: r
 						} = t;
 						const a = Object(w.e)(e),
-							n = r || a && Object(h.G)(e, a.name);
+							n = r || a && Object(h.H)(e, a.name);
 						return !!n && Object(p.i)(e, n)
 					},
 					trophyCase: (e, t) => Object(v.s)(e, Object(v.n)(e, t.userName)),
@@ -1654,7 +1654,7 @@
 						let {
 							userName: r
 						} = t;
-						return Object(h.ib)(e, {
+						return Object(h.jb)(e, {
 							identifier: {
 								name: r,
 								type: "profile"
@@ -2761,4 +2761,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EconTopAwardersModal.1624fb5c2fe79663a202.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EconTopAwardersModal.de9caa3f3a290b9f7331.js.map

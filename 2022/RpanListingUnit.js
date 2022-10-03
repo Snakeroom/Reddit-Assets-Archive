@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/RpanListingUnit.c8eb54c13a9fedb7aa3b.js
-// Retrieved at 9/29/2022, 4:30:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/RpanListingUnit.c834bc3e14d7c25375be.js
+// Retrieved at 10/3/2022, 2:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["RpanListingUnit"], {
 		"./node_modules/lodash/_arrayEvery.js": function(e, t) {
@@ -52,25 +52,25 @@
 			const p = Object(o.a)(e => {
 				const t = Object(m.c)(e, {
 					experimentEligibilitySelector: m.a,
-					experimentName: u.Be
+					experimentName: u.Ce
 				});
-				return Object(u.rg)(t) ? void 0 : t
+				return Object(u.sg)(t) ? void 0 : t
 			}, e => {
 				const t = Object(m.c)(e, {
 					experimentEligibilitySelector: m.a,
-					experimentName: u.Ce
+					experimentName: u.De
 				});
-				return Object(u.rg)(t) ? void 0 : t
-			}, (e, t) => e === u.De.Enabled && t === u.De.Enabled);
+				return Object(u.sg)(t) ? void 0 : t
+			}, (e, t) => e === u.Ee.Enabled && t === u.Ee.Enabled);
 			var h = s("./src/config.ts");
 			var b = s("./src/reddit/selectors/user.ts");
-			const v = e => {
+			const E = e => {
 					const t = "0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ",
 						s = t.length,
 						n = new Uint32Array(e);
 					return crypto.getRandomValues(n), Array.from(n).map(e => t.charAt(e % s)).join("")
 				},
-				E = function() {
+				v = function() {
 					let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : new Date;
 					return new Date(e).toISOString().replace(/^(\d{4})-(\d{2})-(\d{2}).*/, "$1$2$3")
 				},
@@ -208,7 +208,7 @@
 					async encryptViewerUserId() {
 						const e = this.props.redditUserId || A.ANONYMOUS_USER_ID,
 							t = this.getOrCreateSalt(),
-							s = `${E()}${e}${t}`;
+							s = `${v()}${e}${t}`;
 						return (await O(s)).substr(0, A.VIEWER_USER_ID_LENGTH)
 					}
 					getDashInstanceData() {
@@ -251,7 +251,7 @@
 					getOrCreateSalt() {
 						const e = A.LOCAL_STORAGE_SALT_KEY;
 						let t = Object(a.a)(e);
-						return t || (t = v(A.SALT_LENGTH), Object(a.b)(e, t, A.SALT_TIME_TO_LIVE)), t
+						return t || (t = E(A.SALT_LENGTH), Object(a.b)(e, t, A.SALT_TIME_TO_LIVE)), t
 					}
 					getThirdPartyLibData() {
 						return {
@@ -340,9 +340,9 @@
 			})), s.d(t, "m", (function() {
 				return b
 			})), s.d(t, "k", (function() {
-				return v
-			})), s.d(t, "i", (function() {
 				return E
+			})), s.d(t, "i", (function() {
+				return v
 			})), s.d(t, "j", (function() {
 				return f
 			})), s.d(t, "h", (function() {
@@ -367,8 +367,8 @@
 				p = "UPDATE_COLLECTION_FAILED",
 				h = "UPDATE_COLLECTION_DESCRIPTION_PENDING",
 				b = "UPDATE_COLLECTION_DESCRIPTION_SUCCESS",
-				v = "UPDATE_COLLECTION_DESCRIPTION_FAILED",
-				E = "REORDER_COLLECTION_PENDING",
+				E = "UPDATE_COLLECTION_DESCRIPTION_FAILED",
+				v = "REORDER_COLLECTION_PENDING",
 				f = "REORDER_COLLECTION_SUCCESS",
 				_ = "REORDER_COLLECTION_FAILED",
 				O = "UPDATE_COLLECTION_LAYOUT_PENDING",
@@ -442,17 +442,17 @@
 			var p = Object(i.b)(u, {})(m),
 				h = s("./src/reddit/selectors/comments.ts"),
 				b = s("./src/reddit/selectors/commentSelector.ts"),
-				v = s("./src/reddit/selectors/subreddit.ts");
-			const E = (e, t) => {
+				E = s("./src/reddit/selectors/subreddit.ts");
+			const v = (e, t) => {
 				const s = Object(b.b)(e, t),
-					n = Object(v.L)(e, t);
+					n = Object(E.M)(e, t);
 				return {
 					comment: s,
 					isModerator: !(!n || !n.name) && !!e.moderatingSubreddits[n.name],
 					subredditOrProfile: n
 				}
 			};
-			var f = Object(i.b)(() => Object(o.a)(E, h.j, (e, t) => ({
+			var f = Object(i.b)(() => Object(o.a)(v, h.j, (e, t) => ({
 				...e,
 				depth: t
 			})))(e => r.a.createElement(p, {
@@ -484,7 +484,7 @@
 			}));
 			const _ = (e, t) => {
 				const s = Object(b.b)(e, t),
-					n = Object(v.L)(e, t);
+					n = Object(E.M)(e, t);
 				return {
 					comment: s,
 					isModerator: !(!n || !n.name) && !!e.moderatingSubreddits[n.name],
@@ -510,7 +510,7 @@
 				}
 			}));
 			var S = Object(i.b)(() => Object(o.c)({
-					subreddit: v.W
+					subreddit: E.X
 				}))(e => r.a.createElement(p, {
 					className: e.className,
 					type: "communityTools",
@@ -610,7 +610,7 @@
 				}) : null
 			};
 			var x = Object(i.b)(() => Object(o.c)({
-				subreddit: v.W
+				subreddit: E.X
 			}))(e => r.a.createElement(p, {
 				className: e.className,
 				type: "sidebar",
@@ -623,7 +623,7 @@
 				}
 			}));
 			var y = Object(i.b)(() => Object(o.c)({
-				subredditOrProfile: (e, t) => Object(v.O)(e, {
+				subredditOrProfile: (e, t) => Object(E.P)(e, {
 					identifier: t
 				})
 			}))(e => r.a.createElement(p, {
@@ -642,7 +642,7 @@
 					let {
 						subredditId: s
 					} = t;
-					return s ? Object(v.W)(e, {
+					return s ? Object(E.X)(e, {
 						subredditId: s
 					}) : null
 				}
@@ -680,8 +680,8 @@
 				p = s("./src/lib/VideoSession/VideoSessionManager.ts"),
 				h = s("./src/reddit/actions/preferences.ts"),
 				b = s("./src/reddit/actions/publicAccessNetwork/constants.ts"),
-				v = s("./src/reddit/actions/publicAccessNetwork/rpanWorker.ts"),
-				E = s("./src/reddit/actions/publicAccessNetwork/streams.ts"),
+				E = s("./src/reddit/actions/publicAccessNetwork/rpanWorker.ts"),
+				v = s("./src/reddit/actions/publicAccessNetwork/streams.ts"),
 				f = s("./src/reddit/components/PublicAccessNetwork/Theater/Overlay/refresh.tsx"),
 				_ = s("./src/reddit/constants/chat.ts"),
 				O = s("./src/reddit/constants/postLayout.ts"),
@@ -714,7 +714,7 @@
 				q = s.n(G);
 			const {
 				fbt: Z
-			} = s("./node_modules/fbt/lib/FbtPublic.js"), z = 20, J = l.wc, $ = l.wc, X = Object(c.a)(P.a, {
+			} = s("./node_modules/fbt/lib/FbtPublic.js"), z = 20, J = l.wc, X = l.wc, $ = Object(c.a)(P.a, {
 				playerName: "RPAN DU Video Player"
 			}), Q = Object(i.b)(() => Object(o.c)({
 				autoplay: A.b,
@@ -729,7 +729,7 @@
 					});
 					let r;
 					if (n) {
-						r = `${Object(g.d)(n)}${Object(E.c)(s)}`
+						r = `${Object(g.d)(n)}${Object(v.c)(s)}`
 					} else {
 						const e = s.replace(/^r\//, "");
 						r = e === b.R ? Object(g.e)() : Object(g.f)(e)
@@ -753,9 +753,9 @@
 					showToast: n.showToast
 				})),
 				openOverlay: t => e(Object(C.a)(t)),
-				subscribeConfig: () => e(v.a.subscribeConfig(t.listingName)),
-				subscribeStats: t => e(v.a.subscribeStats(t)),
-				subscribeStreams: () => e(v.a.subscribeStreams(t.listingName, {
+				subscribeConfig: () => e(E.a.subscribeConfig(t.listingName)),
+				subscribeStats: t => e(E.a.subscribeStats(t)),
+				subscribeStreams: () => e(E.a.subscribeStreams(t.listingName, {
 					pageSize: 1
 				}))
 			})), ee = () => r.a.createElement("h3", {
@@ -777,7 +777,7 @@
 							if (Date.now() - e >= J) {
 								Object(S.bb)();
 								const e = 30 * l.D,
-									t = Date.now() - e + $;
+									t = Date.now() - e + X;
 								this.props.onHideRpanUnit(t, {
 									showToast: !1
 								})
@@ -903,9 +903,9 @@
 						isInLoadingIntersection: h
 					} = t, {
 						isVisible: b,
-						isLoadable: v
-					} = this, E = l && m && !a, f = !E && b, _ = E && !b, O = l && h && !a, S = o ? O && !v : _;
-					(o ? !O && v : f) ? (this.subscribeConfig(), this.subscribeStreams()) : S && (this.unsubscribeConfig(), this.unsubscribeStreams());
+						isLoadable: E
+					} = this, v = l && m && !a, f = !v && b, _ = v && !b, O = l && h && !a, S = o ? O && !E : _;
+					(o ? !O && E : f) ? (this.subscribeConfig(), this.subscribeStreams()) : S && (this.unsubscribeConfig(), this.unsubscribeStreams());
 					const C = i && i.post.id,
 						g = C !== (c && c.post.id),
 						I = !!C;
@@ -1063,7 +1063,7 @@
 					const s = 1e3 * t.broadcast_time,
 						n = t.post.id,
 						i = t.post.title;
-					return r.a.createElement(X, {
+					return r.a.createElement($, {
 						url: t.stream.hls_url,
 						autoplay: e,
 						controls: !1,
@@ -1448,9 +1448,9 @@
 			})), s.d(t, "r", (function() {
 				return b
 			})), s.d(t, "k", (function() {
-				return v
-			})), s.d(t, "f", (function() {
 				return E
+			})), s.d(t, "f", (function() {
+				return v
 			})), s.d(t, "d", (function() {
 				return f
 			})), s.d(t, "n", (function() {
@@ -1550,13 +1550,13 @@
 					...i(t),
 					scheduledPost: o(e)
 				}),
-				v = () => e => ({
+				E = () => e => ({
 					source: "mod_hub_nav",
 					action: "click",
 					noun: "scheduled_posts",
 					...i(e)
 				}),
-				E = () => e => ({
+				v = () => e => ({
 					source: "mod_hub_nav",
 					action: "click",
 					noun: "event_posts",
@@ -1876,7 +1876,7 @@
 			})), s.d(t, "c", (function() {
 				return b
 			})), s.d(t, "r", (function() {
-				return E
+				return v
 			})), s.d(t, "l", (function() {
 				return f
 			})), s.d(t, "k", (function() {
@@ -1916,7 +1916,7 @@
 				},
 				u = e => e.__typename === i.c.AvailableRedditor,
 				m = e => e.__typename === r.a.Subreddit;
-			var p, h, b, v;
+			var p, h, b, E;
 			! function(e) {
 				e.standalonePosts = "standalonePosts", e.recurringPosts = "recurringPosts"
 			}(p || (p = {})),
@@ -1928,12 +1928,12 @@
 			}(b || (b = {})),
 			function(e) {
 				e[e.SUNDAY = 0] = "SUNDAY", e[e.MONDAY = 1] = "MONDAY", e[e.TUESDAY = 2] = "TUESDAY", e[e.WEDNESDAY = 3] = "WEDNESDAY", e[e.THURSDAY = 4] = "THURSDAY", e[e.FRIDAY = 5] = "FRIDAY", e[e.SATURDAY = 6] = "SATURDAY"
-			}(v || (v = {}));
-			const E = e => h[v[e]],
-				f = e => v[h[e]],
+			}(E || (E = {}));
+			const v = e => h[E[e]],
+				f = e => E[h[e]],
 				_ = e => b[h[e]],
 				O = e => h[b[e]],
-				S = e => v[b[e]];
+				S = e => E[b[e]];
 			var C;
 			! function(e) {
 				e.Hourly = "HOURLY", e.Daily = "DAILY", e.Weekly = "WEEKLY", e.Monthly = "MONTHLY"
@@ -1984,12 +1984,12 @@
 			const o = e => Object(r.c)(e, {
 					experimentName: n.yb,
 					experimentEligibilitySelector: i.e
-				}) === n.Ld,
+				}) === n.Md,
 				a = e => Object(r.c)(e, {
 					experimentName: n.wc,
 					experimentEligibilitySelector: r.a
-				}) === n.Ld
+				}) === n.Md
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RpanListingUnit.c8eb54c13a9fedb7aa3b.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RpanListingUnit.c834bc3e14d7c25375be.js.map

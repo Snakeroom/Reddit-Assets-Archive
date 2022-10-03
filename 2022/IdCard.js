@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/IdCard.f9d316cdcadb3569cd73.js
-// Retrieved at 9/29/2022, 4:30:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/IdCard.ebd582ad65094259e69a.js
+// Retrieved at 10/3/2022, 2:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["IdCard", "AchievementsActions", "ContributorRequestButton"], {
 		"./node_modules/autosize/dist/autosize.js": function(e, t, n) {
@@ -840,7 +840,7 @@
 				f = Object(s.a)(o.y),
 				g = Object(s.a)(o.w),
 				x = (e, t, n) => async (r, s, i) => {
-					const o = Object(p.A)(s(), {
+					const o = Object(p.B)(s(), {
 						subredditName: e
 					});
 					if (o) return _(o.id, t, n)(r, s, i)
@@ -1287,7 +1287,7 @@
 					let {
 						apiContext: p
 					} = m, b = e.map(e => e.type === u.a.SUBREDDIT ? {
-						id: Object(E.G)(c(), e.name),
+						id: Object(E.H)(c(), e.name),
 						name: e.name,
 						type: e.type
 					} : {
@@ -1371,7 +1371,7 @@
 						apiContext: s
 					} = r;
 					const i = n(),
-						o = Object(E.O)(i, {
+						o = Object(E.P)(i, {
 							identifier: e
 						});
 					if (!o) throw new Error(`actions.subscription -- No subreddit or profile found with id ${e.id}`);
@@ -1387,7 +1387,7 @@
 							type: e.type,
 							name: o.name
 						},
-						C = () => Object(E.ib)(n(), {
+						C = () => Object(E.jb)(n(), {
 							identifier: x
 						});
 					(C() || (await t(P([x], !0)), C())) && (t(D({
@@ -1885,7 +1885,7 @@
 				g = n.n(f);
 			const x = n("./src/lib/lessComponent.tsx").a.span("TypeLabel", g.a),
 				C = Object(d.c)({
-					restrictions: h.p
+					restrictions: h.q
 				}),
 				_ = e => i.a.createElement(i.a.Fragment, null, i.a.createElement(a.b, {
 					flair: {
@@ -3089,7 +3089,7 @@
 			const ne = 6,
 				re = `${X.a}_description`,
 				se = Object(m.c)({
-					apiPending: te.X,
+					apiPending: te.Y,
 					unsavedChangesModalIsOpen: Object(ee.b)(re)
 				});
 			class ie extends i.a.Component {
@@ -3542,7 +3542,7 @@
 						let {
 							subredditName: n
 						} = t;
-						return Object(te.G)(e, n)
+						return Object(te.H)(e, n)
 					},
 					subredditRankingsInfo: (e, t) => {
 						let {
@@ -3813,17 +3813,17 @@
 					isGQLLoggedIn: N.P,
 					isLoggedIn: N.Q,
 					isNsfwBlurSubreddit: at.e,
-					isMuted: (e, t) => Object(te.I)(e, {
+					isMuted: (e, t) => Object(te.J)(e, {
 						subredditName: t.listingName
 					}),
 					moderatorPermissions: (e, t) => {
-						const n = Object(te.G)(e, t.listingName);
+						const n = Object(te.H)(e, t.listingName);
 						if (n) return Object(dt.n)(e, {
 							subredditId: n
 						})
 					},
 					shouldObserveSubscribeButton: e => Object(it.a)(e) || Object(it.c)(e) || Object(it.d)(e),
-					showContributorRequestFlow: e => Object(te.u)(e, et.e.Post),
+					showContributorRequestFlow: e => Object(te.v)(e, et.e.Post),
 					showCreatePollButton: e => (e => Object(st.c)(e, {
 						experimentEligibilitySelector: st.a,
 						experimentName: Le.V
@@ -3832,22 +3832,22 @@
 						let {
 							listingName: n
 						} = t;
-						const r = Object(te.G)(e, n);
+						const r = Object(te.H)(e, n);
 						return Object(_e.c)(e, {
 							subredditId: r
 						})
 					},
-					subreddit: (e, t) => Object(te.A)(e, {
+					subreddit: (e, t) => Object(te.B)(e, {
 						subredditName: t.listingName
 					}),
-					subredditAboutInfo: (e, t) => Object(te.x)(e, {
+					subredditAboutInfo: (e, t) => Object(te.y)(e, {
 						subredditName: t.listingName
 					}),
 					subredditCoins: (e, t) => {
 						let {
 							listingName: n
 						} = t;
-						return Object(te.D)(e, {
+						return Object(te.E)(e, {
 							subredditName: n
 						})
 					},
@@ -3859,7 +3859,7 @@
 						let {
 							listingName: n
 						} = t;
-						const r = Object(te.A)(e, {
+						const r = Object(te.B)(e, {
 							subredditName: n
 						});
 						return !!r && Object(u.a)(e, {
@@ -4095,7 +4095,7 @@
 						onClick: g ? _ : void 0,
 						headerButton: i.a.createElement("div", {
 							className: bt.a.headerButtonsContainer
-						}, !z && v && C && l !== Le.Pe.NewModule && i.a.createElement(a.a, {
+						}, !z && v && C && l !== Le.Qe.NewModule && i.a.createElement(a.a, {
 							className: bt.a.ModToolsLink,
 							to: C.posts ? `${v.url}about/modqueue` : `${v.url}about/`,
 							onClick: this.onClickModTools
@@ -5905,4 +5905,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/IdCard.f9d316cdcadb3569cd73.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/IdCard.ebd582ad65094259e69a.js.map

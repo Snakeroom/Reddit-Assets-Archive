@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-ProfileIdCard.05b3c55c50d5c398bd85.js
-// Retrieved at 9/29/2022, 4:30:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-ProfileIdCard.22e1fa63f814247bbbd6.js
+// Retrieved at 10/3/2022, 2:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-ProfileIdCard"], {
 		"./node_modules/lodash/compact.js": function(e, t) {
@@ -270,7 +270,7 @@
 					let {
 						apiContext: p
 					} = m, f = e.map(e => e.type === u.a.SUBREDDIT ? {
-						id: Object(C.G)(d(), e.name),
+						id: Object(C.H)(d(), e.name),
 						name: e.name,
 						type: e.type
 					} : {
@@ -354,7 +354,7 @@
 						apiContext: s
 					} = n;
 					const o = r(),
-						a = Object(C.O)(o, {
+						a = Object(C.P)(o, {
 							identifier: e
 						});
 					if (!a) throw new Error(`actions.subscription -- No subreddit or profile found with id ${e.id}`);
@@ -370,7 +370,7 @@
 							type: e.type,
 							name: a.name
 						},
-						x = () => Object(C.ib)(r(), {
+						x = () => Object(C.jb)(r(), {
 							identifier: g
 						});
 					(x() || (await t(L([g], !0)), x())) && (t(F({
@@ -3554,7 +3554,7 @@
 			const a = e => Object(s.c)(e, {
 				experimentName: n.F,
 				experimentEligibilitySelector: () => Object(o.P)(e)
-			}) === n.Ld
+			}) === n.Md
 		},
 		"./src/reddit/selectors/experiments/crisisTextLine.ts": function(e, t, r) {
 			"use strict";
@@ -3602,4 +3602,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ProfileIdCard.05b3c55c50d5c398bd85.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ProfileIdCard.22e1fa63f814247bbbd6.js.map

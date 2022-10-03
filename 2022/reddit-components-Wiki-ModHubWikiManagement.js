@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Wiki-ModHubWikiManagement.533692ff23b8f2df76d4.js
-// Retrieved at 9/29/2022, 4:30:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Wiki-ModHubWikiManagement.b7d288a8efa9aee63205.js
+// Retrieved at 10/3/2022, 2:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Wiki-ModHubWikiManagement"], {
 		"./src/reddit/components/BannedUserList/AddBannedUserModal/DaysInput.tsx": function(e, t, n) {
@@ -82,7 +82,7 @@
 					hk: "2To19l"
 				})],
 				g = Object(o.c)({
-					subredditRules: m.V
+					subredditRules: m.W
 				}),
 				k = Object(a.b)(g);
 			class C extends r.a.Component {
@@ -286,8 +286,8 @@
 				Q = n("./src/reddit/helpers/isValidUsername/index.tsx"),
 				V = n("./src/reddit/helpers/normalizeUsername/index.tsx"),
 				q = n("./src/reddit/layout/twoCol/ExpandLeft/index.tsx"),
-				Y = n("./src/reddit/models/SubredditModeration/index.ts"),
-				Z = n("./src/reddit/components/BannedUserList/AddBannedUserModal/DaysInput.tsx"),
+				Z = n("./src/reddit/models/SubredditModeration/index.ts"),
+				Y = n("./src/reddit/components/BannedUserList/AddBannedUserModal/DaysInput.tsx"),
 				K = n("./src/reddit/components/BannedUserList/AddBannedUserModal/RulesDropdown.tsx"),
 				z = n("./src/reddit/components/Wiki/ModHubWikiManagement/WikiBannedContributors/index.m.less"),
 				G = n.n(z);
@@ -316,7 +316,7 @@
 						})
 					}, this.onChangeBanDuration = e => {
 						const t = Number(e.currentTarget.value);
-						"number" == typeof t && (t < 0 || t > Y.b || this.setState({
+						"number" == typeof t && (t < 0 || t > Z.b || this.setState({
 							duration: t
 						}))
 					}, this.togglePermanent = e => {
@@ -381,7 +381,7 @@
 					}), s.a.createElement(H.a, {
 						maxChars: J,
 						text: t.note
-					})), s.a.createElement(Z.a, {
+					})), s.a.createElement(Y.a, {
 						duration: t.duration,
 						isDurationPermanent: t.isDurationPermanent,
 						onChangeDuration: this.onChangeBanDuration,
@@ -883,8 +883,8 @@
 			var Ie = De(Ae);
 			const He = Object(M.c)({
 				subredditSettings: (e, t) => {
-					const n = Object(xe.G)(e, t.subredditName);
-					return Object(xe.Y)(e, n)
+					const n = Object(xe.H)(e, t.subredditName);
+					return Object(xe.Z)(e, n)
 				},
 				wikiPageSettings: A.d
 			});
@@ -1039,12 +1039,12 @@
 				Qe = n("./src/reddit/components/Wiki/ModHubWikiManagement/index.m.less"),
 				Ve = n.n(Qe);
 			const qe = Object(u.u)(),
-				Ye = () => {
+				Ze = () => {
 					document.body.scrollTop = 0, document.documentElement.scrollTop = 0
 				};
-			class Ze extends s.a.Component {
+			class Ye extends s.a.Component {
 				scrollToTopIfNeeded() {
-					location.hash || Ye()
+					location.hash || Ze()
 				}
 				componentDidMount() {
 					this.scrollToTopIfNeeded()
@@ -1114,8 +1114,8 @@
 					}
 				}
 			}
-			t.default = qe(Ze)
+			t.default = qe(Ye)
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Wiki-ModHubWikiManagement.533692ff23b8f2df76d4.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Wiki-ModHubWikiManagement.b7d288a8efa9aee63205.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/LiveVideoPlayer~PublicAccessNetwork~RpanListingUnit.eb4f1efac8129ce71d24.js
-// Retrieved at 9/29/2022, 4:30:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/LiveVideoPlayer~PublicAccessNetwork~RpanListingUnit.0eec8355ebc09f8c0ff6.js
+// Retrieved at 10/3/2022, 2:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["LiveVideoPlayer~PublicAccessNetwork~RpanListingUnit"], {
 		"./src/lib/VideoSession/VideoSessionManager.ts": function(e, t, s) {
@@ -915,8 +915,8 @@
 				L = s("./src/reddit/icons/svgs/CircledPlanet/index.tsx"),
 				T = s("./src/reddit/icons/svgs/Hide/index.tsx"),
 				A = s("./src/reddit/icons/svgs/Lock/index.tsx"),
-				O = s("./src/reddit/icons/svgs/Plus/index.tsx"),
-				j = s("./src/reddit/icons/svgs/Remove/index.tsx"),
+				j = s("./src/reddit/icons/svgs/Plus/index.tsx"),
+				O = s("./src/reddit/icons/svgs/Remove/index.tsx"),
 				M = s("./src/reddit/icons/svgs/Report/index.tsx"),
 				V = s("./src/reddit/icons/svgs/Rules/index.tsx"),
 				D = s("./src/reddit/icons/svgs/Unlock/index.tsx"),
@@ -968,7 +968,7 @@
 						o(!0), t()
 					},
 					className: U.a.joinButton
-				}, r.a.createElement(O.a, {
+				}, r.a.createElement(j.a, {
 					className: U.a.plusIcon
 				}), r.a.createElement("span", {
 					className: U.a.joinText
@@ -1224,7 +1224,7 @@
 					iconWrapperClassName: U.a.overflowItemIconWrapper,
 					key: `${ne}-end`,
 					onClick: l
-				}, r.a.createElement(j.a, {
+				}, r.a.createElement(O.a, {
 					className: U.a.endBroadcastIcon
 				}))))
 			}, ie = Object(n.b)(null, e => ({
@@ -1427,7 +1427,7 @@
 				return o && o.enableFollowers ? d : null
 			}, Ce = e => Object(n.e)(t => Object(h.Ab)(t, {
 				userName: e
-			})), xe = e => Object(n.e)(t => Object(H.ib)(t, {
+			})), xe = e => Object(n.e)(t => Object(H.jb)(t, {
 				identifier: {
 					name: e,
 					type: C.a.PROFILE
@@ -1682,4 +1682,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/LiveVideoPlayer~PublicAccessNetwork~RpanListingUnit.eb4f1efac8129ce71d24.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/LiveVideoPlayer~PublicAccessNetwork~RpanListingUnit.0eec8355ebc09f8c0ff6.js.map

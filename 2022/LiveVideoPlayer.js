@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/LiveVideoPlayer.22920dd0eaaf0557e8ba.js
-// Retrieved at 9/29/2022, 4:30:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/LiveVideoPlayer.d1eb0c5fc149951d7ff5.js
+// Retrieved at 10/3/2022, 2:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["LiveVideoPlayer"], {
 		"./node_modules/lodash/isUndefined.js": function(e, t) {
@@ -168,7 +168,7 @@
 					s(p());
 					const d = Date.now(),
 						l = e.replace("r/", ""),
-						m = Object(u.G)(o, l),
+						m = Object(u.H)(o, l),
 						h = await Object(a.b)(i(), {
 							subredditId: m,
 							options: t
@@ -330,7 +330,7 @@
 					let {
 						apiContext: h
 					} = m, b = e.map(e => e.type === l.a.SUBREDDIT ? {
-						id: Object(g.G)(c(), e.name),
+						id: Object(g.H)(c(), e.name),
 						name: e.name,
 						type: e.type
 					} : {
@@ -414,7 +414,7 @@
 						apiContext: r
 					} = n;
 					const i = s(),
-						o = Object(g.O)(i, {
+						o = Object(g.P)(i, {
 							identifier: e
 						});
 					if (!o) throw new Error(`actions.subscription -- No subreddit or profile found with id ${e.id}`);
@@ -430,7 +430,7 @@
 							type: e.type,
 							name: o.name
 						},
-						_ = () => Object(g.ib)(s(), {
+						_ = () => Object(g.jb)(s(), {
 							identifier: O
 						});
 					(_() || (await t(P([O], !0)), _())) && (t(M({
@@ -1954,4 +1954,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/LiveVideoPlayer.22920dd0eaaf0557e8ba.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/LiveVideoPlayer.d1eb0c5fc149951d7ff5.js.map

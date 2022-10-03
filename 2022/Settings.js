@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Settings.6bd8d20dd4fed50fda08.js
-// Retrieved at 9/29/2022, 4:30:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Settings.2198cc4f61e62b60ae94.js
+// Retrieved at 10/3/2022, 2:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Settings"], {
 		"./node_modules/moment/locale sync recursive ^\\.\\/.*$": function(e, t, n) {
@@ -2379,10 +2379,10 @@
 				}, ce = (e, t) => async (n, s) => {
 					const r = s();
 					await Promise.all([(async () => {
-						if (!Object(k.b)(u.a.BAN_USER)(r) && !Object(j.T)(r, {
+						if (!Object(k.b)(u.a.BAN_USER)(r) && !Object(j.U)(r, {
 								subredditId: e
 							})) {
-							const t = Object(j.W)(r, {
+							const t = Object(j.X)(r, {
 								subredditId: e
 							});
 							await n(Object(l.o)(t.name))
@@ -3533,7 +3533,7 @@
 							subredditId: n
 						}) : void 0
 					},
-					isCurrentUserBanned: (e, t) => !!Object(v.o)(t) && Object(v.hb)(e, t),
+					isCurrentUserBanned: (e, t) => !!Object(v.p)(t) && Object(v.ib)(e, t),
 					userProfileStyles: (e, t) => Object(g.m)(e, Object(f.n)(e, t.userName)),
 					acceptChats: (e, t) => {
 						const n = Object(f.i)(e, {
@@ -3546,7 +3546,7 @@
 							subredditId: n
 						} = t;
 						const s = Object(C.e)(e),
-							r = n || s && Object(v.G)(e, s.name);
+							r = n || s && Object(v.H)(e, s.name);
 						return !!r && Object(p.i)(e, r)
 					},
 					trophyCase: (e, t) => Object(f.s)(e, Object(f.n)(e, t.userName)),
@@ -3564,7 +3564,7 @@
 						let {
 							userName: n
 						} = t;
-						return Object(v.ib)(e, {
+						return Object(v.jb)(e, {
 							identifier: {
 								name: n,
 								type: "profile"
@@ -3931,7 +3931,7 @@
 				f = n("./src/reddit/selectors/subreddit.ts");
 			const g = (e, t) => {
 				const n = Object(h.b)(e, t),
-					s = Object(f.L)(e, t);
+					s = Object(f.M)(e, t);
 				return {
 					comment: n,
 					isModerator: !(!s || !s.name) && !!e.moderatingSubreddits[s.name],
@@ -3970,7 +3970,7 @@
 			}));
 			const _ = (e, t) => {
 				const n = Object(h.b)(e, t),
-					s = Object(f.L)(e, t);
+					s = Object(f.M)(e, t);
 				return {
 					comment: n,
 					isModerator: !(!s || !s.name) && !!e.moderatingSubreddits[s.name],
@@ -3996,7 +3996,7 @@
 				}
 			}));
 			var x = Object(a.b)(() => Object(o.c)({
-					subreddit: f.W
+					subreddit: f.X
 				}))(e => r.a.createElement(p, {
 					className: e.className,
 					type: "communityTools",
@@ -4096,7 +4096,7 @@
 				}) : null
 			};
 			var O = Object(a.b)(() => Object(o.c)({
-				subreddit: f.W
+				subreddit: f.X
 			}))(e => r.a.createElement(p, {
 				className: e.className,
 				type: "sidebar",
@@ -4109,7 +4109,7 @@
 				}
 			}));
 			var w = Object(a.b)(() => Object(o.c)({
-				subredditOrProfile: (e, t) => Object(f.O)(e, {
+				subredditOrProfile: (e, t) => Object(f.P)(e, {
 					identifier: t
 				})
 			}))(e => r.a.createElement(p, {
@@ -4128,7 +4128,7 @@
 					let {
 						subredditId: n
 					} = t;
-					return n ? Object(f.W)(e, {
+					return n ? Object(f.X)(e, {
 						subredditId: n
 					}) : null
 				}
@@ -14430,9 +14430,9 @@
 					},
 					isDspEnabled: e => {
 						return Object(se.c)(e, {
-							experimentName: ne.ed,
+							experimentName: ne.fd,
 							experimentEligibilitySelector: se.a
-						}) === ne.Ld
+						}) === ne.Md
 					}
 				}),
 				bo = Object(fe.u)(),
@@ -14981,7 +14981,7 @@
 			const o = e => Object(r.c)(e, {
 				experimentName: s.F,
 				experimentEligibilitySelector: () => Object(a.P)(e)
-			}) === s.Ld
+			}) === s.Md
 		},
 		"./src/reddit/selectors/gold/productOffers.ts": function(e, t, n) {
 			"use strict";
@@ -15145,4 +15145,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Settings.6bd8d20dd4fed50fda08.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Settings.2198cc4f61e62b60ae94.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Multireddit.eb7401b22ed4da57dfb7.js
-// Retrieved at 9/29/2022, 4:30:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Multireddit.39ca3eabbd0dea3efb01.js
+// Retrieved at 10/3/2022, 2:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Multireddit"], {
 		"./src/higherOrderComponents/withAdClickLocation/Locations.ts": function(e, t, n) {
@@ -346,7 +346,7 @@
 					let {
 						apiContext: b
 					} = m, p = e.map(e => e.type === u.a.SUBREDDIT ? {
-						id: Object(D.G)(d(), e.name),
+						id: Object(D.H)(d(), e.name),
 						name: e.name,
 						type: e.type
 					} : {
@@ -430,7 +430,7 @@
 						apiContext: o
 					} = r;
 					const s = n(),
-						i = Object(D.O)(s, {
+						i = Object(D.P)(s, {
 							identifier: e
 						});
 					if (!i) throw new Error(`actions.subscription -- No subreddit or profile found with id ${e.id}`);
@@ -446,7 +446,7 @@
 							type: e.type,
 							name: i.name
 						},
-						x = () => Object(D.ib)(n(), {
+						x = () => Object(D.jb)(n(), {
 							identifier: h
 						});
 					(x() || (await t(U([h], !0)), x())) && (t(w({
@@ -1764,4 +1764,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Multireddit.eb7401b22ed4da57dfb7.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Multireddit.39ca3eabbd0dea3efb01.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-SubredditContent-PredictionsContent.ab64129dfb9a3571a21d.js
-// Retrieved at 9/29/2022, 4:30:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-SubredditContent-PredictionsContent.43c062e6abf8a4549408.js
+// Retrieved at 10/3/2022, 2:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-SubredditContent-PredictionsContent"], {
 		"./src/reddit/components/Econ/Prediction/hooks/useTournamentsQuery.ts": function(e, t, n) {
@@ -16,7 +16,7 @@
 
 			function d(e) {
 				const t = Object(c.d)(),
-					n = Object(c.e)(t => Object(a.W)(t, {
+					n = Object(c.e)(t => Object(a.X)(t, {
 						subredditId: e
 					})),
 					o = Object(c.e)(t => Object(i.i)(t, {
@@ -200,7 +200,7 @@
 				const n = Object(x.a)(),
 					[r, i] = function(e, t) {
 						const n = Object(s.d)(),
-							o = Object(s.e)(t => Object(v.Y)(t, e)),
+							o = Object(s.e)(t => Object(v.Z)(t, e)),
 							r = o ? Boolean(o[t]) : void 0;
 						return [r, function() {
 							let o = !(arguments.length > 0 && void 0 !== arguments[0]) || arguments[0];
@@ -579,4 +579,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-SubredditContent-PredictionsContent.ab64129dfb9a3571a21d.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-SubredditContent-PredictionsContent.43c062e6abf8a4549408.js.map

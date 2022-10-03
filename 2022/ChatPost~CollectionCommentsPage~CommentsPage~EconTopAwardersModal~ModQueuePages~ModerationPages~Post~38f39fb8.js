@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ChatPost~CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~Post~38f39fb8.1658fd91198fbb8dabb2.js
-// Retrieved at 9/29/2022, 4:30:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ChatPost~CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~Post~38f39fb8.a6a998122250a0693bab.js
+// Retrieved at 10/3/2022, 2:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ChatPost~CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~Post~38f39fb8"], {
 		"./src/reddit/actions/economics/subredditPremium/actionCreators.ts": function(e, t, r) {
@@ -1701,7 +1701,7 @@
 				f = r("./src/reddit/selectors/subreddit.ts");
 			const v = (e, t) => {
 				const r = Object(b.b)(e, t),
-					s = Object(f.L)(e, t);
+					s = Object(f.M)(e, t);
 				return {
 					comment: r,
 					isModerator: !(!s || !s.name) && !!e.moderatingSubreddits[s.name],
@@ -1740,7 +1740,7 @@
 			}));
 			const g = (e, t) => {
 				const r = Object(b.b)(e, t),
-					s = Object(f.L)(e, t);
+					s = Object(f.M)(e, t);
 				return {
 					comment: r,
 					isModerator: !(!s || !s.name) && !!e.moderatingSubreddits[s.name],
@@ -1766,7 +1766,7 @@
 				}
 			}));
 			var x = Object(n.b)(() => Object(a.c)({
-					subreddit: f.W
+					subreddit: f.X
 				}))(e => o.a.createElement(p, {
 					className: e.className,
 					type: "communityTools",
@@ -1866,7 +1866,7 @@
 				}) : null
 			};
 			var I = Object(n.b)(() => Object(a.c)({
-				subreddit: f.W
+				subreddit: f.X
 			}))(e => o.a.createElement(p, {
 				className: e.className,
 				type: "sidebar",
@@ -1879,7 +1879,7 @@
 				}
 			}));
 			var C = Object(n.b)(() => Object(a.c)({
-				subredditOrProfile: (e, t) => Object(f.O)(e, {
+				subredditOrProfile: (e, t) => Object(f.P)(e, {
 					identifier: t
 				})
 			}))(e => o.a.createElement(p, {
@@ -1898,7 +1898,7 @@
 					let {
 						subredditId: r
 					} = t;
-					return r ? Object(f.W)(e, {
+					return r ? Object(f.X)(e, {
 						subredditId: r
 					}) : null
 				}
@@ -3687,15 +3687,15 @@
 			const a = e => {
 					const t = Object(o.c)(e, {
 						experimentEligibilitySelector: n.Q,
-						experimentName: s.od
+						experimentName: s.pd
 					});
-					return !(!t || Object(s.rg)(t))
+					return !(!t || Object(s.sg)(t))
 				},
 				i = e => {
 					return Object(o.c)(e, {
 						experimentEligibilitySelector: n.Q,
-						experimentName: s.od
-					}) === s.Pd.ListingEnabled
+						experimentName: s.pd
+					}) === s.Qd.ListingEnabled
 				}
 		},
 		"./src/reddit/selectors/gold/topAwarded.ts": function(e, t, r) {
@@ -3755,4 +3755,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatPost~CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~Post~38f39fb8.1658fd91198fbb8dabb2.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatPost~CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~Post~38f39fb8.a6a998122250a0693bab.js.map
