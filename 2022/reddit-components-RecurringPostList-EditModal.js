@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-RecurringPostList-EditModal.36042a47c229485f0b12.js
-// Retrieved at 9/29/2022, 4:30:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-RecurringPostList-EditModal.6d61f678cdfa5fe340ff.js
+// Retrieved at 10/4/2022, 1:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-RecurringPostList-EditModal"], {
 		"./src/reddit/components/FocusableContent/index.m.less": function(e, t, n) {
@@ -1221,7 +1221,7 @@
 						hk: "sKXJR"
 					});
 					const c = Object(a.f)(Object(r.a)(t, n));
-					if (c < (Object(a.b)() === e.state.timezoneName ? new Date : new Date(Date.now() - o.D))) return s.fbt._("Submit time needs to be in the future", null, {
+					if (c < (Object(a.b)() === e.state.timezoneName ? new Date : new Date(Date.now() - o.E))) return s.fbt._("Submit time needs to be in the future", null, {
 						hk: "3YJESf"
 					});
 					if (e.maxDate) {
@@ -1367,4 +1367,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-RecurringPostList-EditModal.36042a47c229485f0b12.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-RecurringPostList-EditModal.6d61f678cdfa5fe340ff.js.map

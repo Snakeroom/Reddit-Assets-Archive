@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfileComments.764d9f01ec89d65c2730.js
-// Retrieved at 10/3/2022, 2:20:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfileComments.8937f7bb70ff3bb47ed8.js
+// Retrieved at 10/4/2022, 1:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfileComments"], {
 		"./node_modules/linkify-it/index.js": function(e, t, r) {
@@ -366,7 +366,7 @@
 				return n && (s = Object(E.a)(s)), Object(k.a)(e, {
 					data: r,
 					endpoint: s,
-					method: x.nb.GET
+					method: x.ob.GET
 				})
 			};
 			var O = r("./src/reddit/helpers/getTimeSortForListing/index.ts"),
@@ -644,7 +644,7 @@
 						isContributorRequestTimestamp: n
 					} = r;
 					if (!n) return !1;
-					const s = 30 * z.D;
+					const s = 30 * z.E;
 					return n > Date.now() - s
 				})(e),
 				isSeo: T.h
@@ -1498,7 +1498,7 @@
 				componentDidMount() {
 					if (this.checkAndSendScreenview(), this.timerId) {
 						const e = y.c.end(this.timerId);
-						setTimeout(() => Object(y.b)(i.n.Redesign, {
+						setTimeout(() => Object(y.b)(i.o.Redesign, {
 							type: "mount",
 							component: "overviewChronoList",
 							duration: e
@@ -1512,7 +1512,7 @@
 					if (this.checkAndSendScreenview(), this.timerId && y.c.has(this.timerId)) {
 						const e = y.c.end(this.timerId);
 						if (e < 10) return;
-						setTimeout(() => Object(y.b)(i.n.Redesign, {
+						setTimeout(() => Object(y.b)(i.o.Redesign, {
 							duration: e,
 							type: "mount",
 							component: "overviewChronoList"
@@ -2342,7 +2342,7 @@
 					let {
 						match: r
 					} = t;
-					return Object(te.f)(e, l.pc + r.params.profileName)
+					return Object(te.f)(e, l.qc + r.params.profileName)
 				}, ve.d, (e, t) => {
 					let {
 						match: r
@@ -2443,7 +2443,7 @@
 				const P = {
 					sort: C,
 					baseUrl: F,
-					sortOptions: l.Hb,
+					sortOptions: l.Ib,
 					timeSort: E
 				};
 				return a.a.createElement(fe.a, {
@@ -2473,4 +2473,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileComments.764d9f01ec89d65c2730.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileComments.8937f7bb70ff3bb47ed8.js.map

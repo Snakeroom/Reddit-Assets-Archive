@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditPremiumNewUserWelcome.cec08204a4a4b8866751.js
-// Retrieved at 10/3/2022, 2:20:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditPremiumNewUserWelcome.147ba1e89dc9413bee05.js
+// Retrieved at 10/4/2022, 1:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditPremiumNewUserWelcome"], {
 		"./node_modules/lodash/flattenDeep.js": function(e, t, n) {
@@ -154,7 +154,7 @@
 						const t = `https://${o.pointsDocsBaseUrl}v1.json?web`,
 							n = await Object(s.b)({
 								endpoint: t,
-								method: r.nb.GET
+								method: r.ob.GET
 							});
 						n.ok && n.body && e(l(n.body))
 					}
@@ -1398,7 +1398,7 @@
 			function c(e, t) {
 				return Object(o.a)(e, {
 					endpoint: `${r.a.metaUrl}/communities/${t.subredditId}/me`,
-					method: s.nb.GET
+					method: s.ob.GET
 				})
 			}
 		},
@@ -2343,7 +2343,7 @@
 					return !(!r || !Object(o.a)(r))
 				},
 				V = (e, t, n) => {
-					if (Object(p.a)(e)) return !(!t || !Object(m.B)(e, {
+					if (Object(p.a)(e)) return !(!t || !Object(m.C)(e, {
 						subredditId: t
 					})) || (!!Y(e, t) || !(!r.d.spGiphy(e) || !H(e, n)));
 					if (!Object(_.b)(e, {
@@ -2410,4 +2410,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditPremiumNewUserWelcome.cec08204a4a4b8866751.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditPremiumNewUserWelcome.147ba1e89dc9413bee05.js.map

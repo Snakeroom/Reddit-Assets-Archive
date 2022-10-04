@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CoinPurchaseModal.175ea67dcdc3c6491118.js
-// Retrieved at 10/3/2022, 2:20:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CoinPurchaseModal.7a9541622b5532125ba6.js
+// Retrieved at 10/4/2022, 1:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CoinPurchaseModal", "gildActions"], {
 		"./src/reddit/actions/economics/powerups/helpers.ts": function(e, t, a) {
@@ -127,8 +127,8 @@
 					query: a ? {} : Object(S.b)()
 				});
 			var D = a("./src/reddit/helpers/awards/getAwardItemId.ts"),
-				K = a("./src/reddit/helpers/awards/message.ts"),
-				q = a("./src/reddit/helpers/correlationIdTracker.ts"),
+				q = a("./src/reddit/helpers/awards/message.ts"),
+				K = a("./src/reddit/helpers/correlationIdTracker.ts"),
 				Q = a("./src/reddit/helpers/isPost.ts"),
 				z = a("./src/reddit/helpers/trackers/gild.ts"),
 				H = a("./src/telemetry/index.ts"),
@@ -158,7 +158,7 @@
 										message: d,
 										isAnonymous: i
 									} = c.gild,
-									l = Object(x.b)(c) || Object(q.d)(q.a.GildingFlow, !1),
+									l = Object(x.b)(c) || Object(K.d)(K.a.GildingFlow, !1),
 									{
 										receivedKarma: u
 									} = await Object(T.b)(n(), {
@@ -166,7 +166,7 @@
 										awardId: o.id,
 										isAnonymous: i,
 										nonce: l,
-										message: Object(K.d)(d, o)
+										message: Object(q.d)(d, o)
 									}, a),
 									m = await Object(T.a)(n(), {
 										thingId: e
@@ -198,7 +198,7 @@
 										gildingTypeId: d.selectedAward.id,
 										isAnonymous: d.isAnonymous,
 										isGildFunded: !1,
-										message: Object(K.d)(d.message, d.selectedAward, l),
+										message: Object(q.d)(d.message, d.selectedAward, l),
 										nodeId: e
 									},
 									m = Object(Q.a)(e) ? L : F,
@@ -248,7 +248,7 @@
 							});
 						await a(ae(t))
 					} finally {
-						Object(q.b)(q.a.GildingFlow)
+						Object(K.b)(K.a.GildingFlow)
 					}
 				}, X = Object(s.a)(J.u), $ = Object(s.a)(J.q), ee = () => async (e, t) => {
 					e($()), window.setTimeout(() => {
@@ -287,7 +287,7 @@
 						g = Object(v.a)(s, m),
 						h = e.awardKarmaReceived,
 						j = Object(N.k)(s),
-						k = Object(x.b)(s) || Object(q.d)(q.a.GildingFlow, !1);
+						k = Object(x.b)(s) || Object(K.d)(K.a.GildingFlow, !1);
 					if (Object(x.g)(s)) {
 						const e = "success.gild",
 							t = {},
@@ -1247,7 +1247,7 @@
 					}, c.a.createElement(f.a, {
 						className: R.a.balance,
 						coinBalance: a
-					}), o === d.Lb && ((null == t ? void 0 : t.pennyPrice) && r ? c.a.createElement(N, {
+					}), o === d.Mb && ((null == t ? void 0 : t.pennyPrice) && r ? c.a.createElement(N, {
 						awardId: t.id,
 						className: Object(b.a)(R.a.purchaseButton, R.a.paypalCheckoutButton),
 						pennies: t.pennyPrice,
@@ -1255,7 +1255,7 @@
 					}) : s && c.a.createElement(N, {
 						className: Object(b.a)(R.a.purchaseButton, R.a.paypalCheckoutButton),
 						coinPackage: s
-					})), o === d.Kb && c.a.createElement(T.l, {
+					})), o === d.Lb && c.a.createElement(T.l, {
 						className: R.a.purchaseButton,
 						"data-redditstyle": !0,
 						disabled: i || n,
@@ -1267,8 +1267,8 @@
 				const I = null == x ? void 0 : x.pricePackages.find(e => e.id === (null == s ? void 0 : s.mobileId));
 				if (!x || !I || !s) return null;
 				if (!(null != o)) return null;
-				const _ = o === d.Lb,
-					A = o === d.Kb,
+				const _ = o === d.Mb,
+					A = o === d.Lb,
 					M = {
 						className: R.a.purchaseButton,
 						productOffer: x,
@@ -1294,20 +1294,20 @@
 				}), _ && c.a.createElement(O.a, M), A && c.a.createElement(m.a, M))
 			};
 			var D = a("./src/reddit/components/ModalStyledComponents/index.tsx"),
-				K = a("./src/reddit/hooks/useLocale.ts"),
-				q = a("./src/reddit/icons/fonts/Coin/index.tsx");
+				q = a("./src/reddit/hooks/useLocale.ts"),
+				K = a("./src/reddit/icons/fonts/Coin/index.tsx");
 			const {
 				fbt: Q
 			} = a("./node_modules/fbt/lib/FbtPublic.js");
 			var z = e => {
 				var t;
-				const a = Object(K.a)();
+				const a = Object(q.a)();
 				return c.a.createElement("div", {
 					className: R.a.purchaseHeader,
 					style: {
 						backgroundImage: `url("${w.a.assetPath}/img/gold/coins-hero.jpg")`
 					}
-				}, c.a.createElement(q.a, {
+				}, c.a.createElement(K.a, {
 					className: R.a.coinIcon
 				}), c.a.createElement("div", {
 					className: R.a.titleMain
@@ -1333,7 +1333,7 @@
 				})))
 			};
 			var H = e => {
-					const t = Object(K.a)(),
+					const t = Object(q.a)(),
 						a = [];
 					if (e.purchasePackage && a.push(s.fbt._("{coinCount} will automatically be spent on this {awardName} Award.", [s.fbt._param("coinCount", Object(l.b)(e.award.coinPrice, {
 							locale: t,
@@ -1385,7 +1385,7 @@
 				J = a("./src/reddit/components/StripePaymentForm/index.tsx"),
 				W = a("./src/reddit/helpers/createEmojiText/index.tsx");
 			const Z = e => {
-				const t = Object(K.a)(),
+				const t = Object(q.a)(),
 					a = Object(o.a)(),
 					n = e.purchasePackage ? e.purchasePackage.pennies : e.selectedAward.pennyPrice || 0;
 				return c.a.createElement(r.Elements, {
@@ -1410,7 +1410,7 @@
 					selectedPayment: e.selectedPayment,
 					onPaymentSelected: e.onPaymentSelected,
 					paymentMethods: e.purchaseMethods
-				}), e.selectedPayment === d.Kb && c.a.createElement(r.ElementsConsumer, null, t => {
+				}), e.selectedPayment === d.Lb && c.a.createElement(r.ElementsConsumer, null, t => {
 					let {
 						stripe: a
 					} = t;
@@ -1426,9 +1426,9 @@
 					locale: t
 				}))], {
 					hk: "3dx6W8"
-				}))), e.selectedPayment === d.Lb && e.paypalErrorMessage && c.a.createElement("div", {
+				}))), e.selectedPayment === d.Mb && e.paypalErrorMessage && c.a.createElement("div", {
 					className: R.a.errorMessage
-				}, e.paypalErrorMessage), e.selectedPayment === d.Kb && e.stripeErrorMessage && c.a.createElement("div", {
+				}, e.paypalErrorMessage), e.selectedPayment === d.Lb && e.stripeErrorMessage && c.a.createElement("div", {
 					className: R.a.errorMessage
 				}, e.stripeErrorMessage), c.a.createElement("div", {
 					className: R.a.agreementLink
@@ -1635,7 +1635,7 @@
 					...a,
 					onCompletePurchaseClick: (a, r, s) => t.dispatchCompletePurchase(a, r, s, !!e.gildThingId, e.isIframed)
 				}));
-			class K extends s.a.Component {
+			class q extends s.a.Component {
 				constructor(e) {
 					super(e), this.handleEscapeKey = e => {
 						const {
@@ -1731,7 +1731,7 @@
 					}))
 				}
 			}
-			const q = Object(o.a)(K);
+			const K = Object(o.a)(q);
 			t.default = D(Object(g.c)(class extends s.a.PureComponent {
 				constructor() {
 					super(...arguments), this.onTryCloseModal = () => {
@@ -1753,7 +1753,7 @@
 							paddingBottom: 12
 						} : {}
 					};
-					return s.a.createElement(q, L({}, this.props, {
+					return s.a.createElement(K, L({}, this.props, {
 						className: T.a.coinPurchaseModal,
 						onCloseModal: this.onCloseModal,
 						onOverlayClick: this.onTryCloseModal,
@@ -1949,4 +1949,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CoinPurchaseModal.175ea67dcdc3c6491118.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CoinPurchaseModal.7a9541622b5532125ba6.js.map

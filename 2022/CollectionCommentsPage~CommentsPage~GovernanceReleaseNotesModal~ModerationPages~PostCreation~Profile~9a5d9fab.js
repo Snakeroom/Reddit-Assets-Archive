@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~ModerationPages~PostCreation~Profile~9a5d9fab.c0d52041d73fcfea1854.js
-// Retrieved at 10/3/2022, 2:20:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~ModerationPages~PostCreation~Profile~9a5d9fab.1be78623d57a6ae2427c.js
+// Retrieved at 10/4/2022, 1:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~ModerationPages~PostCreation~Profile~9a5d9fab"], {
 		"./src/higherOrderComponents/withClickTracking/index.tsx": function(e, t, s) {
@@ -85,16 +85,16 @@
 			const p = Object(o.a)(e => {
 				const t = Object(m.c)(e, {
 					experimentEligibilitySelector: m.a,
-					experimentName: u.Ce
+					experimentName: u.De
 				});
-				return Object(u.sg)(t) ? void 0 : t
+				return Object(u.tg)(t) ? void 0 : t
 			}, e => {
 				const t = Object(m.c)(e, {
 					experimentEligibilitySelector: m.a,
-					experimentName: u.De
+					experimentName: u.Ee
 				});
-				return Object(u.sg)(t) ? void 0 : t
-			}, (e, t) => e === u.Ee.Enabled && t === u.Ee.Enabled);
+				return Object(u.tg)(t) ? void 0 : t
+			}, (e, t) => e === u.Fe.Enabled && t === u.Fe.Enabled);
 			var h = s("./src/config.ts");
 			var b = s("./src/reddit/selectors/user.ts");
 			const g = e => {
@@ -607,8 +607,8 @@
 						postTitle: V,
 						shouldShowTileLayoutOption: W,
 						showPromotedCTA: H,
-						subredditName: U,
-						isVisible: F
+						subredditName: F,
+						isVisible: U
 					} = e,
 					G = Object(r.e)(e => Object(C.d)(e, B)),
 					J = G > 0,
@@ -616,13 +616,13 @@
 					Y = Object(p.a)(),
 					$ = Object(i.useRef)(null),
 					z = Object(i.useRef)(null),
-					[q, Q] = Object(i.useState)(F ? G : -1),
-					[X, Z] = Object(i.useState)(F ? G : -1),
-					ee = Object(l.a)(F),
+					[q, Q] = Object(i.useState)(U ? G : -1),
+					[X, Z] = Object(i.useState)(U ? G : -1),
+					ee = Object(l.a)(U),
 					te = Object(l.a)(G);
 				Object(i.useEffect)(() => {
-					(void 0 !== ee && ee !== F && F && q < 0 && X < 0 || void 0 !== te && te !== G && F && (q > G || X < G)) && (Q(_(G, 1)), Z(D(G, h.length, 1)))
-				}, [ee, G, F, q, X, te, h.length, B]);
+					(void 0 !== ee && ee !== U && U && q < 0 && X < 0 || void 0 !== te && te !== G && U && (q > G || X < G)) && (Q(_(G, 1)), Z(D(G, h.length, 1)))
+				}, [ee, G, U, q, X, te, h.length, B]);
 				const se = Object(i.useRef)(),
 					ie = Object(i.useCallback)(e => {
 						e.forEach(e => {
@@ -738,7 +738,7 @@
 						r = R && R[i];
 					if (!r || !r.s) return null;
 					const o = t.caption ? t.caption : V,
-						a = Object(c.a)(U ? `${U} - ${o}` : o, 300, d.mb),
+						a = Object(c.a)(F ? `${F} - ${o}` : o, 300, d.nb),
 						l = [...r && r.s ? [r.s] : [], ...r && r.p ? r.p : []],
 						u = Object(O.d)(b, l);
 					if (!u) return null;
@@ -1229,8 +1229,8 @@
 				V = s("./src/reddit/components/Media/TwitterEmbed/index.tsx"),
 				W = s("./src/reddit/components/Media/VideoBox/index.tsx"),
 				H = s("./src/reddit/components/PlayButton/index.tsx"),
-				U = s("./src/reddit/components/PostList/index.tsx"),
-				F = s("./src/reddit/components/RawHTMLDisplay/Media.tsx"),
+				F = s("./src/reddit/components/PostList/index.tsx"),
+				U = s("./src/reddit/components/RawHTMLDisplay/Media.tsx"),
 				G = s("./src/reddit/components/RichTextJson/index.tsx"),
 				J = s("./src/reddit/constants/componentSizes.ts"),
 				K = s("./src/reddit/constants/screenWidths.ts"),
@@ -1543,7 +1543,7 @@
 					} = this.props;
 					if (!n) return;
 					let r = "";
-					return i && (r += i), t && e ? r += `${Oe}${t}` : s.title && (r += `${Oe}${s.title}`), r.length > ye ? Object(j.a)(r, ye, E.mb) : r
+					return i && (r += i), t && e ? r += `${Oe}${t}` : s.title && (r += `${Oe}${s.title}`), r.length > ye ? Object(j.a)(r, ye, E.nb) : r
 				}
 				getVideoExpandoMaxDimensions() {
 					let e, t = Math.max(te.j, this.state.viewportHeight),
@@ -1705,7 +1705,7 @@
 						Te = !((null === (e = P.pollData) || void 0 === e ? void 0 : e.isPrediction) && !c),
 						Me = !(!P.isSponsored || !P.source),
 						Le = Object(me.ub)() || "",
-						Ne = P.isSponsored ? Object(U.b)(P.id, {
+						Ne = P.isSponsored ? Object(F.b)(P.id, {
 							fireAdPixelsOfType: o,
 							openPost: L
 						}) : l.a,
@@ -1789,7 +1789,7 @@
 									"data-adclicklocation": h.a.MEDIA,
 									isCommentsPage: c,
 									showFull: K
-								}, u.a.createElement(F.a, {
+								}, u.a.createElement(U.a, {
 									flairStyleTemplate: a,
 									html: P.isMeta ? Object(Z.a)(P.media.content, P.id, xe.a.hiddenLink) : P.media.content
 								})), u.a.createElement(A.a, {
@@ -2363,7 +2363,7 @@
 				r = s("./src/reddit/helpers/chooseVariant/index.ts");
 			const o = (e, t) => {
 				var s;
-				return (null === (s = null == t ? void 0 : t.meta) || void 0 === s ? void 0 : s.name) === i.Rb.INDEX && Object(r.c)(e, {
+				return (null === (s = null == t ? void 0 : t.meta) || void 0 === s ? void 0 : s.name) === i.Sb.INDEX && Object(r.c)(e, {
 					experimentEligibilitySelector: r.a,
 					experimentName: n.Jc
 				}) === n.Md
@@ -2396,4 +2396,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~ModerationPages~PostCreation~Profile~9a5d9fab.c0d52041d73fcfea1854.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~ModerationPages~PostCreation~Profile~9a5d9fab.1be78623d57a6ae2427c.js.map

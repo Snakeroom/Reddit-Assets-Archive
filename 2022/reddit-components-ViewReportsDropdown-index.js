@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-ViewReportsDropdown-index.cd1eeb1adf84b331de0d.js
-// Retrieved at 9/29/2022, 4:30:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-ViewReportsDropdown-index.8627cc717705a4414721.js
+// Retrieved at 10/4/2022, 1:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-ViewReportsDropdown-index"], {
 		"./src/reddit/actions/comment/moderation.ts": function(e, t, o) {
@@ -11,9 +11,9 @@
 			})), o.d(t, "f", (function() {
 				return w
 			})), o.d(t, "a", (function() {
-				return C
-			})), o.d(t, "e", (function() {
 				return k
+			})), o.d(t, "e", (function() {
+				return C
 			})), o.d(t, "g", (function() {
 				return _
 			})), o.d(t, "h", (function() {
@@ -73,7 +73,7 @@
 							isLocked: d.isLocked
 						}
 					}))
-				}, w = Object(r.a)(j.J), C = e => async (t, o, n) => {
+				}, w = Object(r.a)(j.J), k = e => async (t, o, n) => {
 					let {
 						apiContext: r,
 						gqlContext: d
@@ -112,7 +112,7 @@
 							numReports: l.numReports || null
 						}
 					})), Object(c.d)())
-				}, k = (e, t) => async (o, n, r) => {
+				}, C = (e, t) => async (o, n, r) => {
 					let {
 						apiContext: d,
 						gqlContext: i
@@ -176,7 +176,7 @@
 						commentId: e
 					});
 					if (!l) return;
-					const p = o === n.jc.Snoozed,
+					const p = o === n.kc.Snoozed,
 						g = {
 							itemId: e,
 							reportText: t,
@@ -208,8 +208,8 @@
 					s(Object(h.j)({
 						[e]: {
 							distinguishType: t,
-							isAdmin: t === n.I.ADMIN,
-							isMod: t === n.I.MODERATOR,
+							isAdmin: t === n.J.ADMIN,
+							isMod: t === n.J.MODERATOR,
 							isStickied: !!o
 						}
 					})), o && b && b !== e && s(Object(h.j)({
@@ -224,7 +224,7 @@
 						id: e,
 						postId: u,
 						commentsPageKey: Object(d.a)(u, null, {
-							sort: n.v.CONFIDENCE,
+							sort: n.w.CONFIDENCE,
 							...l.platform.currentPage.queryParams
 						})
 					})) : (s(Object(h.j)({
@@ -279,9 +279,9 @@
 				f = o("./src/reddit/icons/svgs/Undo/index.tsx"),
 				v = o("./src/reddit/selectors/tooltip.ts"),
 				w = o("./src/reddit/components/Reports/SnoozableReport/index.m.less"),
-				C = o.n(w);
+				k = o.n(w);
 			const {
-				fbt: k
+				fbt: C
 			} = o("./node_modules/fbt/lib/FbtPublic.js"), _ = (e, t) => `SnoozableReport--${t}--${e}`, E = Object(r.b)(() => Object(d.c)({
 				isDropdownOpen: (e, t) => Object(v.b)(_(t.reason, t.reportedThingId))(e)
 			}), (e, t) => ({
@@ -295,7 +295,7 @@
 			class y extends n.a.Component {
 				constructor() {
 					super(...arguments), this.tooltipTarget = null, this.setTooltipTargetRef = e => this.tooltipTarget = e, this.onSnoozeButtonClick = () => {
-						const e = this.props.isSnoozed ? c.jc.None : c.jc.Snoozed;
+						const e = this.props.isSnoozed ? c.kc.None : c.kc.Snoozed;
 						this.props.toggleSnooze(e);
 						const t = Object(R.n)(Object(g.a)(this.props.reportedThingId), this.props.isSnoozed, this.props.reportedThingId, this.props.reason);
 						this.props.sendEvent(t)
@@ -318,12 +318,12 @@
 						ref: this.setTooltipTargetRef
 					}, n.a.createElement(x.b, {
 						id: m,
-						className: Object(i.a)(C.a.DropdownLabelContainer, a),
+						className: Object(i.a)(k.a.DropdownLabelContainer, a),
 						onClick: s
 					}, n.a.createElement("label", {
 						htmlFor: m,
-						className: C.a.DropdownLabel
-					}, d ? k._("Reporter snoozed", null, {
+						className: k.a.DropdownLabel
+					}, d ? C._("Reporter snoozed", null, {
 						hk: "1rCWql"
 					}) : c ? `${e} (${t})` : `${t}: ${e}`, r ? n.a.createElement(j.a, null) : n.a.createElement(h.a, null))), n.a.createElement(S, {
 						isOpen: r,
@@ -331,17 +331,17 @@
 						renderContentsHidden: !0,
 						isOverlay: !1
 					}, n.a.createElement("button", {
-						className: Object(i.a)(C.a.SnoozeButton, l),
+						className: Object(i.a)(k.a.SnoozeButton, l),
 						onClick: this.onSnoozeButtonClick
 					}, n.a.createElement("div", {
-						className: C.a.SnoozeButtonContent
+						className: k.a.SnoozeButtonContent
 					}, d ? n.a.createElement(n.a.Fragment, null, n.a.createElement(f.a, {
 						className: p
-					}), k._("Undo snoozing reports from this user", null, {
+					}), C._("Undo snoozing reports from this user", null, {
 						hk: "1CloXT"
 					})) : n.a.createElement(n.a.Fragment, null, n.a.createElement(O.a, {
 						className: p
-					}), k._("Snooze reports from this user for 7 days", null, {
+					}), C._("Snooze reports from this user for 7 days", null, {
 						hk: "1i0sOW"
 					}))))))
 				}
@@ -469,13 +469,13 @@
 						return Object(l.b)(o)(e)
 					}
 				}),
-				C = Object(r.b)(w),
-				k = Object(c.a)(v),
-				_ = C(e => {
+				k = Object(r.b)(w),
+				C = Object(c.a)(v),
+				_ = k(e => {
 					const t = !(!e.model.numReports || -1 !== e.model.numReports),
 						o = t ? e.model.modReportsDismissed || [] : e.model.modReports,
 						s = t ? e.model.userReportsDismissed || [] : e.model.userReports;
-					return n.a.createElement(k, {
+					return n.a.createElement(C, {
 						className: e.className,
 						isOpen: e.isDropdownOpen,
 						tooltipId: e.tooltipId
@@ -567,4 +567,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ViewReportsDropdown-index.cd1eeb1adf84b331de0d.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ViewReportsDropdown-index.8627cc717705a4414721.js.map

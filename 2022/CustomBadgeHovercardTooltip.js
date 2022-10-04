@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CustomBadgeHovercardTooltip.f37a0a4cea7ea4060d3d.js
-// Retrieved at 9/29/2022, 4:30:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CustomBadgeHovercardTooltip.9b1958afb01e4ccc655b.js
+// Retrieved at 10/4/2022, 1:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CustomBadgeHovercardTooltip"], {
 		"./src/lib/constants/specialMembership.ts": function(e, t, r) {
@@ -800,11 +800,11 @@
 				}
 				return t
 			};
-			var B;
+			var w;
 			! function(e) {
 				e[e.Fetched = 0] = "Fetched", e[e.Fetching = 1] = "Fetching", e[e.NotFetched = 2] = "NotFetched"
-			}(B || (B = {}));
-			const w = {
+			}(w || (w = {}));
+			const B = {
 					prices: {},
 					member: "Supporter",
 					memberPlural: "Supporters",
@@ -816,7 +816,7 @@
 				k = (e, t) => Object.values(e.products.models).filter(e => e.type === a.a.Membership && t && e.subredditId === t),
 				F = (e, t) => {
 					if (!t) return {};
-					const r = w.prices;
+					const r = B.prices;
 					k(e, t).forEach(e => {
 						e.price && e.currency && (r[e.currency] = e.price)
 					});
@@ -825,15 +825,15 @@
 				},
 				T = (e, t) => {
 					var r, s, n, o;
-					const c = (null === (o = null === (n = null === (s = null === (r = e.features) || void 0 === r ? void 0 : r.crypto) || void 0 === s ? void 0 : s.points) || void 0 === n ? void 0 : n[t || ""]) || void 0 === o ? void 0 : o.nomenclature) || w;
+					const c = (null === (o = null === (n = null === (s = null === (r = e.features) || void 0 === r ? void 0 : r.crypto) || void 0 === s ? void 0 : s.points) || void 0 === n ? void 0 : n[t || ""]) || void 0 === o ? void 0 : o.nomenclature) || B;
 					return {
 						prices: F(e, t),
-						member: c.member || w.member,
-						memberPlural: c.memberPlural || w.memberPlural,
-						memberAlt: c.memberAlt || w.memberAlt,
-						memberAltPlural: c.memberAltPlural || w.memberAltPlural,
-						membership: c.membership || w.membership,
-						membershipAlt: c.membershipAlt || w.membershipAlt
+						member: c.member || B.member,
+						memberPlural: c.memberPlural || B.memberPlural,
+						memberAlt: c.memberAlt || B.memberAlt,
+						memberAltPlural: c.memberAltPlural || B.memberAltPlural,
+						membership: c.membership || B.membership,
+						membershipAlt: c.membershipAlt || B.membershipAlt
 					}
 				},
 				U = e => {
@@ -869,7 +869,7 @@
 					return !(!s || !Object(o.a)(s))
 				},
 				J = (e, t, r) => {
-					if (Object(b.a)(e)) return !(!t || !Object(m.B)(e, {
+					if (Object(b.a)(e)) return !(!t || !Object(m.C)(e, {
 						subredditId: t
 					})) || (!!Z(e, t) || !(!s.d.spGiphy(e) || !K(e, r)));
 					if (!Object(h.b)(e, {
@@ -904,4 +904,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CustomBadgeHovercardTooltip.f37a0a4cea7ea4060d3d.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CustomBadgeHovercardTooltip.9b1958afb01e4ccc655b.js.map

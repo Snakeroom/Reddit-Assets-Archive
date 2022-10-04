@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Governance-ClaimPointsBanner.7042ad7f4d9f43b5a156.js
-// Retrieved at 10/3/2022, 2:20:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Governance-ClaimPointsBanner.8e0416e3342cab58ef94.js
+// Retrieved at 10/4/2022, 1:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Governance-ClaimPointsBanner"], {
 		"./src/lib/constants/specialMembership.ts": function(A, e, t) {
@@ -140,7 +140,7 @@
 						const e = `https://${i.pointsDocsBaseUrl}v1.json?web`,
 							t = await Object(r.b)({
 								endpoint: e,
-								method: n.nb.GET
+								method: n.ob.GET
 							});
 						t.ok && t.body && A(u(t.body))
 					}
@@ -1614,7 +1614,7 @@
 					return !(!n || !Object(i.a)(n))
 				},
 				K = (A, e, t) => {
-					if (Object(l.a)(A)) return !(!e || !Object(m.B)(A, {
+					if (Object(l.a)(A)) return !(!e || !Object(m.C)(A, {
 						subredditId: e
 					})) || (!!P(A, e) || !(!n.d.spGiphy(A) || !w(A, t)));
 					if (!Object(b.b)(A, {
@@ -1649,4 +1649,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Governance-ClaimPointsBanner.7042ad7f4d9f43b5a156.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Governance-ClaimPointsBanner.8e0416e3342cab58ef94.js.map

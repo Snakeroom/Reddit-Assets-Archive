@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/EconomicsSubredditPremiumSidebarCards.0a21f8dc5456b0d40063.js
-// Retrieved at 9/29/2022, 4:30:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/EconomicsSubredditPremiumSidebarCards.dd877cdda8270093b9cf.js
+// Retrieved at 10/4/2022, 1:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["EconomicsSubredditPremiumSidebarCards"], {
 		"./node_modules/lodash/_arrayShuffle.js": function(e, t, s) {
@@ -190,7 +190,7 @@
 						const t = `https://${i.pointsDocsBaseUrl}v1.json?web`,
 							s = await Object(n.b)({
 								endpoint: t,
-								method: r.nb.GET
+								method: r.ob.GET
 							});
 						s.ok && s.body && e(l(s.body))
 					}
@@ -2529,7 +2529,7 @@
 			function o(e, t) {
 				return Object(i.a)(e, {
 					endpoint: `${r.a.metaUrl}/communities/${t.subredditId}/me`,
-					method: n.nb.GET
+					method: n.ob.GET
 				})
 			}
 		},
@@ -3661,7 +3661,7 @@
 					return !(!r || !Object(i.a)(r))
 				},
 				H = (e, t, s) => {
-					if (Object(p.a)(e)) return !(!t || !Object(m.B)(e, {
+					if (Object(p.a)(e)) return !(!t || !Object(m.C)(e, {
 						subredditId: t
 					})) || (!!V(e, t) || !(!r.d.spGiphy(e) || !z(e, s)));
 					if (!Object(f.b)(e, {
@@ -3728,4 +3728,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EconomicsSubredditPremiumSidebarCards.0a21f8dc5456b0d40063.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EconomicsSubredditPremiumSidebarCards.dd877cdda8270093b9cf.js.map

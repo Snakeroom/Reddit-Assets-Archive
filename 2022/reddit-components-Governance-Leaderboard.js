@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Governance-Leaderboard.e51012ccfa7f990d6ec6.js
-// Retrieved at 9/29/2022, 4:30:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Governance-Leaderboard.ba9689034e6fe87be7ba.js
+// Retrieved at 10/4/2022, 1:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Governance-Leaderboard"], {
 		"./src/lib/constants/specialMembership.ts": function(e, t, r) {
@@ -574,7 +574,7 @@
 				function(e, t) {
 					return Object(m.a)(e, {
 						endpoint: `${u.a.metaUrl}/ratings/${t.subredditId}/points-monthly`,
-						method: l.nb.GET
+						method: l.ob.GET
 					}).then(e => {
 						if (e.ok) {
 							let t = 0;
@@ -1876,7 +1876,7 @@
 					return !(!n || !Object(o.a)(n))
 				},
 				$ = (e, t, r) => {
-					if (Object(b.a)(e)) return !(!t || !Object(m.B)(e, {
+					if (Object(b.a)(e)) return !(!t || !Object(m.C)(e, {
 						subredditId: t
 					})) || (!!Y(e, t) || !(!n.d.spGiphy(e) || !W(e, r)));
 					if (!Object(f.b)(e, {
@@ -1911,4 +1911,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Governance-Leaderboard.e51012ccfa7f990d6ec6.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Governance-Leaderboard.ba9689034e6fe87be7ba.js.map

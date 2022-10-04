@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Geotagging.a182d6a472f5813777c6.js
-// Retrieved at 10/3/2022, 2:20:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Geotagging.fb4efa1bd7eab5e131d4.js
+// Retrieved at 10/4/2022, 1:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Geotagging"], {
 		"./node_modules/p-debounce/index.js": function(e, t, s) {
@@ -540,7 +540,7 @@
 					return e
 				}).apply(this, arguments)
 			}
-			const x = d.f[1] + 24,
+			const x = d.g[1] + 24,
 				f = u.f + 8,
 				E = f + 152 + 16,
 				_ = E + x + 8,
@@ -594,7 +594,7 @@
 						this.windowHeight = window.innerHeight
 					}, this.handleResize = a()(() => {
 						this.updateMeasurements(), this.updateState()
-					}, d.M), this.setWrapperRef = e => this.containerEl = e || null, this.state = {
+					}, d.N), this.setWrapperRef = e => this.containerEl = e || null, this.state = {
 						isAdSticky: !0,
 						isBottomSticky: !1,
 						isFooterSticky: !0
@@ -1751,4 +1751,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Geotagging.a182d6a472f5813777c6.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Geotagging.fb4efa1bd7eab5e131d4.js.map

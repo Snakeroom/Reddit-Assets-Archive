@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModListing.ad56505646a0cb1df244.js
-// Retrieved at 10/3/2022, 2:20:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModListing.ceebd8d2403b440f08d9.js
+// Retrieved at 10/4/2022, 1:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModListing"], {
 		"./node_modules/classnames/index.js": function(e, t, n) {
@@ -485,11 +485,11 @@
 				_ = (e, t) => Object(p.a)(e, {
 					data: t,
 					endpoint: Object(g.a)(Object(x.a)(`${b.a.gatewayUrl}/desktopapi/v1/mod`)),
-					method: o.nb.GET
+					method: o.ob.GET
 				});
 			const v = (e, t, n, r) => Object(p.a)(Object(h.a)(e, [f.a]), {
 					endpoint: `${e.apiUrl}/api/filter/user/${t}/f/mod/${Object(y.d)(n)}`,
-					method: r ? o.nb.PUT : o.nb.DELETE,
+					method: r ? o.ob.PUT : o.ob.DELETE,
 					data: {
 						model: JSON.stringify({
 							name: Object(y.j)(n)
@@ -538,7 +538,7 @@
 					})))
 				}, R = (e, t) => async (n, s) => {
 					const {
-						sort: d = o.bb
+						sort: d = o.cb
 					} = e.params, l = Object(L.d)(e.path), b = l ? u.f : u.e, p = Object(a.a)(b, d, e.queryParams), h = s(), f = h.listings.postOrder.ids[p], g = h.listings.postOrder.api.error[p];
 					if (h.listings.postOrder.api.pending[p] || f && !g && !t) return void(f && n(c.m({
 						title: r.fbt._("Subreddits you moderate", null, {
@@ -566,7 +566,7 @@
 						c = d.platform.currentPage;
 					if (!c) return;
 					const {
-						sort: l = o.bb
+						sort: l = o.cb
 					} = e, b = c.queryParams, p = Object(L.d)(c.url), h = p ? u.f : u.e, f = Object(a.a)(h, l, b), g = d.listings.postOrder.loadMore[f];
 					if (!g) return;
 					const y = d.listings.postOrder.api.pending[f],
@@ -606,7 +606,7 @@
 
 			function D(e) {
 				const t = m.C in e && e[m.C].toUpperCase() || "";
-				return t in o.nc && o.nc[t]
+				return t in o.oc && o.oc[t]
 			}
 			const K = Object(d.a)(M.c),
 				q = Object(d.a)(M.b),
@@ -844,12 +844,12 @@
 				_ = g.a.wrapped(m.n, "SubmitLink", h.a),
 				v = e => {
 					switch (e) {
-						case c.ab.RISING:
+						case c.bb.RISING:
 							return r.fbt._("Create a new post and take all the glory", null, {
 								hk: "1NhXUe"
 							});
-						case c.ab.TOP:
-						case c.ab.CONTROVERSIAL:
+						case c.bb.TOP:
+						case c.bb.CONTROVERSIAL:
 							return null;
 						default:
 							return r.fbt._("Be the first to till this fertile land.", null, {
@@ -869,12 +869,12 @@
 						className: h.a.PrimaryText
 					}, (e => {
 						switch (e) {
-							case c.ab.RISING:
+							case c.bb.RISING:
 								return r.fbt._("Looks like nothing is rising fast enough in this subreddit", null, {
 									hk: "kJ3Te"
 								});
-							case c.ab.TOP:
-							case c.ab.CONTROVERSIAL:
+							case c.bb.TOP:
+							case c.bb.CONTROVERSIAL:
 								return r.fbt._("No posts were found using the {listing sort option} sort. Try changing the sort.", [r.fbt._param("listing sort option", i()(e))], {
 									hk: "48BeCW"
 								});
@@ -2101,7 +2101,7 @@
 							subredditName: t.subredditName
 						});
 						if (!n) {
-							const n = (e => e.startsWith(c.pc) ? e.slice(2) : e)(t.subredditName);
+							const n = (e => e.startsWith(c.qc) ? e.slice(2) : e)(t.subredditName);
 							return n && Object(ee.k)(e, {
 								profileName: n
 							}) || null
@@ -2228,7 +2228,7 @@
 					let {
 						match: n
 					} = t;
-					return n.params.sort || c.ab.HOT
+					return n.params.sort || c.bb.HOT
 				}, (e, t) => {
 					let {
 						match: n
@@ -2237,7 +2237,7 @@
 				}, Ie.k, Ie.d, (e, t, n, r, i) => {
 					const o = s()([...Object(l.a)(e)]),
 						d = Se.C in o && o[Se.C].toUpperCase(),
-						a = "string" == typeof d && d in c.nc ? c.nc[d] : c.oc,
+						a = "string" == typeof d && d in c.oc ? c.oc[d] : c.pc,
 						m = n ? Ee.f : Ee.e;
 					return {
 						filtered: n,
@@ -2335,7 +2335,7 @@
 				const b = Object(o.e)(e => e.subreddits.survey[n]),
 					p = Object(o.e)(e => e.subreddits.progressModule[n]),
 					h = Object(o.e)(u.a),
-					f = h !== c.Qe.NewModule;
+					f = h !== c.Re.NewModule;
 				return (null === (s = null == p ? void 0 : p.cards) || void 0 === s ? void 0 : s.length) > 0 && f ? i.a.createElement(m, {
 					closeModuleOnMount: !!t && t !== l.g.Large,
 					subredditId: n,
@@ -2363,7 +2363,7 @@
 						experimentEligibilitySelector: i.Q,
 						experimentName: r.pd
 					});
-					return !(!t || Object(r.sg)(t))
+					return !(!t || Object(r.tg)(t))
 				},
 				d = e => {
 					return Object(s.c)(e, {
@@ -2380,9 +2380,9 @@
 			var r = n("./src/reddit/constants/experiments.ts"),
 				s = n("./src/reddit/helpers/chooseVariant/index.ts");
 			const i = e => Object(s.c)(e, {
-				experimentName: r.Fe,
+				experimentName: r.Ge,
 				experimentEligibilitySelector: s.a
-			}) === r.Oe.Enabled
+			}) === r.Pe.Enabled
 		},
 		"./src/reddit/selectors/focusedVerticalSuggestion.ts": function(e, t, n) {
 			"use strict";
@@ -2492,8 +2492,8 @@
 				}
 		},
 		"./src/redditGQL/operations/SubredditGeoRecommendationViaFocusVertical.json": function(e) {
-			e.exports = JSON.parse('{"id":"dd6aa8aaf456"}')
+			e.exports = JSON.parse('{"id":"d1355352c639"}')
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModListing.ad56505646a0cb1df244.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModListing.ceebd8d2403b440f08d9.js.map

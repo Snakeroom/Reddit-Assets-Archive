@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-CoinPurchaseDropdown.65caf67df9fa031383e7.js
-// Retrieved at 9/29/2022, 4:30:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-CoinPurchaseDropdown.839f6bc2272dd22719b0.js
+// Retrieved at 10/4/2022, 1:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-CoinPurchaseDropdown"], {
 		"./node_modules/@stripe/react-stripe-js/dist/react-stripe.umd.js": function(e, t, r) {
@@ -990,7 +990,7 @@
 						apiContext: c
 					} = s;
 					const l = Object(f.a)(n()),
-						u = (null == l ? void 0 : l.pennies) || a.Cb,
+						u = (null == l ? void 0 : l.pennies) || a.Db,
 						p = Object(b.c)(b.a.GoldPayment);
 					r(Object(d.stripeTokenPending)());
 					const y = await r(Object(d.validateAndCreateStripeToken)(e, t));
@@ -1394,7 +1394,7 @@
 							sendEvent: o
 						} = this.props;
 						t && t(), o(l.c());
-						const s = (null === (e = null == n ? void 0 : n.meta) || void 0 === e ? void 0 : e.name) === E.Rb.PREMIUM;
+						const s = (null === (e = null == n ? void 0 : n.meta) || void 0 === e ? void 0 : e.name) === E.Sb.PREMIUM;
 						r(this.correlationId, s)
 					}, this.handleClickFreeAward = () => {
 						const {
@@ -1654,7 +1654,7 @@
 					u = `${r.apiUrl}/api/v2/gold/paypal/initiate_premium_payment`,
 					p = Object(a.a)(u);
 				return Object(o.a)(Object(s.a)(r, [c.a]), {
-					method: n.nb.POST,
+					method: n.ob.POST,
 					endpoint: p,
 					data: l
 				}).then(i.a)
@@ -1671,7 +1671,7 @@
 					correlation_id: d
 				};
 				return Object(o.a)(Object(s.a)(t, [c.a]), {
-					method: n.nb.POST,
+					method: n.ob.POST,
 					endpoint: `${t.apiUrl}/api/v2/gold/paypal/create_coin_purchase_order`,
 					data: l
 				}).then(i.a)
@@ -1690,7 +1690,7 @@
 					thing_id: d
 				};
 				return Object(o.a)(Object(s.a)(t, [c.a]), {
-					method: n.nb.POST,
+					method: n.ob.POST,
 					endpoint: `${t.apiUrl}/api/v2/gold/paypal/create_award_purchase_order`,
 					data: u
 				}).then(i.a)
@@ -1711,7 +1711,7 @@
 					correlation_id: u
 				};
 				return Object(o.a)(Object(s.a)(t, [c.a]), {
-					method: n.nb.POST,
+					method: n.ob.POST,
 					endpoint: `${t.apiUrl}/api/v2/gold/paypal/execute_coin_order`,
 					data: p
 				}).then(i.a)
@@ -1740,7 +1740,7 @@
 					thing_id: f
 				};
 				return Object(o.a)(Object(s.a)(r, [c.a]), {
-					method: n.nb.POST,
+					method: n.ob.POST,
 					endpoint: `${r.apiUrl}/api/v2/gold/paypal/execute_coin_with_gild_order`,
 					data: y
 				}).then(i.a)
@@ -1763,7 +1763,7 @@
 					thing_id: p
 				};
 				return Object(o.a)(Object(s.a)(r, [c.a]), {
-					method: n.nb.POST,
+					method: n.ob.POST,
 					endpoint: `${r.apiUrl}/api/v2/gold/paypal/execute_award_purchase_order`,
 					data: m
 				}).then(i.a)
@@ -1896,4 +1896,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-CoinPurchaseDropdown.65caf67df9fa031383e7.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-CoinPurchaseDropdown.839f6bc2272dd22719b0.js.map

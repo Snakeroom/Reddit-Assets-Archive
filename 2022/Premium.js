@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Premium.b326eb53622939cb9d30.js
-// Retrieved at 9/26/2022, 1:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Premium.c8a3b82e736ac0bb59bb.js
+// Retrieved at 10/4/2022, 1:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Premium"], {
 		"./src/reddit/endpoints/gold/productCatalog/old.index.ts": function(e, r, t) {
@@ -7,7 +7,7 @@
 			t.d(r, "b", (function() {
 				return s
 			})), t.d(r, "a", (function() {
-				return i
+				return o
 			}));
 			t("./src/lib/constants/index.ts"), t("./src/lib/makeApiRequest/index.ts");
 			var n = t("./src/lib/makeGqlRequest/index.ts"),
@@ -17,7 +17,7 @@
 			const s = e => Object(n.a)(e, {
 					...d
 				}),
-				i = e => Object(n.a)(e, {
+				o = e => Object(n.a)(e, {
 					...a,
 					variables: {
 						input: {
@@ -47,8 +47,8 @@
 				a = t("./src/lib/makeApiRequest/index.ts"),
 				d = t("./src/lib/makeGqlRequest/index.ts"),
 				s = t("./src/lib/omitHeaders/index.ts"),
-				i = t("./src/redditGQL/operations/ChangeStripePaymentMethod.json"),
-				o = t("./src/reddit/constants/headers.ts"),
+				o = t("./src/redditGQL/operations/ChangeStripePaymentMethod.json"),
+				i = t("./src/reddit/constants/headers.ts"),
 				c = t("./src/reddit/helpers/addRedesignIdentifier/index.ts"),
 				u = t("./src/reddit/helpers/genericServerError/index.ts"),
 				l = t("./src/reddit/helpers/r2/normalizeR2APIErrors/index.ts");
@@ -67,7 +67,7 @@
 						coins: r,
 						context: t,
 						correlationId: d,
-						offerContext: i,
+						offerContext: o,
 						pennies: u,
 						rememberCard: l,
 						token: f,
@@ -76,7 +76,7 @@
 					const g = {
 							token: f ? f.id : void 0,
 							coins: r,
-							offer_context: i,
+							offer_context: o,
 							pennies: u,
 							remember_card: l,
 							card_id: m,
@@ -84,8 +84,8 @@
 						},
 						h = `${t.apiUrl}/api/v2/gold/stripe/buy_coins`,
 						b = Object(c.a)(h);
-					return Object(a.a)(Object(s.a)(t, [o.a]), {
-						method: n.nb.POST,
+					return Object(a.a)(Object(s.a)(t, [i.a]), {
+						method: n.ob.POST,
 						endpoint: b,
 						data: g
 					}).then(p)
@@ -94,7 +94,7 @@
 						coins: r,
 						context: t,
 						correlationId: d,
-						gildParams: i,
+						gildParams: o,
 						isOldReddit: u,
 						offerContext: l,
 						pennies: f,
@@ -107,7 +107,7 @@
 						gildType: P,
 						isAnonymous: y,
 						message: _
-					} = i, O = {
+					} = o, O = {
 						token: h ? h.id : void 0,
 						coins: r,
 						offer_context: l,
@@ -120,8 +120,8 @@
 						card_id: b,
 						correlation_id: d
 					}, v = `${t.apiUrl}/api/v2/gold/stripe/buy_coins_and_gild`, j = u ? v : Object(c.a)(v);
-					return Object(a.a)(Object(s.a)(t, [o.a]), {
-						method: n.nb.POST,
+					return Object(a.a)(Object(s.a)(t, [i.a]), {
+						method: n.ob.POST,
 						endpoint: j,
 						data: O
 					}).then(p)
@@ -130,7 +130,7 @@
 						context: r,
 						correlationId: t,
 						gildParams: d,
-						isOldReddit: i,
+						isOldReddit: o,
 						pennies: u,
 						rememberCard: l,
 						thingId: f,
@@ -151,9 +151,9 @@
 						remember_card: l,
 						card_id: g,
 						correlation_id: t
-					}, _ = `${r.apiUrl}/api/v2/gold/stripe/buy_award`, O = i ? _ : Object(c.a)(_);
-					return Object(a.a)(Object(s.a)(r, [o.a]), {
-						method: n.nb.POST,
+					}, _ = `${r.apiUrl}/api/v2/gold/stripe/buy_award`, O = o ? _ : Object(c.a)(_);
+					return Object(a.a)(Object(s.a)(r, [i.a]), {
+						method: n.ob.POST,
 						endpoint: O,
 						data: y
 					}).then(p)
@@ -162,17 +162,17 @@
 						context: r,
 						correlationId: t,
 						pennies: d,
-						token: i
+						token: o
 					} = e;
 					const u = {
-							token: i.id,
+							token: o.id,
 							pennies: d,
 							correlation_id: t
 						},
 						l = `${r.apiUrl}/api/v2/gold/stripe/buy_premium_subscription`,
 						f = Object(c.a)(l);
-					return Object(a.a)(Object(s.a)(r, [o.a]), {
-						method: n.nb.POST,
+					return Object(a.a)(Object(s.a)(r, [i.a]), {
+						method: n.ob.POST,
 						endpoint: f,
 						data: u
 					}).then(p)
@@ -182,7 +182,7 @@
 					} = window.location, t = `${r}/settings/premium`, n = new URLSearchParams({
 						[b]: "true"
 					}), a = await Object(d.a)(e, {
-						...i,
+						...o,
 						variables: {
 							successUrl: `${t}?${n}`,
 							cancelUrl: `${t}`
@@ -197,7 +197,7 @@
 			var n = t("./node_modules/fbt/lib/FbtPublic.js"),
 				a = t("./src/lib/constants/index.ts");
 			r.a = () => ({
-				type: a.K.SERVER_ERROR,
+				type: a.L.SERVER_ERROR,
 				fields: [{
 					field: "",
 					msg: n.fbt._("Something went wrong.", null, {
@@ -211,9 +211,9 @@
 			t.d(r, "q", (function() {
 				return s
 			})), t.d(r, "s", (function() {
-				return i
-			})), t.d(r, "r", (function() {
 				return o
+			})), t.d(r, "r", (function() {
+				return i
 			})), t.d(r, "u", (function() {
 				return c
 			})), t.d(r, "t", (function() {
@@ -268,8 +268,8 @@
 				}
 			});
 			const s = e => e.features.goldPurchase.purchaseModal.activePage,
-				i = e => e.features.goldPurchase.purchaseModal.gildThingId || void 0,
-				o = e => e.features.goldPurchase.purchaseModal.correlationId || void 0,
+				o = e => e.features.goldPurchase.purchaseModal.gildThingId || void 0,
+				i = e => e.features.goldPurchase.purchaseModal.correlationId || void 0,
 				c = e => e.features.goldPurchase.purchaseModal.showModal,
 				u = e => e.features.goldPurchase.purchaseModal.packageId,
 				l = e => e.features.goldPurchase.packageOfferModal.packageId,
@@ -308,4 +308,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Premium.b326eb53622939cb9d30.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Premium.c8a3b82e736ac0bb59bb.js.map

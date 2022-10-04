@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/RpanListingUnit.c834bc3e14d7c25375be.js
-// Retrieved at 10/3/2022, 2:20:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/RpanListingUnit.5373c7021670f1147b5e.js
+// Retrieved at 10/4/2022, 1:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["RpanListingUnit"], {
 		"./node_modules/lodash/_arrayEvery.js": function(e, t) {
@@ -52,16 +52,16 @@
 			const p = Object(o.a)(e => {
 				const t = Object(m.c)(e, {
 					experimentEligibilitySelector: m.a,
-					experimentName: u.Ce
+					experimentName: u.De
 				});
-				return Object(u.sg)(t) ? void 0 : t
+				return Object(u.tg)(t) ? void 0 : t
 			}, e => {
 				const t = Object(m.c)(e, {
 					experimentEligibilitySelector: m.a,
-					experimentName: u.De
+					experimentName: u.Ee
 				});
-				return Object(u.sg)(t) ? void 0 : t
-			}, (e, t) => e === u.Ee.Enabled && t === u.Ee.Enabled);
+				return Object(u.tg)(t) ? void 0 : t
+			}, (e, t) => e === u.Fe.Enabled && t === u.Fe.Enabled);
 			var h = s("./src/config.ts");
 			var b = s("./src/reddit/selectors/user.ts");
 			const E = e => {
@@ -129,7 +129,7 @@
 					...g,
 					...t
 				};
-				class A extends n.Component {
+				class L extends n.Component {
 					constructor(e) {
 						super(e), this.dashInstance = null, this.hlsInstance = null, this.isMonitoring = !1, this.playerInitTime = Date.now(), this.videoRef = Object(n.createRef)(), this.handleDashCreate = e => this.setDashInstance(e), this.handleDashDestroy = () => this.setDashInstance(null), this.handleHlsCreate = e => this.setHlsInstance(e), this.handleHlsDestroy = () => this.setHlsInstance(null), this.combinedVideoRefs = this.combineExternalVideoRef(e.videoRef)
 					}
@@ -206,10 +206,10 @@
 						}
 					}
 					async encryptViewerUserId() {
-						const e = this.props.redditUserId || A.ANONYMOUS_USER_ID,
+						const e = this.props.redditUserId || L.ANONYMOUS_USER_ID,
 							t = this.getOrCreateSalt(),
 							s = `${v()}${e}${t}`;
-						return (await O(s)).substr(0, A.VIEWER_USER_ID_LENGTH)
+						return (await O(s)).substr(0, L.VIEWER_USER_ID_LENGTH)
 					}
 					getDashInstanceData() {
 						const {
@@ -233,25 +233,25 @@
 							t = this.getVideoData(),
 							s = this.getThirdPartyLibData();
 						return {
-							debug: A.DEBUG,
-							disableCookies: A.DISABLE_COOKIES,
-							respectDoNotTrack: A.RESPECT_DO_NOT_TRACK,
+							debug: L.DEBUG,
+							disableCookies: L.DISABLE_COOKIES,
+							respectDoNotTrack: L.RESPECT_DO_NOT_TRACK,
 							...s,
 							data: {
-								env_key: A.ENV_KEY,
+								env_key: L.ENV_KEY,
 								experiment_name: this.experimentName,
 								player_init_time: this.playerInitTime,
-								player_name: A.PLAYER_NAME,
-								player_version: A.PLAYER_VERSION,
+								player_name: L.PLAYER_NAME,
+								player_version: L.PLAYER_VERSION,
 								...t,
 								viewer_user_id: e
 							}
 						}
 					}
 					getOrCreateSalt() {
-						const e = A.LOCAL_STORAGE_SALT_KEY;
+						const e = L.LOCAL_STORAGE_SALT_KEY;
 						let t = Object(a.a)(e);
-						return t || (t = E(A.SALT_LENGTH), Object(a.b)(e, t, A.SALT_TIME_TO_LIVE)), t
+						return t || (t = E(L.SALT_LENGTH), Object(a.b)(e, t, L.SALT_TIME_TO_LIVE)), t
 					}
 					getThirdPartyLibData() {
 						return {
@@ -267,17 +267,17 @@
 							muxVideoTitle: n
 						} = this.props;
 						return {
-							video_duration: s ? A.DURATION_LIVE : e,
+							video_duration: s ? L.DURATION_LIVE : e,
 							video_id: t,
-							video_stream_type: s ? A.STREAM_TYPE_LIVE : A.STREAM_TYPE_ON_DEMAND,
+							video_stream_type: s ? L.STREAM_TYPE_LIVE : L.STREAM_TYPE_ON_DEMAND,
 							video_title: n,
 							view_session_id: this.props.sessionId,
 							player_software_version: this.getDashInstanceData() ? h.a.dashVersion : this.getHlsInstanceData() ? h.a.hlsVersion : null
 						}
 					}
 				}
-				A.displayName = C(e), A.ANONYMOUS_USER_ID = s, A.DEBUG = d, A.DISABLE_COOKIES = u, A.DURATION_LIVE = 1 / 0, A.ENV_KEY = m, A.LOCAL_STORAGE_SALT_KEY = f, A.LOCAL_STORAGE_VIEWER_USER_ID_KEY = _, A.PLAYER_NAME = I, A.PLAYER_VERSION = N, A.RESPECT_DO_NOT_TRACK = x, A.SALT_LENGTH = y, A.SALT_TIME_TO_LIVE = D, A.STREAM_TYPE_LIVE = "live", A.STREAM_TYPE_ON_DEMAND = "on-demand", A.VIEWER_USER_ID_LENGTH = T;
-				const L = Object(n.forwardRef)((e, t) => r.a.createElement(A, S({}, e, {
+				L.displayName = C(e), L.ANONYMOUS_USER_ID = s, L.DEBUG = d, L.DISABLE_COOKIES = u, L.DURATION_LIVE = 1 / 0, L.ENV_KEY = m, L.LOCAL_STORAGE_SALT_KEY = f, L.LOCAL_STORAGE_VIEWER_USER_ID_KEY = _, L.PLAYER_NAME = I, L.PLAYER_VERSION = N, L.RESPECT_DO_NOT_TRACK = x, L.SALT_LENGTH = y, L.SALT_TIME_TO_LIVE = D, L.STREAM_TYPE_LIVE = "live", L.STREAM_TYPE_ON_DEMAND = "on-demand", L.VIEWER_USER_ID_LENGTH = T;
+				const A = Object(n.forwardRef)((e, t) => r.a.createElement(L, S({}, e, {
 						forwardedRef: t
 					}))),
 					R = Object(o.c)({
@@ -286,7 +286,7 @@
 					});
 				return Object(i.b)(R, null, null, {
 					forwardRef: !0
-				})(L)
+				})(A)
 			}
 		},
 		"./src/reddit/actions/eventPosts/constants.ts": function(e, t, s) {
@@ -694,31 +694,31 @@
 				y = s("./src/reddit/selectors/experiments/publicAccessNetwork.ts"),
 				D = s("./src/reddit/selectors/platform.ts"),
 				T = s("./src/reddit/selectors/PublicAccessNetwork/streams.ts"),
-				A = s("./src/reddit/selectors/user.ts"),
-				L = s("./src/reddit/components/ClassicPost/Placeholder.tsx"),
+				L = s("./src/reddit/selectors/user.ts"),
+				A = s("./src/reddit/components/ClassicPost/Placeholder.tsx"),
 				R = s("./src/reddit/components/Flatlist/index.tsx"),
 				j = s("./src/reddit/components/Flatlist/constants.ts"),
 				M = s("./src/reddit/components/Flatlist/ResponsiveRow.tsx"),
 				P = s("./src/reddit/components/HlsVideo/index.tsx"),
-				w = s("./src/reddit/components/OverflowMenu/index.tsx"),
-				U = s("./src/reddit/components/PostBackgroundWrapper/index.tsx"),
+				U = s("./src/reddit/components/OverflowMenu/index.tsx"),
+				w = s("./src/reddit/components/PostBackgroundWrapper/index.tsx"),
 				k = s("./src/reddit/components/PostLeftRail/index.tsx"),
 				V = s("./src/reddit/components/TrackingHelper/index.tsx"),
 				F = s("./src/reddit/controls/Dropdown/Row.tsx"),
 				H = s("./src/reddit/controls/InternalLink/index.tsx"),
 				Y = s("./src/reddit/controls/Score/index.tsx"),
 				B = s("./src/reddit/icons/fonts/index.tsx"),
-				K = s("./src/reddit/helpers/styles/mixins/index.m.less"),
-				W = s.n(K),
-				G = s("./src/reddit/components/PublicAccessNetwork/ListingUnit/index.m.less"),
-				q = s.n(G);
+				W = s("./src/reddit/helpers/styles/mixins/index.m.less"),
+				G = s.n(W),
+				K = s("./src/reddit/components/PublicAccessNetwork/ListingUnit/index.m.less"),
+				q = s.n(K);
 			const {
 				fbt: Z
-			} = s("./node_modules/fbt/lib/FbtPublic.js"), z = 20, J = l.wc, X = l.wc, $ = Object(c.a)(P.a, {
+			} = s("./node_modules/fbt/lib/FbtPublic.js"), z = 20, J = l.xc, X = l.xc, $ = Object(c.a)(P.a, {
 				playerName: "RPAN DU Video Player"
 			}), Q = Object(i.b)(() => Object(o.c)({
-				autoplay: A.b,
-				isLoggedIn: A.Q,
+				autoplay: L.b,
+				isLoggedIn: L.Q,
 				isOverlayOpen: D.i,
 				location: (e, t) => {
 					let {
@@ -776,7 +776,7 @@
 						if (e) {
 							if (Date.now() - e >= J) {
 								Object(S.bb)();
-								const e = 30 * l.D,
+								const e = 30 * l.E,
 									t = Date.now() - e + X;
 								this.props.onHideRpanUnit(t, {
 									showToast: !1
@@ -934,9 +934,9 @@
 					} = this.props, t = e === O.g.Classic ? this.renderClassicContent() : e === O.g.Compact ? this.renderCompactContent() : this.renderLargeContent();
 					return r.a.createElement("div", {
 						className: Object(d.a)(q.a.container, {
-							[W.a.largeAndMediumPostStyles]: e === O.g.Large || e === O.g.Medium,
-							[W.a.classicPostStyles]: e === O.g.Classic,
-							[W.a.compactPostStyles]: e === O.g.Compact,
+							[G.a.largeAndMediumPostStyles]: e === O.g.Large || e === O.g.Medium,
+							[G.a.classicPostStyles]: e === O.g.Classic,
+							[G.a.compactPostStyles]: e === O.g.Compact,
 							[q.a.large]: e === O.g.Large || e === O.g.Medium,
 							[q.a.classic]: e === O.g.Classic,
 							[q.a.compact]: e === O.g.Compact
@@ -948,7 +948,7 @@
 						isVertical: !0
 					}), e === O.g.Compact && r.a.createElement(ne, {
 						isVertical: !1
-					})), r.a.createElement(U.a, {
+					})), r.a.createElement(w.a, {
 						className: q.a.backgroundWrapper,
 						onClick: this.onHeaderClicked
 					}, t))
@@ -1163,7 +1163,7 @@
 					null === (e = this.videoSessionManager) || void 0 === e || e.destroy()
 				}
 			}
-			const ne = e => r.a.createElement(L.a, {
+			const ne = e => r.a.createElement(A.a, {
 					className: Object(d.a)({
 						[q.a.verticalVotes]: e.isVertical,
 						[q.a.horizontalVotes]: !e.isVertical
@@ -1208,7 +1208,7 @@
 					let {
 						onClick: t
 					} = e;
-					return r.a.createElement(w.b, {
+					return r.a.createElement(U.b, {
 						className: q.a.overflowMenu,
 						dropdownClassName: q.a.overflowDropdown,
 						dropdownId: "rpan-du-overflow"
@@ -1331,23 +1331,23 @@
 					for (const t of e) {
 						const e = t[0] || "";
 						switch (e) {
-							case n.K.NO_STRIPE_SUBSCRIPTION:
-							case n.K.USER_DOESNT_EXIST:
-							case n.K.USER_REQUIRED_ERROR:
-							case n.K.VALIDATION_ERROR:
+							case n.L.NO_STRIPE_SUBSCRIPTION:
+							case n.L.USER_DOESNT_EXIST:
+							case n.L.USER_REQUIRED_ERROR:
+							case n.L.VALIDATION_ERROR:
 								return e;
-							case n.K.NO_USER:
-							case n.K.NO_TEXT:
-							case n.K.NO_URL:
-								return n.K.VALIDATION_ERROR;
-							case n.K.CREDIT_CARD_FAILURE:
-							case n.K.CREDIT_CARD_FAILURE_GENERIC:
-								return n.K.CREDIT_CARD_FAILURE;
+							case n.L.NO_USER:
+							case n.L.NO_TEXT:
+							case n.L.NO_URL:
+								return n.L.VALIDATION_ERROR;
+							case n.L.CREDIT_CARD_FAILURE:
+							case n.L.CREDIT_CARD_FAILURE_GENERIC:
+								return n.L.CREDIT_CARD_FAILURE;
 							default:
-								if (e.startsWith("SUBMIT_VALIDATION")) return n.K.SUBMIT_VALIDATION_ERROR
+								if (e.startsWith("SUBMIT_VALIDATION")) return n.L.SUBMIT_VALIDATION_ERROR
 						}
 					}
-					return n.K.VALIDATION_ERROR
+					return n.L.VALIDATION_ERROR
 				},
 				i = e => {
 					const t = e.body;
@@ -1474,9 +1474,9 @@
 			})), s.d(t, "a", (function() {
 				return T
 			})), s.d(t, "s", (function() {
-				return A
-			})), s.d(t, "v", (function() {
 				return L
+			})), s.d(t, "v", (function() {
+				return A
 			})), s.d(t, "w", (function() {
 				return R
 			}));
@@ -1643,14 +1643,14 @@
 					noun: "cancel",
 					...i(e)
 				}),
-				A = () => (e, t) => ({
+				L = () => (e, t) => ({
 					source: "recurring_post_composer",
 					action: "click",
 					noun: "delete",
 					...i(e),
 					scheduledPost: o(t)
 				}),
-				L = () => e => ({
+				A = () => e => ({
 					source: "scheduled_post_composer",
 					action: "view",
 					noun: "custom_schedule_post_composer",
@@ -1992,4 +1992,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RpanListingUnit.c834bc3e14d7c25375be.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RpanListingUnit.5373c7021670f1147b5e.js.map

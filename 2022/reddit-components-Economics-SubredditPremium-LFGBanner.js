@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Economics-SubredditPremium-LFGBanner.06fd1f2ca9296d7d93a8.js
-// Retrieved at 9/29/2022, 4:30:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Economics-SubredditPremium-LFGBanner.8aba62f25d1a7a23c05e.js
+// Retrieved at 10/4/2022, 1:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Economics-SubredditPremium-LFGBanner"], {
 		"./node_modules/lodash/_arraySample.js": function(e, t, n) {
@@ -166,7 +166,7 @@
 						const t = `https://${o.pointsDocsBaseUrl}v1.json?web`,
 							n = await Object(r.b)({
 								endpoint: t,
-								method: s.nb.GET
+								method: s.ob.GET
 							});
 						n.ok && n.body && e(l(n.body))
 					}
@@ -1571,7 +1571,7 @@
 			function i(e, t) {
 				return Object(o.a)(e, {
 					endpoint: `${s.a.metaUrl}/communities/${t.subredditId}/me`,
-					method: r.nb.GET
+					method: r.ob.GET
 				})
 			}
 		},
@@ -2329,7 +2329,7 @@
 					return !(!s || !Object(o.a)(s))
 				},
 				H = (e, t, n) => {
-					if (Object(b.a)(e)) return !(!t || !Object(m.B)(e, {
+					if (Object(b.a)(e)) return !(!t || !Object(m.C)(e, {
 						subredditId: t
 					})) || (!!W(e, t) || !(!s.d.spGiphy(e) || !q(e, n)));
 					if (!Object(h.b)(e, {
@@ -2396,4 +2396,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Economics-SubredditPremium-LFGBanner.06fd1f2ca9296d7d93a8.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Economics-SubredditPremium-LFGBanner.8aba62f25d1a7a23c05e.js.map

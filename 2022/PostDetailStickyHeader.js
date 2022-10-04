@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostDetailStickyHeader.9180fa451d1bb0dfbb64.js
-// Retrieved at 10/3/2022, 2:20:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostDetailStickyHeader.f40983b8fc8b3772849e.js
+// Retrieved at 10/4/2022, 1:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostDetailStickyHeader"], {
 		"./src/reddit/actions/shortcuts/close.ts": function(t, e, s) {
@@ -295,7 +295,7 @@
 						post: l,
 						useAdaptiveStyles: u,
 						isVoteCountAnimation: b
-					} = this.props, h = H(l), _ = !l && (null === (t = null == a ? void 0 : a.meta) || void 0 === t ? void 0 : t.name) === d.Rb.META_MEMBERSHIP_PAYWALL_PAGE, E = l ? M.a : function(t) {
+					} = this.props, h = H(l), _ = !l && (null === (t = null == a ? void 0 : a.meta) || void 0 === t ? void 0 : t.name) === d.Sb.META_MEMBERSHIP_PAYWALL_PAGE, E = l ? M.a : function(t) {
 						let {
 							children: e,
 							postId: s
@@ -538,4 +538,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostDetailStickyHeader.9180fa451d1bb0dfbb64.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostDetailStickyHeader.f40983b8fc8b3772849e.js.map

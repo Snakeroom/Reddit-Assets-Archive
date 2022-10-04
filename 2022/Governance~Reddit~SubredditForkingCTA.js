@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~Reddit~SubredditForkingCTA.42f1ff489ca4759fadc1.js
-// Retrieved at 10/3/2022, 2:20:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~Reddit~SubredditForkingCTA.ff8998bdae20dd2ba708.js
+// Retrieved at 10/4/2022, 1:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~Reddit~SubredditForkingCTA"], {
 		"./src/lib/bigNumberUtils/percent.ts": function(t, e, r) {
@@ -26,7 +26,7 @@
 			})), r.d(e, "c", (function() {
 				return g
 			})), r.d(e, "g", (function() {
-				return E
+				return S
 			})), r.d(e, "d", (function() {
 				return I
 			})), r.d(e, "e", (function() {
@@ -59,8 +59,8 @@
 				y = "SUBREDDIT_COUNTRY_SITE__CHANGED",
 				g = "SUBREDDIT_COUNTRY_SITE__UPDATE_SUCCESS",
 				j = Object(s.a)(_),
-				S = Object(s.a)(g),
-				E = Object(s.a)(y),
+				E = Object(s.a)(g),
+				S = Object(s.a)(y),
 				I = t => async (e, r, n) => {
 					let {
 						gqlContext: s
@@ -96,7 +96,7 @@
 						duration: 5e3
 					}));
 					const o = d.body;
-					r(S({
+					r(E({
 						subredditId: t,
 						subredditCountrySite: o.data.updateSubredditCountrySiteSettings.subreddit.countrySiteSettings
 					}))
@@ -113,7 +113,7 @@
 						a = await c(d(), o);
 					if (a.ok) {
 						const e = a.body;
-						r(S({
+						r(E({
 							subredditId: t,
 							subredditCountrySite: e.data.updateSubredditCountrySiteSettings.subreddit.countrySiteSettings
 						}))
@@ -186,9 +186,9 @@
 			})), r.d(e, "s", (function() {
 				return j
 			})), r.d(e, "t", (function() {
-				return S
-			})), r.d(e, "u", (function() {
 				return E
+			})), r.d(e, "u", (function() {
+				return S
 			})), r.d(e, "v", (function() {
 				return I
 			})), r.d(e, "w", (function() {
@@ -215,8 +215,8 @@
 				y = "GOVERNANCE__TRANSFER_FAILURE",
 				g = "GOVERNANCE__TRANSFER_MODAL_OPENED",
 				j = "GOVERNANCE__TRANSFER_PENDING",
-				S = "GOVERNANCE__TRANSFER_SUCCESS",
-				E = "GOVERNANCE__WALLETS_FETCH_FAILURE",
+				E = "GOVERNANCE__TRANSFER_SUCCESS",
+				S = "GOVERNANCE__WALLETS_FETCH_FAILURE",
 				I = "GOVERNANCE__WALLETS_FETCH_PENDING",
 				P = "GOVERNANCE__WALLETS_FETCH_SUCCESS",
 				v = "GOVERNANCE__WALLET_REGISTRATION_MODAL_OPENED"
@@ -245,7 +245,7 @@
 			})), r.d(e, "b", (function() {
 				return j
 			})), r.d(e, "c", (function() {
-				return E
+				return S
 			})), r.d(e, "f", (function() {
 				return k
 			})), r.d(e, "g", (function() {
@@ -276,8 +276,8 @@
 				y = r("./src/reddit/actions/governance/errorToast.ts");
 			const g = Object(s.a)(_.b),
 				j = Object(s.a)(_.c),
-				S = Object(s.a)(_.e),
-				E = (Object(s.a)(_.f), Object(s.a)(_.g), Object(s.a)(_.h)),
+				E = Object(s.a)(_.e),
+				S = (Object(s.a)(_.f), Object(s.a)(_.g), Object(s.a)(_.h)),
 				I = Object(s.a)(_.i),
 				P = Object(s.a)(_.j),
 				v = Object(s.a)(_.k),
@@ -316,7 +316,7 @@
 							const {
 								options: t
 							} = i.body.data.updatePostPollVoteState.poll;
-							r(S({
+							r(E({
 								pollId: p.id,
 								optionId: e,
 								options: t
@@ -413,13 +413,13 @@
 				y = r("./src/reddit/models/Upload/index.ts"),
 				g = r("./src/reddit/selectors/telemetry.ts"),
 				j = r("./src/telemetry/index.ts");
-			const S = t => ({
+			const E = t => ({
 				...g.o(t),
 				screen: g.bb(t),
 				profile: g.T(t),
 				subreddit: g.jb(t)
 			});
-			var E = r("./src/reddit/helpers/trackers/postComposer.ts"),
+			var S = r("./src/reddit/helpers/trackers/postComposer.ts"),
 				I = r("./src/reddit/models/PostCreationForm/index.ts"),
 				P = r("./src/reddit/models/Toast/index.ts"),
 				v = r("./src/reddit/selectors/postCreations.ts"),
@@ -511,7 +511,7 @@
 									action: "upload",
 									correlationId: o,
 									noun: m ? "video" : "image",
-									...S(e),
+									...E(e),
 									actionInfo: {
 										...g.d(e),
 										success: h,
@@ -543,16 +543,16 @@
 								fileSource: r,
 								uploadDuration: s,
 								correlationId: i
-							}) : E.D(n, e)
+							}) : S.D(n, e)
 						}
 					};
 					return await u(Object(c.l)(t, e, async h => {
-						var y, g, j, S;
+						var y, g, j, E;
 						R = !0, Object(c.k)(h.id, () => {
 							M(!0)
 						});
 						const {
-							error: E,
+							error: S,
 							metadata: I
 						} = await async function(t, e, r) {
 							const s = e && e.allowedPostTypes,
@@ -566,7 +566,7 @@
 							};
 							if (!o || !Object(_.k)(o)) return {
 								error: {
-									type: i.X
+									type: i.Y
 								}
 							};
 							if (o.startsWith("image/")) {
@@ -574,74 +574,74 @@
 									const t = n.fbt._("Images are not allowed in r/{subredditName}", [n.fbt._param("subredditName", d)], {
 										hk: "3C2E7Q"
 									});
-									return w(i.X, t)
+									return w(i.Y, t)
 								}
 								if ("image/gif" === o) {
-									if (t.size > i.db) return w(i.N)
-								} else if (t.size > i.fb) return w(i.V);
+									if (t.size > i.eb) return w(i.O)
+								} else if (t.size > i.gb) return w(i.W);
 								const e = await Object(O.a)(a);
 								if (r && (e.width < r || e.height < r)) {
 									const t = n.fbt._("Image must be {min_image_width}x{min_image_height} pixels or larger.", [n.fbt._param("min_image_width", r.toString()), n.fbt._param("min_image_height", r.toString())], {
 										hk: "2WFKgs"
 									});
-									return w(i.U, t)
+									return w(i.V, t)
 								}
 								c.width = e.width, c.height = e.height
 							} else if (o.startsWith("video/")) {
-								if (t.size > i.jb) return w(i.uc);
+								if (t.size > i.kb) return w(i.vc);
 								let e;
 								try {
 									e = await Object(_.j)(a, !0)
 								} catch (u) {
-									return w(i.X)
+									return w(i.Y)
 								}
 								if (s) {
 									const {
 										videos: t,
 										images: r
 									} = s;
-									if (r && !t && e.duration > i.kb) {
+									if (r && !t && e.duration > i.lb) {
 										const t = n.fbt._("Sorry, r/{subredditName} doesn't allow videos. Please upload a video less than 60 seconds to convert to animated GIF.", [n.fbt._param("subredditName", d)], {
 											hk: "46ULiz"
 										});
-										return w(i.X, t)
+										return w(i.Y, t)
 									}
 									if (!r && !t) {
 										const t = n.fbt._("Videos are not allowed in r/{subredditName}", [n.fbt._param("subredditName", d)], {
 											hk: "4uTUZb"
 										});
-										return w(i.X, t)
+										return w(i.Y, t)
 									}
 								}
-								if (e.duration > i.ib) {
-									const t = n.fbt._("Video is too long. Maximum video length is {duration} minutes.", [n.fbt._param("duration", (i.ib / 60).toString())], {
+								if (e.duration > i.jb) {
+									const t = n.fbt._("Video is too long. Maximum video length is {duration} minutes.", [n.fbt._param("duration", (i.jb / 60).toString())], {
 										hk: "20nB6Q"
 									});
-									return w(i.X, t)
+									return w(i.Y, t)
 								}
-								if (e.duration < i.qb) {
-									const t = n.fbt._("Video is too short. Minimum video length is {duration} seconds.", [n.fbt._param("duration", i.qb.toString())], {
+								if (e.duration < i.rb) {
+									const t = n.fbt._("Video is too short. Minimum video length is {duration} seconds.", [n.fbt._param("duration", i.rb.toString())], {
 										hk: "49PSW8"
 									});
-									return w(i.X, t)
+									return w(i.Y, t)
 								}
 								if (0 === e.height || 0 === e.width) {
 									const t = n.fbt._("Your browser does not support the video codec used for this video. Please try using a different video codec.", null, {
 										hk: "1AC0mg"
 									});
-									return w(i.X, t)
+									return w(i.Y, t)
 								}
-								if (e.height < i.rb || e.width < i.sb) {
-									const t = n.fbt._("Videos must be {min_video_width}x{min_video_height} pixels or larger.", [n.fbt._param("min_video_width", i.sb.toString()), n.fbt._param("min_video_height", i.rb.toString())], {
+								if (e.height < i.sb || e.width < i.tb) {
+									const t = n.fbt._("Videos must be {min_video_width}x{min_video_height} pixels or larger.", [n.fbt._param("min_video_width", i.tb.toString()), n.fbt._param("min_video_height", i.sb.toString())], {
 										hk: "2HSUGl"
 									});
-									return w(i.X, t)
+									return w(i.Y, t)
 								}
-								if (t.size / e.duration < i.pb) {
-									const t = n.fbt._("Videos must have a bitrate of {min_bitrate}KB/s or larger.", [n.fbt._param("min_bitrate", (i.pb / i.Y).toString())], {
+								if (t.size / e.duration < i.qb) {
+									const t = n.fbt._("Videos must have a bitrate of {min_bitrate}KB/s or larger.", [n.fbt._param("min_bitrate", (i.qb / i.Z).toString())], {
 										hk: "1ehgDE"
 									});
-									return w(i.X, t)
+									return w(i.Y, t)
 								}
 								c.height = e.height, c.width = e.width, c.videoDuration = e.duration, c.videoFirstFrameUrl = e.firstFrame.dataUrl
 							}
@@ -649,8 +649,8 @@
 								metadata: c
 							}
 						}(t, N, o);
-						if (E || !I) return {
-							error: E
+						if (S || !I) return {
+							error: S
 						};
 						if (u(Object(c.m)({
 								key: e,
@@ -660,7 +660,7 @@
 								}
 							})), L = !0, s && s(), d) {
 							const t = I.mimetype,
-								e = t && i.S[t];
+								e = t && i.T[t];
 							if (t && e) {
 								const t = await (async (t, e) => {
 									return await Object(b.a)(t, {
@@ -683,7 +683,7 @@
 										uploadLease: n
 									}
 								} {
-									const e = null === (S = t.body.data.createMediaUploadLease) || void 0 === S ? void 0 : S.errors;
+									const e = null === (E = t.body.data.createMediaUploadLease) || void 0 === E ? void 0 : E.errors;
 									let r = null;
 									return e && (r = {
 										fields: [{
@@ -709,7 +709,7 @@
 						const v = t.name,
 							k = await (async (t, e, r) => Object(l.a)(Object(f.a)(t, [p.a]), {
 								endpoint: `${t.apiUrl}/api/media/asset.json`,
-								method: i.nb.POST,
+								method: i.ob.POST,
 								data: {
 									filepath: e,
 									mimetype: r
@@ -816,7 +816,7 @@
 			})), r.d(e, "a", (function() {
 				return K
 			})), r.d(e, "b", (function() {
-				return X
+				return J
 			}));
 			var n = r("./src/lib/constants/index.ts"),
 				s = r("./src/lib/makeActionCreator/index.ts"),
@@ -837,8 +837,8 @@
 				y = r("./src/reddit/featureFlags/index.ts"),
 				g = r("./src/reddit/helpers/graphql/normalizeSubredditScheduledPostsFromGql/index.ts"),
 				j = r("./src/reddit/helpers/scheduledPosts/index.ts"),
-				S = r("./src/reddit/helpers/trackers/postComposer.ts"),
-				E = r("./src/reddit/helpers/trackers/scheduledPosts.ts"),
+				E = r("./src/reddit/helpers/trackers/postComposer.ts"),
+				S = r("./src/reddit/helpers/trackers/scheduledPosts.ts"),
 				I = r("./src/reddit/models/Poll/index.ts"),
 				P = r("./src/reddit/models/PostCreationForm/index.ts"),
 				v = r("./src/reddit/models/User/index.ts"),
@@ -863,7 +863,7 @@
 				$ = t => `/r/${t}/about/${D.s}`,
 				z = (t, e) => {
 					const r = t || {
-							duration: n.D,
+							duration: n.E,
 							options: []
 						},
 						{
@@ -887,8 +887,8 @@
 						r = Object(k.W)(t),
 						s = Object(k.a)(t),
 						i = Object(k.gb)(t);
-					if (s === n.ac.POST) return b.a.getPendingThumbnailUploads(i, e);
-					if (s === n.ac.MEDIA && r && r.items.length) {
+					if (s === n.bc.POST) return b.a.getPendingThumbnailUploads(i, e);
+					if (s === n.bc.MEDIA && r && r.items.length) {
 						const {
 							video: t
 						} = r.items[0];
@@ -910,9 +910,9 @@
 					const l = Object(k.a)(o),
 						b = y.d.rteVideoPoster(o),
 						f = H(o),
-						p = l === n.ac.MEDIA;
-					f && (b || p) && (await r(L.f(f)), H(s())) || (t === P.r.Draft ? await r(Object(c.r)(e.draftId)) : t === P.r.ScheduledPost && Object(T.r)(o) ? await r(Q(e)) : t === P.r.ScheduledPost ? await r(J(e)) : await r(X(e)))
-				}, Q = t => async (e, r, n) => {
+						p = l === n.bc.MEDIA;
+					f && (b || p) && (await r(L.f(f)), H(s())) || (t === P.r.Draft ? await r(Object(c.r)(e.draftId)) : t === P.r.ScheduledPost && Object(T.r)(o) ? await r(Y(e)) : t === P.r.ScheduledPost ? await r(Q(e)) : await r(J(e)))
+				}, Y = t => async (e, r, n) => {
 					let {
 						gqlContext: s
 					} = n;
@@ -927,7 +927,7 @@
 							subredditId: f,
 							scheduledPostId: b
 						});
-					if (p && Object(i.a)(Object(E.r)(p)(d)), e(U(a)), t.postFieldValidationPending && (await t.postFieldValidationPending, Object(k.x)(r()))) return;
+					if (p && Object(i.a)(Object(S.r)(p)(d)), e(U(a)), t.postFieldValidationPending && (await t.postFieldValidationPending, Object(k.x)(r()))) return;
 					const {
 						isPoll: m,
 						polls: h
@@ -939,13 +939,13 @@
 							subredditId: c.id,
 							scheduledPostId: b
 						})
-					}, S = await Object(_.a)(s(), g);
-					if (S.ok) return e(Object(u.e)({
+					}, E = await Object(_.a)(s(), g);
+					if (E.ok) return e(Object(u.e)({
 						subredditId: c.id
 					})), void e(Object(l.a)($(c.name), !1));
-					const I = S.error;
+					const I = E.error;
 					e(G(I))
-				}, J = t => async (e, r, n) => {
+				}, Q = t => async (e, r, n) => {
 					let {
 						gqlContext: s
 					} = n;
@@ -976,11 +976,11 @@
 							subredditId: c.id
 						}));
 						const t = y.body.data.createScheduledPost.scheduledPost;
-						return t && Object(i.a)(Object(E.o)(Object(g.d)(t))(d)), void e(Object(l.a)($(c.name), !1))
+						return t && Object(i.a)(Object(S.o)(Object(g.d)(t))(d)), void e(Object(l.a)($(c.name), !1))
 					}
 					const j = y.error;
 					e(G(j))
-				}, X = t => async (e, r, s) => {
+				}, J = t => async (e, r, s) => {
 					let {
 						apiContext: i
 					} = s;
@@ -999,7 +999,7 @@
 							function(t, e, r) {
 								const s = e.destSubreddit.id;
 								return Object(m.a)(t, {
-									method: n.nb.POST,
+									method: n.ob.POST,
 									endpoint: `${f.a.metaUrl}/polls/${s}`,
 									type: "json",
 									data: {
@@ -1056,12 +1056,12 @@
 							e(q(t))
 						}
 						const t = g.error;
-						t.type === n.K.BAD_CAPTCHA_ERROR ? e(B()) : t.type === n.K.VALIDATION_ERROR ? e(F(t)) : t.type === n.K.SUBMIT_VALIDATION_ERROR ? e(V(t)) : e(G(t))
+						t.type === n.L.BAD_CAPTCHA_ERROR ? e(B()) : t.type === n.L.VALIDATION_ERROR ? e(F(t)) : t.type === n.L.SUBMIT_VALIDATION_ERROR ? e(V(t)) : e(G(t))
 					}
-					const E = Object(R.o)(u.kind),
+					const S = Object(R.o)(u.kind),
 						I = g.ok && g.body && g.body.id && Object(A.x)(g.body.id),
 						x = r();
-					S.B(x, E, I, t.correlationId)
+					E.B(x, S, I, t.correlationId)
 				}
 		},
 		"./src/reddit/actions/scheduledPosts/constants.ts": function(t, e, r) {
@@ -1103,9 +1103,9 @@
 			})), r.d(e, "p", (function() {
 				return j
 			})), r.d(e, "q", (function() {
-				return S
-			})), r.d(e, "v", (function() {
 				return E
+			})), r.d(e, "v", (function() {
+				return S
 			})), r.d(e, "s", (function() {
 				return I
 			})), r.d(e, "x", (function() {
@@ -1140,10 +1140,10 @@
 				j = () => n.fbt._("Unable to delete scheduled post", null, {
 					hk: "23nWms"
 				}),
-				S = () => n.fbt._("Successfully deleted scheduled post", null, {
+				E = () => n.fbt._("Successfully deleted scheduled post", null, {
 					hk: "1Lk7r2"
 				}),
-				E = () => n.fbt._("Unable to submit scheduled post", null, {
+				S = () => n.fbt._("Unable to submit scheduled post", null, {
 					hk: "vCW43"
 				}),
 				I = () => n.fbt._("Retry", null, {
@@ -1214,13 +1214,13 @@
 							...r,
 							id: e
 						}),
-						S = y.body;
-					if (!(y.ok && S && S.data && S.data.updateScheduledPost && S.data.updateScheduledPost.ok && S.data.updateScheduledPost.scheduledPost)) return s(Object(o.f)({
+						E = y.body;
+					if (!(y.ok && E && E.data && E.data.updateScheduledPost && E.data.updateScheduledPost.ok && E.data.updateScheduledPost.scheduledPost)) return s(Object(o.f)({
 						message: y.error && y.error.fields && y.error.fields.length && y.error.fields[0].msg || n.fbt._("Unknown error", null, {
 							hk: "fXs5s"
 						})
 					})), void s(Object(c.f)(Object(c.e)(a.t(), p.b.Error, a.s(), j(t, e, r))));
-					s(Object(c.f)(Object(c.e)(a.w(), p.b.SuccessCommunity))), g(s, Object(l.d)(S.data.updateScheduledPost.scheduledPost))
+					s(Object(c.f)(Object(c.e)(a.w(), p.b.SuccessCommunity))), g(s, Object(l.d)(E.data.updateScheduledPost.scheduledPost))
 				}
 		},
 		"./src/reddit/actions/scheduledPosts/index.ts": function(t, e, r) {
@@ -1263,8 +1263,8 @@
 				y = Object(s.a)(i.j),
 				g = Object(s.a)(i.o),
 				j = Object(s.a)(i.d),
-				S = Object(s.a)(i.f),
-				E = Object(s.a)(i.m),
+				E = Object(s.a)(i.f),
+				S = Object(s.a)(i.m),
 				I = Object(s.a)(i.a),
 				P = Object(s.a)(i.c),
 				v = Object(s.a)(i.e),
@@ -1331,7 +1331,7 @@
 						u = await Object(a.b)(s(), o);
 					u.ok ? N(e, Object(c.e)(u.body.data), o) : e(v())
 				}, N = (t, e, r) => {
-					Object(c.b)(e) ? t(S(e)) : Object(c.a)(e) ? t(I(e)) : Object(c.c)(e) ? t(E(e)) : k(t, r)
+					Object(c.b)(e) ? t(E(e)) : Object(c.a)(e) ? t(I(e)) : Object(c.c)(e) ? t(S(e)) : k(t, r)
 				}, A = (t, e) => async (r, s, i) => {
 					const o = {},
 						a = s();
@@ -1404,8 +1404,8 @@
 			var y = r("./src/lib/makeGqlRequest/index.ts"),
 				g = r("./src/redditGQL/operations/ValidateCreateSubreddit.json");
 			var j = r("./src/reddit/helpers/correlationIdTracker.ts"),
-				S = r("./src/reddit/helpers/trackers/subredditCreation.ts"),
-				E = r("./src/reddit/selectors/experiments/newCommunityProgressV3.ts"),
+				E = r("./src/reddit/helpers/trackers/subredditCreation.ts"),
+				S = r("./src/reddit/selectors/experiments/newCommunityProgressV3.ts"),
 				I = r("./src/reddit/selectors/meta.ts"),
 				P = r("./src/reddit/selectors/posts.ts"),
 				v = r("./src/reddit/selectors/subreddit.ts"),
@@ -1439,22 +1439,22 @@
 					}));
 					const w = await ((t, e) => Object(p.a)(Object(m.a)(t, [h.a]), {
 						endpoint: Object(O.a)(`${t.apiUrl}/api/v1/subreddit/create_subreddit`),
-						method: s.nb.POST,
+						method: s.ob.POST,
 						data: _(e)
 					}))(y(), t);
 					if (w.ok) {
 						const r = w.body,
 							i = r.fullname;
-						Object(k.a)(Object(S.d)(A, t, i)(T)), e(L({
+						Object(k.a)(Object(E.d)(A, t, i)(T)), e(L({
 							subredditName: N
 						}));
-						const p = await Object(E.b)(T);
+						const p = await Object(S.b)(T);
 						if (D) {
 							const t = Object(P.G)(T, {
 								postId: D
 							});
 							e(Object(d.h)(t.title)), e(Object(d.g)({
-								submissionType: s.ac.CROSSPOST
+								submissionType: s.bc.CROSSPOST
 							})), await e(Object(a.b)({
 								destSubreddit: {
 									...r,
@@ -1464,10 +1464,10 @@
 								postFieldValidationPending: Promise.resolve()
 							})), Object(l.b)(D)
 						}
-						await e(Object(n.b)(`${r.path}`)), p ? p === b.Qe.NewModule && e(Object(c.h)({
+						await e(Object(n.b)(`${r.path}`)), p ? p === b.Re.NewModule && e(Object(c.h)({
 							tooltipId: u.MOD_WELCOME_TOOLTIP_ID
-						})) : (e(Object(o.h)(f.a.POST_FLOW_UPSELL_MODAL_ID)), Object(k.a)(Object(S.g)()(T))), Object(j.b)(j.a.SubredditCreation), e(Object(x.f)(i, null !== (g = Object(C.bb)(T)) && void 0 !== g ? g : Object(I.j)(T)))
-					} else w.error && Object(k.a)(Object(S.h)(w.error.type, N)(T)), e(U({
+						})) : (e(Object(o.h)(f.a.POST_FLOW_UPSELL_MODAL_ID)), Object(k.a)(Object(E.g)()(T))), Object(j.b)(j.a.SubredditCreation), e(Object(x.f)(i, null !== (g = Object(C.bb)(T)) && void 0 !== g ? g : Object(I.j)(T)))
+					} else w.error && Object(k.a)(Object(E.h)(w.error.type, N)(T)), e(U({
 						subredditName: N,
 						error: w.error
 					}))
@@ -1500,7 +1500,7 @@
 						e(U({
 							subredditName: t,
 							error: r
-						})), r && Object(k.a)(Object(S.h)(r.type, t)(i))
+						})), r && Object(k.a)(Object(E.h)(r.type, t)(i))
 					} else await e(M())
 				}
 		},
@@ -1553,8 +1553,8 @@
 				y = Object(d.a)(l),
 				g = Object(d.a)(b),
 				j = Object(d.a)(f),
-				S = Object(d.a)(p),
-				E = Object(d.a)(m),
+				E = Object(d.a)(p),
+				S = Object(d.a)(m),
 				I = Object(d.a)(h),
 				P = new Map,
 				v = (t, e) => {
@@ -1588,7 +1588,7 @@
 							error: h
 						} = await r(c().uploads[b]);
 						if (p()) return;
-						if (h || !m) return void d(S({
+						if (h || !m) return void d(E({
 							key: b,
 							error: h
 						}));
@@ -1598,7 +1598,7 @@
 						}), d(_({
 							key: b
 						}));
-						const E = await Object(o.a)(t, m, t => (y = t, n && t.on("progress", t => {
+						const S = await Object(o.a)(t, m, t => (y = t, n && t.on("progress", t => {
 							if (!p() && "upload" === t.direction) {
 								const e = {
 									percent: t.percent,
@@ -1612,14 +1612,14 @@
 							}
 						}), t));
 						if (y = null, !p())
-							if (E.ok) {
-								const t = decodeURIComponent(E.body.PostResponse.Location);
+							if (S.ok) {
+								const t = decodeURIComponent(S.body.PostResponse.Location);
 								d(j({
 									key: b,
 									url: t
 								}))
 							} else {
-								const t = s()(E, "body.Error.Message.0"),
+								const t = s()(S, "body.Error.Message.0"),
 									e = {
 										type: "ERROR",
 										...t ? {
@@ -1629,7 +1629,7 @@
 											}]
 										} : {}
 									};
-								d(S({
+								d(E({
 									key: b,
 									error: e
 								}))
@@ -1642,7 +1642,7 @@
 						const s = n().uploads[t];
 						s && (C(s.id, e), r(e ? I({
 							key: t
-						}) : E({
+						}) : S({
 							key: t
 						})))
 					}
@@ -1827,7 +1827,7 @@
 			function d(t, e) {
 				return Object(i.a)(t, {
 					endpoint: `${n.a.metaUrl}/wallets/${e.subredditId}/me`,
-					method: s.nb.GET
+					method: s.ob.GET
 				}).then(t => {
 					if (t.ok) {
 						const r = t.body,
@@ -1849,7 +1849,7 @@
 						"X-HTTP-Method-Override": "GET"
 					},
 					endpoint: `${n.a.metaUrl}/wallets/${e.subredditId}`,
-					method: s.nb.POST,
+					method: s.ob.POST,
 					data: e.userIds
 				}).then(t => t.ok ? {
 					...t,
@@ -1868,9 +1868,9 @@
 			})), r.d(e, "e", (function() {
 				return j
 			})), r.d(e, "b", (function() {
-				return S
-			})), r.d(e, "a", (function() {
 				return E
+			})), r.d(e, "a", (function() {
+				return S
 			}));
 			var n = r("./node_modules/node-libs-browser/node_modules/url/url.js"),
 				s = r("./src/lib/constants/index.ts"),
@@ -1999,7 +1999,7 @@
 				g = t => {
 					const e = /comments\/(\w+)\/.*$/.exec(t),
 						r = e && e[1];
-					return r ? `${s.Mb.Post}_${r}` : ""
+					return r ? `${s.Nb.Post}_${r}` : ""
 				},
 				j = async (t, e) => {
 					if (!t.ok) return Object(l.b)(t);
@@ -2032,14 +2032,14 @@
 							draftsCount: o
 						}
 					}
-				}, S = (t, e) => Object(i.a)(Object(d.a)(t, [o.a]), {
+				}, E = (t, e) => Object(i.a)(Object(d.a)(t, [o.a]), {
 					endpoint: Object(m.a)(Object(a.a)(`${t.apiUrl}/api/submit_poll_post.json?resubmit=true`)),
-					method: s.nb.POST,
+					method: s.ob.POST,
 					data: y(e),
 					type: "json"
-				}).then(t => j(t, e)), E = (t, e) => Object(i.a)(Object(d.a)(t, [o.a]), {
+				}).then(t => j(t, e)), S = (t, e) => Object(i.a)(Object(d.a)(t, [o.a]), {
 					endpoint: Object(m.a)(Object(a.a)(`${t.apiUrl}/api/submit_gallery_post.json?resubmit=true`)),
-					method: s.nb.POST,
+					method: s.ob.POST,
 					data: {
 						...y(e),
 						items: e.galleryItems.map(t => ({
@@ -2052,7 +2052,7 @@
 				}).then(t => j(t, e));
 			e.c = (t, e) => Object(i.a)(Object(d.a)(t, [o.a]), {
 				endpoint: Object(m.a)(Object(a.a)(`${t.apiUrl}/api/submit?resubmit=true`)),
-				method: s.nb.POST,
+				method: s.ob.POST,
 				data: y(e)
 			}).then(async t => await j(t, e))
 		},
@@ -2069,7 +2069,7 @@
 			})), r.d(e, "e", (function() {
 				return O
 			})), r.d(e, "a", (function() {
-				return S
+				return E
 			}));
 			r("./node_modules/core-js/modules/web.dom.iterable.js");
 			var n = r("./src/lib/makeGqlRequest/index.ts"),
@@ -2215,7 +2215,7 @@
 							text: t.text.trim()
 						})).filter(t => !!t.text), t.options.length)) return t.duration = Math.floor(t.duration / 864e5), t
 				},
-				S = (t, e) => Object(n.a)(t, {
+				E = (t, e) => Object(n.a)(t, {
 					...c,
 					variables: {
 						input: e
@@ -2378,9 +2378,9 @@
 			})), r.d(e, "f", (function() {
 				return g
 			})), r.d(e, "e", (function() {
-				return S
-			})), r.d(e, "h", (function() {
 				return E
+			})), r.d(e, "h", (function() {
+				return S
 			})), r.d(e, "g", (function() {
 				return I
 			}));
@@ -2507,7 +2507,7 @@
 						weekday: "long"
 					})
 				},
-				S = t => {
+				E = t => {
 					const e = (t => {
 						const [e, r] = O(t);
 						if (e && r) {
@@ -2560,7 +2560,7 @@
 						hk: "1jBuYc"
 					})
 				},
-				E = t => {
+				S = t => {
 					let e = null;
 					t.frequency && (e = t.frequency), (t.byWeekDays.length > 1 || t.byMonthDays.length > 1 || t.interval > 1) && (e = b.b);
 					const r = Object(c.f)(t.publishAt),
@@ -2884,9 +2884,9 @@
 			})), r.d(e, "m", (function() {
 				return j
 			})), r.d(e, "n", (function() {
-				return S
-			})), r.d(e, "d", (function() {
 				return E
+			})), r.d(e, "d", (function() {
+				return S
 			})), r.d(e, "e", (function() {
 				return I
 			})), r.d(e, "o", (function() {
@@ -3012,7 +3012,7 @@
 						}), o
 					})(e)
 				},
-				S = t => {
+				E = t => {
 					let {
 						scheduledPost: e
 					} = t;
@@ -3022,13 +3022,13 @@
 						n = r.find(t => t.type === s.f.Richtext);
 					return n || (r.find(t => t.type === s.f.Text) || null)
 				},
-				E = t => t.posts.scheduledPosts[i.g.recurringPosts].editModal.scheduledPostId,
+				S = t => t.posts.scheduledPosts[i.g.recurringPosts].editModal.scheduledPostId,
 				I = t => t.posts.scheduledPosts[i.g.recurringPosts].editModal.subredditId,
 				P = t => t.posts.scheduledPosts.api.pendingUpdate,
 				v = t => t.posts.scheduledPosts.api.creationToken
 		},
 		"./src/redditGQL/operations/CreateScheduledPost.json": function(t) {
-			t.exports = JSON.parse('{"id":"1e0a4bfe5ac9"}')
+			t.exports = JSON.parse('{"id":"737d59db38fc"}')
 		},
 		"./src/redditGQL/operations/GetSubredditCountrySiteSettings.json": function(t) {
 			t.exports = JSON.parse('{"id":"abd8b9be540b"}')
@@ -3037,10 +3037,10 @@
 			t.exports = JSON.parse('{"id":"a20cc8dd230d"}')
 		},
 		"./src/redditGQL/operations/SubredditScheduledPosts.json": function(t) {
-			t.exports = JSON.parse('{"id":"de72339b938a"}')
+			t.exports = JSON.parse('{"id":"2289de7a3370"}')
 		},
 		"./src/redditGQL/operations/UpdateScheduledPost.json": function(t) {
-			t.exports = JSON.parse('{"id":"f5276d63e133"}')
+			t.exports = JSON.parse('{"id":"db256acfa640"}')
 		},
 		"./src/redditGQL/operations/UpdateSubredditCountrySiteSettings.json": function(t) {
 			t.exports = JSON.parse('{"id":"c21fac68db2d"}')
@@ -3050,4 +3050,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit~SubredditForkingCTA.42f1ff489ca4759fadc1.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit~SubredditForkingCTA.ff8998bdae20dd2ba708.js.map

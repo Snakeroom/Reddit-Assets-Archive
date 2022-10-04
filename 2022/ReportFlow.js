@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ReportFlow.10368b517f783de37ffb.js
-// Retrieved at 10/3/2022, 2:20:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ReportFlow.1f3881047e30ef0e255c.js
+// Retrieved at 10/4/2022, 1:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ReportFlow", "ReportFlowNew"], {
 		"./node_modules/@reddit/i18n-tools/runtime/helpers/locale/index.js": function(e, t, n) {
@@ -965,7 +965,7 @@
 					if (!t().user) return;
 					const s = await (e => Object(a.a)(Object(i.a)(e, [l.a]), {
 						endpoint: `${e.apiUrl}/api/sitewide_rules.json`,
-						method: r.nb.GET
+						method: r.ob.GET
 					}))(o());
 					if (s.ok) {
 						const t = s.body,
@@ -979,7 +979,7 @@
 					if (!t().user) return;
 					const s = await (e => Object(a.a)(Object(i.a)(e, [l.a]), {
 						endpoint: `${e.apiUrl}/api/livestream_rules.json`,
-						method: r.nb.GET
+						method: r.ob.GET
 					}))(o());
 					if (s.ok) {
 						const t = s.body,
@@ -3173,7 +3173,7 @@
 					name: t
 				},
 				endpoint: `${e.apiUrl}/api/block_user`,
-				method: s.nb.POST
+				method: s.ob.POST
 			}), c = async (e, t, n) => Object(r.a)(Object(a.a)(e, [i.a]), {
 				data: {
 					name: n,
@@ -3181,22 +3181,22 @@
 					type: "enemy"
 				},
 				endpoint: `${e.apiUrl}/api/unfriend`,
-				method: s.nb.POST
+				method: s.ob.POST
 			}), u = async (e, t) => Object(r.a)(Object(a.a)(e, [i.a]), {
 				data: {
 					name: t
 				},
 				endpoint: `${e.apiUrl}/api/add_whitelisted?include_model`,
-				method: s.nb.POST
+				method: s.ob.POST
 			}), p = async (e, t) => Object(r.a)(Object(a.a)(e, [i.a]), {
 				data: {
 					name: t
 				},
 				endpoint: `${e.apiUrl}/api/remove_whitelisted`,
-				method: s.nb.POST
+				method: s.ob.POST
 			}), m = async (e, t) => Object(r.a)(Object(a.a)(e, [i.a]), {
 				endpoint: Object(l.a)(`${o.a.oauthUrl}/user/${t}/about`),
-				method: s.nb.GET,
+				method: s.ob.GET,
 				data: {
 					raw_json: 1
 				}
@@ -3230,7 +3230,7 @@
 				e.Rule = "rule", e.SiteRule = "siteRule", e.Other = "other", e.FileComplaint = "fileComplaint", e.CrisisTextLine = "crisisTextLine"
 			}(p || (p = {}));
 			const m = (e, t) => Object(s.a)(Object(a.a)(e, [i.a]), {
-					method: o.nb.POST,
+					method: o.ob.POST,
 					endpoint: Object(l.a)(`${e.apiUrl}/api/report`),
 					data: h(t)
 				}),
@@ -3263,7 +3263,7 @@
 					}
 				},
 				b = (e, t, n) => Object(s.a)(Object(a.a)(e, [i.a]), {
-					method: o.nb.POST,
+					method: o.ob.POST,
 					endpoint: Object(l.a)(`${e.apiUrl}/api/report`),
 					data: f(t, n)
 				}),
@@ -4013,4 +4013,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ReportFlow.10368b517f783de37ffb.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ReportFlow.1f3881047e30ef0e255c.js.map

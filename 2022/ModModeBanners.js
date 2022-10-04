@@ -1,11 +1,11 @@
-// https://www.redditstatic.com/desktop2x/ModModeBanners.62a250964df884b095a5.js
-// Retrieved at 9/29/2022, 4:30:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModModeBanners.60d53d947065c0dd657a.js
+// Retrieved at 10/4/2022, 1:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModModeBanners"], {
 		"./src/reddit/actions/comment/moderation.ts": function(e, t, s) {
 			"use strict";
 			s.d(t, "d", (function() {
-				return O
+				return j
 			})), s.d(t, "c", (function() {
 				return f
 			})), s.d(t, "f", (function() {
@@ -38,14 +38,14 @@
 				R = s("./src/reddit/selectors/experiments/cnc/index.ts"),
 				g = s("./src/reddit/selectors/user.ts"),
 				h = s("./src/reddit/actions/comment/index.ts"),
-				j = s("./src/reddit/actions/comment/constants.ts");
-			const _ = Object(r.a)(j.p),
-				O = e => async (t, s, o) => {
+				_ = s("./src/reddit/actions/comment/constants.ts");
+			const O = Object(r.a)(_.p),
+				j = e => async (t, s, o) => {
 					let {
 						apiContext: n
 					} = o;
 					s().features.comments.models[e] && (await Object(m.l)(n(), e)).ok && t((e => async t => {
-						t(_({
+						t(O({
 							commentId: e
 						}))
 					})(e))
@@ -73,7 +73,7 @@
 							isLocked: a.isLocked
 						}
 					}))
-				}, v = Object(r.a)(j.J), k = e => async (t, s, n) => {
+				}, v = Object(r.a)(_.J), k = e => async (t, s, n) => {
 					let {
 						apiContext: r,
 						gqlContext: a
@@ -176,7 +176,7 @@
 						commentId: e
 					});
 					if (!l) return;
-					const m = s === n.jc.Snoozed,
+					const m = s === n.kc.Snoozed,
 						R = {
 							itemId: e,
 							reportText: t,
@@ -208,8 +208,8 @@
 					o(Object(h.j)({
 						[e]: {
 							distinguishType: t,
-							isAdmin: t === n.I.ADMIN,
-							isMod: t === n.I.MODERATOR,
+							isAdmin: t === n.J.ADMIN,
+							isMod: t === n.J.MODERATOR,
 							isStickied: !!s
 						}
 					})), s && b && b !== e && o(Object(h.j)({
@@ -224,7 +224,7 @@
 						id: e,
 						postId: u,
 						commentsPageKey: Object(a.a)(u, null, {
-							sort: n.v.CONFIDENCE,
+							sort: n.w.CONFIDENCE,
 							...l.platform.currentPage.queryParams
 						})
 					})) : (o(Object(h.j)({
@@ -368,7 +368,7 @@
 				R = s("./src/reddit/icons/svgs/ChevronDown/index.tsx"),
 				g = s("./src/reddit/components/ModModeReports/_ModModeReports.m.less"),
 				h = s.n(g);
-			const j = e => {
+			const _ = e => {
 				let {
 					handleToggleExpando: t,
 					isHistoricalReports: s,
@@ -426,7 +426,7 @@
 					const o = t.ignoreReports ? "restore_reports" : "ignore_reports";
 					e = Object(p.a)(t.id) ? Object(u.j)(o, t.id) : Object(u.i)(o, t.id), d(e)
 				}, c = (t.modReportsDismissed && t.modReportsDismissed.length || 0) + (t.userReportsDismissed && t.userReportsDismissed.length || 0);
-				return c ? r.a.createElement(j, {
+				return c ? r.a.createElement(_, {
 					collapseReports: o,
 					handleToggleExpando: () => a(e => !e),
 					isHistoricalReports: !0,
@@ -434,7 +434,7 @@
 					modReports: t.modReportsDismissed,
 					userReports: t.userReportsDismissed,
 					reportedThingId: t.id
-				}) : r.a.createElement(j, {
+				}) : r.a.createElement(_, {
 					handleToggleExpando: i,
 					collapseReports: t.ignoreReports,
 					numReports: t.numReports || 0,
@@ -477,9 +477,9 @@
 				R = s("./src/reddit/helpers/isComment.ts"),
 				g = s("./src/reddit/helpers/trackers/modTools.ts"),
 				h = s("./src/reddit/icons/svgs/ChevronDown/index.tsx"),
-				j = s("./src/reddit/icons/svgs/ChevronUp/index.tsx"),
-				_ = s("./src/reddit/icons/svgs/Clock/index.tsx"),
-				O = s("./src/reddit/icons/svgs/Undo/index.tsx"),
+				_ = s("./src/reddit/icons/svgs/ChevronUp/index.tsx"),
+				O = s("./src/reddit/icons/svgs/Clock/index.tsx"),
+				j = s("./src/reddit/icons/svgs/Undo/index.tsx"),
 				f = s("./src/reddit/selectors/tooltip.ts"),
 				v = s("./src/reddit/components/Reports/SnoozableReport/index.m.less"),
 				k = s.n(v);
@@ -498,7 +498,7 @@
 			class M extends n.a.Component {
 				constructor() {
 					super(...arguments), this.tooltipTarget = null, this.setTooltipTargetRef = e => this.tooltipTarget = e, this.onSnoozeButtonClick = () => {
-						const e = this.props.isSnoozed ? i.jc.None : i.jc.Snoozed;
+						const e = this.props.isSnoozed ? i.kc.None : i.kc.Snoozed;
 						this.props.toggleSnooze(e);
 						const t = Object(g.n)(Object(R.a)(this.props.reportedThingId), this.props.isSnoozed, this.props.reportedThingId, this.props.reason);
 						this.props.sendEvent(t)
@@ -528,7 +528,7 @@
 						className: k.a.DropdownLabel
 					}, a ? C._("Reporter snoozed", null, {
 						hk: "1rCWql"
-					}) : i ? `${e} (${t})` : `${t}: ${e}`, r ? n.a.createElement(j.a, null) : n.a.createElement(h.a, null))), n.a.createElement(T, {
+					}) : i ? `${e} (${t})` : `${t}: ${e}`, r ? n.a.createElement(_.a, null) : n.a.createElement(h.a, null))), n.a.createElement(T, {
 						isOpen: r,
 						tooltipTarget: this.tooltipTarget,
 						renderContentsHidden: !0,
@@ -538,11 +538,11 @@
 						onClick: this.onSnoozeButtonClick
 					}, n.a.createElement("div", {
 						className: k.a.SnoozeButtonContent
-					}, a ? n.a.createElement(n.a.Fragment, null, n.a.createElement(O.a, {
+					}, a ? n.a.createElement(n.a.Fragment, null, n.a.createElement(j.a, {
 						className: m
 					}), C._("Undo snoozing reports from this user", null, {
 						hk: "1CloXT"
-					})) : n.a.createElement(n.a.Fragment, null, n.a.createElement(_.a, {
+					})) : n.a.createElement(n.a.Fragment, null, n.a.createElement(O.a, {
 						className: m
 					}), C._("Snooze reports from this user for 7 days", null, {
 						hk: "1i0sOW"
@@ -688,4 +688,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModModeBanners.62a250964df884b095a5.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModModeBanners.60d53d947065c0dd657a.js.map

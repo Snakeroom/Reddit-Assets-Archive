@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CommunityAwards.848b63189e7fdf39d98a.js
-// Retrieved at 10/3/2022, 2:20:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CommunityAwards.bb39df0c7124c9086e44.js
+// Retrieved at 10/4/2022, 1:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CommunityAwards"], {
 		"./src/reddit/actions/gold/communityAwards/communityAwards.ts": function(e, t, r) {
@@ -11,15 +11,15 @@
 			})), r.d(t, "createGlobalAward", (function() {
 				return g
 			})), r.d(t, "createAwardFailed", (function() {
-				return C
+				return x
 			})), r.d(t, "_createAwardSuccessful", (function() {
-				return R
+				return C
 			})), r.d(t, "createAwardSuccessful", (function() {
-				return S
+				return R
 			})), r.d(t, "manageableAwardsRequested", (function() {
-				return E
+				return S
 			})), r.d(t, "manageableAwardsLoaded", (function() {
-				return L
+				return P
 			})), r.d(t, "optionalAwardsLoaded", (function() {
 				return G
 			})), r.d(t, "awardSheetInfoRequested", (function() {
@@ -33,9 +33,9 @@
 			})), r.d(t, "removeCommunityAward", (function() {
 				return q
 			})), r.d(t, "removeCommunityAwardSuccessful", (function() {
-				return M
+				return J
 			})), r.d(t, "disableAwardinCommunity", (function() {
-				return H
+				return W
 			})), r.d(t, "enableAwardinCommunity", (function() {
 				return X
 			}));
@@ -71,11 +71,11 @@
 					try {
 						if ((await Object(m.a)(b(), e, t, r, a, n, d, i, s)).error) {
 							const e = j();
-							await o(C(e))
+							await o(x(e))
 						}
 					} catch (l) {
 						const e = j();
-						await o(C(e))
+						await o(x(e))
 					}
 				}, h = (e, t, r, a, n, d, i, s) => async (o, c, u) => {
 					let {
@@ -85,11 +85,11 @@
 					try {
 						if ((await Object(m.c)(b(), e, t, r, a, n, d, i, s)).error) {
 							const e = j();
-							await o(C(e))
+							await o(x(e))
 						}
 					} catch (l) {
 						const e = j();
-						await o(C(e))
+						await o(x(e))
 					}
 				}, g = e => {
 					let {
@@ -140,27 +140,27 @@
 									subredditCoinReward: A
 								})).error) {
 								const t = j();
-								await e(C(t))
+								await e(x(t))
 							}
-						} catch (x) {
+						} catch (L) {
 							const t = j();
-							await e(C(t))
+							await e(x(t))
 						}
 					}
-				}, _ = Object(n.a)(O.h), x = Object(n.a)(O.g), C = e => async (t, r) => {
-					await t(x(e)), t(Object(o.f)({
+				}, _ = Object(n.a)(O.h), L = Object(n.a)(O.g), x = e => async (t, r) => {
+					await t(L(e)), t(Object(o.f)({
 						kind: c.b.Error,
 						duration: o.a,
 						text: e
 					}))
-				}, R = Object(n.a)(O.i), S = e => {
+				}, C = Object(n.a)(O.i), R = e => {
 					let {
 						award: t,
 						subredditId: r
 					} = e;
 					return async (e, n) => {
 						const d = n();
-						e(R({
+						e(C({
 							award: t,
 							subredditId: r
 						})), Object(u.a)(d) === p.a && e(Object(s.i)(p.a));
@@ -172,7 +172,7 @@
 							text: i
 						}))
 					}
-				}, E = e => async (t, r, a) => {
+				}, S = e => async (t, r, a) => {
 					let {
 						gqlContext: n
 					} = a;
@@ -181,7 +181,7 @@
 					if (Object(b.b)(d, {
 							subredditOrProfileId: e
 						}) || s) return;
-					t(P({
+					t(E({
 						subredditOrProfileId: e
 					}));
 					const o = Object(i.a)(e),
@@ -215,7 +215,7 @@
 								disabled: !n.isAwardCreationAllowed
 							}))
 						}
-						await t(L({
+						await t(P({
 							awards: a,
 							subredditOrProfileId: e
 						}))
@@ -223,7 +223,7 @@
 						const e = y();
 						t(T(e))
 					}
-				}, P = Object(n.a)(O.H), L = Object(n.a)(O.G), G = Object(n.a)(O.L), N = Object(n.a)(O.F), T = e => async (t, r) => {
+				}, E = Object(n.a)(O.H), P = Object(n.a)(O.G), G = Object(n.a)(O.L), N = Object(n.a)(O.F), T = e => async (t, r) => {
 					await t(N(e)), t(Object(o.f)({
 						kind: c.b.Error,
 						duration: o.a,
@@ -313,13 +313,13 @@
 					let {
 						gqlContext: s
 					} = i;
-					r(K());
+					r(M());
 					try {
 						if ((await Object(m.m)(s(), t)).error) {
 							const e = A();
-							await r(B(e))
+							await r(H(e))
 						} else {
-							await r(M({
+							await r(J({
 								awardId: t,
 								subredditId: e
 							}));
@@ -337,26 +337,26 @@
 					} catch (u) {
 						d.c.captureException(u);
 						const e = A();
-						await r(B(e))
+						await r(H(e))
 					}
-				}, K = Object(n.a)(O.gb), M = Object(n.a)(O.hb), J = Object(n.a)(O.fb), B = e => async (t, r) => {
-					await t(J(e)), t(Object(o.f)({
+				}, M = Object(n.a)(O.gb), J = Object(n.a)(O.hb), B = Object(n.a)(O.fb), H = e => async (t, r) => {
+					await t(B(e)), t(Object(o.f)({
 						kind: c.b.Error,
 						duration: o.a,
 						text: e
 					}))
-				}, H = (e, t) => async (r, n, i) => {
+				}, W = (e, t) => async (r, n, i) => {
 					let {
 						gqlContext: s
 					} = i;
-					r(W());
+					r(V());
 					let u = a.fbt._("There was a problem disabling the {award name} Award. Please try again.", [a.fbt._param("award name", t.name)], {
 							hk: "3KNLaD"
 						}),
-						b = z(u),
+						b = K(u),
 						l = c.b.Error;
 					try {
-						(await Object(m.h)(s(), t.id, e.id)).ok && (b = V({
+						(await Object(m.h)(s(), t.id, e.id)).ok && (b = z({
 							awardId: t.id,
 							subredditId: e.id
 						}), u = a.fbt._("{award name} Award successfully disabled in {subreddit or profile prefixed name}!", [a.fbt._param("award name", t.name), a.fbt._param("subreddit or profile prefixed name", e.displayText)], {
@@ -371,7 +371,7 @@
 							kind: l
 						}))
 					}
-				}, W = Object(n.a)(O.k), V = Object(n.a)(O.l), z = Object(n.a)(O.j), X = (e, t) => async (r, n, i) => {
+				}, V = Object(n.a)(O.k), z = Object(n.a)(O.l), K = Object(n.a)(O.j), X = (e, t) => async (r, n, i) => {
 					let {
 						gqlContext: s
 					} = i;
@@ -441,19 +441,19 @@
 			})), r.d(t, "c", (function() {
 				return _
 			})), r.d(t, "b", (function() {
-				return x
-			})), r.d(t, "k", (function() {
-				return C
-			})), r.d(t, "l", (function() {
-				return R
-			})), r.d(t, "j", (function() {
-				return S
-			})), r.d(t, "f", (function() {
-				return E
-			})), r.d(t, "g", (function() {
-				return P
-			})), r.d(t, "m", (function() {
 				return L
+			})), r.d(t, "k", (function() {
+				return x
+			})), r.d(t, "l", (function() {
+				return C
+			})), r.d(t, "j", (function() {
+				return R
+			})), r.d(t, "f", (function() {
+				return S
+			})), r.d(t, "g", (function() {
+				return E
+			})), r.d(t, "m", (function() {
+				return P
 			})), r.d(t, "h", (function() {
 				return G
 			})), r.d(t, "i", (function() {
@@ -486,7 +486,7 @@
 						mimetype: d
 					};
 					return Object(n.a)(Object(i.a)(e, [y.a]), {
-						method: a.nb.POST,
+						method: a.ob.POST,
 						endpoint: `${e.apiUrl}/api/v1/community_awards/award_asset_upload_s3`,
 						data: s
 					})
@@ -515,7 +515,7 @@
 						startsAt: o,
 						endsAt: c
 					}
-				}), x = e => {
+				}), L = e => {
 					let {
 						awardSubType: t,
 						coinPrice: r,
@@ -560,33 +560,33 @@
 							subredditCoinReward: I
 						}
 					})
-				}, C = (e, t) => Object(d.a)(e, {
+				}, x = (e, t) => Object(d.a)(e, {
 					...p,
 					variables: {
 						subredditId: t
 					}
-				}), R = (e, t) => Object(d.a)(e, {
+				}), C = (e, t) => Object(d.a)(e, {
 					...O,
 					variables: {
 						profileName: t
 					}
-				}), S = e => Object(d.a)(e, {
+				}), R = e => Object(d.a)(e, {
 					...m
-				}), E = (e, t, r) => Object(d.a)(e, {
+				}), S = (e, t, r) => Object(d.a)(e, {
 					...o,
 					variables: {
 						subredditId: t,
 						thingId: r,
 						includeGroup: !0
 					}
-				}), P = (e, t, r) => Object(d.a)(e, {
+				}), E = (e, t, r) => Object(d.a)(e, {
 					...c,
 					variables: {
 						profileName: t,
 						thingId: r,
 						includeGroup: !0
 					}
-				}), L = (e, t) => Object(d.a)(e, {
+				}), P = (e, t) => Object(d.a)(e, {
 					...j,
 					variables: {
 						awardId: t
@@ -610,7 +610,7 @@
 						raw_json: 1
 					};
 					return Object(n.a)(Object(i.a)(e, [y.a]), {
-						method: a.nb.POST,
+						method: a.ob.POST,
 						endpoint: `${e.apiUrl}/api/report_award`,
 						data: d
 					}).then(e => e.ok ? {
@@ -641,23 +641,23 @@
 					for (const t of e) {
 						const e = t[0] || "";
 						switch (e) {
-							case a.K.NO_STRIPE_SUBSCRIPTION:
-							case a.K.USER_DOESNT_EXIST:
-							case a.K.USER_REQUIRED_ERROR:
-							case a.K.VALIDATION_ERROR:
+							case a.L.NO_STRIPE_SUBSCRIPTION:
+							case a.L.USER_DOESNT_EXIST:
+							case a.L.USER_REQUIRED_ERROR:
+							case a.L.VALIDATION_ERROR:
 								return e;
-							case a.K.NO_USER:
-							case a.K.NO_TEXT:
-							case a.K.NO_URL:
-								return a.K.VALIDATION_ERROR;
-							case a.K.CREDIT_CARD_FAILURE:
-							case a.K.CREDIT_CARD_FAILURE_GENERIC:
-								return a.K.CREDIT_CARD_FAILURE;
+							case a.L.NO_USER:
+							case a.L.NO_TEXT:
+							case a.L.NO_URL:
+								return a.L.VALIDATION_ERROR;
+							case a.L.CREDIT_CARD_FAILURE:
+							case a.L.CREDIT_CARD_FAILURE_GENERIC:
+								return a.L.CREDIT_CARD_FAILURE;
 							default:
-								if (e.startsWith("SUBMIT_VALIDATION")) return a.K.SUBMIT_VALIDATION_ERROR
+								if (e.startsWith("SUBMIT_VALIDATION")) return a.L.SUBMIT_VALIDATION_ERROR
 						}
 					}
-					return a.K.VALIDATION_ERROR
+					return a.L.VALIDATION_ERROR
 				},
 				d = e => {
 					const t = e.body;
@@ -713,4 +713,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommunityAwards.848b63189e7fdf39d98a.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommunityAwards.bb39df0c7124c9086e44.js.map

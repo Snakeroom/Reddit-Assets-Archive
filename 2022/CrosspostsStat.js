@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CrosspostsStat.6b8e7c576f6443291177.js
-// Retrieved at 10/3/2022, 2:20:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CrosspostsStat.d89a8b8ed455356466e3.js
+// Retrieved at 10/4/2022, 1:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CrosspostsStat"], {
 		"./src/reddit/components/CreatorStats/CrosspostsStat.m.less": function(e, t, s) {
@@ -222,7 +222,7 @@
 				x = e => {
 					const t = /comments\/(\w+)\/.*$/.exec(e),
 						s = t && t[1];
-					return s ? `${n.Mb.Post}_${s}` : ""
+					return s ? `${n.Nb.Post}_${s}` : ""
 				},
 				v = async (e, t) => {
 					if (!e.ok) return Object(p.b)(e);
@@ -257,12 +257,12 @@
 					}
 				}, h = (e, t) => Object(o.a)(Object(a.a)(e, [d.a]), {
 					endpoint: Object(_.a)(Object(i.a)(`${e.apiUrl}/api/submit_poll_post.json?resubmit=true`)),
-					method: n.nb.POST,
+					method: n.ob.POST,
 					data: S(t),
 					type: "json"
 				}).then(e => v(e, t)), C = (e, t) => Object(o.a)(Object(a.a)(e, [d.a]), {
 					endpoint: Object(_.a)(Object(i.a)(`${e.apiUrl}/api/submit_gallery_post.json?resubmit=true`)),
-					method: n.nb.POST,
+					method: n.ob.POST,
 					data: {
 						...S(t),
 						items: t.galleryItems.map(e => ({
@@ -275,10 +275,10 @@
 				}).then(e => v(e, t));
 			t.c = (e, t) => Object(o.a)(Object(a.a)(e, [d.a]), {
 				endpoint: Object(_.a)(Object(i.a)(`${e.apiUrl}/api/submit?resubmit=true`)),
-				method: n.nb.POST,
+				method: n.ob.POST,
 				data: S(t)
 			}).then(async e => await v(e, t))
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CrosspostsStat.6b8e7c576f6443291177.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CrosspostsStat.d89a8b8ed455356466e3.js.map

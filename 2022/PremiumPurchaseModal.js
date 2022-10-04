@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PremiumPurchaseModal.6838a08cf51d595fe031.js
-// Retrieved at 9/29/2022, 4:30:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PremiumPurchaseModal.00ed979b4673df782511.js
+// Retrieved at 10/4/2022, 1:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PremiumPurchaseModal"], {
 		"./src/reddit/actions/goldPurchaseModals/premiumPurchaseModal.ts": function(e, t, r) {
@@ -17,7 +17,7 @@
 			})), r.d(t, "paymentBlobCreated", (function() {
 				return j
 			})), r.d(t, "openWithBlob", (function() {
-				return C
+				return M
 			}));
 			var a = r("./src/config.ts"),
 				s = r("./node_modules/fbt/lib/FbtPublic.js"),
@@ -44,7 +44,7 @@
 						apiContext: c
 					} = o;
 					const d = Object(h.a)(a()),
-						m = (null == d ? void 0 : d.pennies) || n.Cb,
+						m = (null == d ? void 0 : d.pennies) || n.Db,
 						u = Object(b.c)(b.a.GoldPayment);
 					r(Object(i.stripeTokenPending)());
 					const P = await r(Object(i.validateAndCreateStripeToken)(e, t));
@@ -70,7 +70,7 @@
 						});
 						r(Object(i.stripeApiError)(e))
 					}
-				}, j = Object(o.a)(P.z), C = (e, t) => {
+				}, j = Object(o.a)(P.z), M = (e, t) => {
 					let {
 						packageId: r,
 						correlationId: s
@@ -153,8 +153,8 @@
 				O = r("./src/reddit/selectors/experiments/econ/paymentMethods.ts"),
 				E = r("./src/reddit/selectors/goldPurchaseModals.ts"),
 				j = r("./src/reddit/selectors/platform.ts"),
-				C = r("./src/reddit/selectors/user.ts"),
-				M = r("./src/reddit/models/Gold/ProductOffer.ts"),
+				M = r("./src/reddit/selectors/user.ts"),
+				C = r("./src/reddit/models/Gold/ProductOffer.ts"),
 				_ = r("./src/reddit/selectors/gold/productOffers.ts"),
 				k = r("./node_modules/fbt/lib/FbtPublic.js"),
 				v = r("./src/lib/loadRedditAdsPixel.ts"),
@@ -275,7 +275,7 @@
 				const t = Object(Q.a)(),
 					r = Object(z.b)(),
 					a = Object(o.d)(),
-					c = Object(o.e)(C.k),
+					c = Object(o.e)(M.k),
 					n = Object(Y.b)(e.total, {
 						locale: r,
 						type: D.b.Real
@@ -297,8 +297,8 @@
 						hk: "1l20Gw"
 					}),
 					b = null != e.selectedPayment,
-					h = e.selectedPayment === d.Lb,
-					P = e.selectedPayment === d.Kb,
+					h = e.selectedPayment === d.Mb,
+					P = e.selectedPayment === d.Lb,
 					y = e.premiumProductOffer && {
 						productsCount: 1,
 						className: L.a.premiumPurchaseButton,
@@ -381,7 +381,7 @@
 						const t = Object(j.a)(e);
 						return null === t ? void 0 : t
 					},
-					nightmode: C.db,
+					nightmode: M.db,
 					passthrough: E.e,
 					purchaseMethods: O.a,
 					selectedPayment: E.c,
@@ -389,7 +389,7 @@
 					stripeTokenPending: E.m,
 					paypalErrorMessage: E.d,
 					userName: e => {
-						const t = Object(C.k)(e);
+						const t = Object(M.k)(e);
 						return `u/${Object(g.e)(t)}`
 					},
 					renewInterval: E.p,
@@ -418,12 +418,12 @@
 						paypalErrorMessage: O,
 						purchaseMethods: E,
 						userName: j,
-						renewInterval: C,
+						renewInterval: M,
 						premiumProductOffer: _,
 						premiumPrice: k,
 						onLoadSavedCards: v
-					} = e, x = d.Cb, N = !1;
-					_ && k ? (x = k, N = C === M.b.Year) : o && (x = o ? o.pennies : d.Cb, N = !!o && o.frequency === m.c.Yearly);
+					} = e, x = d.Db, N = !1;
+					_ && k ? (x = k, N = M === C.b.Year) : o && (x = o ? o.pennies : d.Db, N = !!o && o.frequency === m.c.Yearly);
 					const w = Object(a.useCallback)(e => {
 						if (27 === e.keyCode) return p()
 					}, [p]);
@@ -478,4 +478,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PremiumPurchaseModal.6838a08cf51d595fe031.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PremiumPurchaseModal.00ed979b4673df782511.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CommunityPointsLearnMore.3021e22cfc09ea205cce.js
-// Retrieved at 9/29/2022, 4:30:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CommunityPointsLearnMore.75f305308775ff4037ce.js
+// Retrieved at 10/4/2022, 1:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CommunityPointsLearnMore"], {
 		"./src/reddit/components/Econ/Common/ModalCloseButton/index.m.less": function(e, t, o) {
@@ -2677,7 +2677,7 @@
 					return !(!a || !Object(i.a)(a))
 				},
 				z = (e, t, o) => {
-					if (Object(p.a)(e)) return !(!t || !Object(d.B)(e, {
+					if (Object(p.a)(e)) return !(!t || !Object(d.C)(e, {
 						subredditId: t
 					})) || (!!H(e, t) || !(!a.d.spGiphy(e) || !q(e, o)));
 					if (!Object(b.b)(e, {
@@ -2712,4 +2712,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommunityPointsLearnMore.3021e22cfc09ea205cce.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommunityPointsLearnMore.75f305308775ff4037ce.js.map

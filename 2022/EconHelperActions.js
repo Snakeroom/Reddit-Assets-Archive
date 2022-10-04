@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/EconHelperActions.9cc5e22c300164d43794.js
-// Retrieved at 9/26/2022, 1:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/EconHelperActions.f67289781dcc8acc767c.js
+// Retrieved at 10/4/2022, 1:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["EconHelperActions"], {
 		"./node_modules/lodash/_LazyWrapper.js": function(e, t, r) {
@@ -660,7 +660,7 @@
 						const t = `https://${o.pointsDocsBaseUrl}v1.json?web`,
 							r = await Object(s.b)({
 								endpoint: t,
-								method: n.nb.GET
+								method: n.ob.GET
 							});
 						r.ok && r.body && e(l(r.body))
 					}
@@ -1342,7 +1342,7 @@
 			function d(e, t) {
 				return Object(o.a)(e, {
 					endpoint: `${n.a.metaUrl}/communities/${t.subredditId}/me`,
-					method: s.nb.GET
+					method: s.ob.GET
 				})
 			}
 		},
@@ -1413,7 +1413,7 @@
 			function d(e, t) {
 				return Object(o.a)(e, {
 					endpoint: `${n.a.metaUrl}/wallets/${t.subredditId}/me`,
-					method: s.nb.GET
+					method: s.ob.GET
 				}).then(e => {
 					if (e.ok) {
 						const r = e.body,
@@ -1435,7 +1435,7 @@
 						"X-HTTP-Method-Override": "GET"
 					},
 					endpoint: `${n.a.metaUrl}/wallets/${t.subredditId}`,
-					method: s.nb.POST,
+					method: s.ob.POST,
 					data: t.userIds
 				}).then(e => e.ok ? {
 					...e,
@@ -2145,7 +2145,7 @@
 					return !(!n || !Object(o.a)(n))
 				},
 				W = (e, t, r) => {
-					if (Object(p.a)(e)) return !(!t || !Object(m.B)(e, {
+					if (Object(p.a)(e)) return !(!t || !Object(m.C)(e, {
 						subredditId: t
 					})) || (!!Y(e, t) || !(!n.d.spGiphy(e) || !V(e, r)));
 					if (!Object(f.b)(e, {
@@ -2212,4 +2212,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EconHelperActions.9cc5e22c300164d43794.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EconHelperActions.f67289781dcc8acc767c.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Topic.4c0f0befa367e0c48b0e.js
-// Retrieved at 10/3/2022, 2:20:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Topic.2f80b398dcd5ade9707c.js
+// Retrieved at 10/4/2022, 1:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Topic"], {
 		"./node_modules/intersection-observer/intersection-observer.js": function(e, t) {
@@ -1152,7 +1152,7 @@
 					return e
 				}).apply(this, arguments)
 			}
-			const f = c.f[1] + 24,
+			const f = c.g[1] + 24,
 				x = u.f + 8,
 				v = x + 152 + 16,
 				_ = v + f + 8,
@@ -1206,7 +1206,7 @@
 						this.windowHeight = window.innerHeight
 					}, this.handleResize = i()(() => {
 						this.updateMeasurements(), this.updateState()
-					}, c.M), this.setWrapperRef = e => this.containerEl = e || null, this.state = {
+					}, c.N), this.setWrapperRef = e => this.containerEl = e || null, this.state = {
 						isAdSticky: !0,
 						isBottomSticky: !1,
 						isFooterSticky: !0
@@ -1574,12 +1574,12 @@
 				P = s.n(I);
 			const {
 				fbt: R
-			} = s("./node_modules/fbt/lib/FbtPublic.js"), F = 8, M = Array.from({
+			} = s("./node_modules/fbt/lib/FbtPublic.js"), F = 8, W = Array.from({
 				length: F
 			}).map((e, t) => r.a.createElement(L, {
 				className: P.a.Subreddit,
 				key: t
-			})), W = {
+			})), M = {
 				enabled: !0,
 				id: "xd_103",
 				layout: m.c.Large,
@@ -1591,7 +1591,7 @@
 			class B extends r.a.Component {
 				constructor() {
 					super(...arguments), this.onSeeMoreCommunities = () => {
-						this.props.onSeeMoreCommunities && (this.props.sendEvent(Object(u.w)(W)), this.props.onSeeMoreCommunities())
+						this.props.onSeeMoreCommunities && (this.props.sendEvent(Object(u.w)(M)), this.props.onSeeMoreCommunities())
 					}
 				}
 				render() {
@@ -1612,10 +1612,10 @@
 						className: P.a.SubredditList
 					}, n.length > 0 ? n.map(e => r.a.createElement(N, {
 						className: P.a.Subreddit,
-						discoveryUnit: W,
+						discoveryUnit: M,
 						key: e,
 						subredditId: e
-					})) : M), t.length > F && r.a.createElement(i.a, {
+					})) : W), t.length > F && r.a.createElement(i.a, {
 						to: s
 					}, r.a.createElement(l.r, {
 						className: P.a.SeeMore,
@@ -2357,9 +2357,9 @@
 					}, t) : null
 				}
 			}
-			var M = F,
-				W = s("./src/reddit/pages/Topic/TopicHeader/index.m.less"),
-				B = s.n(W);
+			var W = F,
+				M = s("./src/reddit/pages/Topic/TopicHeader/index.m.less"),
+				B = s.n(M);
 
 			function D() {
 				return (D = Object.assign || function(e) {
@@ -2426,15 +2426,15 @@
 						className: B.a.Subtitle
 					}, this.renderSubtitleContent())), r.a.createElement("div", {
 						className: B.a.Tabs
-					}, r.a.createElement(M, D({
+					}, r.a.createElement(W, D({
 						tab: G.Posts
 					}, c), H._("Posts", null, {
 						hk: "3RLrle"
-					})), r.a.createElement(M, D({
+					})), r.a.createElement(W, D({
 						tab: G.Communities
 					}, c), H._("Communities", null, {
 						hk: "KIwd1"
-					})), r.a.createElement(M, D({
+					})), r.a.createElement(W, D({
 						tab: G.RelatedTopics
 					}, c), H._("Related Topics", null, {
 						hk: "4go2cr"
@@ -2663,7 +2663,7 @@
 				ke = s.n(Oe);
 			const {
 				fbt: je
-			} = s("./node_modules/fbt/lib/FbtPublic.js"), Ne = Object(k.u)(), we = (e, t) => t.match.params.sort || a.bb, Le = e => {
+			} = s("./node_modules/fbt/lib/FbtPublic.js"), Ne = Object(k.u)(), we = (e, t) => t.match.params.sort || a.cb, Le = e => {
 				const t = [];
 				return e ? (e.hasPosts && t.push(G.Posts), e.hasSubreddits && t.push(G.Communities), e.childRelationships.length && t.push(G.RelatedTopics), t) : t
 			}, Ie = Object(d.b)(() => Object(i.a)((e, t) => Object(Ce.d)(e, t.match.params.topicSlug), (e, t) => Object(Ce.e)(e, {
@@ -2987,7 +2987,7 @@
 			e.exports = JSON.parse('{"id":"c518a45f60a5"}')
 		},
 		"./src/redditGQL/operations/SubredditGeoRecommendationViaFocusVertical.json": function(e) {
-			e.exports = JSON.parse('{"id":"dd6aa8aaf456"}')
+			e.exports = JSON.parse('{"id":"d1355352c639"}')
 		},
 		"./src/redditGQL/operations/UpdateSubredditMuteAndNotificationLevelSettings.json": function(e) {
 			e.exports = JSON.parse('{"id":"2620d72fd633"}')
@@ -2997,4 +2997,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Topic.4c0f0befa367e0c48b0e.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Topic.2f80b398dcd5ade9707c.js.map

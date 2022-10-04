@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Multireddit.39ca3eabbd0dea3efb01.js
-// Retrieved at 10/3/2022, 2:20:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Multireddit.249b0d73d37bbd9990bb.js
+// Retrieved at 10/4/2022, 1:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Multireddit"], {
 		"./src/higherOrderComponents/withAdClickLocation/Locations.ts": function(e, t, n) {
@@ -39,7 +39,7 @@
 					shortMonths: i,
 					locale: c = r.DEFAULT_LOCALE
 				} = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : {};
-				const a = new Date(e * o.Wb);
+				const a = new Date(e * o.Xb);
 				return s.a ? new Intl.DateTimeFormat(c, {
 					month: i ? "short" : "long",
 					day: t ? "numeric" : void 0,
@@ -351,7 +351,7 @@
 						type: e.type
 					} : {
 						id: Object(S.n)(d(), e.name),
-						name: `${o.pc}${e.name}`,
+						name: `${o.qc}${e.name}`,
 						type: e.type
 					});
 					if (!Object(I.Q)(d())) return i(Object(a.k)({
@@ -482,7 +482,7 @@
 						multiredditPath: e,
 						multiredditsModelsState: i
 					})), (await ((e, t, n) => Object(m.a)(Object(b.a)(e, [p.a]), {
-						method: o.nb.POST,
+						method: o.ob.POST,
 						endpoint: `${e.apiUrl}/api/multi/favorite`,
 						data: {
 							make_favorite: n ? "true" : "false",
@@ -522,7 +522,7 @@
 						multiredditPath: e,
 						multiredditsModelsState: a
 					})), (await ((e, t, n) => Object(m.a)(Object(b.a)(e, [p.a]), {
-						method: o.nb.POST,
+						method: o.ob.POST,
 						endpoint: `${e.apiUrl}/api/multi/subscribe`,
 						data: {
 							action: n ? "sub" : "unsub",
@@ -841,8 +841,8 @@
 				}),
 				B = e => !e.textColor || e.textColor && !e.backgroundColor ? Object(j.a)(e).postFlairText : "transparent" === e.backgroundColor ? Object(D.a)(Object(j.a)(e).post, O.a.black, O.a.white) : e.textColor === I.e.Dark ? O.a.black : O.a.white,
 				G = b.a.wrapped(R, "TextFlair", g.a),
-				W = b.a.wrapped(P, "RichTextFlair", g.a),
-				H = e => {
+				H = b.a.wrapped(P, "RichTextFlair", g.a),
+				W = e => {
 					switch (e.type) {
 						case "spoiler":
 							return "#A4A7A8";
@@ -853,7 +853,7 @@
 					}
 				},
 				V = b.a.wrapped(e => {
-					const t = H(e),
+					const t = W(e),
 						n = a.a.createElement("span", {
 							className: e.className,
 							style: {
@@ -888,7 +888,7 @@
 				}, t);
 				switch (o.type) {
 					case I.f.Richtext:
-						return n || !o.richtext ? null : a.a.createElement(W, {
+						return n || !o.richtext ? null : a.a.createElement(H, {
 							backgroundColor: o.backgroundColor,
 							className: _,
 							forceSmallEmojis: p,
@@ -1023,7 +1023,7 @@
 						s = null != n ? n : r;
 					return o.a.createElement(o.a.Fragment, null, function(e) {
 						let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : d.DEFAULT_LOCALE;
-						const n = e * l.Wb;
+						const n = e * l.Xb;
 						return new Date(n).toLocaleString(t, {
 							weekday: "short",
 							month: "short",
@@ -1051,7 +1051,7 @@
 				let n = arguments.length > 2 && void 0 !== arguments[2] && arguments[2],
 					r = arguments.length > 3 && void 0 !== arguments[3] ? arguments[3] : d.DEFAULT_LOCALE;
 				const o = Object(b.e)(e, t),
-					s = new Date(e * l.Wb);
+					s = new Date(e * l.Xb);
 				let i;
 				if (o === b.a.Live || n) return m.fbt._("Now", null, {
 					hk: "Prpcg"
@@ -1427,7 +1427,7 @@
 						subscribe: i
 					} = t;
 					return Object(s.a)(Object(c.a)(e, [a.a]), {
-						method: o.nb.POST,
+						method: o.ob.POST,
 						endpoint: Object(d.a)(`${e.apiUrl}/api/subscribe`),
 						data: {
 							action: i ? "sub" : "unsub",
@@ -1438,7 +1438,7 @@
 					})
 				},
 				u = (e, t, n) => Object(s.a)(Object(c.a)(e, [a.a]), {
-					method: o.nb.POST,
+					method: o.ob.POST,
 					endpoint: `${e.apiUrl}/api/favorite`,
 					data: {
 						make_favorite: n ? "true" : "false",
@@ -1764,4 +1764,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Multireddit.39ca3eabbd0dea3efb01.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Multireddit.249b0d73d37bbd9990bb.js.map

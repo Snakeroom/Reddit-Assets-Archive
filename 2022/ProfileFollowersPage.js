@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfileFollowersPage.c55cfde69f2c642dc5a7.js
-// Retrieved at 10/3/2022, 2:20:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfileFollowersPage.648d24d63057ce3190ef.js
+// Retrieved at 10/4/2022, 1:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfileFollowersPage", "ProfileFollowersAction"], {
 		"./node_modules/lodash/take.js": function(e, t, r) {
@@ -164,7 +164,7 @@
 					}));
 					const h = p.name;
 					if ((await Object(l.c)(d(), {
-							subredditNames: [`${n.pc}${p.name}`],
+							subredditNames: [`${n.qc}${p.name}`],
 							subscribe: t
 						})).ok) {
 						r(w({
@@ -749,7 +749,7 @@
 							data: r,
 							endpoint: Object(m.a)(Object(c.a)(Object(p.a)(Object(h.a)(`${l.a.gatewayUrl}/desktopapi/v1/user/${t}/conversations`)))),
 							traceRequestName: "get_profile_conversations",
-							method: i.nb.GET
+							method: i.ob.GET
 						}).then(e => "pinned" in e.body ? e : "postIds" in e.body ? {
 							...e,
 							body: {
@@ -805,7 +805,7 @@
 							t: m
 						},
 						w = [t(N.d(g))],
-						S = Object(T.a)(g, i.yb, u, e.queryParams);
+						S = Object(T.a)(g, i.zb, u, e.queryParams);
 					if (r().listings.postOrder.ids[S] && !r().listings.postOrder.api.error[S] ? h = !0 : w.push(t(Pe(S, g, I, !0))), w.push(t(Object(o.b)())), await Promise.all(w), h) return;
 					const P = r();
 					if (!P.platform.currentPage) return;
@@ -854,7 +854,7 @@
 				v = r("./src/reddit/models/RichTextJson/addRTJParam.ts");
 			const x = (e, t, r) => Object(p.a)(Object(h.a)(e, [b.a]), {
 				endpoint: Object(f.a)(Object(v.a)(`${e.apiUrl}/api/v1/${t}/banned`)),
-				method: m.nb.GET,
+				method: m.ob.GET,
 				data: r
 			});
 			var g = r("./src/reddit/helpers/normalizeUsername/index.tsx"),
@@ -1145,7 +1145,7 @@
 					t.username = Object(g.a)(t.username), n(Object(a.h)(r));
 					const y = await ((e, t, r) => Object(p.a)(Object(h.a)(e, [b.a]), {
 						endpoint: `${e.apiUrl}${t}api/friend`,
-						method: m.nb.POST,
+						method: m.ob.POST,
 						data: {
 							api_type: "json",
 							ban_reason: r.reason,
@@ -1188,7 +1188,7 @@
 					const d = n().subreddits.models[e].url,
 						l = await ((e, t, r) => Object(p.a)(Object(h.a)(e, [b.a]), {
 							endpoint: `${e.apiUrl}${t}api/unfriend`,
-							method: m.nb.POST,
+							method: m.ob.POST,
 							data: {
 								api_type: "json",
 								id: r,
@@ -3266,7 +3266,7 @@
 					},
 					m = f()(() => {
 						l(), a = window.setTimeout(c, s)
-					}, p.M);
+					}, p.N);
 				return {
 					cleanup: c,
 					eventHandler: e => {
@@ -3370,7 +3370,7 @@
 				B = r("./src/reddit/components/Scroller/Simple.m.less"),
 				W = r.n(B);
 			const D = F.g,
-				z = 5 * p.M,
+				z = 5 * p.N,
 				V = 3,
 				K = Object(m.c)({
 					isOverlayOpen: A.i
@@ -3395,10 +3395,10 @@
 				$ = 1.8,
 				ee = 5,
 				te = 1500,
-				re = 2 * p.M,
+				re = 2 * p.N,
 				se = 400,
 				ne = 8,
-				ie = 5 * p.M,
+				ie = 5 * p.N,
 				oe = 30,
 				ae = "object" == typeof performance && "function" == typeof performance.now,
 				de = () => ae ? performance.now() : Date.now();
@@ -3429,7 +3429,7 @@
 						};
 						L.b.enqueue(new E.a({
 							args: [e, t],
-							cb: (e, t) => Object(H.a)(p.n.Redesign, {
+							cb: (e, t) => Object(H.a)(p.o.Redesign, {
 								data: e,
 								meta: t,
 								type: "scrollfps"
@@ -3495,7 +3495,7 @@
 						clearTimeout(this.updateRenderableChildrenWhenIdleHandle), Object(u.cancelIdleCallback)(this.requestUpdateWhenIdleCallbackHandle)
 					}, this.callOnScrollForItemsChanged = n()(() => {
 						this.handleScroll()
-					}, p.M), this.pauseAllElements = () => {
+					}, p.N), this.pauseAllElements = () => {
 						const e = this.getItemsInViewportWithFilter(this.loadedChildRefFilter),
 							t = [];
 						e.forEach(e => {
@@ -3517,7 +3517,7 @@
 						const t = this.getChildRectangle(e);
 						return t && this.elementIsVisible(t) || !1
 					}, this.loadedChildRefFilter = e => e.loaded, this.resetScrollFramerateAndFocus = () => {
-						this.scrollContainer && (this.pixelsPerMSRing.clear(), this.lastScrollTime = -1, this.needsToPauseViewportItems = !0, null === this.unmountItemsIdleId && (this.unmountItemsIdleId = Object(u.requestIdleCallback)(this.unmountItemsWhileIdle)), setTimeout(this.handleScroll, p.M))
+						this.scrollContainer && (this.pixelsPerMSRing.clear(), this.lastScrollTime = -1, this.needsToPauseViewportItems = !0, null === this.unmountItemsIdleId && (this.unmountItemsIdleId = Object(u.requestIdleCallback)(this.unmountItemsWhileIdle)), setTimeout(this.handleScroll, p.N))
 					}, this.setContainerRef = e => {
 						this.containerRef = e, this.props.innerRef && this.props.innerRef(e)
 					}, this.getChildRectangle = e => {
@@ -3549,7 +3549,7 @@
 							const e = this.getTotalOffsetTop();
 							e !== this.containerOffsetTop && (this.containerOffsetTop = e, this.handleResize()), this.pendingResizeHandlerRead = null
 						}))
-					}, p.M), this.handleScroll = () => {
+					}, p.N), this.handleScroll = () => {
 						this.pendingScollHandlerRead || (this.pendingScollHandlerRead = h.a.read(() => {
 							if (clearTimeout(this.resetCanFocusTimer), this.cancelPopulateRenderableChildrenWhenIdle(), Object(_.b)() || !this.scrollContainer) return void(this.pendingScollHandlerRead = null);
 							this.updateScrollMetrics();
@@ -3639,7 +3639,7 @@
 							void 0 !== t && (this.hideChild(e, t), this.childrenToHide[e] = void 0)
 						}
 						for (const e in this.childrenToShow) void 0 !== this.childrenToShow[e] && (this.showChild(e), this.childrenToShow[e] = void 0)
-					}, p.M), this.hideChild = (e, t) => {
+					}, p.N), this.hideChild = (e, t) => {
 						const r = this.childMap.get(e);
 						if (!r || !r.el) return;
 						const s = r.el.firstChild;
@@ -3665,7 +3665,7 @@
 								const s = this.getScrollTop() + r.el.getBoundingClientRect().top - (this.props.scrollToChildPadding || 0) - (this.props.viewportTopPadding || 0);
 								setTimeout(() => {
 									this.scrollContainer && (Object(_.c)(this.scrollContainer, s), this.callOnScrollForItemsChanged())
-								}, p.M)
+								}, p.N)
 							}
 						})
 					}, this.isScrollChildTopVisible = e => {
@@ -3965,7 +3965,7 @@
 				})())))
 			};
 			h.defaultProps = {
-				minimizedLength: d.Xb
+				minimizedLength: d.Yb
 			}, t.a = h
 		},
 		"./src/reddit/components/SidebarFooter/index.m.less": function(e, t, r) {
@@ -4466,7 +4466,7 @@
 					return e
 				}).apply(this, arguments)
 			}
-			const v = d.f[1] + 24,
+			const v = d.g[1] + 24,
 				x = u.f + 8,
 				g = x + 152 + 16,
 				y = g + v + 8,
@@ -4520,7 +4520,7 @@
 						this.windowHeight = window.innerHeight
 					}, this.handleResize = i()(() => {
 						this.updateMeasurements(), this.updateState()
-					}, d.M), this.setWrapperRef = e => this.containerEl = e || null, this.state = {
+					}, d.N), this.setWrapperRef = e => this.containerEl = e || null, this.state = {
 						isAdSticky: !0,
 						isBottomSticky: !1,
 						isFooterSticky: !0
@@ -6234,4 +6234,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileFollowersPage.c55cfde69f2c642dc5a7.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileFollowersPage.648d24d63057ce3190ef.js.map

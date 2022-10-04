@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Governance-CommunityCard.2e630bdfb5e5393d72ed.js
-// Retrieved at 10/3/2022, 2:20:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Governance-CommunityCard.69854919c4abc4af0743.js
+// Retrieved at 10/4/2022, 1:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Governance-CommunityCard"], {
 		"./src/lib/bigNumberUtils/percent.ts": function(e, t, n) {
@@ -85,7 +85,7 @@
 						const t = `https://${o.pointsDocsBaseUrl}v1.json?web`,
 							n = await Object(s.b)({
 								endpoint: t,
-								method: r.nb.GET
+								method: r.ob.GET
 							});
 						n.ok && n.body && e(u(n.body))
 					}
@@ -664,7 +664,7 @@
 						wallet: E
 					} = this.props, C = E && E.inactive && function(e, t) {
 						const n = e.actionScheduledAt - Date.now(),
-							o = Math.max(1, Math.floor(n / p.D)),
+							o = Math.max(1, Math.floor(n / p.E)),
 							a = 1 !== o ? s.fbt._("{numDays} day", [s.fbt._param("numDays", String(o))], {
 								hk: "20neqo"
 							}) : s.fbt._("{numDays} days", [s.fbt._param("numDays", String(o))], {
@@ -1309,7 +1309,7 @@
 			function a(e, t) {
 				return Object(o.a)(e, {
 					endpoint: `${r.a.metaUrl}/wallets/${t.subredditId}/me`,
-					method: s.nb.GET
+					method: s.ob.GET
 				}).then(e => {
 					if (e.ok) {
 						const n = e.body,
@@ -1331,7 +1331,7 @@
 						"X-HTTP-Method-Override": "GET"
 					},
 					endpoint: `${r.a.metaUrl}/wallets/${t.subredditId}`,
-					method: s.nb.POST,
+					method: s.ob.POST,
 					data: t.userIds
 				}).then(e => e.ok ? {
 					...e,
@@ -1905,13 +1905,13 @@
 			const o = e => {
 					return Object(s.c)(e, {
 						experimentEligibilitySelector: s.a,
-						experimentName: r.we
+						experimentName: r.xe
 					}) === r.Md
 				},
 				a = e => {
 					return Object(s.c)(e, {
 						experimentEligibilitySelector: s.a,
-						experimentName: r.ue
+						experimentName: r.ve
 					}) === r.Md
 				}
 		},
@@ -1972,4 +1972,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Governance-CommunityCard.2e630bdfb5e5393d72ed.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Governance-CommunityCard.69854919c4abc4af0743.js.map

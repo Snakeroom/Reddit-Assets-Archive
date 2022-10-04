@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModerationDropdowns.b95b97a946202b14bc21.js
-// Retrieved at 10/3/2022, 2:20:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModerationDropdowns.423d055c2138a772f54a.js
+// Retrieved at 10/4/2022, 1:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModerationDropdowns"], {
 		"./src/devPlatform/components/ContextActions/ContextActionsLoader.tsx": function(e, t, o) {
@@ -610,8 +610,8 @@
 				y = o("./src/devPlatform/components/ContextActions/ContextActionsLoader.tsx"),
 				T = o("./src/devPlatform/constants.ts"),
 				F = o("./src/reddit/components/PostModModeDropdown/DropdownHelpers.m.less"),
-				I = o.n(F);
-			const L = (e, t) => Object(M.b)({
+				L = o.n(F);
+			const I = (e, t) => Object(M.b)({
 					breakpointType: M.a.HideIfVWLarger,
 					flatlistItem: e,
 					postLayout: t
@@ -654,7 +654,7 @@
 						J = !(!V.approvedBy || !Y),
 						X = i ? void 0 : l,
 						$ = Object(D.a)(V),
-						ee = m ? L : R;
+						ee = m ? I : R;
 					return s.a.createElement(S.g, null, n && s.a.createElement(s.a.Fragment, null, !V.isSponsored && s.a.createElement(s.a.Fragment, null, s.a.createElement(S.e, {
 						className: ee(j.a.Approve, X),
 						displayText: J ? k.fbt._("Reapprove", null, {
@@ -712,7 +712,7 @@
 						}),
 						onClick: f
 					}, s.a.createElement(S.b, null)), q && s.a.createElement(S.e, {
-						textClassName: I.a.text,
+						textClassName: L.a.text,
 						onClick: b,
 						displayText: k.fbt._("Change the outcome", null, {
 							hk: "2FH6j9"
@@ -837,8 +837,8 @@
 					sendEvent: T,
 					tooltipId: F
 				} = e;
-				const I = y.distinguishType === i.I.MODERATOR,
-					L = I ? i.I.NONE : i.I.MODERATOR,
+				const L = y.distinguishType === i.J.MODERATOR,
+					I = L ? i.J.NONE : i.J.MODERATOR,
 					R = Object(u.b)(y.id, c);
 				return s.a.createElement(U, {
 					className: B.a.dropdown,
@@ -848,7 +848,7 @@
 					canEditFlair: t,
 					hasModFullPerms: o,
 					hasModPostPerms: n,
-					isDistinguished: I,
+					isDistinguished: L,
 					isModToMemberShareEnabled: a,
 					isOverlay: c,
 					isPostAuthor: d,
@@ -874,7 +874,7 @@
 						N(), T(Object(_.l)("spam", y.id))
 					},
 					onDistinguishPost: () => {
-						O(L), T(Object(_.l)(I ? "undistinguish" : "distinguish", y.id))
+						O(I), T(Object(_.l)(L ? "undistinguish" : "distinguish", y.id))
 					},
 					onFlairPost: () => {
 						E(R), T(Object(_.l)("post_flair", y.id))
@@ -1240,4 +1240,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationDropdowns.b95b97a946202b14bc21.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationDropdowns.423d055c2138a772f54a.js.map

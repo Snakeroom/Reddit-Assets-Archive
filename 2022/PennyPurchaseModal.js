@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PennyPurchaseModal.5f3c58925b488f844365.js
-// Retrieved at 10/3/2022, 2:20:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PennyPurchaseModal.546c42bad5c48c691152.js
+// Retrieved at 10/4/2022, 1:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PennyPurchaseModal"], {
 		"./node_modules/@stripe/stripe-js/dist/stripe.esm.js": function(e, t, a) {
@@ -610,7 +610,7 @@
 					}, o.a.createElement(f.a, {
 						className: D.a.balance,
 						coinBalance: a
-					}), c === d.Lb && ((null == t ? void 0 : t.pennyPrice) && r ? o.a.createElement(T, {
+					}), c === d.Mb && ((null == t ? void 0 : t.pennyPrice) && r ? o.a.createElement(T, {
 						awardId: t.id,
 						className: Object(h.a)(D.a.purchaseButton, D.a.paypalCheckoutButton),
 						pennies: t.pennyPrice,
@@ -618,7 +618,7 @@
 					}) : n && o.a.createElement(T, {
 						className: Object(h.a)(D.a.purchaseButton, D.a.paypalCheckoutButton),
 						coinPackage: n
-					})), c === d.Kb && o.a.createElement(I.l, {
+					})), c === d.Lb && o.a.createElement(I.l, {
 						className: D.a.purchaseButton,
 						"data-redditstyle": !0,
 						disabled: i || s,
@@ -630,8 +630,8 @@
 				const N = null == k ? void 0 : k.pricePackages.find(e => e.id === (null == n ? void 0 : n.mobileId));
 				if (!k || !N || !n) return null;
 				if (!(null != c)) return null;
-				const _ = c === d.Lb,
-					S = c === d.Kb,
+				const _ = c === d.Mb,
+					S = c === d.Lb,
 					M = {
 						className: D.a.purchaseButton,
 						productOffer: k,
@@ -746,7 +746,7 @@
 				},
 				J = a("./src/reddit/components/PaymentMethodSelector/index.tsx"),
 				U = a("./src/reddit/components/StripePaymentForm/index.tsx"),
-				K = a("./src/reddit/helpers/createEmojiText/index.tsx");
+				Y = a("./src/reddit/helpers/createEmojiText/index.tsx");
 			const X = e => {
 				const t = Object(Q.a)(),
 					a = Object(c.a)(),
@@ -773,7 +773,7 @@
 					selectedPayment: e.selectedPayment,
 					onPaymentSelected: e.onPaymentSelected,
 					paymentMethods: e.purchaseMethods
-				}), e.selectedPayment === d.Kb && o.a.createElement(r.ElementsConsumer, null, t => {
+				}), e.selectedPayment === d.Lb && o.a.createElement(r.ElementsConsumer, null, t => {
 					let {
 						stripe: a
 					} = t;
@@ -789,9 +789,9 @@
 					locale: t
 				}))], {
 					hk: "3dx6W8"
-				}))), e.selectedPayment === d.Lb && e.paypalErrorMessage && o.a.createElement("div", {
+				}))), e.selectedPayment === d.Mb && e.paypalErrorMessage && o.a.createElement("div", {
 					className: D.a.errorMessage
-				}, e.paypalErrorMessage), e.selectedPayment === d.Kb && e.stripeErrorMessage && o.a.createElement("div", {
+				}, e.paypalErrorMessage), e.selectedPayment === d.Lb && e.stripeErrorMessage && o.a.createElement("div", {
 					className: D.a.errorMessage
 				}, e.stripeErrorMessage), o.a.createElement("div", {
 					className: D.a.agreementLink
@@ -807,7 +807,7 @@
 				})({
 					...e,
 					locale: t
-				}), Object(K.a)(n.fbt._("By purchasing Coins and Awards, you agree to the :agreement:.", null, {
+				}), Object(Y.a)(n.fbt._("By purchasing Coins and Awards, you agree to the :agreement:.", null, {
 					hk: "1eCqza"
 				}), {
 					":agreement:": o.a.createElement("a", {
@@ -1048,8 +1048,8 @@
 				l = a("./src/reddit/components/PaymentMethodSelector/index.m.less"),
 				m = a.n(l);
 			const u = {
-					[c.Kb]: ["visa.png", "mastercard.png", "amex.png", "discover.jpg"],
-					[c.Lb]: ["paypal.png"]
+					[c.Lb]: ["visa.png", "mastercard.png", "amex.png", "discover.jpg"],
+					[c.Mb]: ["paypal.png"]
 				},
 				p = e => s.a.createElement("label", {
 					className: Object(o.a)(e.className, m.a.paymentOption, {
@@ -1077,10 +1077,10 @@
 								sendEvent: n
 							} = this.props;
 						switch (t) {
-							case c.Kb:
+							case c.Lb:
 								n(Object(i.e)(a));
 								break;
-							case c.Lb:
+							case c.Mb:
 								n(Object(i.f)(a))
 						}
 						return r(t)
@@ -2018,9 +2018,9 @@
 				n = a("./src/lib/constants/index.ts"),
 				s = a("./src/reddit/constants/experiments.ts"),
 				o = a("./src/reddit/selectors/experiments/econ/simpleExperiment.ts");
-			const c = Object(o.a)(s.We),
-				d = Object(o.a)(s.Xe),
-				i = Object(r.a)([c, d], (e, t) => new Set([e && n.Lb, t && n.Kb].filter(e => !!e)))
+			const c = Object(o.a)(s.Xe),
+				d = Object(o.a)(s.Ye),
+				i = Object(r.a)([c, d], (e, t) => new Set([e && n.Mb, t && n.Lb].filter(e => !!e)))
 		},
 		"./src/reddit/selectors/experiments/econ/paymentsSandbox.ts": function(e, t, a) {
 			"use strict";
@@ -2066,4 +2066,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PennyPurchaseModal.5f3c58925b488f844365.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PennyPurchaseModal.546c42bad5c48c691152.js.map
