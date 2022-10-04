@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModQueuePages.afe469edf64e706c0f35.js
-// Retrieved at 10/4/2022, 1:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModQueuePages.8763f862dc5dae0915b8.js
+// Retrieved at 10/4/2022, 3:10:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModQueuePages"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -913,16 +913,16 @@
 				C = n("./src/reddit/helpers/graphql/normalizePostFromGql/index.ts"),
 				E = n("./src/reddit/helpers/graphql/normalizeSubredditFromGql/index.ts");
 			const j = {
-					[s.wb.Edited]: O.y.Edited,
-					[s.wb.Modqueue]: O.y.Mod,
-					[s.wb.Reports]: O.y.Reported,
-					[s.wb.Spam]: O.y.Removed,
-					[s.wb.Unmoderated]: O.y.Unmoderated
+					[s.wb.Edited]: O.z.Edited,
+					[s.wb.Modqueue]: O.z.Mod,
+					[s.wb.Reports]: O.z.Reported,
+					[s.wb.Spam]: O.z.Removed,
+					[s.wb.Unmoderated]: O.z.Unmoderated
 				},
 				y = {
-					comments: O.w.Comment,
-					links: O.w.Post,
-					chat_comments: O.w.ChatComment
+					comments: O.x.Comment,
+					links: O.x.Post,
+					chat_comments: O.x.ChatComment
 				};
 
 			function w(e) {
@@ -959,7 +959,7 @@
 					...!!o.profile && {
 						subredditIds: [o.profile]
 					},
-					sort: o.sort === b.a.MostReportedFirst ? O.x.SortReports : O.x.SortDate,
+					sort: o.sort === b.a.MostReportedFirst ? O.y.SortReports : O.y.SortDate,
 					...i,
 					includeModActivitySummaries: d
 				}
@@ -1258,8 +1258,8 @@
 				Q = Object(r.a)(B.i),
 				H = Object(r.a)(B.h),
 				G = Object(r.a)(B.g),
-				J = Object(r.a)(B.f),
-				z = Object(r.a)(B.e),
+				z = Object(r.a)(B.f),
+				J = Object(r.a)(B.e),
 				K = Object(r.a)(B.o),
 				X = Object(r.a)(B.n),
 				Z = Object(r.a)(B.m),
@@ -1278,7 +1278,7 @@
 					let b, h, f;
 					switch (t) {
 						case s.wb.Edited:
-							b = G, h = z, f = J;
+							b = G, h = J, f = z;
 							break;
 						case s.wb.Modqueue:
 							b = q, h = H, f = Q;
@@ -1808,8 +1808,8 @@
 				Q = n("./src/reddit/helpers/r2/normalizeCommentFromR2/index.ts"),
 				H = n("./src/reddit/helpers/routeKey/index.ts"),
 				G = n("./src/reddit/models/ModQueue/index.ts"),
-				J = n("./src/reddit/models/PostDraft/index.ts"),
-				z = n("./src/reddit/models/RemovalReason/index.ts"),
+				z = n("./src/reddit/models/PostDraft/index.ts"),
+				J = n("./src/reddit/models/RemovalReason/index.ts"),
 				K = n("./src/reddit/models/Toast/index.ts"),
 				X = n("./src/reddit/selectors/comments.ts"),
 				Z = n("./src/reddit/selectors/platform.ts");
@@ -1921,9 +1921,9 @@
 					const l = a(),
 						m = l.user.account && l.user.account.displayText,
 						u = e[0],
-						p = Object(q.a)(u) ? z.e.Post : z.e.Comment,
-						b = p === z.e.Post ? l.posts.models[u] : l.features.comments.models[u],
-						h = p === z.e.Post ? A.S : R.j;
+						p = Object(q.a)(u) ? J.e.Post : J.e.Comment,
+						b = p === J.e.Post ? l.posts.models[u] : l.features.comments.models[u],
+						h = p === J.e.Post ? A.S : R.j;
 					if (!b || !m) return !1;
 					i(fe()), i(h({
 						[u]: {
@@ -1948,9 +1948,9 @@
 									isLocked: r,
 									type: o
 								},
-								a = await V(c(), Object(z.h)(s, p), p);
+								a = await V(c(), Object(J.h)(s, p), p);
 							if (a.ok) {
-								if ([z.f.Public, z.f.PublicAsSubreddit].includes(o)) {
+								if ([J.f.Public, J.f.PublicAsSubreddit].includes(o)) {
 									if (i(_e()), a.body) {
 										const e = Object(Q.a)(a.body),
 											t = {
@@ -1963,8 +1963,8 @@
 										if (s || (s = Object(w.a)(e.postId, null, {
 												sort: j.x,
 												hasSortParam: !0
-											})), p === z.e.Post) {
-											const n = Object(I.a)(J.c.replyToPost, u);
+											})), p === J.e.Post) {
+											const n = Object(I.a)(z.c.replyToPost, u);
 											i(Object(N.r)({
 												...t,
 												headCommentId: Object(X.w)(l, {
@@ -1983,8 +1983,8 @@
 													isStickied: !1
 												}
 											}))
-										} else if (p === z.e.Comment) {
-											const e = Object(I.a)(J.c.replyToComment, b.id),
+										} else if (p === J.e.Comment) {
+											const e = Object(I.a)(z.c.replyToComment, b.id),
 												n = Object(X.j)(l, {
 													commentId: u,
 													commentsPageKey: s
@@ -2051,7 +2051,7 @@
 									title: t.title,
 									type: s
 								},
-								r = await V(c(), Object(z.h)(o, z.e.Bulk), z.e.Bulk);
+								r = await V(c(), Object(J.h)(o, J.e.Bulk), J.e.Bulk);
 							r.ok ? (i(Oe()), i(u)) : i(ke(r.error))
 						} else i(u)
 					} else i(xe(b.error))
@@ -2777,7 +2777,7 @@
 						}),
 						id: m,
 						onClick: e => {
-							null == s || s(e), J(l, n.id), c && (e.preventDefault(), l(Object(q.Z)(Object(H.b)(a), n.postId)))
+							null == s || s(e), z(l, n.id), c && (e.preventDefault(), l(Object(q.Z)(Object(H.b)(a), n.postId)))
 						},
 						onMouseEnter: u,
 						onMouseLeave: u,
@@ -2792,12 +2792,12 @@
 						seconds: n.created
 					})))
 				},
-				J = (e, t) => {
+				z = (e, t) => {
 					window.addEventListener("focus", (function n() {
-						z(e, t, n)
+						J(e, t, n)
 					}))
 				},
-				z = (e, t, n) => {
+				J = (e, t, n) => {
 					window.removeEventListener("focus", n), e(Object(V.h)({
 						commentListNodeId: t
 					})), window.setTimeout(() => e(Object(V.h)({
@@ -3384,7 +3384,7 @@
 						permalink: a,
 						renderedInOverlay: l,
 						isBlockingInterstitialEnabled: d || c
-					}), n && Je({
+					}), n && ze({
 						childrenInfo: t
 					}))
 				},
@@ -3419,11 +3419,11 @@
 						permalink: a,
 						renderedInOverlay: s,
 						isBlockingInterstitialEnabled: d || c
-					}), Je({
+					}), ze({
 						childrenInfo: o
 					}))
 				},
-				Je = e => {
+				ze = e => {
 					const {
 						hasContinueThread: t,
 						numChildren: n
@@ -5452,7 +5452,7 @@
 					}
 				}),
 				G = Object(a.b)(H);
-			class J extends i.a.Component {
+			class z extends i.a.Component {
 				constructor() {
 					super(...arguments), this.sendEventWithName = e => () => this.props.sendEvent(t => ({
 						source: e.includes("modqueue_sort") ? "moderator" : "bulk_mod_action",
@@ -5510,7 +5510,7 @@
 					}))
 				}
 			}
-			t.default = q(G(Object(u.c)(J)))
+			t.default = q(G(Object(u.c)(z)))
 		},
 		"./src/reddit/selectors/experiments/realtimeMQUpdates.ts": function(e, t, n) {
 			"use strict";
@@ -5537,4 +5537,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModQueuePages.afe469edf64e706c0f35.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModQueuePages.8763f862dc5dae0915b8.js.map

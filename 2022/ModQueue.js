@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModQueue.b1f35816bd12cfa23445.js
-// Retrieved at 10/4/2022, 1:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModQueue.b040866193a7f75d965f.js
+// Retrieved at 10/4/2022, 3:10:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModQueue"], {
 		"./src/reddit/actions/bulkActions/index.ts": function(e, t, o) {
@@ -295,16 +295,16 @@
 				R = o("./src/reddit/helpers/graphql/normalizePostFromGql/index.ts"),
 				y = o("./src/reddit/helpers/graphql/normalizeSubredditFromGql/index.ts");
 			const E = {
-					[r.wb.Edited]: _.y.Edited,
-					[r.wb.Modqueue]: _.y.Mod,
-					[r.wb.Reports]: _.y.Reported,
-					[r.wb.Spam]: _.y.Removed,
-					[r.wb.Unmoderated]: _.y.Unmoderated
+					[r.wb.Edited]: _.z.Edited,
+					[r.wb.Modqueue]: _.z.Mod,
+					[r.wb.Reports]: _.z.Reported,
+					[r.wb.Spam]: _.z.Removed,
+					[r.wb.Unmoderated]: _.z.Unmoderated
 				},
 				A = {
-					comments: _.w.Comment,
-					links: _.w.Post,
-					chat_comments: _.w.ChatComment
+					comments: _.x.Comment,
+					links: _.x.Post,
+					chat_comments: _.x.ChatComment
 				};
 
 			function k(e) {
@@ -341,7 +341,7 @@
 					...!!s.profile && {
 						subredditIds: [s.profile]
 					},
-					sort: s.sort === p.a.MostReportedFirst ? _.x.SortReports : _.x.SortDate,
+					sort: s.sort === p.a.MostReportedFirst ? _.y.SortReports : _.y.SortDate,
 					...d,
 					includeModActivitySummaries: i
 				}
@@ -597,8 +597,8 @@
 				}), c
 			}
 			var P = o("./src/reddit/models/ModQueue/index.ts"),
-				w = o("./src/reddit/models/Toast/index.ts"),
-				N = o("./src/reddit/selectors/modQueue.ts"),
+				N = o("./src/reddit/models/Toast/index.ts"),
+				w = o("./src/reddit/selectors/modQueue.ts"),
 				L = o("./src/reddit/selectors/subreddit.ts"),
 				D = o("./src/reddit/selectors/telemetry.ts"),
 				T = o("./src/telemetry/index.ts"),
@@ -640,8 +640,8 @@
 				H = Object(n.a)(Q.i),
 				G = Object(n.a)(Q.h),
 				$ = Object(n.a)(Q.g),
-				K = Object(n.a)(Q.f),
-				z = Object(n.a)(Q.e),
+				z = Object(n.a)(Q.f),
+				K = Object(n.a)(Q.e),
 				W = Object(n.a)(Q.o),
 				J = Object(n.a)(Q.n),
 				X = Object(n.a)(Q.m),
@@ -660,7 +660,7 @@
 					let p, f, O;
 					switch (t) {
 						case r.wb.Edited:
-							p = $, f = z, O = K;
+							p = $, f = K, O = z;
 							break;
 						case r.wb.Modqueue:
 							p = V, f = G, O = H;
@@ -688,7 +688,7 @@
 						}),
 						j = await Object(c.b)(m(), v);
 					if (!j.ok) return n(f(j.error)), void n(Object(i.f)({
-						kind: w.b.Error,
+						kind: N.b.Error,
 						text: s.fbt._("Oh no! Something went wrong!", null, {
 							hk: "16O2Sk"
 						})
@@ -697,7 +697,7 @@
 						users: h,
 						..._
 					} = M(j.body.data);
-					Object(N.b)(d()) && n(B(h)), n(O({
+					Object(w.b)(d()) && n(B(h)), n(O({
 						listingKey: e,
 						page: `${o.page||P.b}`,
 						response: _
@@ -723,7 +723,7 @@
 						}),
 						p = await Object(c.b)(n(), b);
 					if (!p.ok) return void t(Object(i.f)({
-						kind: w.b.Error,
+						kind: N.b.Error,
 						text: s.fbt._("Oh no! Something went wrong!", null, {
 							hk: "16O2Sk"
 						})
@@ -736,7 +736,7 @@
 					} = u;
 					r(Object(d.c)());
 					const p = n(),
-						O = Object(N.i)(p),
+						O = Object(w.i)(p),
 						v = p.user.account && p.user.account.displayText;
 					Object(l.d)(l.a.ModQueue);
 					const j = Object(l.c)(l.a.ModQueue);
@@ -891,7 +891,7 @@
 							e === P.a.Remove && l && O.length > 1 && (t = s.fbt._("Add a removal reason", null, {
 								hk: "3gGDCl"
 							}), n = Object(a.fetchReasonsAndOpenModal)(l, O));
-							const m = Object(i.e)(o, w.b.Undo, s.fbt._("UNDO", null, {
+							const m = Object(i.e)(o, N.b.Undo, s.fbt._("UNDO", null, {
 								hk: "49SEAI"
 							}), (() => async (e, t, o) => {
 								let {
@@ -912,7 +912,7 @@
 									ids: u,
 									username: l
 								})) : (e(ue(m.error)), e(Object(i.f)({
-									kind: w.b.Error,
+									kind: N.b.Error,
 									text: s.fbt._("Oh no! Something went wrong!", null, {
 										hk: "16O2Sk"
 									})
@@ -920,14 +920,14 @@
 							})(), t, n);
 							r(Object(i.f)(m))
 						} else {
-							const e = Object(i.e)(o, w.b.SuccessMod);
+							const e = Object(i.e)(o, N.b.SuccessMod);
 							r(Object(i.f)(e))
 						}
 					} else {
 						r(Object(d.a)(_.error));
 						const e = Object(i.e)(s.fbt._("Oh no! Something went wrong!", null, {
 							hk: "16O2Sk"
-						}), w.b.Error);
+						}), N.b.Error);
 						r(Object(i.f)(e))
 					}
 				}, me = Object(n.a)(Q.a), be = Object(n.a)(Q.c), pe = Object(n.a)(Q.d)
@@ -1212,8 +1212,8 @@
 				C = o("./src/reddit/actions/comment/index.ts"),
 				M = o("./src/reddit/actions/comment/authoring.ts"),
 				P = o("./src/reddit/actions/comment/moderation.ts"),
-				w = o("./src/reddit/actions/modal.ts"),
-				N = o("./src/reddit/actions/post.ts"),
+				N = o("./src/reddit/actions/modal.ts"),
+				w = o("./src/reddit/actions/post.ts"),
 				L = o("./src/reddit/actions/toaster.ts"),
 				D = o("./src/reddit/constants/modals.ts"),
 				T = o("./src/lib/makeApiRequest/index.ts"),
@@ -1240,8 +1240,8 @@
 				H = o("./src/reddit/helpers/r2/normalizeCommentFromR2/index.ts"),
 				G = o("./src/reddit/helpers/routeKey/index.ts"),
 				$ = o("./src/reddit/models/ModQueue/index.ts"),
-				K = o("./src/reddit/models/PostDraft/index.ts"),
-				z = o("./src/reddit/models/RemovalReason/index.ts"),
+				z = o("./src/reddit/models/PostDraft/index.ts"),
+				K = o("./src/reddit/models/RemovalReason/index.ts"),
 				W = o("./src/reddit/models/Toast/index.ts"),
 				J = o("./src/reddit/selectors/comments.ts"),
 				X = o("./src/reddit/selectors/platform.ts");
@@ -1345,7 +1345,7 @@
 					d.features.removalReasons.reasonOrder[e] && d.features.removalReasons.reasonOrder[e].length > 0 || o(te(e)), o(pe({
 						subredditId: e,
 						itemIds: t
-					})), o(Object(w.i)(D.a.ADD_REMOVAL_REASON))
+					})), o(Object(N.i)(D.a.ADD_REMOVAL_REASON))
 				}, Oe = Object(A.a)("REMOVALREASONS__SUBMIT_PENDING"), ve = Object(A.a)("REMOVALREASONS__SUBMIT_SUCCESS"), je = Object(A.a)("REMOVALREASONS__SUBMIT_FAILED"), he = Object(A.a)("REMOVALREASONS__MESSAGE_PENDING"), _e = Object(A.a)("REMOVALREASONS__MESSAGE_PRIVATE_SUCCESS"), Se = Object(A.a)("REMOVALREASONS__MESSAGE_PUBLIC_SUCCESS"), ge = Object(A.a)("REMOVALREASONS__MESSAGE_FAILED"), Re = (e, t, o, s, r, n) => async (d, a, i) => {
 					let {
 						apiContext: c
@@ -1353,9 +1353,9 @@
 					const u = a(),
 						l = u.user.account && u.user.account.displayText,
 						m = e[0],
-						b = Object(V.a)(m) ? z.e.Post : z.e.Comment,
-						p = b === z.e.Post ? u.posts.models[m] : u.features.comments.models[m],
-						f = b === z.e.Post ? N.S : C.j;
+						b = Object(V.a)(m) ? K.e.Post : K.e.Comment,
+						p = b === K.e.Post ? u.posts.models[m] : u.features.comments.models[m],
+						f = b === K.e.Post ? w.S : C.j;
 					if (!p || !l) return !1;
 					d(Oe()), d(f({
 						[m]: {
@@ -1380,9 +1380,9 @@
 									isLocked: n,
 									type: s
 								},
-								a = await B(c(), Object(z.h)(r, b), b);
+								a = await B(c(), Object(K.h)(r, b), b);
 							if (a.ok) {
-								if ([z.f.Public, z.f.PublicAsSubreddit].includes(s)) {
+								if ([K.f.Public, K.f.PublicAsSubreddit].includes(s)) {
 									if (d(Se()), a.body) {
 										const e = Object(H.a)(a.body),
 											t = {
@@ -1395,8 +1395,8 @@
 										if (r || (r = Object(k.a)(e.postId, null, {
 												sort: E.x,
 												hasSortParam: !0
-											})), b === z.e.Post) {
-											const o = Object(x.a)(K.c.replyToPost, m);
+											})), b === K.e.Post) {
+											const o = Object(x.a)(z.c.replyToPost, m);
 											d(Object(M.r)({
 												...t,
 												headCommentId: Object(J.w)(u, {
@@ -1415,8 +1415,8 @@
 													isStickied: !1
 												}
 											}))
-										} else if (b === z.e.Comment) {
-											const e = Object(x.a)(K.c.replyToComment, p.id),
+										} else if (b === K.e.Comment) {
+											const e = Object(x.a)(z.c.replyToComment, p.id),
 												o = Object(J.j)(u, {
 													commentId: m,
 													commentsPageKey: r
@@ -1483,7 +1483,7 @@
 									title: t.title,
 									type: r
 								},
-								n = await B(c(), Object(z.h)(s, z.e.Bulk), z.e.Bulk);
+								n = await B(c(), Object(K.h)(s, K.e.Bulk), K.e.Bulk);
 							n.ok ? (d(_e()), d(m)) : d(ge(n.error))
 						} else d(m)
 					} else d(je(p.error))
@@ -1716,4 +1716,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModQueue.b1f35816bd12cfa23445.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModQueue.b040866193a7f75d965f.js.map

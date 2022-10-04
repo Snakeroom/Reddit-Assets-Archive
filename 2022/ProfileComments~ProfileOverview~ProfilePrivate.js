@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfileComments~ProfileOverview~ProfilePrivate.9dbb9985e3a9c7b8b4d1.js
-// Retrieved at 10/4/2022, 1:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfileComments~ProfileOverview~ProfilePrivate.1f96358ed3bc627ca58c.js
+// Retrieved at 10/4/2022, 3:10:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfileComments~ProfileOverview~ProfilePrivate"], {
 		"./node_modules/lodash/take.js": function(e, t, s) {
@@ -4128,14 +4128,14 @@
 						...m,
 						variables: t
 					});
-					return !!Object(i.c)(s) && (s.body.data.subredditInfoById.allowedPostTypes || []).includes(f.D.Talk)
+					return !!Object(i.c)(s) && (s.body.data.subredditInfoById.allowedPostTypes || []).includes(f.E.Talk)
 				}, g = async (e, t) => {
 					var s, n;
 					const o = await Object(r.a)(e, {
 						...u,
 						variables: t
 					});
-					return !!Object(i.c)(o) && (null !== (n = null === (s = o.body.data.profileByName) || void 0 === s ? void 0 : s.allowedPostTypes) && void 0 !== n ? n : []).includes(f.D.Talk)
+					return !!Object(i.c)(o) && (null !== (n = null === (s = o.body.data.profileByName) || void 0 === s ? void 0 : s.allowedPostTypes) && void 0 !== n ? n : []).includes(f.E.Talk)
 				}, O = async e => {
 					var t;
 					const s = await Object(r.a)(e, l);
@@ -4179,10 +4179,10 @@
 						hk: "2mGf21"
 					})
 				}, I = e => e.data.prepareAudioRoom || e.data.prepareAudioRoomOnProfile, S = {
-					[f.F.ServiceError]: n.fbt._("Something's wrong with the talk service right now. Check back later.", null, {
+					[f.G.ServiceError]: n.fbt._("Something's wrong with the talk service right now. Check back later.", null, {
 						hk: "3XqPJS"
 					}),
-					[f.F.UserNotAuthorized]: n.fbt._("You don't have permission to start talks in this community.", null, {
+					[f.G.UserNotAuthorized]: n.fbt._("You don't have permission to start talks in this community.", null, {
 						hk: "1XY1Ss"
 					})
 				}, N = (e, t) => Object(r.a)(e, {
@@ -4655,4 +4655,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileComments~ProfileOverview~ProfilePrivate.9dbb9985e3a9c7b8b4d1.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileComments~ProfileOverview~ProfilePrivate.1f96358ed3bc627ca58c.js.map

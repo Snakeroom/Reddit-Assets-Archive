@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/index.eda25b4dac2c4f7d9407.js
-// Retrieved at 9/29/2022, 4:30:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/index.41226d7f1ed84e11c54a.js
+// Retrieved at 10/4/2022, 3:10:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["index"], {
 		"./src/reddit/components/Econ/Audio/MuteIcon.tsx": function(e, t, n) {
@@ -749,8 +749,8 @@
 				R = n("./src/reddit/components/Econ/Prediction/TournamentPostBody/PredictionsCarousel/PredictionsProgress/index.m.less"),
 				V = n.n(R);
 
-			function F() {
-				return (F = Object.assign || function(e) {
+			function G() {
+				return (G = Object.assign || function(e) {
 					for (var t = 1; t < arguments.length; t++) {
 						var n = arguments[t];
 						for (var o in n) Object.prototype.hasOwnProperty.call(n, o) && (e[o] = n[o])
@@ -758,7 +758,7 @@
 					return e
 				}).apply(this, arguments)
 			}
-			const G = e => {
+			const F = e => {
 				let {
 					value: t,
 					count: n,
@@ -767,7 +767,7 @@
 				} = e;
 				const i = Object(a.e)(f.db),
 					c = Math.floor(100 * t / n);
-				return r.a.createElement("div", F({
+				return r.a.createElement("div", G({
 					className: Object(p.a)(V.a.container, o, {
 						[V.a.isNightMode]: i
 					})
@@ -789,9 +789,9 @@
 				U = n("./src/reddit/components/Econ/Prediction/PredictionModal/index.tsx"),
 				$ = n("./src/reddit/actions/economics/helpers/index.ts"),
 				J = n("./src/reddit/actions/economics/predictions/index.ts"),
-				D = n("./src/reddit/actions/post.ts"),
-				H = n("./src/reddit/components/Econ/Prediction/hooks/useDelayedUpvoteAnimation.tsx"),
-				X = n("./src/reddit/helpers/trackers/predictions.ts"),
+				H = n("./src/reddit/actions/post.ts"),
+				X = n("./src/reddit/components/Econ/Prediction/hooks/useDelayedUpvoteAnimation.tsx"),
+				D = n("./src/reddit/helpers/trackers/predictions.ts"),
 				Q = n("./src/reddit/hooks/useToast.tsx"),
 				Y = n("./src/reddit/models/Vote/index.ts"),
 				q = n("./src/reddit/selectors/experiments/econ/index.ts");
@@ -832,7 +832,7 @@
 						u = Object(Q.a)(),
 						{
 							startDelayedUpvoteAnimation: m
-						} = Object(H.a)(n.id),
+						} = Object(X.a)(n.id),
 						{
 							id: p,
 							endsAt: b,
@@ -860,12 +860,12 @@
 							C || E || k(e.id)
 						},
 						predict: async t => {
-							if (t.currency === l.a.Coins && t.amount > s) return Object($.promptUserToBuyMoreCoins)(), void c(X.b);
+							if (t.currency === l.a.Coins && t.amount > s) return Object($.promptUserToBuyMoreCoins)(), void c(D.b);
 							if (C) return u(W._("Error: Failed to make prediction. This prediction has already ended", null, {
 								hk: "22UWEr"
 							})), void k(null);
 							if (!p || !O) throw new Error("Invalid arguments, optionId and pollId must be strings");
-							j(!0), c(Object(X.o)({
+							j(!0), c(Object(D.o)({
 								pollId: p,
 								selectedNumberTokens: t.amount
 							}));
@@ -877,7 +877,7 @@
 									pollId: p,
 									tournamentId: e,
 									tournamentPostId: n.id
-								})), i && x < Y.a.upvoted && (o(Object(D.kb)(v)), o(Object(D.kb)(p)), m()), j(!1), k(null), P(!0)
+								})), i && x < Y.a.upvoted && (o(Object(H.kb)(v)), o(Object(H.kb)(p)), m()), j(!1), k(null), P(!0)
 							} catch (r) {
 								j(!1), k(null), u(W._("Error: Failed to make prediction, please try again later", null, {
 									hk: "1tECsx"
@@ -983,7 +983,7 @@
 						name: "caret_right",
 						className: ne.a.icon,
 						isFilled: !0
-					})), r.a.createElement(G, {
+					})), r.a.createElement(F, {
 						className: ne.a.counter,
 						value: s,
 						count: n.length
@@ -1097,14 +1097,14 @@
 						...u,
 						variables: t
 					});
-					return !!Object(s.c)(n) && (n.body.data.subredditInfoById.allowedPostTypes || []).includes(v.D.Talk)
+					return !!Object(s.c)(n) && (n.body.data.subredditInfoById.allowedPostTypes || []).includes(v.E.Talk)
 				}, h = async (e, t) => {
 					var n, o;
 					const r = await Object(a.a)(e, {
 						...m,
 						variables: t
 					});
-					return !!Object(s.c)(r) && (null !== (o = null === (n = r.body.data.profileByName) || void 0 === n ? void 0 : n.allowedPostTypes) && void 0 !== o ? o : []).includes(v.D.Talk)
+					return !!Object(s.c)(r) && (null !== (o = null === (n = r.body.data.profileByName) || void 0 === n ? void 0 : n.allowedPostTypes) && void 0 !== o ? o : []).includes(v.E.Talk)
 				}, j = async e => {
 					var t;
 					const n = await Object(a.a)(e, l);
@@ -1148,10 +1148,10 @@
 						hk: "2mGf21"
 					})
 				}, I = e => e.data.prepareAudioRoom || e.data.prepareAudioRoomOnProfile, S = {
-					[v.F.ServiceError]: o.fbt._("Something's wrong with the talk service right now. Check back later.", null, {
+					[v.G.ServiceError]: o.fbt._("Something's wrong with the talk service right now. Check back later.", null, {
 						hk: "3XqPJS"
 					}),
-					[v.F.UserNotAuthorized]: o.fbt._("You don't have permission to start talks in this community.", null, {
+					[v.G.UserNotAuthorized]: o.fbt._("You don't have permission to start talks in this community.", null, {
 						hk: "1XY1Ss"
 					})
 				}, N = (e, t) => Object(a.a)(e, {
@@ -1338,4 +1338,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/index.eda25b4dac2c4f7d9407.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/index.41226d7f1ed84e11c54a.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ReportFlowNew.bb946717ba499ad921a1.js
-// Retrieved at 10/4/2022, 1:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ReportFlowNew.53a3c5654a02a6540057.js
+// Retrieved at 10/4/2022, 3:10:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ReportFlowNew"], {
 		"./src/reddit/actions/blockedRedditors.ts": function(e, t, o) {
@@ -809,14 +809,14 @@
 						...u,
 						variables: t
 					});
-					return !!Object(i.c)(o) && (o.body.data.subredditInfoById.allowedPostTypes || []).includes(O.D.Talk)
+					return !!Object(i.c)(o) && (o.body.data.subredditInfoById.allowedPostTypes || []).includes(O.E.Talk)
 				}, w = async (e, t) => {
 					var o, r;
 					const s = await Object(n.a)(e, {
 						...p,
 						variables: t
 					});
-					return !!Object(i.c)(s) && (null !== (r = null === (o = s.body.data.profileByName) || void 0 === o ? void 0 : o.allowedPostTypes) && void 0 !== r ? r : []).includes(O.D.Talk)
+					return !!Object(i.c)(s) && (null !== (r = null === (o = s.body.data.profileByName) || void 0 === o ? void 0 : o.allowedPostTypes) && void 0 !== r ? r : []).includes(O.E.Talk)
 				}, j = async e => {
 					var t;
 					const o = await Object(n.a)(e, l);
@@ -860,10 +860,10 @@
 						hk: "2mGf21"
 					})
 				}, L = e => e.data.prepareAudioRoom || e.data.prepareAudioRoomOnProfile, y = {
-					[O.F.ServiceError]: r.fbt._("Something's wrong with the talk service right now. Check back later.", null, {
+					[O.G.ServiceError]: r.fbt._("Something's wrong with the talk service right now. Check back later.", null, {
 						hk: "3XqPJS"
 					}),
-					[O.F.UserNotAuthorized]: r.fbt._("You don't have permission to start talks in this community.", null, {
+					[O.G.UserNotAuthorized]: r.fbt._("You don't have permission to start talks in this community.", null, {
 						hk: "1XY1Ss"
 					})
 				}, C = (e, t) => Object(n.a)(e, {
@@ -1068,4 +1068,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ReportFlowNew.bb946717ba499ad921a1.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ReportFlowNew.53a3c5654a02a6540057.js.map
