@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/RedesignChat.38d939dabd8a7e0be4af.js
-// Retrieved at 10/4/2022, 1:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/RedesignChat.69937ce5877a69156fd8.js
+// Retrieved at 10/4/2022, 3:50:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["RedesignChat"], {
 		"./node_modules/lodash/uniqueId.js": function(e, t, n) {
@@ -25,7 +25,7 @@
 		"./src/chat/initializer.tsx": function(e, t, n) {
 			"use strict";
 			n.r(t), n.d(t, "default", (function() {
-				return xe
+				return Ce
 			}));
 			var s = n("./node_modules/react/index.js"),
 				a = n.n(s),
@@ -93,22 +93,22 @@
 						height: `${S(T.height)}px`
 					}
 				}, e.children), "HiddenPortalContainer", N.a),
-				I = C.a.wrapped(w.a, "MinimizedRedesignPortalContainer", N.a),
-				R = k,
-				L = Object(E.a)({
+				R = C.a.wrapped(w.a, "MinimizedRedesignPortalContainer", N.a),
+				I = k,
+				U = Object(E.a)({
 					container: e => e && e.container && e.container.size
 				});
 
-			function U(e) {
+			function L(e) {
 				switch (e.container) {
 					case M.a.EMBED:
 						return a.a.createElement(A, null, e.children);
 					case M.a.HIDDEN:
 						return a.a.createElement(D, null, e.children);
 					case M.a.FULL:
-						return a.a.createElement(R, null, e.children);
+						return a.a.createElement(I, null, e.children);
 					case M.a.MINIMIZED:
-						return a.a.createElement(I, null);
+						return a.a.createElement(R, null);
 					default:
 						return a.a.createElement(A, null, e.children)
 				}
@@ -123,20 +123,21 @@
 				K = n("./src/chat/customMiddleware/loggedOutPreferencesSync.ts"),
 				Y = n("./src/chat/customMiddleware/sendbirdToken.ts"),
 				Q = n("./src/chat/customMiddleware/settings.ts"),
-				V = n("./src/chat/customMiddleware/title.ts"),
-				J = n("./src/chat/customMiddleware/tokenRefresher.ts"),
-				X = n("./src/chat/customMiddleware/tracking.ts"),
-				Z = n("./src/chat/customMiddleware/unreadMessageCount.ts"),
-				ee = n("./src/chat/customMiddleware/uploadPrompt.ts"),
-				te = n("./node_modules/lodash/uniqueId.js"),
-				ne = n.n(te),
-				se = n("./src/chat/constants/theme.ts"),
-				ae = n("./src/chat/models/Theme/index.ts"),
-				ce = n("./src/chat/reducers/experiments/helpers.ts"),
-				re = n("./src/chat/reducers/meta/index.ts"),
-				ie = n("./src/chat/reducers/platform/index.ts"),
-				oe = n("./src/lib/env/index.ts");
-			const de = (e, t) => {
+				V = n("./src/chat/customMiddleware/stateObserver/index.ts"),
+				J = n("./src/chat/customMiddleware/title.ts"),
+				X = n("./src/chat/customMiddleware/tokenRefresher.ts"),
+				Z = n("./src/chat/customMiddleware/tracking.ts"),
+				ee = n("./src/chat/customMiddleware/unreadMessageCount.ts"),
+				te = n("./src/chat/customMiddleware/uploadPrompt.ts"),
+				ne = n("./node_modules/lodash/uniqueId.js"),
+				se = n.n(ne),
+				ae = n("./src/chat/constants/theme.ts"),
+				ce = n("./src/chat/models/Theme/index.ts"),
+				re = n("./src/chat/reducers/experiments/helpers.ts"),
+				ie = n("./src/chat/reducers/meta/index.ts"),
+				oe = n("./src/chat/reducers/platform/index.ts"),
+				de = n("./src/lib/env/index.ts");
+			const ue = (e, t) => {
 					var n;
 					const {
 						account: s,
@@ -168,31 +169,31 @@
 						session: i && i.unsafeLoggedOut ? null : i
 					}, t
 				},
-				ue = e => (e.meta = {
-					...re.a,
+				le = e => (e.meta = {
+					...ie.a,
 					isRedesign: !0
 				}, e),
-				le = e => {
+				he = e => {
 					if (e.user && e.user.prefs && e.user.prefs.nightmode) {
 						const {
 							NIGHT: t,
 							REDDIT: n
-						} = se.b, {
+						} = ae.b, {
 							nightmode: s
 						} = e.user.prefs, a = s ? t : n;
 						e.themes = {
-							current: ae.e[a],
+							current: ce.e[a],
 							chatTheme: null,
 							cached: {}
 						}, e.user.prefs.globalTheme = a
 					}
 					return e
 				},
-				he = (e, t, n) => {
-					const s = ne()(),
+				me = (e, t, n) => {
+					const s = se()(),
 						a = Object(c.c)(t.location, void 0, s),
 						r = Object(l.a)(Object(c.e)(a), n),
-						i = Object(ie.b)(ie.a, Object(p.e)({
+						i = Object(oe.b)(oe.a, Object(p.e)({
 							location: a,
 							action: "PUSH",
 							routeMatch: r
@@ -201,7 +202,7 @@
 						...i
 					}, e
 				},
-				me = (e, t) => {
+				be = (e, t) => {
 					var n, s, a, c, r;
 					const i = {},
 						o = null === (n = e.platform.currentPage) || void 0 === n ? void 0 : n.queryParams;
@@ -209,11 +210,11 @@
 						...null === (r = null === (c = null == e ? void 0 : e.user) || void 0 === c ? void 0 : c.experiments) || void 0 === r ? void 0 : r.byName[u],
 						isOverride: !1
 					};
-					const d = Object(ce.a)(i, o);
+					const d = Object(re.a)(i, o);
 					return t.experiments = {
 						models: {
 							...i,
-							...Object(oe.b)() ? {} : d
+							...Object(de.b)() ? {} : d
 						},
 						api: {
 							isPending: !1,
@@ -221,9 +222,11 @@
 						}
 					}, t
 				};
-			var be = n("./src/chat/reducers/index.ts"),
-				ge = n("./src/chat/routes/index.ts");
-			const fe = Object(m.a)({
+			var ge = n("./src/chat/reducers/index.ts"),
+				fe = n("./src/chat/routes/index.ts"),
+				pe = n("./src/config.ts"),
+				xe = n("./src/chat/actions/liveChat/index.ts");
+			const ve = Object(m.a)({
 					actionDispatchers: {
 						loidReceived: v.p,
 						sessionTrackerReceived: v.s
@@ -239,24 +242,25 @@
 					},
 					statsAppName: d.o.Chat
 				}),
-				pe = Object(b.a)(fe.apiContext);
+				je = Object(b.a)(ve.apiContext),
+				Oe = Object(b.a)(ve.apiContext, pe.a.gqlRealtimeUrl);
 
-			function xe(e, t) {
+			function Ce(e, t) {
 				let n = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : "/chat/minimize";
 				const s = document.getElementById("2x-container"),
 					r = document.createElement("div");
 				return s.appendChild(r), Object(u.a)({
-					reducerMap: be.a,
-					routes: ge.a,
-					apiContext: fe.apiContext,
-					gqlContext: pe.gqlContext,
+					reducerMap: ge.a,
+					routes: fe.a,
+					apiContext: ve.apiContext,
+					gqlContext: je.gqlContext,
 					appFactory: (e, t) => a.a.createElement(h.a.Provider, {
 						value: {
-							apiContext: fe.apiContext,
-							gqlContext: pe.gqlContext
+							apiContext: ve.apiContext,
+							gqlContext: je.gqlContext
 						}
 					}, function(e, t) {
-						const n = Object(j.b)(L)(U);
+						const n = Object(j.b)(U)(L);
 						return a.a.createElement("div", null, Object(O.d)(a.a.createElement(n, null, Object(y.a)(e, t)), document.body))
 					}(e, t)),
 					appName: d.o.Chat,
@@ -265,16 +269,17 @@
 						initialIndex: 0
 					}),
 					customMiddleware: [o.a.withExtraArgument({
-						routes: ge.a,
-						apiContext: fe.apiContext,
-						gqlContext: pe.gqlContext
-					}), fe.middleware, J.a, Q.a, Y.a, $.a, K.a, Object(X.a)(t), H.a, z.a, q.a, F.a, Z.a, W.a, V.a, ee.a, G.a],
+						routes: fe.a,
+						apiContext: ve.apiContext,
+						gqlContext: je.gqlContext,
+						gqlRealtimeContext: Oe.gqlContext
+					}), ve.middleware, X.a, Q.a, Y.a, $.a, K.a, Object(Z.a)(t), H.a, V.a, z.a, q.a, F.a, ee.a, W.a, J.a, te.a, G.a],
 					modifyInitialData: t => {
 						let {
 							initialData: n,
 							browserHistory: s
 						} = t;
-						return n = de(e, n), n = ue(n), n = le(n), n = he(n, s, ge.a), n = me(e, n)
+						return n = ue(e, n), n = le(n), n = he(n), n = me(n, s, fe.a), n = be(e, n)
 					},
 					preRender: e => {
 						let {
@@ -288,6 +293,12 @@
 						}), "undefined" != typeof window && window.addEventListener("load", async () => {
 							s.dispatch(Object(f.a)(!1, !1))
 						}), {}
+					},
+					postRender: e => {
+						let {
+							store: t
+						} = e;
+						t.dispatch(xe.fetchActiveUsersInLiveChats)
 					},
 					target: r,
 					timingsSampleRate: 1
@@ -642,4 +653,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RedesignChat.38d939dabd8a7e0be4af.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RedesignChat.69937ce5877a69156fd8.js.map

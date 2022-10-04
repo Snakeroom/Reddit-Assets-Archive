@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.03ee9ce25f40827c3943.js
-// Retrieved at 10/4/2022, 3:10:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.a4d40f9d00e3e733af42.js
+// Retrieved at 10/4/2022, 3:50:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Chat~Governance~Reddit"], {
 		"./assets/fonts/IBMPlexSans/font.less": function(e, t, i) {},
@@ -913,7 +913,7 @@
 					_ = Object(s.c)(o.r.CHAT, o.A.CHAT_SHOW_THEMES_PROMPT_COUNT_KEY, i || "unknown");
 					const n = Object(s.b)(_);
 					let r = null == n ? 0 : n;
-					Object(l.s)(t) && !Object(u.e)(t) && e.dispatch(Object(d.chatThemeShowPromptCountSetAction)(++r))
+					Object(l.t)(t) && !Object(u.e)(t) && e.dispatch(Object(d.chatThemeShowPromptCountSetAction)(++r))
 				});
 			t.a = e => {
 				if ("undefined" == typeof window) return a.a;
@@ -2370,7 +2370,7 @@
 					const {
 						currentPage: t
 					} = e.platform, i = null == t ? void 0 : t.urlParams.postId;
-					if (i) return Object(_.b)(e, i)
+					if (i) return Object(_.c)(e, i)
 				},
 				E = e => {
 					const {
@@ -2630,19 +2630,19 @@
 		},
 		"./src/chat/selectors/experiments.ts": function(e, t, i) {
 			"use strict";
-			i.d(t, "w", (function() {
+			i.d(t, "x", (function() {
 				return E
-			})), i.d(t, "y", (function() {
+			})), i.d(t, "z", (function() {
 				return S
-			})), i.d(t, "s", (function() {
+			})), i.d(t, "t", (function() {
 				return T
 			})), i.d(t, "f", (function() {
 				return O
-			})), i.d(t, "t", (function() {
-				return I
-			})), i.d(t, "v", (function() {
-				return R
 			})), i.d(t, "u", (function() {
+				return I
+			})), i.d(t, "w", (function() {
+				return R
+			})), i.d(t, "v", (function() {
 				return F
 			})), i.d(t, "l", (function() {
 				return C
@@ -2654,7 +2654,7 @@
 				return j
 			})), i.d(t, "p", (function() {
 				return P
-			})), i.d(t, "x", (function() {
+			})), i.d(t, "y", (function() {
 				return D
 			})), i.d(t, "c", (function() {
 				return x
@@ -2680,13 +2680,15 @@
 				return K
 			})), i.d(t, "q", (function() {
 				return z
+			})), i.d(t, "s", (function() {
+				return Y
 			}));
 			i("./node_modules/lodash/isEmpty.js");
 			var n, r, s = i("./node_modules/lodash/memoize.js"),
 				o = i.n(s),
 				d = i("./node_modules/reselect/es/index.js");
 			! function(e) {
-				e.EconRpanAvatar = "web_econ_avatar_in_rpan", e.UiRefreshBubblePreset = "ui_refresh_bubble_preset", e.D2xChatNicknamePainted = "d2x_chat_nickname_painted", e.D2XChatQuickActionsChannels = "d2x_chat_quickactions_channels", e.D2xChatFilterGroupDirect = "d2x_chat_filter_group_direct", e.ChatMediaShareImages = "chat_mediashare_images", e.ChatMediaShareImagesGroups = "group_chat_mediashare_images", e.ChatImagesRenderKillSwitch = "web_chat_mediashare_images_killswitch", e.ChatInviteMessagePreview = "chat_preview_comment", e.D2XChatShortCutsSlashCommand = "d2x_chat_shortcuts_slash_command", e.ChatLinkSharingGroup = "chat_link_sharing_group", e.ChatLinkSharingDirect = "chat_link_sharing_direct", e.AEBlockedUserChatWeb = "ae_blocked_user_chat_web", e.ChatReactions = "chat_reactions", e.D2XChatReactionsKillSwitch = "d2x_chat_reactions_killswitch", e.BlockedUserChatWebKillSwitch = "d2x_blocked_user_chat_web_killswitch", e.ChatSettingsRevampKillSwitch = "d2x_chat_settings_revamp_killswitch", e.LiveChatInChatTab = "d2x_corechat_live_chat_in_chat_tab", e.LiveChatCommentStreamingKillSwitch = "d2x_corechat_live_comment_stream_killswitch"
+				e.EconRpanAvatar = "web_econ_avatar_in_rpan", e.UiRefreshBubblePreset = "ui_refresh_bubble_preset", e.D2xChatNicknamePainted = "d2x_chat_nickname_painted", e.D2XChatQuickActionsChannels = "d2x_chat_quickactions_channels", e.D2xChatFilterGroupDirect = "d2x_chat_filter_group_direct", e.ChatMediaShareImages = "chat_mediashare_images", e.ChatMediaShareImagesGroups = "group_chat_mediashare_images", e.ChatImagesRenderKillSwitch = "web_chat_mediashare_images_killswitch", e.ChatInviteMessagePreview = "chat_preview_comment", e.D2XChatShortCutsSlashCommand = "d2x_chat_shortcuts_slash_command", e.ChatLinkSharingGroup = "chat_link_sharing_group", e.ChatLinkSharingDirect = "chat_link_sharing_direct", e.AEBlockedUserChatWeb = "ae_blocked_user_chat_web", e.ChatReactions = "chat_reactions", e.D2XChatReactionsKillSwitch = "d2x_chat_reactions_killswitch", e.BlockedUserChatWebKillSwitch = "d2x_blocked_user_chat_web_killswitch", e.ChatSettingsRevampKillSwitch = "d2x_chat_settings_revamp_killswitch", e.LiveChatInChatTab = "d2x_corechat_live_chat_in_chat_tab", e.LiveChatCommentStreamingKillSwitch = "d2x_corechat_live_comment_stream_killswitch", e.LiveChatUserCount = "d2x_live_chat_user_count"
 			}(n || (n = {})),
 			function(e) {
 				e.Control1 = "control_1", e.Control2 = "control_2"
@@ -2750,7 +2752,8 @@
 				H = Object(d.a)(e => y(e, n.BlockedUserChatWebKillSwitch), e => e === a),
 				W = Object(d.a)(e => y(e, n.ChatSettingsRevampKillSwitch), e => e === a),
 				K = Object(d.a)(e => y(e, n.LiveChatInChatTab), () => Object(f.c)(), (e, t) => e === a && !t),
-				z = Object(d.a)(e => y(e, n.LiveChatCommentStreamingKillSwitch), e => e === a)
+				z = Object(d.a)(e => y(e, n.LiveChatCommentStreamingKillSwitch), e => e === a),
+				Y = Object(d.a)(e => y(e, n.LiveChatUserCount), e => e === a)
 		},
 		"./src/chat/selectors/inviteLink.ts": function(e, t, i) {
 			"use strict";
@@ -2799,12 +2802,14 @@
 			"use strict";
 			i.d(t, "a", (function() {
 				return s
-			})), i.d(t, "b", (function() {
-				return d
 			})), i.d(t, "c", (function() {
-				return a
+				return d
 			})), i.d(t, "d", (function() {
+				return a
+			})), i.d(t, "e", (function() {
 				return l
+			})), i.d(t, "b", (function() {
+				return u
 			}));
 			i("./node_modules/core-js/modules/web.dom.iterable.js");
 			var n = i("./node_modules/reselect/es/index.js"),
@@ -2813,7 +2818,8 @@
 				o = (e, t) => s(t.lastCommentedAt || "") - s(e.lastCommentedAt || ""),
 				d = (e, t) => e.channels.liveChat.models[t],
 				a = e => Object.keys(e.channels.liveChat.models).map(t => d(e, t)).filter(r.a).sort(o),
-				l = Object(n.a)(d, e => !!e && s(e.lastReadAt || "") < s(e.lastCommentedAt || ""))
+				l = Object(n.a)(d, e => !!e && s(e.lastReadAt || "") < s(e.lastCommentedAt || "")),
+				u = Object(n.a)((e, t) => t, e => e.activeUserCountByLiveChatId, (e, t) => t[e])
 		},
 		"./src/chat/selectors/members.ts": function(e, t, i) {
 			"use strict";
@@ -3405,7 +3411,7 @@
 					}
 				},
 				F = (e, t) => ({
-					number_unreads: Object(_.d)(e, t) ? 1 : 0
+					number_unreads: Object(_.e)(e, t) ? 1 : 0
 				}),
 				C = e => ({
 					number_channels: Object(u.x)(e)
@@ -3560,11 +3566,11 @@
 				apiPassThroughHeaders: Object(r.e)({}.API_PASS_THROUGH_HEADERS || ""),
 				appName: {}.APP_NAME || "desktop2x",
 				assetPath: "https://www.redditstatic.com/desktop2x",
-				buildNumber: Object(r.c)("174495"),
+				buildNumber: Object(r.c)("174508"),
 				chatHelpUrl: {}.CHAT_HELP_URL || "https://reddit.zendesk.com/hc/en-us/sections/360008805652-Chat",
 				hlsVersion: "hls 0.12.4",
 				dashVersion: "dash 4.4.0",
-				buildTimestamp: Object(r.b)("1664908763"),
+				buildTimestamp: Object(r.b)("1664910573"),
 				cookieDomain: ".reddit.com",
 				giphyApiKey: "k2kwyMA6VeyHM6ZRT96OXDGaersnx73Z",
 				mediaUrl: "https://www.redditmedia.com",
@@ -3583,6 +3589,7 @@
 				oauthUrl: "https://oauth.reddit.com",
 				gqlUrl: "https://gql.reddit.com",
 				gqlRealtime2Url: {}.GQL_REALTIME2_URL || "https://gql-realtime-2.reddit.com/query",
+				gqlRealtimeUrl: {}.GQL_REALTIME_URL || "https://gql-realtime.reddit.com/query",
 				matrixChatUrl: "https://chat.reddit.com",
 				sendbirdServiceUrl: "https://s.reddit.com",
 				sendbirdAppId: "2515BDA8-9D3A-47CF-9325-330BC37ADA13",
@@ -6240,14 +6247,14 @@
 					}))
 				},
 				Y = (e, t, i) => {
-					console.log("%cStarting Raven %crelease %c1dfe17004719bffab947a92aa9415a0312487dfa-production" + ` %cpublic url %c${y.a.sentryClientPublicURL}`, "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
+					console.log("%cStarting Raven %crelease %cc045bbe57f635a871d71de8736a10b645efa2db9-production" + ` %cpublic url %c${y.a.sentryClientPublicURL}`, "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
 					let n = [];
 					n = [new RegExp(`^${y.a.assetPath}`, "i")];
 					o.e({
 						attachStacktrace: !0,
 						dsn: y.a.sentryClientPublicURL,
 						whitelistUrls: n,
-						release: "1dfe17004719bffab947a92aa9415a0312487dfa-production",
+						release: "c045bbe57f635a871d71de8736a10b645efa2db9-production",
 						environment: "production",
 						ignoreErrors: ["$ is not defined"],
 						integrations: [...Object(L.d)(), new d.Integrations.Breadcrumbs({
@@ -6783,7 +6790,7 @@
 							settings: r,
 							statusCode: s,
 							type: o,
-							releaseClient: "1dfe17004719bffab947a92aa9415a0312487dfa-production",
+							releaseClient: "c045bbe57f635a871d71de8736a10b645efa2db9-production",
 							appName: t.statsAppName,
 							error: n ? JSON.parse(Object(l.a)(n)) : void 0
 						},
@@ -49737,4 +49744,4 @@
 		"ignored /drone/src/node_modules/readable-stream/lib/internal/streams util": function(e, t) {}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.03ee9ce25f40827c3943.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.a4d40f9d00e3e733af42.js.map
