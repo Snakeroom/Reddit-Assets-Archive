@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SearchResults.156f769512ebb2182de3.js
-// Retrieved at 10/4/2022, 1:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SearchResults.5ee7cbeba8838d1bf21b.js
+// Retrieved at 10/5/2022, 2:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SearchResults"], {
 		"./src/devPlatform/components/ContextActions/ContextActionsLoader.tsx": function(e, t, s) {
@@ -5697,12 +5697,12 @@
 						rtJsonElementProps: a
 					});
 					switch (o) {
-						case h.Tf.SmIcon:
+						case h.Rf.SmIcon:
 							return r.a.createElement(p, {
 								subredditName: n,
 								rtJsonElementProps: a
 							});
-						case h.Tf.SmIconHc:
+						case h.Rf.SmIconHc:
 							return r.a.createElement(p, {
 								subredditName: n,
 								isHoverable: !0,
@@ -7137,10 +7137,10 @@
 				o = s("./node_modules/reselect/es/index.js");
 			const a = Object(o.a)(e => Object(r.c)(e, {
 				experimentEligibilitySelector: r.a,
-				experimentName: n.Df
+				experimentName: n.Bf
 			}), e => ({
-				isSubEnlarged: e === n.Rf.Variant1 || e === n.Rf.Variant3,
-				withCommunityDescription: e === n.Rf.Variant2 || e === n.Rf.Variant3
+				isSubEnlarged: e === n.Pf.Variant1 || e === n.Pf.Variant3,
+				withCommunityDescription: e === n.Pf.Variant2 || e === n.Pf.Variant3
 			}))
 		},
 		"./src/reddit/selectors/experiments/web2x_cta.ts": function(e, t, s) {
@@ -7152,10 +7152,10 @@
 				r = s("./src/reddit/constants/experiments.ts"),
 				o = s("./src/reddit/helpers/chooseVariant/index.ts");
 			const a = Object(n.a)(e => Object(o.c)(e, {
-					experimentName: r.ig,
+					experimentName: r.gg,
 					experimentEligibilitySelector: o.a
 				}), e => e),
-				i = Object(n.a)(a, e => e === r.Zf)
+				i = Object(n.a)(a, e => e === r.Xf)
 		},
 		"./src/reddit/selectors/searchQueryId.ts": function(e, t, s) {
 			"use strict";
@@ -7187,12 +7187,12 @@
 				c = e => {
 					return Object(o.c)(e, {
 						experimentEligibilitySelector: i,
-						experimentName: n.Mf
+						experimentName: n.Kf
 					}) || ""
 				},
 				d = e => {
 					const t = c(e);
-					return t === n.Tf.SmIcon || t === n.Tf.SmIconHc
+					return t === n.Rf.SmIcon || t === n.Rf.SmIconHc
 				},
 				l = (e, t) => {
 					let {
@@ -7218,4 +7218,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SearchResults.156f769512ebb2182de3.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SearchResults.5ee7cbeba8838d1bf21b.js.map

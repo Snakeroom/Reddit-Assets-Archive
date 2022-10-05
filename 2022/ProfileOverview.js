@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfileOverview.e40071f5d18a1ad9d429.js
-// Retrieved at 10/4/2022, 1:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfileOverview.bc7656cd4850f9f0622a.js
+// Retrieved at 10/5/2022, 2:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfileOverview"], {
 		"./node_modules/linkify-it/index.js": function(e, t, s) {
@@ -3130,7 +3130,7 @@
 						isOptionalTextEnabled: $e,
 						showCTAExperimentDesign: et,
 						isModQueueDisplayEnabled: tt
-					} = e, st = Object(v.a)(), nt = Ge, rt = !!e.redditStyle || !!e["data-redditstyle"], ot = rt ? void 0 : O, at = Object(l.a)(Ie), it = Fe && at, ct = Object(c.a)(Ie), dt = Object(d.a)(Ie), lt = Object(K.c)(De), ut = Object(W.a)(De), mt = !!De.media && De.media.type === y.o.RTJSON, pt = He && mt, bt = s ? s - X.a : void 0, ht = !!De.recommendationContext, ft = !(le && ye || Ce) || ht && ye, _t = (e => e === Oe.jf.OnlyTitles)(Me) && !Object(pe.a)(De), xt = (e => e === Oe.jf.MediumHeight)(Me) && !Object(pe.a)(De), gt = (e => {
+					} = e, st = Object(v.a)(), nt = Ge, rt = !!e.redditStyle || !!e["data-redditstyle"], ot = rt ? void 0 : O, at = Object(l.a)(Ie), it = Fe && at, ct = Object(c.a)(Ie), dt = Object(d.a)(Ie), lt = Object(K.c)(De), ut = Object(W.a)(De), mt = !!De.media && De.media.type === y.o.RTJSON, pt = He && mt, bt = s ? s - X.a : void 0, ht = !!De.recommendationContext, ft = !(le && ye || Ce) || ht && ye, _t = (e => e === Oe.hf.OnlyTitles)(Me) && !Object(pe.a)(De), xt = (e => e === Oe.hf.MediumHeight)(Me) && !Object(pe.a)(De), gt = (e => {
 						var t;
 						const {
 							post: s,
@@ -6601,7 +6601,7 @@
 				a = s("./src/reddit/selectors/experiments/nsfwListingBelow.ts");
 			const i = e => {
 					const t = Object(a.a)(e);
-					return Boolean(t) && !Object(r.tg)(t)
+					return Boolean(t) && !Object(r.rg)(t)
 				},
 				c = Object(n.a)(i, o.d, (e, t) => e && !t)
 		},
@@ -6610,4 +6610,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileOverview.e40071f5d18a1ad9d429.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileOverview.bc7656cd4850f9f0622a.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostCreation.0bc99740048e798dd590.js
-// Retrieved at 10/4/2022, 3:10:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostCreation.d75e3ab2426f8aa60032.js
+// Retrieved at 10/5/2022, 2:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostCreation", "ChatMessageInput~MembershipPaywallPage~RichTextEditor", "ContributorRequestButton"], {
 		"./node_modules/autosize/dist/autosize.js": function(e, t, n) {
@@ -35886,7 +35886,7 @@
 			const s = e => Object(r.c)(e, {
 				experimentName: o.Ge,
 				experimentEligibilitySelector: r.a
-			}) === o.Pe.Enabled
+			}) === o.Oe.Enabled
 		},
 		"./src/reddit/selectors/experiments/presence.ts": function(e, t, n) {
 			"use strict";
@@ -35898,7 +35898,7 @@
 			const s = e => {
 				return Object(r.c)(e, {
 					experimentEligibilitySelector: r.a,
-					experimentName: o.df
+					experimentName: o.bf
 				}) === o.Md
 			}
 		},
@@ -35921,29 +35921,29 @@
 					if (Object(i.a)(e)) return !1;
 					return Object(r.c)(e, {
 						experimentEligibilitySelector: s.e,
-						experimentName: o.ng
+						experimentName: o.lg
 					}) === o.Md
 				},
 				c = e => {
 					return Object(r.c)(e, {
 						experimentEligibilitySelector: s.e,
-						experimentName: o.og
+						experimentName: o.mg
 					}) === o.Md
 				},
 				l = e => {
 					if (Object(i.a)(e)) return !1;
 					const t = Object(r.c)(e, {
 						experimentEligibilitySelector: s.e,
-						experimentName: o.mg
+						experimentName: o.kg
 					});
-					return t === o.cg.TypingIndicators || t === o.cg.IndicatorsPlusCTA
+					return t === o.ag.TypingIndicators || t === o.ag.IndicatorsPlusCTA
 				},
 				d = e => {
 					if (Object(i.a)(e)) return !1;
 					const t = Object(s.d)(e, {
-						experimentName: o.mg
+						experimentName: o.kg
 					});
-					return (null == t ? void 0 : t.variant) === o.cg.IndicatorsPlusCTA
+					return (null == t ? void 0 : t.variant) === o.ag.IndicatorsPlusCTA
 				}
 		},
 		"./src/reddit/selectors/gild.ts": function(e, t, n) {
@@ -36622,4 +36622,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.0bc99740048e798dd590.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.d75e3ab2426f8aa60032.js.map
