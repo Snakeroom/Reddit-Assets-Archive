@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~ModerationPages~PostCreation~Profile~9a5d9fab.6f1c46cfae28e4eef6a1.js
-// Retrieved at 10/5/2022, 2:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~ModerationPages~PostCreation~Profile~9a5d9fab.2ba42447c46b42e9afae.js
+// Retrieved at 10/5/2022, 3:20:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~ModerationPages~PostCreation~Profile~9a5d9fab"], {
 		"./src/higherOrderComponents/withClickTracking/index.tsx": function(e, t, s) {
@@ -1004,13 +1004,14 @@
 						style: C,
 						"data-testid": "shreddit-player-wrapper"
 					};
-				return "ready" === b || "importing" === b ? r.a.createElement("div", u({}, I, {
+				if ("ready" === b || "importing" === b) return r.a.createElement("div", u({}, I, {
 					style: {
 						backgroundColor: "black",
 						height: "100%",
 						width: "100%"
 					}
-				})) : "error" === b ? r.a.createElement("div", u({}, I, {
+				}));
+				if ("error" === b) return r.a.createElement("div", u({}, I, {
 					style: {
 						...C,
 						display: "flex",
@@ -1019,16 +1020,19 @@
 					}
 				}), m._("Sorry, something went wrong when loading this video.", null, {
 					hk: "9N3Tr"
-				})) : r.a.createElement("div", I, r.a.createElement("media-telemetry-observer", {
-					ref: t
-				}, r.a.createElement("shreddit-player", {
+				}));
+				const j = {
 					ref: a,
 					autoplay: !!x,
 					poster: y,
 					preview: O || void 0,
 					src: w,
 					ui: "desktop"
-				}, r.a.createElement("source", {
+				};
+				for (const s in j) !1 === j[s] && delete j[s];
+				return r.a.createElement("div", I, r.a.createElement("media-telemetry-observer", {
+					ref: t
+				}, r.a.createElement("shreddit-player", j, r.a.createElement("source", {
 					src: w,
 					type: "application/vnd.apple.mpegURL"
 				}))))
@@ -1919,7 +1923,7 @@
 									isReactAllowed: P.isReactAllowed
 								} : void 0,
 								i = !P.isSponsored && [w].some(e => !0 === e) ? u.a.createElement(be.a, {
-									autoplay: s && !1 === ne,
+									autoplay: s,
 									postId: P.id,
 									hlsSource: P.media.hlsUrl,
 									posterUrl: P.media.posterUrl,
@@ -2396,4 +2400,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~ModerationPages~PostCreation~Profile~9a5d9fab.6f1c46cfae28e4eef6a1.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~ModerationPages~PostCreation~Profile~9a5d9fab.2ba42447c46b42e9afae.js.map
