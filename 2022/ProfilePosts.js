@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfilePosts.4c4f45be4630ad5b9685.js
-// Retrieved at 10/5/2022, 2:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfilePosts.28b67122ae5a6b15f20e.js
+// Retrieved at 10/5/2022, 7:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfilePosts"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -4857,12 +4857,12 @@
 						rtJsonElementProps: o
 					});
 					switch (i) {
-						case b.Rf.SmIcon:
+						case b.Tf.SmIcon:
 							return s.a.createElement(p, {
 								subredditName: r,
 								rtJsonElementProps: o
 							});
-						case b.Rf.SmIconHc:
+						case b.Tf.SmIconHc:
 							return s.a.createElement(p, {
 								subredditName: r,
 								isHoverable: !0,
@@ -4983,7 +4983,7 @@
 				C = e => {
 					const t = Object(a.d)(),
 						n = Object(b.b)(),
-						r = Object(a.e)(E.f),
+						r = Object(a.e)(E.g),
 						u = Object(i.useCallback)(() => {
 							r === E.a.Blurred && t(Object(p.k)({
 								actionSource: p.a.NsfwBlockingModal
@@ -5019,7 +5019,10 @@
 								...Object(x.o)(e),
 								source: "xpromo",
 								action: "click",
-								noun: v
+								noun: v,
+								actionInfo: {
+									...Object(x.d)(e)
+								}
 							}))()), u(), Object(_.b)(_.a.Login), t(Object(m.openLoginModal)())
 						}
 					}, (() => s.fbt._("Log In", null, {
@@ -5031,7 +5034,10 @@
 								...Object(x.o)(e),
 								source: "xpromo",
 								action: "dismiss",
-								noun: v
+								noun: v,
+								actionInfo: {
+									...Object(x.d)(e)
+								}
 							}))()), Object(_.b)(_.a.Dismiss), t(Object(c.b)("/"))
 						}
 					}, (() => s.fbt._("I'm not over 18", null, {
@@ -5070,12 +5076,15 @@
 							...Object(x.o)(e),
 							source: "xpromo",
 							action: "view",
-							noun: v
+							noun: v,
+							actionInfo: {
+								...Object(x.d)(e)
+							}
 						}))())
 					}, [t]);
 					const {
 						contentTitle: n
-					} = e, r = Object(a.e)(E.g), s = Object(a.e)(E.h), i = Object(a.e)(E.f), c = i === E.a.Blurred ? h.a.White : i === E.a.NoPreview ? h.a.Grey : void 0;
+					} = e, r = Object(a.e)(E.h), s = Object(a.e)(E.i), i = Object(a.e)(E.g), c = i === E.a.Blurred ? h.a.White : i === E.a.NoPreview ? h.a.Grey : void 0;
 					return o.a.createElement("div", {
 						className: j.a.container
 					}, o.a.createElement(C, {
@@ -5087,7 +5096,7 @@
 					}, o.a.createElement(h.b, {
 						textColor: c
 					})), o.a.createElement(O, {
-						qrCodeAsset: (() => r === f.Uc.Enabled || s === f.sb.BlurredPreview || s === f.sb.NoPreview ? w.d2x_nsfw_signup_blocking_de_v1 : w.d2x_nsfw_signup_blocking_non_us_v1)()
+						qrCodeAsset: (() => r === f.Wc.Enabled || s === f.tb.BlurredPreview || s === f.tb.NoPreview ? w.d2x_nsfw_signup_blocking_de_v1 : w.d2x_nsfw_signup_blocking_non_us_v1)()
 					}))
 				}
 		},
@@ -6198,7 +6207,7 @@
 					return Object(D.L)(e, {
 						profileName: n.params.profileName
 					})
-				}, T.f, (e, t, n, r, s, i, o, a, c, d, l) => {
+				}, T.g, (e, t, n, r, s, i, o, a, c, d, l) => {
 					var m, p;
 					const {
 						sort: b,
@@ -6353,15 +6362,15 @@
 			const o = e => {
 					const t = Object(s.c)(e, {
 						experimentEligibilitySelector: i.Q,
-						experimentName: r.pd
+						experimentName: r.rd
 					});
-					return !(!t || Object(r.rg)(t))
+					return !(!t || Object(r.tg)(t))
 				},
 				a = e => {
 					return Object(s.c)(e, {
 						experimentEligibilitySelector: i.Q,
-						experimentName: r.pd
-					}) === r.Qd.ListingEnabled
+						experimentName: r.rd
+					}) === r.Sd.ListingEnabled
 				}
 		},
 		"./src/reddit/selectors/focusedVerticalSuggestion.ts": function(e, t, n) {
@@ -6494,12 +6503,12 @@
 				c = e => {
 					return Object(i.c)(e, {
 						experimentEligibilitySelector: a,
-						experimentName: r.Kf
+						experimentName: r.Mf
 					}) || ""
 				},
 				d = e => {
 					const t = c(e);
-					return t === r.Rf.SmIcon || t === r.Rf.SmIconHc
+					return t === r.Tf.SmIcon || t === r.Tf.SmIconHc
 				},
 				l = (e, t) => {
 					let {
@@ -6549,4 +6558,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfilePosts.4c4f45be4630ad5b9685.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfilePosts.28b67122ae5a6b15f20e.js.map

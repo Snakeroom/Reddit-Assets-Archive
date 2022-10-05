@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Topic.10f90006e01a6bf8809d.js
-// Retrieved at 10/5/2022, 2:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Topic.5456b4fd10a0870e1065.js
+// Retrieved at 10/5/2022, 7:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Topic"], {
 		"./node_modules/intersection-observer/intersection-observer.js": function(e, t) {
@@ -1028,7 +1028,7 @@
 				const t = Object(i.f)().getState(),
 					s = Object(h.a)(t, Object(a.c)());
 				if (e.isD2xPdpSideRailRecsEnabled) {
-					const t = e.d2xPdpSideRailRecsVariant === u.Wc.GreyRereddit || e.d2xPdpSideRailRecsVariant === u.Wc.GreyRedditNoNsfw || e.d2xPdpSideRailRecsVariant === u.Wc.LargeImagePreview ? e.reredditButtons : [];
+					const t = e.d2xPdpSideRailRecsVariant === u.Yc.GreyRereddit || e.d2xPdpSideRailRecsVariant === u.Yc.GreyRedditNoNsfw || e.d2xPdpSideRailRecsVariant === u.Yc.LargeImagePreview ? e.reredditButtons : [];
 					return r.a.createElement(O, {
 						reredditContent: t,
 						countryCode: e.countryCode
@@ -1574,12 +1574,12 @@
 				P = s.n(I);
 			const {
 				fbt: R
-			} = s("./node_modules/fbt/lib/FbtPublic.js"), F = 8, W = Array.from({
+			} = s("./node_modules/fbt/lib/FbtPublic.js"), F = 8, M = Array.from({
 				length: F
 			}).map((e, t) => r.a.createElement(L, {
 				className: P.a.Subreddit,
 				key: t
-			})), M = {
+			})), B = {
 				enabled: !0,
 				id: "xd_103",
 				layout: m.c.Large,
@@ -1588,10 +1588,10 @@
 				unitType: m.e.SubredditListing,
 				url: ""
 			};
-			class B extends r.a.Component {
+			class D extends r.a.Component {
 				constructor() {
 					super(...arguments), this.onSeeMoreCommunities = () => {
-						this.props.onSeeMoreCommunities && (this.props.sendEvent(Object(u.w)(M)), this.props.onSeeMoreCommunities())
+						this.props.onSeeMoreCommunities && (this.props.sendEvent(Object(u.w)(B)), this.props.onSeeMoreCommunities())
 					}
 				}
 				render() {
@@ -1612,10 +1612,10 @@
 						className: P.a.SubredditList
 					}, n.length > 0 ? n.map(e => r.a.createElement(N, {
 						className: P.a.Subreddit,
-						discoveryUnit: M,
+						discoveryUnit: B,
 						key: e,
 						subredditId: e
-					})) : W), t.length > F && r.a.createElement(i.a, {
+					})) : M), t.length > F && r.a.createElement(i.a, {
 						to: s
 					}, r.a.createElement(l.r, {
 						className: P.a.SeeMore,
@@ -1625,7 +1625,7 @@
 					}))))
 				}
 			}
-			t.a = Object(d.c)(B)
+			t.a = Object(d.c)(D)
 		},
 		"./src/reddit/components/TopicSidebar/index.m.less": function(e, t, s) {
 			e.exports = {
@@ -2357,12 +2357,12 @@
 					}, t) : null
 				}
 			}
-			var W = F,
-				M = s("./src/reddit/pages/Topic/TopicHeader/index.m.less"),
-				B = s.n(M);
+			var M = F,
+				B = s("./src/reddit/pages/Topic/TopicHeader/index.m.less"),
+				D = s.n(B);
 
-			function D() {
-				return (D = Object.assign || function(e) {
+			function W() {
+				return (W = Object.assign || function(e) {
 					for (var t = 1; t < arguments.length; t++) {
 						var s = arguments[t];
 						for (var n in s) Object.prototype.hasOwnProperty.call(s, n) && (e[n] = s[n])
@@ -2383,7 +2383,7 @@
 						parentRelatedTopics: e
 					} = this.props;
 					return e.length ? r.a.createElement("ul", {
-						className: B.a.parentRelatedTopics
+						className: D.a.parentRelatedTopics
 					}, e.map((e, t) => {
 						let {
 							namePlural: s,
@@ -2392,7 +2392,7 @@
 						return r.a.createElement("li", {
 							key: t
 						}, r.a.createElement(m.default, {
-							className: B.a.link,
+							className: D.a.link,
 							to: n
 						}, s))
 					})) : H._("Topic on Reddit", null, {
@@ -2413,28 +2413,28 @@
 						tabs: i
 					};
 					return r.a.createElement("div", {
-						className: Object(o.a)(B.a.Container, t)
+						className: Object(o.a)(D.a.Container, t)
 					}, r.a.createElement("div", {
-						className: Object(o.a)(B.a.Content, s === O.g.Large ? B.a.cardWidth : B.a.fullWidth)
+						className: Object(o.a)(D.a.Content, s === O.g.Large ? D.a.cardWidth : D.a.fullWidth)
 					}, r.a.createElement("div", {
-						className: B.a.Header
+						className: D.a.Header
 					}, r.a.createElement("div", {
-						className: B.a.Title
+						className: D.a.Title
 					}, r.a.createElement(f.b, {
 						type: f.a.TopicHeader
 					}, a)), r.a.createElement("div", {
-						className: B.a.Subtitle
+						className: D.a.Subtitle
 					}, this.renderSubtitleContent())), r.a.createElement("div", {
-						className: B.a.Tabs
-					}, r.a.createElement(W, D({
+						className: D.a.Tabs
+					}, r.a.createElement(M, W({
 						tab: G.Posts
 					}, c), H._("Posts", null, {
 						hk: "3RLrle"
-					})), r.a.createElement(W, D({
+					})), r.a.createElement(M, W({
 						tab: G.Communities
 					}, c), H._("Communities", null, {
 						hk: "KIwd1"
-					})), r.a.createElement(W, D({
+					})), r.a.createElement(M, W({
 						tab: G.RelatedTopics
 					}, c), H._("Related Topics", null, {
 						hk: "4go2cr"
@@ -2487,8 +2487,8 @@
 					})))
 				}
 			}
-			var K = Q,
-				Y = s("./src/lib/prettyPrintNumber/index.ts"),
+			var Y = Q,
+				K = s("./src/lib/prettyPrintNumber/index.ts"),
 				Z = s("./src/reddit/components/Flair/index.tsx"),
 				X = s("./src/reddit/components/SubredditIcon/index.tsx"),
 				$ = s("./src/reddit/components/SubscribeButton/index.tsx"),
@@ -2540,7 +2540,7 @@
 					}, ae._({
 						"*": "{subscribers count} members",
 						_1: "member"
-					}, [ae._plural(n.subscribers, "subscribers count", Object(Y.b)(n.subscribers))], {
+					}, [ae._plural(n.subscribers, "subscribers count", Object(K.b)(n.subscribers))], {
 						hk: "48BXj1"
 					})), n.isNSFW && r.a.createElement(Z.b, {
 						flair: le
@@ -2714,7 +2714,7 @@
 							timerMillis: e,
 							timeSort: this.props.timeSort
 						})
-					}, this.renderNoPosts = () => null, this.renderRelationship = (e, t) => r.a.createElement(K, {
+					}, this.renderNoPosts = () => null, this.renderRelationship = (e, t) => r.a.createElement(Y, {
 						key: e.slug,
 						openTab: this.openTab,
 						relationship: e,
@@ -2855,11 +2855,11 @@
 				c = s("./node_modules/reselect/es/index.js");
 			const d = Object(c.a)(e => Object(r.c)(e, {
 					experimentEligibilitySelector: e => Object(a.h)(e) && Object(i.f)(e),
-					experimentName: n.qc
+					experimentName: n.sc
 				}), o.a),
 				l = Object(c.a)(e => Object(r.c)(e, {
 					experimentEligibilitySelector: e => !Object(a.h)(e) && Object(i.f)(e),
-					experimentName: n.pc
+					experimentName: n.rc
 				}), o.a),
 				u = Object(c.a)(d, l, (e, t) => e || t),
 				m = Object(c.a)(d, l, (e, t) => !(!e && !t))
@@ -2997,4 +2997,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Topic.10f90006e01a6bf8809d.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Topic.5456b4fd10a0870e1065.js.map
