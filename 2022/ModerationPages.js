@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModerationPages.c1deced92310de6a3dc1.js
-// Retrieved at 10/10/2022, 3:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModerationPages.fefb351ab5b26e3c842a.js
+// Retrieved at 10/10/2022, 4:50:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModerationPages", "CollectionCommentsPage~CommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~RpanListingUnit~S~5809214e", "CommentsPage~Governance~Reddit~ReportFlow~Subreddit~reddit-components-BlankPost~reddit-components-Cl~5351df81", "Governance~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compo~bd4baca2", "Reddit~RpanListingUnit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPos~93b34f9d", "Governance~ModListing~Reddit~ReportFlow~Subreddit", "ModListing~PostCreation~Reddit~StandalonePostPage~Subreddit", "Governance~ModListing~Reddit", "Governance~Reddit~SubredditForkingCTA"], {
 		"./src/chat/controls/Svg/index.m.less": function(e, t, n) {
@@ -46312,8 +46312,12 @@
 				P = n.n(N);
 			class R extends o.a.PureComponent {
 				render() {
+					const {
+						className: e,
+						scoreClassName: t
+					} = this.props;
 					return o.a.createElement("div", {
-						className: P.a.votesContainer
+						className: Object(I.a)(e, P.a.votesContainer)
 					}, o.a.createElement("button", {
 						className: P.a.disabledVoteIcon,
 						"aria-label": s.fbt._("Upvote", null, {
@@ -46327,7 +46331,7 @@
 						interactive: !1
 					})), o.a.createElement(w.a, {
 						disableInlineColor: !0,
-						className: Object(I.a)(P.a.Score, P.a.disabledScore),
+						className: Object(I.a)(P.a.Score, P.a.disabledScore, t),
 						score: 0,
 						voteState: T.a.notVoted,
 						isScoreHidden: !0
@@ -77287,4 +77291,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.c1deced92310de6a3dc1.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.fefb351ab5b26e3c842a.js.map
