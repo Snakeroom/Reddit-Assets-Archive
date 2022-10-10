@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Subreddit.bacbfd014bc0de70e733.js
-// Retrieved at 10/5/2022, 7:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Subreddit.e6d25412d49aceb1fa02.js
+// Retrieved at 10/10/2022, 10:40:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Subreddit", "Governance~ModListing~Reddit", "AchievementsActions", "reddit-components-Econ-PredictionLeaderboard-Sidebar"], {
 		"./node_modules/@reddit/i18n-tools/runtime/helpers/locale/index.js": function(e, t, n) {
@@ -2101,14 +2101,14 @@
 				d = e => {
 					switch (e) {
 						case s.a.Denied:
-							a.pb(!1), Object(r.c)();
+							a.ob(!1), Object(r.c)();
 							break;
 						case s.a.Default:
 						case s.a.Granted:
-							a.pb(!0), Object(r.c)();
+							a.ob(!0), Object(r.c)();
 							break;
 						case s.a.Closed:
-							a.pb(!0)
+							a.ob(!0)
 					}
 				}
 		},
@@ -2805,7 +2805,7 @@
 				} = e, n = Object(c.f)(i.a.AWARDED_LISTING_BANNER, a.g), [u, m] = Object(r.useState)(n ? S.Hidden : S.Visible);
 				if (u === S.Hidden) return null;
 				const p = () => {
-					m(S.Visible), Object(c.mb)(i.a.AWARDED_LISTING_BANNER, !1, a.g)
+					m(S.Visible), Object(c.lb)(i.a.AWARDED_LISTING_BANNER, !1, a.g)
 				};
 				return u === S.Dismissed ? s.a.createElement("div", {
 					className: Object(o.a)(g.a.dismissedContainer, t)
@@ -2826,7 +2826,7 @@
 				})), s.a.createElement(C, null), s.a.createElement(l.a, {
 					className: g.a.close,
 					onClick: () => {
-						m(S.Dismissed), Object(c.mb)(i.a.AWARDED_LISTING_BANNER, !0, a.g)
+						m(S.Dismissed), Object(c.lb)(i.a.AWARDED_LISTING_BANNER, !0, a.g)
 					}
 				}))
 			}
@@ -3170,7 +3170,7 @@
 							e.stopPropagation(), i.visible ? f() : x()
 						}, [f, x, i.visible]),
 						N = Object(r.useCallback)(t => {
-							t === E.b.FREQUENT && Object(U.eb)(e.userId, e.subredditId)
+							t === E.b.FREQUENT && Object(U.db)(e.userId, e.subredditId)
 						}, [e.subredditId, e.userId]),
 						w = Object(r.useCallback)(r => {
 							const {
@@ -3444,7 +3444,7 @@
 					small: !0,
 					isFullWidth: !0,
 					afterUnsubscribeAction: () => {
-						t && (Object(U.eb)(e.userId, t), e.updateSubredditInfo())
+						t && (Object(U.db)(e.userId, t), e.updateSubredditInfo())
 					}
 				})), w && s.a.createElement(be, {
 					onClickUnmute: e.unmuteSubreddit
@@ -4268,7 +4268,7 @@
 			class _ extends o.a.Component {
 				constructor(e) {
 					super(e), this.closeBanner = () => {
-						Object(u.mb)(d.a.CREATE_POST_BANNER, !0, this.props.subreddit.id), this.setState({
+						Object(u.lb)(d.a.CREATE_POST_BANNER, !0, this.props.subreddit.id), this.setState({
 							visible: !1
 						}), this.props.showToast(), this.props.sendEvent(p())
 					}, this.createPost = () => {
@@ -11769,12 +11769,12 @@
 						rtJsonElementProps: i
 					});
 					switch (o) {
-						case h.Tf.SmIcon:
+						case h.Sf.SmIcon:
 							return s.a.createElement(p, {
 								subredditName: r,
 								rtJsonElementProps: i
 							});
-						case h.Tf.SmIconHc:
+						case h.Sf.SmIconHc:
 							return s.a.createElement(p, {
 								subredditName: r,
 								isHoverable: !0,
@@ -14636,7 +14636,7 @@
 						e(d.P(t, r, s))
 					},
 					showModalOnScroll: () => e(d.cb()),
-					surveyTriggerScrollCounted: () => e(Object(u.l)())
+					surveyTriggerScrollCounted: () => e(Object(u.m)())
 				}),
 				N = e => Object(b.b)({
 					...e
@@ -15785,7 +15785,7 @@
 					}
 				}),
 				a = (e, t) => {
-					t && (Object(s.Db)(e.postId), Object(s.Mb)(t)), e.impressionIdStr ? Object(s.Eb)(e.impressionIdStr) : e.impressionId && Object(s.Eb)(e.impressionId)
+					t && (Object(s.Cb)(e.postId), Object(s.Lb)(t)), e.impressionIdStr ? Object(s.Db)(e.impressionIdStr) : e.impressionId && Object(s.Db)(e.impressionId)
 				}
 		},
 		"./src/reddit/helpers/trackers/contentTag.ts": function(e, t, n) {
@@ -21481,7 +21481,7 @@
 						experimentEligibilitySelector: o.Q,
 						experimentName: r.rd
 					});
-					return !(!t || Object(r.tg)(t))
+					return !(!t || Object(r.sg)(t))
 				},
 				a = e => {
 					return Object(s.c)(e, {
@@ -22051,7 +22051,7 @@
 				},
 				d = e => {
 					const t = c(e);
-					return t === r.Tf.SmIcon || t === r.Tf.SmIconHc
+					return t === r.Sf.SmIcon || t === r.Sf.SmIconHc
 				},
 				l = (e, t) => {
 					let {
@@ -22204,4 +22204,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Subreddit.bacbfd014bc0de70e733.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Subreddit.e6d25412d49aceb1fa02.js.map

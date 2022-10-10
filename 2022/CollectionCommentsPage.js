@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage.d4aea4f65328b053cf60.js
-// Retrieved at 10/5/2022, 7:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage.e1fa3596a99e188ac5fb.js
+// Retrieved at 10/10/2022, 10:40:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage", "AchievementsActions"], {
 		"./node_modules/linkify-it/index.js": function(e, t, s) {
@@ -434,7 +434,7 @@
 									icon: e.category_icon,
 									id: e.category_id,
 									name: e.category_name,
-									displayText: Object(m.sg)(e.category_name)
+									displayText: Object(m.rg)(e.category_name)
 								};
 								s.push(r.id), t[r.id] = r
 							}), {
@@ -454,7 +454,7 @@
 					t(v({
 						categoryId: e,
 						rank: n + 1
-					})), Object(u.nb)(Object(p.d)(s()))
+					})), Object(u.mb)(Object(p.d)(s()))
 				}
 		},
 		"./src/reddit/actions/commentsListTruncated/index.ts": function(e, t, s) {
@@ -6353,14 +6353,14 @@
 			const He = e => {
 					return Object(Ue.c)(e, {
 						experimentEligibilitySelector: Ue.a,
-						experimentName: We.lg
+						experimentName: We.kg
 					}) === We.Od
 				},
 				Ve = e => {
 					if (Object(ze.a)(e)) return !1;
 					return Object(Ue.c)(e, {
 						experimentEligibilitySelector: Ue.a,
-						experimentName: We.kg
+						experimentName: We.jg
 					}) === We.Od
 				},
 				qe = (e, t) => {
@@ -6372,7 +6372,7 @@
 					});
 					return !(Object(ze.a)(e) || !n || n.isSponsored) && Object(Ue.c)(e, {
 						experimentEligibilitySelector: Ue.a,
-						experimentName: We.jg
+						experimentName: We.ig
 					}) === We.Od
 				};
 			var Ke = s("./src/reddit/selectors/experiments/typingIndicators.ts"),
@@ -8125,7 +8125,7 @@
 							canonicalUrl: n.canonical_url,
 							baseUrl: n.base_url,
 							hostPostId: t,
-							shouldShowLinkedPosts: !Object(f.tg)(s) && !Object(I.a)(s),
+							shouldShowLinkedPosts: !Object(f.sg)(s) && !Object(I.a)(s),
 							subreddit: r
 						}
 					}
@@ -8188,7 +8188,7 @@
 						hostPostData: d,
 						listingBelowVariant: c
 					} = e;
-					if (c && !Object(f.tg)(c) && !Object(I.a)(c) && !i) return a.a.createElement("div", {
+					if (c && !Object(f.sg)(c) && !Object(I.a)(c) && !i) return a.a.createElement("div", {
 						className: q.a.smallBanner
 					});
 					const {
@@ -13396,29 +13396,29 @@
 					if (Object(i.a)(e)) return !1;
 					return Object(r.c)(e, {
 						experimentEligibilitySelector: o.e,
-						experimentName: n.ng
+						experimentName: n.mg
 					}) === n.Od
 				},
 				d = e => {
 					return Object(r.c)(e, {
 						experimentEligibilitySelector: o.e,
-						experimentName: n.og
+						experimentName: n.ng
 					}) === n.Od
 				},
 				c = e => {
 					if (Object(i.a)(e)) return !1;
 					const t = Object(r.c)(e, {
 						experimentEligibilitySelector: o.e,
-						experimentName: n.mg
+						experimentName: n.lg
 					});
-					return t === n.cg.TypingIndicators || t === n.cg.IndicatorsPlusCTA
+					return t === n.bg.TypingIndicators || t === n.bg.IndicatorsPlusCTA
 				},
 				l = e => {
 					if (Object(i.a)(e)) return !1;
 					const t = Object(o.d)(e, {
-						experimentName: n.mg
+						experimentName: n.lg
 					});
-					return (null == t ? void 0 : t.variant) === n.cg.IndicatorsPlusCTA
+					return (null == t ? void 0 : t.variant) === n.bg.IndicatorsPlusCTA
 				}
 		},
 		"./src/reddit/selectors/i18n/index.ts": function(e, t, s) {
@@ -13434,7 +13434,7 @@
 				i = s("./src/reddit/selectors/experiments/nsfwListingBelow.ts");
 			const a = e => {
 					const t = Object(i.a)(e);
-					return Boolean(t) && !Object(r.tg)(t)
+					return Boolean(t) && !Object(r.sg)(t)
 				},
 				d = Object(n.a)(a, o.d, (e, t) => e && !t)
 		},
@@ -13514,4 +13514,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage.d4aea4f65328b053cf60.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage.e1fa3596a99e188ac5fb.js.map

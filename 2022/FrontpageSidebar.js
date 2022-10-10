@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/FrontpageSidebar.4e7a83b10596710f27a1.js
-// Retrieved at 10/5/2022, 7:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/FrontpageSidebar.60eed7ebda8db4afbf3e.js
+// Retrieved at 10/10/2022, 10:40:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["FrontpageSidebar"], {
 		"./node_modules/lodash/_arrayShuffle.js": function(e, t, n) {
@@ -282,8 +282,8 @@
 				Q = n("./src/lib/constants/index.ts"),
 				q = n("./src/reddit/components/SubredditIcon/index.tsx"),
 				J = n("./src/reddit/constants/localStorage.ts"),
-				H = n("./src/reddit/contexts/ApiContext.tsx"),
-				Z = n("./src/reddit/featureFlags/component.tsx"),
+				Z = n("./src/reddit/contexts/ApiContext.tsx"),
+				H = n("./src/reddit/featureFlags/component.tsx"),
 				K = n("./src/reddit/helpers/localStorage/index.ts"),
 				z = n("./src/reddit/helpers/name/index.ts"),
 				X = n("./src/lib/makeApiRequest/index.ts"),
@@ -312,7 +312,7 @@
 						t.ok && (e = {
 							subreddits: t.body.data.subreddits.map(e => e.name),
 							fetchedAt: Date.now()
-						}, Object(K.Hb)(J.b.SUBREDDITS_FOR_ADOPTION_STORE, e))
+						}, Object(K.Gb)(J.b.SUBREDDITS_FOR_ADOPTION_STORE, e))
 					}
 					return ie.cachedData = e, e ? e.subreddits : []
 				}
@@ -351,7 +351,7 @@
 				}
 			}
 			ie.cachedData = null;
-			var oe = Object(Z.a)("srAdoptionWeek", Object(H.b)(ie)),
+			var oe = Object(H.a)("srAdoptionWeek", Object(Z.b)(ie)),
 				de = n("./src/reddit/components/TopSubredditsWidget/Container.tsx"),
 				ce = n("./src/reddit/actions/post.ts"),
 				le = n("./src/reddit/components/MiniPost/index.tsx"),
@@ -690,8 +690,8 @@
 				}), Ue.a),
 				qe = Object(u.a)(Qe, e => e === De.ve.Enabled);
 			var Je = n("./src/reddit/selectors/experiments/loggedOutOneFeed.ts"),
-				He = n("./src/reddit/selectors/experiments/publicAccessNetwork.ts"),
-				Ze = n("./src/reddit/selectors/user.ts");
+				Ze = n("./src/reddit/selectors/experiments/publicAccessNetwork.ts"),
+				He = n("./src/reddit/selectors/user.ts");
 			var Ke = n("./src/reddit/selectors/seo/linksModule.ts"),
 				ze = n("./src/reddit/selectors/subreddit.ts"),
 				Xe = n("./src/reddit/selectors/subredditLeaderboard.ts");
@@ -701,25 +701,25 @@
 			const $e = "c1020",
 				et = "videos",
 				tt = Object(u.c)({
-					isMod: Ze.R,
-					isLoggedIn: Ze.P,
+					isMod: He.R,
+					isLoggedIn: He.P,
 					isLoggedOutOneFeed: Je.c,
 					shouldShowLocalRecommendations: e => !1 !== e.user.prefs.showLocationBasedRecommendations,
-					currentUser: Ze.k,
+					currentUser: He.k,
 					frontpageLinks: Ke.b,
-					isOver18: Ze.kb,
+					isOver18: He.kb,
 					isInBFFSLeaderboardExperiment: function(e) {
 						return Me(e) === De.A.RotateEven
 					},
 					bffsLeaderboardVariant: Me,
-					inRpanTopVideoEntrypointExperiment: He.e,
+					inRpanTopVideoEntrypointExperiment: Ze.e,
 					rankings: e => Object(ze.S)(e, $e),
 					shouldShowTopicsWidget: e => {
-						const t = Object(He.e)(e),
+						const t = Object(Ze.e)(e),
 							n = !!Object(ze.S)(e, $e);
 						return (!t || !n) && function(e) {
 							return Object(Ge.c)(e, {
-								experimentEligibilitySelector: Ze.Q,
+								experimentEligibilitySelector: He.Q,
 								experimentName: De.Oc
 							}) === De.Od
 						}(e)
@@ -2227,4 +2227,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/FrontpageSidebar.4e7a83b10596710f27a1.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/FrontpageSidebar.60eed7ebda8db4afbf3e.js.map

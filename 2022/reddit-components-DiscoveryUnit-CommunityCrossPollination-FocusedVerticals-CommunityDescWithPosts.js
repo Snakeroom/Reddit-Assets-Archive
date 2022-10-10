@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-DiscoveryUnit-CommunityCrossPollination-FocusedVerticals-CommunityDescWithPosts.2568e1cd51a9719bab92.js
-// Retrieved at 10/3/2022, 2:20:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-DiscoveryUnit-CommunityCrossPollination-FocusedVerticals-CommunityDescWithPosts.f8411f65191b450edafb.js
+// Retrieved at 10/10/2022, 10:40:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-DiscoveryUnit-CommunityCrossPollination-FocusedVerticals-CommunityDescWithPosts"], {
 		"./src/higherOrderComponents/withClickTracking/index.tsx": function(e, t, s) {
@@ -179,7 +179,7 @@
 							listingPosition: s
 						} = this.props;
 						this.props.sendEvent(Object(b.d)(t, e, s))
-					}, this.getLocalStorageDisabled = Object(u.U)(), this.setLocalStorageDisabled = Object(u.wb)()
+					}, this.getLocalStorageDisabled = Object(u.U)(), this.setLocalStorageDisabled = Object(u.vb)()
 				}
 				componentDidMount() {
 					const {
@@ -1122,4 +1122,4 @@
 		"./src/reddit/icons/fonts/commonStyles.m.less": function(e, t, s) {}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-DiscoveryUnit-CommunityCrossPollination-FocusedVerticals-CommunityDescWithPosts.2568e1cd51a9719bab92.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-DiscoveryUnit-CommunityCrossPollination-FocusedVerticals-CommunityDescWithPosts.f8411f65191b450edafb.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfilePosts.28b67122ae5a6b15f20e.js
-// Retrieved at 10/5/2022, 7:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfilePosts.f0aee4c964ea95210b53.js
+// Retrieved at 10/10/2022, 10:40:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfilePosts"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -4857,12 +4857,12 @@
 						rtJsonElementProps: o
 					});
 					switch (i) {
-						case b.Tf.SmIcon:
+						case b.Sf.SmIcon:
 							return s.a.createElement(p, {
 								subredditName: r,
 								rtJsonElementProps: o
 							});
-						case b.Tf.SmIconHc:
+						case b.Sf.SmIconHc:
 							return s.a.createElement(p, {
 								subredditName: r,
 								isHoverable: !0,
@@ -5538,7 +5538,7 @@
 						e(d.P(t, r, s))
 					},
 					showModalOnScroll: () => e(d.cb()),
-					surveyTriggerScrollCounted: () => e(Object(u.l)())
+					surveyTriggerScrollCounted: () => e(Object(u.m)())
 				}),
 				S = e => Object(h.b)({
 					...e
@@ -6364,7 +6364,7 @@
 						experimentEligibilitySelector: i.Q,
 						experimentName: r.rd
 					});
-					return !(!t || Object(r.tg)(t))
+					return !(!t || Object(r.sg)(t))
 				},
 				a = e => {
 					return Object(s.c)(e, {
@@ -6508,7 +6508,7 @@
 				},
 				d = e => {
 					const t = c(e);
-					return t === r.Tf.SmIcon || t === r.Tf.SmIconHc
+					return t === r.Sf.SmIcon || t === r.Sf.SmIconHc
 				},
 				l = (e, t) => {
 					let {
@@ -6558,4 +6558,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfilePosts.28b67122ae5a6b15f20e.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfilePosts.f0aee4c964ea95210b53.js.map

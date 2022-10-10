@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/RpanListingUnit.e270f7165298ea7706dc.js
-// Retrieved at 10/5/2022, 7:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/RpanListingUnit.7b7d68b70d6eb850957a.js
+// Retrieved at 10/10/2022, 10:40:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["RpanListingUnit"], {
 		"./node_modules/lodash/_arrayEvery.js": function(e, t) {
@@ -54,13 +54,13 @@
 					experimentEligibilitySelector: m.a,
 					experimentName: u.Fe
 				});
-				return Object(u.tg)(t) ? void 0 : t
+				return Object(u.sg)(t) ? void 0 : t
 			}, e => {
 				const t = Object(m.c)(e, {
 					experimentEligibilitySelector: m.a,
 					experimentName: u.Ge
 				});
-				return Object(u.tg)(t) ? void 0 : t
+				return Object(u.sg)(t) ? void 0 : t
 			}, (e, t) => e === u.He.Enabled && t === u.He.Enabled);
 			var h = s("./src/config.ts");
 			var b = s("./src/reddit/selectors/user.ts");
@@ -770,19 +770,19 @@
 			class se extends n.Component {
 				constructor(e) {
 					super(e), this.observableElement = r.a.createRef(), this.videoRef = r.a.createRef(), this.videoSessionManager = null, this.timerId = "rpan-du-active-watch-timer-id", this.handleSuccessfulPlayback = () => {
-						Object(S.bb)()
+						Object(S.ab)()
 					}, this.handleUnsuccessfulPlayback = () => {
 						const e = Number(Object(S.P)());
 						if (e) {
 							if (Date.now() - e >= J) {
-								Object(S.bb)();
+								Object(S.ab)();
 								const e = 30 * l.E,
 									t = Date.now() - e + X;
 								this.props.onHideRpanUnit(t, {
 									showToast: !1
 								})
 							}
-						} else Object(S.Ub)(Date.now())
+						} else Object(S.Tb)(Date.now())
 					}, this.onResourceRemoved = () => {
 						this.subscribeStats()
 					}, this.onError = () => {
@@ -1992,4 +1992,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RpanListingUnit.e270f7165298ea7706dc.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RpanListingUnit.7b7d68b70d6eb850957a.js.map
