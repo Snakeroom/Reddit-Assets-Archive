@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/RealtimeGQLSubscriptionAsync.f9d66db829dd1c2d968e.js
-// Retrieved at 9/12/2022, 2:10:03 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/RealtimeGQLSubscriptionAsync.79e3e30df5dcbebb701a.js
+// Retrieved at 10/10/2022, 7:50:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["RealtimeGQLSubscriptionAsync"], {
 		"./node_modules/@apollo/client/react/context/ApolloContext.js": function(e, t, n) {
@@ -637,7 +637,7 @@
 					v = n("./node_modules/subscriptions-transport-ws/dist/protocol.js"),
 					m = n("./node_modules/subscriptions-transport-ws/dist/defaults.js"),
 					y = n("./node_modules/subscriptions-transport-ws/dist/message-types.js"),
-					O = function() {
+					g = function() {
 						function e(e, t, n, i) {
 							var o = t || {},
 								r = o.connectionCallback,
@@ -649,17 +649,17 @@
 								h = o.timeout,
 								b = void 0 === h ? m.WS_TIMEOUT : h,
 								y = o.reconnect,
-								O = void 0 !== y && y,
-								g = o.reconnectionAttempts,
-								_ = void 0 === g ? 1 / 0 : g,
-								T = o.lazy,
-								I = void 0 !== T && T,
+								g = void 0 !== y && y,
+								O = o.reconnectionAttempts,
+								_ = void 0 === O ? 1 / 0 : O,
+								I = o.lazy,
+								T = void 0 !== I && I,
 								E = o.inactivityTimeout,
-								N = void 0 === E ? 0 : E,
-								S = o.wsOptionArguments,
-								C = void 0 === S ? [] : S;
+								S = void 0 === E ? 0 : E,
+								N = o.wsOptionArguments,
+								C = void 0 === N ? [] : N;
 							if (this.wsImpl = n || u, !this.wsImpl) throw new Error("Unable to find native implementation, or alternative implementation for WebSocket!");
-							this.wsProtocols = i || v.GRAPHQL_WS, this.connectionCallback = s, this.url = e, this.operations = {}, this.nextOperationId = 0, this.minWsTimeout = f, this.wsTimeout = b, this.unsentMessagesQueue = [], this.reconnect = O, this.reconnecting = !1, this.reconnectionAttempts = _, this.lazy = !!I, this.inactivityTimeout = N, this.closedByUser = !1, this.backoff = new c({
+							this.wsProtocols = i || v.GRAPHQL_WS, this.connectionCallback = s, this.url = e, this.operations = {}, this.nextOperationId = 0, this.minWsTimeout = f, this.wsTimeout = b, this.unsentMessagesQueue = [], this.reconnect = g, this.reconnecting = !1, this.reconnectionAttempts = _, this.lazy = !!T, this.inactivityTimeout = S, this.closedByUser = !1, this.backoff = new c({
 								jitter: .5
 							}), this.eventEmitter = new l.EventEmitter, this.middlewares = [], this.client = null, this.maxConnectTimeGenerator = this.createMaxConnectTimeGenerator(), this.connectionParams = this.getConnectionParams(p), this.wsOptionArguments = C, this.lazy || this.connect()
 						}
@@ -918,7 +918,7 @@
 							this.operations[e] && (delete this.operations[e], this.setInactivityTimeout(), this.sendMessage(e, y.default.GQL_STOP, void 0))
 						}, e
 					}();
-				t.SubscriptionClient = O
+				t.SubscriptionClient = g
 			}).call(this, n("./node_modules/webpack/buildin/global.js"))
 		},
 		"./node_modules/subscriptions-transport-ws/dist/defaults.js": function(e, t, n) {
@@ -1280,6 +1280,26 @@
         }
       }
     }
+  `,
+				onModUpdate: p.a`
+    subscription SubscribeSubscription($input: SubscribeInput!) {
+      subscribe(input: $input) {
+        id
+        ... on BasicMessage {
+          data {
+            ... on ModActionMessageData {
+              id
+              createdAt
+              subredditID
+              moderatorID
+              targetID
+              targetType
+              action
+            }
+          }
+        }
+      }
+    }
   `
 			};
 
@@ -1415,4 +1435,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RealtimeGQLSubscriptionAsync.f9d66db829dd1c2d968e.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RealtimeGQLSubscriptionAsync.79e3e30df5dcbebb701a.js.map

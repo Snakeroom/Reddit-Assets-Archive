@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostCreation.64e19e624257b0f3d5b6.js
-// Retrieved at 10/10/2022, 3:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostCreation.42157ad7f41ece51ce0b.js
+// Retrieved at 10/10/2022, 7:50:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostCreation", "ChatMessageInput~MembershipPaywallPage~RichTextEditor", "ContributorRequestButton"], {
 		"./node_modules/autosize/dist/autosize.js": function(e, t, n) {
@@ -21531,7 +21531,10 @@
 							[k.a.clickable]: !!d
 						}),
 						id: i,
-						style: E,
+						style: {
+							...E,
+							...this.props.headerStyles
+						},
 						onClick: d
 					}, r.a.createElement("div", {
 						className: Object(a.a)(k.a.widgetTitle, p)
@@ -36622,4 +36625,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.64e19e624257b0f3d5b6.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.42157ad7f41ece51ce0b.js.map

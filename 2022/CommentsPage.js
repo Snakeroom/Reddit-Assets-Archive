@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CommentsPage.fcbd8a30dca5676e056a.js
-// Retrieved at 10/10/2022, 3:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CommentsPage.596069b13696b0c62457.js
+// Retrieved at 10/10/2022, 7:50:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CommentsPage", "Governance~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compo~bd4baca2", "Reddit~RpanListingUnit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPos~93b34f9d", "CollectionCommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~SearchResults", "Governance~ModListing~Reddit~ReportFlow~Subreddit", "ModListing~PostCreation~Reddit~StandalonePostPage~Subreddit", "CollectionCommentsPage~ModProgressModule~NewCommunityProgress", "Governance~ModListing~Reddit", "CollectionCommentsPage~SearchResults", "AchievementsActions"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -28582,7 +28582,10 @@
 							[j.a.clickable]: !!l
 						}),
 						id: i,
-						style: g,
+						style: {
+							...g,
+							...this.props.headerStyles
+						},
 						onClick: l
 					}, r.a.createElement("div", {
 						className: Object(a.a)(j.a.widgetTitle, p)
@@ -41524,8 +41527,8 @@
 							return !0;
 						case ot.b:
 						case ot.a:
+						case at.u:
 						case at.t:
-						case at.s:
 							return !1;
 						default:
 							return e
@@ -41684,9 +41687,9 @@
 					}
 					case at.i:
 					case at.f:
-					case at.n:
-					case at.q:
-					case at.w: {
+					case at.o:
+					case at.r:
+					case at.x: {
 						const {
 							response: e
 						} = t.payload, {
@@ -41694,7 +41697,7 @@
 						} = e;
 						return n
 					}
-					case at.l: {
+					case at.m: {
 						const e = t.payload,
 							{
 								moderatedAfter: n
@@ -41712,9 +41715,9 @@
 				switch (t.type) {
 					case at.i:
 					case at.f:
-					case at.n:
-					case at.q:
-					case at.w: {
+					case at.o:
+					case at.r:
+					case at.x: {
 						const {
 							response: e
 						} = t.payload, {
@@ -41722,7 +41725,7 @@
 						} = e;
 						return n
 					}
-					case at.l: {
+					case at.m: {
 						const n = t.payload,
 							{
 								listingOrder: s
@@ -41754,7 +41757,7 @@
 					let e = arguments.length > 0 && void 0 !== arguments[0] && arguments[0],
 						t = arguments.length > 1 ? arguments[1] : void 0;
 					switch (t.type) {
-						case at.l:
+						case at.m:
 							return !0;
 						case at.b:
 							return !1;
@@ -41853,10 +41856,10 @@
 				let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : null,
 					t = arguments.length > 1 ? arguments[1] : void 0;
 				switch (t.type) {
+					case at.p:
 					case at.o:
-					case at.n:
 						return null;
-					case at.m:
+					case at.n:
 						return t.payload;
 					default:
 						return e
@@ -41866,10 +41869,10 @@
 					let e = arguments.length > 0 && void 0 !== arguments[0] && arguments[0],
 						t = arguments.length > 1 ? arguments[1] : void 0;
 					switch (t.type) {
-						case at.o:
+						case at.p:
 							return !0;
+						case at.o:
 						case at.n:
-						case at.m:
 							return !1;
 						default:
 							return e
@@ -41884,7 +41887,7 @@
 				let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : Wt,
 					t = arguments.length > 1 ? arguments[1] : void 0;
 				switch (t.type) {
-					case at.n: {
+					case at.o: {
 						const {
 							listingKey: n,
 							page: s,
@@ -41909,7 +41912,7 @@
 					let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : Gt,
 						t = arguments.length > 1 ? arguments[1] : void 0;
 					switch (t.type) {
-						case at.n: {
+						case at.o: {
 							const {
 								listingKey: n,
 								response: s
@@ -41934,10 +41937,10 @@
 				let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : null,
 					t = arguments.length > 1 ? arguments[1] : void 0;
 				switch (t.type) {
+					case at.s:
 					case at.r:
-					case at.q:
 						return null;
-					case at.p:
+					case at.q:
 						return t.payload;
 					default:
 						return e
@@ -41947,10 +41950,10 @@
 					let e = arguments.length > 0 && void 0 !== arguments[0] && arguments[0],
 						t = arguments.length > 1 ? arguments[1] : void 0;
 					switch (t.type) {
-						case at.r:
+						case at.s:
 							return !0;
+						case at.r:
 						case at.q:
-						case at.p:
 							return !1;
 						default:
 							return e
@@ -41965,7 +41968,7 @@
 				let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : Qt,
 					t = arguments.length > 1 ? arguments[1] : void 0;
 				switch (t.type) {
-					case at.q: {
+					case at.r: {
 						const {
 							listingKey: n,
 							page: s,
@@ -41990,7 +41993,7 @@
 					let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : Xt,
 						t = arguments.length > 1 ? arguments[1] : void 0;
 					switch (t.type) {
-						case at.q: {
+						case at.r: {
 							const {
 								listingKey: n,
 								response: s
@@ -42015,10 +42018,10 @@
 				let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : null,
 					t = arguments.length > 1 ? arguments[1] : void 0;
 				switch (t.type) {
+					case at.y:
 					case at.x:
-					case at.w:
 						return null;
-					case at.v:
+					case at.w:
 						return t.payload;
 					default:
 						return e
@@ -42028,10 +42031,10 @@
 					let e = arguments.length > 0 && void 0 !== arguments[0] && arguments[0],
 						t = arguments.length > 1 ? arguments[1] : void 0;
 					switch (t.type) {
-						case at.x:
+						case at.y:
 							return !0;
+						case at.x:
 						case at.w:
-						case at.v:
 							return !1;
 						default:
 							return e
@@ -42046,7 +42049,7 @@
 				let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : rn,
 					t = arguments.length > 1 ? arguments[1] : void 0;
 				switch (t.type) {
-					case at.w: {
+					case at.x: {
 						const {
 							listingKey: n,
 							page: s,
@@ -42071,7 +42074,7 @@
 					let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : an,
 						t = arguments.length > 1 ? arguments[1] : void 0;
 					switch (t.type) {
-						case at.w: {
+						case at.x: {
 							const {
 								listingKey: n,
 								response: s
@@ -42674,12 +42677,12 @@
 					case f.i:
 					case f.g:
 					case f.f:
+					case f.p:
 					case f.o:
-					case f.n:
-					case f.q:
 					case f.r:
+					case f.s:
+					case f.y:
 					case f.x:
-					case f.w:
 						return t.payload && t.payload.response && t.payload.response.preferences ? G(e, t.payload.preferences) : e;
 					case w.n: {
 						const n = t.payload,
@@ -44458,4 +44461,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommentsPage.fcbd8a30dca5676e056a.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommentsPage.596069b13696b0c62457.js.map
