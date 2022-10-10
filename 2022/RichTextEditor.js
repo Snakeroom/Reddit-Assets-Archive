@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/RichTextEditor.e41ca42d965bbb17deea.js
-// Retrieved at 10/10/2022, 3:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/RichTextEditor.da9448cbc6f9e92a04dc.js
+// Retrieved at 10/10/2022, 6:30:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["RichTextEditor", "ContributorRequestButton"], {
 		"./node_modules/autosize/dist/autosize.js": function(e, t, o) {
@@ -3510,23 +3510,25 @@
 						if ((e.length > 1 || r && e.length >= 1) && (s(E.fbt._("Limit one media per comment", null, {
 								hk: "iejOT"
 							})), r)) return [];
-						const i = e.filter(e => this.acceptableMediaFileTypes.includes(e.type));
-						if (e.length !== i.length) {
+						const i = ne({
+								isImageUploadEnabled: n,
+								isGifUploadEnabled: o
+							}),
+							a = e.filter(e => i.includes(e.type));
+						if (e.length !== a.length) {
 							let e = [];
 							n && (e = [".png", ".jpeg"]), o && (e = [...e, ".gif"]), s(E.fbt._("Only image ({listOfallowedMediaFiles}) file types are allowed", [E.fbt._param("listOfallowedMediaFiles", e.join(", "))], {
 								hk: "2mORw0"
 							}))
 						}
-						return i.slice(0, 1)
+						return a.slice(0, 1)
 					};
 					const {
 						draft: t,
 						draftType: o,
 						hasError: n,
 						mediaMetadata: r,
-						rtJson: s,
-						isImageUploadEnabled: i,
-						isGifUploadEnabled: a
+						rtJson: s
 					} = e;
 					this.state = {
 						breakOut: !1,
@@ -3539,10 +3541,7 @@
 						formHeight: void 0,
 						hasChanged: !1,
 						showError: n
-					}, this.acceptableMediaFileTypes = ne({
-						isImageUploadEnabled: i,
-						isGifUploadEnabled: a
-					})
+					}
 				}
 				UNSAFE_componentWillReceiveProps(e) {
 					this.props.draft && this.props.draft.rteState && e.draft && null === e.draft.rteState && this.setState({
@@ -6132,4 +6131,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RichTextEditor.e41ca42d965bbb17deea.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RichTextEditor.da9448cbc6f9e92a04dc.js.map
