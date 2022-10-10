@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostCreation.3c18c28086f604229d41.js
-// Retrieved at 10/10/2022, 10:40:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostCreation.64e19e624257b0f3d5b6.js
+// Retrieved at 10/10/2022, 3:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostCreation", "ChatMessageInput~MembershipPaywallPage~RichTextEditor", "ContributorRequestButton"], {
 		"./node_modules/autosize/dist/autosize.js": function(e, t, n) {
@@ -35884,9 +35884,9 @@
 			var o = n("./src/reddit/constants/experiments.ts"),
 				r = n("./src/reddit/helpers/chooseVariant/index.ts");
 			const s = e => Object(r.c)(e, {
-				experimentName: o.Ie,
+				experimentName: o.Je,
 				experimentEligibilitySelector: r.a
-			}) === o.Qe.Enabled
+			}) === o.Re.Enabled
 		},
 		"./src/reddit/selectors/experiments/presence.ts": function(e, t, n) {
 			"use strict";
@@ -35898,7 +35898,7 @@
 			const s = e => {
 				return Object(r.c)(e, {
 					experimentEligibilitySelector: r.a,
-					experimentName: o.df
+					experimentName: o.ef
 				}) === o.Od
 			}
 		},
@@ -35921,29 +35921,29 @@
 					if (Object(i.a)(e)) return !1;
 					return Object(r.c)(e, {
 						experimentEligibilitySelector: s.e,
-						experimentName: o.mg
+						experimentName: o.ng
 					}) === o.Od
 				},
 				c = e => {
 					return Object(r.c)(e, {
 						experimentEligibilitySelector: s.e,
-						experimentName: o.ng
+						experimentName: o.og
 					}) === o.Od
 				},
 				l = e => {
 					if (Object(i.a)(e)) return !1;
 					const t = Object(r.c)(e, {
 						experimentEligibilitySelector: s.e,
-						experimentName: o.lg
+						experimentName: o.mg
 					});
-					return t === o.bg.TypingIndicators || t === o.bg.IndicatorsPlusCTA
+					return t === o.cg.TypingIndicators || t === o.cg.IndicatorsPlusCTA
 				},
 				d = e => {
 					if (Object(i.a)(e)) return !1;
 					const t = Object(s.d)(e, {
-						experimentName: o.lg
+						experimentName: o.mg
 					});
-					return (null == t ? void 0 : t.variant) === o.bg.IndicatorsPlusCTA
+					return (null == t ? void 0 : t.variant) === o.cg.IndicatorsPlusCTA
 				}
 		},
 		"./src/reddit/selectors/gild.ts": function(e, t, n) {
@@ -36622,4 +36622,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.3c18c28086f604229d41.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.64e19e624257b0f3d5b6.js.map
