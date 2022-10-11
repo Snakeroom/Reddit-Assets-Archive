@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CommentsPage~Governance~Reddit~ReportFlow~Subreddit~reddit-components-BlankPost~reddit-components-Cl~5351df81.017e19f2d146e07dd94b.js
-// Retrieved at 10/11/2022, 2:20:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CommentsPage~Governance~Reddit~ReportFlow~Subreddit~reddit-components-BlankPost~reddit-components-Cl~5351df81.a0cbb09693d0a3f38620.js
+// Retrieved at 10/11/2022, 3:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CommentsPage~Governance~Reddit~ReportFlow~Subreddit~reddit-components-BlankPost~reddit-components-Cl~5351df81"], {
 		"./src/lib/name/index.ts": function(e, t, r) {
@@ -840,9 +840,9 @@
 				p = r("./src/reddit/helpers/media/index.ts"),
 				m = r("./src/redditGQL/types.ts");
 			const f = new Map([
-					["image/png", m.p.Png],
-					["image/gif", m.p.Gif],
-					["image/jpeg", m.p.Jpeg]
+					["image/png", m.q.Png],
+					["image/gif", m.q.Gif],
+					["image/jpeg", m.q.Jpeg]
 				]),
 				O = (e, t) => async (r, n, s) => {
 					let {
@@ -1154,7 +1154,7 @@
 							isStartImmediately: !0,
 							subredditId: e,
 							predictionDrafts: a,
-							currency: m.L.Tokens,
+							currency: m.M.Tokens,
 							tokenIcon: u
 						}),
 						b = Object(S.a)(l);
@@ -4744,9 +4744,9 @@
 						modQueueSettings: G
 					} = e;
 					return {
-						allowGalleries: _.includes(O.E.Gallery),
-						allowImages: _.includes(O.E.Image),
-						allowPolls: _.includes(O.E.Poll),
+						allowGalleries: _.includes(O.F.Gallery),
+						allowImages: _.includes(O.F.Image),
+						allowPolls: _.includes(O.F.Poll),
 						archivePostsEnabled: s,
 						allowDiscovery: i,
 						allowChatPostCreation: d,
@@ -4800,19 +4800,19 @@
 				},
 				y = e => e ? h.indexOf(e) : 0,
 				T = e => {
-					if (e) return Object.values(O.K).find(t => t === (null == e ? void 0 : e.toUpperCase()))
+					if (e) return Object.values(O.L).find(t => t === (null == e ? void 0 : e.toUpperCase()))
 				},
 				S = e => {
 					if (e) return Object.values(O.f).find(t => t === (null == e ? void 0 : e.toUpperCase()))
 				},
 				E = e => {
-					if (e) return Object.values(O.P).find(t => t === (null == e ? void 0 : e.toUpperCase()))
+					if (e) return Object.values(O.Q).find(t => t === (null == e ? void 0 : e.toUpperCase()))
 				},
 				x = e => {
-					if (e) return e > 0 ? O.M.Enabled : O.M.Disabled
+					if (e) return e > 0 ? O.N.Enabled : O.N.Disabled
 				},
 				C = e => {
-					if (e) return e === O.M.Enabled ? 1 : 0
+					if (e) return e === O.N.Enabled ? 1 : 0
 				},
 				w = e => {
 					let {
@@ -9075,7 +9075,7 @@
 					return r ? {
 						__typename: "ModUserNote",
 						id: t,
-						itemType: b.t.Ban,
+						itemType: b.u.Ban,
 						createdAt: new Date(1e3 * e.bannedAtUTC),
 						operator: {
 							id: e.bannedById,
@@ -9085,7 +9085,7 @@
 							id: e.id,
 							displayName: e.username
 						},
-						label: b.A.Ban,
+						label: b.B.Ban,
 						note: r
 					} : null
 				},
@@ -9093,7 +9093,7 @@
 					return {
 						__typename: "ModActionNote",
 						id: m(e),
-						itemType: b.t.Ban,
+						itemType: b.u.Ban,
 						createdAt: new Date(1e3 * e.bannedAtUTC),
 						operator: {
 							id: e.bannedById,
@@ -9119,7 +9119,7 @@
 						const {
 							subredditId: r,
 							newModNote: n
-						} = t.payload, s = Object(d.d)(r, n.user.id, b.s.All);
+						} = t.payload, s = Object(d.d)(r, n.user.id, b.t.All);
 						return {
 							...e,
 							[s]: n.id
@@ -9129,7 +9129,7 @@
 						const {
 							subredditId: n,
 							lastAuthorModNote: s
-						} = t.payload, i = null === (r = null == s ? void 0 : s.user) || void 0 === r ? void 0 : r.id, o = Object(d.d)(n, i, b.s.All);
+						} = t.payload, i = null === (r = null == s ? void 0 : s.user) || void 0 === r ? void 0 : r.id, o = Object(d.d)(n, i, b.t.All);
 						return {
 							...e,
 							[o]: s.id
@@ -9143,7 +9143,7 @@
 						return n.forEach(e => {
 							var t;
 							const n = null === (t = null == e ? void 0 : e.user) || void 0 === t ? void 0 : t.id,
-								i = Object(d.d)(r, n, b.s.All);
+								i = Object(d.d)(r, n, b.t.All);
 							s[i] = e.id
 						}), {
 							...e,
@@ -9158,7 +9158,7 @@
 						} = n, i = n.id;
 						if (!n.modNote) return e;
 						const o = p(n),
-							c = Object(d.d)(s, i, b.s.All);
+							c = Object(d.d)(s, i, b.t.All);
 						return {
 							...e,
 							[c]: o
@@ -9263,10 +9263,10 @@
 							newModNote: s,
 							filter: i
 						} = t.payload;
-						if (i !== b.s.All && i !== b.s.Note) return e;
+						if (i !== b.t.All && i !== b.t.Note) return e;
 						const o = null === (r = null == s ? void 0 : s.user) || void 0 === r ? void 0 : r.id,
 							c = Object(d.d)(n, o, i),
-							a = i === b.s.All ? b.s.Note : b.s.All,
+							a = i === b.t.All ? b.t.Note : b.t.All,
 							u = Object(d.d)(n, o, a);
 						return {
 							...e,
@@ -9294,7 +9294,7 @@
 							subredditId: r,
 							userId: n,
 							noteId: s
-						} = t.payload, i = Object(d.d)(r, n, b.s.All), o = Object(d.d)(r, n, b.s.Note), c = e[i] ? e[i].filter(e => e !== s) : [], a = e[o] ? e[o].filter(e => e !== s) : [];
+						} = t.payload, i = Object(d.d)(r, n, b.t.All), o = Object(d.d)(r, n, b.t.Note), c = e[i] ? e[i].filter(e => e !== s) : [], a = e[o] ? e[o].filter(e => e !== s) : [];
 						return {
 							...e,
 							...e[i] ? {
@@ -9310,7 +9310,7 @@
 							bannedUsers: r
 						} = t.payload, n = Object.values(r)[0], {
 							subredditId: s
-						} = n, i = n.id, o = Object(d.d)(s, i, b.s.All), c = Object(d.d)(s, i, b.s.Note), a = Object(d.d)(s, i, b.s.Ban), u = m(n), l = p(n), f = e[o] ? [l, u, ...e[o]] : [], O = e[c] ? [l, ...e[c]] : [], j = e[a] ? [u, ...e[a]] : [];
+						} = n, i = n.id, o = Object(d.d)(s, i, b.t.All), c = Object(d.d)(s, i, b.t.Note), a = Object(d.d)(s, i, b.t.Ban), u = m(n), l = p(n), f = e[o] ? [l, u, ...e[o]] : [], O = e[c] ? [l, ...e[c]] : [], j = e[a] ? [u, ...e[a]] : [];
 						return {
 							...e,
 							...e[o] ? {
@@ -9337,13 +9337,13 @@
 						const {
 							subredditId: r,
 							newModNote: n
-						} = t.payload, s = Object(d.d)(r, n.user.id, b.s.All);
+						} = t.payload, s = Object(d.d)(r, n.user.id, b.t.All);
 						return {
 							...e,
 							[s]: {
 								...e[s],
-								[b.s.All]: (e[s][b.s.All] || 0) + 1,
-								[b.s.Note]: (e[s][b.s.Note] || 0) + 1
+								[b.t.All]: (e[s][b.t.All] || 0) + 1,
+								[b.t.Note]: (e[s][b.t.Note] || 0) + 1
 							}
 						}
 					}
@@ -9352,7 +9352,7 @@
 							subredditId: r,
 							userId: n,
 							totalCounts: s
-						} = t.payload, i = Object(d.d)(r, n, b.s.All);
+						} = t.payload, i = Object(d.d)(r, n, b.t.All);
 						return {
 							...e,
 							[i]: Object.keys(s).reduce((e, t) => (e[t] = s[t].totalCount, e), {})
@@ -9362,14 +9362,14 @@
 						const {
 							subredditId: r,
 							userId: n
-						} = t.payload, s = Object(d.d)(r, n, b.s.All);
+						} = t.payload, s = Object(d.d)(r, n, b.t.All);
 						return {
 							...e,
 							...void 0 !== e[s] ? {
 								[s]: {
 									...e[s],
-									[b.s.All]: (e[s][b.s.All] || 1) - 1,
-									[b.s.Note]: (e[s][b.s.Note] || 1) - 1
+									[b.t.All]: (e[s][b.t.All] || 1) - 1,
+									[b.t.Note]: (e[s][b.t.Note] || 1) - 1
 								}
 							} : null
 						}
@@ -11382,12 +11382,12 @@
 				},
 				b = (e, t, r) => {
 					if (!t || !r) return;
-					const n = e.features.modUserNotes.lastAuthorModNotes[Object(s.d)(r, t, i.s.All)];
+					const n = e.features.modUserNotes.lastAuthorModNotes[Object(s.d)(r, t, i.t.All)];
 					return n ? e.features.modUserNotes.models[n] : void 0
 				},
 				p = (e, t, r) => {
 					if (!t || !r) return;
-					return e.features.modUserNotes.totalCount[Object(s.d)(r, t, i.s.All)]
+					return e.features.modUserNotes.totalCount[Object(s.d)(r, t, i.t.All)]
 				},
 				m = (e, t, r, n) => {
 					if (!n) return;
@@ -12168,4 +12168,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommentsPage~Governance~Reddit~ReportFlow~Subreddit~reddit-components-BlankPost~reddit-components-Cl~5351df81.017e19f2d146e07dd94b.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommentsPage~Governance~Reddit~ReportFlow~Subreddit~reddit-components-BlankPost~reddit-components-Cl~5351df81.a0cbb09693d0a3f38620.js.map
