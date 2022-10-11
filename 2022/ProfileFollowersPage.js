@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfileFollowersPage.ba93822e2e785f15452d.js
-// Retrieved at 10/11/2022, 9:50:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfileFollowersPage.669255798f8601d8c84a.js
+// Retrieved at 10/11/2022, 10:50:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfileFollowersPage", "ProfileFollowersAction"], {
 		"./node_modules/lodash/take.js": function(e, t, s) {
@@ -366,7 +366,7 @@
 				},
 				q = s("./src/lib/omitKey/index.ts");
 			const Q = {};
-			var Y = function() {
+			var Z = function() {
 					let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : Q,
 						t = arguments.length > 1 ? arguments[1] : void 0;
 					switch (t.type) {
@@ -389,11 +389,11 @@
 							return e
 					}
 				},
-				Z = Object(U.c)({
+				Y = Object(U.c)({
 					api: D,
 					fetchedTokens: V,
 					ids: G,
-					loadMore: Y
+					loadMore: Z
 				});
 			const X = {};
 			var J = function() {
@@ -719,7 +719,7 @@
 					keyToPostId: Ie
 				}),
 				we = Object(U.c)({
-					chrono: Z,
+					chrono: Y,
 					conversations: Oe
 				});
 			Object(M.a)({
@@ -1078,7 +1078,7 @@
 							return e
 					}
 				},
-				Y = Object(j.c)({
+				Z = Object(j.c)({
 					api: T,
 					fetchedTokens: F,
 					inContext: U,
@@ -1089,10 +1089,10 @@
 				});
 			Object(S.a)({
 				features: {
-					banned: Y
+					banned: Z
 				}
 			});
-			const Z = Object(o.a)(_.s),
+			const Y = Object(o.a)(_.s),
 				X = Object(o.a)(_.r),
 				J = Object(o.a)(_.q),
 				$ = function(e) {
@@ -1106,7 +1106,7 @@
 							d = Object(y.e)(e, a),
 							l = o.features.banned.fetchedTokens[d];
 						if (o.features.banned.api.pending[d] || l) return;
-						s(Z({
+						s(Y({
 							subredditId: e,
 							fetchedToken: a
 						}));
@@ -1529,8 +1529,8 @@
 				G = s("./src/reddit/actions/inContextModeration.ts"),
 				q = s("./src/reddit/actions/modal.ts"),
 				Q = s("./src/reddit/actions/subredditModeration/ban.ts"),
-				Y = s("./src/reddit/constants/modals.ts"),
-				Z = s("./src/reddit/components/Hovercards/helpers.ts"),
+				Z = s("./src/reddit/constants/modals.ts"),
+				Y = s("./src/reddit/components/Hovercards/helpers.ts"),
 				X = s("./src/reddit/icons/fonts/index.tsx"),
 				J = s("./src/reddit/models/ModeratingSubreddits/index.ts"),
 				$ = s("./src/reddit/selectors/bannedUser.ts"),
@@ -1565,7 +1565,7 @@
 					} = this.props;
 					return n.a.createElement("div", {
 						className: e
-					}, r ? n.a.createElement(Z.a, {
+					}, r ? n.a.createElement(Y.a, {
 						role: "button",
 						onClick: () => {
 							i(this.props.user.id), o(L.e(t))
@@ -1576,7 +1576,7 @@
 						className: te.a.icon
 					}), se._("Unban User", null, {
 						hk: "1aASyW"
-					})) : n.a.createElement(Z.a, {
+					})) : n.a.createElement(Y.a, {
 						role: "button",
 						onClick: () => {
 							a(), o(L.a(t))
@@ -1586,7 +1586,7 @@
 						className: te.a.icon
 					}), se._("Ban User", null, {
 						hk: "3OhuLx"
-					})), s && n.a.createElement(Z.a, {
+					})), s && n.a.createElement(Y.a, {
 						role: "button",
 						onClick: () => {
 							d(), o(L.d(t))
@@ -1622,7 +1622,7 @@
 								username: s,
 								subredditId: r,
 								contextId: n
-							})), e(Object(q.i)(Y.a.MUTE_USER))
+							})), e(Object(q.i)(Z.a.MUTE_USER))
 						}
 					}
 				})(ne),
@@ -1632,7 +1632,7 @@
 			} = s("./node_modules/fbt/lib/FbtPublic.js");
 			var de = Object(i.b)(null, (e, t) => ({
 					onToggleUserFlairModal: () => e(Object(oe.g)(t.subredditId, t.username))
-				}))(e => n.a.createElement(Z.a, {
+				}))(e => n.a.createElement(Y.a, {
 					role: "button",
 					onClick: () => {
 						e.onToggleUserFlairModal(), e.sendEvent(L.c(e.contextId))
@@ -3382,14 +3382,14 @@
 				return e === document
 			}
 
-			function Y(e) {
+			function Z(e) {
 				let t = 0;
 				do {
 					t += e.offsetTop || 0, e = e.offsetParent
 				} while (e);
 				return t
 			}
-			const Z = 10,
+			const Y = 10,
 				X = .9,
 				J = .9,
 				$ = 1.8,
@@ -3544,7 +3544,7 @@
 						this.fpsMeter && this.fpsMeter.eventHandler(e);
 						for (const t in this.hiddenChildren) this.remeasureWhenShown[t] = !0;
 						this.measurementsInvalid = !0, this.callOnScrollForItemsChanged()
-					}, this.getTotalOffsetTop = () => this.containerRef ? Y(this.containerRef) : 0, this.handleContentContainerResize = n()(() => {
+					}, this.getTotalOffsetTop = () => this.containerRef ? Z(this.containerRef) : 0, this.handleContentContainerResize = n()(() => {
 						this.pendingResizeHandlerRead || (this.pendingResizeHandlerRead = h.a.read(() => {
 							const e = this.getTotalOffsetTop();
 							e !== this.containerOffsetTop && (this.containerOffsetTop = e, this.handleResize()), this.pendingResizeHandlerRead = null
@@ -3680,7 +3680,7 @@
 							return n >= s + e && n < r
 						}
 						return !1
-					}, this.childMap = le(e), this.containerRef = null, this.itemsInViewport = new S.a("id"), this.loadMoreFired = !1, this.pixelsPerMSRing = new N(Z), this.wrapperRefFNs = {}, this.childRefFns = {}, this.childrenToHide = {}, this.childrenToShow = {}, this.canFocusItems = !0, this.focusedChild = void 0, this.hiddenChildren = {}, this.nextVisibleChildrenIndex = 0, this.lastVisibleEl = null, this.lastVisibleElId = null, this.remeasureWhenShown = {}, this.timeoutForUpdateIdleCallback = ie;
+					}, this.childMap = le(e), this.containerRef = null, this.itemsInViewport = new S.a("id"), this.loadMoreFired = !1, this.pixelsPerMSRing = new N(Y), this.wrapperRefFNs = {}, this.childRefFns = {}, this.childrenToHide = {}, this.childrenToShow = {}, this.canFocusItems = !0, this.focusedChild = void 0, this.hiddenChildren = {}, this.nextVisibleChildrenIndex = 0, this.lastVisibleEl = null, this.lastVisibleElId = null, this.remeasureWhenShown = {}, this.timeoutForUpdateIdleCallback = ie;
 					const s = this.getVisibleChildren();
 					s.length && (this.lastVisibleElId = s[s.length - 1].id), this.nextVisibleChildrenIndex = s.length, this.updateRenderableChildrenHandle = null, this.state = {
 						renderableChildren: s
@@ -3863,7 +3863,7 @@
 					if (!this.containerRef) return !1;
 					const {
 						viewportTopPadding: e = 0
-					} = this.props, t = Y(this.containerRef);
+					} = this.props, t = Z(this.containerRef);
 					return this.getScrollTop() + e - t > 0
 				}
 				render() {
@@ -4079,7 +4079,7 @@
 				const t = Object(i.f)().getState(),
 					s = Object(b.a)(t, Object(a.c)());
 				if (e.isD2xPdpSideRailRecsEnabled) {
-					const t = e.d2xPdpSideRailRecsVariant === u.Yc.GreyRereddit || e.d2xPdpSideRailRecsVariant === u.Yc.GreyRedditNoNsfw || e.d2xPdpSideRailRecsVariant === u.Yc.LargeImagePreview ? e.reredditButtons : [];
+					const t = e.d2xPdpSideRailRecsVariant === u.Zc.GreyRereddit || e.d2xPdpSideRailRecsVariant === u.Zc.GreyRedditNoNsfw || e.d2xPdpSideRailRecsVariant === u.Zc.LargeImagePreview ? e.reredditButtons : [];
 					return n.a.createElement(_, {
 						reredditContent: t,
 						countryCode: e.countryCode
@@ -6023,6 +6023,9 @@
 				bodyFont: "_1RI3wkzuynRc_Bqno__Uom",
 				bodyFontSmall: "_2MlCobLFb0alel2wzuIFVK",
 				bodyFontMono: "_3RdMKJzgzPT9lgXHEf0XZB",
+				landingPageTitleFontH1: "KVO5ZZIscMWGahfHIsr-o",
+				landingPageTitleFontH2: "_1Z7_zVV5u4BYuO1gRsLx90",
+				landingPageTitleFontH3: "_2yCXZ7SWFT2-XNs-FGlvBs",
 				header: "_3u9on6H92JkZNRumczPd67",
 				subredditLink: "_3EIUrhztcaaHcqMILEsnBq",
 				subredditIcon: "_3uA1he5X3WeG6mpoUWdcXy"
@@ -6179,11 +6182,11 @@
 				d = s("./node_modules/reselect/es/index.js");
 			const l = Object(d.a)(e => Object(n.c)(e, {
 					experimentEligibilitySelector: e => Object(a.h)(e) && Object(i.f)(e),
-					experimentName: r.sc
+					experimentName: r.tc
 				}), o.a),
 				c = Object(d.a)(e => Object(n.c)(e, {
 					experimentEligibilitySelector: e => !Object(a.h)(e) && Object(i.f)(e),
-					experimentName: r.rc
+					experimentName: r.sc
 				}), o.a),
 				u = Object(d.a)(l, c, (e, t) => e || t),
 				m = Object(d.a)(l, c, (e, t) => !(!e && !t))
@@ -6237,4 +6240,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileFollowersPage.ba93822e2e785f15452d.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileFollowersPage.669255798f8601d8c84a.js.map

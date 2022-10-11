@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Talk.d44229fc70e6450dca4c.js
-// Retrieved at 9/29/2022, 4:30:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Talk.c2958b9283acbee0d720.js
+// Retrieved at 10/11/2022, 10:50:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Talk"], {
 		"./src/reddit/components/CollapsibleFAQ/index.m.less": function(e, a, t) {
@@ -35,11 +35,12 @@
 				render() {
 					const {
 						className: e,
-						question: a,
-						children: t
+						buttonContentClassName: a,
+						question: t,
+						children: l
 					} = this.props, {
-						isOpen: l
-					} = this.state, r = l ? s.a.isOpen : "";
+						isOpen: r
+					} = this.state, m = r ? s.a.isOpen : "";
 					return n.a.createElement("div", {
 						className: Object(i.a)(e, s.a.collapsibleFAQ)
 					}, n.a.createElement("button", {
@@ -47,15 +48,15 @@
 						type: "button",
 						onClick: this.toggleOpen
 					}, n.a.createElement("span", {
-						className: s.a.buttonContent,
+						className: Object(i.a)(s.a.buttonContent, a),
 						tabIndex: -1
-					}, a, l ? n.a.createElement(o.a, {
+					}, t, r ? n.a.createElement(o.a, {
 						className: s.a.collapseIcon
 					}) : n.a.createElement(c.a, {
 						className: s.a.collapseIcon
 					}))), n.a.createElement("div", {
-						className: Object(i.a)(s.a.collapsibleAnswer, r)
-					}, t))
+						className: Object(i.a)(s.a.collapsibleAnswer, m)
+					}, l))
 				}
 			}
 			a.a = m
@@ -561,7 +562,7 @@
 					className: f.a.ctaLetsDoThisButton
 				}, y._("Apply now", null, {
 					hk: "4aTkPZ"
-				}))), r.a.createElement(F, null))))
+				}))), r.a.createElement(j, null))))
 			}, T = () => r.a.createElement(r.a.Fragment, null, r.a.createElement("div", {
 				className: Object(i.a)(f.a.faqQuestionMark, f.a.faqQuestionMarkWithBolt)
 			}), r.a.createElement("div", {
@@ -586,7 +587,7 @@
 				className: Object(i.a)(f.a.faqQuestionMark, f.a.faqQuestionMarkLeft)
 			}), r.a.createElement("div", {
 				className: Object(i.a)(f.a.faqQuestionMark, f.a.faqQuestionMarkBottomRight)
-			})), F = () => r.a.createElement("div", {
+			})), j = () => r.a.createElement("div", {
 				className: f.a.ctaButtonCirlcesAndBolt
 			}, r.a.createElement("div", {
 				className: f.a.circleFaqCtaYellowBig
@@ -599,8 +600,8 @@
 			})), r.a.createElement("div", {
 				className: f.a.circleFaqCtaCyanHollow
 			}));
-			var j = t("./src/reddit/pages/Talk/HostProgramPerks.m.less"),
-				B = t.n(j);
+			var F = t("./src/reddit/pages/Talk/HostProgramPerks.m.less"),
+				B = t.n(F);
 			const {
 				fbt: R
 			} = t("./node_modules/fbt/lib/FbtPublic.js"), A = [B.a.circleOrange, B.a.circleBlue, B.a.circleYellow], H = [{
@@ -1010,4 +1011,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Talk.d44229fc70e6450dca4c.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Talk.c2958b9283acbee0d720.js.map

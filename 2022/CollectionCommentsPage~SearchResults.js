@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~SearchResults.5ad1c2cb7d022927698d.js
-// Retrieved at 10/11/2022, 9:50:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~SearchResults.c88e4df5b9fa223380b5.js
+// Retrieved at 10/11/2022, 10:50:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~SearchResults"], {
 		"./node_modules/lodash/_baseDelay.js": function(e, t) {
@@ -804,8 +804,8 @@
 				Y = s("./src/reddit/components/Comments/Comment/ModToolsFlatlist/RestrictedButton.tsx"),
 				Q = s("./src/reddit/components/ConfirmUserActionModal/index.tsx"),
 				J = s("./src/reddit/components/DistinguishCommentDropdown/index.tsx"),
-				X = s("./src/reddit/components/ModActionsMenu/index.tsx"),
-				Z = s("./src/reddit/components/ModModeReports/helpers.ts"),
+				Z = s("./src/reddit/components/ModActionsMenu/index.tsx"),
+				X = s("./src/reddit/components/ModModeReports/helpers.ts"),
 				$ = s("./src/reddit/components/OverflowMenu/index.tsx"),
 				ee = s("./src/reddit/components/ReportFlow/index.tsx"),
 				te = s("./src/reddit/components/ReportFlow/new.tsx"),
@@ -830,7 +830,7 @@
 			const Oe = k.a.wrapped(le.a, "CommentIcon", xe.a),
 				ve = k.a.wrapped(be.a, "Report", xe.a),
 				ye = k.a.wrapped(ue.a, "IgnoreReport", xe.a),
-				Ee = k.a.wrapped(X.a, "ModActionsMenu", xe.a),
+				Ee = k.a.wrapped(Z.a, "ModActionsMenu", xe.a),
 				ke = k.a.div("OverflowMenuSpacer", xe.a),
 				je = k.a.wrapped($.a, "DropdownRow", xe.a),
 				we = k.a.wrapped(de.a, "Flatlist", xe.a),
@@ -1048,7 +1048,7 @@
 						isPostUnrepliable: M,
 						isTrueblockPCBlockeeEnabled: D,
 						isDevPlatformEnabled: V
-					} = this.props, A = Object(N.a)(C), B = !!s && s.displayText === e.author, U = !!s && s.isEmployee, W = D && e.unrepliableReason, H = D && M, q = !(k && D) && !(Object(P.g)(e) && D) && !(M && D) && !W && !H && !(F && F.userIsBanned) && (w || y || k && j || A && p || e.isLocked ? A && p : p || m), X = Object(Z.a)(e), ee = A && B && !e.bannedBy, te = B && U && !e.bannedBy, ne = ee || te, re = !(Object(P.g)(e) && D) && s && e.isGildable && !H && !(W && "[deleted]" === e.author), de = !y && !W, le = [];
+					} = this.props, A = Object(N.a)(C), B = !!s && s.displayText === e.author, U = !!s && s.isEmployee, W = D && e.unrepliableReason, H = D && M, q = !(k && D) && !(Object(P.g)(e) && D) && !(M && D) && !W && !H && !(F && F.userIsBanned) && (w || y || k && j || A && p || e.isLocked ? A && p : p || m), Z = Object(X.a)(e), ee = A && B && !e.bannedBy, te = B && U && !e.bannedBy, ne = ee || te, re = !(Object(P.g)(e) && D) && s && e.isGildable && !H && !(W && "[deleted]" === e.author), de = !y && !W, le = [];
 					q && le.push(o.a.createElement(Se, {
 						disabled: b,
 						key: "reply",
@@ -1197,8 +1197,8 @@
 					}, o.a.createElement(pe.a, null), o.a.createElement(G.a, {
 						comment: e,
 						tooltipId: `${e.id}-mod-actions-menu`
-					}))), Object(Z.c)(e) && !x && o.a.createElement(Y.a, {
-						text: `${X}`,
+					}))), Object(X.c)(e) && !x && o.a.createElement(Y.a, {
+						text: `${Z}`,
 						onClick: () => {
 							f(), this.sendCommentModEventWithName("comment_report_menu")
 						},
@@ -1305,8 +1305,8 @@
 				Ye = s("./src/reddit/components/ModModeFilteredReason/index.tsx"),
 				Qe = s("./src/reddit/components/ModModeFilteredReason/helpers.ts"),
 				Je = s("./src/reddit/components/ModModeReports/index.tsx"),
-				Xe = s("./src/reddit/components/PostTopMeta/index.tsx"),
-				Ze = s("./src/reddit/components/RichTextJson/index.tsx"),
+				Ze = s("./src/reddit/components/PostTopMeta/index.tsx"),
+				Xe = s("./src/reddit/components/RichTextJson/index.tsx"),
 				$e = s("./src/reddit/components/UserIcon/index.tsx"),
 				et = s("./src/reddit/components/UserIcon/constants.ts"),
 				tt = s("./src/reddit/contexts/TrackCommentsPageClick.ts"),
@@ -1475,7 +1475,7 @@
 						onIgnoreReports: Y,
 						onLineMouseOver: Q,
 						onPresenceIndicatorInViewport: J,
-						onVoteClick: X,
+						onVoteClick: Z,
 						postId: $,
 						prediction: ee,
 						renderedInOverlay: te,
@@ -1490,7 +1490,7 @@
 						userIsBanned: le,
 						onClickRevealSpoilerText: me,
 						onMediaReload: ue
-					} = e, pe = m.isDeleted, be = !T && !pe && !!C && C.length > 0, he = Object(l.a)(a.c.edit, m.id), ge = Object(l.a)(a.c.replyToComment, m.id), fe = Object(N.a)(G), Ce = Object(Qe.a)(m), xe = Object(Z.c)(m), Oe = m.authorIsContractor && de === mt.f.EmployeesOnly, ve = m.isLocked, ye = fe && W, Ee = !T && !pe && (D || I), ke = I && !m.unrepliableReason, je = !!g && Object(ut.e)(g) === m.author, [we, Se] = Object(r.useState)(null), [_e, Ie] = Object(r.useState)(null), Fe = Object(r.useRef)(null), Ne = Object(P.f)(m) || Object(P.g)(m), Re = Ne ? Ut : at.default, Pe = Object(P.f)(m) ? Gt : Dt;
+					} = e, pe = m.isDeleted, be = !T && !pe && !!C && C.length > 0, he = Object(l.a)(a.c.edit, m.id), ge = Object(l.a)(a.c.replyToComment, m.id), fe = Object(N.a)(G), Ce = Object(Qe.a)(m), xe = Object(X.c)(m), Oe = m.authorIsContractor && de === mt.f.EmployeesOnly, ve = m.isLocked, ye = fe && W, Ee = !T && !pe && (D || I), ke = I && !m.unrepliableReason, je = !!g && Object(ut.e)(g) === m.author, [we, Se] = Object(r.useState)(null), [_e, Ie] = Object(r.useState)(null), Fe = Object(r.useRef)(null), Ne = Object(P.f)(m) || Object(P.g)(m), Re = Ne ? Ut : at.default, Pe = Object(P.f)(m) ? Gt : Dt;
 					Object(r.useEffect)(() => {
 						if (!T && !pe && (y && Se(o.a.createElement(Ge, null)), null !== j)) {
 							if (j.glowHexColor) {
@@ -1558,7 +1558,7 @@
 						isCommentAuthorBlocked: Object(P.g)(m),
 						postOrComment: m,
 						tooltipIdPrefix: "AvatarUserInfoTooltip",
-						tooltipType: te ? Xe.c.Lightbox : void 0
+						tooltipType: te ? Ze.c.Lightbox : void 0
 					}, o.a.createElement(Re, {
 						className: Object(c.a)(kt.a.UserIconContainer, ce && kt.a.UserIconContainerSmall),
 						"data-testid": Ne ? void 0 : "comment_author_icon",
@@ -1644,7 +1644,7 @@
 					}, ee ? o.a.createElement(Ke.a, {
 						comment: m,
 						prediction: ee
-					}) : o.a.createElement(Ze.b, {
+					}) : o.a.createElement(Xe.b, {
 						content: De,
 						mediaMetadata: m.media && m.media.mediaMetadata,
 						redditStyle: re,
@@ -1666,7 +1666,7 @@
 						downvoteButtonClassName: kt.a.voteButton,
 						downvoteClassName: kt.a.upDownVote,
 						model: m,
-						onVoteClick: X,
+						onVoteClick: Z,
 						scoreClassName: kt.a.score,
 						upvoteButtonClassName: kt.a.voteButton,
 						upvoteClassName: kt.a.upDownVote
@@ -1955,7 +1955,7 @@
 				const t = Object(o.f)().getState(),
 					s = Object(h.a)(t, Object(d.c)());
 				if (e.isD2xPdpSideRailRecsEnabled) {
-					const t = e.d2xPdpSideRailRecsVariant === m.Yc.GreyRereddit || e.d2xPdpSideRailRecsVariant === m.Yc.GreyRedditNoNsfw || e.d2xPdpSideRailRecsVariant === m.Yc.LargeImagePreview ? e.reredditButtons : [];
+					const t = e.d2xPdpSideRailRecsVariant === m.Zc.GreyRereddit || e.d2xPdpSideRailRecsVariant === m.Zc.GreyRedditNoNsfw || e.d2xPdpSideRailRecsVariant === m.Zc.LargeImagePreview ? e.reredditButtons : [];
 					return r.a.createElement(w, {
 						reredditContent: t,
 						countryCode: e.countryCode
@@ -2907,11 +2907,11 @@
 				a = s("./node_modules/reselect/es/index.js");
 			const c = Object(a.a)(e => Object(r.c)(e, {
 					experimentEligibilitySelector: e => Object(d.h)(e) && Object(o.f)(e),
-					experimentName: n.sc
+					experimentName: n.tc
 				}), i.a),
 				l = Object(a.a)(e => Object(r.c)(e, {
 					experimentEligibilitySelector: e => !Object(d.h)(e) && Object(o.f)(e),
-					experimentName: n.rc
+					experimentName: n.sc
 				}), i.a),
 				m = Object(a.a)(c, l, (e, t) => e || t),
 				u = Object(a.a)(c, l, (e, t) => !(!e && !t))
@@ -3049,4 +3049,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~SearchResults.5ad1c2cb7d022927698d.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~SearchResults.c88e4df5b9fa223380b5.js.map

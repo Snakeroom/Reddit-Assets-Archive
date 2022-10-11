@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-CompactPost.2eb751a9b46b1ac03aa0.js
-// Retrieved at 10/11/2022, 9:50:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-CompactPost.8ae2fba32ac147665ce3.js
+// Retrieved at 10/11/2022, 10:50:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-CompactPost"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -1159,8 +1159,8 @@
 				z = s("./src/reddit/components/PostContainer/index.tsx"),
 				J = s("./src/reddit/components/PostFlairPicker/index.tsx"),
 				X = s("./src/reddit/components/PostLeftRail/index.tsx"),
-				Z = s("./src/reddit/components/PostMedia/index.tsx"),
-				K = s("./src/reddit/components/PostModModeDropdown/index.tsx"),
+				K = s("./src/reddit/components/PostMedia/index.tsx"),
+				Z = s("./src/reddit/components/PostModModeDropdown/index.tsx"),
 				Q = s("./src/reddit/components/PostOverflowMenu/index.tsx"),
 				$ = s("./src/reddit/components/PostTitle/index.tsx"),
 				ee = s("./src/reddit/components/PostTopMeta/index.tsx"),
@@ -1285,7 +1285,7 @@
 						isProfilePostListing: y,
 						inSubredditOrProfile: k = !1,
 						layout: L,
-						moderatorPermissions: Z,
+						moderatorPermissions: K,
 						modModeEnabled: ne,
 						onClickPost: oe,
 						onFlairChanged: ie,
@@ -1304,9 +1304,9 @@
 						shouldShowGalleryTileOption: Pe,
 						showPromotedCTA: we,
 						showCTAExperimentDesign: Ae
-					} = this.props, Me = !!fe.media && fe.media.type === h.o.RTJSON, Re = he && Me, De = Object(J.b)(fe.id, g), Fe = Object(pe.a)(Z), Be = Object(ue.a)(Z), Ue = Object(me.a)(Z), Ve = `-mod-actions-menu-${fe.id}`, We = `voting-arrows-${fe.id}`, He = !!o && Object(v.e)(o) === fe.author, Ye = Object(U.a)(fe), Ge = Object(W.c)(fe), qe = Object(R.a)("View--Reports", fe.id, Te), ze = Object(W.a)(fe), Je = !(g || _ || E), Xe = fe.media && fe.media.type === h.o.LIVEVIDEO, Ze = e => Ne(Object(x.k)(fe.id, e)), Ke = Object(d.t)(fe, u), {
+					} = this.props, Me = !!fe.media && fe.media.type === h.o.RTJSON, Re = he && Me, De = Object(J.b)(fe.id, g), Fe = Object(pe.a)(K), Be = Object(ue.a)(K), Ue = Object(me.a)(K), Ve = `-mod-actions-menu-${fe.id}`, We = `voting-arrows-${fe.id}`, He = !!o && Object(v.e)(o) === fe.author, Ye = Object(U.a)(fe), Ge = Object(W.c)(fe), qe = Object(R.a)("View--Reports", fe.id, Te), ze = Object(W.a)(fe), Je = !(g || _ || E), Xe = fe.media && fe.media.type === h.o.LIVEVIDEO, Ke = e => Ne(Object(x.k)(fe.id, e)), Ze = Object(d.t)(fe, u), {
 						source: Qe
-					} = Ke, $e = r.a.createElement(z.a, {
+					} = Ze, $e = r.a.createElement(z.a, {
 						className: Object(l.a)(Se.a.compactPostStyles, ye.a.postContainer, Object(f.a)(this.props), t),
 						isOverlay: g,
 						style: {
@@ -1421,8 +1421,8 @@
 						showIconsOnly: !0
 					}), Fe && r.a.createElement(F.a, {
 						dropdownId: Ve,
-						onClick: () => Ze("post_mod_action_menu")
-					}, r.a.createElement(M.b, null), r.a.createElement(K.a, {
+						onClick: () => Ke("post_mod_action_menu")
+					}, r.a.createElement(M.b, null), r.a.createElement(Z.a, {
 						canEditFlair: Be && ge,
 						hasModPostPerms: Fe,
 						hasModFullPerms: Ue,
@@ -1434,13 +1434,13 @@
 					})), Fe && Ge && !ne && r.a.createElement(se.c, {
 						text: `${ze}`,
 						onClick: () => {
-							this.props.onOpenReportsDropdown(qe), Ze("post_report_menu")
+							this.props.onOpenReportsDropdown(qe), Ke("post_report_menu")
 						},
 						id: qe
 					}, r.a.createElement(ae.a, {
 						model: fe,
 						onIgnoreReports: () => {
-							ce(), Ze(fe.ignoreReports ? "restore_reports" : "ignore_reports")
+							ce(), Ke(fe.ignoreReports ? "restore_reports" : "ignore_reports")
 						},
 						tooltipId: qe
 					}), fe.ignoreReports ? r.a.createElement(ve.a, null) : r.a.createElement(_e.a, null)), r.a.createElement(Q.a, {
@@ -1478,7 +1478,7 @@
 						ctaExperimentDesign: Ae && "compact"
 					}, r.a.createElement(T.a, {
 						post: fe,
-						adLinkContent: Ke,
+						adLinkContent: Ze,
 						isCompact: !0,
 						ctaExperimentDesign: Ae && "compact"
 					})), ne && Fe && Ye && r.a.createElement("div", {
@@ -1511,7 +1511,7 @@
 				}, e.post.crosspostRootId ? r.a.createElement("div", {
 					className: ye.a.crosspostMediaWrapper
 				}, we(e.post, e.scrollerItemRef, e.shouldShowGalleryTileOption, e.isGalleryTileLayoutDefault)) : we(e.post, e.scrollerItemRef, e.shouldShowGalleryTileOption, e.isGalleryTileLayoutDefault)),
-				we = (e, t, s, n) => r.a.createElement(Z.a, {
+				we = (e, t, s, n) => r.a.createElement(K.a, {
 					isExpando: !0,
 					isGalleryTileLayoutDefault: n,
 					isListing: !0,
@@ -2366,8 +2366,8 @@
 					z = F("Archived", V.id, W),
 					J = F("Lock", V.id, W),
 					X = F("Mod", V.id, W),
-					Z = F("Remove", V.id, W),
-					K = F("Report", V.id, W),
+					K = F("Remove", V.id, W),
+					Z = F("Report", V.id, W),
 					Q = F("Spam", V.id, W),
 					$ = F("Sticky", V.id, W),
 					ee = F("Pinned", V.id, W);
@@ -2434,8 +2434,8 @@
 					isFilled: !0,
 					className: Object(c.a)(P.a.icon, P.a.removeIcon),
 					desc: Object(x.b)(V),
-					id: Z,
-					onMouseEnter: U(Z),
+					id: K,
+					onMouseEnter: U(K),
 					onMouseLeave: N
 				}), G && r.a.createElement(m.a, {
 					className: P.a.addRemovalReason,
@@ -2444,12 +2444,12 @@
 						hk: "1YDo3"
 					})
 				}), (V.modRemovalReason || V.modNote) && r.a.createElement(w, {
-					onMouseEnter: U(Z),
+					onMouseEnter: U(K),
 					onMouseLeave: N
 				}, n.fbt._("Removal reason", null, {
 					hk: "2DhKVZ"
 				})), r.a.createElement(u.c, I({
-					tooltipId: Z,
+					tooltipId: K,
 					text: Object(x.b)(V)
 				}, Y))), V.bannedBy && V.isSpam && r.a.createElement(o.Fragment, null, r.a.createElement(g.a, {
 					isFilled: !0,
@@ -2465,11 +2465,11 @@
 					isFilled: !0,
 					className: Object(c.a)(P.a.icon, P.a.reportIcon),
 					desc: Object(x.c)(V.numReports),
-					id: K,
-					onMouseEnter: U(K),
+					id: Z,
+					onMouseEnter: U(Z),
 					onMouseLeave: N
 				}), r.a.createElement(u.c, I({
-					tooltipId: K,
+					tooltipId: Z,
 					text: Object(x.c)(V.numReports)
 				}, Y))))
 			}))
@@ -2961,7 +2961,7 @@
 						type: n
 					}, r) : r)
 				},
-				Z = e => {
+				K = e => {
 					let {
 						className: t,
 						disableVisited: s,
@@ -2975,7 +2975,7 @@
 						})
 					}), o)
 				},
-				K = e => {
+				Z = e => {
 					let {
 						disableVisited: t,
 						nowrap: s,
@@ -3010,7 +3010,7 @@
 					} = t, o = Object(i.d)(), r = Object(E.a)(), c = Object(i.e)(U.b), d = Object(i.e)(U.c), u = e => {
 						!c && !d || t.media && Object(k.H)(t.media) || (e.preventDefault(), o(Object(h.bb)(Object(v.b)(t.permalink), t.id)))
 					};
-					if (e.isCommentsPage && !e.isCommentPermalink && !e.shouldLinkWrap) return a.a.createElement(K, {
+					if (e.isCommentsPage && !e.isCommentPermalink && !e.shouldLinkWrap) return a.a.createElement(Z, {
 						nowrap: e.nowrap
 					}, a.a.createElement(ee, e));
 					if (e.isCommentsPageAd && t.source && t.source.url) return a.a.createElement(b.b, {
@@ -3021,7 +3021,7 @@
 					}, a.a.createElement(ee, e)); {
 						const o = t.media && Object(k.H)(t.media) ? Object(_.c)(t.id, s.name) : t.permalink,
 							i = e.isCommentPermalink ? Object(v.b)(o) : Object(x.a)(o, void 0, r);
-						return a.a.createElement(K, {
+						return a.a.createElement(Z, {
 							disableVisited: e.disableVisited,
 							nowrap: e.nowrap
 						}, n ? ((e, t) => {
@@ -3034,7 +3034,7 @@
 								postId: e.id,
 								source: s
 							}, a.a.createElement(ee, t)) : a.a.createElement(ee, t)
-						})(t, e) : a.a.createElement(Z, {
+						})(t, e) : a.a.createElement(K, {
 							className: e.titleLinkClassName,
 							"data-click-id": "body",
 							disableVisited: e.disableVisited,
@@ -5320,8 +5320,8 @@
 					if (Object(a.a)(e)) return !1;
 					return Object(o.c)(e, {
 						experimentEligibilitySelector: o.a,
-						experimentName: n.zc
-					}) === n.Zc.Enabled
+						experimentName: n.Ac
+					}) === n.ad.Enabled
 				}
 		},
 		"./src/reddit/selectors/experiments/presence.ts": function(e, t, s) {
@@ -5334,8 +5334,8 @@
 			const r = e => {
 				return Object(o.c)(e, {
 					experimentEligibilitySelector: o.a,
-					experimentName: n.ff
-				}) === n.Pd
+					experimentName: n.gf
+				}) === n.Qd
 			}
 		},
 		"./src/reddit/selectors/experiments/web2x_cta.ts": function(e, t, s) {
@@ -5347,10 +5347,10 @@
 				o = s("./src/reddit/constants/experiments.ts"),
 				r = s("./src/reddit/helpers/chooseVariant/index.ts");
 			const a = Object(n.a)(e => Object(r.c)(e, {
-					experimentName: o.jg,
+					experimentName: o.kg,
 					experimentEligibilitySelector: r.a
 				}), e => e),
-				i = Object(n.a)(a, e => e === o.ag)
+				i = Object(n.a)(a, e => e === o.bg)
 		},
 		"./src/reddit/selectors/removedPosts.ts": function(e, t, s) {
 			"use strict";
@@ -5425,10 +5425,10 @@
 				r = s("./src/reddit/helpers/chooseVariant/index.ts"),
 				a = s("./src/reddit/selectors/posts.ts");
 			const i = e => Object(r.c)(e, {
-					experimentName: o.if,
+					experimentName: o.jf,
 					experimentEligibilitySelector: r.a
 				}),
-				c = (e, t) => t === o.qf.Enabled && (null == e ? void 0 : e.isCreatedFromAdsUi) || (null == e ? void 0 : e.isSponsored),
+				c = (e, t) => t === o.rf.Enabled && (null == e ? void 0 : e.isCreatedFromAdsUi) || (null == e ? void 0 : e.isSponsored),
 				d = Object(n.a)(a.G, i, (e, t) => c(e, t));
 			Object(n.a)((e, t) => t, i, (e, t) => c(e, t))
 		},
@@ -5514,4 +5514,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-CompactPost.2eb751a9b46b1ac03aa0.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-CompactPost.8ae2fba32ac147665ce3.js.map

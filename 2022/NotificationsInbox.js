@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/NotificationsInbox.6f14a5c7c22405e315a7.js
-// Retrieved at 10/4/2022, 1:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/NotificationsInbox.a023571aa3ce749d1b56.js
+// Retrieved at 10/11/2022, 10:50:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["NotificationsInbox"], {
 		"./src/reddit/actions/pages/notificationsInbox.ts": function(e, t, n) {
@@ -24,7 +24,7 @@
 				actionSource: a.a.NotificationsInbox,
 				redirectUrl: d.b
 			}), f = () => r.m({
-				title: Object(i.j)()
+				title: Object(i.k)()
 			}), p = () => async (e, t) => {
 				const n = t(),
 					i = Object(l.g)(t()),
@@ -733,4 +733,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/NotificationsInbox.6f14a5c7c22405e315a7.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/NotificationsInbox.a023571aa3ce749d1b56.js.map

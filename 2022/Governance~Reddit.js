@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~Reddit.8996eabf6c84ac81bb87.js
-// Retrieved at 10/11/2022, 9:50:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~Reddit.a6bed5eaa9ff89c1b035.js
+// Retrieved at 10/11/2022, 10:50:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~Reddit"], {
 		"./assets/fonts/NotoMono/font.less": function(e, t, n) {},
@@ -1758,7 +1758,7 @@
 			})), D = e => async (t, r) => {
 				const s = r();
 				t(d.m({
-					title: o.l()
+					title: o.m()
 				})), Object(g.Q)(s) || await t(m.s());
 				const a = Object(g.Q)(s);
 				if (e.queryParams.thanks && a) {
@@ -2195,7 +2195,7 @@
 			const D = e => _.d.reCaptchaEnterprise(e) && !Object(T.d)(e),
 				w = e => !!Object(S.c)(e, {
 					experimentEligibilitySelector: Object(I.d)(Object(I.b)(...a.d)),
-					experimentName: f.sf
+					experimentName: f.tf
 				}),
 				j = Object(r.b)("LOAD_RECAPTCHA_ENTERPRISE"),
 				A = () => l(e => p()([D, w, e => e.tracking.reCaptchaEnterprise.load === r.a.New], t => t(e)))(async e => {
@@ -4354,7 +4354,7 @@
 							function() {
 								let e = {};
 								A && k.type.length && (Object(se.d)(w, {
-									experimentName: te.Hc
+									experimentName: te.Ic
 								}), j && (e = {
 									...k
 								}));
@@ -25326,7 +25326,7 @@
 					if (!u(e)) return;
 					const t = Object(o.c)(e, {
 						experimentEligibilitySelector: l,
-						experimentName: a.je,
+						experimentName: a.ke,
 						expEventOverride: !1
 					});
 					return null == t ? void 0 : t.toLocaleLowerCase()
@@ -25349,9 +25349,9 @@
 				},
 				b = e => !!p(e) && Object(o.c)(e, {
 					experimentEligibilitySelector: u,
-					experimentName: a.ke,
+					experimentName: a.le,
 					expEventOverride: !1
-				}) !== a.le.Readonly
+				}) !== a.me.Readonly
 		},
 		"./src/reddit/selectors/experiments/serpTabPreserved.ts": function(e, t, n) {
 			"use strict";
@@ -25362,10 +25362,10 @@
 				s = n("./src/reddit/selectors/telemetry.ts");
 
 			function a(e) {
-				const t = Object(s.q)(e, r.Hc);
+				const t = Object(s.q)(e, r.Ic);
 				return {
 					experimentState: e,
-					isActive: (null == t ? void 0 : t.variant) === r.Pd,
+					isActive: (null == t ? void 0 : t.variant) === r.Qd,
 					isBucketed: !!(null == t ? void 0 : t.variant)
 				}
 			}
@@ -25515,4 +25515,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit.8996eabf6c84ac81bb87.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit.a6bed5eaa9ff89c1b035.js.map

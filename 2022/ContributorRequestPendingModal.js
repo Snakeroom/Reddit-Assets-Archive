@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ContributorRequestPendingModal.9e47ea5d0bb44b3d3ee5.js
-// Retrieved at 10/3/2022, 2:20:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ContributorRequestPendingModal.897cbfe4d06e5bb2a60e.js
+// Retrieved at 10/11/2022, 10:50:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ContributorRequestPendingModal", "ContributorRequestRequestModal"], {
 		"./src/reddit/components/ContributorRequestFlow/PendingModal/index.m.less": function(e, t, n) {
@@ -35,6 +35,9 @@
 				bodyFont: "_20828B8NYtXTVy7i4u5l8p",
 				bodyFontSmall: "_34mk61kYhwo60DGJVxLSPv",
 				bodyFontMono: "_1hTcMMnVRQ0sewN_z99GAa",
+				landingPageTitleFontH1: "nap2UpGFVXiO-abKAsLCM",
+				landingPageTitleFontH2: "qDdadz-pMbQmmakDgdjd",
+				landingPageTitleFontH3: "_2L1D0c6Sb6EbNRab0EomY6",
 				Component: "_2sBoAyFDM9hFHkT2UjE5Ep",
 				component: "_2sBoAyFDM9hFHkT2UjE5Ep",
 				DescriptionPending: "_94bbeDxkn_amKuGqD_ba2",
@@ -47,17 +50,17 @@
 			"use strict";
 			n.r(t);
 			var o = n("./node_modules/fbt/lib/FbtPublic.js"),
-				r = n("./node_modules/react/index.js"),
-				s = n.n(r),
-				a = n("./node_modules/react-redux/es/index.js"),
+				a = n("./node_modules/react/index.js"),
+				s = n.n(a),
+				r = n("./node_modules/react-redux/es/index.js"),
 				i = n("./node_modules/reselect/es/index.js"),
-				l = n("./src/higherOrderComponents/asModal/index.tsx"),
-				d = n("./src/reddit/actions/modal.ts"),
+				d = n("./src/higherOrderComponents/asModal/index.tsx"),
+				l = n("./src/reddit/actions/modal.ts"),
 				c = n("./src/reddit/components/ContributorRequestFlow/RequestModal/index.tsx"),
 				u = n("./src/reddit/components/ModalStyledComponents/index.tsx"),
 				m = n("./src/reddit/constants/modals.ts"),
-				p = n("./src/reddit/controls/TextButton/index.tsx"),
-				b = n("./src/reddit/layout/twoCol/ExpandLeft/index.tsx"),
+				b = n("./src/reddit/controls/TextButton/index.tsx"),
+				p = n("./src/reddit/layout/twoCol/ExpandLeft/index.tsx"),
 				_ = n("./src/reddit/models/SubredditRestrictions/index.ts"),
 				x = n("./src/reddit/selectors/platform.ts"),
 				F = n("./src/reddit/selectors/subreddit.ts"),
@@ -65,15 +68,15 @@
 				f = n.n(C),
 				h = n("./src/lib/lessComponent.tsx");
 			const E = h.a.div("DescriptionPending", f.a),
-				q = h.a.wrapped(u.e, "ModalBody", f.a),
-				y = Object(i.c)({
+				g = h.a.wrapped(u.e, "ModalBody", f.a),
+				q = Object(i.c)({
 					restrictions: F.q,
 					subreddit: x.e
 				}),
-				g = Object(a.b)(y, e => ({
-					openContributorRequestPendingModal: () => e(Object(d.i)(m.a.CONTRIBUTOR_REQUEST_PENDING))
+				k = Object(r.b)(q, e => ({
+					openContributorRequestPendingModal: () => e(Object(l.i)(m.a.CONTRIBUTOR_REQUEST_PENDING))
 				}));
-			class k extends s.a.Component {
+			class y extends s.a.Component {
 				render() {
 					const {
 						openContributorRequestPendingModal: e,
@@ -81,12 +84,12 @@
 						subreddit: n
 					} = this.props;
 					if (!n) return null;
-					const r = t === _.e.Comment ? _.a.Create : _.a.Draft;
-					return s.a.createElement(q, null, s.a.createElement(c.ModalHeader, null, s.a.createElement(b.a, null, s.a.createElement(c.ModalTitle, null, o.fbt._("Request sent and pending...", null, {
+					const a = t === _.e.Comment ? _.a.Create : _.a.Draft;
+					return s.a.createElement(g, null, s.a.createElement(c.ModalHeader, null, s.a.createElement(p.a, null, s.a.createElement(c.ModalTitle, null, o.fbt._("Request sent and pending...", null, {
 						hk: "8x2US"
-					})), s.a.createElement(p.a, {
+					})), s.a.createElement(b.a, {
 						onClick: () => e()
-					}, s.a.createElement(c.CloseIcon, null)))), s.a.createElement(u.l, null, s.a.createElement(E, null, o.fbt._("Your request to {restrictions} to {displayName} was sent and is pending. In the meantime, you can {action} a post and browse the community.", [o.fbt._param("restrictions", _.d[t]()), o.fbt._param("displayName", n.displayText), o.fbt._param("action", _.c[r]())], {
+					}, s.a.createElement(c.CloseIcon, null)))), s.a.createElement(u.l, null, s.a.createElement(E, null, o.fbt._("Your request to {restrictions} to {displayName} was sent and is pending. In the meantime, you can {action} a post and browse the community.", [o.fbt._param("restrictions", _.d[t]()), o.fbt._param("displayName", n.displayText), o.fbt._param("action", _.c[a]())], {
 						hk: "2cTcEi"
 					}))), s.a.createElement(u.g, null, s.a.createElement(u.r, {
 						onClick: () => e()
@@ -95,7 +98,7 @@
 					}))))
 				}
 			}
-			t.default = h.a.wrapped(Object(l.a)(g(k)), "Component", f.a)
+			t.default = h.a.wrapped(Object(d.a)(k(y)), "Component", f.a)
 		},
 		"./src/reddit/components/ContributorRequestFlow/RequestModal/index.m.less": function(e, t, n) {
 			e.exports = {
@@ -119,24 +122,24 @@
 		"./src/reddit/components/ContributorRequestFlow/RequestModal/index.tsx": function(e, t, n) {
 			"use strict";
 			n.r(t), n.d(t, "ModalHeader", (function() {
-				return S
+				return v
 			})), n.d(t, "ModalTitle", (function() {
 				return j
 			})), n.d(t, "CloseIcon", (function() {
 				return w
 			}));
 			var o = n("./node_modules/fbt/lib/FbtPublic.js"),
-				r = n("./src/lib/CSSVariableProvider/withTheme.tsx"),
+				a = n("./src/lib/CSSVariableProvider/withTheme.tsx"),
 				s = n("./node_modules/react/index.js"),
-				a = n.n(s),
+				r = n.n(s),
 				i = n("./node_modules/react-redux/es/index.js"),
-				l = n("./node_modules/reselect/es/index.js"),
-				d = n("./src/higherOrderComponents/asModal/index.tsx"),
+				d = n("./node_modules/reselect/es/index.js"),
+				l = n("./src/higherOrderComponents/asModal/index.tsx"),
 				c = n("./src/reddit/actions/modal.ts"),
 				u = n("./src/reddit/actions/subreddit.ts"),
 				m = n("./src/reddit/components/ModalStyledComponents/index.tsx"),
-				p = n("./src/reddit/components/StructuredStyles/Forms/LabeledControl/index.tsx"),
-				b = n("./src/reddit/components/SubredditIcon/index.tsx"),
+				b = n("./src/reddit/components/StructuredStyles/Forms/LabeledControl/index.tsx"),
+				p = n("./src/reddit/components/SubredditIcon/index.tsx"),
 				_ = n("./src/reddit/components/TrackingHelper/index.tsx"),
 				x = n("./src/reddit/constants/modals.ts"),
 				F = n("./src/reddit/controls/TextButton/index.tsx"),
@@ -144,19 +147,19 @@
 				f = n("./src/reddit/layout/twoCol/ExpandLeft/index.tsx"),
 				h = n("./src/reddit/models/SubredditRestrictions/index.ts"),
 				E = n("./src/reddit/models/Theme/index.ts"),
-				q = n("./src/reddit/selectors/platform.ts"),
-				y = n("./src/reddit/selectors/structuredStyles.ts"),
-				g = n("./src/reddit/selectors/subreddit.ts"),
-				k = n("./src/reddit/components/ContributorRequestFlow/RequestModal/index.m.less"),
-				R = n.n(k),
+				g = n("./src/reddit/selectors/platform.ts"),
+				q = n("./src/reddit/selectors/structuredStyles.ts"),
+				k = n("./src/reddit/selectors/subreddit.ts"),
+				y = n("./src/reddit/components/ContributorRequestFlow/RequestModal/index.m.less"),
+				R = n.n(y),
 				M = n("./src/lib/lessComponent.tsx");
-			const v = M.a.wrapped(m.e, "ModalBody", R.a),
-				S = M.a.wrapped(m.i, "ModalHeader", R.a),
+			const S = M.a.wrapped(m.e, "ModalBody", R.a),
+				v = M.a.wrapped(m.i, "ModalHeader", R.a),
 				j = M.a.div("ModalTitle", R.a),
 				T = M.a.div("Title", R.a),
 				I = M.a.div("Description", R.a),
 				w = M.a.wrapped(m.b, "CloseIcon", R.a);
-			class O extends a.a.Component {
+			class O extends r.a.Component {
 				constructor(e) {
 					super(e), this.onTextAreaChange = e => {
 						this.setState({
@@ -175,29 +178,29 @@
 					const e = this.props.subreddit.displayText,
 						t = this.props.subredditAboutInfo.disableContributorRequests,
 						n = this.props.theme ? Object(E.f)(this.props.theme.newCommunityTheme.widgetColors.sidebarWidgetHeaderColor) : "";
-					return a.a.createElement(v, {
+					return r.a.createElement(S, {
 						className: R.a.requestModal
-					}, a.a.createElement(S, null, a.a.createElement(f.a, null, a.a.createElement("div", null, a.a.createElement(j, {
+					}, r.a.createElement(v, null, r.a.createElement(f.a, null, r.a.createElement("div", null, r.a.createElement(j, {
 						style: {
 							color: n
 						}
 					}, o.fbt._("Become an approved user of", null, {
 						hk: "u33RG"
-					})), a.a.createElement(T, {
+					})), r.a.createElement(T, {
 						style: {
 							color: n
 						}
-					}, a.a.createElement(b.b, {
+					}, r.a.createElement(p.b, {
 						className: R.a.subredditIcon,
 						iconUrl: this.props.subredditIcon.url,
 						primaryColor: this.props.subredditIcon.color
-					}), a.a.createElement("span", null, e))), a.a.createElement(F.a, {
+					}), r.a.createElement("span", null, e))), r.a.createElement(F.a, {
 						onClick: this.onCancelRequest
-					}, a.a.createElement(w, null)))), a.a.createElement(m.l, null, t ? a.a.createElement(I, null, o.fbt._("The moderators have disabled requests in this community. Check the community rules for more details.", null, {
+					}, r.a.createElement(w, null)))), r.a.createElement(m.l, null, t ? r.a.createElement(I, null, o.fbt._("The moderators have disabled requests in this community. Check the community rules for more details.", null, {
 						hk: "2J5GoK"
-					})) : a.a.createElement(a.a.Fragment, null, a.a.createElement(I, null, o.fbt._("Only approved users can {restrictions} in {displayName}. To become an approved user, send a request to the moderators.", [o.fbt._param("restrictions", h.d[this.props.restrictions]()), o.fbt._param("displayName", e)], {
+					})) : r.a.createElement(r.a.Fragment, null, r.a.createElement(I, null, o.fbt._("Only approved users can {restrictions} in {displayName}. To become an approved user, send a request to the moderators.", [o.fbt._param("restrictions", h.d[this.props.restrictions]()), o.fbt._param("displayName", e)], {
 						hk: "1q9PJW"
-					})), a.a.createElement(p.c, {
+					})), r.a.createElement(b.c, {
 						className: R.a.textarea,
 						label: o.fbt._("Request to moderators", null, {
 							hk: "4hiUqP"
@@ -206,16 +209,16 @@
 						onChange: this.onTextAreaChange,
 						state: void 0,
 						required: !0
-					}))), a.a.createElement(m.g, null, t ? a.a.createElement(m.r, {
+					}))), r.a.createElement(m.g, null, t ? r.a.createElement(m.r, {
 						onClick: () => this.props.toggleContributorRequestModal()
 					}, o.fbt._("ok", null, {
 						hk: "22zWTN"
-					})) : a.a.createElement(a.a.Fragment, null, a.a.createElement(m.a, {
+					})) : r.a.createElement(r.a.Fragment, null, r.a.createElement(m.a, {
 						"data-redditstyle": !0,
 						onClick: this.onCancelRequest
 					}, o.fbt._("Cancel", null, {
 						hk: "2TSLl5"
-					})), a.a.createElement(m.r, {
+					})), r.a.createElement(m.r, {
 						onClick: () => {
 							this.props.sendEvent(Object(C.b)("request_approval")), this.props.makeContributorRequest(e, this.state.message, this.props.restrictions), this.props.toggleContributorRequestModal()
 						}
@@ -224,11 +227,11 @@
 					})))))
 				}
 			}
-			t.default = M.a.wrapped(Object(r.a)(Object(d.a)(Object(i.b)(() => Object(l.c)({
-				subredditAboutInfo: g.g,
-				restrictions: g.q,
-				subreddit: q.e,
-				subredditIcon: y.b
+			t.default = M.a.wrapped(Object(a.a)(Object(l.a)(Object(i.b)(() => Object(d.c)({
+				subredditAboutInfo: k.g,
+				restrictions: k.q,
+				subreddit: g.e,
+				subredditIcon: q.b
 			}), e => ({
 				makeContributorRequest: (t, n, o) => e(Object(u.n)(t, n, o)),
 				toggleContributorRequestModal: () => e(Object(c.i)(x.a.CONTRIBUTOR_REQUEST))
@@ -265,13 +268,13 @@
 				return f
 			}));
 			var o = n("./node_modules/react/index.js"),
-				r = n.n(o),
+				a = n.n(o),
 				s = n("./src/lib/classNames/index.ts"),
-				a = n("./src/lib/lessComponent.tsx"),
+				r = n("./src/lib/lessComponent.tsx"),
 				i = n("./src/reddit/controls/Input/index.tsx"),
-				l = n("./src/reddit/icons/svgs/Checkmark/index.tsx"),
-				d = n("./src/reddit/components/StructuredStyles/Forms/LabeledControl/index.m.less"),
-				c = n.n(d);
+				d = n("./src/reddit/icons/svgs/Checkmark/index.tsx"),
+				l = n("./src/reddit/components/StructuredStyles/Forms/LabeledControl/index.m.less"),
+				c = n.n(l);
 
 			function u() {
 				return (u = Object.assign || function(e) {
@@ -282,9 +285,9 @@
 					return e
 				}).apply(this, arguments)
 			}
-			const m = a.a.div("icon", c.a),
-				p = a.a.textarea("textarea", c.a),
-				b = a.a.span("Invalid", c.a);
+			const m = r.a.div("icon", c.a),
+				b = r.a.textarea("textarea", c.a),
+				p = r.a.span("Invalid", c.a);
 			var _, x;
 			! function(e) {
 				e[e.Valid = 1] = "Valid", e[e.Invalid = 2] = "Invalid"
@@ -292,7 +295,7 @@
 			function(e) {
 				e[e.GreyFields = 1] = "GreyFields", e[e.WhiteFields = 2] = "WhiteFields"
 			}(x || (x = {}));
-			const F = e => r.a.createElement("div", {
+			const F = e => a.a.createElement("div", {
 					className: Object(s.a)(e.isRequired && c.a.required, e.className, {
 						[c.a.container]: !e.isTextarea,
 						[c.a.textareaContainer]: !!e.isTextarea,
@@ -302,43 +305,43 @@
 							[c.a.mWhiteField]: e.backgroundColorState === x.WhiteFields
 						}
 					})
-				}, r.a.createElement("label", {
+				}, a.a.createElement("label", {
 					className: Object(s.a)({
 						[c.a.field]: !e.isTextarea,
 						[c.a.textareaField]: !!e.isTextarea
 					})
-				}, e.children, e.label && r.a.createElement("span", {
+				}, e.children, e.label && a.a.createElement("span", {
 					className: c.a.label
-				}, e.label), !!e.state && r.a.createElement(m, {
+				}, e.label), !!e.state && a.a.createElement(m, {
 					className: Object(s.a)({
 						[c.a.mValid]: e.state === _.Valid,
 						[c.a.mInvalid]: e.state === _.Invalid
 					})
-				}, e.state === _.Valid && r.a.createElement(l.a, null), e.state === _.Invalid && r.a.createElement(b, null, "!")))),
+				}, e.state === _.Valid && a.a.createElement(d.a, null), e.state === _.Invalid && a.a.createElement(p, null, "!")))),
 				C = e => {
 					const {
 						backgroundColorState: t,
 						className: n,
 						inputRef: o,
-						isRequired: a,
-						label: l,
-						onKeyDown: d,
+						isRequired: r,
+						label: d,
+						onKeyDown: l,
 						state: m,
-						...p
+						...b
 					} = e;
-					return r.a.createElement(F, {
+					return a.a.createElement(F, {
 						backgroundColorState: t,
 						className: n,
-						isRequired: a,
-						label: l,
+						isRequired: r,
+						label: d,
 						state: m
-					}, r.a.createElement(i.a, u({}, p, {
+					}, a.a.createElement(i.a, u({}, b, {
 						className: Object(s.a)(c.a.input, c.a.control, {
 							[c.a.hasState]: !!e.state
 						}),
 						"data-empty": !e.value,
 						innerRef: o,
-						onKeyDown: d
+						onKeyDown: l
 					})))
 				},
 				f = e => {
@@ -346,45 +349,45 @@
 						backgroundColorState: t,
 						className: n,
 						inputRef: o,
-						isRequired: a,
+						isRequired: r,
 						label: i,
-						onKeyDown: l,
-						state: d,
+						onKeyDown: d,
+						state: l,
 						...m
 					} = e;
-					return r.a.createElement(F, {
+					return a.a.createElement(F, {
 						backgroundColorState: t,
 						className: n,
-						isRequired: a,
+						isRequired: r,
 						label: i,
-						state: d,
+						state: l,
 						isTextarea: !0
-					}, r.a.createElement(p, u({}, m, {
+					}, a.a.createElement(b, u({}, m, {
 						className: Object(s.a)({
 							[c.a.mWhiteField]: e.backgroundColorState === x.WhiteFields
 						}),
 						"data-empty": !e.value,
 						innerRef: o,
-						onKeyDown: l
+						onKeyDown: d
 					})))
 				}
 		},
 		"./src/reddit/controls/Input/index.tsx": function(e, t, n) {
 			"use strict";
 			var o = n("./src/lib/lessComponent.tsx"),
-				r = n("./src/reddit/controls/Input/index.m.less"),
-				s = n.n(r);
+				a = n("./src/reddit/controls/Input/index.m.less"),
+				s = n.n(a);
 			t.a = o.a.input("input", s.a)
 		},
 		"./src/reddit/helpers/trackers/restrictedCommunity.ts": function(e, t, n) {
 			"use strict";
 			n.d(t, "a", (function() {
-				return r
+				return a
 			})), n.d(t, "b", (function() {
 				return s
 			}));
 			var o = n("./src/reddit/selectors/telemetry.ts");
-			const r = e => t => ({
+			const a = e => t => ({
 					...o.o(t),
 					source: e,
 					action: "click",
@@ -401,4 +404,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ContributorRequestPendingModal.9e47ea5d0bb44b3d3ee5.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ContributorRequestPendingModal.897cbfe4d06e5bb2a60e.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditForkingCTA.451b7672d49ecfc11430.js
-// Retrieved at 10/11/2022, 9:50:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditForkingCTA.0e4e95833605297d06b9.js
+// Retrieved at 10/11/2022, 10:50:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditForkingCTA"], {
 		"./node_modules/lodash/xorWith.js": function(t, _, e) {
@@ -30,8 +30,8 @@
 				i = e("./src/reddit/actions/modal.ts"),
 				d = e("./src/reddit/actions/tooltip.ts"),
 				c = e("./src/reddit/components/InfoTextTooltip/index.tsx"),
-				u = e("./src/reddit/components/TrackingHelper/index.tsx"),
-				l = e("./src/reddit/constants/modals.ts"),
+				l = e("./src/reddit/components/TrackingHelper/index.tsx"),
+				u = e("./src/reddit/constants/modals.ts"),
 				m = e("./src/reddit/controls/Button/index.tsx"),
 				p = e("./src/reddit/helpers/trackers/subredditCreation.ts"),
 				b = e("./src/reddit/selectors/user.ts"),
@@ -39,25 +39,25 @@
 				f = e.n(x),
 				h = e("./src/lib/lessComponent.tsx");
 			const y = "create-community-button",
-				j = h.a.wrapped(c.c, "StyledTooltip", f.a),
-				g = Object(a.c)({
+				g = h.a.wrapped(c.c, "StyledTooltip", f.a),
+				j = Object(a.c)({
 					userDoesNotHaveEnoughExpToCreateCommunity: t => !Object(b.pb)(t),
 					userIsSuspended: b.X
 				});
-			_.a = Object(r.b)(g, (t, _) => {
+			_.a = Object(r.b)(j, (t, _) => {
 				let {
 					eventSource: e
 				} = _;
 				return {
 					openCommunityCreation: _ => {
-						_(Object(p.c)(e)), t(Object(i.h)(l.a.SUBREDDIT_CREATION_MODAL_ID))
+						_(Object(p.c)(e)), t(Object(i.h)(u.a.SUBREDDIT_CREATION_MODAL_ID))
 					},
 					onShowTooltip: () => t(Object(d.f)({
 						tooltipId: y
 					})),
 					onHideTooltip: () => t(Object(d.i)())
 				}
-			})(Object(u.c)(t => {
+			})(Object(l.c)(t => {
 				let {
 					className: _,
 					eventSource: e,
@@ -67,13 +67,13 @@
 					sendEvent: i,
 					userDoesNotHaveEnoughExpToCreateCommunity: d,
 					userIsSuspended: c,
-					onClick: u
+					onClick: l
 				} = t;
 				return s.a.createElement(m.t, {
 					className: _,
 					disabled: c || d,
 					onClick: t => {
-						u && u(t), a(i)
+						l && l(t), a(i)
 					},
 					onMouseEnter: n,
 					onMouseLeave: r,
@@ -82,13 +82,13 @@
 					isFullWidth: !0
 				}, o.fbt._("Create Community", null, {
 					hk: "28v7Qq"
-				}), d ? s.a.createElement(j, {
+				}), d ? s.a.createElement(g, {
 					caretOnTop: !0,
 					tooltipId: y,
 					text: o.fbt._("To prevent spam, accounts must be at least 30 days old and have enough positive karma to create communities.", null, {
 						hk: "2R1OXu"
 					})
-				}) : c ? s.a.createElement(j, {
+				}) : c ? s.a.createElement(g, {
 					caretOnTop: !0,
 					tooltipId: y,
 					text: o.fbt._("Accounts banned from the site can not create communities until the ban is lifted.", null, {
@@ -160,13 +160,13 @@
 			})), e.d(_, "m", (function() {
 				return y
 			})), e.d(_, "h", (function() {
-				return j
-			})), e.d(_, "j", (function() {
 				return g
+			})), e.d(_, "j", (function() {
+				return j
 			})), e.d(_, "k", (function() {
-				return w
-			})), e.d(_, "g", (function() {
 				return v
+			})), e.d(_, "g", (function() {
+				return w
 			})), e.d(_, "i", (function() {
 				return k
 			})), e.d(_, "q", (function() {
@@ -180,9 +180,9 @@
 			})), e.d(_, "u", (function() {
 				return F
 			})), e.d(_, "r", (function() {
-				return A
-			})), e.d(_, "a", (function() {
 				return M
+			})), e.d(_, "a", (function() {
+				return A
 			})), e.d(_, "s", (function() {
 				return S
 			})), e.d(_, "c", (function() {
@@ -196,10 +196,10 @@
 				i = e("./src/reddit/controls/Input/ModalInput.tsx"),
 				d = e("./src/reddit/icons/svgs/Close/index.tsx"),
 				c = e("./src/reddit/components/ModalStyledComponents/index.m.less"),
-				u = e.n(c);
+				l = e.n(c);
 
-			function l() {
-				return (l = Object.assign || function(t) {
+			function u() {
+				return (u = Object.assign || function(t) {
 					for (var _ = 1; _ < arguments.length; _++) {
 						var e = arguments[_];
 						for (var o in e) Object.prototype.hasOwnProperty.call(e, o) && (t[o] = e[o])
@@ -207,42 +207,42 @@
 					return t
 				}).apply(this, arguments)
 			}
-			const m = n.a.wrapped(d.a, "CloseIcon", u.a),
-				p = n.a.section("ModalBody", u.a),
-				b = n.a.section("ModalPostPreview", u.a),
-				x = n.a.p("ModalText", u.a),
-				f = n.a.div("ModalSmallText", u.a),
-				h = n.a.div("ModalDescriptionText", u.a),
-				y = n.a.div("ModalMetaText", u.a),
-				j = n.a.label("ModalFormItem", u.a),
-				g = n.a.wrapped(i.a, "ModalInput", u.a),
-				w = n.a.label("ModalInputLabel", u.a),
-				v = n.a.footer("ModalFooter", u.a),
-				k = n.a.header("ModalHeader", u.a),
-				z = n.a.div("ModalTitle", u.a),
-				q = n.a.div("ModalAnnotation", u.a),
-				T = n.a.div("ModalMain", u.a),
-				C = n.a.textarea("TextArea", u.a),
-				F = n.a.wrapped(a.l, "WarningButton", u.a),
-				A = n.a.wrapped(a.l, "PrimaryButton", u.a),
-				M = n.a.wrapped(a.o, "CancelButton", u.a),
-				S = n.a.wrapped(a.r, "RemoveButton", u.a),
+			const m = n.a.wrapped(d.a, "CloseIcon", l.a),
+				p = n.a.section("ModalBody", l.a),
+				b = n.a.section("ModalPostPreview", l.a),
+				x = n.a.p("ModalText", l.a),
+				f = n.a.div("ModalSmallText", l.a),
+				h = n.a.div("ModalDescriptionText", l.a),
+				y = n.a.div("ModalMetaText", l.a),
+				g = n.a.label("ModalFormItem", l.a),
+				j = n.a.wrapped(i.a, "ModalInput", l.a),
+				v = n.a.label("ModalInputLabel", l.a),
+				w = n.a.footer("ModalFooter", l.a),
+				k = n.a.header("ModalHeader", l.a),
+				z = n.a.div("ModalTitle", l.a),
+				q = n.a.div("ModalAnnotation", l.a),
+				T = n.a.div("ModalMain", l.a),
+				C = n.a.textarea("TextArea", l.a),
+				F = n.a.wrapped(a.l, "WarningButton", l.a),
+				M = n.a.wrapped(a.l, "PrimaryButton", l.a),
+				A = n.a.wrapped(a.o, "CancelButton", l.a),
+				S = n.a.wrapped(a.r, "RemoveButton", l.a),
 				B = t => {
 					let {
 						className: _,
 						...e
 					} = t;
-					return r.a.createElement(a.t, l({
+					return r.a.createElement(a.t, u({
 						kind: a.b.Button,
 						priority: a.c.Primary,
-						className: Object(o.a)(u.a.ConfirmButton, _)
+						className: Object(o.a)(l.a.ConfirmButton, _)
 					}, e))
 				}
 		},
 		"./src/reddit/components/SubredditForkingCTA/SubredditForkingCTA.tsx": function(t, _, e) {
 			"use strict";
 			e.r(_), e.d(_, "shouldDisplayCTA", (function() {
-				return v
+				return w
 			}));
 			var o = e("./node_modules/fbt/lib/FbtPublic.js"),
 				n = e("./node_modules/react/index.js"),
@@ -252,19 +252,19 @@
 				i = e("./src/reddit/components/ModalStyledComponents/index.tsx"),
 				d = e("./src/reddit/controls/TextButton/index.tsx"),
 				c = e("./src/reddit/helpers/trackers/subredditForking.ts"),
-				u = e("./node_modules/reselect/es/index.js"),
-				l = e("./src/reddit/constants/experiments.ts"),
+				l = e("./node_modules/reselect/es/index.js"),
+				u = e("./src/reddit/constants/experiments.ts"),
 				m = e("./src/reddit/helpers/chooseVariant/index.ts"),
 				p = e("./src/reddit/selectors/experiments/utils.ts");
-			const b = Object(u.a)(t => Object(m.c)(t, {
-					experimentName: l.Nf,
+			const b = Object(l.a)(t => Object(m.c)(t, {
+					experimentName: u.Of,
 					experimentEligibilitySelector: m.a
 				}), p.a),
-				x = Object(u.a)(b, t => t === l.Tf.Enabled);
+				x = Object(l.a)(b, t => t === u.Uf.Enabled);
 			var f = e("./src/reddit/selectors/posts.ts"),
 				h = e("./src/reddit/components/CreateCommunityButton/index.tsx"),
 				y = e("./src/reddit/components/TrackingHelper/index.tsx");
-			const j = {
+			const g = {
 				t5_2vgfw: !0,
 				t5_2qhrv: !0,
 				t5_2f3oes: !0,
@@ -1160,17 +1160,17 @@
 				t5_2znzz: !0,
 				t5_32ul9: !0
 			};
-			var g = e("./src/reddit/components/SubredditForkingCTA/index.m.less"),
-				w = e.n(g);
-			const v = (t, _) => {
+			var j = e("./src/reddit/components/SubredditForkingCTA/index.m.less"),
+				v = e.n(j);
+			const w = (t, _) => {
 					const e = Object(f.V)(t, {
 						..._,
 						disallowProfile: !0
 					});
-					return !(!e || (null == j ? void 0 : j[e.id])) && !!x(t)
+					return !(!e || (null == g ? void 0 : g[e.id])) && !!x(t)
 				},
-				k = Object(r.b)(() => Object(u.c)({
-					shouldDisplayCTA: v
+				k = Object(r.b)(() => Object(l.c)({
+					shouldDisplayCTA: w
 				}), (t, _) => {
 					let {
 						postId: e
@@ -1189,16 +1189,16 @@
 					setInitialCrosspostId: e,
 					postId: r,
 					sendEvent: a,
-					onClose: u
+					onClose: l
 				} = t;
 				Object(n.useEffect)(() => {
 					_ && a(Object(c.c)(r))
 				}, []);
 				return _ ? s.a.createElement("div", {
-					className: w.a.subreditForkingWrapper
+					className: v.a.subreditForkingWrapper
 				}, s.a.createElement(d.a, {
-					className: w.a.closeButton,
-					onClick: u
+					className: v.a.closeButton,
+					onClick: l
 				}, s.a.createElement(i.b, null), s.a.createElement("div", null, o.fbt._("Close", null, {
 					hk: "4gbyAA"
 				}))), s.a.createElement("h4", null, o.fbt._("Should this post be its own community?", null, {
@@ -1206,7 +1206,7 @@
 				})), s.a.createElement("p", null, o.fbt._("This post really took off. If you think it’s onto something, keep the conversation going and spin it off into its own community.", null, {
 					hk: "4tJ2v1"
 				})), s.a.createElement(h.a, {
-					className: w.a.ctaButton,
+					className: v.a.ctaButton,
 					onClick: () => {
 						e(), a(Object(c.a)(r))
 					},
@@ -1247,6 +1247,9 @@
 				bodyFont: "_8N6UWAR6RakqQM-3iYDd7",
 				bodyFontSmall: "_3CxhMH3DqHIj0DVQot9jEM",
 				bodyFontMono: "_369uwFs0kv4OswbeTeNOHO",
+				landingPageTitleFontH1: "dd3EtzdV21Az0npvvv3ld",
+				landingPageTitleFontH2: "_1uHFZtMTMT9odeBrchdsV_",
+				landingPageTitleFontH3: "_29XCXu-e4uTYGQ6FQ5_nxM",
 				subreditForkingWrapper: "VZum83ruPO3j3NrSYBOpc",
 				ctaButton: "_1ZLdQwbk2vD8obm1ezE3iI",
 				closeButton: "_3jJ2xE661sIevAaBZ1dAHm"
@@ -1278,8 +1281,8 @@
 				d = e("./src/reddit/controls/Input/index.m.less"),
 				c = e.n(d);
 
-			function u() {
-				return (u = Object.assign || function(t) {
+			function l() {
+				return (l = Object.assign || function(t) {
 					for (var _ = 1; _ < arguments.length; _++) {
 						var e = arguments[_];
 						for (var o in e) Object.prototype.hasOwnProperty.call(e, o) && (t[o] = e[o])
@@ -1287,7 +1290,7 @@
 					return t
 				}).apply(this, arguments)
 			}
-			class l extends n.a.Component {
+			class u extends n.a.Component {
 				constructor() {
 					super(...arguments), this.handleKeyDown = t => {
 						let {
@@ -1302,7 +1305,7 @@
 						closeModal: _,
 						...e
 					} = this.props;
-					return n.a.createElement("input", u({
+					return n.a.createElement("input", l({
 						className: Object(r.a)(c.a.input, t),
 						onKeyDown: this.handleKeyDown
 					}, e))
@@ -1310,7 +1313,7 @@
 			}
 			_.a = Object(s.b)(null, {
 				closeModal: a.f
-			})(l)
+			})(u)
 		},
 		"./src/reddit/controls/Input/index.m.less": function(t, _, e) {
 			t.exports = {
@@ -1338,4 +1341,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditForkingCTA.451b7672d49ecfc11430.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditForkingCTA.0e4e95833605297d06b9.js.map

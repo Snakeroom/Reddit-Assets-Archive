@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CoinsMobile.d7f4f0a2190b563c27b1.js
-// Retrieved at 10/4/2022, 1:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CoinsMobile.9fd8d83b1163190b11ea.js
+// Retrieved at 10/11/2022, 10:50:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CoinsMobile"], {
 		"./src/reddit/components/CollapsibleFAQ/index.m.less": function(e, t, a) {
@@ -35,11 +35,12 @@
 				render() {
 					const {
 						className: e,
-						question: t,
-						children: a
+						buttonContentClassName: t,
+						question: a,
+						children: n
 					} = this.props, {
-						isOpen: n
-					} = this.state, i = n ? r.a.isOpen : "";
+						isOpen: i
+					} = this.state, d = i ? r.a.isOpen : "";
 					return s.a.createElement("div", {
 						className: Object(l.a)(e, r.a.collapsibleFAQ)
 					}, s.a.createElement("button", {
@@ -47,15 +48,15 @@
 						type: "button",
 						onClick: this.toggleOpen
 					}, s.a.createElement("span", {
-						className: r.a.buttonContent,
+						className: Object(l.a)(r.a.buttonContent, t),
 						tabIndex: -1
-					}, t, n ? s.a.createElement(o.a, {
+					}, a, i ? s.a.createElement(o.a, {
 						className: r.a.collapseIcon
 					}) : s.a.createElement(c.a, {
 						className: r.a.collapseIcon
 					}))), s.a.createElement("div", {
-						className: Object(l.a)(r.a.collapsibleAnswer, i)
-					}, a))
+						className: Object(l.a)(r.a.collapsibleAnswer, d)
+					}, n))
 				}
 			}
 			t.a = d
@@ -145,9 +146,9 @@
 				g = a("./src/reddit/models/Gold/Award.ts"),
 				f = a("./src/reddit/models/Gold/Coins/index.ts"),
 				_ = a("./src/reddit/components/CollapsibleFAQ/index.tsx"),
-				E = a("./src/reddit/components/GildMarketingDescription/index.tsx"),
-				x = a("./src/reddit/icons/fonts/Coin/index.tsx");
-			class C extends r.a.Component {
+				C = a("./src/reddit/components/GildMarketingDescription/index.tsx"),
+				E = a("./src/reddit/icons/fonts/Coin/index.tsx");
+			class x extends r.a.Component {
 				componentDidMount() {
 					Object(o.d)(o.a.GoldPayment, !1);
 					const e = l.Sb.COINS;
@@ -172,7 +173,7 @@
 						hk: "2phDYF"
 					})), r.a.createElement("div", {
 						className: b.a.gridContainer
-					}, r.a.createElement(E.a, {
+					}, r.a.createElement(C.a, {
 						className: b.a.gridItem,
 						icon: r.a.createElement("img", {
 							src: `${n.a.assetPath}/img/gold/badges/award-silver-large.png`
@@ -186,8 +187,8 @@
 					}), {
 						":coin_price:": r.a.createElement("span", {
 							className: b.a.nowrap
-						}, r.a.createElement(x.a, null), g.s.coinPrice)
-					})), r.a.createElement(E.a, {
+						}, r.a.createElement(E.a, null), g.s.coinPrice)
+					})), r.a.createElement(C.a, {
 						className: b.a.gridItem,
 						icon: r.a.createElement("img", {
 							src: `${n.a.assetPath}/img/gold/badges/award-gold-large.png`
@@ -201,11 +202,11 @@
 					}), {
 						":coin_benefit:": r.a.createElement("span", {
 							className: b.a.nowrap
-						}, r.a.createElement(x.a, null), "100"),
+						}, r.a.createElement(E.a, null), "100"),
 						":coin_price:": r.a.createElement("span", {
 							className: b.a.nowrap
-						}, r.a.createElement(x.a, null), g.p.coinPrice)
-					})), r.a.createElement(E.a, {
+						}, r.a.createElement(E.a, null), g.p.coinPrice)
+					})), r.a.createElement(C.a, {
 						className: b.a.gridItem,
 						icon: r.a.createElement("img", {
 							src: `${n.a.assetPath}/img/gold/badges/award-platinum-large.png`
@@ -219,10 +220,10 @@
 					}), {
 						":coin_benefit:": r.a.createElement("span", {
 							className: b.a.nowrap
-						}, r.a.createElement(x.a, null), "700"),
+						}, r.a.createElement(E.a, null), "700"),
 						":coin_price:": r.a.createElement("span", {
 							className: b.a.nowrap
-						}, r.a.createElement(x.a, null), g.r.coinPrice)
+						}, r.a.createElement(E.a, null), g.r.coinPrice)
 					}))))
 				}
 				renderFAQSection() {
@@ -244,8 +245,8 @@
 					Object(o.b)(o.a.GoldPayment)
 				}
 			}
-			t.default = Object(c.c)(C)
+			t.default = Object(c.c)(x)
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CoinsMobile.d7f4f0a2190b563c27b1.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CoinsMobile.9fd8d83b1163190b11ea.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/OnboardingModal.91fee3c83edaa8650d5c.js
-// Retrieved at 10/11/2022, 9:50:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/OnboardingModal.fed0a17968fcc6233615.js
+// Retrieved at 10/11/2022, 10:50:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["OnboardingModal"], {
 		"./node_modules/lodash/_baseRange.js": function(e, t) {
@@ -401,7 +401,7 @@
 						},
 						forceGeopopular: !0,
 						includeCommunityDUs: !1,
-						includeInterestTopics: !!p && !Object(b.ug)(p),
+						includeInterestTopics: !!p && !Object(b.vg)(p),
 						includeFeaturedAnnouncements: !0,
 						includeLiveEvents: !0,
 						includeIdentity: h && !(null === (r = null === (n = e.user.account) || void 0 === n ? void 0 : n.karma) || void 0 === r ? void 0 : r.total),
@@ -701,7 +701,7 @@
 						b = Object(oe.b)(o),
 						f = $.C in e.queryParams && e.queryParams[$.C].toUpperCase() || "",
 						g = f in d.oc && d.oc[f],
-						h = Q.e();
+						h = Q.f();
 					if (p || u && !m && !t) return void(u && (n(K.m({
 						title: b ? Object(U.a)(o, h) : h
 					})), (null === (s = o.listings.postOrder.correlationIds) || void 0 === s ? void 0 : s[l]) && n(K.o({
@@ -1926,9 +1926,9 @@
 					se = Object(i.e)(et.S),
 					ae = Object(i.e)(Ye.g),
 					oe = Object(i.e)(Ze.a),
-					ie = oe === Ee.bg.CloseOnboarding,
-					ce = oe === Ee.bg.SkipTopicSelection,
-					de = oe === Ee.bg.SmartSignal,
+					ie = oe === Ee.cg.CloseOnboarding,
+					ce = oe === Ee.cg.SkipTopicSelection,
+					de = oe === Ee.cg.SmartSignal,
 					le = Object(a.useCallback)(() => {
 						r(Object(p.g)(_e.a.ONBOARDING_MODAL_D2X)), re && r(Object(b.h)()), f && (s(Object(A.t)()), Object(He.a)()), ae && se && r(Object(u.startChangeUsernameFlow)())
 					}, [r, se, ae, f, re, s]),
@@ -3924,8 +3924,8 @@
 			const a = e => {
 				return !(Object(s.c)(e, {
 					experimentEligibilitySelector: s.a,
-					experimentName: r.Ae
-				}) === r.Pd)
+					experimentName: r.Be
+				}) === r.Qd)
 			}
 		},
 		"./src/reddit/selectors/experiments/inAppNotification.ts": function(e, t, n) {
@@ -4096,4 +4096,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/OnboardingModal.91fee3c83edaa8650d5c.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/OnboardingModal.fed0a17968fcc6233615.js.map

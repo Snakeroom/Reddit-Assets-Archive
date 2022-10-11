@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Predictions.2328961ef29ca3512308.js
-// Retrieved at 9/29/2022, 4:30:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Predictions.6536346ecc6df9ffc001.js
+// Retrieved at 10/11/2022, 10:50:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Predictions"], {
 		"./src/lib/currency/centsToDollars/index.ts": function(e, t, a) {
@@ -197,11 +197,12 @@
 				render() {
 					const {
 						className: e,
-						question: t,
-						children: a
+						buttonContentClassName: t,
+						question: a,
+						children: n
 					} = this.props, {
-						isOpen: n
-					} = this.state, i = n ? l.a.isOpen : "";
+						isOpen: i
+					} = this.state, m = i ? l.a.isOpen : "";
 					return r.a.createElement("div", {
 						className: Object(s.a)(e, l.a.collapsibleFAQ)
 					}, r.a.createElement("button", {
@@ -209,15 +210,15 @@
 						type: "button",
 						onClick: this.toggleOpen
 					}, r.a.createElement("span", {
-						className: l.a.buttonContent,
+						className: Object(s.a)(l.a.buttonContent, t),
 						tabIndex: -1
-					}, t, n ? r.a.createElement(o.a, {
+					}, a, i ? r.a.createElement(o.a, {
 						className: l.a.collapseIcon
 					}) : r.a.createElement(c.a, {
 						className: l.a.collapseIcon
 					}))), r.a.createElement("div", {
-						className: Object(s.a)(l.a.collapsibleAnswer, i)
-					}, a))
+						className: Object(s.a)(l.a.collapsibleAnswer, m)
+					}, n))
 				}
 			}
 			t.a = m
@@ -1311,4 +1312,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Predictions.2328961ef29ca3512308.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Predictions.6536346ecc6df9ffc001.js.map
