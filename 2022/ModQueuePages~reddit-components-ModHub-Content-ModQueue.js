@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModQueuePages~reddit-components-ModHub-Content-ModQueue.7ccd963aa67d3ccfaa0c.js
-// Retrieved at 10/10/2022, 7:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModQueuePages~reddit-components-ModHub-Content-ModQueue.b82132e15e1fca2b8fbb.js
+// Retrieved at 10/11/2022, 9:50:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModQueuePages~reddit-components-ModHub-Content-ModQueue"], {
 		"./src/reddit/actions/modQueue/realtime.ts": function(e, t, s) {
@@ -128,8 +128,8 @@
 				f = s("./src/reddit/controls/Dropdown/index.tsx"),
 				g = s("./src/reddit/controls/Dropdown/Row.tsx"),
 				k = s("./src/reddit/icons/fonts/index.tsx"),
-				O = s("./src/reddit/selectors/telemetry.ts"),
-				E = s("./src/reddit/selectors/tooltip.ts"),
+				E = s("./src/reddit/selectors/telemetry.ts"),
+				O = s("./src/reddit/selectors/tooltip.ts"),
 				C = s("./src/reddit/components/GeneralCleanup/SortViewBar/LayoutSwitch/index.m.less"),
 				v = s.n(C);
 
@@ -178,7 +178,7 @@
 				},
 				N = Object(h.u)(),
 				T = Object(i.c)({
-					dropdownIsOpen: Object(E.b)(w),
+					dropdownIsOpen: Object(O.b)(w),
 					postLayout: h.S,
 					redditStyle: h.D
 				}),
@@ -201,8 +201,8 @@
 							source: "layout_switch",
 							action: "click",
 							noun: e,
-							screen: Object(O.bb)(t),
-							subreddit: Object(O.jb)(t)
+							screen: Object(E.bb)(t),
+							subreddit: Object(E.jb)(t)
 						})))
 					}, this.renderItem = (e, t) => {
 						const {
@@ -277,7 +277,7 @@
 			})), s.d(t, "e", (function() {
 				return k
 			})), s.d(t, "c", (function() {
-				return O
+				return E
 			}));
 			var n = s("./src/config.ts"),
 				o = s("./node_modules/react/index.js"),
@@ -486,7 +486,7 @@
 							hk: "3oxS8r"
 						})
 				}
-			}, O = e => {
+			}, E = e => {
 				switch (e) {
 					case l.g.AntiEvilOps:
 						return r.a.createElement(h, null);
@@ -593,8 +593,8 @@
 				f = s("./src/reddit/helpers/hasModFlairPermissions/index.ts"),
 				g = s("./src/reddit/helpers/hasModPostPermissions/index.ts"),
 				k = s("./src/reddit/helpers/isPost.ts"),
-				O = s("./src/reddit/helpers/trackers/gild.ts"),
-				E = s("./src/reddit/helpers/trackers/modTools.ts"),
+				E = s("./src/reddit/helpers/trackers/gild.ts"),
+				O = s("./src/reddit/helpers/trackers/modTools.ts"),
 				C = s("./src/reddit/helpers/trackers/post.ts"),
 				v = s("./src/reddit/hooks/useTracking.ts"),
 				_ = s("./src/reddit/icons/fonts/index.tsx"),
@@ -810,7 +810,7 @@
 							const e = Object(k.a)(t.id),
 								o = e ? S.gb : y.g,
 								r = t.ignoreReports ? "restore_reports" : "ignore_reports",
-								a = e ? Object(E.j)(r, t.id) : Object(E.i)(r, t.id);
+								a = e ? Object(O.j)(r, t.id) : Object(O.i)(r, t.id);
 							n(o(t.id)), s(a)
 						}, [t.id, t.ignoreReports, s, n]),
 						l = (t.modReportsDismissed && t.modReportsDismissed.length || 0) + (t.userReportsDismissed && t.userReportsDismissed.length || 0);
@@ -912,7 +912,7 @@
 						})
 					}, o)
 				},
-				pe = (e, t) => Object(E.b)(t, e),
+				pe = (e, t) => Object(O.b)(t, e),
 				be = e => {
 					let {
 						content: t,
@@ -975,13 +975,13 @@
 							}))
 						}, [B, z, t]),
 						le = Object(r.useCallback)(() => {
-							z && (B(Object(S.ib)(t.id)), A(Object(E.l)(t.isStickied ? "unsticky" : "sticky", t.id)))
+							z && (B(Object(S.ib)(t.id)), A(Object(O.l)(t.isStickied ? "unsticky" : "sticky", t.id)))
 						}, [A, B, t, z]),
 						ce = Object(r.useCallback)(() => {
-							z && (B(Object(S.J)(t.id)), A(Object(E.l)(t.isOriginalContent ? "unmark_original_content" : "mark_original_content", t.id)))
+							z && (B(Object(S.J)(t.id)), A(Object(O.l)(t.isOriginalContent ? "unmark_original_content" : "mark_original_content", t.id)))
 						}, [A, B, t, z]),
 						me = Object(r.useCallback)(() => {
-							z && (B(Object(S.G)(t.id)), Object(E.l)(t.isNSFW ? "unmark_nsfw" : "mark_nsfw", t.id))
+							z && (B(Object(S.G)(t.id)), Object(O.l)(t.isNSFW ? "unmark_nsfw" : "mark_nsfw", t.id))
 						}, [B, t, z]),
 						be = Object(r.useCallback)(() => {
 							z && (B(Object(j.i)(p.a.CROWD_CONTROL)), B(Object(S.u)(t.id)))
@@ -996,7 +996,7 @@
 								awardId: null == U ? void 0 : U.id,
 								correlationId: e,
 								thingId: t.id
-							})), A(Object(O.clickGildEvent)(t.id))
+							})), A(Object(E.clickGildEvent)(t.id))
 						}, [A, B, t, U, z]),
 						fe = Object(r.useCallback)(() => {
 							B(Object(T.c)(t.id)), te("report")
@@ -1006,7 +1006,7 @@
 							z && (B(Object(S.fb)(t.id, !t.hidden, !1, !0)), te((null === (e = t) || void 0 === e ? void 0 : e.hidden) ? "unhide" : "hide"))
 						}, [te, B, t, z]),
 						ke = Object(r.useCallback)(() => {
-							z && (B(Object(S.U)(t.id, !1)), A(Object(E.l)("spam", t.id)))
+							z && (B(Object(S.U)(t.id, !1)), A(Object(O.l)("spam", t.id)))
 						}, [A, B, t, z]);
 					return a.a.createElement("div", {
 						className: M.a.wrapper,
@@ -1286,8 +1286,8 @@
 				f = s("./src/reddit/layout/row/Inline/index.tsx"),
 				g = s("./src/reddit/selectors/profile.ts"),
 				k = s("./src/reddit/selectors/subreddit.ts"),
-				O = s("./src/reddit/selectors/tooltip.ts"),
-				E = s("./src/reddit/components/ModQueueList/PostSortDropdown.tsx"),
+				E = s("./src/reddit/selectors/tooltip.ts"),
+				O = s("./src/reddit/components/ModQueueList/PostSortDropdown.tsx"),
 				C = s("./src/lib/addQueryParams/index.ts"),
 				v = s("./src/lib/filterQueryParams/index.ts"),
 				_ = s("./src/reddit/controls/Dropdown/Row.tsx"),
@@ -1352,7 +1352,7 @@
 			const M = e => Object(D.c)(e, {
 				experimentEligibilitySelector: A.Q,
 				experimentName: F.jc
-			}) === F.Od;
+			}) === F.Pd;
 			var B = s("./src/reddit/components/ModQueueList/SortByNumReportsTooltip.m.less"),
 				Q = s.n(B);
 			const U = e => {
@@ -1507,9 +1507,9 @@
 					}
 				},
 				be = Object(d.c)({
-					isPostTypeFilterDropdownOpen: Object(O.b)(ie),
-					isSubredditFilterDropdownOpen: Object(O.b)(ae),
-					isPostSortDropdownOpen: Object(O.b)(de),
+					isPostTypeFilterDropdownOpen: Object(E.b)(ie),
+					isSubredditFilterDropdownOpen: Object(E.b)(ae),
+					isPostSortDropdownOpen: Object(E.b)(de),
 					isModQChatCommentsFilterEnabled: j.i,
 					profile: (e, t) => {
 						let {
@@ -1572,7 +1572,7 @@
 					})), a.a.createElement(re, {
 						isOpen: e.isPostSortDropdownOpen,
 						tooltipId: de
-					}, a.a.createElement(E.b, {
+					}, a.a.createElement(O.b, {
 						postSort: e.postSort,
 						sendEventWithName: e.sendEventWithName
 					}))), e.showTypeFilter && a.a.createElement(a.a.Fragment, null, a.a.createElement(ce, {
@@ -1672,13 +1672,13 @@
 				f = s("./src/lib/classNames/index.ts"),
 				g = s("./src/reddit/controls/Button/index.tsx"),
 				k = s("./src/reddit/layout/row/Inline/index.tsx"),
-				O = s("./src/reddit/components/PaginationButtons/index.m.less"),
-				E = s.n(O);
+				E = s("./src/reddit/components/PaginationButtons/index.m.less"),
+				O = s.n(E);
 			var C = e => d.a.createElement(k.a, {
-					className: E.a.buttonContainer
+					className: O.a.buttonContainer
 				}, d.a.createElement(g.s, {
-					className: Object(f.a)(E.a.routerLink, {
-						[E.a.mDisabled]: !e.prevButtonEnabled
+					className: Object(f.a)(O.a.routerLink, {
+						[O.a.mDisabled]: !e.prevButtonEnabled
 					}),
 					disabled: !e.prevButtonEnabled,
 					to: e.prevTo,
@@ -1686,8 +1686,8 @@
 				}, x.fbt._("Back", null, {
 					hk: "2pUhBQ"
 				})), d.a.createElement(g.s, {
-					className: Object(f.a)(E.a.routerLink, {
-						[E.a.mDisabled]: !e.nextButtonEnabled
+					className: Object(f.a)(O.a.routerLink, {
+						[O.a.mDisabled]: !e.nextButtonEnabled
 					}),
 					disabled: !e.nextButtonEnabled,
 					to: e.nextTo,
@@ -1868,8 +1868,8 @@
 				fe = e => null;
 			var ge = s("./src/reddit/models/Flair/index.ts"),
 				ke = s("./src/reddit/models/Media/index.ts"),
-				Oe = s("./src/reddit/models/ModQueue/index.ts"),
-				Ee = s("./src/reddit/selectors/meta.ts"),
+				Ee = s("./src/reddit/models/ModQueue/index.ts"),
+				Oe = s("./src/reddit/selectors/meta.ts"),
 				Ce = s("./src/reddit/selectors/modQueue.ts"),
 				ve = s("./src/reddit/selectors/subreddit.ts"),
 				_e = s("./src/config.ts"),
@@ -1931,14 +1931,14 @@
 					selectedItems: Ce.i
 				}),
 				lt = Object(l.b)(dt, e => ({
-					onIgnoreReports: () => e(Object(p.f)(Oe.a.IgnoreReports)),
-					onLock: () => e(Object(p.f)(Oe.a.Lock)),
-					onMarkNSFW: () => e(Object(p.f)(Oe.a.MarkNSFW)),
-					onSpoiler: () => e(Object(p.f)(Oe.a.Spoiler)),
-					onUnignoreReports: () => e(Object(p.f)(Oe.a.UnignoreReports)),
-					onUnlock: () => e(Object(p.f)(Oe.a.Unlock)),
-					onUnmarkNSFW: () => e(Object(p.f)(Oe.a.UnmarkNSFW)),
-					onUnspoiler: () => e(Object(p.f)(Oe.a.Unspoiler))
+					onIgnoreReports: () => e(Object(p.f)(Ee.a.IgnoreReports)),
+					onLock: () => e(Object(p.f)(Ee.a.Lock)),
+					onMarkNSFW: () => e(Object(p.f)(Ee.a.MarkNSFW)),
+					onSpoiler: () => e(Object(p.f)(Ee.a.Spoiler)),
+					onUnignoreReports: () => e(Object(p.f)(Ee.a.UnignoreReports)),
+					onUnlock: () => e(Object(p.f)(Ee.a.Unlock)),
+					onUnmarkNSFW: () => e(Object(p.f)(Ee.a.UnmarkNSFW)),
+					onUnspoiler: () => e(Object(p.f)(Ee.a.Unspoiler))
 				})),
 				ct = e => e.some(e => Object(w.a)(e));
 			var mt = Object(qe.a)(lt(Object(ot.c)(e => d.a.createElement("div", {
@@ -2025,7 +2025,7 @@
 					displayText: e.displayText,
 					onClick: e.onClick
 				}),
-				Ot = Object(c.c)({
+				Et = Object(c.c)({
 					activeModalId: $e.a,
 					dropdownIsOpen: Object(nt.b)(xt),
 					flairData: tt.d,
@@ -2034,17 +2034,17 @@
 					posts: st.J,
 					selectedItems: Ce.i
 				}),
-				Et = Object(l.b)(Ot, e => ({
-					onApprove: () => e(Object(p.f)(Oe.a.Approve)),
-					onFlair: (t, s) => e(Object(p.f)(Oe.a.Flair, t, s)),
+				Ot = Object(l.b)(Et, e => ({
+					onApprove: () => e(Object(p.f)(Ee.a.Approve)),
+					onFlair: (t, s) => e(Object(p.f)(Ee.a.Flair, t, s)),
 					onOpenDropdown: () => e(Object(Qe.h)({
 						tooltipId: xt
 					})),
 					onOpenModToolsDropdown: () => e(Object(Qe.h)({
 						tooltipId: "BulkActions--ModTools"
 					})),
-					onRemove: () => e(Object(p.f)(Oe.a.Remove)),
-					onSpam: () => e(Object(p.f)(Oe.a.Spam)),
+					onRemove: () => e(Object(p.f)(Ee.a.Remove)),
+					onSpam: () => e(Object(p.f)(Ee.a.Spam)),
 					onToggleFlairModal: () => e(Object(Xe.i)(ft))
 				})),
 				Ct = (e, t) => {
@@ -2063,7 +2063,7 @@
 						})
 					}] : s
 				};
-			var vt = Et(e => {
+			var vt = Ot(e => {
 					const {
 						activeModalId: t,
 						className: s,
@@ -2080,8 +2080,8 @@
 						onSpam: h,
 						onToggleFlairModal: g,
 						posts: k,
-						selectedItems: O,
-						startNumItems: E,
+						selectedItems: E,
+						startNumItems: O,
 						subredditId: C,
 						toggleSelectAll: v,
 						toggleSelectByFilter: _
@@ -2120,7 +2120,7 @@
 							hk: "1uSGtz"
 						}),
 						filterType: "chat_comments"
-					}], w = l && l.flair, j = C && o && o.displaySettings.isEnabled && w && !ct(O);
+					}], w = l && l.flair, j = C && o && o.displaySettings.isEnabled && w && !ct(E);
 					return d.a.createElement("div", {
 						className: Object(f.a)(ht.a.ModToolsBulkOperations, s)
 					}, d.a.createElement("div", {
@@ -2178,7 +2178,7 @@
 						onClick: g,
 						className: ht.a.Button
 					}, d.a.createElement(Ve.a, null)))), r && C && t === ft && d.a.createElement(Ze.a, {
-						flairs: Ct(O, k),
+						flairs: Ct(E, k),
 						modalId: ft,
 						onFlairChanged: e => {
 							let {
@@ -2192,7 +2192,7 @@
 						className: ht.a.Text
 					}, d.a.createElement("span", {
 						className: ht.a.right
-					}, x.fbt._("Items {startNumItems}-{endNumItems}", [x.fbt._param("startNumItems", `${E}`), x.fbt._param("endNumItems", `${n}`)], {
+					}, x.fbt._("Items {startNumItems}-{endNumItems}", [x.fbt._param("startNumItems", `${O}`), x.fbt._param("endNumItems", `${n}`)], {
 						hk: "1FkOkC"
 					})), d.a.createElement("span", {
 						className: ht.a.Bullet
@@ -2223,7 +2223,7 @@
 					isModQueueListingPending: Ce.e,
 					loadMore: Ce.g,
 					modQueueListingItems: Ce.f,
-					origin: Ee.k,
+					origin: Oe.k,
 					selectedItems: Ce.i,
 					subredditId: (e, t) => t.subredditName ? Object(ve.H)(e, t.subredditName) : null
 				}),
@@ -2240,14 +2240,14 @@
 					fireAdPixelsOfType: (t, s) => e(Object(b.z)(t, s)),
 					openPost: t => e(Object(b.L)(t))
 				})),
-				Pt = e => e.page ? parseInt(e.page, 10) : Oe.b,
+				Pt = e => e.page ? parseInt(e.page, 10) : Ee.b,
 				Lt = e => Pt(e) + 1,
-				Ft = e => Math.max(Oe.b, Pt(e) - 1),
+				Ft = e => Math.max(Ee.b, Pt(e) - 1),
 				Dt = e => {
 					const t = e.modQueueListingItems ? e.modQueueListingItems.length : 0;
-					return Pt(e) === Oe.b ? t : 25 * Ft(e) + t
+					return Pt(e) === Ee.b ? t : 25 * Ft(e) + t
 				},
-				At = e => Pt(e) === Oe.b ? Oe.b : 25 * Ft(e) + 1;
+				At = e => Pt(e) === Ee.b ? Ee.b : 25 * Ft(e) + 1;
 			var Mt;
 			! function(e) {
 				e.comments = "comments", e.hasReports = "hasReports", e.posts = "posts", e.postsWithFlair = "postsWithFlair", e.selfPosts = "selfPosts", e.spamFiltered = "spamFiltered"
@@ -2431,8 +2431,8 @@
 				f = s("./src/reddit/helpers/trackers/modTools.ts"),
 				g = s("./src/reddit/icons/svgs/ChevronDown/index.tsx"),
 				k = s("./src/reddit/icons/svgs/ChevronUp/index.tsx"),
-				O = s("./src/reddit/icons/svgs/Clock/index.tsx"),
-				E = s("./src/reddit/icons/svgs/Undo/index.tsx"),
+				E = s("./src/reddit/icons/svgs/Clock/index.tsx"),
+				O = s("./src/reddit/icons/svgs/Undo/index.tsx"),
 				C = s("./src/reddit/selectors/tooltip.ts"),
 				v = s("./src/reddit/components/Reports/SnoozableReport/index.m.less"),
 				_ = s.n(v);
@@ -2491,11 +2491,11 @@
 						onClick: this.onSnoozeButtonClick
 					}, o.a.createElement("div", {
 						className: _.a.SnoozeButtonContent
-					}, a ? o.a.createElement(o.a.Fragment, null, o.a.createElement(E.a, {
+					}, a ? o.a.createElement(o.a.Fragment, null, o.a.createElement(O.a, {
 						className: m
 					}), y._("Undo snoozing reports from this user", null, {
 						hk: "1CloXT"
-					})) : o.a.createElement(o.a.Fragment, null, o.a.createElement(O.a, {
+					})) : o.a.createElement(o.a.Fragment, null, o.a.createElement(E.a, {
 						className: m
 					}), y._("Snooze reports from this user for 7 days", null, {
 						hk: "1i0sOW"
@@ -2713,4 +2713,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModQueuePages~reddit-components-ModHub-Content-ModQueue.7ccd963aa67d3ccfaa0c.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModQueuePages~reddit-components-ModHub-Content-ModQueue.b82132e15e1fca2b8fbb.js.map

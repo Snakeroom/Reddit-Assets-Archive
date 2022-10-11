@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/gildActions.d512e4f24623ea8e89cf.js
-// Retrieved at 10/3/2022, 2:20:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/gildActions.d81a0015f42a9eb4af09.js
+// Retrieved at 10/11/2022, 9:50:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["gildActions"], {
 		"./src/reddit/actions/gold/econPurchase.ts": function(e, t, r) {
@@ -19,7 +19,7 @@
 					econPurchase: s.a
 				}
 			});
-			const u = Object(a.a)(c.nb),
+			const u = Object(a.a)(c.qb),
 				l = (e, t, r) => async (d, s, a) => {
 					let {
 						gqlContext: c
@@ -105,16 +105,16 @@
 				E = r("./src/reddit/endpoints/awards/index.ts"),
 				R = r("./src/lib/makeGqlRequest/index.ts"),
 				N = r("./src/reddit/helpers/addRedesignIdentifier/index.ts"),
-				T = r("./src/redditGQL/operations/GildComment.json"),
-				q = r("./src/redditGQL/operations/GildPost.json");
+				q = r("./src/redditGQL/operations/GildComment.json"),
+				T = r("./src/redditGQL/operations/GildPost.json");
 			const K = (e, t, r) => Object(R.a)(e, {
-					...q,
+					...T,
 					variables: t
 				}, {
 					query: r ? {} : Object(N.b)()
 				}),
 				D = (e, t, r) => Object(R.a)(e, {
-					...T,
+					...q,
 					variables: t
 				}, {
 					query: r ? {} : Object(N.b)()
@@ -354,17 +354,17 @@
 							t = document.getElementById(e);
 						t && t.dispatchEvent(new Event("awardAdded"))
 					}, 10);
-					const T = Date.now();
+					const q = Date.now();
 					await t(Object(o.b)({
 						correlationId: y,
 						forceLoad: !0
 					}));
-					const q = Date.now() - T;
+					const T = Date.now() - q;
 					if (R > 0) {
 						const e = Object(L.f)(r()).filter(e => v.a.has(e.dealInfo.type));
 						if (e.length) {
-							const r = Math.max(900 - q, 10),
-								d = Math.max(300 - q, 10),
+							const r = Math.max(900 - T, 10),
+								d = Math.max(300 - T, 10),
 								a = Object(F.a)(m) && Object(h.q)(Object(P.G)(s, {
 									postId: m
 								}));
@@ -523,7 +523,7 @@
 				let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : a,
 					t = arguments.length > 1 ? arguments[1] : void 0;
 				switch (t.type) {
-					case s.nb: {
+					case s.qb: {
 						const r = t.payload;
 						return {
 							...e,
@@ -580,4 +580,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/gildActions.d512e4f24623ea8e89cf.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/gildActions.d81a0015f42a9eb4af09.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/NftProfileUnit.82acff5d95095ced36aa.js
-// Retrieved at 10/10/2022, 3:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/NftProfileUnit.0d99b4d5d713b18fec64.js
+// Retrieved at 10/11/2022, 9:50:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["NftProfileUnit"], {
 		"./node_modules/classnames/index.js": function(t, e, r) {
@@ -188,7 +188,7 @@
 					let {
 						children: e
 					} = t;
-					return Object(a.e)(f.g) ? s.a.createElement(l, null, e) : s.a.createElement(h, null, e)
+					return Object(a.e)(f.h) ? s.a.createElement(l, null, e) : s.a.createElement(h, null, e)
 				}
 		},
 		"./src/reddit/components/Econ/Marketplace/NftProfileUnit/index.m.less": function(t, e, r) {
@@ -1574,7 +1574,7 @@
 				const s = Object(o.d)(),
 					a = Object(wt.a)();
 				Object(bt.a)(mt);
-				const u = Object(o.e)(Et.g),
+				const u = Object(o.e)(Et.h),
 					f = Object(ft.j)(r);
 				return f ? i.a.createElement("div", {
 					className: e
@@ -1778,8 +1778,8 @@
 			}));
 			var n = r("./src/reddit/constants/experiments.ts"),
 				i = r("./src/reddit/selectors/experiments/econ/simpleExperiment.ts");
-			const o = Object(i.a)(n.sd)
+			const o = Object(i.a)(n.td)
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/NftProfileUnit.82acff5d95095ced36aa.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/NftProfileUnit.0d99b4d5d713b18fec64.js.map

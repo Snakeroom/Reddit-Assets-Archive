@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditWiki.b9c3056bca8696253cdc.js
-// Retrieved at 10/10/2022, 7:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditWiki.e953505f83db316e813e.js
+// Retrieved at 10/11/2022, 9:50:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditWiki", "AchievementsActions"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, r) {
@@ -787,7 +787,7 @@
 					if (!e) return;
 					const s = n(),
 						i = Object(x.k)(s);
-					if (!i || !Object(f.m)(s, {
+					if (!i || !Object(f.n)(s, {
 							subredditId: e
 						})) return;
 					const a = !!Object(g.f)(s, {
@@ -795,11 +795,11 @@
 						userId: i.id
 					});
 					!t && a || await r(I(e, [i.id]))
-				}, S = e => async (t, r) => !!e && (Object(h.f)(r()) ? (await t(Object(l.c)(e)), !!Object(g.d)(r(), {
+				}, S = e => async (t, r) => !!e && (Object(h.g)(r()) ? (await t(Object(l.c)(e)), !!Object(g.d)(r(), {
 					subredditId: e
 				})) : (await t(Object(u.j)(e, {
 					fullData: !0
-				})), Object(f.f)(r(), {
+				})), Object(f.g)(r(), {
 					subredditId: e
 				}))), P = e => async (t, r) => {
 					var n;
@@ -4043,7 +4043,7 @@
 						a = Object(h.b)(k),
 						o = Object(h.b)(w),
 						[d, c] = function(e, t) {
-							const [r, s] = Object(n.useState)(Object(U.Q)(e, t));
+							const [r, s] = Object(n.useState)(Object(U.P)(e, t));
 							return [r, Object(n.useCallback)(() => {
 								const r = Object(U.a)(e, t);
 								s(r)
@@ -4073,7 +4073,7 @@
 							e.stopPropagation(), a.visible ? f() : x()
 						}, [f, x, a.visible]),
 						I = Object(n.useCallback)(t => {
-							t === _.b.FREQUENT && Object(U.db)(e.userId, e.subredditId)
+							t === _.b.FREQUENT && Object(U.bb)(e.userId, e.subredditId)
 						}, [e.subredditId, e.userId]),
 						S = Object(n.useCallback)(n => {
 							const {
@@ -4347,7 +4347,7 @@
 					small: !0,
 					isFullWidth: !0,
 					afterUnsubscribeAction: () => {
-						t && (Object(U.db)(e.userId, t), e.updateSubredditInfo())
+						t && (Object(U.bb)(e.userId, t), e.updateSubredditInfo())
 					}
 				})), S && s.a.createElement(be, {
 					onClickUnmute: e.unmuteSubreddit
@@ -7660,7 +7660,7 @@
 					onClick: r,
 					disabled: n
 				} = e;
-				return Object(a.e)(l.q) ? i.a.createElement(c.t, {
+				return Object(a.e)(l.r) ? i.a.createElement(c.t, {
 					priority: c.c.Primary,
 					className: t,
 					onClick: r,
@@ -7720,20 +7720,20 @@
 				const c = Object(a.d)(),
 					u = Object(x.a)(),
 					k = Object(a.e)(y.k),
-					w = Object(a.e)(e => Object(l.i)(e, {
+					w = Object(a.e)(e => Object(l.j)(e, {
 						subredditId: r
 					})),
 					O = Object(a.e)(e => Object(_.X)(e, {
 						subredditId: r
 					})),
-					E = Object(a.e)(e => Object(l.l)(e, {
+					E = Object(a.e)(e => Object(l.m)(e, {
 						subredditId: r
 					})),
-					N = Object(a.e)(e => !!Object(l.j)(e, {
+					N = Object(a.e)(e => !!Object(l.k)(e, {
 						subredditId: r
 					})),
 					T = Object(a.e)(I.b) && Object(I.c)(r),
-					F = Object(a.e)(v.i);
+					F = Object(a.e)(v.j);
 				Object(s.useEffect)(() => {
 					w && c(Object(o.getSubredditCurrentUserPowerupsFlairsAndSupporterInfo)(r))
 				}, [w, r, c]);
@@ -10494,12 +10494,12 @@
 						rtJsonElementProps: a
 					});
 					switch (i) {
-						case h.Tf.SmIcon:
+						case h.Uf.SmIcon:
 							return s.a.createElement(p, {
 								subredditName: n,
 								rtJsonElementProps: a
 							});
-						case h.Tf.SmIconHc:
+						case h.Uf.SmIconHc:
 							return s.a.createElement(p, {
 								subredditName: n,
 								isHoverable: !0,
@@ -11365,7 +11365,7 @@
 						} = t;
 						return Object(Be.c)(e, r)
 					},
-					isInNewModuleNCPV3Experiment: e => Object(De.a)(e) === Pe.Se.NewModule,
+					isInNewModuleNCPV3Experiment: e => Object(De.a)(e) === Pe.Te.NewModule,
 					showGovernance: Te.d.spPoints,
 					showLeaderboard: Te.d.spLeaderboard,
 					showPredictionsLeaderboard: (e, t) => {
@@ -14180,8 +14180,8 @@
 				d = e => a.includes(e),
 				c = Object(n.a)(e => Object(i.c)(e, {
 					experimentEligibilitySelector: i.a,
-					experimentName: s.le
-				}), e => e === s.Od)
+					experimentName: s.me
+				}), e => e === s.Pd)
 		},
 		"./src/reddit/selectors/subredditMention.ts": function(e, t, r) {
 			"use strict";
@@ -14206,12 +14206,12 @@
 				d = e => {
 					return Object(i.c)(e, {
 						experimentEligibilitySelector: o,
-						experimentName: n.Nf
+						experimentName: n.Of
 					}) || ""
 				},
 				c = e => {
 					const t = d(e);
-					return t === n.Tf.SmIcon || t === n.Tf.SmIconHc
+					return t === n.Uf.SmIcon || t === n.Uf.SmIconHc
 				},
 				l = (e, t) => {
 					let {
@@ -14416,4 +14416,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditWiki.b9c3056bca8696253cdc.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditWiki.e953505f83db316e813e.js.map

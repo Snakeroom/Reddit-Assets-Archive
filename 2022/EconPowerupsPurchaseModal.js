@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/EconPowerupsPurchaseModal.a00bb4062a8dab427568.js
-// Retrieved at 9/29/2022, 4:30:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/EconPowerupsPurchaseModal.278ba38819b65b516a02.js
+// Retrieved at 10/11/2022, 9:50:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["EconPowerupsPurchaseModal"], {
 		"./src/reddit/components/Econ/Common/ModalCloseButton/index.m.less": function(e, t, s) {
@@ -147,9 +147,9 @@
 					className: t,
 					subredditId: s
 				} = e;
-				const n = Object(o.e)(x.c),
-					r = Object(o.e)(x.b),
-					l = Object(o.e)(x.d),
+				const n = Object(o.e)(x.d),
+					r = Object(o.e)(x.c),
+					l = Object(o.e)(x.e),
 					c = Object(o.d)();
 				return a.a.createElement(g.t, {
 					priority: g.c.Primary,
@@ -170,8 +170,8 @@
 			};
 			var L = s("./src/reddit/components/PowerupsSidebar/common/utils.ts"),
 				O = s("./src/reddit/components/Econ/PowerupsPurchaseModal/PowerupsPurchase/PowerupsProgressControl/PowerupsCount/index.m.less"),
-				k = s.n(O);
-			var j = function(e) {
+				j = s.n(O);
+			var k = function(e) {
 					const {
 						className: t,
 						onChange: s,
@@ -181,21 +181,21 @@
 						max: l
 					} = e, c = e => s(Math.max(Math.min(o + e, l || Number.POSITIVE_INFINITY), r || 0)), i = l === r, u = Object(L.a)(o);
 					return a.a.createElement("div", {
-						className: Object(d.a)(t, k.a.container),
+						className: Object(d.a)(t, j.a.container),
 						style: n
 					}, a.a.createElement("div", {
-						className: Object(d.a)(k.a.control, {
-							[k.a.locked]: i
+						className: Object(d.a)(j.a.control, {
+							[j.a.locked]: i
 						})
 					}, !i && a.a.createElement("button", {
-						className: Object(d.a)(k.a.button, k.a.decrementButton),
+						className: Object(d.a)(j.a.button, j.a.decrementButton),
 						onClick: () => c(-1)
 					}), a.a.createElement("div", {
-						className: k.a.value
+						className: j.a.value
 					}, a.a.createElement(u, {
-						className: k.a.icon
+						className: j.a.icon
 					}), a.a.createElement("span", null, o)), !i && a.a.createElement("button", {
-						className: Object(d.a)(k.a.button, k.a.incrementButton),
+						className: Object(d.a)(j.a.button, j.a.incrementButton),
 						onClick: () => c(1)
 					})))
 				},
@@ -259,7 +259,7 @@
 						className: I.a.bar,
 						count: r.count,
 						maxCount: i
-					}), a.a.createElement(j, {
+					}), a.a.createElement(k, {
 						className: I.a.count,
 						style: {
 							left: `${100*u}%`
@@ -275,10 +275,10 @@
 			const {
 				fbt: H
 			} = s("./node_modules/fbt/lib/FbtPublic.js"), W = Object(c.c)({
-				isAnonymous: x.c,
-				powerups: x.i,
-				powerupsCount: x.d,
-				userPowerupsData: x.t
+				isAnonymous: x.d,
+				powerups: x.j,
+				powerupsCount: x.e,
+				userPowerupsData: x.u
 			});
 			var R = Object(o.b)(W)((function(e) {
 					const {
@@ -591,4 +591,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EconPowerupsPurchaseModal.a00bb4062a8dab427568.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EconPowerupsPurchaseModal.278ba38819b65b516a02.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfileComments~ProfileOverview~ProfilePrivate.16ca3713eef4bcd65bb2.js
-// Retrieved at 10/10/2022, 3:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfileComments~ProfileOverview~ProfilePrivate.1479e0ccb1ead47600b8.js
+// Retrieved at 10/11/2022, 9:50:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfileComments~ProfileOverview~ProfilePrivate"], {
 		"./node_modules/lodash/take.js": function(e, t, s) {
@@ -167,7 +167,7 @@
 						postId: n,
 						author: r
 					} = t;
-					return Object(x.e)(f.t) && s.roomStatus === h.b.NotStarted ? o.a.createElement(I.a, {
+					return Object(x.e)(f.u) && s.roomStatus === h.b.NotStarted ? o.a.createElement(I.a, {
 						postId: n,
 						author: r,
 						roomId: s.roomId,
@@ -302,7 +302,7 @@
 					} = qe,
 					[Ke, Qe] = Object(n.useState)(!1),
 					Xe = Object(n.useCallback)(() => {
-						Qe(!Ke), Object(te.Ob)(), Pe(Object(oe.d)(fe))
+						Qe(!Ke), Object(te.Mb)(), Pe(Object(oe.d)(fe))
 					}, [Ke, fe, Pe]);
 				let Ze = o.a.createElement(Q.a, {
 					className: de.a.classicThumbnail,
@@ -2960,7 +2960,7 @@
 					}
 				}),
 				v = e => {
-					const t = Object(i.e)(e => Object(h.j)(e));
+					const t = Object(i.e)(e => Object(h.k)(e));
 					return r.a.createElement(a.a, {
 						className: e.className
 					}, r.a.createElement(f, {
@@ -3236,7 +3236,7 @@
 					const n = Object(u.Ab)(e, {
 							userName: s
 						}),
-						o = Object(m.e)(e);
+						o = Object(m.f)(e);
 					return (n && o ? o[n.id] : null) || []
 				}
 			});
@@ -4621,10 +4621,10 @@
 				o = s("./src/reddit/constants/experiments.ts"),
 				r = s("./src/reddit/helpers/chooseVariant/index.ts");
 			const i = Object(n.a)(e => Object(r.c)(e, {
-					experimentName: o.ig,
+					experimentName: o.jg,
 					experimentEligibilitySelector: r.a
 				}), e => e),
-				a = Object(n.a)(i, e => e === o.Zf)
+				a = Object(n.a)(i, e => e === o.ag)
 		},
 		"./src/redditGQL/operations/CreateLiveAudioRoomOnProfile.json": function(e) {
 			e.exports = JSON.parse('{"id":"e35a47c6aa21"}')
@@ -4655,4 +4655,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileComments~ProfileOverview~ProfilePrivate.16ca3713eef4bcd65bb2.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileComments~ProfileOverview~ProfilePrivate.1479e0ccb1ead47600b8.js.map

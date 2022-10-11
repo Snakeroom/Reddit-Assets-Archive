@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfilePrivate.10000b8213cac1ea7cdd.js
-// Retrieved at 10/10/2022, 7:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfilePrivate.c18daabc59631068752d.js
+// Retrieved at 10/11/2022, 9:50:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfilePrivate"], {
 		"./src/reddit/actions/pages/profilePrivate/index.ts": function(e, t, i) {
@@ -223,7 +223,7 @@
 						const i = {
 							includeIdentity: y,
 							includeModerated: C,
-							recentPostIds: Object(_.O)(null == f ? void 0 : f.id).reverse()
+							recentPostIds: Object(_.N)(null == f ? void 0 : f.id).reverse()
 						};
 						S = await ((e, t) => Object(l.a)(e, {
 							...p,
@@ -2797,4 +2797,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfilePrivate.10000b8213cac1ea7cdd.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfilePrivate.c18daabc59631068752d.js.map

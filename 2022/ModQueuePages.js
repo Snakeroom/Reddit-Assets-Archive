@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModQueuePages.25202fc0ad15c7643106.js
-// Retrieved at 10/10/2022, 7:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModQueuePages.bb6f12cefc87623144a1.js
+// Retrieved at 10/11/2022, 9:50:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModQueuePages"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -3015,7 +3015,7 @@
 					renderedInOverlay: R,
 					subredditDisplayText: N,
 					isAdmin: T
-				} = e, A = Object(E.a)(), P = a.subredditId, F = Object(i.e)(e => Object(y.m)(e, {
+				} = e, A = Object(E.a)(), P = a.subredditId, F = Object(i.e)(e => Object(y.n)(e, {
 					subredditId: P
 				}));
 				if (a.isDeleted && !T) return r.a.createElement("div", {
@@ -5614,7 +5614,7 @@
 			const a = e => Object(i.a)(e) && Object(s.c)(e, {
 				experimentEligibilitySelector: r.Q,
 				experimentName: o.Ac
-			}) === o.Od
+			}) === o.Pd
 		},
 		"./src/redditGQL/operations/DeleteSubredditMuteSettings.json": function(e) {
 			e.exports = JSON.parse('{"id":"c518a45f60a5"}')
@@ -5627,4 +5627,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModQueuePages.25202fc0ad15c7643106.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModQueuePages.bb6f12cefc87623144a1.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/IdCard.3a60efc19052c1803bff.js
-// Retrieved at 10/10/2022, 3:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/IdCard.76bb285ed77505cbf895.js
+// Retrieved at 10/11/2022, 9:50:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["IdCard", "AchievementsActions", "ContributorRequestButton"], {
 		"./node_modules/autosize/dist/autosize.js": function(e, t, n) {
@@ -613,7 +613,7 @@
 					if (!e) return;
 					const s = r(),
 						i = Object(x.k)(s);
-					if (!i || !Object(f.m)(s, {
+					if (!i || !Object(f.n)(s, {
 							subredditId: e
 						})) return;
 					const o = !!Object(g.f)(s, {
@@ -621,11 +621,11 @@
 						userId: i.id
 					});
 					!t && o || await n(S(e, [i.id]))
-				}, w = e => async (t, n) => !!e && (Object(h.f)(n()) ? (await t(Object(l.c)(e)), !!Object(g.d)(n(), {
+				}, w = e => async (t, n) => !!e && (Object(h.g)(n()) ? (await t(Object(l.c)(e)), !!Object(g.d)(n(), {
 					subredditId: e
 				})) : (await t(Object(u.j)(e, {
 					fullData: !0
-				})), Object(f.f)(n(), {
+				})), Object(f.g)(n(), {
 					subredditId: e
 				}))), N = e => async (t, n) => {
 					var r;
@@ -3251,7 +3251,7 @@
 				fbt: Oe
 			} = n("./node_modules/fbt/lib/FbtPublic.js"), ke = z.a.div("FlairSettingsContainer", Ee.a), je = z.a.div("FlairPreviewWrapper", Ee.a), Te = z.a.div("PreviewTitle", Ee.a), Se = z.a.wrapped(S.r, "TertiaryButton", Ee.a), Ie = z.a.wrapped(Se, "IconButton", Ee.a), we = Object(m.c)({
 				currentUser: N.k,
-				isAchievementFlairModalEnabled: (e, t) => Object(Ce.m)(e, {
+				isAchievementFlairModalEnabled: (e, t) => Object(Ce.n)(e, {
 					subredditId: t.subredditId
 				}),
 				userFlairData: _e.d,
@@ -4095,7 +4095,7 @@
 						onClick: g ? _ : void 0,
 						headerButton: i.a.createElement("div", {
 							className: bt.a.headerButtonsContainer
-						}, !z && v && C && l !== Le.Se.NewModule && i.a.createElement(a.a, {
+						}, !z && v && C && l !== Le.Te.NewModule && i.a.createElement(a.a, {
 							className: bt.a.ModToolsLink,
 							to: C.posts ? `${v.url}about/modqueue` : `${v.url}about/`,
 							onClick: this.onClickModTools
@@ -5684,7 +5684,7 @@
 				}),
 				a = e => t => {
 					const n = i.jb(t),
-						o = Object(s.r)(t, {
+						o = Object(s.s)(t, {
 							subredditId: null == n ? void 0 : n.id
 						}),
 						{
@@ -5905,4 +5905,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/IdCard.3a60efc19052c1803bff.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/IdCard.76bb285ed77505cbf895.js.map

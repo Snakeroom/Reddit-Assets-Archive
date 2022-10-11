@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/RpanListingUnit.d3669fad545c70acb03b.js
-// Retrieved at 10/10/2022, 3:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/RpanListingUnit.12a404350e436628c25a.js
+// Retrieved at 10/11/2022, 9:50:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["RpanListingUnit"], {
 		"./node_modules/lodash/_arrayEvery.js": function(e, t) {
@@ -52,16 +52,16 @@
 			const p = Object(o.a)(e => {
 				const t = Object(m.c)(e, {
 					experimentEligibilitySelector: m.a,
-					experimentName: u.Ge
+					experimentName: u.He
 				});
-				return Object(u.tg)(t) ? void 0 : t
+				return Object(u.ug)(t) ? void 0 : t
 			}, e => {
 				const t = Object(m.c)(e, {
 					experimentEligibilitySelector: m.a,
-					experimentName: u.He
+					experimentName: u.Ie
 				});
-				return Object(u.tg)(t) ? void 0 : t
-			}, (e, t) => e === u.Ie.Enabled && t === u.Ie.Enabled);
+				return Object(u.ug)(t) ? void 0 : t
+			}, (e, t) => e === u.Je.Enabled && t === u.Je.Enabled);
 			var h = s("./src/config.ts");
 			var b = s("./src/reddit/selectors/user.ts");
 			const E = e => {
@@ -770,19 +770,19 @@
 			class se extends n.Component {
 				constructor(e) {
 					super(e), this.observableElement = r.a.createRef(), this.videoRef = r.a.createRef(), this.videoSessionManager = null, this.timerId = "rpan-du-active-watch-timer-id", this.handleSuccessfulPlayback = () => {
-						Object(S.ab)()
+						Object(S.Y)()
 					}, this.handleUnsuccessfulPlayback = () => {
-						const e = Number(Object(S.P)());
+						const e = Number(Object(S.O)());
 						if (e) {
 							if (Date.now() - e >= J) {
-								Object(S.ab)();
+								Object(S.Y)();
 								const e = 30 * l.E,
 									t = Date.now() - e + X;
 								this.props.onHideRpanUnit(t, {
 									showToast: !1
 								})
 							}
-						} else Object(S.Tb)(Date.now())
+						} else Object(S.Rb)(Date.now())
 					}, this.onResourceRemoved = () => {
 						this.subscribeStats()
 					}, this.onError = () => {
@@ -1984,12 +1984,12 @@
 			const o = e => Object(r.c)(e, {
 					experimentName: n.zb,
 					experimentEligibilitySelector: i.e
-				}) === n.Od,
+				}) === n.Pd,
 				a = e => Object(r.c)(e, {
 					experimentName: n.yc,
 					experimentEligibilitySelector: r.a
-				}) === n.Od
+				}) === n.Pd
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RpanListingUnit.d3669fad545c70acb03b.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RpanListingUnit.12a404350e436628c25a.js.map

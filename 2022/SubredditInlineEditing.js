@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditInlineEditing.7f747a83fc79de944036.js
-// Retrieved at 10/10/2022, 10:40:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditInlineEditing.b2354f58592db5b4acdc.js
+// Retrieved at 10/11/2022, 9:50:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditInlineEditing"], {
 		"./src/reddit/components/CommunityTopics/NumTopicsSelected.tsx": function(e, t, s) {
@@ -84,10 +84,10 @@
 			}
 			var f = Object(r.b)(void 0, e => ({
 				onDismissTooltip: () => {
-					e(Object(c.i)()), Object(u.Bb)()
+					e(Object(c.i)()), Object(u.zb)()
 				},
 				onViewTooltip: () => {
-					Object(u.Zb)()
+					Object(u.Xb)()
 				}
 			}))(Object(p.c)(g));
 			const T = "editable-primary-topic-idcard";
@@ -205,7 +205,7 @@
 				componentDidMount() {
 					const e = this.props.onShowTooltip;
 					this.setState({
-						tooltipDismissed: Object(u.s)()
+						tooltipDismissed: Object(u.r)()
 					}, () => {
 						this.isTooltipEnabled() && e && e()
 					})
@@ -866,7 +866,7 @@
 				X = s.n(q);
 			const {
 				fbt: Q
-			} = s("./node_modules/fbt/lib/FbtPublic.js"), Z = 4, Y = Object(r.c)({
+			} = s("./node_modules/fbt/lib/FbtPublic.js"), Z = 4, z = Object(r.c)({
 				haveData: (e, t) => {
 					let {
 						subredditId: s
@@ -881,7 +881,7 @@
 				isLoading: e => Object(R.B)(e),
 				selectedPrimaryTag: R.x,
 				isPostUpsellModalOpen: Object(P.b)(j.a.POST_FLOW_UPSELL_MODAL_ID)
-			}), z = Object(i.b)(Y, (e, t) => {
+			}), Y = Object(i.b)(z, (e, t) => {
 				let {
 					subredditId: s,
 					context: n
@@ -1061,7 +1061,7 @@
 					})) : this.renderPlaceholder()
 				}
 			}
-			t.default = z(ee)
+			t.default = Y(ee)
 		},
 		"./src/reddit/components/InlineSubredditEditing/index.m.less": function(e, t, s) {
 			e.exports = {
@@ -1752,4 +1752,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditInlineEditing.7f747a83fc79de944036.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditInlineEditing.b2354f58592db5b4acdc.js.map
