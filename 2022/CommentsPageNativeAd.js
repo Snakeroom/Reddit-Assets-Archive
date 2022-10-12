@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CommentsPageNativeAd.8dc4b669277f4953d1c1.js
-// Retrieved at 10/11/2022, 10:50:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CommentsPageNativeAd.4fd856f67d173e655078.js
+// Retrieved at 10/12/2022, 2:50:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CommentsPageNativeAd"], {
 		"./src/reddit/components/BlankPost/index.tsx": function(e, t, s) {
@@ -439,11 +439,11 @@
 				o = s("./src/reddit/constants/experiments.ts"),
 				r = s("./src/reddit/helpers/chooseVariant/index.ts");
 			const n = Object(a.a)(e => Object(r.c)(e, {
-					experimentName: o.kg,
+					experimentName: o.mg,
 					experimentEligibilitySelector: r.a
 				}), e => e),
-				i = Object(a.a)(n, e => e === o.bg)
+				i = Object(a.a)(n, e => e === o.dg)
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommentsPageNativeAd.8dc4b669277f4953d1c1.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommentsPageNativeAd.4fd856f67d173e655078.js.map

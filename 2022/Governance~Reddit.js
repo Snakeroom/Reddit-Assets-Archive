@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~Reddit.55e48d1cf125b8ac2fd1.js
-// Retrieved at 10/11/2022, 3:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~Reddit.a49a0164736f16ca4ca0.js
+// Retrieved at 10/12/2022, 2:50:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~Reddit"], {
 		"./assets/fonts/NotoMono/font.less": function(e, t, n) {},
@@ -2195,7 +2195,7 @@
 			const D = e => _.d.reCaptchaEnterprise(e) && !Object(T.d)(e),
 				w = e => !!Object(S.c)(e, {
 					experimentEligibilitySelector: Object(I.d)(Object(I.b)(...a.d)),
-					experimentName: f.tf
+					experimentName: f.vf
 				}),
 				j = Object(r.b)("LOAD_RECAPTCHA_ENTERPRISE"),
 				A = () => l(e => p()([D, w, e => e.tracking.reCaptchaEnterprise.load === r.a.New], t => t(e)))(async e => {
@@ -4354,7 +4354,7 @@
 							function() {
 								let e = {};
 								A && k.type.length && (Object(se.d)(w, {
-									experimentName: te.Ic
+									experimentName: te.Jc
 								}), j && (e = {
 									...k
 								}));
@@ -25326,7 +25326,7 @@
 					if (!u(e)) return;
 					const t = Object(o.c)(e, {
 						experimentEligibilitySelector: l,
-						experimentName: a.ke,
+						experimentName: a.me,
 						expEventOverride: !1
 					});
 					return null == t ? void 0 : t.toLocaleLowerCase()
@@ -25349,9 +25349,9 @@
 				},
 				b = e => !!p(e) && Object(o.c)(e, {
 					experimentEligibilitySelector: u,
-					experimentName: a.le,
+					experimentName: a.ne,
 					expEventOverride: !1
-				}) !== a.me.Readonly
+				}) !== a.oe.Readonly
 		},
 		"./src/reddit/selectors/experiments/serpTabPreserved.ts": function(e, t, n) {
 			"use strict";
@@ -25362,10 +25362,10 @@
 				s = n("./src/reddit/selectors/telemetry.ts");
 
 			function a(e) {
-				const t = Object(s.q)(e, r.Ic);
+				const t = Object(s.q)(e, r.Jc);
 				return {
 					experimentState: e,
-					isActive: (null == t ? void 0 : t.variant) === r.Qd,
+					isActive: (null == t ? void 0 : t.variant) === r.Sd,
 					isBucketed: !!(null == t ? void 0 : t.variant)
 				}
 			}
@@ -25515,4 +25515,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit.55e48d1cf125b8ac2fd1.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit.a49a0164736f16ca4ca0.js.map

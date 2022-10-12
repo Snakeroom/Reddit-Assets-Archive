@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ChatMessageInput~ChatPost.becc390523aa90ff8d2c.js
-// Retrieved at 10/11/2022, 10:50:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ChatMessageInput~ChatPost.1e2680d723939d547a0b.js
+// Retrieved at 10/12/2022, 2:50:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ChatMessageInput~ChatPost"], {
 		"./node_modules/lodash/_baseReduce.js": function(e, t) {
@@ -697,11 +697,11 @@
 					onClick: () => {
 						e.isSponsored && e.post.postId && Object(f.a)(e.post, e.pageType)
 					}
-				}, D(e)) : e.isListing && e.postPermalink ? a.a.createElement(i.a, {
+				}, R(e)) : e.isListing && e.postPermalink ? a.a.createElement(i.a, {
 					target: e.shouldOpenPostInNewTab ? "_blank" : void 0,
 					to: Object(m.a)(e.postPermalink, void 0, t),
 					onClick: e.onPostMediaClick
-				}, D(e)) : D(e)
+				}, R(e)) : R(e)
 			});
 			const B = (e, t) => a.a.createElement(N, {
 					altText: t.altText,
@@ -721,7 +721,7 @@
 					width: t.width,
 					renderSmallMedia: t.renderSmallMedia
 				}),
-				D = e => {
+				R = e => {
 					let {
 						onClick: t,
 						...n
@@ -965,7 +965,7 @@
 						postId: p
 					}))
 				}
-				const D = r()(e => {
+				const R = r()(e => {
 					if (n) return;
 					const {
 						target: t
@@ -973,8 +973,8 @@
 					t && t.played && 1 === t.played.length && 0 === t.played.start(0) && t.played.end(0) === t.duration && S(Object(u.s)(p))
 				}, 200);
 
-				function R(e) {
-					e.persist(), D(e)
+				function D(e) {
+					e.persist(), R(e)
 				}
 
 				function H(e) {
@@ -1022,7 +1022,7 @@
 						onLoadedMetadata: F,
 						onPause: B,
 						onPlaying: A,
-						onTimeUpdate: R,
+						onTimeUpdate: D,
 						shouldLoad: b,
 						shouldPause: C,
 						showCentered: I,
@@ -1769,7 +1769,7 @@
 			})), n.d(t, "b", (function() {
 				return B
 			})), n.d(t, "f", (function() {
-				return D
+				return R
 			})), n.d(t, "h", (function() {
 				return H
 			})), n.d(t, "g", (function() {
@@ -1896,7 +1896,7 @@
 					if (!a) return;
 					const o = a.length,
 						d = [];
-					for (let i = 0; i < o; i++) d.push(R(a[i], t, n, i, r));
+					for (let i = 0; i < o; i++) d.push(D(a[i], t, n, i, r));
 					return i.a.createElement(c.c, {
 						key: s
 					}, d)
@@ -1907,7 +1907,7 @@
 						key: t
 					}, i.a.createElement(c.h, null, n.reduce((e, t, n, s) => e += t.t + (n < s.length ? "\n" : ""), "")))
 				},
-				D = (e, t, n, s, r) => {
+				R = (e, t, n, s, r) => {
 					const a = e.c,
 						o = [],
 						d = a.length;
@@ -1915,14 +1915,14 @@
 						const e = a[u].c;
 						e && e.length && o.push(i.a.createElement(c.g, {
 							key: u
-						}, e.map((e, s) => R(e, t, n, s, r))))
+						}, e.map((e, s) => D(e, t, n, s, r))))
 					}
 					const l = e.o ? c.i : c.v;
 					return i.a.createElement(l, {
 						key: s
 					}, o)
 				},
-				R = (e, t, n, s, r) => {
+				D = (e, t, n, s, r) => {
 					switch (e.e) {
 						case m.b:
 							return M(e, t, n, s, r);
@@ -1933,7 +1933,7 @@
 						case m.l:
 							return S(s);
 						case m.p:
-							return D(e, t, n, s, r);
+							return R(e, t, n, s, r);
 						case m.u:
 							return P(e, t, n, s, r);
 						case m.z:
@@ -2222,12 +2222,12 @@
 						rtJsonElementProps: o
 					});
 					switch (a) {
-						case b.Vf.SmIcon:
+						case b.Xf.SmIcon:
 							return r.a.createElement(h, {
 								subredditName: s,
 								rtJsonElementProps: o
 							});
-						case b.Vf.SmIconHc:
+						case b.Xf.SmIconHc:
 							return r.a.createElement(h, {
 								subredditName: s,
 								isHoverable: !0,
@@ -2674,12 +2674,12 @@
 				c = e => {
 					return Object(a.c)(e, {
 						experimentEligibilitySelector: i,
-						experimentName: s.Pf
+						experimentName: s.Rf
 					}) || ""
 				},
 				d = e => {
 					const t = c(e);
-					return t === s.Vf.SmIcon || t === s.Vf.SmIconHc
+					return t === s.Xf.SmIcon || t === s.Xf.SmIconHc
 				},
 				l = (e, t) => {
 					let {
@@ -2705,4 +2705,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatMessageInput~ChatPost.becc390523aa90ff8d2c.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatMessageInput~ChatPost.1e2680d723939d547a0b.js.map
