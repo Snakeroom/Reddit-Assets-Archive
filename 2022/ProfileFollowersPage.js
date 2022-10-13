@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfileFollowersPage.d435299d6aa66ca49f1b.js
-// Retrieved at 10/13/2022, 12:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfileFollowersPage.c15421244150763b4d96.js
+// Retrieved at 10/13/2022, 12:30:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfileFollowersPage", "ProfileFollowersAction"], {
 		"./node_modules/lodash/take.js": function(e, t, s) {
@@ -2670,7 +2670,7 @@
 				const w = Object(n.useCallback)(() => g(Object(m.h)(t ? "user_hovercard" : "profile_overview", s)), [t, g, s]);
 				return i.a.createElement(u.t, {
 					onClick: () => {
-						a ? (g(m.i), C && I === h.a.notVoted && y(Object(d.jb)(C))) : w();
+						a ? (g(m.i), C && I === h.a.notVoted && y(Object(d.kb)(C))) : w();
 						const e = a ? "postify" : "copy";
 						y(Object(l.b)({
 							clickSource: O,
@@ -6240,4 +6240,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileFollowersPage.d435299d6aa66ca49f1b.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileFollowersPage.c15421244150763b4d96.js.map

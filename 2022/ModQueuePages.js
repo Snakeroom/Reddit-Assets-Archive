@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModQueuePages.ffc2eb705bb62f4b9cbd.js
-// Retrieved at 10/13/2022, 12:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModQueuePages.ef151e01fbc7dbaf70ea.js
+// Retrieved at 10/13/2022, 12:30:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModQueuePages"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -1879,7 +1879,7 @@
 						u = e[0],
 						p = Object(V.a)(u) ? J.e.Post : J.e.Comment,
 						b = p === J.e.Post ? l.posts.models[u] : l.features.comments.models[u],
-						h = p === J.e.Post ? A.R : R.j;
+						h = p === J.e.Post ? A.S : R.j;
 					if (!b || !m) return !1;
 					i(fe()), i(h({
 						[u]: {
@@ -2733,7 +2733,7 @@
 						}),
 						id: m,
 						onClick: e => {
-							null == s || s(e), z(l, n.id), c && (e.preventDefault(), l(Object(V.Y)(Object(H.b)(a), n.postId)))
+							null == s || s(e), z(l, n.id), c && (e.preventDefault(), l(Object(V.Z)(Object(H.b)(a), n.postId)))
 						},
 						onMouseEnter: u,
 						onMouseLeave: u,
@@ -5627,4 +5627,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModQueuePages.ffc2eb705bb62f4b9cbd.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModQueuePages.ef151e01fbc7dbaf70ea.js.map

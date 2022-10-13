@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostSetPage.feb75ecec20b68a1ccc8.js
-// Retrieved at 10/13/2022, 12:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostSetPage.fdf68251ced2f54d3aff.js
+// Retrieved at 10/13/2022, 12:30:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostSetPage"], {
 		"./node_modules/intersection-observer/intersection-observer.js": function(e, t) {
@@ -2210,18 +2210,18 @@
 					openPost: t => {
 						t.isFrontpage && e(Object(d.a)({
 							lastLoadedEnv: "server"
-						})), e(c.K(t))
+						})), e(c.L(t))
 					},
 					fireAdPixelsOfType: (t, n) => {
-						e(c.y(t, n))
+						e(c.z(t, n))
 					},
 					trackOnPostEnteredViewport: (t, n, r, s) => {
-						e(c.N(t, r, s))
-					},
-					trackOnPostExitedViewport: (t, n, r, s) => {
 						e(c.O(t, r, s))
 					},
-					showModalOnScroll: () => e(c.bb()),
+					trackOnPostExitedViewport: (t, n, r, s) => {
+						e(c.P(t, r, s))
+					},
+					showModalOnScroll: () => e(c.cb()),
 					surveyTriggerScrollCounted: () => e(Object(u.m)())
 				}),
 				N = e => Object(p.b)({
@@ -2862,4 +2862,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostSetPage.feb75ecec20b68a1ccc8.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostSetPage.fdf68251ced2f54d3aff.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-NotificationUnit-Button.253f30c9cee9690377fa.js
-// Retrieved at 10/13/2022, 12:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-NotificationUnit-Button.380f83a5fd13bee7de39.js
+// Retrieved at 10/13/2022, 12:30:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-NotificationUnit-Button"], {
 		"./node_modules/lodash/map.js": function(t, e, o) {
@@ -385,7 +385,7 @@
 							const n = Object(mt.G)(j(), {
 								postId: i
 							});
-							t(Object(u.y)(n, O.a.CommentSubmitted))
+							t(Object(u.z)(n, O.a.CommentSubmitted))
 						} else {
 							if (R.error && R.error.type === r.Pb) {
 								const t = e && s ? s : Object(G.c)(l);
@@ -1162,7 +1162,7 @@
 					a = `error-block-${e}`,
 					l = `success-block-${e}`;
 				if (c.ok) {
-					o(Object(p.R)({
+					o(Object(p.S)({
 						[t]: {
 							suggestedSort: e
 						}
@@ -1373,7 +1373,7 @@
 						},
 						onSetSuggestedSort: e => t(j(o, e)),
 						hideTooltip: () => t(Object(l.i)()),
-						setContestMode: e => t(Object(p.W)(e, o)),
+						setContestMode: e => t(Object(p.X)(e, o)),
 						showTooltip: () => t(Object(l.h)({
 							tooltipId: $
 						})),
@@ -2416,4 +2416,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-NotificationUnit-Button.253f30c9cee9690377fa.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-NotificationUnit-Button.380f83a5fd13bee7de39.js.map

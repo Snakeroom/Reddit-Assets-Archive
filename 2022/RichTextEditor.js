@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/RichTextEditor.5c9c1e53df5e7b26fa9b.js
-// Retrieved at 10/13/2022, 12:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/RichTextEditor.2c4697cb4ccd15345e9d.js
+// Retrieved at 10/13/2022, 12:30:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["RichTextEditor", "ContributorRequestButton"], {
 		"./node_modules/autosize/dist/autosize.js": function(e, t, n) {
@@ -919,7 +919,7 @@
 							const o = Object(ue.G)(x(), {
 								postId: i
 							});
-							e(Object(m.y)(o, g.a.CommentSubmitted))
+							e(Object(m.z)(o, g.a.CommentSubmitted))
 						} else {
 							if (R.error && R.error.type === r.Pb) {
 								const e = t && s ? s : Object(K.c)(l);
@@ -1633,7 +1633,7 @@
 							})
 						})), t(I(c.id));
 						const e = Object(y.a)(l.body);
-						t(Object(s.R)({
+						t(Object(s.S)({
 							[c.id]: e
 						}))
 					} else t(M(l.error))
@@ -3849,7 +3849,7 @@
 					c = `error-block-${t}`,
 					l = `success-block-${t}`;
 				if (a.ok) {
-					n(Object(p.R)({
+					n(Object(p.S)({
 						[e]: {
 							suggestedSort: t
 						}
@@ -4060,7 +4060,7 @@
 						},
 						onSetSuggestedSort: t => e(x(n, t)),
 						hideTooltip: () => e(Object(l.i)()),
-						setContestMode: t => e(Object(p.W)(t, n)),
+						setContestMode: t => e(Object(p.X)(t, n)),
 						showTooltip: () => e(Object(l.h)({
 							tooltipId: Z
 						})),
@@ -6084,4 +6084,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RichTextEditor.5c9c1e53df5e7b26fa9b.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RichTextEditor.2c4697cb4ccd15345e9d.js.map

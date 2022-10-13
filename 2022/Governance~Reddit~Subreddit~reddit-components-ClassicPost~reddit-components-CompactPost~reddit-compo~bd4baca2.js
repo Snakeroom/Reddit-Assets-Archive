@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compo~bd4baca2.b7aebee41c2a0568a550.js
-// Retrieved at 10/13/2022, 12:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compo~bd4baca2.37adb71b4d9fdd1229c8.js
+// Retrieved at 10/13/2022, 12:30:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compo~bd4baca2"], {
 		"./src/higherOrderComponents/withAdClickLocation/Locations.ts": function(e, t, s) {
@@ -1302,7 +1302,7 @@
 							apiContext: a
 						} = n;
 						const l = t.flair.filter(e => !Object(c.q)(e.type));
-						if (s && l.unshift(s), e(Object(o.R)({
+						if (s && l.unshift(s), e(Object(o.S)({
 								[t.id]: {
 									flair: l
 								}
@@ -3223,7 +3223,7 @@
 				let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {};
 				return {
 					...e,
-					onPostViewable: i.P
+					onPostViewable: i.Q
 				}
 			}(t))
 		},
@@ -4139,4 +4139,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compo~bd4baca2.b7aebee41c2a0568a550.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compo~bd4baca2.37adb71b4d9fdd1229c8.js.map

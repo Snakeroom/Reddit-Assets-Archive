@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~RpanListingUnit~S~5809214e.00498d881267c7229c38.js
-// Retrieved at 10/13/2022, 12:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~RpanListingUnit~S~5809214e.9ebbb1743505616c9e8c.js
+// Retrieved at 10/13/2022, 12:30:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~RpanListingUnit~S~5809214e"], {
 		"./src/devPlatform/components/ContextActions/ContextActionsLoader.tsx": function(e, t, o) {
@@ -536,7 +536,7 @@
 					return c
 				}, Q = Object(i.a)(c.l), X = Object(i.a)(c.m), Y = Object(i.a)(c.k), Z = e => async (t, o) => {
 					const s = o();
-					if (Object(y.b)(s) || Object(y.c)(s)) return void t(Object(a.ab)(Object(w.b)(e.permalink), e.id));
+					if (Object(y.b)(s) || Object(y.c)(s)) return void t(Object(a.bb)(Object(w.b)(e.permalink), e.id));
 					const r = s.platform.currentPage.locationState;
 					t(!(!r || !r[l.b.IsOverlay]) ? Object(E.a)(e.permalink) : Object(n.b)(Object(w.b)(e.permalink)))
 				}, $ = Object(i.a)(c.i), ee = Object(i.a)(c.j), te = Object(i.a)(c.h), oe = Object(i.a)(c.p), se = Object(i.a)(c.o), ne = Object(i.a)(c.q), re = e => async t => {
@@ -730,7 +730,7 @@
 							})
 						})), t(F(c.id));
 						const e = Object(v.a)(l.body);
-						t(Object(r.R)({
+						t(Object(r.S)({
 							[c.id]: e
 						}))
 					} else t(S(l.error))
@@ -1037,7 +1037,7 @@
 							const {
 								commentCountChange: t
 							} = e.subscribe.data;
-							0 !== t && P(Object(l.G)({
+							0 !== t && P(Object(l.H)({
 								postId: g,
 								delta: t
 							}))
@@ -1144,7 +1144,7 @@
 					target: s || j ? "_blank" : void 0,
 					to: L ? Object(_.b)(O) : Object(d.a)(O, !0, D),
 					onClick: e => {
-						(N || F) && (e.preventDefault(), R(Object(l.Y)(Object(_.b)(O), T))), x && x()
+						(N || F) && (e.preventDefault(), R(Object(l.Z)(Object(_.b)(O), T))), x && x()
 					}
 				}, B)
 			})
@@ -1668,8 +1668,8 @@
 					return {
 						addPostToCollection: (t, o) => e(Object($.a)(t, o)),
 						onToggleModal: t => e(Object(h.i)(t)),
-						onToggleSave: () => e(Object(f.U)(s.postId)),
-						onHide: t => e(Object(f.eb)(s.postId, !s.hidden, n, !0)),
+						onToggleSave: () => e(Object(f.V)(s.postId)),
+						onHide: t => e(Object(f.fb)(s.postId, !s.hidden, n, !0)),
 						onReportClick: () => e(Object(O.c)(s.postId, n)),
 						onEdit: () => {
 							const t = !n && !r;
@@ -2254,7 +2254,7 @@
 						resolvedOptionId: g,
 						totalVoteCount: _
 					} = c.pollData || {}, k = () => {
-						u(!1), O(Object(l.T)(c.id, !1)), c.isRemoved && c.bannedBy === I.m ? x(Object(C.k)(c.id, "confirm_remove")) : x(Object(C.k)(c.id, "remove"))
+						u(!1), O(Object(l.U)(c.id, !1)), c.isRemoved && c.bannedBy === I.m ? x(Object(C.k)(c.id, "confirm_remove")) : x(Object(C.k)(c.id, "remove"))
 					}, j = ((e, t) => e ? t === I.m ? s.fbt._("Confirm removal", null, {
 						hk: "1t5tKM"
 					}) : s.fbt._("removed", null, {
@@ -2336,11 +2336,11 @@
 						post: o
 					} = t;
 					return {
-						onApprovePost: () => e(Object(l.r)(o.id)),
+						onApprovePost: () => e(Object(l.s)(o.id)),
 						onOpenPostModModeDropdown: t => e(Object(p.h)({
 							tooltipId: t
 						})),
-						onSpamPost: () => e(Object(l.T)(o.id, !0)),
+						onSpamPost: () => e(Object(l.U)(o.id, !0)),
 						onFlairPost: t => () => e(Object(d.i)(t))
 					}
 				});
@@ -3336,20 +3336,20 @@
 						isCommentsPage: n
 					} = t;
 					return {
-						onCopyLink: t => e(Object(O.C)(t)),
-						onDelete: t => e(Object(O.M)(o, t, s)),
-						onDistinguishPost: t => e(Object(O.u)(o, t)),
+						onCopyLink: t => e(Object(O.D)(t)),
+						onDelete: t => e(Object(O.N)(o, t, s)),
+						onDistinguishPost: t => e(Object(O.v)(o, t)),
 						onGildClick: (t, s) => e(Object(f.d)({
 							awardId: s,
 							correlationId: t,
 							thingId: o
 						})),
-						onToggleSave: () => e(Object(O.U)(o)),
-						onToggleNSFW: () => e(Object(O.F)(o)),
-						onToggleOC: () => e(Object(O.I)(o)),
+						onToggleSave: () => e(Object(O.V)(o)),
+						onToggleNSFW: () => e(Object(O.G)(o)),
+						onToggleOC: () => e(Object(O.J)(o)),
 						onTogglePinned: () => e(Object(C.i)(o)),
-						onToggleSpoiler: () => e(Object(O.db)(o)),
-						onHide: (t, n) => e(Object(O.eb)(o, !t, s, !n)),
+						onToggleSpoiler: () => e(Object(O.eb)(o)),
+						onHide: (t, n) => e(Object(O.fb)(o, !t, s, !n)),
 						onReportClick: () => e(Object(g.c)(o, s)),
 						onStartEventNow: () => {
 							e((e, t) => Object(d.a)(Object(T.l)()(t()))), e(Object(h.startEventNowRequested)(o))
@@ -3359,8 +3359,8 @@
 							e(Object(v.a)(o, t))
 						},
 						onFlairPost: () => e(Object(x.i)(Object(ae.b)(o, s))),
-						onToggleSendReplies: () => e(Object(O.V)(o)),
-						onToggleReactAllowed: () => e(Object(O.S)(o)),
+						onToggleSendReplies: () => e(Object(O.W)(o)),
+						onToggleReactAllowed: () => e(Object(O.T)(o)),
 						showCollectionsList: (t, o) => {
 							e(Object(le.e)(t)).then(() => {
 								const t = Object(ue.t)(o, s);
@@ -4069,7 +4069,7 @@
 								tooltipId: e.dropdownId
 							}))
 						}, [t, e.dropdownId]),
-						C = e => t(Object(m.C)(e)),
+						C = e => t(Object(m.D)(e)),
 						P = Object(n.useCallback)(() => {
 							e.post && (t(Object(u.d)(e.post.id)), t(Object(p.i)(Object(f.a)(e.post.id))))
 						}, [t, e.post]),
@@ -5006,4 +5006,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~RpanListingUnit~S~5809214e.00498d881267c7229c38.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~RpanListingUnit~S~5809214e.9ebbb1743505616c9e8c.js.map

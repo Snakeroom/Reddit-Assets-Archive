@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~Reddit.4704ad7ea73795ad29f1.js
-// Retrieved at 10/13/2022, 12:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~Reddit.c0dbb5d1ab596d8e0292.js
+// Retrieved at 10/13/2022, 12:30:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~Reddit"], {
 		"./assets/fonts/NotoMono/font.less": function(e, t, n) {},
@@ -2915,7 +2915,7 @@
 						...Object(d.o)(e)
 					}))(n())), Object(u.c)(n(), {
 						postId: e
-					}) && t(Object(o.jb)(e))
+					}) && t(Object(o.kb)(e))
 				}, y = (e, t) => {
 					return t ? r.fbt._("If you enjoyed that post, upvote it so that more redditors will see it too.", null, {
 						hk: "1Y6B4I"
@@ -3612,7 +3612,7 @@
 					} = e, {
 						isSponsored: r
 					} = t, s = Object(c.d)(), a = Object(E.a)(), i = Object(c.e)(F.b), d = Object(c.e)(F.c), u = e => {
-						!i && !d || t.media && Object(D.H)(t.media) || (e.preventDefault(), s(Object(m.ab)(Object(g.b)(t.permalink), t.id)))
+						!i && !d || t.media && Object(D.H)(t.media) || (e.preventDefault(), s(Object(m.bb)(Object(g.b)(t.permalink), t.id)))
 					};
 					if (e.isCommentsPage && !e.isCommentPermalink && !e.shouldLinkWrap) return o.a.createElement(X, {
 						nowrap: e.nowrap
@@ -25569,4 +25569,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit.4704ad7ea73795ad29f1.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit.c0dbb5d1ab596d8e0292.js.map

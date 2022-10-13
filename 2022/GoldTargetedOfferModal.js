@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/GoldTargetedOfferModal.9022062813e2d7943e91.js
-// Retrieved at 10/13/2022, 12:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/GoldTargetedOfferModal.8a3b7cb502dead653688.js
+// Retrieved at 10/13/2022, 12:30:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["GoldTargetedOfferModal"], {
 		"./node_modules/@stripe/react-stripe-js/dist/react-stripe.umd.js": function(e, t, r) {
@@ -1019,7 +1019,7 @@
 							if (!r.ok) throw new Error("Got not ok response on free award offer claim");
 							await e(v({
 								awards: r.awards
-							})), e(Object(l.A)())
+							})), e(Object(l.B)())
 						}
 					} catch (f) {
 						Object(o.b)() || console.error(f), e(Object(i.f)({
@@ -1609,4 +1609,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/GoldTargetedOfferModal.9022062813e2d7943e91.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/GoldTargetedOfferModal.8a3b7cb502dead653688.js.map

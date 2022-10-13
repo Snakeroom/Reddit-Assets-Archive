@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Coins.809694b1d7d6667b4936.js
-// Retrieved at 10/13/2022, 12:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Coins.42f8fdc1db48e6e3520a.js
+// Retrieved at 10/13/2022, 12:30:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Coins"], {
 		"./node_modules/@stripe/react-stripe-js/dist/react-stripe.umd.js": function(e, t, n) {
@@ -1066,7 +1066,7 @@
 							if (!n.ok) throw new Error("Got not ok response on free award offer claim");
 							await e(E({
 								awards: n.awards
-							})), e(Object(d.A)())
+							})), e(Object(d.B)())
 						}
 					} catch (p) {
 						Object(a.b)() || console.error(p), e(Object(o.f)({
@@ -2322,4 +2322,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Coins.809694b1d7d6667b4936.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Coins.42f8fdc1db48e6e3520a.js.map

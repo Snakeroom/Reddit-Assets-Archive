@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfileComments~ProfileOverview~ProfilePrivate.59c8fc7a084766a8f521.js
-// Retrieved at 10/13/2022, 12:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfileComments~ProfileOverview~ProfilePrivate.62e5199263d2646fb2da.js
+// Retrieved at 10/13/2022, 12:30:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfileComments~ProfileOverview~ProfilePrivate"], {
 		"./node_modules/lodash/take.js": function(e, t, s) {
@@ -1698,10 +1698,10 @@
 				g = s("./src/reddit/components/ExpandoButton/index.m.less"),
 				O = s.n(g);
 			const _ = Object(i.b)(null, (e, t) => ({
-					toggle: () => e(Object(l.w)({
+					toggle: () => e(Object(l.x)({
 						postId: t.post.id
 					})),
-					showModalOnPostLinkClick: t => e(Object(l.ab)(Object(u.b)(t.permalink), t.id))
+					showModalOnPostLinkClick: t => e(Object(l.bb)(Object(u.b)(t.permalink), t.id))
 				})),
 				C = function(e) {
 					let t = arguments.length > 1 && void 0 !== arguments[1] && arguments[1],
@@ -2013,7 +2013,7 @@
 				isBlockingInterstitialEnabled: _.b,
 				isBlockingInterstitialV2Enabled: _.b
 			}), e => ({
-				showModalOnAuthorLinkClick: t => e(Object(l.cb)(t))
+				showModalOnAuthorLinkClick: t => e(Object(l.db)(t))
 			})), A = e => {
 				const {
 					post: t,
@@ -2570,7 +2570,7 @@
 				const y = Object(o.useCallback)(() => E(Object(u.h)(t ? "user_hovercard" : "profile_overview", s)), [t, E, s]);
 				return r.a.createElement(m.t, {
 					onClick: () => {
-						a ? (E(u.i), O && _ === b.a.notVoted && g(Object(d.jb)(O))) : y();
+						a ? (E(u.i), O && _ === b.a.notVoted && g(Object(d.kb)(O))) : y();
 						const e = a ? "postify" : "copy";
 						g(Object(c.b)({
 							clickSource: C,
@@ -3998,10 +3998,10 @@
 					} = t;
 					return {
 						handleVote: t => {
-							const n = t === a.a.upvoted ? Object(r.jb)(s) : Object(r.v)(s);
+							const n = t === a.a.upvoted ? Object(r.kb)(s) : Object(r.w)(s);
 							e(n)
 						},
-						onIgnoreReports: () => e(Object(r.fb)(s)),
+						onIgnoreReports: () => e(Object(r.gb)(s)),
 						onOpenReportsDropdown: t => e(Object(i.h)({
 							tooltipId: t
 						}))
@@ -4655,4 +4655,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileComments~ProfileOverview~ProfilePrivate.59c8fc7a084766a8f521.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileComments~ProfileOverview~ProfilePrivate.62e5199263d2646fb2da.js.map

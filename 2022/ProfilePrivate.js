@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfilePrivate.dcac88d60f89ffc48f6e.js
-// Retrieved at 10/13/2022, 12:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfilePrivate.8e489cbee60a7bea42f1.js
+// Retrieved at 10/13/2022, 12:30:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfilePrivate"], {
 		"./src/reddit/actions/pages/profilePrivate/index.ts": function(e, t, s) {
@@ -667,7 +667,7 @@
 				},
 				isNightmodeOn: y.db
 			}), e => ({
-				openPost: t => e(Object(u.K)(t))
+				openPost: t => e(Object(u.L)(t))
 			}));
 			var w = Object(c.a)(S(e => {
 					const {
@@ -2557,13 +2557,13 @@
 			Object(o.b)(H, (e, t) => ({
 				onBottomViewed: (t, s) => e(S.c(t, s)),
 				openPost: t => {
-					e(y.K(t))
+					e(y.L(t))
 				},
 				trackOnPostEnteredViewport: (t, s) => {
-					Object(O.a)(t) && e(y.N(t))
+					Object(O.a)(t) && e(y.O(t))
 				},
 				trackOnPostExitedViewport: (t, s, i) => {
-					Object(O.a)(t) && e(y.O(t, i))
+					Object(O.a)(t) && e(y.P(t, i))
 				},
 				fireAdPixelsOfType: g.a
 			}), (e, t, s) => ({
@@ -2644,11 +2644,11 @@
 				se = e => ({
 					onBottomViewed: g.a,
 					openPost: t => {
-						e(y.K(t))
+						e(y.L(t))
 					},
 					trackOnPostEnteredViewport: g.a,
 					fireAdPixelsOfType: (t, s) => {
-						e(y.y(t, s))
+						e(y.z(t, s))
 					}
 				}),
 				ie = Object(o.b)(ee, se, (e, t, s) => ({
@@ -2804,4 +2804,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfilePrivate.dcac88d60f89ffc48f6e.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfilePrivate.8e489cbee60a7bea42f1.js.map

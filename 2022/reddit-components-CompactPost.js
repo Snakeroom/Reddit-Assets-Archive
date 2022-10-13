@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-CompactPost.7ed7fa0d01004f0a764c.js
-// Retrieved at 10/13/2022, 12:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-CompactPost.6dc06588c3e08d9d212c.js
+// Retrieved at 10/13/2022, 12:30:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-CompactPost"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -1251,10 +1251,10 @@
 							}))
 						},
 						handleVote: t => {
-							const n = t === _.a.upvoted ? Object(E.jb)(s) : Object(E.v)(s);
+							const n = t === _.a.upvoted ? Object(E.kb)(s) : Object(E.w)(s);
 							e(n)
 						},
-						onIgnoreReports: () => e(Object(E.fb)(s)),
+						onIgnoreReports: () => e(Object(E.gb)(s)),
 						onOpenReportsDropdown: t => e(Object(C.h)({
 							tooltipId: t
 						}))
@@ -1907,10 +1907,10 @@
 				E = s("./src/reddit/components/ExpandoButton/index.m.less"),
 				O = s.n(E);
 			const C = Object(a.b)(null, (e, t) => ({
-					toggle: () => e(Object(l.w)({
+					toggle: () => e(Object(l.x)({
 						postId: t.post.id
 					})),
-					showModalOnPostLinkClick: t => e(Object(l.ab)(Object(m.b)(t.permalink), t.id))
+					showModalOnPostLinkClick: t => e(Object(l.bb)(Object(m.b)(t.permalink), t.id))
 				})),
 				S = function(e) {
 					let t = arguments.length > 1 && void 0 !== arguments[1] && arguments[1],
@@ -2688,7 +2688,7 @@
 					post: s
 				} = t;
 				return {
-					onFollow: () => e(Object(d.z)(s.isSponsored ? s.postId : s.id))
+					onFollow: () => e(Object(d.A)(s.isSponsored ? s.postId : s.id))
 				}
 			})(Object(l.c)(b))
 		},
@@ -3011,7 +3011,7 @@
 					} = e, {
 						isSponsored: n
 					} = t, o = Object(i.d)(), r = Object(E.a)(), c = Object(i.e)(U.b), d = Object(i.e)(U.c), u = e => {
-						!c && !d || t.media && Object(k.H)(t.media) || (e.preventDefault(), o(Object(h.ab)(Object(v.b)(t.permalink), t.id)))
+						!c && !d || t.media && Object(k.H)(t.media) || (e.preventDefault(), o(Object(h.bb)(Object(v.b)(t.permalink), t.id)))
 					};
 					if (e.isCommentsPage && !e.isCommentPermalink && !e.shouldLinkWrap) return a.a.createElement(Z, {
 						nowrap: e.nowrap
@@ -3227,7 +3227,7 @@
 				const g = Object(o.useCallback)(() => _(Object(m.h)(t ? "user_hovercard" : "profile_overview", s)), [t, _, s]);
 				return r.a.createElement(u.t, {
 					onClick: () => {
-						i ? (_(m.i), O && C === b.a.notVoted && E(Object(c.jb)(O))) : g();
+						i ? (_(m.i), O && C === b.a.notVoted && E(Object(c.kb)(O))) : g();
 						const e = i ? "postify" : "copy";
 						E(Object(d.b)({
 							clickSource: S,
@@ -5517,4 +5517,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-CompactPost.7ed7fa0d01004f0a764c.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-CompactPost.6dc06588c3e08d9d212c.js.map
