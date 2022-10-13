@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Premium~reddit-components-Econ-Prediction-PremiumModal.3e331a8b8c54801655d3.js
-// Retrieved at 10/11/2022, 9:50:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Premium~reddit-components-Econ-Prediction-PremiumModal.3da5310c94eadabfac59.js
+// Retrieved at 10/13/2022, 12:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Premium~reddit-components-Econ-Prediction-PremiumModal"], {
 		"./node_modules/@stripe/react-stripe-js/dist/react-stripe.umd.js": function(e, t, r) {
@@ -1256,7 +1256,7 @@
 							if (!r.ok) throw new Error("Got not ok response on free award offer claim");
 							await e(k({
 								awards: r.awards
-							})), e(Object(l.B)())
+							})), e(Object(l.A)())
 						}
 					} catch (p) {
 						Object(a.b)() || console.error(p), e(Object(c.f)({
@@ -2638,4 +2638,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Premium~reddit-components-Econ-Prediction-PremiumModal.3e331a8b8c54801655d3.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Premium~reddit-components-Econ-Prediction-PremiumModal.3da5310c94eadabfac59.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-ProfileIdCard.ded05a8e679c62fdb263.js
-// Retrieved at 10/13/2022, 9:40:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-ProfileIdCard.da4dce8e4a091345132e.js
+// Retrieved at 10/13/2022, 12:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-ProfileIdCard"], {
 		"./node_modules/lodash/compact.js": function(e, t) {
@@ -1770,7 +1770,7 @@
 				const k = Object(s.useCallback)(() => x(Object(m.h)(t ? "user_hovercard" : "profile_overview", r)), [t, x, r]);
 				return o.a.createElement(u.t, {
 					onClick: () => {
-						i ? (x(m.i), O && I === f.a.notVoted && _(Object(c.kb)(O))) : k();
+						i ? (x(m.i), O && I === f.a.notVoted && _(Object(c.jb)(O))) : k();
 						const e = i ? "postify" : "copy";
 						_(Object(d.b)({
 							clickSource: C,
@@ -3618,4 +3618,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ProfileIdCard.ded05a8e679c62fdb263.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ProfileIdCard.da4dce8e4a091345132e.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~SearchResults.8dfda7d37b959ea5b29f.js
-// Retrieved at 10/13/2022, 9:40:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~SearchResults.8cfba29b338f87049219.js
+// Retrieved at 10/13/2022, 12:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~SearchResults"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -1479,7 +1479,7 @@
 						}),
 						id: m,
 						onClick: e => {
-							null == s || s(e), Q(l, n.id), c && (e.preventDefault(), l(Object(W.Z)(Object(X.b)(a), n.postId)))
+							null == s || s(e), Q(l, n.id), c && (e.preventDefault(), l(Object(W.Y)(Object(X.b)(a), n.postId)))
 						},
 						onMouseEnter: u,
 						onMouseLeave: u,
@@ -2746,7 +2746,7 @@
 					post: n
 				} = t;
 				return {
-					onFollow: () => e(Object(c.A)(n.isSponsored ? n.postId : n.id))
+					onFollow: () => e(Object(c.z)(n.isSponsored ? n.postId : n.id))
 				}
 			})(Object(l.c)(b))
 		},
@@ -3130,4 +3130,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~SearchResults.8dfda7d37b959ea5b29f.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~SearchResults.8cfba29b338f87049219.js.map

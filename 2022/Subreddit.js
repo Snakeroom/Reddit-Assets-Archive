@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Subreddit.0d38dcf3ec995f82938c.js
-// Retrieved at 10/13/2022, 9:40:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Subreddit.8cbd0c362baa92ec848d.js
+// Retrieved at 10/13/2022, 12:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Subreddit", "Governance~ModListing~Reddit", "AchievementsActions", "reddit-components-Econ-PredictionLeaderboard-Sidebar"], {
 		"./node_modules/@reddit/i18n-tools/runtime/helpers/locale/index.js": function(e, t, n) {
@@ -7902,7 +7902,7 @@
 		"./src/reddit/components/Media/ImageBox/index.tsx": function(e, t, n) {
 			"use strict";
 			n.d(t, "b", (function() {
-				return k
+				return w
 			}));
 			var r = n("./node_modules/fbt/lib/FbtPublic.js"),
 				s = n("./node_modules/react/index.js"),
@@ -7916,22 +7916,23 @@
 				m = n("./src/lib/permalinkToOverlayLocation/index.ts"),
 				p = n("./src/reddit/components/Media/BlurredContent.tsx"),
 				b = n("./src/reddit/components/PlayButton/index.tsx"),
-				h = n("./src/reddit/constants/elementClassNames.ts"),
-				f = n("./src/reddit/controls/OutboundLink/index.tsx"),
-				g = n("./src/reddit/helpers/trackers/ads.ts"),
-				x = n("./src/reddit/hooks/useClickSourceData.ts"),
-				v = n("./src/reddit/hooks/useIntersectionObserver.ts"),
-				E = n("./src/reddit/models/Media/index.ts"),
-				_ = n("./src/reddit/selectors/posts.ts"),
-				O = n("./src/reddit/selectors/telemetry.ts"),
-				y = n("./src/reddit/selectors/user.ts"),
-				j = n("./src/reddit/constants/tracking.ts"),
-				C = n("./src/higherOrderComponents/withAdClickLocation/Locations.ts"),
-				I = n("./src/reddit/components/Media/ImageBox/index.m.less"),
-				N = n.n(I);
+				h = n("./src/reddit/constants/adEvents.ts"),
+				f = n("./src/reddit/constants/elementClassNames.ts"),
+				g = n("./src/reddit/controls/OutboundLink/index.tsx"),
+				x = n("./src/reddit/helpers/trackers/ads.ts"),
+				v = n("./src/reddit/hooks/useClickSourceData.ts"),
+				E = n("./src/reddit/hooks/useIntersectionObserver.ts"),
+				_ = n("./src/reddit/models/Media/index.ts"),
+				O = n("./src/reddit/selectors/posts.ts"),
+				y = n("./src/reddit/selectors/telemetry.ts"),
+				j = n("./src/reddit/selectors/user.ts"),
+				C = n("./src/reddit/constants/tracking.ts"),
+				I = n("./src/higherOrderComponents/withAdClickLocation/Locations.ts"),
+				N = n("./src/reddit/components/Media/ImageBox/index.m.less"),
+				S = n.n(N);
 
-			function S() {
-				return (S = Object.assign || function(e) {
+			function k() {
+				return (k = Object.assign || function(e) {
 					for (var t = 1; t < arguments.length; t++) {
 						var n = arguments[t];
 						for (var r in n) Object.prototype.hasOwnProperty.call(n, r) && (e[r] = n[r])
@@ -7939,23 +7940,23 @@
 					return e
 				}).apply(this, arguments)
 			}
-			const k = e => e > 2 * E.e,
-				w = e => o.a.createElement("img", {
+			const w = e => e > 2 * _.e,
+				P = e => o.a.createElement("img", {
 					alt: e.altText || r.fbt._("Comment image", null, {
 						hk: "1DiDxV"
 					}),
 					className: Object(d.a)(e.className, {
-						[N.a.renderSmallMedia]: e.renderSmallMedia
+						[S.a.renderSmallMedia]: e.renderSmallMedia
 					}),
 					src: e.src
 				}),
-				P = e => {
-					const t = Object(d.a)(N.a.image, h.g, e.className, {
-							[N.a.mShowCentered]: e.showCentered,
-							[N.a.mShowBlurred]: e.shouldBlur
+				T = e => {
+					const t = Object(d.a)(S.a.image, f.g, e.className, {
+							[S.a.mShowCentered]: e.showCentered,
+							[S.a.mShowBlurred]: e.shouldBlur
 						}),
 						n = {};
-					e.showFull || e.isTall || (n.maxHeight = `${E.j}px`), e.isListing || e.isTall && k(e.height) || (n.maxHeight = `${E.e}px`), e.isExpando && e.maxHeight && (n.maxHeight = `${e.maxHeight}px`), e.isExpando && e.maxWidth && (n.maxWidth = `${e.maxWidth}px`);
+					e.showFull || e.isTall || (n.maxHeight = `${_.j}px`), e.isListing || e.isTall && w(e.height) || (n.maxHeight = `${_.e}px`), e.isExpando && e.maxHeight && (n.maxHeight = `${e.maxHeight}px`), e.isExpando && e.maxWidth && (n.maxWidth = `${e.maxWidth}px`);
 					const i = Object(s.useRef)(null),
 						[a, c] = Object(s.useState)(!1),
 						l = Object(s.useCallback)(e => {
@@ -7969,7 +7970,7 @@
 						u = Object(s.useRef)({
 							rootMargin: "750px 0px 750px 0px"
 						});
-					Object(v.a)(i, l, u.current);
+					Object(E.a)(i, l, u.current);
 					const {
 						width: m,
 						height: p
@@ -7981,13 +7982,13 @@
 							(b = p * (240 / m)) < 20 && (b = 20)
 						}
 					else b = Math.min(b, p);
-					const f = Object(s.useRef)({
+					const h = Object(s.useRef)({
 						height: b
 					});
 					return e.renderSmallMedia ? o.a.createElement("div", {
 						ref: i,
-						style: f.current
-					}, a && o.a.createElement(w, S({}, e, {
+						style: h.current
+					}, a && o.a.createElement(P, k({}, e, {
 						className: t
 					}))) : o.a.createElement("img", {
 						alt: e.altText || r.fbt._("Post image", null, {
@@ -7998,51 +7999,52 @@
 						style: n
 					})
 				},
-				T = e => {
+				L = e => {
 					const t = {};
-					return (!e.showFull && Object(E.L)(e.height, e.width) || e.shouldBlur) && (t.overflow = "hidden"), e.showFull || (t.maxHeight = `${E.j}px`, e.shouldBlur && (t.maxWidth = Object(E.L)(e.height, e.width) ? `${E.z}px` : `${e.width}px`)), e.showCentered && (t.margin = "0 auto"), e.isExpando && e.maxHeight && (t.maxHeight = `${e.maxHeight}px`), o.a.createElement("div", {
-						className: Object(d.a)(N.a.container, e.className, {
-							[N.a.alignLeft]: e.alignLeft
+					return (!e.showFull && Object(_.L)(e.height, e.width) || e.shouldBlur) && (t.overflow = "hidden"), e.showFull || (t.maxHeight = `${_.j}px`, e.shouldBlur && (t.maxWidth = Object(_.L)(e.height, e.width) ? `${_.z}px` : `${e.width}px`)), e.showCentered && (t.margin = "0 auto"), e.isExpando && e.maxHeight && (t.maxHeight = `${e.maxHeight}px`), o.a.createElement("div", {
+						className: Object(d.a)(S.a.container, e.className, {
+							[S.a.alignLeft]: e.alignLeft
 						}),
 						style: t
 					}, e.children)
 				},
-				L = Object(i.b)(() => Object(c.a)(_.F, y.jb, (e, t) => {
+				A = Object(i.b)(() => Object(c.a)(O.F, j.jb, (e, t) => {
 					let {
 						isSponsored: n,
 						postId: r
 					} = t;
-					return n && r ? Object(_.b)(e, r) : null
-				}, O.d, _.G, (e, t, n, r, s) => ({
+					return n && r ? Object(O.b)(e, r) : null
+				}, y.d, O.G, (e, t, n, r, s) => ({
 					postPermalink: e,
 					shouldOpenPostInNewTab: t,
 					basePixelMetadata: n,
 					pageType: r.pageType,
 					post: s
 				})));
-			t.a = L(e => {
-				const t = Object(x.a)();
+			t.a = A(e => {
+				const t = Object(v.a)();
 				return e.outboundUrl && !e.shouldBlur ? o.a.createElement("a", {
-					"data-adclicklocation": C.a.MEDIA,
+					"data-testid": "imagebox-outboundurl",
+					"data-adclicklocation": I.a.MEDIA,
 					href: e.outboundUrl,
 					target: "_blank",
 					rel: u.a,
 					onMouseDown: t => {
-						e.source && e.outboundUrl && e.isSponsored && e.basePixelMetadata && Object(f.c)(t.currentTarget, e.postId, e.basePixelMetadata)
+						e.source && e.outboundUrl && e.isSponsored && e.basePixelMetadata && Object(g.c)(t.currentTarget, e.postId, e.basePixelMetadata)
 					},
 					onClick: () => {
-						e.isSponsored && e.post.postId && Object(g.a)(e.post, e.pageType)
+						e.isSponsored && e.post.postId && (e.fireAdPixelsOfType && e.fireAdPixelsOfType(e.post, h.a.Click), Object(x.a)(e.post, e.pageType))
 					}
-				}, B(e)) : e.isListing && e.postPermalink ? o.a.createElement(a.a, {
+				}, R(e)) : e.isListing && e.postPermalink ? o.a.createElement(a.a, {
 					target: e.shouldOpenPostInNewTab ? "_blank" : void 0,
 					to: Object(m.a)(e.postPermalink, void 0, t),
 					onClick: e.onPostMediaClick
-				}, B(e)) : B(e)
+				}, R(e)) : R(e)
 			});
-			const A = (e, t) => o.a.createElement(P, {
+			const B = (e, t) => o.a.createElement(T, {
 					altText: t.altText,
 					className: Object(d.a)(t.imageClassName, {
-						[j.a]: !e
+						[C.a]: !e
 					}),
 					height: t.height,
 					isExpando: !!t.isExpando,
@@ -8057,18 +8059,18 @@
 					width: t.width,
 					renderSmallMedia: t.renderSmallMedia
 				}),
-				B = e => {
+				R = e => {
 					let {
 						onClick: t,
 						...n
 					} = e;
-					const s = Object(E.L)(n.height, n.width),
-						i = k(n.height) && s;
-					return o.a.createElement(T, S({}, n, {
-						className: `${s?`${j.a} `:""}${n.className||""}`
+					const s = Object(_.L)(n.height, n.width),
+						i = w(n.height) && s;
+					return o.a.createElement(L, k({}, n, {
+						className: `${s?`${C.a} `:""}${n.className||""}`
 					}), n.isListing ? o.a.createElement("div", {
 						className: n.contentImageClassName
-					}, A(s, n)) : o.a.createElement("a", {
+					}, B(s, n)) : o.a.createElement("a", {
 						href: n.originalSource,
 						onClick: t,
 						style: i ? {
@@ -8076,12 +8078,12 @@
 						} : {},
 						target: "_blank",
 						rel: u.c,
-						className: N.a.imageLink
-					}, A(s, n), n.shouldBlur && !n.isVideoThumbnail && !n.isNsfwBlockingModalEligible && o.a.createElement(p.a, {
+						className: S.a.imageLink
+					}, B(s, n), n.shouldBlur && !n.isVideoThumbnail && !n.isNsfwBlockingModalEligible && o.a.createElement(p.a, {
 						isNSFW: !!n.isNSFW,
 						isSpoiler: !!n.isSpoiler
-					})), n.isListing && !n.showFull && n.height > E.j && Object(E.L)(n.height, n.width) && o.a.createElement("div", {
-						className: N.a.seeMore
+					})), n.isListing && !n.showFull && n.height > _.j && Object(_.L)(n.height, n.width) && o.a.createElement("div", {
+						className: S.a.seeMore
 					}, r.fbt._("see full image", null, {
 						hk: "1Qygw5"
 					})), n.isVideoThumbnail && o.a.createElement(b.a, {
@@ -14635,18 +14637,18 @@
 					openPost: t => {
 						t.isFrontpage && e(Object(a.a)({
 							lastLoadedEnv: "server"
-						})), e(d.L(t))
+						})), e(d.K(t))
 					},
 					fireAdPixelsOfType: (t, n) => {
-						e(d.z(t, n))
+						e(d.y(t, n))
 					},
 					trackOnPostEnteredViewport: (t, n, r, s) => {
-						e(d.O(t, r, s))
+						e(d.N(t, r, s))
 					},
 					trackOnPostExitedViewport: (t, n, r, s) => {
-						e(d.P(t, r, s))
+						e(d.O(t, r, s))
 					},
-					showModalOnScroll: () => e(d.cb()),
+					showModalOnScroll: () => e(d.bb()),
 					surveyTriggerScrollCounted: () => e(Object(u.m)())
 				}),
 				S = e => Object(b.b)({
@@ -14754,10 +14756,10 @@
 						}))
 					},
 					handleVote: t => {
-						const r = t === c.a.upvoted ? Object(o.kb)(n) : Object(o.w)(n);
+						const r = t === c.a.upvoted ? Object(o.jb)(n) : Object(o.v)(n);
 						e(r)
 					},
-					onIgnoreReports: () => e(Object(o.gb)(n)),
+					onIgnoreReports: () => e(Object(o.fb)(n)),
 					onOpenReportsDropdown: t => e(Object(a.h)({
 						tooltipId: t
 					}))
@@ -15029,9 +15031,9 @@
 		"./src/reddit/controls/OutboundLink/index.tsx": function(e, t, n) {
 			"use strict";
 			n.d(t, "a", (function() {
-				return S
+				return N
 			})), n.d(t, "c", (function() {
-				return k
+				return S
 			}));
 			var r = n("./node_modules/lodash/omit.js"),
 				s = n.n(r),
@@ -15050,15 +15052,14 @@
 				h = n("./src/reddit/actions/post.ts"),
 				f = n("./src/reddit/constants/adEvents.ts"),
 				g = n("./src/reddit/helpers/getVendorMetadata.ts"),
-				x = n("./src/reddit/helpers/pixels.ts"),
-				v = n("./src/reddit/helpers/trackers/ads.ts"),
-				E = n("./src/reddit/hooks/useOutboundClickTracking.ts"),
-				_ = n("./src/reddit/selectors/posts.ts"),
-				O = n("./src/reddit/selectors/telemetry.ts"),
-				y = n("./src/reddit/selectors/user.ts");
+				x = n("./src/reddit/helpers/trackers/ads.ts"),
+				v = n("./src/reddit/hooks/useOutboundClickTracking.ts"),
+				E = n("./src/reddit/selectors/posts.ts"),
+				_ = n("./src/reddit/selectors/telemetry.ts"),
+				O = n("./src/reddit/selectors/user.ts");
 
-			function j() {
-				return (j = Object.assign || function(e) {
+			function y() {
+				return (y = Object.assign || function(e) {
 					for (var t = 1; t < arguments.length; t++) {
 						var n = arguments[t];
 						for (var r in n) Object.prototype.hasOwnProperty.call(n, r) && (e[r] = n[r])
@@ -15066,36 +15067,23 @@
 					return e
 				}).apply(this, arguments)
 			}
-			const C = Object(l.a)(y.a, y.k, (e, t) => {
+			const j = Object(l.a)(O.a, O.k, (e, t) => {
 					let {
 						isSponsored: n,
 						postId: r
 					} = t;
-					return n && r ? Object(_.b)(e, r) : null
-				}, _.G, O.d, (e, t, n, r, s) => ({
+					return n && r ? Object(E.b)(e, r) : null
+				}, E.G, _.d, (e, t, n, r, s) => ({
 					allowClickTracking: e,
 					basePixelMetadata: n,
 					userId: t ? Object(b.a)(t.id) : null,
 					post: r,
 					pageType: s.pageType
 				})),
-				I = Object(d.b)(C, e => ({
-					fireAdPixelsOfType: (t, n) => e(Object(h.z)(t, n)),
-					recordClick: (t, n, r) => {
-						const s = t.events.filter(e => {
-							let {
-								type: t,
-								url: n
-							} = e;
-							return t === f.a.Click && Object(x.b)(n)
-						});
-						Object(x.c)(s), e(Object(h.p)(String(n), {
-							postId: t.id,
-							vendorMetadata: r
-						}))
-					}
+				C = Object(d.b)(j, e => ({
+					fireAdPixelsOfType: (t, n) => e(Object(h.y)(t, n))
 				})),
-				N = (e, t, n, r) => {
+				I = (e, t, n, r) => {
 					const s = t.outboundUrlExpiration && t.outboundUrlExpiration > Date.now();
 					r && t.outboundUrl && s && (e.href = m(t.outboundUrl, n), e.href = function(e) {
 						return Object(u.a)(e, {
@@ -15103,7 +15091,7 @@
 						})
 					}(e.href))
 				},
-				S = (e, t, n) => {
+				N = (e, t, n) => {
 					let r, s = null;
 					if (e && t && /^(http|https):\/\/([a-z]+\.)?reddit.com/.test(n)) {
 						s = Object(g.a)(e, t, f.a.Click);
@@ -15124,20 +15112,20 @@
 						metadata: s
 					}
 				},
-				k = (e, t, n) => {
-					const r = S(t, n, e.href);
+				S = (e, t, n) => {
+					const r = N(t, n, e.href);
 					return e.href = r.url, r.metadata
 				},
-				w = e => {
+				k = e => {
 					let {
 						isSponsored: t,
 						source: n
 					} = e;
 					return !!(t && (null == n ? void 0 : n.outboundUrl))
 				},
-				P = I(e => {
+				w = C(e => {
 					const t = Object(a.useRef)(null),
-						n = Object(E.a)(),
+						n = Object(v.a)(),
 						{
 							allowClickTracking: r,
 							basePixelMetadata: o,
@@ -15148,44 +15136,43 @@
 							pageType: m,
 							post: b,
 							postId: h,
-							recordClick: g,
-							source: x,
-							sourceElement: _,
-							userId: O
+							source: g,
+							sourceElement: E,
+							userId: _
 						} = e;
-					let y = s()(e, ["allowClickTracking", "basePixelMetadata", "fireAdPixelsOfType", "isSponsored", "postId", "post", "recordClick", "commentId", "source", "sourceElement", "userId", "pageType"]);
-					const C = x && x.outboundUrl && u ? x.outboundUrl : l;
-					return y = {
-						...y,
-						href: C,
+					let O = s()(e, ["allowClickTracking", "basePixelMetadata", "fireAdPixelsOfType", "isSponsored", "postId", "post", "commentId", "source", "sourceElement", "userId", "pageType"]);
+					const j = g && g.outboundUrl && u ? g.outboundUrl : l;
+					return O = {
+						...O,
+						href: j,
 						rel: u ? p.b : p.a,
 						target: p.d.BLANK
-					}, !x || (e => {
+					}, !g || (e => {
 						const {
 							outboundUrlCreated: t,
 							outboundUrlReceived: n
 						} = e;
 						return !(!t || !n) && (t > n + 3e5 || t < n - 36e5)
-					})(x) ? c.a.createElement("a", j({}, y, {
-						onClick: () => n(l, _, i, h)
-					})) : c.a.createElement("a", j({}, y, {
+					})(g) ? c.a.createElement("a", y({}, O, {
+						onClick: () => n(l, E, i, h)
+					})) : c.a.createElement("a", y({}, O, {
 						onMouseDown: n => {
-							if (!w(e)) return !(1 !== n.button && 2 !== n.button && !n.ctrlKey) || void N(n.currentTarget, x, O, r);
-							t.current = k(n.currentTarget, h, o)
+							if (!k(e)) return !(1 !== n.button && 2 !== n.button && !n.ctrlKey) || void I(n.currentTarget, g, _, r);
+							t.current = S(n.currentTarget, h, o)
 						},
 						onClick: () => {
-							b && (w(e) && (g(b, f.a.Click, t.current), Object(v.a)(b, m)), d(b, f.a.Click), n(l, _, i, h))
+							b && (k(e) && Object(x.a)(b, m), d(b, f.a.Click), n(l, E, i, h))
 						},
 						onMouseLeave: e => {
 							u || ((e, t) => {
 								e.href = t
-							})(e.currentTarget, C)
+							})(e.currentTarget, j)
 						},
-						onTouchStart: e => N(e.currentTarget, x, O, r),
+						onTouchStart: e => I(e.currentTarget, g, _, r),
 						"data-testid": "outbound-link"
 					}))
 				});
-			t.b = P
+			t.b = w
 		},
 		"./src/reddit/controls/Search/RelatedSubredditMetaData.tsx": function(e, t, n) {
 			"use strict";
@@ -22384,4 +22371,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Subreddit.0d38dcf3ec995f82938c.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Subreddit.8cbd0c362baa92ec848d.js.map

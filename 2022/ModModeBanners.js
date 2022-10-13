@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModModeBanners.60d53d947065c0dd657a.js
-// Retrieved at 10/4/2022, 1:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModModeBanners.9561d5cafdf10e4202b5.js
+// Retrieved at 10/13/2022, 12:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModModeBanners"], {
 		"./src/reddit/actions/comment/moderation.ts": function(e, t, s) {
@@ -492,7 +492,7 @@
 					tooltipId: E(t.reason, t.reportedThingId)
 				})),
 				toggleSnooze: s => {
-					Object(R.a)(t.reportedThingId) ? e(Object(c.h)(t.reportedThingId, t.reason, s)) : e(Object(l.hb)(t.reportedThingId, t.reason, s))
+					Object(R.a)(t.reportedThingId) ? e(Object(c.h)(t.reportedThingId, t.reason, s)) : e(Object(l.gb)(t.reportedThingId, t.reason, s))
 				}
 			})), T = Object(p.a)(b.a);
 			class M extends n.a.Component {
@@ -688,4 +688,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModModeBanners.60d53d947065c0dd657a.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModModeBanners.9561d5cafdf10e4202b5.js.map

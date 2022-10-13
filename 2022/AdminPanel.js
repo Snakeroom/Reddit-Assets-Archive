@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/AdminPanel.7aa3cd74cd4d72f13dab.js
-// Retrieved at 10/13/2022, 9:40:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/AdminPanel.cd86a81d0f4de6ca4bfa.js
+// Retrieved at 10/13/2022, 12:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["AdminPanel"], {
 		"./src/devPlatform/components/AdminPanel/Utilities/DevPlatformConfig/DevPlatformConfigLoader.tsx": function(e, t, n) {
@@ -938,7 +938,7 @@
 				}
 			}
 			var vt = Object(p.b)(ht, e => ({
-					linkCopied: t => e(Me.D(t)),
+					linkCopied: t => e(Me.C(t)),
 					onSetExperimentOverride: (t, n) => e(Fe.c({
 						experimentName: t,
 						override: n
@@ -2010,4 +2010,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/AdminPanel.7aa3cd74cd4d72f13dab.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/AdminPanel.cd86a81d0f4de6ca4bfa.js.map

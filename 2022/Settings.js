@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Settings.249c8416abbff689c26b.js
-// Retrieved at 10/13/2022, 9:40:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Settings.2ccdc9f03fd3a19b8c4c.js
+// Retrieved at 10/13/2022, 12:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Settings"], {
 		"./node_modules/moment/locale sync recursive ^\\.\\/.*$": function(e, t, n) {
@@ -1566,7 +1566,7 @@
 							if (!n.ok) throw new Error("Got not ok response on free award offer claim");
 							await e(k({
 								awards: n.awards
-							})), e(Object(d.B)())
+							})), e(Object(d.A)())
 						}
 					} catch (p) {
 						Object(r.b)() || console.error(p), e(Object(c.f)({
@@ -4898,7 +4898,7 @@
 				const C = Object(r.useCallback)(() => _(Object(m.h)(t ? "user_hovercard" : "profile_overview", n)), [t, _, n]);
 				return a.a.createElement(u.t, {
 					onClick: () => {
-						i ? (_(m.i), x && k === b.a.notVoted && y(Object(c.kb)(x))) : C();
+						i ? (_(m.i), x && k === b.a.notVoted && y(Object(c.jb)(x))) : C();
 						const e = i ? "postify" : "copy";
 						y(Object(l.b)({
 							clickSource: j,
@@ -15149,4 +15149,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Settings.249c8416abbff689c26b.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Settings.2ccdc9f03fd3a19b8c4c.js.map

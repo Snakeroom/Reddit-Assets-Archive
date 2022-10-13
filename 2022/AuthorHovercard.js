@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/AuthorHovercard.3eaedcf32ead0fecd841.js
-// Retrieved at 10/13/2022, 9:40:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/AuthorHovercard.9de777ea38e904c95633.js
+// Retrieved at 10/13/2022, 12:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["AuthorHovercard"], {
 		"./src/lib/constants/colors.ts": function(e, t, n) {
@@ -4932,7 +4932,7 @@
 				const N = Object(r.useCallback)(() => _(Object(m.h)(t ? "user_hovercard" : "profile_overview", n)), [t, _, n]);
 				return o.a.createElement(u.t, {
 					onClick: () => {
-						i ? (_(m.i), C && O === p.a.notVoted && g(Object(c.kb)(C))) : N();
+						i ? (_(m.i), C && O === p.a.notVoted && g(Object(c.jb)(C))) : N();
 						const e = i ? "postify" : "copy";
 						g(Object(d.b)({
 							clickSource: I,
@@ -6559,4 +6559,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/AuthorHovercard.3eaedcf32ead0fecd841.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/AuthorHovercard.9de777ea38e904c95633.js.map

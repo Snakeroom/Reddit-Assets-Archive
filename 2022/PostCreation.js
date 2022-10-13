@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostCreation.7a0aa2b0750187f75086.js
-// Retrieved at 10/13/2022, 9:40:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostCreation.d541491705cc3e5c9dd6.js
+// Retrieved at 10/13/2022, 12:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostCreation", "ChatMessageInput~MembershipPaywallPage~RichTextEditor", "ContributorRequestButton"], {
 		"./node_modules/autosize/dist/autosize.js": function(e, t, n) {
@@ -1408,7 +1408,7 @@
 							const o = Object(ue.G)(C(), {
 								postId: i
 							});
-							e(Object(m.z)(o, g.a.CommentSubmitted))
+							e(Object(m.y)(o, g.a.CommentSubmitted))
 						} else {
 							if (N.error && N.error.type === r.Pb) {
 								const e = t && s ? s : Object(G.c)(d);
@@ -2582,7 +2582,7 @@
 							const {
 								postId: e
 							} = h, t = r.posts.models[e];
-							t && t.voteState === f.a.notVoted && n(Object(a.kb)(e))
+							t && t.voteState === f.a.notVoted && n(Object(a.jb)(e))
 						}
 					} else n(_({
 						pollId: e,
@@ -3007,7 +3007,7 @@
 					return c
 				}, Q = Object(i.a)(c.l), J = Object(i.a)(c.m), X = Object(i.a)(c.k), Z = e => async (t, n) => {
 					const o = n();
-					if (Object(T.b)(o) || Object(T.c)(o)) return void t(Object(a.bb)(Object(j.b)(e.permalink), e.id));
+					if (Object(T.b)(o) || Object(T.c)(o)) return void t(Object(a.ab)(Object(j.b)(e.permalink), e.id));
 					const s = o.platform.currentPage.locationState;
 					t(!(!s || !s[d.b.IsOverlay]) ? Object(k.a)(e.permalink) : Object(r.b)(Object(j.b)(e.permalink)))
 				}, $ = Object(i.a)(c.i), ee = Object(i.a)(c.j), te = Object(i.a)(c.h), ne = Object(i.a)(c.p), oe = Object(i.a)(c.o), re = Object(i.a)(c.q), se = e => async t => {
@@ -6135,7 +6135,7 @@
 					c = `error-block-${t}`,
 					d = `success-block-${t}`;
 				if (a.ok) {
-					n(Object(p.S)({
+					n(Object(p.R)({
 						[e]: {
 							suggestedSort: t
 						}
@@ -6346,7 +6346,7 @@
 						},
 						onSetSuggestedSort: t => e(C(n, t)),
 						hideTooltip: () => e(Object(d.i)()),
-						setContestMode: t => e(Object(p.X)(t, n)),
+						setContestMode: t => e(Object(p.W)(t, n)),
 						showTooltip: () => e(Object(d.h)({
 							tooltipId: X
 						})),
@@ -12166,7 +12166,7 @@
 					} = e, {
 						isSponsored: o
 					} = t, r = Object(a.d)(), s = Object(x.a)(), c = Object(a.e)(U.b), l = Object(a.e)(U.c), u = e => {
-						!c && !l || t.media && Object(j.H)(t.media) || (e.preventDefault(), r(Object(g.bb)(Object(E.b)(t.permalink), t.id)))
+						!c && !l || t.media && Object(j.H)(t.media) || (e.preventDefault(), r(Object(g.ab)(Object(E.b)(t.permalink), t.id)))
 					};
 					if (e.isCommentsPage && !e.isCommentPermalink && !e.shouldLinkWrap) return i.a.createElement(X, {
 						nowrap: e.nowrap
@@ -12672,7 +12672,7 @@
 				const _ = Object(r.useCallback)(() => C(Object(m.h)(t ? "user_hovercard" : "profile_overview", n)), [t, C, n]);
 				return s.a.createElement(u.t, {
 					onClick: () => {
-						a ? (C(m.i), y && v === h.a.notVoted && x(Object(c.kb)(y))) : _();
+						a ? (C(m.i), y && v === h.a.notVoted && x(Object(c.jb)(y))) : _();
 						const e = a ? "postify" : "copy";
 						x(Object(l.b)({
 							clickSource: O,
@@ -20988,7 +20988,7 @@
 					shouldShowCollectionEditOptions: E.s
 				}),
 				w = Object(a.b)(T, (e, t) => ({
-					copyLink: () => e(Object(u.D)(t.permalink)),
+					copyLink: () => e(Object(u.C)(t.permalink)),
 					onCreatePost: n => {
 						t.shouldShowCreatePost && e(Object(c.b)(n))
 					},
@@ -32533,7 +32533,7 @@
 							r && Q.i(o(), r, n)
 						})
 					},
-					copyLink: t => e(Object(va.D)(t)),
+					copyLink: t => e(Object(va.C)(t)),
 					trackConnectAccountsClick: () => e((e, t) => Q.d(t()))
 				}), (e, t, n) => ({
 					...e,
@@ -36643,4 +36643,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.7a0aa2b0750187f75086.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.d541491705cc3e5c9dd6.js.map

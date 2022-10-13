@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-MediumPost.aa93cc65d1e27c88cf09.js
-// Retrieved at 10/13/2022, 9:40:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-MediumPost.dcbdd63bb08e991f22f2.js
+// Retrieved at 10/13/2022, 12:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-MediumPost"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -1041,7 +1041,7 @@
 							const n = Object(ue.G)(v(), {
 								postId: i
 							});
-							e(Object(m.z)(n, O.a.CommentSubmitted))
+							e(Object(m.y)(n, O.a.CommentSubmitted))
 						} else {
 							if (P.error && P.error.type === o.Pb) {
 								const e = t && r ? r : Object(q.c)(l);
@@ -2424,7 +2424,7 @@
 						m = e[0],
 						p = Object(H.a)(m) ? Y.e.Post : Y.e.Comment,
 						b = p === Y.e.Post ? l.posts.models[m] : l.features.comments.models[m],
-						f = p === Y.e.Post ? A.S : T.j;
+						f = p === Y.e.Post ? A.R : T.j;
 					if (!b || !u) return !1;
 					i(he()), i(f({
 						[m]: {
@@ -2941,7 +2941,7 @@
 					c = `error-block-${t}`,
 					l = `success-block-${t}`;
 				if (a.ok) {
-					s(Object(p.S)({
+					s(Object(p.R)({
 						[e]: {
 							suggestedSort: t
 						}
@@ -3152,7 +3152,7 @@
 						},
 						onSetSuggestedSort: t => e(v(s, t)),
 						hideTooltip: () => e(Object(l.i)()),
-						setContestMode: t => e(Object(p.X)(t, s)),
+						setContestMode: t => e(Object(p.W)(t, s)),
 						showTooltip: () => e(Object(l.h)({
 							tooltipId: Z
 						})),
@@ -4119,7 +4119,7 @@
 						isAvatarPostEnabled: we,
 						isOptionalTextEnabled: Ne,
 						isModQueueDisplayEnabled: Te
-					} = e, Ie = Object(r.d)(), Pe = e => e === Q.a.upvoted ? Ie(Object(d.kb)(he)) : Ie(Object(d.w)(he)), Re = () => Ie(Object(d.gb)(he)), Ae = xe ? void 0 : W, Me = Object(U.a)(me), Le = pe && Me, De = Object(F.a)(me), Fe = Object(B.a)(me), Be = Object(g.a)(fe), Ue = Object(C.c)(fe), Ve = !!(null == K ? void 0 : K.shouldShowLinkedPosts), We = _e, He = !Object(G.a)() && Object(D.a)(fe), qe = z && !Ce && !Ve && !We || we, Ke = qe && !!fe.source && !s, Ge = !(ee && !!i || oe) && !$ && (!z || Ve || We) || ne, ze = (!z || Ve || We) && !fe.isSponsored, Ye = Object(a.t)(fe, le), {
+					} = e, Ie = Object(r.d)(), Pe = e => e === Q.a.upvoted ? Ie(Object(d.jb)(he)) : Ie(Object(d.v)(he)), Re = () => Ie(Object(d.fb)(he)), Ae = xe ? void 0 : W, Me = Object(U.a)(me), Le = pe && Me, De = Object(F.a)(me), Fe = Object(B.a)(me), Be = Object(g.a)(fe), Ue = Object(C.c)(fe), Ve = !!(null == K ? void 0 : K.shouldShowLinkedPosts), We = _e, He = !Object(G.a)() && Object(D.a)(fe), qe = z && !Ce && !Ve && !We || we, Ke = qe && !!fe.source && !s, Ge = !(ee && !!i || oe) && !$ && (!z || Ve || We) || ne, ze = (!z || Ve || We) && !fe.isSponsored, Ye = Object(a.t)(fe, le), {
 						source: Qe
 					} = Ye, Je = !!(J && (null == ke ? void 0 : ke.isNSFW)), Ze = Object(n.useRef)({
 						renderingObjectInfo: fe
@@ -4679,7 +4679,7 @@
 						n = Object(a.d)(),
 						c = Object(r.useCallback)(() => {
 							const e = Object(v.a)(t.id),
-								o = e ? w.gb : S.g,
+								o = e ? w.fb : S.g,
 								r = t.ignoreReports ? "restore_reports" : "ignore_reports",
 								i = e ? Object(g.j)(r, t.id) : Object(g.i)(r, t.id);
 							n(o(t.id)), s(i)
@@ -4817,18 +4817,18 @@
 						}, [D, s, M, t]),
 						se = H ? E.k : pe,
 						ne = Object(r.useCallback)(() => {
-							const e = H ? w.s : S.a;
+							const e = H ? w.r : S.a;
 							B(e(t.id)), D(se(t.id, "approve"))
 						}, [D, B, t, H, se]),
 						oe = Object(r.useCallback)(() => {
-							const e = H ? w.U : S.e;
+							const e = H ? w.T : S.e;
 							B(e(t.id, !1)), t.isRemoved && t.bannedBy === c.m ? D(se(t.id, "confirm_remove")) : D(se(t.id, "remove"))
 						}, [D, B, t, H, se]),
 						re = Object(r.useCallback)(() => {
 							B(Object(T.fetchReasonsAndOpenModal)(H ? t.belongsTo.id : t.subredditId, [t.id]))
 						}, [t, H, B]),
 						ie = Object(r.useCallback)(() => {
-							const e = H ? w.E : S.c;
+							const e = H ? w.D : S.c;
 							B(e(t.id)), D(se(t.id, t.isLocked ? "unlock" : "lock"))
 						}, [se, D, B, t, H]),
 						ae = Object(r.useCallback)(() => {
@@ -4846,19 +4846,19 @@
 							}))
 						}, [B, H, t]),
 						de = Object(r.useCallback)(() => {
-							H && (B(Object(w.ib)(t.id)), D(Object(g.l)(t.isStickied ? "unsticky" : "sticky", t.id)))
+							H && (B(Object(w.hb)(t.id)), D(Object(g.l)(t.isStickied ? "unsticky" : "sticky", t.id)))
 						}, [D, B, t, H]),
 						le = Object(r.useCallback)(() => {
-							H && (B(Object(w.J)(t.id)), D(Object(g.l)(t.isOriginalContent ? "unmark_original_content" : "mark_original_content", t.id)))
+							H && (B(Object(w.I)(t.id)), D(Object(g.l)(t.isOriginalContent ? "unmark_original_content" : "mark_original_content", t.id)))
 						}, [D, B, t, H]),
 						ue = Object(r.useCallback)(() => {
-							H && (B(Object(w.G)(t.id)), Object(g.l)(t.isNSFW ? "unmark_nsfw" : "mark_nsfw", t.id))
+							H && (B(Object(w.F)(t.id)), Object(g.l)(t.isNSFW ? "unmark_nsfw" : "mark_nsfw", t.id))
 						}, [B, t, H]),
 						be = Object(r.useCallback)(() => {
-							H && (B(Object(y.i)(p.a.CROWD_CONTROL)), B(Object(w.u)(t.id)))
+							H && (B(Object(y.i)(p.a.CROWD_CONTROL)), B(Object(w.t)(t.id)))
 						}, [B, t, H]),
 						fe = Object(r.useCallback)(() => {
-							H && (B(Object(w.D)(t.permalink)), te("copy"))
+							H && (B(Object(w.C)(t.permalink)), te("copy"))
 						}, [te, B, t, H]),
 						he = Object(r.useCallback)(async () => {
 							if (!H) return;
@@ -4874,10 +4874,10 @@
 						}, [te, B, t]),
 						xe = Object(r.useCallback)(() => {
 							var e;
-							H && (B(Object(w.fb)(t.id, !t.hidden, !1, !0)), te((null === (e = t) || void 0 === e ? void 0 : e.hidden) ? "unhide" : "hide"))
+							H && (B(Object(w.eb)(t.id, !t.hidden, !1, !0)), te((null === (e = t) || void 0 === e ? void 0 : e.hidden) ? "unhide" : "hide"))
 						}, [te, B, t, H]),
 						ve = Object(r.useCallback)(() => {
-							H && (B(Object(w.U)(t.id, !1)), D(Object(g.l)("spam", t.id)))
+							H && (B(Object(w.T)(t.id, !1)), D(Object(g.l)("spam", t.id)))
 						}, [D, B, t, H]);
 					return i.a.createElement("div", {
 						className: F.a.wrapper,
@@ -5687,7 +5687,7 @@
 					post: s
 				} = t;
 				return {
-					onFollow: () => e(Object(d.A)(s.isSponsored ? s.postId : s.id))
+					onFollow: () => e(Object(d.z)(s.isSponsored ? s.postId : s.id))
 				}
 			})(Object(l.c)(b))
 		},
@@ -5954,7 +5954,7 @@
 					} = e, {
 						isSponsored: n
 					} = t, o = Object(a.d)(), r = Object(_.a)(), c = Object(a.e)(U.b), d = Object(a.e)(U.c), u = e => {
-						!c && !d || t.media && Object(k.H)(t.media) || (e.preventDefault(), o(Object(O.bb)(Object(x.b)(t.permalink), t.id)))
+						!c && !d || t.media && Object(k.H)(t.media) || (e.preventDefault(), o(Object(O.ab)(Object(x.b)(t.permalink), t.id)))
 					};
 					if (e.isCommentsPage && !e.isCommentPermalink && !e.shouldLinkWrap) return i.a.createElement(Z, {
 						nowrap: e.nowrap
@@ -6303,7 +6303,7 @@
 				const j = Object(o.useCallback)(() => v(Object(m.h)(t ? "user_hovercard" : "profile_overview", s)), [t, v, s]);
 				return r.a.createElement(u.t, {
 					onClick: () => {
-						a ? (v(m.i), g && E === b.a.notVoted && _(Object(c.kb)(g))) : j();
+						a ? (v(m.i), g && E === b.a.notVoted && _(Object(c.jb)(g))) : j();
 						const e = a ? "postify" : "copy";
 						_(Object(d.b)({
 							clickSource: C,
@@ -6386,7 +6386,7 @@
 					tooltipId: k(t.reason, t.reportedThingId)
 				})),
 				toggleSnooze: s => {
-					Object(h.a)(t.reportedThingId) ? e(Object(d.h)(t.reportedThingId, t.reason, s)) : e(Object(l.hb)(t.reportedThingId, t.reason, s))
+					Object(h.a)(t.reportedThingId) ? e(Object(d.h)(t.reportedThingId, t.reason, s)) : e(Object(l.gb)(t.reportedThingId, t.reason, s))
 				}
 			})), w = Object(m.a)(b.a);
 			class N extends o.a.Component {
@@ -9440,4 +9440,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-MediumPost.aa93cc65d1e27c88cf09.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-MediumPost.dcbdd63bb08e991f22f2.js.map

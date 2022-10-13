@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfileComments.9f2d33118a55b3bc2707.js
-// Retrieved at 10/13/2022, 9:40:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfileComments.4bb02f60d5cd72198348.js
+// Retrieved at 10/13/2022, 12:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfileComments"], {
 		"./node_modules/linkify-it/index.js": function(e, t, r) {
@@ -1165,7 +1165,7 @@
 				},
 				isNightmodeOn: g.db
 			}), e => ({
-				openPost: t => e(Object(u.L)(t))
+				openPost: t => e(Object(u.K)(t))
 			}));
 			var k = Object(d.a)(x(e => {
 					const {
@@ -1361,7 +1361,7 @@
 					},
 					isNightmodeOn: g.db
 				}), e => ({
-					openPost: t => e(Object(h.L)(t))
+					openPost: t => e(Object(h.K)(t))
 				}));
 			class j extends a.a.Component {
 				render() {
@@ -2279,7 +2279,7 @@
 							isViewSafe: t
 						}))
 					},
-					openPost: t => e(Object(H.L)(t)),
+					openPost: t => e(Object(H.K)(t)),
 					fireAdPixelsOfType: U.a,
 					trackOnPostEnteredViewport: U.a
 				}), (e, t, r) => ({
@@ -2482,4 +2482,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileComments.9f2d33118a55b3bc2707.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileComments.4bb02f60d5cd72198348.js.map

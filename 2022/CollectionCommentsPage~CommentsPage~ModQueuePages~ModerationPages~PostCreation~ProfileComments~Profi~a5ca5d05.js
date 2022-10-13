@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ModQueuePages~ModerationPages~PostCreation~ProfileComments~Profi~a5ca5d05.12ded2f6f980ddc3ee6f.js
-// Retrieved at 10/13/2022, 9:40:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ModQueuePages~ModerationPages~PostCreation~ProfileComments~Profi~a5ca5d05.06c9428b45fd1d609426.js
+// Retrieved at 10/13/2022, 12:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~ModQueuePages~ModerationPages~PostCreation~ProfileComments~Profi~a5ca5d05"], {
 		"./src/lib/unicodeUtils/index.ts": function(e, t, n) {
@@ -174,7 +174,7 @@
 		"./src/reddit/components/Media/ImageBox/index.tsx": function(e, t, n) {
 			"use strict";
 			n.d(t, "b", (function() {
-				return w
+				return T
 			}));
 			var s = n("./node_modules/fbt/lib/FbtPublic.js"),
 				r = n("./node_modules/react/index.js"),
@@ -188,22 +188,23 @@
 				m = n("./src/lib/permalinkToOverlayLocation/index.ts"),
 				p = n("./src/reddit/components/Media/BlurredContent.tsx"),
 				h = n("./src/reddit/components/PlayButton/index.tsx"),
-				b = n("./src/reddit/constants/elementClassNames.ts"),
-				x = n("./src/reddit/controls/OutboundLink/index.tsx"),
-				f = n("./src/reddit/helpers/trackers/ads.ts"),
-				E = n("./src/reddit/hooks/useClickSourceData.ts"),
-				g = n("./src/reddit/hooks/useIntersectionObserver.ts"),
-				v = n("./src/reddit/models/Media/index.ts"),
-				_ = n("./src/reddit/selectors/posts.ts"),
-				j = n("./src/reddit/selectors/telemetry.ts"),
-				O = n("./src/reddit/selectors/user.ts"),
-				y = n("./src/reddit/constants/tracking.ts"),
-				C = n("./src/higherOrderComponents/withAdClickLocation/Locations.ts"),
-				S = n("./src/reddit/components/Media/ImageBox/index.m.less"),
-				k = n.n(S);
+				b = n("./src/reddit/constants/adEvents.ts"),
+				x = n("./src/reddit/constants/elementClassNames.ts"),
+				f = n("./src/reddit/controls/OutboundLink/index.tsx"),
+				E = n("./src/reddit/helpers/trackers/ads.ts"),
+				g = n("./src/reddit/hooks/useClickSourceData.ts"),
+				v = n("./src/reddit/hooks/useIntersectionObserver.ts"),
+				_ = n("./src/reddit/models/Media/index.ts"),
+				j = n("./src/reddit/selectors/posts.ts"),
+				O = n("./src/reddit/selectors/telemetry.ts"),
+				y = n("./src/reddit/selectors/user.ts"),
+				C = n("./src/reddit/constants/tracking.ts"),
+				S = n("./src/higherOrderComponents/withAdClickLocation/Locations.ts"),
+				k = n("./src/reddit/components/Media/ImageBox/index.m.less"),
+				M = n.n(k);
 
-			function M() {
-				return (M = Object.assign || function(e) {
+			function w() {
+				return (w = Object.assign || function(e) {
 					for (var t = 1; t < arguments.length; t++) {
 						var n = arguments[t];
 						for (var s in n) Object.prototype.hasOwnProperty.call(n, s) && (e[s] = n[s])
@@ -211,23 +212,23 @@
 					return e
 				}).apply(this, arguments)
 			}
-			const w = e => e > 2 * v.e,
-				T = e => o.a.createElement("img", {
+			const T = e => e > 2 * _.e,
+				N = e => o.a.createElement("img", {
 					alt: e.altText || s.fbt._("Comment image", null, {
 						hk: "1DiDxV"
 					}),
 					className: Object(d.a)(e.className, {
-						[k.a.renderSmallMedia]: e.renderSmallMedia
+						[M.a.renderSmallMedia]: e.renderSmallMedia
 					}),
 					src: e.src
 				}),
-				N = e => {
-					const t = Object(d.a)(k.a.image, b.g, e.className, {
-							[k.a.mShowCentered]: e.showCentered,
-							[k.a.mShowBlurred]: e.shouldBlur
+				L = e => {
+					const t = Object(d.a)(M.a.image, x.g, e.className, {
+							[M.a.mShowCentered]: e.showCentered,
+							[M.a.mShowBlurred]: e.shouldBlur
 						}),
 						n = {};
-					e.showFull || e.isTall || (n.maxHeight = `${v.j}px`), e.isListing || e.isTall && w(e.height) || (n.maxHeight = `${v.e}px`), e.isExpando && e.maxHeight && (n.maxHeight = `${e.maxHeight}px`), e.isExpando && e.maxWidth && (n.maxWidth = `${e.maxWidth}px`);
+					e.showFull || e.isTall || (n.maxHeight = `${_.j}px`), e.isListing || e.isTall && T(e.height) || (n.maxHeight = `${_.e}px`), e.isExpando && e.maxHeight && (n.maxHeight = `${e.maxHeight}px`), e.isExpando && e.maxWidth && (n.maxWidth = `${e.maxWidth}px`);
 					const i = Object(r.useRef)(null),
 						[a, c] = Object(r.useState)(!1),
 						l = Object(r.useCallback)(e => {
@@ -241,7 +242,7 @@
 						u = Object(r.useRef)({
 							rootMargin: "750px 0px 750px 0px"
 						});
-					Object(g.a)(i, l, u.current);
+					Object(v.a)(i, l, u.current);
 					const {
 						width: m,
 						height: p
@@ -253,13 +254,13 @@
 							(h = p * (240 / m)) < 20 && (h = 20)
 						}
 					else h = Math.min(h, p);
-					const x = Object(r.useRef)({
+					const b = Object(r.useRef)({
 						height: h
 					});
 					return e.renderSmallMedia ? o.a.createElement("div", {
 						ref: i,
-						style: x.current
-					}, a && o.a.createElement(T, M({}, e, {
+						style: b.current
+					}, a && o.a.createElement(N, w({}, e, {
 						className: t
 					}))) : o.a.createElement("img", {
 						alt: e.altText || s.fbt._("Post image", null, {
@@ -270,51 +271,52 @@
 						style: n
 					})
 				},
-				L = e => {
+				I = e => {
 					const t = {};
-					return (!e.showFull && Object(v.L)(e.height, e.width) || e.shouldBlur) && (t.overflow = "hidden"), e.showFull || (t.maxHeight = `${v.j}px`, e.shouldBlur && (t.maxWidth = Object(v.L)(e.height, e.width) ? `${v.z}px` : `${e.width}px`)), e.showCentered && (t.margin = "0 auto"), e.isExpando && e.maxHeight && (t.maxHeight = `${e.maxHeight}px`), o.a.createElement("div", {
-						className: Object(d.a)(k.a.container, e.className, {
-							[k.a.alignLeft]: e.alignLeft
+					return (!e.showFull && Object(_.L)(e.height, e.width) || e.shouldBlur) && (t.overflow = "hidden"), e.showFull || (t.maxHeight = `${_.j}px`, e.shouldBlur && (t.maxWidth = Object(_.L)(e.height, e.width) ? `${_.z}px` : `${e.width}px`)), e.showCentered && (t.margin = "0 auto"), e.isExpando && e.maxHeight && (t.maxHeight = `${e.maxHeight}px`), o.a.createElement("div", {
+						className: Object(d.a)(M.a.container, e.className, {
+							[M.a.alignLeft]: e.alignLeft
 						}),
 						style: t
 					}, e.children)
 				},
-				I = Object(i.b)(() => Object(c.a)(_.F, O.jb, (e, t) => {
+				B = Object(i.b)(() => Object(c.a)(j.F, y.jb, (e, t) => {
 					let {
 						isSponsored: n,
 						postId: s
 					} = t;
-					return n && s ? Object(_.b)(e, s) : null
-				}, j.d, _.G, (e, t, n, s, r) => ({
+					return n && s ? Object(j.b)(e, s) : null
+				}, O.d, j.G, (e, t, n, s, r) => ({
 					postPermalink: e,
 					shouldOpenPostInNewTab: t,
 					basePixelMetadata: n,
 					pageType: s.pageType,
 					post: r
 				})));
-			t.a = I(e => {
-				const t = Object(E.a)();
+			t.a = B(e => {
+				const t = Object(g.a)();
 				return e.outboundUrl && !e.shouldBlur ? o.a.createElement("a", {
-					"data-adclicklocation": C.a.MEDIA,
+					"data-testid": "imagebox-outboundurl",
+					"data-adclicklocation": S.a.MEDIA,
 					href: e.outboundUrl,
 					target: "_blank",
 					rel: u.a,
 					onMouseDown: t => {
-						e.source && e.outboundUrl && e.isSponsored && e.basePixelMetadata && Object(x.c)(t.currentTarget, e.postId, e.basePixelMetadata)
+						e.source && e.outboundUrl && e.isSponsored && e.basePixelMetadata && Object(f.c)(t.currentTarget, e.postId, e.basePixelMetadata)
 					},
 					onClick: () => {
-						e.isSponsored && e.post.postId && Object(f.a)(e.post, e.pageType)
+						e.isSponsored && e.post.postId && (e.fireAdPixelsOfType && e.fireAdPixelsOfType(e.post, b.a.Click), Object(E.a)(e.post, e.pageType))
 					}
-				}, R(e)) : e.isListing && e.postPermalink ? o.a.createElement(a.a, {
+				}, P(e)) : e.isListing && e.postPermalink ? o.a.createElement(a.a, {
 					target: e.shouldOpenPostInNewTab ? "_blank" : void 0,
 					to: Object(m.a)(e.postPermalink, void 0, t),
 					onClick: e.onPostMediaClick
-				}, R(e)) : R(e)
+				}, P(e)) : P(e)
 			});
-			const B = (e, t) => o.a.createElement(N, {
+			const R = (e, t) => o.a.createElement(L, {
 					altText: t.altText,
 					className: Object(d.a)(t.imageClassName, {
-						[y.a]: !e
+						[C.a]: !e
 					}),
 					height: t.height,
 					isExpando: !!t.isExpando,
@@ -329,18 +331,18 @@
 					width: t.width,
 					renderSmallMedia: t.renderSmallMedia
 				}),
-				R = e => {
+				P = e => {
 					let {
 						onClick: t,
 						...n
 					} = e;
-					const r = Object(v.L)(n.height, n.width),
-						i = w(n.height) && r;
-					return o.a.createElement(L, M({}, n, {
-						className: `${r?`${y.a} `:""}${n.className||""}`
+					const r = Object(_.L)(n.height, n.width),
+						i = T(n.height) && r;
+					return o.a.createElement(I, w({}, n, {
+						className: `${r?`${C.a} `:""}${n.className||""}`
 					}), n.isListing ? o.a.createElement("div", {
 						className: n.contentImageClassName
-					}, B(r, n)) : o.a.createElement("a", {
+					}, R(r, n)) : o.a.createElement("a", {
 						href: n.originalSource,
 						onClick: t,
 						style: i ? {
@@ -348,12 +350,12 @@
 						} : {},
 						target: "_blank",
 						rel: u.c,
-						className: k.a.imageLink
-					}, B(r, n), n.shouldBlur && !n.isVideoThumbnail && !n.isNsfwBlockingModalEligible && o.a.createElement(p.a, {
+						className: M.a.imageLink
+					}, R(r, n), n.shouldBlur && !n.isVideoThumbnail && !n.isNsfwBlockingModalEligible && o.a.createElement(p.a, {
 						isNSFW: !!n.isNSFW,
 						isSpoiler: !!n.isSpoiler
-					})), n.isListing && !n.showFull && n.height > v.j && Object(v.L)(n.height, n.width) && o.a.createElement("div", {
-						className: k.a.seeMore
+					})), n.isListing && !n.showFull && n.height > _.j && Object(_.L)(n.height, n.width) && o.a.createElement("div", {
+						className: M.a.seeMore
 					}, s.fbt._("see full image", null, {
 						hk: "1Qygw5"
 					})), n.isVideoThumbnail && o.a.createElement(h.a, {
@@ -2307,4 +2309,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ModQueuePages~ModerationPages~PostCreation~ProfileComments~Profi~a5ca5d05.12ded2f6f980ddc3ee6f.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ModQueuePages~ModerationPages~PostCreation~ProfileComments~Profi~a5ca5d05.06c9428b45fd1d609426.js.map
