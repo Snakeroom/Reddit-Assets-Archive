@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Reddit.e65f4fa0f150fd01bc76.js
-// Retrieved at 10/13/2022, 12:30:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Reddit.59812c58df831c269cf0.js
+// Retrieved at 10/13/2022, 1:10:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Reddit"], {
 		"./assets/fonts/BentonSans/font.less": function(e, t, n) {},
@@ -670,7 +670,7 @@
 							const s = Object(ue.G)(O(), {
 								postId: a
 							});
-							e(Object(m.z)(s, f.a.CommentSubmitted))
+							e(Object(m.y)(s, f.a.CommentSubmitted))
 						} else {
 							if (I.error && I.error.type === r.Pb) {
 								const e = t && o ? o : Object(W.c)(d);
@@ -2821,7 +2821,7 @@
 					c = `error-block-${t}`,
 					d = `success-block-${t}`;
 				if (i.ok) {
-					n(Object(p.S)({
+					n(Object(p.R)({
 						[e]: {
 							suggestedSort: t
 						}
@@ -3032,7 +3032,7 @@
 						},
 						onSetSuggestedSort: t => e(O(n, t)),
 						hideTooltip: () => e(Object(d.i)()),
-						setContestMode: t => e(Object(p.X)(t, n)),
+						setContestMode: t => e(Object(p.W)(t, n)),
 						showTooltip: () => e(Object(d.h)({
 							tooltipId: Z
 						})),
@@ -5423,7 +5423,7 @@
 						close: () => {
 							e(Object(m.a)(n, !0))
 						},
-						toggleVote: (t, n) => e(n === S.a.upvoted ? Object(u.kb)(t) : Object(u.w)(t))
+						toggleVote: (t, n) => e(n === S.a.upvoted ? Object(u.jb)(t) : Object(u.v)(t))
 					}
 				}, (e, t, n) => ({
 					...e,
@@ -14344,7 +14344,7 @@
 					onSendSearchClickTypeaheadEvent: je,
 					onSetRecentSearch: fe,
 					onUpdateSearchQuery: ye,
-					fireAdPixelsOfType: (e, t) => M(Object(ce.z)(e, t))
+					fireAdPixelsOfType: (e, t) => M(Object(ce.y)(e, t))
 				}))
 			}
 			var vi = n("./src/reddit/icons/svgs/Snoo/index.tsx"),
@@ -19541,7 +19541,7 @@
 					}), window.history.scrollRestoration = "manual", ov.a.attachStore(l), l.dispatch(Object(le.b)(T.a.PageLoad));
 					const F = Pn.o(null === (u = l.getState().user.account) || void 0 === u ? void 0 : u.id),
 						B = Pn.n(null === (m = l.getState().user.account) || void 0 === m ? void 0 : m.id);
-					l.dispatch(Object(ce.C)({
+					l.dispatch(Object(ce.B)({
 						posts: null != F ? F : []
 					})), l.dispatch(Object(V.m)({
 						comments: null != B ? B : []
@@ -23153,4 +23153,4 @@
 		["./src/reddit/index.tsx", "runtime~Reddit", "vendors~CommentsPage~ModerationPages~Reddit~reddit-components-ClassicPost~reddit-components-CompactP~d737df3e", "vendors~CommentsPage~Governance~ModListing~ModerationPages~Reddit~Subreddit", "vendors~Chat~Governance~Reddit", "vendors~Reddit", "CommentsPage~Governance~Reddit~ReportFlow~Subreddit~reddit-components-BlankPost~reddit-components-Cl~5351df81", "Governance~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compo~bd4baca2", "Reddit~RpanListingUnit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPos~93b34f9d", "ModListing~PostCreation~Reddit~StandalonePostPage~Subreddit", "Governance~ModListing~Reddit~ReportFlow~Subreddit", "Chat~Governance~Reddit", "Governance~Reddit~SubredditForkingCTA", "Governance~ModListing~Reddit", "Governance~Reddit"]
 	]
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit.e65f4fa0f150fd01bc76.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit.59812c58df831c269cf0.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModerationDropdowns.423d055c2138a772f54a.js
-// Retrieved at 10/13/2022, 12:30:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModerationDropdowns.179b57de0905852019fe.js
+// Retrieved at 10/13/2022, 1:10:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModerationDropdowns"], {
 		"./src/devPlatform/components/ContextActions/ContextActionsLoader.tsx": function(e, t, o) {
@@ -610,8 +610,8 @@
 				y = o("./src/devPlatform/components/ContextActions/ContextActionsLoader.tsx"),
 				T = o("./src/devPlatform/constants.ts"),
 				F = o("./src/reddit/components/PostModModeDropdown/DropdownHelpers.m.less"),
-				L = o.n(F);
-			const I = (e, t) => Object(M.b)({
+				I = o.n(F);
+			const L = (e, t) => Object(M.b)({
 					breakpointType: M.a.HideIfVWLarger,
 					flatlistItem: e,
 					postLayout: t
@@ -654,7 +654,7 @@
 						J = !(!V.approvedBy || !Y),
 						X = i ? void 0 : l,
 						$ = Object(D.a)(V),
-						ee = m ? I : R;
+						ee = m ? L : R;
 					return s.a.createElement(S.g, null, n && s.a.createElement(s.a.Fragment, null, !V.isSponsored && s.a.createElement(s.a.Fragment, null, s.a.createElement(S.e, {
 						className: ee(j.a.Approve, X),
 						displayText: J ? k.fbt._("Reapprove", null, {
@@ -712,7 +712,7 @@
 						}),
 						onClick: f
 					}, s.a.createElement(S.b, null)), q && s.a.createElement(S.e, {
-						textClassName: L.a.text,
+						textClassName: I.a.text,
 						onClick: b,
 						displayText: k.fbt._("Change the outcome", null, {
 							hk: "2FH6j9"
@@ -779,30 +779,30 @@
 						post: o
 					} = t;
 					return {
-						onApprovePost: () => e(Object(l.s)(o.id)),
+						onApprovePost: () => e(Object(l.r)(o.id)),
 						onCancelPrediction: () => e(Object(c.c)(o.id)),
 						onChangePredictionOutcome: () => e(Object(c.d)(o.id)),
 						onEditPredictionEnd: () => e(Object(c.e)(o.id)),
-						onDistinguishPost: t => e(Object(l.v)(o.id, t)),
+						onDistinguishPost: t => e(Object(l.u)(o.id, t)),
 						onFlairChanged: (t, n) => e(Object(m.h)({
 							post: o,
 							previewFlair: t,
 							selectedTemplateId: n
 						})),
 						onFlairPost: t => e(Object(d.i)(t)),
-						onLockPost: () => e(Object(l.E)(o.id)),
-						onNsfwPost: () => e(Object(l.G)(o.id)),
-						onOcPost: () => e(Object(l.J)(o.id)),
+						onLockPost: () => e(Object(l.D)(o.id)),
+						onNsfwPost: () => e(Object(l.F)(o.id)),
+						onOcPost: () => e(Object(l.I)(o.id)),
 						onCcPost: () => {
-							e(Object(d.i)(f.a.CROWD_CONTROL)), e(Object(l.u)(o.id))
+							e(Object(d.i)(f.a.CROWD_CONTROL)), e(Object(l.t)(o.id))
 						},
-						onRemovePost: () => e(Object(l.U)(o.id, !1)),
+						onRemovePost: () => e(Object(l.T)(o.id, !1)),
 						onModToMemberShareOpened: () => {
-							e(Object(d.i)(f.a.MOD_TO_MEMBER_SHARE)), e(Object(l.F)(o.id))
+							e(Object(d.i)(f.a.MOD_TO_MEMBER_SHARE)), e(Object(l.E)(o.id))
 						},
-						onSpamPost: () => e(Object(l.U)(o.id, !0)),
-						onSpoilerPost: () => e(Object(l.eb)(o.id)),
-						onStickyPost: () => e(Object(l.ib)(o.id))
+						onSpamPost: () => e(Object(l.T)(o.id, !0)),
+						onSpoilerPost: () => e(Object(l.db)(o.id)),
+						onStickyPost: () => e(Object(l.hb)(o.id))
 					}
 				}),
 				U = Object(p.a)(h.a);
@@ -837,8 +837,8 @@
 					sendEvent: T,
 					tooltipId: F
 				} = e;
-				const L = y.distinguishType === i.J.MODERATOR,
-					I = L ? i.J.NONE : i.J.MODERATOR,
+				const I = y.distinguishType === i.J.MODERATOR,
+					L = I ? i.J.NONE : i.J.MODERATOR,
 					R = Object(u.b)(y.id, c);
 				return s.a.createElement(U, {
 					className: B.a.dropdown,
@@ -848,7 +848,7 @@
 					canEditFlair: t,
 					hasModFullPerms: o,
 					hasModPostPerms: n,
-					isDistinguished: L,
+					isDistinguished: I,
 					isModToMemberShareEnabled: a,
 					isOverlay: c,
 					isPostAuthor: d,
@@ -874,7 +874,7 @@
 						N(), T(Object(_.l)("spam", y.id))
 					},
 					onDistinguishPost: () => {
-						O(I), T(Object(_.l)(L ? "undistinguish" : "distinguish", y.id))
+						O(L), T(Object(_.l)(I ? "undistinguish" : "distinguish", y.id))
 					},
 					onFlairPost: () => {
 						E(R), T(Object(_.l)("post_flair", y.id))
@@ -1240,4 +1240,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationDropdowns.423d055c2138a772f54a.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationDropdowns.179b57de0905852019fe.js.map

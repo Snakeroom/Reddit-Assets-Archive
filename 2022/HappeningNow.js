@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/HappeningNow.396d6e624e20cfa70e59.js
-// Retrieved at 10/13/2022, 12:30:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/HappeningNow.097446ffb1a60ae10a87.js
+// Retrieved at 10/13/2022, 1:10:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["HappeningNow"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -672,7 +672,7 @@
 		"./src/reddit/components/Media/ImageBox/index.tsx": function(e, t, n) {
 			"use strict";
 			n.d(t, "b", (function() {
-				return N
+				return R
 			}));
 			var r = n("./node_modules/fbt/lib/FbtPublic.js"),
 				s = n("./node_modules/react/index.js"),
@@ -686,22 +686,23 @@
 				m = n("./src/lib/permalinkToOverlayLocation/index.ts"),
 				p = n("./src/reddit/components/Media/BlurredContent.tsx"),
 				h = n("./src/reddit/components/PlayButton/index.tsx"),
-				b = n("./src/reddit/constants/elementClassNames.ts"),
-				x = n("./src/reddit/controls/OutboundLink/index.tsx"),
-				f = n("./src/reddit/helpers/trackers/ads.ts"),
-				v = n("./src/reddit/hooks/useClickSourceData.ts"),
-				C = n("./src/reddit/hooks/useIntersectionObserver.ts"),
-				g = n("./src/reddit/models/Media/index.ts"),
-				E = n("./src/reddit/selectors/posts.ts"),
-				w = n("./src/reddit/selectors/telemetry.ts"),
-				_ = n("./src/reddit/selectors/user.ts"),
-				j = n("./src/reddit/constants/tracking.ts"),
-				y = n("./src/higherOrderComponents/withAdClickLocation/Locations.ts"),
-				O = n("./src/reddit/components/Media/ImageBox/index.m.less"),
-				k = n.n(O);
+				b = n("./src/reddit/constants/adEvents.ts"),
+				x = n("./src/reddit/constants/elementClassNames.ts"),
+				f = n("./src/reddit/controls/OutboundLink/index.tsx"),
+				v = n("./src/reddit/helpers/trackers/ads.ts"),
+				C = n("./src/reddit/hooks/useClickSourceData.ts"),
+				g = n("./src/reddit/hooks/useIntersectionObserver.ts"),
+				E = n("./src/reddit/models/Media/index.ts"),
+				w = n("./src/reddit/selectors/posts.ts"),
+				_ = n("./src/reddit/selectors/telemetry.ts"),
+				j = n("./src/reddit/selectors/user.ts"),
+				y = n("./src/reddit/constants/tracking.ts"),
+				O = n("./src/higherOrderComponents/withAdClickLocation/Locations.ts"),
+				k = n("./src/reddit/components/Media/ImageBox/index.m.less"),
+				S = n.n(k);
 
-			function S() {
-				return (S = Object.assign || function(e) {
+			function N() {
+				return (N = Object.assign || function(e) {
 					for (var t = 1; t < arguments.length; t++) {
 						var n = arguments[t];
 						for (var r in n) Object.prototype.hasOwnProperty.call(n, r) && (e[r] = n[r])
@@ -709,23 +710,23 @@
 					return e
 				}).apply(this, arguments)
 			}
-			const N = e => e > 2 * g.e,
-				R = e => o.a.createElement("img", {
+			const R = e => e > 2 * E.e,
+				T = e => o.a.createElement("img", {
 					alt: e.altText || r.fbt._("Comment image", null, {
 						hk: "1DiDxV"
 					}),
 					className: Object(c.a)(e.className, {
-						[k.a.renderSmallMedia]: e.renderSmallMedia
+						[S.a.renderSmallMedia]: e.renderSmallMedia
 					}),
 					src: e.src
 				}),
-				T = e => {
-					const t = Object(c.a)(k.a.image, b.g, e.className, {
-							[k.a.mShowCentered]: e.showCentered,
-							[k.a.mShowBlurred]: e.shouldBlur
+				M = e => {
+					const t = Object(c.a)(S.a.image, x.g, e.className, {
+							[S.a.mShowCentered]: e.showCentered,
+							[S.a.mShowBlurred]: e.shouldBlur
 						}),
 						n = {};
-					e.showFull || e.isTall || (n.maxHeight = `${g.j}px`), e.isListing || e.isTall && N(e.height) || (n.maxHeight = `${g.e}px`), e.isExpando && e.maxHeight && (n.maxHeight = `${e.maxHeight}px`), e.isExpando && e.maxWidth && (n.maxWidth = `${e.maxWidth}px`);
+					e.showFull || e.isTall || (n.maxHeight = `${E.j}px`), e.isListing || e.isTall && R(e.height) || (n.maxHeight = `${E.e}px`), e.isExpando && e.maxHeight && (n.maxHeight = `${e.maxHeight}px`), e.isExpando && e.maxWidth && (n.maxWidth = `${e.maxWidth}px`);
 					const i = Object(s.useRef)(null),
 						[a, d] = Object(s.useState)(!1),
 						l = Object(s.useCallback)(e => {
@@ -739,7 +740,7 @@
 						u = Object(s.useRef)({
 							rootMargin: "750px 0px 750px 0px"
 						});
-					Object(C.a)(i, l, u.current);
+					Object(g.a)(i, l, u.current);
 					const {
 						width: m,
 						height: p
@@ -751,13 +752,13 @@
 							(h = p * (240 / m)) < 20 && (h = 20)
 						}
 					else h = Math.min(h, p);
-					const x = Object(s.useRef)({
+					const b = Object(s.useRef)({
 						height: h
 					});
 					return e.renderSmallMedia ? o.a.createElement("div", {
 						ref: i,
-						style: x.current
-					}, a && o.a.createElement(R, S({}, e, {
+						style: b.current
+					}, a && o.a.createElement(T, N({}, e, {
 						className: t
 					}))) : o.a.createElement("img", {
 						alt: e.altText || r.fbt._("Post image", null, {
@@ -768,51 +769,52 @@
 						style: n
 					})
 				},
-				M = e => {
+				I = e => {
 					const t = {};
-					return (!e.showFull && Object(g.L)(e.height, e.width) || e.shouldBlur) && (t.overflow = "hidden"), e.showFull || (t.maxHeight = `${g.j}px`, e.shouldBlur && (t.maxWidth = Object(g.L)(e.height, e.width) ? `${g.z}px` : `${e.width}px`)), e.showCentered && (t.margin = "0 auto"), e.isExpando && e.maxHeight && (t.maxHeight = `${e.maxHeight}px`), o.a.createElement("div", {
-						className: Object(c.a)(k.a.container, e.className, {
-							[k.a.alignLeft]: e.alignLeft
+					return (!e.showFull && Object(E.L)(e.height, e.width) || e.shouldBlur) && (t.overflow = "hidden"), e.showFull || (t.maxHeight = `${E.j}px`, e.shouldBlur && (t.maxWidth = Object(E.L)(e.height, e.width) ? `${E.z}px` : `${e.width}px`)), e.showCentered && (t.margin = "0 auto"), e.isExpando && e.maxHeight && (t.maxHeight = `${e.maxHeight}px`), o.a.createElement("div", {
+						className: Object(c.a)(S.a.container, e.className, {
+							[S.a.alignLeft]: e.alignLeft
 						}),
 						style: t
 					}, e.children)
 				},
-				I = Object(i.b)(() => Object(d.a)(E.F, _.jb, (e, t) => {
+				L = Object(i.b)(() => Object(d.a)(w.F, j.jb, (e, t) => {
 					let {
 						isSponsored: n,
 						postId: r
 					} = t;
-					return n && r ? Object(E.b)(e, r) : null
-				}, w.d, E.G, (e, t, n, r, s) => ({
+					return n && r ? Object(w.b)(e, r) : null
+				}, _.d, w.G, (e, t, n, r, s) => ({
 					postPermalink: e,
 					shouldOpenPostInNewTab: t,
 					basePixelMetadata: n,
 					pageType: r.pageType,
 					post: s
 				})));
-			t.a = I(e => {
-				const t = Object(v.a)();
+			t.a = L(e => {
+				const t = Object(C.a)();
 				return e.outboundUrl && !e.shouldBlur ? o.a.createElement("a", {
-					"data-adclicklocation": y.a.MEDIA,
+					"data-testid": "imagebox-outboundurl",
+					"data-adclicklocation": O.a.MEDIA,
 					href: e.outboundUrl,
 					target: "_blank",
 					rel: u.a,
 					onMouseDown: t => {
-						e.source && e.outboundUrl && e.isSponsored && e.basePixelMetadata && Object(x.c)(t.currentTarget, e.postId, e.basePixelMetadata)
+						e.source && e.outboundUrl && e.isSponsored && e.basePixelMetadata && Object(f.c)(t.currentTarget, e.postId, e.basePixelMetadata)
 					},
 					onClick: () => {
-						e.isSponsored && e.post.postId && Object(f.a)(e.post, e.pageType)
+						e.isSponsored && e.post.postId && (e.fireAdPixelsOfType && e.fireAdPixelsOfType(e.post, b.a.Click), Object(v.a)(e.post, e.pageType))
 					}
-				}, P(e)) : e.isListing && e.postPermalink ? o.a.createElement(a.a, {
+				}, F(e)) : e.isListing && e.postPermalink ? o.a.createElement(a.a, {
 					target: e.shouldOpenPostInNewTab ? "_blank" : void 0,
 					to: Object(m.a)(e.postPermalink, void 0, t),
 					onClick: e.onPostMediaClick
-				}, P(e)) : P(e)
+				}, F(e)) : F(e)
 			});
-			const L = (e, t) => o.a.createElement(T, {
+			const P = (e, t) => o.a.createElement(M, {
 					altText: t.altText,
 					className: Object(c.a)(t.imageClassName, {
-						[j.a]: !e
+						[y.a]: !e
 					}),
 					height: t.height,
 					isExpando: !!t.isExpando,
@@ -827,18 +829,18 @@
 					width: t.width,
 					renderSmallMedia: t.renderSmallMedia
 				}),
-				P = e => {
+				F = e => {
 					let {
 						onClick: t,
 						...n
 					} = e;
-					const s = Object(g.L)(n.height, n.width),
-						i = N(n.height) && s;
-					return o.a.createElement(M, S({}, n, {
-						className: `${s?`${j.a} `:""}${n.className||""}`
+					const s = Object(E.L)(n.height, n.width),
+						i = R(n.height) && s;
+					return o.a.createElement(I, N({}, n, {
+						className: `${s?`${y.a} `:""}${n.className||""}`
 					}), n.isListing ? o.a.createElement("div", {
 						className: n.contentImageClassName
-					}, L(s, n)) : o.a.createElement("a", {
+					}, P(s, n)) : o.a.createElement("a", {
 						href: n.originalSource,
 						onClick: t,
 						style: i ? {
@@ -846,12 +848,12 @@
 						} : {},
 						target: "_blank",
 						rel: u.c,
-						className: k.a.imageLink
-					}, L(s, n), n.shouldBlur && !n.isVideoThumbnail && !n.isNsfwBlockingModalEligible && o.a.createElement(p.a, {
+						className: S.a.imageLink
+					}, P(s, n), n.shouldBlur && !n.isVideoThumbnail && !n.isNsfwBlockingModalEligible && o.a.createElement(p.a, {
 						isNSFW: !!n.isNSFW,
 						isSpoiler: !!n.isSpoiler
-					})), n.isListing && !n.showFull && n.height > g.j && Object(g.L)(n.height, n.width) && o.a.createElement("div", {
-						className: k.a.seeMore
+					})), n.isListing && !n.showFull && n.height > E.j && Object(E.L)(n.height, n.width) && o.a.createElement("div", {
+						className: S.a.seeMore
 					}, r.fbt._("see full image", null, {
 						hk: "1Qygw5"
 					})), n.isVideoThumbnail && o.a.createElement(h.a, {
@@ -3157,7 +3159,7 @@
 							[Ce.a.voted]: t.voteState === fe.a.upvoted
 						}),
 						onClick: () => {
-							s(Object(he.kb)(t.id))
+							s(Object(he.jb)(t.id))
 						}
 					}, o.a.createElement(xe.a, {
 						name: pe.a.upvote,
@@ -3176,7 +3178,7 @@
 							[Ce.a.voted]: t.voteState === fe.a.downvoted
 						}),
 						onClick: () => {
-							s(Object(he.w)(t.id))
+							s(Object(he.v)(t.id))
 						}
 					}, o.a.createElement(xe.a, {
 						name: pe.a.downvote,
@@ -3376,4 +3378,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/HappeningNow.396d6e624e20cfa70e59.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/HappeningNow.097446ffb1a60ae10a87.js.map

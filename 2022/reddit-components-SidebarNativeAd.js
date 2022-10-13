@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-SidebarNativeAd.7f1fe6dd42b4f54c6a69.js
-// Retrieved at 10/13/2022, 12:30:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-SidebarNativeAd.9743b01e55d3ae245313.js
+// Retrieved at 10/13/2022, 1:10:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-SidebarNativeAd"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -1997,7 +1997,7 @@
 					} = e, {
 						isSponsored: r
 					} = t, o = Object(a.d)(), s = Object(y.a)(), c = Object(a.e)(U.b), d = Object(a.e)(U.c), u = e => {
-						!c && !d || t.media && Object(C.H)(t.media) || (e.preventDefault(), o(Object(v.bb)(Object(g.b)(t.permalink), t.id)))
+						!c && !d || t.media && Object(C.H)(t.media) || (e.preventDefault(), o(Object(v.ab)(Object(g.b)(t.permalink), t.id)))
 					};
 					if (e.isCommentsPage && !e.isCommentPermalink && !e.shouldLinkWrap) return i.a.createElement(Q, {
 						nowrap: e.nowrap
@@ -2213,7 +2213,7 @@
 				const k = Object(o.useCallback)(() => _(Object(m.h)(t ? "user_hovercard" : "profile_overview", n)), [t, _, n]);
 				return s.a.createElement(u.t, {
 					onClick: () => {
-						a ? (_(m.i), O && x === b.a.notVoted && y(Object(c.kb)(O))) : k();
+						a ? (_(m.i), O && x === b.a.notVoted && y(Object(c.jb)(O))) : k();
 						const e = a ? "postify" : "copy";
 						y(Object(d.b)({
 							clickSource: E,
@@ -2476,7 +2476,7 @@
 			}
 			const ee = Object(i.b)(null, (e, t) => ({
 				fireAdPixelsOfType: (t, n) => {
-					e(Object(f.z)(t, n))
+					e(Object(f.y)(t, n))
 				},
 				refreshSidebarPromotedPost: () => {
 					const {
@@ -4638,4 +4638,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-SidebarNativeAd.7f1fe6dd42b4f54c6a69.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-SidebarNativeAd.9743b01e55d3ae245313.js.map

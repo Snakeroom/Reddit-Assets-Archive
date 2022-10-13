@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditTopContent.60640eab064d82a28992.js
-// Retrieved at 10/13/2022, 12:30:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditTopContent.19b6d7a699b8cfc95fb9.js
+// Retrieved at 10/13/2022, 1:10:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditTopContent"], {
 		"./src/lib/getShortenedLink.ts": function(e, t, s) {
@@ -689,7 +689,7 @@
 						})),
 						trackPostClick: (t, s) => e((e, n) => a ? P.p(n(), a, t, s) : null),
 						trackPostSubredditClick: t => e((e, n) => s ? P.r(n(), s, t) : a ? P.r(n(), a, t) : null),
-						showModalOnPostLinkClick: t => e(Object(d.bb)(Object(j.b)(t.permalink), t.id))
+						showModalOnPostLinkClick: t => e(Object(d.ab)(Object(j.b)(t.permalink), t.id))
 					}
 				}),
 				He = Object(v.u)();
@@ -1443,7 +1443,7 @@
 					} = e, {
 						isSponsored: a
 					} = t, n = Object(o.d)(), r = Object(k.a)(), c = Object(o.e)(B.b), l = Object(o.e)(B.c), m = e => {
-						!c && !l || t.media && Object(j.H)(t.media) || (e.preventDefault(), n(Object(g.bb)(Object(f.b)(t.permalink), t.id)))
+						!c && !l || t.media && Object(j.H)(t.media) || (e.preventDefault(), n(Object(g.ab)(Object(f.b)(t.permalink), t.id)))
 					};
 					if (e.isCommentsPage && !e.isCommentPermalink && !e.shouldLinkWrap) return i.a.createElement(X, {
 						nowrap: e.nowrap
@@ -2018,4 +2018,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditTopContent.60640eab064d82a28992.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditTopContent.19b6d7a699b8cfc95fb9.js.map

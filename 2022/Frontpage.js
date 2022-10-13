@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Frontpage.09c9ba426a3246d8d7df.js
-// Retrieved at 10/13/2022, 12:30:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Frontpage.f2f63162792566a15cfc.js
+// Retrieved at 10/13/2022, 1:10:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Frontpage"], {
 		"./node_modules/intersection-observer/intersection-observer.js": function(e, t) {
@@ -2963,7 +2963,7 @@
 				fe = a("./src/lib/lessComponent.tsx");
 			const ve = Object(l.b)(null, (e, t) => ({
 					openLightbox: t => () => e(Object(be.a)(t.permalink)),
-					clearLinks: () => e(Object(le.t)())
+					clearLinks: () => e(Object(le.s)())
 				})),
 				_e = fe.a.button("ClearButton", ge.a);
 			class ye extends o.a.Component {
@@ -5975,18 +5975,18 @@
 					openPost: t => {
 						t.isFrontpage && e(Object(i.a)({
 							lastLoadedEnv: "server"
-						})), e(l.L(t))
+						})), e(l.K(t))
 					},
 					fireAdPixelsOfType: (t, a) => {
-						e(l.z(t, a))
+						e(l.y(t, a))
 					},
 					trackOnPostEnteredViewport: (t, a, s, n) => {
-						e(l.O(t, s, n))
+						e(l.N(t, s, n))
 					},
 					trackOnPostExitedViewport: (t, a, s, n) => {
-						e(l.P(t, s, n))
+						e(l.O(t, s, n))
 					},
-					showModalOnScroll: () => e(l.cb()),
+					showModalOnScroll: () => e(l.bb()),
 					surveyTriggerScrollCounted: () => e(Object(u.m)())
 				}),
 				A = e => Object(b.b)({
@@ -8435,4 +8435,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Frontpage.09c9ba426a3246d8d7df.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Frontpage.f2f63162792566a15cfc.js.map

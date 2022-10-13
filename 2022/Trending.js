@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Trending.1081bd222d5490c38515.js
-// Retrieved at 10/13/2022, 12:30:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Trending.06ec2382dc926ff8b59b.js
+// Retrieved at 10/13/2022, 1:10:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Trending"], {
 		"./src/reddit/actions/search/trending.ts": function(e, t, s) {
@@ -285,7 +285,7 @@
 				}
 			}
 			var O = Object(i.b)(null, e => ({
-					fireAdPixelsOfType: (t, s) => e(Object(m.z)(t, s)),
+					fireAdPixelsOfType: (t, s) => e(Object(m.y)(t, s)),
 					trackPostClick: t => e((e, s) => g.u({
 						state: s(),
 						trendingSearch: t,
@@ -439,10 +439,10 @@
 						}))
 					},
 					handleVote: t => {
-						const r = t === o.a.upvoted ? Object(i.kb)(s) : Object(i.w)(s);
+						const r = t === o.a.upvoted ? Object(i.jb)(s) : Object(i.v)(s);
 						e(r)
 					},
-					onIgnoreReports: () => e(Object(i.gb)(s)),
+					onIgnoreReports: () => e(Object(i.fb)(s)),
 					onOpenReportsDropdown: t => e(Object(d.h)({
 						tooltipId: t
 					}))
@@ -469,4 +469,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Trending.1081bd222d5490c38515.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Trending.06ec2382dc926ff8b59b.js.map
