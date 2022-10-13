@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage.171d1289f4b7f0f1adce.js
-// Retrieved at 10/13/2022, 9:40:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage.b13f114ab671d1475a3b.js
+// Retrieved at 10/13/2022, 9:50:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage", "AchievementsActions"], {
 		"./node_modules/linkify-it/index.js": function(e, t, s) {
@@ -1683,7 +1683,7 @@
 					let G, Y, J, Z;
 					if ([G, Y, J] = await Promise.all([z, V, K]), r(Object(E.n)(G.status)), ut(J) && "SubredditPost" === (null === (p = J.body.data.postInfoById) || void 0 === p ? void 0 : p.__typename)) {
 						const e = J.body.data.postInfoById.subreddit.name;
-						Object(ae.c)(a(), r, e)
+						if (Object(ae.c)(a(), r, e)) return
 					}
 					if (G.ok) {
 						const t = Object.keys(G.body.posts).filter(e => !!G.body.posts[e].isMeta),
@@ -13519,4 +13519,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage.171d1289f4b7f0f1adce.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage.b13f114ab671d1475a3b.js.map

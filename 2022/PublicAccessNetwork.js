@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PublicAccessNetwork.afe52885c1b43a1d4f35.js
-// Retrieved at 10/13/2022, 9:40:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PublicAccessNetwork.fa1937023aab2cf37a2a.js
+// Retrieved at 10/13/2022, 9:50:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PublicAccessNetwork"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -1657,7 +1657,7 @@
 					let J, Q, z, Y;
 					if ([J, Q, z] = await Promise.all([H, q, W]), n(Object(y.n)(J.status)), ut(z) && "SubredditPost" === (null === (p = z.body.data.postInfoById) || void 0 === p ? void 0 : p.__typename)) {
 						const e = z.body.data.postInfoById.subreddit.name;
-						Object(ie.c)(i(), n, e)
+						if (Object(ie.c)(i(), n, e)) return
 					}
 					if (J.ok) {
 						const t = Object.keys(J.body.posts).filter(e => !!J.body.posts[e].isMeta),
@@ -8011,4 +8011,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PublicAccessNetwork.afe52885c1b43a1d4f35.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PublicAccessNetwork.fa1937023aab2cf37a2a.js.map

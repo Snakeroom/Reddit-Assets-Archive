@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/runtime~Reddit.6e41cd92e8db63da76f6.js
-// Retrieved at 10/13/2022, 9:40:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/runtime~Reddit.c9bc9b6738efe544503c.js
+// Retrieved at 10/13/2022, 9:50:05 AM by Reddit Dataminer v1.0.0
 ! function(e) {
 	function o(o) {
 		for (var a, n, r = o[0], s = o[1], c = o[2], l = 0, P = []; l < r.length; l++) n = r[l], Object.prototype.hasOwnProperty.call(d, n) && d[n] && P.push(d[n][0]), d[n] = 0;
@@ -1425,7 +1425,7 @@
 						"CollectionCommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~SearchResults": "8dfda7d37b959ea5b29f",
 						"CollectionCommentsPage~ModProgressModule~NewCommunityProgress": "95a21e7698a698b8de83",
 						"CollectionCommentsPage~SearchResults": "a75bc07a60fc8bd077cf",
-						CollectionCommentsPage: "171d1289f4b7f0f1adce",
+						CollectionCommentsPage: "b13f114ab671d1475a3b",
 						"ProfileComments~ProfileOverview~ProfilePrivate": "62e5199263d2646fb2da",
 						ProfilePrivate: "8e489cbee60a7bea42f1",
 						"CountryPage~Frontpage~ModListing~Multireddit~ProfileComments~ProfileOverview~ProfilePosts~Subreddit": "7a01edfa892432f2d46b",
@@ -1563,7 +1563,7 @@
 						ModListing: "4505302842d0aaf7e5be",
 						"vendors~PostCreation~Subreddit": "c6c96fbaf04e2c667eb2",
 						Subreddit: "0d38dcf3ec995f82938c",
-						CommentsPage: "0b23138f66eb612e5d2b",
+						CommentsPage: "4969c33e31a3ca6536ae",
 						"vendors~CryptoHarbergerTaxManageModal~HarbergerTaxManageModal~ModerationPages~PostCreation~Settings~~f8934a85": "fbf6b3871488094312c2",
 						CryptoHarbergerTaxManageModal: "7f1d18091972e1e07aca",
 						HarbergerTaxManageModal: "c1282819479fb98fc0ce",
@@ -1579,7 +1579,7 @@
 						ImportTheme: "ffa092f19a1ee16c7439",
 						"vendors~LiveVideoPlayer~PublicAccessNetwork~RpanListingUnit": "b1b748750a6395dcc18f",
 						"LiveVideoPlayer~PublicAccessNetwork~RpanListingUnit": "b976281ae7aac0f1f945",
-						PublicAccessNetwork: "afe52885c1b43a1d4f35",
+						PublicAccessNetwork: "fa1937023aab2cf37a2a",
 						"vendors~xml2js": "8c40daee6c2bccb14296",
 						webvitals: "f626f135e0d2366368b7",
 						SignupUpsell: "5d269cc1a36cdfcfeb62",
@@ -1807,4 +1807,4 @@
 	var m = c;
 	t()
 }([]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/runtime~Reddit.6e41cd92e8db63da76f6.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/runtime~Reddit.c9bc9b6738efe544503c.js.map

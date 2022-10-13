@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.954d45ed57139bccc0fb.js
-// Retrieved at 10/13/2022, 9:40:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.44869bb4c7869d79953a.js
+// Retrieved at 10/13/2022, 9:50:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Chat~Governance~Reddit"], {
 		"./assets/fonts/IBMPlexSans/font.less": function(e, t, i) {},
@@ -3566,11 +3566,11 @@
 				apiPassThroughHeaders: Object(r.e)({}.API_PASS_THROUGH_HEADERS || ""),
 				appName: {}.APP_NAME || "desktop2x",
 				assetPath: "https://www.redditstatic.com/desktop2x",
-				buildNumber: Object(r.c)("175327"),
+				buildNumber: Object(r.c)("175328"),
 				chatHelpUrl: {}.CHAT_HELP_URL || "https://reddit.zendesk.com/hc/en-us/sections/360008805652-Chat",
 				hlsVersion: "hls 0.12.4",
 				dashVersion: "dash 4.4.0",
-				buildTimestamp: Object(r.b)("1665666393"),
+				buildTimestamp: Object(r.b)("1665666780"),
 				cookieDomain: ".reddit.com",
 				giphyApiKey: "k2kwyMA6VeyHM6ZRT96OXDGaersnx73Z",
 				mediaUrl: "https://www.redditmedia.com",
@@ -6249,14 +6249,14 @@
 					}))
 				},
 				Y = (e, t, i) => {
-					console.log("%cStarting Raven %crelease %ce98f2b585d572474a3f2d7fcf93b0a7dbda6ca10-production" + ` %cpublic url %c${y.a.sentryClientPublicURL}`, "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
+					console.log("%cStarting Raven %crelease %c06559b65b70352937130e6de15814a59531c21ad-production" + ` %cpublic url %c${y.a.sentryClientPublicURL}`, "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
 					let n = [];
 					n = [new RegExp(`^${y.a.assetPath}`, "i")];
 					o.e({
 						attachStacktrace: !0,
 						dsn: y.a.sentryClientPublicURL,
 						whitelistUrls: n,
-						release: "e98f2b585d572474a3f2d7fcf93b0a7dbda6ca10-production",
+						release: "06559b65b70352937130e6de15814a59531c21ad-production",
 						environment: "production",
 						ignoreErrors: ["$ is not defined"],
 						integrations: [...Object(L.d)(), new d.Integrations.Breadcrumbs({
@@ -6792,7 +6792,7 @@
 							settings: r,
 							statusCode: s,
 							type: o,
-							releaseClient: "e98f2b585d572474a3f2d7fcf93b0a7dbda6ca10-production",
+							releaseClient: "06559b65b70352937130e6de15814a59531c21ad-production",
 							appName: t.statsAppName,
 							error: n ? JSON.parse(Object(l.a)(n)) : void 0
 						},
@@ -22178,9 +22178,9 @@
 			})), i.d(t, "h", (function() {
 				return O
 			})), i.d(t, "c", (function() {
-				return I
-			})), i.d(t, "b", (function() {
 				return R
+			})), i.d(t, "b", (function() {
+				return C
 			}));
 			var n = i("./node_modules/react-router-redux/es/index.js"),
 				r = i("./node_modules/node-libs-browser/node_modules/url/url.js"),
@@ -22319,38 +22319,42 @@
 					return d && b(e, t, o, r), d
 				};
 
-			function I(e, t, i) {
-				var n, r;
-				const s = null === (r = null === (n = e.platform.currentPage) || void 0 === n ? void 0 : n.routeMatch) || void 0 === r ? void 0 : r.match;
-				if (Object(h.d)(s)) {
-					const {
-						params: n,
-						queryParams: r,
-						url: o
-					} = s;
-					if (n.subredditName !== i) {
-						n.subredditName = i;
-						const s = Object(f.a)(h.a, n);
-						g(e, t, o, s, r || {})
-					}
+			function I(e, t, i, n, r) {
+				const {
+					params: s,
+					queryParams: o,
+					url: d
+				} = i;
+				if (s.subredditName !== n) {
+					s.subredditName = n;
+					const i = Object(f.a)(r, s);
+					g(e, t, d, i, o)
 				}
 			}
 
 			function R(e, t, i) {
 				var n, r;
 				const s = null === (r = null === (n = e.platform.currentPage) || void 0 === n ? void 0 : n.routeMatch) || void 0 === r ? void 0 : r.match;
-				if (Object(h.c)(s)) {
-					const {
-						url: n,
-						params: r,
-						queryParams: o
-					} = s;
-					if ("subreddit" === i) {
-						r.routePrefix = "r";
-						const i = Object(f.a)(h.a, r);
-						g(e, t, n, i, o)
-					}
+				return Object(h.f)(s) ? (I(e, t, s, i, h.a), !0) : !!Object(h.g)(s) && (I(e, t, s, i, h.b), !0)
+			}
+
+			function F(e, t, i, n, r) {
+				const {
+					url: s,
+					params: o,
+					queryParams: d
+				} = i;
+				if ("subreddit" === n) {
+					o.routePrefix = "r";
+					const i = Object(f.a)(r, o);
+					g(e, t, s, i, d)
 				}
+			}
+
+			function C(e, t, i) {
+				var n, r;
+				const s = null === (r = null === (n = e.platform.currentPage) || void 0 === n ? void 0 : n.routeMatch) || void 0 === r ? void 0 : r.match;
+				Object(h.d)(s) ? F(e, t, s, i, h.a) : Object(h.e)(s) && F(e, t, s, i, h.b)
 			}
 		},
 		"./src/reddit/helpers/chooseVariant/index.ts": function(e, t, i) {
@@ -36066,12 +36070,18 @@
 		},
 		"./src/reddit/routes/commentsPage/index.ts": function(e, t, i) {
 			"use strict";
-			i.d(t, "d", (function() {
+			i.d(t, "g", (function() {
 				return l
-			})), i.d(t, "c", (function() {
+			})), i.d(t, "f", (function() {
 				return u
-			})), i.d(t, "a", (function() {
+			})), i.d(t, "d", (function() {
 				return c
+			})), i.d(t, "e", (function() {
+				return _
+			})), i.d(t, "a", (function() {
+				return m
+			})), i.d(t, "b", (function() {
+				return p
 			}));
 			var n = i("./node_modules/@loadable/component/dist/loadable.esm.js"),
 				r = i("./src/lib/constants/index.ts"),
@@ -36100,23 +36110,31 @@
 			});
 
 			function l(e) {
-				return Object(d.b)(e, c)
+				return Object(d.b)(e, p)
 			}
 
 			function u(e) {
-				return Object(d.b)(e, b)
+				return Object(d.b)(e, m)
 			}
-			const c = "/:routePrefix(r)/:subredditName/comments/:partialPostId/:urlSafePostTitle/:partialCommentId",
-				_ = "/:routePrefix(r)/:subredditName/comments/:partialPostId/:urlSafePostTitle?",
-				m = "/comments/:partialPostId/:urlSafePostTitle/:partialCommentId",
-				p = "/comments/:partialPostId/:urlSafePostTitle?";
-			let h = [c, _, m, p];
-			h = Object(s.c)(h);
-			const f = ["/:routePrefix(r)/:subredditName/duplicates/:partialPostId/:urlSafePostTitle?", "/:routePrefix(user)/:subredditName/duplicates/:partialPostId/:urlSafePostTitle?", "/duplicates/:partialPostId/:urlSafePostTitle?"],
-				b = "/:routePrefix(user)/:subredditName/comments/:partialPostId/:urlSafePostTitle/:partialCommentId",
-				g = "/:routePrefix(user)/:subredditName/comments/:partialPostId/:urlSafePostTitle?",
-				v = [b, g],
-				w = (e, t) => ({
+
+			function c(e) {
+				return Object(d.b)(e, v)
+			}
+
+			function _(e) {
+				return Object(d.b)(e, w)
+			}
+			const m = "/:routePrefix(r)/:subredditName/comments/:partialPostId/:urlSafePostTitle/:partialCommentId",
+				p = "/:routePrefix(r)/:subredditName/comments/:partialPostId/:urlSafePostTitle?",
+				h = "/comments/:partialPostId/:urlSafePostTitle/:partialCommentId",
+				f = "/comments/:partialPostId/:urlSafePostTitle?";
+			let b = [m, p, h, f];
+			b = Object(s.c)(b);
+			const g = ["/:routePrefix(r)/:subredditName/duplicates/:partialPostId/:urlSafePostTitle?", "/:routePrefix(user)/:subredditName/duplicates/:partialPostId/:urlSafePostTitle?", "/duplicates/:partialPostId/:urlSafePostTitle?"],
+				v = "/:routePrefix(user)/:subredditName/comments/:partialPostId/:urlSafePostTitle/:partialCommentId",
+				w = "/:routePrefix(user)/:subredditName/comments/:partialPostId/:urlSafePostTitle?",
+				y = [v, w],
+				E = (e, t) => ({
 					action: Object(o.a)(() => Promise.all([i.e("vendors~CommentsPage~ModerationPages~Reddit~reddit-components-ClassicPost~reddit-components-CompactP~d737df3e"), i.e("vendors~CommentsPage~Governance~ModListing~ModerationPages~Reddit~Subreddit"), i.e("CollectionCommentsPage~CommentsPage~CountryPage~FramedGild~GildModal~GovernanceReleaseNotesModal~Hap~1fdd9b9b"), i.e("CollectionCommentsPage~CommentsPage~CountryPage~Frontpage~GovernanceReleaseNotesModal~ModListing~Mod~e3d63e32"), i.e("ChatPost~CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~Post~38f39fb8"), i.e("CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~ModerationPages~PostCreation~Profile~9a5d9fab"), i.e("CollectionCommentsPage~CommentsPage~ModQueuePages~ModerationPages~PostCreation~ProfileComments~Profi~a5ca5d05"), i.e("CollectionCommentsPage~CommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~RpanListingUnit~S~5809214e"), i.e("CommentsPage~Governance~Reddit~ReportFlow~Subreddit~reddit-components-BlankPost~reddit-components-Cl~5351df81"), i.e("CommentsPage")]).then(i.bind(null, "./src/reddit/actions/pages/comments.ts")).then(e => e.commentsPageRequested)),
 					chunk: r.u.COMMENTS_PAGE,
 					component: a,
@@ -36127,8 +36145,8 @@
 					path: t,
 					prefetches: [r.u.FRONTPAGE, r.u.SUBREDDIT]
 				}),
-				y = [w(r.Sb.COMMENTS, h), w(r.Sb.DUPLICATES, f), w(r.Sb.COMMENTS, v)];
-			t.b = y
+				S = [E(r.Sb.COMMENTS, b), E(r.Sb.DUPLICATES, g), E(r.Sb.COMMENTS, y)];
+			t.c = S
 		},
 		"./src/reddit/routes/modListing/index.ts": function(e, t, i) {
 			"use strict";
@@ -50244,4 +50262,4 @@
 		"ignored /drone/src/node_modules/readable-stream/lib/internal/streams util": function(e, t) {}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.954d45ed57139bccc0fb.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.44869bb4c7869d79953a.js.map
