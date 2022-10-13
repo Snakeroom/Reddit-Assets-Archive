@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/FramedGild~GildModal.c77bd259e37253dc9398.js
-// Retrieved at 10/12/2022, 2:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/FramedGild~GildModal.e89136ab33df0437be7f.js
+// Retrieved at 10/13/2022, 9:40:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["FramedGild~GildModal", "gildActions"], {
 		"./node_modules/@stripe/react-stripe-js/dist/react-stripe.umd.js": function(e, t, r) {
@@ -4971,12 +4971,12 @@
 						rtJsonElementProps: o
 					});
 					switch (a) {
-						case h.Xf.SmIcon:
+						case h.Yf.SmIcon:
 							return s.a.createElement(p, {
 								subredditName: n,
 								rtJsonElementProps: o
 							});
-						case h.Xf.SmIconHc:
+						case h.Yf.SmIconHc:
 							return s.a.createElement(p, {
 								subredditName: n,
 								isHoverable: !0,
@@ -6146,12 +6146,12 @@
 				c = e => {
 					return Object(a.c)(e, {
 						experimentEligibilitySelector: i,
-						experimentName: n.Rf
+						experimentName: n.Sf
 					}) || ""
 				},
 				d = e => {
 					const t = c(e);
-					return t === n.Xf.SmIcon || t === n.Xf.SmIconHc
+					return t === n.Yf.SmIcon || t === n.Yf.SmIconHc
 				},
 				l = (e, t) => {
 					let {
@@ -6201,4 +6201,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/FramedGild~GildModal.c77bd259e37253dc9398.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/FramedGild~GildModal.e89136ab33df0437be7f.js.map

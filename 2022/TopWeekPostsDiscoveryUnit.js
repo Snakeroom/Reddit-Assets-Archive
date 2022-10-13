@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/TopWeekPostsDiscoveryUnit.d47dd0f5bebd47da69dc.js
-// Retrieved at 10/5/2022, 7:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/TopWeekPostsDiscoveryUnit.88e4b939d31138d81fad.js
+// Retrieved at 10/13/2022, 9:40:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["TopWeekPostsDiscoveryUnit"], {
 		"./src/lib/getShortenedLink.ts": function(e, t, s) {
@@ -510,7 +510,7 @@
 					}, O)));
 					const P = !k && !E;
 					let _;
-					return C && (_ = Object(oe.h)(C) ? Object(ne.b)(C) : Object(ne.c)(C)), a.a.createElement(Y.a, {
+					return C && (_ = Object(oe.h)(C) ? Object(ne.b)(C) : Object(ne.c)(C)), a.a.createElement(Y.b, {
 						className: Object(l.a)(pe.a.container, me.a.largeAndMediumActiveStyles, me.a.largeAndMediumPostStyles, le.a.postContainer, Object(re.a)(this.props), s),
 						post: p,
 						onClick: u,
@@ -1112,7 +1112,7 @@
 						subscribedProfiles: l,
 						subscribedSubreddits: d
 					});
-					return n.a.createElement(f.a, {
+					return n.a.createElement(f.b, {
 						className: Object(o.a)(ee.a.container, Y.a.largeAndMediumActiveStyles, Y.a.largeAndMediumPostStyles, Y.a.mUseRedditTheme, L.a.postContainer, Object(y.a)(this.props), e),
 						eventFactory: s,
 						onClick: a,
@@ -1314,7 +1314,7 @@
 				} = e.post;
 				return n.a.createElement("div", {
 					className: Object(a.a)(c.a.container, e.className)
-				}, n.a.createElement(i.a, {
+				}, n.a.createElement(i.b, {
 					className: Object(a.a)(c.a.thumbnail, e.thumbnailClassName),
 					containerClassName: Object(a.a)(c.a.thumbnailContainer, e.thumbnailContainerClassName),
 					linkIconClassName: Object(a.a)(c.a.thumbnailLinkIcon, e.thumbnailLinkIconClassName),
@@ -1367,6 +1367,9 @@
 		},
 		"./src/reddit/components/PostContainer/index.tsx": function(e, t, s) {
 			"use strict";
+			s.d(t, "a", (function() {
+				return P
+			}));
 			var r = s("./node_modules/react/index.js"),
 				n = s.n(r),
 				a = s("./node_modules/reselect/es/index.js"),
@@ -1483,7 +1486,7 @@
 					}, e) : e)(y))
 				}
 			}
-			t.a = k(Object(y.a)(Object(C.a)(Object(u.c)(_))))
+			t.b = k(Object(y.a)(Object(C.a)(Object(u.c)(_))))
 		},
 		"./src/reddit/components/PostTitle/index.m.less": function(e, t, s) {
 			e.exports = {
@@ -2390,4 +2393,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/TopWeekPostsDiscoveryUnit.d47dd0f5bebd47da69dc.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/TopWeekPostsDiscoveryUnit.88e4b939d31138d81fad.js.map

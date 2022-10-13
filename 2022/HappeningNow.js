@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/HappeningNow.9eb1d59558218ea691c1.js
-// Retrieved at 10/12/2022, 2:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/HappeningNow.396d6e624e20cfa70e59.js
+// Retrieved at 10/13/2022, 9:40:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["HappeningNow"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -2411,12 +2411,12 @@
 						rtJsonElementProps: i
 					});
 					switch (o) {
-						case b.Xf.SmIcon:
+						case b.Yf.SmIcon:
 							return s.a.createElement(p, {
 								subredditName: r,
 								rtJsonElementProps: i
 							});
-						case b.Xf.SmIconHc:
+						case b.Yf.SmIconHc:
 							return s.a.createElement(p, {
 								subredditName: r,
 								isHoverable: !0,
@@ -2806,12 +2806,12 @@
 									const e = Object(p.a)(d.subreddit);
 									i[e.id] = e
 								}
-								if (l === x.o.Chat) {
+								if (l === x.p.Chat) {
 									const e = null === (r = null === (n = null === (t = null == d ? void 0 : d.commentForest) || void 0 === t ? void 0 : t.trees) || void 0 === n ? void 0 : n.map(e => f(null == e ? void 0 : e.node))) || void 0 === r ? void 0 : r.filter(c.a);
 									(null == e ? void 0 : e.length) && b.push(...e);
 									const s = f(d.authorInfo);
 									s && b.push(s)
-								} else l === x.o.Talk && Array.isArray(null === (s = null == d ? void 0 : d.talkRoom) || void 0 === s ? void 0 : s.topUsers) && (v = d.talkRoom, b.push(...d.talkRoom.topUsers));
+								} else l === x.p.Talk && Array.isArray(null === (s = null == d ? void 0 : d.talkRoom) || void 0 === s ? void 0 : s.topUsers) && (v = d.talkRoom, b.push(...d.talkRoom.topUsers));
 								return {
 									postId: C.id,
 									participantAvatars: b,
@@ -2970,11 +2970,11 @@
 				G = n("./src/reddit/components/HappeningNow/Post/Header/index.m.less"),
 				W = n.n(G);
 			const J = {
-				[x.o.Unknown]: "",
-				[x.o.Chat]: r.fbt._("Chat", null, {
+				[x.p.Unknown]: "",
+				[x.p.Chat]: r.fbt._("Chat", null, {
 					hk: "1oa6K"
 				}),
-				[x.o.Talk]: r.fbt._("Talk", null, {
+				[x.p.Talk]: r.fbt._("Talk", null, {
 					hk: "1lMkQn"
 				})
 			};
@@ -3007,7 +3007,7 @@
 					}), o.a.createElement(F.b, {
 						className: W.a.subredditIcon,
 						iconUrl: c
-					}), t.contentType === x.o.Chat ? o.a.createElement(H, {
+					}), t.contentType === x.p.Chat ? o.a.createElement(H, {
 						className: Object(j.a)(W.a.liveChatIcon, {
 							[W.a.nightMode]: d
 						})
@@ -3219,10 +3219,10 @@
 						onClick: () => {
 							var e;
 							switch (a.contentType) {
-								case x.o.Chat:
+								case x.p.Chat:
 									r(Object(_e.a)(d.permalink));
 									break;
-								case x.o.Talk:
+								case x.p.Talk:
 									window.open(`${_.a.redditUrl}/talk/${null===(e=a.talkRoom)||void 0===e?void 0:e.roomId}`)
 							}
 						}
@@ -3266,11 +3266,11 @@
 				Le = n("./src/reddit/pages/HappeningNow/index.m.less"),
 				Pe = n.n(Le);
 			const Fe = {
-					[x.n.Unknown]: "",
-					[x.n.Popular]: r.fbt._("Popular", null, {
+					[x.o.Unknown]: "",
+					[x.o.Popular]: r.fbt._("Popular", null, {
 						hk: "2pUvlx"
 					}),
-					[x.n.Recommended]: r.fbt._("For you", null, {
+					[x.o.Recommended]: r.fbt._("For you", null, {
 						hk: "19HGNV"
 					})
 				},
@@ -3284,12 +3284,12 @@
 					})) : o.a.createElement("div", {
 						className: Pe.a.content
 					}, !!t.length && o.a.createElement(Te, {
-						title: Fe[x.n.Recommended]
+						title: Fe[x.o.Recommended]
 					}, t.map(e => o.a.createElement(Se, {
 						key: e,
 						postId: e
 					}))), !!e.length && o.a.createElement(Te, {
-						title: Fe[x.n.Popular]
+						title: Fe[x.o.Popular]
 					}, e.map(e => o.a.createElement(Se, {
 						key: e,
 						postId: e
@@ -3342,12 +3342,12 @@
 				d = e => {
 					return Object(o.c)(e, {
 						experimentEligibilitySelector: a,
-						experimentName: r.Rf
+						experimentName: r.Sf
 					}) || ""
 				},
 				c = e => {
 					const t = d(e);
-					return t === r.Xf.SmIcon || t === r.Xf.SmIconHc
+					return t === r.Yf.SmIcon || t === r.Yf.SmIconHc
 				},
 				l = (e, t) => {
 					let {
@@ -3376,4 +3376,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/HappeningNow.9eb1d59558218ea691c1.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/HappeningNow.396d6e624e20cfa70e59.js.map

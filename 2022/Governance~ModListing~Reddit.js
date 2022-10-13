@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit.25f36c513696118ce2a9.js
-// Retrieved at 10/12/2022, 2:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit.c140287e02c87e10f37b.js
+// Retrieved at 10/13/2022, 9:40:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~ModListing~Reddit"], {
 		"./src/lib/CSSVariableProvider/withTheme.tsx": function(e, t, n) {
@@ -925,6 +925,19 @@
 				}(e), t.json()))), t
 			}
 		},
+		"./src/reddit/components/SEOTitle/constants.ts": function(e, t, n) {
+			"use strict";
+			var r, o;
+			n.d(t, "a", (function() {
+					return r
+				})),
+				function(e) {
+					e[e.Collection = 0] = "Collection", e[e.HeaderSelector = 1] = "HeaderSelector", e[e.PostComments = 2] = "PostComments", e[e.PostItem = 3] = "PostItem", e[e.TopicHeader = 4] = "TopicHeader", e[e.Widget = 5] = "Widget"
+				}(r || (r = {})),
+				function(e) {
+					e[e.H1 = 1] = "H1", e[e.H2 = 2] = "H2", e[e.H3 = 3] = "H3", e[e.H4 = 4] = "H4", e[e.H5 = 5] = "H5", e[e.H6 = 6] = "H6"
+				}(o || (o = {}))
+		},
 		"./src/reddit/components/SEOTitle/index.m.less": function(e, t, n) {
 			e.exports = {
 				Title: "_eYtD2XCVieq6emjKBH3m",
@@ -934,52 +947,47 @@
 		"./src/reddit/components/SEOTitle/index.tsx": function(e, t, n) {
 			"use strict";
 			n.d(t, "a", (function() {
-				return r
+				return c.a
 			}));
-			var r, o, i = n("./node_modules/react/index.js"),
-				s = n.n(i),
-				c = n("./node_modules/react-redux/es/index.js"),
-				a = n("./node_modules/reselect/es/index.js");
-			! function(e) {
-				e[e.Collection = 0] = "Collection", e[e.HeaderSelector = 1] = "HeaderSelector", e[e.PostComments = 2] = "PostComments", e[e.PostItem = 3] = "PostItem", e[e.TopicHeader = 4] = "TopicHeader", e[e.Widget = 5] = "Widget"
-			}(r || (r = {})),
-			function(e) {
-				e[e.H1 = 1] = "H1", e[e.H2 = 2] = "H2", e[e.H3 = 3] = "H3", e[e.H4 = 4] = "H4", e[e.H5 = 5] = "H5", e[e.H6 = 6] = "H6"
-			}(o || (o = {}));
-			var d = n("./src/lib/constants/index.ts"),
-				u = n("./src/reddit/helpers/postCollection.ts");
-			const l = [d.Sb.COMMENTS, d.Sb.COLLECTION_COMMENTS],
-				b = (e, t) => {
+			var r = n("./node_modules/react/index.js"),
+				o = n.n(r),
+				i = n("./node_modules/react-redux/es/index.js"),
+				s = n("./node_modules/reselect/es/index.js"),
+				c = n("./src/reddit/components/SEOTitle/constants.ts"),
+				a = n("./src/lib/constants/index.ts"),
+				d = n("./src/reddit/helpers/postCollection.ts");
+			const u = [a.Sb.COMMENTS, a.Sb.COLLECTION_COMMENTS],
+				l = (e, t) => {
 					if (!e) return [];
-					const n = l.includes(e),
-						o = e === d.Sb.COLLECTION_COMMENTS || t && Object(u.a)(t),
-						i = d.ab.has(e),
-						s = d.Hb.has(e),
-						c = e === d.Sb.SUBREDDIT,
-						a = e === d.Sb.TOPIC;
+					const n = u.includes(e),
+						r = e === a.Sb.COLLECTION_COMMENTS || t && Object(d.a)(t),
+						o = a.ab.has(e),
+						i = a.Hb.has(e),
+						s = e === a.Sb.SUBREDDIT,
+						l = e === a.Sb.TOPIC;
 					let b, f, p;
-					return i && !c || s ? b = r.HeaderSelector : o ? b = r.Collection : n ? b = r.PostComments : a && (b = r.TopicHeader), (i || s || o || n) && (f = r.Widget), (i || n) && (p = r.PostItem), [b, f, p]
+					return o && !s || i ? b = c.a.HeaderSelector : r ? b = c.a.Collection : n ? b = c.a.PostComments : l && (b = c.a.TopicHeader), (o || i || r || n) && (f = c.a.Widget), (o || n) && (p = c.a.PostItem), [b, f, p]
 				};
-			var f = n("./src/reddit/contexts/PageLayer/index.tsx"),
-				p = n("./src/reddit/selectors/platform.ts"),
-				m = n("./src/reddit/components/SEOTitle/index.m.less"),
-				O = n.n(m);
-			const I = e => {
+			var b = n("./src/reddit/contexts/PageLayer/index.tsx"),
+				f = n("./src/reddit/selectors/platform.ts"),
+				p = n("./src/reddit/components/SEOTitle/index.m.less"),
+				m = n.n(p);
+			const O = e => {
 					let {
 						level: t,
 						children: n
 					} = e;
 					const r = `h${t}`;
-					return s.a.createElement(r, {
-						className: O.a.Title
+					return o.a.createElement(r, {
+						className: m.a.Title
 					}, n)
 				},
-				g = Object(f.u)(),
-				_ = Object(c.b)(() => Object(a.a)((e, t) => {
+				I = Object(b.u)(),
+				g = Object(i.b)(() => Object(s.a)((e, t) => {
 					let {
 						pageLayer: n
 					} = t;
-					return n && Object(p.n)(e, {
+					return n && Object(f.n)(e, {
 						page: n
 					})
 				}, (e, t) => {
@@ -993,20 +1001,20 @@
 					} = t;
 					return n
 				}, (e, t, n) => ({
-					level: b(t, e).indexOf(n) + 1 || void 0
+					level: l(t, e).indexOf(n) + 1 || void 0
 				})));
-			class x extends s.a.Component {
+			class _ extends o.a.Component {
 				render() {
 					const {
 						children: e,
 						level: t
 					} = this.props;
-					return t ? s.a.createElement(I, {
+					return t ? o.a.createElement(O, {
 						level: t
-					}, e) : s.a.createElement(s.a.Fragment, null, e)
+					}, e) : o.a.createElement(o.a.Fragment, null, e)
 				}
 			}
-			t.b = g(_(x))
+			t.b = I(g(_))
 		},
 		"./src/reddit/components/SubredditIcon/index.m.less": function(e, t, n) {
 			e.exports = {
@@ -3461,7 +3469,7 @@
 					return r ? r * o.Xb < 1639443600180 ? void 0 : O(e) : void 0
 				},
 				O = Object(r.a)(e => Object(c.c)(e, {
-					experimentName: i.Oe,
+					experimentName: i.Pe,
 					experimentEligibilitySelector: a.e
 				}), d.a)
 		},
@@ -3568,4 +3576,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit.25f36c513696118ce2a9.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit.c140287e02c87e10f37b.js.map

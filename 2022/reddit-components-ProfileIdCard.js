@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-ProfileIdCard.85866c027d9f51abd244.js
-// Retrieved at 10/12/2022, 2:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-ProfileIdCard.ded05a8e679c62fdb263.js
+// Retrieved at 10/13/2022, 9:40:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-ProfileIdCard"], {
 		"./node_modules/lodash/compact.js": function(e, t) {
@@ -816,100 +816,116 @@
 				return s.a.createElement(s.a.Fragment, null, Object(o.a)(t, c))
 			}
 		},
-		"./src/reddit/components/HumanDate/index.tsx": function(e, t, r) {
+		"./src/reddit/components/HumanDate/HumanDateTime.tsx": function(e, t, r) {
 			"use strict";
-			r.d(t, "d", (function() {
-				return i
-			})), r.d(t, "a", (function() {
-				return c.a
-			})), r.d(t, "b", (function() {
-				return u
-			})), r.d(t, "c", (function() {
-				return h
-			}));
+			var n = r("./node_modules/react/index.js"),
+				s = r.n(n),
+				o = r("./node_modules/@reddit/i18n-tools/runtime/helpers/locale/constants.js"),
+				a = r("./src/lib/constants/index.ts");
+			var i = r("./src/reddit/hooks/useLocale.ts");
+			t.a = function(e) {
+				let {
+					seconds: t,
+					locale: r
+				} = e;
+				const n = Object(i.a)(),
+					c = null != r ? r : n;
+				return s.a.createElement(s.a.Fragment, null, function(e) {
+					let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : o.DEFAULT_LOCALE;
+					const r = e * a.Xb;
+					return new Date(r).toLocaleString(t, {
+						weekday: "short",
+						month: "short",
+						year: "numeric",
+						day: "2-digit",
+						hour: "2-digit",
+						minute: "2-digit",
+						second: "2-digit",
+						timeZoneName: "long"
+					})
+				}(t, c))
+			}
+		},
+		"./src/reddit/components/HumanDate/TimeAgo.tsx": function(e, t, r) {
+			"use strict";
 			var n = r("./node_modules/react/index.js"),
 				s = r.n(n),
 				o = r("./src/lib/timeAgo/index.ts"),
 				a = r("./src/reddit/hooks/useLocale.ts");
-			var i = function(e) {
-					let {
-						seconds: t,
-						...r
-					} = e;
-					var n;
-					const i = Object(a.a)(),
-						c = {
-							...r,
-							locale: null !== (n = r.locale) && void 0 !== n ? n : i
-						};
-					return s.a.createElement(s.a.Fragment, null, Object(o.d)(t, c))
-				},
-				c = r("./src/reddit/components/HumanDate/HumanDate.tsx"),
-				d = r("./node_modules/@reddit/i18n-tools/runtime/helpers/locale/constants.js"),
-				l = r("./src/lib/constants/index.ts");
-			var u = function(e) {
-					let {
-						seconds: t,
-						locale: r
-					} = e;
-					const n = Object(a.a)(),
-						o = null != r ? r : n;
-					return s.a.createElement(s.a.Fragment, null, function(e) {
-						let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : d.DEFAULT_LOCALE;
-						const r = e * l.Xb;
-						return new Date(r).toLocaleString(t, {
-							weekday: "short",
-							month: "short",
-							year: "numeric",
-							day: "2-digit",
-							hour: "2-digit",
-							minute: "2-digit",
-							second: "2-digit",
-							timeZoneName: "long"
-						})
-					}(t, o))
-				},
-				m = r("./node_modules/fbt/lib/FbtPublic.js"),
-				p = r("./src/lib/eventTools/index.ts");
+			t.a = function(e) {
+				let {
+					seconds: t,
+					...r
+				} = e;
+				var n;
+				const i = Object(a.a)(),
+					c = {
+						...r,
+						locale: null !== (n = r.locale) && void 0 !== n ? n : i
+					};
+				return s.a.createElement(s.a.Fragment, null, Object(o.d)(t, c))
+			}
+		},
+		"./src/reddit/components/HumanDate/index.tsx": function(e, t, r) {
+			"use strict";
+			r.d(t, "d", (function() {
+				return n.a
+			})), r.d(t, "a", (function() {
+				return s.a
+			})), r.d(t, "b", (function() {
+				return o.a
+			})), r.d(t, "c", (function() {
+				return b
+			}));
+			var n = r("./src/reddit/components/HumanDate/TimeAgo.tsx"),
+				s = r("./src/reddit/components/HumanDate/HumanDate.tsx"),
+				o = r("./src/reddit/components/HumanDate/HumanDateTime.tsx"),
+				a = r("./node_modules/react/index.js"),
+				i = r.n(a),
+				c = r("./node_modules/@reddit/i18n-tools/runtime/helpers/locale/constants.js"),
+				d = r("./node_modules/fbt/lib/FbtPublic.js"),
+				l = r("./src/lib/constants/index.ts"),
+				u = r("./src/lib/eventTools/index.ts");
 
-			function f(e) {
-				let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : d.DEFAULT_LOCALE;
+			function m(e) {
+				let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : c.DEFAULT_LOCALE;
 				return e.toLocaleDateString(t, {
 					month: "numeric",
 					day: "numeric"
 				})
 			}
 
-			function b(e, t) {
+			function p(e, t) {
 				let r = arguments.length > 2 && void 0 !== arguments[2] && arguments[2],
-					n = arguments.length > 3 && void 0 !== arguments[3] ? arguments[3] : d.DEFAULT_LOCALE;
-				const s = Object(p.e)(e, t),
+					n = arguments.length > 3 && void 0 !== arguments[3] ? arguments[3] : c.DEFAULT_LOCALE;
+				const s = Object(u.e)(e, t),
 					o = new Date(e * l.Xb);
 				let a;
-				if (s === p.a.Live || r) return m.fbt._("Now", null, {
+				if (s === u.a.Live || r) return d.fbt._("Now", null, {
 					hk: "Prpcg"
 				});
-				return s === p.a.Future ? a = Object(p.d)(e) ? m.fbt._("Today", null, {
+				return s === u.a.Future ? a = Object(u.d)(e) ? d.fbt._("Today", null, {
 					hk: "1sZpnp"
-				}).toString() : Object(p.b)(e) >= 5 ? f(o, n) : function(e) {
-					let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : d.DEFAULT_LOCALE;
+				}).toString() : Object(u.b)(e) >= 5 ? m(o, n) : function(e) {
+					let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : c.DEFAULT_LOCALE;
 					return e.toLocaleDateString(t, {
 						weekday: "long"
 					})
-				}(o, n) : s === p.a.Past && (a = Object(p.d)(e) ? m.fbt._("Today", null, {
+				}(o, n) : s === u.a.Past && (a = Object(u.d)(e) ? d.fbt._("Today", null, {
 					hk: "1sZpnp"
-				}).toString() : f(o, n)), `${a} @ ${function(e){let t=arguments.length>1&&void 0!==arguments[1]?arguments[1]:d.DEFAULT_LOCALE;return e.toLocaleTimeString(t,{hour12:!0,hour:"numeric",minute:"2-digit"}).replace(/ /g,"").toUpperCase()}(o,n)}`
+				}).toString() : m(o, n)), `${a} @ ${function(e){let t=arguments.length>1&&void 0!==arguments[1]?arguments[1]:c.DEFAULT_LOCALE;return e.toLocaleTimeString(t,{hour12:!0,hour:"numeric",minute:"2-digit"}).replace(/ /g,"").toUpperCase()}(o,n)}`
 			}
-			var h = function(e) {
+			var f = r("./src/reddit/hooks/useLocale.ts");
+			var b = function(e) {
 				let {
 					startTime: t,
 					endTime: r,
 					isLive: n,
-					locale: o
+					locale: s
 				} = e;
-				const i = Object(a.a)(),
-					c = null != o ? o : i;
-				return s.a.createElement(s.a.Fragment, null, b(t, r, n, c))
+				const o = Object(f.a)(),
+					a = null != s ? s : o;
+				return i.a.createElement(i.a.Fragment, null, p(t, r, n, a))
 			};
 			r("./src/lib/humanizeUTCDate/index.tsx")
 		},
@@ -2419,10 +2435,10 @@
 			var D = r("./src/reddit/actions/gold/modals.ts"),
 				R = r("./src/reddit/actions/modal.ts"),
 				G = r("./src/reddit/actions/profile/index.ts"),
-				W = r("./src/reddit/components/CrisisFlow/index.tsx"),
-				H = r("./src/higherOrderComponents/makeAsync.tsx"),
+				H = r("./src/reddit/components/CrisisFlow/index.tsx"),
+				W = r("./src/higherOrderComponents/makeAsync.tsx"),
 				q = r("./src/lib/loadWithRetries/index.ts");
-			var z = Object(H.a)({
+			var z = Object(W.a)({
 					getComponent: () => Object(q.a)(() => r.e("GivePremiumModal").then(r.bind(null, "./src/reddit/components/GivePremiumModal/index.tsx"))).then(e => e.default),
 					ErrorComponent: () => null,
 					LoadingComponent: () => null
@@ -2630,9 +2646,9 @@
 					}, o.a.createElement(b.r, {
 						className: ee.a.expandButton,
 						onClick: this.moreOptionsToggled
-					}, s)), e && o.a.createElement(z, null), this.state.showCrisisModal && o.a.createElement(W.b, {
+					}, s)), e && o.a.createElement(z, null), this.state.showCrisisModal && o.a.createElement(H.b, {
 						withOverlay: !0,
-						overlayCustomStyles: W.a,
+						overlayCustomStyles: H.a,
 						fromUserProfile: !0,
 						username: this.props.profileName,
 						onCloseCrisisModal: this.onCloseCrisisModal
@@ -2864,13 +2880,13 @@
 					prefShowSnoovatar: B,
 					snoovatarFullBodyAsset: M,
 					username: D
-				} = P, R = !!a && a.id === F, G = !(!a || !a.snoovatarFullBodyAsset), W = O && O.bannerBackgroundImage, H = !!b && b.isNSFW, q = H && c, z = !(!v || !v.userIsSubscriber), K = `/user/${D}/`, Z = j && j.url === K, Q = !v || v.acceptChats, Y = !v || v.acceptPms, X = k && Object(ue.b)(M), V = () => {
+				} = P, R = !!a && a.id === F, G = !(!a || !a.snoovatarFullBodyAsset), H = O && O.bannerBackgroundImage, W = !!b && b.isNSFW, q = W && c, z = !(!v || !v.userIsSubscriber), K = `/user/${D}/`, Z = j && j.url === K, Q = !v || v.acceptChats, Y = !v || v.acceptPms, X = k && Object(ue.b)(M), V = () => {
 					r(e => !e)
 				};
 				return o.a.createElement(o.a.Fragment, null, o.a.createElement(m.a, {
 					isEmployee: T,
 					isGold: A,
-					isNSFW: H,
+					isNSFW: W,
 					isNftPreview: X,
 					isOverlay: l,
 					isOwnProfile: R,
@@ -2923,7 +2939,7 @@
 					}),
 					onClickSnoovatar: p,
 					profileIcon: S,
-					bannerBackgroundImage: q ? void 0 : W
+					bannerBackgroundImage: q ? void 0 : H
 				}), t && o.a.createElement(fe.a, {
 					onClose: V,
 					onConfirm: e => {
@@ -3554,7 +3570,7 @@
 			const a = e => Object(s.c)(e, {
 				experimentName: n.F,
 				experimentEligibilitySelector: () => Object(o.P)(e)
-			}) === n.Sd
+			}) === n.Td
 		},
 		"./src/reddit/selectors/experiments/crisisTextLine.ts": function(e, t, r) {
 			"use strict";
@@ -3602,4 +3618,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ProfileIdCard.85866c027d9f51abd244.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ProfileIdCard.ded05a8e679c62fdb263.js.map

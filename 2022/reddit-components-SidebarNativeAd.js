@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-SidebarNativeAd.c1df768967df67a1b0fe.js
-// Retrieved at 10/11/2022, 9:50:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-SidebarNativeAd.7f1fe6dd42b4f54c6a69.js
+// Retrieved at 10/13/2022, 9:40:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-SidebarNativeAd"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -1224,7 +1224,7 @@
 						hk: "xPYWL"
 					}))
 				},
-				G = e => s.a.createElement(L, null, s.a.createElement(f.a, {
+				G = e => s.a.createElement(L, null, s.a.createElement(f.b, {
 					post: e.post
 				}))
 		},
@@ -1557,6 +1557,9 @@
 		},
 		"./src/reddit/components/PostContainer/index.tsx": function(e, t, n) {
 			"use strict";
+			n.d(t, "a", (function() {
+				return w
+			}));
 			var r = n("./node_modules/react/index.js"),
 				o = n.n(r),
 				s = n("./node_modules/reselect/es/index.js"),
@@ -1673,7 +1676,7 @@
 					}, e) : e)(y))
 				}
 			}
-			t.a = k(Object(y.a)(Object(_.a)(Object(m.c)(C))))
+			t.b = k(Object(y.a)(Object(_.a)(Object(m.c)(C))))
 		},
 		"./src/reddit/components/PostMedia/index.tsx": function(e, t, n) {
 			"use strict";
@@ -1772,7 +1775,7 @@
 				}), !r && !w.isSponsored && o.a.createElement(v.b, null), !r && !w.isSponsored && o.a.createElement(d.h, {
 					type: w.belongsTo.type,
 					id: w.belongsTo.id
-				}), o.a.createElement(u.d, {
+				}), o.a.createElement(u.g, {
 					className: x.a.postTopMeta,
 					flairStyleTemplate: t,
 					post: w,
@@ -1786,7 +1789,7 @@
 				}), !P && o.a.createElement(a.a, {
 					hideCta: n,
 					thing: w,
-					tooltipType: E ? u.c.Lightbox : void 0
+					tooltipType: E ? u.f.Lightbox : void 0
 				}))
 			}
 		},
@@ -2381,7 +2384,7 @@
 			}
 			var R = n("./src/reddit/components/SidebarNativeAd/index.m.less"),
 				F = n.n(R);
-			const B = m.a.wrapped(d.d, "PostTopMeta", F.a),
+			const B = m.a.wrapped(d.g, "PostTopMeta", F.a),
 				D = m.a.div("BannerAdContainer", F.a),
 				U = e => {
 					let {
@@ -2396,7 +2399,7 @@
 				z = m.a.wrapped(c.c, "PostTitle", F.a),
 				q = m.a.div("PostMediaWrapper", F.a),
 				K = m.a.div("BackgroundWrapper", F.a),
-				X = m.a.wrapped(h.a, "PostContainer", F.a),
+				X = m.a.wrapped(h.b, "PostContainer", F.a),
 				Y = 640,
 				J = e => Object(k.a)(e.title, 100),
 				Q = e => {
@@ -2442,7 +2445,7 @@
 					})) : (i = G, l = s.a.createElement(K, {
 						style: Z(this.props)
 					}, s.a.createElement(V, null, s.a.createElement(B, {
-						tooltipType: o ? d.c.Lightbox : void 0,
+						tooltipType: o ? d.f.Lightbox : void 0,
 						post: e,
 						showTimestamp: !1
 					})), s.a.createElement(z, {
@@ -4635,4 +4638,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-SidebarNativeAd.c1df768967df67a1b0fe.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-SidebarNativeAd.7f1fe6dd42b4f54c6a69.js.map

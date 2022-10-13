@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ChatPost.567a250192064bac8804.js
-// Retrieved at 10/12/2022, 2:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ChatPost.cc1e75dcef1964550a83.js
+// Retrieved at 10/13/2022, 9:40:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ChatPost"], {
 		"./node_modules/backo2/index.js": function(e, t) {
@@ -1425,7 +1425,7 @@
 					collapsed: s,
 					isCommentAuthorBlocked: Object(I.g)(o),
 					postOrComment: o,
-					tooltipType: m ? _.c.Lightbox : void 0
+					tooltipType: m ? _.f.Lightbox : void 0
 				}, p)
 			};
 			var L = n("./src/config.ts"),
@@ -1872,7 +1872,7 @@
 					isAdmin: L
 				}), r.a.createElement(l.a, {
 					thing: i,
-					tooltipType: N ? _.c.Lightbox : void 0
+					tooltipType: N ? _.f.Lightbox : void 0
 				})), d && !Object(y.o)(d) && r.a.createElement("span", {
 					className: we.a.userFlairLine
 				}, r.a.createElement(v.b, {
@@ -2074,7 +2074,7 @@
 					renderedInOverlay: R
 				}), !b && r.a.createElement(l.a, {
 					thing: a,
-					tooltipType: R ? _.c.Lightbox : void 0
+					tooltipType: R ? _.f.Lightbox : void 0
 				}))
 			});
 			const Ve = e => {
@@ -6041,7 +6041,7 @@
 			const a = e => Object(s.c)(e, {
 				experimentEligibilitySelector: r.Q,
 				experimentName: o.ic
-			}) === o.Sd
+			}) === o.Td
 		},
 		"./src/reddit/selectors/modQueue.ts": function(e, t, n) {
 			"use strict";
@@ -6139,4 +6139,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatPost.567a250192064bac8804.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatPost.cc1e75dcef1964550a83.js.map

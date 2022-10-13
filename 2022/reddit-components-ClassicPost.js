@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-ClassicPost.3e33f134890594ac8df4.js
-// Retrieved at 10/12/2022, 2:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-ClassicPost.c34d2cfdc51843b9fc45.js
+// Retrieved at 10/13/2022, 9:40:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-ClassicPost"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -1059,7 +1059,7 @@
 				} = e;
 				return o.a.createElement("div", {
 					className: Object(r.a)(c.a.thumbnailContainer, t)
-				}, o.a.createElement(a.a, {
+				}, o.a.createElement(a.b, {
 					className: Object(r.a)(c.a.thumbnail, s),
 					containerClassName: b,
 					crosspost: n,
@@ -1329,7 +1329,7 @@
 				Object(h.c)(he) && (Ke = o.a.createElement(I, {
 					post: he
 				}));
-				const Ze = o.a.createElement(U.a, {
+				const Ze = o.a.createElement(U.b, {
 					className: Object(a.a)(ae.a.classicPostStyles, ce.a.postContainer, Object(ne.a)(e), {
 						[ce.a.mFirst]: E,
 						[ce.a.shouldShowOverflow]: Ce
@@ -1439,7 +1439,7 @@
 					shouldShowInsightsButton: Ce,
 					showEditPost: Ve,
 					showEditFlair: Oe,
-					tooltipType: Q ? q.c.Lightbox : void 0,
+					tooltipType: Q ? q.f.Lightbox : void 0,
 					useFlatlistBreakpoints: Object(W.b)({
 						editPost: !De,
 						hide: !De,
@@ -1676,7 +1676,7 @@
 						hk: "xPYWL"
 					}))
 				},
-				V = e => r.a.createElement(L, null, r.a.createElement(f.a, {
+				V = e => r.a.createElement(L, null, r.a.createElement(f.b, {
 					post: e.post
 				}))
 		},
@@ -2770,6 +2770,9 @@
 		},
 		"./src/reddit/components/PostContainer/index.tsx": function(e, t, s) {
 			"use strict";
+			s.d(t, "a", (function() {
+				return j
+			}));
 			var n = s("./node_modules/react/index.js"),
 				o = s.n(n),
 				r = s("./node_modules/reselect/es/index.js"),
@@ -2886,7 +2889,7 @@
 					}, e) : e)(E))
 				}
 			}
-			t.a = S(Object(E.a)(Object(_.a)(Object(m.c)(k))))
+			t.b = S(Object(E.a)(Object(_.a)(Object(m.c)(k))))
 		},
 		"./src/reddit/components/PostFollow/index.m.less": function(e, t, s) {
 			e.exports = {
@@ -3074,7 +3077,7 @@
 				}), !n && !j.isSponsored && o.a.createElement(v.b, null), !n && !j.isSponsored && o.a.createElement(d.h, {
 					type: j.belongsTo.type,
 					id: j.belongsTo.id
-				}), o.a.createElement(u.d, {
+				}), o.a.createElement(u.g, {
 					className: g.a.postTopMeta,
 					flairStyleTemplate: t,
 					post: j,
@@ -3088,7 +3091,7 @@
 				}), !I && o.a.createElement(i.a, {
 					hideCta: s,
 					thing: j,
-					tooltipType: C ? u.c.Lightbox : void 0
+					tooltipType: C ? u.f.Lightbox : void 0
 				}))
 			}
 		},
@@ -4269,14 +4272,14 @@
 						...u,
 						variables: t
 					});
-					return !!Object(a.c)(s) && (s.body.data.subredditInfoById.allowedPostTypes || []).includes(v.F.Talk)
+					return !!Object(a.c)(s) && (s.body.data.subredditInfoById.allowedPostTypes || []).includes(v.G.Talk)
 				}, E = async (e, t) => {
 					var s, n;
 					const o = await Object(r.a)(e, {
 						...m,
 						variables: t
 					});
-					return !!Object(a.c)(o) && (null !== (n = null === (s = o.body.data.profileByName) || void 0 === s ? void 0 : s.allowedPostTypes) && void 0 !== n ? n : []).includes(v.F.Talk)
+					return !!Object(a.c)(o) && (null !== (n = null === (s = o.body.data.profileByName) || void 0 === s ? void 0 : s.allowedPostTypes) && void 0 !== n ? n : []).includes(v.G.Talk)
 				}, O = async e => {
 					var t;
 					const s = await Object(r.a)(e, l);
@@ -4320,10 +4323,10 @@
 						hk: "2mGf21"
 					})
 				}, y = e => e.data.prepareAudioRoom || e.data.prepareAudioRoomOnProfile, N = {
-					[v.H.ServiceError]: n.fbt._("Something's wrong with the talk service right now. Check back later.", null, {
+					[v.I.ServiceError]: n.fbt._("Something's wrong with the talk service right now. Check back later.", null, {
 						hk: "3XqPJS"
 					}),
-					[v.H.UserNotAuthorized]: n.fbt._("You don't have permission to start talks in this community.", null, {
+					[v.I.UserNotAuthorized]: n.fbt._("You don't have permission to start talks in this community.", null, {
 						hk: "1XY1Ss"
 					})
 				}, I = (e, t) => Object(r.a)(e, {
@@ -6017,8 +6020,8 @@
 					if (Object(a.a)(e)) return !1;
 					return Object(o.c)(e, {
 						experimentEligibilitySelector: o.a,
-						experimentName: n.Bc
-					}) === n.cd.Enabled
+						experimentName: n.Cc
+					}) === n.dd.Enabled
 				}
 		},
 		"./src/reddit/selectors/experiments/presence.ts": function(e, t, s) {
@@ -6031,8 +6034,8 @@
 			const r = e => {
 				return Object(o.c)(e, {
 					experimentEligibilitySelector: o.a,
-					experimentName: n.if
-				}) === n.Sd
+					experimentName: n.jf
+				}) === n.Td
 			}
 		},
 		"./src/reddit/selectors/experiments/web2x_cta.ts": function(e, t, s) {
@@ -6044,10 +6047,10 @@
 				o = s("./src/reddit/constants/experiments.ts"),
 				r = s("./src/reddit/helpers/chooseVariant/index.ts");
 			const a = Object(n.a)(e => Object(r.c)(e, {
-					experimentName: o.mg,
+					experimentName: o.ng,
 					experimentEligibilitySelector: r.a
 				}), e => e),
-				i = Object(n.a)(a, e => e === o.dg)
+				i = Object(n.a)(a, e => e === o.eg)
 		},
 		"./src/reddit/selectors/removedPosts.ts": function(e, t, s) {
 			"use strict";
@@ -6122,10 +6125,10 @@
 				r = s("./src/reddit/helpers/chooseVariant/index.ts"),
 				a = s("./src/reddit/selectors/posts.ts");
 			const i = e => Object(r.c)(e, {
-					experimentName: o.lf,
+					experimentName: o.mf,
 					experimentEligibilitySelector: r.a
 				}),
-				c = (e, t) => t === o.tf.Enabled && (null == e ? void 0 : e.isCreatedFromAdsUi) || (null == e ? void 0 : e.isSponsored),
+				c = (e, t) => t === o.uf.Enabled && (null == e ? void 0 : e.isCreatedFromAdsUi) || (null == e ? void 0 : e.isSponsored),
 				d = Object(n.a)(a.G, i, (e, t) => c(e, t));
 			Object(n.a)((e, t) => t, i, (e, t) => c(e, t))
 		},
@@ -6238,4 +6241,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ClassicPost.3e33f134890594ac8df4.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ClassicPost.c34d2cfdc51843b9fc45.js.map

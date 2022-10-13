@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Collection.f3fc43e5533df027ae97.js
-// Retrieved at 9/29/2022, 4:30:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Collection.37f4abae3ace48b9daa4.js
+// Retrieved at 10/13/2022, 9:40:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Collection"], {
 		"./src/reddit/components/Collection/PostAndPostEventMeta/index.m.less": function(e, t, o) {
@@ -177,7 +177,7 @@
 						updateSelectedPostRef: v,
 						isProfilePage: O
 					} = e;
-					return n.a.createElement(I.a, {
+					return n.a.createElement(I.b, {
 						className: Object(a.a)(W.a.postContainer, {
 							[W.a.isNightmodeOn]: i,
 							[W.a.isSelectedPost]: c,
@@ -253,7 +253,7 @@
 						updateSelectedPostRef: C,
 						isProfilePage: v
 					} = e, O = l && l.url || "", x = b.isSpoiler || b.isNSFW, _ = b.isScoreHidden;
-					return n.a.createElement(I.a, {
+					return n.a.createElement(I.b, {
 						className: Object(a.a)(W.a.galleryPostContainer, {
 							[W.a.isSelectedPost]: d,
 							[W.a.isNightmodeOn]: r,
@@ -742,4 +742,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Collection.f3fc43e5533df027ae97.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Collection.37f4abae3ace48b9daa4.js.map

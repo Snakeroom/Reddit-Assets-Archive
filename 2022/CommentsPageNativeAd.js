@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CommentsPageNativeAd.4fd856f67d173e655078.js
-// Retrieved at 10/12/2022, 2:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CommentsPageNativeAd.a6c8f107de6f88e32008.js
+// Retrieved at 10/13/2022, 9:40:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CommentsPageNativeAd"], {
 		"./src/reddit/components/BlankPost/index.tsx": function(e, t, s) {
@@ -156,7 +156,7 @@
 					showCentered: !1,
 					scrollerItemRef: c,
 					isCommentsPage: !0
-				})) : r.a.createElement(R.a, {
+				})) : r.a.createElement(R.b, {
 					className: Object(l.a)(T.a.thumbnail, t),
 					containerClassName: m,
 					crosspost: a,
@@ -167,7 +167,7 @@
 					removeLink: Object(x.N)(i.media),
 					url: Object(x.N)(i.media) ? void 0 : p,
 					usePreview: u
-				}) : r.a.createElement(R.a, {
+				}) : r.a.createElement(R.b, {
 					className: Object(l.a)(T.a.thumbnail, t),
 					containerClassName: m,
 					crosspost: a,
@@ -275,7 +275,7 @@
 					});
 					return r.a.createElement("div", null, r.a.createElement("div", {
 						className: T.a.commentsSpacer
-					}), r.a.createElement(N.a, {
+					}), r.a.createElement(N.b, {
 						className: T.a.postContainer,
 						isOverlay: d,
 						post: p,
@@ -288,7 +288,7 @@
 					}, r.a.createElement(I, {
 						author: p.author,
 						iconUrl: o,
-						greyTextColor: Object(y.e)(this.props)
+						greyTextColor: Object(y.h)(this.props)
 					}), r.a.createElement("div", {
 						className: Object(l.a)(T.a.contentRow, {
 							[T.a.contentRowExpanded]: this.state.mediaExpanded
@@ -439,11 +439,11 @@
 				o = s("./src/reddit/constants/experiments.ts"),
 				r = s("./src/reddit/helpers/chooseVariant/index.ts");
 			const n = Object(a.a)(e => Object(r.c)(e, {
-					experimentName: o.mg,
+					experimentName: o.ng,
 					experimentEligibilitySelector: r.a
 				}), e => e),
-				i = Object(a.a)(n, e => e === o.dg)
+				i = Object(a.a)(n, e => e === o.eg)
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommentsPageNativeAd.4fd856f67d173e655078.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommentsPageNativeAd.a6c8f107de6f88e32008.js.map

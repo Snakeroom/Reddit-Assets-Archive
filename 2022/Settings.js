@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Settings.4836d0a36c855eb048b8.js
-// Retrieved at 10/12/2022, 2:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Settings.249c8416abbff689c26b.js
+// Retrieved at 10/13/2022, 9:40:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Settings"], {
 		"./node_modules/moment/locale sync recursive ^\\.\\/.*$": function(e, t, n) {
@@ -1837,7 +1837,7 @@
 						const e = null == c ? void 0 : c.trim();
 						if (!(e && Object(m.g)(e) === m.d.Valid)) throw new Error(r.f);
 						t = e, n = null == i ? void 0 : i.trim()
-					} else if (a.socialLinkType === h.K.Reddit) {
+					} else if (a.socialLinkType === h.L.Reddit) {
 						const e = null == o ? void 0 : o.trim();
 						if (!(e && Object(u.f)(e) && e && e.length >= r.h && !/\s/.test(e))) throw new Error(r.e);
 						s = e
@@ -8044,81 +8044,81 @@
 					}),
 					i = r.i;
 				switch (t) {
-					case s.K.BuyMeACoffee:
+					case s.L.BuyMeACoffee:
 						o = a._("Buy Me a Coffee", null, {
 							hk: "ZTbP7"
 						});
 						break;
-					case s.K.CashApp:
+					case s.L.CashApp:
 						o = a._("Cash App", null, {
 							hk: "1aorWN"
 						});
 						break;
-					case s.K.Custom:
+					case s.L.Custom:
 						o = a._("Custom URL", null, {
 							hk: "2gveOb"
 						}), i = r.c, n = a._("https://website.com", null, {
 							hk: "1Kp5fF"
 						});
 						break;
-					case s.K.Reddit:
+					case s.L.Reddit:
 						i = a._("r/community, u/user", null, {
 							hk: "45oRo"
 						});
 						break;
-					case s.K.Discord:
+					case s.L.Discord:
 						i = r.c, n = a._("https://discord.com", null, {
 							hk: "6gcLP"
 						});
 						break;
-					case s.K.Facebook:
+					case s.L.Facebook:
 						i = r.c, n = a._("https://facebook.com", null, {
 							hk: "2v99jB"
 						});
 						break;
-					case s.K.Kickstarter:
+					case s.L.Kickstarter:
 						i = r.c, n = a._("https://kickstarter.com", null, {
 							hk: "132LC7"
 						});
 						break;
-					case s.K.Shopify:
+					case s.L.Shopify:
 						i = r.c, n = a._("https://shopify.com", null, {
 							hk: "2X1G4f"
 						});
 						break;
-					case s.K.Spotify:
+					case s.L.Spotify:
 						i = r.c, n = a._("https://spotify.com", null, {
 							hk: "3dZORp"
 						});
 						break;
-					case s.K.Substack:
+					case s.L.Substack:
 						i = r.c, n = a._("https://substack.com", null, {
 							hk: "1zQgL1"
 						});
 						break;
-					case s.K.Youtube:
+					case s.L.Youtube:
 						o = a._("YouTube", null, {
 							hk: "12AQG6"
 						}), i = r.c, n = a._("https://youtube.com", null, {
 							hk: "4FZQ2O"
 						});
 						break;
-					case s.K.Onlyfans:
+					case s.L.Onlyfans:
 						o = a._("OnlyFans", null, {
 							hk: "1JRN4C"
 						});
 						break;
-					case s.K.Paypal:
+					case s.L.Paypal:
 						o = a._("PayPal", null, {
 							hk: "3n7Il"
 						});
 						break;
-					case s.K.Soundcloud:
+					case s.L.Soundcloud:
 						o = a._("SoundCloud", null, {
 							hk: "34Xo4u"
 						});
 						break;
-					case s.K.Tiktok:
+					case s.L.Tiktok:
 						o = a._("TikTok", null, {
 							hk: "tajib"
 						})
@@ -8130,16 +8130,16 @@
 					socialLinkType: t
 				}
 			}, i = () => {
-				return Object.keys(s.K).map(e => {
-					const t = s.K[e];
+				return Object.keys(s.L).map(e => {
+					const t = s.L[e];
 					return o(e, t)
-				}).filter(e => e.socialLinkType !== s.K.Indiegogo)
+				}).filter(e => e.socialLinkType !== s.L.Indiegogo)
 			}, c = e => {
 				const t = e.toLowerCase();
 				return `${r.d}${t}.png`
 			}, l = e => {
-				for (const t in s.K)
-					if (s.K[t] === e) return t;
+				for (const t in s.L)
+					if (s.L[t] === e) return t;
 				return ""
 			}, d = e => {
 				let t = r.b;
@@ -14430,9 +14430,9 @@
 					},
 					isDspEnabled: e => {
 						return Object(se.c)(e, {
-							experimentName: ne.kd,
+							experimentName: ne.ld,
 							experimentEligibilitySelector: se.a
-						}) === ne.Sd
+						}) === ne.Td
 					}
 				}),
 				bo = Object(fe.u)(),
@@ -14985,7 +14985,7 @@
 			const o = e => Object(r.c)(e, {
 				experimentName: s.F,
 				experimentEligibilitySelector: () => Object(a.P)(e)
-			}) === s.Sd
+			}) === s.Td
 		},
 		"./src/reddit/selectors/gold/productOffers.ts": function(e, t, n) {
 			"use strict";
@@ -15149,4 +15149,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Settings.4836d0a36c855eb048b8.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Settings.249c8416abbff689c26b.js.map

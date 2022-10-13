@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-ModQueueActivitySummaryCards.214505dfaf2e20f96311.js
-// Retrieved at 10/11/2022, 7:00:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-ModQueueActivitySummaryCards.dbe621f63f01a2c2a15d.js
+// Retrieved at 10/13/2022, 9:40:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-ModQueueActivitySummaryCards", "reddit-components-ModQueueActivitySummaryCards-ModActivityPreview"], {
 		"./src/reddit/components/ModQueueActivitySummaryCards/ModActivityPreview.tsx": function(e, t, s) {
@@ -57,201 +57,201 @@
 						className: Object(o.a)(C.a.detailText, "text-neutral-content-weak")
 					}, v && d.a.createElement(d.a.Fragment, null, ((e, t) => {
 						switch (e) {
-							case x.s.AddNote:
+							case x.t.AddNote:
 								return y.fbt._("Added mod note", null, {
 									hk: "4EQdI3"
 								});
-							case x.s.AddRemovalReason:
+							case x.t.AddRemovalReason:
 								return y.fbt._("Added removal reason", null, {
 									hk: "3sDuRA"
 								});
-							case x.s.AdjustPostCrowdControlLevel:
+							case x.t.AdjustPostCrowdControlLevel:
 								return y.fbt._("Adjusted post crowd control level", null, {
 									hk: "3Ru27s"
 								});
-							case x.s.EnablePostCrowdControlFilter:
+							case x.t.EnablePostCrowdControlFilter:
 								return y.fbt._("Enabled post crowd control level", null, {
 									hk: "bnrbt"
 								});
-							case x.s.DisablePostCrowdControlFilter:
+							case x.t.DisablePostCrowdControlFilter:
 								return y.fbt._("Disabled post crowd control level", null, {
 									hk: "3Pn8Cm"
 								});
-							case x.s.ApproveComment:
+							case x.t.ApproveComment:
 								return y.fbt._("Approved comment", null, {
 									hk: "15N4AH"
 								});
-							case x.s.ApproveLink:
+							case x.t.ApproveLink:
 								return y.fbt._("Approved post", null, {
 									hk: "2pHeO6"
 								});
-							case x.s.BanUser:
+							case x.t.BanUser:
 								return y.fbt._("Banned user", null, {
 									hk: "30ZUto"
 								});
-							case x.s.Collections:
+							case x.t.Collections:
 								return y.fbt._("Collections", null, {
 									hk: "4DLN5q"
 								});
-							case x.s.DeleteNote:
+							case x.t.DeleteNote:
 								return y.fbt._("Deleted mod note", null, {
 									hk: "24mUGI"
 								});
-							case x.s.Distinguish:
+							case x.t.Distinguish:
 								return "SubredditPost" === t ? y.fbt._("Post distinguished", null, {
 									hk: "1EzjPd"
 								}) : y.fbt._("Comment distinguished", null, {
 									hk: "3TNqQa"
 								});
-							case x.s.EditFlair:
+							case x.t.EditFlair:
 								return "SubredditPost" === t ? y.fbt._("Post flair edited", null, {
 									hk: "2oj67i"
 								}) : y.fbt._("User flair edited", null, {
 									hk: "2WAVS8"
 								});
-							case x.s.IgnoreReports:
+							case x.t.IgnoreReports:
 								return "SubredditPost" === t ? y.fbt._("Post reports ignored", null, {
 									hk: "1HbgCS"
 								}) : y.fbt._("Comment reports ignored", null, {
 									hk: "3eLRwL"
 								});
-							case x.s.Lock:
+							case x.t.Lock:
 								return "SubredditPost" === t ? y.fbt._("Post locked", null, {
 									hk: "45Huvj"
 								}) : y.fbt._("Comment locked", null, {
 									hk: "2HzroI"
 								});
-							case x.s.MarkNsfw:
+							case x.t.MarkNsfw:
 								return y.fbt._("Marked post NSFW", null, {
 									hk: "4qw3UI"
 								});
-							case x.s.MarkOriginalContent:
+							case x.t.MarkOriginalContent:
 								return y.fbt._("Marked post Original Content", null, {
 									hk: "4d9kgS"
 								});
-							case x.s.MuteUser:
+							case x.t.MuteUser:
 								return y.fbt._("Muted user", null, {
 									hk: "31YWRG"
 								});
-							case x.s.RemoveComment:
+							case x.t.RemoveComment:
 								return y.fbt._("Removed comment", null, {
 									hk: "2qfmzC"
 								});
-							case x.s.RemoveLink:
+							case x.t.RemoveLink:
 								return y.fbt._("Removed post", null, {
 									hk: "2leMij"
 								});
-							case x.s.SetContestMode:
+							case x.t.SetContestMode:
 								return y.fbt._("Set post contest mode", null, {
 									hk: "2iE074"
 								});
-							case x.s.SetSuggestedsort:
+							case x.t.SetSuggestedsort:
 								return y.fbt._("Set post suggested sort", null, {
 									hk: "3zw33Q"
 								});
-							case x.s.ShowComment:
+							case x.t.ShowComment:
 								return y.fbt._("Showed comment", null, {
 									hk: "1xvaXS"
 								});
-							case x.s.SpamComment:
+							case x.t.SpamComment:
 								return y.fbt._("Marked comment as spam", null, {
 									hk: "E6CLe"
 								});
-							case x.s.SpamLink:
+							case x.t.SpamLink:
 								return y.fbt._("Removed post as spam", null, {
 									hk: "1Al2xz"
 								});
-							case x.s.Spoiler:
+							case x.t.Spoiler:
 								return y.fbt._("Added spoiler tag", null, {
 									hk: "254Axx"
 								});
-							case x.s.Sticky:
+							case x.t.Sticky:
 								return "SubredditPost" === t ? y.fbt._("Post stickied", null, {
 									hk: "4m9DRx"
 								}) : y.fbt._("Comment stickied", null, {
 									hk: "1JIPzu"
 								});
-							case x.s.UnbanUser:
+							case x.t.UnbanUser:
 								return y.fbt._("Unbanned user", null, {
 									hk: "3U4olT"
 								});
-							case x.s.Unlock:
+							case x.t.Unlock:
 								return "SubredditPost" === t ? y.fbt._("Post unlocked", null, {
 									hk: "3IXrG"
 								}) : y.fbt._("Comment unlocked", null, {
 									hk: "4v2jmJ"
 								});
-							case x.s.UnmuteUser:
+							case x.t.UnmuteUser:
 								return y.fbt._("Unmuted user", null, {
 									hk: "2aB30x"
 								});
-							case x.s.UnsetContestMode:
+							case x.t.UnsetContestMode:
 								return y.fbt._("Unset post contest mode", null, {
 									hk: "W4Yjf"
 								});
-							case x.s.UnsnoozeReports:
+							case x.t.UnsnoozeReports:
 								return "SubredditPost" === t ? y.fbt._("Post unsnoozed", null, {
 									hk: "3jp8zr"
 								}) : y.fbt._("Comment unsnoozed", null, {
 									hk: "2x01Eq"
 								});
-							case x.s.Unspoiler:
+							case x.t.Unspoiler:
 								return y.fbt._("Removed spoiler tag", null, {
 									hk: "2GvhDn"
 								});
-							case x.s.Unsticky:
+							case x.t.Unsticky:
 								return "SubredditPost" === t ? y.fbt._("Post unstickied", null, {
 									hk: "KXoHl"
 								}) : y.fbt._("Comment unstickied", null, {
 									hk: "dpEKC"
 								});
-							case x.s.UpdateRemovalReason:
-							case x.s.WikiBanned:
-							case x.s.WikiContributor:
-							case x.s.WikiPageListed:
-							case x.s.WikiPermLevel:
-							case x.s.WikiRevise:
-							case x.s.WikiUnbanned:
-							case x.s.AcceptModeratorInvite:
-							case x.s.AddCommunityTopics:
-							case x.s.AddContributor:
-							case x.s.AddModerator:
-							case x.s.CreateAward:
-							case x.s.CreateScheduledPost:
-							case x.s.CreateRemovalReason:
-							case x.s.CommunityStyling:
-							case x.s.CommunityWidgets:
-							case x.s.CreateRule:
-							case x.s.DeleteAward:
-							case x.s.DeleteRule:
-							case x.s.DeleteScheduledPost:
-							case x.s.DeleteOverriddenClassification:
-							case x.s.DeleteRemovalReason:
-							case x.s.DisableAward:
-							case x.s.EditPostRequirements:
-							case x.s.EditRule:
-							case x.s.EditScheduledPost:
-							case x.s.EditSettings:
-							case x.s.EnableAward:
-							case x.s.Events:
-							case x.s.HiddenAward:
-							case x.s.InviteModerator:
-							case x.s.InviteSubscriber:
-							case x.s.ModAwardGiven:
-							case x.s.ModmailEnrollment:
-							case x.s.OverrideClassification:
-							case x.s.RemoveCommunityTopics:
-							case x.s.RemoveContributor:
-							case x.s.RemoveModerator:
-							case x.s.RemoveWikiContributor:
-							case x.s.ReorderModerators:
-							case x.s.ReorderRules:
-							case x.s.SetPermissions:
-							case x.s.SnoozeReports:
-							case x.s.SubmitContentRatingSurvey:
-							case x.s.SubmitScheduledPost:
-							case x.s.UnignoreReports:
-							case x.s.UninviteModerator:
+							case x.t.UpdateRemovalReason:
+							case x.t.WikiBanned:
+							case x.t.WikiContributor:
+							case x.t.WikiPageListed:
+							case x.t.WikiPermLevel:
+							case x.t.WikiRevise:
+							case x.t.WikiUnbanned:
+							case x.t.AcceptModeratorInvite:
+							case x.t.AddCommunityTopics:
+							case x.t.AddContributor:
+							case x.t.AddModerator:
+							case x.t.CreateAward:
+							case x.t.CreateScheduledPost:
+							case x.t.CreateRemovalReason:
+							case x.t.CommunityStyling:
+							case x.t.CommunityWidgets:
+							case x.t.CreateRule:
+							case x.t.DeleteAward:
+							case x.t.DeleteRule:
+							case x.t.DeleteScheduledPost:
+							case x.t.DeleteOverriddenClassification:
+							case x.t.DeleteRemovalReason:
+							case x.t.DisableAward:
+							case x.t.EditPostRequirements:
+							case x.t.EditRule:
+							case x.t.EditScheduledPost:
+							case x.t.EditSettings:
+							case x.t.EnableAward:
+							case x.t.Events:
+							case x.t.HiddenAward:
+							case x.t.InviteModerator:
+							case x.t.InviteSubscriber:
+							case x.t.ModAwardGiven:
+							case x.t.ModmailEnrollment:
+							case x.t.OverrideClassification:
+							case x.t.RemoveCommunityTopics:
+							case x.t.RemoveContributor:
+							case x.t.RemoveModerator:
+							case x.t.RemoveWikiContributor:
+							case x.t.ReorderModerators:
+							case x.t.ReorderRules:
+							case x.t.SetPermissions:
+							case x.t.SnoozeReports:
+							case x.t.SubmitContentRatingSurvey:
+							case x.t.SubmitScheduledPost:
+							case x.t.UnignoreReports:
+							case x.t.UninviteModerator:
 							default:
 								return y.fbt._("Last mod action", null, {
 									hk: "S9AMb"
@@ -873,4 +873,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ModQueueActivitySummaryCards.214505dfaf2e20f96311.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ModQueueActivitySummaryCards.dbe621f63f01a2c2a15d.js.map

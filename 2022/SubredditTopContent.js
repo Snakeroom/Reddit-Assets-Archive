@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditTopContent.49c6ed04eaf47c79c720.js
-// Retrieved at 10/12/2022, 2:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditTopContent.60640eab064d82a28992.js
+// Retrieved at 10/13/2022, 9:40:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditTopContent"], {
 		"./src/lib/getShortenedLink.ts": function(e, t, s) {
@@ -395,8 +395,8 @@
 				},
 				G = s("./src/reddit/components/JSAPIContainers/index.tsx"),
 				Z = s("./src/reddit/components/Media/index.tsx"),
-				Y = s("./src/reddit/components/MiniCardPost/MetaLine/index.tsx"),
-				K = s("./src/reddit/components/MiniCardPost/Thumbnail/index.tsx"),
+				K = s("./src/reddit/components/MiniCardPost/MetaLine/index.tsx"),
+				Y = s("./src/reddit/components/MiniCardPost/Thumbnail/index.tsx"),
 				X = s("./src/reddit/components/PostBackgroundWrapper/index.tsx"),
 				J = s("./src/reddit/components/PostContainer/index.tsx"),
 				$ = s("./src/reddit/components/PostTitle/index.tsx"),
@@ -474,7 +474,7 @@
 					}, v)));
 					const _ = !O && !E;
 					let j;
-					return C && (j = Object(oe.h)(C) ? Object(ne.b)(C) : Object(ne.c)(C)), r.a.createElement(J.a, {
+					return C && (j = Object(oe.h)(C) ? Object(ne.b)(C) : Object(ne.c)(C)), r.a.createElement(J.b, {
 						className: Object(l.a)(pe.a.container, me.a.largeAndMediumActiveStyles, me.a.largeAndMediumPostStyles, le.a.postContainer, Object(ae.a)(this.props), s),
 						post: p,
 						onClick: u,
@@ -502,7 +502,7 @@
 						post: p,
 						size: $.b.Large,
 						titleColor: o && o.postTitleColor
-					}), g && C && r.a.createElement(Y.a, {
+					}), g && C && r.a.createElement(K.a, {
 						className: pe.a.metaLine,
 						crosspostSubredditOrProfile: n,
 						hideNSFWPref: d,
@@ -512,7 +512,7 @@
 						className: pe.a.flexSpacer
 					}), E && r.a.createElement("div", {
 						className: pe.a.mediaWrapper
-					}, r.a.createElement(K.a, {
+					}, r.a.createElement(Y.a, {
 						className: pe.a.thumbnailWrapper,
 						thumbnailClassName: pe.a.thumbnail,
 						thumbnailContainerClassName: pe.a.thumbnailContainer,
@@ -883,9 +883,9 @@
 				g = s("./src/reddit/constants/experiments.ts"),
 				f = s("./src/reddit/helpers/chooseVariant/index.ts"),
 				C = s("./src/reddit/selectors/user.ts");
-			const k = e => Object(C.N)(e) || g.Yf.ShowTopContent === Object(f.c)(e, {
+			const k = e => Object(C.N)(e) || g.Zf.ShowTopContent === Object(f.c)(e, {
 				experimentEligibilitySelector: f.a,
-				experimentName: g.Sf
+				experimentName: g.Tf
 			});
 			var y = s("./src/reddit/selectors/subreddit.ts"),
 				E = s("./src/reddit/components/DiscoveryUnit/SubredditTopContentDiscoveryUnit/index.m.less"),
@@ -1065,7 +1065,7 @@
 				} = e.post;
 				return n.a.createElement("div", {
 					className: Object(r.a)(c.a.container, e.className)
-				}, n.a.createElement(i.a, {
+				}, n.a.createElement(i.b, {
 					className: Object(r.a)(c.a.thumbnail, e.thumbnailClassName),
 					containerClassName: Object(r.a)(c.a.thumbnailContainer, e.thumbnailContainerClassName),
 					linkIconClassName: Object(r.a)(c.a.thumbnailLinkIcon, e.thumbnailLinkIconClassName),
@@ -1118,6 +1118,9 @@
 		},
 		"./src/reddit/components/PostContainer/index.tsx": function(e, t, s) {
 			"use strict";
+			s.d(t, "a", (function() {
+				return _
+			}));
 			var a = s("./node_modules/react/index.js"),
 				n = s.n(a),
 				r = s("./node_modules/reselect/es/index.js"),
@@ -1234,7 +1237,7 @@
 					}, e) : e)(k))
 				}
 			}
-			t.a = O(Object(k.a)(Object(C.a)(Object(u.c)(j))))
+			t.b = O(Object(k.a)(Object(C.a)(Object(u.c)(j))))
 		},
 		"./src/reddit/components/PostTitle/index.m.less": function(e, t, s) {
 			e.exports = {
@@ -1269,7 +1272,7 @@
 			s.d(t, "b", (function() {
 				return A
 			})), s.d(t, "a", (function() {
-				return Y
+				return K
 			}));
 			var a = s("./src/config.ts"),
 				n = s("./node_modules/polished/dist/polished.es.js"),
@@ -1346,7 +1349,7 @@
 			}! function(e) {
 				e[e.ExtraLarge = 0] = "ExtraLarge", e[e.Large = 1] = "Large", e[e.Medium = 2] = "Medium", e[e.Small = 3] = "Small", e[e.ExtraSmall = 4] = "ExtraSmall", e[e.Metadata = 5] = "Metadata"
 			}(A || (A = {}));
-			const Y = e => {
+			const K = e => {
 					let {
 						size: t,
 						titleColor: s,
@@ -1393,7 +1396,7 @@
 						type: a
 					}, r) : r)
 				},
-				K = e => {
+				Y = e => {
 					let {
 						className: t,
 						disableVisited: s,
@@ -1466,7 +1469,7 @@
 								postId: e.id,
 								source: s
 							}, i.a.createElement(ee, t)) : i.a.createElement(ee, t)
-						})(t, e) : i.a.createElement(K, {
+						})(t, e) : i.a.createElement(Y, {
 							className: e.titleLinkClassName,
 							"data-click-id": "body",
 							disableVisited: e.disableVisited,
@@ -1489,7 +1492,7 @@
 					})(n));
 					const r = e.isCommentsPage ? V.a.PostComments : V.a.PostItem,
 						o = !(!e.isNsfwBlurSubreddit || !e.post.isNSFW);
-					return i.a.createElement(Y, {
+					return i.a.createElement(K, {
 						className: e.titleClassName,
 						nowrap: e.nowrap,
 						redditStyle: e.redditStyle || e.isCommentsPage || e.isCommentsPageAd,
@@ -2015,4 +2018,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditTopContent.49c6ed04eaf47c79c720.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditTopContent.60640eab064d82a28992.js.map

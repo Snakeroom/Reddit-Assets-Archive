@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModQueuePages.ed0a0a1111b815f42fae.js
-// Retrieved at 10/12/2022, 2:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModQueuePages.ef151e01fbc7dbaf70ea.js
+// Retrieved at 10/13/2022, 9:40:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModQueuePages"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -914,16 +914,16 @@
 				E = n("./src/reddit/helpers/graphql/normalizePostFromGql/index.ts"),
 				j = n("./src/reddit/helpers/graphql/normalizeSubredditFromGql/index.ts");
 			const y = {
-					[s.wb.Edited]: g.A.Edited,
-					[s.wb.Modqueue]: g.A.Mod,
-					[s.wb.Reports]: g.A.Reported,
-					[s.wb.Spam]: g.A.Removed,
-					[s.wb.Unmoderated]: g.A.Unmoderated
+					[s.wb.Edited]: g.B.Edited,
+					[s.wb.Modqueue]: g.B.Mod,
+					[s.wb.Reports]: g.B.Reported,
+					[s.wb.Spam]: g.B.Removed,
+					[s.wb.Unmoderated]: g.B.Unmoderated
 				},
 				w = {
-					comments: g.y.Comment,
-					links: g.y.Post,
-					chat_comments: g.y.ChatComment
+					comments: g.z.Comment,
+					links: g.z.Post,
+					chat_comments: g.z.ChatComment
 				};
 
 			function I(e) {
@@ -960,7 +960,7 @@
 					...!!o.profile && {
 						subredditIds: [o.profile]
 					},
-					sort: o.sort === b.a.MostReportedFirst ? g.z.SortReports : g.z.SortDate,
+					sort: o.sort === b.a.MostReportedFirst ? g.A.SortReports : g.A.SortDate,
 					...i,
 					includeModActivitySummaries: d
 				}
@@ -2664,7 +2664,7 @@
 					collapsed: s,
 					isCommentAuthorBlocked: Object(j.g)(o),
 					postOrComment: o,
-					tooltipType: m ? g.c.Lightbox : void 0
+					tooltipType: m ? g.f.Lightbox : void 0
 				}, p)
 			};
 			var T = n("./src/config.ts"),
@@ -3111,7 +3111,7 @@
 					isAdmin: T
 				}), r.a.createElement(l.a, {
 					thing: a,
-					tooltipType: R ? g.c.Lightbox : void 0
+					tooltipType: R ? g.f.Lightbox : void 0
 				})), c && !Object(k.o)(c) && r.a.createElement("span", {
 					className: Ie.a.userFlairLine
 				}, r.a.createElement(v.b, {
@@ -3313,7 +3313,7 @@
 					renderedInOverlay: P
 				}), !h && r.a.createElement(l.a, {
 					thing: i,
-					tooltipType: P ? g.c.Lightbox : void 0
+					tooltipType: P ? g.f.Lightbox : void 0
 				}))
 			});
 			const He = e => {
@@ -5613,8 +5613,8 @@
 				i = n("./src/reddit/selectors/experiments/modqueueActionBarUXImprovements.ts");
 			const a = e => Object(i.a)(e) && Object(s.c)(e, {
 				experimentEligibilitySelector: r.Q,
-				experimentName: o.Cc
-			}) === o.Sd
+				experimentName: o.Dc
+			}) === o.Td
 		},
 		"./src/redditGQL/operations/DeleteSubredditMuteSettings.json": function(e) {
 			e.exports = JSON.parse('{"id":"c518a45f60a5"}')
@@ -5627,4 +5627,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModQueuePages.ed0a0a1111b815f42fae.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModQueuePages.ef151e01fbc7dbaf70ea.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/InboxTooltip.8c5677bd1dfeaae32669.js
-// Retrieved at 10/12/2022, 2:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/InboxTooltip.30f049bd7e4bb0fe33cc.js
+// Retrieved at 10/13/2022, 9:40:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["InboxTooltip", "PushNotifications"], {
 		"./src/lib/notifications/token.ts": function(e, t, i) {
@@ -92,15 +92,15 @@
 				j = i("./src/reddit/helpers/trackers/notifications.ts"),
 				v = i("./src/reddit/models/Toast/index.ts"),
 				x = i("./src/reddit/selectors/activeModal.ts"),
-				S = i("./src/reddit/selectors/activeModalId.ts"),
-				k = i("./src/reddit/selectors/experiments/delayDnPermission.ts"),
+				k = i("./src/reddit/selectors/activeModalId.ts"),
+				S = i("./src/reddit/selectors/experiments/delayDnPermission.ts"),
 				w = i("./src/reddit/selectors/experiments/nsfwBlockingExperiment.ts"),
 				N = i("./src/reddit/constants/experiments.ts"),
 				y = i("./src/reddit/helpers/chooseVariant/index.ts");
 			const _ = e => Object(y.c)(e, {
 				experimentName: N.lc,
 				experimentEligibilitySelector: y.a
-			}) === N.Sd;
+			}) === N.Td;
 			var P = i("./src/reddit/selectors/meta.ts"),
 				I = i("./src/reddit/selectors/user.ts");
 			let E = !1;
@@ -132,8 +132,8 @@
 					const c = o(),
 						u = Object(P.f)(c),
 						l = _(c),
-						b = !!Object(S.a)(c),
-						f = Object(k.a)(c),
+						b = !!Object(k.a)(c),
+						f = Object(S.a)(c),
 						p = Object(w.e)(c),
 						g = Object(x.c)(m.a.NSFW_BLOCKING_MODAL_V2)(c);
 					if (p || g) return;
@@ -287,17 +287,17 @@
 					} = O;
 					var j, v, x;
 					e(f());
-					const S = g(i),
-						k = await Object(d.b)(h(), t, S);
-					if ((null === (v = null === (j = k.error) || void 0 === j ? void 0 : j.fields) || void 0 === v ? void 0 : v.length) || function(e) {
+					const k = g(i),
+						S = await Object(d.b)(h(), t, k);
+					if ((null === (v = null === (j = S.error) || void 0 === j ? void 0 : j.fields) || void 0 === v ? void 0 : v.length) || function(e) {
 							return Boolean(e && e.data && e.data.updateSubredditNotificationSettings)
-						}(k.body) && (null === (x = k.body.data.updateSubredditNotificationSettings.errors) || void 0 === x ? void 0 : x.length)) return e(p()), e(Object(a.f)({
+						}(S.body) && (null === (x = S.body.data.updateSubredditNotificationSettings.errors) || void 0 === x ? void 0 : x.length)) return e(p()), e(Object(a.f)({
 						kind: l.b.Error,
 						text: n.fbt._("Failed to change the frequency of notifications from this community, please try again.", null, {
 							hk: "4avFFV"
 						})
 					}));
-					k.ok && (e(Object(s.c)({
+					S.ok && (e(Object(s.c)({
 						subredditId: t,
 						notificationLevel: i
 					})), e(b({
@@ -384,8 +384,8 @@
 					isInboxInfiniteScrollEnabled: j,
 					isInboxPostEmbedEnabled: v,
 					isLoggedIn: x,
-					isOpen: S,
-					isPending: k,
+					isOpen: k,
+					isPending: S,
 					isPushNotificationsSupported: w,
 					markAllAsRead: N,
 					markNotificationAsRead: y,
@@ -398,15 +398,15 @@
 				const C = Object(f.a)(),
 					[B, A] = Object(n.useState)("");
 				return Object(n.useEffect)(() => {
-					if (S && !P.length && x) {
+					if (k && !P.length && x) {
 						c({
 							first: 5
 						})
 					}
-					S && x && (E(), C(Object(b.x)({
+					k && x && (E(), C(Object(b.x)({
 						badgeCount: O
 					})))
-				}, [S]), o.a.createElement(l.b, {
+				}, [k]), o.a.createElement(l.b, {
 					activeOverflowMenuId: B,
 					clearMessageTabBadgeCount: t,
 					cursor: i,
@@ -425,7 +425,7 @@
 					isInboxInfiniteScrollEnabled: j,
 					isInboxPostEmbedEnabled: v,
 					isLoggedIn: x,
-					isPending: k,
+					isPending: S,
 					markAllAsRead: N,
 					markNotificationAsRead: y,
 					messagesBadgeCount: _,
@@ -461,9 +461,9 @@
 			})), i.d(t, "a", (function() {
 				return x
 			})), i.d(t, "n", (function() {
-				return S
-			})), i.d(t, "o", (function() {
 				return k
+			})), i.d(t, "o", (function() {
+				return S
 			})), i.d(t, "h", (function() {
 				return w
 			})), i.d(t, "g", (function() {
@@ -576,7 +576,7 @@
 						type: "all"
 					}
 				}),
-				S = (e, t, i) => o => ({
+				k = (e, t, i) => o => ({
 					...n.o(o),
 					action: "set_frequency",
 					noun: i,
@@ -586,7 +586,7 @@
 						name: t.toLowerCase()
 					}
 				}),
-				k = () => e => ({
+				S = () => e => ({
 					...n.o(e),
 					action: s.c.View,
 					noun: "screen",
@@ -613,4 +613,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/InboxTooltip.8c5677bd1dfeaae32669.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/InboxTooltip.30f049bd7e4bb0fe33cc.js.map

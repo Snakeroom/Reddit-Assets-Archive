@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-MediumPost.7c24b2c96f725818d6fb.js
-// Retrieved at 10/12/2022, 2:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-MediumPost.aa93cc65d1e27c88cf09.js
+// Retrieved at 10/13/2022, 9:40:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-MediumPost"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -896,7 +896,7 @@
 			const ce = Object(ae.a)(e => Object(ie.c)(e, {
 				experimentEligibilitySelector: ie.a,
 				experimentName: re.Lb
-			}), e => e === re.Sd);
+			}), e => e === re.Td);
 			var de = s("./src/reddit/selectors/experiments/contributeBeforeSignUp.ts"),
 				le = s("./src/reddit/selectors/platform.ts"),
 				ue = s("./src/reddit/selectors/posts.ts"),
@@ -3953,7 +3953,7 @@
 					},
 					postId: s.id,
 					small: !0
-				})), o.a.createElement(d.a, {
+				})), o.a.createElement(d.b, {
 					crosspost: t,
 					isCommentsPage: g,
 					post: s,
@@ -4124,7 +4124,7 @@
 					} = Ye, Je = !!(J && (null == ke ? void 0 : ke.isNSFW)), Ze = Object(n.useRef)({
 						renderingObjectInfo: fe
 					});
-					return o.a.createElement(o.a.Fragment, null, o.a.createElement(w.a, {
+					return o.a.createElement(o.a.Fragment, null, o.a.createElement(w.b, {
 						className: Object(c.a)(ae.a.container, t, H.a.largeAndMediumPostStyles, H.a.largeAndMediumActiveStyles, Object(V.a)(e), {
 							[H.a.mUseRedditTheme]: e.redditStyle || e["data-redditstyle"]
 						}),
@@ -4255,7 +4255,7 @@
 						})),
 						post: fe,
 						showEditFlair: Ee,
-						tooltipType: se ? R.c.Lightbox : void 0,
+						tooltipType: se ? R.f.Lightbox : void 0,
 						useFlatlistBreakpoints: Object(N.b)({
 							editPost: !Le,
 							save: !Le,
@@ -5481,6 +5481,9 @@
 		},
 		"./src/reddit/components/PostContainer/index.tsx": function(e, t, s) {
 			"use strict";
+			s.d(t, "a", (function() {
+				return S
+			}));
 			var n = s("./node_modules/react/index.js"),
 				o = s.n(n),
 				r = s("./node_modules/reselect/es/index.js"),
@@ -5597,7 +5600,7 @@
 					}, e) : e)(_))
 				}
 			}
-			t.a = j(Object(_.a)(Object(v.a)(Object(m.c)(k))))
+			t.b = j(Object(_.a)(Object(v.a)(Object(m.c)(k))))
 		},
 		"./src/reddit/components/PostFollow/index.m.less": function(e, t, s) {
 			e.exports = {
@@ -6218,12 +6221,12 @@
 				}, B && r.a.createElement(d.h, {
 					type: L.belongsTo.type,
 					id: L.belongsTo.id
-				}), r.a.createElement(m.d, {
+				}), r.a.createElement(m.g, {
 					className: S.a.postTopMeta,
 					forceOpenInNewTab: o,
 					flairStyleTemplate: s,
 					isModWithUserNotesPermissions: P,
-					tooltipType: R ? m.c.Lightbox : void 0,
+					tooltipType: R ? m.f.Lightbox : void 0,
 					post: L,
 					showSub: B,
 					subredditOrProfile: V
@@ -6233,11 +6236,11 @@
 					inSubredditOrProfile: w,
 					isCompactPinnedPost: T,
 					post: L,
-					tooltipType: R ? m.c.Lightbox : void 0
+					tooltipType: R ? m.f.Lightbox : void 0
 				}), !K && r.a.createElement(c.a, {
 					isPostDetail: N,
 					thing: L,
-					tooltipType: R ? m.c.Lightbox : void 0
+					tooltipType: R ? m.f.Lightbox : void 0
 				})), V && z && B && D && !I && r.a.createElement(f.a, {
 					className: S.a.SubscribeButton,
 					getEventFactory: e => Object(v.k)(L.id, e ? "unsubscribe" : "subscribe", "post", M, k),
@@ -9139,7 +9142,7 @@
 					return Object(o.c)(e, {
 						experimentEligibilitySelector: o.a,
 						experimentName: n.Wb
-					}) === n.Sd
+					}) === n.Td
 				})(e)
 			}
 		},
@@ -9228,8 +9231,8 @@
 					if (Object(i.a)(e)) return !1;
 					return Object(o.c)(e, {
 						experimentEligibilitySelector: o.a,
-						experimentName: n.Bc
-					}) === n.cd.Enabled
+						experimentName: n.Cc
+					}) === n.dd.Enabled
 				}
 		},
 		"./src/reddit/selectors/experiments/presence.ts": function(e, t, s) {
@@ -9242,8 +9245,8 @@
 			const r = e => {
 				return Object(o.c)(e, {
 					experimentEligibilitySelector: o.a,
-					experimentName: n.if
-				}) === n.Sd
+					experimentName: n.jf
+				}) === n.Td
 			}
 		},
 		"./src/reddit/selectors/i18n/index.ts": function(e, t, s) {
@@ -9259,7 +9262,7 @@
 				i = s("./src/reddit/selectors/experiments/nsfwListingBelow.ts");
 			const a = e => {
 					const t = Object(i.a)(e);
-					return Boolean(t) && !Object(o.xg)(t)
+					return Boolean(t) && !Object(o.yg)(t)
 				},
 				c = Object(n.a)(a, r.d, (e, t) => e && !t)
 		},
@@ -9336,10 +9339,10 @@
 				r = s("./src/reddit/helpers/chooseVariant/index.ts"),
 				i = s("./src/reddit/selectors/posts.ts");
 			const a = e => Object(r.c)(e, {
-					experimentName: o.lf,
+					experimentName: o.mf,
 					experimentEligibilitySelector: r.a
 				}),
-				c = (e, t) => t === o.tf.Enabled && (null == e ? void 0 : e.isCreatedFromAdsUi) || (null == e ? void 0 : e.isSponsored),
+				c = (e, t) => t === o.uf.Enabled && (null == e ? void 0 : e.isCreatedFromAdsUi) || (null == e ? void 0 : e.isSponsored),
 				d = Object(n.a)(i.G, a, (e, t) => c(e, t));
 			Object(n.a)((e, t) => t, a, (e, t) => c(e, t))
 		},
@@ -9437,4 +9440,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-MediumPost.7c24b2c96f725818d6fb.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-MediumPost.aa93cc65d1e27c88cf09.js.map

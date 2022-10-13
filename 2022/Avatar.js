@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Avatar.7868f88b1c39c3e18aff.js
-// Retrieved at 10/12/2022, 2:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Avatar.227db01d161a1795beb1.js
+// Retrieved at 10/13/2022, 9:40:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Avatar"], {
 		"./src/reddit/components/AvatarBuilder/index.m.less": function(e, t, a) {
@@ -50,7 +50,7 @@
 					} = e;
 					const b = Object(u.a)(),
 						E = Object(c.e)(e => e.user.session),
-						[j, x] = Object(r.useState)(!1),
+						[x, j] = Object(r.useState)(!1),
 						g = Object(r.useContext)(d.a),
 						h = Object(c.d)(),
 						A = () => h(Object(i.openLoginModal)()),
@@ -59,7 +59,7 @@
 					Object(r.useEffect)(() => {
 						b(l.r)
 					}, [b]), Object(r.useEffect)(() => {
-						x(!0)
+						j(!0)
 					}, []);
 					const {
 						activeDetails: M,
@@ -72,7 +72,7 @@
 						activeDetails: M || void 0,
 						shopTabState: R || void 0
 					}), [M, T, C, R]), I = Object(c.e)(e => !Object(m.Q)(e) && Object(p.C)(e));
-					if (!E || !j) return null;
+					if (!E || !x) return null;
 					if (I) return s.a.createElement("div", {
 						className: Object(o.a)(O.a.container, {
 							[O.a.containerExp]: g
@@ -96,9 +96,9 @@
 							[O.a.snoovatarModalBuilderV2]: t,
 							[O.a.containerExp]: g
 						})
-					}, k ? s.a.createElement(n.a, N, s.a.createElement(n.b, {
+					}, k ? s.a.createElement(n.a, f({}, N, {
 						navState: y
-					})) : s.a.createElement(_, f({}, a, {
+					}), s.a.createElement(n.b, null)) : s.a.createElement(_, f({}, a, {
 						appWrapperProps: N,
 						navState: y
 					})))
@@ -261,8 +261,8 @@
 			}));
 			var n = a("./src/reddit/constants/experiments.ts"),
 				r = a("./src/reddit/selectors/experiments/econ/simpleExperiment.ts");
-			const s = Object(r.a)(n.wd)
+			const s = Object(r.a)(n.xd)
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Avatar.7868f88b1c39c3e18aff.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Avatar.227db01d161a1795beb1.js.map
