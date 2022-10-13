@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/RpanListingUnit.7d969bf18c5b6b4736b2.js
-// Retrieved at 10/13/2022, 9:40:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/RpanListingUnit.3ffaef1931437c9f4a1d.js
+// Retrieved at 10/13/2022, 2:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["RpanListingUnit"], {
 		"./node_modules/lodash/_arrayEvery.js": function(e, t) {
@@ -52,16 +52,16 @@
 			const p = Object(o.a)(e => {
 				const t = Object(m.c)(e, {
 					experimentEligibilitySelector: m.a,
-					experimentName: u.Le
+					experimentName: u.Ke
 				});
-				return Object(u.yg)(t) ? void 0 : t
+				return Object(u.xg)(t) ? void 0 : t
 			}, e => {
 				const t = Object(m.c)(e, {
 					experimentEligibilitySelector: m.a,
-					experimentName: u.Me
+					experimentName: u.Le
 				});
-				return Object(u.yg)(t) ? void 0 : t
-			}, (e, t) => e === u.Ne.Enabled && t === u.Ne.Enabled);
+				return Object(u.xg)(t) ? void 0 : t
+			}, (e, t) => e === u.Me.Enabled && t === u.Me.Enabled);
 			var h = s("./src/config.ts");
 			var b = s("./src/reddit/selectors/user.ts");
 			const E = e => {
@@ -82,14 +82,14 @@
 			! function(e) {
 				e.SHA1 = "SHA-1", e.SHA256 = "SHA-256", e.SHA384 = "SHA-384", e.SHA512 = "SHA-512"
 			}(_ || (_ = {}));
-			const O = async e => (async (e, t) => {
+			const S = async e => (async (e, t) => {
 				const s = (new TextEncoder).encode(t),
 					n = await crypto.subtle.digest(e, s);
 				return Array.from(new Uint8Array(n)).map(f).join("")
 			})(_.SHA1, e);
 
-			function S() {
-				return (S = Object.assign || function(e) {
+			function O() {
+				return (O = Object.assign || function(e) {
 					for (var t = 1; t < arguments.length; t++) {
 						var s = arguments[t];
 						for (var n in s) Object.prototype.hasOwnProperty.call(s, n) && (e[n] = s[n])
@@ -156,7 +156,7 @@
 							forwardedRef: t,
 							...s
 						} = this.props, n = s;
-						return r.a.createElement(e, S({}, n, {
+						return r.a.createElement(e, O({}, n, {
 							onDashCreate: this.handleDashCreate,
 							onDashDestroy: this.handleDashDestroy,
 							onHlsCreate: this.handleHlsCreate,
@@ -209,7 +209,7 @@
 						const e = this.props.redditUserId || L.ANONYMOUS_USER_ID,
 							t = this.getOrCreateSalt(),
 							s = `${v()}${e}${t}`;
-						return (await O(s)).substr(0, L.VIEWER_USER_ID_LENGTH)
+						return (await S(s)).substr(0, L.VIEWER_USER_ID_LENGTH)
 					}
 					getDashInstanceData() {
 						const {
@@ -277,7 +277,7 @@
 					}
 				}
 				L.displayName = C(e), L.ANONYMOUS_USER_ID = s, L.DEBUG = d, L.DISABLE_COOKIES = u, L.DURATION_LIVE = 1 / 0, L.ENV_KEY = m, L.LOCAL_STORAGE_SALT_KEY = f, L.LOCAL_STORAGE_VIEWER_USER_ID_KEY = _, L.PLAYER_NAME = I, L.PLAYER_VERSION = N, L.RESPECT_DO_NOT_TRACK = x, L.SALT_LENGTH = y, L.SALT_TIME_TO_LIVE = T, L.STREAM_TYPE_LIVE = "live", L.STREAM_TYPE_ON_DEMAND = "on-demand", L.VIEWER_USER_ID_LENGTH = D;
-				const A = Object(n.forwardRef)((e, t) => r.a.createElement(L, S({}, e, {
+				const A = Object(n.forwardRef)((e, t) => r.a.createElement(L, O({}, e, {
 						forwardedRef: t
 					}))),
 					R = Object(o.c)({
@@ -348,9 +348,9 @@
 			})), s.d(t, "h", (function() {
 				return _
 			})), s.d(t, "p", (function() {
-				return O
-			})), s.d(t, "q", (function() {
 				return S
+			})), s.d(t, "q", (function() {
+				return O
 			})), s.d(t, "o", (function() {
 				return C
 			}));
@@ -371,8 +371,8 @@
 				v = "REORDER_COLLECTION_PENDING",
 				f = "REORDER_COLLECTION_SUCCESS",
 				_ = "REORDER_COLLECTION_FAILED",
-				O = "UPDATE_COLLECTION_LAYOUT_PENDING",
-				S = "UPDATE_COLLECTION_LAYOUT_SUCCESS",
+				S = "UPDATE_COLLECTION_LAYOUT_PENDING",
+				O = "UPDATE_COLLECTION_LAYOUT_SUCCESS",
 				C = "UPDATE_COLLECTION_LAYOUT_FAILED"
 		},
 		"./src/reddit/components/JSAPIContainers/index.tsx": function(e, t, s) {
@@ -380,9 +380,9 @@
 			s.d(t, "a", (function() {
 				return f
 			})), s.d(t, "b", (function() {
-				return O
-			})), s.d(t, "c", (function() {
 				return S
+			})), s.d(t, "c", (function() {
+				return O
 			})), s.d(t, "d", (function() {
 				return g
 			})), s.d(t, "e", (function() {
@@ -491,7 +491,7 @@
 					subredditOrProfile: n
 				}
 			};
-			var O = Object(i.b)(() => Object(o.a)(_, e => e))(e => r.a.createElement(p, {
+			var S = Object(i.b)(() => Object(o.a)(_, e => e))(e => r.a.createElement(p, {
 				type: "commentAuthor",
 				data: {
 					author: e.comment.author,
@@ -509,7 +509,7 @@
 					}
 				}
 			}));
-			var S = Object(i.b)(() => Object(o.c)({
+			var O = Object(i.b)(() => Object(o.c)({
 					subreddit: E.X
 				}))(e => r.a.createElement(p, {
 					className: e.className,
@@ -684,8 +684,8 @@
 				v = s("./src/reddit/actions/publicAccessNetwork/streams.ts"),
 				f = s("./src/reddit/components/PublicAccessNetwork/Theater/Overlay/refresh.tsx"),
 				_ = s("./src/reddit/constants/chat.ts"),
-				O = s("./src/reddit/constants/postLayout.ts"),
-				S = s("./src/reddit/helpers/localStorage/index.ts"),
+				S = s("./src/reddit/constants/postLayout.ts"),
+				O = s("./src/reddit/helpers/localStorage/index.ts"),
 				C = s("./src/reddit/helpers/overlay/index.ts"),
 				g = s("./src/reddit/helpers/publicAccessNetwork/index.ts"),
 				I = s("./src/reddit/helpers/trackers/rpan.ts"),
@@ -709,9 +709,9 @@
 				Y = s("./src/reddit/controls/Score/index.tsx"),
 				B = s("./src/reddit/icons/fonts/index.tsx"),
 				W = s("./src/reddit/helpers/styles/mixins/index.m.less"),
-				G = s.n(W),
-				K = s("./src/reddit/components/PublicAccessNetwork/ListingUnit/index.m.less"),
-				q = s.n(K);
+				K = s.n(W),
+				G = s("./src/reddit/components/PublicAccessNetwork/ListingUnit/index.m.less"),
+				q = s.n(G);
 			const {
 				fbt: Z
 			} = s("./node_modules/fbt/lib/FbtPublic.js"), z = 20, J = l.xc, X = l.xc, $ = Object(c.a)(P.a, {
@@ -770,19 +770,19 @@
 			class se extends n.Component {
 				constructor(e) {
 					super(e), this.observableElement = r.a.createRef(), this.videoRef = r.a.createRef(), this.videoSessionManager = null, this.timerId = "rpan-du-active-watch-timer-id", this.handleSuccessfulPlayback = () => {
-						Object(S.Y)()
+						Object(O.Y)()
 					}, this.handleUnsuccessfulPlayback = () => {
-						const e = Number(Object(S.O)());
+						const e = Number(Object(O.O)());
 						if (e) {
 							if (Date.now() - e >= J) {
-								Object(S.Y)();
+								Object(O.Y)();
 								const e = 30 * l.E,
 									t = Date.now() - e + X;
 								this.props.onHideRpanUnit(t, {
 									showToast: !1
 								})
 							}
-						} else Object(S.Rb)(Date.now())
+						} else Object(O.Rb)(Date.now())
 					}, this.onResourceRemoved = () => {
 						this.subscribeStats()
 					}, this.onError = () => {
@@ -904,8 +904,8 @@
 					} = t, {
 						isVisible: b,
 						isLoadable: E
-					} = this, v = l && m && !a, f = !v && b, _ = v && !b, O = l && h && !a, S = o ? O && !E : _;
-					(o ? !O && E : f) ? (this.subscribeConfig(), this.subscribeStreams()) : S && (this.unsubscribeConfig(), this.unsubscribeStreams());
+					} = this, v = l && m && !a, f = !v && b, _ = v && !b, S = l && h && !a, O = o ? S && !E : _;
+					(o ? !S && E : f) ? (this.subscribeConfig(), this.subscribeStreams()) : O && (this.unsubscribeConfig(), this.unsubscribeStreams());
 					const C = i && i.post.id,
 						g = C !== (c && c.post.id),
 						I = !!C;
@@ -931,22 +931,22 @@
 				render() {
 					const {
 						layout: e
-					} = this.props, t = e === O.g.Classic ? this.renderClassicContent() : e === O.g.Compact ? this.renderCompactContent() : this.renderLargeContent();
+					} = this.props, t = e === S.g.Classic ? this.renderClassicContent() : e === S.g.Compact ? this.renderCompactContent() : this.renderLargeContent();
 					return r.a.createElement("div", {
 						className: Object(d.a)(q.a.container, {
-							[G.a.largeAndMediumPostStyles]: e === O.g.Large || e === O.g.Medium,
-							[G.a.classicPostStyles]: e === O.g.Classic,
-							[G.a.compactPostStyles]: e === O.g.Compact,
-							[q.a.large]: e === O.g.Large || e === O.g.Medium,
-							[q.a.classic]: e === O.g.Classic,
-							[q.a.compact]: e === O.g.Compact
+							[K.a.largeAndMediumPostStyles]: e === S.g.Large || e === S.g.Medium,
+							[K.a.classicPostStyles]: e === S.g.Classic,
+							[K.a.compactPostStyles]: e === S.g.Compact,
+							[q.a.large]: e === S.g.Large || e === S.g.Medium,
+							[q.a.classic]: e === S.g.Classic,
+							[q.a.compact]: e === S.g.Compact
 						}, this.props.className)
-					}, e !== O.g.Large && r.a.createElement(w.b, {
+					}, e !== S.g.Large && r.a.createElement(w.b, {
 						className: q.a.leftRail,
-						withoutComputedStyles: e === O.g.Compact
+						withoutComputedStyles: e === S.g.Compact
 					}, r.a.createElement(ne, {
 						isVertical: !0
-					}), e === O.g.Compact && r.a.createElement(ne, {
+					}), e === S.g.Compact && r.a.createElement(ne, {
 						isVertical: !1
 					})), r.a.createElement(k.a, {
 						className: q.a.backgroundWrapper,
@@ -1030,7 +1030,7 @@
 				renderLiveStatus() {
 					return this.isLive ? r.a.createElement("span", {
 						className: Object(d.a)(q.a.liveStatus, {
-							[q.a.compact]: this.props.layout === O.g.Compact
+							[q.a.compact]: this.props.layout === S.g.Compact
 						})
 					}, r.a.createElement(f.g, null)) : null
 				}
@@ -1456,7 +1456,7 @@
 			})), s.d(t, "n", (function() {
 				return _
 			})), s.d(t, "h", (function() {
-				return O
+				return S
 			})), s.d(t, "g", (function() {
 				return C
 			})), s.d(t, "l", (function() {
@@ -1574,7 +1574,7 @@
 					noun: "submit_post_now",
 					...i(e)
 				}),
-				O = e => t => ({
+				S = e => t => ({
 					source: "post",
 					action: "click",
 					noun: "overflow_menu",
@@ -1583,7 +1583,7 @@
 						pageType: e ? "recurring_posts" : "scheduled_posts"
 					})
 				}),
-				S = {
+				O = {
 					[n.d.Hourly]: "hourly_frequency",
 					[n.d.Daily]: "daily_frequency",
 					[n.d.Weekly]: "weekly_frequency",
@@ -1593,7 +1593,7 @@
 				C = e => t => ({
 					source: "scheduled_post_composer_submit_frequency",
 					action: "click",
-					noun: null === e ? "one_time_frequency" : S[e],
+					noun: null === e ? "one_time_frequency" : O[e],
 					...i(t)
 				}),
 				g = () => e => ({
@@ -1882,9 +1882,9 @@
 			})), s.d(t, "k", (function() {
 				return _
 			})), s.d(t, "i", (function() {
-				return O
-			})), s.d(t, "j", (function() {
 				return S
+			})), s.d(t, "j", (function() {
+				return O
 			})), s.d(t, "d", (function() {
 				return C
 			})), s.d(t, "n", (function() {
@@ -1932,8 +1932,8 @@
 			const v = e => h[E[e]],
 				f = e => E[h[e]],
 				_ = e => b[h[e]],
-				O = e => h[b[e]],
-				S = e => E[b[e]];
+				S = e => h[b[e]],
+				O = e => E[b[e]];
 			var C;
 			! function(e) {
 				e.Hourly = "HOURLY", e.Daily = "DAILY", e.Weekly = "WEEKLY", e.Monthly = "MONTHLY"
@@ -1982,14 +1982,14 @@
 				r = s("./src/reddit/helpers/chooseVariant/index.ts"),
 				i = s("./src/reddit/selectors/experiments/index.ts");
 			const o = e => Object(r.c)(e, {
-					experimentName: n.zb,
+					experimentName: n.yb,
 					experimentEligibilitySelector: i.e
-				}) === n.Td,
+				}) === n.Sd,
 				a = e => Object(r.c)(e, {
-					experimentName: n.Bc,
+					experimentName: n.Ac,
 					experimentEligibilitySelector: r.a
-				}) === n.Td
+				}) === n.Sd
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RpanListingUnit.7d969bf18c5b6b4736b2.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RpanListingUnit.3ffaef1931437c9f4a1d.js.map

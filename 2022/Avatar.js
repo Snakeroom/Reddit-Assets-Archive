@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Avatar.227db01d161a1795beb1.js
-// Retrieved at 10/13/2022, 9:40:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Avatar.dabd1b1a27dcf822c3cb.js
+// Retrieved at 10/13/2022, 2:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Avatar"], {
 		"./src/reddit/components/AvatarBuilder/index.m.less": function(e, t, a) {
@@ -50,7 +50,7 @@
 					} = e;
 					const b = Object(u.a)(),
 						E = Object(c.e)(e => e.user.session),
-						[x, j] = Object(r.useState)(!1),
+						[j, x] = Object(r.useState)(!1),
 						g = Object(r.useContext)(d.a),
 						h = Object(c.d)(),
 						A = () => h(Object(i.openLoginModal)()),
@@ -59,7 +59,7 @@
 					Object(r.useEffect)(() => {
 						b(l.r)
 					}, [b]), Object(r.useEffect)(() => {
-						j(!0)
+						x(!0)
 					}, []);
 					const {
 						activeDetails: M,
@@ -72,7 +72,7 @@
 						activeDetails: M || void 0,
 						shopTabState: R || void 0
 					}), [M, T, C, R]), I = Object(c.e)(e => !Object(m.Q)(e) && Object(p.C)(e));
-					if (!E || !x) return null;
+					if (!E || !j) return null;
 					if (I) return s.a.createElement("div", {
 						className: Object(o.a)(O.a.container, {
 							[O.a.containerExp]: g
@@ -261,8 +261,8 @@
 			}));
 			var n = a("./src/reddit/constants/experiments.ts"),
 				r = a("./src/reddit/selectors/experiments/econ/simpleExperiment.ts");
-			const s = Object(r.a)(n.xd)
+			const s = Object(r.a)(n.wd)
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Avatar.227db01d161a1795beb1.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Avatar.dabd1b1a27dcf822c3cb.js.map

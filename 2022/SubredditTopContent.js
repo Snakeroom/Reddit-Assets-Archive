@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditTopContent.19b6d7a699b8cfc95fb9.js
-// Retrieved at 10/13/2022, 1:10:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditTopContent.1efb04d8ec76583d6336.js
+// Retrieved at 10/13/2022, 2:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditTopContent"], {
 		"./src/lib/getShortenedLink.ts": function(e, t, s) {
@@ -395,8 +395,8 @@
 				},
 				G = s("./src/reddit/components/JSAPIContainers/index.tsx"),
 				Z = s("./src/reddit/components/Media/index.tsx"),
-				K = s("./src/reddit/components/MiniCardPost/MetaLine/index.tsx"),
-				Y = s("./src/reddit/components/MiniCardPost/Thumbnail/index.tsx"),
+				Y = s("./src/reddit/components/MiniCardPost/MetaLine/index.tsx"),
+				K = s("./src/reddit/components/MiniCardPost/Thumbnail/index.tsx"),
 				X = s("./src/reddit/components/PostBackgroundWrapper/index.tsx"),
 				J = s("./src/reddit/components/PostContainer/index.tsx"),
 				$ = s("./src/reddit/components/PostTitle/index.tsx"),
@@ -502,7 +502,7 @@
 						post: p,
 						size: $.b.Large,
 						titleColor: o && o.postTitleColor
-					}), g && C && r.a.createElement(K.a, {
+					}), g && C && r.a.createElement(Y.a, {
 						className: pe.a.metaLine,
 						crosspostSubredditOrProfile: n,
 						hideNSFWPref: d,
@@ -512,7 +512,7 @@
 						className: pe.a.flexSpacer
 					}), E && r.a.createElement("div", {
 						className: pe.a.mediaWrapper
-					}, r.a.createElement(Y.a, {
+					}, r.a.createElement(K.a, {
 						className: pe.a.thumbnailWrapper,
 						thumbnailClassName: pe.a.thumbnail,
 						thumbnailContainerClassName: pe.a.thumbnailContainer,
@@ -883,9 +883,9 @@
 				g = s("./src/reddit/constants/experiments.ts"),
 				f = s("./src/reddit/helpers/chooseVariant/index.ts"),
 				C = s("./src/reddit/selectors/user.ts");
-			const k = e => Object(C.N)(e) || g.Zf.ShowTopContent === Object(f.c)(e, {
+			const k = e => Object(C.N)(e) || g.Yf.ShowTopContent === Object(f.c)(e, {
 				experimentEligibilitySelector: f.a,
-				experimentName: g.Tf
+				experimentName: g.Sf
 			});
 			var y = s("./src/reddit/selectors/subreddit.ts"),
 				E = s("./src/reddit/components/DiscoveryUnit/SubredditTopContentDiscoveryUnit/index.m.less"),
@@ -1272,7 +1272,7 @@
 			s.d(t, "b", (function() {
 				return A
 			})), s.d(t, "a", (function() {
-				return K
+				return Y
 			}));
 			var a = s("./src/config.ts"),
 				n = s("./node_modules/polished/dist/polished.es.js"),
@@ -1349,7 +1349,7 @@
 			}! function(e) {
 				e[e.ExtraLarge = 0] = "ExtraLarge", e[e.Large = 1] = "Large", e[e.Medium = 2] = "Medium", e[e.Small = 3] = "Small", e[e.ExtraSmall = 4] = "ExtraSmall", e[e.Metadata = 5] = "Metadata"
 			}(A || (A = {}));
-			const K = e => {
+			const Y = e => {
 					let {
 						size: t,
 						titleColor: s,
@@ -1396,7 +1396,7 @@
 						type: a
 					}, r) : r)
 				},
-				Y = e => {
+				K = e => {
 					let {
 						className: t,
 						disableVisited: s,
@@ -1469,7 +1469,7 @@
 								postId: e.id,
 								source: s
 							}, i.a.createElement(ee, t)) : i.a.createElement(ee, t)
-						})(t, e) : i.a.createElement(Y, {
+						})(t, e) : i.a.createElement(K, {
 							className: e.titleLinkClassName,
 							"data-click-id": "body",
 							disableVisited: e.disableVisited,
@@ -1492,7 +1492,7 @@
 					})(n));
 					const r = e.isCommentsPage ? V.a.PostComments : V.a.PostItem,
 						o = !(!e.isNsfwBlurSubreddit || !e.post.isNSFW);
-					return i.a.createElement(K, {
+					return i.a.createElement(Y, {
 						className: e.titleClassName,
 						nowrap: e.nowrap,
 						redditStyle: e.redditStyle || e.isCommentsPage || e.isCommentsPageAd,
@@ -2018,4 +2018,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditTopContent.19b6d7a699b8cfc95fb9.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditTopContent.1efb04d8ec76583d6336.js.map

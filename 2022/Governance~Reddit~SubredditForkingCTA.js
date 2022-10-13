@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~Reddit~SubredditForkingCTA.f66a8abe89bbb7fb6524.js
-// Retrieved at 10/13/2022, 1:10:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~Reddit~SubredditForkingCTA.7fd8dd7df344a808922f.js
+// Retrieved at 10/13/2022, 2:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~Reddit~SubredditForkingCTA"], {
 		"./src/lib/bigNumberUtils/percent.ts": function(t, e, r) {
@@ -52,8 +52,8 @@
 			}), u = r("./node_modules/fbt/lib/FbtPublic.js"), l = r("./src/reddit/models/Toast/index.ts"), b = r("./node_modules/reselect/es/index.js"), f = r("./src/reddit/constants/experiments.ts"), p = r("./src/reddit/helpers/chooseVariant/index.ts"), m = r("./src/reddit/selectors/user.ts");
 			const h = Object(b.a)(t => Object(p.c)(t, {
 				experimentEligibilitySelector: m.Q,
-				experimentName: f.ec
-			}), t => t === f.Td);
+				experimentName: f.dc
+			}), t => t === f.Sd);
 			var O = r("./src/reddit/actions/toaster.ts");
 			const _ = "SUBREDDIT_COUNTRY_SITE__LOADED",
 				y = "SUBREDDIT_COUNTRY_SITE__CHANGED",
@@ -1464,7 +1464,7 @@
 								postFieldValidationPending: Promise.resolve()
 							})), Object(l.b)(D)
 						}
-						await e(Object(n.b)(`${r.path}`)), p ? p === b.Xe.NewModule && e(Object(c.h)({
+						await e(Object(n.b)(`${r.path}`)), p ? p === b.We.NewModule && e(Object(c.h)({
 							tooltipId: u.MOD_WELCOME_TOOLTIP_ID
 						})) : (e(Object(o.h)(f.a.POST_FLOW_UPSELL_MODAL_ID)), Object(k.a)(Object(E.g)()(T))), Object(j.b)(j.a.SubredditCreation), e(Object(x.f)(i, null !== (g = Object(C.bb)(T)) && void 0 !== g ? g : Object(I.j)(T)))
 					} else w.error && Object(k.a)(Object(E.h)(w.error.type, N)(T)), e(U({
@@ -3050,4 +3050,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit~SubredditForkingCTA.f66a8abe89bbb7fb6524.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit~SubredditForkingCTA.7fd8dd7df344a808922f.js.map

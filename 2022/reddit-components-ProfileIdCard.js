@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-ProfileIdCard.da4dce8e4a091345132e.js
-// Retrieved at 10/13/2022, 1:10:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-ProfileIdCard.8e9a8e5cfadf130aa487.js
+// Retrieved at 10/13/2022, 2:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-ProfileIdCard"], {
 		"./node_modules/lodash/compact.js": function(e, t) {
@@ -2766,8 +2766,8 @@
 				page: O.b,
 				allowNFTs: e => Object(y.c)(e, {
 					experimentEligibilitySelector: y.a,
-					experimentName: E.v
-				}) === E.x.Enabled,
+					experimentName: E.u
+				}) === E.w.Enabled,
 				isUserBlocked: P.L
 			}), ve = e => {
 				let {
@@ -3568,9 +3568,9 @@
 				s = r("./src/reddit/helpers/chooseVariant/index.ts"),
 				o = r("./src/reddit/selectors/user.ts");
 			const a = e => Object(s.c)(e, {
-				experimentName: n.F,
+				experimentName: n.E,
 				experimentEligibilitySelector: () => Object(o.P)(e)
-			}) === n.Td
+			}) === n.Sd
 		},
 		"./src/reddit/selectors/experiments/crisisTextLine.ts": function(e, t, r) {
 			"use strict";
@@ -3588,7 +3588,7 @@
 				}),
 				i = e => n.f.Enabled === Object(s.c)(e, {
 					experimentEligibilitySelector: o.Q,
-					experimentName: n.o
+					experimentName: n.n
 				})
 		},
 		"./src/reddit/selectors/premium.ts": function(e, t, r) {
@@ -3618,4 +3618,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ProfileIdCard.da4dce8e4a091345132e.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ProfileIdCard.8e9a8e5cfadf130aa487.js.map

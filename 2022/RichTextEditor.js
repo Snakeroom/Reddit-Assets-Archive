@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/RichTextEditor.5c9c1e53df5e7b26fa9b.js
-// Retrieved at 10/13/2022, 1:10:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/RichTextEditor.8b3c4aac26fe99bf1c32.js
+// Retrieved at 10/13/2022, 2:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["RichTextEditor", "ContributorRequestButton"], {
 		"./node_modules/autosize/dist/autosize.js": function(e, t, n) {
@@ -773,8 +773,8 @@
 				ae = n("./node_modules/reselect/es/index.js");
 			const ce = Object(ae.a)(e => Object(ie.c)(e, {
 				experimentEligibilitySelector: ie.a,
-				experimentName: se.Lb
-			}), e => e === se.Td);
+				experimentName: se.Kb
+			}), e => e === se.Sd);
 			var de = n("./src/reddit/selectors/experiments/contributeBeforeSignUp.ts"),
 				le = n("./src/reddit/selectors/platform.ts"),
 				ue = n("./src/reddit/selectors/posts.ts"),
@@ -3655,7 +3655,7 @@
 						return Object(ye.cb)(e, n, f.e.Comment)
 					},
 					postAuthorIsBlocked: Ve.w,
-					isTrueblockPCBlockeeEnabled: Ge.e
+					isTrueblockPCBlockeeEnabled: Ge.d
 				}),
 				Qe = Object(a.b)(Je, (e, t) => ({
 					onMount: () => e(d.a(t.draftKey)),
@@ -5945,8 +5945,8 @@
 			const a = Object(o.a)(i.Q, i.P, (e, t) => e || t),
 				c = Object(o.a)(e => Object(s.c)(e, {
 					experimentEligibilitySelector: a,
-					experimentName: r.O
-				}), e => e === r.Y.Enabled)
+					experimentName: r.N
+				}), e => e === r.X.Enabled)
 		},
 		"./src/reddit/selectors/experiments/contributeBeforeSignUp.ts": function(e, t, n) {
 			"use strict";
@@ -5970,11 +5970,11 @@
 				l = Object(o.a)(d, e => !!e),
 				u = e => {
 					const t = d(e);
-					return !!t && c(e, t) === r.eb.SkipOnboarding
+					return !!t && c(e, t) === r.db.SkipOnboarding
 				},
 				m = e => {
 					const t = d(e);
-					return !!t && c(e, t) === r.eb.RegOnboarding
+					return !!t && c(e, t) === r.db.RegOnboarding
 				}
 		},
 		"./src/reddit/selectors/experiments/imageComment.ts": function(e, t, n) {
@@ -5994,20 +5994,20 @@
 			const i = e => {
 					return Object(r.c)(e, {
 						experimentEligibilitySelector: r.a,
-						experimentName: o.se
-					}) === o.Td
+						experimentName: o.re
+					}) === o.Sd
 				},
 				a = e => {
 					return Object(r.c)(e, {
 						experimentEligibilitySelector: r.a,
-						experimentName: o.te
-					}) === o.Td
+						experimentName: o.se
+					}) === o.Sd
 				},
 				c = e => {
 					return Object(r.c)(e, {
 						experimentEligibilitySelector: r.a,
-						experimentName: o.ce
-					}) === o.Td
+						experimentName: o.be
+					}) === o.Sd
 				},
 				d = (e, t) => {
 					let {
@@ -6045,29 +6045,29 @@
 					if (Object(i.a)(e)) return !1;
 					return Object(r.c)(e, {
 						experimentEligibilitySelector: s.e,
-						experimentName: o.sg
-					}) === o.Td
+						experimentName: o.rg
+					}) === o.Sd
 				},
 				c = e => {
 					return Object(r.c)(e, {
 						experimentEligibilitySelector: s.e,
-						experimentName: o.tg
-					}) === o.Td
+						experimentName: o.sg
+					}) === o.Sd
 				},
 				d = e => {
 					if (Object(i.a)(e)) return !1;
 					const t = Object(r.c)(e, {
 						experimentEligibilitySelector: s.e,
-						experimentName: o.rg
+						experimentName: o.qg
 					});
-					return t === o.hg.TypingIndicators || t === o.hg.IndicatorsPlusCTA
+					return t === o.gg.TypingIndicators || t === o.gg.IndicatorsPlusCTA
 				},
 				l = e => {
 					if (Object(i.a)(e)) return !1;
 					const t = Object(s.d)(e, {
-						experimentName: o.rg
+						experimentName: o.qg
 					});
-					return (null == t ? void 0 : t.variant) === o.hg.IndicatorsPlusCTA
+					return (null == t ? void 0 : t.variant) === o.gg.IndicatorsPlusCTA
 				}
 		},
 		"./src/redditGQL/operations/CommentToxicity.json": function(e) {
@@ -6084,4 +6084,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RichTextEditor.5c9c1e53df5e7b26fa9b.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RichTextEditor.8b3c4aac26fe99bf1c32.js.map

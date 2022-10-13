@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Settings.2ccdc9f03fd3a19b8c4c.js
-// Retrieved at 10/13/2022, 1:10:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Settings.22e9deb7739e1ba96881.js
+// Retrieved at 10/13/2022, 2:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Settings"], {
 		"./node_modules/moment/locale sync recursive ^\\.\\/.*$": function(e, t, n) {
@@ -11356,8 +11356,8 @@
 				se = n("./src/reddit/helpers/chooseVariant/index.ts");
 			const re = Object(c.a)(e => Object(se.c)(e, {
 				experimentEligibilitySelector: N.Q,
-				experimentName: ne.S
-			}), e => e === ne.cb.Enabled);
+				experimentName: ne.R
+			}), e => e === ne.bb.Enabled);
 			var ae = n("./src/reddit/selectors/meta.ts"),
 				oe = n("./src/reddit/components/Settings/AccountPrefsSection/index.m.less"),
 				ie = n.n(oe);
@@ -13163,7 +13163,7 @@
 				sr = n("./src/lib/constants/euCookiePolicy.ts");
 			const rr = Object(c.a)(e => Object(se.c)(e, {
 					experimentEligibilitySelector: se.a,
-					experimentName: ne.m
+					experimentName: ne.l
 				}), e => e === ne.e.Enabled),
 				ar = Object(c.a)(e => Object(N.g)(e), e => sr.b.includes(e)),
 				or = Object(c.a)(e => Object(se.c)(e, {
@@ -13172,8 +13172,8 @@
 				}), e => e === ne.c.Enabled),
 				ir = Object(c.a)(e => Object(se.c)(e, {
 					experimentEligibilitySelector: N.Q,
-					experimentName: ne.P
-				}), e => e === ne.Z.Enabled);
+					experimentName: ne.O
+				}), e => e === ne.Y.Enabled);
 			var cr = n("./src/lib/hooks/usePrevious.ts"),
 				lr = n("./src/telemetry/models/Event.ts");
 			const dr = we.a.span("SubheaderLink", rn.a),
@@ -14430,9 +14430,9 @@
 					},
 					isDspEnabled: e => {
 						return Object(se.c)(e, {
-							experimentName: ne.ld,
+							experimentName: ne.kd,
 							experimentEligibilitySelector: se.a
-						}) === ne.Td
+						}) === ne.Sd
 					}
 				}),
 				bo = Object(fe.u)(),
@@ -14983,9 +14983,9 @@
 				r = n("./src/reddit/helpers/chooseVariant/index.ts"),
 				a = n("./src/reddit/selectors/user.ts");
 			const o = e => Object(r.c)(e, {
-				experimentName: s.F,
+				experimentName: s.E,
 				experimentEligibilitySelector: () => Object(a.P)(e)
-			}) === s.Td
+			}) === s.Sd
 		},
 		"./src/reddit/selectors/gold/productOffers.ts": function(e, t, n) {
 			"use strict";
@@ -15149,4 +15149,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Settings.2ccdc9f03fd3a19b8c4c.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Settings.22e9deb7739e1ba96881.js.map

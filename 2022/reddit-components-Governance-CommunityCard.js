@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Governance-CommunityCard.86e7d223a4bf1fa52a6c.js
-// Retrieved at 10/13/2022, 1:10:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Governance-CommunityCard.ddb78b9eb02994373eee.js
+// Retrieved at 10/13/2022, 2:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Governance-CommunityCard"], {
 		"./src/lib/bigNumberUtils/percent.ts": function(e, t, n) {
@@ -463,8 +463,8 @@
 				D = n("./src/reddit/icons/svgs/Settings/index.tsx"),
 				U = n("./src/reddit/models/Toast/index.ts"),
 				B = n("./src/reddit/selectors/tooltip.ts"),
-				F = n("./src/reddit/components/Governance/CommunityCard/CommunityTokens/BlockchainWalletInfo/index.m.less"),
-				V = n.n(F);
+				V = n("./src/reddit/components/Governance/CommunityCard/CommunityTokens/BlockchainWalletInfo/index.m.less"),
+				F = n.n(V);
 			const W = Object(w.a)(M.a),
 				H = "BlockchainWalletInfo--SettingsMenu";
 			class $ extends a.a.PureComponent {
@@ -485,16 +485,16 @@
 						publicAddress: o
 					} = this.props;
 					return r && o ? a.a.createElement("div", {
-						className: V.a.publicAddressSection
+						className: F.a.publicAddressSection
 					}, a.a.createElement("div", {
-						className: V.a.publicAddress,
+						className: F.a.publicAddress,
 						title: o
 					}, "publicAddress"), a.a.createElement("div", {
-						className: V.a.yourWalletAddress
+						className: F.a.yourWalletAddress
 					}, s.fbt._("Your Wallet Address", null, {
 						hk: "3mvAs1"
 					}), t && a.a.createElement("button", {
-						className: V.a.settingsButton,
+						className: F.a.settingsButton,
 						title: s.fbt._("Wallet address settings", null, {
 							hk: "3AlpJV"
 						}),
@@ -502,7 +502,7 @@
 						onClick: n,
 						id: H
 					}, a.a.createElement(D.a, {
-						className: V.a.settingsIcon
+						className: F.a.settingsIcon
 					})), t && a.a.createElement(W, {
 						tooltipId: H,
 						isOpen: e,
@@ -1905,14 +1905,14 @@
 			const o = e => {
 					return Object(s.c)(e, {
 						experimentEligibilitySelector: s.a,
-						experimentName: r.Fe
-					}) === r.Td
+						experimentName: r.Ee
+					}) === r.Sd
 				},
 				a = e => {
 					return Object(s.c)(e, {
 						experimentEligibilitySelector: s.a,
-						experimentName: r.De
-					}) === r.Td
+						experimentName: r.Ce
+					}) === r.Sd
 				}
 		},
 		"./src/reddit/selectors/gov.ts": function(e, t, n) {
@@ -1972,4 +1972,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Governance-CommunityCard.86e7d223a4bf1fa52a6c.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Governance-CommunityCard.ddb78b9eb02994373eee.js.map
