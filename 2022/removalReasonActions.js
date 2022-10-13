@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/removalReasonActions.4ab4decdbd51da950cc7.js
-// Retrieved at 10/13/2022, 2:20:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/removalReasonActions.959c2fb43905352825cb.js
+// Retrieved at 10/13/2022, 3:00:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["removalReasonActions"], {
 		"./node_modules/lodash/map.js": function(e, t, o) {
@@ -92,9 +92,9 @@
 			})), o.d(t, "e", (function() {
 				return Ge
 			})), o.d(t, "d", (function() {
-				return We
-			})), o.d(t, "a", (function() {
 				return Je
+			})), o.d(t, "a", (function() {
+				return We
 			})), o.d(t, "j", (function() {
 				return Qe
 			})), o.d(t, "i", (function() {
@@ -236,8 +236,8 @@
 				V = o("./src/reddit/featureFlags/index.ts"),
 				H = o("./src/reddit/helpers/comment/index.ts"),
 				q = o("./src/reddit/helpers/correlationIdTracker.ts"),
-				W = o("./src/reddit/helpers/dom/index.ts"),
-				J = o("./src/reddit/helpers/localStorage/index.ts"),
+				J = o("./src/reddit/helpers/dom/index.ts"),
+				W = o("./src/reddit/helpers/localStorage/index.ts"),
 				Q = o("./src/reddit/helpers/sessionStorage/index.ts"),
 				z = o("./src/reddit/helpers/trackers/commentsPage.ts"),
 				X = o("./src/reddit/models/Comment/index.ts"),
@@ -254,8 +254,8 @@
 				ce = o("./node_modules/reselect/es/index.js");
 			const ae = Object(ce.a)(e => Object(ie.c)(e, {
 				experimentEligibilitySelector: ie.a,
-				experimentName: re.Kb
-			}), e => e === re.Sd);
+				experimentName: re.Jb
+			}), e => e === re.Qd);
 			var de = o("./src/reddit/selectors/experiments/contributeBeforeSignUp.ts"),
 				le = o("./src/reddit/selectors/platform.ts"),
 				me = o("./src/reddit/selectors/posts.ts"),
@@ -604,7 +604,7 @@
 						let p = "",
 							b = null;
 						const O = r.user.prefs.commentMode,
-							f = Object(W.d)();
+							f = Object(J.d)();
 						if (f) {
 							const e = f.filter(e => !!e && 10 !== e.charCodeAt(0));
 							if (O === I.i.MARKDOWN) p = e.map(e => `> ${e}\n`).join("");
@@ -689,7 +689,7 @@
 							}
 						})))
 					}
-				}, Ve = Object(r.a)(be.F), He = Object(r.a)(be.E), qe = Object(r.a)(be.G), We = Object(r.a)(be.j), Je = Object(r.a)(be.f), Qe = e => {
+				}, Ve = Object(r.a)(be.F), He = Object(r.a)(be.E), qe = Object(r.a)(be.G), Je = Object(r.a)(be.j), We = Object(r.a)(be.f), Qe = e => {
 					let {
 						id: t,
 						commentsPageKey: o,
@@ -866,7 +866,7 @@
 								commentId: e,
 								followState: t
 							})).ok) {
-							Object(J.ub)(null !== (m = null === (l = null === (d = s().pages) || void 0 === d ? void 0 : d.comments) || void 0 === l ? void 0 : l.followed) && void 0 !== m ? m : [], null === (u = s().user.account) || void 0 === u ? void 0 : u.id);
+							Object(W.ub)(null !== (m = null === (l = null === (d = s().pages) || void 0 === d ? void 0 : d.comments) || void 0 === l ? void 0 : l.followed) && void 0 !== m ? m : [], null === (u = s().user.account) || void 0 === u ? void 0 : u.id);
 							const e = r ? n.fbt._("Followed! You’ll get updates when there’s new activity.", null, {
 								hk: "2O1Ou3"
 							}) : n.fbt._("Unfollowed. You won’t get updates on this comment anymore.", null, {
@@ -1531,8 +1531,8 @@
 			var V = o("./src/reddit/helpers/isPost.ts"),
 				H = o("./src/reddit/helpers/r2/normalizeCommentFromR2/index.ts"),
 				q = o("./src/reddit/helpers/routeKey/index.ts"),
-				W = o("./src/reddit/models/ModQueue/index.ts"),
-				J = o("./src/reddit/models/PostDraft/index.ts"),
+				J = o("./src/reddit/models/ModQueue/index.ts"),
+				W = o("./src/reddit/models/PostDraft/index.ts"),
 				Q = o("./src/reddit/models/RemovalReason/index.ts"),
 				z = o("./src/reddit/models/Toast/index.ts"),
 				X = o("./src/reddit/selectors/comments.ts"),
@@ -1688,7 +1688,7 @@
 												sort: v.x,
 												hasSortParam: !0
 											})), p === Q.e.Post) {
-											const o = Object(E.a)(J.c.replyToPost, u);
+											const o = Object(E.a)(W.c.replyToPost, u);
 											i(Object(w.r)({
 												...t,
 												headCommentId: Object(X.w)(l, {
@@ -1708,7 +1708,7 @@
 												}
 											}))
 										} else if (p === Q.e.Comment) {
-											const e = Object(E.a)(J.c.replyToComment, b.id),
+											const e = Object(E.a)(W.c.replyToComment, b.id),
 												o = Object(X.j)(l, {
 													commentId: u,
 													commentsPageKey: s
@@ -1761,7 +1761,7 @@
 					if (b.ok) {
 						const n = {
 							ids: e,
-							operation: W.a.RemovalReason,
+							operation: J.a.RemovalReason,
 							username: m,
 							options: {
 								modNote: r,
@@ -1939,14 +1939,14 @@
 				V = o.n(G),
 				H = o("./src/reddit/reducers/features/comments/visitHighlightingFilter/index.ts");
 			const q = Object(y.a)(v.a),
-				W = e => e === H.a.First ? n.fbt._("First Visit", null, {
+				J = e => e === H.a.First ? n.fbt._("First Visit", null, {
 					hk: "HdDSr"
 				}) : e === H.a.Last ? n.fbt._("Last Visit", null, {
 					hk: "3ubIq3"
 				}) : n.fbt._("None", null, {
 					hk: "4jwXNg"
 				});
-			class J extends r.a.Component {
+			class W extends r.a.Component {
 				constructor() {
 					super(...arguments), this.track = () => {
 						const {
@@ -1984,7 +1984,7 @@
 					}, r.a.createElement(R.b, {
 						className: Object(a.a)(V.a.HighlightPicker, V.a.Row),
 						textClassName: V.a.SortOptionDropdownText,
-						displayText: `${n.fbt._("Highlight",null,{hk:"2ZiUE8"})}: ${W(s)}`,
+						displayText: `${n.fbt._("Highlight",null,{hk:"2ZiUE8"})}: ${J(s)}`,
 						id: t,
 						noHover: !0,
 						onClick: o
@@ -1996,21 +1996,21 @@
 						renderContentsHidden: !0,
 						tooltipId: t
 					}, r.a.createElement(R.b, {
-						displayText: W(H.a.First),
+						displayText: J(H.a.First),
 						isSelected: s === H.a.First,
 						onClick: this.onDropdownClickFirst
 					}), r.a.createElement(R.b, {
-						displayText: W(H.a.Last),
+						displayText: J(H.a.Last),
 						isSelected: s === H.a.Last,
 						onClick: this.onDropdownClickLast
 					}), r.a.createElement(R.b, {
-						displayText: W(H.a.None),
+						displayText: J(H.a.None),
 						isSelected: s === H.a.None,
 						onClick: this.onDropdownClickNone
 					})))
 				}
 			}
-			var Q = J;
+			var Q = W;
 			const z = "CommentSort--SortPicker",
 				X = "CommentSort--HighlightPicker",
 				$ = "CommentSort--Tooltip",
@@ -2903,4 +2903,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/removalReasonActions.4ab4decdbd51da950cc7.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/removalReasonActions.959c2fb43905352825cb.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostCreation.6421690c3f50be15cdcd.js
-// Retrieved at 10/13/2022, 2:20:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostCreation.121f54b8b2d9030c25fa.js
+// Retrieved at 10/13/2022, 3:00:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostCreation", "ChatMessageInput~MembershipPaywallPage~RichTextEditor", "ContributorRequestButton"], {
 		"./node_modules/autosize/dist/autosize.js": function(e, t, n) {
@@ -1262,8 +1262,8 @@
 				ae = n("./node_modules/reselect/es/index.js");
 			const ce = Object(ae.a)(e => Object(ie.c)(e, {
 				experimentEligibilitySelector: ie.a,
-				experimentName: se.Kb
-			}), e => e === se.Sd);
+				experimentName: se.Jb
+			}), e => e === se.Qd);
 			var le = n("./src/reddit/selectors/experiments/contributeBeforeSignUp.ts"),
 				de = n("./src/reddit/selectors/platform.ts"),
 				ue = n("./src/reddit/selectors/posts.ts"),
@@ -20015,7 +20015,7 @@
 				const t = Object(s.f)().getState(),
 					n = Object(b.a)(t, Object(a.c)());
 				if (e.isD2xPdpSideRailRecsEnabled) {
-					const t = e.d2xPdpSideRailRecsVariant === u.bd.GreyRereddit || e.d2xPdpSideRailRecsVariant === u.bd.GreyRedditNoNsfw || e.d2xPdpSideRailRecsVariant === u.bd.LargeImagePreview ? e.reredditButtons : [];
+					const t = e.d2xPdpSideRailRecsVariant === u.Zc.GreyRereddit || e.d2xPdpSideRailRecsVariant === u.Zc.GreyRedditNoNsfw || e.d2xPdpSideRailRecsVariant === u.Zc.LargeImagePreview ? e.reredditButtons : [];
 					return r.a.createElement(j, {
 						reredditContent: t,
 						countryCode: e.countryCode
@@ -35888,11 +35888,11 @@
 				c = n("./node_modules/reselect/es/index.js");
 			const l = Object(c.a)(e => Object(r.c)(e, {
 					experimentEligibilitySelector: e => Object(a.h)(e) && Object(s.f)(e),
-					experimentName: o.uc
+					experimentName: o.tc
 				}), i.a),
 				d = Object(c.a)(e => Object(r.c)(e, {
 					experimentEligibilitySelector: e => !Object(a.h)(e) && Object(s.f)(e),
-					experimentName: o.tc
+					experimentName: o.sc
 				}), i.a),
 				u = Object(c.a)(l, d, (e, t) => e || t),
 				m = Object(c.a)(l, d, (e, t) => !(!e && !t))
@@ -35905,9 +35905,9 @@
 			var o = n("./src/reddit/constants/experiments.ts"),
 				r = n("./src/reddit/helpers/chooseVariant/index.ts");
 			const s = e => Object(r.c)(e, {
-				experimentName: o.Ne,
+				experimentName: o.Le,
 				experimentEligibilitySelector: r.a
-			}) === o.Ve.Enabled
+			}) === o.Te.Enabled
 		},
 		"./src/reddit/selectors/experiments/presence.ts": function(e, t, n) {
 			"use strict";
@@ -35919,8 +35919,8 @@
 			const s = e => {
 				return Object(r.c)(e, {
 					experimentEligibilitySelector: r.a,
-					experimentName: o.if
-				}) === o.Sd
+					experimentName: o.gf
+				}) === o.Qd
 			}
 		},
 		"./src/reddit/selectors/experiments/typingIndicators.ts": function(e, t, n) {
@@ -35942,29 +35942,29 @@
 					if (Object(i.a)(e)) return !1;
 					return Object(r.c)(e, {
 						experimentEligibilitySelector: s.e,
-						experimentName: o.rg
-					}) === o.Sd
+						experimentName: o.og
+					}) === o.Qd
 				},
 				c = e => {
 					return Object(r.c)(e, {
 						experimentEligibilitySelector: s.e,
-						experimentName: o.sg
-					}) === o.Sd
+						experimentName: o.pg
+					}) === o.Qd
 				},
 				l = e => {
 					if (Object(i.a)(e)) return !1;
 					const t = Object(r.c)(e, {
 						experimentEligibilitySelector: s.e,
-						experimentName: o.qg
+						experimentName: o.ng
 					});
-					return t === o.gg.TypingIndicators || t === o.gg.IndicatorsPlusCTA
+					return t === o.dg.TypingIndicators || t === o.dg.IndicatorsPlusCTA
 				},
 				d = e => {
 					if (Object(i.a)(e)) return !1;
 					const t = Object(s.d)(e, {
-						experimentName: o.qg
+						experimentName: o.ng
 					});
-					return (null == t ? void 0 : t.variant) === o.gg.IndicatorsPlusCTA
+					return (null == t ? void 0 : t.variant) === o.dg.IndicatorsPlusCTA
 				}
 		},
 		"./src/reddit/selectors/gild.ts": function(e, t, n) {
@@ -36643,4 +36643,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.6421690c3f50be15cdcd.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.121f54b8b2d9030c25fa.js.map

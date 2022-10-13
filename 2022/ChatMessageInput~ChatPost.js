@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ChatMessageInput~ChatPost.5ce915e94f9fdf6b45d1.js
-// Retrieved at 10/13/2022, 2:20:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ChatMessageInput~ChatPost.29a902e5bd18707cab37.js
+// Retrieved at 10/13/2022, 3:00:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ChatMessageInput~ChatPost"], {
 		"./node_modules/lodash/_baseReduce.js": function(e, t) {
@@ -699,13 +699,13 @@
 					onClick: () => {
 						e.isSponsored && e.post.postId && (e.fireAdPixelsOfType && e.fireAdPixelsOfType(e.post, b.a.Click), Object(g.a)(e.post, e.pageType))
 					}
-				}, D(e)) : e.isListing && e.postPermalink ? a.a.createElement(i.a, {
+				}, R(e)) : e.isListing && e.postPermalink ? a.a.createElement(i.a, {
 					target: e.shouldOpenPostInNewTab ? "_blank" : void 0,
 					to: Object(m.a)(e.postPermalink, void 0, t),
 					onClick: e.onPostMediaClick
-				}, D(e)) : D(e)
+				}, R(e)) : R(e)
 			});
-			const R = (e, t) => a.a.createElement(S, {
+			const D = (e, t) => a.a.createElement(S, {
 					altText: t.altText,
 					className: Object(d.a)(t.imageClassName, {
 						[y.a]: !e
@@ -723,7 +723,7 @@
 					width: t.width,
 					renderSmallMedia: t.renderSmallMedia
 				}),
-				D = e => {
+				R = e => {
 					let {
 						onClick: t,
 						...n
@@ -734,7 +734,7 @@
 						className: `${r?`${y.a} `:""}${n.className||""}`
 					}), n.isListing ? a.a.createElement("div", {
 						className: n.contentImageClassName
-					}, R(r, n)) : a.a.createElement("a", {
+					}, D(r, n)) : a.a.createElement("a", {
 						href: n.originalSource,
 						onClick: t,
 						style: o ? {
@@ -743,7 +743,7 @@
 						target: "_blank",
 						rel: u.c,
 						className: k.a.imageLink
-					}, R(r, n), n.shouldBlur && !n.isVideoThumbnail && !n.isNsfwBlockingModalEligible && a.a.createElement(h.a, {
+					}, D(r, n), n.shouldBlur && !n.isVideoThumbnail && !n.isNsfwBlockingModalEligible && a.a.createElement(h.a, {
 						isNSFW: !!n.isNSFW,
 						isSpoiler: !!n.isSpoiler
 					})), n.isListing && !n.showFull && n.height > _.j && Object(_.L)(n.height, n.width) && a.a.createElement("div", {
@@ -967,7 +967,7 @@
 						postId: p
 					}))
 				}
-				const R = r()(e => {
+				const D = r()(e => {
 					if (n) return;
 					const {
 						target: t
@@ -975,8 +975,8 @@
 					t && t.played && 1 === t.played.length && 0 === t.played.start(0) && t.played.end(0) === t.duration && S(Object(u.s)(p))
 				}, 200);
 
-				function D(e) {
-					e.persist(), R(e)
+				function R(e) {
+					e.persist(), D(e)
 				}
 
 				function H(e) {
@@ -1024,7 +1024,7 @@
 						onLoadedMetadata: F,
 						onPause: B,
 						onPlaying: A,
-						onTimeUpdate: D,
+						onTimeUpdate: R,
 						shouldLoad: b,
 						shouldPause: C,
 						showCentered: I,
@@ -1771,7 +1771,7 @@
 			})), n.d(t, "b", (function() {
 				return B
 			})), n.d(t, "f", (function() {
-				return R
+				return D
 			})), n.d(t, "h", (function() {
 				return H
 			})), n.d(t, "g", (function() {
@@ -1898,7 +1898,7 @@
 					if (!a) return;
 					const o = a.length,
 						d = [];
-					for (let i = 0; i < o; i++) d.push(D(a[i], t, n, i, r));
+					for (let i = 0; i < o; i++) d.push(R(a[i], t, n, i, r));
 					return i.a.createElement(c.c, {
 						key: s
 					}, d)
@@ -1909,7 +1909,7 @@
 						key: t
 					}, i.a.createElement(c.h, null, n.reduce((e, t, n, s) => e += t.t + (n < s.length ? "\n" : ""), "")))
 				},
-				R = (e, t, n, s, r) => {
+				D = (e, t, n, s, r) => {
 					const a = e.c,
 						o = [],
 						d = a.length;
@@ -1917,14 +1917,14 @@
 						const e = a[u].c;
 						e && e.length && o.push(i.a.createElement(c.g, {
 							key: u
-						}, e.map((e, s) => D(e, t, n, s, r))))
+						}, e.map((e, s) => R(e, t, n, s, r))))
 					}
 					const l = e.o ? c.i : c.v;
 					return i.a.createElement(l, {
 						key: s
 					}, o)
 				},
-				D = (e, t, n, s, r) => {
+				R = (e, t, n, s, r) => {
 					switch (e.e) {
 						case m.b:
 							return M(e, t, n, s, r);
@@ -1935,7 +1935,7 @@
 						case m.l:
 							return S(s);
 						case m.p:
-							return R(e, t, n, s, r);
+							return D(e, t, n, s, r);
 						case m.u:
 							return P(e, t, n, s, r);
 						case m.z:
@@ -2224,12 +2224,12 @@
 						rtJsonElementProps: o
 					});
 					switch (a) {
-						case b.Xf.SmIcon:
+						case b.Uf.SmIcon:
 							return r.a.createElement(h, {
 								subredditName: s,
 								rtJsonElementProps: o
 							});
-						case b.Xf.SmIconHc:
+						case b.Uf.SmIconHc:
 							return r.a.createElement(h, {
 								subredditName: s,
 								isHoverable: !0,
@@ -2676,12 +2676,12 @@
 				c = e => {
 					return Object(a.c)(e, {
 						experimentEligibilitySelector: i,
-						experimentName: s.Rf
+						experimentName: s.Of
 					}) || ""
 				},
 				d = e => {
 					const t = c(e);
-					return t === s.Xf.SmIcon || t === s.Xf.SmIconHc
+					return t === s.Uf.SmIcon || t === s.Uf.SmIconHc
 				},
 				l = (e, t) => {
 					let {
@@ -2707,4 +2707,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatMessageInput~ChatPost.5ce915e94f9fdf6b45d1.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatMessageInput~ChatPost.29a902e5bd18707cab37.js.map

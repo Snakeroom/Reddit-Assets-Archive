@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/OnboardingModal.44e9f7406abace4bb776.js
-// Retrieved at 10/13/2022, 2:20:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/OnboardingModal.2e93e9502eda219e8439.js
+// Retrieved at 10/13/2022, 3:00:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["OnboardingModal"], {
 		"./node_modules/lodash/_baseRange.js": function(e, t) {
@@ -401,7 +401,7 @@
 						},
 						forceGeopopular: !0,
 						includeCommunityDUs: !1,
-						includeInterestTopics: !!p && !Object(b.xg)(p),
+						includeInterestTopics: !!p && !Object(b.ug)(p),
 						includeFeaturedAnnouncements: !0,
 						includeLiveEvents: !0,
 						includeIdentity: h && !(null === (r = null === (n = e.user.account) || void 0 === n ? void 0 : n.karma) || void 0 === r ? void 0 : r.total),
@@ -593,8 +593,8 @@
 				X = n("./src/reddit/actions/meta.ts"),
 				K = n("./src/reddit/actions/platform.ts"),
 				J = n("./src/reddit/actions/toaster.ts"),
-				Z = n("./src/reddit/constants/history.ts"),
-				Y = n("./src/reddit/constants/page.ts"),
+				Y = n("./src/reddit/constants/history.ts"),
+				Z = n("./src/reddit/constants/page.ts"),
 				$ = n("./src/reddit/constants/parameters.ts"),
 				ee = n("./src/reddit/constants/postLayout.ts"),
 				te = n("./src/reddit/contexts/PageLayer/index.tsx"),
@@ -661,8 +661,8 @@
 							post: e,
 							__typename: "LiveBarTalk"
 						})))), n(Object(me.b)(he.a.FRONTPAGE));
-						const a = null === (g = null === (b = Object(P.b)(f)) || void 0 === b ? void 0 : b.locationState) || void 0 === g ? void 0 : g[Z.b.FeedLoadReason];
-						Object(ge.b)(t.isRefresh ? Z.a.UserRefresh : null != a ? a : Z.a.InitialLoad)(s())
+						const a = null === (g = null === (b = Object(P.b)(f)) || void 0 === b ? void 0 : b.locationState) || void 0 === g ? void 0 : g[Y.b.FeedLoadReason];
+						Object(ge.b)(t.isRefresh ? Y.a.UserRefresh : null != a ? a : Y.a.InitialLoad)(s())
 					} else {
 						if (n(Ie({
 								error: C.error,
@@ -694,7 +694,7 @@
 						{
 							sort: c = i
 						} = e.params,
-						l = Object(ue.a)(Y.b, c, e.queryParams),
+						l = Object(ue.a)(Z.b, c, e.queryParams),
 						u = o.listings.postOrder.ids[l],
 						m = o.listings.postOrder.api.error[l],
 						p = o.listings.postOrder.api.pending[l],
@@ -754,7 +754,7 @@
 							sort: l = c
 						} = e,
 						u = i.platform.currentPage ? i.platform.currentPage.queryParams : {},
-						m = Object(ue.a)(Y.b, l, u),
+						m = Object(ue.a)(Z.b, l, u),
 						p = i.listings.postOrder.loadMore[m],
 						b = u[$.C] ? u[$.C].toUpperCase() : "",
 						g = b in d.oc && d.oc[b];
@@ -798,7 +798,7 @@
 								fetchedToken: p.token,
 								meta: i.meta,
 								...x
-							})), Object(ge.b)(Z.a.NextPageLoad)(n());
+							})), Object(ge.b)(Y.a.NextPageLoad)(n());
 							else {
 								t(Me({
 									key: m,
@@ -818,7 +818,7 @@
 							sort: a = s
 						} = e,
 						o = r.platform.currentPage ? r.platform.currentPage.queryParams : {},
-						i = Object(ue.a)(Y.b, a, o),
+						i = Object(ue.a)(Z.b, a, o),
 						c = o[$.C] ? o[$.C].toUpperCase() : "",
 						l = c in d.oc && d.oc[c],
 						u = Object(ne.a)(r),
@@ -1286,8 +1286,8 @@
 					fill: "#4B6066",
 					d: "M18 8.38H9.63V0H8.38V8.38H0V9.63H8.38V18H9.63V9.63H18V8.38Z"
 				})),
-				Z = n("./src/reddit/components/Onboarding/index.m.less"),
-				Y = n.n(Z),
+				Y = n("./src/reddit/components/Onboarding/index.m.less"),
+				Z = n.n(Y),
 				$ = n("./src/reddit/components/TrackEnterExitViewport/index.tsx"),
 				ee = n("./src/reddit/components/Onboarding/CommunityPicker.m.less"),
 				te = n.n(ee);
@@ -1481,11 +1481,11 @@
 					}, o.a.createElement("div", {
 						className: te.a.headerBarImproved
 					}, o.a.createElement("div", {
-						className: Y.a.title
+						className: Z.a.title
 					}, ne._("Communities", null, {
 						hk: "Gdzfs"
 					})), o.a.createElement("div", {
-						className: Y.a.subtitle
+						className: Z.a.subtitle
 					}, ne._("Select a few to get started. You can update them later.", null, {
 						hk: "2GcuTd"
 					}))), r.length > 0 && o.a.createElement(se, {
@@ -1597,11 +1597,11 @@
 					}, o.a.createElement("div", {
 						className: be.a.headerBarImproved
 					}, o.a.createElement("div", {
-						className: Y.a.title
+						className: Z.a.title
 					}, ge._("Interests", null, {
 						hk: "3XVu2d"
 					})), o.a.createElement("div", {
-						className: Y.a.subtitle
+						className: Z.a.subtitle
 					}, ge._("Pick 3 or more things you’d like to see in your home feed", null, {
 						hk: "3TEuhg"
 					}))), r ? o.a.createElement(he, null) : o.a.createElement(fe, {
@@ -1662,7 +1662,7 @@
 					selectedLanguages: r,
 					toggleLanguageSelection: s
 				} = e;
-				const [c, d] = Object(a.useState)(!1), l = Object(i.e)(Ee.a) === Ce.ad.TopTwo, u = t.sortedLanguages.slice(0, !l || l && c ? void 0 : 2), m = Object(a.useCallback)(() => {
+				const [c, d] = Object(a.useState)(!1), l = Object(i.e)(Ee.a) === Ce.Yc.TopTwo, u = t.sortedLanguages.slice(0, !l || l && c ? void 0 : 2), m = Object(a.useCallback)(() => {
 					d(!0)
 				}, []);
 				return o.a.createElement("div", {
@@ -1670,11 +1670,11 @@
 				}, o.a.createElement("div", {
 					className: ve.a.HeaderBarImproved
 				}, o.a.createElement("div", {
-					className: Y.a.title
+					className: Z.a.title
 				}, _e._("See content in more languages", null, {
 					hk: "35s0TM"
 				})), o.a.createElement("div", {
-					className: Y.a.subtitle
+					className: Z.a.subtitle
 				}, _e._("Update your settings to make it easier to discover content in multiple languages", null, {
 					hk: "x0jso"
 				}))), n ? o.a.createElement(je, {
@@ -1764,7 +1764,7 @@
 						t ? delete n[e] : n[e] = !0, C(n)
 					}, [f, C]);
 				return o.a.createElement("div", {
-					className: `\n      ${Y.a.SelectedComponent}\n      ${t===Ne.AVATAR&&Y.a.SelectedComponentAvatar}\n    `,
+					className: `\n      ${Z.a.SelectedComponent}\n      ${t===Ne.AVATAR&&Z.a.SelectedComponentAvatar}\n    `,
 					ref: E
 				}, t === Ne.GENDER && o.a.createElement(F, {
 					autoProgressGenderCollection: s,
@@ -1934,8 +1934,8 @@
 				}
 			});
 			var Je = n("./src/redditGQL/operations/LanguageSelections.json"),
-				Ze = n("./src/redditGQL/operations/UpdateSpokenLanguagesPreference.json");
-			const Ye = async (e, t) => {
+				Ye = n("./src/redditGQL/operations/UpdateSpokenLanguagesPreference.json");
+			const Ze = async (e, t) => {
 				const n = await (e => {
 					const t = {
 						allKey: "top_languages",
@@ -1968,7 +1968,7 @@
 						}
 					};
 					return Object(Re.a)(e, {
-						...Ze,
+						...Ye,
 						variables: n
 					})
 				})(e(), Object.keys(t));
@@ -2051,7 +2051,7 @@
 				} = e, r = Object(i.d)(), s = Object(v.a)(), c = Object(i.e)(st.a), g = gt(c), f = g ? Ne.INTERESTS : Ne.GENDER, [h, x] = Object(a.useState)(f), [C, E] = Object(a.useState)(null), j = Object(i.e)(dt.a), [k, y] = Object(a.useState)(g), [S, I] = Object(a.useState)(!1), T = {
 					topics: [],
 					schemeName: void 0
-				}, [w, L] = Object(a.useState)(T), [P, F] = Object(a.useState)(!1), [B, D] = Object(a.useState)(gt(c) && (null == c ? void 0 : c.selectedInterests) || {}), [V, q] = Object(a.useState)(!1), [W, H] = Object(a.useState)([]), [U, Q] = Object(a.useState)([]), [z, X] = Object(a.useState)({}), [K, J] = Object(a.useState)(0), [Z, $] = Object(a.useState)({
+				}, [w, L] = Object(a.useState)(T), [P, F] = Object(a.useState)(!1), [B, D] = Object(a.useState)(gt(c) && (null == c ? void 0 : c.selectedInterests) || {}), [V, q] = Object(a.useState)(!1), [W, H] = Object(a.useState)([]), [U, Q] = Object(a.useState)([]), [z, X] = Object(a.useState)({}), [K, J] = Object(a.useState)(0), [Y, $] = Object(a.useState)({
 					sortedLanguages: []
 				}), [ee, te] = Object(a.useState)(!1), [ne, re] = Object(a.useState)({}), {
 					avatarImage: se,
@@ -2089,10 +2089,10 @@
 				}, [n, r, t, ce]);
 				const de = Object(i.e)(ct.j),
 					le = Object(i.e)(Ee.a),
-					ue = le === Ce.ad.TopTwo || le === Ce.ad.All,
+					ue = le === Ce.Yc.TopTwo || le === Ce.Yc.All,
 					me = Object(a.useCallback)(async () => {
 						te(!0);
-						const e = await Ye(t, de);
+						const e = await Ze(t, de);
 						if (te(!1), e) {
 							if ($(e), e.sortedLanguages.length > 0 && (e.sortedLanguages[0].isoCode === de || e.sortedLanguages[0].isoCode === de.split("-")[0])) {
 								const t = {};
@@ -2105,9 +2105,9 @@
 					ge = Object(i.e)(lt.S),
 					fe = Object(i.e)(ct.g),
 					he = Object(i.e)(it.a),
-					xe = he === Ce.eg.CloseOnboarding,
-					Oe = he === Ce.eg.SkipTopicSelection,
-					ve = he === Ce.eg.SmartSignal,
+					xe = he === Ce.bg.CloseOnboarding,
+					Oe = he === Ce.bg.SkipTopicSelection,
+					ve = he === Ce.bg.SmartSignal,
 					_e = Object(a.useCallback)(() => {
 						r(Object(p.g)(Te.a.ONBOARDING_MODAL_D2X)), be && r(Object(b.h)()), g && (s(Object(A.t)()), Object(tt.a)()), fe && ge && r(Object(u.startChangeUsernameFlow)())
 					}, [r, ge, fe, g, be, s]),
@@ -2174,40 +2174,40 @@
 					"aria-label": bt._("Close", null, {
 						hk: "3XndV9"
 					}),
-					className: Y.a.dismissButton,
+					className: Z.a.dismissButton,
 					onClick: _e
 				}, o.a.createElement(M.a, {
 					name: "close"
 				})) : !xe && We && (Je = o.a.createElement("button", {
-					className: Y.a.skipButton,
+					className: Z.a.skipButton,
 					onClick: He
 				}, bt._("Skip", null, {
 					hk: "2S8Lme"
 				})));
-				const Ze = h === Ne.INTERESTS || h === Ne.COMMUNITIES || h === Ne.LANGUAGES;
+				const Ye = h === Ne.INTERESTS || h === Ne.COMMUNITIES || h === Ne.LANGUAGES;
 				return o.a.createElement("div", {
-					className: `${Y.a.container} ${h===Ne.GENDER&&Y.a.containerImproved}`
+					className: `${Z.a.container} ${h===Ne.GENDER&&Z.a.containerImproved}`
 				}, o.a.createElement("header", {
-					className: Y.a.header
+					className: Z.a.header
 				}, o.a.createElement("div", {
-					className: `\n            ${Y.a.headerBar}\n            ${Ze&&Y.a.noHeaderBar}\n            ${!Ze&&Y.a.headerBarImproved}\n          `
+					className: `\n            ${Z.a.headerBar}\n            ${Ye&&Z.a.noHeaderBar}\n            ${!Ye&&Z.a.headerBarImproved}\n          `
 				}, o.a.createElement("div", null, De && o.a.createElement(rt.d, {
-					className: Y.a.backButton,
+					className: Z.a.backButton,
 					onClick: qe
 				})), o.a.createElement(nt.a, {
-					className: Y.a.snooIcon
+					className: Z.a.snooIcon
 				}), o.a.createElement("div", {
-					className: Y.a.skipOrDismissContainer
+					className: Z.a.skipOrDismissContainer
 				}, Je)), h === Ne.GENDER && o.a.createElement("div", {
-					className: Y.a.title
+					className: Z.a.title
 				}, bt._("About you", null, {
 					hk: "35GAtt"
 				})), h === Ne.AVATAR && o.a.createElement("div", {
-					className: Y.a.title
+					className: Z.a.title
 				}, bt._("Style your avatar", null, {
 					hk: "15i2ld"
 				})), h === Ne.GENDER && o.a.createElement(o.a.Fragment, null, o.a.createElement("div", {
-					className: Y.a.subtitle
+					className: Z.a.subtitle
 				}, bt._("Tell us about yourself to start building your home feed.", null, {
 					hk: "lpWI4"
 				})), o.a.createElement("div", {
@@ -2215,7 +2215,7 @@
 				}, bt._("How do you identify?", null, {
 					hk: "1JAuh0"
 				}))), h === Ne.AVATAR && o.a.createElement("div", {
-					className: Y.a.subtitle
+					className: Z.a.subtitle
 				}, bt._("This is how people will see you on Reddit.", null, {
 					hk: "2SmAiC"
 				}), o.a.createElement("br", null), bt._("You can change it later if you’d like.", null, {
@@ -2227,7 +2227,7 @@
 					communitiesByTopic: W,
 					fetchRandomAvatar: ae,
 					interests: w,
-					languages: Z,
+					languages: Y,
 					loadingCommunities: V,
 					loadingInterests: P,
 					loadingLanguages: ee,
@@ -2241,11 +2241,11 @@
 					setSelectedInterests: D,
 					setSelectedLanguages: re
 				}), !(h === Ne.GENDER) && o.a.createElement("div", {
-					className: Object(d.a)(Y.a.continueButtonWrapper, {
-						[Y.a.avatarPicker]: h === Ne.AVATAR
+					className: Object(d.a)(Z.a.continueButtonWrapper, {
+						[Z.a.avatarPicker]: h === Ne.AVATAR
 					})
 				}, o.a.createElement("button", {
-					className: Y.a.continueButton,
+					className: Z.a.continueButton,
 					disabled: Ke,
 					onClick: Fe
 				}, bt._("Continue", null, {
@@ -2253,9 +2253,9 @@
 				}))))
 			});
 			t.default = Object(we.b)(e => o.a.createElement(Ot, pt({}, e, {
-				className: Object(d.a)(e.className, Y.a.modal),
+				className: Object(d.a)(e.className, Z.a.modal),
 				onOverlayClick: s.a,
-				overlayClassName: Y.a.overlay
+				overlayClassName: Z.a.overlay
 			})))
 		},
 		"./src/reddit/components/Onboarding/index.m.less": function(e, t, n) {
@@ -2697,7 +2697,7 @@
 			})), n.d(t, "k", (function() {
 				return K
 			})), n.d(t, "o", (function() {
-				return Z
+				return Y
 			})), n.d(t, "f", (function() {
 				return $
 			})), n.d(t, "l", (function() {
@@ -2832,8 +2832,8 @@
 					}))
 				},
 				J = h.a.a("Link", M.a),
-				Z = h.a.wrapped(J, "SubtextLink", M.a),
-				Y = h.a.wrapped(T.a, "LinkIcon", M.a),
+				Y = h.a.wrapped(J, "SubtextLink", M.a),
+				Z = h.a.wrapped(T.a, "LinkIcon", M.a),
 				$ = h.a.button("LinkButton", M.a),
 				ee = h.a.wrapped(N.a, "ArrowRight", M.a),
 				te = e => s.a.createElement(K, {
@@ -2945,7 +2945,7 @@
 					href: e.link,
 					onClick: e.onClick,
 					target: e.openInNewTab ? "_blank" : void 0
-				}, e.label, s.a.createElement(Y, null)), s.a.createElement(H, null, e.subtext)), s.a.createElement(X, null, s.a.createElement(J, {
+				}, e.label, s.a.createElement(Z, null)), s.a.createElement(H, null, e.subtext)), s.a.createElement(X, null, s.a.createElement(J, {
 					href: e.link,
 					onClick: e.onClick,
 					target: e.openInNewTab ? "_blank" : void 0
@@ -4111,8 +4111,8 @@
 			const a = e => {
 				return !(Object(s.c)(e, {
 					experimentEligibilitySelector: s.a,
-					experimentName: r.De
-				}) === r.Sd)
+					experimentName: r.Be
+				}) === r.Qd)
 			}
 		},
 		"./src/reddit/selectors/experiments/inAppNotification.ts": function(e, t, n) {
@@ -4131,20 +4131,20 @@
 				a = n("./src/reddit/selectors/experiments/index.ts"),
 				o = n("./src/reddit/selectors/experiments/utils.ts");
 			const i = e => Object(s.c)(e, {
-					experimentName: r.Wb,
+					experimentName: r.Vb,
 					experimentEligibilitySelector: a.e
 				}) === r.eb.topOfFeedWithCTAs,
 				c = e => (e => Object(s.c)(e, {
-					experimentName: r.Wb,
+					experimentName: r.Vb,
 					experimentEligibilitySelector: a.e
 				}) === r.eb.topOfFeedNoCTAs)(e) || i(e),
 				d = e => Object(s.c)(e, {
-					experimentName: r.Wb,
+					experimentName: r.Vb,
 					experimentEligibilitySelector: a.e
 				}) === r.eb.floatInFeed,
 				l = e => {
 					const t = Object(s.c)(e, {
-						experimentName: r.Wb,
+						experimentName: r.Vb,
 						experimentEligibilitySelector: a.e
 					});
 					return Object(o.a)(t)
@@ -4289,4 +4289,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/OnboardingModal.44e9f7406abace4bb776.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/OnboardingModal.2e93e9502eda219e8439.js.map

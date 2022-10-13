@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-NotificationUnit-Button.843ba15ce0a794993cfe.js
-// Retrieved at 10/13/2022, 2:20:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-NotificationUnit-Button.aca55d2ea45941020754.js
+// Retrieved at 10/13/2022, 3:00:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-NotificationUnit-Button"], {
 		"./node_modules/lodash/map.js": function(t, e, o) {
@@ -79,9 +79,9 @@
 			})), o.d(e, "d", (function() {
 				return Jt
 			})), o.d(e, "a", (function() {
-				return Vt
-			})), o.d(e, "j", (function() {
 				return Qt
+			})), o.d(e, "j", (function() {
+				return Vt
 			})), o.d(e, "i", (function() {
 				return Yt
 			})), o.d(e, "l", (function() {
@@ -222,8 +222,8 @@
 				G = o("./src/reddit/helpers/comment/index.ts"),
 				q = o("./src/reddit/helpers/correlationIdTracker.ts"),
 				J = o("./src/reddit/helpers/dom/index.ts"),
-				V = o("./src/reddit/helpers/localStorage/index.ts"),
-				Q = o("./src/reddit/helpers/sessionStorage/index.ts"),
+				Q = o("./src/reddit/helpers/localStorage/index.ts"),
+				V = o("./src/reddit/helpers/sessionStorage/index.ts"),
 				X = o("./src/reddit/helpers/trackers/commentsPage.ts"),
 				z = o("./src/reddit/models/Comment/index.ts"),
 				$ = o("./src/reddit/models/PostDraft/index.ts"),
@@ -239,8 +239,8 @@
 				ct = o("./node_modules/reselect/es/index.js");
 			const at = Object(ct.a)(t => Object(it.c)(t, {
 				experimentEligibilitySelector: it.a,
-				experimentName: st.Kb
-			}), t => t === st.Sd);
+				experimentName: st.Jb
+			}), t => t === st.Qd);
 			var dt = o("./src/reddit/selectors/experiments/contributeBeforeSignUp.ts"),
 				lt = o("./src/reddit/selectors/platform.ts"),
 				mt = o("./src/reddit/selectors/posts.ts"),
@@ -303,7 +303,7 @@
 							r = Object(G.c)(t.formData);
 						e(Object(l.k)({
 							actionSource: l.a.Reply
-						})), e(Object(d.openRegisterModal)()), Object(Q.d)({
+						})), e(Object(d.openRegisterModal)()), Object(V.d)({
 							comment: {
 								...t,
 								richTextJSONData: o,
@@ -403,7 +403,7 @@
 								text: o
 							}))
 						}
-						yt(j(), a, m, R).then(() => R.ok && m === T.i.RICH_TEXT ? Object(q.b)(q.a.CommentComposer) : void 0), p || Object(f.d)(), e && Object(Q.a)()
+						yt(j(), a, m, R).then(() => R.ok && m === T.i.RICH_TEXT ? Object(q.b)(q.a.CommentComposer) : void 0), p || Object(f.d)(), e && Object(V.a)()
 					}
 				},
 				It = t => async (e, o, n) => {
@@ -440,7 +440,7 @@
 							r = Object(G.c)(t.formData);
 						e(Object(l.k)({
 							actionSource: l.a.Reply
-						})), e(Object(d.openRegisterModal)()), Object(Q.d)({
+						})), e(Object(d.openRegisterModal)()), Object(V.d)({
 							comment: {
 								...t,
 								richTextJSONData: o,
@@ -514,9 +514,9 @@
 							error: w.error
 						}))
 					}
-					yt(i(), p, g, w), Object(f.d)(), e && Object(Q.a)()
+					yt(i(), p, g, w), Object(f.d)(), e && Object(V.a)()
 				}, Nt = () => async t => {
-					const e = Object(Q.b)();
+					const e = Object(V.b)();
 					if (e) {
 						const {
 							comment: {
@@ -674,7 +674,7 @@
 							}
 						})))
 					}
-				}, Wt = Object(s.a)(bt.F), Gt = Object(s.a)(bt.E), qt = Object(s.a)(bt.G), Jt = Object(s.a)(bt.j), Vt = Object(s.a)(bt.f), Qt = t => {
+				}, Wt = Object(s.a)(bt.F), Gt = Object(s.a)(bt.E), qt = Object(s.a)(bt.G), Jt = Object(s.a)(bt.j), Qt = Object(s.a)(bt.f), Vt = t => {
 					let {
 						id: e,
 						commentsPageKey: o,
@@ -851,7 +851,7 @@
 								commentId: t,
 								followState: e
 							})).ok) {
-							Object(V.ub)(null !== (m = null === (l = null === (d = r().pages) || void 0 === d ? void 0 : d.comments) || void 0 === l ? void 0 : l.followed) && void 0 !== m ? m : [], null === (u = r().user.account) || void 0 === u ? void 0 : u.id);
+							Object(Q.ub)(null !== (m = null === (l = null === (d = r().pages) || void 0 === d ? void 0 : d.comments) || void 0 === l ? void 0 : l.followed) && void 0 !== m ? m : [], null === (u = r().user.account) || void 0 === u ? void 0 : u.id);
 							const t = s ? n.fbt._("Followed! You’ll get updates when there’s new activity.", null, {
 								hk: "2O1Ou3"
 							}) : n.fbt._("Unfollowed. You won’t get updates on this comment anymore.", null, {
@@ -1248,7 +1248,7 @@
 				}) : n.fbt._("None", null, {
 					hk: "4jwXNg"
 				});
-			class V extends s.a.Component {
+			class Q extends s.a.Component {
 				constructor() {
 					super(...arguments), this.track = () => {
 						const {
@@ -1312,7 +1312,7 @@
 					})))
 				}
 			}
-			var Q = V;
+			var V = Q;
 			const X = "CommentSort--SortPicker",
 				z = "CommentSort--HighlightPicker",
 				$ = "CommentSort--Tooltip",
@@ -1511,7 +1511,7 @@
 						on: T
 					}))), g && s.a.createElement("div", {
 						className: W.a.containerRow
-					}, s.a.createElement(Q, {
+					}, s.a.createElement(V, {
 						changeHighlightSort: t,
 						highlightIsOpen: m,
 						id: z,
@@ -1713,8 +1713,8 @@
 				let G = null === (o = null == N ? void 0 : N.comment) || void 0 === o ? void 0 : o.id,
 					q = (null === (n = null == N ? void 0 : N.post) || void 0 === n ? void 0 : n.id) || (null === (x = null === (g = null == N ? void 0 : N.comment) || void 0 === g ? void 0 : g.postInfo) || void 0 === x ? void 0 : x.id);
 				const J = null === (_ = null == N ? void 0 : N.subreddit) || void 0 === _ ? void 0 : _.id,
-					V = null === (S = null === (v = null == N ? void 0 : N.awarding) || void 0 === v ? void 0 : v.award) || void 0 === S ? void 0 : S.id,
-					Q = null === (I = null === (w = null == N ? void 0 : N.awarding) || void 0 === w ? void 0 : w.awarder) || void 0 === I ? void 0 : I.id;
+					Q = null === (S = null === (v = null == N ? void 0 : N.awarding) || void 0 === v ? void 0 : v.award) || void 0 === S ? void 0 : S.id,
+					V = null === (I = null === (w = null == N ? void 0 : N.awarding) || void 0 === w ? void 0 : w.awarder) || void 0 === I ? void 0 : I.id;
 				if (F === O.a.CommentFollow || F === O.a.PostFollow) {
 					const t = (t => {
 						const e = {},
@@ -1802,16 +1802,16 @@
 							})) : null
 						}
 						case O.a.AwardReceived: {
-							if (!Q) return null;
+							if (!V) return null;
 							const t = t => {
-								t.preventDefault(), Q ? K({
+								t.preventDefault(), V ? K({
 									position: f.d.SECOND,
-									awardId: V
+									awardId: Q
 								}) : T(Object(d.f)(k))
 							};
 							return r.a.createElement(l.b, {
-								userId: Q,
-								contextId: Q,
+								userId: V,
+								contextId: V,
 								onClick: t,
 								isFullWidth: P,
 								priority: p.c.Tertiary,
@@ -2416,4 +2416,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-NotificationUnit-Button.843ba15ce0a794993cfe.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-NotificationUnit-Button.aca55d2ea45941020754.js.map

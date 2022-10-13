@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModListing.c2be766e2fbb3af38b7f.js
-// Retrieved at 10/13/2022, 2:20:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModListing.3c67a781e300eb13e77c.js
+// Retrieved at 10/13/2022, 3:00:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModListing"], {
 		"./node_modules/classnames/index.js": function(e, t, n) {
@@ -431,9 +431,9 @@
 		"./src/reddit/actions/pages/modListing/index.ts": function(e, t, n) {
 			"use strict";
 			n.r(t), n.d(t, "modListingDataPending", (function() {
-				return N
-			})), n.d(t, "modListingDataLoaded", (function() {
 				return T
+			})), n.d(t, "modListingDataLoaded", (function() {
+				return N
 			})), n.d(t, "modListingDataFailed", (function() {
 				return w
 			})), n.d(t, "modListingPageRequested", (function() {
@@ -506,18 +506,18 @@
 				L = n("./src/reddit/routes/modListing/index.ts"),
 				P = n("./src/reddit/selectors/user.ts"),
 				M = n("./src/reddit/actions/pages/modListing/constants.ts");
-			const N = Object(d.a)(M.f),
-				T = Object(d.a)(M.e),
+			const T = Object(d.a)(M.f),
+				N = Object(d.a)(M.e),
 				w = Object(d.a)(M.d),
 				F = (e, t) => async (n, s, i) => {
 					const o = s();
 					if (o.listings.postOrder.api.pending[e]) return;
-					n(N({
+					n(T({
 						key: e
 					}));
 					const d = await Object(j.a)("modListing", () => _(i.apiContext(), t)),
 						a = `error-${e}`;
-					d.ok ? (n(T({
+					d.ok ? (n(N({
 						key: e,
 						meta: o.meta,
 						...d.body
@@ -1859,9 +1859,9 @@
 					redditStyle: L,
 					sidebar: P,
 					sidebars: M,
-					trendingUnit: N,
-					subredditId: T
-				} = e, w = N ? "28px" : "0", F = j ? {
+					trendingUnit: T,
+					subredditId: N
+				} = e, w = T ? "28px" : "0", F = j ? {
 					marginRight: `${a.p}px`,
 					marginTop: w
 				} : {
@@ -1885,7 +1885,7 @@
 				const A = y ? `${I||l.a+2*a.l}px` : "100%",
 					H = Object(r.useContext)(u.a);
 				return s.a.createElement(v.a, {
-					subredditId: T
+					subredditId: N
 				}, s.a.createElement("div", {
 					className: Object(d.a)(E.a.outerContainer, c.i, m, {
 						[E.a.outerContainerExp]: H
@@ -1901,7 +1901,7 @@
 					style: {
 						maxWidth: A
 					}
-				}, N), s.a.createElement("div", {
+				}, T), s.a.createElement("div", {
 					className: E.a.body,
 					style: {
 						maxWidth: A
@@ -1972,7 +1972,7 @@
 			})), o.a.createElement(O.b, {
 				isSidebar: !1,
 				subredditsOrProfilesIds: e.moderatedCommunitiesIds
-			})))), N = e => o.a.createElement(o.a.Fragment, null, o.a.createElement("div", {
+			})))), T = e => o.a.createElement(o.a.Fragment, null, o.a.createElement("div", {
 				className: L.a.feedDetailsTitle
 			}, o.a.createElement(S.a, {
 				className: L.a.modIcon
@@ -1988,11 +1988,11 @@
 				subredditsOrProfilesIds: e.moderatedCommunitiesIds
 			}) : o.a.createElement("div", {
 				className: L.a.loadingBar
-			})), T = Object(a.c)({
+			})), N = Object(a.c)({
 				isModalOpen: Object(j.b)("MOD_LISTING_FEED_DETAILS_MODAL_ID"),
 				moderatedCommunitiesIds: I.h
 			});
-			var w = Object(d.b)(T, (e, t) => {
+			var w = Object(d.b)(N, (e, t) => {
 					let {} = t;
 					return {
 						toggleModal: () => e(Object(_.i)("MOD_LISTING_FEED_DETAILS_MODAL_ID"))
@@ -2003,7 +2003,7 @@
 						moderatedCommunitiesIds: n,
 						toggleModal: r
 					} = e;
-					return n ? o.a.createElement(o.a.Fragment, null, o.a.createElement(N, {
+					return n ? o.a.createElement(o.a.Fragment, null, o.a.createElement(T, {
 						moderatedCommunitiesIds: n,
 						onSeeMoreDetails: r
 					}), t && o.a.createElement(M, {
@@ -2338,7 +2338,7 @@
 				const b = Object(o.e)(e => e.subreddits.survey[n]),
 					p = Object(o.e)(e => e.subreddits.progressModule[n]),
 					h = Object(o.e)(u.a),
-					g = h !== c.We.NewModule;
+					g = h !== c.Ue.NewModule;
 				return (null === (s = null == p ? void 0 : p.cards) || void 0 === s ? void 0 : s.length) > 0 && g ? i.a.createElement(m, {
 					closeModuleOnMount: !!t && t !== l.g.Large,
 					subredditId: n,
@@ -2364,15 +2364,15 @@
 			const o = e => {
 					const t = Object(s.c)(e, {
 						experimentEligibilitySelector: i.Q,
-						experimentName: r.vd
+						experimentName: r.td
 					});
-					return !(!t || Object(r.xg)(t))
+					return !(!t || Object(r.ug)(t))
 				},
 				d = e => {
 					return Object(s.c)(e, {
 						experimentEligibilitySelector: i.Q,
-						experimentName: r.vd
-					}) === r.Wd.ListingEnabled
+						experimentName: r.td
+					}) === r.Ud.ListingEnabled
 				}
 		},
 		"./src/reddit/selectors/experiments/navbarLikeMweb.ts": function(e, t, n) {
@@ -2383,9 +2383,9 @@
 			var r = n("./src/reddit/constants/experiments.ts"),
 				s = n("./src/reddit/helpers/chooseVariant/index.ts");
 			const i = e => Object(s.c)(e, {
-				experimentName: r.Ne,
+				experimentName: r.Le,
 				experimentEligibilitySelector: s.a
-			}) === r.Ve.Enabled
+			}) === r.Te.Enabled
 		},
 		"./src/reddit/selectors/focusedVerticalSuggestion.ts": function(e, t, n) {
 			"use strict";
@@ -2499,4 +2499,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModListing.c2be766e2fbb3af38b7f.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModListing.3c67a781e300eb13e77c.js.map
