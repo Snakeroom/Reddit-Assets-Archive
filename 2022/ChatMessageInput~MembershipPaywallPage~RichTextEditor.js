@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ChatMessageInput~MembershipPaywallPage~RichTextEditor.f763d68e680632be1d52.js
-// Retrieved at 10/17/2022, 10:20:11 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ChatMessageInput~MembershipPaywallPage~RichTextEditor.3b9588d099c747466468.js
+// Retrieved at 10/17/2022, 12:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ChatMessageInput~MembershipPaywallPage~RichTextEditor"], {
 		"./node_modules/draft-js/dist/Draft.css": function(e, t, n) {},
@@ -6460,8 +6460,8 @@
 				}, e => ({
 					onFetchEditorProducts: t => e(Object(k.e)(t)),
 					onTrackMediaDrop: t => e((e, n) => j.t(n(), t)),
-					retryUpload: t => e(T.c(t)),
-					startUploads: (t, n, o, s, r) => e(T.e(t, n, bc(o), s, r))
+					retryUpload: (t, n) => e(T.c(t, n)),
+					startUploads: (t, n, o, s, r, i) => e(T.e(t, n, bc(o), s, r, i))
 				}));
 			class Ec extends u.Component {
 				constructor(e) {
@@ -6746,22 +6746,23 @@
 							onFilesFilter: t,
 							rteState: n,
 							shouldUseGqlUploadLease: o,
-							minImageDimension: s
+							minImageDimension: s,
+							editorType: r
 						} = this.props, {
-							files: r,
-							filesSource: i
+							files: i,
+							filesSource: c
 						} = e;
-						let c = r;
-						t && (c = t(r, this.state.editorState)), this.setState({
+						let a = i;
+						t && (a = t(i, this.state.editorState)), this.setState({
 							mediaToInsert: {
 								...e,
-								files: c
+								files: a
 							}
 						});
-						const a = c.slice(0, hc);
-						await this.props.startUploads(a, i, n.editorKey, o, s), this.insertValidatedMedia()
+						const l = a.slice(0, hc);
+						await this.props.startUploads(l, c, n.editorKey, r === We.a.Post, o, s), this.insertValidatedMedia()
 					}, this.onRetryUpload = e => {
-						this.props.retryUpload(e)
+						this.props.retryUpload(e, this.props.editorType === We.a.Post)
 					}, this.onFilesSelect = e => {
 						const {
 							editorState: t
@@ -8380,4 +8381,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatMessageInput~MembershipPaywallPage~RichTextEditor.f763d68e680632be1d52.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatMessageInput~MembershipPaywallPage~RichTextEditor.3b9588d099c747466468.js.map
