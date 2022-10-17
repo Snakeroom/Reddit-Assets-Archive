@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-CompactPost.6989537f1688aca76a8e.js
-// Retrieved at 10/17/2022, 10:40:10 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-CompactPost.58d22fb442ddd7998ab4.js
+// Retrieved at 10/17/2022, 1:50:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-CompactPost"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -942,9 +942,9 @@
 				if (!u || !u.url) return null;
 				let f = u.displayText;
 				u.displayText.length >= 40 && (f = u.displayText.slice(0, 40 - "...".length) + "...");
-				const x = Object(d.s)(s, u.displayText),
-					v = Object(d.t)(s) ? f : b,
-					h = Object(d.t)(s) ? s.subcaption : u.displayText,
+				const x = Object(d.t)(s, u.displayText),
+					v = Object(d.u)(s) ? f : b,
+					h = Object(d.u)(s) ? s.subcaption : u.displayText,
 					_ = Object(a.a)(m.a.leftSideContent, {
 						[m.a.ctaExperimentNoPadding]: e.ctaExperimentDesign && "card" !== e.ctaExperimentDesign,
 						[m.a.ctaExperimentPadded]: "card" === e.ctaExperimentDesign
@@ -1975,7 +1975,7 @@
 					useMediaIcons: C
 				} = e, g = s || f, y = Object(a.e)(v.b), k = Object(a.e)(v.c), j = t => {
 					(y || k) && (t.preventDefault(), e.showModalOnPostLinkClick(g))
-				}, T = g.media, N = Object(x.p)(f), P = o && !!s;
+				}, T = g.media, N = Object(x.q)(f), P = o && !!s;
 				return T && !N && !(("rtjson" === T.type || "text" === T.type || "liveaudio" === T.type) && !Object(p.a)(g)) || !!f.pollData ? r.a.createElement("button", {
 					"aria-expanded": !!m,
 					"aria-haspopup": !0,
@@ -2400,7 +2400,7 @@
 				}), r.a.createElement(u.c, I({
 					tooltipId: J,
 					text: L()
-				}, Y))), a && Object(k.u)(V) && !l && r.a.createElement(o.Fragment, null, r.a.createElement(y.a, {
+				}, Y))), a && Object(k.v)(V) && !l && r.a.createElement(o.Fragment, null, r.a.createElement(y.a, {
 					isFilled: !0,
 					className: Object(c.a)(P.a.icon, P.a.stickyIcon),
 					desc: R(),
@@ -5517,4 +5517,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-CompactPost.6989537f1688aca76a8e.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-CompactPost.58d22fb442ddd7998ab4.js.map

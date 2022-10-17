@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostCreation.2fe704cd4a141c1272b8.js
-// Retrieved at 10/17/2022, 12:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostCreation.db01e746d230855d5cd3.js
+// Retrieved at 10/17/2022, 1:50:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostCreation", "ChatMessageInput~MembershipPaywallPage~RichTextEditor", "ContributorRequestButton"], {
 		"./node_modules/autosize/dist/autosize.js": function(e, t, n) {
@@ -3856,7 +3856,7 @@
 						e.type === o.L.BAD_CAPTCHA_ERROR ? t(H()) : e.type === o.L.VALIDATION_ERROR ? t(K(e)) : e.type === o.L.SUBMIT_VALIDATION_ERROR ? t(W(e)) : t(B(e))
 					}
 					const O = Object(D.o)(d.kind),
-						_ = x.ok && x.body && x.body.id && Object(N.x)(x.body.id),
+						_ = x.ok && x.body && x.body.id && Object(N.y)(x.body.id),
 						w = n();
 					v.B(w, O, _, e.correlationId)
 				}
@@ -9592,7 +9592,7 @@
 				}), s.a.createElement(u.c, P({
 					tooltipId: Y,
 					text: M()
-				}, z))), i && Object(j.u)(K) && !d && s.a.createElement(r.Fragment, null, s.a.createElement(k.a, {
+				}, z))), i && Object(j.v)(K) && !d && s.a.createElement(r.Fragment, null, s.a.createElement(k.a, {
 					isFilled: !0,
 					className: Object(c.a)(I.a.icon, I.a.stickyIcon),
 					desc: L(),
@@ -36572,7 +36572,7 @@
 			e.exports = JSON.parse('{"id":"445164f0825f"}')
 		},
 		"./src/redditGQL/operations/CreateComment.json": function(e) {
-			e.exports = JSON.parse('{"id":"0daddfa21bb8"}')
+			e.exports = JSON.parse('{"id":"d9dc3b325601"}')
 		},
 		"./src/redditGQL/operations/CreateLiveAudioRoomOnProfile.json": function(e) {
 			e.exports = JSON.parse('{"id":"e35a47c6aa21"}')
@@ -36636,4 +36636,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.2fe704cd4a141c1272b8.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.db01e746d230855d5cd3.js.map

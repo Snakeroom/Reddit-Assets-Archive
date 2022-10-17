@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditTopContent.14ad0aaaab27d2ed7f68.js
-// Retrieved at 10/17/2022, 10:40:10 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditTopContent.c9b668ea165f61caf10b.js
+// Retrieved at 10/17/2022, 1:50:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditTopContent"], {
 		"./src/lib/getShortenedLink.ts": function(e, t, s) {
@@ -364,31 +364,31 @@
 				R = s("./src/reddit/icons/svgs/CircledPlanet/index.tsx"),
 				H = s("./src/reddit/layout/twoCol/ExpandRight/index.tsx"),
 				Q = s("./src/reddit/components/DiscoveryUnit/PostCommunity/index.m.less"),
-				z = s.n(Q);
-			var q = e => {
+				q = s.n(Q);
+			var z = e => {
 					const t = Object(F.a)(e.name, e.type);
 					return r.a.createElement("div", {
-						className: Object(l.a)(z.a.container, e.className)
+						className: Object(l.a)(q.a.container, e.className)
 					}, r.a.createElement(H.a, {
-						className: z.a.layout
+						className: q.a.layout
 					}, r.a.createElement("div", {
-						className: z.a.iconContainer
+						className: q.a.iconContainer
 					}, e.iconUrl ? r.a.createElement("img", {
-						className: z.a.icon,
+						className: q.a.icon,
 						src: e.iconUrl
 					}) : r.a.createElement(R.a, {
-						className: z.a.planetIcon,
+						className: q.a.planetIcon,
 						"data-redditstyle": !0
 					})), r.a.createElement("div", {
-						className: z.a.textContainer
+						className: q.a.textContainer
 					}, r.a.createElement(I.a, {
 						"data-click-id": "subreddit",
-						className: z.a.name,
+						className: q.a.name,
 						to: t
 					}, Object(F.b)(e.displayText || e.name, e.type)), r.a.createElement("span", {
-						className: z.a.separator
+						className: q.a.separator
 					}, "•"), r.a.createElement("span", {
-						className: z.a.timestamp
+						className: q.a.timestamp
 					}, r.a.createElement(D.d, {
 						seconds: e.created / M.Xb
 					})))))
@@ -448,7 +448,7 @@
 						theme: k
 					} = this.props, {
 						media: y
-					} = a || p, E = Object(ie.p)(p);
+					} = a || p, E = Object(ie.q)(p);
 					let v = y && r.a.createElement(Z.a, {
 							autoplayPref: e,
 							availableWidth: t,
@@ -490,7 +490,7 @@
 						flairStyleTemplate: o
 					}, r.a.createElement("div", {
 						className: Object(l.a)(pe.a.innerContainer, le.a.innerContainer)
-					}, f && C && r.a.createElement(q, be({
+					}, f && C && r.a.createElement(z, be({
 						created: p.created
 					}, j)), x && C && r.a.createElement(B, be({
 						created: p.created,
@@ -1334,9 +1334,9 @@
 				R = s("./src/reddit/selectors/user.ts"),
 				H = s("./src/telemetry/models/Outbound.ts"),
 				Q = s("./src/reddit/components/PostTitle/getLeftAndRightFlair.ts"),
-				z = s("./src/higherOrderComponents/withAdClickLocation/Locations.ts"),
-				q = s("./src/reddit/components/PostTitle/index.m.less"),
-				G = s.n(q);
+				q = s("./src/higherOrderComponents/withAdClickLocation/Locations.ts"),
+				z = s("./src/reddit/components/PostTitle/index.m.less"),
+				G = s.n(z);
 
 			function Z() {
 				return (Z = Object.assign || function(e) {
@@ -1575,7 +1575,7 @@
 					return i.a.createElement("div", {
 						className: Object(m.a)(G.a.Component, e, c.id),
 						ref: this.props.innerRef,
-						"data-adclicklocation": z.a.TITLE,
+						"data-adclicklocation": q.a.TITLE,
 						onClick: u
 					}, !l && f && i.a.createElement(S.a, {
 						isFlairFilter: !0,
@@ -2018,4 +2018,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditTopContent.14ad0aaaab27d2ed7f68.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditTopContent.c9b668ea165f61caf10b.js.map

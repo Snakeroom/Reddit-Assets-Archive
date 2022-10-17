@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-MediumPost.b15cd20bab9f2e4fdbaf.js
-// Retrieved at 10/17/2022, 10:40:10 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-MediumPost.cfe36cb96ed25b077c92.js
+// Retrieved at 10/17/2022, 1:50:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-MediumPost"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -2768,9 +2768,9 @@
 				if (!u || !u.url) return null;
 				let f = u.displayText;
 				u.displayText.length >= 40 && (f = u.displayText.slice(0, 40 - "...".length) + "...");
-				const h = Object(d.s)(s, u.displayText),
-					O = Object(d.t)(s) ? f : b,
-					x = Object(d.t)(s) ? s.subcaption : u.displayText,
+				const h = Object(d.t)(s, u.displayText),
+					O = Object(d.u)(s) ? f : b,
+					x = Object(d.u)(s) ? s.subcaption : u.displayText,
 					v = Object(i.a)(m.a.leftSideContent, {
 						[m.a.ctaExperimentNoPadding]: e.ctaExperimentDesign && "card" !== e.ctaExperimentDesign,
 						[m.a.ctaExperimentPadded]: "card" === e.ctaExperimentDesign
@@ -5397,7 +5397,7 @@
 				}), r.a.createElement(u.c, I({
 					tooltipId: Y,
 					text: A()
-				}, q))), i && Object(k.u)(V) && !l && r.a.createElement(o.Fragment, null, r.a.createElement(S.a, {
+				}, q))), i && Object(k.v)(V) && !l && r.a.createElement(o.Fragment, null, r.a.createElement(S.a, {
 					isFilled: !0,
 					className: Object(c.a)(T.a.icon, T.a.stickyIcon),
 					desc: L(),
@@ -9428,7 +9428,7 @@
 			e.exports = JSON.parse('{"id":"445164f0825f"}')
 		},
 		"./src/redditGQL/operations/CreateComment.json": function(e) {
-			e.exports = JSON.parse('{"id":"0daddfa21bb8"}')
+			e.exports = JSON.parse('{"id":"d9dc3b325601"}')
 		},
 		"./src/redditGQL/operations/UpdateComment.json": function(e) {
 			e.exports = JSON.parse('{"id":"3d83ef4f0375"}')
@@ -9438,4 +9438,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-MediumPost.b15cd20bab9f2e4fdbaf.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-MediumPost.cfe36cb96ed25b077c92.js.map

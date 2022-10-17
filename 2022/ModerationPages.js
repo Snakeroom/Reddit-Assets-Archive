@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModerationPages.4323a2e58ac1cbf2fe9c.js
-// Retrieved at 10/17/2022, 1:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModerationPages.5a4baa3f5d477c510d9e.js
+// Retrieved at 10/17/2022, 1:50:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModerationPages", "CollectionCommentsPage~CommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~RpanListingUnit~S~5809214e", "CommentsPage~Governance~Reddit~ReportFlow~Subreddit~reddit-components-BlankPost~reddit-components-Cl~5351df81", "Governance~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compo~bd4baca2", "Reddit~RpanListingUnit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPos~93b34f9d", "Governance~ModListing~Reddit~ReportFlow~Subreddit", "ModListing~PostCreation~Reddit~StandalonePostPage~Subreddit", "Governance~ModListing~Reddit", "Governance~Reddit~SubredditForkingCTA"], {
 		"./src/chat/controls/Svg/index.m.less": function(e, t, n) {
@@ -2847,7 +2847,7 @@
 							partialPostId: f
 						} = b ? b.params : null;
 					if (!f) return;
-					const g = Object(O.x)(f);
+					const g = Object(O.y)(f);
 					n(F({
 						moreCommentsId: c.id
 					}));
@@ -12546,7 +12546,7 @@
 						e.type === s.L.BAD_CAPTCHA_ERROR ? t(H()) : e.type === s.L.VALIDATION_ERROR ? t(q(e)) : e.type === s.L.SUBMIT_VALIDATION_ERROR ? t(G(e)) : t(U(e))
 					}
 					const y = Object(M.o)(l.kind),
-						C = x.ok && x.body && x.body.id && Object(P.x)(x.body.id),
+						C = x.ok && x.body && x.body.id && Object(P.y)(x.body.id),
 						w = n();
 					E.B(w, y, C, e.correlationId)
 				}
@@ -16071,7 +16071,7 @@
 						},
 						_ = await ((e, t, n) => Object(i.a)(e, {
 							data: n,
-							endpoint: `${o.a.gatewayUrl}/desktopapi/v1/duplicates/${Object(a.z)(t)}`,
+							endpoint: `${o.a.gatewayUrl}/desktopapi/v1/duplicates/${Object(a.A)(t)}`,
 							method: r.ob.GET
 						}))(b(), t, h);
 					if (_.ok) {
@@ -20437,9 +20437,9 @@
 				if (!u || !u.url) return null;
 				let f = u.displayText;
 				u.displayText.length >= 40 && (f = u.displayText.slice(0, 40 - "...".length) + "...");
-				const h = Object(c.s)(n, u.displayText),
-					_ = Object(c.t)(n) ? f : b,
-					g = Object(c.t)(n) ? n.subcaption : u.displayText,
+				const h = Object(c.t)(n, u.displayText),
+					_ = Object(c.u)(n) ? f : b,
+					g = Object(c.u)(n) ? n.subcaption : u.displayText,
 					v = Object(i.a)(m.a.leftSideContent, {
 						[m.a.ctaExperimentNoPadding]: e.ctaExperimentDesign && "card" !== e.ctaExperimentDesign,
 						[m.a.ctaExperimentPadded]: "card" === e.ctaExperimentDesign
@@ -30768,7 +30768,7 @@
 					useMediaIcons: E
 				} = e, C = n || f, j = Object(i.e)(_.b), k = Object(i.e)(_.c), I = t => {
 					(j || k) && (t.preventDefault(), e.showModalOnPostLinkClick(C))
-				}, S = C.media, w = Object(h.p)(f), T = r && !!n;
+				}, S = C.media, w = Object(h.q)(f), T = r && !!n;
 				return S && !w && !(("rtjson" === S.type || "text" === S.type || "liveaudio" === S.type) && !Object(p.a)(C)) || !!f.pollData ? o.a.createElement("button", {
 					"aria-expanded": !!m,
 					"aria-haspopup": !0,
@@ -41512,7 +41512,7 @@
 				}), o.a.createElement(u.c, N({
 					tooltipId: Q,
 					text: A()
-				}, W))), i && Object(k.u)(q) && !l && o.a.createElement(r.Fragment, null, o.a.createElement(j.a, {
+				}, W))), i && Object(k.v)(q) && !l && o.a.createElement(r.Fragment, null, o.a.createElement(j.a, {
 					isFilled: !0,
 					className: Object(d.a)(T.a.icon, T.a.stickyIcon),
 					desc: L(),
@@ -43048,7 +43048,7 @@
 								permalink: e,
 								post: n
 							} = t;
-							n && Object(Y.q)(n) ? (t.onToggleVideoShareModal(), this.handlePostEvent("share")) : (this.handlePostEvent("share_copy"), t.onCopyLink(e))
+							n && Object(Y.r)(n) ? (t.onToggleVideoShareModal(), this.handlePostEvent("share")) : (this.handlePostEvent("share_copy"), t.onCopyLink(e))
 						}
 					}, i.a.createElement(N.a, {
 						name: "link_post",
@@ -47430,7 +47430,7 @@
 								permalink: t,
 								post: n
 							} = e;
-							if (n && Object(C.q)(n)) e.sendEventWithName("share_copy", {
+							if (n && Object(C.r)(n)) e.sendEventWithName("share_copy", {
 								referralId: P
 							}), w();
 							else {
@@ -58181,7 +58181,7 @@
 						const {
 							crosspostRoot: n
 						} = e;
-						n && n.type === c.a.Post && n.postInfo && a(n.postInfo);
+						n && n.type === c.a.Post && n.postInfo && a(n.postInfo), Object(c.o)(e).forEach(a);
 						let d = t.id;
 						if (e.authorFlair && (i.authorFlair[t.belongsTo.id] || (i.authorFlair[t.belongsTo.id] = {}), i.authorFlair[t.belongsTo.id][t.author] = Object(m.a)(e.authorFlair)[0]), Object(c.l)(e)) i.profiles[e.profile.id] || (i.profiles[e.profile.id] = Object(g.a)(e.profile));
 						else if (Object(c.n)(e)) i.subreddits[e.subreddit.id] || (i.subreddits[e.subreddit.id] = Object(x.a)(e.subreddit)), i.postFlair[e.subreddit.id] || (i.postFlair[e.subreddit.id] = Object(b.a)(e.subreddit));
@@ -64153,7 +64153,7 @@
 							const {
 								partialCommentId: r,
 								partialPostId: o
-							} = e.match.params, i = Object(b.x)(o), a = Object(l.a)(e, t, t.posts.models[i]);
+							} = e.match.params, i = Object(b.y)(o), a = Object(l.a)(e, t, t.posts.models[i]);
 							if (!a) return;
 							const d = r && Object(p.h)(r),
 								{
@@ -73749,7 +73749,7 @@
 					if (e.platform.currentPage && e.platform.currentPage.urlParams && e.platform.currentPage.urlParams.partialPostId) {
 						const {
 							partialPostId: t
-						} = e.platform.currentPage.urlParams, n = Object(c.x)(t);
+						} = e.platform.currentPage.urlParams, n = Object(c.y)(t);
 						return Array.from(new Set(Object.keys(e.features.comments.models).filter(t => e.features.comments.models[t].postId === n && e.features.comments.models[t].author !== o.H).map(t => e.features.comments.models[t].author)))
 					}
 					return []
@@ -77141,7 +77141,7 @@
 			e.exports = JSON.parse('{"id":"84b1688a0244"}')
 		},
 		"./src/redditGQL/operations/AddPredictionDrafts.json": function(e) {
-			e.exports = JSON.parse('{"id":"c45792ceb09b"}')
+			e.exports = JSON.parse('{"id":"78ced610408f"}')
 		},
 		"./src/redditGQL/operations/AllModerators.json": function(e) {
 			e.exports = JSON.parse('{"id":"e29846f6d98c"}')
@@ -77168,7 +77168,7 @@
 			e.exports = JSON.parse('{"id":"1b7d106afc6c"}')
 		},
 		"./src/redditGQL/operations/CreateComment.json": function(e) {
-			e.exports = JSON.parse('{"id":"0daddfa21bb8"}')
+			e.exports = JSON.parse('{"id":"d9dc3b325601"}')
 		},
 		"./src/redditGQL/operations/CreateCustomEmoji.json": function(e) {
 			e.exports = JSON.parse('{"id":"e443629d50b0"}')
@@ -77183,7 +77183,7 @@
 			e.exports = JSON.parse('{"id":"10ad38be41ae"}')
 		},
 		"./src/redditGQL/operations/CreatePredictionTournament.json": function(e) {
-			e.exports = JSON.parse('{"id":"92435262dcb1"}')
+			e.exports = JSON.parse('{"id":"755b41459c8e"}')
 		},
 		"./src/redditGQL/operations/CreateScheduledPost.json": function(e) {
 			e.exports = JSON.parse('{"id":"737d59db38fc"}')
@@ -77207,10 +77207,10 @@
 			e.exports = JSON.parse('{"id":"c518a45f60a5"}')
 		},
 		"./src/redditGQL/operations/EndPredictionTournament.json": function(e) {
-			e.exports = JSON.parse('{"id":"30e4b2294d07"}')
+			e.exports = JSON.parse('{"id":"9ae193edef38"}')
 		},
 		"./src/redditGQL/operations/EventPostsBySubredditName.json": function(e) {
-			e.exports = JSON.parse('{"id":"6802123f52a3"}')
+			e.exports = JSON.parse('{"id":"73ad72fb80e2"}')
 		},
 		"./src/redditGQL/operations/FetchContentControls.json": function(e) {
 			e.exports = JSON.parse('{"id":"58b71dbd3384"}')
@@ -77243,7 +77243,7 @@
 			e.exports = JSON.parse('{"id":"05271fef4b69"}')
 		},
 		"./src/redditGQL/operations/GetCommentById.json": function(e) {
-			e.exports = JSON.parse('{"id":"ff330274d364"}')
+			e.exports = JSON.parse('{"id":"c68af8245099"}')
 		},
 		"./src/redditGQL/operations/GetModUserNotes.json": function(e) {
 			e.exports = JSON.parse('{"id":"0eb0efc0bf02"}')
@@ -77273,7 +77273,7 @@
 			e.exports = JSON.parse('{"id":"bb325c103c55"}')
 		},
 		"./src/redditGQL/operations/GetTournaments.json": function(e) {
-			e.exports = JSON.parse('{"id":"99af56774d04"}')
+			e.exports = JSON.parse('{"id":"ac9d5bb31a5d"}')
 		},
 		"./src/redditGQL/operations/GetTournamentsBaseInfo.json": function(e) {
 			e.exports = JSON.parse('{"id":"cebfc8734cec"}')
@@ -77288,7 +77288,7 @@
 			e.exports = JSON.parse('{"id":"023547ccdaf6"}')
 		},
 		"./src/redditGQL/operations/ModQueueItems.json": function(e) {
-			e.exports = JSON.parse('{"id":"d215db249b9d"}')
+			e.exports = JSON.parse('{"id":"3076a6a9056e"}')
 		},
 		"./src/redditGQL/operations/ModQueueTriggers.json": function(e) {
 			e.exports = JSON.parse('{"id":"de8696c3b5fd"}')
@@ -77315,7 +77315,7 @@
 			e.exports = JSON.parse('{"id":"649e9f8bd6d9"}')
 		},
 		"./src/redditGQL/operations/ProfileFeed.json": function(e) {
-			e.exports = JSON.parse('{"id":"5ab15b66c9e1"}')
+			e.exports = JSON.parse('{"id":"89320ccc04e7"}')
 		},
 		"./src/redditGQL/operations/ReallocatePowerups.json": function(e) {
 			e.exports = JSON.parse('{"id":"d02bf38ca840"}')
@@ -77366,7 +77366,7 @@
 			e.exports = JSON.parse('{"id":"29aee4089528"}')
 		},
 		"./src/redditGQL/operations/SubredditPage.json": function(e) {
-			e.exports = JSON.parse('{"id":"16b8a6d645c9"}')
+			e.exports = JSON.parse('{"id":"275c0a044c0c"}')
 		},
 		"./src/redditGQL/operations/SubredditPageExtra.json": function(e) {
 			e.exports = JSON.parse('{"id":"c6d0655ffe52"}')
@@ -77405,7 +77405,7 @@
 			e.exports = JSON.parse('{"id":"13af47cf5fb3"}')
 		},
 		"./src/redditGQL/operations/TopAwardedPosts.json": function(e) {
-			e.exports = JSON.parse('{"id":"83c29eef928e"}')
+			e.exports = JSON.parse('{"id":"cbf1c81d6285"}')
 		},
 		"./src/redditGQL/operations/TopAwardersLeaderboard.json": function(e) {
 			e.exports = JSON.parse('{"id":"750ff4a757de"}')
@@ -77438,7 +77438,7 @@
 			e.exports = JSON.parse('{"id":"699ae1616006"}')
 		},
 		"./src/redditGQL/operations/UpdatePredictionTournament.json": function(e) {
-			e.exports = JSON.parse('{"id":"ab9daeb2b7c2"}')
+			e.exports = JSON.parse('{"id":"376ea7786e14"}')
 		},
 		"./src/redditGQL/operations/UpdateScheduledPost.json": function(e) {
 			e.exports = JSON.parse('{"id":"db256acfa640"}')
@@ -77490,4 +77490,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.4323a2e58ac1cbf2fe9c.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.5a4baa3f5d477c510d9e.js.map

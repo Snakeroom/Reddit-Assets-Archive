@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/gildActions.d81a0015f42a9eb4af09.js
-// Retrieved at 10/11/2022, 9:50:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/gildActions.c85b7f91da56ef7f7c8d.js
+// Retrieved at 10/17/2022, 1:50:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["gildActions"], {
 		"./src/reddit/actions/gold/econPurchase.ts": function(e, t, r) {
@@ -105,16 +105,16 @@
 				E = r("./src/reddit/endpoints/awards/index.ts"),
 				R = r("./src/lib/makeGqlRequest/index.ts"),
 				N = r("./src/reddit/helpers/addRedesignIdentifier/index.ts"),
-				q = r("./src/redditGQL/operations/GildComment.json"),
-				T = r("./src/redditGQL/operations/GildPost.json");
+				T = r("./src/redditGQL/operations/GildComment.json"),
+				q = r("./src/redditGQL/operations/GildPost.json");
 			const K = (e, t, r) => Object(R.a)(e, {
-					...T,
+					...q,
 					variables: t
 				}, {
 					query: r ? {} : Object(N.b)()
 				}),
 				D = (e, t, r) => Object(R.a)(e, {
-					...q,
+					...T,
 					variables: t
 				}, {
 					query: r ? {} : Object(N.b)()
@@ -186,7 +186,7 @@
 									c = Object(P.G)(i, {
 										postId: e
 									}),
-									u = Object(F.a)(e) && !!c && Object(h.q)(c),
+									u = Object(F.a)(e) && !!c && Object(h.r)(c),
 									l = {
 										gildingTypeId: o.selectedAward.id,
 										isAnonymous: o.isAnonymous,
@@ -354,18 +354,18 @@
 							t = document.getElementById(e);
 						t && t.dispatchEvent(new Event("awardAdded"))
 					}, 10);
-					const q = Date.now();
+					const T = Date.now();
 					await t(Object(o.b)({
 						correlationId: y,
 						forceLoad: !0
 					}));
-					const T = Date.now() - q;
+					const q = Date.now() - T;
 					if (R > 0) {
 						const e = Object(L.f)(r()).filter(e => v.a.has(e.dealInfo.type));
 						if (e.length) {
-							const r = Math.max(900 - T, 10),
-								d = Math.max(300 - T, 10),
-								a = Object(F.a)(m) && Object(h.q)(Object(P.G)(s, {
+							const r = Math.max(900 - q, 10),
+								d = Math.max(300 - q, 10),
+								a = Object(F.a)(m) && Object(h.r)(Object(P.G)(s, {
 									postId: m
 								}));
 							setTimeout(() => t(Object(i.e)({
@@ -580,4 +580,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/gildActions.d81a0015f42a9eb4af09.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/gildActions.c85b7f91da56ef7f7c8d.js.map

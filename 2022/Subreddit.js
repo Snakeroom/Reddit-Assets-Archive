@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Subreddit.297df84075d5c21933f1.js
-// Retrieved at 10/17/2022, 1:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Subreddit.b7af04f3eff576556fd2.js
+// Retrieved at 10/17/2022, 1:50:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Subreddit", "Governance~ModListing~Reddit", "AchievementsActions", "reddit-components-Econ-PredictionLeaderboard-Sidebar"], {
 		"./node_modules/@reddit/i18n-tools/runtime/helpers/locale/index.js": function(e, t, n) {
@@ -18120,7 +18120,7 @@
 							const {
 								partialCommentId: s,
 								partialPostId: o
-							} = e.match.params, i = Object(b.x)(o), a = Object(l.a)(e, t, t.posts.models[i]);
+							} = e.match.params, i = Object(b.y)(o), a = Object(l.a)(e, t, t.posts.models[i]);
 							if (!a) return;
 							const c = s && Object(p.h)(s),
 								{
@@ -22341,7 +22341,7 @@
 			e.exports = JSON.parse('{"id":"d03522f8a8d4"}')
 		},
 		"./src/redditGQL/operations/SubredditGeoRecommendationViaFocusVertical.json": function(e) {
-			e.exports = JSON.parse('{"id":"d1355352c639"}')
+			e.exports = JSON.parse('{"id":"25e33b051f29"}')
 		},
 		"./src/redditGQL/operations/SubredditUserAchievements.json": function(e) {
 			e.exports = JSON.parse('{"id":"92790c69eba6"}')
@@ -22360,4 +22360,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Subreddit.297df84075d5c21933f1.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Subreddit.b7af04f3eff576556fd2.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage.0b51ecdf85dc1fd8648e.js
-// Retrieved at 10/17/2022, 10:40:10 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage.fd78b4db300a758445b3.js
+// Retrieved at 10/17/2022, 1:50:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage", "AchievementsActions"], {
 		"./node_modules/linkify-it/index.js": function(e, t, s) {
@@ -857,7 +857,7 @@
 						partialCommentId: d,
 						subredditName: c = "",
 						routePrefix: l
-					} = e.params, g = o ? Object(F.x)(o) : "", x = d && Object(L.h)(d), {
+					} = e.params, g = o ? Object(F.y)(o) : "", x = d && Object(L.h)(d), {
 						queryParams: y
 					} = e, C = s(), {
 						instanceId: O
@@ -1376,7 +1376,7 @@
 				Ve = e => {
 					var t, s;
 					const n = null === (s = null === (t = e.platform.currentPage) || void 0 === t ? void 0 : t.urlParams) || void 0 === s ? void 0 : s.partialPostId,
-						r = n && Object(x.x)(n),
+						r = n && Object(x.y)(n),
 						{
 							sortToUse: o
 						} = Object(B.a)(e, r);
@@ -1457,7 +1457,7 @@
 						partialCommentId: l
 					} = e.params, {
 						subredditName: m
-					} = e.params || "", u = c ? Object(x.x)(c) : "", p = l && Object(A.h)(l), {
+					} = e.params || "", u = c ? Object(x.y)(c) : "", p = l && Object(A.h)(l), {
 						path: b,
 						queryParams: h
 					} = e, g = Object(O.d)(b), {
@@ -1519,7 +1519,7 @@
 								experimentName: K.vf
 							}))(s())) return void t(Object(n.c)(i.url));
 						if ((R.media && R.media.type) === M.o.LIVEVIDEO) {
-							const e = `/rpan${R.belongsTo.type===F.a.SUBREDDIT?i.url:"/"}${Object(x.z)(R.id)}`;
+							const e = `/rpan${R.belongsTo.type===F.a.SUBREDDIT?i.url:"/"}${Object(x.A)(R.id)}`;
 							return void t(Object(n.c)(e))
 						}
 						if (R.belongsTo.type !== F.a.SUBREDDIT || R.isSponsored) {
@@ -1979,9 +1979,9 @@
 				if (!m || !m.url) return null;
 				let h = m.displayText;
 				m.displayText.length >= 40 && (h = m.displayText.slice(0, 40 - "...".length) + "...");
-				const g = Object(c.s)(s, m.displayText),
-					x = Object(c.t)(s) ? h : b,
-					f = Object(c.t)(s) ? s.subcaption : m.displayText,
+				const g = Object(c.t)(s, m.displayText),
+					x = Object(c.u)(s) ? h : b,
+					f = Object(c.u)(s) ? s.subcaption : m.displayText,
 					v = Object(i.a)(u.a.leftSideContent, {
 						[u.a.ctaExperimentNoPadding]: e.ctaExperimentDesign && "card" !== e.ctaExperimentDesign,
 						[u.a.ctaExperimentPadded]: "card" === e.ctaExperimentDesign
@@ -3240,7 +3240,7 @@
 							post: s,
 							isOverlay: n
 						} = t;
-						return !Object(T.r)(s) && !n && Object(F.a)(e) === I.Ve.NewModule
+						return !Object(T.s)(s) && !n && Object(F.a)(e) === I.Ve.NewModule
 					},
 					isLoggedIn: M.Q,
 					postSEOV2IdCardVariant: R.h,
@@ -3358,7 +3358,7 @@
 					}, n && a.a.createElement(f.default, {
 						subredditId: u,
 						subredditName: p
-					}), Object(T.r)(i) ? a.a.createElement(V, {
+					}), Object(T.s)(i) ? a.a.createElement(V, {
 						profileName: p,
 						isOverlay: o || !1
 					}) : a.a.createElement(x.a, {
@@ -3960,7 +3960,7 @@
 					useMediaIcons: C
 				} = e, E = s || h, j = Object(i.e)(x.b), k = Object(i.e)(x.c), P = t => {
 					(j || k) && (t.preventDefault(), e.showModalOnPostLinkClick(E))
-				}, w = E.media, I = Object(g.p)(h), S = r && !!s;
+				}, w = E.media, I = Object(g.q)(h), S = r && !!s;
 				return w && !I && !(("rtjson" === w.type || "text" === w.type || "liveaudio" === w.type) && !Object(p.a)(E)) || !!h.pollData ? o.a.createElement("button", {
 					"aria-expanded": !!u,
 					"aria-haspopup": !0,
@@ -6060,7 +6060,7 @@
 				}), o.a.createElement(m.c, N({
 					tooltipId: Y,
 					text: F()
-				}, V))), i && Object(k.u)(U) && !l && o.a.createElement(r.Fragment, null, o.a.createElement(j.a, {
+				}, V))), i && Object(k.v)(U) && !l && o.a.createElement(r.Fragment, null, o.a.createElement(j.a, {
 					isFilled: !0,
 					className: Object(d.a)(S.a.icon, S.a.stickyIcon),
 					desc: B(),
@@ -6737,7 +6737,7 @@
 							isCommentPermalink: s,
 							post: n
 						} = e;
-						return s ? Ne.g.Classic : Object(Me.c)(n) ? Ne.g.Large : Object(Ae.c)(n) ? Ne.g.Large : t ? Ne.g.Large : !n.media || Object(A.p)(n) || It(n) ? Ne.g.Medium : Ne.g.Large
+						return s ? Ne.g.Classic : Object(Me.c)(n) ? Ne.g.Large : Object(Ae.c)(n) ? Ne.g.Large : t ? Ne.g.Large : !n.media || Object(A.q)(n) || It(n) ? Ne.g.Medium : Ne.g.Large
 					})(e),
 					ts = Object(a.e)(ut.b),
 					ss = Object(oe.b)(Be),
@@ -11932,7 +11932,7 @@
 						subredditName: x,
 						collectionId: f
 					} = a,
-					v = p ? Object(g.x)(p) : void 0,
+					v = p ? Object(g.y)(p) : void 0,
 					_ = c && Object(h.h)(c),
 					y = r()([...Object(l.a)(e.location.search)]),
 					O = {};
@@ -12317,7 +12317,7 @@
 						partialCommentId: o,
 						partialPostId: i,
 						subredditName: d
-					} = e.match.params, c = Object(ue.x)(i), p = o && Object(me.h)(o), b = Object(ce.a)(c), h = Object(u.e)(ne.b), g = Object(u.e)(e => Object(Ie.z)(e, {
+					} = e.match.params, c = Object(ue.y)(i), p = o && Object(me.h)(o), b = Object(ce.a)(c), h = Object(u.e)(ne.b), g = Object(u.e)(e => Object(Ie.z)(e, {
 						listingKey: b
 					})), x = Object(u.d)();
 					return Object(l.useEffect)(() => {
@@ -12542,7 +12542,7 @@
 							post: s
 						} = this.props;
 						t();
-						const n = s && Object(ue.v)(s) && s && s.belongsTo.id;
+						const n = s && Object(ue.w)(s) && s && s.belongsTo.id;
 						n && e(n), this.sendEventWithName("view_all_comments")()
 					}, this.handleContentClick = () => {
 						this.props.isCommentsListTruncated && this.props.expandCommentsList()
@@ -12618,7 +12618,7 @@
 						if (t) {
 							const s = null === (e = Object(dt.b)(t)[0]) || void 0 === e ? void 0 : e.components;
 							if (s && s.hasOwnProperty("postID36")) {
-								const e = Object(ue.x)(s.postID36);
+								const e = Object(ue.y)(s.postID36);
 								this.props.getIsTrackingCrossposts(e)
 							}
 						}
@@ -13197,7 +13197,7 @@
 					const {
 						partialPostId: t
 					} = e.match.params;
-					return t && Object(b.x)(t)
+					return t && Object(b.y)(t)
 				},
 				g = (e, t, s) => {
 					const n = h(e),
@@ -13500,23 +13500,23 @@
 			e.exports = JSON.parse('{"id":"72926b3be83c"}')
 		},
 		"./src/redditGQL/operations/OtherDiscussions.json": function(e) {
-			e.exports = JSON.parse('{"id":"30a3b435fd58"}')
+			e.exports = JSON.parse('{"id":"3c377c339b06"}')
 		},
 		"./src/redditGQL/operations/PostFeedAndOtherDiscussions.json": function(e) {
-			e.exports = JSON.parse('{"id":"4c520d366579"}')
+			e.exports = JSON.parse('{"id":"7e16f8fe460e"}')
 		},
 		"./src/redditGQL/operations/SubredditPosts.json": function(e) {
-			e.exports = JSON.parse('{"id":"3951163cb13e"}')
+			e.exports = JSON.parse('{"id":"b23ae0c12d2a"}')
 		},
 		"./src/redditGQL/operations/SubredditUserAchievements.json": function(e) {
 			e.exports = JSON.parse('{"id":"92790c69eba6"}')
 		},
 		"./src/redditGQL/operations/SubredditsPosts.json": function(e) {
-			e.exports = JSON.parse('{"id":"1cd94875841b"}')
+			e.exports = JSON.parse('{"id":"66d1bc709795"}')
 		},
 		"./src/redditGQL/operations/UpdateAchievementFlairPreference.json": function(e) {
 			e.exports = JSON.parse('{"id":"1bc1df66f049"}')
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage.0b51ecdf85dc1fd8648e.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage.fd78b4db300a758445b3.js.map

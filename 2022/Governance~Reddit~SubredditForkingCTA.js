@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~Reddit~SubredditForkingCTA.1d603a296769ce48d663.js
-// Retrieved at 10/17/2022, 12:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~Reddit~SubredditForkingCTA.44e8b20935dae432c2a6.js
+// Retrieved at 10/17/2022, 1:50:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~Reddit~SubredditForkingCTA"], {
 		"./src/lib/bigNumberUtils/percent.ts": function(t, e, r) {
@@ -283,8 +283,8 @@
 				v = Object(s.a)(_.k),
 				C = Object(s.a)(_.q),
 				k = Object(s.a)(_.r),
-				x = Object(s.a)(_.s),
-				T = Object(s.a)(_.t),
+				T = Object(s.a)(_.s),
+				x = Object(s.a)(_.t),
 				N = Object(s.a)(_.u),
 				A = Object(s.a)(_.v),
 				D = Object(s.a)(_.w),
@@ -338,7 +338,7 @@
 						apiContext: u
 					} = o;
 					var l;
-					r(x());
+					r(T());
 					const b = s().transfers.communityPoints.contentId || void 0,
 						p = await
 					function(t, e) {
@@ -356,7 +356,7 @@
 						...t,
 						contentId: b
 					});
-					p.ok ? (r(T({
+					p.ok ? (r(x({
 						...p.body,
 						subredditId: t.subredditId
 					})), r(Object(a.f)({
@@ -425,12 +425,12 @@
 				v = r("./src/reddit/selectors/postCreations.ts"),
 				C = r("./src/reddit/helpers/graphql/normalizeUploadLeaseFromGql/index.ts"),
 				k = r("./src/reddit/actions/postCreation/constants.ts"),
-				x = r("./src/reddit/actions/postCreation/general.ts");
-			const T = Object(o.a)(k.u),
+				T = r("./src/reddit/actions/postCreation/general.ts");
+			const x = Object(o.a)(k.u),
 				N = Object(o.a)(k.v),
 				A = Object(o.a)(k.t),
 				D = t => async (e, r) => {
-					e(T());
+					e(x());
 					const n = t.map(t => {
 						let {
 							url: r,
@@ -461,11 +461,11 @@
 				});
 			const R = "RTE",
 				L = "GALLERY",
-				U = (t, e, r, s, d, o, u) => async (I, k, x) => {
+				U = (t, e, r, s, d, o, u) => async (I, k, T) => {
 					let {
-						apiContext: T,
+						apiContext: x,
 						gqlContext: N
-					} = x;
+					} = T;
 					const A = Object(v.h)(k()),
 						D = Date.now();
 					let R = null,
@@ -707,18 +707,18 @@
 							}
 						}
 						const k = t.name,
-							x = await (async (t, e, r) => Object(l.a)(Object(f.a)(t, [p.a]), {
+							T = await (async (t, e, r) => Object(l.a)(Object(f.a)(t, [p.a]), {
 								endpoint: `${t.apiUrl}/api/media/asset.json`,
 								method: i.ob.POST,
 								data: {
 									filepath: e,
 									mimetype: r
 								}
-							}))(T(), k, v.mimetype);
-						return x.ok ? (R = x.body.asset.asset_id, {
-							uploadLease: x.body.args
+							}))(x(), k, v.mimetype);
+						return T.ok ? (R = T.body.asset.asset_id, {
+							uploadLease: T.body.args
 						}) : {
-							error: x.error || void 0
+							error: T.error || void 0
 						}
 					}, !0)), G(!1), k().uploads[e] || null
 				}, M = (t, e) => async (r, n) => {
@@ -799,7 +799,7 @@
 							url: ""
 						})),
 						O = 0 === o.length;
-					r(Object(x.d)({
+					r(Object(T.d)({
 						...d,
 						items: f ? h : [...o, ...h],
 						selectedKey: O ? m[0] : m[m.length - 1]
@@ -841,8 +841,8 @@
 				v = r("./src/reddit/models/User/index.ts"),
 				C = r("./src/reddit/selectors/experiments/crosspostRecommendations.ts"),
 				k = r("./src/reddit/selectors/postCreations.ts"),
-				x = r("./src/reddit/selectors/postDraft.ts"),
-				T = r("./src/reddit/selectors/scheduledPosts/index.ts"),
+				T = r("./src/reddit/selectors/postDraft.ts"),
+				x = r("./src/reddit/selectors/scheduledPosts/index.ts"),
 				N = r("./src/reddit/selectors/user.ts"),
 				A = r("./src/reddit/models/Post/index.ts"),
 				D = r("./src/reddit/models/ScheduledPost/index.ts"),
@@ -901,14 +901,14 @@
 					} = i, o = s();
 					const {
 						pending: a
-					} = o.creations.api.post.submit, u = Object(x.g)(o);
+					} = o.creations.api.post.submit, u = Object(T.g)(o);
 					if (a || u) return;
 					r(W(t)), o = s();
 					const l = Object(k.a)(o),
 						b = y.d.rteVideoPoster(o),
 						f = H(o),
 						p = l === n.bc.MEDIA;
-					f && (b || p) && (await r(L.f(f)), H(s())) || (t === P.r.Draft ? await r(Object(c.r)(e.draftId)) : t === P.r.ScheduledPost && Object(T.r)(o) ? await r(Y(e)) : t === P.r.ScheduledPost ? await r(Q(e)) : await r(J(e)))
+					f && (b || p) && (await r(L.f(f)), H(s())) || (t === P.r.Draft ? await r(Object(c.r)(e.draftId)) : t === P.r.ScheduledPost && Object(x.r)(o) ? await r(Y(e)) : t === P.r.ScheduledPost ? await r(Q(e)) : await r(J(e)))
 				}, Y = t => async (e, r, n) => {
 					let {
 						gqlContext: s
@@ -917,10 +917,10 @@
 						o = Object(k.db)(d),
 						a = Object(k.eb)(d, t),
 						c = Object(k.h)(d),
-						b = Object(T.r)(d);
+						b = Object(x.r)(d);
 					if (!(a && c.id && o && Object(j.f)(b))) return;
 					const f = c.id,
-						p = Object(T.a)(d, {
+						p = Object(x.a)(d, {
 							subredditId: f,
 							scheduledPostId: b
 						});
@@ -950,7 +950,7 @@
 						o = Object(k.db)(d),
 						a = Object(k.eb)(d, t),
 						c = Object(k.h)(d),
-						b = Object(T.b)(d);
+						b = Object(x.b)(d);
 					if (!a || !c.id || !o) return;
 					if (e(U(a)), t.postFieldValidationPending && (await t.postFieldValidationPending, Object(k.x)(r()))) return;
 					const {
@@ -1056,9 +1056,9 @@
 						t.type === n.L.BAD_CAPTCHA_ERROR ? e(B()) : t.type === n.L.VALIDATION_ERROR ? e(F(t)) : t.type === n.L.SUBMIT_VALIDATION_ERROR ? e(V(t)) : e(G(t))
 					}
 					const S = Object(R.o)(u.kind),
-						I = g.ok && g.body && g.body.id && Object(A.x)(g.body.id),
-						x = r();
-					E.B(x, S, I, t.correlationId)
+						I = g.ok && g.body && g.body.id && Object(A.y)(g.body.id),
+						T = r();
+					E.B(T, S, I, t.correlationId)
 				}
 		},
 		"./src/reddit/actions/scheduledPosts/constants.ts": function(t, e, r) {
@@ -1235,9 +1235,9 @@
 			})), r.d(e, "e", (function() {
 				return C
 			})), r.d(e, "i", (function() {
-				return x
-			})), r.d(e, "a", (function() {
 				return T
+			})), r.d(e, "a", (function() {
+				return x
 			})), r.d(e, "b", (function() {
 				return A
 			}));
@@ -1267,9 +1267,9 @@
 				v = Object(s.a)(i.e),
 				C = Object(s.a)(i.h),
 				k = (t, e) => {
-					t(v()), t(Object(o.f)(Object(o.e)(i.r(), b.b.Error, i.s(), x(e))))
+					t(v()), t(Object(o.f)(Object(o.e)(i.r(), b.b.Error, i.s(), T(e))))
 				},
-				x = t => {
+				T = t => {
 					let {
 						subredditId: e,
 						includeStandalone: r = {
@@ -1298,14 +1298,14 @@
 						Object(a.f)(l, u) ? N(t, Object(c.e)(l.body.data), u) : k(t, u)
 					}
 				},
-				T = t => async (e, r, n) => {
+				x = t => async (e, r, n) => {
 					let {
 						gqlContext: s
 					} = n;
 					const i = r();
 					if (!Object(f.h)(i, {
 							subredditId: t
-						})) return e(x({
+						})) return e(T({
 						subredditId: t
 					}));
 					if (!Object(f.g)(i, {
@@ -1354,7 +1354,7 @@
 		"./src/reddit/actions/subredditCreation.ts": function(t, e, r) {
 			"use strict";
 			r.d(e, "d", (function() {
-				return T
+				return x
 			})), r.d(e, "c", (function() {
 				return N
 			})), r.d(e, "e", (function() {
@@ -1408,8 +1408,8 @@
 				v = r("./src/reddit/selectors/subreddit.ts"),
 				C = r("./src/reddit/selectors/user.ts"),
 				k = r("./src/telemetry/index.ts"),
-				x = r("./src/reddit/actions/countrySites/subredditCountrySiteSettings.ts");
-			const T = "SUBREDDIT__CREATE_SET_INITIAL_CROSSPOST",
+				T = r("./src/reddit/actions/countrySites/subredditCountrySiteSettings.ts");
+			const x = "SUBREDDIT__CREATE_SET_INITIAL_CROSSPOST",
 				N = "SUBREDDIT__CREATE_PENDING",
 				A = "SUBREDDIT__CREATE_SUCCEEDED",
 				D = "SUBREDDIT__CREATE_FAILED",
@@ -1418,19 +1418,19 @@
 				L = Object(i.a)(A),
 				U = Object(i.a)(D),
 				M = Object(i.a)(w),
-				G = Object(i.a)(T),
+				G = Object(i.a)(x),
 				q = t => async (e, r, i) => {
 					let {
 						apiContext: y
 					} = i;
 					var g;
-					const T = r(),
+					const x = r(),
 						{
 							name: N,
 							type: A,
 							crosspostId: D
 						} = t;
-					if (Object(v.l)(T)) return;
+					if (Object(v.l)(x)) return;
 					e(R({
 						subredditName: N
 					}));
@@ -1442,12 +1442,12 @@
 					if (w.ok) {
 						const r = w.body,
 							i = r.fullname;
-						Object(k.a)(Object(E.d)(A, t, i)(T)), e(L({
+						Object(k.a)(Object(E.d)(A, t, i)(x)), e(L({
 							subredditName: N
 						}));
-						const p = await Object(S.b)(T);
+						const p = await Object(S.b)(x);
 						if (D) {
-							const t = Object(P.G)(T, {
+							const t = Object(P.G)(x, {
 								postId: D
 							});
 							e(Object(d.h)(t.title)), e(Object(d.g)({
@@ -1463,8 +1463,8 @@
 						}
 						await e(Object(n.b)(`${r.path}`)), p ? p === b.Ve.NewModule && e(Object(c.h)({
 							tooltipId: u.MOD_WELCOME_TOOLTIP_ID
-						})) : (e(Object(o.h)(f.a.POST_FLOW_UPSELL_MODAL_ID)), Object(k.a)(Object(E.g)()(T))), Object(j.b)(j.a.SubredditCreation), e(Object(x.f)(i, null !== (g = Object(C.bb)(T)) && void 0 !== g ? g : Object(I.j)(T)))
-					} else w.error && Object(k.a)(Object(E.h)(w.error.type, N)(T)), e(U({
+						})) : (e(Object(o.h)(f.a.POST_FLOW_UPSELL_MODAL_ID)), Object(k.a)(Object(E.g)()(x))), Object(j.b)(j.a.SubredditCreation), e(Object(T.f)(i, null !== (g = Object(C.bb)(x)) && void 0 !== g ? g : Object(I.j)(x)))
+					} else w.error && Object(k.a)(Object(E.h)(w.error.type, N)(x)), e(U({
 						subredditName: N,
 						error: w.error
 					}))
@@ -1526,9 +1526,9 @@
 			})), r.d(e, "l", (function() {
 				return k
 			})), r.d(e, "i", (function() {
-				return x
-			})), r.d(e, "j", (function() {
 				return T
+			})), r.d(e, "j", (function() {
+				return x
 			}));
 			r("./node_modules/core-js/modules/web.dom.iterable.js");
 			var n = r("./node_modules/lodash/get.js"),
@@ -1630,7 +1630,7 @@
 							}
 					}
 				},
-				x = function(t) {
+				T = function(t) {
 					let e = arguments.length > 1 && void 0 !== arguments[1] && arguments[1];
 					return (r, n) => {
 						const s = n().uploads[t];
@@ -1641,11 +1641,11 @@
 						})))
 					}
 				},
-				T = function(t) {
+				x = function(t) {
 					let e = arguments.length > 1 && void 0 !== arguments[1] && arguments[1];
 					return (r, n) => {
 						Object.keys(n().uploads).forEach(n => {
-							n.startsWith(t) && r(x(n, e))
+							n.startsWith(t) && r(T(n, e))
 						})
 					}
 				}
@@ -3044,4 +3044,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit~SubredditForkingCTA.1d603a296769ce48d663.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit~SubredditForkingCTA.44e8b20935dae432c2a6.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CoinPurchaseModal.2a513a065d3548c8cff4.js
-// Retrieved at 10/13/2022, 1:10:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CoinPurchaseModal.321ab4a79aeb6a707e0c.js
+// Retrieved at 10/17/2022, 1:50:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CoinPurchaseModal", "gildActions"], {
 		"./src/reddit/actions/economics/powerups/helpers.ts": function(e, t, a) {
@@ -193,7 +193,7 @@
 									i = Object(A.G)(o, {
 										postId: e
 									}),
-									l = Object(Q.a)(e) && !!i && Object(y.q)(i),
+									l = Object(Q.a)(e) && !!i && Object(y.r)(i),
 									u = {
 										gildingTypeId: d.selectedAward.id,
 										isAnonymous: d.isAnonymous,
@@ -372,7 +372,7 @@
 						if (e.length) {
 							const a = Math.max(900 - B, 10),
 								r = Math.max(300 - B, 10),
-								n = Object(Q.a)(p) && Object(y.q)(Object(A.G)(s, {
+								n = Object(Q.a)(p) && Object(y.r)(Object(A.G)(s, {
 									postId: p
 								}));
 							setTimeout(() => t(Object(o.e)({
@@ -1949,4 +1949,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CoinPurchaseModal.2a513a065d3548c8cff4.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CoinPurchaseModal.321ab4a79aeb6a707e0c.js.map

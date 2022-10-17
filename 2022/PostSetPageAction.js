@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostSetPageAction.7a46c898fe87a5fbd20a.js
-// Retrieved at 10/17/2022, 10:40:10 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostSetPageAction.30873db19d6eb6e161d1.js
+// Retrieved at 10/17/2022, 1:50:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostSetPageAction"], {
 		"./src/reddit/actions/pages/postSetPage/index.ts": function(e, t, s) {
@@ -7,11 +7,11 @@
 			s.r(t), s.d(t, "postSetPagePending", (function() {
 				return x
 			})), s.d(t, "postSetPageLoaded", (function() {
-				return y
-			})), s.d(t, "postSetPageFailed", (function() {
 				return g
+			})), s.d(t, "postSetPageFailed", (function() {
+				return j
 			})), s.d(t, "postSetPageRequested", (function() {
-				return m
+				return y
 			}));
 			var r = s("./node_modules/react-router-redux/es/index.js"),
 				n = s("./src/lib/constants/index.ts"),
@@ -22,26 +22,26 @@
 				a = s("./src/reddit/helpers/makeProfileListingKey/index.ts"),
 				p = s("./src/reddit/models/Post/index.ts"),
 				l = s("./src/reddit/selectors/experiments/postSets.ts"),
-				u = s("./src/reddit/selectors/posts.ts"),
-				b = s("./src/reddit/selectors/user.ts"),
+				b = s("./src/reddit/selectors/posts.ts"),
+				u = s("./src/reddit/selectors/user.ts"),
 				O = s("./src/reddit/actions/pages/postSetPage/constants.ts");
 			const x = Object(i.a)(O.c),
-				y = Object(i.a)(O.b),
-				g = Object(i.a)(O.a),
-				j = (e, t) => async (s, r, i) => {
+				g = Object(i.a)(O.b),
+				j = Object(i.a)(O.a),
+				m = (e, t) => async (s, r, i) => {
 					let {
 						gqlContext: l
 					} = i;
-					const b = r(),
-						O = Object(p.y)(t),
-						j = Object(a.b)(e, O);
-					if (Object(u.Q)(b, {
-							listingKey: j
+					const u = r(),
+						O = Object(p.z)(t),
+						m = Object(a.b)(e, O);
+					if (Object(b.Q)(u, {
+							listingKey: m
 						}).length > 0) return;
 					s(x({
-						key: j
+						key: m
 					}));
-					const m = await (async (e, t) => {
+					const y = await (async (e, t) => {
 						return await Object(o.a)(e, {
 							...c,
 							variables: t
@@ -49,10 +49,10 @@
 					})(l(), {
 						id: O
 					});
-					if (m.ok && m.body) {
+					if (y.ok && y.body) {
 						const {
 							postSetsByIds: e
-						} = m.body.data, t = e[0].posts.edges, r = [], n = {}, i = Object(u.J)(b);
+						} = y.body.data, t = e[0].posts.edges, r = [], n = {}, i = Object(b.J)(u);
 						for (const {
 								node: s
 							} of t)
@@ -61,28 +61,28 @@
 									post: e
 								} = Object(d.a)(s);
 								n[e.id] = e
-							} s(y({
-							key: j,
+							} s(g({
+							key: m,
 							posts: n,
 							postIds: r
 						}))
 					} else {
-						const e = m.error || {
+						const e = y.error || {
 							type: n.L.UNKNOWN_ERROR
 						};
-						s(g({
-							key: j,
+						s(j({
+							key: m,
 							error: e
 						}))
 					}
-				}, m = e => async (t, s) => {
+				}, y = e => async (t, s) => {
 					const {
 						params: n
 					} = e, {
 						profileName: i,
 						partialPostSetId: o
-					} = n, c = s(), d = Object(b.k)(c), a = !!d && d.displayText === i, p = Object(l.b)(c, a), u = Object(l.a)(c);
-					t(p || u ? j(i, o) : Object(r.c)(`/user/${i}/`))
+					} = n, c = s(), d = Object(u.k)(c), a = !!d && d.displayText === i, p = Object(l.b)(c, a), b = Object(l.a)(c);
+					t(p || b ? m(i, o) : Object(r.c)(`/user/${i}/`))
 				}
 		},
 		"./src/reddit/selectors/experiments/postSets.ts": function(e, t, s) {
@@ -108,8 +108,8 @@
 				}
 		},
 		"./src/redditGQL/operations/PostSetById.json": function(e) {
-			e.exports = JSON.parse('{"id":"a21cd3c22791"}')
+			e.exports = JSON.parse('{"id":"531fb5e2d1bb"}')
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostSetPageAction.7a46c898fe87a5fbd20a.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostSetPageAction.30873db19d6eb6e161d1.js.map

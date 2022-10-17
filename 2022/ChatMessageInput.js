@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ChatMessageInput.ca9d35bde55808413e99.js
-// Retrieved at 10/17/2022, 12:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ChatMessageInput.14bdf7df7639ae8c44b7.js
+// Retrieved at 10/17/2022, 1:50:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ChatMessageInput"], {
 		"./node_modules/linkify-it/index.js": function(e, t, s) {
@@ -1269,7 +1269,7 @@
 					post: U.G,
 					isLiveChatInChatTabEnabled: Q.c,
 					currentUserId: R.i,
-					isTalkPost: Object(l.a)(U.G, e => Object(T.w)(e))
+					isTalkPost: Object(l.a)(U.G, e => Object(T.x)(e))
 				}), (e, t) => {
 					let {
 						isEditing: s,
@@ -2871,4 +2871,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatMessageInput.ca9d35bde55808413e99.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatMessageInput.14bdf7df7639ae8c44b7.js.map

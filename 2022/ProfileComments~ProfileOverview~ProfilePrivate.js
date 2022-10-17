@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfileComments~ProfileOverview~ProfilePrivate.36d2c5915483e9767243.js
-// Retrieved at 10/17/2022, 10:40:10 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfileComments~ProfileOverview~ProfilePrivate.2c75f3250818517c6f87.js
+// Retrieved at 10/17/2022, 1:50:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfileComments~ProfileOverview~ProfilePrivate"], {
 		"./node_modules/lodash/take.js": function(e, t, s) {
@@ -46,9 +46,9 @@
 				if (!m || !m.url) return null;
 				let x = m.displayText;
 				m.displayText.length >= 40 && (x = m.displayText.slice(0, 40 - "...".length) + "...");
-				const h = Object(c.s)(s, m.displayText),
-					f = Object(c.t)(s) ? x : b,
-					v = Object(c.t)(s) ? s.subcaption : m.displayText,
+				const h = Object(c.t)(s, m.displayText),
+					f = Object(c.u)(s) ? x : b,
+					v = Object(c.u)(s) ? s.subcaption : m.displayText,
 					E = Object(i.a)(u.a.leftSideContent, {
 						[u.a.ctaExperimentNoPadding]: e.ctaExperimentDesign && "card" !== e.ctaExperimentDesign,
 						[u.a.ctaExperimentPadded]: "card" === e.ctaExperimentDesign
@@ -201,8 +201,8 @@
 				H = s("./src/reddit/components/PostOverflowMenu/index.tsx"),
 				V = s("./src/reddit/components/PostRailAndVotes/index.tsx"),
 				G = s("./src/reddit/components/PostTitle/index.tsx"),
-				z = s("./src/reddit/components/PostTopMeta/index.tsx"),
-				q = s("./src/reddit/components/PublicAccessNetwork/LiveVideoPlayer/videoContext.tsx"),
+				q = s("./src/reddit/components/PostTopMeta/index.tsx"),
+				z = s("./src/reddit/components/PublicAccessNetwork/LiveVideoPlayer/videoContext.tsx"),
 				J = s("./src/reddit/controls/OutboundLink/styled.tsx"),
 				K = s("./src/reddit/models/Media/index.ts"),
 				Q = s("./src/reddit/components/ClassicPost/Thumbnail.tsx"),
@@ -287,7 +287,7 @@
 					He = v && !_e,
 					Ve = !!he.media && Object(K.H)(he.media),
 					Ge = !!he.recommendationContext,
-					ze = {
+					qe = {
 						flairStyleTemplate: Te,
 						post: he,
 						inSubredditOrProfile: v,
@@ -296,10 +296,10 @@
 						shouldShowSubscribeButton: !(k && S) || Ge && S,
 						subredditOrProfile: ye
 					},
-					qe = Object(r.t)(he, re),
+					ze = Object(r.t)(he, re),
 					{
 						source: Je
-					} = qe,
+					} = ze,
 					[Ke, Qe] = Object(n.useState)(!1),
 					Xe = Object(n.useCallback)(() => {
 						Qe(!Ke), Object(te.Mb)(), Pe(Object(oe.d)(fe))
@@ -380,7 +380,7 @@
 					source: he.source
 				}, Object(d.a)(he))), o.a.createElement(U.a, ce({
 					key: "PostMeta"
-				}, ze)), le && Me && Be && o.a.createElement(M.a, {
+				}, qe)), le && Me && Be && o.a.createElement(M.a, {
 					thing: he
 				}), le && Me && De && o.a.createElement(A.a, {
 					onIgnoreReports: ue,
@@ -392,7 +392,7 @@
 					})
 				}, o.a.createElement(u.a, {
 					post: he,
-					adLinkContent: qe,
+					adLinkContent: ze,
 					ctaExperimentDesign: Ne && "classic"
 				})), o.a.createElement("div", {
 					className: de.a.flatlistContainer
@@ -426,7 +426,7 @@
 					shouldShowInsightsButton: Ce,
 					showEditPost: Ue,
 					showEditFlair: Oe,
-					tooltipType: X ? z.f.Lightbox : void 0,
+					tooltipType: X ? q.f.Lightbox : void 0,
 					useFlatlistBreakpoints: Object(H.b)({
 						editPost: !Fe,
 						hide: !Fe,
@@ -439,7 +439,7 @@
 					subreddit: ye,
 					isOwnProfileStats: !0
 				})));
-				return o.a.createElement(q.b, null, Ye)
+				return o.a.createElement(z.b, null, Ye)
 			});
 			t.default = Object(X.a)(le)
 		},
@@ -634,8 +634,8 @@
 				H = s("./src/reddit/helpers/correlationIdTracker.ts"),
 				V = s("./src/reddit/helpers/hasModPostPermissions/index.ts"),
 				G = s("./src/reddit/helpers/overlay/index.ts"),
-				z = s("./src/reddit/helpers/trackers/lightbox.ts"),
-				q = s("./src/reddit/models/PostDraft/index.ts"),
+				q = s("./src/reddit/helpers/trackers/lightbox.ts"),
+				z = s("./src/reddit/models/PostDraft/index.ts"),
 				J = s("./src/reddit/models/Comment/index.ts"),
 				K = s("./src/reddit/selectors/activeModalId.ts"),
 				Q = s("./src/reddit/selectors/comments.ts"),
@@ -752,7 +752,7 @@
 						this.props.onToggleReportsDropdown(), this.sendCommentModEventWithName("comment_report_menu")
 					}, this.handleSave = () => {
 						this.props.comment.isSaved ? this.props.sendEvent(Object(de.b)("unsave", this.props.comment.id)) : this.props.sendEvent(Object(de.b)("save", this.props.comment.id)), this.props.onToggleSave()
-					}, this.sendCommentDistinguishEvent = e => this.props.sendEvent(Object(de.c)(e, this.props.comment.id)), this.sendCommentEventWithName = e => this.props.sendEvent(Object(z.b)(this.props.comment.postId, `comment_${e}`)), this.sendCommentEventWithNameShare = () => this.sendCommentEventWithName("share"), this.sendCommentModEventWithName = e => this.props.sendEvent(Object(de.b)(e, this.props.comment.id)), this.sendCommentReportEvent = e => this.props.sendEvent(Object(de.f)(e, this.props.comment.id)), this.renderReportFlow = () => this.props.reportingRevampEnabled ? o.a.createElement(oe.a, {
+					}, this.sendCommentDistinguishEvent = e => this.props.sendEvent(Object(de.c)(e, this.props.comment.id)), this.sendCommentEventWithName = e => this.props.sendEvent(Object(q.b)(this.props.comment.postId, `comment_${e}`)), this.sendCommentEventWithNameShare = () => this.sendCommentEventWithName("share"), this.sendCommentModEventWithName = e => this.props.sendEvent(Object(de.b)(e, this.props.comment.id)), this.sendCommentReportEvent = e => this.props.sendEvent(Object(de.f)(e, this.props.comment.id)), this.renderReportFlow = () => this.props.reportingRevampEnabled ? o.a.createElement(oe.a, {
 						withOverlay: !0,
 						commentId: this.props.comment.id,
 						overlayCustomStyles: ne.b,
@@ -950,7 +950,7 @@
 							const n = Object(C.a)(s.postId, s.id, {}),
 								o = {
 									commentId: s.id,
-									draftKey: Object(y.a)(q.c.edit, s.id),
+									draftKey: Object(y.a)(z.c.edit, s.id),
 									text: s.bodyMD || "",
 									commentMode: s.media && s.media.rteMode,
 									commentsPageKey: n
@@ -1766,7 +1766,7 @@
 					useMediaIcons: _
 				} = e, y = s || x, j = Object(i.e)(f.b), k = Object(i.e)(f.c), I = t => {
 					(j || k) && (t.preventDefault(), e.showModalOnPostLinkClick(y))
-				}, S = y.media, N = Object(h.p)(x), P = o && !!s;
+				}, S = y.media, N = Object(h.q)(x), P = o && !!s;
 				return S && !N && !(("rtjson" === S.type || "text" === S.type || "liveaudio" === S.type) && !Object(p.a)(y)) || !!x.pollData ? r.a.createElement("button", {
 					"aria-expanded": !!u,
 					"aria-haspopup": !0,
@@ -2247,8 +2247,8 @@
 				const G = {
 						caretOnTop: !1
 					},
-					z = U.isRemoved && !U.modRemovalReason && !U.modNote && U.belongsTo.type === p.a.SUBREDDIT,
-					q = B("Approve", U.id, H),
+					q = U.isRemoved && !U.modRemovalReason && !U.modNote && U.belongsTo.type === p.a.SUBREDDIT,
+					z = B("Approve", U.id, H),
 					J = B("Archived", U.id, H),
 					K = B("Lock", U.id, H),
 					Q = B("Mod", U.id, H),
@@ -2286,7 +2286,7 @@
 				}), r.a.createElement(m.c, w({
 					tooltipId: K,
 					text: M()
-				}, G))), i && Object(k.u)(U) && !l && r.a.createElement(o.Fragment, null, r.a.createElement(j.a, {
+				}, G))), i && Object(k.v)(U) && !l && r.a.createElement(o.Fragment, null, r.a.createElement(j.a, {
 					isFilled: !0,
 					className: Object(d.a)(P.a.icon, P.a.stickyIcon),
 					desc: A(),
@@ -2310,11 +2310,11 @@
 					isFilled: !0,
 					className: Object(d.a)(P.a.icon, P.a.approveIcon),
 					desc: Object(h.a)(U),
-					id: q,
-					onMouseEnter: W(q),
+					id: z,
+					onMouseEnter: W(z),
 					onMouseLeave: N
 				}), r.a.createElement(m.c, w({
-					tooltipId: q,
+					tooltipId: z,
 					text: Object(h.a)(U)
 				}, G))), Object(x.a)(U) && r.a.createElement(o.Fragment, null, r.a.createElement(_.a, {
 					isFilled: !0,
@@ -2323,7 +2323,7 @@
 					id: X,
 					onMouseEnter: W(X),
 					onMouseLeave: N
-				}), z && r.a.createElement(u.a, {
+				}), q && r.a.createElement(u.a, {
 					className: P.a.addRemovalReason,
 					onClick: D,
 					text: n.fbt._("Add a removal reason", null, {
@@ -4655,4 +4655,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileComments~ProfileOverview~ProfilePrivate.36d2c5915483e9767243.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileComments~ProfileOverview~ProfilePrivate.2c75f3250818517c6f87.js.map
