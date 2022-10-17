@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/runtime~Reddit.8603cf274ca557fbcf04.js
-// Retrieved at 10/17/2022, 12:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/runtime~Reddit.4e82f74415be4317a42c.js
+// Retrieved at 10/17/2022, 1:20:04 PM by Reddit Dataminer v1.0.0
 ! function(e) {
 	function o(o) {
 		for (var a, n, r = o[0], s = o[1], c = o[2], l = 0, P = []; l < r.length; l++) n = r[l], Object.prototype.hasOwnProperty.call(d, n) && d[n] && P.push(d[n][0]), d[n] = 0;
@@ -1558,19 +1558,19 @@
 						MembershipPaywallPage: "52789a2b6f03ed81f73c",
 						FlairEdit: "a00f081623c9d424a9f4",
 						"vendors~Chat~RedesignChat": "53cd3b091135f8f64886",
-						"Chat~RedesignChat": "719a723ef9476b62e8b3",
+						"Chat~RedesignChat": "e1c1945af8c4d8ffcb19",
 						RedesignChat: "d2e722c3c4c726e3dcb0",
 						ModListing: "2486eea303c594857cb6",
 						"vendors~PostCreation~Subreddit": "c6c96fbaf04e2c667eb2",
-						Subreddit: "ef6f2998c5a0dc2adbac",
-						CommentsPage: "786d1f03379f17f1c573",
+						Subreddit: "297df84075d5c21933f1",
+						CommentsPage: "351f58380f89aa2a1ef4",
 						"vendors~CryptoHarbergerTaxManageModal~HarbergerTaxManageModal~ModerationPages~PostCreation~Settings~~f8934a85": "fbf6b3871488094312c2",
 						CryptoHarbergerTaxManageModal: "7f1d18091972e1e07aca",
 						HarbergerTaxManageModal: "c1282819479fb98fc0ce",
 						SubredditPremiumUploadModal: "665816f10fd67372c027",
 						PostCreation: "2fe704cd4a141c1272b8",
 						"vendors~ModerationPages": "94c34813eaf24a1890ea",
-						ModerationPages: "b7998b1e3c8feb1b6b19",
+						ModerationPages: "4323a2e58ac1cbf2fe9c",
 						"vendors~ModStatsChart~Settings~ViewsTooltip": "ca7c845d62fd39d960b6",
 						"vendors~Settings": "86b1cfc53320ea8eef91",
 						Settings: "541f0e0f91fb066d9528",
@@ -1807,4 +1807,4 @@
 	var m = c;
 	t()
 }([]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/runtime~Reddit.8603cf274ca557fbcf04.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/runtime~Reddit.4e82f74415be4317a42c.js.map

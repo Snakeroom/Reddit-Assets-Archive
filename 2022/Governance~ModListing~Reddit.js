@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit.99c2b78140313d5ab483.js
-// Retrieved at 10/17/2022, 10:40:10 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit.56527539258b0d8d7403.js
+// Retrieved at 10/17/2022, 1:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~ModListing~Reddit"], {
 		"./src/lib/CSSVariableProvider/withTheme.tsx": function(e, t, n) {
@@ -27,17 +27,6 @@
 				}, t)));
 				return t.displayName = `WithTheme(${e.displayName||e.name})`, t
 			}
-		},
-		"./src/realtime/GQLSubscription/async.tsx": function(e, t, n) {
-			"use strict";
-			var r = n("./src/higherOrderComponents/makeAsync.tsx"),
-				o = n("./src/lib/loadWithRetries/index.ts");
-			const i = Object(r.a)({
-				ErrorComponent: () => null,
-				LoadingComponent: () => null,
-				getComponent: () => Object(o.a)(() => Promise.all([n.e("vendors~Avatar~ChatPost~MarketplaceClaimModal~MarketplaceInFeedUnit~NftProfileUnit~RealtimeGQLSubscr~bfab320d"), n.e("RealtimeGQLSubscriptionAsync")]).then(n.bind(null, "./src/realtime/GQLSubscription/index.tsx"))).then(e => e.default)
-			});
-			t.a = i
 		},
 		"./src/reddit/actions/appBadgeIndicators/constants.ts": function(e, t, n) {
 			"use strict";
@@ -199,7 +188,7 @@
 			})), n.d(t, "d", (function() {
 				return x
 			})), n.d(t, "e", (function() {
-				return h
+				return j
 			})), n.d(t, "c", (function() {
 				return E
 			})), n.d(t, "b", (function() {
@@ -292,7 +281,7 @@
 					let {
 						gqlContext: i
 					} = o;
-					(await Object(c.b)(i(), e)).ok ? (h(t, e), function(e) {
+					(await Object(c.b)(i(), e)).ok ? (j(t, e), function(e) {
 						e(Object(s.f)({
 							kind: l.b.SuccessCommunity,
 							text: r.fbt._("Changes saved", null, {
@@ -309,14 +298,14 @@
 					}(t)
 				};
 
-			function h(e, t) {
+			function j(e, t) {
 				e(_({
 					isEnabled: t.isEnabled,
 					messageType: t.messageType
 				}))
 			}
 			const S = Object(o.a)(i.j),
-				j = Object(o.a)(i.i),
+				h = Object(o.a)(i.i),
 				E = Object(o.a)(i.k),
 				v = Object(o.a)(i.h),
 				N = e => async (t, n, r) => {
@@ -338,7 +327,7 @@
 							r = n && n.identity && n.identity.subscribedSubreddits,
 							o = r && r.pageInfo,
 							i = (r && r.edges).map(e => e.node);
-						t(j({
+						t(h({
 							nodes: i,
 							pageInfo: o
 						}))
@@ -448,10 +437,10 @@
 			! function(e) {
 				e.Activity = "activity", e.Messages = "messages"
 			}(x || (x = {}));
-			var h = n("./src/redditGQL/operations/DeleteInboxNotifications.json");
+			var j = n("./src/redditGQL/operations/DeleteInboxNotifications.json");
 			n("./src/reddit/endpoints/notificationsSettings/layoutByChannelEndpoint.ts");
 			var S = n("./src/redditGQL/operations/UpdateInboxActivitySeenState.json");
-			var j = n("./src/reddit/endpoints/subreddit/notificationSettings.ts"),
+			var h = n("./src/reddit/endpoints/subreddit/notificationSettings.ts"),
 				E = n("./src/reddit/helpers/trackers/inbox.ts"),
 				v = n("./src/reddit/models/Badge/index.ts"),
 				N = n("./src/reddit/models/NotificationInbox/index.ts"),
@@ -553,7 +542,7 @@
 					} = o;
 					const s = [e];
 					if ((await ((e, t) => Object(u.a)(e, {
-							...h,
+							...j,
 							variables: {
 								input: t
 							}
@@ -575,7 +564,7 @@
 						gqlContext: s
 					} = i;
 					if (!e) return;
-					(await Object(j.b)(s(), e, {
+					(await Object(h.b)(s(), e, {
 						isSubredditUpdatesInterestingPostEnabled: !0,
 						isUpdateFromSubredditEnabled: !0
 					})).ok ? (t && t(), n(Object(d.f)(Object(d.e)(r.fbt._("Success! Undone hiding notifications from this community.", null, {
@@ -588,7 +577,7 @@
 						gqlContext: s
 					} = i;
 					if (!e) return;
-					(await Object(j.b)(s(), e, {
+					(await Object(h.b)(s(), e, {
 						isSubredditUpdatesInterestingPostEnabled: !1,
 						isUpdateFromSubredditEnabled: !1
 					})).ok ? n((() => {
@@ -1048,7 +1037,7 @@
 		"./src/reddit/components/SubredditIcon/index.tsx": function(e, t, n) {
 			"use strict";
 			n.d(t, "a", (function() {
-				return j
+				return h
 			}));
 			var r = n("./src/config.ts"),
 				o = n("./node_modules/fbt/lib/FbtPublic.js"),
@@ -1077,19 +1066,19 @@
 				}).apply(this, arguments)
 			}
 			const x = d.a.wrapped(u.a, "UserIcon", g.a),
-				h = d.a.img("Image", g.a),
+				j = d.a.img("Image", g.a),
 				S = e => {
 					let {
 						iconColor: t,
 						...n
 					} = e;
-					return s.a.createElement(h, _({
+					return s.a.createElement(j, _({
 						style: {
 							backgroundColor: t || ""
 						}
 					}, n))
 				},
-				j = d.a.div("BackupImage", g.a),
+				h = d.a.div("BackupImage", g.a),
 				E = Object(b.u)();
 			t.b = E(e => {
 				var t;
@@ -1340,7 +1329,7 @@
 				g = n("./src/reddit/components/UserIcon/PresenceDot.tsx"),
 				_ = n("./src/reddit/components/UserIcon/SnoovatarHeadshot.tsx"),
 				x = n("./src/reddit/components/UserIcon/UserIcon.tsx"),
-				h = n("./src/reddit/selectors/user.ts");
+				j = n("./src/reddit/selectors/user.ts");
 
 			function S() {
 				return (S = Object.assign || function(e) {
@@ -1351,12 +1340,12 @@
 					return e
 				}).apply(this, arguments)
 			}
-			const j = () => {},
+			const h = () => {},
 				E = Object(c.c)({
-					currentUser: h.k,
-					isNightMode: h.db,
-					shouldHideNSFW: h.F,
-					user: h.Ab
+					currentUser: j.k,
+					isNightMode: j.db,
+					shouldHideNSFW: j.F,
+					user: j.Ab
 				}),
 				v = Object(s.b)(E);
 			t.a = v(e => {
@@ -1369,7 +1358,7 @@
 					isHighlighted: f,
 					isNft: m,
 					isNSFW: p,
-					shouldUseOnlineOverride: h,
+					shouldUseOnlineOverride: j,
 					isOnlineOverrideValue: E,
 					isOnlineStatusLoadTest: v,
 					isProfileIcon: N,
@@ -1420,13 +1409,13 @@
 					ref: W
 				}, m && i.a.createElement(I, {
 					iconUrl: c
-				}), B, y && (G || h && E) && i.a.createElement(g.default, {
+				}), B, y && (G || j && E) && i.a.createElement(g.default, {
 					showPresence: !0,
 					isHighlighted: f,
 					onceInViewport: T
-				}), (y || v) && !h && K && i.a.createElement(a.a, {
+				}), (y || v) && !j && K && i.a.createElement(a.a, {
 					variables: H,
-					onData: y ? V : j,
+					onData: y ? V : h,
 					queryKey: "isUserOnline"
 				}))
 			})
@@ -1541,11 +1530,11 @@
 				g = n("./src/reddit/helpers/trackers/ads.ts"),
 				_ = n("./src/reddit/hooks/useOutboundClickTracking.ts"),
 				x = n("./src/reddit/selectors/posts.ts"),
-				h = n("./src/reddit/selectors/telemetry.ts"),
+				j = n("./src/reddit/selectors/telemetry.ts"),
 				S = n("./src/reddit/selectors/user.ts");
 
-			function j() {
-				return (j = Object.assign || function(e) {
+			function h() {
+				return (h = Object.assign || function(e) {
 					for (var t = 1; t < arguments.length; t++) {
 						var n = arguments[t];
 						for (var r in n) Object.prototype.hasOwnProperty.call(n, r) && (e[r] = n[r])
@@ -1559,7 +1548,7 @@
 						postId: r
 					} = t;
 					return n && r ? Object(x.b)(e, r) : null
-				}, x.G, h.d, (e, t, n, r, o) => ({
+				}, x.G, j.d, (e, t, n, r, o) => ({
 					allowClickTracking: e,
 					basePixelMetadata: n,
 					userId: t ? Object(m.a)(t.id) : null,
@@ -1624,7 +1613,7 @@
 							postId: p,
 							source: I,
 							sourceElement: x,
-							userId: h
+							userId: j
 						} = e;
 					let S = o()(e, ["allowClickTracking", "basePixelMetadata", "fireAdPixelsOfType", "isSponsored", "postId", "post", "commentId", "source", "sourceElement", "userId", "pageType"]);
 					const E = I && I.outboundUrl && l ? I.outboundUrl : u;
@@ -1639,11 +1628,11 @@
 							outboundUrlReceived: n
 						} = e;
 						return !(!t || !n) && (t > n + 3e5 || t < n - 36e5)
-					})(I) ? a.a.createElement("a", j({}, S, {
+					})(I) ? a.a.createElement("a", h({}, S, {
 						onClick: () => n(u, x, s, p)
-					})) : a.a.createElement("a", j({}, S, {
+					})) : a.a.createElement("a", h({}, S, {
 						onMouseDown: n => {
-							if (!y(e)) return !(1 !== n.button && 2 !== n.button && !n.ctrlKey) || void N(n.currentTarget, I, h, r);
+							if (!y(e)) return !(1 !== n.button && 2 !== n.button && !n.ctrlKey) || void N(n.currentTarget, I, j, r);
 							t.current = T(n.currentTarget, p, i)
 						},
 						onClick: () => {
@@ -1654,7 +1643,7 @@
 								e.href = t
 							})(e.currentTarget, E)
 						},
-						onTouchStart: e => N(e.currentTarget, I, h, r),
+						onTouchStart: e => N(e.currentTarget, I, j, r),
 						"data-testid": "outbound-link"
 					}))
 				});
@@ -1784,11 +1773,11 @@
 			})), n.d(t, "x", (function() {
 				return x
 			})), n.d(t, "D", (function() {
-				return h
+				return j
 			})), n.d(t, "k", (function() {
 				return S
 			})), n.d(t, "z", (function() {
-				return j
+				return h
 			})), n.d(t, "a", (function() {
 				return E
 			})), n.d(t, "l", (function() {
@@ -2045,7 +2034,7 @@
 						}
 					})
 				},
-				h = e => {
+				j = e => {
 					let {
 						badgeCount: t
 					} = e;
@@ -2085,7 +2074,7 @@
 						}
 					})
 				},
-				j = e => {
+				h = e => {
 					let {
 						id: t,
 						isClicked: n,
@@ -2369,9 +2358,9 @@
 				g = n("./src/lib/makePostCreationPageKey/index.ts"),
 				_ = n("./src/lib/makeSearchKey/index.ts"),
 				x = n("./src/reddit/constants/livebar.ts"),
-				h = n("./src/reddit/helpers/correlationIdTracker.ts"),
+				j = n("./src/reddit/helpers/correlationIdTracker.ts"),
 				S = n("./src/reddit/helpers/search/SearchTelemetrySource.ts"),
-				j = n("./src/reddit/helpers/trackers/searchResults.ts"),
+				h = n("./src/reddit/helpers/trackers/searchResults.ts"),
 				E = n("./src/reddit/selectors/experiments/communityDirectoryBacklinks/index.ts"),
 				v = n("./src/reddit/selectors/postDraft.ts"),
 				N = n("./src/reddit/selectors/telemetry.ts"),
@@ -2816,7 +2805,7 @@
 					source: "coins_marketing",
 					action: "view",
 					noun: "page",
-					correlationId: Object(h.c)(h.a.GoldPayment),
+					correlationId: Object(j.c)(j.a.GoldPayment),
 					...y(n),
 					timer: N.pb(e, t),
 					adblock: N.e(n)
@@ -2831,7 +2820,7 @@
 					source: "premium_marketing",
 					action: "view",
 					noun: "page",
-					correlationId: Object(h.c)(h.a.GoldPayment),
+					correlationId: Object(j.c)(j.a.GoldPayment),
 					...y(n),
 					timer: N.pb(e, t),
 					adblock: N.e(n)
@@ -2904,7 +2893,7 @@
 					noun: "screen"
 				},
 				ne = e => !!e && {
-					correlationId: Object(h.c)(h.a.SearchResults)
+					correlationId: Object(j.c)(j.a.SearchResults)
 				},
 				re = (e, t, n, r, o, s) => c => {
 					var a, d;
@@ -2923,7 +2912,7 @@
 					}
 					const l = N.H(c, o);
 					return {
-						...j.g(c, t),
+						...h.g(c, t),
 						...te,
 						...N.o(c),
 						actionInfo: N.d(c, {
@@ -3561,4 +3550,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit.99c2b78140313d5ab483.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit.56527539258b0d8d7403.js.map
