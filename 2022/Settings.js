@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Settings.4611e0c5af30ec05f44c.js
-// Retrieved at 10/13/2022, 3:00:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Settings.541f0e0f91fb066d9528.js
+// Retrieved at 10/17/2022, 10:40:10 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Settings"], {
 		"./node_modules/moment/locale sync recursive ^\\.\\/.*$": function(e, t, n) {
@@ -14430,9 +14430,9 @@
 					},
 					isDspEnabled: e => {
 						return Object(se.c)(e, {
-							experimentName: ne.id,
+							experimentName: ne.jd,
 							experimentEligibilitySelector: se.a
-						}) === ne.Qd
+						}) === ne.Rd
 					}
 				}),
 				bo = Object(fe.u)(),
@@ -14985,7 +14985,7 @@
 			const o = e => Object(r.c)(e, {
 				experimentName: s.E,
 				experimentEligibilitySelector: () => Object(a.P)(e)
-			}) === s.Qd
+			}) === s.Rd
 		},
 		"./src/reddit/selectors/gold/productOffers.ts": function(e, t, n) {
 			"use strict";
@@ -15149,4 +15149,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Settings.4611e0c5af30ec05f44c.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Settings.541f0e0f91fb066d9528.js.map

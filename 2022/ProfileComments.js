@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfileComments.865843ddb07a2af9fb61.js
-// Retrieved at 10/13/2022, 3:00:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfileComments.57e85a7dec1cc6b8ea1a.js
+// Retrieved at 10/17/2022, 10:40:10 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfileComments"], {
 		"./node_modules/linkify-it/index.js": function(e, t, r) {
@@ -1902,7 +1902,7 @@
 					}, a.a.createElement(h.b, {
 						textColor: c
 					})), a.a.createElement(F, {
-						qrCodeAsset: (() => n === f.Wc.Enabled || s === f.sb.BlurredPreview || s === f.sb.NoPreview ? w.d2x_nsfw_signup_blocking_de_v1 : w.d2x_nsfw_signup_blocking_non_us_v1)()
+						qrCodeAsset: (() => n === f.Xc.Enabled || s === f.sb.BlurredPreview || s === f.sb.NoPreview ? w.d2x_nsfw_signup_blocking_de_v1 : w.d2x_nsfw_signup_blocking_non_us_v1)()
 					}))
 				}
 		},
@@ -2428,4 +2428,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileComments.865843ddb07a2af9fb61.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileComments.57e85a7dec1cc6b8ea1a.js.map
