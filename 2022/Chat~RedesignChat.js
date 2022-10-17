@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Chat~RedesignChat.52dfed01bc5ea304cb49.js
-// Retrieved at 10/13/2022, 9:40:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Chat~RedesignChat.719a723ef9476b62e8b3.js
+// Retrieved at 10/17/2022, 11:20:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Chat~RedesignChat"], {
 		"./src/chat/actions/apiRequestHeaders.ts": function(e, t, n) {
@@ -11244,18 +11244,20 @@
 					v = ((e, t) => {
 						const n = e.post,
 							c = Object(a.useMemo)(() => pe(n.subreddit.path), [n.subreddit.path]),
-							r = t && t > 1 ? ` · ${Object(me.b)(t)} ${i.fbt._("here now",null,{hk:"4C4kDG"})}` : "";
+							r = t && t > 1 ? i.fbt._("{user count} here", [i.fbt._param("user count", Object(me.b)(t))], {
+								hk: "2UMwVj"
+							}) + " · " : "";
 						switch (e.engagementType) {
 							case re.m.Previewed:
 								return s.a.createElement(s.a.Fragment, null, s.a.createElement(ae, {
 									className: ie.a.Clock
-								}), i.fbt._("Visited · {subreddit path}", [i.fbt._param("subreddit path", c)], {
-									hk: "3Dw7HG"
-								}) + r);
+								}), i.fbt._("Visited · {active user count}{subreddit path}", [i.fbt._param("active user count", r), i.fbt._param("subreddit path", c)], {
+									hk: "3E63i7"
+								}));
 							case re.m.Participated:
 							default:
-								return i.fbt._("Chatting in {subreddit path}", [i.fbt._param("subreddit path", c)], {
-									hk: "4qYADV"
+								return i.fbt._("{active user count}{subreddit path}", [i.fbt._param("active user count", r), i.fbt._param("subreddit path", c)], {
+									hk: "inwJF"
 								})
 						}
 					})(t, Object(c.e)(e => Object(se.b)(e, b.id))),
@@ -19628,4 +19630,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~RedesignChat.52dfed01bc5ea304cb49.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~RedesignChat.719a723ef9476b62e8b3.js.map
