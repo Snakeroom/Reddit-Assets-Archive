@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/OnboardingModal.2d426a6c6d65b6fc774b.js
-// Retrieved at 10/17/2022, 1:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/OnboardingModal.f5609a915fdcee5eb868.js
+// Retrieved at 10/17/2022, 5:40:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["OnboardingModal"], {
 		"./node_modules/lodash/_baseRange.js": function(e, t) {
@@ -413,7 +413,7 @@
 							variant: null == x ? void 0 : x.toLowerCase()
 						}
 					};
-					return v ? (E && (_ || C !== b.qb.LoggedOutHomeDefpop) || (S.sort = D.F.Best, S.feedRankingContext.variant = C), S.feedRankingContext.loggedOutAllowNsfw = Object(B.a)(e)) : l && (S.sort = l.toUpperCase()), u && (S.range = u.toUpperCase()), o ? S.pageSize = Object(f.a)(i) : d && (S.pageSize = d), O && O.ad && (S.forceAds = {
+					return v ? (E && (_ || C !== b.qb.LoggedOutHomeDefpop) || (S.sort = D.G.Best, S.feedRankingContext.variant = C), S.feedRankingContext.loggedOutAllowNsfw = Object(B.a)(e)) : l && (S.sort = l.toUpperCase()), u && (S.range = u.toUpperCase()), o ? S.pageSize = Object(f.a)(i) : d && (S.pageSize = d), O && O.ad && (S.forceAds = {
 						ad: O.ad
 					}), s && (S.after = Object(c.a)(s)), S
 				},
@@ -4289,4 +4289,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/OnboardingModal.2d426a6c6d65b6fc774b.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/OnboardingModal.f5609a915fdcee5eb868.js.map

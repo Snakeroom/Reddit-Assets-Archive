@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-ModQueueActivitySummaryCards-ModActivityPreview.b5f8538f87e245011814.js
-// Retrieved at 10/13/2022, 3:00:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-ModQueueActivitySummaryCards-ModActivityPreview.ea3e8935745d6270f1e0.js
+// Retrieved at 10/17/2022, 5:40:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-ModQueueActivitySummaryCards-ModActivityPreview"], {
 		"./src/reddit/components/ModQueueActivitySummaryCards/ModActivityPreview.tsx": function(e, t, o) {
@@ -13,8 +13,8 @@
 				l = o.n(r),
 				i = o("./node_modules/react-redux/es/index.js"),
 				d = o("./src/reddit/actions/tooltip.ts"),
-				c = o("./src/reddit/components/UserIcon/index.tsx"),
-				u = o("./src/reddit/controls/Dropdown/index.tsx"),
+				u = o("./src/reddit/components/UserIcon/index.tsx"),
+				c = o("./src/reddit/controls/Dropdown/index.tsx"),
 				m = o("./src/reddit/endpoints/modQueue/modActivity.ts"),
 				v = o("./src/reddit/helpers/graphql/helpers.ts"),
 				b = o("./src/reddit/hooks/useGqlContext.ts"),
@@ -34,7 +34,7 @@
 					let {
 						data: t
 					} = e;
-					var o, n, s, r, i, d, u;
+					var o, n, s, r, i, d, c;
 					const m = (null === (o = t.info) || void 0 === o ? void 0 : o.displayName) || (null === (n = t.info) || void 0 === n ? void 0 : n.name),
 						{
 							lastModAction: b
@@ -44,7 +44,7 @@
 						onClick: e => {
 							e.stopPropagation(), e.preventDefault()
 						}
-					}, l.a.createElement(c.a, {
+					}, l.a.createElement(u.a, {
 						className: C.a.modIcon,
 						userName: m || "",
 						iconUrl: null === (r = null === (s = null == t ? void 0 : t.info) || void 0 === s ? void 0 : s.icon) || void 0 === r ? void 0 : r.url,
@@ -57,207 +57,207 @@
 						className: Object(a.a)(C.a.detailText, "text-neutral-content-weak")
 					}, b && l.a.createElement(l.a.Fragment, null, ((e, t) => {
 						switch (e) {
-							case N.t.AddNote:
+							case N.u.AddNote:
 								return S.fbt._("Added mod note", null, {
 									hk: "4EQdI3"
 								});
-							case N.t.AddRemovalReason:
+							case N.u.AddRemovalReason:
 								return S.fbt._("Added removal reason", null, {
 									hk: "3sDuRA"
 								});
-							case N.t.AdjustPostCrowdControlLevel:
+							case N.u.AdjustPostCrowdControlLevel:
 								return S.fbt._("Adjusted post crowd control level", null, {
 									hk: "3Ru27s"
 								});
-							case N.t.EnablePostCrowdControlFilter:
+							case N.u.EnablePostCrowdControlFilter:
 								return S.fbt._("Enabled post crowd control level", null, {
 									hk: "bnrbt"
 								});
-							case N.t.DisablePostCrowdControlFilter:
+							case N.u.DisablePostCrowdControlFilter:
 								return S.fbt._("Disabled post crowd control level", null, {
 									hk: "3Pn8Cm"
 								});
-							case N.t.ApproveComment:
+							case N.u.ApproveComment:
 								return S.fbt._("Approved comment", null, {
 									hk: "15N4AH"
 								});
-							case N.t.ApproveLink:
+							case N.u.ApproveLink:
 								return S.fbt._("Approved post", null, {
 									hk: "2pHeO6"
 								});
-							case N.t.BanUser:
+							case N.u.BanUser:
 								return S.fbt._("Banned user", null, {
 									hk: "30ZUto"
 								});
-							case N.t.Collections:
+							case N.u.Collections:
 								return S.fbt._("Collections", null, {
 									hk: "4DLN5q"
 								});
-							case N.t.DeleteNote:
+							case N.u.DeleteNote:
 								return S.fbt._("Deleted mod note", null, {
 									hk: "24mUGI"
 								});
-							case N.t.Distinguish:
+							case N.u.Distinguish:
 								return "SubredditPost" === t ? S.fbt._("Post distinguished", null, {
 									hk: "1EzjPd"
 								}) : S.fbt._("Comment distinguished", null, {
 									hk: "3TNqQa"
 								});
-							case N.t.EditFlair:
+							case N.u.EditFlair:
 								return "SubredditPost" === t ? S.fbt._("Post flair edited", null, {
 									hk: "2oj67i"
 								}) : S.fbt._("User flair edited", null, {
 									hk: "2WAVS8"
 								});
-							case N.t.IgnoreReports:
+							case N.u.IgnoreReports:
 								return "SubredditPost" === t ? S.fbt._("Post reports ignored", null, {
 									hk: "1HbgCS"
 								}) : S.fbt._("Comment reports ignored", null, {
 									hk: "3eLRwL"
 								});
-							case N.t.Lock:
+							case N.u.Lock:
 								return "SubredditPost" === t ? S.fbt._("Post locked", null, {
 									hk: "45Huvj"
 								}) : S.fbt._("Comment locked", null, {
 									hk: "2HzroI"
 								});
-							case N.t.MarkNsfw:
+							case N.u.MarkNsfw:
 								return S.fbt._("Marked post NSFW", null, {
 									hk: "4qw3UI"
 								});
-							case N.t.MarkOriginalContent:
+							case N.u.MarkOriginalContent:
 								return S.fbt._("Marked post Original Content", null, {
 									hk: "4d9kgS"
 								});
-							case N.t.MuteUser:
+							case N.u.MuteUser:
 								return S.fbt._("Muted user", null, {
 									hk: "31YWRG"
 								});
-							case N.t.RemoveComment:
+							case N.u.RemoveComment:
 								return S.fbt._("Removed comment", null, {
 									hk: "2qfmzC"
 								});
-							case N.t.RemoveLink:
+							case N.u.RemoveLink:
 								return S.fbt._("Removed post", null, {
 									hk: "2leMij"
 								});
-							case N.t.SetContestMode:
+							case N.u.SetContestMode:
 								return S.fbt._("Set post contest mode", null, {
 									hk: "2iE074"
 								});
-							case N.t.SetSuggestedsort:
+							case N.u.SetSuggestedsort:
 								return S.fbt._("Set post suggested sort", null, {
 									hk: "3zw33Q"
 								});
-							case N.t.ShowComment:
+							case N.u.ShowComment:
 								return S.fbt._("Showed comment", null, {
 									hk: "1xvaXS"
 								});
-							case N.t.SpamComment:
+							case N.u.SpamComment:
 								return S.fbt._("Marked comment as spam", null, {
 									hk: "E6CLe"
 								});
-							case N.t.SpamLink:
+							case N.u.SpamLink:
 								return S.fbt._("Removed post as spam", null, {
 									hk: "1Al2xz"
 								});
-							case N.t.Spoiler:
+							case N.u.Spoiler:
 								return S.fbt._("Added spoiler tag", null, {
 									hk: "254Axx"
 								});
-							case N.t.Sticky:
+							case N.u.Sticky:
 								return "SubredditPost" === t ? S.fbt._("Post stickied", null, {
 									hk: "4m9DRx"
 								}) : S.fbt._("Comment stickied", null, {
 									hk: "1JIPzu"
 								});
-							case N.t.UnbanUser:
+							case N.u.UnbanUser:
 								return S.fbt._("Unbanned user", null, {
 									hk: "3U4olT"
 								});
-							case N.t.Unlock:
+							case N.u.Unlock:
 								return "SubredditPost" === t ? S.fbt._("Post unlocked", null, {
 									hk: "3IXrG"
 								}) : S.fbt._("Comment unlocked", null, {
 									hk: "4v2jmJ"
 								});
-							case N.t.UnmuteUser:
+							case N.u.UnmuteUser:
 								return S.fbt._("Unmuted user", null, {
 									hk: "2aB30x"
 								});
-							case N.t.UnsetContestMode:
+							case N.u.UnsetContestMode:
 								return S.fbt._("Unset post contest mode", null, {
 									hk: "W4Yjf"
 								});
-							case N.t.UnsnoozeReports:
+							case N.u.UnsnoozeReports:
 								return "SubredditPost" === t ? S.fbt._("Post unsnoozed", null, {
 									hk: "3jp8zr"
 								}) : S.fbt._("Comment unsnoozed", null, {
 									hk: "2x01Eq"
 								});
-							case N.t.Unspoiler:
+							case N.u.Unspoiler:
 								return S.fbt._("Removed spoiler tag", null, {
 									hk: "2GvhDn"
 								});
-							case N.t.Unsticky:
+							case N.u.Unsticky:
 								return "SubredditPost" === t ? S.fbt._("Post unstickied", null, {
 									hk: "KXoHl"
 								}) : S.fbt._("Comment unstickied", null, {
 									hk: "dpEKC"
 								});
-							case N.t.UpdateRemovalReason:
-							case N.t.WikiBanned:
-							case N.t.WikiContributor:
-							case N.t.WikiPageListed:
-							case N.t.WikiPermLevel:
-							case N.t.WikiRevise:
-							case N.t.WikiUnbanned:
-							case N.t.AcceptModeratorInvite:
-							case N.t.AddCommunityTopics:
-							case N.t.AddContributor:
-							case N.t.AddModerator:
-							case N.t.CreateAward:
-							case N.t.CreateScheduledPost:
-							case N.t.CreateRemovalReason:
-							case N.t.CommunityStyling:
-							case N.t.CommunityWidgets:
-							case N.t.CreateRule:
-							case N.t.DeleteAward:
-							case N.t.DeleteRule:
-							case N.t.DeleteScheduledPost:
-							case N.t.DeleteOverriddenClassification:
-							case N.t.DeleteRemovalReason:
-							case N.t.DisableAward:
-							case N.t.EditPostRequirements:
-							case N.t.EditRule:
-							case N.t.EditScheduledPost:
-							case N.t.EditSettings:
-							case N.t.EnableAward:
-							case N.t.Events:
-							case N.t.HiddenAward:
-							case N.t.InviteModerator:
-							case N.t.InviteSubscriber:
-							case N.t.ModAwardGiven:
-							case N.t.ModmailEnrollment:
-							case N.t.OverrideClassification:
-							case N.t.RemoveCommunityTopics:
-							case N.t.RemoveContributor:
-							case N.t.RemoveModerator:
-							case N.t.RemoveWikiContributor:
-							case N.t.ReorderModerators:
-							case N.t.ReorderRules:
-							case N.t.SetPermissions:
-							case N.t.SnoozeReports:
-							case N.t.SubmitContentRatingSurvey:
-							case N.t.SubmitScheduledPost:
-							case N.t.UnignoreReports:
-							case N.t.UninviteModerator:
+							case N.u.UpdateRemovalReason:
+							case N.u.WikiBanned:
+							case N.u.WikiContributor:
+							case N.u.WikiPageListed:
+							case N.u.WikiPermLevel:
+							case N.u.WikiRevise:
+							case N.u.WikiUnbanned:
+							case N.u.AcceptModeratorInvite:
+							case N.u.AddCommunityTopics:
+							case N.u.AddContributor:
+							case N.u.AddModerator:
+							case N.u.CreateAward:
+							case N.u.CreateScheduledPost:
+							case N.u.CreateRemovalReason:
+							case N.u.CommunityStyling:
+							case N.u.CommunityWidgets:
+							case N.u.CreateRule:
+							case N.u.DeleteAward:
+							case N.u.DeleteRule:
+							case N.u.DeleteScheduledPost:
+							case N.u.DeleteOverriddenClassification:
+							case N.u.DeleteRemovalReason:
+							case N.u.DisableAward:
+							case N.u.EditPostRequirements:
+							case N.u.EditRule:
+							case N.u.EditScheduledPost:
+							case N.u.EditSettings:
+							case N.u.EnableAward:
+							case N.u.Events:
+							case N.u.HiddenAward:
+							case N.u.InviteModerator:
+							case N.u.InviteSubscriber:
+							case N.u.ModAwardGiven:
+							case N.u.ModmailEnrollment:
+							case N.u.OverrideClassification:
+							case N.u.RemoveCommunityTopics:
+							case N.u.RemoveContributor:
+							case N.u.RemoveModerator:
+							case N.u.RemoveWikiContributor:
+							case N.u.ReorderModerators:
+							case N.u.ReorderRules:
+							case N.u.SetPermissions:
+							case N.u.SnoozeReports:
+							case N.u.SubmitContentRatingSurvey:
+							case N.u.SubmitScheduledPost:
+							case N.u.UnignoreReports:
+							case N.u.UninviteModerator:
 							default:
 								return S.fbt._("Last mod action", null, {
 									hk: "S9AMb"
 								})
 						}
-					})(null == b ? void 0 : b.action, null === (u = null == b ? void 0 : b.target) || void 0 === u ? void 0 : u.__typename), " ", Object(R.d)(Object(v.g)(b.createdAt) / 1e3)))))
+					})(null == b ? void 0 : b.action, null === (c = null == b ? void 0 : b.target) || void 0 === c ? void 0 : c.__typename), " ", Object(R.d)(Object(v.g)(b.createdAt) / 1e3)))))
 				},
 				y = e => {
 					let {
@@ -314,7 +314,7 @@
 						hk: "13CPFV"
 					})))
 				},
-				E = Object(n.a)(u.a),
+				E = Object(n.a)(c.a),
 				x = e => e ? Object.keys(e).sort((t, o) => ((e, t, o) => {
 					var n, a, s, r;
 					const l = null === (a = null === (n = o[e]) || void 0 === n ? void 0 : n.lastModAction) || void 0 === a ? void 0 : a.createdAt,
@@ -332,13 +332,13 @@
 					maxMods: n
 				} = e;
 				const s = Object(i.e)(k.c),
-					u = o || s,
+					c = o || s,
 					v = Object(i.e)(e => Object(h.h)(e, {
-						subredditId: u || ""
+						subredditId: c || ""
 					})),
 					g = Object(i.e)(e => {
 						var t;
-						return (null === (t = null == e ? void 0 : e.features) || void 0 === t ? void 0 : t.modActivitySummaries[u || ""]) || {}
+						return (null === (t = null == e ? void 0 : e.features) || void 0 === t ? void 0 : t.modActivitySummaries[c || ""]) || {}
 					}),
 					{
 						mods: A
@@ -383,17 +383,17 @@
 					onClick: P,
 					"data-testid": "mod-activity-preview"
 				}, A && S.length > 0 ? S.slice(0, L).map((e, t) => {
-					var o, n, s, r, i, d, u, m, v, b;
-					return l.a.createElement(c.a, {
+					var o, n, s, r, i, d, c, m, v, b;
+					return l.a.createElement(u.a, {
 						className: Object(a.a)(C.a.userIcon, {
 							[C.a.noMargin]: t === S.length - 1 && !(t === L - 1 && S.length > L)
 						}),
 						key: null === (n = null === (o = A[e]) || void 0 === o ? void 0 : o.info) || void 0 === n ? void 0 : n.displayName,
 						userName: (null === (r = null === (s = A[e]) || void 0 === s ? void 0 : s.info) || void 0 === r ? void 0 : r.displayName) || "",
-						iconUrl: null === (u = null === (d = null === (i = A[e]) || void 0 === i ? void 0 : i.info) || void 0 === d ? void 0 : d.icon) || void 0 === u ? void 0 : u.url,
+						iconUrl: null === (c = null === (d = null === (i = A[e]) || void 0 === i ? void 0 : i.info) || void 0 === d ? void 0 : d.icon) || void 0 === c ? void 0 : c.url,
 						isNSFW: !!(null === (b = null === (v = null === (m = A[e]) || void 0 === m ? void 0 : m.info) || void 0 === v ? void 0 : v.profile) || void 0 === b ? void 0 : b.isNsfw)
 					})
-				}) : M ? null : l.a.createElement(c.a, {
+				}) : M ? null : l.a.createElement(u.a, {
 					className: Object(a.a)(C.a.userIcon, C.a.noMargin),
 					userName: (null == U ? void 0 : U.displayName) || "",
 					iconUrl: null == U ? void 0 : U.accountIcon,
@@ -448,4 +448,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ModQueueActivitySummaryCards-ModActivityPreview.b5f8538f87e245011814.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ModQueueActivitySummaryCards-ModActivityPreview.ea3e8935745d6270f1e0.js.map

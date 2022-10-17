@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ReportFlowNew.37c4de2100613050eb37.js
-// Retrieved at 10/17/2022, 1:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ReportFlowNew.b7609cb27f1a81a08010.js
+// Retrieved at 10/17/2022, 5:40:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ReportFlowNew"], {
 		"./src/reddit/actions/blockedRedditors.ts": function(e, t, o) {
@@ -258,7 +258,7 @@
 		"./src/reddit/components/ReportFlow/_ReportFlowNew.tsx": function(e, t, o) {
 			"use strict";
 			o.r(t), o.d(t, "ValidThingReportTypes", (function() {
-				return H
+				return Y
 			}));
 			var r = o("./src/config.ts"),
 				s = o("./node_modules/fbt/lib/FbtPublic.js"),
@@ -327,14 +327,14 @@
 				D = o("./src/reddit/selectors/user.ts"),
 				$ = o("./src/lib/lessComponent.tsx"),
 				Q = o("./src/reddit/components/ReportFlow/index.m.less"),
-				K = o.n(Q);
-			const J = $.a.div("ReportLoaderWrapper", K.a),
-				M = $.a.img("LoadingIcon", K.a),
-				Y = "2.1";
-			var H;
+				J = o.n(Q);
+			const K = $.a.div("ReportLoaderWrapper", J.a),
+				M = $.a.img("LoadingIcon", J.a),
+				H = "2.1";
+			var Y;
 			! function(e) {
 				e.Post = "post", e.Comment = "comment", e.Message = "message"
-			}(H || (H = {}));
+			}(Y || (Y = {}));
 			const z = Object(l.c)({
 					post: (e, t) => {
 						let {
@@ -433,11 +433,11 @@
 							messageId: o
 						} = this.props;
 						let r, s, n, i;
-						if (this.props.author && (n = this.props.author), t) r = t, s = H.Comment, this.props.comment && !n && (n = this.props.comment.author, i = this.props.comment.authorId);
-						else if (e) r = e, s = H.Post, this.props.post && !n && (n = this.props.post.author, i = this.props.post.authorId);
+						if (this.props.author && (n = this.props.author), t) r = t, s = Y.Comment, this.props.comment && !n && (n = this.props.comment.author, i = this.props.comment.authorId);
+						else if (e) r = e, s = Y.Post, this.props.post && !n && (n = this.props.post.author, i = this.props.post.authorId);
 						else {
 							if (!o) throw new Error("Invalid object type passed to reporting flow");
-							r = o, s = H.Message
+							r = o, s = Y.Message
 						}
 						return {
 							itemId: r,
@@ -496,7 +496,7 @@
 						}
 						let h;
 						switch (l) {
-							case H.Post:
+							case Y.Post:
 								if (null === (o = this.props.post) || void 0 === o ? void 0 : o.audioRoom) {
 									const e = new URLSearchParams(window.location.href),
 										t = parseInt(e.get("reportedTimeInSeconds") || "0", 10),
@@ -529,7 +529,7 @@
 									input: e
 								});
 								break;
-							case H.Comment:
+							case Y.Comment:
 								const t = {
 									commentId: c,
 									...b
@@ -538,7 +538,7 @@
 									input: t
 								}));
 								break;
-							case H.Message:
+							case Y.Message:
 								const s = {
 									messageId: c,
 									...b
@@ -566,7 +566,7 @@
 						gqlContext: o,
 						hostAppName: r
 					} = this.props;
-					V(o(), e, Y, r, t).then(e => {
+					V(o(), e, H, r, t).then(e => {
 						e && this.setState({
 							formComponent: e.component,
 							formState: e.state,
@@ -614,7 +614,7 @@
 						onOpenCtlFlow: this.onOpenCtlFlow,
 						onBlockAuthor: () => this.onBlockAuthor(h, f),
 						onResize: this.props.onResize
-					}) : a.a.createElement(J, null, a.a.createElement(M, {
+					}) : a.a.createElement(K, null, a.a.createElement(M, {
 						src: t ? `${r.a.assetPath}/img/loader_2orbit_loop_nightmode.gif` : `${r.a.assetPath}/img/loader_2orbit_loop.gif`,
 						alt: s.fbt._("Loading", null, {
 							hk: "wiY7"
@@ -809,14 +809,14 @@
 						...u,
 						variables: t
 					});
-					return !!Object(i.c)(o) && (o.body.data.subredditInfoById.allowedPostTypes || []).includes(O.G.Talk)
+					return !!Object(i.c)(o) && (o.body.data.subredditInfoById.allowedPostTypes || []).includes(O.H.Talk)
 				}, w = async (e, t) => {
 					var o, r;
 					const s = await Object(n.a)(e, {
 						...p,
 						variables: t
 					});
-					return !!Object(i.c)(s) && (null !== (r = null === (o = s.body.data.profileByName) || void 0 === o ? void 0 : o.allowedPostTypes) && void 0 !== r ? r : []).includes(O.G.Talk)
+					return !!Object(i.c)(s) && (null !== (r = null === (o = s.body.data.profileByName) || void 0 === o ? void 0 : o.allowedPostTypes) && void 0 !== r ? r : []).includes(O.H.Talk)
 				}, j = async e => {
 					var t;
 					const o = await Object(n.a)(e, l);
@@ -860,10 +860,10 @@
 						hk: "2mGf21"
 					})
 				}, L = e => e.data.prepareAudioRoom || e.data.prepareAudioRoomOnProfile, y = {
-					[O.I.ServiceError]: r.fbt._("Something's wrong with the talk service right now. Check back later.", null, {
+					[O.J.ServiceError]: r.fbt._("Something's wrong with the talk service right now. Check back later.", null, {
 						hk: "3XqPJS"
 					}),
-					[O.I.UserNotAuthorized]: r.fbt._("You don't have permission to start talks in this community.", null, {
+					[O.J.UserNotAuthorized]: r.fbt._("You don't have permission to start talks in this community.", null, {
 						hk: "1XY1Ss"
 					})
 				}, C = (e, t) => Object(n.a)(e, {
@@ -1068,4 +1068,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ReportFlowNew.37c4de2100613050eb37.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ReportFlowNew.b7609cb27f1a81a08010.js.map

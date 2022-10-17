@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ChatMessageInput.14bdf7df7639ae8c44b7.js
-// Retrieved at 10/17/2022, 1:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ChatMessageInput.daae09c4dd238274a8c5.js
+// Retrieved at 10/17/2022, 5:40:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ChatMessageInput"], {
 		"./node_modules/linkify-it/index.js": function(e, t, s) {
@@ -223,7 +223,7 @@
 				u = Object(i.a)(c),
 				l = (e, t) => async (s, n) => {
 					const i = n(),
-						c = Object(o.a)(i);
+						c = Object(o.b)(i);
 					if (!a.a[c].includes(e)) return;
 					const l = d(t);
 					Object(r.d)(l, e, r.a), s(u(e))
@@ -1247,8 +1247,8 @@
 				$ = s("./src/reddit/helpers/chat/isEmbeddedLiveChat.ts"),
 				Y = s("./src/reddit/helpers/trackers/commentsChat.ts"),
 				Q = s("./src/reddit/selectors/experiments/chat.ts"),
-				J = s("./src/redditGQL/types.ts");
-			const X = "chat_submission_from_rte",
+				X = s("./src/redditGQL/types.ts");
+			const J = "chat_submission_from_rte",
 				ee = 1e3,
 				te = 15,
 				se = 15e3,
@@ -1259,8 +1259,8 @@
 					errorType: B.N,
 					hasError: B.v,
 					isChatPost: z.d,
-					isLivePostSpamRateEnabled: Q.h,
-					isOptimisticUIEnabled: Q.g,
+					isLivePostSpamRateEnabled: Q.i,
+					isOptimisticUIEnabled: Q.h,
 					liveStreamingChatCharacterLimit: e => {
 						const t = Object(M.a)(e);
 						return t ? t - 3 : 197
@@ -1384,7 +1384,7 @@
 							};
 							this.cleanInputForm(), n(e, N.i.RICH_TEXT, t), s && setTimeout(() => this.focusOnForm(), 50), this.isAllowedToCreateLiveChatAssociation() && this.associationTimerId && !this.state.messageSent && (this.props.createChatTabAssociation({
 								postId: this.props.postId,
-								engagementType: J.m.Participated
+								engagementType: X.n.Participated
 							}), clearTimeout(this.associationTimerId), this.setState({
 								messageSent: !0,
 								hasCreatedLiveChatAssociation: !0
@@ -1413,7 +1413,7 @@
 					this.isAllowedToCreateLiveChatAssociation() && (this.associationTimerId = setTimeout(() => {
 						this.props.createChatTabAssociation({
 							postId: this.props.postId,
-							engagementType: J.m.Previewed
+							engagementType: X.n.Previewed
 						}), this.setState({
 							hasCreatedLiveChatAssociation: !0
 						}), !this.isEmbeddedLiveChat() && this.props.fetchLiveChatPosts()
@@ -1510,7 +1510,7 @@
 							[W.a.LivestreamingFocusableContent]: c && !o,
 							[W.a.V2ChatPostFocusableContent]: !c && t
 						}),
-						dataTestId: X,
+						dataTestId: J,
 						editorType: A.a.Comment,
 						initialMinHeight: 20,
 						initialHeight: void 0,
@@ -2543,15 +2543,18 @@
 		},
 		"./src/reddit/selectors/chat.ts": function(e, t, s) {
 			"use strict";
-			s.d(t, "b", (function() {
+			s.d(t, "c", (function() {
 				return n
-			})), s.d(t, "a", (function() {
+			})), s.d(t, "b", (function() {
 				return i
+			})), s.d(t, "a", (function() {
+				return a
 			}));
 			var r = s("./node_modules/reselect/es/index.js");
 			Object(r.a)(e => e.chat.unread.count, e => e.unreadMessages);
 			const n = e => !(e.chat.isInited || e.chat.unread.api.pending),
-				i = e => e.chat.liveChatTooltipShowState
+				i = e => e.chat.liveChatTooltipShowState,
+				a = Object(r.a)((e, t) => t, e => e.chat.activeUserCountByLiveChatId, (e, t) => t[e])
 		},
 		"./src/reddit/selectors/economics.ts": function(e, t, s) {
 			"use strict";
@@ -2865,10 +2868,7 @@
 					}
 				},
 				$ = e => e.economics.pointsCopy.data
-		},
-		"./src/redditGQL/operations/CreateLiveChatAssociation.json": function(e) {
-			e.exports = JSON.parse('{"id":"b51c6a74ca72"}')
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatMessageInput.14bdf7df7639ae8c44b7.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatMessageInput.daae09c4dd238274a8c5.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ChatPost.f07e2ab49fa5241bd109.js
-// Retrieved at 10/17/2022, 10:40:10 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ChatPost.6f074a15790355f1b143.js
+// Retrieved at 10/17/2022, 5:40:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ChatPost"], {
 		"./node_modules/backo2/index.js": function(e, t) {
@@ -3133,7 +3133,7 @@
 							const {
 								awardId: n,
 								commentId: o
-							} = e, a = Object(oe.a)(), i = Object(be.a)(r, n), c = Object(fe.d)(r);
+							} = e, a = Object(oe.a)(), i = Object(be.a)(r, n), c = Object(fe.e)(r);
 							if ((e => ge(e) || (e => "chat_reaction_downvote" === e.id)(e))(i)) {
 								const e = ge(i) ? "chat_reaction_downvote" : "chat_reaction_upvote",
 									n = ((e, t, n) => {
@@ -3190,7 +3190,7 @@
 								awardId: o,
 								awardingId: s,
 								commentId: i
-							} = e, c = Object(fe.d)(a);
+							} = e, c = Object(fe.e)(a);
 							await Object(de.c)(r(), {
 								awardingId: s
 							}), c || await Re(a, {
@@ -3656,7 +3656,7 @@
 						} = t;
 						return Object(yt.c)(e, n.authorId)
 					},
-					isLivePostCreatorModRoleEnabled: e => Object(fe.f)(e),
+					isLivePostCreatorModRoleEnabled: e => Object(fe.g)(e),
 					isChatCreateOnlyPerm: (e, t) => {
 						let {
 							comment: n
@@ -4535,7 +4535,7 @@
 				})))
 			}));
 			const co = e => {
-				return Object(d.e)(fe.e) ? c.a.createElement(io, e) : c.a.createElement(Pn, e)
+				return Object(d.e)(fe.f) ? c.a.createElement(io, e) : c.a.createElement(Pn, e)
 			};
 			var lo = n("./node_modules/lodash/isEqual.js"),
 				mo = n.n(lo),
@@ -4788,7 +4788,7 @@
 					isPending: V.d,
 					liveCommentsWebsocket: Eo.E,
 					moreCommentsLink: V.H,
-					isCommentReactionStreamingKillSwitchEnabled: fe.d,
+					isCommentReactionStreamingKillSwitchEnabled: fe.e,
 					currentUserId: Oe.i
 				}),
 				To = Object(d.b)(ko, (e, t) => ({
@@ -6139,4 +6139,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatPost.f07e2ab49fa5241bd109.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatPost.6f074a15790355f1b143.js.map

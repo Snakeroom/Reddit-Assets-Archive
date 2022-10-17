@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/HappeningNow.845f41b4dee68cea4ffe.js
-// Retrieved at 10/17/2022, 2:20:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/HappeningNow.39f768099b8ca21e1963.js
+// Retrieved at 10/17/2022, 5:40:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["HappeningNow"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -2808,12 +2808,12 @@
 									const e = Object(p.a)(d.subreddit);
 									i[e.id] = e
 								}
-								if (l === x.p.Chat) {
+								if (l === x.q.Chat) {
 									const e = null === (r = null === (n = null === (t = null == d ? void 0 : d.commentForest) || void 0 === t ? void 0 : t.trees) || void 0 === n ? void 0 : n.map(e => f(null == e ? void 0 : e.node))) || void 0 === r ? void 0 : r.filter(c.a);
 									(null == e ? void 0 : e.length) && b.push(...e);
 									const s = f(d.authorInfo);
 									s && b.push(s)
-								} else l === x.p.Talk && Array.isArray(null === (s = null == d ? void 0 : d.talkRoom) || void 0 === s ? void 0 : s.topUsers) && (v = d.talkRoom, b.push(...d.talkRoom.topUsers));
+								} else l === x.q.Talk && Array.isArray(null === (s = null == d ? void 0 : d.talkRoom) || void 0 === s ? void 0 : s.topUsers) && (v = d.talkRoom, b.push(...d.talkRoom.topUsers));
 								return {
 									postId: C.id,
 									participantAvatars: b,
@@ -2975,13 +2975,13 @@
 				G = n("./src/reddit/selectors/posts.ts"),
 				W = n("./src/reddit/selectors/user.ts"),
 				J = n("./src/reddit/components/HappeningNow/Post/Header/index.m.less"),
-				Y = n.n(J);
-			const q = {
-				[x.p.Unknown]: "",
-				[x.p.Chat]: r.fbt._("Chat", null, {
+				q = n.n(J);
+			const Y = {
+				[x.q.Unknown]: "",
+				[x.q.Chat]: r.fbt._("Chat", null, {
 					hk: "1oa6K"
 				}),
-				[x.p.Talk]: r.fbt._("Talk", null, {
+				[x.q.Talk]: r.fbt._("Talk", null, {
 					hk: "1lMkQn"
 				})
 			};
@@ -3005,31 +3005,31 @@
 							return (null == a ? void 0 : a.displayText) || (null === (e = null == n ? void 0 : n.profile) || void 0 === e ? void 0 : e.displayText) || ""
 						}, [a, n]);
 					return o.a.createElement("div", {
-						className: Y.a.header
+						className: q.a.header
 					}, o.a.createElement("div", {
-						className: Y.a.subredditIconContainer
+						className: q.a.subredditIconContainer
 					}, o.a.createElement(B, {
 						id: n.id,
 						isAnimated: !0
 					}), o.a.createElement(H.b, {
-						className: Y.a.subredditIcon,
+						className: q.a.subredditIcon,
 						iconUrl: c
-					}), t.contentType === x.p.Chat ? o.a.createElement(D, {
-						className: Object(_.a)(Y.a.liveChatIcon, {
-							[Y.a.nightMode]: d
+					}), t.contentType === x.q.Chat ? o.a.createElement(D, {
+						className: Object(_.a)(q.a.liveChatIcon, {
+							[q.a.nightMode]: d
 						})
 					}) : o.a.createElement(V, {
-						className: Object(_.a)(Y.a.microphoneIcon, {
-							[Y.a.nightMode]: d
+						className: Object(_.a)(q.a.microphoneIcon, {
+							[q.a.nightMode]: d
 						})
 					})), o.a.createElement("div", {
-						className: Y.a.headerMetadata
+						className: q.a.headerMetadata
 					}, o.a.createElement("span", {
-						className: Y.a.subredditName
+						className: q.a.subredditName
 					}, l), o.a.createElement("div", null, o.a.createElement("span", {
-						className: Y.a.liveContentType
-					}, q[t.contentType]), n.numComments > 0 && o.a.createElement("span", {
-						className: Y.a.messageCount
+						className: q.a.liveContentType
+					}, Y[t.contentType]), n.numComments > 0 && o.a.createElement("span", {
+						className: q.a.messageCount
 					}, r.fbt._({
 						"*": "{number} messages",
 						_1: "1 message"
@@ -3238,10 +3238,10 @@
 						onClick: () => {
 							var e;
 							switch (d.contentType) {
-								case x.p.Chat:
+								case x.q.Chat:
 									r(Object(Oe.a)(c.permalink));
 									break;
-								case x.p.Talk:
+								case x.q.Talk:
 									window.open(`${w.a.redditUrl}/talk/${null===(e=d.talkRoom)||void 0===e?void 0:e.roomId}`)
 							}
 							a(Object(O.c)(t))
@@ -3286,11 +3286,11 @@
 				Be = n("./src/reddit/pages/HappeningNow/index.m.less"),
 				He = n.n(Be);
 			const Ae = {
-					[x.o.Unknown]: "",
-					[x.o.Popular]: r.fbt._("Popular", null, {
+					[x.p.Unknown]: "",
+					[x.p.Popular]: r.fbt._("Popular", null, {
 						hk: "2pUvlx"
 					}),
-					[x.o.Recommended]: r.fbt._("For you", null, {
+					[x.p.Recommended]: r.fbt._("For you", null, {
 						hk: "19HGNV"
 					})
 				},
@@ -3304,12 +3304,12 @@
 					})) : o.a.createElement("div", {
 						className: He.a.content
 					}, !!t.length && o.a.createElement(Le, {
-						title: Ae[x.o.Recommended]
+						title: Ae[x.p.Recommended]
 					}, t.map(e => o.a.createElement(Te, {
 						key: e,
 						postId: e
 					}))), !!e.length && o.a.createElement(Le, {
-						title: Ae[x.o.Popular]
+						title: Ae[x.p.Popular]
 					}, e.map(e => o.a.createElement(Te, {
 						key: e,
 						postId: e
@@ -3399,4 +3399,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/HappeningNow.845f41b4dee68cea4ffe.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/HappeningNow.39f768099b8ca21e1963.js.map

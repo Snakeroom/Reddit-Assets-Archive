@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModQueuePages~reddit-components-ModHub-Content-ModQueue.40fb5f4952697c5e2ddd.js
-// Retrieved at 10/17/2022, 1:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModQueuePages~reddit-components-ModHub-Content-ModQueue.01ea7b619b9bec735766.js
+// Retrieved at 10/17/2022, 5:40:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModQueuePages~reddit-components-ModHub-Content-ModQueue"], {
 		"./src/reddit/actions/modQueue/realtime.ts": function(e, t, s) {
@@ -1303,7 +1303,7 @@
 				T = Object(d.c)({
 					currentPage: e => e.platform.currentPage,
 					origin: w.k,
-					isModQChatCommentsFilterEnabled: j.i
+					isModQChatCommentsFilterEnabled: j.j
 				});
 			var R = Object(i.b)(T)(e => a.a.createElement("div", null, a.a.createElement(y.default, {
 					onClick: e.sendEventWithName("content_type_both"),
@@ -1510,7 +1510,7 @@
 					isPostTypeFilterDropdownOpen: Object(O.b)(ie),
 					isSubredditFilterDropdownOpen: Object(O.b)(ae),
 					isPostSortDropdownOpen: Object(O.b)(de),
-					isModQChatCommentsFilterEnabled: j.i,
+					isModQChatCommentsFilterEnabled: j.j,
 					profile: (e, t) => {
 						let {
 							profileName: s
@@ -2713,4 +2713,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModQueuePages~reddit-components-ModHub-Content-ModQueue.40fb5f4952697c5e2ddd.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModQueuePages~reddit-components-ModHub-Content-ModQueue.01ea7b619b9bec735766.js.map

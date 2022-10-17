@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CommentsPage.51c707a5ad1dc431f043.js
-// Retrieved at 10/17/2022, 1:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CommentsPage.296602371e11568f0ef9.js
+// Retrieved at 10/17/2022, 5:40:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CommentsPage", "Governance~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compo~bd4baca2", "Reddit~RpanListingUnit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPos~93b34f9d", "CollectionCommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~SearchResults", "Governance~ModListing~Reddit~ReportFlow~Subreddit", "ModListing~PostCreation~Reddit~StandalonePostPage~Subreddit", "CollectionCommentsPage~ModProgressModule~NewCommunityProgress", "Governance~ModListing~Reddit", "CollectionCommentsPage~SearchResults", "AchievementsActions"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -3637,7 +3637,7 @@
 						const E = _(),
 							j = Object(te.d)(E, {
 								postId: i
-							}) && Object(re.g)(E),
+							}) && Object(re.h)(E),
 							k = j ? Object(G.a)() : d,
 							I = Object(se.e)(E, {
 								commentId: k
@@ -3764,7 +3764,7 @@
 						commentId: m
 					}), x = v && Object(te.d)(_, {
 						postId: v.postId
-					}) && Object(re.g)(_), O = x ? Object(G.a)() : C, y = Object(se.e)(_, {
+					}) && Object(re.h)(_), O = x ? Object(G.a)() : C, y = Object(se.e)(_, {
 						commentId: O
 					}), E = Object(me.k)(_);
 					if (!E) return;
@@ -7154,7 +7154,7 @@
 						const e = O({
 							username: I,
 							profileSort: j,
-							filter: te.J.Posts,
+							filter: te.K.Posts,
 							shouldUseGqlCursor: !0
 						});
 						R = null === (v = null === (_ = null === (o = null == (A = await Object(K.a)("profilePosts", () => x(s.gqlContext(), e))) ? void 0 : A.body) || void 0 === o ? void 0 : o.data) || void 0 === _ ? void 0 : _.redditorInfoByName) || void 0 === v ? void 0 : v.__typename
@@ -7190,7 +7190,7 @@
 						const e = O({
 								username: I,
 								profileSort: j,
-								filter: te.J.Posts
+								filter: te.K.Posts
 							}),
 							t = await x(s.gqlContext(), e);
 						if (t.ok && t.body) {
@@ -7266,7 +7266,7 @@
 						const e = O({
 							username: b,
 							profileSort: m,
-							filter: te.J.Posts,
+							filter: te.K.Posts,
 							loadMoreData: C,
 							shouldUseGqlCursor: !0
 						});
@@ -7304,7 +7304,7 @@
 						const e = O({
 								username: b,
 								profileSort: m,
-								filter: te.J.Posts,
+								filter: te.K.Posts,
 								loadMoreData: C
 							}),
 							t = await x(o(), e);
@@ -21910,7 +21910,7 @@
 				var n;
 				return i.a.createElement("p", {
 					className: _t.a.VideoProcessingStatus
-				}, (null === (n = t.mediaStatus) || void 0 === n ? void 0 : n.transcodingStatus) === pt.Q.Error ? xt._("The video file submitted for this post failed to process successfully.", null, {
+				}, (null === (n = t.mediaStatus) || void 0 === n ? void 0 : n.transcodingStatus) === pt.R.Error ? xt._("The video file submitted for this post failed to process successfully.", null, {
 					hk: "2ybSik"
 				}) : xt._("Your video is processing. We'll send you a notification when it's done.", null, {
 					hk: "1rkfJE"
@@ -38814,7 +38814,7 @@
 					isD2xPdpSideRailRecsEnabled: se.b,
 					isEligibleForCommentTruncation: ke.a,
 					isChatPost: be.d,
-					isChatPostV2Enabled: _t.e,
+					isChatPostV2Enabled: _t.f,
 					isCommentsListTruncated: he.a,
 					isLoggedIn: Te.Q,
 					isNightmodeOn: Te.db,
@@ -44476,4 +44476,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommentsPage.51c707a5ad1dc431f043.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommentsPage.296602371e11568f0ef9.js.map

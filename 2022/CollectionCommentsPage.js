@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage.fd78b4db300a758445b3.js
-// Retrieved at 10/17/2022, 1:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage.9e9a7491f396e122406f.js
+// Retrieved at 10/17/2022, 5:40:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage", "AchievementsActions"], {
 		"./node_modules/linkify-it/index.js": function(e, t, s) {
@@ -6478,7 +6478,7 @@
 				var s;
 				return i.a.createElement("p", {
 					className: vt.a.VideoProcessingStatus
-				}, (null === (s = t.mediaStatus) || void 0 === s ? void 0 : s.transcodingStatus) === pt.Q.Error ? yt._("The video file submitted for this post failed to process successfully.", null, {
+				}, (null === (s = t.mediaStatus) || void 0 === s ? void 0 : s.transcodingStatus) === pt.R.Error ? yt._("The video file submitted for this post failed to process successfully.", null, {
 					hk: "2ybSik"
 				}) : yt._("Your video is processing. We'll send you a notification when it's done.", null, {
 					hk: "1rkfJE"
@@ -12402,7 +12402,7 @@
 					isD2xPdpSideRailRecsEnabled: ne.b,
 					isEligibleForCommentTruncation: ke.a,
 					isChatPost: be.d,
-					isChatPostV2Enabled: vt.e,
+					isChatPostV2Enabled: vt.f,
 					isCommentsListTruncated: xe.a,
 					isLoggedIn: Ne.Q,
 					isNightmodeOn: Ne.db,
@@ -13519,4 +13519,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage.fd78b4db300a758445b3.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage.9e9a7491f396e122406f.js.map

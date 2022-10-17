@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-NotificationUnit-Button.dfd55e4fb626401cb5df.js
-// Retrieved at 10/17/2022, 1:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-NotificationUnit-Button.872e7bb382e95851ed77.js
+// Retrieved at 10/17/2022, 5:40:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-NotificationUnit-Button"], {
 		"./node_modules/lodash/map.js": function(t, e, o) {
@@ -336,7 +336,7 @@
 						const _ = j(),
 							v = Object(et.d)(_, {
 								postId: i
-							}) && Object(rt.g)(_),
+							}) && Object(rt.h)(_),
 							S = v ? Object(G.a)() : d,
 							w = Object(nt.e)(_, {
 								commentId: S
@@ -463,7 +463,7 @@
 						commentId: u
 					}), C = x && Object(et.d)(j, {
 						postId: x.postId
-					}) && Object(rt.g)(j), y = C ? Object(G.a)() : h, k = Object(nt.e)(j, {
+					}) && Object(rt.h)(j), y = C ? Object(G.a)() : h, k = Object(nt.e)(j, {
 						commentId: y
 					}), _ = Object(ut.k)(j);
 					if (!_) return;
@@ -2414,4 +2414,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-NotificationUnit-Button.dfd55e4fb626401cb5df.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-NotificationUnit-Button.872e7bb382e95851ed77.js.map

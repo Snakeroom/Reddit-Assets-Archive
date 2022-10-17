@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-MediumPost.cfe36cb96ed25b077c92.js
-// Retrieved at 10/17/2022, 1:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-MediumPost.51f1dbd568029373d139.js
+// Retrieved at 10/17/2022, 5:40:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-MediumPost"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -992,7 +992,7 @@
 						const j = v(),
 							S = Object(te.d)(j, {
 								postId: i
-							}) && Object(oe.g)(j),
+							}) && Object(oe.h)(j),
 							k = S ? Object(q.a)() : d,
 							y = Object(ne.e)(j, {
 								commentId: k
@@ -1119,7 +1119,7 @@
 						commentId: m
 					}), g = _ && Object(te.d)(v, {
 						postId: _.postId
-					}) && Object(oe.g)(v), E = g ? Object(q.a)() : h, C = Object(ne.e)(v, {
+					}) && Object(oe.h)(v), E = g ? Object(q.a)() : h, C = Object(ne.e)(v, {
 						commentId: E
 					}), j = Object(me.k)(v);
 					if (!j) return;
@@ -9438,4 +9438,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-MediumPost.cfe36cb96ed25b077c92.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-MediumPost.51f1dbd568029373d139.js.map

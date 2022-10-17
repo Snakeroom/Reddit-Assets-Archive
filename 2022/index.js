@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/index.e8d91bac43a66cca3447.js
-// Retrieved at 10/13/2022, 1:10:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/index.b0430d664eed0c9dbe8a.js
+// Retrieved at 10/17/2022, 5:40:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["index"], {
 		"./src/reddit/components/Econ/Audio/MuteIcon.tsx": function(e, t, n) {
@@ -240,11 +240,11 @@
 				k = n("./src/reddit/models/Toast/index.ts"),
 				_ = n("./src/redditGQL/types.ts");
 			const {
-				fbt: I
-			} = n("./node_modules/fbt/lib/FbtPublic.js"), P = () => r.a.createElement("span", {
+				fbt: P
+			} = n("./node_modules/fbt/lib/FbtPublic.js"), C = () => r.a.createElement("span", {
 				className: b.a.MicrophoneIcon
 			}, r.a.createElement(h, null));
-			var C = e => {
+			var I = e => {
 				let {
 					roomId: t
 				} = e;
@@ -255,7 +255,7 @@
 					p = Object(E.a)();
 				return r.a.createElement(v.t, {
 					"data-testid": "audioroom-upcoming-start-talk",
-					Icon: i ? x.a : P,
+					Icon: i ? x.a : C,
 					iconClassName: i ? b.a.loadingIcon : "",
 					className: Object(s.a)(b.a.StartTalkButton, {
 						[b.a.isNightMode]: n
@@ -266,7 +266,7 @@
 					disabled: i,
 					text: r.a.createElement("span", {
 						className: b.a.StartTalkButtonText
-					}, I._("Start talk", null, {
+					}, P._("Start talk", null, {
 						hk: "46EMgy"
 					})),
 					onClick: async () => {
@@ -346,7 +346,7 @@
 					hk: "464Rq3"
 				})), r.a.createElement("div", {
 					className: b.a.upcomingTalkHost
-				}, "u/", t), h && p && r.a.createElement(C, {
+				}, "u/", t), h && p && r.a.createElement(I, {
 					roomId: p
 				}))))
 			}
@@ -662,8 +662,8 @@
 				k = n("./src/reddit/components/Econ/Prediction/TournamentPostBody/ViewTournamentLink/index.m.less"),
 				_ = n.n(k);
 			const {
-				fbt: I
-			} = n("./node_modules/fbt/lib/FbtPublic.js"), P = e => {
+				fbt: P
+			} = n("./node_modules/fbt/lib/FbtPublic.js"), C = e => {
 				let {
 					className: t,
 					postId: n
@@ -681,11 +681,11 @@
 						action: "click",
 						noun: "view_tournament"
 					}))(n))
-				}, I._("Go to Tournament", null, {
+				}, P._("Go to Tournament", null, {
 					hk: "1QaAgH"
 				}))
 			};
-			var C = n("./src/reddit/components/Econ/Prediction/TournamentSnoosImage/index.tsx"),
+			var I = n("./src/reddit/components/Econ/Prediction/TournamentSnoosImage/index.tsx"),
 				S = n("./src/reddit/components/Econ/Prediction/TournamentPostBody/PredictionPostCard/index.m.less"),
 				N = n.n(S);
 			const {
@@ -700,7 +700,7 @@
 					className: N.a.container
 				}, r.a.createElement(h.a, {
 					className: N.a.confetti
-				}), r.a.createElement(C.a, {
+				}), r.a.createElement(I.a, {
 					className: N.a.image
 				}), r.a.createElement("div", {
 					className: N.a.label
@@ -739,7 +739,7 @@
 					description: w._("May the odds be ever in your favor", null, {
 						hk: "1Brw70"
 					}),
-					cta: r.a.createElement(P, {
+					cta: r.a.createElement(C, {
 						className: N.a.cta,
 						postId: t
 					})
@@ -787,9 +787,9 @@
 			var M = n("./src/reddit/icons/fonts/index.tsx"),
 				B = n("./src/reddit/components/Econ/Prediction/PredictionCard/PredictionBody/index.tsx"),
 				U = n("./src/reddit/components/Econ/Prediction/PredictionModal/index.tsx"),
-				$ = n("./src/reddit/actions/economics/helpers/index.ts"),
-				J = n("./src/reddit/actions/economics/predictions/index.ts"),
-				H = n("./src/reddit/actions/post.ts"),
+				J = n("./src/reddit/actions/economics/helpers/index.ts"),
+				H = n("./src/reddit/actions/economics/predictions/index.ts"),
+				$ = n("./src/reddit/actions/post.ts"),
 				X = n("./src/reddit/components/Econ/Prediction/hooks/useDelayedUpvoteAnimation.tsx"),
 				D = n("./src/reddit/helpers/trackers/predictions.ts"),
 				Q = n("./src/reddit/hooks/useToast.tsx"),
@@ -845,8 +845,8 @@
 						E = t.userSelection,
 						[h, j] = r.a.useState(!1),
 						[O, k] = r.a.useState(null),
-						[_, I] = r.a.useState(!1),
-						P = b < Date.now();
+						[_, P] = r.a.useState(!1),
+						C = b < Date.now();
 					return {
 						isLoading: h,
 						isShowingVoteAnimation: _,
@@ -857,11 +857,11 @@
 							return t === O
 						}),
 						selectOption: e => {
-							P || E || k(e.id)
+							C || E || k(e.id)
 						},
 						predict: async t => {
-							if (t.currency === l.a.Coins && t.amount > s) return Object($.promptUserToBuyMoreCoins)(), void c(D.b);
-							if (P) return u(W._("Error: Failed to make prediction. This prediction has already ended", null, {
+							if (t.currency === l.a.Coins && t.amount > s) return Object(J.promptUserToBuyMoreCoins)(), void c(D.b);
+							if (C) return u(W._("Error: Failed to make prediction. This prediction has already ended", null, {
 								hk: "22UWEr"
 							})), void k(null);
 							if (!p || !O) throw new Error("Invalid arguments, optionId and pollId must be strings");
@@ -870,14 +870,14 @@
 								selectedNumberTokens: t.amount
 							}));
 							try {
-								await o(Object(J.s)({
+								await o(Object(H.s)({
 									coinPackageId: t.id,
 									selectedOptionId: O,
 									price: t.amount,
 									pollId: p,
 									tournamentId: e,
 									tournamentPostId: n.id
-								})), i && x < Y.a.upvoted && (o(Object(H.jb)(v)), o(Object(H.jb)(p)), m()), j(!1), k(null), I(!0)
+								})), i && x < Y.a.upvoted && (o(Object($.jb)(v)), o(Object($.jb)(p)), m()), j(!1), k(null), P(!0)
 							} catch (r) {
 								j(!1), k(null), u(W._("Error: Failed to make prediction, please try again later", null, {
 									hk: "1tECsx"
@@ -888,7 +888,7 @@
 							k(null)
 						}, []),
 						hideAnimation: r.a.useCallback(() => {
-							I(!1)
+							P(!1)
 						}, [])
 					}
 				}(n, t, o);
@@ -1063,11 +1063,11 @@
 			})), n.d(t, "d", (function() {
 				return _
 			})), n.d(t, "h", (function() {
-				return I
-			})), n.d(t, "a", (function() {
 				return P
-			})), n.d(t, "i", (function() {
+			})), n.d(t, "a", (function() {
 				return C
+			})), n.d(t, "i", (function() {
+				return I
 			})), n.d(t, "b", (function() {
 				return S
 			})), n.d(t, "l", (function() {
@@ -1097,14 +1097,14 @@
 						...u,
 						variables: t
 					});
-					return !!Object(s.c)(n) && (n.body.data.subredditInfoById.allowedPostTypes || []).includes(v.G.Talk)
+					return !!Object(s.c)(n) && (n.body.data.subredditInfoById.allowedPostTypes || []).includes(v.H.Talk)
 				}, h = async (e, t) => {
 					var n, o;
 					const r = await Object(a.a)(e, {
 						...m,
 						variables: t
 					});
-					return !!Object(s.c)(r) && (null !== (o = null === (n = r.body.data.profileByName) || void 0 === n ? void 0 : n.allowedPostTypes) && void 0 !== o ? o : []).includes(v.G.Talk)
+					return !!Object(s.c)(r) && (null !== (o = null === (n = r.body.data.profileByName) || void 0 === n ? void 0 : n.allowedPostTypes) && void 0 !== o ? o : []).includes(v.H.Talk)
 				}, j = async e => {
 					var t;
 					const n = await Object(a.a)(e, l);
@@ -1131,7 +1131,7 @@
 							subredditId: t.id
 						}
 					}
-				}), _ = () => Object(r.a)(), I = e => e.data.createAudioRoomOrError || e.data.createAudioRoomOnProfile || e.data.startAudioRoom, P = {
+				}), _ = () => Object(r.a)(), P = e => e.data.createAudioRoomOrError || e.data.createAudioRoomOnProfile || e.data.startAudioRoom, C = {
 					[v.j.ServiceError]: o.fbt._("Something's wrong with the talk service right now. Check back later.", null, {
 						hk: "3XqPJS"
 					}),
@@ -1147,11 +1147,11 @@
 					[v.j.SubredditRoomLimitExceeded]: o.fbt._("This community can only host two talks at a time. Try again after one has ended.", null, {
 						hk: "2mGf21"
 					})
-				}, C = e => e.data.prepareAudioRoom || e.data.prepareAudioRoomOnProfile, S = {
-					[v.I.ServiceError]: o.fbt._("Something's wrong with the talk service right now. Check back later.", null, {
+				}, I = e => e.data.prepareAudioRoom || e.data.prepareAudioRoomOnProfile, S = {
+					[v.J.ServiceError]: o.fbt._("Something's wrong with the talk service right now. Check back later.", null, {
 						hk: "3XqPJS"
 					}),
-					[v.I.UserNotAuthorized]: o.fbt._("You don't have permission to start talks in this community.", null, {
+					[v.J.UserNotAuthorized]: o.fbt._("You don't have permission to start talks in this community.", null, {
 						hk: "1XY1Ss"
 					})
 				}, N = (e, t) => Object(a.a)(e, {
@@ -1338,4 +1338,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/index.e8d91bac43a66cca3447.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/index.b0430d664eed0c9dbe8a.js.map
