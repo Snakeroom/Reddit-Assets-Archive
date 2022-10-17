@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/runtime~Reddit.1437002d23d77887e63a.js
-// Retrieved at 10/17/2022, 2:20:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/runtime~Reddit.13a3bfa4e5346d4c7cbf.js
+// Retrieved at 10/17/2022, 5:00:07 PM by Reddit Dataminer v1.0.0
 ! function(e) {
 	function o(o) {
 		for (var a, n, r = o[0], s = o[1], c = o[2], l = 0, P = []; l < r.length; l++) n = r[l], Object.prototype.hasOwnProperty.call(d, n) && d[n] && P.push(d[n][0]), d[n] = 0;
@@ -866,7 +866,7 @@
 					NftProfileUnit: "594f6e8ce36392b24133",
 					gildActions: "ac9088be5d4f0707fe78",
 					"reddit-components-SidebarNativeAd": "8ce5647badb081fc264a",
-					CommentsPageNativeAd: "19bb9066419f4f93a963",
+					CommentsPageNativeAd: "d4ced12969619af9fd0c",
 					ReportFlow: "f744a598726ad802545e",
 					CreatorStats: "0b6ba9739c2c4ecbcfa8",
 					CrosspostRecommendationsModal: "c716ac02a746da93879d",
@@ -1591,7 +1591,7 @@
 						NftProfileUnit: "73f54aa82f38ac5941cd",
 						gildActions: "c85b7f91da56ef7f7c8d",
 						"reddit-components-SidebarNativeAd": "2392411f5f308f0829c2",
-						CommentsPageNativeAd: "bad38b5a68676ef5b98d",
+						CommentsPageNativeAd: "ec7375d05fde79cc093c",
 						ReportFlow: "ab0d904f64631f9763c4",
 						CreatorStats: "efae0c92606f03491d7b",
 						CrosspostRecommendationsModal: "ca74be21b829db983e11",
@@ -1807,4 +1807,4 @@
 	var m = c;
 	t()
 }([]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/runtime~Reddit.1437002d23d77887e63a.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/runtime~Reddit.13a3bfa4e5346d4c7cbf.js.map
