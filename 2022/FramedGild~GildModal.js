@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/FramedGild~GildModal.99369742ed1a7181be3d.js
-// Retrieved at 10/13/2022, 3:00:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/FramedGild~GildModal.7a5e9f85789668936b0f.js
+// Retrieved at 10/17/2022, 10:20:11 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["FramedGild~GildModal", "gildActions"], {
 		"./node_modules/@stripe/react-stripe-js/dist/react-stripe.umd.js": function(e, t, r) {
@@ -4100,7 +4100,7 @@
 					} = e;
 					return i.a.createElement(v, n)
 				}),
-				w = e => e.e === p.k ? !!e.c && !e.c.every(e => !e.t) : e.e !== p.u || !!e.c && !e.c.every(e => e.e === p.A && !e.t),
+				w = e => e.e === p.k ? !!e.c && !e.c.every(e => !e.t) : e.e !== p.v || !!e.c && !e.c.every(e => e.e === p.B && !e.t),
 				j = e => a()(e, w),
 				x = e => e.findIndex(w),
 				y = e => {
@@ -4148,10 +4148,10 @@
 								case p.p:
 									P.push(h.f(e, N, y, i, _));
 									break;
-								case p.z:
+								case p.A:
 									P.push(h.h(e, N, y, i, _));
 									break;
-								case p.u:
+								case p.v:
 									P.push(h.g(e, N, y, i, _));
 									break;
 								case p.h:
@@ -4159,7 +4159,7 @@
 									break;
 								case p.m:
 								case p.a:
-								case p.D:
+								case p.E:
 									P.push(...Object(b.b)(e, i, y, N, w, f, t, C))
 							}
 						}
@@ -4307,7 +4307,7 @@
 						onReload: c,
 						...d
 					} = e;
-					const l = r === g.D ? n.fbt._("Processing video...", null, {
+					const l = r === g.E ? n.fbt._("Processing video...", null, {
 							hk: "3SXDRi"
 						}) : n.fbt._("Processing image...", null, {
 							hk: "1qwmbc"
@@ -4372,7 +4372,7 @@
 					}, n || s) : null
 				},
 				T = (e, t, r, n, s, i, d, l) => {
-					const p = g.E(n, e.id);
+					const p = g.F(n, e.id);
 					if (s) return [A(e, t, p)];
 					const f = [];
 					return !p || p.e === g.s && null === p.s.x && null === p.s.y ? f.push(((e, t, r, n) => a.a.createElement(N, {
@@ -4632,7 +4632,7 @@
 						o = n.length;
 					for (let i = 0; i < o; i++) {
 						const e = n[i];
-						a.push(e.e === m.w ? e.t : F(e, t, i))
+						a.push(e.e === m.x ? e.t : F(e, t, i))
 					}
 					const d = c.x[s - 1];
 					return i.a.createElement(d, {
@@ -4685,9 +4685,9 @@
 							return A(n);
 						case m.p:
 							return M(e, t, r, n, s);
-						case m.u:
+						case m.v:
 							return D(e, t, r, n, s);
-						case m.z:
+						case m.A:
 							return R(e, t, r, n, s)
 					}
 				},
@@ -4747,8 +4747,8 @@
 						a = e.length;
 					for (let o = 0; o < a; o++) {
 						const a = e[o];
-						if (a.e === m.A) s.push(U(a, o));
-						else if (a.e === m.x) s.push(i.a.createElement(E.a, {
+						if (a.e === m.B) s.push(U(a, o));
+						else if (a.e === m.y) s.push(i.a.createElement(E.a, {
 							key: o,
 							onClickReveal: n
 						}, G(a.c, t, r, n)));
@@ -4757,7 +4757,7 @@
 						}));
 						else if (a.e === m.m || a.e === m.a) {
 							if (a.id.startsWith("emote|")) {
-								const e = m.E(t, a.id);
+								const e = m.F(t, a.id);
 								e && s.push(i.a.createElement(x, {
 									key: o,
 									node: a,
@@ -4791,20 +4791,20 @@
 								postId: s,
 								commentId: a
 							}, n);
-						case m.y:
+						case m.z:
 							return i.a.createElement(I.b, {
 								key: r,
 								rtJsonElementProps: t,
 								subredditName: e.t
 							});
-						case m.B:
 						case m.C:
+						case m.D:
 							return i.a.createElement(c.a, {
 								href: `/u/${e.t}/`,
 								key: r
 							}, `${e.l?"/":""}u/${e.t}`);
 						case m.g:
-						case m.v:
+						case m.w:
 							return i.a.createElement(c.a, {
 								href: e.t,
 								key: r
@@ -6203,4 +6203,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/FramedGild~GildModal.99369742ed1a7181be3d.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/FramedGild~GildModal.7a5e9f85789668936b0f.js.map

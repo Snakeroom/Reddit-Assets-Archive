@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModerationPages.c7ebb5b1030c40f7f22c.js
-// Retrieved at 10/13/2022, 3:00:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModerationPages.3233336dbe88f098f0f0.js
+// Retrieved at 10/17/2022, 10:20:11 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModerationPages", "CollectionCommentsPage~CommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~RpanListingUnit~S~5809214e", "CommentsPage~Governance~Reddit~ReportFlow~Subreddit~reddit-components-BlankPost~reddit-components-Cl~5351df81", "Governance~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compo~bd4baca2", "Reddit~RpanListingUnit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPos~93b34f9d", "Governance~ModListing~Reddit~ReportFlow~Subreddit", "ModListing~PostCreation~Reddit~StandalonePostPage~Subreddit", "Governance~ModListing~Reddit", "Governance~Reddit~SubredditForkingCTA"], {
 		"./src/chat/controls/Svg/index.m.less": function(e, t, n) {
@@ -1077,7 +1077,7 @@
 		"./src/lib/forceHttps/index.ts": function(e, t, n) {
 			"use strict";
 			t.a = function(e) {
-				return e.startsWith("http") ? e.replace(/^http:\/\//i, "https://") : `https://${e}`
+				return e.startsWith("http") || e.startsWith("blob") ? e.replace(/^http:\/\//i, "https://") : `https://${e}`
 			}
 		},
 		"./src/lib/formatApiError/index.ts": function(e, t, n) {
@@ -2153,15 +2153,11 @@
 						const T = S.displayText,
 							N = l.commentMode;
 						let P;
-						if (g) P = await Object(G.i)(O(), i, l, T), e(Object(b.a)({
-							streamId: i,
-							level: P.body.automuteLevel
-						}));
-						else {
-							const e = t && n ? n : Object(W.e)(l, C.uploads);
-							P = ke(N, C) ? await D(E(), i, null, l, e) : await L(O(), i, l, e)
-						}
-						if (P.ok) {
+						const R = g ? "" : t && n ? n : Object(W.e)(l, C.uploads);
+						if (g ? (P = await Object(G.i)(O(), i, l, T), e(Object(b.a)({
+								streamId: i,
+								level: P.body.automuteLevel
+							}))) : P = ke(N, C) ? await D(E(), i, null, l, R) : await L(O(), i, l, R), P.ok) {
 							let n;
 							if (n = P.body, e(ve({
 									...n,
@@ -2169,7 +2165,8 @@
 										commentsPageKey: d
 									}),
 									commentsPageKey: d,
-									draftKey: k
+									draftKey: k,
+									upload: Object(W.f)(R, C.uploads)
 								})), t) {
 								const e = Object(le.i)(C);
 								Object(a.a)(!!e)
@@ -2290,7 +2287,8 @@
 								parentCommentId: m,
 								commentsPageKey: p,
 								draftKey: E,
-								depth: b + 1
+								depth: b + 1,
+								upload: Object(W.f)(k, v.uploads)
 							})), t) {
 							const e = Object(le.i)(v);
 							Object(a.a)(!!e)
@@ -2334,7 +2332,7 @@
 						apiContext: a
 					} = i;
 					const d = e === w.i.RICH_TEXT;
-					if (!t || "object" == typeof t && Object(Z.G)(t)) r(Me({
+					if (!t || "object" == typeof t && Object(Z.H)(t)) r(Me({
 						editorMode: e,
 						draftKey: n,
 						content: d ? Z.i : ""
@@ -11538,7 +11536,7 @@
 					const v = t === c.i.MARKDOWN,
 						x = t === c.i.RICH_TEXT,
 						O = m.k;
-					if (v && Object(l.G)(n)) return r(f({
+					if (v && Object(l.H)(n)) return r(f({
 						editorKey: e,
 						editorMode: c.i.MARKDOWN,
 						content: ""
@@ -50263,7 +50261,7 @@
 						hk: "20Lgcg"
 					})), l.a.createElement("span", {
 						className: V.a.ruleMetaText
-					}, o && !Object(be.G)({
+					}, o && !Object(be.H)({
 						document: o
 					}) ? l.a.createElement(le.b, {
 						className: V.a.ruleMetaText,
@@ -57482,41 +57480,45 @@
 		"./src/reddit/helpers/comment/index.ts": function(e, t, n) {
 			"use strict";
 			n.d(t, "c", (function() {
-				return a
-			})), n.d(t, "d", (function() {
 				return d
-			})), n.d(t, "e", (function() {
+			})), n.d(t, "d", (function() {
 				return c
-			})), n.d(t, "a", (function() {
+			})), n.d(t, "e", (function() {
 				return l
-			})), n.d(t, "b", (function() {
+			})), n.d(t, "a", (function() {
 				return u
+			})), n.d(t, "b", (function() {
+				return m
+			})), n.d(t, "f", (function() {
+				return p
 			}));
+			n("./node_modules/core-js/modules/web.dom.iterable.js");
 			var s = n("./node_modules/uuid/dist/esm-browser/v4.js"),
 				r = n("./src/reddit/components/RichTextEditor/RTEState/index.tsx"),
 				o = n("./src/reddit/constants/things.ts"),
-				i = n("./src/reddit/models/Vote/index.ts");
-			const a = e => e.rteState ? r.a.toRichTextJSON(e.rteState) : e.rtJson || e.text,
-				d = (e, t) => {
+				i = n("./src/reddit/models/Upload/index.ts"),
+				a = n("./src/reddit/models/Vote/index.ts");
+			const d = e => e.rteState ? r.a.toRichTextJSON(e.rteState) : e.rtJson || e.text,
+				c = (e, t) => {
 					let n = [];
 					return e.rteState ? n = r.a.toRichTextJSON(e.rteState, t).document : e.rtJson && (n = e.rtJson.document), {
 						document: n
 					}
 				},
-				c = (e, t) => JSON.stringify(d(e, t));
+				l = (e, t) => JSON.stringify(c(e, t));
 
-			function l() {
+			function u() {
 				return `${o.a}_${Object(s.a)()}`
 			}
 
-			function u(e) {
+			function m(e) {
 				let {
 					temporalId: t,
 					draft: n,
 					post: s,
 					author: r,
 					subredditId: o,
-					parentId: a
+					parentId: i
 				} = e;
 				return {
 					id: t,
@@ -57545,9 +57547,9 @@
 					media: {
 						type: "rtjson",
 						rteMode: n.commentMode,
-						richtextContent: d(n)
+						richtextContent: c(n)
 					},
-					parentId: a,
+					parentId: i,
 					permalink: "",
 					postAuthor: s.author,
 					postTitle: null,
@@ -57555,9 +57557,18 @@
 					sendReplies: !1,
 					modReports: [],
 					numReports: 0,
-					voteState: i.a.notVoted,
+					voteState: a.a.notVoted,
 					userReports: []
 				}
+			}
+
+			function p(e, t) {
+				for (const n of Object.keys(t)) {
+					const s = t[n],
+						r = s.url ? Object(i.b)(s.url) : null;
+					if (r && e.includes(r)) return s
+				}
+				return null
 			}
 		},
 		"./src/reddit/helpers/commentList/index.ts": function(e, t, n) {
@@ -77496,4 +77507,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.c7ebb5b1030c40f7f22c.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.3233336dbe88f098f0f0.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/RichTextEditor.8ece01bedd5337621a3f.js
-// Retrieved at 10/13/2022, 3:00:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/RichTextEditor.94b5e0e2378663102a00.js
+// Retrieved at 10/17/2022, 10:20:11 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["RichTextEditor", "ContributorRequestButton"], {
 		"./node_modules/autosize/dist/autosize.js": function(e, t, n) {
@@ -895,15 +895,11 @@
 						const D = T.displayText,
 							M = l.commentMode;
 						let R;
-						if (_) R = await Object(W.i)(C(), i, l, D), e(Object(h.a)({
-							streamId: i,
-							level: R.body.automuteLevel
-						}));
-						else {
-							const e = t && n ? n : Object(K.e)(l, v.uploads);
-							R = je(M, v) ? await B(E(), i, null, l, e) : await A(C(), i, l, e)
-						}
-						if (R.ok) {
+						const F = _ ? "" : t && n ? n : Object(K.e)(l, v.uploads);
+						if (_ ? (R = await Object(W.i)(C(), i, l, D), e(Object(h.a)({
+								streamId: i,
+								level: R.body.automuteLevel
+							}))) : R = je(M, v) ? await B(E(), i, null, l, F) : await A(C(), i, l, F), R.ok) {
 							let n;
 							if (n = R.body, e(xe({
 									...n,
@@ -911,7 +907,8 @@
 										commentsPageKey: c
 									}),
 									commentsPageKey: c,
-									draftKey: j
+									draftKey: j,
+									upload: Object(K.f)(F, v.uploads)
 								})), t) {
 								const e = Object(le.i)(v);
 								Object(a.a)(!!e)
@@ -1032,7 +1029,8 @@
 								parentCommentId: m,
 								commentsPageKey: p,
 								draftKey: E,
-								depth: h + 1
+								depth: h + 1,
+								upload: Object(K.f)(j, x.uploads)
 							})), t) {
 							const e = Object(le.i)(x);
 							Object(a.a)(!!e)
@@ -1076,7 +1074,7 @@
 						apiContext: a
 					} = i;
 					const c = e === S.i.RICH_TEXT;
-					if (!t || "object" == typeof t && Object(Y.G)(t)) r(Pe({
+					if (!t || "object" == typeof t && Object(Y.H)(t)) r(Pe({
 						editorMode: e,
 						draftKey: n,
 						content: c ? Y.i : ""
@@ -1671,7 +1669,7 @@
 					const x = t === d.i.MARKDOWN,
 						y = t === d.i.RICH_TEXT,
 						C = m.k;
-					if (x && Object(l.G)(n)) return r(b({
+					if (x && Object(l.H)(n)) return r(b({
 						editorKey: e,
 						editorMode: d.i.MARKDOWN,
 						content: ""
@@ -6084,4 +6082,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RichTextEditor.8ece01bedd5337621a3f.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RichTextEditor.94b5e0e2378663102a00.js.map

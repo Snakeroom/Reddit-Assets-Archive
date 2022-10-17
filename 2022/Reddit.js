@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Reddit.ba0500aa0cab09203c2a.js
-// Retrieved at 10/13/2022, 6:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Reddit.7c823e9d9d4b5afdd7cd.js
+// Retrieved at 10/17/2022, 10:20:11 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Reddit"], {
 		"./assets/fonts/BentonSans/font.less": function(e, t, n) {},
@@ -646,15 +646,11 @@
 						const w = k.displayText,
 							M = d.commentMode;
 						let I;
-						if (v) I = await Object(H.i)(y(), a, d, w), e(Object(b.a)({
-							streamId: a,
-							level: I.body.automuteLevel
-						}));
-						else {
-							const e = t && n ? n : Object(W.e)(d, j.uploads);
-							I = Se(M, j) ? await D(x(), a, null, d, e) : await L(y(), a, d, e)
-						}
-						if (I.ok) {
+						const A = v ? "" : t && n ? n : Object(W.e)(d, j.uploads);
+						if (v ? (I = await Object(H.i)(y(), a, d, w), e(Object(b.a)({
+								streamId: a,
+								level: I.body.automuteLevel
+							}))) : I = Se(M, j) ? await D(x(), a, null, d, A) : await L(y(), a, d, A), I.ok) {
 							let n;
 							if (n = I.body, e(Oe({
 									...n,
@@ -662,7 +658,8 @@
 										commentsPageKey: c
 									}),
 									commentsPageKey: c,
-									draftKey: S
+									draftKey: S,
+									upload: Object(W.f)(A, j.uploads)
 								})), t) {
 								const e = Object(de.i)(j);
 								Object(i.a)(!!e)
@@ -783,7 +780,8 @@
 								parentCommentId: m,
 								commentsPageKey: p,
 								draftKey: x,
-								depth: b + 1
+								depth: b + 1,
+								upload: Object(W.f)(S, O.uploads)
 							})), t) {
 							const e = Object(de.i)(O);
 							Object(i.a)(!!e)
@@ -827,7 +825,7 @@
 						apiContext: i
 					} = a;
 					const c = e === N.i.RICH_TEXT;
-					if (!t || "object" == typeof t && Object(Z.G)(t)) r(Re({
+					if (!t || "object" == typeof t && Object(Z.H)(t)) r(Re({
 						editorMode: e,
 						draftKey: n,
 						content: c ? Z.i : ""
@@ -1926,7 +1924,7 @@
 					const O = t === l.i.MARKDOWN,
 						C = t === l.i.RICH_TEXT,
 						y = m.k;
-					if (O && Object(d.G)(n)) return r(h({
+					if (O && Object(d.H)(n)) return r(h({
 						editorKey: e,
 						editorMode: l.i.MARKDOWN,
 						content: ""
@@ -23142,4 +23140,4 @@
 		["./src/reddit/index.tsx", "runtime~Reddit", "vendors~CommentsPage~ModerationPages~Reddit~reddit-components-ClassicPost~reddit-components-CompactP~d737df3e", "vendors~CommentsPage~Governance~ModListing~ModerationPages~Reddit~Subreddit", "vendors~Chat~Governance~Reddit", "vendors~Reddit", "CommentsPage~Governance~Reddit~ReportFlow~Subreddit~reddit-components-BlankPost~reddit-components-Cl~5351df81", "Governance~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compo~bd4baca2", "Reddit~RpanListingUnit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPos~93b34f9d", "ModListing~PostCreation~Reddit~StandalonePostPage~Subreddit", "Governance~ModListing~Reddit~ReportFlow~Subreddit", "Chat~Governance~Reddit", "Governance~Reddit~SubredditForkingCTA", "Governance~ModListing~Reddit", "Governance~Reddit"]
 	]
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit.ba0500aa0cab09203c2a.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit.7c823e9d9d4b5afdd7cd.js.map

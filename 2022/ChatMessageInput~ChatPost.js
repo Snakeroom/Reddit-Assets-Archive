@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ChatMessageInput~ChatPost.29a902e5bd18707cab37.js
-// Retrieved at 10/13/2022, 3:00:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ChatMessageInput~ChatPost.d486f4c931fc5bc8acac.js
+// Retrieved at 10/17/2022, 10:20:11 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ChatMessageInput~ChatPost"], {
 		"./node_modules/lodash/_baseReduce.js": function(e, t) {
@@ -281,7 +281,7 @@
 						s = n.length;
 					for (let r = 0; r < s; r++) {
 						const e = n[r];
-						t.push(e.e === h.w ? e.t : Object(m.e)(e, {}, r))
+						t.push(e.e === h.x ? e.t : Object(m.e)(e, {}, r))
 					}
 					return a.a.createElement(a.a.Fragment, null, t)
 				},
@@ -294,8 +294,8 @@
 				[h.h]: "<embed>",
 				[h.m]: "<image>",
 				[h.p]: "<list>",
-				[h.z]: "<table>",
-				[h.D]: "<video>"
+				[h.A]: "<table>",
+				[h.E]: "<video>"
 			};
 			var E = e => {
 					let {
@@ -316,17 +316,17 @@
 								case h.b:
 								case h.c:
 								case h.p:
-								case h.z:
+								case h.A:
 								case h.m:
 								case h.a:
-								case h.D:
+								case h.E:
 								case h.h:
 									r.push(p(t));
 									break;
 								case h.k:
 									r.push(b(e));
 									break;
-								case h.u:
+								case h.v:
 									r.push(x(e))
 							}
 						}
@@ -699,13 +699,13 @@
 					onClick: () => {
 						e.isSponsored && e.post.postId && (e.fireAdPixelsOfType && e.fireAdPixelsOfType(e.post, b.a.Click), Object(g.a)(e.post, e.pageType))
 					}
-				}, R(e)) : e.isListing && e.postPermalink ? a.a.createElement(i.a, {
+				}, D(e)) : e.isListing && e.postPermalink ? a.a.createElement(i.a, {
 					target: e.shouldOpenPostInNewTab ? "_blank" : void 0,
 					to: Object(m.a)(e.postPermalink, void 0, t),
 					onClick: e.onPostMediaClick
-				}, R(e)) : R(e)
+				}, D(e)) : D(e)
 			});
-			const D = (e, t) => a.a.createElement(S, {
+			const R = (e, t) => a.a.createElement(S, {
 					altText: t.altText,
 					className: Object(d.a)(t.imageClassName, {
 						[y.a]: !e
@@ -723,7 +723,7 @@
 					width: t.width,
 					renderSmallMedia: t.renderSmallMedia
 				}),
-				R = e => {
+				D = e => {
 					let {
 						onClick: t,
 						...n
@@ -734,7 +734,7 @@
 						className: `${r?`${y.a} `:""}${n.className||""}`
 					}), n.isListing ? a.a.createElement("div", {
 						className: n.contentImageClassName
-					}, D(r, n)) : a.a.createElement("a", {
+					}, R(r, n)) : a.a.createElement("a", {
 						href: n.originalSource,
 						onClick: t,
 						style: o ? {
@@ -743,7 +743,7 @@
 						target: "_blank",
 						rel: u.c,
 						className: k.a.imageLink
-					}, D(r, n), n.shouldBlur && !n.isVideoThumbnail && !n.isNsfwBlockingModalEligible && a.a.createElement(h.a, {
+					}, R(r, n), n.shouldBlur && !n.isVideoThumbnail && !n.isNsfwBlockingModalEligible && a.a.createElement(h.a, {
 						isNSFW: !!n.isNSFW,
 						isSpoiler: !!n.isSpoiler
 					})), n.isListing && !n.showFull && n.height > _.j && Object(_.L)(n.height, n.width) && a.a.createElement("div", {
@@ -967,7 +967,7 @@
 						postId: p
 					}))
 				}
-				const D = r()(e => {
+				const R = r()(e => {
 					if (n) return;
 					const {
 						target: t
@@ -975,8 +975,8 @@
 					t && t.played && 1 === t.played.length && 0 === t.played.start(0) && t.played.end(0) === t.duration && S(Object(u.s)(p))
 				}, 200);
 
-				function R(e) {
-					e.persist(), D(e)
+				function D(e) {
+					e.persist(), R(e)
 				}
 
 				function H(e) {
@@ -1024,7 +1024,7 @@
 						onLoadedMetadata: F,
 						onPause: B,
 						onPlaying: A,
-						onTimeUpdate: R,
+						onTimeUpdate: D,
 						shouldLoad: b,
 						shouldPause: C,
 						showCentered: I,
@@ -1351,7 +1351,7 @@
 					} = e;
 					return i.a.createElement(g, s)
 				}),
-				C = e => e.e === h.k ? !!e.c && !e.c.every(e => !e.t) : e.e !== h.u || !!e.c && !e.c.every(e => e.e === h.A && !e.t),
+				C = e => e.e === h.k ? !!e.c && !e.c.every(e => !e.t) : e.e !== h.v || !!e.c && !e.c.every(e => e.e === h.B && !e.t),
 				_ = e => a()(e, C),
 				v = e => e.findIndex(C),
 				j = e => {
@@ -1399,10 +1399,10 @@
 								case h.p:
 									T.push(b.f(e, L, j, i, w));
 									break;
-								case h.z:
+								case h.A:
 									T.push(b.h(e, L, j, i, w));
 									break;
-								case h.u:
+								case h.v:
 									T.push(b.g(e, L, j, i, w));
 									break;
 								case h.h:
@@ -1410,7 +1410,7 @@
 									break;
 								case h.m:
 								case h.a:
-								case h.D:
+								case h.E:
 									T.push(...Object(p.b)(e, i, j, L, C, x, t, I))
 							}
 						}
@@ -1558,7 +1558,7 @@
 						onReload: c,
 						...d
 					} = e;
-					const l = n === f.D ? s.fbt._("Processing video...", null, {
+					const l = n === f.E ? s.fbt._("Processing video...", null, {
 							hk: "3SXDRi"
 						}) : s.fbt._("Processing image...", null, {
 							hk: "1qwmbc"
@@ -1623,7 +1623,7 @@
 					}, s || r) : null
 				},
 				M = (e, t, n, s, r, i, d, l) => {
-					const h = f.E(s, e.id);
+					const h = f.F(s, e.id);
 					if (r) return [S(e, t, h)];
 					const x = [];
 					return !h || h.e === f.s && null === h.s.x && null === h.s.y ? x.push(((e, t, n, s) => a.a.createElement(L, {
@@ -1771,7 +1771,7 @@
 			})), n.d(t, "b", (function() {
 				return B
 			})), n.d(t, "f", (function() {
-				return D
+				return R
 			})), n.d(t, "h", (function() {
 				return H
 			})), n.d(t, "g", (function() {
@@ -1883,7 +1883,7 @@
 						o = s.length;
 					for (let i = 0; i < o; i++) {
 						const e = s[i];
-						a.push(e.e === m.w ? e.t : A(e, t, i))
+						a.push(e.e === m.x ? e.t : A(e, t, i))
 					}
 					const d = c.x[r - 1];
 					return i.a.createElement(d, {
@@ -1898,7 +1898,7 @@
 					if (!a) return;
 					const o = a.length,
 						d = [];
-					for (let i = 0; i < o; i++) d.push(R(a[i], t, n, i, r));
+					for (let i = 0; i < o; i++) d.push(D(a[i], t, n, i, r));
 					return i.a.createElement(c.c, {
 						key: s
 					}, d)
@@ -1909,7 +1909,7 @@
 						key: t
 					}, i.a.createElement(c.h, null, n.reduce((e, t, n, s) => e += t.t + (n < s.length ? "\n" : ""), "")))
 				},
-				D = (e, t, n, s, r) => {
+				R = (e, t, n, s, r) => {
 					const a = e.c,
 						o = [],
 						d = a.length;
@@ -1917,14 +1917,14 @@
 						const e = a[u].c;
 						e && e.length && o.push(i.a.createElement(c.g, {
 							key: u
-						}, e.map((e, s) => R(e, t, n, s, r))))
+						}, e.map((e, s) => D(e, t, n, s, r))))
 					}
 					const l = e.o ? c.i : c.v;
 					return i.a.createElement(l, {
 						key: s
 					}, o)
 				},
-				R = (e, t, n, s, r) => {
+				D = (e, t, n, s, r) => {
 					switch (e.e) {
 						case m.b:
 							return M(e, t, n, s, r);
@@ -1935,10 +1935,10 @@
 						case m.l:
 							return S(s);
 						case m.p:
-							return D(e, t, n, s, r);
-						case m.u:
+							return R(e, t, n, s, r);
+						case m.v:
 							return P(e, t, n, s, r);
-						case m.z:
+						case m.A:
 							return H(e, t, n, s, r)
 					}
 				},
@@ -1998,8 +1998,8 @@
 						a = e.length;
 					for (let o = 0; o < a; o++) {
 						const a = e[o];
-						if (a.e === m.A) r.push(U(a, o));
-						else if (a.e === m.x) r.push(i.a.createElement(O.a, {
+						if (a.e === m.B) r.push(U(a, o));
+						else if (a.e === m.y) r.push(i.a.createElement(O.a, {
 							key: o,
 							onClickReveal: s
 						}, F(a.c, t, n, s)));
@@ -2008,7 +2008,7 @@
 						}));
 						else if (a.e === m.m || a.e === m.a) {
 							if (a.id.startsWith("emote|")) {
-								const e = m.E(t, a.id);
+								const e = m.F(t, a.id);
 								e && r.push(i.a.createElement(v, {
 									key: o,
 									node: a,
@@ -2042,20 +2042,20 @@
 								postId: r,
 								commentId: a
 							}, s);
-						case m.y:
+						case m.z:
 							return i.a.createElement(y.b, {
 								key: n,
 								rtJsonElementProps: t,
 								subredditName: e.t
 							});
-						case m.B:
 						case m.C:
+						case m.D:
 							return i.a.createElement(c.a, {
 								href: `/u/${e.t}/`,
 								key: n
 							}, `${e.l?"/":""}u/${e.t}`);
 						case m.g:
-						case m.v:
+						case m.w:
 							return i.a.createElement(c.a, {
 								href: e.t,
 								key: n
@@ -2707,4 +2707,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatMessageInput~ChatPost.29a902e5bd18707cab37.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatMessageInput~ChatPost.d486f4c931fc5bc8acac.js.map

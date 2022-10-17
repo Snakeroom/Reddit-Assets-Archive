@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ModQueuePages~ModerationPages~PostCreation~ProfileComments~Profi~a5ca5d05.eeb74648bf564acd3912.js
-// Retrieved at 10/13/2022, 3:00:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ModQueuePages~ModerationPages~PostCreation~ProfileComments~Profi~a5ca5d05.42b509e7b11112134e8f.js
+// Retrieved at 10/17/2022, 10:20:11 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~ModQueuePages~ModerationPages~PostCreation~ProfileComments~Profi~a5ca5d05"], {
 		"./src/lib/unicodeUtils/index.ts": function(e, t, n) {
@@ -1006,7 +1006,7 @@
 					} = e;
 					return a.a.createElement(E, s)
 				}),
-				v = e => e.e === p.k ? !!e.c && !e.c.every(e => !e.t) : e.e !== p.u || !!e.c && !e.c.every(e => e.e === p.A && !e.t),
+				v = e => e.e === p.k ? !!e.c && !e.c.every(e => !e.t) : e.e !== p.v || !!e.c && !e.c.every(e => e.e === p.B && !e.t),
 				_ = e => o()(e, v),
 				j = e => e.findIndex(v),
 				O = e => {
@@ -1054,10 +1054,10 @@
 								case p.p:
 									w.push(b.f(e, T, O, a, S));
 									break;
-								case p.z:
+								case p.A:
 									w.push(b.h(e, T, O, a, S));
 									break;
-								case p.u:
+								case p.v:
 									w.push(b.g(e, T, O, a, S));
 									break;
 								case p.h:
@@ -1065,7 +1065,7 @@
 									break;
 								case p.m:
 								case p.a:
-								case p.D:
+								case p.E:
 									w.push(...Object(h.b)(e, a, O, T, v, x, t, k))
 							}
 						}
@@ -1213,7 +1213,7 @@
 						onReload: c,
 						...d
 					} = e;
-					const l = n === f.D ? s.fbt._("Processing video...", null, {
+					const l = n === f.E ? s.fbt._("Processing video...", null, {
 							hk: "3SXDRi"
 						}) : s.fbt._("Processing image...", null, {
 							hk: "1qwmbc"
@@ -1278,7 +1278,7 @@
 					}, s || r) : null
 				},
 				I = (e, t, n, s, r, a, d, l) => {
-					const p = f.E(s, e.id);
+					const p = f.F(s, e.id);
 					if (r) return [L(e, t, p)];
 					const x = [];
 					return !p || p.e === f.s && null === p.s.x && null === p.s.y ? x.push(((e, t, n, s) => o.a.createElement(T, {
@@ -1538,7 +1538,7 @@
 						i = s.length;
 					for (let a = 0; a < i; a++) {
 						const e = s[a];
-						o.push(e.e === m.w ? e.t : U(e, t, a))
+						o.push(e.e === m.x ? e.t : U(e, t, a))
 					}
 					const d = c.x[r - 1];
 					return a.a.createElement(d, {
@@ -1591,9 +1591,9 @@
 							return L(s);
 						case m.p:
 							return R(e, t, n, s, r);
-						case m.u:
+						case m.v:
 							return D(e, t, n, s, r);
-						case m.z:
+						case m.A:
 							return H(e, t, n, s, r)
 					}
 				},
@@ -1653,8 +1653,8 @@
 						o = e.length;
 					for (let i = 0; i < o; i++) {
 						const o = e[i];
-						if (o.e === m.A) r.push(A(o, i));
-						else if (o.e === m.x) r.push(a.a.createElement(y.a, {
+						if (o.e === m.B) r.push(A(o, i));
+						else if (o.e === m.y) r.push(a.a.createElement(y.a, {
 							key: i,
 							onClickReveal: s
 						}, F(o.c, t, n, s)));
@@ -1663,7 +1663,7 @@
 						}));
 						else if (o.e === m.m || o.e === m.a) {
 							if (o.id.startsWith("emote|")) {
-								const e = m.E(t, o.id);
+								const e = m.F(t, o.id);
 								e && r.push(a.a.createElement(j, {
 									key: i,
 									node: o,
@@ -1697,20 +1697,20 @@
 								postId: r,
 								commentId: o
 							}, s);
-						case m.y:
+						case m.z:
 							return a.a.createElement(C.b, {
 								key: n,
 								rtJsonElementProps: t,
 								subredditName: e.t
 							});
-						case m.B:
 						case m.C:
+						case m.D:
 							return a.a.createElement(c.a, {
 								href: `/u/${e.t}/`,
 								key: n
 							}, `${e.l?"/":""}u/${e.t}`);
 						case m.g:
-						case m.v:
+						case m.w:
 							return a.a.createElement(c.a, {
 								href: e.t,
 								key: n
@@ -2309,4 +2309,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ModQueuePages~ModerationPages~PostCreation~ProfileComments~Profi~a5ca5d05.eeb74648bf564acd3912.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ModQueuePages~ModerationPages~PostCreation~ProfileComments~Profi~a5ca5d05.42b509e7b11112134e8f.js.map

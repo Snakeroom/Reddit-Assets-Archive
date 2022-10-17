@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Subreddit.1787cd319de234dcf4e5.js
-// Retrieved at 10/13/2022, 3:00:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Subreddit.7718a676da065db79932.js
+// Retrieved at 10/17/2022, 10:20:11 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Subreddit", "Governance~ModListing~Reddit", "AchievementsActions", "reddit-components-Econ-PredictionLeaderboard-Sidebar"], {
 		"./node_modules/@reddit/i18n-tools/runtime/helpers/locale/index.js": function(e, t, n) {
@@ -9848,7 +9848,7 @@
 					} = e;
 					return a.a.createElement(x, r)
 				}),
-				E = e => e.e === p.k ? !!e.c && !e.c.every(e => !e.t) : e.e !== p.u || !!e.c && !e.c.every(e => e.e === p.A && !e.t),
+				E = e => e.e === p.k ? !!e.c && !e.c.every(e => !e.t) : e.e !== p.v || !!e.c && !e.c.every(e => e.e === p.B && !e.t),
 				_ = e => o()(e, E),
 				O = e => e.findIndex(E),
 				y = e => {
@@ -9896,10 +9896,10 @@
 								case p.p:
 									k.push(h.f(e, w, y, a, I));
 									break;
-								case p.z:
+								case p.A:
 									k.push(h.h(e, w, y, a, I));
 									break;
-								case p.u:
+								case p.v:
 									k.push(h.g(e, w, y, a, I));
 									break;
 								case p.h:
@@ -9907,7 +9907,7 @@
 									break;
 								case p.m:
 								case p.a:
-								case p.D:
+								case p.E:
 									k.push(...Object(b.b)(e, a, y, w, E, f, t, N))
 							}
 						}
@@ -10055,7 +10055,7 @@
 						onReload: c,
 						...d
 					} = e;
-					const l = n === g.D ? r.fbt._("Processing video...", null, {
+					const l = n === g.E ? r.fbt._("Processing video...", null, {
 							hk: "3SXDRi"
 						}) : r.fbt._("Processing image...", null, {
 							hk: "1qwmbc"
@@ -10120,7 +10120,7 @@
 					}, r || s) : null
 				},
 				L = (e, t, n, r, s, a, d, l) => {
-					const p = g.E(r, e.id);
+					const p = g.F(r, e.id);
 					if (s) return [T(e, t, p)];
 					const f = [];
 					return !p || p.e === g.s && null === p.s.x && null === p.s.y ? f.push(((e, t, n, r) => o.a.createElement(w, {
@@ -10380,7 +10380,7 @@
 						i = r.length;
 					for (let a = 0; a < i; a++) {
 						const e = r[a];
-						o.push(e.e === m.w ? e.t : U(e, t, a))
+						o.push(e.e === m.x ? e.t : U(e, t, a))
 					}
 					const d = c.x[s - 1];
 					return a.a.createElement(d, {
@@ -10433,9 +10433,9 @@
 							return T(r);
 						case m.p:
 							return B(e, t, n, r, s);
-						case m.u:
+						case m.v:
 							return D(e, t, n, r, s);
-						case m.z:
+						case m.A:
 							return M(e, t, n, r, s)
 					}
 				},
@@ -10495,8 +10495,8 @@
 						o = e.length;
 					for (let i = 0; i < o; i++) {
 						const o = e[i];
-						if (o.e === m.A) s.push(H(o, i));
-						else if (o.e === m.x) s.push(a.a.createElement(j.a, {
+						if (o.e === m.B) s.push(H(o, i));
+						else if (o.e === m.y) s.push(a.a.createElement(j.a, {
 							key: i,
 							onClickReveal: r
 						}, F(o.c, t, n, r)));
@@ -10505,7 +10505,7 @@
 						}));
 						else if (o.e === m.m || o.e === m.a) {
 							if (o.id.startsWith("emote|")) {
-								const e = m.E(t, o.id);
+								const e = m.F(t, o.id);
 								e && s.push(a.a.createElement(O, {
 									key: i,
 									node: o,
@@ -10539,20 +10539,20 @@
 								postId: s,
 								commentId: o
 							}, r);
-						case m.y:
+						case m.z:
 							return a.a.createElement(C.b, {
 								key: n,
 								rtJsonElementProps: t,
 								subredditName: e.t
 							});
-						case m.B:
 						case m.C:
+						case m.D:
 							return a.a.createElement(c.a, {
 								href: `/u/${e.t}/`,
 								key: n
 							}, `${e.l?"/":""}u/${e.t}`);
 						case m.g:
-						case m.v:
+						case m.w:
 							return a.a.createElement(c.a, {
 								href: e.t,
 								key: n
@@ -22371,4 +22371,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Subreddit.1787cd319de234dcf4e5.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Subreddit.7718a676da065db79932.js.map

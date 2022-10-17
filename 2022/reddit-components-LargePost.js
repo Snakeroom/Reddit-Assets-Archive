@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-LargePost.dcac393bac9b6e42d4d0.js
-// Retrieved at 10/13/2022, 3:00:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-LargePost.29a5eaced9e16c71e12c.js
+// Retrieved at 10/17/2022, 10:20:11 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-LargePost"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -949,15 +949,11 @@
 						const N = T.displayText,
 							P = l.commentMode;
 						let I;
-						if (O) I = await Object(W.i)(g(), i, l, N), e(Object(b.a)({
-							streamId: i,
-							level: I.body.automuteLevel
-						}));
-						else {
-							const e = t && s ? s : Object(K.e)(l, C.uploads);
-							I = Se(P, C) ? await D(E(), i, null, l, e) : await L(g(), i, l, e)
-						}
-						if (I.ok) {
+						const A = O ? "" : t && s ? s : Object(K.e)(l, C.uploads);
+						if (O ? (I = await Object(W.i)(g(), i, l, N), e(Object(b.a)({
+								streamId: i,
+								level: I.body.automuteLevel
+							}))) : I = Se(P, C) ? await D(E(), i, null, l, A) : await L(g(), i, l, A), I.ok) {
 							let s;
 							if (s = I.body, e(ve({
 									...s,
@@ -965,7 +961,8 @@
 										commentsPageKey: c
 									}),
 									commentsPageKey: c,
-									draftKey: S
+									draftKey: S,
+									upload: Object(K.f)(A, C.uploads)
 								})), t) {
 								const e = Object(le.i)(C);
 								Object(a.a)(!!e)
@@ -1086,7 +1083,8 @@
 								parentCommentId: m,
 								commentsPageKey: p,
 								draftKey: E,
-								depth: b + 1
+								depth: b + 1,
+								upload: Object(K.f)(S, v.uploads)
 							})), t) {
 							const e = Object(le.i)(v);
 							Object(a.a)(!!e)
@@ -1130,7 +1128,7 @@
 						apiContext: a
 					} = i;
 					const c = e === w.i.RICH_TEXT;
-					if (!t || "object" == typeof t && Object(Z.G)(t)) o(Me({
+					if (!t || "object" == typeof t && Object(Z.H)(t)) o(Me({
 						editorMode: e,
 						draftKey: s,
 						content: c ? Z.i : ""
@@ -1915,7 +1913,7 @@
 					const v = t === d.i.MARKDOWN,
 						_ = t === d.i.RICH_TEXT,
 						g = m.k;
-					if (v && Object(l.G)(s)) return o(f({
+					if (v && Object(l.H)(s)) return o(f({
 						editorKey: e,
 						editorMode: d.i.MARKDOWN,
 						content: ""
@@ -10042,4 +10040,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-LargePost.dcac393bac9b6e42d4d0.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-LargePost.29a5eaced9e16c71e12c.js.map

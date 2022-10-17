@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/GovernanceReleaseNotesModal.61f1adbfd469c48274ca.js
-// Retrieved at 10/13/2022, 3:00:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/GovernanceReleaseNotesModal.5465ecaffe029e5b0bac.js
+// Retrieved at 10/17/2022, 10:20:11 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["GovernanceReleaseNotesModal"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -1097,15 +1097,15 @@
 					})))
 				}
 			}
-			const D = Object(h.c)({
+			const H = Object(h.c)({
 					releaseNotes: m.f,
 					subreddit: u.r
 				}),
-				H = Object(o.b)(D, e => ({
+				D = Object(o.b)(H, e => ({
 					onClose: () => e(Object(d.f)())
 				})),
 				U = Object(u.u)();
-			t.default = Object(a.a)(U(H(F)))
+			t.default = Object(a.a)(U(D(F)))
 		},
 		"./src/reddit/components/Governance/VaultActionLink/async.ts": function(e, t, n) {
 			"use strict";
@@ -1669,14 +1669,14 @@
 
 				function F(e) {
 					var t;
-					(i || H(e), d) || (t = e.timeStamp, M(Object(u.A)(p, t)))
-				}
-
-				function D(e) {
-					M(Object(u.q)(p, e.timeStamp))
+					(i || D(e), d) || (t = e.timeStamp, M(Object(u.A)(p, t)))
 				}
 
 				function H(e) {
+					M(Object(u.q)(p, e.timeStamp))
+				}
+
+				function D(e) {
 					! function(e) {
 						M(Object(u.D)({
 							metadata: e,
@@ -1691,7 +1691,7 @@
 				}
 
 				function U(e) {
-					s || F(e), i || H(e), M(Object(u.C)(p))
+					s || F(e), i || D(e), M(Object(u.C)(p))
 				}
 
 				function A() {
@@ -1707,9 +1707,9 @@
 						key: p,
 						loop: !0,
 						onBufferingChange: L,
-						onLoadStart: D,
+						onLoadStart: H,
 						onLoadedData: F,
-						onLoadedMetadata: H,
+						onLoadedMetadata: D,
 						onPause: R,
 						onPlaying: U,
 						onTimeUpdate: P,
@@ -2087,7 +2087,7 @@
 					} = e;
 					return a.a.createElement(g, s)
 				}),
-				_ = e => e.e === h.k ? !!e.c && !e.c.every(e => !e.t) : e.e !== h.u || !!e.c && !e.c.every(e => e.e === h.A && !e.t),
+				_ = e => e.e === h.k ? !!e.c && !e.c.every(e => !e.t) : e.e !== h.v || !!e.c && !e.c.every(e => e.e === h.B && !e.t),
 				y = e => i()(e, _),
 				E = e => e.findIndex(_),
 				w = e => {
@@ -2135,10 +2135,10 @@
 								case h.p:
 									I.push(b.f(e, T, w, a, k));
 									break;
-								case h.z:
+								case h.A:
 									I.push(b.h(e, T, w, a, k));
 									break;
-								case h.u:
+								case h.v:
 									I.push(b.g(e, T, w, a, k));
 									break;
 								case h.h:
@@ -2146,7 +2146,7 @@
 									break;
 								case h.m:
 								case h.a:
-								case h.D:
+								case h.E:
 									I.push(...Object(p.b)(e, a, w, T, _, f, t, S))
 							}
 						}
@@ -2294,7 +2294,7 @@
 						onReload: d,
 						...c
 					} = e;
-					const l = n === x.D ? s.fbt._("Processing video...", null, {
+					const l = n === x.E ? s.fbt._("Processing video...", null, {
 							hk: "3SXDRi"
 						}) : s.fbt._("Processing image...", null, {
 							hk: "1qwmbc"
@@ -2359,7 +2359,7 @@
 					}, s || r) : null
 				},
 				L = (e, t, n, s, r, a, c, l) => {
-					const h = x.E(s, e.id);
+					const h = x.F(s, e.id);
 					if (r) return [M(e, t, h)];
 					const f = [];
 					return !h || h.e === x.s && null === h.s.x && null === h.s.y ? f.push(((e, t, n, s) => i.a.createElement(T, {
@@ -2511,9 +2511,9 @@
 			})), n.d(t, "h", (function() {
 				return F
 			})), n.d(t, "g", (function() {
-				return D
-			})), n.d(t, "i", (function() {
 				return H
+			})), n.d(t, "i", (function() {
+				return D
 			})), n.d(t, "e", (function() {
 				return U
 			}));
@@ -2619,7 +2619,7 @@
 						o = s.length;
 					for (let a = 0; a < o; a++) {
 						const e = s[a];
-						i.push(e.e === m.w ? e.t : U(e, t, a))
+						i.push(e.e === m.x ? e.t : U(e, t, a))
 					}
 					const c = d.x[r - 1];
 					return a.a.createElement(c, {
@@ -2672,9 +2672,9 @@
 							return M(s);
 						case m.p:
 							return B(e, t, n, s, r);
-						case m.u:
-							return D(e, t, n, s, r);
-						case m.z:
+						case m.v:
+							return H(e, t, n, s, r);
+						case m.A:
 							return F(e, t, n, s, r)
 					}
 				},
@@ -2697,7 +2697,7 @@
 							} = e;
 						u.push(a.a.createElement(s, {
 							key: d
-						}, H(c, t, n, r))), h[d] = i
+						}, D(c, t, n, r))), h[d] = i
 					}
 					for (let p = 0; p < c; p++) {
 						const e = i[p],
@@ -2710,7 +2710,7 @@
 								} = e[i];
 							o.push(a.a.createElement(s, {
 								key: i
-							}, H(d, t, n, r)))
+							}, D(d, t, n, r)))
 						}
 						m.push(a.a.createElement(d.t, {
 							key: p
@@ -2720,31 +2720,31 @@
 						key: s
 					}, a.a.createElement("thead", null, a.a.createElement(d.t, null, u)), a.a.createElement("tbody", null, m))
 				},
-				D = (e, t, n, s, r) => {
+				H = (e, t, n, s, r) => {
 					if (!e.c || !e.c.length) return (e => a.a.createElement(d.j, {
 						key: e
 					}, a.a.createElement("br", null)))(s);
 					const i = e.c[0];
 					return i.e !== m.m && i.e !== m.a || !Object(I.h)(i.id) ? a.a.createElement(d.j, {
 						key: s
-					}, H(e.c, t, n, r)) : Object(w.b)(i, s, n, t)
+					}, D(e.c, t, n, r)) : Object(w.b)(i, s, n, t)
 				},
-				H = (e, t, n, s) => {
+				D = (e, t, n, s) => {
 					const r = [],
 						i = e.length;
 					for (let o = 0; o < i; o++) {
 						const i = e[o];
-						if (i.e === m.A) r.push(A(i, o));
-						else if (i.e === m.x) r.push(a.a.createElement(j.a, {
+						if (i.e === m.B) r.push(A(i, o));
+						else if (i.e === m.y) r.push(a.a.createElement(j.a, {
 							key: o,
 							onClickReveal: s
-						}, H(i.c, t, n, s)));
+						}, D(i.c, t, n, s)));
 						else if (i.e === m.n) r.push(a.a.createElement("br", {
 							key: o
 						}));
 						else if (i.e === m.m || i.e === m.a) {
 							if (i.id.startsWith("emote|")) {
-								const e = m.E(t, i.id);
+								const e = m.F(t, i.id);
 								e && r.push(a.a.createElement(E, {
 									key: o,
 									node: i,
@@ -2778,20 +2778,20 @@
 								postId: r,
 								commentId: i
 							}, s);
-						case m.y:
+						case m.z:
 							return a.a.createElement(O.b, {
 								key: n,
 								rtJsonElementProps: t,
 								subredditName: e.t
 							});
-						case m.B:
 						case m.C:
+						case m.D:
 							return a.a.createElement(d.a, {
 								href: `/u/${e.t}/`,
 								key: n
 							}, `${e.l?"/":""}u/${e.t}`);
 						case m.g:
-						case m.v:
+						case m.w:
 							return a.a.createElement(d.a, {
 								href: e.t,
 								key: n
@@ -3430,4 +3430,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/GovernanceReleaseNotesModal.61f1adbfd469c48274ca.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/GovernanceReleaseNotesModal.5465ecaffe029e5b0bac.js.map

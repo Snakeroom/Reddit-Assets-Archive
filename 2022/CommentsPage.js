@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CommentsPage.0bc7526255de02a6c69b.js
-// Retrieved at 10/13/2022, 3:00:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CommentsPage.c9446edbea749cc002dd.js
+// Retrieved at 10/17/2022, 10:20:11 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CommentsPage", "Governance~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compo~bd4baca2", "Reddit~RpanListingUnit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPos~93b34f9d", "CollectionCommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~SearchResults", "Governance~ModListing~Reddit~ReportFlow~Subreddit", "ModListing~PostCreation~Reddit~StandalonePostPage~Subreddit", "CollectionCommentsPage~ModProgressModule~NewCommunityProgress", "Governance~ModListing~Reddit", "CollectionCommentsPage~SearchResults", "AchievementsActions"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -2488,7 +2488,7 @@
 		"./src/lib/forceHttps/index.ts": function(e, t, n) {
 			"use strict";
 			t.a = function(e) {
-				return e.startsWith("http") ? e.replace(/^http:\/\//i, "https://") : `https://${e}`
+				return e.startsWith("http") || e.startsWith("blob") ? e.replace(/^http:\/\//i, "https://") : `https://${e}`
 			}
 		},
 		"./src/lib/formatApiError/index.ts": function(e, t, n) {
@@ -3673,15 +3673,11 @@
 						const L = S.displayText,
 							T = l.commentMode;
 						let P;
-						if (g) P = await Object(W.i)(x(), i, l, L), e(Object(b.a)({
-							streamId: i,
-							level: P.body.automuteLevel
-						}));
-						else {
-							const e = t && n ? n : Object(G.e)(l, E.uploads);
-							P = ke(T, E) ? await R(O(), i, null, l, e) : await A(x(), i, l, e)
-						}
-						if (P.ok) {
+						const N = g ? "" : t && n ? n : Object(G.e)(l, E.uploads);
+						if (g ? (P = await Object(W.i)(x(), i, l, L), e(Object(b.a)({
+								streamId: i,
+								level: P.body.automuteLevel
+							}))) : P = ke(T, E) ? await R(O(), i, null, l, N) : await A(x(), i, l, N), P.ok) {
 							let n;
 							if (n = P.body, e(_e({
 									...n,
@@ -3689,7 +3685,8 @@
 										commentsPageKey: c
 									}),
 									commentsPageKey: c,
-									draftKey: k
+									draftKey: k,
+									upload: Object(G.f)(N, E.uploads)
 								})), t) {
 								const e = Object(le.i)(E);
 								Object(a.a)(!!e)
@@ -3810,7 +3807,8 @@
 								parentCommentId: m,
 								commentsPageKey: p,
 								draftKey: O,
-								depth: b + 1
+								depth: b + 1,
+								upload: Object(G.f)(k, _.uploads)
 							})), t) {
 							const e = Object(le.i)(_);
 							Object(a.a)(!!e)
@@ -3854,7 +3852,7 @@
 						apiContext: a
 					} = i;
 					const c = e === w.i.RICH_TEXT;
-					if (!t || "object" == typeof t && Object(X.G)(t)) r(De({
+					if (!t || "object" == typeof t && Object(X.H)(t)) r(De({
 						editorMode: e,
 						draftKey: n,
 						content: c ? X.i : ""
@@ -7568,7 +7566,7 @@
 					const _ = t === d.i.MARKDOWN,
 						v = t === d.i.RICH_TEXT,
 						x = m.k;
-					if (_ && Object(l.G)(n)) return r(f({
+					if (_ && Object(l.H)(n)) return r(f({
 						editorKey: e,
 						editorMode: d.i.MARKDOWN,
 						content: ""
@@ -44489,4 +44487,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommentsPage.0bc7526255de02a6c69b.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommentsPage.c9446edbea749cc002dd.js.map

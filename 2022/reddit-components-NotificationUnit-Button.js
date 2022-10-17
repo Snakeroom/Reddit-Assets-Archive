@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-NotificationUnit-Button.aca55d2ea45941020754.js
-// Retrieved at 10/13/2022, 3:00:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-NotificationUnit-Button.f0ec0666e1950b768b4d.js
+// Retrieved at 10/17/2022, 10:20:11 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-NotificationUnit-Button"], {
 		"./node_modules/lodash/map.js": function(t, e, o) {
@@ -361,15 +361,11 @@
 						const E = I.displayText,
 							N = l.commentMode;
 						let R;
-						if (g) R = await Object(H.i)(C(), i, l, E), t(Object(b.a)({
-							streamId: i,
-							level: R.body.automuteLevel
-						}));
-						else {
-							const t = e && o ? o : Object(G.e)(l, _.uploads);
-							R = St(N, _) ? await A(y(), i, null, l, t) : await L(C(), i, l, t)
-						}
-						if (R.ok) {
+						const P = g ? "" : e && o ? o : Object(G.e)(l, _.uploads);
+						if (g ? (R = await Object(H.i)(C(), i, l, E), t(Object(b.a)({
+								streamId: i,
+								level: R.body.automuteLevel
+							}))) : R = St(N, _) ? await A(y(), i, null, l, P) : await L(C(), i, l, P), R.ok) {
 							let o;
 							if (o = R.body, t(jt({
 									...o,
@@ -377,7 +373,8 @@
 										commentsPageKey: a
 									}),
 									commentsPageKey: a,
-									draftKey: S
+									draftKey: S,
+									upload: Object(G.f)(P, _.uploads)
 								})), e) {
 								const t = Object(lt.i)(_);
 								Object(c.a)(!!t)
@@ -498,7 +495,8 @@
 								parentCommentId: u,
 								commentsPageKey: p,
 								draftKey: y,
-								depth: b + 1
+								depth: b + 1,
+								upload: Object(G.f)(S, j.uploads)
 							})), e) {
 							const t = Object(lt.i)(j);
 							Object(c.a)(!!t)
@@ -542,7 +540,7 @@
 						apiContext: c
 					} = i;
 					const a = t === T.i.RICH_TEXT;
-					if (!e || "object" == typeof e && Object(Y.G)(e)) r(Dt({
+					if (!e || "object" == typeof e && Object(Y.H)(e)) r(Dt({
 						editorMode: t,
 						draftKey: o,
 						content: a ? Y.i : ""
@@ -952,7 +950,7 @@
 					const j = e === d.i.MARKDOWN,
 						x = e === d.i.RICH_TEXT,
 						C = u.k;
-					if (j && Object(l.G)(o)) return r(f({
+					if (j && Object(l.H)(o)) return r(f({
 						editorKey: t,
 						editorMode: d.i.MARKDOWN,
 						content: ""
@@ -2416,4 +2414,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-NotificationUnit-Button.aca55d2ea45941020754.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-NotificationUnit-Button.f0ec0666e1950b768b4d.js.map
