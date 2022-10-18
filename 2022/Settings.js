@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Settings.e29f653c9e3ddb326135.js
-// Retrieved at 10/18/2022, 11:00:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Settings.2a7645c8fd1fd4052c02.js
+// Retrieved at 10/18/2022, 11:40:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Settings"], {
 		"./node_modules/moment/locale sync recursive ^\\.\\/.*$": function(e, t, n) {
@@ -1715,8 +1715,8 @@
 						{
 							url: c
 						} = a,
-						l = Object(o.a)(c).get(M.b);
-					if (l && (t(Object(r.c)(Object(i.a)(c, [M.b]))), Object(U.a)(e))) {
+						l = Object(o.a)(c).get(M.d);
+					if (l && (t(Object(r.c)(Object(i.a)(c, [M.d]))), Object(U.a)(e))) {
 						const e = s.fbt._("Connected accounts", null, {
 							hk: "bdpfW"
 						});
@@ -8680,25 +8680,28 @@
 			const m = o.a.span("UserIconContainer", u.a),
 				p = o.a.wrapped(c.a, "UserIcon", u.a),
 				b = o.a.wrapped(l.default, "UserLink", u.a);
-			t.a = e => a.a.createElement(b, {
-				className: e.className,
-				to: `${s.a.redditUrl}/user/${e.username}`
-			}, a.a.createElement(i.a, {
-				subredditId: e.subredditId,
-				user: e.username,
-				sendHoverCardEvent: e.sendHoverCardEvent,
-				tooltipId: e.tooltipId
-			}, a.a.createElement(m, {
-				className: e.iconClassName,
-				style: {
-					height: e.iconSize || "32px",
-					width: e.iconSize || "32px"
-				}
-			}, a.a.createElement(p, {
-				iconUrl: e.userIcon,
-				isNSFW: !1,
-				userName: e.username
-			})), e.username))
+			t.a = e => {
+				const t = a.a.createElement(a.a.Fragment, null, a.a.createElement(m, {
+					className: e.iconClassName,
+					style: {
+						height: e.iconSize || "32px",
+						width: e.iconSize || "32px"
+					}
+				}, a.a.createElement(p, {
+					iconUrl: e.userIcon,
+					isNSFW: !1,
+					userName: e.username
+				})), e.username);
+				return a.a.createElement(b, {
+					className: e.className,
+					to: `${s.a.redditUrl}/user/${e.username}`
+				}, e.tooltipId && e.sendHoverCardEvent ? a.a.createElement(i.a, {
+					subredditId: e.subredditId,
+					user: e.username,
+					sendHoverCardEvent: e.sendHoverCardEvent,
+					tooltipId: e.tooltipId
+				}, t) : t)
+			}
 		},
 		"./src/reddit/components/Widgets/Base/index.m.less": function(e, t, n) {
 			e.exports = {
@@ -15148,4 +15151,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Settings.e29f653c9e3ddb326135.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Settings.2a7645c8fd1fd4052c02.js.map

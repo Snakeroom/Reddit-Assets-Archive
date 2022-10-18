@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostCreation.28327a5537de09aa5776.js
-// Retrieved at 10/17/2022, 5:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostCreation.e2ab29d224dc056a7005.js
+// Retrieved at 10/18/2022, 11:40:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostCreation", "ChatMessageInput~MembershipPaywallPage~RichTextEditor", "ContributorRequestButton"], {
 		"./node_modules/autosize/dist/autosize.js": function(e, t, n) {
@@ -7637,8 +7637,8 @@
 					const n = t ? `/r/${t}/search` : "/search",
 						o = `${t?"flair_name":"flair"}:"${e}"`;
 					return Object(d.a)(n, {
-						[y.p]: o,
-						[y.s]: t ? "1" : ""
+						[y.y]: o,
+						[y.B]: t ? "1" : ""
 					})
 				},
 				L = e => e.isFlairFilter ? c.a.createElement(v.default, {
@@ -36636,4 +36636,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.28327a5537de09aa5776.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.e2ab29d224dc056a7005.js.map

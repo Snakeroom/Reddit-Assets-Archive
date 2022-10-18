@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Subreddit.b8ca1104274392fe16bd.js
-// Retrieved at 10/17/2022, 5:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Subreddit.cfa3d5fbe87460440ea3.js
+// Retrieved at 10/18/2022, 11:40:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Subreddit", "Governance~ModListing~Reddit", "AchievementsActions", "reddit-components-Econ-PredictionLeaderboard-Sidebar"], {
 		"./node_modules/@reddit/i18n-tools/runtime/helpers/locale/index.js": function(e, t, n) {
@@ -3689,7 +3689,7 @@
 				} = e, L = async () => {
 					if (a ? await k() : await Object(m.p)(), l) {
 						const e = new URL(window.location.href);
-						e.searchParams.set(S.f, "1"), window.location.href = e.href
+						e.searchParams.set(S.j, "1"), window.location.href = e.href
 					} else window.location.reload()
 				};
 				switch (n) {
@@ -13890,7 +13890,7 @@
 			}
 			const C = 129,
 				I = Object(h.u)({
-					filterName: e => Object(h.X)(e)[b.e],
+					filterName: e => Object(h.X)(e)[b.i],
 					url: e => Object(h.db)(e)
 				}),
 				N = Object(a.c)({
@@ -18269,7 +18269,7 @@
 							if (u) {
 								const o = Object(l.e)(e);
 								if (!o) return;
-								Object(N.a)(re(o, Object(v.e)(s()(E && E.queryParams || {}, a.t)), n, r, E)(t))
+								Object(N.a)(re(o, Object(v.e)(s()(E && E.queryParams || {}, a.C)), n, r, E)(t))
 							}
 							break;
 						case o.Sb.PUBLIC_ACCESS_NETWORK:
@@ -20543,7 +20543,7 @@
 				inAwardListingExperiment: Ie.a,
 				isPopular: de.F
 			}), vt = e => {
-				const t = ae.C in e && e[ae.C].toUpperCase();
+				const t = ae.N in e && e[ae.N].toUpperCase();
 				if ("string" == typeof t && t in x.oc) return x.oc[t]
 			}, Et = Object(j.a)((e, t) => {
 				const {
@@ -20689,7 +20689,7 @@
 					isAllNsfwPagesEnabled: P,
 					searchResultsServerQueryId: T
 				} = l;
-				const L = t && ae.g in t ? t[ae.g].toUpperCase() : c,
+				const L = t && ae.k in t ? t[ae.k].toUpperCase() : c,
 					A = !!t.hasOwnProperty("f");
 				return {
 					currentPage: g,
@@ -22360,4 +22360,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Subreddit.b8ca1104274392fe16bd.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Subreddit.cfa3d5fbe87460440ea3.js.map

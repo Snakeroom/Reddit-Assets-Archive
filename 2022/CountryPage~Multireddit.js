@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CountryPage~Multireddit.2227581e46f4ef71b844.js
-// Retrieved at 10/17/2022, 1:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CountryPage~Multireddit.2f9e9821dfc44044b4f7.js
+// Retrieved at 10/18/2022, 11:40:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CountryPage~Multireddit"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -1209,7 +1209,7 @@
 				} = e, I = async () => {
 					if (a ? await T() : await Object(m.p)(), l) {
 						const e = new URL(window.location.href);
-						e.searchParams.set(S.f, "1"), window.location.href = e.href
+						e.searchParams.set(S.j, "1"), window.location.href = e.href
 					} else window.location.reload()
 				};
 				switch (n) {
@@ -4824,7 +4824,7 @@
 				},
 				Ve = Object(d.a)(He, Ue, qe, (e, t, n) => Object(m.a)(n, e, t)),
 				We = Object(d.a)(Ue, e => {
-					const t = p.C in e && e[p.C].toUpperCase();
+					const t = p.N in e && e[p.N].toUpperCase();
 					return "string" == typeof t && t in l.oc ? l.oc[t] : l.pc
 				}),
 				Ge = Object(d.c)({
@@ -5104,4 +5104,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CountryPage~Multireddit.2227581e46f4ef71b844.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CountryPage~Multireddit.2f9e9821dfc44044b4f7.js.map

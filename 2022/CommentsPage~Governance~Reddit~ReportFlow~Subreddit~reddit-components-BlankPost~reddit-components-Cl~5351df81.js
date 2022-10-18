@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CommentsPage~Governance~Reddit~ReportFlow~Subreddit~reddit-components-BlankPost~reddit-components-Cl~5351df81.cc4ac5321760919b3124.js
-// Retrieved at 10/17/2022, 5:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CommentsPage~Governance~Reddit~ReportFlow~Subreddit~reddit-components-BlankPost~reddit-components-Cl~5351df81.f278b2e027e8660003cb.js
+// Retrieved at 10/18/2022, 11:40:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CommentsPage~Governance~Reddit~ReportFlow~Subreddit~reddit-components-BlankPost~reddit-components-Cl~5351df81"], {
 		"./src/lib/name/index.ts": function(e, t, r) {
@@ -1442,7 +1442,7 @@
 						provider: e
 					}));
 					const f = Object(i.a)(window.location.href, {
-							[o.b]: e
+							[o.d]: e
 						}),
 						O = await ((e, t, r) => Object(a.a)(Object(u.a)(e, [l.a]), {
 							endpoint: Object(b.a)(`${e.apiUrl}/api/v1/external_account/${t}/connect.json`),
@@ -3214,7 +3214,7 @@
 					}) || Object($e.b)(Ge.c.flair)(e, {
 						subredditId: t
 					}))(e, t),
-					F = be.C in e.queryParams && e.queryParams[be.C].toUpperCase() || "",
+					F = be.N in e.queryParams && e.queryParams[be.N].toUpperCase() || "",
 					M = F in u.oc && u.oc[F];
 				if (A || N && !w && !t) {
 					if (P(g, L) && r(V.i(L)), N) {
@@ -3248,7 +3248,7 @@
 					await e
 				} else {
 					const t = {
-						...c()(e.queryParams, [...be.k, ...be.j, be.g]),
+						...c()(e.queryParams, [...be.p, ...be.o, be.k]),
 						sort: C,
 						t: Object(Ae.a)(C, M)
 					};
@@ -4074,7 +4074,7 @@
 							layout: h.e[Object(y.S)(m, {})],
 							sort: C,
 							t: p,
-							...i()(j, [...v.k, v.g])
+							...i()(j, [...v.p, v.k])
 						},
 						U = Object(q.a)(m),
 						G = U ? () => Object(x.b)(c(), Object(x.c)(m, l, {
@@ -11469,7 +11469,7 @@
 				f = r("./src/reddit/selectors/user.ts");
 			const O = e => {
 					const t = Object(m.q)(e);
-					return Boolean((null == t ? void 0 : t[o.w]) && Object(n.a)(t[o.w]))
+					return Boolean((null == t ? void 0 : t[o.F]) && Object(n.a)(t[o.F]))
 				},
 				j = e => e.onboarding.shouldSkipOnboardingState,
 				g = Object(s.a)(f.Q, f.P, O, j, e => {
@@ -12187,4 +12187,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommentsPage~Governance~Reddit~ReportFlow~Subreddit~reddit-components-BlankPost~reddit-components-Cl~5351df81.cc4ac5321760919b3124.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommentsPage~Governance~Reddit~ReportFlow~Subreddit~reddit-components-BlankPost~reddit-components-Cl~5351df81.f278b2e027e8660003cb.js.map

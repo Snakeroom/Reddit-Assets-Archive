@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Reddit.6fc31766161176a4aba9.js
-// Retrieved at 10/18/2022, 11:00:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Reddit.667c76843446a3579fc2.js
+// Retrieved at 10/18/2022, 11:40:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Reddit"], {
 		"./assets/fonts/BentonSans/font.less": function(e, t, n) {},
@@ -2403,9 +2403,9 @@
 					}, this.redirectTo = function(t) {
 						let n = arguments.length > 1 && void 0 !== arguments[1] && arguments[1];
 						const s = {
-							[S.n]: "true"
+							[S.u]: "true"
 						};
-						n && (e.props.isCommentBeforeSignUpEnabled ? e.props.isRegularOnboardingEnabled && (s[S.w] = "true") : s[S.w] = "true"), e.isSignupModalSuccessful && (s[S.x] = "true"), e.isOneTapSession() && (s[S.o] = "true"), window.location.replace(Object(d.a)(t, s))
+						n && (e.props.isCommentBeforeSignUpEnabled ? e.props.isRegularOnboardingEnabled && (s[S.F] = "true") : s[S.F] = "true"), e.isSignupModalSuccessful && (s[S.G] = "true"), e.isOneTapSession() && (s[S.v] = "true"), window.location.replace(Object(d.a)(t, s))
 					}, this.closedByUser = () => {
 						const {
 							actionSource: e,
@@ -13954,7 +13954,7 @@
 					oe = I ? Object(pn.v)(I) : o ? Object(pn.v)(o) : void 0,
 					re = O[ne],
 					ae = Object(Ma.e)({
-						...ka()(a || {}, qa.t),
+						...ka()(a || {}, qa.C),
 						q: ne
 					});
 				Object(u.useEffect)(() => {
@@ -14538,7 +14538,7 @@
 				},
 				zi = e => {
 					const t = Object(Pn.q)(e);
-					return Boolean((null == t ? void 0 : t[qa.v]) && Object(R.a)(t[qa.v]))
+					return Boolean((null == t ? void 0 : t[qa.E]) && Object(R.a)(t[qa.E]))
 				},
 				Ki = (e, t, n) => {
 					var s;
@@ -18022,7 +18022,7 @@
 					const x = Object(Le.a)(this.previousLocation, p),
 						E = y || x ? this.previousLocation : p,
 						j = y || x ? this.previousPage : t,
-						_ = !(!(j && j.meta && j.meta.name === S.Sb.SEARCH_RESULTS && j && j.queryParams) || j.queryParams[qa.s]),
+						_ = !(!(j && j.meta && j.meta.name === S.Sb.SEARCH_RESULTS && j && j.queryParams) || j.queryParams[qa.B]),
 						P = !(!j || !j.meta || j.meta.name !== S.Sb.MODERATION_PAGES),
 						k = Object(Dn.x)(j),
 						N = this.getIsPostCollection(),
@@ -19247,8 +19247,8 @@
 						currentPage: d
 					} = r.platform;
 					if (d) {
-						const e = [qa.f];
-						if (Object(Pn.j)(r) && e.push(qa.c), e.length > 0) {
+						const e = [qa.j];
+						if (Object(Pn.j)(r) && e.push(qa.e), e.length > 0) {
 							const t = Object(k.a)(d.url, e);
 							t !== d.url && s.dispatch(Object(p.c)(t))
 						}
@@ -19321,10 +19321,10 @@
 						localStorageData: d
 					}));
 					const w = Object(yh.c)(p);
-					w && (l.dispatch(le()), history.replaceState(history.state, "", Object(k.a)(window.location.href, [qa.w]))), l.dispatch(dv());
+					w && (l.dispatch(le()), history.replaceState(history.state, "", Object(k.a)(window.location.href, [qa.F]))), l.dispatch(dv());
 					const I = Object(Pn.q)(p),
-						F = null == I ? void 0 : I[qa.o];
-					F && (history.replaceState(history.state, "", Object(k.a)(window.location.href, [qa.o])), w || l.dispatch(Object(M.a)(() => Promise.resolve().then(n.bind(null, "./src/reddit/actions/changeUsername.ts")).then(e => e.openWelcomeBackModalIfNeeded))())), (null == I ? void 0 : I[qa.u]) && (l.dispatch(Object(M.a)(() => Promise.resolve().then(n.bind(null, "./src/reddit/actions/login.ts")).then(e => e.openLoginModal))()), history.replaceState(history.state, "", Object(k.a)(window.location.href, [qa.u]))), window.addEventListener("load", () => {
+						F = null == I ? void 0 : I[qa.v];
+					F && (history.replaceState(history.state, "", Object(k.a)(window.location.href, [qa.v])), w || l.dispatch(Object(M.a)(() => Promise.resolve().then(n.bind(null, "./src/reddit/actions/changeUsername.ts")).then(e => e.openWelcomeBackModalIfNeeded))())), (null == I ? void 0 : I[qa.D]) && (l.dispatch(Object(M.a)(() => Promise.resolve().then(n.bind(null, "./src/reddit/actions/login.ts")).then(e => e.openLoginModal))()), history.replaceState(history.state, "", Object(k.a)(window.location.href, [qa.D]))), window.addEventListener("load", () => {
 						const e = l.getState(),
 							{
 								currentPage: o
@@ -19357,19 +19357,19 @@
 							const i = A.a.timing.domInteractive - A.a.timing.navigationStart;
 							Object(Ka.k)(o.routeMatch, l.getState(), H.TimerType.Initial, i, o.urlParams);
 							const d = Object(P.a)(window.location.href);
-							d && d.get(qa.a) && history.replaceState(history.state, "", Object(k.a)(window.location.href, [qa.a])), Object(R.a)(d.get(qa.E)) && l.dispatch(Object(fe.f)({
+							d && d.get(qa.b) && history.replaceState(history.state, "", Object(k.a)(window.location.href, [qa.b])), Object(R.a)(d.get(qa.Q)) && l.dispatch(Object(fe.f)({
 								kind: up.b.SuccessCommunity,
 								text: s.fbt._("Email verification complete", null, {
 									hk: "bqMP6"
 								})
-							})), d.get(qa.F) && (l.dispatch(Object(X.a)(d.get(qa.F))), history.replaceState(history.state, "", Object(k.a)(window.location.href, [qa.F])));
+							})), d.get(qa.R) && (l.dispatch(Object(X.a)(d.get(qa.R))), history.replaceState(history.state, "", Object(k.a)(window.location.href, [qa.R])));
 							let u = !1;
 							const m = Object(v.T)(e);
 							(Object(xf.b)(ah.b.JustLoggedIn) || m) && (l.dispatch(Object(fe.f)({
 								text: s.fbt._("Successfully logged in!", null, {
 									hk: "2POUVB"
 								})
-							})), u = !0, Object(xf.c)(ah.b.JustLoggedIn), history.replaceState(history.state, "", Object(k.a)(window.location.href, [qa.n]))), Object(xf.b)(ah.b.JustLoggedOut) && (u = !0, Object(xf.c)(ah.b.JustLoggedOut)), ie().then(e => {
+							})), u = !0, Object(xf.c)(ah.b.JustLoggedIn), history.replaceState(history.state, "", Object(k.a)(window.location.href, [qa.u]))), Object(xf.b)(ah.b.JustLoggedOut) && (u = !0, Object(xf.c)(ah.b.JustLoggedOut)), ie().then(e => {
 								let {
 									subscribeToPermissionsChange: t
 								} = e;
@@ -23063,4 +23063,4 @@
 		["./src/reddit/index.tsx", "runtime~Reddit", "vendors~CommentsPage~ModerationPages~Reddit~reddit-components-ClassicPost~reddit-components-CompactP~d737df3e", "vendors~CommentsPage~Governance~ModListing~ModerationPages~Reddit~Subreddit", "vendors~Chat~Governance~Reddit", "vendors~Reddit", "CommentsPage~Governance~Reddit~ReportFlow~Subreddit~reddit-components-BlankPost~reddit-components-Cl~5351df81", "Governance~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compo~bd4baca2", "Reddit~RpanListingUnit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPos~93b34f9d", "ModListing~PostCreation~Reddit~StandalonePostPage~Subreddit", "Governance~ModListing~Reddit~ReportFlow~Subreddit", "Chat~Governance~Reddit", "Governance~Reddit~SubredditForkingCTA", "Governance~ModListing~Reddit", "Governance~Reddit"]
 	]
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit.6fc31766161176a4aba9.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit.667c76843446a3579fc2.js.map
