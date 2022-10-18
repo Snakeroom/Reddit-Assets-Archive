@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~Reddit.3655b34e68282576d401.js
-// Retrieved at 10/18/2022, 11:40:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~Reddit.c1f0265ec42d1740165a.js
+// Retrieved at 10/18/2022, 6:50:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~Reddit"], {
 		"./assets/fonts/NotoMono/font.less": function(e, t, n) {},
@@ -2195,7 +2195,7 @@
 			const D = e => _.d.reCaptchaEnterprise(e) && !Object(T.d)(e),
 				w = e => !!Object(S.c)(e, {
 					experimentEligibilitySelector: Object(I.d)(Object(I.b)(...a.d)),
-					experimentName: f.uf
+					experimentName: f.tf
 				}),
 				j = Object(r.b)("LOAD_RECAPTCHA_ENTERPRISE"),
 				C = () => l(e => p()([D, w, e => e.tracking.reCaptchaEnterprise.load === r.a.New], t => t(e)))(async e => {
@@ -4242,7 +4242,7 @@
 				const t = Object(E.q)(e, M.Pb);
 				return {
 					experimentState: e,
-					isActive: (null == t ? void 0 : t.variant) === M.Rd,
+					isActive: (null == t ? void 0 : t.variant) === M.Qd,
 					isBucketed: !!(null == t ? void 0 : t.variant)
 				}
 			}
@@ -7548,7 +7548,7 @@
 						case U.MORE_POSTS_LOADED:
 						case T.c:
 						case T.d:
-						case S.o:
+						case S.n:
 						case V.s: {
 							const r = (null === (n = t.payload) || void 0 === n ? void 0 : n.posts) || [],
 								s = _()(Object.values(r), "postId"),
@@ -15540,7 +15540,7 @@
 					case D.g:
 					case be.b:
 					case be.f:
-					case S.o: {
+					case S.n: {
 						const {
 							governance: n
 						} = t.payload;
@@ -15578,8 +15578,8 @@
 							...s
 						}
 					}
-					case S.q:
-					case S.p: {
+					case S.p:
+					case S.o: {
 						const {
 							pollId: n,
 							prediction: {
@@ -16418,7 +16418,7 @@
 						case D.g:
 						case be.b:
 						case be.f:
-						case S.o: {
+						case S.n: {
 							const {
 								governance: n,
 								posts: r
@@ -16541,7 +16541,7 @@
 					case U.MORE_POSTS_LOADED:
 					case T.c:
 					case T.d:
-					case S.o: {
+					case S.n: {
 						const n = Object(bp.h)(t.payload.meta);
 						return {
 							...e,
@@ -16895,7 +16895,7 @@
 							}
 						}
 					}
-					case S.t: {
+					case S.s: {
 						const {
 							tournamentPostId: n,
 							predictionId: r,
@@ -23593,7 +23593,7 @@
 							coins: e.coins + r
 						} : e
 					}
-					case S.q: {
+					case S.p: {
 						const {
 							price: n
 						} = t.payload;
@@ -25705,7 +25705,7 @@
 					if (!u(e)) return;
 					const t = Object(o.c)(e, {
 						experimentEligibilitySelector: l,
-						experimentName: a.le,
+						experimentName: a.ke,
 						expEventOverride: !1
 					});
 					return null == t ? void 0 : t.toLocaleLowerCase()
@@ -25728,9 +25728,9 @@
 				},
 				b = e => !!p(e) && Object(o.c)(e, {
 					experimentEligibilitySelector: u,
-					experimentName: a.me,
+					experimentName: a.le,
 					expEventOverride: !1
-				}) !== a.ne.Readonly
+				}) !== a.me.Readonly
 		},
 		"./src/reddit/selectors/experiments/serpTabPreserved.ts": function(e, t, n) {
 			"use strict";
@@ -25744,7 +25744,7 @@
 				const t = Object(s.q)(e, r.Jc);
 				return {
 					experimentState: e,
-					isActive: (null == t ? void 0 : t.variant) === r.Rd,
+					isActive: (null == t ? void 0 : t.variant) === r.Qd,
 					isBucketed: !!(null == t ? void 0 : t.variant)
 				}
 			}
@@ -25894,4 +25894,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit.3655b34e68282576d401.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit.c1f0265ec42d1740165a.js.map

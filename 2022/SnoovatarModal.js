@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SnoovatarModal.ae038a5b52db0bac1b4d.js
-// Retrieved at 10/17/2022, 10:40:10 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SnoovatarModal.a415f09bd634c0b7df54.js
+// Retrieved at 10/18/2022, 6:50:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SnoovatarModal"], {
 		"./src/reddit/components/AvatarBuilder/index.m.less": function(e, t, a) {
@@ -71,7 +71,7 @@
 						activeMeSubpage: C || void 0,
 						activeDetails: k || void 0,
 						shopTabState: T || void 0
-					}), [k, y, C, T]), R = Object(o.e)(e => !Object(m.Q)(e) && Object(p.C)(e));
+					}), [k, y, C, T]), R = Object(o.e)(e => !Object(m.Q)(e) && Object(p.B)(e));
 					if (!E || !x) return null;
 					if (R) return s.a.createElement("div", {
 						className: Object(c.a)(O.a.container, {
@@ -81,7 +81,7 @@
 						openLogin: S,
 						fancyBackground: !0
 					}));
-					const I = {
+					const B = {
 						...A,
 						config: {
 							...A.config,
@@ -96,10 +96,10 @@
 							[O.a.snoovatarModalBuilderV2]: t,
 							[O.a.containerExp]: h
 						})
-					}, M ? s.a.createElement(n.a, f({}, I, {
+					}, M ? s.a.createElement(n.a, f({}, B, {
 						navState: N
 					}), s.a.createElement(n.b, null)) : s.a.createElement(j, f({}, a, {
-						appWrapperProps: I,
+						appWrapperProps: B,
 						navState: N
 					})))
 				},
@@ -293,4 +293,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SnoovatarModal.ae038a5b52db0bac1b4d.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SnoovatarModal.a415f09bd634c0b7df54.js.map

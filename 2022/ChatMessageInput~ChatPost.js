@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ChatMessageInput~ChatPost.dcd42da5ec75ea7d6a9d.js
-// Retrieved at 10/17/2022, 10:40:10 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ChatMessageInput~ChatPost.68bfcd27025b31170f22.js
+// Retrieved at 10/18/2022, 6:50:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ChatMessageInput~ChatPost"], {
 		"./node_modules/lodash/_baseReduce.js": function(e, t) {
@@ -89,7 +89,7 @@
 					defaultImage: t,
 					userId: n
 				} = e;
-				const r = Object(c.e)(h.t),
+				const r = Object(c.e)(h.s),
 					{
 						processingAvatarImageUrl: a
 					} = s.a;
@@ -979,12 +979,12 @@
 					e.persist(), R(e)
 				}
 
-				function P(e) {
+				function H(e) {
 					var t;
 					(a || F(e), c) || (t = e.timeStamp, S(Object(u.A)(p, t)))
 				}
 
-				function H(e) {
+				function P(e) {
 					S(Object(u.q)(p, e.timeStamp))
 				}
 
@@ -1003,7 +1003,7 @@
 				}
 
 				function A(e) {
-					s || P(e), a || F(e), S(Object(u.C)(p))
+					s || H(e), a || F(e), S(Object(u.C)(p))
 				}
 
 				function U() {
@@ -1019,8 +1019,8 @@
 						key: p,
 						loop: !0,
 						onBufferingChange: M,
-						onLoadStart: H,
-						onLoadedData: P,
+						onLoadStart: P,
+						onLoadedData: H,
 						onLoadedMetadata: F,
 						onPause: B,
 						onPlaying: A,
@@ -1773,9 +1773,9 @@
 			})), n.d(t, "f", (function() {
 				return R
 			})), n.d(t, "h", (function() {
-				return P
-			})), n.d(t, "g", (function() {
 				return H
+			})), n.d(t, "g", (function() {
+				return P
 			})), n.d(t, "i", (function() {
 				return F
 			})), n.d(t, "e", (function() {
@@ -1937,12 +1937,12 @@
 						case m.p:
 							return R(e, t, n, s, r);
 						case m.v:
-							return H(e, t, n, s, r);
+							return P(e, t, n, s, r);
 						case m.A:
-							return P(e, t, n, s, r)
+							return H(e, t, n, s, r)
 					}
 				},
-				P = (e, t, n, s, r) => {
+				H = (e, t, n, s, r) => {
 					const a = e.c,
 						o = e.h,
 						d = a.length,
@@ -1984,7 +1984,7 @@
 						key: s
 					}, i.a.createElement("thead", null, i.a.createElement(c.t, null, u)), i.a.createElement("tbody", null, m))
 				},
-				H = (e, t, n, s, r) => {
+				P = (e, t, n, s, r) => {
 					if (!e.c || !e.c.length) return (e => i.a.createElement(c.j, {
 						key: e
 					}, i.a.createElement("br", null)))(s);
@@ -2224,12 +2224,12 @@
 						rtJsonElementProps: o
 					});
 					switch (a) {
-						case b.Vf.SmIcon:
+						case b.Uf.SmIcon:
 							return r.a.createElement(h, {
 								subredditName: s,
 								rtJsonElementProps: o
 							});
-						case b.Vf.SmIconHc:
+						case b.Uf.SmIconHc:
 							return r.a.createElement(h, {
 								subredditName: s,
 								isHoverable: !0,
@@ -2676,12 +2676,12 @@
 				c = e => {
 					return Object(a.c)(e, {
 						experimentEligibilitySelector: i,
-						experimentName: s.Pf
+						experimentName: s.Of
 					}) || ""
 				},
 				d = e => {
 					const t = c(e);
-					return t === s.Vf.SmIcon || t === s.Vf.SmIconHc
+					return t === s.Uf.SmIcon || t === s.Uf.SmIconHc
 				},
 				l = (e, t) => {
 					let {
@@ -2707,4 +2707,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatMessageInput~ChatPost.dcd42da5ec75ea7d6a9d.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatMessageInput~ChatPost.68bfcd27025b31170f22.js.map

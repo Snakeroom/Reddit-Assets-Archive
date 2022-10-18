@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditWiki.8fb340826f28174243cf.js
-// Retrieved at 10/18/2022, 11:40:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditWiki.b294f20d4a0903c47230.js
+// Retrieved at 10/18/2022, 6:50:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditWiki", "AchievementsActions"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, r) {
@@ -10496,12 +10496,12 @@
 						rtJsonElementProps: a
 					});
 					switch (i) {
-						case h.Vf.SmIcon:
+						case h.Uf.SmIcon:
 							return s.a.createElement(p, {
 								subredditName: n,
 								rtJsonElementProps: a
 							});
-						case h.Vf.SmIconHc:
+						case h.Uf.SmIconHc:
 							return s.a.createElement(p, {
 								subredditName: n,
 								isHoverable: !0,
@@ -11367,7 +11367,7 @@
 						} = t;
 						return Object(Be.c)(e, r)
 					},
-					isInNewModuleNCPV3Experiment: e => Object(De.a)(e) === Pe.Ve.NewModule,
+					isInNewModuleNCPV3Experiment: e => Object(De.a)(e) === Pe.Ue.NewModule,
 					showGovernance: Te.d.spPoints,
 					showLeaderboard: Te.d.spLeaderboard,
 					showPredictionsLeaderboard: (e, t) => {
@@ -13062,44 +13062,40 @@
 			"use strict";
 			r.d(t, "a", (function() {
 				return a
-			})), r.d(t, "p", (function() {
-				return o
 			})), r.d(t, "q", (function() {
-				return d
-			})), r.d(t, "s", (function() {
-				return c
+				return o
 			})), r.d(t, "n", (function() {
-				return l
+				return d
 			})), r.d(t, "o", (function() {
-				return u
+				return c
 			})), r.d(t, "m", (function() {
-				return m
+				return l
 			})), r.d(t, "b", (function() {
-				return p
+				return u
 			})), r.d(t, "g", (function() {
-				return b
+				return m
 			})), r.d(t, "l", (function() {
-				return h
-			})), r.d(t, "t", (function() {
-				return f
-			})), r.d(t, "e", (function() {
-				return g
-			})), r.d(t, "j", (function() {
-				return x
-			})), r.d(t, "d", (function() {
-				return v
-			})), r.d(t, "h", (function() {
-				return _
-			})), r.d(t, "c", (function() {
-				return y
-			})), r.d(t, "k", (function() {
-				return k
-			})), r.d(t, "i", (function() {
-				return w
+				return p
 			})), r.d(t, "r", (function() {
-				return O
+				return b
+			})), r.d(t, "e", (function() {
+				return h
+			})), r.d(t, "j", (function() {
+				return f
+			})), r.d(t, "d", (function() {
+				return g
+			})), r.d(t, "h", (function() {
+				return x
+			})), r.d(t, "c", (function() {
+				return v
+			})), r.d(t, "k", (function() {
+				return _
+			})), r.d(t, "i", (function() {
+				return y
+			})), r.d(t, "p", (function() {
+				return k
 			})), r.d(t, "f", (function() {
-				return E
+				return w
 			}));
 			var n = r("./src/reddit/models/Prediction/index.ts"),
 				s = r("./src/reddit/selectors/telemetry.ts");
@@ -13108,22 +13104,10 @@
 				o = e => ({
 					...Object(s.o)(e),
 					source: i,
-					action: "select",
-					noun: "poll_option"
-				}),
-				d = e => ({
-					...Object(s.o)(e),
-					source: i,
-					action: "select",
-					noun: "prediction_option"
-				}),
-				c = e => ({
-					...Object(s.o)(e),
-					source: i,
 					action: "view",
 					noun: "predict_option_modal"
 				}),
-				l = e => {
+				d = e => {
 					let {
 						pollId: t,
 						selectedNumberCoins: r,
@@ -13140,7 +13124,7 @@
 						}
 					})
 				},
-				u = e => {
+				c = e => {
 					let {
 						pollId: t,
 						selectedNumberTokens: r
@@ -13153,7 +13137,7 @@
 						poll: Object(s.J)(e, t, !1, void 0, void 0, r)
 					})
 				},
-				m = e => {
+				l = e => {
 					let {
 						pollId: t,
 						currency: r,
@@ -13171,13 +13155,13 @@
 						}
 					}
 				},
-				p = e => ({
+				u = e => ({
 					...Object(s.o)(e),
 					source: i,
 					action: "click",
 					noun: "add_coins"
 				}),
-				b = e => {
+				m = e => {
 					let {
 						targetUserId: t
 					} = e;
@@ -13191,7 +13175,7 @@
 						}
 					})
 				},
-				h = e => {
+				p = e => {
 					let {
 						pageType: t
 					} = e;
@@ -13205,7 +13189,7 @@
 						}
 					})
 				},
-				f = () => e => ({
+				b = () => e => ({
 					...Object(s.o)(e),
 					source: "global",
 					action: "view",
@@ -13214,19 +13198,19 @@
 						pageType: "mod_tool_predict"
 					}
 				}),
-				g = () => e => ({
+				h = () => e => ({
 					...Object(s.o)(e),
 					source: "mod_tool_predict",
 					action: "click",
 					noun: "end_tournament"
 				}),
-				x = () => e => ({
+				f = () => e => ({
 					...Object(s.o)(e),
 					source: "mod_tool_predict",
 					action: "click",
 					noun: "rename_tournament"
 				}),
-				v = e => t => ({
+				g = e => t => ({
 					...Object(s.o)(t),
 					source: "mod_tool_predict",
 					action: "click",
@@ -13240,38 +13224,38 @@
 					},
 					subreddit: Object(s.jb)(t)
 				}),
-				_ = () => e => ({
+				x = () => e => ({
 					...Object(s.o)(e),
 					source: a,
 					action: "click",
 					noun: "next"
 				}),
-				y = () => e => ({
+				v = () => e => ({
 					...Object(s.o)(e),
 					source: a,
 					action: "click",
 					noun: "add_more"
 				}),
-				k = () => e => ({
+				_ = () => e => ({
 					...Object(s.o)(e),
 					source: a,
 					action: "click",
 					noun: "start_tournament"
 				}),
-				w = () => e => ({
+				y = () => e => ({
 					...Object(s.o)(e),
 					source: "menu_links_bar",
 					action: "click",
 					noun: "predictions_tab"
 				}),
-				O = () => e => ({
+				k = () => e => ({
 					...Object(s.o)(e),
 					source: "predictions_tab",
 					action: "view",
 					noun: "predictions_how_it_works",
 					subreddit: Object(s.jb)(e)
 				}),
-				E = () => e => ({
+				w = () => e => ({
 					...Object(s.o)(e),
 					source: "predictions_how_it_works",
 					action: "click",
@@ -14182,8 +14166,8 @@
 				d = e => a.includes(e),
 				c = Object(n.a)(e => Object(i.c)(e, {
 					experimentEligibilitySelector: i.a,
-					experimentName: s.oe
-				}), e => e === s.Rd)
+					experimentName: s.ne
+				}), e => e === s.Qd)
 		},
 		"./src/reddit/selectors/subredditMention.ts": function(e, t, r) {
 			"use strict";
@@ -14208,12 +14192,12 @@
 				d = e => {
 					return Object(i.c)(e, {
 						experimentEligibilitySelector: o,
-						experimentName: n.Pf
+						experimentName: n.Of
 					}) || ""
 				},
 				c = e => {
 					const t = d(e);
-					return t === n.Vf.SmIcon || t === n.Vf.SmIconHc
+					return t === n.Uf.SmIcon || t === n.Uf.SmIconHc
 				},
 				l = (e, t) => {
 					let {
@@ -14418,4 +14402,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditWiki.8fb340826f28174243cf.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditWiki.b294f20d4a0903c47230.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/GovernanceReleaseNotesModal.1242c6f9f78a12f771d2.js
-// Retrieved at 10/17/2022, 10:40:10 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/GovernanceReleaseNotesModal.66023c39eb058e844f34.js
+// Retrieved at 10/18/2022, 6:50:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["GovernanceReleaseNotesModal"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -2803,18 +2803,18 @@
 						f: n,
 						t: r
 					} = e, i = [];
-					if (!n) return G(0, r, t);
+					if (!n) return V(0, r, t);
 					const o = Object(s.a)(r);
 					let a = 0,
 						d = 0;
 					const c = n.length;
 					for (; a < c; a++) {
 						const [e, t, s] = n[a], c = t + s, l = o[t], u = o[c] - l;
-						l > d && i.push(G(0, r.substr(d, l - d), `between${a}`)), i.push(G(e, r.substr(l, u), a)), d = l + u
+						l > d && i.push(V(0, r.substr(d, l - d), `between${a}`)), i.push(V(e, r.substr(l, u), a)), d = l + u
 					}
-					return d < r.length && i.push(G(0, r.substr(d), `remaining${a}`)), i
+					return d < r.length && i.push(V(0, r.substr(d), `remaining${a}`)), i
 				},
-				V = {
+				G = {
 					[m.j.monospace]: d.h,
 					[m.j.bold]: d.b,
 					[m.j.italic]: d.f,
@@ -2823,9 +2823,9 @@
 					[m.j.subscript]: d.l,
 					[m.j.superscript]: d.m
 				},
-				G = (e, t, n) => {
+				V = (e, t, n) => {
 					let s = t;
-					return s = i()(V, (t, s, r) => e & parseInt(r, 10) ? a.a.createElement(s, {
+					return s = i()(G, (t, s, r) => e & parseInt(r, 10) ? a.a.createElement(s, {
 						key: n
 					}, t) : t, s)
 				},
@@ -2960,12 +2960,12 @@
 						rtJsonElementProps: o
 					});
 					switch (i) {
-						case b.Vf.SmIcon:
+						case b.Uf.SmIcon:
 							return r.a.createElement(h, {
 								subredditName: s,
 								rtJsonElementProps: o
 							});
-						case b.Vf.SmIconHc:
+						case b.Uf.SmIconHc:
 							return r.a.createElement(h, {
 								subredditName: s,
 								isHoverable: !0,
@@ -3390,12 +3390,12 @@
 				d = e => {
 					return Object(i.c)(e, {
 						experimentEligibilitySelector: a,
-						experimentName: s.Pf
+						experimentName: s.Of
 					}) || ""
 				},
 				c = e => {
 					const t = d(e);
-					return t === s.Vf.SmIcon || t === s.Vf.SmIconHc
+					return t === s.Uf.SmIcon || t === s.Uf.SmIconHc
 				},
 				l = (e, t) => {
 					let {
@@ -3430,4 +3430,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/GovernanceReleaseNotesModal.1242c6f9f78a12f771d2.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/GovernanceReleaseNotesModal.66023c39eb058e844f34.js.map

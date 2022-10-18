@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-SubredditContent-PredictionsContent.43c062e6abf8a4549408.js
-// Retrieved at 10/3/2022, 2:20:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-SubredditContent-PredictionsContent.1dc1eb43b39bb0778511.js
+// Retrieved at 10/18/2022, 6:50:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-SubredditContent-PredictionsContent"], {
 		"./src/reddit/components/Econ/Prediction/hooks/useTournamentsQuery.ts": function(e, t, n) {
@@ -11,18 +11,18 @@
 				r = n.n(o),
 				c = n("./node_modules/react-redux/es/index.js"),
 				s = n("./src/reddit/actions/economics/predictions/index.ts"),
-				i = n("./src/reddit/selectors/features/predictions/tournaments/index.ts"),
-				a = n("./src/reddit/selectors/subreddit.ts");
+				a = n("./src/reddit/selectors/features/predictions/tournaments/index.ts"),
+				i = n("./src/reddit/selectors/subreddit.ts");
 
 			function d(e) {
 				const t = Object(c.d)(),
-					n = Object(c.e)(t => Object(a.X)(t, {
+					n = Object(c.e)(t => Object(i.X)(t, {
 						subredditId: e
 					})),
-					o = Object(c.e)(t => Object(i.i)(t, {
+					o = Object(c.e)(t => Object(a.i)(t, {
 						subredditId: e
 					})),
-					d = Object(c.e)(t => Object(i.k)(t, {
+					d = Object(c.e)(t => Object(a.k)(t, {
 						subredditId: e
 					})),
 					l = r.a.useCallback(() => {
@@ -51,20 +51,20 @@
 				r = n.n(o),
 				c = n("./src/higherOrderComponents/asModal/index.tsx"),
 				s = n("./src/reddit/components/ModalStyledComponents/index.tsx"),
-				i = n("./src/reddit/constants/keycodes.ts"),
-				a = n("./src/reddit/controls/Button/index.tsx"),
+				a = n("./src/reddit/constants/keycodes.ts"),
+				i = n("./src/reddit/controls/Button/index.tsx"),
 				d = n("./src/reddit/controls/LoadingIcon/index.tsx"),
 				l = n("./src/reddit/controls/TextButton/index.tsx"),
 				u = n("./src/reddit/layout/twoCol/ExpandLeft/index.tsx"),
 				m = n("./src/reddit/components/PostCreationForm/Prompt/PromptModal.m.less"),
 				b = n.n(m),
 				p = n("./src/lib/lessComponent.tsx");
-			const h = p.a.wrapped(a.l, "PrimaryButton", b.a),
+			const h = p.a.wrapped(i.l, "PrimaryButton", b.a),
 				f = p.a.wrapped(s.p, "ModalText", b.a);
 			class _ extends r.a.PureComponent {
 				constructor() {
 					super(...arguments), this.handleEscapeKey = e => {
-						e.keyCode === i.a.Escape && this.props.onClose()
+						e.keyCode === a.a.Escape && this.props.onClose()
 					}
 				}
 				componentDidMount() {
@@ -121,8 +121,8 @@
 				r = n("./node_modules/react/index.js"),
 				c = n.n(r),
 				s = n("./node_modules/react-redux/es/index.js"),
-				i = n("./src/lib/classNames/index.ts"),
-				a = n("./src/reddit/actions/economics/predictions/index.ts"),
+				a = n("./src/lib/classNames/index.ts"),
+				i = n("./src/reddit/actions/economics/predictions/index.ts"),
 				d = n("./src/reddit/actions/toaster.ts"),
 				l = n("./src/reddit/components/Econ/Prediction/hooks/useTournamentsQuery.ts"),
 				u = n("./src/reddit/components/Settings/shared/Card/index.m.less"),
@@ -143,7 +143,7 @@
 						...n
 					} = e;
 					return c.a.createElement("div", b({
-						className: Object(i.a)(m.a.card, t)
+						className: Object(a.a)(m.a.card, t)
 					}, n))
 				},
 				h = e => {
@@ -152,7 +152,7 @@
 						...n
 					} = e;
 					return c.a.createElement("h3", b({
-						className: Object(i.a)(m.a.title, t)
+						className: Object(a.a)(m.a.title, t)
 					}, n))
 				};
 			var f = n("./src/reddit/controls/Button/index.tsx"),
@@ -198,7 +198,7 @@
 					subredditId: t
 				} = e;
 				const n = Object(x.a)(),
-					[r, i] = function(e, t) {
+					[r, a] = function(e, t) {
 						const n = Object(s.d)(),
 							o = Object(s.e)(t => Object(v.Z)(t, e)),
 							r = o ? Boolean(o[t]) : void 0;
@@ -215,7 +215,7 @@
 				})), c.a.createElement(y.p, {
 					on: r,
 					onClick: () => {
-						n(Object(j.d)(!r)), i()
+						n(Object(j.d)(!r)), a()
 					},
 					label: o.fbt._("Allow Approved Users to Post / Resolve Predictions", null, {
 						hk: "49inYc"
@@ -250,7 +250,7 @@
 						subredditId: t.id
 					}));
 				Object(r.useEffect)(() => {
-					u(Object(j.t)())
+					u(Object(j.r)())
 				}, [u]), Object(r.useEffect)(() => {
 					B && (b(B.name), T(A - B.name.length))
 				}, [B]);
@@ -287,7 +287,7 @@
 						hk: "bN9XA"
 					})
 				}), c.a.createElement("div", {
-					className: Object(i.a)(w.a.remainingCharacters, {
+					className: Object(a.a)(w.a.remainingCharacters, {
 						[w.a.maxCharacters]: (null == m ? void 0 : m.length) === A
 					})
 				}, B && B.name !== m && null !== N ? o.fbt._({
@@ -302,7 +302,7 @@
 						if (!B || !m) return null;
 						u(Object(j.j)()), E(!0);
 						try {
-							await n(Object(a.w)(B.tournamentId, t.id, m))
+							await n(Object(i.w)(B.tournamentId, t.id, m))
 						} catch (e) {
 							n(Object(d.f)({
 								kind: O.b.Error,
@@ -340,7 +340,7 @@
 						if (!B || !L) return null;
 						C(!0);
 						try {
-							await n(Object(a.p)(B.tournamentId))
+							await n(Object(i.p)(B.tournamentId))
 						} catch (e) {
 							n(Object(d.f)({
 								kind: O.b.Error,
@@ -360,68 +360,52 @@
 			"use strict";
 			n.d(t, "a", (function() {
 				return s
-			})), n.d(t, "p", (function() {
-				return i
 			})), n.d(t, "q", (function() {
 				return a
-			})), n.d(t, "s", (function() {
-				return d
 			})), n.d(t, "n", (function() {
-				return l
+				return i
 			})), n.d(t, "o", (function() {
-				return u
+				return d
 			})), n.d(t, "m", (function() {
-				return m
+				return l
 			})), n.d(t, "b", (function() {
-				return b
+				return u
 			})), n.d(t, "g", (function() {
-				return p
+				return m
 			})), n.d(t, "l", (function() {
-				return h
-			})), n.d(t, "t", (function() {
-				return f
-			})), n.d(t, "e", (function() {
-				return _
-			})), n.d(t, "j", (function() {
-				return j
-			})), n.d(t, "d", (function() {
-				return x
-			})), n.d(t, "h", (function() {
-				return O
-			})), n.d(t, "c", (function() {
-				return k
-			})), n.d(t, "k", (function() {
-				return E
-			})), n.d(t, "i", (function() {
-				return g
+				return b
 			})), n.d(t, "r", (function() {
-				return y
+				return p
+			})), n.d(t, "e", (function() {
+				return h
+			})), n.d(t, "j", (function() {
+				return f
+			})), n.d(t, "d", (function() {
+				return _
+			})), n.d(t, "h", (function() {
+				return j
+			})), n.d(t, "c", (function() {
+				return x
+			})), n.d(t, "k", (function() {
+				return O
+			})), n.d(t, "i", (function() {
+				return k
+			})), n.d(t, "p", (function() {
+				return E
 			})), n.d(t, "f", (function() {
-				return C
+				return g
 			}));
 			var o = n("./src/reddit/models/Prediction/index.ts"),
 				r = n("./src/reddit/selectors/telemetry.ts");
 			const c = "poll",
 				s = "predictions",
-				i = e => ({
-					...Object(r.o)(e),
-					source: c,
-					action: "select",
-					noun: "poll_option"
-				}),
 				a = e => ({
-					...Object(r.o)(e),
-					source: c,
-					action: "select",
-					noun: "prediction_option"
-				}),
-				d = e => ({
 					...Object(r.o)(e),
 					source: c,
 					action: "view",
 					noun: "predict_option_modal"
 				}),
-				l = e => {
+				i = e => {
 					let {
 						pollId: t,
 						selectedNumberCoins: n,
@@ -438,7 +422,7 @@
 						}
 					})
 				},
-				u = e => {
+				d = e => {
 					let {
 						pollId: t,
 						selectedNumberTokens: n
@@ -451,31 +435,31 @@
 						poll: Object(r.J)(e, t, !1, void 0, void 0, n)
 					})
 				},
-				m = e => {
+				l = e => {
 					let {
 						pollId: t,
 						currency: n,
 						amount: s
 					} = e;
 					return e => {
-						const i = n === o.a.Coins ? s : void 0,
-							a = n === o.a.Tokens ? s : void 0;
+						const a = n === o.a.Coins ? s : void 0,
+							i = n === o.a.Tokens ? s : void 0;
 						return {
 							...Object(r.o)(e),
 							source: c,
 							action: "close",
 							noun: "prediction_modal",
-							poll: Object(r.J)(e, t, !1, i, a)
+							poll: Object(r.J)(e, t, !1, a, i)
 						}
 					}
 				},
-				b = e => ({
+				u = e => ({
 					...Object(r.o)(e),
 					source: c,
 					action: "click",
 					noun: "add_coins"
 				}),
-				p = e => {
+				m = e => {
 					let {
 						targetUserId: t
 					} = e;
@@ -489,7 +473,7 @@
 						}
 					})
 				},
-				h = e => {
+				b = e => {
 					let {
 						pageType: t
 					} = e;
@@ -503,7 +487,7 @@
 						}
 					})
 				},
-				f = () => e => ({
+				p = () => e => ({
 					...Object(r.o)(e),
 					source: "global",
 					action: "view",
@@ -512,19 +496,19 @@
 						pageType: "mod_tool_predict"
 					}
 				}),
-				_ = () => e => ({
+				h = () => e => ({
 					...Object(r.o)(e),
 					source: "mod_tool_predict",
 					action: "click",
 					noun: "end_tournament"
 				}),
-				j = () => e => ({
+				f = () => e => ({
 					...Object(r.o)(e),
 					source: "mod_tool_predict",
 					action: "click",
 					noun: "rename_tournament"
 				}),
-				x = e => t => ({
+				_ = e => t => ({
 					...Object(r.o)(t),
 					source: "mod_tool_predict",
 					action: "click",
@@ -538,38 +522,38 @@
 					},
 					subreddit: Object(r.jb)(t)
 				}),
-				O = () => e => ({
+				j = () => e => ({
 					...Object(r.o)(e),
 					source: s,
 					action: "click",
 					noun: "next"
 				}),
-				k = () => e => ({
+				x = () => e => ({
 					...Object(r.o)(e),
 					source: s,
 					action: "click",
 					noun: "add_more"
 				}),
-				E = () => e => ({
+				O = () => e => ({
 					...Object(r.o)(e),
 					source: s,
 					action: "click",
 					noun: "start_tournament"
 				}),
-				g = () => e => ({
+				k = () => e => ({
 					...Object(r.o)(e),
 					source: "menu_links_bar",
 					action: "click",
 					noun: "predictions_tab"
 				}),
-				y = () => e => ({
+				E = () => e => ({
 					...Object(r.o)(e),
 					source: "predictions_tab",
 					action: "view",
 					noun: "predictions_how_it_works",
 					subreddit: Object(r.jb)(e)
 				}),
-				C = () => e => ({
+				g = () => e => ({
 					...Object(r.o)(e),
 					source: "predictions_how_it_works",
 					action: "click",
@@ -579,4 +563,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-SubredditContent-PredictionsContent.43c062e6abf8a4549408.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-SubredditContent-PredictionsContent.1dc1eb43b39bb0778511.js.map

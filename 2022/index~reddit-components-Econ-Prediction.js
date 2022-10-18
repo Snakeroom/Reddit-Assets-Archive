@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/index~reddit-components-Econ-Prediction.bb9e030e6af52040dc5b.js
-// Retrieved at 10/13/2022, 1:10:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/index~reddit-components-Econ-Prediction.5aa0b8bb4ec0e56d8aae.js
+// Retrieved at 10/18/2022, 6:50:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["index~reddit-components-Econ-Prediction"], {
 		"./node_modules/lodash/_LazyWrapper.js": function(e, t, n) {
@@ -1879,7 +1879,7 @@
 					Z = L || W,
 					q = Z || T;
 				Object(a.useEffect)(() => {
-					I || (k(h.s), A(!0))
+					I || (k(h.q), A(!0))
 				}, [I, k]);
 				const $ = Object(a.useCallback)(() => {
 					k(Object(h.m)({
@@ -2223,7 +2223,7 @@
 					let {
 						className: t
 					} = e;
-					return Object(s.e)(r.o) ? o.a.createElement(i, {
+					return Object(s.e)(r.n) ? o.a.createElement(i, {
 						className: t
 					}) : o.a.createElement(c, {
 						className: t
@@ -2839,44 +2839,40 @@
 			"use strict";
 			n.d(t, "a", (function() {
 				return r
-			})), n.d(t, "p", (function() {
-				return c
 			})), n.d(t, "q", (function() {
-				return d
-			})), n.d(t, "s", (function() {
-				return i
+				return c
 			})), n.d(t, "n", (function() {
-				return l
+				return d
 			})), n.d(t, "o", (function() {
-				return u
+				return i
 			})), n.d(t, "m", (function() {
-				return m
+				return l
 			})), n.d(t, "b", (function() {
-				return p
+				return u
 			})), n.d(t, "g", (function() {
-				return _
+				return m
 			})), n.d(t, "l", (function() {
-				return h
-			})), n.d(t, "t", (function() {
-				return f
-			})), n.d(t, "e", (function() {
-				return b
-			})), n.d(t, "j", (function() {
-				return E
-			})), n.d(t, "d", (function() {
-				return g
-			})), n.d(t, "h", (function() {
-				return O
-			})), n.d(t, "c", (function() {
-				return j
-			})), n.d(t, "k", (function() {
-				return v
-			})), n.d(t, "i", (function() {
-				return C
+				return p
 			})), n.d(t, "r", (function() {
-				return x
+				return _
+			})), n.d(t, "e", (function() {
+				return h
+			})), n.d(t, "j", (function() {
+				return f
+			})), n.d(t, "d", (function() {
+				return b
+			})), n.d(t, "h", (function() {
+				return E
+			})), n.d(t, "c", (function() {
+				return g
+			})), n.d(t, "k", (function() {
+				return O
+			})), n.d(t, "i", (function() {
+				return j
+			})), n.d(t, "p", (function() {
+				return v
 			})), n.d(t, "f", (function() {
-				return N
+				return C
 			}));
 			var a = n("./src/reddit/models/Prediction/index.ts"),
 				o = n("./src/reddit/selectors/telemetry.ts");
@@ -2885,22 +2881,10 @@
 				c = e => ({
 					...Object(o.o)(e),
 					source: s,
-					action: "select",
-					noun: "poll_option"
-				}),
-				d = e => ({
-					...Object(o.o)(e),
-					source: s,
-					action: "select",
-					noun: "prediction_option"
-				}),
-				i = e => ({
-					...Object(o.o)(e),
-					source: s,
 					action: "view",
 					noun: "predict_option_modal"
 				}),
-				l = e => {
+				d = e => {
 					let {
 						pollId: t,
 						selectedNumberCoins: n,
@@ -2917,7 +2901,7 @@
 						}
 					})
 				},
-				u = e => {
+				i = e => {
 					let {
 						pollId: t,
 						selectedNumberTokens: n
@@ -2930,7 +2914,7 @@
 						poll: Object(o.J)(e, t, !1, void 0, void 0, n)
 					})
 				},
-				m = e => {
+				l = e => {
 					let {
 						pollId: t,
 						currency: n,
@@ -2948,13 +2932,13 @@
 						}
 					}
 				},
-				p = e => ({
+				u = e => ({
 					...Object(o.o)(e),
 					source: s,
 					action: "click",
 					noun: "add_coins"
 				}),
-				_ = e => {
+				m = e => {
 					let {
 						targetUserId: t
 					} = e;
@@ -2968,7 +2952,7 @@
 						}
 					})
 				},
-				h = e => {
+				p = e => {
 					let {
 						pageType: t
 					} = e;
@@ -2982,7 +2966,7 @@
 						}
 					})
 				},
-				f = () => e => ({
+				_ = () => e => ({
 					...Object(o.o)(e),
 					source: "global",
 					action: "view",
@@ -2991,19 +2975,19 @@
 						pageType: "mod_tool_predict"
 					}
 				}),
-				b = () => e => ({
+				h = () => e => ({
 					...Object(o.o)(e),
 					source: "mod_tool_predict",
 					action: "click",
 					noun: "end_tournament"
 				}),
-				E = () => e => ({
+				f = () => e => ({
 					...Object(o.o)(e),
 					source: "mod_tool_predict",
 					action: "click",
 					noun: "rename_tournament"
 				}),
-				g = e => t => ({
+				b = e => t => ({
 					...Object(o.o)(t),
 					source: "mod_tool_predict",
 					action: "click",
@@ -3017,38 +3001,38 @@
 					},
 					subreddit: Object(o.jb)(t)
 				}),
-				O = () => e => ({
+				E = () => e => ({
 					...Object(o.o)(e),
 					source: r,
 					action: "click",
 					noun: "next"
 				}),
-				j = () => e => ({
+				g = () => e => ({
 					...Object(o.o)(e),
 					source: r,
 					action: "click",
 					noun: "add_more"
 				}),
-				v = () => e => ({
+				O = () => e => ({
 					...Object(o.o)(e),
 					source: r,
 					action: "click",
 					noun: "start_tournament"
 				}),
-				C = () => e => ({
+				j = () => e => ({
 					...Object(o.o)(e),
 					source: "menu_links_bar",
 					action: "click",
 					noun: "predictions_tab"
 				}),
-				x = () => e => ({
+				v = () => e => ({
 					...Object(o.o)(e),
 					source: "predictions_tab",
 					action: "view",
 					noun: "predictions_how_it_works",
 					subreddit: Object(o.jb)(e)
 				}),
-				N = () => e => ({
+				C = () => e => ({
 					...Object(o.o)(e),
 					source: "predictions_how_it_works",
 					action: "click",
@@ -3238,4 +3222,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/index~reddit-components-Econ-Prediction.bb9e030e6af52040dc5b.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/index~reddit-components-Econ-Prediction.5aa0b8bb4ec0e56d8aae.js.map
