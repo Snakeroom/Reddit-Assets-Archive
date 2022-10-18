@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Premium~reddit-components-Econ-Prediction-PremiumModal.3da5310c94eadabfac59.js
-// Retrieved at 10/13/2022, 1:10:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Premium~reddit-components-Econ-Prediction-PremiumModal.f41df34abe8ee598dabf.js
+// Retrieved at 10/18/2022, 11:00:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Premium~reddit-components-Econ-Prediction-PremiumModal"], {
 		"./node_modules/@stripe/react-stripe-js/dist/react-stripe.umd.js": function(e, t, r) {
@@ -2263,7 +2263,7 @@
 				const j = Object(u.b)(),
 					k = Object(d.e)(b.l),
 					P = Object(d.e)(f.d);
-				if (Object(d.e)(h.w)) return o.a.createElement("div", {
+				if (Object(d.e)(h.w)) return g ? o.a.createElement("div", {
 					className: Object(i.a)(y.a.buttons, t, {
 						[y.a.hero]: !!r
 					})
@@ -2272,7 +2272,7 @@
 					onClick: g
 				}, n.fbt._("Manage Premium", null, {
 					hk: "13LAq1"
-				})));
+				}))) : null;
 				const E = k.find(e => e.frequency === m.c.Monthly),
 					w = k.find(e => e.frequency === m.c.Yearly);
 				if (!E || !w) return null;
@@ -2638,4 +2638,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Premium~reddit-components-Econ-Prediction-PremiumModal.3da5310c94eadabfac59.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Premium~reddit-components-Econ-Prediction-PremiumModal.f41df34abe8ee598dabf.js.map

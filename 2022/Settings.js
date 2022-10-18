@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Settings.5ff871cc403b3e507ade.js
-// Retrieved at 10/17/2022, 5:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Settings.e29f653c9e3ddb326135.js
+// Retrieved at 10/18/2022, 11:00:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Settings"], {
 		"./node_modules/moment/locale sync recursive ^\\.\\/.*$": function(e, t, n) {
@@ -6865,7 +6865,7 @@
 							highlightComments: v,
 							hideAds: _
 						}
-					} = this.props, y = Boolean(p), x = b, k = r || o, C = a()(null == p ? void 0 : p.expiresAt).format("MMMM DD, YYYY.");
+					} = this.props, y = Boolean(p), x = b && !m, k = r || o, C = a()(null == p ? void 0 : p.expiresAt).format("MMMM DD, YYYY.");
 					return i.a.createElement(ce.a, null, i.a.createElement(ie.b, {
 						className: Oe.a.premiumHeading,
 						isResponsiveSettingsEnabled: h
@@ -6895,8 +6895,7 @@
 					})), i.a.createElement("div", {
 						className: Oe.a.resubscribeButtons
 					}, i.a.createElement(xe.a, {
-						onClickPackage: this.onClickPrice,
-						onClickManagePremium: () => {}
+						onClickPackage: this.onClickPrice
 					}))), l && i.a.createElement(de.a, {
 						label: s.fbt._("Update payment information", null, {
 							hk: "1Fgfxv"
@@ -11098,7 +11097,7 @@
 				const x = Object(u.b)(),
 					k = Object(l.e)(h.l),
 					j = Object(l.e)(b.d);
-				if (Object(l.e)(f.w)) return a.a.createElement("div", {
+				if (Object(l.e)(f.w)) return g ? a.a.createElement("div", {
 					className: Object(o.a)(v.a.buttons, t, {
 						[v.a.hero]: !!n
 					})
@@ -11107,7 +11106,7 @@
 					onClick: g
 				}, s.fbt._("Manage Premium", null, {
 					hk: "13LAq1"
-				})));
+				}))) : null;
 				const C = k.find(e => e.frequency === m.c.Monthly),
 					E = k.find(e => e.frequency === m.c.Yearly);
 				if (!C || !E) return null;
@@ -15149,4 +15148,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Settings.5ff871cc403b3e507ade.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Settings.e29f653c9e3ddb326135.js.map
