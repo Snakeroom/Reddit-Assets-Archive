@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Frontpage.baf901d034cdc83d77cb.js
-// Retrieved at 10/18/2022, 11:40:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Frontpage.21da1935114d8273bba1.js
+// Retrieved at 10/18/2022, 1:10:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Frontpage"], {
 		"./node_modules/intersection-observer/intersection-observer.js": function(e, t) {
@@ -3990,24 +3990,26 @@
 				P = a("./node_modules/react-router-dom/esm/react-router-dom.js"),
 				w = a("./src/lib/constants/icons.ts"),
 				T = a("./src/reddit/constants/listings.ts"),
-				L = a("./src/reddit/icons/fonts/index.tsx"),
-				M = a("./src/reddit/components/LiveBar/LiveBarCarousel/index.m.less"),
-				B = a.n(M);
-			var R = e => {
+				L = a("./src/reddit/helpers/trackers/happeningNow.ts"),
+				M = a("./src/reddit/icons/fonts/index.tsx"),
+				B = a("./src/reddit/components/LiveBar/LiveBarCarousel/index.m.less"),
+				R = a.n(B);
+			var F = e => {
 				let {
 					onScrollToElement: t,
 					onChildVisible: a,
 					children: s
 				} = e;
-				const i = Object(n.createRef)(),
-					l = Object(c.e)(S.db),
-					d = Object(c.e)(A.a),
-					[u, m] = Object(n.useState)(null),
-					[p, b] = Object(n.useState)(null),
-					[h, g] = Object(n.useState)(!1),
-					[f, v] = Object(n.useState)(!1);
+				const i = Object(j.a)(),
+					l = Object(n.createRef)(),
+					d = Object(c.e)(S.db),
+					u = Object(c.e)(A.a),
+					[m, p] = Object(n.useState)(null),
+					[b, h] = Object(n.useState)(null),
+					[g, f] = Object(n.useState)(!1),
+					[v, _] = Object(n.useState)(!1);
 				Object(n.useEffect)(() => {
-					const e = i.current;
+					const e = l.current;
 					if (!e) return;
 					const t = () => {
 						const t = e.getBoundingClientRect(),
@@ -4020,7 +4022,7 @@
 								const t = e[e.length - 1].nextElementSibling;
 								return t instanceof HTMLElement ? t : null
 							})(s);
-							b(e), m((e => {
+							h(e), p((e => {
 								let t = e[0].previousElementSibling;
 								return (null == t ? void 0 : t.previousElementSibling) && (t = t.previousElementSibling), t instanceof HTMLElement ? t : null
 							})(s)), s.forEach(e => {
@@ -4031,12 +4033,12 @@
 					return t(), e.addEventListener("scroll", t), () => {
 						e.removeEventListener("scroll", t)
 					}
-				}, [i, a]), Object(n.useEffect)(() => {
-					g(Boolean(u)), v(Boolean(p))
-				}, [u, p]);
-				const _ = Object(n.useCallback)(e => {
+				}, [l, a]), Object(n.useEffect)(() => {
+					f(Boolean(m)), _(Boolean(b))
+				}, [m, b]);
+				const y = Object(n.useCallback)(e => {
 						var a;
-						const s = i.current;
+						const s = l.current;
 						if (!s || !e) return;
 						let n = 0;
 						n = e.offsetLeft + e.getBoundingClientRect().width - s.getBoundingClientRect().width / 2.45, s.scroll({
@@ -4045,58 +4047,62 @@
 						});
 						const r = null === (a = e.id) || void 0 === a ? void 0 : a.split("__")[1];
 						r && t(r)
-					}, [i, t]),
-					y = Object(n.useCallback)(() => _(p), [_, p]),
-					x = Object(n.useCallback)(() => _(u), [_, u]);
+					}, [l, t]),
+					x = Object(n.useCallback)(() => y(b), [y, b]),
+					E = Object(n.useCallback)(() => y(m), [y, m]),
+					k = Object(n.useCallback)(() => {
+						i(Object(L.b)(L.a.LiveBar))
+					}, [i]);
 				return r.a.createElement("div", {
-					className: Object(o.a)(B.a.container),
+					className: Object(o.a)(R.a.container),
 					role: "region",
 					"aria-label": "carousel"
 				}, r.a.createElement("div", {
-					className: Object(o.a)(B.a.inner),
-					ref: i
+					className: Object(o.a)(R.a.inner),
+					ref: l
 				}, n.Children.map(s, (e, t) => r.a.createElement("div", {
-					className: Object(o.a)(B.a.carouselItem),
+					className: Object(o.a)(R.a.carouselItem),
 					id: e.props.id,
 					key: t,
 					"data-position": t
-				}, e)), d && r.a.createElement(P.a, {
-					className: B.a.viewAllButton,
-					to: T.c[T.b.HappeningNow]
+				}, e)), u && r.a.createElement(P.a, {
+					className: R.a.viewAllButton,
+					to: T.c[T.b.HappeningNow],
+					onClick: k
 				}, I.fbt._("View all", null, {
 					hk: "1dXYGI"
 				}))), r.a.createElement("div", {
-					className: Object(o.a)(B.a.arrowButtonContainer, B.a.leftArrowContainer, {
-						[B.a.nightMode]: l,
-						[B.a.arrowVisible]: h
+					className: Object(o.a)(R.a.arrowButtonContainer, R.a.leftArrowContainer, {
+						[R.a.nightMode]: d,
+						[R.a.arrowVisible]: g
 					})
 				}, r.a.createElement("button", {
-					className: B.a.arrowButton,
-					onClick: x,
+					className: R.a.arrowButton,
+					onClick: E,
 					"aria-label": I.fbt._("previous items", null, {
 						hk: "44uTrz"
 					})
-				}, r.a.createElement(L.a, {
-					className: B.a.arrowIcon,
+				}, r.a.createElement(M.a, {
+					className: R.a.arrowIcon,
 					name: w.a.caret_left
 				}))), r.a.createElement("div", {
-					className: Object(o.a)(B.a.arrowButtonContainer, B.a.rightArrowContainer, {
-						[B.a.nightMode]: l,
-						[B.a.arrowVisible]: f
+					className: Object(o.a)(R.a.arrowButtonContainer, R.a.rightArrowContainer, {
+						[R.a.nightMode]: d,
+						[R.a.arrowVisible]: v
 					})
 				}, r.a.createElement("button", {
-					className: B.a.arrowButton,
-					onClick: y,
+					className: R.a.arrowButton,
+					onClick: x,
 					"aria-label": I.fbt._("next items", null, {
 						hk: "4EEfgp"
 					})
-				}, r.a.createElement(L.a, {
-					className: B.a.arrowIcon,
+				}, r.a.createElement(M.a, {
+					className: R.a.arrowIcon,
 					name: w.a.caret_right
 				}))))
 			};
 			const {
-				fbt: F
+				fbt: D
 			} = a("./node_modules/fbt/lib/FbtPublic.js");
 			t.a = e => {
 				let {
@@ -4171,7 +4177,7 @@
 							roomTitle: T,
 							topUsers: M,
 							participantCount: B
-						} = S, R = null == M ? void 0 : M.slice(0, 3), D = m === A, U = (null === (n = null === (a = C.subreddit) || void 0 === a ? void 0 : a.styles) || void 0 === n ? void 0 : n.icon) || (null === (v = null === (f = null === (c = C.profile) || void 0 === c ? void 0 : c.styles) || void 0 === f ? void 0 : f.legacyIcon) || void 0 === v ? void 0 : v.url), Z = (null === (_ = C.subreddit) || void 0 === _ ? void 0 : _.id) || (null === (y = C.profile) || void 0 === y ? void 0 : y.name), q = "SubredditPost" === C.__typename ? Object(g.d)(null === (k = C.subreddit) || void 0 === k ? void 0 : k.name) : Object(g.e)(null === (j = C.profile) || void 0 === j ? void 0 : j.redditorInfo.displayName);
+						} = S, R = null == M ? void 0 : M.slice(0, 3), F = m === A, U = (null === (n = null === (a = C.subreddit) || void 0 === a ? void 0 : a.styles) || void 0 === n ? void 0 : n.icon) || (null === (v = null === (f = null === (c = C.profile) || void 0 === c ? void 0 : c.styles) || void 0 === f ? void 0 : f.legacyIcon) || void 0 === v ? void 0 : v.url), Z = (null === (_ = C.subreddit) || void 0 === _ ? void 0 : _.id) || (null === (y = C.profile) || void 0 === y ? void 0 : y.name), q = "SubredditPost" === C.__typename ? Object(g.d)(null === (k = C.subreddit) || void 0 === k ? void 0 : k.name) : Object(g.e)(null === (j = C.profile) || void 0 === j ? void 0 : j.redditorInfo.displayName);
 						return r.a.createElement("button", {
 							id: `talk__${A}`,
 							key: `talk__${w}`,
@@ -4196,9 +4202,9 @@
 						}, r.a.createElement(l.a, {
 							ringId: A,
 							className: Object(o.a)(b.a.speakerRing, b.a.speakerRingInner, {
-								[b.a.animatedRing]: D
+								[b.a.animatedRing]: F
 							})
-						}), D && r.a.createElement(r.a.Fragment, null, r.a.createElement(d.a, {
+						}), F && r.a.createElement(r.a.Fragment, null, r.a.createElement(d.a, {
 							ringId: A,
 							className: Object(o.a)(b.a.speakerRing, b.a.speakerRingMiddle)
 						}), r.a.createElement(u.a, {
@@ -4216,9 +4222,9 @@
 						}, r.a.createElement("p", {
 							"data-title-id": `${A}`,
 							className: Object(o.a)(b.a.roomTitle, {
-								[b.a.animated]: D && E
+								[b.a.animated]: F && E
 							})
-						}, T), D && E && r.a.createElement("div", {
+						}, T), F && E && r.a.createElement("div", {
 							className: Object(o.a)(b.a.titleFadeContainer, b.a.leftFadeContainer, {
 								[b.a.nightMode]: I
 							})
@@ -4248,9 +4254,9 @@
 							}))
 						})), r.a.createElement("p", {
 							className: b.a.participantCount
-						}, (null != B ? B : 0) > 0 ? F._("{participantCount} in {subredditName}", [F._param("participantCount", B), F._param("subredditName", q)], {
+						}, (null != B ? B : 0) > 0 ? D._("{participantCount} in {subredditName}", [D._param("participantCount", B), D._param("subredditName", q)], {
 							hk: "2pp9CZ"
-						}) : F._("{subredditName}", [F._param("subredditName", q)], {
+						}) : D._("{subredditName}", [D._param("subredditName", q)], {
 							hk: "JJOAC"
 						})))))
 					}),
@@ -4260,7 +4266,7 @@
 				}, r.a.createElement("div", {
 					ref: a,
 					className: b.a.scroller
-				}, r.a.createElement(R, {
+				}, r.a.createElement(F, {
 					onScrollToElement: e => {
 						setTimeout(() => {
 							p(e)
@@ -8435,4 +8441,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Frontpage.baf901d034cdc83d77cb.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Frontpage.21da1935114d8273bba1.js.map

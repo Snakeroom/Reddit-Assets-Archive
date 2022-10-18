@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/OverlayThemes.3c9c7df7937a883e5f27.js
-// Retrieved at 9/29/2022, 4:30:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/OverlayThemes.f5c2e5f2532e7fc2f9fb.js
+// Retrieved at 10/18/2022, 1:10:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["OverlayThemes"], {
 		"./src/chat/components/OverlayThemes/index.m.less": function(e, t, a) {
@@ -100,10 +100,10 @@
 					p = Object(c.useCallback)(() => {
 						e(Object(o.cancelChatTheme)())
 					}, [e]),
-					f = t => {
+					C = t => {
 						e(Object(o.changeChatThemeAction)({
 							themeKey: t
-						})), e(Object(h.B)(t))
+						})), e(Object(h.C)(t))
 					};
 				return Object(c.useEffect)(() => {
 					if (t) return p
@@ -123,7 +123,7 @@
 				}, (() => E.a.map(e => n.a.createElement(w, {
 					themeKey: e,
 					key: e,
-					onClick: f
+					onClick: C
 				})))()), n.a.createElement(g.a, {
 					text: s.fbt._("Preview", null, {
 						hk: "2Y7qLG"
@@ -196,4 +196,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/OverlayThemes.3c9c7df7937a883e5f27.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/OverlayThemes.f5c2e5f2532e7fc2f9fb.js.map

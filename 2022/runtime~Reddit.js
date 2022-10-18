@@ -1,10 +1,10 @@
-// https://www.redditstatic.com/desktop2x/runtime~Reddit.0a09a2f2ca5e980d94a8.js
-// Retrieved at 10/18/2022, 11:40:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/runtime~Reddit.8fb31fba1d03d19ea525.js
+// Retrieved at 10/18/2022, 1:10:05 PM by Reddit Dataminer v1.0.0
 ! function(e) {
 	function o(o) {
-		for (var a, n, r = o[0], s = o[1], c = o[2], l = 0, P = []; l < r.length; l++) n = r[l], Object.prototype.hasOwnProperty.call(d, n) && d[n] && P.push(d[n][0]), d[n] = 0;
+		for (var a, n, r = o[0], s = o[1], c = o[2], l = 0, b = []; l < r.length; l++) n = r[l], Object.prototype.hasOwnProperty.call(d, n) && d[n] && b.push(d[n][0]), d[n] = 0;
 		for (a in s) Object.prototype.hasOwnProperty.call(s, a) && (e[a] = s[a]);
-		for (m && m(o); P.length;) P.shift()();
+		for (m && m(o); b.length;) b.shift()();
 		return i.push.apply(i, c || []), t()
 	}
 
@@ -958,7 +958,7 @@
 					OverlayChannelRemoval: "839b5d74af2461ea0028",
 					OverlayCreateChannel: "eee45b4481bb89f980fa",
 					OverlayDeleteMessage: "546fe12ef3412b644fbb",
-					OverlayDirectsEmptyState: "0c475c10fa2d3dc8382b",
+					OverlayDirectsEmptyState: "96e45f3150d3b812db1e",
 					OverlayGroupAbout: "202c8d49479fea3a871f",
 					OverlayLinkSharingSettings: "3f33d69f751870d6d3c3",
 					OverlayNSFWWarning: "410d044e2a4d6df80e8f",
@@ -1029,12 +1029,12 @@
 				var m;
 				if ((c = (m = l[s]).getAttribute("data-href")) === a || c === d) return o()
 			}
-			var P = document.createElement("link");
-			P.rel = "stylesheet", P.type = "text/css", P.onload = o, P.onerror = function(o) {
+			var b = document.createElement("link");
+			b.rel = "stylesheet", b.type = "text/css", b.onload = o, b.onerror = function(o) {
 				var a = o && o.target && o.target.src || d,
 					i = new Error("Loading CSS chunk " + e + " failed.\n(" + a + ")");
-				i.code = "CSS_CHUNK_LOAD_FAILED", i.request = a, delete n[e], P.parentNode.removeChild(P), t(i)
-			}, P.href = d, document.getElementsByTagName("head")[0].appendChild(P)
+				i.code = "CSS_CHUNK_LOAD_FAILED", i.request = a, delete n[e], b.parentNode.removeChild(b), t(i)
+			}, b.href = d, document.getElementsByTagName("head")[0].appendChild(b)
 		})).then((function() {
 			n[e] = 0
 		})));
@@ -1452,7 +1452,7 @@
 						ProfileSnoobuilder: "c973702c87ac842af22f",
 						"SubredditWiki~reddit-components-Wiki-ModHubWikiManagement": "dcdc6c0a03268012ca66",
 						SubredditWiki: "8fb340826f28174243cf",
-						Frontpage: "baf901d034cdc83d77cb",
+						Frontpage: "21da1935114d8273bba1",
 						PostSetPage: "34be0c84f2ecfc60bf7a",
 						Topic: "673f1f8360619ea3599a",
 						CommunityAwards: "9bcc4d765c1afaa1ef2d",
@@ -1531,16 +1531,16 @@
 						"reddit-components-Governance-GasFeesEducationalModal": "b81ccec2f579dc7f33eb",
 						"reddit-components-PostCreationForm-PredictionEditor-InactivityModal": "5910708e4e8bfa45030d",
 						"reddit-components-PostCreationForm-PredictionEditor-StartTournamentLimitationModal": "13c11e274a49a71fb523",
-						"translations/bn_BD-json": "acc017096b827b097f2e",
-						"translations/de_DE-json": "eadaaec00b53af636c55",
-						"translations/es_ES-json": "bf6e32be5be2a8c09d78",
-						"translations/es_MX-json": "46e80fb191ab1d963b14",
-						"translations/fr_FR-json": "24ac553180e373f5a3ad",
-						"translations/hi_IN-json": "f08a5ede75cc5ed8e36a",
-						"translations/it_IT-json": "decaaa3b278708eef084",
-						"translations/pseudo-json": "06d90fe6ed19158aceee",
-						"translations/pt_BR-json": "51d575230377876dac3a",
-						"translations/pt_PT-json": "df48e94f3089ec7c114d",
+						"translations/bn_BD-json": "c4831dba3c33b1605565",
+						"translations/de_DE-json": "dea3549d645b8b461f23",
+						"translations/es_ES-json": "145abf422d68dad6171e",
+						"translations/es_MX-json": "440fba342c262b506c55",
+						"translations/fr_FR-json": "f6800c84f7dc79753f21",
+						"translations/hi_IN-json": "4dafbed379f5fc82188e",
+						"translations/it_IT-json": "67b1aba710e0d6fe1224",
+						"translations/pseudo-json": "c30b67be61f3ee718e87",
+						"translations/pt_BR-json": "73a35169c7b1ccd0f71f",
+						"translations/pt_PT-json": "b50f6b36e5043cb2e4e4",
 						"vendors~AdminPanel": "eae9f345b12b82989d37",
 						AdminPanel: "c684f67dbb7080988f57",
 						"vendors~Avatar~ChatPost~MarketplaceClaimModal~MarketplaceInFeedUnit~NftProfileUnit~RealtimeGQLSubscr~bfab320d": "55a3b510ce7f3aa8c31d",
@@ -1562,8 +1562,8 @@
 						MembershipPaywallPage: "52789a2b6f03ed81f73c",
 						FlairEdit: "a00f081623c9d424a9f4",
 						"vendors~Chat~RedesignChat": "53cd3b091135f8f64886",
-						"Chat~RedesignChat": "93d6c040eb36825b32cc",
-						RedesignChat: "d2e722c3c4c726e3dcb0",
+						"Chat~RedesignChat": "2f9bac78ab3434246f85",
+						RedesignChat: "8997300548d740cddfd7",
 						ModListing: "917e205fc458efac2dd4",
 						"vendors~PostCreation~Subreddit": "c6c96fbaf04e2c667eb2",
 						Subreddit: "cfa3d5fbe87460440ea3",
@@ -1677,21 +1677,21 @@
 						"reddit-components-Governance-TransactionModals-SubscriptionModal": "ab68a392a63e4d22a712",
 						ChatEmpty: "1e3ef81a71dcde2ce79e",
 						ChatMinimize: "44c69e3b0034bf285b68",
-						ChatOverlayReport: "c0b5385012b403f6f71c",
+						ChatOverlayReport: "450d6ca85f9159feb8d3",
 						ChatPage: "e7a4cc9709580c54e430",
 						ExternalLinkUnit: "9f4f6b714357ab66fd7b",
-						InvitedChannelsPanel: "1be0495153f8079fda2d",
-						OverlayBlockUser: "5bbfe4dacf9aebf43c33",
+						InvitedChannelsPanel: "e179a588a86c3dbc7250",
+						OverlayBlockUser: "ae321addad566d2433ad",
 						OverlayChannelRemoval: "28a4199cedb871c69d76",
-						OverlayCreateChannel: "fad9919cd8867d9fff13",
-						OverlayDeleteMessage: "bc1781a502e133d24dc7",
-						OverlayDirectsEmptyState: "5fb1c140d5bcd508a2bd",
-						OverlayGroupAbout: "1f12fd3a9dda97244444",
-						OverlayLinkSharingSettings: "0234f0dc0d2a4a22e38d",
+						OverlayCreateChannel: "d9fd91aaffdf1c815079",
+						OverlayDeleteMessage: "b99becea4f3228ff35e0",
+						OverlayDirectsEmptyState: "b0aa225b06b7d2fb0bd4",
+						OverlayGroupAbout: "27873f0e71bda914c101",
+						OverlayLinkSharingSettings: "fc228df51ba619cc3e8a",
 						OverlayNSFWWarning: "36543b9a819fdc1f63d0",
 						OverlayPrivacyAndSupport: "34fa9bc09546ab97fda1",
-						OverlayThemes: "3c9c7df7937a883e5f27",
-						SettingsPanel: "357614ef93600c9ba566",
+						OverlayThemes: "f5c2e5f2532e7fc2f9fb",
+						SettingsPanel: "68c303a26e8ac2aeb9ba",
 						CommentRichUnit: "d6aa89db1d87c1ffd7bd",
 						PostRichUnit: "cd400e16952b9c9c8a61",
 						SubredditTopContent: "c9b668ea165f61caf10b",
@@ -1812,4 +1812,4 @@
 	var m = c;
 	t()
 }([]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/runtime~Reddit.0a09a2f2ca5e980d94a8.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/runtime~Reddit.8fb31fba1d03d19ea525.js.map
