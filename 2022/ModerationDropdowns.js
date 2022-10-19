@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModerationDropdowns.179b57de0905852019fe.js
-// Retrieved at 10/13/2022, 1:10:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModerationDropdowns.3658cda1391ca78c6226.js
+// Retrieved at 10/19/2022, 10:50:19 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModerationDropdowns"], {
 		"./src/devPlatform/components/ContextActions/ContextActionsLoader.tsx": function(e, t, o) {
@@ -410,7 +410,7 @@
 				},
 				j = Object(c.c)({
 					flairData: _.d,
-					subreddit: v.X
+					subreddit: v.Y
 				});
 			class M extends a.a.Component {
 				constructor(e) {
@@ -649,9 +649,9 @@
 					var H, G, U, K, Z;
 					const Q = (null === (H = V.pollData) || void 0 === H ? void 0 : H.isPrediction) && !(null === (G = V.pollData) || void 0 === G ? void 0 : G.resolvedOptionId),
 						q = (null === (U = V.pollData) || void 0 === U ? void 0 : U.isPrediction) && null !== V.pollData.resolvedOptionId,
-						z = V.flair.filter(e => e.type !== N.f.Nsfw && e.type !== N.f.Spoiler).length > 0,
-						Y = Object(P.b)(V),
-						J = !(!V.approvedBy || !Y),
+						Y = V.flair.filter(e => e.type !== N.f.Nsfw && e.type !== N.f.Spoiler).length > 0,
+						z = Object(P.b)(V),
+						J = !(!V.approvedBy || !z),
 						X = i ? void 0 : l,
 						$ = Object(D.a)(V),
 						ee = m ? L : R;
@@ -683,7 +683,7 @@
 						onClick: A
 					}, s.a.createElement(S.j, null))), t && s.a.createElement(S.e, {
 						className: ee(j.a.Flair, X),
-						displayText: z ? k.fbt._("Edit post flair", null, {
+						displayText: Y ? k.fbt._("Edit post flair", null, {
 							hk: "2oet1"
 						}) : k.fbt._("Add post flair", null, {
 							hk: "1iPNLQ"
@@ -1240,4 +1240,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationDropdowns.179b57de0905852019fe.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationDropdowns.3658cda1391ca78c6226.js.map

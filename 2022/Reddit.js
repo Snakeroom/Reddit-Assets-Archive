@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Reddit.5252bd970bebcb9d3834.js
-// Retrieved at 10/19/2022, 9:50:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Reddit.6a021b44097203221b3a.js
+// Retrieved at 10/19/2022, 10:50:19 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Reddit"], {
 		"./assets/fonts/BentonSans/font.less": function(e, t, n) {},
@@ -1860,7 +1860,7 @@
 						Object(c.Q)(d) || n.push(e(Object(a.s)()));
 						const u = Object(s.a)(l, null);
 						n.push(e(Object(r.subredditDataRequested)(u, l, {}))), await Promise.all(n);
-						const m = Object(i.H)(t(), l);
+						const m = Object(i.I)(t(), l);
 						await e(Object(o.a)({
 							subredditId: m,
 							skip: ["badges", "tips", "wallets"]
@@ -5393,7 +5393,7 @@
 						const o = s || Object(N.n)(e, {
 							page: n
 						});
-						return (null == o ? void 0 : o.belongsTo) ? Object(w.P)(e, {
+						return (null == o ? void 0 : o.belongsTo) ? Object(w.Q)(e, {
 							identifier: o.belongsTo
 						}) : null
 					},
@@ -5467,7 +5467,7 @@
 							return {
 								source: "sticky_banner",
 								action: "click",
-								noun: (null == t ? void 0 : t.name) && Object(w.jb)(e, {
+								noun: (null == t ? void 0 : t.name) && Object(w.kb)(e, {
 									identifier: {
 										name: t.name,
 										type: "subreddit"
@@ -6801,7 +6801,7 @@
 				if (Object(p.i)(e) || Object(h.rb)(e)) return;
 				const n = v(e, t);
 				if (!n) return;
-				const s = Object(b.H)(e, n);
+				const s = Object(b.I)(e, n);
 				if (!s) return;
 				if (Object(h.qb)(e, {
 						subredditId: s
@@ -6811,7 +6811,7 @@
 			}), (e, t) => {
 				const n = v(e, t);
 				if (!n) return;
-				const s = Object(b.y)(e, {
+				const s = Object(b.z)(e, {
 					subredditName: n
 				});
 				return s ? s.emojisCustomSize : void 0
@@ -6823,7 +6823,7 @@
 				if (Object(h.Q)(e)) return !n.hideNSFW;
 				const s = v(e, t);
 				if (s) {
-					const t = Object(b.B)(e, {
+					const t = Object(b.C)(e, {
 						subredditName: s
 					});
 					return !(!t || !t.isNSFW)
@@ -7231,7 +7231,7 @@
 				r = n("./src/reddit/actions/subscription/index.ts"),
 				a = n("./src/reddit/selectors/subreddit.ts");
 			t.a = Object(s.b)(() => Object(o.c)({
-				userIsSubscriber: a.jb
+				userIsSubscriber: a.kb
 			}), (e, t) => {
 				let {
 					identifier: n
@@ -11346,7 +11346,7 @@
 						const t = Object(Dn.o)(e, {
 								pageLayer: n
 							}) || So.e,
-							s = Object(ko.B)(e, {
+							s = Object(ko.C)(e, {
 								subredditName: t
 							});
 						if (s) return {
@@ -13932,7 +13932,7 @@
 						pageLayer: o
 					})),
 					H = Object(Oe.e)($a.j),
-					q = Object(Oe.e)(e => Object(ko.B)(e, {
+					q = Object(Oe.e)(e => Object(ko.C)(e, {
 						subredditName: _ ? _.title.replace("r/", "") : ""
 					})),
 					{
@@ -18606,7 +18606,7 @@
 					const a = "subreddit" === (null === (n = null == t ? void 0 : t.belongsTo) || void 0 === n ? void 0 : n.type) ? null === (s = null == t ? void 0 : t.belongsTo) || void 0 === s ? void 0 : s.id : null;
 					if (!a) return !1;
 					const i = null === (r = null === (o = e.subreddits) || void 0 === o ? void 0 : o.models) || void 0 === r ? void 0 : r[a];
-					return !!i && ((null == i ? void 0 : i.type) !== Jg.f.Private && (null == i || !i.isQuarantined))
+					return !!i && ((null == i ? void 0 : i.type) !== Jg.g.Private && (null == i || !i.isQuarantined))
 				})(e, t) && Object(Kg.b)(e) && (e => !!(e && e >= 5))(null == t ? void 0 : t.numComments) && (e => {
 					return e > new Date(2016, 0, 1).getTime()
 				})(t.created),
@@ -18757,7 +18757,7 @@
 					if (n.type === ue.b) {
 						const s = e.getState(),
 							o = (s.platform.currentPage.urlParams.subredditName || "").toLowerCase(),
-							r = Object(ko.H)(s, o) || "",
+							r = Object(ko.I)(s, o) || "",
 							i = (s.subreddits.about[r] || {}).advertiserCategory;
 						a.trigger("pageview", {
 							...ka()(n.payload.location, "pathname", "search", "hash"),
@@ -19280,7 +19280,7 @@
 								queryParams: o
 							},
 							a = s.subredditName,
-							i = Object(ko.H)(n, a) || "";
+							i = Object(ko.I)(n, a) || "";
 						if (qf(i, {
 								country: n.meta.country
 							}), i) {
@@ -19300,13 +19300,13 @@
 						}), t(y(n)), t(x(Array.from(s)))
 					})(b));
 					const h = (p.platform.currentPage.urlParams.subredditName || "").toLowerCase(),
-						g = Object(ko.H)(p, h) || "";
+						g = Object(ko.I)(p, h) || "";
 					if (h) {
 						l.dispatch(O(g, h));
 						const e = Object(Pn.e)(p);
 						e && l.dispatch(C(e))
 					}
-					const f = Object(ko.H)(p, h) || "",
+					const f = Object(ko.I)(p, h) || "",
 						E = (p.subreddits.about[f] || {}).advertiserCategory;
 					a.setup({
 						jailUrl: "https://www.redditmedia.com/gtm/jail",
@@ -19330,7 +19330,7 @@
 								currentPage: o
 							} = e.platform,
 							a = (o.urlParams.subredditName || "").toLowerCase(),
-							i = Object(ko.H)(e, a) || "";
+							i = Object(ko.I)(e, a) || "";
 						if (Object(L.a)(), qf(i, {
 								country: e.meta.country
 							}), o && o.meta) {
@@ -21753,7 +21753,7 @@
 				i = n("./src/lib/loadableAction/index.ts");
 			const c = Object.keys(a.jc).map(e => a.jc[e]).join("|"),
 				l = [{
-					action: Object(i.a)(() => Promise.all([n.e("vendors~CryptoHarbergerTaxManageModal~HarbergerTaxManageModal~ModerationPages~PostCreation~Settings~~f8934a85"), n.e("vendors~ModStatsChart~Settings~ViewsTooltip"), n.e("vendors~Settings"), n.e("Settings")]).then(n.bind(null, "./src/reddit/actions/pages/settings.ts")).then(e => e.settingsPageRequested)),
+					action: Object(i.a)(() => Promise.all([n.e("vendors~CryptoHarbergerTaxManageModal~HarbergerTaxManageModal~ModerationPages~PostCreation~Settings~~f8934a85"), n.e("vendors~ModStatsChart~Settings~ViewsTooltip"), n.e("vendors~Settings"), n.e("Settings~SubredditWiki"), n.e("Settings")]).then(n.bind(null, "./src/reddit/actions/pages/settings.ts")).then(e => e.settingsPageRequested)),
 					component: Object(r.a)({
 						resolved: {},
 						chunkName: () => "Settings",
@@ -21761,7 +21761,7 @@
 							const t = this.resolve(e);
 							return !1 !== this.resolved[t] && !!n.m[t]
 						},
-						importAsync: () => Promise.all([n.e("vendors~CryptoHarbergerTaxManageModal~HarbergerTaxManageModal~ModerationPages~PostCreation~Settings~~f8934a85"), n.e("vendors~ModStatsChart~Settings~ViewsTooltip"), n.e("vendors~Settings"), n.e("Settings")]).then(n.bind(null, "./src/reddit/pages/Settings/index.tsx")),
+						importAsync: () => Promise.all([n.e("vendors~CryptoHarbergerTaxManageModal~HarbergerTaxManageModal~ModerationPages~PostCreation~Settings~~f8934a85"), n.e("vendors~ModStatsChart~Settings~ViewsTooltip"), n.e("vendors~Settings"), n.e("Settings~SubredditWiki"), n.e("Settings")]).then(n.bind(null, "./src/reddit/pages/Settings/index.tsx")),
 						requireAsync(e) {
 							const t = this.resolve(e);
 							return this.resolved[t] = !1, this.importAsync(e).then(e => (this.resolved[t] = !0, e))
@@ -21866,7 +21866,7 @@
 					const t = this.resolve(e);
 					return !1 !== this.resolved[t] && !!n.m[t]
 				},
-				importAsync: () => Promise.all([n.e("CollectionCommentsPage~CommentsPage~CountryPage~FramedGild~GildModal~GovernanceReleaseNotesModal~Hap~1fdd9b9b"), n.e("SubredditWiki~reddit-components-Wiki-ModHubWikiManagement"), n.e("SubredditWiki")]).then(n.bind(null, "./src/reddit/pages/SubredditWiki/index.tsx")),
+				importAsync: () => Promise.all([n.e("CollectionCommentsPage~CommentsPage~CountryPage~FramedGild~GildModal~GovernanceReleaseNotesModal~Hap~1fdd9b9b"), n.e("SubredditWiki~reddit-components-Wiki-ModHubWikiManagement"), n.e("Settings~SubredditWiki"), n.e("SubredditWiki")]).then(n.bind(null, "./src/reddit/pages/SubredditWiki/index.tsx")),
 				requireAsync(e) {
 					const t = this.resolve(e);
 					return this.resolved[t] = !1, this.importAsync(e).then(e => (this.resolved[t] = !0, e))
@@ -21893,7 +21893,7 @@
 					},
 					path: u
 				}, b = {
-					action: Object(i.a)(() => Promise.all([n.e("CollectionCommentsPage~CommentsPage~CountryPage~FramedGild~GildModal~GovernanceReleaseNotesModal~Hap~1fdd9b9b"), n.e("SubredditWiki~reddit-components-Wiki-ModHubWikiManagement"), n.e("SubredditWiki")]).then(n.bind(null, "./src/reddit/actions/pages/subredditWiki/index.ts")).then(e => e.subredditWikiPageRequested)),
+					action: Object(i.a)(() => Promise.all([n.e("CollectionCommentsPage~CommentsPage~CountryPage~FramedGild~GildModal~GovernanceReleaseNotesModal~Hap~1fdd9b9b"), n.e("SubredditWiki~reddit-components-Wiki-ModHubWikiManagement"), n.e("Settings~SubredditWiki"), n.e("SubredditWiki")]).then(n.bind(null, "./src/reddit/actions/pages/subredditWiki/index.ts")).then(e => e.subredditWikiPageRequested)),
 					chunk: r.u.SUBREDDIT_WIKI,
 					component: l,
 					exact: !0,
@@ -23063,4 +23063,4 @@
 		["./src/reddit/index.tsx", "runtime~Reddit", "vendors~CommentsPage~ModerationPages~Reddit~reddit-components-ClassicPost~reddit-components-CompactP~d737df3e", "vendors~CommentsPage~Governance~ModListing~ModerationPages~Reddit~Subreddit", "vendors~Chat~Governance~Reddit", "vendors~Reddit", "CommentsPage~Governance~Reddit~ReportFlow~Subreddit~reddit-components-BlankPost~reddit-components-Cl~5351df81", "Governance~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compo~bd4baca2", "ModListing~PostCreation~Reddit~StandalonePostPage~Subreddit", "Governance~ModListing~Reddit~ReportFlow~Subreddit", "Reddit~RpanListingUnit~reddit-components-LargePost~reddit-components-MediumPost", "Chat~Governance~Reddit", "Governance~Reddit~SubredditForkingCTA", "Governance~ModListing~Reddit", "Governance~Reddit"]
 	]
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit.5252bd970bebcb9d3834.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit.6a021b44097203221b3a.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Wiki-ModHubWikiManagement.9f0f7fb04c4618895a72.js
-// Retrieved at 10/18/2022, 11:40:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Wiki-ModHubWikiManagement.892a23e65249f7699b5b.js
+// Retrieved at 10/19/2022, 10:50:19 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Wiki-ModHubWikiManagement"], {
 		"./src/reddit/components/BannedUserList/AddBannedUserModal/DaysInput.tsx": function(e, t, n) {
@@ -82,7 +82,7 @@
 					hk: "2To19l"
 				})],
 				g = Object(o.c)({
-					subredditRules: m.W
+					subredditRules: m.X
 				}),
 				k = Object(a.b)(g);
 			class C extends r.a.Component {
@@ -743,7 +743,7 @@
 				_e = n("./node_modules/lodash/times.js"),
 				Te = n.n(_e),
 				Ne = n("./src/lib/classNames/index.ts"),
-				ye = n("./src/reddit/components/UserNameAndIcon/index.tsx"),
+				ye = n("./src/reddit/components/IdentityAndIcon/index.tsx"),
 				Be = n("./src/reddit/constants/keycodes.ts"),
 				Re = n("./src/reddit/helpers/styles/mixins/loading.ts"),
 				We = n("./src/reddit/components/Wiki/ModHubWikiManagement/WikiPageSettings/index.m.less"),
@@ -883,8 +883,8 @@
 			var Ie = De(Ae);
 			const He = Object(M.c)({
 				subredditSettings: (e, t) => {
-					const n = Object(xe.H)(e, t.subredditName);
-					return Object(xe.Z)(e, n)
+					const n = Object(xe.I)(e, t.subredditName);
+					return Object(xe.ab)(e, n)
 				},
 				wikiPageSettings: A.d
 			});
@@ -1118,4 +1118,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Wiki-ModHubWikiManagement.9f0f7fb04c4618895a72.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Wiki-ModHubWikiManagement.892a23e65249f7699b5b.js.map

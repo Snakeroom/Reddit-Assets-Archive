@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/InboxTooltip.fcd47ad3f21d7c8115f2.js
-// Retrieved at 10/19/2022, 9:50:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/InboxTooltip.c5a06702c68cdce7eef7.js
+// Retrieved at 10/19/2022, 10:50:19 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["InboxTooltip", "PushNotifications"], {
 		"./src/lib/notifications/token.ts": function(e, t, i) {
@@ -236,20 +236,20 @@
 				d = i("./src/reddit/endpoints/subreddit/notificationSettings.ts"),
 				u = i("./src/reddit/models/Subreddit/index.ts"),
 				l = i("./src/reddit/models/Toast/index.ts");
-			const b = Object(o.a)(c.v),
-				f = Object(o.a)(c.u),
-				p = Object(o.a)(c.t),
+			const b = Object(o.a)(c.z),
+				f = Object(o.a)(c.y),
+				p = Object(o.a)(c.x),
 				g = e => {
 					switch (e) {
-						case u.b.FREQUENT:
+						case u.c.FREQUENT:
 							return {
 								isSubredditUpdatesInterestingPostEnabled: !0, isUpdateFromSubredditEnabled: !0
 							};
-						case u.b.LOW:
+						case u.c.LOW:
 							return {
 								isSubredditUpdatesInterestingPostEnabled: !1, isUpdateFromSubredditEnabled: !0
 							};
-						case u.b.OFF:
+						case u.c.OFF:
 						default:
 							return {
 								isSubredditUpdatesInterestingPostEnabled: !1, isUpdateFromSubredditEnabled: !1
@@ -258,15 +258,15 @@
 				},
 				m = e => {
 					switch (e) {
-						case u.b.OFF:
+						case u.c.OFF:
 							return n.fbt._("Unfollowed. You won’t get updates on new activity anymore.", null, {
 								hk: "3e1CJR"
 							});
-						case u.b.FREQUENT:
+						case u.c.FREQUENT:
 							return n.fbt._("Followed! Now you’ll get updates on new activity.", null, {
 								hk: "3JzOOa"
 							});
-						case u.b.LOW:
+						case u.c.LOW:
 							return n.fbt._("Success! You will see fewer notifications from this community in the future.", null, {
 								hk: "4x3TS8"
 							});
@@ -353,7 +353,7 @@
 						clearMessageTabBadgeCount: () => e(Object(c.b)()),
 						decreaseSubredditNotifications: (t, i) => e(Object(u.d)({
 							subredditId: t,
-							notificationLevel: p.b.LOW,
+							notificationLevel: p.c.LOW,
 							undoCallback: i
 						})),
 						disableNotificationUpdates: t => e(Object(d.c)(t)),
@@ -613,4 +613,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/InboxTooltip.fcd47ad3f21d7c8115f2.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/InboxTooltip.c5a06702c68cdce7eef7.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/TopWeekPostsDiscoveryUnit.7716151e85b7e5da34c6.js
-// Retrieved at 10/19/2022, 9:50:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/TopWeekPostsDiscoveryUnit.f1e17172b7084522a285.js
+// Retrieved at 10/19/2022, 10:50:19 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["TopWeekPostsDiscoveryUnit"], {
 		"./src/lib/getShortenedLink.ts": function(e, t, s) {
@@ -510,7 +510,7 @@
 					}, O)));
 					const P = !k && !E;
 					let _;
-					return C && (_ = Object(oe.h)(C) ? Object(ne.b)(C) : Object(ne.c)(C)), a.a.createElement(Y.b, {
+					return C && (_ = Object(oe.i)(C) ? Object(ne.b)(C) : Object(ne.c)(C)), a.a.createElement(Y.b, {
 						className: Object(l.a)(pe.a.container, me.a.largeAndMediumActiveStyles, me.a.largeAndMediumPostStyles, le.a.postContainer, Object(re.a)(this.props), s),
 						post: p,
 						onClick: u,
@@ -1048,7 +1048,7 @@
 						onSubredditOrProfileClick: r,
 						shouldShowSubscribeButton: a,
 						subredditOrProfile: i
-					} = e, c = Object(v.h)(i) ? Q.a.PROFILE : Q.a.SUBREDDIT;
+					} = e, c = Object(v.i)(i) ? Q.a.PROFILE : Q.a.SUBREDDIT;
 					return n.a.createElement("div", {
 						className: Object(o.a)(J.a.header, t)
 					}, n.a.createElement(G.default, {
@@ -1084,7 +1084,7 @@
 				ee = s.n($);
 			const te = Object(i.a)(e => e.subredditOrProfile, e => e.subscribedProfiles, e => e.subscribedSubreddits, (e, t, s) => {
 				if (!e) return !1;
-				return (Object(v.h)(e) ? t : s).some(t => t.id === e.id)
+				return (Object(v.i)(e) ? t : s).some(t => t.id === e.id)
 			});
 			class se extends n.a.Component {
 				constructor() {
@@ -2393,4 +2393,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/TopWeekPostsDiscoveryUnit.7716151e85b7e5da34c6.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/TopWeekPostsDiscoveryUnit.f1e17172b7084522a285.js.map

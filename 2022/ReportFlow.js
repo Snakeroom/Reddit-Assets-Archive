@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ReportFlow.e195ea4771ba551ec287.js
-// Retrieved at 10/19/2022, 9:50:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ReportFlow.48f4f356180afef163bf.js
+// Retrieved at 10/19/2022, 10:50:19 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ReportFlow", "ReportFlowNew"], {
 		"./node_modules/@reddit/i18n-tools/runtime/helpers/locale/index.js": function(e, t, n) {
@@ -1688,7 +1688,7 @@
 				ve = c.a.wrapped(fe.i, "FreeFormTextArea", Ce.a),
 				Ee = Object(i.c)({
 					dropdownIsOpen: Object(ue.b)(ge),
-					freeFormReports: xe.G
+					freeFormReports: xe.H
 				});
 			class Se extends r.a.Component {
 				constructor(e) {
@@ -1780,7 +1780,7 @@
 					} = this, s = n.rulesSequence.getSequence(), a = t.subredditOrProfile ? t.subredditOrProfile.name : "";
 					return r.a.createElement(ae.a, {
 						key: "subreddit_rules_section_key",
-						title: t.subredditOrProfile && t.subredditOrProfile.type === Ie.f.User ? o.fbt._("It breaks u/{subredditName}'s rules", [o.fbt._param("subredditName", a)], {
+						title: t.subredditOrProfile && t.subredditOrProfile.type === Ie.g.User ? o.fbt._("It breaks u/{subredditName}'s rules", [o.fbt._param("subredditName", a)], {
 							hk: "QcQnb"
 						}) : o.fbt._("It breaks r/{subredditName}'s rules", [o.fbt._param("subredditName", a)], {
 							hk: "1Qdm9t"
@@ -3338,7 +3338,7 @@
 					var t;
 					const n = await Object(r.a)(e, c);
 					return Object(a.c)(n) && null !== (t = n.body.data.availableAudioRoomTopics) && void 0 !== t ? t : []
-				}, O = (e, t, n) => t.type === i.f.User ? Object(r.a)(e, {
+				}, O = (e, t, n) => t.type === i.g.User ? Object(r.a)(e, {
 					...l,
 					variables: n
 				}) : Object(r.a)(e, {
@@ -3347,7 +3347,7 @@
 						...n,
 						subredditId: t.id
 					}
-				}), w = (e, t, n) => t.type === i.f.User ? Object(r.a)(e, {
+				}), w = (e, t, n) => t.type === i.g.User ? Object(r.a)(e, {
 					...h,
 					variables: {
 						input: n
@@ -4013,4 +4013,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ReportFlow.e195ea4771ba551ec287.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ReportFlow.48f4f356180afef163bf.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CountryPage~Multireddit~reddit-components-AdHocMultiredditSidebar.ea6acd946327cd71391f.js
-// Retrieved at 10/19/2022, 9:50:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CountryPage~Multireddit~reddit-components-AdHocMultiredditSidebar.72b4ee9296f518eae994.js
+// Retrieved at 10/19/2022, 10:50:19 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CountryPage~Multireddit~reddit-components-AdHocMultiredditSidebar"], {
 		"./node_modules/lodash/take.js": function(e, t, i) {
@@ -72,9 +72,9 @@
 			})), i.d(t, "duplicateSuccess", (function() {
 				return Y
 			})), i.d(t, "duplicateRequested", (function() {
-				return $
-			})), i.d(t, "addSubredditPending", (function() {
 				return J
+			})), i.d(t, "addSubredditPending", (function() {
+				return $
 			})), i.d(t, "addSubredditSuccess", (function() {
 				return ee
 			})), i.d(t, "addSubredditFailure", (function() {
@@ -353,7 +353,7 @@
 						sort: b,
 						t: Object(F.a)(b, S)
 					}))
-				}, Z = Object(c.a)(R.k), X = Object(c.a)(R.l), Y = Object(c.a)(R.m), $ = e => {
+				}, Z = Object(c.a)(R.k), X = Object(c.a)(R.l), Y = Object(c.a)(R.m), J = e => {
 					let {
 						description: t,
 						displayName: i,
@@ -404,7 +404,7 @@
 							})
 						}))
 					}
-				}, J = Object(c.a)(R.b), ee = Object(c.a)(R.c), te = Object(c.a)(R.a), ie = e => {
+				}, $ = Object(c.a)(R.b), ee = Object(c.a)(R.c), te = Object(c.a)(R.a), ie = e => {
 					let {
 						communityInfo: t,
 						identifier: i,
@@ -417,7 +417,7 @@
 						const l = n(),
 							m = Object(T.k)(l);
 						if (!m || l.multireddits.api.addSubreddit.pending) return;
-						e(J({
+						e($({
 							name: i.name
 						}));
 						const {
@@ -434,7 +434,7 @@
 								method: o.ob.PUT
 							}))(c(), g, O);
 						if (S.ok) {
-							const n = Object(D.O)(l, {
+							const n = Object(D.P)(l, {
 									identifier: i
 								}) || t && t.id || "",
 								d = s.map(e => Object(I.h)(p, e));
@@ -599,7 +599,7 @@
 						if (!l || !l.subredditIds) return;
 						e(fe());
 						const u = r && r.reduce((e, t) => {
-								const i = Object(D.H)(o, t) || Object(D.I)(o, t);
+								const i = Object(D.I)(o, t) || Object(D.J)(o, t);
 								return i ? [...e, i] : e
 							}, []),
 							m = await Object(j.a)(d(), {
@@ -885,7 +885,7 @@
 			const h = p.a.wrapped(l.b, "SubredditIcon", b.a),
 				f = p.a.span("Label", b.a),
 				x = Object(c.c)({
-					subredditOrProfile: u.P
+					subredditOrProfile: u.Q
 				});
 			var y = Object(a.b)(x)(e => {
 				let {
@@ -1124,7 +1124,7 @@
 				Z = H.a.div("SidebarTitle", G.a),
 				X = H.a.wrapped(N.a, "SidebarFlair", G.a),
 				Y = H.a.div("Attributon", G.a),
-				$ = e => {
+				J = e => {
 					let {
 						children: t,
 						className: i
@@ -1134,14 +1134,14 @@
 						html: t
 					})
 				},
-				J = Object(M.a)(e => {
+				$ = Object(M.a)(e => {
 					let {
 						children: t,
 						onSeeMoreDetails: i,
 						size: s
 					} = e;
 					const n = !s || "number" != typeof s.height || s.height > 152;
-					return o.a.createElement("div", null, o.a.createElement($, {
+					return o.a.createElement("div", null, o.a.createElement(J, {
 						className: Object(u.a)(G.a.FadingDescription, {
 							[G.a.shouldFade]: n
 						})
@@ -1173,7 +1173,7 @@
 						hk: "1amskX"
 					}), " ", o.a.createElement(D.d, {
 						seconds: i.created
-					}))) : () => null, m = Object(A.f)(i) && i.description ? () => o.a.createElement(a, null, d ? o.a.createElement(J, {
+					}))) : () => null, m = Object(A.f)(i) && i.description ? () => o.a.createElement(a, null, d ? o.a.createElement($, {
 						onSeeMoreDetails: s
 					}, i.description) : o.a.createElement(q, {
 						html: i.description
@@ -1613,7 +1613,7 @@
 					return e
 				}).apply(this, arguments)
 			}
-			const $e = Object(l.a)(e => o.a.createElement(m.e, {
+			const Je = Object(l.a)(e => o.a.createElement(m.e, {
 					className: Xe.a.modalContainer
 				}, !e.shouldHideHeader && o.a.createElement(m.i, null, o.a.createElement(Ke.a, null, o.a.createElement(m.q, null, e.multireddit.displayText), o.a.createElement(He.a, {
 					onClick: e.onCloseModal
@@ -1625,7 +1625,7 @@
 					className: Xe.a.closeBtn,
 					onClick: e.onCloseModal
 				}, o.a.createElement(m.b, null)))),
-				Je = e => o.a.createElement($e, Ye({}, e, {
+				$e = e => o.a.createElement(Je, Ye({}, e, {
 					overlayCustomStyles: {
 						zIndex: Ge.b
 					},
@@ -1702,7 +1702,7 @@
 						subredditCategory: s,
 						onSeeMoreDetails: this.openModal,
 						onSubredditClick: this.props.trackSubredditClicked
-					}), this.state.showModal ? o.a.createElement(Je, {
+					}), this.state.showModal ? o.a.createElement($e, {
 						multireddit: i,
 						subredditCategory: s,
 						onCloseModal: this.closeModal,
@@ -2078,7 +2078,7 @@
 					shouldPrettyPrint: f,
 					explanationText: x,
 					shouldShowSubredditOnlineUsers: y = !1
-				} = e, O = Object(d.e)(e => Object(l.y)(e, {
+				} = e, O = Object(d.e)(e => Object(l.z)(e, {
 					subredditName: s
 				})), g = Object(c.d)(s), S = void 0 !== m ? r.fbt._({
 					"*": "{number} members",
@@ -2572,4 +2572,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CountryPage~Multireddit~reddit-components-AdHocMultiredditSidebar.ea6acd946327cd71391f.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CountryPage~Multireddit~reddit-components-AdHocMultiredditSidebar.72b4ee9296f518eae994.js.map

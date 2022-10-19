@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-MediumPost.3a535bd034fc4ea29225.js
-// Retrieved at 10/19/2022, 9:50:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-MediumPost.76311abc614aad752c91.js
+// Retrieved at 10/19/2022, 10:50:19 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-MediumPost"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -3947,7 +3947,7 @@
 					getEventFactory: e => Object(u.k)(s.id, e ? "unsubscribe" : "subscribe"),
 					identifier: {
 						name: O.name,
-						type: Object(p.h)(O) ? l.a.PROFILE : l.a.SUBREDDIT
+						type: Object(p.i)(O) ? l.a.PROFILE : l.a.SUBREDDIT
 					},
 					postId: s.id,
 					small: !0
@@ -4616,7 +4616,7 @@
 						userName: null == t ? void 0 : t.bannedBy
 					}) : null),
 					r = Object(v.b)(t),
-					c = Object(a.e)(e => Object(J.X)(e, {
+					c = Object(a.e)(e => Object(J.Y)(e, {
 						subredditId: r ? t.belongsTo.id : t.subredditId
 					})),
 					d = r && t.removedByCategory ? t.removedByCategory : null,
@@ -6197,7 +6197,7 @@
 					onFollowPostClick: q
 				} = e;
 				const K = A,
-					G = V && Object(E.h)(V),
+					G = V && Object(E.i)(V),
 					z = Object(i.e)(e => {
 						if (!G) return !0;
 						const t = Object(C.Gb)(e, L.author || "");
@@ -6889,7 +6889,7 @@
 				r = s("./src/reddit/actions/subscription/index.ts"),
 				i = s("./src/reddit/selectors/subreddit.ts");
 			t.a = Object(n.b)(() => Object(o.c)({
-				userIsSubscriber: i.jb
+				userIsSubscriber: i.kb
 			}), (e, t) => {
 				let {
 					identifier: s
@@ -9439,4 +9439,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-MediumPost.3a535bd034fc4ea29225.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-MediumPost.76311abc614aad752c91.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CoinPurchaseModal.7b2a48e344741cb27469.js
-// Retrieved at 10/19/2022, 9:50:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CoinPurchaseModal.178a9392a9f9cd8d42a6.js
+// Retrieved at 10/19/2022, 10:50:19 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CoinPurchaseModal", "gildActions"], {
 		"./src/reddit/actions/economics/powerups/helpers.ts": function(e, t, a) {
@@ -269,7 +269,7 @@
 						commentId: a
 					}), s = Object(N.k)(e), n = e.gild, {
 						isAnonymous: c
-					} = n, o = !c && s && (s.username || s.displayText) ? s.username || s.displayText : void 0, d = r ? r.author : void 0, i = Object(M.N)(e, {
+					} = n, o = !c && s && (s.username || s.displayText) ? s.username || s.displayText : void 0, d = r ? r.author : void 0, i = Object(M.O)(e, {
 						thingId: a
 					});
 					return re({
@@ -302,10 +302,10 @@
 						})
 					}
 					if (g.awardType === b.f.Moderator && void 0 === e.subredditCoins) {
-						const t = Object(M.N)(s, {
+						const t = Object(M.O)(s, {
 								thingId: p
 							}),
-							a = t && Object(M.E)(s, {
+							a = t && Object(M.F)(s, {
 								subredditName: t.name
 							});
 						a && (e.subredditCoins = a - g.coinPrice)
@@ -381,7 +381,7 @@
 							})), n ? a : r)
 						}
 					}
-					const L = Object(M.N)(s, {
+					const L = Object(M.O)(s, {
 						thingId: p
 					});
 					if (L && Object(I.a)(s, {
@@ -1949,4 +1949,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CoinPurchaseModal.7b2a48e344741cb27469.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CoinPurchaseModal.178a9392a9f9cd8d42a6.js.map

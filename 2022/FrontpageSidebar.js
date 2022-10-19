@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/FrontpageSidebar.fcc0c569ff53cb0b104f.js
-// Retrieved at 10/19/2022, 9:50:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/FrontpageSidebar.d9e94a145c3f1a835edb.js
+// Retrieved at 10/19/2022, 10:50:19 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["FrontpageSidebar"], {
 		"./node_modules/lodash/_arrayShuffle.js": function(e, t, n) {
@@ -37,9 +37,9 @@
 				i = n("./src/reddit/endpoints/subreddit/local.ts"),
 				o = n("./src/reddit/endpoints/subreddit/topSubreddits.ts"),
 				d = n("./src/reddit/helpers/graphql/normalizeTopSubredditsFromGql/index.ts");
-			const c = Object(s.a)(r.n),
-				l = Object(s.a)(r.m),
-				u = Object(s.a)(r.l),
+			const c = Object(s.a)(r.r),
+				l = Object(s.a)(r.q),
+				u = Object(s.a)(r.p),
 				m = Object(s.a)(r.a),
 				b = Object(s.a)(r.b),
 				p = Object(s.a)(r.c),
@@ -153,8 +153,8 @@
 				}))(S),
 				O = n("./node_modules/fbt/lib/FbtPublic.js"),
 				v = n("./src/lib/classNames/index.ts"),
-				j = n("./src/reddit/components/Hovercards/SubredditHovercard/index.tsx"),
-				T = n("./src/reddit/controls/InternalLink/index.tsx"),
+				T = n("./src/reddit/components/Hovercards/SubredditHovercard/index.tsx"),
+				j = n("./src/reddit/controls/InternalLink/index.tsx"),
 				C = n("./src/reddit/endpoints/goodContent/index.ts"),
 				w = n("./src/reddit/icons/svgs/ChevronDown/index.tsx"),
 				F = n("./src/reddit/components/SEOSidebarLinks/index.m.less"),
@@ -164,10 +164,10 @@
 						to: t,
 						title: n
 					} = e;
-					return d.a.createElement(j.a, {
+					return d.a.createElement(T.a, {
 						subredditName: n,
 						tooltipPosition: ["right", "top"]
-					}, d.a.createElement(T.default, {
+					}, d.a.createElement(j.default, {
 						className: P.a.Link,
 						to: t,
 						title: n
@@ -411,8 +411,8 @@
 				}),
 				Oe = n("./src/config.ts"),
 				ve = n("./src/lib/env/index.ts"),
-				je = n("./src/reddit/controls/Chip/index.tsx"),
-				Te = n("./src/reddit/helpers/trackers/widgets.ts"),
+				Te = n("./src/reddit/controls/Chip/index.tsx"),
+				je = n("./src/reddit/helpers/trackers/widgets.ts"),
 				Ce = n("./src/reddit/hooks/useTracking.ts");
 			const we = [{
 				getName: () => O.fbt._("Fashion", null, {
@@ -647,14 +647,14 @@
 					const t = e.topic.getName();
 					return d.a.createElement("div", {
 						className: Pe.a.itemContainer
-					}, d.a.createElement(je.a, {
+					}, d.a.createElement(Te.a, {
 						to: Le(e.topic.url),
-						onClick: () => e.sendEvent(Object(Te.c)(t))
+						onClick: () => e.sendEvent(Object(je.c)(t))
 					}, t))
 				};
 			var Ae = d.a.memo(e => {
 					const t = Object(Ce.a)();
-					Object(o.useEffect)(() => t(Object(Te.d)()), []);
+					Object(o.useEffect)(() => t(Object(je.d)()), []);
 					const n = we.map(e => ({
 						value: e,
 						sort: Object(ve.d)() ? .5 : Math.random()
@@ -713,10 +713,10 @@
 					},
 					bffsLeaderboardVariant: Me,
 					inRpanTopVideoEntrypointExperiment: Je.e,
-					rankings: e => Object(ze.S)(e, $e),
+					rankings: e => Object(ze.T)(e, $e),
 					shouldShowTopicsWidget: e => {
 						const t = Object(Je.e)(e),
-							n = !!Object(ze.S)(e, $e);
+							n = !!Object(ze.T)(e, $e);
 						return (!t || !n) && function(e) {
 							return Object(Ge.c)(e, {
 								experimentEligibilitySelector: Ze.Q,
@@ -873,7 +873,7 @@
 					return {
 						crosspost: n,
 						post: t,
-						subredditOrProfile: Object(g.P)(e, {
+						subredditOrProfile: Object(g.Q)(e, {
 							identifier: t.belongsTo
 						})
 					}
@@ -1544,11 +1544,11 @@
 						isOnLeaderboardPage: e.isOnLeaderboardPage,
 						isOnFrontpage: e.isOnFrontpage
 					})
-				}), !e.rankings.length && j),
-				j = c.a.createElement(c.a.Fragment, null, o()(5, e => c.a.createElement(p.a, {
+				}), !e.rankings.length && T),
+				T = c.a.createElement(c.a.Fragment, null, o()(5, e => c.a.createElement(p.a, {
 					key: e
 				}))),
-				T = e => {
+				j = e => {
 					const t = e.isSecondaryButton ? _.q : _.n,
 						n = e.linkColor ? {
 							backgroundColor: e.linkColor,
@@ -1635,7 +1635,7 @@
 					subreddits: t,
 					isOnLeaderboardPage: e.isOnLeaderboardPage,
 					isOnFrontpage: e.isOnFrontpage
-				}), c.a.createElement(T, {
+				}), c.a.createElement(j, {
 					categoryName: s,
 					categoryDisplayText: r,
 					isSecondaryButton: e.isSecondaryButton,
@@ -2230,4 +2230,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/FrontpageSidebar.fcc0c569ff53cb0b104f.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/FrontpageSidebar.d9e94a145c3f1a835edb.js.map

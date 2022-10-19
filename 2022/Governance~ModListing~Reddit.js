@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit.d124c7cc131689b99ad8.js
-// Retrieved at 10/19/2022, 9:50:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit.c566f4f73953bc9b9092.js
+// Retrieved at 10/19/2022, 10:50:19 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~ModListing~Reddit"], {
 		"./src/lib/CSSVariableProvider/withTheme.tsx": function(e, t, n) {
@@ -392,9 +392,9 @@
 		"./src/reddit/actions/notificationsInbox/index.ts": function(e, t, n) {
 			"use strict";
 			n.d(t, "d", (function() {
-				return L
-			})), n.d(t, "e", (function() {
 				return A
+			})), n.d(t, "e", (function() {
+				return L
 			})), n.d(t, "b", (function() {
 				return G
 			})), n.d(t, "i", (function() {
@@ -450,7 +450,7 @@
 			const k = Object(o.a)(c.e),
 				P = Object(o.a)(c.b),
 				w = Object(o.a)(c.a),
-				L = e => async (t, n, r) => {
+				A = e => async (t, n, r) => {
 					let {
 						gqlContext: o
 					} = r;
@@ -472,7 +472,7 @@
 						t(R(m.notifications, e.length))
 					}
 					t(P(m)), t(Object(s.b)(m.banners))
-				}, A = () => async (e, t, n) => {
+				}, L = () => async (e, t, n) => {
 					let {
 						gqlContext: r
 					} = n;
@@ -1092,7 +1092,7 @@
 						shouldHideNsfwIcon: !!e.shouldHideNsfwIcon,
 						subredditOrProfile: e.subredditOrProfile
 					});
-					Object(p.h)(e.subredditOrProfile) ? u = s.a.createElement(x, {
+					Object(p.i)(e.subredditOrProfile) ? u = s.a.createElement(x, {
 						className: e.className,
 						iconUrl: t,
 						isNSFW: e.subredditOrProfile.isNSFW,
@@ -1368,14 +1368,14 @@
 					user: k,
 					userName: P,
 					wrapperClassName: w,
-					...L
-				} = e, A = !!s && Object(l.e)(s) === P, D = A ? s : k, U = D && D.accountIcon || c, R = k ? k.isNSFW : p, M = Object(d.a)(U) && !b, B = M ? i.a.createElement(_.a, {
+					...A
+				} = e, L = !!s && Object(l.e)(s) === P, D = L ? s : k, U = D && D.accountIcon || c, R = k ? k.isNSFW : p, M = Object(d.a)(U) && !b, B = M ? i.a.createElement(_.a, {
 					headshot: U,
 					className: e.className,
 					hasNftBorder: m && Object(d.d)(c)
-				}) : i.a.createElement(x.b, S({}, L, {
+				}) : i.a.createElement(x.b, S({}, A, {
 					iconUrl: b && n ? "https://www.redditstatic.com/avatars/defaults/v2/avatar_default_3.png" : U,
-					isCurrentUser: A,
+					isCurrentUser: L,
 					isNSFW: R
 				})), [G, F] = Object(o.useState)(!1), H = Object(o.useMemo)(() => ({
 					input: {
@@ -1797,9 +1797,9 @@
 			})), n.d(t, "b", (function() {
 				return w
 			})), n.d(t, "o", (function() {
-				return L
-			})), n.d(t, "A", (function() {
 				return A
+			})), n.d(t, "A", (function() {
+				return L
 			})), n.d(t, "p", (function() {
 				return D
 			})), n.d(t, "B", (function() {
@@ -2214,7 +2214,7 @@
 			! function(e) {
 				e.DISMISS = "dismiss", e.BANNER = "banner", e.CTA_1 = "cta1", e.CTA_2 = "cta2"
 			}(w || (w = {}));
-			const L = (e, t) => n => ({
+			const A = (e, t) => n => ({
 					...u.o(n),
 					action: d.c.CLICK,
 					noun: "inbox_banner",
@@ -2227,7 +2227,7 @@
 						id: e
 					}
 				}),
-				A = (e, t) => n => ({
+				L = (e, t) => n => ({
 					...u.o(n),
 					action: d.c.CLICK,
 					noun: "inbox_banner",
@@ -2300,9 +2300,9 @@
 			})), n.d(t, "r", (function() {
 				return w
 			})), n.d(t, "o", (function() {
-				return L
-			})), n.d(t, "s", (function() {
 				return A
+			})), n.d(t, "s", (function() {
+				return L
 			})), n.d(t, "c", (function() {
 				return D
 			})), n.d(t, "l", (function() {
@@ -2462,13 +2462,13 @@
 								sort: c = i.Jb,
 								t: a = i.Kb
 							} = s;
-							Object(C.a)(L(o, c, n, r, a)(t));
+							Object(C.a)(A(o, c, n, r, a)(t));
 							break
 						}
 						case i.Sb.PROFILE_PRIVATE: {
 							const o = Object(u.d)(e, t);
 							if (!o) return;
-							Object(C.a)(A(o)(r, n)(t));
+							Object(C.a)(L(o)(r, n)(t));
 							break
 						}
 						case i.Sb.FOLLOWERS:
@@ -2637,7 +2637,7 @@
 						adblock: N.e(i)
 					}
 				},
-				L = (e, t, n, r, o) => i => {
+				A = (e, t, n, r, o) => i => {
 					const s = N.W(i, e);
 					s && (s.sort = t, o && (s.sortTime = o));
 					const {
@@ -2659,7 +2659,7 @@
 						adblock: N.e(i)
 					}
 				},
-				A = e => (t, n) => r => {
+				L = e => (t, n) => r => {
 					const o = !r.profilePrivatePage.api.error[e] && !r.profilePrivatePage.api.pending[e];
 					return {
 						source: "global",
@@ -2747,7 +2747,7 @@
 							success: t
 						}),
 						profile: N.U(e, Object(O.o)(e, r)),
-						subreddit: N.kb(e, Object(I.H)(e, n)),
+						subreddit: N.kb(e, Object(I.I)(e, n)),
 						userSubreddit: N.tb(e),
 						adblock: N.e(e)
 					})
@@ -2759,7 +2759,7 @@
 						noun: "screen",
 						...y(e),
 						profile: N.U(e, Object(O.o)(e, n)),
-						subreddit: N.kb(e, Object(I.H)(e, t)),
+						subreddit: N.kb(e, Object(I.I)(e, t)),
 						userSubreddit: N.tb(e),
 						adblock: N.e(e)
 					})
@@ -3432,7 +3432,7 @@
 							subredditId: t
 						})) return;
 					if (Object(f.N)(e)) return O(e);
-					const n = Object(b.L)(e, {
+					const n = Object(b.M)(e, {
 						identifier: {
 							id: t,
 							type: s.a.SUBREDDIT
@@ -3550,4 +3550,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit.d124c7cc131689b99ad8.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit.c566f4f73953bc9b9092.js.map
