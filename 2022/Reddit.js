@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Reddit.5676691568752ae1690f.js
-// Retrieved at 10/19/2022, 2:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Reddit.59fa59a41baeb0af102d.js
+// Retrieved at 10/19/2022, 3:40:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Reddit"], {
 		"./assets/fonts/BentonSans/font.less": function(e, t, n) {},
@@ -15163,7 +15163,7 @@
 				_l = n("./src/reddit/icons/fonts/Premium/index.tsx"),
 				Sl = n("./src/reddit/layout/row/InlineButton/index.tsx");
 			const Pl = e => Object(ti.c)(e, {
-				experimentName: Fn.fg,
+				experimentName: Fn.cg,
 				experimentEligibilitySelector: ti.a
 			}) === Fn.Rd;
 			var kl = n("./src/reddit/selectors/experiments/navbarLikeMweb.ts"),
@@ -18550,12 +18550,12 @@
 						broadcaster: t,
 						middleware: n => {
 							const s = n.getState();
-							return (Object(Mg.b)(s) || Object(v.N)(s) || Object(v.M)(s)) && (e = !0, Object(B.e)(t)), s => o => {
+							return (Object(Mg.b)(s) || Object(v.N)(s) || Object(v.M)(s)) && (e = !0, Object(B.c)(t)), s => o => {
 								const r = s(o),
 									a = n.getState();
 								if (!Object(Mg.b)(a)) {
 									const n = Object(v.N)(a) || Object(v.M)(a);
-									e && !n ? (e = !1, Object(B.e)(void 0), t.setState([])) : n && !e && (t.setState([]), Object(B.e)(t), e = !0)
+									e && !n ? (e = !1, Object(B.c)(void 0), t.setState([])) : n && !e && (t.setState([]), Object(B.c)(t), e = !0)
 								}
 								return r
 							}
@@ -19199,17 +19199,7 @@
 							headers: {
 								[o.a]: "1"
 							}
-						})), Object(B.d)("enabled" === Object(ti.c)(s.getState(), {
-							experimentEligibilitySelector: ti.a,
-							experimentName: Fn.Yf,
-							expEventOverride: !1
-						})), Object(B.c)("enabled" === Object(ti.c)(s.getState(), {
-							experimentEligibilitySelector: ti.a,
-							experimentName: Fn.ag
-						})), Object(B.g)("enabled" === Object(ti.c)(s.getState(), {
-							experimentEligibilitySelector: ti.a,
-							experimentName: Fn.Zf
-						})), Object(B.f)(yv.gqlContext), window.addEventListener("beforeunload", () => {
+						})), Object(B.d)(yv.gqlContext), window.addEventListener("beforeunload", () => {
 							const e = s.getState(),
 								t = Object(Nf.a)("tab_closed")(e),
 								n = G.g(t),
@@ -23063,4 +23053,4 @@
 		["./src/reddit/index.tsx", "runtime~Reddit", "vendors~CommentsPage~ModerationPages~Reddit~reddit-components-ClassicPost~reddit-components-CompactP~d737df3e", "vendors~CommentsPage~Governance~ModListing~ModerationPages~Reddit~Subreddit", "vendors~Chat~Governance~Reddit", "vendors~Reddit", "CommentsPage~Governance~Reddit~ReportFlow~Subreddit~reddit-components-BlankPost~reddit-components-Cl~5351df81", "Governance~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compo~bd4baca2", "ModListing~PostCreation~Reddit~StandalonePostPage~Subreddit", "Governance~ModListing~Reddit~ReportFlow~Subreddit", "Reddit~RpanListingUnit~reddit-components-LargePost~reddit-components-MediumPost", "Chat~Governance~Reddit", "Governance~Reddit~SubredditForkingCTA", "Governance~ModListing~Reddit", "Governance~Reddit"]
 	]
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit.5676691568752ae1690f.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit.59fa59a41baeb0af102d.js.map
