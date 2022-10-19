@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/AuthorHovercard.101f69517a2cbcaeffb1.js
-// Retrieved at 10/19/2022, 10:50:19 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/AuthorHovercard.64c7c2d3e50e10a33eed.js
+// Retrieved at 10/19/2022, 11:10:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["AuthorHovercard"], {
 		"./src/lib/constants/colors.ts": function(e, t, n) {
@@ -482,10 +482,10 @@
 				}, ce = (e, t) => async (n, a) => {
 					const r = a();
 					await Promise.all([(async () => {
-						if (!Object(I.b)(u.a.BAN_USER)(r) && !Object(N.V)(r, {
+						if (!Object(I.b)(u.a.BAN_USER)(r) && !Object(N.U)(r, {
 								subredditId: e
 							})) {
-							const t = Object(N.Y)(r, {
+							const t = Object(N.X)(r, {
 								subredditId: e
 							});
 							await n(Object(d.o)(t.name))
@@ -1616,7 +1616,7 @@
 							subredditId: n
 						}) : void 0
 					},
-					isCurrentUserBanned: (e, t) => !!Object(x.p)(t) && Object(x.jb)(e, t),
+					isCurrentUserBanned: (e, t) => !!Object(x.p)(t) && Object(x.ib)(e, t),
 					userProfileStyles: (e, t) => Object(v.m)(e, Object(h.o)(e, t.userName)),
 					acceptChats: (e, t) => {
 						const n = Object(h.i)(e, {
@@ -1629,7 +1629,7 @@
 							subredditId: n
 						} = t;
 						const a = Object(C.e)(e),
-							r = n || a && Object(x.I)(e, a.name);
+							r = n || a && Object(x.H)(e, a.name);
 						return !!r && Object(b.i)(e, r)
 					},
 					trophyCase: (e, t) => Object(h.t)(e, Object(h.o)(e, t.userName)),
@@ -1647,7 +1647,7 @@
 						let {
 							userName: n
 						} = t;
-						return Object(x.kb)(e, {
+						return Object(x.jb)(e, {
 							identifier: {
 								name: n,
 								type: "profile"
@@ -2605,7 +2605,7 @@
 						l = Object(o.e)(e => Object(j.zb)(e, {
 							userId: i
 						})),
-						u = Object(o.e)(e => Object(M.Y)(e, {
+						u = Object(o.e)(e => Object(M.X)(e, {
 							subredditId: s
 						})),
 						m = t[c],
@@ -6559,4 +6559,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/AuthorHovercard.101f69517a2cbcaeffb1.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/AuthorHovercard.64c7c2d3e50e10a33eed.js.map

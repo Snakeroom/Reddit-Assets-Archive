@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModQueue.8d873e1865f1d5ec2947.js
-// Retrieved at 10/19/2022, 10:50:19 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModQueue.f39e4d8aaef89697158d.js
+// Retrieved at 10/19/2022, 11:10:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModQueue"], {
 		"./src/reddit/actions/bulkActions/index.ts": function(e, t, o) {
@@ -347,11 +347,11 @@
 					includeModActivitySummaries: i
 				}
 			}
-			var I;
+			var C;
 			! function(e) {
 				e.Comment = "ModQueueItemComment", e.Post = "ModQueueItemPost", e.ChatComment = "ModQueueItemChatComment"
-			}(I || (I = {}));
-			const C = e => ({
+			}(C || (C = {}));
+			const I = e => ({
 					access: (null == e ? void 0 : e.isAccessEnabled) || !1,
 					all: (null == e ? void 0 : e.isAllAllowed) || !1,
 					chatConfig: (null == e ? void 0 : e.isChatConfigEditingAllowed) || !1,
@@ -428,7 +428,7 @@
 					var o;
 					if (!(null === (o = null == t ? void 0 : t.node) || void 0 === o ? void 0 : o.modPermissions)) return e;
 					const s = t.node.modPermissions;
-					return e.moderatingSubreddits[t.node.id] = C(s), e.subreddits[t.node.id] = Object(A.a)(t.node), e
+					return e.moderatingSubreddits[t.node.id] = I(s), e.subreddits[t.node.id] = Object(A.a)(t.node), e
 				}, {
 					subreddits: {},
 					moderatingSubreddits: {}
@@ -451,7 +451,7 @@
 					const {
 						id: m
 					} = l;
-					if (i.subreddits[m] = Object(A.a)(l), i.moderatingSubreddits[m] || "Subreddit" !== (null == l ? void 0 : l.__typename) || (i.moderatingSubreddits[m] = C(l.modPermissions)), !i.postFlair[m] && "Subreddit" === l.__typename) {
+					if (i.subreddits[m] = Object(A.a)(l), i.moderatingSubreddits[m] || "Subreddit" !== (null == l ? void 0 : l.__typename) || (i.moderatingSubreddits[m] = I(l.modPermissions)), !i.postFlair[m] && "Subreddit" === l.__typename) {
 						const {
 							position: e,
 							isEnabled: o
@@ -494,7 +494,7 @@
 							})) || {}
 						}
 					}
-					if (u === I.Comment || u === I.ChatComment) {
+					if (u === C.Comment || u === C.ChatComment) {
 						const {
 							commentInfo: e
 						} = c;
@@ -532,7 +532,7 @@
 							})
 						}), i.reports[t.id] = u
 					}
-					if (u === I.Post) {
+					if (u === C.Post) {
 						const {
 							postInfo: e
 						} = c;
@@ -843,7 +843,7 @@
 						if (e !== N.a.Approve && e !== N.a.Flair) {
 							let t, n;
 							const u = p.platform.currentPage && p.platform.currentPage.queryParams && p.platform.currentPage.queryParams.subreddit,
-								l = u && Object(D.I)(p, u);
+								l = u && Object(D.H)(p, u);
 							e === N.a.Remove && l && O.length > 1 && (t = s.fbt._("Add a removal reason", null, {
 								hk: "3gGDCl"
 							}), n = Object(a.fetchReasonsAndOpenModal)(l, O));
@@ -1164,8 +1164,8 @@
 				E = o("./src/lib/makeActionCreator/index.ts"),
 				k = o("./src/lib/makeCommentsPageKey/index.ts"),
 				x = o("./src/lib/makeDraftKey/index.ts"),
-				I = o("./src/reddit/actions/bulkActions/index.ts"),
-				C = o("./src/reddit/actions/comment/index.ts"),
+				C = o("./src/reddit/actions/bulkActions/index.ts"),
+				I = o("./src/reddit/actions/comment/index.ts"),
 				M = o("./src/reddit/actions/comment/authoring.ts"),
 				P = o("./src/reddit/actions/comment/moderation.ts"),
 				N = o("./src/reddit/actions/modal.ts"),
@@ -1311,7 +1311,7 @@
 						m = e[0],
 						b = Object(V.a)(m) ? z.e.Post : z.e.Comment,
 						p = b === z.e.Post ? u.posts.models[m] : u.features.comments.models[m],
-						f = b === z.e.Post ? w.R : C.j;
+						f = b === z.e.Post ? w.R : I.j;
 					if (!p || !l) return !1;
 					d(Oe()), d(f({
 						[m]: {
@@ -1366,7 +1366,7 @@
 												id: e.id,
 												postId: e.postId,
 												commentsPageKey: r
-											})), s && s !== e.id && d(Object(C.j)({
+											})), s && s !== e.id && d(Object(I.j)({
 												[s]: {
 													isStickied: !1
 												}
@@ -1432,7 +1432,7 @@
 								removalReason: t && t.title
 							}
 						};
-						if (d(Object(I.b)(s)), t) {
+						if (d(Object(C.b)(s)), t) {
 							const s = {
 									itemId: e,
 									message: o,
@@ -1752,4 +1752,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModQueue.8d873e1865f1d5ec2947.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModQueue.f39e4d8aaef89697158d.js.map

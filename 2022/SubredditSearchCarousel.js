@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditSearchCarousel.eab433a007946551fcbe.js
-// Retrieved at 10/19/2022, 10:50:19 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditSearchCarousel.7521c14451a09b33812b.js
+// Retrieved at 10/19/2022, 11:10:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditSearchCarousel"], {
 		"./src/reddit/actions/subreddit/subredditCarousel.ts": function(e, t, s) {
@@ -108,7 +108,7 @@
 					[h, O] = Object(c.useState)(null),
 					[C, I] = Object(c.useState)(0),
 					[B, k] = Object(c.useState)(void 0),
-					g = Object(l.e)(e => Object(E.D)(e, u));
+					g = Object(l.e)(e => Object(E.C)(e, u));
 				Object(c.useEffect)(() => {
 					(null == u ? void 0 : u.length) && f(Object(b.e)(u))
 				}, [u]);
@@ -136,7 +136,7 @@
 						source: "similar_communities",
 						action: "view",
 						noun: "module",
-						subreddit: e ? Object(E.Y)(t, {
+						subreddit: e ? Object(E.X)(t, {
 							subredditId: e
 						}) : void 0
 					}))(a))
@@ -211,7 +211,7 @@
 					actionInfo: {
 						reason: `${s}`
 					},
-					subreddit: Object(E.Y)(r, {
+					subreddit: Object(E.X)(r, {
 						subredditId: t
 					})
 				}))(e ? "unsubsribe" : "subscribe", t, s), [t]);
@@ -305,7 +305,7 @@
 						subreddits: Object(d.q)(e, {
 							listingKey: "SUBREDDIT_CAROUSEL_SEARCH_KEY"
 						}),
-						parentSubredditId: Object(l.I)(e, t)
+						parentSubredditId: Object(l.H)(e, t)
 					})),
 					p = Object(n.useMemo)(() => null == u ? void 0 : u.map(e => e.id), [u]);
 				return Object(n.useEffect)(() => {
@@ -472,4 +472,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditSearchCarousel.eab433a007946551fcbe.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditSearchCarousel.7521c14451a09b33812b.js.map

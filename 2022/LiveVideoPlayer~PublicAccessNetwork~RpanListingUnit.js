@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/LiveVideoPlayer~PublicAccessNetwork~RpanListingUnit.d3e00e74a83d92a9313c.js
-// Retrieved at 10/19/2022, 10:50:19 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/LiveVideoPlayer~PublicAccessNetwork~RpanListingUnit.f4bf802961d32445685f.js
+// Retrieved at 10/19/2022, 11:10:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["LiveVideoPlayer~PublicAccessNetwork~RpanListingUnit"], {
 		"./src/lib/VideoSession/VideoSessionManager.ts": function(e, t, s) {
@@ -908,15 +908,15 @@
 				_ = s("./src/reddit/helpers/userSnoovatar/index.ts"),
 				I = s("./src/reddit/icons/fonts/index.tsx"),
 				S = s("./src/reddit/icons/fonts/Downvote/index.tsx"),
-				k = s("./src/reddit/icons/fonts/Menu/index.tsx"),
-				y = s("./src/reddit/icons/fonts/Share/index.tsx"),
+				y = s("./src/reddit/icons/fonts/Menu/index.tsx"),
+				k = s("./src/reddit/icons/fonts/Share/index.tsx"),
 				R = s("./src/reddit/icons/fonts/Upvote/index.tsx"),
 				N = s("./src/reddit/icons/svgs/Checkmark/index.tsx"),
 				L = s("./src/reddit/icons/svgs/CircledPlanet/index.tsx"),
 				T = s("./src/reddit/icons/svgs/Hide/index.tsx"),
 				A = s("./src/reddit/icons/svgs/Lock/index.tsx"),
-				O = s("./src/reddit/icons/svgs/Plus/index.tsx"),
-				j = s("./src/reddit/icons/svgs/Remove/index.tsx"),
+				j = s("./src/reddit/icons/svgs/Plus/index.tsx"),
+				O = s("./src/reddit/icons/svgs/Remove/index.tsx"),
 				M = s("./src/reddit/icons/svgs/Report/index.tsx"),
 				V = s("./src/reddit/icons/svgs/Rules/index.tsx"),
 				D = s("./src/reddit/icons/svgs/Unlock/index.tsx"),
@@ -968,7 +968,7 @@
 						o(!0), t()
 					},
 					className: U.a.joinButton
-				}, r.a.createElement(O.a, {
+				}, r.a.createElement(j.a, {
 					className: U.a.plusIcon
 				}), r.a.createElement("span", {
 					className: U.a.joinText
@@ -1061,7 +1061,7 @@
 					defaultButtonOutline: !0,
 					dropdownId: te,
 					onClick: a,
-					icon: r.a.createElement(y.a, null)
+					icon: r.a.createElement(k.a, null)
 				}, r.a.createElement(x.b, {
 					className: U.a.menuOverflowItem,
 					displayText: Z._("Copy Link", null, {
@@ -1096,7 +1096,7 @@
 					name: "chat",
 					className: U.a.overflowItemIcon
 				})))
-			}, ae = i.a.wrapped(k.a, "menuIcon", U.a), re = e => {
+			}, ae = i.a.wrapped(y.a, "menuIcon", U.a), re = e => {
 				let t = 186;
 				if (e) {
 					t += 74 + 40
@@ -1224,7 +1224,7 @@
 					iconWrapperClassName: U.a.overflowItemIconWrapper,
 					key: `${ne}-end`,
 					onClick: l
-				}, r.a.createElement(j.a, {
+				}, r.a.createElement(O.a, {
 					className: U.a.endBroadcastIcon
 				}))))
 			}, ie = Object(n.b)(null, e => ({
@@ -1427,7 +1427,7 @@
 				return o && o.enableFollowers ? d : null
 			}, Ce = e => Object(n.e)(t => Object(h.Ab)(t, {
 				userName: e
-			})), xe = e => Object(n.e)(t => Object(H.kb)(t, {
+			})), xe = e => Object(n.e)(t => Object(H.jb)(t, {
 				identifier: {
 					name: e,
 					type: C.a.PROFILE
@@ -1447,7 +1447,7 @@
 				const {
 					id: s,
 					name: a
-				} = t, n = Ce(a), i = ke(n), c = i && Object(_.a)(n.accountIcon);
+				} = t, n = Ce(a), i = ye(n), c = i && Object(_.a)(n.accountIcon);
 				return r.a.createElement("div", {
 					className: Object(o.a)(U.a.subscribeToProfileAvatar, {
 						[U.a.snoovatarHeadshot]: c
@@ -1478,7 +1478,7 @@
 				xmlns: "http://www.w3.org/2000/svg"
 			}, r.a.createElement("path", {
 				d: "M12.8,6.4 L9.6,6.4 L9.6,3.2 C9.6,2.7576 9.2424,2.4 8.8,2.4 L7.2,2.4 C6.7576,2.4 6.4,2.7576 6.4,3.2 L6.4,6.4 L3.2,6.4 C2.7584,6.4 2.4,6.7576 2.4,7.2 L2.4,8.8 C2.4,9.2424 2.7584,9.6 3.2,9.6 L6.4,9.6 L6.4,12.8 C6.4,13.2424 6.7576,13.6 7.2,13.6 L8.8,13.6 C9.2424,13.6 9.6,13.2424 9.6,12.8 L9.6,9.6 L12.8,9.6 C13.2424,9.6 13.6,9.2424 13.6,8.8 L13.6,7.2 C13.6,6.7576 13.2424,6.4 12.8,6.4"
-			})), ke = e => {
+			})), ye = e => {
 				const t = Object(n.e)(h.k),
 					s = Object(n.e)(h.F),
 					a = Object(n.e)(h.kb);
@@ -1682,4 +1682,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/LiveVideoPlayer~PublicAccessNetwork~RpanListingUnit.d3e00e74a83d92a9313c.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/LiveVideoPlayer~PublicAccessNetwork~RpanListingUnit.f4bf802961d32445685f.js.map

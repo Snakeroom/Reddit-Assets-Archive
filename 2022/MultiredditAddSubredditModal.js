@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/MultiredditAddSubredditModal.f82199af9c2eb354c850.js
-// Retrieved at 10/19/2022, 10:50:19 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/MultiredditAddSubredditModal.08c41e245e6bdfc54b41.js
+// Retrieved at 10/19/2022, 11:10:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["MultiredditAddSubredditModal"], {
 		"./node_modules/lodash/without.js": function(e, t, r) {
@@ -32,9 +32,9 @@
 			})), r.d(t, "createPending", (function() {
 				return H
 			})), r.d(t, "createSuccess", (function() {
-				return J
-			})), r.d(t, "createRequested", (function() {
 				return Q
+			})), r.d(t, "createRequested", (function() {
+				return J
 			})), r.d(t, "reloadCurrentMultiredditFeedRequested", (function() {
 				return B
 			})), r.d(t, "duplicateFailure", (function() {
@@ -249,7 +249,7 @@
 							}))
 						}
 					}
-				}, K = Object(c.a)(M.e), H = Object(c.a)(M.f), J = Object(c.a)(M.g), Q = e => {
+				}, K = Object(c.a)(M.e), H = Object(c.a)(M.f), Q = Object(c.a)(M.g), J = e => {
 					let {
 						description: t,
 						displayName: r,
@@ -279,7 +279,7 @@
 							const {
 								id: t
 							} = m;
-							if (await e(J({
+							if (await e(Q({
 									multireddit: F(p.body.data),
 									multiredditsModelsState: l.multireddits.models,
 									userId: t
@@ -406,7 +406,7 @@
 								method: a.ob.PUT
 							}))(c(), y, O);
 						if (j.ok) {
-							const d = Object(R.P)(l, {
+							const d = Object(R.O)(l, {
 									identifier: r
 								}) || t && t.id || "",
 								n = s.map(e => Object(E.h)(p, e));
@@ -571,7 +571,7 @@
 						if (!l || !l.subredditIds) return;
 						e(he());
 						const u = i && i.reduce((e, t) => {
-								const r = Object(R.I)(a, t) || Object(R.J)(a, t);
+								const r = Object(R.H)(a, t) || Object(R.I)(a, t);
 								return r ? [...e, r] : e
 							}, []),
 							m = await Object(_.a)(n(), {
@@ -889,7 +889,7 @@
 					onSubmit: r => {
 						e.currentSubredditOrProfile && t.onAddToMulireddits({
 							name: e.currentSubredditOrProfile.name,
-							type: e.currentSubredditOrProfile.type === E.g.User ? C.a.PROFILE : C.a.SUBREDDIT
+							type: e.currentSubredditOrProfile.type === E.f.User ? C.a.PROFILE : C.a.SUBREDDIT
 						}, r)
 					}
 				}));
@@ -964,7 +964,7 @@
 						const {
 							currentSubredditOrProfile: t
 						} = this.props;
-						return t && (t.type === E.g.User && e.profileIds && e.profileIds.indexOf(t.id) > -1 || t.type !== E.g.User && e.subredditIds && e.subredditIds.indexOf(t.id) > -1) || !1
+						return t && (t.type === E.f.User && e.profileIds && e.profileIds.indexOf(t.id) > -1 || t.type !== E.f.User && e.subredditIds && e.subredditIds.indexOf(t.id) > -1) || !1
 					}, this.inputRef = null, this.recentRef = null, this.scrollRef = null, this.onCheckFnCache = {}
 				}
 				render() {
@@ -1489,4 +1489,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/MultiredditAddSubredditModal.f82199af9c2eb354c850.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/MultiredditAddSubredditModal.08c41e245e6bdfc54b41.js.map

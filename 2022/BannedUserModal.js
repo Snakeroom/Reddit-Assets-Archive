@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/BannedUserModal.92c6b980126e9c782c37.js
-// Retrieved at 10/19/2022, 10:50:19 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/BannedUserModal.d240e9922b1911a6f939.js
+// Retrieved at 10/19/2022, 11:10:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["BannedUserModal"], {
 		"./src/reddit/actions/subredditModeration/ban.ts": function(e, t, n) {
@@ -181,7 +181,7 @@
 						return e
 				}
 			};
-			var X = function() {
+			var W = function() {
 					let e = arguments.length > 0 && void 0 !== arguments[0] && arguments[0],
 						t = arguments.length > 1 ? arguments[1] : void 0;
 					switch (t.type) {
@@ -194,9 +194,9 @@
 							return e
 					}
 				},
-				W = Object(O.c)({
+				X = Object(O.c)({
 					error: H,
-					pending: X
+					pending: W
 				});
 			var G = function() {
 					let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : null,
@@ -214,7 +214,7 @@
 					}
 				},
 				J = Object(O.c)({
-					api: W,
+					api: X,
 					result: G
 				});
 			const Z = {};
@@ -271,8 +271,8 @@
 					banned: K
 				}
 			});
-			const V = Object(o.a)(k.s),
-				z = Object(o.a)(k.r),
+			const z = Object(o.a)(k.s),
+				V = Object(o.a)(k.r),
 				Y = Object(o.a)(k.q),
 				$ = function(e) {
 					let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : {};
@@ -285,13 +285,13 @@
 							i = Object(C.e)(e, d),
 							l = o.features.banned.fetchedTokens[i];
 						if (o.features.banned.api.pending[i] || l) return;
-						n(V({
+						n(z({
 							subredditId: e,
 							fetchedToken: d
 						}));
 						const c = o.subreddits.models[e].name,
 							u = await x(a(), c, t);
-						u.ok ? n(z({
+						u.ok ? n(V({
 							...u.body,
 							fetchedToken: d
 						})) : n(Y({
@@ -396,10 +396,10 @@
 				}, ie = (e, t) => async (n, s) => {
 					const r = s();
 					await Promise.all([(async () => {
-						if (!Object(S.b)(u.a.BAN_USER)(r) && !Object(w.V)(r, {
+						if (!Object(S.b)(u.a.BAN_USER)(r) && !Object(w.U)(r, {
 								subredditId: e
 							})) {
-							const t = Object(w.Y)(r, {
+							const t = Object(w.X)(r, {
 								subredditId: e
 							});
 							await n(Object(l.o)(t.name))
@@ -498,7 +498,7 @@
 					hk: "2To19l"
 				})],
 				f = Object(d.c)({
-					subredditRules: m.X
+					subredditRules: m.W
 				}),
 				g = Object(o.b)(f);
 			class x extends a.a.Component {
@@ -1043,4 +1043,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/BannedUserModal.92c6b980126e9c782c37.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/BannedUserModal.d240e9922b1911a6f939.js.map

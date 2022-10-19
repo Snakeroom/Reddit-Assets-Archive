@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Econ-Prediction.edb35a4efe2cad503169.js
-// Retrieved at 10/19/2022, 10:50:19 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Econ-Prediction.194c302b92750341bc8e.js
+// Retrieved at 10/19/2022, 11:10:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Econ-Prediction"], {
 		"./src/lib/constants/specialMembership.ts": function(e, t, n) {
@@ -383,7 +383,7 @@
 
 			function d(e) {
 				const t = Object(r.d)(),
-					n = Object(r.e)(t => Object(a.Y)(t, {
+					n = Object(r.e)(t => Object(a.X)(t, {
 						subredditId: e
 					})),
 					s = Object(r.e)(t => Object(c.i)(t, {
@@ -627,21 +627,21 @@
 				R = n("./src/reddit/components/Econ/Prediction/PredictionEducationMessage/PredictionEndedEducationMessage/index.m.less"),
 				G = n.n(R);
 			const {
-				fbt: Y
+				fbt: W
 			} = n("./node_modules/fbt/lib/FbtPublic.js");
 
-			function W(e) {
+			function Y(e) {
 				let {
 					didParticipate: t
 				} = e;
-				const n = Y._("This prediction has ended", null, {
+				const n = W._("This prediction has ended", null, {
 						hk: "3VMLnq"
 					}),
-					s = o.a.createElement(o.a.Fragment, null, Y._("The outcome is pending.", null, {
+					s = o.a.createElement(o.a.Fragment, null, W._("The outcome is pending.", null, {
 						hk: "4tsv1U"
 					}), t && o.a.createElement("div", {
 						className: G.a.notificationBlurb
-					}, Y._("You'll be notified when the results are in.", null, {
+					}, W._("You'll be notified when the results are in.", null, {
 						hk: "45tyVv"
 					})));
 				return o.a.createElement("div", null, o.a.createElement(U.a, {
@@ -687,8 +687,8 @@
 					message: t
 				}))
 			}
-			var z = n("./src/reddit/components/Econ/Prediction/TournamentTokenIcon/index.tsx"),
-				X = n("./src/reddit/icons/svgs/CoinV2/index.tsx"),
+			var X = n("./src/reddit/components/Econ/Prediction/TournamentTokenIcon/index.tsx"),
+				z = n("./src/reddit/icons/svgs/CoinV2/index.tsx"),
 				q = n("./src/reddit/components/Econ/Prediction/PredictionEducationMessage/PredictionResolvedEducationMessage/index.m.less"),
 				H = n.n(q);
 			const {
@@ -709,10 +709,10 @@
 						id: t
 					} = e;
 					return t === i
-				})) || void 0 === n ? void 0 : n.userStakeAmount) || 0, m = s ? o.a.createElement(z.a, {
+				})) || void 0 === n ? void 0 : n.userStakeAmount) || 0, m = s ? o.a.createElement(X.a, {
 					className: H.a.coinIcon,
 					tournamentId: s
-				}) : o.a.createElement(X.a, {
+				}) : o.a.createElement(z.a, {
 					className: H.a.coinIcon
 				});
 				return d && !l ? o.a.createElement("div", null, o.a.createElement(U.a, {
@@ -775,7 +775,7 @@
 				} = t, a = s < Date.now(), d = !L()(i), l = a && n && !r;
 				return a ? r ? o.a.createElement(Q, {
 					prediction: t
-				}) : l ? o.a.createElement(K, null) : o.a.createElement(W, {
+				}) : l ? o.a.createElement(K, null) : o.a.createElement(Y, {
 					didParticipate: !!c
 				}) : o.a.createElement(V, {
 					isTokens: d,
@@ -849,7 +849,7 @@
 					totalVoters: d
 				}), o.a.createElement("span", null, "·")), u && i > 0 && o.a.createElement("div", {
 					className: ne.a.statusBar
-				}, o.a.createElement(X.a, {
+				}, o.a.createElement(z.a, {
 					className: ne.a.coinIcon
 				}), i, " ", ae._("added by participants", null, {
 					hk: "PSq3T"
@@ -930,7 +930,7 @@
 				} = e;
 				const s = Object(k.a)(),
 					i = Object(Oe.a)(),
-					c = Object(r.e)(e => Object(xe.Y)(e, {
+					c = Object(r.e)(e => Object(xe.X)(e, {
 						subredditId: t
 					})),
 					d = Object(r.e)(e => Object(fe.b)(e, {
@@ -1476,9 +1476,9 @@
 			})), n.d(t, "v", (function() {
 				return G
 			})), n.d(t, "b", (function() {
-				return Y
-			})), n.d(t, "w", (function() {
 				return W
+			})), n.d(t, "w", (function() {
+				return Y
 			})), n.d(t, "s", (function() {
 				return V
 			})), n.d(t, "t", (function() {
@@ -1689,14 +1689,14 @@
 					const t = e.economics.paymentSystems;
 					return t.status === l.a.Fetched && !!t.data && !!t.data.stripe && !!t.data.stripe.stripeAccountId
 				},
-				Y = (e, t) => {
+				W = (e, t) => {
 					let {
 						subredditId: n
 					} = t;
 					if (!n) return;
 					return e.economics.emotes[n]
 				},
-				W = (e, t) => {
+				Y = (e, t) => {
 					const n = t && e.economics.gifs[t];
 					return !!n && n.hasGifProduct
 				},
@@ -1715,27 +1715,27 @@
 				K = (e, t, n) => {
 					if (Object(f.a)(e)) return !(!t || !Object(m.C)(e, {
 						subredditId: t
-					})) || (!!X(e, t) || !(!s.d.spGiphy(e) || !z(e, n)));
+					})) || (!!z(e, t) || !(!s.d.spGiphy(e) || !X(e, n)));
 					if (!Object(h.b)(e, {
 							subredditId: t
 						})) return !1;
 					if (Object(E.p)(e, {
 							subredditId: t
 						})) return !0;
-					if (z(e, n)) return !0;
+					if (X(e, n)) return !0;
 					const o = s.d.spGiphy(e),
-						r = W(e, t);
-					return !!X(e, t) || o && r
+						r = Y(e, t);
+					return !!z(e, t) || o && r
 				},
-				z = (e, t) => {
+				X = (e, t) => {
 					const n = "replyToPost" !== t && Object(b.b)(e, {
 						commentId: t
 					});
 					if (n && Object(r.b)(n)) return !0
 				},
-				X = (e, t) => {
+				z = (e, t) => {
 					const n = s.d.spGiphy(e),
-						o = W(e, t);
+						o = Y(e, t);
 					return n && o
 				},
 				q = (e, t, n) => {
@@ -1748,4 +1748,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Econ-Prediction.edb35a4efe2cad503169.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Econ-Prediction.194c302b92750341bc8e.js.map

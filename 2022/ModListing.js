@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModListing.5aa094af8cfdcb645875.js
-// Retrieved at 10/19/2022, 10:50:19 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModListing.ef1cd67ef746bddfc489.js
+// Retrieved at 10/19/2022, 11:10:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModListing"], {
 		"./node_modules/classnames/index.js": function(e, t, n) {
@@ -459,11 +459,11 @@
 			})), n.d(t, "unhideSubredditFailed", (function() {
 				return Q
 			})), n.d(t, "toggleHiddenSubreddit", (function() {
-				return Y
-			})), n.d(t, "hideSubreddit", (function() {
 				return W
-			})), n.d(t, "unhideSubreddit", (function() {
+			})), n.d(t, "hideSubreddit", (function() {
 				return X
+			})), n.d(t, "unhideSubreddit", (function() {
+				return Y
 			}));
 			var r = n("./node_modules/fbt/lib/FbtPublic.js"),
 				s = n("./node_modules/lodash/pick.js"),
@@ -614,7 +614,7 @@
 				U = Object(d.a)(M.l),
 				J = Object(d.a)(M.k),
 				Q = Object(d.a)(M.j),
-				Y = (e, t) => async (n, r, s) => {
+				W = (e, t) => async (n, r, s) => {
 					let {
 						apiContext: i
 					} = s;
@@ -629,7 +629,7 @@
 					n(a(e));
 					const b = await u(i(), d.displayText, e);
 					b.ok ? (await n(R(m.routeMatch.match, !0)), n(c(e))) : n(l(b.body))
-				}, W = e => Y(e, !0), X = e => Y(e, !1)
+				}, X = e => W(e, !0), Y = e => W(e, !1)
 		},
 		"./src/reddit/actions/postList.ts": function(e, t, n) {
 			"use strict";
@@ -1175,7 +1175,7 @@
 			const h = p.a.wrapped(l.b, "SubredditIcon", b.a),
 				g = p.a.span("Label", b.a),
 				f = Object(c.c)({
-					subredditOrProfile: u.Q
+					subredditOrProfile: u.P
 				});
 			var y = Object(a.b)(f)(e => {
 				let {
@@ -1319,7 +1319,7 @@
 						} = t;
 						return Object(_.D)(e, n, r, s)
 					}),
-					subredditsById: v.fb,
+					subredditsById: v.eb,
 					viewportDataLoaded: O.a,
 					pageReferrer: b.V,
 					postListPlaceholderComponent: () => g.a,
@@ -2038,11 +2038,11 @@
 				U = n("./src/reddit/layout/row/Inline/index.tsx"),
 				J = n("./src/reddit/components/ModListingSidebar/HideCommunities/HideInput/index.m.less"),
 				Q = n.n(J);
-			const Y = Object(a.c)({
+			const W = Object(a.c)({
 				apiError: e => e.modListingPage.filteredSubreddits.api.error,
 				isApiPending: q
 			});
-			class W extends o.a.Component {
+			class X extends o.a.Component {
 				constructor() {
 					super(...arguments), this.state = {
 						subredditInput: ""
@@ -2086,9 +2086,9 @@
 					}, e.apiError.explanation))
 				}
 			}
-			var X = Object(d.b)(Y, e => ({
+			var Y = Object(d.b)(W, e => ({
 					hide: t => e(Object(m.hideSubreddit)(t))
-				}))(Object(R.c)(W)),
+				}))(Object(R.c)(X)),
 				z = n("./src/lib/lessComponent.tsx"),
 				Z = n("./src/reddit/components/SubredditIcon/index.tsx"),
 				$ = n("./src/reddit/icons/fonts/Clear/index.tsx"),
@@ -2100,7 +2100,7 @@
 				ie = Object(a.c)({
 					isApiPending: q,
 					subredditOrProfile: (e, t) => {
-						const n = Object(te.C)(e, {
+						const n = Object(te.B)(e, {
 							subredditName: t.subredditName
 						});
 						if (!n) {
@@ -2196,7 +2196,7 @@
 						hk: "YdVw7"
 					})), e.filtered && o.a.createElement("div", {
 						className: be.a.inputContainer
-					}, o.a.createElement(X, null), o.a.createElement(ue, {
+					}, o.a.createElement(Y, null), o.a.createElement(ue, {
 						hiddenSubredditsNames: e.hiddenSubredditsNames
 					})))
 				}
@@ -2420,7 +2420,7 @@
 			const a = (e, t) => {
 					const n = e.focusedVerticals.interactedSubredditIds && e.focusedVerticals.interactedSubredditIds[t];
 					if (n) {
-						const t = Object(o.Y)(e, {
+						const t = Object(o.X)(e, {
 							subredditId: n
 						});
 						return t && t.displayText || ""
@@ -2433,14 +2433,14 @@
 				m = Object(r.a)((e, t) => {
 					const n = b(e, t);
 					if (!n) return u;
-					const r = Object(o.cb)(e, {
+					const r = Object(o.bb)(e, {
 						subredditName: n.name
 					});
 					return r && r.postIds && r.postIds.length ? r.postIds : u
 				}),
 				b = (e, t) => {
 					const n = e.focusedVerticals.recommendedSubredditIds && e.focusedVerticals.recommendedSubredditIds[t];
-					return n ? Object(o.Y)(e, {
+					return n ? Object(o.X)(e, {
 						subredditId: n
 					}) : null
 				},
@@ -2499,4 +2499,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModListing.5aa094af8cfdcb645875.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModListing.ef1cd67ef746bddfc489.js.map

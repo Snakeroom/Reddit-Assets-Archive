@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditTopContent.ae290ce7ca3ca22c5bf2.js
-// Retrieved at 10/19/2022, 10:50:19 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditTopContent.bd01feec5893f23efdc7.js
+// Retrieved at 10/19/2022, 11:10:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditTopContent"], {
 		"./src/lib/getShortenedLink.ts": function(e, t, s) {
@@ -474,7 +474,7 @@
 					}, v)));
 					const _ = !O && !E;
 					let j;
-					return C && (j = Object(oe.i)(C) ? Object(ne.b)(C) : Object(ne.c)(C)), r.a.createElement(J.b, {
+					return C && (j = Object(oe.h)(C) ? Object(ne.b)(C) : Object(ne.c)(C)), r.a.createElement(J.b, {
 						className: Object(l.a)(pe.a.container, me.a.largeAndMediumActiveStyles, me.a.largeAndMediumPostStyles, le.a.postContainer, Object(ae.a)(this.props), s),
 						post: p,
 						onClick: u,
@@ -2018,4 +2018,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditTopContent.ae290ce7ca3ca22c5bf2.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditTopContent.bd01feec5893f23efdc7.js.map
