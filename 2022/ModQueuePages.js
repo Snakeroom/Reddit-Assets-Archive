@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModQueuePages.c2aca053cf17ff55ebe7.js
-// Retrieved at 10/18/2022, 6:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModQueuePages.ca691ba20164f4ef23eb.js
+// Retrieved at 10/19/2022, 9:50:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModQueuePages"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -5613,8 +5613,8 @@
 				i = n("./src/reddit/selectors/experiments/modqueueActionBarUXImprovements.ts");
 			const a = e => Object(i.a)(e) && Object(s.c)(e, {
 				experimentEligibilitySelector: r.Q,
-				experimentName: o.Cc
-			}) === o.Qd
+				experimentName: o.Dc
+			}) === o.Rd
 		},
 		"./src/redditGQL/operations/DeleteSubredditMuteSettings.json": function(e) {
 			e.exports = JSON.parse('{"id":"c518a45f60a5"}')
@@ -5627,4 +5627,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModQueuePages.c2aca053cf17ff55ebe7.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModQueuePages.ca691ba20164f4ef23eb.js.map

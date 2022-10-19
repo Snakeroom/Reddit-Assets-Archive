@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Settings.fa949cecc8d98c45c5f5.js
-// Retrieved at 10/18/2022, 6:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Settings.033e8b18e3afe60e7e1a.js
+// Retrieved at 10/19/2022, 9:50:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Settings"], {
 		"./node_modules/moment/locale sync recursive ^\\.\\/.*$": function(e, t, n) {
@@ -3534,7 +3534,7 @@
 						}) : void 0
 					},
 					isCurrentUserBanned: (e, t) => !!Object(v.p)(t) && Object(v.ib)(e, t),
-					userProfileStyles: (e, t) => Object(g.m)(e, Object(f.n)(e, t.userName)),
+					userProfileStyles: (e, t) => Object(g.m)(e, Object(f.o)(e, t.userName)),
 					acceptChats: (e, t) => {
 						const n = Object(f.i)(e, {
 							profileName: t.userName
@@ -3549,7 +3549,7 @@
 							r = n || s && Object(v.H)(e, s.name);
 						return !!r && Object(p.i)(e, r)
 					},
-					trophyCase: (e, t) => Object(f.s)(e, Object(f.n)(e, t.userName)),
+					trophyCase: (e, t) => Object(f.t)(e, Object(f.o)(e, t.userName)),
 					isNightMode: y.db,
 					lastAuthorModNote: (e, t) => {
 						if (!t.contextId) return;
@@ -14432,9 +14432,9 @@
 					},
 					isDspEnabled: e => {
 						return Object(se.c)(e, {
-							experimentName: ne.jd,
+							experimentName: ne.kd,
 							experimentEligibilitySelector: se.a
-						}) === ne.Qd
+						}) === ne.Rd
 					}
 				}),
 				bo = Object(fe.u)(),
@@ -14987,7 +14987,7 @@
 			const o = e => Object(r.c)(e, {
 				experimentName: s.E,
 				experimentEligibilitySelector: () => Object(a.P)(e)
-			}) === s.Qd
+			}) === s.Rd
 		},
 		"./src/reddit/selectors/gold/productOffers.ts": function(e, t, n) {
 			"use strict";
@@ -15151,4 +15151,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Settings.fa949cecc8d98c45c5f5.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Settings.033e8b18e3afe60e7e1a.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostSetPage.d367a5ce1073b88a10c6.js
-// Retrieved at 10/18/2022, 6:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostSetPage.069c0d8a019653e86503.js
+// Retrieved at 10/19/2022, 9:50:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostSetPage"], {
 		"./node_modules/intersection-observer/intersection-observer.js": function(e, t) {
@@ -1062,7 +1062,7 @@
 				const t = Object(i.f)().getState(),
 					n = Object(h.a)(t, Object(d.c)());
 				if (e.isD2xPdpSideRailRecsEnabled) {
-					const t = e.d2xPdpSideRailRecsVariant === u.ad.GreyRereddit || e.d2xPdpSideRailRecsVariant === u.ad.GreyRedditNoNsfw || e.d2xPdpSideRailRecsVariant === u.ad.LargeImagePreview ? e.reredditButtons : [];
+					const t = e.d2xPdpSideRailRecsVariant === u.bd.GreyRereddit || e.d2xPdpSideRailRecsVariant === u.bd.GreyRedditNoNsfw || e.d2xPdpSideRailRecsVariant === u.bd.LargeImagePreview ? e.reredditButtons : [];
 					return s.a.createElement(k, {
 						reredditContent: t,
 						countryCode: e.countryCode
@@ -1169,7 +1169,7 @@
 				f = n.n(h);
 			const g = Object(d.c)({
 					currentUser: p.k,
-					moderated: m.o,
+					moderated: m.p,
 					subscriptions: b.e,
 					hasMoreModerated: m.e,
 					loadMorePending: m.b
@@ -1265,7 +1265,7 @@
 			const h = Object(a.c)({
 					hasMoreMultireddits: m.f,
 					loadMorePending: m.c,
-					multireddits: m.p
+					multireddits: m.q
 				}),
 				f = Object(o.b)(h, (e, t) => ({
 					onLoadMoreMultireddits: () => e(Object(c.i)(t.profileName, !0))
@@ -1588,7 +1588,7 @@
 					let {
 						profileName: n
 					} = t;
-					return Object(f.s)(e, Object(f.n)(e, n))
+					return Object(f.t)(e, Object(f.o)(e, n))
 				}
 			}, h);
 			t.a = Object(o.b)(v)(e => {
@@ -2720,13 +2720,13 @@
 					return Object(s.c)(e, {
 						experimentEligibilitySelector: () => t,
 						experimentName: r.xc
-					}) === r.Qd
+					}) === r.Rd
 				},
 				o = e => {
 					return Object(s.c)(e, {
 						experimentEligibilitySelector: s.a,
 						experimentName: r.wc
-					}) === r.Qd
+					}) === r.Rd
 				}
 		},
 		"./src/reddit/selectors/focusedVerticalSuggestion.ts": function(e, t, n) {
@@ -2862,4 +2862,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostSetPage.d367a5ce1073b88a10c6.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostSetPage.069c0d8a019653e86503.js.map

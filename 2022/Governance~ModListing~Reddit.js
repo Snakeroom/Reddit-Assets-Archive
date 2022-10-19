@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit.7b5cbb6dd5620d602400.js
-// Retrieved at 10/18/2022, 6:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit.d124c7cc131689b99ad8.js
+// Retrieved at 10/19/2022, 9:50:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~ModListing~Reddit"], {
 		"./src/lib/CSSVariableProvider/withTheme.tsx": function(e, t, n) {
@@ -2746,7 +2746,7 @@
 						actionInfo: N.d(e, {
 							success: t
 						}),
-						profile: N.U(e, Object(O.n)(e, r)),
+						profile: N.U(e, Object(O.o)(e, r)),
 						subreddit: N.kb(e, Object(I.H)(e, n)),
 						userSubreddit: N.tb(e),
 						adblock: N.e(e)
@@ -2758,7 +2758,7 @@
 						action: "view",
 						noun: "screen",
 						...y(e),
-						profile: N.U(e, Object(O.n)(e, n)),
+						profile: N.U(e, Object(O.o)(e, n)),
 						subreddit: N.kb(e, Object(I.H)(e, t)),
 						userSubreddit: N.tb(e),
 						adblock: N.e(e)
@@ -3443,7 +3443,7 @@
 					return r ? r * o.Xb < 1639443600180 ? void 0 : O(e) : void 0
 				},
 				O = Object(r.a)(e => Object(c.c)(e, {
-					experimentName: i.Me,
+					experimentName: i.Ne,
 					experimentEligibilitySelector: a.e
 				}), d.a)
 		},
@@ -3550,4 +3550,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit.7b5cbb6dd5620d602400.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit.d124c7cc131689b99ad8.js.map

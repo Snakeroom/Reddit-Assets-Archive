@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-ProfileIdCard.b3db19bc4d582206b587.js
-// Retrieved at 10/18/2022, 6:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-ProfileIdCard.be23178cf0a090ada763.js
+// Retrieved at 10/19/2022, 9:50:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-ProfileIdCard"], {
 		"./node_modules/lodash/compact.js": function(e, t) {
@@ -274,7 +274,7 @@
 						name: e.name,
 						type: e.type
 					} : {
-						id: Object(I.n)(d(), e.name),
+						id: Object(I.o)(d(), e.name),
 						name: `${s.qc}${e.name}`,
 						type: e.type
 					});
@@ -2466,7 +2466,7 @@
 					areModeratedSubredditsPending: I.b,
 					coinsToSpend: P.e,
 					givePremiumModalIsOpen: J.c,
-					hasFetchedModerators: I.l,
+					hasFetchedModerators: I.m,
 					isEmployee: P.N,
 					isLoggedIn: P.Q,
 					profile: I.k,
@@ -2746,7 +2746,7 @@
 						minSize: 32
 					})
 				},
-				structuredStyle: (e, t) => Object(C.m)(e, Object(I.n)(e, t.profileName)),
+				structuredStyle: (e, t) => Object(C.m)(e, Object(I.o)(e, t.profileName)),
 				userHasSubreddit: (e, t) => {
 					let {
 						profileName: r
@@ -3570,7 +3570,7 @@
 			const a = e => Object(s.c)(e, {
 				experimentName: n.E,
 				experimentEligibilitySelector: () => Object(o.P)(e)
-			}) === n.Qd
+			}) === n.Rd
 		},
 		"./src/reddit/selectors/experiments/crisisTextLine.ts": function(e, t, r) {
 			"use strict";
@@ -3618,4 +3618,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ProfileIdCard.b3db19bc4d582206b587.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ProfileIdCard.be23178cf0a090ada763.js.map

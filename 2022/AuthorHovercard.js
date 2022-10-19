@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/AuthorHovercard.ba0ae03b25af82729161.js
-// Retrieved at 10/18/2022, 6:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/AuthorHovercard.64c7c2d3e50e10a33eed.js
+// Retrieved at 10/19/2022, 9:50:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["AuthorHovercard"], {
 		"./src/lib/constants/colors.ts": function(e, t, n) {
@@ -1617,7 +1617,7 @@
 						}) : void 0
 					},
 					isCurrentUserBanned: (e, t) => !!Object(x.p)(t) && Object(x.ib)(e, t),
-					userProfileStyles: (e, t) => Object(v.m)(e, Object(h.n)(e, t.userName)),
+					userProfileStyles: (e, t) => Object(v.m)(e, Object(h.o)(e, t.userName)),
 					acceptChats: (e, t) => {
 						const n = Object(h.i)(e, {
 							profileName: t.userName
@@ -1632,7 +1632,7 @@
 							r = n || a && Object(x.H)(e, a.name);
 						return !!r && Object(b.i)(e, r)
 					},
-					trophyCase: (e, t) => Object(h.s)(e, Object(h.n)(e, t.userName)),
+					trophyCase: (e, t) => Object(h.t)(e, Object(h.o)(e, t.userName)),
 					isNightMode: g.db,
 					lastAuthorModNote: (e, t) => {
 						if (!t.contextId) return;
@@ -6559,4 +6559,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/AuthorHovercard.ba0ae03b25af82729161.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/AuthorHovercard.64c7c2d3e50e10a33eed.js.map

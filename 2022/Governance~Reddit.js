@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~Reddit.c1f0265ec42d1740165a.js
-// Retrieved at 10/18/2022, 6:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~Reddit.f595f8b7a61b0246995e.js
+// Retrieved at 10/19/2022, 9:50:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~Reddit"], {
 		"./assets/fonts/NotoMono/font.less": function(e, t, n) {},
@@ -2195,7 +2195,7 @@
 			const D = e => _.d.reCaptchaEnterprise(e) && !Object(T.d)(e),
 				w = e => !!Object(S.c)(e, {
 					experimentEligibilitySelector: Object(I.d)(Object(I.b)(...a.d)),
-					experimentName: f.tf
+					experimentName: f.uf
 				}),
 				j = Object(r.b)("LOAD_RECAPTCHA_ENTERPRISE"),
 				C = () => l(e => p()([D, w, e => e.tracking.reCaptchaEnterprise.load === r.a.New], t => t(e)))(async e => {
@@ -4242,7 +4242,7 @@
 				const t = Object(E.q)(e, M.Pb);
 				return {
 					experimentState: e,
-					isActive: (null == t ? void 0 : t.variant) === M.Qd,
+					isActive: (null == t ? void 0 : t.variant) === M.Rd,
 					isBucketed: !!(null == t ? void 0 : t.variant)
 				}
 			}
@@ -4303,7 +4303,7 @@
 							function() {
 								let e = {};
 								C && B.type.length && (Object(G.d)(w, {
-									experimentName: M.Jc
+									experimentName: M.Kc
 								}), j && (e = {
 									...B
 								}));
@@ -15554,7 +15554,7 @@
 								...t
 							}
 						}
-						const r = fp()(t.payload.posts, Object(bp.i)([bp.p])),
+						const r = fp()(t.payload.posts, Object(bp.i)([bp.q])),
 							s = {};
 						return Object.keys(r).forEach(e => {
 							var t, n;
@@ -16506,7 +16506,7 @@
 						const n = Object(bp.h)(t.payload.meta);
 						return {
 							...e,
-							...fp()(t.payload.posts, Object(bp.i)([n, bp.d, bp.n, bp.o, bp.p, Object(bp.a)(e), Object(bp.b)(e), Object(bp.k)(e), Object(bp.l)(e), Object(bp.j)(e)]))
+							...fp()(t.payload.posts, Object(bp.i)([n, bp.d, bp.o, bp.p, bp.q, Object(bp.a)(e), Object(bp.b)(e), Object(bp.l)(e), Object(bp.m)(e), Object(bp.k)(e), Object(bp.j)(e)]))
 						}
 					}
 					case Nd.j:
@@ -16545,7 +16545,7 @@
 						const n = Object(bp.h)(t.payload.meta);
 						return {
 							...e,
-							...fp()(t.payload.posts, Object(bp.i)([n, bp.d, bp.n, bp.o, bp.p, Object(bp.m)(e), Object(bp.k)(e)]))
+							...fp()(t.payload.posts, Object(bp.i)([n, bp.d, bp.o, bp.p, bp.q, Object(bp.n)(e), Object(bp.l)(e)]))
 						}
 					}
 					case V.s: {
@@ -16554,7 +16554,7 @@
 						for (const r of t.payload) {
 							const t = r,
 								s = Object(bp.h)(t.meta);
-							Object.assign(n, fp()(t.posts, Object(bp.i)([s, bp.d, bp.n, bp.o, Object(bp.m)(e), Object(bp.k)(e)])))
+							Object.assign(n, fp()(t.posts, Object(bp.i)([s, bp.d, bp.o, bp.p, Object(bp.n)(e), Object(bp.l)(e)])))
 						}
 						return {
 							...e,
@@ -16566,7 +16566,7 @@
 							r = e[t.payload.postId];
 						return {
 							...e,
-							...fp()(t.payload.posts, Object(bp.i)([n, bp.d, bp.n, bp.o, Object(bp.m)(e), Object(bp.k)(e)])),
+							...fp()(t.payload.posts, Object(bp.i)([n, bp.d, bp.o, bp.p, Object(bp.n)(e), Object(bp.l)(e)])),
 							[t.payload.postId]: {
 								...r,
 								numDuplicates: t.payload.count
@@ -16577,7 +16577,7 @@
 					case Ze.e:
 					case ye.c: {
 						const n = Object(bp.h)(t.payload.meta),
-							r = fp()(t.payload.posts, Object(bp.i)([n, bp.n, bp.d, bp.o]));
+							r = fp()(t.payload.posts, Object(bp.i)([n, bp.o, bp.d, bp.p]));
 						return de()({
 							...e
 						}, r, (e, t) => ({
@@ -16671,7 +16671,7 @@
 						} = t.payload;
 						return {
 							...e,
-							...n.reduce((e, t) => (e[t.post.id] = Object(bp.i)([bp.n])(Object(rs.f)(t.post)), e), {})
+							...n.reduce((e, t) => (e[t.post.id] = Object(bp.i)([bp.o])(Object(rs.f)(t.post)), e), {})
 						}
 					}
 					case Ie.s: {
@@ -16719,7 +16719,7 @@
 						} = n;
 						return {
 							...e,
-							...fp()(r, Object(bp.i)([bp.n, bp.o]))
+							...fp()(r, Object(bp.i)([bp.o, bp.p]))
 						}
 					}
 					case yf.b:
@@ -16831,7 +16831,7 @@
 					case oc.g: {
 						const n = t.payload.subredditTopContent;
 						return n && n.posts && Object.keys(n.posts) ? {
-							...fp()(n.posts, Object(bp.i)([bp.n, bp.o])),
+							...fp()(n.posts, Object(bp.i)([bp.o, bp.p])),
 							...e
 						} : e
 					}
@@ -16842,7 +16842,7 @@
 					case he.g:
 					case _f.b:
 						return {
-							...fp()(t.payload.posts, Object(bp.i)([bp.n, bp.o])), ...e
+							...fp()(t.payload.posts, Object(bp.i)([bp.o, bp.p])), ...e
 						};
 					case Nd.m: {
 						const {
@@ -16921,7 +16921,7 @@
 						} = t.payload;
 						return {
 							...e,
-							[n]: Object(bp.q)(e[n], Object(mp.a)(r))
+							[n]: Object(bp.r)(e[n], Object(mp.a)(r))
 						}
 					}
 					case Of.a:
@@ -25705,7 +25705,7 @@
 					if (!u(e)) return;
 					const t = Object(o.c)(e, {
 						experimentEligibilitySelector: l,
-						experimentName: a.ke,
+						experimentName: a.le,
 						expEventOverride: !1
 					});
 					return null == t ? void 0 : t.toLocaleLowerCase()
@@ -25728,9 +25728,9 @@
 				},
 				b = e => !!p(e) && Object(o.c)(e, {
 					experimentEligibilitySelector: u,
-					experimentName: a.le,
+					experimentName: a.me,
 					expEventOverride: !1
-				}) !== a.me.Readonly
+				}) !== a.ne.Readonly
 		},
 		"./src/reddit/selectors/experiments/serpTabPreserved.ts": function(e, t, n) {
 			"use strict";
@@ -25741,10 +25741,10 @@
 				s = n("./src/reddit/selectors/telemetry.ts");
 
 			function a(e) {
-				const t = Object(s.q)(e, r.Jc);
+				const t = Object(s.q)(e, r.Kc);
 				return {
 					experimentState: e,
-					isActive: (null == t ? void 0 : t.variant) === r.Qd,
+					isActive: (null == t ? void 0 : t.variant) === r.Rd,
 					isBucketed: !!(null == t ? void 0 : t.variant)
 				}
 			}
@@ -25894,4 +25894,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit.c1f0265ec42d1740165a.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit.f595f8b7a61b0246995e.js.map

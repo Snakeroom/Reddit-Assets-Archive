@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/EconTopAwardersModal.b797ff3b7884a8c0f179.js
-// Retrieved at 10/18/2022, 6:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/EconTopAwardersModal.b20b3d28c793cbfd6357.js
+// Retrieved at 10/19/2022, 9:50:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["EconTopAwardersModal"], {
 		"./src/lib/currency/centsToDollars/index.ts": function(e, t, r) {
@@ -1624,7 +1624,7 @@
 						}) : void 0
 					},
 					isCurrentUserBanned: (e, t) => !!Object(h.p)(t) && Object(h.ib)(e, t),
-					userProfileStyles: (e, t) => Object(x.m)(e, Object(v.n)(e, t.userName)),
+					userProfileStyles: (e, t) => Object(x.m)(e, Object(v.o)(e, t.userName)),
 					acceptChats: (e, t) => {
 						const r = Object(v.i)(e, {
 							profileName: t.userName
@@ -1639,7 +1639,7 @@
 							n = r || a && Object(h.H)(e, a.name);
 						return !!n && Object(p.i)(e, n)
 					},
-					trophyCase: (e, t) => Object(v.s)(e, Object(v.n)(e, t.userName)),
+					trophyCase: (e, t) => Object(v.t)(e, Object(v.o)(e, t.userName)),
 					isNightMode: g.db,
 					lastAuthorModNote: (e, t) => {
 						if (!t.contextId) return;
@@ -2761,4 +2761,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EconTopAwardersModal.b797ff3b7884a8c0f179.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EconTopAwardersModal.b20b3d28c793cbfd6357.js.map

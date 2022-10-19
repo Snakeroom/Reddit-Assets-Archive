@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfileFollowersAction.3fa2415885a573bff9ed.js
-// Retrieved at 10/18/2022, 11:40:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfileFollowersAction.1c34b6243b803e0caebe.js
+// Retrieved at 10/19/2022, 9:50:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfileFollowersAction"], {
 		"./src/lib/makeOverviewConversationsItemKey/index.ts": function(e, t, r) {
@@ -764,7 +764,7 @@
 							...O,
 							postIds: j
 						}));
-						const r = Object(g.n)(s(), t);
+						const r = Object(g.o)(s(), t);
 						o(Object(L.h)({
 							profileId: r,
 							pinned: h
@@ -803,7 +803,7 @@
 					const E = r();
 					if (!E.platform.currentPage) return;
 					if (200 !== E.platform.currentPage.status) return;
-					const S = Object(g.n)(r(), w),
+					const S = Object(g.o)(r(), w),
 						A = Object(h.Ab)(E, {
 							userName: p
 						}).id;
@@ -812,7 +812,7 @@
 					})), Object(h.S)(E) && Object(h.W)(E, p) && t(Object(x.startChangeUsernameFlow)());
 					const N = [t(Object(a.q)()), t(R.b(w, S)), t(P.b(w)), t(_.o(p)), t(P.i(p)), t(C.i(p, A))];
 					await Promise.all(N)
-				}, Se = (e, t) => Object(g.r)(e, {
+				}, Se = (e, t) => Object(g.s)(e, {
 					profileName: t
 				})
 		},
@@ -979,4 +979,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileFollowersAction.3fa2415885a573bff9ed.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileFollowersAction.1c34b6243b803e0caebe.js.map

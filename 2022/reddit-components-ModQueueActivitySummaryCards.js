@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-ModQueueActivitySummaryCards.68a305e58f55f9ae8dc3.js
-// Retrieved at 10/17/2022, 5:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-ModQueueActivitySummaryCards.5f94c8e80889795319a1.js
+// Retrieved at 10/19/2022, 9:50:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-ModQueueActivitySummaryCards", "reddit-components-ModQueueActivitySummaryCards-ModActivityPreview"], {
 		"./src/reddit/components/ModQueueActivitySummaryCards/ModActivityPreview.tsx": function(e, t, s) {
@@ -368,19 +368,19 @@
 				}, [E, y.length, b]);
 				const j = (e => `mod_activity_tooltip_id-${e}`)(b || ""),
 					A = Object(i.d)(),
-					P = Object(a.useCallback)(e => {
+					T = Object(a.useCallback)(e => {
 						e.stopPropagation(), e.preventDefault(), A(Object(l.h)({
 							tooltipId: j
 						}))
 					}, [A, j]),
-					T = Object(i.e)(e => Object(_.b)(j)(e)),
+					P = Object(i.e)(e => Object(_.b)(j)(e)),
 					M = Object(i.e)(p.d),
 					I = Object(i.e)(k.k),
 					D = n || 5;
 				return d.a.createElement("div", {
 					className: Object(o.a)(C.a.preview, t),
 					id: j,
-					onClick: P,
+					onClick: T,
 					"data-testid": "mod-activity-preview"
 				}, O && y.length > 0 ? y.slice(0, D).map((e, t) => {
 					var s, n, r, a, i, l, u, m, b, v;
@@ -402,7 +402,7 @@
 					className: Object(o.a)(C.a.moreMods, "text-neutral-content-weak")
 				}, "+", y.length - D), d.a.createElement(N, {
 					tooltipId: j,
-					isOpen: T,
+					isOpen: P,
 					className: C.a.tooltip,
 					targetPosition: ["right", "bottom"],
 					tooltipPosition: ["right", "top"]
@@ -453,9 +453,9 @@
 			})), s.d(t, "SNOO_THUMBS_UP_IMAGE_PATH", (function() {
 				return w
 			})), s.d(t, "INACTIVE_MOD_SUMMARIES_COLLAPSED", (function() {
-				return P
-			})), s.d(t, "ACTIVE_MOD_SUMMARIES_COLLAPSED", (function() {
 				return T
+			})), s.d(t, "ACTIVE_MOD_SUMMARIES_COLLAPSED", (function() {
+				return P
 			}));
 			s("./node_modules/core-js/modules/web.dom.iterable.js");
 			var n = s("./src/config.ts"),
@@ -611,8 +611,8 @@
 						hk: "1Djx0e"
 					}))))
 				},
-				P = "inactive_mod_summaries_collapsed",
-				T = "active_mod_summaries_collapsed";
+				T = "inactive_mod_summaries_collapsed",
+				P = "active_mod_summaries_collapsed";
 			t.default = () => {
 				const e = Object(d.e)(e => {
 						var t;
@@ -632,8 +632,8 @@
 						currentPageUrl: Object(h.f)(i),
 						modActivitySummaryData: e
 					},
-					[c, u] = Object(k.a)(P, "true"),
-					[m, v] = Object(k.a)(T, "true");
+					[c, u] = Object(k.a)(T, "true"),
+					[m, v] = Object(k.a)(P, "true");
 				return a.a.createElement("span", {
 					"data-testid": "mod-activity-cards"
 				}, a.a.createElement(b.a, null, a.a.createElement(R, j({
@@ -865,12 +865,7 @@
 						displayName: e
 					}
 				})
-		},
-		"./src/reddit/hooks/usePageLayer.ts": function(e, t, s) {
-			"use strict";
-			var n = s("./src/reddit/contexts/PageLayer/index.tsx");
-			t.a = n.eb
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ModQueueActivitySummaryCards.68a305e58f55f9ae8dc3.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ModQueueActivitySummaryCards.5f94c8e80889795319a1.js.map

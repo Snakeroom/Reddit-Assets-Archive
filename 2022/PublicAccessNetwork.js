@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PublicAccessNetwork.db110fe0aee55fd71e26.js
-// Retrieved at 10/18/2022, 6:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PublicAccessNetwork.75a3e5f6b8df167894fd.js
+// Retrieved at 10/19/2022, 9:50:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PublicAccessNetwork"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -284,16 +284,16 @@
 			const p = Object(a.a)(e => {
 				const t = Object(u.c)(e, {
 					experimentEligibilitySelector: u.a,
-					experimentName: m.Ie
+					experimentName: m.Je
 				});
-				return Object(m.ug)(t) ? void 0 : t
+				return Object(m.vg)(t) ? void 0 : t
 			}, e => {
 				const t = Object(u.c)(e, {
 					experimentEligibilitySelector: u.a,
-					experimentName: m.Je
+					experimentName: m.Ke
 				});
-				return Object(m.ug)(t) ? void 0 : t
-			}, (e, t) => e === m.Ke.Enabled && t === m.Ke.Enabled);
+				return Object(m.vg)(t) ? void 0 : t
+			}, (e, t) => e === m.Le.Enabled && t === m.Le.Enabled);
 			var b = s("./src/config.ts");
 			var h = s("./src/reddit/selectors/user.ts");
 			const v = e => {
@@ -669,7 +669,7 @@
 									icon: e.category_icon,
 									id: e.category_id,
 									name: e.category_name,
-									displayText: Object(m.tg)(e.category_name)
+									displayText: Object(m.ug)(e.category_name)
 								};
 								s.push(n.id), t[n.id] = n
 							}), {
@@ -1488,12 +1488,12 @@
 							a = Object(se.P)(s(), {
 								identifier: M.belongsTo
 							});
-						if (a && (e => W.Bf.Redirect === Object(J.b)(e, {
+						if (a && (e => W.Cf.Redirect === Object(J.b)(e, {
 								experimentEligibilitySelector: Z,
-								experimentName: W.uf
+								experimentName: W.vf
 							}))(s())) return void t(Object(o.c)(a.url));
 						if ((M.media && M.media.type) === F.o.LIVEVIDEO) {
-							const e = `/rpan${M.belongsTo.type===N.a.SUBREDDIT?a.url:"/"}${Object(g.A)(M.id)}`;
+							const e = `/rpan${M.belongsTo.type===N.a.SUBREDDIT?a.url:"/"}${Object(g.C)(M.id)}`;
 							return void t(Object(o.c)(e))
 						}
 						if (M.belongsTo.type !== N.a.SUBREDDIT || M.isSponsored) {
@@ -7990,7 +7990,7 @@
 				a = s("./src/reddit/selectors/experiments/nsfwListingBelow.ts");
 			const i = e => {
 					const t = Object(a.a)(e);
-					return Boolean(t) && !Object(n.ug)(t)
+					return Boolean(t) && !Object(n.vg)(t)
 				},
 				d = Object(o.a)(i, r.d, (e, t) => e && !t)
 		},
@@ -8011,4 +8011,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PublicAccessNetwork.db110fe0aee55fd71e26.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PublicAccessNetwork.75a3e5f6b8df167894fd.js.map
