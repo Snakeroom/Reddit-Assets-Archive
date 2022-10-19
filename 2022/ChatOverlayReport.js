@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ChatOverlayReport.450d6ca85f9159feb8d3.js
-// Retrieved at 10/18/2022, 1:10:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ChatOverlayReport.34d9f05e9fd9eb4b5c8c.js
+// Retrieved at 10/19/2022, 2:10:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ChatOverlayReport"], {
 		"./src/chat/components/OverlayReport/CrisisFlow/CrisisFlowPage.m.less": function(e, t, s) {
@@ -288,7 +288,7 @@
 				Ce = Object(m.c)({
 					user: (e, t) => t.attr === oe.a.User ? e.contacts.models[t.attrId] : void 0,
 					message: (e, t) => t.attr === oe.a.Invite || t.attr === oe.a.Message ? Object(ie.b)(e, Number(t.attrId)) : void 0,
-					messageList: e => Object(ne.E)(e),
+					messageList: e => Object(ne.F)(e),
 					currentUserId: (e, t) => Object(le.a)(e),
 					container: e => e && e.container && e.container.size,
 					isNightMode: e => Object(ae.b)(e)
@@ -502,4 +502,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatOverlayReport.450d6ca85f9159feb8d3.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatOverlayReport.34d9f05e9fd9eb4b5c8c.js.map

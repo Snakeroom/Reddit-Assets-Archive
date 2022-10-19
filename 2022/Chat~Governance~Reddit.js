@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.fdd283020de880964d90.js
-// Retrieved at 10/19/2022, 1:30:25 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.dcd479656888f83241e8.js
+// Retrieved at 10/19/2022, 2:10:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Chat~Governance~Reddit"], {
 		"./assets/fonts/IBMPlexSans/font.less": function(e, t, i) {},
@@ -28,7 +28,7 @@
 				l = Object(n.a)(o),
 				u = Object(n.a)(d),
 				c = e => async (t, i) => {
-					const n = Object(r.u)(i(), e);
+					const n = Object(r.v)(i(), e);
 					(null == n ? void 0 : n.length) && t(u(e))
 				}, _ = e => async (t, i) => {
 					const n = i().channels.draftMessages[e.channelId];
@@ -491,7 +491,7 @@
 						e(Object(s.e)(l.a.CHANNELS));
 						const i = Object(d.b)(t());
 						if (i) {
-							const r = Object(u.h)(t(), i);
+							const r = Object(u.i)(t(), i);
 							if (r) {
 								const t = Object(a.getChannelUrl)(r),
 									i = Object(a.getRedirectURL)(t);
@@ -500,12 +500,12 @@
 						}
 					} else e(Object(s.e)(l.a.SETTINGS))
 				}, y = () => async (e, t) => {
-					const i = Object(u.n)(t());
+					const i = Object(u.o)(t());
 					if (!i) return;
 					const r = Object(a.themesUrl)(i);
 					e(Object(o.chatThemeSettingsClickedAction)()), e(Object(n.b)(r))
 				}, E = () => async (e, t) => {
-					const i = Object(u.n)(t());
+					const i = Object(u.o)(t());
 					if (!i) return;
 					const r = Object(a.privacyAndSupportUrl)(i);
 					e(Object(n.b)(r))
@@ -1507,6 +1507,21 @@
 				}
 			}
 		},
+		"./src/chat/helpers/lastCommentTime.ts": function(e, t, i) {
+			"use strict";
+			i.d(t, "a", (function() {
+				return d
+			}));
+			var n = i("./src/chat/selectors/liveChat/index.ts");
+			const r = new Date(0),
+				s = r.getTime(),
+				o = e => new Date(e).getTime(),
+				d = (e, t) => {
+					var i, d;
+					const a = Object(n.f)(e) ? o(e.lastCommentedAt || r.toString()) : (null === (i = e.lastMessage) || void 0 === i ? void 0 : i.createdAt) || s;
+					return (Object(n.f)(t) ? o(t.lastCommentedAt || r.toString()) : (null === (d = t.lastMessage) || void 0 === d ? void 0 : d.createdAt) || s) - a
+				}
+		},
 		"./src/chat/helpers/urls/index.ts": function(e, t, i) {
 			"use strict";
 			i.r(t), i.d(t, "LOCAL_HOST_DEVELOPMENT_URL", (function() {
@@ -2333,15 +2348,13 @@
 		},
 		"./src/chat/selectors/channels.ts": function(e, t, i) {
 			"use strict";
-			i.d(t, "w", (function() {
-				return p
-			})), i.d(t, "x", (function() {
+			i.d(t, "x", (function() {
 				return h
-			})), i.d(t, "i", (function() {
+			})), i.d(t, "y", (function() {
 				return f
-			})), i.d(t, "h", (function() {
+			})), i.d(t, "j", (function() {
 				return b
-			})), i.d(t, "m", (function() {
+			})), i.d(t, "i", (function() {
 				return g
 			})), i.d(t, "n", (function() {
 				return v
@@ -2349,76 +2362,80 @@
 				return w
 			})), i.d(t, "p", (function() {
 				return y
-			})), i.d(t, "z", (function() {
+			})), i.d(t, "q", (function() {
 				return E
 			})), i.d(t, "A", (function() {
 				return S
-			})), i.d(t, "q", (function() {
+			})), i.d(t, "B", (function() {
 				return T
-			})), i.d(t, "y", (function() {
+			})), i.d(t, "r", (function() {
 				return O
-			})), i.d(t, "s", (function() {
+			})), i.d(t, "z", (function() {
 				return I
 			})), i.d(t, "t", (function() {
 				return R
-			})), i.d(t, "P", (function() {
-				return F
-			})), i.d(t, "f", (function() {
-				return C
-			})), i.d(t, "B", (function() {
-				return A
-			})), i.d(t, "E", (function() {
-				return j
-			})), i.d(t, "C", (function() {
-				return P
-			})), i.d(t, "g", (function() {
-				return D
-			})), i.d(t, "Q", (function() {
-				return x
-			})), i.d(t, "D", (function() {
-				return L
-			})), i.d(t, "I", (function() {
-				return k
-			})), i.d(t, "c", (function() {
-				return B
-			})), i.d(t, "H", (function() {
-				return U
-			})), i.d(t, "b", (function() {
-				return G
-			})), i.d(t, "d", (function() {
-				return V
-			})), i.d(t, "e", (function() {
-				return H
-			})), i.d(t, "J", (function() {
-				return W
-			})), i.d(t, "O", (function() {
-				return K
-			})), i.d(t, "N", (function() {
-				return z
-			})), i.d(t, "j", (function() {
-				return Y
-			})), i.d(t, "a", (function() {
-				return $
-			})), i.d(t, "K", (function() {
-				return Q
-			})), i.d(t, "M", (function() {
-				return J
 			})), i.d(t, "u", (function() {
-				return X
-			})), i.d(t, "G", (function() {
-				return Z
-			})), i.d(t, "v", (function() {
-				return ee
-			})), i.d(t, "k", (function() {
-				return te
-			})), i.d(t, "L", (function() {
-				return ie
-			})), i.d(t, "l", (function() {
-				return ne
+				return F
+			})), i.d(t, "Q", (function() {
+				return C
+			})), i.d(t, "f", (function() {
+				return N
+			})), i.d(t, "C", (function() {
+				return j
 			})), i.d(t, "F", (function() {
+				return P
+			})), i.d(t, "D", (function() {
+				return D
+			})), i.d(t, "h", (function() {
+				return x
+			})), i.d(t, "R", (function() {
+				return L
+			})), i.d(t, "E", (function() {
+				return k
+			})), i.d(t, "J", (function() {
+				return B
+			})), i.d(t, "c", (function() {
+				return M
+			})), i.d(t, "I", (function() {
+				return G
+			})), i.d(t, "b", (function() {
+				return q
+			})), i.d(t, "d", (function() {
+				return H
+			})), i.d(t, "e", (function() {
+				return W
+			})), i.d(t, "K", (function() {
+				return K
+			})), i.d(t, "P", (function() {
+				return z
+			})), i.d(t, "O", (function() {
+				return Y
+			})), i.d(t, "k", (function() {
+				return $
+			})), i.d(t, "a", (function() {
+				return Q
+			})), i.d(t, "L", (function() {
+				return J
+			})), i.d(t, "N", (function() {
+				return X
+			})), i.d(t, "v", (function() {
+				return Z
+			})), i.d(t, "H", (function() {
+				return ee
+			})), i.d(t, "w", (function() {
+				return te
+			})), i.d(t, "l", (function() {
+				return ie
+			})), i.d(t, "M", (function() {
+				return ne
+			})), i.d(t, "m", (function() {
 				return re
-			})), i.d(t, "r", (function() {
+			})), i.d(t, "G", (function() {
 				return se
+			})), i.d(t, "s", (function() {
+				return oe
+			})), i.d(t, "g", (function() {
+				return de
 			}));
 			i("./node_modules/core-js/modules/web.dom.iterable.js");
 			var n = i("./node_modules/lodash/values.js"),
@@ -2426,65 +2443,66 @@
 				s = i("./node_modules/reselect/es/index.js"),
 				o = i("./src/chat/constants/channels.ts"),
 				d = i("./src/chat/constants/messages.ts"),
-				a = i("./src/chat/models/Channel/index.ts"),
-				l = i("./src/chat/models/Message/index.ts"),
-				u = i("./src/chat/selectors/channelsFilter.ts"),
-				c = i("./src/chat/selectors/experiments.ts"),
-				_ = i("./src/chat/selectors/liveChat/index.ts"),
-				m = i("./src/chat/selectors/user.ts");
-			const p = e => e.channels.invited.sortedKeys.length,
-				h = e => e.channels.joined.sortedKeys.length,
-				f = Object(s.a)((e, t) => t, e => e.channels.models, (e, t) => t[e]),
-				b = Object(s.a)((e, t) => {
+				a = i("./src/chat/helpers/lastCommentTime.ts"),
+				l = i("./src/chat/models/Channel/index.ts"),
+				u = i("./src/chat/models/Message/index.ts"),
+				c = i("./src/chat/selectors/channelsFilter.ts"),
+				_ = i("./src/chat/selectors/experiments.ts"),
+				m = i("./src/chat/selectors/liveChat/index.ts"),
+				p = i("./src/chat/selectors/user.ts");
+			const h = e => e.channels.invited.sortedKeys.length,
+				f = e => e.channels.joined.sortedKeys.length,
+				b = Object(s.a)((e, t) => t, e => e.channels.models, (e, t) => t[e]),
+				g = Object(s.a)((e, t) => {
 					const i = e.channels.models,
 						n = "string" == typeof t ? t : t.channelId;
 					if (n) return i[n]
 				}, e => e),
-				g = e => {
+				v = e => {
 					const {
 						currentPage: t
 					} = e.platform, i = t && t.urlParams.channelId;
-					if (i) return b(e, i)
+					if (i) return g(e, i)
 				},
-				v = Object(s.a)(g, e => null == e ? void 0 : e.channelId),
-				w = e => {
-					const t = g(e);
-					if (t && t.channelState === o.b.JOINED) return t
-				},
+				w = Object(s.a)(v, e => null == e ? void 0 : e.channelId),
 				y = e => {
-					const {
-						currentPage: t
-					} = e.platform, i = null == t ? void 0 : t.urlParams.postId;
-					if (i) return Object(_.c)(e, i)
+					const t = v(e);
+					if (t && t.channelState === o.b.JOINED) return t
 				},
 				E = e => {
 					const {
+						currentPage: t
+					} = e.platform, i = null == t ? void 0 : t.urlParams.postId;
+					if (i) return Object(m.c)(e, i)
+				},
+				S = e => {
+					const {
 						channelId: t
 					} = e.channels.selected;
-					if (t) return b(e, t)
+					if (t) return g(e, t)
 				},
-				S = e => e.channels.selected && e.channels.selected.channelId,
-				T = e => g(e) || E(e),
-				O = e => {
-					const {
-						user: t
-					} = e, i = T(e);
-					if (i && i.members) return i.members.filter(e => e.id !== t.account.id)
-				},
+				T = e => e.channels.selected && e.channels.selected.channelId,
+				O = e => v(e) || S(e),
 				I = e => {
 					const {
 						user: t
-					} = e, i = g(e);
-					if (i && i.type === a.b.Direct && i.members) return i.members.find(e => e.id !== t.account.id)
+					} = e, i = O(e);
+					if (i && i.members) return i.members.filter(e => e.id !== t.account.id)
 				},
 				R = e => {
-					const t = I(e);
-					return null == t ? void 0 : t.id
+					const {
+						user: t
+					} = e, i = v(e);
+					if (i && i.type === l.b.Direct && i.members) return i.members.find(e => e.id !== t.account.id)
 				},
 				F = e => {
-					return !!w(e)
+					const t = R(e);
+					return null == t ? void 0 : t.id
 				},
 				C = e => {
+					return !!y(e)
+				},
+				N = e => {
 					const t = [],
 						i = e.user.account.id;
 					return r()(e.channels.models).forEach(e => {
@@ -2494,86 +2512,86 @@
 						}
 					}), t.length && t
 				},
-				N = (e, t) => {
+				A = (e, t) => {
 					const i = ((e, t) => {
-						const i = b(e, t);
+						const i = g(e, t);
 						return i && i.lastMessage
 					})(e, t);
-					return Boolean((null == i ? void 0 : i.messageType) === d.d.SYSTEM && (null == i ? void 0 : i.customType) === l.a.AWARDING)
+					return Boolean((null == i ? void 0 : i.messageType) === d.d.SYSTEM && (null == i ? void 0 : i.customType) === u.a.AWARDING)
 				},
-				A = Object(s.a)((e, t) => t, e => e.messages.models, (e, t) => r()(t).filter(t => t.channelId === e)),
-				j = e => r()(e.messages.models).filter(t => t.messageType === d.d.USER && t.channelId === e.channels.selected.channelId),
-				P = e => r()(e.messages.pending).filter(t => t.channelId === e.channels.selected.channelId),
-				D = (e, t) => {
+				j = Object(s.a)((e, t) => t, e => e.messages.models, (e, t) => r()(t).filter(t => t.channelId === e)),
+				P = e => r()(e.messages.models).filter(t => t.messageType === d.d.USER && t.channelId === e.channels.selected.channelId),
+				D = e => r()(e.messages.pending).filter(t => t.channelId === e.channels.selected.channelId),
+				x = (e, t) => {
 					var i, n;
-					if (Boolean(N(e, t))) {
-						const r = b(e, t);
+					if (Boolean(A(e, t))) {
+						const r = g(e, t);
 						return null === (n = null === (i = null == r ? void 0 : r.lastMessage) || void 0 === i ? void 0 : i.messageData.awarding) || void 0 === n ? void 0 : n.award_id
 					}
 				},
-				x = (e, t) => {
-					var i, n;
-					const r = Object(m.a)(e),
-						s = g(e),
-						o = (null == s ? void 0 : s.type) === a.b.Direct,
-						u = Boolean(P(e).length);
-					if (!o) return !1;
-					const c = R(e);
-					return c && e.channels.messageQuickReplyUsers[c] === c || (null === (n = null === (i = null == t ? void 0 : t.messageData) || void 0 === i ? void 0 : i.awarding) || void 0 === n ? void 0 : n.awarder_id) !== r && !u && Boolean((null == t ? void 0 : t.messageType) === d.d.SYSTEM && (null == t ? void 0 : t.customType) === l.a.AWARDING)
-				},
 				L = (e, t) => {
-					const i = E(e);
+					var i, n;
+					const r = Object(p.a)(e),
+						s = v(e),
+						o = (null == s ? void 0 : s.type) === l.b.Direct,
+						a = Boolean(D(e).length);
+					if (!o) return !1;
+					const c = F(e);
+					return c && e.channels.messageQuickReplyUsers[c] === c || (null === (n = null === (i = null == t ? void 0 : t.messageData) || void 0 === i ? void 0 : i.awarding) || void 0 === n ? void 0 : n.awarder_id) !== r && !a && Boolean((null == t ? void 0 : t.messageType) === d.d.SYSTEM && (null == t ? void 0 : t.customType) === u.a.AWARDING)
+				},
+				k = (e, t) => {
+					const i = S(e);
 					return i && i[t]
 				},
-				k = e => e.channels.joined.hasMoreChannels,
-				B = e => e.channels.joined.fetchingChannels,
-				M = Object(s.a)(e => e.channels.invited, e => e.channels.models, (e, t) => e.sortedKeys.map(e => t[e])),
-				U = e => e.channels.invited.hasMoreChannels,
-				G = e => e.channels.invited.fetchingChannels,
-				q = (e, t) => {
-					if (!Object(c.f)(e)) return t;
-					const i = Object(u.a)(e);
-					return i === a.c.DirectsOnly ? t.filter(e => e.type === a.b.Direct) : i === a.c.GroupsOnly ? t.filter(e => e.type === a.b.Group) : t
-				},
-				V = e => {
-					const t = M(e);
-					return q(e, t)
+				B = e => e.channels.joined.hasMoreChannels,
+				M = e => e.channels.joined.fetchingChannels,
+				U = Object(s.a)(e => e.channels.invited, e => e.channels.models, (e, t) => e.sortedKeys.map(e => t[e])),
+				G = e => e.channels.invited.hasMoreChannels,
+				q = e => e.channels.invited.fetchingChannels,
+				V = (e, t) => {
+					if (!Object(_.f)(e)) return t;
+					const i = Object(c.a)(e);
+					return i === l.c.DirectsOnly ? t.filter(e => e.type === l.b.Direct) : i === l.c.GroupsOnly ? t.filter(e => e.type === l.b.Group) : t
 				},
 				H = e => {
-					const t = (e => e.channels.joined.sortedKeys.map(t => e.channels.models[t]))(e);
-					return q(e, t)
+					const t = U(e);
+					return V(e, t)
 				},
 				W = e => {
-					const t = E(e);
-					return t && t.inviter && t.inviter.name
+					const t = (e => e.channels.joined.sortedKeys.map(t => e.channels.models[t]))(e);
+					return V(e, t)
 				},
 				K = e => {
-					const t = g(e);
+					const t = S(e);
+					return t && t.inviter && t.inviter.name
+				},
+				z = e => {
+					const t = v(e);
 					return Boolean(t && t.isMessageListLoaded)
 				},
-				z = e => e.channels.isCreatingChannel,
-				Y = e => {
-					const t = g(e);
+				Y = e => e.channels.isCreatingChannel,
+				$ = e => {
+					const t = v(e);
 					return t && t.channelState
 				},
-				$ = Object(s.a)(g, e => Boolean(null == e ? void 0 : e.isModerator)),
-				Q = e => {
-					const t = g(e);
+				Q = Object(s.a)(v, e => Boolean(null == e ? void 0 : e.isModerator)),
+				J = e => {
+					const t = v(e);
 					return !(!t || !t.isMuted)
 				},
-				J = (e, t) => {
-					const i = b(e, t);
+				X = (e, t) => {
+					const i = g(e, t);
 					return Boolean(i && i.isNotifsMuted)
 				},
-				X = (e, t) => {
+				Z = (e, t) => {
 					var i;
 					return (null === (i = e.channels.draftMessages[t]) || void 0 === i ? void 0 : i.messageValue) || ""
 				},
-				Z = e => {
+				ee = e => {
 					var t;
-					return Boolean(null === (t = M(e)) || void 0 === t ? void 0 : t.length)
+					return Boolean(null === (t = U(e)) || void 0 === t ? void 0 : t.length)
 				},
-				ee = Object(s.a)((e, t) => t ? e.channels.models[t] : void 0, e => Object(m.e)(e), (e, t) => {
+				te = Object(s.a)((e, t) => t ? e.channels.models[t] : void 0, e => Object(p.e)(e), (e, t) => {
 					var i;
 					if (e && (null == t ? void 0 : t.id)) {
 						const n = e.channelState === o.b.JOINED,
@@ -2581,7 +2599,7 @@
 						let s;
 						const d = (null == t ? void 0 : t.id) !== (null === (i = e.inviter) || void 0 === i ? void 0 : i.id) ? e.inviter : void 0;
 						for (const i of e.members)(null == t ? void 0 : t.id) !== i.id && (null == d ? void 0 : d.id) !== i.id && (!s || s.name.toLocaleLowerCase() > i.name.toLocaleLowerCase()) && (s = i);
-						return e.type === a.b.Direct ? {
+						return e.type === l.b.Direct ? {
 							firstUser: s || e.inviter
 						} : n && t && !s && !d ? {
 							firstUser: t
@@ -2602,20 +2620,21 @@
 						}
 					}
 				}),
-				te = (e, t) => {
+				ie = (e, t) => {
 					var i;
 					if (t) {
-						const n = b(e, t),
-							r = ee(e, t);
-						if (n) return n.type === a.b.Group ? n.name && "Group Channel" !== n.name ? n.name : n.members.map(e => e.name).join(", ") : null === (i = null == r ? void 0 : r.firstUser) || void 0 === i ? void 0 : i.name
+						const n = g(e, t),
+							r = te(e, t);
+						if (n) return n.type === l.b.Group ? n.name && "Group Channel" !== n.name ? n.name : n.members.map(e => e.name).join(", ") : null === (i = null == r ? void 0 : r.firstUser) || void 0 === i ? void 0 : i.name
 					}
 				},
-				ie = Object(s.a)(g, e => (null == e ? void 0 : e.type) === a.b.Direct && (null == e ? void 0 : e.members.some(e => e.state === a.f.Invited))),
-				ne = Object(s.a)((e, t) => b(e, t), e => null == e ? void 0 : e.type),
-				re = Object(s.a)((e, t) => b(e, t), e => Boolean(null == e ? void 0 : e.members.some(e => e.isBlockedByMe))),
-				se = (e, t) => {
-					return Object.values(e.channels.models).find(e => e.type === a.b.Direct && e.members.some(e => e.name === t))
-				}
+				ne = Object(s.a)(v, e => (null == e ? void 0 : e.type) === l.b.Direct && (null == e ? void 0 : e.members.some(e => e.state === l.f.Invited))),
+				re = Object(s.a)((e, t) => g(e, t), e => null == e ? void 0 : e.type),
+				se = Object(s.a)((e, t) => g(e, t), e => Boolean(null == e ? void 0 : e.members.some(e => e.isBlockedByMe))),
+				oe = (e, t) => {
+					return Object.values(e.channels.models).find(e => e.type === l.b.Direct && e.members.some(e => e.name === t))
+				},
+				de = Object(s.a)(W, m.d, (e, t) => [...e, ...t].sort(a.a))
 		},
 		"./src/chat/selectors/channelsFilter.ts": function(e, t, i) {
 			"use strict";
@@ -2676,7 +2695,7 @@
 					const i = p(e, t);
 					return i && i.method
 				},
-				f = Object(d.a)((e, t) => Object(a.i)(e, t), e => e.contacts.models, (e, t) => {
+				f = Object(d.a)((e, t) => Object(a.j)(e, t), e => e.contacts.models, (e, t) => {
 					if (null == e ? void 0 : e.inviter) return t[e.inviter.id]
 				}),
 				b = e => e.contacts.knownContacts,
@@ -2802,7 +2821,7 @@
 				E = Object(s.a)(e => p(e, o.d.ChatImagesRenderKillSwitch), e => e === o.c),
 				S = Object(s.a)(e => p(e, o.d.ChatMediaShareImagesGroups), e => E(e), (e, t) => e === o.c && !t),
 				T = Object(s.a)(e => p(e, o.d.ChatMediaShareImages), e => E(e), (e, t) => e === o.c && !t),
-				O = Object(s.a)((e, t) => t ? Object(u.l)(e, t) : void 0, e => T(e), e => S(e), (e, t, i) => e === d.b.Direct && t || e === d.b.Group && i),
+				O = Object(s.a)((e, t) => t ? Object(u.m)(e, t) : void 0, e => T(e), e => S(e), (e, t, i) => e === d.b.Direct && t || e === d.b.Group && i),
 				I = Object(s.a)(e => p(e, o.d.ChatInviteMessagePreview), e => e === o.c),
 				R = Object(s.a)(e => p(e, o.d.D2XChatShortCutsSlashCommand), e => e === o.c),
 				F = Object(s.a)(e => p(e, o.d.ChatLinkSharingGroup), e => e === o.a.Tooltip),
@@ -2866,26 +2885,32 @@
 		},
 		"./src/chat/selectors/liveChat/index.ts": function(e, t, i) {
 			"use strict";
-			i.d(t, "a", (function() {
-				return s
-			})), i.d(t, "c", (function() {
+			i.d(t, "f", (function() {
+				return o
+			})), i.d(t, "a", (function() {
 				return d
-			})), i.d(t, "d", (function() {
+			})), i.d(t, "c", (function() {
 				return a
-			})), i.d(t, "e", (function() {
+			})), i.d(t, "d", (function() {
 				return l
-			})), i.d(t, "b", (function() {
+			})), i.d(t, "e", (function() {
 				return u
+			})), i.d(t, "g", (function() {
+				return c
+			})), i.d(t, "b", (function() {
+				return _
 			}));
 			i("./node_modules/core-js/modules/web.dom.iterable.js");
 			var n = i("./node_modules/reselect/es/index.js"),
-				r = i("./src/lib/isDefined.ts");
-			const s = e => new Date(e).getTime(),
-				o = (e, t) => s(t.lastCommentedAt || "") - s(e.lastCommentedAt || ""),
-				d = (e, t) => e.channels.liveChat.models[t],
-				a = e => Object.keys(e.channels.liveChat.models).map(t => d(e, t)).filter(r.a).sort(o),
-				l = Object(n.a)(d, e => !!e && s(e.lastReadAt || "") < s(e.lastCommentedAt || "")),
-				u = Object(n.a)((e, t) => t, e => e.activeUserCountByLiveChatId, (e, t) => t[e])
+				r = i("./src/lib/isDefined.ts"),
+				s = i("./src/chat/helpers/lastCommentTime.ts");
+			const o = e => void 0 !== e.post,
+				d = e => new Date(e).getTime(),
+				a = (e, t) => e.channels.liveChat.models[t],
+				l = e => Object.keys(e.channels.liveChat.models).map(t => a(e, t)).filter(r.a),
+				u = Object(n.a)(l, e => e.sort(s.a)),
+				c = Object(n.a)(a, e => !!e && d(e.lastReadAt || "") < d(e.lastCommentedAt || "")),
+				_ = Object(n.a)((e, t) => t, e => e.activeUserCountByLiveChatId, (e, t) => t[e])
 		},
 		"./src/chat/selectors/members.ts": function(e, t, i) {
 			"use strict";
@@ -2909,7 +2934,7 @@
 				s = i("./src/chat/models/Channel/index.ts"),
 				o = i("./src/chat/selectors/channels.ts");
 			const d = e => {
-					const t = Object(o.n)(e);
+					const t = Object(o.o)(e);
 					if (t) return e.members[t]
 				},
 				a = e => {
@@ -3258,7 +3283,7 @@
 					}
 				},
 				a = e => {
-					const t = Object(o.n)(e);
+					const t = Object(o.o)(e);
 					if (!t) return [];
 					const i = e.uploads.activeUploads[t];
 					return i && i.map(t => e.uploads.models[t]) || []
@@ -3402,14 +3427,14 @@
 					}
 				},
 				f = (e, t) => {
-					const i = t ? Object(u.h)(e, t) : Object(u.m)(e);
+					const i = t ? Object(u.i)(e, t) : Object(u.n)(e);
 					return i && {
 						id: i.channelSendbirdUrl
 					}
 				},
 				b = (e, t) => {
-					const i = t ? Object(u.h)(e, t) : Object(u.q)(e);
-					if (Object(u.p)(e)) return {
+					const i = t ? Object(u.i)(e, t) : Object(u.r)(e);
+					if (Object(u.q)(e)) return {
 						type: n.LiveChatPost
 					};
 					if (i) {
@@ -3446,7 +3471,7 @@
 					}
 				},
 				E = e => {
-					const t = Object(u.q)(e);
+					const t = Object(u.r)(e);
 					return {
 						number_members: t && t.memberCount
 					}
@@ -3458,7 +3483,7 @@
 					}
 				},
 				T = e => {
-					const t = Object(u.m)(e);
+					const t = Object(u.n)(e);
 					return {
 						sender_user_id: t && t.inviter && t.inviter.id
 					}
@@ -3470,20 +3495,20 @@
 					number_unreads: Object(p.e)(e)
 				}),
 				R = (e, t) => {
-					const i = Object(u.q)(e),
+					const i = Object(u.r)(e),
 						n = i && i.unreadMessageCount;
 					return {
 						number_unreads: "number" == typeof t ? t : n || 0
 					}
 				},
 				F = (e, t) => ({
-					number_unreads: Object(_.e)(e, t) ? 1 : 0
+					number_unreads: Object(_.g)(e, t) ? 1 : 0
 				}),
 				C = e => ({
-					number_channels: Object(u.x)(e)
+					number_channels: Object(u.y)(e)
 				}),
 				N = e => ({
-					number_pending_invites: Object(u.w)(e)
+					number_pending_invites: Object(u.x)(e)
 				}),
 				A = (e, t, i, n) => ({
 					message_type: n || (null == i ? void 0 : i.type) || Object(m.e)(e, t) || a.c.TEXT
@@ -3509,7 +3534,7 @@
 					}
 				},
 				x = e => {
-					const t = Object(u.q)(e);
+					const t = Object(u.r)(e);
 					return {
 						invitation_id: t ? t.channelSendbirdUrl : null
 					}
@@ -3518,14 +3543,14 @@
 					if (t) return {
 						invitation_type: t
 					};
-					const i = Object(u.q)(e),
+					const i = Object(u.r)(e),
 						n = i && h(i.type);
 					return n && {
 						invitation_type: n
 					}
 				},
 				k = e => {
-					const t = Object(u.q)(e);
+					const t = Object(u.r)(e);
 					return {
 						invitation_timestamp: t ? t.createdAt : null
 					}
@@ -3534,9 +3559,9 @@
 					reported_user_id: e || null
 				}),
 				M = e => {
-					const t = Object(u.q)(e),
+					const t = Object(u.r)(e),
 						i = !(!t || t.type !== l.b.Direct),
-						n = Object(u.y)(e),
+						n = Object(u.z)(e),
 						r = n && n.length && n[0].id;
 					return {
 						recipient_user_id: i ? r : null
@@ -3555,10 +3580,10 @@
 					}
 				},
 				q = e => ({
-					is_member: Object(u.P)(e)
+					is_member: Object(u.Q)(e)
 				}),
 				V = e => {
-					const t = Object(u.o)(e);
+					const t = Object(u.p)(e);
 					return t && {
 						shown_history: !!t.lastMessage
 					}
@@ -3632,11 +3657,11 @@
 				apiPassThroughHeaders: Object(r.e)({}.API_PASS_THROUGH_HEADERS || ""),
 				appName: {}.APP_NAME || "desktop2x",
 				assetPath: "https://www.redditstatic.com/desktop2x",
-				buildNumber: Object(r.c)("176053"),
+				buildNumber: Object(r.c)("176076"),
 				chatHelpUrl: {}.CHAT_HELP_URL || "https://reddit.zendesk.com/hc/en-us/sections/360008805652-Chat",
 				hlsVersion: "hls 0.12.4",
 				dashVersion: "dash 4.4.0",
-				buildTimestamp: Object(r.b)("1666197147"),
+				buildTimestamp: Object(r.b)("1666200820"),
 				cookieDomain: ".reddit.com",
 				giphyApiKey: "k2kwyMA6VeyHM6ZRT96OXDGaersnx73Z",
 				mediaUrl: "https://www.redditmedia.com",
@@ -6370,14 +6395,14 @@
 					}))
 				},
 				Y = (e, t, i) => {
-					console.log("%cStarting Raven %crelease %c59350eac0bb77353f6efbe12a2b05b77e90b6f3c-production" + ` %cpublic url %c${y.a.sentryClientPublicURL}`, "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
+					console.log("%cStarting Raven %crelease %cde374a73110de4423a85632b86b231e9a48518a4-production" + ` %cpublic url %c${y.a.sentryClientPublicURL}`, "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
 					let n = [];
 					n = [new RegExp(`^${y.a.assetPath}`, "i")];
 					o.e({
 						attachStacktrace: !0,
 						dsn: y.a.sentryClientPublicURL,
 						whitelistUrls: n,
-						release: "59350eac0bb77353f6efbe12a2b05b77e90b6f3c-production",
+						release: "de374a73110de4423a85632b86b231e9a48518a4-production",
 						environment: "production",
 						ignoreErrors: ["$ is not defined"],
 						integrations: [...Object(L.d)(), new d.Integrations.Breadcrumbs({
@@ -6913,7 +6938,7 @@
 							settings: r,
 							statusCode: s,
 							type: o,
-							releaseClient: "59350eac0bb77353f6efbe12a2b05b77e90b6f3c-production",
+							releaseClient: "de374a73110de4423a85632b86b231e9a48518a4-production",
 							appName: t.statsAppName,
 							error: n ? JSON.parse(Object(l.a)(n)) : void 0
 						},
@@ -50438,4 +50463,4 @@
 		"ignored /drone/src/node_modules/readable-stream/lib/internal/streams util": function(e, t) {}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.fdd283020de880964d90.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.dcd479656888f83241e8.js.map

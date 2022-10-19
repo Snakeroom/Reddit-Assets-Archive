@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/runtime~Reddit.c3f889cc1b228e3a5e60.js
-// Retrieved at 10/19/2022, 1:30:25 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/runtime~Reddit.e8f2a0480cc9e2e9bed4.js
+// Retrieved at 10/19/2022, 2:10:05 PM by Reddit Dataminer v1.0.0
 ! function(e) {
 	function o(o) {
 		for (var a, n, r = o[0], s = o[1], c = o[2], l = 0, P = []; l < r.length; l++) n = r[l], Object.prototype.hasOwnProperty.call(d, n) && d[n] && P.push(d[n][0]), d[n] = 0;
@@ -1562,7 +1562,7 @@
 						MembershipPaywallPage: "51f8495ab69a1a3ec1a8",
 						FlairEdit: "c8a24f8d947902543c4c",
 						"vendors~Chat~RedesignChat": "53cd3b091135f8f64886",
-						"Chat~RedesignChat": "2f9bac78ab3434246f85",
+						"Chat~RedesignChat": "82fc6c91b0a661541b02",
 						RedesignChat: "8997300548d740cddfd7",
 						ModListing: "5aa094af8cfdcb645875",
 						"vendors~PostCreation~Subreddit": "c6c96fbaf04e2c667eb2",
@@ -1677,21 +1677,21 @@
 						"reddit-components-Governance-TransactionModals-SubscriptionModal": "0812ccdf1a390674531b",
 						ChatEmpty: "1e3ef81a71dcde2ce79e",
 						ChatMinimize: "44c69e3b0034bf285b68",
-						ChatOverlayReport: "450d6ca85f9159feb8d3",
+						ChatOverlayReport: "34d9f05e9fd9eb4b5c8c",
 						ChatPage: "e7a4cc9709580c54e430",
 						ExternalLinkUnit: "9f4f6b714357ab66fd7b",
-						InvitedChannelsPanel: "e179a588a86c3dbc7250",
+						InvitedChannelsPanel: "c63d44a1cd567f6ec4da",
 						OverlayBlockUser: "ae321addad566d2433ad",
 						OverlayChannelRemoval: "28a4199cedb871c69d76",
-						OverlayCreateChannel: "d9fd91aaffdf1c815079",
+						OverlayCreateChannel: "1f949020ca7948214590",
 						OverlayDeleteMessage: "b99becea4f3228ff35e0",
 						OverlayDirectsEmptyState: "b0aa225b06b7d2fb0bd4",
-						OverlayGroupAbout: "27873f0e71bda914c101",
+						OverlayGroupAbout: "c343fb00146fc65b448c",
 						OverlayLinkSharingSettings: "fc228df51ba619cc3e8a",
 						OverlayNSFWWarning: "36543b9a819fdc1f63d0",
 						OverlayPrivacyAndSupport: "34fa9bc09546ab97fda1",
-						OverlayThemes: "f5c2e5f2532e7fc2f9fb",
-						SettingsPanel: "68c303a26e8ac2aeb9ba",
+						OverlayThemes: "fa7bf1e91a58fc0712cf",
+						SettingsPanel: "88fca63e00ff72abea5f",
 						CommentRichUnit: "d6aa89db1d87c1ffd7bd",
 						PostRichUnit: "cd400e16952b9c9c8a61",
 						SubredditTopContent: "ae290ce7ca3ca22c5bf2",
@@ -1812,4 +1812,4 @@
 	var m = c;
 	t()
 }([]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/runtime~Reddit.c3f889cc1b228e3a5e60.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/runtime~Reddit.e8f2a0480cc9e2e9bed4.js.map

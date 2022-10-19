@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SettingsPanel.68c303a26e8ac2aeb9ba.js
-// Retrieved at 10/18/2022, 1:10:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SettingsPanel.88fca63e00ff72abea5f.js
+// Retrieved at 10/19/2022, 2:10:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SettingsPanel"], {
 		"./src/chat/components/Sidebar/SettingsPanel/SettingsGroup/index.m.less": function(e, t, a) {
@@ -82,7 +82,7 @@
 			} = a("./node_modules/fbt/lib/FbtPublic.js");
 			var _ = () => {
 					const e = Object(l.d)(),
-						t = Object(l.e)(p.n);
+						t = Object(l.e)(p.o);
 					return s.a.createElement(d.c, {
 						submit: () => {
 							t && e(Object(r.H)(t)), e(Object(u.J)())
@@ -154,15 +154,15 @@
 					return e
 				}).apply(this, arguments)
 			}
-			var C = e => s.a.createElement(L.a, M({}, e, {
+			var N = e => s.a.createElement(L.a, M({}, e, {
 					viewBox: "0 0 20 20"
 				}), e.isFilled ? s.a.createElement("path", {
 					d: "M8.207,15.707,6.793,14.293,11.086,10,6.793,5.707,8.207,4.293l5,5a1,1,0,0,1,0,1.414Z"
 				}) : s.a.createElement("path", {
 					d: "M7.942,15.442l-.884-.884L11.616,10,7.058,5.442l.884-.884,5,5a.625.625,0,0,1,0,.884Z"
 				})),
-				N = a("./src/chat/components/Sidebar/SettingsPanel/SettingsItem/index.m.less"),
-				P = a.n(N),
+				C = a("./src/chat/components/Sidebar/SettingsPanel/SettingsItem/index.m.less"),
+				P = a.n(C),
 				y = a("./src/chat/helpers/dom.ts");
 			var I, T = e => {
 					let {
@@ -184,7 +184,7 @@
 						className: P.a.Text
 					}, a), r && !l ? s.a.createElement("div", {
 						className: P.a.OpenScreenArrow
-					}, s.a.createElement(C, null)) : null)
+					}, s.a.createElement(N, null)) : null)
 				},
 				B = a("./src/chat/constants/channels.ts");
 			! function(e) {
@@ -380,13 +380,13 @@
 				const a = d.d,
 					r = Object(l.d)(),
 					[m, b] = Object(c.useState)(null),
-					A = Object(l.e)(e => Object(p.M)(e, t.channelId)),
+					A = Object(l.e)(e => Object(p.N)(e, t.channelId)),
 					k = Object(l.e)(Ae.A),
 					x = Object(l.e)(Ae.i),
 					E = Object(l.e)(p.a),
 					S = Object(l.e)(ke.e),
 					j = Object(l.e)(_e.d),
-					g = Object(l.e)(p.s),
+					g = Object(l.e)(p.t),
 					w = E && t.type === ve.b.Group,
 					L = Object(c.useMemo)(() => {
 						if (t) switch (t.type) {
@@ -560,4 +560,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SettingsPanel.68c303a26e8ac2aeb9ba.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SettingsPanel.88fca63e00ff72abea5f.js.map
