@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/runtime~Reddit.d10291b5965e8c424881.js
-// Retrieved at 10/19/2022, 12:30:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/runtime~Reddit.c3f889cc1b228e3a5e60.js
+// Retrieved at 10/19/2022, 1:30:25 PM by Reddit Dataminer v1.0.0
 ! function(e) {
 	function o(o) {
 		for (var a, n, r = o[0], s = o[1], c = o[2], l = 0, P = []; l < r.length; l++) n = r[l], Object.prototype.hasOwnProperty.call(d, n) && d[n] && P.push(d[n][0]), d[n] = 0;
@@ -1401,7 +1401,7 @@
 						4: "adfe356f9cf1a26da86e",
 						5: "bea80493f7bcc3586a82",
 						6: "42cae2debca8192f5108",
-						7: "71018da07ebee28a8b68",
+						7: "97e9f3b0945e3bb97064",
 						8: "1e7255e8e49deaf1bc79",
 						OnboardingModal: "5eafee0530531422d126",
 						AchievementsActions: "4e31d8c4400f40c3ecec",
@@ -1423,7 +1423,7 @@
 						CoinsMobile: "9fd8d83b1163190b11ea",
 						"CollectionCommentsPage~CommentsPage~CountryPage~FramedGild~GildModal~GovernanceReleaseNotesModal~Hap~1fdd9b9b": "2e88663e8fb67d88ee75",
 						"CollectionCommentsPage~CommentsPage~CountryPage~Frontpage~GovernanceReleaseNotesModal~ModListing~Mod~e3d63e32": "56fab1e75bccbcf90fb5",
-						"CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~ModerationPages~PostCreation~Profile~9a5d9fab": "068e0f582127bd5eba4d",
+						"CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~ModerationPages~PostCreation~Profile~9a5d9fab": "39306c77b3f3acc0413d",
 						"CollectionCommentsPage~CommentsPage~ModQueuePages~ModerationPages~PostCreation~ProfileComments~Profi~a5ca5d05": "fb13323f5ca9410283fb",
 						"CollectionCommentsPage~CommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~RpanListingUnit~S~5809214e": "64b44c9e93c8f9e1707c",
 						"CollectionCommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~StandalonePostPage~reddit-comp~2f7e159a": "dc934a928700c67fb047",
@@ -1640,7 +1640,7 @@
 						"vendors~dashjs": "518ef1c4a3ea00bc51bc",
 						"vendors~devPlatform-components-AdminPanel-Utilities-DevPlatformConfig~devPlatform-components-ContextActions": "45c256811d80b97f1ac6",
 						"devPlatform-components-ContextActions": "8d5650b8cc7b97f4bbc8",
-						"vendors~shreddit-player": "9fcdabddac32a6ccb93d",
+						"vendors~shreddit-player": "cdb0097dbe58ed7a4dc3",
 						ContributorRequestButton: "9913bfb0b8dbfa31e765",
 						SubredditSearchCarousel: "eab433a007946551fcbe",
 						CommunityTopicSurvey: "1eaec6a42d0441fcb4af",
@@ -1812,4 +1812,4 @@
 	var m = c;
 	t()
 }([]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/runtime~Reddit.d10291b5965e8c424881.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/runtime~Reddit.c3f889cc1b228e3a5e60.js.map

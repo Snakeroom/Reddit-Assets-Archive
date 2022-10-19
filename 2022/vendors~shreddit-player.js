@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/vendors~shreddit-player.9fcdabddac32a6ccb93d.js
-// Retrieved at 10/5/2022, 1:00:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/vendors~shreddit-player.cdb0097dbe58ed7a4dc3.js
+// Retrieved at 10/19/2022, 1:30:25 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["vendors~shreddit-player"], {
 		"./node_modules/@reddit/faceplate/lib/custom-event.js": function(e, t, r) {
@@ -4246,7 +4246,7 @@
 			class Cr extends nr {
 				constructor() {
 					super(), this.value = 100, this._handleSliderValueChange = Object(Ze.a)(this, "vds-slider-value-change", this._changeVolume.bind(this)), this._handleSliderDragValueChange = Object(Ze.a)(this, "vds-slider-drag-value-change", this._changeVolume.bind(this)), Ie(this, "volume", e => {
-						this.value = 100 * e
+						this.value = 100 * Math.sqrt(e)
 					})
 				}
 				connectedCallback() {
@@ -4261,8 +4261,9 @@
 				}
 				set max(e) {}
 				_changeVolume(e) {
-					const t = ke(e.detail / 100, 3);
-					this._mediaRemote.changeVolume(t, e)
+					const t = e.detail,
+						r = ke(Math.pow(t / 100, 2), 3);
+					this._mediaRemote.changeVolume(r, e)
 				}
 			}
 			Sr([Object(n.b)({
@@ -4506,10 +4507,7 @@
   }
 `;
 			const Ar = {
-				startPosition: -1,
 				capLevelToPlayerSize: !0,
-				maxBufferLength: 10,
-				maxMaxBufferLength: 10,
 				startLevel: -1
 			};
 			var Pr = function(e, t, r, i) {
@@ -4522,7 +4520,7 @@
 			};
 			let jr = class extends i.a {
 				constructor() {
-					super(...arguments), this.hlsLibrary = () => r.e(7).then(r.t.bind(null, "./node_modules/@reddit/shreddit.components.shreddit-player/node_modules/hls.js/dist/hls.min.js", 7)), this.autoplay = !1, this.gif = !1, this.playWhileHidden = !1, this.ui = "mobile", this.objectFit = "contain", this.showPreviewPoster = !0, this.handleLoadMediaClick = () => {
+					super(...arguments), this.hlsLibrary = () => r.e(7).then(r.t.bind(null, "./node_modules/@reddit/shreddit.components.shreddit-player/node_modules/hls.js/dist/hls.min.js", 7)), this.autoplay = !1, this.gif = !1, this.playOutOfViewport = !1, this.ui = "mobile", this.objectFit = "contain", this.showPreviewPoster = !0, this.handleLoadMediaClick = () => {
 						var e;
 						null === (e = this.hlsElement) || void 0 === e || e.startLoadingMedia(), this.showPreviewPoster = !1
 					}
@@ -4749,15 +4747,16 @@
 				}
 				render() {
 					var e, t;
-					const r = this.gif ? "gif" : "";
+					const r = this.gif ? "gif" : "",
+						n = "desktop" === this.ui;
 					return i.c`
       <vds-media-sync ?single-playback="${!this.gif}" sync-volume>
         <vds-media-visibility
           intersection-threshold="1"
           enter-page="${o(this.autoplay||this.gif?"play":void 0)}"
           enter-viewport="${o(this.autoplay||this.gif?"play":void 0)}"
-          exit-page="${o(this.playWhileHidden||this.gif?void 0:"pause")}"
-          exit-viewport="${o(this.playWhileHidden||this.gif?void 0:"pause")}"
+          exit-page="${o(n||this.gif?void 0:"pause")}"
+          exit-viewport="${o(this.playOutOfViewport||this.gif?void 0:"pause")}"
           page-enter-delay="200"
           viewport-enter-delay="200"
         >
@@ -4800,7 +4799,7 @@
 				reflect: !0
 			})], jr.prototype, "gif", void 0), Pr([Object(n.b)()], jr.prototype, "preview", void 0), Pr([Object(n.b)({
 				type: Boolean
-			})], jr.prototype, "playWhileHidden", void 0), Pr([Object(n.b)()], jr.prototype, "ui", void 0), Pr([Object(n.b)({
+			})], jr.prototype, "playOutOfViewport", void 0), Pr([Object(n.b)()], jr.prototype, "ui", void 0), Pr([Object(n.b)({
 				type: String,
 				attribute: "object-fit"
 			})], jr.prototype, "objectFit", void 0), Pr([Object(n.d)()], jr.prototype, "showPreviewPoster", void 0), Pr([Object(n.d)()], jr.prototype, "hlsEngine", void 0), Pr([Object(n.c)("vds-hls")], jr.prototype, "hlsElement", void 0), jr = Pr([Object(n.a)("shreddit-player")], jr)
@@ -7233,4 +7232,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/vendors~shreddit-player.9fcdabddac32a6ccb93d.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/vendors~shreddit-player.cdb0097dbe58ed7a4dc3.js.map
