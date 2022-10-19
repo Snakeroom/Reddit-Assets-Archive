@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/AwardTooltip.5d5bfe03a2bf7ca21452.js
-// Retrieved at 10/19/2022, 11:10:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/AwardTooltip.5b6bc7246f852ffcc810.js
+// Retrieved at 10/19/2022, 12:30:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["AwardTooltip"], {
 		"./src/reddit/components/AwardTooltip/index.m.less": function(e, t, o) {
@@ -42,8 +42,8 @@
 				x = o("./src/reddit/selectors/user.ts"),
 				f = o("./src/reddit/components/ContentTooltip/index.tsx"),
 				C = o("./src/reddit/components/SubredditIcon/index.tsx"),
-				g = o("./src/reddit/controls/Button/index.tsx"),
-				O = o("./src/reddit/icons/svgs/Hide/index.tsx"),
+				O = o("./src/reddit/controls/Button/index.tsx"),
+				g = o("./src/reddit/icons/svgs/Hide/index.tsx"),
 				P = o("./src/reddit/icons/svgs/Moderate/index.tsx"),
 				_ = o("./src/reddit/icons/svgs/Report/index.tsx"),
 				E = o("./src/reddit/icons/fonts/Coin/index.tsx");
@@ -60,14 +60,14 @@
 				return null
 			};
 			var j = o("./src/reddit/components/AwardTooltip/index.m.less"),
-				N = o.n(j);
-			const I = Object(d.c)({
+				I = o.n(j);
+			const N = Object(d.c)({
 					currentUser: x.k,
 					moderatorPermissions: (e, t) => {
 						let {
 							postOrComment: o
 						} = t;
-						const r = Object(b.N)(e, {
+						const r = Object(b.O)(e, {
 							thingId: o.id
 						});
 						return r ? Object(w.n)(e, {
@@ -78,7 +78,7 @@
 						let {
 							postOrComment: o
 						} = t;
-						return Object(b.N)(e, {
+						return Object(b.O)(e, {
 							thingId: o.id
 						})
 					},
@@ -94,7 +94,7 @@
 						})
 					}
 				}),
-				y = Object(i.b)(I, (e, t) => {
+				y = Object(i.b)(N, (e, t) => {
 					let {
 						tooltipId: o
 					} = t;
@@ -112,12 +112,12 @@
 						onOpenReportFlow: t
 					} = this.props;
 					return n.a.createElement("button", {
-						className: Object(c.a)(N.a.awardReport),
+						className: Object(c.a)(I.a.awardReport),
 						onClick: () => {
 							t(), e()
 						}
 					}, n.a.createElement(_.a, {
-						className: N.a.awardReportIcon
+						className: I.a.awardReportIcon
 					}))
 				}
 				renderHideButton() {
@@ -126,12 +126,12 @@
 						onHideAward: t
 					} = this.props;
 					return n.a.createElement("button", {
-						className: N.a.awardHide,
+						className: I.a.awardHide,
 						onClick: () => {
 							t(), e()
 						}
-					}, n.a.createElement(O.a, {
-						className: N.a.awardHideIcon
+					}, n.a.createElement(g.a, {
+						className: I.a.awardHideIcon
 					}), r.fbt._("Hide", null, {
 						hk: "4kciEW"
 					}))
@@ -142,13 +142,13 @@
 						currentUser: t,
 						onClickPremium: o
 					} = this.props, s = e.awardSubType === u.d.Premium, i = !!t && t.isGold;
-					return s ? i ? null : n.a.createElement(g.k, {
-						className: N.a.premiumCta,
+					return s ? i ? null : n.a.createElement(O.k, {
+						className: I.a.premiumCta,
 						onClick: o
 					}, r.fbt._("Get Premium", null, {
 						hk: "Yapo5"
 					})) : n.a.createElement("a", {
-						className: N.a.howToLink,
+						className: I.a.howToLink,
 						href: "https://www.reddithelp.com/en/categories/reddit-101/reddit-basics/what-are-awards",
 						target: "_blank",
 						rel: "noopener noreferrer"
@@ -177,35 +177,35 @@
 						tooltipId: d,
 						defaultTooltipPosition: "top"
 					}, n.a.createElement("div", {
-						className: Object(c.a)(N.a.headerBar, {
-							[N.a.headerBarPremium]: p
+						className: Object(c.a)(I.a.headerBar, {
+							[I.a.headerBarPremium]: p
 						})
 					}, h && this.renderHideButton(), this.renderReporterButton()), n.a.createElement("div", {
-						className: N.a.awardDetails
+						className: I.a.awardDetails
 					}, n.a.createElement("div", {
-						className: N.a.awardIconContainer
+						className: I.a.awardIconContainer
 					}, n.a.createElement("div", {
-						className: N.a.awardIcon,
+						className: I.a.awardIcon,
 						style: {
 							backgroundImage: `url("${t}")`
 						}
 					})), n.a.createElement("div", {
-						className: N.a.awardName
+						className: I.a.awardName
 					}, r.fbt._("{award-name} Award", [r.fbt._param("award-name", e.name)], {
 						hk: "2QpjYF"
 					})), n.a.createElement("p", {
-						className: N.a.awardDescription
+						className: I.a.awardDescription
 					}, n.a.createElement(v, {
 						award: e
 					})), e.awardType === u.f.Community && a && n.a.createElement("div", {
-						className: N.a.subreddit
+						className: I.a.subreddit
 					}, n.a.createElement(C.b, {
-						className: N.a.subredditIcon,
+						className: I.a.subredditIcon,
 						subredditOrProfile: a
 					}), `r/${a.name}`), e.awardType === u.f.Moderator && n.a.createElement("div", {
-						className: N.a.subreddit
+						className: I.a.subreddit
 					}, n.a.createElement(P.a, {
-						className: Object(c.a)(N.a.subredditIcon, N.a.modShield)
+						className: Object(c.a)(I.a.subredditIcon, I.a.modShield)
 					}), r.fbt._("Exclusive mod-given Award", null, {
 						hk: "1VGGho"
 					})), this.renderCta()))
@@ -292,7 +292,7 @@
 						}
 					}, t)
 				}),
-				g = Object(a.c)({
+				O = Object(a.c)({
 					isOpen: (e, t) => {
 						let {
 							tooltipId: o
@@ -300,8 +300,8 @@
 						return Object(u.b)(o)(e)
 					}
 				}),
-				O = Object(m.a)(C, [r.a.Click, r.a.Keydown]),
-				P = Object(i.b)(g);
+				g = Object(m.a)(C, [r.a.Click, r.a.Keydown]),
+				P = Object(i.b)(O);
 			class _ extends n.a.Component {
 				constructor(e) {
 					super(e), this.checkAndSetPosition = () => {
@@ -373,7 +373,7 @@
 						tooltipPosition: o,
 						caretPosition: r
 					} = this.getPositions(e);
-					return n.a.createElement(O, b({}, this.props, {
+					return n.a.createElement(g, b({}, this.props, {
 						caretPosition: r,
 						targetPosition: t,
 						tooltipPosition: o
@@ -511,4 +511,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/AwardTooltip.5d5bfe03a2bf7ca21452.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/AwardTooltip.5b6bc7246f852ffcc810.js.map

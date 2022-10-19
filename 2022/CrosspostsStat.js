@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CrosspostsStat.adbcf037653e30efb1d8.js
-// Retrieved at 10/19/2022, 11:10:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CrosspostsStat.d74ffc114e14130ad3f7.js
+// Retrieved at 10/19/2022, 12:30:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CrosspostsStat"], {
 		"./src/reddit/components/CreatorStats/CrosspostsStat.m.less": function(e, t, s) {
@@ -46,7 +46,7 @@
 						const s = f.getState(),
 							r = Object(i.f)(e),
 							o = t.substring(2),
-							n = Object(u.H)(s, o) || Object(p.o)(s, o);
+							n = Object(u.I)(s, o) || Object(p.o)(s, o);
 						j(Object(c.a)(_, e, r, n, o, O))
 					}, [f, j, _, O]);
 				return n.a.createElement("div", {
@@ -91,9 +91,9 @@
 			})), s.d(t, "e", (function() {
 				return v
 			})), s.d(t, "b", (function() {
-				return h
+				return I
 			})), s.d(t, "a", (function() {
-				return C
+				return h
 			}));
 			var r = s("./node_modules/node-libs-browser/node_modules/url/url.js"),
 				o = s("./src/lib/constants/index.ts"),
@@ -255,12 +255,12 @@
 							draftsCount: d
 						}
 					}
-				}, h = (e, t) => Object(n.a)(Object(a.a)(e, [d.a]), {
+				}, I = (e, t) => Object(n.a)(Object(a.a)(e, [d.a]), {
 					endpoint: Object(_.a)(Object(i.a)(`${e.apiUrl}/api/submit_poll_post.json?resubmit=true`)),
 					method: o.ob.POST,
 					data: S(t),
 					type: "json"
-				}).then(e => v(e, t)), C = (e, t) => Object(n.a)(Object(a.a)(e, [d.a]), {
+				}).then(e => v(e, t)), h = (e, t) => Object(n.a)(Object(a.a)(e, [d.a]), {
 					endpoint: Object(_.a)(Object(i.a)(`${e.apiUrl}/api/submit_gallery_post.json?resubmit=true`)),
 					method: o.ob.POST,
 					data: {
@@ -281,4 +281,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CrosspostsStat.adbcf037653e30efb1d8.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CrosspostsStat.d74ffc114e14130ad3f7.js.map

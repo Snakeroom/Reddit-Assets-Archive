@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/NewCommunityProgress.ad6d5f1997e5006f5111.js
-// Retrieved at 10/19/2022, 11:10:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/NewCommunityProgress.984b15ee2b64b49667b9.js
+// Retrieved at 10/19/2022, 12:30:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["NewCommunityProgress"], {
 		"./src/lib/colors/constants.ts": function(e, A, t) {
@@ -128,7 +128,7 @@
 					s = null == t ? void 0 : t.contentRatingSurvey,
 					r = null == t ? void 0 : t.communityProgressModule;
 				(n || s || r) && e({
-					type: a.z,
+					type: a.D,
 					payload: {
 						id: A,
 						questions: n,
@@ -245,13 +245,13 @@
 						progress: Y,
 						status: G
 					} = e;
-					var z, X;
+					var X, z;
 					const R = Object(a.d)(),
 						U = Object(f.a)(),
 						K = h.b[l],
-						J = K ? Object(N.b)(K) : null !== (z = h.a[l]) && void 0 !== z ? z : Object(N.b)("best"),
+						J = K ? Object(N.b)(K) : null !== (X = h.a[l]) && void 0 !== X ? X : Object(N.b)("best"),
 						V = m ? Q.g : Q.f,
-						F = null !== (X = V[d]) && void 0 !== X ? X : V.downvote;
+						F = null !== (z = V[d]) && void 0 !== z ? z : V.downvote;
 
 					function S(e) {
 						(function(e) {
@@ -361,8 +361,8 @@
 					}))))
 				}),
 				G = t("./node_modules/fbt/lib/FbtPublic.js"),
-				z = t("./src/higherOrderComponents/asModal/index.tsx");
-			var X = Object(z.a)(e => {
+				X = t("./src/higherOrderComponents/asModal/index.tsx");
+			var z = Object(X.a)(e => {
 				const {
 					onCloseModal: A,
 					onCompleteCard: t,
@@ -518,7 +518,7 @@
 				const I = Object(n.useRef)(null),
 					[p, x] = Object(n.useState)(!A),
 					b = Object(a.e)(w.db),
-					M = Object(a.e)(e => Object(m.db)(e, t)),
+					M = Object(a.e)(e => Object(m.eb)(e, t)),
 					j = Object(f.a)();
 				Object(n.useEffect)(() => {
 					j(Object(C.g)(r, p ? "expanded_module" : "collapses_module"))
@@ -531,14 +531,14 @@
 					T && L(void 0), O(Object(g.i)(W))
 				}
 				const [G] = Object(l.a)(d.b);
-				const z = Object(n.useRef)(),
+				const X = Object(n.useRef)(),
 					R = Object(n.useRef)(null),
 					U = Q.findIndex(e => e.status === v.a.INITIAL || e.status === v.a.ACTIONED),
 					J = D ? 0 : U;
 				if (Object(n.useEffect)(() => {
-						const e = (null == z ? void 0 : z.current) || R.current;
+						const e = (null == X ? void 0 : X.current) || R.current;
 						(null == e ? void 0 : e.parentNode) && (e.parentNode.scrollTop = (null == e ? void 0 : e.offsetTop) - e.parentNode.offsetTop - 20)
-					}, [z, r, p]), 0 === r.cards.length) return null;
+					}, [X, r, p]), 0 === r.cards.length) return null;
 				const V = () => Q.map((e, A) => {
 						if (D && A > 2) return;
 						const n = {
@@ -559,7 +559,7 @@
 							...e
 						};
 						return D ? s.a.createElement(Y, n) : s.a.createElement(Y, S({}, n, {
-							ref: A === J ? z : void 0,
+							ref: A === J ? X : void 0,
 							onActionCard: () => (async function(e) {
 								L(e), j(Object(C.a)(r, e)), k()
 							})(e.id)
@@ -623,7 +623,7 @@
 						}), O(Object(i.b)(t))
 					},
 					ref: R
-				}))), T && s.a.createElement(X, {
+				}))), T && s.a.createElement(z, {
 					onCloseModal: k,
 					onCompleteCard: () => H && async function(e) {
 						await y({
@@ -1222,4 +1222,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/NewCommunityProgress.ad6d5f1997e5006f5111.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/NewCommunityProgress.984b15ee2b64b49667b9.js.map

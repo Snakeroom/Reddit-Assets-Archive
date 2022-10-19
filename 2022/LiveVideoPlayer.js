@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/LiveVideoPlayer.235ca25425e65b393019.js
-// Retrieved at 10/19/2022, 11:10:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/LiveVideoPlayer.7cdd704d906122fc7e3f.js
+// Retrieved at 10/19/2022, 12:30:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["LiveVideoPlayer"], {
 		"./node_modules/lodash/isUndefined.js": function(e, t) {
@@ -168,7 +168,7 @@
 					s(p());
 					const d = Date.now(),
 						l = e.replace("r/", ""),
-						m = Object(u.H)(i, l),
+						m = Object(u.I)(i, l),
 						h = await Object(a.b)(o(), {
 							subredditId: m,
 							options: t
@@ -236,7 +236,7 @@
 			s.d(t, "e", (function() {
 				return N
 			})), s.d(t, "d", (function() {
-				return P
+				return M
 			})), s.d(t, "c", (function() {
 				return D
 			})), s.d(t, "a", (function() {
@@ -326,11 +326,11 @@
 					}))
 				}),
 				x = (e, t) => t.type === l.a.PROFILE && e.displayText === t.name.replace("u_", ""),
-				P = (e, t, s) => async (i, c, m) => {
+				M = (e, t, s) => async (i, c, m) => {
 					let {
 						apiContext: h
 					} = m, b = e.map(e => e.type === l.a.SUBREDDIT ? {
-						id: Object(g.H)(c(), e.name),
+						id: Object(g.I)(c(), e.name),
 						name: e.name,
 						type: e.type
 					} : {
@@ -409,12 +409,12 @@
 						i(Object(u.f)(Object(u.e)(r, S.b.Error)))
 					}
 					return v.ok
-				}, M = Object(i.a)(c.f), D = e => async (t, s, n) => {
+				}, P = Object(i.a)(c.f), D = e => async (t, s, n) => {
 					let {
 						apiContext: r
 					} = n;
 					const o = s(),
-						i = Object(g.P)(o, {
+						i = Object(g.Q)(o, {
 							identifier: e
 						});
 					if (!i) throw new Error(`actions.subscription -- No subreddit or profile found with id ${e.id}`);
@@ -430,15 +430,15 @@
 							type: e.type,
 							name: i.name
 						},
-						_ = () => Object(g.jb)(s(), {
+						_ = () => Object(g.kb)(s(), {
 							identifier: O
 						});
-					(_() || (await t(P([O], !0)), _())) && (t(M({
+					(_() || (await t(M([O], !0)), _())) && (t(P({
 						makeFavorite: b,
 						identifier: e,
 						subredditModels: f,
 						profileModels: v
-					})), (await Object(p.b)(r(), a, b)).ok || (t(M({
+					})), (await Object(p.b)(r(), a, b)).ok || (t(P({
 						makeFavorite: !b,
 						identifier: e,
 						subredditModels: f,
@@ -707,9 +707,9 @@
 				T = s("./src/reddit/selectors/user.ts"),
 				N = s("./src/reddit/selectors/video.ts"),
 				x = s("./src/reddit/components/PublicAccessNetwork/LiveVideoPlayer/index.m.less"),
-				P = s.n(x);
+				M = s.n(x);
 			const {
-				fbt: M
+				fbt: P
 			} = s("./node_modules/fbt/lib/FbtPublic.js"), D = Object(c.a)(v.a, {
 				playerName: "RPAN Listing Player"
 			}), A = 3e3, V = Object(d.c)({
@@ -942,7 +942,7 @@
 				}
 				componentDidMount() {
 					const e = this.focusVisibleRef.current;
-					e.classList.add(P.a.focusVisible), Object(l.a)(e)
+					e.classList.add(M.a.focusVisible), Object(l.a)(e)
 				}
 				componentDidUpdate(e, t) {
 					var s;
@@ -972,8 +972,8 @@
 				}
 				render() {
 					return i.a.createElement("div", {
-						className: Object(u.a)(P.a.LiveVideoPlayer, {
-							[P.a.isSleeping]: this.state.isSleeping && !this.shouldPause
+						className: Object(u.a)(M.a.LiveVideoPlayer, {
+							[M.a.isSleeping]: this.state.isSleeping && !this.shouldPause
 						}),
 						onBlur: this.handleMouseLeave,
 						onClick: this.handleClick,
@@ -988,9 +988,9 @@
 						live: e
 					} = this.state;
 					return i.a.createElement(F, null, e ? i.a.createElement("span", {
-						className: P.a.liveStatus
+						className: M.a.liveStatus
 					}, i.a.createElement(S.g, null)) : null, i.a.createElement("div", {
-						className: P.a.controls,
+						className: M.a.controls,
 						onMouseDown: this.handleMouseDownControls,
 						onMouseMove: this.handleMouseMoveControls,
 						onMouseUp: this.handleMouseUpControls
@@ -1004,7 +1004,7 @@
 						postTitle: n
 					} = this.props;
 					return i.a.createElement("div", {
-						className: Object(u.a)(P.a.clip9x16, t)
+						className: Object(u.a)(M.a.clip9x16, t)
 					}, i.a.createElement(D, {
 						autoplay: e,
 						controls: !1,
@@ -1114,7 +1114,7 @@
 					children: t
 				} = e;
 				return i.a.createElement("div", {
-					className: P.a.Overlay
+					className: M.a.Overlay
 				}, t)
 			}
 		},
@@ -1271,9 +1271,9 @@
 			})), s.d(t, "k", (function() {
 				return x
 			})), s.d(t, "b", (function() {
-				return P
-			})), s.d(t, "d", (function() {
 				return M
+			})), s.d(t, "d", (function() {
+				return P
 			})), s.d(t, "e", (function() {
 				return D
 			})), s.d(t, "w", (function() {
@@ -1528,14 +1528,14 @@
 					...a(t, e),
 					targetSubreddit: i.jb(t)
 				}),
-				P = (e, t) => s => ({
+				M = (e, t) => s => ({
 					source: "stream_player",
 					action: "click",
 					noun: "close",
 					playback: d(s, e, t),
 					...a(s, e)
 				}),
-				M = (e, t) => s => ({
+				P = (e, t) => s => ({
 					source: "stream_player",
 					action: "click",
 					noun: "pause",
@@ -1706,9 +1706,9 @@
 			})), s.d(t, "d", (function() {
 				return x
 			})), s.d(t, "h", (function() {
-				return P
-			})), s.d(t, "k", (function() {
 				return M
+			})), s.d(t, "k", (function() {
+				return P
 			})), s.d(t, "c", (function() {
 				return D
 			})), s.d(t, "f", (function() {
@@ -1888,8 +1888,8 @@
 					if (e > 0) return t[e - 1]
 				}),
 				x = Object(r.a)(Object(n.a)(k, S, (e, t) => e ? t[e] : void 0)),
-				P = Object(r.a)(Object(n.a)(T, S, (e, t) => e ? t[e] : void 0)),
-				M = Object(r.a)(Object(n.a)(N, S, (e, t) => e ? t[e] : void 0)),
+				M = Object(r.a)(Object(n.a)(T, S, (e, t) => e ? t[e] : void 0)),
+				P = Object(r.a)(Object(n.a)(N, S, (e, t) => e ? t[e] : void 0)),
 				D = (Object(r.a)(Object(n.a)(e => e.publicAccessNetwork.preloads.discoveryUnitThumbnails, S, (e, t) => Object.keys(e).filter(e => !!t[e]).map(s => ({
 					...t[s],
 					preloadedPreviewUrl: e[s]
@@ -1954,4 +1954,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/LiveVideoPlayer.235ca25425e65b393019.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/LiveVideoPlayer.7cdd704d906122fc7e3f.js.map

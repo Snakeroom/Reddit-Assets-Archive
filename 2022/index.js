@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/index.faecd9c7db606d79476e.js
-// Retrieved at 10/19/2022, 11:10:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/index.9b7c4f350cd8083ce6ff.js
+// Retrieved at 10/19/2022, 12:30:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["index"], {
 		"./src/reddit/components/Econ/Audio/MuteIcon.tsx": function(e, t, n) {
@@ -1109,7 +1109,7 @@
 					var t;
 					const n = await Object(a.a)(e, l);
 					return Object(s.c)(n) && null !== (t = n.body.data.availableAudioRoomTopics) && void 0 !== t ? t : []
-				}, O = (e, t, n) => t.type === i.f.User ? Object(a.a)(e, {
+				}, O = (e, t, n) => t.type === i.g.User ? Object(a.a)(e, {
 					...c,
 					variables: n
 				}) : Object(a.a)(e, {
@@ -1118,7 +1118,7 @@
 						...n,
 						subredditId: t.id
 					}
-				}), k = (e, t, n) => t.type === i.f.User ? Object(a.a)(e, {
+				}), k = (e, t, n) => t.type === i.g.User ? Object(a.a)(e, {
 					...b,
 					variables: {
 						input: n
@@ -1338,4 +1338,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/index.faecd9c7db606d79476e.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/index.9b7c4f350cd8083ce6ff.js.map

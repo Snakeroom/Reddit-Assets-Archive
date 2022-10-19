@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfileComments.f586fe70edd4325db7e5.js
-// Retrieved at 10/19/2022, 11:10:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfileComments.17235b005564e9595045.js
+// Retrieved at 10/19/2022, 12:30:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfileComments"], {
 		"./node_modules/linkify-it/index.js": function(e, t, s) {
@@ -5052,7 +5052,7 @@
 					var t;
 					const s = await Object(o.a)(e, l);
 					return Object(i.c)(s) && null !== (t = s.body.data.availableAudioRoomTopics) && void 0 !== t ? t : []
-				}, C = (e, t, s) => t.type === a.f.User ? Object(o.a)(e, {
+				}, C = (e, t, s) => t.type === a.g.User ? Object(o.a)(e, {
 					...c,
 					variables: s
 				}) : Object(o.a)(e, {
@@ -5061,7 +5061,7 @@
 						...s,
 						subredditId: t.id
 					}
-				}), E = (e, t, s) => t.type === a.f.User ? Object(o.a)(e, {
+				}), E = (e, t, s) => t.type === a.g.User ? Object(o.a)(e, {
 					...h,
 					variables: {
 						input: s
@@ -5759,7 +5759,7 @@
 					measureScrollFPS: Q.d.measureScrollFPS,
 					layout: P.S,
 					loadMore: Y.d,
-					subredditsById: X.eb,
+					subredditsById: X.fb,
 					viewportDataLoaded: ee.a,
 					commentsById: J.q,
 					itemIds: Y.f,
@@ -6032,4 +6032,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileComments.f586fe70edd4325db7e5.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileComments.17235b005564e9595045.js.map

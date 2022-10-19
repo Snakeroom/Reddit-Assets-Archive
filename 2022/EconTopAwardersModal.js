@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/EconTopAwardersModal.b20b3d28c793cbfd6357.js
-// Retrieved at 10/19/2022, 11:10:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/EconTopAwardersModal.241a72482584b58a16e2.js
+// Retrieved at 10/19/2022, 12:30:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["EconTopAwardersModal"], {
 		"./src/lib/currency/centsToDollars/index.ts": function(e, t, r) {
@@ -403,7 +403,7 @@
 							return e
 					}
 				},
-				X = Object(C.c)({
+				Y = Object(C.c)({
 					api: A,
 					fetchedTokens: B,
 					inContext: T,
@@ -414,10 +414,10 @@
 				});
 			Object(y.a)({
 				features: {
-					banned: X
+					banned: Y
 				}
 			});
-			const Y = Object(o.a)(j.s),
+			const X = Object(o.a)(j.s),
 				J = Object(o.a)(j.r),
 				V = Object(o.a)(j.q),
 				$ = function(e) {
@@ -431,7 +431,7 @@
 							i = Object(g.e)(e, c),
 							d = o.features.banned.fetchedTokens[i];
 						if (o.features.banned.api.pending[i] || d) return;
-						r(Y({
+						r(X({
 							subredditId: e,
 							fetchedToken: c
 						}));
@@ -542,10 +542,10 @@
 				}, ie = (e, t) => async (r, a) => {
 					const n = a();
 					await Promise.all([(async () => {
-						if (!Object(N.b)(m.a.BAN_USER)(n) && !Object(E.U)(n, {
+						if (!Object(N.b)(m.a.BAN_USER)(n) && !Object(E.V)(n, {
 								subredditId: e
 							})) {
-							const t = Object(E.X)(n, {
+							const t = Object(E.Y)(n, {
 								subredditId: e
 							});
 							await r(Object(d.o)(t.name))
@@ -918,7 +918,7 @@
 				q = r("./src/reddit/icons/svgs/CoinV2/index.tsx"),
 				Z = r("./src/reddit/components/Econ/TopAwardersModal/Winners/Winner/index.m.less"),
 				Q = r.n(Z);
-			var X = function(e) {
+			var Y = function(e) {
 					const {
 						showScore: t,
 						awarder: r,
@@ -953,8 +953,8 @@
 						className: Q.a.coinIcon
 					}), r.score))
 				},
-				Y = r("./src/reddit/components/Econ/TopAwardersModal/Winners/index.m.less"),
-				J = r.n(Y);
+				X = r("./src/reddit/components/Econ/TopAwardersModal/Winners/index.m.less"),
+				J = r.n(X);
 			var V = function(e) {
 					const {
 						awarders: t,
@@ -967,7 +967,7 @@
 						className: Object(i.a)(r, J.a.container, {
 							[J.a.flexContainer]: s.length < 3
 						})
-					}, s.map((e, t) => n.a.createElement(X, {
+					}, s.map((e, t) => n.a.createElement(Y, {
 						showScore: a,
 						className: J.a.winner,
 						awarder: e,
@@ -1269,8 +1269,8 @@
 				q = r("./src/reddit/actions/inContextModeration.ts"),
 				Z = r("./src/reddit/actions/modal.ts"),
 				Q = r("./src/reddit/actions/subredditModeration/ban.ts"),
-				X = r("./src/reddit/constants/modals.ts"),
-				Y = r("./src/reddit/components/Hovercards/helpers.ts"),
+				Y = r("./src/reddit/constants/modals.ts"),
+				X = r("./src/reddit/components/Hovercards/helpers.ts"),
 				J = r("./src/reddit/icons/fonts/index.tsx"),
 				V = r("./src/reddit/models/ModeratingSubreddits/index.ts"),
 				$ = r("./src/reddit/selectors/bannedUser.ts"),
@@ -1305,7 +1305,7 @@
 					} = this.props;
 					return n.a.createElement("div", {
 						className: e
-					}, a ? n.a.createElement(Y.a, {
+					}, a ? n.a.createElement(X.a, {
 						role: "button",
 						onClick: () => {
 							s(this.props.user.id), o(L.e(t))
@@ -1316,7 +1316,7 @@
 						className: te.a.icon
 					}), re._("Unban User", null, {
 						hk: "1aASyW"
-					})) : n.a.createElement(Y.a, {
+					})) : n.a.createElement(X.a, {
 						role: "button",
 						onClick: () => {
 							c(), o(L.a(t))
@@ -1326,7 +1326,7 @@
 						className: te.a.icon
 					}), re._("Ban User", null, {
 						hk: "3OhuLx"
-					})), r && n.a.createElement(Y.a, {
+					})), r && n.a.createElement(X.a, {
 						role: "button",
 						onClick: () => {
 							i(), o(L.d(t))
@@ -1362,7 +1362,7 @@
 								username: r,
 								subredditId: a,
 								contextId: n
-							})), e(Object(Z.i)(X.a.MUTE_USER))
+							})), e(Object(Z.i)(Y.a.MUTE_USER))
 						}
 					}
 				})(ne),
@@ -1372,7 +1372,7 @@
 			} = r("./node_modules/fbt/lib/FbtPublic.js");
 			var ie = Object(s.b)(null, (e, t) => ({
 					onToggleUserFlairModal: () => e(Object(oe.g)(t.subredditId, t.username))
-				}))(e => n.a.createElement(Y.a, {
+				}))(e => n.a.createElement(X.a, {
 					role: "button",
 					onClick: () => {
 						e.onToggleUserFlairModal(), e.sendEvent(L.c(e.contextId))
@@ -1623,7 +1623,7 @@
 							subredditId: r
 						}) : void 0
 					},
-					isCurrentUserBanned: (e, t) => !!Object(h.p)(t) && Object(h.ib)(e, t),
+					isCurrentUserBanned: (e, t) => !!Object(h.p)(t) && Object(h.jb)(e, t),
 					userProfileStyles: (e, t) => Object(x.m)(e, Object(v.o)(e, t.userName)),
 					acceptChats: (e, t) => {
 						const r = Object(v.i)(e, {
@@ -1636,7 +1636,7 @@
 							subredditId: r
 						} = t;
 						const a = Object(w.e)(e),
-							n = r || a && Object(h.H)(e, a.name);
+							n = r || a && Object(h.I)(e, a.name);
 						return !!n && Object(p.i)(e, n)
 					},
 					trophyCase: (e, t) => Object(v.t)(e, Object(v.o)(e, t.userName)),
@@ -1654,7 +1654,7 @@
 						let {
 							userName: r
 						} = t;
-						return Object(h.jb)(e, {
+						return Object(h.kb)(e, {
 							identifier: {
 								name: r,
 								type: "profile"
@@ -2761,4 +2761,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EconTopAwardersModal.b20b3d28c793cbfd6357.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EconTopAwardersModal.241a72482584b58a16e2.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/MultiredditEditModal.94eb314bdef8b3d8af3b.js
-// Retrieved at 10/19/2022, 11:10:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/MultiredditEditModal.78f452c796dc58e54e0a.js
+// Retrieved at 10/19/2022, 12:30:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["MultiredditEditModal"], {
 		"./src/reddit/actions/multireddit/index.ts": function(e, t, i) {
@@ -23,9 +23,9 @@
 			})), i.d(t, "createPending", (function() {
 				return Q
 			})), i.d(t, "createSuccess", (function() {
-				return K
-			})), i.d(t, "createRequested", (function() {
 				return J
+			})), i.d(t, "createRequested", (function() {
+				return K
 			})), i.d(t, "reloadCurrentMultiredditFeedRequested", (function() {
 				return B
 			})), i.d(t, "duplicateFailure", (function() {
@@ -240,7 +240,7 @@
 							}))
 						}
 					}
-				}, z = Object(l.a)(R.e), Q = Object(l.a)(R.f), K = Object(l.a)(R.g), J = e => {
+				}, z = Object(l.a)(R.e), Q = Object(l.a)(R.f), J = Object(l.a)(R.g), K = e => {
 					let {
 						description: t,
 						displayName: i,
@@ -270,7 +270,7 @@
 							const {
 								id: t
 							} = m;
-							if (await e(K({
+							if (await e(J({
 									multireddit: w(p.body.data),
 									multiredditsModelsState: c.multireddits.models,
 									userId: t
@@ -397,7 +397,7 @@
 								method: a.ob.PUT
 							}))(l(), g, O);
 						if (j.ok) {
-							const d = Object(q.O)(c, {
+							const d = Object(q.P)(c, {
 									identifier: i
 								}) || t && t.id || "",
 								n = s.map(e => Object(N.h)(p, e));
@@ -562,7 +562,7 @@
 						if (!c || !c.subredditIds) return;
 						e(he());
 						const u = r && r.reduce((e, t) => {
-								const i = Object(q.H)(a, t) || Object(q.I)(a, t);
+								const i = Object(q.I)(a, t) || Object(q.J)(a, t);
 								return i ? [...e, i] : e
 							}, []),
 							m = await Object(v.a)(n(), {
@@ -1436,4 +1436,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/MultiredditEditModal.94eb314bdef8b3d8af3b.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/MultiredditEditModal.78f452c796dc58e54e0a.js.map

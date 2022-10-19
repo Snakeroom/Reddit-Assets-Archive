@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-DiscoveryUnit-CommunityCrossPollination-FocusedVerticals-CommunityDescWithPosts.1e1ac8d1608bd57a20cd.js
-// Retrieved at 10/19/2022, 11:10:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-DiscoveryUnit-CommunityCrossPollination-FocusedVerticals-CommunityDescWithPosts.a58028097a56a050f109.js
+// Retrieved at 10/19/2022, 12:30:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-DiscoveryUnit-CommunityCrossPollination-FocusedVerticals-CommunityDescWithPosts"], {
 		"./src/higherOrderComponents/withClickTracking/index.tsx": function(e, t, s) {
@@ -505,8 +505,8 @@
 			const {
 				fbt: g
 			} = s("./node_modules/fbt/lib/FbtPublic.js"), y = Object(c.c)({
-				subreddit: C.X,
-				subredditAboutInfo: C.y
+				subreddit: C.Y,
+				subredditAboutInfo: C.z
 			}), f = Object(i.b)(y);
 			class I extends r.a.Component {
 				constructor() {
@@ -1019,7 +1019,7 @@
 							subredditName: n,
 							[r]: s.id
 						},
-						a = Object(l.B)(e, {
+						a = Object(l.C)(e, {
 							subredditName: n
 						});
 					return a ? {
@@ -1125,4 +1125,4 @@
 		"./src/reddit/icons/fonts/commonStyles.m.less": function(e, t, s) {}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-DiscoveryUnit-CommunityCrossPollination-FocusedVerticals-CommunityDescWithPosts.1e1ac8d1608bd57a20cd.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-DiscoveryUnit-CommunityCrossPollination-FocusedVerticals-CommunityDescWithPosts.a58028097a56a050f109.js.map

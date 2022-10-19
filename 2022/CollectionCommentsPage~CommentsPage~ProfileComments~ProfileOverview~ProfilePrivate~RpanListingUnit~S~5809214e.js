@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~RpanListingUnit~S~5809214e.4f0b8b17af1608684d5d.js
-// Retrieved at 10/19/2022, 11:10:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~RpanListingUnit~S~5809214e.64b44c9e93c8f9e1707c.js
+// Retrieved at 10/19/2022, 12:30:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~RpanListingUnit~S~5809214e"], {
 		"./src/devPlatform/components/ContextActions/ContextActionsLoader.tsx": function(e, t, o) {
@@ -826,7 +826,7 @@
 					o(h());
 					const c = Date.now(),
 						p = e.replace("r/", ""),
-						m = Object(l.H)(i, p),
+						m = Object(l.I)(i, p),
 						u = await Object(a.b)(r(), {
 							subredditId: m,
 							options: t
@@ -1339,7 +1339,7 @@
 					postCreated: t,
 					subredditId: o
 				} = e;
-				const l = Object(i.e)(e => o ? Object(c.X)(e, {
+				const l = Object(i.e)(e => o ? Object(c.Y)(e, {
 						subredditId: o
 					}) : void 0),
 					[m, u] = Object(n.useState)(!0);
@@ -2645,7 +2645,7 @@
 							subredditId: o
 						}
 					} = t;
-					return o ? Object(I.X)(e, {
+					return o ? Object(I.Y)(e, {
 						subredditId: o
 					}) : void 0
 				},
@@ -2663,7 +2663,7 @@
 						subreddit: t,
 						user: o,
 						onHoverActionText: s
-					} = this.props, n = t && Object(E.h)(t) && o ? Object(j.e)(Object(w.e)(o)) : t ? t.displayText : "", r = e.postIds.length;
+					} = this.props, n = t && Object(E.i)(t) && o ? Object(j.e)(Object(w.e)(o)) : t ? t.displayText : "", r = e.postIds.length;
 					return i.a.createElement(N, {
 						onClick: this.onClick,
 						className: T.a.container
@@ -2993,7 +2993,7 @@
 				},
 				E = Object(c.c)({
 					flairData: O.d,
-					subreddit: v.X
+					subreddit: v.Y
 				});
 			class w extends i.a.Component {
 				constructor(e) {
@@ -3313,7 +3313,7 @@
 						} = t;
 						if (o.isSponsored) return !1;
 						if (!s) return !1;
-						const n = s.type === Z.f.User;
+						const n = s.type === Z.g.User;
 						return Object(be.r)(e, s.name, n)
 					},
 					reportingRevampEnabled: re.a,
@@ -3369,7 +3369,7 @@
 							})
 						},
 						onToggleVideoShareModal: () => e(Object(x.i)(Object(G.a)(o))),
-						onMuteClick: (t, o) => e(Object(Oe.a)({
+						onMuteClick: (t, o) => e(Object(Oe.c)({
 							subredditId: t,
 							subredditName: o
 						}))
@@ -3529,7 +3529,7 @@
 						isCommunityMutingEnabled: j,
 						subredditName: w,
 						pageLayer: I
-					} = t, y = t.currentUser && t.currentUser.isEmployee, P = Object(q.a)(t.post), T = t.post.belongsTo.type === E.a.PROFILE || Object(Z.g)(t.subredditAboutInfo), N = t.post.belongsTo.type === E.a.PROFILE || Object(Z.i)(t.subredditAboutInfo), F = o && h.isGildable, R = Object(J.a)(t.post), L = a ? void 0 : l, B = "popular" === (null == I ? void 0 : I.urlParams.subredditName), V = "Frontpage" === (null === (e = null == I ? void 0 : I.routeMatch) || void 0 === e ? void 0 : e.route.chunk), G = j && !d && w && (B || V);
+					} = t, y = t.currentUser && t.currentUser.isEmployee, P = Object(q.a)(t.post), T = t.post.belongsTo.type === E.a.PROFILE || Object(Z.h)(t.subredditAboutInfo), N = t.post.belongsTo.type === E.a.PROFILE || Object(Z.j)(t.subredditAboutInfo), F = o && h.isGildable, R = Object(J.a)(t.post), L = a ? void 0 : l, B = "popular" === (null == I ? void 0 : I.urlParams.subredditName), V = "Frontpage" === (null === (e = null == I ? void 0 : I.routeMatch) || void 0 === e ? void 0 : e.route.chunk), G = j && !d && w && (B || V);
 					return i.a.createElement("div", null, C && i.a.createElement(Ee, {
 						className: this.getBreakpointClass(W.a.Insights),
 						displayText: s.fbt._("Insights", null, {
@@ -4074,7 +4074,7 @@
 						P = Object(n.useCallback)(() => {
 							e.post && (t(Object(u.d)(e.post.id)), t(Object(p.i)(Object(f.a)(e.post.id))))
 						}, [t, e.post]),
-						A = !e.subredditType || e.subredditType === E.f.Public,
+						A = !e.subredditType || e.subredditType === E.g.Public,
 						L = !!e.post && e.post.isCrosspostable && !e.post.isSponsored,
 						D = Object(n.useCallback)(e => {
 							t(Object(l.e)(e)), o(Object(g.a)())
@@ -5007,4 +5007,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~RpanListingUnit~S~5809214e.4f0b8b17af1608684d5d.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~RpanListingUnit~S~5809214e.64b44c9e93c8f9e1707c.js.map

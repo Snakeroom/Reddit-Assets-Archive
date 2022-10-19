@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-ClassicPost.08355440b940bd7b4c2b.js
-// Retrieved at 10/19/2022, 11:10:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-ClassicPost.f078a783238c7414488a.js
+// Retrieved at 10/19/2022, 12:30:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-ClassicPost", "Reddit~RpanListingUnit~reddit-components-LargePost~reddit-components-MediumPost"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -713,7 +713,7 @@
 							thingId: r,
 							correlationId: n
 						})), e(Object(l.h)(i.a.GOLD_GILD_MODAL));
-						const b = Object(p.N)(a, {
+						const b = Object(p.O)(a, {
 							thingId: r
 						});
 						let f = null;
@@ -3346,7 +3346,7 @@
 				o = n("./src/reddit/actions/subscription/index.ts"),
 				i = n("./src/reddit/selectors/subreddit.ts");
 			t.a = Object(r.b)(() => Object(s.c)({
-				userIsSubscriber: i.jb
+				userIsSubscriber: i.kb
 			}), (e, t) => {
 				let {
 					identifier: n
@@ -3685,7 +3685,7 @@
 					var t;
 					const n = await Object(o.a)(e, l);
 					return Object(i.c)(n) && null !== (t = n.body.data.availableAudioRoomTopics) && void 0 !== t ? t : []
-				}, C = (e, t, n) => t.type === a.f.User ? Object(o.a)(e, {
+				}, C = (e, t, n) => t.type === a.g.User ? Object(o.a)(e, {
 					...c,
 					variables: n
 				}) : Object(o.a)(e, {
@@ -3694,7 +3694,7 @@
 						...n,
 						subredditId: t.id
 					}
-				}), j = (e, t, n) => t.type === a.f.User ? Object(o.a)(e, {
+				}), j = (e, t, n) => t.type === a.g.User ? Object(o.a)(e, {
 					...b,
 					variables: {
 						input: n
@@ -7026,4 +7026,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ClassicPost.08355440b940bd7b4c2b.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ClassicPost.f078a783238c7414488a.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-InFeedPostCreation.6e682369588173f6fab7.js
-// Retrieved at 10/19/2022, 11:10:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-InFeedPostCreation.3669ba8426d33225c109.js
+// Retrieved at 10/19/2022, 12:30:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-InFeedPostCreation"], {
 		"./src/reddit/components/InFeedPostCreation/index.m.less": function(e, t, n) {
@@ -40,8 +40,8 @@
 				O = n("./src/reddit/selectors/subreddit.ts"),
 				U = n("./src/reddit/selectors/user.ts"),
 				j = n("./src/reddit/components/InFeedPostCreation/index.m.less"),
-				N = n.n(j);
-			const C = l.a.wrapped(b.a, "CurrentUserIcon", N.a);
+				C = n.n(j);
+			const N = l.a.wrapped(b.a, "CurrentUserIcon", C.a);
 			var P;
 			! function(e) {
 				e.Media = "post-composer-du-media", e.Link = "post-composer-du-link"
@@ -70,8 +70,8 @@
 					currentUser: U.k,
 					isPresenceConsumptionExpEnabled: E.c,
 					isPresenceTogglePref: U.V,
-					subreddit: O.B,
-					subredditAboutInfo: O.y
+					subreddit: O.C,
+					subredditAboutInfo: O.z
 				}),
 				L = Object(o.b)(M, e => ({
 					navigateTo: t => e(Object(i.b)(t)),
@@ -130,17 +130,17 @@
 					},
 					j = n && s,
 					M = t ? c.a.createElement(x.default, {
-						className: N.a.UserIconWrapper,
+						className: C.a.UserIconWrapper,
 						to: t.url
-					}, c.a.createElement(C, {
-						className: N.a.UserIcon,
+					}, c.a.createElement(N, {
+						className: C.a.UserIcon,
 						shouldShowPresenceIndicator: j
 					})) : null;
 				return c.a.createElement("div", {
-					className: N.a.Container
+					className: C.a.Container
 				}, M, c.a.createElement("input", {
 					name: "createPost",
-					className: N.a.Input,
+					className: C.a.Input,
 					onChange: U,
 					onClick: U,
 					onKeyPress: U,
@@ -149,7 +149,7 @@
 					}),
 					type: "text"
 				}), E.media && c.a.createElement(I.t, {
-					className: N.a.Button,
+					className: C.a.Button,
 					"aria-label": g(),
 					priority: I.c.Plain,
 					kind: I.b.InternalLink,
@@ -166,7 +166,7 @@
 					tooltipId: P.Media,
 					text: g()
 				})), E.link && c.a.createElement(I.t, {
-					className: N.a.Button,
+					className: C.a.Button,
 					priority: I.c.Plain,
 					kind: I.b.InternalLink,
 					size: I.d.M,
@@ -281,4 +281,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-InFeedPostCreation.6e682369588173f6fab7.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-InFeedPostCreation.3669ba8426d33225c109.js.map

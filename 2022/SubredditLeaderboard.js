@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditLeaderboard.2088044f9ef9faa120f7.js
-// Retrieved at 10/19/2022, 11:10:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditLeaderboard.28978c49ac0f292d4d92.js
+// Retrieved at 10/19/2022, 12:30:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditLeaderboard"], {
 		"./node_modules/lodash/times.js": function(e, t, r) {
@@ -161,9 +161,9 @@
 				i = r("./src/reddit/endpoints/subreddit/local.ts"),
 				o = r("./src/reddit/endpoints/subreddit/topSubreddits.ts"),
 				d = r("./src/reddit/helpers/graphql/normalizeTopSubredditsFromGql/index.ts");
-			const c = Object(n.a)(s.n),
-				l = Object(n.a)(s.m),
-				u = Object(n.a)(s.l),
+			const c = Object(n.a)(s.r),
+				l = Object(n.a)(s.q),
+				u = Object(n.a)(s.p),
 				m = Object(n.a)(s.a),
 				p = Object(n.a)(s.b),
 				b = Object(n.a)(s.c),
@@ -2290,9 +2290,9 @@
 						let {
 							categoryId: r
 						} = t;
-						return Object(R.S)(e, r)
+						return Object(R.T)(e, r)
 					},
-					subreddits: R.eb,
+					subreddits: R.fb,
 					isOnLeaderboardPage: e => !!Object(D.h)(e),
 					isOnFrontpage: e => !!Object(D.g)(e)
 				}),
@@ -2714,4 +2714,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditLeaderboard.2088044f9ef9faa120f7.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditLeaderboard.28978c49ac0f292d4d92.js.map

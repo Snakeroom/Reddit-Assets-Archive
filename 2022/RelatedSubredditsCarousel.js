@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/RelatedSubredditsCarousel.b0b43b2f37e429c23ae8.js
-// Retrieved at 10/19/2022, 11:10:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/RelatedSubredditsCarousel.45df5ec6a7b6102374a9.js
+// Retrieved at 10/19/2022, 12:30:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["RelatedSubredditsCarousel"], {
 		"./src/reddit/actions/subreddit/relatedSubreddits.ts": function(e, t, s) {
@@ -97,10 +97,10 @@
 					u = Object(d.e)(e => ((e, t) => {
 						const {
 							name: s
-						} = Object(o.X)(e, {
+						} = Object(o.Y)(e, {
 							subredditId: t
 						}) || {};
-						return Object(o.jb)(e, {
+						return Object(o.kb)(e, {
 							identifier: {
 								name: s,
 								type: "subreddit"
@@ -108,7 +108,7 @@
 						})
 					})(e, t)),
 					[b, m] = Object(r.useState)(u ? 0 : void 0),
-					p = Object(d.e)(e => Object(o.u)(e, {
+					p = Object(d.e)(e => Object(o.v)(e, {
 						subredditId: t
 					}));
 				return Object(r.useEffect)(() => (t && s(Object(a.b)(t, 12)), () => {
@@ -200,8 +200,8 @@
 					[_, j] = Object(o.useState)(null),
 					[E, C] = Object(o.useState)(null),
 					[y, h] = Object(o.useState)(0),
-					[g, k] = Object(o.useState)(void 0),
-					D = Object(l.e)(e => Object(O.C)(e, u));
+					[k, g] = Object(o.useState)(void 0),
+					D = Object(l.e)(e => Object(O.D)(e, u));
 				Object(o.useEffect)(() => {
 					(null == u ? void 0 : u.length) && f(Object(b.e)(u))
 				}, [u]);
@@ -219,7 +219,7 @@
 					if (!_) return;
 					const e = i()(() => {
 						const e = Math.floor(_.clientWidth / 249);
-						h(e), k((e > 1 ? 249 * e : 237) - 8)
+						h(e), g((e > 1 ? 249 * e : 237) - 8)
 					}, 30);
 					return window.addEventListener("resize", e), e(), () => {
 						window.removeEventListener("resize", e)
@@ -229,7 +229,7 @@
 						source: "similar_communities",
 						action: "view",
 						noun: "module",
-						subreddit: e ? Object(O.X)(t, {
+						subreddit: e ? Object(O.Y)(t, {
 							subredditId: e
 						}) : void 0
 					}))(d))
@@ -239,7 +239,7 @@
 				}, c.a.createElement("div", {
 					className: N.a.carouselHeader,
 					style: {
-						width: g
+						width: k
 					}
 				}, c.a.createElement("h3", {
 					className: N.a.carouselTitle
@@ -263,7 +263,7 @@
 					ref: C,
 					className: N.a.carouselWrapper,
 					style: {
-						width: g
+						width: k
 					}
 				}, null == L ? void 0 : L.map((e, t) => {
 					let {
@@ -304,7 +304,7 @@
 					actionInfo: {
 						reason: `${s}`
 					},
-					subreddit: Object(O.X)(r, {
+					subreddit: Object(O.Y)(r, {
 						subredditId: t
 					})
 				}))(e ? "unsubsribe" : "subscribe", t, s), [t]);
@@ -385,4 +385,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RelatedSubredditsCarousel.b0b43b2f37e429c23ae8.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RelatedSubredditsCarousel.45df5ec6a7b6102374a9.js.map

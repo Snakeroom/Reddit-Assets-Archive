@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/MultiredditCreateModal.f28597baaa9d5302a328.js
-// Retrieved at 10/19/2022, 11:10:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/MultiredditCreateModal.09096405e5ac5459710e.js
+// Retrieved at 10/19/2022, 12:30:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["MultiredditCreateModal"], {
 		"./src/reddit/actions/multireddit/index.ts": function(e, t, r) {
@@ -25,9 +25,9 @@
 			})), r.d(t, "createSuccess", (function() {
 				return K
 			})), r.d(t, "createRequested", (function() {
-				return $
-			})), r.d(t, "reloadCurrentMultiredditFeedRequested", (function() {
 				return J
+			})), r.d(t, "reloadCurrentMultiredditFeedRequested", (function() {
+				return $
 			})), r.d(t, "duplicateFailure", (function() {
 				return B
 			})), r.d(t, "duplicatePending", (function() {
@@ -240,7 +240,7 @@
 							}))
 						}
 					}
-				}, W = Object(c.a)(M.e), Q = Object(c.a)(M.f), K = Object(c.a)(M.g), $ = e => {
+				}, W = Object(c.a)(M.e), Q = Object(c.a)(M.f), K = Object(c.a)(M.g), J = e => {
 					let {
 						description: t,
 						displayName: r,
@@ -286,7 +286,7 @@
 							}))
 						} else e(W(b.error))
 					}
-				}, J = () => async (e, t, r) => {
+				}, $ = () => async (e, t, r) => {
 					let {
 						apiContext: i
 					} = r;
@@ -397,7 +397,7 @@
 								method: a.ob.PUT
 							}))(c(), g, j);
 						if (y.ok) {
-							const d = Object(P.O)(l, {
+							const d = Object(P.P)(l, {
 									identifier: r
 								}) || t && t.id || "",
 								n = s.map(e => Object(T.h)(b, e));
@@ -413,7 +413,7 @@
 								id: d,
 								multipaths: n,
 								type: r.type
-							})), 1 === s.length && await e(J())
+							})), 1 === s.length && await e($())
 						} else {
 							e(te(y.error));
 							let t = i.fbt._("Sorry, something went wrong adding {subredditName}.", [i.fbt._param("subredditName", r.name)], {
@@ -470,7 +470,7 @@
 								},
 								multiredditNames: [r]
 							})
-						})), e(J())) : (e(de(y.error)), e(Object(p.f)({
+						})), e($())) : (e(de(y.error)), e(Object(p.f)({
 							text: i.fbt._("Sorry, something went wrong removing {subredditName}.", [i.fbt._param("subredditName", s)], {
 								hk: "1E1rKm"
 							})
@@ -562,7 +562,7 @@
 						if (!l || !l.subredditIds) return;
 						e(he());
 						const u = i && i.reduce((e, t) => {
-								const r = Object(P.H)(a, t) || Object(P.I)(a, t);
+								const r = Object(P.I)(a, t) || Object(P.J)(a, t);
 								return r ? [...e, r] : e
 							}, []),
 							m = await Object(C.a)(n(), {
@@ -1309,4 +1309,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/MultiredditCreateModal.f28597baaa9d5302a328.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/MultiredditCreateModal.09096405e5ac5459710e.js.map

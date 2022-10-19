@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Multireddit.b6652a67aa4692bfb9f6.js
-// Retrieved at 10/19/2022, 11:10:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Multireddit.871165324b0d29110156.js
+// Retrieved at 10/19/2022, 12:30:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Multireddit"], {
 		"./src/higherOrderComponents/withAdClickLocation/Locations.ts": function(e, t, n) {
@@ -346,7 +346,7 @@
 					let {
 						apiContext: b
 					} = m, p = e.map(e => e.type === u.a.SUBREDDIT ? {
-						id: Object(S.H)(d(), e.name),
+						id: Object(S.I)(d(), e.name),
 						name: e.name,
 						type: e.type
 					} : {
@@ -430,7 +430,7 @@
 						apiContext: o
 					} = r;
 					const s = n(),
-						i = Object(S.P)(s, {
+						i = Object(S.Q)(s, {
 							identifier: e
 						});
 					if (!i) throw new Error(`actions.subscription -- No subreddit or profile found with id ${e.id}`);
@@ -446,7 +446,7 @@
 							type: e.type,
 							name: i.name
 						},
-						x = () => Object(S.jb)(n(), {
+						x = () => Object(S.kb)(n(), {
 							identifier: E
 						});
 					(x() || (await t(U([E], !0)), x())) && (t(w({
@@ -635,7 +635,7 @@
 			n.d(t, "c", (function() {
 				return B
 			})), n.d(t, "a", (function() {
-				return H
+				return G
 			})), n.d(t, "b", (function() {
 				return q
 			}));
@@ -840,8 +840,8 @@
 					})
 				}),
 				B = e => !e.textColor || e.textColor && !e.backgroundColor ? Object(C.a)(e).postFlairText : "transparent" === e.backgroundColor ? Object(S.a)(Object(C.a)(e).post, T.a.black, T.a.white) : e.textColor === I.e.Dark ? T.a.black : T.a.white,
-				H = b.a.wrapped(F, "TextFlair", y.a),
-				G = b.a.wrapped(P, "RichTextFlair", y.a),
+				G = b.a.wrapped(F, "TextFlair", y.a),
+				H = b.a.wrapped(P, "RichTextFlair", y.a),
 				W = e => {
 					switch (e.type) {
 						case "spoiler":
@@ -888,7 +888,7 @@
 				}, t);
 				switch (o.type) {
 					case I.f.Richtext:
-						return n || !o.richtext ? null : a.a.createElement(G, {
+						return n || !o.richtext ? null : a.a.createElement(H, {
 							backgroundColor: o.backgroundColor,
 							className: _,
 							forceSmallEmojis: p,
@@ -904,7 +904,7 @@
 							to: f
 						});
 					case I.f.Text:
-						return n || !o.text ? null : a.a.createElement(H, {
+						return n || !o.text ? null : a.a.createElement(G, {
 							backgroundColor: o.backgroundColor,
 							className: _,
 							isFlairFilter: s,
@@ -919,7 +919,7 @@
 							to: f
 						});
 					case I.f.Meta:
-						return a.a.createElement(H, {
+						return a.a.createElement(G, {
 							backgroundColor: o.backgroundColor,
 							className: t,
 							isFlairFilter: s,
@@ -939,7 +939,7 @@
 					case I.f.Quarantined:
 						return null;
 					case I.f.Oc:
-						return a.a.createElement(H, {
+						return a.a.createElement(G, {
 							backgroundColor: T.a.alienblue,
 							text: o.text,
 							textColor: I.e.Light,
@@ -948,7 +948,7 @@
 							})
 						});
 					default:
-						return o.text ? a.a.createElement(H, {
+						return o.text ? a.a.createElement(G, {
 							backgroundColor: o.backgroundColor,
 							className: _,
 							isFlairFilter: s,
@@ -1814,4 +1814,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Multireddit.b6652a67aa4692bfb9f6.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Multireddit.871165324b0d29110156.js.map

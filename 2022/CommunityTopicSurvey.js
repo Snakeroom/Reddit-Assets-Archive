@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CommunityTopicSurvey.afce659d94dd43de8ba7.js
-// Retrieved at 10/19/2022, 11:10:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CommunityTopicSurvey.1eaec6a42d0441fcb4af.js
+// Retrieved at 10/19/2022, 12:30:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CommunityTopicSurvey"], {
 		"./node_modules/react-uid/dist/es2015/hooks.js": function(e, t, n) {
@@ -94,7 +94,7 @@
 					source: "community_tagging",
 					action: "view",
 					noun: "verify_topics_module",
-					subreddit: Object(m.X)(n, {
+					subreddit: Object(m.Y)(n, {
 						subredditId: t
 					}),
 					raterTag: b(e)
@@ -103,7 +103,7 @@
 					source: "community_tagging",
 					action: "click",
 					noun: "select_answer",
-					subreddit: Object(m.X)(r, {
+					subreddit: Object(m.Y)(r, {
 						subredditId: n
 					}),
 					raterTag: b(e, t)
@@ -112,7 +112,7 @@
 					source: "community_tagging",
 					action: "click",
 					noun: "submit",
-					subreddit: Object(m.X)(r, {
+					subreddit: Object(m.Y)(r, {
 						subredditId: n
 					}),
 					raterTag: b(e, t)
@@ -121,7 +121,7 @@
 					source: "community_tagging",
 					action: "click",
 					noun: "close",
-					subreddit: Object(m.X)(n, {
+					subreddit: Object(m.Y)(n, {
 						subredditId: t
 					}),
 					raterTag: b(e)
@@ -343,7 +343,7 @@
 					u(_(O, t, n))
 				}
 				switch (O.type) {
-					case S.d.Multi:
+					case S.e.Multi:
 						return o.a.createElement(R, {
 							key: O.id,
 							questionId: O.id,
@@ -354,7 +354,7 @@
 							onClose: T,
 							inFeed: a
 						});
-					case S.d.SingleWithSubmit:
+					case S.e.SingleWithSubmit:
 						return o.a.createElement(F, {
 							key: O.id,
 							questionId: O.id,
@@ -365,7 +365,7 @@
 							onClose: T,
 							inFeed: a
 						});
-					case S.d.SingleNoSubmit:
+					case S.e.SingleNoSubmit:
 						return o.a.createElement(F, {
 							key: O.id,
 							questionId: O.id,
@@ -923,7 +923,7 @@
 							subredditName: r,
 							[s]: n.id
 						},
-						a = Object(u.B)(e, {
+						a = Object(u.C)(e, {
 							subredditName: r
 						});
 					return a ? {
@@ -1089,7 +1089,7 @@
 					let {
 						subredditName: n
 					} = t;
-					const r = Object(i.bb)(e, {
+					const r = Object(i.cb)(e, {
 						subredditName: n
 					});
 					return (r && r.postIds || []).slice(0, 2)
@@ -1100,4 +1100,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommunityTopicSurvey.afce659d94dd43de8ba7.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommunityTopicSurvey.1eaec6a42d0441fcb4af.js.map

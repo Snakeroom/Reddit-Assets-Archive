@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditCreation.ae61e05935d2aa6c2868.js
-// Retrieved at 10/19/2022, 11:10:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditCreation.bf3efe7531d60e0a1a50.js
+// Retrieved at 10/19/2022, 12:30:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditCreation"], {
 		"./node_modules/lodash/_baseRange.js": function(e, t) {
@@ -1108,7 +1108,7 @@
 						this.props.onCloseModal(), this.props.sendEvent(Object(I.b)())
 					}, this.onUpdateOver18 = () => this.update(!this.state.over18, "over18"), this.state = {
 						name: "",
-						type: L.f.Public,
+						type: L.g.Public,
 						crosspostId: e.crosspostId,
 						over18: !1,
 						waitingForSuccessfulCommunity: !1,
@@ -1843,4 +1843,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditCreation.ae61e05935d2aa6c2868.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditCreation.bf3efe7531d60e0a1a50.js.map
