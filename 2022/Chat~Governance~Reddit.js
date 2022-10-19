@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.ac82a5e13c828c23eb6d.js
-// Retrieved at 10/18/2022, 7:20:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.5b7ce409d11cf9adf976.js
+// Retrieved at 10/18/2022, 8:00:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Chat~Governance~Reddit"], {
 		"./assets/fonts/IBMPlexSans/font.less": function(e, t, i) {},
@@ -3632,11 +3632,11 @@
 				apiPassThroughHeaders: Object(r.e)({}.API_PASS_THROUGH_HEADERS || ""),
 				appName: {}.APP_NAME || "desktop2x",
 				assetPath: "https://www.redditstatic.com/desktop2x",
-				buildNumber: Object(r.c)("175940"),
+				buildNumber: Object(r.c)("175943"),
 				chatHelpUrl: {}.CHAT_HELP_URL || "https://reddit.zendesk.com/hc/en-us/sections/360008805652-Chat",
 				hlsVersion: "hls 0.12.4",
 				dashVersion: "dash 4.4.0",
-				buildTimestamp: Object(r.b)("1666133312"),
+				buildTimestamp: Object(r.b)("1666135323"),
 				cookieDomain: ".reddit.com",
 				giphyApiKey: "k2kwyMA6VeyHM6ZRT96OXDGaersnx73Z",
 				mediaUrl: "https://www.redditmedia.com",
@@ -6370,14 +6370,14 @@
 					}))
 				},
 				Y = (e, t, i) => {
-					console.log("%cStarting Raven %crelease %ce0db304c55d9fa73538347fd571c828dc1fb3b00-production" + ` %cpublic url %c${y.a.sentryClientPublicURL}`, "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
+					console.log("%cStarting Raven %crelease %cb21340970008a2fff5f710a7f0e40a6b4c3b3e83-production" + ` %cpublic url %c${y.a.sentryClientPublicURL}`, "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
 					let n = [];
 					n = [new RegExp(`^${y.a.assetPath}`, "i")];
 					o.e({
 						attachStacktrace: !0,
 						dsn: y.a.sentryClientPublicURL,
 						whitelistUrls: n,
-						release: "e0db304c55d9fa73538347fd571c828dc1fb3b00-production",
+						release: "b21340970008a2fff5f710a7f0e40a6b4c3b3e83-production",
 						environment: "production",
 						ignoreErrors: ["$ is not defined"],
 						integrations: [...Object(L.d)(), new d.Integrations.Breadcrumbs({
@@ -6913,7 +6913,7 @@
 							settings: r,
 							statusCode: s,
 							type: o,
-							releaseClient: "e0db304c55d9fa73538347fd571c828dc1fb3b00-production",
+							releaseClient: "b21340970008a2fff5f710a7f0e40a6b4c3b3e83-production",
 							appName: t.statsAppName,
 							error: n ? JSON.parse(Object(l.a)(n)) : void 0
 						},
@@ -29908,7 +29908,7 @@
 					return n
 				})),
 				function(e) {
-					e.AdPost = "AdPost", e.DeletedProfilePost = "DeletedProfilePost", e.DeletedSubredditPost = "DeletedSubredditPost", e.InboxNotificationCollection = "InboxNotificationCollection", e.InterestTopicRecommendationsFeedElement = "InterestTopicRecommendationsFeedElement", e.LiveEvent = "LiveEvent", e.ProfilePost = "ProfilePost", e.PostRecommendation = "PostRecommendation", e.SubredditPost = "SubredditPost", e.FreeNftFeedElement = "FreeNftFeedElement"
+					e.AdPost = "AdPost", e.DeletedProfilePost = "DeletedProfilePost", e.DeletedSubredditPost = "DeletedSubredditPost", e.InboxNotificationCollection = "InboxNotificationCollection", e.InterestTopicRecommendationsFeedElement = "InterestTopicRecommendationsFeedElement", e.LiveEvent = "LiveEvent", e.ProfilePost = "ProfilePost", e.PostRecommendation = "PostRecommendation", e.SubredditPost = "SubredditPost", e.FreeNftFeedElement = "FreeNftFeedElement", e.MerchandisingUnit = "MerchandisingUnit"
 				}(n || (n = {}))
 		},
 		"./src/reddit/models/Flair/index.ts": function(e, t, i) {
@@ -50406,4 +50406,4 @@
 		"ignored /drone/src/node_modules/readable-stream/lib/internal/streams util": function(e, t) {}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.ac82a5e13c828c23eb6d.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.5b7ce409d11cf9adf976.js.map

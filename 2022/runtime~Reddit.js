@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/runtime~Reddit.4ac95ad79c48b0547c06.js
-// Retrieved at 10/18/2022, 6:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/runtime~Reddit.d65a9065a05b32557517.js
+// Retrieved at 10/18/2022, 8:00:06 PM by Reddit Dataminer v1.0.0
 ! function(e) {
 	function o(o) {
 		for (var a, n, r = o[0], s = o[1], c = o[2], l = 0, b = []; l < r.length; l++) n = r[l], Object.prototype.hasOwnProperty.call(d, n) && d[n] && b.push(d[n][0]), d[n] = 0;
@@ -1403,7 +1403,7 @@
 						6: "42cae2debca8192f5108",
 						7: "71018da07ebee28a8b68",
 						8: "1e7255e8e49deaf1bc79",
-						OnboardingModal: "9a62ad19e040876a8f2f",
+						OnboardingModal: "ba25d0e57daa762bfbc1",
 						AchievementsActions: "4e31d8c4400f40c3ecec",
 						Acknowledgements: "efde33ee05a429f5f0bb",
 						Appeal: "52eaf5456b198f157d7c",
@@ -1452,7 +1452,7 @@
 						ProfileSnoobuilder: "a9bac2d04c9b1391b4d8",
 						"SubredditWiki~reddit-components-Wiki-ModHubWikiManagement": "dcdc6c0a03268012ca66",
 						SubredditWiki: "b294f20d4a0903c47230",
-						Frontpage: "d8409ff232cdc6f042eb",
+						Frontpage: "2e7e32f578294bee1e26",
 						PostSetPage: "d367a5ce1073b88a10c6",
 						Topic: "dc84d0c468b2b5138e55",
 						CommunityAwards: "9bcc4d765c1afaa1ef2d",
@@ -1812,4 +1812,4 @@
 	var m = c;
 	t()
 }([]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/runtime~Reddit.4ac95ad79c48b0547c06.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/runtime~Reddit.d65a9065a05b32557517.js.map
