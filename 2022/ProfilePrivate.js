@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfilePrivate.7cafea3206d6f611e752.js
-// Retrieved at 10/19/2022, 3:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfilePrivate.38829177db7750e0cf0a.js
+// Retrieved at 10/19/2022, 4:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfilePrivate"], {
 		"./node_modules/lodash/take.js": function(e, t, s) {
@@ -34,17 +34,17 @@
 			})), s.d(t, "privatePostListingLoaded", (function() {
 				return G
 			})), s.d(t, "privateListingFailed", (function() {
-				return W
-			})), s.d(t, "profilePrivateRequested", (function() {
 				return D
+			})), s.d(t, "profilePrivateRequested", (function() {
+				return W
 			})), s.d(t, "morePending", (function() {
-				return V
-			})), s.d(t, "moreMixedLoaded", (function() {
 				return H
+			})), s.d(t, "moreMixedLoaded", (function() {
+				return V
 			})), s.d(t, "morePostLoaded", (function() {
-				return K
-			})), s.d(t, "moreFailed", (function() {
 				return z
+			})), s.d(t, "moreFailed", (function() {
+				return K
 			})), s.d(t, "moreProfilePrivateRequested", (function() {
 				return q
 			}));
@@ -70,9 +70,9 @@
 				C = s("./src/reddit/helpers/graphql/normalizeFlairFromGql/index.ts"),
 				O = s("./src/reddit/helpers/graphql/normalizePostFlairFromGql/index.ts"),
 				E = s("./src/reddit/helpers/graphql/normalizePostFromGql/index.ts"),
-				k = s("./src/reddit/helpers/graphql/normalizePreferencesFromGql/index.ts"),
-				j = s("./src/reddit/helpers/graphql/normalizeProfileFromGql/index.ts"),
-				w = s("./src/reddit/helpers/graphql/normalizeSubredditFromGql/index.ts"),
+				w = s("./src/reddit/helpers/graphql/normalizePreferencesFromGql/index.ts"),
+				k = s("./src/reddit/helpers/graphql/normalizeProfileFromGql/index.ts"),
+				j = s("./src/reddit/helpers/graphql/normalizeSubredditFromGql/index.ts"),
 				_ = s("./src/reddit/helpers/graphql/normalizeUserFromGql/index.ts");
 			var S = e => {
 					const {
@@ -99,12 +99,12 @@
 						return e !== v.b.Saved && e !== v.b.ReceivedGildings && e !== v.b.GivenGildings || (t.comments = {}), t
 					})(t);
 					if (!o) return i;
-					if (n && (i.account = Object(_.a)(o) || null, i.preferences = Object(k.a)(o.preferences, o.interactions) || null, o.redditor.profile && (i.profiles[o.redditor.profile.id] = Object(j.a)(o.redditor.profile))), r && o.redditor && o.redditor.moderatedSubreddits) {
+					if (n && (i.account = Object(_.a)(o) || null, i.preferences = Object(w.a)(o.preferences, o.interactions) || null, o.redditor.profile && (i.profiles[o.redditor.profile.id] = Object(k.a)(o.redditor.profile))), r && o.redditor && o.redditor.moderatedSubreddits) {
 						const {
 							moderatedSubredditIds: e,
 							pageInfo: t,
 							subreddits: s
-						} = Object(j.b)(o.redditor.moderatedSubreddits);
+						} = Object(k.b)(o.redditor.moderatedSubreddits);
 						i.moderatedPageInfo = t, i.moderatedSubredditIds = e, i.subreddits = s
 					}
 					let d;
@@ -150,7 +150,7 @@
 							post: n,
 							crosspost: r
 						} = e && Object(E.a)(e);
-						i.posts[n.id] = n, r && (i.posts[r.id] = r), Object(x.i)(e) || Object(x.j)(e) || (e.authorFlair && (i.authorFlair[n.belongsTo.id] || (i.authorFlair[n.belongsTo.id] = {}), i.authorFlair[n.belongsTo.id][n.author] = Object(C.a)(e.authorFlair)[0]), Object(x.l)(e) ? i.profiles[e.profile.id] || (i.profiles[e.profile.id] = Object(j.a)(e.profile)) : Object(x.n)(e) && (i.subreddits[e.subreddit.id] || (i.subreddits[e.subreddit.id] = Object(w.a)(e.subreddit)), i.postFlair[e.subreddit.id] || (i.postFlair[e.subreddit.id] = Object(O.a)(e.subreddit))))
+						i.posts[n.id] = n, r && (i.posts[r.id] = r), Object(x.i)(e) || Object(x.j)(e) || (e.authorFlair && (i.authorFlair[n.belongsTo.id] || (i.authorFlair[n.belongsTo.id] = {}), i.authorFlair[n.belongsTo.id][n.author] = Object(C.a)(e.authorFlair)[0]), Object(x.l)(e) ? i.profiles[e.profile.id] || (i.profiles[e.profile.id] = Object(k.a)(e.profile)) : Object(x.n)(e) && (i.subreddits[e.subreddit.id] || (i.subreddits[e.subreddit.id] = Object(j.a)(e.subreddit)), i.postFlair[e.subreddit.id] || (i.postFlair[e.subreddit.id] = Object(O.a)(e.subreddit))))
 					}
 					return i
 				},
@@ -218,8 +218,8 @@
 				B = Object(o.a)(T.b),
 				U = Object(o.a)(T.c),
 				G = Object(o.a)(T.i),
-				W = Object(o.a)(T.a),
-				D = e => async (t, s, o) => {
+				D = Object(o.a)(T.a),
+				W = e => async (t, s, o) => {
 					const {
 						profileName: l,
 						listingType: m
@@ -236,7 +236,7 @@
 							const {
 								profileName: s
 							} = e.params, o = `/user/${s}/`;
-							return t(Object(n.c)(o)), void t(W({
+							return t(Object(n.c)(o)), void t(D({
 								listingKey: b,
 								error: {
 									type: r.L.AUTHORIZATION_ERROR
@@ -277,11 +277,11 @@
 							profileName: l,
 							...e
 						})), await Promise.all([t(Object(d.d)(l)), t(Object(i.o)(l)), t(Object(a.d)(l))])
-					} else t(W({
+					} else t(D({
 						listingKey: b,
 						error: C.error
 					}))
-				}, V = Object(o.a)(T.f), H = Object(o.a)(T.e), K = Object(o.a)(T.g), z = Object(o.a)(T.d), q = e => async (t, s, n) => {
+				}, H = Object(o.a)(T.f), V = Object(o.a)(T.e), z = Object(o.a)(T.g), K = Object(o.a)(T.d), q = e => async (t, s, n) => {
 					const r = s(),
 						o = r.user.account && r.user.account.displayText && r.user.account.displayText.toLowerCase();
 					if (!o) return;
@@ -293,7 +293,7 @@
 						after: r.profilePrivatePage.pageInfo[i].endCursor,
 						first: T.h
 					};
-					t(V({
+					t(H({
 						listingKey: i
 					}));
 					const a = await M[e](n.gqlContext(), d);
@@ -304,16 +304,16 @@
 							listingType: e,
 							rawData: a.body.data
 						});
-						e === v.b.Saved || e === v.b.ReceivedGildings || e === v.b.GivenGildings ? await t(H({
+						e === v.b.Saved || e === v.b.ReceivedGildings || e === v.b.GivenGildings ? await t(V({
 							listingKey: i,
 							profileName: o,
 							...s
-						})) : await t(K({
+						})) : await t(z({
 							listingKey: i,
 							profileName: o,
 							...s
 						}))
-					} else t(z({
+					} else t(K({
 						listingKey: i,
 						error: a.error
 					}))
@@ -322,7 +322,7 @@
 		"./src/reddit/actions/subreddit/muting.ts": function(e, t, s) {
 			"use strict";
 			s.d(t, "c", (function() {
-				return w
+				return j
 			})), s.d(t, "d", (function() {
 				return S
 			})), s.d(t, "e", (function() {
@@ -400,9 +400,9 @@
 			const C = Object(r.a)(b.i),
 				O = Object(r.a)(b.h),
 				E = Object(r.a)(b.G),
-				k = (Object(r.a)(b.j), Object(r.a)(b.F), Object(r.a)(b.g)),
-				j = Object(r.a)(b.f),
-				w = e => {
+				w = (Object(r.a)(b.j), Object(r.a)(b.F), Object(r.a)(b.g)),
+				k = Object(r.a)(b.f),
+				j = e => {
 					let {
 						subredditId: t,
 						subredditName: s,
@@ -431,7 +431,7 @@
 						let {
 							gqlContext: i
 						} = o;
-						if ((await u(i(), t)).ok) n && n(), v(s, w({
+						if ((await u(i(), t)).ok) n && n(), v(s, j({
 							subredditId: t,
 							subredditName: s
 						}));
@@ -557,7 +557,7 @@
 							{
 								data: d
 							} = i.body;
-						if (i.ok && d.deleteSubredditMuteSettings.ok) e(k(t)), e(v(s));
+						if (i.ok && d.deleteSubredditMuteSettings.ok) e(w(t)), e(v(s));
 						else {
 							e(g(`error-unmuting-${t}`))
 						}
@@ -604,7 +604,7 @@
 							{
 								data: v
 							} = h.body;
-						if (h.ok && v.updateSubredditMuteSettings.ok) e(j([u])), e(x(u.name));
+						if (h.ok && v.updateSubredditMuteSettings.ok) e(k([u])), e(x(u.name));
 						else {
 							e(g(`error-muting-${b}`))
 						}
@@ -770,19 +770,19 @@
 				O = s("./src/reddit/components/Econ/Audio/MuteIcon.tsx"),
 				E = s("./src/reddit/components/Econ/Audio/SpeakerRings/index.tsx");
 			const {
-				fbt: k
-			} = s("./node_modules/fbt/lib/FbtPublic.js"), j = () => Math.floor(10 * Math.random()) + 1;
-			var w = e => {
+				fbt: w
+			} = s("./node_modules/fbt/lib/FbtPublic.js"), k = () => Math.floor(10 * Math.random()) + 1;
+			var j = e => {
 					let {
 						postId: t
 					} = e;
 					const s = Object(h.e)(C.db),
 						[o, d] = Object(n.useState)(!1),
-						[a, c] = Object(n.useState)(j());
+						[a, c] = Object(n.useState)(k());
 					return Object(n.useEffect)(() => {
 						let e;
 						const t = setInterval(() => {
-							d(!0), e = setTimeout(() => d(!1), 3500), c(j())
+							d(!0), e = setTimeout(() => d(!1), 3500), c(k())
 						}, 6e3);
 						return () => {
 							clearInterval(t), clearTimeout(e)
@@ -800,7 +800,7 @@
 						key: `audioPostAvatar--${a}`,
 						className: v.a.snoovatar,
 						src: `${y.a.assetPath}/img/talk/avatars/${a}.png`,
-						alt: k._("Reddit Talk", null, {
+						alt: w._("Reddit Talk", null, {
 							hk: "XNl4V"
 						})
 					}), !o && r.a.createElement("div", {
@@ -833,7 +833,7 @@
 						rel: "noopener noreferrer",
 						className: v.a.liveClassicContainer,
 						"data-testid": "audioroom-classic-live"
-					}, r.a.createElement(w, {
+					}, r.a.createElement(j, {
 						postId: n
 					})) : r.a.createElement("div", {
 						className: v.a.endedClassicContainer
@@ -852,18 +852,18 @@
 				B = s("./src/reddit/components/OneFeed/PostRecommendationContext.tsx"),
 				U = s("./src/reddit/components/PostBackgroundWrapper/index.tsx"),
 				G = s("./src/reddit/components/PostContainer/index.tsx"),
-				W = s("./src/reddit/components/PostMeta/index.tsx"),
-				D = s("./src/reddit/components/PostOverflowMenu/index.tsx"),
-				V = s("./src/reddit/components/PostRailAndVotes/index.tsx"),
-				H = s("./src/reddit/components/PostTitle/index.tsx"),
-				K = s("./src/reddit/components/PostTopMeta/index.tsx"),
-				z = s("./src/reddit/components/PublicAccessNetwork/LiveVideoPlayer/videoContext.tsx"),
+				D = s("./src/reddit/components/PostMeta/index.tsx"),
+				W = s("./src/reddit/components/PostOverflowMenu/index.tsx"),
+				H = s("./src/reddit/components/PostRailAndVotes/index.tsx"),
+				V = s("./src/reddit/components/PostTitle/index.tsx"),
+				z = s("./src/reddit/components/PostTopMeta/index.tsx"),
+				K = s("./src/reddit/components/PublicAccessNetwork/LiveVideoPlayer/videoContext.tsx"),
 				q = s("./src/reddit/controls/OutboundLink/styled.tsx"),
-				Q = s("./src/reddit/models/Media/index.ts"),
-				J = s("./src/reddit/components/ClassicPost/Thumbnail.tsx"),
-				Z = s("./src/reddit/connectors/ClassicPost/index.tsx"),
-				X = s("./src/reddit/constants/postLayout.ts"),
-				Y = s("./src/reddit/helpers/hasModFlairPermissions/index.ts"),
+				J = s("./src/reddit/models/Media/index.ts"),
+				Q = s("./src/reddit/components/ClassicPost/Thumbnail.tsx"),
+				Y = s("./src/reddit/connectors/ClassicPost/index.tsx"),
+				Z = s("./src/reddit/constants/postLayout.ts"),
+				X = s("./src/reddit/helpers/hasModFlairPermissions/index.ts"),
 				$ = s("./src/reddit/helpers/hasModFullPermissions/index.ts"),
 				ee = s("./src/reddit/helpers/hasModPostPermissions/index.ts"),
 				te = s("./src/reddit/helpers/localStorage/index.ts"),
@@ -899,12 +899,12 @@
 					flairStyleTemplate: C,
 					formatTitle: O,
 					hostPostData: E,
-					isCheckboxSelected: k,
-					isCurrentUserProfilePost: j,
-					isFrontpage: w,
+					isCheckboxSelected: w,
+					isCurrentUserProfilePost: k,
+					isFrontpage: j,
 					isGalleryTileLayoutDefault: _,
 					isLoggedIn: S,
-					isOverlay: Z,
+					isOverlay: Y,
 					imageGalleryCurrentItem: oe,
 					moderatorPermissions: ce,
 					modModeEnabled: ue,
@@ -919,9 +919,9 @@
 					scrollerItemRef: Ce,
 					showBulkActionCheckbox: Oe,
 					showEditFlair: Ee,
-					showMedia: ke,
-					shouldShowInsightsButton: je,
-					subredditOrProfile: we,
+					showMedia: we,
+					shouldShowInsightsButton: ke,
+					subredditOrProfile: je,
 					toggleCheckbox: _e,
 					userIsOp: Se,
 					shouldShowGalleryTileOption: Ie,
@@ -934,41 +934,41 @@
 				const Re = ye ? void 0 : C,
 					Me = s || void 0,
 					Ae = Object(ee.a)(ce),
-					Fe = Object(Y.a)(ce),
+					Fe = Object(X.a)(ce),
 					Be = Object($.a)(ce),
 					Ue = ue && ee.a,
 					Ge = Object(M.a)(xe),
-					We = Object(F.c)(xe),
-					De = !!xe.media && xe.media.type === Q.o.RTJSON,
-					Ve = Se && De,
-					He = x && !ke,
-					Ke = !!xe.media && Object(Q.H)(xe.media),
-					ze = !!xe.recommendationContext,
+					De = Object(F.c)(xe),
+					We = !!xe.media && xe.media.type === J.o.RTJSON,
+					He = Se && We,
+					Ve = x && !we,
+					ze = !!xe.media && Object(J.H)(xe.media),
+					Ke = !!xe.recommendationContext,
 					qe = {
 						flairStyleTemplate: Re,
 						post: xe,
 						inSubredditOrProfile: x,
-						isCurrentUserProfilePost: j,
-						isOverlay: Z,
-						shouldShowSubscribeButton: !(w && S) || ze && S,
-						subredditOrProfile: we
+						isCurrentUserProfilePost: k,
+						isOverlay: Y,
+						shouldShowSubscribeButton: !(j && S) || Ke && S,
+						subredditOrProfile: je
 					},
-					Qe = Object(o.t)(xe, oe),
+					Je = Object(o.t)(xe, oe),
 					{
-						source: Je
-					} = Qe,
-					[Ze, Xe] = Object(n.useState)(!1),
-					Ye = Object(n.useCallback)(() => {
-						Xe(!Ze), Object(te.Mb)(), Te(Object(re.d)(ve))
-					}, [Ze, ve, Te]);
-				let $e = r.a.createElement(J.a, {
+						source: Qe
+					} = Je,
+					[Ye, Ze] = Object(n.useState)(!1),
+					Xe = Object(n.useCallback)(() => {
+						Ze(!Ye), Object(te.Mb)(), Te(Object(re.d)(ve))
+					}, [Ye, ve, Te]);
+				let $e = r.a.createElement(Q.a, {
 					className: le.a.classicThumbnail,
 					crosspost: Me && xe,
 					isMeta: xe.isMeta,
 					post: Me || xe,
 					redditStyle: ye,
 					templatePlaceholderImage: Re && Re.postPlaceholderImage,
-					removeLink: Ke
+					removeLink: ze
 				});
 				Object(f.c)(xe) && ($e = r.a.createElement(I, {
 					post: xe
@@ -976,9 +976,9 @@
 				const et = r.a.createElement(G.b, {
 					className: Object(i.a)(ie.a.classicPostStyles, le.a.postContainer, Object(ne.a)(e), {
 						[le.a.mFirst]: y,
-						[le.a.shouldShowOverflow]: je
+						[le.a.shouldShowOverflow]: ke
 					}, t),
-					isOverlay: Z,
+					isOverlay: Y,
 					style: {
 						...Object(ne.d)(e),
 						...Object(ne.b)(Re)
@@ -986,17 +986,17 @@
 					post: xe,
 					onClick: pe,
 					eventFactory: v
-				}, r.a.createElement(V.a, {
+				}, r.a.createElement(H.a, {
 					model: xe,
 					handleVote: h,
 					showBulkActionCheckbox: Oe,
-					isCheckboxSelected: k,
+					isCheckboxSelected: w,
 					toggleCheckbox: _e,
 					flairStyleTemplate: Re,
 					redditStyle: ye,
 					postId: ve
 				}), r.a.createElement(U.a, {
-					className: je ? le.a.shouldUseRoundedBorder : void 0,
+					className: ke ? le.a.shouldUseRoundedBorder : void 0,
 					"data-click-id": "background",
 					flairStyleTemplate: Re
 				}, r.a.createElement(P.a, {
@@ -1005,8 +1005,8 @@
 				}), r.a.createElement("div", {
 					className: le.a.mainBody
 				}, r.a.createElement("div", {
-					className: He ? le.a.expandoContainer : le.a.thumbnailContainer
-				}, !He && $e, r.a.createElement(N.a, {
+					className: Ve ? le.a.expandoContainer : le.a.thumbnailContainer
+				}, !Ve && $e, r.a.createElement(N.a, {
 					crosspost: Me,
 					className: le.a.rightExpando,
 					isExpanded: !!g,
@@ -1019,37 +1019,37 @@
 					"data-click-id": "body"
 				}, !!xe.recommendationContext && r.a.createElement(B.a, {
 					content: xe.recommendationContext.content,
-					layout: X.g.Classic,
+					layout: Z.g.Classic,
 					post: xe
-				}), r.a.createElement(H.c, {
+				}), r.a.createElement(V.c, {
 					className: ge ? le.a.titleWithPoll : void 0,
 					format: O,
 					poll: ge,
 					post: xe,
 					redditStyle: ye,
-					size: H.b.Medium,
+					size: V.b.Medium,
 					titleColor: Re && Re.postTitleColor,
-					isOverlay: Z
+					isOverlay: Y
 				}, xe.source && !Me && !xe.isSurveyAd && r.a.createElement(q.a, {
 					href: xe.source.url,
 					isSponsored: xe.isSponsored,
 					postId: xe.id,
 					source: xe.source
-				}, Object(a.a)(xe))), r.a.createElement(W.a, me({
+				}, Object(a.a)(xe))), r.a.createElement(D.a, me({
 					key: "PostMeta"
 				}, qe)), ue && Ae && Ge && r.a.createElement(R.a, {
 					thing: xe
-				}), ue && Ae && We && r.a.createElement(A.a, {
+				}), ue && Ae && De && r.a.createElement(A.a, {
 					onIgnoreReports: be,
 					reportable: xe
-				}), Pe && Je && Je.url && !xe.isSurveyAd && r.a.createElement(m.a, {
+				}), Pe && Qe && Qe.url && !xe.isSurveyAd && r.a.createElement(m.a, {
 					ctaExperimentDesign: Ne && "classic",
 					className: Object(i.a)(le.a.adLinkWrapper, {
 						[le.a.ctaExperiment]: Ne
 					})
 				}, r.a.createElement(u.a, {
 					post: xe,
-					adLinkContent: Qe,
+					adLinkContent: Je,
 					ctaExperimentDesign: Ne && "classic"
 				})), xe.discussionType === de.l.Chat && r.a.createElement(ae.a, {
 					postId: xe.id
@@ -1076,31 +1076,31 @@
 					hasModPostPerms: Ae,
 					hasModFullPerms: Be,
 					hostPostData: E,
-					isOverlay: !!Z,
+					isOverlay: !!Y,
 					modModeEnabled: ue,
-					onClickInsightsButton: Ye,
+					onClickInsightsButton: Xe,
 					onIgnoreReports: be,
 					onOpenReportsDropdown: he,
 					post: xe,
-					shouldShowInsightsButton: je,
-					showEditPost: Ve,
+					shouldShowInsightsButton: ke,
+					showEditPost: He,
 					showEditFlair: Ee,
-					tooltipType: Z ? K.f.Lightbox : void 0,
-					useFlatlistBreakpoints: Object(D.b)({
+					tooltipType: Y ? z.f.Lightbox : void 0,
+					useFlatlistBreakpoints: Object(W.b)({
 						editPost: !Ue,
 						hide: !Ue,
 						report: !Ue,
 						mute: !Ue
 					})
-				})), r.a.createElement(L.d, null))), Object(se.a)(xe, le.a, Ce, g, Ie, _), we && Ze && r.a.createElement(b.a, {
+				})), r.a.createElement(L.d, null))), Object(se.a)(xe, le.a, Ce, g, Ie, _), je && Ye && r.a.createElement(b.a, {
 					className: le.a.creatorStatsContainer,
 					post: xe,
-					subreddit: we,
+					subreddit: je,
 					isOwnProfileStats: !0
 				})));
-				return r.a.createElement(z.b, null, et)
+				return r.a.createElement(K.b, null, et)
 			});
-			t.default = Object(Z.a)(ue)
+			t.default = Object(Y.a)(ue)
 		},
 		"./src/reddit/components/CommentBodyExpander/index.m.less": function(e, t, s) {
 			e.exports = {
@@ -1272,9 +1272,9 @@
 				C = s("./node_modules/lodash/noop.js"),
 				O = s.n(C),
 				E = s("./src/lib/makeCommentsPageKey/index.ts"),
-				k = s("./src/lib/makeDraftKey/index.ts"),
-				j = s("./src/reddit/actions/comment/index.ts"),
-				w = s("./src/reddit/actions/comment/authoring.ts"),
+				w = s("./src/lib/makeDraftKey/index.ts"),
+				k = s("./src/reddit/actions/comment/index.ts"),
+				j = s("./src/reddit/actions/comment/authoring.ts"),
 				_ = s("./src/reddit/actions/comment/moderation.ts"),
 				S = s("./src/reddit/actions/gold/modals.ts"),
 				I = s("./src/reddit/actions/modal.ts"),
@@ -1289,18 +1289,18 @@
 				B = s("./src/reddit/components/ModModeReports/helpers.ts"),
 				U = s("./src/reddit/components/ViewReportsDropdown/Loader.ts"),
 				G = s("./src/reddit/contexts/InsideOverlay.tsx"),
-				W = s("./src/reddit/contexts/PageLayer/index.tsx"),
-				D = s("./src/reddit/helpers/correlationIdTracker.ts"),
-				V = s("./src/reddit/helpers/hasModPostPermissions/index.ts"),
-				H = s("./src/reddit/helpers/overlay/index.ts"),
-				K = s("./src/reddit/helpers/trackers/lightbox.ts"),
-				z = s("./src/reddit/models/PostDraft/index.ts"),
+				D = s("./src/reddit/contexts/PageLayer/index.tsx"),
+				W = s("./src/reddit/helpers/correlationIdTracker.ts"),
+				H = s("./src/reddit/helpers/hasModPostPermissions/index.ts"),
+				V = s("./src/reddit/helpers/overlay/index.ts"),
+				z = s("./src/reddit/helpers/trackers/lightbox.ts"),
+				K = s("./src/reddit/models/PostDraft/index.ts"),
 				q = s("./src/reddit/models/Comment/index.ts"),
-				Q = s("./src/reddit/selectors/activeModalId.ts"),
-				J = s("./src/reddit/selectors/comments.ts"),
-				Z = s("./src/reddit/selectors/moderatorPermissions.ts"),
-				X = s("./src/reddit/selectors/posts.ts"),
-				Y = s("./src/reddit/selectors/tooltip.ts"),
+				J = s("./src/reddit/selectors/activeModalId.ts"),
+				Q = s("./src/reddit/selectors/comments.ts"),
+				Y = s("./src/reddit/selectors/moderatorPermissions.ts"),
+				Z = s("./src/reddit/selectors/posts.ts"),
+				X = s("./src/reddit/selectors/tooltip.ts"),
 				$ = s("./src/reddit/selectors/experiments/antievil/index.tsx"),
 				ee = s("./src/reddit/selectors/experiments/reportingRevampDesktop.ts"),
 				te = s("./src/reddit/selectors/user.ts"),
@@ -1326,25 +1326,25 @@
 				Ce = fe.a.wrapped(F.a, "ModActionsMenu", be.a),
 				Oe = fe.a.wrapped(de.b, "DropdownRow", be.a),
 				Ee = fe.a.wrapped(ce.a, "Flatlist", be.a),
-				ke = fe.a.button("Button", be.a),
-				je = Object(W.u)(),
-				we = e => `Comment-${e}--Modal--DeleteComment`,
+				we = fe.a.button("Button", be.a),
+				ke = Object(D.u)(),
+				je = e => `Comment-${e}--Modal--DeleteComment`,
 				_e = e => `Distinguish--Dropdown--${e}`,
 				Se = (e, t) => `${e}--${t}-overflow-menu`,
 				Ie = e => `View--Reports--${e}`,
 				Pe = Object(i.c)({
-					activeTooltipId: Y.a,
+					activeTooltipId: X.a,
 					isConfirmModalOpen: (e, t) => {
 						let {
 							comment: s
 						} = t;
-						return Object(Q.a)(e) === we(s.id)
+						return Object(J.a)(e) === je(s.id)
 					},
 					isPendingDeletion: (e, t) => {
 						let {
 							comment: s
 						} = t;
-						return Object(J.E)(e, {
+						return Object(Q.E)(e, {
 							commentId: s.postId
 						})
 					},
@@ -1353,17 +1353,17 @@
 						let {
 							comment: s
 						} = t;
-						return Object(Z.n)(e, {
+						return Object(Y.n)(e, {
 							subredditId: s.subredditId
 						})
 					},
 					currentUser: te.k,
-					modModeEnabled: W.U,
+					modModeEnabled: D.U,
 					postIsLocked: (e, t) => {
 						let {
 							comment: s
 						} = t;
-						return Object(X.B)(e, {
+						return Object(Z.B)(e, {
 							postId: s.postId
 						})
 					},
@@ -1371,7 +1371,7 @@
 						let {
 							comment: s
 						} = t;
-						return Object(J.m)(e, {
+						return Object(Q.m)(e, {
 							commentId: s.id
 						})
 					},
@@ -1382,12 +1382,12 @@
 						var n, r;
 						return (null === (r = null === (n = e.features) || void 0 === n ? void 0 : n.reportFlow) || void 0 === r ? void 0 : r.postOrCommentId) === s.id
 					},
-					subreddit: W.r,
+					subreddit: D.r,
 					subredditOrProfile: (e, t) => {
 						let {
 							comment: s
 						} = t;
-						return Object(X.V)(e, {
+						return Object(Z.V)(e, {
 							postId: s.postId
 						})
 					},
@@ -1401,7 +1401,7 @@
 					}, this.handleEdit = () => this.props.handleEdit(this.props.commentPermalink), this.handleIgnoreReports = () => {
 						this.props.onIgnoreReports(), this.sendCommentReportEvent(this.props.comment.ignoreReports ? "restore_reports" : "ignore_reports")
 					}, this.handleGild = async () => {
-						const e = Object(D.d)(D.a.GildingFlow, !0);
+						const e = Object(W.d)(W.a.GildingFlow, !0);
 						this.props.onGildClick(e);
 						const {
 							clickGildEvent: t
@@ -1411,7 +1411,7 @@
 						this.props.onToggleReportsDropdown(), this.sendCommentModEventWithName("comment_report_menu")
 					}, this.handleSave = () => {
 						this.props.comment.isSaved ? this.props.sendEvent(Object(ae.b)("unsave", this.props.comment.id)) : this.props.sendEvent(Object(ae.b)("save", this.props.comment.id)), this.props.onToggleSave()
-					}, this.sendCommentDistinguishEvent = e => this.props.sendEvent(Object(ae.c)(e, this.props.comment.id)), this.sendCommentEventWithName = e => this.props.sendEvent(Object(K.b)(this.props.comment.postId, `comment_${e}`)), this.sendCommentEventWithNameShare = () => this.sendCommentEventWithName("share"), this.sendCommentModEventWithName = e => this.props.sendEvent(Object(ae.b)(e, this.props.comment.id)), this.sendCommentReportEvent = e => this.props.sendEvent(Object(ae.f)(e, this.props.comment.id)), this.renderReportFlow = () => this.props.reportingRevampEnabled ? r.a.createElement(re.a, {
+					}, this.sendCommentDistinguishEvent = e => this.props.sendEvent(Object(ae.c)(e, this.props.comment.id)), this.sendCommentEventWithName = e => this.props.sendEvent(Object(z.b)(this.props.comment.postId, `comment_${e}`)), this.sendCommentEventWithNameShare = () => this.sendCommentEventWithName("share"), this.sendCommentModEventWithName = e => this.props.sendEvent(Object(ae.b)(e, this.props.comment.id)), this.sendCommentReportEvent = e => this.props.sendEvent(Object(ae.f)(e, this.props.comment.id)), this.renderReportFlow = () => this.props.reportingRevampEnabled ? r.a.createElement(re.a, {
 						withOverlay: !0,
 						commentId: this.props.comment.id,
 						overlayCustomStyles: ne.b,
@@ -1432,7 +1432,7 @@
 						moderatorPermissions: s,
 						modModeEnabled: n,
 						showModTools: o
-					} = this.props, i = Object(V.a)(s), d = !!t && t.displayText === e.author;
+					} = this.props, i = Object(H.a)(s), d = !!t && t.displayText === e.author;
 					if (o && i) return n ? r.a.createElement(ye, {
 						comment: e,
 						isCommentAuthor: d
@@ -1470,7 +1470,7 @@
 						modModeEnabled: n,
 						onDistinguishComment: o,
 						showModTools: i
-					} = this.props, d = Object(V.a)(s), a = !!t && t.displayText === e.author, c = !!t && t.isEmployee;
+					} = this.props, d = Object(H.a)(s), a = !!t && t.displayText === e.author, c = !!t && t.isEmployee;
 					if (i && a && !e.bannedBy && (c || d && !n)) return r.a.createElement(R.a, {
 						onClick: this.handleDistinguishToggle,
 						selected: this.props.activeTooltipId === _e(e.id)
@@ -1502,15 +1502,15 @@
 						subreddit: m,
 						toggleDeleteCommentModal: u,
 						isTrueblockPCBlockeeEnabled: p
-					} = this.props, b = Object(V.a)(c), h = !!o && o.displayText === e.author, f = (!l && !e.isLocked || b && d) && !(Object(q.g)(e) && p), g = o && e.isGildable && !(Object(q.g)(e) && p);
+					} = this.props, b = Object(H.a)(c), h = !!o && o.displayText === e.author, f = (!l && !e.isLocked || b && d) && !(Object(q.g)(e) && p), g = o && e.isGildable && !(Object(q.g)(e) && p);
 					return r.a.createElement("div", {
 						className: s
-					}, r.a.createElement(Ee, null, f && r.a.createElement(ke, {
+					}, r.a.createElement(Ee, null, f && r.a.createElement(we, {
 						onClick: this.handleReply,
 						disabled: a
 					}, y.fbt._("Reply", null, {
 						hk: "1xBqIs"
-					})), g && r.a.createElement(ke, {
+					})), g && r.a.createElement(we, {
 						onClick: this.handleGild
 					}, y.fbt._("Give Award", null, {
 						hk: "pQJYk"
@@ -1519,7 +1519,7 @@
 						permalink: t,
 						sendEventWithName: this.sendCommentEventWithName,
 						subredditType: null == m ? void 0 : m.type
-					}, r.a.createElement(ke, {
+					}, r.a.createElement(we, {
 						onClick: this.sendCommentEventWithNameShare
 					}, y.fbt._("share", null, {
 						hk: "3YIXpa"
@@ -1579,13 +1579,13 @@
 					}), this.renderModTools(), this.renderDistinguishDropdown()), this.props.reportFlowIsOpen && this.renderReportFlow())
 				}
 			}
-			var Te = je(Object(o.b)(Pe, (e, t) => {
+			var Te = ke(Object(o.b)(Pe, (e, t) => {
 					let {
 						comment: s,
 						commentsPageKey: n
 					} = t;
 					return {
-						deleteComment: () => n && e(Object(w.i)(s.id, s.postId)),
+						deleteComment: () => n && e(Object(j.i)(s.id, s.postId)),
 						onDistinguishComment: (t, n) => e(Object(_.b)(s.id, t, n)),
 						onIgnoreReports: () => e(Object(_.g)(s.id)),
 						onGildClick: t => e(Object(S.d)({
@@ -1599,9 +1599,9 @@
 						onToggleReportsDropdown: () => e(Object(N.h)({
 							tooltipId: Ie(s.id)
 						})),
-						onToggleSave: () => e(Object(j.o)(s.id)),
+						onToggleSave: () => e(Object(k.o)(s.id)),
 						handleDelete: () => {
-							e(Object(I.i)(we(s.id))), e(Object(N.h)({
+							e(Object(I.i)(je(s.id))), e(Object(N.h)({
 								tooltipId: Se(n, s.id)
 							}))
 						},
@@ -1609,12 +1609,12 @@
 							const n = Object(E.a)(s.postId, s.id, {}),
 								r = {
 									commentId: s.id,
-									draftKey: Object(k.a)(z.c.edit, s.id),
+									draftKey: Object(w.a)(K.c.edit, s.id),
 									text: s.bodyMD || "",
 									commentMode: s.media && s.media.rteMode,
 									commentsPageKey: n
 								};
-							e(Object(H.a)(t)), e(Object(w.g)(r))
+							e(Object(V.a)(t)), e(Object(j.g)(r))
 						},
 						handleReply: t => {
 							const n = Object(E.a)(s.postId, s.id, {}),
@@ -1622,9 +1622,9 @@
 									parentCommentId: s.id,
 									commentsPageKey: n
 								};
-							e(Object(H.a)(t)), e(Object(w.h)(r))
+							e(Object(V.a)(t)), e(Object(j.h)(r))
 						},
-						toggleDeleteCommentModal: () => e(Object(I.i)(we(s.id)))
+						toggleDeleteCommentModal: () => e(Object(I.i)(je(s.id)))
 					}
 				})(Object(ie.c)(Object(G.b)(Ne)))),
 				Le = s("./src/reddit/components/Comments/Comment/TopMeta/index.tsx"),
@@ -1635,15 +1635,15 @@
 				Be = s.n(Fe);
 			const Ue = fe.a.wrapped(Le.a, "TopMeta", Be.a),
 				Ge = fe.a.div("ProfileCommentWrapper", Be.a),
-				We = fe.a.div("CommentBody", Be.a),
-				De = Object(o.b)(() => Object(i.c)({
+				De = fe.a.div("CommentBody", Be.a),
+				We = Object(o.b)(() => Object(i.c)({
 					comment: (e, t) => Object(Ae.b)(e, t),
-					flair: J.e
+					flair: Q.e
 				})),
-				Ve = Object(c.b)(e => ({
+				He = Object(c.b)(e => ({
 					renderingObjectInfo: e.comment
 				}));
-			t.a = De(e => {
+			t.a = We(e => {
 				const {
 					comment: t,
 					commentsPageKey: s,
@@ -1655,7 +1655,7 @@
 					className: s,
 					content: Object(Me.a)(t),
 					mediaMetadata: t.media && t.media.mediaMetadata,
-					rtJsonElementProps: Ve(e),
+					rtJsonElementProps: He(e),
 					mediaProps: {
 						alignLeft: !0,
 						renderSmallMedia: !0
@@ -1672,7 +1672,7 @@
 					commentsPageKey: s,
 					flair: n,
 					renderedInOverlay: !1
-				}), r.a.createElement("div", null, !t.isDeleted && r.a.createElement(We, null, o ? l() : r.a.createElement(v, {
+				}), r.a.createElement("div", null, !t.isDeleted && r.a.createElement(De, null, o ? l() : r.a.createElement(v, {
 					height: a.Zb,
 					isExpanded: o
 				}, l)), !t.isDeleted && i && r.a.createElement(Te, {
@@ -1942,10 +1942,10 @@
 				C = s("./src/reddit/endpoints/talk/index.ts"),
 				O = s("./src/reddit/actions/toaster.ts"),
 				E = s("./src/reddit/models/Toast/index.ts"),
-				k = s("./src/redditGQL/types.ts");
+				w = s("./src/redditGQL/types.ts");
 			const {
-				fbt: j
-			} = s("./node_modules/fbt/lib/FbtPublic.js"), w = () => r.a.createElement("span", {
+				fbt: k
+			} = s("./node_modules/fbt/lib/FbtPublic.js"), j = () => r.a.createElement("span", {
 				className: b.a.MicrophoneIcon
 			}, r.a.createElement(y, null));
 			var _ = e => {
@@ -1959,7 +1959,7 @@
 					p = Object(v.a)();
 				return r.a.createElement(g.t, {
 					"data-testid": "audioroom-upcoming-start-talk",
-					Icon: d ? x.a : w,
+					Icon: d ? x.a : j,
 					iconClassName: d ? b.a.loadingIcon : "",
 					className: Object(i.a)(b.a.StartTalkButton, {
 						[b.a.isNightMode]: s
@@ -1970,7 +1970,7 @@
 					disabled: d,
 					text: r.a.createElement("span", {
 						className: b.a.StartTalkButtonText
-					}, j._("Start talk", null, {
+					}, k._("Start talk", null, {
 						hk: "46EMgy"
 					})),
 					onClick: async () => {
@@ -1982,12 +1982,12 @@
 						});
 						if (!e.ok) return l(Object(O.f)({
 							kind: E.b.Error,
-							text: C.a[k.j.ServiceError]
+							text: C.a[w.j.ServiceError]
 						})), void a(!1);
 						const s = Object(C.h)(e.body);
 						if (null == s ? void 0 : s.errorState) return l(Object(O.f)({
 							kind: E.b.Error,
-							text: C.a[s.errorState.code] || C.a[k.j.ServiceError]
+							text: C.a[s.errorState.code] || C.a[w.j.ServiceError]
 						})), void a(!1);
 						(null == s ? void 0 : s.okState) && (window.location.href = `${h.a.redditUrl}/talk/${t}`)
 					}
@@ -2466,10 +2466,10 @@
 					})))))
 				})),
 				E = s("./src/reddit/components/OverviewCommentPost/index.tsx"),
-				k = s("./src/reddit/contexts/PageLayer/index.tsx"),
-				j = s("./src/reddit/helpers/isComment.ts"),
-				w = s("./src/reddit/components/OverviewChronoList/ListItem.m.less"),
-				_ = s.n(w),
+				w = s("./src/reddit/contexts/PageLayer/index.tsx"),
+				k = s("./src/reddit/helpers/isComment.ts"),
+				j = s("./src/reddit/components/OverviewChronoList/ListItem.m.less"),
+				_ = s.n(j),
 				S = s("./src/lib/lessComponent.tsx");
 
 			function I() {
@@ -2481,11 +2481,11 @@
 					return e
 				}).apply(this, arguments)
 			}
-			const P = Object(k.u)({
-					currentProfileName: k.i,
-					isCommentsPage: k.x,
-					isCommentPermalink: k.w,
-					isProfilePostListing: k.L,
+			const P = Object(w.u)({
+					currentProfileName: w.i,
+					isCommentsPage: w.x,
+					isCommentPermalink: w.w,
+					isProfilePostListing: w.L,
 					pageLayer: e => e
 				}),
 				N = S.a.wrapped(E.a, "OverviewCommentPost", _.a),
@@ -2500,7 +2500,7 @@
 					width: d,
 					...a
 				} = e;
-				return Object(j.a)(t) ? s ? r.a.createElement(r.a.Fragment, null, r.a.createElement(N, I({}, a, {
+				return Object(k.a)(t) ? s ? r.a.createElement(r.a.Fragment, null, r.a.createElement(N, I({}, a, {
 					availableWidth: d,
 					commentId: t
 				})), r.a.createElement(O, {
@@ -2569,10 +2569,10 @@
 				C = s("./src/reddit/selectors/commentSelector.ts"),
 				O = s("./src/reddit/selectors/experiments/loggedOutBlockingInterstitial.ts"),
 				E = s("./src/reddit/components/OverviewCommentPost/index.m.less"),
-				k = s.n(E);
+				w = s.n(E);
 			const {
-				fbt: j
-			} = s("./node_modules/fbt/lib/FbtPublic.js"), w = c.a.wrapped(f.default, "InternalLink", k.a), _ = c.a.div("Wrapper", k.a), S = c.a.div("Row", k.a), I = c.a.wrapped(y.a, "CommentIcon", k.a), P = c.a.div("TitleContainer", k.a), N = c.a.div("PostTitleContainer", k.a), T = c.a.wrapped(u.c, "PostTitle", k.a), L = c.a.wrapped(p.g, "PostTopMeta", k.a), R = c.a.wrapped(p.a, "MetaSeparator", k.a), M = Object(o.b)(() => Object(i.c)({
+				fbt: k
+			} = s("./node_modules/fbt/lib/FbtPublic.js"), j = c.a.wrapped(f.default, "InternalLink", w.a), _ = c.a.div("Wrapper", w.a), S = c.a.div("Row", w.a), I = c.a.wrapped(y.a, "CommentIcon", w.a), P = c.a.div("TitleContainer", w.a), N = c.a.div("PostTitleContainer", w.a), T = c.a.wrapped(u.c, "PostTitle", w.a), L = c.a.wrapped(p.g, "PostTopMeta", w.a), R = c.a.wrapped(p.a, "MetaSeparator", w.a), M = Object(o.b)(() => Object(i.c)({
 				comment: C.b,
 				isBlockingInterstitialEnabled: O.b,
 				isBlockingInterstitialV2Enabled: O.b
@@ -2584,7 +2584,7 @@
 					subredditOrProfile: s
 				} = e;
 				if (s) return r.a.createElement(n.Fragment, null, r.a.createElement(R, null), r.a.createElement(L, {
-					metaSeparatorClassName: k.a.postTopMetaMetaSeparator,
+					metaSeparatorClassName: w.a.postTopMetaMetaSeparator,
 					post: t,
 					showSub: !0,
 					showTimestamp: !1,
@@ -2601,7 +2601,7 @@
 				if (!t) return null;
 				const d = s || t.author,
 					a = `/user/${d}/`;
-				return r.a.createElement(w, {
+				return r.a.createElement(j, {
 					"data-click-id": "user",
 					to: a,
 					onClick: e => {
@@ -2617,9 +2617,9 @@
 					post: o
 				} = e;
 				return r.a.createElement(m.b, {
-					className: Object(d.a)(v.a.compactPostStyles, k.a.overviewCommentPost, {
-						[k.a.banned]: !!e.post.bannedBy,
-						[k.a.reported]: !e.post.bannedBy && !!e.post.numReports && e.post.numReports > 0
+					className: Object(d.a)(v.a.compactPostStyles, w.a.overviewCommentPost, {
+						[w.a.banned]: !!e.post.bannedBy,
+						[w.a.reported]: !e.post.bannedBy && !!e.post.numReports && e.post.numReports > 0
 					}, t),
 					post: o,
 					onClick: n,
@@ -2628,14 +2628,14 @@
 					style: {
 						background: Object(g.e)(e)
 					}
-				}, r.a.createElement(S, null, r.a.createElement(I, null), r.a.createElement(P, null, j._("{postAuthor} commented on {postTitle} {postMeta}", [j._param("postAuthor", F({
+				}, r.a.createElement(S, null, r.a.createElement(I, null), r.a.createElement(P, null, k._("{postAuthor} commented on {postTitle} {postMeta}", [k._param("postAuthor", F({
 					...e
-				})), j._param("postTitle", r.a.createElement(N, null, r.a.createElement(T, {
-					outboundLinkClassName: k.a.postTitleOutboundLink,
+				})), k._param("postTitle", r.a.createElement(N, null, r.a.createElement(T, {
+					outboundLinkClassName: w.a.postTitleOutboundLink,
 					post: o,
 					size: u.b.Small,
-					titleClassName: k.a.postTitleTitle
-				}))), j._param("postMeta", A(e))], {
+					titleClassName: w.a.postTitleTitle
+				}))), k._param("postMeta", A(e))], {
 					hk: "d6l8e"
 				})))))
 			}))))
@@ -2778,9 +2778,9 @@
 					return e
 				}).apply(this, arguments)
 			}
-			const k = 500,
-				j = new x.a(k),
-				w = new x.a(k),
+			const w = 500,
+				k = new x.a(w),
+				j = new x.a(w),
 				_ = {
 					LARGE: 1,
 					MEDIUM: 1,
@@ -2789,24 +2789,24 @@
 				},
 				S = (e, t, s, n, r, o) => {
 					const i = `entered-${e}-${t}-${s?`last-${n}-${r}`:""}`;
-					let d = j.get(i);
+					let d = k.get(i);
 					return void 0 === d && (d = () => {
 						s && o.onBottomViewed(n, r), o.trackOnPostEnteredViewport(e, t)
-					}, j.set(i, d)), d
+					}, k.set(i, d)), d
 				},
 				I = (e, t) => {
 					const s = `click-${e}`;
-					let n = w.get(s);
+					let n = j.get(s);
 					return void 0 === n && (n = (e, s) => {
 						s.isSponsored && t.fireAdPixelsOfType(s, c.a.Click), s.isSponsored && s.source && s.source.outboundUrl ? Object(a.e)(s.source.outboundUrl, a.d.BLANK) : t.openPost({
 							postOrComment: s,
 							clickInfo: Object(h.a)(e)
 						})
-					}, w.set(s, n)), n
+					}, j.set(s, n)), n
 				};
 			class P extends i.a.Component {
 				constructor() {
-					super(...arguments), this.didRenderLastVisibleChild = !1, this.renderingEmpty = !1, this.renderingPlaceholder = !1, this.scrollChildCache = new x.a(k), this.updateScrollerRef = e => {
+					super(...arguments), this.didRenderLastVisibleChild = !1, this.renderingEmpty = !1, this.renderingPlaceholder = !1, this.scrollChildCache = new x.a(w), this.updateScrollerRef = e => {
 						this.scrollerRef = e instanceof Element ? e : void 0
 					}, this.setLastVisibleChildRendered = () => {
 						this.didRenderLastVisibleChild = !0, this.checkAndSendScreenview()
@@ -3036,9 +3036,9 @@
 				C = s("./src/reddit/contexts/PageLayer/index.tsx"),
 				O = s("./src/reddit/controls/Dropdown/index.tsx"),
 				E = s("./src/reddit/controls/InternalLink/index.tsx"),
-				k = s("./src/reddit/icons/fonts/index.tsx"),
-				j = s("./src/reddit/models/Profile/index.ts"),
-				w = s("./src/reddit/featureFlags/index.ts"),
+				w = s("./src/reddit/icons/fonts/index.tsx"),
+				k = s("./src/reddit/models/Profile/index.ts"),
+				j = s("./src/reddit/featureFlags/index.ts"),
 				_ = s("./src/reddit/selectors/experiments/d2xHistoryTab.ts"),
 				S = s("./src/reddit/selectors/tooltip.ts"),
 				I = s("./src/reddit/selectors/user.ts"),
@@ -3064,7 +3064,7 @@
 					isDropdownMenuOpen: e => Object(S.a)(e) === B,
 					isOwnProfile: (e, t) => Object(I.W)(e, t.profileName),
 					isHistoryTabEnabled: _.a,
-					isSnoovatar30Enabled: w.d.snoovatar30,
+					isSnoovatar30Enabled: j.d.snoovatar30,
 					isSubscriptionsPinned: P.c
 				}),
 				F = Object(h.a)(O.a),
@@ -3088,9 +3088,9 @@
 						isSubscriptionsPinned: b,
 						viewBlockedConsent: h
 					} = e;
-					const [g, x] = Object(c.useState)(!1), C = Object(c.useRef)(null), [O, E] = Object(c.useState)([]), [j, w] = Object(c.useState)([]);
+					const [g, x] = Object(c.useState)(!1), C = Object(c.useRef)(null), [O, E] = Object(c.useState)([]), [k, j] = Object(c.useState)([]);
 					return Object(c.useEffect)(() => {
-						const e = V({
+						const e = H({
 							isHistoryTabEnabled: s,
 							profileName: d,
 							isOwnProfile: n,
@@ -3113,7 +3113,7 @@
 								const o = e.filter(e => e.position === G.MENU);
 								E(e => i()(o, e) ? e : o);
 								const d = e.filter(e => e.position === G.DROPDOWN);
-								w(e => i()(d, e) ? e : d), x(d.length > 0)
+								j(e => i()(d, e) ? e : d), x(d.length > 0)
 							}, 50);
 						return r.a.read(() => {
 							const e = C.current;
@@ -3134,19 +3134,19 @@
 						render: () => l.a.createElement(l.a.Fragment, null, l.a.createElement("div", {
 							className: L.a.menuContainer,
 							ref: C
-						}, O.map(e => l.a.createElement(W, R({}, e, {
+						}, O.map(e => l.a.createElement(D, R({}, e, {
 							key: e.key
 						})))), g && l.a.createElement("button", {
 							className: Object(f.a)(L.a.mainLink),
 							id: B,
 							onClick: () => u(B)
-						}, l.a.createElement(k.a, {
+						}, l.a.createElement(w.a, {
 							name: "overflow_horizontal"
 						})), g && l.a.createElement(F, {
 							className: L.a.dropdown,
 							isOpen: t,
 							tooltipId: B
-						}, j.map(e => l.a.createElement(D, R({}, e, {
+						}, k.map(e => l.a.createElement(W, R({}, e, {
 							key: e.key
 						})))))
 					}))
@@ -3154,7 +3154,7 @@
 				function(e) {
 					e.MENU = "menu", e.DROPDOWN = "dropdown"
 				}(G || (G = {}));
-			const W = e => {
+			const D = e => {
 					let {
 						isActive: t,
 						text: s,
@@ -3173,7 +3173,7 @@
 						href: n
 					}, s)
 				},
-				D = e => {
+				W = e => {
 					let {
 						isActive: t,
 						internal: s,
@@ -3195,7 +3195,7 @@
 						target: "_blank"
 					}, r)
 				},
-				V = e => {
+				H = e => {
 					let {
 						profileName: t,
 						isOwnProfile: s,
@@ -3207,7 +3207,7 @@
 					} = e;
 					const c = s ? [{
 						internal: !0,
-						isActive: r === g.Sb.PROFILE_PRIVATE && o === j.b.Saved,
+						isActive: r === g.Sb.PROFILE_PRIVATE && o === k.b.Saved,
 						key: "profile.mainmenu.saved",
 						text: n.fbt._("Saved", null, {
 							hk: "2w1YRh"
@@ -3216,7 +3216,7 @@
 						position: G.MENU
 					}, {
 						internal: !0,
-						isActive: r === g.Sb.PROFILE_PRIVATE && o === j.b.Hidden,
+						isActive: r === g.Sb.PROFILE_PRIVATE && o === k.b.Hidden,
 						key: "profile.mainmenu.hidden",
 						text: n.fbt._("Hidden", null, {
 							hk: "225tka"
@@ -3225,7 +3225,7 @@
 						position: G.MENU
 					}, {
 						internal: !0,
-						isActive: r === g.Sb.PROFILE_PRIVATE && o === j.b.Upvoted,
+						isActive: r === g.Sb.PROFILE_PRIVATE && o === k.b.Upvoted,
 						key: "profile.mainmenu.upvoted",
 						text: n.fbt._("Upvoted", null, {
 							hk: "RKwFZ"
@@ -3234,7 +3234,7 @@
 						position: G.MENU
 					}, {
 						internal: !0,
-						isActive: r === g.Sb.PROFILE_PRIVATE && o === j.b.Downvoted,
+						isActive: r === g.Sb.PROFILE_PRIVATE && o === k.b.Downvoted,
 						key: "profile.mainmenu.downvoted",
 						text: n.fbt._("Downvoted", null, {
 							hk: "2F9IL4"
@@ -3244,7 +3244,7 @@
 					}] : [];
 					s ? (c.push({
 						internal: !0,
-						isActive: r === g.Sb.PROFILE_PRIVATE && o === j.b.ReceivedGildings,
+						isActive: r === g.Sb.PROFILE_PRIVATE && o === k.b.ReceivedGildings,
 						key: "profile.mainmenu.receiverGildings",
 						text: n.fbt._("Awards received", null, {
 							hk: "iwLBV"
@@ -3253,7 +3253,7 @@
 						position: G.MENU
 					}), c.push({
 						internal: !0,
-						isActive: r === g.Sb.PROFILE_PRIVATE && o === j.b.GivenGildings,
+						isActive: r === g.Sb.PROFILE_PRIVATE && o === k.b.GivenGildings,
 						key: "profile.mainmenu.givenGildings",
 						text: n.fbt._("Awards given", null, {
 							hk: "2UPYZc"
@@ -3272,7 +3272,7 @@
 					});
 					const l = i && s ? [{
 							internal: !0,
-							isActive: r === g.Sb.PROFILE_PRIVATE && o === j.b.History,
+							isActive: r === g.Sb.PROFILE_PRIVATE && o === k.b.History,
 							key: "profile.mainmenu.history",
 							text: n.fbt._("History", null, {
 								hk: "1fv1wp"
@@ -3493,10 +3493,10 @@
 				isCountrySitesEnabled: h.b,
 				isD2xPdpSideRailRecsEnabled: f.b,
 				isNavbarLikeMwebEnabled: g.a
-			}), k = Object(o.b)(E), j = Object(p.u)({
+			}), w = Object(o.b)(E), k = Object(p.u)({
 				isFrontpage: p.A,
 				isCountrySitePage: p.y
-			}), w = e => {
+			}), j = e => {
 				let {
 					countryCode: t,
 					reredditContent: s
@@ -3554,12 +3554,12 @@
 					hk: "4BrCkA"
 				})))
 			};
-			t.a = j(k(Object(c.c)(e => {
+			t.a = k(w(Object(c.c)(e => {
 				const t = Object(o.f)().getState(),
 					s = Object(h.a)(t, Object(d.c)());
 				if (e.isD2xPdpSideRailRecsEnabled) {
 					const t = e.d2xPdpSideRailRecsVariant === m.bd.GreyRereddit || e.d2xPdpSideRailRecsVariant === m.bd.GreyRedditNoNsfw || e.d2xPdpSideRailRecsVariant === m.bd.LargeImagePreview ? e.reredditButtons : [];
-					return r.a.createElement(w, {
+					return r.a.createElement(j, {
 						reredditContent: t,
 						countryCode: e.countryCode
 					})
@@ -3967,7 +3967,7 @@
 						})
 					}, t)
 				};
-			class k extends i.Component {
+			class w extends i.Component {
 				constructor(e) {
 					super(e), this.containerEl = null, this.windowHeight = 1 / 0, this.getStickyContents = () => ({
 						shouldAdSticky: this.windowHeight > y,
@@ -4029,8 +4029,8 @@
 					}))
 				}
 			}
-			const j = Object(u.u)();
-			t.a = j(k)
+			const k = Object(u.u)();
+			t.a = k(w)
 		},
 		"./src/reddit/components/SidebarTrophyCase/index.m.less": function(e, t, s) {
 			e.exports = {
@@ -4088,9 +4088,9 @@
 			});
 			const O = v.a.wrapped(u.a, "TrophyItem", x.a),
 				E = v.a.div("TrophyIcon", x.a),
-				k = v.a.h5("TrophyName", x.a),
-				j = v.a.div("TrophyContent", x.a),
-				w = v.a.wrapped(c.c, "Description", x.a),
+				w = v.a.h5("TrophyName", x.a),
+				k = v.a.div("TrophyContent", x.a),
+				j = v.a.wrapped(c.c, "Description", x.a),
 				_ = e => {
 					let {
 						item: t
@@ -4120,7 +4120,7 @@
 							id: t.id,
 							name: t.name
 						}))
-					}, n) : n), o.a.createElement(j, null, o.a.createElement(k, null, t.name), o.a.createElement(w, null, t.description)))
+					}, n) : n), o.a.createElement(k, null, o.a.createElement(w, null, t.name), o.a.createElement(j, null, t.description)))
 				}
 		},
 		"./src/reddit/components/Widgets/Base/index.m.less": function(e, t, s) {
@@ -4159,7 +4159,7 @@
 		"./src/reddit/components/Widgets/CommunityList/SubredditList.tsx": function(e, t, s) {
 			"use strict";
 			s.d(t, "b", (function() {
-				return w
+				return j
 			})), s.d(t, "a", (function() {
 				return S
 			}));
@@ -4191,10 +4191,10 @@
 				C = s("./src/reddit/selectors/user.ts"),
 				O = s("./src/reddit/components/Widgets/CommunityList/helpers.ts"),
 				E = s("./src/reddit/components/Widgets/CommunityList/index.m.less"),
-				k = s.n(E);
+				w = s.n(E);
 
-			function j() {
-				return (j = Object.assign || function(e) {
+			function k() {
+				return (k = Object.assign || function(e) {
 					for (var t = 1; t < arguments.length; t++) {
 						var s = arguments[t];
 						for (var n in s) Object.prototype.hasOwnProperty.call(s, n) && (e[n] = s[n])
@@ -4202,23 +4202,23 @@
 					return e
 				}).apply(this, arguments)
 			}
-			const w = e => o.a.createElement(b.a, {
-					className: Object(c.a)(k.a.Container, e.className),
+			const j = e => o.a.createElement(b.a, {
+					className: Object(c.a)(w.a.Container, e.className),
 					noGradient: !0,
 					styles: e.widget && e.widget.styles,
 					title: e.title,
 					truncateThreshold: e.truncateThreshold,
 					widgetKind: e.widget && e.widget.kind
 				}, o.a.createElement("div", {
-					className: k.a.container
+					className: w.a.container
 				}, e.isLoading ? o.a.createElement(g.a, {
-					className: k.a.loadingIcon,
+					className: w.a.loadingIcon,
 					sizePx: 32
 				}) : o.a.createElement(o.a.Fragment, null, e.isError ? o.a.createElement("p", {
-					className: k.a.errorMsg
+					className: w.a.errorMsg
 				}, e.errorMsg || n.fbt._("Something went wrong.", null, {
 					hk: "pHwDP"
-				})) : o.a.createElement(o.a.Fragment, null, e.communities.map(t => o.a.createElement(S, j({
+				})) : o.a.createElement(o.a.Fragment, null, e.communities.map(t => o.a.createElement(S, k({
 					key: t.name
 				}, t, {
 					getSubscribeEventFactory: e.getSubscribeEventFactoryHandler ? e.getSubscribeEventFactoryHandler(t) : void 0,
@@ -4234,7 +4234,7 @@
 					showTertiaryButtonOnHover: e.showTertiaryButtonOnHover,
 					onTertiaryButtonClick: e.onTertiaryButtonClick
 				})))), e.bottomButtonText && e.onBottomButtonClick && o.a.createElement(f.t, {
-					className: k.a.bottomButton,
+					className: w.a.bottomButton,
 					kind: f.b.Button,
 					priority: f.c.Plain,
 					onClick: e.onBottomButtonClick
@@ -4244,50 +4244,50 @@
 					nightmode: C.db
 				}),
 				S = Object(i.b)(_)(e => o.a.createElement("div", {
-					className: Object(c.a)(k.a.communityItemContainer, {
-						[k.a.withBottomFlair]: e.isNSFW
+					className: Object(c.a)(w.a.communityItemContainer, {
+						[w.a.withBottomFlair]: e.isNSFW
 					})
 				}, o.a.createElement(v.a, {
-					className: k.a.communityItemExpandCenter,
+					className: w.a.communityItemExpandCenter,
 					widthRight: h.s
 				}, o.a.createElement("div", {
-					className: k.a.iconContainer
+					className: w.a.iconContainer
 				}, e.communityIcon || e.iconUrl ? o.a.createElement("img", {
-					className: k.a.subredditIcon,
+					className: w.a.subredditIcon,
 					src: e.iconUrl || e.communityIcon
 				}) : o.a.createElement(x.a, {
 					name: "community",
 					isFilled: !e.nightmode,
-					className: Object(c.a)(k.a.defaultCommunityIcon, {
-						[k.a.mNightmode]: e.nightmode
+					className: Object(c.a)(w.a.defaultCommunityIcon, {
+						[w.a.mNightmode]: e.nightmode
 					})
 				})), o.a.createElement("div", {
-					className: k.a.communityDescriptionContainer
+					className: w.a.communityDescriptionContainer
 				}, o.a.createElement(d.a, {
-					className: k.a.communityName,
+					className: w.a.communityName,
 					onClick: e.onCommunityNameClick,
 					title: Object(O.b)(e.name, e.type),
 					to: Object(O.a)(e.name, e.type)
 				}, Object(O.b)(e.name, e.type)), o.a.createElement("div", {
-					className: k.a.communityInfoContainer
+					className: w.a.communityInfoContainer
 				}, !!e.subscribers && o.a.createElement("p", {
-					className: k.a.subscriberCount
+					className: w.a.subscriberCount
 				}, n.fbt._({
 					"*": "{number} members",
 					_1: "1 member"
 				}, [n.fbt._plural(e.subscribers, "number")], {
 					hk: "6i1wh"
 				})), e.isNSFW && o.a.createElement(l.b, {
-					className: k.a.nsfwFlair,
+					className: w.a.nsfwFlair,
 					flair: {
 						type: y.f.Nsfw,
 						text: "nsfw"
 					}
 				}))), e.useTertiaryButton && e.tertiaryButtonText && e.onTertiaryButtonClick ? e.isLoading ? o.a.createElement(g.a, {
-					className: Object(c.a)(k.a.communityCta, k.a.smallLoadingIcon),
+					className: Object(c.a)(w.a.communityCta, w.a.smallLoadingIcon),
 					sizePx: 12
 				}) : o.a.createElement(f.t, {
-					className: k.a.communityCta,
+					className: w.a.communityCta,
 					disabled: e.buttonDisabled,
 					onClick: () => e.onTertiaryButtonClick(e)
 				}, e.tertiaryButtonText) : e.widget ? o.a.createElement(p, {
@@ -4311,7 +4311,7 @@
 					small: !0
 				})), !!e.description && o.a.createElement("p", {
 					title: e.description,
-					className: k.a.communityDescription
+					className: w.a.communityDescription
 				}, e.description)))
 		},
 		"./src/reddit/components/Widgets/CommunityList/helpers.ts": function(e, t, s) {
@@ -4430,10 +4430,10 @@
 					}, d))))
 				},
 				E = s("./src/reddit/components/Widgets/ConnectedAccounts/index.m.less"),
-				k = s.n(E);
+				w = s.n(E);
 			const {
-				fbt: j
-			} = s("./node_modules/fbt/lib/FbtPublic.js"), w = Object(i.c)({
+				fbt: k
+			} = s("./node_modules/fbt/lib/FbtPublic.js"), j = Object(i.c)({
 				twitterAccount: (e, t) => {
 					let {
 						subredditOrProfile: s
@@ -4450,7 +4450,7 @@
 						userName: s.name
 					}) : null
 				}
-			}), _ = Object(o.b)(w, e => ({
+			}), _ = Object(o.b)(j, e => ({
 				trackTwitterAccountClicked: t => e((e, s) => m.m(s(), t))
 			}), (e, t, s) => ({
 				...s,
@@ -4463,10 +4463,10 @@
 					onTwitterAccountClicked: t,
 					twitterAccount: s
 				} = e;
-				return s ? r.a.createElement(d.a, null, r.a.createElement(c.b, null, r.a.createElement(c.a, null, j._("Connected accounts", null, {
+				return s ? r.a.createElement(d.a, null, r.a.createElement(c.b, null, r.a.createElement(c.a, null, k._("Connected accounts", null, {
 					hk: "1ce9Jz"
 				})), s && r.a.createElement("div", {
-					className: k.a.account
+					className: w.a.account
 				}, r.a.createElement(O, {
 					provider: u.a.Twitter,
 					account: s,
@@ -4517,10 +4517,10 @@
 					const t = C(e);
 					return Object(x.f)(t)
 				};
-			var k = s("./src/reddit/components/Widgets/ThemedWidget/index.m.less"),
-				j = s.n(k);
+			var w = s("./src/reddit/components/Widgets/ThemedWidget/index.m.less"),
+				k = s.n(w);
 			const {
-				fbt: w
+				fbt: j
 			} = s("./node_modules/fbt/lib/FbtPublic.js"), _ = Object(m.u)(), S = Object(o.b)(() => Object(i.c)({
 				forceRedditStyle: (e, t) => {
 					const s = Object(m.n)(e, t) || void 0,
@@ -4576,19 +4576,19 @@
 						title: m,
 						titleClassName: p,
 						truncateThreshold: b
-					} = this.props, h = s ? j.a.widgetContentOnly : j.a.widgetContent, f = !n && this.props.styles, g = f ? this.getWidgetBackgroundStyles() : {}, x = f ? this.getWidgetHeaderStyles() : {};
+					} = this.props, h = s ? k.a.widgetContentOnly : k.a.widgetContent, f = !n && this.props.styles, g = f ? this.getWidgetBackgroundStyles() : {}, x = f ? this.getWidgetHeaderStyles() : {};
 					return r.a.createElement("div", {
-						className: Object(d.a)(t, j.a.widgetBackground, {
-							[j.a.redditStyle]: n,
-							[j.a.clickable]: !!a,
-							[j.a.truncatedGradient]: this.state.isTruncated && !this.props.noGradient
+						className: Object(d.a)(t, k.a.widgetBackground, {
+							[k.a.redditStyle]: n,
+							[k.a.clickable]: !!a,
+							[k.a.truncatedGradient]: this.state.isTruncated && !this.props.noGradient
 						}),
 						"data-redditstyle": n,
 						onClick: a,
 						style: g
 					}, m && r.a.createElement("div", {
-						className: Object(d.a)(j.a.widgetHeader, {
-							[j.a.clickable]: !!l
+						className: Object(d.a)(k.a.widgetHeader, {
+							[k.a.clickable]: !!l
 						}),
 						id: i,
 						style: {
@@ -4597,21 +4597,21 @@
 						},
 						onClick: l
 					}, r.a.createElement("div", {
-						className: Object(d.a)(j.a.widgetTitle, p)
+						className: Object(d.a)(k.a.widgetTitle, p)
 					}, r.a.createElement(c.b, {
 						type: c.a.Widget
 					}, m)), o), r.a.createElement("div", {
 						className: Object(d.a)(h, {
-							[j.a.truncated]: this.state.isTruncated
+							[k.a.truncated]: this.state.isTruncated
 						}),
 						ref: this.contentRef,
 						style: {
 							maxHeight: this.state.isTruncated ? b : "none"
 						}
 					}, e), this.state.isTruncated && r.a.createElement(u.r, {
-						className: j.a.seeMore,
+						className: k.a.seeMore,
 						onClick: this.handleSeeMoreClick
-					}, w._("See More", null, {
+					}, j._("See More", null, {
 						hk: "4w47Qu"
 					})))
 				}
@@ -4725,11 +4725,11 @@
 			})), s.d(t, "j", (function() {
 				return E
 			})), s.d(t, "d", (function() {
-				return k
-			})), s.d(t, "h", (function() {
-				return j
-			})), s.d(t, "a", (function() {
 				return w
+			})), s.d(t, "h", (function() {
+				return k
+			})), s.d(t, "a", (function() {
+				return j
 			})), s.d(t, "i", (function() {
 				return _
 			})), s.d(t, "b", (function() {
@@ -4795,7 +4795,7 @@
 							subredditId: t.id
 						}
 					}
-				}), k = () => Object(r.a)(), j = e => e.data.createAudioRoomOrError || e.data.createAudioRoomOnProfile || e.data.startAudioRoom, w = {
+				}), w = () => Object(r.a)(), k = e => e.data.createAudioRoomOrError || e.data.createAudioRoomOnProfile || e.data.startAudioRoom, j = {
 					[g.j.ServiceError]: n.fbt._("Something's wrong with the talk service right now. Check back later.", null, {
 						hk: "3XqPJS"
 					}),
@@ -5414,736 +5414,998 @@
 				C = s("./src/reddit/actions/postList.ts"),
 				O = s("./src/reddit/contexts/PageLayer/index.tsx"),
 				E = s("./src/reddit/helpers/isComment.ts"),
-				k = s("./src/reddit/helpers/isPost.ts"),
-				j = s("./src/reddit/helpers/trackers/post.ts"),
-				w = (s("./node_modules/core-js/modules/web.dom.iterable.js"), s("./src/lib/objectSelector/index.ts")),
+				w = s("./src/reddit/helpers/isPost.ts"),
+				k = s("./src/reddit/helpers/trackers/post.ts"),
+				j = (s("./node_modules/core-js/modules/web.dom.iterable.js"), s("./src/lib/objectSelector/index.ts")),
 				_ = s("./src/reddit/models/Flair/index.ts"),
 				S = s("./src/reddit/models/PostCreationForm/index.ts"),
-				I = s("./src/reddit/models/Vote/index.ts");
-			const P = {
-				t3_1: {
+				I = (s("./src/reddit/models/Subreddit/index.ts"), s("./src/reddit/models/Subreddit/mock.ts"), s("./src/reddit/models/Vote/index.ts"));
+
+			function P(e) {
+				return {
 					adPromotedUserPostIds: [],
 					adSupplementaryText: null,
-					approvedAtUTC: null,
-					approvedBy: null,
-					author: "that_one_guy",
+					approvedAtUTC: 151234567890,
+					approvedBy: "",
+					author: "author",
 					authorId: "t2_1234",
 					authorIsBlocked: !1,
-					awardCountsById: {},
-					id: "t3_1",
 					bannedAtUTC: null,
 					bannedBy: null,
 					belongsTo: {
-						id: "t5_1",
+						id: "t5_1234",
 						type: "subreddit"
 					},
 					contestMode: !1,
-					created: 1492205391e4,
+					created: 151234567890,
 					crosspostParentId: null,
 					crosspostRootId: null,
 					discussionType: null,
 					distinguishType: null,
-					domain: "i.redd.it",
+					domain: "asdf.com",
 					events: [],
 					flair: [],
+					id: "t3_1234",
 					ignoreReports: !1,
-					impressionId: null,
-					impressionIdStr: null,
-					isArchived: !1,
-					isApproved: !1,
-					isAuthorPremium: !1,
-					isBlank: !1,
-					isCreatedFromAdsUi: !1,
-					isCrosspostable: !0,
-					isEligibleForQASchema: !1,
-					isFollowed: !1,
-					isGildable: !0,
-					isLocked: !1,
-					isMediaOnly: !1,
-					isMeta: !1,
-					isNSFW: !1,
-					isOriginalContent: !1,
-					isPinned: !1,
-					isRemoved: !1,
-					isSpam: !1,
-					isSpoiler: !1,
-					isSponsored: !1,
-					isSurveyAd: !1,
-					isStickied: !1,
-					liveCommentsWebsocket: "wss://reddit.com/live/1",
-					isReactAllowed: !1,
-					attributionInfo: null,
-					reactedFrom: null,
-					media: {
-						type: "image",
-						content: "https://i.redd.it/iap6jbwjlosy.jpg",
-						width: 100,
-						height: 100,
-						obfuscated: null,
-						resolutions: []
-					},
 					modReports: [],
-					numComments: 5,
-					numCrossposts: 0,
-					numReports: null,
-					permalink: "https://www.reddit.com/r/listentothis/comments/6k2dyk/kerrin_connolly_nevermind_indieacousticpop_2017/",
-					postCategories: [{
-						categoryId: "c1009",
-						categoryName: "News"
-					}],
-					preview: {
-						url: "https://i.redditmedia.com/msdj41xc-LgU8OfIuLDP52FtgyyahbFAizi9mp-aBoI.jpg?s=931d28c1922e12dbf6a06a357cdf3ceb",
-						width: 480,
-						height: 360
-					},
-					previewComments: [{
-						id: "t1_1",
-						type: "top"
-					}],
-					postId: "t3_1",
-					removedBy: null,
-					removedByCategory: null,
-					score: 23,
-					isScoreHidden: !1,
-					sendReplies: !1,
-					source: null,
-					suggestedSort: null,
-					thumbnail: {
-						url: "https://b.thumbs.redditmedia.com/KNGvoTjCbwN1iYV5lkb4TfZGXX22k--3WfeijolEreo.jpg",
-						width: null,
-						height: null
-					},
-					title: "A plain post",
-					upvoteRatio: .1,
+					numReports: 0,
 					userReports: [],
-					viewCount: 1,
-					voteState: 0
-				},
-				t3_2: {
-					adPromotedUserPostIds: [],
-					adSupplementaryText: null,
-					approvedAtUTC: null,
-					approvedBy: null,
-					author: "that_other_chick",
-					authorId: "t2_1235",
-					authorIsBlocked: !1,
-					awardCountsById: {},
-					id: "t3_2",
-					bannedAtUTC: null,
-					bannedBy: null,
-					belongsTo: {
-						id: "t5_100",
-						type: "profile"
-					},
-					contestMode: !1,
-					created: 1492205391e4,
-					crosspostParentId: null,
-					crosspostRootId: null,
-					discussionType: null,
-					distinguishType: null,
-					domain: "i.redd.it",
-					events: [],
-					flair: [],
-					ignoreReports: !1,
 					impressionId: null,
 					impressionIdStr: null,
+					isApproved: !0,
 					isArchived: !1,
-					isApproved: !1,
 					isAuthorPremium: !1,
 					isBlank: !1,
 					isCreatedFromAdsUi: !1,
 					isCrosspostable: !0,
 					isEligibleForQASchema: !1,
-					isFollowed: !1,
 					isGildable: !0,
 					isLocked: !1,
 					isMediaOnly: !1,
 					isMeta: !1,
 					isNSFW: !1,
-					isOriginalContent: !1,
+					isOriginalContent: !0,
 					isPinned: !1,
 					isRemoved: !1,
-					isSpam: !1,
-					isSpoiler: !1,
-					isSponsored: !1,
-					isSurveyAd: !1,
-					isStickied: !1,
 					isReactAllowed: !1,
-					attributionInfo: null,
 					reactedFrom: null,
-					liveCommentsWebsocket: "wss://reddit.com/live/2",
-					media: {
-						content: "https://i.redd.it/d43skac7fqsy.jpg",
-						type: "image",
-						width: 100,
-						height: 100,
-						obfuscated: null,
-						resolutions: []
-					},
-					modReports: [],
-					numComments: 5,
-					numCrossposts: 0,
-					numReports: null,
-					permalink: "https://www.reddit.com/r/listentothis/comments/6k2dyk/kerrin_connolly_nevermind_indieacousticpop_2017/",
-					postCategories: [{
-						categoryId: "c1009",
-						categoryName: "News"
-					}],
-					previewComments: [{
-						id: "t1_1",
-						type: "top"
-					}],
-					postId: "t3_2",
-					removedBy: null,
-					removedByCategory: null,
-					score: 23,
+					attributionInfo: null,
 					isScoreHidden: !1,
-					sendReplies: !1,
-					source: null,
-					suggestedSort: null,
-					thumbnail: {
-						url: "https://b.thumbs.redditmedia.com/KNGvoTjCbwN1iYV5lkb4TfZGXX22k--3WfeijolEreo.jpg",
-						width: null,
-						height: null
-					},
-					title: "Another not so plain post here.",
-					upvoteRatio: .1,
-					userReports: [],
-					viewCount: 1,
-					voteState: 1
-				},
-				t3_3: {
-					adPromotedUserPostIds: [],
-					adSupplementaryText: null,
-					approvedAtUTC: null,
-					approvedBy: null,
-					author: "person_number_three",
-					authorId: "t2_1236",
-					authorIsBlocked: !1,
-					awardCountsById: {},
-					id: "t3_3",
-					bannedAtUTC: null,
-					bannedBy: null,
-					belongsTo: {
-						id: "t5_1",
-						type: "subreddit"
-					},
-					contestMode: !1,
-					created: 1492205391e4,
-					crosspostParentId: null,
-					crosspostRootId: null,
-					discussionType: null,
-					distinguishType: null,
-					domain: "i.redd.it",
-					events: [],
-					flair: [],
-					ignoreReports: !1,
-					impressionId: null,
-					impressionIdStr: null,
-					isArchived: !1,
-					isApproved: !1,
-					isAuthorPremium: !1,
-					isBlank: !1,
-					isCreatedFromAdsUi: !1,
-					isCrosspostable: !0,
-					isEligibleForQASchema: !1,
-					isFollowed: !1,
-					isGildable: !0,
-					isLocked: !1,
-					isMediaOnly: !1,
-					isMeta: !1,
-					isNSFW: !1,
-					isOriginalContent: !1,
-					isPinned: !1,
-					isRemoved: !1,
 					isSpam: !1,
-					isSpoiler: !1,
 					isSponsored: !1,
 					isSurveyAd: !1,
-					isStickied: !1,
-					isReactAllowed: !1,
-					attributionInfo: null,
-					reactedFrom: null,
-					liveCommentsWebsocket: "wss://reddit.com/live/3",
-					media: {
-						content: "https://i.redd.it/d43skac7fqsy.jpg",
-						type: "image",
-						width: 100,
-						height: 100,
-						obfuscated: null,
-						resolutions: []
-					},
-					modReports: [],
-					numComments: 5,
-					numCrossposts: 0,
-					numReports: null,
-					permalink: "https://www.reddit.com/r/listentothis/comments/6k2dyk/kerrin_connolly_nevermind_indieacousticpop_2017/",
-					postCategories: [{
-						categoryId: "c1009",
-						categoryName: "News"
-					}],
-					preview: {
-						url: "https://i.redditmedia.com/msdj41xc-LgU8OfIuLDP52FtgyyahbFAizi9mp-aBoI.jpg?s=931d28c1922e12dbf6a06a357cdf3ceb",
-						width: 480,
-						height: 360
-					},
-					previewComments: [{
-						id: "t1_1",
-						type: "top"
-					}],
-					postId: "t3_3",
-					removedBy: null,
-					removedByCategory: null,
-					score: 23,
-					isScoreHidden: !1,
-					sendReplies: !1,
-					source: null,
-					suggestedSort: null,
-					thumbnail: {
-						url: "https://b.thumbs.redditmedia.com/KNGvoTjCbwN1iYV5lkb4TfZGXX22k--3WfeijolEreo.jpg",
-						width: null,
-						height: null
-					},
-					title: "Another plain post here.",
-					upvoteRatio: .1,
-					userReports: [],
-					viewCount: 1,
-					voteState: 1
-				},
-				t3_4: {
-					adPromotedUserPostIds: [],
-					adSupplementaryText: null,
-					approvedAtUTC: null,
-					approvedBy: null,
-					author: "this_user_is_the_best",
-					authorId: "t2_1237",
-					authorIsBlocked: !1,
-					awardCountsById: {},
-					id: "t3_4",
-					bannedAtUTC: null,
-					bannedBy: null,
-					belongsTo: {
-						id: "t5_100",
-						type: "profile"
-					},
-					contestMode: !1,
-					created: 1492205391e4,
-					crosspostParentId: null,
-					crosspostRootId: null,
-					discussionType: null,
-					distinguishType: null,
-					domain: "i.redditmedia.com",
-					events: [],
-					flair: [{
-						type: _.f.Text,
-						text: "hello world"
-					}, {
-						type: _.f.Spoiler,
-						text: "spoiler"
-					}],
-					ignoreReports: !1,
-					impressionId: null,
-					impressionIdStr: null,
-					isArchived: !1,
-					isApproved: !1,
-					isAuthorPremium: !1,
-					isBlank: !1,
-					isCreatedFromAdsUi: !1,
-					isCrosspostable: !0,
-					isEligibleForQASchema: !1,
-					isFollowed: !1,
-					isGildable: !0,
-					isLocked: !1,
-					isMediaOnly: !1,
-					isMeta: !1,
-					isNSFW: !1,
-					isOriginalContent: !1,
-					isPinned: !1,
-					isRemoved: !1,
-					isSpam: !1,
 					isSpoiler: !1,
-					isSponsored: !1,
-					isSurveyAd: !1,
 					isStickied: !1,
-					isReactAllowed: !1,
-					attributionInfo: null,
-					reactedFrom: null,
-					liveCommentsWebsocket: "wss://reddit.com/live/4",
+					liveCommentsWebsocket: null,
 					media: null,
-					modReports: [],
-					numComments: 5,
+					numComments: 10,
 					numCrossposts: 0,
-					numReports: null,
-					permalink: "https://www.reddit.com/r/listentothis/comments/6k2dyk/kerrin_connolly_nevermind_indieacousticpop_2017/",
-					postCategories: [{
-						categoryId: "c1009",
-						categoryName: "News"
-					}],
-					preview: {
-						url: "https://i.redditmedia.com/msdj41xc-LgU8OfIuLDP52FtgyyahbFAizi9mp-aBoI.jpg?s=931d28c1922e12dbf6a06a357cdf3ceb",
-						width: 480,
-						height: 360
-					},
-					previewComments: [{
-						id: "t1_1",
-						type: "top"
-					}],
-					postId: "t3_4",
+					permalink: "comments/t3_1234",
+					postCategories: null,
+					postId: "t3_1234",
+					previewComments: [],
 					removedBy: null,
 					removedByCategory: null,
-					score: 300,
-					isScoreHidden: !1,
-					sendReplies: !1,
-					source: {
-						displayText: "foobar.com",
-						url: "http://foobar.com",
-						outboundUrl: "http://foobar.com/foobar"
-					},
-					suggestedSort: null,
-					thumbnail: {
-						url: "https://b.thumbs.redditmedia.com/KNGvoTjCbwN1iYV5lkb4TfZGXX22k--3WfeijolEreo.jpg",
-						width: null,
-						height: null
-					},
-					title: "Hello world one two three four five six seven eight. See? I can count!",
-					upvoteRatio: .1,
-					userReports: [],
-					viewCount: 1,
-					voteState: 0
-				},
-				t3_5: {
-					adPromotedUserPostIds: [],
-					adSupplementaryText: null,
-					approvedAtUTC: null,
-					approvedBy: null,
-					author: "yet_another_cool_dude",
-					authorId: "t2_1238",
-					authorIsBlocked: !1,
-					awardCountsById: {},
-					id: "t3_5",
-					bannedAtUTC: null,
-					bannedBy: null,
-					belongsTo: {
-						id: "t5_1",
-						type: "subreddit"
-					},
-					contestMode: !1,
-					created: 1492205391e4,
-					crosspostParentId: null,
-					crosspostRootId: null,
-					discussionType: null,
-					distinguishType: null,
-					domain: "self.listentothis",
-					events: [],
-					flair: [{
-						type: _.f.Text,
-						text: "hello world"
-					}, {
-						type: _.f.Spoiler,
-						text: "spoiler"
-					}],
-					ignoreReports: !1,
-					impressionId: null,
-					impressionIdStr: null,
-					isArchived: !1,
-					isApproved: !1,
-					isAuthorPremium: !1,
-					isBlank: !1,
-					isCreatedFromAdsUi: !1,
-					isCrosspostable: !0,
-					isEligibleForQASchema: !1,
-					isFollowed: !1,
-					isGildable: !0,
-					isLocked: !1,
-					isMediaOnly: !1,
-					isMeta: !1,
-					isNSFW: !1,
-					isOriginalContent: !1,
-					isPinned: !1,
-					isRemoved: !1,
-					isSpam: !1,
-					isSpoiler: !1,
-					isSponsored: !1,
-					isSurveyAd: !1,
-					isStickied: !1,
-					isReactAllowed: !1,
-					attributionInfo: null,
-					reactedFrom: null,
-					liveCommentsWebsocket: "wss://reddit.com/live/5",
-					media: {
-						type: "text",
-						rteMode: S.i.RICH_TEXT,
-						markdownContent: "",
-						content: "",
-						obfuscated: null
-					},
-					modReports: [],
-					numComments: 5,
-					numCrossposts: 0,
-					numReports: null,
-					permalink: "https://www.reddit.com/r/listentothis/comments/6k2dyk/kerrin_connolly_nevermind_indieacousticpop_2017/",
-					preview: {
-						url: "https://i.redditmedia.com/msdj41xc-LgU8OfIuLDP52FtgyyahbFAizi9mp-aBoI.jpg?s=931d28c1922e12dbf6a06a357cdf3ceb",
-						width: 480,
-						height: 360
-					},
-					postCategories: [{
-						categoryId: "c1009",
-						categoryName: "News"
-					}],
-					previewComments: [{
-						id: "t1_1",
-						type: "top"
-					}],
-					postId: "t3_5",
-					removedBy: null,
-					removedByCategory: null,
-					score: 300,
-					isScoreHidden: !1,
+					score: 10,
 					sendReplies: !1,
 					source: null,
 					suggestedSort: null,
+					title: "test post, plz ignore",
 					thumbnail: {
-						url: "https://b.thumbs.redditmedia.com/KNGvoTjCbwN1iYV5lkb4TfZGXX22k--3WfeijolEreo.jpg",
+						url: "http://",
 						width: null,
 						height: null
 					},
-					title: "This is an interesting post title",
-					upvoteRatio: .1,
-					userReports: [],
-					viewCount: 1,
-					voteState: 0
-				},
-				t3_6: {
-					adPromotedUserPostIds: [],
-					adSupplementaryText: null,
-					approvedAtUTC: null,
-					approvedBy: null,
-					author: "spez",
-					authorId: "t2_1239",
-					authorIsBlocked: !1,
-					awardCountsById: {},
-					id: "t3_6",
-					bannedAtUTC: null,
-					bannedBy: null,
-					belongsTo: {
-						id: "t5_100",
-						type: "profile"
-					},
-					contestMode: !1,
-					created: 1492205391e4,
-					crosspostParentId: null,
-					crosspostRootId: null,
-					discussionType: null,
-					distinguishType: null,
-					domain: "self.listentothis",
-					events: [],
-					flair: [{
-						type: _.f.Text,
-						text: "hello world"
-					}, {
-						type: _.f.Spoiler,
-						text: "spoiler"
-					}],
-					ignoreReports: !1,
-					impressionId: null,
-					impressionIdStr: null,
-					isArchived: !1,
-					isApproved: !1,
-					isAuthorPremium: !1,
-					isBlank: !1,
-					isCreatedFromAdsUi: !1,
-					isCrosspostable: !0,
-					isEligibleForQASchema: !1,
-					isFollowed: !1,
-					isGildable: !0,
-					isLocked: !1,
-					isMediaOnly: !1,
-					isMeta: !1,
-					isNSFW: !1,
-					isOriginalContent: !1,
-					isPinned: !1,
-					isRemoved: !1,
-					isSpam: !1,
-					isSpoiler: !1,
-					isSponsored: !1,
-					isSurveyAd: !1,
-					isReactAllowed: !1,
-					attributionInfo: null,
-					reactedFrom: null,
-					isStickied: !1,
-					liveCommentsWebsocket: "wss://reddit.com/live/6",
-					media: {
-						type: "text",
-						rteMode: S.i.RICH_TEXT,
-						markdownContent: "",
-						content: "",
-						obfuscated: null
-					},
-					modReports: [],
-					numComments: 5,
-					numCrossposts: 0,
-					numReports: null,
-					permalink: "https://www.reddit.com/r/listentothis/comments/6k2dyk/kerrin_connolly_nevermind_indieacousticpop_2017/",
-					postCategories: [{
-						categoryId: "c1009",
-						categoryName: "News"
-					}],
-					preview: {
-						url: "https://i.redditmedia.com/msdj41xc-LgU8OfIuLDP52FtgyyahbFAizi9mp-aBoI.jpg?s=931d28c1922e12dbf6a06a357cdf3ceb",
-						width: 480,
-						height: 360
-					},
-					previewComments: [{
-						id: "t1_1",
-						type: "top"
-					}],
-					postId: "t3_6",
-					removedBy: null,
-					removedByCategory: null,
-					score: 300,
-					isScoreHidden: !1,
-					sendReplies: !1,
-					source: null,
-					suggestedSort: null,
-					thumbnail: {
-						url: "https://b.thumbs.redditmedia.com/KNGvoTjCbwN1iYV5lkb4TfZGXX22k--3WfeijolEreo.jpg",
-						width: null,
-						height: null
-					},
-					title: "This is an extremely interesting post title",
-					upvoteRatio: .1,
-					userReports: [],
-					viewCount: 1,
-					voteState: 0
-				},
-				abc12345: {
-					adPromotedUserPostIds: [],
-					adSupplementaryText: null,
-					approvedAtUTC: null,
-					approvedBy: null,
-					author: "spez",
-					authorId: "t2_1240",
-					authorIsBlocked: !1,
-					awardCountsById: {},
-					id: "t3_6",
-					bannedAtUTC: null,
-					bannedBy: null,
-					belongsTo: {
-						id: "t5_100",
-						type: "profile"
-					},
-					contestMode: !1,
-					created: 1492205391e4,
-					crosspostParentId: null,
-					crosspostRootId: null,
-					discussionType: null,
-					distinguishType: null,
-					domain: "i.redditmedia.com",
-					events: [{
-						type: 1,
-						url: "https://www.reddit.com/i.gif"
-					}],
-					flair: [{
-						type: _.f.Text,
-						text: "hello world"
-					}, {
-						type: _.f.Spoiler,
-						text: "spoiler"
-					}],
-					ignoreReports: !1,
-					impressionId: null,
-					impressionIdStr: null,
-					isArchived: !1,
-					isApproved: !1,
-					isAuthorPremium: !1,
-					isBlank: !0,
-					isCreatedFromAdsUi: !1,
-					isCrosspostable: !0,
-					isEligibleForQASchema: !1,
-					isFollowed: !1,
-					isGildable: !0,
-					isLocked: !1,
-					isMediaOnly: !1,
-					isMeta: !1,
-					isNSFW: !1,
-					isOriginalContent: !1,
-					isPinned: !1,
-					isRemoved: !1,
-					isSpam: !1,
-					isSpoiler: !1,
-					isSponsored: !1,
-					isSurveyAd: !1,
-					isStickied: !1,
-					isReactAllowed: !1,
-					attributionInfo: null,
-					reactedFrom: null,
-					liveCommentsWebsocket: "wss://reddit.com/live/6",
-					media: {
-						type: "text",
-						rteMode: S.i.RICH_TEXT,
-						markdownContent: "",
-						content: "",
-						obfuscated: null
-					},
-					modReports: [],
-					numComments: 5,
-					numCrossposts: 0,
-					numReports: null,
-					permalink: "https://www.reddit.com/r/listentothis/comments/6k2dyk/kerrin_connolly_nevermind_indieacousticpop_2017/",
-					postCategories: [{
-						categoryId: "c1009",
-						categoryName: "News"
-					}],
-					preview: {
-						url: "https://i.redditmedia.com/msdj41xc-LgU8OfIuLDP52FtgyyahbFAizi9mp-aBoI.jpg?s=931d28c1922e12dbf6a06a357cdf3ceb",
-						width: 480,
-						height: 360
-					},
-					previewComments: [{
-						id: "t1_1",
-						type: "top"
-					}],
-					postId: "t3_3",
-					removedBy: null,
-					removedByCategory: null,
-					score: 300,
-					isScoreHidden: !1,
-					sendReplies: !1,
-					source: null,
-					suggestedSort: null,
-					thumbnail: {
-						url: "https://b.thumbs.redditmedia.com/KNGvoTjCbwN1iYV5lkb4TfZGXX22k--3WfeijolEreo.jpg",
-						width: null,
-						height: null
-					},
-					title: "This is an extremely interesting post title",
-					upvoteRatio: .1,
-					userReports: [],
-					viewCount: 1,
-					voteState: 0
+					upvoteRatio: .8,
+					viewCount: 100,
+					voteState: I.a.notVoted,
+					...e
 				}
-			};
-			N = {
-				authorIsBlocked: !0,
-				media: {
-					type: "text",
-					rteMode: S.i.RICH_TEXT,
-					markdownContent: "",
-					content: "This is content in a post.",
-					obfuscated: null
-				}
-			}, I.a.notVoted;
-			var N;
-			const T = function(e) {
-					return e[arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : "t3_1"]
-				}(P),
-				L = Object(w.a)((e, t) => {
+			}
+			const N = e => {
+					var t;
+					const s = null !== (t = null == e ? void 0 : e.id) && void 0 !== t ? t : "ad";
+					return P({
+						id: `t3_${s}`,
+						postId: `t3_${s}`,
+						belongsTo: {
+							id: `t5_${s}`,
+							type: "profile"
+						},
+						callToAction: "Learn More",
+						domain: "ads.reddit.com",
+						domainOverride: "ads.reddit.com",
+						impressionId: "an-impression-id",
+						isCreatedFromAdsUi: !0,
+						isSponsored: !0,
+						events: [{
+							url: "https://alb.reddit.com/i.gif",
+							type: 1
+						}],
+						source: {
+							displayText: "ads.reddit.com",
+							url: "https://ads.reddit.com/",
+							outboundUrl: "https://alb.reddit.com/cr"
+						},
+						thumbnail: {
+							url: "https://a.thumbs.redditmedia.com/fg8HfA0eSq3OX1MByIkjERyCJPEiH6eGQqdNcOnXEt4.jpg",
+							width: 140,
+							height: 140
+						},
+						media: {
+							obfuscated: null,
+							content: "https://external-preview.redd.it/64IrEJJRRkfJIZbnGYpOzY0LVR06JQI-H6npRJIZ66Y.jpg?auto=webp&s=3ee64cbf5893866e2c10483686fcf879477f6e29",
+							type: "image",
+							width: 2500,
+							height: 2500,
+							resolutions: [{
+								url: "https://external-preview.redd.it/64IrEJJRRkfJIZbnGYpOzY0LVR06JQI-H6npRJIZ66Y.jpg?width=108&crop=smart&auto=webp&s=74fe2f10879839b35e770add75845056b2ae4337",
+								width: 108,
+								height: 108
+							}, {
+								url: "https://external-preview.redd.it/64IrEJJRRkfJIZbnGYpOzY0LVR06JQI-H6npRJIZ66Y.jpg?width=216&crop=smart&auto=webp&s=68c16a011a27ad8b01b81ecd61631d1960ff513d",
+								width: 216,
+								height: 216
+							}, {
+								url: "https://external-preview.redd.it/64IrEJJRRkfJIZbnGYpOzY0LVR06JQI-H6npRJIZ66Y.jpg?width=320&crop=smart&auto=webp&s=a111c0780483b668e9b258c10b9959f6714c5b16",
+								width: 320,
+								height: 320
+							}, {
+								url: "https://external-preview.redd.it/64IrEJJRRkfJIZbnGYpOzY0LVR06JQI-H6npRJIZ66Y.jpg?width=640&crop=smart&auto=webp&s=bc52ce13c785e95c306a600e6c6ee2ac4a681e62",
+								width: 640,
+								height: 640
+							}, {
+								url: "https://external-preview.redd.it/64IrEJJRRkfJIZbnGYpOzY0LVR06JQI-H6npRJIZ66Y.jpg?width=960&crop=smart&auto=webp&s=26e4a516441532bb1b8967d304218c8116594f59",
+								width: 960,
+								height: 960
+							}, {
+								url: "https://external-preview.redd.it/64IrEJJRRkfJIZbnGYpOzY0LVR06JQI-H6npRJIZ66Y.jpg?width=1080&crop=smart&auto=webp&s=5c774a9b3972346e566d5980cd29c1ef569bf16d",
+								width: 1080,
+								height: 1080
+							}]
+						},
+						preview: {
+							url: "https://external-preview.redd.it/64IrEJJRRkfJIZbnGYpOzY0LVR06JQI-H6npRJIZ66Y.jpg?auto=webp&s=3ee64cbf5893866e2c10483686fcf879477f6e29",
+							width: 2500,
+							height: 2500
+						},
+						...e
+					})
+				},
+				T = {
+					t3_1: {
+						adPromotedUserPostIds: [],
+						adSupplementaryText: null,
+						approvedAtUTC: null,
+						approvedBy: null,
+						author: "that_one_guy",
+						authorId: "t2_1234",
+						authorIsBlocked: !1,
+						awardCountsById: {},
+						id: "t3_1",
+						bannedAtUTC: null,
+						bannedBy: null,
+						belongsTo: {
+							id: "t5_1",
+							type: "subreddit"
+						},
+						contestMode: !1,
+						created: 1492205391e4,
+						crosspostParentId: null,
+						crosspostRootId: null,
+						discussionType: null,
+						distinguishType: null,
+						domain: "i.redd.it",
+						events: [],
+						flair: [],
+						ignoreReports: !1,
+						impressionId: null,
+						impressionIdStr: null,
+						isArchived: !1,
+						isApproved: !1,
+						isAuthorPremium: !1,
+						isBlank: !1,
+						isCreatedFromAdsUi: !1,
+						isCrosspostable: !0,
+						isEligibleForQASchema: !1,
+						isFollowed: !1,
+						isGildable: !0,
+						isLocked: !1,
+						isMediaOnly: !1,
+						isMeta: !1,
+						isNSFW: !1,
+						isOriginalContent: !1,
+						isPinned: !1,
+						isRemoved: !1,
+						isSpam: !1,
+						isSpoiler: !1,
+						isSponsored: !1,
+						isSurveyAd: !1,
+						isStickied: !1,
+						liveCommentsWebsocket: "wss://reddit.com/live/1",
+						isReactAllowed: !1,
+						attributionInfo: null,
+						reactedFrom: null,
+						media: {
+							type: "image",
+							content: "https://i.redd.it/iap6jbwjlosy.jpg",
+							width: 100,
+							height: 100,
+							obfuscated: null,
+							resolutions: []
+						},
+						modReports: [],
+						numComments: 5,
+						numCrossposts: 0,
+						numReports: null,
+						permalink: "https://www.reddit.com/r/listentothis/comments/6k2dyk/kerrin_connolly_nevermind_indieacousticpop_2017/",
+						postCategories: [{
+							categoryId: "c1009",
+							categoryName: "News"
+						}],
+						preview: {
+							url: "https://i.redditmedia.com/msdj41xc-LgU8OfIuLDP52FtgyyahbFAizi9mp-aBoI.jpg?s=931d28c1922e12dbf6a06a357cdf3ceb",
+							width: 480,
+							height: 360
+						},
+						previewComments: [{
+							id: "t1_1",
+							type: "top"
+						}],
+						postId: "t3_1",
+						removedBy: null,
+						removedByCategory: null,
+						score: 23,
+						isScoreHidden: !1,
+						sendReplies: !1,
+						source: null,
+						suggestedSort: null,
+						thumbnail: {
+							url: "https://b.thumbs.redditmedia.com/KNGvoTjCbwN1iYV5lkb4TfZGXX22k--3WfeijolEreo.jpg",
+							width: null,
+							height: null
+						},
+						title: "A plain post",
+						upvoteRatio: .1,
+						userReports: [],
+						viewCount: 1,
+						voteState: 0
+					},
+					t3_2: {
+						adPromotedUserPostIds: [],
+						adSupplementaryText: null,
+						approvedAtUTC: null,
+						approvedBy: null,
+						author: "that_other_chick",
+						authorId: "t2_1235",
+						authorIsBlocked: !1,
+						awardCountsById: {},
+						id: "t3_2",
+						bannedAtUTC: null,
+						bannedBy: null,
+						belongsTo: {
+							id: "t5_100",
+							type: "profile"
+						},
+						contestMode: !1,
+						created: 1492205391e4,
+						crosspostParentId: null,
+						crosspostRootId: null,
+						discussionType: null,
+						distinguishType: null,
+						domain: "i.redd.it",
+						events: [],
+						flair: [],
+						ignoreReports: !1,
+						impressionId: null,
+						impressionIdStr: null,
+						isArchived: !1,
+						isApproved: !1,
+						isAuthorPremium: !1,
+						isBlank: !1,
+						isCreatedFromAdsUi: !1,
+						isCrosspostable: !0,
+						isEligibleForQASchema: !1,
+						isFollowed: !1,
+						isGildable: !0,
+						isLocked: !1,
+						isMediaOnly: !1,
+						isMeta: !1,
+						isNSFW: !1,
+						isOriginalContent: !1,
+						isPinned: !1,
+						isRemoved: !1,
+						isSpam: !1,
+						isSpoiler: !1,
+						isSponsored: !1,
+						isSurveyAd: !1,
+						isStickied: !1,
+						isReactAllowed: !1,
+						attributionInfo: null,
+						reactedFrom: null,
+						liveCommentsWebsocket: "wss://reddit.com/live/2",
+						media: {
+							content: "https://i.redd.it/d43skac7fqsy.jpg",
+							type: "image",
+							width: 100,
+							height: 100,
+							obfuscated: null,
+							resolutions: []
+						},
+						modReports: [],
+						numComments: 5,
+						numCrossposts: 0,
+						numReports: null,
+						permalink: "https://www.reddit.com/r/listentothis/comments/6k2dyk/kerrin_connolly_nevermind_indieacousticpop_2017/",
+						postCategories: [{
+							categoryId: "c1009",
+							categoryName: "News"
+						}],
+						previewComments: [{
+							id: "t1_1",
+							type: "top"
+						}],
+						postId: "t3_2",
+						removedBy: null,
+						removedByCategory: null,
+						score: 23,
+						isScoreHidden: !1,
+						sendReplies: !1,
+						source: null,
+						suggestedSort: null,
+						thumbnail: {
+							url: "https://b.thumbs.redditmedia.com/KNGvoTjCbwN1iYV5lkb4TfZGXX22k--3WfeijolEreo.jpg",
+							width: null,
+							height: null
+						},
+						title: "Another not so plain post here.",
+						upvoteRatio: .1,
+						userReports: [],
+						viewCount: 1,
+						voteState: 1
+					},
+					t3_3: {
+						adPromotedUserPostIds: [],
+						adSupplementaryText: null,
+						approvedAtUTC: null,
+						approvedBy: null,
+						author: "person_number_three",
+						authorId: "t2_1236",
+						authorIsBlocked: !1,
+						awardCountsById: {},
+						id: "t3_3",
+						bannedAtUTC: null,
+						bannedBy: null,
+						belongsTo: {
+							id: "t5_1",
+							type: "subreddit"
+						},
+						contestMode: !1,
+						created: 1492205391e4,
+						crosspostParentId: null,
+						crosspostRootId: null,
+						discussionType: null,
+						distinguishType: null,
+						domain: "i.redd.it",
+						events: [],
+						flair: [],
+						ignoreReports: !1,
+						impressionId: null,
+						impressionIdStr: null,
+						isArchived: !1,
+						isApproved: !1,
+						isAuthorPremium: !1,
+						isBlank: !1,
+						isCreatedFromAdsUi: !1,
+						isCrosspostable: !0,
+						isEligibleForQASchema: !1,
+						isFollowed: !1,
+						isGildable: !0,
+						isLocked: !1,
+						isMediaOnly: !1,
+						isMeta: !1,
+						isNSFW: !1,
+						isOriginalContent: !1,
+						isPinned: !1,
+						isRemoved: !1,
+						isSpam: !1,
+						isSpoiler: !1,
+						isSponsored: !1,
+						isSurveyAd: !1,
+						isStickied: !1,
+						isReactAllowed: !1,
+						attributionInfo: null,
+						reactedFrom: null,
+						liveCommentsWebsocket: "wss://reddit.com/live/3",
+						media: {
+							content: "https://i.redd.it/d43skac7fqsy.jpg",
+							type: "image",
+							width: 100,
+							height: 100,
+							obfuscated: null,
+							resolutions: []
+						},
+						modReports: [],
+						numComments: 5,
+						numCrossposts: 0,
+						numReports: null,
+						permalink: "https://www.reddit.com/r/listentothis/comments/6k2dyk/kerrin_connolly_nevermind_indieacousticpop_2017/",
+						postCategories: [{
+							categoryId: "c1009",
+							categoryName: "News"
+						}],
+						preview: {
+							url: "https://i.redditmedia.com/msdj41xc-LgU8OfIuLDP52FtgyyahbFAizi9mp-aBoI.jpg?s=931d28c1922e12dbf6a06a357cdf3ceb",
+							width: 480,
+							height: 360
+						},
+						previewComments: [{
+							id: "t1_1",
+							type: "top"
+						}],
+						postId: "t3_3",
+						removedBy: null,
+						removedByCategory: null,
+						score: 23,
+						isScoreHidden: !1,
+						sendReplies: !1,
+						source: null,
+						suggestedSort: null,
+						thumbnail: {
+							url: "https://b.thumbs.redditmedia.com/KNGvoTjCbwN1iYV5lkb4TfZGXX22k--3WfeijolEreo.jpg",
+							width: null,
+							height: null
+						},
+						title: "Another plain post here.",
+						upvoteRatio: .1,
+						userReports: [],
+						viewCount: 1,
+						voteState: 1
+					},
+					t3_4: {
+						adPromotedUserPostIds: [],
+						adSupplementaryText: null,
+						approvedAtUTC: null,
+						approvedBy: null,
+						author: "this_user_is_the_best",
+						authorId: "t2_1237",
+						authorIsBlocked: !1,
+						awardCountsById: {},
+						id: "t3_4",
+						bannedAtUTC: null,
+						bannedBy: null,
+						belongsTo: {
+							id: "t5_100",
+							type: "profile"
+						},
+						contestMode: !1,
+						created: 1492205391e4,
+						crosspostParentId: null,
+						crosspostRootId: null,
+						discussionType: null,
+						distinguishType: null,
+						domain: "i.redditmedia.com",
+						events: [],
+						flair: [{
+							type: _.f.Text,
+							text: "hello world"
+						}, {
+							type: _.f.Spoiler,
+							text: "spoiler"
+						}],
+						ignoreReports: !1,
+						impressionId: null,
+						impressionIdStr: null,
+						isArchived: !1,
+						isApproved: !1,
+						isAuthorPremium: !1,
+						isBlank: !1,
+						isCreatedFromAdsUi: !1,
+						isCrosspostable: !0,
+						isEligibleForQASchema: !1,
+						isFollowed: !1,
+						isGildable: !0,
+						isLocked: !1,
+						isMediaOnly: !1,
+						isMeta: !1,
+						isNSFW: !1,
+						isOriginalContent: !1,
+						isPinned: !1,
+						isRemoved: !1,
+						isSpam: !1,
+						isSpoiler: !1,
+						isSponsored: !1,
+						isSurveyAd: !1,
+						isStickied: !1,
+						isReactAllowed: !1,
+						attributionInfo: null,
+						reactedFrom: null,
+						liveCommentsWebsocket: "wss://reddit.com/live/4",
+						media: null,
+						modReports: [],
+						numComments: 5,
+						numCrossposts: 0,
+						numReports: null,
+						permalink: "https://www.reddit.com/r/listentothis/comments/6k2dyk/kerrin_connolly_nevermind_indieacousticpop_2017/",
+						postCategories: [{
+							categoryId: "c1009",
+							categoryName: "News"
+						}],
+						preview: {
+							url: "https://i.redditmedia.com/msdj41xc-LgU8OfIuLDP52FtgyyahbFAizi9mp-aBoI.jpg?s=931d28c1922e12dbf6a06a357cdf3ceb",
+							width: 480,
+							height: 360
+						},
+						previewComments: [{
+							id: "t1_1",
+							type: "top"
+						}],
+						postId: "t3_4",
+						removedBy: null,
+						removedByCategory: null,
+						score: 300,
+						isScoreHidden: !1,
+						sendReplies: !1,
+						source: {
+							displayText: "foobar.com",
+							url: "http://foobar.com",
+							outboundUrl: "http://foobar.com/foobar"
+						},
+						suggestedSort: null,
+						thumbnail: {
+							url: "https://b.thumbs.redditmedia.com/KNGvoTjCbwN1iYV5lkb4TfZGXX22k--3WfeijolEreo.jpg",
+							width: null,
+							height: null
+						},
+						title: "Hello world one two three four five six seven eight. See? I can count!",
+						upvoteRatio: .1,
+						userReports: [],
+						viewCount: 1,
+						voteState: 0
+					},
+					t3_5: {
+						adPromotedUserPostIds: [],
+						adSupplementaryText: null,
+						approvedAtUTC: null,
+						approvedBy: null,
+						author: "yet_another_cool_dude",
+						authorId: "t2_1238",
+						authorIsBlocked: !1,
+						awardCountsById: {},
+						id: "t3_5",
+						bannedAtUTC: null,
+						bannedBy: null,
+						belongsTo: {
+							id: "t5_1",
+							type: "subreddit"
+						},
+						contestMode: !1,
+						created: 1492205391e4,
+						crosspostParentId: null,
+						crosspostRootId: null,
+						discussionType: null,
+						distinguishType: null,
+						domain: "self.listentothis",
+						events: [],
+						flair: [{
+							type: _.f.Text,
+							text: "hello world"
+						}, {
+							type: _.f.Spoiler,
+							text: "spoiler"
+						}],
+						ignoreReports: !1,
+						impressionId: null,
+						impressionIdStr: null,
+						isArchived: !1,
+						isApproved: !1,
+						isAuthorPremium: !1,
+						isBlank: !1,
+						isCreatedFromAdsUi: !1,
+						isCrosspostable: !0,
+						isEligibleForQASchema: !1,
+						isFollowed: !1,
+						isGildable: !0,
+						isLocked: !1,
+						isMediaOnly: !1,
+						isMeta: !1,
+						isNSFW: !1,
+						isOriginalContent: !1,
+						isPinned: !1,
+						isRemoved: !1,
+						isSpam: !1,
+						isSpoiler: !1,
+						isSponsored: !1,
+						isSurveyAd: !1,
+						isStickied: !1,
+						isReactAllowed: !1,
+						attributionInfo: null,
+						reactedFrom: null,
+						liveCommentsWebsocket: "wss://reddit.com/live/5",
+						media: {
+							type: "text",
+							rteMode: S.i.RICH_TEXT,
+							markdownContent: "",
+							content: "",
+							obfuscated: null
+						},
+						modReports: [],
+						numComments: 5,
+						numCrossposts: 0,
+						numReports: null,
+						permalink: "https://www.reddit.com/r/listentothis/comments/6k2dyk/kerrin_connolly_nevermind_indieacousticpop_2017/",
+						preview: {
+							url: "https://i.redditmedia.com/msdj41xc-LgU8OfIuLDP52FtgyyahbFAizi9mp-aBoI.jpg?s=931d28c1922e12dbf6a06a357cdf3ceb",
+							width: 480,
+							height: 360
+						},
+						postCategories: [{
+							categoryId: "c1009",
+							categoryName: "News"
+						}],
+						previewComments: [{
+							id: "t1_1",
+							type: "top"
+						}],
+						postId: "t3_5",
+						removedBy: null,
+						removedByCategory: null,
+						score: 300,
+						isScoreHidden: !1,
+						sendReplies: !1,
+						source: null,
+						suggestedSort: null,
+						thumbnail: {
+							url: "https://b.thumbs.redditmedia.com/KNGvoTjCbwN1iYV5lkb4TfZGXX22k--3WfeijolEreo.jpg",
+							width: null,
+							height: null
+						},
+						title: "This is an interesting post title",
+						upvoteRatio: .1,
+						userReports: [],
+						viewCount: 1,
+						voteState: 0
+					},
+					t3_6: {
+						adPromotedUserPostIds: [],
+						adSupplementaryText: null,
+						approvedAtUTC: null,
+						approvedBy: null,
+						author: "spez",
+						authorId: "t2_1239",
+						authorIsBlocked: !1,
+						awardCountsById: {},
+						id: "t3_6",
+						bannedAtUTC: null,
+						bannedBy: null,
+						belongsTo: {
+							id: "t5_100",
+							type: "profile"
+						},
+						contestMode: !1,
+						created: 1492205391e4,
+						crosspostParentId: null,
+						crosspostRootId: null,
+						discussionType: null,
+						distinguishType: null,
+						domain: "self.listentothis",
+						events: [],
+						flair: [{
+							type: _.f.Text,
+							text: "hello world"
+						}, {
+							type: _.f.Spoiler,
+							text: "spoiler"
+						}],
+						ignoreReports: !1,
+						impressionId: null,
+						impressionIdStr: null,
+						isArchived: !1,
+						isApproved: !1,
+						isAuthorPremium: !1,
+						isBlank: !1,
+						isCreatedFromAdsUi: !1,
+						isCrosspostable: !0,
+						isEligibleForQASchema: !1,
+						isFollowed: !1,
+						isGildable: !0,
+						isLocked: !1,
+						isMediaOnly: !1,
+						isMeta: !1,
+						isNSFW: !1,
+						isOriginalContent: !1,
+						isPinned: !1,
+						isRemoved: !1,
+						isSpam: !1,
+						isSpoiler: !1,
+						isSponsored: !1,
+						isSurveyAd: !1,
+						isReactAllowed: !1,
+						attributionInfo: null,
+						reactedFrom: null,
+						isStickied: !1,
+						liveCommentsWebsocket: "wss://reddit.com/live/6",
+						media: {
+							type: "text",
+							rteMode: S.i.RICH_TEXT,
+							markdownContent: "",
+							content: "",
+							obfuscated: null
+						},
+						modReports: [],
+						numComments: 5,
+						numCrossposts: 0,
+						numReports: null,
+						permalink: "https://www.reddit.com/r/listentothis/comments/6k2dyk/kerrin_connolly_nevermind_indieacousticpop_2017/",
+						postCategories: [{
+							categoryId: "c1009",
+							categoryName: "News"
+						}],
+						preview: {
+							url: "https://i.redditmedia.com/msdj41xc-LgU8OfIuLDP52FtgyyahbFAizi9mp-aBoI.jpg?s=931d28c1922e12dbf6a06a357cdf3ceb",
+							width: 480,
+							height: 360
+						},
+						previewComments: [{
+							id: "t1_1",
+							type: "top"
+						}],
+						postId: "t3_6",
+						removedBy: null,
+						removedByCategory: null,
+						score: 300,
+						isScoreHidden: !1,
+						sendReplies: !1,
+						source: null,
+						suggestedSort: null,
+						thumbnail: {
+							url: "https://b.thumbs.redditmedia.com/KNGvoTjCbwN1iYV5lkb4TfZGXX22k--3WfeijolEreo.jpg",
+							width: null,
+							height: null
+						},
+						title: "This is an extremely interesting post title",
+						upvoteRatio: .1,
+						userReports: [],
+						viewCount: 1,
+						voteState: 0
+					},
+					abc12345: {
+						adPromotedUserPostIds: [],
+						adSupplementaryText: null,
+						approvedAtUTC: null,
+						approvedBy: null,
+						author: "spez",
+						authorId: "t2_1240",
+						authorIsBlocked: !1,
+						awardCountsById: {},
+						id: "t3_6",
+						bannedAtUTC: null,
+						bannedBy: null,
+						belongsTo: {
+							id: "t5_100",
+							type: "profile"
+						},
+						contestMode: !1,
+						created: 1492205391e4,
+						crosspostParentId: null,
+						crosspostRootId: null,
+						discussionType: null,
+						distinguishType: null,
+						domain: "i.redditmedia.com",
+						events: [{
+							type: 1,
+							url: "https://www.reddit.com/i.gif"
+						}],
+						flair: [{
+							type: _.f.Text,
+							text: "hello world"
+						}, {
+							type: _.f.Spoiler,
+							text: "spoiler"
+						}],
+						ignoreReports: !1,
+						impressionId: null,
+						impressionIdStr: null,
+						isArchived: !1,
+						isApproved: !1,
+						isAuthorPremium: !1,
+						isBlank: !0,
+						isCreatedFromAdsUi: !1,
+						isCrosspostable: !0,
+						isEligibleForQASchema: !1,
+						isFollowed: !1,
+						isGildable: !0,
+						isLocked: !1,
+						isMediaOnly: !1,
+						isMeta: !1,
+						isNSFW: !1,
+						isOriginalContent: !1,
+						isPinned: !1,
+						isRemoved: !1,
+						isSpam: !1,
+						isSpoiler: !1,
+						isSponsored: !1,
+						isSurveyAd: !1,
+						isStickied: !1,
+						isReactAllowed: !1,
+						attributionInfo: null,
+						reactedFrom: null,
+						liveCommentsWebsocket: "wss://reddit.com/live/6",
+						media: {
+							type: "text",
+							rteMode: S.i.RICH_TEXT,
+							markdownContent: "",
+							content: "",
+							obfuscated: null
+						},
+						modReports: [],
+						numComments: 5,
+						numCrossposts: 0,
+						numReports: null,
+						permalink: "https://www.reddit.com/r/listentothis/comments/6k2dyk/kerrin_connolly_nevermind_indieacousticpop_2017/",
+						postCategories: [{
+							categoryId: "c1009",
+							categoryName: "News"
+						}],
+						preview: {
+							url: "https://i.redditmedia.com/msdj41xc-LgU8OfIuLDP52FtgyyahbFAizi9mp-aBoI.jpg?s=931d28c1922e12dbf6a06a357cdf3ceb",
+							width: 480,
+							height: 360
+						},
+						previewComments: [{
+							id: "t1_1",
+							type: "top"
+						}],
+						postId: "t3_3",
+						removedBy: null,
+						removedByCategory: null,
+						score: 300,
+						isScoreHidden: !1,
+						sendReplies: !1,
+						source: null,
+						suggestedSort: null,
+						thumbnail: {
+							url: "https://b.thumbs.redditmedia.com/KNGvoTjCbwN1iYV5lkb4TfZGXX22k--3WfeijolEreo.jpg",
+							width: null,
+							height: null
+						},
+						title: "This is an extremely interesting post title",
+						upvoteRatio: .1,
+						userReports: [],
+						viewCount: 1,
+						voteState: 0
+					}
+				},
+				L = (P({
+					authorIsBlocked: !0,
+					media: {
+						type: "text",
+						rteMode: S.i.RICH_TEXT,
+						markdownContent: "",
+						content: "This is content in a post.",
+						obfuscated: null
+					}
+				}), N({
+					id: "imgad"
+				}), N({
+					id: "textad",
+					media: {
+						obfuscated: null,
+						type: "rtjson",
+						richtextContent: {
+							document: [{
+								c: [{
+									e: "text",
+									t: "nothing cool"
+								}],
+								e: "par"
+							}]
+						},
+						mediaMetadata: null,
+						rteMode: S.i.RICH_TEXT,
+						markdownContent: "",
+						content: ""
+					}
+				}), N({
+					id: "videoad",
+					media: {
+						obfuscated: null,
+						hlsUrl: "https://v.redd.it/xh8noamy26u61/HLSPlaylist.m3u8?a=1668372772%2CNmE4NjRhYTViN2ZiMjA4ZDhiYjc3MTk5ZGM2MWFjMDczZmE0YjdkYTRjMjg1NGQ2YTQxODRhZTU0ODI5M2M1Yg%3D%3D&v=1&f=sd",
+						dashUrl: "https://v.redd.it/xh8noamy26u61/DASHPlaylist.mpd?a=1668372772%2CNmFlZWE0ZGEzMTUwNGRjZmIwYzZlMTg5MGIwMWQyYzNkYWIxMzlkZjI0MjM5NTI3ZWU0NDE5MjFlODU0MGMyZg%3D%3D&v=1&f=sd",
+						isGif: !1,
+						scrubberThumbSource: "https://v.redd.it/xh8noamy26u61/DASH_96.mp4",
+						posterUrl: "https://external-preview.redd.it/Ut7hFtpA1zpYDYCHFUf8bINJYM18bHnRP2dw-TIv0PM.png?width=640&crop=smart&format=pjpg&auto=webp&s=93082a99554710c20cb08f2d262e034585e62726",
+						width: 623,
+						height: 1080,
+						type: "video"
+					},
+					preview: {
+						url: "https://external-preview.redd.it/Ut7hFtpA1zpYDYCHFUf8bINJYM18bHnRP2dw-TIv0PM.png?format=pjpg&auto=webp&s=5941c9ac55192ffd2aeb6e3b4880e201407456a1",
+						width: 2160,
+						height: 3744
+					},
+					thumbnail: {
+						url: "https://a.thumbs.redditmedia.com/c8p4sCbAr1bLPEzgYZe80d20EV7Eqwdabx4ScFDqzr0.jpg",
+						width: 140,
+						height: 140
+					}
+				}), {
+					type: "gallery",
+					obfuscated: null,
+					gallery: {
+						items: [{
+							mediaId: "4w6d6hzktrx61",
+							callToAction: "Download",
+							displayUrl: "www.google.com",
+							adEvents: [{
+								url: "https://alb.reddit.com/i.gif",
+								type: 15
+							}],
+							outboundUrl: "https://alb.reddit.com/cr",
+							id: 43313568
+						}, {
+							mediaId: "nzaab70ltrx61",
+							displayUrl: "www.time.gov",
+							adEvents: [{
+								url: "https://alb.reddit.com/i.gif",
+								type: 15
+							}],
+							caption: "no caption",
+							outboundUrl: "https://alb.reddit.com/cr",
+							id: 43313569
+						}, {
+							mediaId: "irmwg59mtrx61",
+							displayUrl: "https://alb.reddit.com/cr",
+							callToAction: "Apply Now",
+							adEvents: [{
+								url: "https://alb.reddit.com/i.gif",
+								type: 15
+							}],
+							caption: "Something else",
+							outboundUrl: "https://alb.reddit.com/cr",
+							id: 43313570
+						}]
+					},
+					crossPostParentId: null,
+					crossPostRootId: null,
+					numCrossposts: 0,
+					isCrosspostable: !1
+				}),
+				R = (N({
+					id: "galleryad",
+					media: L
+				}), N({
+					id: "shoppingad",
+					subcaption: "$50.00",
+					media: L
+				}), N({
+					id: "supplementarytextad",
+					adSupplementaryText: {
+						document: [{
+							c: [{
+								e: "text",
+								t: "Testing markdown with some "
+							}, {
+								e: "link",
+								t: "medication info ",
+								u: "https://samsung.com"
+							}, {
+								e: "text",
+								t: "and multiple lines of markdown text "
+							}, {
+								e: "link",
+								t: "and several links.",
+								u: "https://google.com"
+							}],
+							e: "par"
+						}]
+					}
+				}), Object(j.a)((e, t) => {
 					let {
 						listingKey: s
 					} = t;
 					const n = e.posts.models;
-					return R(e, {
+					return M(e, {
 						listingKey: s
 					}).filter(e => {
 						if (Object(E.a)(e)) return !0; {
@@ -6151,70 +6413,70 @@
 							return t && !t.hidden
 						}
 					})
-				}),
-				R = Object(w.a)((e, t) => {
+				})),
+				M = Object(j.a)((e, t) => {
 					let {
 						listingKey: s
 					} = t;
 					const n = e.pages.profileOverview.chrono.ids[s];
 					return n ? [...n] : []
 				}),
-				M = Object(w.a)((e, t) => {
+				A = Object(j.a)((e, t) => {
 					let {
 						listingKey: s
 					} = t;
-					return L(e, {
+					return R(e, {
 						listingKey: s
 					}).reduce((t, s) => {
 						const n = Object(E.a)(s) ? e.features.comments.models[s].postId : s;
 						return t[s] = n, t
 					}, {})
 				}),
-				A = (Object(w.a)((e, t) => {
+				F = (Object(j.a)((e, t) => {
 					let {
 						listingKey: s
 					} = t;
 					const n = e.posts.models;
-					return A(e, {
+					return F(e, {
 						listingKey: s
 					}).filter(e => {
 						const t = n[e];
 						return t && !t.hidden
 					})
-				}), Object(w.a)((e, t) => {
+				}), Object(j.a)((e, t) => {
 					let {
 						listingKey: s
 					} = t;
-					return L(e, {
+					return R(e, {
 						listingKey: s
 					}).map(t => Object(E.a)(t) ? e.features.comments.models[t].postId : t)
 				})),
-				F = Object(w.a)((e, t) => {
+				B = Object(j.a)((e, t) => {
 					let {
 						listingKey: s
 					} = t;
 					const n = e.posts.models,
-						r = A(e, {
+						r = F(e, {
 							listingKey: s
 						}),
 						o = {};
 					return r.forEach(e => o[e] = n[e]), o
 				}),
-				B = Object(w.a)((e, t) => {
+				U = Object(j.a)((e, t) => {
 					let {
 						listingKey: s
 					} = t;
 					const n = e.features.comments.models,
-						r = L(e, {
+						r = R(e, {
 							listingKey: s
 						}),
 						o = {};
 					return r.forEach(e => !!Object(E.a)(e) && (o[e] = n[e])), o
 				});
-			var U = s("./src/reddit/selectors/subreddit.ts"),
-				G = s("./src/reddit/selectors/tracking.ts"),
+			var G = s("./src/reddit/selectors/subreddit.ts"),
+				D = s("./src/reddit/selectors/tracking.ts"),
 				W = s("./src/reddit/selectors/user.ts");
-			const D = (e, t) => (e, t, s) => Object(E.a)(e) ? 120 : 47,
+			const H = (e, t) => (e, t, s) => Object(E.a)(e) ? 120 : 47,
 				V = (Object(O.u)(), {
 					apiError: (e, t) => {
 						let {
@@ -6236,49 +6498,49 @@
 						} = t;
 						return e.pages.profileOverview.chrono.loadMore[s]
 					},
-					subredditsById: U.fb,
-					viewportDataLoaded: G.a,
-					commentsById: B,
-					itemIds: L,
-					itemIdToPostId: M,
-					postsById: F,
-					estimateItemHeight: D
+					subredditsById: G.fb,
+					viewportDataLoaded: D.a,
+					commentsById: U,
+					itemIds: R,
+					itemIdToPostId: A,
+					postsById: B,
+					estimateItemHeight: H
 				}),
-				H = Object(i.c)(V);
-			Object(o.b)(H, (e, t) => ({
+				z = Object(i.c)(V);
+			Object(o.b)(z, (e, t) => ({
 				onBottomViewed: (t, s) => e(C.c(t, s)),
 				openPost: t => {
 					e(x.K(t))
 				},
 				trackOnPostEnteredViewport: (t, s) => {
-					Object(k.a)(t) && e(x.N(t))
+					Object(w.a)(t) && e(x.N(t))
 				},
 				trackOnPostExitedViewport: (t, s, n) => {
-					Object(k.a)(t) && e(x.O(t, n))
+					Object(w.a)(t) && e(x.O(t, n))
 				},
 				fireAdPixelsOfType: f.a
 			}), (e, t, s) => ({
 				...e,
 				...t,
 				...s,
-				postClickEventFactory: (e, t) => Object(j.k)(e, t)
+				postClickEventFactory: (e, t) => Object(k.k)(e, t)
 			}));
 			var K = s("./src/reddit/featureFlags/index.ts"),
-				z = s("./src/reddit/actions/pages/profilePrivate/constants.ts"),
-				q = s("./src/reddit/models/Profile/index.ts");
+				q = s("./src/reddit/actions/pages/profilePrivate/constants.ts"),
+				J = s("./src/reddit/models/Profile/index.ts");
 			const Q = (e, t) => {
 					let {
 						listingKey: s
 					} = t;
 					return e.profilePrivatePage.api.pending[s]
 				},
-				J = (e, t) => {
+				Y = (e, t) => {
 					let {
 						listingKey: s
 					} = t;
 					return e.profilePrivatePage.api.error[s]
 				},
-				Z = Object(w.a)((e, t) => {
+				Z = Object(j.a)((e, t) => {
 					let {
 						listingKey: s
 					} = t;
@@ -6288,9 +6550,9 @@
 					}, {})
 				}),
 				X = Object(O.u)(),
-				Y = Object(O.u)(),
-				$ = {
-					apiError: J,
+				$ = Object(O.u)(),
+				ee = {
+					apiError: Y,
 					apiPending: Q,
 					layout: O.S,
 					loadMore: (e, t) => {
@@ -6301,38 +6563,38 @@
 						const n = e.profilePrivatePage.ids[s];
 						return {
 							token: n[n.length - 1],
-							dist: z.h
+							dist: q.h
 						}
 					},
 					subredditsById: e => e.subreddits.models,
 					postsById: e => e.posts.models,
-					viewportDataLoaded: (e, t) => !Q(e, t) && !J(e, t)
+					viewportDataLoaded: (e, t) => !Q(e, t) && !Y(e, t)
 				},
-				ee = Object(i.c)({
-					...$,
+				te = Object(i.c)({
+					...ee,
 					currentUser: W.k,
 					commentsById: e => e.features.comments.models,
 					itemIds: (e, t) => {
 						let {
 							listingKey: s
 						} = t;
-						return -1 === s.indexOf(q.b.Saved) && -1 === s.indexOf(q.b.ReceivedGildings) && -1 === s.indexOf(q.b.GivenGildings) ? [] : e.profilePrivatePage.ids[s] || []
+						return -1 === s.indexOf(J.b.Saved) && -1 === s.indexOf(J.b.ReceivedGildings) && -1 === s.indexOf(J.b.GivenGildings) ? [] : e.profilePrivatePage.ids[s] || []
 					},
 					itemIdToPostId: Z,
-					estimateItemHeight: D
+					estimateItemHeight: H
 				}),
-				te = Object(i.c)({
-					...$,
+				se = Object(i.c)({
+					...ee,
 					measureScrollFPS: K.d.measureScrollFPS,
 					postIds: (e, t) => {
 						let {
 							listingKey: s
 						} = t;
-						return s.indexOf(q.b.Saved) > -1 || s.indexOf(q.b.ReceivedGildings) > -1 || s.indexOf(q.b.GivenGildings) > -1 ? [] : e.profilePrivatePage.ids[s] || []
+						return s.indexOf(J.b.Saved) > -1 || s.indexOf(J.b.ReceivedGildings) > -1 || s.indexOf(J.b.GivenGildings) > -1 ? [] : e.profilePrivatePage.ids[s] || []
 					},
 					postListPlaceholderComponent: () => y.a
 				}),
-				se = e => ({
+				ne = e => ({
 					onBottomViewed: f.a,
 					openPost: t => {
 						e(x.K(t))
@@ -6342,14 +6604,14 @@
 						e(x.y(t, s))
 					}
 				}),
-				ne = Object(o.b)(ee, se, (e, t, s) => ({
+				re = Object(o.b)(te, ne, (e, t, s) => ({
 					...e,
 					...t,
 					...s,
-					postClickEventFactory: (e, t) => Object(j.k)(e, t)
+					postClickEventFactory: (e, t) => Object(k.k)(e, t)
 				})),
-				re = Object(o.b)(te, e => ({
-					...se(e),
+				oe = Object(o.b)(se, e => ({
+					...ne(e),
 					onFirstPostChanged: f.a,
 					adBrandSafetyStatusReceived: f.a,
 					trackOnPostExitedViewport: f.a
@@ -6357,28 +6619,28 @@
 					...e,
 					...t,
 					...s,
-					postClickEventFactory: (e, t) => Object(j.k)(e, t),
+					postClickEventFactory: (e, t) => Object(k.k)(e, t),
 					postComponentForLayout: g.b
 				}));
-			var oe = s("./src/reddit/helpers/makeProfileListingKey/index.ts"),
-				ie = s("./src/reddit/helpers/trackers/screenview.ts"),
-				de = s("./src/reddit/layout/page/Listing/index.tsx"),
-				ae = s("./src/reddit/pages/ProfilePrivate/index.m.less"),
-				ce = s.n(ae);
-			const le = Object(i.c)({
+			var ie = s("./src/reddit/helpers/makeProfileListingKey/index.ts"),
+				de = s("./src/reddit/helpers/trackers/screenview.ts"),
+				ae = s("./src/reddit/layout/page/Listing/index.tsx"),
+				ce = s("./src/reddit/pages/ProfilePrivate/index.m.less"),
+				le = s.n(ce);
+			const me = Object(i.c)({
 					currentUser: W.k
 				}),
-				me = Object(o.b)(le, (e, t) => ({
+				ue = Object(o.b)(me, (e, t) => ({
 					onLoadMore: () => e(Object(d.moreProfilePrivateRequested)(t.match.params.listingType))
 				})),
-				ue = (e => Object(v.c)(X(ne(e))))(u.a),
-				pe = (e => Object(v.c)(Y(re(e))))(m.a);
-			class be extends r.a.Component {
+				pe = (e => Object(v.c)(X(re(e))))(u.a),
+				be = (e => Object(v.c)($(oe(e))))(m.a);
+			class he extends r.a.Component {
 				constructor() {
 					super(...arguments), this.onLoadMore = () => this.props.onLoadMore()
 				}
 				renderNoPosts(e) {
-					const t = q.a[e]();
+					const t = J.a[e]();
 					return () => r.a.createElement(a.d, {
 						text: t
 					})
@@ -6392,20 +6654,20 @@
 								profileName: s
 							}
 						}
-					} = this.props, n = s.toLowerCase(), o = Object(oe.c)(n, t);
-					return e && e.displayText && e.displayText.toLowerCase() === n ? t === q.b.Saved || t === q.b.ReceivedGildings || t === q.b.GivenGildings ? r.a.createElement(ue, {
-						className: ce.a.mixedList,
+					} = this.props, n = s.toLowerCase(), o = Object(ie.c)(n, t);
+					return e && e.displayText && e.displayText.toLowerCase() === n ? t === J.b.Saved || t === J.b.ReceivedGildings || t === J.b.GivenGildings ? r.a.createElement(pe, {
+						className: le.a.mixedList,
 						itemComponent: l.a,
 						listingKey: o,
 						noPostsComponent: this.renderNoPosts(t),
 						listingName: n,
-						listingViewed: Object(ie.s)(o),
+						listingViewed: Object(de.s)(o),
 						onLoadMore: this.onLoadMore
-					}) : r.a.createElement(pe, {
+					}) : r.a.createElement(be, {
 						listingKey: o,
 						noPostsComponent: this.renderNoPosts(t),
 						listingName: n,
-						listingViewed: Object(ie.s)(o),
+						listingViewed: Object(de.s)(o),
 						onLoadMore: this.onLoadMore
 					}) : r.a.createElement(a.a, null)
 				}
@@ -6413,7 +6675,7 @@
 					const {
 						profileName: e
 					} = this.props.match.params;
-					return r.a.createElement(de.a, {
+					return r.a.createElement(ae.a, {
 						fitPageToContent: !0,
 						contentNavBar: r.a.createElement(p.a, {
 							profileName: e
@@ -6425,7 +6687,7 @@
 					})
 				}
 			}
-			t.default = me(be)
+			t.default = ue(he)
 		},
 		"./src/reddit/selectors/experiments/d2xPdpSideRailRecs.ts": function(e, t, s) {
 			"use strict";
@@ -6539,4 +6801,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfilePrivate.7cafea3206d6f611e752.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfilePrivate.38829177db7750e0cf0a.js.map
