@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfileComments.5e706dbd7e3fc81e63d3.js
-// Retrieved at 10/19/2022, 3:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfileComments.8cb5e6012003c8289e53.js
+// Retrieved at 10/20/2022, 9:40:06 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfileComments"], {
 		"./node_modules/linkify-it/index.js": function(e, t, s) {
@@ -725,7 +725,7 @@
 					} = Ke,
 					[Je, $e] = Object(n.useState)(!1),
 					Ye = Object(n.useCallback)(() => {
-						$e(!Je), Object(te.Mb)(), Le(Object(re.d)(ge))
+						$e(!Je), Object(te.Ob)(), Le(Object(re.d)(ge))
 					}, [Je, ge, Le]);
 				let Xe = r.a.createElement(Q.a, {
 					className: le.a.classicThumbnail,
@@ -5998,10 +5998,10 @@
 				r = s("./src/reddit/constants/experiments.ts"),
 				o = s("./src/reddit/helpers/chooseVariant/index.ts");
 			const i = Object(n.a)(e => Object(o.c)(e, {
-					experimentName: r.hg,
+					experimentName: r.ig,
 					experimentEligibilitySelector: o.a
 				}), e => e),
-				a = Object(n.a)(i, e => e === r.Yf)
+				a = Object(n.a)(i, e => e === r.Zf)
 		},
 		"./src/redditGQL/operations/CreateLiveAudioRoomOnProfile.json": function(e) {
 			e.exports = JSON.parse('{"id":"e35a47c6aa21"}')
@@ -6032,4 +6032,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileComments.5e706dbd7e3fc81e63d3.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileComments.8cb5e6012003c8289e53.js.map

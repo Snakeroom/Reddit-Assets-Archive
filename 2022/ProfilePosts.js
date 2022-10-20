@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfilePosts.27432d3c9a88e16a2fee.js
-// Retrieved at 10/19/2022, 3:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfilePosts.e775976580d79ec60f06.js
+// Retrieved at 10/20/2022, 9:40:06 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfilePosts"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -1235,7 +1235,7 @@
 						const n = {
 							includeIdentity: _,
 							includeModerated: v,
-							recentPostIds: Object(L.N)(null == g ? void 0 : g.id).reverse()
+							recentPostIds: Object(L.P)(null == g ? void 0 : g.id).reverse()
 						};
 						y = await ((e, t) => Object(d.a)(e, {
 							...p,
@@ -4859,12 +4859,12 @@
 						rtJsonElementProps: o
 					});
 					switch (i) {
-						case b.Vf.SmIcon:
+						case b.Wf.SmIcon:
 							return s.a.createElement(p, {
 								subredditName: r,
 								rtJsonElementProps: o
 							});
-						case b.Vf.SmIconHc:
+						case b.Wf.SmIconHc:
 							return s.a.createElement(p, {
 								subredditName: r,
 								isHoverable: !0,
@@ -6194,7 +6194,7 @@
 				constructor(e) {
 					super(e), this.onStorage = () => {
 						this.setState({
-							showPostStatsUnit: Object(w.K)() <= 2
+							showPostStatsUnit: Object(w.L)() <= 2
 						})
 					}, this.getInjectChildren = () => {
 						const e = {};
@@ -6211,7 +6211,7 @@
 				}
 				componentDidMount() {
 					window.addEventListener("storage", this.onStorage), this.setState({
-						showPostStatsUnit: Object(w.K)() <= 2
+						showPostStatsUnit: Object(w.L)() <= 2
 					}), this.props.isProfileNSFW && !this.props.isOwnProfile && this.props.nsfwBlockingExperiment === P.a.Blurred && this.props.openNsfwModal()
 				}
 				componentWillUnmount() {
@@ -6312,7 +6312,7 @@
 						experimentEligibilitySelector: i.Q,
 						experimentName: r.vd
 					});
-					return !(!t || Object(r.sg)(t))
+					return !(!t || Object(r.tg)(t))
 				},
 				a = e => {
 					return Object(s.c)(e, {
@@ -6451,12 +6451,12 @@
 				c = e => {
 					return Object(i.c)(e, {
 						experimentEligibilitySelector: a,
-						experimentName: r.Pf
+						experimentName: r.Qf
 					}) || ""
 				},
 				d = e => {
 					const t = c(e);
-					return t === r.Vf.SmIcon || t === r.Vf.SmIconHc
+					return t === r.Wf.SmIcon || t === r.Wf.SmIconHc
 				},
 				l = (e, t) => {
 					let {
@@ -6506,4 +6506,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfilePosts.27432d3c9a88e16a2fee.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfilePosts.e775976580d79ec60f06.js.map

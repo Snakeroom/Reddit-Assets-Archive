@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CommentsPageNativeAd.3ffff31507811c6e18a0.js
-// Retrieved at 10/19/2022, 3:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CommentsPageNativeAd.8ad7bac39376cf12ff0b.js
+// Retrieved at 10/20/2022, 9:40:06 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CommentsPageNativeAd"], {
 		"./src/reddit/components/BlankPost/index.tsx": function(e, t, s) {
@@ -201,11 +201,11 @@
 					}))
 				},
 				B = s("./src/reddit/connectors/ClassicPost/index.tsx"),
-				z = s("./src/reddit/helpers/path/index.ts"),
-				Z = s("./src/reddit/selectors/profile.ts");
+				Z = s("./src/reddit/helpers/path/index.ts"),
+				z = s("./src/reddit/selectors/profile.ts");
 			const G = Object(n.b)(() => Object(d.c)({
 				iconUrl: (e, t) => {
-					const s = Object(Z.k)(e, {
+					const s = Object(z.k)(e, {
 						profileName: t.post.author
 					});
 					if (s && s.icon) return s.icon.url
@@ -322,7 +322,7 @@
 						rel: "nofollow",
 						"data-click-id": "comments",
 						"data-test-id": j.a,
-						to: this.props.isOverlay ? Object(u.a)(p.permalink, !0) : Object(z.b)(p.permalink),
+						to: this.props.isOverlay ? Object(u.a)(p.permalink, !0) : Object(Z.b)(p.permalink),
 						onClick: this.props.onClick
 					}, a.fbt._("Join the conversation", null, {
 						hk: "45BFWV"
@@ -440,11 +440,11 @@
 				r = s("./src/reddit/constants/experiments.ts"),
 				o = s("./src/reddit/helpers/chooseVariant/index.ts");
 			const n = Object(a.a)(e => Object(o.c)(e, {
-					experimentName: r.hg,
+					experimentName: r.ig,
 					experimentEligibilitySelector: o.a
 				}), e => e),
-				i = Object(a.a)(n, e => e === r.Yf)
+				i = Object(a.a)(n, e => e === r.Zf)
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommentsPageNativeAd.3ffff31507811c6e18a0.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommentsPageNativeAd.8ad7bac39376cf12ff0b.js.map

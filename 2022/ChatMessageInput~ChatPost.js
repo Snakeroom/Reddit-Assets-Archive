@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ChatMessageInput~ChatPost.077d61ab12288dbb9807.js
-// Retrieved at 10/19/2022, 3:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ChatMessageInput~ChatPost.03771a9475b964a847c5.js
+// Retrieved at 10/20/2022, 9:40:06 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ChatMessageInput~ChatPost"], {
 		"./node_modules/lodash/_baseReduce.js": function(e, t) {
@@ -979,12 +979,12 @@
 					e.persist(), R(e)
 				}
 
-				function P(e) {
+				function H(e) {
 					var t;
 					(a || F(e), c) || (t = e.timeStamp, S(Object(u.A)(p, t)))
 				}
 
-				function H(e) {
+				function P(e) {
 					S(Object(u.q)(p, e.timeStamp))
 				}
 
@@ -1003,7 +1003,7 @@
 				}
 
 				function A(e) {
-					s || P(e), a || F(e), S(Object(u.C)(p))
+					s || H(e), a || F(e), S(Object(u.C)(p))
 				}
 
 				function U() {
@@ -1019,8 +1019,8 @@
 						key: p,
 						loop: !0,
 						onBufferingChange: M,
-						onLoadStart: H,
-						onLoadedData: P,
+						onLoadStart: P,
+						onLoadedData: H,
 						onLoadedMetadata: F,
 						onPause: B,
 						onPlaying: A,
@@ -1773,9 +1773,9 @@
 			})), n.d(t, "f", (function() {
 				return R
 			})), n.d(t, "h", (function() {
-				return P
-			})), n.d(t, "g", (function() {
 				return H
+			})), n.d(t, "g", (function() {
+				return P
 			})), n.d(t, "i", (function() {
 				return F
 			})), n.d(t, "e", (function() {
@@ -1937,12 +1937,12 @@
 						case m.p:
 							return R(e, t, n, s, r);
 						case m.v:
-							return H(e, t, n, s, r);
+							return P(e, t, n, s, r);
 						case m.A:
-							return P(e, t, n, s, r)
+							return H(e, t, n, s, r)
 					}
 				},
-				P = (e, t, n, s, r) => {
+				H = (e, t, n, s, r) => {
 					const a = e.c,
 						o = e.h,
 						d = a.length,
@@ -1984,7 +1984,7 @@
 						key: s
 					}, i.a.createElement("thead", null, i.a.createElement(c.t, null, u)), i.a.createElement("tbody", null, m))
 				},
-				H = (e, t, n, s, r) => {
+				P = (e, t, n, s, r) => {
 					if (!e.c || !e.c.length) return (e => i.a.createElement(c.j, {
 						key: e
 					}, i.a.createElement("br", null)))(s);
@@ -2067,18 +2067,18 @@
 						f: n,
 						t: r
 					} = e, a = [];
-					if (!n) return W(0, r, t);
+					if (!n) return V(0, r, t);
 					const o = Object(s.a)(r);
 					let i = 0,
 						c = 0;
 					const d = n.length;
 					for (; i < d; i++) {
 						const [e, t, s] = n[i], d = t + s, l = o[t], u = o[d] - l;
-						l > c && a.push(W(0, r.substr(c, l - c), `between${i}`)), a.push(W(e, r.substr(l, u), i)), c = l + u
+						l > c && a.push(V(0, r.substr(c, l - c), `between${i}`)), a.push(V(e, r.substr(l, u), i)), c = l + u
 					}
-					return c < r.length && a.push(W(0, r.substr(c), `remaining${i}`)), a
+					return c < r.length && a.push(V(0, r.substr(c), `remaining${i}`)), a
 				},
-				V = {
+				W = {
 					[m.j.monospace]: c.h,
 					[m.j.bold]: c.b,
 					[m.j.italic]: c.f,
@@ -2087,9 +2087,9 @@
 					[m.j.subscript]: c.l,
 					[m.j.superscript]: c.m
 				},
-				W = (e, t, n) => {
+				V = (e, t, n) => {
 					let s = t;
-					return s = a()(V, (t, s, r) => e & parseInt(r, 10) ? i.a.createElement(s, {
+					return s = a()(W, (t, s, r) => e & parseInt(r, 10) ? i.a.createElement(s, {
 						key: n
 					}, t) : t, s)
 				},
@@ -2224,12 +2224,12 @@
 						rtJsonElementProps: o
 					});
 					switch (a) {
-						case b.Vf.SmIcon:
+						case b.Wf.SmIcon:
 							return r.a.createElement(h, {
 								subredditName: s,
 								rtJsonElementProps: o
 							});
-						case b.Vf.SmIconHc:
+						case b.Wf.SmIconHc:
 							return r.a.createElement(h, {
 								subredditName: s,
 								isHoverable: !0,
@@ -2676,12 +2676,12 @@
 				c = e => {
 					return Object(a.c)(e, {
 						experimentEligibilitySelector: i,
-						experimentName: s.Pf
+						experimentName: s.Qf
 					}) || ""
 				},
 				d = e => {
 					const t = c(e);
-					return t === s.Vf.SmIcon || t === s.Vf.SmIconHc
+					return t === s.Wf.SmIcon || t === s.Wf.SmIconHc
 				},
 				l = (e, t) => {
 					let {
@@ -2707,4 +2707,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatMessageInput~ChatPost.077d61ab12288dbb9807.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatMessageInput~ChatPost.03771a9475b964a847c5.js.map

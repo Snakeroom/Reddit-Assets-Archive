@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/FrontpageSidebar.ce70217935f2368af7a9.js
-// Retrieved at 10/19/2022, 3:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/FrontpageSidebar.432ca8bc192164ed3859.js
+// Retrieved at 10/20/2022, 9:40:06 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["FrontpageSidebar"], {
 		"./node_modules/lodash/_arrayShuffle.js": function(e, t, n) {
@@ -158,8 +158,8 @@
 				C = n("./src/reddit/endpoints/goodContent/index.ts"),
 				w = n("./src/reddit/icons/svgs/ChevronDown/index.tsx"),
 				F = n("./src/reddit/components/SEOSidebarLinks/index.m.less"),
-				P = n.n(F);
-			const B = e => {
+				B = n.n(F);
+			const P = e => {
 					let {
 						to: t,
 						title: n
@@ -168,7 +168,7 @@
 						subredditName: n,
 						tooltipPosition: ["right", "top"]
 					}, d.a.createElement(j.default, {
-						className: P.a.Link,
+						className: B.a.Link,
 						to: t,
 						title: n
 					}, n))
@@ -183,25 +183,25 @@
 						onExpand: i
 					} = e;
 					return d.a.createElement("div", {
-						className: Object(v.a)(P.a.Section, {
-							[P.a.opened]: n,
-							[P.a.expanded]: s
+						className: Object(v.a)(B.a.Section, {
+							[B.a.opened]: n,
+							[B.a.expanded]: s
 						})
 					}, d.a.createElement("div", {
-						className: P.a.SectionHeader,
+						className: B.a.SectionHeader,
 						onClick: a
 					}, d.a.createElement("div", {
-						className: P.a.SectionTitle
+						className: B.a.SectionTitle
 					}, t), d.a.createElement(w.a, {
-						className: P.a.SectionChevron
+						className: B.a.SectionChevron
 					})), d.a.createElement("div", {
-						className: P.a.SectionBody
+						className: B.a.SectionBody
 					}, d.a.createElement("div", {
-						className: P.a.SectionContent
+						className: B.a.SectionContent
 					}, r), d.a.createElement("div", {
-						className: P.a.SectionFooter
+						className: B.a.SectionFooter
 					}, d.a.createElement(k.r, {
-						className: P.a.SectionButton,
+						className: B.a.SectionButton,
 						onClick: i
 					}, s ? O.fbt._("Less", null, {
 						hk: "PF0lJ"
@@ -241,7 +241,7 @@
 							url: t,
 							title: n
 						} = e;
-						return d.a.createElement(B, {
+						return d.a.createElement(P, {
 							key: n,
 							to: t,
 							title: n
@@ -267,7 +267,7 @@
 						links: t
 					} = this.props;
 					if (t) return d.a.createElement(_.a, {
-						className: Object(v.a)(P.a.Widget, e),
+						className: Object(v.a)(B.a.Widget, e),
 						contentOnly: !0
 					}, t.map(this.renderSection))
 				}
@@ -306,13 +306,13 @@
 					}
 				}
 				async getSubredditForAdoption() {
-					let e = ie.cachedData || Object(K.A)(H.b.SUBREDDITS_FOR_ADOPTION_STORE) || null;
+					let e = ie.cachedData || Object(K.B)(H.b.SUBREDDITS_FOR_ADOPTION_STORE) || null;
 					if (!e || Date.now() - e.fetchedAt > re) {
 						const t = await $(this.props.apiContext());
 						t.ok && (e = {
 							subreddits: t.body.data.subreddits.map(e => e.name),
 							fetchedAt: Date.now()
-						}, Object(K.Eb)(H.b.SUBREDDITS_FOR_ADOPTION_STORE, e))
+						}, Object(K.Gb)(H.b.SUBREDDITS_FOR_ADOPTION_STORE, e))
 					}
 					return ie.cachedData = e, e ? e.subreddits : []
 				}
@@ -626,8 +626,8 @@
 				url: "cryptocurrency"
 			}];
 			var Fe = n("./src/reddit/components/Widgets/Aggregate/TopicsList/index.m.less"),
-				Pe = n.n(Fe);
-			const Be = () => {
+				Be = n.n(Fe);
+			const Pe = () => {
 					const e = `${Oe.a.assetPath}/img/banner/banner-medium@2x.png`,
 						t = O.fbt._("Find Your Next Community!", null, {
 							hk: "4tZ6vB"
@@ -636,17 +636,17 @@
 							backgroundImage: `url(${e})`
 						};
 					return d.a.createElement("div", {
-						className: Pe.a.banner,
+						className: Be.a.banner,
 						style: n
 					}, d.a.createElement("h2", {
-						className: Pe.a.bannerText
+						className: Be.a.bannerText
 					}, t))
 				},
 				Le = e => `/t/${e}?activeTab=communities`,
 				Ie = e => {
 					const t = e.topic.getName();
 					return d.a.createElement("div", {
-						className: Pe.a.itemContainer
+						className: Be.a.itemContainer
 					}, d.a.createElement(Te.a, {
 						to: Le(e.topic.url),
 						onClick: () => e.sendEvent(Object(je.c)(t))
@@ -664,8 +664,8 @@
 						noGradient: !0,
 						styles: e.widget && e.widget.styles,
 						widgetKind: e.widget && e.widget.kind
-					}, d.a.createElement(Be, null), d.a.createElement("div", {
-						className: Pe.a.container
+					}, d.a.createElement(Pe, null), d.a.createElement("div", {
+						className: Be.a.container
 					}, n.map(e => d.a.createElement(Ie, {
 						key: e.url,
 						topic: e,
@@ -2230,4 +2230,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/FrontpageSidebar.ce70217935f2368af7a9.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/FrontpageSidebar.432ca8bc192164ed3859.js.map

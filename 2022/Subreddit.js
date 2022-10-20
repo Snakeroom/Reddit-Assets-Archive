@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Subreddit.a81392bbccdbdd124a6c.js
-// Retrieved at 10/19/2022, 3:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Subreddit.c9aa3ea912919af64922.js
+// Retrieved at 10/20/2022, 9:40:06 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Subreddit", "Governance~ModListing~Reddit", "AchievementsActions", "reddit-components-Econ-PredictionLeaderboard-Sidebar"], {
 		"./node_modules/@reddit/i18n-tools/runtime/helpers/locale/index.js": function(e, t, n) {
@@ -328,211 +328,6 @@
 			};
 			const c = new Set(Object.keys(a));
 			t.isISOLocaleSupported = e => !!e && c.has(e), t.isPseudoLocale = e => !!e && (e === r.PSEUDO_AUTO || Object.values(r.PseudoLocale).includes(e))
-		},
-		"./node_modules/@researchgate/react-intersection-observer/lib/es/index.js": function(e, t, n) {
-			"use strict";
-			n.d(t, "a", (function() {
-				return C
-			}));
-			var r = n("./node_modules/react/index.js"),
-				s = n.n(r),
-				o = n("./node_modules/react-dom/index.js"),
-				i = (n("./node_modules/@researchgate/react-intersection-observer/node_modules/prop-types/index.js"), /^-?\d*\.?\d+(px|%)$/);
-
-			function a(e, t) {
-				return Array.isArray(e) && Array.isArray(t) && e.length === t.length ? e.some((function(n, r) {
-					return a(e[r], t[r])
-				})) : e !== t
-			}
-			var c = new Map;
-
-			function d(e) {
-				void 0 === e && (e = {});
-				for (var t, n = e.root || null, r = function(e) {
-						var t = (e ? e.trim() : "0px").split(/\s+/).map((function(e) {
-								if (!i.test(e)) throw new Error("rootMargin must be a string literal containing pixels and/or percent values");
-								return e
-							})),
-							n = t[0],
-							r = void 0 === n ? "0px" : n,
-							s = t[1],
-							o = void 0 === s ? r : s,
-							a = t[2],
-							c = void 0 === a ? r : a,
-							d = t[3];
-						return r + " " + o + " " + c + " " + (void 0 === d ? o : d)
-					}(e.rootMargin), s = Array.isArray(e.threshold) ? e.threshold : [null != e.threshold ? e.threshold : 0], o = c.keys(); t = o.next().value;) {
-					if (!(n !== t.root || r !== t.rootMargin || a(s, t.thresholds))) return t
-				}
-				return null
-			}
-
-			function l(e, t) {
-				var n = c.get(e);
-				if (n)
-					for (var r, s = n.values(); r = s.next().value;)
-						if (r.target === t.target) return r;
-				return null
-			}
-
-			function u(e, t) {
-				for (var n = 0; n < e.length; n++) {
-					var r = l(t, e[n]);
-					r && r.handleChange(e[n])
-				}
-			}
-
-			function m(e) {
-				return d(e) || new IntersectionObserver(u, e)
-			}
-			var p = n("./node_modules/invariant/browser.js"),
-				b = n.n(p),
-				h = {},
-				f = Object.create(null, {
-					errorReporter: {
-						configurable: !1,
-						get: function() {
-							return h.errorReporter || function(e) {
-								return b()(!1, e)
-							}
-						},
-						set: function(e) {
-							if ("function" != typeof e) throw new Error("ReactIntersectionObserver: `Config.errorReporter` must be a callable");
-							h.errorReporter = e
-						}
-					}
-				});
-
-			function g(e) {
-				if (void 0 === e) throw new ReferenceError("this hasn't been initialised - super() hasn't been called");
-				return e
-			}
-
-			function x(e, t, n) {
-				return t in e ? Object.defineProperty(e, t, {
-					value: n,
-					enumerable: !0,
-					configurable: !0,
-					writable: !0
-				}) : e[t] = n, e
-			}
-			var v = ["root", "rootMargin", "threshold"],
-				E = ["root", "rootMargin", "threshold", "disabled"],
-				_ = Object.prototype,
-				O = _.hasOwnProperty,
-				y = _.toString,
-				j = function(e) {
-					return v.reduce((function(t, n) {
-						if (O.call(e, n)) {
-							var r = "root" === n && "[object String]" === y.call(e[n]);
-							t[n] = r ? document.querySelector(e[n]) : e[n]
-						}
-						return t
-					}), {})
-				},
-				C = function(e) {
-					var t, n;
-
-					function r() {
-						for (var t, n = arguments.length, r = new Array(n), s = 0; s < n; s++) r[s] = arguments[s];
-						return x(g(t = e.call.apply(e, [this].concat(r)) || this), "handleChange", (function(e) {
-							t.props.onChange(e, t.externalUnobserve)
-						})), x(g(t), "handleNode", (function(e) {
-							var n = t.props.children;
-							if (null != n) {
-								var r = n.ref;
-								r && ("function" == typeof r ? r(e) : "object" == typeof r && (r.current = e))
-							}
-							t.targetNode = e && Object(o.findDOMNode)(e)
-						})), x(g(t), "observe", (function() {
-							return null != t.props.children && !t.props.disabled && (t.targetNode ? (t.observer = m(j(t.props)), t.target = t.targetNode, e = g(t), c.has(e.observer) || c.set(e.observer, new Set), c.get(e.observer).add(e), e.observer.observe(e.target), !0) : (f.errorReporter("ReactIntersectionObserver: Can't find DOM node in the provided children. Make sure to render at least one DOM node in the tree."), !1));
-							var e
-						})), x(g(t), "unobserve", (function(e) {
-							! function(e, t) {
-								if (c.has(e.observer)) {
-									var n = c.get(e.observer);
-									n.delete(e) && (n.size > 0 ? e.observer.unobserve(t) : (e.observer.disconnect(), c.delete(e.observer)))
-								}
-							}(g(t), e)
-						})), x(g(t), "externalUnobserve", (function() {
-							t.unobserve(t.targetNode)
-						})), t
-					}
-					n = e, (t = r).prototype = Object.create(n.prototype), t.prototype.constructor = t, t.__proto__ = n;
-					var i = r.prototype;
-					return i.getSnapshotBeforeUpdate = function(e) {
-						var t = this;
-						this.prevTargetNode = this.targetNode;
-						var n = E.some((function(n) {
-							return a(t.props[n], e[n])
-						}));
-						return n && this.prevTargetNode && (e.disabled || this.unobserve(this.prevTargetNode)), n
-					}, i.componentDidUpdate = function(e, t, n) {
-						var r = !1;
-						n || (r = this.prevTargetNode !== this.targetNode) && null != this.prevTargetNode && this.unobserve(this.prevTargetNode), (n || r) && this.observe()
-					}, i.componentDidMount = function() {
-						this.observe()
-					}, i.componentWillUnmount = function() {
-						this.targetNode && this.unobserve(this.targetNode)
-					}, i.render = function() {
-						var e = this.props.children;
-						return null != e ? s.a.cloneElement(s.a.Children.only(e), {
-							ref: this.handleNode
-						}) : null
-					}, r
-				}(s.a.Component);
-			x(C, "displayName", "IntersectionObserver")
-		},
-		"./node_modules/@researchgate/react-intersection-observer/node_modules/prop-types/factoryWithThrowingShims.js": function(e, t, n) {
-			"use strict";
-			var r = n("./node_modules/@researchgate/react-intersection-observer/node_modules/prop-types/lib/ReactPropTypesSecret.js");
-
-			function s() {}
-
-			function o() {}
-			o.resetWarningCache = s, e.exports = function() {
-				function e(e, t, n, s, o, i) {
-					if (i !== r) {
-						var a = new Error("Calling PropTypes validators directly is not supported by the `prop-types` package. Use PropTypes.checkPropTypes() to call them. Read more at http://fb.me/use-check-prop-types");
-						throw a.name = "Invariant Violation", a
-					}
-				}
-
-				function t() {
-					return e
-				}
-				e.isRequired = e;
-				var n = {
-					array: e,
-					bool: e,
-					func: e,
-					number: e,
-					object: e,
-					string: e,
-					symbol: e,
-					any: e,
-					arrayOf: t,
-					element: e,
-					elementType: e,
-					instanceOf: t,
-					node: e,
-					objectOf: t,
-					oneOf: t,
-					oneOfType: t,
-					shape: t,
-					exact: t,
-					checkPropTypes: o,
-					resetWarningCache: s
-				};
-				return n.PropTypes = n, n
-			}
-		},
-		"./node_modules/@researchgate/react-intersection-observer/node_modules/prop-types/index.js": function(e, t, n) {
-			e.exports = n("./node_modules/@researchgate/react-intersection-observer/node_modules/prop-types/factoryWithThrowingShims.js")()
-		},
-		"./node_modules/@researchgate/react-intersection-observer/node_modules/prop-types/lib/ReactPropTypesSecret.js": function(e, t, n) {
-			"use strict";
-			e.exports = "SECRET_DO_NOT_PASS_THIS_OR_YOU_WILL_BE_FIRED"
 		},
 		"./node_modules/deep-diff/index.js": function(e, t, n) {
 			var r, s;
@@ -2090,14 +1885,14 @@
 				d = e => {
 					switch (e) {
 						case s.a.Denied:
-							a.mb(!1), Object(r.c)();
+							a.ob(!1), Object(r.c)();
 							break;
 						case s.a.Default:
 						case s.a.Granted:
-							a.mb(!0), Object(r.c)();
+							a.ob(!0), Object(r.c)();
 							break;
 						case s.a.Closed:
-							a.mb(!0)
+							a.ob(!0)
 					}
 				}
 		},
@@ -2791,10 +2586,10 @@
 			t.a = e => {
 				const {
 					className: t
-				} = e, n = Object(c.f)(i.a.AWARDED_LISTING_BANNER, a.g), [u, m] = Object(r.useState)(n ? N.Hidden : N.Visible);
+				} = e, n = Object(c.g)(i.a.AWARDED_LISTING_BANNER, a.g), [u, m] = Object(r.useState)(n ? N.Hidden : N.Visible);
 				if (u === N.Hidden) return null;
 				const p = () => {
-					m(N.Visible), Object(c.jb)(i.a.AWARDED_LISTING_BANNER, !1, a.g)
+					m(N.Visible), Object(c.lb)(i.a.AWARDED_LISTING_BANNER, !1, a.g)
 				};
 				return u === N.Dismissed ? s.a.createElement("div", {
 					className: Object(o.a)(g.a.dismissedContainer, t)
@@ -2815,7 +2610,7 @@
 				})), s.a.createElement(C, null), s.a.createElement(l.a, {
 					className: g.a.close,
 					onClick: () => {
-						m(N.Dismissed), Object(c.jb)(i.a.AWARDED_LISTING_BANNER, !0, a.g)
+						m(N.Dismissed), Object(c.lb)(i.a.AWARDED_LISTING_BANNER, !0, a.g)
 					}
 				}))
 			}
@@ -3129,9 +2924,9 @@
 						i = Object(h.b)(O),
 						a = Object(h.b)(y),
 						[c, d] = function(e, t) {
-							const [n, s] = Object(r.useState)(Object(U.P)(e, t));
+							const [n, s] = Object(r.useState)(Object(U.R)(e, t));
 							return [n, Object(r.useCallback)(() => {
-								const n = Object(U.a)(e, t);
+								const n = Object(U.b)(e, t);
 								s(n)
 							}, [e, t, s])]
 						}(e.userId, e.subredditId),
@@ -3159,7 +2954,7 @@
 							e.stopPropagation(), i.visible ? f() : x()
 						}, [f, x, i.visible]),
 						S = Object(r.useCallback)(t => {
-							t === E.c.FREQUENT && Object(U.bb)(e.userId, e.subredditId)
+							t === E.c.FREQUENT && Object(U.db)(e.userId, e.subredditId)
 						}, [e.subredditId, e.userId]),
 						w = Object(r.useCallback)(r => {
 							const {
@@ -3433,7 +3228,7 @@
 					small: !0,
 					isFullWidth: !0,
 					afterUnsubscribeAction: () => {
-						t && (Object(U.bb)(e.userId, t), e.updateSubredditInfo())
+						t && (Object(U.db)(e.userId, t), e.updateSubredditInfo())
 					}
 				})), w && s.a.createElement(be, {
 					onClickUnmute: e.unmuteSubreddit
@@ -4260,7 +4055,7 @@
 			class _ extends o.a.Component {
 				constructor(e) {
 					super(e), this.closeBanner = () => {
-						Object(u.jb)(d.a.CREATE_POST_BANNER, !0, this.props.subreddit.id), this.setState({
+						Object(u.lb)(d.a.CREATE_POST_BANNER, !0, this.props.subreddit.id), this.setState({
 							visible: !1
 						}), this.props.showToast(), this.props.sendEvent(p())
 					}, this.createPost = () => {
@@ -4278,7 +4073,7 @@
 				onUpdate() {
 					const {
 						subreddit: e
-					} = this.props, t = !Object(u.f)(d.a.CREATE_POST_BANNER, e.id);
+					} = this.props, t = !Object(u.g)(d.a.CREATE_POST_BANNER, e.id);
 					t !== this.state.visible && (this.props.sendEvent(m()), this.setState({
 						visible: t
 					}))
@@ -11771,12 +11566,12 @@
 						rtJsonElementProps: i
 					});
 					switch (o) {
-						case h.Vf.SmIcon:
+						case h.Wf.SmIcon:
 							return s.a.createElement(p, {
 								subredditName: r,
 								rtJsonElementProps: i
 							});
-						case h.Vf.SmIconHc:
+						case h.Wf.SmIconHc:
 							return s.a.createElement(p, {
 								subredditName: r,
 								isHoverable: !0,
@@ -15772,7 +15567,7 @@
 					}
 				}),
 				a = (e, t) => {
-					t && (Object(s.Ab)(e.postId), Object(s.Jb)(t)), e.impressionIdStr ? Object(s.Bb)(e.impressionIdStr) : e.impressionId && Object(s.Bb)(e.impressionId)
+					t && (Object(s.Cb)(e.postId), Object(s.Lb)(t)), e.impressionIdStr ? Object(s.Db)(e.impressionIdStr) : e.impressionId && Object(s.Db)(e.impressionId)
 				}
 		},
 		"./src/reddit/helpers/trackers/communityHubs.ts": function(e, t, n) {
@@ -21621,7 +21416,7 @@
 						experimentEligibilitySelector: o.Q,
 						experimentName: r.vd
 					});
-					return !(!t || Object(r.sg)(t))
+					return !(!t || Object(r.tg)(t))
 				},
 				a = e => {
 					return Object(s.c)(e, {
@@ -21911,8 +21706,8 @@
 				o = n("./src/reddit/selectors/meta.ts");
 			const i = e => Object(s.c)(e, {
 				experimentEligibilitySelector: e => !Object(o.d)(e) && "US" === Object(o.b)(e),
-				experimentName: r.wf
-			}) === r.Df.Enabled
+				experimentName: r.xf
+			}) === r.Ef.Enabled
 		},
 		"./src/reddit/selectors/experiments/signupUpsellExperiment.ts": function(e, t, n) {
 			"use strict";
@@ -22186,12 +21981,12 @@
 				c = e => {
 					return Object(o.c)(e, {
 						experimentEligibilitySelector: a,
-						experimentName: r.Pf
+						experimentName: r.Qf
 					}) || ""
 				},
 				d = e => {
 					const t = c(e);
-					return t === r.Vf.SmIcon || t === r.Vf.SmIconHc
+					return t === r.Wf.SmIcon || t === r.Wf.SmIconHc
 				},
 				l = (e, t) => {
 					let {
@@ -22344,4 +22139,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Subreddit.a81392bbccdbdd124a6c.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Subreddit.c9aa3ea912919af64922.js.map

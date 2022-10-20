@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-pages-meta-ArbitrumPointsMigrationPage.6aa93dafe74fd91f3479.js
-// Retrieved at 10/11/2022, 9:50:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-pages-meta-ArbitrumPointsMigrationPage.f05becf612eddb289606.js
+// Retrieved at 10/20/2022, 9:40:06 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-pages-meta-ArbitrumPointsMigrationPage"], {
 		"./node_modules/lodash/uniqueId.js": function(e, t, n) {
@@ -731,7 +731,7 @@
 		"./src/reddit/pages/meta/ArbitrumPointsMigrationPage/index.tsx": function(e, t, n) {
 			"use strict";
 			n.r(t), n.d(t, "ArbitrumPointsMigrationPage", (function() {
-				return q
+				return G
 			})), n.d(t, "default", (function() {
 				return U
 			}));
@@ -1323,10 +1323,10 @@
 			const V = "arb-migration-l1";
 
 			function W(e) {
-				e ? Object(N.Eb)(V, e) : window.localStorage && window.localStorage.removeItem(V)
+				e ? Object(N.Gb)(V, e) : window.localStorage && window.localStorage.removeItem(V)
 			}
 
-			function q() {
+			function G() {
 				const e = Object(o.d)(),
 					t = Object(E.c)(),
 					n = Object(o.e)(_.Q),
@@ -1334,7 +1334,7 @@
 					[p, y] = Object(r.useState)(Object(E.e)()),
 					[b, h] = Object(r.useState)(function() {
 						var e, t;
-						const n = Object(N.A)(V);
+						const n = Object(N.B)(V);
 						return n && (n.balance = a.a.from(n.balance), n.seqNums = null === (e = n.seqNums) || void 0 === e ? void 0 : e.map(e => a.a.from(e)), n.originalL2Balance = null !== (t = n.originalL2Balance) && void 0 !== t ? t : a.a.from(n.originalL2Balance)), n
 					}()),
 					[f, g] = Object(r.useState)((null == b ? void 0 : b.destinationAddress) || ""),
@@ -1383,7 +1383,7 @@
 					style: {
 						display: "inline-block"
 					}
-				}, "Custom"))) : i.a.createElement(G, {
+				}, "Custom"))) : i.a.createElement(q, {
 					setMigration: h,
 					walletAddress: u
 				}) : i.a.createElement("p", null, i.a.createElement("b", null, "Please select the Rinkeby Test Network in your wallet and reload this page.")) : i.a.createElement(i.a.Fragment, null, i.a.createElement("p", null, "This migration tool is designed to work with Chrome + MetaMask. If your Points are in a different wallet, we suggest moving them into MetaMask first. You should be able to use any web3-enabled wallet, but it is untested. Not all wallets will work with our Arbitrum chain. It must be a wallet where you can add a custom network with RPC url and a different chain id."), i.a.createElement("p", null, t ? i.a.createElement(c.l, {
@@ -1397,7 +1397,7 @@
 				}, "Let's get those Points moved over"), i.a.createElement("p", null, "If you moved your Moons or Bricks out of your Vault, you will need to migrate them using this tool in order to get them onto our new system. This tool will help walk you through the necessary steps."), k)
 			}
 
-			function G(e) {
+			function q(e) {
 				let {
 					setMigration: t,
 					walletAddress: n
@@ -1420,9 +1420,9 @@
 			}
 
 			function U() {
-				return i.a.createElement(q, null)
+				return i.a.createElement(G, null)
 			}
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-pages-meta-ArbitrumPointsMigrationPage.6aa93dafe74fd91f3479.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-pages-meta-ArbitrumPointsMigrationPage.f05becf612eddb289606.js.map
