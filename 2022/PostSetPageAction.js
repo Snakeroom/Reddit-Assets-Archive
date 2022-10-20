@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostSetPageAction.ce9ab50ef64aed59f529.js
-// Retrieved at 10/20/2022, 9:40:06 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostSetPageAction.f54ff6cb811979bee913.js
+// Retrieved at 10/20/2022, 5:00:08 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostSetPageAction"], {
 		"./src/reddit/actions/pages/postSetPage/index.ts": function(e, t, s) {
@@ -22,8 +22,8 @@
 				a = s("./src/reddit/helpers/makeProfileListingKey/index.ts"),
 				p = s("./src/reddit/models/Post/index.ts"),
 				l = s("./src/reddit/selectors/experiments/postSets.ts"),
-				b = s("./src/reddit/selectors/posts.ts"),
-				u = s("./src/reddit/selectors/user.ts"),
+				u = s("./src/reddit/selectors/posts.ts"),
+				b = s("./src/reddit/selectors/user.ts"),
 				O = s("./src/reddit/actions/pages/postSetPage/constants.ts");
 			const x = Object(i.a)(O.c),
 				g = Object(i.a)(O.b),
@@ -32,10 +32,10 @@
 					let {
 						gqlContext: l
 					} = i;
-					const u = r(),
+					const b = r(),
 						O = Object(p.z)(t),
 						m = Object(a.b)(e, O);
-					if (Object(b.Q)(u, {
+					if (Object(u.Q)(b, {
 							listingKey: m
 						}).length > 0) return;
 					s(x({
@@ -52,7 +52,7 @@
 					if (y.ok && y.body) {
 						const {
 							postSetsByIds: e
-						} = y.body.data, t = e[0].posts.edges, r = [], n = {}, i = Object(b.J)(u);
+						} = y.body.data, t = e[0].posts.edges, r = [], n = {}, i = Object(u.J)(b);
 						for (const {
 								node: s
 							} of t)
@@ -81,8 +81,8 @@
 					} = e, {
 						profileName: i,
 						partialPostSetId: o
-					} = n, c = s(), d = Object(u.k)(c), a = !!d && d.displayText === i, p = Object(l.b)(c, a), b = Object(l.a)(c);
-					t(p || b ? m(i, o) : Object(r.c)(`/user/${i}/`))
+					} = n, c = s(), d = Object(b.k)(c), a = !!d && d.displayText === i, p = Object(l.b)(c, a), u = Object(l.a)(c);
+					t(p || u ? m(i, o) : Object(r.c)(`/user/${i}/`))
 				}
 		},
 		"./src/reddit/selectors/experiments/postSets.ts": function(e, t, s) {
@@ -97,14 +97,14 @@
 			const i = (e, t) => {
 					return Object(n.c)(e, {
 						experimentEligibilitySelector: () => t,
-						experimentName: r.xc
-					}) === r.Rd
+						experimentName: r.vc
+					}) === r.Pd
 				},
 				o = e => {
 					return Object(n.c)(e, {
 						experimentEligibilitySelector: n.a,
-						experimentName: r.wc
-					}) === r.Rd
+						experimentName: r.uc
+					}) === r.Pd
 				}
 		},
 		"./src/redditGQL/operations/PostSetById.json": function(e) {
@@ -112,4 +112,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostSetPageAction.ce9ab50ef64aed59f529.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostSetPageAction.f54ff6cb811979bee913.js.map

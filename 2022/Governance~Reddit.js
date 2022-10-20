@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~Reddit.e32e3f03397537af05c9.js
-// Retrieved at 10/20/2022, 2:10:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~Reddit.cf1f580587a960632cc6.js
+// Retrieved at 10/20/2022, 5:00:08 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~Reddit"], {
 		"./assets/fonts/NotoMono/font.less": function(e, t, n) {},
@@ -1433,7 +1433,7 @@
 					let {
 						gqlContext: a
 					} = r;
-					const c = await Object(s.d)(a(), {
+					const c = await Object(s.c)(a(), {
 						postId: e
 					});
 					if (c.ok) {
@@ -2195,7 +2195,7 @@
 			const D = e => _.d.reCaptchaEnterprise(e) && !Object(T.d)(e),
 				w = e => !!Object(S.c)(e, {
 					experimentEligibilitySelector: Object(I.d)(Object(I.b)(...a.d)),
-					experimentName: f.uf
+					experimentName: f.sf
 				}),
 				j = Object(r.b)("LOAD_RECAPTCHA_ENTERPRISE"),
 				C = () => l(e => p()([D, w, e => e.tracking.reCaptchaEnterprise.load === r.a.New], t => t(e)))(async e => {
@@ -4239,10 +4239,10 @@
 				G = n("./src/reddit/helpers/chooseVariant/index.ts");
 
 			function q(e) {
-				const t = Object(E.q)(e, M.Pb);
+				const t = Object(E.q)(e, M.Ob);
 				return {
 					experimentState: e,
-					isActive: (null == t ? void 0 : t.variant) === M.Rd,
+					isActive: (null == t ? void 0 : t.variant) === M.Pd,
 					isBucketed: !!(null == t ? void 0 : t.variant)
 				}
 			}
@@ -4303,7 +4303,7 @@
 							function() {
 								let e = {};
 								C && B.type.length && (Object(G.d)(w, {
-									experimentName: M.Kc
+									experimentName: M.Ic
 								}), j && (e = {
 									...B
 								}));
@@ -4560,7 +4560,7 @@
 				} = Object(a.e)(H.j), W = Object(a.e)(q), Q = !!(null === (t = y.searchQuery) || void 0 === t ? void 0 : t.trim()), K = l || i;
 				let Y = !1;
 				V && W.isBucketed && (Y = W.isActive, Object(G.d)(W.experimentState, {
-					experimentName: M.Pb
+					experimentName: M.Ob
 				}));
 				const $ = !l && (!Q || b >= 0) && !Y,
 					z = {
@@ -25739,7 +25739,7 @@
 					if (!u(e)) return;
 					const t = Object(o.c)(e, {
 						experimentEligibilitySelector: l,
-						experimentName: a.le,
+						experimentName: a.je,
 						expEventOverride: !1
 					});
 					return null == t ? void 0 : t.toLocaleLowerCase()
@@ -25762,9 +25762,9 @@
 				},
 				b = e => !!p(e) && Object(o.c)(e, {
 					experimentEligibilitySelector: u,
-					experimentName: a.me,
+					experimentName: a.ke,
 					expEventOverride: !1
-				}) !== a.ne.Readonly
+				}) !== a.le.Readonly
 		},
 		"./src/reddit/selectors/experiments/serpTabPreserved.ts": function(e, t, n) {
 			"use strict";
@@ -25775,10 +25775,10 @@
 				s = n("./src/reddit/selectors/telemetry.ts");
 
 			function a(e) {
-				const t = Object(s.q)(e, r.Kc);
+				const t = Object(s.q)(e, r.Ic);
 				return {
 					experimentState: e,
-					isActive: (null == t ? void 0 : t.variant) === r.Rd,
+					isActive: (null == t ? void 0 : t.variant) === r.Pd,
 					isBucketed: !!(null == t ? void 0 : t.variant)
 				}
 			}
@@ -25928,4 +25928,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit.e32e3f03397537af05c9.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit.cf1f580587a960632cc6.js.map

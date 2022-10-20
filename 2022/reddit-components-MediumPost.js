@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-MediumPost.0f5ccd39c7100c992ffd.js
-// Retrieved at 10/20/2022, 9:40:06 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-MediumPost.a9568e12215c323b7075.js
+// Retrieved at 10/20/2022, 5:00:08 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-MediumPost"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -895,8 +895,8 @@
 				ae = s("./node_modules/reselect/es/index.js");
 			const ce = Object(ae.a)(e => Object(ie.c)(e, {
 				experimentEligibilitySelector: ie.a,
-				experimentName: re.Jb
-			}), e => e === re.Rd);
+				experimentName: re.Ib
+			}), e => e === re.Pd);
 			var de = s("./src/reddit/selectors/experiments/contributeBeforeSignUp.ts"),
 				le = s("./src/reddit/selectors/platform.ts"),
 				ue = s("./src/reddit/selectors/posts.ts"),
@@ -1475,7 +1475,7 @@
 						[e]: {
 							sendReplies: r
 						}
-					})), (await Object(U.s)(o(), e, r)).ok || t(Object(pe.j)({
+					})), (await Object(U.q)(o(), e, r)).ok || t(Object(pe.j)({
 						[e]: {
 							sendReplies: !r
 						}
@@ -1577,21 +1577,21 @@
 		"./src/reddit/actions/comment/moderation.ts": function(e, t, s) {
 			"use strict";
 			s.d(t, "d", (function() {
-				return g
+				return _
 			})), s.d(t, "c", (function() {
-				return E
+				return g
 			})), s.d(t, "f", (function() {
-				return C
+				return E
 			})), s.d(t, "a", (function() {
-				return j
+				return C
 			})), s.d(t, "e", (function() {
-				return S
+				return j
 			})), s.d(t, "g", (function() {
-				return k
+				return S
 			})), s.d(t, "h", (function() {
-				return y
+				return k
 			})), s.d(t, "b", (function() {
-				return w
+				return y
 			}));
 			s("./node_modules/core-js/modules/web.dom.iterable.js");
 			var n = s("./node_modules/fbt/lib/FbtPublic.js"),
@@ -1607,29 +1607,28 @@
 				p = s("./src/reddit/models/Reportable/index.ts"),
 				b = s("./src/reddit/models/Toast/index.ts"),
 				f = s("./src/reddit/selectors/commentSelector.ts"),
-				h = s("./src/reddit/selectors/experiments/cnc/index.ts"),
-				O = s("./src/reddit/selectors/user.ts"),
-				x = s("./src/reddit/actions/comment/index.ts"),
-				v = s("./src/reddit/actions/comment/constants.ts");
-			const _ = Object(r.a)(v.p),
-				g = e => async (t, s, n) => {
+				h = s("./src/reddit/selectors/user.ts"),
+				O = s("./src/reddit/actions/comment/index.ts"),
+				x = s("./src/reddit/actions/comment/constants.ts");
+			const v = Object(r.a)(x.p),
+				_ = e => async (t, s, n) => {
 					let {
 						apiContext: o
 					} = n;
-					s().features.comments.models[e] && (await Object(u.l)(o(), e)).ok && t((e => async t => {
-						t(_({
+					s().features.comments.models[e] && (await Object(u.j)(o(), e)).ok && t((e => async t => {
+						t(v({
 							commentId: e
 						}))
 					})(e))
-				}, E = e => async (t, s, o) => {
+				}, g = e => async (t, s, o) => {
 					let {
 						apiContext: r
 					} = o;
-					if (!Object(O.Q)(s())) return void t(Object(a.i)(l.a.LOGIN_MODAL_ID));
+					if (!Object(h.Q)(s())) return void t(Object(a.i)(l.a.LOGIN_MODAL_ID));
 					const i = s().features.comments.models[e];
 					if (!i) return;
-					const c = i.isLocked ? u.n : u.g;
-					t(Object(x.j)({
+					const c = i.isLocked ? u.l : u.f;
+					t(Object(O.j)({
 						[e]: {
 							isLocked: !i.isLocked
 						}
@@ -1640,12 +1639,12 @@
 						}) : n.fbt._("comment has been locked", null, {
 							hk: "1pBDQl"
 						})
-					})) : t(Object(x.j)({
+					})) : t(Object(O.j)({
 						[e]: {
 							isLocked: i.isLocked
 						}
 					}))
-				}, C = Object(r.a)(v.J), j = e => async (t, s, o) => {
+				}, E = Object(r.a)(x.J), C = e => async (t, s, o) => {
 					let {
 						apiContext: r,
 						gqlContext: i
@@ -1653,7 +1652,7 @@
 					const a = s(),
 						l = a.features.comments.models[e],
 						m = a.user.account ? a.user.account.displayText : null;
-					l && m && (t(Object(x.j)({
+					l && m && (t(Object(O.j)({
 						[e]: {
 							isApproved: !0,
 							approvedBy: m,
@@ -1666,12 +1665,12 @@
 							modRemovalReason: null,
 							numReports: 0
 						}
-					})), (Object(h.a)(a) ? await Object(u.a)(i(), e) : await Object(u.b)(r(), e)).ok ? t(Object(d.f)({
+					})), (await Object(u.a)(i(), e)).ok ? t(Object(d.f)({
 						kind: b.b.SuccessMod,
 						text: n.fbt._("comment has been approved", null, {
 							hk: "4GfKQi"
 						})
-					})) : t(Object(x.j)({
+					})) : t(Object(O.j)({
 						[e]: {
 							isApproved: l.isApproved,
 							approvedBy: null,
@@ -1684,7 +1683,7 @@
 							numReports: l.numReports || null
 						}
 					})), Object(c.d)())
-				}, S = (e, t) => async (s, o, r) => {
+				}, j = (e, t) => async (s, o, r) => {
 					let {
 						apiContext: i,
 						gqlContext: a
@@ -1692,7 +1691,7 @@
 					const l = o(),
 						m = l.features.comments.models[e],
 						p = l.user.account ? l.user.account.displayText : null;
-					m && p && (s(Object(x.j)({
+					m && p && (s(Object(O.j)({
 						[e]: {
 							approvedBy: null,
 							bannedBy: p,
@@ -1701,14 +1700,14 @@
 							isRemoved: !t,
 							isSpam: t
 						}
-					})), (Object(h.a)(l) ? await Object(u.i)(a(), e, t) : await Object(u.j)(i(), e, t)).ok ? s(Object(d.f)({
+					})), (await Object(u.h)(a(), e, t)).ok ? s(Object(d.f)({
 						kind: b.b.SuccessMod,
 						text: t ? n.fbt._("comment has been marked as spam", null, {
 							hk: "4fQaFM"
 						}) : n.fbt._("comment has been removed", null, {
 							hk: "1qNTrD"
 						})
-					})) : s(Object(x.j)({
+					})) : s(Object(O.j)({
 						[e]: {
 							approvedBy: m.approvedBy,
 							bannedBy: m.bannedBy,
@@ -1717,14 +1716,14 @@
 							isSpam: m.isSpam
 						}
 					})), Object(c.d)())
-				}, k = e => async (t, s, o) => {
+				}, S = e => async (t, s, o) => {
 					let {
 						apiContext: r
 					} = o;
 					const i = s().features.comments.models[e];
 					if (!i) return;
-					const a = i.ignoreReports ? u.m : u.f;
-					t(Object(x.j)({
+					const a = i.ignoreReports ? u.k : u.e;
+					t(Object(O.j)({
 						[e]: {
 							ignoreReports: !i.ignoreReports
 						}
@@ -1735,12 +1734,12 @@
 						}) : n.fbt._("comment has had its reports ignored", null, {
 							hk: "2q4sCp"
 						})
-					})) : t(Object(x.j)({
+					})) : t(Object(O.j)({
 						[e]: {
 							ignoreReports: i.ignoreReports
 						}
 					}))
-				}, y = (e, t, s) => async (r, i, a) => {
+				}, k = (e, t, s) => async (r, i, a) => {
 					let {
 						gqlContext: c
 					} = a;
@@ -1756,7 +1755,7 @@
 						};
 					if ((await Object(m.a)(c(), {
 							input: h
-						})).ok) r(Object(x.j)({
+						})).ok) r(Object(O.j)({
 						[e]: {
 							userReports: Object(p.a)(l.userReports, t, u)
 						}
@@ -1767,7 +1766,7 @@
 						}), b.b.Error);
 						r(Object(d.f)(e))
 					}
-				}, w = (e, t, s) => async (n, r, a) => {
+				}, y = (e, t, s) => async (n, r, a) => {
 					let {
 						apiContext: c,
 						gqlContext: d
@@ -1777,36 +1776,36 @@
 					if (!m) return;
 					const p = m.postId,
 						b = l.postStickiedComments.data[p];
-					n(Object(x.j)({
+					n(Object(O.j)({
 						[e]: {
 							distinguishType: t,
 							isAdmin: t === o.J.ADMIN,
 							isMod: t === o.J.MODERATOR,
 							isStickied: !!s
 						}
-					})), s && b && b !== e && n(Object(x.j)({
+					})), s && b && b !== e && n(Object(O.j)({
 						[b]: {
 							isStickied: !1
 						}
 					}));
-					const f = Object(u.d)(d(), e, t),
-						h = Object(u.e)(d(), e, !!s),
-						O = [f];
-					(s || !s && e === b) && O.push(h), (await Promise.all(O)).every(e => e.ok) ? s && n(C({
+					const f = Object(u.c)(d(), e, t),
+						h = Object(u.d)(d(), e, !!s),
+						x = [f];
+					(s || !s && e === b) && x.push(h), (await Promise.all(x)).every(e => e.ok) ? s && n(E({
 						id: e,
 						postId: p,
 						commentsPageKey: Object(i.a)(p, null, {
 							sort: o.w.CONFIDENCE,
 							...l.platform.currentPage.queryParams
 						})
-					})) : (n(Object(x.j)({
+					})) : (n(Object(O.j)({
 						[e]: {
 							distinguishType: m.distinguishType,
 							isAdmin: m.isAdmin,
 							isMod: m.isMod,
 							isStickied: m.isStickied
 						}
-					})), n(Object(x.j)({
+					})), n(Object(O.j)({
 						[b]: {
 							isStickied: l.features.comments.models[b].isStickied
 						}
@@ -9139,8 +9138,8 @@
 				return !(!c || d) && (e => {
 					return Object(o.c)(e, {
 						experimentEligibilitySelector: o.a,
-						experimentName: n.Vb
-					}) === n.Rd
+						experimentName: n.Ub
+					}) === n.Pd
 				})(e)
 			}
 		},
@@ -9229,8 +9228,8 @@
 					if (Object(i.a)(e)) return !1;
 					return Object(o.c)(e, {
 						experimentEligibilitySelector: o.a,
-						experimentName: n.Cc
-					}) === n.cd.Enabled
+						experimentName: n.Ac
+					}) === n.ad.Enabled
 				}
 		},
 		"./src/reddit/selectors/experiments/presence.ts": function(e, t, s) {
@@ -9243,8 +9242,8 @@
 			const r = e => {
 				return Object(o.c)(e, {
 					experimentEligibilitySelector: o.a,
-					experimentName: n.hf
-				}) === n.Rd
+					experimentName: n.ff
+				}) === n.Pd
 			}
 		},
 		"./src/reddit/selectors/i18n/index.ts": function(e, t, s) {
@@ -9260,7 +9259,7 @@
 				i = s("./src/reddit/selectors/experiments/nsfwListingBelow.ts");
 			const a = e => {
 					const t = Object(i.a)(e);
-					return Boolean(t) && !Object(o.tg)(t)
+					return Boolean(t) && !Object(o.rg)(t)
 				},
 				c = Object(n.a)(a, r.d, (e, t) => e && !t)
 		},
@@ -9338,10 +9337,10 @@
 				i = s("./src/reddit/models/Post/index.ts"),
 				a = s("./src/reddit/selectors/posts.ts");
 			const c = e => Object(r.c)(e, {
-					experimentName: o.kf,
+					experimentName: o.if,
 					experimentEligibilitySelector: r.a
 				}),
-				d = (e, t) => (t === o.sf.Enabled && (null == e ? void 0 : e.isCreatedFromAdsUi) || (null == e ? void 0 : e.isSponsored)) && !Object(i.A)(e),
+				d = (e, t) => (t === o.qf.Enabled && (null == e ? void 0 : e.isCreatedFromAdsUi) || (null == e ? void 0 : e.isSponsored)) && !Object(i.A)(e),
 				l = Object(n.a)(a.G, c, (e, t) => d(e, t));
 			Object(n.a)((e, t) => t, c, (e, t) => d(e, t))
 		},
@@ -9439,4 +9438,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-MediumPost.0f5ccd39c7100c992ffd.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-MediumPost.a9568e12215c323b7075.js.map

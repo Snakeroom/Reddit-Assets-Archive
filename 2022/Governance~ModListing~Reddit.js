@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit.9abc88d9967d153b2cf8.js
-// Retrieved at 10/20/2022, 9:40:06 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit.bef560f071a2e04a7ae5.js
+// Retrieved at 10/20/2022, 5:00:08 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~ModListing~Reddit"], {
 		"./src/lib/CSSVariableProvider/withTheme.tsx": function(e, t, n) {
@@ -392,9 +392,9 @@
 		"./src/reddit/actions/notificationsInbox/index.ts": function(e, t, n) {
 			"use strict";
 			n.d(t, "d", (function() {
-				return D
-			})), n.d(t, "e", (function() {
 				return L
+			})), n.d(t, "e", (function() {
+				return D
 			})), n.d(t, "b", (function() {
 				return G
 			})), n.d(t, "i", (function() {
@@ -450,7 +450,7 @@
 			const k = Object(o.a)(c.e),
 				P = Object(o.a)(c.b),
 				w = Object(o.a)(c.a),
-				D = e => async (t, n, r) => {
+				L = e => async (t, n, r) => {
 					let {
 						gqlContext: o
 					} = r;
@@ -472,7 +472,7 @@
 						t(R(p.notifications, e.length))
 					}
 					t(P(p)), t(Object(s.b)(p.banners))
-				}, L = () => async (e, t, n) => {
+				}, D = () => async (e, t, n) => {
 					let {
 						gqlContext: r
 					} = n;
@@ -1368,14 +1368,14 @@
 					user: k,
 					userName: P,
 					wrapperClassName: w,
-					...D
-				} = e, L = !!s && Object(l.e)(s) === P, A = L ? s : k, U = A && A.accountIcon || c, R = k ? k.isNSFW : m, M = Object(d.a)(U) && !b, B = M ? i.a.createElement(_.a, {
+					...L
+				} = e, D = !!s && Object(l.e)(s) === P, A = D ? s : k, U = A && A.accountIcon || c, R = k ? k.isNSFW : m, M = Object(d.a)(U) && !b, B = M ? i.a.createElement(_.a, {
 					headshot: U,
 					className: e.className,
 					hasNftBorder: p && Object(d.d)(c)
-				}) : i.a.createElement(x.b, S({}, D, {
+				}) : i.a.createElement(x.b, S({}, L, {
 					iconUrl: b && n ? "https://www.redditstatic.com/avatars/defaults/v2/avatar_default_3.png" : U,
-					isCurrentUser: L,
+					isCurrentUser: D,
 					isNSFW: R
 				})), [G, F] = Object(o.useState)(!1), H = Object(o.useMemo)(() => ({
 					input: {
@@ -1797,9 +1797,9 @@
 			})), n.d(t, "b", (function() {
 				return w
 			})), n.d(t, "o", (function() {
-				return D
-			})), n.d(t, "A", (function() {
 				return L
+			})), n.d(t, "A", (function() {
+				return D
 			})), n.d(t, "p", (function() {
 				return A
 			})), n.d(t, "B", (function() {
@@ -2214,7 +2214,7 @@
 			! function(e) {
 				e.DISMISS = "dismiss", e.BANNER = "banner", e.CTA_1 = "cta1", e.CTA_2 = "cta2"
 			}(w || (w = {}));
-			const D = (e, t) => n => ({
+			const L = (e, t) => n => ({
 					...u.o(n),
 					action: d.c.CLICK,
 					noun: "inbox_banner",
@@ -2227,7 +2227,7 @@
 						id: e
 					}
 				}),
-				L = (e, t) => n => ({
+				D = (e, t) => n => ({
 					...u.o(n),
 					action: d.c.CLICK,
 					noun: "inbox_banner",
@@ -2300,9 +2300,9 @@
 			})), n.d(t, "r", (function() {
 				return w
 			})), n.d(t, "o", (function() {
-				return D
-			})), n.d(t, "s", (function() {
 				return L
+			})), n.d(t, "s", (function() {
+				return D
 			})), n.d(t, "c", (function() {
 				return A
 			})), n.d(t, "l", (function() {
@@ -2462,13 +2462,13 @@
 								sort: c = i.Jb,
 								t: a = i.Kb
 							} = s;
-							Object(C.a)(D(o, c, n, r, a)(t));
+							Object(C.a)(L(o, c, n, r, a)(t));
 							break
 						}
 						case i.Sb.PROFILE_PRIVATE: {
 							const o = Object(u.d)(e, t);
 							if (!o) return;
-							Object(C.a)(L(o)(r, n)(t));
+							Object(C.a)(D(o)(r, n)(t));
 							break
 						}
 						case i.Sb.FOLLOWERS:
@@ -2637,7 +2637,7 @@
 						adblock: N.e(i)
 					}
 				},
-				D = (e, t, n, r, o) => i => {
+				L = (e, t, n, r, o) => i => {
 					const s = N.W(i, e);
 					s && (s.sort = t, o && (s.sortTime = o));
 					const {
@@ -2659,7 +2659,7 @@
 						adblock: N.e(i)
 					}
 				},
-				L = e => (t, n) => r => {
+				D = e => (t, n) => r => {
 					const o = !r.profilePrivatePage.api.error[e] && !r.profilePrivatePage.api.pending[e];
 					return {
 						source: "global",
@@ -3443,7 +3443,7 @@
 					return r ? r * o.Xb < 1639443600180 ? void 0 : O(e) : void 0
 				},
 				O = Object(r.a)(e => Object(c.c)(e, {
-					experimentName: i.Ne,
+					experimentName: i.Le,
 					experimentEligibilitySelector: a.e
 				}), d.a)
 		},
@@ -3550,4 +3550,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit.9abc88d9967d153b2cf8.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit.bef560f071a2e04a7ae5.js.map
