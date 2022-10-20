@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CommentsPage.c218494d3d935ec7f7e8.js
-// Retrieved at 10/20/2022, 9:40:06 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CommentsPage.c5a22cbc211f75aca61f.js
+// Retrieved at 10/20/2022, 12:40:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CommentsPage", "CollectionCommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~StandalonePostPage~reddit-comp~2f7e159a", "Governance~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compo~bd4baca2", "CollectionCommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~SearchResults", "Governance~ModListing~Reddit~ReportFlow~Subreddit", "ModListing~PostCreation~Reddit~StandalonePostPage~Subreddit", "Reddit~RpanListingUnit~reddit-components-LargePost~reddit-components-MediumPost", "CollectionCommentsPage~ModProgressModule~NewCommunityProgress", "Governance~ModListing~Reddit", "AchievementsActions"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -10910,32 +10910,30 @@
 				r = n("./node_modules/react/index.js"),
 				o = n.n(r),
 				i = n("./node_modules/react-redux/es/index.js"),
-				a = n("./node_modules/react-router-redux/es/index.js"),
-				c = n("./src/config.ts"),
-				d = n("./src/lib/classNames/index.ts"),
-				l = n("./src/lib/timeAgo/index.ts"),
-				u = n("./src/reddit/components/TrackingHelper/index.tsx"),
-				m = n("./src/reddit/constants/elementIds.ts"),
-				p = n("./src/reddit/controls/Button/index.tsx"),
-				b = n("./src/reddit/helpers/localStorage/index.ts"),
-				f = n("./src/reddit/selectors/telemetry.ts");
-			var C = n("./src/reddit/constants/experiments.ts"),
-				h = n("./src/reddit/helpers/chooseVariant/index.ts");
-			const g = e => {
-				return Object(h.c)(e, {
-					experimentEligibilitySelector: h.a,
-					experimentName: C.vf
-				}) === C.Rd
+				a = n("./src/config.ts"),
+				c = n("./src/lib/classNames/index.ts"),
+				d = n("./src/lib/timeAgo/index.ts"),
+				l = n("./src/reddit/components/TrackingHelper/index.tsx"),
+				u = n("./src/reddit/constants/elementIds.ts"),
+				m = n("./src/reddit/controls/Button/index.tsx"),
+				p = n("./src/reddit/helpers/localStorage/index.ts"),
+				b = n("./src/reddit/selectors/telemetry.ts");
+			var f = n("./src/reddit/constants/experiments.ts"),
+				C = n("./src/reddit/helpers/chooseVariant/index.ts");
+			const h = e => {
+				return Object(C.c)(e, {
+					experimentEligibilitySelector: C.a,
+					experimentName: f.vf
+				}) === f.Rd
 			};
-			var _ = n("./src/reddit/selectors/meta.ts"),
-				v = n("./src/reddit/selectors/user.ts"),
-				x = n("./src/reddit/components/BackToTop/index.m.less"),
-				O = n.n(x);
+			var g = n("./src/reddit/selectors/user.ts"),
+				_ = n("./src/reddit/components/BackToTop/index.m.less"),
+				v = n.n(_);
 			const {
-				fbt: y
-			} = n("./node_modules/fbt/lib/FbtPublic.js"), E = e => {
+				fbt: x
+			} = n("./node_modules/fbt/lib/FbtPublic.js"), O = e => {
 				if (e) {
-					const e = document.getElementById(m.e);
+					const e = document.getElementById(u.e);
 					e && e.scroll(0, 0)
 				} else window.scroll(0, 0)
 			};
@@ -10943,90 +10941,89 @@
 				let {
 					className: t,
 					isOverlay: n,
-					style: m
+					style: u
 				} = e;
-				const C = Object(u.b)(),
-					h = Object(r.useRef)(null),
-					[x, j] = Object(r.useState)(!1),
-					k = Object(i.d)(),
-					[I, S] = Object(r.useState)(),
-					[w, L] = Object(r.useState)(),
-					[T, P] = Object(r.useState)(0),
-					N = Object(i.e)(v.k),
-					M = Object(i.e)(g),
-					D = Object(i.e)(v.Q),
-					A = Object(i.e)(_.k),
-					R = encodeURIComponent(A + "/r/recap"),
-					F = c.a.accountManagerOrigin,
-					B = D ? "/r/recap" : `${F}/login/?dest=${R}`,
-					U = N ? N.id : "anonymous",
-					V = () => {
-						x && L(setTimeout(() => {
-							h.current && (h.current.classList.add(O.a.transform), h.current.style.width = `${T}px`)
-						}, 4750)), x && S(setTimeout(() => {
-							j(!1), Object(b.Qb)(U, !1)
+				const f = Object(l.b)(),
+					C = Object(r.useRef)(null),
+					[_, y] = Object(r.useState)(!1),
+					[E, j] = Object(r.useState)(),
+					[k, I] = Object(r.useState)(),
+					[S, w] = Object(r.useState)(0),
+					L = Object(i.e)(g.k),
+					T = Object(i.e)(h),
+					P = Object(i.e)(g.Q),
+					N = encodeURIComponent(a.a.redditUrl + "/r/recap"),
+					M = a.a.accountManagerOrigin,
+					D = P ? "/r/recap" : `${M}/login/?dest=${N}`,
+					A = L ? L.id : "anonymous",
+					R = () => {
+						_ && I(setTimeout(() => {
+							C.current && (C.current.classList.add(v.a.transform), C.current.style.width = `${S}px`)
+						}, 4750)), _ && j(setTimeout(() => {
+							y(!1), Object(p.Qb)(A, !1)
 						}, 5e3))
 					};
 				Object(r.useEffect)(() => {
 					setTimeout(() => {
-						const e = Object(b.N)(U);
-						e ? Object(l.e)(e.lastSeenTime) >= 24 && e.dropSkip === b.a.NONE ? j(!0) : Date.now() >= new Date(2022, 10, 2).getTime() && e.dropSkip !== b.a.SECOND && j(!0) : j(!0)
+						const e = Object(p.N)(A);
+						e ? Object(d.e)(e.lastSeenTime) >= 24 && e.dropSkip === p.a.NONE ? y(!0) : Date.now() >= new Date(2022, 10, 2).getTime() && e.dropSkip !== p.a.SECOND && y(!0) : y(!0)
 					})
-				}, [U]);
-				const W = Object(r.useCallback)(e => {
+				}, [A]);
+				const F = Object(r.useCallback)(e => {
 					if (e) {
 						const t = e.clientWidth;
-						P(t + 32)
+						w(t + 32)
 					}
 				}, []);
 				return o.a.createElement("div", {
-					className: Object(d.a)(t, O.a.container),
-					style: m
-				}, x && M && !n ? o.a.createElement("div", {
-					ref: h,
-					className: O.a.bananaPill,
+					className: Object(c.a)(t, v.a.container),
+					style: u
+				}, _ && T && !n ? o.a.createElement("a", {
+					ref: C,
+					href: D,
+					className: v.a.bananaPill,
 					onMouseEnter: () => {
-						I && clearTimeout(I), w && clearTimeout(w), h.current && (h.current.classList.remove(O.a.transform), h.current.style.width = "65px")
+						E && clearTimeout(E), k && clearTimeout(k), C.current && (C.current.classList.remove(v.a.transform), C.current.style.width = "65px")
 					},
-					onMouseLeave: V,
+					onMouseLeave: R,
 					onClick: () => {
-						I && clearTimeout(I), w && clearTimeout(w), j(!1), Object(b.Qb)(U, !0), k(Object(a.b)(B)), C((() => e => ({
+						E && clearTimeout(E), k && clearTimeout(k), y(!1), Object(p.Qb)(A, !0), f((() => e => ({
 							source: "recap",
 							action: "click",
 							noun: "feed_banana",
-							...f.o(e)
+							...b.o(e)
 						}))())
 					}
 				}, o.a.createElement("img", {
-					className: O.a.icon,
-					src: `${c.a.assetPath}/img/recap/banana_pill.png`,
-					alt: y._("banana", null, {
+					className: v.a.icon,
+					src: `${a.a.assetPath}/img/recap/banana_pill.png`,
+					alt: x._("banana", null, {
 						hk: "1fs9mn"
 					})
 				}), o.a.createElement("span", {
-					className: O.a.text
-				}, "+1"), y._("{=Back to Top}", [y._param("=Back to Top", o.a.createElement("span", {
-					ref: W,
-					className: O.a.altText
-				}, y._("Back to Top", null, {
+					className: v.a.text
+				}, "+1"), x._("{=Back to Top}", [x._param("=Back to Top", o.a.createElement("span", {
+					ref: F,
+					className: v.a.altText
+				}, x._("Back to Top", null, {
 					hk: "4BTAZ0"
 				})))], {
 					hk: "4Foziy"
 				}), o.a.createElement(s.a, {
 					onChange: e => {
-						e.isIntersecting && (V(), C((() => e => ({
+						e.isIntersecting && (R(), f((() => e => ({
 							source: "recap",
 							action: "view",
 							noun: "feed_banana",
-							...f.o(e)
+							...b.o(e)
 						}))()))
 					},
 					rootMargin: "0px 0px 0px 0px",
 					threshold: .5
-				}, o.a.createElement("div", null))) : o.a.createElement(p.a, {
-					className: O.a.button,
-					onClick: () => E(n)
-				}, y._("Back to Top", null, {
+				}, o.a.createElement("div", null))) : o.a.createElement(m.a, {
+					className: v.a.button,
+					onClick: () => O(n)
+				}, x._("Back to Top", null, {
 					hk: "YjBtV"
 				})))
 			}
@@ -44966,4 +44963,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommentsPage.c218494d3d935ec7f7e8.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommentsPage.c5a22cbc211f75aca61f.js.map
