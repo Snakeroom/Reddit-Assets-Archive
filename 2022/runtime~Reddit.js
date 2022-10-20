@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/runtime~Reddit.278a594de9b687e29e7b.js
-// Retrieved at 10/20/2022, 2:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/runtime~Reddit.02c8cd730a52ee895158.js
+// Retrieved at 10/20/2022, 4:50:06 PM by Reddit Dataminer v1.0.0
 ! function(e) {
 	function o(o) {
 		for (var a, n, r = o[0], s = o[1], c = o[2], l = 0, P = []; l < r.length; l++) n = r[l], Object.prototype.hasOwnProperty.call(d, n) && d[n] && P.push(d[n][0]), d[n] = 0;
@@ -1603,7 +1603,7 @@
 						EconomicsSubredditPremiumSidebarCards: "c2b256c6c26d65e851f2",
 						ExpandedCrosspost: "d794edb03d26baabdf46",
 						HarbergerTaxBannerPurchaseCTA: "2ba91b966b5576b7164a",
-						IdCard: "8e5bbc1ec720e2075561",
+						IdCard: "c03b8770b26ab3342fa4",
 						ModModeBanners: "9561d5cafdf10e4202b5",
 						MuxEmbed: "982b3400754d822142c4",
 						NewCommentPill: "d6f0c8bf46d992127fc9",
@@ -1812,4 +1812,4 @@
 	var m = c;
 	t()
 }([]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/runtime~Reddit.278a594de9b687e29e7b.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/runtime~Reddit.02c8cd730a52ee895158.js.map
