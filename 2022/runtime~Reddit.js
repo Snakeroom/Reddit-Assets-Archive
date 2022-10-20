@@ -1,10 +1,10 @@
-// https://www.redditstatic.com/desktop2x/runtime~Reddit.9f4163a1aea8b6afe6ba.js
-// Retrieved at 10/20/2022, 12:40:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/runtime~Reddit.add3c8fc5e6424cc18c1.js
+// Retrieved at 10/20/2022, 2:10:06 PM by Reddit Dataminer v1.0.0
 ! function(e) {
 	function o(o) {
-		for (var a, n, r = o[0], s = o[1], c = o[2], l = 0, P = []; l < r.length; l++) n = r[l], Object.prototype.hasOwnProperty.call(d, n) && d[n] && P.push(d[n][0]), d[n] = 0;
+		for (var a, n, r = o[0], s = o[1], c = o[2], l = 0, b = []; l < r.length; l++) n = r[l], Object.prototype.hasOwnProperty.call(d, n) && d[n] && b.push(d[n][0]), d[n] = 0;
 		for (a in s) Object.prototype.hasOwnProperty.call(s, a) && (e[a] = s[a]);
-		for (m && m(o); P.length;) P.shift()();
+		for (m && m(o); b.length;) b.shift()();
 		return i.push.apply(i, c || []), t()
 	}
 
@@ -707,7 +707,7 @@
 					"CountryPage~Frontpage~ModListing~Multireddit~ProfileComments~ProfileOverview~ProfilePosts~Subreddit": "60b0f4203473041d67bb",
 					ProfileComments: "8d165ca9f5b29c85285a",
 					ProfileOverview: "fee3062731e713350ec6",
-					SearchResults: "0e926218fdaf2969ac19",
+					SearchResults: "706edc0fab2ec1a7ff19",
 					"ModQueuePages~reddit-components-ModHub-Content-ModQueue": "e47f58a2c2390971f92f",
 					ModQueuePages: "8ffbe2031a6517eb7eaf",
 					GovernanceReleaseNotesModal: "cce92e308b81d1789985",
@@ -1029,12 +1029,12 @@
 				var m;
 				if ((c = (m = l[s]).getAttribute("data-href")) === a || c === d) return o()
 			}
-			var P = document.createElement("link");
-			P.rel = "stylesheet", P.type = "text/css", P.onload = o, P.onerror = function(o) {
+			var b = document.createElement("link");
+			b.rel = "stylesheet", b.type = "text/css", b.onload = o, b.onerror = function(o) {
 				var a = o && o.target && o.target.src || d,
 					i = new Error("Loading CSS chunk " + e + " failed.\n(" + a + ")");
-				i.code = "CSS_CHUNK_LOAD_FAILED", i.request = a, delete n[e], P.parentNode.removeChild(P), t(i)
-			}, P.href = d, document.getElementsByTagName("head")[0].appendChild(P)
+				i.code = "CSS_CHUNK_LOAD_FAILED", i.request = a, delete n[e], b.parentNode.removeChild(b), t(i)
+			}, b.href = d, document.getElementsByTagName("head")[0].appendChild(b)
 		})).then((function() {
 			n[e] = 0
 		})));
@@ -1434,7 +1434,7 @@
 						"CountryPage~Frontpage~ModListing~Multireddit~ProfileComments~ProfileOverview~ProfilePosts~Subreddit": "32517a8c935081e7ca81",
 						ProfileComments: "8cb5e6012003c8289e53",
 						ProfileOverview: "612891ded326922bbae9",
-						SearchResults: "e6f03f7e0f9a3f138c06",
+						SearchResults: "bcefef27e3ed6d44d1f0",
 						"ModQueuePages~reddit-components-ModHub-Content-ModQueue": "3f4dd0cea6cee33c71e4",
 						ModQueuePages: "68c3061bae6c182a51ac",
 						GovernanceReleaseNotesModal: "77dbe2af018694d2e859",
@@ -1812,4 +1812,4 @@
 	var m = c;
 	t()
 }([]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/runtime~Reddit.9f4163a1aea8b6afe6ba.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/runtime~Reddit.add3c8fc5e6424cc18c1.js.map
