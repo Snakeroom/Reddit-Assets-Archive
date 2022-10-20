@@ -1,10 +1,10 @@
-// https://www.redditstatic.com/desktop2x/runtime~Reddit.add3c8fc5e6424cc18c1.js
-// Retrieved at 10/20/2022, 2:10:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/runtime~Reddit.278a594de9b687e29e7b.js
+// Retrieved at 10/20/2022, 2:50:05 PM by Reddit Dataminer v1.0.0
 ! function(e) {
 	function o(o) {
-		for (var a, n, r = o[0], s = o[1], c = o[2], l = 0, b = []; l < r.length; l++) n = r[l], Object.prototype.hasOwnProperty.call(d, n) && d[n] && b.push(d[n][0]), d[n] = 0;
+		for (var a, n, r = o[0], s = o[1], c = o[2], l = 0, P = []; l < r.length; l++) n = r[l], Object.prototype.hasOwnProperty.call(d, n) && d[n] && P.push(d[n][0]), d[n] = 0;
 		for (a in s) Object.prototype.hasOwnProperty.call(s, a) && (e[a] = s[a]);
-		for (m && m(o); b.length;) b.shift()();
+		for (m && m(o); P.length;) P.shift()();
 		return i.push.apply(i, c || []), t()
 	}
 
@@ -1029,12 +1029,12 @@
 				var m;
 				if ((c = (m = l[s]).getAttribute("data-href")) === a || c === d) return o()
 			}
-			var b = document.createElement("link");
-			b.rel = "stylesheet", b.type = "text/css", b.onload = o, b.onerror = function(o) {
+			var P = document.createElement("link");
+			P.rel = "stylesheet", P.type = "text/css", P.onload = o, P.onerror = function(o) {
 				var a = o && o.target && o.target.src || d,
 					i = new Error("Loading CSS chunk " + e + " failed.\n(" + a + ")");
-				i.code = "CSS_CHUNK_LOAD_FAILED", i.request = a, delete n[e], b.parentNode.removeChild(b), t(i)
-			}, b.href = d, document.getElementsByTagName("head")[0].appendChild(b)
+				i.code = "CSS_CHUNK_LOAD_FAILED", i.request = a, delete n[e], P.parentNode.removeChild(P), t(i)
+			}, P.href = d, document.getElementsByTagName("head")[0].appendChild(P)
 		})).then((function() {
 			n[e] = 0
 		})));
@@ -1425,7 +1425,7 @@
 						"CollectionCommentsPage~CommentsPage~CountryPage~Frontpage~GovernanceReleaseNotesModal~ModListing~Mod~e3d63e32": "ca032356c444121d190b",
 						"CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~ModerationPages~PostCreation~Profile~9a5d9fab": "d5aed4279d09220ea2ae",
 						"CollectionCommentsPage~CommentsPage~ModQueuePages~ModerationPages~PostCreation~ProfileComments~Profi~a5ca5d05": "f0253c9944c4bf0d8d74",
-						"CollectionCommentsPage~CommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~RpanListingUnit~S~5809214e": "8e308d8e2ddadfffcb53",
+						"CollectionCommentsPage~CommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~RpanListingUnit~S~5809214e": "21862bcc7a2a67f4dca9",
 						"CollectionCommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~StandalonePostPage~reddit-comp~2f7e159a": "7360d9b61a8ff15b8b71",
 						"CollectionCommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~SearchResults": "900b70873038478ee363",
 						"CollectionCommentsPage~ModProgressModule~NewCommunityProgress": "95a21e7698a698b8de83",
@@ -1574,7 +1574,7 @@
 						SubredditPremiumUploadModal: "665816f10fd67372c027",
 						PostCreation: "8263c99ab97cc07ff117",
 						"vendors~ModerationPages": "94c34813eaf24a1890ea",
-						ModerationPages: "e09da081e51bac647a95",
+						ModerationPages: "5a21c089399ef678d93e",
 						"vendors~ModStatsChart~Settings~ViewsTooltip": "ca7c845d62fd39d960b6",
 						"vendors~Settings": "86b1cfc53320ea8eef91",
 						Settings: "163449f83bce6e7ec907",
@@ -1596,7 +1596,7 @@
 						gildActions: "0d42911d74f776185640",
 						"reddit-components-SidebarNativeAd": "ad872c088f2d49efcffb",
 						CommentsPageNativeAd: "8ad7bac39376cf12ff0b",
-						ReportFlow: "c04df35c42c3823c23ae",
+						ReportFlow: "cf84ffed7ea6cd1a636f",
 						CreatorStats: "efae0c92606f03491d7b",
 						CrosspostRecommendationsModal: "aff848d58bb35b1ea241",
 						CryptoVault: "d47e545e77645d1b234c",
@@ -1608,7 +1608,7 @@
 						MuxEmbed: "982b3400754d822142c4",
 						NewCommentPill: "d6f0c8bf46d992127fc9",
 						PostDetailStickyHeader: "366695819ffa1f72dd19",
-						ReportFlowNew: "1b4da91973bb8385f85e",
+						ReportFlowNew: "da068cdc4e702d7e10a1",
 						RichTextJsonEmoteTooltip: "7c76af0689040b91fbdc",
 						SubredditMentionWithIcon: "700c3efe8ac05bef3dc6",
 						UserAchievementFlair: "e818e39b248ddb51aa64",
@@ -1812,4 +1812,4 @@
 	var m = c;
 	t()
 }([]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/runtime~Reddit.add3c8fc5e6424cc18c1.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/runtime~Reddit.278a594de9b687e29e7b.js.map
