@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostDraft.cf217c7a9d026d7d2c8e.js
-// Retrieved at 10/20/2022, 6:10:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostDraft.d100f90d08013c9825a0.js
+// Retrieved at 10/20/2022, 7:30:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostDraft"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -324,7 +324,7 @@
 			})), n.d(t, "a", (function() {
 				return U
 			})), n.d(t, "c", (function() {
-				return V
+				return G
 			})), n.d(t, "h", (function() {
 				return X
 			})), n.d(t, "f", (function() {
@@ -547,7 +547,7 @@
 							hk: "4Ck6Cm"
 						})
 					}))
-				}, G = Object(i.a)(c.e), V = (e, t) => async (n, i, a) => {
+				}, V = Object(i.a)(c.e), G = (e, t) => async (n, i, a) => {
 					let {
 						apiContext: c
 					} = a;
@@ -558,7 +558,7 @@
 						} = l.platform.currentPage, a = Object(P.q)(l, {
 							collectionId: e
 						}), c = a && a.title || "", u = a && a.subredditId, m = u ? Object(T.c)(l, u) : "/";
-						n(G({
+						n(V({
 							collectionId: e,
 							collection: a
 						})), n(t ? Object(r.c)(Object(o.a)(i, ["collection"])) : Object(r.b)(m)), n(Object(d.f)({
@@ -2742,7 +2742,7 @@
 							{
 								H: s,
 								D: o
-							} = V(e.a),
+							} = G(e.a),
 							{
 								c: d = []
 							} = e;
@@ -2860,16 +2860,16 @@
 						f: n,
 						t: r
 					} = e, o = [];
-					if (!n) return G(0, r, t);
+					if (!n) return V(0, r, t);
 					const i = Object(s.a)(r);
 					let a = 0,
 						c = 0;
 					const d = n.length;
 					for (; a < d; a++) {
 						const [e, t, s] = n[a], d = t + s, l = i[t], u = i[d] - l;
-						l > c && o.push(G(0, r.substr(c, l - c), `between${a}`)), o.push(G(e, r.substr(l, u), a)), c = l + u
+						l > c && o.push(V(0, r.substr(c, l - c), `between${a}`)), o.push(V(e, r.substr(l, u), a)), c = l + u
 					}
-					return c < r.length && o.push(G(0, r.substr(c), `remaining${a}`)), o
+					return c < r.length && o.push(V(0, r.substr(c), `remaining${a}`)), o
 				},
 				U = {
 					[m.j.monospace]: c.h,
@@ -2880,13 +2880,13 @@
 					[m.j.subscript]: c.l,
 					[m.j.superscript]: c.m
 				},
-				G = (e, t, n) => {
+				V = (e, t, n) => {
 					let s = t;
 					return s = o()(U, (t, s, r) => e & parseInt(r, 10) ? a.a.createElement(s, {
 						key: n
 					}, t) : t, s)
 				},
-				V = e => {
+				G = e => {
 					switch (e) {
 						case m.f:
 							return {
@@ -3224,12 +3224,12 @@
 						rtJsonElementProps: i
 					});
 					switch (o) {
-						case h.Uf.SmIcon:
+						case h.Vf.SmIcon:
 							return r.a.createElement(p, {
 								subredditName: s,
 								rtJsonElementProps: i
 							});
-						case h.Uf.SmIconHc:
+						case h.Vf.SmIconHc:
 							return r.a.createElement(p, {
 								subredditName: s,
 								isHoverable: !0,
@@ -4814,8 +4814,8 @@
 				H = n("./src/reddit/layout/page/Listing/index.tsx"),
 				W = n("./src/reddit/pages/ErrorPages/index.tsx"),
 				U = n("./src/reddit/selectors/postDraft.ts");
-			const G = Object(d.u)(),
-				V = Object(i.c)({
+			const V = Object(d.u)(),
+				G = Object(i.c)({
 					draft: (e, t) => {
 						let {
 							match: n
@@ -4825,7 +4825,7 @@
 						})
 					}
 				}),
-				J = Object(o.b)(V);
+				J = Object(o.b)(G);
 			class z extends s.Component {
 				render() {
 					const {
@@ -4847,7 +4847,7 @@
 					})
 				}
 			}
-			t.default = G(J(z))
+			t.default = V(J(z))
 		},
 		"./src/reddit/selectors/experiments/d2xPdpSideRailRecs.ts": function(e, t, n) {
 			"use strict";
@@ -4896,12 +4896,12 @@
 				c = e => {
 					return Object(o.c)(e, {
 						experimentEligibilitySelector: a,
-						experimentName: s.Of
+						experimentName: s.Pf
 					}) || ""
 				},
 				d = e => {
 					const t = c(e);
-					return t === s.Uf.SmIcon || t === s.Uf.SmIconHc
+					return t === s.Vf.SmIcon || t === s.Vf.SmIconHc
 				},
 				l = (e, t) => {
 					let {
@@ -4927,4 +4927,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostDraft.cf217c7a9d026d7d2c8e.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostDraft.d100f90d08013c9825a0.js.map

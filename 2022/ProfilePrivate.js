@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfilePrivate.87e44edde0f4191f55a4.js
-// Retrieved at 10/20/2022, 5:00:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfilePrivate.678f6b8bcffeae65fca3.js
+// Retrieved at 10/20/2022, 7:30:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfilePrivate"], {
 		"./node_modules/lodash/take.js": function(e, t, s) {
@@ -737,7 +737,7 @@
 			const g = e => {
 				return Object(f.c)(e, {
 					experimentEligibilitySelector: f.a,
-					experimentName: h.tf
+					experimentName: h.uf
 				}) === h.Pd
 			};
 			var x = s("./src/reddit/selectors/user.ts"),
@@ -6819,10 +6819,10 @@
 				r = s("./src/reddit/constants/experiments.ts"),
 				o = s("./src/reddit/helpers/chooseVariant/index.ts");
 			const i = Object(n.a)(e => Object(o.c)(e, {
-					experimentName: r.gg,
+					experimentName: r.hg,
 					experimentEligibilitySelector: o.a
 				}), e => e),
-				d = Object(n.a)(i, e => e === r.Xf)
+				d = Object(n.a)(i, e => e === r.Yf)
 		},
 		"./src/reddit/selectors/tracking.ts": function(e, t, s) {
 			"use strict";
@@ -6898,4 +6898,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfilePrivate.87e44edde0f4191f55a4.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfilePrivate.678f6b8bcffeae65fca3.js.map

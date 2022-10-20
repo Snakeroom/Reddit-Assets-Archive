@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~Reddit~SubredditForkingCTA.b5a09e05503893fda717.js
-// Retrieved at 10/20/2022, 6:10:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~Reddit~SubredditForkingCTA.54a3359d60817a39c76d.js
+// Retrieved at 10/20/2022, 7:30:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~Reddit~SubredditForkingCTA"], {
 		"./src/lib/bigNumberUtils/percent.ts": function(t, e, r) {
@@ -1462,7 +1462,7 @@
 								postFieldValidationPending: Promise.resolve()
 							})), Object(l.b)(D)
 						}
-						await e(Object(n.b)(`${r.path}`)), p ? p === b.Te.NewModule && e(Object(c.h)({
+						await e(Object(n.b)(`${r.path}`)), p ? p === b.Ue.NewModule && e(Object(c.h)({
 							tooltipId: u.MOD_WELCOME_TOOLTIP_ID
 						})) : (e(Object(o.h)(f.a.POST_FLOW_UPSELL_MODAL_ID)), Object(k.a)(Object(E.g)()(x))), Object(j.b)(j.a.SubredditCreation), e(Object(T.f)(i, null !== (g = Object(C.bb)(x)) && void 0 !== g ? g : Object(I.j)(x)))
 					} else w.error && Object(k.a)(Object(E.h)(w.error.type, N)(x)), e(U({
@@ -3045,4 +3045,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit~SubredditForkingCTA.b5a09e05503893fda717.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit~SubredditForkingCTA.54a3359d60817a39c76d.js.map

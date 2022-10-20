@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~Reddit.cf1f580587a960632cc6.js
-// Retrieved at 10/20/2022, 5:00:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~Reddit.28b7ca0e45cbc89792b7.js
+// Retrieved at 10/20/2022, 7:30:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~Reddit"], {
 		"./assets/fonts/NotoMono/font.less": function(e, t, n) {},
@@ -2195,7 +2195,7 @@
 			const D = e => _.d.reCaptchaEnterprise(e) && !Object(T.d)(e),
 				w = e => !!Object(S.c)(e, {
 					experimentEligibilitySelector: Object(I.d)(Object(I.b)(...a.d)),
-					experimentName: f.sf
+					experimentName: f.tf
 				}),
 				j = Object(r.b)("LOAD_RECAPTCHA_ENTERPRISE"),
 				C = () => l(e => p()([D, w, e => e.tracking.reCaptchaEnterprise.load === r.a.New], t => t(e)))(async e => {
@@ -25739,7 +25739,7 @@
 					if (!u(e)) return;
 					const t = Object(o.c)(e, {
 						experimentEligibilitySelector: l,
-						experimentName: a.je,
+						experimentName: a.ke,
 						expEventOverride: !1
 					});
 					return null == t ? void 0 : t.toLocaleLowerCase()
@@ -25762,9 +25762,9 @@
 				},
 				b = e => !!p(e) && Object(o.c)(e, {
 					experimentEligibilitySelector: u,
-					experimentName: a.ke,
+					experimentName: a.le,
 					expEventOverride: !1
-				}) !== a.le.Readonly
+				}) !== a.me.Readonly
 		},
 		"./src/reddit/selectors/experiments/serpTabPreserved.ts": function(e, t, n) {
 			"use strict";
@@ -25928,4 +25928,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit.cf1f580587a960632cc6.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit.28b7ca0e45cbc89792b7.js.map

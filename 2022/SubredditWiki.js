@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditWiki.f381bda676d7d4d2b261.js
-// Retrieved at 10/20/2022, 6:10:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditWiki.4f3adb162b3fd21c9f9e.js
+// Retrieved at 10/20/2022, 7:30:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditWiki", "AchievementsActions"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, r) {
@@ -2859,7 +2859,7 @@
 			const g = e => {
 				return Object(f.c)(e, {
 					experimentEligibilitySelector: f.a,
-					experimentName: h.tf
+					experimentName: h.uf
 				}) === h.Pd
 			};
 			var x = r("./src/reddit/selectors/user.ts"),
@@ -8439,12 +8439,12 @@
 						rtJsonElementProps: a
 					});
 					switch (i) {
-						case h.Uf.SmIcon:
+						case h.Vf.SmIcon:
 							return n.a.createElement(p, {
 								subredditName: s,
 								rtJsonElementProps: a
 							});
-						case h.Uf.SmIconHc:
+						case h.Vf.SmIconHc:
 							return n.a.createElement(p, {
 								subredditName: s,
 								isHoverable: !0,
@@ -9310,7 +9310,7 @@
 						} = t;
 						return Object(De.c)(e, r)
 					},
-					isInNewModuleNCPV3Experiment: e => Object(Re.a)(e) === Te.Te.NewModule,
+					isInNewModuleNCPV3Experiment: e => Object(Re.a)(e) === Te.Ue.NewModule,
 					showGovernance: Pe.d.spPoints,
 					showLeaderboard: Pe.d.spLeaderboard,
 					showPredictionsLeaderboard: (e, t) => {
@@ -11779,7 +11779,7 @@
 				d = e => a.includes(e),
 				c = Object(s.a)(e => Object(i.c)(e, {
 					experimentEligibilitySelector: i.a,
-					experimentName: n.me
+					experimentName: n.ne
 				}), e => e === n.Pd)
 		},
 		"./src/reddit/selectors/subredditMention.ts": function(e, t, r) {
@@ -11805,12 +11805,12 @@
 				d = e => {
 					return Object(i.c)(e, {
 						experimentEligibilitySelector: o,
-						experimentName: s.Of
+						experimentName: s.Pf
 					}) || ""
 				},
 				c = e => {
 					const t = d(e);
-					return t === s.Uf.SmIcon || t === s.Uf.SmIconHc
+					return t === s.Vf.SmIcon || t === s.Vf.SmIconHc
 				},
 				l = (e, t) => {
 					let {
@@ -12006,4 +12006,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditWiki.f381bda676d7d4d2b261.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditWiki.4f3adb162b3fd21c9f9e.js.map

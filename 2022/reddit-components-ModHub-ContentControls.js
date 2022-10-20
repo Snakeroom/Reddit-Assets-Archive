@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-ModHub-ContentControls.a2a7882691edf8ede0da.js
-// Retrieved at 10/20/2022, 6:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-ModHub-ContentControls.9f0005fe704cd6951bd3.js
+// Retrieved at 10/20/2022, 7:30:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-ModHub-ContentControls"], {
 		"./node_modules/lodash/negate.js": function(e, t) {
@@ -923,7 +923,7 @@
 				const {
 					formState: t,
 					onChange: n
-				} = e, i = Object(ct.a)(dt.ie) === dt.Pd, o = $e.some(e => t.hatefulContentFilters[e.name] !== F.a.Off), r = i && o;
+				} = e, i = Object(ct.a)(dt.je) === dt.Pd, o = $e.some(e => t.hatefulContentFilters[e.name] !== F.a.Off), r = i && o;
 				return d.a.createElement("fieldset", null, d.a.createElement("legend", {
 					className: ut.a.title
 				}, s.fbt._("Automated Filtering", null, {
@@ -1803,4 +1803,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ModHub-ContentControls.a2a7882691edf8ede0da.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ModHub-ContentControls.9f0005fe704cd6951bd3.js.map
