@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-CompactPost.a5b299e1d8d3ff1c6572.js
-// Retrieved at 10/20/2022, 5:00:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-CompactPost.e5901018983006c40aa4.js
+// Retrieved at 10/20/2022, 6:10:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-CompactPost", "Reddit~RpanListingUnit~reddit-components-LargePost~reddit-components-MediumPost"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -3471,7 +3471,10 @@
 					subreddit: Object(a.jb)(e),
 					profile: Object(a.T)(e),
 					post: Object(a.K)(e, t),
-					comment: Object(a.h)(e, t)
+					comment: Object(a.h)({
+						state: e,
+						commentId: t
+					})
 				}),
 				l = (e, t) => {
 					const n = Object(i.b)(e, {
@@ -3522,7 +3525,10 @@
 					action: s.c.SUBMIT,
 					noun: "reply",
 					post: Object(a.K)(t, e),
-					comment: Object(a.h)(t, e),
+					comment: Object(a.h)({
+						state: t,
+						commentId: e
+					}),
 					actionInfo: Object(a.d)(t, {
 						reason: "live_post",
 						type: "live_post"
@@ -3820,7 +3826,10 @@
 							reason: s ? "live_post" : void 0,
 							...n
 						}),
-						comment: t ? i.h(e, t) : void 0,
+						comment: t ? i.h({
+							state: e,
+							commentId: t
+						}) : void 0,
 						correlationId: Object(l.b)(e) || Object(c.d)(c.a.GildingFlow, !1),
 						post: t ? i.K(e, t) : void 0,
 						screen: i.bb(e),
@@ -4057,7 +4066,10 @@
 					} = t, f = !!n, h = o.b(e), v = h ? Object(u.getAwardTypeFromAward)(h) : null, _ = f ? v : a.o(e) ? d.GoldPurchaseType.Premium : d.GoldPurchaseType.Coins, g = n ? Object(p.a)(n) ? "comment" : "post" : void 0, O = l || a.t(e), x = [...Object(i.d)(e), ...Object(i.f)(e)].filter(e => e.mobileId === O)[0], C = t.offerContext || (h && 0 === h.coinPrice ? s.a.StorefrontFreeAward : Object(s.d)(x, f)), E = x ? Math.round(1e4 * (x.baselinePennies - x.pennies) / x.baselinePennies) / 100 : 0, y = x ? Math.round(1e4 * (x.coins - x.baselineCoins) / x.coins) / 100 : 0, j = x ? x.baselinePennies !== x.pennies ? `${E}_percent_price` : x.baselineCoins !== x.coins ? `${y}_percent_bonus` : void 0 : void 0, S = _ === d.GoldPurchaseType.Premium ? r.Db : x ? x.pennies : void 0;
 					return {
 						...c.o(e),
-						comment: n ? c.h(e, n) : null,
+						comment: n ? c.h({
+							state: e,
+							commentId: n
+						}) : null,
 						correlationId: a.r(e) || Object(m.d)(m.a.GoldPayment, !1),
 						post: n ? c.K(e, n) : null,
 						screen: c.bb(e),
@@ -4208,7 +4220,10 @@
 					post: a.K(r, e)
 				}),
 				l = (e, t, n, r) => s => {
-					const i = n ? a.h(s, n) : null,
+					const i = n ? a.h({
+							state: s,
+							commentId: n
+						}) : null,
 						{
 							sortToUse: c
 						} = Object(o.a)(s, e);
@@ -4299,7 +4314,10 @@
 					action: "click",
 					noun: e,
 					post: Object(s.K)(n, t),
-					comment: Object(s.h)(n, t),
+					comment: Object(s.h)({
+						state: n,
+						commentId: t
+					}),
 					media: {
 						mimetype: Object(s.j)(n, t)
 					},
@@ -4310,7 +4328,10 @@
 					action: r.c.CLICK,
 					noun: e,
 					post: Object(s.K)(n, t),
-					comment: Object(s.h)(n, t),
+					comment: Object(s.h)({
+						state: n,
+						commentId: t
+					}),
 					actionInfo: {
 						pageType: "chat_live_post"
 					},
@@ -4321,7 +4342,10 @@
 					action: r.c.UNDO,
 					noun: e,
 					post: Object(s.K)(n, t),
-					comment: Object(s.h)(n, t),
+					comment: Object(s.h)({
+						state: n,
+						commentId: t
+					}),
 					...o(n)
 				}),
 				u = (e, t) => n => ({
@@ -4329,7 +4353,10 @@
 					action: "click",
 					noun: e,
 					post: Object(s.K)(n, t),
-					comment: Object(s.h)(n, t),
+					comment: Object(s.h)({
+						state: n,
+						commentId: t
+					}),
 					...o(n)
 				}),
 				m = (e, t) => n => ({
@@ -4337,7 +4364,10 @@
 					action: "click",
 					noun: e,
 					post: Object(s.K)(n, t),
-					comment: Object(s.h)(n, t),
+					comment: Object(s.h)({
+						state: n,
+						commentId: t
+					}),
 					...o(n)
 				}),
 				p = (e, t) => n => ({
@@ -4345,14 +4375,20 @@
 					action: "click",
 					noun: e,
 					post: Object(s.K)(n, t),
-					comment: Object(s.h)(n, t),
+					comment: Object(s.h)({
+						state: n,
+						commentId: t
+					}),
 					...o(n)
 				}),
 				b = (e, t) => n => ({
 					source: "comment_report_menu",
 					action: "click",
 					noun: e,
-					comment: Object(s.h)(n, t),
+					comment: Object(s.h)({
+						state: n,
+						commentId: t
+					}),
 					post: Object(s.K)(n, t),
 					...o(n)
 				}),
@@ -4374,7 +4410,10 @@
 					source: "comment",
 					action: "click",
 					noun: e,
-					comment: Object(s.h)(n, t),
+					comment: Object(s.h)({
+						state: n,
+						commentId: t
+					}),
 					post: Object(s.K)(n, t),
 					subreddit: Object(s.mb)(n, t)
 				}),
@@ -4388,7 +4427,10 @@
 						reason: r
 					},
 					...e && {
-						comment: Object(s.h)(o, n)
+						comment: Object(s.h)({
+							state: o,
+							commentId: n
+						})
 					}
 				}),
 				g = () => e => ({
@@ -6305,4 +6347,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-CompactPost.a5b299e1d8d3ff1c6572.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-CompactPost.e5901018983006c40aa4.js.map

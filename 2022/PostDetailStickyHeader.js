@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostDetailStickyHeader.366695819ffa1f72dd19.js
-// Retrieved at 10/19/2022, 12:30:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostDetailStickyHeader.e9dbf6854d67f5fa78a1.js
+// Retrieved at 10/20/2022, 6:10:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostDetailStickyHeader"], {
 		"./src/reddit/actions/shortcuts/close.ts": function(t, e, s) {
@@ -183,7 +183,7 @@
 				P = s("./src/reddit/contexts/Post/index.tsx"),
 				w = s("./src/reddit/components/LightboxHeader/index.m.less"),
 				A = s.n(w);
-			const D = Object(a.c)({
+			const I = Object(a.c)({
 					subreddit: (t, e) => {
 						let {
 							page: s,
@@ -213,7 +213,7 @@
 						})
 					}
 				}),
-				I = Object(r.b)(D, (t, e) => {
+				D = Object(r.b)(I, (t, e) => {
 					let {
 						sendEvent: s
 					} = e;
@@ -377,7 +377,7 @@
 					hk: "4gbyAA"
 				})
 			}));
-			e.a = Object(_.c)(I(T))
+			e.a = Object(_.c)(D(T))
 		},
 		"./src/reddit/components/PostDetailStickyHeader/index.m.less": function(t, e, s) {
 			t.exports = {
@@ -478,7 +478,10 @@
 					source: "shortcuts",
 					action: "submit",
 					noun: t,
-					comment: n.h(s, e)
+					comment: n.h({
+						state: s,
+						commentId: e
+					})
 				}),
 				a = o("show_panel"),
 				c = o("esc_close"),
@@ -538,4 +541,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostDetailStickyHeader.366695819ffa1f72dd19.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostDetailStickyHeader.e9dbf6854d67f5fa78a1.js.map

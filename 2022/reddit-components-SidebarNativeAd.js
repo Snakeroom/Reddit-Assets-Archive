@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-SidebarNativeAd.3314b300ac95cb2ca2d1.js
-// Retrieved at 10/20/2022, 5:00:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-SidebarNativeAd.5eac8f23cfd20e2f1be2.js
+// Retrieved at 10/20/2022, 6:10:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-SidebarNativeAd"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -3044,7 +3044,10 @@
 					subreddit: Object(a.jb)(e),
 					profile: Object(a.T)(e),
 					post: Object(a.K)(e, t),
-					comment: Object(a.h)(e, t)
+					comment: Object(a.h)({
+						state: e,
+						commentId: t
+					})
 				}),
 				l = (e, t) => {
 					const n = Object(i.b)(e, {
@@ -3095,7 +3098,10 @@
 					action: s.c.SUBMIT,
 					noun: "reply",
 					post: Object(a.K)(t, e),
-					comment: Object(a.h)(t, e),
+					comment: Object(a.h)({
+						state: t,
+						commentId: e
+					}),
 					actionInfo: Object(a.d)(t, {
 						reason: "live_post",
 						type: "live_post"
@@ -3393,7 +3399,10 @@
 							reason: s ? "live_post" : void 0,
 							...n
 						}),
-						comment: t ? i.h(e, t) : void 0,
+						comment: t ? i.h({
+							state: e,
+							commentId: t
+						}) : void 0,
 						correlationId: Object(l.b)(e) || Object(c.d)(c.a.GildingFlow, !1),
 						post: t ? i.K(e, t) : void 0,
 						screen: i.bb(e),
@@ -3630,7 +3639,10 @@
 					} = t, f = !!n, h = o.b(e), v = h ? Object(u.getAwardTypeFromAward)(h) : null, g = f ? v : a.o(e) ? d.GoldPurchaseType.Premium : d.GoldPurchaseType.Coins, _ = n ? Object(p.a)(n) ? "comment" : "post" : void 0, y = l || a.t(e), O = [...Object(i.d)(e), ...Object(i.f)(e)].filter(e => e.mobileId === y)[0], x = t.offerContext || (h && 0 === h.coinPrice ? s.a.StorefrontFreeAward : Object(s.d)(O, f)), E = O ? Math.round(1e4 * (O.baselinePennies - O.pennies) / O.baselinePennies) / 100 : 0, k = O ? Math.round(1e4 * (O.coins - O.baselineCoins) / O.coins) / 100 : 0, j = O ? O.baselinePennies !== O.pennies ? `${E}_percent_price` : O.baselineCoins !== O.coins ? `${k}_percent_bonus` : void 0 : void 0, w = g === d.GoldPurchaseType.Premium ? r.Db : O ? O.pennies : void 0;
 					return {
 						...c.o(e),
-						comment: n ? c.h(e, n) : null,
+						comment: n ? c.h({
+							state: e,
+							commentId: n
+						}) : null,
 						correlationId: a.r(e) || Object(m.d)(m.a.GoldPayment, !1),
 						post: n ? c.K(e, n) : null,
 						screen: c.bb(e),
@@ -4851,4 +4863,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-SidebarNativeAd.3314b300ac95cb2ca2d1.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-SidebarNativeAd.5eac8f23cfd20e2f1be2.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CommentsPage~Governance~Reddit~ReportFlow~Subreddit~reddit-components-BlankPost~reddit-components-Cl~5351df81.383f76cc09f31f4ad6b1.js
-// Retrieved at 10/20/2022, 5:00:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CommentsPage~Governance~Reddit~ReportFlow~Subreddit~reddit-components-BlankPost~reddit-components-Cl~5351df81.92513a32773458c7495e.js
+// Retrieved at 10/20/2022, 6:10:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CommentsPage~Governance~Reddit~ReportFlow~Subreddit~reddit-components-BlankPost~reddit-components-Cl~5351df81"], {
 		"./src/lib/name/index.ts": function(e, t, r) {
@@ -186,7 +186,7 @@
 							commentId: e
 						});
 					if (!d || Math.random() > n.a.telemetry.commentSampleRate) return;
-					_.c({
+					_.d({
 						state: s,
 						commentId: e,
 						collapsed: d.collapsed
@@ -7103,7 +7103,7 @@
 				i = r("./src/reddit/constants/things.ts"),
 				d = r("./src/reddit/models/Upload/index.ts"),
 				o = r("./src/reddit/models/Vote/index.ts");
-			const c = e => e.rteState ? s.a.toRichTextJSON(e.rteState) : e.rtJson || e.text,
+			const c = (e, t) => e.rteState ? s.a.toRichTextJSON(e.rteState, t) : e.rtJson || e.text,
 				a = (e, t) => {
 					let r = [];
 					return e.rteState ? r = s.a.toRichTextJSON(e.rteState, t).document : e.rtJson && (r = e.rtJson.document), {
@@ -8125,52 +8125,56 @@
 		},
 		"./src/reddit/helpers/trackers/comment.ts": function(e, t, r) {
 			"use strict";
-			r.d(t, "c", (function() {
-				return i
-			})), r.d(t, "a", (function() {
+			r.d(t, "d", (function() {
 				return d
-			})), r.d(t, "b", (function() {
+			})), r.d(t, "a", (function() {
 				return o
+			})), r.d(t, "b", (function() {
+				return c
+			})), r.d(t, "c", (function() {
+				return a
 			}));
 			var n = r("./src/telemetry/index.ts"),
 				s = r("./src/reddit/selectors/telemetry.ts");
-			const i = e => {
-					let {
-						state: t,
-						commentId: r,
-						collapsed: i
-					} = e;
-					return Object(n.a)({
-						source: "comment",
-						action: "view",
-						noun: i ? "collapsed_comment" : "comment",
-						...s.o(t),
-						profile: s.T(t),
-						post: s.K(t, r),
-						media: s.C(t, r),
-						subreddit: s.jb(t),
-						comment: s.h(t, r)
+			const i = (e, t) => ({
+					profile: s.T(e),
+					post: s.K(e, t),
+					media: s.C(e, t),
+					subreddit: s.jb(e),
+					comment: s.h({
+						state: e,
+						commentId: t
 					})
-				},
+				}),
 				d = e => {
 					let {
 						state: t,
 						commentId: r,
-						collapsed: i
+						collapsed: d
+					} = e;
+					return Object(n.a)({
+						source: "comment",
+						action: "view",
+						noun: d ? "collapsed_comment" : "comment",
+						...s.o(t),
+						...i(t, r)
+					})
+				},
+				o = e => {
+					let {
+						state: t,
+						commentId: r,
+						collapsed: d
 					} = e;
 					return Object(n.a)({
 						source: "comment",
 						action: "consume",
-						noun: i ? "collapsed_comment" : "comment",
+						noun: d ? "collapsed_comment" : "comment",
 						...s.o(t),
-						profile: s.T(t),
-						post: s.K(t, r),
-						media: s.C(t, r),
-						subreddit: s.jb(t),
-						comment: s.h(t, r)
+						...i(t, r)
 					})
 				},
-				o = e => t => ({
+				c = e => t => ({
 					source: "online_presence",
 					action: "view",
 					noun: "user",
@@ -8181,6 +8185,13 @@
 					app: s.f(t),
 					referrer: s.Y(t),
 					session: s.fb(t)
+				}),
+				a = e => t => ({
+					source: "post_detail",
+					action: "click",
+					noun: "comment_image",
+					...s.o(t),
+					...i(t, e)
 				})
 		},
 		"./src/reddit/helpers/trackers/communityTopics.ts": function(e, t, r) {
@@ -12153,4 +12164,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommentsPage~Governance~Reddit~ReportFlow~Subreddit~reddit-components-BlankPost~reddit-components-Cl~5351df81.383f76cc09f31f4ad6b1.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommentsPage~Governance~Reddit~ReportFlow~Subreddit~reddit-components-BlankPost~reddit-components-Cl~5351df81.92513a32773458c7495e.js.map
