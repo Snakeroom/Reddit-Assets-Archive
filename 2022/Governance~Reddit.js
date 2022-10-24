@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~Reddit.3381bfd66949037ed917.js
-// Retrieved at 10/24/2022, 10:40:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~Reddit.28a79afe68b5110b64dc.js
+// Retrieved at 10/24/2022, 1:40:14 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~Reddit"], {
 		"./assets/fonts/NotoMono/font.less": function(e, t, n) {},
@@ -4267,45 +4267,46 @@
 					searchItem: n,
 					position: o,
 					searchOriginPage: d,
-					onTriggerSearch: l
+					isFocused: l,
+					onTriggerSearch: p
 				} = e;
-				var p;
-				const v = (null === (p = n.searchQuery) || void 0 === p ? void 0 : p.trim()) || "",
-					_ = Object(m.a)(),
-					I = Object(Z.a)(),
-					S = Object(X.Z)(I),
-					D = Object(a.d)(),
+				var v;
+				const _ = (null === (v = n.searchQuery) || void 0 === v ? void 0 : v.trim()) || "",
+					I = Object(m.a)(),
+					S = Object(Z.a)(),
+					D = Object(X.Z)(S),
+					w = Object(a.d)(),
 					{
-						experimentState: w,
-						isActive: j,
-						isBucketed: C
+						experimentState: j,
+						isActive: C,
+						isBucketed: A
 					} = Object(a.e)(ee.a),
-					A = Object(a.e)(H.j),
-					P = Object(a.e)(O.lb),
+					P = Object(a.e)(H.j),
+					R = Object(a.e)(O.lb),
 					{
-						nsfwSessionSetting: R
+						nsfwSessionSetting: N
 					} = Object(f.b)(),
-					N = Object(a.e)(te.r),
-					L = Object(a.e)(te.d),
-					k = Object(a.e)(q),
-					U = Object(J.c)(A),
-					B = Object(u.e)({
-						...W()(S || {}, z.C),
+					L = Object(a.e)(te.r),
+					k = Object(a.e)(te.d),
+					U = Object(a.e)(q),
+					B = Object(J.c)(P),
+					F = Object(u.e)({
+						...W()(D || {}, z.C),
 						q: n.searchQuery,
-						restrict_sr: A.enabled ? "1" : ""
+						restrict_sr: P.enabled ? "1" : ""
 					});
 				return Object(r.useEffect)(() => {
-					_(Object(y.v)(B, o, I || void 0))
+					I(Object(y.v)(F, o, S || void 0))
 				}, []), s.a.createElement("button", {
 					type: "submit",
 					onClick: function(e) {
-						_(Object(y.p)(E.a.FullSearchButton, B, x.a.Typeahead, I || void 0)), l(e),
+						I(Object(y.p)(E.a.FullSearchButton, F, x.a.Typeahead, S || void 0)), p(e),
 							function() {
 								let e = {};
-								C && B.type.length && (Object(G.d)(w, {
+								A && F.type.length && (Object(G.d)(j, {
 									experimentName: M.Jc
-								}), j && (e = {
-									...B
+								}), C && (e = {
+									...F
 								}));
 								const {
 									url: t,
@@ -4313,21 +4314,21 @@
 								} = Object(h.a)({
 									searchItem: n,
 									searchOptions: e,
-									activeSearchScope: A,
-									includeNsfwResults: P && R
+									activeSearchScope: P,
+									includeNsfwResults: R && N
 								}), s = {
 									...Object(b.c)(b.a.TYPEAHEAD, d),
-									routeName: N,
-									subredditName: L
+									routeName: L,
+									subredditName: k
 								};
-								D(Object(K.b)(Object(Q.c)({
+								w(Object(K.b)(Object(Q.c)({
 									pathname: t,
 									search: r,
 									state: s
 								})))
 							}()
 					},
-					className: Object(c.a)(T.a.listItem, $.a.item, T.a.triggerItem, t),
+					className: Object(c.a)(T.a.listItem, $.a.item, T.a.triggerItem, l && T.a.backgroundFocused, t),
 					"data-testid": ne
 				}, s.a.createElement(g.a, {
 					name: "search"
@@ -4335,9 +4336,9 @@
 					className: $.a.text
 				}, i.fbt._("Search for “", null, {
 					hk: "28KVrM"
-				}), i.fbt._("{search query}", [i.fbt._param("search query", v)], {
+				}), i.fbt._("{search query}", [i.fbt._param("search query", _)], {
 					hk: "4vP3YT"
-				}), "”", k.isActive && U && s.a.createElement(s.a.Fragment, null, " ", i.fbt._("in {scope}", [i.fbt._param("scope", null == U ? void 0 : U.title)], {
+				}), "”", U.isActive && B && s.a.createElement(s.a.Fragment, null, " ", i.fbt._("in {scope}", [i.fbt._param("scope", null == B ? void 0 : B.title)], {
 					hk: "4jMNCg"
 				}))))
 			}
@@ -4477,11 +4478,12 @@
 					var t;
 					(null === (t = e.displayInfo) || void 0 === t ? void 0 : t.isNSFW) ? _.push(e): I.push(e)
 				}), S = _.length > 0) : I = t;
-				const D = I.length;
-				return s.a.createElement(s.a.Fragment, null, I.map((e, r) => s.a.createElement(pe, {
-					focusedItem: t[n],
-					indexOfItem: r,
-					relativePosition: r,
+				const D = I.length,
+					w = [...I, ..._][n];
+				return s.a.createElement(s.a.Fragment, null, I.map((e, t) => s.a.createElement(pe, {
+					focusedItem: w,
+					indexOfItem: t,
+					relativePosition: t,
 					subredditSuggestions: h,
 					item: e,
 					key: e.id,
@@ -4512,10 +4514,10 @@
 					hk: "11NQXp"
 				}), s.a.createElement(oe.a, {
 					className: T.a.chevron
-				})))), v && _.map((e, r) => s.a.createElement(pe, {
-					focusedItem: t[n],
-					indexOfItem: D + r,
-					relativePosition: r,
+				})))), v && _.map((e, t) => s.a.createElement(pe, {
+					focusedItem: w,
+					indexOfItem: D + t,
+					relativePosition: t,
 					subredditSuggestions: h,
 					item: e,
 					key: e.id,
@@ -4562,7 +4564,7 @@
 				V && W.isBucketed && (Y = W.isActive, Object(G.d)(W.experimentState, {
 					experimentName: M.Ob
 				}));
-				const $ = !l && (!Q || b >= 0) && !Y,
+				const $ = !l && (!Q || b >= 0) && 0 === f.length && !Y,
 					z = {
 						width: R ? `${R}px` : "inherit",
 						overflow: "auto"
@@ -4667,13 +4669,14 @@
 					className: Object(c.a)(T.a.loadingItem)
 				}), s.a.createElement("div", {
 					className: Object(c.a)(T.a.loadingItem)
-				})), Q && s.a.createElement(s.a.Fragment, null, !l && !Y && s.a.createElement(he, e), s.a.createElement(re, {
+				})), !$ && Q && s.a.createElement(s.a.Fragment, null, !l && !Y && s.a.createElement(he, e), s.a.createElement(re, {
 					className: Object(c.a)(T.a.borderTop4Line, T.a.triggerItem),
 					key: y.searchQuery,
 					searchItem: y,
 					position: f.length,
 					searchOriginPage: m,
-					onTriggerSearch: _
+					onTriggerSearch: _,
+					isFocused: b === u.length - 1
 				})))
 			}
 		},
@@ -25691,4 +25694,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit.3381bfd66949037ed917.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit.28a79afe68b5110b64dc.js.map
