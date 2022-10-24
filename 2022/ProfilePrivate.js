@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfilePrivate.c524f1aedd58c9865d3e.js
-// Retrieved at 10/24/2022, 12:20:09 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfilePrivate.1d2cd9a7eaf04cb0b233.js
+// Retrieved at 10/24/2022, 4:00:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfilePrivate"], {
 		"./node_modules/lodash/take.js": function(e, t, s) {
@@ -734,8 +734,8 @@
 			const f = e => {
 				return Object(g.c)(e, {
 					experimentEligibilitySelector: g.a,
-					experimentName: h.sf
-				}) === h.Od
+					experimentName: h.tf
+				}) === h.Pd
 			};
 			var x = s("./src/reddit/selectors/user.ts"),
 				v = s("./src/reddit/components/BackToTop/index.m.less"),
@@ -3644,7 +3644,7 @@
 				const t = Object(o.f)().getState(),
 					s = Object(h.a)(t, Object(d.c)());
 				if (e.isD2xPdpSideRailRecsEnabled) {
-					const t = e.d2xPdpSideRailRecsVariant === m.ad.GreyRereddit || e.d2xPdpSideRailRecsVariant === m.ad.GreyRedditNoNsfw || e.d2xPdpSideRailRecsVariant === m.ad.LargeImagePreview ? e.reredditButtons : [];
+					const t = e.d2xPdpSideRailRecsVariant === m.bd.GreyRereddit || e.d2xPdpSideRailRecsVariant === m.bd.GreyRedditNoNsfw || e.d2xPdpSideRailRecsVariant === m.bd.LargeImagePreview ? e.reredditButtons : [];
 					return r.a.createElement(j, {
 						reredditContent: t,
 						countryCode: e.countryCode
@@ -6734,10 +6734,10 @@
 				r = s("./src/reddit/constants/experiments.ts"),
 				o = s("./src/reddit/helpers/chooseVariant/index.ts");
 			const i = Object(n.a)(e => Object(o.c)(e, {
-					experimentName: r.ig,
+					experimentName: r.jg,
 					experimentEligibilitySelector: o.a
 				}), e => e),
-				d = Object(n.a)(i, e => e === r.Zf)
+				d = Object(n.a)(i, e => e === r.ag)
 		},
 		"./src/reddit/selectors/tracking.ts": function(e, t, s) {
 			"use strict";
@@ -6813,4 +6813,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfilePrivate.c524f1aedd58c9865d3e.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfilePrivate.1d2cd9a7eaf04cb0b233.js.map

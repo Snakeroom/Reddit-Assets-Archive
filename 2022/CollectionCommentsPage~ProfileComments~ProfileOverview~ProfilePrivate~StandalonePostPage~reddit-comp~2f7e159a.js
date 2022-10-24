@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~StandalonePostPage~reddit-comp~2f7e159a.bf5c25ea4ede04e41fe3.js
-// Retrieved at 10/24/2022, 10:40:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~StandalonePostPage~reddit-comp~2f7e159a.bce6d315f9edbc3aa48c.js
+// Retrieved at 10/24/2022, 4:00:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~StandalonePostPage~reddit-comp~2f7e159a"], {
 		"./src/higherOrderComponents/withAdClickLocation/index.tsx": function(e, t, s) {
@@ -904,8 +904,8 @@
 				const X = {
 						caretOnTop: !1
 					},
-					V = H.isRemoved && !H.modRemovalReason && !H.modNote && H.belongsTo.type === p.a.SUBREDDIT,
-					q = R("Approve", H.id, W),
+					q = H.isRemoved && !H.modRemovalReason && !H.modNote && H.belongsTo.type === p.a.SUBREDDIT,
+					V = R("Approve", H.id, W),
 					G = R("Archived", H.id, W),
 					K = R("Lock", H.id, W),
 					Z = R("Mod", H.id, W),
@@ -967,11 +967,11 @@
 					isFilled: !0,
 					className: Object(c.a)(y.a.icon, y.a.approveIcon),
 					desc: Object(v.a)(H),
-					id: q,
-					onMouseEnter: D(q),
+					id: V,
+					onMouseEnter: D(V),
 					onMouseLeave: g
 				}), r.a.createElement(m.c, T({
-					tooltipId: q,
+					tooltipId: V,
 					text: Object(v.a)(H)
 				}, X))), Object(x.a)(H) && r.a.createElement(o.Fragment, null, r.a.createElement(P.a, {
 					isFilled: !0,
@@ -980,7 +980,7 @@
 					id: Q,
 					onMouseEnter: D(Q),
 					onMouseLeave: g
-				}), V && r.a.createElement(u.a, {
+				}), q && r.a.createElement(u.a, {
 					className: y.a.addRemovalReason,
 					onClick: U,
 					text: n.fbt._("Add a removal reason", null, {
@@ -1254,7 +1254,7 @@
 			const b = Object(p.a)(e => Object(u.c)(e, {
 				experimentEligibilitySelector: u.a,
 				experimentName: m.zc
-			}), e => e === m.Od);
+			}), e => e === m.Pd);
 			var x = s("./node_modules/fbt/lib/FbtPublic.js"),
 				v = s("./src/lib/classNames/index.ts"),
 				E = s("./node_modules/react-router-dom/esm/react-router-dom.js"),
@@ -1321,7 +1321,7 @@
 				W = s("./src/reddit/selectors/profile.ts"),
 				J = s("./src/reddit/components/PromotedUserPostsAd/PromotedUserPostMedia/index.m.less"),
 				X = s.n(J);
-			const V = e => {
+			const q = e => {
 				let {
 					post: t
 				} = e;
@@ -1358,8 +1358,8 @@
 					wrapperClassName: X.a.userIconWrapper
 				})))
 			};
-			var q = s("./src/reddit/components/PromotedUserPostsAd/PromotedUserPost/index.m.less"),
-				G = s.n(q);
+			var V = s("./src/reddit/components/PromotedUserPostsAd/PromotedUserPost/index.m.less"),
+				G = s.n(V);
 			const K = Object(C.a)(null);
 			var Z = Object(N.b)(K(e => {
 					let {
@@ -1376,7 +1376,7 @@
 						className: G.a.container
 					}, o.a.createElement(F, {
 						post: t
-					}), o.a.createElement(V, {
+					}), o.a.createElement(q, {
 						post: t
 					})))
 				})),
@@ -2069,13 +2069,13 @@
 				a = s("./src/reddit/models/Post/index.ts"),
 				i = s("./src/reddit/selectors/posts.ts");
 			const c = e => Object(r.c)(e, {
-					experimentName: o.hf,
+					experimentName: o.if,
 					experimentEligibilitySelector: r.a
 				}),
-				d = (e, t) => (t === o.pf.Enabled && (null == e ? void 0 : e.isCreatedFromAdsUi) || (null == e ? void 0 : e.isSponsored)) && !Object(a.A)(e),
+				d = (e, t) => (t === o.qf.Enabled && (null == e ? void 0 : e.isCreatedFromAdsUi) || (null == e ? void 0 : e.isSponsored)) && !Object(a.A)(e),
 				l = Object(n.a)(i.G, c, (e, t) => d(e, t));
 			Object(n.a)((e, t) => t, c, (e, t) => d(e, t))
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~StandalonePostPage~reddit-comp~2f7e159a.bf5c25ea4ede04e41fe3.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~StandalonePostPage~reddit-comp~2f7e159a.bce6d315f9edbc3aa48c.js.map

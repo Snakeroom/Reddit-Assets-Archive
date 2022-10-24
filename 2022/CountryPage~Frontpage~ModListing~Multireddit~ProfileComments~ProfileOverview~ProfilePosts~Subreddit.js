@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CountryPage~Frontpage~ModListing~Multireddit~ProfileComments~ProfileOverview~ProfilePosts~Subreddit.0dcf877c083b9bf9ef85.js
-// Retrieved at 10/24/2022, 12:20:09 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CountryPage~Frontpage~ModListing~Multireddit~ProfileComments~ProfileOverview~ProfilePosts~Subreddit.43b738f4467f2ec8f922.js
+// Retrieved at 10/24/2022, 4:00:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CountryPage~Frontpage~ModListing~Multireddit~ProfileComments~ProfileOverview~ProfilePosts~Subreddit"], {
 		"./src/reddit/actions/subreddit/muting.ts": function(e, t, n) {
@@ -417,8 +417,8 @@
 			const S = e => {
 				return Object(f.c)(e, {
 					experimentEligibilitySelector: f.a,
-					experimentName: h.sf
-				}) === h.Od
+					experimentName: h.tf
+				}) === h.Pd
 			};
 			var w = n("./src/reddit/selectors/user.ts"),
 				k = n("./src/reddit/components/BackToTop/index.m.less"),
@@ -1778,7 +1778,7 @@
 				const t = Object(o.f)().getState(),
 					n = Object(h.a)(t, Object(i.c)());
 				if (e.isD2xPdpSideRailRecsEnabled) {
-					const t = e.d2xPdpSideRailRecsVariant === u.ad.GreyRereddit || e.d2xPdpSideRailRecsVariant === u.ad.GreyRedditNoNsfw || e.d2xPdpSideRailRecsVariant === u.ad.LargeImagePreview ? e.reredditButtons : [];
+					const t = e.d2xPdpSideRailRecsVariant === u.bd.GreyRereddit || e.d2xPdpSideRailRecsVariant === u.bd.GreyRedditNoNsfw || e.d2xPdpSideRailRecsVariant === u.bd.LargeImagePreview ? e.reredditButtons : [];
 					return s.a.createElement(E, {
 						reredditContent: t,
 						countryCode: e.countryCode
@@ -2472,4 +2472,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CountryPage~Frontpage~ModListing~Multireddit~ProfileComments~ProfileOverview~ProfilePosts~Subreddit.0dcf877c083b9bf9ef85.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CountryPage~Frontpage~ModListing~Multireddit~ProfileComments~ProfileOverview~ProfilePosts~Subreddit.43b738f4467f2ec8f922.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/EconPowerupsFlairModal.cafb46fee20377785517.js
-// Retrieved at 10/24/2022, 10:40:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/EconPowerupsFlairModal.acab13ad50125a088051.js
+// Retrieved at 10/24/2022, 4:00:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["EconPowerupsFlairModal", "AchievementsActions"], {
 		"./src/reddit/actions/economics/powerups/flairs/index.ts": function(e, t, r) {
@@ -606,8 +606,8 @@
 				k = e => N.includes(e),
 				T = Object(y.a)(e => Object(C.c)(e, {
 					experimentEligibilitySelector: C.a,
-					experimentName: S.le
-				}), e => e === S.Od);
+					experimentName: S.me
+				}), e => e === S.Pd);
 			var U = r("./src/reddit/selectors/gold/powerups/index.ts"),
 				L = r("./src/reddit/selectors/gold/powerups/flairs.ts"),
 				M = r("./src/reddit/icons/svgs/PowerupTier2/index.tsx"),
@@ -1107,4 +1107,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EconPowerupsFlairModal.cafb46fee20377785517.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EconPowerupsFlairModal.acab13ad50125a088051.js.map

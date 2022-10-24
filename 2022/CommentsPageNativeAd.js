@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CommentsPageNativeAd.88cbab4737ee9b0b4884.js
-// Retrieved at 10/24/2022, 10:40:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CommentsPageNativeAd.7b15ef5840e32f61f83b.js
+// Retrieved at 10/24/2022, 4:00:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CommentsPageNativeAd"], {
 		"./src/reddit/components/BlankPost/index.tsx": function(e, t, s) {
@@ -78,8 +78,8 @@
 				v = s("./src/reddit/components/BlankPost/index.tsx"),
 				C = s("./src/reddit/components/CallToActionButton/index.tsx"),
 				O = s("./src/reddit/components/JSAPIContainers/index.tsx"),
-				f = s("./src/reddit/components/PostContainer/index.tsx"),
-				N = s("./src/reddit/components/PostTitle/index.tsx"),
+				N = s("./src/reddit/components/PostContainer/index.tsx"),
+				f = s("./src/reddit/components/PostTitle/index.tsx"),
 				j = s("./src/reddit/constants/componentTestIds.ts"),
 				P = s("./src/reddit/controls/OutboundLink/index.tsx"),
 				_ = s("./src/reddit/helpers/search/renderMedia.tsx"),
@@ -87,14 +87,14 @@
 				S = s("./src/higherOrderComponents/withAdClickLocation/Locations.ts"),
 				k = s("./src/reddit/components/AuthorLink/index.tsx"),
 				w = s("./src/reddit/components/SponsoredLabel/index.tsx"),
-				L = s("./src/reddit/components/UserIcon/index.tsx"),
-				g = s("./src/reddit/controls/MetaSeparator/index.tsx"),
+				g = s("./src/reddit/components/UserIcon/index.tsx"),
+				L = s("./src/reddit/controls/MetaSeparator/index.tsx"),
 				A = s("./src/reddit/components/CommentsPageNativeAd/index.m.less"),
 				T = s.n(A);
 			var I = e => o.a.createElement("div", {
 					className: T.a.adTopMetaContainer,
 					"data-adclicklocation": S.a.TOP_BAR
-				}, o.a.createElement(L.a, {
+				}, o.a.createElement(g.a, {
 					iconUrl: e.iconUrl,
 					isNSFW: !1,
 					userName: e.author,
@@ -104,7 +104,7 @@
 					className: T.a.authorLink,
 					"data-click-id": "user",
 					author: e.author
-				}, `u/${e.author}`), o.a.createElement(g.a, {
+				}, `u/${e.author}`), o.a.createElement(L.a, {
 					isSmall: !0,
 					className: T.a.metaSeparator
 				}), o.a.createElement(w.a, {
@@ -201,11 +201,11 @@
 					}))
 				},
 				B = s("./src/reddit/connectors/ClassicPost/index.tsx"),
-				Z = s("./src/reddit/helpers/path/index.ts"),
-				z = s("./src/reddit/selectors/profile.ts");
+				z = s("./src/reddit/helpers/path/index.ts"),
+				Z = s("./src/reddit/selectors/profile.ts");
 			const G = Object(n.b)(() => Object(d.c)({
 				iconUrl: (e, t) => {
-					const s = Object(z.k)(e, {
+					const s = Object(Z.k)(e, {
 						profileName: t.post.author
 					});
 					if (s && s.icon) return s.icon.url
@@ -277,7 +277,7 @@
 					});
 					return o.a.createElement("div", null, o.a.createElement("div", {
 						className: T.a.commentsSpacer
-					}), o.a.createElement(f.b, {
+					}), o.a.createElement(N.b, {
 						isOverlay: d,
 						post: p,
 						eventFactory: e
@@ -306,7 +306,7 @@
 						})
 					}), o.a.createElement("div", {
 						className: T.a.contentColumn
-					}, o.a.createElement(N.c, {
+					}, o.a.createElement(f.c, {
 						format: s,
 						outboundLinkClassName: T.a.outboundLink,
 						className: T.a.postTitle,
@@ -322,7 +322,7 @@
 						rel: "nofollow",
 						"data-click-id": "comments",
 						"data-test-id": j.a,
-						to: this.props.isOverlay ? Object(u.a)(p.permalink, !0) : Object(Z.b)(p.permalink),
+						to: this.props.isOverlay ? Object(u.a)(p.permalink, !0) : Object(z.b)(p.permalink),
 						onClick: this.props.onClick
 					}, a.fbt._("Join the conversation", null, {
 						hk: "45BFWV"
@@ -440,11 +440,11 @@
 				r = s("./src/reddit/constants/experiments.ts"),
 				o = s("./src/reddit/helpers/chooseVariant/index.ts");
 			const n = Object(a.a)(e => Object(o.c)(e, {
-					experimentName: r.ig,
+					experimentName: r.jg,
 					experimentEligibilitySelector: o.a
 				}), e => e),
-				i = Object(a.a)(n, e => e === r.Zf)
+				i = Object(a.a)(n, e => e === r.ag)
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommentsPageNativeAd.88cbab4737ee9b0b4884.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommentsPageNativeAd.7b15ef5840e32f61f83b.js.map

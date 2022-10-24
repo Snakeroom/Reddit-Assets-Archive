@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostSetPage.e6da40f97e484e4a353a.js
-// Retrieved at 10/24/2022, 12:20:09 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostSetPage.15c30c64b3b5810c7b78.js
+// Retrieved at 10/24/2022, 4:00:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostSetPage"], {
 		"./node_modules/intersection-observer/intersection-observer.js": function(e, t) {
@@ -803,8 +803,8 @@
 			const g = e => {
 				return Object(f.c)(e, {
 					experimentEligibilitySelector: f.a,
-					experimentName: h.sf
-				}) === h.Od
+					experimentName: h.tf
+				}) === h.Pd
 			};
 			var x = n("./src/reddit/selectors/user.ts"),
 				y = n("./src/reddit/components/BackToTop/index.m.less"),
@@ -1254,7 +1254,7 @@
 				const t = Object(i.f)().getState(),
 					n = Object(h.a)(t, Object(a.c)());
 				if (e.isD2xPdpSideRailRecsEnabled) {
-					const t = e.d2xPdpSideRailRecsVariant === u.ad.GreyRereddit || e.d2xPdpSideRailRecsVariant === u.ad.GreyRedditNoNsfw || e.d2xPdpSideRailRecsVariant === u.ad.LargeImagePreview ? e.reredditButtons : [];
+					const t = e.d2xPdpSideRailRecsVariant === u.bd.GreyRereddit || e.d2xPdpSideRailRecsVariant === u.bd.GreyRedditNoNsfw || e.d2xPdpSideRailRecsVariant === u.bd.LargeImagePreview ? e.reredditButtons : [];
 					return s.a.createElement(C, {
 						reredditContent: t,
 						countryCode: e.countryCode
@@ -2860,13 +2860,13 @@
 					return Object(s.c)(e, {
 						experimentEligibilitySelector: () => t,
 						experimentName: r.wc
-					}) === r.Od
+					}) === r.Pd
 				},
 				o = e => {
 					return Object(s.c)(e, {
 						experimentEligibilitySelector: s.a,
 						experimentName: r.vc
-					}) === r.Od
+					}) === r.Pd
 				}
 		},
 		"./src/reddit/selectors/focusedVerticalSuggestion.ts": function(e, t, n) {
@@ -3005,4 +3005,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostSetPage.e6da40f97e484e4a353a.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostSetPage.15c30c64b3b5810c7b78.js.map

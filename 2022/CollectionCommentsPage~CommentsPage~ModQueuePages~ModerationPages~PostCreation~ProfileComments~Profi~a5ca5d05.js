@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ModQueuePages~ModerationPages~PostCreation~ProfileComments~Profi~a5ca5d05.e9b273b4bb7af3ebdfa0.js
-// Retrieved at 10/24/2022, 10:40:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ModQueuePages~ModerationPages~PostCreation~ProfileComments~Profi~a5ca5d05.9c7c8cd6484428141069.js
+// Retrieved at 10/24/2022, 4:00:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~ModQueuePages~ModerationPages~PostCreation~ProfileComments~Profi~a5ca5d05"], {
 		"./src/lib/unicodeUtils/index.ts": function(e, t, n) {
@@ -174,7 +174,7 @@
 		"./src/reddit/components/Media/ImageBox/index.tsx": function(e, t, n) {
 			"use strict";
 			n.d(t, "b", (function() {
-				return w
+				return T
 			}));
 			var s = n("./node_modules/fbt/lib/FbtPublic.js"),
 				r = n("./node_modules/react/index.js"),
@@ -203,8 +203,8 @@
 				S = n("./src/reddit/components/Media/ImageBox/index.m.less"),
 				M = n.n(S);
 
-			function T() {
-				return (T = Object.assign || function(e) {
+			function w() {
+				return (w = Object.assign || function(e) {
 					for (var t = 1; t < arguments.length; t++) {
 						var n = arguments[t];
 						for (var s in n) Object.prototype.hasOwnProperty.call(n, s) && (e[s] = n[s])
@@ -212,7 +212,7 @@
 					return e
 				}).apply(this, arguments)
 			}
-			const w = e => e > 2 * _.e,
+			const T = e => e > 2 * _.e,
 				N = e => o.a.createElement("img", {
 					alt: e.altText || s.fbt._("Comment image", null, {
 						hk: "1DiDxV"
@@ -228,7 +228,7 @@
 							[M.a.mShowBlurred]: e.shouldBlur
 						}),
 						n = {};
-					e.showFull || e.isTall || (n.maxHeight = `${_.j}px`), e.isListing || e.isTall && w(e.height) || (n.maxHeight = `${_.e}px`), e.isExpando && e.maxHeight && (n.maxHeight = `${e.maxHeight}px`), e.isExpando && e.maxWidth && (n.maxWidth = `${e.maxWidth}px`);
+					e.showFull || e.isTall || (n.maxHeight = `${_.j}px`), e.isListing || e.isTall && T(e.height) || (n.maxHeight = `${_.e}px`), e.isExpando && e.maxHeight && (n.maxHeight = `${e.maxHeight}px`), e.isExpando && e.maxWidth && (n.maxWidth = `${e.maxWidth}px`);
 					const i = Object(r.useRef)(null),
 						[a, c] = Object(r.useState)(!1),
 						l = Object(r.useCallback)(e => {
@@ -260,7 +260,7 @@
 					return e.renderSmallMedia ? o.a.createElement("div", {
 						ref: i,
 						style: b.current
-					}, a && o.a.createElement(N, T({}, e, {
+					}, a && o.a.createElement(N, w({}, e, {
 						className: t
 					}))) : o.a.createElement("img", {
 						alt: e.altText || s.fbt._("Post image", null, {
@@ -337,8 +337,8 @@
 						...n
 					} = e;
 					const r = Object(_.L)(n.height, n.width),
-						i = w(n.height) && r;
-					return o.a.createElement(I, T({}, n, {
+						i = T(n.height) && r;
+					return o.a.createElement(I, w({}, n, {
 						className: `${r?`${C.a} `:""}${n.className||""}`
 					}), n.isListing ? o.a.createElement("div", {
 						className: n.contentImageClassName
@@ -564,10 +564,10 @@
 					className: k,
 					showCentered: S,
 					originalSource: M,
-					isPromoted: T,
-					renderSmallMedia: w,
+					isPromoted: w,
+					renderSmallMedia: T,
 					onClick: N
-				} = e, L = t && !(T && Object(d.hasAcceptableAds)()), I = Object(a.d)();
+				} = e, L = t && !(w && Object(d.hasAcceptableAds)()), I = Object(a.d)();
 
 				function B(e) {
 					I(e ? Object(u.r)(h) : Object(u.E)(h))
@@ -622,9 +622,9 @@
 					return S && (e.margin = "0 auto"), C || (e.maxHeight = `${p.e}px`), i.a.createElement(_, {
 						autoplay: L,
 						className: Object(l.a)(m.a, O.a.styledVideo, {
-							[O.a.renderSmallMedia]: w
+							[O.a.renderSmallMedia]: T
 						}),
-						height: w ? void 0 : f,
+						height: T ? void 0 : f,
 						isListing: C,
 						isNotCardView: E,
 						key: h,
@@ -642,8 +642,8 @@
 						showCentered: S,
 						showFull: g,
 						source: x,
-						style: w ? void 0 : e,
-						width: w ? void 0 : j
+						style: T ? void 0 : e,
+						width: T ? void 0 : j
 					})
 				}
 				return C ? W() : i.a.createElement("div", {
@@ -923,9 +923,9 @@
 			})), n.d(t, "o", (function() {
 				return M
 			})), n.d(t, "q", (function() {
-				return T
-			})), n.d(t, "s", (function() {
 				return w
+			})), n.d(t, "s", (function() {
+				return T
 			})), n.d(t, "r", (function() {
 				return N
 			})), n.d(t, "a", (function() {
@@ -959,8 +959,8 @@
 				k = c.a.tr("Tr", a.a),
 				S = c.a.td("Tdl", a.a),
 				M = c.a.td("Tdc", a.a),
-				T = c.a.td("Tdr", a.a),
-				w = c.a.th("Thl", a.a),
+				w = c.a.td("Tdr", a.a),
+				T = c.a.th("Thl", a.a),
 				N = c.a.th("Thc", a.a),
 				L = (c.a.th("Thr", a.a), c.a.wrapped(e => r.a.createElement(o.b, e), "A", a.a)),
 				I = c.a.wrapped(d.a, "A", a.a)
@@ -1030,7 +1030,7 @@
 						shouldBlur: C,
 						onClickRevealSpoilerText: k,
 						mediaProps: S
-					} = e, M = s.document, T = [], w = e.mediaMetadata || null, N = j(M), L = _(M);
+					} = e, M = s.document, w = [], T = e.mediaMetadata || null, N = j(M), L = _(M);
 					if (C && !r && !i) return a.a.createElement(E, {
 						className: Object(c.a)(m.j, n)
 					}, a.a.createElement("div", {
@@ -1044,37 +1044,37 @@
 							const e = M[a];
 							switch (e.e) {
 								case p.k:
-									T.push(b.c(e, O, a));
+									w.push(b.c(e, O, a));
 									break;
 								case p.l:
-									T.push(b.d(a));
+									w.push(b.d(a));
 									break;
 								case p.b:
-									T.push(b.a(e, w, O, a));
+									w.push(b.a(e, T, O, a));
 									break;
 								case p.c:
-									T.push(b.b(e, a));
+									w.push(b.b(e, a));
 									break;
 								case p.p:
-									T.push(b.f(e, w, O, a, k));
+									w.push(b.f(e, T, O, a, k));
 									break;
 								case p.A:
-									T.push(b.h(e, w, O, a, k));
+									w.push(b.h(e, T, O, a, k));
 									break;
 								case p.v:
-									T.push(b.g(e, w, O, a, k, S));
+									w.push(b.g(e, T, O, a, k, S));
 									break;
 								case p.h:
-									T.push(Object(h.a)(e, a));
+									w.push(Object(h.a)(e, a));
 									break;
 								case p.m:
 								case p.a:
 								case p.E:
-									T.push(...Object(h.b)({
+									w.push(...Object(h.b)({
 										node: e,
 										key: a,
 										rtJsonElementProps: O,
-										mediaMetadata: w,
+										mediaMetadata: T,
 										renderMediaAsLinks: v,
 										postId: x,
 										altText: t,
@@ -1084,11 +1084,11 @@
 						}
 					return y ? a.a.createElement(E, {
 						className: Object(c.a)(m.j, n)
-					}, T) : a.a.createElement(g, {
+					}, w) : a.a.createElement(g, {
 						className: Object(c.a)(m.j, n),
 						flairStyleTemplate: e.flairStyleTemplate,
 						redditStyle: e.redditStyle
-					}, T)
+					}, w)
 				};
 			class y extends a.a.Component {
 				constructor() {
@@ -1217,8 +1217,8 @@
 				k = j.a.wrapped(g.a, "A", _.a),
 				S = j.a.wrapped(l.a, "ImageBox", _.a),
 				M = j.a.wrapped(e => o.a.createElement("p", e), "Caption", _.a),
-				T = j.a.div("Placeholder", _.a),
-				w = j.a.wrapped(e => {
+				w = j.a.div("Placeholder", _.a),
+				T = j.a.wrapped(e => {
 					let {
 						className: t,
 						e: n,
@@ -1236,7 +1236,7 @@
 						c && setTimeout(() => {
 							m(!0)
 						}, 1500)
-					}), o.a.createElement(T, y({
+					}), o.a.createElement(w, y({
 						className: Object(i.a)(t, {
 							[_.a.renderSmallMedia]: a,
 							[_.a.reload]: !!c
@@ -1304,7 +1304,7 @@
 					const x = f.F(r, t.id);
 					if (a) return [L(t, n, x)];
 					const g = [];
-					return !x || x.e === f.s && null === x.s.x && null === x.s.y ? g.push(((e, t, n, s) => o.a.createElement(w, {
+					return !x || x.e === f.s && null === x.s.x && null === x.s.y ? g.push(((e, t, n, s) => o.a.createElement(T, {
 						e,
 						key: t,
 						renderSmallMedia: n,
@@ -1556,8 +1556,8 @@
 				k = n("./src/reddit/helpers/crypto/vaultActionLink.ts"),
 				S = n("./src/reddit/helpers/isComment.ts"),
 				M = n("./src/reddit/helpers/isPost.ts"),
-				T = n("./src/reddit/helpers/richTextJson/index.ts"),
-				w = n("./src/reddit/helpers/trackers/getRichTextSourceElement.ts");
+				w = n("./src/reddit/helpers/richTextJson/index.ts"),
+				T = n("./src/reddit/helpers/trackers/getRichTextSourceElement.ts");
 			const N = (e, t, n) => {
 					const s = e.c || [],
 						r = e.l,
@@ -1671,7 +1671,7 @@
 						key: e
 					}, a.a.createElement("br", null)))(s);
 					const i = e.c[0];
-					return i.e !== m.m && i.e !== m.a || !Object(T.h)(i.id) ? a.a.createElement(c.j, {
+					return i.e !== m.m && i.e !== m.a || !Object(w.h)(i.id) ? a.a.createElement(c.j, {
 						key: s
 					}, F(e.c, t, n, r)) : Object(O.b)({
 						node: i,
@@ -1720,7 +1720,7 @@
 								title: e.a
 							}, s);
 							let r, o;
-							const i = Object(w.a)(t),
+							const i = Object(T.a)(t),
 								d = t.renderingObjectInfo;
 							return d && Object(M.b)(d) && (r = d.postId), d && Object(S.b)(d) && (o = d.id, r = d.postId), a.a.createElement(c.a, {
 								href: e.u,
@@ -1912,12 +1912,12 @@
 						rtJsonElementProps: i
 					});
 					switch (o) {
-						case b.Tf.SmIcon:
+						case b.Uf.SmIcon:
 							return r.a.createElement(p, {
 								subredditName: s,
 								rtJsonElementProps: i
 							});
-						case b.Tf.SmIconHc:
+						case b.Uf.SmIconHc:
 							return r.a.createElement(p, {
 								subredditName: s,
 								isHoverable: !0,
@@ -2311,12 +2311,12 @@
 				c = e => {
 					return Object(o.c)(e, {
 						experimentEligibilitySelector: a,
-						experimentName: s.Nf
+						experimentName: s.Of
 					}) || ""
 				},
 				d = e => {
 					const t = c(e);
-					return t === s.Tf.SmIcon || t === s.Tf.SmIconHc
+					return t === s.Uf.SmIcon || t === s.Uf.SmIconHc
 				},
 				l = (e, t) => {
 					let {
@@ -2342,4 +2342,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ModQueuePages~ModerationPages~PostCreation~ProfileComments~Profi~a5ca5d05.e9b273b4bb7af3ebdfa0.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ModQueuePages~ModerationPages~PostCreation~ProfileComments~Profi~a5ca5d05.9c7c8cd6484428141069.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfileSnoobuilder.ba83eecd1a4ce8b29d83.js
-// Retrieved at 10/24/2022, 10:40:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfileSnoobuilder.038ed44e495a909ecfb8.js
+// Retrieved at 10/24/2022, 4:00:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfileSnoobuilder"], {
 		"./assets/snoobuilder/Snoobuilder.json": function(e, t, n) {
@@ -690,8 +690,8 @@
 			const _ = e => {
 				return Object(f.c)(e, {
 					experimentEligibilitySelector: f.a,
-					experimentName: b.sf
-				}) === b.Od
+					experimentName: b.tf
+				}) === b.Pd
 			};
 			var x = n("./src/reddit/selectors/user.ts"),
 				g = n("./src/reddit/components/BackToTop/index.m.less"),
@@ -3838,7 +3838,7 @@
 				const t = Object(i.f)().getState(),
 					n = Object(b.a)(t, Object(a.c)());
 				if (e.isD2xPdpSideRailRecsEnabled) {
-					const t = e.d2xPdpSideRailRecsVariant === u.ad.GreyRereddit || e.d2xPdpSideRailRecsVariant === u.ad.GreyRedditNoNsfw || e.d2xPdpSideRailRecsVariant === u.ad.LargeImagePreview ? e.reredditButtons : [];
+					const t = e.d2xPdpSideRailRecsVariant === u.bd.GreyRereddit || e.d2xPdpSideRailRecsVariant === u.bd.GreyRedditNoNsfw || e.d2xPdpSideRailRecsVariant === u.bd.LargeImagePreview ? e.reredditButtons : [];
 					return r.a.createElement(j, {
 						reredditContent: t,
 						countryCode: e.countryCode
@@ -4562,12 +4562,12 @@
 						rtJsonElementProps: o
 					});
 					switch (i) {
-						case b.Tf.SmIcon:
+						case b.Uf.SmIcon:
 							return r.a.createElement(p, {
 								subredditName: s,
 								rtJsonElementProps: o
 							});
-						case b.Tf.SmIconHc:
+						case b.Uf.SmIconHc:
 							return r.a.createElement(p, {
 								subredditName: s,
 								isHoverable: !0,
@@ -5694,12 +5694,12 @@
 				c = e => {
 					return Object(i.c)(e, {
 						experimentEligibilitySelector: a,
-						experimentName: s.Nf
+						experimentName: s.Of
 					}) || ""
 				},
 				d = e => {
 					const t = c(e);
-					return t === s.Tf.SmIcon || t === s.Tf.SmIconHc
+					return t === s.Uf.SmIcon || t === s.Uf.SmIconHc
 				},
 				l = (e, t) => {
 					let {
@@ -5725,4 +5725,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileSnoobuilder.ba83eecd1a4ce8b29d83.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileSnoobuilder.038ed44e495a909ecfb8.js.map

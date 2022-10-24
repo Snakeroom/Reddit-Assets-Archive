@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CoinPurchaseModal~PremiumPurchaseModal.67052993545e3afc2d28.js
-// Retrieved at 10/24/2022, 10:40:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CoinPurchaseModal~PremiumPurchaseModal.d618c34374abe9a243e3.js
+// Retrieved at 10/24/2022, 4:00:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CoinPurchaseModal~PremiumPurchaseModal"], {
 		"./node_modules/@stripe/react-stripe-js/dist/react-stripe.umd.js": function(e, t, r) {
@@ -294,8 +294,8 @@
 									x = r.onClick,
 									E = void 0 === x ? j : x,
 									P = v("mounts <".concat(a, ">")).elements,
-									_ = t.useRef(null),
 									w = t.useRef(null),
+									_ = t.useRef(null),
 									S = O(b),
 									N = O(d),
 									k = O(u),
@@ -303,27 +303,27 @@
 									T = O(h),
 									A = O(C);
 								t.useLayoutEffect((function() {
-									if (null == _.current && P && null != w.current) {
+									if (null == w.current && P && null != _.current) {
 										var t = P.create(e, c);
-										_.current = t, t.mount(w.current), t.on("ready", (function() {
+										w.current = t, t.mount(_.current), t.on("ready", (function() {
 											return S(t)
 										})), t.on("change", T), t.on("blur", N), t.on("focus", k), t.on("escape", A), t.on("click", I)
 									}
 								}));
 								var M = p(c);
 								return t.useEffect((function() {
-									if (_.current) {
+									if (w.current) {
 										var e = f(c, M, ["paymentRequest"]);
-										e && _.current.update(e)
+										e && w.current.update(e)
 									}
 								}), [c, M]), t.useLayoutEffect((function() {
 									return function() {
-										_.current && _.current.destroy()
+										w.current && w.current.destroy()
 									}
 								}), []), t.createElement("div", {
 									id: n,
 									className: o,
-									ref: w
+									ref: _
 								})
 							};
 						return s.propTypes = {
@@ -339,8 +339,8 @@
 					},
 					E = "undefined" == typeof window,
 					P = x("auBankAccount", E),
-					_ = x("card", E),
-					w = x("cardNumber", E),
+					w = x("card", E),
+					_ = x("cardNumber", E),
 					S = x("cardExpiry", E),
 					N = x("cardCvc", E),
 					k = x("fpxBank", E),
@@ -353,7 +353,7 @@
 					D = x("linkAuthentication", E),
 					L = x("shippingAddress", E),
 					F = x("afterpayClearpayMessage", E);
-				e.AfterpayClearpayMessageElement = F, e.AuBankAccountElement = P, e.CardCvcElement = N, e.CardElement = _, e.CardExpiryElement = S, e.CardNumberElement = w, e.Elements = g, e.ElementsConsumer = C, e.EpsBankElement = M, e.FpxBankElement = k, e.IbanElement = I, e.IdealBankElement = T, e.LinkAuthenticationElement = D, e.P24BankElement = A, e.PaymentElement = R, e.PaymentRequestButtonElement = B, e.ShippingAddressElement = L, e.useElements = function() {
+				e.AfterpayClearpayMessageElement = F, e.AuBankAccountElement = P, e.CardCvcElement = N, e.CardElement = w, e.CardExpiryElement = S, e.CardNumberElement = _, e.Elements = g, e.ElementsConsumer = C, e.EpsBankElement = M, e.FpxBankElement = k, e.IbanElement = I, e.IdealBankElement = T, e.LinkAuthenticationElement = D, e.P24BankElement = A, e.PaymentElement = R, e.PaymentRequestButtonElement = B, e.ShippingAddressElement = L, e.useElements = function() {
 					return v("calls useElements()").elements
 				}, e.useStripe = function() {
 					return v("calls useStripe()").stripe
@@ -627,7 +627,7 @@
 			})), r.d(t, "d", (function() {
 				return P
 			})), r.d(t, "b", (function() {
-				return _
+				return w
 			})), r.d(t, "e", (function() {
 				return S
 			})), r.d(t, "h", (function() {
@@ -833,7 +833,7 @@
 					} catch (c) {
 						l.c.captureException(c), e(Object(p.savedCardsSuccess)([]))
 					}
-				}, _ = e => async (t, r, n) => {
+				}, w = e => async (t, r, n) => {
 					let {
 						gqlContext: a
 					} = n;
@@ -849,12 +849,12 @@
 					} catch (o) {
 						l.c.captureException(o)
 					}
-				}, w = (Object(d.a)(u.M), Object(d.a)(u.N), Object(d.a)(u.O), Object(d.a)(u.P)), S = e => {
+				}, _ = (Object(d.a)(u.M), Object(d.a)(u.N), Object(d.a)(u.O), Object(d.a)(u.P)), S = e => {
 					let {
 						user: t
 					} = e;
 					return async e => {
-						await e(Object(b.g)(!0)), e(w({
+						await e(Object(b.g)(!0)), e(_({
 							user: t
 						}))
 					}
@@ -1451,7 +1451,7 @@
 				x = r("./src/reddit/controls/CheckboxWithLabel/index.tsx"),
 				E = r("./src/reddit/components/StripePaymentForm/index.m.less"),
 				P = r.n(E);
-			var _ = e => {
+			var w = e => {
 					const {
 						onToggleRememberCard: t,
 						rememberCard: r
@@ -1475,7 +1475,7 @@
 						src: `${h.a.assetPath}/img/payment-icons/powered-by-stripe.png`
 					})))
 				},
-				w = r("./src/reddit/icons/svgs/Trash2/index.tsx");
+				_ = r("./src/reddit/icons/svgs/Trash2/index.tsx");
 			const {
 				fbt: S
 			} = r("./node_modules/fbt/lib/FbtPublic.js"), N = e => 2 === e.length ? e : "0" + e, k = e => {
@@ -1544,7 +1544,7 @@
 						hk: "gFhpD"
 					})) : a.a.createElement("button", {
 						onClick: this.onTrashCanClick
-					}, a.a.createElement(w.b, {
+					}, a.a.createElement(_.b, {
 						className: P.a.icon
 					})))
 				}
@@ -1587,7 +1587,7 @@
 						nightmode: t,
 						onDelete: r,
 						savedCard: s
-					})), m && a.a.createElement(_, {
+					})), m && a.a.createElement(w, {
 						onToggleRememberCard: n,
 						rememberCard: o
 					}))
@@ -1935,9 +1935,9 @@
 			})), r.d(t, "d", (function() {
 				return P
 			})), r.d(t, "b", (function() {
-				return _
-			})), r.d(t, "l", (function() {
 				return w
+			})), r.d(t, "l", (function() {
+				return _
 			})), r.d(t, "k", (function() {
 				return S
 			}));
@@ -2035,13 +2035,13 @@
 						saveCard: a
 					}
 				}),
-				_ = (e, t) => Object(y.a)(e, {
+				w = (e, t) => Object(y.a)(e, {
 					...o,
 					variables: {
 						orderId: t
 					}
 				}),
-				w = e => Object(y.a)(e, {
+				_ = e => Object(y.a)(e, {
 					...b,
 					variables: {}
 				}),
@@ -2188,8 +2188,8 @@
 				a = r("./src/lib/constants/index.ts"),
 				o = r("./src/reddit/constants/experiments.ts"),
 				s = r("./src/reddit/selectors/experiments/econ/simpleExperiment.ts");
-			const c = Object(s.a)(o.Ye),
-				i = Object(s.a)(o.Ze),
+			const c = Object(s.a)(o.Ze),
+				i = Object(s.a)(o.af),
 				d = Object(n.a)([c, i], (e, t) => new Set([e && a.Mb, t && a.Lb].filter(e => !!e)))
 		},
 		"./src/reddit/selectors/experiments/econ/paymentsSandbox.ts": function(e, t, r) {
@@ -2199,7 +2199,7 @@
 			}));
 			var n = r("./src/reddit/constants/experiments.ts"),
 				a = r("./src/reddit/selectors/experiments/econ/simpleExperiment.ts");
-			const o = Object(a.a)(n.vd)
+			const o = Object(a.a)(n.wd)
 		},
 		"./src/reddit/selectors/gold/productOffers.ts": function(e, t, r) {
 			"use strict";
@@ -2301,4 +2301,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CoinPurchaseModal~PremiumPurchaseModal.67052993545e3afc2d28.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CoinPurchaseModal~PremiumPurchaseModal.d618c34374abe9a243e3.js.map

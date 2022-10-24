@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~Reddit.eaba7ebb4c1f2e0c94da.js
-// Retrieved at 10/24/2022, 3:20:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~Reddit.6b9722aed1087740d10f.js
+// Retrieved at 10/24/2022, 4:00:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~Reddit"], {
 		"./assets/fonts/NotoMono/font.less": function(e, t, n) {},
@@ -1352,7 +1352,7 @@
 			"use strict";
 			n.d(t, "d", (function() {
 				return r
-			})), n.d(t, "e", (function() {
+			})), n.d(t, "f", (function() {
 				return s
 			})), n.d(t, "b", (function() {
 				return a
@@ -1360,12 +1360,15 @@
 				return o
 			})), n.d(t, "a", (function() {
 				return c
+			})), n.d(t, "e", (function() {
+				return i
 			}));
 			const r = "HAPPENING_NOW__SET_LIVE_CONTENT_AVAILABILITY",
 				s = "HAPPENING_NOW__SET_SHOULD_SHOW_FIRST_TIME_TOOLTIP",
 				a = "HAPPENING_NOW__FETCH_LIVE_DISCOVERY_CONTENT_PENDING",
 				o = "HAPPENING_NOW__FETCH_LIVE_DISCOVERY_CONTENT_SUCCESS",
-				c = "HAPPENING_NOW__FETCH_LIVE_DISCOVERY_CONTENT_FAILURE"
+				c = "HAPPENING_NOW__FETCH_LIVE_DISCOVERY_CONTENT_FAILURE",
+				i = "HAPPENING_NOW__SET_SELECTED_FILTER"
 		},
 		"./src/reddit/actions/harbergerTax/constants.ts": function(e, t, n) {
 			"use strict";
@@ -2195,7 +2198,7 @@
 			const D = e => _.d.reCaptchaEnterprise(e) && !Object(T.d)(e),
 				w = e => !!Object(S.c)(e, {
 					experimentEligibilitySelector: Object(I.d)(Object(I.b)(...a.d)),
-					experimentName: f.rf
+					experimentName: f.sf
 				}),
 				j = Object(r.b)("LOAD_RECAPTCHA_ENTERPRISE"),
 				C = () => l(e => p()([D, w, e => e.tracking.reCaptchaEnterprise.load === r.a.New], t => t(e)))(async e => {
@@ -4242,7 +4245,7 @@
 				const t = Object(E.q)(e, M.Ob);
 				return {
 					experimentState: e,
-					isActive: (null == t ? void 0 : t.variant) === M.Od,
+					isActive: (null == t ? void 0 : t.variant) === M.Pd,
 					isBucketed: !!(null == t ? void 0 : t.variant)
 				}
 			}
@@ -25520,7 +25523,7 @@
 					if (!u(e)) return;
 					const t = Object(o.c)(e, {
 						experimentEligibilitySelector: l,
-						experimentName: a.ie,
+						experimentName: a.je,
 						expEventOverride: !1
 					});
 					return null == t ? void 0 : t.toLocaleLowerCase()
@@ -25543,9 +25546,9 @@
 				},
 				b = e => !!p(e) && Object(o.c)(e, {
 					experimentEligibilitySelector: u,
-					experimentName: a.je,
+					experimentName: a.ke,
 					expEventOverride: !1
-				}) !== a.ke.Readonly
+				}) !== a.le.Readonly
 		},
 		"./src/reddit/selectors/experiments/serpTabPreserved.ts": function(e, t, n) {
 			"use strict";
@@ -25559,7 +25562,7 @@
 				const t = Object(s.q)(e, r.Jc);
 				return {
 					experimentState: e,
-					isActive: (null == t ? void 0 : t.variant) === r.Od,
+					isActive: (null == t ? void 0 : t.variant) === r.Pd,
 					isBucketed: !!(null == t ? void 0 : t.variant)
 				}
 			}
@@ -25709,4 +25712,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit.eaba7ebb4c1f2e0c94da.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit.6b9722aed1087740d10f.js.map
