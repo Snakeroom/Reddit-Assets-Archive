@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfilePrivate.8e57f4beea65a61f6f5b.js
-// Retrieved at 10/24/2022, 10:40:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfilePrivate.c524f1aedd58c9865d3e.js
+// Retrieved at 10/24/2022, 12:20:09 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfilePrivate"], {
 		"./node_modules/lodash/take.js": function(e, t, s) {
@@ -527,23 +527,20 @@
 						gqlContext: r
 					} = s;
 					const d = await (e => Object(i.a)(e, a))(r());
-					if (d.ok && d.body) {
+					if (d.ok && d.body && d.body.data) {
 						const {
 							data: t
-						} = d.body;
-						if (t) {
-							const s = (t && t.identity.mutedSubreddits).edges.map(e => e.node);
-							e(C({
-								nodes: s
-							}))
-						} else e(O()), e(Object(o.f)({
-							duration: o.a,
-							kind: p.b.Error,
-							text: n.fbt._("Failed to get muted subreddits, please try again.", null, {
-								hk: "2dCj3Q"
-							})
+						} = d.body, s = (t && t.identity.mutedSubreddits).edges.map(e => e.node);
+						e(C({
+							nodes: s
 						}))
-					}
+					} else e(O()), e(Object(o.f)({
+						duration: o.a,
+						kind: p.b.Error,
+						text: n.fbt._("Failed to get muted subreddits, please try again.", null, {
+							hk: "2dCj3Q"
+						})
+					}))
 				}, T = e => {
 					let {
 						subredditId: t,
@@ -6816,4 +6813,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfilePrivate.8e57f4beea65a61f6f5b.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfilePrivate.c524f1aedd58c9865d3e.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Settings.4f256199f175e30f58ff.js
-// Retrieved at 10/24/2022, 10:40:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Settings.9f11e2f89171d2e65035.js
+// Retrieved at 10/24/2022, 12:20:09 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Settings"], {
 		"./node_modules/moment/locale sync recursive ^\\.\\/.*$": function(e, t, n) {
@@ -1487,7 +1487,7 @@
 		"./src/reddit/actions/pages/settings.ts": function(e, t, n) {
 			"use strict";
 			n.r(t), n.d(t, "settingsPageRequested", (function() {
-				return B
+				return U
 			}));
 			n("./node_modules/core-js/modules/web.dom.iterable.js");
 			var s = n("./node_modules/fbt/lib/FbtPublic.js"),
@@ -1567,10 +1567,11 @@
 				L = n("./src/reddit/helpers/externalAccount/index.tsx"),
 				D = n("./src/reddit/helpers/pageActionLoginRedirect.ts"),
 				R = n("./src/reddit/reducers/economics/paymentSystems/index.ts"),
-				F = n("./src/reddit/selectors/externalAccount.ts");
-			const B = e => async (t, n) => {
+				F = n("./src/reddit/selectors/experiments/antievil/index.tsx"),
+				B = n("./src/reddit/selectors/externalAccount.ts");
+			const U = e => async (t, n) => {
 				await t(Object(M.s)());
-				const f = [t(Object(P.s)()), t(Object(P.A)(!0)), t(Object(p.a)()), t(Object(I.a)())];
+				const f = [t(Object(P.s)()), t(Object(P.A)(!0)), t(Object(p.a)())];
 				n().economics.paymentSystems.status === R.a.NotFetched && f.push(t((() => async (e, t, n) => {
 					let {
 						apiContext: s
@@ -1582,7 +1583,8 @@
 					}))
 				})())), await Promise.all(f); {
 					const e = n();
-					if (!Object(C.R)(e)) return Object(D.a)(t, e)
+					if (!Object(C.R)(e)) return Object(D.a)(t, e);
+					Object(F.b)(e) && t(Object(I.a)())
 				}
 				const {
 					page: v = a.jc.Account
@@ -1596,7 +1598,7 @@
 							url: l
 						} = a,
 						c = Object(r.a)(l).get(A.d);
-					if (c && (t(Object(o.c)(Object(i.a)(l, [A.d]))), Object(F.a)(e))) {
+					if (c && (t(Object(o.c)(Object(i.a)(l, [A.d]))), Object(B.a)(e))) {
 						const e = s.fbt._("Connected accounts", null, {
 							hk: "bdpfW"
 						});
@@ -12831,4 +12833,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Settings.4f256199f175e30f58ff.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Settings.9f11e2f89171d2e65035.js.map

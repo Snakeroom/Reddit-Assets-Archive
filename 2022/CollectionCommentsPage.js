@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage.4468638a41818b9b0884.js
-// Retrieved at 10/24/2022, 10:40:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage.df4f8983c36bd216e0a4.js
+// Retrieved at 10/24/2022, 12:20:09 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage", "AchievementsActions"], {
 		"./node_modules/linkify-it/index.js": function(e, t, s) {
@@ -2391,23 +2391,20 @@
 						gqlContext: r
 					} = s;
 					const a = await (e => Object(i.a)(e, d))(r());
-					if (a.ok && a.body) {
+					if (a.ok && a.body && a.body.data) {
 						const {
 							data: t
-						} = a.body;
-						if (t) {
-							const s = (t && t.identity.mutedSubreddits).edges.map(e => e.node);
-							e(y({
-								nodes: s
-							}))
-						} else e(_()), e(Object(o.f)({
-							duration: o.a,
-							kind: p.b.Error,
-							text: n.fbt._("Failed to get muted subreddits, please try again.", null, {
-								hk: "2dCj3Q"
-							})
+						} = a.body, s = (t && t.identity.mutedSubreddits).edges.map(e => e.node);
+						e(y({
+							nodes: s
 						}))
-					}
+					} else e(_()), e(Object(o.f)({
+						duration: o.a,
+						kind: p.b.Error,
+						text: n.fbt._("Failed to get muted subreddits, please try again.", null, {
+							hk: "2dCj3Q"
+						})
+					}))
 				}, T = e => {
 					let {
 						subredditId: t,
@@ -15184,4 +15181,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage.4468638a41818b9b0884.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage.df4f8983c36bd216e0a4.js.map

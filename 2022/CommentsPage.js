@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CommentsPage.4834d37572e2e312c71b.js
-// Retrieved at 10/24/2022, 11:50:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CommentsPage.6e87724af7771a065a28.js
+// Retrieved at 10/24/2022, 12:20:09 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CommentsPage", "CollectionCommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~StandalonePostPage~reddit-comp~2f7e159a", "Governance~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compo~bd4baca2", "CollectionCommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~SearchResults", "Governance~ModListing~Reddit~ReportFlow~Subreddit", "Reddit~RpanListingUnit~StandalonePostPage~reddit-components-LargePost~reddit-components-MediumPost", "Governance~ModListing~Reddit~Subreddit", "CollectionCommentsPage~ModProgressModule~NewCommunityProgress", "ModListing~Reddit", "AchievementsActions"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -9492,23 +9492,20 @@
 						gqlContext: r
 					} = n;
 					const a = await (e => Object(i.a)(e, c))(r());
-					if (a.ok && a.body) {
+					if (a.ok && a.body && a.body.data) {
 						const {
 							data: t
-						} = a.body;
-						if (t) {
-							const n = (t && t.identity.mutedSubreddits).edges.map(e => e.node);
-							e(x({
-								nodes: n
-							}))
-						} else e(O()), e(Object(o.f)({
-							duration: o.a,
-							kind: p.b.Error,
-							text: s.fbt._("Failed to get muted subreddits, please try again.", null, {
-								hk: "2dCj3Q"
-							})
+						} = a.body, n = (t && t.identity.mutedSubreddits).edges.map(e => e.node);
+						e(x({
+							nodes: n
 						}))
-					}
+					} else e(O()), e(Object(o.f)({
+						duration: o.a,
+						kind: p.b.Error,
+						text: s.fbt._("Failed to get muted subreddits, please try again.", null, {
+							hk: "2dCj3Q"
+						})
+					}))
 				}, P = e => {
 					let {
 						subredditId: t,
@@ -44603,4 +44600,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommentsPage.4834d37572e2e312c71b.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommentsPage.6e87724af7771a065a28.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CountryPage~Frontpage~ModListing~Multireddit~ProfileComments~ProfileOverview~ProfilePosts~Subreddit.fec667f809703d7e9948.js
-// Retrieved at 10/24/2022, 10:40:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CountryPage~Frontpage~ModListing~Multireddit~ProfileComments~ProfileOverview~ProfilePosts~Subreddit.0dcf877c083b9bf9ef85.js
+// Retrieved at 10/24/2022, 12:20:09 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CountryPage~Frontpage~ModListing~Multireddit~ProfileComments~ProfileOverview~ProfilePosts~Subreddit"], {
 		"./src/reddit/actions/subreddit/muting.ts": function(e, t, n) {
@@ -210,23 +210,20 @@
 						gqlContext: s
 					} = n;
 					const i = await (e => Object(a.a)(e, d))(s());
-					if (i.ok && i.body) {
+					if (i.ok && i.body && i.body.data) {
 						const {
 							data: t
-						} = i.body;
-						if (t) {
-							const n = (t && t.identity.mutedSubreddits).edges.map(e => e.node);
-							e(C({
-								nodes: n
-							}))
-						} else e(O()), e(Object(o.f)({
-							duration: o.a,
-							kind: m.b.Error,
-							text: r.fbt._("Failed to get muted subreddits, please try again.", null, {
-								hk: "2dCj3Q"
-							})
+						} = i.body, n = (t && t.identity.mutedSubreddits).edges.map(e => e.node);
+						e(C({
+							nodes: n
 						}))
-					}
+					} else e(O()), e(Object(o.f)({
+						duration: o.a,
+						kind: m.b.Error,
+						text: r.fbt._("Failed to get muted subreddits, please try again.", null, {
+							hk: "2dCj3Q"
+						})
+					}))
 				}, I = e => {
 					let {
 						subredditId: t,
@@ -2475,4 +2472,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CountryPage~Frontpage~ModListing~Multireddit~ProfileComments~ProfileOverview~ProfilePosts~Subreddit.fec667f809703d7e9948.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CountryPage~Frontpage~ModListing~Multireddit~ProfileComments~ProfileOverview~ProfilePosts~Subreddit.0dcf877c083b9bf9ef85.js.map
