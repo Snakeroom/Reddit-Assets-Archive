@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~ModerationPages~PostCreation~Profile~9a5d9fab.fcca5e44fb4c695aa848.js
-// Retrieved at 10/24/2022, 4:00:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~ModerationPages~PostCreation~Profile~9a5d9fab.09d76964f7bdb45717a5.js
+// Retrieved at 10/24/2022, 4:40:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~ModerationPages~PostCreation~Profile~9a5d9fab"], {
 		"./src/higherOrderComponents/withClickTracking/index.tsx": function(e, t, s) {
@@ -968,11 +968,12 @@
 				}, [h, E]), Object(n.useEffect)(() => {
 					if ("done" !== h) return;
 					const e = e => {
+							var t;
 							e.stopPropagation();
 							const {
-								details: t
+								details: s
 							} = (null == e ? void 0 : e.detail) || {};
-							E && t && p(Object(d.b)(E, t.action, t.noun, t.media))
+							E && s && p(Object(d.b)(E, s.action, s.noun, s.media, null === (t = s.playback) || void 0 === t ? void 0 : t.id))
 						},
 						{
 							current: s
@@ -2415,4 +2416,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~ModerationPages~PostCreation~Profile~9a5d9fab.fcca5e44fb4c695aa848.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~ModerationPages~PostCreation~Profile~9a5d9fab.09d76964f7bdb45717a5.js.map
