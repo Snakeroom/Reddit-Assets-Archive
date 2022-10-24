@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModerationDropdowns.3658cda1391ca78c6226.js
-// Retrieved at 10/19/2022, 12:30:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModerationDropdowns.1a505ca12e68305561bc.js
+// Retrieved at 10/24/2022, 11:10:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModerationDropdowns"], {
 		"./src/devPlatform/components/ContextActions/ContextActionsLoader.tsx": function(e, t, o) {
@@ -168,12 +168,14 @@
 					className: t,
 					isActive: o,
 					showEmpty: n,
-					unreadCount: i
+					unreadCount: i,
+					testId: d
 				} = e;
 				return o ? s.a.createElement("span", {
 					className: Object(r.a)(t, c.a.badgeCounter, {
 						[c.a.mEmpty]: n || i < 1
-					})
+					}),
+					"data-testid": d
 				}, n || i < 1 ? "" : Object(a.b)(i)) : null
 			}
 		},
@@ -1240,4 +1242,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationDropdowns.3658cda1391ca78c6226.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationDropdowns.1a505ca12e68305561bc.js.map
