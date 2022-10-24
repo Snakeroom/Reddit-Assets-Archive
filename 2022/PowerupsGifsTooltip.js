@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PowerupsGifsTooltip.4dbc44d9bf14e8c9021c.js
-// Retrieved at 10/24/2022, 10:40:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PowerupsGifsTooltip.5e7fecbf3e9bcef2e610.js
+// Retrieved at 10/24/2022, 5:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PowerupsGifsTooltip"], {
 		"./src/reddit/components/RichTextEditor/media/GifTooltip/BaseTooltip.m.less": function(e, t, s) {
@@ -124,14 +124,14 @@
 				_ = s("./src/reddit/selectors/economics.ts"),
 				C = s("./src/reddit/components/RichTextEditor/helpers/common.ts"),
 				w = s("./src/reddit/components/RichTextEditor/media/helpers.ts");
-			let k;
+			let v;
 
-			function v() {
-				k || (k = fetch("https://meta.redditmedia.com/public/fortnitebr/giphy_blacklist.json").then(e => e.json()))
+			function k() {
+				v || (v = fetch("https://meta.redditmedia.com/public/fortnitebr/giphy_blacklist.json").then(e => e.json()))
 			}
 			var j = s("./node_modules/lodash/debounce.js"),
-				R = s.n(j),
-				I = s("./src/reddit/icons/svgs/Search/index.tsx"),
+				I = s.n(j),
+				R = s("./src/reddit/icons/svgs/Search/index.tsx"),
 				G = s("./src/reddit/selectors/user.ts"),
 				S = s("./src/reddit/components/RichTextEditor/media/GifTooltip/SearchBox/index.m.less"),
 				B = s.n(S);
@@ -144,7 +144,7 @@
 						this.setState({
 							query: e.target.value
 						}, this.dispatchOnChange)
-					}, this.dispatchOnChange = R()(() => {
+					}, this.dispatchOnChange = I()(() => {
 						this.props.onChange(this.state.query)
 					}, O), this.focusOnInput = () => {
 						this.elementRef && !1 !== this.props.autofocus && this.elementRef.focus()
@@ -164,7 +164,7 @@
 					}, l.a.createElement("button", {
 						className: B.a.searchIconButton,
 						onClick: this.focusOnInput
-					}, l.a.createElement(I.a, {
+					}, l.a.createElement(R.a, {
 						className: B.a.searchIcon
 					})), l.a.createElement("input", {
 						ref: e => this.elementRef = e,
@@ -190,8 +190,8 @@
 			var A = Object(h.b)(P)(N),
 				M = s("./src/lib/constants/icons.ts"),
 				U = s("./src/reddit/controls/Button/index.tsx"),
-				q = s("./src/reddit/icons/fonts/index.tsx"),
-				L = s("./src/reddit/components/RichTextEditor/media/GifTooltip/GifTooltipBody.m.less"),
+				q = s("./src/reddit/icons/fonts/index.tsx");
+			var L = s("./src/reddit/components/RichTextEditor/media/GifTooltip/GifTooltipBody.m.less"),
 				V = s.n(L);
 			const F = 4,
 				H = r()((function() {
@@ -240,7 +240,7 @@
 					}
 				}
 				componentDidMount() {
-					this.mounted = !0, !this.state.query && this.state.loading && this.loadTrendingGifs(), v()
+					this.mounted = !0, !this.state.query && this.state.loading && this.loadTrendingGifs(), k()
 				}
 				componentWillUnmount() {
 					this.mounted = !1
@@ -263,7 +263,7 @@
 					} = this.state;
 					!e && s && null !== t && (await
 						function(e) {
-							return v(), k.then(t => {
+							return k(), v.then(t => {
 								return !!e.split(" ").concat(e).find(e => -1 !== t.indexOf(e.toLowerCase()))
 							}).catch(() => !1)
 						}(s) || (this.setState({
@@ -296,9 +296,24 @@
 						s = [...this.state.columnHeights];
 					e.data.forEach(e => {
 						if ("gif" !== e.type || "r" === e.rating || "pg-13" === e.rating) return;
-						const o = this.getSimplifiedResult(e),
-							i = s.reduce((e, t, o) => t < s[e] ? o : e, 0);
-						t[i].push(o), s[i] += o.fixedWidthHeight + F
+						const o = function(e) {
+							var t, s;
+							const o = (null === (t = e.images.fixed_width) || void 0 === t ? void 0 : t.height) ? parseInt(e.images.fixed_width.height) : null,
+								i = !!(null === (s = e.images.downsized) || void 0 === s ? void 0 : s.url) && e.images.downsized.url.indexOf("giphy-downsized.gif") > 0,
+								n = i ? e.images.downsized : e.images.fixed_height;
+							return n && n.url && n.width && n.height && o ? {
+								id: e.id,
+								url: n.url,
+								hasDownsizedImage: i,
+								width: parseInt(n.width),
+								height: parseInt(n.height),
+								fixedWidthHeight: o
+							} : null
+						}(e);
+						if (o) {
+							const e = s.reduce((e, t, o) => t < s[e] ? o : e, 0);
+							t[e].push(o), s[e] += o.fixedWidthHeight + F
+						}
 					});
 					const o = e.pagination.offset + e.pagination.count;
 					this.setState({
@@ -307,19 +322,6 @@
 						loading: !1,
 						nextOffset: o < e.pagination.total_count ? o : null
 					})
-				}
-				getSimplifiedResult(e) {
-					const t = parseInt(e.images.fixed_width.height),
-						s = e.images.downsized && e.images.downsized.url.indexOf("giphy-downsized.gif") > 0,
-						o = s ? e.images.downsized : e.images.fixed_height;
-					return {
-						id: e.id,
-						url: o.url,
-						hasDownsizedImage: s,
-						width: parseInt(o.width),
-						height: parseInt(o.height),
-						fixedWidthHeight: t
-					}
 				}
 				render() {
 					var e;
@@ -582,4 +584,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PowerupsGifsTooltip.4dbc44d9bf14e8c9021c.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PowerupsGifsTooltip.5e7fecbf3e9bcef2e610.js.map

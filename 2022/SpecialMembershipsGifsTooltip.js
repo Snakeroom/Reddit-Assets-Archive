@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SpecialMembershipsGifsTooltip.ab208591126c245eba5c.js
-// Retrieved at 10/24/2022, 9:50:07 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SpecialMembershipsGifsTooltip.e2da59cf4b579b5cd9f3.js
+// Retrieved at 10/24/2022, 5:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SpecialMembershipsGifsTooltip"], {
 		"./src/reddit/components/RichTextEditor/media/GifTooltip/BaseTooltip.m.less": function(e, t, s) {
@@ -122,8 +122,8 @@
 			var E = s("./src/reddit/icons/svgs/Close/index.tsx"),
 				T = s("./src/reddit/models/Toast/index.ts"),
 				_ = s("./src/reddit/selectors/economics.ts"),
-				C = s("./src/reddit/components/RichTextEditor/helpers/common.ts"),
-				v = s("./src/reddit/components/RichTextEditor/media/helpers.ts");
+				v = s("./src/reddit/components/RichTextEditor/helpers/common.ts"),
+				C = s("./src/reddit/components/RichTextEditor/media/helpers.ts");
 			let k;
 
 			function I() {
@@ -190,8 +190,8 @@
 			var P = Object(h.b)(M)(B),
 				L = s("./src/lib/constants/icons.ts"),
 				U = s("./src/reddit/controls/Button/index.tsx"),
-				A = s("./src/reddit/icons/fonts/index.tsx"),
-				V = s("./src/reddit/components/RichTextEditor/media/GifTooltip/GifTooltipBody.m.less"),
+				A = s("./src/reddit/icons/fonts/index.tsx");
+			var V = s("./src/reddit/components/RichTextEditor/media/GifTooltip/GifTooltipBody.m.less"),
 				F = s.n(V);
 			const H = 4,
 				q = a()((function() {
@@ -235,7 +235,7 @@
 					}, 300), this.onResultClick = e => {
 						this.props.onResultClick(this.props.hasGifProduct);
 						const t = this.props.editorState,
-							s = Object(v.k)(t, e.id, e.url, e.hasDownsizedImage, e.width, e.height, t.getSelection().getEndKey(), C.a.before);
+							s = Object(C.k)(t, e.id, e.url, e.hasDownsizedImage, e.width, e.height, t.getSelection().getEndKey(), v.a.before);
 						this.props.onChange(s), this.props.onClose()
 					}
 				}
@@ -296,9 +296,24 @@
 						s = [...this.state.columnHeights];
 					e.data.forEach(e => {
 						if ("gif" !== e.type || "r" === e.rating || "pg-13" === e.rating) return;
-						const i = this.getSimplifiedResult(e),
-							o = s.reduce((e, t, i) => t < s[e] ? i : e, 0);
-						t[o].push(i), s[o] += i.fixedWidthHeight + H
+						const i = function(e) {
+							var t, s;
+							const i = (null === (t = e.images.fixed_width) || void 0 === t ? void 0 : t.height) ? parseInt(e.images.fixed_width.height) : null,
+								o = !!(null === (s = e.images.downsized) || void 0 === s ? void 0 : s.url) && e.images.downsized.url.indexOf("giphy-downsized.gif") > 0,
+								n = o ? e.images.downsized : e.images.fixed_height;
+							return n && n.url && n.width && n.height && i ? {
+								id: e.id,
+								url: n.url,
+								hasDownsizedImage: o,
+								width: parseInt(n.width),
+								height: parseInt(n.height),
+								fixedWidthHeight: i
+							} : null
+						}(e);
+						if (i) {
+							const e = s.reduce((e, t, i) => t < s[e] ? i : e, 0);
+							t[e].push(i), s[e] += i.fixedWidthHeight + H
+						}
 					});
 					const i = e.pagination.offset + e.pagination.count;
 					this.setState({
@@ -307,19 +322,6 @@
 						loading: !1,
 						nextOffset: i < e.pagination.total_count ? i : null
 					})
-				}
-				getSimplifiedResult(e) {
-					const t = parseInt(e.images.fixed_width.height),
-						s = e.images.downsized && e.images.downsized.url.indexOf("giphy-downsized.gif") > 0,
-						i = s ? e.images.downsized : e.images.fixed_height;
-					return {
-						id: e.id,
-						url: i.url,
-						hasDownsizedImage: s,
-						width: parseInt(i.width),
-						height: parseInt(i.height),
-						fixedWidthHeight: t
-					}
 				}
 				render() {
 					var e;
@@ -622,4 +624,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SpecialMembershipsGifsTooltip.ab208591126c245eba5c.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SpecialMembershipsGifsTooltip.e2da59cf4b579b5cd9f3.js.map

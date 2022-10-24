@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/MembershipPaywallPage.55da220b8407ec1fbb34.js
-// Retrieved at 10/24/2022, 10:40:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/MembershipPaywallPage.947d73358cf54e59fb18.js
+// Retrieved at 10/24/2022, 5:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["MembershipPaywallPage"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -1873,8 +1873,8 @@
 			var A = Object(m.b)(R)(T),
 				z = s("./src/lib/constants/icons.ts"),
 				B = s("./src/reddit/controls/Button/index.tsx"),
-				D = s("./src/reddit/icons/fonts/index.tsx"),
-				L = s("./src/reddit/components/RichTextEditor/media/GifTooltip/GifTooltipBody.m.less"),
+				D = s("./src/reddit/icons/fonts/index.tsx");
+			var L = s("./src/reddit/components/RichTextEditor/media/GifTooltip/GifTooltipBody.m.less"),
 				H = s.n(L);
 			const V = 4,
 				W = a()((function() {
@@ -1979,9 +1979,24 @@
 						s = [...this.state.columnHeights];
 					e.data.forEach(e => {
 						if ("gif" !== e.type || "r" === e.rating || "pg-13" === e.rating) return;
-						const i = this.getSimplifiedResult(e),
-							n = s.reduce((e, t, i) => t < s[e] ? i : e, 0);
-						t[n].push(i), s[n] += i.fixedWidthHeight + V
+						const i = function(e) {
+							var t, s;
+							const i = (null === (t = e.images.fixed_width) || void 0 === t ? void 0 : t.height) ? parseInt(e.images.fixed_width.height) : null,
+								n = !!(null === (s = e.images.downsized) || void 0 === s ? void 0 : s.url) && e.images.downsized.url.indexOf("giphy-downsized.gif") > 0,
+								r = n ? e.images.downsized : e.images.fixed_height;
+							return r && r.url && r.width && r.height && i ? {
+								id: e.id,
+								url: r.url,
+								hasDownsizedImage: n,
+								width: parseInt(r.width),
+								height: parseInt(r.height),
+								fixedWidthHeight: i
+							} : null
+						}(e);
+						if (i) {
+							const e = s.reduce((e, t, i) => t < s[e] ? i : e, 0);
+							t[e].push(i), s[e] += i.fixedWidthHeight + V
+						}
 					});
 					const i = e.pagination.offset + e.pagination.count;
 					this.setState({
@@ -1990,19 +2005,6 @@
 						loading: !1,
 						nextOffset: i < e.pagination.total_count ? i : null
 					})
-				}
-				getSimplifiedResult(e) {
-					const t = parseInt(e.images.fixed_width.height),
-						s = e.images.downsized && e.images.downsized.url.indexOf("giphy-downsized.gif") > 0,
-						i = s ? e.images.downsized : e.images.fixed_height;
-					return {
-						id: e.id,
-						url: i.url,
-						hasDownsizedImage: s,
-						width: parseInt(i.width),
-						height: parseInt(i.height),
-						fixedWidthHeight: t
-					}
 				}
 				render() {
 					var e;
@@ -6929,4 +6931,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/MembershipPaywallPage.55da220b8407ec1fbb34.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/MembershipPaywallPage.947d73358cf54e59fb18.js.map
