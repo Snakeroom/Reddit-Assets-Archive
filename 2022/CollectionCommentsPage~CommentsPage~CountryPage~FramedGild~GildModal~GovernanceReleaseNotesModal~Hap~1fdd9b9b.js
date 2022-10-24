@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~CountryPage~FramedGild~GildModal~GovernanceReleaseNotesModal~Hap~1fdd9b9b.42393396300908f42033.js
-// Retrieved at 10/21/2022, 4:20:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~CountryPage~FramedGild~GildModal~GovernanceReleaseNotesModal~Hap~1fdd9b9b.88b0ce2fb9eb9a96f9bf.js
+// Retrieved at 10/24/2022, 9:50:07 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~CountryPage~FramedGild~GildModal~GovernanceReleaseNotesModal~Hap~1fdd9b9b"], {
 		"./src/lib/colors/constants.ts": function(e, t, s) {
@@ -1217,10 +1217,10 @@
 				tt = 6e3,
 				st = 100,
 				it = Object(d.b)(() => Object(h.c)({
-					isLoggedIn: D.Q,
-					autoplayPref: D.b,
+					isLoggedIn: D.R,
+					autoplayPref: D.c,
 					currentTime: U.c,
-					currentUser: D.k,
+					currentUser: D.l,
 					isOverlayOpen: O.i,
 					loadTimes: U.f,
 					metadata: U.h,
@@ -2671,10 +2671,10 @@
 				a = s("./src/reddit/constants/experiments.ts"),
 				o = s("./src/reddit/helpers/chooseVariant/index.ts");
 			const n = Object(i.a)(e => Object(o.c)(e, {
-					experimentName: a.jg,
+					experimentName: a.kg,
 					experimentEligibilitySelector: o.a
 				}), e => e),
-				r = Object(i.a)(n, e => e === a.bg)
+				r = Object(i.a)(n, e => e === a.cg)
 		},
 		"./src/reddit/selectors/experiments/videoReactions.ts": function(e, t, s) {
 			"use strict";
@@ -2689,12 +2689,12 @@
 			const n = e => Object(a.c)(e, {
 					experimentName: i.yb,
 					experimentEligibilitySelector: o.e
-				}) === i.Pd,
+				}) === i.Qd,
 				r = e => Object(a.c)(e, {
-					experimentName: i.zc,
+					experimentName: i.Ac,
 					experimentEligibilitySelector: a.a
-				}) === i.Pd
+				}) === i.Qd
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~CountryPage~FramedGild~GildModal~GovernanceReleaseNotesModal~Hap~1fdd9b9b.42393396300908f42033.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~CountryPage~FramedGild~GildModal~GovernanceReleaseNotesModal~Hap~1fdd9b9b.88b0ce2fb9eb9a96f9bf.js.map

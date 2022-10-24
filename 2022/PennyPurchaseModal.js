@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PennyPurchaseModal.763695ad6ed5bbebcb91.js
-// Retrieved at 10/21/2022, 4:20:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PennyPurchaseModal.1495742f4aba231790e7.js
+// Retrieved at 10/24/2022, 9:50:07 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PennyPurchaseModal"], {
 		"./node_modules/@stripe/stripe-js/dist/stripe.esm.js": function(e, t, a) {
@@ -264,7 +264,7 @@
 							if (n && n.ok) {
 								const t = n.body.data.createEconPayment;
 								if (null === (p = null == t ? void 0 : t.errors) || void 0 === p ? void 0 : p.length) return e(Object(h.paypalApiError)(x(t.errors))), null;
-								const a = Object(g.k)(d());
+								const a = Object(g.l)(d());
 								if (t.ok) {
 									const {
 										status: e
@@ -1174,10 +1174,10 @@
 						const t = Object(j.a)(e);
 						return null === t ? void 0 : t
 					},
-					coinBalance: E.e,
+					coinBalance: E.f,
 					gildThingId: v.s,
 					isIframed: x.g,
-					nightmode: E.db,
+					nightmode: E.eb,
 					savedCardsPending: v.w,
 					selectedAward: P.b,
 					selectedPayment: v.c,
@@ -1186,7 +1186,7 @@
 					paypalErrorMessage: v.d,
 					purchaseMethods: y.a,
 					userName: e => {
-						const t = Object(E.k)(e);
+						const t = Object(E.l)(e);
 						return `u/${Object(C.e)(t)}`
 					}
 				}),
@@ -2018,8 +2018,8 @@
 				n = a("./src/lib/constants/index.ts"),
 				s = a("./src/reddit/constants/experiments.ts"),
 				o = a("./src/reddit/selectors/experiments/econ/simpleExperiment.ts");
-			const c = Object(o.a)(s.af),
-				d = Object(o.a)(s.bf),
+			const c = Object(o.a)(s.bf),
+				d = Object(o.a)(s.cf),
 				i = Object(r.a)([c, d], (e, t) => new Set([e && n.Mb, t && n.Lb].filter(e => !!e)))
 		},
 		"./src/reddit/selectors/experiments/econ/paymentsSandbox.ts": function(e, t, a) {
@@ -2029,7 +2029,7 @@
 			}));
 			var r = a("./src/reddit/constants/experiments.ts"),
 				n = a("./src/reddit/selectors/experiments/econ/simpleExperiment.ts");
-			const s = Object(n.a)(r.ud)
+			const s = Object(n.a)(r.vd)
 		},
 		"./src/redditGQL/operations/CancelEconRecurringPayment.json": function(e) {
 			e.exports = JSON.parse('{"id":"ac36f7489268"}')
@@ -2066,4 +2066,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PennyPurchaseModal.763695ad6ed5bbebcb91.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PennyPurchaseModal.1495742f4aba231790e7.js.map

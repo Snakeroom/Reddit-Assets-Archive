@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~SearchResults.6b1eead5741b88479ae9.js
-// Retrieved at 10/20/2022, 5:00:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~SearchResults.c3f66d0a1219c5d01a03.js
+// Retrieved at 10/24/2022, 9:50:07 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~SearchResults"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -597,7 +597,7 @@
 					let {
 						apiContext: r
 					} = s;
-					if (!Object(f.Q)(n())) return void t(Object(a.i)(m.a.LOGIN_MODAL_ID));
+					if (!Object(f.R)(n())) return void t(Object(a.i)(m.a.LOGIN_MODAL_ID));
 					const i = n().features.comments.models[e];
 					if (!i) return;
 					const d = i.isLocked ? l.l : l.f;
@@ -946,7 +946,7 @@
 			const M = Object(b.u)(),
 				T = e => `Distinguish--Dropdown--${e}`,
 				N = Object(a.c)({
-					currentUser: C.k,
+					currentUser: C.l,
 					collapsedBecauseCrowdControl: (e, t) => {
 						let {
 							comment: n
@@ -2394,4 +2394,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~SearchResults.6b1eead5741b88479ae9.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~SearchResults.c3f66d0a1219c5d01a03.js.map

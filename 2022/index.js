@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/index.9b7c4f350cd8083ce6ff.js
-// Retrieved at 10/19/2022, 12:30:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/index.58350d6d4f8af1f8504f.js
+// Retrieved at 10/24/2022, 9:50:07 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["index"], {
 		"./src/reddit/components/Econ/Audio/MuteIcon.tsx": function(e, t, n) {
@@ -235,27 +235,27 @@
 				}, r.a.createElement("path", {
 					d: "M8.125 15.9701V17.7501H9.925V19.0001H5.08V17.7501H6.88V15.9701C5.18411 15.8688 3.58787 15.1352 2.40663 13.9141C1.22538 12.6931 0.545039 11.0734 0.5 9.3751H1.75C1.80295 10.8493 2.43767 12.2424 3.51528 13.2497C4.59288 14.2571 6.02562 14.7965 7.5 14.7501C8.97438 14.7965 10.4071 14.2571 11.4847 13.2497C12.5623 12.2424 13.197 10.8493 13.25 9.3751H14.5C14.4551 11.0726 13.7754 12.6916 12.5952 13.9125C11.415 15.1334 9.82 15.8676 8.125 15.9701ZM3.5 8.9481V4.0481C3.5 2.98723 3.92143 1.96981 4.67157 1.21967C5.42172 0.469523 6.43913 0.0480957 7.5 0.0480957C8.56087 0.0480957 9.57828 0.469523 10.3284 1.21967C11.0786 1.96981 11.5 2.98723 11.5 4.0481V8.9481C11.5 10.009 11.0786 11.0264 10.3284 11.7765C9.57828 12.5267 8.56087 12.9481 7.5 12.9481C6.43913 12.9481 5.42172 12.5267 4.67157 11.7765C3.92143 11.0264 3.5 10.009 3.5 8.9481ZM4.75 8.9481C4.75 9.67744 5.03973 10.3769 5.55546 10.8926C6.07118 11.4084 6.77065 11.6981 7.5 11.6981C8.22935 11.6981 8.92882 11.4084 9.44454 10.8926C9.96027 10.3769 10.25 9.67744 10.25 8.9481V4.0481C10.25 3.31875 9.96027 2.61928 9.44454 2.10355C8.92882 1.58783 8.22935 1.2981 7.5 1.2981C6.77065 1.2981 6.07118 1.58783 5.55546 2.10355C5.03973 2.61928 4.75 3.31875 4.75 4.0481V8.9481Z"
 				})),
-				j = n("./src/reddit/endpoints/talk/index.ts"),
-				O = n("./src/reddit/actions/toaster.ts"),
+				O = n("./src/reddit/endpoints/talk/index.ts"),
+				j = n("./src/reddit/actions/toaster.ts"),
 				k = n("./src/reddit/models/Toast/index.ts"),
 				_ = n("./src/redditGQL/types.ts");
 			const {
-				fbt: P
-			} = n("./node_modules/fbt/lib/FbtPublic.js"), C = () => r.a.createElement("span", {
+				fbt: I
+			} = n("./node_modules/fbt/lib/FbtPublic.js"), P = () => r.a.createElement("span", {
 				className: b.a.MicrophoneIcon
 			}, r.a.createElement(h, null));
-			var I = e => {
+			var C = e => {
 				let {
 					roomId: t
 				} = e;
-				const n = Object(a.e)(u.db),
+				const n = Object(a.e)(u.eb),
 					[i, c] = Object(o.useState)(!1),
 					l = Object(a.d)(),
 					m = Object(g.b)(),
 					p = Object(E.a)();
 				return r.a.createElement(v.t, {
 					"data-testid": "audioroom-upcoming-start-talk",
-					Icon: i ? x.a : C,
+					Icon: i ? x.a : P,
 					iconClassName: i ? b.a.loadingIcon : "",
 					className: Object(s.a)(b.a.StartTalkButton, {
 						[b.a.isNightMode]: n
@@ -266,24 +266,24 @@
 					disabled: i,
 					text: r.a.createElement("span", {
 						className: b.a.StartTalkButtonText
-					}, P._("Start talk", null, {
+					}, I._("Start talk", null, {
 						hk: "46EMgy"
 					})),
 					onClick: async () => {
 						m(Object(d.a)()), c(!0);
-						const e = await Object(j.l)(p(), {
+						const e = await Object(O.l)(p(), {
 							input: {
 								roomId: t
 							}
 						});
-						if (!e.ok) return l(Object(O.f)({
+						if (!e.ok) return l(Object(j.f)({
 							kind: k.b.Error,
-							text: j.a[_.j.ServiceError]
+							text: O.a[_.k.ServiceError]
 						})), void c(!1);
-						const n = Object(j.h)(e.body);
-						if (null == n ? void 0 : n.errorState) return l(Object(O.f)({
+						const n = Object(O.h)(e.body);
+						if (null == n ? void 0 : n.errorState) return l(Object(j.f)({
 							kind: k.b.Error,
-							text: j.a[n.errorState.code] || j.a[_.j.ServiceError]
+							text: O.a[n.errorState.code] || O.a[_.k.ServiceError]
 						})), void c(!1);
 						(null == n ? void 0 : n.okState) && (window.location.href = `${f.a.redditUrl}/talk/${t}`)
 					}
@@ -301,20 +301,20 @@
 				} = e;
 				const g = Object(a.d)(),
 					v = Object(l.a)(),
-					x = Object(a.e)(u.F),
-					E = Object(a.e)(u.db),
-					h = Object(a.e)(e => Object(u.Db)(e, {
+					x = Object(a.e)(u.G),
+					E = Object(a.e)(u.eb),
+					h = Object(a.e)(e => Object(u.Eb)(e, {
 						postId: n
 					})),
-					j = Object(a.e)(e => Object(u.Ab)(e, {
+					O = Object(a.e)(e => Object(u.Bb)(e, {
 						userName: t
 					}));
 				Object(o.useEffect)(() => {
 					n && v && v(Object(d.f)(n))
 				}, [v, n]), Object(o.useEffect)(() => {
-					j || g(Object(i.d)(t))
-				}, [g, t, n, j]);
-				const O = () => r.a.createElement("div", {
+					O || g(Object(i.d)(t))
+				}, [g, t, n, O]);
+				const j = () => r.a.createElement("div", {
 					"data-testid": "audioroom-avatar-upcoming",
 					key: `audioPostAvatar--${t}`,
 					className: Object(s.a)(b.a.hostAvatar, {
@@ -333,12 +333,12 @@
 					}),
 					ringClassName: "hostRing"
 				}));
-				return f ? r.a.createElement(O, null) : r.a.createElement("div", {
+				return f ? r.a.createElement(j, null) : r.a.createElement("div", {
 					className: b.a.upcomingTalkCard,
 					"data-testid": "audioroom-card-upcoming"
 				}, r.a.createElement("div", {
 					className: b.a.upcomingTalkContainer
-				}, r.a.createElement(O, null), r.a.createElement("div", {
+				}, r.a.createElement(j, null), r.a.createElement("div", {
 					className: b.a.upcomingTalkInfo
 				}, r.a.createElement("div", {
 					className: b.a.upcomingTalkLabel
@@ -346,7 +346,7 @@
 					hk: "464Rq3"
 				})), r.a.createElement("div", {
 					className: b.a.upcomingTalkHost
-				}, "u/", t), h && p && r.a.createElement(I, {
+				}, "u/", t), h && p && r.a.createElement(C, {
 					roomId: p
 				}))))
 			}
@@ -377,7 +377,7 @@
 						isListener: t = !1,
 						postId: n
 					} = e;
-					const [i, c] = Object(o.useState)(new Set), [d, l] = Object(o.useState)(new Set), v = Object(a.e)(p.db), [x, E] = Object(o.useState)(-1);
+					const [i, c] = Object(o.useState)(new Set), [d, l] = Object(o.useState)(new Set), v = Object(a.e)(p.eb), [x, E] = Object(o.useState)(-1);
 					Object(o.useEffect)(() => {
 						const e = new Set;
 						for (; e.size < 13;) {
@@ -396,8 +396,8 @@
 						}
 					}, []);
 					const h = () => Math.floor(40 * Math.random() + 1),
-						j = t ? Array.from(d) : Array.from(i);
-					return r.a.createElement(r.a.Fragment, null, j && (null == j ? void 0 : j.map((e, o) => {
+						O = t ? Array.from(d) : Array.from(i);
+					return r.a.createElement(r.a.Fragment, null, O && (null == O ? void 0 : O.map((e, o) => {
 						return t ? r.a.createElement("div", {
 							key: `audioPostAvatar--${e}`,
 							className: u.a.listener
@@ -645,7 +645,7 @@
 				} = e;
 				const o = Object(b.eb)(),
 					s = Object(b.x)(o),
-					i = Object(a.e)(f.db);
+					i = Object(a.e)(f.eb);
 				return r.a.createElement("div", x({}, n, {
 					className: Object(p.a)(t, v.a.container, {
 						[v.a.commentsPage]: s,
@@ -657,22 +657,22 @@
 				}))
 			};
 			var h = n("./src/reddit/components/Econ/Prediction/Confetti/index.tsx"),
-				j = n("./src/reddit/controls/InternalLink/index.tsx"),
-				O = n("./src/reddit/selectors/posts.ts"),
+				O = n("./src/reddit/controls/InternalLink/index.tsx"),
+				j = n("./src/reddit/selectors/posts.ts"),
 				k = n("./src/reddit/components/Econ/Prediction/TournamentPostBody/ViewTournamentLink/index.m.less"),
 				_ = n.n(k);
 			const {
-				fbt: P
-			} = n("./node_modules/fbt/lib/FbtPublic.js"), C = e => {
+				fbt: I
+			} = n("./node_modules/fbt/lib/FbtPublic.js"), P = e => {
 				let {
 					className: t,
 					postId: n
 				} = e;
 				const o = Object(d.a)(),
-					s = Object(a.e)(e => Object(O.V)(e, {
+					s = Object(a.e)(e => Object(j.V)(e, {
 						postId: n
 					}));
-				return r.a.createElement(j.default, {
+				return r.a.createElement(O.default, {
 					className: Object(p.a)(_.a.viewTournament, t),
 					to: `${null==s?void 0:s.url}predictions/`,
 					onClick: () => o((e => t => ({
@@ -681,11 +681,11 @@
 						action: "click",
 						noun: "view_tournament"
 					}))(n))
-				}, P._("Go to Tournament", null, {
+				}, I._("Go to Tournament", null, {
 					hk: "1QaAgH"
 				}))
 			};
-			var I = n("./src/reddit/components/Econ/Prediction/TournamentSnoosImage/index.tsx"),
+			var C = n("./src/reddit/components/Econ/Prediction/TournamentSnoosImage/index.tsx"),
 				S = n("./src/reddit/components/Econ/Prediction/TournamentPostBody/PredictionPostCard/index.m.less"),
 				N = n.n(S);
 			const {
@@ -700,7 +700,7 @@
 					className: N.a.container
 				}, r.a.createElement(h.a, {
 					className: N.a.confetti
-				}), r.a.createElement(I.a, {
+				}), r.a.createElement(C.a, {
 					className: N.a.image
 				}), r.a.createElement("div", {
 					className: N.a.label
@@ -711,7 +711,7 @@
 				let {
 					postId: t
 				} = e;
-				const n = Object(a.e)(e => Object(O.V)(e, {
+				const n = Object(a.e)(e => Object(j.V)(e, {
 					postId: t
 				}));
 				return r.a.createElement(y, {
@@ -721,7 +721,7 @@
 					description: w._("Your destiny has been decided", null, {
 						hk: "vGyB7"
 					}),
-					cta: r.a.createElement(j.default, {
+					cta: r.a.createElement(O.default, {
 						className: N.a.cta,
 						to: `${null==n?void 0:n.url}predictions/`
 					}, w._("View Results", null, {
@@ -739,7 +739,7 @@
 					description: w._("May the odds be ever in your favor", null, {
 						hk: "1Brw70"
 					}),
-					cta: r.a.createElement(C, {
+					cta: r.a.createElement(P, {
 						className: N.a.cta,
 						postId: t
 					})
@@ -765,7 +765,7 @@
 					className: o,
 					...s
 				} = e;
-				const i = Object(a.e)(f.db),
+				const i = Object(a.e)(f.eb),
 					c = Math.floor(100 * t / n);
 				return r.a.createElement("div", G({
 					className: Object(p.a)(V.a.container, o, {
@@ -787,12 +787,12 @@
 			var M = n("./src/reddit/icons/fonts/index.tsx"),
 				B = n("./src/reddit/components/Econ/Prediction/PredictionCard/PredictionBody/index.tsx"),
 				U = n("./src/reddit/components/Econ/Prediction/PredictionModal/index.tsx"),
-				J = n("./src/reddit/actions/economics/helpers/index.ts"),
-				H = n("./src/reddit/actions/economics/predictions/index.ts"),
-				$ = n("./src/reddit/actions/post.ts"),
+				$ = n("./src/reddit/actions/economics/helpers/index.ts"),
+				J = n("./src/reddit/actions/economics/predictions/index.ts"),
+				H = n("./src/reddit/actions/post.ts"),
 				X = n("./src/reddit/components/Econ/Prediction/hooks/useDelayedUpvoteAnimation.tsx"),
-				D = n("./src/reddit/helpers/trackers/predictions.ts"),
-				Q = n("./src/reddit/hooks/useToast.tsx"),
+				Q = n("./src/reddit/helpers/trackers/predictions.ts"),
+				D = n("./src/reddit/hooks/useToast.tsx"),
 				Y = n("./src/reddit/models/Vote/index.ts"),
 				q = n("./src/reddit/selectors/experiments/econ/index.ts");
 			const {
@@ -826,10 +826,10 @@
 					cancelAction: b
 				} = function(e, t, n) {
 					const o = Object(a.d)(),
-						s = Object(a.e)(f.e),
+						s = Object(a.e)(f.f),
 						i = Object(a.e)(q.l),
 						c = Object(d.a)(),
-						u = Object(Q.a)(),
+						u = Object(D.a)(),
 						{
 							startDelayedUpvoteAnimation: m
 						} = Object(X.a)(n.id),
@@ -843,10 +843,10 @@
 							voteState: x
 						} = n,
 						E = t.userSelection,
-						[h, j] = r.a.useState(!1),
-						[O, k] = r.a.useState(null),
-						[_, P] = r.a.useState(!1),
-						C = b < Date.now();
+						[h, O] = r.a.useState(!1),
+						[j, k] = r.a.useState(null),
+						[_, I] = r.a.useState(!1),
+						P = b < Date.now();
 					return {
 						isLoading: h,
 						isShowingVoteAnimation: _,
@@ -854,32 +854,32 @@
 							let {
 								id: t
 							} = e;
-							return t === O
+							return t === j
 						}),
 						selectOption: e => {
-							C || E || k(e.id)
+							P || E || k(e.id)
 						},
 						predict: async t => {
-							if (t.currency === l.a.Coins && t.amount > s) return Object(J.promptUserToBuyMoreCoins)(), void c(D.b);
-							if (C) return u(W._("Error: Failed to make prediction. This prediction has already ended", null, {
+							if (t.currency === l.a.Coins && t.amount > s) return Object($.promptUserToBuyMoreCoins)(), void c(Q.b);
+							if (P) return u(W._("Error: Failed to make prediction. This prediction has already ended", null, {
 								hk: "22UWEr"
 							})), void k(null);
-							if (!p || !O) throw new Error("Invalid arguments, optionId and pollId must be strings");
-							j(!0), c(Object(D.o)({
+							if (!p || !j) throw new Error("Invalid arguments, optionId and pollId must be strings");
+							O(!0), c(Object(Q.o)({
 								pollId: p,
 								selectedNumberTokens: t.amount
 							}));
 							try {
-								await o(Object(H.s)({
+								await o(Object(J.s)({
 									coinPackageId: t.id,
-									selectedOptionId: O,
+									selectedOptionId: j,
 									price: t.amount,
 									pollId: p,
 									tournamentId: e,
 									tournamentPostId: n.id
-								})), i && x < Y.a.upvoted && (o(Object($.jb)(v)), o(Object($.jb)(p)), m()), j(!1), k(null), P(!0)
+								})), i && x < Y.a.upvoted && (o(Object(H.jb)(v)), o(Object(H.jb)(p)), m()), O(!1), k(null), I(!0)
 							} catch (r) {
-								j(!1), k(null), u(W._("Error: Failed to make prediction, please try again later", null, {
+								O(!1), k(null), u(W._("Error: Failed to make prediction, please try again later", null, {
 									hk: "1tECsx"
 								}))
 							}
@@ -888,7 +888,7 @@
 							k(null)
 						}, []),
 						hideAnimation: r.a.useCallback(() => {
-							P(!1)
+							I(!1)
 						}, [])
 					}
 				}(n, t, o);
@@ -917,7 +917,7 @@
 						post: t,
 						predictions: n
 					} = e;
-					const o = Object(a.e)(f.db),
+					const o = Object(a.e)(f.eb),
 						s = n.reduce((e, t) => {
 							let {
 								userSelection: n
@@ -1055,19 +1055,19 @@
 			})), n.d(t, "f", (function() {
 				return h
 			})), n.d(t, "e", (function() {
-				return j
-			})), n.d(t, "c", (function() {
 				return O
+			})), n.d(t, "c", (function() {
+				return j
 			})), n.d(t, "j", (function() {
 				return k
 			})), n.d(t, "d", (function() {
 				return _
 			})), n.d(t, "h", (function() {
-				return P
-			})), n.d(t, "a", (function() {
-				return C
-			})), n.d(t, "i", (function() {
 				return I
+			})), n.d(t, "a", (function() {
+				return P
+			})), n.d(t, "i", (function() {
+				return C
 			})), n.d(t, "b", (function() {
 				return S
 			})), n.d(t, "l", (function() {
@@ -1097,19 +1097,19 @@
 						...u,
 						variables: t
 					});
-					return !!Object(s.c)(n) && (n.body.data.subredditInfoById.allowedPostTypes || []).includes(v.H.Talk)
+					return !!Object(s.c)(n) && (n.body.data.subredditInfoById.allowedPostTypes || []).includes(v.I.Talk)
 				}, h = async (e, t) => {
 					var n, o;
 					const r = await Object(a.a)(e, {
 						...m,
 						variables: t
 					});
-					return !!Object(s.c)(r) && (null !== (o = null === (n = r.body.data.profileByName) || void 0 === n ? void 0 : n.allowedPostTypes) && void 0 !== o ? o : []).includes(v.H.Talk)
-				}, j = async e => {
+					return !!Object(s.c)(r) && (null !== (o = null === (n = r.body.data.profileByName) || void 0 === n ? void 0 : n.allowedPostTypes) && void 0 !== o ? o : []).includes(v.I.Talk)
+				}, O = async e => {
 					var t;
 					const n = await Object(a.a)(e, l);
 					return Object(s.c)(n) && null !== (t = n.body.data.availableAudioRoomTopics) && void 0 !== t ? t : []
-				}, O = (e, t, n) => t.type === i.g.User ? Object(a.a)(e, {
+				}, j = (e, t, n) => t.type === i.g.User ? Object(a.a)(e, {
 					...c,
 					variables: n
 				}) : Object(a.a)(e, {
@@ -1131,27 +1131,27 @@
 							subredditId: t.id
 						}
 					}
-				}), _ = () => Object(r.a)(), P = e => e.data.createAudioRoomOrError || e.data.createAudioRoomOnProfile || e.data.startAudioRoom, C = {
-					[v.j.ServiceError]: o.fbt._("Something's wrong with the talk service right now. Check back later.", null, {
+				}), _ = () => Object(r.a)(), I = e => e.data.createAudioRoomOrError || e.data.createAudioRoomOnProfile || e.data.startAudioRoom, P = {
+					[v.k.ServiceError]: o.fbt._("Something's wrong with the talk service right now. Check back later.", null, {
 						hk: "3XqPJS"
 					}),
-					[v.j.UserNotAuthorized]: o.fbt._("You don't have permission to start talks in this community.", null, {
+					[v.k.UserNotAuthorized]: o.fbt._("You don't have permission to start talks in this community.", null, {
 						hk: "1XY1Ss"
 					}),
-					[v.j.RoomLimitExceeded]: o.fbt._("You can only create three talks at one time. To continue, close a talk you're not using.", null, {
+					[v.k.RoomLimitExceeded]: o.fbt._("You can only create three talks at one time. To continue, close a talk you're not using.", null, {
 						hk: "3zPx9X"
 					}),
-					[v.j.ConcurrentRoomLimitExceeded]: o.fbt._("Too many talks are happening right now. Try again later.", null, {
+					[v.k.ConcurrentRoomLimitExceeded]: o.fbt._("Too many talks are happening right now. Try again later.", null, {
 						hk: "2LYXJx"
 					}),
-					[v.j.SubredditRoomLimitExceeded]: o.fbt._("This community can only host two talks at a time. Try again after one has ended.", null, {
+					[v.k.SubredditRoomLimitExceeded]: o.fbt._("This community can only host two talks at a time. Try again after one has ended.", null, {
 						hk: "2mGf21"
 					})
-				}, I = e => e.data.prepareAudioRoom || e.data.prepareAudioRoomOnProfile, S = {
-					[v.J.ServiceError]: o.fbt._("Something's wrong with the talk service right now. Check back later.", null, {
+				}, C = e => e.data.prepareAudioRoom || e.data.prepareAudioRoomOnProfile, S = {
+					[v.K.ServiceError]: o.fbt._("Something's wrong with the talk service right now. Check back later.", null, {
 						hk: "3XqPJS"
 					}),
-					[v.J.UserNotAuthorized]: o.fbt._("You don't have permission to start talks in this community.", null, {
+					[v.K.UserNotAuthorized]: o.fbt._("You don't have permission to start talks in this community.", null, {
 						hk: "1XY1Ss"
 					})
 				}, N = (e, t) => Object(a.a)(e, {
@@ -1338,4 +1338,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/index.9b7c4f350cd8083ce6ff.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/index.58350d6d4f8af1f8504f.js.map

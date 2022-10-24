@@ -1,10 +1,10 @@
-// https://www.redditstatic.com/desktop2x/CommunityNotificationSettings.95073dce574658b52892.js
-// Retrieved at 10/21/2022, 4:20:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CommunityNotificationSettings.6d20571879be426b3342.js
+// Retrieved at 10/24/2022, 9:50:07 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CommunityNotificationSettings"], {
 		"./node_modules/lodash/times.js": function(e, t, n) {
-			var s = n("./node_modules/lodash/_baseTimes.js"),
-				o = n("./node_modules/lodash/_castFunction.js"),
+			var o = n("./node_modules/lodash/_baseTimes.js"),
+				s = n("./node_modules/lodash/_castFunction.js"),
 				i = n("./node_modules/lodash/toInteger.js"),
 				a = 9007199254740991,
 				r = 4294967295,
@@ -13,15 +13,15 @@
 				if ((e = i(e)) < 1 || e > a) return [];
 				var n = r,
 					d = c(e, r);
-				t = o(t), e -= r;
-				for (var l = s(d, t); ++n < e;) t(n);
+				t = s(t), e -= r;
+				for (var l = o(d, t); ++n < e;) t(n);
 				return l
 			}
 		},
 		"./src/reddit/components/ModalStyledComponents/Modal.tsx": function(e, t, n) {
 			"use strict";
-			var s = n("./node_modules/react/index.js"),
-				o = n.n(s),
+			var o = n("./node_modules/react/index.js"),
+				s = n.n(o),
 				i = n("./src/higherOrderComponents/asModal/index.tsx"),
 				a = n("./src/reddit/components/ModalStyledComponents/index.tsx"),
 				r = n("./src/reddit/controls/TextButton/index.tsx"),
@@ -30,19 +30,19 @@
 			t.a = Object(i.a)(e => {
 				const t = !!e.cancelActionText,
 					n = !(!e.actionText || !e.onConfirm);
-				return o.a.createElement(a.e, {
+				return s.a.createElement(a.e, {
 					style: e.style
-				}, o.a.createElement(a.i, null, o.a.createElement(c.a, null, o.a.createElement(a.q, null, e.headerText), !e.hideCancel && o.a.createElement(r.a, {
+				}, s.a.createElement(a.i, null, s.a.createElement(c.a, null, s.a.createElement(a.q, null, e.headerText), !e.hideCancel && s.a.createElement(r.a, {
 					onClick: () => {
 						e.trackCancel && e.trackCancel(), e.toggleModal()
 					}
-				}, o.a.createElement(a.b, null)))), o.a.createElement(a.l, null, e.modalBody), (t || n) && o.a.createElement(a.g, null, t && o.a.createElement(a.a, {
+				}, s.a.createElement(a.b, null)))), s.a.createElement(a.l, null, e.modalBody), (t || n) && s.a.createElement(a.g, null, t && s.a.createElement(a.a, {
 					"data-redditstyle": !0,
 					onMouseDown: d,
 					onClick: () => {
 						e.trackCancel && e.trackCancel(), e.toggleModal()
 					}
-				}, e.cancelActionText), n && o.a.createElement(a.u, {
+				}, e.cancelActionText), n && s.a.createElement(a.u, {
 					"data-redditstyle": !0,
 					onMouseDown: d,
 					onClick: t => {
@@ -67,8 +67,8 @@
 		"./src/reddit/components/Settings/Notifications/CommunityNotificationSettings/index.tsx": function(e, t, n) {
 			"use strict";
 			n.r(t);
-			var s = n("./node_modules/@researchgate/react-intersection-observer/lib/es/index.js"),
-				o = n("./node_modules/fbt/lib/FbtPublic.js"),
+			var o = n("./node_modules/@researchgate/react-intersection-observer/lib/es/index.js"),
+				s = n("./node_modules/fbt/lib/FbtPublic.js"),
 				i = n("./node_modules/reselect/es/index.js"),
 				a = n("./node_modules/react/index.js"),
 				r = n.n(a),
@@ -92,7 +92,7 @@
 				let {
 					subreddit: t,
 					onUnmute: n,
-					onSelect: s
+					onSelect: o
 				} = e;
 				var i, c;
 				const d = Object(_.a)(b.Q),
@@ -106,23 +106,23 @@
 						isNsfw: w,
 						isMuted: I
 					} = t,
-					j = I && d === b.Pd,
+					j = I && d === b.Qd,
 					L = j ? f.c.OFF : k,
 					T = t.styles.icon || (null === (i = t.styles.legacyIcon) || void 0 === i ? void 0 : i.url),
 					D = null !== (c = t.styles.primaryColor) && void 0 !== c ? c : void 0,
 					M = (e => {
 						switch (e) {
 							case f.c.OFF:
-								return o.fbt._("Off", null, {
+								return s.fbt._("Off", null, {
 									hk: "1JWIiA"
 								});
 							case f.c.FREQUENT:
-								return o.fbt._("High Frequency", null, {
+								return s.fbt._("High Frequency", null, {
 									hk: "1W8tQh"
 								});
 							case f.c.LOW:
 							default:
-								return o.fbt._("Low", null, {
+								return s.fbt._("Low", null, {
 									hk: "2YMQmI"
 								})
 						}
@@ -130,21 +130,21 @@
 					F = (e => {
 						switch (e) {
 							case f.c.OFF:
-								return o.fbt._("OFF", null, {
+								return s.fbt._("OFF", null, {
 									hk: "2Zjohc"
 								});
 							case f.c.FREQUENT:
-								return o.fbt._("FREQUENT", null, {
+								return s.fbt._("FREQUENT", null, {
 									hk: "3I2QgC"
 								});
 							case f.c.LOW:
 							default:
-								return o.fbt._("LOW", null, {
+								return s.fbt._("LOW", null, {
 									hk: "1qOHXh"
 								})
 						}
 					})(L),
-					P = (e => {
+					B = (e => {
 						switch (e) {
 							case f.c.OFF:
 								return r.a.createElement(p.a, {
@@ -161,8 +161,8 @@
 								})
 						}
 					})(L),
-					B = [{
-						displayText: o.fbt._("Frequent", null, {
+					P = [{
+						displayText: s.fbt._("Frequent", null, {
 							hk: "21spt7"
 						}),
 						isSelected: L === f.c.FREQUENT,
@@ -172,7 +172,7 @@
 							className: v.a.dropdownItemIcon
 						})
 					}, {
-						displayText: o.fbt._("Low", null, {
+						displayText: s.fbt._("Low", null, {
 							hk: "2uGDVq"
 						}),
 						isSelected: L === f.c.LOW,
@@ -182,7 +182,7 @@
 							className: v.a.dropdownItemIcon
 						})
 					}, {
-						displayText: o.fbt._("Off", null, {
+						displayText: s.fbt._("Off", null, {
 							hk: "4GiFvg"
 						}),
 						isSelected: L === f.c.OFF,
@@ -199,7 +199,7 @@
 					className: v.a.subreddit
 				}, r.a.createElement(h.b, {
 					iconUrl: T,
-					altText: o.fbt._("Subreddit icon", null, {
+					altText: s.fbt._("Subreddit icon", null, {
 						hk: "gEWhf"
 					}),
 					shouldHideNsfwIcon: w,
@@ -211,33 +211,33 @@
 					className: v.a.subredditInfoName
 				}, "r/", y), r.a.createElement("span", {
 					className: v.a.subredditInfoNotification
-				}, j ? o.fbt._("Community is muted", null, {
+				}, j ? s.fbt._("Community is muted", null, {
 					hk: "4ntSSB"
-				}) : o.fbt._("Notifications: {notification level}", [o.fbt._param("notification level", M)], {
+				}) : s.fbt._("Notifications: {notification level}", [s.fbt._param("notification level", M)], {
 					hk: "2YgR3R"
 				})))), r.a.createElement(g.b, {
 					isCompactStyle: !0,
 					displayText: F,
-					options: B,
+					options: P,
 					onSelect: e => {
 						var t;
-						j ? (E.current = e.value, u(!0)) : (C(Object(O.n)(N, y, null === (t = e.value) || void 0 === t ? void 0 : t.toLowerCase())), s(N, e.value))
+						j ? (E.current = e.value, u(!0)) : (C(Object(O.n)(N, y, null === (t = e.value) || void 0 === t ? void 0 : t.toLowerCase())), o(N, e.value))
 					},
 					buttonClassName: v.a.dropdown,
-					buttonIcon: P
+					buttonIcon: B
 				}), l && r.a.createElement(m.a, {
 					withOverlay: !0,
-					headerText: o.fbt._("Unmute {name of subreddit to unmute}", [o.fbt._param("name of subreddit to unmute", `r/${t.name}`)], {
+					headerText: s.fbt._("Unmute {name of subreddit to unmute}", [s.fbt._param("name of subreddit to unmute", `r/${t.name}`)], {
 						hk: "4c7YXB"
 					}),
 					toggleModal: () => u(!1),
-					modalBody: o.fbt._("Unmute {name of subreddit to unmute} to turn on notifications. This means their posts will be shown in your feeds and recommendations again.", [o.fbt._param("name of subreddit to unmute", `r/${t.name}`)], {
+					modalBody: s.fbt._("Unmute {name of subreddit to unmute} to turn on notifications. This means their posts will be shown in your feeds and recommendations again.", [s.fbt._param("name of subreddit to unmute", `r/${t.name}`)], {
 						hk: "2Slx6q"
 					}),
-					actionText: o.fbt._("Yes, Unmute", null, {
+					actionText: s.fbt._("Yes, Unmute", null, {
 						hk: "2kNju2"
 					}),
-					cancelActionText: o.fbt._("Cancel", null, {
+					cancelActionText: s.fbt._("Cancel", null, {
 						hk: "2TSLl5"
 					}),
 					onConfirm: () => {
@@ -252,11 +252,11 @@
 			var N = n("./src/reddit/components/Settings/Notifications/LoadingSection.tsx"),
 				k = n("./src/reddit/selectors/user.ts");
 			const y = Object(i.c)({
-					cursor: k.sb,
-					hasError: k.tb,
-					hasNextPage: k.ub,
-					isPending: k.vb,
-					subreddits: k.wb
+					cursor: k.tb,
+					hasError: k.ub,
+					hasNextPage: k.vb,
+					isPending: k.wb,
+					subreddits: k.xb
 				}),
 				w = Object(c.b)(y, e => ({
 					clearSubscribedSubredditsList: () => e(Object(d.c)()),
@@ -295,7 +295,7 @@
 				return d ? r.a.createElement("span", {
 					className: v.a.errorMessage,
 					"data-testid": "error-message"
-				}, o.fbt._("There was an issue fetching your subreddits notifications settings. Please try again later.", null, {
+				}, s.fbt._("There was an issue fetching your subreddits notifications settings. Please try again later.", null, {
 					hk: "1Wt132"
 				})) : l && !h ? r.a.createElement(N.a, {
 					rowsCount: 5
@@ -304,7 +304,7 @@
 					onSelect: m,
 					onUnmute: u,
 					key: e.id
-				})), c && r.a.createElement(s.a, {
+				})), c && r.a.createElement(o.a, {
 					onChange: e => {
 						e.isIntersecting && i && t({
 							after: i,
@@ -318,7 +318,7 @@
 				})) : r.a.createElement("span", {
 					className: v.a.errorMessage,
 					"data-testid": "error-message"
-				}, o.fbt._("You do not have subscribed subreddits.", null, {
+				}, s.fbt._("You do not have subscribed subreddits.", null, {
 					hk: "20pdSk"
 				}))
 			})
@@ -328,8 +328,8 @@
 			n.d(t, "a", (function() {
 				return d
 			}));
-			var s = n("./node_modules/lodash/times.js"),
-				o = n.n(s),
+			var o = n("./node_modules/lodash/times.js"),
+				s = n.n(o),
 				i = n("./node_modules/react/index.js"),
 				a = n.n(i),
 				r = n("./src/reddit/components/Settings/Notifications/index.m.less"),
@@ -343,7 +343,7 @@
 					"aria-busy": "true"
 				}, a.a.createElement("div", {
 					className: c.a.loadingSectionHeader
-				}), o()(t, e => a.a.createElement("div", {
+				}), s()(t, e => a.a.createElement("div", {
 					className: c.a.loadingToggleWrapper,
 					key: e
 				}, a.a.createElement("span", {
@@ -389,8 +389,8 @@
 			n.d(t, "a", (function() {
 				return m
 			}));
-			var s = n("./node_modules/react/index.js"),
-				o = n.n(s),
+			var o = n("./node_modules/react/index.js"),
+				s = n.n(o),
 				i = n("./src/reddit/controls/DropdownSelector/index.m.less"),
 				a = n.n(i),
 				r = n("./src/lib/classNames/index.ts"),
@@ -400,9 +400,9 @@
 			const u = e => {
 				e.preventDefault()
 			};
-			class m extends o.a.Component {
+			class m extends s.a.Component {
 				constructor() {
-					super(...arguments), this.dropdownButton = o.a.createRef(), this.menuItems = o.a.createRef(), this.containerRef = o.a.createRef(), this.state = {
+					super(...arguments), this.dropdownButton = s.a.createRef(), this.menuItems = s.a.createRef(), this.containerRef = s.a.createRef(), this.state = {
 						isOpen: !1
 					}, this.handleDocumentClick = e => {
 						this.containerRef && this.containerRef.current && (this.containerRef.current.contains(e.target) || this.setState({
@@ -410,9 +410,9 @@
 						}))
 					}, this.onSelectOption = (e, t, n) => {
 						const {
-							onSelect: s
+							onSelect: o
 						} = this.props;
-						e.preventDefault(), e.stopPropagation(), e.nativeEvent.stopPropagation(), s(t), n && this.dropdownButton.current && this.dropdownButton.current.focus(), this.setState({
+						e.preventDefault(), e.stopPropagation(), e.nativeEvent.stopPropagation(), o(t), n && this.dropdownButton.current && this.dropdownButton.current.focus(), this.setState({
 							isOpen: !1
 						})
 					}, this.onOptionClick = (e, t) => {
@@ -427,7 +427,7 @@
 						else {
 							if (!this.menuItems.current) return;
 							const n = this.menuItems.current.getElementsByClassName(a.a.menuOption);
-							for (let s = 0; s < n.length; s++) e.relatedTarget === n[s] && (t = !0)
+							for (let o = 0; o < n.length; o++) e.relatedTarget === n[o] && (t = !0)
 						}
 						this.setState({
 							isOpen: t
@@ -464,11 +464,11 @@
 						options: e,
 						showSelectedCheckmark: t,
 						isTopicsStyle: n,
-						menuOptionClassName: s
+						menuOptionClassName: o
 					} = this.props;
-					return e.map((e, i) => o.a.createElement(c.b, {
+					return e.map((e, i) => s.a.createElement(c.b, {
 						key: i + e.displayText,
-						className: Object(r.a)(a.a.menuOption, s, {
+						className: Object(r.a)(a.a.menuOption, o, {
 							[a.a.topics]: n
 						}),
 						noIcon: Boolean(e.icon),
@@ -485,7 +485,7 @@
 						buttonClassName: e,
 						className: t,
 						displayText: n,
-						isCompactStyle: s,
+						isCompactStyle: o,
 						isTopicsStyle: i,
 						menuItemsClassName: c,
 						name: m,
@@ -495,16 +495,16 @@
 					} = this.props, {
 						isOpen: b
 					} = this.state;
-					return o.a.createElement("div", {
+					return s.a.createElement("div", {
 						ref: this.containerRef,
 						id: this.props.id,
 						className: Object(r.a)(a.a.dropdownMenu, t, {
 							[a.a.topics]: i
 						})
-					}, o.a.createElement("button", {
+					}, s.a.createElement("button", {
 						onClick: h ? void 0 : this.handleDropdownClick,
 						className: Object(r.a)(e, a.a.selector, {
-							[a.a.compact]: s
+							[a.a.compact]: o
 						}, {
 							[a.a.topics]: i
 						}, {
@@ -515,17 +515,17 @@
 						ref: this.dropdownButton,
 						onBlur: h ? void 0 : this.handleDropdownBlur,
 						onKeyDown: h ? void 0 : this.handleDropdownKeyDown
-					}, o.a.createElement("span", {
+					}, s.a.createElement("span", {
 						className: a.a.selectorContent,
 						tabIndex: -1
-					}, f && o.a.createElement("span", {
+					}, f && s.a.createElement("span", {
 						className: a.a.buttonIcon
-					}, f), n), h ? null : p ? o.a.createElement(d.a, {
+					}, f), n), h ? null : p ? s.a.createElement(d.a, {
 						sizePx: 8,
 						className: a.a.loadingIcon
-					}) : o.a.createElement(l.a, {
+					}) : s.a.createElement(l.a, {
 						name: "caret_down"
-					})), o.a.createElement("div", {
+					})), s.a.createElement("div", {
 						className: Object(r.a)(a.a.menuItems, c, {
 							[a.a.topics]: i,
 							[a.a.isClosed]: !b
@@ -542,12 +542,12 @@
 			n.d(t, "a", (function() {
 				return i
 			}));
-			var s = n("./node_modules/react-redux/es/index.js"),
-				o = n("./src/reddit/helpers/chooseVariant/index.ts");
+			var o = n("./node_modules/react-redux/es/index.js"),
+				s = n("./src/reddit/helpers/chooseVariant/index.ts");
 
 			function i(e) {
-				let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : o.a;
-				return Object(s.e)(n => Object(o.c)(n, {
+				let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : s.a;
+				return Object(o.e)(n => Object(s.c)(n, {
 					experimentName: e,
 					experimentEligibilitySelector: t
 				}))
@@ -555,4 +555,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommunityNotificationSettings.95073dce574658b52892.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommunityNotificationSettings.6d20571879be426b3342.js.map

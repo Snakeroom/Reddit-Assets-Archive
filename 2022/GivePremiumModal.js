@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/GivePremiumModal.77d42333ffb94f0398f4.js
-// Retrieved at 10/20/2022, 9:40:06 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/GivePremiumModal.b97c06d60bf7dcb50a19.js
+// Retrieved at 10/24/2022, 9:50:07 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["GivePremiumModal", "givePremiumTrackers"], {
 		"./src/reddit/components/CoinBalance/index.m.less": function(e, t, n) {
@@ -65,11 +65,11 @@
 				h = n("./src/reddit/helpers/trackers/givePremium.ts"),
 				b = n("./src/lib/constants/index.ts"),
 				x = n("./src/lib/makeActionCreator/index.ts"),
-				g = n("./src/reddit/actions/toaster.ts"),
-				f = n("./src/lib/makeApiRequest/index.ts"),
+				f = n("./src/reddit/actions/toaster.ts"),
+				g = n("./src/lib/makeApiRequest/index.ts"),
 				C = n("./src/lib/omitHeaders/index.ts"),
-				v = n("./src/reddit/constants/headers.ts"),
-				O = n("./src/reddit/helpers/r2/normalizeR2APIErrors/index.ts");
+				O = n("./src/reddit/constants/headers.ts"),
+				v = n("./src/reddit/helpers/r2/normalizeR2APIErrors/index.ts");
 			var E = async (e, t, n, s, o, i) => {
 				const c = {
 					recipient: n,
@@ -78,7 +78,7 @@
 					message: o,
 					correlation_id: i
 				};
-				return Object(f.a)(Object(C.a)(e, [v.a]), {
+				return Object(g.a)(Object(C.a)(e, [O.a]), {
 					method: b.ob.POST,
 					endpoint: `${e.apiUrl}/api/v2/gold/give_premium`,
 					data: c
@@ -86,13 +86,13 @@
 					...e
 				} : e.error && e.error.type ? e : {
 					...e,
-					error: Object(O.a)(e)
+					error: Object(v.a)(e)
 				})
 			}, k = n("./src/reddit/helpers/correlationIdTracker.ts"), _ = n("./src/reddit/models/Toast/index.ts"), y = n("./src/reddit/selectors/premium.ts"), I = n("./src/reddit/actions/gold/constants.ts");
 			Object(x.a)(I.y), Object(x.a)(I.A), Object(x.a)(I.z), Object(x.a)(I.C);
 			const w = Object(x.a)(I.x),
 				j = Object(x.a)(I.w),
-				N = e => async (t, n) => {
+				S = e => async (t, n) => {
 					await t(j(e));
 					const o = Object(y.a)(n());
 					if (o) {
@@ -110,20 +110,20 @@
 									return t
 							}
 						})(e, o);
-						t(Object(g.f)({
+						t(Object(f.f)({
 							kind: _.b.Error,
-							duration: g.a,
+							duration: f.a,
 							text: n
 						}))
 					}
-				}, S = Object(x.a)(I.B), L = e => async (t, n) => {
+				}, L = Object(x.a)(I.B), N = e => async (t, n) => {
 					const o = n(),
 						i = Object(y.d)(o);
-					t(S(e));
+					t(L(e));
 					const c = s.fbt._("Success! You’ve given Premium to {recipient username}!", [s.fbt._param("recipient username", `u/${i}`)], {
 						hk: "3cBrLk"
 					});
-					t(Object(g.f)({
+					t(Object(f.f)({
 						kind: _.b.SuccessCommunity,
 						text: c
 					}))
@@ -150,8 +150,8 @@
 			}
 			const W = 10,
 				H = Object(a.c)({
-					coinBalance: G.e,
-					isEmployee: G.N,
+					coinBalance: G.f,
+					isEmployee: G.O,
 					isPending: y.b,
 					recipientName: y.d
 				}),
@@ -165,13 +165,13 @@
 							o(w());
 							try {
 								const i = await E(a(), t, e, n, s, Object(k.c)(k.a.GiftPremiumFlow));
-								if (i.error) await o(N(i));
+								if (i.error) await o(S(i));
 								else {
 									const e = i.body;
-									await o(L(e)), Object(k.b)(k.a.GiftPremiumFlow)
+									await o(N(e)), Object(k.b)(k.a.GiftPremiumFlow)
 								}
 							} catch (r) {
-								await o(N(r))
+								await o(S(r))
 							}
 						})(t, n, s, o ? i : ""))
 					}
@@ -784,4 +784,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/GivePremiumModal.77d42333ffb94f0398f4.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/GivePremiumModal.b97c06d60bf7dcb50a19.js.map

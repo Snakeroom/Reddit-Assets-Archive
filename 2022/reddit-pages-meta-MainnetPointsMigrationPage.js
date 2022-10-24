@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-pages-meta-MainnetPointsMigrationPage.ad6f6a025dba380f46e8.js
-// Retrieved at 10/21/2022, 4:20:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-pages-meta-MainnetPointsMigrationPage.f4380f24838bcde9ce94.js
+// Retrieved at 10/24/2022, 9:50:07 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-pages-meta-MainnetPointsMigrationPage"], {
 		"./node_modules/lodash/uniqueId.js": function(e, t, n) {
@@ -1143,8 +1143,8 @@
 				G = n("./node_modules/@ethersproject/address/lib.esm/index.js"),
 				K = n("./node_modules/lodash/debounce.js"),
 				X = n.n(K),
-				J = n("./src/lib/classNames/index.ts"),
-				Q = n("./src/reddit/constants/colors.ts"),
+				Q = n("./src/lib/classNames/index.ts"),
+				J = n("./src/reddit/constants/colors.ts"),
 				$ = n("./src/reddit/controls/FormFields/index.tsx"),
 				ee = n("./src/reddit/icons/svgs/Checkmark/index.tsx"),
 				te = n("./src/reddit/icons/svgs/Nsfw/index.tsx"),
@@ -1167,7 +1167,7 @@
 					c(re.Invalid)
 				}, m = Object(r.useMemo)(() => X()(u, 300), [o, n, u]);
 				return i.a.createElement("div", {
-					className: Object(J.a)(ae.a.container, t, {
+					className: Object(Q.a)(ae.a.container, t, {
 						[ae.a.invalid]: d
 					})
 				}, i.a.createElement($.c, {
@@ -1189,7 +1189,7 @@
 							return i.a.createElement(te.a, {
 								className: ae.a.icon,
 								style: {
-									fill: Q.a.warning
+									fill: J.a.warning
 								}
 							});
 						case re.Valid:
@@ -1750,7 +1750,7 @@
 				const e = Object(o.d)(),
 					t = Object(b.c)(),
 					n = Object(o.e)(E.a),
-					d = Object(o.e)(_.Q),
+					d = Object(o.e)(_.R),
 					[u, m] = Object(r.useState)(Object(b.d)()),
 					[p, y] = Object(r.useState)(Object(b.e)()),
 					[x, N] = Object(r.useReducer)(() => !0, !1),
@@ -1869,16 +1869,16 @@
 			const r = e => {
 					return Object(s.c)(e, {
 						experimentEligibilitySelector: s.a,
-						experimentName: a.Ce
-					}) === a.Pd
+						experimentName: a.De
+					}) === a.Qd
 				},
 				i = e => {
 					return Object(s.c)(e, {
 						experimentEligibilitySelector: s.a,
-						experimentName: a.Ae
-					}) === a.Pd
+						experimentName: a.Be
+					}) === a.Qd
 				}
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-pages-meta-MainnetPointsMigrationPage.ad6f6a025dba380f46e8.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-pages-meta-MainnetPointsMigrationPage.f4380f24838bcde9ce94.js.map

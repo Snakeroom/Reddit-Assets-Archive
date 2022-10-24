@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/NotificationsInbox.d0742b5a2c334314b041.js
-// Retrieved at 10/19/2022, 12:30:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/NotificationsInbox.1142b8a96eec4d6e7c9c.js
+// Retrieved at 10/24/2022, 9:50:07 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["NotificationsInbox"], {
 		"./src/reddit/actions/pages/notificationsInbox.ts": function(e, t, n) {
@@ -18,7 +18,7 @@
 				u = n("./src/reddit/selectors/user.ts");
 			const m = () => async (e, t) => {
 				const n = t();
-				if (!(Object(u.Q)(n) || Object(u.P)(n))) return Object(c.a)(e, n);
+				if (!(Object(u.R)(n) || Object(u.Q)(n))) return Object(c.a)(e, n);
 				e(b()), e(f()), await e(p())
 			}, b = () => Object(a.k)({
 				actionSource: a.a.NotificationsInbox,
@@ -29,7 +29,7 @@
 				const n = t(),
 					i = Object(l.g)(t()),
 					a = !(!i || !i.length),
-					r = Object(u.Q)(n) || Object(u.P)(n);
+					r = Object(u.R)(n) || Object(u.Q)(n);
 				if (a || !r) return;
 				const c = {
 					first: 10
@@ -606,23 +606,23 @@
 				}
 			}
 			var T = Object(r.c)(w),
-				P = n("./src/reddit/selectors/appBadges.ts"),
-				F = n("./src/reddit/selectors/experiments/inboxRedesign.ts"),
+				F = n("./src/reddit/selectors/appBadges.ts"),
+				P = n("./src/reddit/selectors/experiments/inboxRedesign.ts"),
 				A = n("./src/reddit/selectors/notificationsInbox.tsx"),
 				M = n("./src/reddit/selectors/tooltip.ts"),
 				U = n("./src/reddit/selectors/user.ts");
-			const B = Object(l.c)({
+			const R = Object(l.c)({
 				activeOverflowMenuId: M.a,
 				cursor: A.c,
 				earlierNotifications: A.b,
 				hasNextPage: A.d,
-				inboxBadgeCount: P.g,
-				isInboxPostEmbedEnabled: F.a,
+				inboxBadgeCount: F.g,
+				isInboxPostEmbedEnabled: P.a,
 				isPending: A.e,
 				todayNotifications: A.i,
-				userId: U.Cb
+				userId: U.Db
 			});
-			var R = Object(d.b)(B, e => ({
+			var B = Object(d.b)(R, e => ({
 					clearMessageTabBadgeCount: () => e(Object(u.b)()),
 					decreaseSubredditNotifications: (t, n) => e(Object(b.d)({
 						subredditId: t,
@@ -711,8 +711,8 @@
 				}))))))
 			};
 			const K = Object(l.c)({
-				messagesTabBadgeCount: P.h,
-				notificationsTabBadgeCount: P.a
+				messagesTabBadgeCount: F.h,
+				notificationsTabBadgeCount: F.a
 			});
 			var Z = Object(d.b)(K, e => ({
 				clearMessageTabBadgeCount: () => e(Object(u.b)()),
@@ -723,7 +723,7 @@
 				render() {
 					return a.a.createElement(s.a, null, a.a.createElement(c.a, {
 						hideOnlyChildMargin: !0,
-						content: a.a.createElement(R, null),
+						content: a.a.createElement(B, null),
 						disableFullscreen: !0,
 						navBar: a.a.createElement(Z, null)
 					}))
@@ -733,4 +733,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/NotificationsInbox.d0742b5a2c334314b041.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/NotificationsInbox.1142b8a96eec4d6e7c9c.js.map

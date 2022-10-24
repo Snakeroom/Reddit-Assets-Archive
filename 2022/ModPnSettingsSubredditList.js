@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModPnSettingsSubredditList.743b99931b68e5ab9a24.js
-// Retrieved at 10/19/2022, 9:50:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModPnSettingsSubredditList.a21b44397c3911936fc7.js
+// Retrieved at 10/24/2022, 9:50:07 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModPnSettingsSubredditList"], {
 		"./node_modules/lodash/times.js": function(e, t, n) {
@@ -78,7 +78,7 @@
 			function _(e) {
 				const {
 					handleModPnSubredditClick: t
-				} = e, n = Object(s.d)(), u = Object(s.e)(l.a), _ = Object(s.e)(m.j);
+				} = e, n = Object(s.d)(), u = Object(s.e)(l.a), _ = Object(s.e)(m.k);
 				return Object(i.useEffect)(() => {
 					n(Object(d.b)())
 				}, [n]), t ? u ? o.a.createElement(a.a, {
@@ -114,4 +114,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModPnSettingsSubredditList.743b99931b68e5ab9a24.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModPnSettingsSubredditList.a21b44397c3911936fc7.js.map

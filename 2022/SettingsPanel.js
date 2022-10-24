@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SettingsPanel.88fca63e00ff72abea5f.js
-// Retrieved at 10/19/2022, 2:10:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SettingsPanel.9c7a3c2cc3bcb89aeafc.js
+// Retrieved at 10/24/2022, 9:50:07 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SettingsPanel"], {
 		"./src/chat/components/Sidebar/SettingsPanel/SettingsGroup/index.m.less": function(e, t, a) {
@@ -63,7 +63,7 @@
 					const a = Object(l.d)();
 					return s.a.createElement(d.c, {
 						submit: () => {
-							a(Object(m.a)()), a(Object(u.J)())
+							a(Object(m.a)()), a(Object(u.M)())
 						},
 						submitButtonText: b._("Yes, Leave", null, {
 							hk: "4aBFrU"
@@ -78,21 +78,21 @@
 				},
 				p = a("./src/chat/selectors/channels.ts");
 			const {
-				fbt: A
+				fbt: _
 			} = a("./node_modules/fbt/lib/FbtPublic.js");
-			var _ = () => {
+			var A = () => {
 					const e = Object(l.d)(),
 						t = Object(l.e)(p.o);
 					return s.a.createElement(d.c, {
 						submit: () => {
-							t && e(Object(r.H)(t)), e(Object(u.J)())
+							t && e(Object(r.H)(t)), e(Object(u.M)())
 						},
-						submitButtonText: A._("Yes, Leave", null, {
+						submitButtonText: _._("Yes, Leave", null, {
 							hk: "1lG6hO"
 						})
-					}, s.a.createElement(d.b, null, A._("Leave group?", null, {
+					}, s.a.createElement(d.b, null, _._("Leave group?", null, {
 						hk: "4qlYAa"
-					})), s.a.createElement(d.a, null, A._("Once you leave, you won't get new messages and will need another invite to rejoin.", null, {
+					})), s.a.createElement(d.a, null, _._("Once you leave, you won't get new messages and will need another invite to rejoin.", null, {
 						hk: "1fBcJy"
 					})))
 				},
@@ -277,8 +277,8 @@
 				}))),
 				ve = a("./src/chat/models/Channel/index.ts"),
 				pe = a("./src/chat/models/Settings/index.ts"),
-				Ae = a("./src/chat/selectors/experiments.ts"),
-				_e = a("./src/chat/selectors/platform.ts"),
+				_e = a("./src/chat/selectors/experiments.ts"),
+				Ae = a("./src/chat/selectors/platform.ts"),
 				ke = a("./src/chat/selectors/theme.ts"),
 				xe = a("./src/chat/components/Sidebar/SettingsPanel/index.m.less"),
 				Ee = a.n(xe);
@@ -380,37 +380,37 @@
 				const a = d.d,
 					r = Object(l.d)(),
 					[m, b] = Object(c.useState)(null),
-					A = Object(l.e)(e => Object(p.N)(e, t.channelId)),
-					k = Object(l.e)(Ae.A),
-					x = Object(l.e)(Ae.i),
+					_ = Object(l.e)(e => Object(p.N)(e, t.channelId)),
+					k = Object(l.e)(_e.B),
+					x = Object(l.e)(_e.i),
 					E = Object(l.e)(p.a),
 					S = Object(l.e)(ke.e),
-					j = Object(l.e)(_e.d),
+					j = Object(l.e)(Ae.d),
 					g = Object(l.e)(p.t),
 					w = E && t.type === ve.b.Group,
 					L = Object(c.useMemo)(() => {
 						if (t) switch (t.type) {
 							case ve.b.Direct:
-								return Y.directChannel.filter(e => K(e, A) && X(e, A) && $(e, k));
+								return Y.directChannel.filter(e => K(e, _) && X(e, _) && $(e, k));
 							case ve.b.Group:
-								return Y.groupChannel.filter(e => K(e, A) && X(e, A) && $(e, k))
+								return Y.groupChannel.filter(e => K(e, _) && X(e, _) && $(e, k))
 						}
-					}, [t, A, k]),
+					}, [t, _, k]),
 					M = e => e.map(e => e !== I.InviteLink || x ? s.a.createElement(T, {
 						className: S && k && e === I.Theme ? Ee.a.Theme : void 0,
 						onclick: () => (e => {
 							switch (e) {
 								case I.About:
-									r(Object(o.k)()), r(Object(u.pb)());
+									r(Object(o.k)()), r(Object(u.ub)());
 									break;
 								case I.InvitePeople:
 									r(Object(o.c)()), r(Object(u.c)());
 									break;
 								case I.MuteNotifications:
-									r(Object(o.e)()), r(Object(u.S)());
+									r(Object(o.e)()), r(Object(u.V)());
 									break;
 								case I.UnmuteNotifications:
-									r(Object(o.g)()), r(Object(u.eb)());
+									r(Object(o.g)()), r(Object(u.ib)());
 									break;
 								case I.LeaveChat:
 									b(fe);
@@ -482,7 +482,7 @@
 								userToBlock: g
 							}) : null;
 						case je:
-							return s.a.createElement(_, null);
+							return s.a.createElement(A, null);
 						case ge:
 							return s.a.createElement(f, null);
 						case fe:
@@ -533,7 +533,7 @@
 					channel: t,
 					liveChatPost: a
 				} = e;
-				return Object(l.e)(Ae.s) && a ? s.a.createElement(Le, {
+				return Object(l.e)(_e.s) && a ? s.a.createElement(Le, {
 					liveChatPost: a
 				}) : t ? s.a.createElement(we, {
 					channel: t
@@ -560,4 +560,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SettingsPanel.88fca63e00ff72abea5f.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SettingsPanel.9c7a3c2cc3bcb89aeafc.js.map

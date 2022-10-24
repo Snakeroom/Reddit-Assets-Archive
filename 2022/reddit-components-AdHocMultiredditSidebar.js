@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-AdHocMultiredditSidebar.f97cef03776eab94ce9f.js
-// Retrieved at 9/29/2022, 4:30:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-AdHocMultiredditSidebar.f73479a4b1215761333c.js
+// Retrieved at 10/24/2022, 9:50:07 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-AdHocMultiredditSidebar"], {
 		"./src/reddit/actions/multireddit/constants.ts": function(e, n, t) {
@@ -149,10 +149,10 @@
 				}).apply(this, arguments)
 			}
 			const U = Object(o.c)({
-					currentUser: u.k,
-					isNightMode: u.db,
-					isPresenceUserPrefEnabled: u.V,
-					shouldHideNSFW: u.F
+					currentUser: u.l,
+					isNightMode: u.eb,
+					isPresenceUserPrefEnabled: u.W,
+					shouldHideNSFW: u.G
 				}),
 				l = Object(d.b)(U);
 			n.a = l(e => {
@@ -215,4 +215,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-AdHocMultiredditSidebar.f97cef03776eab94ce9f.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-AdHocMultiredditSidebar.f73479a4b1215761333c.js.map

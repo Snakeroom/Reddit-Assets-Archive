@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~RpanListingUnit~S~5809214e.b4dd27dbcb53041019dd.js
-// Retrieved at 10/21/2022, 4:20:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~RpanListingUnit~S~5809214e.7d62e0c0c85837436f59.js
+// Retrieved at 10/24/2022, 9:50:07 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~RpanListingUnit~S~5809214e"], {
 		"./src/devPlatform/components/ContextActions/ContextActionsLoader.tsx": function(e, t, o) {
@@ -1086,7 +1086,7 @@
 				isChatPost: j.d,
 				isPostSEOEligible: w.e,
 				postPermalink: I.F,
-				shouldOpenPostInNewTab: y.jb,
+				shouldOpenPostInNewTab: y.kb,
 				isBlockingInterstitialEnabled: E.b,
 				isBlockingInterstitialV2Enabled: E.c
 			}));
@@ -1649,7 +1649,7 @@
 					activeModalId: re.a,
 					claimedFreeAward: ae.b,
 					layout: R.S,
-					userIsOp: B.Db,
+					userIsOp: B.Eb,
 					subreddit: R.r,
 					isBlockedUserBannerEnabled: (e, t) => {
 						let {
@@ -1752,7 +1752,7 @@
 						shouldShowInsightsButton: Ae,
 						isTrueblockPCBlockeeEnabled: Le,
 						isReportAnAdEnabled: De
-					} = e, Be = Object(i.e)(le.d), We = Object(n.useCallback)(async () => {
+					} = e, Be = Object(i.e)(le.e), We = Object(n.useCallback)(async () => {
 						const e = Object(V.d)(V.a.GildingFlow, !0);
 						Ie(e, null == Pe ? void 0 : Pe.id);
 						const {
@@ -2652,7 +2652,7 @@
 						subredditId: o
 					}) : void 0
 				},
-				user: y.k
+				user: y.l
 			});
 			class B extends i.a.PureComponent {
 				constructor() {
@@ -3304,7 +3304,7 @@
 						} = t;
 						return Object(R.E)(e, {
 							pageLayer: r
-						}) && o && s && Object(ne.Bb)(e, {
+						}) && o && s && Object(ne.Cb)(e, {
 							userName: n.author
 						})
 					},
@@ -5003,10 +5003,10 @@
 				n = o("./src/reddit/constants/experiments.ts"),
 				r = o("./src/reddit/helpers/chooseVariant/index.ts");
 			const i = Object(s.a)(e => Object(r.c)(e, {
-					experimentName: n.Hc,
+					experimentName: n.Ic,
 					experimentEligibilitySelector: r.a
 				}), e => e),
-				a = Object(s.a)(i, e => e === n.Pd)
+				a = Object(s.a)(i, e => e === n.Qd)
 		},
 		"./src/reddit/selectors/experiments/reportingRevampDesktop.ts": function(e, t, o) {
 			"use strict";
@@ -5018,7 +5018,7 @@
 				r = o("./src/reddit/selectors/runTimeEnvVars.ts"),
 				i = o("./src/reddit/selectors/user.ts");
 			const a = e => !!Object(r.b)(e) || Object(n.c)(e, {
-				experimentEligibilitySelector: i.Q,
+				experimentEligibilitySelector: i.R,
 				experimentName: s.m
 			}) === s.g.Enabled
 		},
@@ -5027,4 +5027,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~RpanListingUnit~S~5809214e.b4dd27dbcb53041019dd.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~RpanListingUnit~S~5809214e.7d62e0c0c85837436f59.js.map

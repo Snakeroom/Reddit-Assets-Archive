@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/GovernanceReleaseNotesModal.47123723d9df557f5e7b.js
-// Retrieved at 10/21/2022, 4:20:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/GovernanceReleaseNotesModal.31ec56e17c27d47cd9c6.js
+// Retrieved at 10/24/2022, 9:50:07 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["GovernanceReleaseNotesModal"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -1319,7 +1319,7 @@
 				p = n.n(h);
 			const b = ["allow-forms", "allow-orientation-lock", "allow-popups", "allow-popups-to-escape-sandbox", "allow-presentation", "allow-same-origin", "allow-scripts", "allow-top-navigation-by-user-activation"].join(" "),
 				f = Object(i.b)(() => Object(o.c)({
-					isNightmodeOn: m.db
+					isNightmodeOn: m.eb
 				}));
 			t.a = f(e => {
 				const t = {
@@ -1466,7 +1466,7 @@
 						style: t
 					}, e.children)
 				},
-				R = Object(o.b)(() => Object(d.a)(E.F, j.jb, (e, t) => {
+				R = Object(o.b)(() => Object(d.a)(E.F, j.kb, (e, t) => {
 					let {
 						isSponsored: n,
 						postId: r
@@ -1723,7 +1723,7 @@
 			var E = n("./src/reddit/components/Media/VideoBox/index.m.less"),
 				w = n.n(E);
 			const j = Object(d.c)({
-				autoplayPref: p.b,
+				autoplayPref: p.c,
 				consumed: b.a,
 				loadTimes: b.f,
 				metadata: b.h,
@@ -3099,12 +3099,12 @@
 						rtJsonElementProps: o
 					});
 					switch (i) {
-						case b.Vf.SmIcon:
+						case b.Wf.SmIcon:
 							return s.a.createElement(h, {
 								subredditName: r,
 								rtJsonElementProps: o
 							});
-						case b.Vf.SmIconHc:
+						case b.Wf.SmIconHc:
 							return s.a.createElement(h, {
 								subredditName: r,
 								isHoverable: !0,
@@ -3551,12 +3551,12 @@
 				d = e => {
 					return Object(i.c)(e, {
 						experimentEligibilitySelector: a,
-						experimentName: r.Pf
+						experimentName: r.Qf
 					}) || ""
 				},
 				c = e => {
 					const t = d(e);
-					return t === r.Vf.SmIcon || t === r.Vf.SmIconHc
+					return t === r.Wf.SmIcon || t === r.Wf.SmIconHc
 				},
 				l = (e, t) => {
 					let {
@@ -3594,4 +3594,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/GovernanceReleaseNotesModal.47123723d9df557f5e7b.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/GovernanceReleaseNotesModal.31ec56e17c27d47cd9c6.js.map

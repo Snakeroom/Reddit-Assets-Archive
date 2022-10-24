@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-ModHub-flairs-PostFlairManagement~reddit-components-ModHub-flairs-UserFlairManagement.70e5f72e32b2b5195a3a.js
-// Retrieved at 10/19/2022, 12:30:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-ModHub-flairs-PostFlairManagement~reddit-components-ModHub-flairs-UserFlairManagement.d9daa013b71bd8512206.js
+// Retrieved at 10/24/2022, 9:50:07 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-ModHub-flairs-PostFlairManagement~reddit-components-ModHub-flairs-UserFlairManagement"], {
 		"./src/reddit/actions/flairManagement/constants.ts": function(e, t, s) {
@@ -367,10 +367,10 @@
 					[f.a.Emoji]: "emoji_only",
 					[f.a.Text]: "text_only"
 				},
-				M = (e, t) => {
+				R = (e, t) => {
 					return x(F[t] || "text_and_emoji")(e)
 				},
-				R = (e, t) => s => ({
+				M = (e, t) => s => ({
 					...v(s),
 					source: E(e),
 					action: "click",
@@ -628,7 +628,7 @@
 				}))),
 				Ne = s("./src/reddit/components/ModHub/flairs/FlairManagement/FlairTemplateEditor/ColorSwitch/index.m.less"),
 				Fe = s.n(Ne);
-			class Me extends o.a.PureComponent {
+			class Re extends o.a.PureComponent {
 				constructor() {
 					super(...arguments), this.onChange = () => {
 						this.props.onChange(!this.props.isDark)
@@ -644,7 +644,7 @@
 					}, "Aa")
 				}
 			}
-			var Re = s("./src/reddit/actions/flairManagement/index.ts"),
+			var Me = s("./src/reddit/actions/flairManagement/index.ts"),
 				Ue = s("./src/reddit/actions/post.ts"),
 				Be = s("./src/reddit/components/ThemeProvider/index.tsx"),
 				Ae = s("./src/reddit/constants/postLayout.ts"),
@@ -980,8 +980,8 @@
 					})
 				}),
 				St = Object(_e.b)(Tt, (e, t) => ({
-					deleteExamplePost: () => e(Object(Re.b)(u.e)),
-					makeExamplePost: s => e(Object(Re.c)(t.subredditId, s)),
+					deleteExamplePost: () => e(Object(Me.b)(u.e)),
+					makeExamplePost: s => e(Object(Me.c)(t.subredditId, s)),
 					updateExamplePost: t => e(Object(Ue.R)({
 						[u.e]: {
 							flair: [t]
@@ -1263,7 +1263,7 @@
 						label: U.fbt._("Flair text color", null, {
 							hk: "11Me49"
 						})
-					}, o.a.createElement(Me, {
+					}, o.a.createElement(Re, {
 						isDark: s.textColor === f.e.Dark,
 						onChange: this.onChangeTextColor
 					}))), i && o.a.createElement(se, {
@@ -1378,8 +1378,8 @@
 					...u.a,
 					backgroundColor: e === f.d.UserFlair ? A.c : A.a.defaultFlair
 				});
-			var Mt = s("./src/reddit/components/ModHub/flairs/FlairManagement/FlairTemplateRow/index.m.less"),
-				Rt = s.n(Mt);
+			var Rt = s("./src/reddit/components/ModHub/flairs/FlairManagement/FlairTemplateRow/index.m.less"),
+				Mt = s.n(Rt);
 			class Ut extends o.a.PureComponent {
 				constructor() {
 					super(...arguments), this.onStartEditButtonClick = () => {
@@ -1401,19 +1401,19 @@
 						isReordering: n
 					} = this.props, i = Object(b.c)(s);
 					return o.a.createElement(o.a.Fragment, null, o.a.createElement("div", {
-						className: Object(Z.a)(Rt.a.row, n ? Rt.a.reordering : null)
+						className: Object(Z.a)(Mt.a.row, n ? Mt.a.reordering : null)
 					}, o.a.createElement("div", {
-						className: Rt.a.flairPreviewCell
+						className: Mt.a.flairPreviewCell
 					}, o.a.createElement(be.b, {
-						className: Rt.a.flairComponent,
+						className: Mt.a.flairComponent,
 						flair: i,
 						forceSmallEmojis: !0
 					})), o.a.createElement("div", {
-						className: Rt.a.cssClassCell
+						className: Mt.a.cssClassCell
 					}, s.cssClass), o.a.createElement("div", {
-						className: Rt.a.settingsCell
+						className: Mt.a.settingsCell
 					}, Nt(s, e)), o.a.createElement("div", {
-						className: Rt.a.flairIdCell
+						className: Mt.a.flairIdCell
 					}, o.a.createElement(h.r, {
 						disabled: !this.props.flairTemplate.id,
 						onClick: this.onCopyIdButtonClick
@@ -1425,7 +1425,7 @@
 					}, U.fbt._("Edit", null, {
 						hk: "1nftDt"
 					})), o.a.createElement(h.r, {
-						className: Rt.a.removeButton,
+						className: Mt.a.removeButton,
 						disabled: a,
 						onClick: this.onRemoveButtonClick
 					}, o.a.createElement(fe.b, null)))), a && o.a.createElement(Dt, {
@@ -1586,7 +1586,7 @@
 					if (!t) return;
 					e.modOnly !== t.modOnly && this.props.sendEvent(I(s, !!e.modOnly)), e.textEditable !== t.textEditable && this.props.sendEvent(j(s, !!e.textEditable)), !!e.styleTemplate != !!t.styleTemplate && this.props.sendEvent(D(!!e.styleTemplate));
 					const n = e.allowableContent || f.a.All;
-					n !== (t.allowableContent || f.a.All) && this.props.sendEvent(M(s, n)), Object(b.l)(e) !== Object(b.l)(t) && this.props.sendEvent(R(s, Object(b.l)(e))), this.props.sendEvent(P(s, a))
+					n !== (t.allowableContent || f.a.All) && this.props.sendEvent(R(s, n)), Object(b.l)(e) !== Object(b.l)(t) && this.props.sendEvent(M(s, Object(b.l)(e))), this.props.sendEvent(P(s, a))
 				}
 				render() {
 					const {
@@ -2034,12 +2034,12 @@
 			}, (e, t) => {
 				if (Object(u.i)(e)) return Object(u.f)(e, t)
 			}, C, Object(r.a)((e, t) => {
-				if (Object(u.i)(e) || Object(g.rb)(e)) return;
+				if (Object(u.i)(e) || Object(g.sb)(e)) return;
 				const s = C(e, t);
 				if (!s) return;
 				const a = Object(h.I)(e, s);
 				if (!a) return;
-				if (Object(g.qb)(e, {
+				if (Object(g.rb)(e, {
 						subredditId: a
 					})) return;
 				const n = e.structuredStyles.models[a];
@@ -2053,10 +2053,10 @@
 				return a ? a.emojisCustomSize : void 0
 			}, (e, t) => {
 				if (t.forceDayMode) return !1;
-				return Object(g.Hb)(e).nightmode
+				return Object(g.Ib)(e).nightmode
 			}, (e, t) => {
-				const s = Object(g.Hb)(e);
-				if (Object(g.Q)(e)) return !s.hideNSFW;
+				const s = Object(g.Ib)(e);
+				if (Object(g.R)(e)) return !s.hideNSFW;
 				const a = C(e, t);
 				if (a) {
 					const t = Object(h.C)(e, {
@@ -2127,4 +2127,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ModHub-flairs-PostFlairManagement~reddit-components-ModHub-flairs-UserFlairManagement.70e5f72e32b2b5195a3a.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ModHub-flairs-PostFlairManagement~reddit-components-ModHub-flairs-UserFlairManagement.d9daa013b71bd8512206.js.map

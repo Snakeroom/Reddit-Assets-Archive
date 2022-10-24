@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/AchievementsActions.4e31d8c4400f40c3ecec.js
-// Retrieved at 10/18/2022, 6:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/AchievementsActions.d315b1884fce85fa7fa5.js
+// Retrieved at 10/24/2022, 9:50:07 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["AchievementsActions"], {
 		"./src/reddit/actions/economics/powerups/flairs/index.ts": function(e, t, r) {
@@ -23,13 +23,13 @@
 			})), r.d(t, "shouldFetchCommentsPowerupsInfo", (function() {
 				return _
 			})), r.d(t, "getSubredditUserCommentsPowerupsInfoFromCommentLinks", (function() {
-				return k
-			})), r.d(t, "getSubredditUserCommentsPowerupsInfoFromCommentCollection", (function() {
 				return C
-			})), r.d(t, "setSubredditUserAchievementFlair", (function() {
+			})), r.d(t, "getSubredditUserCommentsPowerupsInfoFromCommentCollection", (function() {
 				return E
-			})), r.d(t, "setSubredditUserSupporterFlair", (function() {
+			})), r.d(t, "setSubredditUserAchievementFlair", (function() {
 				return L
+			})), r.d(t, "setSubredditUserSupporterFlair", (function() {
+				return k
 			})), r.d(t, "setSubredditUserPowerupsFlairsVisibility", (function() {
 				return D
 			}));
@@ -103,7 +103,7 @@
 				}, g = (e, t) => async (r, i) => {
 					if (!e) return;
 					const s = i(),
-						d = Object(I.k)(s);
+						d = Object(I.l)(s);
 					if (!d || !Object(w.n)(s, {
 							subredditId: e
 						})) return;
@@ -118,7 +118,7 @@
 					fullData: !0
 				})), Object(w.g)(r(), {
 					subredditId: e
-				}))), k = e => async (t, r) => {
+				}))), C = e => async (t, r) => {
 					var i;
 					const s = r(),
 						d = e.map(e => {
@@ -139,16 +139,16 @@
 						return t
 					}));
 					await t(P(o, Array.from(c)))
-				}, C = (e, t) => async (r, i) => {
+				}, E = (e, t) => async (r, i) => {
 					if (!t) return;
 					if (!(await r(_(e)))) return;
 					const s = new Set;
 					Object.values(t).forEach(e => {
 						s.add(e.authorId)
 					}), await r(P(e, Array.from(s)))
-				}, E = (e, t) => async (r, i) => {
+				}, L = (e, t) => async (r, i) => {
 					const s = i(),
-						d = Object(I.k)(s);
+						d = Object(I.l)(s);
 					if (!d) return;
 					const n = d.id,
 						o = Object(j.i)(s, {
@@ -161,9 +161,9 @@
 						achievementFlairType: t,
 						supporterFlairType: o
 					}))
-				}, L = (e, t) => async (r, i) => {
+				}, k = (e, t) => async (r, i) => {
 					const s = i(),
-						d = Object(I.k)(s);
+						d = Object(I.l)(s);
 					if (!d) return;
 					const n = d.id,
 						o = Object(j.h)(s, {
@@ -181,7 +181,7 @@
 						gqlContext: n
 					} = s;
 					const o = r(),
-						c = Object(I.k)(o);
+						c = Object(I.l)(o);
 					if (!c) return;
 					const u = c.id;
 					t(v(e));
@@ -209,7 +209,7 @@
 						gqlContext: o
 					} = n;
 					const c = s(),
-						u = Object(I.k)(c);
+						u = Object(I.l)(c);
 					if (!u) return;
 					const l = u.id,
 						f = {
@@ -245,4 +245,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/AchievementsActions.4e31d8c4400f40c3ecec.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/AchievementsActions.d315b1884fce85fa7fa5.js.map

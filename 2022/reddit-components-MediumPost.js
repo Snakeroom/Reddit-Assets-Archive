@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-MediumPost.6429da4b66f1d873772c.js
-// Retrieved at 10/21/2022, 4:20:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-MediumPost.58c0bab4e8f96474e488.js
+// Retrieved at 10/24/2022, 9:50:07 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-MediumPost"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -896,7 +896,7 @@
 			const ce = Object(ae.a)(e => Object(ie.c)(e, {
 				experimentEligibilitySelector: ie.a,
 				experimentName: re.Ib
-			}), e => e === re.Pd);
+			}), e => e === re.Qd);
 			var de = s("./src/reddit/selectors/experiments/contributeBeforeSignUp.ts"),
 				le = s("./src/reddit/selectors/platform.ts"),
 				ue = s("./src/reddit/selectors/posts.ts"),
@@ -912,7 +912,7 @@
 					return async (e, n) => {
 						const o = n();
 						if (!!o.features.comments.drafts[s])
-							if (Object(me.S)(o) && t) {
+							if (Object(me.T)(o) && t) {
 								const n = fe({
 									hasFocus: t,
 									draftKey: s
@@ -992,12 +992,12 @@
 						const C = x(),
 							j = Object(te.d)(C, {
 								postId: r
-							}) && Object(oe.h)(C),
+							}) && Object(oe.i)(C),
 							S = j ? Object(q.a)() : c,
 							k = Object(ne.e)(C, {
 								commentId: S
 							}),
-							y = Object(me.k)(C);
+							y = Object(me.l)(C);
 						if (!y) return;
 						if (k && !j) return;
 						t || e(Oe({
@@ -1126,9 +1126,9 @@
 						commentId: u
 					}), _ = v && Object(te.d)(x, {
 						postId: v.postId
-					}) && Object(oe.h)(x), g = _ ? Object(q.a)() : f, E = Object(ne.e)(x, {
+					}) && Object(oe.i)(x), g = _ ? Object(q.a)() : f, E = Object(ne.e)(x, {
 						commentId: g
-					}), C = Object(me.k)(x);
+					}), C = Object(me.l)(x);
 					if (!C) return;
 					if (E && !_) return;
 					t || o(Oe({
@@ -1243,7 +1243,7 @@
 					return async (e, o) => {
 						const i = o(),
 							l = Object(r.a)(Z.c.replyToComment, s);
-						if (!Object(me.Q)(o()) && !Object(de.a)(i)) return e(Object(c.openRegisterModal)()), void e(Object(d.k)({
+						if (!Object(me.R)(o()) && !Object(de.a)(i)) return e(Object(c.openRegisterModal)()), void e(Object(d.k)({
 							actionSource: d.a.Reply,
 							redirectUrl: Object(se.m)(o(), {
 								commentId: s
@@ -1283,7 +1283,7 @@
 								draftType: Z.c.replyToComment,
 								rtJson: b,
 								text: ""
-							}, Object(me.S)(i)) {
+							}, Object(me.T)(i)) {
 							const n = Pe({
 								parentCommentId: s,
 								commentsPageKey: t,
@@ -1639,7 +1639,7 @@
 					let {
 						apiContext: r
 					} = o;
-					if (!Object(h.Q)(s())) return void t(Object(a.i)(l.a.LOGIN_MODAL_ID));
+					if (!Object(h.R)(s())) return void t(Object(a.i)(l.a.LOGIN_MODAL_ID));
 					const i = s().features.comments.models[e];
 					if (!i) return;
 					const c = i.isLocked ? u.l : u.f;
@@ -2688,7 +2688,7 @@
 						activeDetails: b,
 						shopTabState: f
 					} = e, h = s();
-					r && Object(d.a)(Object(a.g)(r)(h)), Object(c.Q)(h) ? await t(Object(o.h)(i.a.SNOOVATAR_MODAL, {
+					r && Object(d.a)(Object(a.g)(r)(h)), Object(c.R)(h) ? await t(Object(o.h)(i.a.SNOOVATAR_MODAL, {
 						share: l,
 						source: u,
 						activeTab: m,
@@ -3135,7 +3135,7 @@
 						let {
 							postId: s
 						} = t;
-						const n = Object(V.v)(e),
+						const n = Object(V.w)(e),
 							o = !!Object(F.m)(e, {
 								postId: s
 							}),
@@ -4074,7 +4074,7 @@
 					isActive: ne.j,
 					isBlurredPreview: X.b,
 					isCurrentUserProfilePost: ne.l,
-					isRecommendationPost: (e, t) => !!t.post.recommendationContext && Object(re.Q)(e),
+					isRecommendationPost: (e, t) => !!t.post.recommendationContext && Object(re.R)(e),
 					showPromotedCTA: oe.a,
 					moderatorPermissions: ee.m,
 					shouldShowNsfwListingBelow: $.b,
@@ -4513,7 +4513,7 @@
 					content: t
 				} = e;
 				var s;
-				const n = Object(a.e)(e => (null == t ? void 0 : t.approvedBy) ? Object(H.Ab)(e, {
+				const n = Object(a.e)(e => (null == t ? void 0 : t.approvedBy) ? Object(H.Bb)(e, {
 					userName: null == t ? void 0 : t.approvedBy
 				}) : null);
 				if (!n) return null;
@@ -4626,7 +4626,7 @@
 					content: t
 				} = e;
 				var s;
-				const n = Object(a.e)(e => (null == t ? void 0 : t.bannedBy) && "string" == typeof(null == t ? void 0 : t.bannedBy) ? Object(H.Ab)(e, {
+				const n = Object(a.e)(e => (null == t ? void 0 : t.bannedBy) && "string" == typeof(null == t ? void 0 : t.bannedBy) ? Object(H.Bb)(e, {
 						userName: null == t ? void 0 : t.bannedBy
 					}) : null),
 					r = Object(v.b)(t),
@@ -5957,7 +5957,7 @@
 						})
 					},
 					isNsfwBlurSubreddit: V.e,
-					shouldOpenPostInNewTab: W.jb
+					shouldOpenPostInNewTab: W.kb
 				}),
 				$ = e => {
 					const {
@@ -6214,7 +6214,7 @@
 					G = V && Object(E.i)(V),
 					z = Object(i.e)(e => {
 						if (!G) return !0;
-						const t = Object(C.Gb)(e, L.author || "");
+						const t = Object(C.Hb)(e, L.author || "");
 						return !t || t.enableFollowers
 					});
 				return r.a.createElement("div", {
@@ -6772,7 +6772,7 @@
 				x = s("./src/reddit/components/VerticalVotes/index.m.less"),
 				v = s.n(x);
 			const _ = Object(a.c)({
-					isNightMode: h.db,
+					isNightMode: h.eb,
 					isAnimatingUpvotePostId: f.k
 				}),
 				g = Object(i.b)(_),
@@ -7857,7 +7857,7 @@
 				d = (e, t) => s => {
 					const {
 						id: n
-					} = Object(i.Ab)(s, {
+					} = Object(i.Bb)(s, {
 						userName: t
 					});
 					return {
@@ -9182,7 +9182,7 @@
 					return Object(o.c)(e, {
 						experimentEligibilitySelector: o.a,
 						experimentName: n.Ub
-					}) === n.Pd
+					}) === n.Qd
 				})(e)
 			}
 		},
@@ -9271,8 +9271,8 @@
 					if (Object(i.a)(e)) return !1;
 					return Object(o.c)(e, {
 						experimentEligibilitySelector: o.a,
-						experimentName: n.Ac
-					}) === n.ad.Enabled
+						experimentName: n.Bc
+					}) === n.bd.Enabled
 				}
 		},
 		"./src/reddit/selectors/experiments/presence.ts": function(e, t, s) {
@@ -9285,8 +9285,8 @@
 			const r = e => {
 				return Object(o.c)(e, {
 					experimentEligibilitySelector: o.a,
-					experimentName: n.gf
-				}) === n.Pd
+					experimentName: n.hf
+				}) === n.Qd
 			}
 		},
 		"./src/reddit/selectors/i18n/index.ts": function(e, t, s) {
@@ -9302,7 +9302,7 @@
 				i = s("./src/reddit/selectors/experiments/nsfwListingBelow.ts");
 			const a = e => {
 					const t = Object(i.a)(e);
-					return Boolean(t) && !Object(o.vg)(t)
+					return Boolean(t) && !Object(o.wg)(t)
 				},
 				c = Object(n.a)(a, r.d, (e, t) => e && !t)
 		},
@@ -9366,7 +9366,7 @@
 					}
 					return !(e.created > Date.UTC(2019, 0))
 				}),
-				f = Object(o.a)(d.k, r.a, (e, t) => !!((null == e ? void 0 : e.id) && (null == t ? void 0 : t.authorId)) && e.id === t.authorId),
+				f = Object(o.a)(d.l, r.a, (e, t) => !!((null == e ? void 0 : e.id) && (null == t ? void 0 : t.authorId)) && e.id === t.authorId),
 				h = Object(o.a)(r.a, e => !(!e || !1 !== e.isRobotIndexable))
 		},
 		"./src/reddit/selectors/showPromotedCTA.ts": function(e, t, s) {
@@ -9380,10 +9380,10 @@
 				i = s("./src/reddit/models/Post/index.ts"),
 				a = s("./src/reddit/selectors/posts.ts");
 			const c = e => Object(r.c)(e, {
-					experimentName: o.jf,
+					experimentName: o.kf,
 					experimentEligibilitySelector: r.a
 				}),
-				d = (e, t) => (t === o.rf.Enabled && (null == e ? void 0 : e.isCreatedFromAdsUi) || (null == e ? void 0 : e.isSponsored)) && !Object(i.A)(e),
+				d = (e, t) => (t === o.sf.Enabled && (null == e ? void 0 : e.isCreatedFromAdsUi) || (null == e ? void 0 : e.isSponsored)) && !Object(i.A)(e),
 				l = Object(n.a)(a.G, c, (e, t) => d(e, t));
 			Object(n.a)((e, t) => t, c, (e, t) => d(e, t))
 		},
@@ -9481,4 +9481,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-MediumPost.6429da4b66f1d873772c.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-MediumPost.58c0bab4e8f96474e488.js.map

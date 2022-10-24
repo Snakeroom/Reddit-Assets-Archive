@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfileModeration.63f6b33f9b97e0b970c9.js
-// Retrieved at 10/19/2022, 9:50:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfileModeration.58a09392602716060343.js
+// Retrieved at 10/24/2022, 9:50:07 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfileModeration"], {
 		"./node_modules/lodash/_baseRange.js": function(e, t) {
@@ -394,8 +394,8 @@
 				B = n("./src/reddit/components/Settings/shared/Widgets.m.less"),
 				D = n.n(B);
 
-			function W() {
-				return (W = Object.assign || function(e) {
+			function G() {
+				return (G = Object.assign || function(e) {
 					for (var t = 1; t < arguments.length; t++) {
 						var n = arguments[t];
 						for (var a in n) Object.prototype.hasOwnProperty.call(n, a) && (e[a] = n[a])
@@ -403,7 +403,7 @@
 					return e
 				}).apply(this, arguments)
 			}
-			const G = Object(d.a)(h.a),
+			const W = Object(d.a)(h.a),
 				A = x.a.wrapped(T.a, "Circle", D.a),
 				z = x.a.h3("Label", D.a),
 				U = x.a.wrapped(S.c, "Subtext", D.a),
@@ -423,7 +423,7 @@
 						last: d,
 						...u
 					} = e;
-					return r.a.createElement("div", W({}, u, {
+					return r.a.createElement("div", G({}, u, {
 						className: Object(l.a)(D.a.Wrapper, t, {
 							[D.a.mColumn]: "column" === n,
 							[D.a.mDisabled]: !!i,
@@ -489,7 +489,7 @@
 				de = x.a.div("TickText", D.a),
 				ue = x.a.span("PreSubText", D.a),
 				me = Object(i.c)({
-					isNightModeOn: H.db
+					isNightModeOn: H.eb
 				}),
 				pe = Object(o.b)(me)(e => r.a.createElement(J, {
 					last: e.last,
@@ -597,7 +597,7 @@
 					id: `SettingDropdown--${e.id}`
 				}, e.displayTitle || e.selected), r.a.createElement(g.b, {
 					className: D.a.DropdownTriangle
-				}), r.a.createElement(G, {
+				}), r.a.createElement(W, {
 					container: void 0,
 					isOpen: e.isOpen,
 					renderContentsHidden: !0,
@@ -1672,9 +1672,9 @@
 			var _ = v;
 			const y = Object(i.c)({
 					isModerator: (e, t) => Object(u.g)(e, t.match.params),
-					isOwnProfile: (e, t) => Object(m.W)(e, t.match.params.profileName),
+					isOwnProfile: (e, t) => Object(m.X)(e, t.match.params.profileName),
 					isPending: e => e.profileModSettingsPage.api.pending,
-					hasSubreddit: (e, t) => Object(m.Bb)(e, {
+					hasSubreddit: (e, t) => Object(m.Cb)(e, {
 						userName: t.match.params.profileName
 					})
 				}),
@@ -1709,4 +1709,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileModeration.63f6b33f9b97e0b970c9.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileModeration.58a09392602716060343.js.map

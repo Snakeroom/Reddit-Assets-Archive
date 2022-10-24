@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/MatrixChat.55e5c67dbb8b3634267b.js
-// Retrieved at 9/29/2022, 4:30:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/MatrixChat.4fb287e52872ad491e48.js
+// Retrieved at 10/24/2022, 9:50:07 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["MatrixChat"], {
 		"./src/reddit/components/IFrame/index.m.less": function(e, t, a) {
@@ -119,8 +119,8 @@
 				}, r.a.createElement(m.b, null))), r.a.createElement("div", null)))
 			};
 			var f = a("./src/lib/prettyPrintNumber/index.ts"),
-				E = a("./src/reddit/icons/svgs/Close/index.tsx"),
-				j = a("./src/reddit/reducers/features/matrixChat/index.ts"),
+				j = a("./src/reddit/icons/svgs/Close/index.tsx"),
+				E = a("./src/reddit/reducers/features/matrixChat/index.ts"),
 				h = a("./src/reddit/selectors/features/matrixChat/index.ts"),
 				p = a("./src/reddit/components/MatrixChat/MinimizedChat/index.m.less"),
 				I = a.n(p);
@@ -145,7 +145,7 @@
 					className: Object(i.a)(I.a.container, t),
 					onClick: () => {
 						s(Object(d.c)({
-							state: j.b.NORMAL
+							state: E.b.NORMAL
 						}))
 					}
 				}, a), r.a.createElement("div", {
@@ -158,10 +158,10 @@
 					type: "button",
 					onClick: e => {
 						null == e || e.stopPropagation(), s(Object(d.c)({
-							state: j.b.CLOSED
+							state: E.b.CLOSED
 						}))
 					}
-				}, r.a.createElement(E.a, null)))
+				}, r.a.createElement(j.a, null)))
 			};
 			var _, v = a("./src/reddit/hooks/useToast.tsx"),
 				M = a("./src/reddit/selectors/user.ts"),
@@ -171,18 +171,18 @@
 				e.CLOSE = "matrix-chat.close", e.MINIMIZE = "matrix-chat.minimize", e.MAXIMIZE = "matrix-chat.maximize", e.LOADED = "matrix-chat.loaded", e.NOTIFICATIONS = "matrix-chat.notifications"
 			}(_ || (_ = {}));
 			const w = () => {
-				const [e, t] = r.a.useState(!1), a = r.a.useRef(null), s = Object(c.d)(), m = Object(c.e)(M.i), u = Object(c.e)(h.c), b = Object(c.e)(h.b), x = Object(c.e)(h.d), f = Object(v.a)(), E = b === j.b.CHAT_WITH_USER ? `${u}/user/${x}` : u, p = e => {
+				const [e, t] = r.a.useState(!1), a = r.a.useRef(null), s = Object(c.d)(), m = Object(c.e)(M.j), u = Object(c.e)(h.c), b = Object(c.e)(h.b), x = Object(c.e)(h.d), f = Object(v.a)(), j = b === E.b.CHAT_WITH_USER ? `${u}/user/${x}` : u, p = e => {
 					null == e || e.stopPropagation(), s(Object(d.c)({
-						state: j.b.CLOSED
+						state: E.b.CLOSED
 					}))
 				};
 				return r.a.useLayoutEffect(() => {
 					const e = e => {
 						var n, r;
 						if (e.data === _.CLOSE && p(), e.data === _.MINIMIZE && s(Object(d.c)({
-								state: j.b.MINIMIZED
+								state: E.b.MINIMIZED
 							})), e.data === _.MAXIMIZE && s(Object(d.c)({
-								state: j.b.MINIMIZED
+								state: E.b.MINIMIZED
 							})), e.data === _.LOADED && (t(!0), clearTimeout(a.current || void 0)), 0 === (null === (r = null === (n = e.data) || void 0 === n ? void 0 : n.indexOf) || void 0 === r ? void 0 : r.call(n, _.NOTIFICATIONS))) {
 							const [, t] = e.data.split(":");
 							s(Object(d.b)({
@@ -192,25 +192,25 @@
 					};
 					return window.addEventListener("message", e), () => window.document.removeEventListener("message", e)
 				}, []), r.a.useEffect(() => {
-					b === j.b.CLOSED && a.current && clearTimeout(a.current)
+					b === E.b.CLOSED && a.current && clearTimeout(a.current)
 				}, [b]), r.a.useEffect(() => {
-					b !== j.b.NORMAL || e || (a.current = window.setTimeout(() => {
+					b !== E.b.NORMAL || e || (a.current = window.setTimeout(() => {
 						p(), f(n.fbt._("Oops, something went wrong. Try again.", null, {
 							hk: "4mYDx0"
 						}))
 					}, 3e4))
 				}, [b, e]), r.a.useEffect(() => {
 					m && s(Object(d.a)(m))
-				}, [m]), r.a.createElement(o.a, null, b === j.b.MINIMIZED && r.a.createElement(N, {
+				}, [m]), r.a.createElement(o.a, null, b === E.b.MINIMIZED && r.a.createElement(N, {
 					className: g.a.container
-				}), !e && b === j.b.NORMAL && r.a.createElement(O, {
+				}), !e && b === E.b.NORMAL && r.a.createElement(O, {
 					className: Object(i.a)(g.a.container, g.a.main),
 					onClose: p
 				}), r.a.createElement(l.a, {
 					className: Object(i.a)(g.a.container, g.a.main, {
-						[g.a.hidden]: !(e && b === j.b.NORMAL)
+						[g.a.hidden]: !(e && b === E.b.NORMAL)
 					}),
-					src: E
+					src: j
 				}))
 			}
 		},
@@ -239,4 +239,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/MatrixChat.55e5c67dbb8b3634267b.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/MatrixChat.4fb287e52872ad491e48.js.map

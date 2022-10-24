@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CountryPage~Frontpage~ModListing~Multireddit~ProfileComments~ProfileOverview~ProfilePosts~Subreddit.13f67f33f11216c11544.js
-// Retrieved at 10/21/2022, 4:20:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CountryPage~Frontpage~ModListing~Multireddit~ProfileComments~ProfileOverview~ProfilePosts~Subreddit.535440edf3c029cbb008.js
+// Retrieved at 10/24/2022, 9:50:07 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CountryPage~Frontpage~ModListing~Multireddit~ProfileComments~ProfileOverview~ProfilePosts~Subreddit"], {
 		"./src/reddit/actions/subreddit/muting.ts": function(e, t, n) {
@@ -420,8 +420,8 @@
 			const S = e => {
 				return Object(f.c)(e, {
 					experimentEligibilitySelector: f.a,
-					experimentName: h.uf
-				}) === h.Pd
+					experimentName: h.vf
+				}) === h.Qd
 			};
 			var w = n("./src/reddit/selectors/user.ts"),
 				k = n("./src/reddit/components/BackToTop/index.m.less"),
@@ -446,9 +446,9 @@
 					[_, x] = Object(s.useState)(),
 					[E, N] = Object(s.useState)(),
 					[j, v] = Object(s.useState)(0),
-					T = Object(a.e)(w.k),
+					T = Object(a.e)(w.l),
 					D = Object(a.e)(S),
-					I = Object(a.e)(w.Q),
+					I = Object(a.e)(w.R),
 					L = encodeURIComponent(i.a.redditUrl + "/r/recap"),
 					P = i.a.accountManagerOrigin,
 					R = I ? "/r/recap" : `${P}/login/?dest=${L}`,
@@ -823,7 +823,7 @@
 				K = Object(f.c)({
 					isAwardListingExperimentEnabled: v.a,
 					isBestSortPopularEnabled: j.a,
-					user: D.k,
+					user: D.l,
 					dropdownIsOpen: (e, t) => Object(T.b)(t.dropdownId || A)(e),
 					isPopularPage: l.F
 				}),
@@ -1402,7 +1402,7 @@
 					isProfilePage: l.J,
 					pageLayer: e => e
 				}),
-				Me = Object(f.a)((e, t) => t.sortOptions, (e, t) => t.isFrontpage, j.a, D.k, l.F, v.a, De.j, (e, t, n, r, s, o, a) => {
+				Me = Object(f.a)((e, t) => t.sortOptions, (e, t) => t.isFrontpage, j.a, D.l, l.F, v.a, De.j, (e, t, n, r, s, o, a) => {
 					if (e) return {
 						isPopularPage: s,
 						sortOptions: e,
@@ -1781,7 +1781,7 @@
 				const t = Object(o.f)().getState(),
 					n = Object(h.a)(t, Object(i.c)());
 				if (e.isD2xPdpSideRailRecsEnabled) {
-					const t = e.d2xPdpSideRailRecsVariant === u.Zc.GreyRereddit || e.d2xPdpSideRailRecsVariant === u.Zc.GreyRedditNoNsfw || e.d2xPdpSideRailRecsVariant === u.Zc.LargeImagePreview ? e.reredditButtons : [];
+					const t = e.d2xPdpSideRailRecsVariant === u.ad.GreyRereddit || e.d2xPdpSideRailRecsVariant === u.ad.GreyRedditNoNsfw || e.d2xPdpSideRailRecsVariant === u.ad.LargeImagePreview ? e.reredditButtons : [];
 					return s.a.createElement(E, {
 						reredditContent: t,
 						countryCode: e.countryCode
@@ -2072,10 +2072,10 @@
 						r = t.redditStyle || Object(f.l)(e, {
 							subredditId: n
 						}),
-						s = Object(S.db)(e);
+						s = Object(S.eb)(e);
 					return r || s
 				},
-				nigtmode: S.db,
+				nigtmode: S.eb,
 				subredditId: u.n,
 				topPostVariant: h.d
 			}));
@@ -2440,11 +2440,11 @@
 				d = n("./node_modules/reselect/es/index.js");
 			const c = Object(d.a)(e => Object(s.c)(e, {
 					experimentEligibilitySelector: e => Object(i.h)(e) && Object(o.f)(e),
-					experimentName: r.tc
+					experimentName: r.uc
 				}), a.a),
 				l = Object(d.a)(e => Object(s.c)(e, {
 					experimentEligibilitySelector: e => !Object(i.h)(e) && Object(o.f)(e),
-					experimentName: r.sc
+					experimentName: r.tc
 				}), a.a),
 				u = Object(d.a)(c, l, (e, t) => e || t),
 				b = Object(d.a)(c, l, (e, t) => !(!e && !t))
@@ -2475,4 +2475,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CountryPage~Frontpage~ModListing~Multireddit~ProfileComments~ProfileOverview~ProfilePosts~Subreddit.13f67f33f11216c11544.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CountryPage~Frontpage~ModListing~Multireddit~ProfileComments~ProfileOverview~ProfilePosts~Subreddit.535440edf3c029cbb008.js.map

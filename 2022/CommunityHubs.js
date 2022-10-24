@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CommunityHubs.e3a99edf6ba9e2d3873b.js
-// Retrieved at 10/11/2022, 10:50:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CommunityHubs.143a3dc704fe75e5ee45.js
+// Retrieved at 10/24/2022, 9:50:07 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CommunityHubs"], {
 		"./src/reddit/components/CollapsibleFAQ/index.m.less": function(e, a, t) {
@@ -782,7 +782,7 @@
 			} = t("./node_modules/fbt/lib/FbtPublic.js");
 			a.default = () => {
 				const e = Object(k.a)(),
-					a = Object(i.e)(b.db);
+					a = Object(i.e)(b.eb);
 				return l.a.createElement("div", {
 					className: Z.a.landingPage
 				}, l.a.createElement(u, {
@@ -887,4 +887,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommunityHubs.e3a99edf6ba9e2d3873b.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommunityHubs.143a3dc704fe75e5ee45.js.map

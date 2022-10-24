@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/MarketplaceInFeedUnit.4c7d9c08906ae04d943e.js
-// Retrieved at 10/21/2022, 4:20:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/MarketplaceInFeedUnit.b4a7d2b94013c6c4efe2.js
+// Retrieved at 10/24/2022, 9:50:07 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["MarketplaceInFeedUnit"], {
 		"./src/reddit/components/AvatarBuilder/useMarketplaceConfig.tsx": function(e, t, n) {
@@ -33,7 +33,7 @@
 						t = Object(o.e)(e => e.user.session),
 						n = t ? t.accessToken : "",
 						c = t ? new Date(t.expires).getTime() : 1,
-						s = Object(o.e)(m.db),
+						s = Object(o.e)(m.eb),
 						O = Object(d.a)(),
 						f = p ? i.a.Rinkeby : i.a.Ethereum,
 						_ = Object(a.useMemo)(() => ({
@@ -73,7 +73,7 @@
 				f = () => {
 					const e = Object(o.e)(e => e.user.session),
 						t = e ? e.accessToken : "",
-						n = Object(o.e)(m.db),
+						n = Object(o.e)(m.eb),
 						c = Object(d.a)(),
 						l = p ? i.a.Rinkeby : i.a.Ethereum;
 					return Object(a.useMemo)(() => ({
@@ -365,8 +365,8 @@
 			}));
 			var r = n("./src/reddit/constants/experiments.ts"),
 				c = n("./src/reddit/selectors/experiments/econ/simpleExperiment.ts");
-			const a = Object(c.a)(r.ud)
+			const a = Object(c.a)(r.vd)
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/MarketplaceInFeedUnit.4c7d9c08906ae04d943e.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/MarketplaceInFeedUnit.b4a7d2b94013c6c4efe2.js.map

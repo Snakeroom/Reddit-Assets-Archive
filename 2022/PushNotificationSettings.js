@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PushNotificationSettings.608fc2d704c06fb524b6.js
-// Retrieved at 9/29/2022, 4:30:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PushNotificationSettings.11db9a018d41f514cd58.js
+// Retrieved at 10/24/2022, 9:50:07 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PushNotificationSettings"], {
 		"./node_modules/lodash/times.js": function(e, t, s) {
@@ -72,7 +72,7 @@
 					e.fetchNotificationSettings()
 				}, []);
 				const t = Object(u.a)(),
-					s = Object(o.e)(f.j),
+					s = Object(o.e)(f.k),
 					p = (s, n, i) => {
 						const o = e.rows && e.rows.byId[s];
 						return o ? a.a.createElement("span", {
@@ -103,8 +103,8 @@
 					}, n.fbt._("There was an issue fetching your notification settings. Please try again later.", null, {
 						hk: "4pmBD4"
 					})),
-					h = e.sections && e.sections.allIds,
-					N = h && h.map(t => {
+					N = e.sections && e.sections.allIds,
+					h = N && N.map(t => {
 						const i = e.sections && e.sections.byId && e.sections.byId[t];
 						if (!i) return null;
 						const o = "Moderation" === i.title;
@@ -127,7 +127,7 @@
 							handleModPnSubredditClick: e.handleModPnClick
 						})) : null)
 					});
-				return e.hasError ? _ : h && h.length > 0 ? a.a.createElement(a.a.Fragment, null, N) : a.a.createElement(d.a, {
+				return e.hasError ? _ : N && N.length > 0 ? a.a.createElement(a.a.Fragment, null, h) : a.a.createElement(d.a, {
 					rowsCount: 5
 				})
 			}
@@ -142,9 +142,9 @@
 				r = s("./src/reddit/models/NotificationSettingsLayout/index.ts"),
 				d = s("./src/reddit/selectors/user.ts");
 			const c = Object(i.c)({
-					hasError: d.u,
-					rows: d.hb,
-					sections: d.ib
+					hasError: d.v,
+					rows: d.ib,
+					sections: d.jb
 				}),
 				l = Object(n.b)(c, e => ({
 					fetchNotificationSettings: () => e(Object(a.a)(r.a.Push)),
@@ -169,4 +169,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PushNotificationSettings.608fc2d704c06fb524b6.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PushNotificationSettings.11db9a018d41f514cd58.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditLeaderboard.3581ad321e2a06804c09.js
-// Retrieved at 10/21/2022, 4:20:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditLeaderboard.1f1dac6bd65dfc0cae9a.js
+// Retrieved at 10/24/2022, 9:50:07 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditLeaderboard"], {
 		"./node_modules/lodash/times.js": function(e, t, r) {
@@ -73,7 +73,7 @@
 									icon: e.category_icon,
 									id: e.category_id,
 									name: e.category_name,
-									displayText: Object(u.ug)(e.category_name)
+									displayText: Object(u.vg)(e.category_name)
 								};
 								r.push(s.id), t[s.id] = s
 							}), {
@@ -133,7 +133,7 @@
 				}, f = e => async (t, r) => {
 					await t(Object(s.a)());
 					const n = r(),
-						a = Object(g.R)(n);
+						a = Object(g.S)(n);
 					if (Object(b.a)(n, e)) return;
 					const i = e && Object(p.e)(n, {
 							categoryName: e
@@ -242,8 +242,8 @@
 			const y = e => {
 				return Object(h.c)(e, {
 					experimentEligibilitySelector: h.a,
-					experimentName: g.uf
-				}) === g.Pd
+					experimentName: g.vf
+				}) === g.Qd
 			};
 			var f = r("./src/reddit/selectors/user.ts"),
 				k = r("./src/reddit/components/BackToTop/index.m.less"),
@@ -268,9 +268,9 @@
 					[_, v] = Object(s.useState)(),
 					[O, N] = Object(s.useState)(),
 					[j, T] = Object(s.useState)(0),
-					w = Object(i.e)(f.k),
+					w = Object(i.e)(f.l),
 					L = Object(i.e)(y),
-					P = Object(i.e)(f.Q),
+					P = Object(i.e)(f.R),
 					I = encodeURIComponent(o.a.redditUrl + "/r/recap"),
 					B = o.a.accountManagerOrigin,
 					F = P ? "/r/recap" : `${B}/login/?dest=${I}`,
@@ -493,7 +493,7 @@
 				const t = Object(a.f)().getState(),
 					r = Object(g.a)(t, Object(o.c)());
 				if (e.isD2xPdpSideRailRecsEnabled) {
-					const t = e.d2xPdpSideRailRecsVariant === u.Zc.GreyRereddit || e.d2xPdpSideRailRecsVariant === u.Zc.GreyRedditNoNsfw || e.d2xPdpSideRailRecsVariant === u.Zc.LargeImagePreview ? e.reredditButtons : [];
+					const t = e.d2xPdpSideRailRecsVariant === u.ad.GreyRereddit || e.d2xPdpSideRailRecsVariant === u.ad.GreyRedditNoNsfw || e.d2xPdpSideRailRecsVariant === u.ad.LargeImagePreview ? e.reredditButtons : [];
 					return s.a.createElement(O, {
 						reredditContent: t,
 						countryCode: e.countryCode
@@ -1559,10 +1559,10 @@
 						n = t.redditStyle || Object(h.l)(e, {
 							subredditId: r
 						}),
-						s = Object(y.db)(e);
+						s = Object(y.eb)(e);
 					return n || s
 				},
-				nigtmode: y.db,
+				nigtmode: y.eb,
 				subredditId: u.n,
 				topPostVariant: g.d
 			}));
@@ -2382,7 +2382,7 @@
 						} = t;
 						return Object(M.b)(e, r)
 					},
-					isMod: W.R,
+					isMod: W.S,
 					rankings: (e, t) => {
 						let {
 							categoryId: r
@@ -2658,7 +2658,7 @@
 					} = t;
 					return Object(g.b)(r.params.categoryName || "")
 				},
-				Ee = Object(m.tg)(p.i),
+				Ee = Object(m.ug)(p.i),
 				Ce = Object(d.c)({
 					categories: e => Object(ye.b)(e, {
 						categoriesOrder: Ee
@@ -2769,11 +2769,11 @@
 				d = r("./node_modules/reselect/es/index.js");
 			const c = Object(d.a)(e => Object(s.c)(e, {
 					experimentEligibilitySelector: e => Object(o.h)(e) && Object(a.f)(e),
-					experimentName: n.tc
+					experimentName: n.uc
 				}), i.a),
 				l = Object(d.a)(e => Object(s.c)(e, {
 					experimentEligibilitySelector: e => !Object(o.h)(e) && Object(a.f)(e),
-					experimentName: n.sc
+					experimentName: n.tc
 				}), i.a),
 				u = Object(d.a)(c, l, (e, t) => e || t),
 				m = Object(d.a)(c, l, (e, t) => !(!e && !t))
@@ -2811,4 +2811,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditLeaderboard.3581ad321e2a06804c09.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditLeaderboard.1f1dac6bd65dfc0cae9a.js.map

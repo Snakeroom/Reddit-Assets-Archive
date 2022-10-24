@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModQueuePages.0438603fdcf52c19a839.js
-// Retrieved at 10/21/2022, 4:20:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModQueuePages.3fc0205f0ab343df9937.js
+// Retrieved at 10/24/2022, 9:50:07 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModQueuePages"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -685,7 +685,7 @@
 					let {
 						apiContext: r
 					} = s;
-					if (!Object(f.Q)(n())) return void t(Object(a.i)(l.a.LOGIN_MODAL_ID));
+					if (!Object(f.R)(n())) return void t(Object(a.i)(l.a.LOGIN_MODAL_ID));
 					const i = n().features.comments.models[e];
 					if (!i) return;
 					const d = i.isLocked ? m.l : m.f;
@@ -913,16 +913,16 @@
 				E = n("./src/reddit/helpers/graphql/normalizePostFromGql/index.ts"),
 				j = n("./src/reddit/helpers/graphql/normalizeSubredditFromGql/index.ts");
 			const y = {
-					[s.wb.Edited]: O.C.Edited,
-					[s.wb.Modqueue]: O.C.Mod,
-					[s.wb.Reports]: O.C.Reported,
-					[s.wb.Spam]: O.C.Removed,
-					[s.wb.Unmoderated]: O.C.Unmoderated
+					[s.wb.Edited]: O.D.Edited,
+					[s.wb.Modqueue]: O.D.Mod,
+					[s.wb.Reports]: O.D.Reported,
+					[s.wb.Spam]: O.D.Removed,
+					[s.wb.Unmoderated]: O.D.Unmoderated
 				},
 				w = {
-					comments: O.A.Comment,
-					links: O.A.Post,
-					chat_comments: O.A.ChatComment
+					comments: O.B.Comment,
+					links: O.B.Post,
+					chat_comments: O.B.ChatComment
 				};
 
 			function S(e) {
@@ -959,7 +959,7 @@
 					...!!o.profile && {
 						subredditIds: [o.profile]
 					},
-					sort: o.sort === b.a.MostReportedFirst ? O.B.SortReports : O.B.SortDate,
+					sort: o.sort === b.a.MostReportedFirst ? O.C.SortReports : O.C.SortDate,
 					...i,
 					includeModActivitySummaries: d
 				}
@@ -2467,7 +2467,7 @@
 			const I = Object(h.u)(),
 				R = e => `Distinguish--Dropdown--${e}`,
 				N = Object(a.c)({
-					currentUser: O.k,
+					currentUser: O.l,
 					collapsedBecauseCrowdControl: (e, t) => {
 						let {
 							comment: n
@@ -4562,10 +4562,10 @@
 						o = t.redditStyle || Object(f.l)(e, {
 							subredditId: n
 						}),
-						s = Object(v.db)(e);
+						s = Object(v.eb)(e);
 					return o || s
 				},
-				nigtmode: v.db,
+				nigtmode: v.eb,
 				subredditId: m.n,
 				topPostVariant: h.d
 			}));
@@ -5742,9 +5742,9 @@
 				r = n("./src/reddit/selectors/user.ts"),
 				i = n("./src/reddit/selectors/experiments/modqueueActionBarUXImprovements.ts");
 			const a = e => Object(i.a)(e) && Object(s.c)(e, {
-				experimentEligibilitySelector: r.Q,
-				experimentName: o.Bc
-			}) === o.Pd
+				experimentEligibilitySelector: r.R,
+				experimentName: o.Cc
+			}) === o.Qd
 		},
 		"./src/redditGQL/operations/DeleteSubredditMuteSettings.json": function(e) {
 			e.exports = JSON.parse('{"id":"c518a45f60a5"}')
@@ -5760,4 +5760,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModQueuePages.0438603fdcf52c19a839.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModQueuePages.3fc0205f0ab343df9937.js.map

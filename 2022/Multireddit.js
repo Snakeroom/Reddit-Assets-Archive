@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Multireddit.d3592eaeb8722ddbb5be.js
-// Retrieved at 10/21/2022, 4:20:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Multireddit.0e65a805efcbdc7c8c2f.js
+// Retrieved at 10/24/2022, 9:50:07 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Multireddit"], {
 		"./src/higherOrderComponents/withAdClickLocation/Locations.ts": function(e, t, n) {
@@ -256,7 +256,7 @@
 			})), n.d(t, "c", (function() {
 				return A
 			})), n.d(t, "a", (function() {
-				return R
+				return M
 			})), n.d(t, "b", (function() {
 				return P
 			}));
@@ -354,10 +354,10 @@
 						name: `${o.qc}${e.name}`,
 						type: e.type
 					});
-					if (!Object(I.Q)(d())) return i(Object(a.k)({
+					if (!Object(I.R)(d())) return i(Object(a.k)({
 						actionSource: a.a.Subscribe
 					})), void i(Object(c.openRegisterModal)());
-					const _ = Object(I.k)(d());
+					const _ = Object(I.l)(d());
 					if (_) {
 						const t = p.length,
 							n = e.length;
@@ -463,7 +463,7 @@
 						text: C(),
 						kind: O.b.Error
 					}))))
-				}, M = Object(i.a)(d.d), R = e => async (t, n, r) => {
+				}, R = Object(i.a)(d.d), M = e => async (t, n, r) => {
 					let {
 						apiContext: s
 					} = r;
@@ -477,7 +477,7 @@
 						a = i[e];
 					if (!a) return void c();
 					const d = !a.isFavorited;
-					t(M({
+					t(R({
 						makeFavorite: d,
 						multiredditPath: e,
 						multiredditsModelsState: i
@@ -489,7 +489,7 @@
 							multipath: t,
 							api_type: "json"
 						}
-					}))(s(), e, d)).ok || (t(M({
+					}))(s(), e, d)).ok || (t(R({
 						makeFavorite: !d,
 						multiredditPath: e,
 						multiredditsModelsState: i
@@ -500,7 +500,7 @@
 					} = s;
 					const c = n(),
 						a = c.multireddits.models;
-					if (!Object(I.Q)(c)) return;
+					if (!Object(I.R)(c)) return;
 					const d = function() {
 							let e = !(arguments.length > 0 && void 0 !== arguments[0]) || arguments[0];
 							t(Object(l.f)({
@@ -726,14 +726,14 @@
 						[O.B]: t ? "1" : ""
 					})
 				},
-				M = e => e.isFlairFilter ? a.a.createElement(D.default, {
+				R = e => e.isFlairFilter ? a.a.createElement(D.default, {
 					onMouseDown: e.onMouseDown,
 					to: e.to || ""
 				}, e.flair) : e.onClick ? a.a.createElement(D.default, {
 					onClick: () => e.onClick(e.searchableTerm),
 					to: A(e.searchableTerm, e.subredditName)
 				}, e.flair) : e.flair;
-			class R extends a.a.Component {
+			class M extends a.a.Component {
 				constructor() {
 					super(...arguments), this.tooltipTargetElement = null, this.state = {
 						isTooltipOpen: !1
@@ -774,7 +774,7 @@
 						targetPosition: ["center", "top"],
 						tooltipPosition: ["center", "bottom"]
 					}));
-					return a.a.createElement(M, {
+					return a.a.createElement(R, {
 						flair: e,
 						isFlairFilter: this.props.isFlairFilter,
 						onClick: this.props.onClick,
@@ -785,7 +785,7 @@
 					})
 				}
 			}
-			const F = Object(m.a)(R),
+			const F = Object(m.a)(M),
 				P = Object(m.a)(e => {
 					let t = "",
 						n = !1;
@@ -827,7 +827,7 @@
 							fill: e.backgroundColor || Object(C.a)(e).flair
 						}
 					})));
-					return a.a.createElement(M, {
+					return a.a.createElement(R, {
 						flair: s,
 						isFlairFilter: e.isFlairFilter,
 						onClick: e.onClick ? () => {
@@ -861,7 +861,7 @@
 								color: t
 							}
 						}, e.text);
-					return a.a.createElement(M, {
+					return a.a.createElement(R, {
 						flair: n,
 						searchableTerm: e.text
 					})
@@ -1368,10 +1368,10 @@
 				}).apply(this, arguments)
 			}
 			const _ = Object(c.c)({
-					currentUser: d.k,
-					isNightMode: d.db,
-					isPresenceUserPrefEnabled: d.V,
-					shouldHideNSFW: d.F
+					currentUser: d.l,
+					isNightMode: d.eb,
+					isPresenceUserPrefEnabled: d.W,
+					shouldHideNSFW: d.G
 				}),
 				h = Object(i.b)(_);
 			t.a = h(e => {
@@ -1814,4 +1814,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Multireddit.d3592eaeb8722ddbb5be.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Multireddit.0e65a805efcbdc7c8c2f.js.map

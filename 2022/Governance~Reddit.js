@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~Reddit.27eecb98d315ab6d9b35.js
-// Retrieved at 10/21/2022, 4:20:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~Reddit.239812e8463d6c236b87.js
+// Retrieved at 10/24/2022, 9:50:07 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~Reddit"], {
 		"./assets/fonts/NotoMono/font.less": function(e, t, n) {},
@@ -743,7 +743,7 @@
 						gqlRealtime2Context: r
 					} = n;
 					const s = t(),
-						a = Object(i.Q)(s),
+						a = Object(i.R)(s),
 						d = !!Object(c.b)(s),
 						{
 							expiresAt: l,
@@ -1752,15 +1752,15 @@
 				const n = t();
 				e(d.m({
 					title: o.b()
-				})), Object(g.Q)(n) || await e(m.s())
+				})), Object(g.R)(n) || await e(m.s())
 			}, T = () => async e => e(d.m({
 				title: o.b()
 			})), D = e => async (t, r) => {
 				const s = r();
 				t(d.m({
 					title: o.m()
-				})), Object(g.Q)(s) || await t(m.s());
-				const a = Object(g.Q)(s);
+				})), Object(g.R)(s) || await t(m.s());
+				const a = Object(g.R)(s);
 				if (e.queryParams.thanks && a) {
 					const e = await n.e("GoldPurchasePaymentActions").then(n.bind(null, "./src/reddit/actions/goldPurchaseModals/payment.ts")).then(e => e.paymentCompleted),
 						r = await n.e("GoldPurchasePaymentActions").then(n.bind(null, "./src/reddit/actions/goldPurchaseModals/premiumPurchaseModal.ts")).then(e => e.openPremiumPurchaseModal);
@@ -1815,7 +1815,7 @@
 				p = e => async (t, n) => {
 					const r = [t(s.A()), t(Object(a.d)(e.params.profileName))];
 					await Promise.all(r);
-					const l = Object(d.k)(n());
+					const l = Object(d.l)(n());
 					l ? (await t(Object(a.b)(Object(i.e)(l))), t(u()), Object(c.p)(n(), !0)) : Object(o.a)(t, n())
 				}
 		},
@@ -1878,7 +1878,7 @@
 						gqlContext: l
 					} = n;
 					const u = t(),
-						p = Object(i.k)(u),
+						p = Object(i.l)(u),
 						y = Object(d.b)(u);
 					if (p && y.success) return;
 					e(f());
@@ -2195,7 +2195,7 @@
 			const D = e => _.d.reCaptchaEnterprise(e) && !Object(T.d)(e),
 				w = e => !!Object(S.c)(e, {
 					experimentEligibilitySelector: Object(I.d)(Object(I.b)(...a.d)),
-					experimentName: f.tf
+					experimentName: f.uf
 				}),
 				j = Object(r.b)("LOAD_RECAPTCHA_ENTERPRISE"),
 				C = () => l(e => p()([D, w, e => e.tracking.reCaptchaEnterprise.load === r.a.New], t => t(e)))(async e => {
@@ -3021,7 +3021,7 @@
 						apiContext: l
 					} = s;
 					const u = n(),
-						p = Object(d.k)(u),
+						p = Object(d.l)(u),
 						f = p ? p.id : void 0,
 						b = u.user.blocked.data.filter(t => t.name === e)[0];
 					f && (t(E({
@@ -3646,7 +3646,7 @@
 						})
 					},
 					isNsfwBlurSubreddit: G.e,
-					shouldOpenPostInNewTab: q.jb
+					shouldOpenPostInNewTab: q.kb
 				}),
 				Z = e => {
 					const {
@@ -4056,7 +4056,7 @@
 					{
 						nsfwSessionSetting: k
 					} = Object(f.b)(),
-					U = Object(a.e)(O.kb);
+					U = Object(a.e)(O.lb);
 				Object(r.useEffect)(() => {
 					const e = {
 						displayQuery: _.searchQuery,
@@ -4242,7 +4242,7 @@
 				const t = Object(E.q)(e, M.Ob);
 				return {
 					experimentState: e,
-					isActive: (null == t ? void 0 : t.variant) === M.Pd,
+					isActive: (null == t ? void 0 : t.variant) === M.Qd,
 					isBucketed: !!(null == t ? void 0 : t.variant)
 				}
 			}
@@ -4281,7 +4281,7 @@
 						isBucketed: C
 					} = Object(a.e)(ee.a),
 					A = Object(a.e)(H.j),
-					P = Object(a.e)(O.kb),
+					P = Object(a.e)(O.lb),
 					{
 						nsfwSessionSetting: R
 					} = Object(f.b)(),
@@ -4303,7 +4303,7 @@
 							function() {
 								let e = {};
 								C && B.type.length && (Object(G.d)(w, {
-									experimentName: M.Ic
+									experimentName: M.Jc
 								}), j && (e = {
 									...B
 								}));
@@ -4465,7 +4465,7 @@
 				} = e;
 				const b = Object(m.a)(),
 					h = Object(r.useMemo)(() => t.filter(e => e.isSubreddit), [t]),
-					g = Object(a.e)(O.kb),
+					g = Object(a.e)(O.lb),
 					{
 						nsfwTypeaheadExpanded: v,
 						setNsfwTypeaheadExpanded: E
@@ -4739,7 +4739,7 @@
 				}],
 				O = "subreddit-forking.dismissals",
 				_ = (e, t) => {
-					const n = Object(f.k)(e),
+					const n = Object(f.l)(e),
 						r = Object(y.a)(t.postId),
 						s = Object(p.G)(e, t),
 						a = Object(u.o)(e, {
@@ -4774,7 +4774,7 @@
 				},
 				S = (e, t) => {
 					var n;
-					if (!Object(f.Q)(e)) return !1;
+					if (!Object(f.R)(e)) return !1;
 					if (null === (n = Object(h.b)(O)) || void 0 === n ? void 0 : n[t.postId]) return !1;
 					const r = Object(p.G)(e, t),
 						s = Object(p.V)(e, {
@@ -5121,7 +5121,7 @@
 					onClickDismiss: t,
 					content: n
 				} = e;
-				const a = Object(c.e)(m.db);
+				const a = Object(c.e)(m.eb);
 				return o.a.createElement(d.a, {
 					className: _.a.SearchScopePill,
 					"data-testid": "search-scope-pill"
@@ -5259,7 +5259,7 @@
 					...l,
 					variables: {
 						input: {
-							customType: u.c.Direct
+							customType: u.d.Direct
 						}
 					}
 				})
@@ -5713,7 +5713,7 @@
 				if (`${c}//${r}` === a.a.gatewayUrl) {
 					const r = {},
 						s = e.getState();
-					Object(b.kb)(s) && (r.allow_over18 = 1), Object(b.o)(s) && (r.gated_optin = 1), Object(b.nb)(s) && (r.quarantine_optin = 1), r.include = f(e.getState(), n, t), t.endpoint = Object(o.a)(t.endpoint, r)
+					Object(b.lb)(s) && (r.allow_over18 = 1), Object(b.p)(s) && (r.gated_optin = 1), Object(b.ob)(s) && (r.quarantine_optin = 1), r.include = f(e.getState(), n, t), t.endpoint = Object(o.a)(t.endpoint, r)
 				}
 			}
 		},
@@ -25734,12 +25734,12 @@
 				i = n("./src/reddit/selectors/platform.ts"),
 				d = n("./src/reddit/selectors/user.ts");
 			const l = () => !0,
-				u = Object(r.a)(d.X, d.O, (e, t) => !(e || t)),
+				u = Object(r.a)(d.Y, d.P, (e, t) => !(e || t)),
 				p = e => {
 					if (!u(e)) return;
 					const t = Object(o.c)(e, {
 						experimentEligibilitySelector: l,
-						experimentName: a.ke,
+						experimentName: a.le,
 						expEventOverride: !1
 					});
 					return null == t ? void 0 : t.toLocaleLowerCase()
@@ -25762,9 +25762,9 @@
 				},
 				b = e => !!p(e) && Object(o.c)(e, {
 					experimentEligibilitySelector: u,
-					experimentName: a.le,
+					experimentName: a.me,
 					expEventOverride: !1
-				}) !== a.me.Readonly
+				}) !== a.ne.Readonly
 		},
 		"./src/reddit/selectors/experiments/serpTabPreserved.ts": function(e, t, n) {
 			"use strict";
@@ -25775,10 +25775,10 @@
 				s = n("./src/reddit/selectors/telemetry.ts");
 
 			function a(e) {
-				const t = Object(s.q)(e, r.Ic);
+				const t = Object(s.q)(e, r.Jc);
 				return {
 					experimentState: e,
-					isActive: (null == t ? void 0 : t.variant) === r.Pd,
+					isActive: (null == t ? void 0 : t.variant) === r.Qd,
 					isBucketed: !!(null == t ? void 0 : t.variant)
 				}
 			}
@@ -25843,7 +25843,7 @@
 					}
 					return !(e.created > Date.UTC(2019, 0))
 				}),
-				h = Object(s.a)(d.k, a.a, (e, t) => !!((null == e ? void 0 : e.id) && (null == t ? void 0 : t.authorId)) && e.id === t.authorId),
+				h = Object(s.a)(d.l, a.a, (e, t) => !!((null == e ? void 0 : e.id) && (null == t ? void 0 : t.authorId)) && e.id === t.authorId),
 				y = Object(s.a)(a.a, e => !(!e || !1 !== e.isRobotIndexable))
 		},
 		"./src/reddit/selectors/trending.ts": function(e, t, n) {
@@ -25876,9 +25876,9 @@
 				l = 6 * r.ub,
 				u = (e, t) => {
 					const n = Object(o.G)(e, t),
-						r = Object(c.P)(e);
+						r = Object(c.Q)(e);
 					let i = !1;
-					const d = Object(c.k)(e);
+					const d = Object(c.l)(e);
 					if (d) {
 						i = (Object(s.d)(d) || (new Date).getTime()) > (new Date).getTime() - l
 					}
@@ -25928,4 +25928,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit.27eecb98d315ab6d9b35.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit.239812e8463d6c236b87.js.map

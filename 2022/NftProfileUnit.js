@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/NftProfileUnit.c10858bf37335b24c9a8.js
-// Retrieved at 10/21/2022, 4:20:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/NftProfileUnit.90e7adc45e1a3cf44b8c.js
+// Retrieved at 10/24/2022, 9:50:07 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["NftProfileUnit"], {
 		"./node_modules/classnames/index.js": function(t, e, r) {
@@ -63,7 +63,7 @@
 						e = Object(a.e)(t => t.user.session),
 						r = e ? e.accessToken : "",
 						i = e ? new Date(e.expires).getTime() : 1,
-						s = Object(a.e)(h.db),
+						s = Object(a.e)(h.eb),
 						m = Object(f.a)(),
 						g = d ? u.a.Rinkeby : u.a.Ethereum,
 						y = Object(o.useMemo)(() => ({
@@ -103,7 +103,7 @@
 				g = () => {
 					const t = Object(a.e)(t => t.user.session),
 						e = t ? t.accessToken : "",
-						r = Object(a.e)(h.db),
+						r = Object(a.e)(h.eb),
 						i = Object(f.a)(),
 						c = d ? u.a.Rinkeby : u.a.Ethereum;
 					return Object(o.useMemo)(() => ({
@@ -1778,8 +1778,8 @@
 			}));
 			var n = r("./src/reddit/constants/experiments.ts"),
 				i = r("./src/reddit/selectors/experiments/econ/simpleExperiment.ts");
-			const o = Object(i.a)(n.ud)
+			const o = Object(i.a)(n.vd)
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/NftProfileUnit.c10858bf37335b24c9a8.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/NftProfileUnit.90e7adc45e1a3cf44b8c.js.map

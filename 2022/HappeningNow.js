@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/HappeningNow.56a5c163dcd06be72f9e.js
-// Retrieved at 10/21/2022, 4:20:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/HappeningNow.e82ae1540406312b91e0.js
+// Retrieved at 10/24/2022, 9:50:07 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["HappeningNow"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -645,7 +645,7 @@
 				h = n.n(p);
 			const b = ["allow-forms", "allow-orientation-lock", "allow-popups", "allow-popups-to-escape-sandbox", "allow-presentation", "allow-same-origin", "allow-scripts", "allow-top-navigation-by-user-activation"].join(" "),
 				f = Object(o.b)(() => Object(a.c)({
-					isNightmodeOn: m.db
+					isNightmodeOn: m.eb
 				}));
 			t.a = f(e => {
 				const t = {
@@ -792,7 +792,7 @@
 						style: t
 					}, e.children)
 				},
-				L = Object(a.b)(() => Object(l.a)(E.F, k.jb, (e, t) => {
+				L = Object(a.b)(() => Object(l.a)(E.F, k.kb, (e, t) => {
 					let {
 						isSponsored: n,
 						postId: r
@@ -1049,7 +1049,7 @@
 			var E = n("./src/reddit/components/Media/VideoBox/index.m.less"),
 				_ = n.n(E);
 			const k = Object(l.c)({
-				autoplayPref: h.b,
+				autoplayPref: h.c,
 				consumed: b.a,
 				loadTimes: b.f,
 				metadata: b.h,
@@ -2460,12 +2460,12 @@
 						rtJsonElementProps: a
 					});
 					switch (o) {
-						case b.Vf.SmIcon:
+						case b.Wf.SmIcon:
 							return s.a.createElement(p, {
 								subredditName: r,
 								rtJsonElementProps: a
 							});
-						case b.Vf.SmIconHc:
+						case b.Wf.SmIconHc:
 							return s.a.createElement(p, {
 								subredditName: r,
 								isHoverable: !0,
@@ -2859,12 +2859,12 @@
 									const e = Object(h.a)(l.subreddit);
 									a[e.id] = e
 								}
-								if (c === x.q.Chat) {
+								if (c === x.r.Chat) {
 									const e = null === (r = null === (n = null === (t = null == l ? void 0 : l.commentForest) || void 0 === t ? void 0 : t.trees) || void 0 === n ? void 0 : n.map(e => v(null == e ? void 0 : e.node))) || void 0 === r ? void 0 : r.filter(d.a);
 									(null == e ? void 0 : e.length) && m.push(...e);
 									const s = v(l.authorInfo);
 									s && m.push(s)
-								} else c === x.q.Talk && Array.isArray(null === (s = null == l ? void 0 : l.talkRoom) || void 0 === s ? void 0 : s.topUsers) && (f = l.talkRoom, m.push(...l.talkRoom.topUsers));
+								} else c === x.r.Talk && Array.isArray(null === (s = null == l ? void 0 : l.talkRoom) || void 0 === s ? void 0 : s.topUsers) && (f = l.talkRoom, m.push(...l.talkRoom.topUsers));
 								return {
 									postId: C.id,
 									participantAvatars: m,
@@ -3027,11 +3027,11 @@
 				J = n("./src/reddit/components/HappeningNow/Post/Header/index.m.less"),
 				q = n.n(J);
 			const Y = {
-				[x.q.Unknown]: "",
-				[x.q.Chat]: r.fbt._("Chat", null, {
+				[x.r.Unknown]: "",
+				[x.r.Chat]: r.fbt._("Chat", null, {
 					hk: "1oa6K"
 				}),
-				[x.q.Talk]: r.fbt._("Talk", null, {
+				[x.r.Talk]: r.fbt._("Talk", null, {
 					hk: "1lMkQn"
 				})
 			};
@@ -3045,7 +3045,7 @@
 						l = Object(a.e)(e => Object(G.V)(e, {
 							postId: t.postId
 						})),
-						c = Object(a.e)(W.db),
+						c = Object(a.e)(W.eb),
 						d = Object(s.useMemo)(() => {
 							var e, t, r;
 							return (null === (e = null == l ? void 0 : l.icon) || void 0 === e ? void 0 : e.url) || (null === (r = null === (t = n.profile) || void 0 === t ? void 0 : t.icon) || void 0 === r ? void 0 : r.url) || ""
@@ -3064,7 +3064,7 @@
 					}), o.a.createElement(H.b, {
 						className: q.a.subredditIcon,
 						iconUrl: d
-					}), t.contentType === x.q.Chat ? o.a.createElement(D, {
+					}), t.contentType === x.r.Chat ? o.a.createElement(D, {
 						className: Object(i.a)(q.a.liveChatIcon, {
 							[q.a.nightMode]: c
 						})
@@ -3109,7 +3109,7 @@
 							var n, r;
 							return (null === (r = null === (n = e.features) || void 0 === n ? void 0 : n.reportFlow) || void 0 === r ? void 0 : r.postOrCommentId) === t.id
 						}),
-						l = Object(a.e)(W.i) === t.authorId,
+						l = Object(a.e)(W.j) === t.authorId,
 						c = Object(s.useMemo)(() => (e => `HappeningNowPost--menu--${e}`)(t.id), [t.id]),
 						d = Object(a.e)(e => Object(se.b)(c)(e)),
 						u = o.a.useCallback(() => {
@@ -3160,7 +3160,7 @@
 						participantAvatars: n = [],
 						userCount: l,
 						postId: c
-					} = t, d = Object(s.useMemo)(() => l <= 0 ? 0 : l <= 1 ? 1 : l <= 2 ? 2 : l < 100 ? 3 : l < 500 ? 4 : 5, [l]), u = Object(a.e)(W.db), m = Object(s.useMemo)(() => {
+					} = t, d = Object(s.useMemo)(() => l <= 0 ? 0 : l <= 1 ? 1 : l <= 2 ? 2 : l < 100 ? 3 : l < 500 ? 4 : 5, [l]), u = Object(a.e)(W.eb), m = Object(s.useMemo)(() => {
 						const e = n.slice(0, d);
 						if (e.length >= d) return e;
 						const t = d - e.length;
@@ -3288,10 +3288,10 @@
 						onClick: () => {
 							var e;
 							switch (c.contentType) {
-								case x.q.Chat:
+								case x.r.Chat:
 									r(Object(ye.a)(d.permalink));
 									break;
-								case x.q.Talk:
+								case x.r.Talk:
 									window.open(`${_.a.redditUrl}/talk/${null===(e=c.talkRoom)||void 0===e?void 0:e.roomId}`)
 							}
 							l(Object(y.c)(t))
@@ -3598,11 +3598,11 @@
 				Ye = n("./src/reddit/pages/HappeningNow/index.m.less"),
 				Ze = n.n(Ye);
 			const Ke = {
-					[x.p.Unknown]: "",
-					[x.p.Popular]: r.fbt._("Popular", null, {
+					[x.q.Unknown]: "",
+					[x.q.Popular]: r.fbt._("Popular", null, {
 						hk: "2pUvlx"
 					}),
-					[x.p.Recommended]: r.fbt._("For you", null, {
+					[x.q.Recommended]: r.fbt._("For you", null, {
 						hk: "19HGNV"
 					})
 				},
@@ -3630,12 +3630,12 @@
 					}, o.a.createElement("div", {
 						className: Ze.a.column
 					}, !!t.length && o.a.createElement(Le, {
-						title: Ke[x.p.Recommended]
+						title: Ke[x.q.Recommended]
 					}, t.map(e => o.a.createElement(Te, {
 						key: e,
 						postId: e
 					}))), !!e.length && o.a.createElement(Le, {
-						title: Ke[x.p.Popular]
+						title: Ke[x.q.Popular]
 					}, e.map(e => o.a.createElement(Te, {
 						key: e,
 						postId: e
@@ -3693,12 +3693,12 @@
 				l = e => {
 					return Object(o.c)(e, {
 						experimentEligibilitySelector: i,
-						experimentName: r.Pf
+						experimentName: r.Qf
 					}) || ""
 				},
 				c = e => {
 					const t = l(e);
-					return t === r.Vf.SmIcon || t === r.Vf.SmIconHc
+					return t === r.Wf.SmIcon || t === r.Wf.SmIconHc
 				},
 				d = (e, t) => {
 					let {
@@ -3727,4 +3727,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/HappeningNow.56a5c163dcd06be72f9e.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/HappeningNow.e82ae1540406312b91e0.js.map

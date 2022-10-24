@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/InboxTooltip.5789ce9d565faf180330.js
-// Retrieved at 10/21/2022, 4:20:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/InboxTooltip.da47215e0cbd29820294.js
+// Retrieved at 10/24/2022, 9:50:07 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["InboxTooltip", "PushNotifications"], {
 		"./src/lib/notifications/token.ts": function(e, t, i) {
@@ -98,14 +98,14 @@
 				N = i("./src/reddit/constants/experiments.ts"),
 				y = i("./src/reddit/helpers/chooseVariant/index.ts");
 			const _ = e => Object(y.c)(e, {
-				experimentName: N.jc,
+				experimentName: N.kc,
 				experimentEligibilitySelector: y.a
-			}) === N.Pd;
-			var P = i("./src/reddit/selectors/meta.ts"),
-				I = i("./src/reddit/selectors/user.ts");
+			}) === N.Qd;
+			var I = i("./src/reddit/selectors/meta.ts"),
+				P = i("./src/reddit/selectors/user.ts");
 			let E = !1;
 			const F = async (e, t) => {
-				const i = Object(I.P)(e);
+				const i = Object(P.Q)(e);
 				if (E) return;
 				if (E = !0, Object(f.a)(e) !== d.c.NotificationsSupported) return;
 				await Object(u.a)();
@@ -130,7 +130,7 @@
 				let i = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : () => {};
 				return async (n, o, s) => {
 					const c = o(),
-						u = Object(P.f)(c),
+						u = Object(I.f)(c),
 						l = _(c),
 						b = !!Object(k.a)(c),
 						f = Object(S.a)(c),
@@ -390,15 +390,15 @@
 					markAllAsRead: N,
 					markNotificationAsRead: y,
 					messagesBadgeCount: _,
-					notifications: P,
-					showBrowserNotificationsPermissionSettings: I,
+					notifications: I,
+					showBrowserNotificationsPermissionSettings: P,
 					updateInboxActivitySeenState: E,
 					userId: F
 				} = e;
 				const C = Object(f.a)(),
 					[B, A] = Object(n.useState)("");
 				return Object(n.useEffect)(() => {
-					if (k && !P.length && x) {
+					if (k && !I.length && x) {
 						c({
 							first: 5
 						})
@@ -429,9 +429,9 @@
 					markAllAsRead: N,
 					markNotificationAsRead: y,
 					messagesBadgeCount: _,
-					notifications: P,
+					notifications: I,
 					setActiveOverflowMenuId: A,
-					showBrowserNotificationsPermissionSettings: I,
+					showBrowserNotificationsPermissionSettings: P,
 					userId: F
 				})
 			})
@@ -613,4 +613,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/InboxTooltip.5789ce9d565faf180330.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/InboxTooltip.da47215e0cbd29820294.js.map

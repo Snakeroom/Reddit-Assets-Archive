@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/OverlayCreateChannel.1f949020ca7948214590.js
-// Retrieved at 10/19/2022, 2:10:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/OverlayCreateChannel.091bdd28d7f6c0889c82.js
+// Retrieved at 10/24/2022, 9:50:07 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["OverlayCreateChannel"], {
 		"./src/chat/components/OverlayCreateChannel/index.m.less": function(e, t, n) {
@@ -74,8 +74,8 @@
 				f = n("./src/chat/components/SelectableUser/index.tsx"),
 				E = n("./src/chat/icons/Userpic/index.tsx"),
 				S = n("./src/chat/components/UnselectableUser/index.m.less"),
-				U = n.n(S),
-				k = n("./src/lib/classNames/index.ts");
+				k = n.n(S),
+				U = n("./src/lib/classNames/index.ts");
 			var N = e => {
 					let {
 						contact: {
@@ -86,22 +86,22 @@
 						isHidden: a
 					} = e;
 					return l.a.createElement("span", {
-						className: Object(k.a)(U.a.Wrapper, {
-							[U.a.hidden]: a
+						className: Object(U.a)(k.a.Wrapper, {
+							[k.a.hidden]: a
 						})
 					}, l.a.createElement("span", {
-						className: U.a.Content
+						className: k.a.Content
 					}, l.a.createElement(E.a, {
-						className: U.a.UserPic,
+						className: k.a.UserPic,
 						userId: t,
 						width: "22px",
 						height: "22px"
 					}), l.a.createElement("div", {
-						className: U.a.UserMetaWrapper
+						className: k.a.UserMetaWrapper
 					}, l.a.createElement("span", {
-						className: U.a.Name
+						className: k.a.Name
 					}, n))), l.a.createElement("span", {
-						className: U.a.Context
+						className: k.a.Context
 					}, s))
 				},
 				y = n("./src/chat/constants/channels.ts"),
@@ -155,7 +155,7 @@
 						username: t
 					})),
 					onCancelAndGoBack: () => {
-						e(Object(m.P)()), e(Object(b.j)())
+						e(Object(m.P)()), e(Object(b.k)())
 					},
 					onSelectUser: t => e(Object(C.l)(t)),
 					onUnselectUser: t => e(Object(C.r)(t)),
@@ -199,7 +199,7 @@
 						hk: "2ryT90"
 					})) : null)), l.a.createElement(v.a, {
 						onClick: Object(j.b)(() => {
-							a(Object(u.e)(o, !t)), a(Object(b.o)(u.b.CHAT_SETTINGS))
+							a(Object(u.e)(o, !t)), a(Object(b.p)(u.b.CHAT_SETTINGS))
 						}),
 						secondary: !0,
 						isSmall: !0,
@@ -377,7 +377,7 @@
 						onContactsSelect: C,
 						onSubmit: E,
 						onCancel: S
-					} = this, U = this.getSelectedContacts(), k = this.getFilteredContacts(), v = !this.getIsValidUser(o), T = this.handleChannelNameInput, w = this.availableCharacters(m), R = this.isSubmitDisabled(w), H = this.primaryButtonText(), W = this.isCreateChannelURLAction(), A = this.isShareToNewChannelAction(), F = this.isStartGroupChannelAction(), M = n >= y.h, P = F || (W || A) && n > 1;
+					} = this, k = this.getSelectedContacts(), U = this.getFilteredContacts(), v = !this.getIsValidUser(o), T = this.handleChannelNameInput, w = this.availableCharacters(m), R = this.isSubmitDisabled(w), H = this.primaryButtonText(), W = this.isCreateChannelURLAction(), A = this.isShareToNewChannelAction(), F = this.isStartGroupChannelAction(), M = n >= y.h, P = F || (W || A) && n > 1;
 					return l.a.createElement(L.a, {
 						className: e,
 						innerContent: !0,
@@ -419,7 +419,7 @@
 						innerRef: this.searchBarElement,
 						filter: o,
 						resetFilter: h,
-						selectedContacts: U,
+						selectedContacts: k,
 						onFilterReset: p,
 						onFilterContacts: b,
 						onIdentifyContact: t,
@@ -433,7 +433,7 @@
 					}))) : null, l.a.createElement(_.a, {
 						className: D.a.Scroller,
 						loadMoreRows: r.a
-					}, i()(k, e => e.name).reduce((e, t) => [...e, u(t.id) || t.isBlocked && c || !1 === t.acceptChats ? o.length ? l.a.createElement(q, {
+					}, i()(U, e => e.name).reduce((e, t) => [...e, u(t.id) || t.isBlocked && c || !1 === t.acceptChats ? o.length ? l.a.createElement(q, {
 						key: t.name
 					}, l.a.createElement(N, {
 						isHidden: !o.length,
@@ -446,7 +446,7 @@
 						contact: t,
 						onChange: C,
 						isChecked: d(t.id)
-					}))], [])))), U.length && !F || F && U.length > 1 ? l.a.createElement(B.a, {
+					}))], [])))), k.length && !F || F && k.length > 1 ? l.a.createElement(B.a, {
 						primaryButtonText: H,
 						primaryButtonDisabled: R,
 						secondaryButtonAction: S,
@@ -476,7 +476,7 @@
 		"./src/chat/components/SearchBar/index.tsx": function(e, t, n) {
 			"use strict";
 			n.d(t, "a", (function() {
-				return U
+				return k
 			}));
 			var s = n("./node_modules/fbt/lib/FbtPublic.js"),
 				a = n("./node_modules/lodash/last.js"),
@@ -577,7 +577,7 @@
 			const f = l.a.span("Bubble", _.a),
 				E = l.a.span("SearchBarField", _.a),
 				S = l.a.input("SearchBarInput", _.a);
-			class U extends i.a.Component {
+			class k extends i.a.Component {
 				constructor(e) {
 					super(e), this.bubbleRefs = {}, this.timeoutToken = null, this.onBubbleKey = e => t => {
 						switch (t.key) {
@@ -676,7 +676,7 @@
 					})))
 				}
 			}
-			U.defaultProps = {
+			k.defaultProps = {
 				onIdentifyContactTimeout: 500
 			}
 		},
@@ -774,4 +774,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/OverlayCreateChannel.1f949020ca7948214590.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/OverlayCreateChannel.091bdd28d7f6c0889c82.js.map

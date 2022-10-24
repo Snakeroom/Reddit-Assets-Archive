@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Topic.c4c7124055788c32c515.js
-// Retrieved at 10/21/2022, 4:20:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Topic.595ac34df85ddbeb2038.js
+// Retrieved at 10/24/2022, 9:50:07 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Topic"], {
 		"./node_modules/intersection-observer/intersection-observer.js": function(e, t) {
@@ -294,7 +294,7 @@
 					const i = t(),
 						o = Object(m.e)(i),
 						d = Object(m.d)(i),
-						p = Object(b.P)(i);
+						p = Object(b.Q)(i);
 					if (o || !d) return;
 					e(f());
 					let v = !1;
@@ -369,7 +369,7 @@
 						a = Object(m.g)(o);
 					if (Object(m.f)(o) || null === a || "client" === a) {
 						const s = null === (n = null === (r = Object(p.b)(t())) || void 0 === r ? void 0 : r.routeMatch) || void 0 === n ? void 0 : n.route.chunk,
-							a = Object(b.Q)(o);
+							a = Object(b.R)(o);
 						return Object(i.i)(() => e(S()), {
 							name: "getFocusedVerticalsRequested",
 							page: s,
@@ -799,8 +799,8 @@
 			const f = e => {
 				return Object(g.c)(e, {
 					experimentEligibilitySelector: g.a,
-					experimentName: h.uf
-				}) === h.Pd
+					experimentName: h.vf
+				}) === h.Qd
 			};
 			var x = s("./src/reddit/selectors/user.ts"),
 				v = s("./src/reddit/components/BackToTop/index.m.less"),
@@ -825,9 +825,9 @@
 					[E, O] = Object(n.useState)(),
 					[C, k] = Object(n.useState)(),
 					[j, w] = Object(n.useState)(0),
-					N = Object(o.e)(x.k),
+					N = Object(o.e)(x.l),
 					L = Object(o.e)(f),
-					I = Object(o.e)(x.Q),
+					I = Object(o.e)(x.R),
 					P = encodeURIComponent(a.a.redditUrl + "/r/recap"),
 					R = a.a.accountManagerOrigin,
 					F = I ? "/r/recap" : `${R}/login/?dest=${P}`,
@@ -1231,7 +1231,7 @@
 				const t = Object(i.f)().getState(),
 					s = Object(h.a)(t, Object(a.c)());
 				if (e.isD2xPdpSideRailRecsEnabled) {
-					const t = e.d2xPdpSideRailRecsVariant === u.Zc.GreyRereddit || e.d2xPdpSideRailRecsVariant === u.Zc.GreyRedditNoNsfw || e.d2xPdpSideRailRecsVariant === u.Zc.LargeImagePreview ? e.reredditButtons : [];
+					const t = e.d2xPdpSideRailRecsVariant === u.ad.GreyRereddit || e.d2xPdpSideRailRecsVariant === u.ad.GreyRedditNoNsfw || e.d2xPdpSideRailRecsVariant === u.ad.LargeImagePreview ? e.reredditButtons : [];
 					return n.a.createElement(C, {
 						reredditContent: t,
 						countryCode: e.countryCode
@@ -1692,7 +1692,7 @@
 				O = s("./src/reddit/components/TopicSidebar/SubredditList/Subreddit/index.m.less"),
 				C = s.n(O);
 			const k = Object(h.c)({
-				isLoggedIn: E.Q,
+				isLoggedIn: E.R,
 				subreddit: T.Y,
 				subredditAboutInfo: T.y
 			});
@@ -1909,10 +1909,10 @@
 						r = t.redditStyle || Object(g.l)(e, {
 							subredditId: s
 						}),
-						n = Object(f.db)(e);
+						n = Object(f.eb)(e);
 					return r || n
 				},
-				nigtmode: f.db,
+				nigtmode: f.eb,
 				subredditId: u.n,
 				topPostVariant: h.d
 			}));
@@ -2730,7 +2730,7 @@
 			const {
 				fbt: ae
 			} = s("./node_modules/fbt/lib/FbtPublic.js"), ce = Object(i.c)({
-				isLoggedIn: ne.Q,
+				isLoggedIn: ne.R,
 				subreddit: re.Y,
 				subredditAboutInfo: (e, t) => {
 					let {
@@ -3083,11 +3083,11 @@
 				c = s("./node_modules/reselect/es/index.js");
 			const d = Object(c.a)(e => Object(n.c)(e, {
 					experimentEligibilitySelector: e => Object(a.h)(e) && Object(i.f)(e),
-					experimentName: r.tc
+					experimentName: r.uc
 				}), o.a),
 				l = Object(c.a)(e => Object(n.c)(e, {
 					experimentEligibilitySelector: e => !Object(a.h)(e) && Object(i.f)(e),
-					experimentName: r.sc
+					experimentName: r.tc
 				}), o.a),
 				u = Object(c.a)(d, l, (e, t) => e || t),
 				m = Object(c.a)(d, l, (e, t) => !(!e && !t))
@@ -3193,7 +3193,7 @@
 				v = e => e.focusedVerticals.category,
 				_ = e => e.focusedVerticals.lastLoadedEnv,
 				y = e => {
-					const t = Object(a.P)(e),
+					const t = Object(a.Q)(e),
 						s = n.d.geoSubredditRecommendationDULoggedIn(e),
 						r = n.d.geoSubredditRecommendationDULoggedOut(e);
 					return t && s || !t && r
@@ -3228,4 +3228,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Topic.c4c7124055788c32c515.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Topic.595ac34df85ddbeb2038.js.map

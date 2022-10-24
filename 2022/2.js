@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/2.e02a2dbbde83bfbf162d.js
-// Retrieved at 9/29/2022, 4:30:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/2.cb8b2790264f1f57fe59.js
+// Retrieved at 10/24/2022, 9:50:07 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	[2], {
 		"./src/reddit/icons/svgs/AddCollection/index.tsx": function(e, s, t) {
@@ -22,12 +22,12 @@
 		"./src/reddit/icons/svgs/AddSquare/index.tsx": function(e, s, t) {
 			"use strict";
 			t.d(s, "a", (function() {
-				return c
+				return i
 			}));
 			var n = t("./node_modules/react/index.js"),
 				a = t.n(n);
 
-			function c(e) {
+			function i(e) {
 				return a.a.createElement("svg", {
 					className: e.className,
 					viewBox: "0 0 20 20",
@@ -59,11 +59,11 @@
 			"use strict";
 			var n = t("./node_modules/react/index.js"),
 				a = t.n(n),
-				c = t("./src/lib/classNames/index.ts"),
-				i = t("./src/reddit/icons/svgs/Admin/index.m.less"),
-				r = t.n(i);
+				i = t("./src/lib/classNames/index.ts"),
+				c = t("./src/reddit/icons/svgs/Admin/index.m.less"),
+				r = t.n(c);
 			s.a = e => a.a.createElement("svg", {
-				className: Object(c.a)(e.className, r.a.admin, {
+				className: Object(i.a)(e.className, r.a.admin, {
 					[r.a.mEnabled]: e.enabled
 				}),
 				id: e.id,
@@ -92,11 +92,11 @@
 			"use strict";
 			var n = t("./node_modules/react/index.js"),
 				a = t.n(n),
-				c = t("./src/lib/classNames/index.ts"),
-				i = t("./src/reddit/icons/svgs/Advance/index.m.less"),
-				r = t.n(i);
+				i = t("./src/lib/classNames/index.ts"),
+				c = t("./src/reddit/icons/svgs/Advance/index.m.less"),
+				r = t.n(c);
 			s.a = e => a.a.createElement("svg", {
-				className: Object(c.a)(r.a.default, e.className),
+				className: Object(i.a)(r.a.default, e.className),
 				viewBox: "0 0 13 12",
 				xmlns: "http://www.w3.org/2000/svg"
 			}, a.a.createElement("path", {
@@ -168,8 +168,8 @@
 			var n = t("./node_modules/react/index.js"),
 				a = t.n(n);
 
-			function c() {
-				return (c = Object.assign || function(e) {
+			function i() {
+				return (i = Object.assign || function(e) {
 					for (var s = 1; s < arguments.length; s++) {
 						var t = arguments[s];
 						for (var n in t) Object.prototype.hasOwnProperty.call(t, n) && (e[n] = t[n])
@@ -177,7 +177,7 @@
 					return e
 				}).apply(this, arguments)
 			}
-			s.a = e => a.a.createElement("svg", c({
+			s.a = e => a.a.createElement("svg", i({
 				viewBox: "0 0 11.4 11.4",
 				version: "1.1",
 				xmlns: "http://www.w3.org/2000/svg"
@@ -202,12 +202,12 @@
 		"./src/reddit/icons/svgs/Bling/index.tsx": function(e, s, t) {
 			"use strict";
 			t.d(s, "a", (function() {
-				return c
+				return i
 			}));
 			var n = t("./node_modules/react/index.js"),
 				a = t.n(n);
 
-			function c(e) {
+			function i(e) {
 				return a.a.createElement("svg", {
 					className: e.className,
 					xmlns: "http://www.w3.org/2000/svg",
@@ -241,6 +241,102 @@
 				width: "8",
 				height: "8"
 			})))
+		},
+		"./src/reddit/icons/svgs/ChatBotAvatar/index.tsx": function(e, s, t) {
+			"use strict";
+			var n = t("./node_modules/react/index.js"),
+				a = t.n(n);
+			s.a = () => a.a.createElement("svg", {
+				width: "32",
+				height: "32",
+				viewBox: "0 0 32 32",
+				fill: "none",
+				xmlns: "http://www.w3.org/2000/svg"
+			}, a.a.createElement("path", {
+				d: "M26.4615 13.1693V13.0339C26.4615 11.4831 26.5415 10 24.6646 9.78464C22.8185 9.78464 20.7446 9.83387 18.9169 9.83387H18.2277C18.2266 9.48593 18.2019 9.13847 18.1539 8.79387C18.1363 8.72881 18.098 8.6713 18.0446 8.63017C17.9912 8.58904 17.9258 8.56656 17.8585 8.56618C17.3539 8.51695 16.8492 8.49233 16.3446 8.48618V7.77233C16.3446 7.38464 16.2277 6.1908 16.2277 5.92618C16.2277 6.28926 17.36 5.58772 17.4585 5.50156C17.7766 5.15023 17.9832 4.71239 18.0522 4.24351C18.1212 3.77462 18.0495 3.29581 17.8462 2.86772C17.0031 1.36618 14.56 1.2308 13.8708 3.07695C13.7066 3.47811 13.6593 3.91757 13.7344 4.34447C13.8096 4.77138 14.0041 5.16829 14.2954 5.48926C14.3877 5.60003 15.4585 6.26464 15.4585 5.91387C15.4585 6.27695 15.3108 7.58772 15.3108 8.07387V8.5108C14.8677 8.5108 14.4246 8.55387 13.9815 8.6031C13.3662 8.67079 13.3662 9.3231 13.3662 9.83387H12.5415C10.6954 9.83387 9.06462 10.0185 7.24308 10.0185C5.42154 10.0185 5.00308 11.6062 5.00308 13.0277V13.3416C3.69231 14.0369 2.42462 15.0216 2.42462 17.2308C2.42462 19.2062 3.65539 20.3693 5.00308 21.0585V25.5693C5.00308 26.96 5.67385 28.2093 7.16924 28.2093C8.76308 28.2093 10.4308 28.0431 12.0246 28.0431C16.0985 28.0431 20.3385 27.9877 24.4062 27.9877C25.9015 27.9877 26.4739 26.96 26.4739 25.5693V21.1816C27.3643 20.9603 28.1534 20.4437 28.7122 19.7161C29.2711 18.9884 29.5667 18.0928 29.5508 17.1754C29.5406 16.2628 29.2337 15.3783 28.6764 14.6555C28.119 13.9328 27.3416 13.4111 26.4615 13.1693V13.1693Z",
+				fill: "black"
+			}), a.a.createElement("path", {
+				d: "M15.8769 2.4616C17.8954 2.32006 18.1046 5.42775 15.9877 5.53852C15.5796 5.55321 15.1825 5.40521 14.8836 5.12708C14.5847 4.84895 14.4085 4.46347 14.3938 4.05545C14.3791 3.64742 14.5271 3.25027 14.8053 2.95137C15.0834 2.65246 15.4689 2.47629 15.8769 2.4616V2.4616Z",
+				fill: "#CCCCCA"
+			}), a.a.createElement("path", {
+				d: "M3.18152 17.4462C3.21876 16.773 3.4115 16.1176 3.74463 15.5314C4.07776 14.9452 4.54221 14.4442 5.10152 14.0677C5.63554 16.1137 5.63342 18.2628 5.09536 20.3077C4.00613 19.6062 3.24921 18.8062 3.18152 17.4462Z",
+				fill: "#CCCCCA"
+			}), a.a.createElement("path", {
+				d: "M24.2092 27.1324C22.72 27.1324 21.0831 27.36 19.5938 27.36H7.34154C5.24308 27.36 5.75384 24.6154 5.75384 23.3847V20.3693C5.75881 20.3346 5.75881 20.2994 5.75384 20.2647C6.03692 17.2308 5.50769 13.6185 5.64308 13.5385C5.64308 11.92 6.19077 10.5477 7.97538 10.5477C10.4369 10.5477 21.8031 10.3077 24.4246 10.3077C25.7661 10.4616 25.7046 12.1539 25.6554 13.6124C25.6554 13.6124 25.6554 15.7785 25.6554 16.1908C25.6554 18.597 25.7723 21.2308 25.7723 23.6308C25.7662 24.8 26.2708 27.1324 24.2092 27.1324Z",
+				fill: "#CCCCCA"
+			}), a.a.createElement("path", {
+				d: "M26.5169 20.3938C25.9201 18.2959 25.9201 16.0732 26.5169 13.9753C27.1757 14.23 27.743 14.6763 28.1455 15.2566C28.5481 15.8369 28.7675 16.5245 28.7754 17.2307C28.7668 17.9255 28.5459 18.6009 28.1421 19.1664C27.7384 19.7318 27.1712 20.1602 26.5169 20.3938V20.3938Z",
+				fill: "#CCCCCA"
+			}), a.a.createElement("path", {
+				d: "M12.8492 17.2308C12.9231 15.8769 11.6677 14.9169 10.4185 14.8492C9.94438 14.8553 9.4827 15.0017 9.09171 15.2699C8.70072 15.5381 8.39793 15.9161 8.22156 16.3563C8.04518 16.7964 8.00311 17.2789 8.10067 17.7429C8.19822 18.2068 8.43103 18.6316 8.76971 18.9634C9.10839 19.2952 9.53777 19.5193 10.0037 19.6073C10.4696 19.6953 10.9511 19.6434 11.3875 19.4581C11.8239 19.2727 12.1956 18.9623 12.4558 18.5659C12.7159 18.1695 12.8529 17.7049 12.8492 17.2308V17.2308Z",
+				fill: "black"
+			}), a.a.createElement("path", {
+				d: "M21.2984 14.9416C20.6647 14.9342 20.0514 15.1656 19.5805 15.5898C19.1096 16.0139 18.8156 16.5998 18.7569 17.2308C18.7649 17.8436 19.0119 18.4291 19.4452 18.8625C19.8786 19.2958 20.4641 19.5428 21.0769 19.5508C24.0738 19.3908 24.2954 15.1016 21.2984 14.9416Z",
+				fill: "black"
+			}), a.a.createElement("path", {
+				d: "M8.71387 17.2308C8.71387 16.7722 8.89605 16.3324 9.22035 16.0081C9.54464 15.6838 9.98448 15.5016 10.4431 15.5016C10.9017 15.5016 11.3416 15.6838 11.6658 16.0081C11.9901 16.3324 12.1723 16.7722 12.1723 17.2308C12.1723 17.6894 11.9901 18.1293 11.6658 18.4536C11.3416 18.7779 10.9017 18.96 10.4431 18.96C9.98448 18.96 9.54464 18.7779 9.22035 18.4536C8.89605 18.1293 8.71387 17.6894 8.71387 17.2308V17.2308Z",
+				fill: "#FF4500"
+			}), a.a.createElement("path", {
+				d: "M21.0954 18.9539C20.6376 18.9539 20.1985 18.772 19.8748 18.4483C19.5511 18.1246 19.3692 17.6855 19.3692 17.2277C19.3692 16.7699 19.5511 16.3309 19.8748 16.0072C20.1985 15.6834 20.6376 15.5016 21.0954 15.5016C21.5532 15.5016 21.9922 15.6834 22.3159 16.0072C22.6396 16.3309 22.8215 16.7699 22.8215 17.2277C22.8215 17.6855 22.6396 18.1246 22.3159 18.4483C21.9922 18.772 21.5532 18.9539 21.0954 18.9539Z",
+				fill: "#FF4500"
+			}), a.a.createElement("path", {
+				d: "M11.04 11.0769C9.96923 11.0769 9.07077 11.2369 7.99384 11.2246C7.85091 11.1795 7.70031 11.1639 7.55116 11.1787C7.40202 11.1935 7.25743 11.2384 7.12615 11.3107C7.08639 11.3551 7.06008 11.4099 7.05029 11.4687C7.0405 11.5274 7.04764 11.5878 7.07087 11.6426C7.09411 11.6975 7.13247 11.7446 7.18149 11.7784C7.23051 11.8123 7.28816 11.8315 7.34769 11.8338C9.28 11.8338 11.04 11.6984 12.9661 11.7231L16.1846 11.76C16.3275 11.8054 16.4781 11.8212 16.6273 11.8064C16.7765 11.7916 16.9212 11.7465 17.0523 11.6738C17.2185 11.4831 16.5292 11.1446 16.2585 11.1446L11.04 11.0769Z",
+				fill: "white"
+			}), a.a.createElement("path", {
+				d: "M18.7754 11.0277C18.5169 11.0277 17.8216 10.8861 17.6185 11.1261C17.5806 11.1706 17.5558 11.2248 17.5471 11.2826C17.5383 11.3405 17.5459 11.3996 17.5689 11.4533C17.5919 11.507 17.6295 11.5533 17.6774 11.5868C17.7253 11.6203 17.7816 11.6398 17.84 11.643C18.0985 11.643 19.2308 11.7292 19.4339 11.4954C19.6369 11.2615 19.0769 11.0277 18.7754 11.0277Z",
+				fill: "white"
+			}), a.a.createElement("path", {
+				d: "M4.35079 15.2369C4.23387 15.3969 3.16926 17.4154 4.10464 16.9846C4.46391 16.7201 4.76545 16.385 4.99079 16C5.15695 15.7169 4.84926 14.5415 4.37541 15.2123L4.35079 15.2369Z",
+				fill: "white"
+			}), a.a.createElement("path", {
+				d: "M26.9908 14.7692C26.5785 14.7077 26.1785 16.08 26.8369 16.08C28.0677 16.08 27.3846 14.8308 26.9908 14.7692Z",
+				fill: "white"
+			}), a.a.createElement("path", {
+				d: "M15.0031 3.54455C15.2923 3.74763 15.8031 3.32917 15.8092 3.01532C15.8277 2.27686 14.24 3.00917 15.0031 3.54455Z",
+				fill: "white"
+			}), a.a.createElement("path", {
+				d: "M10.0492 16.1477C10.0357 16.1032 10.0124 16.0624 9.98114 16.028C9.94986 15.9936 9.91134 15.9666 9.86836 15.949C9.82537 15.9313 9.77901 15.9234 9.7326 15.9258C9.6862 15.9283 9.64091 15.941 9.60001 15.9631C9.44617 16.0369 9.20001 16.0554 9.07694 16.1784C9.01506 16.2485 8.96836 16.3306 8.93976 16.4195C8.91117 16.5085 8.9013 16.6024 8.91078 16.6954C8.91311 16.7372 8.92378 16.7781 8.94215 16.8157C8.96053 16.8533 8.98624 16.8869 9.01778 16.9144C9.04932 16.9419 9.08604 16.9628 9.12579 16.976C9.16555 16.9891 9.20752 16.9941 9.24925 16.9908C9.26366 17.0091 9.28018 17.0256 9.29848 17.04L9.91386 17.44C9.96641 17.4696 10.0265 17.4832 10.0867 17.479C10.1469 17.4747 10.2045 17.4529 10.2524 17.4162C10.3003 17.3794 10.3363 17.3294 10.356 17.2724C10.3756 17.2154 10.3781 17.1538 10.3631 17.0954L10.0492 16.1477Z",
+				fill: "white"
+			}), a.a.createElement("path", {
+				d: "M20.9969 17.0338L20.4677 16.1538C20.444 16.1127 20.4111 16.0777 20.3715 16.0514C20.332 16.0252 20.287 16.0084 20.2399 16.0024C20.1928 15.9965 20.145 16.0015 20.1002 16.0171C20.0554 16.0327 20.0148 16.0584 19.9815 16.0923L19.6739 16.4923C19.6367 16.5423 19.6153 16.6023 19.6123 16.6646C19.5946 16.6966 19.5838 16.7319 19.5804 16.7683C19.5771 16.8048 19.5814 16.8415 19.5929 16.8762C19.6045 16.9109 19.6231 16.9428 19.6476 16.9699C19.6722 16.9971 19.702 17.0188 19.7354 17.0338L20.5723 17.4584C20.6314 17.4959 20.7014 17.5121 20.7709 17.5044C20.8404 17.4967 20.9052 17.4656 20.9546 17.4161C21.0041 17.3667 21.0352 17.3019 21.0429 17.2324C21.0506 17.1629 21.0344 17.0929 20.9969 17.0338V17.0338Z",
+				fill: "white"
+			}), a.a.createElement("path", {
+				d: "M14.2339 9.23082C14.6831 9.18774 15.1323 9.16928 15.5816 9.15697C16.2734 9.14124 16.9657 9.16178 17.6554 9.21851C17.6842 9.45119 17.6965 9.68563 17.6923 9.92005H13.9016C13.9016 9.64928 13.9077 9.23082 14.2339 9.23082Z",
+				fill: "#CCCCCA"
+			}), a.a.createElement("path", {
+				d: "M7.28001 13.1446C7.26985 13.1896 7.27012 13.2362 7.28078 13.281C7.29145 13.3258 7.31224 13.3676 7.34155 13.4031C7.33564 13.5697 7.38491 13.7337 7.48172 13.8694C7.57854 14.0052 7.71747 14.1052 7.87694 14.1539C7.97929 14.1772 8.08529 14.1797 8.18863 14.1612C8.29196 14.1427 8.39051 14.1035 8.47838 14.0461C8.56626 13.9887 8.64166 13.9141 8.7001 13.8269C8.75853 13.7397 8.79879 13.6416 8.81848 13.5385C9.12001 12.5169 7.50155 12.0185 7.28001 13.1446Z",
+				fill: "black"
+			}), a.a.createElement("path", {
+				d: "M24.0923 12.923C24.0261 12.8019 23.9281 12.7012 23.8088 12.6318C23.6894 12.5623 23.5534 12.5269 23.4154 12.5292C23.3661 12.4906 23.3057 12.469 23.2431 12.4677C22.7939 12.4677 22.7016 13.083 22.7446 13.4092C22.7877 13.7353 23.3231 13.963 23.6923 13.8769C23.7936 13.8589 23.8888 13.8158 23.9692 13.7515C24.0495 13.6872 24.1125 13.6038 24.1522 13.509C24.192 13.4141 24.2074 13.3107 24.1969 13.2084C24.1865 13.106 24.1505 13.0079 24.0923 12.923Z",
+				fill: "black"
+			}), a.a.createElement("path", {
+				d: "M8.11078 13.68C7.76001 13.8584 7.64309 13.2677 7.8154 13.1015C7.9877 12.9354 8.34463 13.1384 8.36309 13.28C8.36715 13.3645 8.34512 13.4482 8.29999 13.5197C8.25485 13.5913 8.1888 13.6472 8.11078 13.68V13.68Z",
+				fill: "#A5A4A4"
+			}), a.a.createElement("path", {
+				d: "M23.4769 13.5385C23.3965 13.5421 23.3171 13.5198 23.2504 13.4749C23.1836 13.43 23.1331 13.3648 23.1062 13.2889C23.0793 13.2131 23.0775 13.1306 23.101 13.0537C23.1246 12.9767 23.1722 12.9094 23.2369 12.8616C23.8277 12.6893 24 13.5385 23.4769 13.5385Z",
+				fill: "#A5A4A4"
+			}), a.a.createElement("path", {
+				d: "M27.4154 0.615433C26.5169 0.935433 25.6185 1.23082 24.7262 1.60005C24.2216 1.79697 23.7723 2.11697 23.2923 2.34466L23.1016 1.16928C23.0791 1.10161 23.0334 1.04408 22.9726 1.0069C22.9117 0.969721 22.8397 0.955303 22.7692 0.966202C21.3354 1.1262 19.6923 2.39389 18.6339 3.32312C18.5973 3.35171 18.5694 3.3898 18.5531 3.43323C18.5368 3.47665 18.5328 3.52373 18.5416 3.56928V3.79082C18.5418 3.8379 18.5529 3.88429 18.5739 3.92643C18.5949 3.96856 18.6253 4.00531 18.6628 4.03384C18.7002 4.06238 18.7437 4.08193 18.7899 4.09101C18.8361 4.10009 18.8838 4.09844 18.9292 4.0862C19.6923 3.92005 20.4492 3.69236 21.2 3.51389C21.2 4.48005 21.2 6.35082 22.48 5.61851C24.4779 4.4632 26.245 2.94852 27.6923 1.15082C27.8892 0.935433 27.7354 0.523125 27.4154 0.615433Z",
+				fill: "#FF8717"
+			}), a.a.createElement("path", {
+				d: "M12.6708 3.45235L10.4 3.33543L11.2308 2.10466C11.254 2.06399 11.2677 2.01856 11.2708 1.97181C11.2738 1.92506 11.2661 1.87824 11.2483 1.8349C11.2305 1.79157 11.203 1.75288 11.168 1.72178C11.133 1.69067 11.0913 1.66798 11.0462 1.65543C8.78155 1.33543 6.51078 0.75081 4.20924 0.966194C4.17209 0.96063 4.13416 0.963431 4.09823 0.974395C4.0623 0.985358 4.02927 1.00421 4.00156 1.02956C3.97384 1.05492 3.95214 1.08615 3.93803 1.12097C3.92392 1.15578 3.91776 1.19331 3.92001 1.23081C3.91089 1.27203 3.91176 1.31484 3.92255 1.35566C3.93335 1.39647 3.95375 1.43411 3.98206 1.46544C4.01037 1.49676 4.04577 1.52085 4.08529 1.5357C4.12481 1.55056 4.16731 1.55574 4.20924 1.55081C5.70463 1.74773 6.96617 2.73235 8.36309 3.24927C8.00001 3.90158 7.36617 4.32004 7.13232 5.09542C7.12131 5.14081 7.12057 5.18807 7.13014 5.23378C7.13972 5.27948 7.15937 5.32248 7.18768 5.35962C7.21598 5.39677 7.25221 5.42713 7.29373 5.44849C7.33526 5.46986 7.38103 5.48169 7.4277 5.48312C9.37847 5.56927 11.12 4.86773 12.8185 4.02466C13.12 3.88312 12.96 3.47081 12.6708 3.45235Z",
+				fill: "#FF8717"
+			}), a.a.createElement("path", {
+				d: "M10.5415 2.11689L9.63075 3.47689C9.60133 3.5266 9.58563 3.58322 9.58526 3.64098C9.58489 3.69874 9.59987 3.75556 9.62866 3.80564C9.65745 3.85571 9.69903 3.89724 9.74913 3.92598C9.79923 3.95471 9.85607 3.96963 9.91383 3.9692C10.4677 3.9692 11.5631 3.82766 12.1169 3.85843C10.7735 4.46983 9.33524 4.84656 7.8646 4.97228C8.22152 4.35689 8.83691 3.87689 9.09537 3.18766C9.11803 3.10443 9.10679 3.01561 9.06412 2.94065C9.02144 2.86568 8.95081 2.81068 8.86768 2.78766C7.59082 2.36536 6.33771 1.87439 5.11383 1.31689C6.64614 1.41536 9.01537 1.88305 10.5415 2.11689Z",
+				fill: "#FFD635"
+			}), a.a.createElement("path", {
+				d: "M24.7262 3.51996C24.0304 4.07931 23.2963 4.58928 22.5292 5.04611C21.5385 5.6615 21.6554 3.42765 21.6308 3.07688C21.6308 2.84919 21.2677 2.92919 21.0154 2.98458C20.4 3.12611 19.7108 3.35381 19.0954 3.52611C19.6 3.17534 20.3262 2.55381 20.8739 2.22765L21.7969 1.64919C22.7262 1.03381 22.6154 2.39996 22.6831 2.81227C22.6945 2.85716 22.7148 2.8993 22.7428 2.93617C22.7708 2.97304 22.806 3.00389 22.8462 3.02686C22.8864 3.04984 22.9308 3.06448 22.9768 3.0699C23.0228 3.07532 23.0694 3.07142 23.1139 3.05842C23.8339 2.81842 24.3877 2.33842 25.1016 2.05534C25.7169 1.81534 26.7139 1.28611 27.3292 1.06458C26.5118 1.93473 25.6425 2.75469 24.7262 3.51996V3.51996Z",
+				fill: "#FFD635"
+			}), a.a.createElement("path", {
+				d: "M22.6092 20.6585C22.4985 20.6585 22.1662 20.5908 22.0985 20.5908C21.3969 20.5908 14.16 20.8001 11.2923 20.8493C10.8948 20.7857 10.4898 20.7857 10.0923 20.8493H9.00308C8.60924 20.8493 8.42462 21.1201 8.73847 21.3539C8.88794 21.4502 9.04929 21.5268 9.21847 21.5816C9.28616 22.5662 9.21847 24.9477 10.0677 25.2001C10.9468 25.3886 11.8465 25.4631 12.7446 25.4216L16.1723 25.3908C17.9385 25.3908 20.0062 25.477 21.7662 25.0524C22.1969 24.9477 22.3385 22.5293 22.3815 21.3601C22.5269 21.3265 22.6675 21.2748 22.8 21.2062C23.2739 20.9847 23.0092 20.6524 22.6092 20.6585Z",
+				fill: "black"
+			}), a.a.createElement("path", {
+				d: "M21.8523 21.1692L9.81537 21.3846C9.87691 21.9076 10.1046 23.3907 10.0861 23.7415V23.8769C10.2277 25.1076 11.3169 24.9046 12.1538 24.8984L17.2923 24.8492C17.7477 24.8492 19.8031 24.8492 20.0615 24.8123C21.0769 24.7507 21.4646 24.603 21.6246 23.643C21.79 22.8291 21.8663 21.9996 21.8523 21.1692V21.1692Z",
+				fill: "white"
+			}), a.a.createElement("path", {
+				d: "M21.9077 22.8308L18.4615 22.9416C17.3908 22.9724 16.0984 23.1693 15.1446 22.6093C15.0775 22.5667 15.0012 22.5407 14.9221 22.5332C14.8429 22.5257 14.7632 22.537 14.6892 22.5662C14.523 22.6626 14.375 22.7876 14.2523 22.9354L13.9015 22.4431C13.8215 22.3324 13.4092 22.2031 13.3292 22.3631L12.8184 23.3847C12.688 22.9836 12.5933 22.5717 12.5354 22.1539C12.5354 21.9877 12.0246 21.8954 11.92 22.037C11.6554 22.4739 11.5508 23.0093 10.8861 22.997C10.4677 22.997 10.0308 22.997 9.61229 23.0462C9.29845 23.0462 9.83999 23.3293 9.99383 23.3231C11.4954 23.2431 11.6554 23.477 12.0861 22.8739C12.1874 23.2633 12.3297 23.6408 12.5108 24C12.5784 24.1354 13.0154 24.2954 13.1261 24.117L13.7415 22.9477L14.0554 23.3908C14.1415 23.5077 14.5354 23.6308 14.6277 23.4708C14.7416 23.2457 14.9059 23.0499 15.1077 22.8985C15.5593 23.1289 16.0591 23.2491 16.5661 23.2493C18.4123 23.2985 20.32 23.1693 22.1969 23.12C22.5538 23.1016 22.0984 22.8247 21.9077 22.8308Z",
+				fill: "black"
+			}))
 		},
 		"./src/reddit/icons/svgs/ChatBubbles/index.tsx": function(e, s, t) {
 			"use strict";
@@ -282,11 +378,11 @@
 			"use strict";
 			var n = t("./node_modules/react/index.js"),
 				a = t.n(n),
-				c = t("./src/lib/classNames/index.ts"),
-				i = t("./src/reddit/icons/svgs/Chevron/index.m.less"),
-				r = t.n(i);
+				i = t("./src/lib/classNames/index.ts"),
+				c = t("./src/reddit/icons/svgs/Chevron/index.m.less"),
+				r = t.n(c);
 			s.a = e => a.a.createElement("svg", {
-				className: Object(c.a)(r.a.chevron, e.className),
+				className: Object(i.a)(r.a.chevron, e.className),
 				viewBox: "0 0 9 14",
 				xmlns: "http://www.w3.org/2000/svg"
 			}, a.a.createElement("g", {
@@ -315,11 +411,11 @@
 		"./src/reddit/icons/svgs/CircleCheckLight/index.tsx": function(e, s, t) {
 			"use strict";
 			t.d(s, "a", (function() {
-				return c
+				return i
 			}));
 			var n = t("./node_modules/react/index.js"),
 				a = t.n(n);
-			const c = e => a.a.createElement("svg", {
+			const i = e => a.a.createElement("svg", {
 				className: e.className,
 				viewBox: "0 0 20 20",
 				xmlns: "http://www.w3.org/2000/svg"
@@ -366,8 +462,8 @@
 			var n = t("./node_modules/react/index.js"),
 				a = t.n(n);
 
-			function c() {
-				return (c = Object.assign || function(e) {
+			function i() {
+				return (i = Object.assign || function(e) {
 					for (var s = 1; s < arguments.length; s++) {
 						var t = arguments[s];
 						for (var n in t) Object.prototype.hasOwnProperty.call(t, n) && (e[n] = t[n])
@@ -375,7 +471,7 @@
 					return e
 				}).apply(this, arguments)
 			}
-			s.a = e => a.a.createElement("svg", c({
+			s.a = e => a.a.createElement("svg", i({
 				className: e.className,
 				xmlns: "http://www.w3.org/2000/svg",
 				viewBox: "0 0 20 20"
@@ -406,11 +502,11 @@
 			"use strict";
 			var n = t("./node_modules/react/index.js"),
 				a = t.n(n),
-				c = t("./src/lib/classNames/index.ts"),
-				i = t("./src/reddit/icons/svgs/Clock/index.m.less"),
-				r = t.n(i);
+				i = t("./src/lib/classNames/index.ts"),
+				c = t("./src/reddit/icons/svgs/Clock/index.m.less"),
+				r = t.n(c);
 			s.a = e => a.a.createElement("svg", {
-				className: Object(c.a)(r.a.clock, e.className),
+				className: Object(i.a)(r.a.clock, e.className),
 				xmlns: "http://www.w3.org/2000/svg",
 				viewBox: "0 0 11 11"
 			}, a.a.createElement("g", null, a.a.createElement("path", {
@@ -443,8 +539,8 @@
 			var n = t("./node_modules/react/index.js"),
 				a = t.n(n);
 
-			function c() {
-				return (c = Object.assign || function(e) {
+			function i() {
+				return (i = Object.assign || function(e) {
 					for (var s = 1; s < arguments.length; s++) {
 						var t = arguments[s];
 						for (var n in t) Object.prototype.hasOwnProperty.call(t, n) && (e[n] = t[n])
@@ -452,7 +548,7 @@
 					return e
 				}).apply(this, arguments)
 			}
-			s.a = e => a.a.createElement("svg", c({
+			s.a = e => a.a.createElement("svg", i({
 				viewBox: "0 0 12 12",
 				xmlns: "http://www.w3.org/2000/svg"
 			}, e), a.a.createElement("path", {
@@ -482,25 +578,25 @@
 			"use strict";
 			var n = t("./node_modules/react/index.js"),
 				a = t.n(n),
-				c = t("./src/lib/classNames/index.ts"),
-				i = t("./src/reddit/icons/svgs/CoinV2/index.m.less"),
-				r = t.n(i);
+				i = t("./src/lib/classNames/index.ts"),
+				c = t("./src/reddit/icons/svgs/CoinV2/index.m.less"),
+				r = t.n(c);
 			s.a = e => a.a.createElement("svg", {
 				className: e.className,
 				viewBox: "0 0 20 20",
 				xmlns: "http://www.w3.org/2000/svg"
 			}, a.a.createElement("path", {
-				className: Object(c.a)(r.a.shadow, e.shadowClassName),
+				className: Object(i.a)(r.a.shadow, e.shadowClassName),
 				d: "M11.1 1.889H8.722v16.219h2.212a5.86 5.86 0 001.951-.274c3.658-1.158 5.837-5.614 4.856-9.933C16.92 4.28 14.134 1.886 11.1 1.89z"
 			}), a.a.createElement("path", {
 				d: "M11.1 1.889H8.722v16.219h2.212a5.86 5.86 0 001.951-.274c3.658-1.158 5.837-5.614 4.856-9.933C16.92 4.28 14.134 1.886 11.1 1.89z",
 				fill: "url(#shine)",
 				fillOpacity: ".3"
 			}), a.a.createElement("path", {
-				className: Object(c.a)(r.a.standardColor, e.standardColorClassName),
+				className: Object(i.a)(r.a.standardColor, e.standardColorClassName),
 				d: "M6.991 2.166C3.334 3.324 1.155 7.78 2.135 12.1c.98 4.32 4.754 6.891 8.411 5.734 3.658-1.157 5.837-5.613 4.857-9.932-.98-4.32-4.754-6.892-8.412-5.735z"
 			}), a.a.createElement("path", {
-				className: Object(c.a)(r.a.shadow, e.shadowClassName),
+				className: Object(i.a)(r.a.shadow, e.shadowClassName),
 				d: "M7.54 12.335c1.122.765 2.664.277 3.311-1.047.224-.457.718-.613 1.104-.35.387.264.52.847.296 1.304-.54 1.103-1.41 1.892-2.453 2.222-1.043.33-2.13.16-3.065-.476-1.929-1.316-2.592-4.24-1.479-6.517.54-1.104 1.41-1.893 2.453-2.223 1.042-.33 2.13-.16 3.065.477.387.263.52.847.296 1.303-.223.456-.717.612-1.104.35-1.121-.765-2.663-.277-3.31 1.047-.669 1.367-.271 3.121.887 3.91z"
 			}), a.a.createElement("defs", null, a.a.createElement("linearGradient", {
 				id: "shine",
@@ -575,8 +671,8 @@
 			var n = t("./node_modules/react/index.js"),
 				a = t.n(n);
 
-			function c() {
-				return (c = Object.assign || function(e) {
+			function i() {
+				return (i = Object.assign || function(e) {
 					for (var s = 1; s < arguments.length; s++) {
 						var t = arguments[s];
 						for (var n in t) Object.prototype.hasOwnProperty.call(t, n) && (e[n] = t[n])
@@ -584,7 +680,7 @@
 					return e
 				}).apply(this, arguments)
 			}
-			s.a = e => a.a.createElement("svg", c({
+			s.a = e => a.a.createElement("svg", i({
 				viewBox: "0 0 20 20",
 				xmlns: "http://www.w3.org/2000/svg"
 			}, e), a.a.createElement("path", {
@@ -596,12 +692,12 @@
 		"./src/reddit/icons/svgs/Crown/index.tsx": function(e, s, t) {
 			"use strict";
 			t.d(s, "a", (function() {
-				return c
+				return i
 			}));
 			var n = t("./node_modules/react/index.js"),
 				a = t.n(n);
 
-			function c(e) {
+			function i(e) {
 				return a.a.createElement("svg", {
 					className: e.className,
 					xmlns: "http://www.w3.org/2000/svg",
@@ -615,15 +711,15 @@
 			"use strict";
 			var n = t("./node_modules/react/index.js"),
 				a = t.n(n),
-				c = t("./src/reddit/constants/colors.ts");
-			const i = function(e) {
+				i = t("./src/reddit/constants/colors.ts");
+			const c = function(e) {
 				let s = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : "";
 				return `${s}-du-left-${e}`
 			};
 			s.a = e => {
 				const {
 					seed: s = ""
-				} = e, t = i("a", s), n = i("b", s), r = i("c", s), l = i("d", s);
+				} = e, t = c("a", s), n = c("b", s), r = c("c", s), l = c("d", s);
 				return a.a.createElement("svg", {
 					className: e.className,
 					onClick: e.onClick,
@@ -661,11 +757,11 @@
 					fillRule: "nonzero",
 					transform: "matrix(-1 0 0 1 43 4)"
 				}, a.a.createElement("use", {
-					fill: c.a.black,
+					fill: i.a.black,
 					filter: `url(#${t})`,
 					xlinkHref: `#${n}`
 				}), a.a.createElement("use", {
-					fill: c.a.white,
+					fill: i.a.white,
 					xlinkHref: `#${n}`
 				})), a.a.createElement("g", {
 					transform: "matrix(0 1 1 0 17.174 14.174)"
@@ -673,14 +769,14 @@
 					d: "M0 16h16V0H0z"
 				}), a.a.createElement("mask", {
 					id: l,
-					fill: c.a.white
+					fill: i.a.white
 				}, a.a.createElement("use", {
 					xlinkHref: `#${r}`
 				})), a.a.createElement("use", {
-					fill: c.a.black,
+					fill: i.a.black,
 					xlinkHref: `#${r}`
 				}), a.a.createElement("g", {
-					fill: c.a.alienblue,
+					fill: i.a.alienblue,
 					mask: `url(#${l})`
 				}, a.a.createElement("path", {
 					d: "M0 0h16v16H0z"
@@ -691,15 +787,15 @@
 			"use strict";
 			var n = t("./node_modules/react/index.js"),
 				a = t.n(n),
-				c = t("./src/reddit/constants/colors.ts");
-			const i = function(e) {
+				i = t("./src/reddit/constants/colors.ts");
+			const c = function(e) {
 				let s = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : "";
 				return `${s}-du-right-${e}`
 			};
 			s.a = e => {
 				const {
 					seed: s = ""
-				} = e, t = i("a", s), n = i("b", s), r = i("c", s), l = i("d", s);
+				} = e, t = c("a", s), n = c("b", s), r = c("c", s), l = c("d", s);
 				return a.a.createElement("svg", {
 					className: e.className,
 					onClick: e.onClick,
@@ -737,11 +833,11 @@
 					fillRule: "nonzero",
 					transform: "translate(7 4)"
 				}, a.a.createElement("use", {
-					fill: c.a.black,
+					fill: i.a.black,
 					filter: `url(#${t})`,
 					xlinkHref: `#${n}`
 				}), a.a.createElement("use", {
-					fill: c.a.white,
+					fill: i.a.white,
 					xlinkHref: `#${n}`
 				})), a.a.createElement("g", {
 					transform: "rotate(90 9.326 23.5)"
@@ -749,14 +845,14 @@
 					d: "M0 16h16V0H0z"
 				}), a.a.createElement("mask", {
 					id: l,
-					fill: c.a.white
+					fill: i.a.white
 				}, a.a.createElement("use", {
 					xlinkHref: `#${r}`
 				})), a.a.createElement("use", {
-					fill: c.a.black,
+					fill: i.a.black,
 					xlinkHref: `#${r}`
 				}), a.a.createElement("g", {
-					fill: c.a.alienblue,
+					fill: i.a.alienblue,
 					mask: `url(#${l})`
 				}, a.a.createElement("path", {
 					d: "M0 0h16v16H0z"
@@ -766,12 +862,12 @@
 		"./src/reddit/icons/svgs/Distinguish/index.tsx": function(e, s, t) {
 			"use strict";
 			t.d(s, "a", (function() {
-				return c
+				return i
 			}));
 			var n = t("./node_modules/react/index.js"),
 				a = t.n(n);
 
-			function c(e) {
+			function i(e) {
 				return a.a.createElement("svg", {
 					className: e.className,
 					viewBox: "0 0 24 24",
@@ -833,8 +929,8 @@
 			var n = t("./node_modules/react/index.js"),
 				a = t.n(n);
 
-			function c() {
-				return (c = Object.assign || function(e) {
+			function i() {
+				return (i = Object.assign || function(e) {
 					for (var s = 1; s < arguments.length; s++) {
 						var t = arguments[s];
 						for (var n in t) Object.prototype.hasOwnProperty.call(t, n) && (e[n] = t[n])
@@ -842,7 +938,7 @@
 					return e
 				}).apply(this, arguments)
 			}
-			s.a = e => a.a.createElement("svg", c({
+			s.a = e => a.a.createElement("svg", i({
 				xmlns: "http://www.w3.org/2000/svg",
 				viewBox: "0 0 16 16"
 			}, e), a.a.createElement("path", {
@@ -858,13 +954,13 @@
 		"./src/reddit/icons/svgs/EthCircle/index.tsx": function(e, s, t) {
 			"use strict";
 			t.d(s, "a", (function() {
-				return i
+				return c
 			}));
 			var n = t("./node_modules/react/index.js"),
 				a = t.n(n);
 
-			function c() {
-				return (c = Object.assign || function(e) {
+			function i() {
+				return (i = Object.assign || function(e) {
 					for (var s = 1; s < arguments.length; s++) {
 						var t = arguments[s];
 						for (var n in t) Object.prototype.hasOwnProperty.call(t, n) && (e[n] = t[n])
@@ -873,8 +969,8 @@
 				}).apply(this, arguments)
 			}
 
-			function i(e) {
-				return a.a.createElement("svg", c({}, e, {
+			function c(e) {
+				return a.a.createElement("svg", i({}, e, {
 					viewBox: "0 0 16 16",
 					xmlns: "http://www.w3.org/2000/svg"
 				}), a.a.createElement("circle", {
@@ -907,12 +1003,12 @@
 		"./src/reddit/icons/svgs/Eye/index.tsx": function(e, s, t) {
 			"use strict";
 			t.d(s, "a", (function() {
-				return c
+				return i
 			}));
 			var n = t("./node_modules/react/index.js"),
 				a = t.n(n);
 
-			function c(e) {
+			function i(e) {
 				return a.a.createElement("svg", {
 					className: e.className,
 					xmlns: "http://www.w3.org/2000/svg",
@@ -925,12 +1021,12 @@
 		"./src/reddit/icons/svgs/EyeCancel/index.tsx": function(e, s, t) {
 			"use strict";
 			t.d(s, "a", (function() {
-				return c
+				return i
 			}));
 			var n = t("./node_modules/react/index.js"),
 				a = t.n(n);
 
-			function c(e) {
+			function i(e) {
 				return a.a.createElement("svg", {
 					className: e.className,
 					xmlns: "http://www.w3.org/2000/svg",
@@ -1006,11 +1102,11 @@
 			"use strict";
 			var n = t("./node_modules/react/index.js"),
 				a = t.n(n),
-				c = t("./src/lib/classNames/index.ts"),
-				i = t("./src/reddit/icons/svgs/FormattingAlignCenter/index.m.less"),
-				r = t.n(i);
+				i = t("./src/lib/classNames/index.ts"),
+				c = t("./src/reddit/icons/svgs/FormattingAlignCenter/index.m.less"),
+				r = t.n(c);
 			s.a = e => a.a.createElement("svg", {
-				className: Object(c.a)(r.a.icon, e.className),
+				className: Object(i.a)(r.a.icon, e.className),
 				viewBox: "0 0 20 20",
 				xmlns: "http://www.w3.org/2000/svg"
 			}, a.a.createElement("g", {
@@ -1029,11 +1125,11 @@
 			"use strict";
 			var n = t("./node_modules/react/index.js"),
 				a = t.n(n),
-				c = t("./src/lib/classNames/index.ts"),
-				i = t("./src/reddit/icons/svgs/FormattingAlignLeft/index.m.less"),
-				r = t.n(i);
+				i = t("./src/lib/classNames/index.ts"),
+				c = t("./src/reddit/icons/svgs/FormattingAlignLeft/index.m.less"),
+				r = t.n(c);
 			s.a = e => a.a.createElement("svg", {
-				className: Object(c.a)(r.a.icon, e.className),
+				className: Object(i.a)(r.a.icon, e.className),
 				viewBox: "0 0 20 20",
 				xmlns: "http://www.w3.org/2000/svg"
 			}, a.a.createElement("g", {
@@ -1052,11 +1148,11 @@
 			"use strict";
 			var n = t("./node_modules/react/index.js"),
 				a = t.n(n),
-				c = t("./src/lib/classNames/index.ts"),
-				i = t("./src/reddit/icons/svgs/FormattingAlignRight/index.m.less"),
-				r = t.n(i);
+				i = t("./src/lib/classNames/index.ts"),
+				c = t("./src/reddit/icons/svgs/FormattingAlignRight/index.m.less"),
+				r = t.n(c);
 			s.a = e => a.a.createElement("svg", {
-				className: Object(c.a)(r.a.icon, e.className),
+				className: Object(i.a)(r.a.icon, e.className),
 				viewBox: "0 0 20 20",
 				xmlns: "http://www.w3.org/2000/svg"
 			}, a.a.createElement("g", {
@@ -1080,11 +1176,11 @@
 			"use strict";
 			var n = t("./node_modules/react/index.js"),
 				a = t.n(n),
-				c = t("./src/lib/classNames/index.ts"),
-				i = t("./src/reddit/icons/svgs/FormattingBold/index.m.less"),
-				r = t.n(i);
+				i = t("./src/lib/classNames/index.ts"),
+				c = t("./src/reddit/icons/svgs/FormattingBold/index.m.less"),
+				r = t.n(c);
 			s.a = e => a.a.createElement("svg", {
-				className: Object(c.a)(r.a.icon, e.className),
+				className: Object(i.a)(r.a.icon, e.className),
 				style: e.style,
 				viewBox: "0 0 20 20",
 				xmlns: "http://www.w3.org/2000/svg"
@@ -1106,11 +1202,11 @@
 			"use strict";
 			var n = t("./node_modules/react/index.js"),
 				a = t.n(n),
-				c = t("./src/lib/classNames/index.ts"),
-				i = t("./src/reddit/icons/svgs/FormattingDeleteRow/index.m.less"),
-				r = t.n(i);
+				i = t("./src/lib/classNames/index.ts"),
+				c = t("./src/reddit/icons/svgs/FormattingDeleteRow/index.m.less"),
+				r = t.n(c);
 			s.a = e => a.a.createElement("svg", {
-				className: Object(c.a)(r.a.icon, e.className),
+				className: Object(i.a)(r.a.icon, e.className),
 				viewBox: "0 0 20 20",
 				xmlns: "http://www.w3.org/2000/svg"
 			}, a.a.createElement("g", {
@@ -1139,11 +1235,11 @@
 			"use strict";
 			var n = t("./node_modules/react/index.js"),
 				a = t.n(n),
-				c = t("./src/lib/classNames/index.ts"),
-				i = t("./src/reddit/icons/svgs/FormattingHyperlink/index.m.less"),
-				r = t.n(i);
+				i = t("./src/lib/classNames/index.ts"),
+				c = t("./src/reddit/icons/svgs/FormattingHyperlink/index.m.less"),
+				r = t.n(c);
 			s.a = e => a.a.createElement("svg", {
-				className: Object(c.a)(r.a.icon, e.className),
+				className: Object(i.a)(r.a.icon, e.className),
 				viewBox: "0 0 20 20",
 				xmlns: "http://www.w3.org/2000/svg"
 			}, a.a.createElement("path", {
@@ -1161,9 +1257,9 @@
 			"use strict";
 			var n = t("./node_modules/react/index.js"),
 				a = t.n(n),
-				c = t("./src/lib/classNames/index.ts"),
-				i = t("./src/reddit/icons/svgs/FormattingInsertRow/index.m.less"),
-				r = t.n(i);
+				i = t("./src/lib/classNames/index.ts"),
+				c = t("./src/reddit/icons/svgs/FormattingInsertRow/index.m.less"),
+				r = t.n(c);
 			const l = {
 				up: "rotate(180 10 10)",
 				down: "",
@@ -1171,7 +1267,7 @@
 				right: "rotate(-90 10 10)"
 			};
 			s.a = e => a.a.createElement("svg", {
-				className: Object(c.a)(r.a.icon, e.className),
+				className: Object(i.a)(r.a.icon, e.className),
 				viewBox: "0 0 20 20",
 				xmlns: "http://www.w3.org/2000/svg"
 			}, a.a.createElement("g", {
@@ -1195,11 +1291,11 @@
 			"use strict";
 			var n = t("./node_modules/react/index.js"),
 				a = t.n(n),
-				c = t("./src/lib/classNames/index.ts"),
-				i = t("./src/reddit/icons/svgs/FormattingItalics/index.m.less"),
-				r = t.n(i);
+				i = t("./src/lib/classNames/index.ts"),
+				c = t("./src/reddit/icons/svgs/FormattingItalics/index.m.less"),
+				r = t.n(c);
 			s.a = e => a.a.createElement("svg", {
-				className: Object(c.a)(r.a.icon, e.className),
+				className: Object(i.a)(r.a.icon, e.className),
 				style: e.style,
 				viewBox: "0 0 20 20",
 				xmlns: "http://www.w3.org/2000/svg"
@@ -1218,11 +1314,11 @@
 			"use strict";
 			var n = t("./node_modules/react/index.js"),
 				a = t.n(n),
-				c = t("./src/lib/classNames/index.ts"),
-				i = t("./src/reddit/icons/svgs/FormattingMonospace/index.m.less"),
-				r = t.n(i);
+				i = t("./src/lib/classNames/index.ts"),
+				c = t("./src/reddit/icons/svgs/FormattingMonospace/index.m.less"),
+				r = t.n(c);
 			s.a = e => a.a.createElement("svg", {
-				className: Object(c.a)(r.a.icon, e.className),
+				className: Object(i.a)(r.a.icon, e.className),
 				style: e.style,
 				viewBox: "0 0 20 20",
 				xmlns: "http://www.w3.org/2000/svg"
@@ -1243,11 +1339,11 @@
 			"use strict";
 			var n = t("./node_modules/react/index.js"),
 				a = t.n(n),
-				c = t("./src/lib/classNames/index.ts"),
-				i = t("./src/reddit/icons/svgs/FormattingOrderedList/index.m.less"),
-				r = t.n(i);
+				i = t("./src/lib/classNames/index.ts"),
+				c = t("./src/reddit/icons/svgs/FormattingOrderedList/index.m.less"),
+				r = t.n(c);
 			s.a = e => a.a.createElement("svg", {
-				className: Object(c.a)(r.a.icon, e.className),
+				className: Object(i.a)(r.a.icon, e.className),
 				style: e.style,
 				viewBox: "0 0 20 20",
 				xmlns: "http://www.w3.org/2000/svg"
@@ -1274,11 +1370,11 @@
 			"use strict";
 			var n = t("./node_modules/react/index.js"),
 				a = t.n(n),
-				c = t("./src/lib/classNames/index.ts"),
-				i = t("./src/reddit/icons/svgs/FormattingSpoiler/index.m.less"),
-				r = t.n(i);
+				i = t("./src/lib/classNames/index.ts"),
+				c = t("./src/reddit/icons/svgs/FormattingSpoiler/index.m.less"),
+				r = t.n(c);
 			s.a = e => a.a.createElement("svg", {
-				className: Object(c.a)(r.a.icon, e.className),
+				className: Object(i.a)(r.a.icon, e.className),
 				style: e.style,
 				viewBox: "0 0 20 20",
 				xmlns: "http://www.w3.org/2000/svg"
@@ -1295,11 +1391,11 @@
 			"use strict";
 			var n = t("./node_modules/react/index.js"),
 				a = t.n(n),
-				c = t("./src/lib/classNames/index.ts"),
-				i = t("./src/reddit/icons/svgs/FormattingStrikethrough/index.m.less"),
-				r = t.n(i);
+				i = t("./src/lib/classNames/index.ts"),
+				c = t("./src/reddit/icons/svgs/FormattingStrikethrough/index.m.less"),
+				r = t.n(c);
 			s.a = e => a.a.createElement("svg", {
-				className: Object(c.a)(r.a.icon, e.className),
+				className: Object(i.a)(r.a.icon, e.className),
 				style: e.style,
 				viewBox: "0 0 20 20",
 				xmlns: "http://www.w3.org/2000/svg"
@@ -1323,11 +1419,11 @@
 			"use strict";
 			var n = t("./node_modules/react/index.js"),
 				a = t.n(n),
-				c = t("./src/lib/classNames/index.ts"),
-				i = t("./src/reddit/icons/svgs/FormattingSuperscript/index.m.less"),
-				r = t.n(i);
+				i = t("./src/lib/classNames/index.ts"),
+				c = t("./src/reddit/icons/svgs/FormattingSuperscript/index.m.less"),
+				r = t.n(c);
 			s.a = e => a.a.createElement("svg", {
-				className: Object(c.a)(r.a.icon, e.className),
+				className: Object(i.a)(r.a.icon, e.className),
 				style: e.style,
 				viewBox: "0 0 20 20",
 				xmlns: "http://www.w3.org/2000/svg"
@@ -1346,11 +1442,11 @@
 			"use strict";
 			var n = t("./node_modules/react/index.js"),
 				a = t.n(n),
-				c = t("./src/lib/classNames/index.ts"),
-				i = t("./src/reddit/icons/svgs/FormattingTable/index.m.less"),
-				r = t.n(i);
+				i = t("./src/lib/classNames/index.ts"),
+				c = t("./src/reddit/icons/svgs/FormattingTable/index.m.less"),
+				r = t.n(c);
 			s.a = e => a.a.createElement("svg", {
-				className: Object(c.a)(r.a.icon, e.className),
+				className: Object(i.a)(r.a.icon, e.className),
 				viewBox: "0 0 20 20",
 				xmlns: "http://www.w3.org/2000/svg"
 			}, a.a.createElement("path", {
@@ -1371,11 +1467,11 @@
 			"use strict";
 			var n = t("./node_modules/react/index.js"),
 				a = t.n(n),
-				c = t("./src/lib/classNames/index.ts"),
-				i = t("./src/reddit/icons/svgs/FormattingUnorderedList/index.m.less"),
-				r = t.n(i);
+				i = t("./src/lib/classNames/index.ts"),
+				c = t("./src/reddit/icons/svgs/FormattingUnorderedList/index.m.less"),
+				r = t.n(c);
 			s.a = e => a.a.createElement("svg", {
-				className: Object(c.a)(r.a.icon, e.className),
+				className: Object(i.a)(r.a.icon, e.className),
 				style: e.style,
 				viewBox: "0 0 20 20",
 				xmlns: "http://www.w3.org/2000/svg"
@@ -1506,11 +1602,11 @@
 			"use strict";
 			var n = t("./node_modules/react/index.js"),
 				a = t.n(n),
-				c = t("./src/lib/classNames/index.ts"),
-				i = t("./src/reddit/icons/svgs/Grapple/index.m.less"),
-				r = t.n(i);
+				i = t("./src/lib/classNames/index.ts"),
+				c = t("./src/reddit/icons/svgs/Grapple/index.m.less"),
+				r = t.n(c);
 			s.a = e => a.a.createElement("svg", {
-				className: Object(c.a)(e.className, r.a.grapple, {
+				className: Object(i.a)(e.className, r.a.grapple, {
 					[r.a.mIsDragging]: e.isDragging
 				}),
 				xmlns: "http://www.w3.org/2000/svg",
@@ -1711,11 +1807,11 @@
 			"use strict";
 			var n = t("./node_modules/react/index.js"),
 				a = t.n(n),
-				c = t("./src/lib/classNames/index.ts"),
-				i = t("./src/reddit/icons/svgs/ImagePost/index.m.less"),
-				r = t.n(i);
+				i = t("./src/lib/classNames/index.ts"),
+				c = t("./src/reddit/icons/svgs/ImagePost/index.m.less"),
+				r = t.n(c);
 			s.a = e => a.a.createElement("svg", {
-				className: Object(c.a)(r.a.icon, e.className),
+				className: Object(i.a)(r.a.icon, e.className),
 				viewBox: "0 0 20 20",
 				xmlns: "http://www.w3.org/2000/svg"
 			}, a.a.createElement("path", {
@@ -1731,11 +1827,11 @@
 			"use strict";
 			var n = t("./node_modules/react/index.js"),
 				a = t.n(n),
-				c = t("./src/lib/classNames/index.ts"),
-				i = t("./src/reddit/icons/svgs/ImageUpload/index.m.less"),
-				r = t.n(i);
+				i = t("./src/lib/classNames/index.ts"),
+				c = t("./src/reddit/icons/svgs/ImageUpload/index.m.less"),
+				r = t.n(c);
 			s.a = e => a.a.createElement("svg", {
-				className: Object(c.a)(r.a.icon, e.className),
+				className: Object(i.a)(r.a.icon, e.className),
 				viewBox: "0 0 20 20",
 				xmlns: "http://www.w3.org/2000/svg"
 			}, a.a.createElement("g", null, a.a.createElement("polygon", {
@@ -1770,8 +1866,8 @@
 			var n = t("./node_modules/react/index.js"),
 				a = t.n(n);
 
-			function c() {
-				return (c = Object.assign || function(e) {
+			function i() {
+				return (i = Object.assign || function(e) {
 					for (var s = 1; s < arguments.length; s++) {
 						var t = arguments[s];
 						for (var n in t) Object.prototype.hasOwnProperty.call(t, n) && (e[n] = t[n])
@@ -1779,7 +1875,7 @@
 					return e
 				}).apply(this, arguments)
 			}
-			s.a = e => a.a.createElement("svg", c({
+			s.a = e => a.a.createElement("svg", i({
 				xmlns: "http://www.w3.org/2000/svg",
 				viewBox: "0 0 16 16",
 				stroke: "white"
@@ -1881,11 +1977,11 @@
 		"./src/reddit/icons/svgs/MinusCircle/index.tsx": function(e, s, t) {
 			"use strict";
 			t.d(s, "a", (function() {
-				return c
+				return i
 			}));
 			var n = t("./node_modules/react/index.js"),
 				a = t.n(n);
-			const c = e => a.a.createElement("svg", {
+			const i = e => a.a.createElement("svg", {
 				className: e.className,
 				viewBox: "0 0 16 16"
 			}, a.a.createElement("path", {
@@ -1925,7 +2021,7 @@
 			"use strict";
 			var n = t("./node_modules/react/index.js"),
 				a = t.n(n),
-				c = t("./src/reddit/constants/colors.ts");
+				i = t("./src/reddit/constants/colors.ts");
 			s.a = e => a.a.createElement("svg", {
 				className: e.className,
 				id: e.id,
@@ -1944,7 +2040,7 @@
 				cx: "18",
 				cy: "3",
 				r: "4",
-				fill: e.isUnread ? c.a.orangered : "none"
+				fill: e.isUnread ? i.a.orangered : "none"
 			}))
 		},
 		"./src/reddit/icons/svgs/Negative/index.tsx": function(e, s, t) {
@@ -2039,8 +2135,8 @@
 			var n = t("./node_modules/react/index.js"),
 				a = t.n(n);
 
-			function c() {
-				return (c = Object.assign || function(e) {
+			function i() {
+				return (i = Object.assign || function(e) {
 					for (var s = 1; s < arguments.length; s++) {
 						var t = arguments[s];
 						for (var n in t) Object.prototype.hasOwnProperty.call(t, n) && (e[n] = t[n])
@@ -2048,7 +2144,7 @@
 					return e
 				}).apply(this, arguments)
 			}
-			s.a = e => a.a.createElement("svg", c({
+			s.a = e => a.a.createElement("svg", i({
 				xmlns: "http://www.w3.org/2000/svg",
 				viewBox: "0 0 20 20"
 			}, e), a.a.createElement("title", null, "Planet"), a.a.createElement("path", {
@@ -2165,11 +2261,11 @@
 			"use strict";
 			var n = t("./node_modules/react/index.js"),
 				a = t.n(n),
-				c = t("./src/lib/classNames/index.ts"),
-				i = t("./src/reddit/icons/svgs/PositionRight/index.m.less"),
-				r = t.n(i);
+				i = t("./src/lib/classNames/index.ts"),
+				c = t("./src/reddit/icons/svgs/PositionRight/index.m.less"),
+				r = t.n(c);
 			s.a = e => a.a.createElement("svg", {
-				className: Object(c.a)(e.className, r.a.icon),
+				className: Object(i.a)(e.className, r.a.icon),
 				viewBox: "0 0 20 20",
 				xmlns: "http://www.w3.org/2000/svg"
 			}, a.a.createElement("g", null, a.a.createElement("rect", {
@@ -2451,11 +2547,11 @@
 			"use strict";
 			var n = t("./node_modules/react/index.js"),
 				a = t.n(n),
-				c = t("./src/lib/classNames/index.ts"),
-				i = t("./src/reddit/icons/svgs/ProfileSlashed/index.m.less"),
-				r = t.n(i);
+				i = t("./src/lib/classNames/index.ts"),
+				c = t("./src/reddit/icons/svgs/ProfileSlashed/index.m.less"),
+				r = t.n(c);
 			s.a = e => a.a.createElement("svg", {
-				className: Object(c.a)(r.a.icon, e.className),
+				className: Object(i.a)(r.a.icon, e.className),
 				xmlns: "http://www.w3.org/2000/svg",
 				viewBox: "0 0 40 40"
 			}, a.a.createElement("g", {
@@ -2467,15 +2563,15 @@
 		"./src/reddit/icons/svgs/PublicAccessNetwork/index.tsx": function(e, s, t) {
 			"use strict";
 			t.d(s, "a", (function() {
-				return c
-			})), t.d(s, "b", (function() {
 				return i
+			})), t.d(s, "b", (function() {
+				return c
 			})), t.d(s, "c", (function() {
 				return r
 			}));
 			var n = t("./node_modules/react/index.js"),
 				a = t.n(n);
-			const c = e => a.a.createElement("svg", {
+			const i = e => a.a.createElement("svg", {
 					className: e.className,
 					width: "24",
 					height: "24",
@@ -2488,7 +2584,7 @@
 					d: "M5.00001 13.41C4.91441 13.4079 4.82982 13.391 4.75001 13.36C4.36493 13.225 3.99331 13.0542 3.64001 12.85L1.53001 13.37C1.4053 13.4019 1.27448 13.4012 1.15014 13.3679C1.02579 13.3347 0.912098 13.27 0.820006 13.18C0.729222 13.0864 0.664059 12.971 0.630783 12.8449C0.597508 12.7188 0.59724 12.5862 0.630006 12.46L1.15001 10.36C0.684603 9.54657 0.393688 8.64513 0.295784 7.71309C0.197881 6.78105 0.295135 5.83883 0.581353 4.94644C0.867572 4.05404 1.33648 3.23103 1.95823 2.5298C2.57997 1.82857 3.34092 1.2645 4.19263 0.873491C5.04433 0.482487 5.96813 0.273123 6.90519 0.258731C7.84225 0.244338 8.77204 0.425233 9.63535 0.789896C10.4987 1.15456 11.2766 1.695 11.9196 2.3768C12.5626 3.05861 13.0565 3.86683 13.37 4.75001C13.4032 4.83336 13.4213 4.92181 13.4236 5.01127C13.0459 4.9912 12.6656 4.99785 12.2855 5.03189C10.5542 5.18694 8.92053 5.90165 7.6316 7.06789C6.34267 8.23414 5.46866 9.78846 5.1418 11.4957C5.02032 12.1302 4.97688 12.773 5.00962 13.4104L5.00001 13.41ZM13 19.75C11.8204 19.7506 10.6615 19.4401 9.64004 18.85L7.53004 19.37C7.40533 19.4019 7.27451 19.4012 7.15017 19.3679C7.02582 19.3347 6.91213 19.2699 6.82004 19.18C6.72925 19.0864 6.66409 18.971 6.63081 18.8449C6.59754 18.7188 6.59727 18.5862 6.63004 18.46L7.15004 16.36C6.41066 15.0718 6.11686 13.5756 6.31416 12.1034C6.51145 10.6312 7.18884 9.26522 8.24132 8.21711C9.29381 7.169 10.6626 6.49731 12.1356 6.30615C13.6086 6.11498 15.1035 6.41502 16.3887 7.15975C17.6739 7.90448 18.6775 9.05233 19.244 10.4254C19.8106 11.7984 19.9084 13.32 19.5224 14.7543C19.1363 16.1886 18.288 17.4556 17.1088 18.3588C15.9296 19.2619 14.4854 19.751 13 19.75Z",
 					fill: "inherit"
 				})),
-				i = e => a.a.createElement("svg", {
+				c = e => a.a.createElement("svg", {
 					width: "24",
 					height: "24",
 					viewBox: "0 0 24 24",
@@ -2614,8 +2710,8 @@
 			var n = t("./node_modules/react/index.js"),
 				a = t.n(n);
 
-			function c() {
-				return (c = Object.assign || function(e) {
+			function i() {
+				return (i = Object.assign || function(e) {
 					for (var s = 1; s < arguments.length; s++) {
 						var t = arguments[s];
 						for (var n in t) Object.prototype.hasOwnProperty.call(t, n) && (e[n] = t[n])
@@ -2623,7 +2719,7 @@
 					return e
 				}).apply(this, arguments)
 			}
-			s.a = e => a.a.createElement("svg", c({
+			s.a = e => a.a.createElement("svg", i({
 				viewBox: "0 0 250 250",
 				xmlns: "http://www.w3.org/2000/svg"
 			}, e), a.a.createElement("g", {
@@ -2637,8 +2733,8 @@
 			var n = t("./node_modules/react/index.js"),
 				a = t.n(n);
 
-			function c() {
-				return (c = Object.assign || function(e) {
+			function i() {
+				return (i = Object.assign || function(e) {
 					for (var s = 1; s < arguments.length; s++) {
 						var t = arguments[s];
 						for (var n in t) Object.prototype.hasOwnProperty.call(t, n) && (e[n] = t[n])
@@ -2646,7 +2742,7 @@
 					return e
 				}).apply(this, arguments)
 			}
-			s.a = e => a.a.createElement("svg", c({}, e, {
+			s.a = e => a.a.createElement("svg", i({}, e, {
 				viewBox: "13 12 23 23",
 				xmlns: "http://www.w3.org/2000/svg"
 			}), a.a.createElement("g", null, a.a.createElement("path", {
@@ -2659,8 +2755,8 @@
 			var n = t("./node_modules/react/index.js"),
 				a = t.n(n);
 
-			function c() {
-				return (c = Object.assign || function(e) {
+			function i() {
+				return (i = Object.assign || function(e) {
 					for (var s = 1; s < arguments.length; s++) {
 						var t = arguments[s];
 						for (var n in t) Object.prototype.hasOwnProperty.call(t, n) && (e[n] = t[n])
@@ -2668,7 +2764,7 @@
 					return e
 				}).apply(this, arguments)
 			}
-			s.a = e => a.a.createElement("svg", c({
+			s.a = e => a.a.createElement("svg", i({
 				xmlns: "http://www.w3.org/2000/svg",
 				viewBox: "0 0 16 16"
 			}, e), a.a.createElement("path", {
@@ -3023,12 +3119,12 @@
 		"./src/reddit/icons/svgs/Sparkle/index.tsx": function(e, s, t) {
 			"use strict";
 			t.d(s, "a", (function() {
-				return c
+				return i
 			}));
 			var n = t("./node_modules/react/index.js"),
 				a = t.n(n);
 
-			function c(e) {
+			function i(e) {
 				return a.a.createElement("svg", {
 					className: e.className,
 					style: e.style,
@@ -3070,12 +3166,12 @@
 		"./src/reddit/icons/svgs/Star/index.tsx": function(e, s, t) {
 			"use strict";
 			t.d(s, "a", (function() {
-				return c
+				return i
 			}));
 			var n = t("./node_modules/react/index.js"),
 				a = t.n(n);
 
-			function c(e) {
+			function i(e) {
 				return a.a.createElement("svg", {
 					className: e.className,
 					style: e.style,
@@ -3092,12 +3188,12 @@
 		"./src/reddit/icons/svgs/Star2/index.tsx": function(e, s, t) {
 			"use strict";
 			t.d(s, "a", (function() {
-				return c
+				return i
 			}));
 			var n = t("./node_modules/react/index.js"),
 				a = t.n(n);
 
-			function c(e) {
+			function i(e) {
 				return a.a.createElement("svg", {
 					className: e.className,
 					style: e.style,
@@ -3133,12 +3229,12 @@
 		"./src/reddit/icons/svgs/Sunburst/index.tsx": function(e, s, t) {
 			"use strict";
 			t.d(s, "a", (function() {
-				return c
+				return i
 			}));
 			var n = t("./node_modules/react/index.js"),
 				a = t.n(n);
 
-			function c(e) {
+			function i(e) {
 				return a.a.createElement("svg", {
 					className: e.className,
 					style: e.style,
@@ -3175,11 +3271,11 @@
 			"use strict";
 			var n = t("./node_modules/react/index.js"),
 				a = t.n(n),
-				c = t("./src/lib/classNames/index.ts"),
-				i = t("./src/reddit/icons/svgs/TextPost/index.m.less"),
-				r = t.n(i);
+				i = t("./src/lib/classNames/index.ts"),
+				c = t("./src/reddit/icons/svgs/TextPost/index.m.less"),
+				r = t.n(c);
 			s.a = e => a.a.createElement("svg", {
-				className: Object(c.a)(r.a.icon, e.className),
+				className: Object(i.a)(r.a.icon, e.className),
 				viewBox: "0 0 20 20",
 				xmlns: "http://www.w3.org/2000/svg"
 			}, a.a.createElement("path", {
@@ -3197,11 +3293,11 @@
 			"use strict";
 			var n = t("./node_modules/react/index.js"),
 				a = t.n(n),
-				c = t("./src/lib/classNames/index.ts"),
-				i = t("./src/reddit/icons/svgs/ThumbnailSelect/index.m.less"),
-				r = t.n(i);
+				i = t("./src/lib/classNames/index.ts"),
+				c = t("./src/reddit/icons/svgs/ThumbnailSelect/index.m.less"),
+				r = t.n(c);
 			s.a = e => a.a.createElement("svg", {
-				className: Object(c.a)(r.a.icon, e.className),
+				className: Object(i.a)(r.a.icon, e.className),
 				viewBox: "0 0 20 20",
 				xmlns: "http://www.w3.org/2000/svg"
 			}, a.a.createElement("g", {
@@ -3325,11 +3421,11 @@
 			}));
 			var n = t("./node_modules/react/index.js"),
 				a = t.n(n),
-				c = t("./src/lib/classNames/index.ts"),
-				i = t("./src/reddit/icons/svgs/Trash2/index.m.less"),
-				r = t.n(i);
+				i = t("./src/lib/classNames/index.ts"),
+				c = t("./src/reddit/icons/svgs/Trash2/index.m.less"),
+				r = t.n(c);
 			const l = e => a.a.createElement("svg", {
-				className: Object(c.a)(r.a.icon, e.className),
+				className: Object(i.a)(r.a.icon, e.className),
 				viewBox: "0 0 20 20",
 				xmlns: "http://www.w3.org/2000/svg",
 				onClick: e.onClick
@@ -3373,12 +3469,12 @@
 		"./src/reddit/icons/svgs/Twinkle/index.tsx": function(e, s, t) {
 			"use strict";
 			t.d(s, "a", (function() {
-				return c
+				return i
 			}));
 			var n = t("./node_modules/react/index.js"),
 				a = t.n(n);
 
-			function c(e) {
+			function i(e) {
 				return a.a.createElement("svg", {
 					className: e.className,
 					style: e.style,
@@ -3392,12 +3488,12 @@
 		"./src/reddit/icons/svgs/Twitter/index.tsx": function(e, s, t) {
 			"use strict";
 			t.d(s, "a", (function() {
-				return c
+				return i
 			}));
 			var n = t("./node_modules/react/index.js"),
 				a = t.n(n);
 
-			function c(e) {
+			function i(e) {
 				return a.a.createElement("svg", {
 					className: e.className,
 					viewBox: "0 0 400 400",
@@ -3430,11 +3526,11 @@
 			"use strict";
 			var n = t("./node_modules/react/index.js"),
 				a = t.n(n),
-				c = t("./src/lib/classNames/index.ts"),
-				i = t("./src/reddit/icons/svgs/Undo/index.m.less"),
-				r = t.n(i);
+				i = t("./src/lib/classNames/index.ts"),
+				c = t("./src/reddit/icons/svgs/Undo/index.m.less"),
+				r = t.n(c);
 			s.a = e => a.a.createElement("svg", {
-				className: Object(c.a)(r.a.undo, e.className),
+				className: Object(i.a)(r.a.undo, e.className),
 				viewBox: "0 0 20 20",
 				xmlns: "http://www.w3.org/2000/svg"
 			}, a.a.createElement("g", null, a.a.createElement("path", {
@@ -3459,8 +3555,8 @@
 			var n = t("./node_modules/react/index.js"),
 				a = t.n(n);
 
-			function c() {
-				return (c = Object.assign || function(e) {
+			function i() {
+				return (i = Object.assign || function(e) {
 					for (var s = 1; s < arguments.length; s++) {
 						var t = arguments[s];
 						for (var n in t) Object.prototype.hasOwnProperty.call(t, n) && (e[n] = t[n])
@@ -3468,7 +3564,7 @@
 					return e
 				}).apply(this, arguments)
 			}
-			s.a = e => a.a.createElement("svg", c({
+			s.a = e => a.a.createElement("svg", i({
 				xmlns: "http://www.w3.org/2000/svg",
 				viewBox: "0 0 24 24"
 			}, e), a.a.createElement("path", {
@@ -3514,11 +3610,11 @@
 			"use strict";
 			var n = t("./node_modules/react/index.js"),
 				a = t.n(n),
-				c = t("./src/lib/classNames/index.ts"),
-				i = t("./src/reddit/icons/svgs/VideoApplyNow/index.m.less"),
-				r = t.n(i);
+				i = t("./src/lib/classNames/index.ts"),
+				c = t("./src/reddit/icons/svgs/VideoApplyNow/index.m.less"),
+				r = t.n(c);
 			s.a = e => a.a.createElement("svg", {
-				className: Object(c.a)(r.a.icon, e.className),
+				className: Object(i.a)(r.a.icon, e.className),
 				viewBox: "0 0 50 50",
 				xmlns: "http://www.w3.org/2000/svg"
 			}, a.a.createElement("g", {
@@ -3575,11 +3671,11 @@
 			"use strict";
 			var n = t("./node_modules/react/index.js"),
 				a = t.n(n),
-				c = t("./src/lib/classNames/index.ts"),
-				i = t("./src/reddit/icons/svgs/VideoContactUs/index.m.less"),
-				r = t.n(i);
+				i = t("./src/lib/classNames/index.ts"),
+				c = t("./src/reddit/icons/svgs/VideoContactUs/index.m.less"),
+				r = t.n(c);
 			s.a = e => a.a.createElement("svg", {
-				className: Object(c.a)(r.a.icon, e.className),
+				className: Object(i.a)(r.a.icon, e.className),
 				viewBox: "0 0 50 50",
 				xmlns: "http://www.w3.org/2000/svg"
 			}, a.a.createElement("g", {
@@ -3621,11 +3717,11 @@
 			"use strict";
 			var n = t("./node_modules/react/index.js"),
 				a = t.n(n),
-				c = t("./src/lib/classNames/index.ts"),
-				i = t("./src/reddit/icons/svgs/VideoGetAQuote/index.m.less"),
-				r = t.n(i);
+				i = t("./src/lib/classNames/index.ts"),
+				c = t("./src/reddit/icons/svgs/VideoGetAQuote/index.m.less"),
+				r = t.n(c);
 			s.a = e => a.a.createElement("svg", {
-				className: Object(c.a)(r.a.icon, e.className),
+				className: Object(i.a)(r.a.icon, e.className),
 				viewBox: "0 0 50 50",
 				xmlns: "http://www.w3.org/2000/svg"
 			}, a.a.createElement("g", {
@@ -3651,11 +3747,11 @@
 			"use strict";
 			var n = t("./node_modules/react/index.js"),
 				a = t.n(n),
-				c = t("./src/lib/classNames/index.ts"),
-				i = t("./src/reddit/icons/svgs/VideoGetShowtimes/index.m.less"),
-				r = t.n(i);
+				i = t("./src/lib/classNames/index.ts"),
+				c = t("./src/reddit/icons/svgs/VideoGetShowtimes/index.m.less"),
+				r = t.n(c);
 			s.a = e => a.a.createElement("svg", {
-				className: Object(c.a)(r.a.icon, e.className),
+				className: Object(i.a)(r.a.icon, e.className),
 				viewBox: "0 0 50 50",
 				xmlns: "http://www.w3.org/2000/svg"
 			}, a.a.createElement("g", {
@@ -3681,11 +3777,11 @@
 			"use strict";
 			var n = t("./node_modules/react/index.js"),
 				a = t.n(n),
-				c = t("./src/lib/classNames/index.ts"),
-				i = t("./src/reddit/icons/svgs/VideoInstall/index.m.less"),
-				r = t.n(i);
+				i = t("./src/lib/classNames/index.ts"),
+				c = t("./src/reddit/icons/svgs/VideoInstall/index.m.less"),
+				r = t.n(c);
 			s.a = e => a.a.createElement("svg", {
-				className: Object(c.a)(r.a.icon, e.className),
+				className: Object(i.a)(r.a.icon, e.className),
 				viewBox: "0 0 50 50",
 				xmlns: "http://www.w3.org/2000/svg"
 			}, a.a.createElement("g", {
@@ -3711,11 +3807,11 @@
 			"use strict";
 			var n = t("./node_modules/react/index.js"),
 				a = t.n(n),
-				c = t("./src/lib/classNames/index.ts"),
-				i = t("./src/reddit/icons/svgs/VideoLearnMore/index.m.less"),
-				r = t.n(i);
+				i = t("./src/lib/classNames/index.ts"),
+				c = t("./src/reddit/icons/svgs/VideoLearnMore/index.m.less"),
+				r = t.n(c);
 			s.a = e => a.a.createElement("svg", {
-				className: Object(c.a)(r.a.icon, e.className),
+				className: Object(i.a)(r.a.icon, e.className),
 				viewBox: "0 0 50 50",
 				xmlns: "http://www.w3.org/2000/svg"
 			}, a.a.createElement("g", {
@@ -3757,11 +3853,11 @@
 			"use strict";
 			var n = t("./node_modules/react/index.js"),
 				a = t.n(n),
-				c = t("./src/lib/classNames/index.ts"),
-				i = t("./src/reddit/icons/svgs/VideoNewPlayButton/index.m.less"),
-				r = t.n(i);
+				i = t("./src/lib/classNames/index.ts"),
+				c = t("./src/reddit/icons/svgs/VideoNewPlayButton/index.m.less"),
+				r = t.n(c);
 			s.a = e => a.a.createElement("svg", {
-				className: Object(c.a)(r.a.icon, e.className),
+				className: Object(i.a)(r.a.icon, e.className),
 				viewBox: "0 0 50 50",
 				xmlns: "http://www.w3.org/2000/svg"
 			}, a.a.createElement("g", {
@@ -3826,11 +3922,11 @@
 			"use strict";
 			var n = t("./node_modules/react/index.js"),
 				a = t.n(n),
-				c = t("./src/lib/classNames/index.ts"),
-				i = t("./src/reddit/icons/svgs/VideoPlayNow/index.m.less"),
-				r = t.n(i);
+				i = t("./src/lib/classNames/index.ts"),
+				c = t("./src/reddit/icons/svgs/VideoPlayNow/index.m.less"),
+				r = t.n(c);
 			s.a = e => a.a.createElement("svg", {
-				className: Object(c.a)(r.a.icon, e.className),
+				className: Object(i.a)(r.a.icon, e.className),
 				viewBox: "0 0 50 50",
 				xmlns: "http://www.w3.org/2000/svg"
 			}, a.a.createElement("g", {
@@ -3856,11 +3952,11 @@
 			"use strict";
 			var n = t("./node_modules/react/index.js"),
 				a = t.n(n),
-				c = t("./src/lib/classNames/index.ts"),
-				i = t("./src/reddit/icons/svgs/VideoReplay/index.m.less"),
-				r = t.n(i);
+				i = t("./src/lib/classNames/index.ts"),
+				c = t("./src/reddit/icons/svgs/VideoReplay/index.m.less"),
+				r = t.n(c);
 			s.a = e => a.a.createElement("svg", {
-				className: Object(c.a)(r.a.icon, e.className),
+				className: Object(i.a)(r.a.icon, e.className),
 				viewBox: "0 0 50 50",
 				xmlns: "http://www.w3.org/2000/svg"
 			}, a.a.createElement("g", {
@@ -3886,11 +3982,11 @@
 			"use strict";
 			var n = t("./node_modules/react/index.js"),
 				a = t.n(n),
-				c = t("./src/lib/classNames/index.ts"),
-				i = t("./src/reddit/icons/svgs/VideoSeeMenu/index.m.less"),
-				r = t.n(i);
+				i = t("./src/lib/classNames/index.ts"),
+				c = t("./src/reddit/icons/svgs/VideoSeeMenu/index.m.less"),
+				r = t.n(c);
 			s.a = e => a.a.createElement("svg", {
-				className: Object(c.a)(r.a.icon, e.className),
+				className: Object(i.a)(r.a.icon, e.className),
 				viewBox: "0 0 50 50",
 				xmlns: "http://www.w3.org/2000/svg"
 			}, a.a.createElement("g", {
@@ -3929,11 +4025,11 @@
 			"use strict";
 			var n = t("./node_modules/react/index.js"),
 				a = t.n(n),
-				c = t("./src/lib/classNames/index.ts"),
-				i = t("./src/reddit/icons/svgs/VideoShare/index.m.less"),
-				r = t.n(i);
+				i = t("./src/lib/classNames/index.ts"),
+				c = t("./src/reddit/icons/svgs/VideoShare/index.m.less"),
+				r = t.n(c);
 			s.a = e => a.a.createElement("svg", {
-				className: Object(c.a)(r.a.icon, e.className),
+				className: Object(i.a)(r.a.icon, e.className),
 				viewBox: "0 0 64 64",
 				xmlns: "http://www.w3.org/2000/svg"
 			}, a.a.createElement("g", null, a.a.createElement("circle", {
@@ -3957,11 +4053,11 @@
 			"use strict";
 			var n = t("./node_modules/react/index.js"),
 				a = t.n(n),
-				c = t("./src/lib/classNames/index.ts"),
-				i = t("./src/reddit/icons/svgs/VideoShopNow/index.m.less"),
-				r = t.n(i);
+				i = t("./src/lib/classNames/index.ts"),
+				c = t("./src/reddit/icons/svgs/VideoShopNow/index.m.less"),
+				r = t.n(c);
 			s.a = e => a.a.createElement("svg", {
-				className: Object(c.a)(r.a.icon, e.className),
+				className: Object(i.a)(r.a.icon, e.className),
 				viewBox: "0 0 50 50",
 				xmlns: "http://www.w3.org/2000/svg"
 			}, a.a.createElement("g", {
@@ -3987,11 +4083,11 @@
 			"use strict";
 			var n = t("./node_modules/react/index.js"),
 				a = t.n(n),
-				c = t("./src/lib/classNames/index.ts"),
-				i = t("./src/reddit/icons/svgs/VideoSignUp/index.m.less"),
-				r = t.n(i);
+				i = t("./src/lib/classNames/index.ts"),
+				c = t("./src/reddit/icons/svgs/VideoSignUp/index.m.less"),
+				r = t.n(c);
 			s.a = e => a.a.createElement("svg", {
-				className: Object(c.a)(r.a.icon, e.className),
+				className: Object(i.a)(r.a.icon, e.className),
 				viewBox: "0 0 50 50",
 				xmlns: "http://www.w3.org/2000/svg"
 			}, a.a.createElement("g", {
@@ -4036,11 +4132,11 @@
 			"use strict";
 			var n = t("./node_modules/react/index.js"),
 				a = t.n(n),
-				c = t("./src/lib/classNames/index.ts"),
-				i = t("./src/reddit/icons/svgs/VideoViewMore/index.m.less"),
-				r = t.n(i);
+				i = t("./src/lib/classNames/index.ts"),
+				c = t("./src/reddit/icons/svgs/VideoViewMore/index.m.less"),
+				r = t.n(c);
 			s.a = e => a.a.createElement("svg", {
-				className: Object(c.a)(r.a.icon, e.className),
+				className: Object(i.a)(r.a.icon, e.className),
 				viewBox: "0 0 50 50",
 				xmlns: "http://www.w3.org/2000/svg"
 			}, a.a.createElement("g", {
@@ -4085,11 +4181,11 @@
 			"use strict";
 			var n = t("./node_modules/react/index.js"),
 				a = t.n(n),
-				c = t("./src/lib/classNames/index.ts"),
-				i = t("./src/reddit/icons/svgs/VideoWatchNow/index.m.less"),
-				r = t.n(i);
+				i = t("./src/lib/classNames/index.ts"),
+				c = t("./src/reddit/icons/svgs/VideoWatchNow/index.m.less"),
+				r = t.n(c);
 			s.a = e => a.a.createElement("svg", {
-				className: Object(c.a)(r.a.icon, e.className),
+				className: Object(i.a)(r.a.icon, e.className),
 				viewBox: "0 0 50 50",
 				xmlns: "http://www.w3.org/2000/svg"
 			}, a.a.createElement("g", {
@@ -4115,11 +4211,11 @@
 			"use strict";
 			var n = t("./node_modules/react/index.js"),
 				a = t.n(n),
-				c = t("./src/lib/classNames/index.ts"),
-				i = t("./src/reddit/icons/svgs/Warning/index.m.less"),
-				r = t.n(i);
+				i = t("./src/lib/classNames/index.ts"),
+				c = t("./src/reddit/icons/svgs/Warning/index.m.less"),
+				r = t.n(c);
 			s.a = e => a.a.createElement("svg", {
-				className: Object(c.a)(r.a.warning, e.className),
+				className: Object(i.a)(r.a.warning, e.className),
 				viewBox: "0 0 18 18",
 				xmlns: "http://www.w3.org/2000/svg"
 			}, a.a.createElement("circle", {
@@ -4150,9 +4246,9 @@
 		"./src/reddit/icons/svgs/svgIcons.tsx": function(e, s, t) {
 			"use strict";
 			t.d(s, "a", (function() {
-				return c.a
-			})), t.d(s, "b", (function() {
 				return i.a
+			})), t.d(s, "b", (function() {
+				return c.a
 			})), t.d(s, "c", (function() {
 				return r.a
 			})), t.d(s, "d", (function() {
@@ -4161,13 +4257,13 @@
 			var n = t("./node_modules/react/index.js"),
 				a = t.n(n);
 			t("./src/reddit/icons/svgs/AddCollection/index.tsx"), t("./src/reddit/icons/svgs/AddSquare/index.tsx"), t("./src/reddit/icons/svgs/Admin/index.tsx"), t("./src/reddit/icons/svgs/Advance/index.tsx"), t("./src/reddit/icons/svgs/All/index.tsx"), t("./src/reddit/icons/svgs/AppleLogo/index.tsx"), t("./src/reddit/icons/svgs/Approve/index.tsx"), t("./src/reddit/icons/svgs/ArrowHeadsRight/index.tsx");
-			var c = t("./src/reddit/icons/svgs/ArrowRight/index.tsx");
+			var i = t("./src/reddit/icons/svgs/ArrowRight/index.tsx");
 			t("./src/reddit/icons/svgs/ArrowRightThin/index.tsx");
 			t("./src/reddit/icons/svgs/Bling/index.tsx");
 			t("./src/reddit/icons/svgs/Center/index.tsx");
-			t("./src/reddit/icons/svgs/ChatBubbles/index.tsx"), t("./src/reddit/icons/svgs/Checkbox/index.tsx");
+			t("./src/reddit/icons/svgs/ChatBotAvatar/index.tsx"), t("./src/reddit/icons/svgs/ChatBubbles/index.tsx"), t("./src/reddit/icons/svgs/Checkbox/index.tsx");
 			t("./src/reddit/icons/svgs/CheckboxSelected/index.tsx"), t("./src/reddit/icons/svgs/Checkmark/index.tsx"), t("./src/reddit/icons/svgs/CheckmarkFitted/index.tsx"), t("./src/reddit/icons/svgs/Chevron/index.tsx");
-			var i = t("./src/reddit/icons/svgs/ChevronDown/index.tsx"),
+			var c = t("./src/reddit/icons/svgs/ChevronDown/index.tsx"),
 				r = t("./src/reddit/icons/svgs/ChevronUp/index.tsx");
 			t("./src/reddit/icons/svgs/Circle/index.tsx"), t("./src/reddit/icons/svgs/CircleCheck/index.tsx"), t("./src/reddit/icons/svgs/CircleCheckLight/index.tsx"), t("./src/reddit/icons/svgs/CircledPlanet/index.tsx"), t("./src/reddit/icons/svgs/CirclePost/index.tsx"), t("./src/reddit/icons/svgs/ClearFilled/index.tsx"), t("./src/reddit/icons/svgs/Clock/index.tsx"), t("./src/reddit/icons/svgs/ClockFilled/index.tsx"), t("./src/reddit/icons/svgs/Close/index.tsx"), t("./src/reddit/icons/svgs/CloseV2/index.tsx"), t("./src/reddit/icons/svgs/Coin/index.tsx"), t("./src/reddit/icons/svgs/CoinV2/index.tsx"), t("./src/reddit/icons/svgs/Collection/index.tsx"), t("./src/reddit/icons/svgs/Comments/index.tsx"), t("./src/reddit/icons/svgs/Controller/index.tsx");
 			t("./src/reddit/icons/svgs/Crosspost/index.tsx"), t("./src/reddit/icons/svgs/Crown/index.tsx");
@@ -4236,4 +4332,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/2.e02a2dbbde83bfbf162d.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/2.cb8b2790264f1f57fe59.js.map

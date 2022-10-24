@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/InvitedChannelsPanel.c63d44a1cd567f6ec4da.js
-// Retrieved at 10/19/2022, 2:10:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/InvitedChannelsPanel.34b246ab97cf854ea8e2.js
+// Retrieved at 10/24/2022, 9:50:07 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["InvitedChannelsPanel"], {
 		"./src/chat/components/Sidebar/InvitedChannelsPanel/index.m.less": function(e, t, n) {
@@ -18,8 +18,8 @@
 			var c = n("./node_modules/fbt/lib/FbtPublic.js"),
 				s = n("./node_modules/lodash/values.js"),
 				a = n.n(s),
-				o = n("./node_modules/react/index.js"),
-				l = n.n(o),
+				l = n("./node_modules/react/index.js"),
+				o = n.n(l),
 				r = n("./node_modules/react-redux/es/index.js"),
 				d = n("./src/chat/actions/channel.ts"),
 				i = n("./src/chat/actions/sidebar.ts"),
@@ -36,35 +36,35 @@
 				v = n.n(O);
 			t.default = () => {
 				const e = Object(r.d)();
-				Object(o.useEffect)(() => {
-					e(Object(h.hb)())
+				Object(l.useEffect)(() => {
+					e(Object(h.lb)())
 				}, [e]);
 				const t = Object(r.e)(j.d),
 					n = Object(r.e)(E.f),
 					s = Object(r.e)(j.I),
 					O = Object(r.e)(j.b);
-				return l.a.createElement(l.a.Fragment, null, l.a.createElement("button", {
+				return o.a.createElement(o.a.Fragment, null, o.a.createElement("button", {
 					className: v.a.Header,
 					onClick: () => {
 						e(Object(i.e)(p.a.CHANNELS))
 					}
-				}, l.a.createElement(u.a, {
+				}, o.a.createElement(u.a, {
 					className: v.a.BackIcon,
 					isFilled: !0
 				}), c.fbt._("Invites", null, {
 					hk: "2zUosI"
-				})), l.a.createElement(b.a, {
+				})), o.a.createElement(b.a, {
 					loadMoreRows: () => {
 						e(Object(d.E)())
 					},
 					isLoadMoreRowsComplete: () => !s || !!O
-				}, l.a.createElement("div", {
+				}, o.a.createElement("div", {
 					className: v.a.Body
-				}, n && l.a.createElement(x.a, null), l.a.createElement(m.a, {
+				}, n && o.a.createElement(x.a, null), o.a.createElement(m.a, {
 					channels: a()(t)
-				}), O && l.a.createElement(_.d, null))))
+				}), O && o.a.createElement(_.d, null))))
 			}
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/InvitedChannelsPanel.c63d44a1cd567f6ec4da.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/InvitedChannelsPanel.34b246ab97cf854ea8e2.js.map

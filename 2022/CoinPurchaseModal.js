@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CoinPurchaseModal.178a9392a9f9cd8d42a6.js
-// Retrieved at 10/19/2022, 12:30:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CoinPurchaseModal.64848c75e3a0ea9878a5.js
+// Retrieved at 10/24/2022, 9:50:07 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CoinPurchaseModal", "gildActions"], {
 		"./src/reddit/actions/economics/powerups/helpers.ts": function(e, t, a) {
@@ -267,7 +267,7 @@
 						postId: a
 					}) : Object(k.b)(e, {
 						commentId: a
-					}), s = Object(N.k)(e), n = e.gild, {
+					}), s = Object(N.l)(e), n = e.gild, {
 						isAnonymous: c
 					} = n, o = !c && s && (s.username || s.displayText) ? s.username || s.displayText : void 0, d = r ? r.author : void 0, i = Object(M.O)(e, {
 						thingId: a
@@ -286,7 +286,7 @@
 						} = e,
 						g = Object(v.a)(s, m),
 						h = e.awardKarmaReceived,
-						j = Object(N.k)(s),
+						j = Object(N.l)(s),
 						k = Object(x.b)(s) || Object(K.d)(K.a.GildingFlow, !1);
 					if (Object(x.g)(s)) {
 						const e = "success.gild",
@@ -1587,13 +1587,13 @@
 						const t = Object(E.a)(e);
 						return null === t ? void 0 : t
 					},
-					coinBalance: I.e,
+					coinBalance: I.f,
 					coinPackages: v.d,
 					correlationId: e => Object(x.r)(e) || Object(f.d)(f.a.GoldPayment, !1),
 					dealCoinPackages: v.f,
 					gildThingId: x.s,
 					isIframed: C.g,
-					nightmode: I.db,
+					nightmode: I.eb,
 					savedCardsPending: x.w,
 					selectedAward: k.b,
 					selectedPayment: x.c,
@@ -1606,7 +1606,7 @@
 					purchasePackageId: x.t,
 					recommendedPackages: v.r,
 					userName: e => {
-						const t = Object(I.k)(e);
+						const t = Object(I.l)(e);
 						return `u/${Object(y.e)(t)}`
 					}
 				}),
@@ -1949,4 +1949,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CoinPurchaseModal.178a9392a9f9cd8d42a6.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CoinPurchaseModal.64848c75e3a0ea9878a5.js.map

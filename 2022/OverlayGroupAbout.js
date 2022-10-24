@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/OverlayGroupAbout.c343fb00146fc65b448c.js
-// Retrieved at 10/19/2022, 2:10:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/OverlayGroupAbout.dbbe80d7b6b92e4479bf.js
+// Retrieved at 10/24/2022, 9:50:07 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["OverlayGroupAbout"], {
 		"./src/chat/components/OverlayGroupAbout/index.m.less": function(e, t, n) {
@@ -81,7 +81,7 @@
 							f(n.name)
 						},
 						M = () => {
-							y && (v(Object(r.j)(y)), v(Object(i.W)()))
+							y && (v(Object(r.j)(y)), v(Object(i.ab)()))
 						},
 						J = () => {
 							v(Object(r.c)())
@@ -227,4 +227,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/OverlayGroupAbout.c343fb00146fc65b448c.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/OverlayGroupAbout.dbbe80d7b6b92e4479bf.js.map

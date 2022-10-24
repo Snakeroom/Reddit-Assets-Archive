@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit.30b556a982d684edf6f2.js
-// Retrieved at 10/21/2022, 4:20:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit.593e0c90a20459d52422.js
+// Retrieved at 10/24/2022, 9:50:07 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~ModListing~Reddit"], {
 		"./src/lib/CSSVariableProvider/withTheme.tsx": function(e, t, n) {
@@ -790,7 +790,7 @@
 				O = () => async (e, t) => {
 					const n = t(),
 						r = Object(s.g)(n, {});
-					if (!(Object(u.P)(n) || Object(u.Q)(n)) || !r) return;
+					if (!(Object(u.Q)(n) || Object(u.R)(n)) || !r) return;
 					const o = Object(d.i)(n);
 					m(o, r), e(f({
 						hasUnreadMessages: !!o
@@ -1082,7 +1082,7 @@
 				E = Object(b.u)();
 			t.b = E(e => {
 				var t;
-				const n = Object(c.e)(O.db);
+				const n = Object(c.e)(O.eb);
 				let i, d, u;
 				if (e.subredditOrProfile) {
 					const {
@@ -1342,10 +1342,10 @@
 			}
 			const h = () => {},
 				E = Object(c.c)({
-					currentUser: j.k,
-					isNightMode: j.db,
-					shouldHideNSFW: j.F,
-					user: j.Ab
+					currentUser: j.l,
+					isNightMode: j.eb,
+					shouldHideNSFW: j.G,
+					user: j.Bb
 				}),
 				v = Object(s.b)(E);
 			t.a = v(e => {
@@ -1542,7 +1542,7 @@
 					return e
 				}).apply(this, arguments)
 			}
-			const E = Object(u.a)(S.a, S.k, (e, t) => {
+			const E = Object(u.a)(S.b, S.l, (e, t) => {
 					let {
 						isSponsored: n,
 						postId: r
@@ -3437,7 +3437,7 @@
 					if (!Object(u.n)(e, {
 							subredditId: t
 						})) return;
-					if (Object(f.N)(e)) return O(e);
+					if (Object(f.O)(e)) return O(e);
 					const n = Object(b.M)(e, {
 						identifier: {
 							id: t,
@@ -3449,7 +3449,7 @@
 					return r ? r * o.Xb < 1639443600180 ? void 0 : O(e) : void 0
 				},
 				O = Object(r.a)(e => Object(c.c)(e, {
-					experimentName: i.Me,
+					experimentName: i.Ne,
 					experimentEligibilitySelector: a.e
 				}), d.a)
 		},
@@ -3556,4 +3556,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit.30b556a982d684edf6f2.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit.593e0c90a20459d52422.js.map

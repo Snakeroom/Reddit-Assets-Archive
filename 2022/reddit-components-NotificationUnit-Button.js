@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-NotificationUnit-Button.c44945a6f01a3ea2ed5d.js
-// Retrieved at 10/21/2022, 4:20:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-NotificationUnit-Button.36ad0ae73487142e44a7.js
+// Retrieved at 10/24/2022, 9:50:07 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-NotificationUnit-Button"], {
 		"./node_modules/lodash/map.js": function(t, e, o) {
@@ -240,7 +240,7 @@
 			const at = Object(ct.a)(t => Object(it.c)(t, {
 				experimentEligibilitySelector: it.a,
 				experimentName: st.Ib
-			}), t => t === st.Pd);
+			}), t => t === st.Qd);
 			var dt = o("./src/reddit/selectors/experiments/contributeBeforeSignUp.ts"),
 				lt = o("./src/reddit/selectors/platform.ts"),
 				mt = o("./src/reddit/selectors/posts.ts"),
@@ -256,7 +256,7 @@
 					return async (t, n) => {
 						const r = n();
 						if (!!r.features.comments.drafts[o])
-							if (Object(ut.S)(r) && e) {
+							if (Object(ut.T)(r) && e) {
 								const n = ft({
 									hasFocus: e,
 									draftKey: o
@@ -336,12 +336,12 @@
 						const v = g(),
 							_ = Object(et.d)(v, {
 								postId: s
-							}) && Object(rt.h)(v),
+							}) && Object(rt.i)(v),
 							k = _ ? Object(G.a)() : a,
 							S = Object(nt.e)(v, {
 								commentId: k
 							}),
-							w = Object(ut.k)(v);
+							w = Object(ut.l)(v);
 						if (!w) return;
 						if (S && !_) return;
 						e || t(Ot({
@@ -470,9 +470,9 @@
 						commentId: m
 					}), x = j && Object(et.d)(g, {
 						postId: j.postId
-					}) && Object(rt.h)(g), y = x ? Object(G.a)() : f, C = Object(nt.e)(g, {
+					}) && Object(rt.i)(g), y = x ? Object(G.a)() : f, C = Object(nt.e)(g, {
 						commentId: y
-					}), v = Object(ut.k)(g);
+					}), v = Object(ut.l)(g);
 					if (!v) return;
 					if (C && !x) return;
 					e || r(Ot({
@@ -587,7 +587,7 @@
 					return async (t, r) => {
 						const i = r(),
 							l = Object(s.a)($.c.replyToComment, o);
-						if (!Object(ut.Q)(r()) && !Object(dt.a)(i)) return t(Object(a.openRegisterModal)()), void t(Object(d.k)({
+						if (!Object(ut.R)(r()) && !Object(dt.a)(i)) return t(Object(a.openRegisterModal)()), void t(Object(d.k)({
 							actionSource: d.a.Reply,
 							redirectUrl: Object(ot.m)(r(), {
 								commentId: o
@@ -627,7 +627,7 @@
 								draftType: $.c.replyToComment,
 								rtJson: b,
 								text: ""
-							}, Object(ut.S)(i)) {
+							}, Object(ut.T)(i)) {
 							const n = Rt({
 								parentCommentId: o,
 								commentsPageKey: e,
@@ -1357,7 +1357,7 @@
 						let {
 							postId: o
 						} = e;
-						const n = Object(B.v)(t),
+						const n = Object(B.w)(t),
 							r = !!Object(K.m)(t, {
 								postId: o
 							}),
@@ -2457,4 +2457,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-NotificationUnit-Button.c44945a6f01a3ea2ed5d.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-NotificationUnit-Button.36ad0ae73487142e44a7.js.map

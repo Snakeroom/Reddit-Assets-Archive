@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/OverlayBlockUser.ae321addad566d2433ad.js
-// Retrieved at 10/18/2022, 1:10:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/OverlayBlockUser.f7f24aba939b46f4c9fb.js
+// Retrieved at 10/24/2022, 9:50:07 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["OverlayBlockUser"], {
 		"./src/chat/components/OverlayBlockUser/index.m.less": function(e, t, n) {
@@ -25,12 +25,12 @@
 				m = n("./src/chat/helpers/chatSelector.ts"),
 				h = n("./src/chat/components/OverlayBlockUser/index.m.less"),
 				_ = n.n(h);
-			const k = Object(m.a)({
+			const b = Object(m.a)({
 					blockedUser: (e, t) => e.contacts.models[t.blockedUserId]
 				}),
-				b = Object(a.b)(k, e => ({
+				k = Object(a.b)(b, e => ({
 					onChannelBlock: t => {
-						e(l.m(t)), e(c.Z(t))
+						e(l.m(t)), e(c.db(t))
 					}
 				}))(e => {
 					const {
@@ -60,8 +60,8 @@
 						hk: "4xn1p1"
 					}))))
 				});
-			t.default = b
+			t.default = k
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/OverlayBlockUser.ae321addad566d2433ad.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/OverlayBlockUser.f7f24aba939b46f4c9fb.js.map

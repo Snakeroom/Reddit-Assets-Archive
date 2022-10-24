@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/RedesignChat.8997300548d740cddfd7.js
-// Retrieved at 10/18/2022, 1:10:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/RedesignChat.cd0bc8685bf17eb29a9a.js
+// Retrieved at 10/24/2022, 9:50:07 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["RedesignChat"], {
 		"./node_modules/lodash/uniqueId.js": function(e, t, n) {
@@ -97,15 +97,15 @@
 						}
 					}, e.children)
 				}, "EmbedPortalContainer", N.a),
-				D = C.a.wrapped(e => a.a.createElement("div", {
+				R = C.a.wrapped(e => a.a.createElement("div", {
 					className: e.className,
 					style: {
 						width: `${k(T.width)}px`,
 						height: `${k(T.height)}px`
 					}
 				}, e.children), "HiddenPortalContainer", N.a),
-				I = C.a.wrapped(w.a, "MinimizedRedesignPortalContainer", N.a),
-				R = B,
+				D = C.a.wrapped(w.a, "MinimizedRedesignPortalContainer", N.a),
+				I = B,
 				U = Object(E.a)({
 					container: e => e && e.container && e.container.size
 				});
@@ -115,11 +115,11 @@
 					case _.a.EMBED:
 						return a.a.createElement(S, null, e.children);
 					case _.a.HIDDEN:
-						return a.a.createElement(D, null, e.children);
-					case _.a.FULL:
 						return a.a.createElement(R, null, e.children);
+					case _.a.FULL:
+						return a.a.createElement(I, null, e.children);
 					case _.a.MINIMIZED:
-						return a.a.createElement(I, null);
+						return a.a.createElement(D, null);
 					default:
 						return a.a.createElement(S, null, e.children)
 				}
@@ -487,7 +487,7 @@
 				f = () => async (e, t) => {
 					const n = t(),
 						s = Object(r.g)(n, {});
-					if (!(Object(u.P)(n) || Object(u.Q)(n)) || !s) return;
+					if (!(Object(u.Q)(n) || Object(u.R)(n)) || !s) return;
 					const a = Object(d.i)(n);
 					m(a, s), e(b({
 						hasUnreadMessages: !!a
@@ -674,4 +674,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RedesignChat.8997300548d740cddfd7.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RedesignChat.cd0bc8685bf17eb29a9a.js.map

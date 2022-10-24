@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ModQueuePages~ModerationPages~PostCreation~ProfileComments~Profi~a5ca5d05.81704fc6b80cc8946547.js
-// Retrieved at 10/21/2022, 4:20:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ModQueuePages~ModerationPages~PostCreation~ProfileComments~Profi~a5ca5d05.b3237e16d955a724297a.js
+// Retrieved at 10/24/2022, 9:50:07 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~ModQueuePages~ModerationPages~PostCreation~ProfileComments~Profi~a5ca5d05"], {
 		"./src/lib/unicodeUtils/index.ts": function(e, t, n) {
@@ -133,7 +133,7 @@
 				h = n.n(p);
 			const b = ["allow-forms", "allow-orientation-lock", "allow-popups", "allow-popups-to-escape-sandbox", "allow-presentation", "allow-same-origin", "allow-scripts", "allow-top-navigation-by-user-activation"].join(" "),
 				x = Object(o.b)(() => Object(i.c)({
-					isNightmodeOn: m.db
+					isNightmodeOn: m.eb
 				}));
 			t.a = x(e => {
 				const t = {
@@ -280,7 +280,7 @@
 						style: t
 					}, e.children)
 				},
-				B = Object(i.b)(() => Object(c.a)(j.F, y.jb, (e, t) => {
+				B = Object(i.b)(() => Object(c.a)(j.F, y.kb, (e, t) => {
 					let {
 						isSponsored: n,
 						postId: s
@@ -537,7 +537,7 @@
 			var j = n("./src/reddit/components/Media/VideoBox/index.m.less"),
 				O = n.n(j);
 			const y = Object(c.c)({
-				autoplayPref: h.b,
+				autoplayPref: h.c,
 				consumed: b.a,
 				loadTimes: b.f,
 				metadata: b.h,
@@ -617,7 +617,7 @@
 					s || D(e), o || U(e), I(Object(u.C)(h))
 				}
 
-				function V() {
+				function W() {
 					const e = {};
 					return S && (e.margin = "0 auto"), C || (e.maxHeight = `${p.e}px`), i.a.createElement(_, {
 						autoplay: L,
@@ -646,7 +646,7 @@
 						width: T ? void 0 : j
 					})
 				}
-				return C ? V() : i.a.createElement("div", {
+				return C ? W() : i.a.createElement("div", {
 					className: Object(l.a)(O.a.container, k, {
 						[O.a.centered]: S
 					})
@@ -654,7 +654,7 @@
 					href: M,
 					target: "_blank",
 					rel: "noopener noreferrer"
-				}, V()))
+				}, W()))
 			}
 		},
 		"./src/reddit/components/Media/index.m.less": function(e, t, n) {
@@ -1755,18 +1755,18 @@
 						f: n,
 						t: r
 					} = e, o = [];
-					if (!n) return W(0, r, t);
+					if (!n) return V(0, r, t);
 					const i = Object(s.a)(r);
 					let a = 0,
 						c = 0;
 					const d = n.length;
 					for (; a < d; a++) {
 						const [e, t, s] = n[a], d = t + s, l = i[t], u = i[d] - l;
-						l > c && o.push(W(0, r.substr(c, l - c), `between${a}`)), o.push(W(e, r.substr(l, u), a)), c = l + u
+						l > c && o.push(V(0, r.substr(c, l - c), `between${a}`)), o.push(V(e, r.substr(l, u), a)), c = l + u
 					}
-					return c < r.length && o.push(W(0, r.substr(c), `remaining${a}`)), o
+					return c < r.length && o.push(V(0, r.substr(c), `remaining${a}`)), o
 				},
-				V = {
+				W = {
 					[m.j.monospace]: c.h,
 					[m.j.bold]: c.b,
 					[m.j.italic]: c.f,
@@ -1775,9 +1775,9 @@
 					[m.j.subscript]: c.l,
 					[m.j.superscript]: c.m
 				},
-				W = (e, t, n) => {
+				V = (e, t, n) => {
 					let s = t;
-					return s = o()(V, (t, s, r) => e & parseInt(r, 10) ? a.a.createElement(s, {
+					return s = o()(W, (t, s, r) => e & parseInt(r, 10) ? a.a.createElement(s, {
 						key: n
 					}, t) : t, s)
 				},
@@ -1912,12 +1912,12 @@
 						rtJsonElementProps: i
 					});
 					switch (o) {
-						case b.Vf.SmIcon:
+						case b.Wf.SmIcon:
 							return r.a.createElement(p, {
 								subredditName: s,
 								rtJsonElementProps: i
 							});
-						case b.Vf.SmIconHc:
+						case b.Wf.SmIconHc:
 							return r.a.createElement(p, {
 								subredditName: s,
 								isHoverable: !0,
@@ -2311,12 +2311,12 @@
 				c = e => {
 					return Object(o.c)(e, {
 						experimentEligibilitySelector: a,
-						experimentName: s.Pf
+						experimentName: s.Qf
 					}) || ""
 				},
 				d = e => {
 					const t = c(e);
-					return t === s.Vf.SmIcon || t === s.Vf.SmIconHc
+					return t === s.Wf.SmIcon || t === s.Wf.SmIconHc
 				},
 				l = (e, t) => {
 					let {
@@ -2342,4 +2342,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ModQueuePages~ModerationPages~PostCreation~ProfileComments~Profi~a5ca5d05.81704fc6b80cc8946547.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ModQueuePages~ModerationPages~PostCreation~ProfileComments~Profi~a5ca5d05.b3237e16d955a724297a.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/EconTopAwardersModal.03801ed56c5c8b2a0f82.js
-// Retrieved at 10/21/2022, 4:20:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/EconTopAwardersModal.3fdf114a9f76db4c0bc1.js
+// Retrieved at 10/24/2022, 9:50:07 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["EconTopAwardersModal"], {
 		"./src/lib/currency/centsToDollars/index.ts": function(e, t, r) {
@@ -364,7 +364,7 @@
 					result: K
 				});
 			const Z = {};
-			var Q = function() {
+			var Y = function() {
 					let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : Z,
 						t = arguments.length > 1 ? arguments[1] : void 0;
 					switch (t.type) {
@@ -403,18 +403,18 @@
 							return e
 					}
 				},
-				Y = Object(C.c)({
+				Q = Object(C.c)({
 					api: A,
 					fetchedTokens: B,
 					inContext: T,
 					loadMore: L,
 					models: D,
 					search: q,
-					userOrder: Q
+					userOrder: Y
 				});
 			Object(y.a)({
 				features: {
-					banned: Y
+					banned: Q
 				}
 			});
 			const X = Object(o.a)(j.s),
@@ -551,7 +551,7 @@
 							await r(Object(d.o)(t.name))
 						}
 					})(), (async () => {
-						const a = Object(O.Ab)(n, {
+						const a = Object(O.Bb)(n, {
 							userName: t
 						});
 						if (!a) return;
@@ -917,8 +917,8 @@
 				},
 				q = r("./src/reddit/icons/svgs/CoinV2/index.tsx"),
 				Z = r("./src/reddit/components/Econ/TopAwardersModal/Winners/Winner/index.m.less"),
-				Q = r.n(Z);
-			var Y = function(e) {
+				Y = r.n(Z);
+			var Q = function(e) {
 					const {
 						showScore: t,
 						awarder: r,
@@ -926,31 +926,31 @@
 						rank: s
 					} = e, o = r && !r.redditor.profile, c = r ? r.redditor.name : "—";
 					return n.a.createElement("div", {
-						className: Object(i.a)(a, Q.a.winner, Q.a[`winner${s}`], {
-							[Q.a.winnerPlaceholder]: !r
+						className: Object(i.a)(a, Y.a.winner, Y.a[`winner${s}`], {
+							[Y.a.winnerPlaceholder]: !r
 						})
 					}, n.a.createElement("div", {
-						className: Q.a.iconContainer
+						className: Y.a.iconContainer
 					}, n.a.createElement("div", {
-						className: Q.a.iconWithBorder
+						className: Y.a.iconWithBorder
 					}, r && n.a.createElement(M.a, {
-						className: Q.a.icon,
+						className: Y.a.icon,
 						iconUrl: r.redditor.icon ? r.redditor.icon.url : void 0,
 						isNSFW: !!r.redditor.profile && r.redditor.profile.isNsfw,
 						userName: c
 					})), n.a.createElement("div", {
-						className: Q.a.rank
+						className: Y.a.rank
 					}, s)), n.a.createElement("h3", {
-						className: Q.a.name
+						className: Y.a.name
 					}, r && !o ? n.a.createElement(B.a, {
 						user: c,
 						tooltipId: `topawarderwinner-userhovercard--${c}`,
 						sendHoverCardEvent: k.a,
-						wrapperClassName: Q.a.hoverCardWrapper
+						wrapperClassName: Y.a.hoverCardWrapper
 					}, c) : c), r && t && n.a.createElement("div", {
-						className: Q.a.score
+						className: Y.a.score
 					}, n.a.createElement(q.a, {
-						className: Q.a.coinIcon
+						className: Y.a.coinIcon
 					}), r.score))
 				},
 				X = r("./src/reddit/components/Econ/TopAwardersModal/Winners/index.m.less"),
@@ -967,7 +967,7 @@
 						className: Object(i.a)(r, J.a.container, {
 							[J.a.flexContainer]: s.length < 3
 						})
-					}, s.map((e, t) => n.a.createElement(Y, {
+					}, s.map((e, t) => n.a.createElement(Q, {
 						showScore: a,
 						className: J.a.winner,
 						awarder: e,
@@ -989,7 +989,7 @@
 			}
 			const {
 				fbt: re
-			} = r("./node_modules/fbt/lib/FbtPublic.js"), ae = 7, ne = Object(o.a)(e => e, x.a, x.c, x.e, I.k, (e, t, r, a, n) => {
+			} = r("./node_modules/fbt/lib/FbtPublic.js"), ae = 7, ne = Object(o.a)(e => e, x.a, x.c, x.e, I.l, (e, t, r, a, n) => {
 				if (!t) return {
 					anonymousRank: void 0,
 					currentPostId: t,
@@ -1268,8 +1268,8 @@
 				K = r("./src/reddit/components/ProfileIdCard/UserProfileOverview/UserSnoovatar/index.tsx"),
 				q = r("./src/reddit/actions/inContextModeration.ts"),
 				Z = r("./src/reddit/actions/modal.ts"),
-				Q = r("./src/reddit/actions/subredditModeration/ban.ts"),
-				Y = r("./src/reddit/constants/modals.ts"),
+				Y = r("./src/reddit/actions/subredditModeration/ban.ts"),
+				Q = r("./src/reddit/constants/modals.ts"),
 				X = r("./src/reddit/components/Hovercards/helpers.ts"),
 				J = r("./src/reddit/icons/fonts/index.tsx"),
 				V = r("./src/reddit/models/ModeratingSubreddits/index.ts"),
@@ -1284,7 +1284,7 @@
 					subredditId: t.subredditId,
 					username: t.username
 				}),
-				user: (e, t) => Object(g.Ab)(e, {
+				user: (e, t) => Object(g.Bb)(e, {
 					userName: t.username
 				})
 			});
@@ -1346,8 +1346,8 @@
 						contextId: n
 					} = t;
 					return {
-						onUnbanUser: t => e(Object(Q.e)(a, t)),
-						requestUserBanInfo: () => e(Object(Q.c)(a, {
+						onUnbanUser: t => e(Object(Y.e)(a, t)),
+						requestUserBanInfo: () => e(Object(Y.c)(a, {
 							username: r
 						})),
 						toggleBanModal: () => {
@@ -1355,14 +1355,14 @@
 								username: r,
 								subredditId: a,
 								contextId: n
-							})), e(Object(Q.a)(a, r))
+							})), e(Object(Y.a)(a, r))
 						},
 						toggleMuteModal: () => {
 							e(Object(q.d)({
 								username: r,
 								subredditId: a,
 								contextId: n
-							})), e(Object(Z.i)(Y.a.MUTE_USER))
+							})), e(Object(Z.i)(Q.a.MUTE_USER))
 						}
 					}
 				})(ne),
@@ -1585,9 +1585,9 @@
 			var Me = Be;
 			const Te = Object(o.c)({
 					activeTooltipId: I.a,
-					currentUser: g.k,
-					isLoggedIn: g.Q,
-					hideNSFWPref: g.F,
+					currentUser: g.l,
+					isLoggedIn: g.R,
+					hideNSFWPref: g.G,
 					moderatorPermissions: (e, t) => {
 						let {
 							subredditId: r
@@ -1614,7 +1614,7 @@
 							minSize: 32
 						})
 					},
-					user: g.Ab,
+					user: g.Bb,
 					userFlair: (e, t) => {
 						let {
 							subredditId: r
@@ -1640,7 +1640,7 @@
 						return !!n && Object(p.i)(e, n)
 					},
 					trophyCase: (e, t) => Object(v.t)(e, Object(v.o)(e, t.userName)),
-					isNightMode: g.db,
+					isNightMode: g.eb,
 					lastAuthorModNote: (e, t) => {
 						if (!t.contextId) return;
 						const r = Object(l.a)(t.contextId) ? Object(b.G)(e, {
@@ -1907,8 +1907,8 @@
 				s = r("./src/reddit/actions/preferences.ts"),
 				o = r("./src/reddit/selectors/user.ts");
 			const c = Object(n.c)({
-					currentUser: o.k,
-					hideNSFWPref: o.F
+					currentUser: o.l,
+					hideNSFWPref: o.G
 				}),
 				i = Object(a.b)(c, e => ({
 					imageUpdateRequested: (t, r) => e(Object(s.C)(t, r))
@@ -2761,4 +2761,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EconTopAwardersModal.03801ed56c5c8b2a0f82.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EconTopAwardersModal.3fdf114a9f76db4c0bc1.js.map

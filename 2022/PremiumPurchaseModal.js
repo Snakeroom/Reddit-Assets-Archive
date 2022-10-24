@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PremiumPurchaseModal.00ed979b4673df782511.js
-// Retrieved at 10/4/2022, 1:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PremiumPurchaseModal.cb9b653234761538c94a.js
+// Retrieved at 10/24/2022, 9:50:07 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PremiumPurchaseModal"], {
 		"./src/reddit/actions/goldPurchaseModals/premiumPurchaseModal.ts": function(e, t, r) {
@@ -275,7 +275,7 @@
 				const t = Object(Q.a)(),
 					r = Object(z.b)(),
 					a = Object(o.d)(),
-					c = Object(o.e)(M.k),
+					c = Object(o.e)(M.l),
 					n = Object(Y.b)(e.total, {
 						locale: r,
 						type: D.b.Real
@@ -381,7 +381,7 @@
 						const t = Object(j.a)(e);
 						return null === t ? void 0 : t
 					},
-					nightmode: M.db,
+					nightmode: M.eb,
 					passthrough: E.e,
 					purchaseMethods: O.a,
 					selectedPayment: E.c,
@@ -389,7 +389,7 @@
 					stripeTokenPending: E.m,
 					paypalErrorMessage: E.d,
 					userName: e => {
-						const t = Object(M.k)(e);
+						const t = Object(M.l)(e);
 						return `u/${Object(g.e)(t)}`
 					},
 					renewInterval: E.p,
@@ -478,4 +478,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PremiumPurchaseModal.00ed979b4673df782511.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PremiumPurchaseModal.cb9b653234761538c94a.js.map

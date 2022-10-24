@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/getFlairData.42730b468818c0f4b645.js
-// Retrieved at 9/14/2022, 4:30:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/getFlairData.b9ee0320f8c6bc04d2a3.js
+// Retrieved at 10/24/2022, 9:50:07 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["getFlairData"], {
 		"./src/reddit/helpers/trackers/features/getFlairData.ts": function(e, t, i) {
@@ -20,7 +20,7 @@
 				const a = Object(c.d)(e, {
 						subredditId: i
 					}),
-					n = Object(l.i)(e),
+					n = Object(l.j)(e),
 					u = n ? Object(s.g)(e, {
 						subredditId: i,
 						userId: n
@@ -48,4 +48,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/getFlairData.42730b468818c0f4b645.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/getFlairData.b9ee0320f8c6bc04d2a3.js.map

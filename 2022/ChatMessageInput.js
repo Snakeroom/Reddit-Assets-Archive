@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ChatMessageInput.26088893da2d84c709ef.js
-// Retrieved at 10/20/2022, 6:10:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ChatMessageInput.d78fc1421fedaecc6b02.js
+// Retrieved at 10/24/2022, 9:50:07 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ChatMessageInput"], {
 		"./node_modules/linkify-it/index.js": function(e, t, s) {
@@ -1260,8 +1260,8 @@
 					errorType: B.N,
 					hasError: B.v,
 					isChatPost: z.d,
-					isLivePostSpamRateEnabled: Q.i,
-					isOptimisticUIEnabled: Q.h,
+					isLivePostSpamRateEnabled: Q.j,
+					isOptimisticUIEnabled: Q.i,
 					liveStreamingChatCharacterLimit: e => {
 						const t = Object(M.a)(e);
 						return t ? t - 3 : 197
@@ -1269,7 +1269,7 @@
 					pending: (e, t) => e.features.comments.submit.pending[t.draftKey],
 					post: U.G,
 					isLiveChatInChatTabEnabled: Q.c,
-					currentUserId: R.i,
+					currentUserId: R.j,
 					isTalkPost: Object(l.a)(U.G, e => Object(T.x)(e))
 				}), (e, t) => {
 					let {
@@ -1385,7 +1385,7 @@
 							};
 							this.cleanInputForm(), n(e, N.i.RICH_TEXT, t), s && setTimeout(() => this.focusOnForm(), 50), this.isAllowedToCreateLiveChatAssociation() && this.associationTimerId && !this.state.messageSent && (this.props.createChatTabAssociation({
 								postId: this.props.postId,
-								engagementType: X.n.Participated
+								engagementType: X.o.Participated
 							}), clearTimeout(this.associationTimerId), this.setState({
 								messageSent: !0,
 								hasCreatedLiveChatAssociation: !0
@@ -1414,7 +1414,7 @@
 					this.isAllowedToCreateLiveChatAssociation() && (this.associationTimerId = setTimeout(() => {
 						this.props.createChatTabAssociation({
 							postId: this.props.postId,
-							engagementType: X.n.Previewed
+							engagementType: X.o.Previewed
 						}), this.setState({
 							hasCreatedLiveChatAssociation: !0
 						}), !this.isEmbeddedLiveChat() && this.props.fetchLiveChatPosts()
@@ -1628,10 +1628,10 @@
 				}).apply(this, arguments)
 			}
 			const _ = Object(o.c)({
-					currentUser: d.k,
-					isNightMode: d.db,
-					isPresenceUserPrefEnabled: d.V,
-					shouldHideNSFW: d.F
+					currentUser: d.l,
+					isNightMode: d.eb,
+					isPresenceUserPrefEnabled: d.W,
+					shouldHideNSFW: d.G
 				}),
 				f = Object(a.b)(_);
 			t.a = f(e => {
@@ -2872,4 +2872,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatMessageInput.26088893da2d84c709ef.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatMessageInput.d78fc1421fedaecc6b02.js.map

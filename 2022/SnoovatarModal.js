@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SnoovatarModal.4593ca958f232ebebad0.js
-// Retrieved at 10/21/2022, 4:20:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SnoovatarModal.5d795ffe9ef3c430069e.js
+// Retrieved at 10/24/2022, 9:50:07 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SnoovatarModal"], {
 		"./src/reddit/components/AvatarBuilder/index.m.less": function(e, t, a) {
@@ -71,7 +71,7 @@
 						activeMeSubpage: C || void 0,
 						activeDetails: k || void 0,
 						shopTabState: T || void 0
-					}), [k, y, C, T]), R = Object(o.e)(e => !Object(m.Q)(e) && Object(p.B)(e));
+					}), [k, y, C, T]), R = Object(o.e)(e => !Object(m.R)(e) && Object(p.B)(e));
 					if (!E || !x) return null;
 					if (R) return s.a.createElement("div", {
 						className: Object(c.a)(O.a.container, {
@@ -161,7 +161,7 @@
 						t = Object(c.e)(e => e.user.session),
 						a = t ? t.accessToken : "",
 						r = t ? new Date(t.expires).getTime() : 1,
-						o = Object(c.e)(p.db),
+						o = Object(c.e)(p.eb),
 						O = Object(d.a)(),
 						v = m ? i.a.Rinkeby : i.a.Ethereum,
 						f = Object(s.useMemo)(() => ({
@@ -201,7 +201,7 @@
 				v = () => {
 					const e = Object(c.e)(e => e.user.session),
 						t = e ? e.accessToken : "",
-						a = Object(c.e)(p.db),
+						a = Object(c.e)(p.eb),
 						r = Object(d.a)(),
 						l = m ? i.a.Rinkeby : i.a.Ethereum;
 					return Object(s.useMemo)(() => ({
@@ -289,8 +289,8 @@
 			}));
 			var n = a("./src/reddit/constants/experiments.ts"),
 				r = a("./src/reddit/selectors/experiments/econ/simpleExperiment.ts");
-			const s = Object(r.a)(n.ud)
+			const s = Object(r.a)(n.vd)
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SnoovatarModal.4593ca958f232ebebad0.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SnoovatarModal.5d795ffe9ef3c430069e.js.map

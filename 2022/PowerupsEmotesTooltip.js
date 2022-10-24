@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PowerupsEmotesTooltip.54c5994bbb0fd4669aec.js
-// Retrieved at 10/18/2022, 6:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PowerupsEmotesTooltip.b57d67149a049533e139.js
+// Retrieved at 10/24/2022, 9:50:07 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PowerupsEmotesTooltip"], {
 		"./src/reddit/actions/economics/powerups/helpers.ts": function(e, t, o) {
@@ -36,7 +36,7 @@
 						var a;
 						try {
 							const n = i(),
-								r = null === (a = Object(l.k)(n)) || void 0 === a ? void 0 : a.id;
+								r = null === (a = Object(l.l)(n)) || void 0 === a ? void 0 : a.id;
 							if (!r) throw new Error("Failed to get current user during emoji upload");
 							const m = await Object(d.h)(o);
 							if (!m) throw new Error("Cannot determine file mimeType");
@@ -748,4 +748,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PowerupsEmotesTooltip.54c5994bbb0fd4669aec.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PowerupsEmotesTooltip.b57d67149a049533e139.js.map

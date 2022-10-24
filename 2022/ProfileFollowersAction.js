@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfileFollowersAction.1c34b6243b803e0caebe.js
-// Retrieved at 10/19/2022, 9:50:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfileFollowersAction.494d6d9b6e8df39e2558.js
+// Retrieved at 10/24/2022, 9:50:07 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfileFollowersAction"], {
 		"./src/lib/makeOverviewConversationsItemKey/index.ts": function(e, t, r) {
@@ -306,9 +306,9 @@
 					error: U,
 					pending: Q
 				});
-			const W = {};
-			var $ = function() {
-				let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : W,
+			const B = {};
+			var W = function() {
+				let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : B,
 					t = arguments.length > 1 ? arguments[1] : void 0;
 				switch (t.type) {
 					case A.b: {
@@ -337,9 +337,9 @@
 						return e
 				}
 			};
-			const z = {};
-			var B = function() {
-					let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : z,
+			const $ = {};
+			var z = function() {
+					let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : $,
 						t = arguments.length > 1 ? arguments[1] : void 0;
 					switch (t.type) {
 						case A.b:
@@ -384,13 +384,13 @@
 				},
 				V = Object(q.c)({
 					api: G,
-					fetchedTokens: $,
-					ids: B,
+					fetchedTokens: W,
+					ids: z,
 					loadMore: M
 				});
-			const Y = {};
-			var X = function() {
-				let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : Y,
+			const X = {};
+			var Y = function() {
+				let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : X,
 					t = arguments.length > 1 ? arguments[1] : void 0;
 				switch (t.type) {
 					case A.f:
@@ -446,7 +446,7 @@
 					}
 				},
 				te = Object(q.c)({
-					error: X,
+					error: Y,
 					pending: ee
 				}),
 				re = r("./src/reddit/actions/profileConversations.ts");
@@ -804,12 +804,12 @@
 					if (!E.platform.currentPage) return;
 					if (200 !== E.platform.currentPage.status) return;
 					const S = Object(g.o)(r(), w),
-						A = Object(h.Ab)(E, {
+						A = Object(h.Bb)(E, {
 							userName: p
 						}).id;
 					t(k.m({
 						title: Se(r(), p)
-					})), Object(h.S)(E) && Object(h.W)(E, p) && t(Object(x.startChangeUsernameFlow)());
+					})), Object(h.T)(E) && Object(h.X)(E, p) && t(Object(x.startChangeUsernameFlow)());
 					const N = [t(Object(a.q)()), t(R.b(w, S)), t(P.b(w)), t(_.o(p)), t(P.i(p)), t(C.i(p, A))];
 					await Promise.all(N)
 				}, Se = (e, t) => Object(g.s)(e, {
@@ -979,4 +979,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileFollowersAction.1c34b6243b803e0caebe.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileFollowersAction.494d6d9b6e8df39e2558.js.map

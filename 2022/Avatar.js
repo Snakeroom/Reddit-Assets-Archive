@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Avatar.47144386c813ac2a4530.js
-// Retrieved at 10/21/2022, 4:20:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Avatar.a341144cb62772e22f39.js
+// Retrieved at 10/24/2022, 9:50:07 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Avatar"], {
 		"./src/reddit/components/AvatarBuilder/index.m.less": function(e, t, a) {
@@ -64,14 +64,14 @@
 					const {
 						activeDetails: M,
 						activeTab: T,
-						activeMeSubpage: C,
-						shopTabState: R
+						activeMeSubpage: R,
+						shopTabState: C
 					} = a, y = Object(r.useMemo)(() => ({
 						activeTab: T || void 0,
-						activeMeSubpage: C || void 0,
+						activeMeSubpage: R || void 0,
 						activeDetails: M || void 0,
-						shopTabState: R || void 0
-					}), [M, T, C, R]), B = Object(c.e)(e => !Object(m.Q)(e) && Object(p.B)(e));
+						shopTabState: C || void 0
+					}), [M, T, R, C]), B = Object(c.e)(e => !Object(m.R)(e) && Object(p.B)(e));
 					if (!E || !j) return null;
 					if (B) return s.a.createElement("div", {
 						className: Object(o.a)(O.a.container, {
@@ -161,7 +161,7 @@
 						t = Object(o.e)(e => e.user.session),
 						a = t ? t.accessToken : "",
 						r = t ? new Date(t.expires).getTime() : 1,
-						c = Object(o.e)(p.db),
+						c = Object(o.e)(p.eb),
 						O = Object(d.a)(),
 						v = m ? i.a.Rinkeby : i.a.Ethereum,
 						f = Object(s.useMemo)(() => ({
@@ -201,7 +201,7 @@
 				v = () => {
 					const e = Object(o.e)(e => e.user.session),
 						t = e ? e.accessToken : "",
-						a = Object(o.e)(p.db),
+						a = Object(o.e)(p.eb),
 						r = Object(d.a)(),
 						l = m ? i.a.Rinkeby : i.a.Ethereum;
 					return Object(s.useMemo)(() => ({
@@ -261,8 +261,8 @@
 			}));
 			var n = a("./src/reddit/constants/experiments.ts"),
 				r = a("./src/reddit/selectors/experiments/econ/simpleExperiment.ts");
-			const s = Object(r.a)(n.ud)
+			const s = Object(r.a)(n.vd)
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Avatar.47144386c813ac2a4530.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Avatar.a341144cb62772e22f39.js.map

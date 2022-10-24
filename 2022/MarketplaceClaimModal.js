@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/MarketplaceClaimModal.61dfee9dece2fdd39050.js
-// Retrieved at 10/21/2022, 4:20:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/MarketplaceClaimModal.edad7b97df98ba47732f.js
+// Retrieved at 10/24/2022, 9:50:07 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["MarketplaceClaimModal"], {
 		"./src/reddit/actions/economics/marketplace/constants.ts": function(e, t, n) {
@@ -43,7 +43,7 @@
 						t = Object(c.e)(e => e.user.session),
 						n = t ? t.accessToken : "",
 						s = t ? new Date(t.expires).getTime() : 1,
-						o = Object(c.e)(p.db),
+						o = Object(c.e)(p.eb),
 						E = Object(d.a)(),
 						_ = m ? i.a.Rinkeby : i.a.Ethereum,
 						b = Object(a.useMemo)(() => ({
@@ -83,7 +83,7 @@
 				_ = () => {
 					const e = Object(c.e)(e => e.user.session),
 						t = e ? e.accessToken : "",
-						n = Object(c.e)(p.db),
+						n = Object(c.e)(p.eb),
 						s = Object(d.a)(),
 						l = m ? i.a.Rinkeby : i.a.Ethereum;
 					return Object(a.useMemo)(() => ({
@@ -180,7 +180,7 @@
 		"./src/reddit/components/Econ/Marketplace/ClaimModal/index.tsx": function(e, t, n) {
 			"use strict";
 			n.r(t), n.d(t, "MarketplaceClaim", (function() {
-				return j
+				return C
 			}));
 			var r = n("./node_modules/@reddit/crypto/react/nft-claim/index.es.js"),
 				s = n("./node_modules/@reddit/marketplace/marketplace.es.js"),
@@ -201,8 +201,8 @@
 				v = n("./src/reddit/components/Econ/Marketplace/ClaimModal/index.m.less"),
 				A = n.n(v);
 
-			function C() {
-				return (C = Object.assign || function(e) {
+			function j() {
+				return (j = Object.assign || function(e) {
 					for (var t = 1; t < arguments.length; t++) {
 						var n = arguments[t];
 						for (var r in n) Object.prototype.hasOwnProperty.call(n, r) && (e[r] = n[r])
@@ -210,11 +210,11 @@
 					return e
 				}).apply(this, arguments)
 			}
-			const j = e => {
+			const C = e => {
 					let {
 						onClose: t
 					} = e;
-					const n = Object(i.e)(f.Cb),
+					const n = Object(i.e)(f.Db),
 						a = Object(i.e)(e => {
 							var t;
 							return null === (t = Object(_.a)(e)) || void 0 === t ? void 0 : t.claimId
@@ -229,7 +229,7 @@
 								activeMeSubpage: "MY_STUFF"
 							}))
 						},
-						C = e => {
+						j = e => {
 							var t;
 							"CLAIM_ERROR" === e.type && "NO_NFT_LEFT" === (null === (t = e.data) || void 0 === t ? void 0 : t.status) && o(p({
 								claimId: a
@@ -244,17 +244,17 @@
 						userId: n,
 						onViewAvatar: v,
 						omitIkey: d,
-						onEvent: C
+						onEvent: j
 					}) : c.a.createElement(r.b, {
 						onClose: t,
 						userId: n,
 						onViewAvatar: v,
 						omitIkey: d,
-						onEvent: C
+						onEvent: j
 					})))
 				},
-				x = Object(a.a)(j);
-			t.default = e => c.a.createElement(x, C({
+				x = Object(a.a)(C);
+			t.default = e => c.a.createElement(x, j({
 				withOverlay: !0,
 				className: A.a.modal
 			}, e))
@@ -284,8 +284,8 @@
 			}));
 			var r = n("./src/reddit/constants/experiments.ts"),
 				s = n("./src/reddit/selectors/experiments/econ/simpleExperiment.ts");
-			const a = Object(s.a)(r.ud)
+			const a = Object(s.a)(r.vd)
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/MarketplaceClaimModal.61dfee9dece2fdd39050.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/MarketplaceClaimModal.edad7b97df98ba47732f.js.map

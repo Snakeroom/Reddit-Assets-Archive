@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/OverlayDirectsEmptyState.b0aa225b06b7d2fb0bd4.js
-// Retrieved at 10/18/2022, 1:10:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/OverlayDirectsEmptyState.9626190a4c5808ce297f.js
+// Retrieved at 10/24/2022, 9:50:07 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["OverlayDirectsEmptyState"], {
 		"./src/chat/actions/navigate.ts": function(e, t, a) {
@@ -86,12 +86,12 @@
 				f = a.n(E);
 			const x = Object(l.b)(null, e => ({
 					onCreateMessage: () => {
-						e(Object(m.F)());
+						e(Object(m.H)());
 						const t = Object(d.getRedirectURL)(Object(d.channelUrl)("create"));
 						return e(Object(o.b)(t))
 					},
 					onNavigateHappeningNowPage: () => {
-						e(Object(m.p)()), e(Object(i.b)({
+						e(Object(m.q)()), e(Object(i.b)({
 							path: "/now"
 						}))
 					}
@@ -176,7 +176,7 @@
 				}), r.fbt._("Start Chatting", null, {
 					hk: "2xwnNZ"
 				}))))),
-				L = e => s.a.createElement(p.a, {
+				H = e => s.a.createElement(p.a, {
 					innerContent: !0
 				}, s.a.createElement(h.a, {
 					title: "",
@@ -209,9 +209,9 @@
 				const t = Object(l.e)(N.a),
 					a = Object(l.e)(b.s),
 					n = Object(l.e)(b.l);
-				return a ? n ? s.a.createElement(L, e) : t === w.g.Live ? s.a.createElement(O, null) : s.a.createElement(k, e) : s.a.createElement(y, e)
+				return a ? n ? s.a.createElement(H, e) : t === w.g.Live ? s.a.createElement(O, null) : s.a.createElement(k, e) : s.a.createElement(y, e)
 			})
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/OverlayDirectsEmptyState.b0aa225b06b7d2fb0bd4.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/OverlayDirectsEmptyState.9626190a4c5808ce297f.js.map

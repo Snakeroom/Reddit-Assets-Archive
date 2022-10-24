@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/EmailNotificationSettings.bd8398972d229f1f18d6.js
-// Retrieved at 9/29/2022, 4:30:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/EmailNotificationSettings.3681837c516650057138.js
+// Retrieved at 10/24/2022, 9:50:07 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["EmailNotificationSettings"], {
 		"./node_modules/lodash/times.js": function(e, t, s) {
@@ -28,9 +28,9 @@
 				r = s("./src/reddit/selectors/user.ts"),
 				d = s("./src/reddit/components/Settings/Notifications/NotificationToggles.tsx");
 			const c = Object(i.c)({
-					hasError: r.t,
-					rows: r.fb,
-					sections: r.gb
+					hasError: r.u,
+					rows: r.gb,
+					sections: r.hb
 				}),
 				l = Object(n.b)(c, e => ({
 					fetchNotificationSettings: () => e(Object(a.a)(o.a.Email)),
@@ -92,7 +92,7 @@
 					e.fetchNotificationSettings()
 				}, []);
 				const t = Object(u.a)(),
-					s = Object(o.e)(f.j),
+					s = Object(o.e)(f.k),
 					p = (s, n, i) => {
 						const o = e.rows && e.rows.byId[s];
 						return o ? a.a.createElement("span", {
@@ -169,4 +169,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EmailNotificationSettings.bd8398972d229f1f18d6.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EmailNotificationSettings.3681837c516650057138.js.map

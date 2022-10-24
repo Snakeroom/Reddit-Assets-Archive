@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/VideoShareModal.5a9d1f61f4151ba42567.js
-// Retrieved at 10/19/2022, 12:30:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/VideoShareModal.decf302bb4c7c460e8c1.js
+// Retrieved at 10/24/2022, 9:50:07 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["VideoShareModal"], {
 		"./src/reddit/components/CommentsChat/Comment/ChatIcon/default.tsx": function(e, t, s) {
@@ -532,8 +532,8 @@
 				j = s("./src/reddit/icons/svgs/Lock/index.tsx"),
 				T = s("./src/reddit/icons/svgs/Plus/index.tsx"),
 				O = s("./src/reddit/icons/svgs/Remove/index.tsx"),
-				A = s("./src/reddit/icons/svgs/Report/index.tsx"),
-				V = s("./src/reddit/icons/svgs/Rules/index.tsx"),
+				V = s("./src/reddit/icons/svgs/Report/index.tsx"),
+				A = s("./src/reddit/icons/svgs/Rules/index.tsx"),
 				P = s("./src/reddit/icons/svgs/Unlock/index.tsx"),
 				R = s("./src/reddit/icons/svgs/Video/index.tsx"),
 				D = s("./src/reddit/models/Vote/index.ts"),
@@ -748,7 +748,7 @@
 					iconWrapperClassName: U.a.overflowItemIconWrapper,
 					key: `${re}-rules`,
 					onClick: () => Object(l.e)(d.S, l.d.BLANK)
-				}, n.a.createElement(V.a, {
+				}, n.a.createElement(A.a, {
 					className: U.a.overflowItemIcon
 				})), n.a.createElement(f.b, {
 					className: U.a.overflowItem,
@@ -798,7 +798,7 @@
 					iconWrapperClassName: U.a.overflowItemIconWrapper,
 					key: `${re}-report`,
 					onClick: a
-				}, n.a.createElement(A.a, {
+				}, n.a.createElement(V.a, {
 					className: U.a.overflowItemIcon
 				})), n.a.createElement(f.b, {
 					className: U.a.overflowItem,
@@ -848,7 +848,7 @@
 						apiContext: r
 					} = n;
 					const o = a();
-					Object(p.Q)(o) ? await Object(u.g)(r(), e, t) : s(Object(h.openLoginModal)())
+					Object(p.R)(o) ? await Object(u.g)(r(), e, t) : s(Object(h.openLoginModal)())
 				})(t, s))
 			}))(class extends a.Component {
 				constructor(e) {
@@ -1040,7 +1040,7 @@
 					isSubscribed: c
 				}));
 				return o && o.enableFollowers ? d : null
-			}, we = e => Object(r.e)(t => Object(p.Ab)(t, {
+			}, we = e => Object(r.e)(t => Object(p.Bb)(t, {
 				userName: e
 			})), fe = e => Object(r.e)(t => Object(F.kb)(t, {
 				identifier: {
@@ -1094,9 +1094,9 @@
 			}, n.a.createElement("path", {
 				d: "M12.8,6.4 L9.6,6.4 L9.6,3.2 C9.6,2.7576 9.2424,2.4 8.8,2.4 L7.2,2.4 C6.7576,2.4 6.4,2.7576 6.4,3.2 L6.4,6.4 L3.2,6.4 C2.7584,6.4 2.4,6.7576 2.4,7.2 L2.4,8.8 C2.4,9.2424 2.7584,9.6 3.2,9.6 L6.4,9.6 L6.4,12.8 C6.4,13.2424 6.7576,13.6 7.2,13.6 L8.8,13.6 C9.2424,13.6 9.6,13.2424 9.6,12.8 L9.6,9.6 L12.8,9.6 C13.2424,9.6 13.6,9.2424 13.6,8.8 L13.6,7.2 C13.6,6.7576 13.2424,6.4 12.8,6.4"
 			})), Ie = e => {
-				const t = Object(r.e)(p.k),
-					s = Object(r.e)(p.F),
-					a = Object(r.e)(p.kb);
+				const t = Object(r.e)(p.l),
+					s = Object(r.e)(p.G),
+					a = Object(r.e)(p.lb);
 				return !!e && (!!e.accountIcon && (!!t && (t.id === e.id || (!e.isNSFW || !!a && !s))))
 			}
 		},
@@ -1357,4 +1357,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/VideoShareModal.5a9d1f61f4151ba42567.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/VideoShareModal.decf302bb4c7c460e8c1.js.map

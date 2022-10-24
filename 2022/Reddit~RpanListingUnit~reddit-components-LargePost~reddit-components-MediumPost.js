@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Reddit~RpanListingUnit~reddit-components-LargePost~reddit-components-MediumPost.17b2608231253296f188.js
-// Retrieved at 10/20/2022, 6:10:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Reddit~RpanListingUnit~reddit-components-LargePost~reddit-components-MediumPost.6941ac08a538ef12f577.js
+// Retrieved at 10/24/2022, 9:50:07 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Reddit~RpanListingUnit~reddit-components-LargePost~reddit-components-MediumPost"], {
 		"./src/lib/memoizeByReference/index.ts": function(e, t, n) {
@@ -1066,12 +1066,14 @@
 				return g
 			})), n.d(t, "a", (function() {
 				return v
-			})), n.d(t, "k", (function() {
+			})), n.d(t, "l", (function() {
 				return O
 			})), n.d(t, "g", (function() {
 				return j
 			})), n.d(t, "h", (function() {
 				return w
+			})), n.d(t, "k", (function() {
+				return y
 			}));
 			var r = n("./src/lib/makeCommentsPageKey/index.ts"),
 				o = n("./src/reddit/constants/tracking.ts"),
@@ -1216,7 +1218,22 @@
 						type: "live_post"
 					},
 					listing: l(r, t)
-				})
+				}),
+				y = () => e => {
+					var t;
+					return {
+						...Object(a.o)(e),
+						subreddit: Object(a.jb)(e),
+						profile: Object(a.T)(e),
+						actionInfo: {
+							...Object(a.d)(e),
+							paneName: (null === window || void 0 === window ? void 0 : window.parent) !== window ? "chat_tab" : (null === (t = null == e ? void 0 : e.platform.currentPage) || void 0 === t ? void 0 : t.locationState.clickSource) || ""
+						},
+						source: "chat_post",
+						action: o.c.VIEW,
+						noun: "hint"
+					}
+				}
 		},
 		"./src/reddit/helpers/trackers/communityAwards.ts": function(e, t, n) {
 			"use strict";
@@ -2354,7 +2371,7 @@
 					const i = !n && !!Object(s.m)(e, {
 						postId: t
 					});
-					return Object(a.Db)(e, {
+					return Object(a.Eb)(e, {
 						postId: t
 					}) || i
 				}
@@ -2472,7 +2489,7 @@
 						minSize: n,
 						userName: r
 					} = t;
-					const o = Object(i.Ab)(e, {
+					const o = Object(i.Bb)(e, {
 						userName: r
 					});
 					if (o && o.awardedLastMonth && o.awardedLastMonth.topAward) return f(e, {
@@ -2593,4 +2610,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit~RpanListingUnit~reddit-components-LargePost~reddit-components-MediumPost.17b2608231253296f188.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit~RpanListingUnit~reddit-components-LargePost~reddit-components-MediumPost.6941ac08a538ef12f577.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CommunityPointsLearnMore.b979f20ec0b4092a76cd.js
-// Retrieved at 10/18/2022, 6:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CommunityPointsLearnMore.9376cbe8ec45567bc886.js
+// Retrieved at 10/24/2022, 9:50:07 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CommunityPointsLearnMore"], {
 		"./src/lib/currency/centsToDollars/index.ts": function(e, t, o) {
@@ -654,7 +654,7 @@
 					} = e;
 					const n = Object(r.a)(),
 						a = c(n),
-						l = Object(S.e)(V.db);
+						l = Object(S.e)(V.eb);
 					return i.a.createElement("div", {
 						className: Object(s.a)(R.a.container, t)
 					}, i.a.createElement("nav", null, i.a.createElement("ol", null, x.map(e => i.a.createElement("div", {
@@ -1810,7 +1810,7 @@
 				te = o.n(ee);
 			const oe = () => {
 					const e = Object(S.d)(),
-						t = Object(S.e)(V.db);
+						t = Object(S.e)(V.eb);
 					return i.a.createElement("header", {
 						className: Object(s.a)(te.a.container, {
 							[te.a.nightmode]: t
@@ -1899,7 +1899,7 @@
 					onClickExpand: l,
 					onClickHide: u
 				} = e;
-				const c = Object(S.e)(V.db);
+				const c = Object(S.e)(V.eb);
 				return i.a.createElement("div", {
 					className: Object(s.a)(ie.a.container, t, {
 						[ie.a.expanded]: a,
@@ -2904,4 +2904,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommunityPointsLearnMore.b979f20ec0b4092a76cd.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommunityPointsLearnMore.9376cbe8ec45567bc886.js.map

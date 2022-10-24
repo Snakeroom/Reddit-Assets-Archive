@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-TransferTransactionModal.7dcf429f9adf971926c7.js
-// Retrieved at 9/29/2022, 4:30:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-TransferTransactionModal.415af0037825ace55110.js
+// Retrieved at 10/24/2022, 9:50:07 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Governance-TransactionModals-TransferTransactionModal"], {
 		"./src/reddit/actions/util/pollActionForSuccess.ts": function(e, t, n) {
@@ -160,10 +160,10 @@
 				fbt: S
 			} = n("./node_modules/fbt/lib/FbtPublic.js");
 
-			function k(e) {
+			function D(e) {
 				const {
 					recipient: t
-				} = e, n = Object(c.e)(h.k);
+				} = e, n = Object(c.e)(h.l);
 				return o.a.createElement(M.a, {
 					subredditId: e.subredditId,
 					image: o.a.createElement(y.a, {
@@ -180,7 +180,7 @@
 					pointsAmount: e.transferAmount
 				})
 			}
-			const D = e => o.a.createElement(I.b, {
+			const k = e => o.a.createElement(I.b, {
 				values: [
 					[Object(I.c)(), e.recipientAddress],
 					[Object(I.a)(), e.transaction.contractAddress]
@@ -192,7 +192,7 @@
 					recipient: n,
 					subredditId: a,
 					transferAmount: d
-				} = e, y = Object(c.d)(), I = Object(_.a)(), M = Object(c.e)(e => Object(h.Ab)(e, {
+				} = e, y = Object(c.d)(), I = Object(_.a)(), M = Object(c.e)(e => Object(h.Bb)(e, {
 					userName: n
 				})), {
 					currentPointsAmount: E,
@@ -222,13 +222,13 @@
 					},
 					Y = g.name;
 				return o.a.createElement(N.a, {
-					approvalOverview: o.a.createElement(k, {
+					approvalOverview: o.a.createElement(D, {
 						subredditId: a,
 						recipient: n,
 						recipientAddress: C,
 						transferAmount: d
 					}),
-					approvalDetails: o.a.createElement(D, {
+					approvalDetails: o.a.createElement(k, {
 						transaction: F,
 						recipientAddress: C
 					}),
@@ -287,4 +287,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-TransferTransactionModal.7dcf429f9adf971926c7.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-TransferTransactionModal.415af0037825ace55110.js.map
