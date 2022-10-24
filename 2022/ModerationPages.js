@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModerationPages.128872af7145d911c9f1.js
-// Retrieved at 10/24/2022, 12:20:09 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModerationPages.0af3d16f705def30e34a.js
+// Retrieved at 10/24/2022, 3:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModerationPages", "CollectionCommentsPage~CommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~RpanListingUnit~S~5809214e", "CommentsPage~Governance~Reddit~ReportFlow~Subreddit~reddit-components-BlankPost~reddit-components-Cl~5351df81", "CollectionCommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~StandalonePostPage~reddit-comp~2f7e159a", "Governance~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compo~bd4baca2", "Governance~ModListing~Reddit~ReportFlow~Subreddit", "Reddit~RpanListingUnit~StandalonePostPage~reddit-components-LargePost~reddit-components-MediumPost", "Governance~ModListing~Reddit~Subreddit", "Governance~Reddit~SubredditForkingCTA", "Settings~SubredditWiki"], {
 		"./src/chat/controls/Svg/index.m.less": function(e, t, n) {
@@ -47090,7 +47090,7 @@
 		"./src/reddit/components/ScheduledPost/index.tsx": function(e, t, n) {
 			"use strict";
 			n.d(t, "b", (function() {
-				return _e
+				return ue
 			}));
 			var s = n("./node_modules/fbt/lib/FbtPublic.js"),
 				r = n("./node_modules/react/index.js"),
@@ -47139,93 +47139,49 @@
 				C = n("./src/reddit/components/ConfirmUserActionModal/index.tsx"),
 				j = n("./src/reddit/components/FlairList/index.tsx"),
 				k = n("./src/reddit/components/PostLeftRail/index.tsx"),
-				I = n("./src/lib/classNames/index.ts"),
-				S = n("./src/reddit/components/VerticalVotes/votes.tsx"),
-				w = n("./src/reddit/controls/Score/index.tsx"),
-				T = n("./src/reddit/models/Vote/index.ts"),
-				N = n("./src/reddit/components/VerticalVotes/index.m.less"),
-				P = n.n(N);
-			class R extends o.a.PureComponent {
-				render() {
-					const {
-						className: e,
-						scoreClassName: t
-					} = this.props;
-					return o.a.createElement("div", {
-						className: Object(I.a)(e, P.a.votesContainer)
-					}, o.a.createElement("button", {
-						className: P.a.disabledVoteIcon,
-						"aria-label": s.fbt._("Upvote", null, {
-							hk: "4aEt1X"
-						}),
-						"aria-pressed": !1,
-						disabled: !0
-					}, o.a.createElement(S.d, {
-						compact: !1,
-						voteState: T.a.notVoted,
-						interactive: !1
-					})), o.a.createElement(w.a, {
-						disableInlineColor: !0,
-						className: Object(I.a)(P.a.Score, P.a.disabledScore, t),
-						score: 0,
-						voteState: T.a.notVoted,
-						isScoreHidden: !0
-					}), o.a.createElement("button", {
-						className: P.a.disabledVoteIcon,
-						"aria-label": s.fbt._("downvote", null, {
-							hk: "4xXpvV"
-						}),
-						"aria-pressed": !1,
-						disabled: !0
-					}, o.a.createElement(S.c, {
-						compact: !1,
-						voteState: T.a.notVoted,
-						interactive: !1
-					})))
-				}
-			}
-			var A = R,
-				M = n("./src/reddit/constants/thumbnails.ts"),
-				L = n("./src/reddit/helpers/styles/mixins/index.tsx"),
-				D = n("./src/reddit/helpers/trackers/scheduledPosts.ts"),
-				F = n("./src/reddit/models/PostCreationForm/index.ts"),
-				U = n("./src/reddit/models/ScheduledPost/index.ts"),
-				B = n("./src/reddit/components/ScheduledPost/OverflowMenu/withOverflowMenu.tsx"),
-				q = n("./src/reddit/icons/svgs/Pencil/index.tsx"),
-				G = n("./src/reddit/icons/svgs/Post/index.tsx"),
-				H = n("./src/reddit/icons/svgs/Trash2/index.tsx"),
-				W = n("./src/reddit/components/ScheduledPost/ControlRow/index.m.less"),
-				V = n.n(W);
-			const z = e => {
+				I = n("./src/reddit/components/VerticalVotes/DisabledVerticalVotes.tsx"),
+				S = n("./src/reddit/constants/thumbnails.ts"),
+				w = n("./src/reddit/helpers/styles/mixins/index.tsx"),
+				T = n("./src/reddit/helpers/trackers/scheduledPosts.ts"),
+				N = n("./src/reddit/models/PostCreationForm/index.ts"),
+				P = n("./src/reddit/models/ScheduledPost/index.ts"),
+				R = n("./src/reddit/components/ScheduledPost/OverflowMenu/withOverflowMenu.tsx"),
+				A = n("./src/lib/classNames/index.ts"),
+				M = n("./src/reddit/icons/svgs/Pencil/index.tsx"),
+				L = n("./src/reddit/icons/svgs/Post/index.tsx"),
+				D = n("./src/reddit/icons/svgs/Trash2/index.tsx"),
+				F = n("./src/reddit/components/ScheduledPost/ControlRow/index.m.less"),
+				U = n.n(F);
+			const B = e => {
 				const {
 					icon: t,
 					onClick: n
 				} = e;
 				return o.a.createElement("span", {
 					onClick: n,
-					className: Object(I.a)(V.a.controlRowItem, e.className)
+					className: Object(A.a)(U.a.controlRowItem, e.className)
 				}, o.a.createElement(t, {
-					className: V.a.icon
+					className: U.a.icon
 				}), " ", e.text)
 			};
-			class K extends o.a.Component {
+			class q extends o.a.Component {
 				render() {
 					return o.a.createElement("span", {
-						className: V.a.controlRow
-					}, this.props.onSubmitPostNow && o.a.createElement(z, {
-						icon: G.a,
+						className: U.a.controlRow
+					}, this.props.onSubmitPostNow && o.a.createElement(B, {
+						icon: L.a,
 						text: s.fbt._("Submit post now", null, {
 							hk: "QkS4y"
 						}),
 						onClick: this.props.onSubmitPostNow
-					}), o.a.createElement(z, {
-						icon: q.a,
+					}), o.a.createElement(B, {
+						icon: M.a,
 						text: s.fbt._("Edit", null, {
 							hk: "1nftDt"
 						}),
 						onClick: this.props.onEditScheduledPost
-					}), o.a.createElement(z, {
-						icon: H.b,
+					}), o.a.createElement(B, {
+						icon: D.b,
 						text: s.fbt._("Delete", null, {
 							hk: "1uVY7w"
 						}),
@@ -47233,16 +47189,16 @@
 					}), this.props.renderOverflowMenu())
 				}
 			}
-			var Q = Object(B.a)(K),
-				Y = n("./src/reddit/components/ScheduledPost/MetaLine/index.tsx"),
-				J = n("./src/reddit/components/ScheduledPost/PostTitle/index.tsx"),
-				X = n("./src/reddit/icons/svgs/ClearFilled/index.tsx"),
-				Z = n("./src/reddit/components/ScheduledPost/TopMetaLine/FailureMetaLine/index.m.less"),
-				$ = n.n(Z);
+			var G = Object(R.a)(q),
+				H = n("./src/reddit/components/ScheduledPost/MetaLine/index.tsx"),
+				W = n("./src/reddit/components/ScheduledPost/PostTitle/index.tsx"),
+				V = n("./src/reddit/icons/svgs/ClearFilled/index.tsx"),
+				z = n("./src/reddit/components/ScheduledPost/TopMetaLine/FailureMetaLine/index.m.less"),
+				K = n.n(z);
 			const {
-				fbt: ee
+				fbt: Q
 			} = n("./node_modules/fbt/lib/FbtPublic.js");
-			class te extends o.a.PureComponent {
+			class Y extends o.a.PureComponent {
 				componentDidMount() {
 					this.props.onViewFailedPost()
 				}
@@ -47251,99 +47207,99 @@
 						scheduledPost: e
 					} = this.props, {
 						owner: t
-					} = e, n = Object(U.o)(t) && t.prefixedName;
+					} = e, n = Object(P.o)(t) && t.prefixedName;
 					return o.a.createElement("div", {
-						className: $.a.container
-					}, o.a.createElement("div", null, o.a.createElement(X.a, {
-						className: $.a.error
-					}), ee._("Post failed to submit! Please {=retry}", [ee._param("=retry", o.a.createElement("button", {
-						className: $.a.retryButton,
+						className: K.a.container
+					}, o.a.createElement("div", null, o.a.createElement(V.a, {
+						className: K.a.error
+					}), Q._("Post failed to submit! Please {=retry}", [Q._param("=retry", o.a.createElement("button", {
+						className: K.a.retryButton,
 						onClick: this.props.onSubmitPostNow
-					}, ee._("retry", null, {
+					}, Q._("retry", null, {
 						hk: "hER94"
 					})))], {
 						hk: "4yOnl8"
-					})), o.a.createElement("div", null, ee._("Scheduled by {=[post owner]}", [ee._param("=[post owner]", o.a.createElement("span", {
-						className: $.a.parametricMetaData
-					}, ee._("{post owner}", [ee._param("post owner", n)], {
+					})), o.a.createElement("div", null, Q._("Scheduled by {=[post owner]}", [Q._param("=[post owner]", o.a.createElement("span", {
+						className: K.a.parametricMetaData
+					}, Q._("{post owner}", [Q._param("post owner", n)], {
 						hk: "25fi1G"
 					})))], {
 						hk: "36vTyl"
 					})))
 				}
 			}
-			var ne = Object(i.b)(null, (e, t) => {
+			var J = Object(i.b)(null, (e, t) => {
 					let {
 						scheduledPost: n
 					} = t;
 					return {
 						onSubmitPostNow: () => {
-							e(E(n.subreddit.id, n.id)), e((e, t) => Object(c.a)(Object(D.n)()(t())))
+							e(E(n.subreddit.id, n.id)), e((e, t) => Object(c.a)(Object(T.n)()(t())))
 						},
-						onViewFailedPost: () => e((e, t) => Object(c.a)(Object(D.w)()(t(), n)))
+						onViewFailedPost: () => e((e, t) => Object(c.a)(Object(T.w)()(t(), n)))
 					}
-				})(te),
-				se = n("./src/reddit/helpers/scheduledPosts/index.ts"),
-				re = n("./src/reddit/icons/svgs/Clock/index.tsx"),
-				oe = n("./src/reddit/components/ScheduledPost/TopMetaLine/TemporalMetaLine/index.m.less"),
-				ie = n.n(oe);
+				})(Y),
+				X = n("./src/reddit/helpers/scheduledPosts/index.ts"),
+				Z = n("./src/reddit/icons/svgs/Clock/index.tsx"),
+				$ = n("./src/reddit/components/ScheduledPost/TopMetaLine/TemporalMetaLine/index.m.less"),
+				ee = n.n($);
 			const {
-				fbt: ae
-			} = n("./node_modules/fbt/lib/FbtPublic.js"), de = e => {
-				return `${Object(se.c)(e.publishAt)} ${Object(se.d)(e.clientTimezone).displayText}`
+				fbt: te
+			} = n("./node_modules/fbt/lib/FbtPublic.js"), ne = e => {
+				return `${Object(X.c)(e.publishAt)} ${Object(X.d)(e.clientTimezone).displayText}`
 			};
-			class ce extends o.a.PureComponent {
+			class se extends o.a.PureComponent {
 				render() {
 					const {
 						scheduledPost: e
 					} = this.props, {
 						owner: t
-					} = e, n = Object(U.o)(t) && t.prefixedName;
+					} = e, n = Object(P.o)(t) && t.prefixedName;
 					return o.a.createElement("div", {
-						className: ie.a.container
-					}, o.a.createElement(re.a, {
-						className: ie.a.clock
-					}), o.a.createElement("div", null, o.a.createElement("div", null, ae._("This post is scheduled for {=[time]}", [ae._param("=[time]", o.a.createElement("span", {
-						className: ie.a.parametricMetaData
-					}, ae._("{time}", [ae._param("time", de(e))], {
+						className: ee.a.container
+					}, o.a.createElement(Z.a, {
+						className: ee.a.clock
+					}), o.a.createElement("div", null, o.a.createElement("div", null, te._("This post is scheduled for {=[time]}", [te._param("=[time]", o.a.createElement("span", {
+						className: ee.a.parametricMetaData
+					}, te._("{time}", [te._param("time", ne(e))], {
 						hk: "JrMs3"
 					})))], {
 						hk: "4gFrnr"
-					})), o.a.createElement("div", null, ae._("Scheduled by {=[post owner]}", [ae._param("=[post owner]", o.a.createElement("span", {
-						className: ie.a.parametricMetaData
-					}, ae._("{post owner}", [ae._param("post owner", n)], {
+					})), o.a.createElement("div", null, te._("Scheduled by {=[post owner]}", [te._param("=[post owner]", o.a.createElement("span", {
+						className: ee.a.parametricMetaData
+					}, te._("{post owner}", [te._param("post owner", n)], {
 						hk: "25fi1G"
 					})))], {
 						hk: "36vTyl"
 					}))))
 				}
 			}
-			var le = ce;
-			class ue extends o.a.PureComponent {
+			var re = se;
+			class oe extends o.a.PureComponent {
 				render() {
 					const {
 						scheduledPost: e
 					} = this.props;
 					switch (e.state) {
-						case U.f.FAILED:
-							return o.a.createElement(ne, {
+						case P.f.FAILED:
+							return o.a.createElement(J, {
 								scheduledPost: e
 							});
-						case U.f.PROCESSING:
-						case U.f.CREATED:
+						case P.f.PROCESSING:
+						case P.f.CREATED:
 						default:
-							return o.a.createElement(le, {
+							return o.a.createElement(re, {
 								scheduledPost: e
 							})
 					}
 				}
 			}
-			var me = ue,
-				pe = n("./src/reddit/helpers/styles/mixins/index.m.less"),
-				be = n.n(pe),
-				fe = n("./src/reddit/components/ScheduledPost/index.m.less"),
-				he = n.n(fe);
-			const _e = {
+			var ie = oe,
+				ae = n("./src/reddit/helpers/styles/mixins/index.m.less"),
+				de = n.n(ae),
+				ce = n("./src/reddit/components/ScheduledPost/index.m.less"),
+				le = n.n(ce);
+			const ue = {
 					isNSFW: !1,
 					media: {
 						content: "",
@@ -47354,11 +47310,11 @@
 						richtextContent: {
 							document: []
 						},
-						rteMode: F.i.RICH_TEXT,
+						rteMode: N.i.RICH_TEXT,
 						type: "rtjson"
 					},
 					thumbnail: {
-						url: M.a.DEFAULT,
+						url: S.a.DEFAULT,
 						width: null,
 						height: null
 					},
@@ -47366,7 +47322,7 @@
 					source: null,
 					isSponsored: !1
 				},
-				ge = Object(d.c)({
+				me = Object(d.c)({
 					media: (e, t) => {
 						let {
 							scheduledPostId: n,
@@ -47378,9 +47334,9 @@
 						});
 						if (!r) return null;
 						const o = {
-								..._e
+								...ue
 							},
-							i = r.postKind === U.e.LINK;
+							i = r.postKind === P.e.LINK;
 						return i && (o.media = null), {
 							...o,
 							isNSFW: r.isNsfw,
@@ -47415,21 +47371,21 @@
 						})
 					}
 				}),
-				ve = Object(i.b)(ge, (e, t) => {
+				pe = Object(i.b)(me, (e, t) => {
 					let {
 						scheduledPostId: n,
 						subredditId: s
 					} = t;
 					return {
 						onSubmitPostNow: () => {
-							e(E(s, n)), e((e, t) => Object(c.a)(Object(D.n)()(t())))
+							e(E(s, n)), e((e, t) => Object(c.a)(Object(T.n)()(t())))
 						},
 						onEditScheduledPost: () => {
-							e(Object(p.b)(s, n)), e((e, t) => Object(c.a)(Object(D.d)()(t())))
+							e(Object(p.b)(s, n)), e((e, t) => Object(c.a)(Object(T.d)()(t())))
 						},
 						onDeleteScheduledPost: () => e(Object(m.a)(s, n)),
 						onOpenOverflow: () => {
-							e((e, t) => Object(c.a)(Object(D.h)(!1)(t())))
+							e((e, t) => Object(c.a)(Object(T.h)(!1)(t())))
 						},
 						onUpdateMetadata: t => e((e, r) => {
 							const o = Object(a.p)(r(), {
@@ -47440,7 +47396,7 @@
 						})
 					}
 				});
-			class xe extends o.a.PureComponent {
+			class be extends o.a.PureComponent {
 				constructor(e) {
 					super(e), this.onSubmitPostNow = () => this.setState({
 						submitConfirmModalIsOpen: !0
@@ -47464,35 +47420,35 @@
 						scheduledPost: n
 					} = this.props;
 					return e && t && n ? o.a.createElement("div", {
-						className: he.a.container
-					}, o.a.createElement(me, {
+						className: le.a.container
+					}, o.a.createElement(ie, {
 						scheduledPost: n
 					}), o.a.createElement("div", {
-						className: be.a.classicPostStyles
-					}, o.a.createElement(k.b, null, o.a.createElement(A, null)), o.a.createElement("div", {
-						style: Object(L.c)(void 0, this.props),
-						className: he.a.backgroundWrapper
+						className: de.a.classicPostStyles
+					}, o.a.createElement(k.b, null, o.a.createElement(I.a, null)), o.a.createElement("div", {
+						style: Object(w.c)(void 0, this.props),
+						className: le.a.backgroundWrapper
 					}, o.a.createElement("div", {
-						className: he.a.mainBody
+						className: le.a.mainBody
 					}, o.a.createElement("div", {
-						className: he.a.thumbnailContainer
+						className: le.a.thumbnailContainer
 					}, o.a.createElement(y.a, {
 						post: e
 					})), o.a.createElement("div", {
-						className: he.a.content
-					}, o.a.createElement("div", null, o.a.createElement(J.a, {
+						className: le.a.content
+					}, o.a.createElement("div", null, o.a.createElement(W.a, {
 						title: n.title
 					}), o.a.createElement(j.a, {
-						className: he.a.flairList,
+						className: le.a.flairList,
 						flair: t
-					})), o.a.createElement(Y.a, {
+					})), o.a.createElement(H.a, {
 						isModDistinguished: n.isModDistinguished,
 						isPostAsMetaMod: n.isPostAsMetaMod,
 						isSticky: !!n.sticky && "NONE" !== n.sticky,
 						subreddit: n.subreddit,
 						owner: n.owner
-					}), o.a.createElement(Q, {
-						onSubmitPostNow: n.state === U.f.FAILED ? void 0 : this.onSubmitPostNow,
+					}), o.a.createElement(G, {
+						onSubmitPostNow: n.state === P.f.FAILED ? void 0 : this.onSubmitPostNow,
 						onEditScheduledPost: this.onEditScheduledPost,
 						onDeleteScheduledPost: this.onDeleteScheduledPost,
 						onUpdateMetadata: this.props.onUpdateMetadata,
@@ -47523,7 +47479,7 @@
 					})) : null
 				}
 			}
-			t.a = Object(l.a)(ve(xe))
+			t.a = Object(l.a)(pe(be))
 		},
 		"./src/reddit/components/SearchResultsContent/searchResultsPageTreatment/searchIgnoreClickContext.ts": function(e, t, n) {
 			"use strict";
@@ -52154,6 +52110,58 @@
 					queryKey: "isUserOnline"
 				}))
 			})
+		},
+		"./src/reddit/components/VerticalVotes/DisabledVerticalVotes.tsx": function(e, t, n) {
+			"use strict";
+			var s = n("./node_modules/fbt/lib/FbtPublic.js"),
+				r = n("./node_modules/react/index.js"),
+				o = n.n(r),
+				i = n("./src/lib/classNames/index.ts"),
+				a = n("./src/reddit/components/VerticalVotes/votes.tsx"),
+				d = n("./src/reddit/controls/Score/index.tsx"),
+				c = n("./src/reddit/models/Vote/index.ts"),
+				l = n("./src/reddit/components/VerticalVotes/index.m.less"),
+				u = n.n(l);
+			class m extends o.a.PureComponent {
+				render() {
+					const {
+						className: e,
+						scoreClassName: t
+					} = this.props;
+					return o.a.createElement("div", {
+						className: Object(i.a)(e, u.a.votesContainer)
+					}, o.a.createElement("button", {
+						className: u.a.disabledVoteIcon,
+						"aria-label": s.fbt._("Upvote", null, {
+							hk: "4aEt1X"
+						}),
+						"aria-pressed": !1,
+						disabled: !0
+					}, o.a.createElement(a.d, {
+						compact: !1,
+						voteState: c.a.notVoted,
+						interactive: !1
+					})), o.a.createElement(d.a, {
+						disableInlineColor: !0,
+						className: Object(i.a)(u.a.Score, u.a.disabledScore, t),
+						score: 0,
+						voteState: c.a.notVoted,
+						isScoreHidden: !0
+					}), o.a.createElement("button", {
+						className: u.a.disabledVoteIcon,
+						"aria-label": s.fbt._("downvote", null, {
+							hk: "4xXpvV"
+						}),
+						"aria-pressed": !1,
+						disabled: !0
+					}, o.a.createElement(a.c, {
+						compact: !1,
+						voteState: c.a.notVoted,
+						interactive: !1
+					})))
+				}
+			}
+			t.a = m
 		},
 		"./src/reddit/components/VerticalVotes/index.m.less": function(e, t, n) {
 			e.exports = {
@@ -78367,4 +78375,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.128872af7145d911c9f1.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.0af3d16f705def30e34a.js.map
