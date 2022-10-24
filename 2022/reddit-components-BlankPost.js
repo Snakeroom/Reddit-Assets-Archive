@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-BlankPost.d270b876521ce07a7af7.js
-// Retrieved at 10/24/2022, 10:40:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-BlankPost.a618e004d020c2204268.js
+// Retrieved at 10/24/2022, 11:50:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-BlankPost"], {
 		"./node_modules/@reddit/i18n-tools/runtime/helpers/locale/index.js": function(e, t, s) {
@@ -848,7 +848,7 @@
 				const {
 					crosspostRoot: o
 				} = t;
-				o && o.type === M.a.Post && o.postInfo && F(e, o.postInfo), s.isStickied && e.pinned.push(i);
+				o && o.type === M.a.Post && o.postInfo && F(e, o.postInfo);
 				const {
 					authorFlair: r
 				} = t;
@@ -871,8 +871,8 @@
 			};
 			var L = s("./src/reddit/models/Comment/index.ts"),
 				V = (e, t) => {
-					var s;
-					const i = {
+					var s, i, o;
+					const r = {
 							authorFlair: {},
 							pinned: new Array,
 							postIds: new Array,
@@ -882,26 +882,31 @@
 							subreddits: {},
 							token: ""
 						},
-						o = null === (s = null == e ? void 0 : e.redditorInfoByName) || void 0 === s ? void 0 : s.elements;
-					if (!o) return i;
+						n = null === (s = null == e ? void 0 : e.redditorInfoByName) || void 0 === s ? void 0 : s.elements;
+					if (!n) return r;
 					const {
-						edges: r
-					} = o;
+						edges: a
+					} = n;
 					for (const {
-							node: n
-						} of r) {
-						if (!n || n.__typename === L.d.Comment) continue;
-						const e = F(i, n);
-						e && i.postIds.push(e)
+							node: c
+						} of a) {
+						if (!c || c.__typename === L.d.Comment) continue;
+						const e = F(r, c);
+						e && r.postIds.push(e)
 					}
-					if (t) i.token = o.pageInfo.endCursor || "";
+					const d = null === (o = null === (i = null == e ? void 0 : e.redditorInfoByName) || void 0 === i ? void 0 : i.profile) || void 0 === o ? void 0 : o.stickyPosts;
+					if (d)
+						for (const {
+								id: c
+							} of d) r.pinned.push(c);
+					if (t) r.token = n.pageInfo.endCursor || "";
 					else {
 						const {
 							postIds: e
-						} = i, t = e[e.length - 1];
-						t && (i.token = t)
+						} = r, t = e[e.length - 1];
+						t && (r.token = t)
 					}
-					return i
+					return r
 				},
 				U = s("./node_modules/@sentry/minimal/esm/index.js"),
 				G = s("./node_modules/deep-diff/index.js"),
@@ -2666,8 +2671,8 @@
 			t.a = p
 		},
 		"./src/redditGQL/operations/ProfileFeed.json": function(e) {
-			e.exports = JSON.parse('{"id":"89320ccc04e7"}')
+			e.exports = JSON.parse('{"id":"7b99d4ae7857"}')
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-BlankPost.d270b876521ce07a7af7.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-BlankPost.a618e004d020c2204268.js.map

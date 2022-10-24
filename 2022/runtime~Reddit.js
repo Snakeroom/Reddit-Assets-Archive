@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/runtime~Reddit.4ed8f3526d576bfded74.js
-// Retrieved at 10/24/2022, 11:10:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/runtime~Reddit.575583d8d28952729253.js
+// Retrieved at 10/24/2022, 11:50:05 AM by Reddit Dataminer v1.0.0
 ! function(e) {
 	function o(o) {
 		for (var a, n, r = o[0], s = o[1], c = o[2], l = 0, b = []; l < r.length; l++) n = r[l], Object.prototype.hasOwnProperty.call(d, n) && d[n] && b.push(d[n][0]), d[n] = 0;
@@ -1559,7 +1559,7 @@
 						ModListing: "9559778a442287c7b063",
 						"vendors~PostCreation~Subreddit": "804e802e502ab366d223",
 						Subreddit: "f445945d30c118ec1033",
-						CommentsPage: "ec36fa82f75d797121cc",
+						CommentsPage: "4834d37572e2e312c71b",
 						"vendors~CryptoHarbergerTaxManageModal~HarbergerTaxManageModal~ModerationPages~PostCreation~Settings~~f8934a85": "fbf6b3871488094312c2",
 						CryptoHarbergerTaxManageModal: "7f1d18091972e1e07aca",
 						HarbergerTaxManageModal: "c1282819479fb98fc0ce",
@@ -1567,7 +1567,7 @@
 						"vendors~PostCreation": "a2355262c2d34d688b8f",
 						PostCreation: "81bd54c7b5fdc9cd61d6",
 						"vendors~ModerationPages": "94c34813eaf24a1890ea",
-						ModerationPages: "fb61269e5acd128174f4",
+						ModerationPages: "f7f79fcc55df52456aee",
 						"vendors~ModStatsChart~Settings~ViewsTooltip": "ca7c845d62fd39d960b6",
 						"vendors~Settings": "86b1cfc53320ea8eef91",
 						Settings: "4f256199f175e30f58ff",
@@ -1641,7 +1641,7 @@
 						FeaturedLiveEntrypointLegacyAnnouncement: "c8061a8775e91fab30bf",
 						"reddit-components-ModQueueActivitySummaryCards": "de7582f9a4f4a0700205",
 						"reddit-components-ModQueueActivitySummaryCards-ModActivityPreview": "d03860ce71433dd605d2",
-						"reddit-components-BlankPost": "d270b876521ce07a7af7",
+						"reddit-components-BlankPost": "a618e004d020c2204268",
 						PennyPurchaseModal: "db1dbf00d1dcd3022c2d",
 						editCollectionModal: "57b3493e5b59e7a2c3e8",
 						ModProgressModule: "4ff20fbf3a996df623ee",
@@ -1807,4 +1807,4 @@
 	var m = c;
 	t()
 }([]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/runtime~Reddit.4ed8f3526d576bfded74.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/runtime~Reddit.575583d8d28952729253.js.map

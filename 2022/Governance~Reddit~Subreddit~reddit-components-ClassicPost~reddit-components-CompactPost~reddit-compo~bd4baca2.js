@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compo~bd4baca2.503addc67c6565cb85c4.js
-// Retrieved at 10/24/2022, 10:40:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compo~bd4baca2.fe5b7a529f258c6c56d4.js
+// Retrieved at 10/24/2022, 11:50:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compo~bd4baca2"], {
 		"./src/higherOrderComponents/withAdClickLocation/Locations.ts": function(e, t, s) {
@@ -263,7 +263,7 @@
 				const {
 					crosspostRoot: i
 				} = t;
-				i && i.type === N.a.Post && i.postInfo && R(e, i.postInfo), s.isStickied && e.pinned.push(r);
+				i && i.type === N.a.Post && i.postInfo && R(e, i.postInfo);
 				const {
 					authorFlair: o
 				} = t;
@@ -286,8 +286,8 @@
 			};
 			var M = s("./src/reddit/models/Comment/index.ts"),
 				U = (e, t) => {
-					var s;
-					const r = {
+					var s, r, i;
+					const o = {
 							authorFlair: {},
 							pinned: new Array,
 							postIds: new Array,
@@ -297,26 +297,31 @@
 							subreddits: {},
 							token: ""
 						},
-						i = null === (s = null == e ? void 0 : e.redditorInfoByName) || void 0 === s ? void 0 : s.elements;
-					if (!i) return r;
+						n = null === (s = null == e ? void 0 : e.redditorInfoByName) || void 0 === s ? void 0 : s.elements;
+					if (!n) return o;
 					const {
-						edges: o
-					} = i;
+						edges: a
+					} = n;
 					for (const {
-							node: n
-						} of o) {
-						if (!n || n.__typename === M.d.Comment) continue;
-						const e = R(r, n);
-						e && r.postIds.push(e)
+							node: c
+						} of a) {
+						if (!c || c.__typename === M.d.Comment) continue;
+						const e = R(o, c);
+						e && o.postIds.push(e)
 					}
-					if (t) r.token = i.pageInfo.endCursor || "";
+					const d = null === (i = null === (r = null == e ? void 0 : e.redditorInfoByName) || void 0 === r ? void 0 : r.profile) || void 0 === i ? void 0 : i.stickyPosts;
+					if (d)
+						for (const {
+								id: c
+							} of d) o.pinned.push(c);
+					if (t) o.token = n.pageInfo.endCursor || "";
 					else {
 						const {
 							postIds: e
-						} = r, t = e[e.length - 1];
-						t && (r.token = t)
+						} = o, t = e[e.length - 1];
+						t && (o.token = t)
 					}
-					return r
+					return o
 				},
 				V = s("./node_modules/@sentry/minimal/esm/index.js"),
 				G = s("./node_modules/deep-diff/index.js"),
@@ -4132,11 +4137,11 @@
 			t.a = m
 		},
 		"./src/redditGQL/operations/ProfileFeed.json": function(e) {
-			e.exports = JSON.parse('{"id":"89320ccc04e7"}')
+			e.exports = JSON.parse('{"id":"7b99d4ae7857"}')
 		},
 		"./src/redditGQL/operations/SubscribedSubreddits.json": function(e) {
 			e.exports = JSON.parse('{"id":"13af47cf5fb3"}')
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compo~bd4baca2.503addc67c6565cb85c4.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compo~bd4baca2.fe5b7a529f258c6c56d4.js.map
