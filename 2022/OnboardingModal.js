@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/OnboardingModal.02adc465a6d5257ab25f.js
-// Retrieved at 10/24/2022, 9:50:07 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/OnboardingModal.cbf9d5ca8047f52f2c92.js
+// Retrieved at 10/24/2022, 10:40:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["OnboardingModal"], {
 		"./node_modules/lodash/_baseRange.js": function(e, t) {
@@ -378,7 +378,7 @@
 				U = n("./src/lib/initializeClient/installReducer.ts"),
 				W = n("./src/reddit/reducers/features/marketplace/index.ts"),
 				H = n("./src/reddit/selectors/experiments/econ/simpleExperiment.ts");
-			const Q = Object(H.a)(b.Wd);
+			const Q = Object(H.a)(b.Td);
 			Object(U.a)({
 				features: {
 					marketplace: W.a
@@ -414,7 +414,7 @@
 						},
 						forceGeopopular: !0,
 						includeCommunityDUs: !1,
-						includeInterestTopics: !!p && !Object(b.wg)(p),
+						includeInterestTopics: !!p && !Object(b.tg)(p),
 						includeFeaturedAnnouncements: !0,
 						includeLiveEvents: !0,
 						includeIdentity: h && !(null === (s = null === (n = e.user.account) || void 0 === n ? void 0 : n.karma) || void 0 === s ? void 0 : s.total),
@@ -2206,9 +2206,9 @@
 					ke = Object(i.e)(X.T),
 					ye = Object(i.e)(lt.g),
 					Ne = Object(i.e)(dt.a),
-					Re = Ne === Ce.dg.CloseOnboarding,
-					Le = Ne === Ce.dg.SkipTopicSelection,
-					Ae = Ne === Ce.dg.SmartSignal,
+					Re = Ne === Ce.ag.CloseOnboarding,
+					Le = Ne === Ce.ag.SkipTopicSelection,
+					Ae = Ne === Ce.ag.SmartSignal,
 					Ge = Object(a.useCallback)(() => {
 						s(Object(p.g)(we.a.ONBOARDING_MODAL_D2X)), Se && s(Object(b.h)()), f && (r(Object(A.t)()), Object(st.a)()), ye && ke && s(Object(u.startChangeUsernameFlow)())
 					}, [s, ke, ye, f, Se, r]),
@@ -4251,8 +4251,8 @@
 			const a = e => {
 				return !(Object(r.c)(e, {
 					experimentEligibilitySelector: r.a,
-					experimentName: s.Ce
-				}) === s.Qd)
+					experimentName: s.ze
+				}) === s.Od)
 			}
 		},
 		"./src/reddit/selectors/experiments/inAppNotification.ts": function(e, t, n) {
@@ -4429,4 +4429,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/OnboardingModal.02adc465a6d5257ab25f.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/OnboardingModal.cbf9d5ca8047f52f2c92.js.map

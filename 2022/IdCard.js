@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/IdCard.21205f1af3cf056c3287.js
-// Retrieved at 10/24/2022, 9:50:07 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/IdCard.01938d3838130c547e4b.js
+// Retrieved at 10/24/2022, 10:40:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["IdCard", "AchievementsActions", "ContributorRequestButton"], {
 		"./node_modules/autosize/dist/autosize.js": function(e, t, n) {
@@ -613,19 +613,19 @@
 					if (!e) return;
 					const s = r(),
 						i = Object(x.l)(s);
-					if (!i || !Object(f.n)(s, {
+					if (!i || !Object(f.f)(s, {
 							subredditId: e
 						})) return;
-					const o = !!Object(g.f)(s, {
+					const o = !!Object(g.e)(s, {
 						subredditId: e,
 						userId: i.id
 					});
 					!t && o || await n(S(e, [i.id]))
-				}, w = e => async (t, n) => !!e && (Object(h.g)(n()) ? (await t(Object(l.c)(e)), !!Object(g.d)(n(), {
+				}, w = e => async (t, n) => !!e && (Object(h.g)(n()) ? (await t(Object(l.c)(e)), !!Object(g.c)(n(), {
 					subredditId: e
-				})) : (await t(Object(u.j)(e, {
+				})) : (await t(Object(u.e)(e, {
 					fullData: !0
-				})), Object(f.g)(n(), {
+				})), Object(f.b)(n(), {
 					subredditId: e
 				}))), N = e => async (t, n) => {
 					var r;
@@ -660,7 +660,7 @@
 						i = Object(x.l)(s);
 					if (!i) return;
 					const o = i.id,
-						a = Object(g.i)(s, {
+						a = Object(g.h)(s, {
 							subredditId: e,
 							userId: o
 						});
@@ -675,7 +675,7 @@
 						i = Object(x.l)(s);
 					if (!i) return;
 					const o = i.id,
-						a = Object(g.h)(s, {
+						a = Object(g.g)(s, {
 							subredditId: e,
 							userId: o
 						});
@@ -698,7 +698,7 @@
 						subredditId: u,
 						achievementFlairType: b,
 						supporterFlairType: h
-					} = e, f = [b, h].filter(Boolean), C = Object(g.e)(a, {
+					} = e, f = [b, h].filter(Boolean), C = Object(g.d)(a, {
 						subredditId: u,
 						userId: l
 					});
@@ -725,7 +725,7 @@
 							subredditId: e,
 							userId: u
 						},
-						h = [Object(g.h)(d, b), Object(g.i)(d, b)].filter(Boolean);
+						h = [Object(g.g)(d, b), Object(g.h)(d, b)].filter(Boolean);
 					n(T({
 						...b,
 						isHidden: t
@@ -1614,7 +1614,7 @@
 			var m = Object(u.a)({
 					ErrorComponent: () => null,
 					LoadingComponent: () => null,
-					getComponent: () => n.e("SubredditPremiumBadgeHovercardTooltip").then(n.bind(null, "./src/reddit/components/Economics/SubredditPremium/Badges/HoverCard/tooltip.tsx")).then(e => e.default)
+					getComponent: () => Promise.all([n.e("EconomicsSubredditPremiumSidebarCards~SubredditPremiumBadgeHovercardTooltip"), n.e("SubredditPremiumBadgeHovercardTooltip")]).then(n.bind(null, "./src/reddit/components/Economics/SubredditPremium/Badges/HoverCard/tooltip.tsx")).then(e => e.default)
 				}),
 				p = n("./src/reddit/components/InfoTextTooltip/index.tsx"),
 				b = n("./src/reddit/featureFlags/index.ts"),
@@ -3378,7 +3378,7 @@
 				fbt: Oe
 			} = n("./node_modules/fbt/lib/FbtPublic.js"), je = z.a.div("FlairSettingsContainer", Ee.a), ke = z.a.div("FlairPreviewWrapper", Ee.a), Te = z.a.div("PreviewTitle", Ee.a), Se = z.a.wrapped(S.r, "TertiaryButton", Ee.a), Ie = z.a.wrapped(Se, "IconButton", Ee.a), we = Object(m.c)({
 				currentUser: N.l,
-				isAchievementFlairModalEnabled: (e, t) => Object(Ce.n)(e, {
+				isAchievementFlairModalEnabled: (e, t) => Object(Ce.f)(e, {
 					subredditId: t.subredditId
 				}),
 				userFlairData: _e.d,
@@ -3427,7 +3427,7 @@
 						hk: "3aBytK"
 					}), i.a.createElement(Fe, {
 						onClick: () => {
-							if (d) c(Object(he.d)());
+							if (d) c(Object(he.c)());
 							else {
 								(e => c(Object(pe.b)({
 									username: e,
@@ -4222,7 +4222,7 @@
 						onClick: g ? _ : void 0,
 						headerButton: i.a.createElement("div", {
 							className: bt.a.headerButtonsContainer
-						}, !z && v && C && l !== Le.Ve.NewModule && i.a.createElement(a.a, {
+						}, !z && v && C && l !== Le.Se.NewModule && i.a.createElement(a.a, {
 							className: bt.a.ModToolsLink,
 							to: C.posts ? `${v.url}about/modqueue` : `${v.url}about/`,
 							onClick: this.onClickModTools
@@ -5817,60 +5817,55 @@
 		"./src/reddit/helpers/trackers/userFlair.ts": function(e, t, n) {
 			"use strict";
 			n.d(t, "c", (function() {
-				return o
+				return i
 			})), n.d(t, "b", (function() {
-				return a
+				return o
 			})), n.d(t, "a", (function() {
-				return d
+				return a
 			})), n.d(t, "d", (function() {
-				return c
+				return d
 			}));
 			var r = n("./src/reddit/helpers/flair.ts"),
-				s = n("./src/reddit/selectors/gold/powerups/index.ts"),
-				i = n("./src/reddit/selectors/telemetry.ts");
-			const o = () => e => ({
+				s = n("./src/reddit/selectors/telemetry.ts");
+			const i = () => e => ({
 					source: "id_card",
 					action: "click",
 					noun: "user_flair_picker",
-					...i.o(e)
+					...s.o(e)
 				}),
-				a = e => t => {
-					const n = i.jb(t),
-						o = Object(s.s)(t, {
-							subredditId: null == n ? void 0 : n.id
-						}),
+				o = e => t => {
+					const n = s.jb(t),
 						{
-							userFlair: a,
-							achievementFlair: d,
-							supporterFlair: c
+							userFlair: i,
+							achievementFlair: o,
+							supporterFlair: a
 						} = e,
-						l = d || c;
+						d = o || a;
 					return {
 						source: "user_flair_picker",
 						action: "click",
 						noun: "user_flair",
-						...i.o(t),
+						...s.o(t),
 						subreddit: n,
 						userFlair: {
-							id: null == a ? void 0 : a.id,
-							title: a ? Object(r.g)(a) : void 0,
-							isActive: !!a || void 0,
-							achievementFlairId: null == d ? void 0 : d.type,
-							achievementFlairTitle: null == d ? void 0 : d.name,
-							isLocked: null == l ? void 0 : l.isLocked,
-							supporterFlairId: null == c ? void 0 : c.type,
-							supporterFlairTitle: null == c ? void 0 : c.name,
-							isSupporter: o
+							id: null == i ? void 0 : i.id,
+							title: i ? Object(r.g)(i) : void 0,
+							isActive: !!i || void 0,
+							achievementFlairId: null == o ? void 0 : o.type,
+							achievementFlairTitle: null == o ? void 0 : o.name,
+							isLocked: null == d ? void 0 : d.isLocked,
+							supporterFlairId: null == a ? void 0 : a.type,
+							supporterFlairTitle: null == a ? void 0 : a.name
 						}
 					}
 				},
-				d = () => e => ({
+				a = () => e => ({
 					source: "user_flair_picker",
 					action: "click",
 					noun: "edit_user_flair",
-					...i.o(e)
+					...s.o(e)
 				}),
-				c = e => t => ({
+				d = e => t => ({
 					source: "user_flair_picker",
 					action: "click",
 					noun: "enable_powerups_flair",
@@ -5878,8 +5873,8 @@
 						value: e ? "0" : "1",
 						oldValue: e ? "1" : "0"
 					},
-					subreddit: i.jb(t),
-					...i.o(t)
+					subreddit: s.jb(t),
+					...s.o(t)
 				})
 		},
 		"./src/reddit/hooks/useClickSourceData.ts": function(e, t, n) {
@@ -6060,4 +6055,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/IdCard.21205f1af3cf056c3287.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/IdCard.01938d3838130c547e4b.js.map

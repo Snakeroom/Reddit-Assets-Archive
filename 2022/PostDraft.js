@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostDraft.6ade9daeddc7d862f623.js
-// Retrieved at 10/24/2022, 9:50:07 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostDraft.6dadcbf2ad62c1232e74.js
+// Retrieved at 10/24/2022, 10:40:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostDraft"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -511,16 +511,16 @@
 							hk: "4Ck6Cm"
 						})
 					}))
-				}, W = Object(i.a)(c.a), H = Object(i.a)(c.t), U = (e, t) => async (n, r, o) => {
+				}, H = Object(i.a)(c.a), W = Object(i.a)(c.t), U = (e, t) => async (n, r, o) => {
 					let {
 						apiContext: i
 					} = o;
 					const a = r();
 					if ((await h(i(), e, t)).ok) {
-						n(W({
+						n(H({
 							collectionId: e,
 							postId: t
-						})), n(H({
+						})), n(W({
 							collectionId: e,
 							postId: t
 						}));
@@ -1286,14 +1286,14 @@
 
 				function F(e) {
 					var t;
-					(o || W(e), c) || (t = e.timeStamp, M(Object(u.A)(b, t)))
+					(o || H(e), c) || (t = e.timeStamp, M(Object(u.A)(b, t)))
 				}
 
 				function A(e) {
 					M(Object(u.q)(b, e.timeStamp))
 				}
 
-				function W(e) {
+				function H(e) {
 					! function(e) {
 						M(Object(u.D)({
 							metadata: e,
@@ -1307,8 +1307,8 @@
 					})
 				}
 
-				function H(e) {
-					s || F(e), o || W(e), M(Object(u.C)(b))
+				function W(e) {
+					s || F(e), o || H(e), M(Object(u.C)(b))
 				}
 
 				function U() {
@@ -1327,9 +1327,9 @@
 						onClick: T,
 						onLoadStart: A,
 						onLoadedData: F,
-						onLoadedMetadata: W,
+						onLoadedMetadata: H,
 						onPause: R,
-						onPlaying: H,
+						onPlaying: W,
 						onTimeUpdate: B,
 						shouldLoad: h,
 						shouldPause: _,
@@ -2566,7 +2566,7 @@
 			})), n.d(t, "i", (function() {
 				return A
 			})), n.d(t, "e", (function() {
-				return W
+				return H
 			}));
 			var s = n("./src/lib/unicodeUtils/index.ts"),
 				r = n("./node_modules/lodash/reduce.js"),
@@ -2670,7 +2670,7 @@
 						i = s.length;
 					for (let a = 0; a < i; a++) {
 						const e = s[a];
-						o.push(e.e === m.x ? e.t : W(e, t, a))
+						o.push(e.e === m.x ? e.t : H(e, t, a))
 					}
 					const d = c.x[r - 1];
 					return a.a.createElement(d, {
@@ -2791,7 +2791,7 @@
 						o = e.length;
 					for (let i = 0; i < o; i++) {
 						const o = e[i];
-						if (o.e === m.B) r.push(H(o, i));
+						if (o.e === m.B) r.push(W(o, i));
 						else if (o.e === m.y) r.push(a.a.createElement(j.a, {
 							key: i,
 							onClickReveal: s
@@ -2808,14 +2808,14 @@
 									media: e
 								}))
 							}
-						} else r.push(W(o, n, i))
+						} else r.push(H(o, n, i))
 					}
 					return r
 				},
-				W = (e, t, n) => {
+				H = (e, t, n) => {
 					switch (e.e) {
 						case m.o:
-							const s = H({
+							const s = W({
 								t: e.t,
 								f: e.f
 							}, 0);
@@ -2855,7 +2855,7 @@
 							}, e.t)
 					}
 				},
-				H = (e, t) => {
+				W = (e, t) => {
 					const {
 						f: n,
 						t: r
@@ -3224,12 +3224,12 @@
 						rtJsonElementProps: i
 					});
 					switch (o) {
-						case h.Wf.SmIcon:
+						case h.Tf.SmIcon:
 							return r.a.createElement(p, {
 								subredditName: s,
 								rtJsonElementProps: i
 							});
-						case h.Wf.SmIconHc:
+						case h.Tf.SmIconHc:
 							return r.a.createElement(p, {
 								subredditName: s,
 								isHoverable: !0,
@@ -4811,8 +4811,8 @@
 					}), r.a.createElement(O, null))) : null
 				})),
 				A = n("./src/reddit/components/PostingSidebar/index.tsx"),
-				W = n("./src/reddit/layout/page/Listing/index.tsx"),
-				H = n("./src/reddit/pages/ErrorPages/index.tsx"),
+				H = n("./src/reddit/layout/page/Listing/index.tsx"),
+				W = n("./src/reddit/pages/ErrorPages/index.tsx"),
 				U = n("./src/reddit/selectors/postDraft.ts");
 			const G = Object(d.u)(),
 				V = Object(i.c)({
@@ -4832,9 +4832,9 @@
 						draft: e,
 						pageLayer: t
 					} = this.props;
-					if (!t || !e) return r.a.createElement(H.b, null);
+					if (!t || !e) return r.a.createElement(W.b, null);
 					const n = e.subredditId;
-					return r.a.createElement(W.a, {
+					return r.a.createElement(H.a, {
 						redditStyle: !0,
 						disableFullscreen: !0,
 						navBar: r.a.createElement("div", null),
@@ -4896,12 +4896,12 @@
 				c = e => {
 					return Object(o.c)(e, {
 						experimentEligibilitySelector: a,
-						experimentName: s.Qf
+						experimentName: s.Nf
 					}) || ""
 				},
 				d = e => {
 					const t = c(e);
-					return t === s.Wf.SmIcon || t === s.Wf.SmIconHc
+					return t === s.Tf.SmIcon || t === s.Tf.SmIconHc
 				},
 				l = (e, t) => {
 					let {
@@ -4927,4 +4927,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostDraft.6ade9daeddc7d862f623.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostDraft.6dadcbf2ad62c1232e74.js.map

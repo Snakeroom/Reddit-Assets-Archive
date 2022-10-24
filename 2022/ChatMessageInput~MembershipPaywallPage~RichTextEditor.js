@@ -1,332 +1,141 @@
-// https://www.redditstatic.com/desktop2x/ChatMessageInput~MembershipPaywallPage~RichTextEditor.3b9588d099c747466468.js
-// Retrieved at 10/17/2022, 12:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ChatMessageInput~MembershipPaywallPage~RichTextEditor.1722e93c7bed491d7159.js
+// Retrieved at 10/24/2022, 10:40:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ChatMessageInput~MembershipPaywallPage~RichTextEditor"], {
-		"./node_modules/draft-js/dist/Draft.css": function(e, t, n) {},
-		"./node_modules/lodash/_arrayReduceRight.js": function(e, t) {
-			e.exports = function(e, t, n, o) {
-				var s = null == e ? 0 : e.length;
-				for (o && s && (n = e[--s]); s--;) n = t(n, e[s], s, e);
-				return n
-			}
-		},
-		"./node_modules/lodash/_baseEachRight.js": function(e, t, n) {
-			var o = n("./node_modules/lodash/_baseForOwnRight.js"),
-				s = n("./node_modules/lodash/_createBaseEach.js")(o, !0);
-			e.exports = s
-		},
-		"./node_modules/lodash/_baseExtremum.js": function(e, t, n) {
-			var o = n("./node_modules/lodash/isSymbol.js");
-			e.exports = function(e, t, n) {
-				for (var s = -1, r = e.length; ++s < r;) {
-					var i = e[s],
-						c = t(i);
-					if (null != c && (void 0 === a ? c == c && !o(c) : n(c, a))) var a = c,
-						l = i
-				}
-				return l
-			}
-		},
-		"./node_modules/lodash/_baseFilter.js": function(e, t, n) {
-			var o = n("./node_modules/lodash/_baseEach.js");
-			e.exports = function(e, t) {
-				var n = [];
-				return o(e, (function(e, o, s) {
-					t(e, o, s) && n.push(e)
-				})), n
-			}
-		},
-		"./node_modules/lodash/_baseForOwnRight.js": function(e, t, n) {
-			var o = n("./node_modules/lodash/_baseForRight.js"),
-				s = n("./node_modules/lodash/keys.js");
-			e.exports = function(e, t) {
-				return e && o(e, t, s)
-			}
-		},
-		"./node_modules/lodash/_baseForRight.js": function(e, t, n) {
-			var o = n("./node_modules/lodash/_createBaseFor.js")(!0);
-			e.exports = o
-		},
-		"./node_modules/lodash/_baseGt.js": function(e, t) {
-			e.exports = function(e, t) {
-				return e > t
-			}
-		},
-		"./node_modules/lodash/_baseRange.js": function(e, t) {
-			var n = Math.ceil,
-				o = Math.max;
-			e.exports = function(e, t, s, r) {
-				for (var i = -1, c = o(n((t - e) / (s || 1)), 0), a = Array(c); c--;) a[r ? c : ++i] = e, e += s;
-				return a
-			}
-		},
-		"./node_modules/lodash/_baseWhile.js": function(e, t, n) {
-			var o = n("./node_modules/lodash/_baseSlice.js");
-			e.exports = function(e, t, n, s) {
-				for (var r = e.length, i = s ? r : -1;
-					(s ? i-- : ++i < r) && t(e[i], i, e););
-				return n ? o(e, s ? 0 : i, s ? i + 1 : r) : o(e, s ? i + 1 : 0, s ? r : i)
-			}
-		},
-		"./node_modules/lodash/_charsEndIndex.js": function(e, t, n) {
-			var o = n("./node_modules/lodash/_baseIndexOf.js");
-			e.exports = function(e, t) {
-				for (var n = e.length; n-- && o(t, e[n], 0) > -1;);
-				return n
-			}
-		},
-		"./node_modules/lodash/_createRange.js": function(e, t, n) {
-			var o = n("./node_modules/lodash/_baseRange.js"),
-				s = n("./node_modules/lodash/_isIterateeCall.js"),
-				r = n("./node_modules/lodash/toFinite.js");
-			e.exports = function(e) {
-				return function(t, n, i) {
-					return i && "number" != typeof i && s(t, n, i) && (n = i = void 0), t = r(t), void 0 === n ? (n = t, t = 0) : n = r(n), i = void 0 === i ? t < n ? 1 : -1 : r(i), o(t, n, i, e)
-				}
-			}
-		},
-		"./node_modules/lodash/_escapeHtmlChar.js": function(e, t, n) {
-			var o = n("./node_modules/lodash/_basePropertyOf.js")({
-				"&": "&amp;",
-				"<": "&lt;",
-				">": "&gt;",
-				'"': "&quot;",
-				"'": "&#39;"
-			});
-			e.exports = o
-		},
-		"./node_modules/lodash/chunk.js": function(e, t, n) {
-			var o = n("./node_modules/lodash/_baseSlice.js"),
-				s = n("./node_modules/lodash/_isIterateeCall.js"),
-				r = n("./node_modules/lodash/toInteger.js"),
-				i = Math.ceil,
-				c = Math.max;
-			e.exports = function(e, t, n) {
-				t = (n ? s(e, t, n) : void 0 === t) ? 1 : c(r(t), 0);
-				var a = null == e ? 0 : e.length;
-				if (!a || t < 1) return [];
-				for (var l = 0, d = 0, u = Array(i(a / t)); l < a;) u[d++] = o(e, l, l += t);
-				return u
-			}
-		},
-		"./node_modules/lodash/dropRightWhile.js": function(e, t, n) {
-			var o = n("./node_modules/lodash/_baseIteratee.js"),
-				s = n("./node_modules/lodash/_baseWhile.js");
-			e.exports = function(e, t) {
-				return e && e.length ? s(e, o(t, 3), !0, !0) : []
-			}
-		},
-		"./node_modules/lodash/escape.js": function(e, t, n) {
-			var o = n("./node_modules/lodash/_escapeHtmlChar.js"),
-				s = n("./node_modules/lodash/toString.js"),
-				r = /[&<>"']/g,
-				i = RegExp(r.source);
-			e.exports = function(e) {
-				return (e = s(e)) && i.test(e) ? e.replace(r, o) : e
-			}
-		},
-		"./node_modules/lodash/filter.js": function(e, t, n) {
-			var o = n("./node_modules/lodash/_arrayFilter.js"),
-				s = n("./node_modules/lodash/_baseFilter.js"),
-				r = n("./node_modules/lodash/_baseIteratee.js"),
-				i = n("./node_modules/lodash/isArray.js");
-			e.exports = function(e, t) {
-				return (i(e) ? o : s)(e, r(t, 3))
-			}
-		},
-		"./node_modules/lodash/includes.js": function(e, t, n) {
-			var o = n("./node_modules/lodash/_baseIndexOf.js"),
-				s = n("./node_modules/lodash/isArrayLike.js"),
-				r = n("./node_modules/lodash/isString.js"),
-				i = n("./node_modules/lodash/toInteger.js"),
-				c = n("./node_modules/lodash/values.js"),
-				a = Math.max;
-			e.exports = function(e, t, n, l) {
-				e = s(e) ? e : c(e), n = n && !l ? i(n) : 0;
-				var d = e.length;
-				return n < 0 && (n = a(d + n, 0)), r(e) ? n <= d && e.indexOf(t, n) > -1 : !!d && o(e, t, n) > -1
-			}
-		},
-		"./node_modules/lodash/maxBy.js": function(e, t, n) {
-			var o = n("./node_modules/lodash/_baseExtremum.js"),
-				s = n("./node_modules/lodash/_baseGt.js"),
-				r = n("./node_modules/lodash/_baseIteratee.js");
-			e.exports = function(e, t) {
-				return e && e.length ? o(e, r(t, 2), s) : void 0
-			}
-		},
-		"./node_modules/lodash/range.js": function(e, t, n) {
-			var o = n("./node_modules/lodash/_createRange.js")();
-			e.exports = o
-		},
-		"./node_modules/lodash/reduceRight.js": function(e, t, n) {
-			var o = n("./node_modules/lodash/_arrayReduceRight.js"),
-				s = n("./node_modules/lodash/_baseEachRight.js"),
-				r = n("./node_modules/lodash/_baseIteratee.js"),
-				i = n("./node_modules/lodash/_baseReduce.js"),
-				c = n("./node_modules/lodash/isArray.js");
-			e.exports = function(e, t, n) {
-				var a = c(e) ? o : i,
-					l = arguments.length < 3;
-				return a(e, r(t, 4), n, l, s)
-			}
-		},
-		"./node_modules/lodash/takeWhile.js": function(e, t, n) {
-			var o = n("./node_modules/lodash/_baseIteratee.js"),
-				s = n("./node_modules/lodash/_baseWhile.js");
-			e.exports = function(e, t) {
-				return e && e.length ? s(e, o(t, 3)) : []
-			}
-		},
-		"./node_modules/lodash/trimEnd.js": function(e, t, n) {
-			var o = n("./node_modules/lodash/_baseToString.js"),
-				s = n("./node_modules/lodash/_castSlice.js"),
-				r = n("./node_modules/lodash/_charsEndIndex.js"),
-				i = n("./node_modules/lodash/_stringToArray.js"),
-				c = n("./node_modules/lodash/toString.js"),
-				a = n("./node_modules/lodash/_trimmedEndIndex.js");
-			e.exports = function(e, t, n) {
-				if ((e = c(e)) && (n || void 0 === t)) return e.slice(0, a(e) + 1);
-				if (!e || !(t = o(t))) return e;
-				var l = i(e),
-					d = r(l, i(t)) + 1;
-				return s(l, 0, d).join("")
-			}
-		},
-		"./src/lib/forEachGroup/index.ts": function(e, t, n) {
+		"./src/lib/forEachGroup/index.ts": function(t, e, n) {
 			"use strict";
-			n.d(t, "a", (function() {
-				return s
+			n.d(e, "a", (function() {
+				return r
 			}));
-			const o = e => e;
+			const o = t => t;
 
-			function s(e, t, n) {
-				const [s, r] = Array.isArray(e) ? [e.length, t => e[t]] : [e.size, t => e.get(t)], {
+			function r(t, e, n) {
+				const [r, s] = Array.isArray(t) ? [t.length, e => t[e]] : [t.size, e => t.get(e)], {
 					keyFn: i = o
-				} = t || {};
+				} = e || {};
 				let {
 					start: c = 0,
-					end: a = s
-				} = t || {};
-				if ((c = c < 0 ? 0 : c) >= (a = a > s ? s : a)) return;
-				let l = r(c),
+					end: a = r
+				} = e || {};
+				if ((c = c < 0 ? 0 : c) >= (a = a > r ? r : a)) return;
+				let l = s(c),
 					d = i(l, c),
 					u = c;
 				for (let o = c + 1; o < a; o++) {
-					const e = r(o),
-						t = i(e, o);
-					if (t !== d) {
+					const t = s(o),
+						e = i(t, o);
+					if (e !== d) {
 						if (!1 === n(l, d, u, o)) return;
-						d = t, u = o, l = e
+						d = e, u = o, l = t
 					}
 				}
 				n(l, d, u, a)
 			}
 		},
-		"./src/lib/linkMatchers/index.ts": function(e, t, n) {
+		"./src/lib/linkMatchers/index.ts": function(t, e, n) {
 			"use strict";
-			n.d(t, "f", (function() {
+			n.d(e, "f", (function() {
 				return h
-			})), n.d(t, "e", (function() {
+			})), n.d(e, "e", (function() {
 				return m
-			})), n.d(t, "g", (function() {
+			})), n.d(e, "g", (function() {
 				return g
-			})), n.d(t, "j", (function() {
+			})), n.d(e, "j", (function() {
 				return f
-			})), n.d(t, "a", (function() {
+			})), n.d(e, "a", (function() {
 				return b
-			})), n.d(t, "b", (function() {
+			})), n.d(e, "b", (function() {
 				return y
-			})), n.d(t, "c", (function() {
+			})), n.d(e, "c", (function() {
 				return S
-			})), n.d(t, "d", (function() {
-				return x
-			})), n.d(t, "h", (function() {
+			})), n.d(e, "d", (function() {
 				return C
-			})), n.d(t, "i", (function() {
+			})), n.d(e, "h", (function() {
+				return x
+			})), n.d(e, "i", (function() {
 				return O
 			}));
 			var o = n("./node_modules/linkify-it/index.js"),
-				s = n.n(o),
-				r = n("./node_modules/tlds/index.js"),
-				i = n.n(r),
+				r = n.n(o),
+				s = n("./node_modules/tlds/index.js"),
+				i = n.n(s),
 				c = n("./src/lib/linkMatchers/customLinks.ts"),
 				a = n("./node_modules/lodash/values.js"),
 				l = n.n(a);
-			const d = e => l()(c.b).includes(e.substring(1)),
+			const d = t => l()(c.b).includes(t.substring(1)),
 				u = ["//", "ftp:", "http:", "https:", "mailto:"],
-				p = e => ((e, t) => (t.forEach(t => e.add(t, null)), e))(e, u),
-				h = s()().tlds(i.a).set({
+				p = t => ((t, e) => (e.forEach(e => t.add(e, null)), t))(t, u),
+				h = r()().tlds(i.a).set({
 					fuzzyIP: !0
 				}),
-				m = s()().set({
+				m = r()().set({
 					fuzzyIP: !0,
 					fuzzyEmail: !1
 				}).add(c.g.mention.prefix, c.g.mention.config),
-				g = p(s()()).set({
+				g = p(r()()).set({
 					fuzzyLink: !1,
 					fuzzyEmail: !1
 				}).add(c.g.subreddit.prefix, c.g.subreddit.config).add(c.g.subredditFull.prefix, c.g.subreddit.config),
-				f = p(s()()).set({
+				f = p(r()()).set({
 					fuzzyLink: !1,
 					fuzzyEmail: !1
 				}).add(c.g.profile.prefix, c.g.profile.config).add(c.g.profileFull.prefix, c.g.profile.config),
-				b = s()().tlds(i.a).set({
+				b = r()().tlds(i.a).set({
 					fuzzyIP: !0
 				}).add(c.g.subreddit.prefix, c.g.subreddit.config).add(c.g.subredditFull.prefix, c.g.subreddit.config).add(c.g.profile.prefix, c.g.profile.config).add(c.g.profileFull.prefix, c.g.profile.config).add(c.g.mention.prefix, c.g.mention.config),
-				y = s()().tlds(i.a).set({
+				y = r()().tlds(i.a).set({
 					fuzzyIP: !0,
 					fuzzyEmail: !1
 				}).add(c.g.subreddit.prefix, c.g.subredditFullUrl.config).add(c.g.subredditFull.prefix, c.g.subredditFullUrl.config),
 				E = h.normalize;
-			h.normalize = e => {
-				E.call(h, e), !e.schema && e.url.startsWith("http:") && (e.url = `https:${e.url.slice(5)}`)
+			h.normalize = t => {
+				E.call(h, t), !t.schema && t.url.startsWith("http:") && (t.url = `https:${t.url.slice(5)}`)
 			};
-			const S = (e, t) => {
-					return (b.match(e) || []).filter(e => {
-						const n = d(e.text);
-						return !n || n && t
+			const S = (t, e) => {
+					return (b.match(t) || []).filter(t => {
+						const n = d(t.text);
+						return !n || n && e
 					})
 				},
-				x = e => {
-					return [...f.match(e) || [], ...m.match(e) || []].map(e => !d(e.text) && e.text.replace(c.a, "")).filter(e => e)
+				C = t => {
+					return [...f.match(t) || [], ...m.match(t) || []].map(t => !d(t.text) && t.text.replace(c.a, "")).filter(t => t)
 				},
-				C = (e, t) => {
-					const n = e.match(t);
-					if (n && 1 === n.length && 0 === n[0].index && n[0].lastIndex === t.length) return n[0]
+				x = (t, e) => {
+					const n = t.match(e);
+					if (n && 1 === n.length && 0 === n[0].index && n[0].lastIndex === e.length) return n[0]
 				},
-				O = e => {
-					const t = h.match(e);
-					if (t && 1 === t.length && 0 === t[0].index) {
-						const n = t[0];
-						return n.lastIndex === e.length ? n : ((e, t) => {
-							const n = e.substring(t.lastIndex);
-							if (/.*\/\/.*\/.*/.test(t.url) && /^(\?|\!)+$/.test(n)) return t.lastIndex += n.length, t.url += n, t
-						})(e, n)
+				O = t => {
+					const e = h.match(t);
+					if (e && 1 === e.length && 0 === e[0].index) {
+						const n = e[0];
+						return n.lastIndex === t.length ? n : ((t, e) => {
+							const n = t.substring(e.lastIndex);
+							if (/.*\/\/.*\/.*/.test(e.url) && /^(\?|\!)+$/.test(n)) return e.lastIndex += n.length, e.url += n, e
+						})(t, n)
 					}
 				}
 		},
-		"./src/reddit/actions/economics/subredditPremium/thunkedActions.ts": function(e, t, n) {
+		"./src/reddit/actions/economics/subredditPremium/thunkedActions.ts": function(t, e, n) {
 			"use strict";
-			n.d(t, "a", (function() {
+			n.d(e, "a", (function() {
 				return O
-			})), n.d(t, "g", (function() {
+			})), n.d(e, "g", (function() {
 				return k
-			})), n.d(t, "b", (function() {
+			})), n.d(e, "b", (function() {
 				return T
-			})), n.d(t, "d", (function() {
+			})), n.d(e, "d", (function() {
 				return v
-			})), n.d(t, "e", (function() {
+			})), n.d(e, "e", (function() {
 				return j
-			})), n.d(t, "c", (function() {
-				return _
-			})), n.d(t, "f", (function() {
+			})), n.d(e, "c", (function() {
 				return R
+			})), n.d(e, "f", (function() {
+				return w
 			}));
 			n("./node_modules/core-js/modules/web.dom.iterable.js");
 			var o = n("./node_modules/lodash/forOwn.js"),
-				s = n.n(o),
-				r = n("./src/reddit/actions/governance/errorToast.ts"),
+				r = n.n(o),
+				s = n("./src/reddit/actions/governance/errorToast.ts"),
 				i = n("./src/reddit/endpoints/economics/emojis.ts"),
 				c = n("./src/reddit/endpoints/economics/specialMembership.ts"),
 				a = n("./src/reddit/endpoints/economics/subredditPremium.ts"),
@@ -334,10 +143,10 @@
 				d = n("./src/config.ts"),
 				u = n("./src/reddit/endpoints/governance/requester.ts");
 
-			function p(e, t, n) {
-				return Object(u.a)(e, {
+			function p(t, e, n) {
+				return Object(u.a)(t, {
 					method: "get",
-					endpoint: `${d.a.metaUrl}/products/${t}?owners=${n}` + "&types=emotes_pack,giphy"
+					endpoint: `${d.a.metaUrl}/products/${e}?owners=${n}` + "&types=emotes_pack,giphy"
 				})
 			}
 			var h = n("./src/reddit/models/Badge/index.ts"),
@@ -349,162 +158,162 @@
 				E = n("./src/reddit/actions/economics/me/thunkedActions.ts"),
 				S = n("./src/reddit/actions/economics/subredditPremium/actionCreators.ts");
 
-			function x(e) {
-				return !!e && "removeBadge" === e.type
+			function C(t) {
+				return !!t && "removeBadge" === t.type
 			}
 
-			function C(e) {
-				if (!x(e)) return e
+			function x(t) {
+				if (!C(t)) return t
 			}
-			const O = () => async (e, t, n) => {
+			const O = () => async (t, e, n) => {
 				let {
 					apiContext: o
 				} = n;
-				if (!t().user.account) return;
-				await e(Object(E.b)({
+				if (!e().user.account) return;
+				await t(Object(E.b)({
 					includeMemberships: !0
 				}));
-				const s = t().economics.me.data.specialMemberships || {},
-					r = Object.keys(s);
-				if (r.length) {
-					const t = await Object(c.e)(o(), r);
-					t.ok && e(Object(S.g)(t.body))
+				const r = e().economics.me.data.specialMemberships || {},
+					s = Object.keys(r);
+				if (s.length) {
+					const e = await Object(c.e)(o(), s);
+					e.ok && t(Object(S.g)(e.body))
 				}
-			}, k = (e, t) => async (n, o, s) => {
-				let {
-					apiContext: r
-				} = s;
-				const i = o().user.account,
-					c = o().economics.subredditPremium[e],
-					l = !c || c.status !== f.a.Fetched || t;
-				if (i && l) {
-					const t = await Object(a.a)(r(), e, i.id);
-					n(Object(S.i)(t))
-				}
-			}, T = e => async (t, n, o) => {
+			}, k = (t, e) => async (n, o, r) => {
 				let {
 					apiContext: s
+				} = r;
+				const i = o().user.account,
+					c = o().economics.subredditPremium[t],
+					l = !c || c.status !== f.a.Fetched || e;
+				if (i && l) {
+					const e = await Object(a.a)(s(), t, i.id);
+					n(Object(S.i)(e))
+				}
+			}, T = t => async (e, n, o) => {
+				let {
+					apiContext: r
 				} = o;
 				const i = n(),
 					c = i.user.account,
-					a = Object(b.f)(i, e.subredditId),
-					d = Object.keys(a).map(e => a[e]).filter(Boolean);
-				if (c && e.badge) {
+					a = Object(b.f)(i, t.subredditId),
+					d = Object.keys(a).map(t => a[t]).filter(Boolean);
+				if (c && t.badge) {
 					let n, o;
-					n = e.placement === h.a.First ? a[m.a.Loyalty] : e.placement === h.a.Second ? a[m.a.Achievement] : a[m.a.Cosmetic], t(Object(S.a)({
-						...e,
-						badge: C(e.badge),
+					n = t.placement === h.a.First ? a[m.a.Loyalty] : t.placement === h.a.Second ? a[m.a.Achievement] : a[m.a.Cosmetic], e(Object(S.a)({
+						...t,
+						badge: x(t.badge),
 						currentAppliedBadges: d,
 						userId: c.id
-					})), x(e.badge) && n ? o = await Object(l.a)(s(), e.subredditId, n.id, !1) : x(e.badge) || (o = await Object(l.a)(s(), e.subredditId, e.badge.id)), o && !o.ok && (t(Object(S.a)({
-						...e,
+					})), C(t.badge) && n ? o = await Object(l.a)(r(), t.subredditId, n.id, !1) : C(t.badge) || (o = await Object(l.a)(r(), t.subredditId, t.badge.id)), o && !o.ok && (e(Object(S.a)({
+						...t,
 						badge: n,
 						currentAppliedBadges: d,
 						userId: c.id
-					})), Object(r.a)(t, o.error))
+					})), Object(s.a)(e, o.error))
 				}
-			}, v = (e, t) => async (n, o, s) => {
+			}, v = (t, e) => async (n, o, r) => {
 				let {
-					apiContext: r
-				} = s;
-				await n(k(e, !0));
-				const i = o().economics.subredditPremium[e];
+					apiContext: s
+				} = r;
+				await n(k(t, !0));
+				const i = o().economics.subredditPremium[t];
 				if (i && i.status === f.a.Fetched) {
-					const o = i.data.userOwnedBadges.find(e => e.type === t.id);
+					const o = i.data.userOwnedBadges.find(t => t.type === e.id);
 					o && (n(T({
 						badge: o,
-						subredditId: e,
+						subredditId: t,
 						placement: o.placement
 					})), n(Object(S.d)(m.c.MyBadges)))
 				}
-			}, j = e => async (t, n, o) => {
+			}, j = t => async (e, n, o) => {
 				let {
 					apiContext: c
 				} = o;
 				const a = n().user.account,
-					l = !n().economics.emotes[e],
-					d = !n().economics.gifs[e];
+					l = !n().economics.emotes[t],
+					d = !n().economics.gifs[t];
 				if (a && (l || d)) {
-					const [n, o] = await Promise.all([Object(i.b)(c(), e), p(c(), e, a.id)]);
-					if (!o.ok) return void Object(r.a)(t, o.error);
+					const [n, o] = await Promise.all([Object(i.b)(c(), t), p(c(), t, a.id)]);
+					if (!o.ok) return void Object(s.a)(e, o.error);
 					const l = {
 						emotes: [],
 						emoteCollections: n.ok ? n.body : {},
 						giphy: []
 					};
-					s()(o.body, e => {
-						e.type === g.a.EmotesPack ? l.emotes.push(e) : e.type === g.a.Giphy && l.giphy.push(e)
-					}), t(Object(S.e)({
-						subredditId: e,
+					r()(o.body, t => {
+						t.type === g.a.EmotesPack ? l.emotes.push(t) : t.type === g.a.Giphy && l.giphy.push(t)
+					}), e(Object(S.e)({
+						subredditId: t,
 						products: l
 					}))
 				}
-			}, _ = (e, t, n) => async (o, s, r) => {
+			}, R = (t, e, n) => async (o, r, s) => {
 				let {
 					apiContext: i
-				} = r;
-				if (await o(k(e, !0)), n && t) {
-					const n = s(),
-						r = Object(b.f)(n, e),
-						i = Object(y.a)(n, t);
-					if (!r[Object(m.d)(i.placement)] && i) {
-						const t = Object(b.l)(n, {
-							subredditId: e,
+				} = s;
+				if (await o(k(t, !0)), n && e) {
+					const n = r(),
+						s = Object(b.f)(n, t),
+						i = Object(y.a)(n, e);
+					if (!s[Object(m.d)(i.placement)] && i) {
+						const e = Object(b.l)(n, {
+							subredditId: t,
 							badge: i
 						});
-						t && await o(T({
-							badge: t,
-							subredditId: e
+						e && await o(T({
+							badge: e,
+							subredditId: t
 						}))
 					}
 					o(Object(S.c)({
-						subredditId: e,
+						subredditId: t,
 						initialView: m.c.MyBadges
 					}))
 				}
-			}, R = e => async (t, n, o) => {
+			}, w = t => async (e, n, o) => {
 				let {
-					apiContext: s
+					apiContext: r
 				} = o;
 				const {
-					wallet: r
-				} = await Object(c.c)(s(), e);
-				t(Object(S.f)({
-					wallet: r
-				})), await t(k(e.subredditId, !0))
+					wallet: s
+				} = await Object(c.c)(r(), t);
+				e(Object(S.f)({
+					wallet: s
+				})), await e(k(t.subredditId, !0))
 			}
 		},
-		"./src/reddit/actions/subredditAutocomplete/index.ts": function(e, t, n) {
+		"./src/reddit/actions/subredditAutocomplete/index.ts": function(t, e, n) {
 			"use strict";
-			n.d(t, "a", (function() {
+			n.d(e, "a", (function() {
 				return g
 			}));
 			var o = n("./src/lib/makeActionCreator/index.ts"),
-				s = n("./src/lib/makeGqlRequest/index.ts"),
-				r = n("./src/redditGQL/operations/SubredditTypeaheadSearch.json"),
-				i = (e, t) => Object(s.a)(e, {
-					...r,
-					variables: t
+				r = n("./src/lib/makeGqlRequest/index.ts"),
+				s = n("./src/redditGQL/operations/SubredditTypeaheadSearch.json"),
+				i = (t, e) => Object(r.a)(t, {
+					...s,
+					variables: e
 				}),
 				c = n("./src/reddit/helpers/graphql/normalizeAllowedPostTypesFromGql/index.ts"),
-				a = e => {
+				a = t => {
 					let {
-						allowedPostTypes: t,
+						allowedPostTypes: e,
 						id: n,
 						isCrosspostDestination: o,
-						isNsfw: s,
-						name: r,
+						isNsfw: r,
+						name: s,
 						styles: i,
 						subscribersCount: a
-					} = e;
+					} = t;
 					return {
-						allowedPostTypes: Object(c.a)(t),
+						allowedPostTypes: Object(c.a)(e),
 						communityIcon: i && i.icon || "",
 						icon: i && i.legacyIcon && i.legacyIcon.url || "",
 						id: n,
 						isCrosspostDestination: o,
-						isNsfw: s,
-						name: r,
+						isNsfw: r,
+						name: s,
 						primaryColor: i && i.primaryColor || "",
 						subscribers: a
 					}
@@ -515,13 +324,13 @@
 			const p = Object(o.a)(u.c),
 				h = Object(o.a)(u.b),
 				m = Object(o.a)(u.a),
-				g = function(e) {
-					let t = arguments.length > 1 && void 0 !== arguments[1] && arguments[1];
-					return async (n, o, s) => {
+				g = function(t) {
+					let e = arguments.length > 1 && void 0 !== arguments[1] && arguments[1];
+					return async (n, o, r) => {
 						let {
-							gqlContext: r
-						} = s;
-						const c = Object(l.i)(e);
+							gqlContext: s
+						} = r;
+						const c = Object(l.i)(t);
 						if (!c) return;
 						const u = o(),
 							g = u.subredditAutocomplete;
@@ -532,15 +341,15 @@
 						n(p({
 							key: c
 						}));
-						const f = await i(r(), {
+						const f = await i(s(), {
 							query: c,
-							includeNsfw: t
+							includeNsfw: e
 						});
 						if (f.ok) {
-							const e = f.body.data.subredditTypeahead.subreddits.edges.map(e => a(e.node));
+							const t = f.body.data.subredditTypeahead.subreddits.edges.map(t => a(t.node));
 							n(h({
 								key: c,
-								subreddits: e
+								subreddits: t
 							}))
 						} else n(m({
 							key: c,
@@ -549,8 +358,8 @@
 					}
 				}
 		},
-		"./src/reddit/components/CollapseIntoOverflow/index.m.less": function(e, t, n) {
-			e.exports = {
+		"./src/reddit/components/CollapseIntoOverflow/index.m.less": function(t, e, n) {
+			t.exports = {
 				hidden: "_2x_bJPl7Q970NCRxOS36QB",
 				innerWrapper: "_3oLr47tuKGv2mNpavCZ2X0",
 				outerWrapper: "_1wi_3uF8fUynqe5reIop-G",
@@ -560,52 +369,52 @@
 				postWrap: "WaTxGJXojt1RbZOH3q6eC"
 			}
 		},
-		"./src/reddit/components/CollapseIntoOverflow/index.tsx": function(e, t, n) {
+		"./src/reddit/components/CollapseIntoOverflow/index.tsx": function(t, e, n) {
 			"use strict";
-			n.d(t, "a", (function() {
+			n.d(e, "a", (function() {
 				return m
 			}));
 			var o = n("./src/lib/fastdom/index.ts"),
-				s = n("./node_modules/react/index.js"),
-				r = n.n(s),
+				r = n("./node_modules/react/index.js"),
+				s = n.n(r),
 				i = n("./src/lib/classNames/index.ts"),
 				c = n("./src/reddit/components/OverflowMenu/index.tsx"),
 				a = n("./src/reddit/helpers/richTextEditor/index.ts"),
 				l = n("./src/reddit/components/CollapseIntoOverflow/index.m.less"),
 				d = n.n(l);
 			const u = 33,
-				p = e => e.preventDefault(),
-				h = (e, t) => `${e===a.a.Post?"Post":"Comment"}--Overflow-Dropdown__${t}`;
-			class m extends r.a.Component {
-				constructor(e) {
-					super(e), this.breakpoints = [], this.updateCurrentBreakpoint = () => {
+				p = t => t.preventDefault(),
+				h = (t, e) => `${t===a.a.Post?"Post":"Comment"}--Overflow-Dropdown__${e}`;
+			class m extends s.a.Component {
+				constructor(t) {
+					super(t), this.breakpoints = [], this.updateCurrentBreakpoint = () => {
 						o.a.read(() => {
 							if (!this.container) return;
 							const {
-								indexOfCurrentBreakpoint: e,
-								totalNumCollapsibleItems: t
+								indexOfCurrentBreakpoint: t,
+								totalNumCollapsibleItems: e
 							} = this.state, n = this.container.clientWidth;
-							let s = this.breakpoints.findIndex((e, o) => {
-								const s = o + 1 < t - 1,
-									r = this.breakpoints[o + 1] + (s ? u : 0);
-								return n < r
+							let r = this.breakpoints.findIndex((t, o) => {
+								const r = o + 1 < e - 1,
+									s = this.breakpoints[o + 1] + (r ? u : 0);
+								return n < s
 							});
-							s < 0 && (s = t - 1), s !== e && o.a.write(() => {
+							r < 0 && (r = e - 1), r !== t && o.a.write(() => {
 								this.setState({
-									indexOfCurrentBreakpoint: s,
-									shouldShowOverflow: s < t - 1
+									indexOfCurrentBreakpoint: r,
+									shouldShowOverflow: r < e - 1
 								})
 							})
 						})
 					};
-					const t = this.getTotalNumCollapsibleItems();
-					this.state = this.calculateOverflowState(t)
+					const e = this.getTotalNumCollapsibleItems();
+					this.state = this.calculateOverflowState(e)
 				}
-				calculateOverflowState(e) {
+				calculateOverflowState(t) {
 					return {
-						indexOfCurrentBreakpoint: e - 1,
+						indexOfCurrentBreakpoint: t - 1,
 						shouldShowOverflow: !1,
-						totalNumCollapsibleItems: e
+						totalNumCollapsibleItems: t
 					}
 				}
 				componentDidMount() {
@@ -615,65 +424,65 @@
 					window.removeEventListener("resize", this.updateCurrentBreakpoint)
 				}
 				componentDidUpdate() {
-					const e = this.getTotalNumCollapsibleItems();
-					e !== this.state.totalNumCollapsibleItems && o.a.write(() => {
-						this.breakpoints = [], this.setState(this.calculateOverflowState(e))
+					const t = this.getTotalNumCollapsibleItems();
+					t !== this.state.totalNumCollapsibleItems && o.a.write(() => {
+						this.breakpoints = [], this.setState(this.calculateOverflowState(t))
 					})
 				}
 				getTotalNumCollapsibleItems() {
-					return Array.isArray(this.props.children) ? this.props.children.reduce((e, t) => (Array.isArray(t) ? e += t.length : t && e++, e), 0) : 1
+					return Array.isArray(this.props.children) ? this.props.children.reduce((t, e) => (Array.isArray(e) ? t += e.length : e && t++, t), 0) : 1
 				}
-				registerBreakpoint(e, t) {
-					this.breakpoints[t] = 0, o.a.read(() => {
-						if (e && e.clientWidth) {
-							const n = e.clientWidth;
-							this.breakpoints[t] = 0 === t ? n : this.breakpoints[t - 1] + n, this.breakpoints[this.state.totalNumCollapsibleItems - 1] && this.updateCurrentBreakpoint()
+				registerBreakpoint(t, e) {
+					this.breakpoints[e] = 0, o.a.read(() => {
+						if (t && t.clientWidth) {
+							const n = t.clientWidth;
+							this.breakpoints[e] = 0 === e ? n : this.breakpoints[e - 1] + n, this.breakpoints[this.state.totalNumCollapsibleItems - 1] && this.updateCurrentBreakpoint()
 						}
 					})
 				}
 				render() {
 					const {
-						children: e,
-						className: t,
+						children: t,
+						className: e,
 						oveflowMenuDropdownId: n,
 						onOverflowMenuClick: o,
-						renderOverflowMenuTooltip: s,
+						renderOverflowMenuTooltip: r,
 						editorType: l
 					} = this.props, {
 						indexOfCurrentBreakpoint: u,
 						shouldShowOverflow: m
-					} = this.state, g = r.a.Children.toArray(e).filter(Boolean);
-					return r.a.createElement("div", {
-						className: Object(i.a)(d.a.outerWrapper, t),
-						ref: e => this.container = e
-					}, r.a.createElement("div", {
+					} = this.state, g = s.a.Children.toArray(t).filter(Boolean);
+					return s.a.createElement("div", {
+						className: Object(i.a)(d.a.outerWrapper, e),
+						ref: t => this.container = t
+					}, s.a.createElement("div", {
 						className: d.a.innerWrapper
-					}, g.map((e, t) => r.a.createElement("span", {
-						className: t > u ? d.a.hidden : void 0,
-						key: t,
-						ref: e => this.registerBreakpoint(e, t)
-					}, e)), m && r.a.createElement("div", {
+					}, g.map((t, e) => s.a.createElement("span", {
+						className: e > u ? d.a.hidden : void 0,
+						key: e,
+						ref: t => this.registerBreakpoint(t, e)
+					}, t)), m && s.a.createElement("div", {
 						className: d.a.overflowMenuWrapper,
 						key: "overflowMenuWrapper"
-					}, s && s(), r.a.createElement(c.b, {
+					}, r && r(), s.a.createElement(c.b, {
 						className: d.a.overflowMenu,
 						dropdownId: h(l, n),
 						isFixed: !1,
 						handleMouseDown: p,
 						onClick: o
-					}, r.a.createElement("div", {
+					}, s.a.createElement("div", {
 						className: Object(i.a)(d.a.row, {
 							[d.a.postWrap]: l === a.a.Post
 						})
-					}, g.map((e, t) => r.a.createElement("span", {
-						className: t <= u ? d.a.hidden : void 0,
-						key: t
-					}, e)))))))
+					}, g.map((t, e) => s.a.createElement("span", {
+						className: e <= u ? d.a.hidden : void 0,
+						key: e
+					}, t)))))))
 				}
 			}
 		},
-		"./src/reddit/components/MakeGifToggle/index.m.less": function(e, t, n) {
-			e.exports = {
+		"./src/reddit/components/MakeGifToggle/index.m.less": function(t, e, n) {
+			t.exports = {
 				container: "_1iRy5EPCLqSx8I0k9OT0wW",
 				content: "NfjQg3srQXRhyOxLBwXrS",
 				toggleSwitch: "_1fUmirx6e9tUDs04TQq6A1",
@@ -683,191 +492,191 @@
 				tooltipContentClass: "_21DP8j-B-UkVKGJONbrTmX"
 			}
 		},
-		"./src/reddit/components/MakeGifToggle/index.tsx": function(e, t, n) {
+		"./src/reddit/components/MakeGifToggle/index.tsx": function(t, e, n) {
 			"use strict";
 			var o = n("./node_modules/fbt/lib/FbtPublic.js"),
-				s = n("./node_modules/react/index.js"),
-				r = n.n(s),
+				r = n("./node_modules/react/index.js"),
+				s = n.n(r),
 				i = n("./src/lib/classNames/index.ts"),
 				c = n("./src/reddit/components/RichTextEditor/HoverTooltip/index.tsx"),
 				a = n("./src/reddit/controls/ToggleSwitch/index.tsx"),
 				l = n("./src/reddit/layout/row/Inline/index.tsx"),
 				d = n("./src/reddit/components/MakeGifToggle/index.m.less"),
 				u = n.n(d);
-			t.a = e => r.a.createElement(l.a, {
-				className: Object(i.a)(u.a.container, e.disabled ? u.a.mDisabled : null, e.isCompact ? u.a.mCompactSwitch : null),
-				onMouseDown: e => e.preventDefault(),
-				onClick: t => {
-					t.stopPropagation(), !e.disabled && e.onClick()
+			e.a = t => s.a.createElement(l.a, {
+				className: Object(i.a)(u.a.container, t.disabled ? u.a.mDisabled : null, t.isCompact ? u.a.mCompactSwitch : null),
+				onMouseDown: t => t.preventDefault(),
+				onClick: e => {
+					e.stopPropagation(), !t.disabled && t.onClick()
 				}
-			}, r.a.createElement(l.a, {
+			}, s.a.createElement(l.a, {
 				className: u.a.content
-			}, r.a.createElement(a.a, {
+			}, s.a.createElement(a.a, {
 				className: u.a.toggleSwitch,
-				on: e.on
-			}), r.a.createElement("label", null, o.fbt._("Make GIF", null, {
+				on: t.on
+			}), s.a.createElement("label", null, o.fbt._("Make GIF", null, {
 				hk: "2ig2GG"
-			}))), e.tooltip ? r.a.createElement(c.a, {
+			}))), t.tooltip ? s.a.createElement(c.a, {
 				className: u.a.hoverTooltip,
 				tooltipContentClass: u.a.tooltipContentClass,
-				text: e.tooltip
+				text: t.tooltip
 			}) : null)
 		},
-		"./src/reddit/components/ProgressBar/index.m.less": function(e, t, n) {
-			e.exports = {
+		"./src/reddit/components/ProgressBar/index.m.less": function(t, e, n) {
+			t.exports = {
 				innerBar: "Db3WJFTcyAR-IM0cIkpDG",
 				outerBar: "i8kQtxHYBB8Sb3bPI4M_e"
 			}
 		},
-		"./src/reddit/components/ProgressBar/index.tsx": function(e, t, n) {
+		"./src/reddit/components/ProgressBar/index.tsx": function(t, e, n) {
 			"use strict";
 			var o = n("./node_modules/react/index.js"),
-				s = n.n(o),
-				r = n("./src/lib/classNames/index.ts"),
+				r = n.n(o),
+				s = n("./src/lib/classNames/index.ts"),
 				i = n("./src/reddit/components/ProgressBar/index.m.less"),
 				c = n.n(i);
-			t.a = e => {
+			e.a = t => {
 				let {
-					className: t,
+					className: e,
 					innerBarClassName: n,
 					percent: o
-				} = e;
-				return s.a.createElement("div", {
-					className: Object(r.a)(c.a.outerBar, t)
-				}, s.a.createElement("div", {
-					className: Object(r.a)(c.a.innerBar, n),
+				} = t;
+				return r.a.createElement("div", {
+					className: Object(s.a)(c.a.outerBar, e)
+				}, r.a.createElement("div", {
+					className: Object(s.a)(c.a.innerBar, n),
 					style: {
 						width: `${o.toFixed(2)}%`
 					}
 				}))
 			}
 		},
-		"./src/reddit/components/RichTextEditor/Blockquote/index.m.less": function(e, t, n) {
-			e.exports = {
+		"./src/reddit/components/RichTextEditor/Blockquote/index.m.less": function(t, e, n) {
+			t.exports = {
 				BlockQuoteWrapper: "_3bqfSxMWo3yWv7j4N8hQy6",
 				blockQuoteWrapper: "_3bqfSxMWo3yWv7j4N8hQy6"
 			}
 		},
-		"./src/reddit/components/RichTextEditor/CodeBlock/index.m.less": function(e, t, n) {
-			e.exports = {
+		"./src/reddit/components/RichTextEditor/CodeBlock/index.m.less": function(t, e, n) {
+			t.exports = {
 				CodeBlockWrapper: "_2YrwxhRxsXvszOhYWDUhMh",
 				codeBlockWrapper: "_2YrwxhRxsXvszOhYWDUhMh"
 			}
 		},
-		"./src/reddit/components/RichTextEditor/DragController/helpers.ts": function(e, t, n) {
+		"./src/reddit/components/RichTextEditor/DragController/helpers.ts": function(t, e, n) {
 			"use strict";
-			n.d(t, "b", (function() {
+			n.d(e, "b", (function() {
 				return h
-			})), n.d(t, "c", (function() {
+			})), n.d(e, "c", (function() {
 				return m
-			})), n.d(t, "a", (function() {
+			})), n.d(e, "a", (function() {
 				return g
 			}));
 			var o = n("./node_modules/lodash/includes.js"),
-				s = n.n(o);
-			var r = n("./src/reddit/helpers/dom/index.ts"),
+				r = n.n(o);
+			var s = n("./src/reddit/helpers/dom/index.ts"),
 				i = n("./src/reddit/components/RichTextEditor/styleAndBlockTypes.ts");
-			const c = e => e.className.indexOf("public-DraftEditor-content") >= 0,
-				a = e => !!e.parentElement && !!e.parentElement.parentElement && c(e.parentElement.parentElement),
-				l = e => !(!e.dataset.block || !e.dataset.offsetKey),
-				d = e => {
+			const c = t => t.className.indexOf("public-DraftEditor-content") >= 0,
+				a = t => !!t.parentElement && !!t.parentElement.parentElement && c(t.parentElement.parentElement),
+				l = t => !(!t.dataset.block || !t.dataset.offsetKey),
+				d = t => {
 					const {
-						offsetKey: t
-					} = e.dataset;
-					return t ? (e => e.split("-")[0])(t) : ""
+						offsetKey: e
+					} = t.dataset;
+					return e ? (t => t.split("-")[0])(e) : ""
 				},
-				u = (e, t) => {
-					return ((e, t) => {
-						const n = function(e, t) {
+				u = (t, e) => {
+					return ((t, e) => {
+						const n = function(t, e) {
 							let n = 0,
-								o = e.length - 1;
+								o = t.length - 1;
 							for (; n <= o;) {
-								const s = o + n >> 1,
-									r = t(e[s]);
-								if (r > 0) n = s + 1;
+								const r = o + n >> 1,
+									s = e(t[r]);
+								if (s > 0) n = r + 1;
 								else {
-									if (!(r < 0)) return s;
-									o = s - 1
+									if (!(s < 0)) return r;
+									o = r - 1
 								}
 							}
 							return n
-						}(e, e => {
-							const n = e.getBoundingClientRect();
-							return t < n.top ? -1 : t > n.bottom ? 1 : 0
+						}(t, t => {
+							const n = t.getBoundingClientRect();
+							return e < n.top ? -1 : e > n.bottom ? 1 : 0
 						});
-						return e[Math.min(n, e.length - 1)]
-					})(e.querySelectorAll("[data-block][data-offset-key]"), t)
+						return t[Math.min(n, t.length - 1)]
+					})(t.querySelectorAll("[data-block][data-offset-key]"), e)
 				},
-				p = (e, t) => {
-					const n = Object(r.b)(e, l, c);
-					return n || u(e, t)
+				p = (t, e) => {
+					const n = Object(s.b)(t, l, c);
+					return n || u(t, e)
 				},
-				h = (e, t) => {
-					const n = (e => {
-						const t = e.target;
-						if (!(t instanceof HTMLElement)) return;
-						const n = Object(r.b)(t, c);
+				h = (t, e) => {
+					const n = (t => {
+						const e = t.target;
+						if (!(e instanceof HTMLElement)) return;
+						const n = Object(s.b)(e, c);
 						if (!n) return;
-						const o = p(t, e.clientY);
+						const o = p(e, t.clientY);
 						if (!o) return;
-						const s = Object(r.b)(o, a);
-						return s ? {
+						const r = Object(s.b)(o, a);
+						return r ? {
 							editorContentElement: n,
-							topLevelElement: s,
+							topLevelElement: r,
 							blockElement: o
 						} : void 0
-					})(t);
+					})(e);
 					if (!n) return;
 					const {
 						topLevelElement: o,
-						blockElement: s
-					} = n, l = d(s), u = e.getCurrentContent(), h = u.getBlockForKey(l);
+						blockElement: r
+					} = n, l = d(r), u = t.getCurrentContent(), h = u.getBlockForKey(l);
 					if (!h) return;
 					const {
 						upperElement: m,
 						lowerElement: g
-					} = ((e, t, n, o) => {
-						let s = n,
-							r = n;
-						if (e.getType() === i.b.UNSTYLED) s = r = t;
-						else if (Object(i.o)(e.getType())) {
-							s = r = t;
-							const c = o.getBlockAfter(e.getKey());
-							c && Object(i.u)(c.getType()) && (r = n.nextElementSibling)
-						} else Object(i.u)(e.getType()) && (s = n.previousElementSibling, r = t);
+					} = ((t, e, n, o) => {
+						let r = n,
+							s = n;
+						if (t.getType() === i.b.UNSTYLED) r = s = e;
+						else if (Object(i.o)(t.getType())) {
+							r = s = e;
+							const c = o.getBlockAfter(t.getKey());
+							c && Object(i.u)(c.getType()) && (s = n.nextElementSibling)
+						} else Object(i.u)(t.getType()) && (r = n.previousElementSibling, s = e);
 						return {
-							upperElement: s,
-							lowerElement: r
+							upperElement: r,
+							lowerElement: s
 						}
-					})(h, s, o, u), {
+					})(h, r, o, u), {
 						clientY: f,
 						isBefore: b
-					} = ((e, t, n) => {
-						const o = e.getBoundingClientRect(),
-							s = t.getBoundingClientRect();
+					} = ((t, e, n) => {
+						const o = t.getBoundingClientRect(),
+							r = e.getBoundingClientRect();
 						let i, a;
-						if (n > (o.top + s.bottom) / 2) {
-							i = s.bottom, a = !1;
-							const e = Object(r.b)(t, e => !!e.nextElementSibling, c);
-							if (e) {
-								i = (e.nextElementSibling.getBoundingClientRect().top + s.bottom) / 2
+						if (n > (o.top + r.bottom) / 2) {
+							i = r.bottom, a = !1;
+							const t = Object(s.b)(e, t => !!t.nextElementSibling, c);
+							if (t) {
+								i = (t.nextElementSibling.getBoundingClientRect().top + r.bottom) / 2
 							}
 						} else {
 							i = o.top, a = !0;
-							const t = Object(r.b)(e, e => !!e.previousElementSibling, c);
-							if (t) {
-								i = (t.previousElementSibling.getBoundingClientRect().bottom + o.top) / 2
+							const e = Object(s.b)(t, t => !!t.previousElementSibling, c);
+							if (e) {
+								i = (e.previousElementSibling.getBoundingClientRect().bottom + o.top) / 2
 							}
 						}
 						return {
 							clientY: i,
 							isBefore: a
 						}
-					})(m, g, t.clientY);
+					})(m, g, e.clientY);
 					let y = l;
 					if (h.getType() !== i.b.UNSTYLED) {
-						const e = p(b ? m : g, f);
-						e && (y = d(e))
+						const t = p(b ? m : g, f);
+						t && (y = d(t))
 					}
 					return {
 						clientY: f,
@@ -875,11 +684,11 @@
 						blockKey: y
 					}
 				},
-				m = e => e.items ? !!Array.from(e.items).find(e => "file" === e.kind) : !(!e.files || !e.files.length) || s()(e.types, "Files"),
-				g = e => e.items ? Array.from(e.items).map(e => "file" === e.kind ? e.getAsFile() : null).filter(Boolean) : e.files ? Array.from(e.files) : []
+				m = t => t.items ? !!Array.from(t.items).find(t => "file" === t.kind) : !(!t.files || !t.files.length) || r()(t.types, "Files"),
+				g = t => t.items ? Array.from(t.items).map(t => "file" === t.kind ? t.getAsFile() : null).filter(Boolean) : t.files ? Array.from(t.files) : []
 		},
-		"./src/reddit/components/RichTextEditor/DragController/index.m.less": function(e, t, n) {
-			e.exports = {
+		"./src/reddit/components/RichTextEditor/DragController/index.m.less": function(t, e, n) {
+			t.exports = {
 				container: "_13Sj3UMDKkCCJTq88berCB",
 				hideCaret: "_2BqK1CuzH2oWi2F9_cuFPQ",
 				DropLine: "z5iuD3MVYcfS7tTihbvof",
@@ -888,8 +697,8 @@
 				tooltip: "_1z9S1KmnM79xn-UA0FnbP6"
 			}
 		},
-		"./src/reddit/components/RichTextEditor/HoverTooltip/index.m.less": function(e, t, n) {
-			e.exports = {
+		"./src/reddit/components/RichTextEditor/HoverTooltip/index.m.less": function(t, e, n) {
+			t.exports = {
 				tooltip: "ki2VbfBhU-qxg1S6VyET6",
 				above: "_8fNGSBGvr1Ds8PbrsUGzN",
 				below: "_38gWvHp3NJkR5r5ftUfbFG",
@@ -897,42 +706,42 @@
 				hoverTooltip: "Nb7NCPTlQuxN_WDPUg5Q2"
 			}
 		},
-		"./src/reddit/components/RichTextEditor/HoverTooltip/index.tsx": function(e, t, n) {
+		"./src/reddit/components/RichTextEditor/HoverTooltip/index.tsx": function(t, e, n) {
 			"use strict";
 			var o = n("./node_modules/react/index.js"),
-				s = n.n(o),
-				r = n("./src/lib/classNames/index.ts"),
+				r = n.n(o),
+				s = n("./src/lib/classNames/index.ts"),
 				i = n("./src/lib/lessComponent.tsx"),
 				c = n("./src/reddit/components/RichTextEditor/HoverTooltip/index.m.less"),
 				a = n.n(c);
 
 			function l() {
-				return (l = Object.assign || function(e) {
-					for (var t = 1; t < arguments.length; t++) {
-						var n = arguments[t];
-						for (var o in n) Object.prototype.hasOwnProperty.call(n, o) && (e[o] = n[o])
+				return (l = Object.assign || function(t) {
+					for (var e = 1; e < arguments.length; e++) {
+						var n = arguments[e];
+						for (var o in n) Object.prototype.hasOwnProperty.call(n, o) && (t[o] = n[o])
 					}
-					return e
+					return t
 				}).apply(this, arguments)
 			}
-			t.a = i.a.wrapped(e => {
+			e.a = i.a.wrapped(t => {
 				const {
-					children: t,
+					children: e,
 					className: n,
 					renderBelow: o,
 					text: i,
 					tooltipContentClass: c,
 					...d
-				} = e;
-				return s.a.createElement("div", l({}, d, {
-					className: Object(r.a)(a.a.container, n)
-				}), i ? s.a.createElement("div", {
-					className: Object(r.a)(a.a.tooltip, c, o ? a.a.below : a.a.above)
-				}, i) : null, t)
+				} = t;
+				return r.a.createElement("div", l({}, d, {
+					className: Object(s.a)(a.a.container, n)
+				}), i ? r.a.createElement("div", {
+					className: Object(s.a)(a.a.tooltip, c, o ? a.a.below : a.a.above)
+				}, i) : null, e)
 			}, "HoverTooltip", a.a)
 		},
-		"./src/reddit/components/RichTextEditor/LinksController/LinkDetailsPopup/index.m.less": function(e, t, n) {
-			e.exports = {
+		"./src/reddit/components/RichTextEditor/LinksController/LinkDetailsPopup/index.m.less": function(t, e, n) {
+			t.exports = {
 				LinkDetailsBox: "_2F28OVOVlGo6WCT2l8lHzO",
 				linkDetailsBox: "_2F28OVOVlGo6WCT2l8lHzO",
 				Link: "_3vJCj_aXdDc-UXA9fDK-z-",
@@ -941,8 +750,8 @@
 				linkButton: "_1NtBcR7JgjxkWLJrk3ddD3"
 			}
 		},
-		"./src/reddit/components/RichTextEditor/LinksController/LinkEditorPopup/index.m.less": function(e, t, n) {
-			e.exports = {
+		"./src/reddit/components/RichTextEditor/LinksController/LinkEditorPopup/index.m.less": function(t, e, n) {
+			t.exports = {
 				EditForm: "_1iFkUjPC4J8jzWrDthDpcv",
 				editForm: "_1iFkUjPC4J8jzWrDthDpcv",
 				LinkEditorBox: "_3HMg7pEvqliZhuStFZ241S",
@@ -959,20 +768,20 @@
 				submitButton: "_8a_rf-Al8VNnUQ42WlvF"
 			}
 		},
-		"./src/reddit/components/RichTextEditor/OrderedList/index.m.less": function(e, t, n) {
-			e.exports = {
+		"./src/reddit/components/RichTextEditor/OrderedList/index.m.less": function(t, e, n) {
+			t.exports = {
 				OrderedListWrapper: "_1QXegNe8bOemD558m-vc9t",
 				orderedListWrapper: "_1QXegNe8bOemD558m-vc9t"
 			}
 		},
-		"./src/reddit/components/RichTextEditor/Paragraph/index.m.less": function(e, t, n) {
-			e.exports = {
+		"./src/reddit/components/RichTextEditor/Paragraph/index.m.less": function(t, e, n) {
+			t.exports = {
 				ParagraphWrapper: "_3LuG0YVLLHE2azRNVaKz7O",
 				paragraphWrapper: "_3LuG0YVLLHE2azRNVaKz7O"
 			}
 		},
-		"./src/reddit/components/RichTextEditor/TextRendering/index.m.less": function(e, t, n) {
-			e.exports = {
+		"./src/reddit/components/RichTextEditor/TextRendering/index.m.less": function(t, e, n) {
+			t.exports = {
 				H1: "_15ThA3NFuzpQTnPu0I3QKj",
 				h1: "_15ThA3NFuzpQTnPu0I3QKj",
 				H2: "_3R5icAd6cRzwpq-yhvQUoW",
@@ -987,18 +796,18 @@
 				h6: "_27N6aQ0-d-ntRM1JkDwGg7"
 			}
 		},
-		"./src/reddit/components/RichTextEditor/Toolbar/FormatterButton/index.m.less": function(e, t, n) {
-			e.exports = {
+		"./src/reddit/components/RichTextEditor/Toolbar/FormatterButton/index.m.less": function(t, e, n) {
+			t.exports = {
 				button: "_2lAJkFZXhr5kbH7YF-sYFf",
 				enabled: "_1H0LLEwUP5ys6cgxr9KhMa",
 				active: "_32EiQr-Px2GJvCfigwwmuK"
 			}
 		},
-		"./src/reddit/components/RichTextEditor/Toolbar/FormatterButton/index.tsx": function(e, t, n) {
+		"./src/reddit/components/RichTextEditor/Toolbar/FormatterButton/index.tsx": function(t, e, n) {
 			"use strict";
 			var o = n("./node_modules/react/index.js"),
-				s = n.n(o),
-				r = n("./src/lib/classNames/index.ts"),
+				r = n.n(o),
+				s = n("./src/lib/classNames/index.ts"),
 				i = n("./src/lib/lessComponent.tsx"),
 				c = n("./src/reddit/controls/Button/index.tsx"),
 				a = n("./src/reddit/icons/fonts/index.tsx"),
@@ -1007,20 +816,20 @@
 				u = n.n(d);
 
 			function p() {
-				return (p = Object.assign || function(e) {
-					for (var t = 1; t < arguments.length; t++) {
-						var n = arguments[t];
-						for (var o in n) Object.prototype.hasOwnProperty.call(n, o) && (e[o] = n[o])
+				return (p = Object.assign || function(t) {
+					for (var e = 1; e < arguments.length; e++) {
+						var n = arguments[e];
+						for (var o in n) Object.prototype.hasOwnProperty.call(n, o) && (t[o] = n[o])
 					}
-					return e
+					return t
 				}).apply(this, arguments)
 			}
-			const h = e => {
-				e.preventDefault(), e.stopPropagation()
+			const h = t => {
+				t.preventDefault(), t.stopPropagation()
 			};
-			t.a = i.a.wrapped(e => {
+			e.a = i.a.wrapped(t => {
 				const {
-					active: t,
+					active: e,
 					className: n,
 					disabledTooltip: o,
 					enabled: i = !0,
@@ -1031,34 +840,34 @@
 					overridingClassName: b,
 					tooltipBelow: y,
 					children: E
-				} = e, S = {
+				} = t, S = {
 					"aria-label": d,
-					"aria-selected": t,
-					className: b || Object(r.a)(u.a.button, n, {
-						[u.a.active]: !!t,
+					"aria-selected": e,
+					className: b || Object(s.a)(u.a.button, n, {
+						[u.a.active]: !!e,
 						[u.a.enabled]: i
 					}),
 					onMouseDown: h,
-					onClick: e => {
-						h(e), i && f && f(e)
+					onClick: t => {
+						h(t), i && f && f(t)
 					},
 					role: "button",
 					tabIndex: -1
 				};
-				return s.a.createElement(c.t, p({}, S, {
+				return r.a.createElement(c.t, p({}, S, {
 					size: c.d.S,
 					priority: c.c.Plain,
 					isSquare: !0,
 					Icon: g ? Object(a.b)(g) : m
-				}), s.a.createElement(l.a, {
+				}), r.a.createElement(l.a, {
 					text: (i ? d : o) || "",
-					tooltipContentClass: e.tooltipContentClass,
+					tooltipContentClass: t.tooltipContentClass,
 					renderBelow: y
 				}), E)
 			}, "FormatterButton", u.a)
 		},
-		"./src/reddit/components/RichTextEditor/Toolbar/MarkdownButton/index.m.less": function(e, t, n) {
-			e.exports = {
+		"./src/reddit/components/RichTextEditor/Toolbar/MarkdownButton/index.m.less": function(t, e, n) {
+			t.exports = {
 				LoadingIcon: "jOFrSZE7wRk_lVAP2pBvY",
 				loadingIcon: "jOFrSZE7wRk_lVAP2pBvY",
 				markdownIcon: "_2ROqhD3999k4q_d5PMRde-",
@@ -1068,11 +877,11 @@
 				button: "_1Mg8ZhclDuQlkzEqVU21qu"
 			}
 		},
-		"./src/reddit/components/RichTextEditor/Toolbar/MarkdownButton/index.tsx": function(e, t, n) {
+		"./src/reddit/components/RichTextEditor/Toolbar/MarkdownButton/index.tsx": function(t, e, n) {
 			"use strict";
 			var o = n("./node_modules/fbt/lib/FbtPublic.js"),
-				s = n("./node_modules/react/index.js"),
-				r = n.n(s),
+				r = n("./node_modules/react/index.js"),
+				s = n.n(r),
 				i = n("./node_modules/react-redux/es/index.js"),
 				c = n("./node_modules/reselect/es/index.js"),
 				a = n("./src/lib/lessComponent.tsx"),
@@ -1084,13 +893,13 @@
 				m = n.n(h);
 			const g = a.a.wrapped(d.a, "LoadingIcon", m.a),
 				f = Object(c.c)({
-					isConverting: (e, t) => Object(u.a)(e, t.draftKey)
+					isConverting: (t, e) => Object(u.a)(t, e.draftKey)
 				}),
 				b = Object(i.b)(f);
-			t.a = r.a.memo(b(e => r.a.createElement(l.t, {
+			e.a = s.a.memo(b(t => s.a.createElement(l.t, {
 				priority: l.c.Plain,
 				size: l.d.XS,
-				text: r.a.createElement(r.a.Fragment, null, e.isConverting && r.a.createElement(g, {
+				text: s.a.createElement(s.a.Fragment, null, t.isConverting && s.a.createElement(g, {
 					sizePx: 12
 				}), o.fbt._("Markdown Mode", null, {
 					hk: "1DXoXV"
@@ -1099,16 +908,16 @@
 					hk: "OxsM0"
 				}),
 				tabIndex: -1,
-				className: e.className,
-				onClick: e.onClick
-			}, !e.shouldHideTooltip && r.a.createElement(p.a, {
+				className: t.className,
+				onClick: t.onClick
+			}, !t.shouldHideTooltip && s.a.createElement(p.a, {
 				text: o.fbt._("Switch to markdown", null, {
 					hk: "4mWw83"
 				})
 			}))))
 		},
-		"./src/reddit/components/RichTextEditor/Toolbar/MediaInputButton/index.m.less": function(e, t, n) {
-			e.exports = {
+		"./src/reddit/components/RichTextEditor/Toolbar/MediaInputButton/index.m.less": function(t, e, n) {
+			t.exports = {
 				ImageIcon: "_1jv-IJjyjDSSVuYe6CzeHv",
 				imageIcon: "_1jv-IJjyjDSSVuYe6CzeHv",
 				VideoIcon: "uo_2BSPFse-IQNQbclyKb",
@@ -1117,14 +926,14 @@
 				hiddenInput: "_2keaDnXIlu9Yq2y-cC8zgu"
 			}
 		},
-		"./src/reddit/components/RichTextEditor/Toolbar/MediaInputButton/index.tsx": function(e, t, n) {
+		"./src/reddit/components/RichTextEditor/Toolbar/MediaInputButton/index.tsx": function(t, e, n) {
 			"use strict";
-			n.d(t, "a", (function() {
+			n.d(e, "a", (function() {
 				return m
 			}));
 			var o = n("./node_modules/fbt/lib/FbtPublic.js"),
-				s = n("./node_modules/react/index.js"),
-				r = n.n(s),
+				r = n("./node_modules/react/index.js"),
+				s = n.n(r),
 				i = n("./src/lib/constants/index.ts"),
 				c = n("./src/lib/constants/icons.ts"),
 				a = n("./src/lib/lessComponent.tsx"),
@@ -1133,38 +942,38 @@
 				u = n("./src/reddit/components/RichTextEditor/Toolbar/MediaInputButton/index.m.less"),
 				p = n.n(u);
 			const h = a.a.input("HiddenInput", p.a);
-			class m extends s.Component {
+			class m extends r.Component {
 				constructor() {
-					super(...arguments), this.hiddenInputEl = null, this.onFileInputChange = e => {
-						e.stopPropagation();
-						const t = this.hiddenInputEl,
-							n = t.files;
-						n && n.length && (this.props.onFilesInput(Array.from(n)), t.value = "")
+					super(...arguments), this.hiddenInputEl = null, this.onFileInputChange = t => {
+						t.stopPropagation();
+						const e = this.hiddenInputEl,
+							n = e.files;
+						n && n.length && (this.props.onFilesInput(Array.from(n)), e.value = "")
 					}, this.onButtonClick = () => {
 						this.hiddenInputEl && this.hiddenInputEl.click(), this.props.onClick()
-					}, this.onHiddenInputClick = e => e.stopPropagation()
+					}, this.onHiddenInputClick = t => t.stopPropagation()
 				}
 				render() {
 					const {
-						accept: e,
-						active: t,
+						accept: t,
+						active: e,
 						controlsState: n,
-						destSubreddit: s,
+						destSubreddit: r,
 						disabledTooltip: a,
 						enabled: u,
 						type: p
 					} = this.props, m = "image" === p, g = n.blocks[l.a];
 					let f = !0;
-					if (s && s.allowedPostTypes) {
+					if (r && r.allowedPostTypes) {
 						const {
-							images: e,
-							videos: t
-						} = s.allowedPostTypes;
-						f = m ? e : t
+							images: t,
+							videos: e
+						} = r.allowedPostTypes;
+						f = m ? t : e
 					}
 					let b = g.isActive,
 						y = g.isEnabled && f;
-					return void 0 !== t && (b = t), void 0 !== u && (y = u), r.a.createElement(d.a, {
+					return void 0 !== e && (b = e), void 0 !== u && (y = u), s.a.createElement(d.a, {
 						iconName: m ? c.a.image_post : c.a.video_post,
 						active: b,
 						enabled: y,
@@ -1175,53 +984,53 @@
 						}),
 						onClick: this.onButtonClick,
 						disabledTooltip: a
-					}, r.a.createElement(h, {
+					}, s.a.createElement(h, {
 						multiple: !0,
-						innerRef: e => this.hiddenInputEl = e,
+						innerRef: t => this.hiddenInputEl = t,
 						onChange: this.onFileInputChange,
 						onClick: this.onHiddenInputClick,
 						type: "file",
-						accept: e || Array.from(m ? i.b : i.d).join()
+						accept: t || Array.from(m ? i.b : i.d).join()
 					}))
 				}
 			}
 		},
-		"./src/reddit/components/RichTextEditor/Toolbar/formatterConfigs.m.less": function(e, t, n) {
-			e.exports = {
+		"./src/reddit/components/RichTextEditor/Toolbar/formatterConfigs.m.less": function(t, e, n) {
+			t.exports = {
 				Icon: "_3UAl61hrkRAXX5JQ6m_q8R",
 				icon: "_3UAl61hrkRAXX5JQ6m_q8R"
 			}
 		},
-		"./src/reddit/components/RichTextEditor/Toolbar/formatterConfigs.tsx": function(e, t, n) {
+		"./src/reddit/components/RichTextEditor/Toolbar/formatterConfigs.tsx": function(t, e, n) {
 			"use strict";
-			n.d(t, "f", (function() {
+			n.d(e, "f", (function() {
 				return h
-			})), n.d(t, "b", (function() {
+			})), n.d(e, "b", (function() {
 				return m
-			})), n.d(t, "e", (function() {
+			})), n.d(e, "e", (function() {
 				return g
-			})), n.d(t, "j", (function() {
+			})), n.d(e, "j", (function() {
 				return f
-			})), n.d(t, "g", (function() {
+			})), n.d(e, "g", (function() {
 				return b
-			})), n.d(t, "i", (function() {
+			})), n.d(e, "i", (function() {
 				return y
-			})), n.d(t, "k", (function() {
+			})), n.d(e, "k", (function() {
 				return E
-			})), n.d(t, "d", (function() {
+			})), n.d(e, "d", (function() {
 				return S
-			})), n.d(t, "l", (function() {
-				return x
-			})), n.d(t, "h", (function() {
+			})), n.d(e, "l", (function() {
 				return C
-			})), n.d(t, "a", (function() {
+			})), n.d(e, "h", (function() {
+				return x
+			})), n.d(e, "a", (function() {
 				return O
-			})), n.d(t, "c", (function() {
+			})), n.d(e, "c", (function() {
 				return k
 			}));
 			var o = n("./node_modules/fbt/lib/FbtPublic.js"),
-				s = n("./node_modules/react/index.js"),
-				r = n.n(s),
+				r = n("./node_modules/react/index.js"),
+				s = n.n(r),
 				i = n("./src/lib/constants/icons.ts"),
 				c = n("./src/lib/lessComponent.tsx"),
 				a = n("./src/reddit/components/RichTextEditor/styleAndBlockTypes.ts"),
@@ -1229,22 +1038,22 @@
 				d = n.n(l);
 
 			function u() {
-				return (u = Object.assign || function(e) {
-					for (var t = 1; t < arguments.length; t++) {
-						var n = arguments[t];
-						for (var o in n) Object.prototype.hasOwnProperty.call(n, o) && (e[o] = n[o])
+				return (u = Object.assign || function(t) {
+					for (var e = 1; e < arguments.length; e++) {
+						var n = arguments[e];
+						for (var o in n) Object.prototype.hasOwnProperty.call(n, o) && (t[o] = n[o])
 					}
-					return e
+					return t
 				}).apply(this, arguments)
 			}
-			const p = e => c.a.wrapped(e, "Icon", d.a),
-				h = function(e) {
-					let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : 0;
+			const p = t => c.a.wrapped(t, "Icon", d.a),
+				h = function(t) {
+					let e = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : 0;
 					return n => {
-						const o = p(e);
-						return r.a.createElement(o, u({}, n, {
+						const o = p(t);
+						return s.a.createElement(o, u({}, n, {
 							style: {
-								padding: t
+								padding: e
 							}
 						}))
 					}
@@ -1312,7 +1121,7 @@
 						hk: "4jnBPs"
 					})
 				},
-				x = {
+				C = {
 					type: "block",
 					name: "unordered_list",
 					iconName: i.a.list_bulleted,
@@ -1321,7 +1130,7 @@
 						hk: "21Yx7R"
 					})
 				},
-				C = {
+				x = {
 					type: "block",
 					name: "ordered_list",
 					iconName: i.a.list_numbered,
@@ -1349,8 +1158,8 @@
 					})
 				}
 		},
-		"./src/reddit/components/RichTextEditor/Toolbar/index.m.less": function(e, t, n) {
-			e.exports = {
+		"./src/reddit/components/RichTextEditor/Toolbar/index.m.less": function(t, e, n) {
+			t.exports = {
 				ToolbarWrapper: "_2w8adx4kIBGPEESCyEmToa",
 				toolbarWrapper: "_2w8adx4kIBGPEESCyEmToa",
 				isSticky: "r7zyyy152ZTdiHhea0cIj",
@@ -1365,29 +1174,29 @@
 				markdownButton: "_2Z7RdWBmSoubpoKJAgNIAi"
 			}
 		},
-		"./src/reddit/components/RichTextEditor/Toolbar/index.tsx": function(e, t, n) {
+		"./src/reddit/components/RichTextEditor/Toolbar/index.tsx": function(t, e, n) {
 			"use strict";
-			n.d(t, "c", (function() {
+			n.d(e, "c", (function() {
 				return v
-			})), n.d(t, "g", (function() {
-				return _
-			})), n.d(t, "f", (function() {
+			})), n.d(e, "g", (function() {
 				return R
-			})), n.d(t, "h", (function() {
+			})), n.d(e, "f", (function() {
 				return w
-			})), n.d(t, "e", (function() {
-				return I
-			})), n.d(t, "a", (function() {
+			})), n.d(e, "h", (function() {
 				return B
-			})), n.d(t, "d", (function() {
+			})), n.d(e, "e", (function() {
+				return I
+			})), n.d(e, "a", (function() {
+				return _
+			})), n.d(e, "d", (function() {
 				return A
-			})), n.d(t, "b", (function() {
+			})), n.d(e, "b", (function() {
 				return K
 			}));
 			var o = n("./node_modules/draft-js/lib/Draft.js"),
-				s = n("./node_modules/fbt/lib/FbtPublic.js"),
-				r = n("./node_modules/react/index.js"),
-				i = n.n(r),
+				r = n("./node_modules/fbt/lib/FbtPublic.js"),
+				s = n("./node_modules/react/index.js"),
+				i = n.n(s),
 				c = n("./src/lib/classNames/index.ts"),
 				a = n("./src/lib/constants/icons.ts"),
 				l = n("./src/reddit/components/CollapseIntoOverflow/index.tsx"),
@@ -1398,108 +1207,108 @@
 				m = n("./src/reddit/components/RichTextEditor/constants/editorChangeTypes.ts"),
 				g = n("./src/reddit/components/RichTextEditor/helpers/common.ts"),
 				f = n("./src/reddit/components/RichTextEditor/table/helpers.ts");
-			var b = (e, t, n) => {
-					if (Object(h.v)(o.RichUtils.getCurrentBlockType(e))) return e;
-					const s = e.getCurrentContent(),
-						r = e.getSelection().getEndKey(),
-						i = Object(f.l)(t, n),
-						c = Object(g.f)(s, r, i, g.a.after, !0),
-						a = o.EditorState.push(e, c, m.e);
+			var b = (t, e, n) => {
+					if (Object(h.v)(o.RichUtils.getCurrentBlockType(t))) return t;
+					const r = t.getCurrentContent(),
+						s = t.getSelection().getEndKey(),
+						i = Object(f.l)(e, n),
+						c = Object(g.f)(r, s, i, g.a.after, !0),
+						a = o.EditorState.push(t, c, m.e);
 					return o.EditorState.forceSelection(a, o.SelectionState.createEmpty(i[0].getKey()))
 				},
 				y = n("./src/reddit/components/RichTextEditor/Toolbar/FormatterButton/index.tsx"),
 				E = n("./src/reddit/components/RichTextEditor/Toolbar/formatterConfigs.tsx"),
 				S = n("./src/reddit/components/RichTextEditor/Toolbar/MarkdownButton/index.tsx"),
-				x = n("./src/reddit/components/RichTextEditor/Toolbar/MediaInputButton/index.tsx"),
-				C = n("./src/reddit/components/RichTextEditor/Toolbar/index.m.less"),
-				O = n.n(C);
+				C = n("./src/reddit/components/RichTextEditor/Toolbar/MediaInputButton/index.tsx"),
+				x = n("./src/reddit/components/RichTextEditor/Toolbar/index.m.less"),
+				O = n.n(x);
 
 			function k() {
-				return (k = Object.assign || function(e) {
-					for (var t = 1; t < arguments.length; t++) {
-						var n = arguments[t];
-						for (var o in n) Object.prototype.hasOwnProperty.call(n, o) && (e[o] = n[o])
+				return (k = Object.assign || function(t) {
+					for (var e = 1; e < arguments.length; e++) {
+						var n = arguments[e];
+						for (var o in n) Object.prototype.hasOwnProperty.call(n, o) && (t[o] = n[o])
 					}
-					return e
+					return t
 				}).apply(this, arguments)
 			}
-			const T = e => i.a.createElement(y.a, k({}, e, {
+			const T = t => i.a.createElement(y.a, k({}, t, {
 					tooltipContentClass: O.a.tooltip
 				})),
 				v = () => i.a.createElement("div", {
 					className: O.a.SectionSpacer
 				}),
-				j = (e, t, n, s, r) => {
+				j = (t, e, n, r, s) => {
 					const {
 						name: c,
 						iconName: a,
 						tooltipTranslation: l
-					} = e, d = l();
-					if ("style" === e.type) {
+					} = t, d = l();
+					if ("style" === t.type) {
 						const {
 							style: o
-						} = e;
+						} = t;
 						return i.a.createElement(T, {
 							iconName: a,
-							active: t.styles[o].isActive,
-							enabled: t.styles[o].isEnabled,
+							active: e.styles[o].isActive,
+							enabled: e.styles[o].isEnabled,
 							key: c,
 							tooltip: d,
 							onClick: () => {
-								const e = Object(u.c)(o, n);
-								s(e), r(c, ((e, t) => e.getCurrentInlineStyle().contains(t))(e, o))
+								const t = Object(u.c)(o, n);
+								r(t), s(c, ((t, e) => t.getCurrentInlineStyle().contains(e))(t, o))
 							}
 						})
 					} {
 						const {
 							block: l
-						} = e;
+						} = t;
 						return i.a.createElement(T, {
 							iconName: a,
-							active: t.blocks[l].isActive,
-							enabled: t.blocks[l].isEnabled,
+							active: e.blocks[l].isActive,
+							enabled: e.blocks[l].isEnabled,
 							key: c,
 							tooltip: d,
 							onClick: () => {
-								const e = Object(u.i)(l, n);
-								s(e), r(c, ((e, t) => o.RichUtils.getCurrentBlockType(e) === t)(e, l))
+								const t = Object(u.i)(l, n);
+								r(t), s(c, ((t, e) => o.RichUtils.getCurrentBlockType(t) === e)(t, l))
 							}
 						})
 					}
 				},
-				_ = (e, t, n, o, s) => e.map(e => j(e, t, n, o, s)),
-				R = [E.b, E.e],
-				w = [E.j, E.g, E.k, E.i],
+				R = (t, e, n, o, r) => t.map(t => j(t, e, n, o, r)),
+				w = [E.b, E.e],
+				B = [E.j, E.g, E.k, E.i],
 				I = [E.d, E.l, E.h, E.a, E.c],
-				B = e => i.a.createElement(T, {
+				_ = t => i.a.createElement(T, {
 					iconName: a.a.link_post,
-					active: e.controlsState.link.isActive,
-					enabled: e.controlsState.link.isEnabled,
-					tooltip: s.fbt._("Link", null, {
+					active: t.controlsState.link.isActive,
+					enabled: t.controlsState.link.isEnabled,
+					tooltip: r.fbt._("Link", null, {
 						hk: "e4PGW"
 					}),
 					onClick: () => {
-						e.onLinkButtonClick(), e.trackOnClick("link", !0)
+						t.onLinkButtonClick(), t.trackOnClick("link", !0)
 					}
 				}),
-				A = e => i.a.createElement(T, {
+				A = t => i.a.createElement(T, {
 					iconName: a.a.table,
-					active: e.controlsState.blocks[h.l].isActive,
-					enabled: e.controlsState.blocks[h.l].isEnabled,
-					tooltip: s.fbt._("Table", null, {
+					active: t.controlsState.blocks[h.l].isActive,
+					enabled: t.controlsState.blocks[h.l].isEnabled,
+					tooltip: r.fbt._("Table", null, {
 						hk: "3cHfLT"
 					}),
 					onClick: () => {
-						e.onChange(b(e.editorState, 3, 2)), e.trackOnClick("table", !0)
+						t.onChange(b(t.editorState, 3, 2)), t.trackOnClick("table", !0)
 					}
 				}),
-				K = e => {
+				K = t => {
 					const {
-						className: t,
+						className: e,
 						allowMediaUploads: n = !1,
 						destSubreddit: o,
-						editorState: s,
-						isOverlay: r,
+						editorState: r,
+						isOverlay: s,
 						onChange: a,
 						onFilesSelect: u,
 						readOnly: h,
@@ -1507,31 +1316,31 @@
 						onLinkButtonClick: g,
 						onMarkdownButtonClick: f,
 						editorKey: b
-					} = e, y = Object(p.a)(s);
+					} = t, y = Object(p.a)(r);
 					return h && Object(p.b)(y), i.a.createElement("div", {
-						className: Object(c.a)(O.a.ToolbarWrapper, t, {
-							[O.a.isSticky]: !r
+						className: Object(c.a)(O.a.ToolbarWrapper, e, {
+							[O.a.isSticky]: !s
 						})
 					}, i.a.createElement(l.a, {
 						oveflowMenuDropdownId: b,
 						className: O.a.CollapseIntoOverflow,
 						editorType: d.a.Post
-					}, _(R, y, s, a, m), i.a.createElement(B, {
+					}, R(w, y, r, a, m), i.a.createElement(_, {
 						controlsState: y,
 						trackOnClick: m,
 						onLinkButtonClick: g
-					}), _(w, y, s, a, m), i.a.createElement(v, null), _(I, y, s, a, m), i.a.createElement(v, null), i.a.createElement(A, {
+					}), R(B, y, r, a, m), i.a.createElement(v, null), R(I, y, r, a, m), i.a.createElement(v, null), i.a.createElement(A, {
 						controlsState: y,
-						editorState: s,
+						editorState: r,
 						trackOnClick: m,
 						onChange: a
-					}), n && i.a.createElement(x.a, {
+					}), n && i.a.createElement(C.a, {
 						destSubreddit: o,
 						controlsState: y,
 						onClick: () => m("image_upload"),
 						onFilesInput: u,
 						type: "image"
-					}), n && i.a.createElement(x.a, {
+					}), n && i.a.createElement(C.a, {
 						destSubreddit: o,
 						controlsState: y,
 						onClick: () => m("video_upload"),
@@ -1545,22 +1354,22 @@
 					})))
 				}
 		},
-		"./src/reddit/components/RichTextEditor/Tooltip/getSelectionClientRect.ts": function(e, t, n) {
+		"./src/reddit/components/RichTextEditor/Tooltip/getSelectionClientRect.ts": function(t, e, n) {
 			"use strict";
-			n.d(t, "a", (function() {
-				return s
+			n.d(e, "a", (function() {
+				return r
 			}));
 			var o = n("./node_modules/draft-js/lib/Draft.js");
 
-			function s() {
-				const e = window.getSelection();
-				if (!e.rangeCount) return null;
-				const t = Object(o.getVisibleSelectionRect)(window);
-				return t || (!t && e.focusNode && e.focusNode === e.anchorNode ? e.focusNode.getBoundingClientRect() : null)
+			function r() {
+				const t = window.getSelection();
+				if (!t.rangeCount) return null;
+				const e = Object(o.getVisibleSelectionRect)(window);
+				return e || (!e && t.focusNode && t.focusNode === t.anchorNode ? t.focusNode.getBoundingClientRect() : null)
 			}
 		},
-		"./src/reddit/components/RichTextEditor/Tooltip/index.m.less": function(e, t, n) {
-			e.exports = {
+		"./src/reddit/components/RichTextEditor/Tooltip/index.m.less": function(t, e, n) {
+			t.exports = {
 				tooltipBox: "tVQ1dB4n0mAWdcQNxFq-K",
 				dropdown: "_1akkpO3lymdoWGIc5tjIpm",
 				triangle: "_2O2U-Vhc1mg9O7DOwp50Aa",
@@ -1569,16 +1378,16 @@
 				triangleBelow: "_1churYJpAwcb-tf0k1c46F"
 			}
 		},
-		"./src/reddit/components/RichTextEditor/Tooltip/index.tsx": function(e, t, n) {
+		"./src/reddit/components/RichTextEditor/Tooltip/index.tsx": function(t, e, n) {
 			"use strict";
-			n.d(t, "a", (function() {
+			n.d(e, "a", (function() {
 				return h
-			})), n.d(t, "b", (function() {
+			})), n.d(e, "b", (function() {
 				return g
 			}));
 			var o = n("./node_modules/react/index.js"),
-				s = n.n(o),
-				r = n("./src/lib/classNames/index.ts"),
+				r = n.n(o),
+				s = n("./src/lib/classNames/index.ts"),
 				i = n("./src/lib/CSSVariableProvider/index.tsx"),
 				c = n("./src/reddit/helpers/dom/index.ts"),
 				a = n("./src/reddit/components/RichTextEditor/Tooltip/index.m.less"),
@@ -1587,57 +1396,57 @@
 				u = 16,
 				p = 15 + u / 2;
 			var h;
-			! function(e) {
-				e[e.None = 0] = "None", e[e.Above = 1] = "Above", e[e.Below = 2] = "Below"
+			! function(t) {
+				t[t.None = 0] = "None", t[t.Above = 1] = "Above", t[t.Below = 2] = "Below"
 			}(h || (h = {}));
-			const m = e => {
+			const m = t => {
 				let {
-					isBelow: t = !1,
+					isBelow: e = !1,
 					style: n
-				} = e;
-				return s.a.createElement("div", {
-					className: Object(r.a)(l.a.triangle, {
-						[l.a.triangleBelow]: t
+				} = t;
+				return r.a.createElement("div", {
+					className: Object(s.a)(l.a.triangle, {
+						[l.a.triangleBelow]: e
 					}),
 					style: n
-				}, s.a.createElement("div", {
+				}, r.a.createElement("div", {
 					className: l.a.triangleBack
-				}), s.a.createElement("div", {
+				}), r.a.createElement("div", {
 					className: l.a.triangleFront
 				}))
 			};
 			class g extends o.Component {
-				constructor(e) {
-					super(e), this.containerRef = null, this.updateContainerRef = e => this.containerRef = e, this.setTargetPosition = e => {
-						e ? this.updatePositioning(e) : this.setState({
+				constructor(t) {
+					super(t), this.containerRef = null, this.updateContainerRef = t => this.containerRef = t, this.setTargetPosition = t => {
+						t ? this.updatePositioning(t) : this.setState({
 							positioning: null
 						})
 					}, this.state = {
 						positioning: null
 					}
 				}
-				updatePositioning(e) {
+				updatePositioning(t) {
 					if (!this.containerRef) return;
-					const t = this.containerRef.getBoundingClientRect(),
-						n = Math.round(t.width),
-						o = Math.round(t.height),
-						s = this.state.positioning;
-					if (!e) {
-						if (!s) return;
-						if (s.tooltipWidth === n && s.tooltipHeight === o) return
+					const e = this.containerRef.getBoundingClientRect(),
+						n = Math.round(e.width),
+						o = Math.round(e.height),
+						r = this.state.positioning;
+					if (!t) {
+						if (!r) return;
+						if (r.tooltipWidth === n && r.tooltipHeight === o) return
 					}
-					const r = e ? e.bottom : s.target.bottom,
-						i = e ? e.top : s.target.top,
-						a = e ? e.left : s.target.left,
+					const s = t ? t.bottom : r.target.bottom,
+						i = t ? t.top : r.target.top,
+						a = t ? t.left : r.target.left,
 						l = Object(c.e)(this.containerRef);
 					let d, u, p;
 					if (l) {
-						const e = l.getBoundingClientRect();
-						d = e.bottom - (r || 0), u = a - e.left + l.scrollLeft, p = i - e.top + l.scrollTop
+						const t = l.getBoundingClientRect();
+						d = t.bottom - (s || 0), u = a - t.left + l.scrollLeft, p = i - t.top + l.scrollTop
 					} else {
-						const e = document.documentElement,
-							t = window.pageYOffset || e.scrollTop;
-						u = a + (window.pageXOffset || e.scrollLeft), p = i + t
+						const t = document.documentElement,
+							e = window.pageYOffset || t.scrollTop;
+						u = a + (window.pageXOffset || t.scrollLeft), p = i + e
 					}
 					const h = {
 						target: {
@@ -1656,23 +1465,23 @@
 						positioning: h
 					})
 				}
-				adjustPositionForTriangle(e, t) {
+				adjustPositionForTriangle(t, e) {
 					const {
 						trianglePlacement: n
 					} = this.props;
 					if (!n) return;
-					const o = t ? t.offsetWidth : document.documentElement.offsetWidth,
-						s = o ? Math.max(e.tooltip.left + e.tooltipWidth - o, 0) : 0;
-					e.tooltip.left -= s + p;
-					const r = s + p - u / 2;
+					const o = e ? e.offsetWidth : document.documentElement.offsetWidth,
+						r = o ? Math.max(t.tooltip.left + t.tooltipWidth - o, 0) : 0;
+					t.tooltip.left -= r + p;
+					const s = r + p - u / 2;
 					let i;
-					n === h.Above ? (e.tooltip.top += d, i = -d) : (e.tooltip.top -= e.tooltipHeight + d, i = e.tooltipHeight), e.triangle = {
+					n === h.Above ? (t.tooltip.top += d, i = -d) : (t.tooltip.top -= t.tooltipHeight + d, i = t.tooltipHeight), t.triangle = {
 						top: i,
-						left: r
+						left: s
 					}
 				}
-				componentDidUpdate(e, t) {
-					e.targetPosition !== this.props.targetPosition ? this.setTargetPosition(this.props.targetPosition || null) : this.updatePositioning()
+				componentDidUpdate(t, e) {
+					t.targetPosition !== this.props.targetPosition ? this.setTargetPosition(this.props.targetPosition || null) : this.updatePositioning()
 				}
 				componentDidMount() {
 					this.setTargetPosition(this.props.targetPosition || null), this.props.onSetPositionUpdater && this.props.onSetPositionUpdater(this.setTargetPosition)
@@ -1682,276 +1491,276 @@
 				}
 				render() {
 					const {
-						aboveParent: e,
-						dropdown: t,
+						aboveParent: t,
+						dropdown: e,
 						trianglePlacement: n
 					} = this.props, {
 						positioning: o
-					} = this.state, c = o && void 0 !== o.triangle && s.a.createElement(m, {
+					} = this.state, c = o && void 0 !== o.triangle && r.a.createElement(m, {
 						isBelow: n === h.Below,
 						style: {
 							top: o.triangle.top + "px",
 							left: o.triangle.left + "px"
 						}
 					});
-					let a = s.a.createElement("div", {
-						className: Object(r.a)(l.a.tooltipBox, this.props.className, {
-							[l.a.dropdown]: t
+					let a = r.a.createElement("div", {
+						className: Object(s.a)(l.a.tooltipBox, this.props.className, {
+							[l.a.dropdown]: e
 						}),
 						style: o ? {
 							left: o.tooltip.left,
-							...e ? {
+							...t ? {
 								bottom: o.tooltip.bottom
 							} : {
 								top: o.tooltip.top
 							}
 						} : {},
 						ref: this.updateContainerRef
-					}, o && this.props.children && s.a.createElement(s.a.Fragment, null, c, this.props.children));
+					}, o && this.props.children && r.a.createElement(r.a.Fragment, null, c, this.props.children));
 					return this.props.usePortal && (a = Object(i.d)(a, this.props.portalContainer || document.body)), a
 				}
 			}
 		},
-		"./src/reddit/components/RichTextEditor/UnorderedList/index.m.less": function(e, t, n) {
-			e.exports = {
+		"./src/reddit/components/RichTextEditor/UnorderedList/index.m.less": function(t, e, n) {
+			t.exports = {
 				UnorderedListWrapper: "vXDC2CysyRNVq3lFirKDs",
 				unorderedListWrapper: "vXDC2CysyRNVq3lFirKDs"
 			}
 		},
-		"./src/reddit/components/RichTextEditor/constants/draftEditorCommands.ts": function(e, t, n) {
+		"./src/reddit/components/RichTextEditor/constants/draftEditorCommands.ts": function(t, e, n) {
 			"use strict";
-			n.d(t, "c", (function() {
+			n.d(e, "c", (function() {
 				return o
-			})), n.d(t, "e", (function() {
-				return s
-			})), n.d(t, "g", (function() {
+			})), n.d(e, "e", (function() {
 				return r
-			})), n.d(t, "h", (function() {
+			})), n.d(e, "g", (function() {
+				return s
+			})), n.d(e, "h", (function() {
 				return i
-			})), n.d(t, "b", (function() {
+			})), n.d(e, "b", (function() {
 				return c
-			})), n.d(t, "d", (function() {
+			})), n.d(e, "d", (function() {
 				return a
-			})), n.d(t, "f", (function() {
+			})), n.d(e, "f", (function() {
 				return l
-			})), n.d(t, "a", (function() {
+			})), n.d(e, "a", (function() {
 				return d
 			}));
 			const o = "bold",
-				s = "italic",
-				r = "underline",
+				r = "italic",
+				s = "underline",
 				i = "undo",
 				c = "backspace",
 				a = "delete",
 				l = "split-block",
 				d = "adjust-depth"
 		},
-		"./src/reddit/components/RichTextEditor/constants/editorChangeTypes.ts": function(e, t, n) {
+		"./src/reddit/components/RichTextEditor/constants/editorChangeTypes.ts": function(t, e, n) {
 			"use strict";
-			n.d(t, "a", (function() {
+			n.d(e, "a", (function() {
 				return o
-			})), n.d(t, "e", (function() {
-				return s
-			})), n.d(t, "d", (function() {
+			})), n.d(e, "e", (function() {
 				return r
-			})), n.d(t, "b", (function() {
+			})), n.d(e, "d", (function() {
+				return s
+			})), n.d(e, "b", (function() {
 				return i
-			})), n.d(t, "c", (function() {
+			})), n.d(e, "c", (function() {
 				return c
-			})), n.d(t, "f", (function() {
+			})), n.d(e, "f", (function() {
 				return a
 			}));
 			const o = "backspace-character",
-				s = "insert-fragment",
-				r = "insert-characters",
+				r = "insert-fragment",
+				s = "insert-characters",
 				i = "change-block-data",
 				c = "change-block-type",
 				a = "remove-range"
 		},
-		"./src/reddit/components/RichTextEditor/editorStateTransforms.ts": function(e, t, n) {
+		"./src/reddit/components/RichTextEditor/editorStateTransforms.ts": function(t, e, n) {
 			"use strict";
-			n.d(t, "c", (function() {
+			n.d(e, "c", (function() {
 				return u
-			})), n.d(t, "i", (function() {
+			})), n.d(e, "i", (function() {
 				return p
-			})), n.d(t, "b", (function() {
+			})), n.d(e, "b", (function() {
 				return g
-			})), n.d(t, "f", (function() {
+			})), n.d(e, "f", (function() {
 				return f
-			})), n.d(t, "h", (function() {
+			})), n.d(e, "h", (function() {
 				return b
-			})), n.d(t, "g", (function() {
+			})), n.d(e, "g", (function() {
 				return y
-			})), n.d(t, "d", (function() {
+			})), n.d(e, "d", (function() {
 				return E
-			})), n.d(t, "e", (function() {
+			})), n.d(e, "e", (function() {
 				return S
-			})), n.d(t, "a", (function() {
-				return x
+			})), n.d(e, "a", (function() {
+				return C
 			}));
 			n("./node_modules/core-js/modules/web.dom.iterable.js");
 			var o = n("./node_modules/draft-js/lib/Draft.js"),
-				s = n("./node_modules/immutable/dist/immutable.js"),
-				r = n("./src/reddit/components/RichTextEditor/constants/draftEditorCommands.ts"),
+				r = n("./node_modules/immutable/dist/immutable.js"),
+				s = n("./src/reddit/components/RichTextEditor/constants/draftEditorCommands.ts"),
 				i = n("./src/reddit/components/RichTextEditor/constants/editorChangeTypes.ts"),
 				c = n("./src/reddit/components/RichTextEditor/emotes/helpers.ts"),
 				a = n("./src/reddit/components/RichTextEditor/helpers/modifiers.ts"),
 				l = n("./src/reddit/components/RichTextEditor/helpers/styles.ts"),
 				d = n("./src/reddit/components/RichTextEditor/styleAndBlockTypes.ts");
-			const u = (e, t) => {
-					return t.getSelection().isCollapsed() ? Object(l.a)(e, t) : Object(l.b)(e, t)
+			const u = (t, e) => {
+					return e.getSelection().isCollapsed() ? Object(l.a)(t, e) : Object(l.b)(t, e)
 				},
-				p = (e, t) => {
-					const n = t.getCurrentContent(),
-						s = t.getSelection(),
-						r = s.getEndKey(),
-						a = o.RichUtils.getCurrentBlockType(t) === e ? d.n : e;
-					let u = t,
-						p = o.Modifier.setBlockType(n, s, a);
-					const h = n.getBlockForKey(r).getLength();
+				p = (t, e) => {
+					const n = e.getCurrentContent(),
+						r = e.getSelection(),
+						s = r.getEndKey(),
+						a = o.RichUtils.getCurrentBlockType(e) === t ? d.n : t;
+					let u = e,
+						p = o.Modifier.setBlockType(n, r, a);
+					const h = n.getBlockForKey(s).getLength();
 					if (Object(d.r)(a) || Object(d.q)(a)) {
-						const e = o.SelectionState.createEmpty(s.getStartKey()).merge({
-							focusKey: s.getEndKey(),
+						const t = o.SelectionState.createEmpty(r.getStartKey()).merge({
+							focusKey: r.getEndKey(),
 							focusOffset: h
 						});
-						u = Object(l.c)(u), p = ((e, t) => {
-							const n = Object.keys(d.k).reduce((e, n) => o.Modifier.removeInlineStyle(e, t, d.k[n]), e);
-							return Object(c.h)(n, t)
-						})(p, e)
+						u = Object(l.c)(u), p = ((t, e) => {
+							const n = Object.keys(d.k).reduce((t, n) => o.Modifier.removeInlineStyle(t, e, d.k[n]), t);
+							return Object(c.h)(n, e)
+						})(p, t)
 					}
 					if (Object(d.q)(a) || Object(d.p)(a)) {
-						const e = p.getBlockAfter(r);
-						if (!e || e.getType() !== a && e.getType() !== d.n) {
-							const e = o.SelectionState.createEmpty(r).merge({
+						const t = p.getBlockAfter(s);
+						if (!t || t.getType() !== a && t.getType() !== d.n) {
+							const t = o.SelectionState.createEmpty(s).merge({
 								anchorOffset: h,
 								focusOffset: h
 							});
-							p = o.Modifier.splitBlock(p, e), p = o.Modifier.setBlockType(p, p.getSelectionAfter(), d.n)
+							p = o.Modifier.splitBlock(p, t), p = o.Modifier.setBlockType(p, p.getSelectionAfter(), d.n)
 						}
 					}
 					return p = p.merge({
-						selectionAfter: s
+						selectionAfter: r
 					}), o.EditorState.push(u, p, i.c)
 				},
-				h = (e, t) => {
-					const n = o.Modifier.setBlockType(e, t, d.n);
-					return o.Modifier.replaceText(n, t, "", Object(s.OrderedSet)([]))
+				h = (t, e) => {
+					const n = o.Modifier.setBlockType(t, e, d.n);
+					return o.Modifier.replaceText(n, e, "", Object(r.OrderedSet)([]))
 				},
-				m = (e, t) => o.EditorState.forceSelection(e, o.SelectionState.createEmpty(t)),
-				g = e => {
-					const t = e.getCurrentContent(),
-						n = e.getSelection(),
-						r = a.d(t, n),
-						c = r.getBlockAfter(n.getEndKey()),
+				m = (t, e) => o.EditorState.forceSelection(t, o.SelectionState.createEmpty(e)),
+				g = t => {
+					const e = t.getCurrentContent(),
+						n = t.getSelection(),
+						s = a.d(e, n),
+						c = s.getBlockAfter(n.getEndKey()),
 						l = o.SelectionState.createEmpty(c.getKey()),
-						u = o.Modifier.replaceText(o.Modifier.setBlockType(r, l, d.n), l, "", Object(s.OrderedSet)([])),
-						p = o.EditorState.push(e, u, i.d);
+						u = o.Modifier.replaceText(o.Modifier.setBlockType(s, l, d.n), l, "", Object(r.OrderedSet)([])),
+						p = o.EditorState.push(t, u, i.d);
 					return m(p, c.getKey())
 				},
-				f = e => {
-					const t = e.getCurrentContent(),
-						n = e.getSelection(),
-						s = t.getBlockForKey(n.getEndKey()),
-						i = s.set("depth", Math.max(s.getDepth() - 1, 0)),
-						c = t.merge({
-							blockMap: t.getBlockMap().merge({
-								[s.getKey()]: i
+				f = t => {
+					const e = t.getCurrentContent(),
+						n = t.getSelection(),
+						r = e.getBlockForKey(n.getEndKey()),
+						i = r.set("depth", Math.max(r.getDepth() - 1, 0)),
+						c = e.merge({
+							blockMap: e.getBlockMap().merge({
+								[r.getKey()]: i
 							})
 						});
-					return o.EditorState.push(e, c, r.a)
+					return o.EditorState.push(t, c, s.a)
 				},
-				b = e => {
-					const t = e.getCurrentContent(),
-						n = e.getSelection(),
-						s = t.getBlockForKey(n.getEndKey()).getKey(),
-						r = o.EditorState.push(e, h(t, n), i.c);
-					return m(r, s)
+				b = t => {
+					const e = t.getCurrentContent(),
+						n = t.getSelection(),
+						r = e.getBlockForKey(n.getEndKey()).getKey(),
+						s = o.EditorState.push(t, h(e, n), i.c);
+					return m(s, r)
 				},
-				y = e => {
-					const t = e.getCurrentContent(),
-						n = e.getSelection(),
-						s = t.getBlockForKey(n.getEndKey()),
-						r = s.getKey(),
-						c = t.getBlockBefore(r).getKey(),
-						a = o.SelectionState.createEmpty(r).merge({
-							focusOffset: s.getText().length
+				y = t => {
+					const e = t.getCurrentContent(),
+						n = t.getSelection(),
+						r = e.getBlockForKey(n.getEndKey()),
+						s = r.getKey(),
+						c = e.getBlockBefore(s).getKey(),
+						a = o.SelectionState.createEmpty(s).merge({
+							focusOffset: r.getText().length
 						}),
-						l = o.EditorState.push(e, h(((e, t) => {
-							const n = e.getBlockMap().remove(t);
-							return e.merge({
+						l = o.EditorState.push(t, h(((t, e) => {
+							const n = t.getBlockMap().remove(e);
+							return t.merge({
 								blockMap: n
 							})
-						})(t, c), a), i.c);
-					return m(l, r)
+						})(e, c), a), i.c);
+					return m(l, s)
 				},
-				E = e => {
-					const t = a.d(e.getCurrentContent(), e.getSelection());
-					return o.EditorState.push(e, t, r.f)
+				E = t => {
+					const e = a.d(t.getCurrentContent(), t.getSelection());
+					return o.EditorState.push(t, e, s.f)
 				},
-				S = e => {
-					const t = a.a(e.getCurrentContent(), e.getSelection(), "\n");
-					return o.EditorState.push(e, t, i.d)
+				S = t => {
+					const e = a.a(t.getCurrentContent(), t.getSelection(), "\n");
+					return o.EditorState.push(t, e, i.d)
 				},
-				x = e => {
-					const t = e.getSelection(),
-						n = a.a(e.getCurrentContent(), t, " ");
-					return o.EditorState.push(e, n, i.d)
+				C = t => {
+					const e = t.getSelection(),
+						n = a.a(t.getCurrentContent(), e, " ");
+					return o.EditorState.push(t, n, i.d)
 				}
 		},
-		"./src/reddit/components/RichTextEditor/emotes/Powerups/tooltipAsync.ts": function(e, t, n) {
+		"./src/reddit/components/RichTextEditor/emotes/Powerups/tooltipAsync.ts": function(t, e, n) {
 			"use strict";
 			var o = n("./node_modules/@loadable/component/dist/loadable.esm.js");
-			t.a = Object(o.a)({
+			e.a = Object(o.a)({
 				resolved: {},
 				chunkName: () => "PowerupsEmotesTooltip",
-				isReady(e) {
-					const t = this.resolve(e);
-					return !1 !== this.resolved[t] && !!n.m[t]
+				isReady(t) {
+					const e = this.resolve(t);
+					return !1 !== this.resolved[e] && !!n.m[e]
 				},
 				importAsync: () => n.e("PowerupsEmotesTooltip").then(n.bind(null, "./src/reddit/components/RichTextEditor/emotes/Powerups/Tooltip.tsx")),
-				requireAsync(e) {
-					const t = this.resolve(e);
-					return this.resolved[t] = !1, this.importAsync(e).then(e => (this.resolved[t] = !0, e))
+				requireAsync(t) {
+					const e = this.resolve(t);
+					return this.resolved[e] = !1, this.importAsync(t).then(t => (this.resolved[e] = !0, t))
 				},
-				requireSync(e) {
-					const t = this.resolve(e);
-					return n(t)
+				requireSync(t) {
+					const e = this.resolve(t);
+					return n(e)
 				},
 				resolve() {
 					return "./src/reddit/components/RichTextEditor/emotes/Powerups/Tooltip.tsx"
 				}
 			})
 		},
-		"./src/reddit/components/RichTextEditor/emotes/decorator.m.less": function(e, t, n) {
-			e.exports = {
+		"./src/reddit/components/RichTextEditor/emotes/decorator.m.less": function(t, e, n) {
+			t.exports = {
 				emote: "Q7hqnjoPSXm7QyvW8qf57",
 				sticker: "_1WD0TSe2_gY29FXmFjPCza"
 			}
 		},
-		"./src/reddit/components/RichTextEditor/emotes/helpers.ts": function(e, t, n) {
+		"./src/reddit/components/RichTextEditor/emotes/helpers.ts": function(t, e, n) {
 			"use strict";
-			n.d(t, "a", (function() {
+			n.d(e, "a", (function() {
 				return p
-			})), n.d(t, "c", (function() {
+			})), n.d(e, "c", (function() {
 				return h
-			})), n.d(t, "g", (function() {
+			})), n.d(e, "g", (function() {
 				return m
-			})), n.d(t, "b", (function() {
+			})), n.d(e, "b", (function() {
 				return g
-			})), n.d(t, "h", (function() {
+			})), n.d(e, "h", (function() {
 				return f
-			})), n.d(t, "f", (function() {
+			})), n.d(e, "f", (function() {
 				return b
-			})), n.d(t, "e", (function() {
+			})), n.d(e, "e", (function() {
 				return y
-			})), n.d(t, "i", (function() {
+			})), n.d(e, "i", (function() {
 				return E
-			})), n.d(t, "d", (function() {
+			})), n.d(e, "d", (function() {
 				return S
 			}));
 			var o = n("./node_modules/draft-js/lib/Draft.js"),
-				s = n("./node_modules/immutable/dist/immutable.js"),
-				r = n("./src/lib/memoizeByReference/index.ts"),
+				r = n("./node_modules/immutable/dist/immutable.js"),
+				s = n("./src/lib/memoizeByReference/index.ts"),
 				i = n("./src/reddit/components/RichTextEditor/constants/editorChangeTypes.ts"),
 				c = n("./src/reddit/components/RichTextEditor/entity/entityTypes.ts"),
 				a = n("./src/reddit/components/RichTextEditor/entity/getAllEntitiesInSelection.ts"),
@@ -1960,149 +1769,149 @@
 				u = n("./src/reddit/components/RichTextEditor/styleAndBlockTypes.ts");
 			const p = "⬛";
 
-			function h(e, t) {
-				return e.createEntity(c.a.EMOTE, "IMMUTABLE", t)
+			function h(t, e) {
+				return t.createEntity(c.a.EMOTE, "IMMUTABLE", e)
 			}
 
-			function m(e, t) {
-				let n = t.getCurrentContent();
-				const s = (n = h(n, e)).getLastCreatedEntityKey();
-				n = Object(d.b)(n, t.getSelection(), p, void 0, s);
-				const r = o.EditorState.push(t, n, i.d);
-				return o.EditorState.forceSelection(r, r.getSelection())
+			function m(t, e) {
+				let n = e.getCurrentContent();
+				const r = (n = h(n, t)).getLastCreatedEntityKey();
+				n = Object(d.b)(n, e.getSelection(), p, void 0, r);
+				const s = o.EditorState.push(e, n, i.d);
+				return o.EditorState.forceSelection(s, s.getSelection())
 			}
 
-			function g(e, t) {
-				if (t.getStartKey() !== t.getEndKey()) return !1;
-				const n = e.getBlockForKey(t.getEndKey()).getType();
+			function g(t, e) {
+				if (e.getStartKey() !== e.getEndKey()) return !1;
+				const n = t.getBlockForKey(e.getEndKey()).getType();
 				return !(Object(u.q)(n) || Object(u.r)(n) || Object(u.t)(n))
 			}
 
-			function f(e, t) {
-				const n = Object(a.a)(e, t, t => {
-					const n = t.getEntity();
-					return !!n && e.getEntity(n).getType() === c.a.EMOTE
+			function f(t, e) {
+				const n = Object(a.a)(t, e, e => {
+					const n = e.getEntity();
+					return !!n && t.getEntity(n).getType() === c.a.EMOTE
 				});
-				let s;
-				for (; s = n.pop();) {
-					const t = o.SelectionState.createEmpty(s.blockKey).merge({
-						anchorOffset: s.start,
-						focusOffset: s.end
+				let r;
+				for (; r = n.pop();) {
+					const e = o.SelectionState.createEmpty(r.blockKey).merge({
+						anchorOffset: r.start,
+						focusOffset: r.end
 					});
-					e = o.Modifier.removeRange(e, t, "backward")
+					t = o.Modifier.removeRange(t, e, "backward")
 				}
-				return e
+				return t
 			}
 
-			function b(e) {
-				const t = e.getSelection();
-				if (!t.isCollapsed()) return null;
-				const n = e.getCurrentContent().getBlockForKey(t.getFocusKey()),
+			function b(t) {
+				const e = t.getSelection();
+				if (!e.isCollapsed()) return null;
+				const n = t.getCurrentContent().getBlockForKey(e.getFocusKey()),
 					o = n.getText(),
-					s = n.getCharacterList();
-				let r = t.getFocusOffset() - 1;
+					r = n.getCharacterList();
+				let s = e.getFocusOffset() - 1;
 				const i = [];
-				for (; r >= 0;) {
-					const e = o[r],
-						t = s.get(r),
-						n = t && t.getEntity();
-					if (!e.trim().length || n) return null;
-					if (":" === e && i.length > 0) break;
-					i.unshift(e), r--
+				for (; s >= 0;) {
+					const t = o[s],
+						e = r.get(s),
+						n = e && e.getEntity();
+					if (!t.trim().length || n) return null;
+					if (":" === t && i.length > 0) break;
+					i.unshift(t), s--
 				}
-				return r >= 0 && i.length ? i.join("").toLowerCase() : null
+				return s >= 0 && i.length ? i.join("").toLowerCase() : null
 			}
 
-			function y(e, t, n) {
-				e.findEntityRanges(e => {
-					const t = e.getEntity();
-					return !!t && n.getEntity(t).getType() === c.a.EMOTE
-				}, t)
+			function y(t, e, n) {
+				t.findEntityRanges(t => {
+					const e = t.getEntity();
+					return !!e && n.getEntity(e).getType() === c.a.EMOTE
+				}, e)
 			}
-			const E = Object(r.a)(e => {
-				if (e.getBlockMap().size > 1) return !1;
-				const t = e.getFirstBlock();
+			const E = Object(s.a)(t => {
+				if (t.getBlockMap().size > 1) return !1;
+				const e = t.getFirstBlock();
 				let n = 0;
-				return y(t, () => n++, e), n <= 3 && n === t.getLength()
+				return y(e, () => n++, t), n <= 3 && n === e.getLength()
 			});
 
-			function S(e, t) {
-				if (E(e.getCurrentContent()) === E(t.getCurrentContent())) return e;
-				const n = e.getCurrentContent(),
-					r = n.getFirstBlock();
-				return o.EditorState.set(e, {
-					currentContent: o.Modifier.mergeBlockData(n, Object(l.b)(r), Object(s.Map)({
+			function S(t, e) {
+				if (E(t.getCurrentContent()) === E(e.getCurrentContent())) return t;
+				const n = t.getCurrentContent(),
+					s = n.getFirstBlock();
+				return o.EditorState.set(t, {
+					currentContent: o.Modifier.mergeBlockData(n, Object(l.b)(s), Object(r.Map)({
 						_emote_modified: new Date
 					}))
 				})
 			}
 		},
-		"./src/reddit/components/RichTextEditor/entity/applyEntityToContentBlock.ts": function(e, t, n) {
+		"./src/reddit/components/RichTextEditor/entity/applyEntityToContentBlock.ts": function(t, e, n) {
 			"use strict";
-			n.d(t, "a", (function() {
-				return s
+			n.d(e, "a", (function() {
+				return r
 			}));
 			var o = n("./node_modules/draft-js/lib/Draft.js");
 
-			function s(e, t, n, s) {
-				let r = e.getCharacterList();
-				return r = r.withMutations(e => {
-					for (let r = t; r < n; r++) e.set(r, o.CharacterMetadata.applyEntity(e.get(r), s))
-				}), e.set("characterList", r)
+			function r(t, e, n, r) {
+				let s = t.getCharacterList();
+				return s = s.withMutations(t => {
+					for (let s = e; s < n; s++) t.set(s, o.CharacterMetadata.applyEntity(t.get(s), r))
+				}), t.set("characterList", s)
 			}
 		},
-		"./src/reddit/components/RichTextEditor/entity/cloneEntitiesInFragment.ts": function(e, t, n) {
+		"./src/reddit/components/RichTextEditor/entity/cloneEntitiesInFragment.ts": function(t, e, n) {
 			"use strict";
-			n.d(t, "a", (function() {
-				return s
-			})), n.d(t, "b", (function() {
+			n.d(e, "a", (function() {
 				return r
+			})), n.d(e, "b", (function() {
+				return s
 			}));
 			n("./node_modules/core-js/modules/web.dom.iterable.js");
 			var o = n("./src/reddit/components/RichTextEditor/entity/applyEntityToContentBlock.ts");
 
-			function s(e, t, n, s, r) {
-				const i = e.createEntity(n.getType(), n.getMutability(), n.getData()),
-					c = e.getLastCreatedEntityKey();
-				return [i, Object(o.a)(t, s, r, c)]
+			function r(t, e, n, r, s) {
+				const i = t.createEntity(n.getType(), n.getMutability(), n.getData()),
+					c = t.getLastCreatedEntityKey();
+				return [i, Object(o.a)(e, r, s, c)]
 			}
 
-			function r(e, t) {
+			function s(t, e) {
 				let n = arguments.length > 2 && void 0 !== arguments[2] && arguments[2];
 				const o = new Map;
-				let r = t,
-					i = e;
-				return t.forEach((e, t) => {
-					e && t && e.findEntityRanges(e => !!e.getEntity(), (n, s) => {
-						const r = e.getEntityAt(n),
-							i = o.get(r) || [];
+				let s = e,
+					i = t;
+				return e.forEach((t, e) => {
+					t && e && t.findEntityRanges(t => !!t.getEntity(), (n, r) => {
+						const s = t.getEntityAt(n),
+							i = o.get(s) || [];
 						i.push({
 							start: n,
-							end: s,
-							blockKey: t
-						}), o.set(r, i)
+							end: r,
+							blockKey: e
+						}), o.set(s, i)
 					})
-				}), o.forEach((t, o) => {
-					const c = e.getEntity(o);
-					(n ? t.slice(1) : t).forEach(e => {
+				}), o.forEach((e, o) => {
+					const c = t.getEntity(o);
+					(n ? e.slice(1) : e).forEach(t => {
 						let {
-							start: t,
+							start: e,
 							end: n,
 							blockKey: o
-						} = e;
-						const a = r.get(o),
-							[l, d] = s(i, a, c, t, n);
-						i = l, r = r.set(o, d)
+						} = t;
+						const a = s.get(o),
+							[l, d] = r(i, a, c, e, n);
+						i = l, s = s.set(o, d)
 					})
-				}), [i, r]
+				}), [i, s]
 			}
 		},
-		"./src/reddit/components/RichTextEditor/entity/entityTypes.ts": function(e, t, n) {
+		"./src/reddit/components/RichTextEditor/entity/entityTypes.ts": function(t, e, n) {
 			"use strict";
-			n.d(t, "a", (function() {
+			n.d(e, "a", (function() {
 				return o
-			})), n.d(t, "b", (function() {
-				return r
+			})), n.d(e, "b", (function() {
+				return s
 			}));
 			n("./node_modules/core-js/modules/web.dom.iterable.js");
 			const o = {
@@ -2114,55 +1923,55 @@
 					USER_LINK: "USER_LINK",
 					USER_MENTION: "USER_MENTION"
 				},
-				s = new Set([o.COMMENT_LINK, o.LINK, o.POST_LINK, o.SUBREDDIT_LINK, o.USER_LINK, o.USER_MENTION]),
-				r = (e, t) => {
-					const n = e && t.getEntity(e);
-					return !!n && (e => s.has(e))(n.getType())
+				r = new Set([o.COMMENT_LINK, o.LINK, o.POST_LINK, o.SUBREDDIT_LINK, o.USER_LINK, o.USER_MENTION]),
+				s = (t, e) => {
+					const n = t && e.getEntity(t);
+					return !!n && (t => r.has(t))(n.getType())
 				}
 		},
-		"./src/reddit/components/RichTextEditor/entity/getAllEntitiesInSelection.ts": function(e, t, n) {
+		"./src/reddit/components/RichTextEditor/entity/getAllEntitiesInSelection.ts": function(t, e, n) {
 			"use strict";
-			n.d(t, "a", (function() {
-				return s
+			n.d(e, "a", (function() {
+				return r
 			}));
 			var o = n("./src/reddit/components/RichTextEditor/helpers/forEachBlock.ts");
 
-			function s(e, t, n) {
-				const s = [];
-				return Object(o.a)(e, t, (e, o) => {
-					const r = t.getStartKey() === o ? t.getStartOffset() : 0,
-						i = t.getEndKey() === o ? t.getEndOffset() : e.getLength();
-					e.findEntityRanges(n, (t, n) => {
-						r <= n && i >= t && s.push({
+			function r(t, e, n) {
+				const r = [];
+				return Object(o.a)(t, e, (t, o) => {
+					const s = e.getStartKey() === o ? e.getStartOffset() : 0,
+						i = e.getEndKey() === o ? e.getEndOffset() : t.getLength();
+					t.findEntityRanges(n, (e, n) => {
+						s <= n && i >= e && r.push({
 							blockKey: o,
-							entityKey: e.getEntityAt(t),
-							start: t,
+							entityKey: t.getEntityAt(e),
+							start: e,
 							end: n
 						})
 					})
-				}), s
+				}), r
 			}
 		},
-		"./src/reddit/components/RichTextEditor/entity/getSelectionEntityInfo.ts": function(e, t, n) {
+		"./src/reddit/components/RichTextEditor/entity/getSelectionEntityInfo.ts": function(t, e, n) {
 			"use strict";
-			n.d(t, "a", (function() {
-				return s
+			n.d(e, "a", (function() {
+				return r
 			}));
 			var o = n("./node_modules/draft-js/lib/Draft.js");
 
-			function s(e, t) {
-				const n = t.getFocusKey();
-				if (n !== t.getAnchorKey()) return;
-				const s = e.getBlockForKey(n),
-					r = t.getStartOffset(),
-					i = t.getEndOffset(),
-					c = s.getEntityAt(i) || (i > 0 ? s.getEntityAt(i - 1) : null);
+			function r(t, e) {
+				const n = e.getFocusKey();
+				if (n !== e.getAnchorKey()) return;
+				const r = t.getBlockForKey(n),
+					s = e.getStartOffset(),
+					i = e.getEndOffset(),
+					c = r.getEntityAt(i) || (i > 0 ? r.getEntityAt(i - 1) : null);
 				if (!c) return;
 				let a, l;
-				if (s.findEntityRanges(e => e.getEntity() === c, (e, t) => {
-						e <= r && i <= t && (a = e, l = t)
+				if (r.findEntityRanges(t => t.getEntity() === c, (t, e) => {
+						t <= s && i <= e && (a = t, l = e)
 					}), "number" != typeof a || "number" != typeof l) return;
-				const d = s.getText().slice(a, l);
+				const d = r.getText().slice(a, l);
 				return {
 					entitySelection: o.SelectionState.createEmpty(n).merge({
 						anchorOffset: a,
@@ -2173,34 +1982,34 @@
 				}
 			}
 		},
-		"./src/reddit/components/RichTextEditor/entity/link/decorator.m.less": function(e, t, n) {
-			e.exports = {
+		"./src/reddit/components/RichTextEditor/entity/link/decorator.m.less": function(t, e, n) {
+			t.exports = {
 				RegularLink: "_1FRfMxEAy__7c8vezYv9qP",
 				regularLink: "_1FRfMxEAy__7c8vezYv9qP"
 			}
 		},
-		"./src/reddit/components/RichTextEditor/entity/link/helpers.tsx": function(e, t, n) {
+		"./src/reddit/components/RichTextEditor/entity/link/helpers.tsx": function(t, e, n) {
 			"use strict";
-			n.d(t, "a", (function() {
+			n.d(e, "a", (function() {
 				return m
-			})), n.d(t, "d", (function() {
+			})), n.d(e, "d", (function() {
 				return f
-			})), n.d(t, "f", (function() {
+			})), n.d(e, "f", (function() {
 				return b
-			})), n.d(t, "c", (function() {
+			})), n.d(e, "c", (function() {
 				return y
-			})), n.d(t, "b", (function() {
+			})), n.d(e, "b", (function() {
 				return E
-			})), n.d(t, "h", (function() {
+			})), n.d(e, "h", (function() {
 				return S
-			})), n.d(t, "g", (function() {
-				return x
-			})), n.d(t, "e", (function() {
+			})), n.d(e, "g", (function() {
 				return C
+			})), n.d(e, "e", (function() {
+				return x
 			}));
 			var o = n("./node_modules/draft-js/lib/Draft.js"),
-				s = n("./src/lib/linkMatchers/index.ts"),
-				r = n("./src/lib/linkMatchers/customLinks.ts"),
+				r = n("./src/lib/linkMatchers/index.ts"),
+				s = n("./src/lib/linkMatchers/customLinks.ts"),
 				i = n("./src/lib/memoizeByReference/index.ts"),
 				c = n("./src/reddit/components/RichTextEditor/entity/entityTypes.ts"),
 				a = n("./src/reddit/components/RichTextEditor/entity/getAllEntitiesInSelection.ts"),
@@ -2210,21 +2019,21 @@
 			const p = [c.a.SUBREDDIT_LINK, c.a.USER_LINK, c.a.USER_MENTION],
 				h = [...p, c.a.LINK];
 
-			function m(e, t, n) {
-				e.findEntityRanges(e => {
-					const t = e.getEntity();
-					return !!t && h.includes(n.getEntity(t).getType())
-				}, t)
+			function m(t, e, n) {
+				t.findEntityRanges(t => {
+					const e = t.getEntity();
+					return !!e && h.includes(n.getEntity(e).getType())
+				}, e)
 			}
-			const g = e => {
-					const t = s.a.match(e);
-					if (t && t.length && t[0]) {
+			const g = t => {
+					const e = r.a.match(t);
+					if (e && e.length && e[0]) {
 						const {
-							schema: e,
+							schema: t,
 							url: n
-						} = t[0];
+						} = e[0];
 						return {
-							linkPrefix: e,
+							linkPrefix: t,
 							url: n
 						}
 					}
@@ -2233,29 +2042,29 @@
 						url: ""
 					}
 				},
-				f = Object(i.a)((function(e) {
-					const t = e.getCurrentContent(),
-						n = e.getSelection();
+				f = Object(i.a)((function(t) {
+					const e = t.getCurrentContent(),
+						n = t.getSelection();
 					if (!n.isCollapsed()) return;
-					if (Object(u.q)(t.getBlockForKey(n.getStartKey()).getType())) return;
-					const r = n.getFocusKey(),
-						i = t.getBlockForKey(r),
+					if (Object(u.q)(e.getBlockForKey(n.getStartKey()).getType())) return;
+					const s = n.getFocusKey(),
+						i = e.getBlockForKey(s),
 						c = n.getFocusOffset(),
 						a = i.getText(),
 						l = a.lastIndexOf(" ", c - 1) + 1,
 						p = a.slice(l, c);
 					if (!p) return;
-					const h = s.f.match(p);
+					const h = r.f.match(p);
 					if (!h) return;
 					const m = h[h.length - 1],
 						g = l + m.index,
 						f = l + m.lastIndex;
 					let b = -1;
-					if (i.findEntityRanges(e => !!e.getEntity(), (e, t) => {
-							e < c && (b = t)
+					if (i.findEntityRanges(t => !!t.getEntity(), (t, e) => {
+							t < c && (b = e)
 						}), b >= g) return;
 					return i.getCharacterList().slice(g, f).find(d.b) ? void 0 : {
-						selection: o.SelectionState.createEmpty(r).merge({
+						selection: o.SelectionState.createEmpty(s).merge({
 							anchorOffset: g,
 							focusOffset: f
 						}),
@@ -2263,189 +2072,189 @@
 					}
 				}));
 
-			function b(e, t, n) {
-				const s = e.getSelection();
-				let r = e.getCurrentContent();
-				const i = (r = r.createEntity(c.a.LINK, "MUTABLE", {
+			function b(t, e, n) {
+				const r = t.getSelection();
+				let s = t.getCurrentContent();
+				const i = (s = s.createEntity(c.a.LINK, "MUTABLE", {
 					url: n
 				})).getLastCreatedEntityKey();
-				return r = (r = o.Modifier.applyEntity(r, t, i)).merge({
-					selectionAfter: s
-				}), o.EditorState.push(e, r, "apply-entity")
+				return s = (s = o.Modifier.applyEntity(s, e, i)).merge({
+					selectionAfter: r
+				}), o.EditorState.push(t, s, "apply-entity")
 			}
-			const y = Object(i.a)((function(e) {
-				const t = e.getCurrentContent(),
-					n = Object(l.a)(t, e.getSelection());
+			const y = Object(i.a)((function(t) {
+				const e = t.getCurrentContent(),
+					n = Object(l.a)(e, t.getSelection());
 				if (!n) return;
-				const o = t.getEntity(n.entityKey);
+				const o = e.getEntity(n.entityKey);
 				if (o.getType() !== c.a.LINK) return;
 				const {
-					url: s
+					url: r
 				} = o.getData();
 				return {
-					url: s,
+					url: r,
 					...n
 				}
 			}));
-			const E = Object(i.a)((function(e) {
-				const t = e.getCurrentContent(),
-					n = e.getSelection(),
-					o = Object(l.a)(t, n);
+			const E = Object(i.a)((function(t) {
+				const e = t.getCurrentContent(),
+					n = t.getSelection(),
+					o = Object(l.a)(e, n);
 				if (!o) return;
-				const s = n.getFocusOffset(),
-					r = t.getEntity(o.entityKey),
+				const r = n.getFocusOffset(),
+					s = e.getEntity(o.entityKey),
 					{
 						linkPrefix: i
 					} = g(o.entityText);
-				return !p.includes(r.getType()) || !o.entityText.startsWith(i) || s - o.entitySelection.getStartOffset() < i.length ? void 0 : {
+				return !p.includes(s.getType()) || !o.entityText.startsWith(i) || r - o.entitySelection.getStartOffset() < i.length ? void 0 : {
 					internalName: o.entityText.slice(i.length),
 					...o
 				}
 			}));
 
-			function S(e, t, n, s) {
-				let r = "apply-entity",
-					i = e.getCurrentContent(),
-					a = e;
-				const d = Object(l.a)(i, t);
+			function S(t, e, n, r) {
+				let s = "apply-entity",
+					i = t.getCurrentContent(),
+					a = t;
+				const d = Object(l.a)(i, e);
 				if (n)
 					if (d) {
-						const e = i.getEntity(d.entityKey),
+						const t = i.getEntity(d.entityKey),
 							{
-								url: t
-							} = e.getData();
-						t !== n && (i = i.mergeEntityData(d.entityKey, {
+								url: e
+							} = t.getData();
+						e !== n && (i = i.mergeEntityData(d.entityKey, {
 							url: n
-						})), void 0 !== s && d.entityText !== s && (i = o.Modifier.replaceText(i, d.entitySelection, s, void 0, d.entityKey), r = "insert-characters")
+						})), void 0 !== r && d.entityText !== r && (i = o.Modifier.replaceText(i, d.entitySelection, r, void 0, d.entityKey), s = "insert-characters")
 					} else {
-						if (void 0 === s) throw new Error("New link display text must be provided!");
-						const e = (i = i.createEntity(c.a.LINK, "MUTABLE", {
+						if (void 0 === r) throw new Error("New link display text must be provided!");
+						const t = (i = i.createEntity(c.a.LINK, "MUTABLE", {
 							url: n
 						})).getLastCreatedEntityKey();
-						i = o.Modifier.replaceText(i, t, s, void 0, e), r = "insert-characters"
+						i = o.Modifier.replaceText(i, e, r, void 0, t), s = "insert-characters"
 					}
-				else i = (i = o.Modifier.applyEntity(i, t, "")).merge({
-					selectionAfter: e.getSelection()
+				else i = (i = o.Modifier.applyEntity(i, e, "")).merge({
+					selectionAfter: t.getSelection()
 				});
-				return i === e.getCurrentContent() ? e : a = o.EditorState.push(a, i, r)
+				return i === t.getCurrentContent() ? t : a = o.EditorState.push(a, i, s)
 			}
 
-			function x(e, t) {
-				const n = E(e);
-				if (!n) return e;
+			function C(t, e) {
+				const n = E(t);
+				if (!n) return t;
 				const {
-					linkPrefix: s,
+					linkPrefix: r,
 					url: i
-				} = g(n.entityText), c = `${s===r.d.mention?r.d.profile:s}${t}`, a = n.entitySelection.getStartOffset() + c.length;
-				let l = S(e, n.entitySelection, i, c);
+				} = g(n.entityText), c = `${r===s.d.mention?s.d.profile:r}${e}`, a = n.entitySelection.getStartOffset() + c.length;
+				let l = S(t, n.entitySelection, i, c);
 				return l = o.EditorState.forceSelection(l, n.entitySelection.merge({
 					anchorOffset: a,
 					focusOffset: a
 				}))
 			}
 
-			function C(e, t) {
-				if (t.getStartKey() !== t.getEndKey()) return !1;
-				const n = e.getBlockForKey(t.getEndKey()).getType();
-				return !Object(u.q)(n) && !Object(u.t)(n) && !Object(a.a)(e, t, t => {
-					const n = t.getEntity();
-					return !!n && e.getEntity(n).getType() !== c.a.LINK
+			function x(t, e) {
+				if (e.getStartKey() !== e.getEndKey()) return !1;
+				const n = t.getBlockForKey(e.getEndKey()).getType();
+				return !Object(u.q)(n) && !Object(u.t)(n) && !Object(a.a)(t, e, e => {
+					const n = e.getEntity();
+					return !!n && t.getEntity(n).getType() !== c.a.LINK
 				}).length
 			}
 		},
-		"./src/reddit/components/RichTextEditor/helpers/common.ts": function(e, t, n) {
+		"./src/reddit/components/RichTextEditor/helpers/common.ts": function(t, e, n) {
 			"use strict";
-			n.d(t, "a", (function() {
+			n.d(e, "a", (function() {
 				return o
-			})), n.d(t, "h", (function() {
+			})), n.d(e, "h", (function() {
 				return c
-			})), n.d(t, "e", (function() {
+			})), n.d(e, "e", (function() {
 				return a
-			})), n.d(t, "c", (function() {
+			})), n.d(e, "c", (function() {
 				return l
-			})), n.d(t, "f", (function() {
+			})), n.d(e, "f", (function() {
 				return d
-			})), n.d(t, "b", (function() {
+			})), n.d(e, "b", (function() {
 				return u
-			})), n.d(t, "i", (function() {
+			})), n.d(e, "i", (function() {
 				return p
-			})), n.d(t, "d", (function() {
+			})), n.d(e, "d", (function() {
 				return h
-			})), n.d(t, "g", (function() {
+			})), n.d(e, "g", (function() {
 				return m
 			}));
-			var o, s = n("./node_modules/draft-js/lib/Draft.js"),
-				r = n("./node_modules/immutable/dist/immutable.js"),
+			var o, r = n("./node_modules/draft-js/lib/Draft.js"),
+				s = n("./node_modules/immutable/dist/immutable.js"),
 				i = n("./src/reddit/components/RichTextEditor/styleAndBlockTypes.ts");
-			! function(e) {
-				e.before = "before", e.after = "after"
+			! function(t) {
+				t.before = "before", t.after = "after"
 			}(o || (o = {}));
-			const c = (e, t) => new s.ContentBlock({
-					key: e || Object(s.genKey)(),
-					...t ? {
-						text: t,
-						characterList: Object(r.List)(Object(r.Repeat)(s.CharacterMetadata.create(), t.length))
+			const c = (t, e) => new r.ContentBlock({
+					key: t || Object(r.genKey)(),
+					...e ? {
+						text: e,
+						characterList: Object(s.List)(Object(s.Repeat)(r.CharacterMetadata.create(), e.length))
 					} : {}
 				}),
-				a = e => e.props.children,
-				l = e => a(e).props.block,
-				d = function(e, t, n) {
-					let r = arguments.length > 3 && void 0 !== arguments[3] ? arguments[3] : o.after,
+				a = t => t.props.children,
+				l = t => a(t).props.block,
+				d = function(t, e, n) {
+					let s = arguments.length > 3 && void 0 !== arguments[3] ? arguments[3] : o.after,
 						a = arguments.length > 4 && void 0 !== arguments[4] && arguments[4],
 						l = arguments.length > 5 && void 0 !== arguments[5] && arguments[5];
 					const d = [];
 					let p = -1;
-					if (e.getBlockMap().forEach((e, s) => {
-							r === o.after && d.push(e), s === t && (d.push(...n), p = d.length - 1), r === o.before && d.push(e)
+					if (t.getBlockMap().forEach((t, r) => {
+							s === o.after && d.push(t), r === e && (d.push(...n), p = d.length - 1), s === o.before && d.push(t)
 						}), p >= 0) {
 						if (a) {
-							const e = d[p + 1];
-							e && e.getType() === i.n || d.splice(p + 1, 0, c())
+							const t = d[p + 1];
+							t && t.getType() === i.n || d.splice(p + 1, 0, c())
 						}
 						if (l) {
-							const e = p - n.length,
-								t = d[e];
-							t && t.getType() === i.n || d.splice(e + 1, 0, c())
+							const t = p - n.length,
+								e = d[t];
+							e && e.getType() === i.n || d.splice(t + 1, 0, c())
 						}
 					}
-					return e.merge({
-						blockMap: s.BlockMapBuilder.createFromArray(d),
+					return t.merge({
+						blockMap: r.BlockMapBuilder.createFromArray(d),
 						selectionAfter: u(n[n.length - 1], !1, !0)
 					})
 				},
-				u = function(e) {
-					let t = arguments.length > 1 && void 0 !== arguments[1] && arguments[1],
+				u = function(t) {
+					let e = arguments.length > 1 && void 0 !== arguments[1] && arguments[1],
 						n = arguments.length > 2 && void 0 !== arguments[2] && arguments[2],
-						o = s.SelectionState.createEmpty(e.getKey()).merge({
+						o = r.SelectionState.createEmpty(t.getKey()).merge({
 							hasFocus: n
 						});
-					return t && (o = o.merge({
-						anchorOffset: e.getLength(),
-						focusOffset: e.getLength()
+					return e && (o = o.merge({
+						anchorOffset: t.getLength(),
+						focusOffset: t.getLength()
 					})), o
 				},
-				p = (e, t) => {
-					let n = e.getBlockBefore(t),
-						o = e.getBlockMap();
-					return o.get(t) ? (o = o.size > 1 ? o.remove(t) : o.set(t, c(t)), n = n || o.first(), e.merge({
+				p = (t, e) => {
+					let n = t.getBlockBefore(e),
+						o = t.getBlockMap();
+					return o.get(e) ? (o = o.size > 1 ? o.remove(e) : o.set(e, c(e)), n = n || o.first(), t.merge({
 						blockMap: o,
 						selectionAfter: u(n, !0)
-					})) : e
+					})) : t
 				},
-				h = (e, t) => t.querySelector(`[data-block][data-offset-key="${e}-0-0"]`),
-				m = e => e.getType() === i.n && !e.getText()
+				h = (t, e) => e.querySelector(`[data-block][data-offset-key="${t}-0-0"]`),
+				m = t => t.getType() === i.n && !t.getText()
 		},
-		"./src/reddit/components/RichTextEditor/helpers/controlsState.ts": function(e, t, n) {
+		"./src/reddit/components/RichTextEditor/helpers/controlsState.ts": function(t, e, n) {
 			"use strict";
-			n.d(t, "a", (function() {
+			n.d(e, "a", (function() {
 				return f
-			})), n.d(t, "b", (function() {
+			})), n.d(e, "b", (function() {
 				return b
 			}));
 			n("./node_modules/core-js/modules/web.dom.iterable.js");
 			var o = n("./node_modules/lodash/forEach.js"),
-				s = n.n(o),
-				r = n("./src/lib/forEachGroup/index.ts"),
+				r = n.n(o),
+				s = n("./src/lib/forEachGroup/index.ts"),
 				i = n("./src/lib/memoizeByReference/index.ts"),
 				c = n("./src/reddit/components/RichTextEditor/emotes/helpers.ts"),
 				a = n("./src/reddit/components/RichTextEditor/entity/link/helpers.tsx"),
@@ -2454,186 +2263,186 @@
 				u = n("./src/reddit/components/RichTextEditor/table/helpers.ts"),
 				p = n("./src/reddit/components/RichTextEditor/helpers/forEachBlock.ts"),
 				h = n("./src/reddit/components/RichTextEditor/helpers/styles.ts");
-			const m = e => {
-					const t = e.getCurrentContent(),
-						n = e.getSelection(),
+			const m = t => {
+					const e = t.getCurrentContent(),
+						n = t.getSelection(),
 						o = (() => {
-							const e = {};
-							return s()(d.k, t => e[t] = {
+							const t = {};
+							return r()(d.k, e => t[e] = {
 								isActive: !1,
 								isEnabled: !1
-							}), e
+							}), t
 						})(),
 						i = new Set(Object.keys(o));
 					if (i.delete(d.k.HIGHLIGHT), n.isCollapsed()) {
-						const s = t.getBlockForKey(n.getEndKey()),
-							r = s.getType();
-						Object(d.q)(r) || Object(d.r)(r) || Object(d.t)(r) || i.forEach(e => o[e].isEnabled = !0), e.getCurrentInlineStyle().forEach(e => {
-							e && o[e] && (o[e].isActive = !0)
-						}), Object(u.i)(s) && (o[d.k.BOLD] = {
+						const r = e.getBlockForKey(n.getEndKey()),
+							s = r.getType();
+						Object(d.q)(s) || Object(d.r)(s) || Object(d.t)(s) || i.forEach(t => o[t].isEnabled = !0), t.getCurrentInlineStyle().forEach(t => {
+							t && o[t] && (o[t].isActive = !0)
+						}), Object(u.i)(r) && (o[d.k.BOLD] = {
 							isEnabled: !1,
 							isActive: !1
 						})
 					} else {
-						Object(h.e)(t, n).forEach(e => {
-							i.delete(e), o[e] && (o[e].isActive = !0, o[e].isEnabled = !0)
-						}), Object(p.a)(t, n, (e, s) => {
+						Object(h.e)(e, n).forEach(t => {
+							i.delete(t), o[t] && (o[t].isActive = !0, o[t].isEnabled = !0)
+						}), Object(p.a)(e, n, (t, r) => {
 							if (!i.size) return !1;
-							const c = n.getStartKey() === s ? n.getStartOffset() : 0,
-								a = n.getEndKey() === s ? n.getEndOffset() : e.getLength(),
-								l = e.getType(),
-								u = e.getCharacterList();
-							Object(d.q)(l) || Object(d.r)(l) || Object(d.t)(l) || Object(r.a)(u, {
+							const c = n.getStartKey() === r ? n.getStartOffset() : 0,
+								a = n.getEndKey() === r ? n.getEndOffset() : t.getLength(),
+								l = t.getType(),
+								u = t.getCharacterList();
+							Object(d.q)(l) || Object(d.r)(l) || Object(d.t)(l) || Object(s.a)(u, {
 								start: c,
 								end: a
-							}, (n, s, r, c) => {
+							}, (n, r, s, c) => {
 								const a = n.getStyle(),
 									l = n.getEntity(),
-									d = l ? t.getEntity(l) : null;
-								if (i.forEach(t => {
-										const n = !o[t].isActive,
-											s = Object(h.f)(a, e, d, t, n);
-										s && s !== a && (o[t].isEnabled = !0, i.delete(t))
+									d = l ? e.getEntity(l) : null;
+								if (i.forEach(e => {
+										const n = !o[e].isActive,
+											r = Object(h.f)(a, t, d, e, n);
+										r && r !== a && (o[e].isEnabled = !0, i.delete(e))
 									}), !i.size) return !1
 							})
 						})
 					}
 					return o
 				},
-				g = e => {
-					const t = {};
-					return s()(d.b, n => t[n] = {
+				g = t => {
+					const e = {};
+					return r()(d.b, n => e[n] = {
 						isActive: !1,
-						isEnabled: e
-					}), t
+						isEnabled: t
+					}), e
 				},
-				f = Object(i.a)(e => {
-					const t = e.getCurrentContent(),
-						n = e.getSelection(),
-						o = (e => {
-							const t = e.getCurrentContent(),
-								n = e.getSelection();
+				f = Object(i.a)(t => {
+					const e = t.getCurrentContent(),
+						n = t.getSelection(),
+						o = (t => {
+							const e = t.getCurrentContent(),
+								n = t.getSelection();
 							let o = g(!0),
-								r = null;
-							if (n.isCollapsed()) r = t.getBlockForKey(n.getEndKey()).getType();
+								s = null;
+							if (n.isCollapsed()) s = e.getBlockForKey(n.getEndKey()).getType();
 							else {
-								let e = null;
-								Object(p.a)(t, n, (t, n) => {
-									const s = t.getType();
-									return Object(d.t)(s) ? (o = g(!1), !1) : (null === e && (e = s), e !== s ? (e = null, !1) : void 0)
-								}), r = e
+								let t = null;
+								Object(p.a)(e, n, (e, n) => {
+									const r = e.getType();
+									return Object(d.t)(r) ? (o = g(!1), !1) : (null === t && (t = r), t !== r ? (t = null, !1) : void 0)
+								}), s = t
 							}
-							return null !== r && ((Object(d.v)(r) || Object(d.t)(r)) && s()(o, e => {
-								e.isEnabled = !1
-							}), o[r].isActive = !0), o
-						})(e);
+							return null !== s && ((Object(d.v)(s) || Object(d.t)(s)) && r()(o, t => {
+								t.isEnabled = !1
+							}), o[s].isActive = !0), o
+						})(t);
 					return {
 						giphy: {
 							isActive: !1,
-							isEnabled: o[d.a].isEnabled && !Object(l.j)(t)
+							isEnabled: o[d.a].isEnabled && !Object(l.j)(e)
 						},
 						emote: {
 							isActive: !1,
-							isEnabled: Object(c.b)(t, n)
+							isEnabled: Object(c.b)(e, n)
 						},
 						link: {
 							isActive: !1,
-							isEnabled: Object(a.e)(t, n)
+							isEnabled: Object(a.e)(e, n)
 						},
 						blocks: o,
-						styles: m(e)
+						styles: m(t)
 					}
 				}),
-				b = e => {
-					s()(e.blocks, e => {
-						e.isEnabled = !1
-					}), s()(e.styles, e => {
-						e.isEnabled = !1
-					}), e.link.isEnabled = !1
+				b = t => {
+					r()(t.blocks, t => {
+						t.isEnabled = !1
+					}), r()(t.styles, t => {
+						t.isEnabled = !1
+					}), t.link.isEnabled = !1
 				}
 		},
-		"./src/reddit/components/RichTextEditor/helpers/forEachBlock.ts": function(e, t, n) {
+		"./src/reddit/components/RichTextEditor/helpers/forEachBlock.ts": function(t, e, n) {
 			"use strict";
 
-			function o(e, t, n) {
-				const o = t.getStartKey(),
-					s = t.getEndKey();
-				if (o === s) return void n(e.getBlockForKey(o), o);
-				let r = !1;
-				e.getBlockMap().forEach((e, t) => {
-					if (t === o && (r = !0), !r || !e || !t) return;
-					const i = n(e, t);
-					return t !== s && i
+			function o(t, e, n) {
+				const o = e.getStartKey(),
+					r = e.getEndKey();
+				if (o === r) return void n(t.getBlockForKey(o), o);
+				let s = !1;
+				t.getBlockMap().forEach((t, e) => {
+					if (e === o && (s = !0), !s || !t || !e) return;
+					const i = n(t, e);
+					return e !== r && i
 				})
 			}
-			n.d(t, "a", (function() {
+			n.d(e, "a", (function() {
 				return o
 			}))
 		},
-		"./src/reddit/components/RichTextEditor/helpers/modifiers.ts": function(e, t, n) {
+		"./src/reddit/components/RichTextEditor/helpers/modifiers.ts": function(t, e, n) {
 			"use strict";
-			n.d(t, "c", (function() {
+			n.d(e, "c", (function() {
 				return i
-			})), n.d(t, "b", (function() {
+			})), n.d(e, "b", (function() {
 				return c
-			})), n.d(t, "a", (function() {
+			})), n.d(e, "a", (function() {
 				return a
-			})), n.d(t, "d", (function() {
+			})), n.d(e, "d", (function() {
 				return l
 			}));
 			var o = n("./node_modules/draft-js/lib/Draft.js"),
-				s = n("./src/reddit/components/RichTextEditor/entity/cloneEntitiesInFragment.ts");
+				r = n("./src/reddit/components/RichTextEditor/entity/cloneEntitiesInFragment.ts");
 
-			function r(e, t) {
-				const n = t.getStartKey();
-				if (n !== t.getEndKey()) return;
-				const o = e.getBlockForKey(n),
-					r = t.getStartOffset(),
-					i = t.getEndOffset(),
-					c = r > 0 ? o.getEntityAt(r - 1) : null,
+			function s(t, e) {
+				const n = e.getStartKey();
+				if (n !== e.getEndKey()) return;
+				const o = t.getBlockForKey(n),
+					s = e.getStartOffset(),
+					i = e.getEndOffset(),
+					c = s > 0 ? o.getEntityAt(s - 1) : null,
 					a = o.getEntityAt(i);
 				if (!c || !a || c !== a) return;
-				const l = e.getEntity(a),
-					d = o.getCharacterList().toSeq().skip(i).takeWhile(e => !!e && e.getEntity() === a).count(),
-					[u, p] = Object(s.a)(e, o, l, i, i + d);
+				const l = t.getEntity(a),
+					d = o.getCharacterList().toSeq().skip(i).takeWhile(t => !!t && t.getEntity() === a).count(),
+					[u, p] = Object(r.a)(t, o, l, i, i + d);
 				return u.merge({
 					blockMap: u.getBlockMap().set(o.getKey(), p)
 				})
 			}
 
-			function i(e, t, n) {
-				const s = r(e, t) || e;
-				return o.Modifier.replaceWithFragment(s, t, n)
+			function i(t, e, n) {
+				const r = s(t, e) || t;
+				return o.Modifier.replaceWithFragment(r, e, n)
 			}
 
-			function c(e, t, n, s, i) {
-				let c = e;
-				return -1 !== n.indexOf("\n") && (c = r(e, t) || c), o.Modifier.replaceText(c, t, n, s, i)
+			function c(t, e, n, r, i) {
+				let c = t;
+				return -1 !== n.indexOf("\n") && (c = s(t, e) || c), o.Modifier.replaceText(c, e, n, r, i)
 			}
 
-			function a(e, t, n, s, i) {
-				let c = e;
-				return -1 !== n.indexOf("\n") && (c = r(e, t) || c), o.Modifier.insertText(c, t, n, s, i)
+			function a(t, e, n, r, i) {
+				let c = t;
+				return -1 !== n.indexOf("\n") && (c = s(t, e) || c), o.Modifier.insertText(c, e, n, r, i)
 			}
 
-			function l(e, t) {
-				const n = r(e, t) || e;
-				return o.Modifier.splitBlock(n, t)
+			function l(t, e) {
+				const n = s(t, e) || t;
+				return o.Modifier.splitBlock(n, e)
 			}
 		},
-		"./src/reddit/components/RichTextEditor/helpers/sliceContiguousBlocks.ts": function(e, t, n) {
+		"./src/reddit/components/RichTextEditor/helpers/sliceContiguousBlocks.ts": function(t, e, n) {
 			"use strict";
 			var o = n("./node_modules/lodash/forEach.js"),
-				s = n.n(o);
-			t.a = (e, t) => {
-				const n = e.getBlocksAsArray(),
-					o = t.getKey(),
-					r = t.getType();
+				r = n.n(o);
+			e.a = (t, e) => {
+				const n = t.getBlocksAsArray(),
+					o = e.getKey(),
+					s = e.getType();
 				let i = null,
 					c = null,
 					a = !1;
-				if (s()(n, (e, t) => {
-						if (a || e.getKey() !== o || (a = !0), e.getType() === r) null === i && (i = t), c = t;
+				if (r()(n, (t, e) => {
+						if (a || t.getKey() !== o || (a = !0), t.getType() === s) null === i && (i = e), c = e;
 						else {
 							if (a) return !1;
 							i = null, c = null
@@ -2644,118 +2453,118 @@
 				}
 			}
 		},
-		"./src/reddit/components/RichTextEditor/helpers/styles.ts": function(e, t, n) {
+		"./src/reddit/components/RichTextEditor/helpers/styles.ts": function(t, e, n) {
 			"use strict";
-			n.d(t, "f", (function() {
+			n.d(e, "f", (function() {
 				return u
-			})), n.d(t, "e", (function() {
+			})), n.d(e, "e", (function() {
 				return p
-			})), n.d(t, "b", (function() {
+			})), n.d(e, "b", (function() {
 				return h
-			})), n.d(t, "a", (function() {
+			})), n.d(e, "a", (function() {
 				return m
-			})), n.d(t, "c", (function() {
+			})), n.d(e, "c", (function() {
 				return g
-			})), n.d(t, "d", (function() {
+			})), n.d(e, "d", (function() {
 				return f
 			}));
 			var o = n("./node_modules/draft-js/lib/Draft.js"),
-				s = n("./node_modules/immutable/dist/immutable.js"),
-				r = n("./src/lib/forEachGroup/index.ts"),
+				r = n("./node_modules/immutable/dist/immutable.js"),
+				s = n("./src/lib/forEachGroup/index.ts"),
 				i = n("./src/reddit/components/RichTextEditor/entity/entityTypes.ts"),
 				c = n("./src/reddit/components/RichTextEditor/styleAndBlockTypes.ts"),
 				a = n("./src/reddit/components/RichTextEditor/table/helpers.ts"),
 				l = n("./src/reddit/components/RichTextEditor/helpers/forEachBlock.ts");
-			const d = Object(s.OrderedSet)([]),
-				u = function(e, t, n, o) {
-					let r = !(arguments.length > 4 && void 0 !== arguments[4]) || arguments[4];
-					const l = t.getType();
+			const d = Object(r.OrderedSet)([]),
+				u = function(t, e, n, o) {
+					let s = !(arguments.length > 4 && void 0 !== arguments[4]) || arguments[4];
+					const l = e.getType();
 					if (Object(c.q)(l) || Object(c.r)(l) || Object(c.t)(l)) return;
-					if (o === c.k.BOLD && Object(a.i)(t)) return;
+					if (o === c.k.BOLD && Object(a.i)(e)) return;
 					const u = n ? n.getType() : null,
 						p = u === i.a.SUBREDDIT_LINK || u === i.a.USER_LINK;
-					return p && o !== c.k.SPOILER && o !== c.k.MONOSPACE || u === i.a.EMOTE ? void 0 : o === c.k.MONOSPACE || o === c.k.SPOILER ? r ? Object(s.OrderedSet)([o]) : d : (e.has(c.k.MONOSPACE) || e.has(c.k.SPOILER)) && r ? Object(s.OrderedSet)([o]) : !r || o !== c.k.SUPERSCRIPT && o !== c.k.SUBSCRIPT ? r ? e.add(o) : e.has(o) ? e.delete(o) : void 0 : e.delete(c.k.SUBSCRIPT).delete(c.k.SUPERSCRIPT).add(o)
+					return p && o !== c.k.SPOILER && o !== c.k.MONOSPACE || u === i.a.EMOTE ? void 0 : o === c.k.MONOSPACE || o === c.k.SPOILER ? s ? Object(r.OrderedSet)([o]) : d : (t.has(c.k.MONOSPACE) || t.has(c.k.SPOILER)) && s ? Object(r.OrderedSet)([o]) : !s || o !== c.k.SUPERSCRIPT && o !== c.k.SUBSCRIPT ? s ? t.add(o) : t.has(o) ? t.delete(o) : void 0 : t.delete(c.k.SUBSCRIPT).delete(c.k.SUPERSCRIPT).add(o)
 				},
-				p = (e, t) => {
+				p = (t, e) => {
 					let n = null,
 						o = !0;
-					return Object(l.a)(e, t, (s, l) => {
-						const d = s.getType(),
-							u = Object(a.i)(s);
+					return Object(l.a)(t, e, (r, l) => {
+						const d = r.getType(),
+							u = Object(a.i)(r);
 						if (u || (o = !1), Object(c.q)(d) || Object(c.r)(d) || Object(c.t)(d)) return !1;
-						const p = t.getStartKey() === l ? t.getStartOffset() : 0,
-							h = t.getEndKey() === l ? t.getEndOffset() : s.getLength(),
-							m = s.getCharacterList();
-						Object(r.a)(m, {
+						const p = e.getStartKey() === l ? e.getStartOffset() : 0,
+							h = e.getEndKey() === l ? e.getEndOffset() : r.getLength(),
+							m = r.getCharacterList();
+						Object(s.a)(m, {
 							start: p,
 							end: h
-						}, t => {
-							const o = t.getEntity();
-							if (o && e.getEntity(o).getType() === i.a.SUBREDDIT_LINK) return;
-							let s = t.getStyle();
-							return u && (s = s.add(c.k.BOLD)), null === n ? n = s.asMutable() : n.intersect(s), !(n && !n.size) && void 0
+						}, e => {
+							const o = e.getEntity();
+							if (o && t.getEntity(o).getType() === i.a.SUBREDDIT_LINK) return;
+							let r = e.getStyle();
+							return u && (r = r.add(c.k.BOLD)), null === n ? n = r.asMutable() : n.intersect(r), !(n && !n.size) && void 0
 						})
 					}), null === n ? [] : (o && n.delete(c.k.BOLD), n.toJS())
 				},
-				h = (e, t) => {
-					const n = t.getCurrentContent(),
-						s = t.getSelection();
+				h = (t, e) => {
+					const n = e.getCurrentContent(),
+						r = e.getSelection();
 					let i = n.getBlockMap();
-					const a = -1 === p(n, s).indexOf(e);
-					Object(l.a)(n, s, (t, l) => {
-						if (!t || !l) return !1;
-						const d = s.getStartKey() === l ? s.getStartOffset() : 0,
-							p = s.getEndKey() === l ? s.getEndOffset() : t.getLength(),
-							h = t.getCharacterList(),
-							m = h.withMutations(s => {
-								Object(r.a)(h, {
+					const a = -1 === p(n, r).indexOf(t);
+					Object(l.a)(n, r, (e, l) => {
+						if (!e || !l) return !1;
+						const d = r.getStartKey() === l ? r.getStartOffset() : 0,
+							p = r.getEndKey() === l ? r.getEndOffset() : e.getLength(),
+							h = e.getCharacterList(),
+							m = h.withMutations(r => {
+								Object(s.a)(h, {
 									start: d,
 									end: p
-								}, (r, i, l, d) => {
-									const p = r.getStyle(),
-										h = r.getEntity(),
+								}, (s, i, l, d) => {
+									const p = s.getStyle(),
+										h = s.getEntity(),
 										m = h ? n.getEntity(h) : null,
-										g = u(p, t, m, e, a);
+										g = u(p, e, m, t, a);
 									if (g) {
-										const e = ((e, t) => o.CharacterMetadata.create({
-											style: t,
-											entity: t.has(c.k.SPOILER) ? null : e.getEntity()
-										}))(r, g);
-										for (let t = l; t < d; t++) s.set(t, e)
+										const t = ((t, e) => o.CharacterMetadata.create({
+											style: e,
+											entity: e.has(c.k.SPOILER) ? null : t.getEntity()
+										}))(s, g);
+										for (let e = l; e < d; e++) r.set(e, t)
 									}
 								})
 							});
 						if (m !== h) {
-							const e = t.set("characterList", m);
-							i = i.set(l, e)
+							const t = e.set("characterList", m);
+							i = i.set(l, t)
 						}
 					});
 					const d = n.merge({
 						blockMap: i,
-						selectionAfter: s
+						selectionAfter: r
 					});
-					return o.EditorState.push(t, d, "change-inline-style")
+					return o.EditorState.push(e, d, "change-inline-style")
 				},
-				m = (e, t) => {
-					const n = t.getCurrentContent(),
-						s = t.getSelection(),
-						r = n.getBlockForKey(s.getStartKey()),
-						i = r.getEntityAt(s.getStartOffset()),
+				m = (t, e) => {
+					const n = e.getCurrentContent(),
+						r = e.getSelection(),
+						s = n.getBlockForKey(r.getStartKey()),
+						i = s.getEntityAt(r.getStartOffset()),
 						c = i ? n.getEntity(i) : null,
-						a = t.getCurrentInlineStyle(),
-						l = u(a, r, c, e, !a.has(e));
-					let d = t;
+						a = e.getCurrentInlineStyle(),
+						l = u(a, s, c, t, !a.has(t));
+					let d = e;
 					return l && (d = o.EditorState.setInlineStyleOverride(d, l)), d
 				},
-				g = e => o.EditorState.setInlineStyleOverride(e, d),
-				f = (e, t) => {
-					const n = e.getSelection(),
-						o = t.getSelection();
-					return n.getStartOffset() > 0 || n.getFocusKey() === o.getFocusKey() || e.getCurrentInlineStyle().isEmpty() ? e : g(e)
+				g = t => o.EditorState.setInlineStyleOverride(t, d),
+				f = (t, e) => {
+					const n = t.getSelection(),
+						o = e.getSelection();
+					return n.getStartOffset() > 0 || n.getFocusKey() === o.getFocusKey() || t.getCurrentInlineStyle().isEmpty() ? t : g(t)
 				}
 		},
-		"./src/reddit/components/RichTextEditor/index.m.less": function(e, t, n) {
-			e.exports = {
+		"./src/reddit/components/RichTextEditor/index.m.less": function(t, e, n) {
+			t.exports = {
 				Container: "_3YZ-jFfccqhepgq1dDuLEv",
 				container: "_3YZ-jFfccqhepgq1dDuLEv",
 				FocusableContent: "_3wl1bRnSzxHkKJfvqakrNI",
@@ -2775,12 +2584,12 @@
 				focusedContent: "_2O6bpyGivXLGxZ0LErKCzW"
 			}
 		},
-		"./src/reddit/components/RichTextEditor/index.tsx": function(e, t, n) {
+		"./src/reddit/components/RichTextEditor/index.tsx": function(t, e, n) {
 			"use strict";
 			var o = n("./node_modules/draft-js/lib/Draft.js"),
-				s = (n("./node_modules/draft-js/dist/Draft.css"), n("./node_modules/fbt/lib/FbtPublic.js")),
-				r = n("./node_modules/lodash/debounce.js"),
-				i = n.n(r),
+				r = (n("./node_modules/draft-js/dist/Draft.css"), n("./node_modules/fbt/lib/FbtPublic.js")),
+				s = n("./node_modules/lodash/debounce.js"),
+				i = n.n(s),
 				c = n("./node_modules/lodash/filter.js"),
 				a = n.n(c),
 				l = n("./node_modules/lodash/noop.js"),
@@ -2795,16 +2604,16 @@
 				y = n("./src/lib/fastdom/index.ts"),
 				E = n("./src/lib/lessComponent.tsx"),
 				S = n("./src/lib/linkMatchers/customLinks.ts"),
-				x = n("./src/lib/logs/console.ts"),
-				C = n("./src/telemetry/models/Media.ts"),
+				C = n("./src/lib/logs/console.ts"),
+				x = n("./src/telemetry/models/Media.ts"),
 				O = n("./src/realtime/GQLSubscription/async.tsx"),
 				k = n("./src/reddit/actions/economics/subredditPremium/thunkedActions.ts"),
 				T = n("./src/reddit/actions/postCreation/mediaUpload.ts"),
 				v = n("./src/reddit/featureFlags/index.ts"),
 				j = n("./src/reddit/helpers/trackers/postComposer.ts"),
-				_ = n("./src/reddit/models/PostCreationForm/index.ts"),
-				R = n("./src/reddit/components/RichTextEditor/styleAndBlockTypes.ts");
-			const w = {
+				R = n("./src/reddit/models/PostCreationForm/index.ts"),
+				w = n("./src/reddit/components/RichTextEditor/styleAndBlockTypes.ts");
+			const B = {
 				BREAK_HEADER_ENTITY: "BREAK_HEADER_ENTITY",
 				CONVERT_TO_LIST_ON_SPACE: "CONVERT_TO_LIST_ON_SPACE",
 				EXEC_TABLE_ON_ENTER_HANDLER: "EXEC_TABLE_ON_ENTER_HANDLER",
@@ -2818,22 +2627,22 @@
 				RESET_CURRENT_AND_PREVIOUS_BLOCKS: "RESET_CURRENT_AND_PREVIOUS_BLOCKS",
 				SUBMIT: "SUBMIT"
 			};
-			const I = e => {
-					const t = e.getCurrentContent().getBlockMap();
-					if (t.size > 2 || (e => !!e.reduce((function() {
-							let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : 0,
-								t = arguments.length > 1 ? arguments[1] : void 0;
-							return e + t.getLength()
-						}), 0))(t) || (e => !!e.find(e => Object(R.o)(e.getType())))(t)) return null; {
-						const n = e.getSelection();
-						if (n.isCollapsed() && n.getFocusKey() === t.first().getKey()) return n.getFocusKey()
+			const I = t => {
+					const e = t.getCurrentContent().getBlockMap();
+					if (e.size > 2 || (t => !!t.reduce((function() {
+							let t = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : 0,
+								e = arguments.length > 1 ? arguments[1] : void 0;
+							return t + e.getLength()
+						}), 0))(e) || (t => !!t.find(t => Object(w.o)(t.getType())))(e)) return null; {
+						const n = t.getSelection();
+						if (n.isCollapsed() && n.getFocusKey() === e.first().getKey()) return n.getFocusKey()
 					}
 				},
-				B = e => {
-					const t = e.getCharacterList().map(e => o.CharacterMetadata.create({
-						entity: e.getEntity()
+				_ = t => {
+					const e = t.getCharacterList().map(t => o.CharacterMetadata.create({
+						entity: t.getEntity()
 					}));
-					return e.set("characterList", t)
+					return t.set("characterList", e)
 				};
 			var A = n("./src/reddit/components/ConfirmUserActionModal/index.tsx"),
 				K = n("./src/reddit/components/RichTextEditor/constants/draftEditorCommands.ts"),
@@ -2856,16 +2665,16 @@
 				X = n.n(J),
 				Z = n("./src/reddit/components/RichTextEditor/constants/editorChangeTypes.ts"),
 				$ = n("./src/reddit/components/RichTextEditor/helpers/forEachBlock.ts"),
-				ee = n("./node_modules/lodash/find.js"),
-				te = n.n(ee);
-			var ne = (e, t) => {
-				const n = e.getSelection(),
-					s = e.getCurrentContent(),
-					r = s.getBlockForKey(n.getAnchorKey()),
-					i = s.getBlockForKey(n.getFocusKey()),
-					[c, a] = Object(Q.e)(s, r, i);
-				if (!c || c !== a) return e;
-				const l = Object(Q.g)(r),
+				tt = n("./node_modules/lodash/find.js"),
+				et = n.n(tt);
+			var nt = (t, e) => {
+				const n = t.getSelection(),
+					r = t.getCurrentContent(),
+					s = r.getBlockForKey(n.getAnchorKey()),
+					i = r.getBlockForKey(n.getFocusKey()),
+					[c, a] = Object(Q.e)(r, s, i);
+				if (!c || c !== a) return t;
+				const l = Object(Q.g)(s),
 					d = Object(Q.g)(i),
 					{
 						blocks: u,
@@ -2881,144 +2690,144 @@
 						maxCol: b,
 						maxRow: y
 					} = Object(Q.f)(l, d),
-					E = u.filter(e => {
+					E = u.filter(t => {
 						const {
 							rowIndex: n,
 							colIndex: o
-						} = Object(Q.g)(e);
-						return "rows" === t ? !(f <= n && n <= y) : !(g <= o && o <= b)
+						} = Object(Q.g)(t);
+						return "rows" === e ? !(f <= n && n <= y) : !(g <= o && o <= b)
 					});
 				E.sort(Q.b);
-				const S = "rows" === t ? h : E.length / m,
-					x = q()(Object(Q.d)(W()(E, S))),
-					C = s.getBlocksAsArray(),
-					O = [...C.slice(0, p), ...x, ...C.slice(p + u.length)],
-					k = s.merge({
+				const S = "rows" === e ? h : E.length / m,
+					C = q()(Object(Q.d)(W()(E, S))),
+					x = r.getBlocksAsArray(),
+					O = [...x.slice(0, p), ...C, ...x.slice(p + u.length)],
+					k = r.merge({
 						blockMap: o.BlockMapBuilder.createFromArray(O)
 					}),
 					T = {
 						colIndex: g,
 						rowIndex: f
 					};
-				let v = te()(x, e => Object(Q.h)(T, Object(Q.g)(e)));
-				v || (v = x.length ? x[x.length - 1] : C[p > 0 ? p - 1 : 0]);
+				let v = et()(C, t => Object(Q.h)(T, Object(Q.g)(t)));
+				v || (v = C.length ? C[C.length - 1] : x[p > 0 ? p - 1 : 0]);
 				const j = o.SelectionState.createEmpty(v.getKey()).merge({
 					focusOffset: v.getLength(),
 					anchorOffset: v.getLength()
 				});
-				let _ = o.EditorState.push(e, k, Z.e);
-				return _ = o.EditorState.forceSelection(_, j)
+				let R = o.EditorState.push(t, k, Z.e);
+				return R = o.EditorState.forceSelection(R, j)
 			};
-			var oe = function(e) {
-				let t = arguments.length > 1 && void 0 !== arguments[1] && arguments[1];
-				const n = e.getSelection();
+			var ot = function(t) {
+				let e = arguments.length > 1 && void 0 !== arguments[1] && arguments[1];
+				const n = t.getSelection();
 				if (n.isCollapsed()) return;
-				if (n.getStartKey() === n.getEndKey() && !t) return;
-				const s = e.getCurrentContent(),
-					r = s.getBlockForKey(n.getAnchorKey()),
-					i = s.getBlockForKey(n.getFocusKey()),
-					[c, a] = Object(Q.e)(s, r, i);
+				if (n.getStartKey() === n.getEndKey() && !e) return;
+				const r = t.getCurrentContent(),
+					s = r.getBlockForKey(n.getAnchorKey()),
+					i = r.getBlockForKey(n.getFocusKey()),
+					[c, a] = Object(Q.e)(r, s, i);
 				if (!c || c !== a) return;
 				const l = {};
 				let d = n;
-				if (r === i) {
-					const e = Object(Q.n)(i, 0, n.getStartOffset()),
-						t = Object(Q.n)(i, n.getEndOffset());
-					l[i.getKey()] = Object(Q.j)(i, [e, t]), d = n
+				if (s === i) {
+					const t = Object(Q.n)(i, 0, n.getStartOffset()),
+						e = Object(Q.n)(i, n.getEndOffset());
+					l[i.getKey()] = Object(Q.j)(i, [t, e]), d = n
 				} else {
-					if (c.blocks[0].getKey() === n.getStartKey() && X()(c.blocks).getKey() === n.getEndKey()) return ne(e, "rows");
-					Object($.a)(s, n, (e, t) => {
-						l[t] = Object(Q.n)(e, 0, 0)
+					if (c.blocks[0].getKey() === n.getStartKey() && X()(c.blocks).getKey() === n.getEndKey()) return nt(t, "rows");
+					Object($.a)(r, n, (t, e) => {
+						l[e] = Object(Q.n)(t, 0, 0)
 					}), d = n.merge({
 						anchorOffset: 0,
 						focusOffset: 0
 					})
 				}
-				const u = s.merge({
-					blockMap: s.getBlockMap().merge(l),
+				const u = r.merge({
+					blockMap: r.getBlockMap().merge(l),
 					selectionAfter: d
 				});
-				return o.EditorState.push(e, u, Z.f)
+				return o.EditorState.push(t, u, Z.f)
 			};
-			const se = (e, t, n, o) => {
+			const rt = (t, e, n, o) => {
 					const {
-						htmlParts: s
-					} = t;
-					e.forEach((e, r) => {
-						s.push(`<${n} ${o[r]} style="margin: 0px; padding: 4px 9px; border: 1px solid rgb(229, 227, 218);">`), xe(e, t), s.push(`</${n}>`)
+						htmlParts: r
+					} = e;
+					t.forEach((t, s) => {
+						r.push(`<${n} ${o[s]} style="margin: 0px; padding: 4px 9px; border: 1px solid rgb(229, 227, 218);">`), Ct(t, e), r.push(`</${n}>`)
 					})
 				},
-				re = e => {
-					const t = e[0],
-						n = e[e.length - 1],
-						o = [...e].sort(Q.b),
+				st = t => {
+					const e = t[0],
+						n = t[t.length - 1],
+						o = [...t].sort(Q.b),
 						{
-							minCol: s,
-							maxCol: r
-						} = Object(Q.f)(Object(Q.g)(t), Object(Q.g)(n)),
-						i = r - s + 1;
+							minCol: r,
+							maxCol: s
+						} = Object(Q.f)(Object(Q.g)(e), Object(Q.g)(n)),
+						i = s - r + 1;
 					return Object(Q.d)(W()(o, i))
 				},
-				ie = (e, t, n) => {
-					n ? xe(e[0], t) : ((e, t) => {
+				it = (t, e, n) => {
+					n ? Ct(t[0], e) : ((t, e) => {
 						const {
 							editor: n,
 							htmlParts: o
-						} = t, s = n.getEditorKey(), r = e[0].map(e => {
+						} = e, r = n.getEditorKey(), s = t[0].map(t => {
 							const {
-								alignment: t
-							} = Object(Q.g)(e);
-							return t ? `align="${Q.a[t]}"` : ""
-						}), [i, ...c] = e;
-						o.push(`\n    <table data-editor="${s}">\n      <thead>\n        <tr>`), se(i, t, "th", r), o.push("\n        </tr>\n      </thead>\n      <tbody>"), c.forEach(e => {
-							o.push("\n        <tr>"), se(e, t, "td", r), o.push("\n        </tr>")
+								alignment: e
+							} = Object(Q.g)(t);
+							return e ? `align="${Q.a[e]}"` : ""
+						}), [i, ...c] = t;
+						o.push(`\n    <table data-editor="${r}">\n      <thead>\n        <tr>`), rt(i, e, "th", s), o.push("\n        </tr>\n      </thead>\n      <tbody>"), c.forEach(t => {
+							o.push("\n        <tr>"), rt(t, e, "td", s), o.push("\n        </tr>")
 						}), o.push("\n      </tbody>\n    </table>")
-					})(re(e), t)
+					})(st(t), e)
 				},
-				ce = (e, t, n) => {
-					n ? t.textParts.push(ke(e[0], t)) : ((e, t) => {
+				ct = (t, e, n) => {
+					n ? e.textParts.push(kt(t[0], e)) : ((t, e) => {
 						const {
 							textParts: n
-						} = t;
-						e.forEach(e => {
-							n.push(e.map(e => ke(e, t)).join(" "))
+						} = e;
+						t.forEach(t => {
+							n.push(t.map(t => kt(t, e)).join(" "))
 						})
-					})(re(e), t)
+					})(st(t), e)
 				},
-				ae = e => {
+				at = t => {
 					const {
-						processed: t,
+						processed: e,
 						remaining: n
-					} = e, o = [];
+					} = t, o = [];
 					for (; n.length;) {
-						const e = n[0];
-						if (!Object(R.v)(e.getType())) break;
+						const t = n[0];
+						if (!Object(w.v)(t.getType())) break;
 						o.push(n.shift())
 					}
-					const s = !n.length && !t.length,
-						r = 1 === o.length && s;
-					ie(o, e, r), ce(o, e, r), ((e, t, n, o) => {
+					const r = !n.length && !e.length,
+						s = 1 === o.length && r;
+					it(o, t, s), ct(o, t, s), ((t, e, n, o) => {
 						if (n)
 							if (o) {
-								const n = e[0].merge({
+								const n = t[0].merge({
 									data: Object(P.Map)(),
-									type: R.n
+									type: w.n
 								});
-								t.blocksParts = [n]
-							} else t.blocksParts = q()(re(e))
-					})(o, e, s, r), t.push(...o)
+								e.blocksParts = [n]
+							} else e.blocksParts = q()(st(t))
+					})(o, t, r, s), e.push(...o)
 				},
-				le = e => oe(e, !0),
-				de = (e, t, n) => {
-					const s = Object(R.v)(n.first().getType()),
-						r = Object(R.v)(n.last().getType()),
-						i = e.getBlockForKey(t.getAnchorKey()),
-						c = e.getBlockForKey(t.getFocusKey()),
-						[a, l] = Object(Q.e)(e, i, c);
-					return a && a === l ? ((e, t, n, s) => {
-						const r = Object(R.v)(s.first().getType()),
-							i = e.getBlockForKey(t.getAnchorKey()),
-							c = e.getBlockForKey(t.getFocusKey()),
+				lt = t => ot(t, !0),
+				dt = (t, e, n) => {
+					const r = Object(w.v)(n.first().getType()),
+						s = Object(w.v)(n.last().getType()),
+						i = t.getBlockForKey(e.getAnchorKey()),
+						c = t.getBlockForKey(e.getFocusKey()),
+						[a, l] = Object(Q.e)(t, i, c);
+					return a && a === l ? ((t, e, n, r) => {
+						const s = Object(w.v)(r.first().getType()),
+							i = t.getBlockForKey(e.getAnchorKey()),
+							c = t.getBlockForKey(e.getFocusKey()),
 							{
 								blocks: a,
 								start: l
@@ -3033,208 +2842,208 @@
 						const {
 							minRow: m,
 							minCol: g
-						} = Object(Q.f)(Object(Q.g)(i), Object(Q.g)(c)), f = s.toArray();
-						if (r) {
-							const n = G()(f, e => Object(R.v)(e.getType()));
+						} = Object(Q.f)(Object(Q.g)(i), Object(Q.g)(c)), f = r.toArray();
+						if (s) {
+							const n = G()(f, t => Object(w.v)(t.getType()));
 							n.sort(Q.b);
-							const s = Object(Q.g)(n[0]).colCount,
-								r = W()(n, s),
-								i = r.length,
+							const r = Object(Q.g)(n[0]).colCount,
+								s = W()(n, r),
+								i = s.length,
 								c = m + i - 1,
-								d = g + s - 1;
-							if (n.length !== i * s) throw new Error("Invalid table fragment!");
-							if (d >= u && p.forEach(e => {
-									e.push(...Object(Q.l)(d - u + 1, 1))
+								d = g + r - 1;
+							if (n.length !== i * r) throw new Error("Invalid table fragment!");
+							if (d >= u && p.forEach(t => {
+									t.push(...Object(Q.l)(d - u + 1, 1))
 								}), u = p[0].length, c >= h) {
-								const e = W()(Object(Q.l)(u, c - h + 1), u);
-								p.push(...e)
+								const t = W()(Object(Q.l)(u, c - h + 1), u);
+								p.push(...t)
 							}
 							h = p.length;
-							for (let e = 0; e < i; e++)
-								for (let t = 0; t < s; t++) {
-									const n = m + e,
-										o = g + t,
-										s = r[e][t];
-									p[n][o] = s.set("key", p[n][o].getKey())
+							for (let t = 0; t < i; t++)
+								for (let e = 0; e < r; e++) {
+									const n = m + t,
+										o = g + e,
+										r = s[t][e];
+									p[n][o] = r.set("key", p[n][o].getKey())
 								}
 							const b = Object(Q.d)(p),
 								y = q()(b),
-								E = e.getBlocksAsArray(),
+								E = t.getBlocksAsArray(),
 								S = [...E.slice(0, l), ...y, ...E.slice(l + a.length)],
-								x = Object(Q.o)(t, p[m][g], p[c][d]);
-							return e.merge({
+								C = Object(Q.o)(e, p[m][g], p[c][d]);
+							return t.merge({
 								blockMap: o.BlockMapBuilder.createFromArray(S),
-								selectionAfter: x
+								selectionAfter: C
 							})
 						} {
 							const n = p[m][g],
-								s = Object(Q.j)(n, f, " ");
-							let r = t;
-							return t.getStartKey() !== t.getEndKey() && (r = Object(Q.o)(t, n, n)), Y.c(e, r, o.BlockMapBuilder.createFromArray([s]))
+								r = Object(Q.j)(n, f, " ");
+							let s = e;
+							return e.getStartKey() !== e.getEndKey() && (s = Object(Q.o)(e, n, n)), Y.c(t, s, o.BlockMapBuilder.createFromArray([r]))
 						}
-					})(e, t, a, n) : a || l || !s && !r ? void 0 : ((e, t, n) => {
-						const s = Object(R.v)(n.first().getType()),
-							r = Object(R.v)(n.last().getType()),
+					})(t, e, a, n) : a || l || !r && !s ? void 0 : ((t, e, n) => {
+						const r = Object(w.v)(n.first().getType()),
+							s = Object(w.v)(n.last().getType()),
 							i = n.toArray();
-						s && i.unshift(Object(D.h)()), r && i.push(Object(D.h)());
+						r && i.unshift(Object(D.h)()), s && i.push(Object(D.h)());
 						const c = o.BlockMapBuilder.createFromArray(i);
-						return Y.c(e, t, c)
-					})(e, t, n)
+						return Y.c(t, e, c)
+					})(t, e, n)
 				};
-			var ue = n("./node_modules/draft-js/lib/removeEntitiesAtEdges.js"),
-				pe = n.n(ue);
-			var he = (e, t) => {
-				const n = t.getStartKey(),
-					o = t.getStartOffset(),
-					s = t.getEndKey(),
-					r = t.getEndOffset(),
-					i = pe()(e, t).getBlockMap(),
+			var ut = n("./node_modules/draft-js/lib/removeEntitiesAtEdges.js"),
+				pt = n.n(ut);
+			var ht = (t, e) => {
+				const n = e.getStartKey(),
+					o = e.getStartOffset(),
+					r = e.getEndKey(),
+					s = e.getEndOffset(),
+					i = pt()(t, e).getBlockMap(),
 					c = i.keySeq(),
 					a = c.indexOf(n),
-					l = c.indexOf(s) + 1;
-				return i.slice(a, l).map((e, t) => {
-					const i = e.getText(),
-						c = e.getCharacterList();
-					return n === s ? e.merge({
-						text: i.slice(o, r),
-						characterList: c.slice(o, r)
-					}) : t === n ? e.merge({
+					l = c.indexOf(r) + 1;
+				return i.slice(a, l).map((t, e) => {
+					const i = t.getText(),
+						c = t.getCharacterList();
+					return n === r ? t.merge({
+						text: i.slice(o, s),
+						characterList: c.slice(o, s)
+					}) : e === n ? t.merge({
 						text: i.slice(o),
 						characterList: c.slice(o)
-					}) : t === s ? e.merge({
-						text: i.slice(0, r),
-						characterList: c.slice(0, r)
-					}) : e
+					}) : e === r ? t.merge({
+						text: i.slice(0, s),
+						characterList: c.slice(0, s)
+					}) : t
 				})
 			};
-			const me = (e, t) => {
+			const mt = (t, e) => {
 					const n = {
 							children: [],
-							parentItem: t,
-							type: e.getType()
+							parentItem: e,
+							type: t.getType()
 						},
 						o = {
-							block: e,
+							block: t,
 							parentList: n
 						};
-					return n.children.push(o), t && (t.childrenLists = t.childrenLists || [], t.childrenLists.push(n)), {
+					return n.children.push(o), e && (e.childrenLists = e.childrenLists || [], e.childrenLists.push(n)), {
 						list: n,
 						item: o
 					}
 				},
-				ge = (e, t) => {
+				gt = (t, e) => {
 					const {
 						type: n,
 						children: o
-					} = e, {
-						htmlParts: s
-					} = t, r = n === R.b.ORDERED_LIST ? "ol" : "ul";
-					s.push(`<${r}>`), o.forEach(e => ((e, t) => {
+					} = t, {
+						htmlParts: r
+					} = e, s = n === w.b.ORDERED_LIST ? "ol" : "ul";
+					r.push(`<${s}>`), o.forEach(t => ((t, e) => {
 						const {
 							block: n,
 							childrenLists: o
-						} = e, {
-							htmlParts: s
-						} = t;
-						s.push("<li>"), xe(n, t, !0), o && o.forEach(e => ge(e, t)), s.push("</li>")
-					})(e, t)), s.push(`</${r}>`)
+						} = t, {
+							htmlParts: r
+						} = e;
+						r.push("<li>"), Ct(n, e, !0), o && o.forEach(t => gt(t, e)), r.push("</li>")
+					})(t, e)), r.push(`</${s}>`)
 				},
-				fe = (e, t) => {
+				ft = (t, e) => {
 					const {
 						children: n
-					} = e;
-					n.forEach((e, n) => be(e, n, t))
+					} = t;
+					n.forEach((t, n) => bt(t, n, e))
 				},
-				be = (e, t, n) => {
+				bt = (t, e, n) => {
 					const {
 						block: o,
-						childrenLists: s
-					} = e, {
-						textParts: r
-					} = n, i = " ".repeat(o.getDepth()), c = o.getType() === R.b.ORDERED_LIST ? `${t+1}.` : "-", a = ke(o, n);
-					r.push(`${i}${c} ${a}`), s && s.forEach(e => fe(e, n))
+						childrenLists: r
+					} = t, {
+						textParts: s
+					} = n, i = " ".repeat(o.getDepth()), c = o.getType() === w.b.ORDERED_LIST ? `${e+1}.` : "-", a = kt(o, n);
+					s.push(`${i}${c} ${a}`), r && r.forEach(t => ft(t, n))
 				},
-				ye = e => {
+				yt = t => {
 					const {
-						remaining: t
-					} = e, n = t.shift(), o = n.getType(), s = [n];
-					for (; t.length;) {
-						const e = t[0],
-							n = e.getType();
-						if (!Object(R.s)(n)) break;
-						if (e.getDepth() > 0 || n === R.b.UNORDERED_LIST) s.push(t.shift());
+						remaining: e
+					} = t, n = e.shift(), o = n.getType(), r = [n];
+					for (; e.length;) {
+						const t = e[0],
+							n = t.getType();
+						if (!Object(w.s)(n)) break;
+						if (t.getDepth() > 0 || n === w.b.UNORDERED_LIST) r.push(e.shift());
 						else {
 							if (n !== o) break;
-							if (s.some(e => e.getType() !== R.b.ORDERED_LIST)) break;
-							s.push(t.shift())
+							if (r.some(t => t.getType() !== w.b.ORDERED_LIST)) break;
+							r.push(e.shift())
 						}
 					}
-					const r = (e => {
-						const t = e[0],
+					const s = (t => {
+						const e = t[0],
 							n = {
-								type: t.getType(),
+								type: e.getType(),
 								children: []
 							};
-						let o, s = n,
-							r = t.getDepth();
-						return e.forEach(e => {
-							const t = e.getType(),
-								n = e.getDepth();
-							if (n > r) {
-								const t = me(e, o);
-								s = t.list, o = t.item, r = n
+						let o, r = n,
+							s = e.getDepth();
+						return t.forEach(t => {
+							const e = t.getType(),
+								n = t.getDepth();
+							if (n > s) {
+								const e = mt(t, o);
+								r = e.list, o = e.item, s = n
 							} else {
-								for (; r !== n;) s = s.parentItem ? s.parentItem.parentList : s, r--;
-								if (t === s.type) o = {
-									block: e,
-									parentList: s
-								}, s.children.push(o);
+								for (; s !== n;) r = r.parentItem ? r.parentItem.parentList : r, s--;
+								if (e === r.type) o = {
+									block: t,
+									parentList: r
+								}, r.children.push(o);
 								else {
-									const t = me(e, s.parentItem);
-									s = t.list, o = t.item
+									const e = mt(t, r.parentItem);
+									r = e.list, o = e.item
 								}
 							}
 						}), n
-					})(s);
-					ge(r, e), fe(r, e), e.processed.push(...s)
+					})(r);
+					gt(s, t), ft(s, t), t.processed.push(...r)
 				};
-			var Ee = (e, t) => {
-				const n = e.toArray().filter(e => !Object(R.t)(e.getType()));
+			var Et = (t, e) => {
+				const n = t.toArray().filter(t => !Object(w.t)(t.getType()));
 				if (1 === n.length) {
-					n[0].getType() !== R.n && n.push(new o.ContentBlock({
+					n[0].getType() !== w.n && n.push(new o.ContentBlock({
 						key: Object(o.genKey)(),
-						type: R.n
+						type: w.n
 					}))
 				}
-				const s = o.ContentState.createFromBlockArray(n),
-					r = JSON.stringify(Object(o.convertToRaw)(s));
-				return `<div data-reddit-rtjson="${L()(r)}">${t}</div>`
+				const r = o.ContentState.createFromBlockArray(n),
+					s = JSON.stringify(Object(o.convertToRaw)(r));
+				return `<div data-reddit-rtjson="${L()(s)}">${e}</div>`
 			};
-			const Se = () => !!window.clipboardData,
-				xe = function(e, t) {
+			const St = () => !!window.clipboardData,
+				Ct = function(t, e) {
 					let n = arguments.length > 2 && void 0 !== arguments[2] && arguments[2];
 					const {
 						htmlParts: o
-					} = t, s = Ce(e, t);
-					s && s.forEach(e => o.push(n ? e.innerHTML : e.outerHTML))
+					} = e, r = xt(t, e);
+					r && r.forEach(t => o.push(n ? t.innerHTML : t.outerHTML))
 				},
-				Ce = (e, t) => {
+				xt = (t, e) => {
 					const {
 						selection: n,
 						editor: o
-					} = t, s = n.getStartKey(), r = n.getEndKey(), i = e.getKey(), c = o.refs.editor, a = Object(D.d)(i, c);
-					return a ? i === s || i === r ? Object(U.c)(a) : [a] : null
+					} = e, r = n.getStartKey(), s = n.getEndKey(), i = t.getKey(), c = o.refs.editor, a = Object(D.d)(i, c);
+					return a ? i === r || i === s ? Object(U.c)(a) : [a] : null
 				};
-			var Oe = (e, t, n) => {
-				const s = e.getCurrentContent(),
-					r = e.getSelection(),
-					i = we(e) || he(s, r);
+			var Ot = (t, e, n) => {
+				const r = t.getCurrentContent(),
+					s = t.getSelection(),
+					i = Bt(t) || ht(r, s);
 				if (!i || !i.count()) return;
 				const c = i.toArray(),
 					a = {
-						editor: t,
-						editorState: e,
-						selection: r,
+						editor: e,
+						editorState: t,
+						selection: s,
 						remaining: c,
 						processed: [],
 						htmlParts: [],
@@ -3242,306 +3051,306 @@
 						blocksParts: [...c]
 					};
 				for (; a.remaining.length;) {
-					const e = a.remaining[0].getType();
+					const t = a.remaining[0].getType();
 					switch (!0) {
-						case Object(R.t)(e):
-							Re(a);
+						case Object(w.t)(t):
+							wt(a);
 							break;
-						case Object(R.s)(e):
-							ye(a);
+						case Object(w.s)(t):
+							yt(a);
 							break;
-						case Object(R.v)(e):
-							ae(a);
+						case Object(w.v)(t):
+							at(a);
 							break;
 						default:
-							Te(a)
+							Tt(a)
 					}
 				}
 				const l = a.textParts.join("\n"),
-					d = (e => Object(P.OrderedMap)(e.map(e => {
-						const t = Object(o.genKey)();
-						return [t, e.set("key", t)]
+					d = (t => Object(P.OrderedMap)(t.map(t => {
+						const e = Object(o.genKey)();
+						return [e, t.set("key", e)]
 					})))(a.blocksParts);
-				return ((e, t) => {
+				return ((t, e) => {
 					let {
 						html: n,
 						text: o
-					} = t;
-					Se() ? window.clipboardData.setData("text", o) : (n && e.clipboardData.setData("text/html", n), e.clipboardData.setData("text/plain", o))
+					} = e;
+					St() ? window.clipboardData.setData("text", o) : (n && t.clipboardData.setData("text/html", n), t.clipboardData.setData("text/plain", o))
 				})(n, {
-					html: Ee(d, a.htmlParts.join("")),
+					html: Et(d, a.htmlParts.join("")),
 					text: l
-				}), n.stopPropagation(), n.preventDefault(), t.setClipboard(d), d
+				}), n.stopPropagation(), n.preventDefault(), e.setClipboard(d), d
 			};
-			const ke = (e, t) => {
-					const n = e.getText(),
-						o = t.editorState.getCurrentContent(),
-						s = [];
-					let r = -1;
-					return e.getCharacterList().forEach((e, t) => {
-						const i = e && e.getEntity();
-						if (i && void 0 !== t) {
-							const e = o.getEntity(i);
-							e.getType() === F.a.EMOTE && (s.push(n.substring(r + 1, t)), s.push(`:${e.getData().id}:`), r = t)
+			const kt = (t, e) => {
+					const n = t.getText(),
+						o = e.editorState.getCurrentContent(),
+						r = [];
+					let s = -1;
+					return t.getCharacterList().forEach((t, e) => {
+						const i = t && t.getEntity();
+						if (i && void 0 !== e) {
+							const t = o.getEntity(i);
+							t.getType() === F.a.EMOTE && (r.push(n.substring(s + 1, e)), r.push(`:${t.getData().id}:`), s = e)
 						}
-					}), s.push(n.substring(r + 1, n.length)), s.join("")
+					}), r.push(n.substring(s + 1, n.length)), r.join("")
 				},
-				Te = e => {
-					const t = e.remaining.shift();
-					((e, t) => xe(e, t))(t, e), ((e, t) => {
-						t.textParts.push(ke(e, t))
-					})(t, e), e.processed.push(t)
+				Tt = t => {
+					const e = t.remaining.shift();
+					((t, e) => Ct(t, e))(e, t), ((t, e) => {
+						e.textParts.push(kt(t, e))
+					})(e, t), t.processed.push(e)
 				},
-				ve = (e, t) => {
-					const n = e.first(),
-						s = e.last();
-					let r = e;
-					if (Object(R.u)(n.getType()) ? r = r.set(r.keySeq().first(), n.merge({
-							type: R.n
-						})) : Object(R.o)(n.getType()) && (r = o.BlockMapBuilder.createFromArray([Object(D.h)(), ...r.toArray()])), Object(R.u)(s.getType()) || !Object(N.q)(t)) {
-						const e = Object(D.h)();
-						r = r.set(e.getKey(), e)
-					} else if (Object(R.o)(s.getType())) {
-						const e = Object(D.h)().merge({
-							type: R.j
+				vt = (t, e) => {
+					const n = t.first(),
+						r = t.last();
+					let s = t;
+					if (Object(w.u)(n.getType()) ? s = s.set(s.keySeq().first(), n.merge({
+							type: w.n
+						})) : Object(w.o)(n.getType()) && (s = o.BlockMapBuilder.createFromArray([Object(D.h)(), ...s.toArray()])), Object(w.u)(r.getType()) || !Object(N.q)(e)) {
+						const t = Object(D.h)();
+						s = s.set(t.getKey(), t)
+					} else if (Object(w.o)(r.getType())) {
+						const t = Object(D.h)().merge({
+							type: w.j
 						});
-						r = r.set(e.getKey(), e)
+						s = s.set(t.getKey(), t)
 					}
-					return r
+					return s
 				},
-				je = (e, t, n) => {
-					const o = e.getBlockForKey(t.getStartKey());
-					if (Object(R.u)(o.getType())) {
+				jt = (t, e, n) => {
+					const o = t.getBlockForKey(e.getStartKey());
+					if (Object(w.u)(o.getType())) {
 						const o = n.first(),
-							s = n.set(n.keySeq().first(), Object(D.h)(o.getKey(), o.getText()).merge({
-								type: R.j
+							r = n.set(n.keySeq().first(), Object(D.h)(o.getKey(), o.getText()).merge({
+								type: w.j
 							}));
-						return Y.c(e, t, s)
+						return Y.c(t, e, r)
 					}
 				},
-				_e = (e, t, n) => {
-					const o = ((e, t, n) => {
-						const o = t ? t.getText() : "";
+				Rt = (t, e, n) => {
+					const o = ((t, e, n) => {
+						const o = e ? e.getText() : "";
 						return `<span data-editor="${n}">${L()(o)}</span>`
-					})(0, t, n.editor.getEditorKey());
+					})(0, e, n.editor.getEditorKey());
 					n.htmlParts.push(o)
 				},
-				Re = e => {
+				wt = t => {
 					const {
-						remaining: t
-					} = e, n = t.shift(), o = t[0] && Object(R.u)(t[0].getType()) ? t.shift() : void 0;
-					_e(0, o, e), ((e, t) => {
-						const n = e ? ke(e, t) : "";
-						t.textParts.push(n)
-					})(o, e), e.processed.push(n), o && e.processed.push(o)
+						remaining: e
+					} = t, n = e.shift(), o = e[0] && Object(w.u)(e[0].getType()) ? e.shift() : void 0;
+					Rt(0, o, t), ((t, e) => {
+						const n = t ? kt(t, e) : "";
+						e.textParts.push(n)
+					})(o, t), t.processed.push(n), o && t.processed.push(o)
 				},
-				we = e => {
-					const t = e.getSelection(),
-						n = t.getFocusKey();
-					if (n !== t.getAnchorKey()) return;
-					const s = e.getCurrentContent(),
-						r = s.getBlockForKey(n);
-					if (Object(R.o)(r.getType())) {
-						const e = [r],
-							t = s.getBlockAfter(r.getKey());
-						return t && Object(R.u)(t.getType()) && e.push(t), o.ContentState.createFromBlockArray(e).getBlockMap()
+				Bt = t => {
+					const e = t.getSelection(),
+						n = e.getFocusKey();
+					if (n !== e.getAnchorKey()) return;
+					const r = t.getCurrentContent(),
+						s = r.getBlockForKey(n);
+					if (Object(w.o)(s.getType())) {
+						const t = [s],
+							e = r.getBlockAfter(s.getKey());
+						return e && Object(w.u)(e.getType()) && t.push(e), o.ContentState.createFromBlockArray(t).getBlockMap()
 					}
 				},
-				Ie = e => {
-					const t = we(e);
-					if (t) return Object(N.d)(e, t.first().getKey())
+				It = t => {
+					const e = Bt(t);
+					if (e) return Object(N.d)(t, e.first().getKey())
 				},
-				Be = e => {
-					const t = e.getSelection();
-					let n = e.getCurrentContent();
-					const s = n.getBlockForKey(t.getStartKey()),
-						r = n.getBlockForKey(t.getEndKey());
-					if (Object(R.t)(s.getType()) || Object(R.t)(r.getType())) {
-						if (t.isCollapsed())
-							if (Object(R.u)(s.getType())) n = Y.d(n, t), n = o.Modifier.setBlockType(n, n.getSelectionAfter(), R.n);
-							else if (Object(R.o)(s.getType())) {
-							let s = n.getBlockAfter(t.getStartKey());
-							return s || (s = (e = Object(N.b)(e, t.getStartKey(), D.a.after)).getCurrentContent().getBlockAfter(t.getStartKey())), o.EditorState.forceSelection(e, Object(D.b)(s, !0))
+				_t = t => {
+					const e = t.getSelection();
+					let n = t.getCurrentContent();
+					const r = n.getBlockForKey(e.getStartKey()),
+						s = n.getBlockForKey(e.getEndKey());
+					if (Object(w.t)(r.getType()) || Object(w.t)(s.getType())) {
+						if (e.isCollapsed())
+							if (Object(w.u)(r.getType())) n = Y.d(n, e), n = o.Modifier.setBlockType(n, n.getSelectionAfter(), w.n);
+							else if (Object(w.o)(r.getType())) {
+							let r = n.getBlockAfter(e.getStartKey());
+							return r || (r = (t = Object(N.b)(t, e.getStartKey(), D.a.after)).getCurrentContent().getBlockAfter(e.getStartKey())), o.EditorState.forceSelection(t, Object(D.b)(r, !0))
 						}
-						return o.EditorState.push(e, n, "split-block")
+						return o.EditorState.push(t, n, "split-block")
 					}
 				},
-				Ae = (e, t) => {
-					const n = e.getSelection(),
-						s = e.getCurrentContent(),
-						r = "up" === t ? n.getStartKey() : n.getEndKey(),
-						i = s.getBlockForKey(r);
-					if (!Object(R.o)(i.getType())) return;
-					const c = "up" === t ? s.getBlockBefore(r) : s.getBlockAfter(r);
-					return c ? o.EditorState.forceSelection(e, Object(D.b)(c, !0)) : Object(N.b)(e, r, "up" === t ? D.a.before : D.a.after)
+				At = (t, e) => {
+					const n = t.getSelection(),
+						r = t.getCurrentContent(),
+						s = "up" === e ? n.getStartKey() : n.getEndKey(),
+						i = r.getBlockForKey(s);
+					if (!Object(w.o)(i.getType())) return;
+					const c = "up" === e ? r.getBlockBefore(s) : r.getBlockAfter(s);
+					return c ? o.EditorState.forceSelection(t, Object(D.b)(c, !0)) : Object(N.b)(t, s, "up" === e ? D.a.before : D.a.after)
 				},
-				Ke = (e, t) => {
-					if (e.shiftKey) return;
-					const n = Ae(t, "up");
-					return n && e.preventDefault(), n
+				Kt = (t, e) => {
+					if (t.shiftKey) return;
+					const n = At(e, "up");
+					return n && t.preventDefault(), n
 				},
-				Me = (e, t) => {
-					if (e.shiftKey) return;
-					const n = Ae(t, "down");
-					return n && e.preventDefault(), n
+				Mt = (t, e) => {
+					if (t.shiftKey) return;
+					const n = At(e, "down");
+					return n && t.preventDefault(), n
 				},
-				Le = (e, t) => {
-					const n = e.getSelection();
-					return n.isCollapsed() && 0 === n.getStartOffset() && Object(R.o)(e.getCurrentContent().getBlockForKey(n.getStartKey()).getType())
+				Lt = (t, e) => {
+					const n = t.getSelection();
+					return n.isCollapsed() && 0 === n.getStartOffset() && Object(w.o)(t.getCurrentContent().getBlockForKey(n.getStartKey()).getType())
 				};
-			var Ne = (e, t) => {
-					if (!Object(N.q)(t)) return e;
-					const n = e.getSelection(),
-						o = e.getCurrentContent(),
-						s = o.getBlockForKey(n.getStartKey());
-					if (Object(R.o)(s.getType())) {
-						const t = o.getBlockAfter(s.getKey());
-						if (!t || !Object(R.u)(t.getType())) return Object(N.d)(e, s.getKey(), !1)
+			var Nt = (t, e) => {
+					if (!Object(N.q)(e)) return t;
+					const n = t.getSelection(),
+						o = t.getCurrentContent(),
+						r = o.getBlockForKey(n.getStartKey());
+					if (Object(w.o)(r.getType())) {
+						const e = o.getBlockAfter(r.getKey());
+						if (!e || !Object(w.u)(e.getType())) return Object(N.d)(t, r.getKey(), !1)
 					}
-					return e
+					return t
 				},
-				De = n("./src/reddit/actions/modal.ts"),
-				Fe = n("./src/reddit/actions/upload.ts"),
-				Pe = n("./src/reddit/components/ThumbnailSelector/index.tsx"),
-				Ue = e => null,
-				He = n("./src/reddit/helpers/media/index.ts"),
-				We = n("./src/reddit/helpers/richTextEditor/index.ts"),
-				ze = n("./src/reddit/selectors/activeModalId.ts");
-			const qe = "application/x-reddit-rte-block";
-			var Ve = n("./src/reddit/models/Upload/index.ts"),
-				Ge = n("./src/reddit/components/RichTextEditor/media/MediaBlock/MediaView/ImagePreview/index.m.less"),
-				Ye = n.n(Ge);
-			const Qe = E.a.img("Img", Ye.a);
-			var Je = E.a.wrapped(e => {
+				Dt = n("./src/reddit/actions/modal.ts"),
+				Ft = n("./src/reddit/actions/upload.ts"),
+				Pt = n("./src/reddit/components/ThumbnailSelector/index.tsx"),
+				Ut = t => null,
+				Ht = n("./src/reddit/helpers/media/index.ts"),
+				Wt = n("./src/reddit/helpers/richTextEditor/index.ts"),
+				zt = n("./src/reddit/selectors/activeModalId.ts");
+			const qt = "application/x-reddit-rte-block";
+			var Vt = n("./src/reddit/models/Upload/index.ts"),
+				Gt = n("./src/reddit/components/RichTextEditor/media/MediaBlock/MediaView/ImagePreview/index.m.less"),
+				Yt = n.n(Gt);
+			const Qt = E.a.img("Img", Yt.a);
+			var Jt = E.a.wrapped(t => {
 					const {
-						className: t,
+						className: e,
 						url: n
-					} = e;
+					} = t;
 					return p.a.createElement("div", {
-						className: t
-					}, p.a.createElement(Qe, {
+						className: e
+					}, p.a.createElement(Qt, {
 						draggable: !1,
 						src: n
 					}))
-				}, "Component", Ye.a),
-				Xe = n("./src/reddit/components/RichTextEditor/media/MediaBlock/MediaView/Placeholder/index.m.less"),
-				Ze = n.n(Xe);
-			const $e = E.a.div("Message", Ze.a);
-			var et = E.a.wrapped(e => {
+				}, "Component", Yt.a),
+				Xt = n("./src/reddit/components/RichTextEditor/media/MediaBlock/MediaView/Placeholder/index.m.less"),
+				Zt = n.n(Xt);
+			const $t = E.a.div("Message", Zt.a);
+			var te = E.a.wrapped(t => {
 					const {
-						className: t,
+						className: e,
 						isImage: n
-					} = e;
+					} = t;
 					return p.a.createElement("div", {
-						className: t
-					}, p.a.createElement($e, null, n ? s.fbt._("Processing video...", null, {
+						className: e
+					}, p.a.createElement($t, null, n ? r.fbt._("Processing video...", null, {
 						hk: "3g3QoU"
-					}) : s.fbt._("Processing image...", null, {
+					}) : r.fbt._("Processing image...", null, {
 						hk: "1xoNB3"
 					})))
-				}, "Component", Ze.a),
-				tt = n("./src/lib/formatApiError/index.ts"),
-				nt = n("./src/reddit/components/ProgressBar/index.tsx"),
-				ot = n("./src/reddit/controls/Button/index.tsx"),
-				st = n("./src/reddit/components/RichTextEditor/media/MediaBlock/MediaView/StatusBar/index.m.less"),
-				rt = n.n(st);
-			const it = E.a.div("ControlRow", rt.a),
-				ct = E.a.wrapped(ot.t, "Button", rt.a),
-				at = E.a.wrapped(ot.t, "ErrButton", rt.a),
-				lt = E.a.div("Status", rt.a),
-				dt = E.a.wrapped(nt.a, "ProgressBar", rt.a),
-				ut = E.a.div("ErrorLine", rt.a),
-				pt = e => t => {
-					t.stopPropagation(), e(t)
+				}, "Component", Zt.a),
+				ee = n("./src/lib/formatApiError/index.ts"),
+				ne = n("./src/reddit/components/ProgressBar/index.tsx"),
+				oe = n("./src/reddit/controls/Button/index.tsx"),
+				re = n("./src/reddit/components/RichTextEditor/media/MediaBlock/MediaView/StatusBar/index.m.less"),
+				se = n.n(re);
+			const ie = E.a.div("ControlRow", se.a),
+				ce = E.a.wrapped(oe.t, "Button", se.a),
+				ae = E.a.wrapped(oe.t, "ErrButton", se.a),
+				le = E.a.div("Status", se.a),
+				de = E.a.wrapped(ne.a, "ProgressBar", se.a),
+				ue = E.a.div("ErrorLine", se.a),
+				pe = t => e => {
+					e.stopPropagation(), t(e)
 				};
-			var ht = E.a.wrapped(e => {
+			var he = E.a.wrapped(t => {
 					const {
-						upload: t
-					} = e, n = pt(e.onCancel), o = pt(e.onRetry), r = pt(e.onRemove), {
+						upload: e
+					} = t, n = pe(t.onCancel), o = pe(t.onRetry), s = pe(t.onRemove), {
 						status: i,
 						progress: c
-					} = t, a = c && c.percent || 0, l = i === Ve.a.FAILED || i === Ve.a.CANCELED, d = (e => {
+					} = e, a = c && c.percent || 0, l = i === Vt.a.FAILED || i === Vt.a.CANCELED, d = (t => {
 						const {
-							status: t,
+							status: e,
 							progress: n
-						} = e;
-						return t === Ve.a.CANCELED ? s.fbt._("Upload was canceled", null, {
+						} = t;
+						return e === Vt.a.CANCELED ? r.fbt._("Upload was canceled", null, {
 							hk: "71azQ"
-						}) : t === Ve.a.FAILED ? s.fbt._("Upload failed: {errorText}", [s.fbt._param("errorText", Object(tt.a)(e.error))], {
+						}) : e === Vt.a.FAILED ? r.fbt._("Upload failed: {errorText}", [r.fbt._param("errorText", Object(ee.a)(t.error))], {
 							hk: "3NGGzE"
-						}) : 100 === (n && n.percent || 0) ? s.fbt._("Success!", null, {
+						}) : 100 === (n && n.percent || 0) ? r.fbt._("Success!", null, {
 							hk: "3622uh"
-						}) : s.fbt._("Uploading: {fileName}", [s.fbt._param("fileName", e.file.name)], {
+						}) : r.fbt._("Uploading: {fileName}", [r.fbt._param("fileName", t.file.name)], {
 							hk: "H7qzO"
 						})
-					})(t);
+					})(e);
 					return p.a.createElement("div", {
-						className: e.className
-					}, l ? p.a.createElement(ut, null) : p.a.createElement(dt, {
-						innerBarClassName: rt.a.ProgressBarInner,
+						className: t.className
+					}, l ? p.a.createElement(ue, null) : p.a.createElement(de, {
+						innerBarClassName: se.a.ProgressBarInner,
 						percent: a
-					}), p.a.createElement(it, null, p.a.createElement(lt, {
-						className: l ? rt.a.hasError : void 0,
+					}), p.a.createElement(ie, null, p.a.createElement(le, {
+						className: l ? se.a.hasError : void 0,
 						title: l ? d : void 0
 					}, d), p.a.createElement("div", {
-						className: rt.a.ButtonsContainer
-					}, l ? [p.a.createElement(at, {
-						kind: ot.b.Button,
-						priority: ot.c.Plain,
+						className: se.a.ButtonsContainer
+					}, l ? [p.a.createElement(ae, {
+						kind: oe.b.Button,
+						priority: oe.c.Plain,
 						key: "remove",
-						onClick: r
-					}, s.fbt._("Remove", null, {
+						onClick: s
+					}, r.fbt._("Remove", null, {
 						hk: "3tYl0U"
-					})), p.a.createElement(at, {
-						kind: ot.b.Button,
-						priority: ot.c.Plain,
+					})), p.a.createElement(ae, {
+						kind: oe.b.Button,
+						priority: oe.c.Plain,
 						key: "retry",
 						onClick: o
-					}, s.fbt._("Retry", null, {
+					}, r.fbt._("Retry", null, {
 						hk: "3sO2HB"
-					}))] : p.a.createElement(ct, {
-						kind: ot.b.Button,
-						priority: ot.c.Plain,
+					}))] : p.a.createElement(ce, {
+						kind: oe.b.Button,
+						priority: oe.c.Plain,
 						disabled: 100 === a,
 						onClick: n
-					}, s.fbt._("Cancel", null, {
+					}, r.fbt._("Cancel", null, {
 						hk: "2TSLl5"
 					})))))
-				}, "Component", rt.a),
-				mt = n("./node_modules/react-motion/lib/react-motion.js"),
-				gt = n("./src/reddit/components/HTML5StreamPlayer/index.tsx"),
-				ft = n("./src/reddit/components/PlayButton/index.tsx"),
-				bt = n("./src/reddit/components/RichTextEditor/media/MediaBlock/MediaView/VideoPreview/index.m.less"),
-				yt = n.n(bt);
-			const Et = {
+				}, "Component", se.a),
+				me = n("./node_modules/react-motion/lib/react-motion.js"),
+				ge = n("./src/reddit/components/HTML5StreamPlayer/index.tsx"),
+				fe = n("./src/reddit/components/PlayButton/index.tsx"),
+				be = n("./src/reddit/components/RichTextEditor/media/MediaBlock/MediaView/VideoPreview/index.m.less"),
+				ye = n.n(be);
+			const Ee = {
 					stiffness: 60,
 					damping: 20
 				},
-				St = [{
+				Se = [{
 					key: "video",
 					style: {
-						opacity: Object(mt.spring)(1, Et)
+						opacity: Object(me.spring)(1, Ee)
 					}
 				}],
-				xt = E.a.wrapped(e => {
+				Ce = E.a.wrapped(t => {
 					const {
-						autoPlay: t = !1,
+						autoPlay: e = !1,
 						className: n,
 						showControls: o,
-						shouldPause: s,
-						style: r,
+						shouldPause: r,
+						style: s,
 						dashUrl: i,
 						hlsUrl: c,
 						otherUrl: a
-					} = e;
+					} = t;
 					return p.a.createElement("div", {
 						className: n,
-						style: r
-					}, p.a.createElement(gt.b, {
-						autoPlay: t,
+						style: s
+					}, p.a.createElement(ge.b, {
+						autoPlay: e,
 						shouldIgnoreAutoplayPref: !0,
 						shouldLoad: !1,
-						shouldPause: s,
+						shouldPause: r,
 						isGif: !1,
 						hlsSource: c,
 						mpegDashSource: i,
@@ -3551,35 +3360,35 @@
 						playerClickPlay: !1,
 						hideUntilLoaded: !0
 					}))
-				}, "VideoPlayer", yt.a),
-				Ct = E.a.img("PosterImg", yt.a),
-				Ot = E.a.wrapped(e => {
+				}, "VideoPlayer", ye.a),
+				xe = E.a.img("PosterImg", ye.a),
+				Oe = E.a.wrapped(t => {
 					const {
-						className: t,
+						className: e,
 						onPlayButtonClick: n,
 						url: o,
-						showPlayButton: s
-					} = e;
+						showPlayButton: r
+					} = t;
 					return p.a.createElement("div", {
-						className: t
-					}, p.a.createElement(Ct, {
+						className: e
+					}, p.a.createElement(xe, {
 						draggable: !1,
 						src: o
-					}), s && p.a.createElement(ft.a, {
-						className: yt.a.playButton,
+					}), r && p.a.createElement(fe.a, {
+						className: ye.a.playButton,
 						onClick: n
 					}))
-				}, "Poster", yt.a);
-			class kt extends p.a.Component {
-				constructor(e) {
-					super(e), this.onPlayButtonClick = () => {
+				}, "Poster", ye.a);
+			class ke extends p.a.Component {
+				constructor(t) {
+					super(t), this.onPlayButtonClick = () => {
 						this.setState({
 							showVideo: !0
 						})
 					}, this.willEnter = () => ({
 						opacity: 0
 					}), this.willLeave = () => ({
-						opacity: Object(mt.spring)(0, Et)
+						opacity: Object(me.spring)(0, Ee)
 					}), this.didLeave = () => {
 						this.setState({
 							showVideo: !1
@@ -3590,262 +3399,262 @@
 				}
 				renderVideo() {
 					const {
-						props: e
+						props: t
 					} = this;
 					return p.a.createElement("div", {
-						className: e.className
-					}, p.a.createElement(xt, {
-						dashUrl: e.dashUrl,
-						hlsUrl: e.hlsUrl,
-						showControls: e.isUploaded && e.isSelected,
-						shouldPause: !e.isSelected || void 0
+						className: t.className
+					}, p.a.createElement(Ce, {
+						dashUrl: t.dashUrl,
+						hlsUrl: t.hlsUrl,
+						showControls: t.isUploaded && t.isSelected,
+						shouldPause: !t.isSelected || void 0
 					}))
 				}
 				render() {
 					const {
-						className: e,
-						isSelected: t,
+						className: t,
+						isSelected: e,
 						posterUrl: n,
 						dashUrl: o,
-						hlsUrl: s,
-						otherUrl: r
+						hlsUrl: r,
+						otherUrl: s
 					} = this.props;
 					if (!n) return this.renderVideo();
 					const {
 						showVideo: i
-					} = this.state, c = !!(o || s || r);
-					return p.a.createElement(mt.TransitionMotion, {
+					} = this.state, c = !!(o || r || s);
+					return p.a.createElement(me.TransitionMotion, {
 						defaultStyles: [],
-						styles: t && i && c ? St : [],
+						styles: e && i && c ? Se : [],
 						willEnter: this.willEnter,
 						willLeave: this.willLeave,
 						didLeave: this.didLeave
 					}, c => p.a.createElement("div", {
-						className: e
-					}, c.map(e => p.a.createElement(xt, {
-						key: e.key,
+						className: t
+					}, c.map(t => p.a.createElement(Ce, {
+						key: t.key,
 						autoPlay: !0,
-						style: e.style,
-						otherUrl: r,
+						style: t.style,
+						otherUrl: s,
 						dashUrl: o,
-						hlsUrl: s,
+						hlsUrl: r,
 						showControls: !0,
-						shouldPause: !t || void 0
-					})), p.a.createElement(Ot, {
+						shouldPause: !e || void 0
+					})), p.a.createElement(Oe, {
 						url: n,
-						showPlayButton: !i || !t,
+						showPlayButton: !i || !e,
 						onPlayButtonClick: this.onPlayButtonClick
 					})))
 				}
 			}
-			var Tt = E.a.wrapped(kt, "Component", yt.a),
-				vt = n("./src/reddit/components/RichTextEditor/media/MediaBlock/MediaView/index.m.less"),
-				jt = n.n(vt);
+			var Te = E.a.wrapped(ke, "Component", ye.a),
+				ve = n("./src/reddit/components/RichTextEditor/media/MediaBlock/MediaView/index.m.less"),
+				je = n.n(ve);
 
-			function _t() {
-				return (_t = Object.assign || function(e) {
-					for (var t = 1; t < arguments.length; t++) {
-						var n = arguments[t];
-						for (var o in n) Object.prototype.hasOwnProperty.call(n, o) && (e[o] = n[o])
+			function Re() {
+				return (Re = Object.assign || function(t) {
+					for (var e = 1; e < arguments.length; e++) {
+						var n = arguments[e];
+						for (var o in n) Object.prototype.hasOwnProperty.call(n, o) && (t[o] = n[o])
 					}
-					return e
+					return t
 				}).apply(this, arguments)
 			}
-			var Rt = e => {
+			var we = t => {
 					const {
-						alignCenter: t,
+						alignCenter: e,
 						isSelected: n,
 						onCancel: o,
-						onRetry: s,
-						onRemove: r,
+						onRetry: r,
+						onRemove: s,
 						upload: i,
 						mediaAsset: c,
 						thumbnail: a,
 						renderSmallMedia: l,
 						...d
-					} = e;
+					} = t;
 					let u = !1;
-					if (i) u = "image" === Object(He.g)(i.metadata.mimetype);
+					if (i) u = "image" === Object(Ht.g)(i.metadata.mimetype);
 					else {
 						if (!c) return null;
 						u = c.type === N.a.Image || c.type === N.a.AnimatedImage
 					}
 					const h = i ? i.metadata.height : c.height,
-						m = !i || i.status === Ve.a.SUCCESS,
+						m = !i || i.status === Vt.a.SUCCESS,
 						g = u && !!h && h < 104,
 						f = !h;
-					return p.a.createElement("div", _t({
-						className: Object(b.a)(jt.a.container, {
-							[jt.a.alignCenter]: t,
-							[jt.a.isCompact]: g,
-							[jt.a.isUploaded]: m,
-							[jt.a.isSelected]: n
+					return p.a.createElement("div", Re({
+						className: Object(b.a)(je.a.container, {
+							[je.a.alignCenter]: e,
+							[je.a.isCompact]: g,
+							[je.a.isUploaded]: m,
+							[je.a.isSelected]: n
 						})
-					}, d), f ? p.a.createElement(et, {
-						className: jt.a.placeholder,
+					}, d), f ? p.a.createElement(te, {
+						className: je.a.placeholder,
 						isImage: u
-					}) : u ? p.a.createElement(Je, {
-						className: Object(b.a)(jt.a.imagePreview, {
-							[jt.a.renderSmallMedia]: l
+					}) : u ? p.a.createElement(Jt, {
+						className: Object(b.a)(je.a.imagePreview, {
+							[je.a.renderSmallMedia]: l
 						}),
 						url: i ? i.metadata.localUrl : c.imageUrl
-					}) : p.a.createElement(Tt, {
-						className: jt.a.videoPreview,
+					}) : p.a.createElement(Te, {
+						className: je.a.videoPreview,
 						dashUrl: c ? c.dashUrl : void 0,
 						hlsUrl: c ? c.hlsUrl : void 0,
 						isSelected: n,
 						isUploaded: m,
 						otherUrl: i ? i.metadata.localUrl : void 0,
 						posterUrl: a ? a.url : c.posterUrl
-					}), i && p.a.createElement(ht, {
-						className: jt.a.statusBar,
+					}), i && p.a.createElement(he, {
+						className: je.a.statusBar,
 						onCancel: o,
-						onRemove: r,
-						onRetry: s,
+						onRemove: s,
+						onRetry: r,
 						upload: i
 					}))
 				},
-				wt = n("./src/reddit/components/RichTextEditor/media/MediaBlock/SelectionHook/index.m.less"),
-				It = n.n(wt);
+				Be = n("./src/reddit/components/RichTextEditor/media/MediaBlock/SelectionHook/index.m.less"),
+				Ie = n.n(Be);
 
-			function Bt() {
-				return (Bt = Object.assign || function(e) {
-					for (var t = 1; t < arguments.length; t++) {
-						var n = arguments[t];
-						for (var o in n) Object.prototype.hasOwnProperty.call(n, o) && (e[o] = n[o])
+			function _e() {
+				return (_e = Object.assign || function(t) {
+					for (var e = 1; e < arguments.length; e++) {
+						var n = arguments[e];
+						for (var o in n) Object.prototype.hasOwnProperty.call(n, o) && (t[o] = n[o])
 					}
-					return e
+					return t
 				}).apply(this, arguments)
 			}
-			const At = E.a.div("HiddenDiv", It.a);
-			var Kt = e => {
+			const Ae = E.a.div("HiddenDiv", Ie.a);
+			var Ke = t => {
 					let {
-						elementRef: t,
+						elementRef: e,
 						...n
-					} = e;
-					return p.a.createElement(At, Bt({}, n, {
-						innerRef: t
+					} = t;
+					return p.a.createElement(Ae, _e({}, n, {
+						innerRef: e
 					}), p.a.createElement("br", null))
 				},
-				Mt = n("./src/reddit/components/MakeGifToggle/index.tsx"),
-				Lt = n("./src/reddit/icons/svgs/ThumbnailSelect/index.tsx"),
-				Nt = n("./src/reddit/icons/svgs/Trash2/index.tsx"),
-				Dt = n("./src/reddit/layout/row/Inline/index.tsx"),
-				Ft = n("./src/reddit/components/RichTextEditor/Toolbar/index.tsx"),
-				Pt = n("./src/reddit/components/RichTextEditor/Toolbar/FormatterButton/index.tsx"),
-				Ut = n("./src/reddit/components/RichTextEditor/Toolbar/formatterConfigs.tsx"),
-				Ht = n("./src/reddit/components/RichTextEditor/media/MediaBlock/Toolbar/index.m.less"),
-				Wt = n.n(Ht);
-			const zt = E.a.wrapped(Pt.a, "FormatterButton", Wt.a),
-				qt = Object(Ut.f)(Nt.b),
-				Vt = Object(Ut.f)(Lt.a),
-				Gt = E.a.wrapped(Dt.a, "ToolbarContent", Wt.a);
-			var Yt = e => {
+				Me = n("./src/reddit/components/MakeGifToggle/index.tsx"),
+				Le = n("./src/reddit/icons/svgs/ThumbnailSelect/index.tsx"),
+				Ne = n("./src/reddit/icons/svgs/Trash2/index.tsx"),
+				De = n("./src/reddit/layout/row/Inline/index.tsx"),
+				Fe = n("./src/reddit/components/RichTextEditor/Toolbar/index.tsx"),
+				Pe = n("./src/reddit/components/RichTextEditor/Toolbar/FormatterButton/index.tsx"),
+				Ue = n("./src/reddit/components/RichTextEditor/Toolbar/formatterConfigs.tsx"),
+				He = n("./src/reddit/components/RichTextEditor/media/MediaBlock/Toolbar/index.m.less"),
+				We = n.n(He);
+			const ze = E.a.wrapped(Pe.a, "FormatterButton", We.a),
+				qe = Object(Ue.f)(Ne.b),
+				Ve = Object(Ue.f)(Le.a),
+				Ge = E.a.wrapped(De.a, "ToolbarContent", We.a);
+			var Ye = t => {
 					const {
-						alignCenter: t,
+						alignCenter: e,
 						block: n,
 						editorState: o,
-						onChange: r,
+						onChange: s,
 						showVideoControls: i
-					} = e, c = n.getKey(), {
+					} = t, c = n.getKey(), {
 						makeGif: a = !1
 					} = Object(N.h)(n) || {};
 					return p.a.createElement("div", {
-						className: Object(b.a)(Wt.a.container, {
-							[Wt.a.alignCenter]: t
+						className: Object(b.a)(We.a.container, {
+							[We.a.alignCenter]: e
 						})
-					}, p.a.createElement(Gt, {
-						className: Object(b.a)(Wt.a.content, {
-							[Wt.a.multiButtonToolbarContent]: i
+					}, p.a.createElement(Ge, {
+						className: Object(b.a)(We.a.content, {
+							[We.a.multiButtonToolbarContent]: i
 						})
-					}, i && p.a.createElement(Mt.a, {
+					}, i && p.a.createElement(Me.a, {
 						isCompact: !0,
 						key: "make-gif",
 						on: a,
-						onClick: () => r(Object(N.r)(o, c, {
+						onClick: () => s(Object(N.r)(o, c, {
 							makeGif: !a
 						}))
-					}), i && e.showThumbnailButton && p.a.createElement(zt, {
-						Icon: Vt,
-						onClick: e.onThumbnailButtonClick,
-						tooltip: s.fbt._("Choose thumbnail", null, {
+					}), i && t.showThumbnailButton && p.a.createElement(ze, {
+						Icon: Ve,
+						onClick: t.onThumbnailButtonClick,
+						tooltip: r.fbt._("Choose thumbnail", null, {
 							hk: "2gKwDF"
 						}),
 						tooltipBelow: !0
-					}), i && p.a.createElement(Ft.c, null), p.a.createElement(zt, {
-						Icon: qt,
-						onClick: () => r(Object(N.d)(o, c)),
-						tooltip: s.fbt._("Remove", null, {
+					}), i && p.a.createElement(Fe.c, null), p.a.createElement(ze, {
+						Icon: qe,
+						onClick: () => s(Object(N.d)(o, c)),
+						tooltip: r.fbt._("Remove", null, {
 							hk: "3tYl0U"
 						}),
 						tooltipBelow: !0
 					})))
 				},
-				Qt = n("./src/reddit/components/RichTextEditor/media/MediaBlock/index.m.less"),
-				Jt = n.n(Qt);
-			const Xt = e => `RTE_VIDEO_THUMBNAIL_SELECTOR_${e.getKey()}`,
-				Zt = Object(m.a)(e => e.uploads, (e, t) => {
-					const n = Object(N.h)(t.block);
+				Qe = n("./src/reddit/components/RichTextEditor/media/MediaBlock/index.m.less"),
+				Je = n.n(Qe);
+			const Xe = t => `RTE_VIDEO_THUMBNAIL_SELECTOR_${t.getKey()}`,
+				Ze = Object(m.a)(t => t.uploads, (t, e) => {
+					const n = Object(N.h)(e.block);
 					return n && n.uploadInfo && n.uploadInfo.uploadKey
-				}, (e, t) => t ? e[t] : void 0),
-				$t = Object(h.b)((e, t) => ({
-					upload: Zt(e, t),
-					isThumbnailSelectorOpen: Object(ze.a)(e) === Xt(t.block),
-					isRteVideoPosterEnabled: v.d.rteVideoPoster(e)
-				}), (e, t) => ({
-					onCancelUpload: t => e(Fe.i(t, !1)),
-					toggleVideoThumbnailsSelector: () => e(Object(De.i)(Xt(t.block)))
+				}, (t, e) => e ? t[e] : void 0),
+				$e = Object(h.b)((t, e) => ({
+					upload: Ze(t, e),
+					isThumbnailSelectorOpen: Object(zt.a)(t) === Xe(e.block),
+					isRteVideoPosterEnabled: v.d.rteVideoPoster(t)
+				}), (t, e) => ({
+					onCancelUpload: e => t(Ft.i(e, !1)),
+					toggleVideoThumbnailsSelector: () => t(Object(Dt.i)(Xe(e.block)))
 				})),
-				en = E.a.div("MediaContainer", Jt.a),
-				tn = E.a.div("Container", Jt.a);
+				tn = E.a.div("MediaContainer", Je.a),
+				en = E.a.div("Container", Je.a);
 			class nn extends p.a.Component {
-				constructor(e) {
-					super(e), this.onNativeSelectionChange = () => {
-						const e = window.getSelection();
-						if (0 === e.rangeCount) return;
-						const t = e.getRangeAt(0),
+				constructor(t) {
+					super(t), this.onNativeSelectionChange = () => {
+						const t = window.getSelection();
+						if (0 === t.rangeCount) return;
+						const e = t.getRangeAt(0),
 							{
 								commonAncestorContainer: n
-							} = t;
+							} = e;
 						this.state.active ? this.rootContainer.contains(n) || this.setState({
 							active: !1
 						}) : this.rootContainer && this.rootContainer.contains(n) && this.selectBlock(), this.setState({
-							isInSelection: Object(U.h)(t, this.rootContainer)
+							isInSelection: Object(U.h)(e, this.rootContainer)
 						})
 					}, this.selectBlock = () => {
-						const e = document.createRange();
-						e.selectNodeContents(this.rootContainer);
-						const t = window.getSelection();
-						t.removeAllRanges(), t.addRange(e), this.setState({
+						const t = document.createRange();
+						t.selectNodeContents(this.rootContainer);
+						const e = window.getSelection();
+						e.removeAllRanges(), e.addRange(t), this.setState({
 							active: !0
 						})
 					}, this.isSelected = () => {
-						const e = this.props.blockProps.getEditorState().getSelection(),
-							t = this.props.block.getKey();
-						return this.state.active && Object(N.n)(e, t)
+						const t = this.props.blockProps.getEditorState().getSelection(),
+							e = this.props.block.getKey();
+						return this.state.active && Object(N.n)(t, e)
 					}, this.onRetryUpload = () => {
 						const {
-							upload: e
+							upload: t
 						} = this.props;
-						e && this.props.blockProps.onRetryUpload(e.key)
-					}, this.onMediaViewClickCapture = e => {
+						t && this.props.blockProps.onRetryUpload(t.key)
+					}, this.onMediaViewClickCapture = t => {
 						this.state.active || this.selectBlock()
-					}, this.onDragStart = e => {
-						e.dataTransfer.effectAllowed = "move", e.dataTransfer.setData(qe, this.props.block.getKey())
+					}, this.onDragStart = t => {
+						t.dataTransfer.effectAllowed = "move", t.dataTransfer.setData(qt, this.props.block.getKey())
 					}, this.onRemove = () => {
-						const e = this.props.blockProps.getEditorState();
-						this.props.blockProps.onChange(Object(N.d)(e, this.props.block.getKey()))
+						const t = this.props.blockProps.getEditorState();
+						this.props.blockProps.onChange(Object(N.d)(t, this.props.block.getKey()))
 					}, this.onCancelUpload = async () => {
 						this.props.upload && (await this.props.onCancelUpload(this.props.upload.key), this.selectBlock())
-					}, this.onToolbarStateChange = e => {
-						this.props.blockProps.onChange(e)
+					}, this.onToolbarStateChange = t => {
+						this.props.blockProps.onChange(t)
 					}, this.toggleVideoThumbnailsSelector = () => {
 						this.props.toggleVideoThumbnailsSelector()
-					}, this.onThumbnailSelect = e => {
-						const t = this.props.blockProps.getEditorState(),
+					}, this.onThumbnailSelect = t => {
+						const e = this.props.blockProps.getEditorState(),
 							n = this.props.block.getKey();
-						let o = Object(N.r)(t, this.props.block.getKey(), {
-							thumbnail: e
+						let o = Object(N.r)(e, this.props.block.getKey(), {
+							thumbnail: t
 						});
 						o = Object(N.p)(o, n), this.props.blockProps.onChange(o), this.toggleVideoThumbnailsSelector()
 					}, this.state = {
@@ -3853,127 +3662,127 @@
 						isInSelection: !1
 					}
 				}
-				shouldComponentUpdate(e, t) {
-					return t.active !== this.state.active || t.isInSelection !== this.state.isInSelection || e.block !== this.props.block || e.upload !== this.props.upload || Object(N.n)(e.selection, e.block.getKey())
+				shouldComponentUpdate(t, e) {
+					return e.active !== this.state.active || e.isInSelection !== this.state.isInSelection || t.block !== this.props.block || t.upload !== this.props.upload || Object(N.n)(t.selection, t.block.getKey())
 				}
 				componentDidMount() {
 					document.addEventListener("selectionchange", this.onNativeSelectionChange);
 					const {
-						selection: e
+						selection: t
 					} = this.props;
-					e.getHasFocus() && Object(N.n)(e, this.props.block.getKey()) && this.selectBlock(), this.overlayContainer = Ue(!0)
+					t.getHasFocus() && Object(N.n)(t, this.props.block.getKey()) && this.selectBlock(), this.overlayContainer = Ut(!0)
 				}
 				componentWillUnmount() {
 					document.removeEventListener("selectionchange", this.onNativeSelectionChange)
 				}
-				componentWillReceiveProps(e) {
-					const t = e.block.getKey(),
+				componentWillReceiveProps(t) {
+					const e = t.block.getKey(),
 						n = this.props.blockProps.getEditorState(),
 						o = n;
-					n !== o && this.props.blockProps.onChange(o), !this.state.active && e.selection !== this.props.selection && e.selection.getHasFocus() && Object(N.n)(e.selection, t) && this.selectBlock()
+					n !== o && this.props.blockProps.onChange(o), !this.state.active && t.selection !== this.props.selection && t.selection.getHasFocus() && Object(N.n)(t.selection, e) && this.selectBlock()
 				}
 				getToolbarOffset() {
 					if (!this.props.blockProps.rteFocusableContentRef || !this.rootContainer) return 0;
 					const {
-						top: e
-					} = this.rootContainer.getBoundingClientRect(), {
 						top: t
+					} = this.rootContainer.getBoundingClientRect(), {
+						top: e
 					} = this.props.blockProps.rteFocusableContentRef.getBoundingClientRect();
-					return e - t - 30 - 10
+					return t - e - 30 - 10
 				}
 				render() {
 					const {
-						block: e,
-						blockProps: t,
+						block: t,
+						blockProps: e,
 						isRteVideoPosterEnabled: n,
 						offsetKey: o,
-						upload: s
-					} = this.props, r = Object(N.h)(e), i = r ? r.thumbnail : void 0, c = !!s && Object(He.n)(s.metadata.mimetype || ""), {
+						upload: r
+					} = this.props, s = Object(N.h)(t), i = s ? s.thumbnail : void 0, c = !!r && Object(Ht.n)(r.metadata.mimetype || ""), {
 						active: a,
 						isInSelection: l
-					} = this.state, d = t.editorType === We.a.Comment;
-					return p.a.createElement(tn, {
-						innerRef: e => this.rootContainer = e
-					}, a && p.a.createElement(Yt, {
-						block: e,
-						editorState: t.getEditorState(),
+					} = this.state, d = e.editorType === Wt.a.Comment;
+					return p.a.createElement(en, {
+						innerRef: t => this.rootContainer = t
+					}, a && p.a.createElement(Ye, {
+						block: t,
+						editorState: e.getEditorState(),
 						onChange: this.onToolbarStateChange,
 						onThumbnailButtonClick: this.toggleVideoThumbnailsSelector,
 						showThumbnailButton: n,
 						showVideoControls: c,
 						alignCenter: !d
-					}), p.a.createElement(Kt, null), p.a.createElement("div", {
+					}), p.a.createElement(Ke, null), p.a.createElement("div", {
 						contentEditable: !1,
 						"data-offset-key": o
-					}, p.a.createElement(en, {
+					}, p.a.createElement(tn, {
 						draggable: !0,
 						onDragStart: this.onDragStart,
-						innerRef: e => this.mediaContainer = e
-					}, p.a.createElement(Rt, {
+						innerRef: t => this.mediaContainer = t
+					}, p.a.createElement(we, {
 						isSelected: l || a,
 						thumbnail: i,
 						onCancel: this.onCancelUpload,
 						onClickCapture: this.onMediaViewClickCapture,
 						onRetry: this.onRetryUpload,
 						onRemove: this.onRemove,
-						upload: s,
-						mediaAsset: r.mediaAsset,
+						upload: r,
+						mediaAsset: s.mediaAsset,
 						alignCenter: !d,
 						renderSmallMedia: d
-					})), s && c && p.a.createElement(Pe.a, {
+					})), r && c && p.a.createElement(Pt.a, {
 						onSelect: this.onThumbnailSelect,
 						onToggleModal: this.toggleVideoThumbnailsSelector,
-						videoSource: s.metadata.localUrl,
-						videoDuration: s.metadata.videoDuration,
+						videoSource: r.metadata.localUrl,
+						videoDuration: r.metadata.videoDuration,
 						selected: i,
 						isOpen: this.props.isThumbnailSelectorOpen
-					})), p.a.createElement(Kt, null))
+					})), p.a.createElement(Ke, null))
 				}
 			}
-			var on = $t(nn),
-				sn = n("./src/reddit/components/RichTextEditor/media/MediaCaption/index.m.less"),
-				rn = n.n(sn);
+			var on = $e(nn),
+				rn = n("./src/reddit/components/RichTextEditor/media/MediaCaption/index.m.less"),
+				sn = n.n(rn);
 			class cn extends p.a.PureComponent {
-				constructor(e) {
-					super(e);
+				constructor(t) {
+					super(t);
 					const {
-						contentState: t,
+						contentState: e,
 						block: n
-					} = Object(D.e)(e.children[0]).props;
-					this.mediaBlockKey = t.getBlockBefore(n.getKey()).getKey()
+					} = Object(D.e)(t.children[0]).props;
+					this.mediaBlockKey = e.getBlockBefore(n.getKey()).getKey()
 				}
 				render() {
-					const e = this.props.children[0],
-						t = Object(D.e)(e),
+					const t = this.props.children[0],
+						e = Object(D.e)(t),
 						{
 							block: n,
 							contentState: o
-						} = t.props,
-						r = o.getBlockForKey(this.mediaBlockKey),
-						i = Object(N.h)(r);
+						} = e.props,
+						s = o.getBlockForKey(this.mediaBlockKey),
+						i = Object(N.h)(s);
 					if (!i || !(i.mediaAsset || i.uploadInfo && i.uploadInfo.mediaType)) return null;
 					const c = !n.getLength();
 					return p.a.createElement("div", {
-						className: rn.a.wrapper,
+						className: sn.a.wrapper,
 						style: {
-							"--media-caption-placeholder-text": c ? `'${s.fbt._("Add caption",null,{hk:"3zI8El"})}'` : ""
+							"--media-caption-placeholder-text": c ? `'${r.fbt._("Add caption",null,{hk:"3zI8El"})}'` : ""
 						}
-					}, e)
+					}, t)
 				}
 			}
 			const an = Object(P.Map)({
-				[R.j]: {
+				[w.j]: {
 					element: "div",
 					wrapper: p.a.createElement(cn, null)
 				}
 			});
-			var ln = (e, t, n) => {
-					const s = e.getSelection(),
-						r = e.getCurrentContent(),
-						i = r.getBlockForKey(s.getAnchorKey()),
-						c = r.getBlockForKey(s.getFocusKey()),
-						[a, l] = Object(Q.e)(r, i, c);
-					if (!a || a !== l) return e;
+			var ln = (t, e, n) => {
+					const r = t.getSelection(),
+						s = t.getCurrentContent(),
+						i = s.getBlockForKey(r.getAnchorKey()),
+						c = s.getBlockForKey(r.getFocusKey()),
+						[a, l] = Object(Q.e)(s, i, c);
+					if (!a || a !== l) return t;
 					const {
 						blocks: d,
 						start: u
@@ -3992,50 +3801,50 @@
 							rowIndex: 0,
 							colIndex: 0
 						};
-					if ("rows" === t) {
-						const e = "before" === n ? b : E + 1,
-							t = W()(Object(Q.l)(m, E - b + 1), m);
-						g.splice(e, 0, ...t), S.rowIndex = e
+					if ("rows" === e) {
+						const t = "before" === n ? b : E + 1,
+							e = W()(Object(Q.l)(m, E - b + 1), m);
+						g.splice(t, 0, ...e), S.rowIndex = t
 					} else {
-						const e = "before" === n ? f : y + 1;
-						g.forEach(t => {
-							t.splice(e, 0, ...Object(Q.l)(y - f + 1, 1))
-						}), S.colIndex = e
+						const t = "before" === n ? f : y + 1;
+						g.forEach(e => {
+							e.splice(t, 0, ...Object(Q.l)(y - f + 1, 1))
+						}), S.colIndex = t
 					}
-					const x = Object(Q.d)(g),
-						C = r.getBlocksAsArray(),
-						O = q()(x),
-						k = [...C.slice(0, u), ...O, ...C.slice(u + d.length)],
-						T = r.merge({
+					const C = Object(Q.d)(g),
+						x = s.getBlocksAsArray(),
+						O = q()(C),
+						k = [...x.slice(0, u), ...O, ...x.slice(u + d.length)],
+						T = s.merge({
 							blockMap: o.BlockMapBuilder.createFromArray(k)
 						}),
-						v = te()(O, e => Object(Q.h)(S, Object(Q.g)(e))),
-						j = Object(Q.o)(s, v, v);
-					let _ = o.EditorState.push(e, T, Z.e);
-					return _ = o.EditorState.forceSelection(_, j)
+						v = et()(O, t => Object(Q.h)(S, Object(Q.g)(t))),
+						j = Object(Q.o)(r, v, v);
+					let R = o.EditorState.push(t, T, Z.e);
+					return R = o.EditorState.forceSelection(R, j)
 				},
 				dn = n("./node_modules/lodash/clamp.js"),
 				un = n.n(dn),
 				pn = n("./src/reddit/components/RichTextEditor/helpers/sliceContiguousBlocks.ts");
-			var hn = function(e, t) {
+			var hn = function(t, e) {
 				let n = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : "preserve";
-				const s = e.getSelection(),
-					r = e.getCurrentContent(),
-					i = "up" === t || "left" === t ? s.getStartKey() : s.getEndKey(),
-					c = r.getBlockForKey(i);
-				if (!Object(R.v)(c.getType())) return;
+				const r = t.getSelection(),
+					s = t.getCurrentContent(),
+					i = "up" === e || "left" === e ? r.getStartKey() : r.getEndKey(),
+					c = s.getBlockForKey(i);
+				if (!Object(w.v)(c.getType())) return;
 				const a = Object(Q.g)(c),
 					{
 						colCount: l,
 						colIndex: d,
 						rowIndex: u
 					} = a,
-					p = r.getBlocksAsArray(),
-					h = Object(pn.a)(r, c);
+					p = s.getBlocksAsArray(),
+					h = Object(pn.a)(s, c);
 				if (!h) return;
 				let m = u,
 					g = d;
-				switch (t) {
+				switch (e) {
 					case "up":
 						m--;
 						break;
@@ -4053,135 +3862,135 @@
 					colIndex: g
 				};
 				let b = i;
-				const y = te()(h.blocks, e => Object(Q.h)(Object(Q.g)(e), f));
+				const y = et()(h.blocks, t => Object(Q.h)(Object(Q.g)(t), f));
 				if (y) b = y.getKey();
 				else {
-					const e = Object(Q.c)(f, a) < 0 ? h.start - 1 : h.start + h.blocks.length;
-					0 <= e && e < p.length && (b = p[e].getKey())
+					const t = Object(Q.c)(f, a) < 0 ? h.start - 1 : h.start + h.blocks.length;
+					0 <= t && t < p.length && (b = p[t].getKey())
 				}
-				const E = r.getBlockForKey(b);
+				const E = s.getBlockForKey(b);
 				let S = 0;
-				"preserve" === n ? S = un()(s.getFocusOffset(), 0, E.getLength()) : "end" === n && (S = E.getLength());
-				const x = s.merge({
+				"preserve" === n ? S = un()(r.getFocusOffset(), 0, E.getLength()) : "end" === n && (S = E.getLength());
+				const C = r.merge({
 					anchorKey: b,
 					focusKey: b,
 					focusOffset: S,
 					anchorOffset: S
 				});
-				return s !== x ? o.EditorState.forceSelection(e, x) : void 0
+				return r !== C ? o.EditorState.forceSelection(t, C) : void 0
 			};
-			const mn = (e, t) => {
-					const n = t.getCurrentContent(),
-						o = t.getSelection(),
-						s = n.getBlockForKey(o.getFocusKey()),
-						[r] = Object(Q.e)(n, s, s);
-					if (!r) return;
-					const i = Object(Q.g)(s);
+			const mn = (t, e) => {
+					const n = e.getCurrentContent(),
+						o = e.getSelection(),
+						r = n.getBlockForKey(o.getFocusKey()),
+						[s] = Object(Q.e)(n, r, r);
+					if (!s) return;
+					const i = Object(Q.g)(r);
 					let c;
-					return (c = i.colIndex === i.colCount - 1 && i.rowIndex === r.blocks.length / i.colCount - 1 && !e.shiftKey && o.getFocusKey() === o.getAnchorKey() ? ln(t, "rows", "after") : hn(t, e.shiftKey ? "left" : "right", "end")) ? (e.preventDefault(), c) : void 0
+					return (c = i.colIndex === i.colCount - 1 && i.rowIndex === s.blocks.length / i.colCount - 1 && !t.shiftKey && o.getFocusKey() === o.getAnchorKey() ? ln(e, "rows", "after") : hn(e, t.shiftKey ? "left" : "right", "end")) ? (t.preventDefault(), c) : void 0
 				},
-				gn = (e, t) => {
-					if (e.shiftKey) return;
-					const n = hn(t, "up");
-					return n && e.preventDefault(), n
+				gn = (t, e) => {
+					if (t.shiftKey) return;
+					const n = hn(e, "up");
+					return n && t.preventDefault(), n
 				},
-				fn = (e, t) => {
-					if (e.shiftKey) return;
-					const n = hn(t, "down");
-					return n && e.preventDefault(), n
+				fn = (t, e) => {
+					if (t.shiftKey) return;
+					const n = hn(e, "down");
+					return n && t.preventDefault(), n
 				};
 			class bn {
 				constructor() {
 					this.lastRowInsertionState = null
 				}
-				undoRowInsertion(e) {
-					const t = o.EditorState.undo(e);
-					return hn(t, "down", "end") || t
+				undoRowInsertion(t) {
+					const e = o.EditorState.undo(t);
+					return hn(e, "down", "end") || e
 				}
-				isSelectionInLastRow(e) {
-					const t = e.getCurrentContent(),
-						n = e.getSelection(),
-						o = t.getBlockForKey(n.getFocusKey()),
-						[s] = Object(Q.e)(t, o, o);
-					if (!s) return !1;
-					const r = Object(Q.g)(s.blocks[0]).colCount,
-						i = s.blocks.length / r;
+				isSelectionInLastRow(t) {
+					const e = t.getCurrentContent(),
+						n = t.getSelection(),
+						o = e.getBlockForKey(n.getFocusKey()),
+						[r] = Object(Q.e)(e, o, o);
+					if (!r) return !1;
+					const s = Object(Q.g)(r.blocks[0]).colCount,
+						i = r.blocks.length / s;
 					return Object(Q.g)(o).rowIndex === i - 1
 				}
-				insertNewRow(e) {
-					const t = e.getSelection();
-					let n = ln(e, "rows", "after");
-					return n = o.EditorState.forceSelection(n, t), n = hn(n, "down") || n, this.lastRowInsertionState = n, n
+				insertNewRow(t) {
+					const e = t.getSelection();
+					let n = ln(t, "rows", "after");
+					return n = o.EditorState.forceSelection(n, e), n = hn(n, "down") || n, this.lastRowInsertionState = n, n
 				}
-				handle(e) {
-					return e.getSelection().isCollapsed() ? e === this.lastRowInsertionState ? this.undoRowInsertion(e) : this.isSelectionInLastRow(e) ? this.insertNewRow(e) : hn(e, "down") || e : e
+				handle(t) {
+					return t.getSelection().isCollapsed() ? t === this.lastRowInsertionState ? this.undoRowInsertion(t) : this.isSelectionInLastRow(t) ? this.insertNewRow(t) : hn(t, "down") || t : t
 				}
 			}
-			const yn = (e, t) => {
-				const n = e.getSelection();
+			const yn = (t, e) => {
+				const n = t.getSelection();
 				if (n.isCollapsed() || n.getStartKey() === n.getEndKey()) return;
-				const s = e.getCurrentContent(),
-					r = s.getBlockForKey(n.getAnchorKey()),
-					i = s.getBlockForKey(n.getFocusKey()),
-					[c, a] = Object(Q.e)(s, r, i);
+				const r = t.getCurrentContent(),
+					s = r.getBlockForKey(n.getAnchorKey()),
+					i = r.getBlockForKey(n.getFocusKey()),
+					[c, a] = Object(Q.e)(r, s, i);
 				if (c && c === a) {
-					const r = Object(Q.o)(n, i, i, !1),
-						c = Y.b(s, r, t);
-					return o.EditorState.push(e, c, Z.d)
+					const s = Object(Q.o)(n, i, i, !1),
+						c = Y.b(r, s, e);
+					return o.EditorState.push(t, c, Z.d)
 				}
 			};
 			var En = n("./node_modules/lodash/forEach.js"),
 				Sn = n.n(En);
-			const xn = (e, t) => t ? e[0] : e[e.length - 1];
-			var Cn = (e, t) => {
-					return e.getSelection().isCollapsed() ? ((e, t) => {
-						const n = e.getSelection(),
-							s = t.getSelection();
-						if (!n.isCollapsed() || s.isCollapsed() || 0 !== s.getStartOffset() || s.getStartKey() !== n.getStartKey()) return e;
-						const r = e.getCurrentContent(),
-							i = t.getCurrentContent(),
-							c = r.getBlockForKey(n.getAnchorKey());
-						if (!Object(R.v)(c.getType())) return e;
+			const Cn = (t, e) => e ? t[0] : t[t.length - 1];
+			var xn = (t, e) => {
+					return t.getSelection().isCollapsed() ? ((t, e) => {
+						const n = t.getSelection(),
+							r = e.getSelection();
+						if (!n.isCollapsed() || r.isCollapsed() || 0 !== r.getStartOffset() || r.getStartKey() !== n.getStartKey()) return t;
+						const s = t.getCurrentContent(),
+							i = e.getCurrentContent(),
+							c = s.getBlockForKey(n.getAnchorKey());
+						if (!Object(w.v)(c.getType())) return t;
 						const {
 							rowIndex: a,
 							colIndex: l
 						} = Object(Q.g)(c);
-						if (0 !== a || 0 !== l) return e;
-						const d = r.getBlockMap(),
+						if (0 !== a || 0 !== l) return t;
+						const d = s.getBlockMap(),
 							u = i.getBlockMap();
-						if (d.size >= u.size) return e;
-						const p = r.getBlockAfter(n.getAnchorKey()),
-							h = i.getBlockAfter(s.getEndKey());
-						if (p && p !== h) return e;
+						if (d.size >= u.size) return t;
+						const p = s.getBlockAfter(n.getAnchorKey()),
+							h = i.getBlockAfter(r.getEndKey());
+						if (p && p !== h) return t;
 						const m = c.merge({
-								type: R.n,
+								type: w.n,
 								data: Object(P.Map)({})
 							}),
-							g = r.merge({
+							g = s.merge({
 								blockMap: d.set(c.getKey(), m)
 							});
-						return o.EditorState.set(e, {
+						return o.EditorState.set(t, {
 							currentContent: g
 						})
-					})(e, t) : ((e, t) => {
-						const n = e.getSelection();
-						if (n.isCollapsed()) return e;
-						if (t.getSelection() === n) return e;
-						if (n.getFocusKey() === n.getAnchorKey()) return e;
-						const s = e.getCurrentContent(),
-							r = s.getBlockForKey(n.getAnchorKey()),
-							i = s.getBlockForKey(n.getFocusKey()),
-							[c, a] = Object(Q.e)(s, r, i);
-						if (!c && !a) return e;
-						let l = e;
+					})(t, e) : ((t, e) => {
+						const n = t.getSelection();
+						if (n.isCollapsed()) return t;
+						if (e.getSelection() === n) return t;
+						if (n.getFocusKey() === n.getAnchorKey()) return t;
+						const r = t.getCurrentContent(),
+							s = r.getBlockForKey(n.getAnchorKey()),
+							i = r.getBlockForKey(n.getFocusKey()),
+							[c, a] = Object(Q.e)(r, s, i);
+						if (!c && !a) return t;
+						let l = t;
 						if (c !== a) {
-							const t = n.getIsBackward(),
-								s = Object(Q.o)(n, c ? xn(c.blocks, !t) : null, a ? xn(a.blocks, t) : null, t);
-							n !== s && (l = o.EditorState.forceSelection(e, s))
+							const e = n.getIsBackward(),
+								r = Object(Q.o)(n, c ? Cn(c.blocks, !e) : null, a ? Cn(a.blocks, e) : null, e);
+							n !== r && (l = o.EditorState.forceSelection(t, r))
 						} else if (c && a && c === a) {
-							const t = Object(Q.g)(r),
+							const e = Object(Q.g)(s),
 								c = Object(Q.g)(i),
-								d = s.getBlocksAsArray(),
+								d = r.getBlocksAsArray(),
 								{
 									start: u,
 									blocks: p
@@ -4189,97 +3998,97 @@
 								h = p[0],
 								m = Object(Q.g)(h);
 							if (0 !== m.colIndex || 0 !== m.rowIndex) throw new Error("First table block must always has [0, 0] coordinate!");
-							const g = Object(Q.b)(i, r) < 0,
-								f = Object(Q.k)(t, c),
+							const g = Object(Q.b)(i, s) < 0,
+								f = Object(Q.k)(e, c),
 								b = [],
 								y = [];
-							Sn()(p, e => {
-								const t = Object(Q.g)(e);
-								f(t.rowIndex, t.colIndex) ? b.push(e) : e !== h && y.push(e)
+							Sn()(p, t => {
+								const e = Object(Q.g)(t);
+								f(e.rowIndex, e.colIndex) ? b.push(t) : t !== h && y.push(t)
 							});
 							const E = b[0] === h;
 							b.sort(Q.b);
 							const S = [...d.slice(0, u), ...E ? [] : [h], ...b, ...y, ...d.slice(u + p.length)],
-								x = xn(b, !g),
-								C = xn(b, g),
-								O = Object(Q.o)(n, x, C, g),
-								k = s.merge({
+								C = Cn(b, !g),
+								x = Cn(b, g),
+								O = Object(Q.o)(n, C, x, g),
+								k = r.merge({
 									blockMap: o.BlockMapBuilder.createFromArray(S),
 									selectionAfter: O
 								});
-							l = o.EditorState.set(e, {
+							l = o.EditorState.set(t, {
 								currentContent: k
 							}), O !== n && (l = o.EditorState.forceSelection(l, O))
 						}
 						return l
-					})(e, t)
+					})(t, e)
 				},
 				On = n("./src/reddit/components/RichTextEditor/table/Renderer/index.m.less"),
 				kn = n.n(On);
 			const Tn = E.a.div("Cell", kn.a),
 				vn = E.a.div("Row", kn.a),
 				jn = E.a.div("Table", kn.a),
-				_n = (e, t) => {
-					if (!t || !e.contains(t)) return;
-					let n = t;
-					for (; n && n !== e;) {
+				Rn = (t, e) => {
+					if (!e || !t.contains(e)) return;
+					let n = e;
+					for (; n && n !== t;) {
 						if (n instanceof HTMLElement && n.hasAttribute("data-row")) return n;
 						n.parentElement && (n = n.parentElement)
 					}
 				},
-				Rn = function(e) {
-					let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : 10,
-						n = e,
-						o = t;
+				wn = function(t) {
+					let e = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : 10,
+						n = t,
+						o = e;
 					for (; n && o > 0;) {
 						if (n instanceof HTMLElement && n.dataset.table) return n;
 						n.parentElement && (n = n.parentElement), o--
 					}
 				},
-				wn = e => {
+				Bn = t => {
 					const {
-						dataset: t
-					} = e;
-					if ("string" == typeof t.row && "string" == typeof t.col) return {
-						rowIndex: +t.row,
-						colIndex: +t.col
+						dataset: e
+					} = t;
+					if ("string" == typeof e.row && "string" == typeof e.col) return {
+						rowIndex: +e.row,
+						colIndex: +e.col
 					}
 				},
-				In = e => {
-					const t = window.getSelection(),
+				In = t => {
+					const e = window.getSelection(),
 						{
 							focusNode: n,
 							anchorNode: o,
-							rangeCount: s
-						} = t;
-					if (n !== o && s && e) {
-						const n = t.getRangeAt(0);
-						return Object(U.h)(n, e) && !e.contains(n.commonAncestorContainer)
+							rangeCount: r
+						} = e;
+					if (n !== o && r && t) {
+						const n = e.getRangeAt(0);
+						return Object(U.h)(n, t) && !t.contains(n.commonAncestorContainer)
 					}
 					return !1
 				},
-				Bn = e => {
-					const t = p.a.Children.toArray(e),
-						n = Object(D.e)(t[0]),
+				_n = t => {
+					const e = p.a.Children.toArray(t),
+						n = Object(D.e)(e[0]),
 						{
 							selection: o,
-							contentState: s,
-							block: r
+							contentState: r,
+							block: s
 						} = n.props,
 						{
 							colCount: i
-						} = Object(Q.g)(r);
-					t.sort((e, t) => Object(Q.b)(Object(D.c)(e), Object(D.c)(t)));
-					const c = W()(t, i);
+						} = Object(Q.g)(s);
+					e.sort((t, e) => Object(Q.b)(Object(D.c)(t), Object(D.c)(e)));
+					const c = W()(e, i);
 					let a, l, d = !1;
 					if (o.getAnchorKey() !== o.getFocusKey()) {
-						const e = s.getBlocksAsArray(),
-							n = s.getBlockForKey(o.getStartKey()),
-							i = s.getBlockForKey(o.getEndKey()),
-							c = e.indexOf(n),
-							u = e.indexOf(i),
-							p = e.indexOf(r),
-							h = p + t.length - 1;
+						const t = r.getBlocksAsArray(),
+							n = r.getBlockForKey(o.getStartKey()),
+							i = r.getBlockForKey(o.getEndKey()),
+							c = t.indexOf(n),
+							u = t.indexOf(i),
+							p = t.indexOf(s),
+							h = p + e.length - 1;
 						c < p && p < u || c < h && h < u ? d = !0 : p <= c && u <= h && (l = Object(Q.g)(o.getIsBackward() ? i : n), a = Object(Q.g)(o.getIsBackward() ? n : i))
 					}
 					return {
@@ -4290,34 +4099,34 @@
 					}
 				};
 			class An extends p.a.Component {
-				constructor(e) {
-					super(e), this.tableElem = null, this.onMouseDown = e => {
-						if (!this.tableElem || e.nativeEvent.detail < 2) return;
-						const t = window.getSelection(),
-							n = t.rangeCount ? t.getRangeAt(0) : null,
-							o = _n(this.tableElem, t.focusNode);
+				constructor(t) {
+					super(t), this.tableElem = null, this.onMouseDown = t => {
+						if (!this.tableElem || t.nativeEvent.detail < 2) return;
+						const e = window.getSelection(),
+							n = e.rangeCount ? e.getRangeAt(0) : null,
+							o = Rn(this.tableElem, e.focusNode);
 						if (n && o)
-							if (2 === e.nativeEvent.detail && t.isCollapsed) {
-								const s = n.cloneRange();
-								s.setEndAfter(o), s.toString() || (e.preventDefault(), t.selectAllChildren(o))
-							} else e.nativeEvent.detail >= 3 && (t.selectAllChildren(o), e.preventDefault())
+							if (2 === t.nativeEvent.detail && e.isCollapsed) {
+								const r = n.cloneRange();
+								r.setEndAfter(o), r.toString() || (t.preventDefault(), e.selectAllChildren(o))
+							} else t.nativeEvent.detail >= 3 && (e.selectAllChildren(o), t.preventDefault())
 					}, this.onNativeSelectionChange = () => {
-						const e = this.tableElem;
-						if (!e) return;
-						const t = window.getSelection();
-						if (t.anchorNode === t.focusNode) return void this.resetSelection();
-						const n = _n(e, t.anchorNode),
-							o = _n(e, t.focusNode);
-						n && n === o ? this.resetSelection() : n && o ? this.setCellsRange(n, o) : n || o ? this.selectWholeTable() : In(e) ? this.selectWholeTable() : this.resetSelection()
+						const t = this.tableElem;
+						if (!t) return;
+						const e = window.getSelection();
+						if (e.anchorNode === e.focusNode) return void this.resetSelection();
+						const n = Rn(t, e.anchorNode),
+							o = Rn(t, e.focusNode);
+						n && n === o ? this.resetSelection() : n && o ? this.setCellsRange(n, o) : n || o ? this.selectWholeTable() : In(t) ? this.selectWholeTable() : this.resetSelection()
 					}, this.resetSelection = () => {
 						(this.state.anchorCell || this.state.focusCell || this.state.isSelectWholeTable) && this.setState({
 							isSelectWholeTable: !1,
 							focusCell: void 0,
 							anchorCell: void 0
 						})
-					}, this.setCellsRange = (e, t) => {
-						const n = wn(t),
-							o = wn(e);
+					}, this.setCellsRange = (t, e) => {
+						const n = Bn(e),
+							o = Bn(t);
 						Object(Q.h)(n, this.state.focusCell) && Object(Q.h)(o, this.state.anchorCell) && !this.state.isSelectWholeTable || this.setState({
 							focusCell: n,
 							anchorCell: o,
@@ -4328,7 +4137,7 @@
 							focusCell: void 0,
 							isSelectWholeTable: !0
 						})
-					}, this.state = Bn(e.children)
+					}, this.state = _n(t.children)
 				}
 				componentDidMount() {
 					document.addEventListener("selectionchange", this.onNativeSelectionChange)
@@ -4336,40 +4145,40 @@
 				componentWillUnmount() {
 					document.removeEventListener("selectionchange", this.onNativeSelectionChange)
 				}
-				UNSAFE_componentWillReceiveProps(e) {
-					e.children !== this.props.children && this.setState(Bn(e.children))
+				UNSAFE_componentWillReceiveProps(t) {
+					t.children !== this.props.children && this.setState(_n(t.children))
 				}
 				render() {
 					const {
-						rows: e,
-						anchorCell: t,
+						rows: t,
+						anchorCell: e,
 						focusCell: n,
 						isSelectWholeTable: o
 					} = this.state;
-					let s;
-					o ? s = (e, t) => !0 : t && n && !Object(Q.h)(t, n) && (s = Object(Q.k)(t, n));
-					const r = e[0].map(e => Object(Q.g)(Object(D.e)(e).props.block).alignment),
-						i = e.map((e, t) => p.a.createElement(vn, {
-							key: t
-						}, e.map((e, n) => p.a.createElement(Tn, {
-							"data-row": t,
+					let r;
+					o ? r = (t, e) => !0 : e && n && !Object(Q.h)(e, n) && (r = Object(Q.k)(e, n));
+					const s = t[0].map(t => Object(Q.g)(Object(D.e)(t).props.block).alignment),
+						i = t.map((t, e) => p.a.createElement(vn, {
+							key: e
+						}, t.map((t, n) => p.a.createElement(Tn, {
+							"data-row": e,
 							"data-col": n,
-							"data-selected": !!s && s(t, n),
+							"data-selected": !!r && r(e, n),
 							key: n,
 							style: {
-								"--cell-text-alignment": r[n] ? Q.a[r[n]] : void 0
+								"--cell-text-alignment": s[n] ? Q.a[s[n]] : void 0
 							}
-						}, e))));
+						}, t))));
 					return p.a.createElement(jn, {
-						className: s ? kn.a.isFakeSelectionActive : void 0,
-						innerRef: e => this.tableElem = e,
+						className: r ? kn.a.isFakeSelectionActive : void 0,
+						innerRef: t => this.tableElem = t,
 						onMouseDown: this.onMouseDown,
 						"data-table": !0
 					}, i)
 				}
 			}
 			const Kn = Object(P.Map)({
-				[R.l]: {
+				[w.l]: {
 					element: "div",
 					wrapper: p.a.createElement(An, null)
 				}
@@ -4383,67 +4192,67 @@
 				Un = n("./src/reddit/icons/svgs/FormattingDeleteRow/index.tsx"),
 				Hn = n("./src/reddit/icons/svgs/FormattingInsertRow/index.tsx"),
 				Wn = n("./src/reddit/models/RichTextJson/index.ts");
-			var zn = function(e) {
+			var zn = function(t) {
 				arguments.length > 1 && void 0 !== arguments[1] && arguments[1];
-				const t = e.getSelection(),
-					n = e.getCurrentContent(),
-					s = n.getBlockForKey(t.getAnchorKey()),
-					r = n.getBlockForKey(t.getFocusKey()),
-					[i, c] = Object(Q.e)(n, s, r);
+				const e = t.getSelection(),
+					n = t.getCurrentContent(),
+					r = n.getBlockForKey(e.getAnchorKey()),
+					s = n.getBlockForKey(e.getFocusKey()),
+					[i, c] = Object(Q.e)(n, r, s);
 				if (i && i === c) {
 					const {
 						blocks: n
 					} = i;
 					n.sort(Q.b);
-					const s = Object(Q.o)(t, n[0], X()(n));
-					return ne(o.EditorState.set(e, {
-						selection: s
+					const r = Object(Q.o)(e, n[0], X()(n));
+					return nt(o.EditorState.set(t, {
+						selection: r
 					}), "rows")
 				}
 			};
-			var qn = (e, t) => {
-					const n = e.getSelection(),
-						s = e.getCurrentContent(),
-						r = s.getBlockForKey(n.getAnchorKey()),
-						i = s.getBlockForKey(n.getFocusKey()),
-						[c, a] = Object(Q.e)(s, r, i);
-					if (!c || c !== a) return e;
-					const l = Object(Q.g)(r),
+			var qn = (t, e) => {
+					const n = t.getSelection(),
+						r = t.getCurrentContent(),
+						s = r.getBlockForKey(n.getAnchorKey()),
+						i = r.getBlockForKey(n.getFocusKey()),
+						[c, a] = Object(Q.e)(r, s, i);
+					if (!c || c !== a) return t;
+					const l = Object(Q.g)(s),
 						d = Object(Q.g)(i),
 						{
 							minCol: u,
 							maxCol: p
 						} = Object(Q.f)(l, d),
-						h = c.blocks.map(e => {
+						h = c.blocks.map(t => {
 							const {
 								colIndex: n
-							} = Object(Q.g)(e);
-							return u <= n && n <= p ? Object(Q.m)(e, {
-								alignment: t
-							}) : e
+							} = Object(Q.g)(t);
+							return u <= n && n <= p ? Object(Q.m)(t, {
+								alignment: e
+							}) : t
 						}),
-						m = s.getBlockMap(),
-						g = s.merge({
+						m = r.getBlockMap(),
+						g = r.merge({
 							blockMap: m.merge(o.BlockMapBuilder.createFromArray(h)),
 							selectionAfter: n,
 							selectionBefore: n
 						});
-					return o.EditorState.push(e, g, Z.b)
+					return o.EditorState.push(t, g, Z.b)
 				},
 				Vn = n("./src/reddit/components/RichTextEditor/table/Toolbar/index.m.less"),
 				Gn = n.n(Vn);
 
 			function Yn() {
-				return (Yn = Object.assign || function(e) {
-					for (var t = 1; t < arguments.length; t++) {
-						var n = arguments[t];
-						for (var o in n) Object.prototype.hasOwnProperty.call(n, o) && (e[o] = n[o])
+				return (Yn = Object.assign || function(t) {
+					for (var e = 1; e < arguments.length; e++) {
+						var n = arguments[e];
+						for (var o in n) Object.prototype.hasOwnProperty.call(n, o) && (t[o] = n[o])
 					}
-					return e
+					return t
 				}).apply(this, arguments)
 			}
-			const Qn = (e, t) => n => p.a.createElement(e, Yn({}, t, n)),
-				Jn = Object(Ut.f)(Hn.a),
+			const Qn = (t, e) => n => p.a.createElement(t, Yn({}, e, n)),
+				Jn = Object(Ue.f)(Hn.a),
 				Xn = Qn(Jn, {
 					orientation: "up"
 				}),
@@ -4453,82 +4262,82 @@
 				$n = Qn(Jn, {
 					orientation: "left"
 				}),
-				eo = Object(Ut.f)(Un.a),
-				to = Qn(eo, {
+				to = Object(Ue.f)(Un.a),
+				eo = Qn(to, {
 					orientation: "vertical"
 				}),
-				no = Object(Ut.f)(Dn.a),
-				oo = Object(Ut.f)(Fn.a),
-				so = Object(Ut.f)(Pn.a),
-				ro = Object(Ut.f)(Nt.b),
-				io = E.a.wrapped(Dt.a, "ToolbarContent", Gn.a),
-				co = e => p.a.createElement(Pt.a, Yn({}, e, {
-					className: Object(b.a)(Gn.a.formatterButton, e.className),
+				no = Object(Ue.f)(Dn.a),
+				oo = Object(Ue.f)(Fn.a),
+				ro = Object(Ue.f)(Pn.a),
+				so = Object(Ue.f)(Ne.b),
+				io = E.a.wrapped(De.a, "ToolbarContent", Gn.a),
+				co = t => p.a.createElement(Pe.a, Yn({}, t, {
+					className: Object(b.a)(Gn.a.formatterButton, t.className),
 					tooltipContentClass: Gn.a.tooltip
 				}));
-			var ao = e => {
+			var ao = t => {
 					const {
-						editorState: t,
+						editorState: e,
 						onChange: n
-					} = e;
+					} = t;
 					return p.a.createElement(io, null, p.a.createElement(co, {
 						Icon: oo,
-						onClick: () => n(qn(t, Wn.e)),
-						tooltip: s.fbt._("Left align", null, {
+						onClick: () => n(qn(e, Wn.e)),
+						tooltip: r.fbt._("Left align", null, {
 							hk: "45eAc"
 						})
 					}), p.a.createElement(co, {
 						Icon: no,
-						onClick: () => n(qn(t, Wn.d)),
-						tooltip: s.fbt._("Center align", null, {
+						onClick: () => n(qn(e, Wn.d)),
+						tooltip: r.fbt._("Center align", null, {
 							hk: "4aAfyf"
 						})
 					}), p.a.createElement(co, {
-						Icon: so,
-						onClick: () => n(qn(t, Wn.f)),
-						tooltip: s.fbt._("Right align", null, {
+						Icon: ro,
+						onClick: () => n(qn(e, Wn.f)),
+						tooltip: r.fbt._("Right align", null, {
 							hk: "3oHuXw"
 						})
-					}), p.a.createElement(Ft.c, null), p.a.createElement(co, {
+					}), p.a.createElement(Fe.c, null), p.a.createElement(co, {
 						Icon: $n,
-						onClick: () => n(ln(t, "columns", "before")),
-						tooltip: s.fbt._("Insert column before", null, {
+						onClick: () => n(ln(e, "columns", "before")),
+						tooltip: r.fbt._("Insert column before", null, {
 							hk: "11EB6Q"
 						})
 					}), p.a.createElement(co, {
 						Icon: Zn,
-						onClick: () => n(ln(t, "columns", "after")),
-						tooltip: s.fbt._("Insert column after", null, {
+						onClick: () => n(ln(e, "columns", "after")),
+						tooltip: r.fbt._("Insert column after", null, {
 							hk: "Ddlpl"
 						})
 					}), p.a.createElement(co, {
-						Icon: to,
-						onClick: () => n(ne(t, "columns")),
-						tooltip: s.fbt._("Delete column", null, {
+						Icon: eo,
+						onClick: () => n(nt(e, "columns")),
+						tooltip: r.fbt._("Delete column", null, {
 							hk: "3HaQQD"
 						})
-					}), p.a.createElement(Ft.c, null), p.a.createElement(co, {
+					}), p.a.createElement(Fe.c, null), p.a.createElement(co, {
 						Icon: Xn,
-						onClick: () => n(ln(t, "rows", "before")),
-						tooltip: s.fbt._("Insert row above", null, {
+						onClick: () => n(ln(e, "rows", "before")),
+						tooltip: r.fbt._("Insert row above", null, {
 							hk: "1HIgn"
 						})
 					}), p.a.createElement(co, {
 						Icon: Jn,
-						onClick: () => n(ln(t, "rows", "after")),
-						tooltip: s.fbt._("Insert row below", null, {
+						onClick: () => n(ln(e, "rows", "after")),
+						tooltip: r.fbt._("Insert row below", null, {
 							hk: "3t7ZU"
 						})
 					}), p.a.createElement(co, {
-						Icon: eo,
-						onClick: () => n(ne(t, "rows")),
-						tooltip: s.fbt._("Delete row", null, {
+						Icon: to,
+						onClick: () => n(nt(e, "rows")),
+						tooltip: r.fbt._("Delete row", null, {
 							hk: "3yJYqS"
 						})
-					}), p.a.createElement(Ft.c, null), p.a.createElement(co, {
-						Icon: ro,
-						onClick: () => n(zn(t) || t),
-						tooltip: s.fbt._("Delete table", null, {
+					}), p.a.createElement(Fe.c, null), p.a.createElement(co, {
+						Icon: so,
+						onClick: () => n(zn(e) || e),
+						tooltip: r.fbt._("Delete table", null, {
 							hk: "1fK0KA"
 						})
 					}))
@@ -4538,47 +4347,47 @@
 			const po = 20,
 				ho = E.a.div("ActionButton", uo.a),
 				mo = E.a.div("ToolbarWrapper", uo.a),
-				go = e => {
-					const t = {};
-					if (!e || !document.documentElement) return t;
-					const n = e.left - 185,
-						o = e.left + 185 - document.documentElement.clientWidth;
-					return n < 0 ? t.left = -n + po + 2 : o > 0 && (t.left = -o + po - 2), t
+				go = t => {
+					const e = {};
+					if (!t || !document.documentElement) return e;
+					const n = t.left - 185,
+						o = t.left + 185 - document.documentElement.clientWidth;
+					return n < 0 ? e.left = -n + po + 2 : o > 0 && (e.left = -o + po - 2), e
 				},
-				fo = e => {
-					e.preventDefault(), e.stopPropagation()
+				fo = t => {
+					t.preventDefault(), t.stopPropagation()
 				};
 			class bo extends u.Component {
-				constructor(e) {
-					super(e), this.containerElem = null, this.setContainerRef = e => this.containerElem = e, this.onResize = e => {
+				constructor(t) {
+					super(t), this.containerElem = null, this.setContainerRef = t => this.containerElem = t, this.onResize = t => {
 						this.hideToolbar(), this.state.tooltipPosition && this.updateForCurrentSelection()
-					}, this.onDocumentClick = e => {
-						this.state.isToolbarActive && this.containerElem && (this.containerElem.contains(e.target) || this.hideToolbar())
+					}, this.onDocumentClick = t => {
+						this.state.isToolbarActive && this.containerElem && (this.containerElem.contains(t.target) || this.hideToolbar())
 					}, this.onNativeSelectionChange = () => {
 						this.updateForCurrentSelection()
 					}, this.updateForCurrentSelection = () => {
-						const e = window.getSelection();
-						if (!e.rangeCount) return void this.hideActionButton();
-						const t = e.getRangeAt(0).commonAncestorContainer,
+						const t = window.getSelection();
+						if (!t.rangeCount) return void this.hideActionButton();
+						const e = t.getRangeAt(0).commonAncestorContainer,
 							{
 								rteDomRef: n
 							} = this.props;
-						if (!n.contains(t)) return void this.hideActionButton();
-						const o = Rn(t);
+						if (!n.contains(e)) return void this.hideActionButton();
+						const o = wn(e);
 						if (!o) return void this.hideActionButton();
-						const s = _n(o, e.anchorNode);
-						if (!s) return void this.hideActionButton();
-						const r = _n(o, e.focusNode);
-						r ? this.updateActionButtonPosition(s, r) : this.hideActionButton()
-					}, this.updateActionButtonPosition = (e, t) => {
-						const n = e.getBoundingClientRect(),
-							o = t.getBoundingClientRect(),
-							s = {
+						const r = Rn(o, t.anchorNode);
+						if (!r) return void this.hideActionButton();
+						const s = Rn(o, t.focusNode);
+						s ? this.updateActionButtonPosition(r, s) : this.hideActionButton()
+					}, this.updateActionButtonPosition = (t, e) => {
+						const n = t.getBoundingClientRect(),
+							o = e.getBoundingClientRect(),
+							r = {
 								top: Math.min(n.top, o.top),
 								left: Math.max(n.right, o.right) - po
 							};
-						Ln()(this.state.tooltipPosition, s) || this.setState({
-							tooltipPosition: s
+						Ln()(this.state.tooltipPosition, r) || this.setState({
+							tooltipPosition: r
 						}), this.hideToolbar()
 					}, this.hideActionButton = () => {
 						this.hideToolbar(), this.state.tooltipPosition && this.setState({
@@ -4588,10 +4397,10 @@
 						this.state.isToolbarActive && this.setState({
 							isToolbarActive: !1
 						})
-					}, this.onActionButtonClick = e => {
-						this.setState(e => ({
-							isToolbarActive: !e.isToolbarActive
-						})), fo(e)
+					}, this.onActionButtonClick = t => {
+						this.setState(t => ({
+							isToolbarActive: !t.isToolbarActive
+						})), fo(t)
 					}, this.state = {
 						isToolbarActive: !1,
 						tooltipPosition: null
@@ -4601,37 +4410,37 @@
 				}
 				componentDidMount() {
 					const {
-						onSetApi: e
+						onSetApi: t
 					} = this.props;
-					document.addEventListener("selectionchange", this.onNativeSelectionChange), document.addEventListener("click", this.onDocumentClick), window.addEventListener("resize", this.onResize), e && e(this.api)
+					document.addEventListener("selectionchange", this.onNativeSelectionChange), document.addEventListener("click", this.onDocumentClick), window.addEventListener("resize", this.onResize), t && t(this.api)
 				}
 				componentWillUnmount() {
 					const {
-						onSetApi: e
+						onSetApi: t
 					} = this.props;
-					document.removeEventListener("selectionchange", this.onNativeSelectionChange), document.removeEventListener("click", this.onDocumentClick), window.removeEventListener("resize", this.onResize), e && e(null)
+					document.removeEventListener("selectionchange", this.onNativeSelectionChange), document.removeEventListener("click", this.onDocumentClick), window.removeEventListener("resize", this.onResize), t && t(null)
 				}
-				UNSAFE_componentWillReceiveProps(e) {
-					const t = e.editorState.getSelection(),
+				UNSAFE_componentWillReceiveProps(t) {
+					const e = t.editorState.getSelection(),
 						n = this.props.editorState.getSelection();
-					t.getHasFocus() && Object(R.v)(o.RichUtils.getCurrentBlockType(e.editorState)) ? t !== n && this.hideToolbar() : this.hideActionButton()
+					e.getHasFocus() && Object(w.v)(o.RichUtils.getCurrentBlockType(t.editorState)) ? e !== n && this.hideToolbar() : this.hideActionButton()
 				}
 				render() {
-					const e = !this.props.readOnly && this.state.isToolbarActive,
+					const t = !this.props.readOnly && this.state.isToolbarActive,
 						{
-							tooltipPosition: t
+							tooltipPosition: e
 						} = this.state;
 					return p.a.createElement("div", {
 						ref: this.setContainerRef
 					}, p.a.createElement(Nn.b, {
-						targetPosition: t
+						targetPosition: e
 					}, p.a.createElement(ho, {
-						className: e ? uo.a.isPressed : void 0,
+						className: t ? uo.a.isPressed : void 0,
 						onClick: this.onActionButtonClick,
 						onMouseDown: fo,
 						onMouseMove: fo
-					}, e ? p.a.createElement(mo, {
-						style: go(t)
+					}, t ? p.a.createElement(mo, {
+						style: go(e)
 					}, p.a.createElement(ao, {
 						onChange: this.props.onChange,
 						editorState: this.props.editorState
@@ -4642,43 +4451,43 @@
 			n("./node_modules/core-js/modules/web.dom.iterable.js");
 
 			function Eo() {
-				return (Eo = Object.assign || function(e) {
-					for (var t = 1; t < arguments.length; t++) {
-						var n = arguments[t];
-						for (var o in n) Object.prototype.hasOwnProperty.call(n, o) && (e[o] = n[o])
+				return (Eo = Object.assign || function(t) {
+					for (var e = 1; e < arguments.length; e++) {
+						var n = arguments[e];
+						for (var o in n) Object.prototype.hasOwnProperty.call(n, o) && (t[o] = n[o])
 					}
-					return e
+					return t
 				}).apply(this, arguments)
 			}
 
 			function So() {
 				return new Map
 			}
-			const xo = p.a.createContext(So());
+			const Co = p.a.createContext(So());
 
-			function Co(e) {
-				class t extends p.a.Component {
+			function xo(t) {
+				class e extends p.a.Component {
 					constructor() {
-						super(...arguments), this.elementRef = null, this.updateElementRef = e => {
+						super(...arguments), this.elementRef = null, this.updateElementRef = t => {
 							const {
-								registry: t
+								registry: e
 							} = this.props;
-							this.elementRef = e, e ? t.set(this.props.entityKey, e) : t.delete(this.props.entityKey)
+							this.elementRef = t, t ? e.set(this.props.entityKey, t) : e.delete(this.props.entityKey)
 						}
 					}
-					componentWillReceiveProps(e) {
+					componentWillReceiveProps(t) {
 						const {
-							registry: t
+							registry: e
 						} = this.props;
-						this.props.entityKey !== e.entityKey && this.elementRef && (t.get(this.props.entityKey) === this.elementRef && t.delete(this.props.entityKey), t.set(e.entityKey, this.elementRef))
+						this.props.entityKey !== t.entityKey && this.elementRef && (e.get(this.props.entityKey) === this.elementRef && e.delete(this.props.entityKey), e.set(t.entityKey, this.elementRef))
 					}
 					render() {
 						return p.a.createElement("span", {
 							ref: this.updateElementRef
-						}, p.a.createElement(e, this.props))
+						}, p.a.createElement(t, this.props))
 					}
 				}
-				return e => p.a.createElement(xo.Consumer, null, n => p.a.createElement(t, Eo({}, e, {
+				return t => p.a.createElement(Co.Consumer, null, n => p.a.createElement(e, Eo({}, t, {
 					registry: n
 				})))
 			}
@@ -4687,45 +4496,45 @@
 				To = n.n(ko);
 			const vo = {
 					strategy: Oo.e,
-					component: Co(e => {
+					component: xo(t => {
 						const {
-							contentState: t
-						} = e, n = Object(Oo.i)(t), o = t.getEntity(e.entityKey), {
-							id: s,
-							emoji: r,
+							contentState: e
+						} = t, n = Object(Oo.i)(e), o = e.getEntity(t.entityKey), {
+							id: r,
+							emoji: s,
 							sticker: i
-						} = o.getData(), c = n ? i : r;
+						} = o.getData(), c = n ? i : s;
 						return p.a.createElement("span", {
 							className: Object(b.a)(To.a.emote, {
 								[To.a.sticker]: n
 							}),
-							title: `:${s}:`,
+							title: `:${r}:`,
 							style: {
 								backgroundImage: `url(${c.path})`,
 								width: c.x
 							}
-						}, e.children)
+						}, t.children)
 					})
 				},
 				jo = () => vo;
-			var _o = n("./src/reddit/selectors/gold/enabledFeatures.ts"),
-				Ro = n("./src/reddit/selectors/gold/powerups/index.ts"),
-				wo = n("./src/reddit/components/RichTextEditor/emotes/Powerups/tooltipAsync.ts"),
+			var Ro = n("./src/reddit/selectors/gold/enabledFeatures.ts"),
+				wo = n("./src/reddit/selectors/gold/powerups/index.ts"),
+				Bo = n("./src/reddit/components/RichTextEditor/emotes/Powerups/tooltipAsync.ts"),
 				Io = n("./src/higherOrderComponents/makeAsync.tsx"),
-				Bo = Object(Io.a)({
+				_o = Object(Io.a)({
 					ErrorComponent: () => null,
 					LoadingComponent: () => null,
-					getComponent: () => n.e("SpecialMembershipsEmotesTooltip").then(n.bind(null, "./src/reddit/components/RichTextEditor/emotes/SpecialMemberships/tooltip.tsx")).then(e => e.default)
+					getComponent: () => n.e("SpecialMembershipsEmotesTooltip").then(n.bind(null, "./src/reddit/components/RichTextEditor/emotes/SpecialMemberships/tooltip.tsx")).then(t => t.default)
 				});
-			var Ao = e => {
+			var Ao = t => {
 				const {
-					subreddit: t
-				} = e, n = t.id, o = Object(h.e)(e => Object(_o.b)(e, {
+					subreddit: e
+				} = t, n = e.id, o = Object(h.e)(t => Object(Ro.b)(t, {
 					subredditId: n
 				}));
-				return Object(h.e)(e => Object(Ro.g)(e, {
+				return Object(h.e)(t => Object(wo.b)(t, {
 					subredditId: n
-				})) ? p.a.createElement(wo.a, e) : p.a.createElement(p.a.Fragment, null, o && p.a.createElement(Bo, e))
+				})) ? p.a.createElement(Bo.a, t) : p.a.createElement(p.a.Fragment, null, o && p.a.createElement(_o, t))
 			};
 			const Ko = new Set([F.a.LINK]);
 			var Mo = n("./src/reddit/components/RichTextEditor/entity/link/helpers.tsx"),
@@ -4734,359 +4543,359 @@
 			const Do = E.a.a("RegularLink", No.a),
 				Fo = {
 					strategy: Mo.a,
-					component: Co(e => {
-						const t = e.contentState.getEntity(e.entityKey),
+					component: xo(t => {
+						const e = t.contentState.getEntity(t.entityKey),
 							{
 								url: n
-							} = t.getData();
+							} = e.getData();
 						return p.a.createElement(Do, {
 							href: n
-						}, e.children)
+						}, t.children)
 					})
 				},
 				Po = () => Fo;
 			var Uo = n("./src/lib/linkMatchers/index.ts");
-			const Ho = (e, t) => {
-					if (t.getType() === R.f) return [];
-					return (e.match(t.getText()) || []).filter(e => ((e, t) => {
+			const Ho = (t, e) => {
+					if (e.getType() === w.f) return [];
+					return (t.match(e.getText()) || []).filter(t => ((t, e) => {
 						let {
 							index: n,
 							lastIndex: o
-						} = t;
-						for (let s = n; s < o; s++) {
-							if (e.getInlineStyleAt(s).contains(R.k.MONOSPACE)) return !1
+						} = e;
+						for (let r = n; r < o; r++) {
+							if (t.getInlineStyleAt(r).contains(w.k.MONOSPACE)) return !1
 						}
 						return !0
-					})(t, e))
+					})(e, t))
 				},
-				Wo = (e, t, n, s, r, i) => {
-					const c = e.getBlockForKey(t),
-						a = o.SelectionState.createEmpty(t),
+				Wo = (t, e, n, r, s, i) => {
+					const c = t.getBlockForKey(e),
+						a = o.SelectionState.createEmpty(e),
 						l = [],
 						d = new Set;
-					let u = e;
+					let u = t;
 					const p = n === F.a.USER_MENTION ? F.a.USER_LINK : n,
-						h = (e, t, o) => {
-							let s = null;
-							for (let r = e; r < t; r++) {
-								const e = c.getEntityAt(r),
-									t = e && u.getEntity(e);
-								if (t) {
-									if (t.getType() !== n) return;
-									s || d.has(e) || (s = e)
+						h = (t, e, o) => {
+							let r = null;
+							for (let s = t; s < e; s++) {
+								const t = c.getEntityAt(s),
+									e = t && u.getEntity(t);
+								if (e) {
+									if (e.getType() !== n) return;
+									r || d.has(t) || (r = t)
 								}
 							}
-							if (s) {
-								u.getEntity(s).getData().url !== o && (u = u.mergeEntityData(s, {
+							if (r) {
+								u.getEntity(r).getData().url !== o && (u = u.mergeEntityData(r, {
 									url: o
 								}))
 							}
-							return s || (e => (u = u.createEntity(p, "MUTABLE", {
-								url: e
+							return r || (t => (u = u.createEntity(p, "MUTABLE", {
+								url: t
 							})).getLastCreatedEntityKey())(o)
 						},
-						m = (e, t, n) => {
-							const s = a.merge({
-								anchorOffset: e,
-								focusOffset: t
+						m = (t, e, n) => {
+							const r = a.merge({
+								anchorOffset: t,
+								focusOffset: e
 							});
-							u = o.Modifier.applyEntity(u, s, n)
+							u = o.Modifier.applyEntity(u, r, n)
 						},
-						g = (e, t) => m(e, t, null),
-						f = u.getBlockForKey(t);
-					Ho(s, f).forEach((e, s) => {
+						g = (t, e) => m(t, e, null),
+						f = u.getBlockForKey(e);
+					Ho(r, f).forEach((t, r) => {
 						let {
 							index: c,
 							lastIndex: p,
 							url: g
-						} = e;
+						} = t;
 						const f = h(c, p, g);
-						f && (n === F.a.USER_MENTION ? (((e, n, s) => {
-							const c = u && u.getBlockForKey(t),
-								l = c && c.getText().substr(e, n);
+						f && (n === F.a.USER_MENTION ? (((t, n, r) => {
+							const c = u && u.getBlockForKey(e),
+								l = c && c.getText().substr(t, n);
 							if (l && l.replace(S.d.mention, "") && l.startsWith(S.d.mention) && S.c.test(l.replace(S.d.mention, ""))) {
-								const t = a.merge({
-										anchorOffset: e,
-										focusOffset: e + S.d.mention.length
+								const e = a.merge({
+										anchorOffset: t,
+										focusOffset: t + S.d.mention.length
 									}),
 									c = a.merge({
-										anchorOffset: e,
+										anchorOffset: t,
 										focusOffset: n + S.d.mention.length
 									}),
 									l = a.merge({
 										anchorOffset: n + S.d.mention.length,
 										focusOffset: n + S.d.mention.length
 									});
-								u = Object(Y.b)(u, t, S.d.profile), u = o.Modifier.applyEntity(u, c, s), r && i && i(o.EditorState.forceSelection(r, l))
+								u = Object(Y.b)(u, e, S.d.profile), u = o.Modifier.applyEntity(u, c, r), s && i && i(o.EditorState.forceSelection(s, l))
 							}
-						})(c + s, p + s, f), l.push([c + s, p + s + 1])) : (m(c, p, f), l.push([c, p])), d.add(f))
+						})(c + r, p + r, f), l.push([c + r, p + r + 1])) : (m(c, p, f), l.push([c, p])), d.add(f))
 					});
 					let b = 0;
-					return f.findEntityRanges(e => {
-						const t = e.getEntity();
-						return !!t && u.getEntity(t).getType() === n
-					}, (e, t) => {
-						if (b >= l.length) return void g(e, t);
+					return f.findEntityRanges(t => {
+						const e = t.getEntity();
+						return !!e && u.getEntity(e).getType() === n
+					}, (t, e) => {
+						if (b >= l.length) return void g(t, e);
 						const [n, o] = l[b];
-						t <= n ? g(e, t) : (e < n && g(e, n - 1), t > o && g(o, t), b++)
+						e <= n ? g(t, e) : (t < n && g(t, n - 1), e > o && g(o, e), b++)
 					}), u
 				},
-				zo = (e, t) => {
-					const n = e.getCurrentContent(),
-						s = t.getCurrentContent();
-					if (n === s) return e;
-					const r = n.getBlockMap(),
-						i = s.getBlockMap();
+				zo = (t, e) => {
+					const n = t.getCurrentContent(),
+						r = e.getCurrentContent();
+					if (n === r) return t;
+					const s = n.getBlockMap(),
+						i = r.getBlockMap();
 					let c = n;
-					return r.forEach((t, n) => {
+					return s.forEach((e, n) => {
 						if (n) {
-							if (t === i.get(n)) return;
-							c = Wo(c, n, F.a.SUBREDDIT_LINK, Uo.g), c = Wo(c, n, F.a.USER_LINK, Uo.j), c = Wo(c, n, F.a.USER_MENTION, Uo.e, e, t => e = t)
+							if (e === i.get(n)) return;
+							c = Wo(c, n, F.a.SUBREDDIT_LINK, Uo.g), c = Wo(c, n, F.a.USER_LINK, Uo.j), c = Wo(c, n, F.a.USER_MENTION, Uo.e, t, e => t = e)
 						}
-					}), e.getCurrentContent() === c ? e : (c = c.merge({
-						selectionAfter: e.getCurrentContent().getSelectionAfter(),
-						selectionBefore: e.getCurrentContent().getSelectionBefore()
-					}), o.EditorState.set(e, {
+					}), t.getCurrentContent() === c ? t : (c = c.merge({
+						selectionAfter: t.getCurrentContent().getSelectionAfter(),
+						selectionBefore: t.getCurrentContent().getSelectionBefore()
+					}), o.EditorState.set(t, {
 						currentContent: c
 					}))
 				};
-			var qo = e => {
-				const t = e.getCurrentContent();
-				return t.getBlockMap().some(e => {
-					if ((null == e ? void 0 : e.getType()) === R.a) return !0;
+			var qo = t => {
+				const e = t.getCurrentContent();
+				return e.getBlockMap().some(t => {
+					if ((null == t ? void 0 : t.getType()) === w.a) return !0;
 					let n = !1;
-					return null == e || e.findEntityRanges(e => {
-						const n = e.getEntity();
-						return !!n && t.getEntity(n).getType() === F.a.EMOTE
+					return null == t || t.findEntityRanges(t => {
+						const n = t.getEntity();
+						return !!n && e.getEntity(n).getType() === F.a.EMOTE
 					}, () => n = !0), n
 				})
 			};
 			const Vo = " ".repeat(4),
 				Go = new RegExp("^ {1,4}|\\t"),
-				Yo = new Set([R.b.CODE_BLOCK]),
-				Qo = (e, t) => {
-					const n = t.getCurrentContent(),
-						s = t.getSelection(),
-						r = e.shiftKey;
+				Yo = new Set([w.b.CODE_BLOCK]),
+				Qo = (t, e) => {
+					const n = e.getCurrentContent(),
+						r = e.getSelection(),
+						s = t.shiftKey;
 					let i = n,
-						c = s.getAnchorOffset(),
-						a = s.getFocusOffset();
-					if (Object($.a)(n, s, (e, t) => {
-							const n = e.getType();
+						c = r.getAnchorOffset(),
+						a = r.getFocusOffset();
+					if (Object($.a)(n, r, (t, e) => {
+							const n = t.getType();
 							if ("paragraph" === n || !Yo.has(n)) return !1;
 							let l = null;
-							const d = e.getText(),
-								u = o.SelectionState.createEmpty(t);
-							if (r) {
-								const e = d.match(Go);
-								if (e) {
-									const t = e[0].length;
+							const d = t.getText(),
+								u = o.SelectionState.createEmpty(e);
+							if (s) {
+								const t = d.match(Go);
+								if (t) {
+									const e = t[0].length;
 									i = Y.b(i, u.merge({
-										focusOffset: t
-									}), ""), l = -t
+										focusOffset: e
+									}), ""), l = -e
 								}
-							} else i = Y.a(i, s.isCollapsed() ? s : u, Vo), l = 4;
-							null !== l && (t === s.getAnchorKey() && (c += l), t === s.getFocusKey() && (a += l))
+							} else i = Y.a(i, r.isCollapsed() ? r : u, Vo), l = 4;
+							null !== l && (e === r.getAnchorKey() && (c += l), e === r.getFocusKey() && (a += l))
 						}), i !== n) return i = i.merge({
-						selectionAfter: s.merge({
+						selectionAfter: r.merge({
 							anchorOffset: c,
 							focusOffset: a
 						})
-					}), e.preventDefault(), o.EditorState.push(t, i, r ? "remove-range" : "insert-characters")
+					}), t.preventDefault(), o.EditorState.push(e, i, s ? "remove-range" : "insert-characters")
 				},
-				Jo = (e, t) => (e => {
-					const t = e.getSelection(),
-						n = e.getCurrentContent();
-					if (!t.isCollapsed()) return oe(e);
-					if (0 === t.getStartOffset()) {
-						const o = n.getBlockForKey(t.getEndKey());
-						if (Object(R.v)(o.getType())) return e; {
-							const t = n.getBlockBefore(o.getKey());
-							if (t && Object(R.v)(t.getType())) return e
+				Jo = (t, e) => (t => {
+					const e = t.getSelection(),
+						n = t.getCurrentContent();
+					if (!e.isCollapsed()) return ot(t);
+					if (0 === e.getStartOffset()) {
+						const o = n.getBlockForKey(e.getEndKey());
+						if (Object(w.v)(o.getType())) return t; {
+							const e = n.getBlockBefore(o.getKey());
+							if (e && Object(w.v)(e.getType())) return t
 						}
 					}
-				})(e) || ((e, t) => {
-					const n = e.getSelection(),
-						s = e.getCurrentContent();
+				})(t) || ((t, e) => {
+					const n = t.getSelection(),
+						r = t.getCurrentContent();
 					if (n.isCollapsed() && 0 === n.getStartOffset()) {
-						const r = s.getBlockForKey(n.getEndKey());
-						if (Object(R.o)(r.getType())) return Object(N.d)(e, r.getKey());
-						if (Object(R.u)(r.getType())) {
-							const t = s.getBlockBefore(r.getKey());
-							return o.EditorState.forceSelection(e, Object(D.b)(t))
+						const s = r.getBlockForKey(n.getEndKey());
+						if (Object(w.o)(s.getType())) return Object(N.d)(t, s.getKey());
+						if (Object(w.u)(s.getType())) {
+							const e = r.getBlockBefore(s.getKey());
+							return o.EditorState.forceSelection(t, Object(D.b)(e))
 						}
-						if (!Object(N.q)(t) && Object(D.g)(r)) {
-							const t = s.getBlockBefore(r.getKey());
-							if (t && Object(R.o)(t.getType())) return e = o.EditorState.push(e, Object(D.i)(s, r.getKey()), Z.f), o.EditorState.forceSelection(e, Object(D.b)(t))
+						if (!Object(N.q)(e) && Object(D.g)(s)) {
+							const e = r.getBlockBefore(s.getKey());
+							if (e && Object(w.o)(e.getType())) return t = o.EditorState.push(t, Object(D.i)(r, s.getKey()), Z.f), o.EditorState.forceSelection(t, Object(D.b)(e))
 						}
 					}
-				})(e, t),
-				Xo = (e, t) => (e => {
-					const t = e.getSelection(),
-						n = e.getCurrentContent();
-					if (!t.isCollapsed()) return oe(e); {
-						const o = n.getBlockForKey(t.getEndKey());
-						if (t.getEndOffset() === o.getLength()) {
-							if (Object(R.v)(o.getType())) return e; {
-								const t = n.getBlockAfter(o.getKey());
-								if (t && Object(R.v)(t.getType())) return e
+				})(t, e),
+				Xo = (t, e) => (t => {
+					const e = t.getSelection(),
+						n = t.getCurrentContent();
+					if (!e.isCollapsed()) return ot(t); {
+						const o = n.getBlockForKey(e.getEndKey());
+						if (e.getEndOffset() === o.getLength()) {
+							if (Object(w.v)(o.getType())) return t; {
+								const e = n.getBlockAfter(o.getKey());
+								if (e && Object(w.v)(e.getType())) return t
 							}
 						}
 					}
-				})(e) || ((e, t) => {
-					const n = e.getSelection(),
-						s = e.getCurrentContent();
+				})(t) || ((t, e) => {
+					const n = t.getSelection(),
+						r = t.getCurrentContent();
 					if (!n.isCollapsed()) return;
-					const r = s.getBlockForKey(n.getEndKey());
-					if (n.getEndOffset() === r.getLength()) {
-						if (Object(R.o)(r.getType())) return Object(N.d)(e, r.getKey()); {
-							const i = s.getBlockAfter(n.getEndKey());
-							if (i && Object(R.o)(i.getType())) {
-								if (Object(N.q)(t)) return Object(N.d)(e, i.getKey());
-								if (Object(D.g)(r)) return e = o.EditorState.push(e, Object(D.i)(s, r.getKey()), Z.f), o.EditorState.forceSelection(e, Object(D.b)(i))
+					const s = r.getBlockForKey(n.getEndKey());
+					if (n.getEndOffset() === s.getLength()) {
+						if (Object(w.o)(s.getType())) return Object(N.d)(t, s.getKey()); {
+							const i = r.getBlockAfter(n.getEndKey());
+							if (i && Object(w.o)(i.getType())) {
+								if (Object(N.q)(e)) return Object(N.d)(t, i.getKey());
+								if (Object(D.g)(s)) return t = o.EditorState.push(t, Object(D.i)(r, s.getKey()), Z.f), o.EditorState.forceSelection(t, Object(D.b)(i))
 							}
 						}
 					}
-				})(e, t),
-				Zo = e => {
-					const t = e.getSelection();
-					if (!t.isCollapsed()) return !1;
-					const n = o.RichUtils.getCurrentBlockType(e);
-					if (!R.c.includes(n)) return !1;
-					if (t.getFocusOffset() > 0) {
-						if ("\n" === e.getCurrentContent().getBlockForKey(t.getFocusKey()).getText()[t.getFocusOffset() - 1]) return !1
+				})(t, e),
+				Zo = t => {
+					const e = t.getSelection();
+					if (!e.isCollapsed()) return !1;
+					const n = o.RichUtils.getCurrentBlockType(t);
+					if (!w.c.includes(n)) return !1;
+					if (e.getFocusOffset() > 0) {
+						if ("\n" === t.getCurrentContent().getBlockForKey(e.getFocusKey()).getText()[e.getFocusOffset() - 1]) return !1
 					}
 					return !0
 				};
 			var $o = n("./src/lib/memoizeByReference/index.ts");
-			const es = Object($o.a)(e => {
-					const t = e.getSelection();
-					if (!t.isCollapsed()) return;
-					const n = t.getStartOffset(),
-						o = e.getCurrentContent(),
-						s = o.getBlockForKey(t.getFocusKey());
-					if (s.getType() !== R.n) return;
-					const r = s.getText();
-					if (r.startsWith("1.") && 2 === n) return R.i.ORDERED;
-					if (r.startsWith("*") && 1 === n) {
-						const e = o.getBlockBefore(s.getKey());
-						if (e && e.getType() === R.n && e.getText().startsWith("* ")) return;
-						return R.i.UNORDERED
+			const tr = Object($o.a)(t => {
+					const e = t.getSelection();
+					if (!e.isCollapsed()) return;
+					const n = e.getStartOffset(),
+						o = t.getCurrentContent(),
+						r = o.getBlockForKey(e.getFocusKey());
+					if (r.getType() !== w.n) return;
+					const s = r.getText();
+					if (s.startsWith("1.") && 2 === n) return w.i.ORDERED;
+					if (s.startsWith("*") && 1 === n) {
+						const t = o.getBlockBefore(r.getKey());
+						if (t && t.getType() === w.n && t.getText().startsWith("* ")) return;
+						return w.i.UNORDERED
 					}
 				}),
-				ts = e => {
-					const t = es(e);
-					if (!t) return e;
-					const n = Object(yo.a)(e);
-					let s = o.Modifier.replaceText(n.getCurrentContent(), n.getSelection().merge({
+				er = t => {
+					const e = tr(t);
+					if (!e) return t;
+					const n = Object(yo.a)(t);
+					let r = o.Modifier.replaceText(n.getCurrentContent(), n.getSelection().merge({
 						anchorOffset: 0
 					}), "");
-					return s = o.Modifier.setBlockType(s, s.getSelectionAfter(), t), o.EditorState.push(n, s, Z.c)
+					return r = o.Modifier.setBlockType(r, r.getSelectionAfter(), e), o.EditorState.push(n, r, Z.c)
 				};
-			var ns = n("./src/reddit/components/RichTextEditor/helpers/styles.ts");
-			const os = Object(Io.a)({
+			var nr = n("./src/reddit/components/RichTextEditor/helpers/styles.ts");
+			const or = Object(Io.a)({
 				ErrorComponent: () => null,
 				LoadingComponent: () => null,
-				getComponent: () => n.e("GifTooltip").then(n.bind(null, "./src/reddit/components/RichTextEditor/media/GifTooltip/index.tsx")).then(e => e.default)
+				getComponent: () => n.e("GifTooltip").then(n.bind(null, "./src/reddit/components/RichTextEditor/media/GifTooltip/index.tsx")).then(t => t.default)
 			});
 
-			function ss(e) {
-				return p.a.createElement(os, e)
+			function rr(t) {
+				return p.a.createElement(or, t)
 			}
-			var rs = n("./src/reddit/components/RichTextEditor/spoiler/helpers.ts"),
-				is = n("./src/reddit/components/RichTextEditor/spoiler/decorator.m.less"),
-				cs = n.n(is);
-			const as = e => p.a.createElement("span", {
-					className: cs.a.spoiler
-				}, p.a.createElement("span", null), e.children, p.a.createElement("span", null)),
-				ls = () => ({
-					strategy: rs.a,
-					component: as
+			var sr = n("./src/reddit/components/RichTextEditor/spoiler/helpers.ts"),
+				ir = n("./src/reddit/components/RichTextEditor/spoiler/decorator.m.less"),
+				cr = n.n(ir);
+			const ar = t => p.a.createElement("span", {
+					className: cr.a.spoiler
+				}, p.a.createElement("span", null), t.children, p.a.createElement("span", null)),
+				lr = () => ({
+					strategy: sr.a,
+					component: ar
 				});
-			var ds = n("./src/reddit/components/FocusableContent/index.tsx"),
-				us = n("./src/reddit/components/RichTextEditor/Blockquote/index.m.less"),
-				ps = n.n(us);
-			const hs = E.a.div("BlockQuoteWrapper", ps.a),
-				ms = Object(P.Map)({
-					[R.e]: {
+			var dr = n("./src/reddit/components/FocusableContent/index.tsx"),
+				ur = n("./src/reddit/components/RichTextEditor/Blockquote/index.m.less"),
+				pr = n.n(ur);
+			const hr = E.a.div("BlockQuoteWrapper", pr.a),
+				mr = Object(P.Map)({
+					[w.e]: {
 						element: "blockquote",
-						wrapper: p.a.createElement(hs, null)
+						wrapper: p.a.createElement(hr, null)
 					}
 				});
-			var gs = n("./src/reddit/components/RichTextEditor/CodeBlock/index.m.less"),
-				fs = n.n(gs);
-			const bs = Object(P.Map)({
-				[R.f]: {
+			var gr = n("./src/reddit/components/RichTextEditor/CodeBlock/index.m.less"),
+				fr = n.n(gr);
+			const br = Object(P.Map)({
+				[w.f]: {
 					element: "code",
-					wrapper: p.a.createElement(e => p.a.createElement("div", {
-						className: fs.a.CodeBlockWrapper
-					}, e.children), null)
+					wrapper: p.a.createElement(t => p.a.createElement("div", {
+						className: fr.a.CodeBlockWrapper
+					}, t.children), null)
 				}
 			});
-			var ys = n("./node_modules/bowser/src/bowser.js"),
-				Es = n.n(ys),
-				Ss = n("./node_modules/lodash/includes.js"),
-				xs = n.n(Ss),
-				Cs = n("./src/reddit/components/RichTextEditor/DragController/helpers.ts"),
-				Os = n("./src/reddit/components/RichTextEditor/DragController/index.m.less"),
-				ks = n.n(Os);
-			const Ts = E.a.div("DropLine", ks.a),
-				vs = E.a.wrapped(Nn.b, "Tooltip", ks.a);
-			class js extends u.Component {
-				constructor(e) {
-					super(e), this.dragCount = 0, this.setContainerRef = e => this.containerRef = e, this.preventDocumentDrop = e => {
-						!! function e(t) {
-							return t.draggable ? t : t.parentElement ? e(t.parentElement) : null
-						}(e.target) || (e.preventDefault(), e.stopPropagation())
-					}, this.onDragOver = e => {
-						const t = xs()(e.dataTransfer.types, qe);
-						if (!t) {
-							if (!Object(Cs.c)(e.dataTransfer) || !this.props.allowMediaUploads) return
+			var yr = n("./node_modules/bowser/src/bowser.js"),
+				Er = n.n(yr),
+				Sr = n("./node_modules/lodash/includes.js"),
+				Cr = n.n(Sr),
+				xr = n("./src/reddit/components/RichTextEditor/DragController/helpers.ts"),
+				Or = n("./src/reddit/components/RichTextEditor/DragController/index.m.less"),
+				kr = n.n(Or);
+			const Tr = E.a.div("DropLine", kr.a),
+				vr = E.a.wrapped(Nn.b, "Tooltip", kr.a);
+			class jr extends u.Component {
+				constructor(t) {
+					super(t), this.dragCount = 0, this.setContainerRef = t => this.containerRef = t, this.preventDocumentDrop = t => {
+						!! function t(e) {
+							return e.draggable ? e : e.parentElement ? t(e.parentElement) : null
+						}(t.target) || (t.preventDefault(), t.stopPropagation())
+					}, this.onDragOver = t => {
+						const e = Cr()(t.dataTransfer.types, qt);
+						if (!e) {
+							if (!Object(xr.c)(t.dataTransfer) || !this.props.allowMediaUploads) return
 						}
-						if (!t && !Object(Cs.c)(e.dataTransfer)) return;
-						e.preventDefault();
+						if (!e && !Object(xr.c)(t.dataTransfer)) return;
+						t.preventDefault();
 						try {
-							e.dataTransfer.dropEffect = t ? "move" : "copy"
-						} catch (r) {}
+							t.dataTransfer.dropEffect = e ? "move" : "copy"
+						} catch (s) {}
 						const {
 							editorState: n
 						} = this.props;
 						let o = null;
-						const s = Object(Cs.b)(n, e);
-						if (s) {
-							const e = this.containerRef.getBoundingClientRect().left;
+						const r = Object(xr.b)(n, t);
+						if (r) {
+							const t = this.containerRef.getBoundingClientRect().left;
 							o = {
-								top: s.clientY,
-								left: e
+								top: r.clientY,
+								left: t
 							}
 						}
 						Ln()(o, this.state.point) || this.setState({
 							point: o
 						})
-					}, this.onDragEnter = e => {
+					}, this.onDragEnter = t => {
 						this.dragCount++
-					}, this.onDragLeave = e => {
+					}, this.onDragLeave = t => {
 						this.dragCount--, 0 === this.dragCount && this.state.point && this.setState({
 							point: null
 						})
-					}, this.onDrop = e => {
-						const t = () => {
+					}, this.onDrop = t => {
+						const e = () => {
 								this.dragCount = 0, this.setState({
 									point: null
 								})
 							},
-							n = Es.a.msie ? null : e.dataTransfer.getData(qe),
-							o = Object(Cs.a)(e.dataTransfer);
-						if (!(n || o.length && this.props.allowMediaUploads)) return void t();
+							n = Er.a.msie ? null : t.dataTransfer.getData(qt),
+							o = Object(xr.a)(t.dataTransfer);
+						if (!(n || o.length && this.props.allowMediaUploads)) return void e();
 						const {
-							editorState: s
-						} = this.props, r = Object(Cs.b)(s, e);
-						if (!r) return void t();
-						e.preventDefault(), e.stopPropagation();
-						const i = r.isBefore ? D.a.before : D.a.after;
-						n ? this.props.onBlockMove(n, r.blockKey, i) : setTimeout(() => {
-							this.props.onFilesDrop(o, r.blockKey, i)
-						}), t()
+							editorState: r
+						} = this.props, s = Object(xr.b)(r, t);
+						if (!s) return void e();
+						t.preventDefault(), t.stopPropagation();
+						const i = s.isBefore ? D.a.before : D.a.after;
+						n ? this.props.onBlockMove(n, s.blockKey, i) : setTimeout(() => {
+							this.props.onFilesDrop(o, s.blockKey, i)
+						}), e()
 					}, this.state = {
 						point: null
 					}
@@ -5099,317 +4908,317 @@
 				}
 				render() {
 					const {
-						children: e
+						children: t
 					} = this.props, {
-						point: t
-					} = this.state, n = p.a.Children.only(e);
+						point: e
+					} = this.state, n = p.a.Children.only(t);
 					return p.a.createElement("div", {
-						className: Object(b.a)(ks.a.container, {
-							[ks.a.hideCaret]: !!t
+						className: Object(b.a)(kr.a.container, {
+							[kr.a.hideCaret]: !!e
 						}),
 						onDragEnter: this.onDragEnter,
 						onDragLeave: this.onDragLeave,
 						onDragOver: this.onDragOver,
 						onDrop: this.onDrop,
 						ref: this.setContainerRef
-					}, p.a.createElement("div", null, n), p.a.createElement(vs, {
-						targetPosition: t
-					}, p.a.createElement(Ts, null)))
+					}, p.a.createElement("div", null, n), p.a.createElement(vr, {
+						targetPosition: e
+					}, p.a.createElement(Tr, null)))
 				}
 			}
-			var _s = n("./node_modules/draft-js/lib/DraftPasteProcessor.js"),
-				Rs = n.n(_s),
-				ws = n("./node_modules/draft-js/lib/getEntityKeyForSelection.js"),
-				Is = n.n(ws),
-				Bs = n("./node_modules/draft-js/lib/splitTextIntoTextBlocks.js"),
-				As = n.n(Bs),
-				Ks = n("./src/reddit/components/RichTextEditor/entity/cloneEntitiesInFragment.ts"),
-				Ms = n("./src/reddit/components/RichTextEditor/entity/applyEntityToContentBlock.ts");
+			var Rr = n("./node_modules/draft-js/lib/DraftPasteProcessor.js"),
+				wr = n.n(Rr),
+				Br = n("./node_modules/draft-js/lib/getEntityKeyForSelection.js"),
+				Ir = n.n(Br),
+				_r = n("./node_modules/draft-js/lib/splitTextIntoTextBlocks.js"),
+				Ar = n.n(_r),
+				Kr = n("./src/reddit/components/RichTextEditor/entity/cloneEntitiesInFragment.ts"),
+				Mr = n("./src/reddit/components/RichTextEditor/entity/applyEntityToContentBlock.ts");
 
-			function Ls(e, t, n) {
-				const s = Object(o.convertFromHTML)(t, void 0, n);
-				if (s) {
+			function Lr(t, e, n) {
+				const r = Object(o.convertFromHTML)(e, void 0, n);
+				if (r) {
 					const {
-						contentBlocks: t,
+						contentBlocks: e,
 						entityMap: n
-					} = s;
-					if (t) {
-						const s = o.BlockMapBuilder.createFromArray(function(e) {
-							return e.map(e => Object(R.r)(e.getType()) ? B(e) : e)
-						}(t));
-						return [e.set("entityMap", n), s]
+					} = r;
+					if (e) {
+						const r = o.BlockMapBuilder.createFromArray(function(t) {
+							return t.map(t => Object(w.r)(t.getType()) ? _(t) : t)
+						}(e));
+						return [t.set("entityMap", n), r]
 					}
 				}
-				return [e, null]
+				return [t, null]
 			}
 
-			function Ns(e, t, n) {
-				const s = As()(t),
-					r = n && 1 === s.length ? n : o.CharacterMetadata.create(),
-					i = Rs.a.processText(s, r).map(e => e.merge({
-						type: R.n
+			function Nr(t, e, n) {
+				const r = Ar()(e),
+					s = n && 1 === r.length ? n : o.CharacterMetadata.create(),
+					i = wr.a.processText(r, s).map(t => t.merge({
+						type: w.n
 					}));
 				return o.BlockMapBuilder.createFromArray(i)
 			}
-			const Ds = e => {
-					if (!e) return null;
-					const t = (new DOMParser).parseFromString(e, "text/html").querySelector("[data-reddit-rtjson]");
-					return t && t.getAttribute("data-reddit-rtjson")
+			const Dr = t => {
+					if (!t) return null;
+					const e = (new DOMParser).parseFromString(t, "text/html").querySelector("[data-reddit-rtjson]");
+					return e && e.getAttribute("data-reddit-rtjson")
 				},
-				Fs = e => {
-					if (Se()) return {
+				Fr = t => {
+					if (St()) return {
 						text: window.clipboardData.getData("text"),
 						html: null
 					}; {
-						const t = e.clipboardData.getData("text/html");
+						const e = t.clipboardData.getData("text/html");
 						return {
-							text: e.clipboardData.getData("text/plain"),
-							html: t
+							text: t.clipboardData.getData("text/plain"),
+							html: e
 						}
 					}
 				};
 
-			function Ps(e, t, n, s) {
+			function Pr(t, e, n, r) {
 				const {
-					text: r,
+					text: s,
 					html: i
-				} = Fs(n), c = function(e, t, n, o) {
-					const s = {
-							text: t,
+				} = Fr(n), c = function(t, e, n, o) {
+					const r = {
+							text: e,
 							html: n,
 							rtjson: o,
 							fragment: null
 						},
-						r = e.getClipboard();
-					return r && n && function(e, t, n, o) {
-						return -1 !== t.indexOf(o) || 1 === e.size && e.first().getText() === n
-					}(r, n, t, e.getEditorKey()) && (s.fragment = r), s
-				}(t, r, i, i && Ds(i));
-				t.getClipboard() && !c.fragment && t.setClipboard(null);
-				const a = e.getCurrentContent(),
-					l = e.getSelection(),
-					d = e.getCurrentInlineStyle(),
-					u = t.props.blockRenderMap;
+						s = t.getClipboard();
+					return s && n && function(t, e, n, o) {
+						return -1 !== e.indexOf(o) || 1 === t.size && t.first().getText() === n
+					}(s, n, e, t.getEditorKey()) && (r.fragment = s), r
+				}(e, s, i, i && Dr(i));
+				e.getClipboard() && !c.fragment && e.setClipboard(null);
+				const a = t.getCurrentContent(),
+					l = t.getSelection(),
+					d = t.getCurrentInlineStyle(),
+					u = e.props.blockRenderMap;
 				let p = null,
 					h = a;
-				if (!(p = function(e, t, n) {
-						const o = e.getBlockForKey(t.getStartKey()),
-							s = e.getBlockForKey(t.getEndKey());
-						if (o.getType() === R.f || s.getType() === R.f) return Ns(0, n).map(e => e.merge({
-							type: R.f,
+				if (!(p = function(t, e, n) {
+						const o = t.getBlockForKey(e.getStartKey()),
+							r = t.getBlockForKey(e.getEndKey());
+						if (o.getType() === w.f || r.getType() === w.f) return Nr(0, n).map(t => t.merge({
+							type: w.f,
 							depth: 0
 						}))
-					}(h, l, c.text)) && c.fragment && (p = c.fragment, [h, p] = Object(Ks.b)(h, p), p = ve(p, s)), !p && c.rtjson && (p = function(e) {
-						const t = JSON.parse(e);
-						return Object(o.convertFromRaw)(t).getBlockMap()
-					}(c.rtjson)), !p && c.html && ([h, p] = Ls(h, c.html, u)), !p && c.text) {
-					const e = function(e, t, n) {
+					}(h, l, c.text)) && c.fragment && (p = c.fragment, [h, p] = Object(Kr.b)(h, p), p = vt(p, r)), !p && c.rtjson && (p = function(t) {
+						const e = JSON.parse(t);
+						return Object(o.convertFromRaw)(e).getBlockMap()
+					}(c.rtjson)), !p && c.html && ([h, p] = Lr(h, c.html, u)), !p && c.text) {
+					const t = function(t, e, n) {
 						return o.CharacterMetadata.create({
 							style: n,
-							entity: Is()(e, t)
+							entity: Ir()(t, e)
 						})
 					}(h, l, d);
-					p = Ns(0, c.text, e), [h, p] = function(e, t) {
-						let n = e,
-							o = t;
-						return t.forEach(e => {
-							const t = e.getText(),
-								s = Uo.f.match(t);
-							if (!s) return;
-							let r = e;
-							s.forEach(e => {
+					p = Nr(0, c.text, t), [h, p] = function(t, e) {
+						let n = t,
+							o = e;
+						return e.forEach(t => {
+							const e = t.getText(),
+								r = Uo.f.match(e);
+							if (!r) return;
+							let s = t;
+							r.forEach(t => {
 								let {
-									index: t,
-									lastIndex: s,
+									index: e,
+									lastIndex: r,
 									url: i
-								} = e;
+								} = t;
 								const c = (n = n.createEntity(F.a.LINK, "MUTABLE", {
 									url: i
 								})).getLastCreatedEntityKey();
-								r = Object(Ms.a)(r, t, s, c), o = o.set(r.getKey(), r)
+								s = Object(Mr.a)(s, e, r, c), o = o.set(s.getKey(), s)
 							})
 						}), [n, o]
 					}(h, p)
 				}
-				if (p) return h = function(e, t, n) {
-					if (n.isEmpty()) return e;
-					let o = de(e, t, n) || je(e, t, n);
-					return o || (o = Y.c(e, t, n))
-				}(h, l, p), o.EditorState.push(e, h, Z.e)
+				if (p) return h = function(t, e, n) {
+					if (n.isEmpty()) return t;
+					let o = dt(t, e, n) || jt(t, e, n);
+					return o || (o = Y.c(t, e, n))
+				}(h, l, p), o.EditorState.push(t, h, Z.e)
 			}
-			var Us = n("./src/reddit/components/RichTextEditor/entity/getSelectionEntityInfo.ts"),
-				Hs = n("./src/reddit/components/RichTextEditor/Tooltip/getSelectionClientRect.ts"),
-				Ws = n("./src/reddit/components/RichTextEditor/LinksController/LinkDetailsPopup/index.m.less"),
-				zs = n.n(Ws);
-			const qs = E.a.div("LinkDetailsBox", zs.a),
-				Vs = E.a.a("Link", zs.a),
-				Gs = E.a.a("LinkButton", zs.a);
-			var Ys = e => p.a.createElement("div", null, p.a.createElement(qs, {
-					onMouseDown: e => e.preventDefault()
-				}, p.a.createElement(Vs, {
-					href: e.url,
+			var Ur = n("./src/reddit/components/RichTextEditor/entity/getSelectionEntityInfo.ts"),
+				Hr = n("./src/reddit/components/RichTextEditor/Tooltip/getSelectionClientRect.ts"),
+				Wr = n("./src/reddit/components/RichTextEditor/LinksController/LinkDetailsPopup/index.m.less"),
+				zr = n.n(Wr);
+			const qr = E.a.div("LinkDetailsBox", zr.a),
+				Vr = E.a.a("Link", zr.a),
+				Gr = E.a.a("LinkButton", zr.a);
+			var Yr = t => p.a.createElement("div", null, p.a.createElement(qr, {
+					onMouseDown: t => t.preventDefault()
+				}, p.a.createElement(Vr, {
+					href: t.url,
 					target: "_blank"
-				}, e.url), p.a.createElement("span", null, " – "), p.a.createElement(Gs, {
-					onClick: () => e.onStartEdit(),
+				}, t.url), p.a.createElement("span", null, " – "), p.a.createElement(Gr, {
+					onClick: () => t.onStartEdit(),
 					role: "button"
-				}, s.fbt._("Change", null, {
+				}, r.fbt._("Change", null, {
 					hk: "3aOmcP"
-				})), p.a.createElement("span", null, " | "), p.a.createElement(Gs, {
-					onClick: () => e.onRemove(),
+				})), p.a.createElement("span", null, " | "), p.a.createElement(Gr, {
+					onClick: () => t.onRemove(),
 					role: "button"
-				}, s.fbt._("Remove", null, {
+				}, r.fbt._("Remove", null, {
 					hk: "3tYl0U"
 				})))),
-				Qs = n("./src/reddit/controls/Input/index.tsx"),
-				Js = n("./src/reddit/components/RichTextEditor/LinksController/LinkEditorPopup/index.m.less"),
-				Xs = n.n(Js);
-			const Zs = E.a.form("EditForm", Xs.a),
-				$s = E.a.wrapped(e => p.a.createElement("div", e, e.children), "LinkEditorBox", Xs.a),
-				er = E.a.wrapped(Qs.a, "Input", Xs.a),
-				tr = E.a.label("Label", Xs.a),
-				nr = E.a.div("HintAndButtonRow", Xs.a),
-				or = E.a.span("InvalidUrlHint", Xs.a),
-				sr = E.a.wrapped(ot.l, "SubmitButton", Xs.a),
-				rr = e => {
-					e && (e.focus(), e.select())
+				Qr = n("./src/reddit/controls/Input/index.tsx"),
+				Jr = n("./src/reddit/components/RichTextEditor/LinksController/LinkEditorPopup/index.m.less"),
+				Xr = n.n(Jr);
+			const Zr = E.a.form("EditForm", Xr.a),
+				$r = E.a.wrapped(t => p.a.createElement("div", t, t.children), "LinkEditorBox", Xr.a),
+				ts = E.a.wrapped(Qr.a, "Input", Xr.a),
+				es = E.a.label("Label", Xr.a),
+				ns = E.a.div("HintAndButtonRow", Xr.a),
+				os = E.a.span("InvalidUrlHint", Xr.a),
+				rs = E.a.wrapped(oe.l, "SubmitButton", Xr.a),
+				ss = t => {
+					t && (t.focus(), t.select())
 				},
-				ir = / /g,
-				cr = /\.{3}/g,
-				ar = e => e.replace(ir, "%20").replace(cr, "%2E%2E%2E");
-			class lr extends u.Component {
-				constructor(e) {
-					super(e), this.focused = !1, this.focusLostTimer = 0, this.textInputElementRef = null, this.urlInputElementRef = null, this.onEdited = () => {
-						const e = this.state.url.trim(),
-							t = ar(e),
-							n = Object(Uo.i)(t);
+				is = / /g,
+				cs = /\.{3}/g,
+				as = t => t.replace(is, "%20").replace(cs, "%2E%2E%2E");
+			class ls extends u.Component {
+				constructor(t) {
+					super(t), this.focused = !1, this.focusLostTimer = 0, this.textInputElementRef = null, this.urlInputElementRef = null, this.onEdited = () => {
+						const t = this.state.url.trim(),
+							e = as(t),
+							n = Object(Uo.i)(e);
 						if (!n) return this.setState({
 							isInvalidUrl: !0
 						}), void(this.urlInputElementRef && this.urlInputElementRef.focus());
 						const o = n.url;
-						this.props.onEdited(o, this.state.displayText.trim() || e)
+						this.props.onEdited(o, this.state.displayText.trim() || t)
 					}, this.onFocus = () => {
 						this.focused = !0
 					}, this.onBlur = () => {
 						this.focused = !1, this.focusLostTimer = window.setTimeout(() => {
 							this.focused || this.props.onFocusLost()
 						}, 0)
-					}, this.onClick = e => {
-						e.stopPropagation()
-					}, this.handleUrlChange = e => {
-						const t = e.target.value;
+					}, this.onClick = t => {
+						t.stopPropagation()
+					}, this.handleUrlChange = t => {
+						const e = t.target.value;
 						let {
 							isInvalidUrl: n
 						} = this.state;
-						n && Object(Uo.h)(Uo.f, t) && (n = !1), this.setState({
-							url: t,
+						n && Object(Uo.h)(Uo.f, e) && (n = !1), this.setState({
+							url: e,
 							isInvalidUrl: n
 						})
-					}, this.handleDisplayTextChange = e => {
+					}, this.handleDisplayTextChange = t => {
 						this.setState({
-							displayText: e.target.value
+							displayText: t.target.value
 						})
-					}, this.handleSubmit = e => {
-						this.onEdited(), e.preventDefault()
+					}, this.handleSubmit = t => {
+						this.onEdited(), t.preventDefault()
 					}, this.state = {
-						url: e.url,
-						displayText: e.displayText,
+						url: t.url,
+						displayText: t.displayText,
 						isInvalidUrl: !1
 					}
 				}
 				componentDidMount() {
-					Object(Uo.h)(Uo.f, this.state.displayText) ? rr(this.textInputElementRef) : rr(this.urlInputElementRef)
+					Object(Uo.h)(Uo.f, this.state.displayText) ? ss(this.textInputElementRef) : ss(this.urlInputElementRef)
 				}
 				componentWillUnmount() {
 					this.focusLostTimer && clearTimeout(this.focusLostTimer)
 				}
 				render() {
 					const {
-						isInsertMode: e
+						isInsertMode: t
 					} = this.props;
-					return p.a.createElement($s, {
+					return p.a.createElement($r, {
 						tabIndex: 0,
 						onClick: this.onClick,
 						onBlur: this.onBlur,
 						onFocus: this.onFocus
-					}, p.a.createElement(Zs, {
+					}, p.a.createElement(Zr, {
 						onSubmit: this.handleSubmit
-					}, p.a.createElement(tr, null, s.fbt._("Text:", null, {
+					}, p.a.createElement(es, null, r.fbt._("Text:", null, {
 						hk: "13SRB5"
-					}), p.a.createElement(er, {
-						innerRef: e => this.textInputElementRef = e,
+					}), p.a.createElement(ts, {
+						innerRef: t => this.textInputElementRef = t,
 						type: "text",
-						placeholder: s.fbt._("Title of link (optional)", null, {
+						placeholder: r.fbt._("Title of link (optional)", null, {
 							hk: "17GvI"
 						}),
 						value: this.state.displayText,
 						onChange: this.handleDisplayTextChange
-					})), p.a.createElement(tr, null, s.fbt._("Link:", null, {
+					})), p.a.createElement(es, null, r.fbt._("Link:", null, {
 						hk: "3XqufJ"
-					}), p.a.createElement(er, {
-						innerRef: e => this.urlInputElementRef = e,
+					}), p.a.createElement(ts, {
+						innerRef: t => this.urlInputElementRef = t,
 						type: "text",
-						placeholder: s.fbt._("Paste or type a link", null, {
+						placeholder: r.fbt._("Paste or type a link", null, {
 							hk: "3QWoAf"
 						}),
 						value: this.state.url,
 						onChange: this.handleUrlChange
-					})), p.a.createElement(nr, null, p.a.createElement(sr, {
+					})), p.a.createElement(ns, null, p.a.createElement(rs, {
 						type: "submit",
 						disabled: this.state.isInvalidUrl
-					}, e ? s.fbt._("Insert", null, {
+					}, t ? r.fbt._("Insert", null, {
 						hk: "3H7yaS"
-					}) : s.fbt._("Apply", null, {
+					}) : r.fbt._("Apply", null, {
 						hk: "3mAjVQ"
-					})), this.state.isInvalidUrl ? p.a.createElement(or, null, s.fbt._("Link doesn't look right", null, {
+					})), this.state.isInvalidUrl ? p.a.createElement(os, null, r.fbt._("Link doesn't look right", null, {
 						hk: "1BHfKz"
 					})) : null)))
 				}
 			}
 
-			function dr(e, t, n) {
-				const o = e.getCurrentContent(),
-					s = {
+			function ds(t, e, n) {
+				const o = t.getCurrentContent(),
+					r = {
 						text: "",
 						url: ""
 					};
-				if (t.isCollapsed()) return s;
-				if (n) s.text = n.entityText, s.url = o.getEntity(n.entityKey).getData().url;
+				if (e.isCollapsed()) return r;
+				if (n) r.text = n.entityText, r.url = o.getEntity(n.entityKey).getData().url;
 				else {
-					s.text = function(e, t) {
-						if (e.getStartKey() !== e.getEndKey()) throw new Error("Selection must be in a single block");
-						return e.isCollapsed() ? "" : t.getBlockForKey(e.getStartKey()).getText().slice(e.getStartOffset(), e.getEndOffset())
-					}(t, e.getCurrentContent());
-					const n = Object(Uo.h)(Uo.f, s.text);
-					n && (s.url = n.url)
+					r.text = function(t, e) {
+						if (t.getStartKey() !== t.getEndKey()) throw new Error("Selection must be in a single block");
+						return t.isCollapsed() ? "" : e.getBlockForKey(t.getStartKey()).getText().slice(t.getStartOffset(), t.getEndOffset())
+					}(e, t.getCurrentContent());
+					const n = Object(Uo.h)(Uo.f, r.text);
+					n && (r.url = n.url)
 				}
-				return s
+				return r
 			}
 
-			function ur(e, t) {
-				return o.EditorState.set(e, {
-					currentContent: o.Modifier.removeInlineStyle(e.getCurrentContent(), t, R.k.HIGHLIGHT)
+			function us(t, e) {
+				return o.EditorState.set(t, {
+					currentContent: o.Modifier.removeInlineStyle(t.getCurrentContent(), e, w.k.HIGHLIGHT)
 				})
 			}
-			class pr extends u.Component {
-				constructor(e) {
-					super(e), this.api = null, this.updateTooltipPosition = null, this.lastEditorSelectionClientRect = null, this.editLinkInSelection = e => {
+			class ps extends u.Component {
+				constructor(t) {
+					super(t), this.api = null, this.updateTooltipPosition = null, this.lastEditorSelectionClientRect = null, this.editLinkInSelection = t => {
 						const {
-							editorState: t
+							editorState: e
 						} = this.props;
-						let n = e,
-							s = t;
-						const r = t.getCurrentContent();
-						if (!Object(Mo.e)(r, e)) return !1;
-						const i = Object(Us.a)(r, e);
+						let n = t,
+							r = e;
+						const s = e.getCurrentContent();
+						if (!Object(Mo.e)(s, t)) return !1;
+						const i = Object(Ur.a)(s, t);
 						if (i) {
-							if (r.getEntity(i.entityKey).getType() !== F.a.LINK) return !1;
+							if (s.getEntity(i.entityKey).getType() !== F.a.LINK) return !1;
 							n = i.entitySelection
-						} else this.isEditorFocused() && (this.lastEditorSelectionClientRect = Object(Hs.a)());
-						return this.state.linkSelection && (s = ur(t, this.state.linkSelection)), s = function(e, t) {
-							return o.EditorState.set(e, {
-								currentContent: o.Modifier.applyInlineStyle(e.getCurrentContent(), t, R.k.HIGHLIGHT)
+						} else this.isEditorFocused() && (this.lastEditorSelectionClientRect = Object(Hr.a)());
+						return this.state.linkSelection && (r = us(e, this.state.linkSelection)), r = function(t, e) {
+							return o.EditorState.set(t, {
+								currentContent: o.Modifier.applyInlineStyle(t.getCurrentContent(), e, w.k.HIGHLIGHT)
 							})
-						}(t, n), this.props.onChange(s, () => {
+						}(e, n), this.props.onChange(r, () => {
 							this.setState({
 								linkSelection: n,
 								linkEntity: i
@@ -5428,73 +5237,73 @@
 					}, this.updatePosition = () => {
 						if (!this.updateTooltipPosition) return;
 						const {
-							editorState: e,
-							containerRef: t
-						} = this.props, n = e.getCurrentContent();
+							editorState: t,
+							containerRef: e
+						} = this.props, n = t.getCurrentContent();
 						let o;
 						if (this.state.linkSelection) {
-							const e = Object(Us.a)(n, this.state.linkSelection);
-							if (e) {
-								const t = this.props.entityElementRegistry.get(e.entityKey);
-								o = t && t.getBoundingClientRect()
+							const t = Object(Ur.a)(n, this.state.linkSelection);
+							if (t) {
+								const e = this.props.entityElementRegistry.get(t.entityKey);
+								o = e && e.getBoundingClientRect()
 							} else this.lastEditorSelectionClientRect && (o = this.lastEditorSelectionClientRect)
 						} else {
-							const n = Object(Mo.c)(e);
+							const n = Object(Mo.c)(t);
 							if (n) {
-								const e = this.props.entityElementRegistry.get(n.entityKey);
-								o = e && e.getBoundingClientRect()
-							} else o = t && t.getBoundingClientRect()
+								const t = this.props.entityElementRegistry.get(n.entityKey);
+								o = t && t.getBoundingClientRect()
+							} else o = e && e.getBoundingClientRect()
 						}
 						o && (this.updateTooltipPosition({
 							left: o.left,
 							top: o.bottom
 						}), this.lastEditorSelectionClientRect = null)
-					}, this.handleLink = (e, t) => {
+					}, this.handleLink = (t, e) => {
 						const {
 							linkSelection: n
 						} = this.state, {
-							editorState: s
+							editorState: r
 						} = this.props;
-						let r = s;
-						n && (n.isCollapsed() || (r = ur(s, n)), void 0 !== e && (r = Object(Mo.h)(r, n, e, t)), this.setState({
+						let s = r;
+						n && (n.isCollapsed() || (s = us(r, n)), void 0 !== t && (s = Object(Mo.h)(s, n, t, e)), this.setState({
 							linkSelection: null,
 							linkEntity: null
-						}), r !== s && (r = o.EditorState.forceSelection(r, r.getSelection()), this.props.onChange(r)))
-					}, this.onLinkEdited = (e, t) => {
-						this.handleLink(e, t)
+						}), s !== r && (s = o.EditorState.forceSelection(s, s.getSelection()), this.props.onChange(s)))
+					}, this.onLinkEdited = (t, e) => {
+						this.handleLink(t, e)
 					}, this.interruptLinkEditing = () => this.handleLink(), this.isEditorFocused = () => this.props.editorState.getSelection().getHasFocus(), this.onStartEditFocusedLink = () => {
 						const {
-							editorState: e
-						} = this.props, t = Object(Mo.c)(e);
-						t && this.editLinkInSelection(t.entitySelection)
+							editorState: t
+						} = this.props, e = Object(Mo.c)(t);
+						e && this.editLinkInSelection(e.entitySelection)
 					}, this.onRemoveFocusedLink = () => {
 						const {
-							editorState: e
-						} = this.props, t = Object(Mo.c)(e);
-						t && this.props.onChange(Object(Mo.h)(e, t.entitySelection, ""))
+							editorState: t
+						} = this.props, e = Object(Mo.c)(t);
+						e && this.props.onChange(Object(Mo.h)(t, e.entitySelection, ""))
 					}, this.renderEditorPopup = () => {
 						const {
-							linkSelection: e,
-							linkEntity: t
+							linkSelection: t,
+							linkEntity: e
 						} = this.state, {
 							editorState: n
 						} = this.props;
-						if (!e) return null;
+						if (!t) return null;
 						const {
 							text: o,
-							url: s
-						} = dr(n, e, t);
-						return p.a.createElement(lr, {
-							url: s,
+							url: r
+						} = ds(n, t, e);
+						return p.a.createElement(ls, {
+							url: r,
 							displayText: o,
-							isInsertMode: !t,
+							isInsertMode: !e,
 							onEdited: this.onLinkEdited,
 							onFocusLost: this.interruptLinkEditing
 						})
 					}, this.renderDetailsPopup = () => {
-						const e = Object(Mo.c)(this.props.editorState);
-						return e && this.isEditorFocused() && this.state.isDetailsPopupActive ? p.a.createElement(Ys, {
-							url: e.url,
+						const t = Object(Mo.c)(this.props.editorState);
+						return t && this.isEditorFocused() && this.state.isDetailsPopupActive ? p.a.createElement(Yr, {
+							url: t.url,
 							onStartEdit: this.onStartEditFocusedLink,
 							onRemove: this.onRemoveFocusedLink
 						}) : null
@@ -5509,60 +5318,60 @@
 				}
 				componentDidMount() {
 					const {
-						onSetApi: e
+						onSetApi: t
 					} = this.props;
-					this.api && e && e(this.api)
+					this.api && t && t(this.api)
 				}
 				componentWillUnmount() {
 					this.props.onSetApi && this.props.onSetApi(null)
 				}
-				componentDidUpdate(e, t) {
-					t.linkSelection === this.state.linkSelection && e.editorState === this.props.editorState || (this.showDetailsPopup(), this.updatePosition())
+				componentDidUpdate(t, e) {
+					e.linkSelection === this.state.linkSelection && t.editorState === this.props.editorState || (this.showDetailsPopup(), this.updatePosition())
 				}
 				render() {
 					return p.a.createElement(Nn.b, {
-						onSetPositionUpdater: e => this.updateTooltipPosition = e,
+						onSetPositionUpdater: t => this.updateTooltipPosition = t,
 						trianglePlacement: Nn.a.Above
 					}, this.renderEditorPopup() || this.renderDetailsPopup())
 				}
 			}
-			var hr = n("./src/reddit/components/RichTextEditor/OrderedList/index.m.less"),
-				mr = n.n(hr);
-			const gr = E.a.ol("OrderedListWrapper", mr.a),
-				fr = Object(P.Map)({
-					[R.i.ORDERED]: {
+			var hs = n("./src/reddit/components/RichTextEditor/OrderedList/index.m.less"),
+				ms = n.n(hs);
+			const gs = E.a.ol("OrderedListWrapper", ms.a),
+				fs = Object(P.Map)({
+					[w.i.ORDERED]: {
 						element: "li",
 						aliasedElements: ["li"],
-						wrapper: p.a.createElement(gr, null)
+						wrapper: p.a.createElement(gs, null)
 					}
 				});
-			var br = n("./src/reddit/components/RichTextEditor/Paragraph/index.m.less"),
-				yr = n.n(br);
-			const Er = E.a.div("ParagraphWrapper", yr.a),
-				Sr = Object(P.Map)({
-					[R.n]: {
+			var bs = n("./src/reddit/components/RichTextEditor/Paragraph/index.m.less"),
+				ys = n.n(bs);
+			const Es = E.a.div("ParagraphWrapper", ys.a),
+				Ss = Object(P.Map)({
+					[w.n]: {
 						element: "div",
 						aliasedElements: ["p"],
-						wrapper: p.a.createElement(Er, null)
+						wrapper: p.a.createElement(Es, null)
 					}
 				});
-			var xr = n("./src/reddit/components/RichTextEditor/RTEState/index.tsx");
-			var Cr = n("./src/reddit/components/RichTextEditor/TextRendering/index.m.less"),
-				Or = n.n(Cr);
-			const kr = Object($o.a)(() => ({
-					[R.k.SUPERSCRIPT]: {
+			var Cs = n("./src/reddit/components/RichTextEditor/RTEState/index.tsx");
+			var xs = n("./src/reddit/components/RichTextEditor/TextRendering/index.m.less"),
+				Os = n.n(xs);
+			const ks = Object($o.a)(() => ({
+					[w.k.SUPERSCRIPT]: {
 						position: "relative",
 						top: "-0.4em",
 						fontSize: "0.7em",
 						lineHeight: "0.7em"
 					},
-					[R.k.HIGHLIGHT]: {
+					[w.k.HIGHLIGHT]: {
 						backgroundColor: "#b8e0f9"
 					},
-					[R.k.UNDERLINE]: {
+					[w.k.UNDERLINE]: {
 						textDecoration: "none"
 					},
-					[R.k.MONOSPACE]: {
+					[w.k.MONOSPACE]: {
 						backgroundColor: "var(--newRedditTheme-field)",
 						caretColor: "#000",
 						color: "var(--newRedditTheme-monospaceColor)",
@@ -5572,70 +5381,70 @@
 						borderRadius: "3px"
 					}
 				})),
-				Tr = E.a.div("H1", Or.a),
-				vr = E.a.div("H2", Or.a),
-				jr = E.a.div("H3", Or.a),
-				_r = E.a.div("H4", Or.a),
-				Rr = E.a.div("H5", Or.a),
-				wr = E.a.div("H6", Or.a),
-				Ir = e => ({
-					component: t => p.a.createElement(e, null, p.a.createElement(o.EditorBlock, t)),
+				Ts = E.a.div("H1", Os.a),
+				vs = E.a.div("H2", Os.a),
+				js = E.a.div("H3", Os.a),
+				Rs = E.a.div("H4", Os.a),
+				ws = E.a.div("H5", Os.a),
+				Bs = E.a.div("H6", Os.a),
+				Is = t => ({
+					component: e => p.a.createElement(t, null, p.a.createElement(o.EditorBlock, e)),
 					editable: !0
 				}),
-				Br = {
-					[R.g.H1]: Ir(Tr),
-					[R.g.H2]: Ir(vr),
-					[R.g.H3]: Ir(jr),
-					[R.g.H4]: Ir(_r),
-					[R.g.H5]: Ir(Rr),
-					[R.g.H6]: Ir(wr)
+				_s = {
+					[w.g.H1]: Is(Ts),
+					[w.g.H2]: Is(vs),
+					[w.g.H3]: Is(js),
+					[w.g.H4]: Is(Rs),
+					[w.g.H5]: Is(ws),
+					[w.g.H6]: Is(Bs)
 				},
-				Ar = ["italic normal 1em 'Noto Sans'", "italic bold 1em 'Noto Sans'", "normal bold 1em 'Noto Sans'"],
-				Kr = () => {
-					const e = document.fonts;
-					e && e.load && Ar.forEach(t => e.load(t))
+				As = ["italic normal 1em 'Noto Sans'", "italic bold 1em 'Noto Sans'", "normal bold 1em 'Noto Sans'"],
+				Ks = () => {
+					const t = document.fonts;
+					t && t.load && As.forEach(e => t.load(e))
 				};
-			var Mr = n("./src/reddit/components/RichTextEditor/UnorderedList/index.m.less"),
-				Lr = n.n(Mr);
-			const Nr = E.a.ul("UnorderedListWrapper", Lr.a),
-				Dr = Object(P.Map)({
-					[R.i.UNORDERED]: {
+			var Ms = n("./src/reddit/components/RichTextEditor/UnorderedList/index.m.less"),
+				Ls = n.n(Ms);
+			const Ns = E.a.ul("UnorderedListWrapper", Ls.a),
+				Ds = Object(P.Map)({
+					[w.i.UNORDERED]: {
 						element: "li",
 						aliasedElements: ["li"],
-						wrapper: p.a.createElement(Nr, null)
+						wrapper: p.a.createElement(Ns, null)
 					}
 				});
-			var Fr = n("./src/reddit/contexts/InsideOverlay.tsx"),
-				Pr = n("./src/reddit/actions/subredditAutocomplete/index.ts"),
-				Ur = n("./src/reddit/controls/SubredditDropdown/index.m.less"),
-				Hr = n.n(Ur);
+			var Fs = n("./src/reddit/contexts/InsideOverlay.tsx"),
+				Ps = n("./src/reddit/actions/subredditAutocomplete/index.ts"),
+				Us = n("./src/reddit/controls/SubredditDropdown/index.m.less"),
+				Hs = n.n(Us);
 
-			function Wr() {
-				return (Wr = Object.assign || function(e) {
-					for (var t = 1; t < arguments.length; t++) {
-						var n = arguments[t];
-						for (var o in n) Object.prototype.hasOwnProperty.call(n, o) && (e[o] = n[o])
+			function Ws() {
+				return (Ws = Object.assign || function(t) {
+					for (var e = 1; e < arguments.length; e++) {
+						var n = arguments[e];
+						for (var o in n) Object.prototype.hasOwnProperty.call(n, o) && (t[o] = n[o])
 					}
-					return e
+					return t
 				}).apply(this, arguments)
 			}
-			const zr = e => {
+			const zs = t => {
 				let {
-					isFocused: t,
+					isFocused: e,
 					...n
-				} = e;
-				return p.a.createElement("div", Wr({
-					className: Object(b.a)(Hr.a.entry, {
-						[Hr.a.mIsFocused]: t
+				} = t;
+				return p.a.createElement("div", Ws({
+					className: Object(b.a)(Hs.a.entry, {
+						[Hs.a.mIsFocused]: e
 					})
 				}, n))
 			};
-			class qr extends u.Component {
-				constructor(e) {
-					super(e), this.mouseDown = !1, this.onMouseUp = () => {
+			class qs extends u.Component {
+				constructor(t) {
+					super(t), this.mouseDown = !1, this.onMouseUp = () => {
 						this.mouseDown && (this.props.onEntrySelect(this.props.entry), this.mouseDown = !1)
-					}, this.onMouseDown = e => {
-						this.mouseDown = !0, e.preventDefault()
+					}, this.onMouseDown = t => {
+						this.mouseDown = !0, t.preventDefault()
 					}, this.onMouseOver = () => {
 						this.props.onEntryFocus(this.props.entry)
 					}, this.mouseDown = !1
@@ -5644,7 +5453,7 @@
 					this.mouseDown = !1
 				}
 				render() {
-					return p.a.createElement(zr, {
+					return p.a.createElement(zs, {
 						isFocused: this.props.isFocused,
 						onMouseDown: this.onMouseDown,
 						onMouseUp: this.onMouseUp,
@@ -5652,42 +5461,42 @@
 					}, this.props.children)
 				}
 			}
-			var Vr = n("./src/reddit/helpers/name/index.ts"),
-				Gr = n("./src/reddit/selectors/subredditAutocomplete.ts");
-			const Yr = Object(m.c)({
-				subredditSuggestions: (e, t) => {
-					const n = Object(Gr.d)(e, t);
+			var Vs = n("./src/reddit/helpers/name/index.ts"),
+				Gs = n("./src/reddit/selectors/subredditAutocomplete.ts");
+			const Ys = Object(m.c)({
+				subredditSuggestions: (t, e) => {
+					const n = Object(Gs.d)(t, e);
 					return n ? n.subreddits : []
 				}
 			});
-			class Qr extends u.Component {
-				constructor(e) {
-					super(e), this.api = null, this.onEntrySelect = e => {
-						this.props.onSelect(this.props.subredditSuggestions[e].name)
-					}, this.onEntryFocus = e => {
+			class Qs extends u.Component {
+				constructor(t) {
+					super(t), this.api = null, this.onEntrySelect = t => {
+						this.props.onSelect(this.props.subredditSuggestions[t].name)
+					}, this.onEntryFocus = t => {
 						this.setState({
-							selectedSuggestionIndex: e
+							selectedSuggestionIndex: t
 						})
 					}, this.moveUp = () => {
 						if (this.props.subredditSuggestions.length > 1) {
-							let e = this.state.selectedSuggestionIndex - 1;
-							return e = e < 0 ? this.props.subredditSuggestions.length - 1 : e, this.setState({
-								selectedSuggestionIndex: e
+							let t = this.state.selectedSuggestionIndex - 1;
+							return t = t < 0 ? this.props.subredditSuggestions.length - 1 : t, this.setState({
+								selectedSuggestionIndex: t
 							}), !0
 						}
 						return !1
 					}, this.moveDown = () => {
 						if (this.props.subredditSuggestions.length > 1) {
-							const e = (this.state.selectedSuggestionIndex + 1) % this.props.subredditSuggestions.length;
+							const t = (this.state.selectedSuggestionIndex + 1) % this.props.subredditSuggestions.length;
 							return this.setState({
-								selectedSuggestionIndex: e
+								selectedSuggestionIndex: t
 							}), !0
 						}
 						return !1
 					}, this.selectCurrent = () => {
 						if (this.props.subredditSuggestions.length) {
-							const e = this.props.subredditSuggestions[this.state.selectedSuggestionIndex];
-							return e && this.props.onSelect(e.name), !0
+							const t = this.props.subredditSuggestions[this.state.selectedSuggestionIndex];
+							return t && this.props.onSelect(t.name), !0
 						}
 						return !1
 					}, this.state = {
@@ -5706,63 +5515,63 @@
 				componentWillUnmount() {
 					this.props.onDropdownApi(null)
 				}
-				componentWillReceiveProps(e) {
-					e.substring !== this.props.substring && (this.requestSubredditAutocomplete(e.substring), this.setState({
+				componentWillReceiveProps(t) {
+					t.substring !== this.props.substring && (this.requestSubredditAutocomplete(t.substring), this.setState({
 						selectedSuggestionIndex: 0
 					}))
 				}
-				requestSubredditAutocomplete(e) {
-					this.props.onGetSubredditAutocomplete(e)
+				requestSubredditAutocomplete(t) {
+					this.props.onGetSubredditAutocomplete(t)
 				}
 				render() {
 					return this.props.subredditSuggestions.length ? p.a.createElement("div", {
-						className: Object(b.a)(Hr.a.list, this.props.className)
-					}, this.props.subredditSuggestions.map((e, t) => p.a.createElement(qr, {
-						entry: t,
-						isFocused: t === this.state.selectedSuggestionIndex,
-						key: e.name,
+						className: Object(b.a)(Hs.a.list, this.props.className)
+					}, this.props.subredditSuggestions.map((t, e) => p.a.createElement(qs, {
+						entry: e,
+						isFocused: e === this.state.selectedSuggestionIndex,
+						key: t.name,
 						onEntrySelect: this.onEntrySelect,
 						onEntryFocus: this.onEntryFocus
-					}, Object(Vr.d)(e.name)))) : null
+					}, Object(Vs.d)(t.name)))) : null
 				}
 			}
-			var Jr = Object(h.b)(Yr, (e, t) => ({
-					onGetSubredditAutocomplete: t => {
-						e(Pr.a(t))
+			var Js = Object(h.b)(Ys, (t, e) => ({
+					onGetSubredditAutocomplete: e => {
+						t(Ps.a(e))
 					}
-				}))(Qr),
-				Xr = n("./src/reddit/selectors/comments.ts");
-			const Zr = Object(m.c)({
-				commentAuthors: Xr.h
+				}))(Qs),
+				Xs = n("./src/reddit/selectors/comments.ts");
+			const Zs = Object(m.c)({
+				commentAuthors: Xs.h
 			});
-			class $r extends u.Component {
-				constructor(e) {
-					super(e), this.api = null, this.onEntrySelect = e => {
-						this.props.onSelect(this.state.userSuggestions[e])
-					}, this.onEntryFocus = e => {
+			class $s extends u.Component {
+				constructor(t) {
+					super(t), this.api = null, this.onEntrySelect = t => {
+						this.props.onSelect(this.state.userSuggestions[t])
+					}, this.onEntryFocus = t => {
 						this.setState({
-							selectedSuggestionIndex: e
+							selectedSuggestionIndex: t
 						})
 					}, this.moveUp = () => {
 						if (this.state.userSuggestions.length > 1) {
-							let e = this.state.selectedSuggestionIndex - 1;
-							return e = e < 0 ? this.state.userSuggestions.length - 1 : e, this.setState({
-								selectedSuggestionIndex: e
+							let t = this.state.selectedSuggestionIndex - 1;
+							return t = t < 0 ? this.state.userSuggestions.length - 1 : t, this.setState({
+								selectedSuggestionIndex: t
 							}), !0
 						}
 						return !1
 					}, this.moveDown = () => {
 						if (this.state.userSuggestions.length > 1) {
-							const e = (this.state.selectedSuggestionIndex + 1) % this.state.userSuggestions.length;
+							const t = (this.state.selectedSuggestionIndex + 1) % this.state.userSuggestions.length;
 							return this.setState({
-								selectedSuggestionIndex: e
+								selectedSuggestionIndex: t
 							}), !0
 						}
 						return !1
 					}, this.selectCurrent = () => {
 						if (this.state.userSuggestions.length) {
-							const e = this.state.userSuggestions[this.state.selectedSuggestionIndex];
-							return e && this.props.onSelect(e), !0
+							const t = this.state.userSuggestions[this.state.selectedSuggestionIndex];
+							return t && this.props.onSelect(t), !0
 						}
 						return !1
 					}, this.state = {
@@ -5782,47 +5591,47 @@
 				componentWillUnmount() {
 					this.props.onDropdownApi(null)
 				}
-				componentWillReceiveProps(e) {
-					e.substring !== this.props.substring && this.setState({
+				componentWillReceiveProps(t) {
+					t.substring !== this.props.substring && this.setState({
 						selectedSuggestionIndex: 0,
-						userSuggestions: this.filterUsers(e.substring)
+						userSuggestions: this.filterUsers(t.substring)
 					})
 				}
-				filterUsers(e) {
+				filterUsers(t) {
 					const {
-						commentAuthors: t
+						commentAuthors: e
 					} = this.props;
-					return t.filter(t => t.toLowerCase().startsWith(e.toLowerCase()))
+					return e.filter(e => e.toLowerCase().startsWith(t.toLowerCase()))
 				}
 				render() {
 					return this.state.userSuggestions.length ? p.a.createElement("div", {
-						className: Object(b.a)(Hr.a.list, this.props.className)
-					}, this.state.userSuggestions.map((e, t) => p.a.createElement(qr, {
-						key: t,
-						entry: t,
+						className: Object(b.a)(Hs.a.list, this.props.className)
+					}, this.state.userSuggestions.map((t, e) => p.a.createElement(qs, {
+						key: e,
+						entry: e,
 						onEntryFocus: this.onEntryFocus,
 						onEntrySelect: this.onEntrySelect,
-						isFocused: t === this.state.selectedSuggestionIndex
-					}, Object(Vr.e)(e)))) : null
+						isFocused: e === this.state.selectedSuggestionIndex
+					}, Object(Vs.e)(t)))) : null
 				}
 			}
-			var ei = Object(h.b)(Zr)($r),
-				ti = n("./node_modules/lodash/dropRightWhile.js"),
-				ni = n.n(ti),
+			var ti = Object(h.b)(Zs)($s),
+				ei = n("./node_modules/lodash/dropRightWhile.js"),
+				ni = n.n(ei),
 				oi = n("./node_modules/lodash/flatMap.js"),
-				si = n.n(oi),
-				ri = n("./node_modules/lodash/reduceRight.js"),
-				ii = n.n(ri),
+				ri = n.n(oi),
+				si = n("./node_modules/lodash/reduceRight.js"),
+				ii = n.n(si),
 				ci = n("./node_modules/lodash/trimEnd.js"),
 				ai = n.n(ci),
 				li = n("./node_modules/lodash/trimStart.js"),
 				di = n.n(li),
 				ui = n("./src/lib/forEachGroup/index.ts");
 
-			function pi(e, t) {
+			function pi(t, e) {
 				const n = [],
-					o = e.withMutations(e => {
-						for (; e.size && t(e.first());) n.push(e.first()), e.shift()
+					o = t.withMutations(t => {
+						for (; t.size && e(t.first());) n.push(t.first()), t.shift()
 					});
 				return {
 					popped: n,
@@ -5841,302 +5650,302 @@
 				SUPERSCRIPT: Wn.j.superscript,
 				UNDERLINE: Wn.j.underline
 			};
-			var bi = (e, t) => yi(e.getBlockMap(), e, t);
-			const yi = (e, t, n) => {
+			var bi = (t, e) => yi(t.getBlockMap(), t, e);
+			const yi = (t, e, n) => {
 					const o = [];
-					let s = e.toStack();
-					for (; s.size;) {
-						const e = s.first(),
-							r = e.getType();
-						switch (s = s.shift(), r) {
-							case R.g.H1:
-							case R.g.H2:
-							case R.g.H3:
-							case R.g.H4:
-							case R.g.H5:
-							case R.g.H6:
-								o.push(ki(e, t));
+					let r = t.toStack();
+					for (; r.size;) {
+						const t = r.first(),
+							s = t.getType();
+						switch (r = r.shift(), s) {
+							case w.g.H1:
+							case w.g.H2:
+							case w.g.H3:
+							case w.g.H4:
+							case w.g.H5:
+							case w.g.H6:
+								o.push(ki(t, e));
 								break;
-							case R.e: {
+							case w.e: {
 								const {
 									popped: n,
-									stack: r
-								} = pi(s, e => e.getType() === R.e);
-								s = r, o.push(Ti([e, ...n], t));
+									stack: s
+								} = pi(r, t => t.getType() === w.e);
+								r = s, o.push(Ti([t, ...n], e));
 								break
 							}
-							case R.f: {
+							case w.f: {
 								const {
-									popped: t,
+									popped: e,
 									stack: n
-								} = pi(s, e => e.getType() === R.f);
-								s = n, o.push(vi([e, ...t]));
+								} = pi(r, t => t.getType() === w.f);
+								r = n, o.push(vi([t, ...e]));
 								break
 							}
-							case R.i.ORDERED:
-							case R.i.UNORDERED: {
+							case w.i.ORDERED:
+							case w.i.UNORDERED: {
 								const {
 									popped: n,
 									stack: i
-								} = pi(s, e => e.getType() === r);
-								s = i, o.push(ji([e, ...n], t));
+								} = pi(r, t => t.getType() === s);
+								r = i, o.push(ji([t, ...n], e));
 								break
 							}
-							case R.l: {
+							case w.l: {
 								const {
 									popped: n,
-									stack: r
-								} = pi(s, e => Object(R.v)(e.getType()));
-								s = r, o.push(_i([e, ...n], t));
+									stack: s
+								} = pi(r, t => Object(w.v)(t.getType()));
+								r = s, o.push(Ri([t, ...n], e));
 								break
 							}
-							case R.a: {
-								let t = s.first();
-								t && Object(R.u)(t.getType()) ? s = s.shift() : t = void 0, o.push(Ri(e, t, n));
+							case w.a: {
+								let e = r.first();
+								e && Object(w.u)(e.getType()) ? r = r.shift() : e = void 0, o.push(wi(t, e, n));
 								break
 							}
-							case R.n:
+							case w.n:
 							default:
-								o.push(Ci(e, t))
+								o.push(xi(t, e))
 						}
 					}
 					return o
 				},
-				Ei = e => e.reduce((e, t) => t === R.k.UNDERLINE || t === R.k.SUBSCRIPT ? e : e | (fi[t] || 0) | 0, 0),
-				Si = (e, t) => {
+				Ei = t => t.reduce((t, e) => e === w.k.UNDERLINE || e === w.k.SUBSCRIPT ? t : t | (fi[e] || 0) | 0, 0),
+				Si = (t, e) => {
 					const n = [],
-						o = Object(hi.b)(e);
-					return Object(ui.a)(t, {
-						keyFn: e => e.getStyle()
-					}, (t, s, r, i) => {
-						if (s.isEmpty()) return;
-						const c = e.slice(r, i),
-							a = r + (c.length - di()(c).length),
+						o = Object(hi.b)(t);
+					return Object(ui.a)(e, {
+						keyFn: t => t.getStyle()
+					}, (e, r, s, i) => {
+						if (r.isEmpty()) return;
+						const c = t.slice(s, i),
+							a = s + (c.length - di()(c).length),
 							l = i - (c.length - ai()(c).length),
 							d = l - a,
 							u = o[a],
 							p = o[l] - u;
-						d > 0 && n.push([Ei(s), u, p])
+						d > 0 && n.push([Ei(r), u, p])
 					}), n.length ? n : null
 				},
-				xi = (e, t) => {
-					const n = e.getText(),
-						o = e.getCharacterList(),
-						s = [],
-						r = R.d.includes(e.getType()),
-						i = R.c.includes(e.getType());
+				Ci = (t, e) => {
+					const n = t.getText(),
+						o = t.getCharacterList(),
+						r = [],
+						s = w.d.includes(t.getType()),
+						i = w.c.includes(t.getType());
 					let c = 0;
 					return Object(ui.a)(o, {
-						keyFn: (e, o) => {
-							const s = e.getEntity();
-							return r && e.getStyle().contains(R.k.SPOILER) ? "spoiler" : Object(F.b)(s, t) ? `link-${e.getEntity()}` : "\n" === n[o] ? i ? "linebreak" : "skip" : s && t.getEntity(s).getType() === F.a.EMOTE ? `emote-${c++}` : "text"
+						keyFn: (t, o) => {
+							const r = t.getEntity();
+							return s && t.getStyle().contains(w.k.SPOILER) ? "spoiler" : Object(F.b)(r, e) ? `link-${t.getEntity()}` : "\n" === n[o] ? i ? "linebreak" : "skip" : r && e.getEntity(r).getType() === F.a.EMOTE ? `emote-${c++}` : "text"
 						}
-					}, (e, r, i, c) => {
+					}, (t, s, i, c) => {
 						const a = n.slice(i, c),
 							l = o.slice(i, c).toList();
-						if ("text" === r) {
-							const e = Si(a, l);
-							s.push(Object(gi.s)(a, e))
-						} else if ("spoiler" === r) s.push(Object(gi.n)(a));
-						else if (r.startsWith("link-")) {
-							const n = t.getEntity(e.getEntity());
-							s.push(((e, t, n) => {
-								const o = e.getType(),
-									s = [F.a.USER_LINK, F.a.USER_MENTION],
+						if ("text" === s) {
+							const t = Si(a, l);
+							r.push(Object(gi.s)(a, t))
+						} else if ("spoiler" === s) r.push(Object(gi.n)(a));
+						else if (s.startsWith("link-")) {
+							const n = e.getEntity(t.getEntity());
+							r.push(((t, e, n) => {
+								const o = t.getType(),
+									r = [F.a.USER_LINK, F.a.USER_MENTION],
 									{
-										url: r
-									} = e.getData(),
-									i = t.startsWith("/");
+										url: s
+									} = t.getData(),
+									i = e.startsWith("/");
 								if (o === F.a.SUBREDDIT_LINK) {
-									const e = t.replace(S.e, "");
-									return Object(gi.o)(e, i)
+									const t = e.replace(S.e, "");
+									return Object(gi.o)(t, i)
 								}
-								if (s.includes(o)) {
-									const e = t.replace(S.a, "");
-									return Object(gi.t)(e, i)
+								if (r.includes(o)) {
+									const t = e.replace(S.a, "");
+									return Object(gi.t)(t, i)
 								}
-								const c = Si(t, n);
-								return Object(gi.i)(t, r, c)
+								const c = Si(e, n);
+								return Object(gi.i)(e, s, c)
 							})(n, a, l))
-						} else if ("linebreak" === r) s.push(Object(gi.h)());
-						else if (r.startsWith("emote-")) {
-							const n = t.getEntity(e.getEntity()).getData();
-							s.push(Object(gi.e)(n.fullId, n.imageType))
+						} else if ("linebreak" === s) r.push(Object(gi.h)());
+						else if (s.startsWith("emote-")) {
+							const n = e.getEntity(t.getEntity()).getData();
+							r.push(Object(gi.e)(n.fullId, n.imageType))
 						}
-					}), s
+					}), r
 				},
-				Ci = (e, t) => Object(gi.l)(xi(e, t)),
-				Oi = e => "text" === e.e ? Object(gi.m)(e.t) : "link" === e.e ? Object(gi.i)(e.t, e.u, null) : e.e === Wn.y ? e.c.map(Oi) : e.e === Wn.n ? Object(gi.m)("") : e,
-				ki = (e, t) => Object(gi.f)(R.m[e.getType()], ((e, t) => ii()(si()(xi(e, t), Oi), (e, t) => {
-					let [n, ...o] = e;
-					if (!n) return [t];
-					const s = o.length ? o : [];
-					return n && "raw" === t.e && "raw" === n.e ? [Object(gi.m)(t.t + n.t), ...s] : [t, n, ...s]
-				}, []))(e, t)),
-				Ti = (e, t) => Object(gi.c)(ni()(e.map(e => ((e, t) => e.getText().trim().length ? Ci(e, t) : gi.a)(e, t)), e => e === gi.a)),
-				vi = e => Object(gi.d)(e.map(e => Object(gi.m)(e.getText()))),
-				ji = (e, t) => {
-					if (!e.length) return Object(gi.k)([], !1);
-					const n = e[0].getDepth();
+				xi = (t, e) => Object(gi.l)(Ci(t, e)),
+				Oi = t => "text" === t.e ? Object(gi.m)(t.t) : "link" === t.e ? Object(gi.i)(t.t, t.u, null) : t.e === Wn.y ? t.c.map(Oi) : t.e === Wn.n ? Object(gi.m)("") : t,
+				ki = (t, e) => Object(gi.f)(w.m[t.getType()], ((t, e) => ii()(ri()(Ci(t, e), Oi), (t, e) => {
+					let [n, ...o] = t;
+					if (!n) return [e];
+					const r = o.length ? o : [];
+					return n && "raw" === e.e && "raw" === n.e ? [Object(gi.m)(e.t + n.t), ...r] : [e, n, ...r]
+				}, []))(t, e)),
+				Ti = (t, e) => Object(gi.c)(ni()(t.map(t => ((t, e) => t.getText().trim().length ? xi(t, e) : gi.a)(t, e)), t => t === gi.a)),
+				vi = t => Object(gi.d)(t.map(t => Object(gi.m)(t.getText()))),
+				ji = (t, e) => {
+					if (!t.length) return Object(gi.k)([], !1);
+					const n = t[0].getDepth();
 					let o = null;
-					const s = [];
-					let r = [];
-					const i = () => null !== o || r.length,
+					const r = [];
+					let s = [];
+					const i = () => null !== o || s.length,
 						c = () => {
-							const e = [];
-							null !== o && (e.push(o), o = null), r.length && (e.push(ji(r, t)), r = []), s.push(Object(gi.j)(e))
+							const t = [];
+							null !== o && (t.push(o), o = null), s.length && (t.push(ji(s, e)), s = []), r.push(Object(gi.j)(t))
 						};
-					return e.forEach(e => {
-						e.getDepth() > n ? r.push(e) : (i() && c(), o = Object(gi.l)(xi(e, t)))
-					}), i() && c(), Object(gi.k)(s, e[0].getType() === R.i.ORDERED)
+					return t.forEach(t => {
+						t.getDepth() > n ? s.push(t) : (i() && c(), o = Object(gi.l)(Ci(t, e)))
+					}), i() && c(), Object(gi.k)(r, t[0].getType() === w.i.ORDERED)
 				},
-				_i = (e, t) => {
-					const n = [...e].sort(Q.b),
+				Ri = (t, e) => {
+					const n = [...t].sort(Q.b),
 						o = n[0],
 						{
-							colCount: s
+							colCount: r
 						} = Object(Q.g)(o),
-						r = W()(n, s),
-						i = r[0].map(e => {
+						s = W()(n, r),
+						i = s[0].map(t => {
 							const {
 								alignment: n
-							} = Object(Q.g)(e);
-							return Object(gi.q)(xi(e, t), n)
+							} = Object(Q.g)(t);
+							return Object(gi.q)(Ci(t, e), n)
 						}),
-						c = r.slice(1).map(e => e.map(e => Object(gi.p)(xi(e, t))));
+						c = s.slice(1).map(t => t.map(t => Object(gi.p)(Ci(t, e))));
 					return Object(gi.r)(i, c)
 				},
-				Ri = (e, t, n) => {
-					const o = Object(N.h)(e);
+				wi = (t, e, n) => {
+					const o = Object(N.h)(t);
 					if (!o) throw new Error("Invalid atomic block!");
 					const {
-						uploadInfo: s,
-						mediaAsset: r,
+						uploadInfo: r,
+						mediaAsset: s,
 						makeGif: i
-					} = o, c = t ? t.getText() : "";
-					if (s && n) {
-						const e = n[s.uploadKey],
-							t = e && e.metadata.mimetype || "",
+					} = o, c = e ? e.getText() : "";
+					if (r && n) {
+						const t = n[r.uploadKey],
+							e = t && t.metadata.mimetype || "",
 							{
-								assetId: r,
+								assetId: s,
 								thumbnailAssetId: a
 							} = Object(N.f)(o, n);
-						return Object(He.l)(t) ? Object(gi.b)(r, c) : Object(He.m)(t) ? Object(gi.g)(r, c) : Object(gi.u)(r, c, a, i)
+						return Object(Ht.l)(e) ? Object(gi.b)(s, c) : Object(Ht.m)(e) ? Object(gi.g)(s, c) : Object(gi.u)(s, c, a, i)
 					} {
 						const {
-							assetId: e,
-							type: t
-						} = r;
+							assetId: t,
+							type: e
+						} = s;
 						let n;
-						switch (t) {
+						switch (e) {
 							case N.a.AnimatedImage:
-								n = Object(gi.b)(e, c);
+								n = Object(gi.b)(t, c);
 								break;
 							case N.a.Image:
-								n = Object(gi.g)(e, c);
+								n = Object(gi.g)(t, c);
 								break;
 							case N.a.Video:
-								n = Object(gi.u)(e, c);
+								n = Object(gi.u)(t, c);
 								break;
 							default:
 								throw new Error("Invalid media type")
 						}
-						return Object(mi.h)(e) ? Object(gi.l)([n]) : n
+						return Object(mi.h)(t) ? Object(gi.l)([n]) : n
 					}
 				};
-			var wi, Ii = n("./src/reddit/constants/componentSizes.ts"),
-				Bi = n("./src/reddit/constants/elementIds.ts");
-			! function(e) {
-				e.Up = "up", e.Down = "down"
-			}(wi || (wi = {}));
-			var Ai = e => {
-					const t = window.getSelection().focusNode;
-					if (!t || !t.parentElement) return;
-					const n = document.getElementById(Bi.e),
+			var Bi, Ii = n("./src/reddit/constants/componentSizes.ts"),
+				_i = n("./src/reddit/constants/elementIds.ts");
+			! function(t) {
+				t.Up = "up", t.Down = "down"
+			}(Bi || (Bi = {}));
+			var Ai = t => {
+					const e = window.getSelection().focusNode;
+					if (!e || !e.parentElement) return;
+					const n = document.getElementById(_i.e),
 						o = n || document.documentElement;
 					if (!o) return;
-					const s = window.innerHeight,
+					const r = window.innerHeight,
 						{
-							bottom: r,
+							bottom: s,
 							top: i
-						} = t.parentElement.getBoundingClientRect(),
+						} = e.parentElement.getBoundingClientRect(),
 						c = n ? 0 : Ii.f + Ii.o;
-					e === wi.Up && i < c ? o.scrollBy(0, i - c) : e === wi.Down && r > s && o.scrollBy(0, r - s)
+					t === Bi.Up && i < c ? o.scrollBy(0, i - c) : t === Bi.Down && s > r && o.scrollBy(0, s - r)
 				},
 				Ki = n("./src/reddit/models/Product/index.ts"),
-				Mi = (e, t, n) => {
+				Mi = (t, e, n) => {
 					const o = {
 						url: n
 					};
-					return e.createEntity(t, "MUTABLE", o)
+					return t.createEntity(e, "MUTABLE", o)
 				},
 				Li = n("./node_modules/lodash/maxBy.js"),
 				Ni = n.n(Li);
-			const Di = (e, t) => {
-				if (!t) return (e => {
-					const t = e.id;
-					switch (e.e) {
+			const Di = (t, e) => {
+				if (!e) return (t => {
+					const e = t.id;
+					switch (t.e) {
 						case Wn.m:
 							return {
-								assetId: t, type: N.a.Image
+								assetId: e, type: N.a.Image
 							};
 						case Wn.a:
 							return {
-								assetId: t, type: N.a.AnimatedImage
+								assetId: e, type: N.a.AnimatedImage
 							};
 						case Wn.E:
 							return {
-								assetId: t, type: N.a.Video
+								assetId: e, type: N.a.Video
 							}
 					}
-				})(e);
-				const n = t.id;
-				switch (t.e) {
+				})(t);
+				const n = e.id;
+				switch (e.e) {
 					case Wn.s: {
 						const {
-							s: e
-						} = t;
+							s: t
+						} = e;
 						return {
 							assetId: n,
 							type: N.a.Image,
-							imageUrl: e.u,
-							width: e.x,
-							height: e.y
+							imageUrl: t.u,
+							width: t.x,
+							height: t.y
 						}
 					}
 					case Wn.r: {
 						const {
-							s: e
-						} = t;
+							s: t
+						} = e;
 						return {
 							assetId: n,
 							type: N.a.AnimatedImage,
-							imageUrl: e.gif,
-							posterUrl: e.p,
-							dashUrl: e.mp4,
-							width: e.x,
-							height: e.y
+							imageUrl: t.gif,
+							posterUrl: t.p,
+							dashUrl: t.mp4,
+							width: t.x,
+							height: t.y
 						}
 					}
 					case Wn.t: {
 						const {
-							isGif: e,
+							isGif: t,
 							dashUrl: o,
-							hlsUrl: s,
-							p: r,
+							hlsUrl: r,
+							p: s,
 							x: i,
 							y: c
-						} = t;
+						} = e;
 						let a;
-						if (r) {
-							a = Ni()(r, e => e.x).u
+						if (s) {
+							a = Ni()(s, t => t.x).u
 						}
 						return {
 							assetId: n,
 							type: N.a.Video,
-							isGif: e,
+							isGif: t,
 							dashUrl: o,
-							hlsUrl: s,
+							hlsUrl: r,
 							posterUrl: a,
 							width: i,
 							height: c
@@ -6145,78 +5954,78 @@
 				}
 			};
 
-			function Fi(e, t, n) {
-				const s = e.id,
-					r = e.c,
-					i = Wn.F(t, s),
-					c = Di(e, i),
+			function Fi(t, e, n) {
+				const r = t.id,
+					s = t.c,
+					i = Wn.F(e, r),
+					c = Di(t, i),
 					a = [new o.ContentBlock({
 						key: Object(o.genKey)(),
-						type: R.a,
+						type: w.a,
 						data: Object(P.Map)({
 							mediaAsset: c
 						})
 					})];
 				if (n) {
-					const e = Object(D.h)(Object(o.genKey)(), r).merge({
-						type: R.j
+					const t = Object(D.h)(Object(o.genKey)(), s).merge({
+						type: w.j
 					});
-					a.push(e)
+					a.push(t)
 				}
 				return a
 			}
 			const Pi = Object.keys(fi),
-				Ui = (e, t, n) => {
-					switch (t.e) {
+				Ui = (t, e, n) => {
+					switch (e.e) {
 						case Wn.v:
-							return Gi(e, t.c, R.b.UNSTYLED, n);
+							return Gi(t, e.c, w.b.UNSTYLED, n);
 						case Wn.k:
-							const o = R.h[t.l];
-							return Gi(e, t.c || [], o, n);
+							const o = w.h[e.l];
+							return Gi(t, e.c || [], o, n);
 						case Wn.p:
-							return zi(e, t, n);
+							return zi(t, e, n);
 						case Wn.b:
-							return Hi(e, t, n);
+							return Hi(t, e, n);
 						case Wn.c:
-							return void t.c.forEach(t => Gi(e, [t], R.b.CODE_BLOCK, n));
+							return void e.c.forEach(e => Gi(t, [e], w.b.CODE_BLOCK, n));
 						case Wn.A:
-							return Wi(e, t, n);
+							return Wi(t, e, n);
 						case Wn.m:
 						case Wn.a:
 						case Wn.E:
-							return void e.blocks.push(...Fi(t, n.mediaMetadataMap, Object(N.q)(n.editorType)))
+							return void t.blocks.push(...Fi(e, n.mediaMetadataMap, Object(N.q)(n.editorType)))
 					}
 				},
-				Hi = (e, t, n) => {
-					t && t.c && t.c.length && t.c.forEach(t => t.e === Wn.v ? Gi(e, t.c, R.b.BLOCK_QUOTE, n) : Ui(e, t, n))
+				Hi = (t, e, n) => {
+					e && e.c && e.c.length && e.c.forEach(e => e.e === Wn.v ? Gi(t, e.c, w.b.BLOCK_QUOTE, n) : Ui(t, e, n))
 				},
-				Wi = (e, t, n) => {
+				Wi = (t, e, n) => {
 					const {
 						h: o,
-						c: s
-					} = t, r = o.length;
-					[o, ...s].forEach((t, s) => t.forEach((t, i) => {
+						c: r
+					} = e, s = o.length;
+					[o, ...r].forEach((e, r) => e.forEach((e, i) => {
 						const {
 							c = []
-						} = t, {
+						} = e, {
 							a
 						} = o[i], l = {
 							alignment: a,
-							colCount: r,
+							colCount: s,
 							colIndex: i,
-							rowIndex: s
+							rowIndex: r
 						};
-						Gi(e, c, R.b.TABLE_CELL, n, l)
+						Gi(t, c, w.b.TABLE_CELL, n, l)
 					}))
 				},
-				zi = function(e, t, n) {
+				zi = function(t, e, n) {
 					let o = arguments.length > 3 && void 0 !== arguments[3] ? arguments[3] : 0;
-					const s = t.o ? R.b.ORDERED_LIST : R.b.UNORDERED_LIST;
-					t.c.forEach(t => {
-						const r = t.c;
-						if (!r || !r.length) return;
-						const [i, c] = r, a = i.e === Wn.v ? i.c : [];
-						Gi(e, a, s, n, void 0, o), c && c.e === Wn.p && zi(e, c, n, o + 1)
+					const r = e.o ? w.b.ORDERED_LIST : w.b.UNORDERED_LIST;
+					e.c.forEach(e => {
+						const s = e.c;
+						if (!s || !s.length) return;
+						const [i, c] = s, a = i.e === Wn.v ? i.c : [];
+						Gi(t, a, r, n, void 0, o), c && c.e === Wn.p && zi(t, c, n, o + 1)
 					})
 				},
 				qi = {
@@ -6233,82 +6042,82 @@
 					[Wn.w]: F.a.POST_LINK,
 					[Wn.g]: F.a.COMMENT_LINK
 				},
-				Gi = function(e, t, n, s) {
-					let r = arguments.length > 4 && void 0 !== arguments[4] ? arguments[4] : {},
+				Gi = function(t, e, n, r) {
+					let s = arguments.length > 4 && void 0 !== arguments[4] ? arguments[4] : {},
 						i = arguments.length > 5 ? arguments[5] : void 0,
 						c = arguments.length > 6 && void 0 !== arguments[6] && arguments[6];
-					const a = e.content;
-					if (1 === t.length && (t[0].e === Wn.m || t[0].e === Wn.a)) {
-						const n = t[0];
-						if (Object(mi.h)(n.id)) return void e.blocks.push(...Fi(n, s.mediaMetadataMap, Object(N.q)(s.editorType)))
+					const a = t.content;
+					if (1 === e.length && (e[0].e === Wn.m || e[0].e === Wn.a)) {
+						const n = e[0];
+						if (Object(mi.h)(n.id)) return void t.blocks.push(...Fi(n, r.mediaMetadataMap, Object(N.q)(r.editorType)))
 					}
 					const {
 						charList: l,
 						text: d,
 						updatedContent: u
-					} = Yi(t, a, s), p = new o.ContentBlock({
+					} = Yi(e, a, r), p = new o.ContentBlock({
 						key: Object(o.genKey)(),
 						characterList: Object(P.List)(l),
-						data: Object(P.fromJS)(r),
+						data: Object(P.fromJS)(s),
 						depth: i,
 						text: d,
 						type: n
 					});
-					e.content = u || a, c ? e.blocks.unshift(p) : e.blocks.push(p)
+					t.content = u || a, c ? t.blocks.unshift(p) : t.blocks.push(p)
 				},
-				Yi = (e, t, n) => {
-					let o = t,
-						s = "";
-					const r = [];
-					if (e.forEach(e => {
-							const t = Qi(e, o, n);
-							o = t.updatedContent || o, s += t.text, r.push(...t.charList)
-						}), s.length !== r.length) throw new Error("Characters length mismatch!");
+				Yi = (t, e, n) => {
+					let o = e,
+						r = "";
+					const s = [];
+					if (t.forEach(t => {
+							const e = Qi(t, o, n);
+							o = e.updatedContent || o, r += e.text, s.push(...e.charList)
+						}), r.length !== s.length) throw new Error("Characters length mismatch!");
 					return {
-						charList: r,
-						text: s,
-						updatedContent: o !== t ? o : void 0
+						charList: s,
+						text: r,
+						updatedContent: o !== e ? o : void 0
 					}
 				},
-				Qi = (e, t, n) => {
-					switch (e.e) {
+				Qi = (t, e, n) => {
+					switch (t.e) {
 						case Wn.B: {
 							const {
-								t,
+								t: e,
 								f: n
-							} = e;
+							} = t;
 							return {
-								charList: Xi(t, n),
-								text: t
+								charList: Xi(e, n),
+								text: e
 							}
 						}
 						case Wn.y: {
 							const {
-								c: s
-							} = e, r = Yi(s, t, n);
-							return r.charList = r.charList.map(e => (e => o.CharacterMetadata.create({
-								style: e.getStyle().add(R.k.SPOILER),
-								entity: e.getEntity()
-							}))(e)), r
+								c: r
+							} = t, s = Yi(r, e, n);
+							return s.charList = s.charList.map(t => (t => o.CharacterMetadata.create({
+								style: t.getStyle().add(w.k.SPOILER),
+								entity: t.getEntity()
+							}))(t)), s
 						}
 						case Wn.w:
 						case Wn.g:
 						case Wn.x: {
 							const {
-								t
-							} = e;
+								t: e
+							} = t;
 							return {
-								charList: Xi(t),
-								text: t
+								charList: Xi(e),
+								text: e
 							}
 						}
 						case Wn.z:
 						case Wn.C:
 						case Wn.D: {
-							const [n, o] = qi[e.e], s = (e.l ? "/" : "") + n + e.t, r = o + e.t, i = Mi(t, Vi[e.e], r), c = i.getLastCreatedEntityKey();
+							const [n, o] = qi[t.e], r = (t.l ? "/" : "") + n + t.t, s = o + t.t, i = Mi(e, Vi[t.e], s), c = i.getLastCreatedEntityKey();
 							return {
-								charList: Xi(s, void 0, c),
-								text: s,
+								charList: Xi(r, void 0, c),
+								text: r,
 								updatedContent: i
 							}
 						}
@@ -6316,36 +6125,36 @@
 							const {
 								t: n,
 								u: o,
-								f: s
-							} = e, r = Mi(t, F.a.LINK, o), i = r.getLastCreatedEntityKey();
+								f: r
+							} = t, s = Mi(e, F.a.LINK, o), i = s.getLastCreatedEntityKey();
 							return {
-								charList: Xi(n, s, i),
+								charList: Xi(n, r, i),
 								text: n,
-								updatedContent: r
+								updatedContent: s
 							}
 						}
 						case Wn.m:
 						case Wn.a:
 							const {
-								id: s
-							} = e;
-							if (s.startsWith("emote|")) {
-								const e = Object(Ki.b)(s),
-									o = n.activeEmotes && n.activeEmotes[e];
+								id: r
+							} = t;
+							if (r.startsWith("emote|")) {
+								const t = Object(Ki.b)(r),
+									o = n.activeEmotes && n.activeEmotes[t];
 								if (o) {
-									const e = Object(Oo.c)(t, o),
-										n = e.getLastCreatedEntityKey(),
-										s = Oo.a;
+									const t = Object(Oo.c)(e, o),
+										n = t.getLastCreatedEntityKey(),
+										r = Oo.a;
 									return {
-										charList: Xi(s, void 0, n),
-										text: s,
-										updatedContent: e
+										charList: Xi(r, void 0, n),
+										text: r,
+										updatedContent: t
 									}
 								}
-								const r = `:${e}:`;
+								const s = `:${t}:`;
 								return {
-									charList: Xi(r),
-									text: r
+									charList: Xi(s),
+									text: s
 								}
 							}
 							return {
@@ -6357,46 +6166,46 @@
 							}
 					}
 				},
-				Ji = e => {
-					const t = Pi.filter(t => !!(fi[t] & e));
-					return Object(P.OrderedSet)(t)
+				Ji = t => {
+					const e = Pi.filter(e => !!(fi[e] & t));
+					return Object(P.OrderedSet)(e)
 				},
-				Xi = function(e, t) {
+				Xi = function(t, e) {
 					let n = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : null;
-					const s = o.CharacterMetadata.create({
+					const r = o.CharacterMetadata.create({
 							entity: n
 						}),
-						r = Array(e.length).fill(s),
-						i = Object(hi.a)(e);
-					return t && t.forEach(e => {
-						const [t, s, c] = e, a = Ji(t), l = s + c, d = o.CharacterMetadata.create({
+						s = Array(t.length).fill(r),
+						i = Object(hi.a)(t);
+					return e && e.forEach(t => {
+						const [e, r, c] = t, a = Ji(e), l = r + c, d = o.CharacterMetadata.create({
 							entity: n,
 							style: a
 						});
-						r.fill(d, i[s], i[l])
-					}), r
+						s.fill(d, i[r], i[l])
+					}), s
 				},
-				Zi = (e, t) => {
-					e.blocks.length && (e.blocks[0].getType() === R.b.TABLE_CELL && Gi(e, [], R.b.UNSTYLED, t, void 0, void 0, !0), e.blocks[e.blocks.length - 1].getType() === R.b.TABLE_CELL && Gi(e, [], R.b.UNSTYLED, t))
+				Zi = (t, e) => {
+					t.blocks.length && (t.blocks[0].getType() === w.b.TABLE_CELL && Gi(t, [], w.b.UNSTYLED, e, void 0, void 0, !0), t.blocks[t.blocks.length - 1].getType() === w.b.TABLE_CELL && Gi(t, [], w.b.UNSTYLED, e))
 				};
-			var $i = (e, t, n, s) => {
-					const r = "string" == typeof e ? JSON.parse(e) : e;
-					if (!r || !r.document || !r.document.length) return null;
+			var $i = (t, e, n, r) => {
+					const s = "string" == typeof t ? JSON.parse(t) : t;
+					if (!s || !s.document || !s.document.length) return null;
 					const i = {
-							editorType: t,
+							editorType: e,
 							mediaMetadataMap: n,
-							activeEmotes: s ? s.reduce((e, t) => ({
-								...e,
-								...t.emotes
+							activeEmotes: r ? r.reduce((t, e) => ({
+								...t,
+								...e.emotes
 							}), {}) : void 0
 						},
 						c = {
 							blocks: [],
 							content: o.ContentState.createFromText("")
 						};
-					r.document.forEach(e => {
-						Ui(c, e, i)
-					}), 0 === c.blocks.length && Gi(c, [], R.b.UNSTYLED, i), Zi(c, i);
+					s.document.forEach(t => {
+						Ui(c, t, i)
+					}), 0 === c.blocks.length && Gi(c, [], w.b.UNSTYLED, i), Zi(c, i);
 					const a = o.BlockMapBuilder.createFromArray(c.blocks),
 						l = o.SelectionState.createEmpty(a.first().getKey());
 					return c.content.merge({
@@ -6405,26 +6214,26 @@
 						selectionAfter: l
 					})
 				},
-				ec = n("./src/reddit/components/UserIcon/CurrentUserIcon.tsx"),
-				tc = n("./src/reddit/components/UsersCountIndicator/constants.ts"),
+				tc = n("./src/reddit/components/UserIcon/CurrentUserIcon.tsx"),
+				ec = n("./src/reddit/components/UsersCountIndicator/constants.ts"),
 				nc = n("./src/reddit/constants/elementClassNames.ts"),
 				oc = n("./src/reddit/constants/keycodes.ts"),
-				sc = n("./src/reddit/helpers/correlationIdTracker.ts"),
-				rc = n("./src/reddit/icons/svgs/Send/index.tsx"),
+				rc = n("./src/reddit/helpers/correlationIdTracker.ts"),
+				sc = n("./src/reddit/icons/svgs/Send/index.tsx"),
 				ic = n("./src/reddit/selectors/economics.ts"),
 				cc = n("./src/reddit/components/RichTextEditor/index.m.less"),
 				ac = n.n(cc);
 
 			function lc() {
-				return (lc = Object.assign || function(e) {
-					for (var t = 1; t < arguments.length; t++) {
-						var n = arguments[t];
-						for (var o in n) Object.prototype.hasOwnProperty.call(n, o) && (e[o] = n[o])
+				return (lc = Object.assign || function(t) {
+					for (var e = 1; e < arguments.length; e++) {
+						var n = arguments[e];
+						for (var o in n) Object.prototype.hasOwnProperty.call(n, o) && (t[o] = n[o])
 					}
-					return e
+					return t
 				}).apply(this, arguments)
 			}
-			Object(xr.b)({
+			Object(Cs.b)({
 				draftToRTFJson: bi,
 				getMediaCount: N.g,
 				getPendingThumbnailUploads: N.i,
@@ -6434,357 +6243,357 @@
 				uc = "not-handled",
 				pc = /^\s*$/,
 				hc = 20,
-				mc = E.a.wrapped(ds.a, "FocusableContent", ac.a),
+				mc = E.a.wrapped(dr.a, "FocusableContent", ac.a),
 				gc = E.a.div("Container", ac.a),
-				fc = E.a.wrapped(ec.a, "CurrentUserIcon", ac.a),
-				bc = e => `${T.b}-${e}`,
+				fc = E.a.wrapped(tc.a, "CurrentUserIcon", ac.a),
+				bc = t => `${T.b}-${t}`,
 				yc = Object(h.b)(() => {
-					const e = (() => Object(m.a)(e => e.uploads, (e, t) => t.rteState.editorKey, (e, t) => a()(e, e => e.key.startsWith(bc(t)))))();
+					const t = (() => Object(m.a)(t => t.uploads, (t, e) => e.rteState.editorKey, (t, e) => a()(t, t => t.key.startsWith(bc(e)))))();
 					return Object(m.c)({
-						editorUploads: e,
+						editorUploads: t,
 						emotesSpecialMembershipEnabled: v.d.spEmotes,
 						giphySpecialMembershipEnabled: v.d.spGiphy,
-						activeEmotes: (e, t) => {
+						activeEmotes: (t, e) => {
 							var n;
-							return Object(ic.b)(e, {
-								subredditId: null === (n = t.destSubreddit) || void 0 === n ? void 0 : n.id
+							return Object(ic.b)(t, {
+								subredditId: null === (n = e.destSubreddit) || void 0 === n ? void 0 : n.id
 							})
 						},
-						shouldShowCommentGifsTooltip: (e, t) => {
+						shouldShowCommentGifsTooltip: (t, e) => {
 							var n;
-							return Object(_o.c)(e, {
-								subredditId: null === (n = t.destSubreddit) || void 0 === n ? void 0 : n.id
+							return Object(Ro.c)(t, {
+								subredditId: null === (n = e.destSubreddit) || void 0 === n ? void 0 : n.id
 							})
 						}
 					})
-				}, e => ({
-					onFetchEditorProducts: t => e(Object(k.e)(t)),
-					onTrackMediaDrop: t => e((e, n) => j.t(n(), t)),
-					retryUpload: (t, n) => e(T.c(t, n)),
-					startUploads: (t, n, o, s, r, i) => e(T.e(t, n, bc(o), s, r, i))
+				}, t => ({
+					onFetchEditorProducts: e => t(Object(k.e)(e)),
+					onTrackMediaDrop: e => t((t, n) => j.t(n(), e)),
+					retryUpload: (e, n) => t(T.c(e, n)),
+					startUploads: (e, n, o, r, s, i) => t(T.e(e, n, bc(o), r, s, i))
 				}));
 			class Ec extends u.Component {
-				constructor(e) {
-					super(e), this.blockRenderMap = o.DefaultDraftBlockRenderMap.merge(ms, bs, Kn, fr, Sr, Dr, an), this.editorHeight = null, this.editorRef = null, this.editorRootStyleMutationObserver = null, this.linksControllerApi = null, this.suggestionDropdownApi = null, this.tableToolbarControllerApi = null, this.emotesTooltipApi = null, this.gifTooltipApi = null, this.updateSuggestionDropdownPosition = null, this.isJustAutocompleteSelected = !1, this.isJustLinkified = !1, this.isMouseDown = !1, this.isJustConvertedToList = !1, this.needSyncScroll = null, this.transforms = {
-						[w.BREAK_HEADER_ENTITY]: yo.b,
-						[w.INSERT_LINE_BREAK]: yo.e,
-						[w.REDUCE_LIST_INDENT]: yo.f,
-						[w.RESET_CURRENT_AND_PREVIOUS_BLOCKS]: yo.g,
-						[w.REMOVE_EXTRA_LIST_ITEM]: yo.h,
-						[K.d]: e => Xo(e, this.props.editorType),
-						[K.b]: e => Jo(e, this.props.editorType),
+				constructor(t) {
+					super(t), this.blockRenderMap = o.DefaultDraftBlockRenderMap.merge(mr, br, Kn, fs, Ss, Ds, an), this.editorHeight = null, this.editorRef = null, this.editorRootStyleMutationObserver = null, this.linksControllerApi = null, this.suggestionDropdownApi = null, this.tableToolbarControllerApi = null, this.emotesTooltipApi = null, this.gifTooltipApi = null, this.updateSuggestionDropdownPosition = null, this.isJustAutocompleteSelected = !1, this.isJustLinkified = !1, this.isMouseDown = !1, this.isJustConvertedToList = !1, this.needSyncScroll = null, this.transforms = {
+						[B.BREAK_HEADER_ENTITY]: yo.b,
+						[B.INSERT_LINE_BREAK]: yo.e,
+						[B.REDUCE_LIST_INDENT]: yo.f,
+						[B.RESET_CURRENT_AND_PREVIOUS_BLOCKS]: yo.g,
+						[B.REMOVE_EXTRA_LIST_ITEM]: yo.h,
+						[K.d]: t => Xo(t, this.props.editorType),
+						[K.b]: t => Jo(t, this.props.editorType),
 						[K.f]: yo.d,
-						[K.c]: e => Object(yo.c)(R.k.BOLD, e),
-						[K.e]: e => Object(yo.c)(R.k.ITALIC, e),
-						[K.g]: e => Object(yo.c)(R.k.UNDERLINE, e)
-					}, this.realtimeGQLVariables = void 0, this.setContainerRef = e => {
+						[K.c]: t => Object(yo.c)(w.k.BOLD, t),
+						[K.e]: t => Object(yo.c)(w.k.ITALIC, t),
+						[K.g]: t => Object(yo.c)(w.k.UNDERLINE, t)
+					}, this.realtimeGQLVariables = void 0, this.setContainerRef = t => {
 						const {
-							domRef: t
+							domRef: e
 						} = this.props;
-						t && t(e), this.setState({
-							containerRef: e
+						e && e(t), this.setState({
+							containerRef: t
 						})
-					}, this.setFocusableContentRef = e => this.setState({
-						focusableContentRef: e
+					}, this.setFocusableContentRef = t => this.setState({
+						focusableContentRef: t
 					}), this.setUserStoppedTyping = i()(() => this.setState({
 						isUserTyping: !1
-					}), tc.c), this.rteStateChanged = (e, t) => {
+					}), ec.c), this.rteStateChanged = (t, e) => {
 						const n = {
 							...this.props.rteState,
 							isBound: !0,
-							editorState: e
+							editorState: t
 						};
-						this.props.onChange(n, t), this.props.isTypingIndicatorsWriteTestEnabled && t && (this.state.isUserTyping || this.setState({
+						this.props.onChange(n, e), this.props.isTypingIndicatorsWriteTestEnabled && e && (this.state.isUserTyping || this.setState({
 							isUserTyping: !0
 						}), this.setUserStoppedTyping())
 					}, this.hideTooltips = () => {
 						this.emotesTooltipApi && this.emotesTooltipApi.closeTooltip(), this.gifTooltipApi && this.gifTooltipApi.closeTooltip(), this.tableToolbarControllerApi && this.tableToolbarControllerApi.hideActionButton(), this.linksControllerApi && this.linksControllerApi.hidePopup(), this.suppressAutocompleteForFocusedLink()
 					}, this.onEditorStyleChanged = () => {
 						if (!this.editorRef) return;
-						const e = this.editorRef.refs.editor,
-							t = e.style.height ? Number.parseInt(e.style.height) : null;
-						this.editorHeight !== t && (this.hideTooltips(), this.editorHeight = t, t && this.props.onEditorResize && this.props.onEditorResize(t))
+						const t = this.editorRef.refs.editor,
+							e = t.style.height ? Number.parseInt(t.style.height) : null;
+						this.editorHeight !== e && (this.hideTooltips(), this.editorHeight = e, e && this.props.onEditorResize && this.props.onEditorResize(e))
 					}, this.insertValidatedMedia = () => {
 						const {
-							editorUploads: e,
-							shouldOmitImageCaptionBlock: t
+							editorUploads: t,
+							shouldOmitImageCaptionBlock: e
 						} = this.props, {
 							editorState: n,
 							mediaToInsert: o
 						} = this.state;
 						if (!o) return;
 						const {
-							files: s,
-							blockKey: r,
+							files: r,
+							blockKey: s,
 							insertionMode: i
-						} = o, c = s.map(t => e.find(e => e.file === t)).filter(Boolean);
+						} = o, c = r.map(e => t.find(t => t.file === e)).filter(Boolean);
 						this.setState({
 							mediaToInsert: null
 						});
-						const a = c.filter(e => !!e.metadata.mimetype);
-						a.length && this.onChange(Object(N.l)(n, a, r, i, t))
-					}, this.focus = () => this.editorRef && this.editorRef.focus(), this.blur = () => this.editorRef && this.editorRef.blur(), this.isFocused = () => this.state.editorState.getSelection().getHasFocus(), this.isEmpty = () => !this.state.editorState.getCurrentContent().hasText(), this.setEditorRef = e => this.editorRef = e, this.setSuggestionDropdownApi = e => this.suggestionDropdownApi = e, this.setLinksControllerApi = e => this.linksControllerApi = e, this.setTableToolbarControllerApi = e => this.tableToolbarControllerApi = e, this.setEmotesTooltipApi = e => this.emotesTooltipApi = e, this.setGifTooltipApi = e => this.gifTooltipApi = e, this.setSuggestionDropdownPositionUpdater = e => this.updateSuggestionDropdownPosition = e, this.getEditorState = () => this.state.editorState, this.setEditorState = (e, t) => {
-						const n = this.state.editorState.getCurrentContent() !== e.getCurrentContent();
+						const a = c.filter(t => !!t.metadata.mimetype);
+						a.length && this.onChange(Object(N.l)(n, a, s, i, e))
+					}, this.focus = () => this.editorRef && this.editorRef.focus(), this.blur = () => this.editorRef && this.editorRef.blur(), this.isFocused = () => this.state.editorState.getSelection().getHasFocus(), this.isEmpty = () => !this.state.editorState.getCurrentContent().hasText(), this.setEditorRef = t => this.editorRef = t, this.setSuggestionDropdownApi = t => this.suggestionDropdownApi = t, this.setLinksControllerApi = t => this.linksControllerApi = t, this.setTableToolbarControllerApi = t => this.tableToolbarControllerApi = t, this.setEmotesTooltipApi = t => this.emotesTooltipApi = t, this.setGifTooltipApi = t => this.gifTooltipApi = t, this.setSuggestionDropdownPositionUpdater = t => this.updateSuggestionDropdownPosition = t, this.getEditorState = () => this.state.editorState, this.setEditorState = (t, e) => {
+						const n = this.state.editorState.getCurrentContent() !== t.getCurrentContent();
 						n && this.props.readOnly || (this.setState({
-							editorState: e
-						}, t), this.rteStateChanged(e, n))
-					}, this.toolbarSetState = e => {
-						const t = e.getInlineStyleOverride();
-						let n = e;
-						n.getSelection().getHasFocus() || (n = o.EditorState.forceSelection(n, n.getSelection()), t && (n = o.EditorState.setInlineStyleOverride(n, t))), this.onChange(n)
-					}, this.onChange = (e, t) => {
-						let n = e;
-						n = Cn(n, this.state.editorState), n = Ne(n, this.props.editorType), this.emotesTooltipApi && (n = Object(Oo.d)(n, this.state.editorState)), n = zo(n, this.state.editorState), n = Object(ns.d)(n, this.state.editorState), this.setEditorState(n, t);
+							editorState: t
+						}, e), this.rteStateChanged(t, n))
+					}, this.toolbarSetState = t => {
+						const e = t.getInlineStyleOverride();
+						let n = t;
+						n.getSelection().getHasFocus() || (n = o.EditorState.forceSelection(n, n.getSelection()), e && (n = o.EditorState.setInlineStyleOverride(n, e))), this.onChange(n)
+					}, this.onChange = (t, e) => {
+						let n = t;
+						n = xn(n, this.state.editorState), n = Nt(n, this.props.editorType), this.emotesTooltipApi && (n = Object(Oo.d)(n, this.state.editorState)), n = zo(n, this.state.editorState), n = Object(nr.d)(n, this.state.editorState), this.setEditorState(n, e);
 						let {
 							suppressAutocompleteForLink: o
 						} = this.state;
 						if (o) {
-							const t = Object(Mo.b)(e);
-							t && t.entityKey === o || (o = null)
+							const e = Object(Mo.b)(t);
+							e && e.entityKey === o || (o = null)
 						}
 						this.setState({
 							suppressAutocompleteForLink: o
 						}), this.isJustAutocompleteSelected = !1, this.isJustLinkified = !1, this.isMouseDown = !1, this.isJustConvertedToList = !1
 					}, this.onFocus = () => {
 						const {
-							onFocus: e
+							onFocus: t
 						} = this.props;
-						this.emotesTooltipApi && this.emotesTooltipApi.closeTooltip(), this.gifTooltipApi && this.gifTooltipApi.closeTooltip(), e && (Object(sc.d)(sc.a.CommentComposer, !1), e())
-					}, this.handleBeforeInput = e => {
+						this.emotesTooltipApi && this.emotesTooltipApi.closeTooltip(), this.gifTooltipApi && this.gifTooltipApi.closeTooltip(), t && (Object(rc.d)(rc.a.CommentComposer, !1), t())
+					}, this.handleBeforeInput = t => {
 						const {
-							editorState: t
+							editorState: e
 						} = this.state;
 						if (this.isMouseDown) return dc;
-						if (Le(t, e)) return dc;
-						let n = function(e, t) {
-							const n = e.getSelection(),
-								s = n.getFocusOffset();
-							if (!n.isCollapsed() || 0 === s) return;
-							const r = n.getFocusKey(),
-								i = e.getCurrentContent(),
-								c = i.getBlockForKey(r),
-								a = c.getEntityAt(s - 1),
-								l = c.getEntityAt(s);
+						if (Lt(e, t)) return dc;
+						let n = function(t, e) {
+							const n = t.getSelection(),
+								r = n.getFocusOffset();
+							if (!n.isCollapsed() || 0 === r) return;
+							const s = n.getFocusKey(),
+								i = t.getCurrentContent(),
+								c = i.getBlockForKey(s),
+								a = c.getEntityAt(r - 1),
+								l = c.getEntityAt(r);
 							if (!(a && (!l || l !== a))) return;
 							const d = i.getEntity(a),
 								u = Ko.has(d.getType());
 							if ("MUTABLE" === d.getMutability() && u) {
-								const s = o.Modifier.insertText(i, n, t, e.getCurrentInlineStyle());
-								return o.EditorState.push(e, s, "insert-characters")
+								const r = o.Modifier.insertText(i, n, e, t.getCurrentInlineStyle());
+								return o.EditorState.push(t, r, "insert-characters")
 							}
-						}(t, e) || t;
-						return (n = yn(n, e) || n) !== t ? (this.onChange(n), dc) : uc
-					}, this.keyBindingFN = e => {
+						}(e, t) || e;
+						return (n = yn(n, t) || n) !== e ? (this.onChange(n), dc) : uc
+					}, this.keyBindingFN = t => {
 						const {
-							editorState: t
+							editorState: e
 						} = this.state, {
 							submitOnEnter: n
-						} = this.props, s = t.getSelection();
-						if (e.metaKey && e.keyCode === oc.a.K) return w.OPEN_LINK_TOOLTIP;
-						if (e.keyCode === oc.a.Space) {
-							if (es(t)) return w.CONVERT_TO_LIST_ON_SPACE;
-							if (Object(Mo.d)(t)) return w.LINKIFY_ON_SPACE
-						} else if (e.keyCode === oc.a.Enter) {
-							if (e.ctrlKey || e.metaKey || n && !e.shiftKey) return w.SUBMIT;
-							if (e.shiftKey && Zo(t)) return w.INSERT_LINE_BREAK; {
-								const e = this.enterKeyBinding(t);
-								if (e) return e
+						} = this.props, r = e.getSelection();
+						if (t.metaKey && t.keyCode === oc.a.K) return B.OPEN_LINK_TOOLTIP;
+						if (t.keyCode === oc.a.Space) {
+							if (tr(e)) return B.CONVERT_TO_LIST_ON_SPACE;
+							if (Object(Mo.d)(e)) return B.LINKIFY_ON_SPACE
+						} else if (t.keyCode === oc.a.Enter) {
+							if (t.ctrlKey || t.metaKey || n && !t.shiftKey) return B.SUBMIT;
+							if (t.shiftKey && Zo(e)) return B.INSERT_LINE_BREAK; {
+								const t = this.enterKeyBinding(e);
+								if (t) return t
 							}
-						} else if (e.keyCode === oc.a.Backspace) {
+						} else if (t.keyCode === oc.a.Backspace) {
 							if (this.isJustLinkified || this.isJustConvertedToList) return K.h;
-							if (s.isCollapsed()) {
-								const e = t.getCurrentContent(),
-									n = s.getEndKey(),
-									o = s.getStartOffset(),
-									r = e.getBlockForKey(n),
-									i = r.getType();
-								if ((Object(R.s)(i) || Object(R.q)(i) || Object(R.p)(i)) && 0 === o && r.getLength() > 0) {
-									const t = e.getBlockBefore(n);
-									if (!t || t.getType() !== i) return w.MAKE_PLAIN_BLOCK
+							if (r.isCollapsed()) {
+								const t = e.getCurrentContent(),
+									n = r.getEndKey(),
+									o = r.getStartOffset(),
+									s = t.getBlockForKey(n),
+									i = s.getType();
+								if ((Object(w.s)(i) || Object(w.q)(i) || Object(w.p)(i)) && 0 === o && s.getLength() > 0) {
+									const e = t.getBlockBefore(n);
+									if (!e || e.getType() !== i) return B.MAKE_PLAIN_BLOCK
 								}
 							}
 						}
-						return Object(o.getDefaultKeyBinding)(e)
-					}, this.handleKeyCommand = e => {
+						return Object(o.getDefaultKeyBinding)(t)
+					}, this.handleKeyCommand = t => {
 						const {
-							editorState: t
+							editorState: e
 						} = this.state;
-						let n = e,
-							s = null;
-						const r = e => {
-							let t = e;
-							if (s) {
+						let n = t,
+							r = null;
+						const s = t => {
+							let e = t;
+							if (r) {
 								const {
-									selection: e,
+									selection: t,
 									url: n
-								} = s;
-								t = Object(Mo.f)(t, e, n)
+								} = r;
+								e = Object(Mo.f)(e, t, n)
 							}
-							return this.onChange(t), this.isJustLinkified = !!s, dc
+							return this.onChange(e), this.isJustLinkified = !!r, dc
 						};
-						if (n === w.SUBMIT) this.props.onSubmit();
+						if (n === B.SUBMIT) this.props.onSubmit();
 						else {
-							if (n === w.CONVERT_TO_LIST_ON_SPACE) {
-								const e = r(ts(t));
-								return this.isJustConvertedToList = !0, e
+							if (n === B.CONVERT_TO_LIST_ON_SPACE) {
+								const t = s(er(e));
+								return this.isJustConvertedToList = !0, t
 							}
-							if (n === w.LINKIFY_ON_SPACE) return s = Object(Mo.d)(t), r(Object(yo.a)(t));
-							if (n === w.LINKIFY_ON_ENTER && (s = Object(Mo.d)(t), !(n = this.enterKeyBinding(t, !1)))) return r(Object(yo.d)(t))
+							if (n === B.LINKIFY_ON_SPACE) return r = Object(Mo.d)(e), s(Object(yo.a)(e));
+							if (n === B.LINKIFY_ON_ENTER && (r = Object(Mo.d)(e), !(n = this.enterKeyBinding(e, !1)))) return s(Object(yo.d)(e))
 						}
-						if (n === w.OPEN_LINK_TOOLTIP) return this.onToolbarLinkButtonClick(), dc;
-						if (n === w.MAKE_PLAIN_BLOCK) {
-							return r(Object(yo.i)(R.n, t))
+						if (n === B.OPEN_LINK_TOOLTIP) return this.onToolbarLinkButtonClick(), dc;
+						if (n === B.MAKE_PLAIN_BLOCK) {
+							return s(Object(yo.i)(w.n, e))
 						}
-						if (n === w.EXEC_TABLE_ON_ENTER_HANDLER) return r(this.tableOnEnterHandler.handle(t));
+						if (n === B.EXEC_TABLE_ON_ENTER_HANDLER) return s(this.tableOnEnterHandler.handle(e));
 						const i = this.transforms[n];
 						if (i) {
-							const e = i(t);
-							if (e) return r(e)
+							const t = i(e);
+							if (t) return s(t)
 						}
-						const c = o.RichUtils.handleKeyCommand(t, n);
-						return c ? r(c) : uc
-					}, this.handleOnTab = e => {
-						if (this.emotesTooltipApi && this.emotesTooltipApi.handleTabInEditor() || this.suggestionDropdownApi && this.suggestionDropdownApi.selectCurrent()) return void e.preventDefault();
+						const c = o.RichUtils.handleKeyCommand(e, n);
+						return c ? s(c) : uc
+					}, this.handleOnTab = t => {
+						if (this.emotesTooltipApi && this.emotesTooltipApi.handleTabInEditor() || this.suggestionDropdownApi && this.suggestionDropdownApi.selectCurrent()) return void t.preventDefault();
 						const {
-							editorState: t
+							editorState: e
 						} = this.state;
-						let n = mn(e, t);
-						if (n = n || Qo(e, t)) return void this.onChange(n);
-						const s = o.RichUtils.onTab(e, t, 2);
-						this.onChange(s)
-					}, this.handleOnUpArrow = e => {
-						if (this.emotesTooltipApi && this.emotesTooltipApi.handleUpArrowInEditor() || this.suggestionDropdownApi && this.suggestionDropdownApi.moveUp()) return void e.preventDefault();
-						const t = gn(e, this.state.editorState) || Ke(e, this.state.editorState);
-						t && this.onChange(t), this.needSyncScroll = wi.Up
-					}, this.handleOnDownArrow = e => {
-						if (this.suggestionDropdownApi && this.suggestionDropdownApi.moveDown()) return void e.preventDefault();
-						const t = fn(e, this.state.editorState) || Me(e, this.state.editorState);
-						t && this.onChange(t), this.needSyncScroll = wi.Down
-					}, this.handleReturn = e => {
-						const t = Be(this.state.editorState);
-						return t ? (this.onChange(t), e.preventDefault(), dc) : this.suggestionDropdownApi && this.suggestionDropdownApi.selectCurrent() ? (e.preventDefault(), dc) : uc
+						let n = mn(t, e);
+						if (n = n || Qo(t, e)) return void this.onChange(n);
+						const r = o.RichUtils.onTab(t, e, 2);
+						this.onChange(r)
+					}, this.handleOnUpArrow = t => {
+						if (this.emotesTooltipApi && this.emotesTooltipApi.handleUpArrowInEditor() || this.suggestionDropdownApi && this.suggestionDropdownApi.moveUp()) return void t.preventDefault();
+						const e = gn(t, this.state.editorState) || Kt(t, this.state.editorState);
+						e && this.onChange(e), this.needSyncScroll = Bi.Up
+					}, this.handleOnDownArrow = t => {
+						if (this.suggestionDropdownApi && this.suggestionDropdownApi.moveDown()) return void t.preventDefault();
+						const e = fn(t, this.state.editorState) || Mt(t, this.state.editorState);
+						e && this.onChange(e), this.needSyncScroll = Bi.Down
+					}, this.handleReturn = t => {
+						const e = _t(this.state.editorState);
+						return e ? (this.onChange(e), t.preventDefault(), dc) : this.suggestionDropdownApi && this.suggestionDropdownApi.selectCurrent() ? (t.preventDefault(), dc) : uc
 					}, this.suppressAutocompleteForFocusedLink = () => {
-						const e = Object(Mo.b)(this.state.editorState);
-						e && this.state.suppressAutocompleteForLink !== e.entityKey && this.setState({
-							suppressAutocompleteForLink: e.entityKey
+						const t = Object(Mo.b)(this.state.editorState);
+						t && this.state.suppressAutocompleteForLink !== t.entityKey && this.setState({
+							suppressAutocompleteForLink: t.entityKey
 						})
-					}, this.handleEscape = e => {
+					}, this.handleEscape = t => {
 						this.emotesTooltipApi && this.emotesTooltipApi.handleEscapeKeyInEditor(), this.suppressAutocompleteForFocusedLink()
-					}, this.handleOnCopy = e => {
-						this.editorRef && Oe(this.state.editorState, this.editorRef, e)
-					}, this.handleOnCut = e => {
+					}, this.handleOnCopy = t => {
+						this.editorRef && Ot(this.state.editorState, this.editorRef, t)
+					}, this.handleOnCut = t => {
 						const {
-							editorState: t
+							editorState: e
 						} = this.state;
 						if (!this.editorRef) return;
-						if (!Oe(t, this.editorRef, e)) return;
-						const n = le(t) || Ie(t) || Object(N.e)(t);
+						if (!Ot(e, this.editorRef, t)) return;
+						const n = lt(e) || It(e) || Object(N.e)(e);
 						n && this.onChange(n)
-					}, this.handleOnPaste = e => {
+					}, this.handleOnPaste = t => {
 						const {
-							editorState: t
+							editorState: e
 						} = this.state;
 						if (!this.editorRef) return;
-						if (this.handleFilesPaste(e, t), e.isPropagationStopped()) return;
-						const n = Ps(t, this.editorRef, e, this.props.editorType);
+						if (this.handleFilesPaste(t, e), t.isPropagationStopped()) return;
+						const n = Pr(e, this.editorRef, t, this.props.editorType);
 						n && this.onChange(n)
-					}, this.handleFilesPaste = (e, t) => {
-						if (!this.props.allowMediaUploads) return void e.stopPropagation();
-						const n = e.clipboardData.files;
+					}, this.handleFilesPaste = (t, e) => {
+						if (!this.props.allowMediaUploads) return void t.stopPropagation();
+						const n = t.clipboardData.files;
 						if (n && n.length) {
 							const o = Array.from(n),
-								s = t.getSelection().getEndKey();
+								r = e.getSelection().getEndKey();
 							this.insertMediaFiles({
 								files: o,
-								blockKey: s,
+								blockKey: r,
 								insertionMode: D.a.after,
-								filesSource: C.FileSource.Clipboard
-							}), e.stopPropagation()
+								filesSource: x.FileSource.Clipboard
+							}), t.stopPropagation()
 						}
-					}, this.handleOnMouseDown = e => {
+					}, this.handleOnMouseDown = t => {
 						this.isMouseDown = !0
-					}, this.handleOnMouseUp = e => {
+					}, this.handleOnMouseUp = t => {
 						this.isMouseDown = !1
-					}, this.handleDroppedFiles = (e, t) => dc, this.handleDrop = (e, t, n) => dc, this.handleBlur = () => {
+					}, this.handleDroppedFiles = (t, e) => dc, this.handleDrop = (t, e, n) => dc, this.handleBlur = () => {
 						this.props.onBlur && this.props.onBlur()
-					}, this.handlePastedText = (e, t) => dc, this.onInternalSuggestionSelected = e => {
-						this.onChange(Object(Mo.g)(this.state.editorState, e)), this.isJustAutocompleteSelected = !0
-					}, this.onToolbarEmoteButtonClick = e => {
-						this.gifTooltipApi && this.gifTooltipApi.closeTooltip(), this.emotesTooltipApi && this.emotesTooltipApi.toggleTooltip(e)
-					}, this.onToolbarGifButtonClick = e => {
-						this.emotesTooltipApi && this.emotesTooltipApi.closeTooltip(), this.gifTooltipApi && this.gifTooltipApi.toggleTooltip(e)
+					}, this.handlePastedText = (t, e) => dc, this.onInternalSuggestionSelected = t => {
+						this.onChange(Object(Mo.g)(this.state.editorState, t)), this.isJustAutocompleteSelected = !0
+					}, this.onToolbarEmoteButtonClick = t => {
+						this.gifTooltipApi && this.gifTooltipApi.closeTooltip(), this.emotesTooltipApi && this.emotesTooltipApi.toggleTooltip(t)
+					}, this.onToolbarGifButtonClick = t => {
+						this.emotesTooltipApi && this.emotesTooltipApi.closeTooltip(), this.gifTooltipApi && this.gifTooltipApi.toggleTooltip(t)
 					}, this.onToolbarLinkButtonClick = () => {
 						if (!this.linksControllerApi) return;
 						const {
-							editorState: e
+							editorState: t
 						} = this.state;
-						this.linksControllerApi.editLinkInSelection(e.getSelection()) || Object(x.b)(void 0, "Current selection cannot be edited by link editor!")
+						this.linksControllerApi.editLinkInSelection(t.getSelection()) || Object(C.b)(void 0, "Current selection cannot be edited by link editor!")
 					}, this.handleSwitchToMarkdownMode = () => {
 						const {
-							editorState: e
+							editorState: t
 						} = this.state, {
-							onSwitchEditorMode: t
-						} = this.props, n = xr.a.toRichTextJSON({
+							onSwitchEditorMode: e
+						} = this.props, n = Cs.a.toRichTextJSON({
 							...this.props.rteState,
 							isBound: !0,
-							editorState: Object(N.c)(e)
+							editorState: Object(N.c)(t)
 						});
-						t && t(_.i.MARKDOWN, n), this.state.confirmModalOpen && this.toggleConfirmModal()
+						e && e(R.i.MARKDOWN, n), this.state.confirmModalOpen && this.toggleConfirmModal()
 					}, this.onToolbarMarkdownSwitchClick = () => {
 						const {
-							editorState: e
+							editorState: t
 						} = this.state;
-						e && qo(e) ? this.setState({
+						t && qo(t) ? this.setState({
 							confirmModalOpen: !0
 						}) : this.handleSwitchToMarkdownMode()
 					}, this.toggleConfirmModal = () => {
 						this.setState({
 							confirmModalOpen: !this.state.confirmModalOpen
 						})
-					}, this.insertMediaFiles = async e => {
+					}, this.insertMediaFiles = async t => {
 						const {
-							onFilesFilter: t,
+							onFilesFilter: e,
 							rteState: n,
 							shouldUseGqlUploadLease: o,
-							minImageDimension: s,
-							editorType: r
+							minImageDimension: r,
+							editorType: s
 						} = this.props, {
 							files: i,
 							filesSource: c
-						} = e;
+						} = t;
 						let a = i;
-						t && (a = t(i, this.state.editorState)), this.setState({
+						e && (a = e(i, this.state.editorState)), this.setState({
 							mediaToInsert: {
-								...e,
+								...t,
 								files: a
 							}
 						});
 						const l = a.slice(0, hc);
-						await this.props.startUploads(l, c, n.editorKey, r === We.a.Post, o, s), this.insertValidatedMedia()
-					}, this.onRetryUpload = e => {
-						this.props.retryUpload(e, this.props.editorType === We.a.Post)
-					}, this.onFilesSelect = e => {
+						await this.props.startUploads(l, c, n.editorKey, s === Wt.a.Post, o, r), this.insertValidatedMedia()
+					}, this.onRetryUpload = t => {
+						this.props.retryUpload(t, this.props.editorType === Wt.a.Post)
+					}, this.onFilesSelect = t => {
 						const {
-							editorState: t
-						} = this.state, n = t.getSelection().getEndKey();
+							editorState: e
+						} = this.state, n = e.getSelection().getEndKey();
 						this.insertMediaFiles({
-							files: e,
+							files: t,
 							blockKey: n,
 							insertionMode: D.a.after,
-							filesSource: C.FileSource.FileSelector
+							filesSource: x.FileSource.FileSelector
 						})
-					}, this.onFilesDrop = (e, t, n) => {
-						this.props.onTrackMediaDrop(e), this.insertMediaFiles({
-							files: e,
-							blockKey: t,
+					}, this.onFilesDrop = (t, e, n) => {
+						this.props.onTrackMediaDrop(t), this.insertMediaFiles({
+							files: t,
+							blockKey: e,
 							insertionMode: n,
-							filesSource: C.FileSource.DragAndDrop
+							filesSource: x.FileSource.DragAndDrop
 						})
-					}, this.onBlockMove = (e, t, n) => {
+					}, this.onBlockMove = (t, e, n) => {
 						const {
 							editorState: o
-						} = this.state, s = Object(N.o)(o, e, t, n);
-						s && this.onChange(s)
+						} = this.state, r = Object(N.o)(o, t, e, n);
+						r && this.onChange(r)
 					}, this.getAtomicBlocksRenderConfig = () => ({
 						component: on,
 						props: {
@@ -6794,33 +6603,33 @@
 							rteFocusableContentRef: this.state.focusableContentRef,
 							editorType: this.props.editorType
 						}
-					}), this.blockRendererFn = e => {
-						const t = e.getType();
-						return t === R.a ? this.getAtomicBlocksRenderConfig() : t in Br ? Br[t] : void 0
-					}, this.renderToolbar = e => p.a.createElement(Ft.b, e), this.entityElementRegistry = So(), this.tableOnEnterHandler = new bn;
+					}), this.blockRendererFn = t => {
+						const e = t.getType();
+						return e === w.a ? this.getAtomicBlocksRenderConfig() : e in _s ? _s[e] : void 0
+					}, this.renderToolbar = t => p.a.createElement(Fe.b, t), this.entityElementRegistry = So(), this.tableOnEnterHandler = new bn;
 					const {
-						postId: t,
+						postId: e,
 						isTypingIndicatorsWriteTestEnabled: n
-					} = e;
+					} = t;
 					n && (this.realtimeGQLVariables = {
 						input: {
 							channel: {
 								teamOwner: "CONTENT_AND_COMMUNITIES",
 								category: "USER_IS_TYPING_ON_POST",
-								postID: t
+								postID: e
 							}
 						}
 					});
 					const {
-						activeEmotes: s,
-						editorType: r,
+						activeEmotes: r,
+						editorType: s,
 						noBorder: c,
 						initialHeight: a,
 						initialMinHeight: l,
 						rteState: d
-					} = e;
+					} = t;
 					let u;
-					d.isBound ? u = d.editorState : Object(Wn.H)(d.initialRTJSON) ? u = this.createInitialState(d.editorKey) : (u = o.EditorState.createWithContent($i(d.initialRTJSON, r, d.mediaMetadataMap, s), this.editorDecorators()), u = this.moveSelectionToEnd(u)), this.state = {
+					d.isBound ? u = d.editorState : Object(Wn.H)(d.initialRTJSON) ? u = this.createInitialState(d.editorKey) : (u = o.EditorState.createWithContent($i(d.initialRTJSON, s, d.mediaMetadataMap, r), this.editorDecorators()), u = this.moveSelectionToEnd(u)), this.state = {
 						noBorder: c,
 						containerRef: null,
 						confirmModalOpen: !1,
@@ -6835,52 +6644,52 @@
 					}
 				}
 				editorDecorators() {
-					return new o.CompositeDecorator([jo(), ls(), Po()])
+					return new o.CompositeDecorator([jo(), lr(), Po()])
 				}
-				moveSelectionToEnd(e) {
-					const t = e.getCurrentContent().getBlockMap(),
-						n = t.last().getKey(),
-						s = t.last().getLength(),
-						r = new o.SelectionState({
+				moveSelectionToEnd(t) {
+					const e = t.getCurrentContent().getBlockMap(),
+						n = e.last().getKey(),
+						r = e.last().getLength(),
+						s = new o.SelectionState({
 							anchorKey: n,
-							anchorOffset: s,
+							anchorOffset: r,
 							focusKey: n,
-							focusOffset: s
+							focusOffset: r
 						});
-					return o.EditorState.acceptSelection(e, r)
+					return o.EditorState.acceptSelection(t, s)
 				}
-				createInitialState(e) {
+				createInitialState(t) {
 					return o.EditorState.createWithContent(o.ContentState.createFromBlockArray([new o.ContentBlock({
-						key: `${e}_initial`
+						key: `${t}_initial`
 					})]), this.editorDecorators())
 				}
 				componentDidMount() {
-					if (this.props.rteRef && this.props.rteRef(this), y.a.write(Kr), this.rteStateChanged(this.state.editorState, !1), this.editorRef) {
-						const e = this.editorRef.refs.editor;
-						e.addEventListener("scroll", this.hideTooltips), this.editorRootStyleMutationObserver = new MutationObserver(this.onEditorStyleChanged), this.editorRootStyleMutationObserver.observe(e, {
+					if (this.props.rteRef && this.props.rteRef(this), y.a.write(Ks), this.rteStateChanged(this.state.editorState, !1), this.editorRef) {
+						const t = this.editorRef.refs.editor;
+						t.addEventListener("scroll", this.hideTooltips), this.editorRootStyleMutationObserver = new MutationObserver(this.onEditorStyleChanged), this.editorRootStyleMutationObserver.observe(t, {
 							attributes: !0,
 							attributeFilter: ["style"]
 						})
 					}
 					const {
-						destSubreddit: e,
-						emotesSpecialMembershipEnabled: t,
+						destSubreddit: t,
+						emotesSpecialMembershipEnabled: e,
 						giphySpecialMembershipEnabled: n
 					} = this.props;
-					e && e.id && (t || n) && this.props.onFetchEditorProducts(e.id)
+					t && t.id && (e || n) && this.props.onFetchEditorProducts(t.id)
 				}
-				componentDidUpdate(e, t) {
+				componentDidUpdate(t, e) {
 					const n = this.getLinkForAutocomplete();
 					if (n && this.updateSuggestionDropdownPosition) {
-						const e = this.entityElementRegistry.get(n.entityKey);
-						if (e) {
+						const t = this.entityElementRegistry.get(n.entityKey);
+						if (t) {
 							const {
-								left: t,
+								left: e,
 								bottom: n,
 								height: o
-							} = e.getBoundingClientRect();
+							} = t.getBoundingClientRect();
 							this.updateSuggestionDropdownPosition({
-								left: t,
+								left: e,
 								top: n,
 								bottom: n - o
 							})
@@ -6894,77 +6703,77 @@
 					}
 					this.editorRootStyleMutationObserver && (this.editorRootStyleMutationObserver.disconnect(), this.editorRootStyleMutationObserver = null)
 				}
-				UNSAFE_componentWillReceiveProps(e) {
-					e.rteState !== this.props.rteState && e.rteState.isBound && e.rteState.editorState !== this.state.editorState && this.setState({
-						editorState: e.rteState.editorState
+				UNSAFE_componentWillReceiveProps(t) {
+					t.rteState !== this.props.rteState && t.rteState.isBound && t.rteState.editorState !== this.state.editorState && this.setState({
+						editorState: t.rteState.editorState
 					})
 				}
-				shouldComponentUpdate(e, t) {
-					if (t !== this.state) return !0;
-					if (!(e.rteState.isBound && e.rteState.editorState === this.state.editorState)) return !0;
-					return !f()(e, this.props, (e, t, n) => "rteState" === n || void 0)
+				shouldComponentUpdate(t, e) {
+					if (e !== this.state) return !0;
+					if (!(t.rteState.isBound && t.rteState.editorState === this.state.editorState)) return !0;
+					return !f()(t, this.props, (t, e, n) => "rteState" === n || void 0)
 				}
-				enterKeyBinding(e) {
-					let t = !(arguments.length > 1 && void 0 !== arguments[1]) || arguments[1];
-					const n = e.getCurrentContent(),
-						o = e.getSelection(),
-						s = o.getStartKey(),
-						r = o.getEndKey(),
+				enterKeyBinding(t) {
+					let e = !(arguments.length > 1 && void 0 !== arguments[1]) || arguments[1];
+					const n = t.getCurrentContent(),
+						o = t.getSelection(),
+						r = o.getStartKey(),
+						s = o.getEndKey(),
 						i = o.getEndOffset(),
-						c = n.getBlockForKey(s).getType(),
-						a = n.getBlockForKey(r),
+						c = n.getBlockForKey(r).getType(),
+						a = n.getBlockForKey(s),
 						l = a.getType(),
 						d = i === a.getText().length;
-					if (c === R.l || l === R.l) return w.EXEC_TABLE_ON_ENTER_HANDLER;
+					if (c === w.l || l === w.l) return B.EXEC_TABLE_ON_ENTER_HANDLER;
 					if (o.isCollapsed()) {
-						if (t && Object(Mo.d)(e)) return w.LINKIFY_ON_ENTER;
-						if (Object(R.r)(l) && d) return w.BREAK_HEADER_ENTITY;
-						if (Object(R.s)(l)) {
-							if (pc.test(a.getText())) return a.getDepth() > 0 ? w.REDUCE_LIST_INDENT : w.REMOVE_EXTRA_LIST_ITEM
-						} else if (l === R.e) {
-							const e = n.getBlockBefore(r);
-							if (e && e.getType() === R.e && pc.test(e.getText()) && pc.test(a.getText())) return w.RESET_CURRENT_AND_PREVIOUS_BLOCKS
-						} else if (l === R.f) {
-							const e = n.getBlockBefore(r),
-								t = n.getBlockAfter(r);
-							if (!a.getText() && e && e.getType() === R.f && !e.getText() && (!t || t.getType() !== R.f)) return w.RESET_CURRENT_AND_PREVIOUS_BLOCKS
+						if (e && Object(Mo.d)(t)) return B.LINKIFY_ON_ENTER;
+						if (Object(w.r)(l) && d) return B.BREAK_HEADER_ENTITY;
+						if (Object(w.s)(l)) {
+							if (pc.test(a.getText())) return a.getDepth() > 0 ? B.REDUCE_LIST_INDENT : B.REMOVE_EXTRA_LIST_ITEM
+						} else if (l === w.e) {
+							const t = n.getBlockBefore(s);
+							if (t && t.getType() === w.e && pc.test(t.getText()) && pc.test(a.getText())) return B.RESET_CURRENT_AND_PREVIOUS_BLOCKS
+						} else if (l === w.f) {
+							const t = n.getBlockBefore(s),
+								e = n.getBlockAfter(s);
+							if (!a.getText() && t && t.getType() === w.f && !t.getText() && (!e || e.getType() !== w.f)) return B.RESET_CURRENT_AND_PREVIOUS_BLOCKS
 						}
 					}
 				}
 				getLinkForAutocomplete() {
 					const {
-						editorState: e,
-						suppressAutocompleteForLink: t
+						editorState: t,
+						suppressAutocompleteForLink: e
 					} = this.state;
-					if (!this.isJustAutocompleteSelected && e.getSelection().getHasFocus()) {
-						const n = Object(Mo.b)(e);
-						if (n && n.entityKey !== t) return n
+					if (!this.isJustAutocompleteSelected && t.getSelection().getHasFocus()) {
+						const n = Object(Mo.b)(t);
+						if (n && n.entityKey !== e) return n
 					}
 				}
 				renderInternalLinkSuggestionDropdown() {
 					const {
-						isChatPost: e
-					} = this.props, t = this.getLinkForAutocomplete();
-					return t ? p.a.createElement(Nn.b, {
-						aboveParent: e,
+						isChatPost: t
+					} = this.props, e = this.getLinkForAutocomplete();
+					return e ? p.a.createElement(Nn.b, {
+						aboveParent: t,
 						dropdown: !0,
 						onSetPositionUpdater: this.setSuggestionDropdownPositionUpdater
-					}, t.entityText.startsWith(S.f) && p.a.createElement(Jr, {
+					}, e.entityText.startsWith(S.f) && p.a.createElement(Js, {
 						onDropdownApi: this.setSuggestionDropdownApi,
 						onSelect: this.onInternalSuggestionSelected,
-						substring: t.internalName
-					}), S.a.test(t.entityText) && p.a.createElement(ei, {
+						substring: e.internalName
+					}), S.a.test(e.entityText) && p.a.createElement(ti, {
 						onDropdownApi: this.setSuggestionDropdownApi,
 						onSelect: this.onInternalSuggestionSelected,
-						substring: t.internalName
+						substring: e.internalName
 					})) : null
 				}
 				render() {
 					const {
-						className: e,
-						userCanUseEmojis: t,
+						className: t,
+						userCanUseEmojis: e,
 						userCanUseGifs: n,
-						allowMediaUploads: r = !1,
+						allowMediaUploads: s = !1,
 						dataTestId: i,
 						destSubreddit: c,
 						editorType: a,
@@ -6977,24 +6786,24 @@
 						onSubmit: y,
 						placeholderText: E,
 						shouldShowCommentGifsTooltip: S,
-						showSubmitButton: x = !1,
-						submitButtonClassName: C,
+						showSubmitButton: C = !1,
+						submitButtonClassName: x,
 						toolbarPosition: k = "top",
 						renderToolbar: T = this.renderToolbar,
 						isTypingIndicatorsWriteTestEnabled: v
 					} = this.props, {
 						editorKey: j
 					} = h, {
-						containerRef: _,
-						editorState: R,
-						mediaToInsert: w,
-						confirmModalOpen: B,
+						containerRef: R,
+						editorState: w,
+						mediaToInsert: B,
+						confirmModalOpen: _,
 						isUserTyping: K
-					} = this.state, M = this.props.readOnly || !!w, L = I(R), N = this.isEmpty(), D = T({
-						allowMediaUploads: r,
+					} = this.state, M = this.props.readOnly || !!B, L = I(w), N = this.isEmpty(), D = T({
+						allowMediaUploads: s,
 						destSubreddit: c,
 						editorKey: j,
-						editorState: R,
+						editorState: w,
 						isOverlay: !!g,
 						onChange: this.toolbarSetState,
 						onFilesSelect: this.onFilesSelect,
@@ -7004,11 +6813,11 @@
 						onGifButtonClick: this.onToolbarGifButtonClick,
 						onLinkButtonClick: this.onToolbarLinkButtonClick,
 						onMarkdownButtonClick: this.onToolbarMarkdownSwitchClick,
-						userCanUseEmojis: !!t,
+						userCanUseEmojis: !!e,
 						userCanUseGifs: !!n
 					}), F = !u && (!f || m);
 					return p.a.createElement(gc, {
-						className: e,
+						className: t,
 						innerRef: this.setContainerRef
 					}, v && K && p.a.createElement(O.a, {
 						variables: this.realtimeGQLVariables,
@@ -7018,19 +6827,19 @@
 						className: ac.a.userIcon
 					}, p.a.createElement(fc, null)), p.a.createElement(mc, {
 						className: Object(b.a)(l, {
-							[ac.a.showSubmitButton]: x,
+							[ac.a.showSubmitButton]: C,
 							[ac.a.mExpanded]: m,
 							[ac.a.mRedesign]: f
 						}),
 						noBorder: this.props.noBorder,
 						isFocused: this.isFocused(),
 						ref: this.setFocusableContentRef
-					}, F && "top" === k && D, _ && p.a.createElement(bo, {
-						editorState: R,
+					}, F && "top" === k && D, R && p.a.createElement(bo, {
+						editorState: w,
 						readOnly: M,
 						onChange: this.onChange,
 						onSetApi: this.setTableToolbarControllerApi,
-						rteDomRef: _
+						rteDomRef: R
 					}), p.a.createElement("div", {
 						className: Object(b.a)(ac.a.editorWrapper, {
 							[ac.a.hasInitialHeight]: !!this.props.initialHeight,
@@ -7051,13 +6860,13 @@
 						dangerouslySetInnerHTML: {
 							__html: `\n                .${nc.b}[${nc.d}="${L}-0-0"]::after {\n                  bottom: 0;\n                  color: var(--newCommunityTheme-actionIcon);\n                  content: '${E}';\n                  cursor: text;\n                  left: 0;\n                  position: absolute;\n                  top: 0;\n                }\n              `
 						}
-					}), p.a.createElement(js, {
-						allowMediaUploads: r && !M,
+					}), p.a.createElement(jr, {
+						allowMediaUploads: s && !M,
 						onBlockMove: this.onBlockMove,
 						onFilesDrop: this.onFilesDrop,
-						editorState: R,
+						editorState: w,
 						onChange: this.onChange
-					}, p.a.createElement(xo.Provider, {
+					}, p.a.createElement(Co.Provider, {
 						value: this.entityElementRegistry
 					}, p.a.createElement(o.Editor, {
 						readOnly: M,
@@ -7065,7 +6874,7 @@
 						blockRendererFn: this.blockRendererFn,
 						blockRenderMap: this.blockRenderMap,
 						editorKey: j,
-						editorState: R,
+						editorState: w,
 						keyBindingFn: this.keyBindingFN,
 						handleBeforeInput: this.handleBeforeInput,
 						handleKeyCommand: this.handleKeyCommand,
@@ -7081,30 +6890,30 @@
 						onEscape: this.handleEscape,
 						spellCheck: !0,
 						handleReturn: this.handleReturn,
-						customStyleMap: kr()
-					})))), F && "bottom" === k && D, p.a.createElement(pr, {
-						containerRef: _,
-						editorState: R,
+						customStyleMap: ks()
+					})))), F && "bottom" === k && D, p.a.createElement(ps, {
+						containerRef: R,
+						editorState: w,
 						entityElementRegistry: this.entityElementRegistry,
 						onSetApi: this.setLinksControllerApi,
 						onChange: this.onChange
-					}), a === We.a.Comment && c && p.a.createElement(Ao, {
-						editorState: R,
+					}), a === Wt.a.Comment && c && p.a.createElement(Ao, {
+						editorState: w,
 						onChange: this.onChange,
 						onSetApi: this.setEmotesTooltipApi,
 						subreddit: c,
-						userCanUseEmojis: !!t
-					}), (S || n) && c && p.a.createElement(ss, {
-						editorState: R,
+						userCanUseEmojis: !!e
+					}), (S || n) && c && p.a.createElement(rr, {
+						editorState: w,
 						onChange: this.onChange,
 						onSetApi: this.setGifTooltipApi,
 						subreddit: c,
 						userCanUseGifs: !!n
-					}), this.renderInternalLinkSuggestionDropdown(), x && p.a.createElement(ot.e, {
-						"aria-label": s.fbt._("submit", null, {
+					}), this.renderInternalLinkSuggestionDropdown(), C && p.a.createElement(oe.e, {
+						"aria-label": r.fbt._("submit", null, {
 							hk: "12XoZ8"
 						}),
-						className: Object(b.a)(C, ac.a.insetSubmitButton, {
+						className: Object(b.a)(x, ac.a.insetSubmitButton, {
 							[ac.a.emptyContent]: N,
 							[ac.a.focusedContent]: this.isFocused()
 						}),
@@ -7112,49 +6921,49 @@
 						onClick: y,
 						tabIndex: -1,
 						type: "submit"
-					}, p.a.createElement(rc.a, null))), B && p.a.createElement(A.a, {
+					}, p.a.createElement(sc.a, null))), _ && p.a.createElement(A.a, {
 						toggleModal: this.toggleConfirmModal,
 						onConfirm: this.handleSwitchToMarkdownMode,
-						actionText: s.fbt._("Continue", null, {
+						actionText: r.fbt._("Continue", null, {
 							hk: "3aoEeD"
 						}),
-						cancelActionText: s.fbt._("Cancel", null, {
+						cancelActionText: r.fbt._("Cancel", null, {
 							hk: "2TSLl5"
 						}),
-						headerText: s.fbt._("Switch to Markdown", null, {
+						headerText: r.fbt._("Switch to Markdown", null, {
 							hk: "3zGkKa"
 						}),
-						modalText: a === We.a.Comment ? s.fbt._("Switching to markdown will remove any image or GIF from your comment.", null, {
+						modalText: a === Wt.a.Comment ? r.fbt._("Switching to markdown will remove any image or GIF from your comment.", null, {
 							hk: "3v46Jt"
-						}) : s.fbt._("Switching to markdown will remove any images, gifs or videos from your post.", null, {
+						}) : r.fbt._("Switching to markdown will remove any images, gifs or videos from your post.", null, {
 							hk: "3rlwkB"
 						}),
 						trackClick: () => {}
 					}))
 				}
 			}
-			t.a = yc(Object(Fr.b)(e => p.a.createElement(Ec, lc({
-				key: e.rteState.editorKey
-			}, e))))
+			e.a = yc(Object(Fs.b)(t => p.a.createElement(Ec, lc({
+				key: t.rteState.editorKey
+			}, t))))
 		},
-		"./src/reddit/components/RichTextEditor/media/MediaBlock/MediaView/ImagePreview/index.m.less": function(e, t, n) {
-			e.exports = {
+		"./src/reddit/components/RichTextEditor/media/MediaBlock/MediaView/ImagePreview/index.m.less": function(t, e, n) {
+			t.exports = {
 				Img: "_1gJwMe53cjYITkMu0Ve8j-",
 				img: "_1gJwMe53cjYITkMu0Ve8j-",
 				Component: "_3VYFd7PKhTJ-0i22YsgFPv",
 				component: "_3VYFd7PKhTJ-0i22YsgFPv"
 			}
 		},
-		"./src/reddit/components/RichTextEditor/media/MediaBlock/MediaView/Placeholder/index.m.less": function(e, t, n) {
-			e.exports = {
+		"./src/reddit/components/RichTextEditor/media/MediaBlock/MediaView/Placeholder/index.m.less": function(t, e, n) {
+			t.exports = {
 				Message: "_3cyJHYsdZdz4RWdmrzyYx-",
 				message: "_3cyJHYsdZdz4RWdmrzyYx-",
 				Component: "_3JSUHg1gLhxUj4PB_Pgw8a",
 				component: "_3JSUHg1gLhxUj4PB_Pgw8a"
 			}
 		},
-		"./src/reddit/components/RichTextEditor/media/MediaBlock/MediaView/StatusBar/index.m.less": function(e, t, n) {
-			e.exports = {
+		"./src/reddit/components/RichTextEditor/media/MediaBlock/MediaView/StatusBar/index.m.less": function(t, e, n) {
+			t.exports = {
 				buttonBaseStyles: "_3R1ajPuzbs2MdbXedj3YXU",
 				ControlRow: "_1rrSEjTxZcLOZTDNZlj5N4",
 				controlRow: "_1rrSEjTxZcLOZTDNZlj5N4",
@@ -7177,8 +6986,8 @@
 				component: "_1CqupI5I-zzAInIdLwphQg"
 			}
 		},
-		"./src/reddit/components/RichTextEditor/media/MediaBlock/MediaView/VideoPreview/index.m.less": function(e, t, n) {
-			e.exports = {
+		"./src/reddit/components/RichTextEditor/media/MediaBlock/MediaView/VideoPreview/index.m.less": function(t, e, n) {
+			t.exports = {
 				VideoPlayer: "_3gstD1_YUjNWZqjtwdgU9t",
 				videoPlayer: "_3gstD1_YUjNWZqjtwdgU9t",
 				PosterImg: "_2C2yx7Rf_BKPOyll-aq_hI",
@@ -7190,8 +6999,8 @@
 				playButton: "il4HPAfKcVtq-WQY-if85"
 			}
 		},
-		"./src/reddit/components/RichTextEditor/media/MediaBlock/MediaView/index.m.less": function(e, t, n) {
-			e.exports = {
+		"./src/reddit/components/RichTextEditor/media/MediaBlock/MediaView/index.m.less": function(t, e, n) {
+			t.exports = {
 				statusBar: "_33CSkXq7gXeXCM2zSal9BN",
 				container: "_1FMEfWD94pPZ_HdEN_e7Xy",
 				isCompact: "_3-T8BPflZuKw_F2VRPDbcX",
@@ -7204,14 +7013,14 @@
 				renderSmallMedia: "_3L8V1OmRzcZEzmJFdJV6dS"
 			}
 		},
-		"./src/reddit/components/RichTextEditor/media/MediaBlock/SelectionHook/index.m.less": function(e, t, n) {
-			e.exports = {
+		"./src/reddit/components/RichTextEditor/media/MediaBlock/SelectionHook/index.m.less": function(t, e, n) {
+			t.exports = {
 				HiddenDiv: "_13RYjdyxMuKrkV_EtlOjhg",
 				hiddenDiv: "_13RYjdyxMuKrkV_EtlOjhg"
 			}
 		},
-		"./src/reddit/components/RichTextEditor/media/MediaBlock/Toolbar/index.m.less": function(e, t, n) {
-			e.exports = {
+		"./src/reddit/components/RichTextEditor/media/MediaBlock/Toolbar/index.m.less": function(t, e, n) {
+			t.exports = {
 				container: "_3hDtN0e5U4EpahGe25ye-b",
 				alignCenter: "Vh7FGvkGyl5SeyJP4J1GG",
 				content: "_3wXzBVn-uBvRcixZwQWkNX",
@@ -7222,60 +7031,60 @@
 				toolbarContent: "_3qUkCQkbZvTB6uBQEQQfSZ"
 			}
 		},
-		"./src/reddit/components/RichTextEditor/media/MediaBlock/index.m.less": function(e, t, n) {
-			e.exports = {
+		"./src/reddit/components/RichTextEditor/media/MediaBlock/index.m.less": function(t, e, n) {
+			t.exports = {
 				MediaContainer: "_12ZUhulrgf1BAChnRZHmZt",
 				mediaContainer: "_12ZUhulrgf1BAChnRZHmZt",
 				Container: "DK9d46mm9FgC8mFWPGlG_",
 				container: "DK9d46mm9FgC8mFWPGlG_"
 			}
 		},
-		"./src/reddit/components/RichTextEditor/media/MediaCaption/index.m.less": function(e, t, n) {
-			e.exports = {
+		"./src/reddit/components/RichTextEditor/media/MediaCaption/index.m.less": function(t, e, n) {
+			t.exports = {
 				wrapper: "_2eZK2IABgFqGZLMYPxwoNY"
 			}
 		},
-		"./src/reddit/components/RichTextEditor/media/helpers.ts": function(e, t, n) {
+		"./src/reddit/components/RichTextEditor/media/helpers.ts": function(t, e, n) {
 			"use strict";
-			n.d(t, "a", (function() {
+			n.d(e, "a", (function() {
 				return o
-			})), n.d(t, "q", (function() {
+			})), n.d(e, "q", (function() {
 				return b
-			})), n.d(t, "h", (function() {
+			})), n.d(e, "h", (function() {
 				return y
-			})), n.d(t, "r", (function() {
+			})), n.d(e, "r", (function() {
 				return E
-			})), n.d(t, "l", (function() {
+			})), n.d(e, "l", (function() {
 				return S
-			})), n.d(t, "k", (function() {
-				return x
-			})), n.d(t, "n", (function() {
+			})), n.d(e, "k", (function() {
 				return C
-			})), n.d(t, "p", (function() {
+			})), n.d(e, "n", (function() {
+				return x
+			})), n.d(e, "p", (function() {
 				return O
-			})), n.d(t, "d", (function() {
+			})), n.d(e, "d", (function() {
 				return T
-			})), n.d(t, "c", (function() {
+			})), n.d(e, "c", (function() {
 				return v
-			})), n.d(t, "e", (function() {
+			})), n.d(e, "e", (function() {
 				return j
-			})), n.d(t, "m", (function() {
-				return R
-			})), n.d(t, "g", (function() {
+			})), n.d(e, "m", (function() {
 				return w
-			})), n.d(t, "j", (function() {
-				return I
-			})), n.d(t, "i", (function() {
+			})), n.d(e, "g", (function() {
 				return B
-			})), n.d(t, "o", (function() {
+			})), n.d(e, "j", (function() {
+				return I
+			})), n.d(e, "i", (function() {
+				return _
+			})), n.d(e, "o", (function() {
 				return A
-			})), n.d(t, "b", (function() {
+			})), n.d(e, "b", (function() {
 				return K
-			})), n.d(t, "f", (function() {
+			})), n.d(e, "f", (function() {
 				return L
 			}));
-			var o, s = n("./node_modules/draft-js/lib/Draft.js"),
-				r = n("./node_modules/immutable/dist/immutable.js"),
+			var o, r = n("./node_modules/draft-js/lib/Draft.js"),
+				s = n("./node_modules/immutable/dist/immutable.js"),
 				i = n("./node_modules/lodash/flatten.js"),
 				c = n.n(i),
 				a = n("./node_modules/lodash/last.js"),
@@ -7287,197 +7096,197 @@
 				m = n("./src/reddit/components/RichTextEditor/constants/editorChangeTypes.ts"),
 				g = n("./src/reddit/components/RichTextEditor/helpers/common.ts"),
 				f = n("./src/reddit/components/RichTextEditor/styleAndBlockTypes.ts");
-			! function(e) {
-				e[e.Image = 0] = "Image", e[e.AnimatedImage = 1] = "AnimatedImage", e[e.Video = 2] = "Video"
+			! function(t) {
+				t[t.Image = 0] = "Image", t[t.AnimatedImage = 1] = "AnimatedImage", t[t.Video = 2] = "Video"
 			}(o || (o = {}));
-			const b = e => e !== u.a.Comment,
-				y = e => {
-					if (!Object(f.o)(e.getType())) return;
-					const t = e.getData(),
-						n = t.get("mediaAsset"),
-						o = t.get("uploadInfo");
+			const b = t => t !== u.a.Comment,
+				y = t => {
+					if (!Object(f.o)(t.getType())) return;
+					const e = t.getData(),
+						n = e.get("mediaAsset"),
+						o = e.get("uploadInfo");
 					if (!n && !o) return;
-					const s = t.get("thumbnail");
+					const r = e.get("thumbnail");
 					return {
-						makeGif: t.get("makeGif"),
-						thumbnail: s,
+						makeGif: e.get("makeGif"),
+						thumbnail: r,
 						uploadInfo: o,
 						mediaAsset: n
 					}
 				},
-				E = (e, t, n) => {
-					let o = e.getCurrentContent();
-					const i = o.getBlockForKey(t),
+				E = (t, e, n) => {
+					let o = t.getCurrentContent();
+					const i = o.getBlockForKey(e),
 						c = y(i),
 						a = c && c.uploadInfo;
 					if (!a) throw new Error("Block must contain `uploadInfo` data");
-					if (n.makeGif === c.makeGif && n.thumbnail === c.thumbnail) return e;
-					const l = Object(r.Map)(n),
-						d = o.getBlockMap().toKeyedSeq().filter(e => {
-							const t = y(e);
-							return !!t && !!t.uploadInfo && t.uploadInfo.uploadKey === a.uploadKey
-						}).map(e => e.mergeIn(["data"], l));
+					if (n.makeGif === c.makeGif && n.thumbnail === c.thumbnail) return t;
+					const l = Object(s.Map)(n),
+						d = o.getBlockMap().toKeyedSeq().filter(t => {
+							const e = y(t);
+							return !!e && !!e.uploadInfo && e.uploadInfo.uploadKey === a.uploadKey
+						}).map(t => t.mergeIn(["data"], l));
 					return o = (o = o.mergeIn(["blockMap"], d)).merge({
-						selectionAfter: e.getSelection()
-					}), s.EditorState.push(e, o, m.b)
+						selectionAfter: t.getSelection()
+					}), r.EditorState.push(t, o, m.b)
 				},
-				S = (e, t, n, o, i) => {
-					let a = e.getCurrentContent();
-					const u = c()(t.map(e => {
-						const t = Object(d.g)(e.metadata.mimetype),
-							n = (e => {
-								if (e && e.metadata.videoFirstFrameUrl) {
+				S = (t, e, n, o, i) => {
+					let a = t.getCurrentContent();
+					const u = c()(e.map(t => {
+						const e = Object(d.g)(t.metadata.mimetype),
+							n = (t => {
+								if (t && t.metadata.videoFirstFrameUrl) {
 									return {
-										url: e.metadata.videoFirstFrameUrl,
+										url: t.metadata.videoFirstFrameUrl,
 										time: 0
 									}
 								}
-							})(e),
-							o = new s.ContentBlock({
-								key: Object(s.genKey)(),
+							})(t),
+							o = new r.ContentBlock({
+								key: Object(r.genKey)(),
 								type: f.a,
-								data: Object(r.Map)({
+								data: Object(s.Map)({
 									uploadInfo: {
-										mediaType: t,
-										uploadKey: e.key
+										mediaType: e,
+										uploadKey: t.key
 									},
 									thumbnail: n
 								})
 							}),
-							c = new s.ContentBlock({
-								key: Object(s.genKey)(),
+							c = new r.ContentBlock({
+								key: Object(r.genKey)(),
 								type: f.j
 							});
 						return i ? [o] : [o, c]
 					}));
 					a = Object(g.f)(a, n, u, o);
-					const p = s.EditorState.push(e, a, m.e),
+					const p = r.EditorState.push(t, a, m.e),
 						h = l()(u);
-					return s.EditorState.forceSelection(p, Object(g.b)(h, !0))
+					return r.EditorState.forceSelection(p, Object(g.b)(h, !0))
 				},
-				x = (e, t, n, i, c, a, l, d) => {
-					const u = new s.ContentBlock({
-							key: Object(s.genKey)(),
+				C = (t, e, n, i, c, a, l, d) => {
+					const u = new r.ContentBlock({
+							key: Object(r.genKey)(),
 							type: f.a,
-							data: Object(r.Map)({
+							data: Object(s.Map)({
 								mediaAsset: {
 									type: o.AnimatedImage,
-									assetId: Object(p.d)(t, i),
+									assetId: Object(p.d)(e, i),
 									imageUrl: n,
 									width: c,
 									height: a
 								}
 							})
 						}),
-						h = Object(g.f)(e.getCurrentContent(), l, [u], d);
-					let b = s.EditorState.push(e, h, m.e);
-					b = s.EditorState.forceSelection(b, Object(g.b)(u, !0));
+						h = Object(g.f)(t.getCurrentContent(), l, [u], d);
+					let b = r.EditorState.push(t, h, m.e);
+					b = r.EditorState.forceSelection(b, Object(g.b)(u, !0));
 					const y = u.getKey();
 					return b.getCurrentContent().getBlockAfter(y) || (b = K(b, y)), b
 				};
 
-			function C(e, t) {
-				return e.isCollapsed() && e.getStartKey() === t && 0 === e.getStartOffset() && 0 === e.getEndOffset()
+			function x(t, e) {
+				return t.isCollapsed() && t.getStartKey() === e && 0 === t.getStartOffset() && 0 === t.getEndOffset()
 			}
 
-			function O(e, t) {
-				const n = e.getCurrentContent().getBlockAfter(t);
-				return s.EditorState.forceSelection(e, Object(g.b)(n, !0))
+			function O(t, e) {
+				const n = t.getCurrentContent().getBlockAfter(e);
+				return r.EditorState.forceSelection(t, Object(g.b)(n, !0))
 			}
-			const k = (e, t) => {
-					const n = e.getBlockAfter(t);
-					return e = Object(g.i)(e, t), n && Object(f.u)(n.getType()) && (e = Object(g.i)(e, n.getKey())), e
+			const k = (t, e) => {
+					const n = t.getBlockAfter(e);
+					return t = Object(g.i)(t, e), n && Object(f.u)(n.getType()) && (t = Object(g.i)(t, n.getKey())), t
 				},
-				T = function(e, t) {
+				T = function(t, e) {
 					let n = !(arguments.length > 2 && void 0 !== arguments[2]) || arguments[2],
-						o = e.getCurrentContent();
-					o = k(o, t);
-					let r = n ? s.EditorState.push(e, o, m.f) : s.EditorState.set(e, {
+						o = t.getCurrentContent();
+					o = k(o, e);
+					let s = n ? r.EditorState.push(t, o, m.f) : r.EditorState.set(t, {
 						currentContent: o
 					});
-					return r = s.EditorState.forceSelection(r, o.getSelectionAfter())
+					return s = r.EditorState.forceSelection(s, o.getSelectionAfter())
 				},
-				v = e => {
-					let t = e.getCurrentContent();
-					_(t).forEach(e => {
-						t = k(t, e.getKey())
+				v = t => {
+					let e = t.getCurrentContent();
+					R(e).forEach(t => {
+						e = k(e, t.getKey())
 					});
-					const n = s.EditorState.push(e, t, m.f);
-					return s.EditorState.forceSelection(n, t.getSelectionAfter())
+					const n = r.EditorState.push(t, e, m.f);
+					return r.EditorState.forceSelection(n, e.getSelectionAfter())
 				},
-				j = e => {
-					let t = e.getCurrentContent();
-					const n = e.getSelection();
-					t = s.Modifier.removeRange(t, n, "forward");
-					let o = s.EditorState.push(e, t, m.f);
-					return o = s.EditorState.forceSelection(o, t.getSelectionAfter())
+				j = t => {
+					let e = t.getCurrentContent();
+					const n = t.getSelection();
+					e = r.Modifier.removeRange(e, n, "forward");
+					let o = r.EditorState.push(t, e, m.f);
+					return o = r.EditorState.forceSelection(o, e.getSelectionAfter())
 				},
-				_ = e => e.getBlockMap().toSeq().filter(e => !!e && !!y(e)),
-				R = (e, t) => e.getBlockMap().toSeq().filter(e => {
-					const n = y(e),
+				R = t => t.getBlockMap().toSeq().filter(t => !!t && !!y(t)),
+				w = (t, e) => t.getBlockMap().toSeq().filter(t => {
+					const n = y(t),
 						o = n && n.uploadInfo && n.uploadInfo.uploadKey;
-					return !(!o || t[o] && t[o].url)
+					return !(!o || e[o] && e[o].url)
 				}).isEmpty(),
-				w = e => {
-					const t = _(e),
+				B = t => {
+					const e = R(t),
 						n = {
 							gifvideo: 0,
 							image: 0,
 							video: 0,
 							total: 0
 						};
-					return t.forEach(e => {
-						const t = y(e);
-						let s;
-						s = t.makeGif ? "gifvideo" : t.uploadInfo && "video" === t.uploadInfo.mediaType || t.mediaAsset && t.mediaAsset.type === o.Video ? "video" : "image", n[s]++, n.total++
+					return e.forEach(t => {
+						const e = y(t);
+						let r;
+						r = e.makeGif ? "gifvideo" : e.uploadInfo && "video" === e.uploadInfo.mediaType || e.mediaAsset && e.mediaAsset.type === o.Video ? "video" : "image", n[r]++, n.total++
 					}), n
 				},
-				I = e => !_(e).isEmpty(),
-				B = (e, t) => {
-					const n = _(e).map(e => {
-						const n = y(e),
+				I = t => !R(t).isEmpty(),
+				_ = (t, e) => {
+					const n = R(t).map(t => {
+						const n = y(t),
 							{
 								uploadInfo: o,
-								thumbnail: s
+								thumbnail: r
 							} = n;
-						if (!o || !s) return;
-						const r = M(n),
-							i = t[r];
+						if (!o || !r) return;
+						const s = M(n),
+							i = e[s];
 						return i && i.url ? void 0 : {
-							...s,
-							uploadKey: r
+							...r,
+							uploadKey: s
 						}
 					}).filter(Boolean).toArray();
 					return n.length ? n : void 0
 				},
-				A = (e, t, n, o) => {
-					let r = e.getCurrentContent();
-					const i = r.getBlockForKey(t),
-						c = r.getBlockAfter(t),
+				A = (t, e, n, o) => {
+					let s = t.getCurrentContent();
+					const i = s.getBlockForKey(e),
+						c = s.getBlockAfter(e),
 						a = [i];
-					if (c && Object(f.u)(c.getType()) && a.push(c), a.find(e => e.getKey() === n)) return;
-					const d = a.reduce((e, t) => e.remove(t.getKey()), r.getBlockMap());
-					r = r.set("blockMap", d), r = Object(g.f)(r, n, a, o);
-					const u = s.EditorState.push(e, r, m.e);
-					return s.EditorState.forceSelection(u, Object(g.b)(l()(a), !0))
+					if (c && Object(f.u)(c.getType()) && a.push(c), a.find(t => t.getKey() === n)) return;
+					const d = a.reduce((t, e) => t.remove(e.getKey()), s.getBlockMap());
+					s = s.set("blockMap", d), s = Object(g.f)(s, n, a, o);
+					const u = r.EditorState.push(t, s, m.e);
+					return r.EditorState.forceSelection(u, Object(g.b)(l()(a), !0))
 				},
-				K = function(e, t) {
+				K = function(t, e) {
 					let n = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : g.a.after;
 					const o = Object(g.h)(),
-						r = Object(g.f)(e.getCurrentContent(), t, [o], n),
-						i = s.EditorState.push(e, r, m.e);
-					return s.EditorState.forceSelection(i, s.SelectionState.createEmpty(o.getKey()))
+						s = Object(g.f)(t.getCurrentContent(), e, [o], n),
+						i = r.EditorState.push(t, s, m.e);
+					return r.EditorState.forceSelection(i, r.SelectionState.createEmpty(o.getKey()))
 				},
-				M = e => e.thumbnail && e.uploadInfo ? `${e.uploadInfo.uploadKey}-thumbnail-${e.thumbnail.time}` : "",
-				L = (e, t) => {
+				M = t => t.thumbnail && t.uploadInfo ? `${t.uploadInfo.uploadKey}-thumbnail-${t.thumbnail.time}` : "",
+				L = (t, e) => {
 					let n = "",
 						o = "";
-					if (e.uploadInfo) {
+					if (t.uploadInfo) {
 						const {
-							uploadKey: s
-						} = e.uploadInfo, r = t[s];
-						r && r.url && (n = Object(h.b)(r.url));
-						const i = t[M(e)];
+							uploadKey: r
+						} = t.uploadInfo, s = e[r];
+						s && s.url && (n = Object(h.b)(s.url));
+						const i = e[M(t)];
 						i && i.url && (o = Object(h.b)(i.url))
 					}
 					return {
@@ -7486,33 +7295,33 @@
 					}
 				}
 		},
-		"./src/reddit/components/RichTextEditor/spoiler/decorator.m.less": function(e, t, n) {
-			e.exports = {
+		"./src/reddit/components/RichTextEditor/spoiler/decorator.m.less": function(t, e, n) {
+			t.exports = {
 				spoiler: "_1AlhnBqYYVTQbTr33YViyK"
 			}
 		},
-		"./src/reddit/components/RichTextEditor/spoiler/helpers.ts": function(e, t, n) {
+		"./src/reddit/components/RichTextEditor/spoiler/helpers.ts": function(t, e, n) {
 			"use strict";
-			n.d(t, "b", (function() {
-				return r
-			})), n.d(t, "a", (function() {
+			n.d(e, "b", (function() {
+				return s
+			})), n.d(e, "a", (function() {
 				return i
 			}));
 			var o = n("./src/lib/forEachGroup/index.ts"),
-				s = n("./src/reddit/components/RichTextEditor/styleAndBlockTypes.ts");
-			const r = e => e.getStyle().has(s.k.SPOILER);
+				r = n("./src/reddit/components/RichTextEditor/styleAndBlockTypes.ts");
+			const s = t => t.getStyle().has(r.k.SPOILER);
 
-			function i(e, t, n) {
-				const s = e.getCharacterList();
-				Object(o.a)(s, {
-					keyFn: r
-				}, (e, n, o, s) => {
-					n && t(o, s)
+			function i(t, e, n) {
+				const r = t.getCharacterList();
+				Object(o.a)(r, {
+					keyFn: s
+				}, (t, n, o, r) => {
+					n && e(o, r)
 				})
 			}
 		},
-		"./src/reddit/components/RichTextEditor/table/Renderer/index.m.less": function(e, t, n) {
-			e.exports = {
+		"./src/reddit/components/RichTextEditor/table/Renderer/index.m.less": function(t, e, n) {
+			t.exports = {
 				Cell: "_1J5sneEp0XXo0pFsMN7Kjs",
 				cell: "_1J5sneEp0XXo0pFsMN7Kjs",
 				Row: "_2Hd-Rc7z9gTKIz6JUGhbcl",
@@ -7522,16 +7331,16 @@
 				isFakeSelectionActive: "_1QXaG0_iXh-LFDkah9HqP3"
 			}
 		},
-		"./src/reddit/components/RichTextEditor/table/Toolbar/index.m.less": function(e, t, n) {
-			e.exports = {
+		"./src/reddit/components/RichTextEditor/table/Toolbar/index.m.less": function(t, e, n) {
+			t.exports = {
 				formatterButton: "_1dNavKEU0lSO4mo9fYWTPm",
 				ToolbarContent: "_1yPmb5QUbyAQX1wIs4FYQI",
 				toolbarContent: "_1yPmb5QUbyAQX1wIs4FYQI",
 				tooltip: "_3fnB5glctifL-mkYhH6aA1"
 			}
 		},
-		"./src/reddit/components/RichTextEditor/table/ToolbarController/index.m.less": function(e, t, n) {
-			e.exports = {
+		"./src/reddit/components/RichTextEditor/table/ToolbarController/index.m.less": function(t, e, n) {
+			t.exports = {
 				ActionButton: "_2g2bsszGVtKe_XRKcRrpQi",
 				actionButton: "_2g2bsszGVtKe_XRKcRrpQi",
 				isPressed: "_2WwwYG59S_TJRq7FSdTVKK",
@@ -7539,144 +7348,144 @@
 				toolbarWrapper: "_3rXrpMuvoGNBbLE7TQQCB9"
 			}
 		},
-		"./src/reddit/components/RichTextEditor/table/helpers.ts": function(e, t, n) {
+		"./src/reddit/components/RichTextEditor/table/helpers.ts": function(t, e, n) {
 			"use strict";
-			n.d(t, "a", (function() {
+			n.d(e, "a", (function() {
 				return a
-			})), n.d(t, "g", (function() {
+			})), n.d(e, "g", (function() {
 				return l
-			})), n.d(t, "m", (function() {
+			})), n.d(e, "m", (function() {
 				return u
-			})), n.d(t, "n", (function() {
+			})), n.d(e, "n", (function() {
 				return p
-			})), n.d(t, "j", (function() {
+			})), n.d(e, "j", (function() {
 				return h
-			})), n.d(t, "l", (function() {
+			})), n.d(e, "l", (function() {
 				return m
-			})), n.d(t, "f", (function() {
+			})), n.d(e, "f", (function() {
 				return g
-			})), n.d(t, "k", (function() {
+			})), n.d(e, "k", (function() {
 				return f
-			})), n.d(t, "c", (function() {
+			})), n.d(e, "c", (function() {
 				return b
-			})), n.d(t, "h", (function() {
+			})), n.d(e, "h", (function() {
 				return y
-			})), n.d(t, "b", (function() {
+			})), n.d(e, "b", (function() {
 				return E
-			})), n.d(t, "i", (function() {
+			})), n.d(e, "i", (function() {
 				return S
-			})), n.d(t, "e", (function() {
-				return x
-			})), n.d(t, "o", (function() {
+			})), n.d(e, "e", (function() {
 				return C
-			})), n.d(t, "d", (function() {
+			})), n.d(e, "o", (function() {
+				return x
+			})), n.d(e, "d", (function() {
 				return O
 			}));
 			var o = n("./node_modules/draft-js/lib/Draft.js"),
-				s = n("./node_modules/immutable/dist/immutable.js"),
-				r = n("./src/reddit/models/RichTextJson/index.ts"),
+				r = n("./node_modules/immutable/dist/immutable.js"),
+				s = n("./src/reddit/models/RichTextJson/index.ts"),
 				i = n("./src/reddit/components/RichTextEditor/helpers/sliceContiguousBlocks.ts"),
 				c = n("./src/reddit/components/RichTextEditor/styleAndBlockTypes.ts");
 			const a = {
-					[r.e]: "left",
-					[r.f]: "right",
-					[r.d]: "center"
+					[s.e]: "left",
+					[s.f]: "right",
+					[s.d]: "center"
 				},
-				l = e => {
-					const t = e.getData();
+				l = t => {
+					const e = t.getData();
 					return {
-						colIndex: t.get("colIndex"),
-						rowIndex: t.get("rowIndex"),
-						colCount: t.get("colCount"),
-						alignment: t.get("alignment")
+						colIndex: e.get("colIndex"),
+						rowIndex: e.get("rowIndex"),
+						colCount: e.get("colCount"),
+						alignment: e.get("alignment")
 					}
 				},
 				d = ["data"],
-				u = (e, t) => e.mergeIn(d, t),
-				p = (e, t, n) => e.merge({
-					text: e.getText().slice(t, n),
-					characterList: e.getCharacterList().slice(t, n)
+				u = (t, e) => t.mergeIn(d, e),
+				p = (t, e, n) => t.merge({
+					text: t.getText().slice(e, n),
+					characterList: t.getCharacterList().slice(e, n)
 				}),
-				h = function(e, t) {
+				h = function(t, e) {
 					let n = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : "",
-						s = arguments.length > 3 ? arguments[3] : void 0;
-					const r = t.map(e => e.getText()).join(n),
-						i = n ? s || o.CharacterMetadata.create() : null,
+						r = arguments.length > 3 ? arguments[3] : void 0;
+					const s = e.map(t => t.getText()).join(n),
+						i = n ? r || o.CharacterMetadata.create() : null,
 						c = [];
-					return t.forEach(e => {
-						c.push(...e.getCharacterList().toArray()), i && t.length > 1 && c.push(i)
-					}), e.merge({
-						text: r,
+					return e.forEach(t => {
+						c.push(...t.getCharacterList().toArray()), i && e.length > 1 && c.push(i)
+					}), t.merge({
+						text: s,
 						characterList: c
 					})
 				},
-				m = (e, t) => {
+				m = (t, e) => {
 					const n = [];
-					for (let r = 0; r < t; r++)
-						for (let t = 0; t < e; t++) n.push(new o.ContentBlock({
+					for (let s = 0; s < e; s++)
+						for (let e = 0; e < t; e++) n.push(new o.ContentBlock({
 							key: Object(o.genKey)(),
 							type: c.l,
-							data: Object(s.Map)({
-								colCount: e,
-								colIndex: t,
-								rowIndex: r
+							data: Object(r.Map)({
+								colCount: t,
+								colIndex: e,
+								rowIndex: s
 							})
 						}));
 					return n
 				},
-				g = (e, t) => ({
-					minCol: Math.min(e.colIndex, t.colIndex),
-					minRow: Math.min(e.rowIndex, t.rowIndex),
-					maxCol: Math.max(e.colIndex, t.colIndex),
-					maxRow: Math.max(e.rowIndex, t.rowIndex)
+				g = (t, e) => ({
+					minCol: Math.min(t.colIndex, e.colIndex),
+					minRow: Math.min(t.rowIndex, e.rowIndex),
+					maxCol: Math.max(t.colIndex, e.colIndex),
+					maxRow: Math.max(t.rowIndex, e.rowIndex)
 				}),
-				f = (e, t) => {
+				f = (t, e) => {
 					const {
 						minCol: n,
 						minRow: o,
-						maxCol: s,
-						maxRow: r
-					} = g(e, t);
-					return (e, t) => o <= e && e <= r && n <= t && t <= s
+						maxCol: r,
+						maxRow: s
+					} = g(t, e);
+					return (t, e) => o <= t && t <= s && n <= e && e <= r
 				},
-				b = (e, t) => e.rowIndex < t.rowIndex ? -1 : e.rowIndex > t.rowIndex ? 1 : e.colIndex - t.colIndex,
-				y = (e, t) => e === t || !(!e || !t) && 0 === b(e, t),
-				E = (e, t) => b(l(e), l(t)),
-				S = e => {
-					if (Object(c.v)(e.getType())) {
-						return 0 === l(e).rowIndex
+				b = (t, e) => t.rowIndex < e.rowIndex ? -1 : t.rowIndex > e.rowIndex ? 1 : t.colIndex - e.colIndex,
+				y = (t, e) => t === e || !(!t || !e) && 0 === b(t, e),
+				E = (t, e) => b(l(t), l(e)),
+				S = t => {
+					if (Object(c.v)(t.getType())) {
+						return 0 === l(t).rowIndex
 					}
 					return !1
 				},
-				x = (e, t, n) => {
-					const o = (t, n) => {
-						if (t) {
-							const o = Object(i.a)(e, t);
-							return o && n && -1 !== o.blocks.indexOf(n) ? [o, o] : [o, n ? Object(i.a)(e, n) : null]
+				C = (t, e, n) => {
+					const o = (e, n) => {
+						if (e) {
+							const o = Object(i.a)(t, e);
+							return o && n && -1 !== o.blocks.indexOf(n) ? [o, o] : [o, n ? Object(i.a)(t, n) : null]
 						}
 						return n ? o(n, null).reverse() : [null, null]
 					};
-					return o(Object(c.v)(t.getType()) ? t : null, Object(c.v)(n.getType()) ? n : null)
+					return o(Object(c.v)(e.getType()) ? e : null, Object(c.v)(n.getType()) ? n : null)
 				},
-				C = function(e, t, n) {
+				x = function(t, e, n) {
 					let o = arguments.length > 3 && void 0 !== arguments[3] && arguments[3];
-					const s = {
+					const r = {
 						isBackward: o
 					};
-					return t && (s.anchorKey = t.getKey(), s.anchorOffset = o ? t.getLength() : 0), n && (s.focusKey = n.getKey(), s.focusOffset = o ? 0 : n.getLength()), e.merge(s)
+					return e && (r.anchorKey = e.getKey(), r.anchorOffset = o ? e.getLength() : 0), n && (r.focusKey = n.getKey(), r.focusOffset = o ? 0 : n.getLength()), t.merge(r)
 				},
-				O = e => {
-					if (!e.length) return [];
-					const t = e[0].length;
-					return e.map((e, n) => e.map((e, o) => u(e, {
+				O = t => {
+					if (!t.length) return [];
+					const e = t[0].length;
+					return t.map((t, n) => t.map((t, o) => u(t, {
 						rowIndex: n,
 						colIndex: o,
-						colCount: t
+						colCount: e
 					})))
 				}
 		},
-		"./src/reddit/components/ThumbnailSelector/index.m.less": function(e, t, n) {
-			e.exports = {
+		"./src/reddit/components/ThumbnailSelector/index.m.less": function(t, e, n) {
+			t.exports = {
 				Component: "uqOt5KqJAqw5pe-WNxa0a",
 				component: "uqOt5KqJAqw5pe-WNxa0a",
 				TitleRow: "HEiFtUR3s93dQ2jUWWnxr",
@@ -7697,11 +7506,11 @@
 				cancelButton: "mBq3crGX9-xOOg-b-1V85"
 			}
 		},
-		"./src/reddit/components/ThumbnailSelector/index.tsx": function(e, t, n) {
+		"./src/reddit/components/ThumbnailSelector/index.tsx": function(t, e, n) {
 			"use strict";
 			var o = n("./node_modules/fbt/lib/FbtPublic.js"),
-				s = n("./node_modules/lodash/debounce.js"),
-				r = n.n(s),
+				r = n("./node_modules/lodash/debounce.js"),
+				s = n.n(r),
 				i = n("./node_modules/lodash/range.js"),
 				c = n.n(i),
 				a = n("./node_modules/react/index.js"),
@@ -7717,170 +7526,170 @@
 				y = n("./src/reddit/components/ThumbnailSelector/index.m.less"),
 				E = n.n(y);
 			const S = 10,
-				x = Object(p.a)(u.a.div("Component", E.a)),
-				C = u.a.wrapped(b.a, "TitleRow", E.a),
+				C = Object(p.a)(u.a.div("Component", E.a)),
+				x = u.a.wrapped(b.a, "TitleRow", E.a),
 				O = u.a.wrapped(f.a, "Close", E.a),
 				k = u.a.div("CloseWrapper", E.a),
 				T = u.a.div("ThumbnailsContainer", E.a),
 				v = u.a.img("Image", E.a),
-				j = e => l.a.createElement("div", {
+				j = t => l.a.createElement("div", {
 					className: Object(d.a)(E.a.thumbnail, Object(g.a)({
-						isLoading: e.isLoading
+						isLoading: t.isLoading
 					}), {
-						[E.a.isSelected]: e.isSelected
+						[E.a.isSelected]: t.isSelected
 					}),
-					onClick: e.onClick,
-					ref: e.elementRef
-				}, e.thumbnail.url && l.a.createElement(v, {
-					src: e.thumbnail.url
+					onClick: t.onClick,
+					ref: t.elementRef
+				}, t.thumbnail.url && l.a.createElement(v, {
+					src: t.thumbnail.url
 				})),
-				_ = u.a.wrapped(b.a, "ButtonRow", E.a),
-				R = h.l,
-				w = u.a.wrapped(h.o, "CancelButton", E.a),
-				I = (e, t) => {
-					if (1 === e) return [0];
-					const n = c()(0, t, t / (e - 1));
-					return n.push(t), n.map(e => +e.toFixed(2))
+				R = u.a.wrapped(b.a, "ButtonRow", E.a),
+				w = h.l,
+				B = u.a.wrapped(h.o, "CancelButton", E.a),
+				I = (t, e) => {
+					if (1 === t) return [0];
+					const n = c()(0, e, e / (t - 1));
+					return n.push(e), n.map(t => +t.toFixed(2))
 				};
-			class B extends l.a.Component {
-				constructor(e) {
-					super(e), this.isThumbnailsAreGenerating = !1, this.setSelectedElementRef = e => this.selectedElement = e, this.setThumbnails = r()(e => this.setState({
-						thumbnails: e
+			class _ extends l.a.Component {
+				constructor(t) {
+					super(t), this.isThumbnailsAreGenerating = !1, this.setSelectedElementRef = t => this.selectedElement = t, this.setThumbnails = s()(t => this.setState({
+						thumbnails: t
 					}), 100), this.scrollIntoView = () => {
 						this.selectedElement && this.selectedElement.scrollIntoView({})
-					}, this.setSelected = e => {
+					}, this.setSelected = t => {
 						this.setState({
-							selectedIndex: e
+							selectedIndex: t
 						})
 					}, this.onSelectButton = () => {
 						const {
-							selectedIndex: e
-						} = this.state, t = this.state.thumbnails[e];
+							selectedIndex: t
+						} = this.state, e = this.state.thumbnails[t];
 						this.props.onSelect({
-							time: t.time,
-							url: t.url
+							time: e.time,
+							url: e.url
 						})
 					};
 					const {
-						thumbnailsCount: t = S,
+						thumbnailsCount: e = S,
 						selected: n,
 						videoDuration: o
-					} = this.props, s = I(t, o).map(e => ({
-						time: e,
-						url: n && n.time === e ? n.url : void 0
-					})), i = n ? s.findIndex(e => n.time === e.time) : -1;
+					} = this.props, r = I(e, o).map(t => ({
+						time: t,
+						url: n && n.time === t ? n.url : void 0
+					})), i = n ? r.findIndex(t => n.time === t.time) : -1;
 					this.state = {
-						thumbnails: s,
+						thumbnails: r,
 						selectedIndex: i
 					}
 				}
 				componentDidMount() {
 					this.scrollIntoView(), this.props.isOpen && this.generateVideoThumbnails()
 				}
-				componentDidUpdate(e) {
-					this.props.isOpen && !e.isOpen && (this.scrollIntoView(), this.generateVideoThumbnails())
+				componentDidUpdate(t) {
+					this.props.isOpen && !t.isOpen && (this.scrollIntoView(), this.generateVideoThumbnails())
 				}
 				async generateVideoThumbnails() {
 					const {
-						thumbnails: e
+						thumbnails: t
 					} = this.state;
-					if (this.isThumbnailsAreGenerating || !e.find(e => !e.url)) return;
+					if (this.isThumbnailsAreGenerating || !t.find(t => !t.url)) return;
 					this.isThumbnailsAreGenerating = !0;
-					const t = document.createElement("video"),
+					const e = document.createElement("video"),
 						n = document.createElement("canvas");
-					await Object(m.q)(t, this.props.videoSource);
+					await Object(m.q)(e, this.props.videoSource);
 					let o = 0;
-					t.currentTime = e[o].time, await Object(m.e)(t, n, t => (e[o].url = t.dataUrl, o++, this.setThumbnails(e), o < e.length ? e[o].time : null)), this.setState({
-						thumbnails: e
+					e.currentTime = t[o].time, await Object(m.e)(e, n, e => (t[o].url = e.dataUrl, o++, this.setThumbnails(t), o < t.length ? t[o].time : null)), this.setState({
+						thumbnails: t
 					}), this.isThumbnailsAreGenerating = !1
 				}
 				render() {
 					if (!this.props.isOpen) return null;
 					const {
-						selectedIndex: e,
-						thumbnails: t
+						selectedIndex: t,
+						thumbnails: e
 					} = this.state;
-					return l.a.createElement(x, {
+					return l.a.createElement(C, {
 						withOverlay: !0
-					}, l.a.createElement(C, null, o.fbt._("Choose thumbnail", null, {
+					}, l.a.createElement(x, null, o.fbt._("Choose thumbnail", null, {
 						hk: "XlI0H"
 					}), l.a.createElement(k, {
 						onClick: this.props.onToggleModal
-					}, l.a.createElement(O, null))), l.a.createElement(T, null, t.map((t, n) => l.a.createElement(j, {
+					}, l.a.createElement(O, null))), l.a.createElement(T, null, e.map((e, n) => l.a.createElement(j, {
 						key: n,
-						elementRef: n === e ? this.setSelectedElementRef : void 0,
-						isLoading: !t.url,
+						elementRef: n === t ? this.setSelectedElementRef : void 0,
+						isLoading: !e.url,
 						onClick: () => this.setSelected(n),
-						isSelected: n === e,
-						thumbnail: t
-					}))), l.a.createElement(_, null, l.a.createElement(w, {
+						isSelected: n === t,
+						thumbnail: e
+					}))), l.a.createElement(R, null, l.a.createElement(B, {
 						onClick: this.props.onToggleModal
 					}, o.fbt._("Cancel", null, {
 						hk: "2TSLl5"
-					})), l.a.createElement(R, {
+					})), l.a.createElement(w, {
 						onClick: this.onSelectButton
 					}, o.fbt._("Select", null, {
 						hk: "3s53WD"
 					}))))
 				}
 			}
-			t.a = B
+			e.a = _
 		},
-		"./src/reddit/components/UsersCountIndicator/constants.ts": function(e, t, n) {
+		"./src/reddit/components/UsersCountIndicator/constants.ts": function(t, e, n) {
 			"use strict";
-			n.d(t, "a", (function() {
+			n.d(e, "a", (function() {
 				return o
-			})), n.d(t, "b", (function() {
-				return s
-			})), n.d(t, "c", (function() {
+			})), n.d(e, "b", (function() {
 				return r
-			})), n.d(t, "d", (function() {
+			})), n.d(e, "c", (function() {
+				return s
+			})), n.d(e, "d", (function() {
 				return i
-			})), n.d(t, "e", (function() {
+			})), n.d(e, "e", (function() {
 				return c
-			})), n.d(t, "f", (function() {
+			})), n.d(e, "f", (function() {
 				return a
-			})), n.d(t, "g", (function() {
+			})), n.d(e, "g", (function() {
 				return l
 			}));
 			const o = 5,
-				s = 2,
-				r = 1e4,
+				r = 2,
+				s = 1e4,
 				i = 2e3,
 				c = 3e4,
 				a = 1e4,
 				l = 2
 		},
-		"./src/reddit/controls/Input/index.tsx": function(e, t, n) {
+		"./src/reddit/controls/Input/index.tsx": function(t, e, n) {
 			"use strict";
 			var o = n("./src/lib/lessComponent.tsx"),
-				s = n("./src/reddit/controls/Input/index.m.less"),
-				r = n.n(s);
-			t.a = o.a.input("input", r.a)
+				r = n("./src/reddit/controls/Input/index.m.less"),
+				s = n.n(r);
+			e.a = o.a.input("input", s.a)
 		},
-		"./src/reddit/controls/LoadingIcon/index.m.less": function(e, t, n) {
-			e.exports = {
+		"./src/reddit/controls/LoadingIcon/index.m.less": function(t, e, n) {
+			t.exports = {
 				loadingIcon: "_3LwT7hgGcSjmJ7ng7drAuq",
 				spin: "ibDwUVR1CAykturOgqOS5",
 				mCentered: "_2qr28EeyPvBWAsPKl-KuWN"
 			}
 		},
-		"./src/reddit/controls/LoadingIcon/index.tsx": function(e, t, n) {
+		"./src/reddit/controls/LoadingIcon/index.tsx": function(t, e, n) {
 			"use strict";
 			var o = n("./node_modules/react/index.js"),
-				s = n.n(o),
-				r = n("./src/lib/classNames/index.ts"),
+				r = n.n(o),
+				s = n("./src/lib/classNames/index.ts"),
 				i = n("./src/reddit/controls/LoadingIcon/index.m.less"),
 				c = n.n(i);
-			t.a = e => {
+			e.a = t => {
 				let {
-					center: t,
+					center: e,
 					className: n,
 					sizePx: o = 10
-				} = e;
-				return s.a.createElement("div", {
-					className: Object(r.a)(c.a.loadingIcon, n, {
-						[c.a.mCentered]: t
+				} = t;
+				return r.a.createElement("div", {
+					className: Object(s.a)(c.a.loadingIcon, n, {
+						[c.a.mCentered]: e
 					}),
 					style: {
 						"--sizePx": `${o}px`
@@ -7889,63 +7698,63 @@
 				})
 			}
 		},
-		"./src/reddit/controls/SubredditDropdown/index.m.less": function(e, t, n) {
-			e.exports = {
+		"./src/reddit/controls/SubredditDropdown/index.m.less": function(t, e, n) {
+			t.exports = {
 				entry: "BR2J4z5ndMj6r3-QW2hHI",
 				mIsFocused: "_2KXTnIrbZ1Fr5F4nZyXeKS",
 				list: "_17g61LC45mhwjs-g79qbZK"
 			}
 		},
-		"./src/reddit/endpoints/economics/emojis.ts": function(e, t, n) {
+		"./src/reddit/endpoints/economics/emojis.ts": function(t, e, n) {
 			"use strict";
-			n.d(t, "a", (function() {
-				return r
-			})), n.d(t, "b", (function() {
+			n.d(e, "a", (function() {
+				return s
+			})), n.d(e, "b", (function() {
 				return i
 			}));
 			var o = n("./src/config.ts"),
-				s = n("./src/reddit/endpoints/governance/requester.ts");
-			const r = (e, t) => Object(s.a)(e, {
+				r = n("./src/reddit/endpoints/governance/requester.ts");
+			const s = (t, e) => Object(r.a)(t, {
 					method: "post",
 					endpoint: `${o.a.metaUrl}/orders`,
 					data: {
 						price: "0",
 						currency: "usd",
 						products: [{
-							productId: t.productId,
+							productId: e.productId,
 							quantity: "1"
 						}],
-						subredditId: t.subredditId
+						subredditId: e.subredditId
 					}
 				}),
-				i = (e, t) => Object(s.a)(e, {
+				i = (t, e) => Object(r.a)(t, {
 					method: "get",
-					endpoint: `${o.a.metaUrl}/product-collections/${t}?types=emotes_pack`
+					endpoint: `${o.a.metaUrl}/product-collections/${e}?types=emotes_pack`
 				})
 		},
-		"./src/reddit/endpoints/economics/specialMembership.ts": function(e, t, n) {
+		"./src/reddit/endpoints/economics/specialMembership.ts": function(t, e, n) {
 			"use strict";
-			n.d(t, "a", (function() {
+			n.d(e, "a", (function() {
 				return l
-			})), n.d(t, "b", (function() {
+			})), n.d(e, "b", (function() {
 				return d
-			})), n.d(t, "d", (function() {
+			})), n.d(e, "d", (function() {
 				return u
-			})), n.d(t, "e", (function() {
+			})), n.d(e, "e", (function() {
 				return p
-			})), n.d(t, "c", (function() {
+			})), n.d(e, "c", (function() {
 				return h
 			}));
 			var o = n("./src/config.ts"),
-				s = n("./src/lib/omitHeaders/index.ts"),
-				r = n("./src/reddit/constants/headers.ts"),
+				r = n("./src/lib/omitHeaders/index.ts"),
+				s = n("./src/reddit/constants/headers.ts"),
 				i = n("./src/reddit/endpoints/governance/requester.ts"),
 				c = n("./src/reddit/helpers/governanceErrorText/index.ts"),
 				a = n("./src/reddit/helpers/r2/normalizeSubredditFromR2/index.ts");
 
-			function l(e, t) {
-				return Object(i.a)(e, {
-					endpoint: `${o.a.metaUrl}/communities/${t.subredditId}/me`,
+			function l(t, e) {
+				return Object(i.a)(t, {
+					endpoint: `${o.a.metaUrl}/communities/${e.subredditId}/me`,
 					method: "patch",
 					data: {
 						specialMemberships: {
@@ -7957,68 +7766,68 @@
 				})
 			}
 
-			function d(e, t) {
-				return Object(i.a)(e, {
+			function d(t, e) {
+				return Object(i.a)(t, {
 					endpoint: `${o.a.metaUrl}/ps/me/braintree-client-tokens`,
 					method: "post",
 					data: {
-						username: t && t.username
+						username: e && e.username
 					}
 				})
 			}
 
-			function u(e, t) {
-				return Object(i.a)(e, {
+			function u(t, e) {
+				return Object(i.a)(t, {
 					endpoint: `${o.a.metaUrl}/orders`,
 					method: "post",
 					data: {
 						currency: "usd",
 						orderTarget: "special_membership",
-						price: t.trial ? "0" : t.price,
+						price: e.trial ? "0" : e.price,
 						products: [{
-							productId: t.productId,
+							productId: e.productId,
 							quantity: "1"
 						}],
 						providerArgs: {
-							paymentNonce: t.nonce,
+							paymentNonce: e.nonce,
 							savePaymentMethod: !0
 						},
 						providerName: "braintree",
-						subredditId: t.subredditId,
+						subredditId: e.subredditId,
 						targetArgs: {
 							renew: !0,
-							receiverName: t.username
+							receiverName: e.username
 						}
 					}
 				})
 			}
 
-			function p(e, t) {
-				return Object(i.a)(Object(s.a)(e, [r.a]), {
-					endpoint: `${e.apiUrl}/api/info?id=${t.join(",")}`,
+			function p(t, e) {
+				return Object(i.a)(Object(r.a)(t, [s.a]), {
+					endpoint: `${t.apiUrl}/api/info?id=${e.join(",")}`,
 					method: "get"
-				}).then(e => {
-					if (e.ok) {
-						const t = e.body.data.children.map(e => {
+				}).then(t => {
+					if (t.ok) {
+						const e = t.body.data.children.map(t => {
 							let {
-								data: t
-							} = e;
-							return Object(a.a)(t)
-						}).reduce((e, t) => (e[t.id] = t, e), {});
+								data: e
+							} = t;
+							return Object(a.a)(e)
+						}).reduce((t, e) => (t[e.id] = e, t), {});
 						return {
-							...e,
-							body: t
+							...t,
+							body: e
 						}
 					}
-					return e
+					return t
 				})
 			}
-			async function h(e, t) {
-				const n = await Object(i.a)(e, {
+			async function h(t, e) {
+				const n = await Object(i.a)(t, {
 					endpoint: `${o.a.metaUrl}/orders`,
 					method: "post",
 					data: {
-						...t,
+						...e,
 						currency: "points",
 						orderTarget: "special_membership",
 						products: [{
@@ -8034,24 +7843,24 @@
 				return n.body
 			}
 		},
-		"./src/reddit/endpoints/economics/subredditPremium.ts": function(e, t, n) {
+		"./src/reddit/endpoints/economics/subredditPremium.ts": function(t, e, n) {
 			"use strict";
-			n.d(t, "a", (function() {
+			n.d(e, "a", (function() {
 				return d
-			})), n.d(t, "b", (function() {
+			})), n.d(e, "b", (function() {
 				return u
 			}));
 			n("./node_modules/core-js/modules/web.dom.iterable.js");
 			var o = n("./node_modules/lodash/merge.js"),
-				s = n.n(o),
-				r = n("./src/config.ts"),
+				r = n.n(o),
+				s = n("./src/config.ts"),
 				i = n("./src/reddit/endpoints/governance/badges.ts"),
 				c = n("./src/reddit/endpoints/governance/community.ts"),
 				a = n("./src/reddit/endpoints/governance/products/badges.ts"),
 				l = n("./src/reddit/endpoints/governance/requester.ts");
-			async function d(e, t, n) {
+			async function d(t, e, n) {
 				const o = {
-						subredditId: t,
+						subredditId: e,
 						badges: {},
 						errors: {},
 						collections: {},
@@ -8059,162 +7868,162 @@
 						subscription: void 0,
 						userOwnedBadges: []
 					},
-					d = function(e, t) {
-						return Object(l.a)(e, {
+					d = function(t, e) {
+						return Object(l.a)(t, {
 							method: "get",
-							endpoint: `${r.a.metaUrl}/product-collections/${t}?types=badge`
+							endpoint: `${s.a.metaUrl}/product-collections/${e}?types=badge`
 						})
-					}(e, t),
-					u = Object(c.a)(e, {
-						subredditId: t
+					}(t, e),
+					u = Object(c.a)(t, {
+						subredditId: e
 					}),
-					p = Object(a.b)(e, t),
-					h = Object(i.c)(e, t, n),
+					p = Object(a.b)(t, e),
+					h = Object(i.c)(t, e, n),
 					[m, g, f, b] = await Promise.all([d, u, p, h]);
 				if (m.ok ? o.collections = m.body : o.errors.collections = m.error, g.ok) {
-					const e = g.body;
-					o.subscription = e.specialMemberships, o.communityRaw = e
+					const t = g.body;
+					o.subscription = t.specialMemberships, o.communityRaw = t
 				}
-				return f.ok ? o.products = f.body : o.errors.products = f.error, b.ok ? (s()(o.badges, b.body.badges), o.userOwnedBadges = b.body.userOwnedBadges) : o.errors.userBadges = b.error, o
+				return f.ok ? o.products = f.body : o.errors.products = f.error, b.ok ? (r()(o.badges, b.body.badges), o.userOwnedBadges = b.body.userOwnedBadges) : o.errors.userBadges = b.error, o
 			}
-			const u = (e, t) => Object(l.a)(e, {
-				endpoint: `${r.a.metaUrl}/products/${t}?types=badge,membership`,
+			const u = (t, e) => Object(l.a)(t, {
+				endpoint: `${s.a.metaUrl}/products/${e}?types=badge,membership`,
 				method: "delete"
 			})
 		},
-		"./src/reddit/endpoints/governance/community.ts": function(e, t, n) {
+		"./src/reddit/endpoints/governance/community.ts": function(t, e, n) {
 			"use strict";
-			n.d(t, "a", (function() {
+			n.d(e, "a", (function() {
 				return i
 			}));
 			var o = n("./src/config.ts"),
-				s = n("./src/lib/constants/index.ts"),
-				r = n("./src/reddit/endpoints/governance/requester.ts");
+				r = n("./src/lib/constants/index.ts"),
+				s = n("./src/reddit/endpoints/governance/requester.ts");
 
-			function i(e, t) {
-				return Object(r.a)(e, {
-					endpoint: `${o.a.metaUrl}/communities/${t.subredditId}/me`,
-					method: s.ob.GET
+			function i(t, e) {
+				return Object(s.a)(t, {
+					endpoint: `${o.a.metaUrl}/communities/${e.subredditId}/me`,
+					method: r.ob.GET
 				})
 			}
 		},
-		"./src/reddit/helpers/richTextEditor/index.ts": function(e, t, n) {
+		"./src/reddit/helpers/richTextEditor/index.ts": function(t, e, n) {
 			"use strict";
 			var o;
-			n.d(t, "a", (function() {
+			n.d(e, "a", (function() {
 					return o
 				})),
-				function(e) {
-					e[e.Post = 0] = "Post", e[e.Comment = 1] = "Comment"
+				function(t) {
+					t[t.Post = 0] = "Post", t[t.Comment = 1] = "Comment"
 				}(o || (o = {}))
 		},
-		"./src/reddit/icons/svgs/FormattingAlignCenter/index.m.less": function(e, t, n) {
-			e.exports = {
+		"./src/reddit/icons/svgs/FormattingAlignCenter/index.m.less": function(t, e, n) {
+			t.exports = {
 				icon: "_1ZVHRoTDdo57082D2GcC80"
 			}
 		},
-		"./src/reddit/icons/svgs/FormattingAlignCenter/index.tsx": function(e, t, n) {
+		"./src/reddit/icons/svgs/FormattingAlignCenter/index.tsx": function(t, e, n) {
 			"use strict";
 			var o = n("./node_modules/react/index.js"),
-				s = n.n(o),
-				r = n("./src/lib/classNames/index.ts"),
+				r = n.n(o),
+				s = n("./src/lib/classNames/index.ts"),
 				i = n("./src/reddit/icons/svgs/FormattingAlignCenter/index.m.less"),
 				c = n.n(i);
-			t.a = e => s.a.createElement("svg", {
-				className: Object(r.a)(c.a.icon, e.className),
+			e.a = t => r.a.createElement("svg", {
+				className: Object(s.a)(c.a.icon, t.className),
 				viewBox: "0 0 20 20",
 				xmlns: "http://www.w3.org/2000/svg"
-			}, s.a.createElement("g", {
+			}, r.a.createElement("g", {
 				fill: "inherit",
 				fillRule: "nonzero"
-			}, s.a.createElement("path", {
+			}, r.a.createElement("path", {
 				d: "M3.5 11h13c.55 0 1-.45 1-1s-.45-1-1-1h-13c-.55 0-1 .45-1 1s.45 1 1 1zM7.42 16h5.08c.55 0 1-.45 1-1s-.45-1-1-1H7.42c-.56 0-1 .45-1 1s.44 1 1 1zM3.5 6h13c.55 0 1-.45 1-1s-.45-1-1-1h-13c-.55 0-1 .45-1 1s.45 1 1 1z"
 			})))
 		},
-		"./src/reddit/icons/svgs/FormattingAlignLeft/index.m.less": function(e, t, n) {
-			e.exports = {
+		"./src/reddit/icons/svgs/FormattingAlignLeft/index.m.less": function(t, e, n) {
+			t.exports = {
 				icon: "_33vXt91MK_ualpifvvw_3v"
 			}
 		},
-		"./src/reddit/icons/svgs/FormattingAlignLeft/index.tsx": function(e, t, n) {
+		"./src/reddit/icons/svgs/FormattingAlignLeft/index.tsx": function(t, e, n) {
 			"use strict";
 			var o = n("./node_modules/react/index.js"),
-				s = n.n(o),
-				r = n("./src/lib/classNames/index.ts"),
+				r = n.n(o),
+				s = n("./src/lib/classNames/index.ts"),
 				i = n("./src/reddit/icons/svgs/FormattingAlignLeft/index.m.less"),
 				c = n.n(i);
-			t.a = e => s.a.createElement("svg", {
-				className: Object(r.a)(c.a.icon, e.className),
+			e.a = t => r.a.createElement("svg", {
+				className: Object(s.a)(c.a.icon, t.className),
 				viewBox: "0 0 20 20",
 				xmlns: "http://www.w3.org/2000/svg"
-			}, s.a.createElement("g", {
+			}, r.a.createElement("g", {
 				fill: "inherit",
 				fillRule: "nonzero"
-			}, s.a.createElement("path", {
+			}, r.a.createElement("path", {
 				d: "M3.5 11h13c.55 0 1-.45 1-1s-.45-1-1-1h-13c-.55 0-1 .45-1 1s.45 1 1 1zM3.5 16h5.4c.54 0 1-.45 1-1s-.46-1-1-1H3.5c-.55 0-1 .45-1 1s.45 1 1 1zM3.5 6h13c.55 0 1-.45 1-1s-.45-1-1-1h-13c-.55 0-1 .45-1 1s.45 1 1 1z"
 			})))
 		},
-		"./src/reddit/icons/svgs/FormattingAlignRight/index.m.less": function(e, t, n) {
-			e.exports = {
+		"./src/reddit/icons/svgs/FormattingAlignRight/index.m.less": function(t, e, n) {
+			t.exports = {
 				icon: "_34rYEsgbWk8eOQx_bs7fTV"
 			}
 		},
-		"./src/reddit/icons/svgs/FormattingAlignRight/index.tsx": function(e, t, n) {
+		"./src/reddit/icons/svgs/FormattingAlignRight/index.tsx": function(t, e, n) {
 			"use strict";
 			var o = n("./node_modules/react/index.js"),
-				s = n.n(o),
-				r = n("./src/lib/classNames/index.ts"),
+				r = n.n(o),
+				s = n("./src/lib/classNames/index.ts"),
 				i = n("./src/reddit/icons/svgs/FormattingAlignRight/index.m.less"),
 				c = n.n(i);
-			t.a = e => s.a.createElement("svg", {
-				className: Object(r.a)(c.a.icon, e.className),
+			e.a = t => r.a.createElement("svg", {
+				className: Object(s.a)(c.a.icon, t.className),
 				viewBox: "0 0 20 20",
 				xmlns: "http://www.w3.org/2000/svg"
-			}, s.a.createElement("g", {
+			}, r.a.createElement("g", {
 				fill: "inherit",
 				fillRule: "nonzero"
-			}, s.a.createElement("path", {
+			}, r.a.createElement("path", {
 				d: "M3.5 11h13c.55 0 1-.45 1-1s-.45-1-1-1h-13c-.55 0-1 .45-1 1s.45 1 1 1zM11.5 16h5c.55 0 1-.45 1-1s-.45-1-1-1h-5c-.55 0-1 .45-1 1s.45 1 1 1zM3.5 6h13c.55 0 1-.45 1-1s-.45-1-1-1h-13c-.55 0-1 .45-1 1s.45 1 1 1z"
 			})))
 		},
-		"./src/reddit/icons/svgs/FormattingDeleteRow/index.m.less": function(e, t, n) {
-			e.exports = {
+		"./src/reddit/icons/svgs/FormattingDeleteRow/index.m.less": function(t, e, n) {
+			t.exports = {
 				icon: "_8Y1-XP7A1OOfoU_mUqKcg"
 			}
 		},
-		"./src/reddit/icons/svgs/FormattingDeleteRow/index.tsx": function(e, t, n) {
+		"./src/reddit/icons/svgs/FormattingDeleteRow/index.tsx": function(t, e, n) {
 			"use strict";
 			var o = n("./node_modules/react/index.js"),
-				s = n.n(o),
-				r = n("./src/lib/classNames/index.ts"),
+				r = n.n(o),
+				s = n("./src/lib/classNames/index.ts"),
 				i = n("./src/reddit/icons/svgs/FormattingDeleteRow/index.m.less"),
 				c = n.n(i);
-			t.a = e => s.a.createElement("svg", {
-				className: Object(r.a)(c.a.icon, e.className),
+			e.a = t => r.a.createElement("svg", {
+				className: Object(s.a)(c.a.icon, t.className),
 				viewBox: "0 0 20 20",
 				xmlns: "http://www.w3.org/2000/svg"
-			}, s.a.createElement("g", {
+			}, r.a.createElement("g", {
 				fill: "inherit",
 				fillRule: "nonzero",
-				transform: "vertical" === e.orientation ? "rotate(90, 10, 10)" : ""
-			}, s.a.createElement("path", {
+				transform: "vertical" === t.orientation ? "rotate(90, 10, 10)" : ""
+			}, r.a.createElement("path", {
 				d: "M3 3c0-.55.45-1 1-1h12c.55 0 1 .45 1 1v14c0 .55-.45 1-1 1H4c-.55 0-1-.45-1-1V3zM2 3v14c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V3c0-1.1-.9-2-2-2H4c-1.1 0-2 .9-2 2z"
-			}), s.a.createElement("path", {
+			}), r.a.createElement("path", {
 				d: "M2 15h16v1H2M2 4h16v1H2M7.17 11.4l4.24-4.23c.4-.4 1.04-.4 1.43 0 .4.4.4 1.03 0 1.42L8.6 12.82c-.4.4-1.04.4-1.43 0-.4-.4-.4-1.03 0-1.42z"
-			}), s.a.createElement("path", {
+			}), r.a.createElement("path", {
 				d: "M8.6 7.17l4.23 4.24c.4.4.4 1.04 0 1.43-.4.4-1.03.4-1.42 0L7.18 8.6c-.4-.4-.4-1.04 0-1.43.4-.4 1.03-.4 1.42 0z"
 			})))
 		},
-		"./src/reddit/icons/svgs/FormattingInsertRow/index.m.less": function(e, t, n) {
-			e.exports = {
+		"./src/reddit/icons/svgs/FormattingInsertRow/index.m.less": function(t, e, n) {
+			t.exports = {
 				icon: "_1PNKgIKbpvIWTVU3LO0PJQ"
 			}
 		},
-		"./src/reddit/icons/svgs/FormattingInsertRow/index.tsx": function(e, t, n) {
+		"./src/reddit/icons/svgs/FormattingInsertRow/index.tsx": function(t, e, n) {
 			"use strict";
 			var o = n("./node_modules/react/index.js"),
-				s = n.n(o),
-				r = n("./src/lib/classNames/index.ts"),
+				r = n.n(o),
+				s = n("./src/lib/classNames/index.ts"),
 				i = n("./src/reddit/icons/svgs/FormattingInsertRow/index.m.less"),
 				c = n.n(i);
 			const a = {
@@ -8223,162 +8032,162 @@
 				left: "rotate(90 10 10)",
 				right: "rotate(-90 10 10)"
 			};
-			t.a = e => s.a.createElement("svg", {
-				className: Object(r.a)(c.a.icon, e.className),
+			e.a = t => r.a.createElement("svg", {
+				className: Object(s.a)(c.a.icon, t.className),
 				viewBox: "0 0 20 20",
 				xmlns: "http://www.w3.org/2000/svg"
-			}, s.a.createElement("g", {
+			}, r.a.createElement("g", {
 				fill: "inherit",
 				fillRule: "nonzero",
-				transform: a[e.orientation || "down"]
-			}, s.a.createElement("path", {
+				transform: a[t.orientation || "down"]
+			}, r.a.createElement("path", {
 				d: "M17 17c0 .55-.45 1-1 1H4c-.55 0-1-.45-1-1V3c0-.55.45-1 1-1h12c.55 0 1 .45 1 1v14zm1 0V3c0-1.1-.9-2-2-2H4c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2z"
-			}), s.a.createElement("path", {
+			}), r.a.createElement("path", {
 				d: "M18 6H2V5h16M13 13H7c-.55 0-1-.45-1-1s.45-1 1-1h6c.55 0 1 .45 1 1s-.45 1-1 1z"
-			}), s.a.createElement("path", {
+			}), r.a.createElement("path", {
 				d: "M9 15V9c0-.55.45-1 1-1s1 .45 1 1v6c0 .55-.45 1-1 1s-1-.45-1-1z"
 			})))
 		},
-		"./src/reddit/icons/svgs/Send/index.tsx": function(e, t, n) {
+		"./src/reddit/icons/svgs/Send/index.tsx": function(t, e, n) {
 			"use strict";
 			var o = n("./node_modules/react/index.js"),
-				s = n.n(o);
-			t.a = e => s.a.createElement("svg", {
-				className: e.className,
-				id: e.id,
+				r = n.n(o);
+			e.a = t => r.a.createElement("svg", {
+				className: t.className,
+				id: t.id,
 				viewBox: "0 0 18 18",
 				xmlns: "http://www.w3.org/2000/svg"
-			}, s.a.createElement("g", {
+			}, r.a.createElement("g", {
 				fill: "inherit"
-			}, s.a.createElement("path", {
+			}, r.a.createElement("path", {
 				d: "M17.98 8.87c-.012-.093-.03-.182-.062-.27-.017-.043-.034-.085-.055-.126-.013-.026-.02-.057-.034-.082l-.07-.1c-.018-.02-.04-.03-.055-.046-.073-.083-.158-.145-.252-.204-.032-.02-.053-.055-.088-.072L3.88 1.12c-.35-.176-.764-.158-1.096.05-.332.208-.534.576-.534.973V5c0 .507.33.954.81 1.097L9 7.857H3.375c-.175 0-.347.04-.503.12L.622 9.12c-.48.243-.724.8-.582 1.325.135.5.582.84 1.085.84.027 0 .054 0 .08-.003l1.045-.075v4.65c0 .396.202.764.534.972.18.112.386.17.59.17.173 0 .346-.04.505-.12l13.483-6.85c.08-.044.134-.075.184-.113.05-.038.092-.085.136-.13.012-.013.026-.022.037-.036.092-.107.147-.21.19-.32.013-.03.02-.06.03-.09.013-.045.033-.086.042-.132.008-.046.013-.09.017-.138 0-.023-.008-.043-.008-.063 0-.017.008-.03.008-.048 0-.032-.017-.058-.02-.09z"
 			})))
 		},
-		"./src/reddit/icons/svgs/ThumbnailSelect/index.m.less": function(e, t, n) {
-			e.exports = {
+		"./src/reddit/icons/svgs/ThumbnailSelect/index.m.less": function(t, e, n) {
+			t.exports = {
 				icon: "_3QNLLzw_kUPhkWkxg22tT9"
 			}
 		},
-		"./src/reddit/icons/svgs/ThumbnailSelect/index.tsx": function(e, t, n) {
+		"./src/reddit/icons/svgs/ThumbnailSelect/index.tsx": function(t, e, n) {
 			"use strict";
 			var o = n("./node_modules/react/index.js"),
-				s = n.n(o),
-				r = n("./src/lib/classNames/index.ts"),
+				r = n.n(o),
+				s = n("./src/lib/classNames/index.ts"),
 				i = n("./src/reddit/icons/svgs/ThumbnailSelect/index.m.less"),
 				c = n.n(i);
-			t.a = e => s.a.createElement("svg", {
-				className: Object(r.a)(c.a.icon, e.className),
+			e.a = t => r.a.createElement("svg", {
+				className: Object(s.a)(c.a.icon, t.className),
 				viewBox: "0 0 20 20",
 				xmlns: "http://www.w3.org/2000/svg"
-			}, s.a.createElement("g", {
+			}, r.a.createElement("g", {
 				fill: "none",
 				fillRule: "evenodd"
-			}, s.a.createElement("path", {
+			}, r.a.createElement("path", {
 				d: "M0 0h20v20H0z"
-			}), s.a.createElement("path", {
+			}), r.a.createElement("path", {
 				fill: "#A5A4A4",
 				d: "M6 3h8c1.1046 0 2 .8954 2 2v10c0 1.1046-.8954 2-2 2H6c-1.1046 0-2-.8954-2-2V5c0-1.1046.8954-2 2-2zm11 1c1.1046 0 2 .8954 2 2v8c0 1.1046-.8954 2-2 2V4zM3 4v12h-.6667C1.597 16 1 15.1734 1 14.1538V5.8462C1 4.8266 1.597 4 2.3333 4H3z"
 			})))
 		},
-		"./src/reddit/icons/svgs/Trash2/index.m.less": function(e, t, n) {
-			e.exports = {
+		"./src/reddit/icons/svgs/Trash2/index.m.less": function(t, e, n) {
+			t.exports = {
 				icon: "_1Fa4RPHlhrfUZuNaXK2-eP"
 			}
 		},
-		"./src/reddit/icons/svgs/Trash2/index.tsx": function(e, t, n) {
+		"./src/reddit/icons/svgs/Trash2/index.tsx": function(t, e, n) {
 			"use strict";
-			n.d(t, "a", (function() {
+			n.d(e, "a", (function() {
 				return a
 			}));
 			var o = n("./node_modules/react/index.js"),
-				s = n.n(o),
-				r = n("./src/lib/classNames/index.ts"),
+				r = n.n(o),
+				s = n("./src/lib/classNames/index.ts"),
 				i = n("./src/reddit/icons/svgs/Trash2/index.m.less"),
 				c = n.n(i);
-			const a = e => s.a.createElement("svg", {
-				className: Object(r.a)(c.a.icon, e.className),
+			const a = t => r.a.createElement("svg", {
+				className: Object(s.a)(c.a.icon, t.className),
 				viewBox: "0 0 20 20",
 				xmlns: "http://www.w3.org/2000/svg",
-				onClick: e.onClick
-			}, s.a.createElement("path", {
+				onClick: t.onClick
+			}, r.a.createElement("path", {
 				d: "M16.5,2H12.71l-.85-.85A.5.5,0,0,0,11.5,1h-3a.5.5,0,0,0-.35.15L7.29,2H3.5a.5.5,0,0,0-.5.5v1a.5.5,0,0,0,.5.5h13a.5.5,0,0,0,.5-.5v-1A.5.5,0,0,0,16.5,2Z"
-			}), s.a.createElement("path", {
+			}), r.a.createElement("path", {
 				d: "M16.5,5H3.5a.5.5,0,0,0-.5.5v12A1.5,1.5,0,0,0,4.5,19h11A1.5,1.5,0,0,0,17,17.5V5.5A.5.5,0,0,0,16.5,5ZM6.75,15.5a.75.75,0,0,1-1.5,0v-7a.75.75,0,0,1,1.5,0Zm4,0a.75.75,0,0,1-1.5,0v-7a.75.75,0,0,1,1.5,0Zm4,0a.75.75,0,0,1-1.5,0v-7a.75.75,0,0,1,1.5,0Z"
 			}));
-			t.b = a
+			e.b = a
 		},
-		"./src/reddit/selectors/editorContent.ts": function(e, t, n) {
+		"./src/reddit/selectors/editorContent.ts": function(t, e, n) {
 			"use strict";
-			n.d(t, "a", (function() {
-				return s
+			n.d(e, "a", (function() {
+				return r
 			}));
 			var o = n("./src/reddit/actions/postCreation/constants.ts");
-			const s = (e, t) => e.creations.api.editor.converting.pending[t || o.k]
+			const r = (t, e) => t.creations.api.editor.converting.pending[e || o.k]
 		},
-		"./src/reddit/selectors/gold/enabledFeatures.ts": function(e, t, n) {
+		"./src/reddit/selectors/gold/enabledFeatures.ts": function(t, e, n) {
 			"use strict";
-			n.d(t, "b", (function() {
+			n.d(e, "b", (function() {
 				return a
-			})), n.d(t, "a", (function() {
+			})), n.d(e, "a", (function() {
 				return l
-			})), n.d(t, "c", (function() {
+			})), n.d(e, "c", (function() {
 				return d
 			}));
 			n("./node_modules/core-js/modules/web.dom.iterable.js");
 			var o = n("./node_modules/reselect/es/index.js"),
-				s = n("./src/reddit/featureFlags/index.ts"),
-				r = n("./src/reddit/selectors/economics.ts"),
+				r = n("./src/reddit/featureFlags/index.ts"),
+				s = n("./src/reddit/selectors/economics.ts"),
 				i = n("./src/reddit/selectors/gold/powerups/index.ts"),
 				c = n("./src/reddit/selectors/gold/powerups/benefitSettings.ts");
-			const a = Object(o.a)(s.d.spEmotes, r.b, i.g, (e, t, n) => {
+			const a = Object(o.a)(r.d.spEmotes, s.b, i.b, (t, e, n) => {
 					if (n) return !0;
-					const o = !(!t || !Object.keys(t).length);
-					return e && o
+					const o = !(!e || !Object.keys(e).length);
+					return t && o
 				}),
-				l = Object(o.a)(r.b, i.h, i.i, i.g, (e, t, n, o) => {
-					if (o) return [...t, ...n].slice(0, 3);
-					let s = [];
-					for (const r of e || [])
-						if ((s = [...s, ...Object.values(r.emotes)]).length > 3) break;
-					return s.slice(0, 3)
+				l = Object(o.a)(s.b, i.c, i.d, i.b, (t, e, n, o) => {
+					if (o) return [...e, ...n].slice(0, 3);
+					let r = [];
+					for (const s of t || [])
+						if ((r = [...r, ...Object.values(s.emotes)]).length > 3) break;
+					return r.slice(0, 3)
 				}),
-				d = Object(o.a)(s.d.spGiphy, i.g, c.b, (e, t, n) => e || t && n)
+				d = Object(o.a)(r.d.spGiphy, i.b, c.b, (t, e, n) => t || e && n)
 		},
-		"./src/reddit/selectors/products.ts": function(e, t, n) {
+		"./src/reddit/selectors/products.ts": function(t, e, n) {
 			"use strict";
-			n.d(t, "a", (function() {
-				return s
-			})), n.d(t, "b", (function() {
+			n.d(e, "a", (function() {
 				return r
+			})), n.d(e, "b", (function() {
+				return s
 			}));
 			n("./node_modules/core-js/modules/web.dom.iterable.js");
 			var o = n("./src/reddit/models/Product/index.ts");
-			const s = (e, t) => {
-					const n = e.products.models[t];
+			const r = (t, e) => {
+					const n = t.products.models[e];
 					if (n && n.type === o.a.Badge) return n
 				},
-				r = (e, t) => {
+				s = (t, e) => {
 					let {
 						productId: n
-					} = t;
-					const o = e.products.models[n];
+					} = e;
+					const o = t.products.models[n];
 					if (o) {
-						const t = o.subredditId,
-							s = Object.keys(e.user.ownedBadges[t] || {}),
-							r = e.badges.models,
+						const e = o.subredditId,
+							r = Object.keys(t.user.ownedBadges[e] || {}),
+							s = t.badges.models,
 							i = Date.now();
 						let c = !1;
-						return s.forEach(e => {
-							const t = r[e];
-							t && t.type === n && t.endsAt > i && (c = !0)
+						return r.forEach(t => {
+							const e = s[t];
+							e && e.type === n && e.endsAt > i && (c = !0)
 						}), c
 					}
 					return !1
 				}
 		},
-		"./src/redditGQL/operations/SubredditTypeaheadSearch.json": function(e) {
-			e.exports = JSON.parse('{"id":"20edc5ee12df"}')
+		"./src/redditGQL/operations/SubredditTypeaheadSearch.json": function(t) {
+			t.exports = JSON.parse('{"id":"20edc5ee12df"}')
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatMessageInput~MembershipPaywallPage~RichTextEditor.3b9588d099c747466468.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatMessageInput~MembershipPaywallPage~RichTextEditor.1722e93c7bed491d7159.js.map

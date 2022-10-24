@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfileSnoobuilder.ee5b14bb83cf69c6366e.js
-// Retrieved at 10/24/2022, 9:50:07 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfileSnoobuilder.ba83eecd1a4ce8b29d83.js
+// Retrieved at 10/24/2022, 10:40:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfileSnoobuilder"], {
 		"./assets/snoobuilder/Snoobuilder.json": function(e, t, n) {
@@ -690,8 +690,8 @@
 			const _ = e => {
 				return Object(f.c)(e, {
 					experimentEligibilitySelector: f.a,
-					experimentName: b.vf
-				}) === b.Qd
+					experimentName: b.sf
+				}) === b.Od
 			};
 			var x = n("./src/reddit/selectors/user.ts"),
 				g = n("./src/reddit/components/BackToTop/index.m.less"),
@@ -2482,18 +2482,15 @@
 			var s = n("./node_modules/@loadable/component/dist/loadable.esm.js"),
 				r = n("./node_modules/react/index.js"),
 				i = n.n(r),
-				o = n("./node_modules/react-redux/es/index.js"),
-				a = n("./src/reddit/components/SidebarContainer/index.tsx"),
-				c = n("./src/reddit/components/SidebarProfileModeratedSubreddits/index.tsx"),
-				d = n("./src/reddit/components/SidebarProfileMultireddits/index.tsx"),
-				l = n("./src/reddit/components/SidebarProfilePowerupContributions/index.tsx"),
-				u = n("./src/reddit/components/SidebarSpacer/index.tsx"),
-				m = n("./src/reddit/components/SidebarStickyBottom/index.tsx"),
-				p = n("./src/reddit/components/SidebarTrophyCase/index.tsx"),
-				h = n("./src/reddit/components/Widgets/ConnectedAccounts/index.tsx"),
-				b = n("./src/reddit/constants/posts.ts"),
-				f = n("./src/reddit/selectors/experiments/econ/index.ts");
-			const _ = Object(s.a)({
+				o = n("./src/reddit/components/SidebarContainer/index.tsx"),
+				a = n("./src/reddit/components/SidebarProfileModeratedSubreddits/index.tsx"),
+				c = n("./src/reddit/components/SidebarProfileMultireddits/index.tsx"),
+				d = n("./src/reddit/components/SidebarSpacer/index.tsx"),
+				l = n("./src/reddit/components/SidebarStickyBottom/index.tsx"),
+				u = n("./src/reddit/components/SidebarTrophyCase/index.tsx"),
+				m = n("./src/reddit/components/Widgets/ConnectedAccounts/index.tsx"),
+				p = n("./src/reddit/constants/posts.ts");
+			const h = Object(s.a)({
 					resolved: {},
 					chunkName: () => "reddit-components-ProfileIdCard",
 					isReady(e) {
@@ -2513,33 +2510,28 @@
 						return "./src/reddit/components/ProfileIdCard/index.tsx"
 					}
 				}),
-				x = e => {
-					const t = Object(o.e)(e => Object(f.k)(e));
-					return i.a.createElement(a.a, {
-						className: e.className
-					}, i.a.createElement(_, {
-						profileName: e.profileName,
-						isOverlay: e.isOverlay
-					}), i.a.createElement(h.a, {
-						subredditOrProfile: {
-							name: e.profileName,
-							type: b.a.PROFILE
-						}
-					}), i.a.createElement(c.a, {
-						profileName: e.profileName
-					}), i.a.createElement(d.a, {
-						profileName: e.profileName
-					}), !t && i.a.createElement(u.a, null, i.a.createElement(l.a, {
-						profileName: e.profileName
-					})), i.a.createElement(u.a, null, i.a.createElement(p.a, {
-						profileName: e.profileName
-					})), i.a.createElement(m.a, {
-						hideBackToTop: e.hideBackToTop
-					}))
-				};
-			x.defaultProps = {
+				b = e => i.a.createElement(o.a, {
+					className: e.className
+				}, i.a.createElement(h, {
+					profileName: e.profileName,
+					isOverlay: e.isOverlay
+				}), i.a.createElement(m.a, {
+					subredditOrProfile: {
+						name: e.profileName,
+						type: p.a.PROFILE
+					}
+				}), i.a.createElement(a.a, {
+					profileName: e.profileName
+				}), i.a.createElement(c.a, {
+					profileName: e.profileName
+				}), i.a.createElement(d.a, null, i.a.createElement(u.a, {
+					profileName: e.profileName
+				})), i.a.createElement(l.a, {
+					hideBackToTop: e.hideBackToTop
+				}));
+			b.defaultProps = {
 				isOverlay: !1
-			}, t.a = x
+			}, t.a = b
 		},
 		"./src/reddit/components/RawHTMLDisplay/index.m.less": function(e, t, n) {
 			e.exports = {
@@ -4105,80 +4097,6 @@
 				})) : null
 			})
 		},
-		"./src/reddit/components/SidebarProfilePowerupContributions/index.tsx": function(e, t, n) {
-			"use strict";
-			var s = n("./node_modules/fbt/lib/FbtPublic.js"),
-				r = n("./node_modules/react/index.js"),
-				i = n.n(r),
-				o = n("./node_modules/react-redux/es/index.js"),
-				a = n("./node_modules/react-router-dom/esm/react-router-dom.js"),
-				c = n("./src/reddit/components/SidebarExpandableList/index.tsx"),
-				d = n("./src/reddit/components/SubredditIcon/index.tsx"),
-				l = n("./src/reddit/layout/twoCol/ExpandRight/index.tsx"),
-				u = n("./src/reddit/selectors/gold/powerups/index.ts"),
-				m = n("./src/reddit/selectors/user.ts"),
-				p = n("./node_modules/reselect/es/index.js"),
-				h = n("./src/reddit/components/Widgets/CommunityList/index.m.less"),
-				b = n.n(h);
-			const f = Object(p.c)({
-				subreddits: function(e, t) {
-					let {
-						profileName: n
-					} = t;
-					const s = Object(m.Bb)(e, {
-							userName: n
-						}),
-						r = Object(u.f)(e);
-					return (s && r ? r[s.id] : null) || []
-				}
-			});
-
-			function _(e) {
-				let {
-					item: t
-				} = e;
-				const n = t.subredditInfo,
-					r = i.a.createElement(d.b, {
-						iconUrl: n.styles.icon,
-						className: b.a.subredditIcon
-					});
-				return i.a.createElement(l.a, {
-					className: b.a.communityItemContainer,
-					key: n.id
-				}, i.a.createElement("div", {
-					className: b.a.iconContainer
-				}, i.a.createElement(a.a, {
-					to: n.path
-				}, r)), i.a.createElement("div", {
-					className: b.a.communityDescription
-				}, i.a.createElement("div", {
-					className: b.a.communityName
-				}, i.a.createElement(a.a, {
-					to: n.path
-				}, n.prefixedName)), i.a.createElement("div", {
-					className: b.a.subscriberCount
-				}, s.fbt._({
-					"*": "{number} Powerups",
-					_1: "1 Powerup"
-				}, [s.fbt._plural(t.powerups, "number")], {
-					hk: "3fbcDy"
-				}))))
-			}
-			t.a = Object(o.b)(f)(e => {
-				let {
-					subreddits: t
-				} = e;
-				return function(e) {
-					return e.length > 0 && e.every(e => e.subredditInfo)
-				}(t) ? i.a.createElement(c.a, {
-					title: s.fbt._("Supports Communities", null, {
-						hk: "1vCNdZ"
-					}),
-					items: t,
-					renderItem: _
-				}) : null
-			})
-		},
 		"./src/reddit/components/SidebarSpacer/index.m.less": function(e, t, n) {
 			e.exports = {
 				Component: "_2vEf-C2keJaBMY9qk_BxVn",
@@ -4644,12 +4562,12 @@
 						rtJsonElementProps: o
 					});
 					switch (i) {
-						case b.Wf.SmIcon:
+						case b.Tf.SmIcon:
 							return r.a.createElement(p, {
 								subredditName: s,
 								rtJsonElementProps: o
 							});
-						case b.Wf.SmIconHc:
+						case b.Tf.SmIconHc:
 							return r.a.createElement(p, {
 								subredditName: s,
 								isHoverable: !0,
@@ -5776,12 +5694,12 @@
 				c = e => {
 					return Object(i.c)(e, {
 						experimentEligibilitySelector: a,
-						experimentName: s.Qf
+						experimentName: s.Nf
 					}) || ""
 				},
 				d = e => {
 					const t = c(e);
-					return t === s.Wf.SmIcon || t === s.Wf.SmIconHc
+					return t === s.Tf.SmIcon || t === s.Tf.SmIconHc
 				},
 				l = (e, t) => {
 					let {
@@ -5807,4 +5725,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileSnoobuilder.ee5b14bb83cf69c6366e.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileSnoobuilder.ba83eecd1a4ce8b29d83.js.map

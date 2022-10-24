@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ChatMessageInput~ChatPost.24d163b39d14970c6c79.js
-// Retrieved at 10/24/2022, 9:50:07 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ChatMessageInput~ChatPost.45be2666d41112b5269e.js
+// Retrieved at 10/24/2022, 10:40:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ChatMessageInput~ChatPost"], {
 		"./node_modules/lodash/_baseReduce.js": function(e, t) {
@@ -89,7 +89,7 @@
 					defaultImage: t,
 					userId: n
 				} = e;
-				const r = Object(c.e)(h.s),
+				const r = Object(c.e)(h.q),
 					{
 						processingAvatarImageUrl: a
 					} = s.a;
@@ -1009,7 +1009,7 @@
 					s || H(e), a || A(e), N(Object(u.C)(p))
 				}
 
-				function W() {
+				function V() {
 					const e = {};
 					return k && (e.margin = "0 auto"), y || (e.maxHeight = `${h.e}px`), o.a.createElement(_, {
 						autoplay: S,
@@ -1038,7 +1038,7 @@
 						width: L ? void 0 : v
 					})
 				}
-				return y ? W() : o.a.createElement("div", {
+				return y ? V() : o.a.createElement("div", {
 					className: Object(l.a)(j.a.container, w, {
 						[j.a.centered]: k
 					})
@@ -1046,7 +1046,7 @@
 					href: I,
 					target: "_blank",
 					rel: "noopener noreferrer"
-				}, W()))
+				}, V()))
 			}
 		},
 		"./src/reddit/components/Media/index.m.less": function(e, t, n) {
@@ -1982,7 +1982,7 @@
 							{
 								H: s,
 								D: a
-							} = J(e.a),
+							} = W(e.a),
 							{
 								c: d = []
 							} = e;
@@ -2100,18 +2100,18 @@
 						f: n,
 						t: r
 					} = e, a = [];
-					if (!n) return V(0, r, t);
+					if (!n) return J(0, r, t);
 					const o = Object(s.a)(r);
 					let i = 0,
 						c = 0;
 					const d = n.length;
 					for (; i < d; i++) {
 						const [e, t, s] = n[i], d = t + s, l = o[t], u = o[d] - l;
-						l > c && a.push(V(0, r.substr(c, l - c), `between${i}`)), a.push(V(e, r.substr(l, u), i)), c = l + u
+						l > c && a.push(J(0, r.substr(c, l - c), `between${i}`)), a.push(J(e, r.substr(l, u), i)), c = l + u
 					}
-					return c < r.length && a.push(V(0, r.substr(c), `remaining${i}`)), a
+					return c < r.length && a.push(J(0, r.substr(c), `remaining${i}`)), a
 				},
-				W = {
+				V = {
 					[m.j.monospace]: c.h,
 					[m.j.bold]: c.b,
 					[m.j.italic]: c.f,
@@ -2120,13 +2120,13 @@
 					[m.j.subscript]: c.l,
 					[m.j.superscript]: c.m
 				},
-				V = (e, t, n) => {
+				J = (e, t, n) => {
 					let s = t;
-					return s = a()(W, (t, s, r) => e & parseInt(r, 10) ? i.a.createElement(s, {
+					return s = a()(V, (t, s, r) => e & parseInt(r, 10) ? i.a.createElement(s, {
 						key: n
 					}, t) : t, s)
 				},
-				J = e => {
+				W = e => {
 					switch (e) {
 						case m.f:
 							return {
@@ -2257,12 +2257,12 @@
 						rtJsonElementProps: o
 					});
 					switch (a) {
-						case b.Wf.SmIcon:
+						case b.Tf.SmIcon:
 							return r.a.createElement(h, {
 								subredditName: s,
 								rtJsonElementProps: o
 							});
-						case b.Wf.SmIconHc:
+						case b.Tf.SmIconHc:
 							return r.a.createElement(h, {
 								subredditName: s,
 								isHoverable: !0,
@@ -2709,12 +2709,12 @@
 				c = e => {
 					return Object(a.c)(e, {
 						experimentEligibilitySelector: i,
-						experimentName: s.Qf
+						experimentName: s.Nf
 					}) || ""
 				},
 				d = e => {
 					const t = c(e);
-					return t === s.Wf.SmIcon || t === s.Wf.SmIconHc
+					return t === s.Tf.SmIcon || t === s.Tf.SmIconHc
 				},
 				l = (e, t) => {
 					let {
@@ -2740,4 +2740,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatMessageInput~ChatPost.24d163b39d14970c6c79.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatMessageInput~ChatPost.45be2666d41112b5269e.js.map

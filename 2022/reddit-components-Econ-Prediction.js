@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Econ-Prediction.4b13c798ec9839acefa1.js
-// Retrieved at 10/24/2022, 9:50:07 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Econ-Prediction.a3b207f63d99d3d58c5c.js
+// Retrieved at 10/24/2022, 10:40:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Econ-Prediction"], {
 		"./src/lib/constants/specialMembership.ts": function(e, t, n) {
@@ -575,7 +575,7 @@
 						upvote: E
 					} = function(e) {
 						const t = Object(r.d)(),
-							n = Object(r.e)(v.l),
+							n = Object(r.e)(v.j),
 							{
 								startDelayedUpvoteAnimation: s
 							} = Object(g.a)(e.id);
@@ -1704,7 +1704,7 @@
 					if (Object(p.f)(e)) return !!t && !!Object(E.a)(e, {
 						subredditId: t
 					});
-					if (Object(E.o)(e, {
+					if (Object(E.g)(e, {
 							subredditId: t
 						})) return !0;
 					const s = "replyToPost" !== n && Object(b.b)(e, {
@@ -1719,7 +1719,7 @@
 					if (!Object(h.b)(e, {
 							subredditId: t
 						})) return !1;
-					if (Object(E.p)(e, {
+					if (Object(E.h)(e, {
 							subredditId: t
 						})) return !0;
 					if (z(e, n)) return !0;
@@ -1748,4 +1748,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Econ-Prediction.4b13c798ec9839acefa1.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Econ-Prediction.a3b207f63d99d3d58c5c.js.map

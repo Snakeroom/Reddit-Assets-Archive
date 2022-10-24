@@ -1,7 +1,7 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-ClassicPost.cf18f4dae9f99aa8c3c7.js
-// Retrieved at 10/24/2022, 9:50:07 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-ClassicPost.e04a98fbe4e98298c0cd.js
+// Retrieved at 10/24/2022, 10:40:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
-	["reddit-components-ClassicPost", "Reddit~RpanListingUnit~reddit-components-LargePost~reddit-components-MediumPost"], {
+	["reddit-components-ClassicPost", "Reddit~RpanListingUnit~StandalonePostPage~reddit-components-LargePost~reddit-components-MediumPost"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
 			var r;
 			r = function() {
@@ -690,7 +690,7 @@
 				p = n("./src/reddit/selectors/subreddit.ts"),
 				b = n("./src/telemetry/index.ts"),
 				f = n("./src/reddit/actions/gold/constants.ts");
-			const h = Object(r.a)(f.K),
+			const h = Object(r.a)(f.J),
 				v = Object(r.a)(f.f),
 				g = () => async (e, t) => {
 					const r = t();
@@ -699,7 +699,7 @@
 						clickCloseModalEvent: s
 					} = await n.e("givePremiumTrackers").then(n.bind(null, "./src/reddit/helpers/trackers/givePremium.ts"));
 					Object(b.a)(s()(r))
-				}, _ = Object(r.a)(f.J), O = e => {
+				}, _ = Object(r.a)(f.I), O = e => {
 					let {
 						awardId: t,
 						correlationId: n,
@@ -726,7 +726,7 @@
 						}
 						f && Object(d.a)(f, r)
 					}
-				}, x = Object(r.a)(f.e), C = Object(r.a)(f.I), j = () => async (e, t) => {
+				}, x = Object(r.a)(f.e), C = Object(r.a)(f.H), j = () => async (e, t) => {
 					const r = t(),
 						o = Object(a.d)(r);
 					if (Object(a.g)(r)) {
@@ -1104,7 +1104,7 @@
 						postId: r,
 						author: o
 					} = t;
-					return Object(f.e)(v.t) && n.roomStatus === h.b.NotStarted ? s.a.createElement(k.a, {
+					return Object(f.e)(v.r) && n.roomStatus === h.b.NotStarted ? s.a.createElement(k.a, {
 						postId: r,
 						author: o,
 						roomId: n.roomId,
@@ -5559,60 +5559,55 @@
 		"./src/reddit/helpers/trackers/userFlair.ts": function(e, t, n) {
 			"use strict";
 			n.d(t, "c", (function() {
-				return i
+				return o
 			})), n.d(t, "b", (function() {
-				return a
+				return i
 			})), n.d(t, "a", (function() {
-				return c
+				return a
 			})), n.d(t, "d", (function() {
-				return d
+				return c
 			}));
 			var r = n("./src/reddit/helpers/flair.ts"),
-				s = n("./src/reddit/selectors/gold/powerups/index.ts"),
-				o = n("./src/reddit/selectors/telemetry.ts");
-			const i = () => e => ({
+				s = n("./src/reddit/selectors/telemetry.ts");
+			const o = () => e => ({
 					source: "id_card",
 					action: "click",
 					noun: "user_flair_picker",
-					...o.o(e)
+					...s.o(e)
 				}),
-				a = e => t => {
-					const n = o.jb(t),
-						i = Object(s.s)(t, {
-							subredditId: null == n ? void 0 : n.id
-						}),
+				i = e => t => {
+					const n = s.jb(t),
 						{
-							userFlair: a,
-							achievementFlair: c,
-							supporterFlair: d
+							userFlair: o,
+							achievementFlair: i,
+							supporterFlair: a
 						} = e,
-						l = c || d;
+						c = i || a;
 					return {
 						source: "user_flair_picker",
 						action: "click",
 						noun: "user_flair",
-						...o.o(t),
+						...s.o(t),
 						subreddit: n,
 						userFlair: {
-							id: null == a ? void 0 : a.id,
-							title: a ? Object(r.g)(a) : void 0,
-							isActive: !!a || void 0,
-							achievementFlairId: null == c ? void 0 : c.type,
-							achievementFlairTitle: null == c ? void 0 : c.name,
-							isLocked: null == l ? void 0 : l.isLocked,
-							supporterFlairId: null == d ? void 0 : d.type,
-							supporterFlairTitle: null == d ? void 0 : d.name,
-							isSupporter: i
+							id: null == o ? void 0 : o.id,
+							title: o ? Object(r.g)(o) : void 0,
+							isActive: !!o || void 0,
+							achievementFlairId: null == i ? void 0 : i.type,
+							achievementFlairTitle: null == i ? void 0 : i.name,
+							isLocked: null == c ? void 0 : c.isLocked,
+							supporterFlairId: null == a ? void 0 : a.type,
+							supporterFlairTitle: null == a ? void 0 : a.name
 						}
 					}
 				},
-				c = () => e => ({
+				a = () => e => ({
 					source: "user_flair_picker",
 					action: "click",
 					noun: "edit_user_flair",
-					...o.o(e)
+					...s.o(e)
 				}),
-				d = e => t => ({
+				c = e => t => ({
 					source: "user_flair_picker",
 					action: "click",
 					noun: "enable_powerups_flair",
@@ -5620,8 +5615,8 @@
 						value: e ? "0" : "1",
 						oldValue: e ? "1" : "0"
 					},
-					subreddit: o.jb(t),
-					...o.o(t)
+					subreddit: s.jb(t),
+					...s.o(t)
 				})
 		},
 		"./src/reddit/hooks/useGqlContext.ts": function(e, t, n) {
@@ -6663,8 +6658,8 @@
 			const o = e => {
 				return Object(s.c)(e, {
 					experimentEligibilitySelector: s.a,
-					experimentName: r.hf
-				}) === r.Qd
+					experimentName: r.ef
+				}) === r.Od
 			}
 		},
 		"./src/reddit/selectors/experiments/web2x_cta.ts": function(e, t, n) {
@@ -6676,10 +6671,10 @@
 				s = n("./src/reddit/constants/experiments.ts"),
 				o = n("./src/reddit/helpers/chooseVariant/index.ts");
 			const i = Object(r.a)(e => Object(o.c)(e, {
-					experimentName: s.lg,
+					experimentName: s.ig,
 					experimentEligibilitySelector: o.a
 				}), e => e),
-				a = Object(r.a)(i, e => e === s.cg)
+				a = Object(r.a)(i, e => e === s.Zf)
 		},
 		"./src/reddit/selectors/gild.ts": function(e, t, n) {
 			"use strict";
@@ -7085,4 +7080,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ClassicPost.cf18f4dae9f99aa8c3c7.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ClassicPost.e04a98fbe4e98298c0cd.js.map

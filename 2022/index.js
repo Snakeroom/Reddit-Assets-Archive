@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/index.58350d6d4f8af1f8504f.js
-// Retrieved at 10/24/2022, 9:50:07 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/index.d44ee242dab8a434304f.js
+// Retrieved at 10/24/2022, 10:40:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["index"], {
 		"./src/reddit/components/Econ/Audio/MuteIcon.tsx": function(e, t, n) {
@@ -443,7 +443,7 @@
 					author: l
 				} = t, {
 					recordingStatus: m
-				} = n, p = Object(a.e)(d.t);
+				} = n, p = Object(a.e)(d.r);
 				return (() => {
 					const e = [c.a.NotAvailable, c.a.Removed].includes(null != m ? m : c.a.NotAvailable);
 					return p && n.roomStatus === c.b.NotStarted ? r.a.createElement(x.a, {
@@ -827,7 +827,7 @@
 				} = function(e, t, n) {
 					const o = Object(a.d)(),
 						s = Object(a.e)(f.f),
-						i = Object(a.e)(q.l),
+						i = Object(a.e)(q.j),
 						c = Object(d.a)(),
 						u = Object(D.a)(),
 						{
@@ -1338,4 +1338,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/index.58350d6d4f8af1f8504f.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/index.d44ee242dab8a434304f.js.map

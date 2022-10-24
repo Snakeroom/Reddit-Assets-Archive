@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/AchievementsActions.d315b1884fce85fa7fa5.js
-// Retrieved at 10/24/2022, 9:50:07 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/AchievementsActions.da08850910a0cbce8322.js
+// Retrieved at 10/24/2022, 10:40:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["AchievementsActions"], {
 		"./src/reddit/actions/economics/powerups/flairs/index.ts": function(e, t, r) {
@@ -17,9 +17,9 @@
 			})), r.d(t, "onSubredditUserPowerupsFlairVisibilityUpdate", (function() {
 				return x
 			})), r.d(t, "getSubredditUserPowerupsFlairsAndSupporterInfo", (function() {
-				return P
-			})), r.d(t, "getSubredditCurrentUserPowerupsFlairsAndSupporterInfo", (function() {
 				return g
+			})), r.d(t, "getSubredditCurrentUserPowerupsFlairsAndSupporterInfo", (function() {
+				return P
 			})), r.d(t, "shouldFetchCommentsPowerupsInfo", (function() {
 				return _
 			})), r.d(t, "getSubredditUserCommentsPowerupsInfoFromCommentLinks", (function() {
@@ -74,7 +74,7 @@
 				U = Object(s.a)(O.g),
 				A = Object(s.a)(O.e),
 				x = Object(s.a)(O.h),
-				P = (e, t) => async (r, i, s) => {
+				g = (e, t) => async (r, i, s) => {
 					let {
 						gqlContext: c
 					} = s;
@@ -100,23 +100,23 @@
 					} catch (u) {
 						d.c.captureException(u)
 					}
-				}, g = (e, t) => async (r, i) => {
+				}, P = (e, t) => async (r, i) => {
 					if (!e) return;
 					const s = i(),
 						d = Object(I.l)(s);
-					if (!d || !Object(w.n)(s, {
+					if (!d || !Object(w.f)(s, {
 							subredditId: e
 						})) return;
-					const n = !!Object(j.f)(s, {
+					const n = !!Object(j.e)(s, {
 						subredditId: e,
 						userId: d.id
 					});
-					!t && n || await r(P(e, [d.id]))
-				}, _ = e => async (t, r) => !!e && (Object(m.g)(r()) ? (await t(Object(u.c)(e)), !!Object(j.d)(r(), {
+					!t && n || await r(g(e, [d.id]))
+				}, _ = e => async (t, r) => !!e && (Object(m.g)(r()) ? (await t(Object(u.c)(e)), !!Object(j.c)(r(), {
 					subredditId: e
-				})) : (await t(Object(l.j)(e, {
+				})) : (await t(Object(l.e)(e, {
 					fullData: !0
-				})), Object(w.g)(r(), {
+				})), Object(w.b)(r(), {
 					subredditId: e
 				}))), C = e => async (t, r) => {
 					var i;
@@ -138,20 +138,20 @@
 						} = e;
 						return t
 					}));
-					await t(P(o, Array.from(c)))
+					await t(g(o, Array.from(c)))
 				}, E = (e, t) => async (r, i) => {
 					if (!t) return;
 					if (!(await r(_(e)))) return;
 					const s = new Set;
 					Object.values(t).forEach(e => {
 						s.add(e.authorId)
-					}), await r(P(e, Array.from(s)))
+					}), await r(g(e, Array.from(s)))
 				}, L = (e, t) => async (r, i) => {
 					const s = i(),
 						d = Object(I.l)(s);
 					if (!d) return;
 					const n = d.id,
-						o = Object(j.i)(s, {
+						o = Object(j.h)(s, {
 							subredditId: e,
 							userId: n
 						});
@@ -166,7 +166,7 @@
 						d = Object(I.l)(s);
 					if (!d) return;
 					const n = d.id,
-						o = Object(j.h)(s, {
+						o = Object(j.g)(s, {
 							subredditId: e,
 							userId: n
 						});
@@ -189,7 +189,7 @@
 						subredditId: l,
 						achievementFlairType: f,
 						supporterFlairType: m
-					} = e, w = [f, m].filter(Boolean), O = Object(j.e)(o, {
+					} = e, w = [f, m].filter(Boolean), O = Object(j.d)(o, {
 						subredditId: l,
 						userId: u
 					});
@@ -216,7 +216,7 @@
 							subredditId: e,
 							userId: l
 						},
-						m = [Object(j.h)(c, f), Object(j.i)(c, f)].filter(Boolean);
+						m = [Object(j.g)(c, f), Object(j.h)(c, f)].filter(Boolean);
 					r(x({
 						...f,
 						isHidden: t
@@ -245,4 +245,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/AchievementsActions.d315b1884fce85fa7fa5.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/AchievementsActions.da08850910a0cbce8322.js.map

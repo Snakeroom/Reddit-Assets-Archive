@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfilePosts.87f281b38f8e99c3d913.js
-// Retrieved at 10/24/2022, 9:50:07 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfilePosts.0c1420ce4c7f6ae435c9.js
+// Retrieved at 10/24/2022, 10:40:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfilePosts"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -3184,18 +3184,15 @@
 			var r = n("./node_modules/@loadable/component/dist/loadable.esm.js"),
 				s = n("./node_modules/react/index.js"),
 				i = n.n(s),
-				o = n("./node_modules/react-redux/es/index.js"),
-				a = n("./src/reddit/components/SidebarContainer/index.tsx"),
-				c = n("./src/reddit/components/SidebarProfileModeratedSubreddits/index.tsx"),
-				d = n("./src/reddit/components/SidebarProfileMultireddits/index.tsx"),
-				l = n("./src/reddit/components/SidebarProfilePowerupContributions/index.tsx"),
-				u = n("./src/reddit/components/SidebarSpacer/index.tsx"),
-				m = n("./src/reddit/components/SidebarStickyBottom/index.tsx"),
-				p = n("./src/reddit/components/SidebarTrophyCase/index.tsx"),
-				h = n("./src/reddit/components/Widgets/ConnectedAccounts/index.tsx"),
-				b = n("./src/reddit/constants/posts.ts"),
-				f = n("./src/reddit/selectors/experiments/econ/index.ts");
-			const g = Object(r.a)({
+				o = n("./src/reddit/components/SidebarContainer/index.tsx"),
+				a = n("./src/reddit/components/SidebarProfileModeratedSubreddits/index.tsx"),
+				c = n("./src/reddit/components/SidebarProfileMultireddits/index.tsx"),
+				d = n("./src/reddit/components/SidebarSpacer/index.tsx"),
+				l = n("./src/reddit/components/SidebarStickyBottom/index.tsx"),
+				u = n("./src/reddit/components/SidebarTrophyCase/index.tsx"),
+				m = n("./src/reddit/components/Widgets/ConnectedAccounts/index.tsx"),
+				p = n("./src/reddit/constants/posts.ts");
+			const h = Object(r.a)({
 					resolved: {},
 					chunkName: () => "reddit-components-ProfileIdCard",
 					isReady(e) {
@@ -3215,33 +3212,28 @@
 						return "./src/reddit/components/ProfileIdCard/index.tsx"
 					}
 				}),
-				_ = e => {
-					const t = Object(o.e)(e => Object(f.k)(e));
-					return i.a.createElement(a.a, {
-						className: e.className
-					}, i.a.createElement(g, {
-						profileName: e.profileName,
-						isOverlay: e.isOverlay
-					}), i.a.createElement(h.a, {
-						subredditOrProfile: {
-							name: e.profileName,
-							type: b.a.PROFILE
-						}
-					}), i.a.createElement(c.a, {
-						profileName: e.profileName
-					}), i.a.createElement(d.a, {
-						profileName: e.profileName
-					}), !t && i.a.createElement(u.a, null, i.a.createElement(l.a, {
-						profileName: e.profileName
-					})), i.a.createElement(u.a, null, i.a.createElement(p.a, {
-						profileName: e.profileName
-					})), i.a.createElement(m.a, {
-						hideBackToTop: e.hideBackToTop
-					}))
-				};
-			_.defaultProps = {
+				b = e => i.a.createElement(o.a, {
+					className: e.className
+				}, i.a.createElement(h, {
+					profileName: e.profileName,
+					isOverlay: e.isOverlay
+				}), i.a.createElement(m.a, {
+					subredditOrProfile: {
+						name: e.profileName,
+						type: p.a.PROFILE
+					}
+				}), i.a.createElement(a.a, {
+					profileName: e.profileName
+				}), i.a.createElement(c.a, {
+					profileName: e.profileName
+				}), i.a.createElement(d.a, null, i.a.createElement(u.a, {
+					profileName: e.profileName
+				})), i.a.createElement(l.a, {
+					hideBackToTop: e.hideBackToTop
+				}));
+			b.defaultProps = {
 				isOverlay: !1
-			}, t.a = _
+			}, t.a = b
 		},
 		"./src/reddit/components/RawHTMLDisplay/index.m.less": function(e, t, n) {
 			e.exports = {
@@ -4601,80 +4593,6 @@
 				})) : null
 			})
 		},
-		"./src/reddit/components/SidebarProfilePowerupContributions/index.tsx": function(e, t, n) {
-			"use strict";
-			var r = n("./node_modules/fbt/lib/FbtPublic.js"),
-				s = n("./node_modules/react/index.js"),
-				i = n.n(s),
-				o = n("./node_modules/react-redux/es/index.js"),
-				a = n("./node_modules/react-router-dom/esm/react-router-dom.js"),
-				c = n("./src/reddit/components/SidebarExpandableList/index.tsx"),
-				d = n("./src/reddit/components/SubredditIcon/index.tsx"),
-				l = n("./src/reddit/layout/twoCol/ExpandRight/index.tsx"),
-				u = n("./src/reddit/selectors/gold/powerups/index.ts"),
-				m = n("./src/reddit/selectors/user.ts"),
-				p = n("./node_modules/reselect/es/index.js"),
-				h = n("./src/reddit/components/Widgets/CommunityList/index.m.less"),
-				b = n.n(h);
-			const f = Object(p.c)({
-				subreddits: function(e, t) {
-					let {
-						profileName: n
-					} = t;
-					const r = Object(m.Bb)(e, {
-							userName: n
-						}),
-						s = Object(u.f)(e);
-					return (r && s ? s[r.id] : null) || []
-				}
-			});
-
-			function g(e) {
-				let {
-					item: t
-				} = e;
-				const n = t.subredditInfo,
-					s = i.a.createElement(d.b, {
-						iconUrl: n.styles.icon,
-						className: b.a.subredditIcon
-					});
-				return i.a.createElement(l.a, {
-					className: b.a.communityItemContainer,
-					key: n.id
-				}, i.a.createElement("div", {
-					className: b.a.iconContainer
-				}, i.a.createElement(a.a, {
-					to: n.path
-				}, s)), i.a.createElement("div", {
-					className: b.a.communityDescription
-				}, i.a.createElement("div", {
-					className: b.a.communityName
-				}, i.a.createElement(a.a, {
-					to: n.path
-				}, n.prefixedName)), i.a.createElement("div", {
-					className: b.a.subscriberCount
-				}, r.fbt._({
-					"*": "{number} Powerups",
-					_1: "1 Powerup"
-				}, [r.fbt._plural(t.powerups, "number")], {
-					hk: "3fbcDy"
-				}))))
-			}
-			t.a = Object(o.b)(f)(e => {
-				let {
-					subreddits: t
-				} = e;
-				return function(e) {
-					return e.length > 0 && e.every(e => e.subredditInfo)
-				}(t) ? i.a.createElement(c.a, {
-					title: r.fbt._("Supports Communities", null, {
-						hk: "1vCNdZ"
-					}),
-					items: t,
-					renderItem: g
-				}) : null
-			})
-		},
 		"./src/reddit/components/SidebarSpacer/index.m.less": function(e, t, n) {
 			e.exports = {
 				Component: "_2vEf-C2keJaBMY9qk_BxVn",
@@ -4892,12 +4810,12 @@
 						rtJsonElementProps: o
 					});
 					switch (i) {
-						case b.Wf.SmIcon:
+						case b.Tf.SmIcon:
 							return s.a.createElement(p, {
 								subredditName: r,
 								rtJsonElementProps: o
 							});
-						case b.Wf.SmIconHc:
+						case b.Tf.SmIconHc:
 							return s.a.createElement(p, {
 								subredditName: r,
 								isHoverable: !0,
@@ -6345,13 +6263,13 @@
 						experimentEligibilitySelector: i.R,
 						experimentName: r.ud
 					});
-					return !(!t || Object(r.wg)(t))
+					return !(!t || Object(r.tg)(t))
 				},
 				a = e => {
 					return Object(s.c)(e, {
 						experimentEligibilitySelector: i.R,
 						experimentName: r.ud
-					}) === r.Ud.ListingEnabled
+					}) === r.Sd.ListingEnabled
 				}
 		},
 		"./src/reddit/selectors/focusedVerticalSuggestion.ts": function(e, t, n) {
@@ -6484,12 +6402,12 @@
 				c = e => {
 					return Object(i.c)(e, {
 						experimentEligibilitySelector: a,
-						experimentName: r.Qf
+						experimentName: r.Nf
 					}) || ""
 				},
 				d = e => {
 					const t = c(e);
-					return t === r.Wf.SmIcon || t === r.Wf.SmIconHc
+					return t === r.Tf.SmIcon || t === r.Tf.SmIconHc
 				},
 				l = (e, t) => {
 					let {
@@ -6539,4 +6457,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfilePosts.87f281b38f8e99c3d913.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfilePosts.0c1420ce4c7f6ae435c9.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/EconPowerupsFlairModal.f5eb81289a3ecd07260c.js
-// Retrieved at 10/24/2022, 9:50:07 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/EconPowerupsFlairModal.cafb46fee20377785517.js
+// Retrieved at 10/24/2022, 10:40:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["EconPowerupsFlairModal", "AchievementsActions"], {
 		"./src/reddit/actions/economics/powerups/flairs/index.ts": function(e, t, r) {
@@ -39,10 +39,10 @@
 				a = r("./src/lib/sentry/index.ts"),
 				n = r("./src/lib/makeGqlRequest/index.ts"),
 				o = r("./src/redditGQL/operations/SubredditUserAchievements.json"),
-				c = r("./src/redditGQL/operations/UpdateAchievementFlairPreference.json");
-			const d = async (e, t, r, s) => {
+				d = r("./src/redditGQL/operations/UpdateAchievementFlairPreference.json");
+			const c = async (e, t, r, s) => {
 				const i = await Object(n.a)(e, {
-					...c,
+					...d,
 					variables: {
 						subredditId: t,
 						flairTypes: r,
@@ -60,26 +60,26 @@
 				f = r("./src/reddit/selectors/gold/powerups/index.ts"),
 				v = r("./src/reddit/selectors/gold/powerups/flairs.ts"),
 				x = r("./src/reddit/selectors/user.ts"),
-				w = r("./src/reddit/actions/economics/powerups/constants.ts"),
-				g = r("./src/lib/initializeClient/installReducer.ts"),
+				g = r("./src/reddit/actions/economics/powerups/constants.ts"),
+				w = r("./src/lib/initializeClient/installReducer.ts"),
 				j = r("./src/reddit/reducers/features/powerups/index.ts");
-			Object(g.a)({
+			Object(w.a)({
 				features: {
 					powerups: j.a
 				}
 			});
-			const E = Object(i.a)(w.d),
-				F = Object(i.a)(w.i),
-				O = Object(i.a)(w.f),
-				I = Object(i.a)(w.g),
-				P = Object(i.a)(w.e),
-				_ = Object(i.a)(w.h),
+			const E = Object(i.a)(g.d),
+				F = Object(i.a)(g.i),
+				O = Object(i.a)(g.f),
+				I = Object(i.a)(g.g),
+				P = Object(i.a)(g.e),
+				_ = Object(i.a)(g.h),
 				y = (e, t) => async (r, s, i) => {
 					let {
-						gqlContext: c
+						gqlContext: d
 					} = i;
-					const d = t.filter(e => !!(null == e ? void 0 : e.trim()));
-					if (d.length) try {
+					const c = t.filter(e => !!(null == e ? void 0 : e.trim()));
+					if (c.length) try {
 						const t = await (async (e, t, r) => {
 								const s = await Object(n.a)(e, {
 									...o,
@@ -91,7 +91,7 @@
 								});
 								if (!s.ok) throw new Error("Unable to fetch user achievements");
 								return s.body.data
-							})(c(), e, d),
+							})(d(), e, c),
 							{
 								subredditInfoById: s,
 								redditorsInfoByIds: i
@@ -104,19 +104,19 @@
 					if (!e) return;
 					const i = s(),
 						a = Object(x.l)(i);
-					if (!a || !Object(f.n)(i, {
+					if (!a || !Object(f.f)(i, {
 							subredditId: e
 						})) return;
-					const n = !!Object(v.f)(i, {
+					const n = !!Object(v.e)(i, {
 						subredditId: e,
 						userId: a.id
 					});
 					!t && n || await r(y(e, [a.id]))
-				}, C = e => async (t, r) => !!e && (Object(h.g)(r()) ? (await t(Object(l.c)(e)), !!Object(v.d)(r(), {
+				}, C = e => async (t, r) => !!e && (Object(h.g)(r()) ? (await t(Object(l.c)(e)), !!Object(v.c)(r(), {
 					subredditId: e
-				})) : (await t(Object(u.j)(e, {
+				})) : (await t(Object(u.e)(e, {
 					fullData: !0
-				})), Object(f.g)(r(), {
+				})), Object(f.b)(r(), {
 					subredditId: e
 				}))), N = e => async (t, r) => {
 					var s;
@@ -132,13 +132,13 @@
 						}),
 						o = null === (s = n.find(e => e && e.subredditId)) || void 0 === s ? void 0 : s.subredditId;
 					if (!(await t(C(o)))) return;
-					const c = new Set(n.filter(e => !!(null == e ? void 0 : e.authorId)).map(e => {
+					const d = new Set(n.filter(e => !!(null == e ? void 0 : e.authorId)).map(e => {
 						let {
 							authorId: t
 						} = e;
 						return t
 					}));
-					await t(y(o, Array.from(c)))
+					await t(y(o, Array.from(d)))
 				}, k = (e, t) => async (r, s) => {
 					if (!t) return;
 					if (!(await r(C(e)))) return;
@@ -151,7 +151,7 @@
 						a = Object(x.l)(i);
 					if (!a) return;
 					const n = a.id,
-						o = Object(v.i)(i, {
+						o = Object(v.h)(i, {
 							subredditId: e,
 							userId: n
 						});
@@ -166,7 +166,7 @@
 						a = Object(x.l)(i);
 					if (!a) return;
 					const n = a.id,
-						o = Object(v.h)(i, {
+						o = Object(v.g)(i, {
 							subredditId: e,
 							userId: n
 						});
@@ -181,22 +181,22 @@
 						gqlContext: n
 					} = i;
 					const o = r(),
-						c = Object(x.l)(o);
-					if (!c) return;
-					const l = c.id;
+						d = Object(x.l)(o);
+					if (!d) return;
+					const l = d.id;
 					t(O(e));
 					const {
 						subredditId: u,
 						achievementFlairType: b,
 						supporterFlairType: h
-					} = e, f = [b, h].filter(Boolean), w = Object(v.e)(o, {
+					} = e, f = [b, h].filter(Boolean), g = Object(v.d)(o, {
 						subredditId: u,
 						userId: l
 					});
 					try {
-						await d(n(), u, f, w), t(I(e))
-					} catch (g) {
-						t(P(e)), a.c.captureException(g), t(Object(m.f)({
+						await c(n(), u, f, g), t(I(e))
+					} catch (w) {
+						t(P(e)), a.c.captureException(w), t(Object(m.f)({
 							duration: m.a,
 							kind: p.b.Error,
 							text: s.fbt._("Failed to set preferred achievement flair", null, {
@@ -208,21 +208,21 @@
 					let {
 						gqlContext: o
 					} = n;
-					const c = i(),
-						l = Object(x.l)(c);
+					const d = i(),
+						l = Object(x.l)(d);
 					if (!l) return;
 					const u = l.id,
 						b = {
 							subredditId: e,
 							userId: u
 						},
-						h = [Object(v.h)(c, b), Object(v.i)(c, b)].filter(Boolean);
+						h = [Object(v.g)(d, b), Object(v.h)(d, b)].filter(Boolean);
 					r(_({
 						...b,
 						isHidden: t
 					}));
 					try {
-						await d(o(), e, h, t)
+						await c(o(), e, h, t)
 					} catch (f) {
 						r(_({
 							...b,
@@ -242,9 +242,9 @@
 			r.d(t, "a", (function() {
 				return o
 			})), r.d(t, "b", (function() {
-				return c
-			})), r.d(t, "c", (function() {
 				return d
+			})), r.d(t, "c", (function() {
+				return c
 			})), r.d(t, "d", (function() {
 				return l
 			})), r.d(t, "e", (function() {
@@ -265,8 +265,8 @@
 				a = r("./src/reddit/constants/modals.ts"),
 				n = r("./src/reddit/actions/economics/subredditPremium/constants.ts");
 			const o = Object(s.a)(n.a),
-				c = Object(s.a)(n.b),
-				d = Object(s.a)(n.c),
+				d = Object(s.a)(n.b),
+				c = Object(s.a)(n.c),
 				l = Object(s.a)(n.d),
 				u = Object(s.a)(n.e),
 				m = Object(s.a)(n.f),
@@ -300,14 +300,14 @@
 				a = r("./node_modules/react-redux/es/index.js"),
 				n = r("./node_modules/reselect/es/index.js"),
 				o = r("./src/config.ts"),
-				c = r("./src/lib/classNames/index.ts"),
-				d = r("./src/reddit/actions/economics/subredditPremium/actionCreators.ts"),
+				d = r("./src/lib/classNames/index.ts"),
+				c = r("./src/reddit/actions/economics/subredditPremium/actionCreators.ts"),
 				l = r("./src/reddit/actions/tooltip.ts"),
 				u = r("./src/higherOrderComponents/makeAsync.tsx");
 			var m = Object(u.a)({
 					ErrorComponent: () => null,
 					LoadingComponent: () => null,
-					getComponent: () => r.e("SubredditPremiumBadgeHovercardTooltip").then(r.bind(null, "./src/reddit/components/Economics/SubredditPremium/Badges/HoverCard/tooltip.tsx")).then(e => e.default)
+					getComponent: () => Promise.all([r.e("EconomicsSubredditPremiumSidebarCards~SubredditPremiumBadgeHovercardTooltip"), r.e("SubredditPremiumBadgeHovercardTooltip")]).then(r.bind(null, "./src/reddit/components/Economics/SubredditPremium/Badges/HoverCard/tooltip.tsx")).then(e => e.default)
 				}),
 				p = r("./src/reddit/components/InfoTextTooltip/index.tsx"),
 				b = r("./src/reddit/featureFlags/index.ts"),
@@ -319,8 +319,8 @@
 					LoadingComponent: () => null,
 					getComponent: () => r.e("CustomBadgeHovercardTooltip").then(r.bind(null, "./src/reddit/components/Badges/UserDisplay/AddCustomTooltip/tooltip.tsx")).then(e => e.default)
 				}),
-				w = r("./src/reddit/components/Badges/UserDisplay/index.m.less"),
-				g = r.n(w);
+				g = r("./src/reddit/components/Badges/UserDisplay/index.m.less"),
+				w = r.n(g);
 
 			function j() {
 				return (j = Object.assign || function(e) {
@@ -352,23 +352,23 @@
 						badges: e
 					} = this.props;
 					if (this.props.usePlaceholder && !e.length) return i.a.createElement("img", {
-						className: Object(c.a)(g.a.image, this.props.className),
+						className: Object(d.a)(w.a.image, this.props.className),
 						src: `${o.a.assetPath}/img/badges/placeholder.png`
 					});
 					const t = `${E}-${this.props.uniqueIdentifier}`,
 						r = this.props.badgeSize || I;
 					return i.a.createElement(s.Fragment, null, this.props.showAddCustom && i.a.createElement("div", {
-						className: g.a.wrapper,
+						className: w.a.wrapper,
 						id: t,
 						onMouseEnter: () => this.handleMouseEnter(t),
 						onMouseLeave: () => this.handleMouseLeave()
 					}, i.a.createElement("button", {
-						className: g.a.addCustomLink,
+						className: w.a.addCustomLink,
 						onClick: this.props.onOpenUploadDialog
 					}, i.a.createElement(f.a, {
-						className: g.a.addCustom
+						className: w.a.addCustom
 					})), i.a.createElement(x, {
-						className: g.a.badgeHovercard,
+						className: w.a.badgeHovercard,
 						subredditId: this.props.subredditId,
 						targetPosition: ["left", "bottom"],
 						tooltipId: t,
@@ -380,12 +380,12 @@
 						return i.a.createElement(s.Fragment, {
 							key: `badges-fragement-${e.id}`
 						}, i.a.createElement("div", {
-							className: Object(c.a)(g.a.wrapper, this.props.className),
+							className: Object(d.a)(w.a.wrapper, this.props.className),
 							key: `wrapper-${e.id}`,
 							onMouseEnter: () => this.handleMouseEnter(a),
 							onMouseLeave: () => this.handleMouseLeave()
 						}, i.a.createElement("img", {
-							className: g.a.image,
+							className: w.a.image,
 							id: a,
 							key: e.id,
 							src: t.url2x,
@@ -396,7 +396,7 @@
 						}), this.props.useHovercard ? i.a.createElement(m, {
 							badge: e,
 							correlationId: this.props.correlationId,
-							className: g.a.badgeHovercard,
+							className: w.a.badgeHovercard,
 							key: `tooltip-${e.id}`,
 							subredditId: this.props.subredditId,
 							targetPosition: ["left", "bottom"],
@@ -442,7 +442,7 @@
 						tooltipId: t
 					})),
 					onHideTooltip: () => e(Object(l.i)()),
-					onOpenUploadDialog: () => e(Object(d.j)())
+					onOpenUploadDialog: () => e(Object(c.j)())
 				});
 
 			function N(e) {
@@ -475,9 +475,9 @@
 				a = r.n(i),
 				n = r("./src/reddit/components/ModalStyledComponents/index.tsx"),
 				o = r("./src/reddit/components/Econ/Common/ModalCloseButton/index.m.less"),
-				c = r.n(o);
+				d = r.n(o);
 			const {
-				fbt: d
+				fbt: c
 			} = r("./node_modules/fbt/lib/FbtPublic.js"), l = e => {
 				let {
 					className: t,
@@ -486,14 +486,14 @@
 				} = e;
 				return a.a.createElement("button", {
 					onClick: i,
-					className: Object(s.a)(c.a.closeButton, {
-						[c.a.highContrast]: r
+					className: Object(s.a)(d.a.closeButton, {
+						[d.a.highContrast]: r
 					}, t),
-					"aria-label": d._("Close", null, {
+					"aria-label": c._("Close", null, {
 						hk: "3Qarlp"
 					})
 				}, a.a.createElement(n.b, {
-					className: c.a.closeIcon
+					className: d.a.closeIcon
 				}))
 			}
 		},
@@ -558,8 +558,8 @@
 				a = r("./node_modules/react/index.js"),
 				n = r.n(a),
 				o = r("./node_modules/react-redux/es/index.js"),
-				c = r("./src/reddit/actions/modal.ts"),
-				d = r("./src/reddit/components/ScrollGradient/index.tsx"),
+				d = r("./src/reddit/actions/modal.ts"),
+				c = r("./src/reddit/components/ScrollGradient/index.tsx"),
 				l = r("./src/reddit/constants/modals.ts"),
 				u = r("./src/reddit/hooks/useScrollGradient.ts"),
 				m = r("./src/reddit/models/User/index.ts"),
@@ -569,24 +569,24 @@
 				f = r("./src/reddit/components/Econ/Common/ModalCloseButton/index.tsx"),
 				v = r("./src/reddit/components/Econ/PowerupsFlair/UserFlairPreview.tsx"),
 				x = r("./src/reddit/components/Econ/PowerupsFlair/PowerupsFlairModal/Header.m.less"),
-				w = r.n(x);
-			const g = e => {
+				g = r.n(x);
+			const w = e => {
 				let {
 					className: t,
 					subredditId: r,
 					userId: s,
 					flairData: a,
 					onModalClose: o,
-					username: c
+					username: d
 				} = e;
 				return n.a.createElement("div", {
-					className: Object(i.a)(w.a.container, t),
+					className: Object(i.a)(g.a.container, t),
 					"data-testid": "achievement-flair-modal-header"
 				}, n.a.createElement(v.a, {
-					className: w.a.userFlairPreview,
+					className: g.a.userFlairPreview,
 					subredditId: r,
 					userId: s,
-					username: c,
+					username: d,
 					flairData: a
 				}), n.a.createElement(f.a, {
 					onClick: o
@@ -595,39 +595,45 @@
 			var j = r("./src/reddit/components/Econ/PowerupsFlair/PowerupsFlairModal/index.m.less"),
 				E = r.n(j),
 				F = r("./src/reddit/actions/economics/powerups/flairs/index.ts"),
-				O = r("./src/reddit/components/Econ/PowerupsMarketingModal/async.tsx"),
-				I = r("./src/reddit/controls/ToggleSwitch/index.tsx"),
-				P = r("./src/reddit/helpers/trackers/userFlair.ts"),
-				_ = r("./src/reddit/hooks/usePreloadModal.ts"),
-				y = r("./src/reddit/hooks/useTracking.ts"),
-				S = r("./src/reddit/selectors/experiments/econ/index.ts"),
-				C = r("./src/reddit/selectors/experiments/i18n/hiddenPowerups.ts"),
-				N = r("./src/reddit/selectors/gold/powerups/index.ts"),
-				k = r("./src/reddit/selectors/gold/powerups/flairs.ts"),
-				T = r("./src/reddit/icons/svgs/PowerupTier2/index.tsx"),
-				U = r("./src/reddit/actions/tooltip.ts"),
-				L = r("./src/reddit/components/InfoTextTooltip/index.tsx"),
-				M = r("./src/reddit/icons/fonts/index.tsx"),
-				A = r("./src/reddit/models/Gold/Powerups/powerupsFlair/index.ts"),
-				B = r("./src/reddit/components/Econ/PowerupsFlair/PowerupsFlairModal/PowerupsFlair.m.less"),
-				D = r.n(B);
+				O = r("./src/reddit/controls/ToggleSwitch/index.tsx"),
+				I = r("./src/reddit/helpers/trackers/userFlair.ts"),
+				P = r("./src/reddit/hooks/useTracking.ts"),
+				_ = r("./src/reddit/selectors/experiments/econ/index.ts"),
+				y = r("./node_modules/reselect/es/index.js"),
+				S = r("./src/reddit/constants/experiments.ts"),
+				C = r("./src/reddit/helpers/chooseVariant/index.ts");
+			const N = ["t5_395yw", "t5_2zkfk", "t5_3o3fz", "t5_2rzot", "t5_2w2lq", "t5_3ii04", "t5_3hn0l", "t5_2qh8h", "t5_3g6wm", "t5_3ntes", "t5_35aia", "t5_2r8ok", "t5_iygqf", "t5_2qutz", "t5_2qkhb", "t5_2r78m", "t5_2qkob", "t5_hwfuo", "t5_2tfgu", "t5_2u8vt", "t5_vnwft", "t5_3izzds", "t5_gofqg"],
+				k = e => N.includes(e),
+				T = Object(y.a)(e => Object(C.c)(e, {
+					experimentEligibilitySelector: C.a,
+					experimentName: S.le
+				}), e => e === S.Od);
+			var U = r("./src/reddit/selectors/gold/powerups/index.ts"),
+				L = r("./src/reddit/selectors/gold/powerups/flairs.ts"),
+				M = r("./src/reddit/icons/svgs/PowerupTier2/index.tsx"),
+				B = r("./src/reddit/actions/tooltip.ts"),
+				A = r("./src/reddit/components/InfoTextTooltip/index.tsx"),
+				D = r("./src/reddit/icons/fonts/index.tsx"),
+				H = r("./src/reddit/models/Gold/Powerups/powerupsFlair/index.ts"),
+				G = r("./src/reddit/components/Econ/PowerupsFlair/PowerupsFlairModal/PowerupsFlair.m.less"),
+				q = r.n(G);
 			const {
-				fbt: H
-			} = r("./node_modules/fbt/lib/FbtPublic.js"), G = e => {
+				fbt: z
+			} = r("./node_modules/fbt/lib/FbtPublic.js"), V = e => {
 				let {
 					flair: t,
 					onSelect: r
 				} = e;
 				const s = Object(o.d)(),
-					a = Object(y.a)(),
-					c = `achievement-locked-${t.type}`,
-					d = t.isLocked ? H._("To use this achievement, you gotta earn it!", null, {
+					a = Object(P.a)(),
+					d = `achievement-locked-${t.type}`,
+					c = t.isLocked ? z._("To use this achievement, you gotta earn it!", null, {
 						hk: "2RYhLB"
 					}) : "",
-					l = t.description || d,
+					l = t.description || c,
 					u = () => {
-						if (l) return s(Object(U.h)({
-							tooltipId: c
+						if (l) return s(Object(B.h)({
+							tooltipId: d
 						}))
 					},
 					m = !t.isLocked && !t.isPreferred;
@@ -636,44 +642,44 @@
 					onMouseLeave: u,
 					onClick: () => {
 						if (m && r(t.type), !t.isPreferred) {
-							const e = Object(A.b)(t) ? {
+							const e = Object(H.b)(t) ? {
 								supporterFlair: t
 							} : {
 								achievementFlair: t
 							};
-							a(Object(P.b)(e))
+							a(Object(I.b)(e))
 						}
 					},
-					className: Object(i.a)(D.a.achievementItem, {
-						[D.a.achievementItemLocked]: t.isLocked,
-						[D.a.achievementItemActive]: t.isPreferred,
-						[D.a.achievementItemSelectable]: m
+					className: Object(i.a)(q.a.achievementItem, {
+						[q.a.achievementItemLocked]: t.isLocked,
+						[q.a.achievementItemActive]: t.isPreferred,
+						[q.a.achievementItemSelectable]: m
 					}),
 					"data-testid": `af-modal-achievement-flair-${t.type}`
 				}, n.a.createElement("div", {
-					className: D.a.achievementImgWrapper
+					className: q.a.achievementImgWrapper
 				}, n.a.createElement("img", {
-					id: c,
-					className: D.a.achievementImg,
+					id: d,
+					className: q.a.achievementImg,
 					src: t.icon.url,
 					alt: t.name
 				}), n.a.createElement("div", {
-					className: D.a.achievementImgLocked
-				}, n.a.createElement(M.a, {
+					className: q.a.achievementImgLocked
+				}, n.a.createElement(D.a, {
 					name: "lock",
 					isFilled: !0,
-					className: D.a.achievementLock
+					className: q.a.achievementLock
 				}))), n.a.createElement("div", {
-					className: D.a.achievementName
-				}, n.a.createElement("span", null, t.name)), !!l && n.a.createElement(L.c, {
-					tooltipId: c,
+					className: q.a.achievementName
+				}, n.a.createElement("span", null, t.name)), !!l && n.a.createElement(A.c, {
+					tooltipId: d,
 					text: l,
-					className: D.a.achievementTooltip
+					className: q.a.achievementTooltip
 				}))
 			};
-			var q = r("./src/reddit/components/Econ/PowerupsFlair/PowerupsFlairModal/FlairsSection.m.less"),
-				z = r.n(q);
-			const V = e => {
+			var Q = r("./src/reddit/components/Econ/PowerupsFlair/PowerupsFlairModal/FlairsSection.m.less"),
+				R = r.n(Q);
+			const K = e => {
 				let {
 					className: t,
 					title: r,
@@ -681,138 +687,138 @@
 					flairs: i,
 					onClickFlair: a
 				} = e;
-				const c = Object(o.e)(S.g);
+				const d = Object(o.e)(_.g);
 				return n.a.createElement("div", {
 					className: t
 				}, n.a.createElement("h4", {
-					className: z.a.title
-				}, !c && n.a.createElement(T.a, {
-					className: z.a.headingPowerupsBolt
+					className: R.a.title
+				}, !d && n.a.createElement(M.a, {
+					className: R.a.headingPowerupsBolt
 				}), r), n.a.createElement("p", {
-					className: z.a.subtitle
+					className: R.a.subtitle
 				}, s), n.a.createElement("div", {
-					className: z.a.flairsList
-				}, i.map(e => n.a.createElement(G, {
+					className: R.a.flairsList
+				}, i.map(e => n.a.createElement(V, {
 					flair: e,
 					key: e.type,
 					onSelect: a
 				}))))
 			};
-			var Q = r("./src/reddit/components/Econ/PowerupsFlair/PowerupsFlairModal/PowerupsFlairsBody.m.less"),
-				R = r.n(Q);
+			var W = r("./src/reddit/components/Econ/PowerupsFlair/PowerupsFlairModal/PowerupsFlairsBody.m.less"),
+				Y = r.n(W);
 			const {
-				fbt: K
-			} = r("./node_modules/fbt/lib/FbtPublic.js"), W = e => {
+				fbt: J
+			} = r("./node_modules/fbt/lib/FbtPublic.js"), $ = e => {
 				let {
 					subredditId: t,
 					userId: r,
 					className: s
 				} = e;
-				const i = Object(y.a)(),
+				const i = Object(P.a)(),
 					a = Object(o.d)(),
-					c = Object(o.e)(e => Object(k.b)(e, {
+					d = Object(o.e)(e => Object(L.a)(e, {
 						subredditId: t,
 						userId: r
 					})),
-					d = Object(o.e)(S.g),
-					l = Object(o.e)(e => Object(C.a)(e, t)),
-					u = Object(o.e)(e => Object(k.e)(e, {
+					c = Object(o.e)(_.g),
+					l = Object(o.e)(e => ((e, t) => T(e) && k(t))(e, t)),
+					u = Object(o.e)(e => Object(L.d)(e, {
 						subredditId: t,
 						userId: r
 					})),
-					m = Object(o.e)(e => Object(N.n)(e, {
+					m = Object(o.e)(e => Object(U.f)(e, {
 						subredditId: t
 					}));
-				if (Object(_.a)(O.a), !c) return null;
-				const p = !l && !d;
+				if (!d) return null;
+				const p = !l && !c;
 				return n.a.createElement("div", {
 					className: s
-				}, p && n.a.createElement(V, {
-					className: R.a.flairsSection,
-					title: K._("Supporter Flair", null, {
+				}, p && n.a.createElement(K, {
+					className: Y.a.flairsSection,
+					title: J._("Supporter Flair", null, {
 						hk: "1U21cd"
 					}),
-					subtitle: d ? K._("Support your community to get more flair!", null, {
+					subtitle: c ? J._("Support your community to get more flair!", null, {
 						hk: "2NgB9p"
-					}) : K._("Power up your community to get more flair!", null, {
+					}) : J._("Power up your community to get more flair!", null, {
 						hk: "12WxtM"
 					}),
-					flairs: c.supporterFlairs,
+					flairs: d.supporterFlairs,
 					onClickFlair: e => {
 						a(Object(F.setSubredditUserSupporterFlair)(t, e))
 					}
-				}), n.a.createElement(V, {
-					className: R.a.flairsSection,
-					title: K._("Achievement Flair", null, {
+				}), n.a.createElement(K, {
+					className: Y.a.flairsSection,
+					title: J._("Achievement Flair", null, {
 						hk: "10y9WL"
 					}),
-					subtitle: d ? K._("Choose the achievement you’d like to highlight.", null, {
+					subtitle: c ? J._("Choose the achievement you’d like to highlight.", null, {
 						hk: "2GS39k"
-					}) : K._("Unlocked with Powerups! Choose the achievement you’d like to highlight.", null, {
+					}) : J._("Unlocked with Powerups! Choose the achievement you’d like to highlight.", null, {
 						hk: "3egU1f"
 					}),
-					flairs: c.achievementFlairs,
+					flairs: d.achievementFlairs,
 					onClickFlair: e => {
 						a(Object(F.setSubredditUserAchievementFlair)(t, e))
 					}
 				}), n.a.createElement("div", {
-					className: R.a.flairsVisibility
+					className: Y.a.flairsVisibility
 				}, n.a.createElement("label", {
-					className: R.a.flairsVisibilityLabel
-				}, p ? K._("Show Supporter and Achievement Flair", null, {
+					className: Y.a.flairsVisibilityLabel
+				}, p ? J._("Show Supporter and Achievement Flair", null, {
 					hk: "RxMER"
-				}) : K._("Show Achievement Flair", null, {
+				}) : J._("Show Achievement Flair", null, {
 					hk: "1STetn"
-				})), n.a.createElement(I.a, {
-					className: R.a.flairsVisibilitySwitch,
+				})), n.a.createElement(O.a, {
+					className: Y.a.flairsVisibilitySwitch,
 					disabled: !m,
 					on: m && !u,
 					onToggle: () => {
 						const e = !u;
-						a(Object(F.setSubredditUserPowerupsFlairsVisibility)(t, e)), i(Object(P.d)(e))
+						a(Object(F.setSubredditUserPowerupsFlairsVisibility)(t, e)), i(Object(I.d)(e))
 					}
 				})))
 			};
-			var Y = r("./src/reddit/actions/authorFlair.ts"),
-				J = r("./src/reddit/components/Flair/index.tsx"),
-				$ = r("./src/reddit/controls/Button/index.tsx"),
-				Z = r("./src/reddit/components/Econ/PowerupsFlair/PowerupsFlairModal/UserFlair.m.less"),
-				X = r.n(Z);
+			var Z = r("./src/reddit/actions/authorFlair.ts"),
+				X = r("./src/reddit/components/Flair/index.tsx"),
+				ee = r("./src/reddit/controls/Button/index.tsx"),
+				te = r("./src/reddit/components/Econ/PowerupsFlair/PowerupsFlairModal/UserFlair.m.less"),
+				re = r.n(te);
 			const {
-				fbt: ee
-			} = r("./node_modules/fbt/lib/FbtPublic.js"), te = e => {
+				fbt: se
+			} = r("./node_modules/fbt/lib/FbtPublic.js"), ie = e => {
 				let {
 					className: t,
 					subredditId: r,
 					flairData: s
 				} = e;
 				const a = Object(o.d)(),
-					c = Object(y.a)(),
-					d = Object(o.e)(b.l);
-				return d ? n.a.createElement("div", {
-					className: Object(i.a)(X.a.container, t)
+					d = Object(P.a)(),
+					c = Object(o.e)(b.l);
+				return c ? n.a.createElement("div", {
+					className: Object(i.a)(re.a.container, t)
 				}, n.a.createElement("div", {
-					className: X.a.header
+					className: re.a.header
 				}, n.a.createElement("h4", {
-					className: X.a.flairText
-				}, ee._("User Flair", null, {
+					className: re.a.flairText
+				}, se._("User Flair", null, {
 					hk: "3DaU0r"
-				})), n.a.createElement($.t, {
-					className: X.a.editButton,
-					priority: $.c.Plain,
+				})), n.a.createElement(ee.t, {
+					className: re.a.editButton,
+					priority: ee.c.Plain,
 					onClick: () => {
-						const e = d ? Object(m.e)(d) : null;
-						c(Object(P.a)()), a(Object(Y.b)({
+						const e = c ? Object(m.e)(c) : null;
+						d(Object(I.a)()), a(Object(Z.b)({
 							username: e,
 							subredditId: r,
 							isOpenedFromAchievementsModal: !0
 						}))
 					},
 					"data-testid": "edit-user-flair-button"
-				}, n.a.createElement(M.a, {
+				}, n.a.createElement(D.a, {
 					name: "edit"
-				}))), (null == s ? void 0 : s.applied) && s.displaySettings.isUserEnabled && n.a.createElement(J.b, {
-					className: X.a.flair,
+				}))), (null == s ? void 0 : s.applied) && s.displaySettings.isUserEnabled && n.a.createElement(X.b, {
+					className: re.a.flair,
 					flair: s.applied,
 					forceSmallEmojis: !0
 				})) : null
@@ -832,35 +838,35 @@
 					x = Object(o.e)(e => v ? Object(h.b)(e, {
 						subredditId: v.id
 					}) : null),
-					w = Object(o.e)(e => v ? Object(h.d)(e, {
+					g = Object(o.e)(e => v ? Object(h.d)(e, {
 						subredditId: v.id
 					}) : null),
-					j = !!x && !!w;
+					j = !!x && !!g;
 				return f && v ? n.a.createElement("div", {
 					className: E.a.container
 				}, n.a.createElement("div", {
 					className: E.a.stickyContent
-				}, n.a.createElement(g, {
+				}, n.a.createElement(w, {
 					subredditId: v.id,
 					userId: f.id,
 					username: Object(m.e)(f),
-					flairData: w,
+					flairData: g,
 					onModalClose: () => {
-						e(Object(c.g)(l.a.ACHIEVEMENT_FLAIR))
+						e(Object(d.g)(l.a.ACHIEVEMENT_FLAIR))
 					}
 				})), n.a.createElement("div", {
 					className: E.a.scrollContainer,
 					ref: t,
 					onScroll: s
-				}, j && n.a.createElement(te, {
+				}, j && n.a.createElement(ie, {
 					subredditId: v.id,
-					flairData: w
-				}), n.a.createElement(W, {
+					flairData: g
+				}), n.a.createElement($, {
 					subredditId: v.id,
 					userId: f.id
 				})), n.a.createElement("div", {
 					className: Object(i.a)(E.a.stickyContent, E.a.scrollGradientContainer)
-				}, n.a.createElement(d.a, {
+				}, n.a.createElement(c.a, {
 					isVisible: r
 				}))) : null
 			})
@@ -913,8 +919,8 @@
 				a = r.n(i),
 				n = r("./node_modules/react-redux/es/index.js"),
 				o = r("./src/reddit/components/Badges/UserDisplay/index.tsx"),
-				c = r("./src/reddit/components/Econ/PowerupsFlair/UserAchievementFlair.async.ts"),
-				d = r("./src/reddit/components/Flair/index.tsx"),
+				d = r("./src/reddit/components/Econ/PowerupsFlair/UserAchievementFlair.async.ts"),
+				c = r("./src/reddit/components/Flair/index.tsx"),
 				l = r("./src/reddit/components/UserIcon/index.tsx"),
 				u = r("./src/reddit/components/UserIcon/constants.ts"),
 				m = r("./src/reddit/selectors/user.ts"),
@@ -951,13 +957,13 @@
 					badgeSize: 20
 				}), a.a.createElement("span", {
 					className: Object(s.a)(b.a.username, v)
-				}, `${h||"username"}`), a.a.createElement(c.a, {
+				}, `${h||"username"}`), a.a.createElement(d.a, {
 					className: b.a.achievementFlair,
 					subredditId: r,
 					userId: i
 				})), (null == p ? void 0 : p.applied) && p.displaySettings.isUserEnabled && a.a.createElement("div", {
 					className: b.a.flairPreviewSecondLine
-				}, a.a.createElement(d.b, {
+				}, a.a.createElement(c.b, {
 					className: b.a.userFlair,
 					flair: p.applied,
 					forceSmallEmojis: !0
@@ -973,14 +979,14 @@
 		"./src/reddit/components/ScrollGradient/index.tsx": function(e, t, r) {
 			"use strict";
 			r.d(t, "a", (function() {
-				return c
+				return d
 			}));
 			var s = r("./src/lib/classNames/index.ts"),
 				i = r("./node_modules/react/index.js"),
 				a = r.n(i),
 				n = r("./src/reddit/components/ScrollGradient/index.m.less"),
 				o = r.n(n);
-			const c = e => {
+			const d = e => {
 				let {
 					className: t,
 					isVisible: r
@@ -998,19 +1004,6 @@
 				return s
 			}));
 			const s = "https://www.redditstatic.com/avatars/avatar_default_02_24A0ED.png"
-		},
-		"./src/reddit/hooks/usePreloadModal.ts": function(e, t, r) {
-			"use strict";
-			r.d(t, "a", (function() {
-				return i
-			}));
-			var s = r("./node_modules/react/index.js");
-
-			function i(e) {
-				Object(s.useEffect)(() => {
-					e()
-				}, [e])
-			}
 		},
 		"./src/reddit/hooks/useScrollGradient.ts": function(e, t, r) {
 			"use strict";
@@ -1035,9 +1028,9 @@
 								scrollHeight: i,
 								scrollTop: o
 							} = e,
-							c = Math.ceil(o + r) >= i,
-							d = Math.ceil(r - o) >= i,
-							l = t === s.Bottom ? c : d;
+							d = Math.ceil(o + r) >= i,
+							c = Math.ceil(r - o) >= i,
+							l = t === s.Bottom ? d : c;
 						a(!l)
 					}
 				}
@@ -1106,26 +1099,6 @@
 				fill: "#000"
 			}))
 		},
-		"./src/reddit/selectors/experiments/i18n/hiddenPowerups.ts": function(e, t, r) {
-			"use strict";
-			r.d(t, "a", (function() {
-				return o
-			})), r.d(t, "c", (function() {
-				return c
-			})), r.d(t, "b", (function() {
-				return d
-			}));
-			var s = r("./node_modules/reselect/es/index.js"),
-				i = r("./src/reddit/constants/experiments.ts"),
-				a = r("./src/reddit/helpers/chooseVariant/index.ts");
-			const n = ["t5_395yw", "t5_2zkfk", "t5_3o3fz", "t5_2rzot", "t5_2w2lq", "t5_3ii04", "t5_3hn0l", "t5_2qh8h", "t5_3g6wm", "t5_3ntes", "t5_35aia", "t5_2r8ok", "t5_iygqf", "t5_2qutz", "t5_2qkhb", "t5_2r78m", "t5_2qkob", "t5_hwfuo", "t5_2tfgu", "t5_2u8vt", "t5_vnwft", "t5_3izzds", "t5_gofqg"],
-				o = (e, t) => d(e) && c(t),
-				c = e => n.includes(e),
-				d = Object(s.a)(e => Object(a.c)(e, {
-					experimentEligibilitySelector: a.a,
-					experimentName: i.oe
-				}), e => e === i.Qd)
-		},
 		"./src/redditGQL/operations/SubredditUserAchievements.json": function(e) {
 			e.exports = JSON.parse('{"id":"92790c69eba6"}')
 		},
@@ -1134,4 +1107,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EconPowerupsFlairModal.f5eb81289a3ecd07260c.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EconPowerupsFlairModal.cafb46fee20377785517.js.map

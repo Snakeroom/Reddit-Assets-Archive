@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfileOverview.0a6d2bff095893893004.js
-// Retrieved at 10/24/2022, 9:50:07 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfileOverview.6ca03f520ec55b3536d7.js
+// Retrieved at 10/24/2022, 10:40:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfileOverview"], {
 		"./node_modules/linkify-it/index.js": function(e, t, s) {
@@ -1184,7 +1184,7 @@
 					t(P.m({
 						title: Le(s(), p)
 					})), Object(y.T)(I) && Object(y.X)(I, p) && t(Object(C.startChangeUsernameFlow)());
-					const A = [t(Object(c.q)()), t(N.b(v, L)), t(S.b(v)), t(k.o(p)), t(S.i(p)), t(j.i(p, R))];
+					const A = [t(Object(c.q)()), t(N.b(v, L)), t(S.b(v)), t(k.o(p)), t(S.i(p)), t(j.d(p, R))];
 					await Promise.all(A)
 				}, Le = (e, t) => Object(_.s)(e, {
 					profileName: t
@@ -1834,7 +1834,7 @@
 						postId: n,
 						author: r
 					} = t;
-					return Object(h.e)(x.t) && s.roomStatus === f.b.NotStarted ? o.a.createElement(w.a, {
+					return Object(h.e)(x.r) && s.roomStatus === f.b.NotStarted ? o.a.createElement(w.a, {
 						postId: n,
 						author: r,
 						roomId: s.roomId,
@@ -4576,7 +4576,7 @@
 						isOptionalTextEnabled: et,
 						showCTAExperimentDesign: tt,
 						isModQueueDisplayEnabled: st
-					} = e, nt = Object(_.a)(), ot = Ze, rt = !!e.redditStyle || !!e["data-redditstyle"], at = rt ? void 0 : O, it = Object(l.a)(Te), ct = Le && it, dt = Object(c.a)(Te), lt = Object(d.a)(Te), mt = Object(G.c)(De), ut = Object(V.a)(De), pt = !!De.media && De.media.type === y.o.RTJSON, bt = Qe && pt, ht = s ? s - Y.a : void 0, ft = !!De.recommendationContext, xt = !(le && ge || ke) || ft && ge, gt = (e => e === je.nf.OnlyTitles)(ze) && !Object(pe.a)(De), vt = (e => e === je.nf.MediumHeight)(ze) && !Object(pe.a)(De), _t = (e => {
+					} = e, nt = Object(_.a)(), ot = Ze, rt = !!e.redditStyle || !!e["data-redditstyle"], at = rt ? void 0 : O, it = Object(l.a)(Te), ct = Le && it, dt = Object(c.a)(Te), lt = Object(d.a)(Te), mt = Object(G.c)(De), ut = Object(V.a)(De), pt = !!De.media && De.media.type === y.o.RTJSON, bt = Qe && pt, ht = s ? s - Y.a : void 0, ft = !!De.recommendationContext, xt = !(le && ge || ke) || ft && ge, gt = (e => e === je.kf.OnlyTitles)(ze) && !Object(pe.a)(De), vt = (e => e === je.kf.MediumHeight)(ze) && !Object(pe.a)(De), _t = (e => {
 						var t;
 						const {
 							post: s,
@@ -6729,18 +6729,15 @@
 			var n = s("./node_modules/@loadable/component/dist/loadable.esm.js"),
 				o = s("./node_modules/react/index.js"),
 				r = s.n(o),
-				a = s("./node_modules/react-redux/es/index.js"),
-				i = s("./src/reddit/components/SidebarContainer/index.tsx"),
-				c = s("./src/reddit/components/SidebarProfileModeratedSubreddits/index.tsx"),
-				d = s("./src/reddit/components/SidebarProfileMultireddits/index.tsx"),
-				l = s("./src/reddit/components/SidebarProfilePowerupContributions/index.tsx"),
-				m = s("./src/reddit/components/SidebarSpacer/index.tsx"),
-				u = s("./src/reddit/components/SidebarStickyBottom/index.tsx"),
-				p = s("./src/reddit/components/SidebarTrophyCase/index.tsx"),
-				b = s("./src/reddit/components/Widgets/ConnectedAccounts/index.tsx"),
-				h = s("./src/reddit/constants/posts.ts"),
-				f = s("./src/reddit/selectors/experiments/econ/index.ts");
-			const x = Object(n.a)({
+				a = s("./src/reddit/components/SidebarContainer/index.tsx"),
+				i = s("./src/reddit/components/SidebarProfileModeratedSubreddits/index.tsx"),
+				c = s("./src/reddit/components/SidebarProfileMultireddits/index.tsx"),
+				d = s("./src/reddit/components/SidebarSpacer/index.tsx"),
+				l = s("./src/reddit/components/SidebarStickyBottom/index.tsx"),
+				m = s("./src/reddit/components/SidebarTrophyCase/index.tsx"),
+				u = s("./src/reddit/components/Widgets/ConnectedAccounts/index.tsx"),
+				p = s("./src/reddit/constants/posts.ts");
+			const b = Object(n.a)({
 					resolved: {},
 					chunkName: () => "reddit-components-ProfileIdCard",
 					isReady(e) {
@@ -6760,33 +6757,28 @@
 						return "./src/reddit/components/ProfileIdCard/index.tsx"
 					}
 				}),
-				g = e => {
-					const t = Object(a.e)(e => Object(f.k)(e));
-					return r.a.createElement(i.a, {
-						className: e.className
-					}, r.a.createElement(x, {
-						profileName: e.profileName,
-						isOverlay: e.isOverlay
-					}), r.a.createElement(b.a, {
-						subredditOrProfile: {
-							name: e.profileName,
-							type: h.a.PROFILE
-						}
-					}), r.a.createElement(c.a, {
-						profileName: e.profileName
-					}), r.a.createElement(d.a, {
-						profileName: e.profileName
-					}), !t && r.a.createElement(m.a, null, r.a.createElement(l.a, {
-						profileName: e.profileName
-					})), r.a.createElement(m.a, null, r.a.createElement(p.a, {
-						profileName: e.profileName
-					})), r.a.createElement(u.a, {
-						hideBackToTop: e.hideBackToTop
-					}))
-				};
-			g.defaultProps = {
+				h = e => r.a.createElement(a.a, {
+					className: e.className
+				}, r.a.createElement(b, {
+					profileName: e.profileName,
+					isOverlay: e.isOverlay
+				}), r.a.createElement(u.a, {
+					subredditOrProfile: {
+						name: e.profileName,
+						type: p.a.PROFILE
+					}
+				}), r.a.createElement(i.a, {
+					profileName: e.profileName
+				}), r.a.createElement(c.a, {
+					profileName: e.profileName
+				}), r.a.createElement(d.a, null, r.a.createElement(m.a, {
+					profileName: e.profileName
+				})), r.a.createElement(l.a, {
+					hideBackToTop: e.hideBackToTop
+				}));
+			h.defaultProps = {
 				isOverlay: !1
-			}, t.a = g
+			}, t.a = h
 		},
 		"./src/reddit/components/Reports/SnoozableReport/index.m.less": function(e, t, s) {
 			e.exports = {
@@ -7119,80 +7111,6 @@
 						hk: "16Oicc"
 					})
 				})) : null
-			})
-		},
-		"./src/reddit/components/SidebarProfilePowerupContributions/index.tsx": function(e, t, s) {
-			"use strict";
-			var n = s("./node_modules/fbt/lib/FbtPublic.js"),
-				o = s("./node_modules/react/index.js"),
-				r = s.n(o),
-				a = s("./node_modules/react-redux/es/index.js"),
-				i = s("./node_modules/react-router-dom/esm/react-router-dom.js"),
-				c = s("./src/reddit/components/SidebarExpandableList/index.tsx"),
-				d = s("./src/reddit/components/SubredditIcon/index.tsx"),
-				l = s("./src/reddit/layout/twoCol/ExpandRight/index.tsx"),
-				m = s("./src/reddit/selectors/gold/powerups/index.ts"),
-				u = s("./src/reddit/selectors/user.ts"),
-				p = s("./node_modules/reselect/es/index.js"),
-				b = s("./src/reddit/components/Widgets/CommunityList/index.m.less"),
-				h = s.n(b);
-			const f = Object(p.c)({
-				subreddits: function(e, t) {
-					let {
-						profileName: s
-					} = t;
-					const n = Object(u.Bb)(e, {
-							userName: s
-						}),
-						o = Object(m.f)(e);
-					return (n && o ? o[n.id] : null) || []
-				}
-			});
-
-			function x(e) {
-				let {
-					item: t
-				} = e;
-				const s = t.subredditInfo,
-					o = r.a.createElement(d.b, {
-						iconUrl: s.styles.icon,
-						className: h.a.subredditIcon
-					});
-				return r.a.createElement(l.a, {
-					className: h.a.communityItemContainer,
-					key: s.id
-				}, r.a.createElement("div", {
-					className: h.a.iconContainer
-				}, r.a.createElement(i.a, {
-					to: s.path
-				}, o)), r.a.createElement("div", {
-					className: h.a.communityDescription
-				}, r.a.createElement("div", {
-					className: h.a.communityName
-				}, r.a.createElement(i.a, {
-					to: s.path
-				}, s.prefixedName)), r.a.createElement("div", {
-					className: h.a.subscriberCount
-				}, n.fbt._({
-					"*": "{number} Powerups",
-					_1: "1 Powerup"
-				}, [n.fbt._plural(t.powerups, "number")], {
-					hk: "3fbcDy"
-				}))))
-			}
-			t.a = Object(a.b)(f)(e => {
-				let {
-					subreddits: t
-				} = e;
-				return function(e) {
-					return e.length > 0 && e.every(e => e.subredditInfo)
-				}(t) ? r.a.createElement(c.a, {
-					title: n.fbt._("Supports Communities", null, {
-						hk: "1vCNdZ"
-					}),
-					items: t,
-					renderItem: x
-				}) : null
 			})
 		},
 		"./src/reddit/components/SidebarTrophyCase/index.m.less": function(e, t, s) {
@@ -10011,10 +9929,10 @@
 				o = s("./src/reddit/constants/experiments.ts"),
 				r = s("./src/reddit/helpers/chooseVariant/index.ts");
 			const a = Object(n.a)(e => Object(r.c)(e, {
-					experimentName: o.lg,
+					experimentName: o.ig,
 					experimentEligibilitySelector: r.a
 				}), e => e),
-				i = Object(n.a)(a, e => e === o.cg)
+				i = Object(n.a)(a, e => e === o.Zf)
 		},
 		"./src/reddit/selectors/focusedVerticalSuggestion.ts": function(e, t, s) {
 			"use strict";
@@ -10136,7 +10054,7 @@
 				a = s("./src/reddit/selectors/experiments/nsfwListingBelow.ts");
 			const i = e => {
 					const t = Object(a.a)(e);
-					return Boolean(t) && !Object(o.wg)(t)
+					return Boolean(t) && !Object(o.tg)(t)
 				},
 				c = Object(n.a)(i, r.d, (e, t) => e && !t)
 		},
@@ -10172,4 +10090,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileOverview.0a6d2bff095893893004.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileOverview.6ca03f520ec55b3536d7.js.map

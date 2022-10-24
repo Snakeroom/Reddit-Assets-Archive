@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CoinPurchaseModal.64848c75e3a0ea9878a5.js
-// Retrieved at 10/24/2022, 9:50:07 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CoinPurchaseModal.97500b2e41ca8c1b4cbf.js
+// Retrieved at 10/24/2022, 10:40:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CoinPurchaseModal", "gildActions"], {
 		"./src/reddit/actions/economics/powerups/helpers.ts": function(e, t, a) {
@@ -26,7 +26,7 @@
 					econPurchase: s.a
 				}
 			});
-			const l = Object(n.a)(i.qb),
+			const l = Object(n.a)(i.lb),
 				u = (e, t, a) => async (r, s, n) => {
 					let {
 						gqlContext: i
@@ -1614,7 +1614,7 @@
 					closeModal: () => {
 						e(Object(l.a)()), e(Object(d.a)())
 					},
-					loadSavedCards: () => e(Object(i.e)()),
+					loadSavedCards: () => e(Object(i.d)()),
 					onFailedToLoadCatalog: t => {
 						const a = {
 							kind: w.b.Error,
@@ -1889,7 +1889,7 @@
 				let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : n,
 					t = arguments.length > 1 ? arguments[1] : void 0;
 				switch (t.type) {
-					case s.qb: {
+					case s.lb: {
 						const a = t.payload;
 						return {
 							...e,
@@ -1949,4 +1949,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CoinPurchaseModal.64848c75e3a0ea9878a5.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CoinPurchaseModal.97500b2e41ca8c1b4cbf.js.map

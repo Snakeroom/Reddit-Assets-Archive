@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModQueuePages.3fc0205f0ab343df9937.js
-// Retrieved at 10/24/2022, 9:50:07 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModQueuePages.405b54f2ebef25e458de.js
+// Retrieved at 10/24/2022, 10:40:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModQueuePages"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -3123,7 +3123,7 @@
 					renderedInOverlay: R,
 					subredditDisplayText: N,
 					isAdmin: T
-				} = e, A = Object(E.a)(), P = a.subredditId, F = Object(i.e)(e => Object(y.n)(e, {
+				} = e, A = Object(E.a)(), P = a.subredditId, F = Object(i.e)(e => Object(y.f)(e, {
 					subredditId: P
 				}));
 				if (a.isDeleted && !T) return r.a.createElement("div", {
@@ -4879,7 +4879,7 @@
 					const d = Object(s.e)(a, {
 							commentId: e
 						}),
-						c = Object(r.g)(a, {
+						c = Object(r.f)(a, {
 							subredditId: t,
 							userId: n
 						});
@@ -5744,7 +5744,7 @@
 			const a = e => Object(i.a)(e) && Object(s.c)(e, {
 				experimentEligibilitySelector: r.R,
 				experimentName: o.Cc
-			}) === o.Qd
+			}) === o.Od
 		},
 		"./src/redditGQL/operations/DeleteSubredditMuteSettings.json": function(e) {
 			e.exports = JSON.parse('{"id":"c518a45f60a5"}')
@@ -5760,4 +5760,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModQueuePages.3fc0205f0ab343df9937.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModQueuePages.405b54f2ebef25e458de.js.map
