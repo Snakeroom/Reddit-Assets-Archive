@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CountryPage~Frontpage~ModListing~Multireddit~ProfileComments~ProfileOverview~ProfilePosts~Subreddit.3f73824d58fea23755c1.js
-// Retrieved at 10/25/2022, 10:20:07 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CountryPage~Frontpage~ModListing~Multireddit~ProfileComments~ProfileOverview~ProfilePosts~Subreddit.5269371955d3932cc8c2.js
+// Retrieved at 10/25/2022, 3:40:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CountryPage~Frontpage~ModListing~Multireddit~ProfileComments~ProfileOverview~ProfilePosts~Subreddit"], {
 		"./src/reddit/actions/subreddit/muting.ts": function(e, t, n) {
@@ -417,15 +417,16 @@
 			const S = e => {
 				return Object(f.c)(e, {
 					experimentEligibilitySelector: f.a,
-					experimentName: h.tf
+					experimentName: h.uf
 				}) === h.Pd
 			};
-			var w = n("./src/reddit/selectors/user.ts"),
-				k = n("./src/reddit/components/BackToTop/index.m.less"),
-				g = n.n(k);
+			var w = n("./src/reddit/selectors/recapGame.ts"),
+				k = n("./src/reddit/selectors/user.ts"),
+				g = n("./src/reddit/components/BackToTop/index.m.less"),
+				C = n.n(g);
 			const {
-				fbt: C
-			} = n("./node_modules/fbt/lib/FbtPublic.js"), O = e => {
+				fbt: O
+			} = n("./node_modules/fbt/lib/FbtPublic.js"), y = e => {
 				if (e) {
 					const e = document.getElementById(u.e);
 					e && e.scroll(0, 0)
@@ -439,49 +440,51 @@
 				} = e;
 				const h = Object(l.b)(),
 					f = Object(s.useRef)(null),
-					[k, y] = Object(s.useState)(!1),
-					[_, x] = Object(s.useState)(),
-					[E, N] = Object(s.useState)(),
-					[j, v] = Object(s.useState)(0),
-					T = Object(a.e)(w.l),
-					D = Object(a.e)(S),
-					I = Object(a.e)(w.R),
-					L = encodeURIComponent(i.a.redditUrl + "/r/recap"),
-					P = i.a.accountManagerOrigin,
-					R = I ? "/r/recap" : `${P}/login/?dest=${L}`,
-					B = T ? T.id : "anonymous",
-					A = () => {
-						k && N(setTimeout(() => {
-							f.current && (f.current.classList.add(g.a.transform), f.current.style.width = `${j}px`)
-						}, 4750)), k && x(setTimeout(() => {
-							y(!1), Object(m.Qb)(B, !1)
+					[g, _] = Object(s.useState)(!1),
+					[x, E] = Object(s.useState)(),
+					[N, j] = Object(s.useState)(),
+					[v, T] = Object(s.useState)(0),
+					D = Object(a.e)(k.l),
+					I = Object(a.e)(S),
+					L = Object(a.e)(k.R),
+					P = Object(a.e)(w.a),
+					R = encodeURIComponent(i.a.redditUrl + "/r/recap"),
+					B = i.a.accountManagerOrigin,
+					A = L ? "/r/recap" : `${B}/login/?dest=${R}`,
+					U = D ? D.id : "anonymous",
+					F = "on" === P.recapGameState,
+					M = () => {
+						g && j(setTimeout(() => {
+							f.current && (f.current.classList.add(C.a.transform), f.current.style.width = `${v}px`)
+						}, 4750)), g && E(setTimeout(() => {
+							_(!1), Object(m.Sb)(U, !1)
 						}, 5e3))
 					};
 				Object(s.useEffect)(() => {
-					setTimeout(() => {
-						const e = Object(m.N)(B);
-						e ? Object(c.e)(e.lastSeenTime) >= 24 && e.dropSkip === m.a.NONE ? y(!0) : Date.now() >= new Date(2022, 10, 2).getTime() && e.dropSkip !== m.a.SECOND && y(!0) : y(!0)
+					F || setTimeout(() => {
+						const e = Object(m.N)(U);
+						e ? Object(c.e)(e.lastSeenTime) >= 24 && e.dropSkip === m.a.NONE ? _(!0) : Date.now() >= new Date(2022, 10, 2).getTime() && e.dropSkip !== m.a.SECOND && _(!0) : _(!0)
 					})
-				}, [B]);
-				const U = Object(s.useCallback)(e => {
+				}, [U, F]);
+				const G = Object(s.useCallback)(e => {
 					if (e) {
 						const t = e.clientWidth;
-						v(t + 32)
+						T(t + 32)
 					}
 				}, []);
 				return o.a.createElement("div", {
-					className: Object(d.a)(t, g.a.container),
+					className: Object(d.a)(t, C.a.container),
 					style: u
-				}, k && D && !n ? o.a.createElement("a", {
+				}, g && I && !n && !F ? o.a.createElement("a", {
 					ref: f,
-					href: R,
-					className: g.a.bananaPill,
+					href: A,
+					className: C.a.bananaPill,
 					onMouseEnter: () => {
-						_ && clearTimeout(_), E && clearTimeout(E), f.current && (f.current.classList.remove(g.a.transform), f.current.style.width = "65px")
+						x && clearTimeout(x), N && clearTimeout(N), f.current && (f.current.classList.remove(C.a.transform), f.current.style.width = "65px")
 					},
-					onMouseLeave: A,
+					onMouseLeave: M,
 					onClick: () => {
-						_ && clearTimeout(_), E && clearTimeout(E), y(!1), Object(m.Qb)(B, !0), h((() => e => ({
+						x && clearTimeout(x), N && clearTimeout(N), _(!1), Object(m.Sb)(U, !0), h((() => e => ({
 							source: "recap",
 							action: "click",
 							noun: "feed_banana",
@@ -489,23 +492,23 @@
 						}))())
 					}
 				}, o.a.createElement("img", {
-					className: g.a.icon,
+					className: C.a.icon,
 					src: `${i.a.assetPath}/img/recap/banana_pill.png`,
-					alt: C._("banana", null, {
+					alt: O._("banana", null, {
 						hk: "1fs9mn"
 					})
 				}), o.a.createElement("span", {
-					className: g.a.text
-				}, "+1"), C._("{=Back to Top}", [C._param("=Back to Top", o.a.createElement("span", {
-					ref: U,
-					className: g.a.altText
-				}, C._("Back to Top", null, {
+					className: C.a.text
+				}, "+1"), O._("{=Back to Top}", [O._param("=Back to Top", o.a.createElement("span", {
+					ref: G,
+					className: C.a.altText
+				}, O._("Back to Top", null, {
 					hk: "4BTAZ0"
 				})))], {
 					hk: "4Foziy"
 				}), o.a.createElement(r.a, {
 					onChange: e => {
-						e.isIntersecting && (A(), h((() => e => ({
+						e.isIntersecting && (M(), h((() => e => ({
 							source: "recap",
 							action: "view",
 							noun: "feed_banana",
@@ -515,9 +518,9 @@
 					rootMargin: "0px 0px 0px 0px",
 					threshold: .5
 				}, o.a.createElement("div", null))) : o.a.createElement(b.a, {
-					className: g.a.button,
-					onClick: () => O(n)
-				}, C._("Back to Top", null, {
+					className: C.a.button,
+					onClick: () => y(n)
+				}, O._("Back to Top", null, {
 					hk: "YjBtV"
 				})))
 			}
@@ -796,11 +799,11 @@
 				U = Object(k.a)(R.a.wrapped(y.a, "Dropdown", P.a)),
 				F = R.a.wrapped(I.a, "ListingSortIcon", P.a),
 				M = (R.a.wrapped(N.b, "DropdownTriangle", P.a), R.a.div("Title", P.a)),
-				H = R.a.wrapped(e => s.a.createElement(_.b, B({}, e, {
+				G = R.a.wrapped(e => s.a.createElement(_.b, B({}, e, {
 					noHover: !0,
 					isSelected: !1
 				})), "Row", P.a),
-				G = e => {
+				H = e => {
 					let {
 						disabled: t,
 						...n
@@ -840,9 +843,9 @@
 					onClick: e.onOpenDropdown
 				}, !1 !== e.showTitle && s.a.createElement(M, null, w.fbt._("Sort", null, {
 					hk: "2BfINq"
-				})), s.a.createElement(G, {
+				})), s.a.createElement(H, {
 					disabled: e.disabled
-				}, e.children || s.a.createElement(H, {
+				}, e.children || s.a.createElement(G, {
 					className: e.buttonClassName,
 					displayText: Object(C.a)(e.sort),
 					id: e.dropdownId || A,
@@ -1100,10 +1103,10 @@
 				return s.a.createElement("div", {
 					className: e.className,
 					onClick: e.onOpenDropdown
-				}, s.a.createElement(G, {
+				}, s.a.createElement(H, {
 					className: e.wrapperClassName,
 					disabled: e.disabled
-				}, s.a.createElement(H, {
+				}, s.a.createElement(G, {
 					className: e.buttonClassName,
 					displayText: e.showStateAbbreviations && e.sort ? e.sort : J(e.sort),
 					id: "StateSort--StateSortPicker",
@@ -1271,10 +1274,10 @@
 					return s.a.createElement(s.a.Fragment, null, s.a.createElement("div", {
 						className: Object(a.a)(be.a.countrySort, e.className),
 						onClick: () => e.dropdownIsOpen ? e.onCloseDropdown(pe) : e.onOpenDropdown(pe)
-					}, s.a.createElement(G, {
+					}, s.a.createElement(H, {
 						className: e.wrapperClassName,
 						disabled: e.disabled
-					}, s.a.createElement(H, {
+					}, s.a.createElement(G, {
 						className: e.buttonClassName,
 						displayText: (() => t in le ? le[t]() : le[p.C.Everywhere]())(),
 						id: pe,
@@ -1335,10 +1338,10 @@
 				}))(Object(c.c)(e => s.a.createElement(_e, {
 					className: e.className,
 					onClick: e.onOpenDropdown
-				}, s.a.createElement(G, {
+				}, s.a.createElement(H, {
 					className: e.wrapperClassName,
 					disabled: !1
-				}, s.a.createElement(H, {
+				}, s.a.createElement(G, {
 					className: e.buttonClassName,
 					displayText: Object(C.b)(e.timeSort),
 					id: "TimeSort--SortPicker",
@@ -1412,7 +1415,7 @@
 						locale: a
 					}
 				});
-			class He extends s.a.Component {
+			class Ge extends s.a.Component {
 				constructor() {
 					super(...arguments), this.changeSort = e => {
 						this.props.onChange(e), this.props.sendEvent(Object(E.b)(e))
@@ -1530,7 +1533,7 @@
 					}))))
 				}
 			}
-			var Ge = Fe(Object(o.b)(Me)(Object(c.c)(He))),
+			var He = Fe(Object(o.b)(Me)(Object(c.c)(Ge))),
 				We = n("./src/reddit/components/GeneralCleanup/SortViewBar/index.m.less"),
 				ze = n.n(We);
 			const Ke = Object(l.u)({
@@ -1548,7 +1551,7 @@
 									sort: t,
 									timeSort: r
 								});
-								e(Object(d.J)(n, s))
+								e(Object(d.K)(n, s))
 							}
 						}
 					}
@@ -1584,7 +1587,7 @@
 						className: Object(a.a)(ze.a.Container, t),
 						onBlur: this.blurListingBroadcast,
 						onFocus: this.focusListingBroadcast
-					}, s.a.createElement(Ge, {
+					}, s.a.createElement(He, {
 						baseUrl: e,
 						disabled: r,
 						geopopularSort: n,
@@ -2472,4 +2475,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CountryPage~Frontpage~ModListing~Multireddit~ProfileComments~ProfileOverview~ProfilePosts~Subreddit.3f73824d58fea23755c1.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CountryPage~Frontpage~ModListing~Multireddit~ProfileComments~ProfileOverview~ProfilePosts~Subreddit.5269371955d3932cc8c2.js.map

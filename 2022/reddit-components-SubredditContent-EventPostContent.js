@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-SubredditContent-EventPostContent.65a4dfcdd94025a1b357.js
-// Retrieved at 10/25/2022, 11:00:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-SubredditContent-EventPostContent.2336a0df6cd232bd7a50.js
+// Retrieved at 10/25/2022, 3:40:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-SubredditContent-EventPostContent"], {
 		"./src/reddit/components/ClassicPost/index.tsx": function(e, t, s) {
@@ -216,7 +216,7 @@
 					} = Xe,
 					[$e, qe] = Object(o.useState)(!1),
 					ze = Object(o.useCallback)(() => {
-						qe(!$e), Object(te.Ob)(), Ae(Object(re.d)(ge))
+						qe(!$e), Object(te.Qb)(), Ae(Object(re.d)(ge))
 					}, [$e, ge, Ae]);
 				let Ze = r.a.createElement(Y.a, {
 					className: le.a.classicThumbnail,
@@ -1274,4 +1274,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-SubredditContent-EventPostContent.65a4dfcdd94025a1b357.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-SubredditContent-EventPostContent.2336a0df6cd232bd7a50.js.map

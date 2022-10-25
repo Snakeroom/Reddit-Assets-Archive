@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostDraft.b6861ee44028a06d763c.js
-// Retrieved at 10/25/2022, 10:20:07 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostDraft.7f03c2e41494b2254baa.js
+// Retrieved at 10/25/2022, 3:40:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostDraft"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -324,7 +324,7 @@
 			})), n.d(t, "a", (function() {
 				return U
 			})), n.d(t, "c", (function() {
-				return G
+				return V
 			})), n.d(t, "h", (function() {
 				return X
 			})), n.d(t, "f", (function() {
@@ -511,16 +511,16 @@
 							hk: "4Ck6Cm"
 						})
 					}))
-				}, H = Object(i.a)(c.a), W = Object(i.a)(c.t), U = (e, t) => async (n, r, o) => {
+				}, W = Object(i.a)(c.a), H = Object(i.a)(c.t), U = (e, t) => async (n, r, o) => {
 					let {
 						apiContext: i
 					} = o;
 					const a = r();
 					if ((await h(i(), e, t)).ok) {
-						n(H({
+						n(W({
 							collectionId: e,
 							postId: t
-						})), n(W({
+						})), n(H({
 							collectionId: e,
 							postId: t
 						}));
@@ -547,7 +547,7 @@
 							hk: "4Ck6Cm"
 						})
 					}))
-				}, V = Object(i.a)(c.e), G = (e, t) => async (n, i, a) => {
+				}, G = Object(i.a)(c.e), V = (e, t) => async (n, i, a) => {
 					let {
 						apiContext: c
 					} = a;
@@ -558,7 +558,7 @@
 						} = l.platform.currentPage, a = Object(P.q)(l, {
 							collectionId: e
 						}), c = a && a.title || "", u = a && a.subredditId, m = u ? Object(T.c)(l, u) : "/";
-						n(V({
+						n(G({
 							collectionId: e,
 							collection: a
 						})), n(t ? Object(r.c)(Object(o.a)(i, ["collection"])) : Object(r.b)(m)), n(Object(d.f)({
@@ -1286,14 +1286,14 @@
 
 				function F(e) {
 					var t;
-					(o || H(e), c) || (t = e.timeStamp, M(Object(u.A)(b, t)))
+					(o || W(e), c) || (t = e.timeStamp, M(Object(u.A)(b, t)))
 				}
 
 				function A(e) {
 					M(Object(u.q)(b, e.timeStamp))
 				}
 
-				function H(e) {
+				function W(e) {
 					! function(e) {
 						M(Object(u.D)({
 							metadata: e,
@@ -1307,8 +1307,8 @@
 					})
 				}
 
-				function W(e) {
-					s || F(e), o || H(e), M(Object(u.C)(b))
+				function H(e) {
+					s || F(e), o || W(e), M(Object(u.C)(b))
 				}
 
 				function U() {
@@ -1327,9 +1327,9 @@
 						onClick: T,
 						onLoadStart: A,
 						onLoadedData: F,
-						onLoadedMetadata: H,
+						onLoadedMetadata: W,
 						onPause: R,
-						onPlaying: W,
+						onPlaying: H,
 						onTimeUpdate: B,
 						shouldLoad: h,
 						shouldPause: _,
@@ -2566,7 +2566,7 @@
 			})), n.d(t, "i", (function() {
 				return A
 			})), n.d(t, "e", (function() {
-				return H
+				return W
 			}));
 			var s = n("./src/lib/unicodeUtils/index.ts"),
 				r = n("./node_modules/lodash/reduce.js"),
@@ -2670,7 +2670,7 @@
 						i = s.length;
 					for (let a = 0; a < i; a++) {
 						const e = s[a];
-						o.push(e.e === m.x ? e.t : H(e, t, a))
+						o.push(e.e === m.x ? e.t : W(e, t, a))
 					}
 					const d = c.x[r - 1];
 					return a.a.createElement(d, {
@@ -2742,7 +2742,7 @@
 							{
 								H: s,
 								D: o
-							} = G(e.a),
+							} = V(e.a),
 							{
 								c: d = []
 							} = e;
@@ -2791,7 +2791,7 @@
 						o = e.length;
 					for (let i = 0; i < o; i++) {
 						const o = e[i];
-						if (o.e === m.B) r.push(W(o, i));
+						if (o.e === m.B) r.push(H(o, i));
 						else if (o.e === m.y) r.push(a.a.createElement(j.a, {
 							key: i,
 							onClickReveal: s
@@ -2808,14 +2808,14 @@
 									media: e
 								}))
 							}
-						} else r.push(H(o, n, i))
+						} else r.push(W(o, n, i))
 					}
 					return r
 				},
-				H = (e, t, n) => {
+				W = (e, t, n) => {
 					switch (e.e) {
 						case m.o:
-							const s = W({
+							const s = H({
 								t: e.t,
 								f: e.f
 							}, 0);
@@ -2855,21 +2855,21 @@
 							}, e.t)
 					}
 				},
-				W = (e, t) => {
+				H = (e, t) => {
 					const {
 						f: n,
 						t: r
 					} = e, o = [];
-					if (!n) return V(0, r, t);
+					if (!n) return G(0, r, t);
 					const i = Object(s.a)(r);
 					let a = 0,
 						c = 0;
 					const d = n.length;
 					for (; a < d; a++) {
 						const [e, t, s] = n[a], d = t + s, l = i[t], u = i[d] - l;
-						l > c && o.push(V(0, r.substr(c, l - c), `between${a}`)), o.push(V(e, r.substr(l, u), a)), c = l + u
+						l > c && o.push(G(0, r.substr(c, l - c), `between${a}`)), o.push(G(e, r.substr(l, u), a)), c = l + u
 					}
-					return c < r.length && o.push(V(0, r.substr(c), `remaining${a}`)), o
+					return c < r.length && o.push(G(0, r.substr(c), `remaining${a}`)), o
 				},
 				U = {
 					[m.j.monospace]: c.h,
@@ -2880,13 +2880,13 @@
 					[m.j.subscript]: c.l,
 					[m.j.superscript]: c.m
 				},
-				V = (e, t, n) => {
+				G = (e, t, n) => {
 					let s = t;
 					return s = o()(U, (t, s, r) => e & parseInt(r, 10) ? a.a.createElement(s, {
 						key: n
 					}, t) : t, s)
 				},
-				G = e => {
+				V = e => {
 					switch (e) {
 						case m.f:
 							return {
@@ -3224,12 +3224,12 @@
 						rtJsonElementProps: i
 					});
 					switch (o) {
-						case h.Vf.SmIcon:
+						case h.Wf.SmIcon:
 							return r.a.createElement(p, {
 								subredditName: s,
 								rtJsonElementProps: i
 							});
-						case h.Vf.SmIconHc:
+						case h.Wf.SmIconHc:
 							return r.a.createElement(p, {
 								subredditName: s,
 								isHoverable: !0,
@@ -4813,11 +4813,11 @@
 					}), r.a.createElement(O, null))) : null
 				})),
 				A = n("./src/reddit/components/PostingSidebar/index.tsx"),
-				H = n("./src/reddit/layout/page/Listing/index.tsx"),
-				W = n("./src/reddit/pages/ErrorPages/index.tsx"),
+				W = n("./src/reddit/layout/page/Listing/index.tsx"),
+				H = n("./src/reddit/pages/ErrorPages/index.tsx"),
 				U = n("./src/reddit/selectors/postDraft.ts");
-			const V = Object(d.u)(),
-				G = Object(i.c)({
+			const G = Object(d.u)(),
+				V = Object(i.c)({
 					draft: (e, t) => {
 						let {
 							match: n
@@ -4827,16 +4827,16 @@
 						})
 					}
 				}),
-				J = Object(o.b)(G);
+				J = Object(o.b)(V);
 			class z extends s.Component {
 				render() {
 					const {
 						draft: e,
 						pageLayer: t
 					} = this.props;
-					if (!t || !e) return r.a.createElement(W.b, null);
+					if (!t || !e) return r.a.createElement(H.b, null);
 					const n = e.subredditId;
-					return r.a.createElement(H.a, {
+					return r.a.createElement(W.a, {
 						redditStyle: !0,
 						disableFullscreen: !0,
 						navBar: r.a.createElement("div", null),
@@ -4849,7 +4849,7 @@
 					})
 				}
 			}
-			t.default = V(J(z))
+			t.default = G(J(z))
 		},
 		"./src/reddit/selectors/experiments/d2xPdpSideRailRecs.ts": function(e, t, n) {
 			"use strict";
@@ -4898,12 +4898,12 @@
 				c = e => {
 					return Object(o.c)(e, {
 						experimentEligibilitySelector: a,
-						experimentName: s.Pf
+						experimentName: s.Qf
 					}) || ""
 				},
 				d = e => {
 					const t = c(e);
-					return t === s.Vf.SmIcon || t === s.Vf.SmIconHc
+					return t === s.Wf.SmIcon || t === s.Wf.SmIconHc
 				},
 				l = (e, t) => {
 					let {
@@ -4929,4 +4929,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostDraft.b6861ee44028a06d763c.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostDraft.7f03c2e41494b2254baa.js.map

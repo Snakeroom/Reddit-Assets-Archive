@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~Reddit.489b8bb9a045302916c1.js
-// Retrieved at 10/25/2022, 11:40:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~Reddit.7941dd55687a4eb2623b.js
+// Retrieved at 10/25/2022, 3:40:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~Reddit"], {
 		"./assets/fonts/NotoMono/font.less": function(e, t, n) {},
@@ -1816,7 +1816,7 @@
 			const l = "PAGE__PROFILE_MOD_SETTINGS_LOADED",
 				u = Object(r.a)(l),
 				p = e => async (t, n) => {
-					const r = [t(s.A()), t(Object(a.d)(e.params.profileName))];
+					const r = [t(s.B()), t(Object(a.d)(e.params.profileName))];
 					await Promise.all(r);
 					const l = Object(d.l)(n());
 					l ? (await t(Object(a.b)(Object(i.e)(l))), t(u()), Object(c.p)(n(), !0)) : Object(o.a)(t, n())
@@ -2788,7 +2788,7 @@
 					if (l.topContent.pending[i] || b[i]) return;
 					t(u({
 						subredditName: i
-					})), t(Object(s.A)());
+					})), t(Object(s.B)());
 					const h = await ((e, t) => Object(a.a)(e, {
 						...o,
 						variables: t
@@ -2909,7 +2909,7 @@
 						action: "view",
 						noun: l,
 						...Object(d.o)(e)
-					}))(f)), Object(i.Fb)(), Object(i.Eb)(S), a(m()), n && n()
+					}))(f)), Object(i.Hb)(), Object(i.Gb)(S), a(m()), n && n()
 				}, h = e => async (t, n) => {
 					Object(p.a)((e => ({
 						source: l,
@@ -25712,4 +25712,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit.489b8bb9a045302916c1.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit.7941dd55687a4eb2623b.js.map

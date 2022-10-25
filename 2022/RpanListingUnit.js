@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/RpanListingUnit.9ae965f49ab971165488.js
-// Retrieved at 10/25/2022, 10:20:07 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/RpanListingUnit.47f1657ee156592b7e08.js
+// Retrieved at 10/25/2022, 3:40:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["RpanListingUnit"], {
 		"./node_modules/lodash/_arrayEvery.js": function(e, t) {
@@ -54,13 +54,13 @@
 					experimentEligibilitySelector: m.a,
 					experimentName: u.He
 				});
-				return Object(u.vg)(t) ? void 0 : t
+				return Object(u.wg)(t) ? void 0 : t
 			}, e => {
 				const t = Object(m.c)(e, {
 					experimentEligibilitySelector: m.a,
 					experimentName: u.Ie
 				});
-				return Object(u.vg)(t) ? void 0 : t
+				return Object(u.wg)(t) ? void 0 : t
 			}, (e, t) => e === u.Je.Enabled && t === u.Je.Enabled);
 			var h = s("./src/config.ts");
 			var b = s("./src/reddit/selectors/user.ts");
@@ -700,9 +700,9 @@
 				j = s("./src/reddit/components/Flatlist/constants.ts"),
 				P = s("./src/reddit/components/Flatlist/ResponsiveRow.tsx"),
 				M = s("./src/reddit/components/HlsVideo/index.tsx"),
-				U = s("./src/reddit/components/OverflowMenu/index.tsx"),
-				k = s("./src/reddit/components/PostBackgroundWrapper/index.tsx"),
-				w = s("./src/reddit/components/PostLeftRail/index.tsx"),
+				w = s("./src/reddit/components/OverflowMenu/index.tsx"),
+				U = s("./src/reddit/components/PostBackgroundWrapper/index.tsx"),
+				k = s("./src/reddit/components/PostLeftRail/index.tsx"),
 				V = s("./src/reddit/components/TrackingHelper/index.tsx"),
 				F = s("./src/reddit/controls/Dropdown/Row.tsx"),
 				H = s("./src/reddit/controls/InternalLink/index.tsx"),
@@ -749,7 +749,7 @@
 				inRpanDUPreloadExperiment: y.b,
 				inRpanDuTargetingExperiment: y.c
 			}), (e, t) => ({
-				onHideRpanUnit: (s, n) => e(Object(h.E)(t.listingName, s, {
+				onHideRpanUnit: (s, n) => e(Object(h.F)(t.listingName, s, {
 					showToast: n.showToast
 				})),
 				openOverlay: t => e(Object(C.a)(t)),
@@ -770,19 +770,19 @@
 			class se extends n.Component {
 				constructor(e) {
 					super(e), this.observableElement = r.a.createRef(), this.videoRef = r.a.createRef(), this.videoSessionManager = null, this.timerId = "rpan-du-active-watch-timer-id", this.handleSuccessfulPlayback = () => {
-						Object(S.ab)()
+						Object(S.bb)()
 					}, this.handleUnsuccessfulPlayback = () => {
-						const e = Number(Object(S.Q)());
+						const e = Number(Object(S.R)());
 						if (e) {
 							if (Date.now() - e >= J) {
-								Object(S.ab)();
+								Object(S.bb)();
 								const e = 30 * l.E,
 									t = Date.now() - e + $;
 								this.props.onHideRpanUnit(t, {
 									showToast: !1
 								})
 							}
-						} else Object(S.Ub)(Date.now())
+						} else Object(S.Xb)(Date.now())
 					}, this.onResourceRemoved = () => {
 						this.subscribeStats()
 					}, this.onError = () => {
@@ -941,14 +941,14 @@
 							[q.a.classic]: e === O.g.Classic,
 							[q.a.compact]: e === O.g.Compact
 						}, this.props.className)
-					}, e !== O.g.Large && r.a.createElement(w.b, {
+					}, e !== O.g.Large && r.a.createElement(k.b, {
 						className: q.a.leftRail,
 						withoutComputedStyles: e === O.g.Compact
 					}, r.a.createElement(ne, {
 						isVertical: !0
 					}), e === O.g.Compact && r.a.createElement(ne, {
 						isVertical: !1
-					})), r.a.createElement(k.a, {
+					})), r.a.createElement(U.a, {
 						className: q.a.backgroundWrapper,
 						onClick: this.onHeaderClicked
 					}, t))
@@ -1208,7 +1208,7 @@
 					let {
 						onClick: t
 					} = e;
-					return r.a.createElement(U.b, {
+					return r.a.createElement(w.b, {
 						className: q.a.overflowMenu,
 						dropdownClassName: q.a.overflowDropdown,
 						dropdownId: "rpan-du-overflow"
@@ -1992,4 +1992,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RpanListingUnit.9ae965f49ab971165488.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RpanListingUnit.47f1657ee156592b7e08.js.map

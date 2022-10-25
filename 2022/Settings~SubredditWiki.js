@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Settings~SubredditWiki.13e2f0d4f71bb9e6c534.js
-// Retrieved at 10/25/2022, 10:20:07 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Settings~SubredditWiki.24121132af964a0d54c5.js
+// Retrieved at 10/25/2022, 3:40:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Settings~SubredditWiki"], {
 		"./src/lib/linkMatchers/index.ts": function(e, t, r) {
@@ -632,9 +632,9 @@
 					}
 				},
 				H = r("./node_modules/icepick/icepick.js");
-			const R = {};
-			var D = function() {
-				let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : R,
+			const D = {};
+			var R = function() {
+				let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : D,
 					t = arguments.length > 1 ? arguments[1] : void 0;
 				switch (t.type) {
 					case C.p:
@@ -752,7 +752,7 @@
 					fetchedTokens: F,
 					inContext: B,
 					loadMore: T,
-					models: D,
+					models: R,
 					search: K,
 					userOrder: J
 				});
@@ -1151,8 +1151,8 @@
 				L = r("./src/reddit/endpoints/profile/info.ts"),
 				T = r("./src/reddit/helpers/trackers/authorHovercard.ts"),
 				H = r("./src/reddit/icons/fonts/Info/index.tsx"),
-				R = r("./src/reddit/icons/svgs/Premium/index.tsx"),
-				D = r("./src/reddit/models/Gold/Award.ts"),
+				D = r("./src/reddit/icons/svgs/Premium/index.tsx"),
+				R = r("./src/reddit/models/Gold/Award.ts"),
 				W = r("./src/reddit/models/User/index.ts"),
 				z = r("./src/reddit/components/HumanDate/index.tsx"),
 				G = r("./src/reddit/components/ProfileIdCard/AwardedLastMonth.tsx"),
@@ -1289,7 +1289,7 @@
 			const me = U.a.wrapped(M.a, "UserIcon", le.a),
 				be = U.a.wrapped(F.a, "SubscribeButton", le.a),
 				fe = U.a.wrapped(S.b, "ChatButton", le.a),
-				pe = U.a.wrapped(R.a, "PremiumIcon", le.a),
+				pe = U.a.wrapped(D.a, "PremiumIcon", le.a),
 				ve = U.a.wrapped(k.a, "UserNameLink", le.a),
 				xe = U.a.div("UserNameMetaData", le.a),
 				ge = U.a.div("MetaDataItem", le.a),
@@ -1336,7 +1336,7 @@
 					}, [y.fbt._plural(r.fromAwardsReceived)], {
 						hk: "3nzm9q"
 					}), s.a.createElement(je, {
-						href: D.a,
+						href: R.a,
 						target: "_blank",
 						rel: "noopener noreferrer"
 					}, s.a.createElement(H.a, {
@@ -1347,7 +1347,7 @@
 					}, [y.fbt._plural(r.fromAwardsGiven)], {
 						hk: "4zXN3B"
 					}), s.a.createElement(je, {
-						href: D.a,
+						href: R.a,
 						target: "_blank",
 						rel: "noopener noreferrer"
 					}, s.a.createElement(H.a, {
@@ -1394,18 +1394,18 @@
 						} = h,
 						L = !!h.snoovatarFullBodyAsset,
 						H = h.isNSFW && i;
-					let R;
-					return R = L ? !H && O && O.bannerBackgroundImage || void 0 : H ? `${C.a.assetPath}/img/user-info-banner.png` : e.user.bannerImage, s.a.createElement(Ee, {
+					let D;
+					return D = L ? !H && O && O.bannerBackgroundImage || void 0 : H ? `${C.a.assetPath}/img/user-info-banner.png` : e.user.bannerImage, s.a.createElement(Ee, {
 						className: n,
 						id: d,
 						style: p
-					}, !L && R && s.a.createElement(Ce, {
+					}, !L && D && s.a.createElement(Ce, {
 						style: {
-							backgroundImage: `url('${R}')`
+							backgroundImage: `url('${D}')`
 						}
 					}), s.a.createElement(ke, null, L ? s.a.createElement(q.a, {
 						isHovercard: !0,
-						bannerBackgroundImage: R,
+						bannerBackgroundImage: D,
 						compact: !0,
 						currentUserHasSnoovatar: U,
 						isEmployee: h.isEmployee,
@@ -1802,7 +1802,7 @@
 					hideNSFWPref: o.G
 				}),
 				d = Object(n.b)(i, e => ({
-					imageUpdateRequested: (t, r) => e(Object(a.C)(t, r))
+					imageUpdateRequested: (t, r) => e(Object(a.D)(t, r))
 				}));
 			t.a = d
 		},
@@ -2658,4 +2658,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Settings~SubredditWiki.13e2f0d4f71bb9e6c534.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Settings~SubredditWiki.24121132af964a0d54c5.js.map

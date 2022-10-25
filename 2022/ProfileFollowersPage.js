@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfileFollowersPage.0081c9d8831b24220068.js
-// Retrieved at 10/25/2022, 10:20:07 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfileFollowersPage.6ae5eec0a3f16cdb1a14.js
+// Retrieved at 10/25/2022, 3:40:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfileFollowersPage", "ProfileFollowersAction"], {
 		"./node_modules/lodash/take.js": function(e, t, r) {
@@ -1306,15 +1306,16 @@
 			const v = e => {
 				return Object(f.c)(e, {
 					experimentEligibilitySelector: f.a,
-					experimentName: b.tf
+					experimentName: b.uf
 				}) === b.Pd
 			};
-			var x = r("./src/reddit/selectors/user.ts"),
-				g = r("./src/reddit/components/BackToTop/index.m.less"),
-				y = r.n(g);
+			var x = r("./src/reddit/selectors/recapGame.ts"),
+				g = r("./src/reddit/selectors/user.ts"),
+				y = r("./src/reddit/components/BackToTop/index.m.less"),
+				C = r.n(y);
 			const {
-				fbt: C
-			} = r("./node_modules/fbt/lib/FbtPublic.js"), I = e => {
+				fbt: I
+			} = r("./node_modules/fbt/lib/FbtPublic.js"), O = e => {
 				if (e) {
 					const e = document.getElementById(u.e);
 					e && e.scroll(0, 0)
@@ -1328,49 +1329,51 @@
 				} = e;
 				const b = Object(c.b)(),
 					f = Object(n.useRef)(null),
-					[g, O] = Object(n.useState)(!1),
-					[w, E] = Object(n.useState)(),
-					[_, S] = Object(n.useState)(),
-					[j, N] = Object(n.useState)(0),
-					k = Object(o.e)(x.l),
-					P = Object(o.e)(v),
-					T = Object(o.e)(x.R),
-					R = encodeURIComponent(a.a.redditUrl + "/r/recap"),
-					F = a.a.accountManagerOrigin,
-					M = T ? "/r/recap" : `${F}/login/?dest=${R}`,
-					U = k ? k.id : "anonymous",
-					A = () => {
-						g && S(setTimeout(() => {
-							f.current && (f.current.classList.add(y.a.transform), f.current.style.width = `${j}px`)
-						}, 4750)), g && E(setTimeout(() => {
-							O(!1), Object(p.Qb)(U, !1)
+					[y, w] = Object(n.useState)(!1),
+					[E, _] = Object(n.useState)(),
+					[S, j] = Object(n.useState)(),
+					[N, k] = Object(n.useState)(0),
+					P = Object(o.e)(g.l),
+					T = Object(o.e)(v),
+					R = Object(o.e)(g.R),
+					F = Object(o.e)(x.a),
+					M = encodeURIComponent(a.a.redditUrl + "/r/recap"),
+					U = a.a.accountManagerOrigin,
+					A = R ? "/r/recap" : `${U}/login/?dest=${M}`,
+					L = P ? P.id : "anonymous",
+					H = "on" === F.recapGameState,
+					B = () => {
+						y && j(setTimeout(() => {
+							f.current && (f.current.classList.add(C.a.transform), f.current.style.width = `${N}px`)
+						}, 4750)), y && _(setTimeout(() => {
+							w(!1), Object(p.Sb)(L, !1)
 						}, 5e3))
 					};
 				Object(n.useEffect)(() => {
-					setTimeout(() => {
-						const e = Object(p.N)(U);
-						e ? Object(l.e)(e.lastSeenTime) >= 24 && e.dropSkip === p.a.NONE ? O(!0) : Date.now() >= new Date(2022, 10, 2).getTime() && e.dropSkip !== p.a.SECOND && O(!0) : O(!0)
+					H || setTimeout(() => {
+						const e = Object(p.N)(L);
+						e ? Object(l.e)(e.lastSeenTime) >= 24 && e.dropSkip === p.a.NONE ? w(!0) : Date.now() >= new Date(2022, 10, 2).getTime() && e.dropSkip !== p.a.SECOND && w(!0) : w(!0)
 					})
-				}, [U]);
-				const L = Object(n.useCallback)(e => {
+				}, [L, H]);
+				const W = Object(n.useCallback)(e => {
 					if (e) {
 						const t = e.clientWidth;
-						N(t + 32)
+						k(t + 32)
 					}
 				}, []);
 				return i.a.createElement("div", {
-					className: Object(d.a)(t, y.a.container),
+					className: Object(d.a)(t, C.a.container),
 					style: u
-				}, g && P && !r ? i.a.createElement("a", {
+				}, y && T && !r && !H ? i.a.createElement("a", {
 					ref: f,
-					href: M,
-					className: y.a.bananaPill,
+					href: A,
+					className: C.a.bananaPill,
 					onMouseEnter: () => {
-						w && clearTimeout(w), _ && clearTimeout(_), f.current && (f.current.classList.remove(y.a.transform), f.current.style.width = "65px")
+						E && clearTimeout(E), S && clearTimeout(S), f.current && (f.current.classList.remove(C.a.transform), f.current.style.width = "65px")
 					},
-					onMouseLeave: A,
+					onMouseLeave: B,
 					onClick: () => {
-						w && clearTimeout(w), _ && clearTimeout(_), O(!1), Object(p.Qb)(U, !0), b((() => e => ({
+						E && clearTimeout(E), S && clearTimeout(S), w(!1), Object(p.Sb)(L, !0), b((() => e => ({
 							source: "recap",
 							action: "click",
 							noun: "feed_banana",
@@ -1378,23 +1381,23 @@
 						}))())
 					}
 				}, i.a.createElement("img", {
-					className: y.a.icon,
+					className: C.a.icon,
 					src: `${a.a.assetPath}/img/recap/banana_pill.png`,
-					alt: C._("banana", null, {
+					alt: I._("banana", null, {
 						hk: "1fs9mn"
 					})
 				}), i.a.createElement("span", {
-					className: y.a.text
-				}, "+1"), C._("{=Back to Top}", [C._param("=Back to Top", i.a.createElement("span", {
-					ref: L,
-					className: y.a.altText
-				}, C._("Back to Top", null, {
+					className: C.a.text
+				}, "+1"), I._("{=Back to Top}", [I._param("=Back to Top", i.a.createElement("span", {
+					ref: W,
+					className: C.a.altText
+				}, I._("Back to Top", null, {
 					hk: "4BTAZ0"
 				})))], {
 					hk: "4Foziy"
 				}), i.a.createElement(s.a, {
 					onChange: e => {
-						e.isIntersecting && (A(), b((() => e => ({
+						e.isIntersecting && (B(), b((() => e => ({
 							source: "recap",
 							action: "view",
 							noun: "feed_banana",
@@ -1404,9 +1407,9 @@
 					rootMargin: "0px 0px 0px 0px",
 					threshold: .5
 				}, i.a.createElement("div", null))) : i.a.createElement(m.a, {
-					className: y.a.button,
-					onClick: () => I(r)
-				}, C._("Back to Top", null, {
+					className: C.a.button,
+					onClick: () => O(r)
+				}, I._("Back to Top", null, {
 					hk: "YjBtV"
 				})))
 			}
@@ -2776,7 +2779,7 @@
 					hideNSFWPref: o.G
 				}),
 				d = Object(s.b)(a, e => ({
-					imageUpdateRequested: (t, r) => e(Object(i.C)(t, r))
+					imageUpdateRequested: (t, r) => e(Object(i.D)(t, r))
 				}));
 			t.a = d
 		},
@@ -6260,4 +6263,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileFollowersPage.0081c9d8831b24220068.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileFollowersPage.6ae5eec0a3f16cdb1a14.js.map

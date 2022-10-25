@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfileComments.d2a5a8ba331ba91dc90b.js
-// Retrieved at 10/25/2022, 11:00:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfileComments.542017423637eed77e7f.js
+// Retrieved at 10/25/2022, 3:40:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfileComments"], {
 		"./node_modules/linkify-it/index.js": function(e, t, s) {
@@ -725,7 +725,7 @@
 					} = Ke,
 					[Je, $e] = Object(n.useState)(!1),
 					Ye = Object(n.useCallback)(() => {
-						$e(!Je), Object(te.Ob)(), Ne(Object(re.d)(xe))
+						$e(!Je), Object(te.Qb)(), Ne(Object(re.d)(xe))
 					}, [Je, xe, Ne]);
 				let Xe = r.a.createElement(Q.a, {
 					className: le.a.classicThumbnail,
@@ -1615,7 +1615,7 @@
 				} = t;
 				return {
 					continueToQuarantinedSubreddit: async () => {
-						await e(p.D(s)), window.location.reload()
+						await e(p.E(s)), window.location.reload()
 					},
 					continueToGatedSubreddit: async () => {
 						await e(p.v(s)), window.location.reload()
@@ -5917,10 +5917,10 @@
 				r = s("./src/reddit/constants/experiments.ts"),
 				o = s("./src/reddit/helpers/chooseVariant/index.ts");
 			const i = Object(n.a)(e => Object(o.c)(e, {
-					experimentName: r.kg,
+					experimentName: r.lg,
 					experimentEligibilitySelector: o.a
 				}), e => e),
-				a = Object(n.a)(i, e => e === r.bg)
+				a = Object(n.a)(i, e => e === r.cg)
 		},
 		"./src/redditGQL/operations/CreateLiveAudioRoomOnProfile.json": function(e) {
 			e.exports = JSON.parse('{"id":"e35a47c6aa21"}')
@@ -5951,4 +5951,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileComments.d2a5a8ba331ba91dc90b.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileComments.542017423637eed77e7f.js.map

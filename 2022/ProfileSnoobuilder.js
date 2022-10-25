@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfileSnoobuilder.89a01c2cddf27a55cb54.js
-// Retrieved at 10/25/2022, 10:20:07 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfileSnoobuilder.dabc7fa1a7d72c5cff72.js
+// Retrieved at 10/25/2022, 3:40:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfileSnoobuilder"], {
 		"./assets/snoobuilder/Snoobuilder.json": function(e, t, n) {
@@ -690,15 +690,16 @@
 			const _ = e => {
 				return Object(f.c)(e, {
 					experimentEligibilitySelector: f.a,
-					experimentName: b.tf
+					experimentName: b.uf
 				}) === b.Pd
 			};
-			var x = n("./src/reddit/selectors/user.ts"),
-				g = n("./src/reddit/components/BackToTop/index.m.less"),
-				y = n.n(g);
+			var x = n("./src/reddit/selectors/recapGame.ts"),
+				g = n("./src/reddit/selectors/user.ts"),
+				y = n("./src/reddit/components/BackToTop/index.m.less"),
+				v = n.n(y);
 			const {
-				fbt: v
-			} = n("./node_modules/fbt/lib/FbtPublic.js"), E = e => {
+				fbt: E
+			} = n("./node_modules/fbt/lib/FbtPublic.js"), k = e => {
 				if (e) {
 					const e = document.getElementById(u.e);
 					e && e.scroll(0, 0)
@@ -712,49 +713,51 @@
 				} = e;
 				const b = Object(l.b)(),
 					f = Object(r.useRef)(null),
-					[g, k] = Object(r.useState)(!1),
-					[w, C] = Object(r.useState)(),
-					[j, S] = Object(r.useState)(),
-					[O, N] = Object(r.useState)(0),
-					T = Object(o.e)(x.l),
-					L = Object(o.e)(_),
-					F = Object(o.e)(x.R),
-					D = encodeURIComponent(a.a.redditUrl + "/r/recap"),
-					P = a.a.accountManagerOrigin,
-					B = F ? "/r/recap" : `${P}/login/?dest=${D}`,
-					R = T ? T.id : "anonymous",
-					I = () => {
-						g && S(setTimeout(() => {
-							f.current && (f.current.classList.add(y.a.transform), f.current.style.width = `${O}px`)
-						}, 4750)), g && C(setTimeout(() => {
-							k(!1), Object(p.Qb)(R, !1)
+					[y, w] = Object(r.useState)(!1),
+					[C, j] = Object(r.useState)(),
+					[S, O] = Object(r.useState)(),
+					[N, T] = Object(r.useState)(0),
+					L = Object(o.e)(g.l),
+					F = Object(o.e)(_),
+					D = Object(o.e)(g.R),
+					P = Object(o.e)(x.a),
+					B = encodeURIComponent(a.a.redditUrl + "/r/recap"),
+					R = a.a.accountManagerOrigin,
+					I = D ? "/r/recap" : `${R}/login/?dest=${B}`,
+					M = L ? L.id : "anonymous",
+					A = "on" === P.recapGameState,
+					z = () => {
+						y && O(setTimeout(() => {
+							f.current && (f.current.classList.add(v.a.transform), f.current.style.width = `${N}px`)
+						}, 4750)), y && j(setTimeout(() => {
+							w(!1), Object(p.Sb)(M, !1)
 						}, 5e3))
 					};
 				Object(r.useEffect)(() => {
-					setTimeout(() => {
-						const e = Object(p.N)(R);
-						e ? Object(d.e)(e.lastSeenTime) >= 24 && e.dropSkip === p.a.NONE ? k(!0) : Date.now() >= new Date(2022, 10, 2).getTime() && e.dropSkip !== p.a.SECOND && k(!0) : k(!0)
+					A || setTimeout(() => {
+						const e = Object(p.N)(M);
+						e ? Object(d.e)(e.lastSeenTime) >= 24 && e.dropSkip === p.a.NONE ? w(!0) : Date.now() >= new Date(2022, 10, 2).getTime() && e.dropSkip !== p.a.SECOND && w(!0) : w(!0)
 					})
-				}, [R]);
-				const M = Object(r.useCallback)(e => {
+				}, [M, A]);
+				const H = Object(r.useCallback)(e => {
 					if (e) {
 						const t = e.clientWidth;
-						N(t + 32)
+						T(t + 32)
 					}
 				}, []);
 				return i.a.createElement("div", {
-					className: Object(c.a)(t, y.a.container),
+					className: Object(c.a)(t, v.a.container),
 					style: u
-				}, g && L && !n ? i.a.createElement("a", {
+				}, y && F && !n && !A ? i.a.createElement("a", {
 					ref: f,
-					href: B,
-					className: y.a.bananaPill,
+					href: I,
+					className: v.a.bananaPill,
 					onMouseEnter: () => {
-						w && clearTimeout(w), j && clearTimeout(j), f.current && (f.current.classList.remove(y.a.transform), f.current.style.width = "65px")
+						C && clearTimeout(C), S && clearTimeout(S), f.current && (f.current.classList.remove(v.a.transform), f.current.style.width = "65px")
 					},
-					onMouseLeave: I,
+					onMouseLeave: z,
 					onClick: () => {
-						w && clearTimeout(w), j && clearTimeout(j), k(!1), Object(p.Qb)(R, !0), b((() => e => ({
+						C && clearTimeout(C), S && clearTimeout(S), w(!1), Object(p.Sb)(M, !0), b((() => e => ({
 							source: "recap",
 							action: "click",
 							noun: "feed_banana",
@@ -762,23 +765,23 @@
 						}))())
 					}
 				}, i.a.createElement("img", {
-					className: y.a.icon,
+					className: v.a.icon,
 					src: `${a.a.assetPath}/img/recap/banana_pill.png`,
-					alt: v._("banana", null, {
+					alt: E._("banana", null, {
 						hk: "1fs9mn"
 					})
 				}), i.a.createElement("span", {
-					className: y.a.text
-				}, "+1"), v._("{=Back to Top}", [v._param("=Back to Top", i.a.createElement("span", {
-					ref: M,
-					className: y.a.altText
-				}, v._("Back to Top", null, {
+					className: v.a.text
+				}, "+1"), E._("{=Back to Top}", [E._param("=Back to Top", i.a.createElement("span", {
+					ref: H,
+					className: v.a.altText
+				}, E._("Back to Top", null, {
 					hk: "4BTAZ0"
 				})))], {
 					hk: "4Foziy"
 				}), i.a.createElement(s.a, {
 					onChange: e => {
-						e.isIntersecting && (I(), b((() => e => ({
+						e.isIntersecting && (z(), b((() => e => ({
 							source: "recap",
 							action: "view",
 							noun: "feed_banana",
@@ -788,9 +791,9 @@
 					rootMargin: "0px 0px 0px 0px",
 					threshold: .5
 				}, i.a.createElement("div", null))) : i.a.createElement(m.a, {
-					className: y.a.button,
-					onClick: () => E(n)
-				}, v._("Back to Top", null, {
+					className: v.a.button,
+					onClick: () => k(n)
+				}, E._("Back to Top", null, {
 					hk: "YjBtV"
 				})))
 			}
@@ -961,7 +964,7 @@
 				} = t;
 				return {
 					continueToQuarantinedSubreddit: async () => {
-						await e(p.D(n)), window.location.reload()
+						await e(p.E(n)), window.location.reload()
 					},
 					continueToGatedSubreddit: async () => {
 						await e(p.v(n)), window.location.reload()
@@ -4562,12 +4565,12 @@
 						rtJsonElementProps: o
 					});
 					switch (i) {
-						case b.Vf.SmIcon:
+						case b.Wf.SmIcon:
 							return r.a.createElement(p, {
 								subredditName: s,
 								rtJsonElementProps: o
 							});
-						case b.Vf.SmIconHc:
+						case b.Wf.SmIconHc:
 							return r.a.createElement(p, {
 								subredditName: s,
 								isHoverable: !0,
@@ -5694,12 +5697,12 @@
 				c = e => {
 					return Object(i.c)(e, {
 						experimentEligibilitySelector: a,
-						experimentName: s.Pf
+						experimentName: s.Qf
 					}) || ""
 				},
 				d = e => {
 					const t = c(e);
-					return t === s.Vf.SmIcon || t === s.Vf.SmIconHc
+					return t === s.Wf.SmIcon || t === s.Wf.SmIconHc
 				},
 				l = (e, t) => {
 					let {
@@ -5725,4 +5728,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileSnoobuilder.89a01c2cddf27a55cb54.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileSnoobuilder.dabc7fa1a7d72c5cff72.js.map

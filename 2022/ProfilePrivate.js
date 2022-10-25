@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfilePrivate.7f124c54e84cd528bc7d.js
-// Retrieved at 10/25/2022, 11:40:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfilePrivate.75103463f9e26899e69a.js
+// Retrieved at 10/25/2022, 3:40:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfilePrivate"], {
 		"./node_modules/lodash/take.js": function(e, t, s) {
@@ -246,7 +246,7 @@
 						const s = {
 							includeIdentity: x,
 							includeModerated: y,
-							recentPostIds: Object(I.P)(null == f ? void 0 : f.id).reverse()
+							recentPostIds: Object(I.Q)(null == f ? void 0 : f.id).reverse()
 						};
 						C = await ((e, t) => Object(c.a)(e, {
 							...p,
@@ -734,15 +734,16 @@
 			const f = e => {
 				return Object(g.c)(e, {
 					experimentEligibilitySelector: g.a,
-					experimentName: h.tf
+					experimentName: h.uf
 				}) === h.Pd
 			};
-			var x = s("./src/reddit/selectors/user.ts"),
-				v = s("./src/reddit/components/BackToTop/index.m.less"),
-				y = s.n(v);
+			var x = s("./src/reddit/selectors/recapGame.ts"),
+				v = s("./src/reddit/selectors/user.ts"),
+				y = s("./src/reddit/components/BackToTop/index.m.less"),
+				C = s.n(y);
 			const {
-				fbt: C
-			} = s("./node_modules/fbt/lib/FbtPublic.js"), O = e => {
+				fbt: O
+			} = s("./node_modules/fbt/lib/FbtPublic.js"), k = e => {
 				if (e) {
 					const e = document.getElementById(m.e);
 					e && e.scroll(0, 0)
@@ -756,49 +757,51 @@
 				} = e;
 				const h = Object(l.b)(),
 					g = Object(r.useRef)(null),
-					[v, k] = Object(r.useState)(!1),
-					[E, w] = Object(r.useState)(),
-					[j, S] = Object(r.useState)(),
-					[_, I] = Object(r.useState)(0),
-					P = Object(i.e)(x.l),
-					N = Object(i.e)(f),
-					T = Object(i.e)(x.R),
-					L = encodeURIComponent(d.a.redditUrl + "/r/recap"),
-					R = d.a.accountManagerOrigin,
-					M = T ? "/r/recap" : `${R}/login/?dest=${L}`,
-					A = P ? P.id : "anonymous",
-					F = () => {
-						v && S(setTimeout(() => {
-							g.current && (g.current.classList.add(y.a.transform), g.current.style.width = `${_}px`)
-						}, 4750)), v && w(setTimeout(() => {
-							k(!1), Object(p.Qb)(A, !1)
+					[y, E] = Object(r.useState)(!1),
+					[w, j] = Object(r.useState)(),
+					[S, _] = Object(r.useState)(),
+					[I, P] = Object(r.useState)(0),
+					N = Object(i.e)(v.l),
+					T = Object(i.e)(f),
+					L = Object(i.e)(v.R),
+					R = Object(i.e)(x.a),
+					M = encodeURIComponent(d.a.redditUrl + "/r/recap"),
+					A = d.a.accountManagerOrigin,
+					F = L ? "/r/recap" : `${A}/login/?dest=${M}`,
+					B = N ? N.id : "anonymous",
+					U = "on" === R.recapGameState,
+					G = () => {
+						y && _(setTimeout(() => {
+							g.current && (g.current.classList.add(C.a.transform), g.current.style.width = `${I}px`)
+						}, 4750)), y && j(setTimeout(() => {
+							E(!1), Object(p.Sb)(B, !1)
 						}, 5e3))
 					};
 				Object(r.useEffect)(() => {
-					setTimeout(() => {
-						const e = Object(p.N)(A);
-						e ? Object(c.e)(e.lastSeenTime) >= 24 && e.dropSkip === p.a.NONE ? k(!0) : Date.now() >= new Date(2022, 10, 2).getTime() && e.dropSkip !== p.a.SECOND && k(!0) : k(!0)
+					U || setTimeout(() => {
+						const e = Object(p.N)(B);
+						e ? Object(c.e)(e.lastSeenTime) >= 24 && e.dropSkip === p.a.NONE ? E(!0) : Date.now() >= new Date(2022, 10, 2).getTime() && e.dropSkip !== p.a.SECOND && E(!0) : E(!0)
 					})
-				}, [A]);
-				const B = Object(r.useCallback)(e => {
+				}, [B, U]);
+				const D = Object(r.useCallback)(e => {
 					if (e) {
 						const t = e.clientWidth;
-						I(t + 32)
+						P(t + 32)
 					}
 				}, []);
 				return o.a.createElement("div", {
-					className: Object(a.a)(t, y.a.container),
+					className: Object(a.a)(t, C.a.container),
 					style: m
-				}, v && N && !s ? o.a.createElement("a", {
+				}, y && T && !s && !U ? o.a.createElement("a", {
 					ref: g,
-					href: M,
-					className: y.a.bananaPill,
+					href: F,
+					className: C.a.bananaPill,
 					onMouseEnter: () => {
-						E && clearTimeout(E), j && clearTimeout(j), g.current && (g.current.classList.remove(y.a.transform), g.current.style.width = "65px")
+						w && clearTimeout(w), S && clearTimeout(S), g.current && (g.current.classList.remove(C.a.transform), g.current.style.width = "65px")
 					},
-					onMouseLeave: F,
+					onMouseLeave: G,
 					onClick: () => {
-						E && clearTimeout(E), j && clearTimeout(j), k(!1), Object(p.Qb)(A, !0), h((() => e => ({
+						w && clearTimeout(w), S && clearTimeout(S), E(!1), Object(p.Sb)(B, !0), h((() => e => ({
 							source: "recap",
 							action: "click",
 							noun: "feed_banana",
@@ -806,23 +809,23 @@
 						}))())
 					}
 				}, o.a.createElement("img", {
-					className: y.a.icon,
+					className: C.a.icon,
 					src: `${d.a.assetPath}/img/recap/banana_pill.png`,
-					alt: C._("banana", null, {
+					alt: O._("banana", null, {
 						hk: "1fs9mn"
 					})
 				}), o.a.createElement("span", {
-					className: y.a.text
-				}, "+1"), C._("{=Back to Top}", [C._param("=Back to Top", o.a.createElement("span", {
-					ref: B,
-					className: y.a.altText
-				}, C._("Back to Top", null, {
+					className: C.a.text
+				}, "+1"), O._("{=Back to Top}", [O._param("=Back to Top", o.a.createElement("span", {
+					ref: D,
+					className: C.a.altText
+				}, O._("Back to Top", null, {
 					hk: "4BTAZ0"
 				})))], {
 					hk: "4Foziy"
 				}), o.a.createElement(n.a, {
 					onChange: e => {
-						e.isIntersecting && (F(), h((() => e => ({
+						e.isIntersecting && (G(), h((() => e => ({
 							source: "recap",
 							action: "view",
 							noun: "feed_banana",
@@ -832,9 +835,9 @@
 					rootMargin: "0px 0px 0px 0px",
 					threshold: .5
 				}, o.a.createElement("div", null))) : o.a.createElement(u.a, {
-					className: y.a.button,
-					onClick: () => O(s)
-				}, C._("Back to Top", null, {
+					className: C.a.button,
+					onClick: () => k(s)
+				}, O._("Back to Top", null, {
 					hk: "YjBtV"
 				})))
 			}
@@ -1053,7 +1056,7 @@
 					} = Je,
 					[Ye, Ze] = Object(n.useState)(!1),
 					Xe = Object(n.useCallback)(() => {
-						Ze(!Ye), Object(te.Ob)(), Te(Object(re.d)(ve))
+						Ze(!Ye), Object(te.Qb)(), Te(Object(re.d)(ve))
 					}, [Ye, ve, Te]);
 				let $e = r.a.createElement(Q.a, {
 					className: le.a.classicThumbnail,
@@ -6735,10 +6738,10 @@
 				r = s("./src/reddit/constants/experiments.ts"),
 				o = s("./src/reddit/helpers/chooseVariant/index.ts");
 			const i = Object(n.a)(e => Object(o.c)(e, {
-					experimentName: r.kg,
+					experimentName: r.lg,
 					experimentEligibilitySelector: o.a
 				}), e => e),
-				d = Object(n.a)(i, e => e === r.bg)
+				d = Object(n.a)(i, e => e === r.cg)
 		},
 		"./src/reddit/selectors/tracking.ts": function(e, t, s) {
 			"use strict";
@@ -6814,4 +6817,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfilePrivate.7f124c54e84cd528bc7d.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfilePrivate.75103463f9e26899e69a.js.map

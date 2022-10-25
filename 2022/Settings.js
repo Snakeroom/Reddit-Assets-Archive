@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Settings.755671ce509785ef0a1f.js
-// Retrieved at 10/25/2022, 10:20:07 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Settings.92d6e31b6653b2ee1002.js
+// Retrieved at 10/25/2022, 3:40:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Settings"], {
 		"./node_modules/moment/locale sync recursive ^\\.\\/.*$": function(e, t, n) {
@@ -1571,7 +1571,7 @@
 				B = n("./src/reddit/selectors/externalAccount.ts");
 			const U = e => async (t, n) => {
 				await t(Object(M.s)());
-				const f = [t(Object(P.s)()), t(Object(P.A)(!0)), t(Object(p.a)())];
+				const f = [t(Object(P.s)()), t(Object(P.B)(!0)), t(Object(p.a)())];
 				n().economics.paymentSystems.status === R.a.NotFetched && f.push(t((() => async (e, t, n) => {
 					let {
 						apiContext: s
@@ -11501,12 +11501,12 @@
 				}
 			}
 			const na = Object(r.b)(Ho, e => ({
-					imageDeleteRequested: t => e(Object(jo.B)(t)),
-					imagesUpdateRequested: (t, n) => e(Object(jo.C)(t, n)),
+					imageDeleteRequested: t => e(Object(jo.C)(t)),
+					imagesUpdateRequested: (t, n) => e(Object(jo.D)(t, n)),
 					onClickSnoovatar: () => e(Object(xo.b)({
 						clickSource: "profile_overview"
 					})),
-					save: (t, n) => e(Object(jo.H)(t, n)),
+					save: (t, n) => e(Object(jo.I)(t, n)),
 					toggleNSFWModal: () => e(Object(_.i)("ProfileForm_NSFWConfirmDialogID"))
 				}))(Object(O.c)(ta)),
 				sa = Object(l.c)({
@@ -12122,7 +12122,7 @@
 				yr = Object(ve.u)(),
 				kr = Object(r.b)(_r, (e, t) => ({
 					changeTab: t => e(Object(i.b)(`/settings/${t}`)),
-					updatePrefs: t => e(Object(jo.I)(t)),
+					updatePrefs: t => e(Object(jo.J)(t)),
 					onPageViewed: () => e(Object(b.a)())
 				})),
 				Cr = {
@@ -12833,4 +12833,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Settings.755671ce509785ef0a1f.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Settings.92d6e31b6653b2ee1002.js.map

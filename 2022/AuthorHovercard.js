@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/AuthorHovercard.3ce6d2e06ce33cee0192.js
-// Retrieved at 10/25/2022, 10:20:07 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/AuthorHovercard.8b4a0353c660f2e915db.js
+// Retrieved at 10/25/2022, 3:40:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["AuthorHovercard"], {
 		"./src/lib/constants/colors.ts": function(e, t, n) {
@@ -1848,7 +1848,7 @@
 					}, [c]);
 					const M = Object(o.d)(),
 						T = Object(a.useCallback)(e => {
-							j(e), Object(x.Gb)("modnote-draft", {
+							j(e), Object(x.Ib)("modnote-draft", {
 								[c]: e
 							})
 						}, [j, c]),
@@ -3727,9 +3727,9 @@
 					T = Object(m.a)(),
 					[L, D, H] = function(e, t, n) {
 						const [r, o] = Object(a.useState)(Object(u.r)(e, t) || 0), s = Object(a.useCallback)(() => {
-							o(r + 1), Object(u.zb)(e, t, r + 1)
+							o(r + 1), Object(u.Bb)(e, t, r + 1)
 						}, []), i = Object(a.useCallback)(() => {
-							n > 0 && (o(n), Object(u.zb)(e, t, n))
+							n > 0 && (o(n), Object(u.Bb)(e, t, n))
 						}, []);
 						return [r, s, i]
 					}(h, n.notificationName, (null === (v = n.persistence) || void 0 === v ? void 0 : v.maxViews) || 0),
@@ -4264,7 +4264,7 @@
 						[O, I] = function(e) {
 							const [t, n] = Object(r.useState)(() => Object(q.u)(e));
 							return [t, Object(r.useCallback)(() => {
-								n(!0), Object(q.Ab)(e)
+								n(!0), Object(q.Cb)(e)
 							}, [e])]
 						}(x),
 						[C, N] = function(e) {
@@ -4894,7 +4894,7 @@
 					hideNSFWPref: s.G
 				}),
 				c = Object(a.b)(i, e => ({
-					imageUpdateRequested: (t, n) => e(Object(o.C)(t, n))
+					imageUpdateRequested: (t, n) => e(Object(o.D)(t, n))
 				}));
 			t.a = c
 		},
@@ -5933,7 +5933,7 @@
 			function o(e) {
 				const [t, n] = Object(a.useState)(Object(r.t)(e));
 				return [t, Object(a.useCallback)(() => {
-					n(!0), Object(r.pb)(e)
+					n(!0), Object(r.rb)(e)
 				}, [])]
 			}
 		},
@@ -6561,4 +6561,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/AuthorHovercard.3ce6d2e06ce33cee0192.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/AuthorHovercard.8b4a0353c660f2e915db.js.map

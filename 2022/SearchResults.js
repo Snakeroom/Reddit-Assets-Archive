@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SearchResults.4b4c2c3a7d500ebc642e.js
-// Retrieved at 10/25/2022, 11:40:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SearchResults.a746364a9bc7dc1087f6.js
+// Retrieved at 10/25/2022, 3:40:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SearchResults"], {
 		"./node_modules/lodash/_baseDelay.js": function(e, t) {
@@ -936,15 +936,16 @@
 			const f = e => {
 				return Object(x.c)(e, {
 					experimentEligibilitySelector: x.a,
-					experimentName: h.tf
+					experimentName: h.uf
 				}) === h.Pd
 			};
-			var O = s("./src/reddit/selectors/user.ts"),
-				g = s("./src/reddit/components/BackToTop/index.m.less"),
-				v = s.n(g);
+			var O = s("./src/reddit/selectors/recapGame.ts"),
+				g = s("./src/reddit/selectors/user.ts"),
+				v = s("./src/reddit/components/BackToTop/index.m.less"),
+				j = s.n(v);
 			const {
-				fbt: j
-			} = s("./node_modules/fbt/lib/FbtPublic.js"), C = e => {
+				fbt: C
+			} = s("./node_modules/fbt/lib/FbtPublic.js"), y = e => {
 				if (e) {
 					const e = document.getElementById(m.e);
 					e && e.scroll(0, 0)
@@ -958,49 +959,51 @@
 				} = e;
 				const h = Object(l.b)(),
 					x = Object(r.useRef)(null),
-					[g, y] = Object(r.useState)(!1),
-					[E, _] = Object(r.useState)(),
-					[k, S] = Object(r.useState)(),
-					[w, N] = Object(r.useState)(0),
-					T = Object(i.e)(O.l),
-					I = Object(i.e)(f),
-					P = Object(i.e)(O.R),
-					R = encodeURIComponent(a.a.redditUrl + "/r/recap"),
-					M = a.a.accountManagerOrigin,
-					L = P ? "/r/recap" : `${M}/login/?dest=${R}`,
-					F = T ? T.id : "anonymous",
-					B = () => {
-						g && S(setTimeout(() => {
-							x.current && (x.current.classList.add(v.a.transform), x.current.style.width = `${w}px`)
-						}, 4750)), g && _(setTimeout(() => {
-							y(!1), Object(p.Qb)(F, !1)
+					[v, E] = Object(r.useState)(!1),
+					[_, k] = Object(r.useState)(),
+					[S, w] = Object(r.useState)(),
+					[N, T] = Object(r.useState)(0),
+					I = Object(i.e)(g.l),
+					P = Object(i.e)(f),
+					R = Object(i.e)(g.R),
+					M = Object(i.e)(O.a),
+					L = encodeURIComponent(a.a.redditUrl + "/r/recap"),
+					F = a.a.accountManagerOrigin,
+					B = R ? "/r/recap" : `${F}/login/?dest=${L}`,
+					A = I ? I.id : "anonymous",
+					D = "on" === M.recapGameState,
+					U = () => {
+						v && w(setTimeout(() => {
+							x.current && (x.current.classList.add(j.a.transform), x.current.style.width = `${N}px`)
+						}, 4750)), v && k(setTimeout(() => {
+							E(!1), Object(p.Sb)(A, !1)
 						}, 5e3))
 					};
 				Object(r.useEffect)(() => {
-					setTimeout(() => {
-						const e = Object(p.N)(F);
-						e ? Object(d.e)(e.lastSeenTime) >= 24 && e.dropSkip === p.a.NONE ? y(!0) : Date.now() >= new Date(2022, 10, 2).getTime() && e.dropSkip !== p.a.SECOND && y(!0) : y(!0)
+					D || setTimeout(() => {
+						const e = Object(p.N)(A);
+						e ? Object(d.e)(e.lastSeenTime) >= 24 && e.dropSkip === p.a.NONE ? E(!0) : Date.now() >= new Date(2022, 10, 2).getTime() && e.dropSkip !== p.a.SECOND && E(!0) : E(!0)
 					})
-				}, [F]);
-				const A = Object(r.useCallback)(e => {
+				}, [A, D]);
+				const H = Object(r.useCallback)(e => {
 					if (e) {
 						const t = e.clientWidth;
-						N(t + 32)
+						T(t + 32)
 					}
 				}, []);
 				return o.a.createElement("div", {
-					className: Object(c.a)(t, v.a.container),
+					className: Object(c.a)(t, j.a.container),
 					style: m
-				}, g && I && !s ? o.a.createElement("a", {
+				}, v && P && !s && !D ? o.a.createElement("a", {
 					ref: x,
-					href: L,
-					className: v.a.bananaPill,
+					href: B,
+					className: j.a.bananaPill,
 					onMouseEnter: () => {
-						E && clearTimeout(E), k && clearTimeout(k), x.current && (x.current.classList.remove(v.a.transform), x.current.style.width = "65px")
+						_ && clearTimeout(_), S && clearTimeout(S), x.current && (x.current.classList.remove(j.a.transform), x.current.style.width = "65px")
 					},
-					onMouseLeave: B,
+					onMouseLeave: U,
 					onClick: () => {
-						E && clearTimeout(E), k && clearTimeout(k), y(!1), Object(p.Qb)(F, !0), h((() => e => ({
+						_ && clearTimeout(_), S && clearTimeout(S), E(!1), Object(p.Sb)(A, !0), h((() => e => ({
 							source: "recap",
 							action: "click",
 							noun: "feed_banana",
@@ -1008,23 +1011,23 @@
 						}))())
 					}
 				}, o.a.createElement("img", {
-					className: v.a.icon,
+					className: j.a.icon,
 					src: `${a.a.assetPath}/img/recap/banana_pill.png`,
-					alt: j._("banana", null, {
+					alt: C._("banana", null, {
 						hk: "1fs9mn"
 					})
 				}), o.a.createElement("span", {
-					className: v.a.text
-				}, "+1"), j._("{=Back to Top}", [j._param("=Back to Top", o.a.createElement("span", {
-					ref: A,
-					className: v.a.altText
-				}, j._("Back to Top", null, {
+					className: j.a.text
+				}, "+1"), C._("{=Back to Top}", [C._param("=Back to Top", o.a.createElement("span", {
+					ref: H,
+					className: j.a.altText
+				}, C._("Back to Top", null, {
 					hk: "4BTAZ0"
 				})))], {
 					hk: "4Foziy"
 				}), o.a.createElement(n.a, {
 					onChange: e => {
-						e.isIntersecting && (B(), h((() => e => ({
+						e.isIntersecting && (U(), h((() => e => ({
 							source: "recap",
 							action: "view",
 							noun: "feed_banana",
@@ -1034,9 +1037,9 @@
 					rootMargin: "0px 0px 0px 0px",
 					threshold: .5
 				}, o.a.createElement("div", null))) : o.a.createElement(u.a, {
-					className: v.a.button,
-					onClick: () => C(s)
-				}, j._("Back to Top", null, {
+					className: j.a.button,
+					onClick: () => y(s)
+				}, C._("Back to Top", null, {
 					hk: "YjBtV"
 				})))
 			}
@@ -7507,7 +7510,7 @@
 				return Object(i.useEffect)(() => {
 					var e;
 					const s = null !== (e = Object(p.B)("should-show-comment-tab-tooltip")) && void 0 !== e ? e : 2;
-					t(Boolean(s)), 2 === s ? Object(p.Gb)("should-show-comment-tab-tooltip", 1) : 1 === s && Object(p.Gb)("should-show-comment-tab-tooltip", !1)
+					t(Boolean(s)), 2 === s ? Object(p.Ib)("should-show-comment-tab-tooltip", 1) : 1 === s && Object(p.Ib)("should-show-comment-tab-tooltip", !1)
 				}, []), {
 					get shouldShowCommentTabTooltip() {
 						return e
@@ -9141,12 +9144,12 @@
 						rtJsonElementProps: i
 					});
 					switch (o) {
-						case h.Vf.SmIcon:
+						case h.Wf.SmIcon:
 							return r.a.createElement(p, {
 								subredditName: n,
 								rtJsonElementProps: i
 							});
-						case h.Vf.SmIconHc:
+						case h.Wf.SmIconHc:
 							return r.a.createElement(p, {
 								subredditName: n,
 								isHoverable: !0,
@@ -11428,10 +11431,10 @@
 				o = s("./node_modules/reselect/es/index.js");
 			const i = Object(o.a)(e => Object(r.c)(e, {
 				experimentEligibilitySelector: r.a,
-				experimentName: n.Gf
+				experimentName: n.Hf
 			}), e => ({
-				isSubEnlarged: e === n.Tf.Variant1 || e === n.Tf.Variant3,
-				withCommunityDescription: e === n.Tf.Variant2 || e === n.Tf.Variant3
+				isSubEnlarged: e === n.Uf.Variant1 || e === n.Uf.Variant3,
+				withCommunityDescription: e === n.Uf.Variant2 || e === n.Uf.Variant3
 			}))
 		},
 		"./src/reddit/selectors/experiments/web2x_cta.ts": function(e, t, s) {
@@ -11443,10 +11446,10 @@
 				r = s("./src/reddit/constants/experiments.ts"),
 				o = s("./src/reddit/helpers/chooseVariant/index.ts");
 			const i = Object(n.a)(e => Object(o.c)(e, {
-					experimentName: r.kg,
+					experimentName: r.lg,
 					experimentEligibilitySelector: o.a
 				}), e => e),
-				a = Object(n.a)(i, e => e === r.bg)
+				a = Object(n.a)(i, e => e === r.cg)
 		},
 		"./src/reddit/selectors/focusedVerticalSuggestion.ts": function(e, t, s) {
 			"use strict";
@@ -11603,12 +11606,12 @@
 				c = e => {
 					return Object(o.c)(e, {
 						experimentEligibilitySelector: a,
-						experimentName: n.Pf
+						experimentName: n.Qf
 					}) || ""
 				},
 				d = e => {
 					const t = c(e);
-					return t === n.Vf.SmIcon || t === n.Vf.SmIconHc
+					return t === n.Wf.SmIcon || t === n.Wf.SmIconHc
 				},
 				l = (e, t) => {
 					let {
@@ -11661,4 +11664,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SearchResults.4b4c2c3a7d500ebc642e.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SearchResults.a746364a9bc7dc1087f6.js.map
