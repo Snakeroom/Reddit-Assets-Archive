@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PublicAccessNetwork.459cbbb432aadbdd4c4d.js
-// Retrieved at 10/24/2022, 4:40:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PublicAccessNetwork.b6c5408b733a0dd839c1.js
+// Retrieved at 10/25/2022, 10:20:07 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PublicAccessNetwork"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -286,13 +286,13 @@
 					experimentEligibilitySelector: u.a,
 					experimentName: m.He
 				});
-				return Object(m.ug)(t) ? void 0 : t
+				return Object(m.vg)(t) ? void 0 : t
 			}, e => {
 				const t = Object(u.c)(e, {
 					experimentEligibilitySelector: u.a,
 					experimentName: m.Ie
 				});
-				return Object(m.ug)(t) ? void 0 : t
+				return Object(m.vg)(t) ? void 0 : t
 			}, (e, t) => e === m.Je.Enabled && t === m.Je.Enabled);
 			var b = s("./src/config.ts");
 			var h = s("./src/reddit/selectors/user.ts");
@@ -669,7 +669,7 @@
 									icon: e.category_icon,
 									id: e.category_id,
 									name: e.category_name,
-									displayText: Object(m.tg)(e.category_name)
+									displayText: Object(m.ug)(e.category_name)
 								};
 								s.push(n.id), t[n.id] = n
 							}), {
@@ -1487,7 +1487,7 @@
 							a = Object(se.Q)(s(), {
 								identifier: M.belongsTo
 							});
-						if (a && (e => W.Bf.Redirect === Object(J.b)(e, {
+						if (a && (e => W.Cf.Redirect === Object(J.b)(e, {
 								experimentEligibilitySelector: Z,
 								experimentName: W.uf
 							}))(s())) return void t(Object(o.c)(a.url));
@@ -7985,7 +7985,7 @@
 				a = s("./src/reddit/selectors/experiments/nsfwListingBelow.ts");
 			const i = e => {
 					const t = Object(a.a)(e);
-					return Boolean(t) && !Object(n.ug)(t)
+					return Boolean(t) && !Object(n.vg)(t)
 				},
 				d = Object(o.a)(i, r.d, (e, t) => e && !t)
 		},
@@ -8006,4 +8006,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PublicAccessNetwork.459cbbb432aadbdd4c4d.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PublicAccessNetwork.b6c5408b733a0dd839c1.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/index.d44ee242dab8a434304f.js
-// Retrieved at 10/24/2022, 10:40:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/index.e9760c1830d95cf39102.js
+// Retrieved at 10/25/2022, 10:20:07 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["index"], {
 		"./src/reddit/components/Econ/Audio/MuteIcon.tsx": function(e, t, n) {
@@ -1257,8 +1257,8 @@
 					noun: "go_live",
 					subreddit: s.jb(e),
 					liveAudioRoom: {
-						title: Object(a.sb)(e),
-						topicIds: Object(a.rb)(e).topics.map(e => e.id)
+						title: Object(a.tb)(e),
+						topicIds: Object(a.sb)(e).topics.map(e => e.id)
 					}
 				}),
 				l = () => e => ({
@@ -1268,8 +1268,8 @@
 					noun: "schedule",
 					subreddit: s.jb(e),
 					liveAudioRoom: {
-						title: Object(a.sb)(e),
-						topicIds: Object(a.rb)(e).topics.map(e => e.id)
+						title: Object(a.tb)(e),
+						topicIds: Object(a.sb)(e).topics.map(e => e.id)
 					}
 				}),
 				u = () => e => ({
@@ -1279,7 +1279,7 @@
 					noun: "overflow",
 					subreddit: s.jb(e),
 					liveAudioRoom: {
-						title: Object(a.sb)(e)
+						title: Object(a.tb)(e)
 					}
 				}),
 				m = e => t => ({
@@ -1338,4 +1338,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/index.d44ee242dab8a434304f.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/index.e9760c1830d95cf39102.js.map

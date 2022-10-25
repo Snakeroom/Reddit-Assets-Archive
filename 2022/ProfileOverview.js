@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfileOverview.1ea0722d1042f02c97b4.js
-// Retrieved at 10/24/2022, 4:40:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfileOverview.69145b6cff63009b72b2.js
+// Retrieved at 10/25/2022, 10:20:07 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfileOverview"], {
 		"./node_modules/linkify-it/index.js": function(e, t, s) {
@@ -8425,8 +8425,8 @@
 					noun: "go_live",
 					subreddit: a.jb(e),
 					liveAudioRoom: {
-						title: Object(r.sb)(e),
-						topicIds: Object(r.rb)(e).topics.map(e => e.id)
+						title: Object(r.tb)(e),
+						topicIds: Object(r.sb)(e).topics.map(e => e.id)
 					}
 				}),
 				l = () => e => ({
@@ -8436,8 +8436,8 @@
 					noun: "schedule",
 					subreddit: a.jb(e),
 					liveAudioRoom: {
-						title: Object(r.sb)(e),
-						topicIds: Object(r.rb)(e).topics.map(e => e.id)
+						title: Object(r.tb)(e),
+						topicIds: Object(r.sb)(e).topics.map(e => e.id)
 					}
 				}),
 				m = () => e => ({
@@ -8447,7 +8447,7 @@
 					noun: "overflow",
 					subreddit: a.jb(e),
 					liveAudioRoom: {
-						title: Object(r.sb)(e)
+						title: Object(r.tb)(e)
 					}
 				}),
 				u = e => t => ({
@@ -9929,10 +9929,10 @@
 				o = s("./src/reddit/constants/experiments.ts"),
 				r = s("./src/reddit/helpers/chooseVariant/index.ts");
 			const a = Object(n.a)(e => Object(r.c)(e, {
-					experimentName: o.jg,
+					experimentName: o.kg,
 					experimentEligibilitySelector: r.a
 				}), e => e),
-				i = Object(n.a)(a, e => e === o.ag)
+				i = Object(n.a)(a, e => e === o.bg)
 		},
 		"./src/reddit/selectors/focusedVerticalSuggestion.ts": function(e, t, s) {
 			"use strict";
@@ -10054,7 +10054,7 @@
 				a = s("./src/reddit/selectors/experiments/nsfwListingBelow.ts");
 			const i = e => {
 					const t = Object(a.a)(e);
-					return Boolean(t) && !Object(o.ug)(t)
+					return Boolean(t) && !Object(o.vg)(t)
 				},
 				c = Object(n.a)(i, r.d, (e, t) => e && !t)
 		},
@@ -10090,4 +10090,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileOverview.1ea0722d1042f02c97b4.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileOverview.69145b6cff63009b72b2.js.map

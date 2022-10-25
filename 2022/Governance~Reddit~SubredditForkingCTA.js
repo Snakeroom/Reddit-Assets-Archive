@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~Reddit~SubredditForkingCTA.ad9d02cc12991f7cbff5.js
-// Retrieved at 10/24/2022, 4:40:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~Reddit~SubredditForkingCTA.fdb169d4fe47476c1130.js
+// Retrieved at 10/25/2022, 10:20:07 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~Reddit~SubredditForkingCTA"], {
 		"./src/lib/bigNumberUtils/percent.ts": function(t, e, r) {
@@ -762,12 +762,12 @@
 					}(p)), f.filter(t => t.isValid).map(t => t.uploadKey)
 				}, q = (t, e) => async (r, s) => {
 					const i = s(),
-						d = Object(v.W)(i),
+						d = Object(v.X)(i),
 						{
 							items: o
 						} = d,
 						l = !o.length && 1 === t.length,
-						b = Object(v.N)(i) && !l;
+						b = Object(v.O)(i) && !l;
 					let f = !1,
 						p = t;
 					if (b) {
@@ -857,8 +857,8 @@
 				F = Object(s.a)(w.db),
 				V = Object(s.a)(w.J),
 				B = Object(s.a)(w.a),
-				W = Object(s.a)(w.F),
-				$ = t => `/r/${t}/about/${D.s}`,
+				$ = Object(s.a)(w.F),
+				W = t => `/r/${t}/about/${D.s}`,
 				z = (t, e) => {
 					const r = t || {
 							duration: n.E,
@@ -882,9 +882,9 @@
 				},
 				H = t => {
 					const e = t.uploads,
-						r = Object(k.W)(t),
+						r = Object(k.X)(t),
 						s = Object(k.a)(t),
-						i = Object(k.gb)(t);
+						i = Object(k.hb)(t);
 					if (s === n.bc.POST) return b.a.getPendingThumbnailUploads(i, e);
 					if (s === n.bc.MEDIA && r && r.items.length) {
 						const {
@@ -904,7 +904,7 @@
 						pending: a
 					} = o.creations.api.post.submit, u = Object(T.g)(o);
 					if (a || u) return;
-					r(W(t)), o = s();
+					r($(t)), o = s();
 					const l = Object(k.a)(o),
 						b = y.d.rteVideoPoster(o),
 						f = H(o),
@@ -915,8 +915,8 @@
 						gqlContext: s
 					} = n;
 					const d = r(),
-						o = Object(k.db)(d),
-						a = Object(k.eb)(d, t),
+						o = Object(k.eb)(d),
+						a = Object(k.fb)(d, t),
 						c = Object(k.h)(d),
 						b = Object(x.r)(d);
 					if (!(a && c.id && o && Object(j.f)(b))) return;
@@ -940,7 +940,7 @@
 					}, E = await Object(_.a)(s(), g);
 					if (E.ok) return e(Object(u.e)({
 						subredditId: c.id
-					})), void e(Object(l.a)($(c.name), !1));
+					})), void e(Object(l.a)(W(c.name), !1));
 					const I = E.error;
 					e(G(I))
 				}, Q = t => async (e, r, n) => {
@@ -948,8 +948,8 @@
 						gqlContext: s
 					} = n;
 					const d = r(),
-						o = Object(k.db)(d),
-						a = Object(k.eb)(d, t),
+						o = Object(k.eb)(d),
+						a = Object(k.fb)(d, t),
 						c = Object(k.h)(d),
 						b = Object(x.b)(d);
 					if (!a || !c.id || !o) return;
@@ -974,7 +974,7 @@
 							subredditId: c.id
 						}));
 						const t = y.body.data.createScheduledPost.scheduledPost;
-						return t && Object(i.a)(Object(S.o)(Object(g.d)(t))(d)), void e(Object(l.a)($(c.name), !1))
+						return t && Object(i.a)(Object(S.o)(Object(g.d)(t))(d)), void e(Object(l.a)(W(c.name), !1))
 					}
 					const j = y.error;
 					e(G(j))
@@ -983,7 +983,7 @@
 						apiContext: i
 					} = s;
 					const c = r(),
-						u = Object(k.eb)(c, t),
+						u = Object(k.fb)(c, t),
 						{
 							isPoll: b,
 							polls: O
@@ -3045,4 +3045,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit~SubredditForkingCTA.ad9d02cc12991f7cbff5.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit~SubredditForkingCTA.fdb169d4fe47476c1130.js.map

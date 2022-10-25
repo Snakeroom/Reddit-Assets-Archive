@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-ClassicPost.bb13f4d5c9295a45e6c7.js
-// Retrieved at 10/24/2022, 4:40:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-ClassicPost.8a45a566f7e45ba757e2.js
+// Retrieved at 10/25/2022, 10:20:07 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-ClassicPost", "Reddit~RpanListingUnit~StandalonePostPage~reddit-components-LargePost~reddit-components-MediumPost"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -5519,8 +5519,8 @@
 					noun: "go_live",
 					subreddit: i.jb(e),
 					liveAudioRoom: {
-						title: Object(o.sb)(e),
-						topicIds: Object(o.rb)(e).topics.map(e => e.id)
+						title: Object(o.tb)(e),
+						topicIds: Object(o.sb)(e).topics.map(e => e.id)
 					}
 				}),
 				l = () => e => ({
@@ -5530,8 +5530,8 @@
 					noun: "schedule",
 					subreddit: i.jb(e),
 					liveAudioRoom: {
-						title: Object(o.sb)(e),
-						topicIds: Object(o.rb)(e).topics.map(e => e.id)
+						title: Object(o.tb)(e),
+						topicIds: Object(o.sb)(e).topics.map(e => e.id)
 					}
 				}),
 				u = () => e => ({
@@ -5541,7 +5541,7 @@
 					noun: "overflow",
 					subreddit: i.jb(e),
 					liveAudioRoom: {
-						title: Object(o.sb)(e)
+						title: Object(o.tb)(e)
 					}
 				}),
 				m = e => t => ({
@@ -6671,10 +6671,10 @@
 				s = n("./src/reddit/constants/experiments.ts"),
 				o = n("./src/reddit/helpers/chooseVariant/index.ts");
 			const i = Object(r.a)(e => Object(o.c)(e, {
-					experimentName: s.jg,
+					experimentName: s.kg,
 					experimentEligibilitySelector: o.a
 				}), e => e),
-				a = Object(r.a)(i, e => e === s.ag)
+				a = Object(r.a)(i, e => e === s.bg)
 		},
 		"./src/reddit/selectors/gild.ts": function(e, t, n) {
 			"use strict";
@@ -7080,4 +7080,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ClassicPost.bb13f4d5c9295a45e6c7.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ClassicPost.8a45a566f7e45ba757e2.js.map

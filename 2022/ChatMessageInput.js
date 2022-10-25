@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ChatMessageInput.21a56ff02b18d41d2e1d.js
-// Retrieved at 10/24/2022, 10:40:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ChatMessageInput.4a4853d0d747e4137831.js
+// Retrieved at 10/25/2022, 10:20:07 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ChatMessageInput"], {
 		"./node_modules/draft-js/dist/Draft.css": function(e, t, s) {},
@@ -552,7 +552,7 @@
 			})), s.d(t, "b", (function() {
 				return T
 			})), s.d(t, "a", (function() {
-				return N
+				return z
 			})), s.d(t, "c", (function() {
 				return B
 			})), s.d(t, "e", (function() {
@@ -604,7 +604,7 @@
 							uploadKey: r
 						} = e;
 						const n = Object(g.b)(Object(g.d)(s), "poster.png");
-						return t(z(n, r, !0))
+						return t(N(n, r, !0))
 					});
 					await Promise.all(r);
 					const n = s().uploads,
@@ -627,8 +627,8 @@
 					}
 				});
 			const T = "RTE",
-				N = "GALLERY",
-				z = (e, t, s, n, a, i, u) => async (E, D, F) => {
+				z = "GALLERY",
+				N = (e, t, s, n, a, i, u) => async (E, D, F) => {
 					let {
 						apiContext: A,
 						gqlContext: I
@@ -636,16 +636,16 @@
 					const S = Object(w.h)(D()),
 						L = Date.now();
 					let T = null,
-						N = !1,
 						z = !1,
+						N = !1,
 						B = !1;
 					const U = e => {
-						if (!B && n && N) {
+						if (!B && n && z) {
 							B = !0;
 							const s = D(),
 								r = Date.now() - L,
 								o = Object(_.c)(_.a.PostComposer);
-							z ? (async e => {
+							N ? (async e => {
 								let {
 									state: t,
 									uploadKey: s,
@@ -715,7 +715,7 @@
 					};
 					return await E(Object(d.l)(e, t, async _ => {
 						var y, v, j, C;
-						N = !0, Object(d.k)(_.id, () => {
+						z = !0, Object(d.k)(_.id, () => {
 							U(!0)
 						});
 						const {
@@ -826,7 +826,7 @@
 									fileSource: n,
 									...w
 								}
-							})), z = !0, a && a(), i) {
+							})), N = !0, a && a(), i) {
 							const e = w.mimetype,
 								t = e && o.T[e];
 							if (e && t) {
@@ -891,11 +891,11 @@
 					}, !0)), U(!1), D().uploads[t] || null
 				}, B = (e, t) => async (s, r) => {
 					const n = r().uploads[e];
-					n && !Object(y.c)(n) && await s(z(n.file, n.key, t, n.metadata.fileSource, void 0))
+					n && !Object(y.c)(n) && await s(N(n.file, n.key, t, n.metadata.fileSource, void 0))
 				}, U = (e, t, s, o, i, d) => async (u, l) => {
 					const m = e.map((e, r) => new Promise(async r => {
 							const a = Object(y.d)(s, Object(n.a)().slice(-6));
-							await u(z(e, a, o, t, () => r({
+							await u(N(e, a, o, t, () => r({
 								uploadKey: a,
 								isValid: !0
 							}), i, d)), r({
@@ -929,12 +929,12 @@
 					}(h)), p.filter(e => e.isValid).map(e => e.uploadKey)
 				}, R = (e, t) => async (s, n) => {
 					const o = n(),
-						a = Object(w.W)(o),
+						a = Object(w.X)(o),
 						{
 							items: i
 						} = a,
 						l = !i.length && 1 === e.length,
-						m = Object(w.N)(o) && !l;
+						m = Object(w.O)(o) && !l;
 					let p = !1,
 						h = e;
 					if (m) {
@@ -958,8 +958,8 @@
 								hk: "6M4kX"
 							})
 						})), h = h.slice(0, e))
-					} else h = h.slice(0, 1), p = !0, s(Object(d.j)(N, !0));
-					const b = await s(U(h, t, N, !0));
+					} else h = h.slice(0, 1), p = !0, s(Object(d.j)(z, !0));
+					const b = await s(U(h, t, z, !0));
 					if (!b.length) return;
 					const _ = b.map(e => ({
 							uploadKey: e,
@@ -1423,8 +1423,8 @@
 				L = s("./src/reddit/icons/svgs/Send/index.tsx"),
 				P = s("./src/reddit/icons/svgs/Send2/index.tsx"),
 				T = s("./src/reddit/models/Post/index.ts"),
-				N = s("./src/reddit/models/PostCreationForm/index.ts"),
-				z = s("./src/reddit/selectors/chatPost.ts"),
+				z = s("./src/reddit/models/PostCreationForm/index.ts"),
+				N = s("./src/reddit/selectors/chatPost.ts"),
 				B = s("./src/reddit/selectors/comments.ts"),
 				U = s("./src/reddit/selectors/posts.ts"),
 				R = s("./src/reddit/selectors/PublicAccessNetwork/api.ts"),
@@ -1450,7 +1450,7 @@
 					errorMsgs: B.M,
 					errorType: B.N,
 					hasError: B.v,
-					isChatPost: z.d,
+					isChatPost: N.d,
 					isLivePostSpamRateEnabled: Q.j,
 					isOptimisticUIEnabled: Q.i,
 					liveStreamingChatCharacterLimit: e => {
@@ -1568,13 +1568,13 @@
 						} = this.props;
 						if (this.canSubmit()) {
 							const e = {
-								commentMode: N.i.RICH_TEXT,
+								commentMode: z.i.RICH_TEXT,
 								draftType: p.c.replyToComment,
 								rteState: this.state.rteState,
 								hasFocus: !0,
 								text: ""
 							};
-							this.cleanInputForm(), n(e, N.i.RICH_TEXT, t), s && setTimeout(() => this.focusOnForm(), 50), this.isAllowedToCreateLiveChatAssociation() && this.associationTimerId && !this.state.messageSent && (this.props.createChatTabAssociation({
+							this.cleanInputForm(), n(e, z.i.RICH_TEXT, t), s && setTimeout(() => this.focusOnForm(), 50), this.isAllowedToCreateLiveChatAssociation() && this.associationTimerId && !this.state.messageSent && (this.props.createChatTabAssociation({
 								postId: this.props.postId,
 								engagementType: X.o.Participated
 							}), clearTimeout(this.associationTimerId), this.setState({
@@ -2084,9 +2084,9 @@
 			})), s.d(t, "e", (function() {
 				return T
 			})), s.d(t, "w", (function() {
-				return N
-			})), s.d(t, "F", (function() {
 				return z
+			})), s.d(t, "F", (function() {
+				return N
 			})), s.d(t, "f", (function() {
 				return B
 			})), s.d(t, "l", (function() {
@@ -2356,14 +2356,14 @@
 					playback: c(s, e, t),
 					...i(s, e)
 				}),
-				N = (e, t) => s => ({
+				z = (e, t) => s => ({
 					source: "stream_player",
 					action: "mute",
 					noun: "volume",
 					playback: c(s, e, t),
 					...i(s, e)
 				}),
-				z = (e, t) => s => ({
+				N = (e, t) => s => ({
 					source: "stream_player",
 					action: "unmute",
 					noun: "volume",
@@ -2496,7 +2496,7 @@
 			})), s.d(t, "c", (function() {
 				return T
 			})), s.d(t, "f", (function() {
-				return N
+				return z
 			})), s.d(t, "a", (function() {
 				return U
 			})), s.d(t, "j", (function() {
@@ -2532,7 +2532,7 @@
 						const s = e[t];
 						if (!s) return e;
 						const r = s.stream.state,
-							n = z(r, a.a.ENDED) ? a.a.ENDED : r,
+							n = N(r, a.a.ENDED) ? a.a.ENDED : r,
 							o = s.stream.vod_accessible;
 						return n === r && !0 === o ? e : {
 							...e,
@@ -2550,7 +2550,7 @@
 						const s = e[t];
 						if (!s) return e;
 						const r = s.stream.state,
-							n = z(r, a.a.ENDED) ? a.a.ENDED : r,
+							n = N(r, a.a.ENDED) ? a.a.ENDED : r,
 							o = s.stream.vod_accessible;
 						return n === r && !1 === o ? e : {
 							...e,
@@ -2678,14 +2678,14 @@
 					...t[s],
 					preloadedPreviewUrl: e[s]
 				})))), Object(r.a)(F, e => e.publicAccessNetwork.preloads.streamPreviews, (e, t) => e && t[e])),
-				N = Object(r.a)((e, t) => {
+				z = Object(r.a)((e, t) => {
 					let {
 						streamIdFromPath: s
 					} = t;
 					return s ? C(e, s) : void 0
 				}, e => !e || e.chat_disabled || e.post.isArchived || e.post.isLocked);
 
-			function z(e, t) {
+			function N(e, t) {
 				const s = {
 					[a.a.NOT_STARTED]: 0,
 					[a.a.PUBLISHED]: 1,
@@ -2781,7 +2781,7 @@
 			})), s.d(t, "p", (function() {
 				return L
 			})), s.d(t, "k", (function() {
-				return N
+				return z
 			})), s.d(t, "r", (function() {
 				return B
 			})), s.d(t, "y", (function() {
@@ -2969,11 +2969,11 @@
 					membership: "Membership",
 					membershipAlt: "Supporter Membership"
 				},
-				N = (e, t) => Object.values(e.products.models).filter(e => e.type === d.a.Membership && t && e.subredditId === t),
-				z = (e, t) => {
+				z = (e, t) => Object.values(e.products.models).filter(e => e.type === d.a.Membership && t && e.subredditId === t),
+				N = (e, t) => {
 					if (!t) return {};
 					const s = T.prices;
-					N(e, t).forEach(e => {
+					z(e, t).forEach(e => {
 						e.price && e.currency && (s[e.currency] = e.price)
 					});
 					const r = y(e, t);
@@ -2983,7 +2983,7 @@
 					var s, r, n, o;
 					const a = (null === (o = null === (n = null === (r = null === (s = e.features) || void 0 === s ? void 0 : s.crypto) || void 0 === r ? void 0 : r.points) || void 0 === n ? void 0 : n[t || ""]) || void 0 === o ? void 0 : o.nomenclature) || T;
 					return {
-						prices: z(e, t),
+						prices: N(e, t),
 						member: a.member || T.member,
 						memberPlural: a.memberPlural || T.memberPlural,
 						memberAlt: a.memberAlt || T.memberAlt,
@@ -3063,4 +3063,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatMessageInput.21a56ff02b18d41d2e1d.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatMessageInput.4a4853d0d747e4137831.js.map

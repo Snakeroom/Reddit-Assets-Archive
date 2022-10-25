@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Reddit.f8abe0269bd5093bff54.js
-// Retrieved at 10/24/2022, 7:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Reddit.90cb2fb1ee2d97b98fc5.js
+// Retrieved at 10/25/2022, 10:20:07 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Reddit"], {
 		"./assets/fonts/BentonSans/font.less": function(e, t, n) {},
@@ -14867,7 +14867,7 @@
 				_l = n("./src/reddit/icons/fonts/Premium/index.tsx"),
 				Sl = n("./src/reddit/layout/row/InlineButton/index.tsx");
 			const Pl = e => Object(ti.c)(e, {
-				experimentName: Dn.eg,
+				experimentName: Dn.fg,
 				experimentEligibilitySelector: ti.a
 			}) === Dn.Pd;
 			var kl = n("./src/reddit/selectors/experiments/navbarLikeMweb.ts"),
@@ -18920,14 +18920,14 @@
 							}
 						})), Object(B.d)("enabled" === Object(ti.c)(s.getState(), {
 							experimentEligibilitySelector: ti.a,
-							experimentName: Dn.Xf,
+							experimentName: Dn.Yf,
 							expEventOverride: !1
 						})), Object(B.c)("enabled" === Object(ti.c)(s.getState(), {
 							experimentEligibilitySelector: ti.a,
-							experimentName: Dn.Zf
+							experimentName: Dn.ag
 						})), Object(B.g)("enabled" === Object(ti.c)(s.getState(), {
 							experimentEligibilitySelector: ti.a,
-							experimentName: Dn.Yf
+							experimentName: Dn.Zf
 						})), Object(B.f)(jv.gqlContext), window.addEventListener("beforeunload", () => {
 							const e = s.getState(),
 								t = Object(If.a)("tab_closed")(e),
@@ -21515,8 +21515,8 @@
 				f = n("./src/lib/getParsedUserAgent/index.ts");
 			const v = Object(a.a)(e => Object(m.c)(e, {
 				experimentEligibilitySelector: e => Object(f.g)(e.meta.userAgent) && Object(p.f)(e),
-				experimentName: l.Ef
-			}), e => e === l.Rf.Enabled);
+				experimentName: l.Ff
+			}), e => e === l.Sf.Enabled);
 			var O = n("./src/reddit/selectors/meta.ts"),
 				C = n("./src/reddit/selectors/responsiveSettings.ts"),
 				y = n("./src/reddit/selectors/accountManager/modalData.ts");
@@ -21525,7 +21525,7 @@
 					magicLinkVariant: g.a,
 					ssoLoginLinkVariant: e => Object(m.c)(e, {
 						experimentEligibilitySelector: e => !Object(p.e)(e),
-						experimentName: l.If
+						experimentName: l.Jf
 					}),
 					blockingInterstitialVariant: h.e,
 					blockingInterstitialV2Variant: h.f
@@ -21555,7 +21555,7 @@
 					if (j = Object(i.a)(j, {
 							experiment_d2x_2020ify_buttons: "enabled"
 						}), f && (j = Object(i.a)(j, {
-							[`experiment_${l.If}`]: f
+							[`experiment_${l.Jf}`]: f
 						})), E && (j = Object(i.a)(j, {
 							[`experiment_${l.Zd}`]: "enabled"
 						})), j = Object(i.a)(j, {
@@ -21563,7 +21563,7 @@
 						}), j = Object(i.a)(j, {
 							experiment_d2x_onboarding: "enabled"
 						}), x && (j = Object(i.a)(j, {
-							[`experiment_${l.Ef}`]: "enabled"
+							[`experiment_${l.Ff}`]: "enabled"
 						})), C && (j = Object(i.a)(j, {
 							[`experiment_${l.Qb}`]: b
 						})), y && (j = Object(i.a)(j, {
@@ -22590,4 +22590,4 @@
 		["./src/reddit/index.tsx", "runtime~Reddit", "vendors~CommentsPage~ModerationPages~Reddit~reddit-components-ClassicPost~reddit-components-CompactP~d737df3e", "vendors~CommentsPage~Governance~ModListing~ModerationPages~Reddit~Subreddit", "vendors~Chat~Governance~Reddit", "vendors~Reddit", "CommentsPage~Governance~Reddit~ReportFlow~Subreddit~reddit-components-BlankPost~reddit-components-Cl~5351df81", "Governance~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compo~bd4baca2", "Governance~ModListing~Reddit~ReportFlow~Subreddit", "Reddit~RpanListingUnit~StandalonePostPage~reddit-components-LargePost~reddit-components-MediumPost", "Governance~ModListing~Reddit~Subreddit", "Chat~Governance~Reddit", "Governance~Reddit~SubredditForkingCTA", "Governance~Reddit", "ModListing~Reddit"]
 	]
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit.f8abe0269bd5093bff54.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit.90cb2fb1ee2d97b98fc5.js.map

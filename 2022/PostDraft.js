@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostDraft.463f7f419d9cf851d75c.js
-// Retrieved at 10/24/2022, 4:40:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostDraft.b6861ee44028a06d763c.js
+// Retrieved at 10/25/2022, 10:20:07 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostDraft"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -324,7 +324,7 @@
 			})), n.d(t, "a", (function() {
 				return U
 			})), n.d(t, "c", (function() {
-				return V
+				return G
 			})), n.d(t, "h", (function() {
 				return X
 			})), n.d(t, "f", (function() {
@@ -547,7 +547,7 @@
 							hk: "4Ck6Cm"
 						})
 					}))
-				}, G = Object(i.a)(c.e), V = (e, t) => async (n, i, a) => {
+				}, V = Object(i.a)(c.e), G = (e, t) => async (n, i, a) => {
 					let {
 						apiContext: c
 					} = a;
@@ -558,7 +558,7 @@
 						} = l.platform.currentPage, a = Object(P.q)(l, {
 							collectionId: e
 						}), c = a && a.title || "", u = a && a.subredditId, m = u ? Object(T.c)(l, u) : "/";
-						n(G({
+						n(V({
 							collectionId: e,
 							collection: a
 						})), n(t ? Object(r.c)(Object(o.a)(i, ["collection"])) : Object(r.b)(m)), n(Object(d.f)({
@@ -1605,7 +1605,7 @@
 				f = p.a.ol("Ol", m.a),
 				x = p.a.div("Title", m.a),
 				g = Object(a.c)({
-					submissionType: l.mb
+					submissionType: l.nb
 				});
 			t.a = p.a.wrapped(Object(i.b)(g)(e => {
 				const {
@@ -1733,7 +1733,7 @@
 					subredditRules: N,
 					currentPostCollection: f.g,
 					isOpenAIPilotV1: g.g,
-					submissionType: E.mb
+					submissionType: E.nb
 				}),
 				B = Object(d.b)(D),
 				F = e => {
@@ -2742,7 +2742,7 @@
 							{
 								H: s,
 								D: o
-							} = V(e.a),
+							} = G(e.a),
 							{
 								c: d = []
 							} = e;
@@ -2860,16 +2860,16 @@
 						f: n,
 						t: r
 					} = e, o = [];
-					if (!n) return G(0, r, t);
+					if (!n) return V(0, r, t);
 					const i = Object(s.a)(r);
 					let a = 0,
 						c = 0;
 					const d = n.length;
 					for (; a < d; a++) {
 						const [e, t, s] = n[a], d = t + s, l = i[t], u = i[d] - l;
-						l > c && o.push(G(0, r.substr(c, l - c), `between${a}`)), o.push(G(e, r.substr(l, u), a)), c = l + u
+						l > c && o.push(V(0, r.substr(c, l - c), `between${a}`)), o.push(V(e, r.substr(l, u), a)), c = l + u
 					}
-					return c < r.length && o.push(G(0, r.substr(c), `remaining${a}`)), o
+					return c < r.length && o.push(V(0, r.substr(c), `remaining${a}`)), o
 				},
 				U = {
 					[m.j.monospace]: c.h,
@@ -2880,13 +2880,13 @@
 					[m.j.subscript]: c.l,
 					[m.j.superscript]: c.m
 				},
-				G = (e, t, n) => {
+				V = (e, t, n) => {
 					let s = t;
 					return s = o()(U, (t, s, r) => e & parseInt(r, 10) ? a.a.createElement(s, {
 						key: n
 					}, t) : t, s)
 				},
-				V = e => {
+				G = e => {
 					switch (e) {
 						case m.f:
 							return {
@@ -3224,12 +3224,12 @@
 						rtJsonElementProps: i
 					});
 					switch (o) {
-						case h.Uf.SmIcon:
+						case h.Vf.SmIcon:
 							return r.a.createElement(p, {
 								subredditName: s,
 								rtJsonElementProps: i
 							});
-						case h.Uf.SmIconHc:
+						case h.Vf.SmIconHc:
 							return r.a.createElement(p, {
 								subredditName: s,
 								isHoverable: !0,
@@ -3385,58 +3385,60 @@
 				o = n.n(r),
 				i = n("./node_modules/react/index.js"),
 				a = n.n(i),
-				c = n("./src/lib/lessComponent.tsx"),
-				d = n("./src/lib/opener/index.ts"),
-				l = n("./src/reddit/components/LinkOrOverlayLink/index.tsx"),
-				u = n("./src/reddit/components/OverflowMenu/index.tsx"),
-				m = n("./src/reddit/controls/Dropdown/Row.tsx"),
-				p = n("./src/reddit/helpers/path/index.ts"),
-				b = n("./src/reddit/components/Widgets/PostCollection/PostItem/OverflowMenu/index.m.less"),
-				h = n.n(b);
-			const f = c.a.wrapped(m.b, "DropdownRow", h.a);
+				c = n("./node_modules/react-redux/es/index.js"),
+				d = n("./src/lib/lessComponent.tsx"),
+				l = n("./src/lib/opener/index.ts"),
+				u = n("./src/reddit/components/LinkOrOverlayLink/index.tsx"),
+				m = n("./src/reddit/components/OverflowMenu/index.tsx"),
+				p = n("./src/reddit/controls/Dropdown/Row.tsx"),
+				b = n("./src/reddit/helpers/path/index.ts"),
+				h = n("./src/reddit/selectors/experiments/eventPosts.ts"),
+				f = n("./src/reddit/components/Widgets/PostCollection/PostItem/OverflowMenu/index.m.less"),
+				x = n.n(f);
+			const g = d.a.wrapped(p.b, "DropdownRow", x.a);
 			t.a = e => {
 				const {
 					isFutureEvent: t,
 					onAddEventStartTime: n,
 					onEditStartTime: r,
 					onStartEventNow: i,
-					postPermalink: c,
-					shouldShowAddEventStartTime: m,
-					targetPosition: b,
-					tooltipPosition: h
-				} = e;
-				return a.a.createElement(u.b, {
+					postPermalink: d,
+					shouldShowAddEventStartTime: p,
+					targetPosition: f,
+					tooltipPosition: x
+				} = e, E = !Object(c.e)(h.a);
+				return a.a.createElement(m.b, {
 					className: e.className,
 					dropdownId: e.dropdownId,
 					onClick: o.a,
-					targetPosition: b,
-					tooltipPosition: h
-				}, m && n && a.a.createElement(f, {
+					targetPosition: f,
+					tooltipPosition: x
+				}, p && n && E && a.a.createElement(g, {
 					onClick: n,
 					displayText: s.fbt._("Add event start time", null, {
 						hk: "4xWttR"
 					})
-				}), t && i && a.a.createElement(f, {
+				}), t && i && E && a.a.createElement(g, {
 					onClick: i,
 					displayText: s.fbt._("Start event now", null, {
 						hk: "2TTNfJ"
 					})
-				}), t && r && a.a.createElement(f, {
+				}), t && r && E && a.a.createElement(g, {
 					onClick: r,
 					displayText: s.fbt._("Edit start time", null, {
 						hk: "44XUxC"
 					})
-				}), a.a.createElement(f, {
+				}), a.a.createElement(g, {
 					onClick: e.onRemoveClick,
 					displayText: s.fbt._("Remove from collection", null, {
 						hk: "qsiiu"
 					})
-				}), c && a.a.createElement(l.a, {
-					target: d.d.BLANK,
-					rel: d.c,
+				}), d && a.a.createElement(u.a, {
+					target: l.d.BLANK,
+					rel: l.c,
 					isOverlay: !1,
-					to: Object(p.b)(c)
-				}, a.a.createElement(f, {
+					to: Object(b.b)(d)
+				}, a.a.createElement(g, {
 					displayText: s.fbt._("View post", null, {
 						hk: "1PtvnG"
 					})
@@ -3488,7 +3490,7 @@
 			const {
 				fbt: m
 			} = n("./node_modules/fbt/lib/FbtPublic.js"), p = Object(c.c)({
-				title: d.sb
+				title: d.tb
 			});
 			var b = Object(a.b)(p)(e => {
 					const {
@@ -4814,8 +4816,8 @@
 				H = n("./src/reddit/layout/page/Listing/index.tsx"),
 				W = n("./src/reddit/pages/ErrorPages/index.tsx"),
 				U = n("./src/reddit/selectors/postDraft.ts");
-			const G = Object(d.u)(),
-				V = Object(i.c)({
+			const V = Object(d.u)(),
+				G = Object(i.c)({
 					draft: (e, t) => {
 						let {
 							match: n
@@ -4825,7 +4827,7 @@
 						})
 					}
 				}),
-				J = Object(o.b)(V);
+				J = Object(o.b)(G);
 			class z extends s.Component {
 				render() {
 					const {
@@ -4847,7 +4849,7 @@
 					})
 				}
 			}
-			t.default = G(J(z))
+			t.default = V(J(z))
 		},
 		"./src/reddit/selectors/experiments/d2xPdpSideRailRecs.ts": function(e, t, n) {
 			"use strict";
@@ -4896,12 +4898,12 @@
 				c = e => {
 					return Object(o.c)(e, {
 						experimentEligibilitySelector: a,
-						experimentName: s.Of
+						experimentName: s.Pf
 					}) || ""
 				},
 				d = e => {
 					const t = c(e);
-					return t === s.Uf.SmIcon || t === s.Uf.SmIconHc
+					return t === s.Vf.SmIcon || t === s.Vf.SmIconHc
 				},
 				l = (e, t) => {
 					let {
@@ -4927,4 +4929,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostDraft.463f7f419d9cf851d75c.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostDraft.b6861ee44028a06d763c.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfileComments.abfd0d743a33e652f0cc.js
-// Retrieved at 10/24/2022, 4:40:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfileComments.eef415f137d163c9283f.js
+// Retrieved at 10/25/2022, 10:20:07 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfileComments"], {
 		"./node_modules/linkify-it/index.js": function(e, t, s) {
@@ -5276,8 +5276,8 @@
 					noun: "go_live",
 					subreddit: i.jb(e),
 					liveAudioRoom: {
-						title: Object(o.sb)(e),
-						topicIds: Object(o.rb)(e).topics.map(e => e.id)
+						title: Object(o.tb)(e),
+						topicIds: Object(o.sb)(e).topics.map(e => e.id)
 					}
 				}),
 				l = () => e => ({
@@ -5287,8 +5287,8 @@
 					noun: "schedule",
 					subreddit: i.jb(e),
 					liveAudioRoom: {
-						title: Object(o.sb)(e),
-						topicIds: Object(o.rb)(e).topics.map(e => e.id)
+						title: Object(o.tb)(e),
+						topicIds: Object(o.sb)(e).topics.map(e => e.id)
 					}
 				}),
 				m = () => e => ({
@@ -5298,7 +5298,7 @@
 					noun: "overflow",
 					subreddit: i.jb(e),
 					liveAudioRoom: {
-						title: Object(o.sb)(e)
+						title: Object(o.tb)(e)
 					}
 				}),
 				u = e => t => ({
@@ -5916,10 +5916,10 @@
 				r = s("./src/reddit/constants/experiments.ts"),
 				o = s("./src/reddit/helpers/chooseVariant/index.ts");
 			const i = Object(n.a)(e => Object(o.c)(e, {
-					experimentName: r.jg,
+					experimentName: r.kg,
 					experimentEligibilitySelector: o.a
 				}), e => e),
-				a = Object(n.a)(i, e => e === r.ag)
+				a = Object(n.a)(i, e => e === r.bg)
 		},
 		"./src/redditGQL/operations/CreateLiveAudioRoomOnProfile.json": function(e) {
 			e.exports = JSON.parse('{"id":"e35a47c6aa21"}')
@@ -5950,4 +5950,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileComments.abfd0d743a33e652f0cc.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileComments.eef415f137d163c9283f.js.map

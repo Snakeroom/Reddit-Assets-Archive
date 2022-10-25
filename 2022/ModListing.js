@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModListing.98bac728c73201d2ad28.js
-// Retrieved at 10/24/2022, 4:40:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModListing.cceabfd97758e4258084.js
+// Retrieved at 10/25/2022, 10:20:07 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModListing"], {
 		"./node_modules/classnames/index.js": function(e, t, n) {
@@ -1906,7 +1906,7 @@
 						experimentEligibilitySelector: i.R,
 						experimentName: r.vd
 					});
-					return !(!t || Object(r.ug)(t))
+					return !(!t || Object(r.vg)(t))
 				},
 				d = e => {
 					return Object(s.c)(e, {
@@ -2027,4 +2027,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModListing.98bac728c73201d2ad28.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModListing.cceabfd97758e4258084.js.map

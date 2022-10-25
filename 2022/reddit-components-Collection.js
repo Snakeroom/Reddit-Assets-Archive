@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Collection.2a35942add3ee5f335e7.js
-// Retrieved at 10/19/2022, 9:50:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Collection.ea4749b9812334a65d19.js
+// Retrieved at 10/25/2022, 10:20:07 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Collection"], {
 		"./src/reddit/components/Collection/PostAndPostEventMeta/index.m.less": function(e, t, o) {
@@ -682,58 +682,60 @@
 				l = o.n(n),
 				i = o("./node_modules/react/index.js"),
 				a = o.n(i),
-				r = o("./src/lib/lessComponent.tsx"),
-				c = o("./src/lib/opener/index.ts"),
-				d = o("./src/reddit/components/LinkOrOverlayLink/index.tsx"),
-				m = o("./src/reddit/components/OverflowMenu/index.tsx"),
-				p = o("./src/reddit/controls/Dropdown/Row.tsx"),
-				u = o("./src/reddit/helpers/path/index.ts"),
-				b = o("./src/reddit/components/Widgets/PostCollection/PostItem/OverflowMenu/index.m.less"),
-				P = o.n(b);
-			const h = r.a.wrapped(p.b, "DropdownRow", P.a);
+				r = o("./node_modules/react-redux/es/index.js"),
+				c = o("./src/lib/lessComponent.tsx"),
+				d = o("./src/lib/opener/index.ts"),
+				m = o("./src/reddit/components/LinkOrOverlayLink/index.tsx"),
+				p = o("./src/reddit/components/OverflowMenu/index.tsx"),
+				u = o("./src/reddit/controls/Dropdown/Row.tsx"),
+				b = o("./src/reddit/helpers/path/index.ts"),
+				P = o("./src/reddit/selectors/experiments/eventPosts.ts"),
+				h = o("./src/reddit/components/Widgets/PostCollection/PostItem/OverflowMenu/index.m.less"),
+				E = o.n(h);
+			const C = c.a.wrapped(u.b, "DropdownRow", E.a);
 			t.a = e => {
 				const {
 					isFutureEvent: t,
 					onAddEventStartTime: o,
 					onEditStartTime: n,
 					onStartEventNow: i,
-					postPermalink: r,
-					shouldShowAddEventStartTime: p,
-					targetPosition: b,
-					tooltipPosition: P
-				} = e;
-				return a.a.createElement(m.b, {
+					postPermalink: c,
+					shouldShowAddEventStartTime: u,
+					targetPosition: h,
+					tooltipPosition: E
+				} = e, v = !Object(r.e)(P.a);
+				return a.a.createElement(p.b, {
 					className: e.className,
 					dropdownId: e.dropdownId,
 					onClick: l.a,
-					targetPosition: b,
-					tooltipPosition: P
-				}, p && o && a.a.createElement(h, {
+					targetPosition: h,
+					tooltipPosition: E
+				}, u && o && v && a.a.createElement(C, {
 					onClick: o,
 					displayText: s.fbt._("Add event start time", null, {
 						hk: "4xWttR"
 					})
-				}), t && i && a.a.createElement(h, {
+				}), t && i && v && a.a.createElement(C, {
 					onClick: i,
 					displayText: s.fbt._("Start event now", null, {
 						hk: "2TTNfJ"
 					})
-				}), t && n && a.a.createElement(h, {
+				}), t && n && v && a.a.createElement(C, {
 					onClick: n,
 					displayText: s.fbt._("Edit start time", null, {
 						hk: "44XUxC"
 					})
-				}), a.a.createElement(h, {
+				}), a.a.createElement(C, {
 					onClick: e.onRemoveClick,
 					displayText: s.fbt._("Remove from collection", null, {
 						hk: "qsiiu"
 					})
-				}), r && a.a.createElement(d.a, {
-					target: c.d.BLANK,
-					rel: c.c,
+				}), c && a.a.createElement(m.a, {
+					target: d.d.BLANK,
+					rel: d.c,
 					isOverlay: !1,
-					to: Object(u.b)(r)
-				}, a.a.createElement(h, {
+					to: Object(b.b)(c)
+				}, a.a.createElement(C, {
 					displayText: s.fbt._("View post", null, {
 						hk: "1PtvnG"
 					})
@@ -742,4 +744,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Collection.2a35942add3ee5f335e7.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Collection.ea4749b9812334a65d19.js.map
