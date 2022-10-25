@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/UsernameConfirmationModals.880a159a21bfcbe37dfc.js
-// Retrieved at 10/18/2022, 11:40:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/UsernameConfirmationModals.44201235f6bda8e86ee5.js
+// Retrieved at 10/25/2022, 1:00:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["UsernameConfirmationModals"], {
 		"./src/chat/controls/Svg/index.m.less": function(e, t, n) {
@@ -154,8 +154,8 @@
 				f = n("./src/reddit/components/InfoTextTooltip/Hooked.tsx"),
 				g = n("./src/reddit/components/Settings/ModalContainer/index.tsx"),
 				C = n("./src/reddit/controls/Button/index.tsx"),
-				E = n("./src/reddit/controls/Link/index.tsx"),
-				_ = n("./src/reddit/hooks/useInfoTextTooltip.ts"),
+				_ = n("./src/reddit/controls/Link/index.tsx"),
+				E = n("./src/reddit/hooks/useInfoTextTooltip.ts"),
 				O = n("./src/reddit/icons/fonts/index.tsx"),
 				N = n("./src/reddit/components/Onboarding/UsernameConfirmationModals/index.m.less"),
 				v = n.n(N);
@@ -248,7 +248,7 @@
 						username: d
 					} = e;
 					Object(s.useEffect)(l, []);
-					const m = Object(_.a)({
+					const m = Object(E.a)({
 							placement: "top"
 						}),
 						u = Object(s.useCallback)(e => {
@@ -291,7 +291,7 @@
 						className: Object(h.a)(v.a.confirmContainer, {
 							[v.a.mResponsive]: n
 						}),
-						description: a.fbt._("You’re logged in through a {=connected Google account}. If you have a different Reddit account you’d like to use, log in using your username and password.", [a.fbt._param("=connected Google account", o.a.createElement(E.a, {
+						description: a.fbt._("You’re logged in through a {=connected Google account}. If you have a different Reddit account you’d like to use, log in using your username and password.", [a.fbt._param("=connected Google account", o.a.createElement(_.a, {
 							target: "_blank",
 							href: "https://reddit.zendesk.com/hc/en-us/categories/200073949-Reddit-101"
 						}, a.fbt._("connected Google account", null, {
@@ -317,7 +317,7 @@
 						kind: C.b.Button,
 						onClick: c,
 						priority: C.c.Plain
-					}, A())))
+					}, I())))
 				},
 				M = () => a.fbt._("Change username", null, {
 					hk: "3l2BGo"
@@ -337,17 +337,17 @@
 				T = () => a.fbt._("Yes, Keep this Name", null, {
 					hk: "4iElQQ"
 				}),
-				A = () => a.fbt._("Log in to a different account", null, {
+				I = () => a.fbt._("Log in to a different account", null, {
 					hk: "2BmtHB"
 				});
-			var I = n("./src/reddit/components/Settings/ChangeUsernameModal.tsx"),
+			var A = n("./src/reddit/components/Settings/ChangeUsernameModal.tsx"),
 				R = n("./src/reddit/components/Settings/modalIds.ts"),
 				L = n("./src/reddit/constants/parameters.ts"),
 				P = n("./src/reddit/contexts/ApiContext.tsx"),
 				H = n("./src/reddit/endpoints/user/updateUsername.ts"),
 				D = n("./src/reddit/helpers/trackers/changeUsername.ts"),
-				W = n("./src/reddit/helpers/trackers/onboarding.ts"),
-				K = n("./src/reddit/hooks/useTracking.ts"),
+				K = n("./src/reddit/helpers/trackers/onboarding.ts"),
+				W = n("./src/reddit/hooks/useTracking.ts"),
 				F = n("./src/reddit/models/Toast/index.ts"),
 				V = n("./src/reddit/selectors/activeModalId.ts");
 			const G = e => e && e.fields && e.fields.length ? e.fields.map(e => {
@@ -419,52 +419,52 @@
 						logOutAndOpenLoginModal: f,
 						openInterceptActionModal: g,
 						saveUsernameError: C,
-						saveUsernameSuccess: E,
-						username: _,
+						saveUsernameSuccess: _,
+						username: E,
 						welcomeBackModalOpen: O
 					} = e;
-					const [N, v] = Object(s.useState)(_ || ""), [x, M] = Object(s.useState)(!1), S = Object(K.a)(), U = Object(s.useCallback)(async () => {
+					const [N, v] = Object(s.useState)(E || ""), [x, M] = Object(s.useState)(!1), S = Object(W.a)(), U = Object(s.useCallback)(async () => {
 						M(!0);
 						const e = await Object(H.a)(t(), N);
-						e.ok ? (S(Object(D.j)()), E(N, _)) : (C(G(e.error)), M(!1))
-					}, [t, _, S, C, E, N]);
+						e.ok ? (S(Object(D.j)()), _(N, E)) : (C(G(e.error)), M(!1))
+					}, [t, E, S, C, _, N]);
 					return o.a.createElement(s.Fragment, null, O && o.a.createElement(y, {
 						isNameEditable: p,
 						isResponsive: h,
 						onPrimaryButtonClick: () => {
-							p ? g() : r(), S(Object(W.e)(W.a.CONTINUE))
+							p ? g() : r(), S(Object(K.e)(K.a.CONTINUE))
 						},
 						onSecondaryButtonClick: () => {
-							f(), S(Object(W.e)(W.a.LOGIN_ANOTHER_ACCOUNT))
+							f(), S(Object(K.e)(K.a.LOGIN_ANOTHER_ACCOUNT))
 						},
-						onTooltipView: () => S(Object(W.F)()),
+						onTooltipView: () => S(Object(K.M)()),
 						onView: () => {
-							S(Object(W.f)())
+							S(Object(K.f)())
 						},
 						username: N
 					}), u && o.a.createElement(j, {
 						isResponsive: h,
 						onPrimaryButtonClick: () => {
-							d(), S(Object(W.B)(W.b.KEEP_USERNAME))
+							d(), S(Object(K.I)(K.b.KEEP_USERNAME))
 						},
 						onSecondaryButtonClick: () => {
-							c(), S(Object(W.B)(W.b.CHANGE_USERNAME))
+							c(), S(Object(K.I)(K.b.CHANGE_USERNAME))
 						},
-						onView: () => S(Object(W.C)()),
+						onView: () => S(Object(K.J)()),
 						username: N
 					}), i && o.a.createElement(k, {
 						isResponsive: h,
 						isSaving: x,
 						onPrimaryButtonClick: () => {
-							U(), S(Object(W.D)(W.c.YES_KEEP_USERNAME))
+							U(), S(Object(K.K)(K.c.YES_KEEP_USERNAME))
 						},
 						onSecondaryButtonClick: () => {
-							m(), S(Object(W.D)(W.c.GO_BACK))
+							m(), S(Object(K.K)(K.c.GO_BACK))
 						},
-						onView: () => S(Object(W.E)()),
+						onView: () => S(Object(K.L)()),
 						username: N
-					}), n && o.a.createElement(I.a, {
-						initialUsername: _ || "",
+					}), n && o.a.createElement(A.a, {
+						initialUsername: E || "",
 						isResponsive: h,
 						onClose: r,
 						onContinue: () => {
@@ -500,8 +500,8 @@
 				f = n("./src/reddit/constants/headers.ts"),
 				g = n("./src/reddit/components/Settings/SuggestedUsernames/index.m.less"),
 				C = n.n(g);
-			const E = m.a.wrapped(u.a, "refreshIcon", C.a),
-				_ = m.a.button("refreshButton", C.a),
+			const _ = m.a.wrapped(u.a, "refreshIcon", C.a),
+				E = m.a.button("refreshButton", C.a),
 				O = e => e > 3 ? 3 : e;
 			var N = Object(p.b)(e => {
 					const {
@@ -550,10 +550,10 @@
 						hk: "2yXDBw"
 					}) : a.fbt._("Can’t think of one? Use one of these:", null, {
 						hk: "23kfek"
-					}), c.a.createElement(_, {
+					}), c.a.createElement(E, {
 						disabled: p,
 						onClick: v
-					}, c.a.createElement(E, null))), c.a.createElement("ul", {
+					}, c.a.createElement(_, null))), c.a.createElement("ul", {
 						className: C.a.suggestedUsernames
 					}, m.slice(...o).map(e => c.a.createElement("li", {
 						className: Object(i.a)(C.a.suggestedUsername, {
@@ -576,10 +576,10 @@
 				T = () => a.fbt._("Great name! It's not taken, so it's all yours.", null, {
 					hk: "42rpS"
 				}),
-				A = () => a.fbt._("Sorry, this username is taken. Try another.", null, {
+				I = () => a.fbt._("Sorry, this username is taken. Try another.", null, {
 					hk: "2HkykK"
 				}),
-				I = () => a.fbt._("Username must be between 3 and 20 characters.", null, {
+				A = () => a.fbt._("Username must be between 3 and 20 characters.", null, {
 					hk: "1V72yV"
 				}),
 				R = () => a.fbt._("Sorry, something went wrong. Try again later.", null, {
@@ -596,7 +596,7 @@
 			class H extends c.a.Component {
 				constructor() {
 					super(...arguments), this.state = L, this.checkUsername = async e => e.length < B || e.length > w ? {
-						error: I(),
+						error: A(),
 						state: l.a.Invalid
 					} : e === this.props.initialUsername ? P : await this.validateUsername(e), this.validateUsername = async e => {
 						const {
@@ -605,7 +605,7 @@
 							username: e
 						});
 						return a.ok ? !0 === a.body ? P : {
-							error: A(),
+							error: I(),
 							state: l.a.Invalid
 						} : a.error && a.error.fields && a.error.fields[0] ? {
 							error: a.error.fields[0].msg,
@@ -825,9 +825,9 @@
 			})), n.d(t, "d", (function() {
 				return C
 			})), n.d(t, "g", (function() {
-				return E
-			})), n.d(t, "c", (function() {
 				return _
+			})), n.d(t, "c", (function() {
+				return E
 			})), n.d(t, "i", (function() {
 				return O
 			})), n.d(t, "e", (function() {
@@ -890,13 +890,13 @@
 					},
 					source: e
 				}),
-				E = () => e => ({
+				_ = () => e => ({
 					...Object(u.o)(e),
 					action: l.c.VIEW,
 					noun: a.CHANGE_USERNAME_CONFIRMATION,
 					source: p
 				}),
-				_ = e => t => ({
+				E = e => t => ({
 					...Object(u.o)(t),
 					action: l.c.CLICK,
 					noun: a.CHANGE_USERNAME_CONFIRMATION,
@@ -978,4 +978,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/UsernameConfirmationModals.880a159a21bfcbe37dfc.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/UsernameConfirmationModals.44201235f6bda8e86ee5.js.map

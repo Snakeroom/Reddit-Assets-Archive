@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Reddit.4adaedaf5a017c3fc526.js
-// Retrieved at 10/25/2022, 12:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Reddit.6297e451034ef1f48fc8.js
+// Retrieved at 10/25/2022, 1:00:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Reddit"], {
 		"./assets/fonts/BentonSans/font.less": function(e, t, n) {},
@@ -2438,7 +2438,7 @@
 						} = this.props;
 						if (this.currentStep) {
 							const e = ee[this.currentStep];
-							e && c(Object(I.w)(e))
+							e && c(Object(I.A)(e))
 						}
 						s && e === p.a.NsfwBlockingModal && i(), this.isSignupSurveyTriggerSource() && (this.isSignupModalDismissed = !0), (t || n) && e !== p.a.NsfwBlockingModal && c(Object(M.a)()), o && Object(w.a)(), this.close(), this.isSignupModalDismissed && r && a()
 					}, this.close = () => {
@@ -8428,7 +8428,7 @@
 				return l
 			})), n.d(t, "h", (function() {
 				return d
-			})), n.d(t, "w", (function() {
+			})), n.d(t, "A", (function() {
 				return u
 			})), n.d(t, "q", (function() {
 				return m
@@ -8436,56 +8436,70 @@
 				return p
 			})), n.d(t, "l", (function() {
 				return b
-			})), n.d(t, "p", (function() {
-				return h
-			})), n.d(t, "u", (function() {
-				return g
-			})), n.d(t, "j", (function() {
-				return f
-			})), n.d(t, "o", (function() {
-				return v
-			})), n.d(t, "t", (function() {
-				return O
-			})), n.d(t, "n", (function() {
-				return C
-			})), n.d(t, "s", (function() {
-				return y
-			})), n.d(t, "i", (function() {
-				return E
-			})), n.d(t, "k", (function() {
-				return x
-			})), n.d(t, "A", (function() {
-				return j
-			})), n.d(t, "x", (function() {
-				return _
 			})), n.d(t, "z", (function() {
-				return S
+				return h
+			})), n.d(t, "p", (function() {
+				return g
+			})), n.d(t, "u", (function() {
+				return f
+			})), n.d(t, "j", (function() {
+				return v
 			})), n.d(t, "y", (function() {
+				return O
+			})), n.d(t, "o", (function() {
+				return C
+			})), n.d(t, "t", (function() {
+				return y
+			})), n.d(t, "x", (function() {
+				return E
+			})), n.d(t, "n", (function() {
+				return x
+			})), n.d(t, "s", (function() {
+				return j
+			})), n.d(t, "i", (function() {
+				return _
+			})), n.d(t, "w", (function() {
+				return S
+			})), n.d(t, "k", (function() {
 				return P
-			})), n.d(t, "r", (function() {
-				return k
-			})), n.d(t, "m", (function() {
-				return N
-			})), n.d(t, "a", (function() {
-				return M
-			})), n.d(t, "b", (function() {
-				return I
-			})), n.d(t, "c", (function() {
-				return A
-			})), n.d(t, "f", (function() {
-				return T
-			})), n.d(t, "e", (function() {
-				return R
-			})), n.d(t, "C", (function() {
-				return L
-			})), n.d(t, "B", (function() {
-				return D
 			})), n.d(t, "E", (function() {
-				return F
+				return k
+			})), n.d(t, "B", (function() {
+				return N
 			})), n.d(t, "D", (function() {
+				return w
+			})), n.d(t, "C", (function() {
+				return M
+			})), n.d(t, "r", (function() {
+				return I
+			})), n.d(t, "m", (function() {
+				return A
+			})), n.d(t, "a", (function() {
+				return R
+			})), n.d(t, "b", (function() {
+				return L
+			})), n.d(t, "c", (function() {
+				return D
+			})), n.d(t, "f", (function() {
+				return F
+			})), n.d(t, "e", (function() {
 				return U
-			})), n.d(t, "F", (function() {
+			})), n.d(t, "J", (function() {
 				return B
+			})), n.d(t, "I", (function() {
+				return G
+			})), n.d(t, "L", (function() {
+				return H
+			})), n.d(t, "K", (function() {
+				return q
+			})), n.d(t, "M", (function() {
+				return W
+			})), n.d(t, "H", (function() {
+				return V
+			})), n.d(t, "G", (function() {
+				return z
+			})), n.d(t, "F", (function() {
+				return Q
 			}));
 			var s = n("./src/reddit/constants/tracking.ts"),
 				o = n("./src/reddit/selectors/telemetry.ts");
@@ -8493,7 +8507,7 @@
 				a = "onboarding";
 			var i;
 			! function(e) {
-				e.CATEGORY = "category", e.CREATE_ACCOUNT_SCREEN_DROPDOWN = "create_account_screen_dropdown", e.EXIT = "exit", e.GENDER = "gender", e.ONBOARDING_COMMUNITY_RECOMMENDATIONS = "onboarding_community_recommendations", e.ONBOARDING_GENDER_COLLECTION = "onboarding_gender_collection", e.ONBOARDING_INTEREST = "onboarding_interest", e.SUB_CATEGORY = "sub_category", e.SUBREDDIT = "subreddit", e.TOPIC_PREVIEW = "topic_preview", e.VIEW_MORE = "view_more", e.GOOGLE_ACCOUNT_CONFIRMATION_SCREEN = "google_account_confirmation_screen", e.USERNAME_SECOND_CONFIRMATION_SCREEN = "username_second_confirmation_screen", e.USERNAME_CONFIRMATION_SCREEN = "username_confirmation_screen", e.USERNAME_TOOLTIP = "username_tooltip"
+				e.CATEGORY = "category", e.CREATE_ACCOUNT_SCREEN_DROPDOWN = "create_account_screen_dropdown", e.EXIT = "exit", e.GENDER = "gender", e.ONBOARDING_COMMUNITY_RECOMMENDATIONS = "onboarding_community_recommendations", e.ONBOARDING_GENDER_COLLECTION = "onboarding_gender_collection", e.ONBOARDING_INTEREST = "onboarding_interest", e.ONBOARDING_LANGUAGE_SELECTION = "onboarding_language_collection", e.SETTINGS_LANGUAGE_COLLECTION = "settings_language_collection", e.SUB_CATEGORY = "sub_category", e.SUBREDDIT = "subreddit", e.TOPIC_PREVIEW = "topic_preview", e.VIEW_MORE = "view_more", e.GOOGLE_ACCOUNT_CONFIRMATION_SCREEN = "google_account_confirmation_screen", e.USERNAME_SECOND_CONFIRMATION_SCREEN = "username_second_confirmation_screen", e.USERNAME_CONFIRMATION_SCREEN = "username_confirmation_screen", e.USERNAME_TOOLTIP = "username_tooltip"
 			}(i || (i = {}));
 			const c = function() {
 					let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : r;
@@ -8545,43 +8559,73 @@
 					action: s.c.VIEW,
 					noun: i.ONBOARDING_COMMUNITY_RECOMMENDATIONS
 				}),
-				h = () => e => ({
-					...Object(o.o)(e),
+				h = e => t => ({
+					...Object(o.o)(t),
 					source: a,
-					action: s.c.SUBMIT,
-					noun: i.ONBOARDING_GENDER_COLLECTION
+					action: s.c.VIEW,
+					noun: i.ONBOARDING_LANGUAGE_SELECTION,
+					actionInfo: {
+						...Object(o.d)(t),
+						type: e
+					}
 				}),
 				g = () => e => ({
 					...Object(o.o)(e),
 					source: a,
 					action: s.c.SUBMIT,
-					noun: i.ONBOARDING_INTEREST
+					noun: i.ONBOARDING_GENDER_COLLECTION
 				}),
 				f = () => e => ({
 					...Object(o.o)(e),
 					source: a,
 					action: s.c.SUBMIT,
-					noun: i.ONBOARDING_COMMUNITY_RECOMMENDATIONS
+					noun: i.ONBOARDING_INTEREST
 				}),
 				v = () => e => ({
+					...Object(o.o)(e),
+					source: a,
+					action: s.c.SUBMIT,
+					noun: i.ONBOARDING_COMMUNITY_RECOMMENDATIONS
+				}),
+				O = e => t => ({
+					...Object(o.o)(t),
+					source: a,
+					action: s.c.SUBMIT,
+					noun: i.ONBOARDING_LANGUAGE_SELECTION,
+					actionInfo: {
+						...Object(o.d)(t),
+						type: e
+					}
+				}),
+				C = () => e => ({
 					...Object(o.o)(e),
 					source: a,
 					action: s.c.SKIP,
 					noun: i.ONBOARDING_GENDER_COLLECTION
 				}),
-				O = () => e => ({
+				y = () => e => ({
 					...Object(o.o)(e),
 					source: a,
 					action: s.c.SKIP,
 					noun: i.ONBOARDING_INTEREST
 				}),
-				C = () => e => ({
+				E = e => t => ({
+					...Object(o.o)(t),
+					source: a,
+					action: s.c.SKIP,
+					noun: i.ONBOARDING_LANGUAGE_SELECTION,
+					actionInfo: {
+						...Object(o.d)(t),
+						type: e
+					}
+				}),
+				x = () => e => ({
 					...Object(o.o)(e),
 					source: a,
 					action: s.c.SELECT,
 					noun: i.GENDER
 				}),
-				y = (e, t, n, r, c) => l => ({
+				j = (e, t, n, r, c) => l => ({
 					...Object(o.o)(l),
 					source: a,
 					action: e ? s.c.SELECT : s.c.DESELECT,
@@ -8591,11 +8635,11 @@
 					},
 					noun: t ? i.CATEGORY : i.SUB_CATEGORY,
 					onboarding: {
-						categoryName: w(n),
+						categoryName: T(n),
 						categoryId: r
 					}
 				}),
-				E = (e, t, n, r, c, l) => d => ({
+				_ = (e, t, n, r, c, l) => d => ({
 					...Object(o.o)(d),
 					source: a,
 					action: e ? s.c.SELECT : s.c.DESELECT,
@@ -8605,51 +8649,62 @@
 					},
 					noun: i.SUBREDDIT,
 					onboarding: {
-						categoryName: w(t),
+						categoryName: T(t),
 						categoryId: n,
 						subredditName: r,
 						subredditId: c
 					}
 				}),
-				x = (e, t) => n => ({
+				S = (e, t, n) => r => ({
+					...Object(o.o)(r),
+					source: a,
+					action: n ? s.c.SELECT : s.c.DESELECT,
+					noun: i.ONBOARDING_LANGUAGE_SELECTION,
+					actionInfo: {
+						...Object(o.d)(r),
+						reason: t,
+						type: e
+					}
+				}),
+				P = (e, t) => n => ({
 					...Object(o.o)(n),
 					source: a,
 					action: s.c.CLICK,
 					noun: i.VIEW_MORE,
 					onboarding: {
-						categoryName: w(e),
+						categoryName: T(e),
 						categoryId: t
 					}
 				}),
-				j = () => e => ({
+				k = () => e => ({
 					...Object(o.o)(e),
 					source: "topic_chaining_prompt",
 					action: s.c.VIEW,
 					noun: i.TOPIC_PREVIEW
 				}),
-				_ = () => e => ({
+				N = () => e => ({
 					...Object(o.o)(e),
 					source: "topic_chaining_prompt",
 					action: s.c.CLICK,
 					noun: i.TOPIC_PREVIEW
 				}),
-				S = (e, t) => n => ({
+				w = (e, t) => n => ({
 					...Object(o.o)(n),
 					source: "topic_chaining_prompt",
 					action: s.c.SELECT,
 					noun: i.CATEGORY,
 					onboarding: {
-						categoryName: w(e),
+						categoryName: T(e),
 						categoryId: t
 					}
 				}),
-				P = () => e => ({
+				M = () => e => ({
 					...Object(o.o)(e),
 					source: "topic_chaining_prompt",
 					action: s.c.DISMISS,
 					noun: i.TOPIC_PREVIEW
 				}),
-				k = (e, t, n, r) => c => ({
+				I = (e, t, n, r) => c => ({
 					...Object(o.o)(c),
 					source: a,
 					action: s.c.VIEW,
@@ -8659,11 +8714,11 @@
 						reason: r
 					},
 					onboarding: {
-						categoryName: w(t),
+						categoryName: T(t),
 						categoryId: n
 					}
 				}),
-				N = (e, t, n, r, c) => l => ({
+				A = (e, t, n, r, c) => l => ({
 					...Object(o.o)(l),
 					source: a,
 					action: s.c.VIEW,
@@ -8673,59 +8728,27 @@
 					},
 					noun: i.SUBREDDIT,
 					onboarding: {
-						categoryName: w(e),
+						categoryName: T(e),
 						categoryId: n,
 						subredditName: t,
 						subredditId: r
 					}
 				}),
-				w = e => e.toLowerCase().replace(new RegExp("&", "g"), "and").replace(new RegExp(" ", "g"), "_").replace(new RegExp("[^-_a-z0-9]", "g"), "");
-			var M, I, A;
+				T = e => e.toLowerCase().replace(new RegExp("&", "g"), "and").replace(new RegExp(" ", "g"), "_").replace(new RegExp("[^-_a-z0-9]", "g"), "");
+			var R, L, D;
 			! function(e) {
 				e.CONTINUE = "continue", e.LOGIN_ANOTHER_ACCOUNT = "login_another_account"
-			}(M || (M = {})),
+			}(R || (R = {})),
 			function(e) {
 				e.CHANGE_USERNAME = "change_username", e.KEEP_USERNAME = "keep_username"
-			}(I || (I = {})),
+			}(L || (L = {})),
 			function(e) {
 				e.GO_BACK = "go_back", e.YES_KEEP_USERNAME = "yes_keep_username"
-			}(A || (A = {}));
-			const T = () => e => ({
+			}(D || (D = {}));
+			const F = () => e => ({
 					...Object(o.o)(e),
 					action: s.c.VIEW,
 					noun: i.GOOGLE_ACCOUNT_CONFIRMATION_SCREEN,
-					source: a
-				}),
-				R = e => t => ({
-					...Object(o.o)(t),
-					action: s.c.CLICK,
-					actionInfo: {
-						...Object(o.d)(t),
-						reason: e
-					},
-					noun: i.GOOGLE_ACCOUNT_CONFIRMATION_SCREEN,
-					source: a
-				}),
-				L = () => e => ({
-					...Object(o.o)(e),
-					action: s.c.VIEW,
-					noun: i.USERNAME_CONFIRMATION_SCREEN,
-					source: a
-				}),
-				D = e => t => ({
-					...Object(o.o)(t),
-					action: s.c.CLICK,
-					actionInfo: {
-						...Object(o.d)(t),
-						reason: e
-					},
-					noun: i.USERNAME_CONFIRMATION_SCREEN,
-					source: a
-				}),
-				F = () => e => ({
-					...Object(o.o)(e),
-					action: s.c.VIEW,
-					noun: i.USERNAME_SECOND_CONFIRMATION_SCREEN,
 					source: a
 				}),
 				U = e => t => ({
@@ -8735,14 +8758,77 @@
 						...Object(o.d)(t),
 						reason: e
 					},
-					noun: i.USERNAME_SECOND_CONFIRMATION_SCREEN,
+					noun: i.GOOGLE_ACCOUNT_CONFIRMATION_SCREEN,
 					source: a
 				}),
 				B = () => e => ({
 					...Object(o.o)(e),
 					action: s.c.VIEW,
+					noun: i.USERNAME_CONFIRMATION_SCREEN,
+					source: a
+				}),
+				G = e => t => ({
+					...Object(o.o)(t),
+					action: s.c.CLICK,
+					actionInfo: {
+						...Object(o.d)(t),
+						reason: e
+					},
+					noun: i.USERNAME_CONFIRMATION_SCREEN,
+					source: a
+				}),
+				H = () => e => ({
+					...Object(o.o)(e),
+					action: s.c.VIEW,
+					noun: i.USERNAME_SECOND_CONFIRMATION_SCREEN,
+					source: a
+				}),
+				q = e => t => ({
+					...Object(o.o)(t),
+					action: s.c.CLICK,
+					actionInfo: {
+						...Object(o.d)(t),
+						reason: e
+					},
+					noun: i.USERNAME_SECOND_CONFIRMATION_SCREEN,
+					source: a
+				}),
+				W = () => e => ({
+					...Object(o.o)(e),
+					action: s.c.VIEW,
 					noun: i.USERNAME_TOOLTIP,
 					source: a
+				}),
+				V = e => t => ({
+					...Object(o.o)(t),
+					source: "settings",
+					action: s.c.VIEW,
+					noun: i.SETTINGS_LANGUAGE_COLLECTION,
+					actionInfo: {
+						...Object(o.d)(t),
+						type: e
+					}
+				}),
+				z = e => t => ({
+					...Object(o.o)(t),
+					source: "settings",
+					action: s.c.SUBMIT,
+					noun: i.SETTINGS_LANGUAGE_COLLECTION,
+					actionInfo: {
+						...Object(o.d)(t),
+						type: e
+					}
+				}),
+				Q = (e, t, n) => r => ({
+					...Object(o.o)(r),
+					source: "settings",
+					action: n ? s.c.SELECT : s.c.DESELECT,
+					noun: i.SETTINGS_LANGUAGE_COLLECTION,
+					actionInfo: {
+						...Object(o.d)(r),
+						reason: t,
+						type: e
+					}
 				})
 		},
 		"./src/reddit/helpers/trackers/shortcuts.ts": function(e, t, n) {
@@ -22592,4 +22678,4 @@
 		["./src/reddit/index.tsx", "runtime~Reddit", "vendors~CommentsPage~ModerationPages~Reddit~reddit-components-ClassicPost~reddit-components-CompactP~d737df3e", "vendors~CommentsPage~Governance~ModListing~ModerationPages~Reddit~Subreddit", "vendors~Chat~Governance~Reddit", "vendors~Reddit", "CommentsPage~Governance~Reddit~ReportFlow~Subreddit~reddit-components-BlankPost~reddit-components-Cl~5351df81", "Governance~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compo~bd4baca2", "Governance~ModListing~Reddit~ReportFlow~Subreddit", "Reddit~RpanListingUnit~StandalonePostPage~reddit-components-LargePost~reddit-components-MediumPost", "Governance~ModListing~Reddit~Subreddit", "Chat~Governance~Reddit", "Governance~Reddit~SubredditForkingCTA", "Governance~Reddit", "ModListing~Reddit"]
 	]
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit.4adaedaf5a017c3fc526.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit.6297e451034ef1f48fc8.js.map

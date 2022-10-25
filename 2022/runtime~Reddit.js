@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/runtime~Reddit.bd064dfc6401381ed679.js
-// Retrieved at 10/25/2022, 11:40:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/runtime~Reddit.59763506b23b5cf804a8.js
+// Retrieved at 10/25/2022, 1:00:06 PM by Reddit Dataminer v1.0.0
 ! function(e) {
 	function o(o) {
 		for (var a, n, r = o[0], s = o[1], c = o[2], l = 0, b = []; l < r.length; l++) n = r[l], Object.prototype.hasOwnProperty.call(d, n) && d[n] && b.push(d[n][0]), d[n] = 0;
@@ -1411,7 +1411,7 @@
 						6: "42cae2debca8192f5108",
 						7: "97e9f3b0945e3bb97064",
 						8: "aa4182e8e56fe711554a",
-						OnboardingModal: "993745e997c991c1e4a9",
+						OnboardingModal: "c907250767184d74ba2a",
 						AchievementsActions: "da08850910a0cbce8322",
 						Acknowledgements: "efde33ee05a429f5f0bb",
 						Appeal: "2873154306d5a7bee00c",
@@ -1460,7 +1460,7 @@
 						"SubredditWiki~reddit-components-Wiki-ModHubWikiManagement": "43f91cad718df7440f2a",
 						"Settings~SubredditWiki": "13e2f0d4f71bb9e6c534",
 						SubredditWiki: "6194e4842aba676f9430",
-						Frontpage: "35c8917b22e5cfbc522f",
+						Frontpage: "5fd3bbc35a005301f9d4",
 						PostSetPage: "f4d4bfd65ab2dc87ddbd",
 						Topic: "25b0cc62237ae72f118a",
 						CommunityAwards: "1e8e201223c7548c07a2",
@@ -1524,7 +1524,7 @@
 						Talk: "50e6fb9c755cd7320868",
 						UserDataRequestPage: "df943aa7167a59f4ff40",
 						UserZoomIntegration: "e14a378bfc910ff0887f",
-						UsernameConfirmationModals: "880a159a21bfcbe37dfc",
+						UsernameConfirmationModals: "44201235f6bda8e86ee5",
 						"css-vars-ponyfill": "8e6cec8301d069e523d7",
 						getFlairData: "ed1e3538b9395423aa7b",
 						givePremiumTrackers: "f1abba901e6daf017cf6",
@@ -1570,7 +1570,7 @@
 						RedesignChat: "cd0bc8685bf17eb29a9a",
 						ModListing: "2b0fe83919f668c4caea",
 						"vendors~PostCreation~Subreddit": "804e802e502ab366d223",
-						Subreddit: "8ccb76e6b9524808b5f6",
+						Subreddit: "f919125840a212ea525e",
 						CommentsPage: "b88ed9770d944683ac7e",
 						"vendors~CryptoHarbergerTaxManageModal~HarbergerTaxManageModal~ModerationPages~PostCreation~Settings~~f8934a85": "fbf6b3871488094312c2",
 						CryptoHarbergerTaxManageModal: "7f1d18091972e1e07aca",
@@ -1822,4 +1822,4 @@
 	var m = c;
 	t()
 }([]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/runtime~Reddit.bd064dfc6401381ed679.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/runtime~Reddit.59763506b23b5cf804a8.js.map
