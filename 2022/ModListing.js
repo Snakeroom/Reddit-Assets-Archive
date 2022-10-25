@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModListing.6128c3a2e3740ff1022f.js
-// Retrieved at 10/25/2022, 3:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModListing.dd8fc8b5d8c9837365a5.js
+// Retrieved at 10/25/2022, 5:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModListing"], {
 		"./node_modules/classnames/index.js": function(e, t, r) {
@@ -1930,7 +1930,7 @@
 				const b = Object(o.e)(e => e.subreddits.survey[r]),
 					p = Object(o.e)(e => e.subreddits.progressModule[r]),
 					h = Object(o.e)(l.a),
-					f = h !== c.Te.NewModule;
+					f = h !== c.Ve.NewModule;
 				return (null === (s = null == p ? void 0 : p.cards) || void 0 === s ? void 0 : s.length) > 0 && f ? i.a.createElement(m, {
 					closeModuleOnMount: !!t && t !== u.g.Large,
 					subredditId: r,
@@ -1992,15 +1992,15 @@
 			const o = e => {
 					const t = Object(s.c)(e, {
 						experimentEligibilitySelector: i.R,
-						experimentName: n.vd
+						experimentName: n.xd
 					});
-					return !(!t || Object(n.wg)(t))
+					return !(!t || Object(n.yg)(t))
 				},
 				d = e => {
 					return Object(s.c)(e, {
 						experimentEligibilitySelector: i.R,
-						experimentName: n.vd
-					}) === n.Td.ListingEnabled
+						experimentName: n.xd
+					}) === n.Vd.ListingEnabled
 				}
 		},
 		"./src/reddit/selectors/experiments/recapLeadUpGame.ts": function(e, t, r) {
@@ -2013,8 +2013,8 @@
 			const i = e => {
 				return Object(s.c)(e, {
 					experimentEligibilitySelector: s.a,
-					experimentName: n.tf
-				}) === n.Pd
+					experimentName: n.vf
+				}) === n.Rd
 			}
 		},
 		"./src/reddit/selectors/focusedVerticalSuggestion.ts": function(e, t, r) {
@@ -2146,4 +2146,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModListing.6128c3a2e3740ff1022f.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModListing.dd8fc8b5d8c9837365a5.js.map

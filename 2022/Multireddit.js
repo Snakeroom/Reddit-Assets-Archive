@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Multireddit.555adce9e7eed79a91cf.js
-// Retrieved at 10/25/2022, 3:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Multireddit.a628d81e246b0488e0fd.js
+// Retrieved at 10/25/2022, 5:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Multireddit"], {
 		"./src/higherOrderComponents/withAdClickLocation/Locations.ts": function(e, t, n) {
@@ -1870,27 +1870,27 @@
 				s = n("./src/reddit/helpers/chooseVariant/index.ts"),
 				i = n("./src/reddit/selectors/experiments/index.ts");
 			const c = Object(r.a)(e => Object(s.c)(e, {
-					experimentName: o.Wb,
+					experimentName: o.Yb,
 					experimentEligibilitySelector: i.e
 				}), e => e === o.fb.Enabled),
 				a = Object(r.a)(e => Object(s.c)(e, {
-					experimentName: o.Xb,
+					experimentName: o.Zb,
 					experimentEligibilitySelector: i.e
 				}), e => e === o.gb.Enabled),
 				d = Object(r.a)(e => Object(s.c)(e, {
-					experimentName: o.Yb,
+					experimentName: o.ac,
 					experimentEligibilitySelector: i.e
 				}), e => e === o.hb.Enabled),
 				l = Object(r.a)(e => Object(s.c)(e, {
-					experimentName: o.Zb,
+					experimentName: o.bc,
 					experimentEligibilitySelector: i.e
 				}), e => e === o.ib.Enabled),
 				u = Object(r.a)(e => Object(s.c)(e, {
-					experimentName: o.bc,
+					experimentName: o.dc,
 					experimentEligibilitySelector: i.e
 				}), e => e === o.kb.Enabled),
 				m = Object(r.a)(e => Object(s.c)(e, {
-					experimentName: o.ac,
+					experimentName: o.cc,
 					experimentEligibilitySelector: i.e
 				}), e => e === o.jb.Enabled)
 		},
@@ -1904,8 +1904,8 @@
 			const s = e => {
 				return Object(o.c)(e, {
 					experimentEligibilitySelector: o.a,
-					experimentName: r.tf
-				}) === r.Pd
+					experimentName: r.vf
+				}) === r.Rd
 			}
 		},
 		"./src/reddit/selectors/recapGame.ts": function(e, t, n) {
@@ -1933,4 +1933,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Multireddit.555adce9e7eed79a91cf.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Multireddit.a628d81e246b0488e0fd.js.map

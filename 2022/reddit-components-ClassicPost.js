@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-ClassicPost.564c2d664d088f72e205.js
-// Retrieved at 10/25/2022, 3:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-ClassicPost.a3e886c66933ac6f13fb.js
+// Retrieved at 10/25/2022, 5:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-ClassicPost", "Reddit~RpanListingUnit~StandalonePostPage~reddit-components-LargePost~reddit-components-MediumPost"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -5520,8 +5520,8 @@
 					noun: "go_live",
 					subreddit: i.jb(e),
 					liveAudioRoom: {
-						title: Object(o.tb)(e),
-						topicIds: Object(o.sb)(e).topics.map(e => e.id)
+						title: Object(o.ub)(e),
+						topicIds: Object(o.tb)(e).topics.map(e => e.id)
 					}
 				}),
 				l = () => e => ({
@@ -5531,8 +5531,8 @@
 					noun: "schedule",
 					subreddit: i.jb(e),
 					liveAudioRoom: {
-						title: Object(o.tb)(e),
-						topicIds: Object(o.sb)(e).topics.map(e => e.id)
+						title: Object(o.ub)(e),
+						topicIds: Object(o.tb)(e).topics.map(e => e.id)
 					}
 				}),
 				u = () => e => ({
@@ -5542,7 +5542,7 @@
 					noun: "overflow",
 					subreddit: i.jb(e),
 					liveAudioRoom: {
-						title: Object(o.tb)(e)
+						title: Object(o.ub)(e)
 					}
 				}),
 				m = e => t => ({
@@ -6645,8 +6645,8 @@
 					if (Object(i.a)(e)) return !1;
 					return Object(s.c)(e, {
 						experimentEligibilitySelector: s.a,
-						experimentName: r.Bc
-					}) === r.cd.Enabled
+						experimentName: r.Dc
+					}) === r.ed.Enabled
 				}
 		},
 		"./src/reddit/selectors/experiments/presence.ts": function(e, t, n) {
@@ -6659,8 +6659,8 @@
 			const o = e => {
 				return Object(s.c)(e, {
 					experimentEligibilitySelector: s.a,
-					experimentName: r.ff
-				}) === r.Pd
+					experimentName: r.hf
+				}) === r.Rd
 			}
 		},
 		"./src/reddit/selectors/experiments/web2x_cta.ts": function(e, t, n) {
@@ -6672,10 +6672,10 @@
 				s = n("./src/reddit/constants/experiments.ts"),
 				o = n("./src/reddit/helpers/chooseVariant/index.ts");
 			const i = Object(r.a)(e => Object(o.c)(e, {
-					experimentName: s.lg,
+					experimentName: s.ng,
 					experimentEligibilitySelector: o.a
 				}), e => e),
-				a = Object(r.a)(i, e => e === s.cg)
+				a = Object(r.a)(i, e => e === s.eg)
 		},
 		"./src/reddit/selectors/gild.ts": function(e, t, n) {
 			"use strict";
@@ -7081,4 +7081,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ClassicPost.564c2d664d088f72e205.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ClassicPost.a3e886c66933ac6f13fb.js.map

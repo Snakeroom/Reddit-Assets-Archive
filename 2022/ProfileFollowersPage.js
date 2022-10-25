@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfileFollowersPage.6ae5eec0a3f16cdb1a14.js
-// Retrieved at 10/25/2022, 3:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfileFollowersPage.b09722e5f54639de16d1.js
+// Retrieved at 10/25/2022, 5:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfileFollowersPage", "ProfileFollowersAction"], {
 		"./node_modules/lodash/take.js": function(e, t, r) {
@@ -1306,8 +1306,8 @@
 			const v = e => {
 				return Object(f.c)(e, {
 					experimentEligibilitySelector: f.a,
-					experimentName: b.uf
-				}) === b.Pd
+					experimentName: b.wf
+				}) === b.Rd
 			};
 			var x = r("./src/reddit/selectors/recapGame.ts"),
 				g = r("./src/reddit/selectors/user.ts"),
@@ -4220,7 +4220,7 @@
 				const t = Object(i.f)().getState(),
 					r = Object(b.a)(t, Object(a.c)());
 				if (e.isD2xPdpSideRailRecsEnabled) {
-					const t = e.d2xPdpSideRailRecsVariant === u.bd.GreyRereddit || e.d2xPdpSideRailRecsVariant === u.bd.GreyRedditNoNsfw || e.d2xPdpSideRailRecsVariant === u.bd.LargeImagePreview ? e.reredditButtons : [];
+					const t = e.d2xPdpSideRailRecsVariant === u.dd.GreyRereddit || e.d2xPdpSideRailRecsVariant === u.dd.GreyRedditNoNsfw || e.d2xPdpSideRailRecsVariant === u.dd.LargeImagePreview ? e.reredditButtons : [];
 					return n.a.createElement(_, {
 						reredditContent: t,
 						countryCode: e.countryCode
@@ -6205,11 +6205,11 @@
 				d = r("./node_modules/reselect/es/index.js");
 			const l = Object(d.a)(e => Object(n.c)(e, {
 					experimentEligibilitySelector: e => Object(a.h)(e) && Object(i.f)(e),
-					experimentName: s.uc
+					experimentName: s.wc
 				}), o.a),
 				c = Object(d.a)(e => Object(n.c)(e, {
 					experimentEligibilitySelector: e => !Object(a.h)(e) && Object(i.f)(e),
-					experimentName: s.tc
+					experimentName: s.vc
 				}), o.a),
 				u = Object(d.a)(l, c, (e, t) => e || t),
 				m = Object(d.a)(l, c, (e, t) => !(!e && !t))
@@ -6263,4 +6263,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileFollowersPage.6ae5eec0a3f16cdb1a14.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileFollowersPage.b09722e5f54639de16d1.js.map

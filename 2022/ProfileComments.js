@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfileComments.542017423637eed77e7f.js
-// Retrieved at 10/25/2022, 3:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfileComments.733b7bd6539b49be35e0.js
+// Retrieved at 10/25/2022, 5:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfileComments"], {
 		"./node_modules/linkify-it/index.js": function(e, t, s) {
@@ -4461,7 +4461,7 @@
 					}, i.a.createElement(h.b, {
 						textColor: c
 					})), i.a.createElement(O, {
-						qrCodeAsset: (() => n === f.Yc.Enabled || r === f.sb.BlurredPreview || r === f.sb.NoPreview ? j.d2x_nsfw_signup_blocking_de_v1 : j.d2x_nsfw_signup_blocking_non_us_v1)()
+						qrCodeAsset: (() => n === f.ad.Enabled || r === f.sb.BlurredPreview || r === f.sb.NoPreview ? j.d2x_nsfw_signup_blocking_de_v1 : j.d2x_nsfw_signup_blocking_non_us_v1)()
 					}))
 				}
 		},
@@ -5277,8 +5277,8 @@
 					noun: "go_live",
 					subreddit: i.jb(e),
 					liveAudioRoom: {
-						title: Object(o.tb)(e),
-						topicIds: Object(o.sb)(e).topics.map(e => e.id)
+						title: Object(o.ub)(e),
+						topicIds: Object(o.tb)(e).topics.map(e => e.id)
 					}
 				}),
 				l = () => e => ({
@@ -5288,8 +5288,8 @@
 					noun: "schedule",
 					subreddit: i.jb(e),
 					liveAudioRoom: {
-						title: Object(o.tb)(e),
-						topicIds: Object(o.sb)(e).topics.map(e => e.id)
+						title: Object(o.ub)(e),
+						topicIds: Object(o.tb)(e).topics.map(e => e.id)
 					}
 				}),
 				m = () => e => ({
@@ -5299,7 +5299,7 @@
 					noun: "overflow",
 					subreddit: i.jb(e),
 					liveAudioRoom: {
-						title: Object(o.tb)(e)
+						title: Object(o.ub)(e)
 					}
 				}),
 				u = e => t => ({
@@ -5917,10 +5917,10 @@
 				r = s("./src/reddit/constants/experiments.ts"),
 				o = s("./src/reddit/helpers/chooseVariant/index.ts");
 			const i = Object(n.a)(e => Object(o.c)(e, {
-					experimentName: r.lg,
+					experimentName: r.ng,
 					experimentEligibilitySelector: o.a
 				}), e => e),
-				a = Object(n.a)(i, e => e === r.cg)
+				a = Object(n.a)(i, e => e === r.eg)
 		},
 		"./src/redditGQL/operations/CreateLiveAudioRoomOnProfile.json": function(e) {
 			e.exports = JSON.parse('{"id":"e35a47c6aa21"}')
@@ -5951,4 +5951,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileComments.542017423637eed77e7f.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileComments.733b7bd6539b49be35e0.js.map

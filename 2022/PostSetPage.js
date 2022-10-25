@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostSetPage.25ca985c4735df2c1ede.js
-// Retrieved at 10/25/2022, 3:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostSetPage.c1caf46e3942c8584310.js
+// Retrieved at 10/25/2022, 5:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostSetPage"], {
 		"./node_modules/intersection-observer/intersection-observer.js": function(e, t) {
@@ -803,8 +803,8 @@
 			const g = e => {
 				return Object(f.c)(e, {
 					experimentEligibilitySelector: f.a,
-					experimentName: h.uf
-				}) === h.Pd
+					experimentName: h.wf
+				}) === h.Rd
 			};
 			var x = n("./src/reddit/selectors/recapGame.ts"),
 				y = n("./src/reddit/selectors/user.ts"),
@@ -1257,7 +1257,7 @@
 				const t = Object(i.f)().getState(),
 					n = Object(h.a)(t, Object(a.c)());
 				if (e.isD2xPdpSideRailRecsEnabled) {
-					const t = e.d2xPdpSideRailRecsVariant === u.bd.GreyRereddit || e.d2xPdpSideRailRecsVariant === u.bd.GreyRedditNoNsfw || e.d2xPdpSideRailRecsVariant === u.bd.LargeImagePreview ? e.reredditButtons : [];
+					const t = e.d2xPdpSideRailRecsVariant === u.dd.GreyRereddit || e.d2xPdpSideRailRecsVariant === u.dd.GreyRedditNoNsfw || e.d2xPdpSideRailRecsVariant === u.dd.LargeImagePreview ? e.reredditButtons : [];
 					return s.a.createElement(C, {
 						reredditContent: t,
 						countryCode: e.countryCode
@@ -2841,11 +2841,11 @@
 				d = n("./node_modules/reselect/es/index.js");
 			const c = Object(d.a)(e => Object(s.c)(e, {
 					experimentEligibilitySelector: e => Object(a.h)(e) && Object(i.f)(e),
-					experimentName: r.uc
+					experimentName: r.wc
 				}), o.a),
 				l = Object(d.a)(e => Object(s.c)(e, {
 					experimentEligibilitySelector: e => !Object(a.h)(e) && Object(i.f)(e),
-					experimentName: r.tc
+					experimentName: r.vc
 				}), o.a),
 				u = Object(d.a)(c, l, (e, t) => e || t),
 				m = Object(d.a)(c, l, (e, t) => !(!e && !t))
@@ -2862,14 +2862,14 @@
 			const i = (e, t) => {
 					return Object(s.c)(e, {
 						experimentEligibilitySelector: () => t,
-						experimentName: r.wc
-					}) === r.Pd
+						experimentName: r.yc
+					}) === r.Rd
 				},
 				o = e => {
 					return Object(s.c)(e, {
 						experimentEligibilitySelector: s.a,
-						experimentName: r.vc
-					}) === r.Pd
+						experimentName: r.xc
+					}) === r.Rd
 				}
 		},
 		"./src/reddit/selectors/focusedVerticalSuggestion.ts": function(e, t, n) {
@@ -3008,4 +3008,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostSetPage.25ca985c4735df2c1ede.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostSetPage.c1caf46e3942c8584310.js.map

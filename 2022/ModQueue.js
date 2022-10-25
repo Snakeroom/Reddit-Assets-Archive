@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModQueue.773a773f5c86d6a7532d.js
-// Retrieved at 10/25/2022, 3:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModQueue.ee4647a0c9e7b5ca36b4.js
+// Retrieved at 10/25/2022, 5:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModQueue"], {
 		"./src/reddit/actions/bulkActions/index.ts": function(e, t, o) {
@@ -52,14 +52,14 @@
 				f = o("./src/reddit/selectors/commentSelector.ts"),
 				O = o("./src/reddit/selectors/user.ts"),
 				v = o("./src/reddit/actions/comment/index.ts"),
-				h = o("./src/reddit/actions/comment/constants.ts");
-			const j = Object(n.a)(h.p),
+				j = o("./src/reddit/actions/comment/constants.ts");
+			const h = Object(n.a)(j.p),
 				_ = e => async (t, o, s) => {
 					let {
 						apiContext: r
 					} = s;
 					o().features.comments.models[e] && (await Object(l.j)(r(), e)).ok && t((e => async t => {
-						t(j({
+						t(h({
 							commentId: e
 						}))
 					})(e))
@@ -87,7 +87,7 @@
 							isLocked: d.isLocked
 						}
 					}))
-				}, g = Object(n.a)(h.J), R = e => async (t, o, r) => {
+				}, g = Object(n.a)(j.J), R = e => async (t, o, r) => {
 					let {
 						apiContext: n,
 						gqlContext: d
@@ -233,8 +233,8 @@
 					}));
 					const f = Object(l.c)(c(), e, t),
 						O = Object(l.d)(c(), e, !!o),
-						h = [f];
-					(o || !o && e === p) && h.push(O), (await Promise.all(h)).every(e => e.ok) ? o && s(g({
+						j = [f];
+					(o || !o && e === p) && j.push(O), (await Promise.all(j)).every(e => e.ok) ? o && s(g({
 						id: e,
 						postId: b,
 						commentsPageKey: Object(d.a)(b, null, {
@@ -286,8 +286,8 @@
 				f = o("./src/reddit/helpers/isPost.ts"),
 				O = o("./src/reddit/selectors/commentSelector.ts"),
 				v = o("./src/reddit/selectors/posts.ts"),
-				h = o("./src/reddit/models/Flair/index.ts"),
-				j = o("./src/reddit/selectors/experiments/realtimeMQUpdates.ts"),
+				j = o("./src/reddit/models/Flair/index.ts"),
+				h = o("./src/reddit/selectors/experiments/realtimeMQUpdates.ts"),
 				_ = o("./src/redditGQL/types.ts"),
 				S = o("./src/reddit/helpers/graphql/normalizeCommentFromGql/index.ts"),
 				g = o("./src/reddit/helpers/graphql/normalizeFlairFromGql/index.ts"),
@@ -327,7 +327,7 @@
 				}(r, s.after));
 				const a = {};
 				s.sort === p.a.OldestFirst ? a.last = 25 : a.first = 25;
-				const i = Object(j.a)(r);
+				const i = Object(h.a)(r);
 				return {
 					queueType: A[o],
 					moderatedAfter: s.moderatedAfter,
@@ -478,7 +478,7 @@
 									id: o,
 									text: s || "",
 									textEditable: r,
-									type: d || h.f.Text,
+									type: d || j.f.Text,
 									textColor: (null == a ? void 0 : a.toLowerCase()) || void 0,
 									backgroundColor: (null == i ? void 0 : i.toLowerCase()) || void 0,
 									richtext: JSON.parse(n || "[]"),
@@ -641,18 +641,18 @@
 							queueType: t,
 							options: o
 						}),
-						h = await Object(c.b)(m(), v);
-					if (!h.ok) return n(f(h.error)), void n(Object(i.f)({
+						j = await Object(c.b)(m(), v);
+					if (!j.ok) return n(f(j.error)), void n(Object(i.f)({
 						kind: w.b.Error,
 						text: s.fbt._("Oh no! Something went wrong!", null, {
 							hk: "16O2Sk"
 						})
 					}));
 					const {
-						users: j,
+						users: h,
 						..._
-					} = P(h.body.data);
-					Object(L.b)(d()) && n(V(j)), n(O({
+					} = P(j.body.data);
+					Object(L.b)(d()) && n(V(h)), n(O({
 						listingKey: e,
 						page: `${o.page||N.b}`,
 						response: _
@@ -694,7 +694,7 @@
 						O = Object(L.i)(p),
 						v = p.user.account && p.user.account.displayText;
 					Object(l.d)(l.a.ModQueue);
-					const h = Object(l.c)(l.a.ModQueue);
+					const j = Object(l.c)(l.a.ModQueue);
 					Object(F.a)({
 						source: "bulk_mod_action_menu",
 						action: "click",
@@ -705,7 +705,7 @@
 							paneName: p.platform.currentPage ? p.platform.currentPage.urlParams.pageName : void 0
 						}),
 						screen: T.bb(p),
-						correlationId: h
+						correlationId: j
 					});
 					for (let t = 0; t < O.length; t++) {
 						const o = O[t];
@@ -727,15 +727,15 @@
 							profile: T.V(p, o),
 							screen: T.bb(p),
 							subreddit: T.mb(p, o),
-							correlationId: h
+							correlationId: j
 						})
 					}
 					Object(l.b)(l.a.ModQueue);
-					const j = {
+					const h = {
 						ids: O
 					};
-					t && (j.text = Object(m.g)(t) || "", j.flairTemplateId = ""), o && (j.cssClass = o, j.flairTemplateId = o);
-					const _ = await Object(c.a)(b(), e, j);
+					t && (h.text = Object(m.g)(t) || "", h.flairTemplateId = ""), o && (h.cssClass = o, h.flairTemplateId = o);
+					const _ = await Object(c.a)(b(), e, h);
 					if (_.ok) {
 						r(Object(d.b)({
 							..._.body,
@@ -919,8 +919,8 @@
 				} = e.params, f = e.queryParams, {
 					page: O,
 					profile: v,
-					subreddit: h
-				} = f, j = o();
+					subreddit: j
+				} = f, h = o();
 				if (!p) return;
 				const _ = Object(a.a)({
 						onlyOfType: f.only,
@@ -928,14 +928,14 @@
 						sort: f.sort,
 						subreddit: f.subreddit
 					}),
-					S = j.pages.modHub.modQueue[p].itemOrder[_],
+					S = h.pages.modHub.modQueue[p].itemOrder[_],
 					g = !!(null === (b = null == S ? void 0 : S[O]) || void 0 === b ? void 0 : b.length),
-					R = j.pages.modHub.modQueue[p].api.error;
-				if (j.pages.modHub.modQueue[p].api.pending || g && !R) return;
-				Object(m.p)(j) || await Object(u.e)(_, p, f)(t, o, s);
+					R = h.pages.modHub.modQueue[p].api.error;
+				if (h.pages.modHub.modQueue[p].api.pending || g && !R) return;
+				Object(m.p)(h) || await Object(u.e)(_, p, f)(t, o, s);
 				const y = o();
 				if (r()(y.pages.modHub.modQueue[p].api.error, "type") === n.L.AUTHENTICATION_ERROR) return Object(i.a)(t, y);
-				Object(c.j)(y, h, v), t(l.m({
+				Object(c.j)(y, j, v), t(l.m({
 					title: Object(d.i)()
 				}))
 			}
@@ -983,9 +983,9 @@
 			})), o.d(t, "removalReasonSubmittedSuccess", (function() {
 				return ve
 			})), o.d(t, "removalReasonSubmittedFailed", (function() {
-				return he
-			})), o.d(t, "removalReasonMessagePending", (function() {
 				return je
+			})), o.d(t, "removalReasonMessagePending", (function() {
+				return he
 			})), o.d(t, "removalReasonPrivateMessageSuccess", (function() {
 				return _e
 			})), o.d(t, "removalReasonPublicMessageSuccess", (function() {
@@ -1054,13 +1054,13 @@
 							return e
 					}
 				},
-				h = Object(n.c)({
+				j = Object(n.c)({
 					error: O,
 					pending: v
 				});
-			const j = {};
+			const h = {};
 			var _ = function() {
-				let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : j,
+				let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : h,
 					t = arguments.length > 1 ? arguments[1] : void 0;
 				switch (t.type) {
 					case d: {
@@ -1157,7 +1157,7 @@
 					}
 				},
 				y = Object(n.c)({
-					api: h,
+					api: j,
 					models: _,
 					reasonOrder: g,
 					removedItemIds: R
@@ -1304,7 +1304,7 @@
 						subredditId: e,
 						itemIds: t
 					})), o(Object(N.i)(D.a.ADD_REMOVAL_REASON))
-				}, Oe = Object(A.a)("REMOVALREASONS__SUBMIT_PENDING"), ve = Object(A.a)("REMOVALREASONS__SUBMIT_SUCCESS"), he = Object(A.a)("REMOVALREASONS__SUBMIT_FAILED"), je = Object(A.a)("REMOVALREASONS__MESSAGE_PENDING"), _e = Object(A.a)("REMOVALREASONS__MESSAGE_PRIVATE_SUCCESS"), Se = Object(A.a)("REMOVALREASONS__MESSAGE_PUBLIC_SUCCESS"), ge = Object(A.a)("REMOVALREASONS__MESSAGE_FAILED"), Re = (e, t, o, s, r, n) => async (d, a, i) => {
+				}, Oe = Object(A.a)("REMOVALREASONS__SUBMIT_PENDING"), ve = Object(A.a)("REMOVALREASONS__SUBMIT_SUCCESS"), je = Object(A.a)("REMOVALREASONS__SUBMIT_FAILED"), he = Object(A.a)("REMOVALREASONS__MESSAGE_PENDING"), _e = Object(A.a)("REMOVALREASONS__MESSAGE_PRIVATE_SUCCESS"), Se = Object(A.a)("REMOVALREASONS__MESSAGE_PUBLIC_SUCCESS"), ge = Object(A.a)("REMOVALREASONS__MESSAGE_FAILED"), Re = (e, t, o, s, r, n) => async (d, a, i) => {
 					let {
 						apiContext: c
 					} = i;
@@ -1330,7 +1330,7 @@
 						v = await B(c(), O);
 					if (v.ok) {
 						if (d(ve()), t) {
-							d(je());
+							d(he());
 							const r = {
 									itemId: e,
 									message: o,
@@ -1393,7 +1393,7 @@
 							}
 							return d(ge(a.error)), !1
 						}
-					} else d(he(v.error)), d(f({
+					} else d(je(v.error)), d(f({
 						[m]: {
 							modNote: p.modNote,
 							modRemovalReason: p.modRemovalReason,
@@ -1444,7 +1444,7 @@
 								n = await U(c(), Object(z.h)(s, z.e.Bulk), z.e.Bulk);
 							n.ok ? (d(_e()), d(m)) : d(ge(n.error))
 						} else d(m)
-					} else d(he(p.error))
+					} else d(je(p.error))
 				}
 		},
 		"./src/reddit/components/ModQueueList/PostSortDropdown.m.less": function(e, t, o) {
@@ -1475,12 +1475,12 @@
 				e.NewestFirst = "newest", e.OldestFirst = "oldest", e.MostReportedFirst = "most_reported"
 			}(s || (s = {}));
 			const v = l.a.wrapped(m.b, "Row", O.a),
-				h = Object(i.c)({
+				j = Object(i.c)({
 					currentPage: e => e.platform.currentPage,
 					origin: p.k
 				}),
-				j = Object(a.b)(h);
-			t.b = j(e => d.a.createElement("div", {
+				h = Object(a.b)(j);
+			t.b = h(e => d.a.createElement("div", {
 				className: e.className
 			}, d.a.createElement(b.default, {
 				onClick: e.sendEventWithName("modqueue_sort_newest"),
@@ -1656,8 +1656,8 @@
 				n = o("./src/reddit/selectors/user.ts");
 			const d = e => Object(r.c)(e, {
 				experimentEligibilitySelector: n.R,
-				experimentName: s.hc
-			}) === s.Pd
+				experimentName: s.jc
+			}) === s.Rd
 		},
 		"./src/reddit/selectors/experiments/realtimeMQUpdates.ts": function(e, t, o) {
 			"use strict";
@@ -1670,8 +1670,8 @@
 				d = o("./src/reddit/selectors/experiments/modqueueActionBarUXImprovements.ts");
 			const a = e => Object(d.a)(e) && Object(r.c)(e, {
 				experimentEligibilitySelector: n.R,
-				experimentName: s.Cc
-			}) === s.Pd
+				experimentName: s.Ec
+			}) === s.Rd
 		},
 		"./src/reddit/selectors/modQueue.ts": function(e, t, o) {
 			"use strict";
@@ -1690,9 +1690,9 @@
 			})), o.d(t, "c", (function() {
 				return v
 			})), o.d(t, "d", (function() {
-				return h
-			})), o.d(t, "b", (function() {
 				return j
+			})), o.d(t, "b", (function() {
+				return h
 			}));
 			o("./node_modules/core-js/modules/web.dom.iterable.js");
 			var s = o("./src/lib/constants/index.ts"),
@@ -1745,13 +1745,13 @@
 					const t = e.platform && e.platform.currentPage;
 					return t && t.meta && (t.meta.name === s.Sb.MODERATION_PAGES || t.meta.name === s.Sb.MODQUEUE_PAGES)
 				},
-				h = e => {
+				j = e => {
 					var t;
 					const o = e.platform && e.platform.currentPage;
 					return (null === (t = null == o ? void 0 : o.meta) || void 0 === t ? void 0 : t.name) === s.Sb.MODQUEUE_PAGES
 				},
-				j = e => v(e) && Object(c.a)(e) || !1
+				h = e => v(e) && Object(c.a)(e) || !1
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModQueue.773a773f5c86d6a7532d.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModQueue.ee4647a0c9e7b5ca36b4.js.map

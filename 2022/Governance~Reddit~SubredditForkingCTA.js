@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~Reddit~SubredditForkingCTA.8ea9009c4bb2f05a1dad.js
-// Retrieved at 10/25/2022, 3:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~Reddit~SubredditForkingCTA.493eb1195cff90972f07.js
+// Retrieved at 10/25/2022, 5:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~Reddit~SubredditForkingCTA"], {
 		"./src/lib/bigNumberUtils/percent.ts": function(t, e, r) {
@@ -52,8 +52,8 @@
 			}), u = r("./node_modules/fbt/lib/FbtPublic.js"), l = r("./src/reddit/models/Toast/index.ts"), b = r("./node_modules/reselect/es/index.js"), f = r("./src/reddit/constants/experiments.ts"), p = r("./src/reddit/helpers/chooseVariant/index.ts"), m = r("./src/reddit/selectors/user.ts");
 			const h = Object(b.a)(t => Object(p.c)(t, {
 				experimentEligibilitySelector: m.R,
-				experimentName: f.cc
-			}), t => t === f.Pd);
+				experimentName: f.ec
+			}), t => t === f.Rd);
 			var O = r("./src/reddit/actions/toaster.ts");
 			const _ = "SUBREDDIT_COUNTRY_SITE__LOADED",
 				y = "SUBREDDIT_COUNTRY_SITE__CHANGED",
@@ -809,12 +809,18 @@
 		},
 		"./src/reddit/actions/postCreation/submit.ts": function(t, e, r) {
 			"use strict";
-			r.d(e, "c", (function() {
+			r.d(e, "b", (function() {
+				return U
+			})), r.d(e, "f", (function() {
+				return M
+			})), r.d(e, "e", (function() {
 				return V
-			})), r.d(e, "a", (function() {
+			})), r.d(e, "c", (function() {
 				return K
-			})), r.d(e, "b", (function() {
+			})), r.d(e, "d", (function() {
 				return J
+			})), r.d(e, "a", (function() {
+				return X
 			}));
 			var n = r("./src/lib/constants/index.ts"),
 				s = r("./src/lib/makeActionCreator/index.ts"),
@@ -884,7 +890,7 @@
 					const e = t.uploads,
 						r = Object(k.X)(t),
 						s = Object(k.a)(t),
-						i = Object(k.hb)(t);
+						i = Object(k.ib)(t);
 					if (s === n.bc.POST) return b.a.getPendingThumbnailUploads(i, e);
 					if (s === n.bc.MEDIA && r && r.items.length) {
 						const {
@@ -1054,12 +1060,14 @@
 							e(q(t))
 						}
 						const t = g.error;
-						t.type === n.L.BAD_CAPTCHA_ERROR ? e(B()) : t.type === n.L.VALIDATION_ERROR ? e(F(t)) : t.type === n.L.SUBMIT_VALIDATION_ERROR ? e(V(t)) : e(G(t))
+						X(e, t)
 					}
 					const S = Object(R.o)(u.kind),
 						I = g.ok && g.body && g.body.id && Object(A.y)(g.body.id),
 						T = r();
 					E.B(T, S, I, t.correlationId)
+				}, X = (t, e) => {
+					e.type === n.L.BAD_CAPTCHA_ERROR ? t(B()) : e.type === n.L.VALIDATION_ERROR ? t(F(e)) : e.type === n.L.SUBMIT_VALIDATION_ERROR ? t(V(e)) : t(G(e))
 				}
 		},
 		"./src/reddit/actions/scheduledPosts/constants.ts": function(t, e, r) {
@@ -1453,7 +1461,7 @@
 							});
 							e(Object(d.h)(t.title)), e(Object(d.g)({
 								submissionType: s.bc.CROSSPOST
-							})), await e(Object(a.b)({
+							})), await e(Object(a.d)({
 								destSubreddit: {
 									...r,
 									isProfile: !1
@@ -1462,7 +1470,7 @@
 								postFieldValidationPending: Promise.resolve()
 							})), Object(l.b)(D)
 						}
-						await e(Object(n.b)(`${r.path}`)), p ? p === b.Te.NewModule && e(Object(c.h)({
+						await e(Object(n.b)(`${r.path}`)), p ? p === b.Ve.NewModule && e(Object(c.h)({
 							tooltipId: u.MOD_WELCOME_TOOLTIP_ID
 						})) : (e(Object(o.h)(f.a.POST_FLOW_UPSELL_MODAL_ID)), Object(k.a)(Object(E.g)()(x))), Object(j.b)(j.a.SubredditCreation), e(Object(T.f)(i, null !== (g = Object(C.cb)(x)) && void 0 !== g ? g : Object(I.j)(x)))
 					} else w.error && Object(k.a)(Object(E.h)(w.error.type, N)(x)), e(U({
@@ -3045,4 +3053,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit~SubredditForkingCTA.8ea9009c4bb2f05a1dad.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit~SubredditForkingCTA.493eb1195cff90972f07.js.map

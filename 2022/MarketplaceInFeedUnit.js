@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/MarketplaceInFeedUnit.c141f7f5e079a7c9cb39.js
-// Retrieved at 10/25/2022, 3:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/MarketplaceInFeedUnit.d7fb2a92613592cec49b.js
+// Retrieved at 10/25/2022, 5:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["MarketplaceInFeedUnit"], {
 		"./src/reddit/components/AvatarBuilder/useMarketplaceConfig.tsx": function(e, t, n) {
@@ -176,7 +176,7 @@
 		"./src/reddit/components/Econ/Marketplace/InFeedUnit/index.tsx": function(e, t, n) {
 			"use strict";
 			n.r(t), n.d(t, "MarketplaceInFeedUnit", (function() {
-				return y
+				return A
 			}));
 			var r = n("./node_modules/@reddit/crypto/react/nft-claim/index.es.js"),
 				c = n("./node_modules/@reddit/marketplace/marketplace.es.js"),
@@ -230,8 +230,8 @@
 			};
 			var v = n("./src/reddit/selectors/experiments/econ/index.ts"),
 				I = n("./src/reddit/components/Econ/Marketplace/InFeedUnit/index.m.less"),
-				A = n.n(I);
-			const y = e => {
+				y = n.n(I);
+			const A = e => {
 				let {
 					layout: t
 				} = e;
@@ -239,52 +239,52 @@
 					x = Object(j.a)(),
 					E = Object(d.e)(k.a),
 					[h, C] = Object(o.useState)(!1),
-					[I, y] = Object(o.useState)(!1);
+					[I, A] = Object(o.useState)(!1);
 				Object(_.a)(m.a);
 				const N = Object(d.e)(v.h),
 					[M, L] = Object(f.a)("marketplaceClaimInFeedUnitDismissed", !1),
 					[T, U] = Object(f.a)("marketplaceClaimInFeedUnitLoadCount", 0),
-					w = Object(o.useRef)(T),
-					D = w.current % 2 == 0;
+					D = Object(o.useRef)(T),
+					R = D.current % 2 == 0;
 				if (Object(o.useEffect)(() => {
-						M || U(w.current + 1)
-					}, [U, w, x, D, M]), !(null == E ? void 0 : E.id) || M || !D) return null;
-				const R = t !== b.g.Large,
-					S = () => {
+						M || U(D.current + 1)
+					}, [U, D, x, R, M]), !(null == E ? void 0 : E.id) || M || !R) return null;
+				const S = t !== b.g.Large,
+					w = () => {
 						x(Object(O.b)()), n(Object(l.h)(p.a.ECON_MARKETPLACE_CLAIM, {
 							claimId: E.id
 						}))
 					};
 				return i.a.createElement(i.a.Fragment, null, i.a.createElement(a.a, {
 					onChange: e => {
-						I || e.intersectionRatio < .75 || (x(Object(O.d)()), y(!0))
+						I || e.intersectionRatio < .75 || (x(Object(O.d)()), A(!0))
 					},
 					threshold: .75
 				}, i.a.createElement("div", {
 					"data-testid": "marketplace-claim-infeed-unit",
-					className: Object(s.a)(A.a.container, {
-						[A.a.isNotLarge]: R
+					className: Object(s.a)(y.a.container, {
+						[y.a.isNotLarge]: S
 					})
 				}, i.a.createElement(u.a, null, N ? i.a.createElement(c.e, {
-					className: Object(s.a)(A.a.feedUnit, {
-						[A.a.isNotLarge]: R
+					className: Object(s.a)(y.a.feedUnit, {
+						[y.a.isNotLarge]: S
 					}),
-					onClickCta: S,
+					onClickCta: w,
 					onClose: () => C(!0),
 					title: E.title,
 					description: E.description,
 					ctaText: E.buttonCtaText,
-					isNotCardLayout: R
+					isNotCardLayout: S
 				}) : i.a.createElement(r.a, {
-					className: Object(s.a)(A.a.feedUnit, {
-						[A.a.isNotLarge]: R
+					className: Object(s.a)(y.a.feedUnit, {
+						[y.a.isNotLarge]: S
 					}),
-					onClickCta: S,
+					onClickCta: w,
 					onClose: () => C(!0),
 					title: E.title,
 					description: E.description,
 					ctaText: E.buttonCtaText,
-					isNotCardLayout: R
+					isNotCardLayout: S
 				})))), h && i.a.createElement(g, {
 					onGoBack: () => C(!1),
 					onDismiss: () => {
@@ -292,7 +292,7 @@
 					}
 				}))
 			};
-			t.default = y
+			t.default = A
 		},
 		"./src/reddit/helpers/trackers/marketplace/claims.ts": function(e, t, n) {
 			"use strict";
@@ -365,8 +365,8 @@
 			}));
 			var r = n("./src/reddit/constants/experiments.ts"),
 				c = n("./src/reddit/selectors/experiments/econ/simpleExperiment.ts");
-			const a = Object(c.a)(r.wd)
+			const a = Object(c.a)(r.yd)
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/MarketplaceInFeedUnit.c141f7f5e079a7c9cb39.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/MarketplaceInFeedUnit.d7fb2a92613592cec49b.js.map

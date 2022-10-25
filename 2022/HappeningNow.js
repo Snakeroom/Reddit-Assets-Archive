@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/HappeningNow.47e09294bee5ebeb6473.js
-// Retrieved at 10/25/2022, 3:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/HappeningNow.c8cacad1501748415e63.js
+// Retrieved at 10/25/2022, 5:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["HappeningNow"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -2466,12 +2466,12 @@
 						rtJsonElementProps: a
 					});
 					switch (o) {
-						case b.Wf.SmIcon:
+						case b.Yf.SmIcon:
 							return s.a.createElement(p, {
 								subredditName: r,
 								rtJsonElementProps: a
 							});
-						case b.Wf.SmIconHc:
+						case b.Yf.SmIconHc:
 							return s.a.createElement(p, {
 								subredditName: r,
 								isHoverable: !0,
@@ -3040,10 +3040,10 @@
 						className: W.a.speakerRingOuter
 					})))
 				},
-				q = n("./src/reddit/components/SubredditIcon/index.tsx");
+				Y = n("./src/reddit/components/SubredditIcon/index.tsx");
 
-			function Y() {
-				return (Y = Object.assign || function(e) {
+			function q() {
+				return (q = Object.assign || function(e) {
 					for (var t = 1; t < arguments.length; t++) {
 						var n = arguments[t];
 						for (var r in n) Object.prototype.hasOwnProperty.call(n, r) && (e[r] = n[r])
@@ -3051,7 +3051,7 @@
 					return e
 				}).apply(this, arguments)
 			}
-			var Z = e => o.a.createElement("svg", Y({
+			var Z = e => o.a.createElement("svg", q({
 				viewBox: "0 0 21 20",
 				xmlns: "http://www.w3.org/2000/svg"
 			}, e), o.a.createElement("path", {
@@ -3122,7 +3122,7 @@
 					}, o.a.createElement(J, {
 						id: n.id,
 						isAnimated: !0
-					}), o.a.createElement(q.b, {
+					}), o.a.createElement(Y.b, {
 						className: ee.a.subredditIcon,
 						iconUrl: d
 					}), t.contentType === x.r.Chat ? o.a.createElement(Z, {
@@ -3503,7 +3503,7 @@
 				})))),
 				We = n("./src/reddit/components/HappeningNow/SidebarContent/index.m.less"),
 				Je = n.n(We);
-			const qe = [{
+			const Ye = [{
 					url: "https://www.reddithelp.com",
 					label: r.fbt._("Help", null, {
 						hk: "1RgRee"
@@ -3546,7 +3546,7 @@
 						hk: "4BzYQM"
 					})
 				}],
-				Ye = [{
+				qe = [{
 					url: "https://www.redditinc.com",
 					label: r.fbt._("About", null, {
 						hk: "1MkWCX"
@@ -3641,11 +3641,11 @@
 						className: Je.a.linksWrapper
 					}, o.a.createElement("div", {
 						className: Je.a.column
-					}, qe.map((e, t) => o.a.createElement(Ze, Ke({
+					}, Ye.map((e, t) => o.a.createElement(Ze, Ke({
 						key: `first_column_link_${t}`
 					}, e)))), o.a.createElement("div", {
 						className: Je.a.column
-					}, Ye.map((e, t) => o.a.createElement(Ze, Ke({
+					}, qe.map((e, t) => o.a.createElement(Ze, Ke({
 						key: `second_column_link_${t}`
 					}, e))))), o.a.createElement("span", {
 						className: Je.a.copyright
@@ -3755,12 +3755,12 @@
 				l = e => {
 					return Object(o.c)(e, {
 						experimentEligibilitySelector: i,
-						experimentName: r.Qf
+						experimentName: r.Sf
 					}) || ""
 				},
 				c = e => {
 					const t = l(e);
-					return t === r.Wf.SmIcon || t === r.Wf.SmIconHc
+					return t === r.Yf.SmIcon || t === r.Yf.SmIconHc
 				},
 				d = (e, t) => {
 					let {
@@ -3789,4 +3789,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/HappeningNow.47e09294bee5ebeb6473.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/HappeningNow.c8cacad1501748415e63.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/UpdateCardModal.1dd11793025aff8d0d45.js
-// Retrieved at 10/25/2022, 3:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/UpdateCardModal.ec00bb40e5119ce5b749.js
+// Retrieved at 10/25/2022, 5:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["UpdateCardModal"], {
 		"./node_modules/@stripe/stripe-js/dist/stripe.esm.js": function(e, t, r) {
@@ -153,8 +153,8 @@
 			}));
 			var n = r("./src/reddit/constants/experiments.ts"),
 				s = r("./src/reddit/selectors/experiments/econ/simpleExperiment.ts");
-			const i = Object(s.a)(n.wd)
+			const i = Object(s.a)(n.yd)
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/UpdateCardModal.1dd11793025aff8d0d45.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/UpdateCardModal.ec00bb40e5119ce5b749.js.map

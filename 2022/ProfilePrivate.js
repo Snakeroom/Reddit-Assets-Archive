@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfilePrivate.75103463f9e26899e69a.js
-// Retrieved at 10/25/2022, 3:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfilePrivate.db089f1aa699ac56bcdd.js
+// Retrieved at 10/25/2022, 5:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfilePrivate"], {
 		"./node_modules/lodash/take.js": function(e, t, s) {
@@ -734,8 +734,8 @@
 			const f = e => {
 				return Object(g.c)(e, {
 					experimentEligibilitySelector: g.a,
-					experimentName: h.uf
-				}) === h.Pd
+					experimentName: h.wf
+				}) === h.Rd
 			};
 			var x = s("./src/reddit/selectors/recapGame.ts"),
 				v = s("./src/reddit/selectors/user.ts"),
@@ -3648,7 +3648,7 @@
 				const t = Object(o.f)().getState(),
 					s = Object(h.a)(t, Object(d.c)());
 				if (e.isD2xPdpSideRailRecsEnabled) {
-					const t = e.d2xPdpSideRailRecsVariant === m.bd.GreyRereddit || e.d2xPdpSideRailRecsVariant === m.bd.GreyRedditNoNsfw || e.d2xPdpSideRailRecsVariant === m.bd.LargeImagePreview ? e.reredditButtons : [];
+					const t = e.d2xPdpSideRailRecsVariant === m.dd.GreyRereddit || e.d2xPdpSideRailRecsVariant === m.dd.GreyRedditNoNsfw || e.d2xPdpSideRailRecsVariant === m.dd.LargeImagePreview ? e.reredditButtons : [];
 					return r.a.createElement(j, {
 						reredditContent: t,
 						countryCode: e.countryCode
@@ -5231,8 +5231,8 @@
 					noun: "go_live",
 					subreddit: i.jb(e),
 					liveAudioRoom: {
-						title: Object(o.tb)(e),
-						topicIds: Object(o.sb)(e).topics.map(e => e.id)
+						title: Object(o.ub)(e),
+						topicIds: Object(o.tb)(e).topics.map(e => e.id)
 					}
 				}),
 				l = () => e => ({
@@ -5242,8 +5242,8 @@
 					noun: "schedule",
 					subreddit: i.jb(e),
 					liveAudioRoom: {
-						title: Object(o.tb)(e),
-						topicIds: Object(o.sb)(e).topics.map(e => e.id)
+						title: Object(o.ub)(e),
+						topicIds: Object(o.tb)(e).topics.map(e => e.id)
 					}
 				}),
 				m = () => e => ({
@@ -5253,7 +5253,7 @@
 					noun: "overflow",
 					subreddit: i.jb(e),
 					liveAudioRoom: {
-						title: Object(o.tb)(e)
+						title: Object(o.ub)(e)
 					}
 				}),
 				u = e => t => ({
@@ -6720,11 +6720,11 @@
 				a = s("./node_modules/reselect/es/index.js");
 			const c = Object(a.a)(e => Object(r.c)(e, {
 					experimentEligibilitySelector: e => Object(d.h)(e) && Object(o.f)(e),
-					experimentName: n.uc
+					experimentName: n.wc
 				}), i.a),
 				l = Object(a.a)(e => Object(r.c)(e, {
 					experimentEligibilitySelector: e => !Object(d.h)(e) && Object(o.f)(e),
-					experimentName: n.tc
+					experimentName: n.vc
 				}), i.a),
 				m = Object(a.a)(c, l, (e, t) => e || t),
 				u = Object(a.a)(c, l, (e, t) => !(!e && !t))
@@ -6738,10 +6738,10 @@
 				r = s("./src/reddit/constants/experiments.ts"),
 				o = s("./src/reddit/helpers/chooseVariant/index.ts");
 			const i = Object(n.a)(e => Object(o.c)(e, {
-					experimentName: r.lg,
+					experimentName: r.ng,
 					experimentEligibilitySelector: o.a
 				}), e => e),
-				d = Object(n.a)(i, e => e === r.cg)
+				d = Object(n.a)(i, e => e === r.eg)
 		},
 		"./src/reddit/selectors/tracking.ts": function(e, t, s) {
 			"use strict";
@@ -6817,4 +6817,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfilePrivate.75103463f9e26899e69a.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfilePrivate.db089f1aa699ac56bcdd.js.map

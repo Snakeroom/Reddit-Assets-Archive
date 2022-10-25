@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-BurnPointsModal.9fe8301610d81f11c657.js
-// Retrieved at 10/25/2022, 3:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-BurnPointsModal.c3c0599235adf1af21eb.js
+// Retrieved at 10/25/2022, 5:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Governance-TransactionModals-BurnPointsModal"], {
 		"./node_modules/lodash/uniqueId.js": function(e, t, a) {
@@ -592,7 +592,7 @@
 			}
 			const G = 15e3;
 
-			function S(e) {
+			function R(e) {
 				const {
 					burnAmount: t,
 					burnMemo: a,
@@ -666,7 +666,7 @@
 				return e && t ? s ? l.a.createElement(b, {
 					onContinue: () => i(!1),
 					pointsName: t.name
-				}) : l.a.createElement(S, {
+				}) : l.a.createElement(R, {
 					burnAmount: a.amount,
 					burnMemo: a.memo,
 					subreddit: e,
@@ -1308,14 +1308,14 @@
 			const c = e => {
 					return Object(l.c)(e, {
 						experimentEligibilitySelector: l.a,
-						experimentName: n.Be
-					}) === n.Pd
+						experimentName: n.De
+					}) === n.Rd
 				},
 				s = e => {
 					return Object(l.c)(e, {
 						experimentEligibilitySelector: l.a,
-						experimentName: n.ze
-					}) === n.Pd
+						experimentName: n.Be
+					}) === n.Rd
 				}
 		},
 		"./src/reddit/selectors/gov.ts": function(e, t, a) {
@@ -1372,4 +1372,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-BurnPointsModal.9fe8301610d81f11c657.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-BurnPointsModal.c3c0599235adf1af21eb.js.map

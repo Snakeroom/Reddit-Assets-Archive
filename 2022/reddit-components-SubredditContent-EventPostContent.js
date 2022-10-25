@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-SubredditContent-EventPostContent.2336a0df6cd232bd7a50.js
-// Retrieved at 10/25/2022, 3:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-SubredditContent-EventPostContent.37bda5e278d6f70f9c1f.js
+// Retrieved at 10/25/2022, 5:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-SubredditContent-EventPostContent"], {
 		"./src/reddit/components/ClassicPost/index.tsx": function(e, t, s) {
@@ -1208,8 +1208,8 @@
 					noun: "go_live",
 					subreddit: n.jb(e),
 					liveAudioRoom: {
-						title: Object(a.tb)(e),
-						topicIds: Object(a.sb)(e).topics.map(e => e.id)
+						title: Object(a.ub)(e),
+						topicIds: Object(a.tb)(e).topics.map(e => e.id)
 					}
 				}),
 				l = () => e => ({
@@ -1219,8 +1219,8 @@
 					noun: "schedule",
 					subreddit: n.jb(e),
 					liveAudioRoom: {
-						title: Object(a.tb)(e),
-						topicIds: Object(a.sb)(e).topics.map(e => e.id)
+						title: Object(a.ub)(e),
+						topicIds: Object(a.tb)(e).topics.map(e => e.id)
 					}
 				}),
 				u = () => e => ({
@@ -1230,7 +1230,7 @@
 					noun: "overflow",
 					subreddit: n.jb(e),
 					liveAudioRoom: {
-						title: Object(a.tb)(e)
+						title: Object(a.ub)(e)
 					}
 				}),
 				m = e => t => ({
@@ -1274,4 +1274,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-SubredditContent-EventPostContent.2336a0df6cd232bd7a50.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-SubredditContent-EventPostContent.37bda5e278d6f70f9c1f.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/GovernanceTransferPointsModal.b385ec97b899b56fda24.js
-// Retrieved at 10/25/2022, 3:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/GovernanceTransferPointsModal.b7e0b90f916c786066dc.js
+// Retrieved at 10/25/2022, 5:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["GovernanceTransferPointsModal"], {
 		"./node_modules/lodash/uniqueId.js": function(e, t, n) {
@@ -786,8 +786,8 @@
 				M = n("./src/lib/prettyPrintNumber/index.ts"),
 				S = n("./src/reddit/components/Governance/Token/index.tsx"),
 				F = n("./src/reddit/constants/colors.ts"),
-				B = n("./src/reddit/controls/Button/index.tsx"),
-				R = n("./src/reddit/controls/LoadingIcon/index.tsx"),
+				R = n("./src/reddit/controls/Button/index.tsx"),
+				B = n("./src/reddit/controls/LoadingIcon/index.tsx"),
 				G = n("./src/reddit/selectors/gov.ts"),
 				D = n("./src/reddit/components/Governance/TransferPointsModal/Controls/index.m.less"),
 				L = n.n(D),
@@ -831,12 +831,12 @@
 						style: {
 							color: h ? void 0 : F.a.warning
 						}
-					}, Object(M.a)(Object(j.c)(m, null == o ? void 0 : o.displayConversion)))), c.a.createElement(B.l, {
+					}, Object(M.a)(Object(j.c)(m, null == o ? void 0 : o.displayConversion)))), c.a.createElement(R.l, {
 						disabled: !f,
 						className: a ? L.a.fullButton : L.a.button,
 						tabIndex: l,
 						onClick: r
-					}, d ? c.a.createElement(R.a, {
+					}, d ? c.a.createElement(B.a, {
 						className: L.a.loadingIcon,
 						sizePx: 20
 					}) : a ? V.fbt._("Continue", null, {
@@ -967,9 +967,9 @@
 					num: 100 * +n.usd,
 					type: ae.b.Real,
 					currency: ae.c
-				}), ")"), s && c.a.createElement(B.a, {
+				}), ")"), s && c.a.createElement(R.a, {
 					className: le.a.purchaseButton,
-					priority: B.c.Secondary,
+					priority: R.c.Secondary,
 					onClick: a
 				}, V.fbt._("Purchase", null, {
 					hk: "3RDmqo"
@@ -1059,7 +1059,7 @@
 						const t = e.currentTarget;
 						await window.navigator.clipboard.writeText(a.publicAddress || ""), t.classList.add(ve.a.success)
 					}
-				})), c.a.createElement(B.a, {
+				})), c.a.createElement(R.a, {
 					className: ve.a.continue,
 					onClick: i
 				}, V.fbt._("Buy ETH with FTX", null, {
@@ -1127,8 +1127,8 @@
 				Me = n("./src/reddit/icons/svgs/Nsfw/index.tsx"),
 				Se = n("./src/reddit/components/Governance/TransferPointsModal/Recipient/index.m.less"),
 				Fe = n.n(Se);
-			const Be = 42,
-				Re = /^0x[0-9a-fA-F]+$/;
+			const Re = 42,
+				Be = /^0x[0-9a-fA-F]+$/;
 			var Ge;
 			! function(e) {
 				e[e.Empty = 0] = "Empty", e[e.Searching = 1] = "Searching", e[e.Valid = 2] = "Valid", e[e.UserDoesNotHaveAWallet = 3] = "UserDoesNotHaveAWallet", e[e.InputtedWalletAddress = 4] = "InputtedWalletAddress", e[e.InvalidUsername = 5] = "InvalidUsername", e[e.Error = 6] = "Error"
@@ -1136,7 +1136,7 @@
 			const De = async (e, t, n, s, a) => {
 				const r = t.current;
 				if (!r || r.length <= Ce.b) return void a(Ge.Empty);
-				const o = Re.test(r);
+				const o = Be.test(r);
 				if (o) try {
 					if (!!Object(je.a)(r)) return void a(e ? Ge.InputtedWalletAddress : Ge.Valid)
 				} catch {}
@@ -1199,7 +1199,7 @@
 					}) : V.fbt._("username or vault address", null, {
 						hk: "1IIniU"
 					}),
-					max: Be,
+					max: Re,
 					style: {
 						borderColor: Ve(p)
 					},
@@ -1229,7 +1229,7 @@
 								}
 							});
 						case Ge.Searching:
-							return c.a.createElement(R.a, {
+							return c.a.createElement(B.a, {
 								className: Fe.a.loadingIcon,
 								sizePx: 8
 							});
@@ -1327,7 +1327,7 @@
 						className: Ye.a.description
 					}, Ze._("Tipping with Donuts is now managed on donut.finance.", null, {
 						hk: "1jSpmY"
-					})), c.a.createElement(B.m, {
+					})), c.a.createElement(R.m, {
 						redditStyle: !0,
 						className: Ye.a.button,
 						href: r,
@@ -2330,14 +2330,14 @@
 			const r = e => {
 					return Object(a.c)(e, {
 						experimentEligibilitySelector: a.a,
-						experimentName: s.Be
-					}) === s.Pd
+						experimentName: s.De
+					}) === s.Rd
 				},
 				o = e => {
 					return Object(a.c)(e, {
 						experimentEligibilitySelector: a.a,
-						experimentName: s.ze
-					}) === s.Pd
+						experimentName: s.Be
+					}) === s.Rd
 				}
 		},
 		"./src/reddit/selectors/gov.ts": function(e, t, n) {
@@ -2394,4 +2394,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/GovernanceTransferPointsModal.b385ec97b899b56fda24.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/GovernanceTransferPointsModal.b7e0b90f916c786066dc.js.map

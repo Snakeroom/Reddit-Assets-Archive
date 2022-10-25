@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/InboxTooltip.a3143bcd056c3638f929.js
-// Retrieved at 10/25/2022, 3:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/InboxTooltip.44021f971b6c813be532.js
+// Retrieved at 10/25/2022, 5:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["InboxTooltip", "PushNotifications"], {
 		"./src/lib/notifications/token.ts": function(e, t, i) {
@@ -67,9 +67,9 @@
 			})), i.d(t, "subscribeForPNs", (function() {
 				return A
 			})), i.d(t, "unsubscribeFromPNs", (function() {
-				return L
-			})), i.d(t, "requestBrowserNotificationPermissionPromptByUser", (function() {
 				return R
+			})), i.d(t, "requestBrowserNotificationPermissionPromptByUser", (function() {
+				return L
 			})), i.d(t, "subscribeToPermissionsChange", (function() {
 				return U
 			}));
@@ -98,14 +98,14 @@
 				N = i("./src/reddit/constants/experiments.ts"),
 				y = i("./src/reddit/helpers/chooseVariant/index.ts");
 			const _ = e => Object(y.c)(e, {
-				experimentName: N.kc,
+				experimentName: N.mc,
 				experimentEligibilitySelector: y.a
-			}) === N.Pd;
-			var P = i("./src/reddit/selectors/meta.ts"),
-				I = i("./src/reddit/selectors/user.ts");
+			}) === N.Rd;
+			var I = i("./src/reddit/selectors/meta.ts"),
+				P = i("./src/reddit/selectors/user.ts");
 			let E = !1;
 			const F = async (e, t) => {
-				const i = Object(I.Q)(e);
+				const i = Object(P.Q)(e);
 				if (E) return;
 				if (E = !0, Object(f.a)(e) !== d.c.NotificationsSupported) return;
 				await Object(u.a)();
@@ -130,7 +130,7 @@
 				let i = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : () => {};
 				return async (n, o, s) => {
 					const c = o(),
-						u = Object(P.f)(c),
+						u = Object(I.f)(c),
 						l = _(c),
 						b = !!Object(k.a)(c),
 						f = Object(S.a)(c),
@@ -142,7 +142,7 @@
 					j.l(c), await Object(a.b)(e, t, () => {
 						l || f || b || n(Object(d.o)()), n(Object(d.n)()), j.j(c)
 					}, (e, t) => {
-						n(Object(d.l)()), n(L(t ? d.a.Denied : d.a.Closed)), e && (t ? j.e(c) : j.f(c)), i()
+						n(Object(d.l)()), n(R(t ? d.a.Denied : d.a.Closed)), e && (t ? j.e(c) : j.f(c)), i()
 					}, e => {
 						n(Object(d.m)()), n(A()), e && j.d(c), i()
 					}, () => {
@@ -170,7 +170,7 @@
 				} catch (r) {
 					j.k(s, "registration_failed_uncaught_exception"), console.error(r)
 				}
-			}, L = (e, t) => async i => {
+			}, R = (e, t) => async i => {
 				try {
 					Object(f.b)(e);
 					const o = await Object(u.a)();
@@ -184,7 +184,7 @@
 						})))
 					}
 				} catch (o) {}
-			}, R = e => async (t, i) => {
+			}, L = e => async (t, i) => {
 				const n = i();
 				if (Object(f.a)(n) === d.c.NotificationsSupported) switch (Object(a.a)()) {
 					case d.a.Default:
@@ -205,13 +205,13 @@
 				o.onchange = () => (t => {
 					switch (t) {
 						case d.a.Denied:
-							e(L(d.a.Denied)), j.e(n);
+							e(R(d.a.Denied)), j.e(n);
 							break;
 						case d.a.Granted:
 							e(A()), j.d(n);
 							break;
 						default:
-							e(L(d.a.Default))
+							e(R(d.a.Default))
 					}
 				})(o.state)
 			}
@@ -390,15 +390,15 @@
 					markAllAsRead: N,
 					markNotificationAsRead: y,
 					messagesBadgeCount: _,
-					notifications: P,
-					showBrowserNotificationsPermissionSettings: I,
+					notifications: I,
+					showBrowserNotificationsPermissionSettings: P,
 					updateInboxActivitySeenState: E,
 					userId: F
 				} = e;
 				const C = Object(f.a)(),
 					[B, A] = Object(n.useState)("");
 				return Object(n.useEffect)(() => {
-					if (k && !P.length && x) {
+					if (k && !I.length && x) {
 						c({
 							first: 5
 						})
@@ -429,9 +429,9 @@
 					markAllAsRead: N,
 					markNotificationAsRead: y,
 					messagesBadgeCount: _,
-					notifications: P,
+					notifications: I,
 					setActiveOverflowMenuId: A,
-					showBrowserNotificationsPermissionSettings: I,
+					showBrowserNotificationsPermissionSettings: P,
 					userId: F
 				})
 			})
@@ -613,4 +613,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/InboxTooltip.a3143bcd056c3638f929.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/InboxTooltip.44021f971b6c813be532.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/NotificationUnit.e9e57ef0694d94642233.js
-// Retrieved at 10/25/2022, 3:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/NotificationUnit.875da3fc444500f58873.js
+// Retrieved at 10/25/2022, 5:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["NotificationUnit"], {
 		"./src/reddit/components/NotificationUnit/Avatar.tsx": function(e, t, i) {
@@ -453,13 +453,13 @@
 							isInAppNotification: R,
 							isInTooltip: Z,
 							notification: W,
-							shouldHideActionButton: q,
-							setActiveOverflowMenuId: K,
-							onItemClick: $
+							shouldHideActionButton: X,
+							setActiveOverflowMenuId: q,
+							onItemClick: K
 						} = e;
 					if (!W) return null;
 					const {
-						avatar: X,
+						avatar: $,
 						body: J,
 						context: Q,
 						deeplinkUrl: G,
@@ -511,7 +511,7 @@
 							}))
 						},
 						Me = l.a.createElement(l.a.Fragment, null, l.a.createElement(d.a, {
-							avatar: X,
+							avatar: $,
 							iconType: ne,
 							messageType: le,
 							isInAppNotification: R
@@ -530,7 +530,7 @@
 								awardId: je
 							})),
 							sentAt: se,
-							setActiveOverflowMenuId: K,
+							setActiveOverflowMenuId: q,
 							title: re,
 							isInAppNotification: R
 						}), z && pe && !be && !R && l.a.createElement(m.a, {
@@ -540,7 +540,7 @@
 							className: Object(c.a)(O.a.body, {
 								[O.a.inAppNotification]: R
 							})
-						}, J), !q && (Ue || we || ge || B && R) && l.a.createElement(I, {
+						}, J), !X && (Ue || we || ge || B && R) && l.a.createElement(I, {
 							context: Q,
 							notificationId: ae,
 							isUnread: fe,
@@ -564,7 +564,7 @@
 										hk: "3sVhIi"
 									}),
 									duration: x.a
-								}))) : Z && $ && $(), ke({
+								}))) : Z && K && K(), ke({
 									postId: de,
 									subredditId: me,
 									awardId: je,
@@ -770,20 +770,20 @@
 				o = i("./src/reddit/selectors/experiments/index.ts"),
 				s = i("./src/reddit/selectors/experiments/utils.ts");
 			const r = e => Object(a.c)(e, {
-					experimentName: n.Vb,
+					experimentName: n.Xb,
 					experimentEligibilitySelector: o.e
 				}) === n.eb.topOfFeedWithCTAs,
 				l = e => (e => Object(a.c)(e, {
-					experimentName: n.Vb,
+					experimentName: n.Xb,
 					experimentEligibilitySelector: o.e
 				}) === n.eb.topOfFeedNoCTAs)(e) || r(e),
 				c = e => Object(a.c)(e, {
-					experimentName: n.Vb,
+					experimentName: n.Xb,
 					experimentEligibilitySelector: o.e
 				}) === n.eb.floatInFeed,
 				d = e => {
 					const t = Object(a.c)(e, {
-						experimentName: n.Vb,
+						experimentName: n.Xb,
 						experimentEligibilitySelector: o.e
 					});
 					return Object(s.a)(t)
@@ -791,4 +791,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/NotificationUnit.e9e57ef0694d94642233.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/NotificationUnit.875da3fc444500f58873.js.map
