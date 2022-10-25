@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfileOverview.4459f540de433373da82.js
-// Retrieved at 10/25/2022, 5:20:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfileOverview.21bffe558501d3c91b20.js
+// Retrieved at 10/25/2022, 6:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfileOverview"], {
 		"./node_modules/linkify-it/index.js": function(e, t, s) {
@@ -1715,21 +1715,22 @@
 				o = s.n(n),
 				r = s("./node_modules/react-redux/es/index.js"),
 				a = s("./src/lib/classNames/index.ts"),
-				i = s("./src/reddit/actions/post.ts"),
-				c = s("./src/reddit/components/RichTextJson/index.tsx"),
-				d = s("./src/reddit/constants/adEvents.ts"),
-				l = s("./src/reddit/selectors/experiments/supportingLinkAds.ts"),
-				m = s("./src/reddit/components/PostTitle/index.tsx"),
-				u = s("./src/reddit/components/AdSupplementaryText/index.m.less"),
-				p = s.n(u);
-			const b = e => {
+				i = s("./src/reddit/models/Post/index.ts"),
+				c = s("./src/reddit/actions/post.ts"),
+				d = s("./src/reddit/components/RichTextJson/index.tsx"),
+				l = s("./src/reddit/constants/adEvents.ts"),
+				m = s("./src/reddit/selectors/experiments/supportingLinkAds.ts"),
+				u = s("./src/reddit/components/PostTitle/index.tsx"),
+				p = s("./src/reddit/components/AdSupplementaryText/index.m.less"),
+				b = s.n(p);
+			const h = e => {
 				let t;
 				switch (e) {
-					case m.b.ExtraLarge:
-						t = p.a.ExtraLarge;
+					case u.b.ExtraLarge:
+						t = b.a.ExtraLarge;
 						break;
-					case m.b.Large:
-						t = p.a.Large
+					case u.b.Large:
+						t = b.a.Large
 				}
 				return t
 			};
@@ -1739,17 +1740,17 @@
 					size: s,
 					className: n
 				} = e;
-				const m = Object(r.d)();
-				if (!Object(r.e)(l.a) || !t.isSponsored && !t.isCreatedFromAdsUi || !t.adSupplementaryText || "string" == typeof t.adSupplementaryText) return null;
+				const u = Object(r.d)();
+				if (!Object(r.e)(m.a) || !Object(i.B)(t) || !t.adSupplementaryText || "string" == typeof t.adSupplementaryText) return null;
 				if (0 === t.adSupplementaryText.document.length) return null;
 				return o.a.createElement("div", {
-					className: Object(a.a)(n, p.a.AdSupplementaryText),
+					className: Object(a.a)(n, b.a.AdSupplementaryText),
 					"data-testid": `${t.id}-ad-supplementary-text`,
 					onClick: e => {
-						e.target instanceof HTMLAnchorElement && m(Object(i.y)(t, d.a.Click))
+						e.target instanceof HTMLAnchorElement && u(Object(c.y)(t, l.a.Click))
 					}
-				}, o.a.createElement(c.b, {
-					className: Object(a.a)(p.a.Content, b(s)),
+				}, o.a.createElement(d.b, {
+					className: Object(a.a)(b.a.Content, h(s)),
 					content: t.adSupplementaryText,
 					rtJsonElementProps: {
 						renderingObjectInfo: void 0
@@ -10091,4 +10092,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileOverview.4459f540de433373da82.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileOverview.21bffe558501d3c91b20.js.map

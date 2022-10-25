@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModerationPages.af0751eb2435bfd6f8d5.js
-// Retrieved at 10/25/2022, 5:20:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModerationPages.bbe02d9063cd21244734.js
+// Retrieved at 10/25/2022, 6:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModerationPages", "CollectionCommentsPage~CommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~RpanListingUnit~S~5809214e", "CommentsPage~Governance~Reddit~ReportFlow~Subreddit~reddit-components-BlankPost~reddit-components-Cl~5351df81", "CollectionCommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~StandalonePostPage~reddit-comp~2f7e159a", "Governance~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compo~bd4baca2", "Governance~ModListing~Reddit~ReportFlow~Subreddit", "Reddit~RpanListingUnit~StandalonePostPage~reddit-components-LargePost~reddit-components-MediumPost", "Governance~ModListing~Reddit~Subreddit", "Governance~Reddit~SubredditForkingCTA", "Settings~SubredditWiki"], {
 		"./src/chat/controls/Svg/index.m.less": function(e, t, n) {
@@ -57039,13 +57039,14 @@
 		"./src/reddit/helpers/addSupplementaryTextInfoToAdPosts.ts": function(e, t, n) {
 			"use strict";
 			n.d(t, "a", (function() {
-				return a
+				return d
 			}));
 			n("./node_modules/core-js/modules/web.dom.iterable.js");
 			var s = n("./src/reddit/endpoints/post/convert.ts"),
-				r = n("./src/reddit/selectors/experiments/supportingLinkAds.ts");
-			const o = e => !(!e.isSponsored && !e.isCreatedFromAdsUi || !e.adSupplementaryText || "string" != typeof e.adSupplementaryText),
-				i = async (e, t) => {
+				r = n("./src/reddit/models/Post/index.ts"),
+				o = n("./src/reddit/selectors/experiments/supportingLinkAds.ts");
+			const i = e => !(!Object(r.B)(e) || !e.adSupplementaryText || "string" != typeof e.adSupplementaryText),
+				a = async (e, t) => {
 					try {
 						const n = await Object(s.a)(e, "rtjson", t.adSupplementaryText);
 						return {
@@ -57055,10 +57056,10 @@
 					} catch (n) {
 						return t
 					}
-				}, a = async (e, t, n) => {
-					if (!Object(r.a)(n) || !t) return t;
+				}, d = async (e, t, n) => {
+					if (!Object(o.a)(n) || !t) return t;
 					const s = {};
-					for (const [r, a] of Object.entries(t)) s[r] = o(a) ? await i(e, a) : a;
+					for (const [r, o] of Object.entries(t)) s[r] = i(o) ? await a(e, o) : o;
 					return s
 				}
 		},
@@ -77233,4 +77234,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.af0751eb2435bfd6f8d5.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.bbe02d9063cd21244734.js.map

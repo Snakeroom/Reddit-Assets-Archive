@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CommentsPage~Governance~Reddit~ReportFlow~Subreddit~reddit-components-BlankPost~reddit-components-Cl~5351df81.645afec845304f1e3f5a.js
-// Retrieved at 10/25/2022, 5:20:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CommentsPage~Governance~Reddit~ReportFlow~Subreddit~reddit-components-BlankPost~reddit-components-Cl~5351df81.fba72d7533789f3b285a.js
+// Retrieved at 10/25/2022, 6:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CommentsPage~Governance~Reddit~ReportFlow~Subreddit~reddit-components-BlankPost~reddit-components-Cl~5351df81"], {
 		"./src/lib/name/index.ts": function(e, t, r) {
@@ -6960,13 +6960,14 @@
 		"./src/reddit/helpers/addSupplementaryTextInfoToAdPosts.ts": function(e, t, r) {
 			"use strict";
 			r.d(t, "a", (function() {
-				return o
+				return c
 			}));
 			r("./node_modules/core-js/modules/web.dom.iterable.js");
 			var n = r("./src/reddit/endpoints/post/convert.ts"),
-				s = r("./src/reddit/selectors/experiments/supportingLinkAds.ts");
-			const d = e => !(!e.isSponsored && !e.isCreatedFromAdsUi || !e.adSupplementaryText || "string" != typeof e.adSupplementaryText),
-				i = async (e, t) => {
+				s = r("./src/reddit/models/Post/index.ts"),
+				d = r("./src/reddit/selectors/experiments/supportingLinkAds.ts");
+			const i = e => !(!Object(s.B)(e) || !e.adSupplementaryText || "string" != typeof e.adSupplementaryText),
+				o = async (e, t) => {
 					try {
 						const r = await Object(n.a)(e, "rtjson", t.adSupplementaryText);
 						return {
@@ -6976,10 +6977,10 @@
 					} catch (r) {
 						return t
 					}
-				}, o = async (e, t, r) => {
-					if (!Object(s.a)(r) || !t) return t;
+				}, c = async (e, t, r) => {
+					if (!Object(d.a)(r) || !t) return t;
 					const n = {};
-					for (const [s, o] of Object.entries(t)) n[s] = d(o) ? await i(e, o) : o;
+					for (const [s, d] of Object.entries(t)) n[s] = i(d) ? await o(e, d) : d;
 					return n
 				}
 		},
@@ -11906,4 +11907,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommentsPage~Governance~Reddit~ReportFlow~Subreddit~reddit-components-BlankPost~reddit-components-Cl~5351df81.645afec845304f1e3f5a.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommentsPage~Governance~Reddit~ReportFlow~Subreddit~reddit-components-BlankPost~reddit-components-Cl~5351df81.fba72d7533789f3b285a.js.map
