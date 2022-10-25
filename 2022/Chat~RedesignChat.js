@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Chat~RedesignChat.0304a0b576e385fa3928.js
-// Retrieved at 10/24/2022, 9:50:07 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Chat~RedesignChat.f32cf88446fcf535cc95.js
+// Retrieved at 10/25/2022, 1:40:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Chat~RedesignChat"], {
 		"./src/chat/actions/apiRequestHeaders.ts": function(e, t, n) {
@@ -1006,33 +1006,33 @@
 		"./src/chat/actions/liveChat/index.ts": function(e, t, n) {
 			"use strict";
 			n.r(t), n.d(t, "UPDATE_LAST_READ_AT_TIMESTAMP", (function() {
-				return l
-			})), n.d(t, "UPDATE_LAST_COMMENT_CREATED_AT_TIMESTAMP", (function() {
 				return d
-			})), n.d(t, "REMOVE_LIVE_CHAT_POST", (function() {
+			})), n.d(t, "UPDATE_LAST_COMMENT_CREATED_AT_TIMESTAMP", (function() {
 				return u
-			})), n.d(t, "FETCH_LIVE_CHATS_PENDING", (function() {
+			})), n.d(t, "REMOVE_LIVE_CHAT_POST", (function() {
 				return h
-			})), n.d(t, "FETCH_LIVE_CHATS_SUCCESS", (function() {
+			})), n.d(t, "FETCH_LIVE_CHATS_PENDING", (function() {
 				return m
-			})), n.d(t, "DELETE_LIVE_CHAT_ASSOCIATION_PENDING", (function() {
+			})), n.d(t, "FETCH_LIVE_CHATS_SUCCESS", (function() {
 				return b
-			})), n.d(t, "DELETE_LIVE_CHAT_ASSOCIATION_SUCCESS", (function() {
+			})), n.d(t, "DELETE_LIVE_CHAT_ASSOCIATION_PENDING", (function() {
 				return p
-			})), n.d(t, "updateLastReadAtTimestamp", (function() {
+			})), n.d(t, "DELETE_LIVE_CHAT_ASSOCIATION_SUCCESS", (function() {
 				return g
-			})), n.d(t, "updateLastCommentCreatedAtTimestamp", (function() {
+			})), n.d(t, "updateLastReadAtTimestamp", (function() {
 				return f
-			})), n.d(t, "removeLiveChatPost", (function() {
+			})), n.d(t, "updateLastCommentCreatedAtTimestamp", (function() {
 				return O
+			})), n.d(t, "removeLiveChatPost", (function() {
+				return v
 			})), n.d(t, "fetchLiveChats", (function() {
-				return C
-			})), n.d(t, "createLiveChatAssociation", (function() {
 				return I
-			})), n.d(t, "deleteLiveChatAssociation", (function() {
+			})), n.d(t, "createLiveChatAssociation", (function() {
 				return y
-			})), n.d(t, "fetchActiveUsersInLiveChats", (function() {
+			})), n.d(t, "deleteLiveChatAssociation", (function() {
 				return x
+			})), n.d(t, "fetchActiveUsersInLiveChats", (function() {
+				return N
 			}));
 			n("./node_modules/core-js/modules/web.dom.iterable.js");
 			var a = n("./src/lib/makeActionCreator/index.ts"),
@@ -1040,30 +1040,31 @@
 				c = n("./src/chat/endpoints/livechats/index.ts"),
 				r = n("./src/chat/selectors/experiments.ts"),
 				o = n("./src/chat/selectors/liveChat/index.ts"),
-				i = n("./src/lib/activeUserCountByLiveChatId/actions.ts");
-			const l = "LIVECHAT__UPDATE_LAST_READ_AT_TIMESTAMP",
-				d = "LIVECHAT__UPDATE_LAST_COMMENT_CREATED_AT_TIMESTAMP",
-				u = "LIVECHAT__REMOVE_LIVE_CHAT_POST",
-				h = "LIVECHAT__FETCH_LIVE_CHATS_PENDING",
-				m = "LIVECHAT__FETCH_LIVE_CHATS_SUCCESS",
-				b = "LIVECHAT__DELETE_LIVE_CHAT_ASSOCIATION",
-				p = "LIVECHAT__DELETE_LIVE_CHAT_SUCCESS",
-				g = Object(a.a)(l),
+				i = n("./src/lib/activeUserCountByLiveChatId/actions.ts"),
+				l = n("./src/lib/activeUserCountByLiveChatId/utils.ts");
+			const d = "LIVECHAT__UPDATE_LAST_READ_AT_TIMESTAMP",
+				u = "LIVECHAT__UPDATE_LAST_COMMENT_CREATED_AT_TIMESTAMP",
+				h = "LIVECHAT__REMOVE_LIVE_CHAT_POST",
+				m = "LIVECHAT__FETCH_LIVE_CHATS_PENDING",
+				b = "LIVECHAT__FETCH_LIVE_CHATS_SUCCESS",
+				p = "LIVECHAT__DELETE_LIVE_CHAT_ASSOCIATION",
+				g = "LIVECHAT__DELETE_LIVE_CHAT_SUCCESS",
 				f = Object(a.a)(d),
 				O = Object(a.a)(u),
 				v = Object(a.a)(h),
 				E = Object(a.a)(m),
 				j = Object(a.a)(b),
 				_ = Object(a.a)(p),
-				C = () => async (e, t, n) => {
+				C = Object(a.a)(g),
+				I = () => async (e, t, n) => {
 					var a, s, r, o, i;
-					e(v());
+					e(E());
 					const l = await Object(c.c)(n.gqlContext()),
 						d = (null === (i = null === (o = null === (r = null === (s = null === (a = null == l ? void 0 : l.body) || void 0 === a ? void 0 : a.data) || void 0 === s ? void 0 : s.identity) || void 0 === r ? void 0 : r.chatTabLiveChats) || void 0 === o ? void 0 : o.edges) || void 0 === i ? void 0 : i.map(e => e.node)) || [];
-					e(E({
+					e(j({
 						liveChats: d
 					}))
-				}, I = e => async (t, n, a) => {
+				}, y = e => async (t, n, a) => {
 					let {
 						gqlContext: s
 					} = a;
@@ -1073,19 +1074,21 @@
 						postId: e,
 						engagementType: i.engagementType
 					})
-				}, y = e => async (t, n, a) => {
-					t(j({
+				}, x = e => async (t, n, a) => {
+					t(_({
 						postId: e
-					})), (await Object(c.b)(a.gqlContext(), e)).ok ? t(_({
+					})), (await Object(c.b)(a.gqlContext(), e)).ok ? t(C({
 						postId: e
 					})) : t(Object(s.e)())
 				};
-			const x = async (e, t, n) => {
-				const a = function(e) {
-					return Object.values(e.channels.liveChat.models).map(e => e.post.id)
-				}(t());
-				Object(i.b)(a, Object(r.u)(t()), Boolean(t().user.account), e, n)
-			}
+			const S = Object(l.b)(),
+				N = async (e, t, n) => {
+					S(() => e(N), l.a);
+					const a = function(e) {
+						return Object.values(e.channels.liveChat.models).map(e => e.post.id)
+					}(t());
+					Object(i.b)(a, Object(r.u)(t()), Boolean(t().user.account), e, n)
+				}
 		},
 		"./src/chat/actions/members.ts": function(e, t, n) {
 			"use strict";
@@ -19545,6 +19548,22 @@
 				}
 			}
 		},
+		"./src/lib/activeUserCountByLiveChatId/utils.ts": function(e, t, n) {
+			"use strict";
+			n.d(t, "a", (function() {
+				return a
+			})), n.d(t, "b", (function() {
+				return s
+			}));
+			const a = 3e5;
+
+			function s() {
+				let e;
+				return function(t, n) {
+					return e && clearTimeout(e), e = setTimeout(t, n)
+				}
+			}
+		},
 		"./src/lib/combineRefs/index.tsx": function(e, t, n) {
 			"use strict";
 			t.a = function() {
@@ -20003,4 +20022,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~RedesignChat.0304a0b576e385fa3928.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~RedesignChat.f32cf88446fcf535cc95.js.map
