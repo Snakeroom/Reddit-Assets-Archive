@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CreatorStats.1e717bbee87c79716a3d.js
-// Retrieved at 10/24/2022, 9:50:07 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CreatorStats.d6dbc2fd66f7cbd0869a.js
+// Retrieved at 10/25/2022, 11:00:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CreatorStats"], {
 		"./src/reddit/components/CreatorStats/Stats.tsx": function(t, e, s) {
@@ -233,11 +233,16 @@
 						onStartHover: T,
 						onStopHover: y,
 						tooltipClassName: C.a.crosspostsHoverTooltip,
-						tooltipTitleText: r.fbt._({
-							"*": "{post ownership} post was shared {number} times",
-							_1: "{post ownership} post was shared 1 time"
-						}, [r.fbt._param("post ownership", t.isUserOp ? "Your" : "This"), r.fbt._plural(parseInt(Object(b.b)(t.postStats.shareAllCountTotals.totalCount)), "number")], {
-							hk: "22iJcd"
+						tooltipTitleText: t.isUserOp ? r.fbt._({
+							"*": "Your post was shared {number} times",
+							_1: "Your post was shared 1 time"
+						}, [r.fbt._plural(t.postStats.shareAllCountTotals.totalCount, "number", Object(b.b)(t.postStats.shareAllCountTotals.totalCount))], {
+							hk: "226Ygg"
+						}) : r.fbt._({
+							"*": "This post was shared {number} times",
+							_1: "This post was shared 1 time"
+						}, [r.fbt._plural(t.postStats.shareAllCountTotals.totalCount, "number", Object(b.b)(t.postStats.shareAllCountTotals.totalCount))], {
+							hk: "1KGD5P"
 						}),
 						tooltipTitleClassName: C.a.crosspostsStatTooltipTitle,
 						tooltipExtra: l.a.createElement(k, {
@@ -654,4 +659,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CreatorStats.1e717bbee87c79716a3d.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CreatorStats.d6dbc2fd66f7cbd0869a.js.map
