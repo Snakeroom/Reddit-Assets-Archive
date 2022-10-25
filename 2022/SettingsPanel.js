@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SettingsPanel.36a41f2038ec6408c496.js
-// Retrieved at 10/24/2022, 3:20:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SettingsPanel.d69e19a555cd5c864b22.js
+// Retrieved at 10/25/2022, 3:00:09 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SettingsPanel"], {
 		"./src/chat/components/Sidebar/SettingsPanel/SettingsGroup/index.m.less": function(e, t, a) {
@@ -365,7 +365,7 @@
 					l = Object(r.d)(),
 					[m, b] = Object(c.useState)(null),
 					x = Object(r.e)(e => Object(p.N)(e, t.channelId)),
-					A = Object(r.e)(pe.B),
+					A = Object(r.e)(pe.y),
 					k = Object(r.e)(pe.i),
 					E = Object(r.e)(p.a),
 					S = Object(r.e)(_e.e),
@@ -517,7 +517,7 @@
 					channel: t,
 					liveChatPost: a
 				} = e;
-				return Object(r.e)(pe.s) && a ? s.a.createElement(we, {
+				return Object(r.e)(pe.p) && a ? s.a.createElement(we, {
 					liveChatPost: a
 				}) : t ? s.a.createElement(Oe, {
 					channel: t
@@ -567,4 +567,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SettingsPanel.36a41f2038ec6408c496.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SettingsPanel.d69e19a555cd5c864b22.js.map

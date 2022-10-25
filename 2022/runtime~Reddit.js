@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/runtime~Reddit.934013dfd514e039f175.js
-// Retrieved at 10/25/2022, 2:30:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/runtime~Reddit.ca43a3a518725bb8c44a.js
+// Retrieved at 10/25/2022, 3:00:09 PM by Reddit Dataminer v1.0.0
 ! function(e) {
 	function o(o) {
 		for (var a, n, r = o[0], s = o[1], c = o[2], l = 0, b = []; l < r.length; l++) n = r[l], Object.prototype.hasOwnProperty.call(d, n) && d[n] && b.push(d[n][0]), d[n] = 0;
@@ -1566,7 +1566,7 @@
 						MembershipPaywallPage: "947d73358cf54e59fb18",
 						FlairEdit: "c8a24f8d947902543c4c",
 						"vendors~Chat~RedesignChat": "53cd3b091135f8f64886",
-						"Chat~RedesignChat": "f32cf88446fcf535cc95",
+						"Chat~RedesignChat": "695bc817173e738a5665",
 						RedesignChat: "cd0bc8685bf17eb29a9a",
 						ModListing: "2b0fe83919f668c4caea",
 						"vendors~PostCreation~Subreddit": "804e802e502ab366d223",
@@ -1688,18 +1688,18 @@
 						ChatOverlayReport: "1a601b5bc3b7713850c8",
 						ChatPage: "e7a4cc9709580c54e430",
 						ExternalLinkUnit: "9f4f6b714357ab66fd7b",
-						InvitedChannelsPanel: "34b246ab97cf854ea8e2",
+						InvitedChannelsPanel: "93d38f9d89bee7651e29",
 						OverlayBlockUser: "f7f24aba939b46f4c9fb",
 						OverlayChannelRemoval: "28a4199cedb871c69d76",
-						OverlayCreateChannel: "091bdd28d7f6c0889c82",
+						OverlayCreateChannel: "beed079be490ff400134",
 						OverlayDeleteMessage: "4f1169b0add54edc25fb",
-						OverlayDirectsEmptyState: "9626190a4c5808ce297f",
+						OverlayDirectsEmptyState: "74a1c78ae88879fa85cb",
 						OverlayGroupAbout: "dbbe80d7b6b92e4479bf",
 						OverlayLinkSharingSettings: "b727943961e833db1b8f",
 						OverlayNSFWWarning: "36543b9a819fdc1f63d0",
 						OverlayPrivacyAndSupport: "34fa9bc09546ab97fda1",
 						OverlayThemes: "222c0f0ccf358dafbd1c",
-						SettingsPanel: "36a41f2038ec6408c496",
+						SettingsPanel: "d69e19a555cd5c864b22",
 						CommentRichUnit: "d6aa89db1d87c1ffd7bd",
 						PostRichUnit: "cd400e16952b9c9c8a61",
 						"SubredditTopContent~TopWeekPostsDiscoveryUnit": "1d43907b57ceeaefd7b2",
@@ -1822,4 +1822,4 @@
 	var m = c;
 	t()
 }([]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/runtime~Reddit.934013dfd514e039f175.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/runtime~Reddit.ca43a3a518725bb8c44a.js.map
