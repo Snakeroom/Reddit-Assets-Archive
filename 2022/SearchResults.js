@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SearchResults.0e6c1592aebb4f4befad.js
-// Retrieved at 10/25/2022, 10:20:07 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SearchResults.4b4c2c3a7d500ebc642e.js
+// Retrieved at 10/25/2022, 11:40:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SearchResults"], {
 		"./node_modules/lodash/_baseDelay.js": function(e, t) {
@@ -11651,7 +11651,7 @@
 			e.exports = JSON.parse('{"id":"2717435b2dc0"}')
 		},
 		"./src/redditGQL/operations/SubredditGeoRecommendationViaFocusVertical.json": function(e) {
-			e.exports = JSON.parse('{"id":"25e33b051f29"}')
+			e.exports = JSON.parse('{"id":"4f7ad6ca44ac"}')
 		},
 		"./src/redditGQL/operations/UpdateSubredditMuteAndNotificationLevelSettings.json": function(e) {
 			e.exports = JSON.parse('{"id":"2620d72fd633"}')
@@ -11661,4 +11661,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SearchResults.0e6c1592aebb4f4befad.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SearchResults.4b4c2c3a7d500ebc642e.js.map

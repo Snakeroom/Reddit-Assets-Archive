@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/HappeningNow.5cf47a24e5e11712474d.js
-// Retrieved at 10/25/2022, 10:20:07 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/HappeningNow.da64e4f3f1e15663fbf2.js
+// Retrieved at 10/25/2022, 11:40:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["HappeningNow"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -3785,8 +3785,8 @@
 				}
 		},
 		"./src/redditGQL/operations/FetchLiveDiscoveryContent.json": function(e) {
-			e.exports = JSON.parse('{"id":"df86a1f44046"}')
+			e.exports = JSON.parse('{"id":"6fd27aafb8cb"}')
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/HappeningNow.5cf47a24e5e11712474d.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/HappeningNow.da64e4f3f1e15663fbf2.js.map
