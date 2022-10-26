@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~CountryPage~Frontpage~GovernanceReleaseNotesModal~ModListing~Mod~e3d63e32.ed93920cc93ebe62790e.js
-// Retrieved at 10/26/2022, 9:40:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~CountryPage~Frontpage~GovernanceReleaseNotesModal~ModListing~Mod~e3d63e32.829d3b6fbbc4cd9fe5eb.js
+// Retrieved at 10/26/2022, 4:10:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~CountryPage~Frontpage~GovernanceReleaseNotesModal~ModListing~Mod~e3d63e32"], {
 		"./src/lib/intersectionObserver/index.ts": function(e, t, s) {
@@ -490,121 +490,20 @@
 				c = s("./node_modules/reselect/es/index.js"),
 				h = s("./src/lib/fastdom/index.ts"),
 				m = s("./src/lib/intersectionObserver/index.ts"),
-				u = s("./src/reddit/constants/postLayout.ts"),
-				p = s("./src/reddit/components/ClassicPost/Placeholder.tsx"),
-				b = s("./src/reddit/components/CompactPost/Placeholder/index.tsx"),
-				g = s("./src/lib/classNames/index.ts"),
-				f = s("./src/reddit/components/PostLeftRail/index.tsx"),
-				C = s("./src/reddit/components/VerticalVotes/votes.tsx"),
-				v = s("./src/reddit/contexts/PageLayer/index.tsx"),
-				P = s("./src/reddit/helpers/styles/mixins/loading.ts"),
-				y = s("./src/reddit/models/Vote/index.ts"),
-				x = s("./src/reddit/helpers/styles/mixins/index.m.less"),
-				w = s.n(x),
-				O = s("./src/reddit/components/LargePost/placeholder.m.less"),
-				I = s.n(O);
-
-			function R() {
-				return (R = Object.assign || function(e) {
-					for (var t = 1; t < arguments.length; t++) {
-						var s = arguments[t];
-						for (var i in s) Object.prototype.hasOwnProperty.call(s, i) && (e[i] = s[i])
-					}
-					return e
-				}).apply(this, arguments)
-			}
-			const S = Object(v.u)(),
-				E = Object(c.c)({
-					isFakeSubreddit: v.z
+				u = s("./src/reddit/helpers/loadingPostComponentForLayout/index.ts");
+			const p = .1,
+				b = Object(c.c)({
+					loadingPostComponentForLayout: () => u.a
 				}),
-				M = Object(d.b)(E),
-				k = e => {
-					const t = {
-						interactive: !1,
-						voteState: y.a.notVoted
-					};
-					return l.a.createElement("div", {
-						className: I.a.emptyVerticalVotes
-					}, l.a.createElement(C.d, R({
-						key: "u"
-					}, t)), l.a.createElement("div", {
-						className: I.a.emptyScore,
-						key: "s"
-					}), l.a.createElement(C.c, R({
-						key: "d"
-					}, t)))
-				},
-				j = e => l.a.createElement("div", R({
-					className: Object(g.a)(I.a.subredditIcon, Object(P.a)({
-						isLoading: !0
-					}))
-				}, e));
-			var T = S(M(e => {
-					let {
-						className: t,
-						dispatch: s,
-						pageLayer: i,
-						...n
-					} = e;
-					return l.a.createElement("div", {
-						className: Object(g.a)(w.a.baseLargeAndMediumPostStyles, t)
-					}, l.a.createElement(f.b, {
-						key: "a"
-					}, l.a.createElement(k, n)), l.a.createElement("div", {
-						className: I.a.content,
-						key: "b"
-					}, l.a.createElement("div", {
-						className: I.a.topLine,
-						key: "ba"
-					}, n.isFakeSubreddit && l.a.createElement(j, {
-						key: "baa"
-					}), l.a.createElement("div", {
-						key: "bab",
-						className: Object(g.a)(I.a.topMetaOne, Object(P.b)(n))
-					}), l.a.createElement("div", {
-						key: "bac",
-						className: Object(g.a)(I.a.topMetaTwo, Object(P.b)(n))
-					})), l.a.createElement("div", {
-						key: "bb",
-						className: Object(g.a)(I.a.title, Object(P.b)(n))
-					})), l.a.createElement("div", {
-						key: "c",
-						className: Object(g.a)(I.a.media, Object(P.a)(n))
-					}), l.a.createElement("div", {
-						className: I.a.content,
-						key: "d"
-					}, l.a.createElement("div", {
-						className: I.a.flatlist
-					}, l.a.createElement("div", {
-						className: Object(g.a)(I.a.flatlistItemOne, Object(P.b)(n))
-					}), l.a.createElement("div", {
-						className: Object(g.a)(I.a.flatListItemTwo, Object(P.b)(n))
-					}))))
-				})),
-				_ = s("./src/reddit/components/SearchPost/Placeholder.tsx");
-			const L = {
-				[u.g.Large]: [T, 2],
-				[u.g.Classic]: [p.b, 10],
-				[u.g.Compact]: [b.a, 30],
-				[u.g.Search]: [_.a, 8]
-			};
-
-			function N(e) {
-				return L[e]
-			}
-			const V = .1,
-				F = Object(c.c)({
-					loadingPostComponentForLayout: () => N
-				}),
-				A = Object(d.b)(F);
-			class H extends l.a.Component {
+				g = Object(d.b)(b);
+			class f extends l.a.Component {
 				constructor() {
 					super(...arguments), this.mounted = !1, this.state = {
 						visible: !1
 					}, this.setWrapperRef = e => {
 						e !== this.wrapperRef && (this.wrapperRef && m.b(this.wrapperRef), e && m.a(e, this.updateVisibleState)), this.wrapperRef = e
 					}, this.updateVisibleState = e => {
-						const t = e.intersectionRatio >= V;
+						const t = e.intersectionRatio >= p;
 						h.a.write(() => {
 							this.mounted && this.setState(e => e.visible !== t ? {
 								visible: t
@@ -636,7 +535,7 @@
 					}, l.a.Children.toArray(u))
 				}
 			}
-			t.a = A(H)
+			t.a = g(f)
 		},
 		"./src/reddit/components/PostList/SomethingWrong.tsx": function(e, t, s) {
 			"use strict";
@@ -2223,6 +2122,118 @@
 				hasNewTabModifier: !(!e.metaKey && !e.ctrlKey && 1 !== e.button)
 			})
 		},
+		"./src/reddit/helpers/loadingPostComponentForLayout/index.ts": function(e, t, s) {
+			"use strict";
+			s.d(t, "a", (function() {
+				return M
+			}));
+			var i = s("./src/reddit/constants/postLayout.ts"),
+				n = s("./src/reddit/components/ClassicPost/Placeholder.tsx"),
+				o = s("./src/reddit/components/CompactPost/Placeholder/index.tsx"),
+				r = s("./node_modules/react/index.js"),
+				a = s.n(r),
+				l = s("./node_modules/react-redux/es/index.js"),
+				d = s("./node_modules/reselect/es/index.js"),
+				c = s("./src/lib/classNames/index.ts"),
+				h = s("./src/reddit/components/PostLeftRail/index.tsx"),
+				m = s("./src/reddit/components/VerticalVotes/votes.tsx"),
+				u = s("./src/reddit/contexts/PageLayer/index.tsx"),
+				p = s("./src/reddit/helpers/styles/mixins/loading.ts"),
+				b = s("./src/reddit/models/Vote/index.ts"),
+				g = s("./src/reddit/helpers/styles/mixins/index.m.less"),
+				f = s.n(g),
+				C = s("./src/reddit/components/LargePost/placeholder.m.less"),
+				v = s.n(C);
+
+			function P() {
+				return (P = Object.assign || function(e) {
+					for (var t = 1; t < arguments.length; t++) {
+						var s = arguments[t];
+						for (var i in s) Object.prototype.hasOwnProperty.call(s, i) && (e[i] = s[i])
+					}
+					return e
+				}).apply(this, arguments)
+			}
+			const y = Object(u.u)(),
+				x = Object(d.c)({
+					isFakeSubreddit: u.z
+				}),
+				w = Object(l.b)(x),
+				O = e => {
+					const t = {
+						interactive: !1,
+						voteState: b.a.notVoted
+					};
+					return a.a.createElement("div", {
+						className: v.a.emptyVerticalVotes
+					}, a.a.createElement(m.d, P({
+						key: "u"
+					}, t)), a.a.createElement("div", {
+						className: v.a.emptyScore,
+						key: "s"
+					}), a.a.createElement(m.c, P({
+						key: "d"
+					}, t)))
+				},
+				I = e => a.a.createElement("div", P({
+					className: Object(c.a)(v.a.subredditIcon, Object(p.a)({
+						isLoading: !0
+					}))
+				}, e));
+			var R = y(w(e => {
+					let {
+						className: t,
+						dispatch: s,
+						pageLayer: i,
+						...n
+					} = e;
+					return a.a.createElement("div", {
+						className: Object(c.a)(f.a.baseLargeAndMediumPostStyles, t)
+					}, a.a.createElement(h.b, {
+						key: "a"
+					}, a.a.createElement(O, n)), a.a.createElement("div", {
+						className: v.a.content,
+						key: "b"
+					}, a.a.createElement("div", {
+						className: v.a.topLine,
+						key: "ba"
+					}, n.isFakeSubreddit && a.a.createElement(I, {
+						key: "baa"
+					}), a.a.createElement("div", {
+						key: "bab",
+						className: Object(c.a)(v.a.topMetaOne, Object(p.b)(n))
+					}), a.a.createElement("div", {
+						key: "bac",
+						className: Object(c.a)(v.a.topMetaTwo, Object(p.b)(n))
+					})), a.a.createElement("div", {
+						key: "bb",
+						className: Object(c.a)(v.a.title, Object(p.b)(n))
+					})), a.a.createElement("div", {
+						key: "c",
+						className: Object(c.a)(v.a.media, Object(p.a)(n))
+					}), a.a.createElement("div", {
+						className: v.a.content,
+						key: "d"
+					}, a.a.createElement("div", {
+						className: v.a.flatlist
+					}, a.a.createElement("div", {
+						className: Object(c.a)(v.a.flatlistItemOne, Object(p.b)(n))
+					}), a.a.createElement("div", {
+						className: Object(c.a)(v.a.flatListItemTwo, Object(p.b)(n))
+					}))))
+				})),
+				S = s("./src/reddit/components/SearchPost/Placeholder.tsx");
+			const E = {
+				[i.g.Large]: [R, 2],
+				[i.g.Classic]: [n.b, 10],
+				[i.g.Compact]: [o.a, 30],
+				[i.g.Search]: [S.a, 8]
+			};
+
+			function M(e) {
+				return E[e]
+			}
+		},
 		"./src/reddit/helpers/makeModQueueListingKey/index.ts": function(e, t, s) {
 			"use strict";
 			var i = s("./src/reddit/components/ModQueueList/PostSortDropdown.tsx");
@@ -2511,4 +2522,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~CountryPage~Frontpage~GovernanceReleaseNotesModal~ModListing~Mod~e3d63e32.ed93920cc93ebe62790e.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~CountryPage~Frontpage~GovernanceReleaseNotesModal~ModListing~Mod~e3d63e32.829d3b6fbbc4cd9fe5eb.js.map
