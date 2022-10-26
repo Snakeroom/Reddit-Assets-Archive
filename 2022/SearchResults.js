@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SearchResults.a9c8e8535d5fee6bbd0f.js
-// Retrieved at 10/26/2022, 9:40:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SearchResults.d86171dffd98fbb973ab.js
+// Retrieved at 10/26/2022, 1:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SearchResults"], {
 		"./node_modules/lodash/_baseDelay.js": function(e, t) {
@@ -8800,7 +8800,7 @@
 				}, r.a.createElement("div", {
 					className: v.a.Column
 				}, r.a.createElement(C, {
-					href: "https://www.redditinc.com/de/policies/user-agreement"
+					href: "https://www.redditinc.com/policies/impressum"
 				}, j._("Impressum", null, {
 					hk: "4cKXSI"
 				})), r.a.createElement(C, {
@@ -8880,7 +8880,7 @@
 				}, r.a.createElement("div", {
 					className: v.a.Column
 				}, r.a.createElement(C, {
-					href: "https://www.redditinc.com/de/policies/user-agreement"
+					href: "https://www.redditinc.com/policies/impressum"
 				}, j._("Impressum", null, {
 					hk: "4cKXSI"
 				})), r.a.createElement(C, {
@@ -11707,4 +11707,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SearchResults.a9c8e8535d5fee6bbd0f.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SearchResults.d86171dffd98fbb973ab.js.map

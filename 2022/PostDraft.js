@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostDraft.52177289120ab495c2ca.js
-// Retrieved at 10/26/2022, 9:40:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostDraft.ece5d7bfafbbd083096e.js
+// Retrieved at 10/26/2022, 1:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostDraft"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -2965,7 +2965,7 @@
 				}, r.a.createElement("div", {
 					className: _.a.Column
 				}, r.a.createElement(C, {
-					href: "https://www.redditinc.com/de/policies/user-agreement"
+					href: "https://www.redditinc.com/policies/impressum"
 				}, v._("Impressum", null, {
 					hk: "4cKXSI"
 				})), r.a.createElement(C, {
@@ -3045,7 +3045,7 @@
 				}, r.a.createElement("div", {
 					className: _.a.Column
 				}, r.a.createElement(C, {
-					href: "https://www.redditinc.com/de/policies/user-agreement"
+					href: "https://www.redditinc.com/policies/impressum"
 				}, v._("Impressum", null, {
 					hk: "4cKXSI"
 				})), r.a.createElement(C, {
@@ -4929,4 +4929,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostDraft.52177289120ab495c2ca.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostDraft.ece5d7bfafbbd083096e.js.map

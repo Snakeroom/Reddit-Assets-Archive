@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfilePrivate.a81de584f217502c2a29.js
-// Retrieved at 10/26/2022, 9:40:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfilePrivate.d4540a3867e3072d7a2d.js
+// Retrieved at 10/26/2022, 1:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfilePrivate"], {
 		"./node_modules/lodash/take.js": function(e, t, s) {
@@ -3596,7 +3596,7 @@
 				}, r.a.createElement("div", {
 					className: y.a.Column
 				}, r.a.createElement(O, {
-					href: "https://www.redditinc.com/de/policies/user-agreement"
+					href: "https://www.redditinc.com/policies/impressum"
 				}, C._("Impressum", null, {
 					hk: "4cKXSI"
 				})), r.a.createElement(O, {
@@ -3676,7 +3676,7 @@
 				}, r.a.createElement("div", {
 					className: y.a.Column
 				}, r.a.createElement(O, {
-					href: "https://www.redditinc.com/de/policies/user-agreement"
+					href: "https://www.redditinc.com/policies/impressum"
 				}, C._("Impressum", null, {
 					hk: "4cKXSI"
 				})), r.a.createElement(O, {
@@ -6815,4 +6815,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfilePrivate.a81de584f217502c2a29.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfilePrivate.d4540a3867e3072d7a2d.js.map

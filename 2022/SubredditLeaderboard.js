@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditLeaderboard.3aa365d3186935668f0d.js
-// Retrieved at 10/26/2022, 9:40:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditLeaderboard.88efb743cea0471b5439.js
+// Retrieved at 10/26/2022, 1:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditLeaderboard"], {
 		"./node_modules/lodash/times.js": function(e, t, r) {
@@ -446,7 +446,7 @@
 				}, s.a.createElement("div", {
 					className: x.a.Column
 				}, s.a.createElement(C, {
-					href: "https://www.redditinc.com/de/policies/user-agreement"
+					href: "https://www.redditinc.com/policies/impressum"
 				}, E._("Impressum", null, {
 					hk: "4cKXSI"
 				})), s.a.createElement(C, {
@@ -526,7 +526,7 @@
 				}, s.a.createElement("div", {
 					className: x.a.Column
 				}, s.a.createElement(C, {
-					href: "https://www.redditinc.com/de/policies/user-agreement"
+					href: "https://www.redditinc.com/policies/impressum"
 				}, E._("Impressum", null, {
 					hk: "4cKXSI"
 				})), s.a.createElement(C, {
@@ -2814,4 +2814,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditLeaderboard.3aa365d3186935668f0d.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditLeaderboard.88efb743cea0471b5439.js.map

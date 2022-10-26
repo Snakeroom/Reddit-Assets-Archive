@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Geotagging.f88d0cb69ad8a7563502.js
-// Retrieved at 10/26/2022, 9:40:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Geotagging.6ac3c2cf278f1ae0c7b6.js
+// Retrieved at 10/26/2022, 1:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Geotagging"], {
 		"./node_modules/p-debounce/index.js": function(e, t, s) {
@@ -466,7 +466,7 @@
 				}, r.a.createElement("div", {
 					className: _.a.Column
 				}, r.a.createElement(y, {
-					href: "https://www.redditinc.com/de/policies/user-agreement"
+					href: "https://www.redditinc.com/policies/impressum"
 				}, S._("Impressum", null, {
 					hk: "4cKXSI"
 				})), r.a.createElement(y, {
@@ -546,7 +546,7 @@
 				}, r.a.createElement("div", {
 					className: _.a.Column
 				}, r.a.createElement(y, {
-					href: "https://www.redditinc.com/de/policies/user-agreement"
+					href: "https://www.redditinc.com/policies/impressum"
 				}, S._("Impressum", null, {
 					hk: "4cKXSI"
 				})), r.a.createElement(y, {
@@ -1854,4 +1854,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Geotagging.f88d0cb69ad8a7563502.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Geotagging.6ac3c2cf278f1ae0c7b6.js.map

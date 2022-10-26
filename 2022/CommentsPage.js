@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CommentsPage.4c41626ab809482c0e2f.js
-// Retrieved at 10/26/2022, 9:40:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CommentsPage.19995d88c9abe500f673.js
+// Retrieved at 10/26/2022, 1:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CommentsPage", "CollectionCommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~StandalonePostPage~reddit-comp~2f7e159a", "Governance~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compo~bd4baca2", "CollectionCommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~SearchResults", "Governance~ModListing~Reddit~ReportFlow~Subreddit", "Reddit~RpanListingUnit~StandalonePostPage~reddit-components-LargePost~reddit-components-MediumPost", "Governance~ModListing~Reddit~Subreddit", "CollectionCommentsPage~ModProgressModule~NewCommunityProgress", "ModListing~Reddit", "AchievementsActions"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -24885,7 +24885,7 @@
 				}, r.a.createElement("div", {
 					className: v.a.Column
 				}, r.a.createElement(O, {
-					href: "https://www.redditinc.com/de/policies/user-agreement"
+					href: "https://www.redditinc.com/policies/impressum"
 				}, x._("Impressum", null, {
 					hk: "4cKXSI"
 				})), r.a.createElement(O, {
@@ -24965,7 +24965,7 @@
 				}, r.a.createElement("div", {
 					className: v.a.Column
 				}, r.a.createElement(O, {
-					href: "https://www.redditinc.com/de/policies/user-agreement"
+					href: "https://www.redditinc.com/policies/impressum"
 				}, x._("Impressum", null, {
 					hk: "4cKXSI"
 				})), r.a.createElement(O, {
@@ -44762,4 +44762,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommentsPage.4c41626ab809482c0e2f.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommentsPage.19995d88c9abe500f673.js.map

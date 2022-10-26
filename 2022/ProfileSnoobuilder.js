@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfileSnoobuilder.6f590423e3df099d4c0b.js
-// Retrieved at 10/26/2022, 9:40:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfileSnoobuilder.68f031828b29f9d6dd49.js
+// Retrieved at 10/26/2022, 1:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfileSnoobuilder"], {
 		"./assets/snoobuilder/Snoobuilder.json": function(e, t, n) {
@@ -3791,7 +3791,7 @@
 				}, r.a.createElement("div", {
 					className: y.a.Column
 				}, r.a.createElement(E, {
-					href: "https://www.redditinc.com/de/policies/user-agreement"
+					href: "https://www.redditinc.com/policies/impressum"
 				}, v._("Impressum", null, {
 					hk: "4cKXSI"
 				})), r.a.createElement(E, {
@@ -3871,7 +3871,7 @@
 				}, r.a.createElement("div", {
 					className: y.a.Column
 				}, r.a.createElement(E, {
-					href: "https://www.redditinc.com/de/policies/user-agreement"
+					href: "https://www.redditinc.com/policies/impressum"
 				}, v._("Impressum", null, {
 					hk: "4cKXSI"
 				})), r.a.createElement(E, {
@@ -5728,4 +5728,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileSnoobuilder.6f590423e3df099d4c0b.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileSnoobuilder.68f031828b29f9d6dd49.js.map

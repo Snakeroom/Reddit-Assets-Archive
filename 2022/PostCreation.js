@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostCreation.2d05294e45927c1faea9.js
-// Retrieved at 10/26/2022, 9:40:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostCreation.34e8386f9913c01f14ef.js
+// Retrieved at 10/26/2022, 1:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostCreation", "ChatMessageInput~MembershipPaywallPage~RichTextEditor", "ModListing~Reddit", "ContributorRequestButton"], {
 		"./src/higherOrderComponents/asModal/helpers.ts": function(e, t, n) {
@@ -19888,7 +19888,7 @@
 				}, r.a.createElement("div", {
 					className: v.a.Column
 				}, r.a.createElement(x, {
-					href: "https://www.redditinc.com/de/policies/user-agreement"
+					href: "https://www.redditinc.com/policies/impressum"
 				}, y._("Impressum", null, {
 					hk: "4cKXSI"
 				})), r.a.createElement(x, {
@@ -19968,7 +19968,7 @@
 				}, r.a.createElement("div", {
 					className: v.a.Column
 				}, r.a.createElement(x, {
-					href: "https://www.redditinc.com/de/policies/user-agreement"
+					href: "https://www.redditinc.com/policies/impressum"
 				}, y._("Impressum", null, {
 					hk: "4cKXSI"
 				})), r.a.createElement(x, {
@@ -39026,4 +39026,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.2d05294e45927c1faea9.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.34e8386f9913c01f14ef.js.map
